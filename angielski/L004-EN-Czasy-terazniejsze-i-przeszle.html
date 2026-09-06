@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 4 – Czasy teraźniejsze i przeszłe – powtórzenie</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ======================================================================
+           SYSTEM WIZUALNY REPETYTORIUM E8 – wersja 6.2 (master merge)
+           ====================================================================== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px; margin: 0 auto; background: #ffffff;
+            border-radius: 24px; box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) { .container { padding: 12px 10px; } body { padding: 6px; } }
+
+        h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.02em; color: #0a2540; }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.45rem; margin-top: 28px; margin-bottom: 10px; padding-bottom: 4px; border-bottom: 2px solid #e9edf2; }
+        h2 .level-badge { margin-left: 8px; vertical-align: middle; }
+        h3 { font-size: 1.15rem; margin-top: 20px; margin-bottom: 6px; }
+        h4 { font-size: 1.0rem; margin-top: 14px; margin-bottom: 4px; }
+        p { margin-bottom: 8px; }
+        ul, ol { padding-left: 22px; margin-bottom: 10px; }
+        li { margin-bottom: 3px; }
+        a { color: #2b6cb0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        :root {
+            --color-basic: #2d8f5e; --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0; --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f; --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545; --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed; --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540; --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f; --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b; --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e; --color-error: #dc3545;
+            --color-text: #1e293b; --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0; --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .card {
+            border-radius: 12px; padding: 14px 18px; margin: 12px 0;
+            border: 1px solid var(--color-border); background: #ffffff; box-shadow: var(--shadow-card);
+        }
+        .card-remember { background: var(--color-remember-bg); border-left: 5px solid var(--color-remember); border-color: var(--color-remember); }
+        .card-remember .card-label { color: var(--color-remember); }
+        .card-warning { background: #fffbeb; border-left: 5px solid #d69e2e; border-color: #d69e2e; }
+        .card-warning .card-label { color: #d69e2e; }
+        .card-hint { background: var(--color-hint-bg); border-left: 5px solid var(--color-hint); border-color: var(--color-hint); }
+        .card-hint .card-label { color: var(--color-hint); }
+        .card-error { background: var(--color-trap-bg); border-left: 5px solid var(--color-trap); border-color: var(--color-trap); }
+        .card-error .card-label { color: var(--color-trap); }
+        .card-correct { background: var(--color-basic-bg); border-left: 5px solid var(--color-correct); border-color: var(--color-correct); }
+        .card-correct .card-label { color: var(--color-correct); }
+        .card-trap { background: var(--color-trap-bg); border-left: 5px solid var(--color-trap); border-color: var(--color-trap); }
+        .card-trap .card-label { color: var(--color-trap); }
+        .card-ambitious { background: var(--color-ambitious-bg); border-left: 5px solid var(--color-ambitious); border-color: var(--color-ambitious); }
+        .card-ambitious .card-label { color: var(--color-ambitious); }
+        .card-gray { background: var(--color-bg-subtle); border-left: 5px solid var(--color-text-muted); border-color: var(--color-text-muted); }
+        .card .card-label {
+            font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;
+            display: block; margin-bottom: 4px;
+        }
+
+        .level-badge {
+            display: inline-block; font-size: 0.55rem; font-weight: 700; text-transform: uppercase;
+            padding: 1px 8px; border-radius: 12px; vertical-align: middle; letter-spacing: 0.3px; line-height: 1.6;
+        }
+        .level-basic { background: #d4edda; color: #155724; }
+        .level-training { background: #cce5ff; color: #004085; }
+        .level-exam { background: #ffe8cc; color: #8a6d3b; }
+        .level-trap { background: #f8d7da; color: #721c24; }
+        .level-ambitious { background: #e8d5f5; color: #4a1a6b; }
+        .level-writing { background: #d1ecf1; color: #0c5460; }
+        .level-remember { background: #d1d5db; color: #1a1a2e; }
+        .level-difficult { background: #fde68a; color: #78350f; }
+
+        .example {
+            background: var(--color-bg-subtle); border-radius: 10px; padding: 10px 14px; margin: 8px 0;
+            border: 1px solid var(--color-border); display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px;
+        }
+        .example .eng { font-weight: 600; color: #0a2540; font-size: 1.0rem; }
+        .example .pl { color: var(--color-text-muted); font-style: italic; font-size: 0.88rem; }
+        .example .tag {
+            display: inline-block; font-size: 0.55rem; font-weight: 600; text-transform: uppercase;
+            background: #e2e8f0; padding: 1px 8px; border-radius: 12px; color: #2d3a4f;
+        }
+        .example .note { color: var(--color-text-muted); font-size: 0.78rem; font-style: italic; margin-left: auto; }
+        .hl-operator { color: var(--color-training); font-weight: 700; }
+        .hl-subject { color: var(--color-correct); font-weight: 600; }
+        .hl-main-verb { color: var(--color-exam); font-weight: 600; }
+
+        .table-wrap { overflow-x: auto; margin: 12px 0; border-radius: 10px; border: 1px solid var(--color-border); }
+        .table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+        .table-wrap th, .table-wrap td { padding: 6px 10px; text-align: left; border-bottom: 1px solid #edf2f7; }
+        .table-wrap th { background: #f1f4f8; font-weight: 600; color: #0a2540; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.3px; }
+        .table-wrap tr:nth-child(even) { background: #fafbfc; }
+        .table-wrap .error-row { background: #fef2f2; }
+        .table-wrap .correct-row { background: #f0faf4; }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 4px; padding: 5px 14px; border-radius: 8px;
+            border: 1px solid var(--color-border); background: #ffffff; font-size: 0.82rem; font-weight: 500;
+            cursor: pointer; transition: all 0.2s; color: var(--color-text); font-family: inherit;
+        }
+        .btn:hover { background: var(--color-bg-subtle); border-color: #b0b8c4; }
+        .btn-primary { background: var(--color-training); border-color: var(--color-training); color: white; }
+        .btn-primary:hover { background: #1f4e8c; border-color: #1f4e8c; }
+        .btn-success { background: var(--color-basic); border-color: var(--color-basic); color: white; }
+        .btn-success:hover { background: #1f6e48; border-color: #1f6e48; }
+        .btn-outline { background: transparent; border: 1px solid var(--color-border); }
+        .btn-outline:hover { background: var(--color-bg-subtle); }
+        .btn-sm { padding: 3px 10px; font-size: 0.74rem; }
+
+        .audio-btn {
+            display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px;
+            border-radius: 50%; border: 1px solid var(--color-border); background: #ffffff; cursor: pointer;
+            font-size: 15px; color: var(--color-training); transition: all 0.2s; flex-shrink: 0;
+            font-family: inherit; line-height: 1;
+        }
+        .audio-btn:hover { background: var(--color-training-bg); border-color: var(--color-training); }
+        .audio-btn.playing { background: var(--color-training); border-color: var(--color-training); color: white; }
+
+        .exercise {
+            background: var(--color-bg-subtle); border-radius: 12px; padding: 14px 16px; margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title { font-weight: 600; color: #0a2540; margin-bottom: 6px; font-size: 1.0rem; }
+
+        .answer-toggle, .hint-toggle, .explain-toggle {
+            font-family: inherit; padding: 4px 14px; border-radius: 6px; border: none; cursor: pointer;
+            font-size: 0.78rem; font-weight: 500; transition: all 0.2s; margin-top: 4px; margin-right: 4px;
+        }
+        .answer-toggle { background: var(--color-training); color: white; }
+        .answer-toggle:hover { background: #1f4e8c; }
+        .hint-toggle { background: var(--color-hint); color: white; }
+        .hint-toggle:hover { background: #d97706; }
+        .explain-toggle { background: transparent; border: 1px solid var(--color-border); color: var(--color-text-muted); }
+        .explain-toggle:hover { border-color: var(--color-training); color: var(--color-training); background: var(--color-training-bg); }
+
+        .answer-content, .hint-content, .explain-content {
+            border-radius: 6px; padding: 0 12px; margin-top: 4px; max-height: 0; overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease; opacity: 0;
+        }
+        .answer-content.show, .hint-content.show, .explain-content.show {
+            max-height: 800px; padding: 10px 12px; opacity: 1;
+        }
+        .answer-content { background: var(--color-training-bg); border-left: 3px solid var(--color-training); }
+        .hint-content { background: var(--color-hint-bg); border-left: 3px solid var(--color-hint); font-style: italic; color: #78350f; }
+        .explain-content { background: var(--color-bg-subtle); border-left: 3px solid var(--color-training); }
+        .explain-content .rule-box {
+            background: #ffffff; border-radius: 6px; padding: 6px 12px; margin: 4px 0;
+            border: 1px solid var(--color-border); font-size: 0.9rem;
+        }
+
+        .hint-level { display: block; margin-top: 6px; font-size: 0.9rem; padding: 6px 10px; border-radius: 6px; background: #ffffff; border: 1px solid var(--color-border); }
+        .hint-level .hint-num { font-weight: 700; color: var(--color-hint); margin-right: 6px; }
+
+        .hide-all-wrap {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit; padding: 4px 14px; border-radius: 6px; border: 1px solid var(--color-border);
+            background: #ffffff; cursor: pointer; font-size: 0.78rem; font-weight: 500; transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover { border-color: var(--color-error); color: var(--color-error); background: var(--color-trap-bg); }
+
+        .fiszka {
+            background: var(--color-bg-subtle); border: 2px solid #0a2540; border-radius: 14px;
+            padding: 18px 22px; margin: 20px 0;
+        }
+        .fiszka h3 { text-align: center; font-weight: 600; font-size: 1.1rem; margin-bottom: 10px; border-bottom: 2px solid #0a2540; padding-bottom: 4px; }
+        .fiszka-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+        .fiszka-col h4 { font-weight: 600; border-bottom: 1px solid #cbd5e0; padding-bottom: 3px; margin-bottom: 4px; }
+        .fiszka-col ul { list-style: none; padding-left: 0; }
+        .fiszka-col li { padding: 2px 0 2px 16px; position: relative; font-size: 0.88rem; }
+        .fiszka-col li::before { content: "•"; position: absolute; left: 0; color: var(--color-training); font-weight: 700; }
+        @media (max-width: 768px) { .fiszka-grid { grid-template-columns: 1fr; } .fiszka { padding: 14px 16px; } }
+
+        .top-panel {
+            background: var(--color-bg-subtle); border-radius: 16px; padding: 16px 20px; margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+        .top-panel .panel-row + .panel-row { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--color-border); }
+        .top-panel .title { font-weight: 600; font-size: 1.05rem; color: #0a2540; }
+        .top-panel .subtitle { font-size: 0.8rem; color: var(--color-text-muted); }
+        .top-panel .lesson-info { margin-top: 6px; font-size: 0.78rem; color: var(--color-text-muted); line-height: 1.4; }
+        .top-panel .lesson-info .lesson-title { font-style: italic; }
+        .progress-bar-wrap { flex: 1; min-width: 140px; }
+        .progress-bar-bg { background: #e9edf2; border-radius: 20px; height: 6px; overflow: hidden; position: relative; }
+        .progress-bar-fill { height: 100%; border-radius: 20px; background: linear-gradient(90deg, #2b6cb0, #4a8fd0); transition: width 0.4s ease; width: 0%; }
+        .progress-label { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--color-text-muted); margin-top: 2px; }
+        .view-filters { display: flex; gap: 4px; flex-wrap: wrap; }
+        .view-filters .btn { font-size: 0.72rem; padding: 3px 12px; }
+        .view-filters .btn.active { background: var(--color-training); border-color: var(--color-training); color: white; }
+        .today-tasks { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 0; }
+        .today-tasks .task { display: flex; align-items: center; gap: 4px; font-size: 0.82rem; }
+        .today-tasks .task .circle {
+            display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px;
+            border-radius: 50%; border: 2px solid var(--color-border); font-size: 0.55rem; font-weight: 700;
+            color: var(--color-text-muted); transition: all 0.2s;
+        }
+        .today-tasks .task.done .circle { background: var(--color-basic); border-color: var(--color-basic); color: white; }
+        .today-tasks .task.done .task-label { color: var(--color-text); text-decoration: line-through; }
+
+        .error-text { color: var(--color-error); text-decoration: line-through; font-weight: 600; }
+        .correct-text { color: var(--color-correct); font-weight: 600; }
+        .cross-mark { color: var(--color-error); font-weight: 700; margin-right: 2px; }
+        .check-mark { color: var(--color-correct); font-weight: 700; margin-right: 2px; }
+        .neq { color: var(--color-error); font-weight: 700; }
+
+        .toc-section {
+            background: #ffffff; border: 1px solid var(--color-border); border-radius: 16px;
+            padding: 18px 22px; margin-bottom: 22px;
+        }
+        .toc-section h2 { margin-bottom: 14px; font-size: 1.25rem; }
+        .toc-accordion { margin-top: 6px; }
+        .toc-item { border: 1px solid var(--color-border); border-radius: 8px; margin-bottom: 6px; background: #ffffff; }
+        .toc-summary {
+            font-weight: 600; font-size: 0.92rem; padding: 8px 14px; cursor: pointer; list-style: none;
+            display: flex; align-items: center; gap: 8px; transition: background 0.2s;
+        }
+        .toc-summary:hover { background: var(--color-bg-subtle); }
+        .toc-summary::-webkit-details-marker { display: none; }
+        .toc-summary::before { content: "▶"; font-size: 0.7rem; color: var(--color-text-muted); transition: transform 0.2s; margin-right: 6px; }
+        .toc-item[open] .toc-summary::before { transform: rotate(90deg); }
+        .toc-checklist { padding: 4px 14px 12px 30px; list-style: none; margin: 0; }
+        .toc-checklist li { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; padding: 2px 0; }
+        .toc-checklist input[type="checkbox"] { width: 15px; height: 15px; accent-color: var(--color-training); cursor: pointer; flex-shrink: 0; }
+        .toc-actions { display: flex; flex-wrap: wrap; gap: 6px; padding: 2px 14px 8px 30px; }
+        .toc-anchor {
+            display: inline-flex; align-items: center; justify-content: center; min-height: 30px;
+            padding: 4px 11px; border: 1px solid var(--color-training); border-radius: 6px;
+            background: var(--color-training-bg); color: var(--color-training); font-size: 0.78rem;
+            font-weight: 600; line-height: 1.2; text-decoration: none; transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover, .toc-anchor:focus-visible { background: var(--color-training); color: #ffffff; }
+        .toc-keywords {
+            display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;
+            margin-top: 14px; padding: 12px 16px; background: var(--color-basic-bg); border-radius: 12px;
+            color: #0f5132; font-weight: 600; line-height: 1.6;
+        }
+        .toc-keywords span { font-style: italic; color: #1e293b; }
+
+        .section.hidden-by-filter { display: none !important; }
+
+        .topic-list {
+            display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 30px; padding-left: 28px;
+        }
+        .topic-list li { margin: 0; padding-left: 2px; font-size: 0.9rem; }
+        .topic-list a {
+            display: flex; align-items: center; min-height: 38px; padding: 6px 10px;
+            border: 1px solid var(--color-border); border-radius: 6px; background: #ffffff;
+            color: #0a2540; font-weight: 600; line-height: 1.25; text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .topic-list a:hover, .topic-list a:focus-visible { background: var(--color-training-bg); border-color: var(--color-training); color: var(--color-training); }
+        @media (max-width: 600px) { .topic-list { grid-template-columns: 1fr; } }
+
+        .footer {
+            margin-top: 32px; padding-top: 16px; border-top: 2px solid var(--color-border);
+            text-align: center; font-size: 0.8rem; color: var(--color-text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .top-panel .panel-row { flex-direction: column; align-items: stretch; }
+            .view-filters { justify-content: center; }
+            .today-tasks { flex-direction: column; gap: 3px; }
+            .example { flex-direction: column; align-items: flex-start; }
+            .top-panel { padding: 12px 14px; }
+            .container { padding: 10px 6px; }
+            .toc-section { padding: 12px 14px; }
+            .toc-summary { font-size: 0.85rem; padding: 6px 10px; }
+            .toc-checklist li { font-size: 0.8rem; }
+        }
+
+        .text-muted { color: var(--color-text-muted); }
+        .text-sm { font-size: 0.82rem; }
+        .mt-8 { margin-top: 8px; }
+        .mb-8 { margin-bottom: 8px; }
+        .flex-wrap { flex-wrap: wrap; }
+
+        .part-heading {
+            font-size: 1.5rem; font-weight: 700; color: #0a2540; margin-top: 32px; margin-bottom: 14px;
+            padding: 8px 16px; background: var(--color-bg-subtle); border-radius: 12px;
+            border-left: 6px solid var(--color-training); letter-spacing: -0.02em;
+        }
+        .part-heading .part-num { color: var(--color-training); }
+
+        .vocab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
+        .vocab-item { background: var(--color-bg-subtle); padding: 8px 12px; border-radius: 6px; border: 1px solid var(--color-border); }
+        .vocab-item .en { font-weight: 600; }
+        .vocab-item .pl { font-style: italic; color: var(--color-text-muted); }
+        .vocab-item .ex { font-size: 0.8rem; display: block; color: var(--color-training); margin-top: 2px; }
+        @media (max-width: 600px) { .vocab-grid { grid-template-columns: 1fr; } }
+
+        .goals-box {
+            background: #f0fff4; border: 1px solid #c6f6d5; border-radius: 10px; padding: 16px 22px; margin-bottom: 24px;
+        }
+        .goals-box h3 { font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; color: #276749; margin-bottom: 8px; }
+        .goals-box ul { padding-left: 20px; }
+        .goals-box li { font-size: 0.98em; margin-bottom: 4px; }
+
+        .warmup-box {
+            background: #ebf8ff; border: 1px solid #bee3f8; border-radius: 10px; padding: 16px 22px; margin-bottom: 24px;
+        }
+        .warmup-box h3 { font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; color: #2b6cb0; margin-bottom: 8px; }
+        .warmup-box ol { padding-left: 20px; }
+        .warmup-box li { font-size: 0.98em; margin-bottom: 6px; }
+        .warmup-box .warmup-note { margin-top: 8px; font-size: 0.9em; color: #2b6cb0; }
+
+        .checklist { padding-left: 0; list-style: none; }
+        .checklist li { display: flex; align-items: center; gap: 6px; padding: 1px 0; font-size: 0.88rem; }
+        .checklist input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--color-training); cursor: pointer; flex-shrink: 0; }
+
+        .lesson-nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 0; font-size: 0.85em; border-bottom: 1px solid var(--color-border); margin-bottom: 16px;
+        }
+        .lesson-nav a { color: #2b6cb0; text-decoration: none; font-weight: 600; }
+        .lesson-nav a:hover { text-decoration: underline; }
+        .lesson-nav .all-lessons { color: #4a5568; }
+
+        .mistake-box {
+            background: #fff5f5; border-left: 4px solid #fc8181; padding: 14px 18px; margin: 12px 0; border-radius: 6px;
+        }
+        .mistake-box .wrong { color: #c53030; text-decoration: line-through; font-weight: 600; }
+        .mistake-box .correct { color: #38a169; font-weight: 600; }
+
+        .srs-box {
+            background: #1a202c; color: #e2e8f0; border-radius: 12px; padding: 20px 24px; margin: 20px 0 8px;
+        }
+        .srs-box h3 { color: white; font-size: 1em; margin-bottom: 10px; }
+        .srs-box .srs-steps { display: flex; flex-wrap: wrap; gap: 10px; }
+        .srs-box .srs-step {
+            background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px; padding: 8px 14px; font-size: 0.85em; flex: 1 1 100px; text-align: center;
+        }
+        .srs-box .srs-step strong { display: block; color: #e53e3e; font-size: 1.1em; }
+
+        .fitb-row {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 4px 0; padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child { border-bottom: none; }
+        .fitb-row input[type="text"] {
+            padding: 3px 8px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 0.85rem;
+            width: 100px; transition: border-color 0.2s; font-family: inherit;
+        }
+        .fitb-row input[type="text"]:focus { outline: none; border-color: var(--color-training); box-shadow: 0 0 0 3px rgba(43,108,176,0.15); }
+        .fitb-row input[type="text"].correct { border-color: var(--color-correct); background: #f0faf4; }
+        .fitb-row input[type="text"].wrong { border-color: var(--color-error); background: #fef2f2; }
+        .fitb-row .result-icon { font-size: 1.0rem; }
+
+        .mission-result {
+            font-size: 1.0rem; font-weight: 600; padding: 10px 14px; border-radius: 10px; margin-top: 8px;
+        }
+        .mission-result.perfect { background: #d4edda; color: #155724; }
+        .mission-result.good { background: #cce5ff; color: #004085; }
+        .mission-result.ok { background: #ffe8cc; color: #8a6d3b; }
+        .mission-result.fail { background: #f8d7da; color: #721c24; }
+
+        .choice-quiz .q-item { padding: 8px 0; border-bottom: 1px solid var(--color-border); }
+        .choice-quiz .q-item:last-child { border-bottom: none; }
+        .choice-quiz .q-item .q-text { font-weight: 500; margin-bottom: 4px; }
+        .choice-quiz .q-item .q-options { display: flex; flex-wrap: wrap; gap: 6px; }
+        .choice-quiz .q-item .q-options .btn { font-size: 0.78rem; padding: 3px 12px; }
+        .choice-quiz .q-item .q-options .btn.correct-choice { border-color: var(--color-correct); background: var(--color-basic-bg); color: var(--color-correct); }
+        .choice-quiz .q-item .q-options .btn.wrong-choice { border-color: var(--color-error); background: var(--color-trap-bg); color: var(--color-error); }
+        .choice-quiz .q-item .q-feedback { font-size: 0.82rem; margin-top: 4px; font-weight: 500; }
+        .choice-quiz .q-item .q-feedback .correct { color: var(--color-correct); }
+        .choice-quiz .q-item .q-feedback .wrong { color: var(--color-error); }
+    </style>
+</head>
+<body>
+<div class="container" id="app">
+
+    <!-- TOP PANEL -->
+    <div class="top-panel" id="topPanel">
+        <div class="panel-row">
+            <div>
+                <div class="title">Czasy teraźniejsze i przeszłe – <strong>Present Simple, Continuous, Perfect, Past Simple i Continuous</strong></div>
+                <div class="subtitle">Egzamin ósmoklasisty · kompleksowe przygotowanie</div>
+                <div class="lesson-info">
+                    <div class="lesson-title">Lekcja 4 – porównanie czasów</div>
+                    <div>Nazwa pliku: lekcja-04-czasy.html</div>
+                </div>
+            </div>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                </div>
+                <div class="progress-label">
+                    <span id="progressPercent">0%</span>
+                    <span id="progressStatus">Zacznij naukę</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel-row">
+            <div class="view-filters">
+                <button class="btn active" data-view="all" onclick="setView('all')">📚 Wszystko</button>
+                <button class="btn" data-view="basic" onclick="setView('basic')">🟢 Podstawa + Trening</button>
+                <button class="btn" data-view="exam" onclick="setView('exam')">🟠 Egzamin</button>
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+            </div>
+            <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+        </div>
+        <div class="panel-row">
+            <div class="today-tasks" id="todayTasks">
+                <div class="task" data-task="ps-pc"><span class="circle">1</span><span class="task-label">Present Simple vs Continuous</span></div>
+                <div class="task" data-task="pp"><span class="circle">2</span><span class="task-label">Present Perfect</span></div>
+                <div class="task" data-task="ps-past"><span class="circle">3</span><span class="task-label">Past Simple vs Continuous</span></div>
+                <div class="task" data-task="training"><span class="circle">4</span><span class="task-label">Zrób trening</span></div>
+                <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAWIGACJA MIĘDZY LEKCJAMI -->
+    <div class="lesson-nav">
+        <a href="lekcja 03.html">&larr; Poprzednia lekcja</a>
+        <a href="index.html" class="all-lessons">Spis wszystkich lekcji</a>
+        <a href="lekcja 05.html">Następna lekcja &rarr;</a>
+    </div>
+
+    <!-- SPIS TREŚCI -->
+    <div class="toc-section" id="sec-toc">
+        <h2>Spis treści</h2>
+        <div class="toc-accordion">
+            <details class="toc-item">
+                <summary class="toc-summary">Cele lekcji i test wstępny</summary>
+                <nav class="toc-actions">
+                    <a class="toc-anchor" href="#sec-goals">Cele lekcji</a>
+                    <a class="toc-anchor" href="#sec-warmup">Test wstępny</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Znam cele lekcji.</li>
+                    <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am test wstępny.</li>
+                </ul>
+            </details>
+            <details class="toc-item">
+                <summary class="toc-summary">Present Simple vs Present Continuous</summary>
+                <nav class="toc-actions">
+                    <a class="toc-anchor" href="#part1">Present Simple</a>
+                    <a class="toc-anchor" href="#part2">Present Continuous</a>
+                    <a class="toc-anchor" href="#part3">Porównanie</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Umiem tworzyć Present Simple.</li>
+                    <li><input type="checkbox" data-progress="5" /> Umiem tworzyć Present Continuous.</li>
+                    <li><input type="checkbox" data-progress="5" /> Znam różnicę między tymi czasami.</li>
+                </ul>
+            </details>
+            <details class="toc-item">
+                <summary class="toc-summary">Present Perfect</summary>
+                <nav class="toc-actions">
+                    <a class="toc-anchor" href="#part4">Budowa i użycie</a>
+                    <a class="toc-anchor" href="#part5">Porównanie z Past Simple</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Umiem tworzyć Present Perfect.</li>
+                    <li><input type="checkbox" data-progress="5" /> Znam różnicę między Present Perfect a Past Simple.</li>
+                </ul>
+            </details>
+            <details class="toc-item">
+                <summary class="toc-summary">Past Simple i Past Continuous</summary>
+                <nav class="toc-actions">
+                    <a class="toc-anchor" href="#part6">Past Simple</a>
+                    <a class="toc-anchor" href="#part7">Past Continuous</a>
+                    <a class="toc-anchor" href="#part8">Łączenie z when / while</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Umiem tworzyć Past Simple.</li>
+                    <li><input type="checkbox" data-progress="5" /> Umiem tworzyć Past Continuous.</li>
+                    <li><input type="checkbox" data-progress="5" /> Potrafię łączyć czasy z when/while.</li>
+                </ul>
+            </details>
+            <details class="toc-item">
+                <summary class="toc-summary">Słownictwo i ćwiczenia</summary>
+                <nav class="toc-actions">
+                    <a class="toc-anchor" href="#sec-vocab">Słownictwo</a>
+                    <a class="toc-anchor" href="#part10">Ćwiczenia</a>
+                    <a class="toc-anchor" href="#part11">Błędy</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Znam słownictwo związane z planem dnia, czasem wolnym.</li>
+                    <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am ćwiczenia.</li>
+                    <li><input type="checkbox" data-progress="5" /> Znam najczęstsze błędy.</li>
+                </ul>
+            </details>
+        </div>
+        <div class="toc-keywords">
+            <span>Słownictwo: plan dnia · obowiązki · czas wolny · określenia czasu</span>
+            <a class="toc-anchor" href="#sec-vocab">Otwórz słowniczek</a>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    CZĘŚĆ 0 – CELE I TEST WSTĘPNY
+    ============================================================ -->
+    <section class="section" data-level="basic" id="sec-goals">
+        <div class="part-heading"><span class="part-num">Cele lekcji</span></div>
+        <div class="goals-box">
+            <h3>Po tej lekcji będziesz umieć</h3>
+            <ul>
+                <li>tworzyć zdania w Present Simple, Present Continuous, Present Perfect, Past Simple i Past Continuous;</li>
+                <li>odróżniać rutynę i fakty od czynności trwających teraz;</li>
+                <li>stosować Present Perfect dla doświadczeń i wydarzeń z przeszłości mających skutek teraz;</li>
+                <li>łączyć Past Simple z Past Continuous za pomocą <strong>when</strong> i <strong>while</strong>;</li>
+                <li>używać odpowiednich określeń czasu dla każdego z czasów.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" data-level="basic" id="sec-warmup">
+        <div class="warmup-box">
+            <h3>Test wstępny – sprawdź, co już wiesz</h3>
+            <ol>
+                <li>She __________ (watch) TV every evening. (Present Simple)</li>
+                <li>Listen! They __________ (play) the piano. (Present Continuous)</li>
+                <li>I __________ (never / be) to London. (Present Perfect)</li>
+                <li>He __________ (go) to the cinema yesterday. (Past Simple)</li>
+                <li>I __________ (walk) home when it __________ (start) to rain. (Past Continuous + Past Simple)</li>
+            </ol>
+            <div class="warmup-note">Nie martw się, jeśli czegoś nie wiesz – po to jest ta lekcja.</div>
+            <button class="answer-toggle" onclick="toggleAnswer('ans-warmup')">Pokaż odpowiedzi</button>
+            <div id="ans-warmup" class="answer-content">
+                <ol>
+                    <li><strong>watches</strong> (3. os. l.poj. + -es)</li>
+                    <li><strong>are playing</strong> (czynność trwająca teraz)</li>
+                    <li><strong>have never been</strong> (doświadczenie)</li>
+                    <li><strong>went</strong> (zakończony moment w przeszłości)</li>
+                    <li><strong>was walking</strong> / <strong>started</strong> (trwająca czynność przerwana przez krótkie wydarzenie)</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="checklist">
+            <h3>Lista kontrolna</h3>
+            <label><input type="checkbox"> Umiem tworzyć Present Simple i Continuous.</label>
+            <label><input type="checkbox"> Umiem tworzyć Present Perfect.</label>
+            <label><input type="checkbox"> Umiem tworzyć Past Simple i Continuous.</label>
+            <label><input type="checkbox"> Znam określenia czasu dla każdego z tych czasów.</label>
+            <label><input type="checkbox"> Rozpoznaję różnicę między Present Perfect a Past Simple.</label>
+            <label><input type="checkbox"> Potrafię łączyć Past Continuous z Past Simple (when/while).</label>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 1 – PRESENT SIMPLE
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part1">
+        <div class="part-heading"><span class="part-num">Część 1</span> · Present Simple</div>
+
+        <div class="section" data-level="basic">
+            <h2>1. Budowa i użycie Present Simple</h2>
+
+            <div class="card card-remember">
+                <span class="card-label">Użycie</span>
+                <ul>
+                    <li><strong>Rutyny i zwyczaje</strong> – co robimy regularnie</li>
+                    <li><strong>Fakty i stany</strong> – rzeczy zawsze prawdziwe</li>
+                    <li><strong>Rozkłady i harmonogramy</strong> – np. pociągi, lekcje</li>
+                    <li><strong>Czasowniki stanów</strong> (know, like, want, need…)</li>
+                </ul>
+            </div>
+
+            <div class="card card-gray">
+                <span class="card-label">Budowa – twierdzenie</span>
+                <p><strong>Podmiot + czasownik (z -s/-es w 3. os. l.poj.)</strong></p>
+                <div class="example">
+                    <span class="tag">I / you / we / they</span>
+                    <span class="eng"><span class="hl-subject">I</span> <span class="hl-main-verb">like</span> coffee.</span>
+                    <span class="pl">Lubię kawę.</span>
+                    <button class="audio-btn" data-text="I like coffee." data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="tag">he / she / it</span>
+                    <span class="eng"><span class="hl-subject">She</span> <span class="hl-main-verb">likes</span> coffee.</span>
+                    <span class="pl">Ona lubi kawę.</span>
+                    <button class="audio-btn" data-text="She likes coffee." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-error">
+                <span class="card-label">Budowa – pytanie i przeczenie</span>
+                <p><strong>Pytanie:</strong> Do / Does + podmiot + czasownik podstawowy?</p>
+                <p><strong>Przeczenie:</strong> Podmiot + don't / doesn't + czasownik podstawowy</p>
+                <div class="example">
+                    <span class="eng"><span class="hl-operator">Do</span> you <span class="hl-main-verb">like</span> coffee?</span>
+                    <span class="pl">Czy lubisz kawę?</span>
+                    <button class="audio-btn" data-text="Do you like coffee?" data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng">She <span class="hl-operator">doesn't</span> <span class="hl-main-verb">like</span> coffee.</span>
+                    <span class="pl">Ona nie lubi kawy.</span>
+                    <button class="audio-btn" data-text="She doesn't like coffee." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-warning">
+                <span class="card-label">Końcówka -s / -es – zasady pisowni</span>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Zasada</th><th>Przykład</th></tr></thead>
+                        <tbody>
+                            <tr><td>Większość czasowników + <strong>-s</strong></td><td>work → works, play → plays</td></tr>
+                            <tr><td>Końcówka <strong>-s, -sh, -ch, -x, -o</strong> → <strong>-es</strong></td><td>watch → watches, go → goes, do → does</td></tr>
+                            <tr><td>Końcówka <strong>spółgłoska + -y</strong> → <strong>-ies</strong></td><td>study → studies, fly → flies</td></tr>
+                            <tr><td>Końcówka <strong>samogłoska + -y</strong> → <strong>-s</strong></td><td>play → plays, say → says</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h3>Określenia czasu dla Present Simple</h3>
+            <div class="card card-hint">
+                <ul>
+                    <li><strong>always, usually, often, sometimes, rarely, never</strong></li>
+                    <li><strong>every day / week / month / year</strong></li>
+                    <li><strong>on Mondays, at the weekend</strong></li>
+                    <li><strong>once / twice a week</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 2 – PRESENT CONTINUOUS
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part2">
+        <div class="part-heading"><span class="part-num">Część 2</span> · Present Continuous</div>
+
+        <div class="section" data-level="basic">
+            <h2>2. Budowa i użycie Present Continuous</h2>
+
+            <div class="card card-remember">
+                <span class="card-label">Użycie</span>
+                <ul>
+                    <li><strong>Czynności trwające teraz</strong> – w momencie mówienia</li>
+                    <li><strong>Sytuacje tymczasowe</strong> – obecnie, ale nie na stałe</li>
+                    <li><strong>Ustalone plany na przyszłość</strong> – np. w najbliższym czasie</li>
+                </ul>
+            </div>
+
+            <div class="card card-gray">
+                <span class="card-label">Budowa – twierdzenie</span>
+                <p><strong>Podmiot + am / is / are + czasownik + -ing</strong></p>
+                <div class="example">
+                    <span class="eng"><span class="hl-subject">I</span> <span class="hl-operator">am</span> <span class="hl-main-verb">reading</span>.</span>
+                    <span class="pl">Czytam.</span>
+                    <button class="audio-btn" data-text="I am reading." data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng"><span class="hl-subject">She</span> <span class="hl-operator">is</span> <span class="hl-main-verb">watching</span> TV.</span>
+                    <span class="pl">Ona ogląda telewizję.</span>
+                    <button class="audio-btn" data-text="She is watching TV." data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng"><span class="hl-subject">They</span> <span class="hl-operator">are</span> <span class="hl-main-verb">playing</span> football.</span>
+                    <span class="pl">Oni grają w piłkę.</span>
+                    <button class="audio-btn" data-text="They are playing football." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-error">
+                <span class="card-label">Budowa – pytanie i przeczenie</span>
+                <p><strong>Pytanie:</strong> Am / Is / Are + podmiot + czasownik + -ing?</p>
+                <p><strong>Przeczenie:</strong> Podmiot + am/is/are + not + czasownik + -ing</p>
+                <div class="example">
+                    <span class="eng"><span class="hl-operator">Is</span> she <span class="hl-main-verb">watching</span> TV?</span>
+                    <span class="pl">Czy ona ogląda telewizję?</span>
+                    <button class="audio-btn" data-text="Is she watching TV?" data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng">They <span class="hl-operator">aren't</span> <span class="hl-main-verb">playing</span> football.</span>
+                    <span class="pl">Oni nie grają w piłkę.</span>
+                    <button class="audio-btn" data-text="They aren't playing football." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-warning">
+                <span class="card-label">Pisownia formy -ing</span>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Zasada</th><th>Przykład</th></tr></thead>
+                        <tbody>
+                            <tr><td>Większość czasowników + <strong>-ing</strong></td><td>read → reading, play → playing</td></tr>
+                            <tr><td>Końcówka <strong>-e</strong> → usuń <strong>-e</strong> + <strong>-ing</strong></td><td>make → making, write → writing</td></tr>
+                            <tr><td>Końcówka <strong>spółgłoska + samogłoska + spółgłoska</strong> → podwojenie spółgłoski + <strong>-ing</strong></td><td>run → running, swim → swimming</td></tr>
+                            <tr><td>Końcówka <strong>-ie</strong> → <strong>-ying</strong></td><td>lie → lying, die → dying</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h3>Określenia czasu dla Present Continuous</h3>
+            <div class="card card-hint">
+                <ul>
+                    <li><strong>now, right now, at the moment</strong></li>
+                    <li><strong>today, this week, these days</strong></li>
+                    <li><strong>currently</strong></li>
+                    <li>przy planach na przyszłość: <strong>tonight, tomorrow, this weekend, next week</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 3 – PORÓWNANIE PRESENT SIMPLE vs CONTINUOUS
+    ============================================================ -->
+    <section class="section" data-level="training" id="part3">
+        <div class="part-heading"><span class="part-num">Część 3</span> · Porównanie Present Simple i Continuous</div>
+
+        <div class="section" data-level="training">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Present Simple</th><th>Present Continuous</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Rutyna, zwyczaj, fakt</strong><br /><em>I get up at 7 every day.</em></td>
+                            <td><strong>Czynność trwająca teraz</strong><br /><em>I am getting up now.</em></td></tr>
+                        <tr><td><strong>Stany i uczucia</strong><br /><em>I understand you.</em></td>
+                            <td><strong>Sytuacja tymczasowa</strong><br /><em>I’m living with my grandparents this month.</em></td></tr>
+                        <tr><td><strong>Rozkłady</strong><br /><em>The train leaves at 6 p.m.</em></td>
+                            <td><strong>Ustalony plan na przyszłość</strong><br /><em>We are meeting at 6 p.m.</em></td></tr>
+                        <tr><td><strong>Określenia: always, usually, often, sometimes, never, every day, on Mondays</strong></td>
+                            <td><strong>Określenia: now, at the moment, today, this week, tonight, tomorrow</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-trap">
+                <span class="card-label">Uwaga</span>
+                <p>Niektóre czasowniki mogą występować w obu czasach, ale zmieniają znaczenie:</p>
+                <ul>
+                    <li><em>I have a car.</em> – Mam samochód. (stan)</li>
+                    <li><em>I’m having lunch.</em> – Jem lunch. (czynność)</li>
+                    <li><em>I think you are right.</em> – Uważam, że masz rację. (stan)</li>
+                    <li><em>I’m thinking about you.</em> – Myślę o tobie. (czynność)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 4 – PRESENT PERFECT
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part4">
+        <div class="part-heading"><span class="part-num">Część 4</span> · Present Perfect</div>
+
+        <div class="section" data-level="basic">
+            <h2>4. Budowa i użycie Present Perfect</h2>
+
+            <div class="card card-remember">
+                <span class="card-label">Budowa</span>
+                <p><strong>have / has + III forma czasownika (past participle)</strong></p>
+                <div class="example">
+                    <span class="eng"><span class="hl-subject">I</span> <span class="hl-operator">have</span> <span class="hl-main-verb">seen</span> this film.</span>
+                    <span class="pl">Widziałem ten film.</span>
+                    <button class="audio-btn" data-text="I have seen this film." data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng"><span class="hl-subject">She</span> <span class="hl-operator">has</span> <span class="hl-main-verb">visited</span> Paris.</span>
+                    <span class="pl">Ona odwiedziła Paryż.</span>
+                    <button class="audio-btn" data-text="She has visited Paris." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-gray">
+                <span class="card-label">Użycie</span>
+                <ul>
+                    <li><strong>Doświadczenia</strong> – <em>ever, never, before</em></li>
+                    <li><strong>Niedawne wydarzenia</strong> – <em>just, already, yet</em></li>
+                    <li><strong>Sytuacje trwające od przeszłości do teraz</strong> – <em>since, for</em></li>
+                    <li><strong>Skutek widoczny teraz</strong> – np. <em>I have lost my keys.</em></li>
+                </ul>
+            </div>
+
+            <div class="card card-error">
+                <span class="card-label">Pytania i przeczenia</span>
+                <div class="example">
+                    <span class="eng"><span class="hl-operator">Have</span> you ever <span class="hl-main-verb">been</span> to Italy?</span>
+                    <span class="pl">Czy kiedykolwiek byłeś we Włoszech?</span>
+                    <button class="audio-btn" data-text="Have you ever been to Italy?" data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng">I <span class="hl-operator">haven't</span> <span class="hl-main-verb">finished</span> my homework yet.</span>
+                    <span class="pl">Jeszcze nie skończyłem zadania.</span>
+                    <button class="audio-btn" data-text="I haven't finished my homework yet." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-warning">
+                <span class="card-label">Since vs For</span>
+                <ul>
+                    <li><strong>since</strong> – punkt w czasie: <em>since Monday, since 2020, since I was a child</em></li>
+                    <li><strong>for</strong> – długość okresu: <em>for three days, for two years, for a long time</em></li>
+                </ul>
+                <div class="example">
+                    <span class="eng">I have known her <span class="hl-operator">for</span> five years.</span>
+                    <span class="pl">Znam ją od pięciu lat.</span>
+                    <button class="audio-btn" data-text="I have known her for five years." data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng">I have known her <span class="hl-operator">since</span> 2019.</span>
+                    <span class="pl">Znam ją od 2019 roku.</span>
+                    <button class="audio-btn" data-text="I have known her since 2019." data-speed="0.7">▶</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 5 – PORÓWNANIE PRESENT PERFECT vs PAST SIMPLE
+    ============================================================ -->
+    <section class="section" data-level="training" id="part5">
+        <div class="part-heading"><span class="part-num">Część 5</span> · Present Perfect vs Past Simple</div>
+
+        <div class="section" data-level="training">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Present Perfect</th><th>Past Simple</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Doświadczenie</strong> – nie wiemy kiedy<br /><em>I have been to London.</em></td>
+                            <td><strong>Konkretny moment w przeszłości</strong><br /><em>I went to London in 2022.</em></td></tr>
+                        <tr><td><strong>Skutek widoczny teraz</strong><br /><em>I have lost my keys.</em></td>
+                            <td><strong>Zakończone wydarzenie</strong><br /><em>I lost my keys yesterday.</em></td></tr>
+                        <tr><td><strong>Sytuacja trwająca do teraz</strong><br /><em>I have lived here for 10 years.</em></td>
+                            <td><strong>Sytuacja zakończona</strong><br /><em>I lived there for 10 years, then I moved.</em></td></tr>
+                        <tr><td><strong>Określenia:</strong> ever, never, just, already, yet, since, for</td>
+                            <td><strong>Określenia:</strong> yesterday, last week, in 2020, two days ago</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-trap">
+                <span class="card-label">Złota zasada</span>
+                <p>Jeśli podany jest <strong>zakończony moment w przeszłości</strong> (np. <em>yesterday, in 2024, two days ago</em>) → używamy <strong>Past Simple</strong>.</p>
+                <p>Jeśli nie ma konkretnego momentu, a skutek jest ważny teraz → <strong>Present Perfect</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 6 – PAST SIMPLE
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part6">
+        <div class="part-heading"><span class="part-num">Część 6</span> · Past Simple</div>
+
+        <div class="section" data-level="basic">
+            <h2>6. Budowa i użycie Past Simple</h2>
+
+            <div class="card card-remember">
+                <span class="card-label">Użycie</span>
+                <ul>
+                    <li><strong>Zakończone wydarzenia w przeszłości</strong></li>
+                    <li><strong>Fakty i stany w przeszłości</strong></li>
+                    <li><strong>Kolejne wydarzenia w przeszłości</strong></li>
+                </ul>
+            </div>
+
+            <div class="card card-gray">
+                <span class="card-label">Budowa – twierdzenie</span>
+                <p><strong>Czasownik regularny + -ed</strong> lub <strong>forma nieregularna</strong></p>
+                <div class="example">
+                    <span class="tag">regularny</span>
+                    <span class="eng"><span class="hl-subject">She</span> <span class="hl-main-verb">played</span> tennis yesterday.</span>
+                    <span class="pl">Ona grała w tenisa wczoraj.</span>
+                    <button class="audio-btn" data-text="She played tennis yesterday." data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="tag">nieregularny</span>
+                    <span class="eng"><span class="hl-subject">He</span> <span class="hl-main-verb">went</span> home at 5 p.m.</span>
+                    <span class="pl">On poszedł do domu o 17.</span>
+                    <button class="audio-btn" data-text="He went home at 5 p.m." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-error">
+                <span class="card-label">Budowa – pytanie i przeczenie</span>
+                <p><strong>Pytanie:</strong> Did + podmiot + czasownik podstawowy?</p>
+                <p><strong>Przeczenie:</strong> Podmiot + didn't + czasownik podstawowy</p>
+                <div class="example">
+                    <span class="eng"><span class="hl-operator">Did</span> you <span class="hl-main-verb">see</span> the film?</span>
+                    <span class="pl">Czy widziałeś ten film?</span>
+                    <button class="audio-btn" data-text="Did you see the film?" data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng">I <span class="hl-operator">didn't</span> <span class="hl-main-verb">go</span> to school yesterday.</span>
+                    <span class="pl">Nie poszedłem wczoraj do szkoły.</span>
+                    <button class="audio-btn" data-text="I didn't go to school yesterday." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-remember">
+                <span class="card-label">Określenia czasu dla Past Simple</span>
+                <ul>
+                    <li><strong>yesterday, last week / month / year</strong></li>
+                    <li><strong>two days / three years ago</strong></li>
+                    <li><strong>in 2020, then</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 7 – PAST CONTINUOUS
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part7">
+        <div class="part-heading"><span class="part-num">Część 7</span> · Past Continuous</div>
+
+        <div class="section" data-level="basic">
+            <h2>7. Budowa i użycie Past Continuous</h2>
+
+            <div class="card card-remember">
+                <span class="card-label">Użycie</span>
+                <ul>
+                    <li><strong>Czynność trwająca w określonym momencie w przeszłości</strong></li>
+                    <li><strong>Tło dla krótszego wydarzenia</strong> (łączymy z Past Simple)</li>
+                    <li><strong>Równoległe czynności w przeszłości</strong></li>
+                </ul>
+            </div>
+
+            <div class="card card-gray">
+                <span class="card-label">Budowa – twierdzenie</span>
+                <p><strong>was / were + czasownik + -ing</strong></p>
+                <div class="example">
+                    <span class="eng"><span class="hl-subject">I</span> <span class="hl-operator">was</span> <span class="hl-main-verb">reading</span> at 8 p.m.</span>
+                    <span class="pl">Czytałem o 20.</span>
+                    <button class="audio-btn" data-text="I was reading at 8 p.m." data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng"><span class="hl-subject">They</span> <span class="hl-operator">were</span> <span class="hl-main-verb">playing</span> football at that time.</span>
+                    <span class="pl">Oni grali w piłkę w tym czasie.</span>
+                    <button class="audio-btn" data-text="They were playing football at that time." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-error">
+                <span class="card-label">Budowa – pytanie i przeczenie</span>
+                <p><strong>Pytanie:</strong> Was / Were + podmiot + czasownik + -ing?</p>
+                <p><strong>Przeczenie:</strong> Podmiot + wasn't / weren't + czasownik + -ing</p>
+                <div class="example">
+                    <span class="eng"><span class="hl-operator">Were</span> you <span class="hl-main-verb">sleeping</span> at 11 p.m.?</span>
+                    <span class="pl">Czy spałeś o 23?</span>
+                    <button class="audio-btn" data-text="Were you sleeping at 11 p.m.?" data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="eng">She <span class="hl-operator">wasn't</span> <span class="hl-main-verb">listening</span> to the teacher.</span>
+                    <span class="pl">Ona nie słuchała nauczyciela.</span>
+                    <button class="audio-btn" data-text="She wasn't listening to the teacher." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="card card-remember">
+                <span class="card-label">Określenia czasu dla Past Continuous</span>
+                <ul>
+                    <li><strong>at 5 p.m. yesterday, at that moment</strong></li>
+                    <li><strong>all evening, from 8 to 10 p.m.</strong></li>
+                    <li><strong>while, when</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 8 – ŁĄCZENIE PAST CONTINUOUS z PAST SIMPLE
+    ============================================================ -->
+    <section class="section" data-level="training" id="part8">
+        <div class="part-heading"><span class="part-num">Część 8</span> · Łączenie Past Continuous i Past Simple</div>
+
+        <div class="section" data-level="training">
+            <div class="card card-remember">
+                <span class="card-label">Reguła</span>
+                <ul>
+                    <li><strong>while</strong> + Past Continuous (czynność trwająca w tle)</li>
+                    <li><strong>when</strong> + Past Simple (krótsze wydarzenie, które przerwało)</li>
+                    <li><strong>when</strong> może też wprowadzać obie części: <em>When I was walking, I saw...</em></li>
+                </ul>
+            </div>
+
+            <div class="example">
+                <span class="tag">przykład</span>
+                <span class="eng"><span class="hl-main-verb">I was walking</span> home <span class="hl-operator">when</span> it <span class="hl-main-verb">started</span> to rain.</span>
+                <span class="pl">Szedłem do domu, kiedy zaczęło padać.</span>
+                <button class="audio-btn" data-text="I was walking home when it started to rain." data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">przykład</span>
+                <span class="eng"><span class="hl-operator">While</span> I <span class="hl-main-verb">was studying</span>, my friend <span class="hl-main-verb">called</span>.</span>
+                <span class="pl">Kiedy się uczyłem, zadzwonił mój przyjaciel.</span>
+                <button class="audio-btn" data-text="While I was studying, my friend called." data-speed="0.7">▶</button>
+            </div>
+
+            <div class="card card-trap">
+                <span class="card-label">Tip tygodnia – oś czasu</span>
+                <p>Narysuj oś czasu. Krótkie wydarzenie zaznacz punktem, a czynność będącą w toku – dłuższą linią. Następnie ułóż zdanie.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 9 – TABELA ZBIORCZA WSZYSTKICH CZASÓW
+    ============================================================ -->
+    <section class="section" data-level="exam" id="part9">
+        <div class="part-heading"><span class="part-num">Część 9</span> · Zestawienie wszystkich czasów</div>
+
+        <div class="section" data-level="exam">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Czas</th><th>Budowa</th><th>Użycie</th><th>Określenia czasu</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Present Simple</strong></td><td>do/does + V1 (3.os -s/-es)</td><td>rutyny, fakty, stany</td><td>always, often, every day, on Mondays</td></tr>
+                        <tr><td><strong>Present Continuous</strong></td><td>am/is/are + V-ing</td><td>czynności teraz, plany</td><td>now, at the moment, today, tonight</td></tr>
+                        <tr><td><strong>Present Perfect</strong></td><td>have/has + V3</td><td>doświadczenia, skutek teraz, since/for</td><td>ever, never, just, already, yet, since, for</td></tr>
+                        <tr><td><strong>Past Simple</strong></td><td>V2 (regularny -ed / nieregularny)</td><td>zakończone wydarzenia</td><td>yesterday, last week, in 2020, ago</td></tr>
+                        <tr><td><strong>Past Continuous</strong></td><td>was/were + V-ing</td><td>czynność w toku w przeszłości</td><td>at 5 p.m. yesterday, while, when</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 10 – SŁOWNICTWO
+    ============================================================ -->
+    <section class="section" data-level="basic" id="sec-vocab">
+        <div class="part-heading"><span class="part-num">Część 10</span> · Słownictwo – plan dnia, obowiązki, czas wolny</div>
+
+        <div class="section" data-level="basic">
+            <div class="vocab-grid">
+                <div class="vocab-item"><span class="en">daily routine</span> <span class="pl">codzienna rutyna</span><span class="ex">My daily routine starts at 7 a.m.</span><button class="audio-btn" data-text="My daily routine starts at 7 a.m." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">get up</span> <span class="pl">wstawać</span><span class="ex">I get up at 6:30.</span><button class="audio-btn" data-text="I get up at 6:30." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">have breakfast</span> <span class="pl">jeść śniadanie</span><span class="ex">We have breakfast together.</span><button class="audio-btn" data-text="We have breakfast together." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">go to school / work</span> <span class="pl">iść do szkoły / pracy</span><span class="ex">I go to school by bus.</span><button class="audio-btn" data-text="I go to school by bus." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">do homework</span> <span class="pl">odrabiać zadanie</span><span class="ex">I do my homework after school.</span><button class="audio-btn" data-text="I do my homework after school." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">tidy up</span> <span class="pl">sprzątać</span><span class="ex">I need to tidy up my room.</span><button class="audio-btn" data-text="I need to tidy up my room." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">free time</span> <span class="pl">czas wolny</span><span class="ex">What do you do in your free time?</span><button class="audio-btn" data-text="What do you do in your free time?" data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">play football</span> <span class="pl">grać w piłkę</span><span class="ex">He plays football every Saturday.</span><button class="audio-btn" data-text="He plays football every Saturday." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">watch TV</span> <span class="pl">oglądać telewizję</span><span class="ex">We are watching TV now.</span><button class="audio-btn" data-text="We are watching TV now." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">listen to music</span> <span class="pl">słuchać muzyki</span><span class="ex">She listens to music every day.</span><button class="audio-btn" data-text="She listens to music every day." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">read a book</span> <span class="pl">czytać książkę</span><span class="ex">I read a book last night.</span><button class="audio-btn" data-text="I read a book last night." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">meet friends</span> <span class="pl">spotykać się z przyjaciółmi</span><span class="ex">I met my friends yesterday.</span><button class="audio-btn" data-text="I met my friends yesterday." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">visit</span> <span class="pl">odwiedzić</span><span class="ex">I have visited Kraków twice.</span><button class="audio-btn" data-text="I have visited Kraków twice." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">travel</span> <span class="pl">podróżować</span><span class="ex">She travels a lot.</span><button class="audio-btn" data-text="She travels a lot." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+                <div class="vocab-item"><span class="en">experience</span> <span class="pl">doświadczenie</span><span class="ex">I have had many interesting experiences.</span><button class="audio-btn" data-text="I have had many interesting experiences." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 11 – ĆWICZENIA
+    ============================================================ -->
+    <section class="section" data-level="training" id="part10">
+        <div class="part-heading"><span class="part-num">Część 11</span> · Ćwiczenia</div>
+
+        <div class="hide-all-wrap">
+            <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+            <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+        </div>
+
+        <!-- Ćwiczenie 1 – Present Simple vs Continuous -->
+        <div class="section" data-level="basic">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 1. Present Simple czy Continuous? <span class="level-badge level-basic">PODSTAWA</span></div>
+                <ol>
+                    <li>She __________ (watch) TV every evening.</li>
+                    <li>Listen! They __________ (play) the piano.</li>
+                    <li>We __________ (study) English at the moment.</li>
+                    <li>He __________ (go) to school by bus every day.</li>
+                    <li>I __________ (read) a very interesting book now.</li>
+                </ol>
+                <button class="hint-toggle" onclick="toggleHint('hint-ex1')">Wskazówka</button>
+                <div id="hint-ex1" class="hint-content">
+                    <span class="hint-level"><span class="hint-num">1</span> every evening → rutyna → Present Simple</span>
+                    <span class="hint-level"><span class="hint-num">2</span> now / at the moment → czynność trwająca → Present Continuous</span>
+                </div>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex1')">Pokaż odpowiedzi</button>
+                <div id="ans-ex1" class="answer-content">
+                    <ol>
+                        <li><strong>watches</strong></li>
+                        <li><strong>are playing</strong></li>
+                        <li><strong>are studying</strong></li>
+                        <li><strong>goes</strong></li>
+                        <li><strong>am reading</strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 2 – Present Perfect vs Past Simple -->
+        <div class="section" data-level="training">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 2. Present Perfect czy Past Simple? <span class="level-badge level-training">TRENING</span></div>
+                <ol>
+                    <li>I __________ (never / be) to London.</li>
+                    <li>She __________ (visit) Paris last year.</li>
+                    <li>They __________ (just / finish) their homework.</li>
+                    <li>We __________ (see) that film three times.</li>
+                    <li>He __________ (buy) a new phone yesterday.</li>
+                </ol>
+                <button class="hint-toggle" onclick="toggleHint('hint-ex2')">Wskazówka</button>
+                <div id="hint-ex2" class="hint-content">
+                    <span class="hint-level"><span class="hint-num">1</span> never → doświadczenie → Present Perfect</span>
+                    <span class="hint-level"><span class="hint-num">2</span> last year / yesterday → zakończony moment → Past Simple</span>
+                </div>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex2')">Pokaż odpowiedzi</button>
+                <div id="ans-ex2" class="answer-content">
+                    <ol>
+                        <li><strong>have never been</strong></li>
+                        <li><strong>visited</strong></li>
+                        <li><strong>have just finished</strong></li>
+                        <li><strong>have seen</strong></li>
+                        <li><strong>bought</strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 3 – Past Simple vs Past Continuous -->
+        <div class="section" data-level="training">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 3. Past Simple czy Continuous? <span class="level-badge level-training">TRENING</span></div>
+                <ol>
+                    <li>I __________ (walk) home when it __________ (start) to rain.</li>
+                    <li>She __________ (read) a book at 8 p.m. yesterday.</li>
+                    <li>They __________ (watch) TV when the light __________ (go) out.</li>
+                    <li>He __________ (meet) his friends while he __________ (shop).</li>
+                </ol>
+                <button class="hint-toggle" onclick="toggleHint('hint-ex3')">Wskazówka</button>
+                <div id="hint-ex3" class="hint-content">
+                    <span class="hint-level"><span class="hint-num">1</span> while / when – czynność trwająca (Past Continuous) przerwana przez krótkie wydarzenie (Past Simple)</span>
+                </div>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex3')">Pokaż odpowiedzi</button>
+                <div id="ans-ex3" class="answer-content">
+                    <ol>
+                        <li><strong>was walking</strong> / <strong>started</strong></li>
+                        <li><strong>was reading</strong></li>
+                        <li><strong>were watching</strong> / <strong>went</strong></li>
+                        <li><strong>met</strong> / <strong>was shopping</strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 4 – wybór czasu (mieszane) -->
+        <div class="section" data-level="exam">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 4. Wybierz poprawny czas <span class="level-badge level-exam">EGZAMIN</span></div>
+                <ol>
+                    <li>I __________ (know) her for five years.</li>
+                    <li>She __________ (cook) dinner when I __________ (arrive).</li>
+                    <li>They __________ (usually / go) to the cinema on Fridays.</li>
+                    <li>__________ you ever __________ (be) to Italy?</li>
+                    <li>We __________ (not / see) that film yet.</li>
+                </ol>
+                <button class="hint-toggle" onclick="toggleHint('hint-ex4')">Wskazówka</button>
+                <div id="hint-ex4" class="hint-content">
+                    <span class="hint-level"><span class="hint-num">1</span> for + okres → Present Perfect</span>
+                    <span class="hint-level"><span class="hint-num">2</span> when + krótkie wydarzenie → Past Simple, tło → Past Continuous</span>
+                    <span class="hint-level"><span class="hint-num">3</span> usually → Present Simple</span>
+                    <span class="hint-level"><span class="hint-num">4</span> ever → doświadczenie → Present Perfect</span>
+                    <span class="hint-level"><span class="hint-num">5</span> yet → Present Perfect (przeczenie)</span>
+                </div>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex4')">Pokaż odpowiedzi</button>
+                <div id="ans-ex4" class="answer-content">
+                    <ol>
+                        <li><strong>have known</strong></li>
+                        <li><strong>was cooking</strong> / <strong>arrived</strong></li>
+                        <li><strong>usually go</strong></li>
+                        <li><strong>Have</strong> you ever <strong>been</strong></li>
+                        <li><strong>haven't seen</strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 5 – pisanie -->
+        <div class="section" data-level="writing">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 5. Mini-wypowiedź <span class="level-badge level-writing">PISANIE</span></div>
+                <p>Napisz 5–6 zdań o swoim dniu wczorajszym. Użyj:</p>
+                <ul>
+                    <li>przynajmniej jednego zdania w Past Simple</li>
+                    <li>przynajmniej jednego zdania w Past Continuous</li>
+                    <li>przynajmniej jednego zdania z <strong>when</strong> lub <strong>while</strong></li>
+                </ul>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex5')">Pokaż przykładową odpowiedź</button>
+                <div id="ans-ex5" class="answer-content">
+                    <p><em>Yesterday I got up at 7 a.m. I had breakfast and went to school. While I was walking to school, I met my friend. We talked for a while. At 4 p.m. I was doing my homework when my mum came home. We had dinner together.</em></p>
+                    <button class="audio-btn" data-text="Yesterday I got up at 7 a.m. I had breakfast and went to school. While I was walking to school, I met my friend. We talked for a while. At 4 p.m. I was doing my homework when my mum came home. We had dinner together." data-speed="0.7">▶</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 12 – WAŻNE! (7 ZASAD)
+    ============================================================ -->
+    <section class="section" data-level="exam" id="part11">
+        <div class="part-heading"><span class="part-num">Część 12</span> · Ważne! – 7 kluczowych zasad</div>
+
+        <div class="section" data-level="exam">
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin:12px 0;">
+                <div style="background:var(--color-training-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-training); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">1</span>
+                    <strong>W 3. os. l.poj. Present Simple dodaj -s/-es</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">He watches TV every night.</div>
+                </div>
+                <div style="background:var(--color-trap-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-trap); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">2</span>
+                    <strong>Po doesn't używaj formy podstawowej</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">She doesn't play. (nie: She doesn't plays)</div>
+                </div>
+                <div style="background:var(--color-basic-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-basic); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">3</span>
+                    <strong>Present Continuous: am/is/are + -ing</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">I am reading. She is playing.</div>
+                </div>
+                <div style="background:var(--color-ambitious-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-ambitious); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">4</span>
+                    <strong>Present Perfect: have/has + III forma</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">I have seen. She has gone.</div>
+                </div>
+                <div style="background:var(--color-difficult-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-difficult); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">5</span>
+                    <strong>Z Present Perfect nie używaj zakończonych określeń</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">I have seen him. (nie: I have seen him yesterday)</div>
+                </div>
+                <div style="background:var(--color-remember-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-remember); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">6</span>
+                    <strong>Po did/didn't używaj formy podstawowej</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">Did you go? (nie: Did you went?)</div>
+                </div>
+                <div style="background:var(--color-basic-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border); grid-column:1 / -1;">
+                    <span style="display:inline-block; background:var(--color-basic); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">7</span>
+                    <strong>while + Past Continuous, when + Past Simple (lub odwrotnie)</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">While I was studying, the phone rang.</div>
+                </div>
+            </div>
+
+            <div class="card card-error" style="margin-top:12px;">
+                <span class="card-label">Zapamiętaj na egzamin!</span>
+                <ul>
+                    <li>Rozpoznaj określenia czasu – podpowiedzą ci, którego czasu użyć.</li>
+                    <li>Rutyny i fakty → Present Simple; czynności teraz → Present Continuous.</li>
+                    <li>Doświadczenia i skutek teraz → Present Perfect; zakończone wydarzenia → Past Simple.</li>
+                    <li>Czynność w tle → Past Continuous; krótkie wydarzenie → Past Simple.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 13 – BŁĘDY
+    ============================================================ -->
+    <section class="section" data-level="trap" id="part12">
+        <div class="part-heading"><span class="part-num">Część 13</span> · Najczęstsze błędy</div>
+
+        <div class="section" data-level="trap">
+            <div class="mistake-box">
+                <strong>Błąd #1: Brak -s w 3. osobie l.poj.</strong>
+                <div class="wrong">She like coffee.</div>
+                <div class="correct">She likes coffee.</div>
+            </div>
+            <div class="mistake-box">
+                <strong>Błąd #2: Używanie -ing z czasownikami stanów</strong>
+                <div class="wrong">I am knowing the answer.</div>
+                <div class="correct">I know the answer.</div>
+            </div>
+            <div class="mistake-box">
+                <strong>Błąd #3: Mylenie Present Perfect z Past Simple</strong>
+                <div class="wrong">I have seen him yesterday.</div>
+                <div class="correct">I saw him yesterday.</div>
+            </div>
+            <div class="mistake-box">
+                <strong>Błąd #4: Po did używanie formy przeszłej</strong>
+                <div class="wrong">Did you went home?</div>
+                <div class="correct">Did you go home?</div>
+            </div>
+            <div class="mistake-box">
+                <strong>Błąd #5: Brak -ing w Past Continuous</strong>
+                <div class="wrong">I was watch TV.</div>
+                <div class="correct">I was watching TV.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 14 – PODSUMOWANIE + FISZKA
+    ============================================================ -->
+    <section class="section" data-level="exam" id="part13">
+        <div class="part-heading"><span class="part-num">Część 14</span> · Podsumowanie</div>
+
+        <div class="section" data-level="exam">
+            <div class="card card-correct">
+                <span class="card-label">7 kluczowych zasad – powtórka</span>
+                <ol style="font-size:1.02rem;">
+                    <li><strong>Present Simple:</strong> rutyny, fakty, stany – <em>do/does + V1</em></li>
+                    <li><strong>Present Continuous:</strong> teraz, tymczasowo, plany – <em>am/is/are + V-ing</em></li>
+                    <li><strong>Present Perfect:</strong> doświadczenia, skutek teraz, since/for – <em>have/has + V3</em></li>
+                    <li><strong>Past Simple:</strong> zakończone wydarzenia – <em>V2</em></li>
+                    <li><strong>Past Continuous:</strong> czynność w tle – <em>was/were + V-ing</em></li>
+                    <li><strong>when + Past Simple, while + Past Continuous</strong></li>
+                    <li><strong>Określenia czasu</strong> – klucz do wyboru właściwego czasu</li>
+                </ol>
+            </div>
+
+            <!-- FISZKA -->
+            <div class="fiszka" style="margin-top:20px; border-color: var(--color-training);">
+                <h3>Czasy – ściąga egzaminacyjna</h3>
+                <div class="fiszka-grid">
+                    <div class="fiszka-col">
+                        <h4>Present Simple</h4>
+                        <ul><li>I / you / we / they + V1</li><li>he / she / it + V1-s/-es</li><li>Do/Does + podmiot + V1?</li></ul>
+                        <h4>Present Continuous</h4>
+                        <ul><li>am/is/are + V-ing</li><li>Am/Is/Are + podmiot + V-ing?</li></ul>
+                        <h4>Present Perfect</h4>
+                        <ul><li>have/has + V3</li><li>Have/Has + podmiot + V3?</li></ul>
+                    </div>
+                    <div class="fiszka-col">
+                        <h4>Past Simple</h4>
+                        <ul><li>V2 (regularny -ed / nieregularny)</li><li>Did + podmiot + V1?</li></ul>
+                        <h4>Past Continuous</h4>
+                        <ul><li>was/were + V-ing</li><li>Was/Were + podmiot + V-ing?</li></ul>
+                        <h4>Określenia czasu</h4>
+                        <ul>
+                            <li>PS: always, often, every day</li>
+                            <li>PC: now, at the moment, tonight</li>
+                            <li>PP: ever, never, since, for</li>
+                            <li>Past: yesterday, last week, ago</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MISJA -->
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>15. Test końcowy – MISJA</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Misja końcowa</span>
+                    <p>Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą czasownika <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="section" data-level="exam" id="sec-faq">
+                <h2>16. FAQ – najczęstsze wątpliwości</h2>
+                <div class="card card-gray">
+                    <p><strong>1. Kiedy używamy Present Perfect zamiast Past Simple?</strong><br />
+                        Gdy skutek jest ważny teraz lub nie podajemy konkretnego momentu w przeszłości.</p>
+                    <p><strong>2. Jaka jest różnica między since a for?</strong><br />
+                        <em>since</em> + punkt w czasie, <em>for</em> + długość okresu.</p>
+                    <p><strong>3. Czy I am thinking jest poprawne?</strong><br />
+                        Tak, gdy oznacza „zastanawiam się”. Ale <em>I think</em> = „uważam”.</p>
+                    <p><strong>4. Kiedy podwajamy spółgłoskę w -ing?</strong><br />
+                        Gdy czasownik kończy się na spółgłoskę + samogłoskę + spółgłoskę i akcent pada na ostatnią sylabę: <em>run → running, swim → swimming</em>.</p>
+                </div>
+            </div>
+
+            <!-- TEST WYJŚCIOWY -->
+            <div class="section" data-level="exam" id="sec-exit-test">
+                <h2>17. Test wyjściowy – sprawdź swój postęp</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Porównaj z testem wstępnym</span>
+                </div>
+                <div class="exercise">
+                    <ol>
+                        <li>She __________ (watch) TV every evening.</li>
+                        <li>Listen! They __________ (play) the piano.</li>
+                        <li>I __________ (never / be) to London.</li>
+                        <li>He __________ (go) to the cinema yesterday.</li>
+                        <li>I __________ (walk) home when it __________ (start) to rain.</li>
+                    </ol>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-exit')">Pokaż odpowiedzi</button>
+                    <div id="ans-exit" class="answer-content">
+                        <ol>
+                            <li><strong>watches</strong></li>
+                            <li><strong>are playing</strong></li>
+                            <li><strong>have never been</strong></li>
+                            <li><strong>went</strong></li>
+                            <li><strong>was walking</strong> / <strong>started</strong></li>
+                        </ol>
+                        <p style="margin-top:8px; font-weight:600;">Porównaj swój wynik z testem wstępnym. Czy jest lepiej?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTA TEMATÓW -->
+            <div class="section" data-level="basic" id="topics">
+                <h2>Spis tematów głównych</h2>
+                <ol class="topic-list">
+                    <li><a href="#part1">Present Simple – budowa i użycie</a></li>
+                    <li><a href="#part2">Present Continuous – budowa i użycie</a></li>
+                    <li><a href="#part3">Porównanie Present Simple i Continuous</a></li>
+                    <li><a href="#part4">Present Perfect – budowa i użycie</a></li>
+                    <li><a href="#part5">Present Perfect vs Past Simple</a></li>
+                    <li><a href="#part6">Past Simple – budowa i użycie</a></li>
+                    <li><a href="#part7">Past Continuous – budowa i użycie</a></li>
+                    <li><a href="#part8">Łączenie Past Continuous i Past Simple</a></li>
+                    <li><a href="#part9">Zestawienie wszystkich czasów</a></li>
+                    <li><a href="#sec-vocab">Słownictwo</a></li>
+                    <li><a href="#part10">Ćwiczenia</a></li>
+                    <li><a href="#part11">Ważne! – 7 zasad</a></li>
+                    <li><a href="#part12">Najczęstsze błędy</a></li>
+                    <li><a href="#part13">Podsumowanie i ściąga</a></li>
+                    <li><a href="#sec-mission">Test końcowy – MISJA</a></li>
+                    <li><a href="#sec-faq">FAQ</a></li>
+                    <li><a href="#sec-exit-test">Test wyjściowy</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- HARMONOGRAM POWTÓREK -->
+    <div class="srs-box">
+        <h3>Harmonogram powtórek</h3>
+        <p style="margin-top:8px;">Wróć do tej lekcji w te dni, aby utrwalić wiedzę:</p>
+        <div class="srs-steps">
+            <div class="srs-step"><strong>Dzień 1</strong> (dziś) – nauka</div>
+            <div class="srs-step"><strong>Dzień 3</strong> – szybki przegląd</div>
+            <div class="srs-step"><strong>Dzień 7</strong> – ćwiczenia ponownie</div>
+            <div class="srs-step"><strong>Dzień 14</strong> – tylko fiszka</div>
+            <div class="srs-step"><strong>Dzień 30</strong> – quiz mieszany</div>
+        </div>
+    </div>
+
+    <!-- STOPKA -->
+    <footer class="footer">
+        <p><strong>Lekcja 4 – Czasy teraźniejsze i przeszłe</strong> &bull; Wersja 2.0 (pełna) &bull; 2026-08-23</p>
+        <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+        <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.</p>
+    </footer>
+
+</div>
+
+<script>
+    // ======================================================================
+    //  JAVASCRIPT – SYSTEM INTERAKTYWNY
+    // ======================================================================
+
+    // ---------- LOCAL STORAGE ----------
+    function saveProgress() {
+        const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+        const state = [];
+        checks.forEach(cb => state.push(cb.checked));
+        localStorage.setItem('lekcja4_progress', JSON.stringify(state));
+    }
+
+    function loadProgress() {
+        const saved = localStorage.getItem('lekcja4_progress');
+        if (!saved) return;
+        const state = JSON.parse(saved);
+        const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+        checks.forEach((cb, i) => {
+            if (i < state.length) cb.checked = state[i];
+        });
+        updateProgress();
+    }
+
+    function resetAllProgress() {
+        if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+        document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+            cb.checked = false;
+        });
+        localStorage.removeItem('lekcja4_progress');
+        updateProgress();
+    }
+
+    // ---------- AUDIO ----------
+    let currentAudio = null;
+    let currentAudioBtn = null;
+    let audioTimeout = null;
+
+    function speakText(text, speed, btn) {
+        if (!window.speechSynthesis) return;
+
+        if (currentAudioBtn === btn && btn && btn.classList.contains('playing')) {
+            window.speechSynthesis.cancel();
+            if (audioTimeout) clearTimeout(audioTimeout);
+            btn.textContent = '▶';
+            btn.classList.remove('playing');
+            currentAudioBtn = null;
+            currentAudio = null;
+            return;
+        }
+
+        if (currentAudio) {
+            window.speechSynthesis.cancel();
+            if (audioTimeout) clearTimeout(audioTimeout);
+            if (currentAudioBtn) {
+                currentAudioBtn.textContent = '▶';
+                currentAudioBtn.classList.remove('playing');
+            }
+            currentAudioBtn = null;
+            currentAudio = null;
+        }
+
+        if (!btn) return;
+        btn.textContent = '■';
+        btn.classList.add('playing');
+        currentAudioBtn = btn;
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-GB';
+        utterance.rate = 0.6;
+        utterance.pitch = 1.0;
+        const voices = window.speechSynthesis.getVoices();
+        const ukVoice = voices.find(v => v.lang.startsWith('en-GB'));
+        if (ukVoice) utterance.voice = ukVoice;
+
+        let isSlowFinished = false;
+
+        utterance.onend = function() {
+            if (isSlowFinished) {
+                if (btn) {
+                    btn.textContent = '▶';
+                    btn.classList.remove('playing');
+                }
+                currentAudioBtn = null;
+                currentAudio = null;
+                return;
+            }
+            isSlowFinished = true;
+            const fast = new SpeechSynthesisUtterance(text);
+            fast.lang = 'en-GB';
+            fast.rate = 0.95;
+            fast.pitch = 1.0;
+            if (ukVoice) fast.voice = ukVoice;
+            fast.onend = function() {
+                if (btn) {
+                    btn.textContent = '▶';
+                    btn.classList.remove('playing');
+                }
+                currentAudioBtn = null;
+                currentAudio = null;
+            };
+            fast.onerror = function() {
+                if (btn) {
+                    btn.textContent = '▶';
+                    btn.classList.remove('playing');
+                }
+                currentAudioBtn = null;
+                currentAudio = null;
+            };
+            audioTimeout = setTimeout(() => {
+                if (btn && btn.classList.contains('playing')) {
+                    window.speechSynthesis.speak(fast);
+                    currentAudio = fast;
+                }
+            }, 350);
+        };
+
+        utterance.onerror = function() {
+            if (btn) {
+                btn.textContent = '▶';
+                btn.classList.remove('playing');
+            }
+            currentAudioBtn = null;
+            currentAudio = null;
+        };
+
+        window.speechSynthesis.speak(utterance);
+        currentAudio = utterance;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.audio-btn').forEach(btn => {
+            const text = btn.dataset.text;
+            if (text) {
+                btn.setAttribute('aria-label', 'Odtwórz wymowę: ' + text);
+                btn.title = 'Odtwórz wymowę';
+            }
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const audioText = this.dataset.text;
+                if (!audioText) return;
+                speakText(audioText, 0.7, this);
+            });
+        });
+        loadProgress();
+        setView('all');
+        initMission();
+        updateVisibleCount();
+
+        document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', updateProgress);
+        });
+
+        document.querySelectorAll('.checklist input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', function() {
+                const key = 'checklist_4';
+                const items = document.querySelectorAll('.checklist input[type="checkbox"]');
+                const state = [];
+                items.forEach(c => state.push(c.checked));
+                localStorage.setItem(key, JSON.stringify(state));
+            });
+        });
+        const key = 'checklist_4';
+        const saved = JSON.parse(localStorage.getItem(key) || '[]');
+        const items = document.querySelectorAll('.checklist input[type="checkbox"]');
+        items.forEach((cb, i) => {
+            if (saved[i]) cb.checked = true;
+        });
+    });
+
+    // ---------- TOGGLE ----------
+    function toggleAnswer(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.toggle('show');
+        const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+        if (btn) {
+            btn.textContent = el.classList.contains('show') ? 'Ukryj odpowiedzi' : 'Pokaż odpowiedzi';
+        }
+    }
+
+    function toggleHint(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.toggle('show');
+        const btn = document.querySelector(`[onclick*="toggleHint('${id}')"]`);
+        if (btn) {
+            btn.textContent = el.classList.contains('show') ? 'Ukryj wskazówkę' : 'Wskazówka';
+        }
+    }
+
+    function toggleExplain(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.toggle('show');
+        const btn = document.querySelector(`[onclick*="toggleExplain('${id}')"]`);
+        if (btn) {
+            btn.textContent = el.classList.contains('show') ? '❓ Ukryj wyjaśnienie' : '❓ Dlaczego?';
+        }
+    }
+
+    function hideAllAnswers() {
+        document.querySelectorAll('.answer-content.show, .hint-content.show, .explain-content.show').forEach(el => {
+            el.classList.remove('show');
+            const id = el.id;
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) btn.textContent = 'Pokaż odpowiedzi';
+            const btn2 = document.querySelector(`[onclick*="toggleHint('${id}')"]`);
+            if (btn2) btn2.textContent = 'Wskazówka';
+            const btn3 = document.querySelector(`[onclick*="toggleExplain('${id}')"]`);
+            if (btn3) btn3.textContent = '❓ Dlaczego?';
+        });
+    }
+
+    // ---------- PROGRESS ----------
+    function updateProgress() {
+        const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+        let total = 0, done = 0;
+        checkboxes.forEach(cb => {
+            const w = parseInt(cb.dataset.progress) || 0;
+            total += w;
+            if (cb.checked) done += w;
+        });
+        const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+        document.getElementById('progressFill').style.width = pct + '%';
+        document.getElementById('progressPercent').textContent = pct + '%';
+
+        const statusEl = document.getElementById('progressStatus');
+        if (pct === 100) statusEl.textContent = 'Świetnie! Opanowałeś lekcję!';
+        else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze! Dokończ resztę.';
+        else if (pct >= 50) statusEl.textContent = 'Dobrze! Poćwicz jeszcze.';
+        else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+        else statusEl.textContent = 'Zacznij naukę';
+
+        updateTasks(pct);
+        saveProgress();
+    }
+
+    function updateTasks(pct) {
+        const tasks = document.querySelectorAll('.today-tasks .task');
+        const thresholds = [10, 25, 45, 65, 85];
+        tasks.forEach((task, i) => {
+            if (pct >= thresholds[i]) task.classList.add('done');
+            else task.classList.remove('done');
+        });
+    }
+
+    // ---------- FILTER ----------
+    let currentView = 'all';
+
+    function setView(view) {
+        currentView = view;
+        document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+        const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+        if (btn) btn.classList.add('active');
+        applyFilter(view);
+        updateVisibleCount();
+    }
+
+    function applyFilter(view) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(sec => {
+            const level = sec.dataset.level || 'basic';
+            let show = true;
+            if (view === 'basic') {
+                show = (level === 'basic' || level === 'training' || level === 'remember' || level === 'writing');
+            } else if (view === 'exam') {
+                show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level === 'difficult' || level === 'remember' || level === 'writing' || level === 'ambitious');
+            }
+            if (view === 'all') show = true;
+            sec.classList.toggle('hidden-by-filter', !show);
+        });
+    }
+
+    function updateVisibleCount() {
+        const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+        const total = document.querySelectorAll('.section').length;
+        document.getElementById('visibleCount').textContent = visible;
+        document.getElementById('totalCount').textContent = total;
+    }
+
+    // ---------- MISSION ----------
+    const missionData = [
+        { q: 'She __________ (watch) TV every evening.', correct: 'watches' },
+        { q: 'Listen! They __________ (play) the piano.', correct: 'are playing' },
+        { q: 'I __________ (never / be) to London.', correct: 'have never been' },
+        { q: 'He __________ (go) to the cinema yesterday.', correct: 'went' },
+        { q: 'I __________ (walk) home when it __________ (start) to rain.', correct: ['was walking', 'started'] },
+        { q: 'She __________ (cook) dinner when I __________ (arrive).', correct: ['was cooking', 'arrived'] },
+        { q: 'We __________ (not / see) that film yet.', correct: 'haven\'t seen' },
+        { q: 'He __________ (buy) a new phone yesterday.', correct: 'bought' },
+        { q: 'I __________ (know) her for five years.', correct: 'have known' },
+        { q: 'They __________ (usually / go) to the cinema on Fridays.', correct: 'usually go' },
+    ];
+
+    function normalizeAnswer(val) {
+        return val.trim().toLowerCase().replace(/\s+/g, ' ');
+    }
+
+    function initMission() {
+        const container = document.getElementById('missionQuestions');
+        if (!container) return;
+        container.innerHTML = '';
+        missionData.forEach((item, idx) => {
+            const div = document.createElement('div');
+            div.className = 'fitb-row';
+            div.innerHTML = `
+                <span style="font-weight:500;">${idx+1}. ${item.q}</span>
+                <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:140px;" />
+                <span class="result-icon" id="missionIcon${idx}"></span>
+            `;
+            container.appendChild(div);
+        });
+    }
+
+    function checkMission() {
+        let correct = 0;
+        const total = missionData.length;
+        const mistakes = [];
+        missionData.forEach((item, idx) => {
+            const input = document.getElementById('missionInput' + idx);
+            const icon = document.getElementById('missionIcon' + idx);
+            if (!input || !icon) return;
+            const val = normalizeAnswer(input.value);
+            const expected = Array.isArray(item.correct) ? item.correct : [item.correct];
+            const expectedNorm = expected.map(normalizeAnswer);
+            const isOk = val.length > 0 && expectedNorm.includes(val);
+            input.classList.toggle('correct', isOk);
+            input.classList.toggle('wrong', !isOk);
+            input.setAttribute('aria-invalid', String(!isOk));
+            if (isOk) {
+                icon.textContent = '✓';
+                icon.style.color = '#2d8f5e';
+                correct++;
+            } else {
+                icon.textContent = '✗';
+                icon.style.color = '#dc3545';
+                mistakes.push(`${idx + 1}. ${expected.join(' / ')}`);
+            }
+        });
+        const resultDiv = document.getElementById('missionResult');
+        resultDiv.style.display = 'block';
+        const pct = Math.round((correct / total) * 100);
+        let msg = '', cls = '';
+        if (pct === 100) { msg = 'Czasy opanowane! Świetna robota!'; cls = 'perfect'; }
+        else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane pułapki.'; cls = 'good'; }
+        else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.'; cls = 'ok'; }
+        else { msg = 'Powtórz podstawy czasów, a następnie rozwiąż test jeszcze raz.'; cls = 'fail'; }
+        resultDiv.className = 'mission-result ' + cls;
+        resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+            (mistakes.length ? `<br /><span class="text-sm">Poprawne odpowiedzi do błędnych punktów: ${mistakes.join('; ')}.</span>` : '');
+    }
+
+    function resetMission() {
+        document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+            input.value = '';
+            input.classList.remove('correct', 'wrong');
+            input.removeAttribute('aria-invalid');
+        });
+        document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+            icon.textContent = '';
+            icon.style.color = '';
+        });
+        document.getElementById('missionResult').style.display = 'none';
+    }
+
+    // ---------- INIT ----------
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.speechSynthesis) {
+            window.speechSynthesis.getVoices();
+            window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+        }
+    });
+</script>
+
+</body>
+</html>
