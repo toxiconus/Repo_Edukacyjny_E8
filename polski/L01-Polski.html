@@ -1,0 +1,3755 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 1 – Lektury z klas IV–VI + imiesłowy (poprawiona)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ======================================================================
+           SYSTEM WIZUALNY REPETYTORIUM E8 – wersja 6.2 (master merge)
+           ====================================================================== */
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h2 .level-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- KOLORY --- */
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f;
+            --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        /* --- KARTY --- */
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+            border-color: var(--color-remember);
+        }
+        .card-remember .card-label {
+            color: var(--color-remember);
+        }
+        .card-warning {
+            background: #fffbeb;
+            border-left: 5px solid #d69e2e;
+            border-color: #d69e2e;
+        }
+        .card-warning .card-label {
+            color: #d69e2e;
+        }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+            border-color: var(--color-hint);
+        }
+        .card-hint .card-label {
+            color: var(--color-hint);
+        }
+        .card-error {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-error .card-label {
+            color: var(--color-trap);
+        }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+            border-color: var(--color-correct);
+        }
+        .card-correct .card-label {
+            color: var(--color-correct);
+        }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-trap .card-label {
+            color: var(--color-trap);
+        }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+            border-color: var(--color-ambitious);
+        }
+        .card-ambitious .card-label {
+            color: var(--color-ambitious);
+        }
+        .card-difficult {
+            background: var(--color-difficult-bg);
+            border-left: 5px solid var(--color-difficult);
+            border-color: var(--color-difficult);
+        }
+        .card-difficult .card-label {
+            color: var(--color-difficult);
+        }
+        .card-gray {
+            background: var(--color-bg-subtle);
+            border-left: 5px solid var(--color-text-muted);
+            border-color: var(--color-text-muted);
+        }
+        .card .label {
+            font-weight: 600;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            display: inline-block;
+            margin-bottom: 4px;
+            padding: 1px 10px;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.05);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* --- BADGE --- */
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .level-writing {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+        .level-difficult {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        /* --- PRZYKŁADY --- */
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+        }
+        .example .pl {
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 1.0rem;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .example .note {
+            color: var(--color-text-muted);
+            font-size: 0.78rem;
+            font-style: italic;
+            margin-left: auto;
+        }
+        .example .expl {
+            color: var(--color-text-muted);
+            font-size: 0.82rem;
+            font-style: italic;
+        }
+        .hl-imieslow {
+            color: #7c3aed;
+            font-weight: 700;
+        }
+
+        /* --- TABELE --- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .table-wrap .error-row {
+            background: #fef2f2;
+        }
+        .table-wrap .correct-row {
+            background: #f0faf4;
+        }
+
+        /* --- PRZYCISKI --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-success {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .btn-success:hover {
+            background: #1f6e48;
+            border-color: #1f6e48;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+        .btn-hint {
+            background: var(--color-hint);
+            border-color: var(--color-hint);
+            color: white;
+        }
+        .btn-hint:hover {
+            background: #d97706;
+            border-color: #d97706;
+        }
+
+        /* --- AUDIO --- */
+        .audio-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 15px;
+            color: var(--color-training);
+            transition: all 0.2s;
+            flex-shrink: 0;
+            font-family: inherit;
+            line-height: 1;
+        }
+        .audio-btn:hover {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+        }
+        .audio-btn.playing {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+
+        /* --- ĆWICZENIA --- */
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+
+        /* --- ODPOWIEDZI, WSKAZÓWKI, WYJAŚNIENIA --- */
+        .answer-toggle,
+        .hint-toggle,
+        .explain-toggle {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+        .answer-toggle {
+            background: var(--color-training);
+            color: white;
+        }
+        .answer-toggle:hover {
+            background: #1f4e8c;
+        }
+        .hint-toggle {
+            background: var(--color-hint);
+            color: white;
+        }
+        .hint-toggle:hover {
+            background: #d97706;
+        }
+        .explain-toggle {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+        }
+        .explain-toggle:hover {
+            border-color: var(--color-training);
+            color: var(--color-training);
+            background: var(--color-training-bg);
+        }
+        .answer-content,
+        .hint-content,
+        .explain-content {
+            border-radius: 6px;
+            padding: 0 12px;
+            margin-top: 4px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .answer-content.show,
+        .hint-content.show,
+        .explain-content.show {
+            max-height: 800px;
+            padding: 10px 12px;
+            opacity: 1;
+        }
+        .answer-content {
+            background: var(--color-training-bg);
+            border-left: 3px solid var(--color-training);
+        }
+        .hint-content {
+            background: var(--color-hint-bg);
+            border-left: 3px solid var(--color-hint);
+            font-style: italic;
+            color: #78350f;
+        }
+        .explain-content {
+            background: var(--color-bg-subtle);
+            border-left: 3px solid var(--color-training);
+        }
+        .explain-content .rule-box {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 6px 12px;
+            margin: 4px 0;
+            border: 1px solid var(--color-border);
+            font-size: 0.9rem;
+        }
+
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover {
+            border-color: var(--color-error);
+            color: var(--color-error);
+            background: var(--color-trap-bg);
+        }
+
+        /* --- FISZKA --- */
+        .fiszka {
+            background: var(--color-bg-subtle);
+            border: 2px solid #0a2540;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 20px 0;
+        }
+        .fiszka h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0a2540;
+            padding-bottom: 4px;
+        }
+        .fiszka-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+        }
+        .fiszka-col h4 {
+            font-weight: 600;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 3px;
+            margin-bottom: 4px;
+        }
+        .fiszka-col ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .fiszka-col li {
+            padding: 2px 0 2px 16px;
+            position: relative;
+            font-size: 0.88rem;
+        }
+        .fiszka-col li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .fiszka-grid {
+                grid-template-columns: 1fr;
+            }
+            .fiszka {
+                padding: 14px 16px;
+            }
+        }
+
+        /* --- BANK KONSTRUKCJI --- */
+        .bank-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .bank-item:last-child {
+            border-bottom: none;
+        }
+        .bank-item .constr {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #0a2540;
+            min-width: 100px;
+        }
+        .bank-item .meaning {
+            color: var(--color-text-muted);
+            font-style: italic;
+            font-size: 0.85rem;
+            min-width: 80px;
+        }
+        .bank-item .example {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 2px 0;
+            margin: 0;
+            gap: 4px 8px;
+            border-radius: 0;
+        }
+        .bank-item .example .pl {
+            font-size: 0.9rem;
+        }
+        .bank-item .example .expl {
+            font-size: 0.8rem;
+        }
+
+        /* --- FISZKI INTERAKTYWNE --- */
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .flashcard {
+            min-height: 96px;
+            padding: 14px;
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            background: #ffffff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+        }
+        .flashcard:hover,
+        .flashcard:focus-visible {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        .flashcard .front {
+            display: block;
+            font-weight: 700;
+        }
+        .flashcard .back {
+            display: none;
+            color: var(--color-text-muted);
+        }
+        .flashcard.flipped .front {
+            display: none;
+        }
+        .flashcard.flipped .back {
+            display: block;
+        }
+
+        /* --- PANEL POSTĘPU --- */
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+        .top-panel .lesson-info .lesson-title {
+            font-style: italic;
+        }
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .view-filters {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .view-filters .btn {
+            font-size: 0.72rem;
+            padding: 3px 12px;
+        }
+        .view-filters .btn.active {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .today-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin: 4px 0 0;
+        }
+        .today-tasks .task {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+        .today-tasks .task .circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--color-text-muted);
+            transition: all 0.2s;
+        }
+        .today-tasks .task.done .circle {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .today-tasks .task .task-label {
+            color: var(--color-text-muted);
+        }
+        .today-tasks .task.done .task-label {
+            color: var(--color-text);
+            text-decoration: line-through;
+        }
+
+        /* --- PRZEKREŚLENIE / BŁĘDY --- */
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .cross-mark {
+            color: var(--color-error);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+        .check-mark {
+            color: var(--color-correct);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+
+        /* --- FITB --- */
+        .fitb-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 10px;
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child {
+            border-bottom: none;
+        }
+        .fitb-row input[type="text"] {
+            padding: 3px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            width: 140px;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        .fitb-row input[type="text"]:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+        .fitb-row input[type="text"].correct {
+            border-color: var(--color-correct);
+            background: #f0faf4;
+        }
+        .fitb-row input[type="text"].wrong {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        .fitb-row .result-icon {
+            font-size: 1.0rem;
+        }
+        .fitb-row select {
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-family: inherit;
+            background: #ffffff;
+            min-width: 120px;
+        }
+        .fitb-row select:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+
+        /* --- MISJA --- */
+        .mission-result {
+            font-size: 1.0rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        .mission-result.perfect {
+            background: #d4edda;
+            color: #155724;
+        }
+        .mission-result.good {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .mission-result.ok {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .mission-result.fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* --- CHECKLISTA --- */
+        .checklist {
+            padding-left: 0;
+            list-style: none;
+        }
+        .checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 1px 0;
+            font-size: 0.88rem;
+        }
+        .checklist input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* --- SPIS TREŚCI (akordeon) --- */
+        .toc-section {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin-bottom: 22px;
+        }
+        .toc-section h2 {
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+        }
+        .toc-accordion {
+            margin-top: 6px;
+        }
+        .toc-item {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: #ffffff;
+        }
+        .toc-summary {
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .toc-summary:hover {
+            background: var(--color-bg-subtle);
+        }
+        .toc-summary::-webkit-details-marker {
+            display: none;
+        }
+        .toc-summary::before {
+            content: "▶";
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            transition: transform 0.2s;
+            margin-right: 6px;
+        }
+        .toc-item[open] .toc-summary::before {
+            transform: rotate(90deg);
+        }
+        .toc-checklist {
+            padding: 4px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            padding: 2px 0;
+        }
+        .toc-checklist input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .toc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 14px 8px 30px;
+        }
+        .toc-anchor {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 4px 11px;
+            border: 1px solid var(--color-training);
+            border-radius: 6px;
+            background: var(--color-training-bg);
+            color: var(--color-training);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover,
+        .toc-anchor:focus-visible {
+            background: var(--color-training);
+            color: #ffffff;
+        }
+        .toc-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: var(--color-basic-bg);
+            border-radius: 12px;
+            color: #0f5132;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .toc-keywords span {
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        /* --- UKRYWANIE SEKCJI (filter) --- */
+        .section.hidden-by-filter {
+            display: none !important;
+        }
+
+        /* --- LISTA TEMATÓW GŁÓWNYCH --- */
+        .topic-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 7px 30px;
+            padding-left: 28px;
+        }
+        .topic-list li {
+            margin: 0;
+            padding-left: 2px;
+            font-size: 0.9rem;
+        }
+        .topic-list a {
+            display: flex;
+            align-items: center;
+            min-height: 38px;
+            padding: 6px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background: #ffffff;
+            color: #0a2540;
+            font-weight: 600;
+            line-height: 1.25;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .topic-list a:hover,
+        .topic-list a:focus-visible {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+            color: var(--color-training);
+        }
+        @media (max-width: 600px) {
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- STOPKA --- */
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .view-filters {
+                justify-content: center;
+            }
+            .today-tasks {
+                flex-direction: column;
+                gap: 3px;
+            }
+            .example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .example .note {
+                margin-left: 0;
+            }
+            .fitb-row {
+                flex-wrap: wrap;
+            }
+            .fitb-row input[type="text"] {
+                width: 100%;
+            }
+            .top-panel {
+                padding: 12px 14px;
+            }
+            .container {
+                padding: 10px 6px;
+            }
+            .bank-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+            .bank-item .constr {
+                min-width: auto;
+            }
+            .bank-item .meaning {
+                min-width: auto;
+            }
+            .topic-list {
+                columns: 1;
+            }
+            .toc-section {
+                padding: 12px 14px;
+            }
+            .toc-summary {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+            .toc-checklist li {
+                font-size: 0.8rem;
+            }
+            .fitb-row select {
+                width: 100%;
+                min-width: unset;
+            }
+        }
+
+        .text-muted {
+            color: var(--color-text-muted);
+        }
+        .text-sm {
+            font-size: 0.82rem;
+        }
+        .mt-8 {
+            margin-top: 8px;
+        }
+        .mb-8 {
+            margin-bottom: 8px;
+        }
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+            letter-spacing: -0.02em;
+        }
+        .part-heading .part-num {
+            color: var(--color-training);
+        }
+
+        /* --- MASTER --- */
+        :root {
+            --master-ink: #17212b;
+            --master-muted: #64748b;
+            --master-line: #e2e8f0;
+            --master-surface: #ffffff;
+            --master-soft: #f8fafc;
+            --master-accent: #276749;
+            --master-accent-soft: #eef7f1;
+            --master-shadow: 0 4px 18px rgba(15, 23, 42, .055);
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 74px
+        }
+        body {
+            background: #f3f5f7;
+            color: var(--master-ink)
+        }
+        .container {
+            border: 1px solid #e8edf2;
+            box-shadow: 0 10px 34px rgba(15, 23, 42, .06)
+        }
+        .section {
+            scroll-margin-top: 76px
+        }
+        .card,
+        .exercise,
+        .rule-box,
+        .example,
+        .flashcard,
+        .table-wrap {
+            box-shadow: none
+        }
+        .btn,
+        .answer-toggle,
+        .hint-toggle,
+        .hide-all-btn {
+            transition: background .16s ease, border-color .16s ease, transform .08s ease, box-shadow .16s ease
+        }
+        .btn:active,
+        .answer-toggle:active,
+        .hint-toggle:active {
+            transform: translateY(1px)
+        }
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid rgba(39, 103, 73, .22);
+            outline-offset: 2px
+        }
+        .audio-btn {
+            min-width: 34px;
+            min-height: 34px;
+            border-radius: 8px;
+            font-size: .9rem
+        }
+        .master-topbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-height: 48px;
+            margin: -8px -8px 18px;
+            padding: 7px 10px;
+            background: rgba(255, 255, 255, .96);
+            border: 1px solid var(--master-line);
+            border-radius: 12px;
+            box-shadow: var(--master-shadow);
+            backdrop-filter: blur(8px)
+        }
+        .master-topbar .master-title {
+            font-size: .82rem;
+            font-weight: 600;
+            color: #334155;
+            margin-right: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+        .master-btn {
+            appearance: none;
+            border: 1px solid #d7dee7;
+            background: #fff;
+            color: #334155;
+            border-radius: 8px;
+            padding: 7px 10px;
+            font: inherit;
+            font-size: .78rem;
+            cursor: pointer
+        }
+        .master-btn:hover {
+            background: #f8fafc;
+            border-color: #cbd5e1
+        }
+        .master-btn[aria-pressed="true"] {
+            background: var(--master-accent-soft);
+            border-color: #b7d7c3;
+            color: #20553c
+        }
+        .master-progress {
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background: var(--master-accent);
+            transition: width .1s linear
+        }
+        .master-section-nav {
+            display: flex;
+            gap: 6px;
+            overflow: auto;
+            padding: 4px 0 10px;
+            margin-bottom: 8px;
+            scrollbar-width: thin
+        }
+        .master-section-nav a {
+            flex: 0 0 auto;
+            padding: 5px 9px;
+            border: 1px solid #e2e8f0;
+            border-radius: 7px;
+            color: #475569;
+            background: #fff;
+            font-size: .75rem;
+            text-decoration: none
+        }
+        .master-section-nav a.active {
+            background: var(--master-accent-soft);
+            border-color: #b7d7c3;
+            color: #20553c;
+            font-weight: 600
+        }
+        body.master-focus .toc-wrap,
+        body.master-focus .toc,
+        body.master-focus .master-section-nav {
+            display: none !important
+        }
+        body.master-focus .container {
+            max-width: 920px
+        }
+        body.master-focus .section:not(.section-active) {
+            opacity: .72
+        }
+        body.master-focus .section.section-active {
+            opacity: 1
+        }
+        .master-tip {
+            margin: 10px 0;
+            padding: 10px 12px;
+            border-left: 3px solid #94a3b8;
+            background: #f8fafc;
+            color: #475569;
+            font-size: .86rem;
+            border-radius: 0 8px 8px 0
+        }
+        @media(max-width:700px) {
+            .master-topbar .master-title {
+                display: none
+            }
+            .master-topbar {
+                justify-content: flex-end
+            }
+            .master-btn {
+                padding: 7px 8px
+            }
+            .master-section-nav a {
+                font-size: .72rem
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+            * {
+                transition: none !important
+            }
+        }
+
+        /* MASTER MASTER */
+        :root {
+            --mm-ink: #182230;
+            --mm-muted: #64748b;
+            --mm-line: #dfe5eb;
+            --mm-surface: #f8fafc;
+            --mm-accent: #2f6f59;
+            --mm-accent-soft: #edf5f1;
+            --mm-danger: #b33a3a;
+            --mm-danger-soft: #fbf1f1;
+            --mm-warn: #806a2b;
+            --mm-warn-soft: #faf7ec
+        }
+        body {
+            background: #eef1f4;
+            color: var(--mm-ink)
+        }
+        .container {
+            border-radius: 18px;
+            box-shadow: 0 5px 24px rgba(15, 23, 42, .055);
+            padding: 24px 30px 28px
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #1d2b39
+        }
+        h2 {
+            border-bottom: 1px solid var(--mm-line)
+        }
+        .card {
+            box-shadow: none;
+            border-radius: 10px
+        }
+        .card-warning {
+            background: var(--mm-warn-soft);
+            border-left-color: var(--mm-warn);
+            border-color: #e5ddbf
+        }
+        .card-hint {
+            background: #f7f8fa;
+            border-left-color: #64748b;
+            border-color: #d8dee5
+        }
+        .card-error {
+            background: var(--mm-danger-soft);
+            border-left-color: var(--mm-danger);
+            border-color: #ebd0d0
+        }
+        .card-correct {
+            background: var(--mm-accent-soft);
+            border-left-color: var(--mm-accent);
+            border-color: #cfe1d8
+        }
+        .audio-btn {
+            min-width: 36px;
+            min-height: 32px;
+            border-radius: 8px
+        }
+        .mm-focusbar {
+            position: sticky;
+            top: 8px;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 0 0 12px;
+            padding: 7px 9px;
+            background: rgba(255, 255, 255, .95);
+            border: 1px solid var(--mm-line);
+            border-radius: 10px;
+            font-size: .78rem
+        }
+        .mm-focusbar .mm-section-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: var(--mm-muted)
+        }
+        .mm-focusbar button {
+            border: 1px solid var(--mm-line);
+            background: #fff;
+            color: var(--mm-ink);
+            border-radius: 7px;
+            padding: 5px 9px;
+            cursor: pointer
+        }
+        .mm-orientation {
+            display: grid;
+            grid-template-columns: 1.25fr .9fr .9fr;
+            gap: 10px;
+            margin: 0 0 18px;
+            padding: 12px;
+            border: 1px solid var(--mm-line);
+            border-radius: 12px;
+            background: #fff
+        }
+        .mm-orientation .mm-step {
+            padding: 11px 12px;
+            border-radius: 9px;
+            background: var(--mm-surface);
+            border: 1px solid #e5e9ee
+        }
+        .mm-orientation .mm-step strong {
+            display: block;
+            font-size: .9rem;
+            margin-bottom: 2px
+        }
+        .mm-orientation .mm-step span {
+            font-size: .78rem;
+            color: var(--mm-muted)
+        }
+        .mm-orientation .mm-step.current {
+            border-color: #b8cfc4;
+            background: var(--mm-accent-soft)
+        }
+        .mm-orientation .mm-step.current strong {
+            color: var(--mm-accent)
+        }
+        .mm-study-rule {
+            display: flex;
+            gap: 12px;
+            padding: 13px 15px;
+            margin: 14px 0 22px;
+            border: 1px solid var(--mm-line);
+            border-radius: 11px;
+            background: #fff
+        }
+        .mm-study-rule .mm-rule-key {
+            font-weight: 700;
+            white-space: nowrap;
+            color: var(--mm-accent)
+        }
+        .mm-study-rule p {
+            margin: 0;
+            font-size: .9rem
+        }
+        .mm-recall {
+            margin: 16px 0;
+            padding: 14px 16px;
+            border: 1px dashed #b9c3ce;
+            border-radius: 10px;
+            background: #fbfcfd
+        }
+        .mm-recall summary {
+            cursor: pointer;
+            font-weight: 600
+        }
+        .mm-recall p {
+            margin: 9px 0 0;
+            font-size: .9rem
+        }
+        .mm-microtest {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0
+        }
+        .mm-microtest button {
+            padding: 9px 10px;
+            border: 1px solid var(--mm-line);
+            border-radius: 8px;
+            background: #fff;
+            text-align: left;
+            cursor: pointer;
+            font: inherit
+        }
+        .mm-microtest button:hover {
+            background: var(--mm-surface)
+        }
+        .mm-microtest .mm-answer {
+            display: block;
+            margin-top: 5px;
+            color: var(--mm-muted);
+            font-size: .8rem
+        }
+        .mm-current-section {
+            scroll-margin-top: 75px
+        }
+        body.mm-focus .toc-section,
+        body.mm-focus .mm-orientation,
+        body.mm-focus .top-panel .view-filters,
+        body.mm-focus .top-panel .today-tasks {
+            display: none
+        }
+        body.mm-focus .container {
+            max-width: 900px
+        }
+        body.mm-focus .section:not(.mm-current-section) {
+            opacity: .42;
+            transition: opacity .2s
+        }
+        @media(max-width:760px) {
+            .container {
+                padding: 17px 14px 22px;
+                border-radius: 13px
+            }
+            .mm-orientation {
+                grid-template-columns: 1fr
+            }
+            .mm-microtest {
+                grid-template-columns: 1fr
+            }
+            .mm-focusbar {
+                top: 4px
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important;
+                scroll-behavior: auto !important
+            }
+        }
+
+        /* dodatkowe */
+        .bohater-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+        .bohater-tabela tr:nth-child(even) {
+            background: #f8faff;
+        }
+        .rule-highlight {
+            background: var(--color-remember-bg);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-weight: 600;
+            color: var(--color-remember);
+        }
+        .poprawka-box {
+            background: #fff8e7;
+            border-left: 4px solid #d69e2e;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .poprawka-box .poprawka-title {
+            font-weight: 700;
+            color: #8a6d3b;
+        }
+        .korekta {
+            background: #f0faf4;
+            border-left: 4px solid var(--color-correct);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .korekta .korekta-title {
+            font-weight: 700;
+            color: var(--color-correct);
+        }
+        .blad-box {
+            background: #fef2f2;
+            border-left: 4px solid var(--color-error);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .blad-box .blad-title {
+            font-weight: 700;
+            color: var(--color-error);
+        }
+        /* dodatkowe style dla nowych elementów */
+        .haczyk-box {
+            background: #f0f6ff;
+            border-left: 5px solid #2b6cb0;
+            padding: 12px 16px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        .haczyk-box .haczyk-title {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+        .motyw-dopasowanie {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            margin: 8px 0;
+            padding: 6px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .motyw-dopasowanie select {
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-family: inherit;
+            min-width: 140px;
+        }
+        .motyw-dopasowanie .motyw-label {
+            font-weight: 500;
+            min-width: 100px;
+        }
+        .motyw-dopasowanie .result-icon {
+            font-size: 1.0rem;
+        }
+
+        /* Nowa klasa dla ściągi z notatkami */
+        .cheat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 8px;
+        }
+        .cheat-grid h4 {
+            margin-top: 0;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 2px;
+        }
+        .cheat-grid ul {
+            padding-left: 18px;
+            margin-bottom: 6px;
+        }
+        .cheat-grid ul li {
+            font-size: 0.88rem;
+        }
+        @media (max-width: 600px) {
+            .cheat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* styl dla nowych przykładów zdań z imiesłowami */
+        .przyklady-zdań {
+            margin: 6px 0 4px 12px;
+            padding: 8px 12px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+        }
+        .przyklady-zdań p {
+            margin: 3px 0;
+            font-size: 0.92rem;
+        }
+        .przyklady-zdań .tag {
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+            display: inline-block;
+            margin-right: 6px;
+        }
+        .wyjatki-box {
+            background: #f0f6ff;
+            border-left: 4px solid #2b6cb0;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .wyjatki-box .wyjatki-title {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+        .rozpoznawanie-box {
+            background: #f0faf4;
+            border-left: 4px solid var(--color-correct);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .rozpoznawanie-box .rozpoznawanie-title {
+            font-weight: 700;
+            color: var(--color-correct);
+        }
+
+        /* Box CKE – wyróżniony */
+        .cke-box {
+            background: #f0f6ff;
+            border-left: 6px solid #2b6cb0;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .cke-box .cke-title {
+            font-weight: 700;
+            color: #2b6cb0;
+            font-size: 1.05rem;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .cke-box ul {
+            padding-left: 20px;
+        }
+        .cke-box .lektury-lista {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 20px;
+            padding-left: 20px;
+            margin: 6px 0 8px;
+        }
+        .cke-box .lektury-lista li {
+            list-style: none;
+            font-size: 0.88rem;
+        }
+        .cke-box .lektury-lista li::before {
+            content: "• ";
+            color: #2b6cb0;
+            font-weight: 700;
+        }
+        @media (max-width: 600px) {
+            .cke-box .lektury-lista {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Tabela przekrojowa motywów */
+        .motywy-przekrojowe td:first-child {
+            font-weight: 600;
+            color: var(--color-training);
+        }
+        .motywy-przekrojowe td {
+            font-size: 0.88rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL – POSTĘP + FILTRY + ZADANIA
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">Lektury z klas IV–VI + imiesłowy</div>
+                    <div class="subtitle">Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Lekcja 1 – bohaterowie dynamiczni, motywy, imiesłowy (poprawiona i rozbudowana)</div>
+                        <div>Wersja 3.2 – uzupełniona o status lektur IV–VI, tabelę przekrojową i sekcję egzaminacyjną</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-row">
+                <div class="view-filters">
+                    <button class="btn active" data-view="all" onclick="setView('all')">Wszystko</button>
+                    <button class="btn" data-view="basic" onclick="setView('basic')">Podstawa + Trening</button>
+                    <button class="btn" data-view="exam" onclick="setView('exam')">Egzamin</button>
+                </div>
+                <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                    <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+                </div>
+                <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+            </div>
+
+            <div class="panel-row">
+                <div class="today-tasks" id="todayTasks">
+                    <div class="task" data-task="bohaterowie"><span class="circle">1</span><span class="task-label">Poznaj bohaterów dynamicznych</span></div>
+                    <div class="task" data-task="motywy"><span class="circle">2</span><span class="task-label">Ustal motywy przekrojowe</span></div>
+                    <div class="task" data-task="imieslowy"><span class="circle">3</span><span class="task-label">Rozpoznaj imiesłowy</span></div>
+                    <div class="task" data-task="cwiczenia"><span class="circle">4</span><span class="task-label">Zrób ćwiczenia</span></div>
+                    <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test końcowy</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MASTER MASTER — warstwa prowadzenia ucznia -->
+        <div class="mm-focusbar" id="mmFocusBar" aria-live="polite"><span class="mm-section-name" id="mmSectionName">Lekcja 1 · orientacja</span><button type="button" id="mmFocusBtn" onclick="mmToggleFocus()">Tryb skupienia</button></div>
+        <div class="mm-orientation" aria-label="Plan pracy z lekcją">
+            <div class="mm-step current"><strong>1. Rozpoznaj</strong><span>Przypomnij bohaterów i motywy lektur.</span></div>
+            <div class="mm-step"><strong>2. Zrozum</strong><span>Opanuj podział i zasady użycia imiesłowów.</span></div>
+            <div class="mm-step"><strong>3. Zastosuj</strong><span>Wykonaj ćwiczenia i sprawdź się w teście.</span></div>
+        </div>
+        <div class="mm-study-rule">
+            <div class="mm-rule-key">Zasada pracy</div>
+            <p><strong>Nie ucz się pojedynczych definicji.</strong> Zawsze łącz wiedzę o lekturach z umiejętnościami językowymi – imiesłowy to narzędzie, które urozmaica Twoje wypracowanie i jest punktowane na egzaminie. Zwracaj uwagę na poprawne informacje – nie wszystkie popularne skojarzenia są zgodne z lekturami.</p>
+        </div>
+
+        <!-- ============================================================
+        NOWY BOX: STATUS LEKTUR IV–VI I ZASADY CKE (DODANY)
+        ============================================================ -->
+        <div class="cke-box">
+            <span class="cke-title">📌 WAŻNE – CKE / E8 (aktualne na 2025/2026)</span>
+            <p><strong>Lektury obowiązkowe z klas IV–VI:</strong></p>
+            <ul class="lektury-lista">
+                <li>Jan Brzechwa – <em>Akademia Pana Kleksa</em></li>
+                <li>Janusz Christa – <em>Kajko i Kokosz. Szkoła latania</em> (komiks)</li>
+                <li>C.S. Lewis – <em>Opowieści z Narnii. Lew, czarownica i stara szafa</em></li>
+                <li>Ferenc Molnár – <em>Chłopcy z Placu Broni</em></li>
+                <li>J.R.R. Tolkien – <em>Hobbit, czyli tam i z powrotem</em></li>
+            </ul>
+            <ul>
+                <li>W <strong>części I arkusza</strong> zadania dotyczące tych lektur odnoszą się <strong>wyłącznie do fragmentu</strong> zamieszczonego w arkuszu. <strong>Nie sprawdzają znajomości całej treści ani problematyki całego utworu</strong>.</li>
+                <li>W <strong>wypracowaniu i zadaniach otwartych</strong> możesz się do nich <strong>swobodnie odwoływać</strong> – to doskonały materiał na argumenty.</li>
+                <li>Lista lektur obowiązkowych znajduje się <strong>na początku arkusza egzaminacyjnego</strong> – możesz z niej korzystać w trakcie egzaminu.</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================
+        ŚCIĄGA Z NOTATEK
+        ============================================================ -->
+        <div class="card card-remember" style="border-left: 6px solid #2b6cb0; background: #f0f6ff; margin: 16px 0 20px;">
+            <span class="card-label" style="color: #2b6cb0; font-size: 1rem; font-weight: 700;">📌 Ściąga z notatek – najważniejsze informacje w pigułce</span>
+            <div class="cheat-grid">
+                <div>
+                    <h4>Bohaterowie dynamiczni</h4>
+                    <ul>
+                        <li><strong>Edmund</strong>: zdrajca → skrucha → naprawa czynem (pełna przemiana).</li>
+                        <li><strong>Gereb</strong>: skrucha i powrót do grupy (nie zostaje przywódcą).</li>
+                        <li><strong>Bilbo</strong>: odkrywa słaby punkt Smauga (zabija go <strong>Bard</strong>).</li>
+                        <li><strong>Aslan</strong>: symbol poświęcenia, <strong>NIE</strong> bohater dynamiczny.</li>
+                    </ul>
+                    <h4 style="margin-top:12px;">Motywy przekrojowe</h4>
+                    <ul>
+                        <li>Przemiana bohatera</li>
+                        <li>Świat dziecka vs świat dorosłych</li>
+                        <li>Walka dobra ze złem</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Imiesłowy – podział</h4>
+                    <ul>
+                        <li><strong>Przymiotnikowe</strong> (jaki?): czynny (-ący), bierny (-ny/-ty/-ony).</li>
+                        <li><strong>Przysłówkowe</strong> (jak? / kiedy?): współczesny (-ąc), uprzedni (-wszy/-łszy).</li>
+                        <li><strong>„nie”</strong>: z przymiotnikowymi łącznie (<em>nieczytający</em>), z przysłówkowymi rozdzielnie (<em>nie czytając</em>).</li>
+                        <li><strong>Przecinek</strong>: imiesłowowy równoważnik zdania oddzielamy przecinkiem (<em>Idąc do szkoły, ...</em>).</li>
+                    </ul>
+                    <h4 style="margin-top:12px;">Haczyki egzaminacyjne</h4>
+                    <ul>
+                        <li><strong>Głęboka Magia</strong>: ofiara Aslana i zmartwychwstanie.</li>
+                        <li><strong>Łańcuch Smauga</strong>: Bilbo → drozd → Bard.</li>
+                        <li><strong>Arcyklejnot</strong>: Bilbo zapobiega wojnie.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        SPIS TREŚCI (akordeon z checklistą)
+        ============================================================ -->
+        <div class="toc-section" id="sec-toc">
+            <h2>Spis treści</h2>
+            <div class="toc-accordion">
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Wprowadzenie – cel lekcji i test wstępny</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#part1">Cel lekcji</a>
+                        <a class="toc-anchor" href="#sec-test-start">Test wstępny</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wiem, czego będę się uczyć.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam wynik testu wstępnego.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam listę lektur obowiązkowych z klas IV–VI.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Bohaterowie dynamiczni – Edmund, Gereb, Bilbo</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-bohaterowie">Porównanie</a>
+                        <a class="toc-anchor" href="#sec-bohaterowie-tabela">Tabela</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wiem, kim był Edmund, co go zmieniło i kim się stał.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, kim był Gereb – i czym różni się jego przemiana od Edmunda.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, kim był Bilbo – i że nie zabił Smauga.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, że Aslan to symbol poświęcenia, nie bohater dynamiczny.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam mechanizm ofiary Aslana (Głęboka Magia / Głębsza Magia).</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam łańcuch zwycięstwa nad Smaugiem oraz rolę Arcyklejnotu.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Najważniejsze sceny i motywy</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-sceny">Sceny z Narnii</a>
+                        <a class="toc-anchor" href="#sec-sceny-hobbit">Sceny z Hobbita</a>
+                        <a class="toc-anchor" href="#sec-sceny-plac">Sceny z Placu Broni</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam kluczowe sceny z Narnii i ich motywy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam kluczowe sceny z Hobbita i ich motywy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam kluczowe sceny z Placu Broni i ich motywy.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Motywy przekrojowe i pary lektur</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-motywy">Motywy</a>
+                        <a class="toc-anchor" href="#sec-pary">Pary lektur</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam trzy motywy przekrojowe.</li>
+                        <li><input type="checkbox" data-progress="5" /> Potrafię dobrać parę lektur do tematu rozprawki.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam tabelę przekrojową motywów.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Imiesłowy – podział, zasady, ortografia</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-imieslowy-teoria">Teoria</a>
+                        <a class="toc-anchor" href="#sec-imieslowy-tabela">Tabela</a>
+                        <a class="toc-anchor" href="#sec-nie">Zasada „nie”</a>
+                        <a class="toc-anchor" href="#sec-interpunkcja">Interpunkcja</a>
+                        <a class="toc-anchor" href="#sec-podmiot">Zasada podmiotu</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam imiesłowy przymiotnikowe (czynne, bierne).</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam imiesłowy przysłówkowe (współczesne, uprzednie).</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam zasadę pisowni „nie” z imiesłowami.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, kiedy stawiamy przecinek przed imiesłowem przysłówkowym.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam zasadę zgodności podmiotu z imiesłowem.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Egzamin – jak to wygląda?</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-egzamin">Egzamin w praktyce</a>
+                        <a class="toc-anchor" href="#sec-pulapki">Pułapki egzaminacyjne</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wiem, jak wyglądają zadania z lektur IV–VI na egzaminie.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam najczęstsze pułapki egzaminacyjne.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Ćwiczenia interaktywne i fiszki</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-cwiczenia">Ćwiczenia</a>
+                        <a class="toc-anchor" href="#sec-flashcards">Fiszki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wykonałem ćwiczenia z imiesłowów.</li>
+                        <li><input type="checkbox" data-progress="5" /> Przećwiczyłem fiszki.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wykonałem ćwiczenie dopasowania motywów.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Test końcowy i podsumowanie</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-mission">Misja końcowa</a>
+                        <a class="toc-anchor" href="#sec-podsumowanie">Podsumowanie</a>
+                        <a class="toc-anchor" href="#sec-pulapki">Pułapki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem test końcowy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam swoje mocne i słabe strony.</li>
+                    </ul>
+                </details>
+
+            </div>
+            <div class="toc-keywords">
+                <span>Słowa kluczowe: przemiana · bohater dynamiczny · motyw · imiesłów przymiotnikowy · imiesłów przysłówkowy · „nie” · przecinek · zgodność podmiotu · Głęboka Magia · Arcyklejnot · lektury IV–VI · CKE · E8 · fragment</span>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        CZĘŚĆ 1 – WPROWADZENIE
+        ============================================================ -->
+        <div class="mm-recall" id="mmRecall">
+            <details>
+                <summary>Sprawdź się przed nauką — 3 szybkie pytania</summary>
+                <div class="mm-microtest">
+                    <button type="button" onclick="mmReveal(this,'Edmund przeszedł przemianę ze zdrajcy w lojalnego wojownika.')">Który bohater przeszedł przemianę ze zdrajcy w lojalnego wojownika?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Przymiotnikowy czynny: czytający; bierny: przeczytany.')">Jaki imiesłów przymiotnikowy czynny i bierny utworzysz od „czytać”?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Aslan symbolizuje poświęcenie, miłość i odkupienie.')">Jaki motyw łączysz z Aslanem?<span class="mm-answer"></span></button>
+                </div>
+                <p>To nie jest test na ocenę. Ma pokazać, co już pamiętasz.</p>
+            </details>
+        </div>
+
+        <section class="section" data-level="basic" id="part1">
+            <div class="part-heading"><span class="part-num">Część 1</span> · Wprowadzenie</div>
+
+            <div class="section" data-level="basic" id="sec-cel">
+                <h2>Cel lekcji</h2>
+                <p>Po tej lekcji będziesz potrafić:</p>
+                <ul>
+                    <li>porównać bohaterów dynamicznych z lektur klas IV–VI (<strong>Edmund, Gereb, Bilbo</strong>),</li>
+                    <li>wypisać kluczowe sceny i przypisać do nich motywy,</li>
+                    <li>rozróżniać i poprawnie używać <strong>imiesłowów przymiotnikowych</strong> (czynnych, biernych) oraz <strong>przysłówkowych</strong> (współczesnych, uprzednich),</li>
+                    <li>stosować zasadę pisowni „nie” z imiesłowami oraz prawidłowo stawiać przecinek przed imiesłowem przysłówkowym,</li>
+                    <li>stosować zasadę zgodności podmiotu w zdaniach z imiesłowem przysłówkowym.</li>
+                </ul>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-test-start">
+                <h2>1. Zanim zaczniesz – szybki test</h2>
+                <p>Rozwiąż test samodzielnie, a potem sprawdź odpowiedzi. Zapisz swój wynik.</p>
+                <ol>
+                    <li>Kto jest bohaterem dynamicznym w <em>„Chłopcach z Placu Broni”</em>?</li>
+                    <li>Jaki motyw łączymy z Aslanem?</li>
+                    <li>Jaki imiesłów przymiotnikowy czynny utworzysz od czasownika <em>„czytać”</em>?</li>
+                    <li>Jaki imiesłów przysłówkowy uprzedni utworzysz od czasownika <em>„przeczytać”</em>?</li>
+                    <li>Popraw interpunkcję: <em>„Idąc do szkoły spotkał kolegę.”</em></li>
+                    <li>Uzupełnij: <em>„_____ książkę, poszedł spać.”</em> (im. przys. uprzedni od „przeczytać”)</li>
+                    <li>„nie” z imiesłowami przymiotnikowymi piszemy ………. (łącznie / rozdzielnie)</li>
+                    <li>Kto odkrył słaby punkt Smauga – Bilbo czy Thorin?</li>
+                    <li>Czy Aslan jest bohaterem dynamicznym? (tak / nie)</li>
+                    <li>Popraw błąd: <em>„Nie czytający uczeń”</em></li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-start')">Pokaż odpowiedzi</button>
+                <div id="ans-start" class="answer-content">
+                    <ol>
+                        <li><strong>Gereb</strong> – przechodzi przemianę od zdrajcy do skruszonego członka grupy.</li>
+                        <li><strong>Poświęcenie</strong> – Aslan oddaje życie za Edmunda.</li>
+                        <li><strong>czytający</strong> (końcówka -ący).</li>
+                        <li><strong>przeczytawszy</strong> (końcówka -wszy).</li>
+                        <li><strong>Idąc do szkoły, spotkał kolegę.</strong> – przecinek przed imiesłowem przysłówkowym.</li>
+                        <li><strong>Przeczytawszy</strong> książkę, poszedł spać.</li>
+                        <li><strong>Łącznie</strong> – np. <em>nieczytający, nieprzeczytany</em>.</li>
+                        <li><strong>Bilbo</strong> – odkrył słaby punkt Smauga, ale to Bard go zabił.</li>
+                        <li><strong>Nie</strong> – Aslan jest symbolem poświęcenia, nie przechodzi wewnętrznej przemiany.</li>
+                        <li><strong>Nieczytający uczeń</strong> – łącznie.</li>
+                    </ol>
+                    <p class="text-sm text-muted">Wróć do tych pytań po zakończeniu lekcji, aby zobaczyć postęp.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-znaczenie">
+                <h2>2. Dlaczego te lektury są ważne na egzaminie?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Tip tygodnia</span>
+                    <p>Lektury z klas IV–VI to proste, przyjemne książki – i właśnie dlatego są świetnym <strong>rusztowaniem do rozprawki</strong>: łatwo je streścić w dwóch zdaniach i trudno się w nich pomylić. Zbuduj z tego tygodnia <strong>bank par</strong> lektur.</p>
+                    <ul>
+                        <li><strong>Nemeczek i Bilbo</strong> – odwaga słabszych.</li>
+                        <li><strong>Edmund i Scrooge</strong> – przemiana (Scrooge dojdzie w grudniu).</li>
+                        <li><strong>Aslan i ...</strong> – poświęcenie.</li>
+                    </ul>
+                    <p>Pary lektur to gotowe rusztowanie każdego wypracowania.</p>
+                </div>
+                <div class="card card-warning">
+                    <span class="card-label">Uwaga! Poprawione informacje</span>
+                    <ul>
+                        <li><strong>Bilbo</strong> – odkrywa słaby punkt Smauga, ale <strong>to Bard go zabija</strong>.</li>
+                        <li><strong>Gereb</strong> – nie staje się „dojrzałym przywódcą” ani nie poświęca się jak Nemeczek. Jego przemiana to <strong>skrucha i próba naprawienia zdrady</strong>.</li>
+                        <li><strong>Aslan</strong> – <strong>nie jest bohaterem dynamicznym</strong>, lecz symbolem poświęcenia, dobra i odkupienia.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 2 – BOHATEROWIE DYNAMICZNI
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part2">
+            <div class="part-heading"><span class="part-num">Część 2</span> · Bohaterowie dynamiczni</div>
+
+            <div class="section" data-level="basic" id="sec-bohaterowie">
+                <h2>3. Bohater dynamiczny – definicja</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Bohater dynamiczny</span>
+                    <p>To postać, która w czasie wydarzeń przechodzi <strong>wyraźną przemianę wewnętrzną</strong>. Zmienia swoje poglądy, postępowanie, system wartości albo stosunek do innych ludzi.</p>
+                    <p>Nie wystarczy, że bohater przeżył przygodę. Przemiana musi być widoczna w jego zachowaniu lub sposobie myślenia.</p>
+                    <div class="korekta">
+                        <span class="korekta-title">Kluczowe rozróżnienie</span>
+                        <p><strong>Aslan</strong> nie jest bohaterem dynamicznym – jest <strong>symbolem</strong> (postacią statyczną). Nie zmienia się wewnętrznie, lecz wpływa na innych. To ważne na egzaminie!</p>
+                    </div>
+                </div>
+
+                <h3>Edmund – „Opowieści z Narnii”</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Przemiana Edmunda</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Etap</th><th>Charakterystyka</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Przed przemianą</strong></td><td>Jest zazdrosny, egoistyczny i podatny na pokusy Białej Czarownicy.</td></tr>
+                                <tr><td><strong>Przyczyna zmiany</strong></td><td>Zdradza rodzeństwo, ale później rozumie swój błąd. Spotyka Aslana i otrzymuje przebaczenie.</td></tr>
+                                <tr><td><strong>Po przemianie</strong></td><td>Staje się lojalny, odważny i gotowy do walki po stronie dobra. Próbuje naprawić wyrządzone zło.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>Wniosek:</strong> Edmund pokazuje, że człowiek może się zmienić, jeśli uzna swoją winę i naprawi błąd czynem. <strong>Trójkrok Edmunda:</strong> zdrada → skrucha → naprawa czynem.</p>
+                </div>
+
+                <!-- Dodatkowa karta z haczykiem o Głębokiej Magii -->
+                <div class="haczyk-box">
+                    <span class="haczyk-title">Haczyk egzaminacyjny – mechanizm ofiary Aslana</span>
+                    <p>Według <strong>Głębokiej Magii</strong> zdrajca należy do Białej Czarownicy – Edmund prawem Czarownicy powinien umrzeć. Aslan dobrowolnie zajmuje jego miejsce na <strong>Kamiennym Stole</strong> i zostaje zabity. Nie wie jednak o <strong>Głębszej Magii</strong>: gdy niewinny oddaje życie za winnego, śmierć traci moc – dlatego Aslan <strong>zmartwychwstaje</strong> i ożywia zamienione w kamień ofiary Czarownicy. Ten mechanizm pokazuje, że poświęcenie i miłość są silniejsze niż zło i prawo zemsty.</p>
+                </div>
+
+                <h3>Gereb – „Chłopcy z Placu Broni”</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Przemiana Gereba</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Etap</th><th>Charakterystyka</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Przed przemianą</strong></td><td>Zdradza chłopców z Placu Broni i współpracuje z Czerwonymi Koszulami. Kierują nim ambicja i zazdrość.</td></tr>
+                                <tr><td><strong>Przyczyna zmiany</strong></td><td>Uświadamia sobie, że postąpił źle. Widzi odwagę i poświęcenie Nemeczka oraz konsekwencje własnej zdrady.</td></tr>
+                                <tr><td><strong>Po przemianie</strong></td><td>Żałuje swojego postępowania, wraca do grupy i pomaga w obronie placu.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważna korekta:</span>
+                        <p>Gereb jest bohaterem dynamicznym, ale jego przemiana <strong>nie jest tak pełna i jednoznaczna</strong> jak przemiana Edmunda. <strong>Nie staje się „dojrzałym przywódcą”</strong> ani nie poświęca się w taki sposób jak Nemeczek. Najważniejsze są jego <strong>skrucha, powrót do grupy i próba naprawienia zdrady</strong>.</p>
+                    </div>
+                </div>
+
+                <h3>Bilbo Baggins – „Hobbit, czyli tam i z powrotem”</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Przemiana Bilba</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Etap</th><th>Charakterystyka</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Przed przemianą</strong></td><td>Jest przywiązany do wygodnego, spokojnego życia i początkowo nie uważa się za odważnego podróżnika.</td></tr>
+                                <tr><td><strong>Przyczyna zmiany</strong></td><td>Wyrusza z krasnoludami i przeżywa liczne niebezpieczne przygody. Musi samodzielnie podejmować decyzje.</td></tr>
+                                <tr><td><strong>Po przemianie</strong></td><td>Staje się odważny, samodzielny, sprytny i odpowiedzialny za innych.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważna korekta:</span>
+                        <p><strong>Bilbo nie zabija Smauga.</strong> Odkrywa jego słaby punkt, ale smoka zabija <strong>Bard</strong>. Bilbo wygrywa <strong>sprytem, nie mieczem</strong>.</p>
+                    </div>
+                    <p><strong>Wniosek:</strong> Bilbo odkrywa w sobie cechy, których wcześniej nie dostrzegał. Przemiana nie polega na tym, że przestaje lubić dom, lecz na tym, że zdobywa doświadczenie i odwagę.</p>
+                </div>
+
+                <!-- Dodatkowe haczyki o łańcuchu zwycięstwa i Arcyklejnocie -->
+                <div class="haczyk-box">
+                    <span class="haczyk-title">Haczyk egzaminacyjny – łańcuch zwycięstwa nad Smaugiem</span>
+                    <p>Bilbo rozmawia ze Smaugiem i odkrywa słaby punkt (goła plama pod lewą piersią) → przekazuje tę informację krasnoludom → <strong>drozd</strong> podsłuchuje rozmowę i leci do Barda → <strong>Bard</strong> trafia smoka <strong>Czarną Strzałą</strong> w nieopancerzone miejsce. Bilbo więc nie walczy bezpośrednio – jego spryt i informacja pośrednio prowadzą do pokonania smoka.</p>
+                </div>
+                <div class="haczyk-box">
+                    <span class="haczyk-title">Haczyk egzaminacyjny – Arcyklejnot (Arkenstone)</span>
+                    <p>Bilbo przywłaszcza sobie Arcyklejnot i przekazuje go Bardowi oraz królowi elfów jako kartę przetargową przeciwko upartemu Thorinowi – działa więc na rzecz pokoju, mimo ryzyka gniewu krasnoludów. To pokazuje odwagę moralną i odpowiedzialność za innych.</p>
+                </div>
+
+                <h3>Aslan – ważne rozróżnienie (powtórzenie i wzmocnienie)</h3>
+                <div class="card card-warning">
+                    <span class="card-label">⚠️ Aslan – symbol, NIE bohater dynamiczny</span>
+                    <div class="korekta">
+                        <span class="korekta-title">Zapamiętaj na egzamin!</span>
+                        <p><strong>Aslan nie jest bohaterem dynamicznym.</strong> Jest <strong>symbolem poświęcenia, dobra, miłości i odkupienia</strong>. Nie przechodzi wewnętrznej przemiany – od początku jest uosobieniem dobra. Jego ofiara ma charakter zbawczy i pokazuje, że miłość jest silniejsza niż zło.</p>
+                        <p><strong>Bohater dynamiczny</strong> = zmienia się wewnętrznie.<br />
+                        <strong>Aslan</strong> = zmienia innych, ale sam pozostaje niezmienny.</p>
+                    </div>
+                </div>
+
+                <div class="table-wrap" id="sec-bohaterowie-tabela">
+                    <table class="bohater-tabela">
+                        <thead><tr><th>Bohater</th><th>Kim był?</th><th>Co go zmieniło?</th><th>Kim się stał?</th><th>Uwaga</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Edmund</strong></td><td>zdrajca, zazdrosny, egoistyczny</td><td>spotkanie z Aslanem, przebaczenie</td><td>lojalny, odważny wojownik, naprawia błąd</td><td>pełna przemiana</td></tr>
+                            <tr><td><strong>Gereb</strong></td><td>zdrajca, ambitny, zazdrosny</td><td>świadomość własnej zdrady, widok poświęcenia Nemeczka</td><td>skruszony, wraca do grupy, próbuje naprawić błąd</td><td>przemiana niepełna – skrucha, nie bohaterstwo</td></tr>
+                            <tr><td><strong>Bilbo</strong></td><td>wygodny, spokojny hobbit</td><td>wyprawa, przygody, samodzielne decyzje</td><td>odważny, sprytny, odpowiedzialny</td><td>odkrywa w sobie cechy, których nie znał</td></tr>
+                            <tr><td><strong>Aslan</strong></td><td>—</td><td>—</td><td>—</td><td><strong>Nie jest bohaterem dynamicznym</strong> – symbol poświęcenia</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-ex-bohaterowie">
+                <h2>Ćwiczenie – dopasuj cechy do bohatera</h2>
+                <div class="exercise">
+                    <div class="ex-title">Dopasuj opis do odpowiedniego bohatera. <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. „zdrajca → skrucha → naprawa czynem”</span>
+                        <select id="bohater1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="edmund">Edmund</option>
+                            <option value="gereb">Gereb</option>
+                            <option value="bilbo">Bilbo</option>
+                            <option value="aslan">Aslan</option>
+                        </select>
+                        <span class="result-icon" id="bohaterIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. „odkrywa słaby punkt Smauga”</span>
+                        <select id="bohater2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="edmund">Edmund</option>
+                            <option value="gereb">Gereb</option>
+                            <option value="bilbo">Bilbo</option>
+                            <option value="aslan">Aslan</option>
+                        </select>
+                        <span class="result-icon" id="bohaterIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. „przechodzi przemianę, ale nie staje się przywódcą – tylko okazuje skruchę”</span>
+                        <select id="bohater3" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="edmund">Edmund</option>
+                            <option value="gereb">Gereb</option>
+                            <option value="bilbo">Bilbo</option>
+                            <option value="aslan">Aslan</option>
+                        </select>
+                        <span class="result-icon" id="bohaterIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. „symbol poświęcenia, nie bohater dynamiczny”</span>
+                        <select id="bohater4" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="edmund">Edmund</option>
+                            <option value="gereb">Gereb</option>
+                            <option value="bilbo">Bilbo</option>
+                            <option value="aslan">Aslan</option>
+                        </select>
+                        <span class="result-icon" id="bohaterIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkBohaterowie()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="bohaterResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 3 – SCENY I MOTYWY
+        ============================================================ -->
+        <section class="section" data-level="training" id="part3">
+            <div class="part-heading"><span class="part-num">Część 3</span> · Najważniejsze sceny i motywy</div>
+
+            <div class="section" data-level="training" id="sec-sceny">
+                <h2>4. „Opowieści z Narnii” – kluczowe sceny</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">Zdrada Edmunda</span>
+                    <p>Edmund, skuszony obietnicami Białej Czarownicy, zdradza rodzeństwo i ujawnia jej informacje.</p>
+                    <p><strong>Motywy:</strong> pokusa, zazdrość, zdrada, słabość człowieka, wina i skrucha, możliwość odkupienia.</p>
+                    <p><strong>Znaczenie:</strong> Edmund ulega złu, ale później dostrzega swój błąd. Jego historia pokazuje, że sama skrucha nie wystarczy — trzeba jeszcze próbować naprawić wyrządzone zło.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Ofiara Aslana</span>
+                    <p>Aslan oddaje życie za Edmunda. Zostaje zabity na Kamiennym Stole, a następnie powraca do życia.</p>
+                    <p><strong>Motywy:</strong> poświęcenie, miłość, ofiara za drugiego człowieka, odkupienie, zwycięstwo dobra nad złem.</p>
+                    <p><strong>Znaczenie:</strong> Aslan dobrowolnie poświęca się, aby uratować Edmunda. Jego czyn pokazuje, że miłość może być silniejsza niż przemoc i śmierć.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Bitwa</span>
+                    <p>Siły dobra walczą z wojskami Białej Czarownicy.</p>
+                    <p><strong>Motywy:</strong> walka dobra ze złem, odwaga, braterstwo, lojalność, odpowiedzialność za innych.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-sceny-hobbit">
+                <h2>5. „Hobbit” – kluczowe sceny</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">Spotkanie z Gollumem</span>
+                    <p>Bilbo trafia do podziemi i spotyka Golluma. Bohaterowie organizują pojedynek na zagadki.</p>
+                    <p><strong>Motywy:</strong> spryt kontra siła, samotność, próba charakteru, znaczenie decyzji, zdobywanie odwagi.</p>
+                    <p><strong>Znaczenie:</strong> Bilbo nie wygrywa dzięki sile fizycznej. Ratuje się inteligencją, opanowaniem i umiejętnością szybkiego myślenia.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Walka ze Smaugiem</span>
+                    <p>Bilbo rozmawia ze smokiem i odkrywa jego słaby punkt. Informacja ta pomaga później Bardowi zabić Smauga.</p>
+                    <p><strong>Motywy:</strong> odwaga, spryt, walka ze złem, odpowiedzialność, chciwość, siła informacji.</p>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważna korekta:</span>
+                        <p><strong>Bilbo nie zabija Smauga.</strong> Rozpoznaje jego słaby punkt, a Smauga zabija <strong>Bard</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Bitwa Pięciu Armii</span>
+                    <p>Po śmierci Smauga rozpoczyna się walka o skarb i władzę nad Samotną Górą.</p>
+                    <p><strong>Motywy:</strong> wojna, chciwość, konflikt interesów, poświęcenie, jedność wobec wspólnego zagrożenia, cena ambicji.</p>
+                    <p><strong>Znaczenie:</strong> Spór o skarb pokazuje, że chciwość może zniszczyć przyjaźń i doprowadzić do wojny. W obliczu zagrożenia bohaterowie muszą jednak połączyć siły.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-sceny-plac">
+                <h2>6. „Chłopcy z Placu Broni” – kluczowe sceny</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">Obrona Placu Broni</span>
+                    <p>Chłopcy bronią swojego miejsca spotkań przed Czerwonymi Koszulami.</p>
+                    <p><strong>Motywy:</strong> mała ojczyzna, przyjaźń, lojalność, honor, wspólnota, odpowiedzialność.</p>
+                    <p><strong>Znaczenie:</strong> Plac jest dla chłopców czymś więcej niż zwykłym terenem. Jest ich własnym światem, miejscem spotkań i symbolem przynależności.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Śmierć Nemeczka</span>
+                    <p>Nemeczek, mimo choroby i wyczerpania, bierze udział w obronie placu. Umiera w wyniku choroby.</p>
+                    <p><strong>Motywy:</strong> poświęcenie, odwaga, patriotyzm, wierność, niesprawiedliwość, bohaterstwo pozbawione sławy.</p>
+                    <p><strong>Znaczenie:</strong> Najmniejszy i początkowo lekceważony chłopiec okazuje się jednym z najodważniejszych bohaterów. Jego śmierć pokazuje, że wartość człowieka nie zależy od jego siły fizycznej ani pozycji w grupie.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Zdrada Gereba</span>
+                    <p>Gereb przekazuje Czerwonym Koszulom informacje o obronie placu.</p>
+                    <p><strong>Motywy:</strong> zdrada, zazdrość, ambicja, lojalność, odpowiedzialność, skrucha.</p>
+                    <p><strong>Znaczenie:</strong> Gereb musi zmierzyć się z konsekwencjami własnego postępowania. Jego późniejszy powrót do grupy pokazuje, że można próbować odzyskać zaufanie, ale nie da się całkowicie wymazać skutków zdrady.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 4 – MOTYWY PRZEKROJOWE I PARY LEKTUR
+        ============================================================ -->
+        <section class="section" data-level="training" id="part4">
+            <div class="part-heading"><span class="part-num">Część 4</span> · Motywy przekrojowe i pary lektur</div>
+
+            <div class="section" data-level="training" id="sec-motywy">
+                <h2>7. Motywy przekrojowe</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">1. Przemiana bohatera</span>
+                    <p>Bohater zmienia się pod wpływem trudnych doświadczeń.</p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li>Edmund: od zdrajcy do lojalnego wojownika.</li>
+                        <li>Gereb: od zdrajcy do skruszonego członka grupy.</li>
+                        <li>Bilbo: od wygodnego hobbita do odważnego i odpowiedzialnego podróżnika.</li>
+                    </ul>
+                    <p>W rozprawce warto pokazać trzy elementy:</p>
+                    <ol>
+                        <li>jaki bohater był na początku;</li>
+                        <li>co spowodowało jego zmianę;</li>
+                        <li>jak zachowywał się po przemianie.</li>
+                    </ol>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">2. Świat dziecka i świat dorosłych</span>
+                    <p>W wielu lekturach dzieci tworzą własny świat zasad, przyjaźni i zabawy, który zostaje skonfrontowany ze światem dorosłych.</p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li>W „Chłopcach z Placu Broni” dziecięca zabawa w wojnę przybiera realny i tragiczny wymiar.</li>
+                        <li>W „Opowieściach z Narnii” dzieci muszą podejmować decyzje wymagające odwagi i odpowiedzialności dorosłych.</li>
+                        <li>W „Hobbicie” Bilbo, choć jest dorosłym hobbitem, przechodzi proces dojrzewania i zdobywania samodzielności.</li>
+                    </ul>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">3. Walka dobra ze złem</span>
+                    <p>Konflikt dobra i zła może mieć formę dosłownej walki, ale także wewnętrznego zmagania bohatera.</p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li>Aslan walczy z Białą Czarownicą.</li>
+                        <li>Edmund zmaga się z własną zazdrością i ulega pokusie.</li>
+                        <li>Bilbo przeciwstawia się Smaugowi i chciwości Thorina.</li>
+                        <li>Chłopcy z Placu Broni bronią wspólnoty przed Czerwonymi Koszulami.</li>
+                    </ul>
+                </div>
+
+                <!-- NOWA TABELA PRZEKROJOWA MOTYWÓW -->
+                <h3>📊 Tabela przekrojowa – motywy w lekturach IV–VI</h3>
+                <div class="table-wrap">
+                    <table class="motywy-przekrojowe">
+                        <thead><tr><th>Motyw</th><th>„Narnia”</th><th>„Hobbit”</th><th>„Chłopcy z Placu Broni”</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Przemiana bohatera</strong></td><td>Edmund (pełna)</td><td>Bilbo (pełna)</td><td>Gereb (niepełna – skrucha)</td></tr>
+                            <tr><td><strong>Poświęcenie</strong></td><td>Aslan (ofiara za winnego)</td><td>Bilbo (ryzyko dla przyjaciół)</td><td>Nemeczek (śmierć w obronie placu)</td></tr>
+                            <tr><td><strong>Walka dobra ze złem</strong></td><td>Bitwa z Białą Czarownicą</td><td>Bitwa Pięciu Armii</td><td>Obrona placu przed Czerwonymi Koszulami</td></tr>
+                            <tr><td><strong>Mała ojczyzna / honor</strong></td><td>Narnia jako ojczyzna</td><td>Samotna Góra (Thorin)</td><td>Plac Broni</td></tr>
+                            <tr><td><strong>Chciwość / pokusa</strong></td><td>Edmund (turkish delight)</td><td>Thorin / Smaug</td><td>Gereb (ambicja, zazdrość)</td></tr>
+                            <tr><td><strong>Przyjaźń i lojalność</strong></td><td>Rodzeństwo Pevensie</td><td>Bilbo i krasnoludy</td><td>Chłopcy z Placu Broni</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-sm text-muted" style="margin-top:6px;">💡 Ta tabela pomoże Ci szybko znaleźć argumenty do rozprawki – wystarczy, że wybierzesz motyw i lekturę, którą znasz najlepiej.</p>
+            </div>
+
+            <div class="section" data-level="training" id="sec-pary">
+                <h2>8. Pary lektur – gotowe rusztowanie do rozprawki</h2>
+                <div class="card card-hint">
+                    <span class="card-label">Bank par</span>
+                    <div class="bank-item">
+                        <span class="constr">Nemeczek + Bilbo</span>
+                        <span class="meaning">odwaga słabszych</span>
+                        <div class="example"><span class="pl">Obaj są słabi fizycznie, ale wygrywają odwagą i poświęceniem.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Edmund + Scrooge</span>
+                        <span class="meaning">przemiana</span>
+                        <div class="example"><span class="pl">Obaj przechodzą wewnętrzną przemianę – ze złych stają się dobrzy.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Aslan + ...</span>
+                        <span class="meaning">poświęcenie</span>
+                        <div class="example"><span class="pl">Aslan oddaje życie za winowajcę. Możesz dodać własną propozycję (np. Nemeczek).</span></div>
+                    </div>
+                </div>
+
+                <div class="exercise">
+                    <div class="ex-title">Dopasuj parę lektur do motywu <span class="level-badge level-training">TRENING</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. przemiana bohatera</span>
+                        <select id="para1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="nemeczek+bilbo">Nemeczek + Bilbo</option>
+                            <option value="edmund+scrooge">Edmund + Scrooge</option>
+                            <option value="aslan+...">Aslan + ...</option>
+                        </select>
+                        <span class="result-icon" id="paraIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. odwaga słabszych</span>
+                        <select id="para2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="nemeczek+bilbo">Nemeczek + Bilbo</option>
+                            <option value="edmund+scrooge">Edmund + Scrooge</option>
+                            <option value="aslan+...">Aslan + ...</option>
+                        </select>
+                        <span class="result-icon" id="paraIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. poświęcenie</span>
+                        <select id="para3" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="nemeczek+bilbo">Nemeczek + Bilbo</option>
+                            <option value="edmund+scrooge">Edmund + Scrooge</option>
+                            <option value="aslan+...">Aslan + ...</option>
+                        </select>
+                        <span class="result-icon" id="paraIcon3"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkPary()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="paraResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 5 – IMIESŁOWY – TEORIA
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part5">
+            <div class="part-heading"><span class="part-num">Część 5</span> · Imiesłowy – teoria i zasady</div>
+
+            <div class="section" data-level="basic" id="sec-imieslowy-teoria">
+                <h2>9. Co to są imiesłowy?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Definicja</span>
+                    <p><strong>Imiesłów</strong> to nieosobowa forma czasownika, która łączy cechy czasownika z cechami przymiotnika albo przysłówka.</p>
+                    <p>Na przykład:</p>
+                    <ul>
+                        <li><strong>czytający</strong> — pochodzi od czasownika „czytać”, ale określa rzeczownik jak przymiotnik;</li>
+                        <li><strong>czytając</strong> — pochodzi od czasownika „czytać”, ale określa sposób lub czas wykonania czynności.</li>
+                    </ul>
+                </div>
+
+                <!-- ROZPOZNAWANIE IMIESŁOWU PRZYSŁÓWKOWEGO -->
+                <div class="rozpoznawanie-box">
+                    <span class="rozpoznawanie-title">🔍 Jak rozpoznać imiesłów przysłówkowy w zdaniu?</span>
+                    <p>Imiesłów przysłówkowy zawsze odpowiada na pytanie <strong>„jak?”</strong> (sposób wykonywania czynności) lub <strong>„kiedy?”</strong> (czas wykonywania czynności) – ale <strong>w odniesieniu do czynności wykonywanej przez podmiot</strong>.</p>
+                    <ul>
+                        <li><strong>Pytanie „jak?”</strong> → <em>„Śpiewając, szedł przez park.”</em> – jak szedł? <strong>Śpiewając</strong>.</li>
+                        <li><strong>Pytanie „kiedy?”</strong> → <em>„Przeczytawszy książkę, wyszedł.”</em> – kiedy wyszedł? <strong>Po przeczytaniu</strong>.</li>
+                    </ul>
+                    <p><strong>Wskazówka:</strong> Imiesłów przysłówkowy zawsze wskazuje na czynność <strong>tego samego podmiotu</strong>, co orzeczenie. Jeśli nie możesz zadać pytania „jak?” lub „kiedy?” do czynności podmiotu – prawdopodobnie nie masz do czynienia z imiesłowem przysłówkowym.</p>
+                </div>
+
+                <h3>Imiesłowy przymiotnikowe</h3>
+                <p>Imiesłowy przymiotnikowe odpowiadają na pytanie <strong>jaki? jaka? jakie?</strong> i odmieniają się przez przypadki, liczby oraz rodzaje.</p>
+
+                <div class="card card-correct">
+                    <span class="card-label">Imiesłów przymiotnikowy czynny</span>
+                    <p>Oznacza wykonawcę czynności. Tworzymy go najczęściej od czasowników niedokonanych.</p>
+                    <p><strong>Typowa końcówka:</strong> <span class="rule-highlight">-ący, -ąca, -ące</span>.</p>
+                    <p><strong>Przykłady:</strong> śpiewający ptak, biegnąca dziewczyna, piszący uczeń, rosnące drzewo, walczący bohater.</p>
+                    <p><strong>Jak rozpoznać?</strong> „Jaki uczeń?” — <strong>pisący</strong>. Uczeń wykonuje czynność pisania.</p>
+                    <div class="przyklady-zdań">
+                        <p><span class="tag">Przykłady w zdaniach:</span></p>
+                        <p><strong>1.</strong> <em>„<span class="hl-imieslow">Czytający</span> książkę chłopiec nie usłyszał wołania.”</em></p>
+                        <p><strong>2.</strong> <em>„<span class="hl-imieslow">Śpiewająca</span> dziewczynka rozśmieszyła całą publiczność.”</em></p>
+                        <p><strong>3.</strong> <em>„<span class="hl-imieslow">Piszący</span> egzamin uczniowie byli bardzo skupieni.”</em></p>
+                        <p><strong>4.</strong> <em>„<span class="hl-imieslow">Biegnący</span> chłopiec potknął się o kamień.”</em></p>
+                    </div>
+                </div>
+
+                <div class="card card-correct">
+                    <span class="card-label">Imiesłów przymiotnikowy bierny</span>
+                    <p>Oznacza osobę lub rzecz, na którą czynność została skierowana. Tworzymy go od czasowników przechodnich.</p>
+                    <p><strong>Typowe zakończenia:</strong> <span class="rule-highlight">-ny, -ony, -ty</span>.</p>
+                    <p><strong>Przykłady:</strong> przeczytana książka, napisany list, zamknięte drzwi, umyty samochód, zbudowany dom.</p>
+                    <p><strong>Jak rozpoznać?</strong> „Jaki list?” — <strong>napisany</strong>. Ktoś napisał list, czyli czynność została wykonana na liście.</p>
+                    <div class="przyklady-zdań">
+                        <p><span class="tag">Przykłady w zdaniach:</span></p>
+                        <p><strong>1.</strong> <em>„<span class="hl-imieslow">Przeczytana</span> książka leżała na stole.”</em></p>
+                        <p><strong>2.</strong> <em>„<span class="hl-imieslow">Napisany</span> list został wysłany pocztą.”</em></p>
+                        <p><strong>3.</strong> <em>„<span class="hl-imieslow">Zamknięte</span> drzwi uniemożliwiły wejście do środka.”</em></p>
+                        <p><strong>4.</strong> <em>„<span class="hl-imieslow">Umyte</span> okna błyszczały w słońcu.”</em></p>
+                    </div>
+                </div>
+
+                <h3>Imiesłowy przysłówkowe</h3>
+                <p>Imiesłowy przysłówkowe są <strong>nieodmienne</strong> i określają czynność wykonywaną przez podmiot zdania.</p>
+
+                <div class="card card-correct">
+                    <span class="card-label">Imiesłów przysłówkowy współczesny</span>
+                    <p>Oznacza czynność odbywającą się <strong>w tym samym czasie</strong> co czynność wyrażona orzeczeniem.</p>
+                    <p><strong>Końcówka:</strong> <span class="rule-highlight">-ąc</span>.</p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>Idąc do szkoły, spotkałem kolegę.</em></li>
+                        <li><em>Czytając książkę, zasnęła.</em></li>
+                        <li><em>Śpiewając, sprzątał pokój.</em></li>
+                    </ul>
+                    <p>W zdaniu <em>„Idąc do szkoły, spotkałem kolegę”</em> obie czynności odbywają się mniej więcej w tym samym czasie.</p>
+                    <div class="przyklady-zdań">
+                        <p><span class="tag">Przykłady w zdaniach:</span></p>
+                        <p><strong>1.</strong> <em>„<span class="hl-imieslow">Idąc</span> do szkoły, spotkałem kolegę.”</em></p>
+                        <p><strong>2.</strong> <em>„<span class="hl-imieslow">Czytając</span> książkę, nie słyszała, co się wokół dzieje.”</em></p>
+                        <p><strong>3.</strong> <em>„<span class="hl-imieslow">Śpiewając</span>, sprzątał pokój.”</em></p>
+                        <p><strong>4.</strong> <em>„<span class="hl-imieslow">Pisząc</span> wypracowanie, korzystał z notatek.”</em></p>
+                        <p><strong>5.</strong> <em>„<span class="hl-imieslow">Biegając</span> po parku, spotkał przyjaciela.”</em></p>
+                    </div>
+                </div>
+
+                <div class="card card-correct">
+                    <span class="card-label">Imiesłów przysłówkowy uprzedni</span>
+                    <p>Oznacza czynność, która wydarzyła się <strong>wcześniej</strong> niż czynność wyrażona orzeczeniem.</p>
+                    <p><strong>Typowe końcówki:</strong> <span class="rule-highlight">-wszy, -łszy</span>.</p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>Przeczytawszy książkę, napisał recenzję.</em></li>
+                        <li><em>Zjadłszy śniadanie, wyszedł z domu.</em></li>
+                        <li><em>Umywszy ręce, usiadła do stołu.</em></li>
+                    </ul>
+                    <p>W zdaniu <em>„Przeczytawszy książkę, napisał recenzję”</em> najpierw przeczytał książkę, a dopiero później napisał recenzję.</p>
+                    <div class="przyklady-zdań">
+                        <p><span class="tag">Przykłady w zdaniach:</span></p>
+                        <p><strong>1.</strong> <em>„<span class="hl-imieslow">Przeczytawszy</span> książkę, napisał recenzję.”</em></p>
+                        <p><strong>2.</strong> <em>„<span class="hl-imieslow">Zjadłszy</span> śniadanie, wyszedł z domu.”</em></p>
+                        <p><strong>3.</strong> <em>„<span class="hl-imieslow">Umywszy</span> ręce, usiadła do stołu.”</em></p>
+                        <p><strong>4.</strong> <em>„<span class="hl-imieslow">Przygotowawszy</span> się, czekali na sygnał.”</em></p>
+                        <p><strong>5.</strong> <em>„<span class="hl-imieslow">Odrobiwszy</span> lekcje, poszli na spacer.”</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-imieslowy-tabela">
+                <h2>10. Tabela imiesłowów – przykłady</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Rodzaj imiesłowu</th><th>Pytanie</th><th>Przykład</th><th>Końcówka</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Przymiotnikowy czynny</strong></td><td><em>jaki?</em></td><td><span class="hl-imieslow">piszący</span> (uczeń)</td><td>-ący</td></tr>
+                            <tr><td><strong>Przymiotnikowy bierny</strong></td><td><em>jaki?</em></td><td><span class="hl-imieslow">napisany</span> (list)</td><td>-ny/-ty/-ony</td></tr>
+                            <tr><td><strong>Przysłówkowy współczesny</strong></td><td><em>jak?</em></td><td><span class="hl-imieslow">pisząc</span> (list, myślał)</td><td>-ąc</td></tr>
+                            <tr><td><strong>Przysłówkowy uprzedni</strong></td><td><em>kiedy?</em></td><td><span class="hl-imieslow">napisawszy</span> (list, wyszedł)</td><td>-wszy/-łszy</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-nie">
+                <h2>11. Zasada pisowni „nie” z imiesłowami</h2>
+                <div class="card card-trap">
+                    <span class="card-label">To jedna z najczęściej sprawdzanych reguł na egzaminie!</span>
+                </div>
+
+                <div class="card card-correct">
+                    <span class="card-label">„nie” z imiesłowami przymiotnikowymi – ŁĄCZNIE</span>
+                    <p><strong>Przykłady:</strong> <span class="correct-text">nieczytający, nieprzeczytany, niepiszący</span></p>
+                    <p><span class="text-sm text-muted">(bo łączą się z rzeczownikiem jak przymiotniki).</span></p>
+                </div>
+
+                <div class="card card-correct">
+                    <span class="card-label">„nie” z imiesłowami przysłówkowymi – ROZDZIELNIE</span>
+                    <p><strong>Przykłady:</strong> <span class="correct-text">nie czytając, nie przeczytawszy, nie pisząc</span></p>
+                    <p><span class="text-sm text-muted">(bo są przysłówkami i zachowują się jak inne przysłówki z „nie”).</span></p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Zapamiętaj!</span>
+                    <p><strong>Przymiotnikowe → łącznie, przysłówkowe → rozdzielnie.</strong></p>
+                    <p>Przykład: <em>„Nieczytający”</em> (przymiotnik) ale <em>„nie czytając”</em> (przysłówek).</p>
+                </div>
+
+                <div class="wyjatki-box">
+                    <span class="wyjatki-title">⚠️ Wyjątki od zasady „przymiotnikowe → łącznie”</span>
+                    <p>Choć ogólna zasada jest prosta, w niektórych przypadkach imiesłów przymiotnikowy z „nie” może być zapisany rozdzielnie – gdy pełni funkcję <strong>orzecznika</strong> w zdaniu i akcentujemy przeczenie:</p>
+                    <ul>
+                        <li><em>„On jest <strong>nie czytający</strong>.”</em> (rzadka konstrukcja, podkreślająca brak cechy)</li>
+                    </ul>
+                    <p><strong>Wskazówka na egzamin:</strong> W typowych zadaniach sprawdzających pisownię „nie” z imiesłowami najbezpieczniej jest stosować zasadę: <strong>przymiotnikowe → łącznie, przysłówkowe → rozdzielnie</strong>. Wyjątki są rzadko sprawdzane.</p>
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Forma</th><th>Rodzaj</th><th>Pisownia</th></tr></thead>
+                        <tbody>
+                            <tr><td>nieczytający</td><td>imiesłów przymiotnikowy czynny</td><td><span class="correct-text">łącznie</span></td></tr>
+                            <tr><td>nieprzeczytany</td><td>imiesłów przymiotnikowy bierny</td><td><span class="correct-text">łącznie</span></td></tr>
+                            <tr><td>nie czytając</td><td>imiesłów przysłówkowy współczesny</td><td><span class="correct-text">rozdzielnie</span></td></tr>
+                            <tr><td>nie przeczytawszy</td><td>imiesłów przysłówkowy uprzedni</td><td><span class="correct-text">rozdzielnie</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-interpunkcja">
+                <h2>12. Interpunkcja przy imiesłowach</h2>
+                <div class="card card-trap">
+                    <span class="card-label">To jedna z najbardziej punktowanych reguł interpunkcyjnych na E8!</span>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Zasada</span>
+                    <p><strong>Imiesłowowy równoważnik zdania oddzielamy przecinkiem, gdy pełni funkcję dodatkowej informacji w zdaniu.</strong></p>
+                    <p>W praktyce oznacza to, że <strong>imiesłów przysłówkowy (współczesny i uprzedni) wraz z określeniami najczęściej oddzielamy przecinkiem</strong>.</p>
+                </div>
+
+                <h3>Gdy występuje na początku zdania</h3>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Idąc do szkoły, spotkałem kolegę.</span>
+                </div>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Przeczytawszy książkę, napisała wypracowanie.</span>
+                </div>
+
+                <h3>Gdy występuje po zdaniu głównym</h3>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Spotkałem kolegę, idąc do szkoły.</span>
+                </div>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Napisała wypracowanie, przeczytawszy książkę.</span>
+                </div>
+
+                <h3>Gdy znajduje się w środku zdania</h3>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Mój brat, wracając ze szkoły, kupił chleb.</span>
+                </div>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Dziewczynka, śpiewając piosenkę, szła przez park.</span>
+                </div>
+
+                <h3>Gdy imiesłów NIE jest oddzielany przecinkiem</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Bez przecinka – imiesłów ściśle związany z orzeczeniem</span>
+                    <p>Gdy imiesłów jest ściśle związany z orzeczeniem i nie pełni funkcji dodatkowej informacji, <strong>nie stawiamy przecinka</strong>.</p>
+                    <div class="example">
+                        <span class="tag">poprawnie</span>
+                        <span class="pl">Siedział patrząc przez okno.</span>
+                        <span class="expl">(„patrząc” jest ściśle związane z „siedział” – określa sposób siedzenia)</span>
+                    </div>
+                    <div class="example">
+                        <span class="tag">poprawnie</span>
+                        <span class="pl">Wrócił do domu zmęczony.</span>
+                        <span class="expl">(„zmęczony” to imiesłów przymiotnikowy, nie wymaga przecinka)</span>
+                    </div>
+                    <div class="example">
+                        <span class="tag">poprawnie</span>
+                        <span class="pl">Leżał czytając książkę.</span>
+                        <span class="expl">(„czytając” określa sposób leżenia – ściśle związane)</span>
+                    </div>
+                    <p><strong>Wskazówka:</strong> Jeśli możesz usunąć imiesłów ze zdania, a zdanie nadal ma sens – prawdopodobnie potrzebujesz przecinka. Jeśli imiesłów jest niezbędny do zrozumienia, jak wykonywana jest czynność – przecinka nie ma.</p>
+                </div>
+
+                <div class="korekta">
+                    <span class="korekta-title">Ważna korekta:</span>
+                    <p>Nie należy zapamiętywać bezwzględnej zasady „zawsze przecinek przy każdym imiesłowie przysłówkowym”. Poprawniejsza zasada brzmi:</p>
+                    <p><strong>Imiesłowowy równoważnik zdania oddzielamy przecinkiem, gdy pełni funkcję dodatkowej informacji w zdaniu.</strong></p>
+                    <p>W typowych zadaniach egzaminacyjnych bezpieczne są konstrukcje takie jak <em>„Idąc do szkoły, spotkałem kolegę”</em>.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-podmiot">
+                <h2>13. Zasada zgodności podmiotu</h2>
+                <div class="card card-trap">
+                    <span class="card-label">Częsty błąd na egzaminie!</span>
+                </div>
+                <p><strong>Podmiot czynności wyrażonej imiesłowem przysłówkowym powinien być taki sam jak podmiot czynności wyrażonej orzeczeniem.</strong></p>
+
+                <div class="card card-correct">
+                    <span class="card-label">Zdanie poprawne</span>
+                    <p><em>Idąc do szkoły, <strong>spotkałem</strong> kolegę.</em></p>
+                    <p>To ja szedłem do szkoły i to ja spotkałem kolegę.</p>
+                </div>
+
+                <div class="card card-error">
+                    <span class="card-label">Zdanie błędne</span>
+                    <p><span class="error-text">Idąc do szkoły, <strong>zaczął padać deszcz</strong>.</span></p>
+                    <p>Deszcz nie może iść do szkoły. Imiesłów „idąc” nie ma właściwego wykonawcy.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Poprawione wersje</span>
+                    <p><em>Kiedy szedłem do szkoły, zaczął padać deszcz.</em></p>
+                    <p>albo:</p>
+                    <p><em>Idąc do szkoły, zauważyłem, że zaczął padać deszcz.</em></p>
+                </div>
+
+                <div class="blad-box">
+                    <span class="blad-title">❌ Błędy składniowe z imiesłowami – przykłady</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Błędne zdanie</th><th>Poprawione zdanie</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="error-text">Czytając książkę, zapaliła się lampa.</span></td>
+                                    <td><span class="correct-text">Kiedy czytał książkę, zapaliła się lampa.</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="error-text">Wracając do domu, zgasły światła.</span></td>
+                                    <td><span class="correct-text">Kiedy wracałem do domu, zgasły światła.</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="error-text">Przeczytawszy gazetę, zepsuł się telewizor.</span></td>
+                                    <td><span class="correct-text">Kiedy przeczytał gazetę, zepsuł się telewizor.</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>Zasada:</strong> Upewnij się, że wykonawca czynności z imiesłowu jest <strong>tym samym</strong> co wykonawca czynności z orzeczenia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 6 – EGZAMIN – JAK TO WYGLĄDA? (NOWA SEKCJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part6">
+            <div class="part-heading"><span class="part-num">Część 6</span> · Egzamin – jak to wygląda?</div>
+
+            <div class="section" data-level="exam" id="sec-egzamin">
+                <h2>14. Jak to wygląda na egzaminie?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Zadania z lektur IV–VI na E8</span>
+                    <ul>
+                        <li><strong>W części I arkusza</strong> (zadania zamknięte i otwarte) – pytania dotyczą <strong>wyłącznie fragmentu</strong> zamieszczonego w arkuszu. Sprawdzają: rozumienie tekstu, wskazywanie postaw bohaterów, rozpoznawanie środków językowych.</li>
+                        <li><strong>W wypracowaniu</strong> – lektury IV–VI to doskonały materiał do tematów o:
+                            <ul>
+                                <li><strong>przemianie</strong> (Edmund, Gereb, Bilbo),</li>
+                                <li><strong>poświęceniu</strong> (Aslan, Nemeczek),</li>
+                                <li><strong>odwadze</strong> (Bilbo, Nemeczek, Piotr),</li>
+                                <li><strong>przyjaźni i lojalności</strong> (chłopcy z Placu Broni, rodzeństwo Pevensie),</li>
+                                <li><strong>chciwości i pokusie</strong> (Edmund, Thorin, Gereb).</li>
+                            </ul>
+                        </li>
+                        <li><strong>W zadaniach gramatycznych</strong> – możesz spotkać się z rozpoznawaniem imiesłowów, interpunkcją (przecinek przed imiesłowem przysłówkowym) oraz pisownią „nie” z imiesłowami.</li>
+                    </ul>
+                    <div class="korekta" style="margin-top:6px;">
+                        <span class="korekta-title">Pamiętaj!</span>
+                        <p>Lista lektur obowiązkowych znajduje się <strong>na początku arkusza</strong> – jeśli zapomnisz tytułu lub autora, możesz tam sprawdzić.</p>
+                        <p>Nie musisz znać całej książki na pamięć – w części I sprawdzana jest umiejętność pracy z <strong>fragmentem</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-pulapki">
+                <h2>15. Najczęstsze pułapki egzaminacyjne</h2>
+                <div class="card card-trap">
+                    <span class="card-label">PUŁAPKI – sprawdź, czy ich nie wpadniesz!</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Pułapka</th><th>Błąd</th><th>Poprawnie</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Aslan – bohater dynamiczny</strong></td><td class="error-text">Aslan przeszedł przemianę.</td><td class="poprawka-col"><strong>Aslan to symbol poświęcenia, nie bohater dynamiczny.</strong> Nie zmienia się wewnętrznie – zmienia innych.</td></tr>
+                                <tr><td><strong>Bilbo i Smaug</strong></td><td class="error-text">Bilbo zabił Smauga.</td><td class="poprawka-col">Bilbo odkrył słaby punkt Smauga, a smoka zabił <strong>Bard</strong>.</td></tr>
+                                <tr><td><strong>Gereb – przemiana</strong></td><td class="error-text">Gereb został dojrzałym przywódcą i poświęcił się.</td><td class="poprawka-col">Gereb okazał <strong>skruchę</strong>, wrócił do grupy i próbował naprawić zdradę. To <strong>nie jest pełna przemiana</strong>.</td></tr>
+                                <tr><td><strong>Znajomość lektury</strong></td><td class="error-text">Na egzaminie sprawdzają całą treść książki.</td><td class="poprawka-col">W części I – <strong>tylko fragment</strong> z arkusza. W wypracowaniu – możesz się odwoływać do całej lektury.</td></tr>
+                                <tr><td><strong>Mylenie imiesłowów</strong></td><td class="error-text">„czytając” jako przymiotnik</td><td class="poprawka-col">„czytający” – przymiotnik, „czytając” – przysłówek</td></tr>
+                                <tr><td><strong>„nie” z imiesłowem przymiotnikowym</strong></td><td class="error-text">„nie czytający”</td><td class="poprawka-col">„nieczytający” (łącznie)</td></tr>
+                                <tr><td><strong>„nie” z imiesłowem przysłówkowym</strong></td><td class="error-text">„nieczytając”</td><td class="poprawka-col">„nie czytając” (rozdzielnie)</td></tr>
+                                <tr><td><strong>Brak przecinka</strong></td><td class="error-text">„Idąc do szkoły spotkał kolegę.”</td><td class="poprawka-col">„Idąc do szkoły, spotkał kolegę.”</td></tr>
+                                <tr><td><strong>Zgodność podmiotu</strong></td><td class="error-text">„Idąc do szkoły, zaczął padać deszcz.”</td><td class="poprawka-col">„Kiedy szedłem do szkoły, zaczął padać deszcz.”</td></tr>
+                                <tr><td><strong>Nemeczek vs Gereb</strong></td><td class="error-text">Gereb poświęcił życie za plac.</td><td class="poprawka-col">To <strong>Nemeczek</strong> poświęcił życie. Gereb okazał skruchę.</td></tr>
+                                <tr><td><strong>Arcyklejnot</strong></td><td class="error-text">Arcyklejnot zdobył Thorin.</td><td class="poprawka-col">Bilbo przekazał Arcyklejnot Bardowi i elfom, by zapobiec wojnie.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 7 – ĆWICZENIA INTERAKTYWNE
+        ============================================================ -->
+        <section class="section" data-level="training" id="part7">
+            <div class="part-heading"><span class="part-num">Część 7</span> · Ćwiczenia interaktywne</div>
+
+            <div class="hide-all-wrap">
+                <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+                <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cw-tworz">
+                <h2>16. Ćwiczenie – twórz imiesłowy</h2>
+                <div class="exercise">
+                    <div class="ex-title">Utwórz cztery formy imiesłowowe od podanego czasownika. <span class="level-badge level-training">TRENING</span></div>
+                    <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:8px;">Wpisz: im. przym. czynny, im. przym. bierny, im. przys. współczesny, im. przys. uprzedni.</p>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">czytać →</span>
+                        <input type="text" id="tworz1a" placeholder="czynny..." style="width:130px;" />
+                        <input type="text" id="tworz1b" placeholder="bierny..." style="width:130px;" />
+                        <input type="text" id="tworz1c" placeholder="współcz..." style="width:130px;" />
+                        <input type="text" id="tworz1d" placeholder="uprzedni..." style="width:130px;" />
+                        <span class="result-icon" id="tworzIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">pisać →</span>
+                        <input type="text" id="tworz2a" placeholder="czynny..." style="width:130px;" />
+                        <input type="text" id="tworz2b" placeholder="bierny..." style="width:130px;" />
+                        <input type="text" id="tworz2c" placeholder="współcz..." style="width:130px;" />
+                        <input type="text" id="tworz2d" placeholder="uprzedni..." style="width:130px;" />
+                        <span class="result-icon" id="tworzIcon2"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkTworz()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="tworzResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cwiczenia">
+                <h2>17. Ćwiczenie – rozpoznaj imiesłów</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ rodzaj imiesłowu. <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. „czytający”</span>
+                        <select id="im1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przym-czynny">przymiotnikowy czynny</option>
+                            <option value="przym-bierny">przymiotnikowy bierny</option>
+                            <option value="przys-wspol">przysłówkowy współczesny</option>
+                            <option value="przys-uprzed">przysłówkowy uprzedni</option>
+                        </select>
+                        <span class="result-icon" id="imIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. „napisawszy”</span>
+                        <select id="im2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przym-czynny">przymiotnikowy czynny</option>
+                            <option value="przym-bierny">przymiotnikowy bierny</option>
+                            <option value="przys-wspol">przysłówkowy współczesny</option>
+                            <option value="przys-uprzed">przysłówkowy uprzedni</option>
+                        </select>
+                        <span class="result-icon" id="imIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. „przeczytany”</span>
+                        <select id="im3" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przym-czynny">przymiotnikowy czynny</option>
+                            <option value="przym-bierny">przymiotnikowy bierny</option>
+                            <option value="przys-wspol">przysłówkowy współczesny</option>
+                            <option value="przys-uprzed">przysłówkowy uprzedni</option>
+                        </select>
+                        <span class="result-icon" id="imIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. „grając”</span>
+                        <select id="im4" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przym-czynny">przymiotnikowy czynny</option>
+                            <option value="przym-bierny">przymiotnikowy bierny</option>
+                            <option value="przys-wspol">przysłówkowy współczesny</option>
+                            <option value="przys-uprzed">przysłówkowy uprzedni</option>
+                        </select>
+                        <span class="result-icon" id="imIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkImieslowy()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="imResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-nie">
+                <h2>18. Ćwiczenie – „nie” z imiesłowami</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wpisz poprawną formę z „nie” (łącznie lub rozdzielnie). <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. (nie + czytający – przym.) _____ uczeń nie zdał egzaminu.</span>
+                        <input type="text" id="nie1" placeholder="wpisz..." />
+                        <span class="result-icon" id="nieIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. (nie + przeczytawszy – przys.) _____ książki, nie mógł odpowiedzieć.</span>
+                        <input type="text" id="nie2" placeholder="wpisz..." />
+                        <span class="result-icon" id="nieIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. (nie + napisany – przym.) List _____ przez nikogo leżał na stole.</span>
+                        <input type="text" id="nie3" placeholder="wpisz..." />
+                        <span class="result-icon" id="nieIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. (nie + pisząc – przys.) _____ listu, nie zauważył czasu.</span>
+                        <input type="text" id="nie4" placeholder="wpisz..." />
+                        <span class="result-icon" id="nieIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkNie()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="nieResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-interpunkcja">
+                <h2>19. Ćwiczenie – interpunkcja z imiesłowem przysłówkowym</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wstaw przecinek tam, gdzie jest potrzebny. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Idąc do szkoły spotkał kolegę.</span>
+                        <input type="text" id="inter1" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="interIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Przeczytawszy książkę poszedł spać.</span>
+                        <input type="text" id="inter2" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="interIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Śmiejąc się głośno opowiedział dowcip.</span>
+                        <input type="text" id="inter3" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="interIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. Siedział patrząc przez okno.</span>
+                        <input type="text" id="inter4" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="interIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkInterpunkcja()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="interResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-podmiot">
+                <h2>20. Ćwiczenie – zgodność podmiotu</h2>
+                <div class="exercise">
+                    <div class="ex-title">Popraw zdania, w których naruszona jest zasada zgodności podmiotu. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Idąc do szkoły, zaczął padać deszcz.</span>
+                        <input type="text" id="podmiot1" placeholder="popraw..." style="width:280px;" />
+                        <span class="result-icon" id="podmiotIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Czytając książkę, zapaliła się lampa.</span>
+                        <input type="text" id="podmiot2" placeholder="popraw..." style="width:280px;" />
+                        <span class="result-icon" id="podmiotIcon2"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkPodmiot()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="podmiotResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-ex-motywy">
+                <h2>21. Ćwiczenie – dopasuj motyw do lektury</h2>
+                <div class="exercise">
+                    <div class="ex-title">Przypisz podany motyw do właściwej lektury. <span class="level-badge level-training">TRENING</span></div>
+                    <div class="motyw-dopasowanie">
+                        <span class="motyw-label">1. „mała ojczyzna”</span>
+                        <select id="motyw1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;min-width:160px;">
+                            <option value="">— wybierz —</option>
+                            <option value="narnia">Narnia</option>
+                            <option value="hobbit">Hobbit</option>
+                            <option value="plac">Chłopcy z Placu Broni</option>
+                        </select>
+                        <span class="result-icon" id="motywIcon1"></span>
+                    </div>
+                    <div class="motyw-dopasowanie">
+                        <span class="motyw-label">2. „ofiara za winowajcę”</span>
+                        <select id="motyw2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;min-width:160px;">
+                            <option value="">— wybierz —</option>
+                            <option value="narnia">Narnia</option>
+                            <option value="hobbit">Hobbit</option>
+                            <option value="plac">Chłopcy z Placu Broni</option>
+                        </select>
+                        <span class="result-icon" id="motywIcon2"></span>
+                    </div>
+                    <div class="motyw-dopasowanie">
+                        <span class="motyw-label">3. „spryt kontra siła”</span>
+                        <select id="motyw3" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;min-width:160px;">
+                            <option value="">— wybierz —</option>
+                            <option value="narnia">Narnia</option>
+                            <option value="hobbit">Hobbit</option>
+                            <option value="plac">Chłopcy z Placu Broni</option>
+                        </select>
+                        <span class="result-icon" id="motywIcon3"></span>
+                    </div>
+                    <div class="motyw-dopasowanie">
+                        <span class="motyw-label">4. „zdrada i skrucha”</span>
+                        <select id="motyw4" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;min-width:160px;">
+                            <option value="">— wybierz —</option>
+                            <option value="narnia">Narnia</option>
+                            <option value="hobbit">Hobbit</option>
+                            <option value="plac">Chłopcy z Placu Broni</option>
+                        </select>
+                        <span class="result-icon" id="motywIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkMotywy()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="motywResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 8 – FISZKI
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part8">
+            <div class="part-heading"><span class="part-num">Część 8</span> · Fiszki</div>
+
+            <div class="section" data-level="basic" id="sec-flashcards">
+                <h2>22. Fiszki – najważniejsze pojęcia</h2>
+                <div class="flashcard-grid">
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Imiesłów przymiotnikowy czynny</span>
+                        <span class="back">Odpowiada na pytanie <em>jaki?</em><br />Końcówka: <strong>-ący, -ąca, -ące</strong><br />Przykład: <em>czytający</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Imiesłów przymiotnikowy bierny</span>
+                        <span class="back">Odpowiada na pytanie <em>jaki?</em><br />Końcówki: <strong>-ny, -ty, -ony</strong><br />Przykład: <em>przeczytany</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Imiesłów przysłówkowy współczesny</span>
+                        <span class="back">Odpowiada na pytanie <em>jak?</em><br />Końcówka: <strong>-ąc</strong><br />Przykład: <em>czytając</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Imiesłów przysłówkowy uprzedni</span>
+                        <span class="back">Odpowiada na pytanie <em>kiedy?</em><br />Końcówki: <strong>-wszy, -łszy</strong><br />Przykład: <em>przeczytawszy</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">„nie” z imiesłowami przymiotnikowymi</span>
+                        <span class="back"><strong>ŁĄCZNIE</strong><br />Przykład: <em>nieczytający, nieprzeczytany</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">„nie” z imiesłowami przysłówkowymi</span>
+                        <span class="back"><strong>ROZDZIELNIE</strong><br />Przykład: <em>nie czytając, nie przeczytawszy</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Przecinek przed imiesłowem przysłówkowym</span>
+                        <span class="back">Imiesłowowy równoważnik zdania oddzielamy przecinkiem, gdy pełni funkcję <strong>dodatkowej informacji</strong>.<br />Przykład: <em>Idąc do szkoły, spotkał kolegę.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zasada zgodności podmiotu</span>
+                        <span class="back">Podmiot imiesłowu przysłówkowego musi być <strong>taki sam</strong> jak podmiot orzeczenia.<br />Błąd: <span class="error-text">Idąc do szkoły, zaczął padać deszcz.</span></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Bohater dynamiczny – definicja</span>
+                        <span class="back">Postać, która w toku utworu przechodzi <strong>wewnętrzną przemianę</strong>.<br />Przykłady: Edmund, Gereb, Bilbo.<br /><strong>Aslan – nie!</strong></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Aslan – symbol</span>
+                        <span class="back"><strong>Nie jest bohaterem dynamicznym</strong>.<br />Jest symbolem <strong>poświęcenia, dobra, miłości i odkupienia</strong>.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Bilbo i Smaug</span>
+                        <span class="back">Bilbo <strong>odkrywa</strong> słaby punkt Smauga, ale smoka zabija <strong>Bard</strong>.<br />Bilbo wygrywa <strong>sprytem, nie mieczem</strong>.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Gereb – przemiana</span>
+                        <span class="back"><strong>Nie staje się przywódcą</strong> ani nie poświęca się jak Nemeczek.<br />Jego przemiana to <strong>skrucha, powrót do grupy i próba naprawienia zdrady</strong>.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Głęboka Magia (Narnia)</span>
+                        <span class="back">Według Głębokiej Magii zdrajca należy do Białej Czarownicy. Aslan oddaje życie za Edmunda, ale Głębsza Magia sprawia, że śmierć traci moc.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Arcyklejnot (Hobbit)</span>
+                        <span class="back">Bilbo przekazuje Arcyklejnot Bardowi i elfom jako kartę przetargową, by zapobiec wojnie. Pokazuje odwagę moralną i odpowiedzialność.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Status lektur IV–VI</span>
+                        <span class="back">Lektury obowiązkowe: <em>Akademia Pana Kleksa</em>, <em>Kajko i Kokosz</em>, <em>Narnia</em>, <em>Chłopcy z Placu Broni</em>, <em>Hobbit</em>.<br />Na egzaminie – zadania z fragmentu, w wypracowaniu – można się odwoływać.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Pułapka – Aslan</span>
+                        <span class="back"><strong>Błąd:</strong> Aslan przeszedł przemianę.<br /><strong>Poprawnie:</strong> Aslan to <strong>symbol</strong> poświęcenia, nie bohater dynamiczny. Nie zmienia się wewnętrznie.</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 9 – TEST KOŃCOWY (MISJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part9">
+            <div class="part-heading"><span class="part-num">Część 9</span> · Test końcowy – MISJA</div>
+
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>23. Misja końcowa</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Zadanie</span>
+                    <p>Bez zaglądania do notatek – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                    <p>Pamiętaj o poprawionych informacjach: Gereb nie jest przywódcą, Bilbo nie zabija Smauga, Aslan to nie bohater dynamiczny.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą lub odpowiedzią. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 10 – PODSUMOWANIE I PUŁAPKI
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part10">
+            <div class="part-heading"><span class="part-num">Część 10</span> · Podsumowanie i pułapki</div>
+
+            <div class="section" data-level="exam" id="sec-podsumowanie">
+                <h2>24. Najważniejsze zasady – ściąga</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">Imiesłowy – podział</span>
+                    <ul>
+                        <li><strong>Przymiotnikowe</strong> (odpowiadają na pytanie <em>jaki?</em>): czynne (-ący) i bierne (-ny/-ty/-ony).</li>
+                        <li><strong>Przysłówkowe</strong> (odpowiadają na pytanie <em>jak?</em> lub <em>kiedy?</em>): współczesne (-ąc) i uprzednie (-wszy/-łszy).</li>
+                    </ul>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">„nie” z imiesłowami</span>
+                    <ul>
+                        <li><strong>Przymiotnikowe → ŁĄCZNIE:</strong> <em>nieczytający, nieprzeczytany</em></li>
+                        <li><strong>Przysłówkowe → ROZDZIELNIE:</strong> <em>nie czytając, nie przeczytawszy</em></li>
+                    </ul>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Interpunkcja</span>
+                    <p>Imiesłowowy równoważnik zdania oddzielamy przecinkiem, gdy pełni funkcję <strong>dodatkowej informacji</strong>.</p>
+                    <p><em>Idąc do szkoły, spotkałem kolegę.</em></p>
+                    <p><strong>Bez przecinka:</strong> <em>Siedział patrząc przez okno.</em> (imiesłów ściśle związany z orzeczeniem)</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Zgodność podmiotu</span>
+                    <p>Podmiot imiesłowu przysłówkowego musi być <strong>taki sam</strong> jak podmiot orzeczenia.</p>
+                    <p><span class="correct-text">Idąc do szkoły, spotkałem kolegę.</span> (ja szedłem i ja spotkałem)</p>
+                    <p><span class="error-text">Idąc do szkoły, zaczął padać deszcz.</span> (deszcz nie może iść do szkoły)</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Bohaterowie dynamiczni – podsumowanie</span>
+                    <ul>
+                        <li><strong>Edmund:</strong> zdrajca → lojalny wojownik (pełna przemiana)</li>
+                        <li><strong>Gereb:</strong> zdrajca → skrucha, powrót do grupy (przemiana niepełna)</li>
+                        <li><strong>Bilbo:</strong> wygodny hobbit → odważny, sprytny podróżnik</li>
+                        <li><strong>Aslan:</strong> <span class="correct-text">NIE jest bohaterem dynamicznym</span> – symbol poświęcenia</li>
+                    </ul>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Haczyki egzaminacyjne</span>
+                    <ul>
+                        <li><strong>Głęboka Magia / Głębsza Magia:</strong> Aslan oddaje życie za Edmunda, ale zmartwychwstaje, bo niewinna ofiara niszczy moc śmierci.</li>
+                        <li><strong>Łańcuch zwycięstwa nad Smaugiem:</strong> Bilbo → krasnoludy → drozd → Bard → Czarna Strzała.</li>
+                        <li><strong>Arcyklejnot:</strong> Bilbo używa go jako karty przetargowej dla pokoju, ryzykując gniew Thorina.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-pulapki">
+                <h2>25. Najczęstsze pułapki egzaminacyjne – powtórzenie</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Pułapka</th><th>Błąd</th><th>Poprawnie</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Aslan – bohater dynamiczny</strong></td><td class="error-text">Aslan przeszedł przemianę.</td><td class="poprawka-col"><strong>Aslan to symbol poświęcenia, nie bohater dynamiczny.</strong></td></tr>
+                            <tr><td><strong>Bilbo i Smaug</strong></td><td class="error-text">Bilbo zabił Smauga.</td><td class="poprawka-col">Bilbo odkrył słaby punkt, a smoka zabił <strong>Bard</strong>.</td></tr>
+                            <tr><td><strong>Gereb – przemiana</strong></td><td class="error-text">Gereb został przywódcą i poświęcił się.</td><td class="poprawka-col">Gereb okazał <strong>skruchę</strong>, wrócił do grupy.</td></tr>
+                            <tr><td><strong>Znajomość lektury</strong></td><td class="error-text">Na egzaminie sprawdzają całą treść.</td><td class="poprawka-col">W części I – <strong>tylko fragment</strong>.</td></tr>
+                            <tr><td><strong>Mylenie imiesłowów</strong></td><td class="error-text">„czytając” jako przymiotnik</td><td class="poprawka-col">„czytający” – przymiotnik, „czytając” – przysłówek</td></tr>
+                            <tr><td><strong>„nie” z imiesłowem przymiotnikowym</strong></td><td class="error-text">„nie czytający”</td><td class="poprawka-col">„nieczytający” (łącznie)</td></tr>
+                            <tr><td><strong>„nie” z imiesłowem przysłówkowym</strong></td><td class="error-text">„nieczytając”</td><td class="poprawka-col">„nie czytając” (rozdzielnie)</td></tr>
+                            <tr><td><strong>Brak przecinka</strong></td><td class="error-text">„Idąc do szkoły spotkał kolegę.”</td><td class="poprawka-col">„Idąc do szkoły, spotkał kolegę.”</td></tr>
+                            <tr><td><strong>Zgodność podmiotu</strong></td><td class="error-text">„Idąc do szkoły, zaczął padać deszcz.”</td><td class="poprawka-col">„Kiedy szedłem do szkoły, zaczął padać deszcz.”</td></tr>
+                            <tr><td><strong>Nemeczek vs Gereb</strong></td><td class="error-text">Gereb poświęcił życie za plac.</td><td class="poprawka-col">To <strong>Nemeczek</strong> poświęcił życie.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-co-umiesz">
+                <h2>26. Co powinieneś umieć po tej lekcji?</h2>
+                <ul>
+                    <li><span class="correct-text">Znam listę lektur obowiązkowych z klas IV–VI.</span></li>
+                    <li><span class="correct-text">Wiem, że w części I arkusza zadania dotyczą <strong>fragmentu</strong>, a w wypracowaniu mogę się odwoływać do całej lektury.</span></li>
+                    <li><span class="correct-text">Rozróżnić imiesłowy przymiotnikowe i przysłówkowe.</span></li>
+                    <li><span class="correct-text">Poprawnie pisać „nie” z imiesłowami.</span></li>
+                    <li><span class="correct-text">Stawiać przecinek przed imiesłowem przysłówkowym (gdy jest dodatkową informacją).</span></li>
+                    <li><span class="correct-text">Stosować zasadę zgodności podmiotu.</span></li>
+                    <li><span class="correct-text">Opisać przemianę Edmunda, Gereba i Bilba (z uwzględnieniem poprawek).</span></li>
+                    <li><span class="correct-text">Wiedzieć, że Aslan to symbol, nie bohater dynamiczny.</span></li>
+                    <li><span class="correct-text">Wiedzieć, że Bilbo odkrył słaby punkt Smauga, ale to Bard go zabił.</span></li>
+                    <li><span class="correct-text">Dopasować motyw do lektury i sceny.</span></li>
+                    <li><span class="correct-text">Stworzyć parę lektur do tematu rozprawki.</span></li>
+                    <li><span class="correct-text">Znać haczyki egzaminacyjne: Głęboka Magia, łańcuch zwycięstwa, Arcyklejnot.</span></li>
+                </ul>
+                <div class="card card-remember">
+                    <span class="card-label">Osiągnąłeś najważniejszy cel lekcji:</span>
+                    <p>Nie tylko znasz teorię – potrafisz ją zastosować w praktyce egzaminacyjnej, unikając najczęstszych błędów.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="topics">
+                <h2>Lista tematów głównych</h2>
+                <p style="color:var(--color-text-muted); font-size:0.9rem;">Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.</p>
+                <ol class="topic-list">
+                    <li><a href="#sec-cel">Cel lekcji i wprowadzenie</a></li>
+                    <li><a href="#sec-test-start">Test wstępny</a></li>
+                    <li><a href="#sec-bohaterowie">Bohaterowie dynamiczni: Edmund, Gereb, Bilbo</a></li>
+                    <li><a href="#sec-sceny">Sceny z Narnii</a></li>
+                    <li><a href="#sec-sceny-hobbit">Sceny z Hobbita</a></li>
+                    <li><a href="#sec-sceny-plac">Sceny z Placu Broni</a></li>
+                    <li><a href="#sec-motywy">Motywy przekrojowe</a></li>
+                    <li><a href="#sec-pary">Pary lektur do rozprawki</a></li>
+                    <li><a href="#sec-imieslowy-teoria">Imiesłowy – teoria</a></li>
+                    <li><a href="#sec-imieslowy-tabela">Podział imiesłowów</a></li>
+                    <li><a href="#sec-nie">Zasada „nie” z imiesłowami</a></li>
+                    <li><a href="#sec-interpunkcja">Interpunkcja z imiesłowami</a></li>
+                    <li><a href="#sec-podmiot">Zasada zgodności podmiotu</a></li>
+                    <li><a href="#sec-egzamin">Egzamin – jak to wygląda</a></li>
+                    <li><a href="#sec-pulapki">Pułapki egzaminacyjne</a></li>
+                    <li><a href="#sec-cwiczenia">Ćwiczenia interaktywne</a></li>
+                    <li><a href="#sec-flashcards">Fiszki</a></li>
+                    <li><a href="#sec-mission">Test końcowy – misja</a></li>
+                    <li><a href="#sec-podsumowanie">Podsumowanie i ściąga</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STOPKA
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>Lekcja 1 – Lektury z klas IV–VI + imiesłowy</strong> &bull; Wersja 3.2 (uzupełniona o status lektur IV–VI, tabelę przekrojową i sekcję egzaminacyjną) &bull; 2026-08-23</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
+            <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ======================================================================
+        //  JAVASCRIPT – SYSTEM INTERAKTYWNY
+        // ======================================================================
+
+        function saveProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            const state = [];
+            checks.forEach(cb => state.push(cb.checked));
+            try {
+                localStorage.setItem('polski_lec1_progress_v4', JSON.stringify(state));
+            } catch (e) { /* ignore */ }
+        }
+
+        function loadProgress() {
+            let saved;
+            try {
+                saved = localStorage.getItem('polski_lec1_progress_v4');
+            } catch (e) { return; }
+            if (!saved) return;
+            let state;
+            try {
+                state = JSON.parse(saved);
+            } catch (e) { return; }
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            checks.forEach((cb, i) => {
+                if (i < state.length) cb.checked = state[i];
+            });
+            updateProgress();
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            try {
+                localStorage.removeItem('polski_lec1_progress_v4');
+            } catch (e) { /* ignore */ }
+            updateProgress();
+        }
+
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? 'Ukryj odpowiedzi' : 'Pokaż odpowiedzi';
+            }
+        }
+
+        function toggleFlashcard(card) {
+            card.classList.toggle('flipped');
+            card.setAttribute('aria-pressed', String(card.classList.contains('flipped')));
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-content.show, .hint-content.show, .explain-content.show').forEach(el => {
+                el.classList.remove('show');
+            });
+        }
+
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            let total = 0,
+                done = 0;
+            checkboxes.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 0;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            const fill = document.getElementById('progressFill');
+            if (fill) fill.style.width = pct + '%';
+            const pctLabel = document.getElementById('progressPercent');
+            if (pctLabel) pctLabel.textContent = pct + '%';
+
+            const statusEl = document.getElementById('progressStatus');
+            if (statusEl) {
+                if (pct === 100) statusEl.textContent = 'Świetnie. Opanowałeś lekcję!';
+                else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze. Dokończ resztę.';
+                else if (pct >= 50) statusEl.textContent = 'Dobrze. Poćwicz jeszcze.';
+                else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+                else statusEl.textContent = 'Zacznij naukę';
+            }
+            updateTasks(pct);
+            saveProgress();
+        }
+
+        function updateTasks(pct) {
+            const tasks = document.querySelectorAll('.today-tasks .task');
+            const thresholds = [10, 25, 45, 65, 85];
+            tasks.forEach((task, i) => {
+                if (pct >= thresholds[i]) task.classList.add('done');
+                else task.classList.remove('done');
+            });
+        }
+
+        let currentView = 'all';
+
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+            if (btn) btn.classList.add('active');
+            applyFilter(view);
+            updateVisibleCount();
+        }
+
+        function applyFilter(view) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const level = sec.dataset.level || 'basic';
+                let show = true;
+                if (view === 'basic') {
+                    show = (level === 'basic' || level === 'training' || level === 'remember');
+                } else if (view === 'exam') {
+                    show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level ===
+                        'difficult' || level === 'remember');
+                }
+                if (view === 'all') show = true;
+                sec.classList.toggle('hidden-by-filter', !show);
+            });
+        }
+
+        function updateVisibleCount() {
+            const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+            const total = document.querySelectorAll('.section').length;
+            const vEl = document.getElementById('visibleCount');
+            const tEl = document.getElementById('totalCount');
+            if (vEl) vEl.textContent = visible;
+            if (tEl) tEl.textContent = total;
+        }
+
+        function checkBohaterowie() {
+            const answers = ['edmund', 'bilbo', 'gereb', 'aslan'];
+            const icons = ['bohaterIcon1', 'bohaterIcon2', 'bohaterIcon3', 'bohaterIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const sel = document.getElementById('bohater' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('bohaterResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Świetnie!' : 'Sprawdź notatki – zwróć uwagę na poprawione informacje.'}</span>`;
+            }
+        }
+
+        function checkPary() {
+            const answers = ['edmund+scrooge', 'nemeczek+bilbo', 'aslan+...'];
+            const icons = ['paraIcon1', 'paraIcon2', 'paraIcon3'];
+            let correct = 0;
+            for (let i = 1; i <= 3; i++) {
+                const sel = document.getElementById('para' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('paraResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 3 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/3. ${correct === 3 ? 'Dobrze!' : 'Wróć do banku par lektur.'}</span>`;
+            }
+        }
+
+        function checkImieslowy() {
+            const answers = ['przym-czynny', 'przys-uprzed', 'przym-bierny', 'przys-wspol'];
+            const icons = ['imIcon1', 'imIcon2', 'imIcon3', 'imIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const sel = document.getElementById('im' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('imResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Świetnie rozpoznajesz imiesłowy!' : 'Sprawdź tabelę imiesłowów.'}</span>`;
+            }
+        }
+
+        function checkNie() {
+            const answers = ['nieczytający', 'nie przeczytawszy', 'nienapisany', 'nie pisząc'];
+            const icons = ['nieIcon1', 'nieIcon2', 'nieIcon3', 'nieIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const inp = document.getElementById('nie' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim().toLowerCase();
+                const isOk = val === answers[i - 1].toLowerCase();
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('nieResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Świetnie opanowałeś zasadę "nie"!' : 'Przypomnij: przymiotnikowe łącznie, przysłówkowe rozdzielnie.'}</span>`;
+            }
+        }
+
+        function checkInterpunkcja() {
+            const answers = ['Idąc do szkoły, spotkał kolegę.', 'Przeczytawszy książkę, poszedł spać.',
+                'Śmiejąc się głośno, opowiedział dowcip.', 'Siedział, patrząc przez okno.'
+            ];
+            const icons = ['interIcon1', 'interIcon2', 'interIcon3', 'interIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const inp = document.getElementById('inter' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim();
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('interResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Przecinek przed imiesłowem przysłówkowym opanowany!' : 'Pamiętaj: imiesłowowy równoważnik zdania oddzielamy przecinkiem, gdy pełni funkcję dodatkowej informacji.'}</span>`;
+            }
+        }
+
+        function checkPodmiot() {
+            const answers = ['Kiedy szedłem do szkoły, zaczął padać deszcz.', 'Kiedy czytałem książkę, zapaliła się lampa.'];
+            const icons = ['podmiotIcon1', 'podmiotIcon2'];
+            let correct = 0;
+            for (let i = 1; i <= 2; i++) {
+                const inp = document.getElementById('podmiot' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim();
+                const isOk = (i === 1 && (val.includes('szedłem') || val.includes('szłam') || val.includes('szedł') || val
+                        .includes('szła'))) ||
+                    (i === 2 && (val.includes('czytałem') || val.includes('czytałam') || val.includes('czytał') || val
+                        .includes('czytała')));
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('podmiotResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 2 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/2. ${correct === 2 ? 'Zasada zgodności podmiotu opanowana!' : 'Pamiętaj: podmiot imiesłowu przysłówkowego musi być taki sam jak podmiot orzeczenia.'}</span>`;
+            }
+        }
+
+        function checkMotywy() {
+            const answers = ['plac', 'narnia', 'hobbit', 'plac'];
+            const icons = ['motywIcon1', 'motywIcon2', 'motywIcon3', 'motywIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const sel = document.getElementById('motyw' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('motywResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Dobrze dopasowujesz motywy do lektur!' : 'Sprawdź sekcję "Sceny i motywy".'}</span>`;
+            }
+        }
+
+        function checkTworz() {
+            const answers = [
+                ['czytający', 'czytany', 'czytając', 'przeczytawszy'],
+                ['piszący', 'pisany', 'pisząc', 'napisawszy']
+            ];
+            const icons = ['tworzIcon1', 'tworzIcon2'];
+            let correct = 0;
+            for (let i = 1; i <= 2; i++) {
+                let allOk = true;
+                for (let j = 0; j < 4; j++) {
+                    const inp = document.getElementById('tworz' + i + String.fromCharCode(97 + j));
+                    if (!inp) { allOk = false; continue; }
+                    const val = inp.value.trim().toLowerCase();
+                    const isOk = val === answers[i - 1][j].toLowerCase();
+                    inp.classList.toggle('correct', isOk);
+                    inp.classList.toggle('wrong', !isOk);
+                    if (!isOk) allOk = false;
+                }
+                const icon = document.getElementById(icons[i - 1]);
+                if (icon) {
+                    if (allOk) {
+                        icon.textContent = '✓';
+                        icon.style.color = '#2d8f5e';
+                        correct++;
+                    } else {
+                        icon.textContent = '✗';
+                        icon.style.color = '#dc3545';
+                    }
+                }
+            }
+            const res = document.getElementById('tworzResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 2 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/2. ${correct === 2 ? 'Świetnie tworzysz imiesłowy!' : 'Sprawdź przykłady w teorii.'}</span>`;
+            }
+        }
+
+        const missionData = [
+            { q: '1. Utwórz imiesłów przymiotnikowy czynny od czasownika „czytać”:', correct: 'czytający' },
+            { q: '2. Utwórz imiesłów przysłówkowy uprzedni od „przeczytać”:', correct: 'przeczytawszy' },
+            { q: '3. Uzupełnij: „_____ książkę, poszedł spać.” (im. przys. uprzedni od „przeczytać”)', correct: 'Przeczytawszy' },
+            { q: '4. Kto jest bohaterem dynamicznym w „Narnii”?', correct: 'Edmund' },
+            { q: '5. Jaki motyw łączymy z Aslanem?', correct: 'poświęcenie' },
+            { q: '6. „nie” z imiesłowami przymiotnikowymi piszemy ……… (łącznie/rozdzielnie)', correct: 'łącznie' },
+            { q: '7. „nie” z imiesłowami przysłówkowymi piszemy ……… (łącznie/rozdzielnie)', correct: 'rozdzielnie' },
+            { q: '8. Popraw interpunkcję: „Idąc do szkoły spotkał kolegę.”', correct: 'Idąc do szkoły, spotkał kolegę.' },
+            { q: '9. Kto odkrył słaby punkt Smauga – Bilbo czy Bard?', correct: 'Bilbo' },
+            { q: '10. Kto zabił Smauga – Bilbo czy Bard?', correct: 'Bard' },
+            { q: '11. Czy Aslan jest bohaterem dynamicznym? (tak/nie)', correct: 'nie' },
+            { q: '12. Jaka jest główna cecha przemiany Gereba?', correct: 'skrucha' },
+            { q: '13. Co według Głębokiej Magii należało do Białej Czarownicy?', correct: 'zdrajca' },
+            { q: '14. Komu Bilbo przekazał Arcyklejnot?', correct: 'Bard' },
+        ];
+
+        function initMission() {
+            const container = document.getElementById('missionQuestions');
+            if (!container) return;
+            container.innerHTML = '';
+            missionData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'fitb-row';
+                div.innerHTML = `
+                        <span style="font-weight:500;">${item.q}</span>
+                        <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:180px;" />
+                        <span class="result-icon" id="missionIcon${idx}"></span>
+                    `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkMission() {
+            let correct = 0;
+            const total = missionData.length;
+            const mistakes = [];
+            missionData.forEach((item, idx) => {
+                const input = document.getElementById('missionInput' + idx);
+                const icon = document.getElementById('missionIcon' + idx);
+                if (!input || !icon) return;
+                const val = input.value.trim().toLowerCase();
+                const isOk = val === item.correct.toLowerCase();
+                input.classList.toggle('correct', isOk);
+                input.classList.toggle('wrong', !isOk);
+                if (isOk) {
+                    icon.textContent = '✓';
+                    icon.style.color = '#2d8f5e';
+                    correct++;
+                } else {
+                    icon.textContent = '✗';
+                    icon.style.color = '#dc3545';
+                    mistakes.push(`${idx + 1}. (poprawnie: „${item.correct}”)`);
+                }
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (!resultDiv) return;
+            resultDiv.style.display = 'block';
+            const pct = Math.round((correct / total) * 100);
+            let msg = '',
+                cls = '';
+            if (pct === 100) { msg = 'Imiesłowy, motywy i haczyki egzaminacyjne opanowane!';
+                cls = 'perfect'; } else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane pułapki.';
+                cls = 'good'; } else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.';
+                cls = 'ok'; } else { msg = 'Powtórz podstawy imiesłowów, bohaterów i haczyki, a następnie rozwiąż test jeszcze raz.';
+                cls = 'fail'; }
+            resultDiv.className = 'mission-result ' + cls;
+            resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+                (mistakes.length ? `<br /><span class="text-sm">Popraw odpowiedzi: ${mistakes.join('; ')}</span>` : '');
+        }
+
+        function resetMission() {
+            document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'wrong');
+            });
+            document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (resultDiv) resultDiv.style.display = 'none';
+        }
+
+        function mmToggleFocus() {
+            const active = document.body.classList.toggle('mm-focus');
+            const b = document.getElementById('mmFocusBtn');
+            if (b) b.textContent = active ? 'Wyłącz skupienie' : 'Tryb skupienia';
+            try {
+                localStorage.setItem('polski_lec1_focus_v4', active ? '1' : '0');
+            } catch (e) { /* ignore */ }
+        }
+
+        function mmReveal(btn, text) {
+            const out = btn.querySelector('.mm-answer');
+            if (!out) return;
+            const open = out.textContent.trim() !== '';
+            out.textContent = open ? '' : 'Odpowiedź: ' + text;
+        }
+
+        function mmUpdateSection() {
+            const sections = [...document.querySelectorAll('.section[id]')];
+            if (!sections.length) return;
+            const y = window.scrollY + 150;
+            let cur = sections[0];
+            sections.forEach(el => {
+                if (el.offsetTop <= y) cur = el;
+            });
+            sections.forEach(el => el.classList.toggle('mm-current-section', el === cur));
+            const h = cur.querySelector('h2, h3');
+            const n = document.getElementById('mmSectionName');
+            if (h && n) n.textContent = 'Lekcja 1 · ' + h.textContent.trim();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            setView('all');
+            initMission();
+            try {
+                if (localStorage.getItem('polski_lec1_focus_v4') === '1') {
+                    document.body.classList.add('mm-focus');
+                    const b = document.getElementById('mmFocusBtn');
+                    if (b) b.textContent = 'Wyłącz skupienie';
+                }
+            } catch (e) { /* ignore */ }
+            mmUpdateSection();
+            addEventListener('scroll', mmUpdateSection, { passive: true });
+            addEventListener('resize', mmUpdateSection);
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', updateProgress);
+            });
+        });
+    </script>
+
+</body>
+</html>

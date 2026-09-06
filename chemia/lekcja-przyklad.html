@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemia – kurs dla ambitnych (spis lekcji)</title>
+    <style>
+        /* ================================================================
+           SYSTEM WIZUALNY – spójny z AL 1 FINAL
+           ================================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== KOLORY ===== */
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            color: white;
+            padding: 2.4rem 2.5rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(15, 23, 42, 0.20);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.2rem;
+        }
+
+        .header p {
+            font-size: 1.05rem;
+            opacity: 0.85;
+            max-width: 600px;
+        }
+
+        .header .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(4px);
+            padding: 0.25rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            margin-top: 0.6rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* ===== STATYSTYKI ===== */
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e9edf4;
+            flex: 1 1 auto;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .stat-card .label {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        /* ===== BLOKI ===== */
+        .block {
+            margin-bottom: 2.5rem;
+        }
+
+        .block-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .block-sub {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #cbd5e1;
+            padding-left: 1rem;
+        }
+
+        .block-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        /* ===== KARTA LEKCJI (w stylu AL 1) ===== */
+        .lesson-card {
+            background: white;
+            border-radius: 14px;
+            padding: 1.1rem 1.4rem;
+            border: 1px solid #e9edf4;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-card);
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-3px);
+            border-color: #b9c7e0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .lesson-card .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.3rem;
+        }
+
+        .lesson-card .num {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #94a3b8;
+            background: #f1f4f9;
+            padding: 0.05rem 0.7rem;
+            border-radius: 40px;
+            letter-spacing: 0.3px;
+        }
+
+        .lesson-card .name {
+            font-weight: 600;
+            font-size: 1.0rem;
+            margin: 0.2rem 0 0.1rem 0;
+            color: #0a2540;
+        }
+
+        .lesson-card .desc {
+            font-size: 0.85rem;
+            color: #475569;
+            flex: 1;
+            margin-top: 0.1rem;
+        }
+
+        .lesson-card .topics {
+            font-size: 0.72rem;
+            color: #64748b;
+            margin-top: 0.5rem;
+            border-top: 1px solid #f1f4f9;
+            padding-top: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem 0.5rem;
+        }
+
+        .lesson-card .topics span {
+            background: #f8fafc;
+            padding: 0.05rem 0.6rem;
+            border-radius: 20px;
+        }
+
+        /* ===== LEVEL BADGE (z AL 1) ===== */
+        .level-badge {
+            display: inline-block;
+            font-size: 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+
+        .level-writing {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+
+        .level-difficult {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        .level-olimp {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        /* ===== TAGI ===== */
+        .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+            background: #e2e8f0;
+        }
+
+        .tag.bhp {
+            background: #fce4ec;
+            color: #9a1f3c;
+        }
+        .tag.mieszaniny {
+            background: #e0f7fa;
+            color: #00695c;
+        }
+        .tag.uklad {
+            background: #e8eaf6;
+            color: #283593;
+        }
+        .tag.atom {
+            background: #f3e5f5;
+            color: #4a148c;
+        }
+        .tag.elektrony {
+            background: #e0f2f1;
+            color: #004d40;
+        }
+        .tag.wiazania {
+            background: #fff3e0;
+            color: #bf360c;
+        }
+        .tag.reakcje {
+            background: #fce4ec;
+            color: #880e4f;
+        }
+        .tag.gazy {
+            background: #e1f5fe;
+            color: #01579b;
+        }
+        .tag.co2 {
+            background: #e0f7fa;
+            color: #006064;
+        }
+        .tag.roztwory {
+            background: #e8f5e9;
+            color: #1b5e20;
+        }
+        .tag.kwasy {
+            background: #fce4ec;
+            color: #b71c1c;
+        }
+        .tag.diagnostyka {
+            background: #f5f5f5;
+            color: #424242;
+        }
+        .tag.wodorotlenki {
+            background: #e3f2fd;
+            color: #0d47a1;
+        }
+        .tag.sole {
+            background: #f3e5f5;
+            color: #4a148c;
+        }
+        .tag.stechiometria {
+            background: #e8f5e9;
+            color: #1b5e20;
+        }
+        .tag.weglowodory {
+            background: #fff8e1;
+            color: #bf360c;
+        }
+        .tag.przemysl {
+            background: #e0f7fa;
+            color: #00695c;
+        }
+        .tag.alkohole {
+            background: #fce4ec;
+            color: #880e4f;
+        }
+        .tag.kwasy_org {
+            background: #fce4ec;
+            color: #b71c1c;
+        }
+        .tag.estry {
+            background: #f3e5f5;
+            color: #4a148c;
+        }
+        .tag.biochemia {
+            background: #e8f5e9;
+            color: #1b5e20;
+        }
+        .tag.obliczenia {
+            background: #e0f7fa;
+            color: #01579b;
+        }
+        .tag.redoks {
+            background: #fce4ec;
+            color: #9a1f3c;
+        }
+        .tag.doswiadczenia {
+            background: #e0f2f1;
+            color: #004d40;
+        }
+        .tag.srodowisko {
+            background: #e8f5e9;
+            color: #1b5e20;
+        }
+        .tag.olimp {
+            background: #fde68a;
+            color: #78350f;
+        }
+        .tag.powtorka {
+            background: #f5f5f5;
+            color: #424242;
+        }
+        .tag.kinetyka {
+            background: #e3f2fd;
+            color: #0d47a1;
+        }
+        .tag.izomeria {
+            background: #fff3e0;
+            color: #bf360c;
+        }
+        .tag.analiza {
+            background: #f3e5f5;
+            color: #4a148c;
+        }
+        .tag.zadania {
+            background: #e8eaf6;
+            color: #283593;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            margin-top: 2.5rem;
+            padding-top: 1.2rem;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 700px) {
+            .container {
+                padding: 12px 10px;
+            }
+            .header {
+                padding: 1.6rem 1.2rem;
+            }
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            .header p {
+                font-size: 0.95rem;
+            }
+            .block-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats {
+                flex-wrap: wrap;
+            }
+            .stat-card {
+                flex: 1 1 45%;
+                min-width: 70px;
+                padding: 0.5rem 0.8rem;
+            }
+            .stat-card .number {
+                font-size: 1.3rem;
+            }
+            .lesson-card {
+                padding: 0.9rem 1.0rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0.3in;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+            .header {
+                background: #0f172a !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .lesson-card:hover {
+                transform: none;
+            }
+            .stats .stat-card {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <header class="header">
+            <h1>Chemia – kurs dla ambitnych</h1>
+            <p>Pełny program od podstaw do poziomu konkursowego.<br>36 lekcji podzielonych na 3 bloki tematyczne.</p>
+            <div class="badge">36 lekcji · 3 bloki · poziom: klasa 7–8 + olimpiada</div>
+        </header>
+
+        <!-- ===== STATYSTYKI ===== -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number">36</div>
+                <div class="label">lekcji tygodniowych</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">3</div>
+                <div class="label">bloki tematyczne</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">12</div>
+                <div class="label">lekcji – fundamenty</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">16</div>
+                <div class="label">lekcji – klasa 8 + rozszerzenia</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">8</div>
+                <div class="label">lekcji – przygotowanie olimpijskie</div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- BLOK A – Powtórka i fundamenty klasy 7 -->
+        <section class="block block-a">
+            <div class="block-title">Blok A – Powtórka i fundamenty klasy 7</div>
+            <div class="block-sub">12 lekcji – bezpieczeństwo, budowa materii, wiązania, reakcje, woda, kwasy</div>
+
+            <div class="block-grid">
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 1</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Bezpieczeństwo + substancje i ich właściwości</div>
+                    <div class="desc">Zasady BHP, piktogramy, właściwości fizyczne i chemiczne, gęstość, stany skupienia.</div>
+                    <div class="topics"><span>piktogramy</span><span>gęstość</span><span>stany skupienia</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 2</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Mieszaniny i przemiany</div>
+                    <div class="desc">Mieszaniny jednorodne i niejednorodne, metody rozdzielania, zjawisko fizyczne vs reakcja chemiczna.</div>
+                    <div class="topics"><span>rozdzielanie</span><span>sączenie</span><span>destylacja</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 3</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Pierwiastki, związki, metale i niemetale</div>
+                    <div class="desc">Definicje, właściwości metali i niemetali, odczytywanie informacji z układu okresowego.</div>
+                    <div class="topics"><span>metale</span><span>niemetale</span><span>układ okresowy</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 4</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Budowa atomu</div>
+                    <div class="desc">Proton, neutron, elektron, liczba atomowa i masowa, izotopy, powłoki elektronowe.</div>
+                    <div class="topics"><span>protony</span><span>neutrony</span><span>elektrony</span><span>izotopy</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 5</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Układ okresowy i elektrony walencyjne</div>
+                    <div class="desc">Grupy i okresy, liczba elektronów walencyjnych, przewidywanie właściwości.</div>
+                    <div class="topics"><span>grupy</span><span>okresy</span><span>walencyjne</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 6</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Wiązania chemiczne i wartościowość</div>
+                    <div class="desc">Wiązanie kowalencyjne i jonowe, wartościowość, wzory sumaryczne i strukturalne, nazewnictwo.</div>
+                    <div class="topics"><span>kowalencyjne</span><span>jonowe</span><span>wartościowość</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 7</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Równania reakcji i prawo zachowania masy</div>
+                    <div class="desc">Zapis równań, prawo zachowania masy, typy reakcji (synteza, analiza, wymiana), bilansowanie.</div>
+                    <div class="topics"><span>synteza</span><span>analiza</span><span>wymiana</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 8</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Gazy – powietrze, tlen, wodór</div>
+                    <div class="desc">Skład powietrza, właściwości i otrzymywanie tlenu i wodoru, podstawy o tlenkach.</div>
+                    <div class="topics"><span>powietrze</span><span>tlen</span><span>wodór</span><span>tlenki</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 9</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Tlenek węgla(IV) i zanieczyszczenia</div>
+                    <div class="desc">Właściwości CO₂, otrzymywanie, efekt cieplarniany, zanieczyszczenia powietrza, doświadczenia.</div>
+                    <div class="topics"><span>CO₂</span><span>efekt cieplarniany</span><span>smog</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 10</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Woda i roztwory wodne</div>
+                    <div class="desc">Budowa cząsteczki wody, rozpuszczanie, rozpuszczalność, rodzaje roztworów, stężenie procentowe.</div>
+                    <div class="topics"><span>rozpuszczalność</span><span>stężenie %</span><span>roztwory</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 11</span>
+                        <span class="level-badge level-basic">podstawa</span>
+                    </div>
+                    <div class="name">Kwasy (część 1)</div>
+                    <div class="desc">Definicja i budowa kwasów, kwasy beztlenowe i tlenowe, wzory, nazwy, otrzymywanie.</div>
+                    <div class="topics"><span>HCl</span><span>H₂SO₄</span><span>HNO₃</span><span>otrzymywanie</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 12</span>
+                        <span class="level-badge level-remember">powtórka</span>
+                    </div>
+                    <div class="name">Podsumowanie klasy 7 + diagnostyka</div>
+                    <div class="desc">Powtórka kluczowych pojęć, najczęstsze błędy, test diagnostyczny, plan dalszej pracy.</div>
+                    <div class="topics"><span>powtórka</span><span>test</span><span>błędy</span></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BLOK B – Materiał klasy 8 + rozszerzenia -->
+        <section class="block block-b">
+            <div class="block-title">Blok B – Materiał klasy 8 + rozszerzenia</div>
+            <div class="block-sub">16 lekcji – wodorotlenki, sole, stechiometria, węglowodory, alkohole, kwasy karboksylowe, estry, aminokwasy, obliczenia, redoks, doświadczenia, środowisko</div>
+
+            <div class="block-grid">
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 13</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Wodorotlenki</div>
+                    <div class="desc">Budowa, nazewnictwo, otrzymywanie, właściwości, odczyn, skala pH – podstawy.</div>
+                    <div class="topics"><span>NaOH</span><span>KOH</span><span>pH</span><span>odczyn</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 14</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Kwasy (część 2 – pogłębienie)</div>
+                    <div class="desc">Właściwości kwasów, dysocjacja (wstęp), moc kwasów, doświadczenia i zastosowania.</div>
+                    <div class="topics"><span>dysocjacja</span><span>moc kwasów</span><span>doświadczenia</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 15</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Sole – budowa i nazewnictwo</div>
+                    <div class="desc">Definicja soli, wzory i nazwy, reszty kwasowe, wartościowość a wzór soli.</div>
+                    <div class="topics"><span>reszty kwasowe</span><span>nazewnictwo</span><span>wzory</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 16</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Sole – otrzymywanie i reakcje</div>
+                    <div class="desc">Wszystkie podstawowe metody otrzymywania soli, reakcje charakterystyczne, zastosowania.</div>
+                    <div class="topics"><span>otrzymywanie</span><span>reakcje</span><span>zastosowania</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 17</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Stechiometria – mole i obliczenia</div>
+                    <div class="desc">Pojęcie mola, masa molowa, obliczenia na podstawie równań, wydajność reakcji (wstęp).</div>
+                    <div class="topics"><span>mol</span><span>masa molowa</span><span>wydajność</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 18</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Węglowodory nasycone (alkany)</div>
+                    <div class="desc">Definicja, szereg homologiczny, wzory, nazewnictwo, właściwości, spalanie.</div>
+                    <div class="topics"><span>alkan</span><span>spalanie</span><span>szereg homologiczny</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 19</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Węglowodory nienasycone</div>
+                    <div class="desc">Alkeny i alkiny – wiązanie podwójne i potrójne, reakcje addycji, rozpoznawanie.</div>
+                    <div class="topics"><span>alkeny</span><span>alkiny</span><span>addycja</span><span>woda bromowa</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 20</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Źródła węglowodorów i destylacja</div>
+                    <div class="desc">Ropa naftowa, gaz ziemny, destylacja frakcyjna, produkty destylacji, zastosowania.</div>
+                    <div class="topics"><span>ropa</span><span>destylacja</span><span>frakcje</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 21</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Alkohole</div>
+                    <div class="desc">Budowa, nazewnictwo, właściwości, otrzymywanie, metanol i etanol – znaczenie.</div>
+                    <div class="topics"><span>etanol</span><span>metanol</span><span>fermentacja</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 22</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Kwasy karboksylowe</div>
+                    <div class="desc">Budowa, nazewnictwo, właściwości, otrzymywanie, estryfikacja (wstęp).</div>
+                    <div class="topics"><span>kwas octowy</span><span>estryfikacja</span><span>otrzymywanie</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 23</span>
+                        <span class="level-badge level-ambitious">ambitny</span>
+                    </div>
+                    <div class="name">Estry i aminokwasy</div>
+                    <div class="desc">Budowa estrów, nazewnictwo, właściwości, zastosowania, aminokwasy – podstawy.</div>
+                    <div class="topics"><span>estry</span><span>zapachy</span><span>aminokwasy</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 24</span>
+                        <span class="level-badge level-ambitious">ambitny</span>
+                    </div>
+                    <div class="name">Chemia a życie</div>
+                    <div class="desc">Białka, tłuszcze, cukry (wprowadzenie), chemia w organizmie, substancje biologicznie czynne.</div>
+                    <div class="topics"><span>białka</span><span>tłuszcze</span><span>cukry</span><span>DNA</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 25</span>
+                        <span class="level-badge level-exam">egzamin</span>
+                    </div>
+                    <div class="name">Obliczenia zaawansowane</div>
+                    <div class="desc">Stężenie procentowe – zadania mieszane, masa molowa, obliczenia gazowe, wydajność i nadmiar.</div>
+                    <div class="topics"><span>stężenie %</span><span>gazy</span><span>nadmiar</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 26</span>
+                        <span class="level-badge level-exam">egzamin</span>
+                    </div>
+                    <div class="name">Reakcje redoks (wstęp)</div>
+                    <div class="desc">Stopień utlenienia, utleniacz i reduktor, proste bilanse, przykłady z metalami i niemetalami.</div>
+                    <div class="topics"><span>stopień utlenienia</span><span>bilans</span><span>utleniacz</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 27</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Doświadczenia kluczowe</div>
+                    <div class="desc">Projektowanie doświadczeń, obserwacje i wnioski, najważniejsze doświadczenia z klas 7–8.</div>
+                    <div class="topics"><span>projekt</span><span>obserwacja</span><span>wniosek</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 28</span>
+                        <span class="level-badge level-training">trening</span>
+                    </div>
+                    <div class="name">Chemia a środowisko</div>
+                    <div class="desc">Zanieczyszczenia powietrza, wody, gleby, kwaśne deszcze, efekt cieplarniany, recykling.</div>
+                    <div class="topics"><span>kwaśne deszcze</span><span>smog</span><span>recykling</span></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BLOK C – Utrwalenie + przygotowanie olimpijskie -->
+        <section class="block block-c">
+            <div class="block-title">Blok C – Utrwalenie + przygotowanie olimpijskie</div>
+            <div class="block-sub">8 lekcji – powtórzenia, stechiometria konkursowa, redoks zaawansowany, kinetyka, równowaga, izomeria, analiza jakościowa, zadania mieszane</div>
+
+            <div class="block-grid">
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 29</span>
+                        <span class="level-badge level-olimp">olimpiada</span>
+                    </div>
+                    <div class="name">Powtórzenie chemii nieorganicznej</div>
+                    <div class="desc">Tlenki, kwasy, wodorotlenki, sole – reakcje charakterystyczne, obliczenia mieszane, pułapki.</div>
+                    <div class="topics"><span>tlenki</span><span>kwasy</span><span>wodorotlenki</span><span>sole</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 30</span>
+                        <span class="level-badge level-olimp">olimpiada</span>
+                    </div>
+                    <div class="name">Powtórzenie chemii organicznej</div>
+                    <div class="desc">Węglowodory i pochodne, izomeria (wstęp), grupy funkcyjne, zadania mieszane.</div>
+                    <div class="topics"><span>węglowodory</span><span>pochodne</span><span>izomeria</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 31</span>
+                        <span class="level-badge level-olimp">olimpiada</span>
+                    </div>
+                    <div class="name">Stechiometria i obliczenia konkursowe</div>
+                    <div class="desc">Nadmiar i niedomiar, wydajność, mieszaniny, zadania wieloetapowe.</div>
+                    <div class="topics"><span>nadmiar</span><span>wydajność</span><span>mieszaniny</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 32</span>
+                        <span class="level-badge level-olimp">olimpiada</span>
+                    </div>
+                    <div class="name">Redoks i bilanse zaawansowane</div>
+                    <div class="desc">Metoda elektronowa (kwasowe i zasadowe), dysproporcjonowanie, typowe utleniacze i reduktory.</div>
+                    <div class="topics"><span>bilans</span><span>dysproporcjonowanie</span><span>utleniacze</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 33</span>
+                        <span class="level-badge level-olimp">olimpiada</span>
+                    </div>
+                    <div class="name">Kinetyka, równowaga i elektroujemność</div>
+                    <div class="desc">Czynniki szybkości, zasada Le Chateliera, elektroujemność, konfiguracje elektronowe (pogłębienie).</div>
+                    <div class="topics"><span>kinetyka</span><span>Le Chatelier</span><span>elektroujemność</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 34</span>
+                        <span class="level-badge level-olimp">olimpiada</span>
+                    </div>
+                    <div class="name">Izomeria i grupy funkcyjne (poziom konkursowy)</div>
+                    <div class="desc">Izomeria łańcuchowa, położenia, grup funkcyjnych, cis‑trans, chiralność (wstęp).</div>
+                    <div class="topics"><span>cis‑trans</span><span>chiralność</span><span>grupy funkcyjne</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 35</span>
+                        <span class="level-badge level-olimp">olimpiada</span>
+                    </div>
+                    <div class="name">Analiza jakościowa + test końcowy</div>
+                    <div class="desc">Reakcje charakterystyczne kationów i anionów, odczynniki, test diagnostyczny, strategia na konkurs.</div>
+                    <div class="topics"><span>kationy</span><span>aniony</span><span>test</span><span>strategia</span></div>
+                </a>
+
+                <a href="#" class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 36</span>
+                        <span class="level-badge level-olimp">olimpiada</span>
+                    </div>
+                    <div class="name">Zadania mieszane olimpijskie</div>
+                    <div class="desc">Zadania łączące kilka działów, pełne toki rozumowania, analiza błędów, plan dalszego rozwoju.</div>
+                    <div class="topics"><span>zadania</span><span>tok rozumowania</span><span>błędy</span></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+            <p><strong>Chemia – kurs dla ambitnych</strong> &bull; 36 lekcji &bull; od podstaw do olimpiady</p>
+            <p style="font-size:0.75rem; opacity:0.6; margin-top:0.2rem;">Kliknij w dowolną lekcję, aby przejść do jej treści (w przygotowaniu)</p>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,3327 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 3 – Narnia + zaimek</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ======================================================================
+           SYSTEM WIZUALNY REPETYTORIUM E8 – wersja 6.2 (master merge)
+           ====================================================================== */
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h2 .level-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- KOLORY --- */
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f;
+            --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        /* --- KARTY --- */
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+            border-color: var(--color-remember);
+        }
+        .card-remember .card-label {
+            color: var(--color-remember);
+        }
+        .card-warning {
+            background: #fffbeb;
+            border-left: 5px solid #d69e2e;
+            border-color: #d69e2e;
+        }
+        .card-warning .card-label {
+            color: #d69e2e;
+        }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+            border-color: var(--color-hint);
+        }
+        .card-hint .card-label {
+            color: var(--color-hint);
+        }
+        .card-error {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-error .card-label {
+            color: var(--color-trap);
+        }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+            border-color: var(--color-correct);
+        }
+        .card-correct .card-label {
+            color: var(--color-correct);
+        }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-trap .card-label {
+            color: var(--color-trap);
+        }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+            border-color: var(--color-ambitious);
+        }
+        .card-ambitious .card-label {
+            color: var(--color-ambitious);
+        }
+        .card-difficult {
+            background: var(--color-difficult-bg);
+            border-left: 5px solid var(--color-difficult);
+            border-color: var(--color-difficult);
+        }
+        .card-difficult .card-label {
+            color: var(--color-difficult);
+        }
+        .card-gray {
+            background: var(--color-bg-subtle);
+            border-left: 5px solid var(--color-text-muted);
+            border-color: var(--color-text-muted);
+        }
+        .card .label {
+            font-weight: 600;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            display: inline-block;
+            margin-bottom: 4px;
+            padding: 1px 10px;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.05);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* --- BADGE --- */
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .level-writing {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+        .level-difficult {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        /* --- PRZYKŁADY --- */
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+        }
+        .example .pl {
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 1.0rem;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .example .note {
+            color: var(--color-text-muted);
+            font-size: 0.78rem;
+            font-style: italic;
+            margin-left: auto;
+        }
+        .example .expl {
+            color: var(--color-text-muted);
+            font-size: 0.82rem;
+            font-style: italic;
+        }
+        .hl-imieslow {
+            color: #7c3aed;
+            font-weight: 700;
+        }
+
+        /* --- TABELE --- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .table-wrap .error-row {
+            background: #fef2f2;
+        }
+        .table-wrap .correct-row {
+            background: #f0faf4;
+        }
+
+        /* --- PRZYCISKI --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-success {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .btn-success:hover {
+            background: #1f6e48;
+            border-color: #1f6e48;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+        .btn-hint {
+            background: var(--color-hint);
+            border-color: var(--color-hint);
+            color: white;
+        }
+        .btn-hint:hover {
+            background: #d97706;
+            border-color: #d97706;
+        }
+
+        /* --- AUDIO --- */
+        .audio-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 15px;
+            color: var(--color-training);
+            transition: all 0.2s;
+            flex-shrink: 0;
+            font-family: inherit;
+            line-height: 1;
+        }
+        .audio-btn:hover {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+        }
+        .audio-btn.playing {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+
+        /* --- ĆWICZENIA --- */
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+
+        /* --- ODPOWIEDZI, WSKAZÓWKI, WYJAŚNIENIA --- */
+        .answer-toggle,
+        .hint-toggle,
+        .explain-toggle {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+        .answer-toggle {
+            background: var(--color-training);
+            color: white;
+        }
+        .answer-toggle:hover {
+            background: #1f4e8c;
+        }
+        .hint-toggle {
+            background: var(--color-hint);
+            color: white;
+        }
+        .hint-toggle:hover {
+            background: #d97706;
+        }
+        .explain-toggle {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+        }
+        .explain-toggle:hover {
+            border-color: var(--color-training);
+            color: var(--color-training);
+            background: var(--color-training-bg);
+        }
+        .answer-content,
+        .hint-content,
+        .explain-content {
+            border-radius: 6px;
+            padding: 0 12px;
+            margin-top: 4px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .answer-content.show,
+        .hint-content.show,
+        .explain-content.show {
+            max-height: 800px;
+            padding: 10px 12px;
+            opacity: 1;
+        }
+        .answer-content {
+            background: var(--color-training-bg);
+            border-left: 3px solid var(--color-training);
+        }
+        .hint-content {
+            background: var(--color-hint-bg);
+            border-left: 3px solid var(--color-hint);
+            font-style: italic;
+            color: #78350f;
+        }
+        .explain-content {
+            background: var(--color-bg-subtle);
+            border-left: 3px solid var(--color-training);
+        }
+        .explain-content .rule-box {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 6px 12px;
+            margin: 4px 0;
+            border: 1px solid var(--color-border);
+            font-size: 0.9rem;
+        }
+
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover {
+            border-color: var(--color-error);
+            color: var(--color-error);
+            background: var(--color-trap-bg);
+        }
+
+        /* --- FISZKA --- */
+        .fiszka {
+            background: var(--color-bg-subtle);
+            border: 2px solid #0a2540;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 20px 0;
+        }
+        .fiszka h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0a2540;
+            padding-bottom: 4px;
+        }
+        .fiszka-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+        }
+        .fiszka-col h4 {
+            font-weight: 600;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 3px;
+            margin-bottom: 4px;
+        }
+        .fiszka-col ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .fiszka-col li {
+            padding: 2px 0 2px 16px;
+            position: relative;
+            font-size: 0.88rem;
+        }
+        .fiszka-col li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .fiszka-grid {
+                grid-template-columns: 1fr;
+            }
+            .fiszka {
+                padding: 14px 16px;
+            }
+        }
+
+        /* --- BANK KONSTRUKCJI --- */
+        .bank-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .bank-item:last-child {
+            border-bottom: none;
+        }
+        .bank-item .constr {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #0a2540;
+            min-width: 100px;
+        }
+        .bank-item .meaning {
+            color: var(--color-text-muted);
+            font-style: italic;
+            font-size: 0.85rem;
+            min-width: 80px;
+        }
+        .bank-item .example {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 2px 0;
+            margin: 0;
+            gap: 4px 8px;
+            border-radius: 0;
+        }
+        .bank-item .example .pl {
+            font-size: 0.9rem;
+        }
+        .bank-item .example .expl {
+            font-size: 0.8rem;
+        }
+
+        /* --- FISZKI INTERAKTYWNE --- */
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .flashcard {
+            min-height: 96px;
+            padding: 14px;
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            background: #ffffff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+        }
+        .flashcard:hover,
+        .flashcard:focus-visible {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        .flashcard .front {
+            display: block;
+            font-weight: 700;
+        }
+        .flashcard .back {
+            display: none;
+            color: var(--color-text-muted);
+        }
+        .flashcard.flipped .front {
+            display: none;
+        }
+        .flashcard.flipped .back {
+            display: block;
+        }
+
+        /* --- PANEL POSTĘPU --- */
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+        .top-panel .lesson-info .lesson-title {
+            font-style: italic;
+        }
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .view-filters {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .view-filters .btn {
+            font-size: 0.72rem;
+            padding: 3px 12px;
+        }
+        .view-filters .btn.active {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .today-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin: 4px 0 0;
+        }
+        .today-tasks .task {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+        .today-tasks .task .circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--color-text-muted);
+            transition: all 0.2s;
+        }
+        .today-tasks .task.done .circle {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .today-tasks .task .task-label {
+            color: var(--color-text-muted);
+        }
+        .today-tasks .task.done .task-label {
+            color: var(--color-text);
+            text-decoration: line-through;
+        }
+
+        /* --- PRZEKREŚLENIE / BŁĘDY --- */
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .cross-mark {
+            color: var(--color-error);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+        .check-mark {
+            color: var(--color-correct);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+
+        /* --- FITB --- */
+        .fitb-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 10px;
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child {
+            border-bottom: none;
+        }
+        .fitb-row input[type="text"] {
+            padding: 3px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            width: 140px;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        .fitb-row input[type="text"]:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+        .fitb-row input[type="text"].correct {
+            border-color: var(--color-correct);
+            background: #f0faf4;
+        }
+        .fitb-row input[type="text"].wrong {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        .fitb-row .result-icon {
+            font-size: 1.0rem;
+        }
+        .fitb-row select {
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-family: inherit;
+            background: #ffffff;
+            min-width: 120px;
+        }
+        .fitb-row select:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+
+        /* --- MISJA --- */
+        .mission-result {
+            font-size: 1.0rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        .mission-result.perfect {
+            background: #d4edda;
+            color: #155724;
+        }
+        .mission-result.good {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .mission-result.ok {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .mission-result.fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* --- CHECKLISTA --- */
+        .checklist {
+            padding-left: 0;
+            list-style: none;
+        }
+        .checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 1px 0;
+            font-size: 0.88rem;
+        }
+        .checklist input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* --- SPIS TREŚCI (akordeon) --- */
+        .toc-section {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin-bottom: 22px;
+        }
+        .toc-section h2 {
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+        }
+        .toc-accordion {
+            margin-top: 6px;
+        }
+        .toc-item {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: #ffffff;
+        }
+        .toc-summary {
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .toc-summary:hover {
+            background: var(--color-bg-subtle);
+        }
+        .toc-summary::-webkit-details-marker {
+            display: none;
+        }
+        .toc-summary::before {
+            content: "▶";
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            transition: transform 0.2s;
+            margin-right: 6px;
+        }
+        .toc-item[open] .toc-summary::before {
+            transform: rotate(90deg);
+        }
+        .toc-checklist {
+            padding: 4px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            padding: 2px 0;
+        }
+        .toc-checklist input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .toc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 14px 8px 30px;
+        }
+        .toc-anchor {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 4px 11px;
+            border: 1px solid var(--color-training);
+            border-radius: 6px;
+            background: var(--color-training-bg);
+            color: var(--color-training);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover,
+        .toc-anchor:focus-visible {
+            background: var(--color-training);
+            color: #ffffff;
+        }
+        .toc-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: var(--color-basic-bg);
+            border-radius: 12px;
+            color: #0f5132;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .toc-keywords span {
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        /* --- UKRYWANIE SEKCJI (filter) --- */
+        .section.hidden-by-filter {
+            display: none !important;
+        }
+
+        /* --- LISTA TEMATÓW GŁÓWNYCH --- */
+        .topic-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 7px 30px;
+            padding-left: 28px;
+        }
+        .topic-list li {
+            margin: 0;
+            padding-left: 2px;
+            font-size: 0.9rem;
+        }
+        .topic-list a {
+            display: flex;
+            align-items: center;
+            min-height: 38px;
+            padding: 6px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background: #ffffff;
+            color: #0a2540;
+            font-weight: 600;
+            line-height: 1.25;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .topic-list a:hover,
+        .topic-list a:focus-visible {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+            color: var(--color-training);
+        }
+        @media (max-width: 600px) {
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- STOPKA --- */
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .view-filters {
+                justify-content: center;
+            }
+            .today-tasks {
+                flex-direction: column;
+                gap: 3px;
+            }
+            .example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .example .note {
+                margin-left: 0;
+            }
+            .fitb-row {
+                flex-wrap: wrap;
+            }
+            .fitb-row input[type="text"] {
+                width: 100%;
+            }
+            .top-panel {
+                padding: 12px 14px;
+            }
+            .container {
+                padding: 10px 6px;
+            }
+            .bank-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+            .bank-item .constr {
+                min-width: auto;
+            }
+            .bank-item .meaning {
+                min-width: auto;
+            }
+            .topic-list {
+                columns: 1;
+            }
+            .toc-section {
+                padding: 12px 14px;
+            }
+            .toc-summary {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+            .toc-checklist li {
+                font-size: 0.8rem;
+            }
+            .fitb-row select {
+                width: 100%;
+                min-width: unset;
+            }
+        }
+
+        .text-muted {
+            color: var(--color-text-muted);
+        }
+        .text-sm {
+            font-size: 0.82rem;
+        }
+        .mt-8 {
+            margin-top: 8px;
+        }
+        .mb-8 {
+            margin-bottom: 8px;
+        }
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+            letter-spacing: -0.02em;
+        }
+        .part-heading .part-num {
+            color: var(--color-training);
+        }
+
+        /* --- MASTER --- */
+        :root {
+            --master-ink: #17212b;
+            --master-muted: #64748b;
+            --master-line: #e2e8f0;
+            --master-surface: #ffffff;
+            --master-soft: #f8fafc;
+            --master-accent: #276749;
+            --master-accent-soft: #eef7f1;
+            --master-shadow: 0 4px 18px rgba(15, 23, 42, .055);
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 74px
+        }
+        body {
+            background: #f3f5f7;
+            color: var(--master-ink)
+        }
+        .container {
+            border: 1px solid #e8edf2;
+            box-shadow: 0 10px 34px rgba(15, 23, 42, .06)
+        }
+        .section {
+            scroll-margin-top: 76px
+        }
+        .card,
+        .exercise,
+        .rule-box,
+        .example,
+        .flashcard,
+        .table-wrap {
+            box-shadow: none
+        }
+        .btn,
+        .answer-toggle,
+        .hint-toggle,
+        .hide-all-btn {
+            transition: background .16s ease, border-color .16s ease, transform .08s ease, box-shadow .16s ease
+        }
+        .btn:active,
+        .answer-toggle:active,
+        .hint-toggle:active {
+            transform: translateY(1px)
+        }
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid rgba(39, 103, 73, .22);
+            outline-offset: 2px
+        }
+        .audio-btn {
+            min-width: 34px;
+            min-height: 34px;
+            border-radius: 8px;
+            font-size: .9rem
+        }
+        .master-topbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-height: 48px;
+            margin: -8px -8px 18px;
+            padding: 7px 10px;
+            background: rgba(255, 255, 255, .96);
+            border: 1px solid var(--master-line);
+            border-radius: 12px;
+            box-shadow: var(--master-shadow);
+            backdrop-filter: blur(8px)
+        }
+        .master-topbar .master-title {
+            font-size: .82rem;
+            font-weight: 600;
+            color: #334155;
+            margin-right: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+        .master-btn {
+            appearance: none;
+            border: 1px solid #d7dee7;
+            background: #fff;
+            color: #334155;
+            border-radius: 8px;
+            padding: 7px 10px;
+            font: inherit;
+            font-size: .78rem;
+            cursor: pointer
+        }
+        .master-btn:hover {
+            background: #f8fafc;
+            border-color: #cbd5e1
+        }
+        .master-btn[aria-pressed="true"] {
+            background: var(--master-accent-soft);
+            border-color: #b7d7c3;
+            color: #20553c
+        }
+        .master-progress {
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background: var(--master-accent);
+            transition: width .1s linear
+        }
+        .master-section-nav {
+            display: flex;
+            gap: 6px;
+            overflow: auto;
+            padding: 4px 0 10px;
+            margin-bottom: 8px;
+            scrollbar-width: thin
+        }
+        .master-section-nav a {
+            flex: 0 0 auto;
+            padding: 5px 9px;
+            border: 1px solid #e2e8f0;
+            border-radius: 7px;
+            color: #475569;
+            background: #fff;
+            font-size: .75rem;
+            text-decoration: none
+        }
+        .master-section-nav a.active {
+            background: var(--master-accent-soft);
+            border-color: #b7d7c3;
+            color: #20553c;
+            font-weight: 600
+        }
+        body.master-focus .toc-wrap,
+        body.master-focus .toc,
+        body.master-focus .master-section-nav {
+            display: none !important
+        }
+        body.master-focus .container {
+            max-width: 920px
+        }
+        body.master-focus .section:not(.section-active) {
+            opacity: .72
+        }
+        body.master-focus .section.section-active {
+            opacity: 1
+        }
+        .master-tip {
+            margin: 10px 0;
+            padding: 10px 12px;
+            border-left: 3px solid #94a3b8;
+            background: #f8fafc;
+            color: #475569;
+            font-size: .86rem;
+            border-radius: 0 8px 8px 0
+        }
+        @media(max-width:700px) {
+            .master-topbar .master-title {
+                display: none
+            }
+            .master-topbar {
+                justify-content: flex-end
+            }
+            .master-btn {
+                padding: 7px 8px
+            }
+            .master-section-nav a {
+                font-size: .72rem
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+            * {
+                transition: none !important
+            }
+        }
+
+        /* MASTER MASTER */
+        :root {
+            --mm-ink: #182230;
+            --mm-muted: #64748b;
+            --mm-line: #dfe5eb;
+            --mm-surface: #f8fafc;
+            --mm-accent: #2f6f59;
+            --mm-accent-soft: #edf5f1;
+            --mm-danger: #b33a3a;
+            --mm-danger-soft: #fbf1f1;
+            --mm-warn: #806a2b;
+            --mm-warn-soft: #faf7ec
+        }
+        body {
+            background: #eef1f4;
+            color: var(--mm-ink)
+        }
+        .container {
+            border-radius: 18px;
+            box-shadow: 0 5px 24px rgba(15, 23, 42, .055);
+            padding: 24px 30px 28px
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #1d2b39
+        }
+        h2 {
+            border-bottom: 1px solid var(--mm-line)
+        }
+        .card {
+            box-shadow: none;
+            border-radius: 10px
+        }
+        .card-warning {
+            background: var(--mm-warn-soft);
+            border-left-color: var(--mm-warn);
+            border-color: #e5ddbf
+        }
+        .card-hint {
+            background: #f7f8fa;
+            border-left-color: #64748b;
+            border-color: #d8dee5
+        }
+        .card-error {
+            background: var(--mm-danger-soft);
+            border-left-color: var(--mm-danger);
+            border-color: #ebd0d0
+        }
+        .card-correct {
+            background: var(--mm-accent-soft);
+            border-left-color: var(--mm-accent);
+            border-color: #cfe1d8
+        }
+        .audio-btn {
+            min-width: 36px;
+            min-height: 32px;
+            border-radius: 8px
+        }
+        .mm-focusbar {
+            position: sticky;
+            top: 8px;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 0 0 12px;
+            padding: 7px 9px;
+            background: rgba(255, 255, 255, .95);
+            border: 1px solid var(--mm-line);
+            border-radius: 10px;
+            font-size: .78rem
+        }
+        .mm-focusbar .mm-section-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: var(--mm-muted)
+        }
+        .mm-focusbar button {
+            border: 1px solid var(--mm-line);
+            background: #fff;
+            color: var(--mm-ink);
+            border-radius: 7px;
+            padding: 5px 9px;
+            cursor: pointer
+        }
+        .mm-orientation {
+            display: grid;
+            grid-template-columns: 1.25fr .9fr .9fr;
+            gap: 10px;
+            margin: 0 0 18px;
+            padding: 12px;
+            border: 1px solid var(--mm-line);
+            border-radius: 12px;
+            background: #fff
+        }
+        .mm-orientation .mm-step {
+            padding: 11px 12px;
+            border-radius: 9px;
+            background: var(--mm-surface);
+            border: 1px solid #e5e9ee
+        }
+        .mm-orientation .mm-step strong {
+            display: block;
+            font-size: .9rem;
+            margin-bottom: 2px
+        }
+        .mm-orientation .mm-step span {
+            font-size: .78rem;
+            color: var(--mm-muted)
+        }
+        .mm-orientation .mm-step.current {
+            border-color: #b8cfc4;
+            background: var(--mm-accent-soft)
+        }
+        .mm-orientation .mm-step.current strong {
+            color: var(--mm-accent)
+        }
+        .mm-study-rule {
+            display: flex;
+            gap: 12px;
+            padding: 13px 15px;
+            margin: 14px 0 22px;
+            border: 1px solid var(--mm-line);
+            border-radius: 11px;
+            background: #fff
+        }
+        .mm-study-rule .mm-rule-key {
+            font-weight: 700;
+            white-space: nowrap;
+            color: var(--mm-accent)
+        }
+        .mm-study-rule p {
+            margin: 0;
+            font-size: .9rem
+        }
+        .mm-recall {
+            margin: 16px 0;
+            padding: 14px 16px;
+            border: 1px dashed #b9c3ce;
+            border-radius: 10px;
+            background: #fbfcfd
+        }
+        .mm-recall summary {
+            cursor: pointer;
+            font-weight: 600
+        }
+        .mm-recall p {
+            margin: 9px 0 0;
+            font-size: .9rem
+        }
+        .mm-microtest {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0
+        }
+        .mm-microtest button {
+            padding: 9px 10px;
+            border: 1px solid var(--mm-line);
+            border-radius: 8px;
+            background: #fff;
+            text-align: left;
+            cursor: pointer;
+            font: inherit
+        }
+        .mm-microtest button:hover {
+            background: var(--mm-surface)
+        }
+        .mm-microtest .mm-answer {
+            display: block;
+            margin-top: 5px;
+            color: var(--mm-muted);
+            font-size: .8rem
+        }
+        .mm-current-section {
+            scroll-margin-top: 75px
+        }
+        body.mm-focus .toc-section,
+        body.mm-focus .mm-orientation,
+        body.mm-focus .top-panel .view-filters,
+        body.mm-focus .top-panel .today-tasks {
+            display: none
+        }
+        body.mm-focus .container {
+            max-width: 900px
+        }
+        body.mm-focus .section:not(.mm-current-section) {
+            opacity: .42;
+            transition: opacity .2s
+        }
+        @media(max-width:760px) {
+            .container {
+                padding: 17px 14px 22px;
+                border-radius: 13px
+            }
+            .mm-orientation {
+                grid-template-columns: 1fr
+            }
+            .mm-microtest {
+                grid-template-columns: 1fr
+            }
+            .mm-focusbar {
+                top: 4px
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important;
+                scroll-behavior: auto !important
+            }
+        }
+
+        /* dodatkowe */
+        .bohater-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+        .bohater-tabela tr:nth-child(even) {
+            background: #f8faff;
+        }
+        .rule-highlight {
+            background: var(--color-remember-bg);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-weight: 600;
+            color: var(--color-remember);
+        }
+        .poprawka-box {
+            background: #fff8e7;
+            border-left: 4px solid #d69e2e;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .poprawka-box .poprawka-title {
+            font-weight: 700;
+            color: #8a6d3b;
+        }
+        .korekta {
+            background: #f0faf4;
+            border-left: 4px solid var(--color-correct);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .korekta .korekta-title {
+            font-weight: 700;
+            color: var(--color-correct);
+        }
+        .blad-box {
+            background: #fef2f2;
+            border-left: 4px solid var(--color-error);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .blad-box .blad-title {
+            font-weight: 700;
+            color: var(--color-error);
+        }
+        /* dodatkowe style dla nowych elementów */
+        .haczyk-box {
+            background: #f0f6ff;
+            border-left: 5px solid #2b6cb0;
+            padding: 12px 16px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        .haczyk-box .haczyk-title {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+        .motyw-dopasowanie {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            margin: 8px 0;
+            padding: 6px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .motyw-dopasowanie select {
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-family: inherit;
+            min-width: 140px;
+        }
+        .motyw-dopasowanie .motyw-label {
+            font-weight: 500;
+            min-width: 100px;
+        }
+        .motyw-dopasowanie .result-icon {
+            font-size: 1.0rem;
+        }
+        
+        /* Nowa klasa dla ściągi z notatkami */
+        .cheat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 8px;
+        }
+        .cheat-grid h4 {
+            margin-top: 0;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 2px;
+        }
+        .cheat-grid ul {
+            padding-left: 18px;
+            margin-bottom: 6px;
+        }
+        .cheat-grid ul li {
+            font-size: 0.88rem;
+        }
+        @media (max-width: 600px) {
+            .cheat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .czesc-mowy-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+        
+        .zaimek-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+
+        /* styl dla nowych przykładowych zdań */
+        .przyklady-zdań {
+            margin: 6px 0 4px 12px;
+            padding: 8px 12px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+        }
+        .przyklady-zdań p {
+            margin: 3px 0;
+            font-size: 0.92rem;
+        }
+        .przyklady-zdań .tag {
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+            display: inline-block;
+            margin-right: 6px;
+        }
+        .porownanie-box {
+            background: #f0f6ff;
+            border-left: 4px solid #2b6cb0;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .porownanie-box .porownanie-title {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+        .uwaga-box {
+            background: #fff8e7;
+            border-left: 4px solid #d69e2e;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .uwaga-box .uwaga-title {
+            font-weight: 700;
+            color: #8a6d3b;
+        }
+        /* box CKE */
+        .box-cke {
+            background: #f0f6ff;
+            border: 2px solid #2b6cb0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .box-cke .cke-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #2b6cb0;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .box-cke ul {
+            margin-bottom: 0;
+        }
+        .box-cke ul li {
+            margin-bottom: 2px;
+        }
+        .trap-table td:first-child {
+            font-weight: 600;
+        }
+        /* królewskie przydomki */
+        .royal-titles {
+            font-style: italic;
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL – POSTĘP + FILTRY + ZADANIA
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">„Opowieści z Narnii” + zaimek</div>
+                    <div class="subtitle">Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Lekcja 3 – „Opowieści z Narnii: Lew, czarownica i stara szafa” oraz zaimek (osobowe, zwrotne, dzierżawcze, wskazujące, pytające, względne, przeczące)</div>
+                        <div>Wersja 2.1 – zaktualizowana zgodnie z wytycznymi CKE i realiami E8</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-row">
+                <div class="view-filters">
+                    <button class="btn active" data-view="all" onclick="setView('all')">Wszystko</button>
+                    <button class="btn" data-view="basic" onclick="setView('basic')">Podstawa + Trening</button>
+                    <button class="btn" data-view="exam" onclick="setView('exam')">Egzamin</button>
+                </div>
+                <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                    <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+                </div>
+                <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+            </div>
+
+            <div class="panel-row">
+                <div class="today-tasks" id="todayTasks">
+                    <div class="task" data-task="narnia"><span class="circle">1</span><span class="task-label">Poznaj Narnię – bohaterów i wydarzenia</span></div>
+                    <div class="task" data-task="motywy"><span class="circle">2</span><span class="task-label">Opanuj motywy i przemianę Edmunda</span></div>
+                    <div class="task" data-task="zaimek"><span class="circle">3</span><span class="task-label">Rozpoznaj rodzaje zaimków</span></div>
+                    <div class="task" data-task="cwiczenia"><span class="circle">4</span><span class="task-label">Zrób ćwiczenia</span></div>
+                    <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test końcowy</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MASTER MASTER — warstwa prowadzenia ucznia -->
+        <div class="mm-focusbar" id="mmFocusBar" aria-live="polite"><span class="mm-section-name" id="mmSectionName">Lekcja 3 · orientacja</span><button type="button" id="mmFocusBtn" onclick="mmToggleFocus()">Tryb skupienia</button></div>
+        <div class="mm-orientation" aria-label="Plan pracy z lekcją">
+            <div class="mm-step current"><strong>1. Rozpoznaj</strong><span>Przypomnij sobie bohaterów i wydarzenia z „Narnii”.</span></div>
+            <div class="mm-step"><strong>2. Zrozum</strong><span>Opanuj zasady rozpoznawania zaimków.</span></div>
+            <div class="mm-step"><strong>3. Zastosuj</strong><span>Wykonaj ćwiczenia i sprawdź się w teście.</span></div>
+        </div>
+        <div class="mm-study-rule">
+            <div class="mm-rule-key">Zasada pracy</div>
+            <p><strong>Nie ucz się definicji na pamięć.</strong> Ćwicz rozpoznawanie zaimków w konkretnych zdaniach – to właśnie ta umiejętność jest sprawdzana na egzaminie. Łącz wiedzę o lekturze z umiejętnościami językowymi: każdy motyw z „Narnii” możesz wykorzystać w rozprawce, a znajomość zaimków pomoże ci w zadaniach gramatycznych.</p>
+        </div>
+
+        <!-- ============================================================
+        ŚCIĄGA Z NOTATEK
+        ============================================================ -->
+        <div class="card card-remember" style="border-left: 6px solid #2b6cb0; background: #f0f6ff; margin: 16px 0 20px;">
+            <span class="card-label" style="color: #2b6cb0; font-size: 1rem; font-weight: 700;">📌 Ściąga z notatek – najważniejsze informacje w pigułce</span>
+            <div class="cheat-grid">
+                <div>
+                    <h4>„Narnia” – kluczowe fakty</h4>
+                    <ul>
+                        <li><strong>Autor:</strong> C.S. Lewis (Clive Staples Lewis).</li>
+                        <li><strong>Pełny tytuł:</strong> „Opowieści z Narnii: Lew, czarownica i stara szafa”.</li>
+                        <li><strong>Czas akcji:</strong> II wojna światowa (Anglia) + Narnia.</li>
+                        <li><strong>Rodzeństwo Pevensie:</strong> Piotr (Wspaniały), Zuzanna (Łagodna), Edmund (Sprawiedliwy), Łucja (Mężna).</li>
+                        <li><strong>Aslan</strong> – symbol dobra i poświęcenia, <strong>NIE</strong> bohater dynamiczny.</li>
+                        <li><strong>Biała Czarownica (Jadis)</strong> – symbol zła, władzy i przemocy.</li>
+                    </ul>
+                    <h4 style="margin-top:12px;">Przemiana Edmunda – trójkrok</h4>
+                    <ul>
+                        <li><strong>1. Zdrada</strong> – ulega pokusie Czarownicy (ptasie mleczko, obietnica władzy).</li>
+                        <li><strong>2. Skrucha</strong> – żałuje swojego czynu (rozmowa z Aslanem).</li>
+                        <li><strong>3. Naprawa czynem</strong> – walczy po stronie dobra, niszczy różdżkę Czarownicy.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Rodzaje zaimków</h4>
+                    <ul>
+                        <li><strong>Osobowe:</strong> <em>ja, ty, on, ona, ono, my, wy, oni, one</em></li>
+                        <li><strong>Zwrotne:</strong> <em>się, siebie, sobie, sobą</em></li>
+                        <li><strong>Dzierżawcze:</strong> <em>mój, twój, nasz, swój</em></li>
+                        <li><strong>Wskazujące:</strong> <em>ten, ta, to, tamten, taki</em></li>
+                        <li><strong>Pytające:</strong> <em>kto?, co?, który?</em></li>
+                        <li><strong>Względne:</strong> <em>który, co, gdzie, kiedy</em></li>
+                        <li><strong>Przeczące:</strong> <em>nikt, nic, żaden, nigdy</em></li>
+                    </ul>
+                    <h4 style="margin-top:12px;">Zasady (PUŁAPKI E8!)</h4>
+                    <ul>
+                        <li><strong>„Swój”</strong> – odnosi się do podmiotu zdania.</li>
+                        <li><strong>„Który”</strong> – względny (łączy zdania) lub pytający.</li>
+                        <li><strong>Przecinek przed „który”</strong> – gdy wprowadza zdanie podrzędne przydawkowe.</li>
+                        <li><strong>Zaimek osobowy</strong> (może być podmiotem) vs <strong>zwrotny</strong> („się” nie jest podmiotem).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        SPIS TREŚCI (akordeon z checklistą)
+        ============================================================ -->
+        <div class="toc-section" id="sec-toc">
+            <h2>Spis treści</h2>
+            <div class="toc-accordion">
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Status lektury i zasady CKE</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-cke">Status na egzaminie</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem, jak lektura jest traktowana na E8.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, że egzamin sprawdza tylko fragment w części I.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Wprowadzenie – „Narnia” i bohaterowie</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-narnia-info">Podstawowe informacje</a>
+                        <a class="toc-anchor" href="#sec-narnia-bohaterowie">Bohaterowie</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam autora, tytuł i gatunek „Narnii”.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam rodzeństwo Pevensie i ich przydomki.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, kim są Aslan i Biała Czarownica.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Wydarzenia i przemiana Edmunda</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-narnia-wydarzenia">Najważniejsze wydarzenia</a>
+                        <a class="toc-anchor" href="#sec-narnia-przemiana">Przemiana Edmunda</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam kluczowe wydarzenia i ich znaczenie.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem trójkrok przemiany Edmunda.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, że Aslan nie jest bohaterem dynamicznym.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Motywy i gotowe argumenty</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-narnia-motywy">Motywy</a>
+                        <a class="toc-anchor" href="#sec-narnia-zdania">Zdania do rozprawki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam motywy obecne w „Narnii”.</li>
+                        <li><input type="checkbox" data-progress="5" /> Mam gotowe zdania do rozprawki.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Jak to wygląda na egzaminie?</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-e8">„Narnia” na E8</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wiem, jakie zadania mogą się pojawić.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, jak wykorzystać lekturę w wypracowaniu.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Zaimek – teoria i rodzaje</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-zaimek">Czym jest zaimek?</a>
+                        <a class="toc-anchor" href="#sec-zaimki-osobowe">Osobowe</a>
+                        <a class="toc-anchor" href="#sec-zaimki-zwrotne">Zwrotne</a>
+                        <a class="toc-anchor" href="#sec-zaimki-dzierzawcze">Dzierżawcze</a>
+                        <a class="toc-anchor" href="#sec-zaimki-wskazujace">Wskazujące</a>
+                        <a class="toc-anchor" href="#sec-zaimki-pytajace">Pytające</a>
+                        <a class="toc-anchor" href="#sec-zaimki-wzgledne">Względne</a>
+                        <a class="toc-anchor" href="#sec-zaimki-przeczace">Przeczące</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam siedem rodzajów zaimków.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam przykłady każdego rodzaju.</li>
+                        <li><input type="checkbox" data-progress="5" /> Potrafię wskazać zaimek w zdaniu.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Zasady – „który”, „swój”, przecinek</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-ktory">„Który” – pytający czy względny?</a>
+                        <a class="toc-anchor" href="#sec-przecinek-ktory">Przecinek przed „który”</a>
+                        <a class="toc-anchor" href="#sec-swoj">Zasada „swój”</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam „który” pytający i względny.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam zasadę przecinka przed „który”.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam zasadę używania „swój”.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Ćwiczenia interaktywne i fiszki</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-cwiczenia">Ćwiczenia</a>
+                        <a class="toc-anchor" href="#sec-flashcards">Fiszki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wykonałem ćwiczenia z zaimków.</li>
+                        <li><input type="checkbox" data-progress="5" /> Przećwiczyłem fiszki.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Test końcowy i podsumowanie</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-mission">Misja końcowa</a>
+                        <a class="toc-anchor" href="#sec-podsumowanie">Podsumowanie</a>
+                        <a class="toc-anchor" href="#sec-pulapki">Pułapki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem test końcowy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam swoje mocne i słabe strony.</li>
+                    </ul>
+                </details>
+
+            </div>
+            <div class="toc-keywords">
+                <span>Słowa kluczowe: Aslan · Edmund · Biała Czarownica · Piotr · Zuzanna · Łucja · przemiana · poświęcenie · zdrada · zaimek · osobowy · zwrotny · dzierżawczy · wskazujący · pytający · względny · przeczący · „który” · „swój” · przecinek · CKE · E8</span>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        CZĘŚĆ 1 – „NARNIA” + STATUS LEKTURY
+        ============================================================ -->
+        <div class="mm-recall" id="mmRecall">
+            <details>
+                <summary>Sprawdź się przed nauką — 3 szybkie pytania</summary>
+                <div class="mm-microtest">
+                    <button type="button" onclick="mmReveal(this,'Łucja odkryła Narnię jako pierwsza z rodzeństwa.')">Kto odkrył Narnię jako pierwszy?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Aslan oddaje życie za Edmunda, a potem zmartwychwstaje.')">Na czym polega ofiara Aslana?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Zaimek zastępuje inne wyrazy – najczęściej rzeczowniki.')">Czym jest zaimek?<span class="mm-answer"></span></button>
+                </div>
+                <p>To nie jest test na ocenę – pokazuje, co już wiesz.</p>
+            </details>
+        </div>
+
+        <section class="section" data-level="basic" id="part1">
+            <div class="part-heading"><span class="part-num">Część 1</span> · „Opowieści z Narnii”</div>
+
+            <!-- NOWA SEKCJA – STATUS LEKTURY CKE -->
+            <div class="section" data-level="basic" id="sec-cke">
+                <div class="box-cke">
+                    <span class="cke-title">📌 WAŻNE – CKE / E8</span>
+                    <p><strong>„Opowieści z Narnii. Lew, czarownica i stara szafa” C.S. Lewisa jest lekturą obowiązkową z klas IV–VI.</strong></p>
+                    <ul>
+                        <li>W latach 2024/2025–2025/2026 zadania w <strong>części I arkusza</strong> dotyczące lektur z klas IV–VI odnoszą się <strong>wyłącznie do fragmentu</strong> zamieszczonego w arkuszu – nie sprawdzają znajomości całej treści ani problematyki całego utworu.</li>
+                        <li>Lektura może być swobodnie wykorzystywana w <strong>wypracowaniu</strong> (część II) i zadaniach otwartych.</li>
+                        <li>Lista lektur obowiązkowych znajduje się na <strong>początku arkusza egzaminacyjnego</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-narnia-info">
+                <h2>1. Podstawowe informacje</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Lektura w pigułce</span>
+                    <ul>
+                        <li><strong>Autor:</strong> C.S. Lewis (Clive Staples Lewis).</li>
+                        <li><strong>Pełny tytuł pierwszej części:</strong> „Opowieści z Narnii: Lew, czarownica i stara szafa”.</li>
+                        <li><strong>Gatunek:</strong> powieść fantasy z elementami baśni, alegorii i powieści przygodowej.</li>
+                        <li><strong>Miejsce wydarzeń:</strong> przede wszystkim Narnia, ale także świat rzeczywisty (Anglia w czasie II wojny światowej).</li>
+                        <li><strong>Główny konflikt:</strong> walka dobra ze złem.</li>
+                        <li><strong>Najważniejszy problem:</strong> odpowiedzialność za własne decyzje, możliwość odkupienia winy oraz siła poświęcenia.</li>
+                    </ul>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne doprecyzowanie</span>
+                        <p>Nie warto ograniczać gatunku do samej „powieści fantasy”. W utworze występują również typowe elementy baśni: magiczne przejście do innego świata, walka dobra ze złem, niezwykłe istoty, czarownica i odrodzenie bohatera.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-narnia-bohaterowie">
+                <h2>2. Bohaterowie</h2>
+
+                <h3>Rodzeństwo Pevensie</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Imię</th><th>Przydomek królewski</th><th>Charakterystyka</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Piotr</strong></td><td><span class="royal-titles">Piotr Wspaniały</span></td><td>Najstarszy z rodzeństwa. Odważny, odpowiedzialny i opiekuńczy. Dowodzi wojskami dobra.</td></tr>
+                            <tr><td><strong>Zuzanna</strong></td><td><span class="royal-titles">Zuzanna Łagodna</span></td><td>Rozsądna, spokojna i troskliwa. Posługuje się łukiem.</td></tr>
+                            <tr><td><strong>Edmund</strong></td><td><span class="royal-titles">Edmund Sprawiedliwy</span></td><td>Początkowo zdradza rodzeństwo, ale przechodzi przemianę i staje się lojalnym wojownikiem. <strong>Bohater dynamiczny</strong>.</td></tr>
+                            <tr><td><strong>Łucja</strong></td><td><span class="royal-titles">Łucja Mężna / Dzielna</span></td><td>Najmłodsza, lecz bardzo odważna, wierna i wrażliwa. Jako pierwsza odkrywa Narnię.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card card-remember">
+                    <span class="card-label">Przydomki królewskie</span>
+                    <p>Przydomki królewskie nie są przypadkowymi ozdobnikami. Podkreślają cechy, które bohaterowie ujawniają lub zdobywają podczas pobytu w Narnii.</p>
+                </div>
+
+                <h3>Aslan</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Aslan – symbol dobra</span>
+                    <p>Aslan jest potężnym lwem i prawowitym władcą Narnii.</p>
+                    <p>Symbolizuje: <strong>dobro, sprawiedliwość, miłość, poświęcenie, odkupienie i zwycięstwo nad złem</strong>.</p>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne doprecyzowanie</span>
+                        <p>Nie należy pisać, że Aslan jest po prostu „bogiem”. W interpretacjach utworu jest często odczytywany jako postać o cechach chrystologicznych, czyli przypominająca Chrystusa przez dobrowolną ofiarę, śmierć za winnego i zmartwychwstanie. Na egzaminie bezpieczniej napisać, że jest <strong>symbolem dobra i poświęcenia</strong> albo że <strong>jego historia ma wyraźne nawiązania religijne</strong>.</p>
+                    </div>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">KLUCZOWE!</span>
+                        <p><strong>Aslan NIE jest bohaterem dynamicznym.</strong> Jest <strong>symbolem</strong> – nie przechodzi wewnętrznej przemiany, od początku do końca reprezentuje dobro. Jego ofiara i zmartwychwstanie są wyrazem jego natury, nie wynikiem ewolucji charakteru.</p>
+                    </div>
+                </div>
+
+                <h3>Biała Czarownica (Jadis)</h3>
+                <div class="card card-error">
+                    <span class="card-label">Biała Czarownica – symbol zła</span>
+                    <p>Biała Czarownica, Jadis, jest władczynią Narnii pogrążonej w wiecznej zimie.</p>
+                    <p>Symbolizuje: <strong>zło, przemoc, kłamstwo, egoizm, bezwzględną władzę i zniewolenie</strong>.</p>
+                    <p><strong>Przeciwstawienie:</strong> Aslan reprezentuje dobro, miłość i poświęcenie, a Biała Czarownica — zło, władzę i przemoc.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-narnia-wydarzenia">
+                <h2>3. Najważniejsze wydarzenia</h2>
+
+                <h3>Odkrycie Narnii</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Przejście przez szafę</span>
+                    <p>Łucja przechodzi przez starą szafę i trafia do niezwykłego świata. Początkowo rodzeństwo nie wierzy w jej opowieść.</p>
+                    <p><strong>Motywy:</strong> odkrywanie nieznanego, wyobraźnia, wiara, samotność bohatera, przejście między światami.</p>
+                    <p>Łucja jest wiarygodna, ale pozostali nie chcą jej uwierzyć. To pokazuje, że prawda nie zawsze zostaje od razu zaakceptowana przez innych.</p>
+                </div>
+
+                <h3>Zdrada Edmunda</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Pokusa i zdrada</span>
+                    <p>Edmund spotyka Białą Czarownicę, która częstuje go <strong>magicznym przysmakiem (ptasim mleczkiem / Turkish Delight)</strong> i obiecuje mu władzę. Chłopiec, kierowany zazdrością i chciwością, zdradza rodzeństwo.</p>
+                    <p><strong>Motywy:</strong> pokusa, zdrada, zazdrość, słabość człowieka, wina, odpowiedzialność.</p>
+                    <p>Edmund nie jest postacią jednoznacznie złą. Popełnia zły czyn, ale później uznaje winę i podejmuje działania, dzięki którym odzyskuje zaufanie.</p>
+                </div>
+
+                <h3>Ofiara Aslana</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Poświęcenie za winnego</span>
+                    <p>Aslan zgadza się oddać życie za Edmunda, ponieważ ten złamał głębokie prawo i został skazany na śmierć. Aslan oddaje życie na <strong>Kamiennym Stole</strong>.</p>
+                    <p><strong>Motywy:</strong> poświęcenie, miłość, odkupienie, przebaczenie, odpowiedzialność za drugiego człowieka.</p>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne doprecyzowanie</span>
+                        <p>Aslan nie zostaje zabity przypadkowo. <strong>Dobrowolnie przyjmuje śmierć za winowajcę</strong>. To bardzo ważne w interpretacji sceny.</p>
+                    </div>
+                </div>
+
+                <h3>Powrót Aslana (zmartwychwstanie)</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Zmartwychwstanie</span>
+                    <p>Aslan wraca do życia, ponieważ istnieje głębsze prawo niż prawo śmierci za zdrajcę – <strong>„głębsza magia”</strong>.</p>
+                    <p><strong>Motywy:</strong> zwycięstwo dobra nad złem, odrodzenie, nadzieja, życie silniejsze od śmierci, sprawiedliwość i miłość.</p>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne doprecyzowanie</span>
+                        <p>Lepiej pisać <strong>„powrót Aslana do życia”</strong> albo <strong>„zmartwychwstanie Aslana”</strong>, zamiast „powrót zza Kamiennego Stołu”, ponieważ Kamienny Stół jest miejscem jego śmierci, a nie odrębnym światem.</p>
+                    </div>
+                </div>
+
+                <h3>Bitwa o Narnię</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Zwycięstwo dobra</span>
+                    <p>Siły Aslana walczą z wojskami Białej Czarownicy. Ostatecznie dobro zwycięża. Rodzeństwo zostaje <strong>ukoronowane</strong> na władców Narnii.</p>
+                    <p><strong>Motywy:</strong> walka dobra ze złem, odwaga, współpraca, poświęcenie, obrona ojczyzny, odpowiedzialność za wspólnotę.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-narnia-przemiana">
+                <h2>4. Przemiana Edmunda – bohater dynamiczny</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Trójkrok Edmunda</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Etap</th><th>Opis</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>1. Zdrada</strong></td><td>Edmund ulega pokusie (ptasie mleczko, obietnica władzy) i zdradza rodzeństwo Białej Czarownicy.</td></tr>
+                                <tr><td><strong>2. Skrucha</strong></td><td>Rozumie, że postąpił źle, i żałuje swojego czynu (rozmowa z Aslanem).</td></tr>
+                                <tr><td><strong>3. Naprawa błędu czynem</strong></td><td>Walczy po stronie dobra, <strong>niszczy różdżkę Czarownicy</strong> w bitwie i staje się lojalny wobec rodziny.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne</span>
+                        <p>Ten schemat jest przydatny w rozprawce, ale nie należy przedstawiać go jako mechanicznej formuły. Trzeba zawsze wyjaśnić, <strong>co dokładnie zrobił bohater i w jaki sposób pokazał przemianę</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="card card-hint">
+                    <span class="card-label">Przykład do rozprawki</span>
+                    <p><em>Edmund z „Opowieści z Narnii” jest bohaterem dynamicznym. Początkowo był zazdrosny i podatny na pokusy, dlatego zdradził swoje rodzeństwo Białej Czarownicy. Później zrozumiał swój błąd i żałował postępowania. Po otrzymaniu przebaczenia zaczął działać po stronie dobra, walczył w bitwie i stał się lojalnym bratem. Jego przemiana pokazuje, że człowiek może naprawić swoje błędy, jeśli uzna winę i udowodni zmianę własnym postępowaniem.</em></p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-narnia-motywy">
+                <h2>5. Motywy do rozprawki</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">Walka dobra ze złem</span>
+                    <p>Dobro i zło są przedstawione bardzo wyraźnie: Aslan — dobro, Biała Czarownica — zło. Narnia pod władzą Czarownicy to świat zniewolenia; Narnia wyzwolona to świat sprawiedliwości i nadziei.</p>
+                    <p>Warto podkreślić, że dobro nie zwycięża wyłącznie dzięki sile. Potrzebne są także <strong>ofiara, odwaga, lojalność, współpraca i wiara</strong>.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Rodzina</span>
+                    <p>Rodzeństwo Pevensie początkowo kłóci się i nie zawsze sobie ufa, lecz w obliczu zagrożenia jednoczy się.</p>
+                    <p><strong>Wniosek:</strong> Rodzina może być źródłem siły, ale wymaga lojalności, przebaczenia i odpowiedzialności.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Dorastanie</span>
+                    <p>Dzieci trafiają do świata, w którym muszą podejmować decyzje o poważnych konsekwencjach. W Narnii stają się odpowiedzialne za innych i uczą się odwagi.</p>
+                    <p>Najwyraźniej dorasta Edmund, ale także Piotr, Zuzanna i Łucja zdobywają doświadczenie.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Pokusa i odpowiedzialność</span>
+                    <p>Edmund otrzymuje kuszącą obietnicę władzy i przyjemności. Początkowo nie myśli o skutkach decyzji.</p>
+                    <p><strong>Wniosek:</strong> Pokusa często przedstawia zło jako łatwą drogę do szczęścia. Człowiek musi jednak ponosić odpowiedzialność za własne wybory.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Poświęcenie dla innych</span>
+                    <p>Aslan poświęca się za Edmunda. To jeden z najmocniejszych przykładów bezinteresownego ratowania drugiej osoby.</p>
+                    <p><strong>Wniosek:</strong> Poświęcenie może wynikać z miłości i odpowiedzialności, a nie ze słabości.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Przebaczenie i odkupienie</span>
+                    <p>Aslan przebacza Edmundowi, a chłopiec odzyskuje dobre imię dzięki własnym czynom. To pokazuje, że każdy zasługuje na drugą szansę.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-narnia-zdania">
+                <h2>6. Gotowe zdania do rozprawki</h2>
+                <div class="card card-hint">
+                    <span class="card-label">Bank zdań</span>
+                    <div class="bank-item">
+                        <span class="constr">Przemiana</span>
+                        <div class="example"><span class="pl">Edmund z „Opowieści z Narnii” jest bohaterem dynamicznym, ponieważ przechodzi od zdrady do lojalności.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Poświęcenie</span>
+                        <div class="example"><span class="pl">Aslan oddaje życie za Edmunda, pokazując, że miłość i poświęcenie są silniejsze od zła.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Rodzina</span>
+                        <div class="example"><span class="pl">Rodzeństwo Pevensie w obliczu zagrożenia jednoczy się i razem walczy o dobro.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Pokusa</span>
+                        <div class="example"><span class="pl">Historia Edmunda pokazuje, że pokusa może prowadzić do zdrady, ale możliwe jest odkupienie winy.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Walka dobra ze złem</span>
+                        <div class="example"><span class="pl">W „Narnii” dobro zwycięża dzięki poświęceniu, odwadze i wierze, a nie tylko dzięki sile.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Przebaczenie</span>
+                        <div class="example"><span class="pl">Aslan przebacza Edmundowi, pokazując, że każdy człowiek może zasłużyć na drugą szansę.</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOWA SEKCJA – JAK TO WYGLĄDA NA EGZAMINIE -->
+            <div class="section" data-level="exam" id="sec-e8">
+                <h2>7. Jak to wygląda na egzaminie E8?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">„Narnia” na E8</span>
+                    <ul>
+                        <li><strong>W części I arkusza</strong> może pojawić się <strong>fragment</strong> lektury, np. scena odkrycia Narnii, zdrada Edmunda lub ofiara Aslana. Do fragmentu będą pytania: prawda/fałsz, wybór, uzasadnienie postawy bohatera, interpretacja symboliki.</li>
+                        <li><strong>W części II</strong> (wypracowanie) lektura jest doskonałym materiałem do tematów o:
+                            <ul>
+                                <li>przemianie bohatera (trójkrok Edmunda),</li>
+                                <li>poświęceniu dla innych (ofiara Aslana),</li>
+                                <li>rodzinie i lojalności,</li>
+                                <li>walce dobra ze złem,</li>
+                                <li>pokusie i odpowiedzialności,</li>
+                                <li>przebaczeniu i odkupieniu.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Ważne</span>
+                        <p>Pamiętaj: w części I egzamin sprawdza <strong>tylko fragment</strong>, a nie całą treść książki. Nie musisz znać całej fabuły na pamięć, ale warto znać kontekst i najważniejsze motywy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 2 – ZAIMEK
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part2">
+            <div class="part-heading"><span class="part-num">Część 2</span> · Zaimek</div>
+
+            <div class="section" data-level="basic" id="sec-zaimek">
+                <h2>8. Czym jest zaimek?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Definicja</span>
+                    <p><strong>Zaimek</strong> to część mowy, która zastępuje inne wyrazy, najczęściej rzeczowniki, przymiotniki, liczebniki lub przysłówki.</p>
+                    <p><strong>Przykład:</strong></p>
+                    <p><em>Edmund zdradził rodzeństwo. <strong>On</strong> później żałował swojej decyzji.</em></p>
+                    <p>Zaimek <strong>on</strong> zastępuje rzeczownik „Edmund” i zapobiega powtórzeniu.</p>
+                    <p>Zaimki mogą być <strong>odmienne</strong> (np. <em>ja, mój, ten, który</em>) lub <strong>nieodmienne</strong> – w zależności od klasyfikacji szkolnej i konkretnego typu. Należy jednak pamiętać, że <strong>„się”</strong> jest zaimkiem zwrotnym, a wyrazy <strong>„tutaj”</strong> i <strong>„wtedy”</strong> w wielu klasyfikacjach szkolnych traktowane są jako <strong>przysłówki</strong>, a nie zaimki – choć bywają zaliczane do zaimków nieodmiennych w niektórych ujęciach.</p>
+                    <div class="porownanie-box" style="margin-top:8px;">
+                        <span class="porownanie-title">🔍 Zaimek osobowy vs zwrotny – kluczowa różnica</span>
+                        <p><strong>Zaimek osobowy</strong> (np. <em>on, ona, my</em>) zastępuje konkretną osobę lub rzecz i <strong>może być podmiotem zdania</strong>.</p>
+                        <p><strong>Zaimek zwrotny</strong> (np. <em>się, siebie</em>) <strong>nigdy nie jest podmiotem</strong> – wskazuje, że czynność dotyczy samego wykonawcy.</p>
+                        <ul>
+                            <li><em><strong>On</strong> wstydził się.</em> („on” – podmiot, zaimek osobowy)</li>
+                            <li><em>Edmund wstydził <strong>się</strong>.</em> („się” – zaimek zwrotny, nie jest podmiotem)</li>
+                        </ul>
+                        <p>To rozróżnienie jest często sprawdzane na egzaminie!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-zaimki-osobowe">
+                <h2>9. Zaimki osobowe</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Zaimki osobowe</span>
+                    <p>Zastępują nazwy osób lub rzeczy.</p>
+                    <p><strong>Przykłady:</strong> <em>ja, ty, on, ona, ono, my, wy, oni, one</em></p>
+                    <p><strong>Przykład w zdaniu:</strong></p>
+                    <p><em>Łucja odkryła Narnię. <strong>Ona</strong> jako pierwsza zobaczyła niezwykłą krainę.</em></p>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Mianownik</th><th>Inne formy (dopełniacz, celownik, biernik, narzędnik)</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>ja</strong></td><td>mnie, mi, mną</td></tr>
+                                <tr><td><strong>ty</strong></td><td>ciebie, tobie, tobą</td></tr>
+                                <tr><td><strong>on</strong></td><td>jego, jemu, niego, nim</td></tr>
+                                <tr><td><strong>ona</strong></td><td>jej, niej, nią</td></tr>
+                                <tr><td><strong>ono</strong></td><td>go, niego, mu, niemu, nie, nim</td></tr>
+                                <tr><td><strong>my</strong></td><td>nas, nam, nami</td></tr>
+                                <tr><td><strong>wy</strong></td><td>was, wam, wami</td></tr>
+                                <tr><td><strong>oni / one</strong></td><td>ich, im, nich, nimi</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="uwaga-box" style="margin-top:8px;">
+                        <span class="uwaga-title">📌 Uwaga</span>
+                        <p>Formy z <strong>„n”</strong> na początku (np. <em>niego, niej, nich, nim</em>) pojawiają się po przyimkach:</p>
+                        <p><em>do <strong>niego</strong>, dla <strong>niej</strong>, przed <strong>nimi</strong></em>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-zaimki-zwrotne">
+                <h2>10. Zaimki zwrotne</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Zaimki zwrotne</span>
+                    <p>Wskazują, że czynność wraca do wykonawcy.</p>
+                    <p><strong>Przykłady:</strong> <em>się, siebie, sobie, sobą</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em>Edmund wstydził <strong>się</strong> swojej zdrady.</em></li>
+                        <li><em>Bohater wziął odpowiedzialność za <strong>siebie</strong>.</em></li>
+                        <li><em>Aslan poświęcił <strong>siebie</strong> dla Edmunda.</em></li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Ważne</span>
+                        <p>Zaimek <strong>się</strong> nie ma formy mianownika i nie występuje samodzielnie jako podmiot.</p>
+                        <p>Nie myl „się” (zaimek zwrotny) z partykułą – „się” zawsze jest zaimkiem zwrotnym.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-zaimki-dzierzawcze">
+                <h2>11. Zaimki dzierżawcze</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Zaimki dzierżawcze</span>
+                    <p>Informują, do kogo coś należy.</p>
+                    <p><strong>Przykłady:</strong> <em>mój, twój, jego, jej, nasz, wasz, ich, swój</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em><strong>Nasza</strong> rodzina trafiła do Narnii.</em></li>
+                        <li><em>Edmund przyznał się do <strong>swojej</strong> winy.</em></li>
+                        <li><em>Piotr podniósł <strong>swój</strong> miecz.</em></li>
+                    </ul>
+                </div>
+
+                <h3>Ważna zasada: „swój” (PUŁAPKA E8!)</h3>
+                <div class="card card-trap">
+                    <span class="card-label">Zasada „swój”</span>
+                    <p>Zaimek <strong>swój</strong> odnosi się do <strong>podmiotu zdania</strong>.</p>
+                    <p><em>Edmund bronił <strong>swojego</strong> rodzeństwa.</em> – Edmund bronił rodzeństwa Edmunda.</p>
+                    <p>Jeśli napiszemy: <em>Edmund bronił <strong>jego</strong> rodzeństwa</em>, możemy zrozumieć, że bronił rodzeństwa innego mężczyzny.</p>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">PUŁAPKA EGZAMINACYJNA</span>
+                        <p>Częstym błędem jest używanie „jego” zamiast „swojego” w zdaniach, gdzie podmiot jest jasny. Zawsze pytaj: <strong>czy to odnosi się do podmiotu?</strong> Jeśli tak – użyj „swój”.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-zaimki-wskazujace">
+                <h2>12. Zaimki wskazujące</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Zaimki wskazujące</span>
+                    <p>Wskazują osoby, przedmioty, miejsca lub cechy.</p>
+                    <p><strong>Przykłady:</strong> <em>ten, ta, to, ci, tamten, taki, owy</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em><strong>Ta</strong> kraina była pogrążona w zimie.</em></li>
+                        <li><em><strong>Ten</strong> bohater przeszedł przemianę.</em></li>
+                        <li><em><strong>Tamta</strong> decyzja miała poważne konsekwencje.</em></li>
+                        <li><em><strong>Ci</strong> wojownicy walczyli po stronie dobra.</em></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-zaimki-pytajace">
+                <h2>13. Zaimki pytające</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Zaimki pytające</span>
+                    <p>Służą do tworzenia pytań.</p>
+                    <p><strong>Przykłady:</strong> <em>kto?, co?, jaki?, który?, czyj?, ile?, jak?, gdzie?, kiedy?</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em><strong>Kto</strong> odkrył Narnię?</em></li>
+                        <li><em><strong>Który</strong> bohater się zmienił?</em></li>
+                        <li><em><strong>Czyj</strong> czyn był przykładem poświęcenia?</em></li>
+                        <li><em><strong>Jak</strong> Edmund naprawił swój błąd?</em></li>
+                        <li><em><strong>Gdzie</strong> dzieci znalazły przejście do Narnii?</em></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-zaimki-wzgledne">
+                <h2>14. Zaimki względne</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Zaimki względne</span>
+                    <p>Łączą zdanie nadrzędne ze zdaniem podrzędnym. Najczęściej występują jako:</p>
+                    <p><em>który, jaka, jakie, kto, co, gdzie, kiedy, jaki, czyj</em></p>
+                    <p><strong>Przykłady w zdaniach złożonych:</strong></p>
+                    <ul>
+                        <li><em>Edmund, <strong>który</strong> wcześniej zdradził rodzeństwo, później stał się lojalny.</em></li>
+                        <li><em>Aslan pomógł Edmundowi, <strong>który</strong> żałował swojej winy.</em></li>
+                        <li><em>Narnia była miejscem, <strong>gdzie</strong> dzieci przeżyły niezwykłą przygodę.</em></li>
+                        <li><em>Biała Czarownica, <strong>która</strong> rządziła Narnią, bała się przepowiedni.</em></li>
+                        <li><em>Łucja, <strong>której</strong> rodzeństwo początkowo nie wierzyło, okazała się mieć rację.</em></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-zaimki-przeczace">
+                <h2>15. Zaimki przeczące</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Zaimki przeczące</span>
+                    <p>Wyrażają zaprzeczenie.</p>
+                    <p><strong>Przykłady:</strong> <em>nikt, nic, nigdy, nigdzie, żaden, niczyj</em></p>
+                    <p><strong>Przykłady w zdaniach z czasownikiem z „nie”:</strong></p>
+                    <ul>
+                        <li><em><strong>Nikt</strong> nie znał prawdziwego planu Czarownicy.</em></li>
+                        <li><em><strong>Nic</strong> nie mogło powstrzymać Aslana.</em></li>
+                        <li><em><strong>Żaden</strong> z bohaterów nie powinien lekceważyć pokusy.</em></li>
+                        <li><em>Edmund <strong>nigdy</strong> nie zapomniał swojej zdrady.</em></li>
+                        <li><em><strong>Nigdzie</strong> nie było śladu po Białej Czarownicy.</em></li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Ważne</span>
+                        <p>Z zaimkami przeczącymi często używamy również czasownika z „nie” – wtedy występuje <strong>podwójne zaprzeczenie</strong>, które w języku polskim jest poprawne i wzmacnia sens przeczący:</p>
+                        <p><em><strong>Nikt</strong> nie pokonał Aslana.</em></p>
+                        <p><em><strong>Nic</strong> nie mogło odwrócić skutków zdrady.</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 3 – ZASADY: „KTÓRY”, „SWÓJ”, PRZECINEK
+        ============================================================ -->
+        <section class="section" data-level="training" id="part3">
+            <div class="part-heading"><span class="part-num">Część 3</span> · Zasady – „który”, „swój”, przecinek</div>
+
+            <div class="section" data-level="training" id="sec-ktory">
+                <h2>16. „Który” – zaimek pytający czy względny?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Rozróżnienie</span>
+                    <p>Słowo <strong>„który”</strong> może pełnić różne funkcje.</p>
+                </div>
+
+                <h3>„Który” jako zaimek pytający</h3>
+                <div class="example">
+                    <span class="tag">pytający</span>
+                    <span class="pl"><strong>Który</strong> bohater odkrył Narnię?</span>
+                </div>
+                <p>Zdanie zawiera pytanie, więc „który” jest zaimkiem pytającym.</p>
+
+                <h3>„Który” jako zaimek względny</h3>
+                <div class="example">
+                    <span class="tag">względny</span>
+                    <span class="pl">Edmund, <strong>który</strong> wcześniej zdradził rodzeństwo, później się zmienił.</span>
+                </div>
+                <p>„Który” nie tworzy pytania, lecz wprowadza zdanie podrzędne i odnosi się do Edmunda.</p>
+            </div>
+
+            <div class="section" data-level="training" id="sec-przecinek-ktory">
+                <h2>17. Przecinek przed „który” (PUŁAPKA E8!)</h2>
+                <div class="card card-trap">
+                    <span class="card-label">Przecinek przed „który”</span>
+                    <p>Jeżeli <strong>„który”</strong> rozpoczyna zdanie podrzędne przydawkowe, stawiamy przed nim <strong>przecinek</strong>.</p>
+                    <p><strong>Nie stawiamy</strong> przecinka automatycznie przed każdym „który” – to zależy od funkcji w zdaniu!</p>
+                </div>
+
+                <h3>Zdanie z wtrąconym zdaniem podrzędnym</h3>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Edmund, <strong>który początkowo uległ pokusie</strong>, później stał się lojalny.</span>
+                </div>
+                <p>Zdanie podrzędne znajduje się w środku, więc przecinek występuje z dwóch stron.</p>
+
+                <h3>Zdanie podrzędne na końcu</h3>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Aslan pomógł chłopcu, <strong>który żałował swojej zdrady</strong>.</span>
+                </div>
+
+                <h3>Zdanie podrzędne na początku</h3>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl"><strong>Kto wierzy w dobro</strong>, ten potrafi zachować nadzieję.</span>
+                </div>
+                <p>W tym przypadku przecinek zamyka zdanie podrzędne.</p>
+
+                <h3>Kiedy przecinek przed „który” NIE występuje?</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Bez przecinka – „który” w zdaniu dopełnieniowym</span>
+                    <p>Gdy <strong>„który”</strong> pojawia się w zdaniu podrzędnym dopełnieniowym (czyli takim, który jest niezbędny do zrozumienia treści), przecinek przed całym zdaniem podrzędnym <strong>nie</strong> jest wymagany.</p>
+                    <div class="example">
+                        <span class="tag">poprawnie</span>
+                        <span class="pl">Nie wiem, <strong>który bohater przybył pierwszy</strong>.</span>
+                    </div>
+                    <p>Przecinek występuje przed całym zdaniem podrzędnym, ale nie wynika to z samego słowa „który” – wynika z konstrukcji <em>„Nie wiem, ...”</em>.</p>
+                    <div class="example">
+                        <span class="tag">poprawnie (przecinek przed całym zdaniem)</span>
+                        <span class="pl">Zastanawiał się, <strong>który z braci ma rację</strong>.</span>
+                    </div>
+                    <div class="uwaga-box" style="margin-top:8px;">
+                        <span class="uwaga-title">📌 Wskazówka</span>
+                        <p>Nie zapamiętuj sztywno, że „przed każdym 'który' stawiamy przecinek”. <strong>Przecinek zależy od tego, czy „który” wprowadza zdanie podrzędne przydawkowe (wtedy stawiamy)</strong>, czy też pojawia się w innej konstrukcji.</p>
+                    </div>
+                </div>
+
+                <div class="korekta" style="margin-top:8px;">
+                    <span class="korekta-title">PUŁAPKA EGZAMINACYJNA</span>
+                    <p>Nie zawsze przecinek pojawia się przed wyrazem „który”. Jeśli „który” nie wprowadza zdania podrzędnego przydawkowego, lecz jest częścią grupy wyrazów, zasada może wyglądać inaczej:</p>
+                    <p><em>Nie wiem, <strong>który bohater przybył pierwszy</strong>.</em></p>
+                    <p>Tutaj przecinek występuje przed całym zdaniem podrzędnym „który bohater przybył pierwszy”, a nie dlatego, że samo słowo „który” zawsze wymaga przecinka.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-swoj">
+                <h2>18. Zasada „swój” – powtórzenie (PUŁAPKA E8!)</h2>
+                <div class="card card-trap">
+                    <span class="card-label">Zasada „swój”</span>
+                    <p>Zaimek <strong>swój</strong> odnosi się do <strong>podmiotu zdania</strong>.</p>
+                </div>
+                <div class="example">
+                    <span class="tag">poprawnie</span>
+                    <span class="pl">Edmund bronił <strong>swojego</strong> rodzeństwa.</span>
+                    <span class="expl">(rodzeństwo Edmunda)</span>
+                </div>
+                <div class="example">
+                    <span class="tag">niepoprawnie (niejasne)</span>
+                    <span class="pl error-text">Edmund bronił <strong>jego</strong> rodzeństwa.</span>
+                    <span class="expl">(czyjego? – nie wiadomo)</span>
+                </div>
+                <div class="korekta" style="margin-top:8px;">
+                    <span class="korekta-title">PUŁAPKA EGZAMINACYJNA</span>
+                    <p>Na egzaminie często pojawia się zadanie, w którym trzeba wybrać między „jego” a „swojego”. Zawsze sprawdzaj, czy zaimek odnosi się do podmiotu – jeśli tak, użyj „swój”.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 4 – ĆWICZENIA INTERAKTYWNE
+        ============================================================ -->
+        <section class="section" data-level="training" id="part4">
+            <div class="part-heading"><span class="part-num">Część 4</span> · Ćwiczenia interaktywne</div>
+
+            <div class="hide-all-wrap">
+                <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+                <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cwiczenia">
+                <h2>19. Ćwiczenie – rozpoznaj rodzaj zaimka</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ, jakiego rodzaju jest podkreślony zaimek. <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. <strong>On</strong> później żałował swojej decyzji.</span>
+                        <select id="zaimek1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="osobowy">osobowy</option>
+                            <option value="zwrotny">zwrotny</option>
+                            <option value="dzierzawczy">dzierżawczy</option>
+                            <option value="wskazujacy">wskazujący</option>
+                            <option value="pytajacy">pytający</option>
+                            <option value="wzgledny">względny</option>
+                            <option value="przeczacy">przeczący</option>
+                        </select>
+                        <span class="result-icon" id="zaimekIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Edmund wstydził <strong>się</strong> swojej zdrady.</span>
+                        <select id="zaimek2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="osobowy">osobowy</option>
+                            <option value="zwrotny">zwrotny</option>
+                            <option value="dzierzawczy">dzierżawczy</option>
+                            <option value="wskazujacy">wskazujący</option>
+                            <option value="pytajacy">pytający</option>
+                            <option value="wzgledny">względny</option>
+                            <option value="przeczacy">przeczący</option>
+                        </select>
+                        <span class="result-icon" id="zaimekIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. <strong>Nasza</strong> rodzina trafiła do Narnii.</span>
+                        <select id="zaimek3" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="osobowy">osobowy</option>
+                            <option value="zwrotny">zwrotny</option>
+                            <option value="dzierzawczy">dzierżawczy</option>
+                            <option value="wskazujacy">wskazujący</option>
+                            <option value="pytajacy">pytający</option>
+                            <option value="wzgledny">względny</option>
+                            <option value="przeczacy">przeczący</option>
+                        </select>
+                        <span class="result-icon" id="zaimekIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. Edmund, <strong>który</strong> wcześniej zdradził rodzeństwo, później się zmienił.</span>
+                        <select id="zaimek4" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="osobowy">osobowy</option>
+                            <option value="zwrotny">zwrotny</option>
+                            <option value="dzierzawczy">dzierżawczy</option>
+                            <option value="wskazujacy">wskazujący</option>
+                            <option value="pytajacy">pytający</option>
+                            <option value="wzgledny">względny</option>
+                            <option value="przeczacy">przeczący</option>
+                        </select>
+                        <span class="result-icon" id="zaimekIcon4"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">5. <strong>Kto</strong> odkrył Narnię?</span>
+                        <select id="zaimek5" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="osobowy">osobowy</option>
+                            <option value="zwrotny">zwrotny</option>
+                            <option value="dzierzawczy">dzierżawczy</option>
+                            <option value="wskazujacy">wskazujący</option>
+                            <option value="pytajacy">pytający</option>
+                            <option value="wzgledny">względny</option>
+                            <option value="przeczacy">przeczący</option>
+                        </select>
+                        <span class="result-icon" id="zaimekIcon5"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">6. <strong>Nikt</strong> nie znał prawdziwego planu Czarownicy.</span>
+                        <select id="zaimek6" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="osobowy">osobowy</option>
+                            <option value="zwrotny">zwrotny</option>
+                            <option value="dzierzawczy">dzierżawczy</option>
+                            <option value="wskazujacy">wskazujący</option>
+                            <option value="pytajacy">pytający</option>
+                            <option value="wzgledny">względny</option>
+                            <option value="przeczacy">przeczący</option>
+                        </select>
+                        <span class="result-icon" id="zaimekIcon6"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">7. <strong>Ten</strong> bohater przeszedł przemianę.</span>
+                        <select id="zaimek7" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="osobowy">osobowy</option>
+                            <option value="zwrotny">zwrotny</option>
+                            <option value="dzierzawczy">dzierżawczy</option>
+                            <option value="wskazujacy">wskazujący</option>
+                            <option value="pytajacy">pytający</option>
+                            <option value="wzgledny">względny</option>
+                            <option value="przeczacy">przeczący</option>
+                        </select>
+                        <span class="result-icon" id="zaimekIcon7"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkZaimki()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="zaimekResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cw-uzupelnij">
+                <h2>20. Ćwiczenie – uzupełnij zdania odpowiednim zaimkiem</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wpisz odpowiedni zaimek w lukę (osobowy, zwrotny, dzierżawczy, wskazujący, pytający, względny lub przeczący). <span class="level-badge level-training">TRENING</span></div>
+                    <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:8px;">Wskazówka: zastanów się, jaką funkcję pełni zaimek – czy zastępuje osobę, wskazuje przynależność, wprowadza pytanie, łączy zdania, czy przeczy.</p>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Łucja odkryła Narnię. <strong>_____</strong> jako pierwsza zobaczyła niezwykłą krainę.</span>
+                        <input type="text" id="uzup1" placeholder="wpisz zaimek..." style="width:120px;" />
+                        <span class="result-icon" id="uzupIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Edmund wstydził <strong>_____</strong> swojej zdrady.</span>
+                        <input type="text" id="uzup2" placeholder="wpisz zaimek..." style="width:120px;" />
+                        <span class="result-icon" id="uzupIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Aslan oddał życie za Edmunda, <strong>_____</strong> wcześniej zdradził rodzeństwo.</span>
+                        <input type="text" id="uzup3" placeholder="wpisz zaimek..." style="width:120px;" />
+                        <span class="result-icon" id="uzupIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. <strong>_____</strong> bohater najbardziej zmienił się w Narnii?</span>
+                        <input type="text" id="uzup4" placeholder="wpisz zaimek..." style="width:120px;" />
+                        <span class="result-icon" id="uzupIcon4"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">5. <strong>_____</strong> nie znał prawdziwego planu Białej Czarownicy.</span>
+                        <input type="text" id="uzup5" placeholder="wpisz zaimek..." style="width:120px;" />
+                        <span class="result-icon" id="uzupIcon5"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">6. Piotr podniósł <strong>_____</strong> miecz i ruszył do walki.</span>
+                        <input type="text" id="uzup6" placeholder="wpisz zaimek..." style="width:120px;" />
+                        <span class="result-icon" id="uzupIcon6"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">7. Narnia była miejscem, <strong>_____</strong> dzieci przeżyły niezwykłą przygodę.</span>
+                        <input type="text" id="uzup7" placeholder="wpisz zaimek..." style="width:120px;" />
+                        <span class="result-icon" id="uzupIcon7"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkUzupelnij()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="uzupResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-przecinek-ktory">
+                <h2>21. Ćwiczenie – przecinek przed „który”</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wstaw przecinek tam, gdzie jest potrzebny. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Edmund który wcześniej zdradził rodzeństwo później stał się lojalny.</span>
+                        <input type="text" id="ktory1" placeholder="popraw..." style="width:280px;" />
+                        <span class="result-icon" id="ktoryIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Aslan pomógł Edmundowi który żałował swojej winy.</span>
+                        <input type="text" id="ktory2" placeholder="popraw..." style="width:280px;" />
+                        <span class="result-icon" id="ktoryIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Narnia była miejscem gdzie dzieci przeżyły niezwykłą przygodę.</span>
+                        <input type="text" id="ktory3" placeholder="popraw..." style="width:280px;" />
+                        <span class="result-icon" id="ktoryIcon3"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkKtory()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="ktoryResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-swoj">
+                <h2>22. Ćwiczenie – „swój” czy „jego”?</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wybierz poprawny zaimek dzierżawczy. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Edmund bronił <strong>(swojego / jego)</strong> rodzeństwa.</span>
+                        <select id="swoj1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="swojego">swojego</option>
+                            <option value="jego">jego</option>
+                        </select>
+                        <span class="result-icon" id="swojIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Piotr podniósł <strong>(swój / jego)</strong> miecz.</span>
+                        <select id="swoj2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="swoj">swój</option>
+                            <option value="jego">jego</option>
+                        </select>
+                        <span class="result-icon" id="swojIcon2"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkSwoj()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="swojResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 5 – FISZKI
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part5">
+            <div class="part-heading"><span class="part-num">Część 5</span> · Fiszki</div>
+
+            <div class="section" data-level="basic" id="sec-flashcards">
+                <h2>23. Fiszki – najważniejsze pojęcia</h2>
+                <div class="flashcard-grid">
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek – definicja</span>
+                        <span class="back">Część mowy zastępująca najczęściej rzeczownik, przymiotnik, liczebnik lub przysłówek.<br />Przykład: <em>on, mój, ten, który</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek osobowy</span>
+                        <span class="back"><em>ja, ty, on, ona, ono, my, wy, oni, one</em><br />Przykład: <em>Łucja odkryła Narnię. <strong>Ona</strong> była pierwsza.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek zwrotny</span>
+                        <span class="back"><em>się, siebie, sobie, sobą</em><br />Przykład: <em>Edmund wstydził <strong>się</strong> swojej zdrady.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek dzierżawczy</span>
+                        <span class="back"><em>mój, twój, jego, jej, nasz, wasz, ich, swój</em><br />Przykład: <em><strong>Nasza</strong> rodzina trafiła do Narnii.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek wskazujący</span>
+                        <span class="back"><em>ten, ta, to, ci, tamten, taki, owy</em><br />Przykład: <em><strong>Ten</strong> bohater przeszedł przemianę.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek pytający</span>
+                        <span class="back"><em>kto?, co?, jaki?, który?, czyj?, ile?, jak?, gdzie?, kiedy?</em><br />Przykład: <em><strong>Kto</strong> odkrył Narnię?</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek względny</span>
+                        <span class="back"><em>który, jaka, jakie, kto, co, gdzie, kiedy, jaki, czyj</em><br />Przykład: <em>Edmund, <strong>który</strong> wcześniej zdradził...</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek przeczący</span>
+                        <span class="back"><em>nikt, nic, nigdy, nigdzie, żaden, niczyj</em><br />Przykład: <em><strong>Nikt</strong> nie znał planu Czarownicy.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zasada „swój” (PUŁAPKA!)</span>
+                        <span class="back">Zaimek <strong>swój</strong> odnosi się do <strong>podmiotu zdania</strong>.<br />Przykład: <em>Edmund bronił <strong>swojego</strong> rodzeństwa.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Przecinek przed „który” (PUŁAPKA!)</span>
+                        <span class="back">Gdy <strong>„który”</strong> wprowadza zdanie podrzędne przydawkowe – stawiamy przecinek.<br />Przykład: <em>Edmund, <strong>który</strong> wcześniej zdradził...</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Aslan – symbol</span>
+                        <span class="back"><strong>Nie jest bohaterem dynamicznym</strong>.<br />Jest symbolem <strong>dobra, miłości, poświęcenia i odkupienia</strong>.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Edmund – trójkrok przemiany</span>
+                        <span class="back"><strong>1. Zdrada</strong> → <strong>2. Skrucha</strong> → <strong>3. Naprawa czynem</strong><br />Przykład bohatera dynamicznego.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Biała Czarownica (Jadis)</span>
+                        <span class="back">Symbol <strong>zła, przemocy, kłamstwa i bezwzględnej władzy</strong>.<br />Władczyni Narnii w wiecznej zimie.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Rodzeństwo Pevensie</span>
+                        <span class="back"><strong>Piotr</strong> (Wspaniały), <strong>Zuzanna</strong> (Łagodna), <strong>Edmund</strong> (Sprawiedliwy), <strong>Łucja</strong> (Mężna).</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zaimek osobowy vs zwrotny</span>
+                        <span class="back"><strong>Osobowy:</strong> zastępuje osobę, może być podmiotem (<em>on, ona</em>)<br /><strong>Zwrotny:</strong> wskazuje na wykonawcę czynności, nie jest podmiotem (<em>się, siebie</em>)</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 6 – TEST KOŃCOWY (MISJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part6">
+            <div class="part-heading"><span class="part-num">Część 6</span> · Test końcowy – MISJA</div>
+
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>24. Misja końcowa</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Zadanie</span>
+                    <p>Bez zaglądania do notatek – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                    <p>Pamiętaj o najważniejszych poprawkach: <strong>Aslan nie jest bohaterem dynamicznym</strong>, <strong>Edmund przechodzi przemianę</strong> (zdrada → skrucha → naprawa czynem), <strong>„swój” odnosi się do podmiotu</strong>, <strong>przecinek przed „który”</strong> w zdaniach przydawkowych.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą lub odpowiedzią. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 7 – PODSUMOWANIE I PUŁAPKI
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part7">
+            <div class="part-heading"><span class="part-num">Część 7</span> · Podsumowanie i pułapki</div>
+
+            <div class="section" data-level="exam" id="sec-podsumowanie">
+                <h2>25. Co powinieneś umieć po tej lekcji?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Sprawdź się</span>
+                    <ul>
+                        <li><span class="correct-text">Znam autora, tytuł i głównych bohaterów „Narnii”.</span></li>
+                        <li><span class="correct-text">Wiem, że Aslan jest symbolem dobra i poświęcenia, a nie bohaterem dynamicznym.</span></li>
+                        <li><span class="correct-text">Rozumiem trójkrok przemiany Edmunda: zdrada → skrucha → naprawa czynem.</span></li>
+                        <li><span class="correct-text">Znam motywy: walka dobra ze złem, rodzina, dorastanie, pokusa, poświęcenie, przebaczenie.</span></li>
+                        <li><span class="correct-text">Rozróżniam siedem rodzajów zaimków: osobowe, zwrotne, dzierżawcze, wskazujące, pytające, względne, przeczące.</span></li>
+                        <li><span class="correct-text">Znam zasadę „swój” – odnosi się do podmiotu zdania.</span></li>
+                        <li><span class="correct-text">Wiem, kiedy stawiamy przecinek przed „który” (zdania przydawkowe).</span></li>
+                        <li><span class="correct-text">Rozróżniam zaimek osobowy (może być podmiotem) od zwrotnego („się” nie jest podmiotem).</span></li>
+                        <li><span class="correct-text">Mam gotowe zdania do wykorzystania w rozprawce.</span></li>
+                        <li><span class="correct-text">Wiem, jak „Narnia” jest traktowana na egzaminie (fragment w części I, dowolne wykorzystanie w wypracowaniu).</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-pulapki">
+                <h2>26. Najczęstsze pułapki egzaminacyjne</h2>
+                <div class="table-wrap">
+                    <table class="trap-table">
+                        <thead><tr><th>Pułapka</th><th>Błąd</th><th>Poprawnie</th></tr></thead>
+                        <tbody>
+                            <tr><td>Aslan jako bohater dynamiczny</td><td><span class="error-text">Aslan przeszedł przemianę.</span></td><td><span class="correct-text">Aslan to symbol dobra i poświęcenia, nie bohater dynamiczny.</span></td></tr>
+                            <tr><td>Ofiara Aslana</td><td><span class="error-text">Aslan został zabity przypadkowo.</span></td><td><span class="correct-text">Aslan dobrowolnie oddał życie za Edmunda.</span></td></tr>
+                            <tr><td>Powrót Aslana</td><td><span class="error-text">Aslan wrócił zza Kamiennego Stołu.</span></td><td><span class="correct-text">Aslan powrócił do życia po śmierci na Kamiennym Stole (zmartwychwstał).</span></td></tr>
+                            <tr><td>„Swój” – zasada</td><td><span class="error-text">„Swój” oznacza dowolną przynależność.</span></td><td><span class="correct-text">„Swój” odnosi się do podmiotu zdania.</span></td></tr>
+                            <tr><td>„Który” – przecinek</td><td><span class="error-text">„Który” zawsze wymaga przecinka.</span></td><td><span class="correct-text">Przecinek zależy od tego, czy „który” wprowadza zdanie podrzędne przydawkowe.</span></td></tr>
+                            <tr><td>Mylenie „się”</td><td><span class="error-text">„Się” to partykuła.</span></td><td><span class="correct-text">„Się” to zaimek zwrotny.</span></td></tr>
+                            <tr><td>Edmund – charakter</td><td><span class="error-text">Edmund od początku był zły.</span></td><td><span class="correct-text">Edmund popełnił zły czyn, ale później przeszedł przemianę.</span></td></tr>
+                            <tr><td>Zaimki w wypracowaniu</td><td><span class="error-text">Zaimki zawsze poprawiają styl.</span></td><td><span class="correct-text">Zaimki pomagają uniknąć powtórzeń, ale ich nadmiar może powodować niejasność.</span></td></tr>
+                            <tr><td>Zaimek osobowy vs zwrotny</td><td><span class="error-text">„On” i „się” to ten sam rodzaj zaimka.</span></td><td><span class="correct-text">„On” – osobowy (może być podmiotem), „się” – zwrotny (nie jest podmiotem).</span></td></tr>
+                            <tr><td>Egzamin a treść lektury</td><td><span class="error-text">Egzamin sprawdza całą treść książki.</span></td><td><span class="correct-text">W części I egzamin sprawdza tylko fragment z arkusza.</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="topics">
+                <h2>Lista tematów głównych</h2>
+                <p style="color:var(--color-text-muted); font-size:0.9rem;">Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.</p>
+                <ol class="topic-list">
+                    <li><a href="#sec-cke">Status lektury na egzaminie (CKE)</a></li>
+                    <li><a href="#sec-narnia-info">Podstawowe informacje o „Narnii”</a></li>
+                    <li><a href="#sec-narnia-bohaterowie">Bohaterowie</a></li>
+                    <li><a href="#sec-narnia-wydarzenia">Najważniejsze wydarzenia</a></li>
+                    <li><a href="#sec-narnia-przemiana">Przemiana Edmunda</a></li>
+                    <li><a href="#sec-narnia-motywy">Motywy</a></li>
+                    <li><a href="#sec-narnia-zdania">Zdania do rozprawki</a></li>
+                    <li><a href="#sec-e8">„Narnia” na E8</a></li>
+                    <li><a href="#sec-zaimek">Zaimek – definicja</a></li>
+                    <li><a href="#sec-zaimki-osobowe">Zaimki osobowe</a></li>
+                    <li><a href="#sec-zaimki-zwrotne">Zaimki zwrotne</a></li>
+                    <li><a href="#sec-zaimki-dzierzawcze">Zaimki dzierżawcze</a></li>
+                    <li><a href="#sec-zaimki-wskazujace">Zaimki wskazujące</a></li>
+                    <li><a href="#sec-zaimki-pytajace">Zaimki pytające</a></li>
+                    <li><a href="#sec-zaimki-wzgledne">Zaimki względne</a></li>
+                    <li><a href="#sec-zaimki-przeczace">Zaimki przeczące</a></li>
+                    <li><a href="#sec-ktory">„Który” – pytający czy względny?</a></li>
+                    <li><a href="#sec-przecinek-ktory">Przecinek przed „który”</a></li>
+                    <li><a href="#sec-swoj">Zasada „swój”</a></li>
+                    <li><a href="#sec-cwiczenia">Ćwiczenia</a></li>
+                    <li><a href="#sec-flashcards">Fiszki</a></li>
+                    <li><a href="#sec-mission">Test końcowy</a></li>
+                    <li><a href="#sec-podsumowanie">Podsumowanie</a></li>
+                    <li><a href="#sec-pulapki">Pułapki</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STOPKA
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>Lekcja 3 – „Opowieści z Narnii” + zaimek</strong> &bull; Wersja 2.1 – zaktualizowana zgodnie z wytycznymi CKE i realiami E8 &bull; 2026-08-24</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
+            <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ======================================================================
+        //  JAVASCRIPT – SYSTEM INTERAKTYWNY
+        // ======================================================================
+
+        // ---------- LOCAL STORAGE ----------
+        function saveProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            const state = [];
+            checks.forEach(cb => state.push(cb.checked));
+            try {
+                localStorage.setItem('polski_lec3_progress_v2', JSON.stringify(state));
+            } catch (e) { /* ignore */ }
+        }
+
+        function loadProgress() {
+            let saved;
+            try {
+                saved = localStorage.getItem('polski_lec3_progress_v2');
+            } catch (e) { return; }
+            if (!saved) return;
+            let state;
+            try {
+                state = JSON.parse(saved);
+            } catch (e) { return; }
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            checks.forEach((cb, i) => {
+                if (i < state.length) cb.checked = state[i];
+            });
+            updateProgress();
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            try {
+                localStorage.removeItem('polski_lec3_progress_v2');
+            } catch (e) { /* ignore */ }
+            updateProgress();
+        }
+
+        // ---------- TOGGLE ----------
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? 'Ukryj odpowiedzi' : 'Pokaż odpowiedzi';
+            }
+        }
+
+        function toggleFlashcard(card) {
+            const flipped = card.classList.toggle('flipped');
+            card.setAttribute('aria-pressed', String(flipped));
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-content.show, .hint-content.show, .explain-content.show').forEach(el => {
+                el.classList.remove('show');
+            });
+        }
+
+        // ---------- PROGRESS ----------
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            let total = 0,
+                done = 0;
+            checkboxes.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 0;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            const fill = document.getElementById('progressFill');
+            if (fill) fill.style.width = pct + '%';
+            const pctLabel = document.getElementById('progressPercent');
+            if (pctLabel) pctLabel.textContent = pct + '%';
+
+            const statusEl = document.getElementById('progressStatus');
+            if (statusEl) {
+                if (pct === 100) statusEl.textContent = 'Świetnie. Opanowałeś lekcję!';
+                else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze. Dokończ resztę.';
+                else if (pct >= 50) statusEl.textContent = 'Dobrze. Poćwicz jeszcze.';
+                else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+                else statusEl.textContent = 'Zacznij naukę';
+            }
+
+            updateTasks(pct);
+            saveProgress();
+        }
+
+        function updateTasks(pct) {
+            const tasks = document.querySelectorAll('.today-tasks .task');
+            const thresholds = [10, 25, 45, 65, 85];
+            tasks.forEach((task, i) => {
+                if (pct >= thresholds[i]) task.classList.add('done');
+                else task.classList.remove('done');
+            });
+        }
+
+        // ---------- FILTER ----------
+        let currentView = 'all';
+
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+            if (btn) btn.classList.add('active');
+            applyFilter(view);
+            updateVisibleCount();
+        }
+
+        function applyFilter(view) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const level = sec.dataset.level || 'basic';
+                let show = true;
+                if (view === 'basic') {
+                    show = (level === 'basic' || level === 'training' || level === 'remember');
+                } else if (view === 'exam') {
+                    show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level ===
+                        'difficult' || level === 'remember');
+                }
+                if (view === 'all') show = true;
+                sec.classList.toggle('hidden-by-filter', !show);
+            });
+        }
+
+        function updateVisibleCount() {
+            const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+            const total = document.querySelectorAll('.section').length;
+            const vEl = document.getElementById('visibleCount');
+            const tEl = document.getElementById('totalCount');
+            if (vEl) vEl.textContent = visible;
+            if (tEl) tEl.textContent = total;
+        }
+
+        // ---------- ĆWICZENIA ----------
+        function checkZaimki() {
+            const answers = ['osobowy', 'zwrotny', 'dzierzawczy', 'wzgledny', 'pytajacy', 'przeczacy', 'wskazujacy'];
+            const icons = ['zaimekIcon1', 'zaimekIcon2', 'zaimekIcon3', 'zaimekIcon4', 'zaimekIcon5', 'zaimekIcon6', 'zaimekIcon7'];
+            let correct = 0;
+            for (let i = 1; i <= 7; i++) {
+                const sel = document.getElementById('zaimek' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('zaimekResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 7 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/7. ${correct === 7 ? 'Świetnie rozpoznajesz rodzaje zaimków!' : 'Sprawdź notatki – zwróć uwagę na funkcję każdego zaimka.'}</span>`;
+            }
+        }
+
+        function checkUzupelnij() {
+            const answers = ['Ona', 'się', 'który', 'Który', 'Nikt', 'swój', 'gdzie'];
+            const icons = ['uzupIcon1', 'uzupIcon2', 'uzupIcon3', 'uzupIcon4', 'uzupIcon5', 'uzupIcon6', 'uzupIcon7'];
+            let correct = 0;
+            for (let i = 1; i <= 7; i++) {
+                const inp = document.getElementById('uzup' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim();
+                // Case-insensitive but preserve capitalization for display
+                const isOk = val.toLowerCase() === answers[i - 1].toLowerCase();
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('uzupResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 7 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/7. ${correct === 7 ? 'Świetnie uzupełniasz zdania zaimkami!' : 'Sprawdź, który zaimek najlepiej pasuje do kontekstu.'}</span>`;
+            }
+        }
+
+        function checkKtory() {
+            const answers = [
+                'Edmund, który wcześniej zdradził rodzeństwo, później stał się lojalny.',
+                'Aslan pomógł Edmundowi, który żałował swojej winy.',
+                'Narnia była miejscem, gdzie dzieci przeżyły niezwykłą przygodę.'
+            ];
+            const icons = ['ktoryIcon1', 'ktoryIcon2', 'ktoryIcon3'];
+            let correct = 0;
+            for (let i = 1; i <= 3; i++) {
+                const inp = document.getElementById('ktory' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim();
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('ktoryResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 3 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/3. ${correct === 3 ? 'Przecinek przed "który" opanowany!' : 'Pamiętaj: przed "który" stawiamy przecinek, gdy wprowadza zdanie podrzędne przydawkowe.'}</span>`;
+            }
+        }
+
+        function checkSwoj() {
+            const answers = ['swojego', 'swoj'];
+            const icons = ['swojIcon1', 'swojIcon2'];
+            let correct = 0;
+            for (let i = 1; i <= 2; i++) {
+                const sel = document.getElementById('swoj' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('swojResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 2 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/2. ${correct === 2 ? 'Zasada "swój" opanowana!' : 'Pamiętaj: "swój" odnosi się do podmiotu zdania.'}</span>`;
+            }
+        }
+
+        // ---------- MISJA ----------
+        const missionData = [
+            { q: '1. Kto jest autorem „Opowieści z Narnii”?', correct: 'C.S. Lewis' },
+            { q: '2. Która z postaci jest symbolem dobra i poświęcenia, ale NIE jest bohaterem dynamicznym?', correct: 'Aslan' },
+            { q: '3. Kto jako pierwszy odkrył Narnię?', correct: 'Łucja' },
+            { q: '4. Jakie są trzy etapy przemiany Edmunda? (zdrada → ... → naprawa czynem)', correct: 'skrucha' },
+            { q: '5. Jaki zaimek zastępuje nazwy osób? (np. ja, ty, on)', correct: 'osobowy' },
+            { q: '6. Jaki zaimek wskazuje, że czynność wraca do wykonawcy? (np. się, siebie)', correct: 'zwrotny' },
+            { q: '7. Jaki zaimek informuje o przynależności? (np. mój, twój, swój)', correct: 'dzierżawczy' },
+            { q: '8. Jaki zaimek łączy zdanie nadrzędne z podrzędnym? (np. który, co, gdzie)', correct: 'względny' },
+            { q: '9. Czy Aslan jest bohaterem dynamicznym? (tak/nie)', correct: 'nie' },
+            { q: '10. Uzupełnij: „Edmund bronił _____ rodzeństwa.” (swój / jego) – poprawna forma', correct: 'swojego' },
+            { q: '11. Jaki zaimek wyraża zaprzeczenie? (np. nikt, nic)', correct: 'przeczący' },
+            { q: '12. Jaki zaimek wskazuje na konkretną osobę lub rzecz? (np. ten, ta, tamten)', correct: 'wskazujący' },
+            { q: '13. Czy w części I egzaminu sprawdzana jest znajomość całej treści książki czy tylko fragmentu?', correct: 'fragment' },
+            { q: '14. Jaki jest przydomek królewski Edmunda?', correct: 'Sprawiedliwy' },
+        ];
+
+        function initMission() {
+            const container = document.getElementById('missionQuestions');
+            if (!container) return;
+            container.innerHTML = '';
+            missionData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'fitb-row';
+                div.innerHTML = `
+                        <span style="font-weight:500;">${item.q}</span>
+                        <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:180px;" />
+                        <span class="result-icon" id="missionIcon${idx}"></span>
+                    `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkMission() {
+            let correct = 0;
+            const total = missionData.length;
+            const mistakes = [];
+            missionData.forEach((item, idx) => {
+                const input = document.getElementById('missionInput' + idx);
+                const icon = document.getElementById('missionIcon' + idx);
+                if (!input || !icon) return;
+                const val = input.value.trim().toLowerCase();
+                const isOk = val === item.correct.toLowerCase();
+                input.classList.toggle('correct', isOk);
+                input.classList.toggle('wrong', !isOk);
+                if (isOk) {
+                    icon.textContent = '✓';
+                    icon.style.color = '#2d8f5e';
+                    correct++;
+                } else {
+                    icon.textContent = '✗';
+                    icon.style.color = '#dc3545';
+                    mistakes.push(`${idx + 1}. (poprawnie: „${item.correct}”)`);
+                }
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (!resultDiv) return;
+            resultDiv.style.display = 'block';
+            const pct = Math.round((correct / total) * 100);
+            let msg = '',
+                cls = '';
+            if (pct === 100) { msg = 'Świetnie! Opanowałeś lekcję!';
+                cls = 'perfect'; } else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane zagadnienia.';
+                cls = 'good'; } else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.';
+                cls = 'ok'; } else { msg = 'Powtórz podstawy i rozwiąż test jeszcze raz.';
+                cls = 'fail'; }
+            resultDiv.className = 'mission-result ' + cls;
+            resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+                (mistakes.length ? `<br /><span class="text-sm">Popraw odpowiedzi: ${mistakes.join('; ')}</span>` : '');
+        }
+
+        function resetMission() {
+            document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'wrong');
+            });
+            document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (resultDiv) resultDiv.style.display = 'none';
+        }
+
+        // ---------- MASTER ----------
+        function mmToggleFocus() {
+            const active = document.body.classList.toggle('mm-focus');
+            const b = document.getElementById('mmFocusBtn');
+            if (b) b.textContent = active ? 'Wyłącz skupienie' : 'Tryb skupienia';
+            try {
+                localStorage.setItem('polski_lec3_focus_v2', active ? '1' : '0');
+            } catch (e) { /* ignore */ }
+        }
+
+        function mmReveal(btn, text) {
+            const out = btn.querySelector('.mm-answer');
+            if (!out) return;
+            const open = out.textContent.trim() !== '';
+            out.textContent = open ? '' : 'Odpowiedź: ' + text;
+        }
+
+        function mmUpdateSection() {
+            const sections = [...document.querySelectorAll('.section[id]')];
+            if (!sections.length) return;
+            const y = window.scrollY + 150;
+            let cur = sections[0];
+            sections.forEach(el => {
+                if (el.offsetTop <= y) cur = el;
+            });
+            sections.forEach(el => el.classList.toggle('mm-current-section', el === cur));
+            const h = cur.querySelector('h2, h3');
+            const n = document.getElementById('mmSectionName');
+            if (h && n) n.textContent = 'Lekcja 3 · ' + h.textContent.trim();
+        }
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            setView('all');
+            initMission();
+            try {
+                if (localStorage.getItem('polski_lec3_focus_v2') === '1') {
+                    document.body.classList.add('mm-focus');
+                    const b = document.getElementById('mmFocusBtn');
+                    if (b) b.textContent = 'Wyłącz skupienie';
+                }
+            } catch (e) { /* ignore */ }
+            mmUpdateSection();
+            addEventListener('scroll', mmUpdateSection, { passive: true });
+            addEventListener('resize', mmUpdateSection);
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', updateProgress);
+            });
+        });
+    </script>
+
+</body>
+</html>

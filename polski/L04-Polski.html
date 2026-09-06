@@ -1,0 +1,3230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 4 – Chłopcy z Placu Broni + przymiotnik i liczebnik</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ======================================================================
+           SYSTEM WIZUALNY REPETYTORIUM E8 – wersja 6.2 (master merge)
+           ====================================================================== */
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h2 .level-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- KOLORY --- */
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f;
+            --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        /* --- KARTY --- */
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+            border-color: var(--color-remember);
+        }
+        .card-remember .card-label {
+            color: var(--color-remember);
+        }
+        .card-warning {
+            background: #fffbeb;
+            border-left: 5px solid #d69e2e;
+            border-color: #d69e2e;
+        }
+        .card-warning .card-label {
+            color: #d69e2e;
+        }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+            border-color: var(--color-hint);
+        }
+        .card-hint .card-label {
+            color: var(--color-hint);
+        }
+        .card-error {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-error .card-label {
+            color: var(--color-trap);
+        }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+            border-color: var(--color-correct);
+        }
+        .card-correct .card-label {
+            color: var(--color-correct);
+        }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-trap .card-label {
+            color: var(--color-trap);
+        }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+            border-color: var(--color-ambitious);
+        }
+        .card-ambitious .card-label {
+            color: var(--color-ambitious);
+        }
+        .card-difficult {
+            background: var(--color-difficult-bg);
+            border-left: 5px solid var(--color-difficult);
+            border-color: var(--color-difficult);
+        }
+        .card-difficult .card-label {
+            color: var(--color-difficult);
+        }
+        .card-gray {
+            background: var(--color-bg-subtle);
+            border-left: 5px solid var(--color-text-muted);
+            border-color: var(--color-text-muted);
+        }
+        .card .label {
+            font-weight: 600;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            display: inline-block;
+            margin-bottom: 4px;
+            padding: 1px 10px;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.05);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* --- BADGE --- */
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .level-writing {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+        .level-difficult {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        /* --- PRZYKŁADY --- */
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+        }
+        .example .pl {
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 1.0rem;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .example .note {
+            color: var(--color-text-muted);
+            font-size: 0.78rem;
+            font-style: italic;
+            margin-left: auto;
+        }
+        .example .expl {
+            color: var(--color-text-muted);
+            font-size: 0.82rem;
+            font-style: italic;
+        }
+        .hl-imieslow {
+            color: #7c3aed;
+            font-weight: 700;
+        }
+
+        /* --- TABELE --- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .table-wrap .error-row {
+            background: #fef2f2;
+        }
+        .table-wrap .correct-row {
+            background: #f0faf4;
+        }
+
+        /* --- PRZYCISKI --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-success {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .btn-success:hover {
+            background: #1f6e48;
+            border-color: #1f6e48;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+        .btn-hint {
+            background: var(--color-hint);
+            border-color: var(--color-hint);
+            color: white;
+        }
+        .btn-hint:hover {
+            background: #d97706;
+            border-color: #d97706;
+        }
+
+        /* --- AUDIO --- */
+        .audio-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 15px;
+            color: var(--color-training);
+            transition: all 0.2s;
+            flex-shrink: 0;
+            font-family: inherit;
+            line-height: 1;
+        }
+        .audio-btn:hover {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+        }
+        .audio-btn.playing {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+
+        /* --- ĆWICZENIA --- */
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+
+        /* --- ODPOWIEDZI, WSKAZÓWKI, WYJAŚNIENIA --- */
+        .answer-toggle,
+        .hint-toggle,
+        .explain-toggle {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+        .answer-toggle {
+            background: var(--color-training);
+            color: white;
+        }
+        .answer-toggle:hover {
+            background: #1f4e8c;
+        }
+        .hint-toggle {
+            background: var(--color-hint);
+            color: white;
+        }
+        .hint-toggle:hover {
+            background: #d97706;
+        }
+        .explain-toggle {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+        }
+        .explain-toggle:hover {
+            border-color: var(--color-training);
+            color: var(--color-training);
+            background: var(--color-training-bg);
+        }
+        .answer-content,
+        .hint-content,
+        .explain-content {
+            border-radius: 6px;
+            padding: 0 12px;
+            margin-top: 4px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .answer-content.show,
+        .hint-content.show,
+        .explain-content.show {
+            max-height: 800px;
+            padding: 10px 12px;
+            opacity: 1;
+        }
+        .answer-content {
+            background: var(--color-training-bg);
+            border-left: 3px solid var(--color-training);
+        }
+        .hint-content {
+            background: var(--color-hint-bg);
+            border-left: 3px solid var(--color-hint);
+            font-style: italic;
+            color: #78350f;
+        }
+        .explain-content {
+            background: var(--color-bg-subtle);
+            border-left: 3px solid var(--color-training);
+        }
+        .explain-content .rule-box {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 6px 12px;
+            margin: 4px 0;
+            border: 1px solid var(--color-border);
+            font-size: 0.9rem;
+        }
+
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover {
+            border-color: var(--color-error);
+            color: var(--color-error);
+            background: var(--color-trap-bg);
+        }
+
+        /* --- FISZKA --- */
+        .fiszka {
+            background: var(--color-bg-subtle);
+            border: 2px solid #0a2540;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 20px 0;
+        }
+        .fiszka h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0a2540;
+            padding-bottom: 4px;
+        }
+        .fiszka-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+        }
+        .fiszka-col h4 {
+            font-weight: 600;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 3px;
+            margin-bottom: 4px;
+        }
+        .fiszka-col ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .fiszka-col li {
+            padding: 2px 0 2px 16px;
+            position: relative;
+            font-size: 0.88rem;
+        }
+        .fiszka-col li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .fiszka-grid {
+                grid-template-columns: 1fr;
+            }
+            .fiszka {
+                padding: 14px 16px;
+            }
+        }
+
+        /* --- BANK KONSTRUKCJI --- */
+        .bank-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .bank-item:last-child {
+            border-bottom: none;
+        }
+        .bank-item .constr {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #0a2540;
+            min-width: 100px;
+        }
+        .bank-item .meaning {
+            color: var(--color-text-muted);
+            font-style: italic;
+            font-size: 0.85rem;
+            min-width: 80px;
+        }
+        .bank-item .example {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 2px 0;
+            margin: 0;
+            gap: 4px 8px;
+            border-radius: 0;
+        }
+        .bank-item .example .pl {
+            font-size: 0.9rem;
+        }
+        .bank-item .example .expl {
+            font-size: 0.8rem;
+        }
+
+        /* --- FISZKI INTERAKTYWNE --- */
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .flashcard {
+            min-height: 96px;
+            padding: 14px;
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            background: #ffffff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+        }
+        .flashcard:hover,
+        .flashcard:focus-visible {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        .flashcard .front {
+            display: block;
+            font-weight: 700;
+        }
+        .flashcard .back {
+            display: none;
+            color: var(--color-text-muted);
+        }
+        .flashcard.flipped .front {
+            display: none;
+        }
+        .flashcard.flipped .back {
+            display: block;
+        }
+
+        /* --- PANEL POSTĘPU --- */
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+        .top-panel .lesson-info .lesson-title {
+            font-style: italic;
+        }
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .view-filters {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .view-filters .btn {
+            font-size: 0.72rem;
+            padding: 3px 12px;
+        }
+        .view-filters .btn.active {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .today-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin: 4px 0 0;
+        }
+        .today-tasks .task {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+        .today-tasks .task .circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--color-text-muted);
+            transition: all 0.2s;
+        }
+        .today-tasks .task.done .circle {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .today-tasks .task .task-label {
+            color: var(--color-text-muted);
+        }
+        .today-tasks .task.done .task-label {
+            color: var(--color-text);
+            text-decoration: line-through;
+        }
+
+        /* --- PRZEKREŚLENIE / BŁĘDY --- */
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .cross-mark {
+            color: var(--color-error);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+        .check-mark {
+            color: var(--color-correct);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+
+        /* --- FITB --- */
+        .fitb-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 10px;
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child {
+            border-bottom: none;
+        }
+        .fitb-row input[type="text"] {
+            padding: 3px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            width: 140px;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        .fitb-row input[type="text"]:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+        .fitb-row input[type="text"].correct {
+            border-color: var(--color-correct);
+            background: #f0faf4;
+        }
+        .fitb-row input[type="text"].wrong {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        .fitb-row .result-icon {
+            font-size: 1.0rem;
+        }
+        .fitb-row select {
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-family: inherit;
+            background: #ffffff;
+            min-width: 120px;
+        }
+        .fitb-row select:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+
+        /* --- MISJA --- */
+        .mission-result {
+            font-size: 1.0rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        .mission-result.perfect {
+            background: #d4edda;
+            color: #155724;
+        }
+        .mission-result.good {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .mission-result.ok {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .mission-result.fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* --- CHECKLISTA --- */
+        .checklist {
+            padding-left: 0;
+            list-style: none;
+        }
+        .checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 1px 0;
+            font-size: 0.88rem;
+        }
+        .checklist input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* --- SPIS TREŚCI (akordeon) --- */
+        .toc-section {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin-bottom: 22px;
+        }
+        .toc-section h2 {
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+        }
+        .toc-accordion {
+            margin-top: 6px;
+        }
+        .toc-item {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: #ffffff;
+        }
+        .toc-summary {
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .toc-summary:hover {
+            background: var(--color-bg-subtle);
+        }
+        .toc-summary::-webkit-details-marker {
+            display: none;
+        }
+        .toc-summary::before {
+            content: "▶";
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            transition: transform 0.2s;
+            margin-right: 6px;
+        }
+        .toc-item[open] .toc-summary::before {
+            transform: rotate(90deg);
+        }
+        .toc-checklist {
+            padding: 4px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            padding: 2px 0;
+        }
+        .toc-checklist input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .toc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 14px 8px 30px;
+        }
+        .toc-anchor {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 4px 11px;
+            border: 1px solid var(--color-training);
+            border-radius: 6px;
+            background: var(--color-training-bg);
+            color: var(--color-training);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover,
+        .toc-anchor:focus-visible {
+            background: var(--color-training);
+            color: #ffffff;
+        }
+        .toc-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: var(--color-basic-bg);
+            border-radius: 12px;
+            color: #0f5132;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .toc-keywords span {
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        /* --- UKRYWANIE SEKCJI (filter) --- */
+        .section.hidden-by-filter {
+            display: none !important;
+        }
+
+        /* --- LISTA TEMATÓW GŁÓWNYCH --- */
+        .topic-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 7px 30px;
+            padding-left: 28px;
+        }
+        .topic-list li {
+            margin: 0;
+            padding-left: 2px;
+            font-size: 0.9rem;
+        }
+        .topic-list a {
+            display: flex;
+            align-items: center;
+            min-height: 38px;
+            padding: 6px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background: #ffffff;
+            color: #0a2540;
+            font-weight: 600;
+            line-height: 1.25;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .topic-list a:hover,
+        .topic-list a:focus-visible {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+            color: var(--color-training);
+        }
+        @media (max-width: 600px) {
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- STOPKA --- */
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .view-filters {
+                justify-content: center;
+            }
+            .today-tasks {
+                flex-direction: column;
+                gap: 3px;
+            }
+            .example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .example .note {
+                margin-left: 0;
+            }
+            .fitb-row {
+                flex-wrap: wrap;
+            }
+            .fitb-row input[type="text"] {
+                width: 100%;
+            }
+            .top-panel {
+                padding: 12px 14px;
+            }
+            .container {
+                padding: 10px 6px;
+            }
+            .bank-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+            .bank-item .constr {
+                min-width: auto;
+            }
+            .bank-item .meaning {
+                min-width: auto;
+            }
+            .topic-list {
+                columns: 1;
+            }
+            .toc-section {
+                padding: 12px 14px;
+            }
+            .toc-summary {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+            .toc-checklist li {
+                font-size: 0.8rem;
+            }
+            .fitb-row select {
+                width: 100%;
+                min-width: unset;
+            }
+        }
+
+        .text-muted {
+            color: var(--color-text-muted);
+        }
+        .text-sm {
+            font-size: 0.82rem;
+        }
+        .mt-8 {
+            margin-top: 8px;
+        }
+        .mb-8 {
+            margin-bottom: 8px;
+        }
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+            letter-spacing: -0.02em;
+        }
+        .part-heading .part-num {
+            color: var(--color-training);
+        }
+
+        /* --- MASTER --- */
+        :root {
+            --master-ink: #17212b;
+            --master-muted: #64748b;
+            --master-line: #e2e8f0;
+            --master-surface: #ffffff;
+            --master-soft: #f8fafc;
+            --master-accent: #276749;
+            --master-accent-soft: #eef7f1;
+            --master-shadow: 0 4px 18px rgba(15, 23, 42, .055);
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 74px
+        }
+        body {
+            background: #f3f5f7;
+            color: var(--master-ink)
+        }
+        .container {
+            border: 1px solid #e8edf2;
+            box-shadow: 0 10px 34px rgba(15, 23, 42, .06)
+        }
+        .section {
+            scroll-margin-top: 76px
+        }
+        .card,
+        .exercise,
+        .rule-box,
+        .example,
+        .flashcard,
+        .table-wrap {
+            box-shadow: none
+        }
+        .btn,
+        .answer-toggle,
+        .hint-toggle,
+        .hide-all-btn {
+            transition: background .16s ease, border-color .16s ease, transform .08s ease, box-shadow .16s ease
+        }
+        .btn:active,
+        .answer-toggle:active,
+        .hint-toggle:active {
+            transform: translateY(1px)
+        }
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid rgba(39, 103, 73, .22);
+            outline-offset: 2px
+        }
+        .audio-btn {
+            min-width: 34px;
+            min-height: 34px;
+            border-radius: 8px;
+            font-size: .9rem
+        }
+        .master-topbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-height: 48px;
+            margin: -8px -8px 18px;
+            padding: 7px 10px;
+            background: rgba(255, 255, 255, .96);
+            border: 1px solid var(--master-line);
+            border-radius: 12px;
+            box-shadow: var(--master-shadow);
+            backdrop-filter: blur(8px)
+        }
+        .master-topbar .master-title {
+            font-size: .82rem;
+            font-weight: 600;
+            color: #334155;
+            margin-right: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+        .master-btn {
+            appearance: none;
+            border: 1px solid #d7dee7;
+            background: #fff;
+            color: #334155;
+            border-radius: 8px;
+            padding: 7px 10px;
+            font: inherit;
+            font-size: .78rem;
+            cursor: pointer
+        }
+        .master-btn:hover {
+            background: #f8fafc;
+            border-color: #cbd5e1
+        }
+        .master-btn[aria-pressed="true"] {
+            background: var(--master-accent-soft);
+            border-color: #b7d7c3;
+            color: #20553c
+        }
+        .master-progress {
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background: var(--master-accent);
+            transition: width .1s linear
+        }
+        .master-section-nav {
+            display: flex;
+            gap: 6px;
+            overflow: auto;
+            padding: 4px 0 10px;
+            margin-bottom: 8px;
+            scrollbar-width: thin
+        }
+        .master-section-nav a {
+            flex: 0 0 auto;
+            padding: 5px 9px;
+            border: 1px solid #e2e8f0;
+            border-radius: 7px;
+            color: #475569;
+            background: #fff;
+            font-size: .75rem;
+            text-decoration: none
+        }
+        .master-section-nav a.active {
+            background: var(--master-accent-soft);
+            border-color: #b7d7c3;
+            color: #20553c;
+            font-weight: 600
+        }
+        body.master-focus .toc-wrap,
+        body.master-focus .toc,
+        body.master-focus .master-section-nav {
+            display: none !important
+        }
+        body.master-focus .container {
+            max-width: 920px
+        }
+        body.master-focus .section:not(.section-active) {
+            opacity: .72
+        }
+        body.master-focus .section.section-active {
+            opacity: 1
+        }
+        .master-tip {
+            margin: 10px 0;
+            padding: 10px 12px;
+            border-left: 3px solid #94a3b8;
+            background: #f8fafc;
+            color: #475569;
+            font-size: .86rem;
+            border-radius: 0 8px 8px 0
+        }
+        @media(max-width:700px) {
+            .master-topbar .master-title {
+                display: none
+            }
+            .master-topbar {
+                justify-content: flex-end
+            }
+            .master-btn {
+                padding: 7px 8px
+            }
+            .master-section-nav a {
+                font-size: .72rem
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+            * {
+                transition: none !important
+            }
+        }
+
+        /* MASTER MASTER */
+        :root {
+            --mm-ink: #182230;
+            --mm-muted: #64748b;
+            --mm-line: #dfe5eb;
+            --mm-surface: #f8fafc;
+            --mm-accent: #2f6f59;
+            --mm-accent-soft: #edf5f1;
+            --mm-danger: #b33a3a;
+            --mm-danger-soft: #fbf1f1;
+            --mm-warn: #806a2b;
+            --mm-warn-soft: #faf7ec
+        }
+        body {
+            background: #eef1f4;
+            color: var(--mm-ink)
+        }
+        .container {
+            border-radius: 18px;
+            box-shadow: 0 5px 24px rgba(15, 23, 42, .055);
+            padding: 24px 30px 28px
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #1d2b39
+        }
+        h2 {
+            border-bottom: 1px solid var(--mm-line)
+        }
+        .card {
+            box-shadow: none;
+            border-radius: 10px
+        }
+        .card-warning {
+            background: var(--mm-warn-soft);
+            border-left-color: var(--mm-warn);
+            border-color: #e5ddbf
+        }
+        .card-hint {
+            background: #f7f8fa;
+            border-left-color: #64748b;
+            border-color: #d8dee5
+        }
+        .card-error {
+            background: var(--mm-danger-soft);
+            border-left-color: var(--mm-danger);
+            border-color: #ebd0d0
+        }
+        .card-correct {
+            background: var(--mm-accent-soft);
+            border-left-color: var(--mm-accent);
+            border-color: #cfe1d8
+        }
+        .audio-btn {
+            min-width: 36px;
+            min-height: 32px;
+            border-radius: 8px
+        }
+        .mm-focusbar {
+            position: sticky;
+            top: 8px;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 0 0 12px;
+            padding: 7px 9px;
+            background: rgba(255, 255, 255, .95);
+            border: 1px solid var(--mm-line);
+            border-radius: 10px;
+            font-size: .78rem
+        }
+        .mm-focusbar .mm-section-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: var(--mm-muted)
+        }
+        .mm-focusbar button {
+            border: 1px solid var(--mm-line);
+            background: #fff;
+            color: var(--mm-ink);
+            border-radius: 7px;
+            padding: 5px 9px;
+            cursor: pointer
+        }
+        .mm-orientation {
+            display: grid;
+            grid-template-columns: 1.25fr .9fr .9fr;
+            gap: 10px;
+            margin: 0 0 18px;
+            padding: 12px;
+            border: 1px solid var(--mm-line);
+            border-radius: 12px;
+            background: #fff
+        }
+        .mm-orientation .mm-step {
+            padding: 11px 12px;
+            border-radius: 9px;
+            background: var(--mm-surface);
+            border: 1px solid #e5e9ee
+        }
+        .mm-orientation .mm-step strong {
+            display: block;
+            font-size: .9rem;
+            margin-bottom: 2px
+        }
+        .mm-orientation .mm-step span {
+            font-size: .78rem;
+            color: var(--mm-muted)
+        }
+        .mm-orientation .mm-step.current {
+            border-color: #b8cfc4;
+            background: var(--mm-accent-soft)
+        }
+        .mm-orientation .mm-step.current strong {
+            color: var(--mm-accent)
+        }
+        .mm-study-rule {
+            display: flex;
+            gap: 12px;
+            padding: 13px 15px;
+            margin: 14px 0 22px;
+            border: 1px solid var(--mm-line);
+            border-radius: 11px;
+            background: #fff
+        }
+        .mm-study-rule .mm-rule-key {
+            font-weight: 700;
+            white-space: nowrap;
+            color: var(--mm-accent)
+        }
+        .mm-study-rule p {
+            margin: 0;
+            font-size: .9rem
+        }
+        .mm-recall {
+            margin: 16px 0;
+            padding: 14px 16px;
+            border: 1px dashed #b9c3ce;
+            border-radius: 10px;
+            background: #fbfcfd
+        }
+        .mm-recall summary {
+            cursor: pointer;
+            font-weight: 600
+        }
+        .mm-recall p {
+            margin: 9px 0 0;
+            font-size: .9rem
+        }
+        .mm-microtest {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0
+        }
+        .mm-microtest button {
+            padding: 9px 10px;
+            border: 1px solid var(--mm-line);
+            border-radius: 8px;
+            background: #fff;
+            text-align: left;
+            cursor: pointer;
+            font: inherit
+        }
+        .mm-microtest button:hover {
+            background: var(--mm-surface)
+        }
+        .mm-microtest .mm-answer {
+            display: block;
+            margin-top: 5px;
+            color: var(--mm-muted);
+            font-size: .8rem
+        }
+        .mm-current-section {
+            scroll-margin-top: 75px
+        }
+        body.mm-focus .toc-section,
+        body.mm-focus .mm-orientation,
+        body.mm-focus .top-panel .view-filters,
+        body.mm-focus .top-panel .today-tasks {
+            display: none
+        }
+        body.mm-focus .container {
+            max-width: 900px
+        }
+        body.mm-focus .section:not(.mm-current-section) {
+            opacity: .42;
+            transition: opacity .2s
+        }
+        @media(max-width:760px) {
+            .container {
+                padding: 17px 14px 22px;
+                border-radius: 13px
+            }
+            .mm-orientation {
+                grid-template-columns: 1fr
+            }
+            .mm-microtest {
+                grid-template-columns: 1fr
+            }
+            .mm-focusbar {
+                top: 4px
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important;
+                scroll-behavior: auto !important
+            }
+        }
+
+        /* dodatkowe */
+        .bohater-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+        .bohater-tabela tr:nth-child(even) {
+            background: #f8faff;
+        }
+        .rule-highlight {
+            background: var(--color-remember-bg);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-weight: 600;
+            color: var(--color-remember);
+        }
+        .poprawka-box {
+            background: #fff8e7;
+            border-left: 4px solid #d69e2e;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .poprawka-box .poprawka-title {
+            font-weight: 700;
+            color: #8a6d3b;
+        }
+        .korekta {
+            background: #f0faf4;
+            border-left: 4px solid var(--color-correct);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .korekta .korekta-title {
+            font-weight: 700;
+            color: var(--color-correct);
+        }
+        .blad-box {
+            background: #fef2f2;
+            border-left: 4px solid var(--color-error);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .blad-box .blad-title {
+            font-weight: 700;
+            color: var(--color-error);
+        }
+        /* dodatkowe style dla nowych elementów */
+        .haczyk-box {
+            background: #f0f6ff;
+            border-left: 5px solid #2b6cb0;
+            padding: 12px 16px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        .haczyk-box .haczyk-title {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+        .motyw-dopasowanie {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            margin: 8px 0;
+            padding: 6px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .motyw-dopasowanie select {
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-family: inherit;
+            min-width: 140px;
+        }
+        .motyw-dopasowanie .motyw-label {
+            font-weight: 500;
+            min-width: 100px;
+        }
+        .motyw-dopasowanie .result-icon {
+            font-size: 1.0rem;
+        }
+
+        /* Nowa klasa dla ściągi z notatkami */
+        .cheat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 8px;
+        }
+        .cheat-grid h4 {
+            margin-top: 0;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 2px;
+        }
+        .cheat-grid ul {
+            padding-left: 18px;
+            margin-bottom: 6px;
+        }
+        .cheat-grid ul li {
+            font-size: 0.88rem;
+        }
+        @media (max-width: 600px) {
+            .cheat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .czesc-mowy-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+
+        .zaimek-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+
+        /* styl dla nowych przykładowych zdań */
+        .przyklady-zdań {
+            margin: 6px 0 4px 12px;
+            padding: 8px 12px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+        }
+        .przyklady-zdań p {
+            margin: 3px 0;
+            font-size: 0.92rem;
+        }
+        .przyklady-zdań .tag {
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+            display: inline-block;
+            margin-right: 6px;
+        }
+        .porownanie-box {
+            background: #f0f6ff;
+            border-left: 4px solid #2b6cb0;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .porownanie-box .porownanie-title {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+        .uwaga-box {
+            background: #fff8e7;
+            border-left: 4px solid #d69e2e;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .uwaga-box .uwaga-title {
+            font-weight: 700;
+            color: #8a6d3b;
+        }
+        .wyjatki-box {
+            background: #f0f6ff;
+            border-left: 4px solid #2b6cb0;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .wyjatki-box .wyjatki-title {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+        /* style dla deklinacji rzeczownika */
+        .deklinacja-tabela td:first-child {
+            font-weight: 600;
+            color: var(--color-training);
+        }
+        .deklinacja-tabela td:last-child {
+            font-style: italic;
+        }
+        .box-cke {
+            background: #f0f6ff;
+            border: 2px solid #2b6cb0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .box-cke .cke-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #2b6cb0;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .box-cke ul {
+            margin-bottom: 0;
+        }
+        .box-cke ul li {
+            margin-bottom: 2px;
+        }
+        .trap-table td:first-child {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL – POSTĘP + FILTRY + ZADANIA
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">„Chłopcy z Placu Broni” + przymiotnik i liczebnik</div>
+                    <div class="subtitle">Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Lekcja 4 – „Chłopcy z Placu Broni” oraz przymiotnik (stopniowanie, odmiana, „nie”) i liczebnik (rodzaje, odmiana, zapis)</div>
+                        <div>Wersja 2.0 – zaktualizowana zgodnie z wytycznymi CKE i realiami E8</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-row">
+                <div class="view-filters">
+                    <button class="btn active" data-view="all" onclick="setView('all')">Wszystko</button>
+                    <button class="btn" data-view="basic" onclick="setView('basic')">Podstawa + Trening</button>
+                    <button class="btn" data-view="exam" onclick="setView('exam')">Egzamin</button>
+                </div>
+                <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                    <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+                </div>
+                <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+            </div>
+
+            <div class="panel-row">
+                <div class="today-tasks" id="todayTasks">
+                    <div class="task" data-task="plac"><span class="circle">1</span><span class="task-label">Poznaj Plac Broni – bohaterów i wydarzenia</span></div>
+                    <div class="task" data-task="motywy"><span class="circle">2</span><span class="task-label">Opanuj motywy i przemianę Gereba</span></div>
+                    <div class="task" data-task="przymiotnik"><span class="circle">3</span><span class="task-label">Opanuj przymiotnik – stopniowanie, odmiana, „nie”</span></div>
+                    <div class="task" data-task="liczebnik"><span class="circle">4</span><span class="task-label">Opanuj liczebnik – rodzaje, odmiana, zapis</span></div>
+                    <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test końcowy</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MASTER MASTER — warstwa prowadzenia ucznia -->
+        <div class="mm-focusbar" id="mmFocusBar" aria-live="polite"><span class="mm-section-name" id="mmSectionName">Lekcja 4 · orientacja</span><button type="button" id="mmFocusBtn" onclick="mmToggleFocus()">Tryb skupienia</button></div>
+        <div class="mm-orientation" aria-label="Plan pracy z lekcją">
+            <div class="mm-step current"><strong>1. Rozpoznaj</strong><span>Przypomnij sobie bohaterów i wydarzenia z „Placu Broni”.</span></div>
+            <div class="mm-step"><strong>2. Zrozum</strong><span>Opanuj zasady stopniowania przymiotników i rodzaje liczebników.</span></div>
+            <div class="mm-step"><strong>3. Zastosuj</strong><span>Wykonaj ćwiczenia i sprawdź się w teście.</span></div>
+        </div>
+        <div class="mm-study-rule">
+            <div class="mm-rule-key">Zasada pracy</div>
+            <p><strong>Nie ucz się definicji na pamięć.</strong> Ćwicz rozpoznawanie przymiotników i liczebników w konkretnych zdaniach – to właśnie ta umiejętność jest sprawdzana na egzaminie. Łącz wiedzę o lekturze z umiejętnościami językowymi: Plac Broni to świetny przykład na tematy o przyjaźni, lojalności, odpowiedzialności i poświęceniu.</p>
+        </div>
+
+        <!-- ============================================================
+        ŚCIĄGA Z NOTATEK
+        ============================================================ -->
+        <div class="card card-remember" style="border-left: 6px solid #2b6cb0; background: #f0f6ff; margin: 16px 0 20px;">
+            <span class="card-label" style="color: #2b6cb0; font-size: 1rem; font-weight: 700;">📌 Ściąga z notatek – najważniejsze informacje w pigułce</span>
+            <div class="cheat-grid">
+                <div>
+                    <h4>„Plac Broni” – kluczowe fakty</h4>
+                    <ul>
+                        <li><strong>Autor:</strong> Ferenc Molnár.</li>
+                        <li><strong>Główni bohaterowie:</strong> Nemeczek (statyczny), Boka (przywódca), Gereb (dynamiczny – niepełna przemiana), Feri Acz (antagonista).</li>
+                        <li><strong>Miejsce:</strong> Budapeszt – Plac Broni jako „mała ojczyzna”.</li>
+                        <li><strong>Gereb</strong> – bohater dynamiczny (zdrada → skrucha → powrót, ale nie zostaje przywódcą).</li>
+                        <li><strong>Nemeczek</strong> – bohater statyczny (wzór odwagi i lojalności, niesłusznie oskarżany).</li>
+                    </ul>
+                    <h4 style="margin-top:12px;">Motywy w „Placu Broni”</h4>
+                    <ul>
+                        <li>Mała ojczyzna</li>
+                        <li>Przyjaźń i lojalność</li>
+                        <li>Zdrada i niesprawiedliwe oskarżenie</li>
+                        <li>Poświęcenie (Nemeczek)</li>
+                        <li>Odwaga i odpowiedzialność</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Przymiotnik</h4>
+                    <ul>
+                        <li><strong>Stopniowanie regularne:</strong> mądry – mądrzejszy – najmądrzejszy</li>
+                        <li><strong>Stopniowanie nieregularne:</strong> dobry – lepszy – najlepszy</li>
+                        <li><strong>„nie” z przymiotnikami:</strong> ŁĄCZNIE (np. niemądry) – od 2026 CKE akceptuje obie pisownie w stopniu wyższym!</li>
+                        <li><strong>Przymiotniki dzierżawcze:</strong> ojcowy, matczyny</li>
+                        <li><strong>Przymiotniki niestopniowalne:</strong> drewniany, martwy</li>
+                    </ul>
+                    <h4 style="margin-top:12px;">Liczebnik</h4>
+                    <ul>
+                        <li><strong>Główne:</strong> jeden, dwa, trzy…</li>
+                        <li><strong>Porządkowe:</strong> pierwszy, drugi, trzeci…</li>
+                        <li><strong>Zbiorowe:</strong> dwoje, troje, czworo…</li>
+                        <li><strong>Ułamkowe:</strong> pół, ćwierć, jedna trzecia…</li>
+                        <li><strong>Zapis:</strong> słownie (wyjątki: daty, godziny, ceny, tabele)</li>
+                        <li><strong>Uwaga na formy męskoosobowe!</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        SPIS TREŚCI (akordeon z checklistą)
+        ============================================================ -->
+        <div class="toc-section" id="sec-toc">
+            <h2>Spis treści</h2>
+            <div class="toc-accordion">
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Status lektury i zasady CKE</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-cke">Status na egzaminie</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem, jak lektura jest traktowana na E8.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, że egzamin sprawdza tylko fragment w części I.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Wprowadzenie – „Plac Broni” i bohaterowie</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-plac-info">Podstawowe informacje</a>
+                        <a class="toc-anchor" href="#sec-plac-bohaterowie">Bohaterowie</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam autora, tytuł i gatunek „Placu Broni”.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam najważniejszych bohaterów i ich role.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem, czym jest „mała ojczyzna”.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Wydarzenia, motywy i bohaterowie dynamiczni</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-plac-wydarzenia">Najważniejsze wydarzenia</a>
+                        <a class="toc-anchor" href="#sec-plac-motywy">Motywy</a>
+                        <a class="toc-anchor" href="#sec-plac-przemiana">Przemiana Gereba</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam kluczowe wydarzenia i ich znaczenie.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam motywy obecne w lekturze.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem przemianę Gereba (i jej niepełny charakter).</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Przymiotnik – teoria i zasady</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-przymiotnik">Czym jest przymiotnik?</a>
+                        <a class="toc-anchor" href="#sec-stopniowanie">Stopniowanie</a>
+                        <a class="toc-anchor" href="#sec-nie-przymiotnik">„nie” z przymiotnikami</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem, czym jest przymiotnik.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam zasady stopniowania regularnego i nieregularnego.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam zasadę pisowni „nie” z przymiotnikami (w tym aktualizację CKE).</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Liczebnik – teoria i zasady</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-liczebnik">Czym jest liczebnik?</a>
+                        <a class="toc-anchor" href="#sec-liczebnik-rodzaje">Rodzaje liczebników</a>
+                        <a class="toc-anchor" href="#sec-liczebnik-zapis">Zapis liczebników</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem, czym jest liczebnik.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam rodzaje liczebników.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam zasady zapisu liczebników słownie i formy przypadkowe.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Jak to wygląda na egzaminie?</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-e8">„Plac Broni” na E8</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wiem, jakie zadania mogą się pojawić.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, jak wykorzystać lekturę w wypracowaniu.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Ćwiczenia interaktywne i fiszki</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-cwiczenia">Ćwiczenia</a>
+                        <a class="toc-anchor" href="#sec-flashcards">Fiszki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wykonałem ćwiczenia z przymiotników i liczebników.</li>
+                        <li><input type="checkbox" data-progress="5" /> Przećwiczyłem fiszki.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Test końcowy i podsumowanie</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-mission">Misja końcowa</a>
+                        <a class="toc-anchor" href="#sec-podsumowanie">Podsumowanie</a>
+                        <a class="toc-anchor" href="#sec-pulapki">Pułapki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem test końcowy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam swoje mocne i słabe strony.</li>
+                    </ul>
+                </details>
+
+            </div>
+            <div class="toc-keywords">
+                <span>Słowa kluczowe: Plac Broni · Nemeczek · Boka · Gereb · Feri Acz · mała ojczyzna · przyjaźń · zdrada · poświęcenie · przymiotnik · stopniowanie · liczebnik · główny · porządkowy · zbiorowy · ułamkowy · „nie” · CKE · E8</span>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        CZĘŚĆ 1 – „PLAC BRONI” + STATUS LEKTURY
+        ============================================================ -->
+        <div class="mm-recall" id="mmRecall">
+            <details>
+                <summary>Sprawdź się przed nauką — 3 szybkie pytania</summary>
+                <div class="mm-microtest">
+                    <button type="button" onclick="mmReveal(this,'Nemeczek – najmniejszy, ale najodważniejszy chłopiec.')">Kto jest symbolem odwagi i lojalności na Placu Broni?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Przymiotnik odpowiada na pytania: jaki? jaka? jakie?')">Na jakie pytania odpowiada przymiotnik?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Gereb przechodzi przemianę: zdrada → skrucha → powrót do grupy.')">Jaka jest przemiana Gereba?<span class="mm-answer"></span></button>
+                </div>
+                <p>To nie jest test na ocenę – pokazuje, co już wiesz.</p>
+            </details>
+        </div>
+
+        <section class="section" data-level="basic" id="part1">
+            <div class="part-heading"><span class="part-num">Część 1</span> · „Chłopcy z Placu Broni”</div>
+
+            <!-- NOWA SEKCJA – STATUS LEKTURY CKE -->
+            <div class="section" data-level="basic" id="sec-cke">
+                <div class="box-cke">
+                    <span class="cke-title">📌 WAŻNE – CKE / E8</span>
+                    <p><strong>„Chłopcy z Placu Broni” Ferenca Molnára jest lekturą obowiązkową z klas IV–VI.</strong></p>
+                    <ul>
+                        <li>W latach 2024/2025–2025/2026 zadania w <strong>części I arkusza</strong> dotyczące lektur z klas IV–VI odnoszą się <strong>wyłącznie do fragmentu</strong> zamieszczonego w arkuszu – nie sprawdzają znajomości całej treści ani problematyki całego utworu.</li>
+                        <li>Lektura może być swobodnie wykorzystywana w <strong>wypracowaniu</strong> (część II) i zadaniach otwartych.</li>
+                        <li><strong>W maju 2025 r.</strong> fragment tej lektury pojawił się jako tekst literacki w arkuszu E8 (tematyka przyjaźni, postawa Nemeczka).</li>
+                        <li>Lista lektur obowiązkowych znajduje się na <strong>początku arkusza egzaminacyjnego</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-plac-info">
+                <h2>1. Podstawowe informacje</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Lektura w pigułce</span>
+                    <ul>
+                        <li><strong>Autor:</strong> Ferenc Molnár (węgierski pisarz).</li>
+                        <li><strong>Tytuł:</strong> „Chłopcy z Placu Broni”.</li>
+                        <li><strong>Gatunek:</strong> powieść dla młodzieży z elementami obyczajowymi i przygodowymi.</li>
+                        <li><strong>Miejsce wydarzeń:</strong> Budapeszt, głównie Plac Broni.</li>
+                        <li><strong>Czas:</strong> koniec XIX wieku (ok. 1889).</li>
+                        <li><strong>Główny konflikt:</strong> walka chłopców z Placu Broni z Czerwonymi Koszulami o prawo do placu.</li>
+                        <li><strong>Najważniejszy problem:</strong> odpowiedzialność, lojalność, przyjaźń, zdrada, poświęcenie i niesprawiedliwość.</li>
+                    </ul>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne doprecyzowanie</span>
+                        <p>Plac Broni to nie tylko miejsce zabaw. To dla chłopców <strong>„mała ojczyzna”</strong> – symbol przynależności, honoru i wspólnoty. Walka o plac ma charakter symboliczny: chłopcy bronią czegoś więcej niż tylko kawałka ziemi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-plac-bohaterowie">
+                <h2>2. Najważniejsi bohaterowie</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Bohater</th><th>Charakterystyka</th><th>Rola w lekturze</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Ernő Nemeczek</strong></td><td>Najmniejszy i najsłabszy fizycznie, szeregowiec. Niezwykle odważny i lojalny. Był <strong>niesłusznie oskarżany i poniżany</strong> (m.in. scena kąpieli w zimnej wodzie). Umiera po bitwie (zapalenie płuc).</td><td>Symbol poświęcenia i odwagi. <strong>Bohater statyczny</strong> – nie zmienia się wewnętrznie, ale swoją postawą inspiruje innych.</td></tr>
+                            <tr><td><strong>Janosz Boka</strong></td><td>Przywódca chłopców z Placu Broni. Odpowiedzialny, sprawiedliwy i szanowany. Zostaje wybrany w głosowaniu, co budzi zazdrość Gereba.</td><td>Symbol odpowiedzialnego przywódcy, który dba o swoich podopiecznych.</td></tr>
+                            <tr><td><strong>Deżo Gereb</strong></td><td>Zazdrosny o pozycję Boki. Zdradza grupę (przechodzi do Czerwonych Koszul), ale później żałuje i wraca.</td><td><strong>Bohater dynamiczny</strong> – przechodzi przemianę (zdrada → skrucha → powrót). <span class="correct-text">Nie staje się przywódcą ani nie poświęca się jak Nemeczek.</span> Jego przemiana jest <strong>niepełna</strong>.</td></tr>
+                            <tr><td><strong>Feri Acz</strong></td><td>Przywódca Czerwonych Koszul – rywali chłopców z Placu Broni.</td><td>Antagonista, ale nie jednowymiarowy – okazuje honor wobec odważnych przeciwników. Kieruje się ambicją i chęcią dominacji.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card card-hint">
+                    <span class="card-label">Uwaga!</span>
+                    <p><strong>Nemeczek</strong> to bohater statyczny – nie przechodzi wewnętrznej przemiany, ale jego postawa (odwaga, lojalność) jest wzorem dla innych. <strong>Gereb</strong> jest bohaterem dynamicznym, ale jego przemiana jest <strong>niepełna</strong> – nie staje się przywódcą, nie poświęca się jak Nemeczek, ale okazuje skruchę i wraca do grupy (nawet jako szeregowiec / porucznik).</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-plac-wydarzenia">
+                <h2>3. Najważniejsze wydarzenia</h2>
+
+                <h3>Wybór Boki na przywódcę</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Początek konfliktu</span>
+                    <p>Chłopcy z Placu Broni wybierają Janosza Bokę na swojego przywódcę. Gereb, który również aspirował do tej roli, przegrywa głosowanie – rodzi to w nim zazdrość i frustrację.</p>
+                    <p><strong>Znaczenie:</strong> To wydarzenie jest początkiem przemiany Gereba – jego ambicja i zazdrość prowadzą go do zdrady.</p>
+                </div>
+
+                <h3>Walka o Plac Broni</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Konflikt z Czerwonymi Koszulami</span>
+                    <p>Chłopcy z Placu Broni bronią swojego placu przed Czerwonymi Koszulami dowodzonymi przez Feri Acza.</p>
+                    <p><strong>Motywy:</strong> mała ojczyzna, honor, lojalność, przyjaźń, odpowiedzialność.</p>
+                    <p><strong>Znaczenie:</strong> Plac to dla chłopców coś więcej niż zwykłe miejsce – to symbol przynależności i wspólnoty. Walka o plac uczy ich odpowiedzialności i poświęcenia.</p>
+                </div>
+
+                <h3>Zdrada Gereba</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Zdrada i konsekwencje</span>
+                    <p>Gereb, kierowany ambicją i zazdrością, przekazuje Czerwonym Koszulom informacje o planach obrony placu. Przechodzi na stronę wroga.</p>
+                    <p><strong>Motywy:</strong> zdrada, zazdrość, ambicja, lojalność, odpowiedzialność.</p>
+                    <p><strong>Znaczenie:</strong> Gereb musi zmierzyć się z konsekwencjami własnego postępowania. Jego późniejszy powrót do grupy pokazuje, że można próbować odzyskać zaufanie, ale nie da się całkowicie wymazać skutków zdrady.</p>
+                </div>
+
+                <h3>Scena poniżenia Nemeczka – kąpiel w zimnej wodzie</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Okrucieństwo i niesprawiedliwość</span>
+                    <p>Nemeczek zostaje poddany upokarzającej karze – kąpieli w zimnej wodzie (scena z Pastorami / Aczem). To jedna z najbardziej drastycznych scen, która ilustruje okrucieństwo i niesprawiedliwość wobec słabszego.</p>
+                    <p><strong>Motywy:</strong> niesprawiedliwość, okrucieństwo, poniżenie, słabość.</p>
+                    <p><strong>Znaczenie:</strong> Scena pokazuje, że świat nie zawsze jest sprawiedliwy, a słabsi często są traktowani gorzej. Nemeczek mimo to nie traci godności.</p>
+                </div>
+
+                <h3>Śmierć Nemeczka</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Poświęcenie za plac</span>
+                    <p>Nemeczek, mimo choroby i wyczerpania, bierze udział w obronie placu. Umiera w wyniku choroby (zapalenie płuc), która nasiliła się po bitwie. Po śmierci przywracane jest mu dobre imię.</p>
+                    <p><strong>Motywy:</strong> poświęcenie, odwaga, niesprawiedliwość, bohaterstwo pozbawione sławy.</p>
+                    <p><strong>Znaczenie:</strong> Najmniejszy i początkowo lekceważony chłopiec okazuje się jednym z najodważniejszych bohaterów. Jego śmierć pokazuje, że wartość człowieka nie zależy od jego siły fizycznej ani pozycji w grupie.</p>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne</span>
+                        <p>Nemeczek jest <strong>niesłusznie posądzany o zdradę</strong>, co wzmacnia motyw niesprawiedliwości w lekturze. Jego cierpienie i śmierć są tym bardziej poruszające, że był lojalny do końca.</p>
+                    </div>
+                </div>
+
+                <h3>Dorastanie na Placu Broni</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Lekcje odpowiedzialności</span>
+                    <p>Plac Broni to miejsce, gdzie chłopcy uczą się odpowiedzialności, lojalności i konsekwencji wyborów.</p>
+                    <p><strong>Motywy:</strong> dorastanie, odpowiedzialność, dojrzewanie, nauka przez doświadczenie.</p>
+                    <p><strong>Wniosek:</strong> Doświadczenia na Placu Broni kształtują charaktery chłopców – pokazują, że każdy wybór ma konsekwencje, a prawdziwa przyjaźń i lojalność są bezcenne.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-plac-motywy">
+                <h2>4. Motywy do rozprawki</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">Mała ojczyzna</span>
+                    <p>Plac Broni to dla chłopców symbol przynależności, wspólnoty i wartości. Bronią go nie tylko jako miejsca, ale jako czegoś, co jest ich własne.</p>
+                    <p><strong>Wniosek:</strong> „Mała ojczyzna” to miejsce, do którego się przywiązujemy i które jesteśmy gotowi bronić.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Przyjaźń i lojalność</span>
+                    <p>Chłopcy z Placu Broni łączą silne więzi przyjaźni. Nawet w obliczu zdrady i konfliktu potrafią wybaczyć i przyjąć z powrotem skruszonego Gereba.</p>
+                    <p><strong>Wniosek:</strong> Prawdziwa przyjaźń wymaga lojalności, ale także umiejętności przebaczania.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Zdrada i skrucha</span>
+                    <p>Gereb zdradza swoich przyjaciół, ale później żałuje i próbuje naprawić błąd. Jego historia pokazuje, że każdy może popełnić błąd, ale ważne jest, by umieć go przyznać i starać się naprawić.</p>
+                    <p><strong>Wniosek:</strong> Zdrada może być naprawiona, ale nie da się jej całkowicie wymazać.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Poświęcenie</span>
+                    <p>Nemeczek poświęca zdrowie, a ostatecznie życie, dla Placu Broni. Jego postawa pokazuje, że prawdziwe bohaterstwo nie polega na sile, ale na gotowości do poświęcenia dla innych.</p>
+                    <p><strong>Wniosek:</strong> Największe bohaterstwo często pochodzi od tych, których nikt się nie spodziewa.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Odwaga</span>
+                    <p>Nemeczek jest najmniejszy i najsłabszy, ale wykazuje się największą odwagą. Jego odwaga nie wynika z braku strachu, ale z działania mimo lęku.</p>
+                    <p><strong>Wniosek:</strong> Odwaga to nie brak strachu, ale działanie mimo strachu – zwłaszcza w obronie słabszych.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Niesprawiedliwość</span>
+                    <p>Nemeczek zostaje niesłusznie oskarżony o zdradę i poddany upokorzeniu. To pokazuje, że świat bywa niesprawiedliwy, a niewinni często cierpią.</p>
+                    <p><strong>Wniosek:</strong> Niesprawiedliwość może dotknąć każdego, ale warto zachować godność i lojalność mimo przeciwności.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-plac-zdania">
+                <h2>5. Gotowe zdania do rozprawki</h2>
+                <div class="card card-hint">
+                    <span class="card-label">Bank zdań</span>
+                    <div class="bank-item">
+                        <span class="constr">Mała ojczyzna</span>
+                        <div class="example"><span class="pl">Plac Broni był dla chłopców czymś więcej niż miejscem zabaw – był symbolem przynależności i wspólnoty, za którą byli gotowi oddać życie.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Przyjaźń</span>
+                        <div class="example"><span class="pl">Chłopcy z Placu Broni pokazali, że prawdziwa przyjaźń opiera się na lojalności, odpowiedzialności i gotowości do przebaczenia.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Zdrada i skrucha</span>
+                        <div class="example"><span class="pl">Gereb zdradził przyjaciół, ale jego późniejsza skrucha i powrót do grupy pokazują, że człowiek może naprawić swoje błędy.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Poświęcenie</span>
+                        <div class="example"><span class="pl">Nemeczek oddał zdrowie, a ostatecznie życie za Plac Broni – jego poświęcenie pokazuje, że prawdziwe bohaterstwo nie wymaga siły fizycznej.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Niesprawiedliwość</span>
+                        <div class="example"><span class="pl">Niesłuszne oskarżenie Nemeczka o zdradę pokazuje, jak łatwo jest skrzywdzić niewinnego i jak trudno przywrócić mu dobre imię.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Dorastanie</span>
+                        <div class="example"><span class="pl">Doświadczenia na Placu Broni uczą chłopców odpowiedzialności, konsekwencji wyborów i wartości prawdziwej przyjaźni.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Poświęcenie (z „Kamieniami na szaniec”)</span>
+                        <div class="example"><span class="pl">Podobnie jak Nemeczek w „Chłopcach z Placu Broni”, bohaterowie „Kamieni na szaniec” oddają życie za wyższe wartości – wolność i ojczyznę.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Lojalność (z „Opowieściami z Narnii”)</span>
+                        <div class="example"><span class="pl">Edmund z „Narnii” i Gereb z „Placu Broni” obaj zdradzają, ale później żałują i próbują naprawić błąd – ich historie pokazują, że każdy może zasłużyć na drugą szansę.</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOWA SEKCJA – JAK TO WYGLĄDA NA EGZAMINIE -->
+            <div class="section" data-level="exam" id="sec-e8">
+                <h2>6. Jak to wygląda na egzaminie E8?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">„Plac Broni” na E8</span>
+                    <ul>
+                        <li><strong>W części I arkusza</strong> może pojawić się <strong>fragment</strong> lektury, np. scena z Nemeczkiem, zdrada Gereba lub obrona placu. Do fragmentu będą pytania: prawda/fałsz, wybór, uzasadnienie postawy bohatera.</li>
+                        <li><strong>W części II</strong> (wypracowanie) lektura jest doskonałym materiałem do tematów o:
+                            <ul>
+                                <li>przyjaźni i lojalności,</li>
+                                <li>poświęceniu dla innych,</li>
+                                <li>„małej ojczyźnie”,</li>
+                                <li>zdradzie i przebaczeniu,</li>
+                                <li>odpowiedzialności przywódcy,</li>
+                                <li>niesprawiedliwości.</li>
+                            </ul>
+                        </li>
+                        <li>W 2025 roku fragment tej lektury pojawił się w arkuszu E8 – temat dotyczył przyjaźni i postawy Nemeczka.</li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Ważne</span>
+                        <p>Pamiętaj: w części I egzamin sprawdza <strong>tylko fragment</strong>, a nie całą treść książki. Nie musisz znać całej fabuły na pamięć, ale warto znać kontekst i najważniejsze motywy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 2 – PRZYMIOTNIK
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part2">
+            <div class="part-heading"><span class="part-num">Część 2</span> · Przymiotnik</div>
+
+            <div class="section" data-level="basic" id="sec-przymiotnik">
+                <h2>7. Czym jest przymiotnik?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Definicja</span>
+                    <p><strong>Przymiotnik</strong> to odmienna część mowy, która określa cechy rzeczowników.</p>
+                    <p>Odpowiada na pytania: <strong>jaki? jaka? jakie? czyj?</strong></p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>odważny</em> chłopiec</li>
+                        <li><em>lojalna</em> przyjaźń</li>
+                        <li><em>trudne</em> wybory</li>
+                    </ul>
+                    <p>Przymiotniki odmieniają się przez <strong>przypadki, liczby i rodzaje</strong>.</p>
+                </div>
+
+                <h3>Przymiotniki dzierżawcze</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Przymiotniki dzierżawcze</span>
+                    <p>Określają przynależność do osoby lub zwierzęcia.</p>
+                    <p><strong>Przykłady:</strong> <em>ojcowy, matczyny, siostrzyny, bratni, psi, koci</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em><strong>Ojcowy</strong> płaszcz wisiał na wieszaku.</em></li>
+                        <li><em><strong>Matczyna</strong> miłość była bezwarunkowa.</em></li>
+                        <li><em><strong>Siostrzyna</strong> rada okazała się cenna.</em></li>
+                    </ul>
+                    <p><span class="text-sm text-muted">Przymiotniki dzierżawcze są rzadziej sprawdzane na egzaminie, ale warto je znać.</span></p>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-stopniowanie">
+                <h2>8. Stopniowanie przymiotników</h2>
+
+                <h3>Stopniowanie regularne</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Stopniowanie regularne</span>
+                    <p>W stopniowaniu regularnym dodajemy odpowiednie końcówki:</p>
+                    <ul>
+                        <li><strong>Stopień równy:</strong> <em>mądry</em></li>
+                        <li><strong>Stopień wyższy:</strong> <em>mądrzejszy</em> (końcówka <strong>-szy</strong> lub <strong>-ejszy</strong>)</li>
+                        <li><strong>Stopień najwyższy:</strong> <em>najmądrzejszy</em> (przedrostek <strong>naj-</strong> + forma wyższa)</li>
+                    </ul>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>ciepły – cieplejszy – najcieplejszy</em></li>
+                        <li><em>odważny – odważniejszy – najodważniejszy</em></li>
+                        <li><em>silny – silniejszy – najsilniejszy</em></li>
+                        <li><em>szybki – szybszy – najszybszy</em></li>
+                    </ul>
+                </div>
+
+                <h3>Stopniowanie nieregularne (ZAPAMIĘTAJ!)</h3>
+                <div class="card card-trap">
+                    <span class="card-label">Stopniowanie nieregularne – najczęstsze pułapki</span>
+                    <p>Niektóre przymiotniki tworzą stopień wyższy i najwyższy w sposób <strong>nieregularny</strong> – nie dodają końcówek, ale zmieniają całkowicie formę.</p>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Stopień równy</th><th>Stopień wyższy</th><th>Stopień najwyższy</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>dobry</strong></td><td><strong>lepszy</strong></td><td><strong>najlepszy</strong></td></tr>
+                                <tr><td><strong>zły</strong></td><td><strong>gorszy</strong></td><td><strong>najgorszy</strong></td></tr>
+                                <tr><td><strong>duży</strong></td><td><strong>większy</strong></td><td><strong>największy</strong></td></tr>
+                                <tr><td><strong>mały</strong></td><td><strong>mniejszy</strong></td><td><strong>najmniejszy</strong></td></tr>
+                                <tr><td><strong>wielki</strong></td><td><strong>większy</strong></td><td><strong>największy</strong></td></tr>
+                                <tr><td><strong>lekki</strong></td><td><strong>lżejszy</strong></td><td><strong>najlżejszy</strong></td></tr>
+                                <tr><td><strong>ciężki</strong></td><td><strong>cięższy</strong></td><td><strong>najcięższy</strong></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Ważne</span>
+                        <p>Nie wszystkie przymiotniki można stopniować! <strong>Przymiotniki niestopniowalne</strong> to te, które oznaczają cechy, które nie mogą być większe lub mniejsze:</p>
+                        <ul>
+                            <li><em>drewniany, szklany, metalowy</em> (materiał)</li>
+                            <li><em>martwy, żywy</em> (stan)</li>
+                            <li><em>głuchy, ślepy</em> (stan fizyczny – nie można być bardziej głuchym)</li>
+                            <li><em>okrągły, kwadratowy</em> (kształt)</li>
+                        </ul>
+                        <p>Nie stopniujemy też niektórych przymiotników jakościowych (np. <em>jedyny, wieczny, nieśmiertelny</em>).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-nie-przymiotnik">
+                <h2>9. Zasada pisowni „nie” z przymiotnikami</h2>
+                <div class="card card-trap">
+                    <span class="card-label">Zasada ogólna</span>
+                    <p><strong>„nie” z przymiotnikami w stopniu równym piszemy ŁĄCZNIE.</strong></p>
+                    <p><strong>Przykłady:</strong> <span class="correct-text">niemądry, nieduży, nieodważny, niełatwy, nieznany</span></p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Wyjątki od zasady</span>
+                    <p>„Nie” z przymiotnikami piszemy <strong>rozdzielnie</strong>, gdy:</p>
+                    <ul>
+                        <li>w zdaniu występuje <strong>przeczenie czasownika</strong> (np. <em>„Nie był mądry, ale sprytny.”</em>)</li>
+                        <li>używamy konstrukcji z <strong>„ani”</strong> (np. <em>„Ani nie mądry, ani nie sprytny.”</em>)</li>
+                        <li>przymiotnik jest <strong>orzecznikiem w zdaniu z przeczeniem</strong> (np. <em>„To nie jest trudne.”</em>)</li>
+                    </ul>
+                    <div class="example">
+                        <span class="tag">poprawnie</span>
+                        <span class="pl">Nemeczek był <strong>niemądry</strong>, ale odważny.</span>
+                        <span class="expl">(łącznie – przymiotnik określa cechę)</span>
+                    </div>
+                    <div class="example">
+                        <span class="tag">poprawnie (przeczenie czasownika)</span>
+                        <span class="pl">Nemeczek <strong>nie był mądry</strong>, ale odważny.</span>
+                        <span class="expl">(rozdzielnie – przeczenie czasownika „być”)</span>
+                    </div>
+                </div>
+
+                <!-- NOWA SEKCJA – AKTUALIZACJA CKE OD 2026 -->
+                <div class="wyjatki-box" style="margin-top:12px; background: #f0f6ff; border-left: 4px solid #2b6cb0;">
+                    <span class="wyjatki-title">📌 WAŻNE – zmiana od 1 stycznia 2026 r.</span>
+                    <p>Rada Języka Polskiego wprowadziła <strong>łączną pisownię „nie” z przymiotnikami i przysłówkami we wszystkich stopniach</strong> (np. <em>niemilszy, nienajmilszy</em>).</p>
+                    <p><strong>CKE oficjalnie poinformowało, że w latach 2026–2030 na egzaminach (w tym E8) akceptowane będą <span class="correct-text">obie pisownie</span>:</strong> zarówno łączna (<em>niemilszy</em>), jak i rozdzielna (<em>nie milszy</em>).</p>
+                    <p>Na egzaminie możesz więc napisać <strong>niemilszy</strong> lub <strong>nie milszy</strong> – obie formy będą uznane za poprawne.</p>
+                    <p><strong>Wskazówka:</strong> Dla bezpieczeństwa używaj formy łącznej (zgodnej z nową zasadą), ale jeśli napiszesz rozdzielnie – też będzie dobrze!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 3 – LICZEBNIK
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part3">
+            <div class="part-heading"><span class="part-num">Część 3</span> · Liczebnik</div>
+
+            <div class="section" data-level="basic" id="sec-liczebnik">
+                <h2>10. Czym jest liczebnik?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Definicja</span>
+                    <p><strong>Liczebnik</strong> to odmienna część mowy, która określa <strong>liczbę</strong> lub <strong>kolejność</strong> osób, zwierząt, przedmiotów lub zjawisk.</p>
+                    <p>Odpowiada na pytania: <strong>ile? który z kolei?</strong></p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>dwóch</em> chłopców</li>
+                        <li><em>pierwszy</em> dzień</li>
+                        <li><em>troje</em> dzieci</li>
+                    </ul>
+                    <p>Liczebniki odmieniają się przez <strong>przypadki</strong>, a niektóre także przez <strong>rodzaje</strong>.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-liczebnik-rodzaje">
+                <h2>11. Rodzaje liczebników</h2>
+
+                <h3>Liczebniki główne</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Główne</span>
+                    <p>Określają liczbę osób, zwierząt lub rzeczy.</p>
+                    <p><strong>Przykłady:</strong> <em>jeden, dwa, trzy, cztery, pięć, dziesięć, sto</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em><strong>Trzech</strong> chłopców stanęło do walki.</em></li>
+                        <li><em>Na placu było <strong>dwudziestu</strong> obrońców.</em></li>
+                        <li><em>Nemeczek miał <strong>dziesięć</strong> lat.</em></li>
+                    </ul>
+                    <div class="uwaga-box" style="margin-top:8px;">
+                        <span class="uwaga-title">📌 Uwaga – odmiana męskoosobowa</span>
+                        <p>Liczebniki główne z rzeczownikami męskoosobowymi mają <strong>specjalne formy</strong>:</p>
+                        <p><em>dwóch chłopców, trzech chłopców, pięciu chłopców</em> (nie: <em>dwa chłopcy</em>).</p>
+                        <p>Na egzaminie często sprawdzana jest poprawna forma przypadkowa!</p>
+                    </div>
+                </div>
+
+                <h3>Liczebniki porządkowe</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Porządkowe</span>
+                    <p>Określają kolejność.</p>
+                    <p><strong>Przykłady:</strong> <em>pierwszy, drugi, trzeci, czwarty, piąty, setny</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em><strong>Pierwszy</strong> dzień obrony placu był najtrudniejszy.</em></li>
+                        <li><em>Nemeczek był <strong>dziesiątym</strong> chłopcem w szeregu.</em></li>
+                        <li><em><strong>Drugi</strong> raz już nie popełnił tego błędu.</em></li>
+                    </ul>
+                </div>
+
+                <h3>Liczebniki zbiorowe</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Zbiorowe</span>
+                    <p>Określają liczbę osób lub rzeczy jako <strong>grupę</strong>.</p>
+                    <p><strong>Przykłady:</strong> <em>dwoje, troje, czworo, pięcioro, ośmioro</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em><strong>Troje</strong> chłopców stało na straży.</em></li>
+                        <li><em><strong>Dwoje</strong> przyjaciół trzymało się razem.</em></li>
+                        <li><em><strong>Pięcioro</strong> obrońców placu zostało rannych.</em></li>
+                    </ul>
+                    <p><span class="text-sm text-muted">Liczebników zbiorowych używamy z rzeczownikami, które występują w liczbie mnogiej lub oznaczają osoby różnej płci.</span></p>
+                </div>
+
+                <h3>Liczebniki ułamkowe</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Ułamkowe</span>
+                    <p>Określają część całości.</p>
+                    <p><strong>Przykłady:</strong> <em>pół, ćwierć, jedna trzecia, dwie piąte, trzy czwarte</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em>Zjadł <strong>pół</strong> jabłka.</em></li>
+                        <li><em>Przeczytał <strong>jedną trzecią</strong> książki.</em></li>
+                        <li><em>Na placu było <strong>trzy czwarte</strong> wszystkich chłopców.</em></li>
+                    </ul>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Podsumowanie – rodzaje liczebników</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Rodzaj</th><th>Przykłady</th><th>Pytanie</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Główne</strong></td><td>jeden, dwa, trzy, sto</td><td><em>ile?</em></td></tr>
+                                <tr><td><strong>Porządkowe</strong></td><td>pierwszy, drugi, trzeci</td><td><em>który z kolei?</em></td></tr>
+                                <tr><td><strong>Zbiorowe</strong></td><td>dwoje, troje, czworo</td><td><em>ile (jako grupa)?</em></td></tr>
+                                <tr><td><strong>Ułamkowe</strong></td><td>pół, ćwierć, jedna trzecia</td><td><em>jaka część?</em></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-liczebnik-zapis">
+                <h2>12. Zapis liczebników słownie</h2>
+                <div class="card card-trap">
+                    <span class="card-label">ZASADA: liczebniki na egzaminie zapisuj SŁOWNIE</span>
+                    <p>Na egzaminie ósmoklasisty liczebniki (w zadaniach gramatycznych i stylistycznych) należy zapisywać <strong>słownie</strong>.</p>
+                </div>
+
+                <div class="card card-correct">
+                    <span class="card-label">Wyjątki – kiedy można użyć cyfr</span>
+                    <p>Cyfr <strong>można</strong> używać w następujących sytuacjach:</p>
+                    <ul>
+                        <li><strong>daty</strong> – <em>23 sierpnia 2026</em></li>
+                        <li><strong>godziny</strong> – <em>godzina 15:30</em></li>
+                        <li><strong>ceny</strong> – <em>kosztowało 45 zł</em></li>
+                        <li><strong>liczby w tabelach i wykresach</strong> – w zadaniach z danych liczbowych</li>
+                    </ul>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Zasady pisowni liczebników złożonych</span>
+                    <ul>
+                        <li><strong>Liczebniki złożone (np. 23):</strong> piszemy <strong>rozdzielnie</strong> – <em>dwadzieścia trzy</em></li>
+                        <li><strong>Liczebniki z przyrostkiem „-ście” (np. 300):</strong> piszemy <strong>łącznie</strong> – <em>trzysta</em></li>
+                        <li><strong>Liczebniki porządkowe złożone:</strong> piszemy <strong>rozdzielnie</strong> – <em>dwudziesty trzeci</em></li>
+                    </ul>
+                    <div class="example">
+                        <span class="tag">poprawnie</span>
+                        <span class="pl"><strong>Dwudziestu dwóch</strong> chłopców broniło placu.</span>
+                    </div>
+                    <div class="example">
+                        <span class="tag">poprawnie</span>
+                        <span class="pl"><strong>Trzysta</strong> kroków dzieliło ich od celu.</span>
+                    </div>
+                    <div class="example">
+                        <span class="tag">poprawnie</span>
+                        <span class="pl"><strong>Dwudziesty pierwszy</strong> dzień był przełomowy.</span>
+                    </div>
+                </div>
+
+                <div class="card card-hint">
+                    <span class="card-label">Odmiana liczebników – przykłady (częste pułapki!)</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Przypadek</th><th>Liczebnik główny (2) – forma męskoosobowa</th><th>Liczebnik główny (5) – forma męskoosobowa</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Mianownik</strong></td><td>dwóch / dwaj</td><td>pięciu / pięciu</td></tr>
+                                <tr><td><strong>Dopełniacz</strong></td><td>dwóch</td><td>pięciu</td></tr>
+                                <tr><td><strong>Celownik</strong></td><td>dwóm</td><td>pięciu</td></tr>
+                                <tr><td><strong>Biernik</strong></td><td>dwóch / dwóch</td><td>pięciu / pięciu</td></tr>
+                                <tr><td><strong>Narzędnik</strong></td><td>dwoma</td><td>pięcioma</td></tr>
+                                <tr><td><strong>Miejscownik</strong></td><td>dwóch</td><td>pięciu</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-sm text-muted">Na egzaminie często sprawdzana jest poprawna forma liczebników w przypadkach – szczególnie w formach męskoosobowych!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 4 – ĆWICZENIA INTERAKTYWNE
+        ============================================================ -->
+        <section class="section" data-level="training" id="part4">
+            <div class="part-heading"><span class="part-num">Część 4</span> · Ćwiczenia interaktywne</div>
+
+            <div class="hide-all-wrap">
+                <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+                <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cwiczenia">
+                <h2>13. Ćwiczenie – stopniowanie przymiotników</h2>
+                <div class="exercise">
+                    <div class="ex-title">Podaj stopień wyższy i najwyższy przymiotnika. <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. odważny →</span>
+                        <input type="text" id="stop1" placeholder="wyższy..." style="width:130px;" />
+                        <input type="text" id="stop1n" placeholder="najwyższy..." style="width:130px;" />
+                        <span class="result-icon" id="stopIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. silny →</span>
+                        <input type="text" id="stop2" placeholder="wyższy..." style="width:130px;" />
+                        <input type="text" id="stop2n" placeholder="najwyższy..." style="width:130px;" />
+                        <span class="result-icon" id="stopIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. dobry →</span>
+                        <input type="text" id="stop3" placeholder="wyższy..." style="width:130px;" />
+                        <input type="text" id="stop3n" placeholder="najwyższy..." style="width:130px;" />
+                        <span class="result-icon" id="stopIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. mały →</span>
+                        <input type="text" id="stop4" placeholder="wyższy..." style="width:130px;" />
+                        <input type="text" id="stop4n" placeholder="najwyższy..." style="width:130px;" />
+                        <span class="result-icon" id="stopIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkStopniowanie()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="stopResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cw-nie-przymiotnik">
+                <h2>14. Ćwiczenie – „nie” z przymiotnikami</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wpisz poprawną formę przymiotnika z „nie” (łącznie lub rozdzielnie). <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. To było _____ (nie + łatwe) zadanie.</span>
+                        <input type="text" id="niep1" placeholder="wpisz..." style="width:140px;" />
+                        <span class="result-icon" id="niepIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Nemeczek _____ (nie + był + odważny), ale nie uciekł.</span>
+                        <input type="text" id="niep2" placeholder="wpisz..." style="width:160px;" />
+                        <span class="result-icon" id="niepIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. To _____ (nie + mądry) wybór.</span>
+                        <input type="text" id="niep3" placeholder="wpisz..." style="width:140px;" />
+                        <span class="result-icon" id="niepIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. Gereb _____ (nie + był + lojalny), ale później żałował.</span>
+                        <input type="text" id="niep4" placeholder="wpisz..." style="width:160px;" />
+                        <span class="result-icon" id="niepIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkNiePrzymiotnik()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="niepResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cw-liczebnik">
+                <h2>15. Ćwiczenie – rozpoznaj rodzaj liczebnika</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ rodzaj podkreślonego liczebnika. <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. <strong>Trzech</strong> chłopców stanęło do walki.</span>
+                        <select id="licz1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="glowny">główny</option>
+                            <option value="porzadkowy">porządkowy</option>
+                            <option value="zbiorowy">zbiorowy</option>
+                            <option value="ulamkowy">ułamkowy</option>
+                        </select>
+                        <span class="result-icon" id="liczIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. <strong>Pierwszy</strong> dzień obrony był najtrudniejszy.</span>
+                        <select id="licz2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="glowny">główny</option>
+                            <option value="porzadkowy">porządkowy</option>
+                            <option value="zbiorowy">zbiorowy</option>
+                            <option value="ulamkowy">ułamkowy</option>
+                        </select>
+                        <span class="result-icon" id="liczIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. <strong>Troje</strong> dzieci bawiło się na placu.</span>
+                        <select id="licz3" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="glowny">główny</option>
+                            <option value="porzadkowy">porządkowy</option>
+                            <option value="zbiorowy">zbiorowy</option>
+                            <option value="ulamkowy">ułamkowy</option>
+                        </select>
+                        <span class="result-icon" id="liczIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. Zjadł <strong>pół</strong> jabłka.</span>
+                        <select id="licz4" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="glowny">główny</option>
+                            <option value="porzadkowy">porządkowy</option>
+                            <option value="zbiorowy">zbiorowy</option>
+                            <option value="ulamkowy">ułamkowy</option>
+                        </select>
+                        <span class="result-icon" id="liczIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkLiczebnik()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="liczResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-liczebnik-formy">
+                <h2>16. Ćwiczenie – poprawna forma liczebnika</h2>
+                <div class="exercise">
+                    <div class="ex-title">Uzupełnij zdanie poprawną formą liczebnika w podanym przypadku. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. (dwóch / dwa – Biernik) Widziałem _____ chłopców na placu.</span>
+                        <select id="liczF1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="dwóch">dwóch</option>
+                            <option value="dwa">dwa</option>
+                        </select>
+                        <span class="result-icon" id="liczFIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. (pięć / pięciu – Celownik) Pomogłem _____ chłopcom.</span>
+                        <select id="liczF2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="pięć">pięć</option>
+                            <option value="pięciu">pięciu</option>
+                        </select>
+                        <span class="result-icon" id="liczFIcon2"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkLiczebnikFormy()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="liczFResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 5 – FISZKI
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part5">
+            <div class="part-heading"><span class="part-num">Część 5</span> · Fiszki</div>
+
+            <div class="section" data-level="basic" id="sec-flashcards">
+                <h2>17. Fiszki – najważniejsze pojęcia</h2>
+                <div class="flashcard-grid">
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Przymiotnik</span>
+                        <span class="back">Odmienna część mowy określająca cechy rzeczownika.<br />Odpowiada na pytania: <em>jaki? jaka? jakie?</em><br />Przykład: <em>odważny, lojalny, mądry</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Przymiotniki dzierżawcze</span>
+                        <span class="back">Określają przynależność do osoby lub zwierzęcia.<br />Przykład: <em>ojcowy, matczyny, siostrzyny, bratni</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Stopniowanie regularne</span>
+                        <span class="back">Równy: <em>mądry</em><br />Wyższy: <em>mądrzejszy</em><br />Najwyższy: <em>najmądrzejszy</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Stopniowanie nieregularne</span>
+                        <span class="back"><em>dobry – lepszy – najlepszy</em><br /><em>zły – gorszy – najgorszy</em><br /><em>duży – większy – największy</em><br /><em>mały – mniejszy – najmniejszy</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">„nie” z przymiotnikami – stan na 2026</span>
+                        <span class="back">Stopień równy: ŁĄCZNIE (<em>niemądry</em>)<br />Stopień wyższy/najwyższy: od 2026 CKE akceptuje obie pisownie (<em>niemilszy</em> lub <em>nie milszy</em>)</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Liczebnik</span>
+                        <span class="back">Odmienna część mowy określająca liczbę lub kolejność.<br />Pytania: <em>ile? który z kolei?</em><br />Przykład: <em>dwa, pierwszy, troje</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Liczebniki główne</span>
+                        <span class="back">Określają liczbę.<br />Przykład: <em>jeden, dwa, trzy, sto</em><br />Pytanie: <em>ile?</em><br />Uwaga na formy męskoosobowe: <em>dwóch chłopców</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Liczebniki porządkowe</span>
+                        <span class="back">Określają kolejność.<br />Przykład: <em>pierwszy, drugi, trzeci</em><br />Pytanie: <em>który z kolei?</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Liczebniki zbiorowe</span>
+                        <span class="back">Określają liczbę jako grupę.<br />Przykład: <em>dwoje, troje, czworo</em><br />Pytanie: <em>ile (jako grupa)?</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Liczebniki ułamkowe</span>
+                        <span class="back">Określają część całości.<br />Przykład: <em>pół, ćwierć, jedna trzecia</em><br />Pytanie: <em>jaka część?</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Zapis liczebników</span>
+                        <span class="back"><strong>Słownie</strong> (wyjątki: daty, godziny, ceny, tabele)<br />Przykład: <em>dwadzieścia trzy</em> (rozdzielnie)<br /><em>trzysta</em> (łącznie z -ście)</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Nemeczek</span>
+                        <span class="back"><strong>Bohater statyczny</strong><br />Symbol odwagi i lojalności.<br />Niesłusznie oskarżony o zdradę.<br />Poświęca zdrowie i życie za Plac Broni.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Gereb</span>
+                        <span class="back"><strong>Bohater dynamiczny</strong><br />Przemiana: zdrada → skrucha → powrót do grupy.<br />Nie staje się przywódcą ani nie poświęca się jak Nemeczek.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Mała ojczyzna</span>
+                        <span class="back">Plac Broni – symbol przynależności, wspólnoty i wartości, które chłopcy są gotowi bronić.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Motyw poświęcenia</span>
+                        <span class="back">Nemeczek oddaje życie za Plac Broni – pokazuje, że prawdziwe bohaterstwo nie wymaga siły fizycznej.</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 6 – TEST KOŃCOWY (MISJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part6">
+            <div class="part-heading"><span class="part-num">Część 6</span> · Test końcowy – MISJA</div>
+
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>18. Misja końcowa</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Zadanie</span>
+                    <p>Bez zaglądania do notatek – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                    <p>Pamiętaj o najważniejszych poprawkach: <strong>Gereb nie staje się przywódcą</strong>, <strong>Nemeczek jest bohaterem statycznym</strong>, <strong>przymiotniki stopniujemy</strong>, <strong>liczebniki zapisujemy słownie</strong>.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą lub odpowiedzią. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 7 – PODSUMOWANIE I PUŁAPKI
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part7">
+            <div class="part-heading"><span class="part-num">Część 7</span> · Podsumowanie i pułapki</div>
+
+            <div class="section" data-level="exam" id="sec-podsumowanie">
+                <h2>19. Co powinieneś umieć po tej lekcji?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Sprawdź się</span>
+                    <ul>
+                        <li><span class="correct-text">Znam autora, tytuł i głównych bohaterów „Placu Broni”.</span></li>
+                        <li><span class="correct-text">Rozumiem, że Nemeczek to bohater statyczny, a Gereb – dynamiczny (ale niepełna przemiana).</span></li>
+                        <li><span class="correct-text">Znam motywy: mała ojczyzna, przyjaźń, zdrada, poświęcenie, odwaga, niesprawiedliwość.</span></li>
+                        <li><span class="correct-text">Rozróżniam przymiotniki dzierżawcze i niestopniowalne.</span></li>
+                        <li><span class="correct-text">Znam stopniowanie regularne i nieregularne przymiotników.</span></li>
+                        <li><span class="correct-text">Znam zasadę pisowni „nie” z przymiotnikami (łącznie w stopniu równym; od 2026 obie pisownie w wyższym i najwyższym).</span></li>
+                        <li><span class="correct-text">Rozróżniam cztery rodzaje liczebników: główne, porządkowe, zbiorowe, ułamkowe.</span></li>
+                        <li><span class="correct-text">Znam zasady zapisu liczebników słownie (i wyjątki).</span></li>
+                        <li><span class="correct-text">Znam formy męskoosobowe liczebników.</span></li>
+                        <li><span class="correct-text">Mam gotowe zdania do wykorzystania w rozprawce.</span></li>
+                        <li><span class="correct-text">Wiem, jak „Plac Broni” jest traktowany na egzaminie (fragment w części I, dowolne wykorzystanie w wypracowaniu).</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-pulapki">
+                <h2>20. Najczęstsze pułapki egzaminacyjne</h2>
+                <div class="table-wrap">
+                    <table class="trap-table">
+                        <thead><tr><th>Pułapka</th><th>Błąd</th><th>Poprawnie</th></tr></thead>
+                        <tbody>
+                            <tr><td>Gereb – bohater dynamiczny</td><td><span class="error-text">Gereb został dojrzałym przywódcą.</span></td><td><span class="correct-text">Gereb okazał skruchę i wrócił do grupy, ale nie został przywódcą.</span></td></tr>
+                            <tr><td>Nemeczek – bohater</td><td><span class="error-text">Nemeczek przeszedł przemianę.</span></td><td><span class="correct-text">Nemeczek jest bohaterem statycznym – nie zmienia się, ale jest wzorem.</span></td></tr>
+                            <tr><td>Stopniowanie nieregularne</td><td><span class="error-text">dobry – dobrzejszy – najdobrzejszy</span></td><td><span class="correct-text">dobry – lepszy – najlepszy</span></td></tr>
+                            <tr><td>„nie” z przymiotnikiem</td><td><span class="error-text">nie mądry (w stopniu równym)</span></td><td><span class="correct-text">niemądry (łącznie) – w stopniu równym</span></td></tr>
+                            <tr><td>„nie” z przymiotnikiem – stopień wyższy (od 2026)</td><td><span class="error-text">niemilszy – tylko ta forma jest poprawna</span></td><td><span class="correct-text">CKE akceptuje obie: niemilszy i nie milszy</span></td></tr>
+                            <tr><td>Liczebnik – zapis</td><td><span class="error-text">23 chłopców</span></td><td><span class="correct-text">dwudziestu trzech chłopców</span></td></tr>
+                            <tr><td>Liczebnik – forma przypadkowa (męskoosobowa)</td><td><span class="error-text">widziałem dwa chłopców</span></td><td><span class="correct-text">widziałem dwóch chłopców</span></td></tr>
+                            <tr><td>Przymiotniki niestopniowalne</td><td><span class="error-text">bardziej drewniany</span></td><td><span class="correct-text">drewniany (nie stopniujemy)</span></td></tr>
+                            <tr><td>Niesprawiedliwość w lekturze</td><td><span class="error-text">Nemeczek rzeczywiście zdradził</span></td><td><span class="correct-text">Nemeczek był niesłusznie oskarżony</span></td></tr>
+                            <tr><td>Egzamin a treść lektury</td><td><span class="error-text">Egzamin sprawdza całą treść książki.</span></td><td><span class="correct-text">W części I egzamin sprawdza tylko fragment z arkusza.</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="topics">
+                <h2>Lista tematów głównych</h2>
+                <p style="color:var(--color-text-muted); font-size:0.9rem;">Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.</p>
+                <ol class="topic-list">
+                    <li><a href="#sec-cke">Status lektury na egzaminie (CKE)</a></li>
+                    <li><a href="#sec-plac-info">Podstawowe informacje o „Placu Broni”</a></li>
+                    <li><a href="#sec-plac-bohaterowie">Bohaterowie</a></li>
+                    <li><a href="#sec-plac-wydarzenia">Najważniejsze wydarzenia</a></li>
+                    <li><a href="#sec-plac-motywy">Motywy</a></li>
+                    <li><a href="#sec-plac-zdania">Zdania do rozprawki</a></li>
+                    <li><a href="#sec-e8">„Plac Broni” na E8</a></li>
+                    <li><a href="#sec-przymiotnik">Przymiotnik – definicja</a></li>
+                    <li><a href="#sec-stopniowanie">Stopniowanie przymiotników</a></li>
+                    <li><a href="#sec-nie-przymiotnik">„nie” z przymiotnikami</a></li>
+                    <li><a href="#sec-liczebnik">Liczebnik – definicja</a></li>
+                    <li><a href="#sec-liczebnik-rodzaje">Rodzaje liczebników</a></li>
+                    <li><a href="#sec-liczebnik-zapis">Zapis liczebników</a></li>
+                    <li><a href="#sec-cwiczenia">Ćwiczenia</a></li>
+                    <li><a href="#sec-flashcards">Fiszki</a></li>
+                    <li><a href="#sec-mission">Test końcowy</a></li>
+                    <li><a href="#sec-podsumowanie">Podsumowanie</a></li>
+                    <li><a href="#sec-pulapki">Pułapki</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STOPKA
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>Lekcja 4 – „Chłopcy z Placu Broni” + przymiotnik i liczebnik</strong> &bull; Wersja 2.0 – zaktualizowana zgodnie z wytycznymi CKE i realiami E8 &bull; 2026-08-24</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
+            <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ======================================================================
+        //  JAVASCRIPT – SYSTEM INTERAKTYWNY
+        // ======================================================================
+
+        // ---------- LOCAL STORAGE ----------
+        function saveProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            const state = [];
+            checks.forEach(cb => state.push(cb.checked));
+            try {
+                localStorage.setItem('polski_lec4_progress_v2', JSON.stringify(state));
+            } catch (e) { /* ignore */ }
+        }
+
+        function loadProgress() {
+            let saved;
+            try {
+                saved = localStorage.getItem('polski_lec4_progress_v2');
+            } catch (e) { return; }
+            if (!saved) return;
+            let state;
+            try {
+                state = JSON.parse(saved);
+            } catch (e) { return; }
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            checks.forEach((cb, i) => {
+                if (i < state.length) cb.checked = state[i];
+            });
+            updateProgress();
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            try {
+                localStorage.removeItem('polski_lec4_progress_v2');
+            } catch (e) { /* ignore */ }
+            updateProgress();
+        }
+
+        // ---------- TOGGLE ----------
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? 'Ukryj odpowiedzi' : 'Pokaż odpowiedzi';
+            }
+        }
+
+        function toggleFlashcard(card) {
+            const flipped = card.classList.toggle('flipped');
+            card.setAttribute('aria-pressed', String(flipped));
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-content.show, .hint-content.show, .explain-content.show').forEach(el => {
+                el.classList.remove('show');
+            });
+        }
+
+        // ---------- PROGRESS ----------
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            let total = 0,
+                done = 0;
+            checkboxes.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 0;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            const fill = document.getElementById('progressFill');
+            if (fill) fill.style.width = pct + '%';
+            const pctLabel = document.getElementById('progressPercent');
+            if (pctLabel) pctLabel.textContent = pct + '%';
+
+            const statusEl = document.getElementById('progressStatus');
+            if (statusEl) {
+                if (pct === 100) statusEl.textContent = 'Świetnie. Opanowałeś lekcję!';
+                else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze. Dokończ resztę.';
+                else if (pct >= 50) statusEl.textContent = 'Dobrze. Poćwicz jeszcze.';
+                else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+                else statusEl.textContent = 'Zacznij naukę';
+            }
+
+            updateTasks(pct);
+            saveProgress();
+        }
+
+        function updateTasks(pct) {
+            const tasks = document.querySelectorAll('.today-tasks .task');
+            const thresholds = [10, 25, 45, 65, 85];
+            tasks.forEach((task, i) => {
+                if (pct >= thresholds[i]) task.classList.add('done');
+                else task.classList.remove('done');
+            });
+        }
+
+        // ---------- FILTER ----------
+        let currentView = 'all';
+
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+            if (btn) btn.classList.add('active');
+            applyFilter(view);
+            updateVisibleCount();
+        }
+
+        function applyFilter(view) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const level = sec.dataset.level || 'basic';
+                let show = true;
+                if (view === 'basic') {
+                    show = (level === 'basic' || level === 'training' || level === 'remember');
+                } else if (view === 'exam') {
+                    show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level ===
+                        'difficult' || level === 'remember');
+                }
+                if (view === 'all') show = true;
+                sec.classList.toggle('hidden-by-filter', !show);
+            });
+        }
+
+        function updateVisibleCount() {
+            const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+            const total = document.querySelectorAll('.section').length;
+            const vEl = document.getElementById('visibleCount');
+            const tEl = document.getElementById('totalCount');
+            if (vEl) vEl.textContent = visible;
+            if (tEl) tEl.textContent = total;
+        }
+
+        // ---------- ĆWICZENIA ----------
+        function checkStopniowanie() {
+            const answers = [
+                ['odważniejszy', 'najodważniejszy'],
+                ['silniejszy', 'najsilniejszy'],
+                ['lepszy', 'najlepszy'],
+                ['mniejszy', 'najmniejszy']
+            ];
+            const icons = ['stopIcon1', 'stopIcon2', 'stopIcon3', 'stopIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const inp1 = document.getElementById('stop' + i);
+                const inp2 = document.getElementById('stop' + i + 'n');
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp1 || !inp2 || !icon) continue;
+                const val1 = inp1.value.trim().toLowerCase();
+                const val2 = inp2.value.trim().toLowerCase();
+                const isOk = val1 === answers[i - 1][0].toLowerCase() && val2 === answers[i - 1][1].toLowerCase();
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp1.classList.toggle('correct', isOk);
+                inp1.classList.toggle('wrong', !isOk);
+                inp2.classList.toggle('correct', isOk);
+                inp2.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('stopResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Świetnie stopniujesz przymiotniki!' : 'Sprawdź stopniowanie regularne i nieregularne.'}</span>`;
+            }
+        }
+
+        function checkNiePrzymiotnik() {
+            const answers = ['nietrudne', 'nie był odważny', 'niemądry', 'nie był lojalny'];
+            const icons = ['niepIcon1', 'niepIcon2', 'niepIcon3', 'niepIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const inp = document.getElementById('niep' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim().toLowerCase();
+                const isOk = val === answers[i - 1].toLowerCase();
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('niepResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Zasada "nie" z przymiotnikami opanowana!' : 'Pamiętaj: "nie" z przymiotnikami w stopniu równym piszemy łącznie.'}</span>`;
+            }
+        }
+
+        function checkLiczebnik() {
+            const answers = ['glowny', 'porzadkowy', 'zbiorowy', 'ulamkowy'];
+            const icons = ['liczIcon1', 'liczIcon2', 'liczIcon3', 'liczIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const sel = document.getElementById('licz' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('liczResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Świetnie rozpoznajesz rodzaje liczebników!' : 'Sprawdź różnice między liczebnikami głównymi, porządkowymi, zbiorowymi i ułamkowymi.'}</span>`;
+            }
+        }
+
+        function checkLiczebnikFormy() {
+            const answers = ['dwóch', 'pięciu'];
+            const icons = ['liczFIcon1', 'liczFIcon2'];
+            let correct = 0;
+            for (let i = 1; i <= 2; i++) {
+                const sel = document.getElementById('liczF' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('liczFResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 2 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/2. ${correct === 2 ? 'Poprawne formy liczebników opanowane!' : 'Pamiętaj o odmianie liczebników przez przypadki – szczególnie formy męskoosobowe.'}</span>`;
+            }
+        }
+
+        // ---------- MISJA ----------
+        const missionData = [
+            { q: '1. Kto jest autorem „Chłopców z Placu Broni”?', correct: 'Ferenc Molnár' },
+            { q: '2. Który bohater jest symbolem odwagi i lojalności, ale NIE przechodzi przemiany?', correct: 'Nemeczek' },
+            { q: '3. Który bohater przechodzi przemianę (zdrada → skrucha → powrót)?', correct: 'Gereb' },
+            { q: '4. Jaki motyw łączymy z Placem Broni jako symbolem przynależności?', correct: 'mała ojczyzna' },
+            { q: '5. Jaki jest stopień wyższy od „dobry”?', correct: 'lepszy' },
+            { q: '6. Jaki jest stopień najwyższy od „zły”?', correct: 'najgorszy' },
+            { q: '7. „nie” z przymiotnikami w stopniu równym piszemy ……… (łącznie/rozdzielnie)', correct: 'łącznie' },
+            { q: '8. „dwadzieścia trzy” – to liczebnik ……… (główny / porządkowy / zbiorowy / ułamkowy)', correct: 'główny' },
+            { q: '9. „trzysta” piszemy ……… (łącznie / rozdzielnie)', correct: 'łącznie' },
+            { q: '10. Jaki liczebnik określa kolejność? (główny / porządkowy / zbiorowy / ułamkowy)', correct: 'porządkowy' },
+            { q: '11. Czy Nemeczek był niesłusznie oskarżony o zdradę? (tak/nie)', correct: 'tak' },
+            { q: '12. Kto jest przywódcą Czerwonych Koszul?', correct: 'Feri Acz' },
+            { q: '13. W części I egzaminu sprawdzana jest znajomość całej treści książki czy tylko fragmentu?', correct: 'fragment' },
+            { q: '14. Podaj poprawną formę: widziałem _____ chłopców (dwa / dwóch)', correct: 'dwóch' },
+        ];
+
+        function initMission() {
+            const container = document.getElementById('missionQuestions');
+            if (!container) return;
+            container.innerHTML = '';
+            missionData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'fitb-row';
+                div.innerHTML = `
+                        <span style="font-weight:500;">${item.q}</span>
+                        <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:180px;" />
+                        <span class="result-icon" id="missionIcon${idx}"></span>
+                    `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkMission() {
+            let correct = 0;
+            const total = missionData.length;
+            const mistakes = [];
+            missionData.forEach((item, idx) => {
+                const input = document.getElementById('missionInput' + idx);
+                const icon = document.getElementById('missionIcon' + idx);
+                if (!input || !icon) return;
+                const val = input.value.trim().toLowerCase();
+                const isOk = val === item.correct.toLowerCase();
+                input.classList.toggle('correct', isOk);
+                input.classList.toggle('wrong', !isOk);
+                if (isOk) {
+                    icon.textContent = '✓';
+                    icon.style.color = '#2d8f5e';
+                    correct++;
+                } else {
+                    icon.textContent = '✗';
+                    icon.style.color = '#dc3545';
+                    mistakes.push(`${idx + 1}. (poprawnie: „${item.correct}”)`);
+                }
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (!resultDiv) return;
+            resultDiv.style.display = 'block';
+            const pct = Math.round((correct / total) * 100);
+            let msg = '',
+                cls = '';
+            if (pct === 100) { msg = 'Świetnie! Opanowałeś lekcję!';
+                cls = 'perfect'; } else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane zagadnienia.';
+                cls = 'good'; } else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.';
+                cls = 'ok'; } else { msg = 'Powtórz podstawy i rozwiąż test jeszcze raz.';
+                cls = 'fail'; }
+            resultDiv.className = 'mission-result ' + cls;
+            resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+                (mistakes.length ? `<br /><span class="text-sm">Popraw odpowiedzi: ${mistakes.join('; ')}</span>` : '');
+        }
+
+        function resetMission() {
+            document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'wrong');
+            });
+            document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (resultDiv) resultDiv.style.display = 'none';
+        }
+
+        // ---------- MASTER ----------
+        function mmToggleFocus() {
+            const active = document.body.classList.toggle('mm-focus');
+            const b = document.getElementById('mmFocusBtn');
+            if (b) b.textContent = active ? 'Wyłącz skupienie' : 'Tryb skupienia';
+            try {
+                localStorage.setItem('polski_lec4_focus_v2', active ? '1' : '0');
+            } catch (e) { /* ignore */ }
+        }
+
+        function mmReveal(btn, text) {
+            const out = btn.querySelector('.mm-answer');
+            if (!out) return;
+            const open = out.textContent.trim() !== '';
+            out.textContent = open ? '' : 'Odpowiedź: ' + text;
+        }
+
+        function mmUpdateSection() {
+            const sections = [...document.querySelectorAll('.section[id]')];
+            if (!sections.length) return;
+            const y = window.scrollY + 150;
+            let cur = sections[0];
+            sections.forEach(el => {
+                if (el.offsetTop <= y) cur = el;
+            });
+            sections.forEach(el => el.classList.toggle('mm-current-section', el === cur));
+            const h = cur.querySelector('h2, h3');
+            const n = document.getElementById('mmSectionName');
+            if (h && n) n.textContent = 'Lekcja 4 · ' + h.textContent.trim();
+        }
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            setView('all');
+            initMission();
+            try {
+                if (localStorage.getItem('polski_lec4_focus_v2') === '1') {
+                    document.body.classList.add('mm-focus');
+                    const b = document.getElementById('mmFocusBtn');
+                    if (b) b.textContent = 'Wyłącz skupienie';
+                }
+            } catch (e) { /* ignore */ }
+            mmUpdateSection();
+            addEventListener('scroll', mmUpdateSection, { passive: true });
+            addEventListener('resize', mmUpdateSection);
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', updateProgress);
+            });
+        });
+    </script>
+
+</body>
+</html>
