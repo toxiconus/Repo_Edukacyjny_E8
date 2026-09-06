@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧪 Lekcja zaawansowana – chemia (poziom konkursowy)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ================================================================
+           SYSTEM WIZUALNY – wersja 6.2 (z lekcji AL03)
+           ================================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h2 .level-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+            border-color: var(--color-remember);
+        }
+        .card-remember .card-label {
+            color: var(--color-remember);
+        }
+        .card-warning {
+            background: #fffbeb;
+            border-left: 5px solid #d69e2e;
+            border-color: #d69e2e;
+        }
+        .card-warning .card-label {
+            color: #d69e2e;
+        }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+            border-color: var(--color-hint);
+        }
+        .card-hint .card-label {
+            color: var(--color-hint);
+        }
+        .card-error {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-error .card-label {
+            color: var(--color-trap);
+        }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+            border-color: var(--color-correct);
+        }
+        .card-correct .card-label {
+            color: var(--color-correct);
+        }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-trap .card-label {
+            color: var(--color-trap);
+        }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+            border-color: var(--color-ambitious);
+        }
+        .card-ambitious .card-label {
+            color: var(--color-ambitious);
+        }
+        .card-gray {
+            background: var(--color-bg-subtle);
+            border-left: 5px solid var(--color-text-muted);
+            border-color: var(--color-text-muted);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .level-writing {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+        .level-difficult {
+            background: #fde68a;
+            color: #78350f;
+        }
+        .level-olimp {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .table-wrap .error-row {
+            background: #fef2f2;
+        }
+        .table-wrap .correct-row {
+            background: #f0faf4;
+        }
+
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+        }
+        .example .chem {
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 1.0rem;
+            font-family: 'Courier New', monospace;
+        }
+        .example .desc {
+            color: var(--color-text-muted);
+            font-size: 0.88rem;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .example .note {
+            color: var(--color-text-muted);
+            font-size: 0.78rem;
+            font-style: italic;
+            margin-left: auto;
+        }
+
+        .hl-operator {
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        .hl-subject {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .hl-main-verb {
+            color: var(--color-exam);
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-success {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .btn-success:hover {
+            background: #1f6e48;
+            border-color: #1f6e48;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+
+        .answer-toggle,
+        .hint-toggle {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+        .answer-toggle {
+            background: var(--color-training);
+            color: white;
+        }
+        .answer-toggle:hover {
+            background: #1f4e8c;
+        }
+        .hint-toggle {
+            background: var(--color-hint);
+            color: white;
+        }
+        .hint-toggle:hover {
+            background: #d97706;
+        }
+        .answer-content,
+        .hint-content {
+            border-radius: 6px;
+            padding: 0 12px;
+            margin-top: 4px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .answer-content.show,
+        .hint-content.show {
+            max-height: 800px;
+            padding: 10px 12px;
+            opacity: 1;
+        }
+        .answer-content {
+            background: var(--color-training-bg);
+            border-left: 3px solid var(--color-training);
+        }
+        .hint-content {
+            background: var(--color-hint-bg);
+            border-left: 3px solid var(--color-hint);
+            font-style: italic;
+            color: #78350f;
+        }
+
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+
+        .fiszka {
+            background: var(--color-bg-subtle);
+            border: 2px solid #0a2540;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 20px 0;
+        }
+        .fiszka h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0a2540;
+            padding-bottom: 4px;
+        }
+        .fiszka-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+        }
+        .fiszka-col h4 {
+            font-weight: 600;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 3px;
+            margin-bottom: 4px;
+        }
+        .fiszka-col ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .fiszka-col li {
+            padding: 2px 0 2px 16px;
+            position: relative;
+            font-size: 0.88rem;
+        }
+        .fiszka-col li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .fiszka-grid {
+                grid-template-columns: 1fr;
+            }
+            .fiszka {
+                padding: 14px 16px;
+            }
+        }
+
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+
+        .toc-section {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin-bottom: 22px;
+        }
+        .toc-section h2 {
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+        }
+        .toc-accordion {
+            margin-top: 6px;
+        }
+        .toc-item {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: #ffffff;
+        }
+        .toc-summary {
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .toc-summary:hover {
+            background: var(--color-bg-subtle);
+        }
+        .toc-summary::-webkit-details-marker {
+            display: none;
+        }
+        .toc-summary::before {
+            content: "▶";
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            transition: transform 0.2s;
+            margin-right: 6px;
+        }
+        .toc-item[open] .toc-summary::before {
+            transform: rotate(90deg);
+        }
+        .toc-checklist {
+            padding: 4px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            padding: 2px 0;
+        }
+        .toc-checklist input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .toc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 14px 8px 30px;
+        }
+        .toc-anchor {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 4px 11px;
+            border: 1px solid var(--color-training);
+            border-radius: 6px;
+            background: var(--color-training-bg);
+            color: var(--color-training);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover {
+            background: var(--color-training);
+            color: #ffffff;
+        }
+        .toc-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: var(--color-basic-bg);
+            border-radius: 12px;
+            color: #0f5132;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .toc-keywords span {
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        .section {
+            margin-bottom: 8px;
+        }
+
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+            letter-spacing: -0.02em;
+        }
+        .part-heading .part-num {
+            color: var(--color-training);
+        }
+
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .text-muted {
+            color: var(--color-text-muted);
+        }
+        .text-sm {
+            font-size: 0.82rem;
+        }
+
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .example .note {
+                margin-left: 0;
+            }
+            .container {
+                padding: 10px 6px;
+            }
+            .toc-section {
+                padding: 12px 14px;
+            }
+            .toc-summary {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+            .toc-checklist li {
+                font-size: 0.8rem;
+            }
+            [style*="grid-template-columns:1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin: 8px 0;
+        }
+        .vocab-item {
+            background: var(--color-bg-subtle);
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+        }
+        .vocab-item .en {
+            font-weight: 600;
+        }
+        .vocab-item .pl {
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+        .vocab-item .ex {
+            font-size: 0.8rem;
+            display: block;
+            color: var(--color-training);
+            margin-top: 2px;
+        }
+
+        .highlight-box {
+            background: #fef9c3;
+            border: 1px solid #facc15;
+            padding: 1rem 1.8rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+        .warning-box {
+            background: #fee2e2;
+            border: 1px solid #f87171;
+            padding: 1rem 1.8rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+        .ambitny-box {
+            background: #dbeafe;
+            border: 1px solid #3b82f6;
+            padding: 1rem 1.8rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover {
+            border-color: var(--color-error);
+            color: var(--color-error);
+            background: var(--color-trap-bg);
+        }
+
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .flashcard {
+            min-height: 120px;
+            padding: 16px;
+            border: 2px solid var(--color-border);
+            border-radius: 12px;
+            background: #ffffff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+            position: relative;
+        }
+        .flashcard:hover {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        .flashcard .front,
+        .flashcard .back {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            min-height: 80px;
+        }
+        .flashcard .front {
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+        .flashcard .back {
+            display: none;
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+        .flashcard.flipped .front {
+            display: none;
+        }
+        .flashcard.flipped .back {
+            display: flex;
+        }
+        .flashcard .card-tag {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            font-size: 0.55rem;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 10px;
+            color: #2d3a4f;
+        }
+        .flashcard .card-tag.tag-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .flashcard .card-tag.tag-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .flashcard .card-tag.tag-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .flashcard .card-tag.tag-olimp {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+            background: #e2e8f0;
+            margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">🧪 Lekcja zaawansowana – chemia</div>
+                    <div class="subtitle">Poziom konkursowy · szkoła podstawowa</div>
+                    <div class="lesson-info">
+                        <div>Konfiguracje elektronowe · Redoks · Stechiometria · Kinetyka · Równowaga · Izomeria · Grupy funkcyjne · Analiza jakościowa</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-row">
+                <button class="btn btn-outline btn-sm" onclick="resetAllProgress()">Resetuj postęp</button>
+                <span style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">Zaznaczaj checkboxy w spisie treści</span>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        SPIS TREŚCI
+        ============================================================ -->
+        <div class="toc-section" id="sec-toc">
+            <h2>📑 Spis treści</h2>
+            <div class="toc-accordion">
+                <details class="toc-item">
+                    <summary class="toc-summary">Wprowadzenie i plan pracy</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#cel">Cel lekcji</a>
+                        <a class="toc-anchor" href="#plan">Plan pracy</a>
+                        <a class="toc-anchor" href="#test-wstepny">Test wstępny</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam cel lekcji.</li>
+                        <li><input type="checkbox" data-progress="5" /> Mam plan pracy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am test wstępny.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">1. Konfiguracje elektronowe i elektroujemność</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#konfiguracje">Konfiguracje</a>
+                        <a class="toc-anchor" href="#elektroujemnosc">Elektroujemność</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam zasady Aufbau, Hunda, Pauliego.</li>
+                        <li><input type="checkbox" data-progress="5" /> Umiem zapisać konfigurację do Z=36.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam wyjątki: Cr, Cu.</li>
+                        <li><input type="checkbox" data-progress="5" /> Umiem konfiguracje jonów metali przejściowych.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam skalę Paulinga i rodzaje wiązań.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">2. Reakcje redoks i stechiometria</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#redoks">Redoks</a>
+                        <a class="toc-anchor" href="#stechiometria">Stechiometria</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam zasady ustalania stopni utlenienia.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam utleniacz i reduktor.</li>
+                        <li><input type="checkbox" data-progress="5" /> Umiem bilansować metodą elektronową.</li>
+                        <li><input type="checkbox" data-progress="5" /> Umiem obliczać z molami, wydajnością i nadmiarem.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">3. Kinetyka i równowaga</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#kinetyka">Kinetyka</a>
+                        <a class="toc-anchor" href="#rownowaga">Równowaga</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam czynniki wpływające na szybkość.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem rolę katalizatora.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam stałą K i zasadę Le Chateliera.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">4. Izomeria i grupy funkcyjne</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#izomeria">Izomeria</a>
+                        <a class="toc-anchor" href="#grupy-funkcyjne">Grupy funkcyjne</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam definicję izomerii.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam typy izomerii strukturalnej.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam warunki izomerii cis‑trans.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam główne grupy funkcyjne.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">5. Analiza jakościowa</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#analiza-jakosciowa">Analiza jakościowa</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam reakcje charakterystyczne kationów.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam reakcje charakterystyczne anionów.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">Ćwiczenia i testy</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a>
+                        <a class="toc-anchor" href="#test-koncowy">Test końcowy</a>
+                        <a class="toc-anchor" href="#fiszki">Fiszki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am ćwiczenia podstawowe.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am ćwiczenia rozszerzone.</li>
+                        <li><input type="checkbox" data-progress="5" /> Zrobiłem/am test końcowy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Powtarzam fiszki.</li>
+                    </ul>
+                </details>
+            </div>
+            <div class="toc-keywords">
+                <span>Słowa kluczowe: konfiguracje · redoks · stechiometria · kinetyka · równowaga · izomeria · grupy funkcyjne · analiza jakościowa</span>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        WPROWADZENIE
+        ============================================================ -->
+        <section class="section" id="cel">
+            <div class="part-heading"><span class="part-num">Cel lekcji</span></div>
+            <div class="card card-correct">
+                <span class="card-label">Po przerobieniu tego materiału</span>
+                <ul>
+                    <li>potrafisz zapisać konfigurację elektronową atomów i jonów (do Z ≈ 36),</li>
+                    <li>rozumiesz elektroujemność i polarność wiązań,</li>
+                    <li>umiesz bilansować reakcje redoks metodą elektronową i wykonujesz obliczenia stechiometryczne z molami, wydajnością i nadmiarem,</li>
+                    <li>znasz czynniki wpływające na szybkość reakcji, pojęcie równowagi chemicznej i zasadę Le Chateliera,</li>
+                    <li>rozpoznajesz izomery i główne grupy funkcyjne,</li>
+                    <li>znasz podstawowe reakcje charakterystyczne wybranych jonów.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="plan">
+            <div class="part-heading"><span class="part-num">📅 Plan pracy (proponowany podział na dni)</span></div>
+            <div class="highlight-box">
+                <ul>
+                    <li><strong>Dzień 1–2:</strong> konfiguracje elektronowe + elektroujemność (tabele, trendy, zadania).</li>
+                    <li><strong>Dzień 3–4:</strong> redoks i stechiometria – bilanse, zadania z nadmiarem/wydajnością.</li>
+                    <li><strong>Dzień 5:</strong> kinetyka i równowaga – czynniki, stała K, zasada Le Chateliera.</li>
+                    <li><strong>Dzień 6:</strong> izomeria, grupy funkcyjne, analiza jakościowa.</li>
+                    <li><strong>Dzień 7:</strong> test końcowy + powtórka fiszek.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="test-wstepny">
+            <div class="part-heading"><span class="part-num">📝 Test wstępny (sprawdź swoją wiedzę)</span></div>
+            <div class="card card-gray">
+                <ol>
+                    <li>Ile elektronów walencyjnych ma atom siarki?</li>
+                    <li>Co to jest utleniacz, a co reduktor?</li>
+                    <li>Napisz równanie spalania propanu.</li>
+                    <li>Co to jest izomeria?</li>
+                    <li>Podaj przykład związku z grupą hydroksylową.</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-wstepny')">👁 Pokaż odpowiedzi</button>
+                <div id="ans-wstepny" class="answer-content">
+                    <p><strong>1.</strong> Siarka (Z=16) – 6 elektronów walencyjnych.</p>
+                    <p><strong>2.</strong> Utleniacz – przyjmuje elektrony, ulega redukcji; reduktor – oddaje elektrony, ulega utlenieniu.</p>
+                    <p><strong>3.</strong> C₃H₈ + 5O₂ → 3CO₂ + 4H₂O</p>
+                    <p><strong>4.</strong> Izomeria – związki o tym samym wzorze sumarycznym, ale różnej budowie.</p>
+                    <p><strong>5.</strong> np. etanol C₂H₅OH (grupa –OH).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        1. KONFIGURACJE ELEKTRONOWE
+        ============================================================ -->
+        <section class="section" id="konfiguracje">
+            <div class="part-heading"><span class="part-num">1. Konfiguracje elektronowe i elektroujemność</span></div>
+
+            <h3>1.1. Budowa atomu – przypomnienie</h3>
+            <div class="card card-gray">
+                <p>Atom składa się z jądra (protony i neutrony) oraz powłok elektronowych.</p>
+                <ul>
+                    <li>Powłoki (K, L, M, N…): maksymalna liczba elektronów = <strong>2n²</strong>.</li>
+                    <li>Podpowłoki: <strong>s</strong> (1 orbital, 2 e⁻), <strong>p</strong> (3 orbitale, 6 e⁻), <strong>d</strong> (5 orbitali, 10 e⁻), <strong>f</strong> (7 orbitali, 14 e⁻).</li>
+                </ul>
+            </div>
+
+            <h3>1.2. Zasady zapisu konfiguracji</h3>
+            <div class="card card-remember">
+                <span class="card-label">Trzy zasady</span>
+                <ol>
+                    <li><strong>Zasada Aufbau</strong> – elektrony wypełniają orbitale od najniższej energii.<br>
+                        Kolejność: <code>1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → 5p → 6s → 4f → 5d → 6p → 7s → 5f → 6d → 7p</code></li>
+                    <li><strong>Reguła Hunda</strong> – w obrębie podpowłoki elektrony rozmieszczają się tak, aby było jak najwięcej niesparowanych.</li>
+                    <li><strong>Zakaz Pauliego</strong> – na jednym orbitalu maksymalnie 2 elektrony o przeciwnych spinach.</li>
+                </ol>
+            </div>
+
+            <h3>1.3. Przykłady (pełne i skrócone)</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Atom</th><th>Konfiguracja pełna</th><th>Skrócona</th></tr></thead>
+                    <tbody>
+                        <tr><td>Na (Z=11)</td><td>1s² 2s² 2p⁶ 3s¹</td><td>[Ne] 3s¹</td></tr>
+                        <tr><td>Cl (Z=17)</td><td>1s² 2s² 2p⁶ 3s² 3p⁵</td><td>[Ne] 3s² 3p⁵</td></tr>
+                        <tr><td>Ca (Z=20)</td><td>1s² 2s² 2p⁶ 3s² 3p⁶ 4s²</td><td>[Ar] 4s²</td></tr>
+                        <tr><td>Fe (Z=26)</td><td>1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶</td><td>[Ar] 4s² 3d⁶</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="highlight-box">
+                <strong>Uwaga:</strong> dla pierwiastków głównych elektrony walencyjne to elektrony na ostatniej powłoce. Dla metali przejściowych sytuacja jest bardziej złożona – w zadaniach szkolnych często uwzględnia się elektrony z podpowłok <em>ns</em> i <em>(n–1)d</em>, zależnie od kontekstu.
+            </div>
+
+            <h3>1.4. Wyjątki – stabilność podpowłok</h3>
+            <div class="card card-ambitious">
+                <span class="card-label">Dla ambitnych</span>
+                <ul>
+                    <li><strong>Chrom (Cr, Z=24):</strong> oczekiwana [Ar] 4s² 3d⁴, rzeczywista <strong>[Ar] 4s¹ 3d⁵</strong> (półpełna 3d).</li>
+                    <li><strong>Miedź (Cu, Z=29):</strong> oczekiwana [Ar] 4s² 3d⁹, rzeczywista <strong>[Ar] 4s¹ 3d¹⁰</strong> (pełna 3d).</li>
+                </ul>
+            </div>
+
+            <h3>1.5. Konfiguracje jonów metali przejściowych</h3>
+            <div class="card card-remember">
+                <span class="card-label">Reguła</span>
+                <p>Elektrony usuwamy <strong>najpierw z orbitalu o najwyższym <em>n</em></strong> (zazwyczaj z 4s), a dopiero potem z 3d.</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Jon</th><th>Liczba e⁻</th><th>Konfiguracja</th></tr></thead>
+                    <tbody>
+                        <tr><td>Fe²⁺</td><td>24</td><td>[Ar] 3d⁶</td></tr>
+                        <tr><td>Fe³⁺</td><td>23</td><td>[Ar] 3d⁵</td></tr>
+                        <tr><td>Cu⁺</td><td>28</td><td>[Ar] 3d¹⁰</td></tr>
+                        <tr><td>Cu²⁺</td><td>27</td><td>[Ar] 3d⁹</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="elektroujemnosc">1.6. Elektroujemność (skala Paulinga)</h3>
+            <div class="card card-correct">
+                <span class="card-label">Definicja</span>
+                <p>Elektroujemność to zdolność atomu w cząsteczce do przyciągania wspólnej pary elektronowej ku sobie.</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Pierwiastek</th><th>Elektroujemność</th></tr></thead>
+                    <tbody>
+                        <tr><td>F</td><td>4,0</td></tr>
+                        <tr><td>O</td><td>3,5</td></tr>
+                        <tr><td>Cl</td><td>3,0</td></tr>
+                        <tr><td>N</td><td>3,0</td></tr>
+                        <tr><td>Br</td><td>2,8</td></tr>
+                        <tr><td>S</td><td>2,5</td></tr>
+                        <tr><td>C</td><td>2,5</td></tr>
+                        <tr><td>H</td><td>2,1</td></tr>
+                        <tr><td>Na</td><td>0,9</td></tr>
+                        <tr><td>K</td><td>0,8</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Trendy:</strong> w grupie (z góry na dół) maleje, w okresie (z lewa na prawo) rośnie.</p>
+            <div class="card card-hint">
+                <span class="card-label">Rodzaje wiązań a Δχ – wartości przybliżone</span>
+                <ul>
+                    <li>Δχ < 0,4 → wiązanie kowalencyjne niespolaryzowane</li>
+                    <li>0,4 ≤ Δχ ≤ 1,7 → wiązanie kowalencyjne spolaryzowane</li>
+                    <li>Δχ > 1,7 → wiązanie jonowe</li>
+                </ul>
+                <p><strong>Uwaga:</strong> podane progi są umowne i zależą od skali; w praktyce granice nie są ostre.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        2. REDOKS
+        ============================================================ -->
+        <section class="section" id="redoks">
+            <div class="part-heading"><span class="part-num">2. Reakcje redoks i stechiometria</span></div>
+
+            <h3>2.1. Stopień utlenienia – zasady</h3>
+            <div class="card card-gray">
+                <ul>
+                    <li>Pierwiastek wolny – 0.</li>
+                    <li>Fluor – zawsze –1.</li>
+                    <li>Wodór – zwykle +1 (w wodorkach metali –1).</li>
+                    <li>Tlen – zwykle –2 (nadtlenki –1, OF₂ +2).</li>
+                    <li>Suma stopni utlenienia w cząsteczce = 0, w jonie = ładunek jonu.</li>
+                </ul>
+                <p><strong>Przykłady:</strong> KMnO₄ (K +1, Mn +7, O –2); H₂SO₄ (H +1, S +6, O –2); Cr₂O₇²⁻ (Cr +6, O –2).</p>
+            </div>
+
+            <h3>2.2. Utleniacz i reduktor – definicje</h3>
+            <div class="card card-remember">
+                <span class="card-label">Kluczowe definicje</span>
+                <ul>
+                    <li><strong>Utleniacz</strong> – przyjmuje elektrony, sam ulega <strong>redukcji</strong> (jego stopień utlenienia maleje). <em>Powoduje utlenienie innej substancji.</em></li>
+                    <li><strong>Reduktor</strong> – oddaje elektrony, sam ulega <strong>utlenieniu</strong> (jego stopień utlenienia rośnie). <em>Powoduje redukcję innej substancji.</em></li>
+                </ul>
+            </div>
+
+            <h3>2.3. Metoda bilansu elektronowego – krok po kroku</h3>
+            <div class="card card-hint">
+                <span class="card-label">Schemat postępowania</span>
+                <ol>
+                    <li>Określ stopnie utlenienia.</li>
+                    <li>Wskaż atomy zmieniające stopień utlenienia.</li>
+                    <li>Zapisz równania połówkowe redukcji i utlenienia.</li>
+                    <li>Wyrównaj liczbę elektronów (pomnóż równania połówkowe przez odpowiednie współczynniki).</li>
+                    <li>Dodaj równania połówkowe.</li>
+                    <li>Uzupełnij brakujące atomy i ładunki (w środowisku kwasowym – H⁺ i H₂O; w zasadowym – OH⁻ i H₂O).</li>
+                </ol>
+            </div>
+
+            <h4>Przykład 1 – środowisko kwasowe</h4>
+            <div class="example">
+                <span class="tag">MnO₄⁻ + Fe²⁺</span>
+                <span class="chem">MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺</span>
+                <span class="desc">redukcja Mn⁺⁷ → Mn⁺², utlenienie Fe²⁺ → Fe³⁺</span>
+            </div>
+
+            <h4>Przykład 2 – środowisko zasadowe (dysproporcjonowanie)</h4>
+            <div class="example">
+                <span class="tag">Cl₂ + OH⁻</span>
+                <span class="chem">3Cl₂ + 6OH⁻ → 5Cl⁻ + ClO₃⁻ + 3H₂O</span>
+                <span class="desc">dysproporcjonowanie chloru</span>
+            </div>
+
+            <div class="warning-box">
+                <strong>Uwaga dotycząca HNO₃:</strong> W reakcjach z metalami, w zależności od stężenia i rodzaju metalu, produktem redukcji może być NO₂ (stężony kwas) lub NO (kwas rozcieńczony). To typowy szkolny skrót – w rzeczywistości przebieg zależy od wielu czynników.
+            </div>
+
+            <h3 id="stechiometria">2.4. Podstawowe wzory stechiometryczne</h3>
+            <div class="card card-gray">
+                <ul>
+                    <li>Liczba moli: <code>n = m / M</code></li>
+                    <li>Dla gazów (warunki normalne): <code>n = V / V<sub>m</sub></code>, gdzie <code>V<sub>m</sub> = 22,4 dm³/mol</code></li>
+                    <li>Wydajność: <code>W = (n<sub>rzeczywista</sub> / n<sub>teoretyczna</sub>) · 100%</code></li>
+                </ul>
+            </div>
+
+            <div class="ambitny-box">
+                <strong>🧪 Przykład z nadmiarem i wydajnością (Mg + HCl)</strong>
+                <p>Do 10 g magnezu dodano 50 g 20% roztworu HCl. Oblicz objętość wodoru (w.n.) przy wydajności 90%.</p>
+                <ul>
+                    <li>Równanie: Mg + 2HCl → MgCl₂ + H₂</li>
+                    <li>n(Mg) = 10/24 ≈ 0,417 mol</li>
+                    <li>m(HCl) = 50·0,2 = 10 g → n(HCl) = 10/36,5 ≈ 0,274 mol</li>
+                    <li>Z równania: 1 mol Mg potrzebuje 2 mole HCl → 0,417 mol Mg potrzebowałoby 0,833 mol HCl – mamy tylko 0,274 mol, więc <strong>HCl jest w niedomiarze</strong>.</li>
+                    <li>Z HCl: 2 mol HCl → 1 mol H₂ → n(H₂) = 0,274/2 = 0,137 mol (teoretycznie)</li>
+                    <li>Z wydajnością 90%: n(H₂) = 0,137·0,9 = 0,1233 mol</li>
+                    <li>V(H₂) = 0,1233·22,4 ≈ 2,76 dm³</li>
+                </ul>
+            </div>
+
+            <h3>2.5. Najczęstsze utleniacze i reduktory – zestawienie</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Utleniacze</th><th>Reduktory</th></tr></thead>
+                    <tbody>
+                        <tr><td>KMnO₄ (w kwaśnym → Mn²⁺)</td><td>Metale aktywne (Na, Mg, Zn)</td></tr>
+                        <tr><td>K₂Cr₂O₇ (w kwaśnym → Cr³⁺)</td><td>H₂S, SO₂, jodki (I⁻)</td></tr>
+                        <tr><td>HNO₃ (stęż. → NO₂, rozc. → NO)</td><td>Fe²⁺, Sn²⁺</td></tr>
+                        <tr><td>Cl₂, Br₂</td><td>CO (w redukcji tlenków metali)</td></tr>
+                        <tr><td>H₂O₂ (w kwaśnym – utleniacz)</td><td>H₂O₂ (w zasadowym – reduktor)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card card-hint">
+                <span class="card-label">Uwaga</span>
+                <p>Nadtlenek wodoru może działać zarówno jako utleniacz, jak i reduktor, zależnie od środowiska i partnera reakcji.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        3. KINETYKA I RÓWNOWAGA
+        ============================================================ -->
+        <section class="section" id="kinetyka">
+            <div class="part-heading"><span class="part-num">3. Kinetyka i równowaga chemiczna</span></div>
+
+            <h3>3.1. Czynniki wpływające na szybkość reakcji</h3>
+            <div class="card card-gray">
+                <ul>
+                    <li>stężenie substratów,</li>
+                    <li>temperatura (reguła van't Hoffa: wzrost o 10°C → 2–4 razy szybciej),</li>
+                    <li>stopień rozdrobnienia (dla ciał stałych),</li>
+                    <li>obecność katalizatora,</li>
+                    <li>ciśnienie (dla gazów).</li>
+                </ul>
+            </div>
+
+            <h3>3.2. Energia aktywacji i katalizator – najważniejsze fakty</h3>
+            <div class="card card-remember">
+                <span class="card-label">Kluczowe informacje</span>
+                <ul>
+                    <li><strong>Energia aktywacji (Eₐ)</strong> – minimalna energia, jaką muszą mieć cząsteczki, aby zderzenie było skuteczne.</li>
+                    <li><strong>Katalizator</strong> – obniża Eₐ, przyspiesza reakcję, ale sam nie ulega trwałej zmianie.</li>
+                    <li><strong>Nie zmienia</strong> entalpii reakcji (ΔH).</li>
+                    <li><strong>Nie zmienia</strong> położenia równowagi ani stałej równowagi K – tylko przyspiesza osiągnięcie stanu równowagi.</li>
+                </ul>
+            </div>
+
+            <h3 id="rownowaga">3.3. Równowaga chemiczna i stała K</h3>
+            <div class="card card-gray">
+                <p>Dla reakcji odwracalnej: <code>aA + bB ⇌ cC + dD</code></p>
+                <ul>
+                    <li>Stan równowagi: szybkość reakcji w prawo = szybkość w lewo.</li>
+                    <li>Stała równowagi: <code>K = [C]^c · [D]^d / ([A]^a · [B]^b)</code></li>
+                    <li>K > 1 – przewaga produktów; K < 1 – przewaga substratów.</li>
+                </ul>
+            </div>
+
+            <h3>3.4. Zasada Le Chateliera – przykłady przemysłowe</h3>
+            <div class="card card-hint">
+                <span class="card-label">Zasada</span>
+                <p>Układ w równowadze poddany działaniu czynnika zewnętrznego dąży do przeciwstawienia się tej zmianie.</p>
+            </div>
+            <div class="card card-gray">
+                <ul>
+                    <li><strong>Synteza amoniaku:</strong> N₂ + 3H₂ ⇌ 2NH₃ (ΔH = –92 kJ/mol, egzotermiczna)
+                        <ul>
+                            <li>wysokie ciśnienie sprzyja produktom (mniej moli gazów),</li>
+                            <li>niska temperatura sprzyja produktom (reakcja egzotermiczna), ale w praktyce stosuje się ok. 450°C i katalizator, by uzyskać zadowalającą szybkość.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Utlenianie SO₂:</strong> 2SO₂ + O₂ ⇌ 2SO₃ (ΔH = –198 kJ/mol)
+                        <ul>
+                            <li>podwyższenie temperatury przesuwa równowagę w lewo (mniej SO₃), dlatego stosuje się umiarkowaną temperaturę i katalizator V₂O₅.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        4. IZOMERIA I GRUPY FUNKCYJNE
+        ============================================================ -->
+        <section class="section" id="izomeria">
+            <div class="part-heading"><span class="part-num">4. Izomeria i grupy funkcyjne</span></div>
+
+            <h3>4.1. Definicja izomerii</h3>
+            <div class="card card-remember">
+                <span class="card-label">Definicja</span>
+                <p><strong>Izomery</strong> to związki o tym samym wzorze sumarycznym, ale różnej budowie cząsteczki, a przez to często o różnych właściwościach fizycznych i chemicznych.</p>
+            </div>
+
+            <h3>4.2. Rodzaje izomerii strukturalnej</h3>
+            <div class="card card-gray">
+                <ul>
+                    <li><strong>łańcuchowa</strong> – różny układ szkieletu węglowego (np. butan i 2-metylopropan),</li>
+                    <li><strong>położenia</strong> – różne położenie grupy funkcyjnej (np. propan-1-ol i propan-2-ol),</li>
+                    <li><strong>grup funkcyjnych</strong> – różne grupy funkcyjne (np. etanol C₂H₅OH i metoksymetan CH₃–O–CH₃, oba o wzorze C₂H₆O).</li>
+                </ul>
+            </div>
+
+            <h3>4.3. Izomeria geometryczna (cis‑trans)</h3>
+            <div class="card card-hint">
+                <span class="card-label">Warunki</span>
+                <p>wiązanie podwójne C=C (lub C=N) i każdy atom węgla przy tym wiązaniu ma dwa różne podstawniki.</p>
+            </div>
+            <div class="card card-gray">
+                <p><strong>Przykład: but‑2‑en (C₄H₈)</strong></p>
+                <div style="background:#f8fafc; padding:0.8rem 1.5rem; border-radius:12px; font-family:monospace; margin-bottom:0.5rem;">
+                    <p><strong>cis‑but‑2‑en:</strong> CH₃ i CH₃ po tej samej stronie</p>
+                    <pre style="background:transparent; padding:0; border:none;">   CH₃     CH₃
+    \   /
+     C = C
+    /   \
+   H     H</pre>
+                    <p><strong>trans‑but‑2‑en:</strong> CH₃ i CH₃ po przeciwnych stronach</p>
+                    <pre style="background:transparent; padding:0; border:none;">   CH₃     H
+    \   /
+     C = C
+    /   \
+   H     CH₃</pre>
+                </div>
+            </div>
+
+            <h3>4.4. Chiralność (wstęp)</h3>
+            <div class="card card-ambitious">
+                <span class="card-label">Dla ambitnych</span>
+                <p><strong>Asymetryczny atom węgla</strong> – atom C związany z czterema różnymi podstawnikami. Cząsteczka zawierająca taki atom jest chiralna (nie nakłada się na swoje odbicie lustrzane). Przykład: kwas mlekowy (CH₃–CH(OH)–COOH).</p>
+            </div>
+
+            <h3 id="grupy-funkcyjne">4.5. Główne grupy funkcyjne – tabela</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Grupa</th><th>Nazwa</th><th>Przykład</th><th>Wzór ogólny</th></tr></thead>
+                    <tbody>
+                        <tr><td>–OH</td><td>hydroksylowa</td><td>etanol</td><td>R–OH</td></tr>
+                        <tr><td>–CHO</td><td>aldehydowa</td><td>etanal</td><td>R–CHO</td></tr>
+                        <tr><td>&gt;C=O</td><td>ketonowa</td><td>propanon</td><td>R–CO–R'</td></tr>
+                        <tr><td>–COOH</td><td>karboksylowa</td><td>kwas etanowy</td><td>R–COOH</td></tr>
+                        <tr><td>–COO–</td><td>estrowa</td><td>octan etylu</td><td>R–COO–R'</td></tr>
+                        <tr><td>–NH₂</td><td>aminowa</td><td>metyloamina</td><td>R–NH₂</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        5. ANALIZA JAKOŚCIOWA
+        ============================================================ -->
+        <section class="section" id="analiza-jakosciowa">
+            <div class="part-heading"><span class="part-num">5. Analiza jakościowa – wybrane reakcje charakterystyczne</span></div>
+
+            <h3>Kationy</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Jon</th><th>Odczynnik</th><th>Obserwacja</th><th>Równanie (przykład)</th></tr></thead>
+                    <tbody>
+                        <tr><td>Ag⁺</td><td>roztwór NaCl (Cl⁻)</td><td>biały osad</td><td>Ag⁺ + Cl⁻ → AgCl↓</td></tr>
+                        <tr><td>Pb²⁺</td><td>roztwór KI (I⁻)</td><td>żółty osad</td><td>Pb²⁺ + 2I⁻ → PbI₂↓</td></tr>
+                        <tr><td>Cu²⁺</td><td>roztwór NH₃ (aq)</td><td>intensywnie niebieski roztwór</td><td>Cu²⁺ + 4NH₃ → [Cu(NH₃)₄]²⁺</td></tr>
+                        <tr><td>Fe³⁺</td><td>roztwór KSCN (SCN⁻)</td><td>krwistoczerwony roztwór</td><td>Fe³⁺ + SCN⁻ → [Fe(SCN)]²⁺</td></tr>
+                        <tr><td>NH₄⁺</td><td>odczynnik Nesslera</td><td>pomarańczowy/brązowy osad</td><td>(reakcja charakterystyczna)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card card-hint">
+                <span class="card-label">Uwaga</span>
+                <p>Odczynnik Nesslera służy do wykrywania <strong>jonów amonowych (NH₄⁺)</strong>, a nie azotanów(V). W warunkach szkolnych często zamiast Nesslera stosuje się prostszą próbę – ogrzewanie z NaOH i sprawdzanie zapachu amoniaku.</p>
+            </div>
+
+            <h3>Aniony</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Jon</th><th>Odczynnik</th><th>Obserwacja</th><th>Równanie (przykład)</th></tr></thead>
+                    <tbody>
+                        <tr><td>Cl⁻</td><td>AgNO₃</td><td>biały osad</td><td>Ag⁺ + Cl⁻ → AgCl↓</td></tr>
+                        <tr><td>SO₄²⁻</td><td>BaCl₂</td><td>biały osad, nierozpuszczalny w HCl</td><td>Ba²⁺ + SO₄²⁻ → BaSO₄↓</td></tr>
+                        <tr><td>CO₃²⁻</td><td>kwas (np. HCl)</td><td>wydziela się gaz CO₂ (mętni wodę wapienną)</td><td>CO₃²⁻ + 2H⁺ → CO₂↑ + H₂O</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        6. ĆWICZENIA
+        ============================================================ -->
+        <section class="section" id="cwiczenia">
+            <div class="part-heading"><span class="part-num">6. Ćwiczenia</span></div>
+
+            <h3>Poziom podstawowy</h3>
+            <div class="exercise">
+                <ol>
+                    <li>Zapisz konfigurację elektronową atomów: P, Ca, Br.</li>
+                    <li>Ustal stopnie utlenienia w: KMnO₄, H₂SO₄, Cr₂O₇²⁻.</li>
+                    <li>Zbilansuj metodą elektronową (środowisko kwasowe): Cu + HNO₃ (rozc.) → Cu(NO₃)₂ + NO + H₂O.</li>
+                    <li>Narysuj wzory wszystkich izomerów łańcuchowych C₅H₁₂.</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-cw-podst')">👁 Pokaż odpowiedzi</button>
+                <div id="ans-cw-podst" class="answer-content">
+                    <ol>
+                        <li>P: [Ne] 3s² 3p³; Ca: [Ar] 4s²; Br: [Ar] 4s² 3d¹⁰ 4p⁵.</li>
+                        <li>KMnO₄: K +1, Mn +7, O –2; H₂SO₄: H +1, S +6, O –2; Cr₂O₇²⁻: Cr +6, O –2.</li>
+                        <li><code>3Cu + 8HNO₃ → 3Cu(NO₃)₂ + 2NO + 4H₂O</code></li>
+                        <li>Pentan, 2-metylobutan, 2,2-dimetylopropan.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Poziom rozszerzony (konkursowy)</h3>
+            <div class="exercise">
+                <ol start="5">
+                    <li>Oblicz objętość tlenu (w.n.) potrzebną do spalenia 11,5 g etanolu.</li>
+                    <li>Wyjaśnij, dlaczego reakcja N₂ + 3H₂ ⇌ 2NH₃ jest egzotermiczna i jak temperatura wpływa na jej wydajność.</li>
+                    <li>Podaj przykład izomerii geometrycznej i uzasadnij, dlaczego wymaga ona wiązania podwójnego.</li>
+                    <li>Zbilansuj metodą elektronową (środowisko zasadowe): Cl₂ + OH⁻ → Cl⁻ + ClO₃⁻ + H₂O.</li>
+                    <li>Do 5 g cynku dodano 100 g 10% roztworu H₂SO₄. Oblicz objętość wodoru (w.n.) przy wydajności 85% (wskaż, który substrat jest w nadmiarze).</li>
+                    <li>Narysuj wszystkie izomery o wzorze C₄H₁₀O (alkohole i etery) i podaj ich nazwy.</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-cw-rozszerz')">👁 Pokaż odpowiedzi</button>
+                <div id="ans-cw-rozszerz" class="answer-content">
+                    <ol>
+                        <li><code>C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O</code>; n(etanolu) = 11,5/46 = 0,25 mol; n(O₂) = 0,75 mol; V = 0,75·22,4 = 16,8 dm³.</li>
+                        <li>Reakcja egzotermiczna (ΔH = –92 kJ/mol). Podwyższenie temperatury przesuwa równowagę w lewo (ku substratom), więc wydajność NH₃ maleje.</li>
+                        <li>but-2-en – warunki: wiązanie C=C uniemożliwia rotację i każdy atom C musi mieć dwa różne podstawniki.</li>
+                        <li><code>3Cl₂ + 6OH⁻ → 5Cl⁻ + ClO₃⁻ + 3H₂O</code>.</li>
+                        <li><code>Zn + H₂SO₄ → ZnSO₄ + H₂</code>; n(Zn) = 5/65 ≈ 0,0769 mol; n(H₂SO₄) = 100·0,1/98 ≈ 0,102 mol – <strong>Zn jest w niedomiarze</strong>; n(H₂) teoret. = 0,0769 mol; z wydajnością 85% → 0,0654 mol; V = 0,0654·22,4 ≈ 1,46 dm³.</li>
+                        <li>Alkohole: butan-1-ol, butan-2-ol, 2-metylopropan-1-ol, 2-metylopropan-2-ol. Etery: metoksypropan, 2-metoksypropan, etoksyetan. Razem 7 izomerów.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        8. PUŁAPKI I BŁĘDY
+        ============================================================ -->
+        <section class="section" id="pulapki">
+            <div class="part-heading"><span class="part-num">8. Pułapki i najczęstsze błędy</span></div>
+            <div class="warning-box">
+                <ul>
+                    <li>❌ Mylenie utleniacza z reduktorem – utleniacz <strong>przyjmuje elektrony</strong> i sam ulega redukcji.</li>
+                    <li>❌ Przy bilansie redoks zapominanie o bilansie ładunków – zawsze sprawdzaj sumę ładunków po obu stronach.</li>
+                    <li>❌ Uznawanie, że katalizator przesuwa równowagę – katalizator <strong>nie zmienia K</strong>, tylko przyspiesza osiągnięcie równowagi.</li>
+                    <li>❌ Przy konfiguracjach jonów metali przejściowych – usuwaj elektrony najpierw z <strong>4s</strong>, potem z <strong>3d</strong>.</li>
+                    <li>❌ W zadaniach z kilkoma substratami – zawsze sprawdzaj, który jest w niedomiarze.</li>
+                    <li>❌ Traktowanie progów elektroujemności jako bezwzględnych – są umowne.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        9. PODSUMOWANIE
+        ============================================================ -->
+        <section class="section" id="podsumowanie">
+            <div class="part-heading"><span class="part-num">9. Podsumowanie – najważniejsze umiejętności</span></div>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Obszar</th><th>Wymagania</th></tr></thead>
+                    <tbody>
+                        <tr><td>Konfiguracje</td><td>Zapis do Z=36, jony (Fe²⁺, Fe³⁺, Cu⁺, Cu²⁺), wyjątki Cr, Cu</td></tr>
+                        <tr><td>Elektroujemność</td><td>Skala Paulinga, rodzaje wiązań, trendy</td></tr>
+                        <tr><td>Redoks</td><td>Stopnie utlenienia, bilans elektronowy (kwasowe/zasadowe), utleniacz/reduktor</td></tr>
+                        <tr><td>Stechiometria</td><td>n = m/M, n = V/Vm, wydajność, nadmiar/niedomiar</td></tr>
+                        <tr><td>Kinetyka</td><td>Czynniki szybkości, reguła van't Hoffa, katalizator (nie zmienia K)</td></tr>
+                        <tr><td>Równowaga</td><td>Stan równowagi, zasada Le Chateliera, stała K (jakościowo)</td></tr>
+                        <tr><td>Izomeria</td><td>Łańcuchowa, położenia, cis‑trans, chiralność (wstęp)</td></tr>
+                        <tr><td>Grupy funkcyjne</td><td>Alkohole, aldehydy, ketony, kwasy, estry, aminy – rozpoznawanie i nazewnictwo</td></tr>
+                        <tr><td>Analiza jakościowa</td><td>Reakcje charakterystyczne wybranych kationów i anionów</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        10. TEST KOŃCOWY
+        ============================================================ -->
+        <section class="section" id="test-koncowy">
+            <div class="part-heading"><span class="part-num">10. Test końcowy (z zadaniami otwartymi)</span></div>
+
+            <h3>Część 1 – konfiguracje i elektroujemność</h3>
+            <div class="exercise">
+                <ol>
+                    <li>Zapisz konfigurację elektronową atomu kobaltu (Co, Z=27) i jonu Co³⁺.</li>
+                    <li>Określ rodzaj wiązania (jonowe, kowalencyjne spolaryzowane, niespolaryzowane) dla: H₂O, NaCl, Cl₂, NH₃.</li>
+                    <li>Wyjaśnij słownie, dlaczego miedź ma konfigurację [Ar] 4s¹ 3d¹⁰ zamiast [Ar] 4s² 3d⁹.</li>
+                </ol>
+            </div>
+
+            <h3>Część 2 – redoks i obliczenia</h3>
+            <div class="exercise">
+                <ol start="4">
+                    <li>Zbilansuj metodą elektronową (środowisko kwasowe): KMnO₄ + HCl → MnCl₂ + Cl₂ + KCl + H₂O.</li>
+                    <li>Oblicz masę tlenu potrzebną do spalenia 36 g glukozy (C₆H₁₂O₆).</li>
+                    <li>Dla reakcji 2SO₂ + O₂ ⇌ 2SO₃, ΔH = –198 kJ/mol – czy podwyższenie temperatury zwiększy zawartość SO₃? Uzasadnij, odwołując się do zasady Le Chateliera.</li>
+                </ol>
+            </div>
+
+            <h3>Część 3 – kinetyka</h3>
+            <div class="exercise">
+                <ol start="7">
+                    <li>Wymień cztery czynniki zwiększające szybkość reakcji.</li>
+                    <li>Wyjaśnij, dlaczego katalizator nie zmienia położenia równowagi.</li>
+                </ol>
+            </div>
+
+            <h3>Część 4 – izomeria, grupy funkcyjne, analiza jakościowa</h3>
+            <div class="exercise">
+                <ol start="9">
+                    <li>Narysuj wzory wszystkich izomerów łańcuchowych C₆H₁₄ i podaj ich nazwy.</li>
+                    <li>Podaj po dwa przykłady związków zawierających: a) grupę hydroksylową, b) grupę karbonylową (aldehydową i ketonową), c) grupę karboksylową. Dodatkowo napisz reakcję charakterystyczną dla jonów Fe³⁺ (podaj odczynnik, obserwację i równanie).</li>
+                </ol>
+            </div>
+
+            <button class="answer-toggle" onclick="toggleAnswer('ans-test-koncowy')">👁 Pokaż odpowiedzi do testu</button>
+            <div id="ans-test-koncowy" class="answer-content">
+                <ol>
+                    <li>Co: [Ar] 4s² 3d⁷; Co³⁺: [Ar] 3d⁶.</li>
+                    <li>H₂O – spolaryzowane; NaCl – jonowe; Cl₂ – niespolaryzowane; NH₃ – spolaryzowane.</li>
+                    <li>Pełna podpowłoka 3d¹⁰ jest energetycznie stabilniejsza niż 3d⁹, dlatego elektron z 4s przechodzi na 3d.</li>
+                    <li><code>2KMnO₄ + 16HCl → 2MnCl₂ + 5Cl₂ + 2KCl + 8H₂O</code>.</li>
+                    <li>Równanie: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O. M(glukozy)=180 g/mol, n=36/180=0,2 mol, n(O₂)=1,2 mol, m(O₂)=1,2·32=38,4 g.</li>
+                    <li>Reakcja egzotermiczna – podwyższenie temperatury przesuwa równowagę w lewo, więc zawartość SO₃ <strong>maleje</strong>.</li>
+                    <li>Stężenie, temperatura, rozdrobnienie, katalizator (oraz ciśnienie dla gazów).</li>
+                    <li>Katalizator obniża energię aktywacji zarówno reakcji w prawo, jak i w lewo, nie zmieniając stałej równowagi K.</li>
+                    <li>Heksan, 2-metylopentan, 3-metylopentan, 2,2-dimetylobutan, 2,3-dimetylobutan.</li>
+                    <li>a) etanol, propan-1-ol; b) aldehyd: etanal, propanal; keton: propanon, butan-2-on; c) kwas etanowy, kwas metanowy. Reakcja Fe³⁺: odczynnik – KSCN, obserwacja – krwistoczerwone zabarwienie, równanie: Fe³⁺ + SCN⁻ → [Fe(SCN)]²⁺.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        13. FISZKI
+        ============================================================ -->
+        <section class="section" id="fiszki">
+            <div class="part-heading"><span class="part-num">13. Fiszki (przykłady z tagami)</span></div>
+
+            <div class="flashcard-grid">
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Konfiguracja Fe</span>
+                    <span class="back"><strong>[Ar] 4s² 3d⁶</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Konfiguracja Cr (wyjątek)</span>
+                    <span class="back"><strong>[Ar] 4s¹ 3d⁵</strong></span>
+                    <span class="card-tag tag-ambitious">ambitny</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Konfiguracja Cu (wyjątek)</span>
+                    <span class="back"><strong>[Ar] 4s¹ 3d¹⁰</strong></span>
+                    <span class="card-tag tag-ambitious">ambitny</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Δχ > 1,7 oznacza</span>
+                    <span class="back"><strong>wiązanie jonowe</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Δχ 0,4–1,7 oznacza</span>
+                    <span class="back"><strong>wiązanie kowalencyjne spolaryzowane</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Utleniacz to substancja, która</span>
+                    <span class="back"><strong>przyjmuje elektrony, ulega redukcji</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Reduktor to substancja, która</span>
+                    <span class="back"><strong>oddaje elektrony, ulega utlenieniu</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wzór na liczbę moli</span>
+                    <span class="back"><strong>n = m / M</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Vm w warunkach normalnych</span>
+                    <span class="back"><strong>22,4 dm³/mol</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wzrost temperatury o 10°C</span>
+                    <span class="back"><strong>przyspiesza reakcję 2–4 razy</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Czy katalizator zmienia K?</span>
+                    <span class="back"><strong>Nie</strong></span>
+                    <span class="card-tag tag-trap">pułapka</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Zasada Le Chateliera</span>
+                    <span class="back"><strong>układ przeciwdziała zmianom</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Warunki cis‑trans</span>
+                    <span class="back"><strong>wiązanie podwójne + różne podstawniki</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Grupa alkoholi</span>
+                    <span class="back"><strong>–OH</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Grupa aldehydów</span>
+                    <span class="back"><strong>–CHO</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Grupa ketonów</span>
+                    <span class="back"><strong>&gt;C=O</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Grupa kwasów karboksylowych</span>
+                    <span class="back"><strong>–COOH</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Reakcja Fe³⁺ z SCN⁻</span>
+                    <span class="back"><strong>krwistoczerwony [Fe(SCN)]²⁺</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Odczynnik Nesslera wykrywa</span>
+                    <span class="back"><strong>NH₄⁺ (jony amonowe)</strong></span>
+                    <span class="card-tag tag-trap">pułapka</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Kto przyjmuje elektrony?</span>
+                    <span class="back"><strong>Utleniacz</strong></span>
+                    <span class="card-tag tag-trap">pułapka</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Must have + V3 (ambitny)</span>
+                    <span class="back"><strong>silne przypuszczenie o przeszłości</strong></span>
+                    <span class="card-tag tag-ambitious">ambitny</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        FOOTER
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>🧪 Lekcja zaawansowana – chemia</strong> &bull; Poziom konkursowy &bull; Szkoła podstawowa</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ============================================================
+        //  JAVASCRIPT – system interaktywny (dostosowany do chemii)
+        // ============================================================
+
+        // ---------- LOCAL STORAGE ----------
+        function saveProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            const state = [];
+            checks.forEach(cb => state.push(cb.checked));
+            localStorage.setItem('chemia_progress', JSON.stringify(state));
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('chemia_progress');
+            if (!saved) return;
+            const state = JSON.parse(saved);
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            checks.forEach((cb, i) => {
+                if (i < state.length) cb.checked = state[i];
+            });
+            updateProgress();
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            localStorage.removeItem('chemia_progress');
+            updateProgress();
+        }
+
+        // ---------- TOGGLE ----------
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? '👁 Ukryj odpowiedzi' : '👁 Pokaż odpowiedzi';
+            }
+        }
+
+        function toggleFlashcard(card) {
+            card.classList.toggle('flipped');
+        }
+
+        // ---------- PROGRESS ----------
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            let total = 0,
+                done = 0;
+            checkboxes.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 5;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            document.getElementById('progressFill').style.width = pct + '%';
+            document.getElementById('progressPercent').textContent = pct + '%';
+            const statusEl = document.getElementById('progressStatus');
+            if (pct === 100) statusEl.textContent = '🏆 Świetnie! Opanowałeś lekcję!';
+            else if (pct >= 80) statusEl.textContent = '💪 Bardzo dobrze! Dokończ resztę.';
+            else if (pct >= 50) statusEl.textContent = '📖 Dobrze! Poćwicz jeszcze.';
+            else if (pct > 0) statusEl.textContent = '📘 Zacząłeś – kontynuuj!';
+            else statusEl.textContent = 'Zacznij naukę';
+            saveProgress();
+        }
+
+        document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', updateProgress);
+        });
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+        });
+    </script>
+</body>
+</html>
