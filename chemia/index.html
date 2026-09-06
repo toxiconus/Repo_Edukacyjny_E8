@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemia – kurs dla ambitnych (struktura lekcji)</title>
+    <style>
+        /* ================================================================
+           SYSTEM WIZUALNY – spójny z AL 1 FINAL
+           ================================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== KOLORY ===== */
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            color: white;
+            padding: 2.4rem 2.5rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(15, 23, 42, 0.20);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.2rem;
+        }
+
+        .header p {
+            font-size: 1.05rem;
+            opacity: 0.85;
+            max-width: 600px;
+        }
+
+        .header .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(4px);
+            padding: 0.25rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            margin-top: 0.6rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .header .badge .sep {
+            margin: 0 6px;
+            opacity: 0.3;
+        }
+
+        /* ===== STATYSTYKI ===== */
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e9edf4;
+            flex: 1 1 auto;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .stat-card .label {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        /* ===== BLOKI ===== */
+        .block {
+            margin-bottom: 2.5rem;
+        }
+
+        .block-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .block-sub {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #cbd5e1;
+            padding-left: 1rem;
+        }
+
+        .block-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        /* ===== KARTA LEKCJI (rozszerzona o poziomy) ===== */
+        .lesson-card {
+            background: white;
+            border-radius: 14px;
+            padding: 1.1rem 1.4rem;
+            border: 1px solid #e9edf4;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-card);
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-2px);
+            border-color: #b9c7e0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .lesson-card .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 4px 8px;
+            margin-bottom: 0.2rem;
+        }
+
+        .lesson-card .num {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #94a3b8;
+            background: #f1f4f9;
+            padding: 0.05rem 0.7rem;
+            border-radius: 40px;
+            letter-spacing: 0.3px;
+        }
+
+        .lesson-card .name {
+            font-weight: 600;
+            font-size: 1.0rem;
+            margin: 0.1rem 0 0.1rem 0;
+            color: #0a2540;
+        }
+
+        .lesson-card .desc {
+            font-size: 0.85rem;
+            color: #475569;
+            margin-top: 0.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ===== POZIOMY (4 poziomy w rzędzie) ===== */
+        .levels-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 4px;
+            padding-top: 6px;
+            border-top: 1px solid #f1f4f9;
+        }
+
+        .level-pill {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 2px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+            background: #f1f4f9;
+            color: #64748b;
+            border: 1px solid transparent;
+        }
+
+        .level-pill.podstawowy {
+            background: #d4edda;
+            color: #155724;
+            border-color: #a3d0b5;
+        }
+
+        .level-pill.egzaminacyjny {
+            background: #cce5ff;
+            color: #004085;
+            border-color: #99c4f0;
+        }
+
+        .level-pill.rozszerzony {
+            background: #e8d5f5;
+            color: #4a1a6b;
+            border-color: #c9a8e0;
+        }
+
+        .level-pill.konkursowy {
+            background: #fde68a;
+            color: #78350f;
+            border-color: #f5c842;
+        }
+
+        .level-pill .pill-label {
+            font-weight: 600;
+        }
+
+        .level-pill .pill-desc {
+            font-weight: 400;
+            opacity: 0.8;
+            margin-left: 3px;
+        }
+
+        /* ===== ELEMENTY STAŁE ===== */
+        .badge-constant {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+            background: #e2e8f0;
+            margin-right: 3px;
+        }
+
+        .badge-constant.test {
+            background: #fce4ec;
+            color: #9a1f3c;
+        }
+
+        .badge-constant.errors {
+            background: #fef2f2;
+            color: #dc3545;
+        }
+
+        .badge-constant.szkolny {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .badge-constant.konkurs {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        .lesson-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 10px;
+            margin-top: 4px;
+            font-size: 0.7rem;
+            color: #94a3b8;
+        }
+
+        .lesson-meta .tag {
+            display: inline-block;
+            background: #f1f4f9;
+            padding: 0.05rem 0.6rem;
+            border-radius: 20px;
+            color: #64748b;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            margin-top: 2.5rem;
+            padding-top: 1.2rem;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 700px) {
+            .container {
+                padding: 12px 10px;
+            }
+            .header {
+                padding: 1.6rem 1.2rem;
+            }
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            .header p {
+                font-size: 0.95rem;
+            }
+            .stats {
+                flex-wrap: wrap;
+            }
+            .stat-card {
+                flex: 1 1 45%;
+                min-width: 70px;
+                padding: 0.5rem 0.8rem;
+            }
+            .stat-card .number {
+                font-size: 1.3rem;
+            }
+            .lesson-card {
+                padding: 0.9rem 1.0rem;
+            }
+            .levels-row {
+                gap: 4px;
+            }
+            .level-pill {
+                font-size: 0.55rem;
+                padding: 1px 8px;
+            }
+            .block-grid {
+                gap: 0.8rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0.3in;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+            .header {
+                background: #0f172a !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .lesson-card:hover {
+                transform: none;
+            }
+            .stats .stat-card {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <header class="header">
+            <h1>Chemia – kurs dla ambitnych</h1>
+            <p>Pełny program od podstaw do poziomu konkursowego.<br>36 lekcji podzielonych na 3 bloki tematyczne, każda lekcja z 4 poziomami trudności.</p>
+            <div class="badge">
+                36 lekcji <span class="sep">·</span> 3 bloki <span class="sep">·</span> poziom: klasa 7–8 + olimpiada
+            </div>
+        </header>
+
+        <!-- ===== STATYSTYKI ===== -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number">36</div>
+                <div class="label">lekcji tygodniowych</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">3</div>
+                <div class="label">bloki tematyczne</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">12</div>
+                <div class="label">lekcji – fundamenty</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">16</div>
+                <div class="label">lekcji – klasa 8 + rozszerzenia</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">8</div>
+                <div class="label">lekcji – przygotowanie olimpijskie</div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- BLOK A – Powtórka i fundamenty klasy 7 -->
+        <section class="block block-a">
+            <div class="block-title">Blok A – Powtórka i fundamenty klasy 7</div>
+            <div class="block-sub">12 lekcji – bezpieczeństwo, budowa materii, wiązania, reakcje, woda, kwasy</div>
+
+            <div class="block-grid">
+
+                <!-- Lekcja 1 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 1</span>
+                        <div class="lesson-meta">
+                            <span class="tag">BHP</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Bezpieczeństwo i praca w laboratorium</div>
+                    <div class="desc">BHP, szkło laboratoryjne, ogrzewanie, obserwacje, zapis przebiegu doświadczenia, wykrywanie błędów, projektowanie doświadczenia.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">BHP, szkło, ogrzewanie</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">zapis przebiegu doświadczenia</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">wykrywanie błędów</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">projektowanie doświadczenia</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 2 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 2</span>
+                        <div class="lesson-meta">
+                            <span class="tag">substancje</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Substancje i ich właściwości</div>
+                    <div class="desc">Substancja, mieszanina, stany skupienia, cechy charakterystyczne, właściwości fizyczne vs chemiczne, klasyfikacja nietypowych substancji.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">substancja, mieszanina, stany</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">cechy charakterystyczne</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">fizyczne vs chemiczne</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">klasyfikacja nietypowa</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 3 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 3</span>
+                        <div class="lesson-meta">
+                            <span class="tag">mieszaniny</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Mieszaniny i ich rozdzielanie</div>
+                    <div class="desc">Filtracja, dekantacja, destylacja, krystalizacja, dobór metody, chromatografia, projektowanie wieloetapowego rozdziału.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">filtracja, dekantacja, destylacja</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">dobór metody</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">chromatografia</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">wieloetapowy rozdział</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 4 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 4</span>
+                        <div class="lesson-meta">
+                            <span class="tag">atom</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Budowa atomu</div>
+                    <div class="desc">Proton, neutron, elektron, liczba atomowa i masowa, zapis izotopów, zastosowania izotopów, obliczenia składu atomu.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">proton, neutron, elektron</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">zapis izotopów</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">zastosowania izotopów</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">obliczenia składu atomu</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 5 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 5</span>
+                        <div class="lesson-meta">
+                            <span class="tag">układ okresowy</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Układ okresowy pierwiastków</div>
+                    <div class="desc">Grupy, okresy, metale, niemetale, właściwości a położenie, przewidywanie cech, analiza trendów okresowych.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">grupy, okresy, metale</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">właściwości a położenie</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">przewidywanie cech</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">trendy okresowe</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 6 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 6</span>
+                        <div class="lesson-meta">
+                            <span class="tag">wiązania</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Wiązania chemiczne</div>
+                    <div class="desc">Wiązanie jonowe i kowalencyjne, wartościowość, wzory sumaryczne, sieci krystaliczne, porównanie właściwości.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">jonowe i kowalencyjne</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">wartościowość, wzory</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">sieci krystaliczne</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">porównanie właściwości</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 7 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 7</span>
+                        <div class="lesson-meta">
+                            <span class="tag">reakcje</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Wzory i równania reakcji</div>
+                    <div class="desc">Zapis symboliczny, bilansowanie równań, układanie równań z opisu słownego, równania wieloetapowe.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">zapis symboliczny</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">bilansowanie</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">z opisu słownego</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">wieloetapowe</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 8 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 8</span>
+                        <div class="lesson-meta">
+                            <span class="tag">reakcje</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Reakcje chemiczne</div>
+                    <div class="desc">Synteza, analiza, wymiana, spalanie, rozpoznawanie typu, zobojętnianie, analiza nietypowych reakcji.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">synteza, analiza, wymiana</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">rozpoznawanie typu</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">zobojętnianie</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">nietypowe reakcje</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 9 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 9</span>
+                        <div class="lesson-meta">
+                            <span class="tag">gazy</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Powietrze i gazy</div>
+                    <div class="desc">Skład powietrza, właściwości gazów, reakcje spalania i oddychania, wpływ zmian składu, analiza zanieczyszczeń.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">skład, właściwości</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">spalanie, oddychanie</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">zmiany składu</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">analiza danych</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 10 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 10</span>
+                        <div class="lesson-meta">
+                            <span class="tag">woda</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Woda i roztwory</div>
+                    <div class="desc">Woda jako rozpuszczalnik, roztwór, rozpuszczalność i jej zależność od temperatury, zastosowania praktyczne, interpretacja krzywych rozpuszczalności.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">woda, rozpuszczalnik, roztwór</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">rozpuszczalność</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">zastosowania praktyczne</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">krzywe rozpuszczalności</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 11 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 11</span>
+                        <div class="lesson-meta">
+                            <span class="tag">kwasy</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Kwasy – wprowadzenie</div>
+                    <div class="desc">Pojęcie kwasu, wskaźniki, pH, przykłady i zastosowania, moc kwasu, porównanie właściwości.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">kwas, wskaźniki, pH</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">przykłady, zastosowania</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">moc kwasu</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">porównanie właściwości</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 12 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 12</span>
+                        <div class="lesson-meta">
+                            <span class="tag">powtórka</span>
+                            <span class="badge-constant test">test</span>
+                        </div>
+                    </div>
+                    <div class="name">Powtórka fundamentów</div>
+                    <div class="desc">Przegląd lekcji 1–11, zadania przekrojowe, zadania łączone, mini-test konkursowy.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">przegląd 1–11</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">zadania przekrojowe</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">zadania łączone</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">mini-test konkursowy</span></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BLOK B – Materiał klasy 8 + rozszerzenia -->
+        <section class="block block-b">
+            <div class="block-title">Blok B – Materiał klasy 8 + rozszerzenia</div>
+            <div class="block-sub">16 lekcji – wodorotlenki, tlenki, sole, roztwory, organika, redoks</div>
+
+            <div class="block-grid">
+
+                <!-- Lekcja 13 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 13</span>
+                        <div class="lesson-meta">
+                            <span class="tag">wodorotlenki</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Wodorotlenki</div>
+                    <div class="desc">Budowa i nazewnictwo, otrzymywanie, reakcje z kwasami, zastosowania praktyczne.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">budowa, nazewnictwo</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">otrzymywanie</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">reakcje z kwasami</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">zastosowania praktyczne</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 14 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 14</span>
+                        <div class="lesson-meta">
+                            <span class="tag">tlenki</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Tlenki i ich podział</div>
+                    <div class="desc">Tlenki kwasowe, zasadowe, obojętne, tlenki amfoteryczne, przewidywanie charakteru tlenku, reakcje w warunkach nietypowych.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">kwasowe, zasadowe, obojętne</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">amfoteryczne</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">przewidywanie charakteru</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">reakcje nietypowe</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 15 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 15</span>
+                        <div class="lesson-meta">
+                            <span class="tag">sole</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Sole</div>
+                    <div class="desc">Nazewnictwo i wzory, reakcje otrzymywania, sole kwaśne i zasadowe, hydraty i ich obliczenia.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">nazewnictwo, wzory</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">otrzymywanie soli</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">sole kwaśne i zasadowe</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">hydraty, obliczenia</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 16 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 16</span>
+                        <div class="lesson-meta">
+                            <span class="tag">reakcje</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Reakcje zobojętniania i strącania</div>
+                    <div class="desc">Powstawanie soli, zapis reakcji cząsteczkowych i jonowych, analiza produktów w roztworach.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">powstawanie soli</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">zapis cząsteczkowy</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">zapis jonowy</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">analiza produktów</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 17 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 17</span>
+                        <div class="lesson-meta">
+                            <span class="tag">stężenie</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Stężenie roztworów</div>
+                    <div class="desc">Stężenie procentowe, obliczenia masy substancji i roztworu, zadania mieszania, zadania wieloetapowe.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">stężenie %</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">masa substancji, roztworu</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">mieszanie roztworów</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">wieloetapowe</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 18 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 18</span>
+                        <div class="lesson-meta">
+                            <span class="tag">gęstość</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Gęstość i obliczenia chemiczne</div>
+                    <div class="desc">Gęstość i jej wzór, zależności masy, objętości, stężenia, zamiana jednostek, zadania z "ukrytymi" danymi.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">gęstość, wzór</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">masa, objętość, stężenie</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">zamiana jednostek</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">"ukryte" dane</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 19 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 19</span>
+                        <div class="lesson-meta">
+                            <span class="tag">stechiometria</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Stechiometria – pierwszy poziom</div>
+                    <div class="desc">Proporcje z równań reakcji, proste przeliczenia, zadania wieloetapowe, nadmiar i niedomiar substratu.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">proporcje z równań</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">proste przeliczenia</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">wieloetapowe</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">nadmiar / niedomiar</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 20 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 20</span>
+                        <div class="lesson-meta">
+                            <span class="tag">węglowodory</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Węglowodory</div>
+                    <div class="desc">Alkany, alkeny, alkiny, wzory ogólne, nazewnictwo, spalanie, izomeria prostych węglowodorów.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">alkany, alkeny, alkiny</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">wzory ogólne, nazewnictwo</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">spalanie</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">izomeria</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 21 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 21</span>
+                        <div class="lesson-meta">
+                            <span class="tag">pochodne</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Pochodne węglowodorów</div>
+                    <div class="desc">Alkohole, kwasy karboksylowe, estry, grupy funkcyjne, porównanie właściwości, reakcje pochodnych.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">alkohole, kwasy, estry</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">grupy funkcyjne</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">porównanie właściwości</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">reakcje pochodnych</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 22 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 22</span>
+                        <div class="lesson-meta">
+                            <span class="tag">organika</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Reakcje związków organicznych</div>
+                    <div class="desc">Spalanie, estryfikacja, utlenianie związków organicznych, fermentacja, warunki i mechanizmy reakcji.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">spalanie, estryfikacja</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">utlenianie</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">fermentacja</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">mechanizmy reakcji</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 23 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 23</span>
+                        <div class="lesson-meta">
+                            <span class="tag">biochemia</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Białka i aminokwasy</div>
+                    <div class="desc">Aminokwasy i peptydy, budowa białek, denaturacja, próby wykrywania białek.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">aminokwasy, peptydy</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">budowa białek</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">denaturacja</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">wykrywanie białek</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 24 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 24</span>
+                        <div class="lesson-meta">
+                            <span class="tag">redoks</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Redoks – podstawy</div>
+                    <div class="desc">Utlenianie i redukcja, utleniacz i reduktor, stopnie utlenienia, proste reakcje redoks.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">utlenianie, redukcja</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">utleniacz, reduktor</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">stopnie utlenienia</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">reakcje redoks</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 25 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 25</span>
+                        <div class="lesson-meta">
+                            <span class="tag">środowisko</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Chemia w przyrodzie i środowisku</div>
+                    <div class="desc">Woda, gleba, powietrze, zanieczyszczenia, recykling, chemia codzienności, interpretacja danych środowiskowych.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">woda, gleba, powietrze</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">zanieczyszczenia, recykling</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">chemia codzienności</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">dane środowiskowe</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 26 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 26</span>
+                        <div class="lesson-meta">
+                            <span class="tag">doświadczenia</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Doświadczenia chemiczne</div>
+                    <div class="desc">Obserwacja i wnioskowanie, zapis przebiegu, przewidywanie wyników, projektowanie własnego doświadczenia.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">obserwacja, wnioskowanie</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">zapis przebiegu</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">przewidywanie wyników</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">projektowanie</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 27 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 27</span>
+                        <div class="lesson-meta">
+                            <span class="tag">powtórka</span>
+                            <span class="badge-constant test">test</span>
+                        </div>
+                    </div>
+                    <div class="name">Powtórka klasy 8</div>
+                    <div class="desc">Przegląd lekcji 13–26, zadania przekrojowe, test mieszany, zadania trudniejsze.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">przegląd 13–26</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">zadania przekrojowe</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">test mieszany</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">zadania trudniejsze</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 28 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 28</span>
+                        <div class="lesson-meta">
+                            <span class="tag">rachunki</span>
+                            <span class="badge-constant szkolny">szkolny</span>
+                        </div>
+                    </div>
+                    <div class="name">Zadania rachunkowe mieszane</div>
+                    <div class="desc">Stężenie i gęstość, proporcje reakcji, zamiana jednostek, zadania z dodatkowymi danymi.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">stężenie, gęstość</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">proporcje reakcji</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">zamiana jednostek</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">dodatkowe dane</span></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BLOK C – Utrwalenie + poziom konkursowy -->
+        <section class="block block-c">
+            <div class="block-title">Blok C – Utrwalenie + poziom konkursowy</div>
+            <div class="block-sub">8 lekcji – przygotowanie olimpijskie</div>
+
+            <div class="block-grid">
+
+                <!-- Lekcja 29 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 29</span>
+                        <div class="lesson-meta">
+                            <span class="tag">stechiometria</span>
+                            <span class="badge-constant konkurs">konkurs</span>
+                        </div>
+                    </div>
+                    <div class="name">Stechiometria konkursowa</div>
+                    <div class="desc">Powtórka podstaw, zadania wieloetapowe, wydajność reakcji, zadania z mieszaninami.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">powtórka podstaw</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">wieloetapowe</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">wydajność reakcji</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">mieszaniny</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 30 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 30</span>
+                        <div class="lesson-meta">
+                            <span class="tag">redoks</span>
+                            <span class="badge-constant konkurs">konkurs</span>
+                        </div>
+                    </div>
+                    <div class="name">Redoks zaawansowany</div>
+                    <div class="desc">Powtórka redoksu, zmiany stopni utlenienia, szeregi aktywności metali, trudniejsze reakcje redoks.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">powtórka redoksu</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">stopnie utlenienia</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">szeregi aktywności</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">trudniejsze reakcje</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 31 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 31</span>
+                        <div class="lesson-meta">
+                            <span class="tag">kinetyka</span>
+                            <span class="badge-constant konkurs">konkurs</span>
+                        </div>
+                    </div>
+                    <div class="name">Kinetyka i czynniki szybkości reakcji</div>
+                    <div class="desc">Temperatura, stężenie, rozdrobnienie, rola katalizatora, interpretacja wykresów, analiza doświadczeń porównawczych.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">temperatura, stężenie</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">rola katalizatora</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">interpretacja wykresów</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">doświadczenia porównawcze</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 32 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 32</span>
+                        <div class="lesson-meta">
+                            <span class="tag">równowaga</span>
+                            <span class="badge-constant konkurs">konkurs</span>
+                        </div>
+                    </div>
+                    <div class="name">Równowaga chemiczna</div>
+                    <div class="desc">Reakcje odwracalne, stan równowagi, wpływ warunków na równowagę, zasada Le Chateliera.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">reakcje odwracalne</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">stan równowagi</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">wpływ warunków</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">Le Chatelier</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 33 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 33</span>
+                        <div class="lesson-meta">
+                            <span class="tag">izomeria</span>
+                            <span class="badge-constant konkurs">konkurs</span>
+                        </div>
+                    </div>
+                    <div class="name">Izomeria</div>
+                    <div class="desc">Izomeria łańcuchowa, izomeria położenia, rozpoznawanie izomerów na wzorach, izomeria geometryczna (wstęp).</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">łańcuchowa</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">położenia</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">rozpoznawanie</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">geometryczna</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 34 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 34</span>
+                        <div class="lesson-meta">
+                            <span class="tag">analiza</span>
+                            <span class="badge-constant konkurs">konkurs</span>
+                        </div>
+                    </div>
+                    <div class="name">Analiza jakościowa</div>
+                    <div class="desc">Rozpoznawanie jonów, charakterystyczne reakcje i barwy, schematy wykrywania substancji, analiza próbek nieznanych.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">rozpoznawanie jonów</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">reakcje i barwy</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">schematy wykrywania</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">próbki nieznane</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 35 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 35</span>
+                        <div class="lesson-meta">
+                            <span class="tag">zadania</span>
+                            <span class="badge-constant konkurs">konkurs</span>
+                        </div>
+                    </div>
+                    <div class="name">Zadania mieszane</div>
+                    <div class="desc">Powtórka nieorganiki i organiki, zadania obliczeniowe, zadania łączone, zadania z pułapkami.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">powtórka</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">obliczeniowe</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">łączone</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">z pułapkami</span></span>
+                    </div>
+                </div>
+
+                <!-- Lekcja 36 -->
+                <div class="lesson-card">
+                    <div class="top-row">
+                        <span class="num">Lekcja 36</span>
+                        <div class="lesson-meta">
+                            <span class="tag">finał</span>
+                            <span class="badge-constant konkurs">konkurs</span>
+                            <span class="badge-constant test">test</span>
+                        </div>
+                    </div>
+                    <div class="name">Finał i próbny egzamin</div>
+                    <div class="desc">Pełna powtórka kursu, test przekrojowy, analiza błędów, zadania olimpijskie otwarte.</div>
+                    <div class="levels-row">
+                        <span class="level-pill podstawowy"><span class="pill-label">podstawowy</span> <span class="pill-desc">pełna powtórka</span></span>
+                        <span class="level-pill egzaminacyjny"><span class="pill-label">egzaminacyjny</span> <span class="pill-desc">test przekrojowy</span></span>
+                        <span class="level-pill rozszerzony"><span class="pill-label">rozszerzony</span> <span class="pill-desc">analiza błędów</span></span>
+                        <span class="level-pill konkursowy"><span class="pill-label">konkursowy</span> <span class="pill-desc">zadania olimpijskie</span></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- ELEMENTY STAŁE KURSU -->
+        <section style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 2px solid var(--color-border);">
+            <h2 style="border-bottom: none; margin-top: 0;">Elementy stałe kursu</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 8px; font-size: 0.9rem;">
+                <div><span class="badge-constant" style="background:#d4edda; color:#155724;">musisz umieć</span> – sekcja w każdej lekcji</div>
+                <div><span class="badge-constant" style="background:#cce5ff; color:#004085;">zadania</span> – 4 poziomy trudności</div>
+                <div><span class="badge-constant test">test</span> – co 6 lekcji krótki test powtórkowy</div>
+                <div><span class="badge-constant errors">błędy</span> – najczęstsze błędy przy trudniejszych tematach</div>
+                <div><span class="badge-constant szkolny">szkolny</span> – tematy szkolne</div>
+                <div><span class="badge-constant konkurs">konkurs</span> – tematy konkursowe</div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+            <p><strong>Chemia – kurs dla ambitnych</strong> &bull; 36 lekcji &bull; 4 poziomy trudności &bull; od podstaw do olimpiady</p>
+            <p style="font-size:0.75rem; opacity:0.6; margin-top:0.2rem;">Każda lekcja zawiera sekcję "musisz umieć" oraz zadania na 4 poziomach.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
