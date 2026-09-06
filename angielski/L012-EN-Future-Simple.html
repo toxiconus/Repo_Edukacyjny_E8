@@ -1,0 +1,2425 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 12 – Future Simple (will) i be going to</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ================================================================
+           SYSTEM WIZUALNY – wersja 6.2 (z lekcji AL03)
+           ================================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h2 .level-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+            border-color: var(--color-remember);
+        }
+        .card-remember .card-label {
+            color: var(--color-remember);
+        }
+        .card-warning {
+            background: #fffbeb;
+            border-left: 5px solid #d69e2e;
+            border-color: #d69e2e;
+        }
+        .card-warning .card-label {
+            color: #d69e2e;
+        }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+            border-color: var(--color-hint);
+        }
+        .card-hint .card-label {
+            color: var(--color-hint);
+        }
+        .card-error {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-error .card-label {
+            color: var(--color-trap);
+        }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+            border-color: var(--color-correct);
+        }
+        .card-correct .card-label {
+            color: var(--color-correct);
+        }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-trap .card-label {
+            color: var(--color-trap);
+        }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+            border-color: var(--color-ambitious);
+        }
+        .card-ambitious .card-label {
+            color: var(--color-ambitious);
+        }
+        .card-gray {
+            background: var(--color-bg-subtle);
+            border-left: 5px solid var(--color-text-muted);
+            border-color: var(--color-text-muted);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .level-writing {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+        .level-difficult {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+        }
+        .example .eng {
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 1.0rem;
+        }
+        .example .pl {
+            color: var(--color-text-muted);
+            font-style: italic;
+            font-size: 0.88rem;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .example .note {
+            color: var(--color-text-muted);
+            font-size: 0.78rem;
+            font-style: italic;
+            margin-left: auto;
+        }
+        .hl-operator {
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        .hl-subject {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .hl-main-verb {
+            color: var(--color-exam);
+            font-weight: 600;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .table-wrap .error-row {
+            background: #fef2f2;
+        }
+        .table-wrap .correct-row {
+            background: #f0faf4;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-success {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .btn-success:hover {
+            background: #1f6e48;
+            border-color: #1f6e48;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+        .btn-hint {
+            background: var(--color-hint);
+            border-color: var(--color-hint);
+            color: white;
+        }
+        .btn-hint:hover {
+            background: #d97706;
+            border-color: #d97706;
+        }
+
+        .audio-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 15px;
+            color: var(--color-training);
+            transition: all 0.2s;
+            flex-shrink: 0;
+            font-family: inherit;
+            line-height: 1;
+        }
+        .audio-btn:hover {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+        }
+        .audio-btn.playing {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+
+        .answer-toggle,
+        .hint-toggle,
+        .explain-toggle {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+        .answer-toggle {
+            background: var(--color-training);
+            color: white;
+        }
+        .answer-toggle:hover {
+            background: #1f4e8c;
+        }
+        .hint-toggle {
+            background: var(--color-hint);
+            color: white;
+        }
+        .hint-toggle:hover {
+            background: #d97706;
+        }
+        .explain-toggle {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+        }
+        .explain-toggle:hover {
+            border-color: var(--color-training);
+            color: var(--color-training);
+            background: var(--color-training-bg);
+        }
+        .answer-content,
+        .hint-content,
+        .explain-content {
+            border-radius: 6px;
+            padding: 0 12px;
+            margin-top: 4px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .answer-content.show,
+        .hint-content.show,
+        .explain-content.show {
+            max-height: 800px;
+            padding: 10px 12px;
+            opacity: 1;
+        }
+        .answer-content {
+            background: var(--color-training-bg);
+            border-left: 3px solid var(--color-training);
+        }
+        .hint-content {
+            background: var(--color-hint-bg);
+            border-left: 3px solid var(--color-hint);
+            font-style: italic;
+            color: #78350f;
+        }
+        .explain-content {
+            background: var(--color-bg-subtle);
+            border-left: 3px solid var(--color-training);
+        }
+
+        .diagram-flow {
+            background: var(--color-bg-subtle);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            text-align: center;
+        }
+        .diagram-flow .step {
+            display: inline-block;
+            background: #ffffff;
+            border: 2px solid var(--color-border);
+            border-radius: 10px;
+            padding: 6px 16px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin: 3px 0;
+        }
+        .diagram-flow .arrow {
+            display: block;
+            font-size: 1.2rem;
+            color: var(--color-text-muted);
+            margin: 1px 0;
+        }
+        .diagram-flow .branch {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 6px 0;
+        }
+        .diagram-flow .branch .choice {
+            background: #ffffff;
+            border: 2px solid var(--color-border);
+            border-radius: 10px;
+            padding: 4px 16px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            min-width: 70px;
+        }
+        .diagram-flow .branch .choice:hover {
+            border-color: var(--color-training);
+        }
+        .diagram-flow .branch .choice.selected-be {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+        }
+        .diagram-flow .branch .choice.selected-do {
+            border-color: var(--color-exam);
+            background: var(--color-exam-bg);
+        }
+        .diagram-flow .result-box {
+            margin-top: 10px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            font-size: 0.92rem;
+            text-align: left;
+        }
+
+        .choice-quiz .q-item {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .choice-quiz .q-item:last-child {
+            border-bottom: none;
+        }
+        .choice-quiz .q-item .q-text {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        .choice-quiz .q-item .q-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .choice-quiz .q-item .q-options .btn {
+            font-size: 0.78rem;
+            padding: 3px 12px;
+        }
+        .choice-quiz .q-item .q-options .btn.correct-choice {
+            border-color: var(--color-correct);
+            background: var(--color-basic-bg);
+            color: var(--color-correct);
+        }
+        .choice-quiz .q-item .q-options .btn.wrong-choice {
+            border-color: var(--color-error);
+            background: var(--color-trap-bg);
+            color: var(--color-error);
+        }
+        .choice-quiz .q-item .q-feedback {
+            font-size: 0.82rem;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+        .choice-quiz .q-item .q-feedback .correct {
+            color: var(--color-correct);
+        }
+        .choice-quiz .q-item .q-feedback .wrong {
+            color: var(--color-error);
+        }
+
+        .fitb-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 10px;
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child {
+            border-bottom: none;
+        }
+        .fitb-row input[type="text"] {
+            padding: 3px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            width: 100px;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        .fitb-row input[type="text"]:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+        .fitb-row input[type="text"].correct {
+            border-color: var(--color-correct);
+            background: #f0faf4;
+        }
+        .fitb-row input[type="text"].wrong {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        .fitb-row .result-icon {
+            font-size: 1.0rem;
+        }
+
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .view-filters {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .view-filters .btn {
+            font-size: 0.72rem;
+            padding: 3px 12px;
+        }
+        .view-filters .btn.active {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .today-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin: 4px 0 0;
+        }
+        .today-tasks .task {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+        .today-tasks .task .circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--color-text-muted);
+            transition: all 0.2s;
+        }
+        .today-tasks .task.done .circle {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .today-tasks .task .task-label {
+            color: var(--color-text-muted);
+        }
+        .today-tasks .task.done .task-label {
+            color: var(--color-text);
+            text-decoration: line-through;
+        }
+
+        .mission-result {
+            font-size: 1.0rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        .mission-result.perfect {
+            background: #d4edda;
+            color: #155724;
+        }
+        .mission-result.good {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .mission-result.ok {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .mission-result.fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .toc-section {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin-bottom: 22px;
+        }
+        .toc-section h2 {
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+        }
+        .toc-accordion {
+            margin-top: 6px;
+        }
+        .toc-item {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: #ffffff;
+        }
+        .toc-summary {
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .toc-summary:hover {
+            background: var(--color-bg-subtle);
+        }
+        .toc-summary::-webkit-details-marker {
+            display: none;
+        }
+        .toc-summary::before {
+            content: "▶";
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            transition: transform 0.2s;
+            margin-right: 6px;
+        }
+        .toc-item[open] .toc-summary::before {
+            transform: rotate(90deg);
+        }
+        .toc-checklist {
+            padding: 4px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            padding: 2px 0;
+        }
+        .toc-checklist input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .toc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 14px 8px 30px;
+        }
+        .toc-anchor {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 4px 11px;
+            border: 1px solid var(--color-training);
+            border-radius: 6px;
+            background: var(--color-training-bg);
+            color: var(--color-training);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover,
+        .toc-anchor:focus-visible {
+            background: var(--color-training);
+            color: #ffffff;
+        }
+        .toc-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: var(--color-basic-bg);
+            border-radius: 12px;
+            color: #0f5132;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .toc-keywords span {
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        .section.hidden-by-filter {
+            display: none !important;
+        }
+
+        .topic-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 7px 30px;
+            padding-left: 28px;
+        }
+        .topic-list li {
+            margin: 0;
+            padding-left: 2px;
+            font-size: 0.9rem;
+        }
+        .topic-list a {
+            display: flex;
+            align-items: center;
+            min-height: 38px;
+            padding: 6px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background: #ffffff;
+            color: #0a2540;
+            font-weight: 600;
+            line-height: 1.25;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .topic-list a:hover,
+        .topic-list a:focus-visible {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+            color: var(--color-training);
+        }
+        @media (max-width: 600px) {
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .view-filters {
+                justify-content: center;
+            }
+            .today-tasks {
+                flex-direction: column;
+                gap: 3px;
+            }
+            .example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .example .note {
+                margin-left: 0;
+            }
+            .fitb-row {
+                flex-wrap: wrap;
+            }
+            .fitb-row input[type="text"] {
+                width: 100%;
+            }
+            .top-panel {
+                padding: 12px 14px;
+            }
+            .container {
+                padding: 10px 6px;
+            }
+            .diagram-flow .branch {
+                gap: 10px;
+            }
+            .diagram-flow .branch .choice {
+                padding: 3px 12px;
+                font-size: 0.78rem;
+            }
+            .toc-section {
+                padding: 12px 14px;
+            }
+            .toc-summary {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+            .toc-checklist li {
+                font-size: 0.8rem;
+            }
+        }
+
+        .text-muted {
+            color: var(--color-text-muted);
+        }
+        .text-sm {
+            font-size: 0.82rem;
+        }
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+            letter-spacing: -0.02em;
+        }
+        .part-heading .part-num {
+            color: var(--color-training);
+        }
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .cross-mark {
+            color: var(--color-error);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+        .check-mark {
+            color: var(--color-correct);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover {
+            border-color: var(--color-error);
+            color: var(--color-error);
+            background: var(--color-trap-bg);
+        }
+
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .flashcard {
+            min-height: 120px;
+            padding: 16px;
+            border: 2px solid var(--color-border);
+            border-radius: 12px;
+            background: #ffffff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+            position: relative;
+        }
+        .flashcard:hover,
+        .flashcard:focus-visible {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        .flashcard .front,
+        .flashcard .back {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            min-height: 80px;
+        }
+        .flashcard .front {
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+        .flashcard .back {
+            display: none;
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+        .flashcard.flipped .front {
+            display: none;
+        }
+        .flashcard.flipped .back {
+            display: flex;
+        }
+        .flashcard .card-tag {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            font-size: 0.55rem;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 10px;
+            color: #2d3a4f;
+        }
+        .flashcard .card-tag.tag-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .flashcard .card-tag.tag-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .flashcard .card-tag.tag-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL – POSTĘP + FILTRY
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">Future Simple (<strong>will</strong>) i <strong>be going to</strong></div>
+                    <div class="subtitle">Egzamin ósmoklasisty · kompleksowe przygotowanie</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Lekcja 12 – przyszłość: will, be going to, Present Continuous, Present Simple</div>
+                        <div>Wersja interaktywna 8.0</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-row">
+                <div class="view-filters">
+                    <button class="btn active" data-view="all" onclick="setView('all')">📚 Wszystko</button>
+                    <button class="btn" data-view="basic" onclick="setView('basic')">🟢 Podstawa + Trening</button>
+                    <button class="btn" data-view="exam" onclick="setView('exam')">🟠 Egzamin</button>
+                </div>
+                <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                    <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+                </div>
+                <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+            </div>
+            <div class="panel-row">
+                <div class="today-tasks" id="todayTasks">
+                    <div class="task" data-task="will"><span class="circle">1</span><span class="task-label">Poznaj will</span></div>
+                    <div class="task" data-task="going"><span class="circle">2</span><span class="task-label">Poznaj be going to</span></div>
+                    <div class="task" data-task="compare"><span class="circle">3</span><span class="task-label">Porównaj will i going to</span></div>
+                    <div class="task" data-task="training"><span class="circle">4</span><span class="task-label">Zrób trening</span></div>
+                    <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        SPIS TREŚCI (akordeon)
+        ============================================================ -->
+        <div class="toc-section" id="sec-toc">
+            <h2>Spis treści</h2>
+            <div class="toc-accordion">
+                <details class="toc-item">
+                    <summary class="toc-summary">Wprowadzenie i zasady</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-cel">Cel lekcji</a>
+                        <a class="toc-anchor" href="#sec-test-start">Test wstępny</a>
+                        <a class="toc-anchor" href="#sec-intro">Wprowadzenie</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="4" /> Znam cel lekcji.</li>
+                        <li><input type="checkbox" data-progress="4" /> Rozwiązałem/am test wstępny.</li>
+                        <li><input type="checkbox" data-progress="4" /> Znam różnicę między will i be going to.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">Will – spontaniczne decyzje, obietnice, przewidywania</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-will">Will</a>
+                        <a class="toc-anchor" href="#sec-going">Be going to</a>
+                        <a class="toc-anchor" href="#sec-compare">Porównanie</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="4" /> Umiem użyć will do obietnic.</li>
+                        <li><input type="checkbox" data-progress="4" /> Umiem użyć will do przewidywań.</li>
+                        <li><input type="checkbox" data-progress="4" /> Umiem użyć be going to dla planów.</li>
+                        <li><input type="checkbox" data-progress="4" /> Umiem użyć be going to z dowodami.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">Present Continuous i Present Simple dla przyszłości</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-pc">Present Continuous</a>
+                        <a class="toc-anchor" href="#sec-ps">Present Simple</a>
+                        <a class="toc-anchor" href="#sec-ambitious">Ambitne</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="4" /> Umiem użyć Present Continuous dla ustalonych planów.</li>
+                        <li><input type="checkbox" data-progress="4" /> Umiem użyć Present Simple dla rozkładów.</li>
+                        <li><input type="checkbox" data-progress="4" /> Znam was/were going to (ambitny).</li>
+                        <li><input type="checkbox" data-progress="4" /> Znam shall (ambitny).</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">Ćwiczenia i testy</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-exercises">Ćwiczenia</a>
+                        <a class="toc-anchor" href="#sec-mission">Test końcowy</a>
+                        <a class="toc-anchor" href="#sec-faq">FAQ</a>
+                        <a class="toc-anchor" href="#sec-flashcards">Fiszki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="4" /> Rozwiązałem/am ćwiczenia.</li>
+                        <li><input type="checkbox" data-progress="4" /> Rozwiązałem/am test końcowy.</li>
+                        <li><input type="checkbox" data-progress="4" /> Sprawdziłem/am swój postęp.</li>
+                    </ul>
+                </details>
+            </div>
+            <div class="toc-keywords">
+                <span>Słownictwo: plany · marzenia · pogoda · podróże</span>
+                <a class="toc-anchor" href="#sec-vocab">Otwórz słowniczek</a>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        CZĘŚĆ 0 – CEL I TEST WSTĘPNY
+        ============================================================ -->
+        <section class="section" data-level="basic" id="sec-cel">
+            <div class="part-heading"><span class="part-num">Cel lekcji</span></div>
+            <div class="card card-correct">
+                <span class="card-label">Po tej lekcji będziesz potrafić</span>
+                <ul>
+                    <li>rozróżniać <strong>will</strong> i <strong>be going to</strong> w zależności od kontekstu,</li>
+                    <li>używać <strong>will</strong> do spontanicznych decyzji, obietnic i przewidywań opartych na opinii,</li>
+                    <li>używać <strong>be going to</strong> do planów i przewidywań opartych na dowodach,</li>
+                    <li>stosować <strong>Present Continuous</strong> dla ustalonych planów,</li>
+                    <li>stosować <strong>Present Simple</strong> dla rozkładów i harmonogramów,</li>
+                    <li>unikać typowych błędów Polaków na egzaminie E8.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" data-level="basic" id="sec-test-start">
+            <div class="part-heading"><span class="part-num">1. Zanim zaczniesz – szybki test</span></div>
+            <div class="card card-gray">
+                <p><strong>Instrukcja:</strong> Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik i wróć do tych samych pytań po zakończeniu lekcji.</p>
+                <ol>
+                    <li>I think it ______ rain tomorrow. (will / going to)</li>
+                    <li>Look at those clouds! It ______ rain. (will / is going to)</li>
+                    <li>Popraw: <em>I will to help you.</em></li>
+                    <li>Uzupełnij: <em>The train ______ at 8.</em> (leaves / is going to leave)</li>
+                    <li>Uzupełnij: <em>I ______ to study medicine.</em> (plan)</li>
+                    <li>Uzupełnij: <em>I ______ call you later.</em> (obietnica)</li>
+                    <li>Popraw: <em>I meet my friend tomorrow.</em> (ustalony plan)</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-start')">👁 Pokaż odpowiedzi</button>
+                <div id="ans-start" class="answer-content">
+                    <ol>
+                        <li><strong>will</strong> – przewidywanie oparte na opinii (<em>I think</em>)</li>
+                        <li><strong>is going to</strong> – przewidywanie oparte na dowodach (<em>Look at those clouds!</em>)</li>
+                        <li><strong>I will help you.</strong> (po will bezokolicznik bez <em>to</em>)</li>
+                        <li><strong>leaves</strong> – rozkład → Present Simple</li>
+                        <li><strong>am going to</strong> – wcześniejszy plan</li>
+                        <li><strong>will</strong> – obietnica</li>
+                        <li><strong>I am meeting my friend tomorrow.</strong> (ustalony plan → Present Continuous)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 2 – WPROWADZENIE
+        ============================================================ -->
+        <section class="section" data-level="basic" id="sec-intro">
+            <div class="part-heading"><span class="part-num">2. Wprowadzenie – jak mówić o przyszłości?</span></div>
+            <p>W języku angielskim istnieje kilka sposobów mówienia o przyszłości. Wybór zależy od tego, jak patrzymy na przyszłe wydarzenie.</p>
+
+            <div class="card card-remember">
+                <span class="card-label">Najważniejsza zasada</span>
+                <p>Nie ucz się: <span class="error-text">will = przyszłość</span><br />
+                    Ucz się: <span class="correct-text">will = spontaniczna decyzja / obietnica / opinia</span></p>
+                <p>Nie ucz się: <span class="error-text">be going to = przyszłość</span><br />
+                    Ucz się: <span class="correct-text">be going to = wcześniejszy plan / dowód</span></p>
+            </div>
+
+            <!-- INTERAKTYWNY DIAGRAM -->
+            <div class="diagram-flow" id="decisionDiagram" style="border:2px solid var(--color-training);">
+                <div style="font-weight:700; color:var(--color-training); margin-bottom:8px;">JAK WYBRAĆ KONSTRUKCJĘ PRZYSZŁOŚCI?</div>
+                <div class="step" style="margin-bottom:4px;">1. Jaka jest sytuacja?</div>
+                <div class="arrow">↓</div>
+                <div class="branch">
+                    <span class="choice" data-branch="spontaneous" onclick="diagramFuture('spontaneous')">Spontaniczna decyzja</span>
+                    <span class="choice" data-branch="plan" onclick="diagramFuture('plan')">Wcześniejszy plan</span>
+                    <span class="choice" data-branch="fixed" onclick="diagramFuture('fixed')">Ustalony plan (godzina)</span>
+                    <span class="choice" data-branch="timetable" onclick="diagramFuture('timetable')">Rozkład / harmonogram</span>
+                </div>
+                <div class="result-box" id="diagramFutureResult" style="margin-top:10px;">
+                    <span style="color:var(--color-text-muted);">Wybierz sytuację, aby zobaczyć właściwą konstrukcję.</span>
+                </div>
+            </div>
+
+            <div class="card card-gray" style="margin-top:12px;">
+                <span class="card-label">Cztery konstrukcje przyszłości – zestawienie</span>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Konstrukcja</th><th>Kiedy używamy?</th><th>Przykład</th><th>Poziom</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>will</strong></td><td>spontaniczne decyzje, obietnice, opinie</td><td><em>I'll help you.</em></td><td>E8</td></tr>
+                            <tr><td><strong>be going to</strong></td><td>plany, zamiary, przesłanki</td><td><em>I'm going to study.</em></td><td>E8</td></tr>
+                            <tr><td><strong>Present Continuous</strong></td><td>ustalone plany (godzina/miejsce)</td><td><em>I'm meeting her at 6.</em></td><td>E8</td></tr>
+                            <tr><td><strong>Present Simple</strong></td><td>rozkłady, harmonogramy</td><td><em>The train leaves at 8.</em></td><td>E8</td></tr>
+                            <tr><td><strong>was/were going to</strong></td><td>plany niespełnione</td><td><em>I was going to call you.</em></td><td>ambitny</td></tr>
+                            <tr><td><strong>shall</strong></td><td>propozycje, oferty (formalne)</td><td><em>Shall I open the window?</em></td><td>ambitny</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card card-warning" style="margin-top:12px;">
+                <span class="card-label">PUŁAPKA</span>
+                <p>Nie wybieraj konstrukcji tylko po słowie <strong>tomorrow</strong> – decyduje <strong>znaczenie</strong> zdania!</p>
+                <div class="example" style="background:white; margin-top:6px;">
+                    <span class="eng"><span class="hl-operator">Will</span> you help me tomorrow?</span>
+                    <span class="pl">Czy pomożesz mi jutro? (prośba)</span>
+                </div>
+                <div class="example" style="background:white; margin-top:4px;">
+                    <span class="eng">I <span class="hl-operator">am going to</span> visit my grandma tomorrow.</span>
+                    <span class="pl">Jutro zamierzam odwiedzić babcię. (plan)</span>
+                </div>
+                <div class="example" style="background:white; margin-top:4px;">
+                    <span class="eng">I <span class="hl-operator">am meeting</span> her tomorrow at 6.</span>
+                    <span class="pl">Spotykam się z nią jutro o 6. (ustalony plan)</span>
+                </div>
+                <div class="example" style="background:white; margin-top:4px;">
+                    <span class="eng">The train <span class="hl-operator">leaves</span> tomorrow at 8.</span>
+                    <span class="pl">Pociąg odjeżdża jutro o 8. (rozkład)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 3 – WILL
+        ============================================================ -->
+        <section class="section" data-level="basic" id="sec-will">
+            <div class="part-heading"><span class="part-num">3. Will – spontaniczne decyzje, obietnice, przewidywania</span></div>
+
+            <h3>3.1. Spontaniczne decyzje</h3>
+            <p>Decyzje podjęte w chwili mówienia, niezaplanowane wcześniej.</p>
+            <div class="example"><span class="tag">spontaniczna</span><span class="eng">I <span class="hl-operator">will</span> <span class="hl-main-verb">have</span> the steak.</span><span class="pl">Poproszę stek. (decyzja w restauracji)</span><button class="audio-btn" data-text="I will have the steak." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">spontaniczna</span><span class="eng">I <span class="hl-operator">will</span> <span class="hl-main-verb">open</span> the window.</span><span class="pl">Otworzę okno. (decyzja podjęta teraz)</span><button class="audio-btn" data-text="I will open the window." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">spontaniczna</span><span class="eng">Wait, I <span class="hl-operator">will</span> <span class="hl-main-verb">help</span> you.</span><span class="pl">Czekaj, pomogę ci. (oferta w danym momencie)</span><button class="audio-btn" data-text="Wait, I will help you." data-speed="0.7">▶</button></div>
+
+            <h3>3.2. Obietnice i oferty</h3>
+            <div class="example"><span class="tag">obietnica</span><span class="eng">I <span class="hl-operator">will</span> <span class="hl-main-verb">call</span> you later.</span><span class="pl">Zadzwonię do ciebie później.</span><button class="audio-btn" data-text="I will call you later." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">obietnica</span><span class="eng">I promise I <span class="hl-operator">will</span> <span class="hl-main-verb">be</span> on time.</span><span class="pl">Obiecuję, że będę na czas.</span><button class="audio-btn" data-text="I promise I will be on time." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">oferta</span><span class="eng">I <span class="hl-operator">will</span> <span class="hl-main-verb">help</span> you with your homework.</span><span class="pl">Pomogę ci z zadaniem domowym.</span><button class="audio-btn" data-text="I will help you with your homework." data-speed="0.7">▶</button></div>
+
+            <h3>3.3. Przewidywania oparte na opinii / przypuszczeniu</h3>
+            <p>Gdy przewidujemy coś na podstawie własnej opinii, a nie widocznych dowodów.</p>
+            <div class="example"><span class="tag">opinia</span><span class="eng">I think it <span class="hl-operator">will</span> <span class="hl-main-verb">rain</span> tomorrow.</span><span class="pl">Myślę, że jutro będzie padać.</span><button class="audio-btn" data-text="I think it will rain tomorrow." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">opinia</span><span class="eng">She <span class="hl-operator">will</span> probably <span class="hl-main-verb">come</span>.</span><span class="pl">Ona prawdopodobnie przyjdzie.</span><button class="audio-btn" data-text="She will probably come." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">opinia</span><span class="eng">I'm sure you <span class="hl-operator">will</span> <span class="hl-main-verb">pass</span> the exam.</span><span class="pl">Jestem pewien, że zdasz egzamin.</span><button class="audio-btn" data-text="I'm sure you will pass the exam." data-speed="0.7">▶</button></div>
+
+            <div class="card card-remember">
+                <span class="card-label">Will – budowa</span>
+                <div class="table-wrap" style="margin-top:6px;">
+                    <table>
+                        <thead><tr><th>Rodzaj</th><th>Budowa</th><th>Przykład</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Twierdzenie</strong></td><td>podmiot + will + czasownik</td><td><em>I will help you.</em></td></tr>
+                            <tr><td><strong>Przeczenie</strong></td><td>podmiot + will not / won't + czasownik</td><td><em>She won't come.</em></td></tr>
+                            <tr><td><strong>Pytanie</strong></td><td>Will + podmiot + czasownik?</td><td><em>Will you be there?</em></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top:8px;"><strong>ZAPAMIĘTAJ:</strong> Po <em>will</em> używamy formy podstawowej czasownika <strong>bez TO</strong>!<br />
+                    ✅ <em>I will help.</em> ❌ <em>I will to help.</em></p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 4 – BE GOING TO
+        ============================================================ -->
+        <section class="section" data-level="basic" id="sec-going">
+            <div class="part-heading"><span class="part-num">4. Be going to – plany i przewidywania z dowodami</span></div>
+
+            <h3>4.1. Wcześniejsze plany i zamiary</h3>
+            <p>Plany, które podjęliśmy przed chwilą mówienia.</p>
+            <div class="example"><span class="tag">plan</span><span class="eng">I <span class="hl-operator">am going to</span> <span class="hl-main-verb">visit</span> my grandma.</span><span class="pl">Odwiedzę moją babcię. (mam to zaplanowane)</span><button class="audio-btn" data-text="I am going to visit my grandma." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">plan</span><span class="eng">She <span class="hl-operator">is going to</span> <span class="hl-main-verb">study</span> medicine.</span><span class="pl">Ona będzie studiować medycynę. (jej plan)</span><button class="audio-btn" data-text="She is going to study medicine." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">plan</span><span class="eng">We <span class="hl-operator">are going to</span> <span class="hl-main-verb">buy</span> a new car.</span><span class="pl">Kupimy nowy samochód. (już to zaplanowaliśmy)</span><button class="audio-btn" data-text="We are going to buy a new car." data-speed="0.7">▶</button></div>
+
+            <h3>4.2. Przewidywania oparte na dowodach</h3>
+            <p>Gdy widzimy coś, co wskazuje na przyszłe wydarzenie.</p>
+            <div class="example"><span class="tag">dowód</span><span class="eng">Look at those clouds! It <span class="hl-operator">is going to</span> <span class="hl-main-verb">rain</span>.</span><span class="pl">Spójrz na te chmury! Będzie padać.</span><button class="audio-btn" data-text="Look at those clouds! It is going to rain." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">dowód</span><span class="eng">She <span class="hl-operator">is going to</span> <span class="hl-main-verb">fall</span>!</span><span class="pl">Ona zaraz spadnie!</span><button class="audio-btn" data-text="She is going to fall!" data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">dowód</span><span class="eng">The car <span class="hl-operator">is going to</span> <span class="hl-main-verb">crash</span>!</span><span class="pl">Samochód się rozbije!</span><button class="audio-btn" data-text="The car is going to crash!" data-speed="0.7">▶</button></div>
+
+            <div class="card card-remember">
+                <span class="card-label">Be going to – budowa</span>
+                <div class="table-wrap" style="margin-top:6px;">
+                    <table>
+                        <thead><tr><th>Rodzaj</th><th>Budowa</th><th>Przykład</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Twierdzenie</strong></td><td>podmiot + am/is/are + going to + czasownik</td><td><em>I am going to study.</em></td></tr>
+                            <tr><td><strong>Przeczenie</strong></td><td>podmiot + am/is/are + not + going to + czasownik</td><td><em>She isn't going to come.</em></td></tr>
+                            <tr><td><strong>Pytanie</strong></td><td>Am/Is/Are + podmiot + going to + czasownik?</td><td><em>Are you going to buy it?</em></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top:8px;"><strong>ZAPAMIĘTAJ:</strong> Po <em>going to</em> używamy formy podstawowej czasownika <strong>bez TO</strong>!<br />
+                    ✅ <em>I'm going to study.</em> ❌ <em>I'm going to to study.</em></p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 5 – PORÓWNANIE WILL vs BE GOING TO
+        ============================================================ -->
+        <section class="section" data-level="training" id="sec-compare">
+            <div class="part-heading"><span class="part-num">5. Porównanie will vs be going to</span></div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Kryterium</th><th>WILL</th><th>BE GOING TO</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>Decyzja</strong></td><td>spontaniczna, podjęta teraz</td><td>wcześniejsza, zaplanowana</td></tr>
+                        <tr><td><strong>Przewidywanie</strong></td><td>oparte na opinii, przypuszczeniu</td><td>oparte na widocznych dowodach</td></tr>
+                        <tr><td><strong>Przykład</strong></td><td><em>Wait, I'll help you.</em></td><td><em>I've saved money. I'm going to buy a car.</em></td></tr>
+                        <tr><td><strong>Przykład (przyszłość)</strong></td><td><em>I think it will snow.</em></td><td><em>Look! It's going to snow.</em></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-warning">
+                <span class="card-label">PUŁAPKA</span>
+                <p>Nie wybieraj konstrukcji tylko po słowie <em>tomorrow</em> – decyduje znaczenie!</p>
+                <div class="example" style="background:white; margin-top:6px;">
+                    <span class="eng"><span class="hl-operator">Will</span> you help me tomorrow?</span>
+                    <span class="pl">Czy pomożesz mi jutro? (prośba)</span>
+                </div>
+                <div class="example" style="background:white; margin-top:4px;">
+                    <span class="eng">I <span class="hl-operator">am going to</span> visit my grandma tomorrow.</span>
+                    <span class="pl">Jutro zamierzam odwiedzić babcię. (plan)</span>
+                </div>
+            </div>
+
+            <!-- INTERAKTYWNE ĆWICZENIE – WILL vs GOING TO -->
+            <div class="exercise" style="margin-top:12px;">
+                <div class="ex-title">Ćwiczenie – will czy be going to? <span class="level-badge level-basic">PODSTAWA</span></div>
+                <p>Wybierz poprawną konstrukcję dla każdego zdania.</p>
+                <div id="choiceQuizWillGoing"></div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 6 – PRESENT CONTINUOUS I PRESENT SIMPLE
+        ============================================================ -->
+        <section class="section" data-level="training" id="sec-pc">
+            <div class="part-heading"><span class="part-num">6. Present Continuous dla ustalonych planów</span></div>
+
+            <p>Gdy mamy <strong>ustalony plan</strong> z konkretną godziną lub miejscem.</p>
+            <div class="example"><span class="tag">ustalony plan</span><span class="eng">I <span class="hl-operator">am meeting</span> her <span class="hl-main-verb">at 6</span>.</span><span class="pl">Spotykam się z nią o 6.</span><button class="audio-btn" data-text="I am meeting her at 6." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">ustalony plan</span><span class="eng">We <span class="hl-operator">are having</span> dinner <span class="hl-main-verb">at 8</span>.</span><span class="pl">Mamy kolację o 8.</span><button class="audio-btn" data-text="We are having dinner at 8." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">ustalony plan</span><span class="eng">She <span class="hl-operator">is flying</span> to London <span class="hl-main-verb">tomorrow</span>.</span><span class="pl">Leci do Londynu jutro.</span><button class="audio-btn" data-text="She is flying to London tomorrow." data-speed="0.7">▶</button></div>
+
+            <div class="card card-remember">
+                <span class="card-label">Różnica</span>
+                <ul>
+                    <li><strong>I'm going to visit my grandma.</strong> → ogólny plan, brak konkretnej godziny</li>
+                    <li><strong>I'm meeting my grandma at 3 p.m.</strong> → ustalony plan, konkretna godzina</li>
+                </ul>
+                <p style="margin-top:6px;"><strong>ZAPAMIĘTAJ:</strong> Present Continuous dla przyszłości wymaga konkretnego czasu lub ustalenia (<em>at 6, tomorrow, on Saturday</em>).</p>
+            </div>
+        </section>
+
+        <section class="section" data-level="training" id="sec-ps">
+            <div class="part-heading"><span class="part-num">7. Present Simple dla rozkładów i harmonogramów</span></div>
+
+            <p>Gdy mówimy o <strong>rozkładach jazdy, harmonogramach, planach lekcji</strong>.</p>
+            <div class="example"><span class="tag">rozkład</span><span class="eng">The train <span class="hl-operator">leaves</span> <span class="hl-main-verb">at 8</span>.</span><span class="pl">Pociąg odjeżdża o 8.</span><button class="audio-btn" data-text="The train leaves at 8." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">rozkład</span><span class="eng">The film <span class="hl-operator">starts</span> <span class="hl-main-verb">at 9</span>.</span><span class="pl">Film zaczyna się o 9.</span><button class="audio-btn" data-text="The film starts at 9." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">harmonogram</span><span class="eng">School <span class="hl-operator">finishes</span> <span class="hl-main-verb">at 3 p.m.</span></span><span class="pl">Szkoła kończy się o 15.</span><button class="audio-btn" data-text="School finishes at 3 p.m." data-speed="0.7">▶</button></div>
+
+            <div class="card card-remember">
+                <span class="card-label">ZAPAMIĘTAJ</span>
+                <p>Rozkłady i harmonogramy → <strong>Present Simple</strong>, nawet gdy mówimy o przyszłości!</p>
+                <p>Mówimy o stałych harmonogramach, a nie o planach osobistych.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 8 – AMBITNE: WAS/WERE GOING TO I SHALL
+        ============================================================ -->
+        <section class="section" data-level="ambitious" id="sec-ambitious">
+            <div class="part-heading"><span class="part-num">8. Dla ambitnych – was/were going to i shall</span></div>
+
+            <h3>8.1. Was/Were going to – plany niespełnione</h3>
+            <p>Gdy mówimy o planach, które <strong>się nie spełniły</strong>.</p>
+            <div class="example"><span class="tag">plan niespełniony</span><span class="eng">I <span class="hl-operator">was going to</span> <span class="hl-main-verb">call</span> you, but I forgot.</span><span class="pl">Miałem do ciebie zadzwonić, ale zapomniałem.</span><button class="audio-btn" data-text="I was going to call you, but I forgot." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">plan niespełniony</span><span class="eng">We <span class="hl-operator">were going to</span> <span class="hl-main-verb">go</span> to the cinema, but it was closed.</span><span class="pl">Mieliśmy iść do kina, ale było zamknięte.</span><button class="audio-btn" data-text="We were going to go to the cinema, but it was closed." data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">plan niespełniony</span><span class="eng">She <span class="hl-operator">was going to</span> <span class="hl-main-verb">study</span> medicine, but she changed her mind.</span><span class="pl">Miała studiować medycynę, ale zmieniła zdanie.</span><button class="audio-btn" data-text="She was going to study medicine, but she changed her mind." data-speed="0.7">▶</button></div>
+
+            <div class="card card-warning">
+                <span class="card-label">Uwaga</span>
+                <p><strong>Was/were going to</strong> nie oznacza automatycznie, że czynność została wykonana. Wręcz przeciwnie – zwykle sugeruje, że <strong>plan się nie spełnił</strong>.</p>
+            </div>
+
+            <h3>8.2. Shall – propozycje i oferty (formalne)</h3>
+            <p><strong>Shall</strong> używamy w pytaniach, gdy proponujemy coś lub oferujemy pomoc. Jest to bardziej formalne i rzadsze w dzisiejszym angielskim.</p>
+            <div class="example"><span class="tag">propozycja</span><span class="eng"><span class="hl-operator">Shall</span> I <span class="hl-main-verb">open</span> the window?</span><span class="pl">Czy mam otworzyć okno?</span><button class="audio-btn" data-text="Shall I open the window?" data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">propozycja</span><span class="eng"><span class="hl-operator">Shall</span> we <span class="hl-main-verb">go</span>?</span><span class="pl">Idziemy?</span><button class="audio-btn" data-text="Shall we go?" data-speed="0.7">▶</button></div>
+            <div class="example"><span class="tag">oferta</span><span class="eng"><span class="hl-operator">Shall</span> I <span class="hl-main-verb">help</span> you?</span><span class="pl">Czy mam ci pomóc?</span><button class="audio-btn" data-text="Shall I help you?" data-speed="0.7">▶</button></div>
+
+            <div class="card card-hint">
+                <span class="card-label">E8 – uwaga</span>
+                <p>W dzisiejszym angielskim <strong>shall</strong> jest rzadkie. Zamiast <em>Shall I…?</em> można użyć:</p>
+                <ul>
+                    <li><em>Would you like me to open the window?</em></li>
+                    <li><em>Do you want me to open the window?</em></li>
+                    <li><em>Should I open the window?</em> (ale to oznacza raczej "Czy powinienem otworzyć okno?")</li>
+                </ul>
+                <p>Na egzaminie wystarczy znajomość podstawowego użycia <em>shall</em> w pytaniach.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 9 – SŁOWNICTWO
+        ============================================================ -->
+        <section class="section" data-level="basic" id="sec-vocab">
+            <div class="part-heading"><span class="part-num">9. Słownictwo – plany, marzenia, pogoda, podróże</span></div>
+
+            <h3>Plany i marzenia</h3>
+            <div class="vocab-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0;">
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">plan</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">plan</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">I have a plan for the future.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">dream</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">marzenie</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">My dream is to travel.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">goal</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">cel</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">I have set a goal.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">ambition</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">ambicja</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">Her ambition is to become a doctor.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">promise</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">obietnica</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">I promise to help.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">decision</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">decyzja</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">I made a decision.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">future</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">przyszłość</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">I'm thinking about the future.</span>
+                </div>
+            </div>
+
+            <h3>Pogoda</h3>
+            <div class="vocab-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0;">
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">sunny</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">słoneczny</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">It will be sunny tomorrow.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">rainy</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">deszczowy</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">It's going to rain.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">cloudy</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">pochmurny</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">It will be cloudy.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">windy</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">wietrzny</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">It's going to be windy.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">snow</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">śnieg</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">It will snow tonight.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">warm / hot / cold</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">ciepły / gorący / zimny</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">It will be warm tomorrow.</span>
+                </div>
+            </div>
+
+            <h3>Podróże</h3>
+            <div class="vocab-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0;">
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">travel</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">podróżować</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">I'm going to travel to Europe.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">trip</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">wycieczka</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">We are going on a trip.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">holiday</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">wakacje</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">We are going on holiday.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">flight</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">lot</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">I will take a flight.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">abroad</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">za granicą</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">I'm going to study abroad.</span>
+                </div>
+                <div class="vocab-item" style="background:var(--color-bg-subtle); padding:8px 12px; border-radius:6px; border:1px solid var(--color-border);">
+                    <span class="en" style="font-weight:600;">sightseeing</span> <span class="pl" style="font-style:italic;color:var(--color-text-muted);">zwiedzanie</span>
+                    <span class="ex" style="font-size:0.8rem;display:block;color:var(--color-training);">We will do some sightseeing.</span>
+                </div>
+            </div>
+
+            <div class="card card-remember" style="margin-top:12px;">
+                <span class="card-label">Typowe wyrażenia E8</span>
+                <ul>
+                    <li><strong>I'll help you.</strong> – Pomogę ci. (oferta)</li>
+                    <li><strong>I promise I will...</strong> – Obiecuję, że...</li>
+                    <li><strong>I think it will...</strong> – Myślę, że...</li>
+                    <li><strong>Look at...! It's going to...</strong> – Spójrz na...! To będzie...</li>
+                    <li><strong>I'm going to...</strong> – Planuję...</li>
+                    <li><strong>I'm meeting... at...</strong> – Spotykam się... o...</li>
+                    <li><strong>The train leaves at...</strong> – Pociąg odjeżdża o...</li>
+                    <li><strong>I was going to... but...</strong> – Miałem... ale...</li>
+                    <li><strong>Shall I...?</strong> – Czy mam...?</li>
+                    <li><strong>Are you going to...?</strong> – Czy zamierzasz...?</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 10 – ĆWICZENIA
+        ============================================================ -->
+        <section class="section" data-level="training" id="sec-exercises">
+            <div class="part-heading"><span class="part-num">10. Ćwiczenia</span></div>
+
+            <div class="hide-all-wrap">
+                <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+                <button class="hide-all-btn" onclick="hideAllAnswers()">🔒 Ukryj wszystkie</button>
+            </div>
+
+            <!-- Ćwiczenie 1: Wybór will / be going to -->
+            <div class="exercise">
+                <div class="ex-title">Ćwiczenie 1 – will czy be going to? <span class="level-badge level-basic">PODSTAWA</span></div>
+                <ol>
+                    <li>I think it ______ rain tomorrow. (will / is going to)</li>
+                    <li>Look at those clouds! It ______ rain. (will / is going to)</li>
+                    <li>I ______ visit my grandma next week. (will / am going to)</li>
+                    <li>Don't worry, I ______ help you. (will / am going to)</li>
+                    <li>She ______ probably come to the party. (will / is going to)</li>
+                    <li>I've saved money. I ______ buy a new phone. (will / am going to)</li>
+                    <li>I promise I ______ be on time. (will / am going to)</li>
+                    <li>Watch out! You ______ fall! (will / are going to)</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex1')">👁 Pokaż odpowiedzi</button>
+                <div id="ans-ex1" class="answer-content">
+                    <ol>
+                        <li><strong>will</strong> – przewidywanie oparte na opinii (<em>I think</em>)</li>
+                        <li><strong>is going to</strong> – przewidywanie oparte na dowodach (<em>Look at those clouds!</em>)</li>
+                        <li><strong>am going to</strong> – wcześniejszy plan (<em>next week</em>)</li>
+                        <li><strong>will</strong> – spontaniczna decyzja (<em>Don't worry</em>)</li>
+                        <li><strong>will</strong> – przewidywanie oparte na opinii (<em>probably</em>)</li>
+                        <li><strong>am going to</strong> – wcześniejszy plan (<em>I've saved money</em>)</li>
+                        <li><strong>will</strong> – obietnica (<em>I promise</em>)</li>
+                        <li><strong>are going to</strong> – przewidywanie oparte na dowodach (<em>Watch out!</em>)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 2: Popraw błędy -->
+            <div class="exercise">
+                <div class="ex-title">Ćwiczenie 2 – Popraw błędy <span class="level-badge level-training">TRENING</span></div>
+                <ol>
+                    <li><span class="error-text">I will to help you.</span></li>
+                    <li><span class="error-text">Look at the clouds! It will rain.</span></li>
+                    <li><span class="error-text">I will buy a new car.</span> (gdy planuję od dawna)</li>
+                    <li><span class="error-text">I meet my friend tomorrow.</span> (ustalony plan)</li>
+                    <li><span class="error-text">The train is going to leave at 8.</span> (rozkład)</li>
+                    <li><span class="error-text">I was going to call you.</span> (gdy zadzwoniłem)</li>
+                    <li><span class="error-text">I going to study.</span></li>
+                    <li><span class="error-text">I will going to help you.</span></li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex2')">👁 Pokaż odpowiedzi</button>
+                <div id="ans-ex2" class="answer-content">
+                    <ol>
+                        <li><span class="correct-text">I will help you.</span> (po <em>will</em> bezokolicznik bez <em>to</em>)</li>
+                        <li><span class="correct-text">Look at the clouds! It's going to rain.</span> (widoczny dowód → <em>going to</em>)</li>
+                        <li><span class="correct-text">I am going to buy a new car.</span> (wcześniejszy zamiar → <em>going to</em>)</li>
+                        <li><span class="correct-text">I am meeting my friend tomorrow.</span> (ustalony plan → Present Continuous)</li>
+                        <li><span class="correct-text">The train leaves at 8.</span> (rozkład → Present Simple)</li>
+                        <li><span class="correct-text">I called you.</span> (<em>was going to</em> = plan niespełniony)</li>
+                        <li><span class="correct-text">I'm going to study.</span> (brak czasownika <em>to be</em>)</li>
+                        <li><span class="correct-text">I'm going to help you. / I will help you.</span> (mieszanie <em>will</em> i <em>going to</em>)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 3: Uzupełnij właściwą konstrukcją -->
+            <div class="exercise">
+                <div class="ex-title">Ćwiczenie 3 – Uzupełnij właściwą konstrukcją przyszłości <span class="level-badge level-exam">EGZAMIN</span></div>
+                <ol>
+                    <li>The film ______ (start) at 9 p.m.</li>
+                    <li>I ______ (meet) my friends at the weekend. (ustalony plan)</li>
+                    <li>I think she ______ (get) the job.</li>
+                    <li>Look at that boy! He ______ (fall) off his bike.</li>
+                    <li>I promise I ______ (not / forget) your birthday.</li>
+                    <li>We ______ (travel) around Europe next summer. (plan)</li>
+                    <li>The train ______ (arrive) at 10 a.m.</li>
+                    <li>Don't worry, I ______ (pay) for the dinner.</li>
+                    <li>I ______ (study) medicine. (mam taki plan)</li>
+                    <li>She ______ (be) a great doctor one day. (moje zdanie)</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex3')">👁 Pokaż odpowiedzi</button>
+                <div id="ans-ex3" class="answer-content">
+                    <ol>
+                        <li><strong>starts</strong> – rozkład → Present Simple</li>
+                        <li><strong>am meeting</strong> – ustalony plan → Present Continuous</li>
+                        <li><strong>will get</strong> – opinia → <em>will</em></li>
+                        <li><strong>is going to fall</strong> – dowód → <em>going to</em></li>
+                        <li><strong>won't forget</strong> – obietnica → <em>will</em></li>
+                        <li><strong>are going to travel</strong> – plan → <em>going to</em></li>
+                        <li><strong>arrives</strong> – rozkład → Present Simple</li>
+                        <li><strong>will pay</strong> – spontaniczna decyzja → <em>will</em></li>
+                        <li><strong>am going to study</strong> – plan → <em>going to</em></li>
+                        <li><strong>will be</strong> – opinia → <em>will</em></li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 4: Tłumaczenie -->
+            <div class="exercise">
+                <div class="ex-title">Ćwiczenie 4 – Przetłumacz na angielski <span class="level-badge level-exam">EGZAMIN</span></div>
+                <ol>
+                    <li>Zrobię to jutro. (obietnica)</li>
+                    <li>Planuję nauczyć się hiszpańskiego.</li>
+                    <li>Spójrz na te chmury! Będzie padać.</li>
+                    <li>Film zaczyna się o 9.</li>
+                    <li>Ona spotyka się z przyjaciółmi w sobotę.</li>
+                    <li>Miałem do ciebie zadzwonić, ale zapomniałem. (ambitny)</li>
+                    <li>Myślę, że będzie słonecznie jutro.</li>
+                    <li>Czy mam otworzyć okno? (ambitny)</li>
+                    <li>Mieliśmy iść do kina, ale było zamknięte. (ambitny)</li>
+                    <li>Obiecuję, że będę na czas.</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex4')">👁 Pokaż odpowiedzi</button>
+                <div id="ans-ex4" class="answer-content">
+                    <ol>
+                        <li>I will do it tomorrow.</li>
+                        <li>I am going to learn Spanish.</li>
+                        <li>Look at those clouds! It's going to rain.</li>
+                        <li>The film starts at 9.</li>
+                        <li>She is meeting her friends on Saturday.</li>
+                        <li>I was going to call you, but I forgot.</li>
+                        <li>I think it will be sunny tomorrow.</li>
+                        <li>Shall I open the window?</li>
+                        <li>We were going to go to the cinema, but it was closed.</li>
+                        <li>I promise I will be on time.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 5: Mini-wypowiedź -->
+            <div class="exercise">
+                <div class="ex-title">Ćwiczenie 5 – Mini-wypowiedź pisemna <span class="level-badge level-writing">PISANIE</span></div>
+                <p>Napisz 5–6 zdań o swoich planach na przyszłość. Użyj: przynajmniej jednego zdania z <strong>will</strong>, jednego z <strong>be going to</strong>, jednego z <strong>Present Continuous</strong> (ustalony plan), jednego z <strong>Present Simple</strong> (rozkład).</p>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-writing')">👁 Pokaż przykładową odpowiedź</button>
+                <div id="ans-writing" class="answer-content">
+                    <p><em>I have many plans for the future. I am going to study medicine because I want to be a doctor. I'm meeting my friends on Saturday – we are going to the cinema. The film starts at 8 p.m. I also think I will travel a lot in the future. I promise I will work hard to achieve my goals.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 11 – TEST KOŃCOWY (MISJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="sec-mission">
+            <div class="part-heading"><span class="part-num">11. Test końcowy – MISJA</span></div>
+
+            <div class="card card-remember">
+                <span class="card-label">Misja końcowa</span>
+                <p>Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+            </div>
+
+            <div class="exercise" id="missionExercise">
+                <div class="ex-title">Uzupełnij poprawną konstrukcją przyszłości <span class="level-badge level-exam">EGZAMIN</span></div>
+                <div id="missionQuestions"></div>
+                <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 12 – FAQ
+        ============================================================ -->
+        <section class="section" data-level="exam" id="sec-faq">
+            <div class="part-heading"><span class="part-num">12. FAQ – najczęstsze wątpliwości</span></div>
+
+            <div class="card card-gray">
+                <p><strong>1. Jaka jest różnica między will a be going to?</strong><br />
+                    <em>Will</em> = spontaniczne decyzje, obietnice, opinie. <em>Be going to</em> = plany, dowody. To typowe tendencje, a nie reguły wykluczające inne formy.</p>
+                <p><strong>2. Kiedy używamy Present Continuous dla przyszłości?</strong><br />
+                    Gdy mamy ustalony plan z konkretną godziną lub miejscem: <em>I'm meeting her at 6.</em></p>
+                <p><strong>3. Kiedy używamy Present Simple dla przyszłości?</strong><br />
+                    Gdy mówimy o rozkładach i harmonogramach: <em>The train leaves at 8.</em></p>
+                <p><strong>4. Czy "I will to help" jest poprawne?</strong><br />
+                    Nie. Po <em>will</em> używamy bezokolicznika bez <em>to</em>: <em>I will help.</em></p>
+                <p><strong>5. Czy "I am going to help" i "I will help" znaczą to samo?</strong><br />
+                    Nie do końca. <em>I am going to help</em> = już zaplanowałem pomoc. <em>I will help</em> = spontaniczna decyzja, oferta.</p>
+                <p><strong>6. Czy "shall" jest jeszcze używane?</strong><br />
+                    Tak, ale rzadziej. Używamy go w pytaniach o propozycje: <em>Shall I open the window?</em></p>
+                <p><strong>7. Jaka jest różnica między "was going to" a "went"?</strong><br />
+                    <em>Was going to</em> = plan, który się nie spełnił: <em>I was going to call you, but I forgot.</em><br />
+                    <em>Went</em> = fakt dokonany: <em>I went to the cinema yesterday.</em></p>
+                <p><strong>8. Czy "I'm meeting" i "I'm going to meet" to to samo?</strong><br />
+                    <em>I'm meeting</em> = ustalony plan (konkretna godzina/miejsce).<br />
+                    <em>I'm going to meet</em> = ogólny zamiar (bez konkretnych ustaleń).</p>
+                <p><strong>9. Czy "I think it's going to rain" jest poprawne?</strong><br />
+                    Tak, mimo że nie ma widocznych dowodów. To naturalna alternatywa dla <em>I think it will rain.</em></p>
+                <p><strong>10. Czy "The train is going to leave at 8" jest błędne?</strong><br />
+                    Nie jest błędne, ale przy rozkładzie jazdy naturalniej brzmi <em>The train leaves at 8</em> (Present Simple).</p>
+                <p><strong>11. Czy "I will going to help" jest poprawne?</strong><br />
+                    Nie. To mieszanie dwóch konstrukcji. Mówimy <em>I'm going to help</em> lub <em>I will help</em>.</p>
+                <p><strong>12. Czy "I going to study" jest poprawne?</strong><br />
+                    Nie. Brakuje czasownika <em>to be</em>: <em>I'm going to study.</em></p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 13 – FISZKI
+        ============================================================ -->
+        <section class="section" data-level="exam" id="sec-flashcards">
+            <div class="part-heading"><span class="part-num">13. Fiszki interaktywne (kliknij, aby odwrócić)</span></div>
+
+            <div class="flashcard-grid">
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">I think it ______ rain.</span>
+                    <span class="back"><strong>will</strong><br><small>opinia → will</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">Look at the clouds! It ______ rain.</span>
+                    <span class="back"><strong>is going to</strong><br><small>dowód → going to</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">I promise I ______ be on time.</span>
+                    <span class="back"><strong>will</strong><br><small>obietnica → will</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">I ______ study medicine. (plan)</span>
+                    <span class="back"><strong>am going to</strong><br><small>wcześniejszy plan → going to</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">The train ______ at 8. (rozkład)</span>
+                    <span class="back"><strong>leaves</strong><br><small>Present Simple dla rozkładów</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">I ______ my friend at 6. (ustalony plan)</span>
+                    <span class="back"><strong>am meeting</strong><br><small>Present Continuous dla ustalonych planów</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">I will to help → ?</span>
+                    <span class="back"><strong>I will help.</strong><br><small>po will bez to</small></span>
+                    <span class="card-tag tag-trap">pułapka</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">I was going to call you = ?</span>
+                    <span class="back"><strong>miałem zadzwonić (ale nie zadzwoniłem)</strong><br><small>plan niespełniony</small></span>
+                    <span class="card-tag tag-ambitious">ambitny</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">Shall I...? = ?</span>
+                    <span class="back"><strong>Czy mam...?</strong><br><small>propozycja / oferta</small></span>
+                    <span class="card-tag tag-ambitious">ambitny</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">Spontaniczna decyzja → ?</span>
+                    <span class="back"><strong>will</strong><br><small>np. I'll help you!</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">Wcześniejszy plan → ?</span>
+                    <span class="back"><strong>be going to</strong><br><small>np. I'm going to study</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">Ustalony plan (godzina) → ?</span>
+                    <span class="back"><strong>Present Continuous</strong><br><small>np. I'm meeting her at 6</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">Rozkład / harmonogram → ?</span>
+                    <span class="back"><strong>Present Simple</strong><br><small>np. The train leaves at 8</small></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">will = ?</span>
+                    <span class="back"><strong>spontaniczna decyzja, obietnica, opinia</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                    <span class="front">be going to = ?</span>
+                    <span class="back"><strong>plan, dowód</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+            </div>
+
+            <!-- Tabela z fiszkami -->
+            <h2 style="margin-top:30px;">Fiszki – wersja tabelaryczna</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Przód</th><th>Tył</th></tr></thead>
+                    <tbody>
+                        <tr><td>I think it ______ rain.</td><td><strong>will</strong> (opinia)</td></tr>
+                        <tr><td>Look at the clouds! It ______ rain.</td><td><strong>is going to</strong> (dowód)</td></tr>
+                        <tr><td>I promise I ______ be on time.</td><td><strong>will</strong> (obietnica)</td></tr>
+                        <tr><td>I ______ study medicine. (plan)</td><td><strong>am going to</strong></td></tr>
+                        <tr><td>The train ______ at 8. (rozkład)</td><td><strong>leaves</strong> (Present Simple)</td></tr>
+                        <tr><td>I ______ my friend at 6. (ustalony plan)</td><td><strong>am meeting</strong> (Present Continuous)</td></tr>
+                        <tr><td>I will to help → ?</td><td><strong>I will help.</strong> (bez <em>to</em>)</td></tr>
+                        <tr><td>Spontaniczna decyzja → ?</td><td><strong>will</strong></td></tr>
+                        <tr><td>Wcześniejszy plan → ?</td><td><strong>be going to</strong></td></tr>
+                        <tr><td>Ustalony plan (godzina) → ?</td><td><strong>Present Continuous</strong></td></tr>
+                        <tr><td>Rozkład / harmonogram → ?</td><td><strong>Present Simple</strong></td></tr>
+                        <tr><td>I was going to call you = ?</td><td>miałem zadzwonić (ale nie zadzwoniłem) – ambitny</td></tr>
+                        <tr><td>Shall I...? = ?</td><td>Czy mam...? – ambitny</td></tr>
+                        <tr><td>will = ?</td><td>spontaniczna decyzja, obietnica, opinia</td></tr>
+                        <tr><td>be going to = ?</td><td>plan, dowód</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STOPKA
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>Lekcja 12 – Future Simple (will) i be going to</strong> &bull; Wersja interaktywna 8.0 &bull; 2026-08-30</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+            <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ============================================================
+        //  JAVASCRIPT – SYSTEM INTERAKTYWNY
+        // ============================================================
+
+        // ---------- LOCAL STORAGE ----------
+        function saveProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            const state = [];
+            checks.forEach(cb => state.push(cb.checked));
+            localStorage.setItem('lekcja12_progress', JSON.stringify(state));
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('lekcja12_progress');
+            if (!saved) return;
+            const state = JSON.parse(saved);
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            checks.forEach((cb, i) => {
+                if (i < state.length) cb.checked = state[i];
+            });
+            updateProgress();
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            localStorage.removeItem('lekcja12_progress');
+            updateProgress();
+        }
+
+        // ---------- AUDIO ----------
+        let currentAudio = null;
+        let currentAudioBtn = null;
+        let audioTimeout = null;
+
+        function speakText(text, speed, btn) {
+            if (!window.speechSynthesis) return;
+            if (currentAudioBtn === btn && btn && btn.classList.contains('playing')) {
+                window.speechSynthesis.cancel();
+                if (audioTimeout) clearTimeout(audioTimeout);
+                btn.textContent = '▶';
+                btn.classList.remove('playing');
+                currentAudioBtn = null;
+                currentAudio = null;
+                return;
+            }
+            if (currentAudio) {
+                window.speechSynthesis.cancel();
+                if (audioTimeout) clearTimeout(audioTimeout);
+                if (currentAudioBtn) {
+                    currentAudioBtn.textContent = '▶';
+                    currentAudioBtn.classList.remove('playing');
+                }
+                currentAudioBtn = null;
+                currentAudio = null;
+            }
+            if (!btn) return;
+            btn.textContent = '■';
+            btn.classList.add('playing');
+            currentAudioBtn = btn;
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-GB';
+            utterance.rate = 0.6;
+            utterance.pitch = 1.0;
+            const voices = window.speechSynthesis.getVoices();
+            const ukVoice = voices.find(v => v.lang.startsWith('en-GB'));
+            if (ukVoice) utterance.voice = ukVoice;
+
+            let isSlowFinished = false;
+            utterance.onend = function() {
+                if (isSlowFinished) {
+                    if (btn) { btn.textContent = '▶';
+                        btn.classList.remove('playing'); }
+                    currentAudioBtn = null;
+                    currentAudio = null;
+                    return;
+                }
+                isSlowFinished = true;
+                const fast = new SpeechSynthesisUtterance(text);
+                fast.lang = 'en-GB';
+                fast.rate = 0.95;
+                fast.pitch = 1.0;
+                if (ukVoice) fast.voice = ukVoice;
+                fast.onend = function() {
+                    if (btn) { btn.textContent = '▶';
+                        btn.classList.remove('playing'); }
+                    currentAudioBtn = null;
+                    currentAudio = null;
+                };
+                fast.onerror = function() {
+                    if (btn) { btn.textContent = '▶';
+                        btn.classList.remove('playing'); }
+                    currentAudioBtn = null;
+                    currentAudio = null;
+                };
+                audioTimeout = setTimeout(() => {
+                    if (btn && btn.classList.contains('playing')) {
+                        window.speechSynthesis.speak(fast);
+                        currentAudio = fast;
+                    }
+                }, 350);
+            };
+            utterance.onerror = function() {
+                if (btn) { btn.textContent = '▶';
+                    btn.classList.remove('playing'); }
+                currentAudioBtn = null;
+                currentAudio = null;
+            };
+            window.speechSynthesis.speak(utterance);
+            currentAudio = utterance;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.audio-btn').forEach(btn => {
+                const text = btn.dataset.text;
+                if (text) {
+                    btn.setAttribute('aria-label', 'Odtwórz wymowę: ' + text);
+                    btn.title = 'Odtwórz wymowę';
+                }
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const audioText = this.dataset.text;
+                    if (!audioText) return;
+                    speakText(audioText, 0.7, this);
+                });
+            });
+            loadProgress();
+            setView('all');
+            initMission();
+            initChoiceQuizWillGoing();
+            updateVisibleCount();
+            // Inicjalizacja diagramu
+            document.getElementById('diagramFutureResult').innerHTML = '<span style="color:var(--color-text-muted);">Wybierz sytuację, aby zobaczyć właściwą konstrukcję.</span>';
+        });
+
+        // ---------- TOGGLE ----------
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? '👁 Ukryj odpowiedzi' : '👁 Pokaż odpowiedzi';
+            }
+        }
+
+        function toggleFlashcard(card) {
+            const flipped = card.classList.toggle('flipped');
+            card.setAttribute('aria-pressed', String(flipped));
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-content.show, .hint-content.show, .explain-content.show').forEach(el => {
+                el.classList.remove('show');
+                const id = el.id;
+                const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+                if (btn) btn.textContent = '👁 Pokaż odpowiedzi';
+            });
+        }
+
+        // ---------- PROGRESS ----------
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            let total = 0,
+                done = 0;
+            checkboxes.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 0;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            document.getElementById('progressFill').style.width = pct + '%';
+            document.getElementById('progressPercent').textContent = pct + '%';
+            const statusEl = document.getElementById('progressStatus');
+            if (pct === 100) statusEl.textContent = '🏆 Świetnie! Opanowałeś lekcję!';
+            else if (pct >= 80) statusEl.textContent = '💪 Bardzo dobrze! Dokończ resztę.';
+            else if (pct >= 50) statusEl.textContent = '📖 Dobrze! Poćwicz jeszcze.';
+            else if (pct > 0) statusEl.textContent = '📘 Zacząłeś – kontynuuj!';
+            else statusEl.textContent = 'Zacznij naukę';
+            updateTasks(pct);
+            saveProgress();
+        }
+
+        function updateTasks(pct) {
+            const tasks = document.querySelectorAll('.today-tasks .task');
+            const thresholds = [10, 25, 45, 65, 85];
+            tasks.forEach((task, i) => {
+                if (pct >= thresholds[i]) task.classList.add('done');
+                else task.classList.remove('done');
+            });
+        }
+
+        document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', updateProgress);
+        });
+
+        // ---------- FILTER ----------
+        let currentView = 'all';
+
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+            if (btn) btn.classList.add('active');
+            applyFilter(view);
+            updateVisibleCount();
+        }
+
+        function applyFilter(view) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const level = sec.dataset.level || 'basic';
+                let show = true;
+                if (view === 'basic') {
+                    show = (level === 'basic' || level === 'training' || level === 'remember' || level === 'writing');
+                } else if (view === 'exam') {
+                    show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level ===
+                        'difficult' || level === 'remember' || level === 'writing' || level === 'ambitious');
+                }
+                if (view === 'all') show = true;
+                sec.classList.toggle('hidden-by-filter', !show);
+            });
+        }
+
+        function updateVisibleCount() {
+            const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+            const total = document.querySelectorAll('.section').length;
+            document.getElementById('visibleCount').textContent = visible;
+            document.getElementById('totalCount').textContent = total;
+        }
+
+        // ---------- DIAGRAM: FUTURE ----------
+        function diagramFuture(branch) {
+            const result = document.getElementById('diagramFutureResult');
+            const allChoices = document.querySelectorAll('#decisionDiagram .branch .choice');
+            allChoices.forEach(el => el.classList.remove('selected-be', 'selected-do'));
+
+            const selected = document.querySelector(`#decisionDiagram .branch .choice[data-branch="${branch}"]`);
+            if (selected) selected.classList.add('selected-be');
+
+            const data = {
+                spontaneous: {
+                    title: 'Spontaniczna decyzja',
+                    answer: 'will',
+                    example: 'Wait, I\'ll help you!',
+                    text: 'Decyzja podjęta w chwili mówienia, niezaplanowana wcześniej.'
+                },
+                plan: {
+                    title: 'Wcześniejszy plan',
+                    answer: 'be going to',
+                    example: 'I\'m going to study medicine.',
+                    text: 'Plan podjęty przed chwilą mówienia.'
+                },
+                fixed: {
+                    title: 'Ustalony plan (godzina/miejsce)',
+                    answer: 'Present Continuous',
+                    example: 'I\'m meeting her at 6.',
+                    text: 'Konkretna godzina lub miejsce – plan jest ustalony.'
+                },
+                timetable: {
+                    title: 'Rozkład / harmonogram',
+                    answer: 'Present Simple',
+                    example: 'The train leaves at 8.',
+                    text: 'Stały harmonogram, rozkład jazdy.'
+                }
+            };
+
+            const item = data[branch];
+            result.innerHTML = `
+                <div style="font-weight:600; margin-bottom:4px;">
+                    <span class="check-mark">✓</span> <strong>${item.title}</strong> → <span class="highlight-be">${item.answer}</span>
+                </div>
+                <div style="margin-bottom:4px;">
+                    <span class="correct-text">${item.example}</span>
+                </div>
+                <div style="font-size:0.85rem; color:var(--color-text-muted);">
+                    ${item.text}
+                </div>
+                <button class="audio-btn" data-text="${item.example}" data-speed="0.7" style="margin-top:6px;">▶</button>
+            `;
+            const newBtn = result.querySelector('.audio-btn');
+            if (newBtn) {
+                newBtn.setAttribute('aria-label', 'Odtwórz wymowę: ' + newBtn.dataset.text);
+                newBtn.title = 'Odtwórz wymowę';
+                newBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const text = this.dataset.text;
+                    if (!text) return;
+                    speakText(text, 0.7, this);
+                });
+            }
+        }
+
+        // ---------- QUIZ: WILL vs GOING TO ----------
+        const willGoingData = [
+            { q: 'I think it ______ rain tomorrow.', options: ['will', 'is going to'], correct: 'will' },
+            { q: 'Look at those clouds! It ______ rain.', options: ['will', 'is going to'], correct: 'is going to' },
+            { q: 'I ______ visit my grandma next week.', options: ['will', 'am going to'], correct: 'am going to' },
+            { q: 'Don\'t worry, I ______ help you.', options: ['will', 'am going to'], correct: 'will' },
+            { q: 'She ______ probably come to the party.', options: ['will', 'is going to'], correct: 'will' },
+            { q: 'I\'ve saved money. I ______ buy a new phone.', options: ['will', 'am going to'], correct: 'am going to' },
+            { q: 'I promise I ______ be on time.', options: ['will', 'am going to'], correct: 'will' },
+            { q: 'Watch out! You ______ fall!', options: ['will', 'are going to'], correct: 'are going to' },
+        ];
+
+        function initChoiceQuizWillGoing() {
+            const container = document.getElementById('choiceQuizWillGoing');
+            if (!container) return;
+            container.innerHTML = '';
+            willGoingData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'q-item';
+                div.innerHTML = `
+                    <div class="q-text">${idx+1}. ${item.q}</div>
+                    <div class="q-options" id="wgOpts${idx}">
+                        ${item.options.map(opt => `<button class="btn btn-sm" data-idx="${idx}" data-choice="${opt}" onclick="choiceWillGoingAnswer(${idx}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>`).join('')}
+                    </div>
+                    <div class="q-feedback" id="wgFb${idx}"></div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function choiceWillGoingAnswer(idx, choice) {
+            const item = willGoingData[idx];
+            const fb = document.getElementById('wgFb' + idx);
+            if (!fb) return;
+            const btns = document.querySelectorAll(`#wgOpts${idx} .btn`);
+            btns.forEach(b => b.classList.remove('correct-choice', 'wrong-choice'));
+            const isCorrect = choice === item.correct;
+            btns.forEach(b => {
+                if (b.dataset.choice === item.correct) b.classList.add('correct-choice');
+                else if (b.dataset.choice === choice && !isCorrect) b.classList.add('wrong-choice');
+            });
+            const explanations = {
+                'will': 'opinia / spontaniczna decyzja / obietnica → will',
+                'is going to': 'dowód / wcześniejszy plan → is going to',
+                'am going to': 'wcześniejszy plan → am going to',
+                'are going to': 'dowód → are going to'
+            };
+            fb.innerHTML = isCorrect ?
+                `<span class="correct">✅ Dobrze! (${explanations[choice] || ''})</span>` :
+                `<span class="wrong">❌ Prawidłowa odpowiedź: <strong>${item.correct}</strong> (${explanations[item.correct] || ''})</span>`;
+        }
+
+        // ---------- MISSION ----------
+        const missionData = [
+            { q: 'I think it ______ rain tomorrow.', correct: 'will' },
+            { q: 'Look at those clouds! It ______ rain.', correct: 'is going to' },
+            { q: 'I promise I ______ be on time.', correct: 'will' },
+            { q: 'I ______ to study medicine. (plan)', correct: 'am going' },
+            { q: 'The train ______ at 8. (rozkład)', correct: 'leaves' },
+            { q: 'I ______ my friend at 6. (ustalony plan)', correct: 'am meeting' },
+            { q: 'Popraw: I will to help you.', correct: 'I will help you' },
+            { q: 'Don\'t worry, I ______ pay for dinner.', correct: 'will' },
+            { q: 'We ______ go to the cinema, but it was closed. (ambitny)', correct: 'were going to' },
+            { q: 'The film ______ at 9. (rozkład)', correct: 'starts' },
+            { q: 'I ______ buy a new car. (mam taki plan)', correct: 'am going to' },
+            { q: 'She ______ probably come.', correct: 'will' },
+        ];
+
+        function normalizeMission(val) {
+            let v = val.trim().toLowerCase().replace(/\s+/g, ' ');
+            v = v.replace(/\bwill not\b/g, "won't");
+            v = v.replace(/\bam going to\b/g, "am going");
+            v = v.replace(/\bis going to\b/g, "is going");
+            v = v.replace(/\bare going to\b/g, "are going");
+            v = v.replace(/\bwas going to\b/g, "was going");
+            v = v.replace(/\bwere going to\b/g, "were going");
+            return v;
+        }
+
+        function initMission() {
+            const container = document.getElementById('missionQuestions');
+            if (!container) return;
+            container.innerHTML = '';
+            missionData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'fitb-row';
+                div.innerHTML = `
+                    <span style="font-weight:500;">${idx+1}. ${item.q}</span>
+                    <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:120px;" />
+                    <span class="result-icon" id="missionIcon${idx}"></span>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkMission() {
+            let correct = 0;
+            const total = missionData.length;
+            const mistakes = [];
+            missionData.forEach((item, idx) => {
+                const input = document.getElementById('missionInput' + idx);
+                const icon = document.getElementById('missionIcon' + idx);
+                if (!input || !icon) return;
+                const val = normalizeMission(input.value);
+                const expected = Array.isArray(item.correct) ? item.correct : [item.correct];
+                const expectedNorm = expected.map(normalizeMission);
+                const isOk = val.length > 0 && expectedNorm.includes(val);
+                input.classList.toggle('correct', isOk);
+                input.classList.toggle('wrong', !isOk);
+                input.setAttribute('aria-invalid', String(!isOk));
+                if (isOk) {
+                    icon.textContent = '✓';
+                    icon.style.color = '#2d8f5e';
+                    correct++;
+                } else {
+                    icon.textContent = '✗';
+                    icon.style.color = '#dc3545';
+                    mistakes.push(`${idx+1}. ${expected.join(' / ')}`);
+                }
+            });
+            const resultDiv = document.getElementById('missionResult');
+            resultDiv.style.display = 'block';
+            const pct = Math.round((correct / total) * 100);
+            let msg = '', cls = '';
+            if (pct === 100) { msg = 'Future Simple masz opanowane!';
+                cls = 'perfect'; } else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane pułapki.';
+                cls = 'good'; } else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.';
+                cls = 'ok'; } else { msg = 'Powtórz podstawy will i be going to, a następnie rozwiąż test jeszcze raz.';
+                cls = 'fail'; }
+            resultDiv.className = 'mission-result ' + cls;
+            resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+                (mistakes.length ? `<br /><span class="text-sm">Poprawne odpowiedzi do błędnych punktów: ${mistakes.join('; ')}.</span>` : '');
+        }
+
+        function resetMission() {
+            document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'wrong');
+                input.removeAttribute('aria-invalid');
+            });
+            document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            document.getElementById('missionResult').style.display = 'none';
+        }
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.speechSynthesis) {
+                window.speechSynthesis.getVoices();
+                window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+            }
+        });
+    </script>
+</body>
+</html>
