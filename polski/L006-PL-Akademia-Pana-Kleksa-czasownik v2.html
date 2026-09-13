@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekcja 6 – Akademia Pana Kleksa + czasownik (pełna wersja)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <style>
+        /* ============================================================
+           STYLE – wersja 6.3 (master merge) – pełna lekcja 6
+           ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width:768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- KOLORY --- */
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f;
+            --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        /* --- KARTY --- */
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #fff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+        }
+        .card-remember .card-label {
+            color: var(--color-remember);
+        }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+        }
+        .card-correct .card-label {
+            color: var(--color-correct);
+        }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+        }
+        .card-trap .card-label {
+            color: var(--color-trap);
+        }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+        }
+        .card-hint .card-label {
+            color: var(--color-hint);
+        }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+        }
+        .card-ambitious .card-label {
+            color: var(--color-ambitious);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* --- BADGE --- */
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+
+        /* --- TABELE --- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) {
+            background: #fafbfc;
+        }
+
+        /* --- PRZYCISKI --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #fff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-outline {
+            background: transparent;
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+
+        /* --- ĆWICZENIA --- */
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+        .fitb-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 10px;
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child {
+            border-bottom: none;
+        }
+        .fitb-row input[type="text"],
+        .fitb-row select {
+            padding: 4px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-family: inherit;
+            background: #fff;
+        }
+        .fitb-row input[type="text"] {
+            width: 160px;
+        }
+        .fitb-row input[type="text"]:focus,
+        .fitb-row select:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+        .fitb-row input[type="text"].correct {
+            border-color: var(--color-correct);
+            background: #f0faf4;
+        }
+        .fitb-row input[type="text"].wrong {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        .fitb-row .result-icon {
+            font-size: 1.0rem;
+        }
+
+        /* --- FISZKI --- */
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .flashcard {
+            min-height: 96px;
+            padding: 14px;
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            background: #fff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .flashcard:hover,
+        .flashcard:focus-visible {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            outline: none;
+        }
+        .flashcard .front {
+            display: block;
+            font-weight: 700;
+        }
+        .flashcard .back {
+            display: none;
+            color: var(--color-text-muted);
+        }
+        .flashcard.flipped .front {
+            display: none;
+        }
+        .flashcard.flipped .back {
+            display: block;
+        }
+
+        /* --- PANEL POSTĘPU --- */
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+        .top-panel .lesson-info .lesson-title {
+            font-style: italic;
+        }
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .view-filters {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .view-filters .btn {
+            font-size: 0.72rem;
+            padding: 3px 12px;
+        }
+        .view-filters .btn.active {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: #fff;
+        }
+        .today-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin: 4px 0 0;
+        }
+        .today-tasks .task {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+        .today-tasks .task .circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--color-text-muted);
+        }
+        .today-tasks .task.done .circle {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: #fff;
+        }
+        .today-tasks .task.done .task-label {
+            text-decoration: line-through;
+            color: var(--color-text-muted);
+        }
+
+        /* --- MISJA --- */
+        .mission-result {
+            font-size: 1.0rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        .mission-result.perfect {
+            background: #d4edda;
+            color: #155724;
+        }
+        .mission-result.good {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .mission-result.ok {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .mission-result.fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* --- UKRYWANIE SEKCJI --- */
+        .section.hidden-by-filter {
+            display: none !important;
+        }
+
+        /* --- STOPKA --- */
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width:600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .view-filters {
+                justify-content: center;
+            }
+            .fitb-row {
+                flex-wrap: wrap;
+            }
+            .fitb-row input[type="text"] {
+                width: 100%;
+            }
+            .container {
+                padding: 10px 6px;
+            }
+        }
+
+        .text-muted {
+            color: var(--color-text-muted);
+        }
+        .text-sm {
+            font-size: 0.82rem;
+        }
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+        }
+        .part-heading .part-num {
+            color: var(--color-training);
+        }
+        .mm-recall {
+            margin: 16px 0;
+            padding: 14px 16px;
+            border: 1px dashed #b9c3ce;
+            border-radius: 10px;
+            background: #fbfcfd;
+        }
+        .mm-recall summary {
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .mm-recall p {
+            margin: 9px 0 0;
+            font-size: 0.9rem;
+        }
+        .mm-microtest {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0;
+        }
+        .mm-microtest button {
+            padding: 9px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background: #fff;
+            text-align: left;
+            cursor: pointer;
+            font: inherit;
+        }
+        .mm-microtest button:hover {
+            background: var(--color-bg-subtle);
+        }
+        .mm-microtest .mm-answer {
+            display: block;
+            margin-top: 5px;
+            color: var(--color-text-muted);
+            font-size: 0.8rem;
+        }
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+        }
+        .example .pl {
+            font-weight: 600;
+            color: #0a2540;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #fff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover {
+            border-color: var(--color-error);
+            color: var(--color-error);
+            background: var(--color-trap-bg);
+        }
+        .korekta {
+            background: #f0faf4;
+            border-left: 4px solid var(--color-correct);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .korekta .korekta-title {
+            font-weight: 700;
+            color: var(--color-correct);
+        }
+        .box-cke {
+            background: #f0f6ff;
+            border: 2px solid #2b6cb0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .box-cke .cke-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #2b6cb0;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .box-cke ul {
+            margin-bottom: 0;
+        }
+        .box-cke ul li {
+            margin-bottom: 2px;
+        }
+        .trap-table td:first-child {
+            font-weight: 600;
+        }
+        .nie-wyjatki {
+            background: #fff8e7;
+            border-left: 4px solid #d69e2e;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .nie-wyjatki .nie-wyjatki-title {
+            font-weight: 700;
+            color: #8a6d3b;
+        }
+        .mm-focusbar {
+            position: sticky;
+            top: 8px;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 0 0 12px;
+            padding: 7px 9px;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid var(--color-border);
+            border-radius: 10px;
+            font-size: 0.78rem;
+        }
+        .mm-focusbar .mm-section-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: var(--color-text-muted);
+        }
+        .mm-focusbar button {
+            border: 1px solid var(--color-border);
+            background: #fff;
+            color: var(--color-text);
+            border-radius: 7px;
+            padding: 5px 9px;
+            cursor: pointer;
+        }
+        body.mm-focus .section:not(.mm-current-section) {
+            opacity: 0.4;
+            transition: opacity 0.2s;
+        }
+        .mm-current-section {
+            scroll-margin-top: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL – POSTĘP + FILTRY + ZADANIA
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">„Akademia Pana Kleksa” + czasownik</div>
+                    <div class="subtitle">Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Lekcja 6 – „Akademia Pana Kleksa” oraz czasownik (formy, czasy, tryby, aspekt, strona, „nie”)</div>
+                        <div>Wersja FINALNA – pełna treść, uzupełniona o MASTER, KONKURS, OLIMPIADA i słownik</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-row">
+                <div class="view-filters">
+                    <button class="btn active" data-view="all" onclick="setView('all')">Wszystko</button>
+                    <button class="btn" data-view="basic" onclick="setView('basic')">Podstawa + Trening</button>
+                    <button class="btn" data-view="exam" onclick="setView('exam')">Egzamin</button>
+                </div>
+                <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                    <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+                </div>
+                <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+            </div>
+
+            <div class="panel-row">
+                <div class="today-tasks" id="todayTasks">
+                    <div class="task" data-task="kleks"><span class="circle">1</span><span class="task-label">Poznaj Akademię – bohaterów i wydarzenia</span></div>
+                    <div class="task" data-task="motywy"><span class="circle">2</span><span class="task-label">Opanuj motywy i narratora</span></div>
+                    <div class="task" data-task="czasownik"><span class="circle">3</span><span class="task-label">Opanuj czasownik – formy, czasy, tryby, aspekt, strona</span></div>
+                    <div class="task" data-task="cwiczenia"><span class="circle">4</span><span class="task-label">Zrób ćwiczenia</span></div>
+                    <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test końcowy</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        MIKROTEST – sprawdź się przed nauką
+        ============================================================ -->
+        <div class="mm-recall" id="mmRecall">
+            <details>
+                <summary>Sprawdź się przed nauką — 3 szybkie pytania</summary>
+                <div class="mm-microtest">
+                    <button type="button" onclick="mmReveal(this,'Adaś Niezgódka – uczeń Akademii, narrator w 1. osobie.')">Kto opowiada historię w „Akademii Pana Kleksa”?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Czasownik odpowiada na pytania: co robi? co się z nim dzieje?')">Na jakie pytania odpowiada czasownik?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Pan Kleks – czarodziej, dyrektor, symbol magii i wyobraźni.')">Kim jest Pan Kleks?<span class="mm-answer"></span></button>
+                </div>
+                <p>To nie jest test na ocenę – pokazuje, co już wiesz.</p>
+            </details>
+        </div>
+
+        <!-- ============================================================
+        CZĘŚĆ 1 – „AKADEMIA PANA KLEKSA”
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part1">
+            <div class="part-heading"><span class="part-num">Część 1</span> · „Akademia Pana Kleksa”</div>
+
+            <!-- STATUS LEKTURY CKE -->
+            <div class="section" data-level="basic" id="sec-cke">
+                <div class="box-cke">
+                    <span class="cke-title">📌 WAŻNE – CKE / E8 (2025/2026)</span>
+                    <p><strong>„Akademia Pana Kleksa” Jana Brzechwy jest lekturą obowiązkową z klas IV–VI.</strong></p>
+                    <ul>
+                        <li>W latach 2024/2025–2025/2026 zadania w <strong>części I arkusza</strong> dotyczące lektur z klas IV–VI odnoszą się <strong>wyłącznie do fragmentu</strong> zamieszczonego w arkuszu – nie sprawdzają znajomości całej treści.</li>
+                        <li>Lektura może być swobodnie wykorzystywana w <strong>wypracowaniu</strong> (część II) i zadaniach otwartych.</li>
+                        <li>Lista lektur obowiązkowych znajduje się na <strong>początku arkusza egzaminacyjnego</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-kleks-info">
+                <h2>1. Podstawowe informacje</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Lektura w pigułce</span>
+                    <ul>
+                        <li><strong>Autor:</strong> Jan Brzechwa (właściwie Jan Wiktor Brzechwa-Chmielewski, 1898–1966).</li>
+                        <li><strong>Pełny tytuł:</strong> „Akademia Pana Kleksa”.</li>
+                        <li><strong>Cykl:</strong> Trylogia o Panu Kleksie:
+                            <ol>
+                                <li>„Akademia Pana Kleksa” (1946)</li>
+                                <li>„Podróże Pana Kleksa” (1961)</li>
+                                <li>„Tryumf Pana Kleksa” (1965)</li>
+                            </ol>
+                        </li>
+                        <li><strong>Gatunek:</strong> powieść dla dzieci z elementami baśni, fantastyki i humoru.</li>
+                        <li><strong>Konwencja:</strong> baśń współczesna, literatura fantastyczna.</li>
+                        <li><strong>Czas i miejsce akcji:</strong> nieokreślone, „dawno temu”; Akademia w nieznanym mieście.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-kleks-narrator">
+                <h2>2. Narrator – 1. osoba</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Narrator pierwszoosobowy</span>
+                    <ul>
+                        <li><strong>Adaś Niezgódka</strong> – uczeń Akademii, chłopiec.</li>
+                        <li><strong>Opowiada w pierwszej osobie</strong> („ja”) – to narracja pamiętnikarska / opowieść w 1. osobie.</li>
+                        <li><strong>Relacja subiektywna</strong> – czytelnik widzi świat oczami Adasia.</li>
+                        <li><strong>Czas narracji:</strong> przeszły (Adaś wspomina swoje przygody).</li>
+                        <li><strong>Adaś jest bohaterem dynamicznym</strong> – z niezdarnego, niepewnego chłopca staje się odważny, zaradny i zaufany uczeń Pana Kleksa.</li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Dlaczego to ważne na egzaminie?</span>
+                        <p>CKE często sprawdza:</p>
+                        <ul>
+                            <li>Rozpoznawanie osoby narratora (1. osoba liczby pojedynczej).</li>
+                            <li>Różnicę między narracją pierwszo- i trzecioosobową.</li>
+                            <li>Wpływ perspektywy narratora na odbiór tekstu.</li>
+                        </ul>
+                        <p><strong>Przykład zadania egzaminacyjnego:</strong><br><em>„Określ, kto opowiada historię w podanym fragmencie. W jaki sposób wpływa to na odbiór wydarzeń?”</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-kleks-bohaterowie">
+                <h2>3. Bohaterowie</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Bohater</th><th>Charakterystyka</th><th>Rola w utworze</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Adaś Niezgódka</strong></td><td>Główny bohater i narrator. Początkowo niezdarny i niepewny, z czasem staje się odważny, zaradny i lojalny. <strong>Bohater dynamiczny</strong>.</td><td>Opowiada historię, uczestniczy w przygodach, przechodzi przemianę.</td></tr>
+                            <tr><td><strong>Pan Ambroży Kleks</strong></td><td>Dyrektor Akademii, czarodziej, wynalazca. Niezwykły, mądry, dobroduszny. Ma czarną brodę, nosi kolorowe ubrania. <strong>Symbol mądrości i wyobraźni</strong>.</td><td>Twórca Akademii, mentor, symbol magii i wyobraźni.</td></tr>
+                            <tr><td><strong>Szpak Mateusz</strong></td><td>Przyjaciel Pana Kleksa, ptak, który mówi i zachowuje się jak człowiek. <strong>Były książę</strong>, który został zamieniony w ptaka.</td><td>Towarzysz, doradca, łączy świat ludzi i zwierząt.</td></tr>
+                            <tr><td><strong>Filip Golarz</strong></td><td>Antagonista, który chce zniszczyć Akademię. Tworzy <strong>Alojzego</strong> – sztucznego chłopca.</td><td>Uosobienie zła i zniszczenia, wróg Pana Kleksa.</td></tr>
+                            <tr><td><strong>Alojzy</strong></td><td>Sztuczny chłopiec / lalka stworzona przez Filipa Golarza. Uosobienie zła, zniszczenia i zazdrości.</td><td>Antagonista, źródło konfliktów, uosobienie zawiści i zła.</td></tr>
+                            <tr><td><strong>Pani Doktor Puchalska</strong></td><td>Lekarka, przyjaciółka Akademii.</td><td>Leczy chorych, pomaga w trudnych sytuacjach.</td></tr>
+                            <tr><td><strong>Piekarz Węgiełek</strong></td><td>Przyjaciel Akademii.</td><td>Dostarcza chleb, pomaga w potrzebie.</td></tr>
+                            <tr><td><strong>Błękitny Podróżnik</strong></td><td>Tajemnicza postać, podróżnik.</td><td>Przynosi wiadomości z dalekich krajów.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card card-hint">
+                    <span class="card-label">Ważne cechy bohaterów do zapamiętania</span>
+                    <ul>
+                        <li><strong>Pan Kleks:</strong> mądrość, dobroć, magia, niekonwencjonalne metody nauczania.</li>
+                        <li><strong>Adaś:</strong> odwaga, lojalność, ciekawość świata – <strong>bohater dynamiczny</strong>.</li>
+                        <li><strong>Filip Golarz / Alojzy:</strong> zło, zniszczenie, zazdrość (przeciwieństwo dobra).</li>
+                        <li><strong>Szpak Mateusz:</strong> mądrość, lojalność, połączenie świata ludzkiego i zwierzęcego.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-kleks-wydarzenia">
+                <h2>4. Fabuła – kluczowe wydarzenia</h2>
+
+                <h3>Struktura utworu</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Epizodyczna budowa</span>
+                    <p>„Akademia Pana Kleksa” ma <strong>epizodyczną budowę</strong> – składa się z serii przygód i historii, które nie zawsze są ściśle powiązane chronologicznie.</p>
+                </div>
+
+                <h3>Najważniejsze epizody</h3>
+
+                <div class="card card-remember">
+                    <span class="card-label">1. Przybycie Adasia do Akademii</span>
+                    <p>Adaś trafia do niezwykłej szkoły. Poznajemy zasady działania Akademii. Pierwsze spotkanie z Panem Kleksem.</p>
+                    <p><strong>Motywy:</strong> odkrywanie nieznanego, szkoła marzeń, magia.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">2. Nauka w Akademii</span>
+                    <p>Zajęcia z <strong>kleksografii</strong> (sztuka tworzenia obrazków z kleksów). Nauka przez zabawę i eksperymenty. Niezwykłe przedmioty: łóżko-łódź, budzik-zwierzę.</p>
+                    <p><strong>Motywy:</strong> nauka jako przygoda, wyobraźnia, kreatywność.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">3. Konflikt z Alojzym i Filipem Golarzem</span>
+                    <p>Filip Golarz tworzy Alojzego – sztucznego chłopca, który ma zniszczyć Akademię. Konflikt między Adasiem a Alojzym. Zemsta i wybaczenie.</p>
+                    <p><strong>Motywy:</strong> zło, zniszczenie, zazdrość, konflikt, walka dobra ze złem.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">4. Podróż do Krainy Cieni</span>
+                    <p>Adaś i przyjaciele trafiają do tajemniczej krainy. Spotkania z niezwykłymi postaciami. Powrót do Akademii.</p>
+                    <p><strong>Motywy:</strong> podróż, przygoda, odwaga, przyjaźń.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">5. Finał – zwycięstwo dobra</span>
+                    <p>Dzięki współpracy i odwadze dobro zwycięża. Adaś przechodzi przemianę – z niezdarnego chłopca staje się odważnym i zaradnym uczniem.</p>
+                    <p><strong>Motywy:</strong> dobro zwycięża zło, przemiana bohatera, wyobraźnia, przyjaźń.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-kleks-motywy">
+                <h2>5. Motywy do rozprawki</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">1. Magia i wyobraźnia</span>
+                    <p>Akademia to miejsce, gdzie magia i wyobraźnia są na co dzień obecne. Pan Kleks uczy, że wyobraźnia pozwala przekraczać granice rzeczywistości.</p>
+                    <p><strong>Wniosek:</strong> Wyobraźnia jest źródłem kreatywności i pozwala rozwiązywać problemy w niekonwencjonalny sposób.</p>
+                    <p><strong>Przykład do rozprawki:</strong> <em>W „Akademii Pana Kleksa” wyobraźnia jest przedstawiona jako najcenniejszy dar człowieka. Dzięki niej bohaterowie pokonują trudności i odkrywają niezwykłe światy.</em></p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">2. Wymarzona szkoła</span>
+                    <p>Akademia to szkoła marzeń – nauka przez zabawę, brak nudnych lekcji, nauczyciel-czarodziej.</p>
+                    <p><strong>Wniosek:</strong> Nauka może być przygodą, jeśli podejdziesz do niej z ciekawością i otwartością.</p>
+                    <p><strong>Przykład do rozprawki:</strong> <em>Akademia Pana Kleksa to miejsce, gdzie nauka staje się przygodą. To dowód na to, że szkoła może być miejscem, do którego dzieci chodzą z przyjemnością.</em></p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">3. Przyjaźń i lojalność</span>
+                    <p>Adaś i jego przyjaciele (szpak Mateusz, golarz Filip) wspierają się nawzajem w trudnych sytuacjach.</p>
+                    <p><strong>Wniosek:</strong> Prawdziwa przyjaźń polega na wzajemnym wsparciu i lojalności.</p>
+                    <p><strong>Przykład do rozprawki:</strong> <em>Przyjaźń Adasia ze szpakiem Mateuszem pokazuje, że prawdziwi przyjaciele zawsze mogą na siebie liczyć, nawet w najtrudniejszych sytuacjach.</em></p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">4. Zemsta i wybaczenie</span>
+                    <p>Filip Golarz i Alojzy próbują zniszczyć Akademię, ale ostatecznie dobro zwycięża.</p>
+                    <p><strong>Wniosek:</strong> Zemsta prowadzi do destrukcji, a wybaczenie pozwala naprawić relacje.</p>
+                    <p><strong>Przykład do rozprawki:</strong> <em>Postać Alojzego i Filipa Golarza z „Akademii Pana Kleksa” pokazuje, że zło i zniszczenie prowadzą do upadku, a dobro i przyjaźń zwyciężają.</em></p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">5. Dobro kontra zło</span>
+                    <p>Pan Kleks i Adaś reprezentują dobro, Filip Golarz i Alojzy – zło (zniszczenie, zazdrość).</p>
+                    <p><strong>Wniosek:</strong> Dobro zwycięża dzięki mądrości, przyjaźni i odwadze.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">6. Przemiana bohatera</span>
+                    <p>Adaś z niezdarnego, niepewnego chłopca staje się odważnym, zaradnym i lojalnym uczniem. To przykład bohatera dynamicznego.</p>
+                    <p><strong>Wniosek:</strong> Człowiek może się zmienić dzięki doświadczeniom i wsparciu przyjaciół.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-kleks-tematy">
+                <h2>6. Tematy wypracowań, do których pasuje „Akademia Pana Kleksa”</h2>
+                <div class="card card-hint">
+                    <span class="card-label">Bank tematów</span>
+                    <ul>
+                        <li>✅ Wymarzona szkoła</li>
+                        <li>✅ Siła wyobraźni</li>
+                        <li>✅ Nauka jako przygoda</li>
+                        <li>✅ Przyjaźń i lojalność</li>
+                        <li>✅ Dobro i zło</li>
+                        <li>✅ Magia w literaturze</li>
+                        <li>✅ Niekonwencjonalny nauczyciel</li>
+                        <li>✅ Przemiana bohatera</li>
+                        <li>✅ Zemsta i wybaczenie</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEKCJA – JAK TO WYGLĄDA NA EGZAMINIE -->
+            <div class="section" data-level="exam" id="sec-e8">
+                <h2>7. Jak to wygląda na egzaminie E8?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">„Akademia Pana Kleksa” na E8</span>
+                    <ul>
+                        <li><strong>W części I arkusza</strong> może pojawić się <strong>fragment</strong> lektury, np. opis Akademii, spotkanie z Panem Kleksem, przygoda z Alojzym. Do fragmentu będą pytania:
+                            <ul>
+                                <li>rozpoznawanie gatunku (powieść, baśń, fantastyka),</li>
+                                <li>identyfikacja narratora (1. osoba, Adaś),</li>
+                                <li>cechy bohaterów (np. Pan Kleks – mądry, dobroduszny),</li>
+                                <li>motywy (magia, szkoła, przyjaźń),</li>
+                                <li>środki stylistyczne (porównania, metafory, personifikacje),</li>
+                                <li>interpretacja fragmentu (co autor chciał przekazać?).</li>
+                            </ul>
+                        </li>
+                        <li><strong>W części II</strong> (wypracowanie) lektura jest doskonałym materiałem do tematów o:
+                            <ul>
+                                <li>szkole marzeń,</li>
+                                <li>sile wyobraźni,</li>
+                                <li>przyjaźni i lojalności,</li>
+                                <li>dobru i złu,</li>
+                                <li>magii w literaturze,</li>
+                                <li>niekonwencjonalnym nauczycielu,</li>
+                                <li>przemianie bohatera.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Wymóg CKE</span>
+                        <p>W wypracowaniu musisz odwołać się do <strong>co najmniej jednego utworu literackiego</strong> (z lektur obowiązkowych). „Akademia Pana Kleksa” spełnia ten wymóg.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 2 – CZASOWNIK
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part2">
+            <div class="part-heading"><span class="part-num">Część 2</span> · Czasownik</div>
+
+            <div class="section" data-level="basic" id="sec-czasownik">
+                <h2>8. Co to jest czasownik?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Definicja</span>
+                    <p><strong>Czasownik</strong> to <strong>odmienna część mowy</strong>, która:</p>
+                    <ul>
+                        <li>oznacza <strong>czynność</strong> (<em>czytać, pisać, biegać</em>),</li>
+                        <li>oznacza <strong>stan</strong> (<em>spać, leżeć, stać</em>),</li>
+                        <li>oznacza <strong>zjawisko</strong> (<em>padać, świecić, grzmieć</em>).</li>
+                    </ul>
+                    <p><strong>Pytania:</strong> <em>co robi? co się z nim dzieje? co robił?</em></p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>Adaś <strong>czyta</strong> książkę.</em> (czynność)</li>
+                        <li><em>Pan Kleks <strong>śpi</strong>.</em> (stan)</li>
+                        <li><em>Deszcz <strong>pada</strong>.</em> (zjawisko)</li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">DLACZEGO?</span>
+                        <p>Czasownik jest rdzeniem zdania – bez niego nie ma orzeczenia. To on określa, co się dzieje, i nadaje zdaniu sens.</p>
+                    </div>
+                </div>
+
+                <h3>Formy czasownika</h3>
+
+                <h4>A. Formy osobowe (odmieniają się przez osoby)</h4>
+                <div class="card card-correct">
+                    <span class="card-label">Formy osobowe</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Osoba</th><th>Liczba pojedyncza</th><th>Liczba mnoga</th></tr></thead>
+                            <tbody>
+                                <tr><td>1.</td><td><em>ja czytam</em></td><td><em>my czytamy</em></td></tr>
+                                <tr><td>2.</td><td><em>ty czytasz</em></td><td><em>wy czytacie</em></td></tr>
+                                <tr><td>3.</td><td><em>on/ona/ono czyta</em></td><td><em>oni/one czytają</em></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Czasowniki osobowe odmieniają się przez:</p>
+                    <ul>
+                        <li><strong>Osoby</strong> (1., 2., 3.)</li>
+                        <li><strong>Liczby</strong> (pojedyncza, mnoga)</li>
+                        <li><strong>Czasy</strong> (przeszły, teraźniejszy, przyszły)</li>
+                        <li><strong>Tryby</strong> (orzekający, przypuszczający, rozkazujący)</li>
+                    </ul>
+                </div>
+
+                <h4>B. Formy nieosobowe (NIE odmieniają się przez osoby)</h4>
+                <div class="card card-correct">
+                    <span class="card-label">Formy nieosobowe</span>
+                    <p><strong>1. Bezokolicznik</strong> (forma podstawowa czasownika)</p>
+                    <ul>
+                        <li><em>czytać, pisać, biegać, spać</em></li>
+                        <li>Nie ma osoby, liczby, czasu.</li>
+                        <li><strong>Przykład:</strong> <em>Lubię <strong>czytać</strong> książki.</em></li>
+                    </ul>
+                    <p><strong>2. Imiesłowy</strong> (łączą cechy czasownika z przymiotnikiem lub przysłówkiem)</p>
+                    <ul>
+                        <li><strong>Imiesłów przymiotnikowy czynny:</strong> <em>czytający, piszący</em> (odpowiada na pytanie: <em>jaki?</em>)</li>
+                        <li><strong>Imiesłów przymiotnikowy bierny:</strong> <em>przeczytany, napisany</em> (odpowiada na pytanie: <em>jaki?</em>)</li>
+                        <li><strong>Imiesłów przysłówkowy współczesny:</strong> <em>czytając, pisząc</em> (odpowiada na pytanie: <em>jak?</em>)</li>
+                        <li><strong>Imiesłów przysłówkowy uprzedni:</strong> <em>przeczytawszy, napisawszy</em> (odpowiada na pytanie: <em>kiedy?</em>)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-czasy">
+                <h2>9. Czasy czasownika</h2>
+                <div class="card card-remember">
+                    <span class="card-label">3 czasy w języku polskim</span>
+                </div>
+
+                <h3>A. Czas teraźniejszy (czynność dzieje się teraz)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Czas teraźniejszy</span>
+                    <ul>
+                        <li><em>czytam, piszesz, on czyta</em></li>
+                        <li>Tylko czasowniki <strong>niedokonane</strong> mają czas teraźniejszy.</li>
+                        <li><strong>Przykład:</strong> <em>Adaś <strong>czyta</strong> książkę.</em> (teraz)</li>
+                    </ul>
+                </div>
+
+                <h3>B. Czas przeszły (czynność już się zakończyła)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Czas przeszły</span>
+                    <ul>
+                        <li><em>czytałem, czytałeś, czytał</em></li>
+                        <li>Zarówno czasowniki <strong>dokonane</strong>, jak i <strong>niedokonane</strong>.</li>
+                        <li><strong>Przykład:</strong> <em>Adaś <strong>czytał</strong> książkę.</em> (wczoraj)</li>
+                    </ul>
+                </div>
+
+                <h3>C. Czas przyszły (czynność będzie się dziać)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Czas przyszły</span>
+                    <ul>
+                        <li><strong>Prosty</strong> (tylko czasowniki <strong>dokonane</strong>): <em>przeczytam, napiszesz</em></li>
+                        <li><strong>Złożony</strong> (czasowniki <strong>niedokonane</strong>): <em>będę czytał, będziesz pisał</em></li>
+                        <li><strong>Przykład:</strong> <em>Adaś <strong>będzie czytał</strong> książkę.</em> (jutro)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-tryby">
+                <h2>10. Tryby czasownika</h2>
+                <div class="card card-remember">
+                    <span class="card-label">3 tryby w języku polskim</span>
+                </div>
+
+                <h3>A. Tryb orzekający (fakty, rzeczywistość)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Tryb orzekający</span>
+                    <p>Opisuje czynności, które <strong>rzeczywiście się dzieją</strong> lub <strong>działy</strong>.</p>
+                    <ul>
+                        <li><em>Adaś <strong>czyta</strong> książkę.</em> (teraźniejszy)</li>
+                        <li><em>Adaś <strong>czytał</strong> książkę.</em> (przeszły)</li>
+                        <li><em>Adaś <strong>będzie czytał</strong> książkę.</em> (przyszły)</li>
+                    </ul>
+                </div>
+
+                <h3>B. Tryb przypuszczający (przypuszczenia, życzenia, możliwości)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Tryb przypuszczający</span>
+                    <p>Opisuje czynności <strong>hipotetyczne</strong>, <strong>możliwe</strong>, ale <strong>niepewne</strong>.</p>
+                    <ul>
+                        <li>Tworzenie: forma przeszła + <strong>by</strong> + końcówki osobowe.</li>
+                        <li><em>czytałbym, czytałbyś, czytałby</em></li>
+                        <li><strong>Przykład:</strong> <em>Gdybym miał czas, <strong>czytałbym</strong> więcej książek.</em></li>
+                    </ul>
+                </div>
+
+                <h3>C. Tryb rozkazujący (rozkazy, prośby, życzenia)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Tryb rozkazujący</span>
+                    <p>Wyraża <strong>rozkaz</strong>, <strong>prośbę</strong>, <strong>życzenie</strong>, <strong>radę</strong>.</p>
+                    <ul>
+                        <li>Występuje tylko w <strong>2. i 3. osobie</strong> (liczba pojedyncza i mnoga).</li>
+                        <li><em>czytaj! (2. os. lp.)</em></li>
+                        <li><em>niech czyta! (3. os. lp.)</em></li>
+                        <li><em>czytajcie! (2. os. lm.)</em></li>
+                        <li><strong>Przykład:</strong> <em><strong>Czytaj</strong> uważnie!</em> (rozkaz)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-aspekt">
+                <h2>11. Aspekt czasownika</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Aspekt – dokonany i niedokonany</span>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">DLACZEGO?</span>
+                        <p>Aspekt pozwala rozróżnić, czy czynność trwa (niedokonany), czy już się zakończyła (dokonany). To kluczowa różnica w języku polskim, często sprawdzana na egzaminie.</p>
+                    </div>
+                </div>
+
+                <h3>A. Aspekt niedokonany (czynność w trakcie, powtarzająca się)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Niedokonany</span>
+                    <p>Opisuje czynność <strong>trwającą</strong>, <strong>powtarzającą się</strong>, <strong>niezakończoną</strong>.</p>
+                    <ul>
+                        <li>Przykłady: <em>czytać, pisać, biegać, spać, mówić</em></li>
+                        <li>Pytania: <em>co robić? co robił?</em></li>
+                        <li><strong>Przykład:</strong> <em>Adaś <strong>czytał</strong> książkę.</em> (czynność trwała, nie wiemy, czy skończył)</li>
+                    </ul>
+                </div>
+
+                <h3>B. Aspekt dokonany (czynność zakończona, rezultat)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Dokonany</span>
+                    <p>Opisuje czynność <strong>zakończoną</strong>, z <strong>rezultatem</strong>.</p>
+                    <ul>
+                        <li>Przykłady: <em>przeczytać, napisać, pobiec, zasnąć, powiedzieć</em></li>
+                        <li>Pytania: <em>co zrobić? co zrobił?</em></li>
+                        <li><strong>Przykład:</strong> <em>Adaś <strong>przeczytał</strong> książkę.</em> (czynność zakończona, książka przeczytana)</li>
+                    </ul>
+                </div>
+
+                <h3>Pary aspektowe (najczęstsze)</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Pary aspektowe</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Niedokonany</th><th>Dokonany</th></tr></thead>
+                            <tbody>
+                                <tr><td>czytać</td><td>przeczytać</td></tr>
+                                <tr><td>pisać</td><td>napisać</td></tr>
+                                <tr><td>robić</td><td>zrobić</td></tr>
+                                <tr><td>biegać</td><td>pobiec</td></tr>
+                                <tr><td>mówić</td><td>powiedzieć</td></tr>
+                                <tr><td>kupować</td><td>kupić</td></tr>
+                                <tr><td>otwierać</td><td>otworzyć</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Ważne!</span>
+                        <p>Nie wszystkie czasowniki mają pary aspektowe. Niektóre występują tylko w jednym aspekcie:</p>
+                        <ul>
+                            <li><strong>Tylko niedokonane:</strong> <em>spać, leżeć, stać, wiedzieć, móc</em></li>
+                            <li><strong>Tylko dokonane:</strong> <em>zginąć, umrzeć, narodzić się</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-strona">
+                <h2>12. Strona czasownika</h2>
+                <div class="card card-remember">
+                    <span class="card-label">2 strony w języku polskim</span>
+                </div>
+
+                <h3>A. Strona czynna (podmiot wykonuje czynność)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Strona czynna</span>
+                    <p>Podmiot jest <strong>wykonawcą</strong> czynności.</p>
+                    <ul>
+                        <li><strong>Przykład:</strong> <em>Adaś <strong>czyta</strong> książkę.</em> (Adaś wykonuje czynność czytania)</li>
+                    </ul>
+                    <p>Najczęstsza forma w języku polskim.</p>
+                </div>
+
+                <h3>B. Strona bierna (podmiot jest poddawany czynności)</h3>
+                <div class="card card-correct">
+                    <span class="card-label">Strona bierna</span>
+                    <p>Podmiot jest <strong>odbiorcą</strong> czynności.</p>
+                    <ul>
+                        <li>Tworzenie: forma czasownika „być” + imiesłów przymiotnikowy bierny.</li>
+                        <li><strong>Przykład:</strong> <em>Książka <strong>jest czytana</strong> przez Adasia.</em> (książka jest poddawana czynności czytania)</li>
+                        <li><strong>Przykład:</strong> <em>List <strong>został napisany</strong> przez Adasia.</em></li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">DLACZEGO?</span>
+                        <p>Strona bierna pozwala przesunąć uwagę z wykonawcy na samą czynność lub jej obiekt. Często używana w stylu oficjalnym.</p>
+                    </div>
+                </div>
+
+                <h3>Porównanie</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Strona czynna vs bierna</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Strona czynna</th><th>Strona bierna</th></tr></thead>
+                            <tbody>
+                                <tr><td><em>Adaś czyta książkę.</em></td><td><em>Książka jest czytana przez Adasia.</em></td></tr>
+                                <tr><td><em>Pan Kleks otworzył drzwi.</em></td><td><em>Drzwi zostały otwarte przez Pana Kleksa.</em></td></tr>
+                                <tr><td><em>Filip Golarz zniszczył Akademię.</em></td><td><em>Akademia została zniszczona przez Filipa Golarza.</em></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-nie-czasownik">
+                <h2>13. Zasada pisowni „nie” z czasownikami</h2>
+                <div class="card card-trap">
+                    <span class="card-label">Zasada ogólna</span>
+                    <p><strong>„nie” z czasownikami piszemy ROZDZIELNIE.</strong></p>
+                    <ul>
+                        <li><em>nie czytam</em></li>
+                        <li><em>nie piszesz</em></li>
+                        <li><em>nie czytał</em></li>
+                        <li><em>nie będzie czytał</em></li>
+                        <li><em>nie czytając</em></li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">DLACZEGO?</span>
+                        <p>Czasownik wyraża czynność, a „nie” ją zaprzecza – w języku polskim przeczenie czasownika zawsze jest osobne, aby zachować przejrzystość składniową.</p>
+                    </div>
+                </div>
+
+                <div class="nie-wyjatki">
+                    <span class="nie-wyjatki-title">⚠️ Wyjątki – ZAPAMIĘTAJ!</span>
+                    <p>Niektóre czasowniki występują <strong>tylko z „nie”</strong> – piszemy je <strong>ŁĄCZNIE</strong>:</p>
+                    <ul>
+                        <li><strong>nienawidzić</strong> (czuć silną niechęć)</li>
+                        <li><strong>niedomagać</strong> (być chorym, słabym)</li>
+                        <li><strong>niecierpliwić się</strong> (tracić cierpliwość)</li>
+                        <li><strong>niepokoić</strong> (wprawiać w niepokój)</li>
+                        <li><strong>niedowidzieć</strong> (słabo widzieć)</li>
+                        <li><strong>niedosłyszeć</strong> (słabo słyszeć)</li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Jak rozpoznać wyjątek?</span>
+                        <p>Spróbuj usunąć „nie”. Jeśli czasownik <strong>przestaje istnieć</strong> lub <strong>zmienia znaczenie</strong>, to piszemy łącznie.</p>
+                        <ul>
+                            <li><em>nienawidzić</em> → <em>nawidzić</em> ❌ (nie istnieje) → <strong>łącznie</strong></li>
+                            <li><em>nie czytać</em> → <em>czytać</em> ✅ (istnieje) → <strong>rozdzielnie</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Przykłady z lektury</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Czasowniki w „Akademii Pana Kleksa”</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Czasownik</th><th>Aspekt</th><th>Czas</th><th>Tryb</th><th>Strona</th></tr></thead>
+                            <tbody>
+                                <tr><td><em>czyta</em></td><td>niedokonany</td><td>teraźniejszy</td><td>orzekający</td><td>czynna</td></tr>
+                                <tr><td><em>przeczytał</em></td><td>dokonany</td><td>przeszły</td><td>orzekający</td><td>czynna</td></tr>
+                                <tr><td><em>będzie czytał</em></td><td>niedokonany</td><td>przyszły</td><td>orzekający</td><td>czynna</td></tr>
+                                <tr><td><em>gdyby czytał</em></td><td>niedokonany</td><td>przeszły</td><td>przypuszczający</td><td>czynna</td></tr>
+                                <tr><td><em>czytaj!</em></td><td>niedokonany</td><td>teraźniejszy</td><td>rozkazujący</td><td>czynna</td></tr>
+                                <tr><td><em>jest czytana</em></td><td>niedokonany</td><td>teraźniejszy</td><td>orzekający</td><td>bierna</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 3 – MASTER + KONKURS + OLIMPIADA
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part3">
+            <div class="part-heading"><span class="part-num">Część 3</span> · MASTER · KONKURS · OLIMPIADA</div>
+
+            <div class="section" data-level="exam" id="sec-master">
+                <h2>14. MASTER – pytania i odpowiedzi</h2>
+
+                <div class="card card-ambitious">
+                    <span class="card-label">Pytania MASTER</span>
+                    <ol>
+                        <li>Określ aspekt i utwórz formę dokonaną: pisać, biegać, mówić.</li>
+                        <li>Przekształć na stronę bierną (czas przeszły): „Pan Kleks otworzył drzwi.”</li>
+                        <li>Utwórz tryb przypuszczający i rozkazujący od „czytać” (2. os. lp.).</li>
+                        <li>Popraw i uzasadnij: „On nienawidzi Alojzego” vs „On nie lubi Alojzego”.</li>
+                    </ol>
+                    <button class="btn btn-primary" onclick="toggleMasterAnswers()">Pokaż / ukryj odpowiedzi</button>
+                    <div id="masterAnswers" style="display:none; margin-top:8px; padding:10px; background:#f0f6ff; border-radius:8px;">
+                        <p><strong>Odpowiedzi MASTER:</strong></p>
+                        <ol>
+                            <li>pisać (niedokonany) → napisać; biegać → pobiec; mówić → powiedzieć.</li>
+                            <li><em>Drzwi zostały otwarte przez Pana Kleksa.</em></li>
+                            <li>czytałbyś; czytaj!</li>
+                            <li><em>nienawidzi</em> – łącznie (wyjątek – czasownik nie istnieje bez „nie”); <em>nie lubi</em> – rozdzielnie (zwykły czasownik).</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="ambitious" id="sec-konkurs">
+                <h2>15. KONKURS – zadanie wieloetapowe</h2>
+                <div class="card card-ambitious">
+                    <span class="card-label">Zadanie konkursowe</span>
+                    <p><strong>Treść:</strong> Przeanalizuj zdanie: <em>„Gdyby Adaś przeczytał książkę, opowiedziałby o niej koledze.”</em></p>
+                    <ol>
+                        <li>Określ tryb i aspekt obu czasowników.</li>
+                        <li>Przekształć na stronę bierną (w tym samym trybie).</li>
+                        <li>Zmień na tryb rozkazujący, zachowując sens (jeśli to możliwe).</li>
+                    </ol>
+                    <button class="btn btn-primary" onclick="toggleKonkursAnswers()">Pokaż / ukryj rozwiązanie</button>
+                    <div id="konkursAnswers" style="display:none; margin-top:8px; padding:10px; background:#f5f0ff; border-radius:8px;">
+                        <p><strong>Rozwiązanie (MASTER):</strong></p>
+                        <ol>
+                            <li><em>przeczytał</em> – tryb przypuszczający (warunkowy), aspekt dokonany; <em>opowiedziałby</em> – tryb przypuszczający, aspekt dokonany.</li>
+                            <li><em>Gdyby książka została przeczytana przez Adasia, zostałaby opowiedziana koledze.</em> – strona bierna w trybie przypuszczającym.</li>
+                            <li>Tryb rozkazujący: <em>Przeczytaj książkę i opowiedz o niej koledze!</em> – zmiana trybu wymaga przeformułowania.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="ambitious" id="sec-olimpiada">
+                <h2>16. OLIMPIADA – problem otwarty</h2>
+                <div class="card card-ambitious">
+                    <span class="card-label">Problem otwarty</span>
+                    <p><strong>Treść:</strong> Czy w języku polskim można utworzyć stronę bierną od każdego czasownika? Podaj przykłady czasowników, które nie mają strony biernej, i uzasadnij dlaczego.</p>
+                    <button class="btn btn-primary" onclick="toggleOlimpiadaAnswers()">Pokaż / ukryj przykładową odpowiedź</button>
+                    <div id="olimpiadaAnswers" style="display:none; margin-top:8px; padding:10px; background:#f5f0ff; border-radius:8px;">
+                        <p><strong>Przykładowa odpowiedź:</strong></p>
+                        <p>Nie od każdego. Czasowniki nieprzechodnie (np. <em>biegać, spać, istnieć</em>) nie tworzą strony biernej, ponieważ nie mają dopełnienia, które mogłoby stać się podmiotem biernym. Strona bierna wymaga dopełnienia bliższego – bez niego nie można przekształcić zdania.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 4 – ĆWICZENIA INTERAKTYWNE
+        ============================================================ -->
+        <section class="section" data-level="training" id="part4">
+            <div class="part-heading"><span class="part-num">Część 4</span> · Ćwiczenia interaktywne</div>
+
+            <div class="hide-all-wrap">
+                <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+                <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cwiczenia">
+                <h2>17. Ćwiczenie – rozpoznaj czasownik</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ, czy podkreślony wyraz jest czasownikiem (tak/nie). <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. <strong>Adaś czyta</strong> książkę.</span>
+                        <select id="czas1"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="czasIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Pan Kleks <strong>jest</strong> mądry.</span>
+                        <select id="czas2"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="czasIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Szpak Mateusz <strong>śpiewa</strong>.</span>
+                        <select id="czas3"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="czasIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. Alojzy <strong>zły</strong> na Adasia.</span>
+                        <select id="czas4"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="czasIcon4"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">5. Golarz Filip <strong>pomaga</strong>.</span>
+                        <select id="czas5"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="czasIcon5"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkCzasownik()">Sprawdź</button>
+                    <div id="czasResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cw-aspekt">
+                <h2>18. Ćwiczenie – aspekt czasownika</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ aspekt czasownika (niedokonany/dokonany). <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. czytać →</span>
+                        <select id="aspekt1"><option value="">— wybierz —</option><option value="niedokonany">niedokonany</option><option value="dokonany">dokonany</option></select>
+                        <span class="result-icon" id="aspektIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. przeczytać →</span>
+                        <select id="aspekt2"><option value="">— wybierz —</option><option value="niedokonany">niedokonany</option><option value="dokonany">dokonany</option></select>
+                        <span class="result-icon" id="aspektIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. pisać →</span>
+                        <select id="aspekt3"><option value="">— wybierz —</option><option value="niedokonany">niedokonany</option><option value="dokonany">dokonany</option></select>
+                        <span class="result-icon" id="aspektIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. napisać →</span>
+                        <select id="aspekt4"><option value="">— wybierz —</option><option value="niedokonany">niedokonany</option><option value="dokonany">dokonany</option></select>
+                        <span class="result-icon" id="aspektIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkAspekt()">Sprawdź</button>
+                    <div id="aspektResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-nie-czasownik">
+                <h2>19. Ćwiczenie – „nie” z czasownikami (PUŁAPKA E8!)</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wpisz poprawną formę czasownika z „nie” (łącznie lub rozdzielnie). <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. On ______ (nie + czytać) książki.</span>
+                        <input type="text" id="niec1" placeholder="wpisz...">
+                        <span class="result-icon" id="niecIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. On ______ (nie + nawidzić) Alojzego.</span>
+                        <input type="text" id="niec2" placeholder="wpisz...">
+                        <span class="result-icon" id="niecIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. On ______ (nie + móc) przyjść.</span>
+                        <input type="text" id="niec3" placeholder="wpisz...">
+                        <span class="result-icon" id="niecIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. On ______ (nie + cierpliwić się) na Adasia.</span>
+                        <input type="text" id="niec4" placeholder="wpisz...">
+                        <span class="result-icon" id="niecIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkNieCzasownik()">Sprawdź</button>
+                    <div id="niecResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-strona">
+                <h2>20. Ćwiczenie – strona czynna i bierna</h2>
+                <div class="exercise">
+                    <div class="ex-title">Przekształć zdania ze strony czynnej na bierną. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Adaś czyta książkę. →</span>
+                        <input type="text" id="strona1" placeholder="wpisz..." style="width:280px;">
+                        <span class="result-icon" id="stronaIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Pan Kleks otworzył drzwi. →</span>
+                        <input type="text" id="strona2" placeholder="wpisz..." style="width:280px;">
+                        <span class="result-icon" id="stronaIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Filip Golarz zniszczył Akademię. →</span>
+                        <input type="text" id="strona3" placeholder="wpisz..." style="width:280px;">
+                        <span class="result-icon" id="stronaIcon3"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkStrona()">Sprawdź</button>
+                    <div id="stronaResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 5 – FISZKI
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part5">
+            <div class="part-heading"><span class="part-num">Część 5</span> · Fiszki interaktywne</div>
+
+            <div class="section" data-level="basic" id="sec-flashcards">
+                <h2>21. Fiszki – najważniejsze pojęcia</h2>
+                <div class="flashcard-grid">
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Czasownik – definicja</span>
+                        <span class="back">Odmienna część mowy oznaczająca czynność, stan lub zjawisko.<br>Pytania: <em>co robi? co się z nim dzieje?</em><br>Przykład: <em>czytać, spać, padać</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Formy osobowe</span>
+                        <span class="back">Odmieniają się przez osoby, liczby, czasy i tryby.<br>Przykład: <em>czytam, czytasz, czyta, czytamy, czytacie, czytają</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Formy nieosobowe</span>
+                        <span class="back">Bezokolicznik (<em>czytać</em>) i imiesłowy.<br>Nie mają osoby, liczby ani czasu.</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Czas teraźniejszy</span>
+                        <span class="back">Czynność dzieje się teraz.<br>Tylko czasowniki niedokonane.<br>Przykład: <em>Adaś czyta książkę.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Czas przeszły</span>
+                        <span class="back">Czynność już się zakończyła.<br>Dokonane i niedokonane.<br>Przykład: <em>Adaś czytał książkę.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Czas przyszły</span>
+                        <span class="back">Czynność będzie się dziać.<br>Prosty (dokonane: <em>przeczytam</em>)<br>Złożony (niedokonane: <em>będę czytał</em>)</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Tryb orzekający</span>
+                        <span class="back">Opisuje fakty, rzeczywistość.<br>Przykład: <em>Adaś czyta książkę.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Tryb przypuszczający</span>
+                        <span class="back">Opisuje hipotezy, życzenia, możliwości.<br>Przykład: <em>Gdybym miał czas, czytałbym więcej.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Tryb rozkazujący</span>
+                        <span class="back">Wyraża rozkaz, prośbę, życzenie.<br>Przykład: <em>Czytaj uważnie!</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Aspekt niedokonany</span>
+                        <span class="back">Czynność trwa, powtarza się, nie jest zakończona.<br>Pytanie: <em>co robić?</em><br>Przykład: <em>czytać, pisać</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Aspekt dokonany</span>
+                        <span class="back">Czynność zakończona, z rezultatem.<br>Pytanie: <em>co zrobić?</em><br>Przykład: <em>przeczytać, napisać</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Strona czynna</span>
+                        <span class="back">Podmiot wykonuje czynność.<br>Przykład: <em>Adaś czyta książkę.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Strona bierna</span>
+                        <span class="back">Podmiot jest poddawany czynności.<br>Przykład: <em>Książka jest czytana przez Adasia.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">„nie” z czasownikami – wyjątki</span>
+                        <span class="back">ŁĄCZNIE (czasowniki bez „nie” nie istnieją):<br><em>nienawidzić, niedomagać, niecierpliwić się, niepokoić, niedowidzieć</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Adaś Niezgódka</span>
+                        <span class="back">Główny bohater i narrator.<br>Opowiada w 1. osobie („ja”).<br>Subiektywna perspektywa.<br><strong>Bohater dynamiczny</strong>.</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 6 – TEST KOŃCOWY (MISJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part6">
+            <div class="part-heading"><span class="part-num">Część 6</span> · Test końcowy – MISJA</div>
+
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>22. Misja końcowa</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Zadanie</span>
+                    <p>Bez zaglądania do notatek – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                    <p>Pamiętaj o najważniejszych poprawkach: <strong>narrator – 1. osoba (Adaś)</strong>, <strong>Adaś jest bohaterem dynamicznym</strong>, <strong>czasowniki mają 3 czasy i 3 tryby</strong>, <strong>„nie” z czasownikami rozdzielnie (z wyjątkami)</strong>.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą lub odpowiedzią. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 7 – PODSUMOWANIE I PUŁAPKI
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part7">
+            <div class="part-heading"><span class="part-num">Część 7</span> · Podsumowanie i pułapki</div>
+
+            <div class="section" data-level="exam" id="sec-podsumowanie">
+                <h2>23. Co powinieneś umieć po tej lekcji?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Sprawdź się</span>
+                    <ul>
+                        <li><span class="correct-text">Znam autora, tytuł i głównych bohaterów „Akademii Pana Kleksa”.</span></li>
+                        <li><span class="correct-text">Rozumiem, że narratorem jest Adaś Niezgódka (1. osoba).</span></li>
+                        <li><span class="correct-text">Wiem, że Adaś jest bohaterem dynamicznym.</span></li>
+                        <li><span class="correct-text">Znam motywy: magia, wyobraźnia, szkoła marzeń, przyjaźń, walka dobra ze złem.</span></li>
+                        <li><span class="correct-text">Rozróżniam formy osobowe i nieosobowe czasownika.</span></li>
+                        <li><span class="correct-text">Znam 3 czasy (teraźniejszy, przeszły, przyszły).</span></li>
+                        <li><span class="correct-text">Znam 3 tryby (orzekający, przypuszczający, rozkazujący).</span></li>
+                        <li><span class="correct-text">Rozróżniam aspekt dokonany i niedokonany.</span></li>
+                        <li><span class="correct-text">Rozróżniam stronę czynną i bierną.</span></li>
+                        <li><span class="correct-text">Znam zasadę pisowni „nie” z czasownikami i wyjątki.</span></li>
+                        <li><span class="correct-text">Wiem, jak wykorzystać lekturę w wypracowaniu.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-pulapki">
+                <h2>24. Najczęstsze pułapki egzaminacyjne</h2>
+                <div class="table-wrap">
+                    <table class="trap-table">
+                        <thead><tr><th>Pułapka</th><th>Błąd</th><th>Poprawnie</th></tr></thead>
+                        <tbody>
+                            <tr><td>Narrator</td><td><span class="error-text">Adaś opowiada w 3. osobie.</span></td><td><span class="correct-text">Adaś opowiada w 1. osobie („ja”).</span></td></tr>
+                            <tr><td>Adaś – bohater</td><td><span class="error-text">Adaś jest bohaterem statycznym.</span></td><td><span class="correct-text">Adaś jest bohaterem dynamicznym – przechodzi przemianę.</span></td></tr>
+                            <tr><td>Gatunek</td><td><span class="error-text">To baśń.</span></td><td><span class="correct-text">To powieść dla dzieci z elementami baśni.</span></td></tr>
+                            <tr><td>„Nie” z czasownikiem</td><td><span class="error-text">nieczytać (łącznie)</span></td><td><span class="correct-text">nie czytać (rozdzielnie)</span></td></tr>
+                            <tr><td>Wyjątki od „nie”</td><td><span class="error-text">nienawidzić rozdzielnie</span></td><td><span class="correct-text">nienawidzić łącznie (wyjątek)</span></td></tr>
+                            <tr><td>Aspekt – „czytać”</td><td><span class="error-text">czytać – dokonany</span></td><td><span class="correct-text">czytać – niedokonany</span></td></tr>
+                            <tr><td>Aspekt – „przeczytać”</td><td><span class="error-text">przeczytać – niedokonany</span></td><td><span class="correct-text">przeczytać – dokonany</span></td></tr>
+                            <tr><td>Czas przyszły – niedokonany</td><td><span class="error-text">będę czytać</span></td><td><span class="correct-text">będę czytał (lub przeczytam dla dokonanego)</span></td></tr>
+                            <tr><td>Tryb rozkazujący</td><td><span class="error-text">czytajmy – orzekający</span></td><td><span class="correct-text">czytajmy – rozkazujący</span></td></tr>
+                            <tr><td>Strona bierna</td><td><span class="error-text">książka czyta</span></td><td><span class="correct-text">książka jest czytana</span></td></tr>
+                            <tr><td>Egzamin a treść lektury</td><td><span class="error-text">Egzamin sprawdza całą treść książki.</span></td><td><span class="correct-text">W części I egzamin sprawdza tylko fragment z arkusza.</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STOPKA
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>Lekcja 6 – „Akademia Pana Kleksa” + czasownik</strong> &bull; Wersja FINALNA – pełna treść, uzupełniona o MASTER, KONKURS, OLIMPIADA i słownik &bull; 2026-09-07</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
+            <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ======================================================================
+        // JAVASCRIPT – interakcje
+        // ======================================================================
+
+        // ---------- POSTĘP ----------
+        function updateProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]') || [];
+            let total = 0,
+                done = 0;
+            checks.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 0;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            const fill = document.getElementById('progressFill');
+            if (fill) fill.style.width = pct + '%';
+            const pctLabel = document.getElementById('progressPercent');
+            if (pctLabel) pctLabel.textContent = pct + '%';
+            const statusEl = document.getElementById('progressStatus');
+            if (statusEl) {
+                if (pct === 100) statusEl.textContent = 'Świetnie. Opanowałeś lekcję!';
+                else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze. Dokończ resztę.';
+                else if (pct >= 50) statusEl.textContent = 'Dobrze. Poćwicz jeszcze.';
+                else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+                else statusEl.textContent = 'Zacznij naukę';
+            }
+            updateTasks(pct);
+        }
+
+        function updateTasks(pct) {
+            const tasks = document.querySelectorAll('.today-tasks .task');
+            const thresholds = [10, 25, 45, 65, 85];
+            tasks.forEach((task, i) => {
+                if (pct >= thresholds[i]) task.classList.add('done');
+                else task.classList.remove('done');
+            });
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => cb.checked = false);
+            updateProgress();
+        }
+
+        // ---------- FILTRY ----------
+        let currentView = 'all';
+
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+            if (btn) btn.classList.add('active');
+            applyFilter(view);
+            updateVisibleCount();
+        }
+
+        function applyFilter(view) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const level = sec.dataset.level || 'basic';
+                let show = true;
+                if (view === 'basic') {
+                    show = (level === 'basic' || level === 'training' || level === 'remember');
+                } else if (view === 'exam') {
+                    show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level ===
+                        'difficult' || level === 'remember' || level === 'ambitious');
+                }
+                if (view === 'all') show = true;
+                sec.classList.toggle('hidden-by-filter', !show);
+            });
+        }
+
+        function updateVisibleCount() {
+            const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+            const total = document.querySelectorAll('.section').length;
+            const vEl = document.getElementById('visibleCount');
+            const tEl = document.getElementById('totalCount');
+            if (vEl) vEl.textContent = visible;
+            if (tEl) tEl.textContent = total;
+        }
+
+        // ---------- TOGGLE FLASHCARD ----------
+        function toggleFlashcard(card) {
+            card.classList.toggle('flipped');
+        }
+
+        // ---------- TOGGLE MASTER/KONKURS/OLIMPIADA ----------
+        function toggleMasterAnswers() {
+            const el = document.getElementById('masterAnswers');
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleKonkursAnswers() {
+            const el = document.getElementById('konkursAnswers');
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleOlimpiadaAnswers() {
+            const el = document.getElementById('olimpiadaAnswers');
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // ---------- HIDE ALL ANSWERS ----------
+        function hideAllAnswers() {
+            document.querySelectorAll('.fitb-row input[type="text"]').forEach(inp => {
+                inp.classList.remove('correct', 'wrong');
+            });
+            document.querySelectorAll('.fitb-row .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            document.querySelectorAll('#masterAnswers, #konkursAnswers, #olimpiadaAnswers').forEach(el => {
+                el.style.display = 'none';
+            });
+        }
+
+        // ---------- MM REVEAL ----------
+        function mmReveal(btn, text) {
+            const out = btn.querySelector('.mm-answer');
+            if (!out) return;
+            const open = out.textContent.trim() !== '';
+            out.textContent = open ? '' : 'Odpowiedź: ' + text;
+        }
+
+        // ---------- ĆWICZENIA ----------
+        function checkCzasownik() {
+            const answers = ['tak', 'tak', 'tak', 'nie', 'tak'];
+            const icons = ['czasIcon1', 'czasIcon2', 'czasIcon3', 'czasIcon4', 'czasIcon5'];
+            let correct = 0;
+            for (let i = 1; i <= 5; i++) {
+                const sel = document.getElementById('czas' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('czasResult');
+            if (res) res.innerHTML =
+                `<span style="color:${correct === 5 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/5. ${correct === 5 ? 'Świetnie rozpoznajesz czasowniki!' : 'Sprawdź, co nazywa dany wyraz.'}</span>`;
+        }
+
+        function checkAspekt() {
+            const answers = ['niedokonany', 'dokonany', 'niedokonany', 'dokonany'];
+            const icons = ['aspektIcon1', 'aspektIcon2', 'aspektIcon3', 'aspektIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const sel = document.getElementById('aspekt' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('aspektResult');
+            if (res) res.innerHTML =
+                `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Świetnie rozróżniasz aspekt czasowników!' : 'Sprawdź różnicę między czynnością trwającą a zakończoną.'}</span>`;
+        }
+
+        function checkNieCzasownik() {
+            const answers = ['nie czyta', 'nienawidzi', 'nie może', 'niecierpliwi się'];
+            const icons = ['niecIcon1', 'niecIcon2', 'niecIcon3', 'niecIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const inp = document.getElementById('niec' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim().toLowerCase();
+                const isOk = val === answers[i - 1].toLowerCase();
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('niecResult');
+            if (res) res.innerHTML =
+                `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Zasada "nie" z czasownikami opanowana!' : 'Pamiętaj: "nie" z czasownikami piszemy rozdzielnie, chyba że czasownik bez "nie" nie istnieje.'}</span>`;
+        }
+
+        function checkStrona() {
+            const answers = [
+                'Książka jest czytana przez Adasia.',
+                'Drzwi zostały otwarte przez Pana Kleksa.',
+                'Akademia została zniszczona przez Filipa Golarza.'
+            ];
+            const icons = ['stronaIcon1', 'stronaIcon2', 'stronaIcon3'];
+            let correct = 0;
+            for (let i = 1; i <= 3; i++) {
+                const inp = document.getElementById('strona' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim();
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('stronaResult');
+            if (res) res.innerHTML =
+                `<span style="color:${correct === 3 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/3. ${correct === 3 ? 'Strona bierna opanowana!' : 'Pamiętaj: strona bierna = "być" + imiesłów bierny.'}</span>`;
+        }
+
+        // ---------- MISJA ----------
+        const missionData = [
+            { q: '1. Kto jest autorem „Akademii Pana Kleksa”?', correct: 'Jan Brzechwa' },
+            { q: '2. Kto opowiada historię w „Akademii Pana Kleksa”? (imię, 1. osoba)', correct: 'Adaś' },
+            { q: '3. Kim jest Pan Kleks? (czarodziej / dyrektor / oba)', correct: 'oba' },
+            { q: '4. Jaki motyw łączymy z Akademią jako miejscem marzeń?', correct: 'wymarzona szkoła' },
+            { q: '5. „czytać” – jaki to aspekt? (niedokonany / dokonany)', correct: 'niedokonany' },
+            { q: '6. „przeczytać” – jaki to aspekt? (niedokonany / dokonany)', correct: 'dokonany' },
+            { q: '7. „nie” z czasownikami piszemy ……… (łącznie / rozdzielnie)', correct: 'rozdzielnie' },
+            { q: '8. Podaj wyjątek od zasady „nie” z czasownikami (czasownik, który bez „nie” nie istnieje).', correct: 'nienawidzić' },
+            { q: '9. Jaki tryb wyraża rozkaz? (orzekający / przypuszczający / rozkazujący)', correct: 'rozkazujący' },
+            { q: '10. „Książka jest czytana przez Adasia” – to strona ……… (czynna / bierna)', correct: 'bierna' },
+            { q: '11. Jaki czas ma tylko czasowniki niedokonane? (teraźniejszy / przeszły / przyszły)', correct: 'teraźniejszy' },
+            { q: '12. Czy w części I egzaminu sprawdzana jest znajomość całej treści książki czy tylko fragmentu?', correct: 'fragment' },
+            { q: '13. Czy Adaś jest bohaterem dynamicznym czy statycznym?', correct: 'dynamiczny' },
+            { q: '14. Kto jest antagonistą w „Akademii Pana Kleksa”? (nazwisko)', correct: 'Filip Golarz' },
+        ];
+
+        function initMission() {
+            const container = document.getElementById('missionQuestions');
+            if (!container) return;
+            container.innerHTML = '';
+            missionData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'fitb-row';
+                div.innerHTML = `
+                    <span style="font-weight:500;">${item.q}</span>
+                    <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:180px;">
+                    <span class="result-icon" id="missionIcon${idx}"></span>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkMission() {
+            let correct = 0;
+            const total = missionData.length;
+            const mistakes = [];
+            missionData.forEach((item, idx) => {
+                const input = document.getElementById('missionInput' + idx);
+                const icon = document.getElementById('missionIcon' + idx);
+                if (!input || !icon) return;
+                const val = input.value.trim().toLowerCase();
+                const isOk = val === item.correct.toLowerCase();
+                input.classList.toggle('correct', isOk);
+                input.classList.toggle('wrong', !isOk);
+                if (isOk) {
+                    icon.textContent = '✓';
+                    icon.style.color = '#2d8f5e';
+                    correct++;
+                } else {
+                    icon.textContent = '✗';
+                    icon.style.color = '#dc3545';
+                    mistakes.push(`${idx + 1}. (poprawnie: „${item.correct}”)`);
+                }
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (!resultDiv) return;
+            resultDiv.style.display = 'block';
+            const pct = Math.round((correct / total) * 100);
+            let msg = '',
+                cls = '';
+            if (pct === 100) { msg = 'Świetnie! Opanowałeś lekcję!';
+                cls = 'perfect'; } else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane zagadnienia.';
+                cls = 'good'; } else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.';
+                cls = 'ok'; } else { msg = 'Powtórz podstawy i rozwiąż test jeszcze raz.';
+                cls = 'fail'; }
+            resultDiv.className = 'mission-result ' + cls;
+            resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+                (mistakes.length ? `<br><span class="text-sm">Popraw odpowiedzi: ${mistakes.join('; ')}</span>` : '');
+        }
+
+        function resetMission() {
+            document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'wrong');
+            });
+            document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (resultDiv) resultDiv.style.display = 'none';
+        }
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            setView('all');
+            initMission();
+            updateProgress();
+        });
+    </script>
+
+</body>
+</html>

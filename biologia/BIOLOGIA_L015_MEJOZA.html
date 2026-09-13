@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Biologia L015 — Jak powstają komórki haploidalne i skąd bierze się różnorodność? (v5.1)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+/* ============ SYSTEM WIZUALNY ============ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;background:#f5f7fa;color:#1e293b;line-height:1.7;padding:16px;}
+.container{max-width:1060px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px;}}
+
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-new:#059669;--color-new-bg:#ecfdf5;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card-new{background:var(--color-new-bg);border-left:5px solid var(--color-new);border-color:var(--color-new);}
+.card-new .card-label{color:var(--color-new);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-exam{background:#ffe8cc;color:#8a6d3b;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.level-new{background:#a7f3d0;color:#065f46;}
+
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+.table-wrap .error-row{background:#fef2f2;}
+.table-wrap .correct-row{background:#f0faf4;}
+
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 14px;border-radius:8px;border:1px solid var(--color-border);background:#fff;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;color:var(--color-text);font-family:inherit;}
+.btn:hover{background:var(--color-bg-subtle);border-color:#b0b8c4;}
+
+.answer-toggle{font-family:inherit;padding:4px 14px;border-radius:6px;border:none;cursor:pointer;font-size:0.78rem;font-weight:500;transition:all 0.2s;margin-top:4px;margin-right:4px;background:var(--color-training);color:#fff;}
+.answer-toggle:hover{background:#1f4e8c;}
+.answer-content{border-radius:6px;padding:0 12px;margin-top:4px;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.3s ease,opacity 0.3s ease;opacity:0;background:var(--color-training-bg);border-left:3px solid var(--color-training);}
+.answer-content.show{max-height:3000px;padding:10px 12px;opacity:1;}
+
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"▶";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+
+.section{margin-bottom:8px;}
+
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:80px;}
+.flashcard .front{font-weight:700;font-size:1.05rem;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.95rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+
+.diagram{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:16px 0;text-align:center;overflow-x:auto;}
+.diagram svg{max-width:100%;height:auto;}
+.diagram .caption{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:8px;}
+
+.def-box{background:#eef7ff;border-left:4px solid #2b6cb0;border-radius:8px;padding:10px 14px;margin:10px 0;}
+.def-box .term{font-weight:700;color:#0a2540;}
+.def-box .meaning{color:#1e293b;}
+
+.curiosity{background:#fdf4ff;border-left:4px solid #a855f7;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:0.92rem;}
+.curiosity .label{font-weight:700;color:#7c3aed;display:block;margin-bottom:2px;}
+
+.step-flow{background:#0a2540;color:#fff;padding:12px 16px;border-radius:8px;font-family:'Courier New',monospace;font-size:0.9rem;line-height:1.7;margin:8px 0;overflow-x:auto;}
+
+.formula-box{background:#0a2540;color:#fbbf24;padding:14px 20px;border-radius:10px;text-align:center;font-family:'Courier New',monospace;font-size:1.3rem;font-weight:700;letter-spacing:2px;margin:14px 0;}
+
+@media(max-width:600px){
+  .top-panel .panel-row{flex-direction:column;align-items:stretch;}
+  .container{padding:10px 6px;}
+  .toc-section{padding:12px 14px;}
+  .toc-summary{font-size:0.85rem;padding:6px 10px;}
+}
+</style>
+</head>
+<body>
+<div class="container" id="app">
+
+<div class="card card-new">
+  <span class="card-label">Dopisek v5.2 — precyzja (treść v5.1 zostaje)</span>
+  <p><strong>Gdzie mejoza:</strong> w komórkach <em>linii płciowej</em> w gonadach. Dojrzałe gamety już jej nie przechodzą.</p>
+  <p><strong>Homologi:</strong> te same geny w tych samych loci, mogą mieć różne allele.</p>
+  <p><strong>Niezależna segregacja:</strong> losowe ustawienie par w <em>metafazie I</em> → różne kombinacje chromosomów dziadków w gamecie.</p>
+  <p><strong>Wiek matki:</strong> rośnie ryzyko błędów rozchodzenia; jedna z przyczyn — długie zatrzymanie mejozy komórki jajowej. Mechanizm nie jest prostym „gromadzeniem uszkodzeń”.</p>
+  <p><strong>Oogeneza:</strong> mejoza II u człowieka kończy się dopiero po zapłodnieniu.</p>
+  <p><strong>Po mejozie I:</strong> n chromosomów, ale każdy nadal z dwiema chromatydami (liczymy centromery). Chromatydy rozchodzą się w mejozie II.</p>
+  <p>Roślinny cykl spor/gametofitu, pełne tabele nondysjunkcji I/II, oogeneza vs starzenie — <strong>dla chętnych</strong>.</p>
+</div>
+
+
+<!-- ============================================================
+TOP PANEL
+============================================================ -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L015 — Jak powstają komórki haploidalne i skąd bierze się różnorodność?</div>
+      <div class="subtitle">Genetyka · mejoza · 2n → n · rekombinacja chromosomowa · nondysjunkcja · oogeneza vs spermatogeneza</div>
+      <div class="lesson-info">
+        Poprzednia: L014 (mitoza — jak komórki ciała się odnawiają) · Następna: L016 (nowotwory — gdy podziały wymykają się kontroli)<br>
+        Warstwy: [PRZYPOMNIENIE] · [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]<br>
+        <strong style="color:var(--color-new)">Wersja 5.1</strong> — po korekcie merytorycznej
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+TOC
+============================================================ -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+
+  <details class="toc-item" open>
+    <summary class="toc-summary">0. Wprowadzenie — o co tu chodzi?</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wprowadzenie">Wprowadzenie</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">1–4. Pytanie, cele, kompas, problem</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#pytanie">Pytanie przewodnie</a>
+      <a class="toc-anchor" href="#cele">Cele + 80/20</a>
+      <a class="toc-anchor" href="#kompas">Kompas</a>
+      <a class="toc-anchor" href="#problem">Zacznij od problemu</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">5. Ściąga — definicje i budowa</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#sciaga">Ściąga</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">6. Wyjaśnienie od podstaw</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#wyjasnienie">Wyjaśnienie</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">7. Dlaczego rodzeństwo się różni?</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#roznorodnosc">Różnorodność</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">8–9. Poziom ambitny i zaawansowany</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#ambitny">MASTER</a>
+      <a class="toc-anchor" href="#zaawansowany">ZAAWANSOWANY</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">10. Klinika błędów + Klinika 2.0</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#klinika">Klinika</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">11–16. Obserwacja, ćwiczenia, fiszki, test, checklista</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#obserwacja">Obserwacja</a>
+      <a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a>
+      <a class="toc-anchor" href="#fiszki">Fiszki</a>
+      <a class="toc-anchor" href="#test">Test</a>
+      <a class="toc-anchor" href="#checklista">Checklista</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">17–23. Mapa, słownik, dodatek, życie, status</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#mapa">Mapa</a>
+      <a class="toc-anchor" href="#slownik">Słownik</a>
+      <a class="toc-anchor" href="#dodatek">Dodatek</a>
+      <a class="toc-anchor" href="#zycie">Z życia</a>
+    </nav>
+  </details>
+
+  <div class="toc-keywords"><span>Słowa kluczowe: mejoza · 2n → n · komórka haploidalna · rekombinacja chromosomowa · niezależna segregacja · nondysjunkcja · oogeneza · spermatogeneza</span></div>
+</div>
+
+<!-- ============================================================
+0. WPROWADZENIE
+============================================================ -->
+<section class="section" id="wprowadzenie">
+  <div class="part-heading"><span class="part-num">0. Wprowadzenie</span> <span class="level-badge level-new">WPROWADZENIE</span></div>
+
+  <div class="card card-new">
+    <span class="card-label">O co tu właściwie chodzi?</span>
+    <p>Wyobraź sobie, że masz talię kart. <strong>46 kart</strong> — dokładnie tyle, ile chromosomów ma człowiek. Dzielisz tę talię na dwie kupki <strong>po 23 karty</strong>. Potem mama i tata łączą swoje kupki w <strong>nową talię 46 kart</strong>.</p>
+    <p>To jest właśnie <strong>mejoza</strong> — proces, w którym z komórki z <strong>46 chromosomami</strong> powstają komórki z <strong>23 chromosomami</strong>, a następnie (u zwierząt) z tych komórek powstają <strong>gamety</strong> (plemniki, komórki jajowe).</p>
+    <p>Ale jest jeden haczyk: <strong>nie dzielisz tych samych kart za każdym razem</strong>. Karty tasują się, mieszają — i za każdym razem wychodzi <strong>inny zestaw</strong>. To dlatego <strong>każde dziecko tej samej pary rodziców jest inne</strong> (z wyjątkiem bliźniąt jednojajowych).</p>
+  </div>
+
+  <h3>Dlaczego bez mejozy mielibyśmy problem?</h3>
+  <div class="card card-hint">
+    <p>Gdyby gamety miały 46 chromosomów, a nie 23:</p>
+    <ul>
+      <li>Pokolenie 1: 46 chromosomów.</li>
+      <li>Pokolenie 2: 46 + 46 = <strong>92</strong> chromosomy.</li>
+      <li>Pokolenie 3: 92 + 92 = <strong>184</strong> chromosomy.</li>
+    </ul>
+    <p><strong>Liczba chromosomów podwajałaby się w każdym pokoleniu</strong> — komórki nie byłyby w stanie tego utrzymać.</p>
+    <p><strong>Mejoza rozwiązuje problem:</strong> redukuje liczbę chromosomów o połowę przed zapłodnieniem → zygota znowu ma 46.</p>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Czego się nauczysz na tej lekcji?</span>
+    <ol>
+      <li><strong>Czym jest mejoza</strong> i jak różni się od mitozy.</li>
+      <li><strong>Jak zachodzi redukcja 2n → n</strong> (i dlaczego to konieczne).</li>
+      <li><strong>Skąd bierze się różnorodność genetyczna</strong> (rekombinacja chromosomowa, segregacja, losowe zapłodnienie).</li>
+      <li><strong>Jak policzyć chromosomy i chromatydy</strong> na każdym etapie mejozy.</li>
+      <li><strong>Co się dzieje, gdy mejoza zawodzi</strong> (nondysjunkcja → aneuploidia).</li>
+    </ol>
+  </div>
+
+  <h3>Krótka historia</h3>
+  <div class="curiosity">
+    <span class="label">Od obserwacji mikroskopowych do chromosomowej teorii dziedziczenia</span>
+    <p><strong>1880s — Walther Flemming, Edouard van Beneden</strong> obserwowali podział komórek. Zauważyli, że w komórkach rozrodczych chromosomy zachowują się inaczej niż w komórkach ciała.</p>
+    <p><strong>1887 — August Weismann</strong> zaproponował, że <strong>liczba chromosomów musi się zmniejszyć o połowę</strong> przed zapłodnieniem, żeby nie rosła z pokolenia na pokolenie.</p>
+    <p><strong>1900s — Walter Sutton i Theodor Boveri</strong> połączyli obserwacje mejozy z prawami Mendla: <strong>chromosomy to nośniki genów</strong>. To dało podstawę <strong>chromosomalnej teorii dziedziczenia</strong>.</p>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Kluczowa myśl</span>
+    <p>Mejoza to <strong>dwa podziały po jednej replikacji</strong>, które redukują liczbę chromosomów o połowę i <strong>mieszają</strong> informację genetyczną.</p>
+  </div>
+
+  <h3>Dlaczego to ma znaczenie?</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Dziedzina</th><th>Zastosowanie</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Genetyka</strong></td><td>zrozumienie, dlaczego rodzeństwo nie jest identyczne</td></tr>
+        <tr><td><strong>Medycyna</strong></td><td>diagnostyka nondysjunkcji (np. trisomia 21 — zespół Downa)</td></tr>
+        <tr><td><strong>Rozrodczość</strong></td><td>badanie przyczyn niepłodności (błędy mejozy)</td></tr>
+        <tr><td><strong>Hodowla</strong></td><td>planowanie krzyżówek w celu uzyskania pożądanych cech</td></tr>
+        <tr><td><strong>Ewolucja</strong></td><td>źródło zmienności → materiał dla doboru naturalnego</td></tr>
+        <tr><td><strong>Poradnictwo genetyczne</strong></td><td>ocena ryzyka chorób genetycznych u potomstwa</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+1. PYTANIE PRZEWODNIE
+============================================================ -->
+<section class="section" id="pytanie">
+  <div class="part-heading"><span class="part-num">1. Pytanie przewodnie</span></div>
+  <div class="card card-correct">
+    <p style="font-size:1.1rem;font-weight:600;">Jak powstają komórki haploidalne i dlaczego rodzeństwo nie jest identyczne?</p>
+  </div>
+</section>
+
+<!-- ============================================================
+2. CELE + 80/20
+============================================================ -->
+<section class="section" id="cele">
+  <div class="part-heading"><span class="part-num">2. Cele lekcji</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <div class="card card-correct">
+    <span class="card-label">Po tej lekcji umiesz:</span>
+    <ul>
+      <li><strong>wyjaśnić</strong>, że mejoza redukuje <strong>2n → n</strong> (u człowieka 46 → 23),</li>
+      <li><strong>podać</strong>, że komórka haploidalna ma 23 chromosomy,</li>
+      <li><strong>wymienić 3 źródła zmienności genetycznej</strong>,</li>
+      <li>(ambitny) rozróżniać mejozę I (pary chromosomów homologicznych) i II (chromatydy siostrzane) oraz liczyć chromosomy/chromatydy na każdym etapie,</li>
+      <li>(zaawansowany) znać nondysjunkcję, aneuploidię i różnicę oogeneza vs spermatogeneza.</li>
+    </ul>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Zasada 80/20 — co daje 80% efektu (i dlaczego)</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>20% = 80% efektu</th><th>Dlaczego to jest kluczowe</th></tr></thead>
+        <tbody>
+          <tr><td><strong>2n → n (redukcja o połowę)</strong></td><td>Kluczowa cecha mejozy — odróżnia ją od mitozy</td></tr>
+          <tr><td><strong>Komórka haploidalna = 23 chromosomy</strong></td><td>Liczba, którą trzeba znać na pamięć</td></tr>
+          <tr><td><strong>3 źródła zmienności</strong></td><td>Odpowiedź na pytanie: dlaczego rodzeństwo się różni</td></tr>
+          <tr><td><strong>Mejoza I = pary; II = kopie</strong></td><td>Co się rozchodzi — kluczowe dla zrozumienia nondysjunkcji</td></tr>
+          <tr><td><strong>Jedna replikacja, dwa podziały</strong></td><td>Bez tego nie zrozumiesz, dlaczego 2n → n wymaga dwóch etapów</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:6px;"><strong>Dlaczego to wystarczy?</strong> Bo 90% zadań E8 o mejozie sprowadza się do: policz chromosomy/chromatydy → rozróżnij mejozę I i II → wskaż źródła zmienności → rozpoznaj nondysjunkcję.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+3. KOMPAS
+============================================================ -->
+<section class="section" id="kompas">
+  <div class="part-heading"><span class="part-num">3. Kompas</span> <span class="level-badge level-basic">PRZYPOMNIENIE</span></div>
+  <div class="card card-remember">
+    <span class="card-label">Co trzeba wiedzieć wcześniej</span>
+    <ul>
+      <li><strong>L012:</strong> chromosomy homologiczne (para — jeden od matki, jeden od ojca); 46 = 23 pary; chromatydy; centromer.</li>
+      <li><strong>L013:</strong> replikacja DNA (faza S) — po replikacji 1 chromosom = 2 chromatydy.</li>
+      <li><strong>L014:</strong> mitoza — zachowuje liczbę zestawów (2n → 2n); cel: wzrost, regeneracja.</li>
+    </ul>
+    <p style="margin-top:8px;font-size:0.88rem;color:var(--color-text-muted);">Jeśli nie pamiętasz, co to chromosomy homologiczne — wróć do L012, sekcja 5. To fundament mejozy.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+4. ZACZNIJ OD PROBLEMU
+============================================================ -->
+<section class="section" id="problem">
+  <div class="part-heading"><span class="part-num">4. Zacznij od problemu</span></div>
+  <div class="highlight-box">
+    <p><strong>Gdyby gamety miały 46 chromosomów, zygota miałaby 92.</strong> Potem następne pokolenie: 184, 368… Liczba chromosomów <strong>podwajałaby się w każdym pokoleniu</strong>.</p>
+    <p style="margin-top:8px;"><strong>Jak organizm utrzymuje stałą liczbę 46 chromosomów w każdym pokoleniu?</strong></p>
+    <p style="margin-top:8px;">Zapisz hipotezę: ....................................</p>
+    <p style="margin-top:8px;font-size:0.9rem;color:#78350f;">💡 <strong>Podpowiedź:</strong> Coś musi <strong>zmniejszać</strong> liczbę chromosomów o połowę przed zapłodnieniem. To właśnie robi <strong>mejoza</strong> — redukuje 2n → n. Po lekcji wróć do hipotezy i sprawdź, czy była trafna.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+5. ŚCIĄGA
+============================================================ -->
+<section class="section" id="sciaga">
+  <div class="part-heading"><span class="part-num">5. Ściąga</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <h3>5.1. Co to mejoza? (definicja pełna)</h3>
+  <div class="card card-new">
+    <span class="card-label">Definicja</span>
+    <p><strong>Mejoza</strong> to szczególny rodzaj podziału komórkowego, w którym <strong>liczba zestawów chromosomów zmniejsza się o połowę</strong>:</p>
+    <div class="formula-box">2n &nbsp;→&nbsp; n</div>
+    <p>Komórka <strong>diploidalna</strong> (2n) ma dwa zestawy chromosomów: jeden odziedziczony po matce, drugi po ojcu. Komórka <strong>haploidalna</strong> (n) ma tylko jeden zestaw.</p>
+    <p style="margin-top:6px;"><strong>U człowieka:</strong></p>
+    <ul>
+      <li>Komórki ciała są zwykle diploidalne: <strong>2n = 46</strong>, czyli 23 pary chromosomów.</li>
+      <li>Komórki haploidalne mają <strong>n = 23</strong> chromosomy.</li>
+      <li>Podczas zapłodnienia łączą się dwie komórki haploidalne: 23 chromosomy od matki i 23 od ojca.</li>
+      <li>Powstaje <strong>zygota</strong> o liczbie <strong>2n = 46</strong> chromosomów.</li>
+    </ul>
+    <div class="card card-warning" style="margin-top:10px;">
+      <span class="card-label">Ważne — precyzyjne sformułowanie</span>
+      <p>Mejoza <strong>nie zawsze tworzy bezpośrednio gamety</strong>:</p>
+      <ul>
+        <li>U <strong>zwierząt</strong> — prowadzi do powstania <strong>gamet</strong> (plemniki, komórki jajowe).</li>
+        <li>U <strong>roślin</strong> — jej bezpośrednim produktem są zwykle <strong>spory</strong> (dopiero z nich, w drodze mitozy, powstają gamety — patrz sekcja 20).</li>
+      </ul>
+    </div>
+    <p style="margin-top:8px;"><strong>Gdzie zachodzi mejoza u człowieka?</strong><br>W <strong>komórkach rozrodczych</strong> znajdujących się w <strong>gonadach</strong>: w <strong>jądrach</strong> (spermatogeneza) i <strong>jajnikach</strong> (oogeneza).</p>
+  </div>
+
+  <h3>5.2. Czym różni się od mitozy? (jedna wspólna tabela)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>Mitoza (L014)</th><th>Mejoza (L015)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Cel</strong></td><td>wzrost, regeneracja, naprawa</td><td>powstawanie komórek haploidalnych (→ gamety u zwierząt, spory u roślin)</td></tr>
+        <tr><td><strong>Liczba podziałów</strong></td><td>1</td><td><strong>2</strong></td></tr>
+        <tr><td><strong>Liczba komórek potomnych</strong></td><td>2</td><td>4</td></tr>
+        <tr><td><strong>Liczba zestawów chromosomów</strong></td><td><strong>taka sama</strong> (2n → 2n)</td><td><strong>redukcja</strong> (2n → n)</td></tr>
+        <tr><td><strong>Rekombinacja chromosomowa</strong></td><td>nie</td><td><strong>tak</strong> (w profazie I)</td></tr>
+        <tr><td><strong>Zmienność</strong></td><td>zachowuje informację komórki macierzystej (mogą powstać sporadyczne mutacje wskutek błędów kopiowania DNA)</td><td><strong>generuje zmienność</strong> (rekombinacja + segregacja)</td></tr>
+        <tr><td><strong>Gdzie zachodzi</strong></td><td>prawie wszystkie komórki ciała</td><td>gonady / tkanki rozrodcze</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>5.3. Jedna replikacja, dwa podziały — dlaczego?</h3>
+  <div class="card card-remember">
+    <p><strong>Kluczowa zasada:</strong></p>
+    <ol>
+      <li><strong>Przed mejozą</strong> zachodzi <strong>jedna</strong> replikacja DNA (faza S, L013). Po niej: 46 chromosomów = 92 chromatydy.</li>
+      <li>Potem <strong>dwa podziały</strong>:
+        <ul>
+          <li><strong>Mejoza I</strong> — rozdzielają się <strong>całe pary chromosomów homologicznych</strong>.</li>
+          <li><strong>Mejoza II</strong> — rozdzielają się <strong>chromatydy siostrzane</strong>.</li>
+        </ul>
+      </li>
+    </ol>
+    <p style="margin-top:6px;"><strong>Najkrócej:</strong> pierwszy podział rozdziela <strong>pary</strong>, drugi — <strong>kopie chromosomów</strong>.</p>
+    <p style="font-size:0.85rem;color:var(--color-text-muted);">(Pełne uzasadnienie — sekcja 6.3.)</p>
+  </div>
+
+  <h3>5.4. Skąd różnorodność? Trzy źródła</h3>
+  <div class="card card-correct">
+    <ol>
+      <li><strong>Rekombinacja chromosomowa</strong> (crossing-over) — wymiana fragmentów chromatyd <strong>niesiostrzanych</strong> między homologami, zachodzi w profazie I mejozy.</li>
+      <li><strong>Niezależna segregacja chromosomów</strong> — każda para chromosomów homologicznych rozchodzi się do komórek potomnych niezależnie od innych par.</li>
+      <li><strong>Losowe zapłodnienie</strong> — dowolny plemnik może połączyć się z dowolną komórką jajową.</li>
+    </ol>
+    <p style="margin-top:6px;"><strong>Ilościowo (u człowieka, bez rekombinacji):</strong></p>
+    <ul>
+      <li>Liczba możliwych zestawów chromosomów w jednej komórce haploidalnej: <strong>2²³ = 8 388 608</strong>.</li>
+      <li>Jeśli uwzględnimy oboje rodziców: <strong>8 388 608 × 8 388 608 ≈ 7 × 10¹³</strong> (ok. <strong>70 bilionów</strong>) potencjalnych kombinacji zygoty.</li>
+    </ul>
+    <p>To <strong>bardzo duża liczba</strong>, ale <strong>nie „nieskończona"</strong> — możliwych kombinacji jest skończenie wiele (choć ogromnie dużo).</p>
+  </div>
+
+  <h3>5.5. Liczby u człowieka + zasada liczenia</h3>
+  <div class="card card-hint">
+    <p><strong>Zasada liczenia:</strong> chromosom liczymy według liczby <strong>centromerów</strong>, a nie liczby chromatyd. Chromosom po replikacji to <strong>nadal jeden chromosom</strong>, choć składa się z dwóch chromatyd siostrzanych.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Etap</th><th>Chromosomy (centromery)</th><th>Chromatydy</th></tr></thead>
+      <tbody>
+        <tr><td>Przed replikacją (G1)</td><td>46</td><td>46</td></tr>
+        <tr><td>Po replikacji, przed mejozą I</td><td>46</td><td>92</td></tr>
+        <tr><td>Po mejozie I (2 komórki)</td><td>23 w każdej</td><td>46 w każdej</td></tr>
+        <tr><td>Po mejozie II (4 komórki)</td><td>23 w każdej</td><td>23 w każdej</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Kontrastowy przykład: 2n = 8</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Etap</th><th>Chromosomy</th><th>Chromatydy</th></tr></thead>
+      <tbody>
+        <tr><td>Po replikacji</td><td>8</td><td>16</td></tr>
+        <tr><td>Po mejozie I (2 komórki)</td><td>4 w każdej</td><td>8 w każdej</td></tr>
+        <tr><td>Po mejozie II (4 komórki)</td><td>4 w każdej</td><td>4 w każdej</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>5.6. Mnemotechniki</h3>
+  <div class="card card-hint">
+    <ul>
+      <li><strong>2n → mejoza → n</strong> — redukcja</li>
+      <li><strong>Mejoza I — pary; II — kopie</strong> — co się rozchodzi</li>
+      <li><strong>Rekombinacja miesza</strong> — zmienność</li>
+      <li><strong>23 + 23 = 46</strong> — komórki haploidalne + zygota</li>
+      <li><strong>Jedna replikacja, dwa podziały</strong> — kluczowa różnica od mitozy</li>
+    </ul>
+  </div>
+
+  <h3>5.7. „Cztery komórki haploidalne" — precyzyjnie</h3>
+  <div class="card card-warning">
+    <p><strong>Mejoza zwykle daje cztery komórki haploidalne.</strong></p>
+    <ul>
+      <li>W <strong>spermatogenezie</strong> rozwijają się z nich <strong>cztery plemniki</strong>.</li>
+      <li>W <strong>oogenezie</strong> powstaje <strong>jedna funkcjonalna komórka jajowa</strong> i <strong>ciałka kierunkowe</strong> — otrzymują one niewiele cytoplazmy i zwykle zanikają.</li>
+    </ul>
+    <p>To jest <strong>ważne rozróżnienie</strong> — „mejoza daje cztery gamety" to uproszczenie: u kobiety funkcjonalna jest tylko jedna.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+6. WYJAŚNIENIE OD PODSTAW
+============================================================ -->
+<section class="section" id="wyjasnienie">
+  <div class="part-heading"><span class="part-num">6. Wyjaśnienie od podstaw</span></div>
+
+  <h3>6.1. Łańcuch procesu</h3>
+  <div class="card card-gray">
+    <div class="step-flow">
+2n (komórka diploidalna, 46)
+    ↓ REPLIKACJA (faza S, L013)
+46 chromosomów, 92 chromatydy
+    ↓ MEJOZA I (rozdział par chromosomów homologicznych)
+2 komórki z 23 chromosomami (każdy z 2 chromatydami)
+    ↓ MEJOZA II (rozdział chromatyd siostrzanych)
+4 komórki haploidalne (n = 23)
+    ↓ ZAPŁODNIENIE
+2n (zygota, 46)</div>
+  </div>
+
+  <h3>6.2. Mejoza I — co się dzieje?</h3>
+  <div class="card card-correct">
+    <ol>
+      <li><strong>Profaza I:</strong> chromosomy homologiczne łączą się w pary — <strong>synapsa chromosomów homologicznych</strong>. W tym momencie zachodzi <strong>rekombinacja chromosomowa</strong> (crossing-over) — wymiana fragmentów chromatyd niesiostrzanych. Miejsca widocznego skrzyżowania chromatyd nazywamy <strong>chiazmami</strong>.</li>
+      <li><strong>Metafaza I:</strong> pary homologów ustawiają się w płaszczyźnie równikowej.</li>
+      <li><strong>Anafaza I:</strong> całe chromosomy (każdy z 2 chromatydami) rozchodzą się do biegunów.</li>
+      <li><strong>Telofaza I + cytokineza:</strong> powstają 2 komórki haploidalne (n = 23), każda z chromosomami mającymi 2 chromatydy.</li>
+    </ol>
+    <p><strong>Kluczowe:</strong> W mejozie I rozchodzą się <strong>całe chromosomy</strong> (pary homologów), a nie chromatydy.</p>
+  </div>
+
+  <h3>6.3. Dlaczego są dwa podziały?</h3>
+  <div class="card card-new">
+    <span class="card-label">Klarowne wyjaśnienie</span>
+    <p>Przed mejozą DNA zostaje skopiowane, dlatego każdy chromosom składa się z <strong>dwóch chromatyd siostrzanych</strong>.</p>
+    <p>W <strong>mejozie I</strong> rozdzielają się całe pary chromosomów homologicznych. To właśnie zmniejsza liczbę zestawów chromosomów z <strong>2n do n</strong>.</p>
+    <p>W <strong>mejozie II</strong> rozdzielają się chromatydy siostrzane. Dzięki temu każda końcowa komórka dostaje po jednej kopii każdego chromosomu.</p>
+    <p style="margin-top:6px;"><strong>Najkrócej:</strong> pierwszy podział rozdziela <strong>pary</strong>, drugi — <strong>kopie chromosomów</strong>.</p>
+  </div>
+
+  <h3>6.4. Mejoza II — co się dzieje?</h3>
+  <div class="card card-correct">
+    <ol>
+      <li><strong>Profaza II:</strong> chromosomy (już bez pary) kondensują się.</li>
+      <li><strong>Metafaza II:</strong> chromosomy ustawiają się pojedynczo w płaszczyźnie równikowej.</li>
+      <li><strong>Anafaza II:</strong> chromatydy siostrzane rozchodzą się do biegunów.</li>
+      <li><strong>Telofaza II + cytokineza:</strong> powstają 4 komórki haploidalne (n = 23).</li>
+    </ol>
+    <p><strong>Kluczowe:</strong> Mejoza II jest <strong>podobna do mitozy</strong> — ale zachodzi w komórce haploidalnej.</p>
+  </div>
+
+  <h3>6.5. 6A. Dlaczego?</h3>
+  <div class="card card-hint">
+    <ol>
+      <li><strong>Dlaczego redukcja konieczna?</strong> Bez niej liczba chromosomów podwajałaby się w każdym pokoleniu.</li>
+      <li><strong>Dlaczego dwa podziały po jednej replikacji?</strong> Mejoza I oddziela pary homologów (redukcja); mejoza II oddziela chromatydy (utrzymanie n).</li>
+      <li><strong>Dlaczego rekombinacja zwiększa zmienność?</strong> Homologi wymieniają fragmenty chromatyd niesiostrzanych → chromosom potomny ma nowe kombinacje alleli.</li>
+      <li><strong>Dlaczego „4 gamety" to uproszczenie?</strong> Mejoza daje 4 komórki haploidalne — ale w oogenezie tylko jedna jest funkcjonalna.</li>
+    </ol>
+  </div>
+
+  <h3>6.6. 6B. Krok po kroku (człowiek)</h3>
+  <div class="card card-remember">
+    <ol>
+      <li><strong>Start:</strong> komórka 2n = 46 → <strong>replikacja</strong> (L013) → 46 chromosomów, 92 chromatydy.</li>
+      <li><strong>Mejoza I:</strong> pary homologów ustawiają się i rozchodzą → 2 komórki z <strong>23 chromosomami</strong> (każdy z 2 chromatydami).</li>
+      <li><strong>Mejoza II:</strong> chromatydy siostrzane się rozchodzą → 4 komórki z <strong>23 chromosomami</strong> (23 chromatydy).</li>
+    </ol>
+  </div>
+
+  <h3>6.7. 6C. Przykład prowadzony</h3>
+  <div class="card card-correct">
+    <p><strong>Dane:</strong> Człowiek, 2n = 46.</p>
+    <p><strong>Pytanie:</strong> Ile chromosomów i chromatyd w komórce po mejozie I?</p>
+    <p><strong>Rozumowanie:</strong></p>
+    <ol>
+      <li>Przed mejozą: 46 chromosomów, 92 chromatydy.</li>
+      <li>Mejoza I: pary homologów się rozchodzą → 2 komórki.</li>
+      <li>Każda komórka ma 23 chromosomy.</li>
+      <li>Każdy chromosom nadal ma 2 chromatydy → 23 × 2 = 46 chromatyd.</li>
+    </ol>
+    <p><strong>Odpowiedź:</strong> 2 komórki, każda z 23 chromosomami i 46 chromatydami.</p>
+    <p style="margin-top:6px;"><strong>Spróbuj sam:</strong> 2n = 16 → komórka haploidalna n = ? <strong>Odpowiedź:</strong> n = 8.</p>
+  </div>
+
+  <h3>6.8. 6D. Powiązanie z innymi lekcjami</h3>
+  <div class="card card-gray">
+    <div class="step-flow">L012 (chromosom, homologi) → L013 (replikacja) → L014 (mitoza)
+  → L015 (mejoza) → L016 (nowotwory) → L017 (dziedziczenie)</div>
+  </div>
+</section>
+
+<!-- ============================================================
+7. DLACZEGO RODZEŃSTWO SIĘ RÓŻNI
+============================================================ -->
+<section class="section" id="roznorodnosc">
+  <div class="part-heading"><span class="part-num">7. Dlaczego rodzeństwo się różni?</span> <span class="level-badge level-new">KLUCZOWA RAMKA</span></div>
+
+  <div class="card card-new">
+    <span class="card-label">Trzy mechanizmy</span>
+    <p>Rodzeństwo ma tych samych rodziców, ale zwykle <strong>nie otrzymuje dokładnie tego samego zestawu alleli</strong>. Wynika to z <strong>trzech mechanizmów</strong>:</p>
+    <ol>
+      <li><strong>Rekombinacja chromosomowa</strong> — w profazie I chromosomy homologiczne wymieniają fragmenty DNA (chromatyd niesiostrzanych), tworząc nowe układy alleli na chromosomach.</li>
+      <li><strong>Niezależna segregacja chromosomów</strong> — każda para chromosomów homologicznych rozchodzi się do komórek potomnych niezależnie od innych par.</li>
+      <li><strong>Losowe zapłodnienie</strong> — dowolny plemnik może połączyć się z dowolną komórką jajową.</li>
+    </ol>
+  </div>
+
+  <h3>Ilościowo (bez rekombinacji)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Liczba par chromosomów</th><th>Liczba możliwych zestawów chromosomów w komórce haploidalnej</th></tr></thead>
+      <tbody>
+        <tr><td>1 para</td><td>2</td></tr>
+        <tr><td>2 pary</td><td>4</td></tr>
+        <tr><td>3 pary</td><td>8</td></tr>
+        <tr><td>23 pary (człowiek)</td><td><strong>2²³ = 8 388 608</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-correct">
+    <p>Jeśli połączymy możliwości obu rodziców: 8 388 608 × 8 388 608 ≈ <strong>7 × 10¹³</strong> (ok. <strong>70 bilionów</strong>) potencjalnych kombinacji — <strong>jeszcze przed uwzględnieniem rekombinacji chromosomowej</strong>.</p>
+    <p><strong>Wniosek:</strong> każdy człowiek (poza bliźniakami jednojajowymi) jest <strong>genetycznie unikalny</strong>, choć liczba możliwych kombinacji jest <strong>skończona</strong> (bardzo duża, ale nie „nieskończona").</p>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">O bliźniętach jednojajowych</span>
+    <p>Zwykle mają <strong>niemal identyczny genom jądrowy</strong> (pochodzą z jednej zygoty), lecz z czasem mogą pojawić się między nimi <strong>drobne różnice</strong> wynikające z mutacji somatycznych i zmian epigenetycznych.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+8. POZIOM AMBITNY
+============================================================ -->
+<section class="section" id="ambitny">
+  <div class="part-heading"><span class="part-num">8. Poziom ambitny</span> <span class="level-badge level-ambitious">MASTER</span></div>
+
+  <h3>8.1. Mejoza I vs II</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>Mejoza I</th><th>Mejoza II</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Co się rozchodzi?</strong></td><td><strong>pary homologów</strong></td><td><strong>chromatydy siostrzane</strong></td></tr>
+        <tr><td><strong>Rekombinacja chromosomowa</strong></td><td><strong>tak</strong> (profaza I)</td><td>nie</td></tr>
+        <tr><td><strong>Redukcja 2n → n</strong></td><td><strong>tak</strong></td><td>nie (utrzymanie n)</td></tr>
+        <tr><td><strong>Liczba chromosomów (człowiek)</strong></td><td>46 → 23</td><td>23 → 23</td></tr>
+        <tr><td><strong>Podobieństwo do mitozy?</strong></td><td>nie (unikalny)</td><td><strong>tak</strong> (jak „mini-mitoza")</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Pułapka:</strong> „W mejozie rozchodzą się chromatydy" — <strong>nie od razu</strong>. Najpierw pary homologów (I), potem chromatydy (II).</p>
+
+  <h3>8.2. Precyzyjne rozróżnienie: komórki haploidalne ≠ gamety</h3>
+  <div class="card card-ambitious">
+    <p><strong>Mejoza daje 4 komórki haploidalne.</strong> To, ile z nich staje się <strong>funkcjonalnymi gametami</strong>, zależy od organizmu i płci:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Organizm</th><th>Produkt mejozy</th><th>Ile funkcjonalnych?</th></tr></thead>
+        <tbody>
+          <tr><td>Mężczyzna (spermatogeneza)</td><td>4 komórki haploidalne</td><td><strong>4 plemniki</strong></td></tr>
+          <tr><td>Kobieta (oogeneza)</td><td>4 komórki haploidalne</td><td><strong>1 komórka jajowa</strong> + 3 ciałka kierunkowe</td></tr>
+          <tr><td>Roślina</td><td>4 spory</td><td>(spory → gametofit → mitoza → gamety)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3>8.3. Porównanie mitoza ↔ mejoza — uzupełnienie</h3>
+  <div class="card card-hint">
+    <p>Mitoza <strong>co do zasady</strong> zachowuje informację genetyczną komórki macierzystej. <strong>Sporadyczne mutacje</strong> mogą jednak powstać wskutek błędów kopiowania DNA — dlatego komórki potomne mitozy <strong>nie zawsze</strong> są w 100% identyczne.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+9. POZIOM ZAAWANSOWANY
+============================================================ -->
+<section class="section" id="zaawansowany">
+  <div class="part-heading"><span class="part-num">9. Poziom zaawansowany</span> <span class="level-badge level-ambitious">ZAAWANSOWANY</span></div>
+
+  <h3>9.1. Nondysjunkcja — tabela zadań</h3>
+  <div class="card card-ambitious">
+    <p><strong>Nondysjunkcja</strong> = błąd rozchodzenia chromosomów w mejozie. Pary homologów (lub chromatydy siostrzane) <strong>nie rozchodzą się prawidłowo</strong> — trafiają do tej samej komórki potomnej.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Błąd</th><th>Co nie rozchodzi się prawidłowo?</th><th>Produkty mejozy</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Nondysjunkcja w mejozie I</strong></td><td>pary chromosomów homologicznych</td><td>2 komórki z <strong>n+1</strong> i 2 z <strong>n−1</strong></td></tr>
+          <tr><td><strong>Nondysjunkcja w mejozie II</strong></td><td>chromatydy siostrzane</td><td>2 komórki <strong>prawidłowe (n)</strong>, 1 z <strong>n+1</strong>, 1 z <strong>n−1</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Po zapłodnieniu nieprawidłowej komórki haploidalnej przez prawidłową może powstać zygota z <strong>trisomią (2n+1)</strong> albo <strong>monosomią (2n−1)</strong>. Przykładem trisomii jest <strong>trisomia chromosomu 21</strong>, związana z zespołem Downa.</p>
+  </div>
+
+  <h3>9.2. Ryzyko nondysjunkcji rośnie z wiekiem matki</h3>
+  <div class="card card-ambitious">
+    <p>Komórki jajowe są <strong>zatrzymane w profazie I</strong> od życia płodowego kobiety aż do owulacji. Przez dziesięciolecia mogą gromadzić uszkodzenia, co zwiększa ryzyko błędów rozchodzenia chromosomów.</p>
+  </div>
+
+  <h3>9.3. Oogeneza vs spermatogeneza</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>Spermatogeneza</th><th>Oogeneza</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Produkt końcowy</strong></td><td>4 plemniki</td><td>1 komórka jajowa + ciałka kierunkowe</td></tr>
+        <tr><td><strong>Podział cytoplazmy</strong></td><td>równy</td><td>nierówny (jajowa zbiera zasoby)</td></tr>
+        <tr><td><strong>Czas</strong></td><td>ciągła od dojrzewania</td><td>start w życiu płodowym; dokończenie przy owulacji/zapłodnieniu</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>9.4. Chromosomy płci — jak się rozchodzą?</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li><strong>Kobieta (XX):</strong> oba chromosomy X są homologiczne → rozchodzą się w mejozie I → każda komórka jajowa ma 1 X.</li>
+      <li><strong>Mężczyzna (XY):</strong> X i Y mają regiony częściowo homologiczne → rozchodzą się w mejozie I → <strong>50% plemników ma X, 50% ma Y</strong>.</li>
+    </ul>
+    <p><strong>Reguła:</strong> płeć dziecka zależy od plemnika (X lub Y). Komórka jajowa zawsze ma X.</p>
+  </div>
+
+  <h3>9.5. Mejoza u roślin — przemiana pokoleń</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li>U roślin mejoza prowadzi do powstania <strong>spor</strong> (nie gamet).</li>
+      <li><strong>Sporofit (2n)</strong> → mejoza → <strong>spory (n)</strong> → <strong>gametofit (n)</strong> → mitoza → <strong>gamety (n)</strong> → zapłodnienie → <strong>sporofit (2n)</strong>.</li>
+      <li>U zwierząt: <strong>organizm dorosły (2n)</strong> → mejoza → <strong>gamety (n)</strong> → zapłodnienie → <strong>zygota (2n)</strong>.</li>
+    </ul>
+  </div>
+
+  <h3>9.6. Choroby związane z nondysjunkcją</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Choroba</th><th>Mechanizm</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Trisomia 21 (zespół Downa)</strong></td><td>nondysjunkcja chromosomu 21</td></tr>
+        <tr><td><strong>Trisomia 18 (Edwards)</strong></td><td>nondysjunkcja chromosomu 18</td></tr>
+        <tr><td><strong>Trisomia 13 (Patau)</strong></td><td>nondysjunkcja chromosomu 13</td></tr>
+        <tr><td><strong>Zespół Turnera (45,X)</strong></td><td>brak jednego chromosomu X</td></tr>
+        <tr><td><strong>Zespół Klinefeltera (47,XXY)</strong></td><td>dodatkowy chromosom X</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Szczegóły — w L090.</strong></p>
+</section>
+
+<!-- ============================================================
+10. KLINIKA BŁĘDÓW
+============================================================ -->
+<section class="section" id="klinika">
+  <div class="part-heading"><span class="part-num">10. Klinika błędów</span> <span class="level-badge level-trap">PUŁAPKI</span></div>
+
+  <h3>10.1. Tabela błędów</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Błąd</th><th>Poprawa</th><th>Dlaczego?</th></tr></thead>
+      <tbody>
+        <tr class="error-row"><td>„Mejoza zawsze tworzy gamety"</td><td>mejoza tworzy <strong>komórki haploidalne</strong>; u zwierząt → gamety, u roślin → spory</td><td>precyzja definicji</td></tr>
+        <tr class="error-row"><td>Gameta ma 46 chromosomów</td><td>komórka haploidalna ma <strong>23</strong></td><td>redukcja 2n → n</td></tr>
+        <tr class="error-row"><td>Mejoza = mitoza</td><td>różne cele</td><td>redukcja vs zachowanie 2n</td></tr>
+        <tr class="error-row"><td>Rekombinacja w mejozie II</td><td>w <strong>profazie I</strong></td><td>tylko tam są pary homologów</td></tr>
+        <tr class="error-row"><td>„Po mejozie I jest 23 chromatydy"</td><td>23 chromosomy × 2 = <strong>46 chromatyd</strong></td><td>centromer = 1 chromosom</td></tr>
+        <tr class="error-row"><td>Mejoza daje 2 komórki</td><td><strong>4 komórki haploidalne</strong></td><td>dwa podziały</td></tr>
+        <tr class="error-row"><td>Rekombinacja <strong>zmniejsza</strong> zmienność</td><td><strong>zwiększa</strong></td><td>wymiana fragmentów → nowe kombinacje</td></tr>
+        <tr class="error-row"><td>Nondysjunkcja = normalny etap</td><td>to <strong>błąd</strong></td><td>prowadzi do aneuploidii</td></tr>
+        <tr class="error-row"><td>Bliźnięta jednojajowe = identyczne DNA</td><td><strong>niemal identyczny genom jądrowy</strong> (drobne różnice epigenetyczne/mutacje somatyczne)</td><td>precyzja</td></tr>
+        <tr class="error-row"><td>„Rekombinacja zachodzi 1–2 razy na parę"</td><td><strong>zwykle zachodzi w wielu miejscach genomu</strong>; liczba zależy od chromosomu i organizmu</td><td>unikać nieuzasadnionych liczb</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>10.2. Klinika 2.0 — pięć pełnych przykładów</h3>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 1 — „Mejoza zawsze daje cztery gamety"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Mejoza zawsze daje cztery gamety."</li>
+      <li><strong>Znajdź:</strong> Pomylenie komórek haploidalnych z gametami.</li>
+      <li><strong>Popraw:</strong> Mejoza daje <strong>cztery komórki haploidalne</strong>; u mężczyzny → 4 plemniki, u kobiety → 1 komórka jajowa + ciałka kierunkowe.</li>
+      <li><strong>Reguła:</strong> Produkt mejozy ≠ zawsze liczba funkcjonalnych gamet.</li>
+      <li><strong>Dlaczego:</strong> W oogenezie cytoplazma dzielona nierówno, ciałka kierunkowe zanikają.</li>
+      <li><strong>Pułapka:</strong> „4 komórki = 4 gamety" — tylko w spermatogenezie.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 2 — „Mejoza to mitoza w gonadach"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Mejoza to mitoza, która zachodzi w jądrach/jajnikach."</li>
+      <li><strong>Znajdź:</strong> Pomylenie celu i wyniku liczbowego.</li>
+      <li><strong>Popraw:</strong> Mitoza: 2n → 2n. Mejoza: 2n → n.</li>
+      <li><strong>Reguła:</strong> Liczba zestawów po podziale = cel procesu.</li>
+      <li><strong>Dlaczego:</strong> Mitoza służy wzrostowi; mejoza — wytworzeniu komórek haploidalnych.</li>
+      <li><strong>Podobne:</strong> Mitoza: 1 podział. Mejoza: 2 podziały.</li>
+      <li><strong>Pułapka:</strong> „Oba dzielą komórkę" — ale w różnym celu.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 3 — „Gameta ma tyle samo chromosomów co komórka ciała"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Gameta ma 46 chromosomów."</li>
+      <li><strong>Znajdź:</strong> Mylenie n z 2n.</li>
+      <li><strong>Popraw:</strong> Komórka haploidalna ma <strong>n = 23</strong> chromosomy.</li>
+      <li><strong>Reguła:</strong> Mejoza redukuje 2n → n.</li>
+      <li><strong>Podobne:</strong> Zygota ma 2n = 46.</li>
+      <li><strong>Pułapka:</strong> „Gameta = komórka ciała" — nie, to komórka haploidalna.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 4 — „Rekombinacja chromosomowa w mejozie II"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Rekombinacja chromosomowa zachodzi w mejozie II."</li>
+      <li><strong>Znajdź:</strong> Zła faza.</li>
+      <li><strong>Popraw:</strong> Rekombinacja zachodzi w <strong>profazie mejozy I</strong>.</li>
+      <li><strong>Reguła:</strong> Wymaga <strong>par homologów</strong> — a te są tylko w mejozie I.</li>
+      <li><strong>Dlaczego:</strong> W mejozie II nie ma już par.</li>
+      <li><strong>Pułapka:</strong> „Rekombinacja w II" — niemożliwe, bo nie ma par.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 5 — „Nondysjunkcja to normalny proces"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Nondysjunkcja to normalny etap mejozy."</li>
+      <li><strong>Znajdź:</strong> Pomylenie błędu z procesem.</li>
+      <li><strong>Popraw:</strong> Nondysjunkcja to <strong>błąd</strong> rozchodzenia chromosomów.</li>
+      <li><strong>Reguła:</strong> Prawidłowo pary homologów (lub chromatydy) rozchodzą się po równo.</li>
+      <li><strong>Dlaczego:</strong> Nondysjunkcja prowadzi do aneuploidii (np. trisomia 21).</li>
+      <li><strong>Pułapka:</strong> „Czasem się zdarza" ≠ „normalny etap".</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+11. OBSERWACJA / MODEL
+============================================================ -->
+<section class="section" id="obserwacja">
+  <div class="part-heading"><span class="part-num">11. Obserwacja / model</span></div>
+  <div class="card card-gray">
+    <pre style="font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.5;white-space:pre-wrap;">Problem: Jak z 46 chromosomów powstają komórki z 23?
+Hipoteza: Przez redukcyjny podział (mejoza).
+Materiał: schemat mejozy I i II.
+Obserwacja: po mejozie I liczba chromosomów spada o połowę.
+Wniosek: komórki haploidalne; zapłodnienie przywraca 2n.
+Ograniczenia: schemat nie pokazuje wszystkich miejsc rekombinacji.
+BHP: brak.</pre>
+    <p style="margin-top:8px;font-style:italic;color:var(--color-text-muted);">Schemat mejozy <strong>nie jest</strong> doświadczeniem — to model.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Typ</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Obserwacja</strong></td><td>preparat mikroskopowy mejozy (np. w pylnikach cebuli), liczenie komórek</td></tr>
+        <tr><td><strong>Model</strong></td><td>schemat mejozy I i II, diagram rekombinacji chromosomowej</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+12. ĆWICZENIA
+============================================================ -->
+<section class="section" id="cwiczenia">
+  <div class="part-heading"><span class="part-num">12. Ćwiczenia (12A–12D)</span> <span class="level-badge level-training">TRENING</span></div>
+
+  <h3>12A. Mini-check (5 pytań)</h3>
+  <div class="exercise">
+    <ol>
+      <li>Mejoza (2n → ?)?</li>
+      <li>Ile chromosomów w komórce haploidalnej człowieka?</li>
+      <li>Co rozchodzi się w mejozie I?</li>
+      <li>Podaj 2 źródła zmienności.</li>
+      <li>Dlaczego „4 gamety" to uproszczenie?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12a')">Pokaż odpowiedzi</button>
+    <div id="ans-12a" class="answer-content">
+      <ol>
+        <li>2n → n.</li>
+        <li>23 chromosomy.</li>
+        <li>Pary chromosomów homologicznych.</li>
+        <li>Rekombinacja chromosomowa, niezależna segregacja, losowe zapłodnienie.</li>
+        <li>Bo u kobiety powstaje tylko 1 funkcjonalna komórka jajowa + ciałka kierunkowe.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>12B. Ćwiczenie prowadzone</h3>
+  <div class="exercise">
+    <p><strong>Dane:</strong> Człowiek, 2n = 46.</p>
+    <p><strong>Krok 1.</strong> Po replikacji: 46 chromosomów, 92 chromatydy.</p>
+    <p><strong>Krok 2.</strong> Po mejozie I: 2 komórki, każda z 23 chromosomami (46 chromatyd).</p>
+    <p><strong>Krok 3.</strong> Po mejozie II: 4 komórki, każda z 23 chromosomami (23 chromatydy).</p>
+    <p><strong>Krok 4.</strong> Komórka haploidalna: n = 23.</p>
+    <p><strong>Spróbuj sam:</strong> 2n = 16 → n = ?</p>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12b')">Pokaż odpowiedź</button>
+    <div id="ans-12b" class="answer-content">
+      <p>2n = 16 → n = <strong>8</strong>.</p>
+    </div>
+  </div>
+
+  <h3>12C. Ćwiczenia samodzielne</h3>
+
+  <h4>A. Podstawa <span class="level-badge level-basic">A</span></h4>
+  <div class="exercise">
+    <ol>
+      <li>Co to mejoza?</li>
+      <li>Ile chromosomów w komórce haploidalnej człowieka?</li>
+      <li>Czym różni się n od 2n?</li>
+      <li>Podaj 2 źródła zmienności.</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12c-a')">Pokaż odpowiedzi</button>
+    <div id="ans-12c-a" class="answer-content">
+      <ol>
+        <li>Podział redukcyjny (2n → n), prowadzący do powstania komórek haploidalnych.</li>
+        <li>23 chromosomy (n).</li>
+        <li>n = haploidalna (połowa), 2n = diploidalna (pełny zestaw).</li>
+        <li>Rekombinacja chromosomowa, niezależna segregacja.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h4>B. Trening <span class="level-badge level-training">B</span></h4>
+  <div class="exercise">
+    <ol start="5">
+      <li>Popraw: „Mejoza daje 2n".</li>
+      <li>Dlaczego rodzeństwo się różni?</li>
+      <li>Co się dzieje po zapłodnieniu?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12c-b')">Pokaż odpowiedzi</button>
+    <div id="ans-12c-b" class="answer-content">
+      <ol start="5">
+        <li>Mejoza daje <strong>n</strong> (2n → n), nie 2n.</li>
+        <li>Trzy mechanizmy zmienności (rekombinacja, segregacja, losowe zapłodnienie).</li>
+        <li>Powstaje zygota 2n (23 + 23 = 46).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h4>C. Ambitne <span class="level-badge level-ambitious">C</span></h4>
+  <div class="exercise">
+    <ol start="8">
+      <li>Mejoza I vs II — co się rozchodzi?</li>
+      <li>Jak działa rekombinacja chromosomowa?</li>
+      <li>Uzasadnij: 2n = 46 → n = 23.</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12c-c')">Pokaż odpowiedzi</button>
+    <div id="ans-12c-c" class="answer-content">
+      <ol start="8">
+        <li>Mejoza I — pary homologów. Mejoza II — chromatydy siostrzane.</li>
+        <li>Rekombinacja = wymiana fragmentów chromatyd niesiostrzanych w profazie I → nowe kombinacje alleli.</li>
+        <li>Redukcja: 46 → 23 (połowa).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h4>D. Zaawansowane <span class="level-badge level-ambitious">D</span></h4>
+  <div class="exercise">
+    <ol start="11">
+      <li>Co to nondysjunkcja?</li>
+      <li>Dlaczego „4 gamety" to uproszczenie?</li>
+      <li>Nondysjunkcja I vs II — różnica w produktach?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12c-d')">Pokaż odpowiedzi</button>
+    <div id="ans-12c-d" class="answer-content">
+      <ol start="11">
+        <li>Błąd rozchodzenia chromosomów w mejozie → komórka z n+1 lub n−1 → zygota 2n±1.</li>
+        <li>U kobiety tylko 1 komórka jajowa jest funkcjonalna; pozostałe 3 to ciałka kierunkowe.</li>
+        <li><strong>Nondysjunkcja I:</strong> pary homologów nie rozchodzą się → wszystkie 4 komórki nieprawidłowe (2 z n+1, 2 z n−1). <strong>Nondysjunkcja II:</strong> chromatydy nie rozchodzą się → 2 prawidłowe (n), 1 z n+1, 1 z n−1.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>12D. PROBLEM / THINK <span class="level-badge level-ambitious">KONKURS</span></h3>
+  <div class="exercise">
+    <p>Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Podaj <strong>3 mechanizmy</strong> i wyjaśnij każdy.</p>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12d')">Pokaż odpowiedź</button>
+    <div id="ans-12d" class="answer-content">
+      <p><strong>Trzy mechanizmy zmienności:</strong></p>
+      <ol>
+        <li><strong>Rekombinacja chromosomowa</strong> — wymiana fragmentów chromatyd niesiostrzanych w profazie I → nowe kombinacje alleli na chromosomach.</li>
+        <li><strong>Niezależna segregacja chromosomów</strong> — losowe rozchodzenie się 23 par homologów → 2²³ ≈ 8,4 mln możliwych zestawów chromosomów w komórce haploidalnej.</li>
+        <li><strong>Losowe zapłodnienie</strong> przy zapłodnieniu → niemal nieskończona liczba kombinacji genów w zygocie.</li>
+      </ol>
+      <p><strong>Wniosek:</strong> Każdy człowiek (poza bliźniakami jednojajowymi) jest genetycznie unikalny, choć liczba możliwych kombinacji jest <strong>skończona</strong> (bardzo duża).</p>
+    </div>
+  </div>
+
+  <h3>Drabinka trudności</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Poziom</th><th>Zadanie</th></tr></thead>
+      <tbody>
+        <tr><td>ODTWÓRZ</td><td>Ile chromosomów w komórce haploidalnej człowieka?</td></tr>
+        <tr><td>ZASTOSUJ</td><td>2n = 46 → ile po mejozie I?</td></tr>
+        <tr><td>WYJAŚNIJ</td><td>Dlaczego bez mejozy liczba chromosomów by rosła?</td></tr>
+        <tr><td>ODKRYJ</td><td>Co rozchodzi się w mejozie I, a co w II?</td></tr>
+        <tr><td>POŁĄCZ</td><td>Połącz 3 mechanizmy zmienności z tym, że rodzeństwo nie jest identyczne.</td></tr>
+        <tr><td>ZAKWESTIONUJ</td><td>Czy z faktu „4 komórki haploidalne" wynika „4 funkcjonalne gamety u kobiety"?</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+13. OCENIANIE
+============================================================ -->
+<section class="section" id="ocenianie">
+  <div class="part-heading"><span class="part-num">13. Sposób oceniania</span></div>
+  <div class="card card-gray">
+    <ul>
+      <li><strong>Podstawa:</strong> 1 pkt.</li>
+      <li><strong>Trening:</strong> 1 pkt za wynik + 1 pkt za uzasadnienie.</li>
+      <li><strong>Ambitne:</strong> 2 pkt.</li>
+      <li><strong>Zaawansowane:</strong> 3 pkt.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+14. FISZKI
+============================================================ -->
+<section class="section" id="fiszki">
+  <div class="part-heading"><span class="part-num">14. Fiszki</span> <span class="level-badge level-training">POWTÓRKA</span></div>
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Mejoza — wynik</span><span class="back"><strong>2n → n</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Komórka haploidalna człowieka</span><span class="back"><strong>23 chromosomy (n)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Zygota człowieka</span><span class="back"><strong>46 chromosomów (2n)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Trzy źródła zmienności</span><span class="back"><strong>Rekombinacja, segregacja, losowe zapłodnienie</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Mejoza I — co się rozchodzi?</span><span class="back"><strong>Pary chromosomów homologicznych</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Mejoza II — co się rozchodzi?</span><span class="back"><strong>Chromatydy siostrzane</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">„4 gamety" u człowieka?</span><span class="back"><strong>Uproszczenie (oogeneza: 1 funkcjonalna)</strong></span><span class="card-tag tag-trap">pułapka</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Nondysjunkcja</span><span class="back"><strong>Błąd rozchodzenia → aneuploidia</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Liczba możliwych zestawów (bez rekombinacji)</span><span class="back"><strong>2²³ = 8 388 608</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Rekombinacja chromosomowa — kiedy?</span><span class="back"><strong>Profaza I</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Jedna replikacja?</span><span class="back"><strong>Tak, przed mejozą</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Liczba podziałów w mejozie</span><span class="back"><strong>2 (mejoza I + II)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Oogeneza vs spermatogeneza</span><span class="back"><strong>1 jajowa vs 4 plemniki</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Trisomia 21</span><span class="back"><strong>Nondysjunkcja chromosomu 21</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Kto decyduje o płci?</span><span class="back"><strong>Plemnik (X lub Y)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Synapsa chromosomów homologicznych</span><span class="back"><strong>Łączenie się homologów w pary (profaza I)</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Chiazma</span><span class="back"><strong>Miejsce skrzyżowania chromatyd</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+  </div>
+</section>
+
+<!-- ============================================================
+15. TEST KOŃCOWY
+============================================================ -->
+<section class="section" id="test">
+  <div class="part-heading"><span class="part-num">15. Test końcowy (3+2+2+1)</span> <span class="level-badge level-training">TRENING</span></div>
+  <div class="exercise">
+    <ol>
+      <li>(P) Co to mejoza (2n → ?)?</li>
+      <li>(P) Ile chromosomów w komórce haploidalnej człowieka?</li>
+      <li>(P) Podaj 3 źródła różnorodności.</li>
+      <li>(T) Popraw: „Mejoza daje 2n".</li>
+      <li>(T) Co po zapłodnieniu dwóch komórek haploidalnych 23 + 23?</li>
+      <li>(A) Mejoza I vs II — co się rozchodzi?</li>
+      <li>(A) Dlaczego rodzeństwo (poza bliźniakami) nie jest identyczne?</li>
+      <li>(Z) Nondysjunkcja → jaka zygota?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-test')">Pokaż odpowiedzi</button>
+    <div id="ans-test" class="answer-content">
+      <ol>
+        <li>Podział redukcyjny: 2n → n.</li>
+        <li>23 chromosomy (n).</li>
+        <li>Rekombinacja chromosomowa, niezależna segregacja, losowe zapłodnienie.</li>
+        <li>Mejoza daje <strong>n</strong>, nie 2n.</li>
+        <li>Zygota 2n = 46 chromosomów.</li>
+        <li>Mejoza I — pary homologów. Mejoza II — chromatydy siostrzane.</li>
+        <li>Trzy mechanizmy zmienności.</li>
+        <li>Zygota 2n+1 (trisomia) lub 2n−1 (monosomia).</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+16. CHECKLISTA
+============================================================ -->
+<section class="section" id="checklista">
+  <div class="part-heading"><span class="part-num">16. Checklista</span></div>
+  <div class="card card-correct">
+    <ul style="list-style:none;padding-left:0;">
+      <li>☐ Wiem, że mejoza redukuje 2n → n.</li>
+      <li>☐ Znam 23 chromosomy w komórce haploidalnej.</li>
+      <li>☐ Wymieniam 3 źródła zmienności.</li>
+      <li>☐ Rozróżniam mejozę I i II.</li>
+      <li>☐ Wiem, że mejoza daje 4 komórki haploidalne (nie zawsze 4 gamety).</li>
+      <li>☐ Rozumiem nondysjunkcję (ambitny).</li>
+      <li>☐ Znam różnicę oogeneza vs spermatogeneza (ambitny).</li>
+      <li>☐ Wiem, że rekombinacja zachodzi w profazie I.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+17. MAPA POJĘĆ
+============================================================ -->
+<section class="section" id="mapa">
+  <div class="part-heading"><span class="part-num">17. Mapa pojęć</span></div>
+  <div class="diagram">
+    <svg viewBox="0 0 660 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa pojęć L015">
+      <rect x="230" y="10" width="200" height="42" rx="10" fill="#6a1b9a"/>
+      <text x="330" y="36" font-size="14" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-weight="700">MEJOZA · 2n → n</text>
+      <line x1="330" y1="52" x2="330" y2="78" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="90" y1="78" x2="570" y2="78" stroke="#6b7a8d" stroke-width="2"/>
+
+      <line x1="90" y1="78" x2="90" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="240" y1="78" x2="240" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="420" y1="78" x2="420" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="570" y1="78" x2="570" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+
+      <rect x="20" y="108" width="140" height="60" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="90" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">1 replikacja</text>
+      <text x="90" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">faza S (L013)</text>
+      <text x="90" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">46 → 92 chromatydy</text>
+
+      <rect x="175" y="108" width="130" height="60" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="240" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">2 podziały</text>
+      <text x="240" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">I: pary · II: kopie</text>
+      <text x="240" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">redukcja + utrzymanie</text>
+
+      <rect x="355" y="108" width="130" height="60" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="420" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">4 komórki</text>
+      <text x="420" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">haploidalne (n)</text>
+      <text x="420" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">u człowieka n = 23</text>
+
+      <rect x="500" y="108" width="140" height="60" rx="8" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="570" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">zapłodnienie</text>
+      <text x="570" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">23 + 23 = 46</text>
+      <text x="570" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">zygota 2n</text>
+
+      <line x1="330" y1="168" x2="330" y2="200" stroke="#6b7a8d" stroke-width="2"/>
+
+      <rect x="180" y="200" width="300" height="50" rx="8" fill="#2b6cb0"/>
+      <text x="330" y="224" font-size="13" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-weight="700">3 ŹRÓDŁA ZMIENNOŚCI</text>
+      <text x="330" y="240" font-size="10" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI">rekombinacja · segregacja · losowe zapłodnienie</text>
+
+      <line x1="330" y1="250" x2="330" y2="278" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="130" y1="278" x2="530" y2="278" stroke="#6b7a8d" stroke-width="2"/>
+
+      <line x1="130" y1="278" x2="130" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="40" y="305" width="180" height="55" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="130" y="327" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">rekombinacja</text>
+      <text x="130" y="342" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">profaza I — wymiana</text>
+      <text x="130" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">fragmentów chromatyd</text>
+
+      <line x1="330" y1="278" x2="330" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="240" y="305" width="180" height="55" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="330" y="327" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">segregacja</text>
+      <text x="330" y="342" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">anafaza I — losowe</text>
+      <text x="330" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">2²³ ≈ 8,4 mln zestawów</text>
+
+      <line x1="530" y1="278" x2="530" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="440" y="305" width="180" height="55" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="530" y="327" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">losowe zapłodnienie</text>
+      <text x="530" y="342" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">dowolny plemnik ×</text>
+      <text x="530" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">dowolna kom. jajowa</text>
+
+      <line x1="330" y1="360" x2="330" y2="400" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="130" y="400" width="400" height="50" rx="8" fill="#fef3c7" stroke="#d69e2e"/>
+      <text x="330" y="423" font-size="12" text-anchor="middle" fill="#78350f" font-family="Segoe UI" font-weight="700">Każdy człowiek = genetycznie unikalny</text>
+      <text x="330" y="440" font-size="10" text-anchor="middle" fill="#78350f" font-family="Segoe UI">(poza bliźniakami jednojajowymi)</text>
+    </svg>
+    <div class="caption">Mapa pojęć L015 — od mejozy przez 3 źródła zmienności do unikalności genetycznej.</div>
+  </div>
+</section>
+
+<!-- ============================================================
+18. CO DALEJ / JAK SIĘ UCZYĆ
+============================================================ -->
+<section class="section" id="dalej">
+  <div class="part-heading"><span class="part-num">18. Co dalej? Jak się uczyć?</span></div>
+  <div class="card card-hint">
+    <p><strong>Następna lekcja:</strong> L016 — gdy podziały wymykają się kontroli (nowotwory).</p>
+    <p><strong>Most wstecz:</strong> L014 (mitoza) vs L015 (mejoza) — tabela w sekcji 5.2.</p>
+    <p><strong>Plan nauki:</strong></p>
+    <ol>
+      <li>Ściąga + tabela mitoza/mejoza (7 min).</li>
+      <li>Schemat mejozy I i II (7 min).</li>
+      <li>Mini-check (5 min).</li>
+      <li>Ćwiczenia A i B (10 min).</li>
+      <li>Fiszki (10 min).</li>
+      <li>Test końcowy (10 min).</li>
+      <li>Powtórka za 1 dzień, 3 dni, tydzień.</li>
+    </ol>
+  </div>
+
+  <h3>Powtórki rozłożone w czasie</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Kiedy</th><th>Co</th><th>Czas</th></tr></thead>
+      <tbody>
+        <tr><td>Po lekcji</td><td>ściąga + 5 fiszek</td><td>15–20 min</td></tr>
+        <tr><td>+1 dzień</td><td>fiszki bloku</td><td>10 min</td></tr>
+        <tr><td>+3 dni</td><td>klinika + 3 zadania treningowe</td><td>15 min</td></tr>
+        <tr><td>+1 tydzień</td><td>mini-test bloku</td><td>20 min</td></tr>
+        <tr><td>+1 miesiąc</td><td>mapa pojęć + pułapki</td><td>15 min</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+19. SŁOWNIK
+============================================================ -->
+<section class="section" id="slownik">
+  <div class="part-heading"><span class="part-num">19. Słownik</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+      <tbody>
+        <tr><td>Mejoza</td><td>Podział prowadzący do komórek haploidalnych (u zwierząt → gamety, u roślin → spory)</td></tr>
+        <tr><td>Komórka haploidalna (n)</td><td>Z jednym zestawem chromosomów</td></tr>
+        <tr><td>Komórka diploidalna (2n)</td><td>Z dwoma zestawami chromosomów</td></tr>
+        <tr><td>Gameta</td><td>Komórka rozrodcza (n) — u zwierząt</td></tr>
+        <tr><td>Zygota</td><td>Komórka po połączeniu dwóch komórek haploidalnych (2n)</td></tr>
+        <tr><td>Homologi</td><td>Para chromosomów: jeden od matki, jeden od ojca</td></tr>
+        <tr><td>Rekombinacja chromosomowa (crossing-over)</td><td>Wymiana fragmentów chromatyd niesiostrzanych w profazie I</td></tr>
+        <tr><td>Synapsa chromosomów homologicznych</td><td>Łączenie się homologów w pary w profazie I</td></tr>
+        <tr><td>Chiazma</td><td>Miejsce widocznego skrzyżowania chromatyd</td></tr>
+        <tr><td>Niezależna segregacja</td><td>Losowe rozchodzenie się par chromosomów w anafazie I</td></tr>
+        <tr><td>Nondysjunkcja</td><td>Błąd rozchodzenia chromosomów lub chromatyd</td></tr>
+        <tr><td>Aneuploidia</td><td>Nieprawidłowa liczba chromosomów (np. trisomia 21)</td></tr>
+        <tr><td>Oogeneza</td><td>Powstawanie komórek jajowych (1 funkcjonalna + ciałka kierunkowe)</td></tr>
+        <tr><td>Spermatogeneza</td><td>Powstawanie plemników (4 funkcjonalne)</td></tr>
+        <tr><td>Ciałko kierunkowe</td><td>Mała komórka powstająca w oogenezie, otrzymuje niewiele cytoplazmy, zwykle zanika</td></tr>
+        <tr><td>Mejoza I</td><td>Podział redukcyjny (rozdział par homologów)</td></tr>
+        <tr><td>Mejoza II</td><td>Podział zachowawczy (rozdział chromatyd)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+20. DODATEK ZAAWANSOWANY
+============================================================ -->
+<section class="section" id="dodatek">
+  <div class="part-heading"><span class="part-num">20. Dodatek zaawansowany</span> <span class="level-badge level-ambitious">ZAAWANSOWANY</span></div>
+
+  <h3>20.1. Mejoza a starzenie komórek jajowych</h3>
+  <div class="card card-ambitious">
+    <p>Komórki jajowe są <strong>zatrzymane w profazie I</strong> od życia płodowego kobiety aż do owulacji. Przez dziesięciolecia mogą gromadzić uszkodzenia białek wrzeciona podziałowego — co zwiększa ryzyko <strong>nondysjunkcji</strong> i aneuploidii (np. trisomii 21).</p>
+  </div>
+
+  <h3>20.2. Mejoza u roślin — cykl pełny</h3>
+  <div class="card card-ambitious">
+    <div class="step-flow">
+Sporofit (2n)
+  ↓ mejoza
+Spory (n)
+  ↓ mitoza
+Gametofit (n)
+  ↓ mitoza
+Gamety (n)
+  ↓ zapłodnienie
+Zygota (2n) → Sporofit (2n)</div>
+    <p>U zwierząt mejoza zachodzi bezpośrednio przed powstaniem gamet; u roślin mejoza tworzy <strong>spory</strong>, a gamety powstają z nich <strong>przez mitozę</strong>.</p>
+  </div>
+
+  <h3>20.3. Nondysjunkcja I vs II — pełna tabela</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Typ</th><th>Co się dzieje</th><th>Produkty mejozy</th></tr></thead>
+      <tbody>
+        <tr><td>Nondysjunkcja I</td><td>Pary homologów nie rozchodzą się w anafazie I</td><td>2 komórki z n+1, 2 z n−1</td></tr>
+        <tr><td>Nondysjunkcja II</td><td>Chromatydy nie rozchodzą się w anafazie II</td><td>2 komórki prawidłowe (n), 1 z n+1, 1 z n−1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>20.4. Mejoza a mutacje</h3>
+  <div class="card card-ambitious">
+    <p>W trakcie mejozy mogą wystąpić <strong>błędy</strong> (nondysjunkcja, niewłaściwa rekombinacja). Większość prowadzi do <strong>niepłodności</strong> lub <strong>poronienia</strong>, ale niektóre do chorób (np. trisomia 21).</p>
+  </div>
+
+  <h3>20.5. Zadanie olimpijskie</h3>
+  <div class="card card-warning">
+    <p><strong>Pytanie:</strong> Organizm ma 2n = 20. Ile chromosomów i chromatyd w komórce po mejozie I?</p>
+    <p><strong>Rozwiązanie:</strong></p>
+    <ul>
+      <li>2n = 20 → po replikacji: 20 chromosomów, 40 chromatyd.</li>
+      <li>Po mejozie I: 2 komórki, każda z <strong>10 chromosomami</strong> (20 chromatyd).</li>
+    </ul>
+    <p><strong>Odpowiedź:</strong> 10 chromosomów, 20 chromatyd w każdej z 2 komórek.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+21. POŁĄCZENIA MIĘDZYPRZEDMIOTOWE
+============================================================ -->
+<section class="section" id="polaczenia">
+  <div class="part-heading"><span class="part-num">21. Połączenia międzyprzedmiotowe</span></div>
+  <div class="card card-gray">
+    <ul>
+      <li><strong>Matematyka:</strong> kombinatoryka (2²³), potęgi, prawdopodobieństwo.</li>
+      <li><strong>Biologia:</strong> rozmnażanie, dziedziczenie, zmienność, ewolucja.</li>
+      <li><strong>Medycyna:</strong> diagnostyka prenatalna, aneuploidie, niepłodność.</li>
+      <li><strong>Rolnictwo:</strong> hodowla, planowanie krzyżówek.</li>
+      <li><strong>Etyka:</strong> poradnictwo genetyczne (dyskusja).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+22. ZADANIA Z ŻYCIA
+============================================================ -->
+<section class="section" id="zycie">
+  <div class="part-heading"><span class="part-num">22. Zadania z życia codziennego</span></div>
+  <div class="card card-correct">
+    <ol>
+      <li>Dlaczego dzieci tej samej pary rodziców różnią się między sobą?</li>
+      <li>Dlaczego wiek matki wpływa na ryzyko zespołu Downa?</li>
+      <li>Jakie znaczenie ma mejoza w hodowli roślin i zwierząt?</li>
+      <li>Dlaczego bracia i siostry mogą mieć różne grupy krwi?</li>
+      <li>Czy bliźniaki jednojajowe mają identyczne DNA? (Zwykle <strong>niemal identyczny genom jądrowy</strong>, ale z czasem mogą pojawić się między nimi drobne różnice wynikające z mutacji somatycznych i zmian epigenetycznych.)</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+23. STATUS
+============================================================ -->
+<section class="section" id="status">
+  <div class="part-heading"><span class="part-num">23. Status lekcji</span></div>
+  <div class="card card-new">
+    <span class="card-label">Wersja 5.1 (2026-09-13) — po korekcie merytorycznej</span>
+    <p><strong>Zachowano całą treść merytoryczną v5.0.</strong></p>
+    <p><strong>Poprawki w v5.1:</strong></p>
+    <ul>
+      <li><strong>Definicja mejozy:</strong> uściślona — mejoza tworzy <strong>komórki haploidalne</strong> (u zwierząt → gamety, u roślin → spory).</li>
+      <li><strong>Miejsce zachodzenia:</strong> „komórki rozrodcze w gonadach: jądrach i jajnikach".</li>
+      <li><strong>Rekombinacja chromosomowa:</strong> usunięto nieuzasadnioną liczbę „1–2 razy na parę"; zamieniono na „zwykle zachodzi w wielu miejscach genomu".</li>
+      <li><strong>Różnorodność:</strong> „praktycznie nieskończona" → „bardzo duża liczba kombinacji (skończona)".</li>
+      <li><strong>Nondysjunkcja II:</strong> precyzyjnie — „2 komórki prawidłowe (n), 1 z n+1, 1 z n−1".</li>
+      <li><strong>Bliźnięta jednojajowe:</strong> „niemal identyczny genom jądrowy" (nie „identyczne DNA").</li>
+      <li><strong>Mitoza:</strong> „zachowuje informację komórki macierzystej; sporadyczne mutacje mogą powstać".</li>
+      <li><strong>„4 gamety":</strong> konsekwentnie mówimy o <strong>4 komórkach haploidalnych</strong>; osobno o spermatogenezie i oogenezie.</li>
+      <li><strong>Sekcja 6.3:</strong> usunięto błędne zdanie o „46 chromosomach"; zastąpiono klarownym wyjaśnieniem „pierwszy podział rozdziela pary, drugi — kopie chromosomów".</li>
+      <li><strong>Sekcja 5.5:</strong> dodano <strong>zasadę liczenia centromerów</strong> i kontrastowy przykład 2n = 8.</li>
+      <li><strong>Terminologia:</strong> polskie odpowiedniki — „rekombinacja chromosomowa", „synapsa chromosomów homologicznych", „chiazma", „powtórki rozłożone w czasie".</li>
+      <li><strong>Język:</strong> usunięto „praktycznie nieskończona różnorodność", „komórki nie wytrzymają", „ciałka są odrzucane".</li>
+      <li><strong>Powtórzenia:</strong> scalono tabele mitoza/mejoza; scalono nondysjunkcję; usunięto duplikację „jedna replikacja, dwa podziały".</li>
+    </ul>
+    <p><strong>Zasada:</strong> nic istotnego nie usunięto — tylko uporządkowano i uściślono.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><strong>BIOLOGIA L015 v5.1</strong> · Genetyka · Mejoza · 2n → n · Rekombinacja chromosomowa · Nondysjunkcja · 2026</p>
+  <p style="font-size:0.78rem;opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+</footer>
+
+</div>
+
+<script>
+function toggleAnswer(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle('show');
+  const btn=document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+  if(btn)btn.textContent=el.classList.contains('show')?'Ukryj odpowiedzi':'Pokaż odpowiedzi';
+}
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+</script>
+</body>
+</html>

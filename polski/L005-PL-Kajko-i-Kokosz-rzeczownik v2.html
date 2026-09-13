@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekcja 5 – Kajko i Kokosz + rzeczownik (pełna wersja)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <style>
+        /* ============================================================
+           STYLE – wersja 6.3 (master merge) – pełna lekcja 5
+           ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width:768px) {
+            .container { padding: 12px 10px; }
+            body { padding: 6px; }
+        }
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 { font-size: 2rem; }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h3 { font-size: 1.15rem; margin-top: 20px; margin-bottom: 6px; }
+        h4 { font-size: 1.0rem; margin-top: 14px; margin-bottom: 4px; }
+        p { margin-bottom: 8px; }
+        ul, ol { padding-left: 22px; margin-bottom: 10px; }
+        li { margin-bottom: 3px; }
+        a { color: #2b6cb0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f;
+            --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #fff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember { background: var(--color-remember-bg); border-left: 5px solid var(--color-remember); }
+        .card-remember .card-label { color: var(--color-remember); }
+        .card-correct { background: var(--color-basic-bg); border-left: 5px solid var(--color-correct); }
+        .card-correct .card-label { color: var(--color-correct); }
+        .card-trap { background: var(--color-trap-bg); border-left: 5px solid var(--color-trap); }
+        .card-trap .card-label { color: var(--color-trap); }
+        .card-hint { background: var(--color-hint-bg); border-left: 5px solid var(--color-hint); }
+        .card-hint .card-label { color: var(--color-hint); }
+        .card-ambitious { background: var(--color-ambitious-bg); border-left: 5px solid var(--color-ambitious); }
+        .card-ambitious .card-label { color: var(--color-ambitious); }
+        .card .card-label { font-weight: 600; font-size: 0.8rem; display: block; margin-bottom: 4px; }
+
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic { background: #d4edda; color: #155724; }
+        .level-training { background: #cce5ff; color: #004085; }
+        .level-exam { background: #ffe8cc; color: #8a6d3b; }
+        .level-trap { background: #f8d7da; color: #721c24; }
+        .level-ambitious { background: #e8d5f5; color: #4a1a6b; }
+        .level-remember { background: #d1d5db; color: #1a1a2e; }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th, .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) { background: #fafbfc; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #fff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover { background: var(--color-bg-subtle); border-color: #b0b8c4; }
+        .btn-primary { background: var(--color-training); border-color: var(--color-training); color: #fff; }
+        .btn-primary:hover { background: #1f4e8c; border-color: #1f4e8c; }
+        .btn-outline { background: transparent; }
+        .btn-outline:hover { background: var(--color-bg-subtle); }
+        .btn-sm { padding: 3px 10px; font-size: 0.74rem; }
+
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+        .fitb-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 10px;
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child { border-bottom: none; }
+        .fitb-row input[type="text"], .fitb-row select {
+            padding: 4px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-family: inherit;
+            background: #fff;
+        }
+        .fitb-row input[type="text"] { width: 160px; }
+        .fitb-row input[type="text"]:focus, .fitb-row select:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43,108,176,0.15);
+        }
+        .fitb-row input[type="text"].correct { border-color: var(--color-correct); background: #f0faf4; }
+        .fitb-row input[type="text"].wrong { border-color: var(--color-error); background: #fef2f2; }
+        .fitb-row .result-icon { font-size: 1.0rem; }
+
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .flashcard {
+            min-height: 96px;
+            padding: 14px;
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            background: #fff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .flashcard:hover, .flashcard:focus-visible {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            outline: none;
+        }
+        .flashcard .front { display: block; font-weight: 700; }
+        .flashcard .back { display: none; color: var(--color-text-muted); }
+        .flashcard.flipped .front { display: none; }
+        .flashcard.flipped .back { display: block; }
+
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row + .panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title { font-weight: 600; font-size: 1.05rem; color: #0a2540; }
+        .top-panel .subtitle { font-size: 0.8rem; color: var(--color-text-muted); }
+        .top-panel .lesson-info { margin-top: 6px; font-size: 0.78rem; color: var(--color-text-muted); line-height: 1.4; }
+        .top-panel .lesson-info .lesson-title { font-style: italic; }
+        .progress-bar-wrap { flex: 1; min-width: 140px; }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .view-filters { display: flex; gap: 4px; flex-wrap: wrap; }
+        .view-filters .btn { font-size: 0.72rem; padding: 3px 12px; }
+        .view-filters .btn.active { background: var(--color-training); border-color: var(--color-training); color: #fff; }
+        .today-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin: 4px 0 0;
+        }
+        .today-tasks .task {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+        .today-tasks .task .circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--color-text-muted);
+        }
+        .today-tasks .task.done .circle {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: #fff;
+        }
+        .today-tasks .task.done .task-label { text-decoration: line-through; color: var(--color-text-muted); }
+
+        .mission-result {
+            font-size: 1.0rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        .mission-result.perfect { background: #d4edda; color: #155724; }
+        .mission-result.good { background: #cce5ff; color: #004085; }
+        .mission-result.ok { background: #ffe8cc; color: #8a6d3b; }
+        .mission-result.fail { background: #f8d7da; color: #721c24; }
+
+        .section.hidden-by-filter { display: none !important; }
+
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        @media (max-width:600px) {
+            .top-panel .panel-row { flex-direction: column; align-items: stretch; }
+            .view-filters { justify-content: center; }
+            .fitb-row { flex-wrap: wrap; }
+            .fitb-row input[type="text"] { width: 100%; }
+            .container { padding: 10px 6px; }
+        }
+        .text-muted { color: var(--color-text-muted); }
+        .text-sm { font-size: 0.82rem; }
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+        }
+        .part-heading .part-num { color: var(--color-training); }
+        .mm-recall {
+            margin: 16px 0;
+            padding: 14px 16px;
+            border: 1px dashed #b9c3ce;
+            border-radius: 10px;
+            background: #fbfcfd;
+        }
+        .mm-recall summary { cursor: pointer; font-weight: 600; }
+        .mm-recall p { margin: 9px 0 0; font-size: 0.9rem; }
+        .mm-microtest {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0;
+        }
+        .mm-microtest button {
+            padding: 9px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background: #fff;
+            text-align: left;
+            cursor: pointer;
+            font: inherit;
+        }
+        .mm-microtest button:hover { background: var(--color-bg-subtle); }
+        .mm-microtest .mm-answer {
+            display: block;
+            margin-top: 5px;
+            color: var(--color-text-muted);
+            font-size: 0.8rem;
+        }
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+        }
+        .example .pl { font-weight: 600; color: #0a2540; }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .error-text { color: var(--color-error); text-decoration: line-through; font-weight: 600; }
+        .correct-text { color: var(--color-correct); font-weight: 600; }
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #fff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover { border-color: var(--color-error); color: var(--color-error); background: var(--color-trap-bg); }
+        .korekta {
+            background: #f0faf4;
+            border-left: 4px solid var(--color-correct);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .korekta .korekta-title { font-weight: 700; color: var(--color-correct); }
+        .box-cke {
+            background: #f0f6ff;
+            border: 2px solid #2b6cb0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .box-cke .cke-title { font-weight: 700; font-size: 1.1rem; color: #2b6cb0; display: block; margin-bottom: 6px; }
+        .box-cke ul { margin-bottom: 0; }
+        .box-cke ul li { margin-bottom: 2px; }
+        .trap-table td:first-child { font-weight: 600; }
+        .mm-focusbar {
+            position: sticky;
+            top: 8px;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 0 0 12px;
+            padding: 7px 9px;
+            background: rgba(255,255,255,0.95);
+            border: 1px solid var(--color-border);
+            border-radius: 10px;
+            font-size: 0.78rem;
+        }
+        .mm-focusbar .mm-section-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--color-text-muted); }
+        .mm-focusbar button {
+            border: 1px solid var(--color-border);
+            background: #fff;
+            color: var(--color-text);
+            border-radius: 7px;
+            padding: 5px 9px;
+            cursor: pointer;
+        }
+        body.mm-focus .section:not(.mm-current-section) { opacity: 0.4; transition: opacity 0.2s; }
+        .mm-current-section { scroll-margin-top: 75px; }
+        .komiks-elementy {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 16px;
+            margin: 6px 0;
+        }
+        .komiks-elementy .element {
+            background: #fff;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 8px 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .komiks-elementy .element .desc {
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            display: block;
+            margin-top: 2px;
+        }
+        @media (max-width:600px) { .komiks-elementy { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL – POSTĘP + FILTRY + ZADANIA
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">„Kajko i Kokosz” + rzeczownik</div>
+                    <div class="subtitle">Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Lekcja 5 – „Kajko i Kokosz. Szkoła Latania” oraz rzeczownik (odmiana, rodzaje, „nie”)</div>
+                        <div>Wersja FINALNA – pełna treść, uzupełniona o MASTER, KONKURS, OLIMPIADA i słownik</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-row">
+                <div class="view-filters">
+                    <button class="btn active" data-view="all" onclick="setView('all')">Wszystko</button>
+                    <button class="btn" data-view="basic" onclick="setView('basic')">Podstawa + Trening</button>
+                    <button class="btn" data-view="exam" onclick="setView('exam')">Egzamin</button>
+                </div>
+                <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                    <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+                </div>
+                <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+            </div>
+
+            <div class="panel-row">
+                <div class="today-tasks" id="todayTasks">
+                    <div class="task" data-task="kajko"><span class="circle">1</span><span class="task-label">Poznaj Kajko i Kokosza – bohaterów i wydarzenia</span></div>
+                    <div class="task" data-task="motywy"><span class="circle">2</span><span class="task-label">Opanuj motywy i formę komiksu</span></div>
+                    <div class="task" data-task="rzeczownik"><span class="circle">3</span><span class="task-label">Opanuj rzeczownik – odmiana, rodzaje, „nie”</span></div>
+                    <div class="task" data-task="cwiczenia"><span class="circle">4</span><span class="task-label">Zrób ćwiczenia</span></div>
+                    <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test końcowy</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        MIKROTEST – sprawdź się przed nauką
+        ============================================================ -->
+        <div class="mm-recall" id="mmRecall">
+            <details>
+                <summary>Sprawdź się przed nauką — 3 szybkie pytania</summary>
+                <div class="mm-microtest">
+                    <button type="button" onclick="mmReveal(this,'Kajko – sprytny, Kokosz – silny. Razem uzupełniają się.')">Kto jest kim w duecie Kajko i Kokosz?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Rzeczownik odpowiada na pytania: kto? co?')">Na jakie pytania odpowiada rzeczownik?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Hegemon wykorzystuje marzenie Mirmiła, by przejąć władzę.')">Co robi Hegemon w „Szkole Latania”?<span class="mm-answer"></span></button>
+                </div>
+                <p>To nie jest test na ocenę – pokazuje, co już wiesz.</p>
+            </details>
+        </div>
+
+        <!-- ============================================================
+        CZĘŚĆ 1 – „KAJKO I KOKOSZ. SZKOŁA LATANIA”
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part1">
+            <div class="part-heading"><span class="part-num">Część 1</span> · „Kajko i Kokosz. Szkoła Latania”</div>
+
+            <div class="section" data-level="basic" id="sec-status">
+                <div class="box-cke">
+                    <span class="cke-title">📌 WAŻNE – CKE / E8</span>
+                    <p><strong>„Kajko i Kokosz. Szkoła latania” (Janusz Christa) jest lekturą obowiązkową z klas IV–VI.</strong> To <strong>jedyny komiks</strong> na liście obowiązkowej CKE.</p>
+                    <ul>
+                        <li>W latach 2024/2025–2025/2026 zadania w <strong>części I arkusza</strong> dotyczące lektur z klas IV–VI odnoszą się <strong>wyłącznie do fragmentu</strong> zamieszczonego w arkuszu – nie sprawdzają znajomości całej treści.</li>
+                        <li>Lektura może być swobodnie wykorzystywana w <strong>wypracowaniu</strong> (część II) i zadaniach otwartych.</li>
+                        <li><strong>Inne komiksy, mangi, powieści obrazkowe NIE są uznawane za utwór literacki</strong> – jedyny dozwolony komiks to „Kajko i Kokosz”.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-kajko-info">
+                <h2>1. Podstawowe informacje</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Lektura w pigułce</span>
+                    <ul>
+                        <li><strong>Autor:</strong> Janusz Christa (1934–2008) – polski rysownik i scenarzysta.</li>
+                        <li><strong>Seria:</strong> „Kajko i Kokosz” – ukazywała się od <strong>1971 roku</strong> w magazynie <strong>„Świat Młodych”</strong>. „Szkoła Latania” to jeden z tomów (wydany w <strong>1975 roku</strong>).</li>
+                        <li><strong>Styl graficzny:</strong> charakterystyczne czarno-białe rysunki, wyraźne kontury, dynamiczna kreska.</li>
+                        <li><strong>Gatunek:</strong> komiks – łączy warstwę graficzną (obrazy) i tekstową (dymki, onomatopeje, narracja).</li>
+                        <li><strong>Konwencja:</strong> humorystyczna / komediowa – lekki, zabawny ton, ale porusza poważniejsze tematy.</li>
+                        <li><strong>Miejsce:</strong> średniowieczna osada – gród Mirmiłowa.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-kajko-bohaterowie">
+                <h2>2. Bohaterowie</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Bohater</th><th>Charakterystyka</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Kajko</strong></td><td>Sprytny, inteligentny, zwinny. „Mózg” operacji – wymyśla plany i podstępy.</td></tr>
+                            <tr><td><strong>Kokosz</strong></td><td>Silny, odważny, czasem nierozgarnięty. Jego siła łączy się ze sprytem Kajka.</td></tr>
+                            <tr><td><strong>Mirmił</strong></td><td>Władca grodu, marzyciel. Pragnie latać – Hegemon wykorzystuje to przeciwko niemu.</td></tr>
+                            <tr><td><strong>Lubawa</strong></td><td>Żona Mirmiła. Rozsądna, praktyczna, chroni męża przed manipulacją.</td></tr>
+                            <tr><td><strong>Jaga</strong></td><td>Wiedźma, ciotka Kokosza. Postać komiczna, ale niebezpieczna – używa magii.</td></tr>
+                            <tr><td><strong>Łamignat</strong></td><td>Zbój, mąż Jagi. Silny, ale niezbyt bystry – często daje się oszukać Kajkowi. Często „dobroduszny” mimo roli zbója.</td></tr>
+                            <tr><td><strong>Hegemon</strong> (Krwawy Hegemon)</td><td>Czarodziej, główny antagonista w „Szkole Latania”, przywódca zbójcerzy. Sprytny manipulator – wykorzystuje marzenia Mirmiła, by przejąć władzę.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card card-hint">
+                    <span class="card-label">Duet Kajko i Kokosz</span>
+                    <p><strong>Kajko i Kokosz to przyjaciele i towarzysze broni.</strong> Uzupełniają się nawzajem: Kajko to spryt i inteligencja, Kokosz to siła fizyczna. Razem są w stanie pokonać każdego wroga.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-kajko-wydarzenia">
+                <h2>3. Najważniejsze wydarzenia – sekwencja zdarzeń</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">Marzenie Mirmiła</span>
+                    <p>Mirmił od lat marzy o lataniu. Do grodu przybywa <strong>Hegemon</strong>, który podszywa się pod przyjaciela i obiecuje spełnienie marzenia. Mirmił ulega pokusie.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Podstęp Hegemona</span>
+                    <p>Hegemon manipuluje Mirmiłem, przekonując go, że musi opuścić gród, by nauczyć się latać. W rzeczywistości chce <strong>wywabić go z grodu, by przejąć władzę</strong>. Jaga i Łamignat są zaangażowani w intrygę.</p>
+                    <div class="korekta">
+                        <span class="korekta-title">WAŻNE!</span>
+                        <p><strong>Hegemon nie uczy Mirmiła latać</strong> – on tylko <strong>wykorzystuje jego marzenie</strong>. <strong>Lubawa jest przeciwna</strong> tej wyprawie.</p>
+                    </div>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Konfrontacja</span>
+                    <p>Mirmił, ślepo ufając Hegemonowi, opuszcza gród. Hegemon zdradza swoje prawdziwe zamiary. Kajko i Kokosz odkrywają podstęp.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Finał – zwycięstwo dobra</span>
+                    <p>Dzięki współpracy Kajka i Kokosza Hegemon zostaje pokonany. Mirmił odzyskuje rozsądek i <strong>nie daje się dalej manipulować</strong>. Historia kończy się pouczeniem: <strong>marzenia są ważne, ale trzeba je łączyć z rozsądkiem.</strong></p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-kajko-forma">
+                <h2>4. Forma komiksu – elementy</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Komiks – gatunek łączący obraz i słowo</span>
+                    <p>W „Kajku i Kokoszu” występują charakterystyczne elementy:</p>
+                    <div class="komiks-elementy">
+                        <div class="element"><strong>Kadry (panelle)</strong><span class="desc">Ramki z obrazkami. Różne rozmiary – duże spowalniają akcję, małe przyspieszają.</span></div>
+                        <div class="element"><strong>Dymki tekstowe</strong><span class="desc">Wypowiedzi bohaterów (mowa). Mogą zawierać też narrację.</span></div>
+                        <div class="element"><strong>Dymki myślowe (chmurki)</strong><span class="desc">Myśli bohaterów – kształt chmurki, brak ogonka.</span></div>
+                        <div class="element"><strong>Onomatopeje</strong><span class="desc">Wyrazy dźwiękonaśladowcze: <em>bum, trach, łup, brzdęk, huk</em>.</span></div>
+                        <div class="element"><strong>Narracja</strong><span class="desc">Tekst poza dymkami, komentujący akcję.</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-kajko-motywy">
+                <h2>5. Motywy do rozprawki</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">1. Przyjaźń i współpraca</span>
+                    <p>Kajko i Kokosz uzupełniają się nawzajem (spryt + siła). Razem są niepokonani.</p>
+                    <p><strong>Wniosek:</strong> Prawdziwa przyjaźń polega na wzajemnym uzupełnianiu się.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">2. Marzenia i ambicja</span>
+                    <p>Mirmił marzy o lataniu, ale Hegemon wykorzystuje to marzenie przeciwko niemu.</p>
+                    <p><strong>Wniosek:</strong> Marzenia są ważne, ale muszą iść w parze z rozsądkiem.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">3. Walka dobra ze złem</span>
+                    <p>Kajko i Kokosz reprezentują dobro, Hegemon – zło. Dobro zwycięża dzięki współpracy i inteligencji.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">4. Manipulacja i zaufanie</span>
+                    <p>Hegemon wykorzystuje zaufanie Mirmiła. Pokazuje, że zaufanie może być nadużywane.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">5. Humor i komizm</span>
+                    <p>Komiks ma lekki, zabawny ton – można go wykorzystać w tematach o humorze w literaturze.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-kajko-e8">
+                <h2>6. Jak to wygląda na egzaminie E8?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">„Kajko i Kokosz” na E8</span>
+                    <ul>
+                        <li><strong>W części I arkusza</strong> może pojawić się <strong>fragment</strong> komiksu. Pytania mogą dotyczyć:
+                            <ul>
+                                <li>rozpoznawania elementów komiksu (kadry, dymki, onomatopeje),</li>
+                                <li>cech bohaterów na podstawie fragmentu,</li>
+                                <li>elementów realistycznych vs fantastycznych,</li>
+                                <li>zapisywania dialogu z dymków,</li>
+                                <li>interpretacji motywu (np. przyjaźń, marzenia).</li>
+                            </ul>
+                        </li>
+                        <li><strong>W części II</strong> (wypracowanie) lektura jest doskonałym materiałem do tematów o:
+                            <ul>
+                                <li>przyjaźni i współpracy,</li>
+                                <li>marzeniach i ambicji,</li>
+                                <li>walce dobra ze złem,</li>
+                                <li>manipulacji i zaufaniu,</li>
+                                <li>humorze w literaturze.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Ważne</span>
+                        <p>Pamiętaj: w części I egzamin sprawdza <strong>tylko fragment</strong>, a nie całą treść książki. Nie musisz znać całej fabuły na pamięć, ale warto znać kontekst i najważniejsze motywy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 2 – RZECZOWNIK
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part2">
+            <div class="part-heading"><span class="part-num">Część 2</span> · Rzeczownik</div>
+
+            <div class="section" data-level="basic" id="sec-rzeczownik">
+                <h2>7. Czym jest rzeczownik?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Definicja</span>
+                    <p><strong>Rzeczownik</strong> to odmienna część mowy, która nazywa osoby, zwierzęta, przedmioty, zjawiska, uczucia i pojęcia.</p>
+                    <p>Odpowiada na pytania: <strong>kto? co?</strong></p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>Kajko</em> – imię własne (osoba)</li>
+                        <li><em>miecz</em> – przedmiot</li>
+                        <li><em>przyjaźń</em> – uczucie</li>
+                        <li><em>gród</em> – miejsce</li>
+                    </ul>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">DLACZEGO?</span>
+                        <p>Rzeczownik jest podstawową częścią mowy – bez niego nie można nazwać świata. To on nadaje nazwy wszystkiemu, co istnieje.</p>
+                    </div>
+                </div>
+
+                <h3>Rzeczowniki odczasownikowe (PUŁAPKA!)</h3>
+                <div class="card card-trap">
+                    <span class="card-label">Rzeczowniki odczasownikowe – częsta pułapka!</span>
+                    <p>Powstają od czasowników i oznaczają czynności lub stany. Mają formę bezokolicznika lub kończą się na <em>-nie</em> / <em>-cie</em>:</p>
+                    <ul>
+                        <li><em>latanie</em> (od: latać)</li>
+                        <li><em>myślenie</em> (od: myśleć)</li>
+                        <li><em>czytanie</em> (od: czytać)</li>
+                    </ul>
+                    <p><strong>WAŻNE!</strong> <em>Latanie</em> to <strong>rzeczownik</strong>, a nie czasownik!</p>
+                    <p><strong>Przykład:</strong> <em>Mirmił marzył o <strong>lataniu</strong>.</em> – <em>lataniu</em> to rzeczownik (odpowiada na pytanie: o czym?).</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-rzeczownik-odmiana">
+                <h2>8. Odmiana rzeczownika przez przypadki</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Przypadki – tabela</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Przypadek</th><th>Pytanie</th><th>Przykład („gród”)</th><th>Przykład w zdaniu</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Mianownik</strong></td><td>kto? co?</td><td><em>gród</em></td><td><em>Gród jest duży.</em></td></tr>
+                                <tr><td><strong>Dopełniacz</strong></td><td>kogo? czego?</td><td><em>grodu</em></td><td><em>Nie ma grodu.</em></td></tr>
+                                <tr><td><strong>Celownik</strong></td><td>komu? czemu?</td><td><em>grodowi</em></td><td><em>Pomagam grodowi.</em></td></tr>
+                                <tr><td><strong>Biernik</strong></td><td>kogo? co?</td><td><em>gród</em></td><td><em>Widzę gród.</em></td></tr>
+                                <tr><td><strong>Narzędnik</strong></td><td>z kim? z czym?</td><td><em>grodem</em></td><td><em>Stoję przed grodem.</em></td></tr>
+                                <tr><td><strong>Miejscownik</strong></td><td>o kim? o czym?</td><td><em>grodzie</em></td><td><em>Mówię o grodzie.</em></td></tr>
+                                <tr><td><strong>Wołacz</strong></td><td>o! (zwrot)</td><td><em>grodzie</em></td><td><em>Grodzie, otwórz się!</em></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Zasady przyimków</span>
+                        <p>Po przyimkach zawsze używamy konkretnych przypadków:</p>
+                        <ul>
+                            <li><em>do, bez, od, z, u</em> → Dopełniacz: <em>do domu, bez strachu</em></li>
+                            <li><em>ku, dzięki, przeciwko</em> → Celownik: <em>ku grodowi</em></li>
+                            <li><em>na, w, o, po, przy</em> → Miejscownik: <em>na grodzie, w grodzie</em></li>
+                            <li><em>przed, za, nad, pod, między</em> → Narzędnik: <em>przed grodem</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-rzeczownik-zywotnosc">
+                <h2>9. Rzeczowniki żywotne i nieżywotne</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Żywotność rzeczowników</span>
+                    <p>Rzeczowniki dzielimy na <strong>żywotne</strong> (istoty żywe) i <strong>nieżywotne</strong> (przedmioty, zjawiska, pojęcia).</p>
+                    <p>To rozróżnienie ma znaczenie przy tworzeniu <strong>biernika</strong> (przypadek „kogo? co?”):</p>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Rodzaj</th><th>Przykład (Mianownik)</th><th>Przykład (Biernik)</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Męski żywotny</strong></td><td><em>Kajko</em></td><td><em>widzę Kajka</em></td></tr>
+                                <tr><td><strong>Męski żywotny</strong></td><td><em>pies</em></td><td><em>widzę psa</em></td></tr>
+                                <tr><td><strong>Męski nieżywotny</strong></td><td><em>miecz</em></td><td><em>widzę miecz</em></td></tr>
+                                <tr><td><strong>Męski nieżywotny</strong></td><td><em>gród</em></td><td><em>widzę gród</em></td></tr>
+                                <tr><td><strong>Żeński żywotny</strong></td><td><em>matka</em></td><td><em>widzę matkę</em></td></tr>
+                                <tr><td><strong>Żeński żywotny</strong></td><td><em>Lubawa</em></td><td><em>widzę Lubawę</em></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">WAŻNE! Rzeczowniki żeńskie żywotne</span>
+                        <p>Rzeczowniki żeńskie żywotne (np. <em>matka, kobieta, siostra</em>) mają w bierniku formę <strong>-ę</strong>, która różni się od dopełniacza (dopełniacz: <em>matki</em>, biernik: <em>matkę</em>). Reguła „biernik = dopełniacz” dotyczy <strong>głównie rzeczowników męskich żywotnych</strong>.</p>
+                    </div>
+                    <p><strong>Przykłady z lektury:</strong></p>
+                    <ul>
+                        <li><strong>Żywotne (męskie):</strong> Kajko, Kokosz, Mirmił, Hegemon, Łamignat.</li>
+                        <li><strong>Żywotne (żeńskie):</strong> Lubawa, Jaga.</li>
+                        <li><strong>Nieżywotne:</strong> miecz, gród, komiks, dymek, kadr, onomatopeja, marzenie.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-rzeczownik-nie">
+                <h2>10. Zasada pisowni „nie” z rzeczownikami</h2>
+                <div class="card card-trap">
+                    <span class="card-label">Zasada ogólna</span>
+                    <p><strong>„nie” z rzeczownikami piszemy ŁĄCZNIE.</strong></p>
+                    <p><strong>Przykłady:</strong> <span class="correct-text">niepogoda, nieprzyjaciel, nieporządek, niezgoda, nieład, niepokój, nielatanie</span></p>
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">DLACZEGO?</span>
+                        <p>Rzeczownik z „nie” tworzy nowe pojęcie – przeciwieństwo lub brak czegoś. Podobnie jak przymiotnik, rzeczownik z „nie” jest traktowany jako osobny wyraz, stąd łączna pisownia.</p>
+                    </div>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Wyjątki – kiedy piszemy ROZDZIELNIE?</span>
+                    <p>„Nie” z rzeczownikami piszemy <strong>rozdzielnie</strong>, gdy:</p>
+                    <ul>
+                        <li>w zdaniu występuje <strong>przeczenie rzeczownika</strong> (np. <em>„To nie pogoda, tylko burza.”</em>)</li>
+                        <li>używamy konstrukcji z <strong>„ani”</strong> (np. <em>„Ani nie pogoda, ani nie słońce.”</em>)</li>
+                        <li>rzeczownik jest <strong>zaprzeczony w zdaniu</strong> (np. <em>„To nie przyjaciel, ale wróg.”</em>)</li>
+                        <li>z <strong>nazwami własnymi</strong> – piszemy z łącznikiem: <em>nie-Polak</em></li>
+                    </ul>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Łącznie (określenie zjawiska)</th><th>Rozdzielnie (przeczenie w zdaniu)</th></tr></thead>
+                            <tbody>
+                                <tr><td><em>Niepogoda trwała cały dzień.</em></td><td><em>To nie pogoda, ale burza.</em></td></tr>
+                                <tr><td><em>Nieprzyjaciel zaatakował gród.</em></td><td><em>To nie przyjaciel, tylko wróg.</em></td></tr>
+                                <tr><td><em>W grodzie panował nieporządek.</em></td><td><em>To nie porządek, tylko chaos.</em></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h3>Liczba podwójna</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Liczba podwójna – formy</span>
+                    <p>W języku polskim istnieją formy liczby podwójnej, które wskazują na parę:</p>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Przypadek</th><th>oko</th><th>ucho</th><th>ręka</th></tr></thead>
+                            <tbody>
+                                <tr><td>Mianownik</td><td>oczy</td><td>uszy</td><td>ręce</td></tr>
+                                <tr><td>Dopełniacz</td><td>oczu</td><td>uszu</td><td>rąk</td></tr>
+                                <tr><td>Celownik</td><td>oczom</td><td>uszom</td><td>rękom</td></tr>
+                                <tr><td>Biernik</td><td>oczy</td><td>uszy</td><td>ręce</td></tr>
+                                <tr><td>Narzędnik</td><td>oczami</td><td>uszami</td><td>rękami</td></tr>
+                                <tr><td>Miejscownik</td><td>oczach</td><td>uszach</td><td>rękach</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>Przykłady:</strong> <em>Dwoje oczu, obie ręce, dwoje uszu.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 3 – MASTER + KONKURS + OLIMPIADA
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part3">
+            <div class="part-heading"><span class="part-num">Część 3</span> · MASTER · KONKURS · OLIMPIADA</div>
+
+            <div class="section" data-level="exam" id="sec-master">
+                <h2>11. MASTER – pytania i odpowiedzi</h2>
+
+                <div class="card card-ambitious">
+                    <span class="card-label">Pytania MASTER</span>
+                    <ol>
+                        <li>Określ żywotność i podaj biernik: Kajko, miecz, Lubawa, gród.</li>
+                        <li>Wyjaśnij, dlaczego „latanie” to rzeczownik, a nie czasownik.</li>
+                        <li>Popraw pisownię „nie” i uzasadnij: „To nie przyjaciel, tylko wróg” vs „nieprzyjaciel zaatakował”.</li>
+                        <li>Uzupełnij liczbę podwójną: Podniósł _____ (ręka), zamknął _____ (oko).</li>
+                    </ol>
+                    <button class="btn btn-primary" onclick="toggleMasterAnswers()">Pokaż / ukryj odpowiedzi</button>
+                    <div id="masterAnswers" style="display:none; margin-top:8px; padding:10px; background:#f0f6ff; border-radius:8px;">
+                        <p><strong>Odpowiedzi MASTER:</strong></p>
+                        <ol>
+                            <li>Kajko – żywotny → Kajka; miecz – nieżywotny → miecz; Lubawa – żywotny → Lubawę; gród – nieżywotny → gród.</li>
+                            <li>Odpowiada na pytanie „co?” / „o czym?”, odmienia się przez przypadki, oznacza czynność jako pojęcie.</li>
+                            <li><em>To nie przyjaciel</em> (przeczenie w zdaniu – rozdzielnie); <em>nieprzyjaciel</em> (łącznie – nazwa zjawiska).</li>
+                            <li>ręce, oczy.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="ambitious" id="sec-konkurs">
+                <h2>12. KONKURS – zadanie wieloetapowe</h2>
+                <div class="card card-ambitious">
+                    <span class="card-label">Zadanie konkursowe</span>
+                    <p><strong>Treść:</strong> Przeanalizuj fragment: <em>„Kajko i Kokosz stali przed bramą grodu.”</em></p>
+                    <ol>
+                        <li>Wypisz wszystkie rzeczowniki i określ ich rodzaj gramatyczny oraz żywotność.</li>
+                        <li>Przekształć zdanie na liczbę mnogą (jeśli to możliwe) i sprawdź, które formy się zmieniają.</li>
+                        <li>Użyj w zdaniu rzeczownika odczasownikowego od czasownika <em>stać</em>.</li>
+                    </ol>
+                    <button class="btn btn-primary" onclick="toggleKonkursAnswers()">Pokaż / ukryj rozwiązanie</button>
+                    <div id="konkursAnswers" style="display:none; margin-top:8px; padding:10px; background:#f5f0ff; border-radius:8px;">
+                        <p><strong>Rozwiązanie (MASTER):</strong></p>
+                        <ol>
+                            <li><em>Kajko</em> – męski, żywotny; <em>Kokosz</em> – męski, żywotny; <em>brama</em> – żeński, nieżywotny; <em>gród</em> – męski, nieżywotny.</li>
+                            <li><em>Kajko i Kokosz stali przed bramami grodów.</em> – zmiana na liczbę mnogą wymaga zmiany końcówek.</li>
+                            <li><em>Stanie przed bramą grodu było ich codziennością.</em> – <em>stanie</em> to rzeczownik odczasownikowy.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="ambitious" id="sec-olimpiada">
+                <h2>13. OLIMPIADA – problem otwarty</h2>
+                <div class="card card-ambitious">
+                    <span class="card-label">Problem otwarty</span>
+                    <p><strong>Treść:</strong> Czy wszystkie rzeczowniki żeńskie w bierniku mają końcówkę -ę? Podaj kontrprzykład i uzasadnij.</p>
+                    <button class="btn btn-primary" onclick="toggleOlimpiadaAnswers()">Pokaż / ukryj przykładową odpowiedź</button>
+                    <div id="olimpiadaAnswers" style="display:none; margin-top:8px; padding:10px; background:#f5f0ff; border-radius:8px;">
+                        <p><strong>Przykładowa odpowiedź:</strong></p>
+                        <p>Nie wszystkie. Rzeczowniki żeńskie zakończone na <em>-i</em> (np. <em>pani</em>) mają w bierniku <em>panią</em> – końcówka <em>-ią</em>, nie <em>-ę</em>. To wyjątek, ale ważny w odmianie.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 4 – ĆWICZENIA INTERAKTYWNE
+        ============================================================ -->
+        <section class="section" data-level="training" id="part4">
+            <div class="part-heading"><span class="part-num">Część 4</span> · Ćwiczenia interaktywne</div>
+
+            <div class="hide-all-wrap">
+                <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+                <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cwiczenia">
+                <h2>14. Ćwiczenie – rozpoznaj rzeczownik</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ, czy podkreślony wyraz jest rzeczownikiem (tak/nie). Zwróć uwagę na rzeczowniki odczasownikowe! <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. <strong>Kajko</strong> jest sprytny.</span>
+                        <select id="rzecz1"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="rzeczIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Kokosz jest <strong>silny</strong>.</span>
+                        <select id="rzecz2"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="rzeczIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Mirmił marzył o <strong>lataniu</strong>.</span>
+                        <select id="rzecz3"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="rzeczIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. Hegemon <strong>manipulował</strong> Mirmiłem.</span>
+                        <select id="rzecz4"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="rzeczIcon4"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">5. <strong>Myślenie</strong> jest ważne w walce.</span>
+                        <select id="rzecz5"><option value="">— wybierz —</option><option value="tak">tak</option><option value="nie">nie</option></select>
+                        <span class="result-icon" id="rzeczIcon5"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkRzeczownik()">Sprawdź</button>
+                    <div id="rzeczResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-nie-rzeczownik">
+                <h2>15. Ćwiczenie – „nie” z rzeczownikami</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wpisz poprawną formę rzeczownika z „nie” (łącznie lub rozdzielnie). <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Na dworze panowała _____ (nie + pogoda).</span>
+                        <input type="text" id="nierz1" placeholder="wpisz...">
+                        <span class="result-icon" id="nierzIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. To _____ (nie + przyjaciel) mi pomógł.</span>
+                        <input type="text" id="nierz2" placeholder="wpisz..." style="width:180px;">
+                        <span class="result-icon" id="nierzIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. W grodzie panował _____ (nie + porządek).</span>
+                        <input type="text" id="nierz3" placeholder="wpisz...">
+                        <span class="result-icon" id="nierzIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. To _____ (nie + pogoda), tylko burza.</span>
+                        <input type="text" id="nierz4" placeholder="wpisz..." style="width:180px;">
+                        <span class="result-icon" id="nierzIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkNieRzeczownik()">Sprawdź</button>
+                    <div id="nierzResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-zywotnosc">
+                <h2>16. Ćwiczenie – żywotność rzeczowników</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ, czy rzeczownik jest żywotny czy nieżywotny. Dla żywotnych podaj formę biernika. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. <strong>Kajko</strong> →</span>
+                        <select id="zyw1"><option value="">— wybierz —</option><option value="zywotny">żywotny</option><option value="niezywotny">nieżywotny</option></select>
+                        <span style="font-weight:500; font-size:0.85rem;">Biernik:</span>
+                        <input type="text" id="zyw1b" placeholder="..." style="width:100px;">
+                        <span class="result-icon" id="zywIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. <strong>miecz</strong> →</span>
+                        <select id="zyw2"><option value="">— wybierz —</option><option value="zywotny">żywotny</option><option value="niezywotny">nieżywotny</option></select>
+                        <span style="font-weight:500; font-size:0.85rem;">Biernik:</span>
+                        <input type="text" id="zyw2b" placeholder="..." style="width:100px;">
+                        <span class="result-icon" id="zywIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. <strong>Lubawa</strong> →</span>
+                        <select id="zyw3"><option value="">— wybierz —</option><option value="zywotny">żywotny</option><option value="niezywotny">nieżywotny</option></select>
+                        <span style="font-weight:500; font-size:0.85rem;">Biernik:</span>
+                        <input type="text" id="zyw3b" placeholder="..." style="width:100px;">
+                        <span class="result-icon" id="zywIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. <strong>gród</strong> →</span>
+                        <select id="zyw4"><option value="">— wybierz —</option><option value="zywotny">żywotny</option><option value="niezywotny">nieżywotny</option></select>
+                        <span style="font-weight:500; font-size:0.85rem;">Biernik:</span>
+                        <input type="text" id="zyw4b" placeholder="..." style="width:100px;">
+                        <span class="result-icon" id="zywIcon4"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkZywotnosc()">Sprawdź</button>
+                    <div id="zywResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 5 – FISZKI
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part5">
+            <div class="part-heading"><span class="part-num">Część 5</span> · Fiszki interaktywne</div>
+
+            <div class="section" data-level="basic" id="sec-flashcards">
+                <h2>17. Fiszki – najważniejsze pojęcia</h2>
+                <div class="flashcard-grid">
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Rzeczownik</span>
+                        <span class="back">Odmienna część mowy nazywająca osoby, zwierzęta, przedmioty, zjawiska, uczucia i pojęcia.<br>Pytania: <em>kto? co?</em><br>Przykład: <em>Kajko, miecz, przyjaźń</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Przypadki (7)</span>
+                        <span class="back">Mianownik, Dopełniacz, Celownik, Biernik, Narzędnik, Miejscownik, Wołacz.<br>Pytania: <em>kto? co? kogo? czego? komu? czemu? itd.</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Rzeczowniki żywotne</span>
+                        <span class="back">Oznaczają istoty żywe.<br>Przykład: <em>Kajko, pies, Hegemon</em><br>W bierniku (męskie) mają formę dopełniacza: <em>widzę Kajka</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Rzeczowniki nieżywotne</span>
+                        <span class="back">Oznaczają przedmioty, zjawiska, pojęcia.<br>Przykład: <em>miecz, gród, marzenie</em><br>W bierniku mają formę mianownika: <em>widzę miecz</em></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Rzeczowniki żeńskie żywotne</span>
+                        <span class="back">Mają w bierniku formę <strong>-ę</strong>: <em>widzę Lubawę, widzę matkę</em><br>Reguła „biernik = dopełniacz” dotyczy głównie męskich żywotnych.</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Rzeczowniki odczasownikowe</span>
+                        <span class="back">Powstają od czasowników, oznaczają czynności.<br>Przykład: <em>latanie, myślenie, czytanie</em><br><strong>To NIE czasowniki!</strong></span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">„nie” z rzeczownikami</span>
+                        <span class="back"><strong>ŁĄCZNIE</strong><br>Przykład: <em>niepogoda, nieprzyjaciel, nieporządek</em><br>Wyjątek: przeczenie w zdaniu (<em>to nie pogoda</em>)</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Liczba podwójna</span>
+                        <span class="back">Formy wskazujące na parę.<br>Przykład: <em>oczy, ręce, uszy</em><br>Odmiana: <em>oczu, rąk, uszom</em> itd.</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Hegemon</span>
+                        <span class="back">Czarodziej, manipulator.<br>Wykorzystuje marzenie Mirmiła o lataniu, by wywabić go z grodu i przejąć władzę.</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Łamignat</span>
+                        <span class="back">Zbój, mąż Jagi.<br>Silny, ale niezbyt bystry – często daje się oszukać Kajkowi.</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Motyw przyjaźni</span>
+                        <span class="back">Kajko i Kokosz uzupełniają się nawzajem (spryt + siła). Razem są niepokonani.</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Kadry (panelle)</span>
+                        <span class="back">Ramki z obrazkami w komiksie.<br>Różne rozmiary – duże spowalniają akcję, małe przyspieszają.</span>
+                    </button>
+                    <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                        <span class="front">Onomatopeje</span>
+                        <span class="back">Wyrazy dźwiękonaśladowcze.<br>Przykład: <em>bum, trach, łup, brzdęk, huk</em></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 6 – TEST KOŃCOWY (MISJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part6">
+            <div class="part-heading"><span class="part-num">Część 6</span> · Test końcowy – MISJA</div>
+
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>18. Misja końcowa</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Zadanie</span>
+                    <p>Bez zaglądania do notatek – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                    <p>Pamiętaj o najważniejszych poprawkach: <strong>„Kajko i Kokosz” to jedyny komiks uznawany przez CKE</strong>, <strong>Hegemon wykorzystuje marzenia Mirmiła</strong>, <strong>rzeczowniki mają 7 przypadków</strong>.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą lub odpowiedzią. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 7 – PODSUMOWANIE I PUŁAPKI
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part7">
+            <div class="part-heading"><span class="part-num">Część 7</span> · Podsumowanie i pułapki</div>
+
+            <div class="section" data-level="exam" id="sec-podsumowanie">
+                <h2>19. Co powinieneś umieć po tej lekcji?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Sprawdź się</span>
+                    <ul>
+                        <li><span class="correct-text">Znam autora i tytuł „Kajka i Kokosza”.</span></li>
+                        <li><span class="correct-text">Wiem, że to jedyny komiks z gwarancją uznania na egzaminie.</span></li>
+                        <li><span class="correct-text">Znam bohaterów: Kajko, Kokosz, Mirmił, Hegemon, Łamignat, Lubawa, Jaga.</span></li>
+                        <li><span class="correct-text">Znam sekwencję zdarzeń w „Szkole Latania”.</span></li>
+                        <li><span class="correct-text">Rozumiem motywy: przyjaźń, marzenia, walka dobra ze złem, manipulacja.</span></li>
+                        <li><span class="correct-text">Znam elementy komiksu: kadry, dymki, onomatopeje.</span></li>
+                        <li><span class="correct-text">Rozróżniam rzeczowniki żywotne i nieżywotne (w tym żeńskie).</span></li>
+                        <li><span class="correct-text">Znam 7 przypadków i zasady przyimków.</span></li>
+                        <li><span class="correct-text">Znam zasadę pisowni „nie” z rzeczownikami.</span></li>
+                        <li><span class="correct-text">Znam rzeczowniki odczasownikowe i liczbę podwójną.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-pulapki">
+                <h2>20. Najczęstsze pułapki egzaminacyjne</h2>
+                <div class="table-wrap">
+                    <table class="trap-table">
+                        <thead><tr><th>Pułapka</th><th>Błąd</th><th>Poprawnie</th></tr></thead>
+                        <tbody>
+                            <tr><td>Komiks na egzaminie</td><td><span class="error-text">Można użyć dowolnego komiksu.</span></td><td><span class="correct-text">Tylko „Kajko i Kokosz” ma gwarancję uznania.</span></td></tr>
+                            <tr><td>Rola Hegemona</td><td><span class="error-text">Hegemon uczy Mirmiła latać.</span></td><td><span class="correct-text">Hegemon wykorzystuje marzenie Mirmiła, by przejąć władzę.</span></td></tr>
+                            <tr><td>Przypadki</td><td><span class="error-text">Jest 6 przypadków.</span></td><td><span class="correct-text">Jest 7 przypadków.</span></td></tr>
+                            <tr><td>„nie” z rzeczownikiem</td><td><span class="error-text">nie pogoda (zawsze rozdzielnie)</span></td><td><span class="correct-text">niepogoda (łącznie) – chyba że przeczymy w zdaniu</span></td></tr>
+                            <tr><td>Żywotność – „gród”</td><td><span class="error-text">„gród” jest żywotny.</span></td><td><span class="correct-text">„gród” jest nieżywotny (widzę gród).</span></td></tr>
+                            <tr><td>Rzeczowniki żeńskie żywotne</td><td><span class="error-text">widzę żona</span></td><td><span class="correct-text">widzę żonę (biernik = -ę)</span></td></tr>
+                            <tr><td>Rzeczowniki odczasownikowe</td><td><span class="error-text">„Latanie” to czasownik.</span></td><td><span class="correct-text">„Latanie” to rzeczownik (od: latać).</span></td></tr>
+                            <tr><td>Liczba podwójna</td><td><span class="error-text">„oko” w liczbie mnogiej to „oka”.</span></td><td><span class="correct-text">„oko” w liczbie podwójnej to „oczy”.</span></td></tr>
+                            <tr><td>Kajko i Kokosz</td><td><span class="error-text">Obaj są silni.</span></td><td><span class="correct-text">Kajko – sprytny, Kokosz – silny. Uzupełniają się.</span></td></tr>
+                            <tr><td>Egzamin a treść lektury</td><td><span class="error-text">Egzamin sprawdza całą treść „Szkoły Latania”.</span></td><td><span class="correct-text">W części I egzamin sprawdza tylko fragment z arkusza.</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STOPKA
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>Lekcja 5 – „Kajko i Kokosz” + rzeczownik</strong> &bull; Wersja FINALNA – pełna treść, uzupełniona o MASTER, KONKURS, OLIMPIADA i słownik &bull; 2026-09-07</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
+            <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ======================================================================
+        // JAVASCRIPT – interakcje
+        // ======================================================================
+
+        // ---------- POSTĘP ----------
+        function updateProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]') || [];
+            let total = 0, done = 0;
+            checks.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 0;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            const fill = document.getElementById('progressFill');
+            if (fill) fill.style.width = pct + '%';
+            const pctLabel = document.getElementById('progressPercent');
+            if (pctLabel) pctLabel.textContent = pct + '%';
+            const statusEl = document.getElementById('progressStatus');
+            if (statusEl) {
+                if (pct === 100) statusEl.textContent = 'Świetnie. Opanowałeś lekcję!';
+                else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze. Dokończ resztę.';
+                else if (pct >= 50) statusEl.textContent = 'Dobrze. Poćwicz jeszcze.';
+                else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+                else statusEl.textContent = 'Zacznij naukę';
+            }
+            updateTasks(pct);
+        }
+
+        function updateTasks(pct) {
+            const tasks = document.querySelectorAll('.today-tasks .task');
+            const thresholds = [10, 25, 45, 65, 85];
+            tasks.forEach((task, i) => {
+                if (pct >= thresholds[i]) task.classList.add('done');
+                else task.classList.remove('done');
+            });
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => cb.checked = false);
+            updateProgress();
+        }
+
+        // ---------- FILTRY ----------
+        let currentView = 'all';
+
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+            if (btn) btn.classList.add('active');
+            applyFilter(view);
+            updateVisibleCount();
+        }
+
+        function applyFilter(view) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const level = sec.dataset.level || 'basic';
+                let show = true;
+                if (view === 'basic') {
+                    show = (level === 'basic' || level === 'training' || level === 'remember');
+                } else if (view === 'exam') {
+                    show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level === 'difficult' || level === 'remember' || level === 'ambitious');
+                }
+                if (view === 'all') show = true;
+                sec.classList.toggle('hidden-by-filter', !show);
+            });
+        }
+
+        function updateVisibleCount() {
+            const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+            const total = document.querySelectorAll('.section').length;
+            const vEl = document.getElementById('visibleCount');
+            const tEl = document.getElementById('totalCount');
+            if (vEl) vEl.textContent = visible;
+            if (tEl) tEl.textContent = total;
+        }
+
+        // ---------- TOGGLE FLASHCARD ----------
+        function toggleFlashcard(card) {
+            card.classList.toggle('flipped');
+        }
+
+        // ---------- TOGGLE MASTER/KONKURS/OLIMPIADA ----------
+        function toggleMasterAnswers() {
+            const el = document.getElementById('masterAnswers');
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+        function toggleKonkursAnswers() {
+            const el = document.getElementById('konkursAnswers');
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+        function toggleOlimpiadaAnswers() {
+            const el = document.getElementById('olimpiadaAnswers');
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // ---------- HIDE ALL ANSWERS ----------
+        function hideAllAnswers() {
+            document.querySelectorAll('.fitb-row input[type="text"]').forEach(inp => {
+                inp.classList.remove('correct', 'wrong');
+            });
+            document.querySelectorAll('.fitb-row .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            document.querySelectorAll('#masterAnswers, #konkursAnswers, #olimpiadaAnswers').forEach(el => {
+                el.style.display = 'none';
+            });
+        }
+
+        // ---------- MM REVEAL ----------
+        function mmReveal(btn, text) {
+            const out = btn.querySelector('.mm-answer');
+            if (!out) return;
+            const open = out.textContent.trim() !== '';
+            out.textContent = open ? '' : 'Odpowiedź: ' + text;
+        }
+
+        // ---------- ĆWICZENIA ----------
+        function checkRzeczownik() {
+            const answers = ['tak', 'nie', 'tak', 'nie', 'tak'];
+            const icons = ['rzeczIcon1', 'rzeczIcon2', 'rzeczIcon3', 'rzeczIcon4', 'rzeczIcon5'];
+            let correct = 0;
+            for (let i = 1; i <= 5; i++) {
+                const sel = document.getElementById('rzecz' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('rzeczResult');
+            if (res) res.innerHTML =
+                `<span style="color:${correct === 5 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/5. ${correct === 5 ? 'Świetnie rozpoznajesz rzeczowniki (w tym odczasownikowe)!' : 'Sprawdź, co nazywa dany wyraz – zwróć uwagę na rzeczowniki odczasownikowe.'}</span>`;
+        }
+
+        function checkNieRzeczownik() {
+            const answers = ['niepogoda', 'nie przyjaciel', 'nieporządek', 'nie pogoda'];
+            const icons = ['nierzIcon1', 'nierzIcon2', 'nierzIcon3', 'nierzIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const inp = document.getElementById('nierz' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim().toLowerCase();
+                const isOk = val === answers[i - 1].toLowerCase();
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('nierzResult');
+            if (res) res.innerHTML =
+                `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Zasada "nie" z rzeczownikami opanowana!' : 'Pamiętaj: "nie" z rzeczownikami piszemy łącznie, chyba że przeczymy w zdaniu.'}</span>`;
+        }
+
+        function checkZywotnosc() {
+            const answers = [
+                { rodzaj: 'zywotny', biernik: 'Kajka' },
+                { rodzaj: 'niezywotny', biernik: 'miecz' },
+                { rodzaj: 'zywotny', biernik: 'Lubawę' },
+                { rodzaj: 'niezywotny', biernik: 'gród' }
+            ];
+            const icons = ['zywIcon1', 'zywIcon2', 'zywIcon3', 'zywIcon4'];
+            let correct = 0;
+            for (let i = 1; i <= 4; i++) {
+                const sel = document.getElementById('zyw' + i);
+                const inpB = document.getElementById('zyw' + i + 'b');
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !inpB || !icon) continue;
+                const valR = sel.value;
+                const valB = inpB.value.trim().toLowerCase();
+                const isOk = valR === answers[i - 1].rodzaj && valB === answers[i - 1].biernik.toLowerCase();
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('zywResult');
+            if (res) res.innerHTML =
+                `<span style="color:${correct === 4 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/4. ${correct === 4 ? 'Świetnie rozróżniasz żywotność i biernik!' : 'Sprawdź, czy poprawnie określiłeś rodzaj i formę biernika.'}</span>`;
+        }
+
+        // ---------- MISJA ----------
+        const missionData = [
+            { q: '1. Kto jest autorem „Kajka i Kokosza”?', correct: 'Janusz Christa' },
+            { q: '2. Czy „Kajko i Kokosz” to jedyny komiks uznawany przez CKE? (tak/nie)', correct: 'tak' },
+            { q: '3. Kto jest sprytny, a kto silny w duecie Kajko i Kokosz? (wpisz imię sprytnego)', correct: 'Kajko' },
+            { q: '4. Kto wykorzystuje marzenie Mirmiła o lataniu?', correct: 'Hegemon' },
+            { q: '5. Jaka część mowy nazywa osoby, zwierzęta, przedmioty?', correct: 'rzeczownik' },
+            { q: '6. Ile jest przypadków w języku polskim?', correct: '7' },
+            { q: '7. „Kajko” – rzeczownik żywotny czy nieżywotny?', correct: 'żywotny' },
+            { q: '8. „miecz” – rzeczownik żywotny czy nieżywotny?', correct: 'nieżywotny' },
+            { q: '9. „Lubawa” – rzeczownik żywotny czy nieżywotny?', correct: 'żywotny' },
+            { q: '10. „nie” z rzeczownikami piszemy ……… (łącznie/rozdzielnie)', correct: 'łącznie' },
+            { q: '11. Kto jest zbójem i porywaczem w komiksie?', correct: 'Łamignat' },
+            { q: '12. Jaki element komiksu zawiera wypowiedzi bohaterów?', correct: 'dymek' },
+            { q: '13. Jaki motyw łączymy z Kajkiem i Kokoszem?', correct: 'przyjaźń' },
+            { q: '14. Podaj formę liczby podwójnej od rzeczownika „oko”.', correct: 'oczy' },
+            { q: '15. Podaj przykład rzeczownika odczasownikowego.', correct: 'latanie' },
+        ];
+
+        function initMission() {
+            const container = document.getElementById('missionQuestions');
+            if (!container) return;
+            container.innerHTML = '';
+            missionData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'fitb-row';
+                div.innerHTML = `
+                    <span style="font-weight:500;">${item.q}</span>
+                    <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:180px;">
+                    <span class="result-icon" id="missionIcon${idx}"></span>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkMission() {
+            let correct = 0;
+            const total = missionData.length;
+            const mistakes = [];
+            missionData.forEach((item, idx) => {
+                const input = document.getElementById('missionInput' + idx);
+                const icon = document.getElementById('missionIcon' + idx);
+                if (!input || !icon) return;
+                const val = input.value.trim().toLowerCase();
+                const isOk = val === item.correct.toLowerCase();
+                input.classList.toggle('correct', isOk);
+                input.classList.toggle('wrong', !isOk);
+                if (isOk) {
+                    icon.textContent = '✓';
+                    icon.style.color = '#2d8f5e';
+                    correct++;
+                } else {
+                    icon.textContent = '✗';
+                    icon.style.color = '#dc3545';
+                    mistakes.push(`${idx + 1}. (poprawnie: „${item.correct}”)`);
+                }
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (!resultDiv) return;
+            resultDiv.style.display = 'block';
+            const pct = Math.round((correct / total) * 100);
+            let msg = '', cls = '';
+            if (pct === 100) { msg = 'Świetnie! Opanowałeś lekcję!'; cls = 'perfect'; }
+            else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane zagadnienia.'; cls = 'good'; }
+            else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.'; cls = 'ok'; }
+            else { msg = 'Powtórz podstawy i rozwiąż test jeszcze raz.'; cls = 'fail'; }
+            resultDiv.className = 'mission-result ' + cls;
+            resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+                (mistakes.length ? `<br><span class="text-sm">Popraw odpowiedzi: ${mistakes.join('; ')}</span>` : '');
+        }
+
+        function resetMission() {
+            document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'wrong');
+            });
+            document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (resultDiv) resultDiv.style.display = 'none';
+        }
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            setView('all');
+            initMission();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chemia L002 — Tlenki</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;background:#f5f7fa;color:#1e293b;line-height:1.7;padding:16px;}
+.container{max-width:1060px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px;}}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+}
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-exam{background:#ffe8cc;color:#8a6d3b;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+.table-wrap .error-row{background:#fef2f2;}
+.table-wrap .correct-row{background:#f0faf4;}
+.example{background:var(--color-bg-subtle);border-radius:10px;padding:10px 14px;margin:8px 0;border:1px solid var(--color-border);display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;}
+.example .chem{font-weight:600;color:#0a2540;font-size:1.0rem;font-family:'Courier New',monospace;}
+.example .desc{color:var(--color-text-muted);font-size:0.88rem;}
+.example .tag{display:inline-block;font-size:0.55rem;font-weight:600;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:12px;color:#2d3a4f;}
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 14px;border-radius:8px;border:1px solid var(--color-border);background:#fff;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;color:var(--color-text);font-family:inherit;}
+.btn:hover{background:var(--color-bg-subtle);border-color:#b0b8c4;}
+.btn-outline{background:transparent;border:1px solid var(--color-border);}
+.btn-outline:hover{background:var(--color-bg-subtle);}
+.btn-sm{padding:3px 10px;font-size:0.74rem;}
+.answer-toggle{font-family:inherit;padding:4px 14px;border-radius:6px;border:none;cursor:pointer;font-size:0.78rem;font-weight:500;transition:all 0.2s;margin-top:4px;margin-right:4px;background:var(--color-training);color:#fff;}
+.answer-toggle:hover{background:#1f4e8c;}
+.answer-content{border-radius:6px;padding:0 12px;margin-top:4px;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.3s ease,opacity 0.3s ease;opacity:0;background:var(--color-training-bg);border-left:3px solid var(--color-training);}
+.answer-content.show{max-height:3000px;padding:10px 12px;opacity:1;}
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;transition:background 0.2s;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"▶";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;transition:background 0.2s,color 0.2s;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+.section{margin-bottom:8px;}
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.warning-box{background:#fee2e2;border:1px solid #f87171;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.ambitny-box{background:#dbeafe;border:1px solid #3b82f6;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:80px;}
+.flashcard .front{font-weight:700;font-size:1.05rem;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.95rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+.diagram{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:16px 0;text-align:center;}
+.diagram svg{max-width:100%;height:auto;}
+.diagram .caption{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:8px;}
+.def-box{background:#eef7ff;border-left:4px solid #2b6cb0;border-radius:8px;padding:10px 14px;margin:10px 0;}
+.def-box .term{font-weight:700;color:#0a2540;}
+.def-box .meaning{color:#1e293b;}
+.curiosity{background:#fdf4ff;border-left:4px solid #a855f7;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:0.92rem;}
+.curiosity .label{font-weight:700;color:#7c3aed;display:block;margin-bottom:2px;}
+.rule-box{display:flex;gap:10px;align-items:flex-start;padding:8px 12px;border-radius:8px;margin:6px 0;font-size:0.9rem;}
+.rule-box .icon{font-weight:700;flex-shrink:0;}
+.rule-box.fact{background:#f0faf4;}
+.rule-box.fact .icon{color:#2d8f5e;}
+.rule-box.school{background:#f0f6ff;}
+.rule-box.school .icon{color:#2b6cb0;}
+.rule-box.exam{background:#fffbeb;}
+.rule-box.exam .icon{color:#b7791f;}
+.rule-box.trap{background:#fef2f2;}
+.rule-box.trap .icon{color:#dc3545;}
+@media(max-width:600px){
+  .top-panel .panel-row{flex-direction:column;align-items:stretch;}
+  .container{padding:10px 6px;}
+  .toc-section{padding:12px 14px;}
+  .toc-summary{font-size:0.85rem;padding:6px 10px;}
+  }
+</style>
+</head>
+<body>
+<div class="container" id="app">
+<div class="card card-correct" style="margin-bottom:16px">
+  <span class="card-label">Numer</span>
+  <p><strong>L002 = tlenki</strong> (po L001 fundamentach, przed L003 wodorotlenkami). Extra VSEPR to L013.</p>
+</div>
+
+
+<!-- TOP PANEL -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L002 — Tlenki</div>
+      <div class="subtitle">Klasa 8 · Wrzesień/Październik · Poziom szkolny + ambitny</div>
+      <div class="lesson-info">
+        Nazewnictwo · Charakter · Otrzymywanie · Reakcje z wodą / kwasami / zasadami · Amfoteryczność
+      </div>
+    </div>
+    
+      <div class="progress-label"><span id="progressPercent">0%</span><span id="progressStatus">Zacznij naukę</span></div>
+    </div>
+  </div>
+  <div class="panel-row">
+    
+    
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+  <details class="toc-item" open>
+    <summary class="toc-summary">Wprowadzenie</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#cel">Cel lekcji</a>
+      <a class="toc-anchor" href="#mapa">Mapa lekcji</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">1. Definicja i nazewnictwo</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#definicja">Definicja</a>
+      <a class="toc-anchor" href="#nazwy">Nazwy</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">2. Charakter tlenków + szybkie rozpoznawanie</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#charakter">Charakter</a>
+      <a class="toc-anchor" href="#szybko">Szybkie rozpoznawanie</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">3. Otrzymywanie</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#otrzymywanie">Otrzymywanie</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">4. Reakcje kluczowe</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#reakcje">Reakcje</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">5. P₂O₅ vs P₄O₁₀</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#p4o10">P₂O₅ / P₄O₁₀</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">6. Doświadczenia + obserwacja ≠ wniosek</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#doswiadczenia">Doświadczenia</a>
+      <a class="toc-anchor" href="#obserwacja">Obserwacja ≠ wniosek</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">7. Klinika błędów</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#klinika">Klinika</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">8. Ćwiczenia, fiszki, test</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a>
+      <a class="toc-anchor" href="#fiszki">Fiszki</a>
+      <a class="toc-anchor" href="#test">Test</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">9. Szybka zasada + ciekawostki</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#szybka-zasada">Szybka zasada</a>
+      <a class="toc-anchor" href="#ciekawostki">Ciekawostki</a>
+    </nav>
+  </details>
+  <div class="toc-keywords"><span>Słowa kluczowe: tlenek · charakter · zasadowy · kwasowy · amfoteryczny · reakcja z wodą · sól + woda</span></div>
+</div>
+
+<!-- CEL -->
+<section class="section" id="cel">
+  <div class="part-heading"><span class="part-num">Cel lekcji</span></div>
+  <div class="card card-correct">
+    <span class="card-label">Po tej lekcji umiesz:</span>
+    <ul>
+      <li>ułożyć wzór tlenku z wartościowości (W–K–S–K z L001),</li>
+      <li>nazwać tlenek systematycznie — z <strong>cyfrą rzymską w nawiasie</strong> przy Fe, Cu, Sn, Pb, Mn, Cr,</li>
+      <li>rozróżnić tlenek <strong>kwasowy, zasadowy, obojętny</strong> i (rozszerzenie) <strong>amfoteryczny</strong>,</li>
+      <li>napisać reakcję tlenku metalu z wodą (→ wodorotlenek) oraz tlenku niemetalu z wodą (→ kwas),</li>
+      <li>napisać reakcje: tlenek zasadowy + kwas → sól + woda; tlenek kwasowy + zasada → sól + woda,</li>
+      <li><strong>szybko rozpoznać charakter</strong> tlenku (reguła 5 punktów),</li>
+      <li>odróżnić <strong>obserwację</strong> od <strong>wniosku</strong> w protokole doświadczenia.</li>
+    </ul>
+  </div>
+  <div class="card card-hint">
+    <span class="card-label">Zasada 80/20</span>
+    <p>20% tej lekcji daje 80% efektu. Te 20% to: <strong>nazewnictwo, charakter tlenku, reakcja z wodą</strong>. Reszta to tło.</p>
+  </div>
+</section>
+
+<!-- MAPA LEKCJI -->
+<section class="section" id="mapa">
+  <div class="part-heading"><span class="part-num">Mapa lekcji</span></div>
+  <div class="diagram">
+    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa lekcji">
+      <g font-family="Segoe UI" font-size="11" text-anchor="middle">
+        <rect x="20" y="70" width="110" height="50" rx="8" fill="#f0f6ff" stroke="#2b6cb0" stroke-width="2"/>
+        <text x="75" y="95" fill="#0a2540" font-weight="700">Wzór</text>
+        <text x="75" y="110" fill="#6b7a8d" font-size="9">W–K–S–K</text>
+        <path d="M130,95 L170,95" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arr)"/>
+        <rect x="170" y="70" width="110" height="50" rx="8" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+        <text x="225" y="95" fill="#0a2540" font-weight="700">Nazwa</text>
+        <text x="225" y="110" fill="#6b7a8d" font-size="9">Fe/Cu z cyfrą</text>
+        <path d="M280,95 L320,95" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arr)"/>
+        <rect x="320" y="70" width="130" height="50" rx="8" fill="#f0faf4" stroke="#2d8f5e" stroke-width="2"/>
+        <text x="385" y="95" fill="#0a2540" font-weight="700">Charakter</text>
+        <text x="385" y="110" fill="#6b7a8d" font-size="9">zas. / kwas. / amf.</text>
+        <path d="M450,95 L490,95" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arr)"/>
+        <rect x="490" y="70" width="130" height="50" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+        <text x="555" y="95" fill="#0a2540" font-weight="700">Reakcje</text>
+        <text x="555" y="110" fill="#6b7a8d" font-size="9">+ woda/kwas/zasada</text>
+        <path d="M620,95 L660,95" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arr)"/>
+        <rect x="660" y="70" width="120" height="50" rx="8" fill="#f5f0ff" stroke="#7c3aed" stroke-width="2"/>
+        <text x="720" y="95" fill="#0a2540" font-weight="700">Zastosowania</text>
+        <text x="720" y="110" fill="#6b7a8d" font-size="9">wapno, szkło, rudy</text>
+        <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><polygon points="0 0, 10 3, 0 6" fill="#6b7a8d"/></marker></defs>
+        <text x="400" y="30" font-size="13" fill="#0a2540" font-weight="700">Przepływ lekcji:</text>
+        <text x="400" y="50" font-size="11" fill="#6b7a8d">od wzoru → przez charakter → do reakcji i zastosowań</text>
+        <text x="400" y="170" font-size="10" fill="#6b7a8d" font-style="italic">Klucz: charakter tlenku decyduje o tym, jak się zachowa w reakcji z wodą, kwasem, zasadą</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- 1. DEFINICJA I NAZEWNICTWO -->
+<section class="section" id="definicja">
+  <div class="part-heading"><span class="part-num">1. Definicja i nazewnictwo</span></div>
+
+  <div class="def-box">
+    <p><span class="term">Tlenek</span> — <span class="meaning">związek tlenu z innym pierwiastkiem (metalem lub niemetalem). Wzór ogólny: pierwiastek + O. W szkolnym modelu tlen występuje najczęściej na stopniu utlenienia −II, dlatego przyjmujemy jego wartościowość II.</span></p>
+  </div>
+
+  <div class="rule-box trap">
+    <span class="icon">!</span>
+    <div><strong>Wyjaśnienie terminologiczne:</strong> nadtlenki (H₂O₂, Na₂O₂) mają tlen na −I. <strong>OF₂ to fluorek tlenu</strong>, nie tlenek — fluor jest bardziej elektroujemny niż tlen.</div>
+  </div>
+
+  <h3>Nazewnictwo — reguła</h3>
+  <div class="card card-remember">
+    <span class="card-label">Reguła</span>
+    <ul>
+      <li>„tlenek” + nazwa pierwiastka,</li>
+      <li><strong>jeśli pierwiastek ma zmienną wartościowość</strong> — w nazwie <strong>zawsze</strong> podajemy cyfrę rzymską w nawiasie: <strong>Fe, Cu, Sn, Pb, Mn, Cr</strong>,</li>
+      <li>np. Fe₂O₃ = tlenek żelaza(III), CuO = tlenek miedzi(II).</li>
+    </ul>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Wzór</th><th>Nazwa</th><th>Uwaga</th></tr></thead>
+      <tbody>
+        <tr><td>Na₂O</td><td>tlenek sodu</td><td>metal grupy 1</td></tr>
+        <tr><td>K₂O</td><td>tlenek potasu</td><td></td></tr>
+        <tr><td>CaO</td><td>tlenek wapnia</td><td></td></tr>
+        <tr><td>MgO</td><td>tlenek magnezu</td><td></td></tr>
+        <tr><td>Al₂O₃</td><td>tlenek glinu</td><td></td></tr>
+        <tr class="error-row"><td>FeO</td><td>tlenek żelaza(II)</td><td>cyfra obowiązkowa</td></tr>
+        <tr class="error-row"><td>Fe₂O₃</td><td>tlenek żelaza(III)</td><td>cyfra obowiązkowa</td></tr>
+        <tr class="error-row"><td>Cu₂O</td><td>tlenek miedzi(I)</td><td></td></tr>
+        <tr class="error-row"><td>CuO</td><td>tlenek miedzi(II)</td><td></td></tr>
+        <tr><td>CO</td><td>tlenek węgla(II) / czad</td><td></td></tr>
+        <tr><td>CO₂</td><td>tlenek węgla(IV) / dwutlenek węgla</td><td>potoczna nazwa OK</td></tr>
+        <tr><td>SO₂</td><td>tlenek siarki(IV)</td><td></td></tr>
+        <tr><td>SO₃</td><td>tlenek siarki(VI)</td><td></td></tr>
+        <tr><td>N₂O₅</td><td>tlenek azotu(V)</td><td></td></tr>
+        <tr><td>P₂O₅</td><td>tlenek fosforu(V)</td><td>zapis szkolny; cząsteczka: P₄O₁₀</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    W polskim nazewnictwie chemicznym stosuje się <strong>cyfrę rzymską w nawiasie</strong> (np. tlenek żelaza(III)), a nie „tlenek żelaza trzy”. To standard IUPAC i nomenklatury szkolnej.
+  </div>
+</section>
+
+<!-- 2. CHARAKTER TLENKÓW -->
+<section class="section" id="charakter">
+  <div class="part-heading"><span class="part-num">2. Charakter tlenków — kluczowe</span></div>
+
+  <div class="card card-remember">
+    <span class="card-label">Cztery typy tlenków</span>
+    <table style="margin-top:8px;width:100%;">
+      <thead><tr><th>Typ</th><th>Skąd</th><th>Reakcja z wodą</th><th>Przykłady</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Zasadowy</strong></td><td>tlenki metali (grupy 1–2)</td><td>+ H₂O → wodorotlenek</td><td>Na₂O, K₂O, CaO, BaO</td></tr>
+        <tr><td><strong>Kwasowy</strong></td><td>tlenki niemetali</td><td>+ H₂O → kwas</td><td>SO₂, SO₃, CO₂, P₂O₅, N₂O₅</td></tr>
+        <tr><td><strong>Obojętny</strong></td><td>nie reaguje z wodą</td><td>brak</td><td>CO, NO, N₂O</td></tr>
+        <tr><td><strong>Amfoteryczny</strong></td><td>na granicy metali/niemetali</td><td>reaguje z kwasem i zasadą</td><td>Al₂O₃, ZnO, BeO</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SVG: diagram charakteru tlenków -->
+  <div class="diagram">
+    <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram charakteru tlenków">
+      <g font-family="Segoe UI" font-size="12" text-anchor="middle">
+        <rect x="300" y="20" width="200" height="40" rx="8" fill="#0a2540"/>
+        <text x="400" y="45" fill="#fff" font-weight="700" font-size="14">PIERWIASTEK + TLEN</text>
+        <path d="M330,60 L200,100" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arrowDark)"/>
+        <path d="M470,60 L600,100" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arrowDark)"/>
+        <defs><marker id="arrowDark" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><polygon points="0 0, 10 3, 0 6" fill="#6b7a8d"/></marker></defs>
+        <rect x="100" y="100" width="200" height="40" rx="8" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+        <text x="200" y="125" fill="#0a2540" font-weight="700">METAL</text>
+        <rect x="500" y="100" width="200" height="40" rx="8" fill="#f0f6ff" stroke="#2b6cb0" stroke-width="2"/>
+        <text x="600" y="125" fill="#0a2540" font-weight="700">NIEMETAL</text>
+        <path d="M150,140 L120,180" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arrowDark)"/>
+        <path d="M250,140 L280,180" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arrowDark)"/>
+        <rect x="30" y="180" width="180" height="40" rx="8" fill="#f0faf4" stroke="#2d8f5e" stroke-width="2"/>
+        <text x="120" y="200" fill="#0a2540" font-weight="700">ZASADOWY</text>
+        <text x="120" y="215" fill="#6b7a8d" font-size="10">Na₂O, CaO, K₂O</text>
+        <rect x="220" y="180" width="180" height="40" rx="8" fill="#f5f0ff" stroke="#7c3aed" stroke-width="2"/>
+        <text x="310" y="200" fill="#0a2540" font-weight="700">AMFOTERYCZNY</text>
+        <text x="310" y="215" fill="#6b7a8d" font-size="10">Al₂O₃, ZnO</text>
+        <rect x="500" y="180" width="200" height="40" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+        <text x="600" y="200" fill="#0a2540" font-weight="700">KWASOWY</text>
+        <text x="600" y="215" fill="#6b7a8d" font-size="10">CO₂, SO₃, P₂O₅</text>
+        <text x="400" y="260" fill="#6b7a8d" font-size="11" font-style="italic">Nie każdy tlenek metalu + woda → wodorotlenek (MgO reaguje słabo; Fe₂O₃ praktycznie nie).</text>
+      </g>
+    </svg>
+    <div class="caption">Charakter tlenku zależy głównie od tego, czy pierwiastek jest metalem, czy niemetalem. Al i Zn — amfoteryczne.</div>
+  </div>
+
+  <div class="rule-box trap">
+    <span class="icon">!</span>
+    <div><strong>Wyjątki:</strong> Mn₂O₇, CrO₃ (tlenki metali na wysokim stopniu utlenienia) mają charakter <strong>kwasowy</strong> — reagują z zasadami, tworząc sole.</div>
+  </div>
+
+  <!-- NOWA SEKCJA: Jak rozpoznać charakter szybko -->
+  <h3 id="szybko">Jak rozpoznać charakter tlenku szybko?</h3>
+  <div class="card card-hint">
+    <span class="card-label">5 reguł — sekcja egzaminacyjna</span>
+    <ol>
+      <li><strong>Tlenek metalu z grup 1–2</strong> (Na, K, Ca, Mg, Ba) → zwykle <strong>zasadowy</strong>.</li>
+      <li><strong>Tlenek niemetalu</strong> (C, S, N, P, Cl) → zwykle <strong>kwasowy</strong>.</li>
+      <li><strong>Tlenek Al, Zn, Be, Pb, Sn</strong> → <strong>amfoteryczny</strong>.</li>
+      <li><strong>CO, NO, N₂O</strong> → <strong>obojętny</strong> (nie reaguje z wodą w warunkach szkolnych).</li>
+      <li><strong>Wyjątki wśród metali:</strong> metale przejściowe na wysokim stopniu utlenienia (np. <strong>Mn₂O₇</strong>, <strong>CrO₃</strong>) dają tlenki <strong>kwasowe</strong>.</li>
+    </ol>
+  </div>
+
+  <div class="rule-box school">
+    <span class="icon">i</span>
+    <div><strong>Dodatkowe wyjątki:</strong> Fe₂O₃, CuO — zasadowe (nie reagują z wodą, ale z kwasami tak). <strong>MgO + H₂O</strong> — praktycznie nie zachodzi w warunkach szkolnych; Mg(OH)₂ raczej przez strącanie.</div>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Tlenki metali przejściowych na wysokim stopniu utlenienia (np. Mn₂O₇ — mangan(VII)) są kwasowe. To dlatego manganian(VII) potasu KMnO₄ ma właściwości utleniające i tworzy sole (manganiany) — reszta MnO₄⁻ to „tlenkowa” reszta kwasowa.
+  </div>
+</section>
+
+<!-- 3. OTRZYMYWANIE -->
+<section class="section" id="otrzymywanie">
+  <div class="part-heading"><span class="part-num">3. Otrzymywanie tlenków</span></div>
+
+  <h3>Metoda 1 — Spalanie pierwiastka w tlenie</h3>
+  <div class="example"><span class="tag">Mg</span><span class="chem">2Mg + O₂ → 2MgO</span><span class="desc">biały proszek</span></div>
+  <div class="example"><span class="tag">S</span><span class="chem">S + O₂ → SO₂</span><span class="desc">ostry zapach</span></div>
+  <div class="example"><span class="tag">C</span><span class="chem">C + O₂ → CO₂</span><span class="desc">nadmiar O₂</span></div>
+  <div class="example"><span class="tag">P</span><span class="chem">4P + 5O₂ → 2P₂O₅</span><span class="desc">zapis szkolny; rzeczywiście P₄O₁₀</span></div>
+  <div class="example"><span class="tag">Al</span><span class="chem">4Al + 3O₂ → 2Al₂O₃</span><span class="desc">tlenek amfoteryczny</span></div>
+
+  <h3>Metoda 2 — Rozkład termiczny</h3>
+  <div class="example"><span class="tag">CaCO₃</span><span class="chem">CaCO₃ →(Δ) CaO + CO₂</span><span class="desc">otrzymywanie wapna palonego</span></div>
+  <div class="example"><span class="tag">Cu(OH)₂</span><span class="chem">2Cu(OH)₂ →(Δ) 2CuO + 2H₂O</span><span class="desc">niebieski → czarny CuO</span></div>
+  <div class="example"><span class="tag">Fe(OH)₃</span><span class="chem">2Fe(OH)₃ →(Δ) Fe₂O₃ + 3H₂O</span><span class="desc">rdzawy Fe₂O₃</span></div>
+
+  <h3>Metoda 3 — Utlenianie niższych tlenków (rozszerzenie)</h3>
+  <div class="example"><span class="tag">SO₂</span><span class="chem">2SO₂ + O₂ →(kat.) 2SO₃</span><span class="desc">utlenianie S(IV) → S(VI)</span></div>
+  <div class="example"><span class="tag">CO</span><span class="chem">2CO + O₂ → 2CO₂</span><span class="desc">utlenianie C(II) → C(IV)</span></div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Wapno palone (CaO) otrzymuje się przez prażenie wapienia (CaCO₃) w temperaturze ok. 900–1000°C. Reakcja jest <strong>endotermiczna</strong> — wymaga ciągłego dostarczania ciepła.
+  </div>
+</section>
+
+<!-- 4. REAKCJE KLUCZOWE -->
+<section class="section" id="reakcje">
+  <div class="part-heading"><span class="part-num">4. Reakcje kluczowe</span></div>
+
+  <h3>4.1. Tlenek zasadowy + woda → wodorotlenek</h3>
+  <div class="example"><span class="tag">Na₂O</span><span class="chem">Na₂O + H₂O → 2NaOH</span></div>
+  <div class="example"><span class="tag">K₂O</span><span class="chem">K₂O + H₂O → 2KOH</span></div>
+  <div class="example"><span class="tag">CaO</span><span class="chem">CaO + H₂O → Ca(OH)₂</span><span class="desc">silnie egzotermiczna!</span></div>
+  <div class="example"><span class="tag">BaO</span><span class="chem">BaO + H₂O → Ba(OH)₂</span></div>
+
+  <div class="rule-box trap">
+    <span class="icon">!</span>
+    <div><strong>MgO + H₂O → Mg(OH)₂</strong> — praktycznie nie zachodzi w typowych warunkach szkolnych. Mg(OH)₂ otrzymujemy przez <strong>strącanie</strong> soli magnezu zasadą (np. MgCl₂ + 2NaOH → Mg(OH)₂↓ + 2NaCl).</div>
+  </div>
+
+  <h3>4.2. Tlenek kwasowy + woda → kwas</h3>
+  <div class="example"><span class="tag">SO₃</span><span class="chem">SO₃ + H₂O → H₂SO₄</span><span class="desc">kwas siarkowy(VI)</span></div>
+  <div class="example"><span class="tag">SO₂</span><span class="chem">SO₂ + H₂O → H₂SO₃</span><span class="desc">kwas siarkowy(IV)</span></div>
+  <div class="example"><span class="tag">CO₂</span><span class="chem">CO₂ + H₂O → H₂CO₃</span><span class="desc">słaby, nietrwały</span></div>
+  <div class="example"><span class="tag">P₂O₅</span><span class="chem">P₂O₅ + 3H₂O → 2H₃PO₄</span></div>
+  <div class="example"><span class="tag">N₂O₅</span><span class="chem">N₂O₅ + H₂O → 2HNO₃</span></div>
+
+  <h3>4.3. Tlenek zasadowy + kwas → sól + woda</h3>
+  <div class="example"><span class="tag">CaO + HCl</span><span class="chem">CaO + 2HCl → CaCl₂ + H₂O</span></div>
+  <div class="example"><span class="tag">CuO + H₂SO₄</span><span class="chem">CuO + H₂SO₄ → CuSO₄ + H₂O</span></div>
+  <div class="example"><span class="tag">Fe₂O₃ + HCl</span><span class="chem">Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O</span></div>
+
+  <h3>4.4. Tlenek kwasowy + zasada → sól + woda</h3>
+  <div class="example"><span class="tag">CO₂ + NaOH</span><span class="chem">CO₂ + 2NaOH → Na₂CO₃ + H₂O</span></div>
+  <div class="example"><span class="tag">CO₂ + NaOH (nadmiar CO₂)</span><span class="chem">CO₂ + NaOH → NaHCO₃</span></div>
+  <div class="example"><span class="tag">SO₂ + NaOH</span><span class="chem">SO₂ + 2NaOH → Na₂SO₃ + H₂O</span></div>
+  <div class="example"><span class="tag">SO₃ + KOH</span><span class="chem">SO₃ + 2KOH → K₂SO₄ + H₂O</span></div>
+
+  <h3>4.5. Amfoteryczność — tlenek amfoteryczny reaguje i z kwasem, i z zasadą</h3>
+  <div class="example"><span class="tag">z kwasem</span><span class="chem">Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O</span></div>
+  <div class="example"><span class="tag">z zasadą (roztwór)</span><span class="chem">Al₂O₃ + 2NaOH + 3H₂O → 2Na[Al(OH)₄]</span><span class="desc">zalecany zapis</span></div>
+  <div class="example"><span class="tag">z zasadą (stop, starsza konwencja)</span><span class="chem">Al₂O₃ + 2NaOH → 2NaAlO₂ + H₂O</span></div>
+  <div class="example"><span class="tag">ZnO + kwas</span><span class="chem">ZnO + 2HCl → ZnCl₂ + H₂O</span></div>
+  <div class="example"><span class="tag">ZnO + zasada</span><span class="chem">ZnO + 2NaOH → Na₂ZnO₂ + H₂O</span></div>
+
+  <div class="warning-box">
+    <strong>Uwaga kluczowa o amfoteryczności:</strong> to, że Al₂O₃ i ZnO reagują <em>zarówno z kwasami, jak i z zasadami</em>, <strong>nie oznacza, że zawsze powstaje ten sam produkt</strong>. W zależności od środowiska (roztwór vs stop) powstają różne produkty:
+    <ul style="margin-top:8px;">
+      <li>Al₂O₃ + kwas → sól glinu (AlCl₃),</li>
+      <li>Al₂O₃ + zasada w roztworze → kompleks [Al(OH)₄]⁻,</li>
+      <li>Al₂O₃ + zasada w stopie → NaAlO₂.</li>
+    </ul>
+  </div>
+
+  <!-- SVG: amfoteryczność -->
+  <div class="diagram">
+    <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Amfoteryczność">
+      <g font-family="Segoe UI" font-size="12" text-anchor="middle">
+        <rect x="230" y="90" width="140" height="60" rx="10" fill="#f5f0ff" stroke="#7c3aed" stroke-width="2"/>
+        <text x="300" y="115" fill="#0a2540" font-weight="700" font-size="14">Al₂O₃</text>
+        <text x="300" y="135" fill="#7c3aed" font-size="11">amfoteryczny</text>
+        <path d="M230,110 L130,80" stroke="#2d8f5e" stroke-width="3" marker-end="url(#aG)"/>
+        <path d="M230,130 L130,160" stroke="#dc3545" stroke-width="3" marker-end="url(#aR)"/>
+        <defs>
+          <marker id="aG" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><polygon points="0 0, 10 3, 0 6" fill="#2d8f5e"/></marker>
+          <marker id="aR" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><polygon points="0 0, 10 3, 0 6" fill="#dc3545"/></marker>
+        </defs>
+        <rect x="20" y="50" width="110" height="60" rx="8" fill="#f0faf4" stroke="#2d8f5e" stroke-width="2"/>
+        <text x="75" y="75" fill="#0a2540" font-weight="700">z kwasem</text>
+        <text x="75" y="95" fill="#6b7a8d" font-size="10">→ sól + woda</text>
+        <rect x="20" y="140" width="110" height="60" rx="8" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+        <text x="75" y="165" fill="#0a2540" font-weight="700">z zasadą</text>
+        <text x="75" y="185" fill="#6b7a8d" font-size="10">→ sól + woda</text>
+        <path d="M370,110 L470,80" stroke="#2d8f5e" stroke-width="3" marker-end="url(#aG)"/>
+        <path d="M370,130 L470,160" stroke="#dc3545" stroke-width="3" marker-end="url(#aR)"/>
+        <rect x="470" y="50" width="110" height="60" rx="8" fill="#f0faf4" stroke="#2d8f5e" stroke-width="2"/>
+        <text x="525" y="75" fill="#0a2540" font-weight="700">AlCl₃</text>
+        <text x="525" y="95" fill="#6b7a8d" font-size="10">+ H₂O</text>
+        <rect x="470" y="140" width="110" height="60" rx="8" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+        <text x="525" y="165" fill="#0a2540" font-weight="700">Na[Al(OH)₄]</text>
+        <text x="525" y="185" fill="#6b7a8d" font-size="10">lub NaAlO₂</text>
+        <text x="300" y="215" font-size="10" fill="#6b7a8d" font-style="italic">Produkty zależą od środowiska (roztwór vs stop)</text>
+      </g>
+    </svg>
+    <div class="caption">Amfoteryczność — Al₂O₃ zachowuje się jak tlenek zasadowy wobec kwasu i jak kwasowy wobec zasady. Produkty mogą się różnić w zależności od środowiska.</div>
+  </div>
+</section>
+
+<!-- 5. P2O5 vs P4O10 -->
+<section class="section" id="p4o10">
+  <div class="part-heading"><span class="part-num">5. P₂O₅ vs P₄O₁₀</span></div>
+  <div class="card card-hint">
+    <span class="card-label">Dwie wersje zapisu</span>
+    <ul>
+      <li><strong>P₂O₅</strong> — wzór empiryczny (najprostszy stosunek P : O = 2 : 5). Stosowany w szkole. Pokazuje wartościowość P(V) i O(II).</li>
+      <li><strong>P₄O₁₀</strong> — wzór rzeczywistej cząsteczki (tetratlenek dekatlenek difosforu). Ma budowę „klatkową”.</li>
+    </ul>
+    <p><strong>Na sprawdzianie:</strong> używaj P₂O₅, chyba że pytanie prosi o wzór cząsteczkowy.</p>
+  </div>
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    P₄O₁₀ ma budowę „klatkową” — 4 atomy fosforu w narożnikach czworościanu, połączone mostkami tlenowymi, z dodatkowymi atomami tlenu na zewnątrz. Dlatego rzeczywisty wzór to P₄O₁₀, a nie P₂O₅.
+  </div>
+</section>
+
+<!-- 6. DOŚWIADCZENIA -->
+<section class="section" id="doswiadczenia">
+  <div class="part-heading"><span class="part-num">6. Doświadczenia modelowe</span></div>
+
+  <div class="card card-remember">
+    <span class="card-label">Format doświadczenia (stały)</span>
+    <p style="font-weight:600;color:#2b6cb0;">Problem → Hipoteza → Sprzęt → Obserwacja → Wniosek → Równanie → BHP</p>
+    <p><strong>Obserwacja ≠ wniosek.</strong></p>
+  </div>
+
+  <h3>Doświadczenie 1 — Tlenek wapnia + woda</h3>
+  <div class="card card-gray">
+    <p><strong>Problem:</strong> Czy tlenek wapnia reaguje z wodą?</p>
+    <p><strong>Hipoteza:</strong> Powstanie wodorotlenek; roztwór będzie zasadowy.</p>
+    <p><strong>Sprzęt:</strong> CaO (wapno palone), woda destylowana, probówka, papierek uniwersalny, fenoloftaleina.</p>
+    <p><strong>Obserwacja:</strong> silne rozgrzanie, „syczenie”; papierek niebieski; fenoloftaleina malinowa.</p>
+    <p><strong>Wniosek:</strong> CaO reaguje z wodą; powstaje roztwór o odczynie zasadowym (Ca(OH)₂).</p>
+    <p><strong>Równanie:</strong> CaO + H₂O → Ca(OH)₂</p>
+    <p><strong>BHP:</strong> nie dotykać CaO mokrymi rękami (żrący); okulary; reakcja silnie egzotermiczna.</p>
+  </div>
+
+  <h3>Doświadczenie 2 — Spalanie magnezu w tlenie</h3>
+  <div class="card card-gray">
+    <p><strong>Problem:</strong> Czy magnez reaguje z tlenem?</p>
+    <p><strong>Hipoteza:</strong> Powstanie biały proszek — tlenek magnezu.</p>
+    <p><strong>Sprzęt:</strong> wstążka magnezowa, szczypce, palnik, wata.</p>
+    <p><strong>Obserwacja:</strong> oślepiający biały płomień; biały proszek (MgO).</p>
+    <p><strong>Wniosek:</strong> Magnez spala się w tlenie, tworząc tlenek magnezu.</p>
+    <p><strong>Równanie:</strong> 2Mg + O₂ → 2MgO</p>
+    <p><strong>BHP:</strong> nie patrzeć bezpośrednio na płomień; nie dotykać produktu (gorący).</p>
+  </div>
+
+  <h3>Doświadczenie 3 — CO₂ + woda wapienna (wykrywanie)</h3>
+  <div class="card card-gray">
+    <p><strong>Problem:</strong> Jak wykryć CO₂?</p>
+    <p><strong>Hipoteza:</strong> CO₂ mętni wodę wapienną.</p>
+    <p><strong>Sprzęt:</strong> woda wapienna Ca(OH)₂, rurka, probówka.</p>
+    <p><strong>Obserwacja:</strong> mętnienie wody wapiennej (biały osad CaCO₃).</p>
+    <p><strong>Wniosek:</strong> CO₂ reaguje z Ca(OH)₂ → powstaje CaCO₃ (nierozpuszczalny) + H₂O.</p>
+    <p><strong>Równanie:</strong> CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O</p>
+    <p><strong>BHP:</strong> nie wciągać wody wapiennej do ust.</p>
+  </div>
+
+  <h3 id="obserwacja">Obserwacja ≠ wniosek — zasada stała</h3>
+  <div class="card card-trap">
+    <span class="card-label">Zapamiętaj</span>
+    <p><strong>Obserwacja</strong> — to, co widzimy, słyszymy, czujemy. <strong>Fakt zmysłowy bez interpretacji.</strong></p>
+    <p><strong>Wniosek</strong> — <strong>chemiczne wyjaśnienie</strong> tego zjawiska.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Obserwacja (fakt)</th><th>Wniosek (interpretacja)</th></tr></thead>
+      <tbody>
+        <tr><td>Biały osad.</td><td>Powstał węglan wapnia (nierozpuszczalny).</td></tr>
+        <tr><td>Pęcherzyki gazu, gaz pali się „szczekiem".</td><td>Wydziela się wodór.</td></tr>
+        <tr><td>Roztwór zmienił barwę z niebieskiej na jasnozieloną.</td><td>Zaszła reakcja redoks — jony Cu²⁺ uległy redukcji.</td></tr>
+        <tr><td>Rozgrzanie i „syczenie" po zmieszaniu.</td><td>CaO reaguje z wodą; powstaje Ca(OH)₂ (reakcja egzotermiczna).</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rule-box trap">
+    <span class="icon">!</span>
+    <div><strong>Nie pisz:</strong> „Obserwacja: powstał CaCO₃" / „Obserwacja: wydziela się H₂" / „Obserwacja: zachodzi redoks". To już <strong>wnioski</strong>, nie obserwacje.</div>
+  </div>
+</section>
+
+<!-- 7. KLINIKA -->
+<section class="section" id="klinika">
+  <div class="part-heading"><span class="part-num">7. Klinika błędów</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Błąd</th><th>Poprawnie</th><th>Reguła</th></tr></thead>
+      <tbody>
+        <tr><td>FeO₃</td><td>Fe₂O₃</td><td>W–K–S–K: Fe(III), O(II) → 2 i 3</td></tr>
+        <tr><td>„tlenek żelaza" (bez cyfry)</td><td>tlenek żelaza(II) lub (III)</td><td>Fe ma zmienną wartościowość</td></tr>
+        <tr><td>Ca₂O₂</td><td>CaO</td><td>skracanie do najprostszego stosunku</td></tr>
+        <tr><td>SO₃ + H₂O → H₂SO₃</td><td>SO₃ + H₂O → H₂SO₄</td><td>SO₃ to tlenek siarki(VI) → H₂SO₄</td></tr>
+        <tr><td>CO₂ zasadowy (bo „tlenek")</td><td>CO₂ kwasowy (niemetal)</td><td>charakter z rodzaju pierwiastka</td></tr>
+        <tr><td>Mn₂O₇ zasadowy</td><td>kwasowy</td><td>metale przejściowe (VII) bywają kwasowe</td></tr>
+        <tr><td>Al₂O₃ tylko zasadowy</td><td>amfoteryczny</td><td>reaguje z kwasami i zasadami</td></tr>
+        <tr><td>„MgO + H₂O → Mg(OH)₂ łatwo"</td><td>praktycznie nie zachodzi</td><td>MgO trudno reaguje z wodą</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 8. ĆWICZENIA -->
+<section class="section" id="cwiczenia">
+  <div class="part-heading"><span class="part-num">8. Ćwiczenia</span></div>
+
+  <h3>Poziom A — podstawa <span class="level-badge level-basic">podstawowy</span></h3>
+  <div class="exercise">
+    <ol>
+      <li>Ułóż wzory: tlenek magnezu, tlenek glinu, tlenek siarki(IV), tlenek azotu(V).</li>
+      <li>Nazwij: Fe₂O₃, CuO, N₂O₅, P₂O₅.</li>
+      <li>Podaj charakter: Na₂O, SO₃, CO, CO₂.</li>
+      <li>Dokończ: Na₂O + H₂O → … ; SO₃ + H₂O → …</li>
+      <li>Zbilansuj: Al + O₂ → Al₂O₃.</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-a')">Pokaż odpowiedzi</button>
+    <div id="ans-a" class="answer-content">
+      <ol>
+        <li>MgO, Al₂O₃, SO₂, N₂O₅.</li>
+        <li>tlenek żelaza(III), tlenek miedzi(II), tlenek azotu(V), tlenek fosforu(V).</li>
+        <li>Na₂O — zasadowy; SO₃ — kwasowy; CO — obojętny; CO₂ — kwasowy.</li>
+        <li>2NaOH; H₂SO₄.</li>
+        <li>4Al + 3O₂ → 2Al₂O₃.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Poziom B — trening <span class="level-badge level-exam">egzaminacyjny</span></h3>
+  <div class="exercise">
+    <ol start="6">
+      <li>Napisz równania: a) spalanie siarki, b) CaO + HCl, c) CO₂ + NaOH.</li>
+      <li>Dlaczego CO nazywamy tlenkiem obojętnym, a CO₂ kwasowym?</li>
+      <li>Popraw: FeO₃, „tlenek miedzi", Ca₂O₂.</li>
+      <li>Zapisz reakcje: SO₂ + H₂O, N₂O₅ + H₂O, K₂O + H₂O.</li>
+      <li>Uzupełnij: CaO + H₂SO₄ → ? ; SO₃ + 2NaOH → ?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-b')">Pokaż odpowiedzi</button>
+    <div id="ans-b" class="answer-content">
+      <ol start="6">
+        <li>a) S + O₂ → SO₂; b) CaO + 2HCl → CaCl₂ + H₂O; c) CO₂ + 2NaOH → Na₂CO₃ + H₂O.</li>
+        <li>CO nie daje kwasu z wodą; CO₂ daje H₂CO₃.</li>
+        <li>Fe₂O₃; tlenek miedzi(II); CaO.</li>
+        <li>SO₂ + H₂O → H₂SO₃; N₂O₅ + H₂O → 2HNO₃; K₂O + H₂O → 2KOH.</li>
+        <li>CaO + H₂SO₄ → CaSO₄ + H₂O; SO₃ + 2NaOH → Na₂SO₄ + H₂O.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Poziom C — ambitny <span class="level-badge level-ambitious">ambitny</span></h3>
+  <div class="exercise">
+    <ol start="11">
+      <li>Al₂O₃ reaguje z HCl i z NaOH. Co to mówi o charakterze?</li>
+      <li>P₂O₅ vs P₄O₁₀ — kiedy który zapis?</li>
+      <li>Wyjaśnij, dlaczego MgO praktycznie nie reaguje z wodą, a CaO — tak.</li>
+      <li>Określ charakter Mn₂O₇ i CrO₃. Uzasadnij.</li>
+      <li>Porównaj charakter tlenków: Na₂O, MgO, Al₂O₃, SiO₂, P₂O₅, SO₃, Cl₂O₇ — jak zmienia się w okresie?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-c')">Pokaż odpowiedzi</button>
+    <div id="ans-c" class="answer-content">
+      <ol start="11">
+        <li>Amfoteryczny — reaguje z kwasami i zasadami. <strong>Uwaga:</strong> produkty mogą różnić się w zależności od środowiska (roztwór → [Al(OH)₄]⁻; stop → NaAlO₂).</li>
+        <li>Szkolny: P₂O₅; cząsteczkowy: P₄O₁₀.</li>
+        <li>MgO ma silniejsze wiązanie jonowe i niższą reaktywność z wodą; CaO reaguje gwałtownie, bo Ca(OH)₂ jest słabo rozpuszczalny, co „ciągnie" reakcję.</li>
+        <li>Mn₂O₇ i CrO₃ — kwasowe (metale przejściowe na wysokim stopniu utlenienia tworzą aniony tlenowe: MnO₄⁻, CrO₄²⁻).</li>
+        <li>Na₂O (zasadowy) → MgO (zasadowy) → Al₂O₃ (amfoteryczny) → SiO₂ (kwasowy słaby) → P₂O₅ (kwasowy) → SO₃ (kwasowy) → Cl₂O₇ (kwasowy silny). Charakter kwasowy rośnie w prawo okresu.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FISZKI -->
+<section class="section" id="fiszki">
+  <div class="part-heading"><span class="part-num">Fiszki (22)</span></div>
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Co to tlenek?</span><span class="back"><strong>Związek tlenu z innym pierwiastkiem</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Na₂O + H₂O → ?</span><span class="back"><strong>2NaOH</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">K₂O + H₂O → ?</span><span class="back"><strong>2KOH</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">CaO + H₂O → ?</span><span class="back"><strong>Ca(OH)₂</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">SO₃ + H₂O → ?</span><span class="back"><strong>H₂SO₄</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">SO₂ + H₂O → ?</span><span class="back"><strong>H₂SO₃</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">CO₂ + H₂O → ?</span><span class="back"><strong>H₂CO₃ (słaby)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Charakter Na₂O</span><span class="back"><strong>zasadowy</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Charakter SO₂</span><span class="back"><strong>kwasowy</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Charakter CO</span><span class="back"><strong>obojętny</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Charakter Al₂O₃</span><span class="back"><strong>amfoteryczny</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Fe₂O₃ — nazwa</span><span class="back"><strong>tlenek żelaza(III)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Cu₂O — nazwa</span><span class="back"><strong>tlenek miedzi(I)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Dlaczego nie FeO₃?</span><span class="back"><strong>W–K–S–K: 2·III = 3·II</strong></span><span class="card-tag tag-trap">pułapka</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">P₂O₅ a P₄O₁₀</span><span class="back"><strong>szkolny zapis vs rzeczywista cząsteczka</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Tlenek zasadowy + kwas →</span><span class="back"><strong>sól + woda</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Tlenek kwasowy + zasada →</span><span class="back"><strong>sól + woda</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Tlenki obojętne — przykłady</span><span class="back"><strong>CO, NO, N₂O</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Tlenki amfoteryczne — przykłady</span><span class="back"><strong>Al₂O₃, ZnO, BeO</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wzór tlenku żelaza(III)</span><span class="back"><strong>Fe₂O₃</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wzór tlenku miedzi(I)</span><span class="back"><strong>Cu₂O</strong></span><span class="card-tag tag-trap">pułapka</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Mn₂O₇ — charakter</span><span class="back"><strong>kwasowy (wyjątek!)</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+  </div>
+</section>
+
+<!-- TEST -->
+<section class="section" id="test">
+  <div class="part-heading"><span class="part-num">Test końcowy</span></div>
+  <div class="exercise">
+    <ol>
+      <li>Wzory: tlenek wapnia, tlenek żelaza(III), tlenek siarki(VI).</li>
+      <li>Nazwy: Al₂O₃, N₂O₅, CuO, SO₂.</li>
+      <li>Charakter: MgO, CO₂, NO, Al₂O₃.</li>
+      <li>Równania: CaO + H₂O; SO₃ + H₂O; CuO + H₂SO₄.</li>
+      <li>Popraw błędy: FeO₃; „tlenek żelaza”; Ca₂O₂.</li>
+      <li>Zbilansuj: P + O₂ → P₂O₅.</li>
+      <li>(extra) Co oznacza amfoteryczność Al₂O₃?</li>
+      <li>(extra) Dlaczego Mn₂O₇ jest kwasowy, mimo że to tlenek metalu?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-test')">Pokaż odpowiedzi</button>
+    <div id="ans-test" class="answer-content">
+      <ol>
+        <li>CaO; Fe₂O₃; SO₃.</li>
+        <li>tlenek glinu; tlenek azotu(V); tlenek miedzi(II); tlenek siarki(IV).</li>
+        <li>MgO — zasadowy; CO₂ — kwasowy; NO — obojętny; Al₂O₃ — amfoteryczny.</li>
+        <li>CaO + H₂O → Ca(OH)₂; SO₃ + H₂O → H₂SO₄; CuO + H₂SO₄ → CuSO₄ + H₂O.</li>
+        <li>Fe₂O₃; tlenek żelaza(II) lub (III); CaO.</li>
+        <li>4P + 5O₂ → 2P₂O₅.</li>
+        <li>Al₂O₃ reaguje i z kwasami (jak tlenek zasadowy), i z zasadami (jak tlenek kwasowy). Produkty zależą od środowiska (roztwór → [Al(OH)₄]⁻; stop → NaAlO₂).</li>
+        <li>Mangan na stopniu +VII — silna polaryzacja wiązania Mn–O; tlenek zachowuje się jak kwasowy (tworzy anion MnO₄⁻).</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- SZYBKA ZASADA -->
+<section class="section" id="szybka-zasada">
+  <div class="part-heading"><span class="part-num">9. Szybka zasada (do zapamiętania)</span></div>
+  <div class="card card-remember">
+    <span class="card-label">5 punktów — charakter tlenku</span>
+    <table style="margin-top:8px;width:100%;">
+      <thead><tr><th>Sytuacja</th><th>Charakter</th></tr></thead>
+      <tbody>
+        <tr><td>Tlenek metalu aktywnego (grupy 1–2)</td><td>zwykle <strong>zasadowy</strong></td></tr>
+        <tr><td>Tlenek niemetalu</td><td>zwykle <strong>kwasowy</strong></td></tr>
+        <tr><td>Tlenek Al, Zn, Be, Pb, Sn</td><td><strong>amfoteryczny</strong></td></tr>
+        <tr><td>CO, NO, N₂O</td><td><strong>obojętny</strong> (szkolnie)</td></tr>
+        <tr><td>Mn₂O₇, CrO₃</td><td><strong>kwasowy</strong> (wyjątek wśród tlenków metali)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="highlight-box">
+    <strong>Ta tabela to skrót.</strong> Jeśli nie wiesz, jak zaklasyfikować tlenek — patrz najpierw, czy pierwiastek jest metalem (grupy 1–2, Al, Zn), czy niemetalem. Reszta (wyjątki, amfoteryczność) to drugi krok.
+  </div>
+</section>
+
+<!-- CIEKAWOSTKI -->
+<section class="section" id="ciekawostki">
+  <div class="part-heading"><span class="part-num">Ciekawostki i zastosowania</span></div>
+
+  <div class="curiosity">
+    <span class="label">Dlaczego BaSO₄ w RTG?</span>
+    Ba²⁺ jest trujący, ale BaSO₄ jest tak <strong>nierozpuszczalny</strong>, że nie wchłania się z przewodu pokarmowego. Dlatego można go bezpiecznie użyć jako kontrast w badaniach RTG.
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Suchy lód</span>
+    Stały CO₂ sublimuje w −78,5 °C. Używany do chłodzenia i efektów scenicznych. To tlenek kwasowy — reaguje z wodą jak H₂CO₃.
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Kwaśne deszcze</span>
+    SO₂ i NO₂ (produkty spalania paliw kopalnych) reagują z wodą w atmosferze, tworząc H₂SO₄ i HNO₃. Powodują zakwaszenie gleb i wód (pH deszczu &lt; 5,6), uszkodzenie lasów i korozję budynków.
+  </div>
+
+  <div class="curiosity">
+    <span class="label">TiO₂ — pigment i filtry UV</span>
+    Biały pigment w farbach i kremach z filtrem UV. Bardzo stabilny chemicznie i nietoksyczny. W szkole amfoteryczne to przede wszystkim Al₂O₃ i ZnO; TiO₂ zostawiamy jako pigment/UV, bez klasyfikacji na E8.
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Al₂O₃ w rubinach i szafirach</span>
+    Rubin — Al₂O₃ z domieszką Cr³⁺ (czerwony). Szafir — Al₂O₃ z domieszką Fe²⁺/Ti⁴⁺ (niebieski). Ten sam tlenek, inny kolor dzięki domieszkom.
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Tlenki w przyrodzie i przemyśle</span>
+    <ul>
+      <li><strong>SiO₂</strong> — piasek, kwarc, szkło (kwasowy, reaguje z zasadami).</li>
+      <li><strong>Fe₂O₃</strong> — ruda żelaza (hematyt), rdza.</li>
+      <li><strong>Fe₃O₄</strong> — magnetyt (ruda).</li>
+      <li><strong>CaO</strong> — wapno palone (budownictwo).</li>
+      <li><strong>TiO₂</strong> — pigment, filtry UV.</li>
+      <li><strong>ZnO</strong> — biały pigment, składnik maści.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<section class="section" id="plus-md">
+<div class="part-heading"><span class="part-num">PLUS z MD</span> — charakter tlenku i Punnett-chemii</div>
+<div class="card card-remember"><span class="card-label">Jak rozpoznać charakter w 10 s</span>
+<p>Metal 1–2 → zwykle zasadowy · niemetal → zwykle kwasowy · Al, Zn, Be, Sn, Pb → amfoteryczny · CO, NO, N₂O → obojętny (szkolnie; z zastrzeżeniem kontekstu).</p>
+<p>TiO₂ nie jest typowym przykładem amfoteryczności w klasie 8.</p></div>
+<div class="card card-hint"><span class="card-label">P₂O₅ vs P₄O₁₀</span>
+<p>P₂O₅ to <strong>zapis szkolny</strong> empiryczny; cząsteczka to P₄O₁₀. Nie „inna substancja” i nie „po prostu synonim bez wyjaśnienia”.</p></div>
+<div class="card card-trap"><span class="card-label">Obserwacja ≠ wniosek · MgO</span>
+<p>Mętnienie wody wapiennej to obserwacja; wniosek: CO₂. MgO + H₂O w warunkach szkolnych zachodzi <strong>bardzo słabo</strong>.</p>
+<p>Amfoteryczność Al₂O₃: z kwasem i z zasadą inne produkty; jon [Al(OH)₄]⁻, nie „mieszany” NaAl(OH)₄ bez komentarza.</p></div>
+</section>
+
+<footer class="footer">
+  <p><strong>L002 — Tlenki</strong> · Klasa 8 · Start nieorganiki</p>
+  <p style="font-size:0.78rem;opacity:0.7;">Charakter tlenku decyduje o jego reakcjach — naucz się go rozpoznawać na pierwszy rzut oka.</p>
+</footer>
+
+</div>
+
+<script>
+function toggleAnswer(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle('show');
+  const btn=document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+  if(btn)btn.textContent=el.classList.contains('show')?'Ukryj odpowiedzi':'Pokaż odpowiedzi';
+}
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+
+</script>
+</body>
+</html>

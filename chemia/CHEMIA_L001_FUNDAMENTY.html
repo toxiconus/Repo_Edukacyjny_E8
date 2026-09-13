@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chemia L001 — Fundamenty klasy 7 (start roku)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;background:#f5f7fa;color:#1e293b;line-height:1.7;padding:16px;}
+.container{max-width:1060px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px;}}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+}
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-exam{background:#ffe8cc;color:#8a6d3b;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+.table-wrap .error-row{background:#fef2f2;}
+.table-wrap .correct-row{background:#f0faf4;}
+.example{background:var(--color-bg-subtle);border-radius:10px;padding:10px 14px;margin:8px 0;border:1px solid var(--color-border);display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;}
+.example .chem{font-weight:600;color:#0a2540;font-size:1.0rem;font-family:'Courier New',monospace;}
+.example .desc{color:var(--color-text-muted);font-size:0.88rem;}
+.example .tag{display:inline-block;font-size:0.55rem;font-weight:600;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:12px;color:#2d3a4f;}
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 14px;border-radius:8px;border:1px solid var(--color-border);background:#fff;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;color:var(--color-text);font-family:inherit;}
+.btn:hover{background:var(--color-bg-subtle);border-color:#b0b8c4;}
+.btn-outline{background:transparent;border:1px solid var(--color-border);}
+.btn-outline:hover{background:var(--color-bg-subtle);}
+.btn-sm{padding:3px 10px;font-size:0.74rem;}
+.answer-toggle,.hint-toggle{font-family:inherit;padding:4px 14px;border-radius:6px;border:none;cursor:pointer;font-size:0.78rem;font-weight:500;transition:all 0.2s;margin-top:4px;margin-right:4px;}
+.answer-toggle{background:var(--color-training);color:#fff;}
+.answer-toggle:hover{background:#1f4e8c;}
+.hint-toggle{background:var(--color-hint);color:#fff;}
+.hint-toggle:hover{background:#d97706;}
+.answer-content,.hint-content{border-radius:6px;padding:0 12px;margin-top:4px;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.3s ease,opacity 0.3s ease;opacity:0;}
+.answer-content.show,.hint-content.show{max-height:2500px;padding:10px 12px;opacity:1;}
+.answer-content{background:var(--color-training-bg);border-left:3px solid var(--color-training);}
+.hint-content{background:var(--color-hint-bg);border-left:3px solid var(--color-hint);font-style:italic;color:#78350f;}
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+.exercise .ex-title{font-weight:600;color:#0a2540;margin-bottom:6px;font-size:1.0rem;}
+.fiszka{background:var(--color-bg-subtle);border:2px solid #0a2540;border-radius:14px;padding:18px 22px;margin:20px 0;}
+.fiszka h3{text-align:center;font-weight:600;font-size:1.1rem;margin-bottom:10px;border-bottom:2px solid #0a2540;padding-bottom:4px;}
+.fiszka-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;}
+.fiszka-col h4{font-weight:600;border-bottom:1px solid #cbd5e0;padding-bottom:3px;margin-bottom:4px;}
+.fiszka-col ul{list-style:none;padding-left:0;}
+.fiszka-col li{padding:2px 0 2px 16px;position:relative;font-size:0.88rem;}
+.fiszka-col li::before{content:"•";position:absolute;left:0;color:var(--color-training);font-weight:700;}
+@media(max-width:768px){.fiszka-grid{grid-template-columns:1fr;}.fiszka{padding:14px 16px;}}
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;transition:background 0.2s;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"▶";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;transition:background 0.2s,color 0.2s;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+.toc-keywords span{font-style:italic;color:#1e293b;}
+.section{margin-bottom:8px;}
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.warning-box{background:#fee2e2;border:1px solid #f87171;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.ambitny-box{background:#dbeafe;border:1px solid #3b82f6;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:80px;}
+.flashcard .front{font-weight:700;font-size:1.05rem;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.95rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+.tag{display:inline-block;font-size:0.55rem;font-weight:600;text-transform:uppercase;padding:1px 8px;border-radius:12px;color:#2d3a4f;background:#e2e8f0;margin-right:2px;}
+.diagram{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:16px 0;text-align:center;}
+.diagram svg{max-width:100%;height:auto;}
+.diagram .caption{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:8px;}
+.def-box{background:#eef7ff;border-left:4px solid #2b6cb0;border-radius:8px;padding:10px 14px;margin:10px 0;}
+.def-box .term{font-weight:700;color:#0a2540;}
+.def-box .meaning{color:#1e293b;}
+.curiosity{background:#fdf4ff;border-left:4px solid #a855f7;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:0.92rem;}
+.curiosity .label{font-weight:700;color:#7c3aed;display:block;margin-bottom:2px;}
+.rule-box{display:flex;gap:10px;align-items:flex-start;padding:8px 12px;border-radius:8px;margin:6px 0;font-size:0.9rem;}
+.rule-box .icon{font-weight:700;flex-shrink:0;}
+.rule-box.fact{background:#f0faf4;}
+.rule-box.fact .icon{color:#2d8f5e;}
+.rule-box.school{background:#f0f6ff;}
+.rule-box.school .icon{color:#2b6cb0;}
+.rule-box.exam{background:#fffbeb;}
+.rule-box.exam .icon{color:#b7791f;}
+.rule-box.trap{background:#fef2f2;}
+.rule-box.trap .icon{color:#dc3545;}
+@media(max-width:600px){
+  .top-panel .panel-row{flex-direction:column;align-items:stretch;}
+  .container{padding:10px 6px;}
+  .toc-section{padding:12px 14px;}
+  .toc-summary{font-size:0.85rem;padding:6px 10px;}
+  }
+</style>
+</head>
+<body>
+<div class="container" id="app">
+<div class="card card-correct" style="margin-bottom:16px">
+  <span class="card-label">Numer</span>
+  <p><strong>L001 = pierwsza lekcja chemii w roku</strong> (fundamenty kl. 7). Extra VSEPR/hybrydyzacja to osobny plik L013.</p>
+</div>
+
+
+<!-- TOP PANEL -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L001 — Powtórka fundamentów klasy 7</div>
+      <div class="subtitle">Start klasy 8 · Wrzesień · Poziom szkolny + ambitny</div>
+      <div class="lesson-info">
+        BHP · Budowa atomu · Układ okresowy · Wartościowość · Wiązania · Wzory · Równania
+      </div>
+    </div>
+    
+      <div class="progress-label"><span id="progressPercent">0%</span><span id="progressStatus">Zacznij naukę</span></div>
+    </div>
+  </div>
+  <div class="panel-row">
+    
+    
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+  <details class="toc-item" open>
+    <summary class="toc-summary">Wprowadzenie i orientacja</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#cel">Cel lekcji</a>
+      <a class="toc-anchor" href="#mapa">Wielka mapa skojarzeń</a>
+      <a class="toc-anchor" href="#diagnoza">Diagnoza</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">1. BHP i praca w laboratorium</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#bhp">BHP</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">2. Budowa atomu, izotopy, jony</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#atom">Atom</a>
+      <a class="toc-anchor" href="#izotopy">Izotopy</a>
+      <a class="toc-anchor" href="#jony">Jony</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">3. Układ okresowy</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#uklad">Układ okresowy</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">4. Wartościowość — kluczowy temat</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wartosciowosc">Wartościowość</a>
+      <a class="toc-anchor" href="#wksk">W–K–S–K</a>
+      <a class="toc-anchor" href="#grupy">Grupy atomów</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">5. Wiązania chemiczne</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wiazania">Wiązania</a>
+      <a class="toc-anchor" href="#elektroujemnosc">Elektroujemność</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">6. Równania reakcji</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#rownania">Równania</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">7. Klinika błędów</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#klinika">Klinika</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">8. Ćwiczenia i testy</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a>
+      <a class="toc-anchor" href="#fiszki">Fiszki</a>
+      <a class="toc-anchor" href="#test">Test końcowy</a>
+    </nav>
+  </details>
+  <div class="toc-keywords"><span>Słowa kluczowe: atom · jon · izotop · wartościowość · W–K–S–K · wiązanie · równanie · BHP</span></div>
+</div>
+
+<!-- CEL -->
+<section class="section" id="cel">
+  <div class="part-heading"><span class="part-num">Cel lekcji</span></div>
+  <div class="card card-correct">
+    <span class="card-label">Po tej lekcji umiesz:</span>
+    <ul>
+      <li>policzyć protony, neutrony i elektrony w atomie oraz jonie,</li>
+      <li>odróżnić Z, A i masę atomową,</li>
+      <li>ułożyć prosty wzór chemiczny z wartościowości (W–K–S–K),</li>
+      <li>zastosować nawias przy grupie atomów (Ca(OH)₂, Al₂(SO₄)₃),</li>
+      <li>rozpoznać podstawowy typ wiązania (jonowe, kowalencyjne, metaliczne),</li>
+      <li>zbilansować równanie bez zmieniania indeksów,</li>
+      <li>rozpoznać typy reakcji: synteza, analiza, wypieranie, podwójna wymiana, spalanie.</li>
+    </ul>
+  </div>
+  <div class="card card-hint">
+    <span class="card-label">Kluczowy temat</span>
+    <p><strong>Wartościowość</strong> — bez niej nie ułożysz poprawnych wzorów w klasie 8. Ta lekcja jest fundamentem L002–L012 (tlenki → powtórka). Extra zaawansowana to L013.</p>
+  </div>
+  <div class="card card-gray">
+    <span class="card-label">Plan pracy (proponowany 3–4 dni)</span>
+    <ul>
+      <li><strong>Dzień 1:</strong> BHP + budowa atomu + izotopy + jony (przypomnienie).</li>
+      <li><strong>Dzień 2:</strong> Układ okresowy + wartościowość (główny nacisk) + wzory + W–K–S–K.</li>
+      <li><strong>Dzień 3:</strong> Wiązania + elektroujemność + równania.</li>
+      <li><strong>Dzień 4:</strong> Klinika błędów + ćwiczenia + fiszki + test.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MAPA SKOJARZEŃ -->
+<section class="section" id="mapa">
+  <div class="part-heading"><span class="part-num">Wielka mapa skojarzeń</span></div>
+  <p>Ta sekcja to <strong>hak pamięciowy</strong> — przeczytaj raz, wróć do niej po tygodniu. Działa jak „folder” w mózgu, do którego wkładasz resztę wiedzy.</p>
+  <div class="card card-remember">
+    <span class="card-label">Wyobraź sobie warsztat chemika</span>
+    <ul>
+      <li><strong>Atom</strong> = pojedyncze narzędzie na stole (protony i neutrony w jądrze; elektrony w modelu szkolnym na powłokach wokół jądra).</li>
+      <li><strong>Jon</strong> = to samo narzędzie, ale naładowane elektrycznie (kation oddał elektron, anion przyjął).</li>
+      <li><strong>Układ okresowy</strong> = tablica narzędzi ułożona według <strong>rosnącej liczby atomowej Z</strong>.</li>
+      <li><strong>Wartościowość</strong> = liczba „rąk”, którymi atom łączy się z innymi atomami (H ma 1, O ma 2, Al ma 3, C ma 4).</li>
+      <li><strong>Wzór sumaryczny</strong> = „uścisk dłoni” między atomami — liczba wiązań po obu stronach musi się zgadzać.</li>
+      <li><strong>Wzór strukturalny</strong> = rysunek „kto z kim trzyma się za ręce” (kreski zamiast indeksów).</li>
+      <li><strong>Wzór elektronowy</strong> = to samo, ale z kropkami zamiast kresek — widać elektrony walencyjne.</li>
+      <li><strong>Wiązanie jonowe</strong> = metal oddaje elektron, niemetal bierze; powstałe jony przyciągają się.</li>
+      <li><strong>Wiązanie kowalencyjne</strong> = dwa atomy uwspólniają elektrony (niemetal + niemetal).</li>
+      <li><strong>Wiązanie metaliczne</strong> = dodatnie jony metalu w „morzu elektronów”.</li>
+      <li><strong>Równanie reakcji</strong> = przepis kucharski: substraty → produkty; nic nie znika.</li>
+    </ul>
+  </div>
+  <div class="highlight-box">
+    <strong>Zapamiętaj to jedno zdanie:</strong><br>
+    „Atom może tworzyć wiązania. Wartościowość mówi, iloma symbolicznymi «rękami» atom łączy się z innymi atomami; wzór pokazuje, czy liczba tych «rąk» się zgadza.”
+  </div>
+</section>
+
+<!-- DIAGNOZA -->
+<section class="section" id="diagnoza">
+  <div class="part-heading"><span class="part-num">Diagnoza (test wstępny)</span></div>
+  <div class="card card-gray">
+    <p>Odpowiedz <strong>najpierw sam</strong>, potem sprawdź. Błąd teraz = zysk później.</p>
+    <ol>
+      <li>Ile protonów, neutronów i elektronów ma atom ²³Na?</li>
+      <li>W której grupie (system 1–18) i okresie znajduje się chlor?</li>
+      <li>Jaka jest wartościowość tlenu i wapnia?</li>
+      <li>Zapisz wzór chlorku magnezu.</li>
+      <li>Ile elektronów ma jon Al³⁺?</li>
+      <li>Dlaczego zapisujemy Ca(OH)₂, a nie CaOH₂?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-diag')">Pokaż odpowiedzi</button>
+    <div id="ans-diag" class="answer-content">
+      <ol>
+        <li>11 p, 12 n, 11 e</li>
+        <li>grupa 17, okres 3</li>
+        <li>O(II), Ca(II)</li>
+        <li>MgCl₂</li>
+        <li>10 elektronów (13 − 3)</li>
+        <li>Ponieważ indeks 2 ma dotyczyć <strong>całej grupy OH</strong>, czyli zarówno O, jak i H. Bez nawiasu indeks „2” przykleiłby się tylko do H.</li>
+      </ol>
+      <p><strong>Interpretacja:</strong> 5/6+ → możesz przyspieszyć. Mniej → przejdź lekcję spokojnie.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 1. BHP -->
+<section class="section" id="bhp">
+  <div class="part-heading"><span class="part-num">1. BHP i praca w laboratorium</span></div>
+  <div class="card card-remember">
+    <span class="card-label">Zasady obowiązkowe</span>
+    <ul>
+      <li><strong>Kwas do wody</strong> — zawsze kwas wlewamy do wody, nigdy odwrotnie.</li>
+      <li><strong>Zapach</strong> — wachlowanie ręką (nie wąchać bezpośrednio!).</li>
+      <li><strong>Kontakt</strong> — płukać dużą ilością wody; wołać nauczyciela.</li>
+      <li><strong>Pipeta</strong> — gruszka/pipetor, nigdy ustami.</li>
+      <li><strong>Okulary i fartuch</strong> — zawsze.</li>
+      <li><strong>Ogrzewanie probówki</strong> — otwór od siebie i innych.</li>
+      <li><strong>Nie smakować</strong> — nigdy.</li>
+      <li><strong>Nie wracać odczynników</strong> — zanieczyszczenie zapasu.</li>
+    </ul>
+  </div>
+  <div class="rule-box fact">
+    <span class="icon">✓</span>
+    <div><strong>Dlaczego „kwas do wody”?</strong> Rozcieńczanie kwasu wydziela dużo ciepła. Gdy wlewasz wodę do stężonego kwasu, woda może lokalnie zagotować się i spowodować gwałtowne rozpryski stężonego kwasu.</div>
+  </div>
+  <h3>Podstawowe szkło laboratoryjne</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Naczynie</th><th>Zastosowanie</th></tr></thead>
+      <tbody>
+        <tr><td>Probówka</td><td>małe ilości substancji, ogrzewanie, reakcje</td></tr>
+        <tr><td>Zlewka</td><td>mieszanie, przelewanie, ogrzewanie; objętość tylko orientacyjnie (nie do dokładnego odmierzania)</td></tr>
+        <tr><td>Kolba stożkowa</td><td>mieszanie, miareczkowanie</td></tr>
+        <tr><td>Kolba okrągłodenna</td><td>destylacja, ogrzewanie cieczy</td></tr>
+        <tr><td>Pipeta / biureta</td><td>precyzyjne przenoszenie objętości</td></tr>
+        <tr><td>Cylinder miarowy</td><td>odmierzanie objętości</td></tr>
+        <tr><td>Parownica</td><td>odparowywanie, prażenie</td></tr>
+        <tr><td>Tygiel</td><td>prażenie w wysokiej temperaturze</td></tr>
+        <tr><td>Moździerz</td><td>rozdrabnianie</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 2. ATOM -->
+<section class="section" id="atom">
+  <div class="part-heading"><span class="part-num">2. Budowa atomu, izotopy, jony</span></div>
+  <div class="def-box">
+    <p><span class="term">Atom</span> — <span class="meaning">najmniejsza elektrycznie obojętna cząstka pierwiastka, zachowująca jego tożsamość chemiczną. Złożona z jądra (protony + neutrony) i elektronów.</span></p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cząstka</th><th>Ładunek</th><th>Masa (ok.)</th><th>Miejsce</th></tr></thead>
+      <tbody>
+        <tr><td>Proton p⁺</td><td>+1</td><td>1 u</td><td>jądro</td></tr>
+        <tr><td>Neutron n⁰</td><td>0</td><td>1 u</td><td>jądro</td></tr>
+        <tr><td>Elektron e⁻</td><td>−1</td><td>~1/1836 u</td><td>powłoki</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SVG: diagram atomu -->
+  <div class="diagram">
+    <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram atomu">
+      <!-- jądro -->
+      <circle cx="200" cy="130" r="38" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+      <text x="200" y="125" font-size="11" text-anchor="middle" fill="#dc3545" font-family="Segoe UI" font-weight="700">JĄDRO</text>
+      <text x="200" y="142" font-size="10" text-anchor="middle" fill="#dc3545" font-family="Segoe UI">p⁺ + n⁰</text>
+      <!-- powłoki -->
+      <ellipse cx="200" cy="130" rx="70" ry="70" fill="none" stroke="#2b6cb0" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <ellipse cx="200" cy="130" rx="105" ry="105" fill="none" stroke="#2b6cb0" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <ellipse cx="200" cy="130" rx="140" ry="140" fill="none" stroke="#2b6cb0" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <!-- elektrony -->
+      <circle cx="270" cy="130" r="6" fill="#2b6cb0"/>
+      <text x="270" y="134" font-size="9" text-anchor="middle" fill="#fff" font-family="Segoe UI">e⁻</text>
+      <circle cx="130" cy="130" r="6" fill="#2b6cb0"/>
+      <text x="130" y="134" font-size="9" text-anchor="middle" fill="#fff" font-family="Segoe UI">e⁻</text>
+      <circle cx="200" cy="25" r="6" fill="#2b6cb0"/>
+      <text x="200" y="29" font-size="9" text-anchor="middle" fill="#fff" font-family="Segoe UI">e⁻</text>
+      <circle cx="200" cy="235" r="6" fill="#2b6cb0"/>
+      <text x="200" y="239" font-size="9" text-anchor="middle" fill="#fff" font-family="Segoe UI">e⁻</text>
+      <!-- legend -->
+      <text x="20" y="20" font-size="12" fill="#0a2540" font-family="Segoe UI" font-weight="700">Atom</text>
+      <text x="20" y="36" font-size="10" fill="#6b7a8d" font-family="Segoe UI">jądro + powłoki elektronowe</text>
+    </svg>
+    <div class="caption">Model atomu. W centrum jądro (protony + neutrony), wokół krążą elektrony na powłokach.</div>
+  </div>
+
+  <div class="card card-remember">
+    <span class="card-label">Wzory, które musisz znać</span>
+    <ul>
+      <li><strong>Z</strong> (liczba atomowa) = liczba protonów = liczba elektronów w <strong>atomie obojętnym</strong></li>
+      <li><strong>A</strong> (liczba masowa) = p⁺ + n⁰ (liczba całkowita dla danego <strong>izotopu</strong>)</li>
+      <li><strong>n⁰</strong> = A − Z</li>
+      <li>Ładunek jonu = p⁺ − e⁻</li>
+    </ul>
+  </div>
+
+  <div class="def-box">
+    <p><span class="term">Liczba protonów definiuje pierwiastek.</span> <span class="meaning">Każdy atom mający 8 protonów to tlen, a każdy mający 17 protonów to chlor. Jon zmienia liczbę elektronów, izotop — neutronów, ale liczba protonów decyduje o tym, jaki to pierwiastek.</span></p>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Elektron nie „krąży” wokół jądra jak planeta. To <strong>chmura prawdopodobieństwa</strong> — orbital. Model Bohra (orbity) to użyteczne uproszczenie, ale w rzeczywistości elektron „jest wszędzie naraz” w pewnym obszarze.
+  </div>
+
+  <h3>Przykłady</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pierwiastek</th><th>Zapis</th><th>p⁺</th><th>n⁰</th><th>e⁻</th></tr></thead>
+      <tbody>
+        <tr><td>Wodór</td><td>¹H</td><td>1</td><td>0</td><td>1</td></tr>
+        <tr><td>Węgiel</td><td>¹²C</td><td>6</td><td>6</td><td>6</td></tr>
+        <tr><td>Tlen</td><td>¹⁶O</td><td>8</td><td>8</td><td>8</td></tr>
+        <tr><td>Sód</td><td>²³Na</td><td>11</td><td>12</td><td>11</td></tr>
+        <tr><td>Chlor</td><td>³⁵Cl</td><td>17</td><td>18</td><td>17</td></tr>
+        <tr><td>Wapń</td><td>⁴⁰Ca</td><td>20</td><td>20</td><td>20</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- IZOTOPY -->
+  <h3 id="izotopy">Izotopy</h3>
+  <div class="def-box">
+    <p><span class="term">Izotopy</span> — <span class="meaning">odmiany tego samego pierwiastka o tej samej liczbie protonów, ale różnej liczbie neutronów (i różnej liczbie masowej). Mają prawie identyczne właściwości chemiczne, różnią się masą i niektórymi właściwościami fizycznymi.</span></p>
+  </div>
+
+  <div class="diagram">
+    <svg viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Izotopy wodoru">
+      <!-- prot -->
+      <g transform="translate(100,70)">
+        <circle cx="0" cy="0" r="22" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+        <text x="0" y="5" font-size="14" text-anchor="middle" fill="#dc3545" font-weight="700">p⁺</text>
+        <text x="0" y="60" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">¹H — prot</text>
+        <text x="0" y="78" font-size="11" text-anchor="middle" fill="#6b7a8d">1 p, 0 n</text>
+      </g>
+      <!-- deuter -->
+      <g transform="translate(300,70)">
+        <circle cx="-10" cy="0" r="20" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+        <text x="-10" y="5" font-size="12" text-anchor="middle" fill="#dc3545" font-weight="700">p⁺</text>
+        <circle cx="15" cy="0" r="20" fill="#e2e8f0" stroke="#6b7a8d" stroke-width="2"/>
+        <text x="15" y="5" font-size="12" text-anchor="middle" fill="#6b7a8d" font-weight="700">n⁰</text>
+        <text x="0" y="60" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">²H — deuter</text>
+        <text x="0" y="78" font-size="11" text-anchor="middle" fill="#6b7a8d">1 p, 1 n</text>
+      </g>
+      <!-- tryt -->
+      <g transform="translate(500,70)">
+        <circle cx="-15" cy="0" r="18" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+        <text x="-15" y="4" font-size="11" text-anchor="middle" fill="#dc3545" font-weight="700">p⁺</text>
+        <circle cx="10" cy="-8" r="18" fill="#e2e8f0" stroke="#6b7a8d" stroke-width="2"/>
+        <text x="10" y="-4" font-size="11" text-anchor="middle" fill="#6b7a8d" font-weight="700">n⁰</text>
+        <circle cx="20" cy="15" r="18" fill="#e2e8f0" stroke="#6b7a8d" stroke-width="2"/>
+        <text x="20" y="19" font-size="11" text-anchor="middle" fill="#6b7a8d" font-weight="700">n⁰</text>
+        <text x="0" y="60" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">³H — tryt</text>
+        <text x="0" y="78" font-size="11" text-anchor="middle" fill="#6b7a8d">1 p, 2 n (promieniotwórczy)</text>
+      </g>
+    </svg>
+    <div class="caption">Trzy izotopy wodoru. Ta sama liczba protonów (1), różna liczba neutronów.</div>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Izotop ¹⁴C jest promieniotwórczy — powstaje w atmosferze i jest wykorzystywany do <strong>datowania radiowęglowego</strong> (określania wieku znalezisk archeologicznych).
+  </div>
+
+  <!-- JONY -->
+  <h3 id="jony">Jony</h3>
+  <div class="def-box">
+    <p><span class="term">Jon</span> — <span class="meaning">atom albo trwała grupa atomów mająca ładunek elektryczny, ponieważ oddała lub przyjęła elektrony.</span></p>
+    <ul style="margin-top:8px;">
+      <li><strong>Kation</strong> — ładunek dodatni (oddał elektrony), np. Na⁺ (11 p, 10 e), Al³⁺ (13 p, 10 e).</li>
+      <li><strong>Anion</strong> — ładunek ujemny (przyjął elektrony), np. Cl⁻ (17 p, 18 e), S²⁻ (16 p, 18 e).</li>
+    </ul>
+  </div>
+
+  <div class="diagram">
+    <svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Atom vs jon">
+      <!-- Atom -->
+      <g transform="translate(120,90)">
+        <circle cx="0" cy="0" r="30" fill="#fef2f2" stroke="#dc3545" stroke-width="2"/>
+        <text x="0" y="5" font-size="13" text-anchor="middle" fill="#dc3545" font-weight="700">11p</text>
+        <ellipse cx="0" cy="0" rx="55" ry="55" fill="none" stroke="#2b6cb0" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <circle cx="55" cy="0" r="7" fill="#2b6cb0"/><text x="55" y="4" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="-55" cy="0" r="7" fill="#2b6cb0"/><text x="-55" y="4" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="0" cy="55" r="7" fill="#2b6cb0"/><text x="0" y="59" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="0" cy="-55" r="7" fill="#2b6cb0"/><text x="0" y="-51" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="40" cy="40" r="7" fill="#2b6cb0"/><text x="40" y="44" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="-40" cy="-40" r="7" fill="#2b6cb0"/><text x="-40" y="-36" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="40" cy="-40" r="7" fill="#2b6cb0"/><text x="40" y="-36" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="-40" cy="40" r="7" fill="#2b6cb0"/><text x="-40" y="44" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <text x="0" y="100" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">ATOM Na</text>
+        <text x="0" y="118" font-size="11" text-anchor="middle" fill="#6b7a8d">11 p⁺ = 11 e⁻ (obojętny)</text>
+      </g>
+      <!-- Kation -->
+      <g transform="translate(380,90)">
+        <circle cx="0" cy="0" r="30" fill="#f0f6ff" stroke="#2b6cb0" stroke-width="2"/>
+        <text x="0" y="5" font-size="13" text-anchor="middle" fill="#2b6cb0" font-weight="700">11p</text>
+        <ellipse cx="0" cy="0" rx="55" ry="55" fill="none" stroke="#2b6cb0" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <circle cx="55" cy="0" r="7" fill="#2b6cb0"/><text x="55" y="4" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="-55" cy="0" r="7" fill="#2b6cb0"/><text x="-55" y="4" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="0" cy="55" r="7" fill="#2b6cb0"/><text x="0" y="59" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="0" cy="-55" r="7" fill="#2b6cb0"/><text x="0" y="-51" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="40" cy="40" r="7" fill="#2b6cb0"/><text x="40" y="44" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="-40" cy="-40" r="7" fill="#2b6cb0"/><text x="-40" y="-36" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <circle cx="40" cy="-40" r="7" fill="#2b6cb0"/><text x="40" y="-36" font-size="9" text-anchor="middle" fill="#fff">e</text>
+        <text x="0" y="100" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">KATION Na⁺</text>
+        <text x="0" y="118" font-size="11" text-anchor="middle" fill="#6b7a8d">11 p⁺ > 10 e⁻ (ładunek +)</text>
+      </g>
+    </svg>
+    <div class="caption">Atom sodu oddaje 1 elektron → powstaje kation Na⁺ (10 elektronów, 11 protonów, ładunek +1).</div>
+  </div>
+
+  <div class="card card-remember">
+    <span class="card-label">Reguła logiczna (główna)</span>
+    <p><strong>Kation oddał, anion przyjął.</strong></p>
+    <ul>
+      <li>Kation → mniej elektronów niż protonów → ładunek dodatni.</li>
+      <li>Anion → więcej elektronów niż protonów → ładunek ujemny.</li>
+    </ul>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Algorytm liczenia elektronów w jonie</span>
+    <ol>
+      <li>Odczytaj Z → liczba protonów.</li>
+      <li>Dla atomu obojętnego: e⁻ = Z.</li>
+      <li>Przy ładunku <strong>dodatnim</strong> — odejmij elektrony (Al³⁺: 13 − 3 = 10).</li>
+      <li>Przy ładunku <strong>ujemnym</strong> — dodaj elektrony (S²⁻: 16 + 2 = 18).</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 3. UKŁAD OKRESOWY -->
+<section class="section" id="uklad">
+  <div class="part-heading"><span class="part-num">3. Układ okresowy</span></div>
+  <div class="card card-gray">
+    <ul>
+      <li><strong>Okresy</strong> (wiersze) — numer okresu = liczba powłok elektronowych atomu obojętnego.</li>
+      <li><strong>Grupy</strong> (kolumny) — system <strong>1–18</strong> jest podstawowy.</li>
+      <li>Układ ułożony według <strong>rosnącej liczby atomowej Z</strong>, a nie A.</li>
+    </ul>
+  </div>
+
+  <h3>Elektrony walencyjne</h3>
+  <div class="def-box">
+    <p><span class="term">Elektrony walencyjne</span> — <span class="meaning">elektrony na najbardziej zewnętrznej zajętej powłoce. To one przede wszystkim biorą udział w tworzeniu wiązań chemicznych.</span></p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Grupa</th><th>e⁻ walencyjne</th><th>Rodzina</th><th>Typowa wartościowość (szkolnie)</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>1</td><td>metale alkaliczne</td><td>I</td></tr>
+        <tr><td>2</td><td>2</td><td>metale ziem alkalicznych</td><td>II</td></tr>
+        <tr><td>13</td><td>3</td><td>borowce</td><td>III</td></tr>
+        <tr><td>14</td><td>4</td><td>węglowce</td><td>IV</td></tr>
+        <tr><td>15</td><td>5</td><td>azotowce</td><td>III / V</td></tr>
+        <tr><td>16</td><td>6</td><td>chalkogeny</td><td>II / IV / VI</td></tr>
+        <tr><td>17</td><td>7</td><td>fluorowce</td><td>I (wobec metali i H)</td></tr>
+        <tr><td>18</td><td>8 (He: 2)</td><td>gazy szlachetne</td><td>niewartościowe</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rule-box trap">
+    <span class="icon">!</span>
+    <div><strong>Grupa ≠ wartościowość.</strong> Np. chlor jest w grupie 17, ma 7 elektronów walencyjnych, ale w HCl ma wartościowość I, a w HClO₄ — VII.</div>
+  </div>
+
+  <h3>Trendy w układzie okresowym</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>Jak zmienia się w układzie</th></tr></thead>
+      <tbody>
+        <tr><td>Promień atomowy</td><td>rośnie w dół grupy, maleje w prawo okresu</td></tr>
+        <tr><td>Elektroujemność</td><td>rośnie w prawo i w górę</td></tr>
+        <tr><td>Charakter metaliczny</td><td>rośnie w lewo i w dół</td></tr>
+        <tr><td>Charakter niemetaliczny</td><td>rośnie w prawo i w górę</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Wodór w układzie okresowym bywa umieszczany w <strong>grupie 1</strong> (ma 1 e⁻ walencyjny), ale też w <strong>grupie 17</strong> (brakuje mu 1 e⁻ do dubletu). Zwykle stoi osobno.
+  </div>
+</section>
+
+<!-- 4. WARTOŚCIOWOŚĆ -->
+<section class="section" id="wartosciowosc">
+  <div class="part-heading"><span class="part-num">4. Wartościowość — kluczowy temat</span></div>
+
+  <div class="def-box">
+    <p><span class="term">Wartościowość (model szkolny)</span> — <span class="meaning">liczba wiązań, które atom tworzy z innymi atomami. Wiązanie podwójne liczymy jako dwa, potrójne jako trzy. Zapisujemy cyfrą rzymską: I, II, III, IV, V, VI, VII.</span></p>
+  </div>
+
+  <h3>Model „liczby rąk” (bardzo użyteczny)</h3>
+  <div class="card card-correct">
+    <ul>
+      <li>H(I) ma 1 rękę</li>
+      <li>O(II) ma 2 ręce</li>
+      <li>Al(III) ma 3 ręce</li>
+      <li>C(IV) ma 4 ręce</li>
+    </ul>
+    <p>We wzorze wszystkie „ręce” muszą zostać wykorzystane. Dlatego Ca(II) i O(II) tworzą CaO, a nie Ca₂O₂ — stosunek 1:1 jest już najprostszy.</p>
+  </div>
+
+  <h3>Najważniejsze wartościowości — tabela</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pierwiastek</th><th>Symbol</th><th>Typowa wartościowość</th><th>Uwagi</th></tr></thead>
+      <tbody>
+        <tr><td>Wodór</td><td>H</td><td>I</td><td>zawsze</td></tr>
+        <tr><td>Tlen</td><td>O</td><td>II</td><td>prawie zawsze (wyjątki: nadtlenki, OF₂)</td></tr>
+        <tr><td>Sód, potas</td><td>Na, K</td><td>I</td><td>grupa 1</td></tr>
+        <tr><td>Magnez, wapń</td><td>Mg, Ca</td><td>II</td><td>grupa 2</td></tr>
+        <tr><td>Glin</td><td>Al</td><td>III</td><td>grupa 13</td></tr>
+        <tr><td>Węgiel</td><td>C</td><td>IV</td><td>grupa 14</td></tr>
+        <tr><td>Azot</td><td>N</td><td>III / V</td><td>w NH₃ – III, w HNO₃ – V</td></tr>
+        <tr><td>Fosfor</td><td>P</td><td>III / V</td><td>w PH₃ – III, w H₃PO₄ – V</td></tr>
+        <tr><td>Siarka</td><td>S</td><td>II / IV / VI</td><td>H₂S – II, SO₂ – IV, H₂SO₄ – VI</td></tr>
+        <tr><td>Chlor</td><td>Cl</td><td>I</td><td>wobec H i metali; wobec O bywa wyższa</td></tr>
+        <tr class="error-row"><td>Żelazo</td><td>Fe</td><td>II / III</td><td>trzeba podawać w nazwie</td></tr>
+        <tr class="error-row"><td>Miedź</td><td>Cu</td><td>I / II</td><td>trzeba podawać w nazwie</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Mnemonic główny</span>
+    <p><strong>H–I, O–II, Al–III, C–IV</strong> → „wodór raz, tlen dwa, glin trzy, węgiel cztery”.</p>
+  </div>
+
+  <!-- W-K-S-K -->
+  <h3 id="wksk">W–K–S–K — algorytm układania wzorów</h3>
+  <div class="card card-remember">
+    <span class="card-label">Kroki</span>
+    <ol>
+      <li><strong>W</strong> — wartościowości (zapisz cyframi rzymskimi nad symbolami).</li>
+      <li><strong>K</strong> — krzyżuj (wartościowość jednego → indeks drugiego).</li>
+      <li><strong>S</strong> — skracaj (podziel przez NWD).</li>
+      <li><strong>K</strong> — kontrola (łączna wartościowość po obu stronach musi być równa).</li>
+    </ol>
+  </div>
+
+  <div class="diagram">
+    <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="W-K-S-K">
+      <!-- Krok 1 -->
+      <g transform="translate(90,120)">
+        <text x="0" y="0" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">1. Wartościowości</text>
+        <text x="-30" y="30" font-size="20" text-anchor="middle" fill="#2b6cb0" font-weight="700">Al</text>
+        <text x="30" y="30" font-size="20" text-anchor="middle" fill="#dc3545" font-weight="700">O</text>
+        <text x="-30" y="20" font-size="12" text-anchor="middle" fill="#2b6cb0">III</text>
+        <text x="30" y="20" font-size="12" text-anchor="middle" fill="#dc3545">II</text>
+      </g>
+      <!-- Strzałka -->
+      <path d="M170,120 L200,120" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arrow)"/>
+      <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><polygon points="0 0, 10 3, 0 6" fill="#6b7a8d"/></marker></defs>
+      <!-- Krok 2 -->
+      <g transform="translate(280,120)">
+        <text x="0" y="0" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">2. Krzyżowanie</text>
+        <text x="0" y="30" font-size="20" text-anchor="middle" fill="#0a2540" font-weight="700">Al₂O₃</text>
+        <text x="0" y="55" font-size="11" text-anchor="middle" fill="#6b7a8d">3 od O idzie do Al</text>
+        <text x="0" y="70" font-size="11" text-anchor="middle" fill="#6b7a8d">2 od Al idzie do O</text>
+      </g>
+      <path d="M380,120 L410,120" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arrow)"/>
+      <!-- Krok 3 -->
+      <g transform="translate(490,120)">
+        <text x="0" y="0" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">3. Skracanie</text>
+        <text x="0" y="30" font-size="16" text-anchor="middle" fill="#0a2540" font-weight="700">Al₂O₃</text>
+        <text x="0" y="55" font-size="11" text-anchor="middle" fill="#6b7a8d">2 i 3 bez NWD</text>
+        <text x="0" y="70" font-size="11" text-anchor="middle" fill="#6b7a8d">zostaje bez zmian</text>
+      </g>
+      <path d="M590,120 L620,120" stroke="#6b7a8d" stroke-width="2" marker-end="url(#arrow)"/>
+      <!-- Krok 4 -->
+      <g transform="translate(680,120)">
+        <text x="0" y="0" font-size="14" text-anchor="middle" fill="#0a2540" font-weight="700">4. Kontrola</text>
+        <text x="0" y="30" font-size="13" text-anchor="middle" fill="#2d8f5e" font-weight="700">2·3 = 3·2 = 6 ✓</text>
+      </g>
+    </svg>
+    <div class="caption">Algorytm W–K–S–K na przykładzie Al₂O₃ (glin III, tlen II).</div>
+  </div>
+
+  <h4>Przykład ze skracaniem (Ca + O)</h4>
+  <div class="example">
+    <span class="tag">Krok 1</span>
+    <span class="chem">Ca<sup>II</sup> O<sup>II</sup></span>
+    <span class="desc">wapń II, tlen II</span>
+  </div>
+  <div class="example">
+    <span class="tag">Krok 2</span>
+    <span class="chem">Ca₂O₂</span>
+    <span class="desc">krzyżowanie daje Ca₂O₂</span>
+  </div>
+  <div class="example">
+    <span class="tag">Krok 3</span>
+    <span class="chem">CaO</span>
+    <span class="desc">skracamy przez NWD = 2</span>
+  </div>
+  <div class="example">
+    <span class="tag">Krok 4</span>
+    <span class="chem">1·II = 1·II ✓</span>
+    <span class="desc">kontrola — wartościowości się zgadzają</span>
+  </div>
+
+  <!-- GRUPY ATOMÓW -->
+  <h3 id="grupy">Grupy atomów — pomost do klasy 8</h3>
+  <div class="def-box">
+    <p><span class="term">Grupa atomów</span> — <span class="meaning">kilka atomów trzymających się razem, zachowujących się jak jeden „klocek” o określonym ładunku. Wzory zapisujemy z nawiasem, gdy grupa powtarza się więcej niż raz.</span></p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Grupa</th><th>Nazwa</th><th>Ładunek</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td>OH</td><td>wodorotlenkowa</td><td>OH⁻</td><td>Ca(OH)₂</td></tr>
+        <tr><td>NO₃</td><td>azotanowa(V)</td><td>NO₃⁻</td><td>NaNO₃</td></tr>
+        <tr><td>SO₄</td><td>siarczanowa(VI)</td><td>SO₄²⁻</td><td>Al₂(SO₄)₃</td></tr>
+        <tr><td>CO₃</td><td>węglanowa</td><td>CO₃²⁻</td><td>CaCO₃</td></tr>
+        <tr><td>PO₄</td><td>fosforanowa(V)</td><td>PO₄³⁻</td><td>Ca₃(PO₄)₂</td></tr>
+        <tr><td>NH₄</td><td>amonowa</td><td>NH₄⁺</td><td>NH₄Cl</td></tr>
+        <tr><td>HCO₃</td><td>wodorowęglanowa</td><td>HCO₃⁻</td><td>NaHCO₃</td></tr>
+        <tr><td>CH₃COO</td><td>octanowa</td><td>CH₃COO⁻</td><td>CH₃COONa</td></tr>
+        <tr><td>MnO₄</td><td>manganianowa(VII)</td><td>MnO₄⁻</td><td>KMnO₄</td></tr>
+        <tr><td>Cr₂O₇</td><td>dichromianowa(VI)</td><td>Cr₂O₇²⁻</td><td>K₂Cr₂O₇</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SVG: CaOH2 vs Ca(OH)2 -->
+  <div class="diagram">
+    <svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CaOH2 vs Ca(OH)2">
+      <!-- Źle -->
+      <g transform="translate(150,80)">
+        <text x="0" y="0" font-size="14" text-anchor="middle" fill="#dc3545" font-weight="700">❌ CaOH₂</text>
+        <text x="0" y="30" font-size="18" text-anchor="middle" fill="#0a2540" font-family="Courier New">Ca–O–H–H</text>
+        <text x="0" y="60" font-size="11" text-anchor="middle" fill="#6b7a8d">indeks „2” przyklejony</text>
+        <text x="0" y="76" font-size="11" text-anchor="middle" fill="#6b7a8d">tylko do wodoru (źle!)</text>
+      </g>
+      <!-- Dobrze -->
+      <g transform="translate(450,80)">
+        <text x="0" y="0" font-size="14" text-anchor="middle" fill="#2d8f5e" font-weight="700">✓ Ca(OH)₂</text>
+        <text x="0" y="30" font-size="16" text-anchor="middle" fill="#0a2540" font-family="Courier New">Ca–(O–H)(O–H)</text>
+        <text x="0" y="60" font-size="11" text-anchor="middle" fill="#6b7a8d">indeks „2” obejmuje</text>
+        <text x="0" y="76" font-size="11" text-anchor="middle" fill="#6b7a8d">całą grupę OH (dobrze!)</text>
+      </g>
+      <!-- linia -->
+      <line x1="300" y1="30" x2="300" y2="130" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="4 3"/>
+    </svg>
+    <div class="caption">Nawias = „pudełko na grupę”. Bez nawiasu indeks dotyczy tylko ostatniego atomu.</div>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Dlaczego woda jest ciekła w temperaturze pokojowej, a H₂S (cięższy!) jest gazem? Bo woda tworzy <strong>wiązania wodorowe</strong> między cząsteczkami — słabe, ale liczne. Dzięki nim woda „trzyma się razem” i wrze dopiero w 100 °C.
+  </div>
+</section>
+
+<!-- 5. WIĄZANIA -->
+<section class="section" id="wiazania">
+  <div class="part-heading"><span class="part-num">5. Wiązania chemiczne</span></div>
+  <p>Atomy łączą się, aby uzyskać stabilną konfigurację elektronową — dążą do <strong>oktetu</strong> (8 e⁻), a wodór do <strong>dubletu</strong> (2 e⁻). To model dydaktyczny, nie uniwersalne prawo.</p>
+
+  <h3>Trzy główne typy</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>Jonowe</th><th>Kowalencyjne</th><th>Metaliczne</th></tr></thead>
+      <tbody>
+        <tr><td>Elektrony</td><td>przekazywane (powstają jony)</td><td>uwspólniane</td><td>zdelokalizowane (morze)</td></tr>
+        <tr><td>Między</td><td>metal + niemetal</td><td>niemetal + niemetal</td><td>metalami</td></tr>
+        <tr><td>Przykład</td><td>NaCl, MgO, CaF₂</td><td>H₂, HCl, H₂O, CH₄</td><td>Fe, Cu, Al, Na</td></tr>
+        <tr><td>Budowa</td><td>sieć jonów</td><td>cząsteczki lub sieci</td><td>sieć jonów w morzu e⁻</td></tr>
+        <tr><td>Prąd</td><td>przewodzi po stopieniu/rozpuszczeniu</td><td>zwykle nie przewodzi</td><td>przewodzi</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-remember">
+    <span class="card-label">Reguła logiczna</span>
+    <p><strong>Metal oddaje, niemetal bierze; niemetale się dzielą; metale tworzą morze elektronów.</strong></p>
+  </div>
+
+  <h3>Algorytm rozpoznawania</h3>
+  <ol>
+    <li>Oba pierwiastki to metale → <strong>wiązanie metaliczne</strong>.</li>
+    <li>Jeden metal, drugi niemetal → najczęściej <strong>wiązanie jonowe</strong>.</li>
+    <li>Oba niemetale → <strong>wiązanie kowalencyjne</strong>.</li>
+    <li>Niemetale różne → <strong>kowalencyjne spolaryzowane</strong> (HCl, H₂O).</li>
+    <li>Niemetale takie same → <strong>kowalencyjne niespolaryzowane</strong> (H₂, Cl₂).</li>
+  </ol>
+
+  <!-- ELEKTROUJEMNOŚĆ -->
+  <h3 id="elektroujemnosc">Elektroujemność (skala Paulinga)</h3>
+  <div class="def-box">
+    <p><span class="term">Elektroujemność (χ)</span> — <span class="meaning">miara zdolności atomu do przyciągania wspólnej pary elektronowej w wiązaniu. W układzie okresowym rośnie w prawo i ku górze; największą ma fluor (F).</span></p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pierwiastek</th><th>χ (Pauling)</th><th>Pierwiastek</th><th>χ (Pauling)</th></tr></thead>
+      <tbody>
+        <tr><td>F</td><td>3,98</td><td>Br</td><td>2,96</td></tr>
+        <tr><td>O</td><td>3,44</td><td>I</td><td>2,66</td></tr>
+        <tr><td>Cl</td><td>3,16</td><td>C</td><td>2,55</td></tr>
+        <tr><td>N</td><td>3,04</td><td>H</td><td>2,20</td></tr>
+        <tr><td>Mg</td><td>1,31</td><td>Na</td><td>0,93</td></tr>
+        <tr><td>Ca</td><td>1,00</td><td>K</td><td>0,82</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Rodzaj wiązania a Δχ (orientacyjnie)</span>
+    <ul>
+      <li>Δχ &lt; 0,4 → kowalencyjne niespolaryzowane</li>
+      <li>0,4 ≤ Δχ ≤ 1,7 → kowalencyjne spolaryzowane</li>
+      <li>Δχ &gt; 1,7 → jonowe</li>
+    </ul>
+    <p><strong>Uwaga:</strong> podane progi są umowne. W klasie 7/8 korzystaj najpierw z prostszej reguły: metal + niemetal → jonowe; niemetal + niemetal → kowalencyjne.</p>
+  </div>
+</section>
+
+<!-- 6. RÓWNANIA -->
+<section class="section" id="rownania">
+  <div class="part-heading"><span class="part-num">6. Równania reakcji</span></div>
+
+  <div class="def-box">
+    <p><span class="term">Prawo zachowania masy</span> — <span class="meaning">w reakcji chemicznej atomy nie znikają i nie powstają z niczego — tylko łączą się inaczej. Dlatego liczba atomów każdego pierwiastka przed strzałką i po strzałce musi być taka sama.</span></p>
+  </div>
+
+  <h3>Procedura bilansowania</h3>
+  <div class="card card-remember">
+    <ol>
+      <li>Zapisz poprawne wzory substratów i produktów.</li>
+      <li>Policz atomy każdego pierwiastka po obu stronach.</li>
+      <li>Zacznij od pierwiastka występującego w najmniejszej liczbie wzorów.</li>
+      <li>Ustaw współczynniki przed wzorami.</li>
+      <li>Wodór i tlen zwykle na koniec.</li>
+      <li>Sprawdź wszystkie pierwiastki.</li>
+      <li><strong>Nigdy nie zmieniaj indeksów dolnych we wzorach.</strong></li>
+    </ol>
+  </div>
+
+  <div class="rule-box trap">
+    <span class="icon">!</span>
+    <div><strong>„Współczynniki tak, indeksy nie!”</strong> — podczas bilansowania zmieniamy TYLKO współczynniki.</div>
+  </div>
+
+  <h3>Przykłady bilansowania</h3>
+  <div class="example">
+    <span class="tag">Przykład 1</span>
+    <span class="chem">Fe + O₂ → Fe₂O₃</span>
+    <span class="desc">→ 4Fe + 3O₂ → 2Fe₂O₃</span>
+  </div>
+  <div class="example">
+    <span class="tag">Przykład 2</span>
+    <span class="chem">Al + HCl → AlCl₃ + H₂</span>
+    <span class="desc">→ 2Al + 6HCl → 2AlCl₃ + 3H₂</span>
+  </div>
+  <div class="example">
+    <span class="tag">Przykład 3</span>
+    <span class="chem">C₂H₆ + O₂ → CO₂ + H₂O</span>
+    <span class="desc">→ 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O</span>
+  </div>
+
+  <h3>Typy reakcji</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Typ</th><th>Schemat</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td>Synteza</td><td>A + B → AB</td><td>2Mg + O₂ → 2MgO</td></tr>
+        <tr><td>Analiza (rozkład)</td><td>AB → A + B</td><td>CaCO₃ → CaO + CO₂</td></tr>
+        <tr><td>Wypieranie</td><td>A + BC → AC + B</td><td>Zn + CuSO₄ → ZnSO₄ + Cu</td></tr>
+        <tr><td>Podwójna wymiana</td><td>AB + CD → AD + CB</td><td>AgNO₃ + NaCl → AgCl↓ + NaNO₃</td></tr>
+        <tr><td>Spalanie całkowite</td><td>substancja + dostatecznie O₂ → zwykle tlenki</td><td>CH₄ + 2O₂ → CO₂ + 2H₂O (przy niedoborze O₂: CO albo C)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Reakcje egzo- i endotermiczne</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Typ</th><th>Co robi z ciepłem</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td>Egzotermiczna</td><td>wydziela ciepło</td><td>spalanie CH₄</td></tr>
+        <tr><td>Endotermiczna</td><td>pochłania ciepło</td><td>rozkład CaCO₃</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Mnemonic</span>
+    <p><strong>Exo</strong> = „na zewnątrz” (ciepło wychodzi). <strong>Endo</strong> = „do wewnątrz” (ciepło wchodzi).</p>
+  </div>
+</section>
+
+<!-- 7. KLINIKA BŁĘDÓW -->
+<section class="section" id="klinika">
+  <div class="part-heading"><span class="part-num">7. Klinika błędów</span></div>
+  <p>Format: <strong>Błąd → Co nie tak? → Popraw → Reguła → Dlaczego?</strong></p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Błędny zapis</th><th>Popraw</th><th>Reguła</th><th>Dlaczego?</th></tr></thead>
+      <tbody>
+        <tr><td>CaOH₂</td><td>Ca(OH)₂</td><td>Nawias obejmuje całą grupę</td><td>Indeks 2 dotyczy całego OH, nie tylko H</td></tr>
+        <tr><td>FeO₃</td><td>Fe₂O₃</td><td>Krzyżowanie + kontrola</td><td>Fe(III), O(II) → 2·3 = 3·2</td></tr>
+        <tr><td>H₂ + O₂ → H₂O₂</td><td>2H₂ + O₂ → 2H₂O</td><td>Nie zmieniaj indeksów</td><td>H₂O₂ to nadtlenek wodoru — inna substancja</td></tr>
+        <tr><td>Na⁺ ma 11 e⁻</td><td>Na⁺ ma 10 e⁻</td><td>Kation oddał elektron</td><td>11 − 1 = 10</td></tr>
+        <tr><td>Cl ma 17 n⁰ (dla ³⁵Cl)</td><td>Cl ma 18 n⁰</td><td>A − Z = n⁰</td><td>35 − 17 = 18</td></tr>
+        <tr><td>„Tlenek żelaza” bez wartościowości</td><td>„Tlenek żelaza(III)”</td><td>Fe ma II/III</td><td>Nazwa musi precyzować wartościowość</td></tr>
+        <tr><td>„Wartościowość = nr grupy”</td><td>To zależy od grupy</td><td>Grupy 15–17 mają warianty</td><td>Np. S: II, IV, VI</td></tr>
+        <tr><td>„Wartościowość = ładunek jonu”</td><td>To pokrewne, ale różne pojęcia</td><td>Wartościowość = liczba wiązań</td><td>Ładunek = nadmiar/niedobór e⁻</td></tr>
+        <tr><td>H₂O ma masę 18 g</td><td>H₂O ma masę cząsteczkową 18 u</td><td>u to jednostka masy atomowej</td><td>1 u ≈ 1,66·10⁻²⁴ g</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card card-hint">
+    <span class="card-label">STOP przed oddaniem zadania</span>
+    <ul>
+      <li>Czy odróżniam Z od A?</li>
+      <li>Czy w atomie obojętnym liczba protonów = liczbie elektronów?</li>
+      <li>Czy zapisałem wzór w najprostszym stosunku?</li>
+      <li>Czy użyłem nawiasu przy powtarzającej się grupie?</li>
+      <li>Czy bilansowałem tylko współczynnikami?</li>
+      <li>Czy po obu stronach równania liczba atomów się zgadza?</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8. ĆWICZENIA -->
+<section class="section" id="cwiczenia">
+  <div class="part-heading"><span class="part-num">8. Ćwiczenia</span></div>
+
+  <h3>Poziom podstawowy <span class="level-badge level-basic">podstawowy</span></h3>
+  <div class="exercise">
+    <ol>
+      <li>Podaj liczbę p⁺, n⁰, e⁻ dla: ¹⁶O, ²⁴Mg, ⁴⁰Ar.</li>
+      <li>Ustal wartościowość w: H₂S, CO₂, AlCl₃, Na₂O.</li>
+      <li>Napisz wzory: tlenek wapnia, chlorek glinu, siarczek sodu, tlenek żelaza(III), wodorotlenek wapnia.</li>
+      <li>Zbilansuj: a) Fe + O₂ → Fe₂O₃; b) Al + HCl → AlCl₃ + H₂</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-cw-podst')">Pokaż odpowiedzi</button>
+    <div id="ans-cw-podst" class="answer-content">
+      <ol>
+        <li>¹⁶O: 8/8/8; ²⁴Mg: 12/12/12; ⁴⁰Ar: 18/22/18.</li>
+        <li>H₂S: H(I), S(II); CO₂: C(IV), O(II); AlCl₃: Al(III), Cl(I); Na₂O: Na(I), O(II).</li>
+        <li>CaO, AlCl₃, Na₂S, Fe₂O₃, Ca(OH)₂.</li>
+        <li>a) 4Fe + 3O₂ → 2Fe₂O₃; b) 2Al + 6HCl → 2AlCl₃ + 3H₂.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Poziom egzaminacyjny <span class="level-badge level-exam">egzaminacyjny</span></h3>
+  <div class="exercise">
+    <ol start="5">
+      <li>Atom fosforu P ma 15 protonów i 16 neutronów. a) Podaj symbol i liczbę masową. b) Zapisz wzór tlenku (W = V). c) Ile atomów P i O zawiera P₂O₅?</li>
+      <li>Ułóż wzory i nazwij: a) glin + tlen, b) magnez + chlor, c) węgiel + tlen, d) żelazo(II) + siarka.</li>
+      <li>Zbilansuj i określ typ: a) K + H₂O → KOH + H₂; b) CaCO₃ → CaO + CO₂; c) Zn + CuSO₄ → ZnSO₄ + Cu.</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-cw-egz')">Pokaż odpowiedzi</button>
+    <div id="ans-cw-egz" class="answer-content">
+      <ol start="5">
+        <li>a) ³¹P; b) P₂O₅; c) 2 atomy P, 5 atomów O.</li>
+        <li>a) Al₂O₃ – tlenek glinu; b) MgCl₂ – chlorek magnezu; c) CO₂ – tlenek węgla(IV); d) FeS – siarczek żelaza(II).</li>
+        <li>a) 2K + 2H₂O → 2KOH + H₂ (wypieranie); b) CaCO₃ → CaO + CO₂ (analiza); c) Zn + CuSO₄ → ZnSO₄ + Cu (wypieranie).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Poziom ambitny <span class="level-badge level-ambitious">ambitny</span></h3>
+  <div class="exercise">
+    <ol start="8">
+      <li>Dlaczego w nazwie tlenku żelaza podajemy wartościowość, a w tlenku wapnia zwykle nie?</li>
+      <li>Zapisz wzory tlenków siarki dla wartościowości S = II, IV, VI. Podaj nazwy.</li>
+      <li>Zbilansuj: a) C₂H₆ + O₂ → CO₂ + H₂O; b) Fe₂O₃ + CO → Fe + CO₂.</li>
+      <li>Atom: 20 e⁻, A = 40. Jaki pierwiastek? Czy izotop wapnia? Podaj p⁺ i n⁰.</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-cw-amb')">Pokaż odpowiedzi</button>
+    <div id="ans-cw-amb" class="answer-content">
+      <ol start="8">
+        <li>Fe ma zmienne wartościowości (II i III); Ca prawie zawsze II.</li>
+        <li>SO (tlenek siarki(II)), SO₂ (tlenek siarki(IV)), SO₃ (tlenek siarki(VI)).</li>
+        <li>a) 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O; b) Fe₂O₃ + 3CO → 2Fe + 3CO₂.</li>
+        <li>Z = 20 → wapń (Ca); tak, ⁴⁰Ca; 20 p, 20 n.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+
+<div class="card card-correct">
+  <span class="card-label">Liczba elektronów w jonie</span>
+  <p><strong>e⁻ = Z − q</strong>, gdzie q to ładunek ze znakiem. Al³⁺: 13 − (+3) = 10. S²⁻: 16 − (−2) = 18.</p>
+</div>
+<div class="card card-hint">
+  <span class="card-label">BHP — etykieta</span>
+  <p>Przed pracą przeczytaj etykietę odczynnika i piktogramy zagrożeń.</p>
+</div>
+<div class="card card-remember">
+  <span class="card-label">Atom / nuklid / izotop</span>
+  <p><strong>Atom</strong> — najmniejsza elektrycznie obojętna cząstka pierwiastka zachowująca jego właściwości chemiczne (jądro + elektrony wokół jądra).</p>
+  <p><strong>Nuklid</strong> — konkretny rodzaj atomu o danym Z i liczbie neutronów, np. <sup>23</sup>Na.</p>
+  <p><strong>Izotopy</strong> — nuklidy tego samego pierwiastka (to samo Z, inne A).</p>
+</div>
+<div class="card card-hint">
+  <span class="card-label">Wzory: dwie metody</span>
+  <p>Proste tlenki/chlorki → wartościowość i W–K–S–K. Sole i wodorotlenki → ładunki jonów, suma ładunków = 0. Al³⁺ i SO₄²⁻ → Al₂(SO₄)₃.</p>
+</div>
+<div class="card card-ambitious">
+  <span class="card-label">Wartościowość a stopień utlenienia</span>
+  <p>Wartościowość ≈ ile wiązań. Stopień utlenienia = umowna liczba (przesunięcie e⁻). W nazwach szkolnych liczby rzymskie często oznaczają stopień, np. tlenek siarki(IV). Nie są to identyczne pojęcia.</p>
+</div>
+<div class="card card-gray">
+  <span class="card-label">Stany skupienia w równaniach</span>
+  <p>(s) ciało stałe · (l) ciecz · (g) gaz · (aq) roztwór wodny · ↓ osad · ↑ gaz · Δ ogrzewanie.<br>
+  AgNO₃(aq) + NaCl(aq) → AgCl(s)↓ + NaNO₃(aq)</p>
+</div>
+<div class="card card-hint">
+  <span class="card-label">Masa i prawo zachowania</span>
+  <p>2 Mg + O₂ → 2 MgO: 48 g Mg + 32 g O₂ → 80 g MgO (układ zamknięty).</p>
+</div>
+<div class="card card-hint">
+  <span class="card-label">Podwójna wymiana</span>
+  <p>W roztworze zwykle „widać” reakcję, gdy powstaje osad, gaz albo woda / słaby elektrolit — nie każda zamiana jonów musi zajść.</p>
+</div>
+<div class="card card-ambitious">
+  <span class="card-label">Ambitny dodatek — nie na pierwszy tydzień</span>
+  <p>Progi Δχ, izobary, alotropia, MnO₄⁻ / Cr₂O₇²⁻, dokładny skład izotopowy Cl, orbitale — zostają w lekcji jako extra, nie jako obowiązek startu L001.</p>
+</div>
+
+<!-- FISZKI -->
+<section class="section" id="fiszki">
+  <div class="part-heading"><span class="part-num">Fiszki</span></div>
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Co to liczba atomowa Z?</span><span class="back"><strong>Liczba protonów</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Co to liczba masowa A?</span><span class="back"><strong>p⁺ + n⁰ (izotop)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Ile neutronów ma ²³Na?</span><span class="back"><strong>12 (23 − 11)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Ile elektronów ma Na⁺?</span><span class="back"><strong>10</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wartościowość H, O, Al, C</span><span class="back"><strong>I, II, III, IV</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wzór tlenku glinu</span><span class="back"><strong>Al₂O₃</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wzór chlorku wapnia</span><span class="back"><strong>CaCl₂</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Dlaczego Ca(OH)₂ ma nawias?</span><span class="back"><strong>OH powtarza się 2×</strong></span><span class="card-tag tag-trap">pułapka</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wiązanie w NaCl</span><span class="back"><strong>jonowe</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wiązanie w H₂O</span><span class="back"><strong>kowalencyjne spolaryzowane</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Co robimy z indeksami przy bilansowaniu?</span><span class="back"><strong>Nie ruszamy!</strong></span><span class="card-tag tag-trap">pułapka</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Typ reakcji: 2H₂ + O₂ → 2H₂O</span><span class="back"><strong>synteza</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Typ reakcji: CaCO₃ → CaO + CO₂</span><span class="back"><strong>analiza (rozkład)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Siarka — możliwe wartościowości</span><span class="back"><strong>II, IV, VI</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Różnica: izotopy vs izobary</span><span class="back"><strong>izotopy: ten sam Z, różny A; izobary: ten sam A, różny Z</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Który pierwiastek ma największą elektroujemność?</span><span class="back"><strong>Fluor (F)</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Ile protonów ma ³⁷Cl?</span><span class="back"><strong>17</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Ile neutronów ma ³⁷Cl?</span><span class="back"><strong>20</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wzór siarczanu(VI) glinu</span><span class="back"><strong>Al₂(SO₄)₃</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wzór fosforanu(V) wapnia</span><span class="back"><strong>Ca₃(PO₄)₂</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Kation oddał, anion…</span><span class="back"><strong>przyjął</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Reguła oktetu</span><span class="back"><strong>dążenie do 8 e⁻ walencyjnych</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+  </div>
+</section>
+
+<!-- TEST -->
+<section class="section" id="test">
+  <div class="part-heading"><span class="part-num">Test końcowy</span></div>
+  <div class="exercise">
+    <ol>
+      <li>Zapisz rozmieszczenie elektronów na powłokach: atom P (Z=15) oraz jon S²⁻.</li>
+      <li>Ustal wartościowości i napisz wzory: a) tlenek azotu(V), b) chlorek żelaza(III), c) siarczek wapnia, d) wodorotlenek sodu.</li>
+      <li>Zbilansuj i określ typ: a) Mg + N₂ → Mg₃N₂; b) 2KClO₃ —(Δ, MnO₂)→ 2KCl + 3O₂; c) Cl₂ + 2KI → 2KCl + I₂.</li>
+      <li>Wskaż wartościowość siarki w: H₂S, SO₂, SO₃. Podaj nazwy tlenków.</li>
+      <li>Różnica: izotopy vs izobary.</li>
+      <li>Co to elektroujemność? Który pierwiastek ma największą?</li>
+      <li>Wymień rodzaje wiązań chemicznych z przykładami.</li>
+      <li>Oblicz masę cząsteczkową H₂SO₄.</li>
+      <li>Co to alotropia? Podaj przykład.</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-test')">Pokaż odpowiedzi</button>
+    <div id="ans-test" class="answer-content">
+      <ol>
+        <li>P: K2 L8 M5; S²⁻: K2 L8 M8.</li>
+        <li>a) N₂O₅; b) FeCl₃; c) CaS; d) NaOH.</li>
+        <li>a) 3Mg + N₂ → Mg₃N₂ (synteza); b) 2KClO₃ —(Δ, MnO₂)→ 2KCl + 3O₂ (analiza); c) Cl₂ + 2KI → 2KCl + I₂ (wypieranie).</li>
+        <li>H₂S: S(II); SO₂: S(IV), tlenek siarki(IV); SO₃: S(VI), tlenek siarki(VI).</li>
+        <li>Izotopy: ten sam Z, różny A; izobary: ten sam A, różny Z.</li>
+        <li>Zdolność do przyciągania elektronów; fluor (F).</li>
+        <li>Jonowe (NaCl), kowalencyjne (H₂O), metaliczne (Fe).</li>
+        <li>2·1 + 32 + 4·16 = 98 u (masa cząsteczkowa H₂SO₄; dla NaCl mówi się masa wzoru jednostkowego).</li>
+        <li>Ten sam pierwiastek w różnych postaciach, np. O₂ i O₃.</li>
+      </ol>
+      <p><strong>Samoocena:</strong> 8–9/9 — gotowy na klasę 8. 6–7/9 — powtórz sekcje, w których się pomyliłeś. &lt; 6 — przejdź lekcję jeszcze raz, spokojnie, z fiszkami.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CIEKAWOSTKI -->
+<section class="section" id="ciekawostki">
+  <div class="part-heading"><span class="part-num">Ciekawostki i doprecyzowania</span></div>
+  <div class="curiosity">
+    <span class="label">Ciekawostka 1 — dlaczego lód pływa?</span>
+    Woda ma <strong>mniejszą gęstość w stanie stałym</strong> niż ciekłym — unikalna cecha wśród cieczy. Struktura krystaliczna lodu (heksagonalna) jest „pusta” w środku, więc lód zajmuje więcej miejsca niż ta sama masa wody. Dlatego lód pływa, a jeziora zamarzają od góry.
+  </div>
+  <div class="curiosity">
+    <span class="label">Ciekawostka 2 — NH₄OH to skrót myślowy</span>
+    „NH₄OH” (wodorotlenek amonu) to zapis szkolny. W rzeczywistości w roztworze mamy równowagę <strong>NH₃ + H₂O ⇌ NH₄⁺ + OH⁻</strong> — nie ma cząsteczki NH₄OH. Ale na E8 używamy uproszczenia.
+  </div>
+  <div class="curiosity">
+    <span class="label">Ciekawostka 3 — powłoki K, L, M</span>
+    Historyczne oznaczenia powłok (K, L, M, N...) pochodzą od dawnych badań spektroskopowych. IUPAC zaleca <strong>numery 1, 2, 3, 4</strong>. W szkole używamy obu.
+  </div>
+  <div class="curiosity">
+    <span class="label">Ciekawostka 4 — masa atomowa to średnia ważona</span>
+    Chlor ma masę atomową 35,45 u, bo jest mieszaniną izotopów: ³⁵Cl (75,77%) i ³⁷Cl (24,23%). M = 0,7577 · 34,969 + 0,2423 · 36,966 ≈ 35,45 u. To <strong>średnia ważona abundancją</strong> (częstością występowania), nie zwykła średnia.
+  </div>
+  <div class="curiosity">
+    <span class="label">Ciekawostka 5 — wodór w układzie okresowym</span>
+    Wodór bywa umieszczany w grupie 1 (ma 1 elektron walencyjny, jak metale alkaliczne) albo w grupie 17 (brakuje mu 1 elektronu do dubletu, jak fluorowce). Zwykle stoi osobno — to wyjątek.
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<section class="section" id="plus-md">
+<div class="part-heading"><span class="part-num">PLUS z MD</span> — wykład obowiązkowy (bez ubytku)</div>
+<div class="card card-remember"><span class="card-label">BHP i szkło</span>
+<p>Zlewka daje tylko <strong>orientacyjną</strong> objętość. Do odmierzania: cylinder, pipeta, biureta. Probówka — mała skala. Nie ogrzewaj zamkniętego naczynia.</p></div>
+<div class="card card-hint"><span class="card-label">W–K–S–K</span>
+<p>Wartościowość → Krzyżowanie → Skracanie → Kontrola sumy. Nawias przy grupie: Ca(OH)₂, Fe(OH)₃, Al₂(SO₄)₃.</p></div>
+<div class="card card-correct"><span class="card-label">Stany w równaniach</span>
+<p>(s) ciało stałe · (l) ciecz · (g) gaz · (aq) roztwór · ↓ osad · ↑ gaz · Δ ogrzewanie.</p>
+<p>Masa atomowa szkolna to masa średnia ważona izotopami. Masa wzoru (NaCl) ≠ „masa cząsteczkowa” w ścisłym sensie.</p></div>
+<div class="card card-trap"><span class="card-label">Pułapki</span>
+<p>Elektron nie „krąży jak mucha”. W modelu szkolnym: obszar / powłoka. Jon: e⁻ = Z − ładunek. NH₄OH w szkole = skrót; w roztworze NH₃(aq) i równowaga NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ (dopisek precyzji).</p></div>
+</section>
+
+<footer class="footer">
+  <p><strong>L001 — Powtórka fundamentów klasy 7</strong> · Start klasy 8 · Wrzesień</p>
+  <p style="font-size:0.78rem;opacity:0.7;">Powtórz solidnie wartościowość — to fundament całego roku.</p>
+</footer>
+
+</div>
+
+<script>
+function toggleAnswer(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle('show');
+  const btn=document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+  if(btn)btn.textContent=el.classList.contains('show')?'Ukryj odpowiedzi':'Pokaż odpowiedzi';
+}
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+
+</script>
+</body>
+</html>

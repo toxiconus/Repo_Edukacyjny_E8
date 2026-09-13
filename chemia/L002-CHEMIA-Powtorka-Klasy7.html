@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja powtórkowa – fundamenty z klasy 7 (dla klasy 8)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ================================================================
+           SYSTEM WIZUALNY – wersja 6.2 (spójny z L001)
+           ================================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 { font-size: 2rem; }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h2 .level-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p { margin-bottom: 8px; }
+        ul, ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li { margin-bottom: 3px; }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+            border-color: var(--color-remember);
+        }
+        .card-remember .card-label { color: var(--color-remember); }
+        .card-warning {
+            background: #fffbeb;
+            border-left: 5px solid #d69e2e;
+            border-color: #d69e2e;
+        }
+        .card-warning .card-label { color: #d69e2e; }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+            border-color: var(--color-hint);
+        }
+        .card-hint .card-label { color: var(--color-hint); }
+        .card-error {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-error .card-label { color: var(--color-trap); }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+            border-color: var(--color-correct);
+        }
+        .card-correct .card-label { color: var(--color-correct); }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-trap .card-label { color: var(--color-trap); }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+            border-color: var(--color-ambitious);
+        }
+        .card-ambitious .card-label { color: var(--color-ambitious); }
+        .card-gray {
+            background: var(--color-bg-subtle);
+            border-left: 5px solid var(--color-text-muted);
+            border-color: var(--color-text-muted);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic { background: #d4edda; color: #155724; }
+        .level-training { background: #cce5ff; color: #004085; }
+        .level-exam { background: #ffe8cc; color: #8a6d3b; }
+        .level-trap { background: #f8d7da; color: #721c24; }
+        .level-ambitious { background: #e8d5f5; color: #4a1a6b; }
+        .level-writing { background: #d1ecf1; color: #0c5460; }
+        .level-remember { background: #d1d5db; color: #1a1a2e; }
+        .level-difficult { background: #fde68a; color: #78350f; }
+        .level-olimp { background: #fde68a; color: #78350f; }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) { background: #fafbfc; }
+        .table-wrap .error-row { background: #fef2f2; }
+        .table-wrap .correct-row { background: #f0faf4; }
+
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+        }
+        .example .chem {
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 1.0rem;
+            font-family: 'Courier New', monospace;
+        }
+        .example .desc {
+            color: var(--color-text-muted);
+            font-size: 0.88rem;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .example .note {
+            color: var(--color-text-muted);
+            font-size: 0.78rem;
+            font-style: italic;
+            margin-left: auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-success {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .btn-success:hover {
+            background: #1f6e48;
+            border-color: #1f6e48;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+
+        .answer-toggle,
+        .hint-toggle {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+        .answer-toggle {
+            background: var(--color-training);
+            color: white;
+        }
+        .answer-toggle:hover { background: #1f4e8c; }
+        .hint-toggle {
+            background: var(--color-hint);
+            color: white;
+        }
+        .hint-toggle:hover { background: #d97706; }
+        .answer-content,
+        .hint-content {
+            border-radius: 6px;
+            padding: 0 12px;
+            margin-top: 4px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .answer-content.show,
+        .hint-content.show {
+            max-height: 1200px;
+            padding: 10px 12px;
+            opacity: 1;
+        }
+        .answer-content {
+            background: var(--color-training-bg);
+            border-left: 3px solid var(--color-training);
+        }
+        .hint-content {
+            background: var(--color-hint-bg);
+            border-left: 3px solid var(--color-hint);
+            font-style: italic;
+            color: #78350f;
+        }
+
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+
+        .fiszka {
+            background: var(--color-bg-subtle);
+            border: 2px solid #0a2540;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 20px 0;
+        }
+        .fiszka h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0a2540;
+            padding-bottom: 4px;
+        }
+        .fiszka-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+        }
+        .fiszka-col h4 {
+            font-weight: 600;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 3px;
+            margin-bottom: 4px;
+        }
+        .fiszka-col ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .fiszka-col li {
+            padding: 2px 0 2px 16px;
+            position: relative;
+            font-size: 0.88rem;
+        }
+        .fiszka-col li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .fiszka-grid { grid-template-columns: 1fr; }
+            .fiszka { padding: 14px 16px; }
+        }
+
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+
+        .toc-section {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin-bottom: 22px;
+        }
+        .toc-section h2 {
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+        }
+        .toc-accordion { margin-top: 6px; }
+        .toc-item {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: #ffffff;
+        }
+        .toc-summary {
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .toc-summary:hover { background: var(--color-bg-subtle); }
+        .toc-summary::-webkit-details-marker { display: none; }
+        .toc-summary::before {
+            content: "▶";
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            transition: transform 0.2s;
+            margin-right: 6px;
+        }
+        .toc-item[open] .toc-summary::before {
+            transform: rotate(90deg);
+        }
+        .toc-checklist {
+            padding: 4px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            padding: 2px 0;
+        }
+        .toc-checklist input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .toc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 14px 8px 30px;
+        }
+        .toc-anchor {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 4px 11px;
+            border: 1px solid var(--color-training);
+            border-radius: 6px;
+            background: var(--color-training-bg);
+            color: var(--color-training);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover {
+            background: var(--color-training);
+            color: #ffffff;
+        }
+        .toc-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: var(--color-basic-bg);
+            border-radius: 12px;
+            color: #0f5132;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .toc-keywords span {
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        .section { margin-bottom: 8px; }
+
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+            letter-spacing: -0.02em;
+        }
+        .part-heading .part-num { color: var(--color-training); }
+
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .text-muted { color: var(--color-text-muted); }
+        .text-sm { font-size: 0.82rem; }
+
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .example .note { margin-left: 0; }
+            .container { padding: 10px 6px; }
+            .toc-section { padding: 12px 14px; }
+            .toc-summary {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+            .toc-checklist li { font-size: 0.8rem; }
+            [style*="grid-template-columns:1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        .highlight-box {
+            background: #fef9c3;
+            border: 1px solid #facc15;
+            padding: 1rem 1.8rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+        .warning-box {
+            background: #fee2e2;
+            border: 1px solid #f87171;
+            padding: 1rem 1.8rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+        .ambitny-box {
+            background: #dbeafe;
+            border: 1px solid #3b82f6;
+            padding: 1rem 1.8rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .flashcard {
+            min-height: 120px;
+            padding: 16px;
+            border: 2px solid var(--color-border);
+            border-radius: 12px;
+            background: #ffffff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+            position: relative;
+        }
+        .flashcard:hover {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        .flashcard .front,
+        .flashcard .back {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            min-height: 80px;
+        }
+        .flashcard .front {
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+        .flashcard .back {
+            display: none;
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+        .flashcard.flipped .front { display: none; }
+        .flashcard.flipped .back { display: flex; }
+        .flashcard .card-tag {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            font-size: 0.55rem;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 10px;
+            color: #2d3a4f;
+        }
+        .flashcard .card-tag.tag-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .flashcard .card-tag.tag-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .flashcard .card-tag.tag-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .flashcard .card-tag.tag-olimp {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+            background: #e2e8f0;
+            margin-right: 2px;
+        }
+
+        .musisz-umiec {
+            background: linear-gradient(135deg, #f0faf4 0%, #e6f7ed 100%);
+            border: 2px solid #2d8f5e;
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .musisz-umiec h3 {
+            color: #155724;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .musisz-umiec ul {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">Lekcja powtórkowa – fundamenty z klasy 7</div>
+                    <div class="subtitle">Start klasy 8 · Wrzesień · Poziom szkolny + ambitny</div>
+                    <div class="lesson-info">
+                        <div>BHP · Budowa atomu · Układ okresowy · Wartościowość · Wiązania · Wzory · Podstawy równań</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-row">
+                <button class="btn btn-outline btn-sm" onclick="resetAllProgress()">Resetuj postęp</button>
+                <span style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">Zaznaczaj checkboxy w spisie treści</span>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        SPIS TREŚCI
+        ============================================================ -->
+        <div class="toc-section" id="sec-toc">
+            <h2>📑 Spis treści</h2>
+            <div class="toc-accordion">
+                <details class="toc-item">
+                    <summary class="toc-summary">Wprowadzenie i plan pracy</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#cel">Cel lekcji</a>
+                        <a class="toc-anchor" href="#plan">Plan pracy</a>
+                        <a class="toc-anchor" href="#test-wstepny">Test wstępny</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam cel lekcji.</li>
+                        <li><input type="checkbox" data-progress="5" /> Mam plan pracy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am test wstępny.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">1. BHP i praca w laboratorium</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#bhp">BHP</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam podstawowe zasady BHP.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozpoznaję szkło laboratoryjne.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">2. Budowa atomu</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#atom">Budowa atomu</a>
+                        <a class="toc-anchor" href="#izotopy">Izotopy</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam budowę atomu (p⁺, n⁰, e⁻).</li>
+                        <li><input type="checkbox" data-progress="5" /> Umiem obliczyć liczbę protonów, neutronów i elektronów.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem pojęcie izotopu.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">3. Układ okresowy pierwiastków</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#uklad">Układ okresowy</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam budowę układu okresowego (grupy, okresy).</li>
+                        <li><input type="checkbox" data-progress="5" /> Potrafię przewidzieć właściwości na podstawie położenia.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam metale, niemetale i półmetale.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">4. Wartościowość – kluczowy temat</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#wartosciowosc">Wartościowość</a>
+                        <a class="toc-anchor" href="#wzory">Wzory sumaryczne</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam definicję wartościowości.</li>
+                        <li><input type="checkbox" data-progress="5" /> Umiem ustalić wartościowość z układu okresowego.</li>
+                        <li><input type="checkbox" data-progress="5" /> Potrafię układać wzory sumaryczne.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam wyjątki (Fe, Cu, N, S, P).</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">5. Wiązania chemiczne</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#wiazania">Wiązania</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam wiązanie jonowe i kowalencyjne.</li>
+                        <li><input type="checkbox" data-progress="5" /> Umiem przewidzieć rodzaj wiązania.</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">6. Równania reakcji – podstawy</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#rownania">Równania</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Umiem zapisać i zbilansować proste równanie.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozpoznaję typy reakcji (synteza, analiza, wymiana).</li>
+                    </ul>
+                </details>
+                <details class="toc-item">
+                    <summary class="toc-summary">Ćwiczenia, pułapki i fiszki</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a>
+                        <a class="toc-anchor" href="#pulapki">Pułapki</a>
+                        <a class="toc-anchor" href="#fiszki">Fiszki</a>
+                        <a class="toc-anchor" href="#test-koncowy">Test końcowy</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am ćwiczenia podstawowe.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am ćwiczenia rozszerzone.</li>
+                        <li><input type="checkbox" data-progress="5" /> Zrobiłem/am test końcowy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Powtarzam fiszki.</li>
+                    </ul>
+                </details>
+            </div>
+            <div class="toc-keywords">
+                <span>Słowa kluczowe: wartościowość · budowa atomu · układ okresowy · wiązania · wzory sumaryczne · równania reakcji · BHP</span>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        WPROWADZENIE
+        ============================================================ -->
+        <section class="section" id="cel">
+            <div class="part-heading"><span class="part-num">Cel lekcji</span></div>
+            <div class="card card-correct">
+                <span class="card-label">Po przerobieniu tego materiału</span>
+                <ul>
+                    <li>znasz i stosujesz zasady BHP w pracowni chemicznej,</li>
+                    <li>potrafisz opisać budowę atomu i obliczyć liczbę p⁺, n⁰, e⁻,</li>
+                    <li>orientujesz się w układzie okresowym i przewidujesz właściwości pierwiastków,</li>
+                    <li><strong>swobodnie ustalasz wartościowość</strong> i układasz poprawne wzory sumaryczne,</li>
+                    <li>rozróżniasz wiązanie jonowe i kowalencyjne,</li>
+                    <li>bilansujesz proste równania reakcji i rozpoznajesz ich typy.</li>
+                </ul>
+            </div>
+
+            <div class="musisz-umiec">
+                <h3>Musisz umieć na start klasy 8</h3>
+                <ul>
+                    <li>Wartościowość pierwiastków grup głównych (I–VIII / 1–18)</li>
+                    <li>Wzory: H₂O, CO₂, NaCl, CaO, Al₂O₃, HCl, H₂SO₄, NaOH, Ca(OH)₂</li>
+                    <li>Różnica między metalem a niemetalem</li>
+                    <li>Podstawowe typy reakcji: synteza, analiza, wymiana</li>
+                    <li>Bilansowanie równań metodą prób i błędów</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="plan">
+            <div class="part-heading"><span class="part-num">Plan pracy (proponowany – 3–4 dni)</span></div>
+            <div class="highlight-box">
+                <ul>
+                    <li><strong>Dzień 1:</strong> BHP + budowa atomu + izotopy (szybka powtórka).</li>
+                    <li><strong>Dzień 2:</strong> Układ okresowy + wartościowość (główny nacisk) + wzory sumaryczne.</li>
+                    <li><strong>Dzień 3:</strong> Wiązania chemiczne + podstawy równań reakcji.</li>
+                    <li><strong>Dzień 4:</strong> Ćwiczenia + test końcowy + fiszki.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="test-wstepny">
+            <div class="part-heading"><span class="part-num">Test wstępny (sprawdź, co pamiętasz z klasy 7)</span></div>
+            <div class="card card-gray">
+                <ol>
+                    <li>Ile protonów, neutronów i elektronów ma atom <sup>23</sup>Na?</li>
+                    <li>W której grupie i okresie znajduje się chlor?</li>
+                    <li>Jaka jest wartościowość tlenu i wapnia?</li>
+                    <li>Napisz wzór sumaryczny chlorku magnezu.</li>
+                    <li>Jakie wiązanie występuje w NaCl, a jakie w H₂O?</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-wstepny')">Pokaż odpowiedzi</button>
+                <div id="ans-wstepny" class="answer-content">
+                    <p><strong>1.</strong> 11 protonów, 12 neutronów, 11 elektronów.</p>
+                    <p><strong>2.</strong> Grupa 17 (VIIA / VII), okres 3.</p>
+                    <p><strong>3.</strong> Tlen – II, wapń – II.</p>
+                    <p><strong>4.</strong> MgCl₂</p>
+                    <p><strong>5.</strong> NaCl – jonowe, H₂O – kowalencyjne spolaryzowane.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        1. BHP
+        ============================================================ -->
+        <section class="section" id="bhp">
+            <div class="part-heading"><span class="part-num">1. BHP i praca w laboratorium</span></div>
+
+            <div class="card card-remember">
+                <span class="card-label">Zasady, których nie wolno łamać</span>
+                <ul>
+                    <li>Nigdy nie smakujemy i nie wąchamy substancji bezpośrednio.</li>
+                    <li>Zawsze nosimy fartuch, okulary ochronne i rękawice (gdy trzeba).</li>
+                    <li>Ogrzewamy substancje w probówkach – otwór skierowany od siebie i kolegów.</li>
+                    <li>Nie wylewamy do zlewu substancji niebezpiecznych – pytamy nauczyciela.</li>
+                    <li>Po zakończeniu doświadczenia sprzątamy stanowisko.</li>
+                </ul>
+            </div>
+
+            <h3>Podstawowe szkło laboratoryjne</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naczynie</th>
+                            <th>Zastosowanie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Probówka</td><td>Małe ilości substancji, ogrzewanie, reakcje</td></tr>
+                        <tr><td>Zlewka</td><td>Przechowywanie, mieszanie, ogrzewanie</td></tr>
+                        <tr><td>Kolba stożkowa (Erlenmeyera)</td><td>Mieszanie, miareczkowanie</td></tr>
+                        <tr><td>Kolba okrągłodenna</td><td>Destylacja, ogrzewanie</td></tr>
+                        <tr><td>Pipeta / biureta</td><td>Dokładne odmierzanie objętości</td></tr>
+                        <tr><td>Cylinder miarowy</td><td>Odmierzanie objętości cieczy</td></tr>
+                        <tr><td>Szalka Petriego</td><td>Obserwacje, hodowle</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        2. BUDOWA ATOMU
+        ============================================================ -->
+        <section class="section" id="atom">
+            <div class="part-heading"><span class="part-num">2. Budowa atomu</span></div>
+
+            <div class="card card-correct">
+                <span class="card-label">Podstawowe fakty</span>
+                <ul>
+                    <li><strong>Proton (p⁺)</strong> – ładunek +1, masa ≈ 1 u, w jądrze</li>
+                    <li><strong>Neutron (n⁰)</strong> – ładunek 0, masa ≈ 1 u, w jądrze</li>
+                    <li><strong>Elektron (e⁻)</strong> – ładunek –1, masa ≈ 1/1836 u, na powłokach</li>
+                </ul>
+            </div>
+
+            <div class="card card-remember">
+                <span class="card-label">Wzory, które musisz znać</span>
+                <ul>
+                    <li>Liczba atomowa <strong>Z</strong> = liczba protonów = liczba elektronów (w atomie obojętnym)</li>
+                    <li>Liczba masowa <strong>A</strong> = liczba protonów + liczba neutronów</li>
+                    <li>Liczba neutronów = A – Z</li>
+                </ul>
+            </div>
+
+            <h3>Przykłady</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pierwiastek</th>
+                            <th>Zapis</th>
+                            <th>p⁺</th>
+                            <th>n⁰</th>
+                            <th>e⁻</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Wodór</td><td><sup>1</sup>H</td><td>1</td><td>0</td><td>1</td></tr>
+                        <tr><td>Węgiel</td><td><sup>12</sup>C</td><td>6</td><td>6</td><td>6</td></tr>
+                        <tr><td>Tlen</td><td><sup>16</sup>O</td><td>8</td><td>8</td><td>8</td></tr>
+                        <tr><td>Sód</td><td><sup>23</sup>Na</td><td>11</td><td>12</td><td>11</td></tr>
+                        <tr><td>Chlor</td><td><sup>35</sup>Cl</td><td>17</td><td>18</td><td>17</td></tr>
+                        <tr><td>Wapń</td><td><sup>40</sup>Ca</td><td>20</td><td>20</td><td>20</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="izotopy">Izotopy</h3>
+            <div class="card card-hint">
+                <span class="card-label">Definicja</span>
+                <p><strong>Izotopy</strong> to odmiany tego samego pierwiastka różniące się liczbą neutronów (a więc liczbą masową), ale mające tę samą liczbę protonów.</p>
+            </div>
+            <div class="example">
+                <span class="tag">Przykład</span>
+                <span class="chem"><sup>1</sup>H, <sup>2</sup>H (deuter), <sup>3</sup>H (tryt)</span>
+                <span class="desc">wszystkie mają 1 proton, różną liczbę neutronów</span>
+            </div>
+            <div class="example">
+                <span class="tag">Przykład</span>
+                <span class="chem"><sup>12</sup>C, <sup>13</sup>C, <sup>14</sup>C</span>
+                <span class="desc">węgiel-14 jest radioaktywny – stosowany w datowaniu</span>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        3. UKŁAD OKRESOWY
+        ============================================================ -->
+        <section class="section" id="uklad">
+            <div class="part-heading"><span class="part-num">3. Układ okresowy pierwiastków</span></div>
+
+            <div class="card card-gray">
+                <ul>
+                    <li><strong>Okresy</strong> (wiersze poziome) – liczba powłok elektronowych</li>
+                    <li><strong>Grupy</strong> (kolumny pionowe) – liczba elektronów walencyjnych (dla grup głównych)</li>
+                    <li>Numery grup: stary system (I–VIII + A/B) lub nowy (1–18)</li>
+                </ul>
+            </div>
+
+            <h3>Najważniejsze grupy – musisz znać</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Grupa</th>
+                            <th>Nazwa</th>
+                            <th>Przykłady</th>
+                            <th>Wartościowość typowa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1 (IA)</td><td>Metale alkaliczne</td><td>Li, Na, K</td><td>I</td></tr>
+                        <tr><td>2 (IIA)</td><td>Metale ziem alkalicznych</td><td>Be, Mg, Ca</td><td>II</td></tr>
+                        <tr><td>13 (IIIA)</td><td>–</td><td>B, Al</td><td>III</td></tr>
+                        <tr><td>14 (IVA)</td><td>–</td><td>C, Si</td><td>IV</td></tr>
+                        <tr><td>15 (VA)</td><td>–</td><td>N, P</td><td>III / V</td></tr>
+                        <tr><td>16 (VIA)</td><td>Chalkogeny</td><td>O, S</td><td>II / IV / VI</td></tr>
+                        <tr><td>17 (VIIA)</td><td>Fluorowce</td><td>F, Cl, Br, I</td><td>I</td></tr>
+                        <tr><td>18 (VIIIA)</td><td>Gazy szlachetne</td><td>He, Ne, Ar</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-hint">
+                <span class="card-label">Szybka reguła</span>
+                <p>Dla grup głównych wartościowość wobec wodoru i tlenu często wynika z numeru grupy:</p>
+                <ul>
+                    <li>Grupa 1 → I</li>
+                    <li>Grupa 2 → II</li>
+                    <li>Grupa 13 → III</li>
+                    <li>Grupa 14 → IV</li>
+                    <li>Grupa 15 → III (wobec H) / V (wobec O)</li>
+                    <li>Grupa 16 → II (wobec H) / IV lub VI (wobec O)</li>
+                    <li>Grupa 17 → I</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        4. WARTOŚCIOWOŚĆ – GŁÓWNY TEMAT
+        ============================================================ -->
+        <section class="section" id="wartosciowosc">
+            <div class="part-heading"><span class="part-num">4. Wartościowość – kluczowy temat na start klasy 8</span></div>
+
+            <div class="card card-remember">
+                <span class="card-label">Definicja</span>
+                <p><strong>Wartościowość</strong> to zdolność atomu danego pierwiastka do łączenia się z określoną liczbą atomów innych pierwiastków (najczęściej wodoru lub tlenu).</p>
+                <p>W praktyce szkolnej wartościowość zapisujemy cyframi rzymskimi: I, II, III, IV, V, VI, VII.</p>
+            </div>
+
+            <h3>Jak ustalić wartościowość?</h3>
+            <div class="card card-correct">
+                <span class="card-label">Metody</span>
+                <ol>
+                    <li><strong>Z układu okresowego</strong> – dla pierwiastków grup głównych (najszybsza metoda).</li>
+                    <li><strong>Z wzoru związku</strong> – jeśli znasz wartościowość jednego pierwiastka, możesz obliczyć drugiego.</li>
+                    <li><strong>Z nazwy</strong> – czasem wartościowość jest podana w nazwie (np. tlenek żelaza(III)).</li>
+                </ol>
+            </div>
+
+            <h3>Najważniejsze wartościowości – tabela do nauki na pamięć</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pierwiastek</th>
+                            <th>Symbol</th>
+                            <th>Typowa wartościowość</th>
+                            <th>Uwagi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Wodór</td><td>H</td><td>I</td><td>zawsze</td></tr>
+                        <tr><td>Tlen</td><td>O</td><td>II</td><td>prawie zawsze (wyjątek: nadtlenki, OF₂)</td></tr>
+                        <tr><td>Sód, potas</td><td>Na, K</td><td>I</td><td>grupa 1</td></tr>
+                        <tr><td>Magnez, wapń</td><td>Mg, Ca</td><td>II</td><td>grupa 2</td></tr>
+                        <tr><td>Glin</td><td>Al</td><td>III</td><td>grupa 13</td></tr>
+                        <tr><td>Węgiel</td><td>C</td><td>IV</td><td>grupa 14</td></tr>
+                        <tr><td>Azot</td><td>N</td><td>III / V</td><td>w NH₃ – III, w HNO₃ – V</td></tr>
+                        <tr><td>Fosfor</td><td>P</td><td>III / V</td><td>w PH₃ – III, w H₃PO₄ – V</td></tr>
+                        <tr><td>Siarka</td><td>S</td><td>II / IV / VI</td><td>w H₂S – II, SO₂ – IV, H₂SO₄ – VI</td></tr>
+                        <tr><td>Chlor</td><td>Cl</td><td>I</td><td>wobec H i metali; wobec O bywa wyższa</td></tr>
+                        <tr class="error-row"><td>Żelazo</td><td>Fe</td><td>II / III</td><td>trzeba podawać w nazwie</td></tr>
+                        <tr class="error-row"><td>Miedź</td><td>Cu</td><td>I / II</td><td>trzeba podawać w nazwie</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="warning-box">
+                <strong>Uwaga – metale o zmiennej wartościowości:</strong><br>
+                Fe, Cu, Sn, Pb, Hg – zawsze podajemy wartościowość w nazwie związku:<br>
+                tlenek żelaza(II) – FeO &nbsp;&nbsp;|&nbsp;&nbsp; tlenek żelaza(III) – Fe₂O₃<br>
+                chlorek miedzi(I) – CuCl &nbsp;&nbsp;|&nbsp;&nbsp; chlorek miedzi(II) – CuCl₂
+            </div>
+
+            <h3 id="wzory">Jak układać wzory sumaryczne?</h3>
+            <div class="card card-hint">
+                <span class="card-label">Algorytm (krzyżowanie wartościowości)</span>
+                <ol>
+                    <li>Zapisz symbole pierwiastków.</li>
+                    <li>Nad nimi napisz wartościowości cyframi rzymskimi.</li>
+                    <li>„Skrzyżuj” wartościowości – wartość jednego staje się indeksem drugiego.</li>
+                    <li>Uprość indeksy, jeśli to możliwe (podziel przez największy wspólny dzielnik).</li>
+                    <li>Jeśli indeks = 1 – nie piszemy go.</li>
+                </ol>
+            </div>
+
+            <h4>Przykłady krok po kroku</h4>
+            <div class="example">
+                <span class="tag">Przykład 1</span>
+                <span class="chem">Na<sup>I</sup> + O<sup>II</sup> → Na₂O</span>
+                <span class="desc">sód I, tlen II → Na₂O</span>
+            </div>
+            <div class="example">
+                <span class="tag">Przykład 2</span>
+                <span class="chem">Al<sup>III</sup> + O<sup>II</sup> → Al₂O₃</span>
+                <span class="desc">glin III, tlen II → Al₂O₃</span>
+            </div>
+            <div class="example">
+                <span class="tag">Przykład 3</span>
+                <span class="chem">Ca<sup>II</sup> + Cl<sup>I</sup> → CaCl₂</span>
+                <span class="desc">wapń II, chlor I → CaCl₂</span>
+            </div>
+            <div class="example">
+                <span class="tag">Przykład 4</span>
+                <span class="chem">Fe<sup>III</sup> + O<sup>II</sup> → Fe₂O₃</span>
+                <span class="desc">żelazo(III) + tlen → Fe₂O₃</span>
+            </div>
+            <div class="example">
+                <span class="tag">Przykład 5</span>
+                <span class="chem">C<sup>IV</sup> + O<sup>II</sup> → CO₂</span>
+                <span class="desc">węgiel IV, tlen II → CO₂ (uproszczone z C₂O₄)</span>
+            </div>
+
+            <div class="ambitny-box">
+                <strong>Dla ambitnych – wartościowość a stopień utlenienia</strong>
+                <p>W klasie 7/8 często używamy „wartościowości”, ale w klasie 8 i dalej coraz częściej pojawia się <strong>stopień utlenienia</strong>. Na tym etapie możesz traktować je prawie zamiennie (dla prostych związków), ale pamiętaj:</p>
+                <ul>
+                    <li>Wartościowość – koncepcja starsza, związana z liczbą wiązań.</li>
+                    <li>Stopień utlenienia – formalny ładunek atomu przy założeniu, że wszystkie wiązania są jonowe.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        5. WIĄZANIA
+        ============================================================ -->
+        <section class="section" id="wiazania">
+            <div class="part-heading"><span class="part-num">5. Wiązania chemiczne – powtórka</span></div>
+
+            <div class="card card-gray">
+                <p>Atomy łączą się, aby uzyskać stabilną konfigurację elektronową (najczęściej oktet).</p>
+            </div>
+
+            <h3>Dwa główne typy</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cecha</th>
+                            <th>Wiązanie jonowe</th>
+                            <th>Wiązanie kowalencyjne</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Powstaje między</td><td>metal + niemetal</td>
+                            <td>niemetal + niemetal</td>
+                        </tr>
+                        <tr>
+                            <td>Mechanizm</td>
+                            <td>przeniesienie elektronów</td>
+                            <td>współdzielenie pary elektronowej</td>
+                        </tr>
+                        <tr>
+                            <td>Przykłady</td>
+                            <td>NaCl, MgO, CaF₂</td>
+                            <td>H₂O, CO₂, Cl₂, CH₄, NH₃</td>
+                        </tr>
+                        <tr>
+                            <td>Charakter</td>
+                            <td>związki jonowe (kryształy)</td>
+                            <td>cząsteczki</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-hint">
+                <span class="card-label">Szybki test</span>
+                <p>Jeśli w związku jest metal z grup 1–2 (lub Al) + niemetal → prawie na pewno <strong>jonowe</strong>.<br>
+                Jeśli tylko niemetale → <strong>kowalencyjne</strong>.</p>
+            </div>
+
+            <div class="card card-ambitious">
+                <span class="card-label">Dla ambitnych</span>
+                <p>Wiązanie kowalencyjne może być:</p>
+                <ul>
+                    <li><strong>niespolaryzowane</strong> – ta sama elektroujemność (H₂, Cl₂, O₂)</li>
+                    <li><strong>spolaryzowane</strong> – różna elektroujemność (H₂O, HCl, NH₃)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        6. RÓWNANIA REAKCJI
+        ============================================================ -->
+        <section class="section" id="rownania">
+            <div class="part-heading"><span class="part-num">6. Równania reakcji – podstawy</span></div>
+
+            <div class="card card-remember">
+                <span class="card-label">Zasady zapisu</span>
+                <ul>
+                    <li>Substraty → Produkty</li>
+                    <li>Liczba atomów każdego pierwiastka po obu stronach musi być taka sama (bilansowanie).</li>
+                    <li>Współczynniki stechiometryczne piszemy przed wzorami.</li>
+                    <li>Indeksów we wzorach <strong>nie zmieniamy</strong> przy bilansowaniu!</li>
+                </ul>
+            </div>
+
+            <h3>Podstawowe typy reakcji</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Typ</th>
+                            <th>Opis</th>
+                            <th>Przykład</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Synteza (łączenie)</td>
+                            <td>z prostszych powstaje bardziej złożony</td>
+                            <td>2H₂ + O₂ → 2H₂O</td>
+                        </tr>
+                        <tr>
+                            <td>Analiza (rozkład)</td>
+                            <td>złożony rozpada się na prostsze</td>
+                            <td>2HgO → 2Hg + O₂</td>
+                        </tr>
+                        <tr>
+                            <td>Wymiana</td>
+                            <td>wymiana atomów / grup między związkami</td>
+                            <td>Zn + 2HCl → ZnCl₂ + H₂</td>
+                        </tr>
+                        <tr>
+                            <td>Spalanie</td>
+                            <td>reakcja z tlenem (często z wydzieleniem ciepła i światła)</td>
+                            <td>CH₄ + 2O₂ → CO₂ + 2H₂O</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Przykłady bilansowania</h3>
+            <div class="example">
+                <span class="tag">Proste</span>
+                <span class="chem">H₂ + Cl₂ → 2HCl</span>
+            </div>
+            <div class="example">
+                <span class="tag">Średnie</span>
+                <span class="chem">2Na + 2H₂O → 2NaOH + H₂</span>
+            </div>
+            <div class="example">
+                <span class="tag">Trudniejsze</span>
+                <span class="chem">2Al + 3Cl₂ → 2AlCl₃</span>
+            </div>
+            <div class="example">
+                <span class="tag">Spalanie</span>
+                <span class="chem">C₃H₈ + 5O₂ → 3CO₂ + 4H₂O</span>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        ĆWICZENIA
+        ============================================================ -->
+        <section class="section" id="cwiczenia">
+            <div class="part-heading"><span class="part-num">7. Ćwiczenia</span></div>
+
+            <h3>Poziom podstawowy <span class="level-badge level-basic">podstawowy</span></h3>
+            <div class="exercise">
+                <ol>
+                    <li>Podaj liczbę protonów, neutronów i elektronów dla: <sup>16</sup>O, <sup>24</sup>Mg, <sup>40</sup>Ar.</li>
+                    <li>Ustal wartościowość pierwiastków w związkach: H₂S, CO₂, AlCl₃, Na₂O.</li>
+                    <li>Napisz wzory sumaryczne: tlenek wapnia, chlorek glinu, siarczek sodu, tlenek żelaza(III).</li>
+                    <li>Zbilansuj równania:<br>
+                        a) Fe + O₂ → Fe₂O₃<br>
+                        b) Al + HCl → AlCl₃ + H₂
+                    </li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-cw-podst')">Pokaż odpowiedzi</button>
+                <div id="ans-cw-podst" class="answer-content">
+                    <ol>
+                        <li><sup>16</sup>O: 8p, 8n, 8e; <sup>24</sup>Mg: 12p, 12n, 12e; <sup>40</sup>Ar: 18p, 22n, 18e.</li>
+                        <li>H₂S: H–I, S–II; CO₂: C–IV, O–II; AlCl₃: Al–III, Cl–I; Na₂O: Na–I, O–II.</li>
+                        <li>CaO, AlCl₃, Na₂S, Fe₂O₃.</li>
+                        <li>a) 4Fe + 3O₂ → 2Fe₂O₃<br>b) 2Al + 6HCl → 2AlCl₃ + 3H₂</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Poziom egzaminacyjny <span class="level-badge level-exam">egzaminacyjny</span></h3>
+            <div class="exercise">
+                <ol start="5">
+                    <li>Atom pierwiastka X ma 15 protonów i 16 neutronów. Podaj jego symbol, liczbę masową i wartościowość (wobec tlenu).</li>
+                    <li>Ułóż wzory sumaryczne i nazwij związki: a) glin + tlen, b) magnez + chlor, c) węgiel + tlen (tlenek), d) żelazo(II) + siarka.</li>
+                    <li>Zbilansuj i określ typ reakcji:<br>
+                        a) K + H₂O → KOH + H₂<br>
+                        b) CaCO₃ → CaO + CO₂<br>
+                        c) Zn + CuSO₄ → ZnSO₄ + Cu
+                    </li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-cw-egz')">Pokaż odpowiedzi</button>
+                <div id="ans-cw-egz" class="answer-content">
+                    <ol>
+                        <li>Fosfor <sup>31</sup>P; wartościowość wobec tlenu najczęściej V (np. P₂O₅ / P₄O₁₀).</li>
+                        <li>a) Al₂O₃ – tlenek glinu; b) MgCl₂ – chlorek magnezu; c) CO₂ – tlenek węgla(IV); d) FeS – siarczek żelaza(II).</li>
+                        <li>a) 2K + 2H₂O → 2KOH + H₂ (wymiana / reakcja metalu z wodą)<br>
+                            b) CaCO₃ → CaO + CO₂ (analiza / rozkład)<br>
+                            c) Zn + CuSO₄ → ZnSO₄ + Cu (wymiana)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Poziom rozszerzony / konkursowy <span class="level-badge level-ambitious">ambitny</span></h3>
+            <div class="exercise">
+                <ol start="8">
+                    <li>Wyjaśnij, dlaczego w nazwie tlenku żelaza musimy podawać wartościowość, a w nazwie tlenku wapnia – nie.</li>
+                    <li>Ułóż wzory wszystkich możliwych tlenków siarki, wiedząc, że siarka może mieć wartościowość II, IV i VI.</li>
+                    <li>Zbilansuj metodą prób i błędów (trudniejsze):<br>
+                        a) C₂H₆ + O₂ → CO₂ + H₂O<br>
+                        b) Fe₂O₃ + CO → Fe + CO₂
+                    </li>
+                    <li>Atom izotopu ma 20 elektronów i liczbę masową 40. Jaki to pierwiastek? Czy jest to izotop wapnia?</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-cw-rozsz')">Pokaż odpowiedzi</button>
+                <div id="ans-cw-rozsz" class="answer-content">
+                    <ol>
+                        <li>Żelazo ma zmienne wartościowości (II i III), więc trzeba sprecyzować. Wapń prawie zawsze ma wartościowość II, więc nie ma potrzeby jej podawać.</li>
+                        <li>SO (wart. II), SO₂ (IV), SO₃ (VI). (W praktyce SO jest nietrwały).</li>
+                        <li>a) 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O<br>
+                            b) Fe₂O₃ + 3CO → 2Fe + 3CO₂</li>
+                        <li>20 elektronów → Z = 20 → wapń. Liczba masowa 40 → tak, to <sup>40</sup>Ca (najbardziej rozpowszechniony izotop wapnia).</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        PUŁAPKI
+        ============================================================ -->
+        <section class="section" id="pulapki">
+            <div class="part-heading"><span class="part-num">8. Pułapki i najczęstsze błędy</span></div>
+            <div class="warning-box">
+                <ul>
+                    <li>❌ Myślenie, że wartościowość = liczba elektronów walencyjnych zawsze (dla grup 15–17 bywa inaczej).</li>
+                    <li>❌ Zmienianie indeksów we wzorach podczas bilansowania równań (indeksy są stałe!).</li>
+                    <li>❌ Pisanie FeO₃ zamiast Fe₂O₃ (nie krzyżowanie wartościowości).</li>
+                    <li>❌ Zapominanie, że Fe i Cu mają zmienne wartościowości – trzeba je podawać w nazwie.</li>
+                    <li>❌ Mylenie liczby atomowej z liczbą masową.</li>
+                    <li>❌ Uznawanie, że wszystkie tlenki metali są jonowe, a niemetali – kowalencyjne (to uproszczenie, ale na start klasy 8 działa dobrze).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        TEST KOŃCOWY
+        ============================================================ -->
+        <section class="section" id="test-koncowy">
+            <div class="part-heading"><span class="part-num">9. Test końcowy</span></div>
+
+            <div class="exercise">
+                <ol>
+                    <li>Zapisz konfigurację elektronową (pełną lub skróconą) atomu fosforu (Z=15) i jonu S²⁻.</li>
+                    <li>Ustal wartościowości i napisz wzory: a) tlenek azotu(V), b) chlorek żelaza(III), c) siarczek wapnia.</li>
+                    <li>Zbilansuj równania i określ typ reakcji:<br>
+                        a) Mg + N₂ → Mg₃N₂<br>
+                        b) 2KClO₃ → 2KCl + 3O₂<br>
+                        c) Cl₂ + 2KI → 2KCl + I₂
+                    </li>
+                    <li>Wyjaśnij różnicę między izotopami a izobarami (jeśli znasz pojęcie izobarów).</li>
+                    <li>Napisz wzory sumaryczne trzech różnych związków, w których siarka ma wartościowość odpowiednio II, IV i VI.</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-test-koncowy')">Pokaż odpowiedzi</button>
+                <div id="ans-test-koncowy" class="answer-content">
+                    <ol>
+                        <li>P: 1s² 2s² 2p⁶ 3s² 3p³ lub [Ne] 3s² 3p³; S²⁻: 1s² 2s² 2p⁶ 3s² 3p⁶ lub [Ar].</li>
+                        <li>a) N₂O₅; b) FeCl₃; c) CaS.</li>
+                        <li>a) 3Mg + N₂ → Mg₃N₂ (synteza)<br>
+                            b) już zbilansowane (analiza / rozkład)<br>
+                            c) już zbilansowane (wymiana)</li>
+                        <li>Izotopy – ten sam Z, różny A. Izobary – ten sam A, różny Z (różne pierwiastki).</li>
+                        <li>np. H₂S (II), SO₂ (IV), SO₃ lub H₂SO₄ (VI).</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        FISZKI
+        ============================================================ -->
+        <section class="section" id="fiszki">
+            <div class="part-heading"><span class="part-num">10. Fiszki</span></div>
+
+            <div class="flashcard-grid">
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wartościowość tlenu</span>
+                    <span class="back"><strong>II</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wartościowość wodoru</span>
+                    <span class="back"><strong>I</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wartościowość sodu / potasu</span>
+                    <span class="back"><strong>I</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wartościowość magnezu / wapnia</span>
+                    <span class="back"><strong>II</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wartościowość glinu</span>
+                    <span class="back"><strong>III</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wartościowość żelaza</span>
+                    <span class="back"><strong>II lub III</strong></span>
+                    <span class="card-tag tag-trap">pułapka</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wzór tlenku glinu</span>
+                    <span class="back"><strong>Al₂O₃</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wzór chlorku wapnia</span>
+                    <span class="back"><strong>CaCl₂</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wzór tlenku żelaza(III)</span>
+                    <span class="back"><strong>Fe₂O₃</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Liczba atomowa Z to</span>
+                    <span class="back"><strong>liczba protonów</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Liczba masowa A to</span>
+                    <span class="back"><strong>p⁺ + n⁰</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Izotopy różnią się</span>
+                    <span class="back"><strong>liczbą neutronów</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wiązanie w NaCl</span>
+                    <span class="back"><strong>jonowe</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Wiązanie w H₂O</span>
+                    <span class="back"><strong>kowalencyjne spolaryzowane</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Typ reakcji: 2H₂ + O₂ → 2H₂O</span>
+                    <span class="back"><strong>synteza</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Typ reakcji: 2HgO → 2Hg + O₂</span>
+                    <span class="back"><strong>analiza (rozkład)</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Grupa 17 to</span>
+                    <span class="back"><strong>fluorowce</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Grupa 1 to</span>
+                    <span class="back"><strong>metale alkaliczne</strong></span>
+                    <span class="card-tag tag-basic">podstawa</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Czy indeksy we wzorach zmieniamy przy bilansowaniu?</span>
+                    <span class="back"><strong>NIE!</strong></span>
+                    <span class="card-tag tag-trap">pułapka</span>
+                </button>
+                <button class="flashcard" type="button" onclick="toggleFlashcard(this)">
+                    <span class="front">Siarka – możliwe wartościowości</span>
+                    <span class="back"><strong>II, IV, VI</strong></span>
+                    <span class="card-tag tag-ambitious">ambitny</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        PODSUMOWANIE
+        ============================================================ -->
+        <section class="section" id="podsumowanie">
+            <div class="part-heading"><span class="part-num">11. Podsumowanie – checklista na start klasy 8</span></div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Temat</th>
+                            <th>Co musisz umieć</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>BHP</td><td>podstawowe zasady, szkło laboratoryjne</td></tr>
+                        <tr><td>Budowa atomu</td><td>p⁺, n⁰, e⁻, Z, A, izotopy</td></tr>
+                        <tr><td>Układ okresowy</td><td>grupy, okresy, metale/niemetale, wartościowości grup głównych</td></tr>
+                        <tr><td><strong>Wartościowość</strong></td><td>ustalanie, krzyżowanie, wzory sumaryczne, wyjątki Fe/Cu</td></tr>
+                        <tr><td>Wiązania</td><td>jonowe vs kowalencyjne, przykłady</td></tr>
+                        <tr><td>Równania</td><td>zapis, bilansowanie, typy reakcji</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        FOOTER
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>Lekcja powtórkowa – fundamenty z klasy 7</strong> &bull; Start klasy 8 &bull; Wrzesień</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Powtórz solidnie wartościowość – to fundament całego roku.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ---------- LOCAL STORAGE ----------
+        function saveProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            const state = [];
+            checks.forEach(cb => state.push(cb.checked));
+            localStorage.setItem('chemia_powtorka_kl7_progress', JSON.stringify(state));
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('chemia_powtorka_kl7_progress');
+            if (!saved) return;
+            const state = JSON.parse(saved);
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            checks.forEach((cb, i) => {
+                if (i < state.length) cb.checked = state[i];
+            });
+            updateProgress();
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            localStorage.removeItem('chemia_powtorka_kl7_progress');
+            updateProgress();
+        }
+
+        // ---------- TOGGLE ----------
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? 'Ukryj odpowiedzi' : 'Pokaż odpowiedzi';
+            }
+        }
+
+        function toggleFlashcard(card) {
+            card.classList.toggle('flipped');
+        }
+
+        // ---------- PROGRESS ----------
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            let total = 0, done = 0;
+            checkboxes.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 5;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            document.getElementById('progressFill').style.width = pct + '%';
+            document.getElementById('progressPercent').textContent = pct + '%';
+            const statusEl = document.getElementById('progressStatus');
+            if (pct === 100) statusEl.textContent = 'Świetnie! Opanowałeś lekcję!';
+            else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze! Dokończ resztę.';
+            else if (pct >= 50) statusEl.textContent = 'Dobrze! Poćwicz jeszcze.';
+            else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+            else statusEl.textContent = 'Zacznij naukę';
+            saveProgress();
+        }
+
+        document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', updateProgress);
+        });
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+        });
+    </script>
+</body>
+</html>

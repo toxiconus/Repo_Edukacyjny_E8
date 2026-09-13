@@ -1,422 +1,631 @@
-﻿
+﻿SUPERPODRĘCZNIK – POLSKI (lektury + gramatyka)
+E8 → MASTER → KONKURS → OLIMPIADA
+Wersja FINALNA (wrzesień 2026) – pełne lekcje 1–6
+Źródło: polski 1-6 v3.txt + polski l1-6 v4.txt + aktualizacje 2026
+Rola: pełne źródło treści i specyfikacja dla przyszłego HTML/CSS/JS.
+Data aktualizacji: 2026-09-07
 
-# LEKCJA 1 – LEKTURY Z KLAS IV–VI I IMIESŁOWY (WERSJA POPRAWIONA 2.0)
+ZASADY PROJEKTU
+Zachowujemy treść źródłową L001–L006.
+
+Warstwa MASTER jest rozszerzeniem, nie zamiennikiem.
+
+E8 ma być proste i jednoznaczne.
+
+MASTER rozwija rozumienie i samodzielne uzasadnianie.
+
+KONKURS i OLIMPIADA są opcjonalne i domyślnie ukryte.
+
+[UI: ...] opisuje komponent przyszłego HTML.
+
+Odpowiedzi domyślnie pozostają ukryte do momentu próby ucznia.
+
+W zadaniach otwartych liczy się również uzasadnienie.
+
+Każda przyszła korekta merytoryczna powinna być oznaczona [WERYFIKACJA], a nowa treść [DODANO].
+
+Nie usuwamy materiału źródłowego tylko dlatego, że jest prostszy – będzie pełnił funkcję powtórkową.
+
+ORTOGRAFIA 2026 – TABELA GŁÓWNA I ZASADY
+Od 1 stycznia 2026 r. obowiązują nowe zasady ortografii uchwalone przez Radę Języka Polskiego.
+Zmiany dotyczą zasad konwencjonalnych (pisownia wielką/małą literą oraz łączna/rozdzielna).
+
+Okres przejściowy CKE (2026–2030): na egzaminie ósmoklasisty, maturze i egzaminach eksternistycznych akceptowane są zarówno stare, jak i nowe zasady.
+Od 2031 r. obowiązują wyłącznie nowe reguły.
+
+Tabela pisowni „nie” (reguły 2026)
+Część mowy	Pisownia z „nie” (od 1.01.2026)	Przykłady poprawne	Wyjątki / uwagi
+Imiesłów przymiotnikowy (czynny/bierny)	Zawsze łącznie	nieczytający, nieprzeczytany, niepalący, niedokończony	Zniesiono wyjątek na przeciwstawienie
+Imiesłów przysłówkowy (współczesny/uprzedni)	Zawsze rozdzielnie	nie czytając, nie przeczytawszy	Bez zmian
+Przymiotnik (wszystkie stopnie)	Zawsze łącznie	niemądry, niemądrzejszy, nienajmądrzejszy	Nowa reguła – także stopień wyższy i najwyższy
+Przysłówek odprzymiotnikowy	Zawsze łącznie	niełatwo, niełatwiej, nienajłatwiej	Nowa reguła
+Rzeczownik	Łącznie (z wyjątkami)	niepogoda, nieprzyjaciel, nieporządek	Rozdzielnie przy wyraźnym przeczeniu: To nie pogoda, tylko burza
+Czasownik	Rozdzielnie (z wyjątkami)	nie czytam, nie przeczytał, nie będzie czytał	Wyjątki: nienawidzić, niedomagać, niecierpliwić się, niepokoić, niedowidzieć, niedosłyszeć
+Inne ważne zmiany 2026 (skrót)
+Nazwy mieszkańców miast, dzielnic, osiedli i wsi → wielka litera (Warszawianin, Mokotowianin).
+
+Nieoficjalne nazwy etniczne → mała lub wielka litera (angol / Angol).
+
+Nazwy firm, marek i pojedynczych egzemplarzy → wielka litera (czerwony Ford).
+
+Cząstki -bym, -byś, -by, -byśmy, -byście po spójnikach → rozdzielnie (czy by).
+
+Przymiotniki od nazw osobowych na -owski → mała litera (szekspirowski, chopinowski).
+
+Człon pół- w wielu wyrażeniach → łącznie (półżartem, półserio).
+
+niby- i quasi- → łącznie z małymi literami; z łącznikiem przed wielką literą.
+
+GLOBALNY SCHEMAT LEKCJI
+text
+0. MAPA LEKCJI
+1. DIAGNOZA (test na start – 10 pytań)
+2. MINIMUM E8
+3. TEORIA + TABELE
+4. DLACZEGO? (lingwistyczne uzasadnienie reguł)
+5. PUŁAPKI E8 + WYJĄTKI
+6. ĆWICZENIA (pełne odpowiedzi)
+7. TRANSFORMACJE
+8. ANALIZA TEKSTU
+9. MASTER (pytania + reguły + wyjaśnienia)
+10. KONKURS (zadania wieloetapowe)
+11. OLIMPIADA (problemy otwarte)
+12. FISZKI (konkretne, z uzasadnieniami)
+13. TEST E8
+14. TEST MASTER
+15. PODSUMOWANIE
+WARSTWA MASTER – WSPÓLNA DLA WSZYSTKICH LEKCJI
+Warstwa	Cel	Widoczność
+E8	minimum wymagane + typowe zadania	widoczna
+MASTER	rozumienie, uzasadnianie, transformacje	widoczna po E8
+KONKURS	zadania wieloetapowe i niestandardowe	ukryta / „Dla ambitnych”
+OLIMPIADA	problemy otwarte, kontrprzykłady	ukryta
+[UI: REVEAL] System podpowiedzi – KONKRETNY PRZYKŁAD
+Pytanie: „Czy w zdaniu »Idąc do szkoły, zaczął padać deszcz« jest błąd? Jeśli tak, popraw go i uzasadnij.”
+
+Poziom	Treść
+1. Naprowadzenie	Przypomnij sobie zasadę zgodności podmiotu przy imiesłowie przysłówkowym. Kto „idzie”? Kto „zaczyna padać”? Czy to ten sam podmiot?
+2. Metoda	Krok 1: Znajdź podmiot czynności wyrażonej imiesłowem (Idąc – kto idzie? – brak podmiotu, domyślnie „ja” lub inna osoba). Krok 2: Znajdź podmiot orzeczenia (zaczął padać deszcz – deszcz). Krok 3: Porównaj – czy deszcz idzie do szkoły? Nie. Krok 4: Popraw zdanie, np. zmieniając podmiot lub konstrukcję.
+3. Rozwiązanie + uzasadnienie	Poprawnie: Kiedy szedłem do szkoły, zaczął padać deszcz. (lub Idąc do szkoły, zauważyłem, że pada deszcz.). Uzasadnienie: Podmiot imiesłowu i orzeczenia musi być ten sam – w oryginale jest inny, co powoduje błąd składniowy.
+MASTER-CHECKPOINT – z konkretnymi zadaniami
+Cel	Jak to sprawdzić? (przykładowe zadanie)
+Umiem podać odpowiedź E8.	Odpowiedz na pytanie: Kto jest bohaterem dynamicznym w „Chłopcach z Placu Broni”?
+Umiem powiedzieć dlaczego.	Uzasadnij w 2–3 zdaniach, dlaczego Gereb jest bohaterem dynamicznym.
+Umiem zastosować regułę w nowym przykładzie.	Utwórz poprawne zdanie z imiesłowem przysłówkowym współczesnym od czasownika czytać.
+Umiem znaleźć i poprawić błąd.	Popraw zdanie: „Nie przeczytawszy książki, nie zdał egzaminu” – uzasadnij.
+Umiem uzasadnić odpowiedź.	Wyjaśnij, dlaczego w zdaniu „Nieczytający uczeń” piszemy łącznie.
+Umiem połączyć język z analizą tekstu.	Wskaż w podanym fragmencie „Hobbita” imiesłów i określ jego rodzaj oraz funkcję.
+[UI: TRANSFORM] Transformacje – przykłady
+Rozpoznaj → uzasadnij:
+Rozpoznaj imiesłów w zdaniu: „Przeczytawszy list, wyszedł.” → Uzasadnij, dlaczego jest to imiesłów przysłówkowy uprzedni.
+
+Uzupełnij → przekształć:
+Uzupełnij: „_____ książkę, poszedł spać.” → Przekształć tak, aby użyć innego imiesłowu (np. przysłówkowego współczesnego).
+
+Popraw błąd → nazwij regułę:
+Popraw: „Nie czytający uczeń” → Nazwij regułę ortograficzną 2026.
+
+Połącz elementy → wyciągnij wniosek:
+Połącz informacje o Edmundzie i Gerebie – co ich łączy, co różni? Sformułuj wniosek o bohaterze dynamicznym.
+
+Znajdź zasadę → zastosuj ją w nowym kontekście:
+Na podstawie reguły o pisowni „nie” z imiesłowami przymiotnikowymi utwórz poprawną formę od czasownika „zrobić” (imiesłów bierny).
+
+[UI: MASTERY] Proponowany próg odblokowania
+Wynik	Następny krok
+0–59%	wróć do E8
+60–79%	utrwal regułę
+80–89%	przejdź do MASTER
+90–100%	odblokuj KONKURS
+MASTER opanowany	odblokuj OLIMPIADA
+LEKCJA 1 – LEKTURY Z KLAS IV–VI I IMIESŁOWY
+Mapa lekcji
+Nowe: imiesłowy przymiotnikowe (czynne, bierne) i przysłówkowe (współczesne, uprzednie), zasady pisowni „nie” (reguła 2026), interpunkcja, zgodność podmiotu
+
+Powtórka: bohaterowie dynamiczni z lektur obowiązkowych klas IV–VI (Edmund, Gereb, Bilbo), kluczowe motywy (poświęcenie, odwaga, zdrada)
+
+Pułapki E8: „nie” z imiesłowami (przymiotnikowe – zawsze łącznie od 2026, przysłówkowe – rozdzielnie), przecinek przed imiesłowem przysłówkowym, zgodność podmiotu
+
+Czas: ok. 50–60 min
 
 [UI: PROGRESS]
 
----
-
-## 0. Cel lekcji
-
+0. Cel lekcji
 Po tej lekcji:
-- porównasz bohaterów dynamicznych z lektur obowiązkowych klas IV–VI,
-- wymienisz kluczowe sceny i przypiszesz do nich motywy,
-- rozróżnisz i poprawnie użyjesz **imiesłowów przymiotnikowych** (czynnych, biernych) oraz **przysłówkowych** (współczesnych, uprzednich),
-- zastosujesz zasady pisowni „nie” z imiesłowami i prawidłową interpunkcję,
-- zastosujesz zasadę zgodności podmiotu w zdaniach z imiesłowem przysłówkowym.
 
----
+porównasz bohaterów dynamicznych z lektur obowiązkowych klas IV–VI,
 
-## 1. Zanim zaczniesz – szybki test
+wymienisz kluczowe sceny i przypiszesz do nich motywy,
 
+rozróżnisz i poprawnie użyjesz imiesłowów przymiotnikowych (czynnych, biernych) oraz przysłówkowych (współczesnych, uprzednich),
+
+zastosujesz zasady pisowni „nie” z imiesłowami (wersja 2026) i prawidłową interpunkcję,
+
+zastosujesz zasadę zgodności podmiotu w zdaniach z imiesłowem przysłówkowym,
+
+będziesz potrafił uzasadnić każdą odpowiedź (warstwa MASTER).
+
+1. Zanim zaczniesz – szybki test (DIAGNOZA)
 [UI: CLOZE] [UI: CHOICE] [UI: ERROR]
 
 Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik.
 
-1. Kto jest bohaterem dynamicznym w *„Chłopcach z Placu Broni”*?
-2. Jaki motyw łączymy z Aslanem?
-3. Jaki imiesłów przymiotnikowy czynny utworzysz od czasownika *„czytać”*?
-4. Jaki imiesłów przysłówkowy uprzedni utworzysz od czasownika *„przeczytać”*?
-5. Popraw interpunkcję: *„Idąc do szkoły spotkał kolegę.”*
-6. Uzupełnij: *„_____ książkę, poszedł spać.”* (im. przys. uprzedni od „przeczytać”)
-7. „nie” z imiesłowami przymiotnikowymi piszemy ………. (łącznie / rozdzielnie)
-8. Kto odkrył słaby punkt Smauga – Bilbo czy Thorin?
-9. Czy Aslan jest bohaterem dynamicznym? (tak / nie)
-10. Popraw błąd: *„Nie czytający uczeń”*
+Kto jest bohaterem dynamicznym w „Chłopcach z Placu Broni”?
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Jaki motyw łączymy z Aslanem?
 
-1. Gereb – przechodzi przemianę od zdrajcy do skruszonego członka grupy.
-2. Poświęcenie – Aslan oddaje życie za Edmunda.
-3. czytający (końcówka -ący).
-4. przeczytawszy (końcówka -wszy).
-5. *Idąc do szkoły, spotkał kolegę.* – przecinek przed imiesłowem przysłówkowym.
-6. **Przeczytawszy** książkę, poszedł spać.
-7. Łącznie – np. *nieczytający, nieprzeczytany*.
-8. Bilbo – odkrył słaby punkt Smauga, ale to Bard go zabił.
-9. Nie – Aslan jest symbolem poświęcenia, nie przechodzi wewnętrznej przemiany.
-10. **Nieczytający uczeń** – łącznie.
+Jaki imiesłów przymiotnikowy czynny utworzysz od czasownika „czytać”?
+
+Jaki imiesłów przysłówkowy uprzedni utworzysz od czasownika „przeczytać”?
+
+Popraw interpunkcję: „Idąc do szkoły spotkał kolegę.”
+
+Uzupełnij: „_____ książkę, poszedł spać.” (im. przys. uprzedni od „przeczytać”)
+
+„nie” z imiesłowami przymiotnikowymi piszemy ………. (łącznie / rozdzielnie) – reguła 2026
+
+Kto odkrył słaby punkt Smauga – Bilbo czy Thorin?
+
+Czy Aslan jest bohaterem dynamicznym? (tak / nie)
+
+Popraw błąd: „Nie czytający uczeń”
+
+<details> <summary><strong>? Pełne odpowiedzi + uzasadnienie</strong></summary>
+Gereb – przechodzi przemianę od zdrajcy do skruszonego członka grupy.
+
+Poświęcenie – Aslan oddaje życie za Edmunda.
+
+czytający (końcówka -ący).
+
+przeczytawszy (końcówka -wszy).
+
+Idąc do szkoły, spotkał kolegę. – przecinek oddziela imiesłowowy równoważnik zdania.
+
+Przeczytawszy książkę, poszedł spać.
+
+Łącznie – od 2026 zawsze łącznie, nawet przy przeciwstawieniu.
+
+Bilbo – odkrył słaby punkt Smauga, ale to Bard go zabił.
+
+Nie – Aslan nie jest typowym bohaterem dynamicznym, ponieważ nie przechodzi wewnętrznej przemiany; jest symbolem.
+
+Nieczytający uczeń – łącznie (reguła 2026).
 
 </details>
-
----
-
-## 2. Dlaczego te lektury są ważne na egzaminie?
-
+2. Dlaczego te lektury są ważne na egzaminie?
 [UI: COMPARE]
 
-| Lektura | Autor | Główny bohater dynamiczny | Kluczowy motyw |
-|---------|-------|---------------------------|----------------|
-| *Opowieści z Narnii* | C.S. Lewis | Edmund (zdrajca → lojalny wojownik) | poświęcenie, odkupienie |
-| *Hobbit* | J.R.R. Tolkien | Bilbo (hobbit → bohater) | odwaga, spryt, chciwość |
-| *Chłopcy z Placu Broni* | Ferenc Molnár | Gereb (zdrajca → skrucha, powrót) | mała ojczyzna, lojalność |
+Lektura	Autor	Główny bohater dynamiczny	Kluczowy motyw
+Opowieści z Narnii	C.S. Lewis	Edmund (zdrajca → lojalny wojownik)	poświęcenie, odkupienie
+Hobbit	J.R.R. Tolkien	Bilbo (hobbit → bohater)	odwaga, spryt, chciwość
+Chłopcy z Placu Broni	Ferenc Molnár	Gereb (zdrajca → skrucha, powrót)	mała ojczyzna, lojalność
+WAŻNE: Aslan nie jest typowym bohaterem dynamicznym – pełni funkcję symbolu dobra, miłości i poświęcenia, nie przechodzi wewnętrznej przemiany.
 
-**WAŻNE:** Aslan **nie jest** bohaterem dynamicznym – jest **symbolem** dobra, miłości i poświęcenia.
-
----
-
-## 3. Bohaterowie dynamiczni – porównanie
-
+3. Bohaterowie dynamiczni – porównanie
 [UI: COMPARE]
 
-| Bohater | Etapy przemiany | Podsumowanie |
-|---------|-----------------|--------------|
-| **Edmund** (Narnia) | 1. Zdrada (pokusa Czarownicy) → 2. Skrucha (spotkanie z Aslanem) → 3. Naprawa czynem (walka, niszczy różdżkę) | Pełna przemiana – bohater dynamiczny. |
-| **Gereb** (Plac Broni) | 1. Zdrada (ambicja, zazdrość) → 2. Skrucha → 3. Powrót do grupy (nie zostaje przywódcą) | Przemiana niepełna – skrucha, ale nie bohaterstwo. |
-| **Bilbo** (Hobbit) | 1. Wygodny hobbit → 2. Wyprawa, przygody, samodzielne decyzje → 3. Odważny, sprytny, odpowiedzialny | Odkrywa w sobie cechy, których nie znał. |
+Bohater	Etapy przemiany	Podsumowanie
+Edmund (Narnia)	1. Zdrada (pokusa Czarownicy) → 2. Skrucha → 3. Naprawa czynem	Pełna przemiana – bohater dynamiczny.
+Gereb (Plac Broni)	1. Zdrada (ambicja, zazdrość) → 2. Skrucha → 3. Powrót do grupy	Przemiana – bohater dynamiczny, uczy się pokory.
+Bilbo (Hobbit)	1. Wygodny hobbit → 2. Wyprawa i samodzielne decyzje → 3. Odważny, sprytny	Odkrywa w sobie cechy, których nie znał.
+Aslan – symbol, NIE typowy bohater dynamiczny – nie zmienia się wewnętrznie.
 
-**Aslan – symbol, NIE bohater dynamiczny** – nie zmienia się wewnętrznie, oddaje życie za Edmunda i zmartwychwstaje (Głęboka Magia / Głębsza Magia).
-
----
-
-## 4. Kluczowe sceny i motywy
-
+4. Kluczowe sceny i motywy
 [UI: COMPARE]
 
-### Narnia
+Narnia
 
-| Scena | Motywy |
-|-------|--------|
-| Zdrada Edmunda | pokusa, zazdrość, zdrada, słabość człowieka |
-| Ofiara Aslana | poświęcenie, miłość, odkupienie, zwycięstwo dobra nad złem |
-| Bitwa | walka dobra ze złem, odwaga, braterstwo |
+Scena	Motywy
+Zdrada Edmunda	pokusa, zazdrość, zdrada, słabość człowieka
+Ofiara Aslana	poświęcenie, miłość, odkupienie
+Bitwa	walka dobra ze złem, odwaga, braterstwo
+Hobbit
 
-### Hobbit
+Scena	Motywy
+Spotkanie z Gollumem	spryt kontra siła, samotność, próba charakteru
+Walka ze Smaugiem	odwaga, spryt, chciwość
+Bitwa Pięciu Armii	wojna, chciwość, jedność wobec zagrożenia
+Chłopcy z Placu Broni
 
-| Scena | Motywy |
-|-------|--------|
-| Spotkanie z Gollumem | spryt kontra siła, samotność, próba charakteru |
-| Walka ze Smaugiem | odwaga, spryt, chciwość – Bilbo odkrywa słaby punkt, ale to Bard zabija smoka |
-| Bitwa Pięciu Armii | wojna, chciwość, jedność wobec wspólnego zagrożenia |
+Scena	Motywy
+Obrona Placu Broni	mała ojczyzna, przyjaźń, lojalność, honor
+Śmierć Nemeczka	poświęcenie, odwaga, niesprawiedliwość
+Zdrada Gereba	zdrada, ambicja, skrucha
+5. Imiesłowy – teoria i zasady
+5.1. Co to są imiesłowy?
+Imiesłów to nieosobowa forma czasownika, która łączy cechy czasownika z przymiotnikiem lub przysłówkiem.
 
-### Chłopcy z Placu Broni
+Rodzaj	Pytanie	Przykład	Końcówka
+Przymiotnikowy czynny	jaki?	czytający (uczeń)	-ący
+Przymiotnikowy bierny	jaki?	przeczytany (list)	-ny/-ty/-ony
+Przysłówkowy współczesny	jak?	czytając	-ąc
+Przysłówkowy uprzedni	kiedy?	przeczytawszy	-wszy/-łszy
+5.2. Zasada pisowni „nie” z imiesłowami [WERYFIKACJA 2026]
+Imiesłów	Zasada (od 2026)	Przykład
+Przymiotnikowe (czynne i bierne)	Zawsze łącznie	nieczytający, nieprzeczytany, niepalący
+Przysłówkowe (współczesne i uprzednie)	Zawsze rozdzielnie	nie czytając, nie przeczytawszy
+Od 1 stycznia 2026 r. zniesiono wyjątek pozwalający na pisownię rozdzielną przy przeciwstawieniu.
+W latach 2026–2030 na E8 akceptowana jest zarówno stara, jak i nowa forma.
 
-| Scena | Motywy |
-|-------|--------|
-| Obrona Placu Broni | mała ojczyzna, przyjaźń, lojalność, honor |
-| Śmierć Nemeczka | poświęcenie, odwaga, niesprawiedliwość |
-| Zdrada Gereba | zdrada, ambicja, skrucha |
+DLACZEGO?
+Imiesłów przymiotnikowy nabiera cechy przymiotnika – a przymiotniki z „nie” zawsze piszemy łącznie. Imiesłów przysłówkowy zachowuje cechę czasownika – a czasowniki z „nie” piszemy rozdzielnie. Nowa reguła ujednolica te zasady i usuwa wyjątki.
 
----
+5.3. Interpunkcja (PUŁAPKA E8!)
+Imiesłowowy równoważnik zdania oddzielamy przecinkiem.
 
-## 5. Imiesłowy – teoria i zasady
+Poprawnie: Idąc do szkoły, spotkałem kolegę.
 
-### 5.1. Co to są imiesłowy?
+Poprawnie: Przeczytawszy książkę, poszedł spać.
 
-Imiesłów to **nieosobowa forma czasownika**, która łączy cechy czasownika z przymiotnikiem lub przysłówkiem.
+Poprawnie: Siedział, patrząc przez okno.
 
-| Rodzaj | Pytanie | Przykład | Końcówka |
-|--------|---------|----------|----------|
-| **Przymiotnikowy czynny** | *jaki?* | *czytający* (uczeń) | -ący |
-| **Przymiotnikowy bierny** | *jaki?* | *przeczytany* (list) | -ny/-ty/-ony |
-| **Przysłówkowy współczesny** | *jak?* | *czytając* (list, myślał) | -ąc |
-| **Przysłówkowy uprzedni** | *kiedy?* | *przeczytawszy* (list, wyszedł) | -wszy/-łszy |
+Przykłady błędów:
 
-### 5.2. Zasada pisowni „nie” z imiesłowami (PUŁAPKA E8!)
+❌ Przeczytawszy książkę poszedł spać. → ✅ Przeczytawszy książkę, poszedł spać.
 
-| Imiesłów | Zasada | Przykład |
-|----------|--------|----------|
-| Przymiotnikowe (czynne, bierne) | **ŁĄCZNIE** | *nieczytający, nieprzeczytany* |
-| Przysłówkowe (współczesne, uprzednie) | **ROZDZIELNIE** | *nie czytając, nie przeczytawszy* |
+❌ Śmiejąc się głośno opowiedział dowcip. → ✅ Śmiejąc się głośno, opowiedział dowcip.
 
-**Uwaga:** Wyjątkowo imiesłów przymiotnikowy z „nie” może być zapisany rozdzielnie, gdy pełni funkcję orzecznika i akcentujemy przeczenie (rzadko sprawdzane na egzaminie).
+5.4. Zasada zgodności podmiotu
+Podmiot czynności wyrażonej imiesłowem przysłówkowym musi być taki sam jak podmiot orzeczenia.
 
-### 5.3. Interpunkcja (PUŁAPKA E8!)
+❌ Idąc do szkoły, zaczął padać deszcz. (deszcz nie idzie)
 
-**Imiesłowowy równoważnik zdania oddzielamy przecinkiem, gdy pełni funkcję dodatkowej informacji.**  
-Poprawnie: *Idąc do szkoły, spotkałem kolegę.*  
-Bez przecinka: *Siedział patrząc przez okno.* (imiesłów ściśle związany z orzeczeniem)
+✅ Idąc do szkoły, spotkałem kolegę.
 
-### 5.4. Zasada zgodności podmiotu
+Więcej przykładów błędów:
 
-Podmiot czynności wyrażonej imiesłowem przysłówkowym musi być **taki sam** jak podmiot czynności wyrażonej orzeczeniem.  
-❌ *Idąc do szkoły, zaczął padać deszcz.*  
-✅ *Idąc do szkoły, spotkałem kolegę.*
+❌ Czytając książkę, zapaliła się lampa. → ✅ Czytając książkę, zauważyłem, że zapaliła się lampa.
 
----
+❌ Wchodząc do pokoju, uderzył mnie hałas. → ✅ Wchodząc do pokoju, usłyszałem hałas.
 
-## 6. Ćwiczenia
+⚠ Pułapki E8 (aktualizacja 2026)
+„nie” z imiesłowami przymiotnikowymi → zawsze łącznie (nawet przy przeciwstawieniu).
 
-[UI: CLOZE] [UI: CHOICE] [UI: ERROR] [UI: TRANSLATE]
+„nie” z imiesłowami przysłówkowymi → zawsze rozdzielnie.
 
-### Ćwiczenie 1 – Rozpoznaj imiesłów
+Przecinek przed imiesłowem przysłówkowym – obowiązkowy (imiesłowowy równoważnik zdania).
 
-Określ rodzaj imiesłowu:
+Zgodność podmiotu – podmiot imiesłowu przysłówkowego = podmiot orzeczenia.
 
-1. *czytający* → __________
-2. *napisawszy* → __________
-3. *przeczytany* → __________
-4. *grając* → __________
+6. Ćwiczenia – pełne odpowiedzi
+[UI: CLOZE] [UI: CHOICE] [UI: ERROR] [UI: TRANSFORM]
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Ćwiczenie 1 – Rozpoznaj imiesłów
 
-1. przymiotnikowy czynny
-2. przysłówkowy uprzedni
-3. przymiotnikowy bierny
-4. przysłówkowy współczesny
+czytający → __________
 
-</details>
+napisawszy → __________
 
----
+przeczytany → __________
 
-### Ćwiczenie 2 – „nie” z imiesłowami
+grając → __________
 
-Wpisz poprawną formę z „nie”:
+<details> <summary><strong>? Odpowiedzi</strong></summary>
+przymiotnikowy czynny
 
-1. (nie + czytający) _____ uczeń nie zdał egzaminu.
-2. (nie + przeczytawszy) _____ książki, nie mógł odpowiedzieć.
-3. (nie + napisany) List _____ przez nikogo leżał na stole.
-4. (nie + pisząc) _____ listu, nie zauważył czasu.
+przysłówkowy uprzedni
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+przymiotnikowy bierny
 
-1. nieczytający
-2. nie przeczytawszy
-3. nienapisany
-4. nie pisząc
+przysłówkowy współczesny
 
 </details>
+Ćwiczenie 2 – „nie” z imiesłowami (reguła 2026)
 
----
+(nie + czytający) _____ uczeń nie zdał egzaminu.
 
-### Ćwiczenie 3 – Interpunkcja z imiesłowem przysłówkowym
+(nie + przeczytawszy) _____ książki, nie mógł odpowiedzieć.
 
-Wstaw przecinek tam, gdzie jest potrzebny:
+(nie + napisany) List _____ przez nikogo leżał na stole.
 
-1. Idąc do szkoły spotkał kolegę. → __________
-2. Przeczytawszy książkę poszedł spać. → __________
-3. Śmiejąc się głośno opowiedział dowcip. → __________
-4. Siedział patrząc przez okno. → __________ (tu przecinka nie ma)
+(nie + pisząc) _____ listu, nie zauważył czasu.
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+(nie + przeczytany) To był _____ list (nawet przy przeciwstawieniu).
 
-1. Idąc do szkoły, spotkał kolegę.
-2. Przeczytawszy książkę, poszedł spać.
-3. Śmiejąc się głośno, opowiedział dowcip.
-4. Siedział patrząc przez okno. (bez przecinka)
+<details> <summary><strong>? Odpowiedzi</strong></summary>
+nieczytający (łącznie)
 
-</details>
+nie przeczytawszy (rozdzielnie)
 
----
+nienapisany (łącznie)
 
-### Ćwiczenie 4 – Zgodność podmiotu
+nie pisząc (rozdzielnie)
 
-Popraw zdania:
-
-1. Idąc do szkoły, zaczął padać deszcz. → __________
-2. Czytając książkę, zapaliła się lampa. → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. Kiedy szedłem do szkoły, zaczął padać deszcz.
-2. Kiedy czytałem książkę, zapaliła się lampa.
+nieprzeczytany (łącznie – reguła 2026)
 
 </details>
+Ćwiczenie 3 – Interpunkcja z imiesłowem przysłówkowym
 
----
+Idąc do szkoły spotkał kolegę. → __________
 
-### Ćwiczenie 5 – Dopasuj bohatera do przemiany
+Przeczytawszy książkę poszedł spać. → __________
 
-| Opis | Bohater |
-|------|---------|
-| 1. zdrajca → skrucha → naprawa czynem | Edmund |
-| 2. odkrywa słaby punkt Smauga | Bilbo |
-| 3. przechodzi przemianę, ale nie staje się przywódcą – tylko okazuje skruchę | Gereb |
-| 4. symbol poświęcenia, nie bohater dynamiczny | Aslan |
+Śmiejąc się głośno opowiedział dowcip. → __________
 
----
+Siedział patrząc przez okno. → __________
 
-## 7. Ważne! – 7 kluczowych zasad
+<details> <summary><strong>? Odpowiedzi</strong></summary>
+Idąc do szkoły, spotkał kolegę.
 
-1. **Aslan** – symbol dobra, NIE bohater dynamiczny.
-2. **Bilbo** odkrywa słaby punkt Smauga, ale smoka zabija **Bard**.
-3. **Gereb** – przemiana niepełna (skrucha, nie bohaterstwo).
-4. **Imiesłowy przymiotnikowe** (czynne i bierne) – „nie” **ŁĄCZNIE**.
-5. **Imiesłowy przysłówkowe** (współczesne i uprzednie) – „nie” **ROZDZIELNIE**.
-6. Przecinek przed imiesłowem przysłówkowym – gdy pełni funkcję dodatkowej informacji.
-7. Zgodność podmiotu – podmiot imiesłowu przysłówkowego = podmiot orzeczenia.
+Przeczytawszy książkę, poszedł spać.
 
----
+Śmiejąc się głośno, opowiedział dowcip.
 
-## 8. Fiszki
+Siedział, patrząc przez okno.
 
+</details>
+Ćwiczenie 4 – Zgodność podmiotu
+
+Idąc do szkoły, zaczął padać deszcz. → __________
+
+Czytając książkę, zapaliła się lampa. → __________
+
+<details> <summary><strong>? Odpowiedzi</strong></summary>
+Kiedy szedłem do szkoły, zaczął padać deszcz. (lub: Idąc do szkoły, zauważyłem, że pada deszcz.)
+
+Kiedy czytałem książkę, zapaliła się lampa. (lub: Czytając książkę, zauważyłem, że zapaliła się lampa.)
+
+</details>
+Ćwiczenie 5 – Dopasuj bohatera do przemiany
+
+Opis	Bohater
+zdrajca → skrucha → naprawa czynem	Edmund
+odkrywa słaby punkt Smauga	Bilbo
+przechodzi przemianę od zdrady do skruchy, ale nie zostaje przywódcą	Gereb
+symbol poświęcenia, nie typowy bohater dynamiczny	Aslan
+7. Transformacje – przykładowe zadanie
+Przekształć zdanie z imiesłowem na dwa sposoby (E8 i MASTER):
+
+Oryginał: „Przeczytawszy lekturę, uczeń napisał wypracowanie.”
+
+Poziom E8 (poprawne, proste): Po przeczytaniu lektury uczeń napisał wypracowanie. (zamiana na konstrukcję z rzeczownikiem odczasownikowym)
+
+Poziom MASTER (bardziej złożone): Uczeń, który przeczytał lekturę, napisał wypracowanie. (zamiana na zdanie złożone z zaimkiem względnym)
+
+Poziom KONKURS (uzasadnienie struktury): Wyjaśnij, jaka jest różnica w znaczeniu między oryginałem a przekształceniami – który wariant podkreśla chronologię, a który związek przyczynowo-skutkowy?
+
+8. Fiszki (konkretne, z uzasadnieniami)
 [UI: FISZKI]
 
-| Przód | Tył |
-|-------|-----|
-| Edmund – typ przemiany | pełna (zdrajca → lojalny) |
-| Gereb – typ przemiany | niepełna (skrucha) |
-| Bilbo – co zrobił ze Smaugiem | odkrył słaby punkt (zabił Bard) |
-| Aslan – bohater dynamiczny? | NIE – symbol poświęcenia |
-| Imiesłów przymiotnikowy czynny – końcówka | -ący |
-| Imiesłów przymiotnikowy bierny – końcówki | -ny, -ty, -ony |
-| Imiesłów przysłówkowy współczesny – końcówka | -ąc |
-| Imiesłów przysłówkowy uprzedni – końcówki | -wszy, -łszy |
-| „nie” z imiesłowami przymiotnikowymi | łącznie |
-| „nie” z imiesłowami przysłówkowymi | rozdzielnie |
-| Przecinek przed imiesłowem przysłówkowym | gdy pełni funkcję dodatkowej informacji |
+Przód	Tył (odpowiedź + uzasadnienie)
+Edmund – typ przemiany	pełna – od zdrajcy do lojalnego wojownika; pokazuje, że każdy może się zmienić.
+Gereb – typ przemiany	dynamiczny, ale niepełny – od zdrady do skruchy; nie staje się przywódcą, ale wraca do grupy.
+Bilbo – co zrobił ze Smaugiem	odkrył słaby punkt (goła plama na brzuchu), ale to Bard go zabił.
+Aslan – bohater dynamiczny?	NIE – jest symbolem dobra, nie przechodzi wewnętrznej przemiany.
+Imiesłów przymiotnikowy czynny – końcówka	-ący (np. czytający) – odpowiada na pytanie jaki?
+Imiesłów przymiotnikowy bierny – końcówki	-ny, -ty, -ony (np. przeczytany) – odpowiada na pytanie jaki?
+Imiesłów przysłówkowy współczesny	-ąc (np. czytając) – odpowiada na pytanie jak?
+Imiesłów przysłówkowy uprzedni	-wszy, -łszy (np. przeczytawszy) – odpowiada na pytanie kiedy?
+„nie” z imiesłowami przymiotnikowymi (2026)	zawsze łącznie – bo imiesłów przymiotnikowy ma cechy przymiotnika, a przymiotniki z „nie” piszemy łącznie.
+„nie” z imiesłowami przysłówkowymi	rozdzielnie – bo imiesłów przysłówkowy ma cechy czasownika, a czasowniki z „nie” piszemy rozdzielnie.
+Przecinek przed imiesłowem przysłówkowym	oddzielamy przecinkiem, gdy imiesłów pełni funkcję dodatkowej informacji (równoważnik zdania).
+Przykład błędu zgodności podmiotu	Idąc do szkoły, zaczął padać deszcz. – poprawka: Idąc do szkoły, zauważyłem deszcz.
+9. MASTER – Lekcja 1
+[UI: THINK] [UI: TRANSFORM] [UI: REVEAL]
 
----
+Pytania MASTER
 
-## 9. Test końcowy – MISJA
+Dlaczego Aslan nie jest typowym bohaterem dynamicznym? Podaj pełne uzasadnienie.
 
-[UI: EXAM]
+Przekształć zdanie tak, aby było poprawne pod względem zgodności podmiotu: „Czytając książkę, zapaliła się lampa.”
 
-1. Kto jest bohaterem dynamicznym w „Chłopcach z Placu Broni”?
-2. Jaki motyw łączymy z Aslanem?
-3. Jaki imiesłów przymiotnikowy czynny utworzysz od „czytać”?
-4. Jaki imiesłów przysłówkowy uprzedni utworzysz od „przeczytać”?
-5. Popraw interpunkcję: *„Idąc do szkoły spotkał kolegę.”*
-6. Uzupełnij: *„_____ książkę, poszedł spać.”* (im. przys. uprzedni od „przeczytać”)
-7. „nie” z imiesłowami przymiotnikowymi piszemy ……… (łącznie / rozdzielnie)
-8. Kto odkrył słaby punkt Smauga – Bilbo czy Thorin?
-9. Czy Aslan jest bohaterem dynamicznym? (tak / nie)
-10. Popraw błąd: *„Nie czytający uczeń”*
+Utwórz imiesłów przymiotnikowy bierny i przysłówkowy uprzedni od czasownika „napisać”. Zastosuj regułę „nie” (2026) w obu przypadkach.
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Znajdź błąd eksperta i wyjaśnij regułę: „Nie czytający uczeń dostał jedynkę, nie przeczytawszy lektury.”
 
-1. Gereb
-2. poświęcenie
-3. czytający
-4. przeczytawszy
-5. Idąc do szkoły, spotkał kolegę.
-6. Przeczytawszy
-7. łącznie
-8. Bilbo
-9. nie
-10. Nieczytający uczeń
+Porównaj przemianę Edmunda i Gereba – co je łączy, a co różni? Sformułuj wniosek.
+
+<details> <summary><strong>? Pełne odpowiedzi MASTER + wyjaśnienia</strong></summary>
+Aslan nie zmienia się wewnętrznie. Jest niezmiennym symbolem dobra, miłości i poświęcenia. Bohater dynamiczny przechodzi ewolucję charakteru pod wpływem wydarzeń. Aslan zmienia innych, ale sam pozostaje niezmienny.
+
+Możliwe poprawne wersje:
+
+„Czytając książkę, zauważyłem, że zapaliła się lampa.”
+
+„Kiedy czytałem książkę, zapaliła się lampa.”
+
+nienapisany (przymiotnikowy bierny – łącznie), nie napisawszy (przysłówkowy uprzedni – rozdzielnie).
+
+Błąd w pierwszej części: „Nie czytający” → powinno być Nieczytający (imiesłów przymiotnikowy – zawsze łącznie od 2026). Druga część jest poprawna (imiesłów przysłówkowy – rozdzielnie).
+
+Łączy je: obaj przechodzą od zdrady do skruchy.
+Różni ich: Edmund naprawia swój błąd czynem i staje się lojalnym wojownikiem; Gereb wraca do grupy, ale nie obejmuje już pozycji przywódcy – uczy się pokory.
+Wniosek: Przemiana dynamiczna może mieć różny zakres i skutki.
 
 </details>
+10. KONKURS – zadanie wieloetapowe
+Zadanie:
+Przeanalizuj poniższy fragment z „Hobbita” i wykonaj polecenia:
 
----
+„Bilbo, stojąc na skale, patrzył na smoka. Nie wiedząc, co robić, sięgnął po pierścień.”
 
-**Koniec Lekcji 1 (wersja poprawiona 2.0)**
+Wypisz wszystkie imiesłowy i określ ich rodzaj.
 
+Popraw błąd interpunkcyjny (jeśli występuje).
 
-# LEKCJA 2 – „HOBBIT” I NIEODMIENNE CZĘŚCI MOWY (WERSJA POPRAWIONA 2.0)
+Przekształć zdanie tak, aby użyć imiesłowu przymiotnikowego biernego.
+
+Uzasadnij, dlaczego w tym fragmencie imiesłów przysłówkowy jest poprawny pod względem zgodności podmiotu.
+
+Rozwiązanie (MASTER):
+
+stojąc – przysłówkowy współczesny; nie wiedząc – przysłówkowy współczesny (z partykułą „nie” – rozdzielnie).
+
+Poprawnie: Bilbo, stojąc na skale, patrzył na smoka. Nie wiedząc, co robić, sięgnął po pierścień. – przecinek po pierwszym imiesłowie; drugie zdanie zaczyna się od imiesłowu – przecinek nie jest potrzebny przed nim, ale po nim przed orzeczeniem? Właściwie: Nie wiedząc, co robić, sięgnął – przecinek po robić oddziela wtrącenie.
+
+Bilbo, postawiony na skale, patrzył na smoka. (imiesłów bierny)
+
+Podmiotem obu czynności (nie wiedząc i sięgnął) jest Bilbo – zachowana zgodność.
+
+11. OLIMPIADA – problem otwarty
+Zadanie:
+Czy uważasz, że zasada „nie” z imiesłowami przymiotnikowymi – zawsze łącznie – jest logiczna? Przedstaw argumenty za i przeciw, odwołując się do funkcji imiesłowu w zdaniu. Zaproponuj własną hipotezę, dlaczego Rada Języka Polskiego zdecydowała się na tę zmianę.
+
+Przykładowa odpowiedź (hipoteza + uzasadnienie):
+Zmiana ujednolica regułę – imiesłów przymiotnikowy pełni funkcję podobną do przymiotnika, a przymiotniki z „nie” zawsze były łączne. Upraszcza to naukę i eliminuje wyjątki, które sprawiały trudność. Przeciw: niektórzy językoznawcy uważają, że utrata rozróżnienia na przeciwstawienie zmniejsza precyzję. Jednak w praktyce kontekst zdania i tak wyjaśnia znaczenie, więc zmiana jest korzystna dla uczących się.
+
+13. Test końcowy E8 – MISJA
+[UI: EXAM]
+
+Kto jest bohaterem dynamicznym w „Chłopcach z Placu Broni”?
+
+Jaki motyw łączymy z Aslanem?
+
+Jaki imiesłów przymiotnikowy czynny utworzysz od „czytać”?
+
+Jaki imiesłów przysłówkowy uprzedni utworzysz od „przeczytać”?
+
+Popraw interpunkcję: „Idąc do szkoły spotkał kolegę.”
+
+Uzupełnij: „_____ książkę, poszedł spać.”
+
+„nie” z imiesłowami przymiotnikowymi (od 2026) piszemy ……… (łącznie / rozdzielnie)
+
+Kto odkrył słaby punkt Smauga?
+
+Czy Aslan jest bohaterem dynamicznym? (tak / nie)
+
+Popraw błąd: „Nie czytający uczeń”
+
+<details> <summary><strong>? Odpowiedzi</strong></summary>
+Gereb
+
+poświęcenie
+
+czytający
+
+przeczytawszy
+
+Idąc do szkoły, spotkał kolegę.
+
+Przeczytawszy
+
+łącznie
+
+Bilbo
+
+nie
+
+Nieczytający uczeń
+
+</details>
+Twój wynik: ___ / 10
+Jeśli poniżej 8 → wróć do fiszek i pułapek.
+
+14. Test MASTER
+[UI: EXAM]
+
+Wyjaśnij, dlaczego reguła „nie” z imiesłowami przymiotnikowymi zmieniła się w 2026 roku i podaj konsekwencję dla ucznia.
+
+Popraw i uzasadnij oba błędy: „Nie przeczytawszy książki poszedł spać, nie czytający dalej.”
+
+Utwórz własne zdanie z imiesłowem przysłówkowym uprzednim i zastosuj regułę zgodności podmiotu.
+
+Porównaj funkcję Aslana i Bilba w kontekście bohatera dynamicznego.
+
+<details> <summary><strong>? Odpowiedzi MASTER</strong></summary>
+Zniesiono wyjątek na świadomą pisownię rozdzielną – reguła stała się prostsza i jednoznaczna. Uczeń nie musi już analizować znaczenia imiesłowu.
+
+Nie przeczytawszy książki, poszedł spać (przecinek + rozdzielnie). Nieczytający dalej (łącznie).
+
+Przykład: Przeczytawszy lekturę, uczeń napisał wypracowanie. (ten sam podmiot).
+
+Aslan = symbol (nie zmienia się). Bilbo = bohater dynamiczny (przechodzi przemianę).
+
+</details>
+Koniec Lekcji 1 (wersja 2026 MASTER+)
+
+LEKCJA 2 – „HOBBIT” I NIEODMIENNE CZĘŚCI MOWY
+(Wersja 2026 MASTER+)
+
+Mapa lekcji
+Nowe: nieodmienne części mowy (przysłówek, przyimek, spójnik, partykuła, wykrzyknik), rozróżnianie spójnika i partykuły na przykładzie „czy”
+
+Powtórka: „Hobbit” – bohaterowie, wydarzenia, motywy, przemiana Bilba
+
+Pułapki E8: rozróżnienie partykuły i spójnika („czy”), „nie” z czasownikami, funkcje przyimków i spójników
+
+Czas: ok. 45–55 min
 
 [UI: PROGRESS]
 
----
+0. Cel lekcji
+Po lekcji:
 
-## 0. Cel lekcji
+znasz najważniejsze informacje o „Hobbicie”,
 
-Po tej lekcji:
-- poznasz najważniejsze informacje o lekturze **„Hobbit, czyli tam i z powrotem”**,
-- wskażesz bohaterów dynamicznych i statycznych,
-- rozpoznasz kluczowe wydarzenia i motywy,
-- rozróżnisz **nieodmienne części mowy**: przysłówek, przyimek, spójnik, partykułę, wykrzyknik,
-- zastosujesz zasady rozpoznawania części mowy w zdaniu,
-- rozróżnisz spójnik i partykułę na przykładzie **„czy”**.
+wskazujesz bohaterów dynamicznych i statycznych,
 
----
+rozpoznajesz nieodmienne części mowy,
 
-## 1. Zanim zaczniesz – szybki test
+rozróżniasz spójnik i partykułę na przykładzie „czy”,
 
-[UI: CLOZE] [UI: CHOICE] [UI: ERROR]
+potrafisz uzasadnić klasyfikację części mowy (MASTER).
 
-Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik.
+1. Diagnoza – szybki test
+Kto jest głównym bohaterem „Hobbita”?
 
-1. Kto jest głównym bohaterem „Hobbita”?
-2. Kto zabija Smauga – Bilbo czy Bard?
-3. Jaka część mowy odpowiada na pytania: jak? gdzie? kiedy?
-4. Jaka część mowy łączy wyrazy lub zdania?
-5. Jaka część mowy modyfikuje znaczenie wypowiedzi?
-6. Jaka część mowy wyraża emocje?
-7. Jaka część mowy łączy się z rzeczownikiem i wskazuje relację?
-8. Kto odkrywa słaby punkt Smauga?
-9. Jaki motyw wiąże się z Thorinem pod koniec powieści?
-10. „Czy” jako partykuła wprowadza ……… (pytanie / zdanie podrzędne)
+Kto zabija Smauga – Bilbo czy Bard?
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Jaka część mowy odpowiada na pytania: jak? gdzie? kiedy?
 
-1. Bilbo Baggins
-2. Bard
-3. przysłówek
-4. spójnik
-5. partykuła
-6. wykrzyknik
-7. przyimek
-8. Bilbo
-9. chciwość
-10. pytanie
+Jaka część mowy łączy wyrazy lub zdania?
+
+Jaka część mowy modyfikuje znaczenie wypowiedzi?
+
+Jaka część mowy wyraża emocje?
+
+Jaka część mowy łączy się z rzeczownikiem i wskazuje relację?
+
+Kto odkrywa słaby punkt Smauga?
+
+Jaki motyw wiąże się z Thorinem pod koniec powieści?
+
+„Czy” jako partykuła wprowadza ……… (pytanie / zdanie podrzędne)
+
+<details> <summary><strong>? Odpowiedzi</strong></summary>
+Bilbo Baggins
+
+Bard
+
+przysłówek
+
+spójnik
+
+partykuła
+
+wykrzyknik
+
+przyimek
+
+Bilbo
+
+chciwość
+
+pytanie
 
 </details>
-
----
-
-## 2. „Hobbit, czyli tam i z powrotem” – podstawowe informacje
-
+2–6. „Hobbit” – informacje, bohaterowie, wydarzenia, przemiana, motywy
 [UI: COMPARE]
 
-| Element | Informacja |
-|---------|------------|
-| **Autor** | J.R.R. Tolkien (John Ronald Reuel Tolkien) |
-| **Tytuł** | „Hobbit, czyli tam i z powrotem” |
-| **Główny bohater** | Bilbo Baggins |
-| **Miejsce wydarzeń** | Śródziemie |
-| **Gatunek** | powieść fantasy z elementami baśni i powieści przygodowej |
-| **Rok wydania** | 1937 |
-| **Status** | lektura obowiązkowa z klas IV–VI |
+Element	Informacja
+Autor	J.R.R. Tolkien
+Tytuł	„Hobbit, czyli tam i z powrotem”
+Główny bohater	Bilbo Baggins (dynamiczny)
+Gatunek	powieść fantasy z elementami baśni
+Status	lektura obowiązkowa klas IV–VI
+WAŻNE: Bilbo nie zabija Smauga – odkrywa słaby punkt, zabija Bard.
 
-**WAŻNE:** W latach 2024/2025–2025/2026 zadania w części I arkusza dotyczą **wyłącznie fragmentu** zamieszczonego w arkuszu – nie sprawdzają znajomości całej treści. W wypracowaniu można się do lektury swobodnie odwoływać.
+Bohater	Charakterystyka	Rola
+Bilbo Baggins	od wygodnego hobbita do odważnego i sprytnego	bohater dynamiczny
+Gandalf	czarodziej, mentor	przewodnik
+Thorin	dumny, ulega chciwości, przed śmiercią żałuje	lider krasnoludów
+Smaug	smok, symbol zła i chciwości	antagonista
+Bard	zabija Smauga	bohater
+Gollum	strażnik pierścienia	rywal
+Przemiana Bilba (diagram)
 
----
-
-## 3. Najważniejsi bohaterowie
-
-[UI: COMPARE]
-
-| Bohater | Charakterystyka | Rola |
-|---------|-----------------|------|
-| **Bilbo Baggins** | Hobbit, wygodny i spokojny, stopniowo staje się odważny, sprytny i odpowiedzialny. **Bohater dynamiczny** – zwycięża **sprytem i inteligencją**, nie siłą. | Główny bohater. |
-| **Gandalf** | Czarodziej, inicjator wyprawy. Mądry, przewidujący, pomaga bohaterom w trudnych sytuacjach. | Przewodnik, mentor. |
-| **Thorin Dębowa Tarcza** | Przywódca krasnoludów, następca króla pod Górą. Odważny i dumny, ostatecznie ulega **chciwości** (smocza choroba), ale przed śmiercią **żałuje**. | Lider krasnoludów. |
-| **Smaug** | Potężny i inteligentny smok, symbolizuje **zło, przemoc i niszczącą chciwość**. | Antagonista. |
-| **Bard Łucznik** | Mieszkaniec Esgaroth, który **zabija Smauga** czarną strzałą w słaby punkt smoka. | Bohater, który pokonuje smoka. |
-| **Gollum** | Samotna, niebezpieczna istota mieszkająca pod ziemią. Przechowuje pierścień. | Rywal Bilba w pojedynku na zagadki. |
-
-**WAŻNE:** Bilbo **nie zabija Smauga** – odkrywa jego słaby punkt, ale to **Bard** go zabija.
-
----
-
-## 4. Najważniejsze wydarzenia
-
-[UI: COMPARE]
-
-| Wydarzenie | Opis | Motywy |
-|------------|------|--------|
-| **Początek wyprawy** | Gandalf przyprowadza do Bilba grupę krasnoludów. Bilbo początkowo nie chce opuścić domu, ale ostatecznie przyłącza się do wyprawy. | wędrówka, przemiana, opuszczenie bezpiecznego świata |
-| **Spotkanie z Gollumem** | Bilbo trafia do podziemi, spotyka Golluma i wygrywa pojedynek na zagadki. Zdobywa pierścień. | spryt kontra siła, samotność, próba charakteru |
-| **Rozmowa ze Smaugiem** | Bilbo wchodzi do Samotnej Góry i rozmawia ze Smaugiem. Odkrywa słaby punkt smoka. | odwaga, spryt, chciwość |
-| **Śmierć Smauga** | Smaug atakuje Esgaroth, ale Bard zabija go czarną strzałą w słaby punkt. | odwaga, odpowiedzialność |
-| **Konflikt o skarb** | Po śmierci Smauga Thorin nie chce podzielić się skarbem i staje się podejrzliwy oraz bezwzględny. | chciwość, konflikt interesów |
-| **Bitwa Pięciu Armii** | Bitwa między krasnoludami, elfami, ludźmi, goblinami i wilkami. Thorin przed śmiercią żałuje swojego postępowania. | wojna, chciwość, poświęcenie, jedność |
-
----
-
-## 5. Przemiana Bilba – bohater dynamiczny
-
-[UI: DIAGRAM]
-
-```
+text
 WYGODA I BEZPIECZEŃSTWO
         ↓
 WYPRAWA
@@ -428,2152 +637,455 @@ SAMODZIELNE DECYZJE
 ODWAGA + SPRYT
         ↓
 DOJRZAŁOŚĆ
-```
+8. Nieodmienne części mowy – tabela główna
+Część mowy	Funkcja	Pytania / cecha	Przykłady
+Przysłówek	określa czasownik, przymiotnik, inny przysłówek	jak? gdzie? kiedy?	szybko, tutaj, jutro, bardzo
+Przyimek	wskazuje relację z rzeczownikiem	–	do, pod, z, na, przed, za
+Spójnik	łączy wyrazy lub zdania	–	i, ale, ponieważ, czy, że
+Partykuła	modyfikuje znaczenie	–	nie, czy, tylko, nawet, oby
+Wykrzyknik	wyraża emocje, rozkazy	–	ach, hej, hurra, biada
+Rozróżnienie „czy”
 
-| Etap | Bilbo |
-|------|-------|
-| **Początek** | Ceni spokój, wygodę i bezpieczeństwo. Nie uważa się za bohatera. |
-| **Próby** | Spotyka trolle, gobliny, Golluma i Smauga. Musi podejmować samodzielne decyzje. |
-| **Koniec** | Jest odważny, sprytny, odpowiedzialny i gotowy sprzeciwić się nawet potężniejszym od siebie. |
+Funkcja	Przykład	Test zastępowania
+Partykuła	Czy Bilbo wrócił do domu?	wprowadza pytanie
+Spójnik	Bilbo nie wiedział, czy ma uciekać, czy zostać.	można zastąpić przez „lub”
+DLACZEGO?
+Partykuła nie łączy elementów – nadaje pytajny charakter. Spójnik łączy alternatywy. To rozróżnienie kluczowe na egzaminie, bo często sprawdza się funkcję wyrazu w zdaniu.
 
-**Wniosek:** Bilbo nie zmienia się w wojownika – jego siłą pozostają **inteligencja, spryt, opanowanie i empatia**.
+⚠ Pułapki E8
+„czy” – partykuła (pytanie) vs spójnik (alternatywa).
 
----
+„nie” z czasownikami – rozdzielnie (wyjątki: nienawidzić, niedomagać...).
 
-## 6. Motywy w „Hobbicie”
+Przyimek łączy się z rzeczownikiem; spójnik łączy zdania/wyrazy.
 
-[UI: COMPARE]
+Przysłówek określa czasownik/przymiotnik; przymiotnik określa rzeczownik.
 
-| Motyw | Opis |
-|-------|------|
-| **Podróż i wędrówka** | Podróż jest drogą do wewnętrznej przemiany. Bilbo opuszcza bezpieczny dom i wraca jako inny hobbit. |
-| **Przyjaźń i lojalność** | Bilbo przywiązuje się do krasnoludów i pomaga im mimo niebezpieczeństwa. |
-| **Chciwość** | Thorin początkowo walczy o odzyskanie ojczyzny, ale z czasem coraz bardziej przywiązuje się do skarbu. |
-| **Odwaga** | Odwaga Bilba nie polega na braku strachu, ale na działaniu mimo lęku. |
-| **Walka dobra ze złem** | Dobro i zło nie zawsze są przedstawione wyłącznie jako dwie grupy – zło może znajdować się także w człowieku. |
+9. MASTER – Lekcja 2
+[UI: THINK] [UI: TRANSFORM]
 
----
+Wyjaśnij różnicę między partykułą a spójnikiem na przykładzie „czy”. Podaj własne przykłady.
 
-## 7. Gotowe zdania do rozprawki
+W zdaniu „Bilbo nie wiedział, czy ma zostać” określ funkcję „czy” i uzasadnij.
 
-[UI: COMPARE]
+Znajdź wszystkie nieodmienne części mowy w zdaniu: „Ach, Bilbo szybko pobiegł do jaskini, ale nie zdążył.” i uzasadnij każdą klasyfikację.
 
-| Motyw | Przykład |
-|-------|----------|
-| Odwaga | *Bilbo udowadnia, że prawdziwa odwaga nie polega na braku strachu, lecz na działaniu mimo lęku.* |
-| Podróż | *Podróż może zmienić człowieka, ponieważ zmusza go do samodzielnego podejmowania decyzji.* |
-| Chciwość | *Historia Thorina pokazuje, że chciwość może zniszczyć nawet silne więzi przyjaźni.* |
-| Spryt | *Bilbo zwycięża nie dzięki przewadze fizycznej, lecz dzięki inteligencji, sprytowi i opanowaniu.* |
-| Prawdziwy skarb | *Prawdziwym skarbem okazują się nie bogactwa, lecz przyjaźń, lojalność i pokój.* |
+Przekształć zdanie pytające z partykułą „czy” na zdanie z „czy” jako spójnikiem.
 
----
+<details> <summary><strong>? Odpowiedzi MASTER</strong></summary>
+Partykuła wprowadza pytanie i nie łączy elementów. Spójnik łączy dwa zdania lub wyrażenia (alternatywa). Przykłady: Czy idziesz? (partykuła) vs Nie wiem, czy iść, czy zostać (spójnik).
 
-## 8. Nieodmienne części mowy – przegląd
+Spójnik – wprowadza alternatywę, można zastąpić przez „lub”.
 
-[UI: DIAGRAM]
+Ach (wykrzyknik), szybko (przysłówek), do (przyimek), ale (spójnik), nie (partykuła).
 
-```
-NAZWA OSOBY / RZECZY / ZJAWISKA
-→ RZECZOWNIK (ODMIENNA)
-
-CECHA
-→ PRZYMIOTNIK (ODMIENNA)
-
-CZYNNOŚĆ / STAN
-→ CZASOWNIK (ODMIENNA)
-
-LICZBA / KOLEJNOŚĆ
-→ LICZEBNIK (ODMIENNA)
-
-ZASTĘPUJE INNY WYRAZ
-→ ZAIMEK (ODMIENNA)
-
-OKREŚLA CZAS / MIEJSCE / SPOSÓB
-→ PRZYSŁÓWEK (NIEO DMIENNA)
-
-ŁĄCZY
-→ SPÓJNIK (NIEO DMIENNA)
-
-OKREŚLA RELACJĘ
-→ PRZYIMEK (NIEO DMIENNA)
-
-MODYFIKUJE ZNACZENIE
-→ PARTYKUŁA (NIEO DMIENNA)
-
-WYRAŻA EMOCJĘ
-→ WYKRZYKNIK (NIEO DMIENNA)
-```
-
-**Nieodmienne części mowy** to takie, które **nie zmieniają swojej formy** – nie odmieniają się przez przypadki, liczby, rodzaje ani osoby.
-
-| Część mowy | Funkcja | Przykłady |
-|------------|---------|-----------|
-| **Przysłówek** | określa czasownik (jak? gdzie? kiedy?) | *szybko, tutaj, jutro* |
-| **Przyimek** | łączy się z rzeczownikiem, wskazuje relację | *do, pod, z, na* |
-| **Spójnik** | łączy wyrazy lub zdania | *i, ale, ponieważ* |
-| **Partykuła** | modyfikuje znaczenie wypowiedzi | *nie, czy, oby, nawet* |
-| **Wykrzyknik** | wyraża emocje, uczucia, rozkazy | *ach, hej, hurra* |
-
----
-
-## 9. Przysłówek – szczegółowo
-
-[UI: COMPARE]
-
-**Przysłówek** określa najczęściej **czasownik**. Odpowiada na pytania:
-- **jak?** – *szybko, wolno, odważnie, sprytnie, dobrze*
-- **gdzie?** – *tutaj, tam, wysoko, blisko, wszędzie*
-- **kiedy?** – *dziś, jutro, wczoraj, później, zawsze*
-
-**Przykłady w zdaniach z „Hobbita”:**
-- *Bilbo **sprytnie** rozwiązał zagadkę.*
-- *Bard **celnie** wystrzelił czarną strzałę.*
-- *Bilbo **cicho** zakradł się do jaskini Smauga.*
-
-**Stopniowanie przysłówków:**
-- *szybko – szybciej – najszybciej*
-- *odważnie – odważniej – najodważniej*
-- *dobrze – lepiej – najlepiej*
-
----
-
-## 10. Przyimek – szczegółowo
-
-[UI: COMPARE]
-
-**Przyimek** łączy się najczęściej z rzeczownikiem, zaimkiem lub liczebnikiem i wskazuje relację między wyrazami.
-
-**Przykłady przyimków:** *do, z, na, pod, nad, przed, za, przez, między, bez, dla, o, po, przy, u*
-
-**Przykłady w zdaniach z „Hobbita”:**
-- *Bilbo poszedł **do** jaskini.*
-- *Gollum mieszkał **pod** ziemią.*
-- *Krasnoludy walczyły **o** skarb.*
-- *Bilbo wrócił **do** domu **z** przygodami.*
-
-**Przyimki proste i złożone:**
-- **Proste:** *do, z, na, pod, bez, za, przez, o, po, przy, u, w, nad, przed, między*
-- **Złożone:** *ponad, poprzez, spośród, zamiast, naprzeciwko, wskutek, wewnątrz, obok, wokół*
-
----
-
-## 11. Spójnik – szczegółowo
-
-[UI: COMPARE]
-
-**Spójnik** łączy wyrazy, wyrażenia lub zdania.
-
-**Spójniki współrzędne** (łączą elementy równorzędne):
-- *i, oraz, a, ale, lecz, lub, albo, więc, dlatego, bądź, ni*
-- *Bilbo był ostrożny **i** odważny.*
-- *Thorin był dumny, **ale** uległ chciwości.*
-
-**Spójniki podrzędne** (wprowadzają zdanie podrzędne):
-- *ponieważ, gdy, kiedy, aby, żeby, chociaż, jeśli, że, który, aż, zanim, jak, niż*
-- *Bilbo został z towarzyszami, **chociaż** bardzo się bał.*
-
-**Przecinek przed spójnikami – zasada:**
-- Przed *ale, lecz, jednak, więc, ponieważ, chociaż, gdy, kiedy, aby, że, zanim, aż* – **stawiamy przecinek**.
-- Przed *i, oraz, lub, albo, ani* – zwykle **nie** stawiamy przecinka (chyba że łączą zdania złożone).
-
----
-
-## 12. Partykuła – szczegółowo
-
-[UI: COMPARE]
-
-**Partykuła** nadaje wypowiedzi dodatkowe znaczenie. Może:
-- zaprzeczać – *nie*
-- wzmacniać treść – *właśnie, nawet*
-- wyrażać pytanie – *czy*
-- ograniczać znaczenie – *tylko*
-- wskazywać przypuszczenie lub życzenie – *może, chyba, oby, by, niech*
-
-**Przykłady partykuł:** *nie, czy, by, niech, oby, właśnie, tylko, nawet, może, chyba*
-
-**Przykłady w zdaniach z „Hobbita”:**
-- *Bilbo **nie** chciał zostać w domu.*
-- ***Czy** Gandalf wróci?* – partykuła pytająca
-- ***Oby** wyprawa zakończyła się pomyślnie.*
-- *To **właśnie** Bilbo odnalazł słaby punkt smoka.*
-
----
-
-## 13. Różnica między spójnikiem a partykułą – przykład „czy”
-
-[UI: COMPARE]
-
-**„Czy”** może być zarówno partykułą, jak i spójnikiem – zależy od funkcji w zdaniu:
-
-| Rodzaj | Funkcja | Przykład |
-|--------|---------|----------|
-| **Partykuła (pytająca)** | wprowadza pytanie, nie łączy niczego | ***Czy** Bilbo wrócił do domu?* |
-| **Spójnik (alternatywa)** | łączy dwa zdania podrzędne, wprowadza alternatywę | *Bilbo nie wiedział, **czy** ma uciekać, **czy** zostać.* |
-
-**Wskazówka:** Jeśli *czy* można zastąpić przez *lub* lub *albo*, jest spójnikiem. Jeśli wprowadza pytanie – jest partykułą.
-
----
-
-## 14. Wykrzyknik – szczegółowo
-
-[UI: COMPARE]
-
-**Wykrzyknik** wyraża emocje, uczucia, rozkazy, reakcje lub odgłosy.
-
-**Przykłady:** *ach, och, ej, hej, o, biada, hurra, halo, brawo, ojej, niestety*
-
-**Przykłady w zdaniach z „Hobbita”:**
-- ***Ach**, jaka piękna kraina!*
-- ***Hej**, poczekajcie na mnie!*
-- ***Hurra**, wygraliśmy!*
-
-Wykrzyknik może być samodzielną wypowiedzią lub występować w zdaniu – wtedy często oddzielamy go przecinkiem.
-
----
-
-## 15. Rozpoznawanie części mowy w praktyce
-
-[UI: COMPARE]
-
-| Wyraz | Zdanie | Uzasadnienie | Część mowy |
-|-------|--------|--------------|------------|
-| **szybko** | *Bilbo **szybko** uciekł.* | określa sposób wykonania czynności (jak?) | **przysłówek** |
-| **do** | *Bilbo poszedł **do** jaskini.* | łączy się z rzeczownikiem, wskazuje relację | **przyimek** |
-| **ale** | *Bilbo się bał, **ale** pozostał z przyjaciółmi.* | łączy dwa zdania, wprowadza kontrast | **spójnik** |
-| **nie** | *Bilbo **nie** uciekł.* | zaprzecza treści zdania, nie łączy niczego | **partykuła** |
-| **Ach** | ***Ach**, jak tu ciemno!* | wyraża emocje | **wykrzyknik** |
-
----
-
-## 16. Ćwiczenia
-
-[UI: CHOICE] [UI: CLOZE] [UI: ERROR] [UI: TRANSLATE]
-
-### Ćwiczenie 1 – Rozpoznaj część mowy
-
-Określ, jaką częścią mowy jest podkreślony wyraz:
-
-1. Bilbo **szybko** uciekł. → __________
-2. Bilbo poszedł **do** jaskini. → __________
-3. Bilbo się bał, **ale** pozostał z przyjaciółmi. → __________
-4. Bilbo **nie** uciekł. → __________
-5. **Ach**, jak tu ciemno! → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. przysłówek
-2. przyimek
-3. spójnik
-4. partykuła
-5. wykrzyknik
+Przykład: Zastanawiał się, czy ma uciekać, czy zostać z krasnoludami.
 
 </details>
+10. KONKURS – zadanie wieloetapowe
+Zadanie:
+Przeanalizuj zdanie: „Czy Bilbo, czy Thorin odkrył słaby punkt Smauga?”
 
----
+Określ funkcję każdego „czy”.
 
-### Ćwiczenie 2 – „czy” – partykuła czy spójnik?
+Popraw zdanie, jeśli jest niepoprawne (pod względem składni).
 
-Określ, czy „czy” jest partykułą czy spójnikiem:
+Uzasadnij swoją odpowiedź, używając terminów: partykuła, spójnik, alternatywa.
 
-1. ***Czy** Bilbo wrócił do domu? → __________
-2. *Bilbo nie wiedział, **czy** ma uciekać, **czy** zostać.* → __________
+Rozwiązanie (MASTER):
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Pierwsze „czy” – partykuła pytająca; drugie „czy” – spójnik (wprowadza alternatywę).
 
-1. partykuła (pytająca)
-2. spójnik (alternatywa)
+Zdanie jest poprawne składniowo.
 
-</details>
+Pierwsze „czy” nadaje pytajny charakter, drugie łączy dwie opcje (Bilbo lub Thorin).
 
----
+11. OLIMPIADA – problem otwarty
+Zadanie:
+Czy wszystkie nieodmienne części mowy są naprawdę nieodmienne? Podaj kontrprzykład (np. przysłówek w stopniu wyższym) i uzasadnij, czy to już odmiana, czy nie.
 
-### Ćwiczenie 3 – Dopasuj część mowy do funkcji
+Przykładowa odpowiedź:
+Przysłówki stopniujemy (szybko – szybciej – najszybciej), ale to nie jest odmiana przez przypadki czy osoby – to stopniowanie, które nie zmienia formy wyrazu w zależności od kontekstu gramatycznego. Dlatego nadal zaliczamy je do nieodmiennych.
 
-| Część mowy | Funkcja |
-|------------|---------|
-| przysłówek | łączy się z rzeczownikiem |
-| przyimek | łączy wyrazy lub zdania |
-| spójnik | określa czasownik |
-| partykuła | wyraża emocje |
-| wykrzyknik | modyfikuje znaczenie |
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-- przysłówek → określa czasownik
-- przyimek → łączy się z rzeczownikiem
-- spójnik → łączy wyrazy lub zdania
-- partykuła → modyfikuje znaczenie
-- wykrzyknik → wyraża emocje
-
-</details>
-
----
-
-### Ćwiczenie 4 – Uzupełnij zdania odpowiednim zaimkiem/partykułą
-
-1. Bilbo ______ (nie) chciał opuścić domu.
-2. ______ (Czy) Gandalf wróci?
-3. ______ (Oby) wyprawa zakończyła się pomyślnie.
-4. To ______ (właśnie) Bilbo odnalazł słaby punkt smoka.
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. nie
-2. Czy
-3. Oby
-4. właśnie
-
-</details>
-
----
-
-## 17. Ważne! – 7 kluczowych zasad
-
-[UI: COMPARE]
-
-1. **Bilbo** – bohater dynamiczny, zwycięża sprytem, nie siłą.
-2. **Bard** zabija Smauga, **Bilbo** odkrywa słaby punkt.
-3. **Thorin** ulega chciwości, ale przed śmiercią żałuje.
-4. **Nieodmienne części mowy:** przysłówek, przyimek, spójnik, partykuła, wykrzyknik.
-5. **„czy”** – partykuła (pytanie) lub spójnik (alternatywa).
-6. **„nie” z czasownikiem** – rozdzielnie (z wyjątkami, np. *nienawidzić*).
-7. Na egzaminie akceptowane są obie wersje języków (brytyjska i amerykańska).
-
----
-
-## 18. Fiszki
-
+12. Fiszki
 [UI: FISZKI]
 
-| Przód | Tył |
-|-------|-----|
-| Kto jest głównym bohaterem „Hobbita”? | Bilbo Baggins |
-| Kto zabija Smauga? | Bard |
-| Kto odkrywa słaby punkt Smauga? | Bilbo |
-| Jaki motyw wiąże się z Thorinem? | chciwość |
-| Jaka część mowy odpowiada na pytanie „jak?”? | przysłówek |
-| Jaka część mowy łączy wyrazy lub zdania? | spójnik |
-| Jaka część mowy modyfikuje znaczenie? | partykuła |
-| Jaka część mowy wyraża emocje? | wykrzyknik |
-| Jaka część mowy łączy się z rzeczownikiem? | przyimek |
-| „czy” jako partykuła wprowadza… | pytanie |
-| „czy” jako spójnik wprowadza… | alternatywę |
-| Motyw podróży w „Hobbicie” | droga do dojrzałości |
-| „nie” z czasownikami piszemy… | rozdzielnie |
-| Wyjątek od „nie” z czasownikami | nienawidzić |
+Przód	Tył (odpowiedź + uzasadnienie)
+Główny bohater „Hobbita”	Bilbo Baggins – dynamiczny, przechodzi przemianę.
+Kto zabija Smauga?	Bard – Bilbo odkrywa słaby punkt, ale to Bard oddaje śmiertelny cios.
+Kto odkrywa słaby punkt?	Bilbo – sprytnie dostrzega gołą plamę na brzuchu smoka.
+Przysłówek – pytania	jak? gdzie? kiedy? – określa czasownik, przymiotnik lub inny przysłówek.
+Spójnik – funkcja	łączy wyrazy lub zdania – np. i, ale, ponieważ.
+Partykuła – funkcja	modyfikuje znaczenie – np. nie, czy, nawet, tylko.
+„czy” jako partykuła	wprowadza pytanie – Czy wrócił?
+„czy” jako spójnik	wprowadza alternatywę – Nie wiem, czy wrócił, czy nie.
+„nie” z czasownikami	rozdzielnie – nie chciał, nie uciekł. Wyjątki: nienawidzić, niedomagać.
+Koniec Lekcji 2 (wersja 2026 MASTER+)
 
----
+LEKCJA 3 – „OPOWIEŚCI Z NARNII” I ZAIMEK
+(Wersja 2026 MASTER+)
 
-## 19. Test końcowy – MISJA
+Mapa lekcji
+Nowe: rodzaje zaimków, „swój”, przecinek przed „który”
 
-[UI: EXAM]
+Powtórka: Narnia, przemiana Edmunda, Aslan jako symbol
 
-1. Kto jest głównym bohaterem „Hobbita”?
-2. Kto zabija Smauga – Bilbo czy Bard?
-3. Jaka część mowy odpowiada na pytania: jak? gdzie? kiedy?
-4. Jaka część mowy łączy wyrazy lub zdania?
-5. Jaka część mowy modyfikuje znaczenie wypowiedzi?
-6. Jaka część mowy wyraża emocje?
-7. Jaka część mowy łączy się z rzeczownikiem i wskazuje relację?
-8. Kto odkrywa słaby punkt Smauga?
-9. Jaki motyw wiąże się z Thorinem pod koniec powieści?
-10. „Czy” jako partykuła wprowadza ……… (pytanie / zdanie podrzędne)
+Pułapki: osobowy vs zwrotny, „swój” vs „jego”, „który” pytający vs względny
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Tabela rodzajów zaimków
+Rodzaj zaimka	Przykłady	Funkcja
+Osobowe	ja, ty, on, ona, my, wy, oni	zastępuje nazwy osób/rzeczy
+Zwrotne	się, siebie, sobie, sobą	czynność wraca do wykonawcy
+Dzierżawcze	mój, twój, swój, jego, jej, nasz	przynależność
+Wskazujące	ten, ta, to, tamten, taki	wskazuje
+Pytające	kto?, co?, który?, jaki?, czyj?	tworzy pytania
+Względne	który, co, gdzie, kiedy, jaki	łączy zdanie nadrzędne z podrzędnym
+Przeczące	nikt, nic, żaden, nigdy, nigdzie	zaprzeczenie
+Reguła „swój”
+Zaimek swój odnosi się zawsze do podmiotu zdania.
 
-1. Bilbo Baggins
-2. Bard
-3. przysłówek
-4. spójnik
-5. partykuła
-6. wykrzyknik
-7. przyimek
-8. Bilbo
-9. chciwość
-10. pytanie
+Edmund bronił swojego rodzeństwa. (rodzeństwo Edmunda)
 
-</details>
+Edmund bronił jego rodzeństwa. (rodzeństwo kogoś innego)
 
----
+Przecinek przed „który” – obowiązkowy, gdy wprowadza zdanie podrzędne przydawkowe.
 
-**Koniec Lekcji 2 (wersja poprawiona 2.0)**
+MASTER – Lekcja 3
+Wyjaśnij różnicę między zaimkiem osobowym a zwrotnym. Podaj przykłady.
 
+Uzupełnij i uzasadnij: „Piotr podniósł _____ miecz.” (swój / jego)
 
-# LEKCJA 3 – „OPOWIEŚCI Z NARNII” I ZAIMEK (WERSJA POPRAWIONA 2.0)
+Określ funkcję „który” i wstaw przecinek: „Edmund który wcześniej zdradził rodzeństwo później stał się lojalny.”
 
-[UI: PROGRESS]
+Utwórz zdanie z zaimkiem względnym i zaimkiem pytającym – porównaj.
 
----
+<details> <summary><strong>? Odpowiedzi MASTER</strong></summary>
+Osobowy może być podmiotem (On się myje). Zwrotny nigdy nie jest podmiotem (się to dopełnienie).
 
-## 0. Cel lekcji
+swój – miecz należy do podmiotu (Piotra).
 
-Po tej lekcji:
-- poznasz najważniejsze informacje o lekturze **„Opowieści z Narnii. Lew, czarownica i stara szafa”**,
-- scharakteryzujesz rodzeństwo Pevensie i ich przydomki królewskie,
-- opiszesz przemianę Edmunda (trójkrok),
-- wyjaśnisz, dlaczego Aslan **nie jest** bohaterem dynamicznym,
-- rozróżnisz **siedem rodzajów zaimków**,
-- zastosujesz zasady użycia **„swój”** i przecinka przed **„który”**.
+Edmund, który wcześniej zdradził rodzeństwo, później stał się lojalny. – zaimek względny + przecinki.
 
----
-
-## 1. Zanim zaczniesz – szybki test
-
-[UI: CLOZE] [UI: CHOICE] [UI: ERROR]
-
-Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik.
-
-1. Kto jest autorem „Opowieści z Narnii”?
-2. Która z postaci jest symbolem dobra i poświęcenia, ale NIE jest bohaterem dynamicznym?
-3. Kto jako pierwszy odkrył Narnię?
-4. Jakie są trzy etapy przemiany Edmunda? (zdrada → ... → naprawa czynem)
-5. Jaki zaimek zastępuje nazwy osób? (np. ja, ty, on)
-6. Jaki zaimek wskazuje, że czynność wraca do wykonawcy? (np. się, siebie)
-7. Jaki zaimek informuje o przynależności? (np. mój, twój, swój)
-8. Jaki zaimek łączy zdanie nadrzędne z podrzędnym? (np. który, co, gdzie)
-9. Czy Aslan jest bohaterem dynamicznym? (tak/nie)
-10. Uzupełnij: „Edmund bronił _____ rodzeństwa.” (swój / jego) – poprawna forma
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. C.S. Lewis
-2. Aslan
-3. Łucja
-4. skrucha
-5. osobowy
-6. zwrotny
-7. dzierżawczy
-8. względny
-9. nie
-10. swojego
+Pytający: Który bohater odkrył Narnię?
+Względny: Bohater, który odkrył Narnię, nazywał się Łucja.
 
 </details>
+KONKURS – zadanie wieloetapowe
+Zadanie:
+Przeanalizuj zdanie: „Który z braci, który zdradził, zostanie ukarany?”
 
----
+Wskaż zaimki i określ ich rodzaj.
 
-## 2. „Opowieści z Narnii” – podstawowe informacje
+Popraw interpunkcję (jeśli jest potrzebna).
 
-[UI: COMPARE]
+Przekształć zdanie tak, aby uniknąć powtórzenia zaimka „który”.
 
-| Element | Informacja |
-|---------|------------|
-| **Autor** | C.S. Lewis (Clive Staples Lewis) |
-| **Pełny tytuł** | „Opowieści z Narnii: Lew, czarownica i stara szafa” |
-| **Gatunek** | powieść fantasy z elementami baśni, alegorii i powieści przygodowej |
-| **Miejsce wydarzeń** | Narnia oraz Anglia (czas II wojny światowej) |
-| **Rok wydania** | 1950 |
-| **Status** | lektura obowiązkowa z klas IV–VI |
+Rozwiązanie (MASTER):
 
-**WAŻNE:** W latach 2024/2025–2025/2026 zadania w części I arkusza dotyczą **wyłącznie fragmentu** zamieszczonego w arkuszu. W wypracowaniu można się do lektury swobodnie odwoływać.
+Który (pierwsze) – pytający; który (drugie) – względny.
 
----
+Poprawne: Który z braci, który zdradził, zostanie ukarany? (przecinki oddzielają zdanie podrzędne).
 
-## 3. Bohaterowie
+Który z braci, ten, który zdradził, zostanie ukarany? – ale to nadal ma dwa „który”. Alternatywa: Który z braci, zdrajca, zostanie ukarany? (użycie rzeczownika).
 
-### Rodzeństwo Pevensie
+OLIMPIADA – problem otwarty
+Zadanie:
+Czy zaimek „swój” zawsze jednoznacznie wskazuje na podmiot? Podaj przykład, gdzie może być niejednoznaczny i zaproponuj poprawkę.
 
-[UI: COMPARE]
+Przykładowa odpowiedź:
+W zdaniu „Janek powiedział Piotrowi, żeby podniósł swój długopis” – „swój” odnosi się do podmiotu zdania podrzędnego (Piotr), ale jeśli chodziło o długopis Janka, trzeba użyć jego. Aby uniknąć niejasności, lepiej: Janek powiedział Piotrowi: „Podnieś swój długopis” – wtedy kontekst wyjaśnia.
 
-| Imię | Przydomek królewski | Charakterystyka |
-|------|---------------------|-----------------|
-| **Piotr** | Piotr Wspaniały | Najstarszy, odważny, odpowiedzialny, dowodzi wojskami dobra. |
-| **Zuzanna** | Zuzanna Łagodna | Rozsądna, spokojna, troskliwa, posługuje się łukiem. |
-| **Edmund** | Edmund Sprawiedliwy | Początkowo zdradza rodzeństwo, ale przechodzi przemianę. **Bohater dynamiczny**. |
-| **Łucja** | Łucja Mężna / Dzielna | Najmłodsza, odważna, wierna, wrażliwa. Jako pierwsza odkrywa Narnię. |
+LEKCJA 4 – „CHŁOPCY Z PLACU BRONI” ORAZ PRZYMIOTNIK I LICZEBNIK
+(Wersja 2026 MASTER+)
 
-### Inni bohaterowie
+Stopniowanie przymiotników
+Stopień równy	Wyższy	Najwyższy	Typ
+dobry	lepszy	najlepszy	nieregularne
+zły	gorszy	najgorszy	nieregularne
+duży / wielki	większy	największy	nieregularne
+mały	mniejszy	najmniejszy	nieregularne
+odważny	odważniejszy	najodważniejszy	regularne
+silny	silniejszy	najsilniejszy	regularne
+„nie” z przymiotnikami (2026) → zawsze łącznie, także w stopniu wyższym i najwyższym (niemądrzejszy, nienajmądrzejszy).
 
-[UI: COMPARE]
+DLACZEGO?
+Przymiotnik określa cechę, a „nie” tworzy nową, przeciwną cechę – dlatego łącznie. Nowa reguła usuwa wyjątki, które dotąd obowiązywały w stopniu wyższym.
 
-| Bohater | Charakterystyka |
-|---------|-----------------|
-| **Aslan** | Potężny lew, prawowity władca Narnii. Symbolizuje **dobro, sprawiedliwość, miłość, poświęcenie i odkupienie**. **NIE jest bohaterem dynamicznym** – jest symbolem. |
-| **Biała Czarownica (Jadis)** | Władczyni Narnii pogrążonej w wiecznej zimie. Symbolizuje **zło, przemoc, kłamstwo, egoizm i bezwzględną władzę**. |
+Liczebniki – formy męskoosobowe i zbiorowe
+Przypadek	dwóch / dwaj	pięciu	dwoje (zbiorowy)	troje (zbiorowy)
+Mianownik	dwaj / dwóch	pięciu	dwoje	troje
+Dopełniacz	dwóch	pięciu	dwojga	trojga
+Celownik	dwóm	pięciu	dwojgu	trojgu
+Biernik	dwóch	pięciu	dwoje	troje
+Narzędnik	dwoma	pięcioma	dwojgiem	trojgiem
+Miejscownik	dwóch	pięciu	dwojgu	trojgu
+Uwaga: dwaj – forma mianownika, używana głównie w stylu oficjalnym lub w odniesieniu do grupy męskiej; dwóch – częstsza w mowie potocznej i w innych przypadkach.
 
----
+Zapis liczebników na E8 → słownie (wyjątki: daty, godziny, ceny, tabele).
 
-## 4. Przemiana Edmunda – trójkrok
+MASTER – Lekcja 4
+Podaj stopień wyższy i najwyższy od „zły” i „dobry”. Uzasadnij, dlaczego to formy nieregularne.
 
-[UI: DIAGRAM]
+Popraw: „Widziałem dwa chłopców na placu.”
 
-```
-POKUSA
-  ↓
-BŁĘDNA DECYZJA
-  ↓
-KONSEKWENCJE
-  ↓
-SKRUCHA
-  ↓
-ODKUPIENIE
-  ↓
-PRZEMIANA
-```
+Odmień liczebnik zbiorowy „czworo” w dopełniaczu i narzędniku.
 
-| Etap | Opis |
-|------|------|
-| **1. Zdrada** | Edmund ulega pokusie (ptasie mleczko, obietnica władzy) i zdradza rodzeństwo Białej Czarownicy. |
-| **2. Skrucha** | Rozumie, że postąpił źle, i żałuje swojego czynu (rozmowa z Aslanem). |
-| **3. Naprawa błędu czynem** | Walczy po stronie dobra, **niszczy różdżkę Czarownicy** w bitwie i staje się lojalny wobec rodziny. |
+Zastosuj regułę „nie” 2026: utwórz stopień wyższy od „łatwy” z „nie”.
 
-**Wniosek:** Edmund jest **bohaterem dynamicznym** – przechodzi wewnętrzną przemianę od zdrajcy do lojalnego wojownika.
+<details> <summary><strong>? Odpowiedzi MASTER</strong></summary>
+gorszy – najgorszy; lepszy – najlepszy. Formy nieregularne – nie tworzą się przez dodanie -ejszy/-szy.
 
----
+Widziałem dwóch chłopców na placu. (forma męskoosobowa).
 
-## 5. Najważniejsze wydarzenia
+dopełniacz: czworga; narzędnik: czworgiem.
 
-[UI: COMPARE]
-
-| Wydarzenie | Opis | Motywy |
-|------------|------|--------|
-| **Odkrycie Narnii** | Łucja przechodzi przez szafę i trafia do Narnii. Rodzeństwo początkowo nie wierzy w jej opowieść. | odkrywanie nieznanego, wyobraźnia, wiara |
-| **Zdrada Edmunda** | Edmund spotyka Białą Czarownicę, która częstuje go magicznym przysmakiem i obiecuje władzę. | pokusa, zdrada, zazdrość, wina |
-| **Ofiara Aslana** | Aslan zgadza się oddać życie za Edmunda na Kamiennym Stole. | poświęcenie, miłość, odkupienie, przebaczenie |
-| **Powrót Aslana** | Aslan wraca do życia dzięki „głębszej magii”. | zwycięstwo dobra nad złem, nadzieja |
-| **Bitwa o Narnię** | Siły Aslana walczą z wojskami Białej Czarownicy. Dobro zwycięża. Rodzeństwo zostaje ukoronowane. | walka dobra ze złem, odwaga, współpraca |
-
----
-
-## 6. Motywy do rozprawki
-
-[UI: COMPARE]
-
-| Motyw | Opis |
-|-------|------|
-| **Walka dobra ze złem** | Aslan – dobro, Biała Czarownica – zło. Dobro zwycięża dzięki ofierze, odwadze, lojalności i wierze. |
-| **Rodzina** | Rodzeństwo Pevensie początkowo się kłóci, ale w obliczu zagrożenia jednoczy się. |
-| **Dorastanie** | Dzieci trafiają do świata, w którym muszą podejmować decyzje o poważnych konsekwencjach. |
-| **Pokusa i odpowiedzialność** | Edmund ulega pokusie, ale musi ponieść odpowiedzialność za swoje decyzje. |
-| **Poświęcenie dla innych** | Aslan poświęca się za Edmunda – przykład bezinteresownego ratowania drugiej osoby. |
-| **Przebaczenie i odkupienie** | Aslan przebacza Edmundowi, a chłopiec odzyskuje dobre imię dzięki własnym czynom. |
-
----
-
-## 7. Aslan – symbol, NIE bohater dynamiczny
-
-[UI: COMPARE]
-
-| Aslan | Bohater dynamiczny |
-|-------|-------------------|
-| Nie zmienia się wewnętrznie. | Zmienia się wewnętrznie. |
-| Jest symbolem dobra, miłości i poświęcenia. | Przechodzi przemianę charakteru. |
-| Zmienia innych, ale sam pozostaje niezmienny. | Jego postawa ewoluuje pod wpływem wydarzeń. |
-
-**Zapamiętaj:** Aslan **NIE jest bohaterem dynamicznym** – to jedna z najczęstszych pułapek egzaminacyjnych!
-
----
-
-## 8. Gotowe zdania do rozprawki
-
-[UI: COMPARE]
-
-| Motyw | Przykład |
-|-------|----------|
-| Przemiana | *Edmund z „Opowieści z Narnii” jest bohaterem dynamicznym, ponieważ przechodzi od zdrady do lojalności.* |
-| Poświęcenie | *Aslan oddaje życie za Edmunda, pokazując, że miłość i poświęcenie są silniejsze od zła.* |
-| Rodzina | *Rodzeństwo Pevensie w obliczu zagrożenia jednoczy się i razem walczy o dobro.* |
-| Pokusa | *Historia Edmunda pokazuje, że pokusa może prowadzić do zdrady, ale możliwe jest odkupienie winy.* |
-| Przebaczenie | *Aslan przebacza Edmundowi, pokazując, że każdy człowiek może zasłużyć na drugą szansę.* |
-
----
-
-## 9. Zaimek – definicja i rodzaje
-
-[UI: COMPARE]
-
-**Zaimek** to część mowy, która zastępuje inne wyrazy, najczęściej rzeczowniki, przymiotniki, liczebniki lub przysłówki.
-
-*Edmund zdradził rodzeństwo. **On** później żałował swojej decyzji.* – zaimek **on** zastępuje „Edmund”.
-
-### Rodzaje zaimków
-
-[UI: COMPARE]
-
-| Rodzaj | Przykłady | Funkcja |
-|--------|-----------|---------|
-| **Osobowe** | *ja, ty, on, ona, ono, my, wy, oni, one* | Zastępują nazwy osób lub rzeczy. |
-| **Zwrotne** | *się, siebie, sobie, sobą* | Wskazują, że czynność wraca do wykonawcy. |
-| **Dzierżawcze** | *mój, twój, jego, jej, nasz, wasz, ich, swój* | Informują o przynależności. |
-| **Wskazujące** | *ten, ta, to, ci, tamten, taki, owy* | Wskazują osoby, przedmioty, miejsca lub cechy. |
-| **Pytające** | *kto?, co?, jaki?, który?, czyj?, ile?, jak?, gdzie?, kiedy?* | Służą do tworzenia pytań. |
-| **Względne** | *który, jaka, jakie, kto, co, gdzie, kiedy, jaki, czyj* | Łączą zdanie nadrzędne ze zdaniem podrzędnym. |
-| **Przeczące** | *nikt, nic, nigdy, nigdzie, żaden, niczyj* | Wyrażają zaprzeczenie. |
-
----
-
-## 10. Zasady – PUŁAPKI E8!
-
-### 10.1. Zaimek osobowy vs zwrotny
-
-[UI: COMPARE]
-
-| Zaimek osobowy | Zaimek zwrotny |
-|----------------|----------------|
-| Zastępuje konkretną osobę lub rzecz. | Wskazuje, że czynność dotyczy wykonawcy. |
-| **Może być podmiotem** zdania. | **Nigdy nie jest podmiotem**. |
-| *On wstydził się.* („on” – podmiot) | *Edmund wstydził się.* („się” – nie jest podmiotem) |
-
-### 10.2. Zasada „swój”
-
-[UI: COMPARE]
-
-Zaimek **swój** odnosi się do **podmiotu zdania**.
-
-| Poprawnie | Niepoprawnie |
-|-----------|--------------|
-| *Edmund bronił **swojego** rodzeństwa.* (rodzeństwo Edmunda) | *Edmund bronił **jego** rodzeństwa.* (czyjego? – niejasne) |
-
-**PUŁAPKA:** Na egzaminie często pojawia się zadanie, w którym trzeba wybrać między *jego* a *swojego*. Zawsze sprawdzaj, czy zaimek odnosi się do podmiotu!
-
-### 10.3. Przecinek przed „który”
-
-[UI: COMPARE]
-
-Gdy **„który”** wprowadza zdanie podrzędne przydawkowe – stawiamy przed nim **przecinek**.
-
-| Poprawnie | Niepoprawnie |
-|-----------|--------------|
-| *Edmund, **który** wcześniej zdradził rodzeństwo, później stał się lojalny.* | *Edmund **który** wcześniej zdradził rodzeństwo później stał się lojalny.* |
-
-### 10.4. „Który” – pytający czy względny?
-
-[UI: COMPARE]
-
-| Funkcja | Przykład |
-|---------|----------|
-| **Pytający** | ***Który** bohater odkrył Narnię?* |
-| **Względny** | *Edmund, **który** wcześniej zdradził rodzeństwo, później się zmienił.* |
-
----
-
-## 11. Ćwiczenia
-
-[UI: CHOICE] [UI: CLOZE] [UI: ERROR] [UI: TRANSLATE]
-
-### Ćwiczenie 1 – Rozpoznaj rodzaj zaimka
-
-Określ rodzaj podkreślonego zaimka:
-
-1. **On** później żałował swojej decyzji. → __________
-2. Edmund wstydził **się** swojej zdrady. → __________
-3. **Nasza** rodzina trafiła do Narnii. → __________
-4. Edmund, **który** wcześniej zdradził rodzeństwo, później się zmienił. → __________
-5. **Kto** odkrył Narnię? → __________
-6. **Nikt** nie znał prawdziwego planu Czarownicy. → __________
-7. **Ten** bohater przeszedł przemianę. → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. osobowy
-2. zwrotny
-3. dzierżawczy
-4. względny
-5. pytający
-6. przeczący
-7. wskazujący
+niełatwiejszy (łącznie – reguła 2026).
 
 </details>
+KONKURS – zadanie wieloetapowe
+Zadanie:
+Przeanalizuj zdanie: „Trzech chłopców, najodważniejszych z całej grupy, stanęło do walki.”
 
----
+Wskaż liczebnik i określ jego rodzaj.
 
-### Ćwiczenie 2 – Uzupełnij zdania odpowiednim zaimkiem
+Określ stopień przymiotnika.
 
-1. Łucja odkryła Narnię. **_____** jako pierwsza zobaczyła niezwykłą krainę.
-2. Edmund wstydził **_____** swojej zdrady.
-3. Aslan oddał życie za Edmunda, **_____** wcześniej zdradził rodzeństwo.
-4. **_____** bohater najbardziej zmienił się w Narnii?
-5. **_____** nie znał prawdziwego planu Białej Czarownicy.
-6. Piotr podniósł **_____** miecz i ruszył do walki.
-7. Narnia była miejscem, **_____** dzieci przeżyły niezwykłą przygodę.
+Zmień liczebnik na zbiorowy i dostosuj resztę zdania.
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Rozwiązanie (MASTER):
 
-1. Ona
-2. się
-3. który
-4. Który
-5. Nikt
-6. swój
-7. gdzie
+Trzech – liczebnik główny, forma męskoosobowa.
 
-</details>
+Najodważniejszych – stopień najwyższy przymiotnika odważny.
 
----
+Troje najodważniejszych dzieci stanęło do walki. – liczebnik zbiorowy wymaga rzeczownika w odpowiednim rodzaju (tu: dzieci).
 
-### Ćwiczenie 3 – „swój” czy „jego”?
+OLIMPIADA – problem otwarty
+Zadanie:
+Dlaczego w języku polskim liczebniki zbiorowe (dwoje, troje) łączą się tylko z niektórymi rzeczownikami? Podaj przykłady i uzasadnij na podstawie historii języka.
 
-Wybierz poprawny zaimek:
+Przykładowa odpowiedź:
+Liczebniki zbiorowe wywodzą się z dawnych form liczby podwójnej i pierwotnie odnosiły się do par lub grup naturalnie ze sobą związanych (np. dwoje dzieci, troje drzwi). Z czasem ich użycie się zawęziło – dziś łączymy je głównie z rzeczownikami, które nie mają liczby pojedynczej (drzwi, nożyce) lub z osobami różnej płci. To relikt dawnego systemu gramatycznego.
 
-1. Edmund bronił **(swojego / jego)** rodzeństwa.
-2. Piotr podniósł **(swój / jego)** miecz.
+LEKCJA 5 – „KAJKO I KOKOSZ” I RZECZOWNIK
+(Wersja 2026 MASTER+)
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Odmiana rzeczownika + żywotność
+Przypadek	Pytanie	żywotny męski (Kajko)	nieżywotny (miecz)	żywotny żeński (Lubawa)
+Mianownik	kto? co?	Kajko	miecz	Lubawa
+Dopełniacz	kogo? czego?	Kajka	miecza	Lubawy
+Celownik	komu? czemu?	Kajkowi	mieczowi	Lubawie
+Biernik	kogo? co?	Kajka	miecz	Lubawę
+Narzędnik	z kim? z czym?	Kajkiem	mieczem	Lubawą
+Miejscownik	o kim? o czym?	Kajku	mieczu	Lubawie
+Wołacz	o!	Kajku!	mieczu!	Lubawo!
+Rzeczowniki odczasownikowe (pułapka): latanie, myślenie, czytanie → to rzeczowniki, nie czasowniki.
 
-1. swojego
-2. swój
+„nie” z rzeczownikami → łącznie (wyjątek: wyraźne przeczenie w zdaniu).
 
-</details>
+Liczba podwójna: oczy, uszy, ręce.
 
----
+Przypadek	Liczba podwójna (oko)	Liczba podwójna (ucho)	Liczba podwójna (ręka)
+Mianownik	oczy	uszy	ręce
+Dopełniacz	oczu	uszu	rąk
+Celownik	oczom	uszom	rękom
+Biernik	oczy	uszy	ręce
+Narzędnik	oczami	uszami	rękami
+Miejscownik	oczach	uszach	rękach
+MASTER – Lekcja 5
+Określ żywotność i podaj biernik: Kajko, miecz, Lubawa, gród.
 
-### Ćwiczenie 4 – Przecinek przed „który”
+Wyjaśnij, dlaczego „latanie” to rzeczownik, a nie czasownik.
 
-Wstaw przecinek tam, gdzie jest potrzebny:
+Popraw pisownię „nie” i uzasadnij: „To nie przyjaciel, tylko wróg” vs „nieprzyjaciel zaatakował”.
 
-1. Edmund który wcześniej zdradził rodzeństwo później stał się lojalny.
-2. Aslan pomógł Edmundowi który żałował swojej winy.
-3. Narnia była miejscem gdzie dzieci przeżyły niezwykłą przygodę.
+Uzupełnij liczbę podwójną: Podniósł _____ (ręka), zamknął _____ (oko).
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+<details> <summary><strong>? Odpowiedzi MASTER</strong></summary>
+Kajko – żywotny → Kajka; miecz – nieżywotny → miecz; Lubawa – żywotny → Lubawę; gród – nieżywotny → gród.
 
-1. Edmund, który wcześniej zdradził rodzeństwo, później stał się lojalny.
-2. Aslan pomógł Edmundowi, który żałował swojej winy.
-3. Narnia była miejscem, gdzie dzieci przeżyły niezwykłą przygodę.
+Odpowiada na pytanie „co?” / „o czym?”, odmienia się przez przypadki, oznacza czynność jako pojęcie.
 
-</details>
+To nie przyjaciel (przeczenie w zdaniu – rozdzielnie); nieprzyjaciel (łącznie – nazwa zjawiska).
 
----
-
-## 12. Ważne! – 7 kluczowych zasad
-
-[UI: COMPARE]
-
-1. **Aslan** – symbol dobra, NIE bohater dynamiczny.
-2. **Edmund** – bohater dynamiczny (zdrada → skrucha → naprawa czynem).
-3. **„Swój”** – odnosi się do podmiotu zdania.
-4. **Przecinek przed „który”** – gdy wprowadza zdanie podrzędne przydawkowe.
-5. **Zaimek osobowy** – może być podmiotem; **zwrotny** – nie jest podmiotem.
-6. **„Który”** – pytający (w pytaniach) lub względny (łączy zdania).
-7. **Rodzeństwo Pevensie:** Piotr, Zuzanna, Edmund, Łucja – każdy ma przydomek królewski.
-
----
-
-## 13. Fiszki
-
-[UI: FISZKI]
-
-| Przód | Tył |
-|-------|-----|
-| Kto jest autorem „Opowieści z Narnii”? | C.S. Lewis |
-| Kto jest symbolem dobra i poświęcenia? | Aslan |
-| Czy Aslan jest bohaterem dynamicznym? | NIE – jest symbolem |
-| Jakie są trzy etapy przemiany Edmunda? | zdrada → skrucha → naprawa czynem |
-| Jaki zaimek zastępuje nazwy osób? (ja, ty, on) | osobowy |
-| Jaki zaimek wskazuje na czynność wracającą do wykonawcy? | zwrotny |
-| Jaki zaimek informuje o przynależności? | dzierżawczy |
-| Jaki zaimek łączy zdania? (który, co, gdzie) | względny |
-| Jaki zaimek wyraża zaprzeczenie? (nikt, nic) | przeczący |
-| Jaki zaimek wskazuje na konkretną osobę/rzecz? (ten, ta) | wskazujący |
-| „swój” odnosi się do… | podmiotu zdania |
-| Przecinek przed „który” – kiedy? | gdy wprowadza zdanie podrzędne przydawkowe |
-| Kto odkrył Narnię jako pierwszy? | Łucja |
-| Jaki jest przydomek Edmunda? | Sprawiedliwy |
-
----
-
-## 14. Test końcowy – MISJA
-
-[UI: EXAM]
-
-1. Kto jest autorem „Opowieści z Narnii”?
-2. Która z postaci jest symbolem dobra i poświęcenia, ale NIE jest bohaterem dynamicznym?
-3. Kto jako pierwszy odkrył Narnię?
-4. Jakie są trzy etapy przemiany Edmunda? (zdrada → ... → naprawa czynem)
-5. Jaki zaimek zastępuje nazwy osób? (np. ja, ty, on)
-6. Jaki zaimek wskazuje, że czynność wraca do wykonawcy? (np. się, siebie)
-7. Jaki zaimek informuje o przynależności? (np. mój, twój, swój)
-8. Jaki zaimek łączy zdanie nadrzędne z podrzędnym? (np. który, co, gdzie)
-9. Czy Aslan jest bohaterem dynamicznym? (tak/nie)
-10. Uzupełnij: „Edmund bronił _____ rodzeństwa.” (swój / jego) – poprawna forma
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. C.S. Lewis
-2. Aslan
-3. Łucja
-4. skrucha
-5. osobowy
-6. zwrotny
-7. dzierżawczy
-8. względny
-9. nie
-10. swojego
+ręce, oczy.
 
 </details>
+KONKURS – zadanie wieloetapowe
+Zadanie:
+Przeanalizuj fragment: „Kajko i Kokosz stali przed bramą grodu.”
 
----
+Wypisz wszystkie rzeczowniki i określ ich rodzaj gramatyczny oraz żywotność.
 
-**Koniec Lekcji 3 (wersja poprawiona 2.0)**
+Przekształć zdanie na liczbę mnogą (jeśli to możliwe) i sprawdź, które formy się zmieniają.
 
+Użyj w zdaniu rzeczownika odczasownikowego od czasownika stać.
 
-# LEKCJA 4 – „CHŁOPCY Z PLACU BRONI” I PRZYMIOTNIK I LICZEBNIK (WERSJA POPRAWIONA 2.0)
+Rozwiązanie (MASTER):
 
-[UI: PROGRESS]
+Kajko – męski, żywotny; Kokosz – męski, żywotny; brama – żeński, nieżywotny; gród – męski, nieżywotny.
 
----
+Kajko i Kokosz stali przed bramami grodów. – zmiana na liczbę mnogą wymaga zmiany końcówek.
 
-## 0. Cel lekcji
+Stanie przed bramą grodu było ich codziennością. – stanie to rzeczownik odczasownikowy.
 
-Po tej lekcji:
-- poznasz najważniejsze informacje o lekturze **„Chłopcy z Placu Broni”**,
-- scharakteryzujesz bohaterów (Nemeczek, Boka, Gereb, Feri Acz),
-- opiszesz przemianę Gereba (i wyjaśnisz, dlaczego jest niepełna),
-- rozróżnisz **przymiotniki** (stopniowanie regularne i nieregularne, „nie” z przymiotnikami, przymiotniki niestopniowalne),
-- rozróżnisz **liczebniki** (główne, porządkowe, zbiorowe, ułamkowe) i zastosujesz zasady ich zapisu,
-- zastosujesz poprawną formę liczebników w przypadkach (zwłaszcza formy męskoosobowe).
+OLIMPIADA – problem otwarty
+Zadanie:
+Czy wszystkie rzeczowniki żeńskie w bierniku mają końcówkę -ę? Podaj kontrprzykład i uzasadnij.
 
----
+Przykładowa odpowiedź:
+Nie wszystkie. Rzeczowniki żeńskie zakończone na *-i* (np. pani) mają w bierniku panią – końcówka *-ią*, nie *-ę*. To wyjątek, ale ważny w odmianie.
 
-## 1. Zanim zaczniesz – szybki test
+LEKCJA 6 – „AKADEMIA PANA KLEKSA” I CZASOWNIK
+(Wersja 2026 MASTER+)
 
-[UI: CLOZE] [UI: CHOICE] [UI: ERROR]
+Czasy, tryby, aspekt, strona – tabele
+Czas	Niedokonany	Dokonany
+Teraźniejszy	czytam	—
+Przeszły	czytałem	przeczytałem
+Przyszły	będę czytał / będę czytać	przeczytam
+Tryb	Przykład (2. os. lp.)	Znaczenie
+Orzekający	czytasz	fakt
+Przypuszczający	czytałbyś	hipoteza, warunek
+Rozkazujący	czytaj!	rozkaz, prośba
+Aspekt	Pytanie	Przykład
+Niedokonany	co robić?	czytać
+Dokonany	co zrobić?	przeczytać
+Strona	Czynna	Bierna
+Teraźn.	Adaś czyta książkę	Książka jest czytana przez Adasia
+Przeszły	Adaś przeczytał książkę	Książka została przeczytana przez Adasia
+Przyszły	Adaś przeczyta książkę	Książka zostanie przeczytana przez Adasia
+„nie” z czasownikami → rozdzielnie (wyjątki: nienawidzić, niedomagać, niecierpliwić się, niepokoić...).
 
-Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik.
+DLACZEGO?
+Czasownik wyraża czynność, a „nie” ją zaprzecza – w języku polskim przeczenie czasownika zawsze jest osobne, aby zachować przejrzystość składniową. Wyjątki to czasowniki, które bez „nie” nie istnieją – tam „nie” jest częścią rdzenia.
 
-1. Kto jest autorem „Chłopców z Placu Broni”?
-2. Który bohater jest symbolem odwagi i lojalności, ale NIE przechodzi przemiany?
-3. Który bohater przechodzi przemianę (zdrada → skrucha → powrót)?
-4. Jaki motyw łączymy z Placem Broni jako symbolem przynależności?
-5. Jaki jest stopień wyższy od „dobry”?
-6. Jaki jest stopień najwyższy od „zły”?
-7. „nie” z przymiotnikami w stopniu równym piszemy ……… (łącznie/rozdzielnie)
-8. „dwadzieścia trzy” – to liczebnik ……… (główny / porządkowy / zbiorowy / ułamkowy)
-9. „trzysta” piszemy ……… (łącznie / rozdzielnie)
-10. Jaki liczebnik określa kolejność? (główny / porządkowy / zbiorowy / ułamkowy)
+MASTER – Lekcja 6
+Określ aspekt i utwórz formę dokonaną: pisać, biegać, mówić.
 
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
+Przekształć na stronę bierną (czas przeszły): „Pan Kleks otworzył drzwi.”
 
-1. Ferenc Molnár
-2. Nemeczek
-3. Gereb
-4. mała ojczyzna
-5. lepszy
-6. najgorszy
-7. łącznie
-8. główny
-9. łącznie
-10. porządkowy
+Utwórz tryb przypuszczający i rozkazujący od „czytać” (2. os. lp.).
+
+Popraw i uzasadnij: „On nienawidzi Alojzego” vs „On nie lubi Alojzego”.
+
+<details> <summary><strong>? Odpowiedzi MASTER</strong></summary>
+pisać (niedokonany) → napisać; biegać → pobiec; mówić → powiedzieć.
+
+Drzwi zostały otwarte przez Pana Kleksa.
+
+czytałbyś; czytaj!
+
+nienawidzi – łącznie (wyjątek – czasownik nie istnieje bez „nie”); nie lubi – rozdzielnie (zwykły czasownik).
 
 </details>
+KONKURS – zadanie wieloetapowe
+Zadanie:
+Przeanalizuj zdanie: „Gdyby Adaś przeczytał książkę, opowiedziałby o niej koledze.”
+
+Określ tryb i aspekt obu czasowników.
+
+Przekształć na stronę bierną (w tym samym trybie).
+
+Zmień na tryb rozkazujący, zachowując sens (jeśli to możliwe).
+
+Rozwiązanie (MASTER):
+
+przeczytał – tryb przypuszczający (warunkowy), aspekt dokonany; opowiedziałby – tryb przypuszczający, aspekt dokonany.
+
+Gdyby książka została przeczytana przez Adasia, zostałaby opowiedziana koledze. – strona bierna w trybie przypuszczającym.
+
+Tryb rozkazujący: Przeczytaj książkę i opowiedz o niej koledze! – zmiana trybu wymaga przeformułowania.
+
+OLIMPIADA – problem otwarty
+Zadanie:
+Czy w języku polskim można utworzyć stronę bierną od każdego czasownika? Podaj przykłady czasowników, które nie mają strony biernej, i uzasadnij dlaczego.
+
+Przykładowa odpowiedź:
+Nie od każdego. Czasowniki nieprzechodnie (np. biegać, spać, istnieć) nie tworzą strony biernej, ponieważ nie mają dopełnienia, które mogłoby stać się podmiotem biernym. Strona bierna wymaga dopełnienia bliższego – bez niego nie można przekształcić zdania.
+
+KRYTERIA OCENY WYPOWIEDZI PISEMNEJ (EGZAMIN ÓSMOKLASISTY)
+Kryterium	Punkty (max)	Opis
+Treść	6	zgodność z tematem, rozwinięcie argumentów, trafność przykładów, odwołania do lektur
+Kompozycja	3	wstęp, rozwinięcie, zakończenie, spójność logiczna, akapity
+Język i styl	4	poprawność leksykalna, frazeologiczna, stylistyczna, zróżnicowanie
+Ortografia i interpunkcja	2	poprawność zapisu (w tym reguły 2026 dotyczące „nie”)
+Razem: 15 punktów.
+
+Aby uzyskać wysoki wynik:
+
+jasna teza,
+
+co najmniej 3 argumenty poparte przykładami z lektur,
+
+poprawny język i ortografia (szczególnie „nie”),
+
+logiczna struktura.
+
+GOTOWE ARGUMENTY + PARAFRAZY DO WYPRACOWAŃ
+Lektura	Motyw	Gotowy argument / parafraza
+Narnia	poświęcenie	Aslan oddaje życie za Edmunda, co ukazuje, że prawdziwa miłość wymaga ofiary.
+Narnia	przemiana	Edmund przechodzi od zdrady do lojalności – każdy może zasłużyć na drugą szansę.
+Hobbit	odwaga	Bilbo udowadnia, że odwaga to nie brak strachu, ale działanie mimo niego.
+Hobbit	chciwość	Thorin ulega smoczej chorobie – żądza bogactwa może zniszczyć nawet szlachetnego człowieka.
+Plac Broni	mała ojczyzna	Plac Broni jest dla chłopców symbolem przynależności – gotowi są oddać za niego życie.
+Plac Broni	przyjaźń	Chłopcy potrafią wybaczyć skruszonemu Gerebowi, co świadczy o sile prawdziwej przyjaźni.
+Kajko i Kokosz	współpraca	Kajko (spryt) i Kokosz (siła) uzupełniają się – razem są niepokonani.
+Kajko i Kokosz	manipulacja	Hegemon wykorzystuje marzenie Mirmiła – ślepe zaufanie może być zgubne.
+Akademia Kleksa	wyobraźnia	Akademia uczy, że wyobraźnia pozwala przekraczać granice rzeczywistości.
+Akademia Kleksa	przemiana	Adaś Niezgódka z niezdarnego chłopca staje się odważnym uczniem – przykład bohatera dynamicznego.
+PUŁAPKI EGZAMINACYJNE – TOP 10
+#	Błąd	Poprawka	Uwaga
+1	Nie czytający uczeń	Nieczytający uczeń	Imiesłów przymiotnikowy + „nie” – łącznie (2026).
+2	Przeczytawszy książkę poszedł spać.	Przeczytawszy książkę, poszedł spać.	Brak przecinka przed imiesłowem przysłówkowym.
+3	Idąc do szkoły, zaczął padać deszcz.	Idąc do szkoły, zauważyłem deszcz.	Zgodność podmiotu – deszcz nie idzie do szkoły.
+4	Edmund bronił jego rodzeństwa.	Edmund bronił swojego rodzeństwa.	„Swój” odnosi się do podmiotu.
+5	Bilbo zabił Smauga.	To Bard zabił Smauga.	Bilbo odkrył słaby punkt, Bard oddał śmiertelny cios.
+6	Czy Bilbo wrócił? – „czy” jako spójnik.	Czy Bilbo wrócił? – „czy” jako partykuła pytająca.	W pytaniach „czy” to partykuła, nie spójnik.
+7	Dobry – dobrzejszy – najlepszy.	Dobry – lepszy – najlepszy.	Stopniowanie nieregularne – trzeba znać formy.
+8	Widziałem dwa chłopców.	Widziałem dwóch chłopców.	Liczebnik w bierniku dla męskoosobowych – forma dwóch.
+9	On nie nawidzi.	On nienawidzi.	Czasownik bez „nie” nie istnieje – łącznie.
+10	Książka jest czytana. – zdanie w stronie czynnej.	Książka jest czytana. – zdanie w stronie biernej.	„Jest czytana” to strona bierna – mylone z czynną.
+SŁOWNIK TERMINÓW GRAMATYCZNYCH (A–Z)
+Termin	Definicja	Przykład
+Aspekt	cecha czasownika określająca, czy czynność jest zakończona (dokonany) czy trwa (niedokonany)	czytać (niedokonany) – przeczytać (dokonany)
+Bezokolicznik	nieosobowa forma czasownika, nieodmienna	czytać, pisać, iść
+Biernik	przypadek odpowiadający na pytanie kogo? co?	widzę Kajka, widzę miecz
+Celownik	przypadek odpowiadający na pytanie komu? czemu?	daję Kajkowi, daję grodowi
+Czasownik	odmienna część mowy oznaczająca czynność, stan lub zjawisko	czytać, spać, padać
+Dopełniacz	przypadek odpowiadający na pytanie kogo? czego?	nie ma Kajka, nie ma grodu
+Imiesłów	nieosobowa forma czasownika łącząca cechy czasownika z przymiotnikiem lub przysłówkiem	czytający, przeczytany, czytając, przeczytawszy
+Liczebnik	odmienna część mowy określająca liczbę lub kolejność	dwa, pierwszy, dwoje, pół
+Mianownik	przypadek odpowiadający na pytanie kto? co?	Kajko, gród
+Narzędnik	przypadek odpowiadający na pytanie z kim? z czym?	z Kajkiem, z grodem
+Nieodmienne części mowy	części mowy, które nie zmieniają formy (przysłówek, przyimek, spójnik, partykuła, wykrzyknik)	szybko, do, i, nie, ach
+Partykuła	nieodmienna część mowy modyfikująca znaczenie wypowiedzi	nie, czy, oby, nawet
+Przysłówek	nieodmienna część mowy określająca czasownik, przymiotnik lub inny przysłówek	szybko, tutaj, jutro
+Przyimek	nieodmienna część mowy łącząca się z rzeczownikiem, wskazująca relację	do, pod, z, na
+Przymiotnik	odmienna część mowy określająca cechę rzeczownika	odważny, mądry, duży
+Rzeczownik	odmienna część mowy nazywająca osoby, zwierzęta, przedmioty, zjawiska	Kajko, miecz, przyjaźń
+Spójnik	nieodmienna część mowy łącząca wyrazy lub zdania	i, ale, ponieważ
+Strona	cecha czasownika określająca, czy podmiot wykonuje czynność (czynna) czy jest poddawany czynności (bierna)	Adaś czyta (czynna) – Książka jest czytana (bierna)
+Tryb	cecha czasownika określająca stosunek do rzeczywistości (orzekający, przypuszczający, rozkazujący)	czytasz, czytałbyś, czytaj!
+Wykrzyknik	nieodmienna część mowy wyrażająca emocje	ach, hej, hurra
+Zaimek	część mowy zastępująca inne wyrazy	on, mój, ten, który
+Żywotność	cecha rzeczownika określająca, czy oznacza istotę żywą (żywotny) czy nie	Kajko (żywotny) – miecz (nieżywotny)
+KONIEC PAKIETU L001–L006 (wersja 2026 MASTER+)
+
+STATUS KOŃCOWY
+
+Zachowano całą treść źródłową L001–L006.
+
+Zaktualizowano wszystkie reguły ortografii 2026 (szczególnie „nie”).
+
+Dodano rozbudowane tabele we wszystkich lekcjach.
+
+Dodano pełne odpowiedzi z uzasadnieniami.
 
----
+Rozbudowano warstwę MASTER (pytania + reguły + wyjaśnienia + transformacje).
 
-## 2. „Chłopcy z Placu Broni” – podstawowe informacje
+Dodano przykładowe zadania KONKURS i OLIMPIADA.
 
-[UI: COMPARE]
+Dodano słownik terminów, pułapki TOP 10, fiszki z uzasadnieniami.
 
-| Element | Informacja |
-|---------|------------|
-| **Autor** | Ferenc Molnár (węgierski pisarz) |
-| **Tytuł** | „Chłopcy z Placu Broni” |
-| **Gatunek** | powieść dla młodzieży z elementami obyczajowymi i przygodowymi |
-| **Miejsce wydarzeń** | Budapeszt, głównie Plac Broni |
-| **Czas** | koniec XIX wieku (ok. 1889) |
-| **Status** | lektura obowiązkowa z klas IV–VI |
-
-**WAŻNE:** W latach 2024/2025–2025/2026 zadania w części I arkusza dotyczą **wyłącznie fragmentu** zamieszczonego w arkuszu. W wypracowaniu można się do lektury swobodnie odwoływać. W 2025 roku fragment tej lektury pojawił się w arkuszu E8 (tematyka przyjaźni, postawa Nemeczka).
-
----
-
-## 3. Najważniejsi bohaterowie
-
-[UI: COMPARE]
-
-| Bohater | Charakterystyka | Rola / Typ |
-|---------|-----------------|------------|
-| **Ernő Nemeczek** | Najmniejszy i najsłabszy fizycznie, szeregowiec. Niezwykle odważny i lojalny. Był niesłusznie oskarżany i poniżany. Umiera po bitwie (zapalenie płuc). | Symbol poświęcenia i odwagi. **Bohater statyczny** – nie zmienia się wewnętrznie, ale inspiruje innych. |
-| **Janosz Boka** | Przywódca chłopców z Placu Broni. Odpowiedzialny, sprawiedliwy i szanowany. | Symbol odpowiedzialnego przywódcy. |
-| **Deżo Gereb** | Zazdrosny o pozycję Boki. Zdradza grupę (przechodzi do Czerwonych Koszul), ale później żałuje i wraca. | **Bohater dynamiczny** – przemiana niepełna (zdrada → skrucha → powrót, ale nie zostaje przywódcą). |
-| **Feri Acz** | Przywódca Czerwonych Koszul – rywali chłopców z Placu Broni. | Antagonista, kieruje się ambicją i chęcią dominacji. |
-
-**WAŻNE:** Nemeczek jest **bohaterem statycznym** – nie przechodzi wewnętrznej przemiany. Gereb jest **bohaterem dynamicznym**, ale jego przemiana jest **niepełna** – nie staje się przywódcą, nie poświęca się jak Nemeczek.
-
----
-
-## 4. Najważniejsze wydarzenia
-
-[UI: COMPARE]
-
-| Wydarzenie | Opis | Motywy |
-|------------|------|--------|
-| **Wybór Boki na przywódcę** | Gereb przegrywa głosowanie, rodzi się w nim zazdrość i frustracja. | ambicja, zazdrość |
-| **Walka o Plac Broni** | Chłopcy bronią swojego placu przed Czerwonymi Koszulami. | mała ojczyzna, honor, lojalność |
-| **Zdrada Gereba** | Gereb przekazuje Czerwonym Koszulom informacje o planach obrony placu. | zdrada, zazdrość, ambicja |
-| **Poniżenie Nemeczka** | Nemeczek zostaje poddany upokarzającej karze – kąpiel w zimnej wodzie. | niesprawiedliwość, okrucieństwo, poniżenie |
-| **Śmierć Nemeczka** | Nemeczek, mimo choroby, bierze udział w obronie placu. Umiera w wyniku choroby. Po śmierci przywracane jest mu dobre imię. | poświęcenie, odwaga, niesprawiedliwość |
-| **Powrót Gereba** | Gereb żałuje zdrady, wraca do grupy i pomaga w obronie placu. | skrucha, próba naprawy błędu |
-
----
-
-## 5. Motywy do rozprawki
-
-[UI: DIAGRAM]
-
-```
-MAŁY / SŁABY FIZYCZNIE
-        ↓
-NIE OZNACZA
-        ↓
-SŁABY MORALNIE
-        ↓
-NEMECZEK
-        ↓
-ODWAGA + LOJALNOŚĆ + POŚWIĘCENIE
-```
-
-[UI: COMPARE]
-
-| Motyw | Opis |
-|-------|------|
-| **Mała ojczyzna** | Plac Broni to dla chłopców symbol przynależności, wspólnoty i wartości. |
-| **Przyjaźń i lojalność** | Chłopcy z Placu Broni łączą silne więzi przyjaźni. Potrafią wybaczyć skruszonemu Gerebowi. |
-| **Zdrada i skrucha** | Gereb zdradza, ale później żałuje i próbuje naprawić błąd. |
-| **Poświęcenie** | Nemeczek poświęca zdrowie, a ostatecznie życie, dla Placu Broni. |
-| **Odwaga** | Nemeczek jest najmniejszy i najsłabszy, ale wykazuje się największą odwagą. |
-| **Niesprawiedliwość** | Nemeczek zostaje niesłusznie oskarżony o zdradę i poddany upokorzeniu. |
-
----
-
-## 6. Gotowe zdania do rozprawki
-
-[UI: COMPARE]
-
-| Motyw | Przykład |
-|-------|----------|
-| Mała ojczyzna | *Plac Broni był dla chłopców czymś więcej niż miejscem zabaw – był symbolem przynależności i wspólnoty, za którą byli gotowi oddać życie.* |
-| Przyjaźń | *Chłopcy z Placu Broni pokazali, że prawdziwa przyjaźń opiera się na lojalności, odpowiedzialności i gotowości do przebaczenia.* |
-| Zdrada i skrucha | *Gereb zdradził przyjaciół, ale jego późniejsza skrucha i powrót do grupy pokazują, że człowiek może naprawić swoje błędy.* |
-| Poświęcenie | *Nemeczek oddał zdrowie, a ostatecznie życie za Plac Broni – jego poświęcenie pokazuje, że prawdziwe bohaterstwo nie wymaga siły fizycznej.* |
-| Niesprawiedliwość | *Niesłuszne oskarżenie Nemeczka o zdradę pokazuje, jak łatwo jest skrzywdzić niewinnego i jak trudno przywrócić mu dobre imię.* |
-
----
-
-## 7. Przymiotnik – definicja
-
-[UI: COMPARE]
-
-**Przymiotnik** to odmienna część mowy, która określa cechy rzeczowników. Odpowiada na pytania: **jaki? jaka? jakie? czyj?**
-
-**Przykłady:** *odważny chłopiec, lojalna przyjaźń, trudne wybory*
-
-**Przymiotniki dzierżawcze** – określają przynależność do osoby lub zwierzęcia:
-- *ojcowy, matczyny, siostrzyny, bratni, psi, koci*
-- *Ojcowy płaszcz wisiał na wieszaku.*
-
----
-
-## 8. Stopniowanie przymiotników
-
-### 8.1. Stopniowanie regularne
-
-[UI: COMPARE]
-
-| Stopień równy | Stopień wyższy | Stopień najwyższy |
-|---------------|----------------|-------------------|
-| *mądry* | *mądrzejszy* | *najmądrzejszy* |
-| *odważny* | *odważniejszy* | *najodważniejszy* |
-| *silny* | *silniejszy* | *najsilniejszy* |
-| *szybki* | *szybszy* | *najszybszy* |
-
-### 8.2. Stopniowanie nieregularne – ZAPAMIĘTAJ!
-
-[UI: COMPARE]
-
-| Stopień równy | Stopień wyższy | Stopień najwyższy |
-|---------------|----------------|-------------------|
-| **dobry** | **lepszy** | **najlepszy** |
-| **zły** | **gorszy** | **najgorszy** |
-| **duży** | **większy** | **największy** |
-| **mały** | **mniejszy** | **najmniejszy** |
-| **wielki** | **większy** | **największy** |
-| **lekki** | **lżejszy** | **najlżejszy** |
-| **ciężki** | **cięższy** | **najcięższy** |
-
-### 8.3. Przymiotniki niestopniowalne
-
-Niektóre przymiotniki nie mogą być stopniowane:
-- materiał: *drewniany, szklany, metalowy*
-- stan: *martwy, żywy*
-- kształt: *okrągły, kwadratowy*
-- inne: *jedyny, wieczny, nieśmiertelny*
-
----
-
-## 9. Zasada pisowni „nie” z przymiotnikami
-
-[UI: COMPARE]
-
-**Zasada ogólna:** *„nie” z przymiotnikami w stopniu równym piszemy **ŁĄCZNIE**.*
-
-**Przykłady:** *niemądry, nieduży, nieodważny, niełatwy, nieznany*
-
-**Wyjątki – rozdzielnie:**
-- gdy w zdaniu występuje przeczenie czasownika: *Nie był mądry, ale sprytny.*
-- gdy używamy konstrukcji z *ani*: *Ani nie mądry, ani nie sprytny.*
-- gdy przymiotnik jest orzecznikiem w zdaniu z przeczeniem: *To nie jest trudne.*
-
-**WAŻNE – zmiana od 1 stycznia 2026 r.:**
-CKE oficjalnie poinformowało, że w latach 2026–2030 na egzaminach (w tym E8) akceptowane będą **obie pisownie** w stopniu wyższym i najwyższym: *niemilszy* (łącznie) lub *nie milszy* (rozdzielnie). Na egzaminie obie formy będą uznane za poprawne.
-
----
-
-## 10. Liczebnik – definicja i rodzaje
-
-[UI: COMPARE]
-
-**Liczebnik** to odmienna część mowy, która określa **liczbę** lub **kolejność** osób, zwierząt, przedmiotów lub zjawisk. Odpowiada na pytania: **ile? który z kolei?**
-
-### Rodzaje liczebników
-
-[UI: COMPARE]
-
-| Rodzaj | Przykłady | Pytanie |
-|--------|-----------|---------|
-| **Główne** | *jeden, dwa, trzy, sto* | *ile?* |
-| **Porządkowe** | *pierwszy, drugi, trzeci* | *który z kolei?* |
-| **Zbiorowe** | *dwoje, troje, czworo* | *ile (jako grupa)?* |
-| **Ułamkowe** | *pół, ćwierć, jedna trzecia* | *jaka część?* |
-
-**Uwaga:** Liczebniki główne z rzeczownikami męskoosobowymi mają specjalne formy:
-- *dwóch chłopców, trzech chłopców, pięciu chłopców* (nie: *dwa chłopcy*)
-
----
-
-## 11. Zapis liczebników – ZASADY E8
-
-[UI: COMPARE]
-
-**Zasada:** Na egzaminie ósmoklasisty liczebniki (w zadaniach gramatycznych i stylistycznych) należy zapisywać **SŁOWNIE**.
-
-**Wyjątki – kiedy można użyć cyfr:**
-- daty: *23 sierpnia 2026*
-- godziny: *godzina 15:30*
-- ceny: *kosztowało 45 zł*
-- liczby w tabelach i wykresach
-
-**Zasady pisowni liczebników złożonych:**
-- Liczebniki złożone (np. 23): **rozdzielnie** – *dwadzieścia trzy*
-- Liczebniki z przyrostkiem *-ście* (np. 300): **łącznie** – *trzysta*
-- Liczebniki porządkowe złożone: **rozdzielnie** – *dwudziesty trzeci*
-
----
-
-## 12. Odmiana liczebników – formy przypadkowe
-
-[UI: COMPARE]
-
-| Przypadek | Liczebnik główny (2) – forma męskoosobowa | Liczebnik główny (5) – forma męskoosobowa |
-|-----------|-------------------------------------------|-------------------------------------------|
-| **Mianownik** | *dwóch / dwaj* | *pięciu* |
-| **Dopełniacz** | *dwóch* | *pięciu* |
-| **Celownik** | *dwóm* | *pięciu* |
-| **Biernik** | *dwóch* | *pięciu* |
-| **Narzędnik** | *dwoma* | *pięcioma* |
-| **Miejscownik** | *dwóch* | *pięciu* |
-
-**PUŁAPKA:** Na egzaminie często sprawdzana jest poprawna forma liczebników w przypadkach – szczególnie w formach męskoosobowych!
-
----
-
-## 13. Ćwiczenia
-
-[UI: CHOICE] [UI: CLOZE] [UI: ERROR] [UI: TRANSLATE]
-
-### Ćwiczenie 1 – Stopniowanie przymiotników
-
-Podaj stopień wyższy i najwyższy:
-
-1. *odważny* → __________ → __________
-2. *silny* → __________ → __________
-3. *dobry* → __________ → __________
-4. *mały* → __________ → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. odważniejszy → najodważniejszy
-2. silniejszy → najsilniejszy
-3. lepszy → najlepszy
-4. mniejszy → najmniejszy
-
-</details>
-
----
-
-### Ćwiczenie 2 – „nie” z przymiotnikami
-
-Wpisz poprawną formę:
-
-1. To było _____ (nie + łatwe) zadanie.
-2. Nemeczek _____ (nie + był + odważny), ale nie uciekł.
-3. To _____ (nie + mądry) wybór.
-4. Gereb _____ (nie + był + lojalny), ale później żałował.
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. nietrudne
-2. nie był odważny
-3. niemądry
-4. nie był lojalny
-
-</details>
-
----
-
-### Ćwiczenie 3 – Rozpoznaj rodzaj liczebnika
-
-1. **Trzech** chłopców stanęło do walki. → __________
-2. **Pierwszy** dzień obrony był najtrudniejszy. → __________
-3. **Troje** dzieci bawiło się na placu. → __________
-4. Zjadł **pół** jabłka. → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. główny
-2. porządkowy
-3. zbiorowy
-4. ułamkowy
-
-</details>
-
----
-
-### Ćwiczenie 4 – Poprawna forma liczebnika
-
-1. (dwóch / dwa – Biernik) Widziałem _____ chłopców na placu.
-2. (pięć / pięciu – Celownik) Pomogłem _____ chłopcom.
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. dwóch
-2. pięciu
-
-</details>
-
----
-
-### Ćwiczenie 5 – Zapis liczebników słownie
-
-Zapisz liczebniki słownie:
-
-1. 23 chłopców → __________
-2. 300 kroków → __________
-3. 21 dzień → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. dwudziestu trzech chłopców
-2. trzysta kroków
-3. dwudziesty pierwszy dzień
-
-</details>
-
----
-
-## 14. Ważne! – 7 kluczowych zasad
-
-[UI: COMPARE]
-
-1. **Nemeczek** – bohater statyczny (nie zmienia się, ale jest wzorem).
-2. **Gereb** – bohater dynamiczny (przemiana niepełna – skrucha, ale nie bohaterstwo).
-3. **Stopniowanie nieregularne:** *dobry – lepszy – najlepszy*, *zły – gorszy – najgorszy*.
-4. **„nie” z przymiotnikami w stopniu równym** – łącznie. Od 2026 w stopniu wyższym/najwyższym – obie pisownie akceptowane.
-5. **Liczebniki główne** – określają liczbę; **porządkowe** – kolejność.
-6. **Liczebniki zapisujemy słownie** (wyjątki: daty, godziny, ceny, tabele).
-7. **Formy męskoosobowe:** *dwóch chłopców* (nie: *dwa chłopcy*).
-
----
-
-## 15. Fiszki
-
-[UI: FISZKI]
-
-| Przód | Tył |
-|-------|-----|
-| Kto jest autorem „Chłopców z Placu Broni”? | Ferenc Molnár |
-| Kto jest bohaterem statycznym w „Placu Broni”? | Nemeczek |
-| Kto jest bohaterem dynamicznym w „Placu Broni”? | Gereb |
-| Jaki motyw łączymy z Placem Broni? | mała ojczyzna |
-| dobry – stopień wyższy | lepszy |
-| zły – stopień najwyższy | najgorszy |
-| „nie” z przymiotnikami w stopniu równym – piszemy… | łącznie |
-| liczebnik określający liczbę – to… | główny |
-| liczebnik określający kolejność – to… | porządkowy |
-| liczebniki na egzaminie zapisujemy… | słownie |
-| „troje” – to liczebnik… | zbiorowy |
-| „pół” – to liczebnik… | ułamkowy |
-| widziałem _____ chłopców (dwa / dwóch) | dwóch |
-| Jaki motyw łączymy z Nemeczkiem? | poświęcenie |
-
----
-
-## 16. Test końcowy – MISJA
-
-[UI: EXAM]
-
-1. Kto jest autorem „Chłopców z Placu Broni”?
-2. Który bohater jest symbolem odwagi i lojalności, ale NIE przechodzi przemiany?
-3. Który bohater przechodzi przemianę (zdrada → skrucha → powrót)?
-4. Jaki motyw łączymy z Placem Broni jako symbolem przynależności?
-5. Jaki jest stopień wyższy od „dobry”?
-6. Jaki jest stopień najwyższy od „zły”?
-7. „nie” z przymiotnikami w stopniu równym piszemy ……… (łącznie/rozdzielnie)
-8. „dwadzieścia trzy” – to liczebnik ……… (główny / porządkowy / zbiorowy / ułamkowy)
-9. „trzysta” piszemy ……… (łącznie / rozdzielnie)
-10. Jaki liczebnik określa kolejność? (główny / porządkowy / zbiorowy / ułamkowy)
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. Ferenc Molnár
-2. Nemeczek
-3. Gereb
-4. mała ojczyzna
-5. lepszy
-6. najgorszy
-7. łącznie
-8. główny
-9. łącznie
-10. porządkowy
-
-</details>
-
----
-
-**Koniec Lekcji 4 (wersja poprawiona 2.0)**
-
-
-# LEKCJA 5 – „KAJKO I KOKOSZ” I RZECZOWNIK (WERSJA POPRAWIONA 2.0)
-
-[UI: PROGRESS]
-
----
-
-## 0. Cel lekcji
-
-Po tej lekcji:
-- poznasz najważniejsze informacje o lekturze **„Kajko i Kokosz. Szkoła Latania”**,
-- scharakteryzujesz bohaterów (Kajko, Kokosz, Mirmił, Hegemon, Łamignat, Lubawa, Jaga),
-- opiszesz sekwencję zdarzeń w tomie,
-- rozpoznasz elementy komiksu (kadry, dymki, onomatopeje),
-- rozróżnisz **rzeczowniki** (odmiana przez przypadki, żywotność, „nie” z rzeczownikami, rzeczowniki odczasownikowe, liczba podwójna),
-- zastosujesz zasady pisowni „nie” z rzeczownikami.
-
----
-
-## 1. Zanim zaczniesz – szybki test
-
-[UI: CLOZE] [UI: CHOICE] [UI: ERROR]
-
-Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik.
-
-1. Kto jest autorem „Kajka i Kokosza”?
-2. Czy „Kajko i Kokosz” to jedyny komiks uznawany przez CKE? (tak/nie)
-3. Kto jest sprytny, a kto silny w duecie Kajko i Kokosz? (wpisz imię sprytnego)
-4. Kto wykorzystuje marzenie Mirmiła o lataniu?
-5. Jaka część mowy nazywa osoby, zwierzęta, przedmioty?
-6. Ile jest przypadków w języku polskim?
-7. „Kajko” – rzeczownik żywotny czy nieżywotny?
-8. „miecz” – rzeczownik żywotny czy nieżywotny?
-9. „nie” z rzeczownikami piszemy ……… (łącznie/rozdzielnie)
-10. Jaki element komiksu zawiera wypowiedzi bohaterów?
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. Janusz Christa
-2. tak
-3. Kajko
-4. Hegemon
-5. rzeczownik
-6. 7
-7. żywotny
-8. nieżywotny
-9. łącznie
-10. dymek
-
-</details>
-
----
-
-## 2. „Kajko i Kokosz” – podstawowe informacje
-
-[UI: COMPARE]
-
-| Element | Informacja |
-|---------|------------|
-| **Autor** | Janusz Christa (1934–2008) – polski rysownik i scenarzysta |
-| **Seria** | „Kajko i Kokosz” – ukazywała się od **1971 roku** w magazynie **„Świat Młodych”** |
-| **Tom** | „Kajko i Kokosz. Szkoła Latania” (wydany w **1975 roku**) |
-| **Gatunek** | komiks – jedyny komiks na liście obowiązkowej CKE |
-| **Styl** | charakterystyczne czarno-białe rysunki, wyraźne kontury, dynamiczna kreska |
-| **Konwencja** | humorystyczna / komediowa, ale porusza poważniejsze tematy |
-| **Miejsce** | średniowieczna osada – gród Mirmiłowa |
-| **Status** | lektura obowiązkowa z klas IV–VI |
-
-**WAŻNE:** „Kajko i Kokosz” to **JEDYNY komiks**, który CKE traktuje jak tekst literacki. Odwołanie do innego komiksu lub mangi = brak drugiego utworu = duża strata punktów!
-
----
-
-## 3. Najważniejsi bohaterowie
-
-[UI: COMPARE]
-
-| Bohater | Charakterystyka | Rola |
-|---------|-----------------|------|
-| **Kajko** | Sprytny, inteligentny, zwinny. „Mózg” operacji – wymyśla plany i podstępy. | Bohater pozytywny, reprezentuje spryt i inteligencję. |
-| **Kokosz** | Silny, odważny, czasem nierozgarnięty. Jego siła łączy się ze sprytem Kajka. | Bohater pozytywny, reprezentuje siłę fizyczną. |
-| **Mirmił** | Władca grodu, marzyciel. Pragnie latać – Hegemon wykorzystuje to przeciwko niemu. | Ofiara manipulacji, symbol naiwności. |
-| **Lubawa** | Żona Mirmiła. Rozsądna, praktyczna, chroni męża przed manipulacją. | Głos rozsądku. |
-| **Jaga** | Wiedźma, ciotka Kokosza. Postać komiczna, ale niebezpieczna – używa magii. | Postać komiczna / antagonistka. |
-| **Łamignat** | Zbój, mąż Jagi. Silny, ale niezbyt bystry – często daje się oszukać Kajkowi. | Postać komiczna, często „dobroduszny” mimo roli zbója. |
-| **Hegemon** (Krwawy Hegemon) | Czarodziej, główny antagonista w „Szkole Latania”, przywódca zbójcerzy. Sprytny manipulator – wykorzystuje marzenia Mirmiła, by przejąć władzę. | Główny antagonista, symbol zła i manipulacji. |
-
-**WAŻNE:** Kajko i Kokosz to **przyjaciele i towarzysze broni** – uzupełniają się nawzajem: Kajko to spryt i inteligencja, Kokosz to siła fizyczna.
-
----
-
-## 4. Najważniejsze wydarzenia – sekwencja zdarzeń
-
-[UI: COMPARE]
-
-| Wydarzenie | Opis | Motywy |
-|------------|------|--------|
-| **Marzenie Mirmiła** | Mirmił od lat marzy o lataniu. Do grodu przybywa Hegemon, który podszywa się pod przyjaciela i obiecuje spełnienie marzenia. | marzenia, manipulacja, zaufanie |
-| **Podstęp Hegemona** | Hegemon manipuluje Mirmiłem, przekonując go, że musi opuścić gród, by nauczyć się latać. W rzeczywistości chce **wywabić go z grodu, by przejąć władzę**. | manipulacja, zdrada, ambicja |
-| **Konfrontacja** | Mirmił, ślepo ufając Hegemonowi, opuszcza gród. Hegemon zdradza swoje prawdziwe zamiary. Kajko i Kokosz odkrywają podstęp. | konflikt, walka dobra ze złem |
-| **Finał – zwycięstwo dobra** | Dzięki współpracy Kajka i Kokosza Hegemon zostaje pokonany. Mirmił odzyskuje rozsądek i nie daje się dalej manipulować. | współpraca, zwycięstwo dobra, nauka |
-
-**WAŻNE:** Hegemon **nie uczy Mirmiła latać** – on tylko **wykorzystuje jego marzenie**, by wywabić go z grodu. **Lubawa jest przeciwna** tej wyprawie.
-
----
-
-## 5. Forma komiksu – elementy
-
-[UI: DIAGRAM]
-
-```
-OBRAZ
- +
-TEKST
- ↓
-ZNACZENIE
-```
-
-[UI: COMPARE]
-
-| Element | Opis | Przykład z lektury |
-|---------|------|-------------------|
-| **Kadry (panelle)** | Ramki z obrazkami. Różne rozmiary – duże spowalniają akcję, małe przyspieszają. | Widoczne w każdym fragmencie komiksu. |
-| **Dymki tekstowe** | Wypowiedzi bohaterów (mowa). Mogą zawierać też narrację. | Dialogi Kajka i Kokosza. |
-| **Dymki myślowe (chmurki)** | Myśli bohaterów – kształt chmurki, brak ogonka. | Myśli Mirmiła o lataniu. |
-| **Onomatopeje** | Wyrazy dźwiękonaśladowcze. | *bum, trach, łup, brzdęk, huk, chrup, trzask* |
-| **Narracja** | Tekst poza dymkami, komentujący akcję. | Opisy sytuacji, wprowadzenia do scen. |
-
----
-
-## 6. Motywy do rozprawki
-
-[UI: COMPARE]
-
-| Motyw | Opis | Przykład do rozprawki |
-|-------|------|----------------------|
-| **Przyjaźń i współpraca** | Kajko i Kokosz uzupełniają się nawzajem (spryt + siła). Razem są niepokonani. | *Kajko i Kokosz udowadniają, że prawdziwa przyjaźń opiera się na wzajemnym uzupełnianiu się.* |
-| **Marzenia i ambicja** | Mirmił marzy o lataniu, ale Hegemon wykorzystuje to marzenie przeciwko niemu. | *Historia Mirmiła pokazuje, że marzenia są potrzebne, ale bez rozsądku ktoś może je wykorzystać przeciwko nam.* |
-| **Walka dobra ze złem** | Kajko i Kokosz reprezentują dobro, Hegemon – zło. Dobro zwycięża dzięki współpracy i inteligencji. | *W komiksie dobro zwycięża zło dzięki współpracy głównych bohaterów i ich inteligencji.* |
-| **Manipulacja i zaufanie** | Hegemon wykorzystuje zaufanie Mirmiła. | *Historia Hegemona pokazuje, że zaufanie może być nadużywane.* |
-| **Humor i komizm** | Komiks ma lekki, zabawny ton – można go wykorzystać w tematach o humorze w literaturze. | *„Kajko i Kokosz” łączy humor z poważnymi tematami, takimi jak przyjaźń i odpowiedzialność.* |
-
----
-
-## 7. Rzeczownik – definicja
-
-[UI: COMPARE]
-
-**Rzeczownik** to odmienna część mowy, która nazywa osoby, zwierzęta, przedmioty, zjawiska, uczucia i pojęcia. Odpowiada na pytania: **kto? co?**
-
-**Przykłady:**
-- *Kajko* – imię własne (osoba)
-- *miecz* – przedmiot
-- *przyjaźń* – uczucie
-- *gród* – miejsce
-- *latanie* – rzeczownik odczasownikowy (od: latać)
-
----
-
-## 8. Odmiana rzeczownika przez przypadki
-
-[UI: COMPARE]
-
-| Przypadek | Pytanie | Przykład („gród”) | Przykład w zdaniu |
-|-----------|---------|-------------------|-------------------|
-| **Mianownik** | kto? co? | *gród* | *Gród jest duży.* |
-| **Dopełniacz** | kogo? czego? | *grodu* | *Nie ma grodu.* |
-| **Celownik** | komu? czemu? | *grodowi* | *Pomagam grodowi.* |
-| **Biernik** | kogo? co? | *gród* | *Widzę gród.* |
-| **Narzędnik** | z kim? z czym? | *grodem* | *Stoję przed grodem.* |
-| **Miejscownik** | o kim? o czym? | *grodzie* | *Mówię o grodzie.* |
-| **Wołacz** | o! (zwrot) | *grodzie* | *Grodzie, otwórz się!* |
-
-**Zasady przyimków:**
-- *do, bez, od, z, u* → **Dopełniacz**: *do domu, bez strachu*
-- *ku, dzięki, przeciwko* → **Celownik**: *ku grodowi*
-- *na, w, o, po, przy* → **Miejscownik**: *na grodzie, w grodzie*
-- *przed, za, nad, pod, między* → **Narzędnik**: *przed grodem*
-
----
-
-## 9. Rzeczowniki żywotne i nieżywotne
-
-[UI: COMPARE]
-
-Rzeczowniki dzielimy na **żywotne** (istoty żywe) i **nieżywotne** (przedmioty, zjawiska, pojęcia).
-
-| Rodzaj | Przykład (Mianownik) | Przykład (Biernik) |
-|--------|----------------------|-------------------|
-| **Męski żywotny** | *Kajko* | *widzę Kajka* |
-| **Męski żywotny** | *pies* | *widzę psa* |
-| **Męski nieżywotny** | *miecz* | *widzę miecz* |
-| **Męski nieżywotny** | *gród* | *widzę gród* |
-| **Żeński żywotny** | *matka* | *widzę matkę* |
-| **Żeński żywotny** | *Lubawa* | *widzę Lubawę* |
-
-**WAŻNE:** Rzeczowniki żeńskie żywotne (np. *matka, kobieta, siostra*) mają w bierniku formę **-ę**, która różni się od dopełniacza (dopełniacz: *matki*, biernik: *matkę*). Reguła „biernik = dopełniacz” dotyczy **głównie rzeczowników męskich żywotnych**.
-
-**Przykłady z lektury:**
-- **Żywotne (męskie):** Kajko, Kokosz, Mirmił, Hegemon, Łamignat
-- **Żywotne (żeńskie):** Lubawa, Jaga
-- **Nieżywotne:** miecz, gród, komiks, dymek, kadr, onomatopeja, marzenie
-
----
-
-## 10. Rzeczowniki odczasownikowe (PUŁAPKA E8!)
-
-[UI: COMPARE]
-
-Rzeczowniki odczasownikowe powstają od czasowników i oznaczają czynności lub stany. Mają formę bezokolicznika lub kończą się na **-nie** / **-cie**:
-
-- *latanie* (od: latać)
-- *myślenie* (od: myśleć)
-- *czytanie* (od: czytać)
-
-**WAŻNE:** *Latanie* to **rzeczownik**, a nie czasownik!
-
-**Przykład:** *Mirmił marzył o **lataniu**.* – *lataniu* to rzeczownik (odpowiada na pytanie: o czym?).
-
----
-
-## 11. Liczba podwójna
-
-[UI: COMPARE]
-
-W języku polskim istnieją formy liczby podwójnej, które wskazują na parę:
-
-| Liczba pojedyncza | Liczba podwójna | Liczba mnoga |
-|-------------------|-----------------|--------------|
-| *oko* | *oczy* | *oka* (rzadko) |
-| *ucho* | *uszy* | *ucha* (rzadko) |
-| *ręka* | *ręce* | *ręki* (rzadko) |
-| *noga* | *nogi* | – |
-
-**Przykłady:** *Dwoje oczu, obie ręce, dwoje uszu.*
-
----
-
-## 12. Zasada pisowni „nie” z rzeczownikami
-
-[UI: COMPARE]
-
-**Zasada ogólna:** *„nie” z rzeczownikami piszemy **ŁĄCZNIE**.*
-
-**Przykłady:** *niepogoda, nieprzyjaciel, nieporządek, niezgoda, nieład, niepokój, nielatanie*
-
-**Wyjątki – rozdzielnie:**
-- gdy w zdaniu występuje **przeczenie rzeczownika**: *To nie pogoda, tylko burza.*
-- gdy używamy konstrukcji z **„ani”**: *Ani nie pogoda, ani nie słońce.*
-- gdy rzeczownik jest **zaprzeczony w zdaniu**: *To nie przyjaciel, ale wróg.*
-- z **nazwami własnymi**: *nie-Polak*
-
-| Łącznie (określenie zjawiska) | Rozdzielnie (przeczenie w zdaniu) |
-|-------------------------------|----------------------------------|
-| *Niepogoda trwała cały dzień.* | *To nie pogoda, ale burza.* |
-| *Nieprzyjaciel zaatakował gród.* | *To nie przyjaciel, tylko wróg.* |
-| *W grodzie panował nieporządek.* | *To nie porządek, tylko chaos.* |
-
----
-
-## 13. Ćwiczenia
-
-[UI: CHOICE] [UI: CLOZE] [UI: ERROR] [UI: TRANSLATE]
-
-### Ćwiczenie 1 – Rozpoznaj rzeczownik
-
-Określ, czy podkreślony wyraz jest rzeczownikiem (tak/nie):
-
-1. **Kajko** jest sprytny. → __________
-2. Kokosz jest **silny**. → __________
-3. Mirmił marzył o **lataniu**. → __________
-4. Hegemon **manipulował** Mirmiłem. → __________
-5. **Myślenie** jest ważne w walce. → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. tak
-2. nie
-3. tak
-4. nie
-5. tak
-
-</details>
-
----
-
-### Ćwiczenie 2 – „nie” z rzeczownikami
-
-Wpisz poprawną formę:
-
-1. Na dworze panowała _____ (nie + pogoda).
-2. To _____ (nie + przyjaciel) mi pomógł.
-3. W grodzie panował _____ (nie + porządek).
-4. To _____ (nie + pogoda), tylko burza.
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. niepogoda
-2. nie przyjaciel
-3. nieporządek
-4. nie pogoda
-
-</details>
-
----
-
-### Ćwiczenie 3 – Żywotność rzeczowników
-
-Określ, czy rzeczownik jest żywotny czy nieżywotny. Dla żywotnych podaj formę biernika:
-
-1. **Kajko** → __________ (Biernik: __________)
-2. **miecz** → __________ (Biernik: __________)
-3. **Lubawa** → __________ (Biernik: __________)
-4. **gród** → __________ (Biernik: __________)
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. żywotny → Kajka
-2. nieżywotny → miecz
-3. żywotny → Lubawę
-4. nieżywotny → gród
-
-</details>
-
----
-
-### Ćwiczenie 4 – Odmiana rzeczownika przez przypadki
-
-Podaj rzeczownik „gród” w podanych przypadkach:
-
-1. Mianownik (kto? co?) → __________
-2. Dopełniacz (kogo? czego?) → __________
-3. Celownik (komu? czemu?) → __________
-4. Biernik (kogo? co?) → __________
-5. Narzędnik (z kim? z czym?) → __________
-6. Miejscownik (o kim? o czym?) → __________
-7. Wołacz (o!) → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. gród
-2. grodu
-3. grodowi
-4. gród
-5. grodem
-6. grodzie
-7. grodzie
-
-</details>
-
----
-
-### Ćwiczenie 5 – Analiza akapitu z komiksu
-
-Przeczytaj fragment i wykonaj polecenia:
-
-*„Kajko i Kokosz stali przed bramą grodu. Za nimi rozciągał się las. Nagle usłyszeli hałas. To Hegemon przybył, by spełnić marzenie Mirmiła. W ręku trzymał zaczarowaną księgę.”*
-
-1. Wypisz wszystkie rzeczowniki z fragmentu: __________
-2. Ile jest rzeczowników żywotnych? __________
-3. Podaj biernik od „Kajko” z tego fragmentu: __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. Kajko, Kokosz, brama, gród, las, hałas, Hegemon, marzenie, Mirmił, ręka, księga
-2. 4 (Kajko, Kokosz, Hegemon, Mirmił)
-3. Kajka
-
-</details>
-
----
-
-## 14. Ważne! – 7 kluczowych zasad
-
-[UI: COMPARE]
-
-1. **„Kajko i Kokosz”** – jedyny komiks uznawany przez CKE.
-2. **Kajko** – sprytny; **Kokosz** – silny. Uzupełniają się.
-3. **Hegemon** – manipulator, wykorzystuje marzenie Mirmiła.
-4. **Rzeczownik** – odpowiada na pytania: *kto? co?*
-5. **7 przypadków** – Mianownik, Dopełniacz, Celownik, Biernik, Narzędnik, Miejscownik, Wołacz.
-6. **„nie” z rzeczownikami** – łącznie (chyba że przeczymy w zdaniu).
-7. **Rzeczowniki odczasownikowe** – np. *latanie* – to rzeczownik, nie czasownik!
-
----
-
-## 15. Fiszki
-
-[UI: FISZKI]
-
-| Przód | Tył |
-|-------|-----|
-| Kto jest autorem „Kajka i Kokosza”? | Janusz Christa |
-| Czy „Kajko i Kokosz” to jedyny komiks uznawany przez CKE? | tak |
-| Kto jest sprytny w duecie Kajko i Kokosz? | Kajko |
-| Kto jest silny w duecie Kajko i Kokosz? | Kokosz |
-| Kto wykorzystuje marzenie Mirmiła? | Hegemon |
-| Jaka część mowy nazywa osoby, zwierzęta, przedmioty? | rzeczownik |
-| Ile jest przypadków w języku polskim? | 7 |
-| „Kajko” – rzeczownik żywotny czy nieżywotny? | żywotny |
-| „miecz” – rzeczownik żywotny czy nieżywotny? | nieżywotny |
-| „nie” z rzeczownikami piszemy… | łącznie |
-| Jaki element komiksu zawiera wypowiedzi bohaterów? | dymek |
-| Jaki element komiksu to wyrazy dźwiękonaśladowcze? | onomatopeja |
-| „latanie” – to jaka część mowy? | rzeczownik (odczasownikowy) |
-| Jaki motyw łączymy z Kajkiem i Kokoszem? | przyjaźń |
-
----
-
-## 16. Test końcowy – MISJA
-
-[UI: EXAM]
-
-1. Kto jest autorem „Kajka i Kokosza”?
-2. Czy „Kajko i Kokosz” to jedyny komiks uznawany przez CKE? (tak/nie)
-3. Kto jest sprytny, a kto silny w duecie Kajko i Kokosz? (wpisz imię sprytnego)
-4. Kto wykorzystuje marzenie Mirmiła o lataniu?
-5. Jaka część mowy nazywa osoby, zwierzęta, przedmioty?
-6. Ile jest przypadków w języku polskim?
-7. „Kajko” – rzeczownik żywotny czy nieżywotny?
-8. „miecz” – rzeczownik żywotny czy nieżywotny?
-9. „nie” z rzeczownikami piszemy ……… (łącznie/rozdzielnie)
-10. Jaki element komiksu zawiera wypowiedzi bohaterów?
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. Janusz Christa
-2. tak
-3. Kajko
-4. Hegemon
-5. rzeczownik
-6. 7
-7. żywotny
-8. nieżywotny
-9. łącznie
-10. dymek
-
-</details>
-
----
-
-**Koniec Lekcji 5 (wersja poprawiona 2.0)**
-
-
-# LEKCJA 6 – „AKADEMIA PANA KLEKSA” I CZASOWNIK (WERSJA POPRAWIONA 2.0)
-
-[UI: PROGRESS]
-
----
-
-## 0. Cel lekcji
-
-Po tej lekcji:
-- poznasz najważniejsze informacje o lekturze **„Akademia Pana Kleksa”**,
-- scharakteryzujesz bohaterów (Adaś, Pan Kleks, szpak Mateusz, Filip Golarz, Alojzy),
-- wyjaśnisz rolę narratora (Adaś, 1. osoba),
-- opiszesz przemianę Adasia (bohater dynamiczny),
-- rozróżnisz **formy czasownika** (osobowe i nieosobowe),
-- rozróżnisz **czasy** (teraźniejszy, przeszły, przyszły), **tryby** (orzekający, przypuszczający, rozkazujący),
-- rozróżnisz **aspekt** (dokonany i niedokonany) oraz **stronę** (czynną i bierną),
-- zastosujesz zasadę pisowni „nie” z czasownikami (w tym wyjątki).
-
----
-
-## 1. Zanim zaczniesz – szybki test
-
-[UI: CLOZE] [UI: CHOICE] [UI: ERROR]
-
-Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik.
-
-1. Kto jest autorem „Akademii Pana Kleksa”?
-2. Kto opowiada historię w „Akademii Pana Kleksa”? (imię, 1. osoba)
-3. Kim jest Pan Kleks? (czarodziej / dyrektor / oba)
-4. Jaki motyw łączymy z Akademią jako miejscem marzeń?
-5. „czytać” – jaki to aspekt? (niedokonany / dokonany)
-6. „przeczytać” – jaki to aspekt? (niedokonany / dokonany)
-7. „nie” z czasownikami piszemy ……… (łącznie / rozdzielnie)
-8. Podaj wyjątek od zasady „nie” z czasownikami (czasownik, który bez „nie” nie istnieje).
-9. Jaki tryb wyraża rozkaz? (orzekający / przypuszczający / rozkazujący)
-10. „Książka jest czytana przez Adasia” – to strona ……… (czynna / bierna)
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. Jan Brzechwa
-2. Adaś
-3. oba
-4. wymarzona szkoła
-5. niedokonany
-6. dokonany
-7. rozdzielnie
-8. nienawidzić (lub inne: niedomagać, niecierpliwić się)
-9. rozkazujący
-10. bierna
-
-</details>
-
----
-
-## 2. „Akademia Pana Kleksa” – podstawowe informacje
-
-[UI: COMPARE]
-
-| Element | Informacja |
-|---------|------------|
-| **Autor** | Jan Brzechwa (właściwie Jan Wiktor Brzechwa-Chmielewski, 1898–1966) |
-| **Pełny tytuł** | „Akademia Pana Kleksa” |
-| **Cykl** | Trylogia: 1. „Akademia Pana Kleksa” (1946), 2. „Podróże Pana Kleksa” (1961), 3. „Tryumf Pana Kleksa” (1965) |
-| **Gatunek** | powieść dla dzieci z elementami baśni, fantastyki i humoru |
-| **Miejsce** | Akademia w nieznanym mieście |
-| **Czas** | nieokreślony, „dawno temu” |
-| **Status** | lektura obowiązkowa z klas IV–VI |
-
-**WAŻNE:** W latach 2024/2025–2025/2026 zadania w części I arkusza dotyczą **wyłącznie fragmentu** zamieszczonego w arkuszu. W wypracowaniu można się do lektury swobodnie odwoływać.
-
----
-
-## 3. Narrator – 1. osoba
-
-[UI: DIAGRAM]
-
-```
-KTO OPOWIADA?
-→ ADAŚ
-
-W JAKIEJ OSOBIE?
-→ 1. OSOBA
-
-SKĄD ZNA HISTORIĘ?
-→ Z WŁASNEGO DOŚWIADCZENIA
-
-CZY RELACJA JEST SUBIEKTYWNA?
-→ TAK
-```
-
-[UI: COMPARE]
-
-| Element | Informacja |
-|---------|------------|
-| **Narrator** | Adaś Niezgódka – uczeń Akademii |
-| **Osoba** | **1. osoba liczby pojedynczej** („ja”) – narracja pamiętnikarska |
-| **Relacja** | subiektywna – czytelnik widzi świat oczami Adasia |
-| **Czas narracji** | przeszły (Adaś wspomina swoje przygody) |
-| **Typ bohatera** | **bohater dynamiczny** – z niezdarnego, niepewnego chłopca staje się odważny, zaradny i zaufany uczeń Pana Kleksa |
-
-**Dlaczego to ważne na egzaminie?** CKE często sprawdza rozpoznawanie osoby narratora (1. osoba) oraz różnicę między narracją pierwszo- i trzecioosobową.
-
----
-
-## 4. Najważniejsi bohaterowie
-
-[UI: COMPARE]
-
-| Bohater | Charakterystyka | Rola |
-|---------|-----------------|------|
-| **Adaś Niezgódka** | Główny bohater i narrator. Początkowo niezdarny i niepewny, z czasem staje się odważny, zaradny i lojalny. **Bohater dynamiczny**. | Opowiada historię, uczestniczy w przygodach, przechodzi przemianę. |
-| **Pan Ambroży Kleks** | Dyrektor Akademii, czarodziej, wynalazca. Niezwykły, mądry, dobroduszny. Ma czarną brodę, nosi kolorowe ubrania. **Symbol mądrości i wyobraźni**. | Twórca Akademii, mentor, symbol magii. |
-| **Szpak Mateusz** | Przyjaciel Pana Kleksa, ptak, który mówi i zachowuje się jak człowiek. **Były książę** zamieniony w ptaka. | Towarzysz, doradca, łączy świat ludzi i zwierząt. |
-| **Filip Golarz** | Antagonista, który chce zniszczyć Akademię. Tworzy **Alojzego** – sztucznego chłopca. | Uosobienie zła i zniszczenia. |
-| **Alojzy** | Sztuczny chłopiec / lalka stworzona przez Filipa Golarza. Uosobienie zła, zniszczenia i zazdrości. | Antagonista, źródło konfliktów. |
-| **Pani Doktor Puchalska** | Lekarka, przyjaciółka Akademii. | Leczy chorych, pomaga w trudnych sytuacjach. |
-| **Piekarz Węgiełek** | Przyjaciel Akademii. | Dostarcza chleb, pomaga w potrzebie. |
-| **Błękitny Podróżnik** | Tajemnicza postać, podróżnik. | Przynosi wiadomości z dalekich krajów. |
-
----
-
-## 5. Najważniejsze wydarzenia
-
-[UI: COMPARE]
-
-| Wydarzenie | Opis | Motywy |
-|------------|------|--------|
-| **Przybycie Adasia do Akademii** | Adaś trafia do niezwykłej szkoły. Poznajemy zasady działania Akademii. | odkrywanie nieznanego, szkoła marzeń, magia |
-| **Nauka w Akademii** | Zajęcia z **kleksografii** (sztuka tworzenia obrazków z kleksów). Nauka przez zabawę i eksperymenty. | nauka jako przygoda, wyobraźnia, kreatywność |
-| **Konflikt z Alojzym i Filipem Golarzem** | Filip Golarz tworzy Alojzego – sztucznego chłopca, który ma zniszczyć Akademię. | zło, zniszczenie, zazdrość, walka dobra ze złem |
-| **Podróż do Krainy Cieni** | Adaś i przyjaciele trafiają do tajemniczej krainy. | podróż, przygoda, odwaga, przyjaźń |
-| **Finał – zwycięstwo dobra** | Dzięki współpracy i odwadze dobro zwycięża. Adaś przechodzi przemianę – z niezdarnego chłopca staje się odważnym i zaradnym uczniem. | dobro zwycięża zło, przemiana bohatera, wyobraźnia, przyjaźń |
-
----
-
-## 6. Motywy do rozprawki
-
-[UI: COMPARE]
-
-| Motyw | Opis | Przykład do rozprawki |
-|-------|------|----------------------|
-| **Magia i wyobraźnia** | Akademia to miejsce, gdzie magia i wyobraźnia są na co dzień obecne. Pan Kleks uczy, że wyobraźnia pozwala przekraczać granice rzeczywistości. | *W „Akademii Pana Kleksa” wyobraźnia jest przedstawiona jako najcenniejszy dar człowieka.* |
-| **Wymarzona szkoła** | Akademia to szkoła marzeń – nauka przez zabawę, brak nudnych lekcji, nauczyciel-czarodziej. | *Akademia Pana Kleksa to miejsce, gdzie nauka staje się przygodą.* |
-| **Przyjaźń i lojalność** | Adaś i jego przyjaciele (szpak Mateusz, golarz Filip) wspierają się nawzajem w trudnych sytuacjach. | *Przyjaźń Adasia ze szpakiem Mateuszem pokazuje, że prawdziwi przyjaciele zawsze mogą na siebie liczyć.* |
-| **Zemsta i wybaczenie** | Filip Golarz i Alojzy próbują zniszczyć Akademię, ale ostatecznie dobro zwycięża. | *Postać Alojzego i Filipa Golarza pokazuje, że zło i zniszczenie prowadzą do upadku, a dobro zwycięża.* |
-| **Przemiana bohatera** | Adaś z niezdarnego, niepewnego chłopca staje się odważnym, zaradnym i lojalnym uczniem. | *Adaś Niezgódka jest przykładem bohatera dynamicznego, który przechodzi wewnętrzną przemianę.* |
-
----
-
-## 7. Czasownik – definicja
-
-[UI: COMPARE]
-
-**Czasownik** to **odmienna część mowy**, która:
-- oznacza **czynność** (*czytać, pisać, biegać*),
-- oznacza **stan** (*spać, leżeć, stać*),
-- oznacza **zjawisko** (*padać, świecić, grzmieć*).
-
-**Pytania:** *co robi? co się z nim dzieje? co robił?*
-
-**Przykłady:**
-- *Adaś **czyta** książkę.* (czynność)
-- *Pan Kleks **śpi**.* (stan)
-- *Deszcz **pada**.* (zjawisko)
-
----
-
-## 8. Formy czasownika
-
-### A. Formy osobowe
-
-[UI: COMPARE]
-
-Formy osobowe odmieniają się przez osoby, liczby, czasy i tryby.
-
-| Osoba | Liczba pojedyncza | Liczba mnoga |
-|-------|-------------------|--------------|
-| 1. | *ja czytam* | *my czytamy* |
-| 2. | *ty czytasz* | *wy czytacie* |
-| 3. | *on/ona/ono czyta* | *oni/one czytają* |
-
-### B. Formy nieosobowe
-
-[UI: COMPARE]
-
-| Forma | Przykład | Uwaga |
-|-------|----------|-------|
-| **Bezokolicznik** | *czytać, pisać, biegać* | Forma podstawowa, nie ma osoby, liczby, czasu. |
-| **Imiesłów przymiotnikowy czynny** | *czytający* | Odpowiada na pytanie: *jaki?* |
-| **Imiesłów przymiotnikowy bierny** | *przeczytany* | Odpowiada na pytanie: *jaki?* |
-| **Imiesłów przysłówkowy współczesny** | *czytając* | Odpowiada na pytanie: *jak?* |
-| **Imiesłów przysłówkowy uprzedni** | *przeczytawszy* | Odpowiada na pytanie: *kiedy?* |
-
----
-
-## 9. Czasy czasownika
-
-[UI: COMPARE]
-
-| Czas | Opis | Przykład | Uwaga |
-|------|------|----------|-------|
-| **Teraźniejszy** | Czynność dzieje się teraz. | *Adaś **czyta** książkę.* | Tylko czasowniki **niedokonane**. |
-| **Przeszły** | Czynność już się zakończyła. | *Adaś **czytał** książkę.* | Dokonane i niedokonane. |
-| **Przyszły** | Czynność będzie się dziać. | *Adaś **będzie czytał** książkę.* (złożony – niedokonany) / *Adaś **przeczyta** książkę.* (prosty – dokonany) | Prosty – tylko dokonane; złożony – niedokonane. |
-
----
-
-## 10. Tryby czasownika
-
-[UI: COMPARE]
-
-| Tryb | Opis | Przykład |
-|------|------|----------|
-| **Orzekający** | Fakty, rzeczywistość. | *Adaś **czyta** książkę.* |
-| **Przypuszczający** | Hipotezy, życzenia, możliwości (forma przeszła + **by**). | *Gdybym miał czas, **czytałbym** więcej.* |
-| **Rozkazujący** | Rozkazy, prośby, życzenia (tylko 2. i 3. osoba). | ***Czytaj** uważnie!* / ***Niech czyta**!* |
-
----
-
-## 11. Aspekt czasownika
-
-[UI: COMPARE]
-
-| Aspekt | Opis | Pytanie | Przykład |
-|--------|------|---------|----------|
-| **Niedokonany** | Czynność trwa, powtarza się, nie jest zakończona. | *co robić?* | *czytać, pisać, biegać* |
-| **Dokonany** | Czynność zakończona, z rezultatem. | *co zrobić?* | *przeczytać, napisać, pobiec* |
-
-**Pary aspektowe (najczęstsze):**
-
-| Niedokonany | Dokonany |
-|-------------|----------|
-| *czytać* | *przeczytać* |
-| *pisać* | *napisać* |
-| *robić* | *zrobić* |
-| *biegać* | *pobiec* |
-| *mówić* | *powiedzieć* |
-| *kupować* | *kupić* |
-| *otwierać* | *otworzyć* |
-
-**WAŻNE:** Nie wszystkie czasowniki mają pary aspektowe.
-- **Tylko niedokonane:** *spać, leżeć, stać, wiedzieć, móc*
-- **Tylko dokonane:** *zginąć, umrzeć, narodzić się*
-
----
-
-## 12. Strona czasownika
-
-[UI: COMPARE]
-
-| Strona | Opis | Przykład |
-|--------|------|----------|
-| **Czynna** | Podmiot **wykonuje** czynność. | *Adaś **czyta** książkę.* |
-| **Bierna** | Podmiot jest **poddawany** czynności („być” + imiesłów bierny). | *Książka **jest czytana** przez Adasia.* |
-
-**Porównanie:**
-
-| Strona czynna | Strona bierna |
-|---------------|---------------|
-| *Adaś czyta książkę.* | *Książka jest czytana przez Adasia.* |
-| *Pan Kleks otworzył drzwi.* | *Drzwi zostały otwarte przez Pana Kleksa.* |
-| *Filip Golarz zniszczył Akademię.* | *Akademia została zniszczona przez Filipa Golarza.* |
-
----
-
-## 13. Zasada pisowni „nie” z czasownikami
-
-[UI: COMPARE]
-
-**Zasada ogólna:** *„nie” z czasownikami piszemy **ROZDZIELNIE**.*
-
-**Przykłady:** *nie czytam, nie piszesz, nie czytał, nie będzie czytał, nie czytając*
-
-**Wyjątki – ŁĄCZNIE (czasowniki, które bez „nie” nie istnieją):**
-
-| Czasownik | Znaczenie |
-|-----------|-----------|
-| **nienawidzić** | czuć silną niechęć |
-| **niedomagać** | być chorym, słabym |
-| **niecierpliwić się** | tracić cierpliwość |
-| **niepokoić** | wprawiać w niepokój |
-| **niedowidzieć** | słabo widzieć |
-| **niedosłyszeć** | słabo słyszeć |
-
-**Jak rozpoznać wyjątek?** Spróbuj usunąć „nie”. Jeśli czasownik **przestaje istnieć** lub **zmienia znaczenie**, to piszemy łącznie.
-- *nienawidzić* → *nawidzić* ❌ (nie istnieje) → **łącznie**
-- *nie czytać* → *czytać* ✅ (istnieje) → **rozdzielnie**
-
----
-
-## 14. Ćwiczenia
-
-[UI: CHOICE] [UI: CLOZE] [UI: ERROR] [UI: TRANSLATE]
-
-### Ćwiczenie 1 – Rozpoznaj czasownik
-
-Określ, czy podkreślony wyraz jest czasownikiem (tak/nie):
-
-1. **Adaś czyta** książkę. → __________
-2. Pan Kleks **jest** mądry. → __________
-3. Szpak Mateusz **śpiewa**. → __________
-4. Alojzy **zły** na Adasia. → __________
-5. Golarz Filip **pomaga**. → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. tak
-2. tak
-3. tak
-4. nie
-5. tak
-
-</details>
-
----
-
-### Ćwiczenie 2 – Aspekt czasownika
-
-Określ aspekt (niedokonany / dokonany):
-
-1. *czytać* → __________
-2. *przeczytać* → __________
-3. *pisać* → __________
-4. *napisać* → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. niedokonany
-2. dokonany
-3. niedokonany
-4. dokonany
-
-</details>
-
----
-
-### Ćwiczenie 3 – „nie” z czasownikami (PUŁAPKA E8!)
-
-Wpisz poprawną formę:
-
-1. On ______ (nie + czytać) książki.
-2. On ______ (nie + nawidzić) Alojzego.
-3. On ______ (nie + móc) przyjść.
-4. On ______ (nie + cierpliwić się) na Adasia.
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. nie czyta
-2. nienawidzi
-3. nie może
-4. niecierpliwi się
-
-</details>
-
----
-
-### Ćwiczenie 4 – Strona czynna i bierna
-
-Przekształć zdania ze strony czynnej na bierną:
-
-1. Adaś czyta książkę. → __________
-2. Pan Kleks otworzył drzwi. → __________
-3. Filip Golarz zniszczył Akademię. → __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. Książka jest czytana przez Adasia.
-2. Drzwi zostały otwarte przez Pana Kleksa.
-3. Akademia została zniszczona przez Filipa Golarza.
-
-</details>
-
----
-
-### Ćwiczenie 5 – Tryby czasownika
-
-Podaj czasownik „czytać” w podanych trybach w 2. os. lp.:
-
-1. Tryb orzekający: __________
-2. Tryb przypuszczający: __________
-3. Tryb rozkazujący: __________
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. czytasz
-2. czytałbyś
-3. czytaj
-
-</details>
-
----
-
-## 15. Ważne! – 7 kluczowych zasad
-
-[UI: COMPARE]
-
-1. **Adaś Niezgódka** – narrator w 1. osobie, bohater dynamiczny.
-2. **Pan Kleks** – symbol mądrości i wyobraźni.
-3. **Czasownik** – odpowiada na pytania: *co robi? co się z nim dzieje?*
-4. **3 czasy:** teraźniejszy, przeszły, przyszły.
-5. **3 tryby:** orzekający, przypuszczający, rozkazujący.
-6. **Aspekt:** niedokonany (czynność trwa) vs dokonany (czynność zakończona).
-7. **„nie” z czasownikami** – rozdzielnie (z wyjątkami: *nienawidzić, niedomagać, niecierpliwić się*).
-
----
-
-## 16. Fiszki
-
-[UI: FISZKI]
-
-| Przód | Tył |
-|-------|-----|
-| Kto jest autorem „Akademii Pana Kleksa”? | Jan Brzechwa |
-| Kto opowiada historię w „Akademii” (imię, 1. osoba)? | Adaś |
-| Kim jest Pan Kleks? | czarodziej i dyrektor |
-| Jaki motyw łączymy z Akademią? | wymarzona szkoła |
-| „czytać” – jaki aspekt? | niedokonany |
-| „przeczytać” – jaki aspekt? | dokonany |
-| „nie” z czasownikami piszemy… | rozdzielnie |
-| Wyjątek od „nie” z czasownikami | nienawidzić |
-| Jaki tryb wyraża rozkaz? | rozkazujący |
-| „Książka jest czytana” – strona… | bierna |
-| Jaki czas ma tylko czasowniki niedokonane? | teraźniejszy |
-| Czy Adaś jest bohaterem dynamicznym czy statycznym? | dynamiczny |
-| Kto jest antagonistą w „Akademii Pana Kleksa”? | Filip Golarz |
-| „nie” z czasownikami – wyjątek (inny niż nienawidzić) | niedomagać / niecierpliwić się |
-
----
-
-## 17. Test końcowy – MISJA
-
-[UI: EXAM]
-
-1. Kto jest autorem „Akademii Pana Kleksa”?
-2. Kto opowiada historię w „Akademii Pana Kleksa”? (imię, 1. osoba)
-3. Kim jest Pan Kleks? (czarodziej / dyrektor / oba)
-4. Jaki motyw łączymy z Akademią jako miejscem marzeń?
-5. „czytać” – jaki to aspekt? (niedokonany / dokonany)
-6. „przeczytać” – jaki to aspekt? (niedokonany / dokonany)
-7. „nie” z czasownikami piszemy ……… (łącznie / rozdzielnie)
-8. Podaj wyjątek od zasady „nie” z czasownikami (czasownik, który bez „nie” nie istnieje).
-9. Jaki tryb wyraża rozkaz? (orzekający / przypuszczający / rozkazujący)
-10. „Książka jest czytana przez Adasia” – to strona ……… (czynna / bierna)
-
-<details>
-<summary><strong>? Odpowiedzi</strong></summary>
-
-1. Jan Brzechwa
-2. Adaś
-3. oba
-4. wymarzona szkoła
-5. niedokonany
-6. dokonany
-7. rozdzielnie
-8. nienawidzić (lub inne)
-9. rozkazujący
-10. bierna
-
-</details>
-
----
-
-**Koniec Lekcji 6 (wersja poprawiona 2.0)**
+Plik jest gotowy do konwersji na HTML/CSS/JS.

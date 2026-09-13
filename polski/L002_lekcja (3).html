@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>L002 – „Hobbit” i nieodmienne części mowy · Polski: Podstawa Plus</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --c-basic:#2d8f5e;--c-basic-bg:#eef9f2;
+  --c-train:#2b6cb0;--c-train-bg:#eef4fb;
+  --c-exam:#b7791f;--c-exam-bg:#fdf7ea;
+  --c-trap:#c33b46;--c-trap-bg:#fdeef0;
+  --c-amb:#6d3fb8;--c-amb-bg:#f2ecfa;
+  --c-rem:#1e3a5f;--c-rem-bg:#eef2f7;
+  --c-hint:#b3701c;--c-hint-bg:#fbf3e3;
+  --c-text:#1c2634;--c-strong:#0a1828;--c-muted:#6b7a8d;
+  --c-border:#e3e8ef;--c-border-strong:#c8d2df;
+  --c-bg:#f7f9fc;--c-surface:#ffffff;--c-surface-2:#fbfcfe;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.04);
+  --shadow:0 2px 8px rgba(15,23,42,.06);
+  --shadow-lg:0 8px 28px rgba(15,23,42,.08);
+  --radius:12px;--radius-sm:8px;--radius-lg:16px;
+}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{font-family:'Segoe UI',Roboto,system-ui,-apple-system,'Helvetica Neue',sans-serif;background:#eef1f5;color:var(--c-text);line-height:1.7;padding:20px 16px}
+.container{max-width:1100px;margin:0 auto;background:var(--c-surface);border-radius:22px;box-shadow:var(--shadow-lg);padding:36px 44px 28px;border:1px solid var(--c-border)}
+@media(max-width:820px){.container{padding:18px 14px;border-radius:14px}body{padding:8px 4px}}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em;color:var(--c-strong);line-height:1.3}
+h1{font-size:2rem;margin-bottom:6px}
+h2{font-size:1.4rem;margin-top:36px;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--c-border);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h2 .h2-num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 8px;background:var(--c-rem);color:#fff;border-radius:9px;font-size:.9rem;font-weight:700;flex-shrink:0}
+h3{font-size:1.15rem;margin-top:24px;margin-bottom:8px}
+h4{font-size:.98rem;margin-top:14px;margin-bottom:6px}
+p{margin-bottom:10px}ul,ol{padding-left:22px;margin-bottom:10px}li{margin-bottom:4px}
+a{color:var(--c-train);text-decoration:none}a:hover{text-decoration:underline}
+strong{color:var(--c-strong)}
+.text-muted{color:var(--c-muted)}.text-sm{font-size:.83rem}
+.lead{font-size:1.02rem;color:#334155;margin-bottom:14px}
+.lesson-header{padding-bottom:22px;border-bottom:1px solid var(--c-border);margin-bottom:24px}
+.lesson-header .kicker{text-transform:uppercase;font-size:.7rem;letter-spacing:.14em;color:var(--c-train);font-weight:700;margin-bottom:8px}
+.lesson-header h1{font-size:2.05rem}
+.lesson-header .sub{color:var(--c-muted);font-size:.85rem;margin-top:4px;margin-bottom:10px}
+.lesson-header .desc{font-size:1rem;color:#334155;max-width:800px}
+.orient{background:linear-gradient(180deg,#f7fbf8 0%,#eef5f0 100%);border:1px solid #c8e2d2;border-left:4px solid var(--c-basic);border-radius:12px;padding:14px 18px;margin:16px 0 4px}
+.orient .flow-line{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:.95rem;font-weight:500;color:var(--c-strong);margin-bottom:6px}
+.orient .flow-line .step{display:inline-flex;align-items:center;gap:6px}
+.orient .flow-line .step-num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--c-basic);color:#fff;font-size:.72rem;font-weight:700}
+.orient .flow-line .sep{color:var(--c-muted);font-weight:300}
+.orient .rule-inline{font-size:.83rem;color:var(--c-muted);padding-top:6px;border-top:1px dashed #c8e2d2;margin-top:6px}
+.orient .rule-inline strong{color:var(--c-strong)}
+.quick-bar{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:20px 0 8px}
+@media(max-width:720px){.quick-bar{grid-template-columns:1fr}}
+.quick-btn{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:14px 18px;border-radius:12px;background:linear-gradient(180deg,#fff 0%,#f4f8fc 100%);border:1px solid var(--c-border);cursor:pointer;font:inherit;text-align:left;transition:all .18s;box-shadow:var(--shadow-sm)}
+.quick-btn:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#b8cddf}
+.quick-btn .qb-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--c-train);font-weight:700}
+.quick-btn .qb-title{font-size:.98rem;font-weight:600;color:var(--c-strong)}
+.quick-btn .qb-desc{font-size:.78rem;color:var(--c-muted);line-height:1.4}
+.quick-btn .qb-toggle{margin-top:6px;font-size:.72rem;color:var(--c-train);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.quick-btn[aria-expanded="true"]{background:linear-gradient(180deg,#f0f8f3 0%,#e5f1ea 100%);border-color:#b8d7c4}
+.quick-btn[aria-expanded="true"] .qb-toggle{color:var(--c-basic)}
+.quick-panel{display:none;margin:8px 0 22px;padding:20px 22px;border:1px solid var(--c-border);border-left:4px solid var(--c-train);border-radius:12px;background:var(--c-surface-2);box-shadow:var(--shadow-sm)}
+.quick-panel.open{display:block;animation:fadeIn .22s ease}
+.quick-panel[data-panel="cke"]{border-left-color:#2b6cb0}
+.quick-panel[data-panel="rozgrzewka"]{border-left-color:var(--c-hint)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
+.toc-section{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:22px 26px;margin-bottom:28px;box-shadow:var(--shadow-sm)}
+.toc-section h2{margin-top:0;border:none;padding:0;font-size:1.2rem;margin-bottom:14px;color:var(--c-strong)}
+.toc-section h2 .h2-num{display:none}
+.toc-list{display:flex;flex-direction:column;gap:6px}
+.toc-item{border:1px solid var(--c-border);border-radius:10px;background:var(--c-surface-2);overflow:hidden;border-left-width:4px}
+.toc-item.cat-content{border-left-color:#2b6cb0}
+.toc-item.cat-exercise{border-left-color:#2d8f5e}
+.toc-item.cat-advanced{border-left-color:#6d3fb8}
+.toc-item.cat-exam{border-left-color:#b7791f}
+.toc-item.cat-summary{border-left-color:#64748b}
+.toc-summary{font-weight:600;font-size:.88rem;padding:11px 16px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;color:var(--c-strong)}
+.toc-summary::-webkit-details-marker{display:none}
+.toc-summary::before{content:"";width:6px;height:6px;border-right:2px solid var(--c-muted);border-bottom:2px solid var(--c-muted);transform:rotate(-45deg);transition:transform .2s;flex-shrink:0}
+.toc-item[open] .toc-summary::before{transform:rotate(45deg)}
+.toc-summary .toc-cat{font-size:.68rem;padding:2px 8px;border-radius:12px;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-left:auto}
+.toc-item.cat-content .toc-cat{background:#d5e5f7;color:#1e3a5f}
+.toc-item.cat-exercise .toc-cat{background:#d8f0e0;color:#14532d}
+.toc-item.cat-advanced .toc-cat{background:#e6d9f5;color:#4a2070}
+.toc-item.cat-exam .toc-cat{background:#fbe6c0;color:#7a4a0f}
+.toc-item.cat-summary .toc-cat{background:#e8edf3;color:#475569}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:6px 16px 12px 34px}
+.toc-anchor{display:inline-flex;align-items:center;min-height:26px;padding:3px 10px;border:1px solid #dbe4ee;border-radius:6px;background:#fff;color:var(--c-train);font-size:.76rem;font-weight:500;text-decoration:none}
+.toc-anchor:hover{background:var(--c-train);color:#fff;border-color:var(--c-train);text-decoration:none}
+.toc-keywords{margin-top:14px;padding:10px 14px;background:var(--c-surface-2);border-radius:10px;color:var(--c-muted);font-size:.78rem;line-height:1.7;border:1px dashed var(--c-border)}
+.toc-keywords strong{color:var(--c-text)}
+.card{border-radius:var(--radius);padding:16px 20px;margin:14px 0;border:1px solid var(--c-border);background:var(--c-surface);box-shadow:var(--shadow-sm)}
+.card-head{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;color:var(--c-muted)}
+.card-head .dot{width:8px;height:8px;border-radius:50%;background:var(--c-muted);flex-shrink:0}
+.card-rem{background:var(--c-rem-bg);border-left:4px solid var(--c-rem)}
+.card-rem .card-head{color:var(--c-rem)}.card-rem .card-head .dot{background:var(--c-rem)}
+.card-ok{background:var(--c-basic-bg);border-left:4px solid var(--c-basic)}
+.card-ok .card-head{color:var(--c-basic)}.card-ok .card-head .dot{background:var(--c-basic)}
+.card-trap{background:var(--c-trap-bg);border-left:4px solid var(--c-trap)}
+.card-trap .card-head{color:var(--c-trap)}.card-trap .card-head .dot{background:var(--c-trap)}
+.card-hint{background:var(--c-hint-bg);border-left:4px solid var(--c-hint)}
+.card-hint .card-head{color:var(--c-hint)}.card-hint .card-head .dot{background:var(--c-hint)}
+.card-amb{background:var(--c-amb-bg);border-left:4px solid var(--c-amb)}
+.card-amb .card-head{color:var(--c-amb)}.card-amb .card-head .dot{background:var(--c-amb)}
+.card-gray{background:var(--c-surface-2);border-left:4px solid var(--c-muted)}
+.card-gray .card-head{color:var(--c-muted)}.card-gray .card-head .dot{background:var(--c-muted)}
+.badge{display:inline-flex;align-items:center;font-size:.6rem;font-weight:700;text-transform:uppercase;padding:3px 10px;border-radius:20px;letter-spacing:.08em}
+.badge-basic{background:#d8f0e0;color:#14532d}
+.badge-train{background:#d5e5f7;color:#1e3a5f}
+.badge-exam{background:#fbe6c0;color:#7a4a0f}
+.badge-trap{background:#f7d5da;color:#7a1a23}
+.badge-amb{background:#e6d9f5;color:#4a2070}
+.badge-hidden{background:#e8edf3;color:#5a6b7c;border:1px dashed #c8d2df}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--radius);border:1px solid var(--c-border);box-shadow:var(--shadow-sm);background:#fff}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:.87rem}
+.table-wrap th,.table-wrap td{padding:9px 12px;text-align:left;border-bottom:1px solid #eef2f7;vertical-align:top;line-height:1.5}
+.table-wrap th{background:#f2f5f9;font-weight:600;color:var(--c-strong);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}
+.table-wrap tr:last-child td{border-bottom:none}
+.table-wrap tr:nth-child(even) td{background:#fafbfd}
+.table-wrap td strong{color:var(--c-train)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:9px;border:1px solid var(--c-border-strong);background:#fff;font-size:.83rem;font-weight:500;cursor:pointer;transition:all .16s;color:var(--c-text);font-family:inherit;box-shadow:var(--shadow-sm)}
+.btn:hover{background:var(--c-bg);border-color:#aab6c5}
+.btn-primary{background:var(--c-train);border-color:var(--c-train);color:#fff}
+.btn-primary:hover{background:#1f4e8c;color:#fff}
+.btn-hint{background:var(--c-hint);border-color:var(--c-hint);color:#fff}
+.btn-hint:hover{background:#8a5512;color:#fff}
+.btn-amb{background:var(--c-amb);border-color:var(--c-amb);color:#fff}
+.btn-amb:hover{background:#55308f;color:#fff}
+.btn-outline{background:transparent;color:var(--c-muted)}
+.btn-sm{padding:4px 12px;font-size:.76rem}
+.btn-print{background:#1e3a5f;border-color:#1e3a5f;color:#fff}
+.btn-print:hover{background:#0f2540;color:#fff}
+.reveal{display:none;border-radius:var(--radius-sm);padding:12px 16px;margin-top:8px;font-size:.9rem}
+.reveal.show{display:block;animation:fadeIn .22s ease}
+.reveal-ans{background:var(--c-train-bg);border-left:3px solid var(--c-train)}
+.reveal-hint{background:var(--c-hint-bg);border-left:3px solid var(--c-hint);font-style:italic;color:#6b4a10}
+.reveal-why{background:#f0f4f9;border-left:3px solid #64748b;font-size:.86rem;color:#334155}
+.hint-2{display:none;background:var(--c-hint-bg);border-left:3px solid var(--c-hint);border-radius:var(--radius-sm);padding:10px 14px;margin-top:6px;font-size:.86rem;color:#6b4a10}
+.hint-2.show{display:block;animation:fadeIn .2s ease}
+.layer-toggle{margin:14px 0 4px}
+.layer-content{margin-top:10px}
+.layer-content.hidden{display:none}
+.exercise{background:var(--c-surface-2);border-radius:var(--radius);padding:18px 20px;margin:14px 0;border:1px solid var(--c-border)}
+.exercise .ex-title{font-weight:600;color:var(--c-strong);margin-bottom:10px;font-size:.98rem;display:flex;align-items:center;gap:8px}
+.exercise .ex-title .ex-num{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;padding:0 6px;background:var(--c-train);color:#fff;border-radius:7px;font-size:.75rem;font-weight:700}
+.fitb-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:6px 0;padding:6px 0;border-bottom:1px dashed #e5ebf2}
+.fitb-row:last-child{border-bottom:none}
+.fitb-row .q-label{font-weight:500;font-size:.9rem;flex:1;min-width:200px}
+.fitb-row input[type=text],.fitb-row select{padding:6px 10px;border:1px solid var(--c-border-strong);border-radius:7px;font-size:.86rem;font-family:inherit;min-width:160px;background:#fff}
+.fitb-row input:focus,.fitb-row select:focus{outline:none;border-color:var(--c-train);box-shadow:0 0 0 3px rgba(43,108,176,.15)}
+.fitb-row input.correct{border-color:var(--c-basic);background:#eef9f2}
+.fitb-row input.wrong{border-color:var(--c-trap);background:#fdeef0}
+.fitb-row .res-icon{font-size:1.05rem;font-weight:700;width:18px;text-align:center}
+.q-hint-btn{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;border:1px solid var(--c-hint);background:#fff;color:var(--c-hint);font-size:.72rem;font-weight:700;cursor:pointer;font-family:inherit;flex-shrink:0}
+.q-hint-btn:hover{background:var(--c-hint);color:#fff}
+.q-hint{display:none;width:100%;margin-top:4px;padding:6px 10px;background:var(--c-hint-bg);border-left:3px solid var(--c-hint);border-radius:5px;font-size:.78rem;color:#6b4a10;font-style:italic}
+.q-hint.show{display:block}
+.flash-list{display:flex;flex-direction:column;gap:6px;margin:16px 0}
+.flash-item{border:1px solid var(--c-border);border-radius:10px;background:#fff;overflow:hidden;transition:border-color .15s}
+.flash-item.open{border-color:var(--c-train);box-shadow:var(--shadow-sm)}
+.flash-q{display:flex;align-items:center;gap:10px;padding:11px 16px;cursor:pointer;font:inherit;background:none;border:none;width:100%;text-align:left;color:var(--c-strong);font-size:.9rem;font-weight:600}
+.flash-q::before{content:"";width:6px;height:6px;border-right:2px solid var(--c-muted);border-bottom:2px solid var(--c-muted);transform:rotate(-45deg);transition:transform .2s;flex-shrink:0}
+.flash-item.open .flash-q::before{transform:rotate(45deg);border-color:var(--c-train)}
+.flash-q:hover{background:var(--c-surface-2)}
+.flash-a{display:none;padding:12px 16px 14px 34px;font-size:.86rem;color:#475569;background:var(--c-surface-2);border-top:1px dashed var(--c-border);line-height:1.6}
+.flash-item.open .flash-a{display:block}
+.flash-a p{margin-bottom:6px}
+.flash-a p:last-child{margin-bottom:0}
+.flash-a .fa-def{color:#1e3a5f}
+.flash-a .fa-ex{color:#14532d}
+.flash-a .fa-trap{color:#7a1a23}
+.flow-responsive{display:flex;align-items:stretch;gap:10px;margin:14px 0;flex-wrap:wrap}
+.flow-responsive .fr-step{flex:1;min-width:180px;background:#fff;border:1px solid var(--c-border);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow-sm);position:relative}
+.flow-responsive .fr-step .fs-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--c-muted);font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.flow-responsive .fr-step .fs-label .num{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--c-train);color:#fff;font-size:.65rem;font-weight:700}
+.flow-responsive .fr-step .fs-title{font-size:.95rem;font-weight:700;color:var(--c-strong);margin-bottom:4px}
+.flow-responsive .fr-step .fs-desc{font-size:.82rem;color:#4a5c70;line-height:1.5}
+.flow-responsive .fr-step .fs-quote{font-size:.78rem;color:#1e4a7a;font-style:italic;margin-top:6px;padding:6px 8px;background:#eef4fb;border-left:2px solid #2b6cb0;border-radius:4px}
+.flow-responsive .fr-step .fs-why{font-size:.76rem;color:#6b4a10;margin-top:6px;padding:6px 8px;background:var(--c-hint-bg);border-left:2px solid var(--c-hint);border-radius:4px}
+.flow-responsive .fr-arrow{display:flex;align-items:center;justify-content:center;color:var(--c-muted);font-size:1.1rem;font-weight:300;padding:0 2px}
+@media(max-width:720px){
+  .flow-responsive{flex-direction:column;gap:8px}
+  .flow-responsive .fr-step{min-width:0}
+  .flow-responsive .fr-arrow{transform:rotate(90deg);height:16px}
+}
+.tree{margin:16px 0;border:1px solid var(--c-border);border-radius:12px;background:linear-gradient(180deg,#fbfcfe 0%,#f5f8fc 100%);padding:18px;box-shadow:var(--shadow-sm)}
+.tree .root{background:var(--c-rem);color:#fff;padding:10px 20px;border-radius:10px;text-align:center;font-weight:700;font-size:.95rem;letter-spacing:.04em;margin:0 auto 18px;max-width:280px}
+.tree .level1{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:640px){.tree .level1{grid-template-columns:1fr}}
+.tree .branch{background:#fff;border:1.5px solid var(--c-border-strong);border-radius:12px;padding:14px;box-shadow:var(--shadow-sm)}
+.tree .branch.przym{border-color:#2b6cb0;background:linear-gradient(180deg,#f4f9fe 0%,#eef4fb 100%)}
+.tree .branch.przys{border-color:#6d3fb8;background:linear-gradient(180deg,#f7f2fd 0%,#f2ecfa 100%)}
+.tree .branch-title{font-weight:700;font-size:.92rem;margin-bottom:4px}
+.tree .branch.przym .branch-title{color:#1e4a7a}
+.tree .branch.przys .branch-title{color:#4a2070}
+.tree .branch-meta{font-size:.75rem;color:var(--c-muted);margin-bottom:10px}
+.tree .leaves{display:flex;flex-direction:column;gap:6px}
+.tree .leaf{background:#fff;border:1px solid var(--c-border);border-radius:8px;padding:8px 12px;font-size:.82rem}
+.tree .leaf .leaf-name{font-weight:700;color:var(--c-strong);display:block;margin-bottom:2px;font-size:.85rem}
+.tree .leaf .leaf-ex{color:var(--c-muted);font-style:italic;font-size:.78rem}
+.tree .leaf .leaf-ex strong{color:var(--c-train);font-style:normal}
+.tabs-bar{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--c-border);margin-bottom:14px}
+.tab-btn{padding:8px 14px;background:transparent;border:none;border-bottom:3px solid transparent;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--c-muted);cursor:pointer;margin-bottom:-1px;transition:all .15s}
+.tab-btn:hover{color:var(--c-text)}
+.tab-btn.active{color:var(--c-train);border-bottom-color:var(--c-train);font-weight:600}
+.tab-panel{display:none}
+.tab-panel.active{display:block;animation:fadeIn .2s ease}
+.char-mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin:12px 0}
+.char-mini{background:#fff;border:1px solid var(--c-border);border-radius:10px;padding:12px 14px;box-shadow:var(--shadow-sm);position:relative;border-left:4px solid var(--c-basic)}
+.char-mini.static{border-left-color:var(--c-muted);background:#fafbfd}
+.char-mini .cm-name{font-weight:700;font-size:.95rem;color:var(--c-strong);margin-bottom:2px}
+.char-mini .cm-role{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--c-muted);font-weight:600;display:block;margin-bottom:6px}
+.char-mini .cm-arc{font-size:.8rem;color:#4a5c70;line-height:1.5}
+.char-mini .cm-detail{font-size:.76rem;color:#64748b;margin-top:6px;padding-top:6px;border-top:1px dashed var(--c-border)}
+.char-mini .cm-motifs{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.char-mini .cm-motif{padding:2px 8px;background:var(--c-surface-2);border:1px solid var(--c-border);border-radius:12px;font-size:.68rem;color:#4a5c70}
+.motyw-block{margin:12px 0;padding:14px 16px;background:#fff;border:1px solid var(--c-border);border-radius:12px;box-shadow:var(--shadow-sm)}
+.motyw-block .mb-title{font-weight:700;font-size:.95rem;color:var(--c-strong);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.motyw-block .mb-title .pill{background:var(--c-train);color:#fff;padding:2px 10px;border-radius:12px;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.motyw-block ul{margin:0;padding-left:20px}
+.motyw-block li{font-size:.85rem;color:#4a5c70;margin-bottom:4px}
+.motyw-block li strong{color:var(--c-strong)}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:14px 0}
+.book-card{background:var(--c-surface-2);border:1px solid var(--c-border);border-radius:var(--radius);padding:20px 22px;border-left:4px solid var(--c-train);width:100%;max-width:100%}
+.book-card:hover{border-color:#b8cddf;box-shadow:var(--shadow)}
+.book-card .bc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px}
+.book-card .bc-title{font-weight:700;font-size:.95rem;color:var(--c-strong);line-height:1.35}
+.book-card .bc-meta{font-size:.72rem;color:var(--c-muted);margin-bottom:8px}
+.book-card .bc-meta strong{color:var(--c-train);font-weight:600}
+.book-card .bc-desc{font-size:1rem;color:var(--c-text);line-height:1.7;margin-bottom:14px}
+.book-card .bc-extra{font-size:.8rem;color:#4a5c70;line-height:1.55;margin-top:8px;padding-top:8px;border-top:1px dashed var(--c-border)}
+.book-card .bc-extra p{font-size:.92rem;line-height:1.6;margin-bottom:8px;color:#334155}
+.book-card .bc-extra p:last-child{margin-bottom:0}
+.book-card .bc-badge{font-size:.62rem;padding:2px 8px;border-radius:10px;background:var(--c-train-bg);color:var(--c-train);font-weight:700;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;flex-shrink:0}
+.schemat{background:var(--c-rem-bg);border-left:4px solid var(--c-rem);padding:14px 20px;margin:14px 0;border-radius:var(--radius-sm)}
+.schemat .st{font-weight:700;color:var(--c-rem);display:block;margin-bottom:6px;font-size:.85rem;text-transform:uppercase;letter-spacing:.05em}
+.rule{background:var(--c-rem-bg);border-radius:6px;padding:4px 10px;font-weight:600;color:var(--c-rem);display:inline-block;font-size:.84rem}
+.error-text{color:var(--c-trap);text-decoration:line-through;font-weight:600}
+.correct-text{color:var(--c-basic);font-weight:600}
+.haczyk-box{background:linear-gradient(180deg,#eef6ff 0%,#e4efff 100%);border-left:4px solid #2b6cb0;padding:14px 18px;margin:12px 0;border-radius:var(--radius-sm)}
+.haczyk-box .haczyk-title{font-weight:700;color:#1e4a7a;display:block;margin-bottom:6px;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.uwaga-box{background:var(--c-hint-bg);border-left:4px solid var(--c-hint);padding:12px 16px;margin:10px 0;border-radius:var(--radius-sm);font-size:.88rem}
+.uwaga-box .uwaga-title{font-weight:700;color:#7a4a0f;display:block;margin-bottom:4px;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.korekta{background:var(--c-basic-bg);border-left:4px solid var(--c-basic);padding:12px 16px;margin:10px 0;border-radius:var(--radius-sm);font-size:.88rem}
+.korekta .korekta-title{font-weight:700;color:#14532d;display:block;margin-bottom:4px;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.box-cke{background:linear-gradient(180deg,#eef6ff 0%,#e0ecfa 100%);border:1px solid #b8d4ed;border-left:5px solid #2b6cb0;border-radius:var(--radius);padding:18px 22px;margin:16px 0}
+.box-cke .cke-title{font-weight:700;font-size:1rem;color:#1e4a7a;display:block;margin-bottom:10px}
+.mission-result{font-size:.95rem;font-weight:500;padding:12px 18px;border-radius:var(--radius);margin-top:12px;border:1px solid transparent}
+.mission-result.perfect{background:#e6f6ec;color:#14532d;border-color:#b6e0c3}
+.mission-result.good{background:#e5effa;color:#1e3a5f;border-color:#b8d2ee}
+.mission-result.ok{background:#fbf3e3;color:#7a4a0f;border-color:#e8d5a0}
+.mission-result.fail{background:#fdeef0;color:#7a1a23;border-color:#eab8bf}
+.hide-all-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0 8px;padding:10px 14px;background:var(--c-surface-2);border:1px dashed var(--c-border);border-radius:10px}
+.hide-all-bar .hint-text{font-size:.82rem;color:var(--c-muted);flex:1}
+.hide-all-btn{font-family:inherit;padding:5px 14px;border-radius:7px;border:1px solid var(--c-border-strong);background:#fff;cursor:pointer;font-size:.78rem;font-weight:500;color:var(--c-muted)}
+.hide-all-btn:hover{border-color:var(--c-trap);color:var(--c-trap);background:var(--c-trap-bg)}
+.model-akapit{background:#fff;border:1px solid var(--c-border);border-left:4px solid var(--c-basic);border-radius:var(--radius);padding:16px 20px;margin:12px 0;box-shadow:var(--shadow-sm)}
+.model-akapit .ma-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--c-basic);font-weight:700;margin-bottom:6px}
+.model-akapit p{font-size:.88rem;color:#334155;margin-bottom:6px}
+.model-akapit p:last-child{margin-bottom:0}
+.model-akapit .ma-step{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;background:var(--c-basic);padding:2px 8px;border-radius:10px;margin-right:6px;text-transform:uppercase;letter-spacing:.04em}
+.mapa-motywow{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin:14px 0}
+.mapa-motywow .mm-card{background:#fff;border:1px solid var(--c-border);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow-sm)}
+.mapa-motywow .mm-card h4{margin-top:0;margin-bottom:8px;font-size:.92rem;color:var(--c-strong)}
+.mapa-motywow .mm-card ul{padding-left:18px;margin-bottom:0}
+.mapa-motywow .mm-card li{font-size:.82rem;color:#4a5c70;margin-bottom:3px}
+.cytat-parrowanie{background:var(--c-surface-2);border:1px solid var(--c-border);border-radius:var(--radius);padding:14px 18px;margin:12px 0}
+.cytat-parrowanie .cp-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 0;border-bottom:1px dashed var(--c-border)}
+.cytat-parrowanie .cp-row:last-child{border-bottom:none}
+.cytat-parrowanie .cp-cytat{font-style:italic;color:#334155;flex:1;min-width:200px}
+.cytat-parrowanie select{padding:5px 10px;border:1px solid var(--c-border-strong);border-radius:7px;font-size:.82rem;background:#fff}
+footer{margin-top:40px;padding-top:22px;border-top:1px solid var(--c-border);text-align:center;font-size:.78rem;color:var(--c-muted)}
+footer strong{color:var(--c-strong)}
+@media print{
+  body{background:#fff;padding:0;font-size:11pt}
+  .container{box-shadow:none;border:none;border-radius:0;padding:0;max-width:100%}
+  .quick-bar,.toc-section,.hide-all-bar,.layer-toggle,.btn,.quick-panel,.q-hint-btn,.btn-print,.no-print,.tabs-bar,.orient .flow-line .sep{display:none!important}
+  .reveal{display:block!important;background:none!important;border-left:none!important;padding:4px 0!important}
+  .layer-content.hidden{display:block!important}
+  .tab-panel{display:block!important}
+  h2{page-break-after:avoid}
+  .table-wrap,.book-card,.char-mini,.flow-responsive .fr-step,.tree .branch{box-shadow:none;page-break-inside:avoid}
+  .flash-a{display:block!important}
+  .flash-item{border:none;padding:4px 0;border-bottom:1px dotted #ccc}
+  .print-section-title{font-size:14pt;border-bottom:2px solid #000;margin:20px 0 10px;padding-bottom:4px;display:block!important}
+}
+</style>
+</head>
+<body>
+<div class="container" id="app">
+
+<!-- ============ HEADER ============ -->
+<header class="lesson-header">
+  <div class="kicker">Polski: Podstawa Plus · Lekcja 2</div>
+  <h1>„Hobbit” i nieodmienne części mowy</h1>
+  <p class="sub">Wersja 7.9 · 2026-09-11 · Bilbo i Thorin · przysłówek, przyimek, spójnik, partykuła, wykrzyknik · „czy” · „nie” z czasownikami</p>
+  <p class="desc">Lekcja łączy pełną analizę „Hobbita” z systematyczną nauką nieodmiennych części mowy. Rozbudowana o trójkroki przemiany Bilba i Thorina, tabelę porównawczą bohaterów, drzewo klasyfikacji części mowy, modelowe akapity argumentacyjne, trójwarstwowe podpowiedzi, sekcje egzaminacyjne oraz wyraźne powiązania między treścią lektury a regułami językowymi.</p>
+</header>
+
+<!-- ============ QUICK BAR ============ -->
+<div class="quick-bar no-print">
+  <button class="quick-btn" type="button" aria-expanded="false" data-panel="rozgrzewka" onclick="toggleQuick(this)">
+    <span class="qb-label">[Start]</span>
+    <span class="qb-title">Rozgrzewka</span>
+    <span class="qb-desc">10 pytań przed nauką — bez oceny.</span>
+    <span class="qb-toggle">Pokaż</span>
+  </button>
+  <button class="quick-btn" type="button" aria-expanded="false" data-panel="cke" onclick="toggleQuick(this)">
+    <span class="qb-label">[Info]</span>
+    <span class="qb-title">Podstawy egzaminu CKE</span>
+    <span class="qb-desc">Status „Hobbita” i zasady części I arkusza.</span>
+    <span class="qb-toggle">Pokaż</span>
+  </button>
+</div>
+
+<div class="quick-panel" id="panel-rozgrzewka" data-panel="rozgrzewka">
+  <h3 style="margin-top:0">Rozgrzewka — 10 pytań na start</h3>
+  <p class="text-sm text-muted">Bez oceny. Odpowiedz samodzielnie, potem rozwiń odpowiedzi.</p>
+  <h4>Lektura</h4>
+  <ol>
+    <li>Kto jest głównym bohaterem „Hobbita”?</li>
+    <li>Kto zabija Smauga — Bilbo czy Bard?</li>
+    <li>Kto zauważa słaby punkt Smauga?</li>
+    <li>Kto jest przywódcą krasnoludów?</li>
+  </ol>
+  <h4>Gramatyka</h4>
+  <ol start="5">
+    <li>Jaka część mowy odpowiada na pytania: jak? gdzie? kiedy?</li>
+    <li>Jaka część mowy łączy wyrazy lub zdania?</li>
+    <li>Jaka część mowy modyfikuje znaczenie wypowiedzi?</li>
+    <li>Jaka część mowy wyraża emocje, reakcje, wezwania?</li>
+    <li>Jaka część mowy łączy się z rzeczownikiem i wskazuje relację?</li>
+    <li>„Czy” — kiedy partykuła, a kiedy spójnik?</li>
+  </ol>
+  <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+    <button class="btn btn-primary btn-sm" onclick="toggle('rozgrzewka-ans')">Pokaż odpowiedzi</button>
+    <button class="btn btn-outline btn-sm" onclick="hideRozgrzewka()">Ukryj odpowiedzi</button>
+  </div>
+  <div id="rozgrzewka-ans" class="reveal reveal-ans">
+    <ol>
+      <li><strong>Bilbo Baggins</strong> — hobbit z Shire, wciągnięty w wyprawę przez Gandalfa.</li>
+      <li><strong>Bard</strong> — mieszkaniec Esgaroth, zabija smoka Czarną Strzałą. Bilbo tylko zauważa słaby punkt.</li>
+      <li><strong>Bilbo</strong> — podczas rozmowy ze Smaugiem w Samotnej Górze widzi jaśniejszą plamę na piersi smoka (miejsce bez pancerza).</li>
+      <li><strong>Thorin Dębowa Tarcza</strong> — dumny krasnolud, potomek władców Samotnej Góry.</li>
+      <li><strong>Przysłówek</strong> — np. szybko, tutaj, jutro.</li>
+      <li><strong>Spójnik</strong> — np. i, ale, ponieważ.</li>
+      <li><strong>Partykuła</strong> — np. nie, czy, oby, nawet.</li>
+      <li><strong>Wykrzyknik</strong> — np. ach, hej, hurra.</li>
+      <li><strong>Przyimek</strong> — np. do, pod, z, na.</li>
+      <li><strong>Partykuła</strong> wprowadza pytanie („Czy Bilbo wrócił?”). <strong>Spójnik</strong> łączy zdanie podrzędne z nadrzędnym („Bilbo nie wiedział, czy ma uciekać.”).</li>
+    </ol>
+  </div>
+</div>
+
+<div class="quick-panel" id="panel-cke" data-panel="cke">
+  <h3 style="margin-top:0">Status lektury CKE — „Hobbit”</h3>
+  <div class="box-cke">
+    <span class="cke-title">Ważne — CKE / E8</span>
+    <p><strong>„Hobbit, czyli tam i z powrotem”</strong> J.R.R. Tolkiena (1937) należy do wybranych lektur obowiązkowych dla klas IV–VI, wykorzystywanych w tej lekcji.</p>
+    <p><strong>Uwaga:</strong> to nie jest pełna lista lektur obowiązkowych na E8. W wykazie są też inne utwory, mity, fragmenty <em>Pana Tadeusza</em> oraz lektury z klas VII–VIII. Aktualny pełny wykaz zawsze sprawdzaj w najnowszym informatorze CKE.</p>
+    <div class="korekta" style="margin-top:12px">
+      <span class="korekta-title">Na E8 — zasada dotycząca części I</span>
+      <p>Jeżeli zadanie dotyczy lektury z klas IV–VI, dokładny zakres zależy od aktualnych zasad CKE i treści arkusza. Jeżeli w arkuszu podano fragment, zadanie należy rozwiązać przede wszystkim na jego podstawie. Znajomość całego utworu pomaga jednak w rozumieniu kontekstu i tworzeniu wypowiedzi argumentacyjnej.</p>
+      <p><strong>Zawsze sprawdź aktualny informator CKE obowiązujący w roku Twojego egzaminu oraz polecenia w arkuszu.</strong></p>
+    </div>
+    <div class="uwaga-box" style="margin-top:12px">
+      <span class="uwaga-title">Co się zmieniło w ostatnich latach</span>
+      <p>Lista lektur i zasady korzystania z fragmentów bywają aktualizowane. Informator CKE podaje dokładny zakres na dany rok.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ORIENT ============ -->
+<section class="section" id="sec-orient">
+<div class="orient">
+  <div class="flow-line">
+    <span class="step"><span class="step-num">1</span>„Hobbit” i bohaterowie</span>
+    <span class="sep">→</span>
+    <span class="step"><span class="step-num">2</span>Nieodmienne części mowy</span>
+    <span class="sep">→</span>
+    <span class="step"><span class="step-num">3</span>Ćwiczenia i test</span>
+  </div>
+  <p class="rule-inline" style="margin-bottom:0"><strong>Zasada pracy:</strong> najpierw orientacja i krótka ściąga, potem pełna treść lekturowa (jedna lektura = rozbudowany opis + wydarzenia), na końcu gramatyka i ćwiczenia. O przynależności wyrazu do części mowy często decyduje jego funkcja w zdaniu — zwłaszcza przy wyrazach takich jak „czy” (partykuła albo spójnik). Przykłady gramatyczne czerpiemy z bohaterów i scen z „Hobbita”.</p>
+</div>
+
+<h3 style="margin-top:22px">Tabela porównawcza: Bilbo vs Thorin</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th></th><th>Bilbo</th><th>Thorin</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Stan początkowy</strong></td><td>wygodny, lękliwy</td><td>dumny przywódca</td></tr>
+      <tr><td><strong>Bodziec</strong></td><td>wyprawa, Gollum, Smaug</td><td>skarb / „smocza choroba”</td></tr>
+      <tr><td><strong>Stan końcowy</strong></td><td>dojrzewanie, odpowiedzialność</td><td>późna skrucha</td></tr>
+      <tr><td><strong>Rodzaj przemiany</strong></td><td>stopniowa</td><td>moralny kryzys + skrucha</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<!-- ============ TOC ============ -->
+<section class="toc-section no-print" id="sec-toc">
+  <h2>Spis treści</h2>
+  <div class="toc-list">
+
+    <details class="toc-item cat-content">
+      <summary class="toc-summary">Cel lekcji i umiejętności<span class="toc-cat">start</span></summary>
+      <div class="toc-actions">
+        <a class="toc-anchor" href="#sec-cel">Cel</a>
+        <a class="toc-anchor" href="#sec-jak-czytac">Jak czytać lekturę</a>
+      </div>
+    </details>
+
+    <details class="toc-item cat-content" open>
+      <summary class="toc-summary">Treść lekturowa<span class="toc-cat">treść</span></summary>
+      <div class="toc-actions">
+        <a class="toc-anchor" href="#sec-lektury-opis">Opis utworu</a>
+        <a class="toc-anchor" href="#sec-bohaterowie">Bohaterowie</a>
+        <a class="toc-anchor" href="#sec-wydarzenia">Wydarzenia</a>
+        <a class="toc-anchor" href="#sec-trojki">Trójkroki</a>
+        <a class="toc-anchor" href="#sec-sceny">Sceny i motywy</a>
+        <a class="toc-anchor" href="#sec-ciekawostki">Ciekawostki</a>
+        <a class="toc-anchor" href="#sec-pary">Pary lektur</a>
+        <a class="toc-anchor" href="#sec-mapa-motywow">Mapa motywów</a>
+      </div>
+    </details>
+
+    <details class="toc-item cat-content">
+      <summary class="toc-summary">Nieodmienne części mowy — teoria<span class="toc-cat">treść</span></summary>
+      <div class="toc-actions">
+        <a class="toc-anchor" href="#sec-teoria">Teoria</a>
+        <a class="toc-anchor" href="#sec-czy">„czy”</a>
+        <a class="toc-anchor" href="#sec-nie">„nie” z czasownikami</a>
+      </div>
+    </details>
+
+    <details class="toc-item cat-exercise">
+      <summary class="toc-summary">Pułapki, ćwiczenia, transformacje<span class="toc-cat">trening</span></summary>
+      <div class="toc-actions">
+        <a class="toc-anchor" href="#sec-pulapki">Pułapki</a>
+        <a class="toc-anchor" href="#sec-cwiczenia">Ćwiczenia</a>
+        <a class="toc-anchor" href="#sec-transformacje">Transformacje</a>
+      </div>
+    </details>
+
+    <details class="toc-item cat-advanced">
+      <summary class="toc-summary">Rozszerzenie · ambitni · zaawansowani<span class="toc-cat">opcja</span></summary>
+      <div class="toc-actions">
+        <a class="toc-anchor" href="#sec-rozszerzenie">ROZSZERZENIE</a>
+        <a class="toc-anchor" href="#sec-ambitni">DLA AMBITNYCH</a>
+        <a class="toc-anchor" href="#sec-zaawansowani">ZAAWANSOWANY</a>
+      </div>
+    </details>
+
+    <details class="toc-item cat-exam">
+      <summary class="toc-summary">Fiszki i test końcowy<span class="toc-cat">egzamin</span></summary>
+      <div class="toc-actions">
+        <a class="toc-anchor" href="#sec-fiszki">Fiszki</a>
+        <a class="toc-anchor" href="#sec-test">Test końcowy</a>
+      </div>
+    </details>
+
+    <details class="toc-item cat-summary">
+      <summary class="toc-summary">Ściąga, słownik, progi, wypracowanie<span class="toc-cat">koniec</span></summary>
+      <div class="toc-actions">
+        <a class="toc-anchor" href="#sec-sciaga-print">Ściąga do druku</a>
+        <a class="toc-anchor" href="#sec-slownik">Słownik</a>
+        <a class="toc-anchor" href="#sec-progi">Progi</a>
+        <a class="toc-anchor" href="#sec-wypr">Wypracowanie</a>
+        <a class="toc-anchor" href="#sec-bledy-rozprawka">Błędy w rozprawce</a>
+        <a class="toc-anchor" href="#sec-polszyzna">Polszczyzna</a>
+        <a class="toc-anchor" href="#sec-zrodla">Źródła</a>
+      </div>
+    </details>
+
+  </div>
+  <div class="toc-keywords">
+    <strong>Słowa kluczowe:</strong> Bilbo · Thorin · Gandalf · Smaug · Bard · Gollum · Esgaroth · Arcyklejnot · smocza choroba · podróż · odwaga · chciwość · przysłówek · przyimek · spójnik · partykuła · wykrzyknik · „czy” · „nie” · CKE · E8 · modelowy akapit
+  </div>
+</section>
+
+<!-- ============ CEL ============ -->
+<section class="section" id="sec-cel">
+<h2><span class="h2-num">0</span>Cel lekcji i umiejętności</h2>
+<div class="card card-ok">
+  <div class="card-head"><span class="dot"></span>Po tej lekcji będziesz potrafić</div>
+  <ul>
+    <li><strong>podać</strong> najważniejsze informacje o bohaterach „Hobbita”,</li>
+    <li><strong>rozpoznać</strong> pięć nieodmiennych części mowy,</li>
+    <li><strong>wyjaśnić</strong> różnicę między partykułą a spójnikiem na przykładzie „czy”,</li>
+    <li><strong>zastosować</strong> zasadę pisowni „nie” z czasownikami,</li>
+    <li><strong>uzasadnić</strong> klasyfikację części mowy w konkretnym zdaniu,</li>
+    <li><strong>wykorzystać</strong> przykłady z lektury w argumencie do wypracowania.</li>
+  </ul>
+</div>
+<div class="card card-gray">
+  <div class="card-head"><span class="dot"></span>Zakres materiału</div>
+  <p class="text-sm"><strong>Nowe:</strong> nieodmienne części mowy (przysłówek, przyimek, spójnik, partykuła, wykrzyknik), „czy” jako partykuła i spójnik, „nie” z czasownikami.</p>
+  <p class="text-sm"><strong>Powtórka:</strong> bohaterowie „Hobbita”, motywy (podróż, odwaga, chciwość, przyjaźń, dom).</p>
+</div>
+
+<h3 id="sec-jak-czytac">Jak czytać lekturę pod egzamin — mini-poradnik</h3>
+<div class="card card-hint">
+  <div class="card-head"><span class="dot"></span>Co notować podczas czytania</div>
+  <ol>
+    <li><strong>Bohaterowie:</strong> kto jest kim, jakie ma cechy, czy się zmienia.</li>
+    <li><strong>Miejsca:</strong> gdzie dzieje się akcja (Shire, Góry Mgliste, Mroczna Puszcza, Esgaroth, Samotna Góra).</li>
+    <li><strong>Konflikt:</strong> kto z kim i o co się spiera.</li>
+    <li><strong>Kluczowe sceny:</strong> 3–5 scen, które zapamiętasz i wykorzystasz w argumencie.</li>
+    <li><strong>Motywy:</strong> podróż, odwaga, chciwość, przyjaźń, dom, walka dobra ze złem.</li>
+    <li><strong>Cytaty:</strong> 2–3 krótkie cytaty, które możesz przywołać.</li>
+    <li><strong>Fakt vs interpretacja:</strong> fakt = „Bard zabija Smauga”; interpretacja = „Smaug symbolizuje niszczącą chciwość” — bo smok strzeże skarbu, którego nie używa, i niszczy wszystko wokół (scena + wyjaśnienie).</li>
+  </ol>
+  <p class="text-sm" style="margin-top:8px"><strong>Wskazówka:</strong> nie ucz się streszczenia na pamięć. Ucz się <em>scen i motywów</em> — one przydają się w każdej rozprawce. Zawsze odróżniaj fakt fabularny od interpretacji.</p>
+</div>
+</section>
+
+<!-- ============ TREŚĆ LEKTUROWA ============ -->
+<section class="section" id="sec-lektury">
+<h2><span class="h2-num">1</span>Treść lekturowa</h2>
+
+<!-- 1.1 Opis utworu -->
+<div class="subsection" id="sec-lektury-opis">
+<h3>1.1. Opis utworu (pełny obraz lektury)</h3>
+<div class="book-grid">
+  <div class="book-card">
+    <div class="bc-head">
+      <div class="bc-title">Hobbit, czyli tam i z powrotem</div>
+      <span class="bc-badge">fantasy</span>
+    </div>
+    <div class="bc-meta"><strong>J.R.R. Tolkien</strong> · 1937 · fabularnie poprzedza wydarzenia z „Władcy Pierścieni”</div>
+    <p class="bc-desc">Głównym bohaterem jest <strong>Bilbo Baggins</strong>, hobbit z Shire, który ceni wygodę i spokój. Czarodziej <strong>Gandalf</strong> wciąga go w wyprawę z <strong>trzynastoma krasnoludami</strong> pod wodzą <strong>Thorina Dębowej Tarczy</strong>. Cel: odzyskać <strong>Samotną Górę</strong> i skarb strzeżony przez smoka <strong>Smauga</strong>. Bilbo wyruszając jest lękliwy; w trakcie drogi dojrzewa — działa sprytem i odwagą mimo strachu. Thorin po zdobyciu skarbu ulega chciwości („smocza choroba”), a przed śmiercią żałuje i prosi Bilba o przebaczenie.</p>
+    <div class="bc-extra">
+      <p><strong>Gatunek i kontekst:</strong> powieść fantasy / baśń / mit / przygodowa (1937). Akcja: Śródziemie. Utwór fabularnie <strong>poprzedza</strong> wydarzenia z <em>Władcy Pierścieni</em> — osobna opowieść o wcześniejszych wydarzeniach, nie „prequel filmowy”.</p>
+      <p><strong>Struktura wyprawy:</strong> Shire → Góry Mgliste (Gollum, pierścień) → Mroczna Puszcza → <strong>Esgaroth</strong> (Miasto na Jeziorze) → <strong>Samotna Góra</strong> (rozmowa ze Smaugiem) → śmierć Smauga → Bitwa Pięciu Armii → powrót do Shire.</p>
+      <p><strong>Łańcuch śmierci Smauga (haczyk):</strong> Bilbo <strong>nie</strong> zabija Smauga. Zauważa słaby punkt (miejsce bez pancerza) → drozd przekazuje informację → <strong>Bard</strong> zabija smoka <strong>Czarną Strzałą</strong>. Smaug wcześniej atakuje Esgaroth.</p>
+      <p><strong>Konflikt:</strong> krasnoludy i sojusznicy vs Smaug, potem vs orkowie i wargowie; wewnętrzny konflikt Thorina z chciwością.</p>
+      <p><strong>Motywy na E8:</strong> dojrzewanie (Bilbo), odwaga mimo strachu, chciwość i skrucha (Thorin), przyjaźń / lojalność, spryt kontra siła, dom i powrót.</p>
+      <p><strong>Przydatna w wypowiedzi:</strong> bohater dynamiczny (Bilbo), chciwość/skrucha (Thorin). Można zestawić z ambicją Gereba (<em>Chłopcy z Placu Broni</em>).</p>
+      <p><strong>Różnice książka–film:</strong> trylogia Jacksona dodaje wątki (Legolas, Tauriel, Azog). Na egzaminie obowiązuje treść <strong>książki</strong>.</p>
+      <p class="text-sm text-muted">Szczegółowa lista wydarzeń z „co z tego wynika” — sekcja 1.3 poniżej (uzupełnia ten opis, nie dubluje go).</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- 1.2 Bohaterowie - TABS -->
+<div class="subsection" id="sec-bohaterowie">
+<h3>1.2. Bohaterowie lektury</h3>
+<p class="text-sm text-muted">Wybierz widok: per bohater, per motyw lub pełna tabela.</p>
+
+<div class="tabs-bar" role="tablist">
+  <button class="tab-btn active" onclick="switchTab('bohater', 'karty', this)">Karty postaci</button>
+  <button class="tab-btn" onclick="switchTab('bohater', 'motyw', this)">Per motyw</button>
+  <button class="tab-btn" onclick="switchTab('bohater', 'wszyscy', this)">Wszyscy (tabela)</button>
+</div>
+
+<div class="tab-panel active" id="panel-bohater-karty">
+  <div class="char-mini-grid">
+    <div class="char-mini">
+      <span class="badge badge-basic" style="position:absolute;top:10px;right:10px">dynamiczny</span>
+      <div class="cm-name">Bilbo Baggins</div>
+      <span class="cm-role">hobbit · włamywacz</span>
+      <p class="cm-arc">Wygodny hobbit → dojrzewa w wyprawie. Zdobywa pierścień, zauważa słaby punkt Smauga, rezygnuje z Arcyklejnotu.</p>
+      <div class="cm-detail"><strong>Dowód przemiany:</strong> na początku boi się opuścić Shire; na końcu samodzielnie podejmuje decyzje w kluczowych momentach (Gollum, Smaug, Arcyklejnot).</div>
+      <div class="cm-motifs"><span class="cm-motif">dojrzewanie</span><span class="cm-motif">odwaga</span><span class="cm-motif">spryt</span></div>
+    </div>
+    <div class="char-mini">
+      <span class="badge badge-basic" style="position:absolute;top:10px;right:10px">dynamiczny</span>
+      <div class="cm-name">Thorin Dębowa Tarcza</div>
+      <span class="cm-role">przywódca krasnoludów</span>
+      <p class="cm-arc">Dumny → „smocza choroba” → skrucha przed śmiercią. Prosi Bilba o przebaczenie.</p>
+      <div class="cm-detail"><strong>Dowód przemiany:</strong> po zdobyciu skarbu odmawia podziału, oskarża Bilba o zdradę; przed śmiercią przyznaje, że postąpił źle.</div>
+      <div class="cm-motifs"><span class="cm-motif">chciwość</span><span class="cm-motif">skrucha</span></div>
+    </div>
+    <div class="char-mini static">
+      <span class="badge badge-rem" style="position:absolute;top:10px;right:10px">statyczny</span>
+      <div class="cm-name">Gandalf</div>
+      <span class="cm-role">czarodziej · mentor</span>
+      <p class="cm-arc">Inicjuje wyprawę, wybiera Bilba. Mędrzec i przewodnik.</p>
+      <div class="cm-detail"><strong>Rola:</strong> łączy świat hobbitów z wielką historią; znika w kluczowych momentach — można to interpretować jako zabieg pozwalający Bilbowi i krasnoludom działać samodzielnie.</div>
+      <div class="cm-motifs"><span class="cm-motif">mądrość</span></div>
+    </div>
+    <div class="char-mini static">
+      <div class="cm-name">Smaug</div>
+      <span class="cm-role">smok · antagonista</span>
+      <p class="cm-arc">Zajął Samotną Górę i skarb. Ginie od Czarnej Strzały Barda.</p>
+      <div class="cm-detail"><strong>Słaby punkt:</strong> jaśniejsza plama na piersi — miejsce bez pancerza. Zauważył ją Bilbo.</div>
+      <div class="cm-motifs"><span class="cm-motif">chciwość</span><span class="cm-motif">pycha</span></div>
+    </div>
+    <div class="char-mini static">
+      <div class="cm-name">Bard Łucznik</div>
+      <span class="cm-role">obrońca Esgaroth</span>
+      <p class="cm-arc">Zabija Smauga Czarną Strzałą, korzystając z informacji drozda.</p>
+      <div class="cm-detail"><strong>Rola:</strong> łączy odwagę ze sprytem; potomek władców Dale.</div>
+      <div class="cm-motifs"><span class="cm-motif">odwaga</span><span class="cm-motif">sprawiedliwość</span></div>
+    </div>
+    <div class="char-mini static">
+      <div class="cm-name">Gollum</div>
+      <span class="cm-role">strażnik pierścienia</span>
+      <p class="cm-arc">Pojedynek na zagadki z Bilbem. Postać tajemnicza i tragiczna.</p>
+      <div class="cm-detail"><strong>Rola:</strong> w „Hobbicie” przede wszystkim przeciwnik Bilba i strażnik pierścienia. Pełniejsza historia i przemiana rozwijają się w „Władcy Pierścieni”.</div>
+      <div class="cm-motifs"><span class="cm-motif">obłęd</span><span class="cm-motif">samotność</span></div>
+    </div>
+    <div class="char-mini static">
+      <div class="cm-name">Elrond</div>
+      <span class="cm-role">pan Rivendell</span>
+      <p class="cm-arc">Gościnny gospodarz; odczytuje mapę wyprawy.</p>
+      <div class="cm-detail"><strong>Rola:</strong> pomaga bohaterom zrozumieć wskazówki na mapie Thorina.</div>
+      <div class="cm-motifs"><span class="cm-motif">mądrość</span><span class="cm-motif">gościnność</span></div>
+    </div>
+    <div class="char-mini static">
+      <div class="cm-name">Beorn</div>
+      <span class="cm-role">zmiennokształtny</span>
+      <p class="cm-arc">Groźny, ale pomocny. Ważny sojusznik w Bitwie Pięciu Armii.</p>
+      <div class="cm-detail"><strong>Rola:</strong> przyjmuje bohaterów w swoim domu; przybywa z odsieczą w decydującym momencie.</div>
+      <div class="cm-motifs"><span class="cm-motif">siła</span><span class="cm-motif">pomoc</span></div>
+    </div>
+    <div class="char-mini static">
+      <div class="cm-name">Drozd</div>
+      <span class="cm-role">ptak · pośrednik informacji</span>
+      <p class="cm-arc">Słyszy rozmowę Bilba ze Smaugiem, przekazuje informację Bardowi.</p>
+      <div class="cm-detail"><strong>Rola:</strong> element łańcucha wydarzeń prowadzącego do śmierci Smauga.</div>
+      <div class="cm-motifs"><span class="cm-motif">przekaz</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="panel-bohater-motyw">
+  <div class="motyw-block">
+    <div class="mb-title"><span class="pill">przemiana</span> Bohaterowie dynamiczni</div>
+    <ul>
+      <li><strong>Bilbo</strong> — dojrzewanie: wygoda → wyprawa → odpowiedzialność. Wraca do Shire wewnętrznie zmieniony.</li>
+      <li><strong>Thorin</strong> — moralna przemiana późna: chciwość → rozpoznanie błędu przed śmiercią.</li>
+    </ul>
+  </div>
+  <div class="motyw-block">
+    <div class="mb-title"><span class="pill">odwaga</span> Odwaga mimo ograniczeń</div>
+    <ul>
+      <li><strong>Bilbo</strong> — hobbit, nie wojownik; działa sprytem, nie siłą (Gollum, Smaug).</li>
+      <li><strong>Bard</strong> — staje do walki ze Smaugiem, gdy inni uciekają.</li>
+    </ul>
+  </div>
+  <div class="motyw-block">
+    <div class="mb-title"><span class="pill">chciwość</span> Chciwość i pokusa</div>
+    <ul>
+      <li><strong>Thorin</strong> — „smocza choroba”; żądza posiadania niszczy relacje z przyjaciółmi.</li>
+      <li><strong>Smaug</strong> — uosobienie chciwości i pychy; strzeże skarbu, którego nie używa.</li>
+    </ul>
+  </div>
+  <div class="motyw-block">
+    <div class="mb-title"><span class="pill">przyjaźń</span> Wspólnota i lojalność</div>
+    <ul>
+      <li><strong>Bilbo i krasnoludy</strong> — mimo początkowej nieufności Bilbo staje się pełnoprawnym członkiem wyprawy.</li>
+      <li><strong>Gandalf i Bilbo</strong> — mentor i uczeń; Gandalf wierzy w Bilba bardziej niż on sam.</li>
+    </ul>
+  </div>
+  <div class="motyw-block">
+    <div class="mb-title"><span class="pill">dom</span> Ojczyzna i powrót</div>
+    <ul>
+      <li><strong>Shire</strong> — dom Bilba; wraca do niego zmieniony, ale przywiązany.</li>
+      <li><strong>Samotna Góra</strong> — utracone dziedzictwo krasnoludów; cel wyprawy.</li>
+    </ul>
+  </div>
+  <div class="motyw-block">
+    <div class="mb-title"><span class="pill">spryt</span> Spryt kontra siła</div>
+    <ul>
+      <li><strong>Bilbo</strong> — wygrywa z Gollumem zagadkami, a ze Smaugiem — spostrzegawczością.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="tab-panel" id="panel-bohater-wszyscy">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Bohater</th><th>Rola</th><th>Charakterystyka</th><th>Czym się wsławił</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Bilbo Baggins</strong></td><td>hobbit, uczestnik wyprawy</td><td>wygodny → odważny, sprytny</td><td>zdobyciem pierścienia, zauważeniem słabego punktu Smauga, przekazaniem Arcyklejnotu</td></tr>
+        <tr><td><strong>Gandalf</strong></td><td>czarodziej, mentor</td><td>mądry, tajemniczy</td><td>zainicjowaniem wyprawy</td></tr>
+        <tr><td><strong>Thorin Dębowa Tarcza</strong></td><td>przywódca krasnoludów</td><td>dumny, chciwy → skruszony</td><td>odzyskaniem Samotnej Góry</td></tr>
+        <tr><td><strong>Smaug</strong></td><td>smok, antagonista</td><td>pyszny, chciwy, potężny</td><td>zniszczeniem Esgaroth</td></tr>
+        <tr><td><strong>Bard Łucznik</strong></td><td>mieszkaniec Esgaroth</td><td>odważny, sprawiedliwy</td><td>zabiciem Smauga Czarną Strzałą</td></tr>
+        <tr><td><strong>Gollum</strong></td><td>strażnik pierścienia</td><td>podstępny, samotny</td><td>pojedynkiem na zagadki</td></tr>
+        <tr><td><strong>Elrond</strong></td><td>pan Rivendell</td><td>mądry, gościnny</td><td>odczytaniem mapy wyprawy</td></tr>
+        <tr><td><strong>Beorn</strong></td><td>zmiennokształtny</td><td>groźny, ale pomocny</td><td>pomocą w Bitwie Pięciu Armii</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+<!-- 1.3 Wydarzenia -->
+<div class="subsection" id="sec-wydarzenia">
+<h3>1.3. Najważniejsze wydarzenia</h3>
+<p class="text-sm text-muted">Ta lista uzupełnia opis utworu — te same fakty, w kolejności fabularnej, z krótkim „co z tego wynika”.</p>
+<div class="card card-rem">
+  <ol>
+    <li><strong>Początek wyprawy (Shire).</strong> Gandalf przyprowadza krasnoludów; Bilbo — początkowo niechętny — dołącza. → punkt wyjścia przemiany Bilba (wygoda → niepewność drogi).</li>
+    <li><strong>Góry Mgliste / Gollum.</strong> Pojedynek na zagadki; Bilbo zdobywa pierścień. → spryt zamiast siły; pierścień wiąże fabułę z późniejszym „Władcą Pierścieni”.</li>
+    <li><strong>Mroczna Puszcza i droga na wschód.</strong> Próby, sojusznicy (m.in. Beorn), zbliżenie do celu.</li>
+    <li><strong>Esgaroth (Miasto na Jeziorze).</strong> Ludzie żyjący z handlu; później cel ataku Smauga.</li>
+    <li><strong>Samotna Góra — rozmowa ze Smaugiem.</strong> Bilbo zauważa słaby punkt smoka (miejsce bez pancerza). → klucz do śmierci Smauga, ale to jeszcze nie zabicie smoka.</li>
+    <li><strong>Śmierć Smauga.</strong> Drozd przekazuje informację; <strong>Bard</strong> zabija smoka <strong>Czarną Strzałą</strong>. → Bilbo ≠ zabójca Smauga.</li>
+    <li><strong>Bitwa Pięciu Armii i śmierć Thorina.</strong> Konflikt o skarb; Thorin rozpoznaje błąd, prosi Bilba o przebaczenie. → późna, ale szczera przemiana Thorina.</li>
+    <li><strong>Powrót do Shire.</strong> Bilbo wraca zewnętrznie „tym samym” hobbitem, wewnętrznie bardziej świadomy i odpowiedzialny.</li>
+  </ol>
+</div>
+</div>
+
+<!-- 1.4 Trójkroki -->
+<div class="subsection" id="sec-trojki">
+<h3>1.4. Trójkroki przemiany — dwaj bohaterowie dynamiczni</h3>
+
+<div class="card card-ok">
+  <div class="card-head"><span class="dot"></span>Bilbo — Hobbit</div>
+  <div class="flow-responsive">
+    <div class="fr-step">
+      <div class="fs-label"><span class="num">1</span>Stan początkowy</div>
+      <div class="fs-title">Wygodny hobbit</div>
+      <div class="fs-desc">Ceni spokój i bezpieczeństwo Shire.</div>
+      <div class="fs-quote">Scena: początkowo Bilbo broni spokojnego życia; następnego dnia mimo lęku rusza za krasnoludami.</div>
+      <div class="fs-why">Początkowo Bilbo jest przywiązany do wygody i boi się nieznanego.</div>
+    </div>
+    <div class="fr-arrow">→</div>
+    <div class="fr-step">
+      <div class="fs-label"><span class="num">2</span>Wydarzenie</div>
+      <div class="fs-title">Wyprawa</div>
+      <div class="fs-desc">Gollum, Smaug, Arcyklejnot — samodzielne decyzje.</div>
+      <div class="fs-quote">Sceny: pojedynek na zagadki z Gollumem; rozmowa ze Smaugiem; rezygnacja z Arcyklejnotu.</div>
+      <div class="fs-why">W każdym z tych momentów Bilbo działa samodzielnie i ryzykuje dla innych.</div>
+    </div>
+    <div class="fr-arrow">→</div>
+    <div class="fr-step">
+      <div class="fs-label"><span class="num">3</span>Stan końcowy</div>
+      <div class="fs-title">Odważny, samodzielny</div>
+      <div class="fs-desc">Dojrzewa, ale nadal jest hobbitem.</div>
+      <div class="fs-quote">Scena: powrót do Shire; Bilbo pisze wspomnienia.</div>
+      <div class="fs-why">Nie staje się wojownikiem — zmienia się wewnętrznie, zachowując swoją tożsamość.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card card-ok" style="margin-top:14px">
+  <div class="card-head"><span class="dot"></span>Thorin — Krasnolud</div>
+  <div class="flow-responsive">
+    <div class="fr-step">
+      <div class="fs-label"><span class="num">1</span>Stan początkowy</div>
+      <div class="fs-title">Dumny przywódca</div>
+      <div class="fs-desc">Skupiony na odzyskaniu dziedzictwa.</div>
+      <div class="fs-quote">Scena: Thorin opowiada o krzywdzie krasnoludów i pragnie odzyskać Samotną Górę.</div>
+      <div class="fs-why">Na początku Thorin jest szlachetny, dumny i zdeterminowany.</div>
+    </div>
+    <div class="fr-arrow">→</div>
+    <div class="fr-step">
+      <div class="fs-label"><span class="num">2</span>Wydarzenie</div>
+      <div class="fs-title">„Smocza choroba”</div>
+      <div class="fs-desc">Po zdobyciu skarbu ulega żądzy posiadania i podejrzliwości.</div>
+      <div class="fs-quote">Scena: Thorin oskarża Bilba o zdradę, odmawia podziału skarbu.</div>
+      <div class="fs-why">Chciwość zmienia jego charakter — traci zdolność racjonalnej oceny.</div>
+    </div>
+    <div class="fr-arrow">→</div>
+    <div class="fr-step">
+      <div class="fs-label"><span class="num">3</span>Stan końcowy</div>
+      <div class="fs-title">Skrucha przed śmiercią</div>
+      <div class="fs-desc">Rozpoznaje błąd, prosi Bilba o przebaczenie.</div>
+      <div class="fs-quote">Scena: przed śmiercią Thorin mówi Bilbowi, że gdyby więcej osób ceniło dobro i radość jak on, świat byłby lepszy.</div>
+      <div class="fs-why">Przemiana późna, ale szczera — Thorin odzyskuje zdolność oceny własnego postępowania.</div>
+    </div>
+  </div>
+  <p class="text-sm" style="margin-top:10px"><strong>Porównanie Bilbo–Thorin:</strong> Bilbo dojrzewa stopniowo. Thorin najpierw moralnie upada pod wpływem chciwości, a dopiero pod koniec odzyskuje zdolność oceny własnego postępowania.</p>
+</div>
+
+<div class="haczyk-box">
+  <span class="haczyk-title">Haczyk egzaminacyjny — kto zabił Smauga?</span>
+  <p><strong>Bilbo nie zabija Smauga.</strong> Bilbo zauważył słaby punkt smoka; drozd przekazał Bardowi informację; <strong>Bard</strong> zabił smoka <strong>Czarną Strzałą</strong>.</p>
+</div>
+
+<div class="flow-responsive" style="margin-top:14px">
+  <div class="fr-step" style="border-left:3px solid #2b6cb0">
+    <div class="fs-label"><span class="num" style="background:#2b6cb0">1</span>Bilbo</div>
+    <div class="fs-title">Zauważa</div>
+    <div class="fs-desc">Podczas rozmowy ze Smaugiem widzi miejsce bez pancerza.</div>
+  </div>
+  <div class="fr-arrow">→</div>
+  <div class="fr-step" style="border-left:3px solid #b7791f">
+    <div class="fs-label"><span class="num" style="background:#b7791f">2</span>Drozd</div>
+    <div class="fs-title">Przekazuje</div>
+    <div class="fs-desc">Słyszy rozmowę, przekazuje wiadomość Bardowi.</div>
+  </div>
+  <div class="fr-arrow">→</div>
+  <div class="fr-step" style="border-left:3px solid #2d8f5e">
+    <div class="fs-label"><span class="num" style="background:#2d8f5e">3</span>Bard</div>
+    <div class="fs-title">Zabija</div>
+    <div class="fs-desc">Wykorzystuje słaby punkt — Czarna Strzała.</div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- ============ SCENY I MOTYWY ============ -->
+<section class="section" id="sec-sceny">
+<h2><span class="h2-num">2</span>Sceny i motywy przekrojowe</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Motyw</th><th>Opis</th><th>Przykład z tekstu</th><th>Jak wykorzystać w argumencie</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Podróż i wędrówka</strong></td><td>droga do wewnętrznej przemiany</td><td>Bilbo wychodzi z Shire jako wygodny hobbit, wraca jako ktoś bardziej świadomy siebie</td><td>przemiana wymaga wyjścia ze strefy komfortu</td></tr>
+      <tr><td><strong>Przyjaźń i lojalność</strong></td><td>relacje Bilba z krasnoludami i Gandalfem</td><td>mimo początkowej nieufności Bilbo staje się pełnoprawnym członkiem wyprawy</td><td>prawdziwa przyjaźń buduje się w trudnych doświadczeniach</td></tr>
+      <tr><td><strong>Chciwość („smocza choroba”)</strong></td><td>niszcząca żądza posiadania</td><td>Thorin po zdobyciu skarbu staje się podejrzliwy i nieufny; Smaug uosabia chciwość</td><td>chciwość niszczy relacje i charakter</td></tr>
+      <tr><td><strong>Odwaga</strong></td><td>działanie mimo strachu</td><td>Bilbo działa w sytuacjach, w których nie ma przewagi siły (Gollum, Smaug)</td><td>odwaga to nie brak strachu, lecz działanie mimo niego</td></tr>
+      <tr><td><strong>Walka dobra ze złem</strong></td><td>obrona Esgaroth, Bitwa Pięciu Armii</td><td>Bard zabija Smauga; w Bitwie Pięciu Armii różne rasy łączą siły</td><td>dobro wymaga współpracy i poświęcenia</td></tr>
+      <tr><td><strong>Dom i dziedzictwo</strong></td><td>utracona ojczyzna krasnoludów</td><td>cel wyprawy – odzyskanie Samotnej Góry</td><td>ojczyzna / dziedzictwo może być zarówno siłą, jak i źródłem konfliktu</td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="rule" style="margin-top:8px">Schemat uzasadnienia motywu: nazwij motyw → wskaż scenę → wyjaśnij, co pokazuje → połącz z tematem.</p>
+
+<h4>Modelowe akapity argumentacyjne</h4>
+
+<div class="model-akapit">
+  <div class="ma-label">Model 1 · odwaga</div>
+  <p><span class="ma-step">Teza</span> Odwaga nie zależy od siły fizycznej.</p>
+  <p><span class="ma-step">Przykład</span> W „Hobbicie” Bilbo — hobbit, nie wojownik — rozmawia ze Smaugiem i zauważa słaby punkt smoka.</p>
+  <p><span class="ma-step">Wyjaśnienie</span> Działa mimo strachu i bez przewagi siły. O sukcesie decydują spryt i zdecydowanie.</p>
+  <p><span class="ma-step">Wniosek</span> Tolkien pokazuje, że prawdziwa odwaga to działanie mimo lęku, a nie brak lęku.</p>
+</div>
+
+<div class="model-akapit">
+  <div class="ma-label">Model 2 · chciwość</div>
+  <p><span class="ma-step">Teza</span> Chciwość może zniszczyć nawet szlachetnego człowieka.</p>
+  <p><span class="ma-step">Przykład</span> Thorin po zdobyciu skarbu odmawia podziału łupów, oskarża Bilba o zdradę i gotów jest wywołać wojnę.</p>
+  <p><span class="ma-step">Wyjaśnienie</span> Tolkien nazywa ten stan „smoczą chorobą” — żądza posiadania przejmuje kontrolę nad rozumem i niszczy relacje z przyjaciółmi.</p>
+  <p><span class="ma-step">Wniosek</span> Dopiero przed śmiercią Thorin odzyskuje zdolność oceny i żałuje swojego postępowania.</p>
+</div>
+
+<div class="model-akapit">
+  <div class="ma-label">Model 3 · dojrzewanie</div>
+  <p><span class="ma-step">Teza</span> Dojrzewanie nie polega na zmianie tożsamości, lecz na głębszym zrozumieniu siebie.</p>
+  <p><span class="ma-step">Przykład</span> Bilbo wraca do Shire jako ten sam hobbit, ale wewnętrznie zmieniony — bardziej odważny i odpowiedzialny.</p>
+  <p><span class="ma-step">Wyjaśnienie</span> Tolkien celowo nie czyni z Bilba rycerza — pozostaje hobbitem, który ceni dom i spokój, ale rozumie już wartość przygody i przyjaźni.</p>
+  <p><span class="ma-step">Wniosek</span> Dojrzałość to nie zaprzeczenie własnej natury, lecz jej pogłębienie.</p>
+</div>
+</section>
+
+<!-- ============ CIEKAWOSTKI ============ -->
+<section class="section" id="sec-ciekawostki">
+<h2><span class="h2-num">3</span>Ciekawostki i mniej pamiętane fakty</h2>
+<div class="card card-rem">
+  <p class="text-sm"><strong>Kontekst (konkursy / ciekawostka):</strong> wyprawa: <strong>2941–2942 Trzeciej Ery</strong> (wyruszenie w kwietniu); śmierć Smauga i Bitwa Pięciu Armii — przede wszystkim <strong>2941</strong>. Na E8 nie jest to zwykle wymagane — przydatne na konkursach czytelniczych.</p>
+<ul>
+    <li><strong>Jedyny Pierścień.</strong> Pierścień znaleziony przez Bilba to Jedyny Pierścień, który odegra kluczową rolę w „Władcy Pierścieni”.</li>
+    <li><strong>Esgaroth.</strong> Miasto na Jeziorze zamieszkane przez ludzi żyjących z handlu. Smaug atakuje je po wypędzeniu z Samotnej Góry.</li>
+    <li><strong>Jaśniejsza plama na piersi Smauga.</strong> Na piersi smoka jest odkryte miejsce bez pancerza. Tam wbiła się Czarna Strzała.</li>
+    <li><strong>Arcyklejnot.</strong> Dziedziczny klejnot rodu Thorina; Bilbo przekazuje go jako kartę przetargową.</li>
+    <li><strong>Beorn.</strong> Zmiennokształtny, który przybiera postać niedźwiedzia. Ważny sojusznik w Bitwie Pięciu Armii.</li>
+    <li><strong>Bilbo nie zostaje bohaterem heroicznym.</strong> Wraca do Shire jako ten sam hobbit, ale wewnętrznie zmieniony.</li>
+    <li><strong>Różnice książka–film.</strong> Filmowa trylogia Petera Jacksona dodaje wątki. Obowiązuje treść książki.</li>
+    <li><strong>Gandalf znika w kluczowych momentach.</strong> To zabieg narracyjny: daje bohaterom przestrzeń na samodzielne decyzje.</li>
+    <li><strong>„Smocza choroba”.</strong> Metafora niszczącej żądzy posiadania — nie medyczna choroba.</li>
+  </ul>
+</div>
+</section>
+
+<!-- ============ PARY ============ -->
+<section class="section" id="sec-pary">
+<h2><span class="h2-num">4</span>Pary lektur — rusztowanie do rozprawki</h2>
+<div class="card card-hint">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Motyw</th><th>Para lektur</th><th>Kluczowe podobieństwo / różnica</th></tr></thead>
+      <tbody>
+        <tr><td>Przemiana bohatera</td><td>Bilbo (Hobbit) + Edmund (Narnia)</td><td>obaj zmieniają się pod wpływem doświadczeń; Bilbo dojrzewa, Edmund przechodzi przemianę moralną</td></tr>
+        <tr><td>Odwaga mimo ograniczeń</td><td>Bilbo (Hobbit) + Nemeczek (Plac Broni)</td><td>obaj działają mimo braku przewagi siły</td></tr>
+        <tr><td>Chciwość</td><td>Thorin (Hobbit) + Gereb (Plac Broni)</td><td>Thorin — żądza skarbu; Gereb — żądza władzy; obaj żałują</td></tr>
+        <tr><td>Współpraca / przyjaźń</td><td>Bilbo i krasnoludy + Kajko i Kokosz</td><td>różne talenty + lojalność = skuteczność</td></tr>
+        <tr><td>Mentor</td><td>Gandalf (Hobbit) + Pan Kleks (Akademia)</td><td>obaj prowadzą bohatera ku dojrzałości; różne metody</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- ============ MAPA MOTYWÓW ============ -->
+<section class="section" id="sec-mapa-motywow">
+<h2><span class="h2-num">4.1</span>Mapa motywów — „Hobbit”</h2>
+<p class="lead">Szybki przegląd motywów i ich powiązań w lekturze.</p>
+<div class="mapa-motywow">
+  <div class="mm-card">
+    <h4>Przemiana bohatera</h4>
+    <ul>
+      <li>Bilbo — dojrzewanie</li>
+      <li>Thorin — chciwość → skrucha</li>
+    </ul>
+  </div>
+  <div class="mm-card">
+    <h4>Odwaga</h4>
+    <ul>
+      <li>Bilbo — Gollum, Smaug</li>
+      <li>Bard — Czarna Strzała</li>
+    </ul>
+  </div>
+  <div class="mm-card">
+    <h4>Chciwość</h4>
+    <ul>
+      <li>Thorin — „smocza choroba”</li>
+      <li>Smaug — strzeże skarbu</li>
+    </ul>
+  </div>
+  <div class="mm-card">
+    <h4>Przyjaźń i lojalność</h4>
+    <ul>
+      <li>Bilbo i krasnoludy</li>
+      <li>Gandalf i Bilbo</li>
+    </ul>
+  </div>
+  <div class="mm-card">
+    <h4>Dom i powrót</h4>
+    <ul>
+      <li>Shire — dom Bilba</li>
+      <li>Samotna Góra — dziedzictwo</li>
+    </ul>
+  </div>
+  <div class="mm-card">
+    <h4>Walka dobra ze złem</h4>
+    <ul>
+      <li>Bitwa Pięciu Armii</li>
+      <li>Obrona Esgaroth</li>
+    </ul>
+  </div>
+  <div class="mm-card">
+    <h4>Mentor</h4>
+    <ul>
+      <li>Gandalf — inicjator wyprawy</li>
+    </ul>
+  </div>
+  <div class="mm-card">
+    <h4>Spryt kontra siła</h4>
+    <ul>
+      <li>Bilbo vs Gollum</li>
+      <li>Bilbo vs Smaug</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- ============ NIEODMIENNE CZĘŚCI MOWY ============ -->
+<section class="section" id="sec-teoria">
+<h2><span class="h2-num">5</span>Nieodmienne części mowy — teoria</h2>
+
+<div class="card card-rem">
+  <div class="card-head"><span class="dot"></span>Czym są nieodmienne części mowy?</div>
+  <p><strong>Nieodmienne części mowy</strong> nie odmieniają się przez przypadki, liczby ani osoby. Zaliczamy do nich:</p>
+  <ul>
+    <li><strong>przysłówek</strong> — określa czasownik, przymiotnik lub inny przysłówek,</li>
+    <li><strong>przyimek</strong> — łączy się z rzeczownikiem (lub zaimkiem, liczebnikiem),</li>
+    <li><strong>spójnik</strong> — łączy wyrazy lub zdania,</li>
+    <li><strong>partykuła</strong> — modyfikuje znaczenie wypowiedzi,</li>
+    <li><strong>wykrzyknik</strong> — wyraża emocje, reakcje, wezwania.</li>
+  </ul>
+</div>
+
+<h3>Drzewo klasyfikacji nieodmiennych części mowy</h3>
+<div class="tree">
+  <div class="root">NIEODMIENNE CZĘŚCI MOWY</div>
+  <div class="level1">
+    <div class="branch przym">
+      <div class="branch-title">Określające i łączące</div>
+      <div class="branch-meta">wchodzą w relacje z innymi wyrazami</div>
+      <div class="leaves">
+        <div class="leaf">
+          <span class="leaf-name">Przysłówek</span>
+          <span class="leaf-ex">jak? gdzie? kiedy? · <strong>szybko, tutaj, jutro</strong></span>
+        </div>
+        <div class="leaf">
+          <span class="leaf-name">Przyimek</span>
+          <span class="leaf-ex">łączy się z rzeczownikiem · <strong>do, pod, z, na</strong></span>
+        </div>
+        <div class="leaf">
+          <span class="leaf-name">Spójnik</span>
+          <span class="leaf-ex">łączy wyrazy lub zdania · <strong>i, ale, ponieważ</strong></span>
+        </div>
+      </div>
+    </div>
+    <div class="branch przys">
+      <div class="branch-title">Modyfikujące i wyrażające</div>
+      <div class="branch-meta">nadają barwę wypowiedzi</div>
+      <div class="leaves">
+        <div class="leaf">
+          <span class="leaf-name">Partykuła</span>
+          <span class="leaf-ex">modyfikuje znaczenie · <strong>nie, czy, oby, nawet</strong></span>
+        </div>
+        <div class="leaf">
+          <span class="leaf-name">Wykrzyknik</span>
+          <span class="leaf-ex">wyraża emocje · <strong>ach, hej, hurra</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Pełna tabela nieodmiennych części mowy</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Część mowy</th><th>Funkcja</th><th>Pytania / cecha</th><th>Przykłady</th></tr></thead>
+    <tbody>
+      <tr><td>Przysłówek</td><td>określa czasownik, przymiotnik, inny przysłówek</td><td>jak? gdzie? kiedy?</td><td>szybko, tutaj, jutro, bardzo</td></tr>
+      <tr><td>Przyimek</td><td>wskazuje relację z rzeczownikiem</td><td>—</td><td>do, pod, z, na, przed, za</td></tr>
+      <tr><td>Spójnik</td><td>łączy wyrazy lub zdania</td><td>—</td><td>i, ale, ponieważ, czy, że</td></tr>
+      <tr><td>Partykuła</td><td>modyfikuje znaczenie</td><td>—</td><td>nie, czy, oby, nawet, tylko</td></tr>
+      <tr><td>Wykrzyknik</td><td>wyraża emocje, reakcje, wezwania</td><td>—</td><td>ach, hej, hurra</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card card-hint" style="margin-top:14px">
+  <div class="card-head"><span class="dot"></span>Przykłady z lektury — nieodmienne części mowy w akcji</div>
+  <ul>
+    <li><strong>Przysłówek:</strong> <em>Bilbo szedł ostrożnie przez Mroczną Puszczę.</em></li>
+    <li><strong>Przyimek:</strong> <em>Krasnoludy stały przed bramą Samotnej Góry.</em></li>
+    <li><strong>Spójnik:</strong> <em>Bilbo wiedział, że musi oddać Arcyklejnot.</em></li>
+    <li><strong>Partykuła:</strong> <em>Czy Thorin odzyska skarb?</em></li>
+    <li><strong>Wykrzyknik:</strong> <em>Ach, jaki ogromny skarb!</em></li>
+  </ul>
+</div>
+
+<h3 id="sec-czy">Rozróżnienie „czy” — partykuła czy spójnik?</h3>
+<div class="card card-trap">
+  <div class="card-head"><span class="dot"></span>Zapamiętaj</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Funkcja</th><th>Przykład</th><th>Jak rozpoznać</th></tr></thead>
+      <tbody>
+        <tr><td>Partykuła</td><td>Czy Bilbo wrócił do domu?</td><td>Rozpoczyna pytanie.</td></tr>
+        <tr><td>Spójnik</td><td>Bilbo nie wiedział, czy ma uciekać.</td><td>Wprowadza zdanie podrzędne.</td></tr>
+        <tr><td>Spójnik</td><td>Nie wiem, czy Bilbo wrócił, czy został z krasnoludami.</td><td>Łączy alternatywne możliwości.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="korekta" style="margin-top:10px">
+    <span class="korekta-title">Klasyfikacja zależy od funkcji</span>
+    <p>O przynależności „czy” do części mowy decyduje funkcja w zdaniu: partykuła wprowadza pytanie; spójnik wprowadza zdanie podrzędne lub łączy alternatywy. Nie oznacza to, że każdy wyraz może dowolnie zmieniać kategorię.</p>
+  </div>
+</div>
+
+<h3 id="sec-nie">Pisownia „nie” z czasownikami</h3>
+<div class="card card-trap">
+  <div class="card-head"><span class="dot"></span>Zasada</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Konstrukcja</th><th>Pisownia</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td>Zwykłe przeczenie czasownika</td><td><strong>ROZDZIELNIE</strong></td><td>nie czytam, nie piszesz, nie czytał</td></tr>
+        <tr><td>Czasowniki o pisowni łącznej (hasła słownikowe)</td><td><strong>ŁĄCZNIE</strong></td><td>nienawidzić, niepokoić się</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="uwaga-box" style="margin-top:10px">
+    <span class="uwaga-title">Jak rozstrzygnąć pisownię?</span>
+    <p>Najpierw sprawdź, czy „nie” przeczy czynności. Jeśli tak — pisz <strong>rozdzielnie</strong>: <em>nie czyta</em>, <em>nie chciał</em>, <em>nie uciekł</em>. Niektóre czasowniki mają zapis <strong>łączny</strong>, bo tworzą osobne hasła słownikowe (to nie zwykłe przeczenie), np. <em>nienawidzić</em>, <em>niepokoić się</em>, <em>niedomagać</em>, <em>niedowidzieć</em>. W razie wątpliwości sprawdź słownik.</p>
+    <ul>
+      <li><em>nienawidzić</em> → <em>nawidzić</em> (forma nie istnieje) → łącznie.</li>
+      <li><em>nie czytać</em> → <em>czytać</em> (forma istnieje) → rozdzielnie.</li>
+    </ul>
+    <p class="text-sm" style="margin-top:6px"><strong>W razie wątpliwości sprawdź w słowniku ortograficznym.</strong></p>
+  </div>
+</div>
+
+<h3>Przykłady błędne i poprawne</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Błędnie</th><th>Poprawnie</th><th>Uwaga</th></tr></thead>
+    <tbody>
+      <tr><td><span class="error-text">nieczyta</span></td><td><span class="correct-text">nie czyta</span></td><td>zwykłe przeczenie → rozdzielnie</td></tr>
+      <tr><td><span class="error-text">nieuciekł</span></td><td><span class="correct-text">nie uciekł</span></td><td>zwykłe przeczenie → rozdzielnie</td></tr>
+      <tr><td><span class="error-text">nie nawidzić</span></td><td><span class="correct-text">nienawidzić</span></td><td>wyjątek słownikowy → łącznie</td></tr>
+      <tr><td><span class="error-text">niechciał</span></td><td><span class="correct-text">nie chciał</span></td><td>zwykłe przeczenie → rozdzielnie</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<!-- ============ PUŁAPKI ============ -->
+<section class="section" id="sec-pulapki">
+<h2><span class="h2-num">6</span>Pułapki egzaminacyjne</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Mylenie</th><th>Błąd</th><th>Poprawnie</th></tr></thead>
+    <tbody>
+      <tr><td>„czy” — część mowy</td><td><span class="error-text">„Czy” zawsze jest partykułą</span></td><td><span class="correct-text">Partykuła w pytaniach, spójnik w zdaniach podrzędnych.</span></td></tr>
+      <tr><td>Przecinek przed spójnikami</td><td><span class="error-text">Zawsze stawiamy przecinek przed „i”</span></td><td><span class="correct-text">Zwykle nie stawiamy przecinka przed „i”, gdy łączy dwa równorzędne wyrazy lub zdania. Przecinek może jednak pojawić się przed „i” z innych powodów (np. koniec wtrącenia lub zdania podrzędnego).</span></td></tr>
+      <tr><td>„nie” z czasownikiem</td><td><span class="error-text">„Nie” z czasownikiem piszemy łącznie</span></td><td><span class="correct-text">Rozdzielnie (z wyjątkami słownikowymi).</span></td></tr>
+      <tr><td>Mylenie części mowy</td><td><span class="error-text">Mylenie przyimka i spójnika</span></td><td><span class="correct-text">Przyimek łączy się z rzeczownikiem; spójnik łączy zdania/wyrazy.</span></td></tr>
+      <tr><td>Bilbo vs Bard</td><td><span class="error-text">Bilbo zabił Smauga</span></td><td><span class="correct-text">Bilbo zauważył słaby punkt; Bard zabił Czarną Strzałą.</span></td></tr>
+      <tr><td>Thorin — typ bohatera</td><td><span class="error-text">Thorin jest tylko chciwy do końca</span></td><td><span class="correct-text">Przed śmiercią żałuje — to późna, ale szczera przemiana.</span></td></tr>
+      <tr><td>Aspekt czasownika</td><td><span class="error-text">„przeczytam” to czas teraźniejszy</span></td><td><span class="correct-text">To przyszłość — aspekt dokonany nie ma zwykłego czasu teraźniejszego.</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>Dlaczego uczniowie popełniają te błędy?</h4>
+<div class="card card-hint">
+  <ul>
+    <li><strong>„Czy” zawsze partykuła?</strong> Uczniowie zapamiętują jeden przykład i przenoszą go na wszystkie zdania. Klasyfikacja zależy od funkcji w zdaniu.</li>
+    <li><strong>Przecinek przed „i”?</strong> Uczniowie słyszeli, że „przed spójnikami stawiamy przecinek” — ale „i” łączące równorzędne elementy nie wymaga przecinka.</li>
+    <li><strong>„nie” z czasownikiem łącznie?</strong> Uczniowie przenoszą zasadę z imiesłowów przymiotnikowych (łącznie) na czasowniki. To dwa różne zagadnienia.</li>
+    <li><strong>Bilbo zabił Smauga?</strong> Bo Bilbo jest głównym bohaterem — uczniowie przypisują mu wszystkie ważne czyny. Tolkien celowo rozdziela role.</li>
+    <li><strong>Thorin „tylko chciwy”?</strong> Uczniowie pamiętają sceny chciwości, ale pomijają scenę skruchy przed śmiercią.</li>
+  </ul>
+</div>
+</section>
+
+<!-- ============ ĆWICZENIA ============ -->
+<section class="section" id="sec-cwiczenia">
+<h2><span class="h2-num">7</span>Ćwiczenia interaktywne</h2>
+<p class="lead">Najpierw spróbuj sam, potem podpowiedź, na końcu sprawdź.</p>
+<div class="hide-all-bar no-print">
+  <span class="hint-text">Ukryj wszystkie odpowiedzi jednym przyciskiem.</span>
+  <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie odpowiedzi</button>
+</div>
+
+<div class="exercise">
+  <div class="ex-title"><span class="ex-num">1</span>Rozpoznaj nieodmienną część mowy</div>
+  <button class="btn btn-hint btn-sm" onclick="toggle('h1')">Podpowiedź</button>
+  <button class="btn btn-hint btn-sm" onclick="showHint2('h1b')">Głębsza podpowiedź</button>
+  <div id="h1" class="reveal reveal-hint">Sprawdź, z czym łączy się wyraz i jaką pełni funkcję w zdaniu.</div>
+  <div id="h1b" class="hint-2">Przysłówek → jak? gdzie? kiedy?; przyimek → łączy się z rzeczownikiem; spójnik → łączy wyrazy/zdania; partykuła → modyfikuje znaczenie; wykrzyknik → emocje.</div>
+  <div class="fitb-row"><span class="q-label">1. szybko</span>
+    <select id="cz1"><option value="">— wybierz —</option><option value="prz">przysłówek</option><option value="przy">przyimek</option><option value="sp">spójnik</option><option value="pa">partykuła</option><option value="wy">wykrzyknik</option></select><span id="cz1i" class="res-icon"></span></div>
+  <div class="fitb-row"><span class="q-label">2. do</span>
+    <select id="cz2"><option value="">— wybierz —</option><option value="prz">przysłówek</option><option value="przy">przyimek</option><option value="sp">spójnik</option><option value="pa">partykuła</option><option value="wy">wykrzyknik</option></select><span id="cz2i" class="res-icon"></span></div>
+  <div class="fitb-row"><span class="q-label">3. ale</span>
+    <select id="cz3"><option value="">— wybierz —</option><option value="prz">przysłówek</option><option value="przy">przyimek</option><option value="sp">spójnik</option><option value="pa">partykuła</option><option value="wy">wykrzyknik</option></select><span id="cz3i" class="res-icon"></span></div>
+  <div class="fitb-row"><span class="q-label">4. nie</span>
+    <select id="cz4"><option value="">— wybierz —</option><option value="prz">przysłówek</option><option value="przy">przyimek</option><option value="sp">spójnik</option><option value="pa">partykuła</option><option value="wy">wykrzyknik</option></select><span id="cz4i" class="res-icon"></span></div>
+  <div class="fitb-row"><span class="q-label">5. ach!</span>
+    <select id="cz5"><option value="">— wybierz —</option><option value="prz">przysłówek</option><option value="przy">przyimek</option><option value="sp">spójnik</option><option value="pa">partykuła</option><option value="wy">wykrzyknik</option></select><span id="cz5i" class="res-icon"></span></div>
+  <button class="btn btn-primary btn-sm" onclick="checkCz()">Sprawdź</button>
+  <div id="czRes" style="margin-top:8px;font-weight:500"></div>
+</div>
+
+<div class="exercise">
+  <div class="ex-title"><span class="ex-num">2</span>„czy” — partykuła czy spójnik?</div>
+  <button class="btn btn-hint btn-sm" onclick="toggle('h2')">Podpowiedź</button>
+  <button class="btn btn-hint btn-sm" onclick="showHint2('h2b')">Głębsza podpowiedź</button>
+  <div id="h2" class="reveal reveal-hint">Partykuła wprowadza pytanie. Spójnik łączy zdanie podrzędne z nadrzędnym.</div>
+  <div id="h2b" class="hint-2">Zadaj pytanie: czy „czy” samodzielnie tworzy pytanie, czy łączy dwa zdania?</div>
+  <div class="fitb-row"><span class="q-label">1. Czy Bilbo wrócił do domu?</span>
+    <select id="czy1"><option value="">— wybierz —</option><option value="p">partykuła</option><option value="s">spójnik</option></select><span id="czy1i" class="res-icon"></span></div>
+  <div class="fitb-row"><span class="q-label">2. Bilbo nie wiedział, czy ma uciekać.</span>
+    <select id="czy2"><option value="">— wybierz —</option><option value="p">partykuła</option><option value="s">spójnik</option></select><span id="czy2i" class="res-icon"></span></div>
+  <div class="fitb-row"><span class="q-label">3. Czy to prawda, czy fikcja?</span>
+    <select id="czy3"><option value="">— wybierz —</option><option value="p">partykuła</option><option value="s">spójnik</option></select><span id="czy3i" class="res-icon"></span></div>
+  <button class="btn btn-primary btn-sm" onclick="checkCzy()">Sprawdź</button>
+  <div id="czyRes" style="margin-top:8px;font-weight:500"></div>
+</div>
+
+<div class="exercise">
+  <div class="ex-title"><span class="ex-num">3</span>„nie” z czasownikami</div>
+  <button class="btn btn-hint btn-sm" onclick="toggle('h3')">Podpowiedź</button>
+  <button class="btn btn-hint btn-sm" onclick="showHint2('h3b')">Głębsza podpowiedź</button>
+  <div id="h3" class="reveal reveal-hint">Z czasownikami „nie” piszemy rozdzielnie, chyba że czasownik bez „nie” nie istnieje.</div>
+  <div id="h3b" class="hint-2">Usuń „nie” i sprawdź, czy forma istnieje. Jeśli nie — piszemy łącznie (wyjątek słownikowy).</div>
+  <div class="fitb-row"><span class="q-label">1. (niechciał / nie chciał)</span>
+    <select id="ni1"><option value="">— wybierz —</option><option value="l">łącznie</option><option value="r">rozdzielnie</option></select><span id="ni1i" class="res-icon"></span></div>
+  <div class="fitb-row"><span class="q-label">2. (nieuciekł / nie uciekł)</span>
+    <select id="ni2"><option value="">— wybierz —</option><option value="l">łącznie</option><option value="r">rozdzielnie</option></select><span id="ni2i" class="res-icon"></span></div>
+  <div class="fitb-row"><span class="q-label">3. (nienawidzić / nie nawidzić)</span>
+    <select id="ni3"><option value="">— wybierz —</option><option value="l">łącznie</option><option value="r">rozdzielnie</option></select><span id="ni3i" class="res-icon"></span></div>
+  <button class="btn btn-primary btn-sm" onclick="checkNi()">Sprawdź</button>
+  <div id="niRes" style="margin-top:8px;font-weight:500"></div>
+</div>
+
+<div class="exercise">
+  <div class="ex-title"><span class="ex-num">4</span>Podaj scenę i wyjaśnij (1–2 zdania)</div>
+  <p class="text-sm">Uzupełnij argument: <strong>„Bilbo jest bohaterem dynamicznym, ponieważ…”</strong></p>
+  <button class="btn btn-primary btn-sm" onclick="toggle('uz-bilbo')">Pokaż modelową odpowiedź</button>
+  <button class="btn btn-hint btn-sm" onclick="showHint2('uz-bilbo-h')">Wskazówka</button>
+  <div id="uz-bilbo-h" class="hint-2">Wskaż scenę przed i po. Porównaj postawę Bilba w Shire (początek) i w Samotnej Górze (środek).</div>
+  <div id="uz-bilbo" class="reveal reveal-ans">
+    „Na początku Bilbo cenił przede wszystkim wygodę i bezpieczeństwo. W czasie wyprawy podejmował samodzielne decyzje, między innymi podczas spotkań z Gollumem i Smaugiem. Dzięki tym doświadczeniom stał się odważniejszy, rozsądniejszy, bardziej odpowiedzialny i roztropny.”
+  </div>
+</div>
+
+<div class="exercise">
+  <div class="ex-title"><span class="ex-num">5</span>Uzasadnij, dlaczego Thorin przechodzi przemianę</div>
+  <p class="text-sm">Napisz 2–3 zdania uzasadnienia.</p>
+  <button class="btn btn-primary btn-sm" onclick="toggle('uz-thorin')">Pokaż modelową odpowiedź</button>
+  <div id="uz-thorin" class="reveal reveal-ans">
+    „Thorin początkowo jest szlachetnym, dumnym przywódcą. Po zdobyciu skarbu ulega chciwości („smocza choroba”), oskarża Bilba o zdradę i odmawia podziału łupów. Przed śmiercią rozpoznaje jednak swój błąd i prosi Bilba o przebaczenie — to późna, ale szczera przemiana.”
+  </div>
+</div>
+
+<div class="exercise">
+  <div class="ex-title"><span class="ex-num">6</span>Wyjaśnij, dlaczego Bilbo NIE zabił Smauga</div>
+  <p class="text-sm">Napisz 2–3 zdania uzasadnienia.</p>
+  <button class="btn btn-primary btn-sm" onclick="toggle('uz-smaug')">Pokaż modelową odpowiedź</button>
+  <div id="uz-smaug" class="reveal reveal-ans">
+    „Bilbo podczas rozmowy ze Smaugiem zauważył słaby punkt smoka — jaśniejszą plamę na piersi, miejsce bez pancerza. Informację usłyszał drozd i przekazał ją Bardowi. To Bard zabił Smauga Czarną Strzałą, nie Bilbo.”
+  </div>
+</div>
+</section>
+
+<!-- ============ TRANSFORMACJE ============ -->
+<section class="section" id="sec-transformacje">
+<h2><span class="h2-num">8</span>Transformacje</h2>
+<div class="card card-rem">
+  <div class="card-head"><span class="dot"></span>Oryginał: „Bilbo szybko pobiegł do jaskini.”</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Poziom</th><th>Transformacja</th><th>Uwaga</th></tr></thead>
+      <tbody>
+        <tr><td>PODSTAWA</td><td>Bilbo pobiegł do jaskini w szybkim tempie.</td><td>równoważna</td></tr>
+        <tr><td>ROZSZERZENIE</td><td>Bilbo, biegnąc szybko, dotarł do jaskini.</td><td>równoważna</td></tr>
+        <tr><td>DLA AMBITNYCH</td><td>Szybkość, z jaką Bilbo pobiegł do jaskini, zaskoczyła wszystkich.</td><td>równoważna (zmiana konstrukcji)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-sm" style="margin-top:8px"><strong>Cel transformacji:</strong> przekształcenie zdania bez zmiany znaczenia. Sprawdź, czy Twoja wersja zachowuje sens oryginału.</p>
+</div>
+
+<div class="card card-hint">
+  <div class="card-head"><span class="dot"></span>Więcej transformacji do przećwiczenia</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Oryginał</th><th>Transformacja równoważna</th></tr></thead>
+      <tbody>
+        <tr><td>Bilbo szedł ostrożnie przez Mroczną Puszczę.</td><td>Bilbo szedł przez Mroczną Puszczę z ostrożnością.</td></tr>
+        <tr><td>Krasnoludy stały przed bramą Samotnej Góry.</td><td>Przed bramą Samotnej Góry stały krasnoludy.</td></tr>
+        <tr><td>Bilbo wiedział, że musi oddać Arcyklejnot.</td><td>Bilbo wiedział o konieczności oddania Arcyklejnotu.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- ============ ROZSZERZENIE ============ -->
+<section class="section" id="sec-rozszerzenie">
+<h2><span class="h2-num">9</span>Rozszerzenie <span class="badge badge-hidden">opcja</span></h2>
+<div class="layer-toggle no-print">
+  <button class="btn btn-primary" data-show="Pokaż ROZSZERZENIE" data-hide="Ukryj ROZSZERZENIE" onclick="toggleLayer('rozszerzenie-content')">Pokaż ROZSZERZENIE</button>
+</div>
+<div id="rozszerzenie-content" class="layer-content hidden">
+  <div class="card card-ok">
+    <ol>
+      <li><strong>Wyjaśnij różnicę między partykułą a spójnikiem na przykładzie „czy”.</strong><br>Partykuła wprowadza pytanie („Czy Bilbo wrócił?”). Spójnik łączy zdanie podrzędne z nadrzędnym („Bilbo nie wiedział, czy ma zostać.”).</li>
+      <li><strong>W zdaniu „Bilbo nie wiedział, czy ma zostać” określ funkcję „czy”.</strong><br>Spójnik — wprowadza zdanie podrzędne.</li>
+      <li><strong>Znajdź wszystkie nieodmienne części mowy w zdaniu:</strong> „Ach, Bilbo szybko pobiegł do jaskini, ale nie zdążył.”<br>Ach (wykrzyknik), szybko (przysłówek), do (przyimek), ale (spójnik), nie (partykuła).</li>
+      <li><strong>Przekształć zdanie pytające z partykułą „czy” na zdanie z „czy” jako spójnikiem.</strong><br>Zastanawiał się, czy ma uciekać, czy zostać z krasnoludami.</li>
+      <li><strong>Popraw:</strong> „On niechciał iść do jaskini.” → <em>On nie chciał iść do jaskini.</em> — „nie” z czasownikiem rozdzielnie.</li>
+      <li><strong>Wskaż różnicę:</strong> „nienawidzić” (wyjątek słownikowy, łącznie) vs „nie lubić” (zwykłe przeczenie, rozdzielnie).</li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<!-- ============ DLA AMBITNYCH ============ -->
+<section class="section" id="sec-ambitni">
+<h2><span class="h2-num">10</span>Dla ambitnych <span class="badge badge-hidden">opcja</span></h2>
+<div class="layer-toggle no-print">
+  <button class="btn btn-amb" data-show="Pokaż DLA AMBITNYCH" data-hide="Ukryj DLA AMBITNYCH" onclick="toggleLayer('ambitni-content')">Pokaż DLA AMBITNYCH</button>
+</div>
+<div id="ambitni-content" class="layer-content hidden">
+  <div class="card card-amb">
+    <p><strong>Treść:</strong> Przeanalizuj zdanie: „Czy słaby punkt Smauga odkrył Bilbo czy Thorin?”</p>
+    <ol>
+      <li>Określ funkcję „czy”.</li>
+      <li>Alternatywne zdanie: „Nie wiadomo, czy Bilbo odkrył słaby punkt Smauga, czy Thorin.”</li>
+      <li>Uzasadnij, dlaczego nie należy wymuszać osobnej klasyfikacji każdego „czy” w nienaturalnym zdaniu.</li>
+    </ol>
+    <button class="btn btn-primary btn-sm" onclick="toggle('amb-ans')">Pokaż odpowiedzi</button>
+    <div id="amb-ans" class="reveal reveal-ans">
+      <ol>
+        <li>„Czy” wprowadza pytanie; wyrazy „Bilbo” i „Thorin” tworzą człony wyboru.</li>
+        <li>Oba „czy” pomagają zbudować konstrukcję wyboru.</li>
+        <li>Klasyfikacja zależy od funkcji w kontekście. Ćwiczenia powinny dawać jednoznaczne przykłady — w nienaturalnych zdaniach analiza bywa wymuszona.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============ ZAAWANSOWANY ============ -->
+<section class="section" id="sec-zaawansowani">
+<h2><span class="h2-num">11</span>Zaawansowany <span class="badge badge-hidden">opcja</span></h2>
+<div class="layer-toggle no-print">
+  <button class="btn btn-amb" data-show="Pokaż ZAAWANSOWANY" data-hide="Ukryj ZAAWANSOWANY" onclick="toggleLayer('zaaw-content')">Pokaż ZAAWANSOWANY</button>
+</div>
+<div id="zaaw-content" class="layer-content hidden">
+  <div class="card card-amb">
+    <p><strong>Treść:</strong> Czy wszystkie nieodmienne części mowy są naprawdę nieodmienne? Podaj kontrprzykład i uzasadnij.</p>
+    <button class="btn btn-hint btn-sm" onclick="toggle('zaw-ans')">Pokaż przykładową odpowiedź</button>
+    <div id="zaw-ans" class="reveal reveal-ans">
+      <p>Przysłówki stopniujemy (<em>szybko – szybciej – najszybciej</em>), ale to nie jest odmiana przez przypadki czy osoby — to stopniowanie. Dlatego nadal zaliczamy je do nieodmiennych. Podobnie niektóre przyimki mogą być stopniowane w konstrukcjach porównawczych (<em>bliżej, dalej</em>).</p>
+    </div>
+  </div>
+  <div class="card card-amb" style="margin-top:12px">
+    <p><strong>Zadanie dodatkowe:</strong> Porównaj przemianę Bilba i Thorina. Która jest bardziej przekonująca i dlaczego?</p>
+    <button class="btn btn-hint btn-sm" onclick="toggle('zaw-ans2')">Pokaż wskazówki</button>
+    <div id="zaw-ans2" class="reveal reveal-ans">
+      <p><strong>Bilbo:</strong> przemiana stopniowa, rozłożona na całą wyprawę — wiele scen (Gollum, Smaug, Arcyklejnot, powrót do Shire). Bardzo przekonująca.</p>
+      <p><strong>Thorin:</strong> przemiana późna i krótka — chciwość pokazana szeroko, skrucha tylko w jednej scenie przed śmiercią. Można argumentować, że jest mniej przekonująca, ale za to dramatyczna.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============ FISZKI ============ -->
+<section class="section" id="sec-fiszki">
+<h2><span class="h2-num">12</span>Fiszki — 20 fiszek</h2>
+<p class="lead">Kliknij pytanie, aby rozwinąć definicję, przykład i pułapkę.</p>
+<div class="flash-list">
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">1. Główny bohater „Hobbita”</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Bilbo Baggins — hobbit z Shire.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> Zostaje wciągnięty przez Gandalfa w wyprawę z krasnoludami.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Bilbo nie zabija Smauga — to robi Bard.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">2. Kto zabija Smauga?</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Łańcuch:</strong> Bilbo dostrzega odsłonięte miejsce na piersi Smauga → drozd słyszy i przekazuje informację → <strong>Bard</strong> zabija Czarną Strzałą.</p>
+      <p class="fa-ex"><strong>Scena:</strong> rozmowa Bilba ze Smaugiem w Samotnej Górze.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Bilbo NIE zabił Smauga — to częsty błąd.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">3. Kto zauważa słaby punkt Smauga?</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Bilbo.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> Podczas rozmowy ze smokiem widzi jaśniejszą plamę na piersi — miejsce bez pancerza.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Zauważenie słabego punktu to nie to samo co zabicie smoka.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">4. Kto jest przywódcą krasnoludów?</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Thorin Dębowa Tarcza.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> Potomek władców Samotnej Góry; pragnie odzyskać dziedzictwo.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Thorin nie jest jednoznacznie „zły” — przed śmiercią żałuje.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">5. Przysłówek — pytania</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> jak? gdzie? kiedy?</p>
+      <p class="fa-ex"><strong>Przykład:</strong> szybko, tutaj, jutro.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Nie myl z przyimkiem — przyimek łączy się z rzeczownikiem.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">6. Spójnik — funkcja</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> łączy wyrazy lub zdania.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> i, ale, ponieważ, czy, że.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Zwykle nie stawiamy przecinka przed „i”, gdy łączy dwa równorzędne wyrazy lub zdania. Przecinek może jednak pojawić się przed „i” z innych powodów (np. koniec wtrącenia lub zdania podrzędnego).</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">7. Partykuła — funkcja</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> modyfikuje znaczenie wypowiedzi.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> nie, czy, oby, nawet, tylko.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> „Czy” jako partykuła ≠ „czy” jako spójnik. Klasyfikacja zależy od funkcji w zdaniu.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">8. Wykrzyknik — funkcja</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> wyraża emocje, reakcje, wezwania.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> ach, hej, hurra.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Wykrzyknik ≠ zdanie wykrzyknikowe.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">9. Przyimek — funkcja</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> łączy się z rzeczownikiem, zaimkiem lub liczebnikiem.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> do, pod, z, na.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Przyimek ≠ spójnik. Spójnik łączy zdania, przyimek — wyrazy w zdaniu.</p>
+    </div>
+  </div>
+    <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">10. Kto zabija Smauga? (łańcuch)</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Odpowiedź:</strong> Bard Czarną Strzałą — nie Bilbo.</p>
+      <p class="fa-ex"><strong>Łańcuch:</strong> Bilbo zauważa słaby punkt → drozd przekazuje → Bard zabija.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> uczniowie często przypisują zabicie smoka Bilbowi.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">11. „czy” jako spójnik</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> łączy zdanie podrzędne z nadrzędnym.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> „Bilbo nie wiedział, czy ma uciekać.”</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Nie myl z partykułą.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">12. „nie” z czasownikami</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Reguła:</strong> Rozdzielnie (nie czyta), z wyjątkami słownikowymi (nienawidzić).</p>
+      <p class="fa-ex"><strong>Przykład:</strong> nie chciał, nie uciekł, ale: nienawidzić.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Nie przenoś zasady z imiesłowów przymiotnikowych (łącznie).</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">13. Czasowniki o pisowni łącznej (słownik) z czasownikami</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> czasowniki, które bez „nie” nie istnieją: nienawidzić, niepokoić się.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> <em>nienawidzić</em> → <em>nawidzić</em> nie istnieje → łącznie.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> W razie wątpliwości sprawdź słownik ortograficzny.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">14. Thorin — przemiana</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Trójkrok:</strong> chciwość („smocza choroba”) → rozpoznanie błędu przed śmiercią.</p>
+      <p class="fa-ex"><strong>Scena:</strong> Thorin przed śmiercią prosi Bilba o przebaczenie.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Przemiana późna i krótka — nie myl jej z dojrzewaniem Bilba.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">15. Gandalf — rola</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Inicjator wyprawy, mentor Bilba.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> Gandalf wybiera Bilba na włamywacza i prowadzi krasnoludów do Shire.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Gandalf znika w kluczowych momentach — to zabieg narracyjny, nie błąd.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">16. Gollum</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Strażnik pierścienia, przeciwnik Bilba w pojedynku na zagadki.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> W „Hobbicie” pojawia się w Górach Mglistych.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Pełna historia Golluma rozwija się w „Władcy Pierścieni”.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">17. Bard — rola</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Obrońca Esgaroth, zabija Smauga Czarną Strzałą.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> Potomek władców Dale; wykorzystuje informację drozda.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> To nie Bilbo zabił Smauga.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">18. Motyw — podróż</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Droga do wewnętrznej przemiany.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> Bilbo wychodzi z Shire jako wygodny hobbit, wraca jako ktoś bardziej świadomy siebie.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Podróż to nie tylko przemieszczanie się — to metafora rozwoju.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">19. Motyw — chciwość</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Niszcząca żądza posiadania.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> Thorin i „smocza choroba”; Smaug strzeże skarbu, którego nie używa.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Chciwość dotyczy nie tylko pieniędzy — to żądza władzy i posiadania.</p>
+    </div>
+  </div>
+  <div class="flash-item"><button class="flash-q" onclick="toggleFlashItem(this)">20. Motyw — odwaga</button>
+    <div class="flash-a">
+      <p class="fa-def"><strong>Definicja:</strong> Działanie mimo strachu.</p>
+      <p class="fa-ex"><strong>Przykład:</strong> Bilbo rozmawia ze Smaugiem; Bard staje do walki ze smokiem.</p>
+      <p class="fa-trap"><strong>Pułapka:</strong> Odwaga to nie brak strachu, lecz działanie mimo niego.</p>
+    </div>
+  </div>
+</div>
+<div class="no-print" style="margin-top:8px">
+  <button class="btn btn-outline btn-sm" onclick="flashExpandAll(true)">Rozwiń wszystkie</button>
+  <button class="btn btn-outline btn-sm" onclick="flashExpandAll(false)">Zwiń wszystkie</button>
+</div>
+</section>
+
+<!-- ============ TEST ============ -->
+<section class="section" id="sec-test">
+<h2><span class="h2-num">13</span>Test końcowy — 14 pytań <span class="badge badge-exam">egzamin</span></h2>
+<div class="exercise">
+  <div class="ex-title"><span class="ex-num">?</span>Odpowiedz na pytania</div>
+  <div id="testQ"></div>
+  <div class="no-print" style="margin-top:12px">
+    <button class="btn btn-primary btn-sm" onclick="checkTest()">Sprawdź</button>
+    <button class="btn btn-outline btn-sm" onclick="resetTest()">Resetuj</button>
+    <button class="btn btn-hint btn-sm" onclick="toggleAllTestHints(this)">Pokaż podpowiedzi</button>
+  </div>
+  <div id="testRes" style="margin-top:10px;font-weight:500"></div>
+  <div id="testExplain" style="margin-top:12px"></div>
+</div>
+
+<div class="exercise" style="margin-top:18px">
+  <div class="ex-title"><span class="ex-num">+</span>Pytania otwarte — uzasadnij (2–3 zdania)</div>
+  <p class="text-sm text-muted">Te pytania wymagają krótkiego uzasadnienia. Najpierw spróbuj sam, potem porównaj z modelem.</p>
+  <div class="fitb-row" style="flex-direction:column;align-items:flex-start">
+    <span class="q-label" style="margin-bottom:6px"><strong>1.</strong> Wyjaśnij, dlaczego Bilbo jest bohaterem dynamicznym. Podaj jedną scenę z początku i jedną z późniejszej części utworu.</span>
+    <button class="btn btn-primary btn-sm" onclick="toggle('open-bilbo')">Pokaż modelową odpowiedź</button>
+    <div id="open-bilbo" class="reveal reveal-ans">Na początku Bilbo ceni spokój i bezpieczeństwo Shire — odmawia nawet Gandalfowi. W trakcie wyprawy samodzielnie podejmuje ryzykowne decyzje (pojedynek z Gollumem, rozmowa ze Smaugiem, rezygnacja z Arcyklejnotu). Wraca do Shire wewnętrznie zmieniony: bardziej odważny i odpowiedzialny, choć nadal pozostaje hobbitem.</div>
+  </div>
+  <div class="fitb-row" style="flex-direction:column;align-items:flex-start;margin-top:10px">
+    <span class="q-label" style="margin-bottom:6px"><strong>2.</strong> Czy „smocza choroba” Thorina to tylko metafora chciwości? Co konkretnie zmienia się w jego zachowaniu?</span>
+    <button class="btn btn-primary btn-sm" onclick="toggle('open-thorin')">Pokaż modelową odpowiedź</button>
+    <div id="open-thorin" class="reveal reveal-ans">„Smocza choroba” to metafora niszczącej żądzy posiadania. Thorin po zdobyciu skarbu staje się podejrzliwy, odmawia podziału łupów, oskarża Bilba o zdradę. Przed śmiercią rozpoznaje błąd i prosi o przebaczenie — to późna, ale szczera przemiana.</div>
+  </div>
+  <div class="fitb-row" style="flex-direction:column;align-items:flex-start;margin-top:10px">
+    <span class="q-label" style="margin-bottom:6px"><strong>3.</strong> W zdaniu „Bilbo nie wiedział, czy ma oddać pierścień” — jaką funkcję pełni „czy”? Uzasadnij.</span>
+    <button class="btn btn-primary btn-sm" onclick="toggle('open-czy')">Pokaż modelową odpowiedź</button>
+    <div id="open-czy" class="reveal reveal-ans">„Czy” jest spójnikiem — łączy zdanie podrzędne z nadrzędnym; nie wprowadza samodzielnego pytania.</div>
+  </div>
+</div>
+</section>
+
+<!-- ============ ŚCIĄGA ============ -->
+<section class="section" id="sec-sciaga-print">
+<h2><span class="h2-num">14</span>Ściąga podsumowująca</h2>
+<div class="no-print" style="margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap">
+  <button class="btn btn-print" onclick="window.print()">Drukuj ściągę</button>
+  <button class="btn btn-outline" onclick="copySciaga()">Kopiuj tekst</button>
+</div>
+<div id="sciaga-content" class="card card-rem" style="background:#fff">
+  <div class="print-section-title" style="display:none">Ściąga — L002</div>
+  <p class="text-sm text-muted" style="margin-top:0">Pełny opis lektury i wydarzeń: sekcje <strong>1.1–1.3</strong>. Tu tylko skrót do powtórki przed testem.</p>
+  <h3 style="margin-top:8px">„Hobbit” — 6 punktów</h3>
+  <ul>
+    <li>Tolkien, 1937 · Bilbo Baggins (dojrzewanie: wygoda → odpowiedzialność).</li>
+    <li>Smauga zabija <strong>Bard</strong> Czarną Strzałą; Bilbo tylko <strong>zauważa</strong> słaby punkt.</li>
+    <li>Thorin: chciwość („smocza choroba”) → skrucha przed śmiercią.</li>
+    <li>Gandalf — inicjator wyprawy · trasa: Shire → Gollum → Puszcza → Esgaroth → Samotna Góra → Bitwa → powrót.</li>
+    <li>Motywy E8: odwaga, dojrzewanie, chciwość/skrucha, spryt vs siła.</li>
+    <li>Status egzaminacyjny: <em>Hobbit, czyli tam i z powrotem</em> jest lekturą obowiązkową z klas IV–VI. Zakres sprawdzania znajomości całego utworu na egzaminie zawsze sprawdzaj w aktualnym informatorze CKE (w niektórych rocznikach pytania o lektury IV–VI dotyczyły wyłącznie fragmentu w arkuszu).</li>
+  </ul>
+
+  <h3>Fakt fabularny vs interpretacja</h3>
+  <ul>
+    <li><strong>Fakt:</strong> Bard zabija Smauga Czarną Strzałą. · Bilbo zauważa słaby punkt smoka. · Thorin żałuje przed śmiercią.</li>
+    <li><strong>Interpretacja szkolna:</strong> Smaug symbolizuje niszczącą chciwość. · „Smocza choroba” to metafora żądzy posiadania. · Podróż Bilba to droga dojrzewania.</li>
+    <li><strong>Zasada:</strong> Fakt wynika bezpośrednio z wydarzeń. Interpretacja to sposób odczytania — wymaga uzasadnienia sceną.</li>
+  </ul>
+
+  <h3>Nieodmienne części mowy</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Część mowy</th><th>Funkcja</th><th>Pytania / cecha</th><th>Przykłady</th></tr></thead>
+      <tbody>
+        <tr><td>Przysłówek</td><td>określa czasownik, przymiotnik, przysłówek</td><td>jak? gdzie? kiedy?</td><td>szybko, tutaj, jutro</td></tr>
+        <tr><td>Przyimek</td><td>łączy się z rzeczownikiem</td><td>—</td><td>do, pod, z, na</td></tr>
+        <tr><td>Spójnik</td><td>łączy wyrazy lub zdania</td><td>—</td><td>i, ale, ponieważ</td></tr>
+        <tr><td>Partykuła</td><td>modyfikuje znaczenie</td><td>—</td><td>nie, czy, oby</td></tr>
+        <tr><td>Wykrzyknik</td><td>wyraża emocje</td><td>—</td><td>ach, hej, hurra</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>„czy” — partykuła czy spójnik?</h3>
+  <ul>
+    <li><strong>Partykuła:</strong> Czy Bilbo wrócił do domu? (wprowadza pytanie).</li>
+    <li><strong>Spójnik:</strong> Bilbo nie wiedział, czy ma uciekać. (łączy zdanie podrzędne).</li>
+  </ul>
+
+  <h3>„nie” z czasownikami</h3>
+  <ul>
+    <li><strong>Rozdzielnie:</strong> nie czytam, nie piszesz, nie czytał.</li>
+    <li><strong>Łącznie (wyjątki słownikowe):</strong> nienawidzić, niepokoić się.</li>
+  </ul>
+
+  <h3>Motywy — szybka mapa</h3>
+  <ul>
+    <li><strong>Podróż:</strong> droga do wewnętrznej przemiany.</li>
+    <li><strong>Odwaga:</strong> działanie mimo strachu (Bilbo, Bard).</li>
+    <li><strong>Chciwość:</strong> Thorin, Smaug.</li>
+    <li><strong>Przyjaźń:</strong> Bilbo i krasnoludy, Gandalf i Bilbo.</li>
+    <li><strong>Dom i powrót:</strong> Shire, Samotna Góra.</li>
+  </ul>
+</div>
+</section>
+
+<!-- ============ SŁOWNIK ============ -->
+<section class="section" id="sec-slownik">
+<h2><span class="h2-num">15</span>Słownik terminów</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Termin</th><th>Definicja</th><th>Przykład</th><th>Kontrprzykład / pułapka</th></tr></thead>
+    <tbody>
+      <tr><td>Przysłówek</td><td>nieodmienna część mowy określająca czasownik, przymiotnik lub inny przysłówek</td><td>szybko, tutaj, jutro</td><td>Nie myl z przyimkiem</td></tr>
+      <tr><td>Przyimek</td><td>nieodmienna część mowy łącząca się z rzeczownikiem, zaimkiem lub liczebnikiem</td><td>do, pod, z, na</td><td>Przyimek ≠ spójnik</td></tr>
+      <tr><td>Spójnik</td><td>nieodmienna część mowy łącząca wyrazy lub zdania</td><td>i, ale, ponieważ</td><td>Przed „i” nie zawsze stawiamy przecinek</td></tr>
+      <tr><td>Partykuła</td><td>nieodmienna część mowy modyfikująca znaczenie wypowiedzi</td><td>nie, czy, oby, nawet</td><td>„Czy” nie zawsze jest partykułą</td></tr>
+      <tr><td>Wykrzyknik</td><td>nieodmienna część mowy wyrażająca emocje, reakcje, wezwania</td><td>ach, hej, hurra</td><td>Wykrzyknik ≠ zdanie wykrzyknikowe</td></tr>
+      <tr><td>Bohater dynamiczny</td><td>postać z wyraźną przemianą wewnętrzną; zmiana nie musi być wyłącznie na lepsze (np. Thorin: upadek → skrucha)</td><td>Bilbo, Thorin, Edmund</td><td>Nie każdy bohater przeżywający przygody jest dynamiczny</td></tr>
+      <tr><td>Bohater statyczny</td><td>postać bez wyraźnej przemiany wewnętrznej</td><td>Gandalf, Aslan, Nemeczek</td><td>Statyczny ≠ bierny ani nieistotny</td></tr>
+      <tr><td>Motyw</td><td>powtarzający się element treści utworu</td><td>podróż, chciwość, odwaga</td><td>Motyw to nie to samo co temat</td></tr>
+      <tr><td>Fakt fabularny</td><td>zdarzenie wynikające bezpośrednio z fabuły</td><td>Bard zabija Smauga</td><td>Fakt wymaga znajomości tekstu</td></tr>
+      <tr><td>Interpretacja</td><td>sposób odczytania utworu, wymaga uzasadnienia</td><td>Smaug = symbol chciwości</td><td>Nie każde odczytanie jest równie przekonujące</td></tr>
+      <tr><td>Smocza choroba</td><td>metafora niszczącej żądzy posiadania</td><td>Thorin po zdobyciu skarbu</td><td>To nie medyczna choroba</td></tr>
+      <tr><td>Arcyklejnot</td><td>dziedziczny klejnot rodu Thorina</td><td>Bilbo zabiera go jako kartę przetargową</td><td>Nie jest zwykłym skarbem</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<!-- ============ PROGI ============ -->
+<section class="section" id="sec-progi">
+<h2><span class="h2-num">16</span>Progi <span class="badge badge-hidden">opcja</span></h2>
+<div class="layer-toggle no-print">
+  <button class="btn btn-primary" data-show="Pokaż progi" data-hide="Ukryj progi" onclick="toggleLayer('progi-content')">Pokaż progi</button>
+</div>
+<div id="progi-content" class="layer-content hidden">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Wynik</th><th>Następny krok</th></tr></thead>
+      <tbody>
+        <tr><td>0–59%</td><td>wróć do PODSTAWY</td></tr>
+        <tr><td>60–79%</td><td>utrwal regułę</td></tr>
+        <tr><td>80–89%</td><td>przejdź do ROZSZERZENIA</td></tr>
+        <tr><td>90–100%</td><td>odblokuj DLA AMBITNYCH</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- ============ WYPRACOWANIE ============ -->
+<section class="section" id="sec-wypr">
+<h2><span class="h2-num">17</span>Jak to wykorzystać w wypracowaniu</h2>
+<div class="card card-rem">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Motyw</th><th>Argument</th></tr></thead>
+      <tbody>
+        <tr><td>Odwaga</td><td>Bilbo działa mimo strachu — rozmawia ze Smaugiem i zauważa słaby punkt smoka.</td></tr>
+        <tr><td>Chciwość</td><td>Thorin ulega „smoczej chorobie”; przed śmiercią żałuje i prosi Bilba o przebaczenie.</td></tr>
+        <tr><td>Dojrzewanie</td><td>Bilbo wraca do Shire wewnętrznie zmieniony — bardziej odważny i odpowiedzialny.</td></tr>
+        <tr><td>Przyjaźń</td><td>Bilbo zdobywa zaufanie krasnoludów, mimo że początkowo nie jest przez nich szanowany.</td></tr>
+        <tr><td>Spryt kontra siła</td><td>Bilbo wygrywa z Gollumem zagadkami, a ze Smaugiem — spostrzegawczością.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:10px"><span class="rule">Schemat argumentu:</span> Teza → przykład → wyjaśnienie → wniosek</p>
+</div>
+
+<h4>Pełny modelowy akapit — motyw dojrzewania</h4>
+<p class="text-sm text-muted">Model odwagi (Bilbo–Smaug) jest w sekcji motywów / Model 1. Tu inny motyw, żeby mieć dwa wzorce.</p>
+<div class="model-akapit">
+  <div class="ma-label">Wzór · dojrzewanie</div>
+  <p><span class="ma-step">Teza</span> Doświadczenie i odpowiedzialność mogą dojrzewać człowieka bardziej niż siła fizyczna.</p>
+  <p><span class="ma-step">Przykład</span> Bilbo wychodzi z Shire jako hobbit przywiązany do wygody; po wyprawie (Gollum, Smaug, Arcyklejnot) wraca bardziej świadomy siebie i odpowiedzialny.</p>
+  <p><span class="ma-step">Wyjaśnienie</span> Nie staje się rycerzem — pozostaje hobbitem, ale zmienia system wartości: potrafi ryzykować dla innych i rezygnować z korzyści.</p>
+  <p><span class="ma-step">Wniosek</span> <em>Hobbit</em> pokazuje dojrzewanie jako stopniową zmianę postawy, a nie jednorazowy akt bohaterstwa.</p>
+</div>
+
+<h4>Schemat budowy rozprawki</h4>
+<div class="card card-hint">
+  <ol>
+    <li><strong>Wstęp</strong> — wprowadzenie w temat, zarysowanie problemu. 2–3 zdania. Stanowisko (teza) jasno we wstępie.</li>
+    <li><strong>Argument 1</strong> — przykład z lektury obowiązkowej + wyjaśnienie + wniosek cząstkowy.</li>
+    <li><strong>Argument 2</strong> — drugi przykład zgodny z wymaganiami polecenia + wyjaśnienie + wniosek.</li>
+    <li><strong>Argument 3 (opcjonalnie)</strong> — jeśli polecenie i czas na to pozwalają.</li>
+    <li><strong>Wniosek</strong> — synteza argumentów (nie tylko powtórzenie tezy).</li>
+  </ol>
+  <p class="text-sm" style="margin-top:8px"><strong>Przydatne zwroty:</strong> „Moim zdaniem…”, „Świadczy o tym…”, „Warto zauważyć, że…”, „Podsumowując…”.</p>
+</div>
+
+<h4>Haczyki do zapamiętania</h4>
+<div class="haczyk-box">
+  <span class="haczyk-title">Egzaminacyjne „pułapki” przy „Hobbicie”</span>
+  <ul style="margin-bottom:0">
+    <li><strong>Kto zabił Smauga?</strong> Bilbo <strong>nie</strong> zabija Smauga. Łańcuch: Bilbo dostrzega odsłonięte miejsce na piersi → drozd słyszy i przekazuje informację → <strong>Bard</strong> zabija Czarną Strzałą.</li>
+    <li><strong>„Czy” w zdaniu?</strong> Sprawdź funkcję. „Czy Bilbo wrócił?” → partykuła. „Bilbo nie wiedział, czy ma uciekać.” → spójnik.</li>
+    <li><strong>„nie” z czasownikiem?</strong> Rozdzielnie (<em>nie czyta</em>). Czasowniki o pisowni łącznej utrwalone w słowniku (to nie zwykłe przeczenie): <em>nienawidzić</em>, <em>niedowidzieć</em>, <em>niedomagać</em>, <em>niepokoić się</em>.</li>
+  </ul>
+</div>
+</section>
+
+<!-- ============ BŁĘDY W ROZPRAWCE ============ -->
+<section class="section" id="sec-bledy-rozprawka">
+<h2><span class="h2-num">17.1</span>Częste błędy w rozprawce</h2>
+<div class="card card-trap">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Błąd</th><th>Dlaczego to błąd</th><th>Jak poprawić</th></tr></thead>
+      <tbody>
+        <tr><td>Brak tezy / stanowiska</td><td>Czytelnik nie wie, co udowadniasz</td><td>Sformułuj stanowisko jasno we wstępie</td></tr>
+        <tr><td>Przykład bez wyjaśnienia</td><td>Nie wiadomo, co przykład ma udowodnić</td><td>Dodaj zdanie „To pokazuje, że…”</td></tr>
+        <tr><td>Przykład bez związku z tezą</td><td>Argument nie wspiera tezy</td><td>Sprawdź, czy przykład potwierdza tezę</td></tr>
+        <tr><td>Brak wniosku</td><td>Rozprawka urywa się bez podsumowania</td><td>Dodaj akapit, który syntetyzuje argumenty</td></tr>
+        <tr><td>Tylko jeden argument</td><td>Wypowiedź bywa zbyt wąska</td><td>W szkolnym schemacie warto zaplanować co najmniej dwa rozwinięte argumenty</td></tr>
+        <tr><td>Streszczanie całej lektury</td><td>Rozprawka to nie streszczenie</td><td>Skup się na jednej scenie / motywie</td></tr>
+        <tr><td>Kolokwializmy („fajny”, „super”)</td><td>Obniżają styl wypowiedzi</td><td>Używaj słownictwa literackiego</td></tr>
+        <tr><td>„Moim zdaniem uważam, że…”</td><td>Pleonazm</td><td>„Uważam, że…” lub „Moim zdaniem…”</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- ============ POLSZCZYZNA ============ -->
+<section class="section" id="sec-polszyzna">
+<h2><span class="h2-num">18</span>Poprawna polszczyzna</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Błędnie</th><th>Poprawnie</th><th>Uwaga</th></tr></thead>
+    <tbody>
+      <tr><td>„moim zdaniem uważam, że…”</td><td>„Uważam, że…”</td><td>pleonazm</td></tr>
+      <tr><td>„W książce pisało, że…”</td><td>„W książce jest napisane, że…”</td><td>konstrukcja bezosobowa</td></tr>
+      <tr><td>„W tekście pisze, że…”</td><td>„W tekście jest napisane, że…”</td><td>konstrukcja bezosobowa</td></tr>
+      <tr><td>„poprzez to, że…”</td><td>„ponieważ…”</td><td>unikaj</td></tr>
+      <tr><td>„posiada” (gdy chodzi o „ma”)</td><td>„ma”</td><td>„posiada” jest poprawne; w prostych zdaniach naturalniej „ma”</td></tr>
+      <tr><td>„bohater był fajny”</td><td>konkretna cecha + dowód</td><td>uzasadniaj</td></tr>
+      <tr><td>„książka opowiada o…”</td><td>„książka przedstawia…” / „w książce opisano…”</td><td>nie błąd, lecz styl mniej formalny — można zastąpić</td></tr>
+      <tr><td>„w każdym bądź razie”</td><td>„w każdym razie”</td><td>forma poprawna</td></tr>
+      <tr><td>„tą książką”</td><td>„tę książkę” (B.)</td><td>przypadek</td></tr>
+      <tr><td>„wziąść”</td><td>„wziąć”</td><td>forma poprawna</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>Klinika błędów — przykłady uniwersalne</h4>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Błąd</th><th>Co jest nie tak?</th><th>Poprawa</th></tr></thead>
+    <tbody>
+      <tr><td>Bilbo zabił Smauga.</td><td>fakt fabularny</td><td>Bilbo zauważył słaby punkt; Smauga zabił Bard.</td></tr>
+      <tr><td>„Czy” zawsze jest partykułą.</td><td>klasyfikacja bez kontekstu</td><td>Partykuła w pytaniach, spójnik w zdaniach podrzędnych.</td></tr>
+      <tr><td>nieczyta / nieuciekł</td><td>pisownia „nie” z czasownikiem</td><td>nie czyta, nie uciekł (rozdzielnie)</td></tr>
+      <tr><td>„nie nawidzić”</td><td>wyjątek słownikowy</td><td>nienawidzić (łącznie)</td></tr>
+      <tr><td>Czytając książkę, zapaliła się lampa.</td><td>brak zgodności podmiotu</td><td>Kiedy czytał książkę, zapaliła się lampa.</td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="text-sm" style="margin-top:6px"><strong>Schemat pracy z każdym błędem:</strong> znajdź błąd → popraw → nazwij regułę → wyjaśnij dlaczego.</p>
+</section>
+
+<!-- ============ ŹRÓDŁA ============ -->
+<section class="section" id="sec-zrodla">
+<h2><span class="h2-num">19</span>Źródła</h2>
+<div class="card card-rem">
+  <ul>
+    <li>Informator CKE o egzaminie ósmoklasisty z języka polskiego — materiał wykorzystuje wybrane lektury z wykazu; nie zastępuje pełnego informatora.</li>
+    <li>Podstawa programowa kształcenia ogólnego dla szkoły podstawowej — język polski.</li>
+    <li>Wydania lektur: J.R.R. Tolkien, <em>Hobbit, czyli tam i z powrotem</em> (1937).</li>
+    <li>Słowniki: <em>Wielki słownik ortograficzny PWN</em>, <em>Uniwersalny słownik języka polskiego PWN</em>.</li>
+    <li>Materiały pomocnicze: opracowania lektur, przewodniki metodyczne do nauczania języka polskiego w klasach IV–VI.</li>
+  </ul>
+</div>
+</section>
+
+<footer>
+  <p><strong>L002 — „Hobbit” i nieodmienne części mowy</strong> · Polski: Podstawa Plus · v7.9 · 2026-09-11</p>
+  <p class="text-sm" style="opacity:.7">Materiał dydaktyczny (wyrównany do L001: pełny opis lektury, ściąga skrócona) — nieodmienne części mowy, „czy” jako partykuła/spójnik, „nie” z czasownikami, trójkroki przemiany Bilba i Thorina, fakt vs interpretacja. Nie zastępuje pełnego informatora CKE.</p>
+</footer>
+</div>
+
+<script>
+function toggleQuick(btn){
+  const panelName=btn.dataset.panel;
+  const panel=document.getElementById('panel-'+panelName);
+  if(!panel)return;
+  const isOpen=panel.classList.contains('open');
+  document.querySelectorAll('.quick-panel').forEach(p=>p.classList.remove('open'));
+  document.querySelectorAll('.quick-btn').forEach(b=>{
+    b.setAttribute('aria-expanded','false');
+    b.querySelector('.qb-toggle').textContent='Pokaż';
+  });
+  if(!isOpen){
+    panel.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+    btn.querySelector('.qb-toggle').textContent='Ukryj';
+  }
+}
+function toggle(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle('show');
+  const btns=document.querySelectorAll(`[onclick*="toggle('${id}')"]`);
+  btns.forEach(b=>{
+    if(el.classList.contains('show')) b.textContent=b.textContent.replace(/^Pokaż/,'Ukryj');
+    else b.textContent=b.textContent.replace(/^Ukryj/,'Pokaż');
+  });
+}
+function showHint2(id){
+  const el=document.getElementById(id);
+  if(el) el.classList.toggle('show');
+}
+function hideAllAnswers(){
+  document.querySelectorAll('.reveal.show').forEach(el=>el.classList.remove('show'));
+  document.querySelectorAll('.hint-2.show').forEach(el=>el.classList.remove('show'));
+  document.querySelectorAll('[onclick*="toggle("]').forEach(b=>{
+    b.textContent=b.textContent.replace(/^Ukryj/,'Pokaż');
+  });
+}
+function hideRozgrzewka(){
+  const el=document.getElementById('rozgrzewka-ans');
+  if(el)el.classList.remove('show');
+}
+function toggleLayer(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  const nowHidden=el.classList.toggle('hidden');
+  const btn=document.querySelector(`[onclick*="toggleLayer('${id}')"]`);
+  if(btn){
+    if(nowHidden) btn.textContent = btn.dataset.show || 'Pokaż';
+    else btn.textContent = btn.dataset.hide || 'Ukryj';
+  }
+}
+function switchTab(group, name, btn){
+  const bar = btn.closest('.tabs-bar');
+  bar.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const panels = bar.parentElement.querySelectorAll('.tab-panel');
+  panels.forEach(p=>p.classList.remove('active'));
+  const target = document.getElementById('panel-'+group+'-'+name);
+  if(target) target.classList.add('active');
+}
+function toggleFlashItem(btn){
+  const item=btn.closest('.flash-item');
+  if(item)item.classList.toggle('open');
+}
+function flashExpandAll(open){
+  document.querySelectorAll('.flash-item').forEach(it=>{
+    if(open)it.classList.add('open');
+    else it.classList.remove('open');
+  });
+}
+function checkCz(){
+  const a=['prz','przy','sp','pa','wy'];let ok=0;
+  for(let i=1;i<=5;i++){
+    const s=document.getElementById('cz'+i),ic=document.getElementById('cz'+i+'i');
+    if(!s||!ic)continue;
+    const g=s.value===a[i-1];
+    ic.textContent=g?'✓':'✗';ic.style.color=g?'#2d8f5e':'#c33b46';
+    if(g)ok++;
+  }
+  document.getElementById('czRes').innerHTML=`<span style="color:${ok===5?'#2d8f5e':'#7a4a0f'}">Wynik: ${ok}/5. ${ok===5?'Świetnie!':'Sprawdź funkcję wyrazu w zdaniu.'}</span>`;
+}
+function checkCzy(){
+  const a=['p','s','s'];let ok=0;
+  for(let i=1;i<=3;i++){
+    const s=document.getElementById('czy'+i),ic=document.getElementById('czy'+i+'i');
+    if(!s||!ic)continue;
+    const g=s.value===a[i-1];
+    ic.textContent=g?'✓':'✗';ic.style.color=g?'#2d8f5e':'#c33b46';
+    if(g)ok++;
+  }
+  document.getElementById('czyRes').innerHTML=`<span style="color:${ok===3?'#2d8f5e':'#7a4a0f'}">Wynik: ${ok}/3. ${ok===3?'Zasada opanowana!':'Partykuła wprowadza pytanie; spójnik łączy zdania.'}</span>`;
+}
+function checkNi(){
+  const a=['r','r','l'];let ok=0;
+  for(let i=1;i<=3;i++){
+    const s=document.getElementById('ni'+i),ic=document.getElementById('ni'+i+'i');
+    if(!s||!ic)continue;
+    const g=s.value===a[i-1];
+    ic.textContent=g?'✓':'✗';ic.style.color=g?'#2d8f5e':'#c33b46';
+    if(g)ok++;
+  }
+  document.getElementById('niRes').innerHTML=`<span style="color:${ok===3?'#2d8f5e':'#7a4a0f'}">Wynik: ${ok}/3. ${ok===3?'Zasada opanowana!':'Z czasownikami „nie” zwykle rozdzielnie; łączna pisownia tylko przy hasłach słownikowych (nienawidzić itd.).'}</span>`;
+}
+
+const testData=[
+  {q:'1. Kto jest głównym bohaterem „Hobbita”?',c:'Bilbo',h:'Hobbit z Shire, wciągnięty w wyprawę przez Gandalfa.',e:'Bilbo Baggins — hobbit z Shire, główny bohater powieści.'},
+  {q:'2. Kto zabija Smauga?',c:'Bard',h:'Obrońca Esgaroth. Wykorzystał informację drozda i Czarną Strzałę.',e:'Bard zabił Smauga Czarną Strzałą (strzałą rodową). Bilbo zauważył słaby punkt, drozd przekazał informację.'},
+  {q:'3. Kto zauważa słaby punkt Smauga?',c:'Bilbo',h:'Podczas rozmowy ze smokiem w Samotnej Górze.',e:'Bilbo zauważył jaśniejszą plamę na piersi smoka — miejsce bez pancerza.'},
+  {q:'4. Kto jest przywódcą krasnoludów?',c:'Thorin',h:'Dumny krasnolud, potomek władców Samotnej Góry.',e:'Thorin Dębowa Tarcza — przywódca krasnoludów.'},
+  {q:'5. Jaka część mowy odpowiada na pytania: jak? gdzie? kiedy?',c:'przysłówek',h:'Określa czasownik, przymiotnik lub inny przysłówek.',e:'Przysłówek — np. szybko, tutaj, jutro.'},
+  {q:'6. Jaka część mowy łączy wyrazy lub zdania?',c:'spójnik',h:'Np. i, ale, ponieważ.',e:'Spójnik — łączy wyrazy lub zdania.'},
+  {q:'7. Jaka część mowy modyfikuje znaczenie wypowiedzi?',c:'partykuła',h:'Np. nie, czy, oby, nawet.',e:'Partykuła — modyfikuje znaczenie wypowiedzi.'},
+  {q:'8. Jaka część mowy wyraża emocje, reakcje, wezwania?',c:'wykrzyknik',h:'Np. ach, hej, hurra.',e:'Wykrzyknik — wyraża emocje, reakcje, wezwania.'},
+  {q:'9. Jaka część mowy łączy się z rzeczownikiem i wskazuje relację?',c:'przyimek',h:'Np. do, pod, z, na.',e:'Przyimek — łączy się z rzeczownikiem, zaimkiem lub liczebnikiem.'},
+  {q:'10. Uzupełnij: „Bilbo osiąga sukces nie dzięki sile, lecz dzięki _____ i sprytowi.”',c:'inteligencji',h:'Wyprawa wymagała od Bilba myślenia, nie siły.',e:'Bilbo wygrywa inteligencją i sprytem, nie siłą fizyczną.'},
+  {q:'11. Który motyw wiąże się z Thorinem pod koniec powieści?',c:'chciwość',h:'„Smocza choroba” — żądza posiadania.',e:'Thorin ulega chciwości, ale przed śmiercią żałuje.'},
+  {q:'12. „Czy” jako partykuła wprowadza ………',c:'pytanie',h:'Np. „Czy Bilbo wrócił?”',e:'Partykuła „czy” wprowadza pytanie. Spójnik „czy” łączy zdanie podrzędne.'},
+  {q:'13. Do której grupy lektur obowiązkowych należy „Hobbit”?',c:'lektury IV–VI',h:'Lektura obowiązkowa z klas IV–VI; zakres (całość / fragment) — zawsze aktualny informator CKE.',e:'„Hobbit” należy do lektur obowiązkowych z klas IV–VI. Zakres (cały utwór czy fragment w arkuszu) — zawsze aktualny informator CKE.'},
+  {q:'14. Kto jest autorem „Hobbita”?',c:'Tolkien',h:'Brytyjski pisarz, 1937.',e:'J.R.R. Tolkien — autor „Hobbita” i „Władcy Pierścieni”.'}
+];
+function initTest(){
+  const c=document.getElementById('testQ');if(!c)return;c.innerHTML='';
+  testData.forEach((t,i)=>{
+    const d=document.createElement('div');d.className='fitb-row';
+    d.innerHTML=`<span class="q-label" style="font-weight:400">${t.q}</span>
+      <input type="text" id="tq${i}" placeholder="wpisz..." style="width:180px">
+      <span id="tqi${i}" class="res-icon"></span>
+      <button class="q-hint-btn no-print" type="button" title="Podpowiedź" onclick="toggleQHint(${i})">?</button>
+      <div class="q-hint" id="qh${i}">Podpowiedź: ${t.h}</div>`;
+    c.appendChild(d);
+  });
+}
+function toggleQHint(i){
+  const h=document.getElementById('qh'+i);
+  if(h)h.classList.toggle('show');
+}
+function toggleAllTestHints(btn){
+  const hints=document.querySelectorAll('.q-hint');
+  const anyOpen=[...hints].some(h=>h.classList.contains('show'));
+  hints.forEach(h=>{
+    if(anyOpen)h.classList.remove('show');
+    else h.classList.add('show');
+  });
+  btn.textContent=anyOpen?'Pokaż podpowiedzi':'Ukryj podpowiedzi';
+}
+function checkTest(){
+  let ok=0;const bad=[];
+  testData.forEach((t,i)=>{
+    const inp=document.getElementById('tq'+i),ic=document.getElementById('tqi'+i);
+    if(!inp||!ic)return;
+    const g=inp.value.trim().toLowerCase()===t.c.toLowerCase();
+    inp.classList.toggle('correct',g);inp.classList.toggle('wrong',!g);
+    ic.textContent=g?'✓':'✗';ic.style.color=g?'#2d8f5e':'#c33b46';
+    if(g)ok++;else bad.push(`${i+1}`);
+  });
+  const pct=Math.round(ok/testData.length*100);
+  let cls='fail',msg='Powtórz podstawy.';
+  if(pct===100){cls='perfect';msg='Świetnie! Opanowałeś lekcję!';}
+  else if(pct>=75){cls='good';msg='Bardzo dobrze.';}
+  else if(pct>=50){cls='ok';msg='Wróć do kluczowych zasad.';}
+  const el=document.getElementById('testRes');
+  el.className='mission-result '+cls;
+  el.innerHTML=`<strong>Wynik: ${ok}/${testData.length} (${pct}%).</strong> ${msg}${bad.length?`<br><span class="text-sm text-muted">Popraw pytania: ${bad.join(', ')}</span>`:''}`;
+  const exp=document.getElementById('testExplain');
+  if(exp){
+    exp.innerHTML='<h4 style="margin-top:8px">Wyjaśnienia</h4>';
+    testData.forEach((t,i)=>{
+      const inp=document.getElementById('tq'+i);
+      if(!inp)return;
+      const g=inp.value.trim().toLowerCase()===t.c.toLowerCase();
+      if(!g){
+        const d=document.createElement('div');
+        d.className='reveal show reveal-why';
+        d.style.marginTop='6px';
+        d.innerHTML=`<strong>${i+1}.</strong> Poprawna odpowiedź: <strong>${t.c}</strong>. ${t.e}`;
+        exp.appendChild(d);
+      }
+    });
+  }
+}
+function resetTest(){
+  testData.forEach((_,i)=>{
+    const inp=document.getElementById('tq'+i),ic=document.getElementById('tqi'+i);
+    if(inp){inp.value='';inp.classList.remove('correct','wrong')}
+    if(ic)ic.textContent='';
+  });
+  const r=document.getElementById('testRes');
+  if(r){r.innerHTML='';r.className='';}
+  const e=document.getElementById('testExplain');
+  if(e)e.innerHTML='';
+}
+function copySciaga(){
+  const el=document.getElementById('sciaga-content');
+  if(!el)return;
+  const text=el.innerText.replace(/\n{3,}/g,'\n\n');
+  navigator.clipboard.writeText(text).then(()=>{alert('Skopiowano ściągę do schowka.');}).catch(()=>{alert('Nie udało się skopiować.');});
+}
+document.addEventListener('DOMContentLoaded',()=>{initTest();});
+</script>
+</body>
+</html>

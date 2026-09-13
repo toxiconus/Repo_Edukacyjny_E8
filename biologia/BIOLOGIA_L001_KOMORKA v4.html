@@ -1,0 +1,2502 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Biologia L001 — Komórka: budowa, funkcje, typy komórek i teoria komórkowa (v7.0)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+/* =========================================================
+   BAZA
+   ========================================================= */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;
+  background:linear-gradient(135deg,#f5f7fa 0%,#e8eefc 100%);
+  color:#1e293b;line-height:1.7;
+  padding:16px 16px 90px;min-height:100vh;
+}
+.container{max-width:1100px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px 6px 90px;}}
+
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+code{background:#0a2540;color:#fff;padding:1px 6px;border-radius:4px;font-family:'Courier New',monospace;font-size:0.88em;}
+
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-new:#059669;--color-new-bg:#ecfdf5;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+  /* Paleta wizualna — stała dla całej lekcji */
+  --viz-common:#2b6cb0;      /* granat — wspólne */
+  --viz-plant:#059669;        /* zieleń — rośliny/glony */
+  --viz-energy:#ea580c;       /* pomarańcz — energia */
+  --viz-info:#7c3aed;         /* fiolet — informacja genetyczna */
+  --viz-absent:#94a3b8;       /* szarość — brak */
+}
+
+/* =========================================================
+   KARTY
+   ========================================================= */
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card-new{background:var(--color-new-bg);border-left:5px solid var(--color-new);border-color:var(--color-new);}
+.card-new .card-label{color:var(--color-new);}
+.card-exam{background:var(--color-exam-bg);border-left:5px solid var(--color-exam);border-color:var(--color-exam);}
+.card-exam .card-label{color:var(--color-exam);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+.card-optional{background:#f8fafc;border:1px dashed #94a3b8;border-left:5px solid #94a3b8;}
+.card-optional .card-label{color:#64748b;font-style:italic;}
+.card-meaning{background:#f0f9ff;border-left:5px solid #0891b2;border-color:#0891b2;border-radius:12px;padding:10px 16px;margin:8px 0;font-size:0.88rem;}
+.card-meaning .card-label{color:#0891b2;}
+
+.minimum-card{
+  background:linear-gradient(135deg,#fff7ed 0%,#fef3c7 100%);
+  border:2px solid #d97706;border-radius:16px;
+  padding:20px 24px;margin:20px 0;
+  box-shadow:0 4px 16px rgba(217,119,6,0.12);
+}
+.minimum-card h3{margin:0 0 12px;color:#78350f;font-size:1.15rem;letter-spacing:-0.01em;}
+.minimum-card ol{margin:0;padding-left:22px;}
+.minimum-card li{margin-bottom:10px;font-size:0.98rem;line-height:1.55;}
+.minimum-card li strong{color:#78350f;}
+
+.layer-legend{
+  background:#fff;border:1px solid var(--color-border);border-radius:12px;
+  padding:12px 16px;margin:12px 0;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 16px;
+}
+.layer-legend .layer-row{display:flex;gap:8px;align-items:center;font-size:0.82rem;}
+.layer-legend .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:#2d8f5e;}
+.layer-legend .dot.understand{background:#2b6cb0;}
+.layer-legend .dot.extra{background:#7c3aed;}
+.layer-legend .dot.contest{background:#b45309;}
+
+/* Wizualna legenda kolorów */
+.viz-legend{background:#fff;border:1px solid var(--color-border);border-radius:12px;padding:12px 16px;margin:12px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px 16px;}
+.viz-legend-item{display:flex;gap:8px;align-items:center;font-size:0.8rem;}
+.viz-swatch{width:14px;height:14px;border-radius:4px;flex-shrink:0;}
+.viz-swatch.common{background:var(--viz-common);}
+.viz-swatch.plant{background:var(--viz-plant);}
+.viz-swatch.energy{background:var(--viz-energy);}
+.viz-swatch.info{background:var(--viz-info);}
+.viz-swatch.absent{background:var(--viz-absent);}
+
+/* =========================================================
+   LEVEL BADGES
+   ========================================================= */
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-exam{background:#ffe8cc;color:#8a6d3b;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.level-new{background:#a7f3d0;color:#065f46;}
+.level-optional{background:#e2e8f0;color:#475569;font-style:italic;}
+
+/* =========================================================
+   TABELE
+   ========================================================= */
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;vertical-align:top;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+.table-wrap .error-row{background:#fef2f2;}
+.table-wrap .correct-row{background:#f0faf4;}
+.table-wrap .absent{color:#94a3b8;font-style:italic;}
+
+/* =========================================================
+   PRZYCISKI
+   ========================================================= */
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 14px;border-radius:8px;border:1px solid var(--color-border);background:#fff;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;color:var(--color-text);font-family:inherit;}
+.btn:hover{background:var(--color-bg-subtle);border-color:#b0b8c4;}
+.btn-primary{background:var(--color-training);color:#fff;border-color:var(--color-training);}
+.btn-primary:hover{background:#1f4e8c;border-color:#1f4e8c;color:#fff;}
+
+details.answer{background:var(--color-training-bg);border-left:3px solid var(--color-training);border-radius:6px;padding:8px 12px;margin-top:6px;}
+details.answer summary{cursor:pointer;font-weight:600;color:var(--color-training);font-size:0.9rem;padding:2px 0;list-style:none;}
+details.answer summary::marker{content:"";}
+details.answer summary::before{content:"\25B6 ";font-size:0.7rem;display:inline-block;transition:transform 0.2s;}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer > *:not(summary){margin-top:8px;}
+details.answer .ans-part{display:block;margin-bottom:6px;}
+details.answer .ans-part b{color:#1e4a7a;}
+
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+.exercise.exam{background:var(--color-exam-bg);border:1px solid #f0d090;}
+
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+
+.mode-bar{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 20px;padding:10px 14px;background:#fff;border:1px solid var(--color-border);border-radius:12px;}
+.mode-btn{padding:6px 14px;border:1px solid var(--color-border);border-radius:8px;background:#fff;font-family:inherit;font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.15s;color:#475569;}
+.mode-btn:hover{background:#f1f5f9;}
+.mode-btn.active{background:#0a2540;color:#fff;border-color:#0a2540;}
+body.mode-e8 .mode-understand{display:none!important;}
+body.mode-e8 .mode-further{display:none!important;}
+body.mode-understand .mode-further{display:none!important;}
+
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"\25B6";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+
+.section{margin-bottom:8px;}
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:140px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:100px;}
+.flashcard .front{font-weight:600;font-size:0.95rem;line-height:1.4;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.9rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+.flashcard .card-tag.tag-exam{background:#ffe8cc;color:#8a6d3b;}
+
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+
+.diagram{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:16px 0;text-align:center;overflow-x:auto;}
+.diagram svg{max-width:100%;height:auto;display:block;margin:0 auto;}
+.diagram .caption{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:8px;}
+
+.step-flow{background:#0a2540;color:#fff;padding:12px 16px;border-radius:8px;font-family:'Courier New',monospace;font-size:0.9rem;line-height:1.7;margin:8px 0;overflow-x:auto;white-space:pre;}
+
+.core-path{background:linear-gradient(180deg,#f0faf4 0%,#e5f5ea 100%);border:2px solid var(--color-basic);border-radius:14px;padding:16px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:700;color:#14532d;font-size:1.1rem;margin-bottom:10px;}
+.core-path ol{margin-bottom:0;}
+
+.mini-note{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:6px;}
+.rule-box{background:#eef4fb;border:1px solid #b9d3ee;border-radius:10px;padding:12px 16px;margin:12px 0;font-size:0.9rem;}
+.rule-box b{color:#1e4a7a;}
+
+/* Sekcja poza podstawą */
+.beyond-e8{background:#fffbeb;border:1.5px dashed #d97706;border-left:5px solid #d97706;border-radius:12px;padding:12px 18px;margin:14px 0;}
+.beyond-e8 .beyond-label{display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;background:#d97706;color:#fff;padding:2px 10px;border-radius:12px;margin-bottom:8px;}
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+.timeline-widget{background:#fff;border:2px solid #2b6cb0;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.timeline-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.timeline-widget .tl-hint{font-size:0.82rem;color:#64748b;margin-bottom:16px;}
+.timeline-axis{position:relative;padding:20px 0 10px;display:flex;justify-content:space-between;gap:4px;overflow-x:auto;}
+.timeline-axis::before{content:"";position:absolute;left:2%;right:2%;top:44px;height:3px;background:linear-gradient(90deg,#2b6cb0,#7c3aed);border-radius:2px;}
+.timeline-point{position:relative;z-index:1;flex-shrink:0;display:flex;flex-direction:column;align-items:center;min-width:90px;cursor:pointer;background:transparent;border:0;font:inherit;padding:0;}
+.timeline-year{font-size:0.72rem;font-weight:700;color:#475569;margin-bottom:8px;}
+.timeline-dot{width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #2b6cb0;transition:all 0.2s;}
+.timeline-point:hover .timeline-dot{transform:scale(1.2);background:#eef4fb;}
+.timeline-point.active .timeline-dot{background:#0a2540;border-color:#0a2540;transform:scale(1.3);}
+.timeline-point.active .timeline-year{color:#0a2540;}
+.timeline-who{font-size:0.7rem;color:#64748b;margin-top:6px;text-align:center;max-width:90px;line-height:1.3;}
+.timeline-point.active .timeline-who{color:#0a2540;font-weight:700;}
+.timeline-info{margin-top:16px;padding:14px 18px;background:#f0f6ff;border-left:4px solid #2b6cb0;border-radius:10px;font-size:0.9rem;min-height:70px;}
+.timeline-info b{color:#1e4a7a;}
+
+/* =========================================================
+   HIERARCHIA ŻYCIA
+   ========================================================= */
+.hierarchy-widget{background:#fff;border:2px solid #b45309;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.hierarchy-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.hierarchy-widget .hi-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.hierarchy-chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center;margin:14px 0;}
+.hierarchy-chip{padding:8px 14px;border-radius:10px;font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.15s;border:2px solid transparent;}
+.hierarchy-chip:hover{transform:translateY(-2px);}
+.hierarchy-chip.atom{background:#e2e8f0;color:#334155;}
+.hierarchy-chip.mol{background:#cffafe;color:#0e7490;}
+.hierarchy-chip.organ{background:#fef3c7;color:#78350f;}
+.hierarchy-chip.cell{background:#dbeafe;color:#1e4a7a;border-color:#2b6cb0;}
+.hierarchy-chip.tissue{background:#dcfce7;color:#166534;}
+.hierarchy-chip.organ2{background:#e9d5ff;color:#6b21a8;}
+.hierarchy-chip.system{background:#ffedd5;color:#9a3412;}
+.hierarchy-chip.org{background:#fce7f3;color:#9d174d;}
+.hierarchy-chip.active{transform:scale(1.08);border-color:#0a2540;}
+.hierarchy-arrow{color:#94a3b8;font-weight:700;}
+.hierarchy-info{background:#fef3c7;border-left:4px solid #b45309;border-radius:10px;padding:12px 16px;font-size:0.9rem;min-height:60px;}
+.hierarchy-info b{color:#78350f;}
+
+/* =========================================================
+   TYPY KOMÓREK — NAKŁADKI
+   ========================================================= */
+.overlay-cells{
+  background:#fff;border:2px solid #2b6cb0;border-radius:16px;
+  padding:20px 22px;margin:18px 0;
+}
+.overlay-cells h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.overlay-cells .oc-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.overlay-cells-toggles{
+  display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;
+}
+.oc-toggle{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:6px 12px;border:1px solid var(--color-border);border-radius:20px;
+  background:#fff;font-size:0.78rem;font-family:inherit;cursor:pointer;
+  color:#334155;font-weight:600;transition:all 0.15s;
+}
+.oc-toggle:hover{background:#f1f5f9;}
+.oc-toggle.active{background:#0a2540;color:#fff;border-color:#0a2540;}
+.oc-view{
+  background:#f8fafc;border:1px solid var(--color-border);border-radius:12px;
+  padding:14px;margin-bottom:12px;
+}
+.oc-view svg{display:block;margin:0 auto;max-width:100%;height:auto;}
+.oc-info{
+  background:#f0f6ff;border-left:4px solid #2b6cb0;border-radius:10px;
+  padding:12px 16px;font-size:0.9rem;min-height:60px;
+}
+.oc-info b{color:#1e4a7a;}
+
+/* =========================================================
+   BŁONA
+   ========================================================= */
+.membrane-widget{background:#fff;border:2px solid #7c3aed;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.membrane-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.membrane-widget .mem-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.membrane-buttons{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.membrane-btn{padding:6px 14px;border:1px solid var(--color-border);border-radius:20px;background:#fff;font-family:inherit;font-size:0.8rem;font-weight:600;cursor:pointer;color:#334155;transition:all 0.15s;}
+.membrane-btn.active{background:#7c3aed;color:#fff;border-color:#7c3aed;}
+.membrane-view{background:#f8fafc;border:1px solid var(--color-border);border-radius:10px;padding:14px;margin-bottom:10px;}
+.membrane-view svg{display:block;margin:0 auto;max-width:100%;height:auto;}
+#memHeads circle{fill:#7c3aed;transition:fill .2s,stroke .2s,r .2s;}
+#memTails line{stroke:#a78bfa;stroke-width:2;transition:stroke .2s,stroke-width .2s;}
+.mem-fade{opacity:.2;}
+#memHeads.mem-heads-hi circle{fill:#f59e0b;stroke:#b45309;stroke-width:1.5;}
+#memTails.mem-tails-hi line{stroke:#ea580c;stroke-width:3;}
+.mem-protein-hi rect{stroke-width:3;filter:drop-shadow(0 0 3px rgba(245,158,11,.7));}
+.membrane-desc{background:#f5f0ff;border-left:4px solid #7c3aed;border-radius:10px;padding:12px 16px;font-size:0.9rem;min-height:60px;}
+.membrane-desc b{color:#4c1d95;}
+
+/* =========================================================
+   TEORIA KOMÓRKOWA
+   ========================================================= */
+.teoria-widget{background:#fff;border:2px solid #0891b2;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.teoria-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.teoria-widget .tw-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.teoria-section-label{font-size:0.72rem;font-weight:700;text-transform:uppercase;color:#0891b2;letter-spacing:0.5px;margin:10px 0 6px;}
+.teoria-points{display:grid;gap:8px;}
+.teoria-point{padding:10px 14px;border-radius:8px;background:#f0f9ff;border-left:4px solid #0891b2;font-size:0.9rem;cursor:pointer;transition:all 0.15s;}
+.teoria-point:hover{background:#e0f2fe;}
+.teoria-point.active{background:#cffafe;border-left-color:#0a2540;font-weight:600;}
+.teoria-detail{margin-top:12px;padding:12px 16px;background:#ecfeff;border-left:4px solid #0891b2;border-radius:8px;font-size:0.88rem;min-height:60px;}
+.teoria-detail b{color:#155e75;}
+
+/* =========================================================
+   MIKROSKOP — WIDOKI
+   ========================================================= */
+.micro-widget{background:#fff;border:2px solid #0a2540;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.micro-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.micro-widget .mi-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.micro-buttons{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.micro-btn{padding:6px 14px;border:1px solid var(--color-border);border-radius:20px;background:#fff;font-family:inherit;font-size:0.8rem;font-weight:600;cursor:pointer;color:#334155;transition:all 0.15s;}
+.micro-btn.active{background:#0a2540;color:#fff;border-color:#0a2540;}
+.micro-view{background:#f8fafc;border:1px solid var(--color-border);border-radius:10px;padding:14px;margin-bottom:10px;}
+.micro-view svg{display:block;margin:0 auto;max-width:100%;height:auto;}
+.micro-caption{font-size:0.84rem;color:#475569;font-style:italic;text-align:center;margin-top:6px;}
+
+/* =========================================================
+   PRZEPŁYW ENERGII
+   ========================================================= */
+.energy-flow{
+  background:linear-gradient(180deg,#fff7ed 0%,#ffedd5 100%);
+  border:2px solid #ea580c;border-radius:16px;
+  padding:18px 22px;margin:18px 0;
+}
+.energy-flow h4{margin:0 0 10px;color:#7c2d12;font-size:1.05rem;}
+.energy-flow svg{display:block;margin:0 auto;max-width:100%;height:auto;}
+.energy-flow .ef-caption{font-size:0.86rem;color:#78350f;margin-top:10px;text-align:center;font-weight:600;}
+
+/* =========================================================
+   STICKY NAV
+   ========================================================= */
+.sticky-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(10,37,64,0.94);color:#fff;padding:8px 12px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;z-index:100;box-shadow:0 -4px 12px rgba(0,0,0,0.15);backdrop-filter:blur(6px);}
+.sticky-nav a{color:#fff;font-size:0.75rem;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,0.1);text-decoration:none;font-weight:500;}
+.sticky-nav a:hover{background:rgba(255,255,255,0.25);}
+@media(max-width:600px){.sticky-nav a{font-size:0.68rem;padding:3px 7px;}}
+
+/* =========================================================
+   DOSTĘPNOŚĆ
+   ========================================================= */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}
+}
+:focus-visible{outline:3px solid #fbbf24;outline-offset:2px;border-radius:6px;}
+</style>
+</head>
+<body class="mode-understand">
+
+<div class="container" id="app">
+
+<!-- ================= TOP PANEL ================= -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L001 — Komórka: budowa, funkcje, typy komórek i teoria komórkowa</div>
+      <div class="subtitle">Od podstawowych struktur komórki do DNA, prokariontów, eukariontów i endosymbiozy</div>
+      <div class="lesson-info">
+        Poprzednia: — · Następna: L002 (człowiek — wybrane)<br>
+        <strong style="color:var(--color-new)">Wersja 7.0</strong> — precyzja biologiczna i dopasowanie do podstawy klasy 8:
+        mitochondria i ATP (bez „produkcji energii"), cytoplazma vs cytozol, wyjątek erytrocytu,
+        chloroplasty warunkowo, archeowce w prokariotach, nukleoid zamiast „luźnego DNA", podział binarny ≠ mitoza,
+        teoria komórkowa podzielona na klasyczną i współczesną, historia precyzyjniej, mikroskop — ściana vs błona,
+        wizualna legenda kolorów, przepływ energii, sekcja „co jest wspólne". Cała treść v6.0 zachowana.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= EKRAN STARTOWY E8 ================= -->
+<div class="minimum-card" id="minimum-e8-start" style="background:linear-gradient(135deg,#eef4fb 0%,#dbeafe 100%);border-color:#2b6cb0;">
+  <h3 style="color:#1e4a7a;">Muszę umieć na E8 — 5 zdań</h3>
+  <ol style="font-size:1.0rem;line-height:1.7;">
+    <li><strong>Komórka to najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów.</strong></li>
+    <li><strong>Jądro komórkowe zawiera większość DNA i kieruje pracą komórki.</strong></li>
+    <li><strong>W mitochondriach zachodzi większość etapów oddychania tlenowego — powstaje tam większość ATP.</strong></li>
+    <li><strong>Roślinna komórka ma ścianę z celulozy, chloroplasty (w komórkach zielonych) i dużą wakuolę — zwierzęca ich nie ma.</strong></li>
+    <li><strong>Bakteria (prokariota) nie ma jądra otoczonego błoną; rybosomy ma każda typowa komórka (wyjątek: dojrzały erytrocyt ssaka).</strong></li>
+  </ol>
+  <p style="margin-top:12px;color:#1e4a7a;font-size:0.9rem;"><strong>Dopiero gdy te zdania są jasne — przejdź do sekcji 5 i 6.</strong> Potem możesz wrócić do prokariotów, eukariotów i endosymbiozy.</p>
+</div>
+
+<!-- ================= LEGENDA WARSTW ================= -->
+<div class="layer-legend" aria-label="Legenda poziomów materiału">
+  <div class="layer-row"><span class="dot e8"></span><span><b>E8 — obowiązkowo:</b> komórka, jądro z DNA, mitochondria, błona, ściana, typy komórek</span></div>
+  <div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> rola organelli, błona i transport, mikroskop</span></div>
+  <div class="layer-row"><span class="dot extra"></span><span><b>Nadprogramowo:</b> prokariota vs eukariota, mtDNA, teoria komórkowa</span></div>
+  <div class="layer-row"><span class="dot contest"></span><span><b>Konkurs / liceum:</b> endosymbioza, rybosomy 70S/80S, historia nauki</span></div>
+</div>
+
+<!-- ================= WIZUALNA LEGENDA KOLORÓW ================= -->
+<div class="viz-legend" aria-label="Legenda kolorów używanych w wizualizacjach">
+  <div class="viz-legend-item"><span class="viz-swatch common"></span><span><b>Granat</b> — elementy wspólne większości komórek</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch plant"></span><span><b>Zieleń</b> — elementy charakterystyczne dla roślin i glonów</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch energy"></span><span><b>Pomarańcz</b> — pozyskiwanie lub przekształcanie energii</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch info"></span><span><b>Fiolet</b> — informacja genetyczna</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch absent"></span><span><b>Szarość</b> — brak struktury lub element nieobecny</span></div>
+</div>
+
+<!-- ================= MODE FILTER ================= -->
+<div class="mode-bar">
+  <button class="mode-btn" data-mode="e8">Muszę umieć na E8</button>
+  <button class="mode-btn active" data-mode="understand">Chcę zrozumieć</button>
+  <button class="mode-btn" data-mode="further">Idę dalej</button>
+</div>
+
+<!-- ================= RDZEŃ LEKCJI ================= -->
+<div class="core-path">
+  <div class="cp-title">Rdzeń lekcji — najpierw to</div>
+  <ol>
+    <li><strong>Sekcja 5.1–5.2</strong> — definicja komórki i tabela struktur (jądro, mitochondria, błona, ściana).</li>
+    <li><strong>Sekcja 5.6</strong> — tabela typów komórek (zwierzęca / roślinna / grzybowa / bakteryjna).</li>
+    <li><strong>Sekcja 6.4</strong> — algorytm rozpoznawania typu komórki.</li>
+    <li><strong>Sekcja 11</strong> — Klinika błędów (jądro = większość DNA; roślina ≠ tylko chloroplast).</li>
+    <li><strong>Sekcja 13A i 15</strong> — mini-check i test końcowy.</li>
+  </ol>
+</div>
+
+<!-- ================= TOC ================= -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+
+  <details class="toc-item" open>
+    <summary class="toc-summary">0. Wprowadzenie + historia odkrycia komórki</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wprowadzenie">Wprowadzenie</a>
+      <a class="toc-anchor" href="#historia">Historia odkrycia (timeline)</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">1–4. Pytanie, cele, kompas, problem</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#pytanie">Pytanie</a>
+      <a class="toc-anchor" href="#cele">Cele + 80/20</a>
+      <a class="toc-anchor" href="#kompas">Kompas</a>
+      <a class="toc-anchor" href="#problem">Zacznij od problemu</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">5. Ściąga — definicje i budowa</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#sciaga">Ściąga</a>
+      <a class="toc-anchor" href="#struktury">Struktury w komórce</a>
+      <a class="toc-anchor" href="#sciany">Ściany komórkowe</a>
+      <a class="toc-anchor" href="#prokariota-4fakty">Prokariota — 4 fakty</a>
+      <a class="toc-anchor" href="#mnemotechniki">Mnemotechniki</a>
+      <a class="toc-anchor" href="#typy-komorek">Tabela typów komórek</a>
+      <a class="toc-anchor" href="#co-wspolne">Co jest wspólne?</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">6. Wyjaśnienie od podstaw (z widgetami)</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wyjasnienie">Analogia miasta</a>
+      <a class="toc-anchor" href="#hierarchia">Hierarchia życia</a>
+      <a class="toc-anchor" href="#typy-komorek-widget">Widget: nakładki typów komórek</a>
+      <a class="toc-anchor" href="#algorytm">Algorytm rozpoznawania</a>
+      <a class="toc-anchor" href="#organellum">Organellum czy struktura?</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">7. Błona i transport</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#blona">Błona komórkowa</a>
+      <a class="toc-anchor" href="#blona-widget">Widget: błona</a>
+      <a class="toc-anchor" href="#transport">Transport</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">8. Teoria komórkowa</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#teoria">Twierdzenia</a>
+      <a class="toc-anchor" href="#teoria-widget">Widget: interaktywne twierdzenia</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">9–10. Ambitny i zaawansowany</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#prok-euk">Prokariota vs eukariota</a>
+      <a class="toc-anchor" href="#endosymbioza">Endosymbioza</a>
+      <a class="toc-anchor" href="#mtdna">mtDNA i cpDNA</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">11. Klinika błędów</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#klinika">Klinika + Klinika 2.0</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">12–17. Obserwacja, ćwiczenia, egzamin, fiszki, test, checklista</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#obserwacja">Obserwacja + mikroskop</a>
+      <a class="toc-anchor" href="#cwiczenia">Ćwiczenia A–D</a>
+      <a class="toc-anchor" href="#egzamin">Zadania egzaminacyjne</a>
+      <a class="toc-anchor" href="#fiszki">Fiszki</a>
+      <a class="toc-anchor" href="#test">Test końcowy</a>
+      <a class="toc-anchor" href="#checklista">Checklista</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">18–25. Mapa, słownik, dodatek, życie, nauka, status</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#mapa">Mapa pojęć</a>
+      <a class="toc-anchor" href="#dalej">Co dalej</a>
+      <a class="toc-anchor" href="#slownik">Słownik</a>
+      <a class="toc-anchor" href="#dodatek">Dodatek</a>
+      <a class="toc-anchor" href="#zycie">Z życia (+ modele)</a>
+      <a class="toc-anchor" href="#jak-sie-uczyc">Jak się uczyć</a>
+      <a class="toc-anchor" href="#miedzyprzedmiotowe">Połączenia międzyprzedmiotowe</a>
+      <a class="toc-anchor" href="#status">Status</a>
+    </nav>
+  </details>
+
+  <div class="toc-keywords"><span>komórka · jądro · DNA · mitochondria · chloroplast · błona · ściana · prokariota · eukariota · endosymbioza · teoria komórkowa</span></div>
+</div>
+
+<!-- ================= 0. WPROWADZENIE ================= -->
+<section class="section" id="wprowadzenie">
+  <div class="part-heading"><span class="part-num">0. Wprowadzenie</span></div>
+
+  <div class="card card-new">
+    <span class="card-label">O co tu właściwie chodzi?</span>
+    <p><strong>Komórka to najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów.</strong> Każdy organizm komórkowy — bakteria, roślina, grzyb i człowiek — jest zbudowany z jednej albo wielu komórek.</p>
+    <p>Komórka musi rozwiązać trzy podstawowe problemy:</p>
+    <ol>
+      <li><strong>oddzielić swoje wnętrze od otoczenia</strong> — od tego jest <strong>błona komórkowa</strong>;</li>
+      <li><strong>zdobywać i wykorzystywać energię</strong> — od tego są <strong>mitochondria</strong> (u roślin i glonów dodatkowo chloroplasty);</li>
+      <li><strong>przechowywać informację</strong> potrzebną do działania i rozmnażania — od tego jest <strong>materiał genetyczny</strong>, głównie w jądrze.</li>
+    </ol>
+    <p>Dlatego na schemacie komórki szczególnie ważne są: <strong>błona komórkowa, mitochondria i jądro z większością DNA</strong>.</p>
+  </div>
+
+  <div class="card card-meaning">
+    <span class="card-label">Co to naprawdę znaczy?</span>
+    <p>Uproszczenie „mitochondria = elektrownia" jest wygodne, ale nieprecyzyjne. Energia w komórce <strong>nie powstaje z niczego</strong> — jest <strong>przekształcana</strong>. Komórka pobiera energię z pokarmu (np. glukozy) i przekształca ją w ATP — formę, której może bezpośrednio użyć. Mitochondria są miejscem, w którym zachodzi większość etapów tego przekształcania.</p>
+  </div>
+
+  <h3>Dlaczego zaczynamy od komórki?</h3>
+  <div class="card card-hint">
+    <p>Bo żeby zrozumieć <strong>genetykę</strong>, trzeba wiedzieć dwie rzeczy:</p>
+    <ol>
+      <li><strong>Gdzie w komórce znajduje się materiał genetyczny</strong> — w jądrze, a dodatkowo w mitochondriach (i w chloroplastach u roślin).</li>
+      <li><strong>Czym różnią się typy komórek</strong> — bo to wyjaśnia, dlaczego jedne organizmy mają cechy inne niż drugie.</li>
+    </ol>
+    <p>Ten pierwszy punkt jest pomostem do <strong>L011 — Jak DNA przechowuje informację?</strong>.</p>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Kluczowa myśl</span>
+    <p>Komórka to <strong>podstawowy „klocek" życia</strong>. Wszystkie organizmy komórkowe są zbudowane z jednej lub wielu komórek.</p>
+  </div>
+
+  <h3>Dlaczego to ma znaczenie?</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Dziedzina</th><th>Zastosowanie</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Medycyna</strong></td><td>choroby i zaburzenia komórkowe, w tym nowotwory; immunologia; transplantologia</td></tr>
+        <tr><td><strong>Farmakologia</strong></td><td>leki działają na konkretne struktury lub procesy komórkowe</td></tr>
+        <tr><td><strong>Biotechnologia</strong></td><td>produkcja insuliny, szczepionek, biopaliw</td></tr>
+        <tr><td><strong>Rolnictwo</strong></td><td>hodowla roślin, ochrona przed patogenami</td></tr>
+        <tr><td><strong>Genetyka</strong></td><td>jądro komórki to główne miejsce przechowywania DNA</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 0.2 HISTORIA ================= -->
+<section class="section" id="historia">
+  <div class="part-heading"><span class="part-num">0.2</span> Historia odkrycia komórki <span class="level-badge level-ambitious">NADPROGRAMOWE</span></div>
+  <p>Skąd wiemy to, co wiemy? Poznanie komórki to ponad 350 lat obserwacji, techniki i uporu badaczy. Kliknij każdy rok, aby zobaczyć szczegóły.</p>
+
+  <div class="timeline-widget" id="timelineWidget">
+    <h4>Oś czasu — od „cellula" do komórki jako podstawy życia</h4>
+    <p class="tl-hint">Kliknij punkt na osi, aby zobaczyć opis odkrycia.</p>
+
+    <div class="timeline-axis" id="timelineAxis" role="tablist" aria-label="Oś czasu odkrycia komórki">
+      <button class="timeline-point active" data-tl="1665" role="tab" aria-selected="true">
+        <span class="timeline-year">1665</span>
+        <span class="timeline-dot"></span>
+        <span class="timeline-who">Hooke</span>
+      </button>
+      <button class="timeline-point" data-tl="1674" role="tab" aria-selected="false">
+        <span class="timeline-year">1674–1683</span>
+        <span class="timeline-dot"></span>
+        <span class="timeline-who">Leeuwenhoek</span>
+      </button>
+      <button class="timeline-point" data-tl="1831" role="tab" aria-selected="false">
+        <span class="timeline-year">1831</span>
+        <span class="timeline-dot"></span>
+        <span class="timeline-who">Brown</span>
+      </button>
+      <button class="timeline-point" data-tl="1839" role="tab" aria-selected="false">
+        <span class="timeline-year">1838–39</span>
+        <span class="timeline-dot"></span>
+        <span class="timeline-who">Schleiden &amp; Schwann</span>
+      </button>
+      <button class="timeline-point" data-tl="1855" role="tab" aria-selected="false">
+        <span class="timeline-year">1855</span>
+        <span class="timeline-dot"></span>
+        <span class="timeline-who">Virchow</span>
+      </button>
+      <button class="timeline-point" data-tl="1967" role="tab" aria-selected="false">
+        <span class="timeline-year">1967</span>
+        <span class="timeline-dot"></span>
+        <span class="timeline-who">Margulis</span>
+      </button>
+    </div>
+
+    <div class="timeline-info" id="timelineInfo" aria-live="polite">
+      <b>1665 — Robert Hooke:</b> obserwując cienki plaster korka pod mikroskopem, zobaczył regularne „komórki" — puste przegrody po martwych komórkach. Nazwał je <em>cellula</em> (łac. „mała komora"). To pierwsze użycie terminu „komórka" — choć Hooke widział tylko ściany komórkowe, nie żywe komórki.
+    </div>
+  </div>
+</section>
+
+<!-- ================= 1. PYTANIE ================= -->
+<section class="section" id="pytanie">
+  <div class="part-heading"><span class="part-num">1. Pytanie przewodnie</span></div>
+  <div class="card card-correct">
+    <p style="font-size:1.1rem;font-weight:600;">Co jest najmniejszą jednostką życia i gdzie w komórce znajduje się materiał genetyczny?</p>
+  </div>
+</section>
+
+<!-- ================= 2. CELE ================= -->
+<section class="section" id="cele">
+  <div class="part-heading"><span class="part-num">2. Cele lekcji</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <div class="card card-correct">
+    <span class="card-label">Po tej lekcji umiesz:</span>
+    <ul>
+      <li><strong>wyjaśnić</strong>, czym jest komórka i dlaczego jest podstawową jednostką życia,</li>
+      <li><strong>wymienić poziomy organizacji życia</strong> (komórka → tkanka → narząd → układ → organizm),</li>
+      <li><strong>rozpoznać i opisać funkcje</strong> podstawowych struktur komórkowych,</li>
+      <li><strong>łączyć jądro z materiałem genetycznym</strong> (most do L011),</li>
+      <li>(ambitny) rozróżniać komórki prokariotyczne i eukariotyczne,</li>
+      <li>(zaawansowany) znać ideę teorii endosymbiozy oraz dziedziczenie mitochondrialne.</li>
+    </ul>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Zasada 80/20 — co naprawdę daje 80% efektu</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>20% = 80% efektu</th><th>Dlaczego to jest kluczowe</th></tr></thead>
+        <tbody>
+          <tr><td><strong>jądro zawiera większość DNA</strong></td><td>fundament całej genetyki klasy 8</td></tr>
+          <tr><td><strong>mitochondria = ATP</strong></td><td>bez energii nie ma życia</td></tr>
+          <tr><td><strong>błona = granica i transport</strong></td><td>podstawowa struktura każdej komórki</td></tr>
+          <tr><td><strong>chloroplasty = fotosynteza (w zielonych tkankach)</strong></td><td>odróżnienie roślin od zwierząt</td></tr>
+          <tr><td><strong>ściana = celuloza/chityna/mureina</strong></td><td>rozpoznawanie typów komórek</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:6px;"><strong>Dlaczego to wystarczy?</strong> Bo większość zadań E8 o komórce sprowadza się do trzech rzeczy: rozpoznaj strukturę → powiedz, co robi → dopasuj do typu komórki.</p>
+  </div>
+</section>
+
+<!-- ================= 3. KOMPAS ================= -->
+<section class="section" id="kompas">
+  <div class="part-heading"><span class="part-num">3. Kompas</span> <span class="level-badge level-basic">PRZYPOMNIENIE</span></div>
+  <div class="card card-remember">
+    <span class="card-label">Co trzeba wiedzieć wcześniej</span>
+    <p><strong>Nic — to pierwszy krok w hierarchii życia.</strong></p>
+    <ul>
+      <li>Wiesz, że organizmy są zbudowane z komórek? → idź dalej.</li>
+      <li>Nie wiesz? → przeczytaj sekcję 5 (Ściąga) i wróć.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 4. PROBLEM ================= -->
+<section class="section" id="problem">
+  <div class="part-heading"><span class="part-num">4. Zacznij od problemu</span></div>
+  <div class="highlight-box">
+    <p><strong>Skąd komórka „wie", co ma robić? Skąd bierze energię? Jak odróżnia wnętrze od otoczenia?</strong></p>
+    <p style="margin-top:8px;">Zapisz hipotezę: ....................................</p>
+    <p style="margin-top:8px;"><strong>Podpowiedź:</strong> Pomyśl o <strong>mieście</strong>:</p>
+    <ul>
+      <li><strong>biblioteka z instrukcjami</strong> — jądro z DNA (nie „ratusz");</li>
+      <li><strong>zakłady przekształcające energię</strong> — mitochondria;</li>
+      <li><strong>elastyczna granica z kontrolowanymi przejściami</strong> — błona komórkowa;</li>
+      <li><strong>maszyny odczytujące instrukcje i budujące białka</strong> — rybosomy;</li>
+      <li><strong>zbiornik i magazyn</strong> — wakuola;</li>
+      <li><strong>zakłady wykorzystujące energię światła</strong> — chloroplasty.</li>
+    </ul>
+    <p style="margin-top:8px;font-size:0.9rem;color:#78350f;">Po lekcji wróć do hipotezy i sprawdź, czy była trafna.</p>
+  </div>
+</section>
+
+<!-- ================= 5. ŚCIĄGA ================= -->
+<section class="section" id="sciaga">
+  <div class="part-heading"><span class="part-num">5. Ściąga</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <h3>5.1. Co to komórka? (definicja)</h3>
+  <div class="card card-new">
+    <span class="card-label">Definicja</span>
+    <p><strong>Komórka to najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów.</strong> Ma <strong>błonę komórkową, materiał genetyczny oraz struktury umożliwiające przeprowadzanie procesów życiowych</strong>.</p>
+    <p style="margin-top:6px;">Komórki pobierają substancje z otoczenia, uzyskują energię, reagują na bodźce, rosną i mogą się dzielić.</p>
+    <p><strong>Uwaga:</strong> nie każda wyspecjalizowana komórka wykonuje wszystkie czynności życiowe w takim samym stopniu. Np. dojrzały erytrocyt ssaka nie ma jądra i nie dzieli się.</p>
+    <p style="margin-top:6px;"><strong>Wirus nie jest komórką</strong> — nie ma budowy komórkowej: brak cytoplazmy, rybosomów oraz samodzielnego metabolizmu. Niektóre wirusy mają osłonkę lipidową, ale <strong>nie jest to błona komórkowa</strong>. Do namnażania potrzebują komórki gospodarza.</p>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Dlaczego dojrzały erytrocyt ssaka traci jądro?</span>
+    <p>Dzięki temu ma więcej miejsca na hemoglobinę — białko transportujące tlen. Ma jednak ograniczone możliwości naprawy uszkodzeń, syntezy nowych białek i podziału, dlatego żyje stosunkowo krótko (ok. 120 dni).</p>
+  </div>
+
+  <h3 id="struktury">5.2. Struktury w komórce — tabela bazowa</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Struktura</th><th>Najprostsza funkcja</th><th>Występuje</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Błona komórkowa</strong></td><td>Oddziela wnętrze komórki od otoczenia i kontroluje transport substancji</td><td>We <strong>wszystkich</strong> komórkach</td></tr>
+        <tr><td><strong>Cytoplazma</strong></td><td>Stanowi środowisko wielu reakcji chemicznych i umożliwia przemieszczanie się substancji wewnątrz komórki</td><td>We <strong>wszystkich</strong> komórkach</td></tr>
+        <tr><td><strong>Rybosomy</strong></td><td>Wytwarzają białka (synteza białek)</td><td>We <strong>wszystkich</strong> komórkach (wyjątek: dojrzały erytrocyt ssaka)</td></tr>
+        <tr><td><strong>Jądro komórkowe</strong></td><td>Zawiera większość DNA i kieruje pracą komórki</td><td>U <strong>eukariontów</strong></td></tr>
+        <tr><td><strong>Mitochondria</strong></td><td>Zachodzi w nich większość etapów oddychania komórkowego tlenowego, w którym powstaje większość ATP</td><td>U prawie wszystkich eukariontów</td></tr>
+        <tr><td><strong>Chloroplasty</strong></td><td>Miejsce fotosyntezy</td><td>W komórkach roślin i glonów zdolnych do fotosyntezy</td></tr>
+        <tr><td><strong>Ściana komórkowa</strong></td><td>Usztywnia, chroni i nadaje kształt</td><td>U roślin, grzybów i bakterii</td></tr>
+        <tr><td><strong>Duża wakuola</strong></td><td>Gromadzi wodę i substancje; utrzymuje jędrność komórki</td><td>Typowo u roślin</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Nie myl: cytoplazma ≠ cytozol</span>
+    <p><strong>Cytozol</strong> to sam płyn wewnątrz komórki. <strong>Cytoplazma</strong> to cała zawartość komórki między błoną komórkową a jądrem — obejmuje cytozol <em>oraz</em> struktury komórkowe w nim zanurzone. Cytoplazma <strong>nie obejmuje jądra</strong>.</p>
+  </div>
+
+  <div class="card card-ambitious">
+    <span class="card-label">Dla chętnych — dodatkowe struktury</span>
+    <ul>
+      <li><strong>Aparat Golgiego</strong> — sortownia i centrum pakowania (modyfikuje i pakuje białka; eukarionty).</li>
+      <li><strong>Siateczka śródplazmatyczna (ER)</strong> — sieć transportowa i miejsce produkcji części substancji (eukarionty).</li>
+      <li><strong>Jąderko</strong> — tworzy rRNA (w jądrze).</li>
+    </ul>
+  </div>
+
+  <h3 id="sciany">5.3. Ściany komórkowe — chemia trzech grup</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Grupa</th><th>Główny składnik ściany</th><th>Uwaga</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Rośliny</strong></td><td><strong>celuloza</strong></td><td>+ blaszka środkowa</td></tr>
+        <tr><td><strong>Grzyby</strong></td><td><strong>chityna</strong> (głównie) + inne polisacharydy, np. glukany</td><td>chityna — ta sama chemia co pancerz owadów</td></tr>
+        <tr><td><strong>Bakterie</strong></td><td><strong>mureina</strong> (peptydoglikan) u większości bakterii</td><td>inna chemia niż u eukariontów; niektóre bakterie nie mają typowej ściany (np. mykoplazmy)</td></tr>
+        <tr><td><strong>Zwierzęta</strong></td><td><strong>brak ściany</strong></td><td>tylko błona</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Wniosek:</strong> jeśli widzisz ścianę, to <strong>nie</strong> jest komórka zwierzęca. Trzy możliwości: roślina, grzyb albo bakteria.</p>
+
+  <div class="card card-meaning">
+    <span class="card-label">Co to naprawdę znaczy? — uproszczenie „grzyby = chityna"</span>
+    <p>Na poziomie E8 odpowiedź „chityna" jest w pełni poprawna. Biologicznie ściana grzybów zawiera chitynę <em>i inne</em> polisacharydy — dlatego w rozszerzeniu piszemy „głównie chityna".</p>
+  </div>
+
+  <h3 id="prokariota-4fakty">5.4. Prokariota — 4 fakty kluczowe</h3>
+  <div class="card card-correct">
+    <ol>
+      <li><strong>Brak jądra otoczonego błoną</strong> — główna cząsteczka DNA znajduje się w obszarze cytoplazmy zwanym <strong>nukleoidem</strong>. Często dodatkowo występują małe, koliste <strong>plazmidy</strong>.</li>
+      <li><strong>Są rybosomy i błona komórkowa</strong>, ale <strong>brak mitochondriów i chloroplastów</strong>.</li>
+      <li><strong>Bakterie nie mają mitochondriów.</strong> U wielu bakterii elementy łańcucha transportu elektronów znajdują się w błonie komórkowej, dlatego część procesów związanych z uzyskiwaniem energii może zachodzić właśnie tam. Bakterie mogą jednak uzyskiwać energię różnymi sposobami, także bez tlenu.</li>
+      <li>Przykłady: <strong>bakterie</strong>, <strong>sinice</strong> (cyjanobakterie). Bakterie najczęściej rozmnażają się <strong>bezpłciowo</strong> przez podział komórki na dwie komórki potomne — <strong>podział binarny</strong>.</li>
+    </ol>
+    <p class="mini-note"><strong>Uwaga:</strong> podział binarny <strong>nie jest mitozą</strong> — bakteria nie ma jądra komórkowego ani chromosomów organizowanych tak jak u eukariontów.</p>
+  </div>
+
+  <div class="card card-optional">
+    <span class="card-label">Dla ciekawych — prokarioty to nie tylko bakterie</span>
+    <p>Do prokariotów należą <strong>bakterie</strong> oraz <strong>archeowce</strong> (archea). W większości zadań szkolnych spotkasz jednak przede wszystkim bakterie. Archeowce mają zwykle inne środowiska życia (np. gorące źródła, słone jeziora) i inne cechy biochemiczne, ale również nie mają jądra.</p>
+  </div>
+
+  <h3 id="mnemotechniki">5.5. Mnemotechniki</h3>
+  <div class="card card-hint">
+    <ul>
+      <li><strong>Jądro = biblioteka z instrukcjami</strong> — zawiera większość DNA, ale nie całe DNA komórki</li>
+      <li><strong>Mitochondrium = zakłady przekształcające energię</strong> — oddychanie komórkowe, ATP</li>
+      <li><strong>Błona = elastyczna granica z kontrolowanymi przejściami</strong></li>
+      <li><strong>Chloroplasty = zakłady wykorzystujące światło</strong> — fotosynteza (w zielonych tkankach)</li>
+      <li><strong>Rybosom = maszyna budująca białka</strong></li>
+      <li><strong>Ściana ≠ zawsze roślina</strong> — celuloza / chityna / mureina</li>
+      <li><strong>Bez jądra otoczonego błoną = prokariota</strong> — w zadaniach szkolnych zwykle bakteria</li>
+    </ul>
+  </div>
+
+  <h3 id="typy-komorek">5.6. Tabela zbiorcza — typy komórek (z kolumną „uwaga")</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>Zwierzęca</th><th>Roślinna</th><th>Grzybowa</th><th>Bakteryjna</th><th>Uwaga</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Jądro komórkowe</strong></td><td>Tak (z wyjątkami)</td><td>Tak</td><td>Tak</td><td>Nie ma jądra otoczonego błoną</td><td>Dojrzały erytrocyt ssaka traci jądro</td></tr>
+        <tr><td><strong>Materiał genetyczny</strong></td><td>Głównie w jądrze, też w mitochondriach</td><td>W jądrze, mitochondriach i chloroplastach</td><td>Głównie w jądrze, też w mitochondriach</td><td>W nukleoidzie i czasem w plazmidach</td><td>DNA nie jest wyłącznie w jądrze</td></tr>
+        <tr><td><strong>Błona komórkowa</strong></td><td>Tak</td><td>Tak</td><td>Tak</td><td>Tak</td><td>Wszystkie komórki mają błonę</td></tr>
+        <tr><td><strong>Ściana komórkowa</strong></td><td>Brak</td><td>Z celulozy</td><td>Zawiera głównie chitynę</td><td>Zawiera mureinę u większości bakterii</td><td>Nie wszystkie bakterie mają typową ścianę (np. mykoplazmy)</td></tr>
+        <tr><td><strong>Chloroplasty</strong></td><td>Brak</td><td>Tylko w komórkach fotosyntetyzujących</td><td>Brak</td><td>Brak chloroplastów</td><td><strong>Nie każda komórka roślinna ma chloroplasty</strong> (np. korzenie, cebula)</td></tr>
+        <tr><td><strong>Mitochondria</strong></td><td>Zwykle tak</td><td>Tak</td><td>Zwykle tak</td><td>Brak</td><td>Prawie wszystkie eukarionty mają mitochondria lub struktury pochodne</td></tr>
+        <tr><td><strong>Rybosomy</strong></td><td>Tak</td><td>Tak</td><td>Tak</td><td>Tak</td><td>Wspólne dla wszystkich komórek (wyjątek: dojrzały erytrocyt ssaka)</td></tr>
+        <tr><td><strong>Wakuole</strong></td><td>Mogą występować małe pęcherzyki</td><td>Zwykle duża wakuola</td><td>Mogą występować</td><td>Brak typowej dużej wakuoli</td><td>Duża wakuola jest szczególnie typowa dla roślin</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>5.6a. Gdzie są chloroplasty — tabela przykładowa</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Komórka roślinna</th><th>Chloroplasty</th></tr></thead>
+      <tbody>
+        <tr><td>Komórka liścia</td><td>Zwykle ma</td></tr>
+        <tr><td>Komórka zielonej łodygi</td><td>Często ma</td></tr>
+        <tr><td>Komórka korzenia</td><td>Zwykle nie ma</td></tr>
+        <tr><td>Komórka miąższu cebuli</td><td>Zwykle nie ma</td></tr>
+        <tr><td>Komórka nasienia</td><td>Zwykle nie ma</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="mini-note">Chloroplasty są miejscem fotosyntezy u roślin i glonów, ale <strong>nie każda komórka roślinna musi je zawierać</strong>.</p>
+
+  <h3 id="co-wspolne">5.6b. Mini-zadanie: znajdź cechy wspólne</h3>
+  <div class="exercise">
+    <p>Wskaż cechy, które występują zarówno u bakterii, jak i u komórki roślinnej oraz zwierzęcej:</p>
+    <ol type="a">
+      <li>błona komórkowa,</li>
+      <li>cytoplazma,</li>
+      <li>materiał genetyczny,</li>
+      <li>rybosomy,</li>
+      <li>chloroplasty,</li>
+      <li>jądro.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedź</summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b> a, b, c, d.</span></p>
+      <p><span class="ans-part"><b>Najważniejszy wniosek:</b> bakteria nie ma jądra ani mitochondriów, ale nadal jest pełnoprawną komórką.</span></p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 6. WYJAŚNIENIE ================= -->
+<section class="section" id="wyjasnienie">
+  <div class="part-heading"><span class="part-num">6. Wyjaśnienie od podstaw</span></div>
+
+  <h3>6.1. Komórka jako miasto (analogia precyzyjniejsza)</h3>
+  <div class="card card-new">
+    <span class="card-label">Analogia</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Element komórki</th><th>Odpowiednik w mieście</th><th>Rola</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Jądro</strong></td><td>biblioteka z instrukcjami</td><td>przechowuje większość DNA i kieruje pracą komórki</td></tr>
+          <tr><td><strong>DNA</strong></td><td>księgozbiór instrukcji</td><td>zawiera informację genetyczną</td></tr>
+          <tr><td><strong>Rybosomy</strong></td><td>maszyny odczytujące instrukcje i budujące białka</td><td>synteza białek</td></tr>
+          <tr><td><strong>Mitochondria</strong></td><td>zakłady przekształcające energię chemiczną</td><td>oddychanie komórkowe, wytwarzanie ATP</td></tr>
+          <tr><td><strong>Chloroplasty</strong></td><td>zakłady wykorzystujące energię światła</td><td>fotosynteza (produkcja związków organicznych)</td></tr>
+          <tr><td><strong>Błona komórkowa</strong></td><td>elastyczna granica z kontrolowanymi przejściami</td><td>izoluje, transportuje, odbiera sygnały</td></tr>
+          <tr><td><strong>Ściana komórkowa</strong></td><td>sztywna konstrukcja wzmacniająca</td><td>usztywnia, chroni (rośliny, grzyby, bakterie)</td></tr>
+          <tr><td><strong>Wakuola</strong></td><td>zbiornik i magazyn</td><td>przechowuje wodę i substancje</td></tr>
+          <tr><td><strong>Aparat Golgiego</strong></td><td>sortownia i centrum pakowania</td><td>modyfikuje i pakuje białka</td></tr>
+          <tr><td><strong>Siateczka śródplazmatyczna</strong></td><td>sieć transportowa i miejsce produkcji części substancji</td><td>transport wewnątrz komórki</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Żadna analogia nie jest idealna.</strong> Służy do zapamiętania funkcji, ale nie zastępuje prawdziwego opisu biologicznego.</p>
+  </div>
+
+  <h3 id="hierarchia">6.2. Łańcuch hierarchii życia</h3>
+  <div class="hierarchy-widget" id="hierarchyWidget">
+    <h4>Hierarchia życia — kliknij ogniwo</h4>
+    <p class="hi-hint">Od atomu do organizmu. Kliknij każde ogniwo, aby zobaczyć opis.</p>
+
+    <div class="hierarchy-chain" id="hierarchyChain">
+      <button class="hierarchy-chip atom" data-hier="atom">Atom</button>
+      <span class="hierarchy-arrow">→</span>
+      <button class="hierarchy-chip mol" data-hier="mol">Cząsteczka</button>
+      <span class="hierarchy-arrow">→</span>
+      <button class="hierarchy-chip organ" data-hier="organ">Struktura komórkowa</button>
+      <span class="hierarchy-arrow">→</span>
+      <button class="hierarchy-chip cell active" data-hier="cell">Komórka</button>
+      <span class="hierarchy-arrow">→</span>
+      <button class="hierarchy-chip tissue" data-hier="tissue">Tkanka</button>
+      <span class="hierarchy-arrow">→</span>
+      <button class="hierarchy-chip organ2" data-hier="organ2">Narząd</button>
+      <span class="hierarchy-arrow">→</span>
+      <button class="hierarchy-chip system" data-hier="system">Układ</button>
+      <span class="hierarchy-arrow">→</span>
+      <button class="hierarchy-chip org" data-hier="org">Organizm</button>
+    </div>
+
+    <div class="hierarchy-info" id="hierarchyInfo">
+      <b>Komórka:</b> najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów. Pierwsza struktura uznawana za żywą. Zawiera materiał genetyczny, błonę komórkową i struktury przeprowadzające procesy życiowe.
+    </div>
+  </div>
+
+  <h3 id="typy-komorek-widget">6.3. Widget: nakładki — wspólny rdzeń i różnice</h3>
+  <p>Zamiast czterech oddzielnych rysunków, ten widget pokazuje, że komórki mają <strong>wspólny rdzeń</strong> (błona, cytoplazma, DNA, rybosomy) i różnią się dodatkami. Włączaj i wyłączaj warstwy, aby zobaczyć, co dochodzi i co znika.</p>
+
+  <div class="overlay-cells" id="overlayCells">
+    <h4>Nakładki — od wspólnego rdzenia do konkretnego typu komórki</h4>
+    <p class="oc-hint">Klikaj przyciski, aby dodawać lub usuwać warstwy.</p>
+
+    <div class="overlay-cells-toggles" id="ocToggles">
+      <button class="oc-toggle active" data-oc="core">Wspólny rdzeń</button>
+      <button class="oc-toggle" data-oc="nucleus">Jądro (eukariont)</button>
+      <button class="oc-toggle" data-oc="plant">Ściana celulozowa + chloroplast + duża wakuola</button>
+      <button class="oc-toggle" data-oc="fungus">Ściana chitynowa</button>
+      <button class="oc-toggle" data-oc="bacteria">Usuń jądro i organella błoniaste (bakteria)</button>
+    </div>
+
+    <div class="oc-view">
+      <svg id="ocSvg" viewBox="0 0 460 222" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+
+    <div class="oc-info" id="ocInfo">
+      <b>Wspólny rdzeń każdej komórki:</b> błona komórkowa, cytoplazma, materiał genetyczny i rybosomy. Bakteria ma ten sam rdzeń co komórka roślinna — różnią się obecnością jądra i organelli błoniastych.
+    </div>
+  </div>
+
+  <h3>6.4. Algorytm rozpoznawania typu komórki</h3>
+  <div class="card card-correct">
+    <ol>
+      <li><strong>Czy komórka ma jądro?</strong>
+        <ul>
+          <li>Nie ma jądra → najpewniej <strong>komórka bakteryjna</strong>.</li>
+          <li>Ma jądro → komórka <strong>eukariotyczna</strong>: roślinna, zwierzęca albo grzybowa.</li>
+        </ul>
+      </li>
+      <li><strong>Czy ma chloroplasty?</strong>
+        <ul>
+          <li>Tak → komórka <strong>roślinna</strong> lub komórka <strong>glonu</strong>.</li>
+          <li>Nie → przejdź dalej.</li>
+        </ul>
+      </li>
+      <li><strong>Czy ma ścianę komórkową?</strong>
+        <ul>
+          <li>Nie → komórka <strong>zwierzęca</strong>.</li>
+          <li>Tak → może być komórką <strong>roślinną</strong> z części niezielonej albo komórką <strong>grzyba</strong>.</li>
+        </ul>
+      </li>
+      <li><strong>Co rozstrzyga?</strong>
+        <ul>
+          <li><strong>Celuloza</strong> w ścianie → roślina.</li>
+          <li><strong>Chityna</strong> w ścianie → grzyb.</li>
+          <li><strong>Brak jądra</strong> i <strong>mureina</strong> w ścianie → bakteria.</li>
+        </ul>
+      </li>
+    </ol>
+    <div class="card card-warning" style="margin-top:10px;">
+      <span class="card-label">Uwaga</span>
+      <p>Na poziomie szkolnym brak ściany i obecność jądra wskazują <strong>zwykle</strong> na komórkę zwierzęcą. W biologii istnieją jednak wyjątki (np. u niektórych protistów oraz u bakterii pozbawionych ściany). Algorytm służy do rozwiązywania typowych zadań, a nie do opisu wszystkich organizmów.</p>
+    </div>
+    <div class="card card-meaning">
+      <span class="card-label">Nie rozpoznawaj typu komórki po samym kolorze rysunku</span>
+      <p>Zielony kolor chloroplastów na schemacie jest <strong>umowny</strong>. O typie komórki świadczy obecność lub brak konkretnych struktur, a nie barwy użyte przez autora ilustracji.</p>
+    </div>
+  </div>
+
+  <h3 id="organellum">6.5. Organellum czy struktura?</h3>
+  <div class="card card-hint">
+    <p>W lekcji pojawiają się terminy „struktura komórkowa" i „organellum". Warto je rozróżnić:</p>
+    <ul>
+      <li><strong>Organellum</strong> to wyspecjalizowana część komórki wykonująca określone zadanie. Przykłady: mitochondrium, chloroplast, aparat Golgiego.</li>
+      <li><strong>Nie wszystkie struktury komórkowe są organellami otoczonymi błoną:</strong> rybosomy nie mają błony, ale są ważnymi strukturami komórkowymi.</li>
+    </ul>
+    <p class="mini-note">Uproszczenie: w zadaniach szkolnych terminy „struktura" i „organellum" często używa się zamiennie — nie musisz się ich bać.</p>
+  </div>
+
+  <h3>6.6. Przykład prowadzony</h3>
+  <div class="card card-correct">
+    <p><strong>Dane:</strong> Komórka ma: jądro, mitochondria, błonę, bez chloroplastu i ściany.</p>
+    <p><strong>Pytanie:</strong> Jaki to typ komórki?</p>
+    <p><strong>Rozumowanie:</strong></p>
+    <ul>
+      <li>Jądro → eukariota.</li>
+      <li>Brak chloroplastu → nie jest to zielona roślina.</li>
+      <li>Brak ściany → nie roślina, nie grzyb.</li>
+      <li>→ <strong>komórka zwierzęca</strong>.</li>
+    </ul>
+    <p><strong>Spróbuj sam:</strong> jądro + ściana + chloroplast + mitochondrium + duża wakuola → ?</p>
+    <p><strong>Odpowiedź:</strong> <strong>komórka roślinna</strong>.</p>
+  </div>
+
+  <h3>6.7. Powiązanie z innymi lekcjami</h3>
+  <div class="card card-gray">
+    <pre class="step-flow">L001 (jądro = większość DNA)
+  → L002 (krew, gamety)
+  → L003 (diagnoza)
+  → L010 (cechy)
+  → L011 (DNA, A–T / C–G) ← najważniejszy most
+  → L012 (chromosom)</pre>
+    <p style="margin-top:8px;"><strong>Most:</strong> jeśli umiesz wskazać DNA na schemacie komórki → możesz iść dalej do L011.</p>
+  </div>
+</section>
+
+<!-- ================= 7. BŁONA I TRANSPORT ================= -->
+<section class="section" id="blona">
+  <div class="part-heading"><span class="part-num">7. Błona komórkowa i transport</span> <span class="level-badge level-ambitious">MASTER</span></div>
+
+  <h3>7.1. Funkcje błony komórkowej</h3>
+  <div class="card card-ambitious">
+    <p>Błona komórkowa:</p>
+    <ul>
+      <li>oddziela wnętrze komórki od środowiska;</li>
+      <li>utrzymuje względnie stałe warunki wewnątrz komórki;</li>
+      <li>wybiórczo przepuszcza różne substancje;</li>
+      <li>odbiera sygnały dzięki receptorom;</li>
+      <li>umożliwia kontakt z innymi komórkami.</li>
+    </ul>
+  </div>
+
+  <h3>7.2. Z czego zbudowana jest błona?</h3>
+  <div class="card card-ambitious">
+    <p>Jej podstawą jest <strong>dwuwarstwa fosfolipidowa</strong>. Fosfolipidy mają:</p>
+    <ul>
+      <li><strong>hydrofilową część</strong>, która „lubi" wodę;</li>
+      <li><strong>hydrofobową część</strong>, która unika wody.</li>
+    </ul>
+    <p>Dzięki temu ustawiają się w dwóch warstwach. W błonie znajdują się także białka, które mogą działać jako:</p>
+    <ul>
+      <li>kanały;</li>
+      <li>pompy;</li>
+      <li>transportery;</li>
+      <li>receptory;</li>
+      <li>enzymy.</li>
+    </ul>
+  </div>
+
+  <h3 id="blona-widget">7.2a. Widget: warstwy błony komórkowej</h3>
+  <p>Kliknij każdy element, aby zobaczyć, jaką rolę odgrywa w błonie.</p>
+
+  <div class="membrane-widget" id="membraneWidget">
+    <h4>Błona komórkowa — co ją buduje?</h4>
+    <p class="mem-hint">Kliknij element błony, aby zobaczyć szczegóły.</p>
+
+    <div class="membrane-buttons">
+      <button class="membrane-btn active" data-mem="fosfolipid">Fosfolipidy</button>
+      <button class="membrane-btn" data-mem="hydrofil">Część hydrofilowa</button>
+      <button class="membrane-btn" data-mem="hydrofob">Część hydrofobowa</button>
+      <button class="membrane-btn" data-mem="bialko">Białka błonowe</button>
+      <button class="membrane-btn" data-mem="calosc">Cała dwuwarstwa</button>
+    </div>
+
+    <div class="membrane-view">
+      <svg viewBox="0 0 360 140" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="360" height="140" fill="#fafcff"/>
+        <g id="memHeads" style="transition:opacity .25s;">
+          <circle cx="20" cy="45" r="9"/>
+          <circle cx="50" cy="45" r="9"/>
+          <circle cx="80" cy="45" r="9"/>
+          <circle cx="110" cy="45" r="9"/>
+          <circle cx="140" cy="45" r="9"/>
+          <circle cx="170" cy="45" r="9"/>
+          <circle cx="200" cy="45" r="9"/>
+          <circle cx="230" cy="45" r="9"/>
+          <circle cx="260" cy="45" r="9"/>
+          <circle cx="290" cy="45" r="9"/>
+          <circle cx="320" cy="45" r="9"/>
+          <circle cx="20" cy="95" r="9"/>
+          <circle cx="50" cy="95" r="9"/>
+          <circle cx="80" cy="95" r="9"/>
+          <circle cx="110" cy="95" r="9"/>
+          <circle cx="140" cy="95" r="9"/>
+          <circle cx="170" cy="95" r="9"/>
+          <circle cx="200" cy="95" r="9"/>
+          <circle cx="230" cy="95" r="9"/>
+          <circle cx="260" cy="95" r="9"/>
+          <circle cx="290" cy="95" r="9"/>
+          <circle cx="320" cy="95" r="9"/>
+        </g>
+        <g id="memTails" fill="none" style="transition:opacity .25s;">
+          <line x1="20" y1="54" x2="20" y2="86"/>
+          <line x1="50" y1="54" x2="50" y2="86"/>
+          <line x1="80" y1="54" x2="80" y2="86"/>
+          <line x1="110" y1="54" x2="110" y2="86"/>
+          <line x1="140" y1="54" x2="140" y2="86"/>
+          <line x1="170" y1="54" x2="170" y2="86"/>
+          <line x1="200" y1="54" x2="200" y2="86"/>
+          <line x1="230" y1="54" x2="230" y2="86"/>
+          <line x1="260" y1="54" x2="260" y2="86"/>
+          <line x1="290" y1="54" x2="290" y2="86"/>
+          <line x1="320" y1="54" x2="320" y2="86"/>
+        </g>
+        <g id="memProtein" style="transition:opacity .25s;">
+          <rect x="150" y="40" width="14" height="60" rx="3" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+          <text x="157" y="75" text-anchor="middle" font-size="8" fill="#78350f" font-weight="700">białko</text>
+        </g>
+        <text x="180" y="22" text-anchor="middle" font-size="10" fill="#1e4a7a">Dwuwarstwa fosfolipidowa</text>
+        <text x="180" y="128" text-anchor="middle" font-size="9" fill="#64748b">na zewnątrz: woda · wewnątrz: woda</text>
+      </svg>
+    </div>
+
+    <div class="membrane-desc" id="membraneDesc">
+      <b>Fosfolipidy:</b> podstawowy budulec błony. Mają główkę (hydrofilową) i dwa ogonki (hydrofobowe). Ustawiają się w dwie warstwy — główki na zewnątrz (do wody), ogonki do środka (od wody).
+    </div>
+  </div>
+
+  <h3 id="transport">7.3. Transport przez błonę</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Rodzaj transportu</th><th>Czy wymaga energii?</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td>Dyfuzja</td><td>Nie</td><td>Przemieszczanie się cząsteczek zgodnie z różnicą stężeń</td></tr>
+        <tr><td>Osmoza</td><td>Nie</td><td>Przemieszczanie się wody przez błonę półprzepuszczalną</td></tr>
+        <tr><td>Transport aktywny</td><td>Tak</td><td>Przenoszenie substancji wbrew różnicy stężeń</td></tr>
+        <tr><td>Endocytoza</td><td>Tak</td><td>Pobieranie większych cząstek do wnętrza komórki</td></tr>
+        <tr><td>Egzocytoza</td><td>Tak</td><td>Wydzielanie substancji na zewnątrz</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card card-hint">
+    <span class="card-label">Pomost do innych przedmiotów</span>
+    <p>Transport przez błonę łączy biologię z <strong>chemią</strong> (cząsteczki, stężenia) i <strong>fizyką</strong> (dyfuzja, osmoza). Przyda się w późniejszych lekcjach o komórkach roślinnych i osmozie (L014, L041).</p>
+  </div>
+</section>
+
+<!-- ================= 7a. PRZEPŁYW ENERGII ================= -->
+<section class="section" id="energy-flow">
+  <div class="part-heading"><span class="part-num">7a. Przepływ energii — chloroplast i mitochondrium</span></div>
+  <p>Chloroplasty i mitochondria współpracują w komórce roślinnej, ale pełnią różne funkcje. Ten diagram pokazuje, jak energia przechodzi przez oba typy organelli.</p>
+
+  <div class="energy-flow">
+    <h4>Od światła do ATP — jedna ścieżka</h4>
+    <svg viewBox="0 0 460 236" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="460" height="236" fill="#fffbeb"/>
+      <text x="230" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="#7c2d12" font-family="Segoe UI">światło + woda + dwutlenek węgla</text>
+      <text x="230" y="42" text-anchor="middle" font-size="18" fill="#ea580c" font-family="Segoe UI">↓</text>
+      <rect x="120" y="55" width="220" height="42" rx="8" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+      <text x="230" y="75" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46" font-family="Segoe UI">CHLOROPLAST</text>
+      <text x="230" y="90" text-anchor="middle" font-size="10" fill="#065f46" font-family="Segoe UI">fotosynteza</text>
+      <text x="230" y="112" text-anchor="middle" font-size="18" fill="#ea580c" font-family="Segoe UI">↓</text>
+      <text x="230" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#7c2d12" font-family="Segoe UI">cukier + tlen</text>
+      <text x="230" y="152" text-anchor="middle" font-size="18" fill="#ea580c" font-family="Segoe UI">↓</text>
+      <rect x="120" y="163" width="220" height="42" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+      <text x="230" y="183" text-anchor="middle" font-size="12" font-weight="700" fill="#9a3412" font-family="Segoe UI">MITOCHONDRIUM</text>
+      <text x="230" y="197" text-anchor="middle" font-size="10" fill="#9a3412" font-family="Segoe UI">oddychanie komórkowe</text>
+      <text x="230" y="216" text-anchor="middle" font-size="18" fill="#ea580c" font-family="Segoe UI">↓</text>
+      <text x="230" y="232" text-anchor="middle" font-size="12" font-weight="700" fill="#78350f" font-family="Segoe UI">ATP + CO₂ + H₂O</text>
+    </svg>
+    <p class="ef-caption">Roślina jednocześnie fotosyntetyzuje i oddycha. Fotosynteza — tylko w komórkach z chloroplastami i przy świetle. Oddychanie — przez całą dobę.</p>
+  </div>
+
+  <div class="card card-meaning">
+    <span class="card-label">Co to naprawdę znaczy?</span>
+    <p>Chloroplasty przechwytują energię światła, aby wytworzyć związki organiczne (np. cukry). Mitochondria przekształcają energię chemiczną tych związków w ATP — bezpośrednio użyteczną formę energii dla komórki. Energia <strong>nie powstaje z niczego</strong> — jest przekształcana z jednej formy w drugą.</p>
+  </div>
+</section>
+
+<!-- ================= 8. TEORIA KOMÓRKOWA ================= -->
+<section class="section" id="teoria">
+  <div class="part-heading"><span class="part-num">8. Teoria komórkowa</span></div>
+
+  <div class="card card-new">
+    <span class="card-label">Klasyczna teoria komórkowa i jej współczesne uzupełnienia</span>
+    <p>Teoria komórkowa rozwijała się przez dziesięciolecia. Warto rozróżnić <strong>klasyczne trzy twierdzenia</strong> od <strong>współczesnych uzupełnień</strong>.</p>
+
+    <div class="teoria-section-label">Klasyczne trzy twierdzenia</div>
+    <ol>
+      <li>Organizmy komórkowe są zbudowane z jednej lub wielu komórek.</li>
+      <li>Komórka jest podstawową jednostką budowy i funkcjonowania organizmów.</li>
+      <li>Nowe komórki powstają z podziału wcześniej istniejących komórek.</li>
+    </ol>
+
+    <div class="teoria-section-label">Współczesne uzupełnienia</div>
+    <ol start="4">
+      <li>Komórki zawierają materiał genetyczny przekazywany komórkom potomnym.</li>
+      <li>Podstawowe procesy życiowe zachodzą w komórkach.</li>
+    </ol>
+
+    <p style="margin-top:8px;font-size:0.88rem;color:var(--color-text-muted);">Podręczniki różnie formułują teorię komórkową — powyższe ujęcie pokazuje, że nauka rozwija się z czasem.</p>
+  </div>
+
+  <h3 id="teoria-widget">8.1. Widget: interaktywne twierdzenia</h3>
+  <p>Kliknij każde twierdzenie, aby zobaczyć wyjaśnienie i przykład.</p>
+
+  <div class="teoria-widget" id="teoriaWidget">
+    <h4>Pięć twierdzeń teorii komórkowej</h4>
+    <p class="tw-hint">Kliknij twierdzenie, aby zobaczyć rozwinięcie.</p>
+
+    <div class="teoria-points" id="teoriaPoints">
+      <div class="teoria-point active" data-tw="1">1. Organizmy komórkowe są zbudowane z jednej lub wielu komórek.</div>
+      <div class="teoria-point" data-tw="2">2. Komórka jest podstawową jednostką budowy i funkcjonowania organizmów.</div>
+      <div class="teoria-point" data-tw="3">3. Nowe komórki powstają z podziału wcześniej istniejących komórek.</div>
+      <div class="teoria-point" data-tw="4">4. Komórki zawierają materiał genetyczny przekazywany komórkom potomnym.</div>
+      <div class="teoria-point" data-tw="5">5. Podstawowe procesy życiowe zachodzą w komórkach.</div>
+    </div>
+
+    <div class="teoria-detail" id="teoriaDetail" aria-live="polite">
+      <b>Twierdzenie 1:</b> Dotyczy wszystkich organizmów komórkowych. Bakteria jest jedną komórką, człowiek — dziesiątkami bilionów. Ale <em>wirus nie jest komórką</em> — nie ma cytoplazmy, rybosomów ani własnego metabolizmu. Dlatego teorię komórkową formułujemy dziś jako „wszystkie organizmy <strong>komórkowe</strong>".
+    </div>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Ważne dopowiedzenie</span>
+    <p>Teoria komórkowa <strong>nie oznacza</strong>, że wszystkie komórki wyglądają tak samo. Komórki mogą różnić się:</p>
+    <ul>
+      <li>kształtem,</li>
+      <li>wielkością,</li>
+      <li>funkcją,</li>
+      <li>liczbą i rodzajem struktur komórkowych,</li>
+      <li>obecnością lub brakiem określonych struktur.</li>
+    </ul>
+    <p>Np. neuron jest przystosowany do przewodzenia impulsów, a komórka mięśniowa do kurczenia się. Obie są komórkami, ale pełnią różne funkcje.</p>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Dlaczego to ważne?</span>
+    <p>Bo wyjaśnia, dlaczego:</p>
+    <ul>
+      <li>nowotwory powstają z <strong>jednej</strong> zmienionej komórki (L016),</li>
+      <li>choroby genetyczne dziedziczą się (L017),</li>
+      <li>organizmy rosną i regenerują się (L014 — mitoza).</li>
+    </ul>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Wirusy a teoria komórkowa</span>
+    <p><strong>Wirusy nie są uznawane za organizmy komórkowe</strong>, ponieważ nie mają budowy komórkowej. W materiale szkolnym bezpieczniej pisać: <strong>„wszystkie organizmy komórkowe są zbudowane z jednej lub wielu komórek"</strong>.</p>
+  </div>
+</section>
+
+<!-- ================= 9. POZIOM AMBITNY ================= -->
+<section class="section" id="prok-euk">
+  <div class="part-heading"><span class="part-num">9. Poziom ambitny</span> <span class="level-badge level-ambitious">MASTER</span></div>
+
+  <h3>9.1. Prokariota vs eukariota — pełne porównanie</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>Prokariota</th><th>Eukariota</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Jądro z błoną</strong></td><td>brak</td><td>jest</td></tr>
+        <tr><td><strong>DNA</strong></td><td>Główna cząsteczka w nukleoidzie; często jedna główna kolista cząsteczka DNA. Mogą występować plazmidy.</td><td>W jądrze (upakowane w chromosomach) + mtDNA / cpDNA</td></tr>
+        <tr><td><strong>Struktury błonowe</strong></td><td>brak (poza błoną komórkową)</td><td>mitochondria, ER, Golgi, lizosomy</td></tr>
+        <tr><td><strong>Rybosomy</strong></td><td>są (70S)</td><td>są (80S + 70S w mitochondriach)</td></tr>
+        <tr><td><strong>Ściana</strong></td><td>mureina u większości bakterii</td><td>celuloza/chityna (rośliny/grzyby); brak u zwierząt</td></tr>
+        <tr><td><strong>Rozmiar</strong></td><td>1–10 µm</td><td>10–100 µm</td></tr>
+        <tr><td><strong>Podział komórki</strong></td><td>Zwykle podział binarny</td><td>Mitoza; u organizmów rozmnażających się płciowo także mejoza przy powstawaniu gamet lub zarodników</td></tr>
+        <tr><td><strong>Przykłady</strong></td><td>bakterie, archeowce</td><td>rośliny, zwierzęta, grzyby, protisty</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-ambitious">
+    <span class="card-label">Dlaczego jądro jest „wynalazkiem"?</span>
+    <p>Oddziela <strong>transkrypcję</strong> (w jądrze) od <strong>translacji</strong> (w cytoplazmie). To pozwala na <strong>precyzyjniejszą regulację ekspresji genów</strong>.</p>
+  </div>
+
+  <h3>9.2. Rybosomy — struktury obecne we wszystkich typowych komórkach</h3>
+  <div class="card card-ambitious">
+    <p><strong>Rybosomy to struktury obecne we wszystkich komórkach</strong>: bakteryjnych i eukariotycznych. <strong>Nie są otoczone błoną.</strong> Są kompleksami zbudowanymi z rRNA i białek. Ich zadaniem jest <strong>synteza białek</strong> na podstawie informacji zawartej w mRNA.</p>
+    <p>To dlatego:</p>
+    <ul>
+      <li>niektóre <strong>antybiotyki</strong> działają wybiórczo na rybosomy bakteryjne (70S), nie uszkadzając ludzkich (80S),</li>
+      <li>rybosomy mitochondrialne są <strong>podobne do bakteryjnych</strong> — to ważny argument za <strong>endosymbiozą</strong>.</li>
+    </ul>
+    <p class="mini-note"><strong>Wyjątek:</strong> dojrzały erytrocyt ssaka nie ma jądra, mitochondriów ani rybosomów, dlatego nie syntetyzuje nowych białek i nie dzieli się.</p>
+  </div>
+</section>
+
+<!-- ================= 10. POZIOM ZAAWANSOWANY ================= -->
+<section class="section" id="endosymbioza">
+  <div class="part-heading"><span class="part-num">10. Poziom zaawansowany</span> <span class="level-badge level-ambitious">ZAAWANSOWANY</span></div>
+
+  <h3>10.1. Endosymbioza — skąd się wzięły mitochondria i chloroplasty?</h3>
+  <div class="card card-ambitious">
+    <p><strong>Teoria endosymbiozy zakłada</strong>, że mitochondria i chloroplasty wywodzą się od dawnych bakterii, które weszły w trwałą symbiozę z przodkami komórek eukariotycznych. Z czasem bakterie utraciły samodzielność i stały się organellami komórkowymi.</p>
+    <p style="margin-top:6px;"><strong>Dowody wspierające teorię endosymbiozy:</strong></p>
+    <ol>
+      <li>mitochondria i chloroplasty mają <strong>własny, zwykle kolisty DNA</strong>;</li>
+      <li>są otoczone <strong>dwiema błonami</strong>;</li>
+      <li>mają <strong>rybosomy przypominające rybosomy bakterii</strong>;</li>
+      <li>powiększają swoją liczbę przez <strong>podział</strong>;</li>
+      <li>ich budowa i niektóre procesy przypominają budowę i procesy zachodzące u bakterii.</li>
+    </ol>
+    <div class="card card-warning" style="margin-top:10px;">
+      <span class="card-label">Ważne dopowiedzenie</span>
+      <p><strong>Mitochondrium nie jest współczesną bakterią.</strong> Jest organellum silnie zależnym od całej komórki — większość jego białek jest kodowana przez DNA znajdujące się w jądrze.</p>
+    </div>
+  </div>
+
+  <h3 id="mtdna">10.2. mtDNA i cpDNA — materiały genetyczne poza jądrem</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Typ</th><th>Gdzie</th><th>Dziedziczenie</th><th>Uwagi</th></tr></thead>
+      <tbody>
+        <tr><td><strong>mtDNA</strong></td><td>mitochondria</td><td>u człowieka <strong>prawie zawsze po matce</strong> (w typowych zadaniach szkolnych przyjmujemy: po matce)</td><td>kolisty</td></tr>
+        <tr><td><strong>cpDNA</strong></td><td>chloroplast</td><td>zwykle od jednego rodzica; u wielu roślin od żeńskiego, ale <strong>są wyjątki</strong></td><td>tylko u roślin i glonów</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card card-warning">
+    <span class="card-label">Uwaga</span>
+    <p>„mtDNA po matce" to reguła szkolna. W biologii istnieją bardzo rzadkie wyjątki i zjawiska komplikujące ten model. „cpDNA po matce" <strong>nie jest regułą uniwersalną</strong> u roślin.</p>
+  </div>
+
+  <h3>10.3. Prawie wszystkie eukarionty mają mitochondria lub struktury pochodne</h3>
+  <div class="card card-ambitious">
+    <p><strong>Prawie wszystkie znane eukarionty mają mitochondria</strong> albo struktury pochodzące od mitochondriów. U niektórych organizmów zostały one silnie zmienione i nie przypominają typowych mitochondriów.</p>
+    <p>Nie jest więc idealnie poprawne stwierdzenie, że <em>każda</em> komórka eukariotyczna ma klasyczne mitochondrium.</p>
+  </div>
+</section>
+
+<!-- ================= 11. KLINIKA BŁĘDÓW ================= -->
+<section class="section" id="klinika">
+  <div class="part-heading"><span class="part-num">11. Klinika błędów</span> <span class="level-badge level-trap">PUŁAPKI</span></div>
+
+  <h3>11.1. Tabela błędów</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Błąd</th><th>Poprawa</th><th>Dlaczego?</th></tr></thead>
+      <tbody>
+        <tr class="error-row"><td>„Jądro = DNA" (całe DNA)</td><td>Jądro zawiera <strong>większość</strong> DNA, ale nie całe</td><td>DNA jest też w mitochondriach (i chloroplastach)</td></tr>
+        <tr class="error-row"><td>DNA pływa w cytoplazmie człowieka</td><td>u eukariontów DNA jest w <strong>jądrze</strong> (+ mtDNA)</td><td>lokalizacja DNA</td></tr>
+        <tr class="error-row"><td>„Mitochondrium produkuje energię"</td><td>W mitochondriach zachodzi większość etapów oddychania tlenowego, w którym powstaje większość ATP</td><td>energia nie powstaje „z niczego" — jest przekształcana</td></tr>
+        <tr class="error-row"><td>Roślina nie ma mitochondriów</td><td>ma — oddycha <strong>całą dobę</strong></td><td>fotosynteza ≠ oddychanie</td></tr>
+        <tr class="error-row"><td>Każda komórka roślinna ma chloroplasty</td><td><strong>Nie każda</strong> — np. korzenie, cebula</td><td>fotosynteza zachodzi tylko w tkankach zielonych</td></tr>
+        <tr class="error-row"><td>Komórka zwierzęca ma ścianę</td><td>nie ma — tylko błonę</td><td>ściana = roślina/grzyb/bakteria</td></tr>
+        <tr class="error-row"><td>Chloroplast u zwierząt</td><td>nie — tylko u roślin i glonów</td><td>fotosynteza</td></tr>
+        <tr class="error-row"><td>Każda komórka ma jądro</td><td>nie: prokariota; dojrzały erytrocyt ssaka</td><td>wyjątki istnieją</td></tr>
+        <tr class="error-row"><td>Roślina nie oddycha</td><td>oddycha — w mitochondriach</td><td>fotosynteza + oddychanie</td></tr>
+        <tr class="error-row"><td>Ściana = zawsze roślina</td><td>też <strong>grzyby</strong> i <strong>bakterie</strong></td><td>różna chemia</td></tr>
+        <tr class="error-row"><td>Ściana bez chloroplastu = roślina</td><td>może grzyb (chityna) <strong>albo</strong> tkanka roślinna niezielona</td><td>duża wakuola typowa dla roślin</td></tr>
+        <tr class="error-row"><td>DNA tylko w jądrze</td><td>też DNA mitochondrialne i chloroplastowe</td><td>DNA poza jądrem</td></tr>
+        <tr class="error-row"><td>Rybosom „jedyna struktura" wspólna</td><td>rybosomy są u wszystkich typowych komórek, ale błona, cytoplazma i materiał genetyczny też</td><td>precyzja językowa</td></tr>
+        <tr class="error-row"><td>Wirus = komórka</td><td>wirus ≠ komórka</td><td>brak cytoplazmy i metabolizmu</td></tr>
+        <tr class="error-row"><td>Cytoplazma = tylko płyn</td><td>cytoplazma obejmuje cytozol i struktury; jądro do niej nie należy</td><td>cytoplazma ≠ cytozol</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>11.2. Klinika 2.0 — pięć pełnych przykładów</h3>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 1 — „Roślina nie ma mitochondriów, bo ma chloroplast"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Roślina nie ma mitochondriów, bo ma chloroplast."</li>
+      <li><strong>Znajdź:</strong> Mylenie fotosyntezy z oddychaniem.</li>
+      <li><strong>Popraw:</strong> Roślina <strong>ma</strong> mitochondria i <strong>oddycha</strong> — fotosynteza produkuje cukier, oddychanie uwalnia z niego energię.</li>
+      <li><strong>Reguła:</strong> Fotosynteza nie zastępuje oddychania.</li>
+      <li><strong>Dlaczego:</strong> Chloroplast produkuje cukier, ale energia z niego przekształcana jest w ATP w mitochondriach.</li>
+      <li><strong>Pułapka:</strong> „Ma chloroplast, więc nie potrzebuje mitochondriów" — <strong>błąd</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 2 — „Ściana bez chloroplastu = na pewno roślina"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Komórka ze ścianą, ale bez chloroplastu, to na pewno roślina."</li>
+      <li><strong>Popraw:</strong> Może to być komórka roślinna z tkanki <strong>niezielonej</strong> (np. cebula), <strong>albo</strong> komórka <strong>grzyba</strong>. Jeśli dodatkowo widzimy <strong>dużą centralną wakuolę</strong> — bardziej prawdopodobna jest roślina.</li>
+      <li><strong>Reguła:</strong> Ściana nie wystarcza do rozpoznania — sprawdź chemię ściany, obecność jądra i cechy dodatkowe.</li>
+      <li><strong>Pułapka:</strong> „Ściana + brak chloroplastu = roślina" — <strong>nie zawsze</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 3 — „DNA tylko w jądrze"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „DNA znajduje się tylko w jądrze komórkowym."</li>
+      <li><strong>Popraw:</strong> DNA jest <strong>głównie</strong> w jądrze, ale też w <strong>mitochondriach</strong> (mtDNA) i — u roślin — w <strong>chloroplastach</strong> (cpDNA).</li>
+      <li><strong>Reguła:</strong> DNA poza jądrem istnieje i ma znaczenie biologiczne.</li>
+      <li><strong>Pułapka:</strong> „DNA = tylko jądro" — <strong>nie</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 4 — „Wirus to mała bakteria"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Wirus to mała bakteria."</li>
+      <li><strong>Popraw:</strong> Wirus <strong>nie ma budowy komórkowej</strong> — nie ma cytoplazmy, rybosomów ani własnego metabolizmu. Niektóre wirusy mają osłonkę lipidową, ale nie jest to błona komórkowa.</li>
+      <li><strong>Reguła:</strong> Komórka = podstawowa jednostka życia; wirus ≠ komórka.</li>
+      <li><strong>Pułapka:</strong> „Wirus to mała bakteria" — <strong>nie</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 5 — „Erytrocyt to komórka, więc ma jądro"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Każda komórka ma jądro — np. erytrocyt ssaka."</li>
+      <li><strong>Popraw:</strong> <strong>Dojrzały erytrocyt ssaka traci jądro</strong> — nie ma go. To wyjątek.</li>
+      <li><strong>Reguła:</strong> „Każda komórka ma jądro" — <strong>nie</strong>; wyjątki: prokariota, dojrzałe erytrocyty ssaków.</li>
+      <li><strong>Pułapka:</strong> „Komórka = zawsze jądro" — <strong>nie</strong>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 12. OBSERWACJA ================= -->
+<section class="section" id="obserwacja">
+  <div class="part-heading"><span class="part-num">12. Obserwacja / model</span></div>
+  <div class="card card-gray">
+    <pre class="step-flow">Problem: Jakie struktury są widoczne w komórkach?
+Hipoteza: Zależnie od typu komórki widoczne są różne struktury.
+Materiał: preparaty mikroskopowe (cebula, Elodea, wymaz z policzka).
+Obserwacja: Pod mikroskopem świetlnym można czasem rozpoznać ścianę komórkową, chloroplasty, jądro po odpowiednim barwieniu oraz dużą wakuolę. Błona komórkowa bardzo często nie jest wyraźnie oddzielona od ściany na szkolnym preparacie.
+Wniosek: Mikroskop świetlny pokazuje tylko niektóre struktury.
+Ograniczenia: brak obrazu struktur submikroskopowych (mitochondria, rybosomy).
+BHP: instrukcja pracowni; nie dotykać soczewek; nie świecić agresywnie w oczy.</pre>
+    <p style="margin-top:8px;font-style:italic;color:var(--color-text-muted);">Obserwacja ≠ wniosek: „Widzę zielone struktury" → „to chloroplasty", ale „nie widzę mitochondriów" <strong>nie znaczy</strong>, że ich nie ma.</p>
+  </div>
+
+  <h3>12.1. Widget: mikroskop vs model</h3>
+  <p>Zobacz tę samą komórkę cebuli w dwóch widokach — to, co widać pod mikroskopem świetlnym, i to, co pokazuje pełny model biologiczny.</p>
+
+  <div class="micro-widget">
+    <h4>„Nie wszystko widać" — widok mikroskopowy vs model</h4>
+    <p class="mi-hint">Przełącz widok, aby zobaczyć różnicę.</p>
+
+    <div class="micro-buttons">
+      <button class="micro-btn active" data-micro="light">Widok w mikroskopie świetlnym</button>
+      <button class="micro-btn" data-micro="model">Model biologiczny</button>
+    </div>
+
+    <div class="micro-view">
+      <svg id="microSvg" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg"></svg>
+      <p class="micro-caption" id="microCaption">W mikroskopie świetlnym widać przede wszystkim ścianę komórkową i dużą wakuolę; jądro bywa widoczne po barwieniu.</p>
+    </div>
+  </div>
+
+  <h3>12.2. Co zwykle widać w poszczególnych preparatach</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Preparat</th><th>Co zwykle widać</th><th>Czego zwykle nie widać wyraźnie</th></tr></thead>
+      <tbody>
+        <tr><td>Skórka cebuli</td><td>Ścianę komórkową, dużą wakuolę, czasem jądro po barwieniu</td><td>Chloroplastów, mitochondriów, rybosomów</td></tr>
+        <tr><td>Liść moczarki kanadyjskiej</td><td>Ścianę, chloroplasty, cytoplazmę, ruch cytoplazmy</td><td>Mitochondriów, rybosomów</td></tr>
+        <tr><td>Wymaz z policzka</td><td>Błonę, cytoplazmę, jądro po barwieniu</td><td>Ściany komórkowej, chloroplastów, mitochondriów</td></tr>
+        <tr><td>Jogurt lub preparat bakterii</td><td>Skupiska bardzo drobnych komórek po barwieniu</td><td>Jądra, mitochondriów, rybosomów</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 13. ĆWICZENIA ================= -->
+<section class="section" id="cwiczenia">
+  <div class="part-heading"><span class="part-num">13. Ćwiczenia</span> <span class="level-badge level-training">TRENING</span></div>
+
+  <h3>13A. Mini-check (5 pytań)</h3>
+  <div class="exercise">
+    <ol>
+      <li>Co to komórka?</li>
+      <li>Gdzie w eukarioncie znajduje się większość DNA?</li>
+      <li>Jaki nośnik energii powstaje głównie w mitochondriach podczas oddychania tlenowego?</li>
+      <li>Co to struktura komórkowa?</li>
+      <li>Które komórki nie mają jądra?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>Najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów.</li>
+        <li>W jądrze (+ DNA mitochondrialne).</li>
+        <li>ATP — bezpośredni nośnik energii używany przez komórkę.</li>
+        <li>Wyodrębniona struktura o określonej funkcji.</li>
+        <li>Prokariota (bakterie, archeowce); dojrzały erytrocyt ssaka.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h3>13B. Ćwiczenie prowadzone</h3>
+  <div class="exercise">
+    <p><strong>Dane:</strong> komórka z: jądrem, ścianą, chloroplastem, mitochondrium, dużą wakuolą.</p>
+    <p><strong>Rozumowanie:</strong></p>
+    <ul>
+      <li>jądro → eukariota</li>
+      <li>chloroplast → roślina/glon</li>
+      <li>ściana → roślina (jeśli celuloza)</li>
+      <li>duża wakuola → potwierdza roślinę</li>
+    </ul>
+    <p><strong>Odpowiedź:</strong> <strong>komórka roślinna</strong>.</p>
+  </div>
+
+  <h3>13C. Ćwiczenia samodzielne</h3>
+
+  <h4>A. Podstawa <span class="level-badge level-basic">A</span></h4>
+  <div class="exercise">
+    <ol>
+      <li>Zdefiniuj komórkę.</li>
+      <li>Wymień 5 struktur komórkowych i ich funkcje.</li>
+      <li>Gdzie jest większość DNA w eukarioncie?</li>
+      <li>Gdzie zachodzi fotosynteza?</li>
+      <li>Czym różni się komórka roślinna od zwierzęcej?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>Najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów.</li>
+        <li>Np. jądro — większość DNA; mitochondria — ATP (oddychanie tlenowe); chloroplasty — fotosynteza; rybosomy — synteza białek; błona — granica i transport.</li>
+        <li>W jądrze (+ mtDNA).</li>
+        <li>W chloroplastach (w komórkach roślin i glonów zdolnych do fotosyntezy).</li>
+        <li>Roślinna: zwykle ściana + chloroplasty (w tkankach zielonych) + duża wakuola; zwierzęca: brak ściany i chloroplastu.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h4>B. Trening <span class="level-badge level-training">B</span></h4>
+  <div class="exercise">
+    <ol start="6">
+      <li>Dlaczego roślina ma mitochondria, jeśli ma chloroplasty?</li>
+      <li>Dopasuj: chityna → grzyb / celuloza → roślina / mureina → bakteria.</li>
+      <li>Popraw: „Mitochondrium = jądro".</li>
+      <li>Jak odróżnić komórkę zwierzęcą od roślinnej w 3 krokach?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol start="6">
+        <li>Bo fotosynteza produkuje cukier, ale energia z niego przekształcana jest w ATP w mitochondriach.</li>
+        <li>Jak wyżej.</li>
+        <li>Mitochondrium — oddychanie tlenowe i powstawanie ATP; jądro — większość DNA.</li>
+        <li>1) Jądro? 2) Chloroplasty? 3) Ściana?</li>
+      </ol>
+    </details>
+  </div>
+
+  <h4>C. Ambitne <span class="level-badge level-ambitious">C</span></h4>
+  <div class="exercise">
+    <ol start="10">
+      <li>Dlaczego bakterie nie mają mitochondriów, a mimo to żyją?</li>
+      <li>Uzasadnij: „jądro = biblioteka z instrukcjami" — co to znaczy?</li>
+      <li>Wyjaśnij różnicę: struktura błonowa vs struktura bez błony.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol start="10">
+        <li>Bo u wielu bakterii elementy łańcucha transportu elektronów znajdują się w błonie komórkowej. Bakterie mogą też uzyskiwać energię różnymi sposobami, także bez tlenu.</li>
+        <li>Jądro przechowuje większość „przepisów" — DNA, z którego komórka wytwarza białka.</li>
+        <li>Błonowe: jądro, mitochondria, chloroplast, wakuola, ER, Golgi. Bez błony: rybosomy, cytoszkielet.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h4>D. Zaawansowane <span class="level-badge level-ambitious">D</span></h4>
+  <div class="exercise">
+    <ol start="13">
+      <li>Co to mtDNA? Po kim się dziedziczy u człowieka?</li>
+      <li>Czym jest teoria endosymbiozy? Podaj 2 dowody.</li>
+      <li>Dlaczego rybosomy mitochondrialne są podobne do bakteryjnych?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol start="13">
+        <li>mtDNA = DNA mitochondrialny; u człowieka prawie zawsze dziedziczony po matce (szkolna reguła).</li>
+        <li>Endosymbioza = mitochondria/chloroplasty pochodzą od dawnych bakterii. Dowody: własny DNA, własne rybosomy podobne do bakteryjnych.</li>
+        <li>Bo mitochondria pochodzą od bakterii, a ich rybosomy zachowały cechy bakteryjne.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h3>13D. PROBLEM / THINK <span class="level-badge level-ambitious">KONKURS</span></h3>
+  <div class="exercise">
+    <ol>
+      <li>Komórka ma ścianę, ale nie ma chloroplastu. Co to może być? Uzasadnij wszystkie możliwości.</li>
+      <li><strong>ZAKWESTIONUJ:</strong> Czy każda komórka ma jądro? Uzasadnij, podając wyjątki.</li>
+      <li>Czy wirus to komórka? Uzasadnij.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>Roślina (tkanka niezielona) <strong>albo</strong> grzyb. Wykluczyć zwierzę (brak ściany). Bakteria też ma ścianę, ale nie ma jądra — trzeba sprawdzić jądro. Jeśli widzimy dodatkowo dużą centralną wakuolę, bardziej prawdopodobna jest roślina.</li>
+        <li>Nie — prokariota (bakterie, archeowce) nie mają jądra; dojrzałe erytrocyty ssaka tracą jądro.</li>
+        <li>Nie — wirus nie ma budowy komórkowej ani metabolizmu. Nie jest komórką.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h3>13E. Quiz „dowód, nie zgadywanie" <span class="level-badge level-ambitious">KONKURS</span></h3>
+  <p>Przy każdym schemacie odpowiedz na cztery pytania: <strong>co widzę? czego nie widzę? jakie są dwie możliwe odpowiedzi? jakiej informacji brakuje, aby rozstrzygnąć?</strong></p>
+
+  <div class="exercise">
+    <p><strong>Schemat 1.</strong> Jądro, ściana komórkowa, brak chloroplastów.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><span class="ans-part"><b>Co widzę:</b> jądro i ściana komórkowa — czyli eukariont, ale nie zwierzęcy (zwierzę nie ma ściany).</span></p>
+      <p><span class="ans-part"><b>Czego nie widzę:</b> chloroplastów — to <strong>nie wyklucza</strong> rośliny, bo np. cebula i korzenie ich nie mają.</span></p>
+      <p><span class="ans-part"><b>Dwie możliwości:</b> komórka grzyba <strong>albo</strong> niezielona komórka rośliny.</span></p>
+      <p><span class="ans-part"><b>Informacja rozstrzygająca:</b> skład ściany — chityna (grzyb) czy celuloza (roślina).</span></p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>Schemat 2.</strong> Błona, cytoplazma, koliste DNA bez otoczki jądrowej, rybosomy 70S.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><span class="ans-part"><b>Co widzę:</b> brak jądra, koliste DNA, rybosomy 70S — cechy prokarioty.</span></p>
+      <p><span class="ans-part"><b>Czego nie widzę:</b> ściany komórkowej — nie wszystkie bakterie mają typową ścianę (np. mykoplazmy).</span></p>
+      <p><span class="ans-part"><b>Odpowiedź:</b> komórka prokariotyczna (bakteria lub archeowiec).</span></p>
+      <p><span class="ans-part"><b>Informacja rozstrzygająca:</b> szczegóły biochemiczne (np. budowa ściany, błony) — ale to poza zakresem E8.</span></p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>Schemat 3.</strong> Jądro, mitochondria, brak ściany, brak chloroplastów.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><span class="ans-part"><b>Co widzę:</b> jądro + mitochondria (eukariont), brak ściany.</span></p>
+      <p><span class="ans-part"><b>Czego nie widzę:</b> chloroplastów — to spójne z komórką zwierzęcą.</span></p>
+      <p><span class="ans-part"><b>Odpowiedź:</b> komórka zwierzęca.</span></p>
+      <p><span class="ans-part"><b>Uwaga:</b> ten sam zestaw (jądro, mitochondria, brak ściany, brak chloroplastów) może też dotyczyć niektórych protistów — na poziomie E8 wystarczy „komórka zwierzęca".</span></p>
+    </details>
+  </div>
+
+  <h3>Drabinka trudności</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Poziom</th><th>Zadanie</th></tr></thead>
+      <tbody>
+        <tr><td>ODTWÓRZ</td><td>Wymień struktury komórkowe i ich funkcje.</td></tr>
+        <tr><td>ZASTOSUJ</td><td>Rozpoznaj typ komórki.</td></tr>
+        <tr><td>WYJAŚNIJ</td><td>Dlaczego jądro jest kluczowe?</td></tr>
+        <tr><td>ODKRYJ</td><td>Która komórka ma chloroplasty?</td></tr>
+        <tr><td>POŁĄCZ</td><td>Połącz strukturę z funkcją.</td></tr>
+        <tr><td>ZAKWESTIONUJ</td><td>Czy każda komórka ma jądro?</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 14. ZADANIA EGZAMINACYJNE ================= -->
+<section class="section" id="egzamin">
+  <div class="part-heading"><span class="part-num">14. Zadania egzaminacyjne</span> <span class="level-badge level-exam">E8 — z uzasadnieniem</span></div>
+
+  <div class="exercise exam">
+    <p style="font-weight:600;">Zadanie 1</p>
+    <p>Na rysunku przedstawiono komórkę mającą jądro, mitochondria, ścianę komórkową i dużą wakuolę, ale bez chloroplastów.</p>
+    <p><strong>Podaj dwie możliwe grupy organizmów, do których może należeć ta komórka. Uzasadnij odpowiedź.</strong></p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><strong>Komórka może należeć do rośliny albo grzyba.</strong></p>
+      <p>Ma jądro i mitochondria, więc jest eukariotyczna. Ściana komórkowa wyklucza komórkę zwierzęcą. Brak chloroplastów nie wyklucza rośliny, ponieważ komórki części niezielonych (np. korzenia lub cebuli) zwykle ich nie mają. Ostateczne rozstrzygnięcie wymagałoby np. informacji o składzie ściany: celuloza wskazuje roślinę, a chityna — grzyba.</p>
+    </details>
+  </div>
+
+  <div class="exercise exam">
+    <p style="font-weight:600;">Zadanie 2</p>
+    <p>Uczeń napisał: „Roślina nie potrzebuje mitochondriów, ponieważ ma chloroplasty".</p>
+    <p><strong>Oceń prawdziwość zdania i wyjaśnij błąd.</strong></p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><strong>Zdanie jest fałszywe.</strong></p>
+      <p><strong>Wyjaśnienie:</strong> chloroplasty wytwarzają cukier podczas fotosyntezy, a mitochondria przekształcają energię chemiczną tego cukru w ATP w oddychaniu komórkowym. Rośliny mają mitochondria i oddychają przez całą dobę.</p>
+    </details>
+  </div>
+
+  <div class="exercise exam">
+    <p style="font-weight:600;">Zadanie 3</p>
+    <p>Wskaż strukturę wspólną dla komórki bakterii, rośliny i zwierzęcia: chloroplast, jądro, rybosom, mitochondrium.</p>
+    <details class="answer"><summary>Pokaż odpowiedź</summary>
+      <p><strong>Rybosom</strong> — wszystkie typowe komórki wytwarzają białka.</p>
+    </details>
+  </div>
+
+  <div class="exercise exam">
+    <p style="font-weight:600;">Zadanie 4</p>
+    <p>Podaj, która struktura nadaje kształt komórce roślinnej, ale nie występuje w komórce zwierzęcej. Wyjaśnij, w jaki sposób komórka zwierzęca utrzymuje swój kształt mimo braku ściany komórkowej.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><strong>Ściana komórkowa (celulozowa).</strong></p>
+      <p><strong>Uzasadnienie:</strong> Komórka zwierzęca nie ma sztywnej ściany, dlatego jest bardziej elastyczna. Jej kształt wspierają błona komórkowa, cytoszkielet oraz otoczenie tworzone przez inne komórki i substancję międzykomórkową. Dzięki temu komórka może zmieniać kształt i się przemieszczać (np. w tkankach mięśniowych, w komórkach ruchliwych).</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 15. FISZKI ================= -->
+<section class="section" id="fiszki">
+  <div class="part-heading"><span class="part-num">15. Fiszki</span> <span class="level-badge level-training">POWTÓRKA</span></div>
+
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jaka struktura przechowuje większość DNA w komórce eukariotycznej?</span>
+      <span class="back"><strong>Jądro komórkowe</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Gdzie zachodzi fotosynteza?</span>
+      <span class="back"><strong>W chloroplastach — u roślin i glonów zdolnych do fotosyntezy</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czy rośliny mają mitochondria?</span>
+      <span class="back"><strong>Tak. Oddychają komórkowo przez całą dobę</strong></span>
+      <span class="card-tag tag-trap">pułapka</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co odróżnia komórkę roślinną od zwierzęcej?</span>
+      <span class="back"><strong>Zwykle ściana komórkowa, chloroplasty (w tkankach zielonych) i duża wakuola</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Z czego zbudowana jest ściana komórkowa bakterii?</span>
+      <span class="back"><strong>Z mureiny (peptydoglikanu) — u większości bakterii</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co mają wszystkie typowe komórki?</span>
+      <span class="back"><strong>Błonę komórkową, cytoplazmę, materiał genetyczny i rybosomy</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czy wirus jest komórką?</span>
+      <span class="back"><strong>Nie; nie ma budowy komórkowej ani własnego metabolizmu</strong></span>
+      <span class="card-tag tag-trap">pułapka</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Gdzie w komórce eukariotycznej jest materiał genetyczny oprócz jądra?</span>
+      <span class="back"><strong>W mitochondriach, u roślin też w chloroplastach</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to komórka prokariotyczna?</span>
+      <span class="back"><strong>Komórka bez jądra otoczonego błoną — np. bakteria lub archeowiec</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jaki nośnik energii powstaje głównie w mitochondriach?</span>
+      <span class="back"><strong>ATP — bezpośredni nośnik energii używany przez komórkę</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jaka jest rola rybosomów?</span>
+      <span class="back"><strong>Synteza białek</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jak najczęściej rozmnażają się bakterie?</span>
+      <span class="back"><strong>Bezpłciowo przez podział binarny (to nie jest mitoza)</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co mówi teoria komórkowa o pochodzeniu nowych komórek?</span>
+      <span class="back"><strong>Nowe komórki powstają z podziału wcześniej istniejących komórek</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co głosi teoria endosymbiozy?</span>
+      <span class="back"><strong>Mitochondria i chloroplasty wywodzą się od dawnych bakterii</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czy komórka zwierzęca ma ścianę komórkową?</span>
+      <span class="back"><strong>Nie — ma tylko błonę komórkową</strong></span>
+      <span class="card-tag tag-trap">pułapka</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czy każda komórka roślinna ma chloroplasty?</span>
+      <span class="back"><strong>Nie — np. komórki korzenia i cebuli ich nie mają</strong></span>
+      <span class="card-tag tag-exam">E8</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Kto pierwszy użył terminu „komórka" i kiedy?</span>
+      <span class="back"><strong>Robert Hooke (1665) — obserwując korek pod mikroskopem</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Kto sformułował teorię komórkową?</span>
+      <span class="back"><strong>Schleiden i Schwann (1838–1839)</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co znaczy „omnis cellula e cellula"?</span>
+      <span class="back"><strong>Każda komórka z komórki — zasada upowszechniona przez Virchowa (1855)</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jakie rybosomy ma bakteria?</span>
+      <span class="back"><strong>70S — mniejsze niż eukariotyczne (80S)</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jak dziedziczy się mtDNA u człowieka?</span>
+      <span class="back"><strong>Prawie zawsze po matce (reguła szkolna)</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to duża wakuola?</span>
+      <span class="back"><strong>Magazyn wody i substancji, utrzymuje turgor — typowa dla roślin</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czym różni się cytoplazma od cytozolu?</span>
+      <span class="back"><strong>Cytozol to sam płyn; cytoplazma obejmuje cytozol i struktury w nim zanurzone (bez jądra)</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Dlaczego dojrzały erytrocyt ssaka nie ma jądra?</span>
+      <span class="back"><strong>Więcej miejsca na hemoglobinę — ale nie może się dzielić ani syntezować nowych białek</strong></span>
+      <span class="card-tag tag-ambitious">ambitny</span>
+    </button>
+  </div>
+</section>
+
+<!-- ================= 16. TEST KOŃCOWY ================= -->
+<section class="section" id="test">
+  <div class="part-heading"><span class="part-num">16. Test końcowy (3+3+2+2)</span> <span class="level-badge level-training">TRENING</span></div>
+  <p style="font-size:0.85rem;color:var(--color-text-muted);">Format: 3 zadania podstawowe, 3 treningowe, 2 ambitne, 2 zaawansowane.</p>
+  <div class="exercise">
+    <ol>
+      <li>(P) Co to komórka?</li>
+      <li>(P) Wymień 3 struktury komórkowe i ich funkcje.</li>
+      <li>(P) Gdzie w komórce eukariotycznej jest większość DNA?</li>
+      <li>(T) Dlaczego roślina ma mitochondria?</li>
+      <li>(T) Popraw: „Komórka zwierzęca ma ścianę".</li>
+      <li>(T) Dopasuj: chityna / celuloza / mureina do grupy organizmów.</li>
+      <li>(A) Czym różni się prokariota od eukarioty?</li>
+      <li>(A) Co to endosymbioza (idea)?</li>
+      <li>(Z) Skąd się bierze mtDNA i jak się dziedziczy u człowieka?</li>
+      <li>(Z) Uzasadnij, w jaki sposób komórka zwierzęca utrzymuje kształt mimo braku ściany komórkowej.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>Najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów.</li>
+        <li>Np. jądro — większość DNA; mitochondria — ATP (oddychanie tlenowe); chloroplasty — fotosynteza.</li>
+        <li>W jądrze (+ mtDNA w mitochondriach).</li>
+        <li>Bo oddycha — fotosynteza produkuje cukier, a mitochondria przekształcają jego energię w ATP.</li>
+        <li>Nie ma ściany — tylko błonę.</li>
+        <li>Chityna → grzyby; celuloza → rośliny; mureina → bakterie.</li>
+        <li>Prokariota: brak jądra otoczonego błoną, brak struktur błonowych poza błoną komórkową, DNA w nukleoidzie. Eukariota: jądro + struktury błonowe.</li>
+        <li>Mitochondria/chloroplasty wywodzą się od dawnych bakterii (dowody: własny DNA, rybosomy podobne do bakteryjnych).</li>
+        <li>mtDNA — z mitochondriów; u człowieka prawie zawsze dziedziczony po matce (szkolna reguła).</li>
+        <li>Komórka zwierzęca jest elastyczna — jej kształt wspierają błona komórkowa, cytoszkielet oraz otoczenie (inne komórki, substancja międzykomórkowa). Dzięki temu może się przemieszczać, czego nie umożliwiałaby sztywna ściana.</li>
+      </ol>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 17. CHECKLISTA ================= -->
+<section class="section" id="checklista">
+  <div class="part-heading"><span class="part-num">17. Checklista</span></div>
+  <div class="card card-correct">
+    <ul style="list-style:none;padding-left:0;">
+      <li>☐ Wiem, czym jest komórka i dlaczego jest podstawową jednostką życia.</li>
+      <li>☐ Znam struktury komórkowe i ich funkcje.</li>
+      <li>☐ Rozpoznaję komórkę roślinną / zwierzęcą / grzybową / bakteryjną po cechach.</li>
+      <li>☐ Wiem, że jądro zawiera <strong>większość</strong>, ale nie całe DNA.</li>
+      <li>☐ Wiem, że wirus ≠ komórka.</li>
+      <li>☐ Odróżniam prokariota od eukariota (bakterie i archeowce vs rośliny/zwierzęta/grzyby/protisty).</li>
+      <li>☐ Znam teorię komórkową (klasyczną + współczesne uzupełnienia).</li>
+      <li>☐ Znam teorię endosymbiozy (ambitny).</li>
+      <li>☐ Wiem, co to mtDNA i jak się dziedziczy u człowieka (zaawansowany).</li>
+      <li>☐ Wiem, że <strong>nie każda</strong> komórka roślinna ma chloroplasty.</li>
+      <li>☐ Wiem, że rybosomy występują u bakterii oraz w typowych komórkach eukariotycznych; znam wyjątek: dojrzały erytrocyt ssaka.</li>
+      <li>☐ Wiem, że cytoplazma ≠ cytozol (cytoplazma obejmuje cytozol i struktury, ale nie jądro).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 18. MAPA POJĘĆ ================= -->
+<section class="section" id="mapa">
+  <div class="part-heading"><span class="part-num">18. Mapa pojęć</span></div>
+  <div class="diagram">
+    <svg viewBox="0 0 660 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa pojęć L001">
+      <rect x="240" y="10" width="180" height="42" rx="10" fill="#2b6cb0"/>
+      <text x="330" y="36" font-size="14" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-weight="700">KOMÓRKA</text>
+      <line x1="330" y1="52" x2="330" y2="78" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="90" y1="78" x2="570" y2="78" stroke="#6b7a8d" stroke-width="2"/>
+
+      <line x1="90" y1="78" x2="90" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="240" y1="78" x2="240" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="420" y1="78" x2="420" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="570" y1="78" x2="570" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+
+      <rect x="20" y="108" width="140" height="60" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2"/>
+      <text x="90" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">jądro</text>
+      <text x="90" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">większość DNA → L011</text>
+      <text x="90" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">kieruje pracą</text>
+
+      <rect x="175" y="108" width="130" height="60" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+      <text x="240" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">mitochondrium</text>
+      <text x="240" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">ATP (oddychanie tlenowe)</text>
+      <text x="240" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">+ mtDNA</text>
+
+      <rect x="355" y="108" width="130" height="60" rx="8" fill="#e8f5e9" stroke="#059669" stroke-width="2"/>
+      <text x="420" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">chloroplast</text>
+      <text x="420" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">fotosynteza</text>
+      <text x="420" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">rośliny, glony (zielone tkanki)</text>
+
+      <rect x="500" y="108" width="140" height="60" rx="8" fill="#dbeafe" stroke="#2b6cb0" stroke-width="2"/>
+      <text x="570" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">błona</text>
+      <text x="570" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">granica + transport</text>
+      <text x="570" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">wszystkie komórki</text>
+
+      <line x1="330" y1="168" x2="330" y2="200" stroke="#6b7a8d" stroke-width="2"/>
+
+      <rect x="180" y="200" width="300" height="50" rx="8" fill="#2b6cb0"/>
+      <text x="330" y="224" font-size="13" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-weight="700">TYPY KOMÓREK</text>
+      <text x="330" y="240" font-size="10" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI">zwierzęca · roślinna · grzybowa · bakteryjna</text>
+
+      <line x1="330" y1="250" x2="330" y2="278" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="130" y1="278" x2="530" y2="278" stroke="#6b7a8d" stroke-width="2"/>
+
+      <line x1="130" y1="278" x2="130" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="40" y="305" width="180" height="55" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="130" y="327" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">zwierzęca</text>
+      <text x="130" y="342" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">brak ściany</text>
+      <text x="130" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">brak chloroplastu</text>
+
+      <line x1="330" y1="278" x2="330" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="240" y="305" width="180" height="55" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="330" y="327" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">roślinna</text>
+      <text x="330" y="342" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">ściana celulozowa</text>
+      <text x="330" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">chloroplasty + wakuola</text>
+
+      <line x1="530" y1="278" x2="530" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="440" y="305" width="180" height="55" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="530" y="327" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">bakteryjna</text>
+      <text x="530" y="342" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">bez jądra (prokariota)</text>
+      <text x="530" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">ściana mureinowa (u większości)</text>
+
+      <line x1="330" y1="360" x2="330" y2="400" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="80" y="400" width="500" height="50" rx="8" fill="#fef3c7" stroke="#d69e2e"/>
+      <text x="330" y="423" font-size="12" text-anchor="middle" fill="#78350f" font-family="Segoe UI" font-weight="700">Wirus ≠ komórka</text>
+      <text x="330" y="440" font-size="10" text-anchor="middle" fill="#78350f" font-family="Segoe UI">nie ma cytoplazmy, rybosomów ani własnego metabolizmu</text>
+    </svg>
+    <div class="caption">Mapa pojęć L001 — od komórki przez typy do wirusa jako wyjątku.</div>
+  </div>
+</section>
+
+<!-- ================= 19. CO DALEJ ================= -->
+<section class="section" id="dalej">
+  <div class="part-heading"><span class="part-num">19. Co dalej?</span></div>
+  <div class="card card-hint">
+    <p><strong>Następna lekcja:</strong> L002 — człowiek (wybrane) → mosty do L015 (komórki haploidalne), L019 (grupy krwi).</p>
+    <p>Potem <strong>L003</strong> (diagnoza) → <strong>L010</strong> (cechy) → <strong>L011 (DNA)</strong> — najważniejszy most.</p>
+  </div>
+
+  <h3>Mosty do kolejnych lekcji</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Lekcja</th><th>Co wnosi z L001</th></tr></thead>
+      <tbody>
+        <tr><td><strong>L002 (człowiek)</strong></td><td>Komórki ciała człowieka — 46 chromosomów w jądrze; krew z erytrocytami.</td></tr>
+        <tr><td><strong>L003 (diagnoza)</strong></td><td>Sprawdzenie wiedzy o komórce i jądrze.</td></tr>
+        <tr><td><strong>L010 (cechy)</strong></td><td>Skąd się biorą cechy organizmu — z komórek i genów.</td></tr>
+        <tr><td><strong>L011 (DNA)</strong></td><td>Jądro = główne miejsce przechowywania DNA. Budowa DNA.</td></tr>
+        <tr><td><strong>L012 (chromosom)</strong></td><td>DNA upakowane w chromosomach.</td></tr>
+        <tr><td><strong>L014 (mitoza)</strong></td><td>Podział komórek ciała.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 20. SŁOWNIK ================= -->
+<section class="section" id="slownik">
+  <div class="part-heading"><span class="part-num">20. Słownik</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+      <tbody>
+        <tr><td>Komórka</td><td>Najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów</td></tr>
+        <tr><td>Jądro</td><td>Struktura z większością DNA; kieruje pracą komórki (eukarionty)</td></tr>
+        <tr><td>Mitochondrium</td><td>Struktura, w której zachodzi większość etapów oddychania komórkowego tlenowego; powstaje w niej większość ATP</td></tr>
+        <tr><td>Chloroplast</td><td>Struktura, w której zachodzi fotosynteza (rośliny i glony zdolne do fotosyntezy)</td></tr>
+        <tr><td>Błona komórkowa</td><td>Granica komórki, transport, odbiór sygnałów</td></tr>
+        <tr><td>Ściana komórkowa</td><td>Ochrona, kształt — rośliny, grzyby, bakterie</td></tr>
+        <tr><td>Wakuola</td><td>Magazyn, turgor</td></tr>
+        <tr><td>Rybosom</td><td>Struktura, w której zachodzi synteza białek (bez błony)</td></tr>
+        <tr><td>Cytoplazma</td><td>Część komórki między błoną komórkową a jądrem; obejmuje cytozol i znajdujące się w nim struktury komórkowe. Zachodzi w niej wiele reakcji chemicznych.</td></tr>
+        <tr><td>Cytozol</td><td>Płynna część cytoplazmy; nie obejmuje struktur komórkowych ani jądra</td></tr>
+        <tr><td>Prokariota</td><td>Komórka bez jądra otoczonego błoną — bakterie, archeowce</td></tr>
+        <tr><td>Eukariota</td><td>Komórka z jądrem</td></tr>
+        <tr><td>Nukleoid</td><td>Obszar cytoplazmy prokariota, w którym znajduje się główna cząsteczka DNA</td></tr>
+        <tr><td>Plazmid</td><td>Mała, kolista cząsteczka DNA u bakterii (poza nukleoidem)</td></tr>
+        <tr><td>ATP</td><td>Bezpośredni nośnik energii w komórce</td></tr>
+        <tr><td>mtDNA</td><td>DNA mitochondrialny</td></tr>
+        <tr><td>cpDNA</td><td>DNA chloroplastowy</td></tr>
+        <tr><td>Endosymbioza</td><td>Teoria: mitochondria/chloroplasty wywodzą się od dawnych bakterii</td></tr>
+        <tr><td>Teoria komórkowa</td><td>Wszystkie organizmy komórkowe z komórek; nowe komórki z podziału</td></tr>
+        <tr><td>Podział binarny</td><td>Typowy bezpłciowy sposób rozmnażania bakterii (nie jest mitozą)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 21. DODATEK ================= -->
+<section class="section" id="dodatek">
+  <div class="part-heading"><span class="part-num">21. Dodatek — historia i ciekawostki</span> <span class="level-badge level-ambitious">ZAAWANSOWANY</span></div>
+
+  <h3>21.1. Odkrycie komórki — pełniejsza historia</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li><strong>1665 — Robert Hooke:</strong> nazwa „cellula" (korek).</li>
+      <li><strong>1674–1683 — Antoni van Leeuwenhoek:</strong> obserwował żywe mikroorganizmy, krwinki i plemniki dzięki bardzo dobrym mikroskopom własnej konstrukcji. Jego obserwacje mikroskopijnych „zwierzątek" stały się ważnym krokiem w poznawaniu świata komórek.</li>
+      <li><strong>1831 — Robert Brown:</strong> odkrycie jądra komórkowego.</li>
+      <li><strong>1838–1839 — Matthias Schleiden i Theodor Schwann:</strong> sformułowanie teorii komórkowej.</li>
+      <li><strong>1855 — Rudolf Virchow:</strong> upowszechnił zasadę <em>Omnis cellula e cellula</em> („każda komórka z komórki"), rozwijając wcześniejsze idee badaczy zajmujących się podziałami komórkowymi.</li>
+      <li><strong>1931 — Ernst Ruska:</strong> mikroskop elektronowy.</li>
+      <li><strong>1967 — Lynn Margulis:</strong> przedstawiła i silnie spopularyzowała współczesną teorię endosymbiozy, wyjaśniającą pochodzenie mitochondriów i chloroplastów (hipotezy endosymbiozy były starsze, ale to Margulis je rozwinęła i obroniła).</li>
+    </ul>
+  </div>
+
+  <h3>21.2. Ciekawostki o komórkach</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li>Ciało człowieka składa się z <strong>dziesiątek bilionów komórek</strong>.</li>
+      <li>Bakterii w ciele człowieka jest bardzo dużo (mikrobiom) — często więcej niż naszych komórek.</li>
+      <li>Największa komórka człowieka: <strong>komórka jajowa</strong> (~0,1 mm).</li>
+      <li>Najdłuższa: <strong>neuron</strong> — do 1 m.</li>
+      <li>Erytrocyty żyją <strong>120 dni</strong> i nie mają jądra — nie mogą się dzielić.</li>
+      <li>Niektóre komórki nerwowe żyją <strong>całe życie</strong> i nie dzielą się.</li>
+    </ul>
+  </div>
+
+  <h3>21.3. Zadanie olimpijskie</h3>
+  <div class="card card-warning">
+    <p><strong>Pytanie:</strong> Komórka ma: podwójną błonę wokół jądra, rybosomy 80S w cytoplazmie i 70S w pewnej strukturze, ścianę z celulozy. Jaki to typ komórki? Uzasadnij.</p>
+    <p><strong>Rozwiązanie:</strong></p>
+    <ul>
+      <li>Jądro z podwójną błoną → eukariota.</li>
+      <li>Rybosomy 70S w pewnej strukturze → <strong>mitochondrium lub chloroplast</strong> (oba bakteryjnego pochodzenia).</li>
+      <li>Ściana z celulozy → <strong>roślina</strong>.</li>
+    </ul>
+    <p><strong>Odpowiedź:</strong> komórka <strong>roślinna</strong>.</p>
+  </div>
+</section>
+
+<!-- ================= 22. Z ŻYCIA ================= -->
+<section class="section" id="zycie">
+  <div class="part-heading"><span class="part-num">22. Zadania z życia codziennego</span></div>
+
+  <div class="exercise">
+    <p><strong>1. Dlaczego mięśnie potrzebują dużo mitochondriów?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Mięśnie wykonują dużo pracy, a praca wymaga energii. Mitochondria przekształcają energię chemiczną pokarmu w ATP — bezpośrednio użyteczną formę energii dla komórki. Dlatego komórki mięśniowe mają szczególnie dużo mitochondriów.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>2. Dlaczego liście są zielone?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Liście zawierają chloroplasty z barwnikiem <strong>chlorofilem</strong>, który pochłania przede wszystkim światło czerwone i niebieskie, a odbija zielone. Dlatego liście widzimy jako zielone.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>3. Dlaczego cebula ma „grube ściany" pod mikroskopem?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Komórki cebuli są komórkami roślinnymi, więc mają sztywną ścianę komórkową z celulozy. Pod mikroskopem granica między sąsiednimi komórkami może wyglądać jak gruba linia, ponieważ widoczne są ściany sąsiednich komórek leżące obok siebie. Uwaga: bardzo często to nie błona, a właśnie ściana tworzy wyraźny obrys.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>4. Dlaczego erytrocyty nie mają jądra?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Dojrzały erytrocyt ssaka traci jądro w trakcie dojrzewania — dzięki temu ma więcej miejsca na hemoglobinę, która transportuje tlen. Nie może się jednak dzielić ani syntezować nowych białek, dlatego żyje stosunkowo krótko (ok. 120 dni).</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>5. Dlaczego antybiotyki nie działają na wirusy?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Antybiotyki działają na określone struktury lub procesy bakterii, np. ich rybosomy albo budowę ściany komórkowej. Wirusy nie mają własnych rybosomów, typowej budowy komórkowej ani samodzielnego metabolizmu, dlatego antybiotyki ich nie niszczą. Na niektóre wirusy stosuje się leki przeciwwirusowe — to inne substancje niż antybiotyki.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>6. Dlaczego roślina rośnie w nocy?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Roślina rośnie także w nocy, ponieważ wzrost nie polega wyłącznie na fotosyntezie. Fotosynteza dostarcza cukrów, ale wzrost wymaga także oddychania komórkowego, podziałów komórek, ich wydłużania oraz budowania nowych struktur. Oddychanie zachodzi również w nocy. Roślina w nocy <strong>nie przeprowadza fotosyntezy</strong> bez światła, ale nadal oddycha.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>7. Dlaczego krew jest dobrym materiałem do badania DNA?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Bo leukocyty w krwi mają jądra komórkowe z pełnym DNA. Można z nich wyizolować materiał genetyczny. <em>Uwaga: dojrzałe erytrocyty ssaka jądra nie mają — DNA pochodzi od leukocytów.</em></p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>8. Dlaczego jeden organizm może mieć wiele różnych typów komórek?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Wszystkie komórki ciała mają ten sam zestaw DNA, ale różnie odczytują geny (ekspresja genów). Dlatego neuron i komórka mięśniowa wyglądają i działają inaczej — mimo że mają ten sam materiał genetyczny. To właśnie różna ekspresja prowadzi do specjalizacji komórek.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 23. JAK SIĘ UCZYĆ ================= -->
+<section class="section" id="jak-sie-uczyc">
+  <div class="part-heading"><span class="part-num">23. Jak się uczyć tej lekcji</span></div>
+
+  <div class="card card-hint">
+    <span class="card-label">Plan nauki</span>
+    <ol>
+      <li><strong>Ściąga (sekcja 5):</strong> przeczytaj definicję komórki, tabelę struktur i tabelę typów komórek. Zanotuj 3 rzeczy, które są dla Ciebie nowe.</li>
+      <li><strong>Widgety (sekcje 6–8):</strong> przejdź przez hierarchię życia, nakładki typów komórek, błonę, teorię komórkową. Sprawdź, czy rozumiesz wyniki.</li>
+      <li><strong>Algorytm rozpoznawania (6.4):</strong> przepisz do zeszytu. Sprawdź się na kilku przykładach.</li>
+      <li><strong>Klinika błędów (11):</strong> przeczytaj tabelę błędów i 5 pełnych przykładów. Zaznacz te, które brzmią jak Twoje wcześniejsze błędy.</li>
+      <li><strong>Ćwiczenia (13):</strong> zrób mini-check, potem ćwiczenia A i B. Potem C, jeśli masz czas. Na końcu D (ambitne).</li>
+      <li><strong>Fiszki (15):</strong> przejrzyj wszystkie fiszki. Zaznacz te, których nie pamiętasz.</li>
+      <li><strong>Test (16):</strong> rozwiąż test końcowy. Sprawdź odpowiedzi.</li>
+      <li><strong>Powtórki:</strong> wróć do materiału po 1 dniu, po 3 dniach, po tygodniu, po miesiącu.</li>
+    </ol>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Trzy ścieżki nauki</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ścieżka</th><th>Obowiązkowe</th><th>Rozwinięcie</th></tr></thead>
+        <tbody>
+          <tr><td><strong>E8: muszę umieć</strong></td><td>Definicja komórki, tabela struktur, porównanie roślinnej i zwierzęcej, wirus ≠ komórka, ćwiczenia A–B</td><td>Historia, rybosomy 70S/80S, mtDNA, endosymbioza</td></tr>
+          <tr><td><strong>Rozumiem</strong></td><td>Błona, transport, grzyby, bakterie, algorytm rozpoznawania, mikroskop</td><td>Szczegółowa chemia ścian, aparat Golgiego i ER</td></tr>
+          <tr><td><strong>Idę dalej</strong></td><td>Prokariota/eukariota, teoria komórkowa, endosymbioza</td><td>cpDNA, wyjątkowe dziedziczenie, historia nauki, zadanie olimpijskie</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Powtórki rozłożone w czasie (spaced repetition)</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Kiedy</th><th>Co</th></tr></thead>
+        <tbody>
+          <tr><td>Po lekcji</td><td>ściąga + 5 fiszek</td></tr>
+          <tr><td>+1 dzień</td><td>fiszki + tabela typów komórek</td></tr>
+          <tr><td>+3 dni</td><td>Klinika błędów + algorytm rozpoznawania</td></tr>
+          <tr><td>+1 tydzień</td><td>test + powtórka fiszek</td></tr>
+          <tr><td>+1 miesiąc</td><td>mapa pojęć + zadania z życia</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:10px;"><strong>Zasada 3 pytań po powtórce:</strong></p>
+    <ol>
+      <li>Co już umiem?</li>
+      <li>Co jeszcze mylę?</li>
+      <li>Co mnie zaskoczyło?</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 24. POŁĄCZENIA MIĘDZYPRZEDMIOTOWE ================= -->
+<section class="section" id="miedzyprzedmiotowe">
+  <div class="part-heading"><span class="part-num">24. Połączenia międzyprzedmiotowe</span></div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Przedmiot</th><th>Jak łączy się z L001</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Chemia</strong></td><td>Błona jako dwuwarstwa fosfolipidowa (cząsteczki, wiązania). Białka (histony, kanały). Woda i pH w cytoplazmie.</td></tr>
+        <tr><td><strong>Fizyka</strong></td><td>Dyfuzja, osmoza (transport przez błonę). Skala — od mikrometrów (komórka) do nanometrów (helisa DNA).</td></tr>
+        <tr><td><strong>Matematyka</strong></td><td>Skala, proporcje (np. dziesiątki bilionów komórek w ciele człowieka). Statystyka (obserwacja mikroskopowa).</td></tr>
+        <tr><td><strong>Geografia</strong></td><td>Fotosynteza w ekosystemach — dlaczego lasy są zielone. Rośliny jako producenci tlenu.</td></tr>
+        <tr><td><strong>Medycyna</strong></td><td>Nowotwory jako zaburzenia podziału komórek. Transplantologia — zgodność HLA.</td></tr>
+        <tr><td><strong>Informatyka</strong></td><td>Komórka jako „system operacyjny" — jądro to centrum decyzyjne, DNA to kod źródłowy.</td></tr>
+        <tr><td><strong>Historia</strong></td><td>Odkrycie komórki — Hooke, Leeuwenhoek, teoria komórkowa Schleidena i Schwanna.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 25. STATUS ================= -->
+<section class="section" id="status">
+  <div class="part-heading"><span class="part-num">25. Status lekcji</span></div>
+  <div class="card card-new">
+    <span class="card-label">Wersja 7.0 — precyzja biologiczna i dopasowanie do klasy 8</span>
+    <p><strong>Zachowano całą treść v6.0</strong> — nic nie zostało usunięte.</p>
+    <p><strong>Główne zmiany w tej wersji (v7.0):</strong></p>
+    <ul>
+      <li><strong>ATP i mitochondria:</strong> usunięto sformułowanie „mitochondria produkują energię" — zastąpione „powstaje większość ATP" + dopisek wyjaśniający, że energia nie powstaje z niczego, ale jest przekształcana.</li>
+      <li><strong>Cytoplazma vs cytozol:</strong> zaktualizowano słownik (cytoplazma obejmuje cytozol i struktury, ale nie jądro). Dodano ramkę „Nie myl: cytoplazma ≠ cytozol".</li>
+      <li><strong>Wyjątek erytrocytu:</strong> dopisano wyjaśnienie, dlaczego erytrocyt traci jądro (więcej miejsca na hemoglobinę, ale brak syntezy białek i podziału). Ujednolicono we wszystkich tabelach.</li>
+      <li><strong>Rybosomy:</strong> uściślono, że dotyczą typowych komórek — z wyjątkiem dojrzałego erytrocytu ssaka.</li>
+      <li><strong>Chloroplasty:</strong> konsekwentnie „w komórkach roślin i glonów zdolnych do fotosyntezy". Dodano tabelę przykładową: liść vs korzeń vs cebula.</li>
+      <li><strong>Ściany:</strong> grzyby — „głównie chityna + inne polisacharydy". Bakterie — „mureina u większości bakterii".</li>
+      <li><strong>Prokarioty:</strong> dopisano, że obejmują bakterie <em>i archeowce</em>. Mnemotechnika „bez jądra = prokariota — w zadaniach szkolnych zwykle bakteria".</li>
+      <li><strong>Nukleoid:</strong> zastąpiono „luźne DNA" precyzyjnym „główna cząsteczka DNA w obszarze cytoplazmy zwanym nukleoidem".</li>
+      <li><strong>Podział binarny:</strong> dodano, że <strong>nie jest mitozą</strong> (bakteria nie ma jądra).</li>
+      <li><strong>Eukariota — podział komórki:</strong> w tabeli 9.1 zmieniono na „Mitoza; u organizmów rozmnażających się płciowo także mejoza przy powstawaniu gamet lub zarodników".</li>
+      <li><strong>Teoria komórkowa:</strong> podzielona na <em>klasyczne trzy twierdzenia</em> i <em>współczesne uzupełnienia</em>. Podkreślono, że nauka rozwija się z czasem.</li>
+      <li><strong>Historia:</strong> Leeuwenhoek 1674–1683 zamiast jednej daty; Virchow „upowszechnił zasadę"; Margulis „przedstawiła i spopularyzowała" (hipotezy endosymbiozy były starsze).</li>
+      <li><strong>Obserwacja mikroskopowa:</strong> uściślono, że błona komórkowa często nie jest wyraźnie oddzielona od ściany. Dodano tabelę preparatów.</li>
+      <li><strong>Wizualna legenda kolorów:</strong> stała paleta (granat/zieleń/pomarańcz/fiolet/szarość) używana konsekwentnie w całej lekcji.</li>
+      <li><strong>Widget: nakładki typów komórek</strong> (6.3) — zamiast 4 osobnych kart: wspólny rdzeń + warstwy (jądro, ściana celulozowa, ściana chitynowa, bakteria).</li>
+      <li><strong>Sekcja 7a „Przepływ energii"</strong> — integracja chloroplastu i mitochondrium w jednym diagramie.</li>
+      <li><strong>Sekcja 12.1 „Mikroskop vs model"</strong> — widok mikroskopowy i model biologiczny tej samej komórki cebuli.</li>
+      <li><strong>Sekcja 5.6b „Co jest wspólne?"</strong> — mini-zadanie z odpowiedzią.</li>
+      <li><strong>Sekcja 6.5 „Organellum czy struktura?"</strong> — precyzyjne rozróżnienie.</li>
+      <li><strong>Sekcja 13E „Quiz: dowód, nie zgadywanie"</strong> — 3 karty ze schematami i pytaniami: co widzę / czego nie widzę / dwie możliwości / informacja rozstrzygająca.</li>
+      <li><strong>Klinika 2.0:</strong> Przykład 2 uzupełniony o wymóg ostrożności w odpowiedzi; Przykład 5 o wyjaśnienie utraty jądra.</li>
+      <li><strong>Zadania egzaminacyjne:</strong> Zadanie 1 — model odpowiedzi z jawną ostrożnością (roślina albo grzyb, rozstrzyga skład ściany). Zadanie 4 — przeformułowane pytanie o „utrzymywanie kształtu" zamiast „obyć się bez ściany".</li>
+      <li><strong>Fiszki:</strong> dodano fiszki o cytoplazmie vs cytozolu, erytrocycie (dlaczego traci jądro), „Jaki nośnik energii powstaje głównie w mitochondriach?".</li>
+      <li><strong>Ramka „Co to naprawdę znaczy?"</strong> — dodana przy uproszczeniach (ATP, „grzyby = chityna", „mitochondrium = elektrownia").</li>
+      <li><strong>Sekcja 23 „Jak się uczyć":</strong> dodana tabela trzech ścieżek (E8 / Rozumiem / Idę dalej).</li>
+    </ul>
+    <p><strong>Zachowane z v6.0:</strong> ekran startowy, legenda warstw, tryby nauki, rdzeń lekcji, timeline, hierarchia życia, widget błony, prokariota vs eukariota, widget teorii komórkowej, Klinika 2.0, fiszki, test, checklista, mapa pojęć, słownik, dodatek, zadania z życia, połączenia międzyprzedmiotowe.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><strong>BIOLOGIA L001 v7.0</strong> · Komórka: budowa, funkcje, typy komórek i teoria komórkowa · od podstaw do zaawansowanych · 2026</p>
+  <p style="font-size:0.78rem;opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+</footer>
+
+</div>
+
+<!-- ================= STICKY NAV ================= -->
+<div class="sticky-nav">
+  <a href="#topPanel">Start</a>
+  <a href="#historia">Historia</a>
+  <a href="#struktury">Struktury</a>
+  <a href="#typy-komorek">Typy komórek</a>
+  <a href="#hierarchia">Hierarchia</a>
+  <a href="#energy-flow">Energia</a>
+  <a href="#blona">Błona</a>
+  <a href="#teoria">Teoria</a>
+  <a href="#klinika">Klinika</a>
+  <a href="#fiszki">Fiszki</a>
+  <a href="#test">Test</a>
+</div>
+
+<script>
+/* =========================================================
+   PODSTAWOWE
+   ========================================================= */
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const mode = btn.dataset.mode;
+    document.body.classList.remove('mode-e8','mode-understand','mode-further');
+    if(mode === 'e8') document.body.classList.add('mode-e8');
+    else if(mode === 'understand') document.body.classList.add('mode-understand');
+    else document.body.classList.add('mode-further');
+  });
+});
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+(function(){
+  const data = {
+    '1665': '<b>1665 — Robert Hooke:</b> obserwując cienki plaster korka pod mikroskopem, zobaczył regularne „komórki" — puste przegrody po martwych komórkach. Nazwał je <em>cellula</em> (łac. „mała komora"). To pierwsze użycie terminu „komórka" — choć Hooke widział tylko ściany komórkowe, nie żywe komórki.',
+    '1674': '<b>1674–1683 — Antoni van Leeuwenhoek:</b> obserwował żywe mikroorganizmy, krwinki i plemniki dzięki bardzo dobrym mikroskopom własnej konstrukcji. Jego obserwacje mikroskopijnych „zwierzątek" stały się ważnym krokiem w poznawaniu świata komórek.',
+    '1831': '<b>1831 — Robert Brown:</b> odkrył <strong>jądro komórkowe</strong> w komórkach roślin. To kluczowy krok — od tego momentu wiedziano, że w komórce jest struktura z materiałem dziedzicznym (choć nie wiedziano jeszcze, że to DNA).',
+    '1839': '<b>1838–1839 — Matthias Schleiden (botanik) i Theodor Schwann (zoolog):</b> sformułowali <strong>teorię komórkową</strong>: wszystkie organizmy są zbudowane z komórek, a komórka jest podstawową jednostką życia. To połączenie dwóch niezależnych obserwacji — roślin i zwierząt.',
+    '1855': '<b>1855 — Rudolf Virchow:</b> upowszechnił zasadę <em>Omnis cellula e cellula</em> („każda komórka z komórki"), rozwijając wcześniejsze idee badaczy zajmujących się podziałami komórkowymi.',
+    '1967': '<b>1967 — Lynn Margulis:</b> przedstawiła i silnie spopularyzowała współczesną <strong>teorię endosymbiozy</strong>, wyjaśniającą pochodzenie mitochondriów i chloroplastów od dawnych bakterii. Hipotezy endosymbiozy były starsze, ale to Margulis je rozwinęła i obroniła.'
+  };
+  document.querySelectorAll('#timelineAxis .timeline-point').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#timelineAxis .timeline-point').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.getElementById('timelineInfo').innerHTML = data[btn.dataset.tl];
+    });
+  });
+})();
+
+/* =========================================================
+   HIERARCHIA ŻYCIA
+   ========================================================= */
+(function(){
+  const data = {
+    atom: '<b>Atom:</b> najmniejsza jednostka materii. Nie jest jeszcze „żywa" — atomy węgla, wodoru, tlenu, azotu składają się na cząsteczki organiczne, z których powstają komórki.',
+    mol: '<b>Cząsteczka:</b> połączenie atomów (np. woda H₂O, glukoza, białka, DNA). Cząsteczki też nie są jeszcze „żywe" — dopiero odpowiednio zorganizowane tworzą komórkę.',
+    organ: '<b>Struktura komórkowa (organellum):</b> wyodrębniona część komórki o określonej funkcji — jądro, mitochondrium, chloroplast, rybosom, błona komórkowa. Większość organelli ma błonę; rybosomy nie.',
+    cell: '<b>Komórka:</b> najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów. Pierwsza struktura uznawana za żywą. Zawiera materiał genetyczny, błonę komórkową i struktury przeprowadzające procesy życiowe.',
+    tissue: '<b>Tkanka:</b> zespół komórek o podobnej budowie i wspólnej funkcji (np. tkanka mięśniowa, nabłonkowa, nerwowa). Komórki w tkance współpracują ze sobą.',
+    organ2: '<b>Narząd:</b> zespół tkanek tworzący funkcjonalną całość (np. serce, wątroba, nerka). Różne tkanki w narządzie pełnią różne funkcje, ale współpracują.',
+    system: '<b>Układ narządów:</b> zespół narządów współpracujących przy jednej funkcji (np. układ krwionośny, pokarmowy, nerwowy). Człowiek ma kilka głównych układów.',
+    org: '<b>Organizm:</b> cała istota żywa — jednokomórkowa (bakteria) lub wielokomórkowa (roślina, człowiek). U organizmów wielokomórkowych wszystkie poziomy współdziałają, aby utrzymać życie.'
+  };
+  document.querySelectorAll('#hierarchyChain .hierarchy-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('#hierarchyChain .hierarchy-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      document.getElementById('hierarchyInfo').innerHTML = data[chip.dataset.hier];
+    });
+  });
+})();
+
+/* =========================================================
+   NAKŁADKI TYPÓW KOMÓREK
+   ========================================================= */
+(function(){
+  let showNucleus = false;
+  let showPlant = false;
+  let showFungus = false;
+  let showBacteria = false;
+
+  function render(){
+    const svg = document.getElementById('ocSvg');
+    const parts = [];
+    // Zawsze: błona, cytoplazma, DNA, rybosomy
+    parts.push('<ellipse cx="230" cy="100" rx="180" ry="80" fill="#f0f6ff" stroke="#2b6cb0" stroke-width="3"/>');
+    parts.push('<text x="230" y="202" text-anchor="middle" font-size="10" fill="#1e4a7a" font-family="Segoe UI">błona · cytoplazma · DNA · rybosomy</text>');
+
+    if(showPlant){
+      // Ściana zewnętrzna
+      parts.push('<ellipse cx="230" cy="100" rx="188" ry="88" fill="none" stroke="#059669" stroke-width="4"/>');
+      // Chloroplasty
+      parts.push('<ellipse cx="150" cy="70" rx="12" ry="8" fill="#22c55e" stroke="#15803d"/>');
+      parts.push('<ellipse cx="300" cy="75" rx="12" ry="8" fill="#22c55e" stroke="#15803d"/>');
+      parts.push('<ellipse cx="180" cy="140" rx="12" ry="8" fill="#22c55e" stroke="#15803d"/>');
+      // Duża wakuola
+      parts.push('<ellipse cx="270" cy="130" rx="45" ry="28" fill="#dbeafe" stroke="#3b82f6" stroke-dasharray="3 3"/>');
+      parts.push('<text x="270" y="134" text-anchor="middle" font-size="9" fill="#1e4a7a" font-family="Segoe UI">wakuola</text>');
+    }
+    if(showFungus){
+      parts.push('<ellipse cx="230" cy="100" rx="188" ry="88" fill="none" stroke="#7c3aed" stroke-width="4"/>');
+      parts.push('<text x="230" y="216" text-anchor="middle" font-size="9" fill="#5b21b6" font-family="Segoe UI">ściana chitynowa</text>');
+    }
+    if(showNucleus && !showBacteria){
+      parts.push('<circle cx="170" cy="95" r="22" fill="#dbeafe" stroke="#2b6cb0" stroke-width="2"/>');
+      parts.push('<text x="170" y="99" text-anchor="middle" font-size="10" fill="#1e4a7a" font-weight="600" font-family="Segoe UI">jądro</text>');
+    }
+    if(showBacteria){
+      // Nukleoid zamiast jądra
+      parts.push('<ellipse cx="230" cy="100" rx="70" ry="26" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>');
+      parts.push('<text x="230" y="105" text-anchor="middle" font-size="10" fill="#78350f" font-weight="600" font-family="Segoe UI">nukleoid</text>');
+    }
+    svg.innerHTML = parts.join('');
+  }
+
+  document.querySelectorAll('#ocToggles .oc-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.oc;
+      if(key === 'core'){
+        // Reset do rdzenia
+        showNucleus = false; showPlant = false; showFungus = false; showBacteria = false;
+        document.querySelectorAll('#ocToggles .oc-toggle').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('ocInfo').innerHTML = '<b>Wspólny rdzeń każdej komórki:</b> błona komórkowa, cytoplazma, materiał genetyczny i rybosomy. Bakteria ma ten sam rdzeń co komórka roślinna — różnią się obecnością jądra i organelli błoniastych.';
+      } else if(key === 'nucleus'){
+        showNucleus = !showNucleus; if(showNucleus) showBacteria = false;
+        btn.classList.toggle('active');
+        document.getElementById('ocInfo').innerHTML = showNucleus
+          ? '<b>Jądro dodane:</b> powstaje model komórki eukariotycznej. DNA jest teraz oddzielone błoną jądrową od cytoplazmy.'
+          : '<b>Jądro usunięte:</b> wracamy do wspólnego rdzenia.';
+      } else if(key === 'plant'){
+        showPlant = !showPlant; if(showPlant){ showFungus = false; showBacteria = false; }
+        btn.classList.toggle('active');
+        document.querySelectorAll('#ocToggles .oc-toggle[data-oc="fungus"], #ocToggles .oc-toggle[data-oc="bacteria"]').forEach(b => b.classList.remove('active'));
+        document.getElementById('ocInfo').innerHTML = showPlant
+          ? '<b>Komórka roślinna:</b> wspólny rdzeń + jądro + ściana z celulozy + chloroplasty + duża wakuola. Rośliny mają mitochondria tak samo jak zwierzęta.'
+          : '<b>Warstwy roślinne usunięte.</b>';
+      } else if(key === 'fungus'){
+        showFungus = !showFungus; if(showFungus){ showPlant = false; showBacteria = false; }
+        btn.classList.toggle('active');
+        document.querySelectorAll('#ocToggles .oc-toggle[data-oc="plant"], #ocToggles .oc-toggle[data-oc="bacteria"]').forEach(b => b.classList.remove('active'));
+        document.getElementById('ocInfo').innerHTML = showFungus
+          ? '<b>Komórka grzybowa:</b> wspólny rdzeń + jądro + ściana z chityny. Brak chloroplastów — grzyby nie fotosyntetyzują.'
+          : '<b>Warstwa grzybowa usunięta.</b>';
+      } else if(key === 'bacteria'){
+        showBacteria = !showBacteria; if(showBacteria){ showPlant = false; showFungus = false; showNucleus = false; }
+        btn.classList.toggle('active');
+        document.querySelectorAll('#ocToggles .oc-toggle[data-oc="plant"], #ocToggles .oc-toggle[data-oc="fungus"], #ocToggles .oc-toggle[data-oc="nucleus"]').forEach(b => b.classList.remove('active'));
+        document.getElementById('ocInfo').innerHTML = showBacteria
+          ? '<b>Komórka bakteryjna:</b> wspólny rdzeń (błona, cytoplazma, DNA, rybosomy 70S) + nukleoid. Brak jądra i organelli błoniastych.'
+          : '<b>Wracamy do wspólnego rdzenia.</b>';
+      }
+      render();
+    });
+  });
+  render();
+})();
+
+/* =========================================================
+   BŁONA KOMÓRKOWA
+   ========================================================= */
+(function(){
+  const data = {
+    fosfolipid: '<b>Fosfolipidy:</b> podstawowy budulec błony. Mają główkę (hydrofilową) i dwa ogonki (hydrofobowe). Ustawiają się w dwie warstwy — główki na zewnątrz (do wody), ogonki do środka (od wody).',
+    hydrofil: '<b>Część hydrofilowa (główka):</b> „lubi" wodę. Skierowana na zewnątrz dwuwarstwy — do środowiska wodnego wewnątrz i na zewnątrz komórki.',
+    hydrofob: '<b>Część hydrofobowa (ogonki):</b> „unika" wody. Skierowana do środka dwuwarstwy — tworzy barierę dla substancji rozpuszczalnych w wodzie.',
+    bialko: '<b>Białka błonowe:</b> pełnią różne funkcje — kanały (przepuszczają jony), pompy (transport aktywny), transportery, receptory (odbierają sygnały), enzymy. To dzięki nim błona jest wybiórcza.',
+    calosc: '<b>Cała dwuwarstwa:</b> główki fosfolipidów na zewnątrz, ogonki do środka, a między nimi białka. Struktura ta nazywana jest <strong>modelem mozaiki płynnej</strong> — białka „pływają" w dwuwarstwie lipidowej.'
+  };
+  const heads = document.getElementById('memHeads');
+  const tails = document.getElementById('memTails');
+  const protein = document.getElementById('memProtein');
+
+  function highlight(mode){
+    [heads, tails, protein].forEach(el => el.classList.remove('mem-fade','mem-heads-hi','mem-tails-hi','mem-protein-hi'));
+    if(mode === 'hydrofil'){
+      tails.classList.add('mem-fade');
+      protein.classList.add('mem-fade');
+      heads.classList.add('mem-heads-hi');
+    } else if(mode === 'hydrofob'){
+      heads.classList.add('mem-fade');
+      protein.classList.add('mem-fade');
+      tails.classList.add('mem-tails-hi');
+    } else if(mode === 'bialko'){
+      heads.classList.add('mem-fade');
+      tails.classList.add('mem-fade');
+      protein.classList.add('mem-protein-hi');
+    }
+    // 'fosfolipid' i 'calosc' -> stan domyślny, bez wygaszania
+  }
+
+  document.querySelectorAll('.membrane-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.membrane-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('membraneDesc').innerHTML = data[btn.dataset.mem];
+      highlight(btn.dataset.mem);
+    });
+  });
+})();
+
+/* =========================================================
+   TEORIA KOMÓRKOWA
+   ========================================================= */
+(function(){
+  const data = {
+    '1': '<b>Twierdzenie 1:</b> Dotyczy wszystkich organizmów komórkowych. Bakteria jest jedną komórką, człowiek — dziesiątkami bilionów. Ale <em>wirus nie jest komórką</em> — nie ma cytoplazmy, rybosomów ani własnego metabolizmu. Dlatego teorię komórkową formułujemy dziś jako „wszystkie organizmy <strong>komórkowe</strong>".',
+    '2': '<b>Twierdzenie 2:</b> Komórka jest podstawową jednostką budowy i funkcjonowania. Oznacza to, że nie ma mniejszej struktury zdolnej do samodzielnego życia. Wirus nie jest komórką, bo nie przeprowadza samodzielnie procesów życiowych. Najmniejsza żywa jednostka to komórka.',
+    '3': '<b>Twierdzenie 3:</b> Każda komórka powstaje z wcześniej istniejącej komórki (poprzez podział). Zasada ta została upowszechniona przez Rudolfa Virchowa (1855) jako <em>Omnis cellula e cellula</em>. Obaliło to dawną teorię samorództwa, według której komórki mogły powstawać z materii nieożywionej.',
+    '4': '<b>Twierdzenie 4:</b> Komórki zawierają materiał genetyczny (DNA), który przekazują komórkom potomnym. U eukariontów materiał ten jest w jądrze (głównie), dodatkowo w mitochondriach (mtDNA) i u roślin w chloroplastach (cpDNA). W prokariotach — w nukleoidzie i plazmidach.',
+    '5': '<b>Twierdzenie 5:</b> Podstawowe procesy życiowe (metabolizm, wzrost, reakcja na bodźce) zachodzą wewnątrz komórek. To znaczy, że żadna większa struktura biologiczna nie działa „ponad" komórkami — organizm to zbiór współpracujących komórek. Dlatego nowotwory (L016) są chorobą komórek, a nie „czegoś nad komórkami".'
+  };
+  document.querySelectorAll('.teoria-point').forEach(p => {
+    p.addEventListener('click', () => {
+      document.querySelectorAll('.teoria-point').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      document.getElementById('teoriaDetail').innerHTML = data[p.dataset.tw];
+    });
+  });
+})();
+
+/* =========================================================
+   MIKROSKOP vs MODEL
+   ========================================================= */
+(function(){
+  const lightView = `
+    <rect x="0" y="0" width="420" height="220" fill="#fef3c7"/>
+    <!-- Ściana komórkowa -->
+    <rect x="40" y="30" width="340" height="160" rx="6" fill="#fef9c3" stroke="#92400e" stroke-width="5"/>
+    <!-- Wakuola -->
+    <ellipse cx="240" cy="115" rx="110" ry="60" fill="#e0f2fe" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <text x="240" y="118" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI">duża wakuola</text>
+    <!-- Jądro -->
+    <circle cx="120" cy="90" r="22" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+    <text x="120" y="94" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI" font-weight="600">jądro</text>
+    <text x="210" y="205" text-anchor="middle" font-size="9" fill="#78350f" font-family="Segoe UI" font-style="italic">Widok w mikroskopie świetlnym — głównie ściana, wakuola, jądro po barwieniu</text>
+  `;
+  const modelView = `
+    <rect x="0" y="0" width="420" height="220" fill="#f0f9ff"/>
+    <!-- Ściana -->
+    <rect x="40" y="30" width="340" height="160" rx="6" fill="#fef9c3" stroke="#92400e" stroke-width="5"/>
+    <!-- Błona -->
+    <rect x="44" y="34" width="332" height="152" rx="5" fill="none" stroke="#7c3aed" stroke-width="2"/>
+    <!-- Wakuola -->
+    <ellipse cx="240" cy="115" rx="100" ry="52" fill="#e0f2fe" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="240" y="118" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI">wakuola</text>
+    <!-- Jądro -->
+    <circle cx="120" cy="90" r="22" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+    <text x="120" y="94" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI" font-weight="600">jądro</text>
+    <!-- Mitochondria -->
+    <ellipse cx="140" cy="150" rx="12" ry="7" fill="#fef3c7" stroke="#b45309"/>
+    <ellipse cx="180" cy="160" rx="12" ry="7" fill="#fef3c7" stroke="#b45309"/>
+    <!-- ER / Golgi -->
+    <path d="M 70 60 Q 90 70 70 80 Q 90 90 70 100" fill="none" stroke="#059669" stroke-width="2"/>
+    <path d="M 350 60 Q 330 70 350 80 Q 330 90 350 100" fill="none" stroke="#059669" stroke-width="2"/>
+    <!-- Rybosomy -->
+    <circle cx="290" cy="65" r="2.5" fill="#0a2540"/>
+    <circle cx="310" cy="70" r="2.5" fill="#0a2540"/>
+    <circle cx="330" cy="75" r="2.5" fill="#0a2540"/>
+    <text x="210" y="205" text-anchor="middle" font-size="9" fill="#0c4a6e" font-family="Segoe UI" font-style="italic">Model biologiczny — błona, mitochondria, ER, rybosomy są obecne, choć nie widać ich w mikroskopie świetlnym</text>
+  `;
+  function render(key){
+    document.getElementById('microSvg').innerHTML = (key === 'light') ? lightView : modelView;
+    document.getElementById('microCaption').textContent = (key === 'light')
+      ? 'W mikroskopie świetlnym widać przede wszystkim ścianę komórkową i dużą wakuolę; jądro bywa widoczne po barwieniu.'
+      : 'Model biologiczny pokazuje też błonę, mitochondria, ER, aparat Golgiego i rybosomy. Brak widoczności nie oznacza braku struktury.';
+  }
+  document.querySelectorAll('.micro-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.micro-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render(btn.dataset.micro);
+    });
+  });
+  render('light');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chemia L013 EXTRA — zaawansowana (po L012, most z L001)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+/* ============ SYSTEM WIZUALNY (spójny z L013/L001 HTML) ============ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;background:#f5f7fa;color:#1e293b;line-height:1.7;padding:16px;}
+.container{max-width:1060px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px;}}
+
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-exam{background:#ffe8cc;color:#8a6d3b;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-ambitious{background:#e8d5f5;color:#4a1a6b;}
+
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+.table-wrap .error-row{background:#fef2f2;}
+.table-wrap .correct-row{background:#f0faf4;}
+
+.example{background:var(--color-bg-subtle);border-radius:10px;padding:10px 14px;margin:8px 0;border:1px solid var(--color-border);display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;}
+.example .chem{font-weight:600;color:#0a2540;font-size:1.0rem;font-family:'Courier New',monospace;}
+.example .desc{color:var(--color-text-muted);font-size:0.88rem;}
+.example .tag{display:inline-block;font-size:0.55rem;font-weight:600;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:12px;color:#2d3a4f;}
+
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 14px;border-radius:8px;border:1px solid var(--color-border);background:#fff;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;color:var(--color-text);font-family:inherit;}
+.btn:hover{background:var(--color-bg-subtle);border-color:#b0b8c4;}
+.btn-outline{background:transparent;border:1px solid var(--color-border);}
+.btn-outline:hover{background:var(--color-bg-subtle);}
+.btn-sm{padding:3px 10px;font-size:0.74rem;}
+
+.answer-toggle{font-family:inherit;padding:4px 14px;border-radius:6px;border:none;cursor:pointer;font-size:0.78rem;font-weight:500;transition:all 0.2s;margin-top:4px;margin-right:4px;background:var(--color-training);color:#fff;}
+.answer-toggle:hover{background:#1f4e8c;}
+.answer-content{border-radius:6px;padding:0 12px;margin-top:4px;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.3s ease,opacity 0.3s ease;opacity:0;background:var(--color-training-bg);border-left:3px solid var(--color-training);}
+.answer-content.show{max-height:2000px;padding:10px 12px;opacity:1;}
+
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+
+
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"▶";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+
+.section{margin-bottom:8px;}
+
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:80px;}
+.flashcard .front{font-weight:700;font-size:1.05rem;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.95rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.warning-box{background:#fee2e2;border:1px solid #f87171;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.ambitny-box{background:#dbeafe;border:1px solid #3b82f6;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+
+/* Diagramy SVG */
+.diagram{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:16px 0;text-align:center;}
+.diagram svg{max-width:100%;height:auto;}
+.diagram .caption{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:8px;}
+
+.def-box{background:#eef7ff;border-left:4px solid #2b6cb0;border-radius:8px;padding:10px 14px;margin:10px 0;}
+.def-box .term{font-weight:700;color:#0a2540;}
+.def-box .meaning{color:#1e293b;}
+
+.curiosity{background:#fdf4ff;border-left:4px solid #a855f7;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:0.92rem;}
+.curiosity .label{font-weight:700;color:#7c3aed;display:block;margin-bottom:2px;}
+
+@media(max-width:600px){
+  .top-panel .panel-row{flex-direction:column;align-items:stretch;}
+  .container{padding:10px 6px;}
+  .toc-section{padding:12px 14px;}
+  .toc-summary{font-size:0.85rem;padding:6px 10px;}
+  }
+</style>
+</head>
+<body>
+<div class="container" id="app">
+<div class="card card-warning" style="margin-bottom:16px">
+  <span class="card-label">Numeracja</span>
+  <p><strong>L013 to lekcja extra na końcu roku (dawniej myląco numerowana L001).</strong> W pakiecie Podstawa Plus kolejność nauki to L001 → L002 → … → L012, a dopiero potem ta lekcja extra. Indeks roku zostaje plikiem nadrzędnym: <code>L000-INDEKS-ROKU_MASTER_v1.0 (8).html</code>.</p>
+</div>
+
+
+<!-- ============================================================
+TOP PANEL
+============================================================ -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L013 EXTRA — Chemia zaawansowana (most z L001)</div>
+      <div class="subtitle">Nie jest to pierwsza lekcja roku. Extra po L001–L012 · liceum / konkurs</div>
+      <div class="lesson-info">
+        Konfiguracje elektronowe · VSEPR · Hybrydyzacja · Redoks zaawansowany · Stechiometria z wydajnością · Kinetyka · Równowaga · Elektrochemia
+      </div>
+    </div>
+    
+      <div class="progress-label"><span id="progressPercent">0%</span><span id="progressStatus">Zacznij naukę</span></div>
+    </div>
+  </div>
+  <div class="panel-row">
+    
+    
+  </div>
+</div>
+
+<!-- ============================================================
+TOC
+============================================================ -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+  <details class="toc-item" open>
+    <summary class="toc-summary">Wprowadzenie i plan pracy</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#cel">Cel lekcji</a>
+      <a class="toc-anchor" href="#plan">Plan pracy</a>
+      <a class="toc-anchor" href="#test-wstepny">Test wstępny</a>
+    </nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">1. Konfiguracje elektronowe</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#konfiguracje">Konfiguracje</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">2. VSEPR — geometria cząsteczek</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#vsepr">VSEPR</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">3. Hybrydyzacja</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#hybrydyzacja">Hybrydyzacja</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">4. Redoks zaawansowany</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#redoks">Redoks</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">5. Stechiometria z wydajnością</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#stechiometria">Stechiometria</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">6. Kinetyka chemiczna</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#kinetyka">Kinetyka</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">7. Równowaga chemiczna</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#rownowaga">Równowaga</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">8. Elektrochemia</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#elektrochemia">Elektrochemia</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">Ćwiczenia, fiszki, test</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a>
+      <a class="toc-anchor" href="#fiszki">Fiszki</a>
+      <a class="toc-anchor" href="#test-koncowy">Test końcowy</a>
+    </nav>
+  </details>
+  <div class="toc-keywords"><span>Słowa kluczowe: konfiguracje · VSEPR · hybrydyzacja · redoks · stechiometria · kinetyka · równowaga · elektrochemia</span></div>
+</div>
+
+<!-- ============================================================
+WPROWADZENIE
+============================================================ -->
+<section class="section" id="cel">
+  <div class="part-heading"><span class="part-num">Cel lekcji</span></div>
+  <div class="card card-correct">
+    <span class="card-label">Po tej lekcji umiesz:</span>
+    <ul>
+      <li>zapisać konfigurację elektronową (podpowłokową) dla pierwszych 20 pierwiastków oraz wybranych jonów,</li>
+      <li>zastosować reguły Aufbau, Hunda i Pauliego,</li>
+      <li>przewidzieć geometrię cząsteczki na podstawie teorii VSEPR,</li>
+      <li>rozpoznać typ hybrydyzacji (sp, sp², sp³),</li>
+      <li>rozwiązać zadania stechiometryczne z wydajnością i reagentem ograniczającym,</li>
+      <li>wyjaśnić, jak czynniki zewnętrzne wpływają na szybkość reakcji i położenie równowagi,</li>
+      <li>obliczyć SEM ogniwa na podstawie potencjałów standardowych.</li>
+    </ul>
+  </div>
+  <div class="card card-hint">
+    <span class="card-label">Uwaga</span>
+    <p>L013 <strong>nie jest obowiązkowa</strong> na egzaminie ósmoklasisty. To lekcja dla uczniów, którzy chcą zrozumieć chemię głębiej lub przygotowują się do konkursów. Rób ją <strong>po</strong> opanowaniu L001–L012.</p>
+  </div>
+</section>
+
+<section class="section" id="plan">
+  <div class="part-heading"><span class="part-num">Plan pracy</span></div>
+  <div class="highlight-box">
+    <ul>
+      <li><strong>Dzień 1:</strong> konfiguracje elektronowe + diagram orbitali.</li>
+      <li><strong>Dzień 2:</strong> VSEPR + hybrydyzacja + diagramy geometrii.</li>
+      <li><strong>Dzień 3:</strong> redoks zaawansowany + stechiometria z wydajnością.</li>
+      <li><strong>Dzień 4:</strong> kinetyka + równowaga + elektrochemia.</li>
+      <li><strong>Dzień 5:</strong> ćwiczenia + fiszki + test końcowy.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="test-wstepny">
+  <div class="part-heading"><span class="part-num">Test wstępny</span></div>
+  <div class="card card-gray">
+    <ol>
+      <li>Ile elektronów walencyjnych ma atom siarki (Z=16)?</li>
+      <li>Co to utleniacz, a co reduktor?</li>
+      <li>Jaki jest wzór ogólny alkanów?</li>
+      <li>Co to mol i ile cząstek zawiera?</li>
+      <li>Jaki kształt ma cząsteczka CH₄?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-wstepny')">Pokaż odpowiedzi</button>
+    <div id="ans-wstepny" class="answer-content">
+      <p><strong>1.</strong> 6 elektronów walencyjnych (konfiguracja 3s² 3p⁴).</p>
+      <p><strong>2.</strong> Utleniacz przyjmuje elektrony (sam się redukuje); reduktor oddaje elektrony (sam się utlenia).</p>
+      <p><strong>3.</strong> CₙH₂ₙ₊₂.</p>
+      <p><strong>4.</strong> Mol to jednostka liczności materii; 1 mol = 6,02·10²³ cząstek.</p>
+      <p><strong>5.</strong> Tetraedryczny (kąty ~109,5°).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+1. KONFIGURACJE ELEKTRONOWE
+============================================================ -->
+<section class="section" id="konfiguracje">
+  <div class="part-heading"><span class="part-num">1. Konfiguracje elektronowe</span></div>
+
+  <h3>1.1. Od atomu Bohra do orbitali</h3>
+  <div class="def-box">
+    <p><span class="term">Orbital</span> — <span class="meaning">obszar przestrzeni wokół jądra, w którym prawdopodobieństwo znalezienia elektronu jest największe (zwykle przyjmuje się 90%). Orbital to nie „tor", po którym krąży elektron, ale chmura prawdopodobieństwa.</span></p>
+  </div>
+  <div class="def-box">
+    <p><span class="term">Podpowłoka</span> — <span class="meaning">zbiór orbitali o tej samej energii w obrębie jednej powłoki (oznaczana literami s, p, d, f).</span></p>
+  </div>
+  <div class="def-box">
+    <p><span class="term">Powłoka (poziom energetyczny)</span> — <span class="meaning">zbiór podpowłok o zbliżonej energii, oznaczany numerem n = 1, 2, 3, ... (historycznie: K, L, M, N...).</span></p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Podpowłoka</th><th>Liczba orbitali</th><th>Maks. liczba e⁻</th><th>Kształt</th></tr></thead>
+      <tbody>
+        <tr><td>s</td><td>1</td><td>2</td><td>kulisty</td></tr>
+        <tr><td>p</td><td>3</td><td>6</td><td>hantlowy (dwa płatki)</td></tr>
+        <tr><td>d</td><td>5</td><td>10</td><td>złożony (4 płatki)</td></tr>
+        <tr><td>f</td><td>7</td><td>14</td><td>bardzo złożony</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>1.2. Trzy zasady zapełniania orbitali</h3>
+  <div class="card card-remember">
+    <span class="card-label">Zasada Aufbau (budowy)</span>
+    <p>Elektrony zapełniają orbitale <strong>od najniższej energii do najwyższej</strong>. Kolejność energetyczna podpowłok:</p>
+    <p style="font-family:'Courier New',monospace;font-weight:700;color:#2b6cb0;font-size:1.05rem;">1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → 5p → 6s → 4f → 5d → 6p</p>
+  </div>
+
+  <div class="card card-remember">
+    <span class="card-label">Reguła Hunda</span>
+    <p>W obrębie jednej podpowłoki elektrony <strong>najpierw zajmują orbitale pojedynczo</strong> (zgodne spiny), a dopiero potem się parują. Dzięki temu atom ma jak najwięcej niesparowanych elektronów — jest to korzystne energetycznie.</p>
+  </div>
+
+  <div class="card card-remember">
+    <span class="card-label">Zakaz Pauliego</span>
+    <p>Na jednym orbitalu mogą znajdować się <strong>maksymalnie 2 elektrony</strong> i muszą mieć <strong>przeciwne spiny</strong> (↑↓).</p>
+  </div>
+
+  <!-- SVG: diagram energetyczny orbitali -->
+  <div class="diagram">
+    <svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram energetyczny orbitali">
+      <!-- osie -->
+      <line x1="40" y1="20" x2="40" y2="320" stroke="#6b7a8d" stroke-width="2"/>
+      <polygon points="40,15 36,25 44,25" fill="#6b7a8d"/>
+      <text x="10" y="20" font-size="12" fill="#6b7a8d" font-family="Segoe UI">E</text>
+      <!-- 1s -->
+      <line x1="70" y1="290" x2="130" y2="290" stroke="#2b6cb0" stroke-width="4"/>
+      <text x="100" y="308" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI">1s</text>
+      <text x="100" y="282" font-size="11" text-anchor="middle" fill="#2b6cb0">↑↓</text>
+      <!-- 2s -->
+      <line x1="70" y1="250" x2="130" y2="250" stroke="#2b6cb0" stroke-width="4"/>
+      <text x="100" y="268" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI">2s</text>
+      <text x="100" y="242" font-size="11" text-anchor="middle" fill="#2b6cb0">↑↓</text>
+      <!-- 2p -->
+      <line x1="160" y1="210" x2="200" y2="210" stroke="#2b6cb0" stroke-width="4"/>
+      <line x1="210" y1="210" x2="250" y2="210" stroke="#2b6cb0" stroke-width="4"/>
+      <line x1="260" y1="210" x2="300" y2="210" stroke="#2b6cb0" stroke-width="4"/>
+      <text x="230" y="228" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI">2p</text>
+      <text x="180" y="202" font-size="11" text-anchor="middle" fill="#2b6cb0">↑</text>
+      <text x="230" y="202" font-size="11" text-anchor="middle" fill="#2b6cb0">↑</text>
+      <text x="280" y="202" font-size="11" text-anchor="middle" fill="#2b6cb0">↑</text>
+      <!-- 3s -->
+      <line x1="70" y1="170" x2="130" y2="170" stroke="#2b6cb0" stroke-width="4"/>
+      <text x="100" y="188" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI">3s</text>
+      <text x="100" y="162" font-size="11" text-anchor="middle" fill="#2b6cb0">↑↓</text>
+      <!-- 3p -->
+      <line x1="160" y1="130" x2="200" y2="130" stroke="#2b6cb0" stroke-width="4"/>
+      <line x1="210" y1="130" x2="250" y2="130" stroke="#2b6cb0" stroke-width="4"/>
+      <line x1="260" y1="130" x2="300" y2="130" stroke="#2b6cb0" stroke-width="4"/>
+      <text x="230" y="148" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI">3p</text>
+      <!-- 4s -->
+      <line x1="70" y1="90" x2="130" y2="90" stroke="#f59e0b" stroke-width="4"/>
+      <text x="100" y="108" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI">4s</text>
+      <text x="100" y="82" font-size="11" text-anchor="middle" fill="#f59e0b">↑↓</text>
+      <!-- 3d -->
+      <line x1="160" y1="50" x2="185" y2="50" stroke="#7c3aed" stroke-width="4"/>
+      <line x1="190" y1="50" x2="215" y2="50" stroke="#7c3aed" stroke-width="4"/>
+      <line x1="220" y1="50" x2="245" y2="50" stroke="#7c3aed" stroke-width="4"/>
+      <line x1="250" y1="50" x2="275" y2="50" stroke="#7c3aed" stroke-width="4"/>
+      <line x1="280" y1="50" x2="305" y2="50" stroke="#7c3aed" stroke-width="4"/>
+      <text x="230" y="68" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI">3d</text>
+      <!-- legenda -->
+      <text x="340" y="90" font-size="12" fill="#f59e0b" font-family="Segoe UI">4s — zapełnia się przed 3d</text>
+      <text x="340" y="110" font-size="12" fill="#7c3aed" font-family="Segoe UI">3d — po 4s (dla Z ≥ 21)</text>
+    </svg>
+    <div class="caption">Diagram energetyczny orbitali — kolejność zapełniania według zasady Aufbau. Zwróć uwagę: 4s ma niższą energię niż 3d.</div>
+  </div>
+
+  <h3>1.3. Przykłady konfiguracji</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pierwiastek</th><th>Z</th><th>Konfiguracja podpowłokowa</th><th>Skrót</th><th>Powłoki</th></tr></thead>
+      <tbody>
+        <tr><td>H</td><td>1</td><td>1s¹</td><td>—</td><td>1</td></tr>
+        <tr><td>He</td><td>2</td><td>1s²</td><td>—</td><td>2</td></tr>
+        <tr><td>Li</td><td>3</td><td>1s² 2s¹</td><td>[He] 2s¹</td><td>2, 1</td></tr>
+        <tr><td>C</td><td>6</td><td>1s² 2s² 2p²</td><td>[He] 2s² 2p²</td><td>2, 4</td></tr>
+        <tr><td>N</td><td>7</td><td>1s² 2s² 2p³</td><td>[He] 2s² 2p³</td><td>2, 5</td></tr>
+        <tr><td>O</td><td>8</td><td>1s² 2s² 2p⁴</td><td>[He] 2s² 2p⁴</td><td>2, 6</td></tr>
+        <tr><td>Na</td><td>11</td><td>1s² 2s² 2p⁶ 3s¹</td><td>[Ne] 3s¹</td><td>2, 8, 1</td></tr>
+        <tr><td>Ar</td><td>18</td><td>1s² 2s² 2p⁶ 3s² 3p⁶</td><td>[Ne] 3s² 3p⁶</td><td>2, 8, 8</td></tr>
+        <tr><td>K</td><td>19</td><td>1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹</td><td>[Ar] 4s¹</td><td>2, 8, 8, 1</td></tr>
+        <tr><td>Ca</td><td>20</td><td>1s² 2s² 2p⁶ 3s² 3p⁶ 4s²</td><td>[Ar] 4s²</td><td>2, 8, 8, 2</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>1.4. Wyjątki: Cr i Cu</h3>
+  <div class="card card-ambitious">
+    <span class="card-label">Dlaczego wyjątki?</span>
+    <p>Układ o <strong>półpełnej</strong> (d⁵) lub <strong>pełnej</strong> (d¹⁰) podpowłoce d jest energetycznie korzystniejszy niż układ z d⁴ lub d⁹. Dlatego elektron z 4s „przeskakuje" na 3d:</p>
+    <ul>
+      <li><strong>Chrom (Cr, Z=24):</strong> oczekiwane [Ar] 4s² 3d⁴ → rzeczywiste <strong>[Ar] 4s¹ 3d⁵</strong></li>
+      <li><strong>Miedź (Cu, Z=29):</strong> oczekiwane [Ar] 4s² 3d⁹ → rzeczywiste <strong>[Ar] 4s¹ 3d¹⁰</strong></li>
+    </ul>
+  </div>
+
+  <h3>1.5. Konfiguracje jonów</h3>
+  <div class="card card-hint">
+    <span class="card-label">Reguła</span>
+    <p>Przy tworzeniu kationów elektrony usuwamy <strong>najpierw z orbitalu o najwyższym n</strong> (zazwyczaj 4s), a dopiero potem z 3d.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Jon</th><th>Liczba e⁻</th><th>Konfiguracja</th><th>Uwagi</th></tr></thead>
+      <tbody>
+        <tr><td>Na⁺</td><td>10</td><td>[Ne]</td><td>izoelektronowy z Ne</td></tr>
+        <tr><td>Cl⁻</td><td>18</td><td>[Ar]</td><td>izoelektronowy z Ar</td></tr>
+        <tr><td>Fe²⁺</td><td>24</td><td>[Ar] 3d⁶</td><td>usuwamy 4s²</td></tr>
+        <tr><td>Fe³⁺</td><td>23</td><td>[Ar] 3d⁵</td><td>usuwamy 4s² i 1 e⁻ z 3d</td></tr>
+        <tr><td>Cu²⁺</td><td>27</td><td>[Ar] 3d⁹</td><td>usuwamy 4s¹</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Jon Fe³⁺ ma konfigurację [Ar] 3d⁵ — półpełną podpowłokę d. To czyni go wyjątkowo trwałym. Półpełne d⁵ bywa korzystne energetycznie; w wodzie Fe(II) i tak łatwo utlenia się powietrzem. Stabilność Fe(II)/Fe(III) zależy od ligandów i pH — nie jest to „zawsze +III".
+  </div>
+</section>
+
+<!-- ============================================================
+2. VSEPR
+============================================================ -->
+<section class="section" id="vsepr">
+  <div class="part-heading"><span class="part-num">2. VSEPR — geometria cząsteczek</span></div>
+
+  <div class="def-box">
+    <p><span class="term">VSEPR</span> (Valence Shell Electron Pair Repulsion) — <span class="meaning">teoria odpychania par elektronowych powłoki walencyjnej. Mówi, że pary elektronowe wokół atomu centralnego układają się tak daleko od siebie, jak to możliwe, aby zminimalizować odpychanie.</span></p>
+  </div>
+
+  <h3>2.1. Zasada</h3>
+  <div class="card card-remember">
+    <span class="card-label">Klucz</span>
+    <ul>
+      <li>Pary elektronowe (wiążące i wolne) odpychają się.</li>
+      <li>Odpychanie: <strong>wolna–wolna &gt; wolna–wiążąca &gt; wiążąca–wiążąca</strong>.</li>
+      <li>Wolne pary „zajmują więcej miejsca" — zmniejszają kąty między wiązaniami.</li>
+    </ul>
+  </div>
+
+  <h3>2.2. Tabela geometrii</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pary wiążące</th><th>Wolne pary</th><th>Kształt</th><th>Przykład</th><th>Kąt</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>0</td><td>liniowy</td><td>CO₂, BeCl₂</td><td>180°</td></tr>
+        <tr><td>3</td><td>0</td><td>trygonalny płaski</td><td>BF₃, SO₃</td><td>120°</td></tr>
+        <tr><td>4</td><td>0</td><td>tetraedryczny</td><td>CH₄, CCl₄</td><td>109,5°</td></tr>
+        <tr><td>3</td><td>1</td><td>piramidalny</td><td>NH₃</td><td>~107°</td></tr>
+        <tr><td>2</td><td>2</td><td>kątowy</td><td>H₂O</td><td>~104,5°</td></tr>
+        <tr><td>5</td><td>0</td><td>bipiramidowy</td><td>PCl₅</td><td>90°/120°</td></tr>
+        <tr><td>6</td><td>0</td><td>oktaedryczny</td><td>SF₆</td><td>90°</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SVG: geometrie VSEPR -->
+  <div class="diagram">
+    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geometrie VSEPR">
+      <!-- Liniowy -->
+      <g transform="translate(80,100)">
+        <circle cx="0" cy="0" r="18" fill="#2b6cb0"/>
+        <text x="0" y="5" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">C</text>
+        <circle cx="-60" cy="0" r="14" fill="#dc3545"/>
+        <text x="-60" y="4" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">O</text>
+        <circle cx="60" cy="0" r="14" fill="#dc3545"/>
+        <text x="60" y="4" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">O</text>
+        <line x1="-18" y1="0" x2="-46" y2="0" stroke="#0a2540" stroke-width="3"/>
+        <line x1="18" y1="0" x2="46" y2="0" stroke="#0a2540" stroke-width="3"/>
+        <text x="0" y="70" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">Liniowy</text>
+        <text x="0" y="86" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">CO₂ · 180°</text>
+      </g>
+      <!-- Trygonalny -->
+      <g transform="translate(240,100)">
+        <circle cx="0" cy="0" r="18" fill="#2b6cb0"/>
+        <text x="0" y="5" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">B</text>
+        <circle cx="0" cy="-55" r="14" fill="#2d8f5e"/>
+        <text x="0" y="-51" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">F</text>
+        <circle cx="-48" cy="28" r="14" fill="#2d8f5e"/>
+        <text x="-48" y="32" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">F</text>
+        <circle cx="48" cy="28" r="14" fill="#2d8f5e"/>
+        <text x="48" y="32" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">F</text>
+        <line x1="0" y1="-18" x2="0" y2="-41" stroke="#0a2540" stroke-width="3"/>
+        <line x1="-13" y1="9" x2="-35" y2="22" stroke="#0a2540" stroke-width="3"/>
+        <line x1="13" y1="9" x2="35" y2="22" stroke="#0a2540" stroke-width="3"/>
+        <text x="0" y="70" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">Trygonalny</text>
+        <text x="0" y="86" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">BF₃ · 120°</text>
+      </g>
+      <!-- Tetraedryczny -->
+      <g transform="translate(400,100)">
+        <circle cx="0" cy="0" r="18" fill="#2b6cb0"/>
+        <text x="0" y="5" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">C</text>
+        <circle cx="0" cy="-55" r="14" fill="#f59e0b"/>
+        <text x="0" y="-51" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <circle cx="-48" cy="28" r="14" fill="#f59e0b"/>
+        <text x="-48" y="32" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <circle cx="48" cy="28" r="14" fill="#f59e0b"/>
+        <text x="48" y="32" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <circle cx="0" cy="55" r="14" fill="#f59e0b"/>
+        <text x="0" y="59" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <line x1="0" y1="-18" x2="0" y2="-41" stroke="#0a2540" stroke-width="3"/>
+        <line x1="-13" y1="9" x2="-35" y2="22" stroke="#0a2540" stroke-width="3"/>
+        <line x1="13" y1="9" x2="35" y2="22" stroke="#0a2540" stroke-width="3"/>
+        <line x1="0" y1="18" x2="0" y2="41" stroke="#0a2540" stroke-width="3"/>
+        <text x="0" y="90" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">Tetraedryczny</text>
+        <text x="0" y="106" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">CH₄ · 109,5°</text>
+      </g>
+      <!-- Piramidalny -->
+      <g transform="translate(560,100)">
+        <circle cx="0" cy="0" r="18" fill="#2b6cb0"/>
+        <text x="0" y="5" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">N</text>
+        <circle cx="0" cy="-55" r="14" fill="#f59e0b"/>
+        <text x="0" y="-51" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <circle cx="-48" cy="28" r="14" fill="#f59e0b"/>
+        <text x="-48" y="32" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <circle cx="48" cy="28" r="14" fill="#f59e0b"/>
+        <text x="48" y="32" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <line x1="0" y1="-18" x2="0" y2="-41" stroke="#0a2540" stroke-width="3"/>
+        <line x1="-13" y1="9" x2="-35" y2="22" stroke="#0a2540" stroke-width="3"/>
+        <line x1="13" y1="9" x2="35" y2="22" stroke="#0a2540" stroke-width="3"/>
+        <!-- wolna para -->
+        <text x="0" y="42" font-size="14" text-anchor="middle" fill="#dc3545">••</text>
+        <text x="0" y="70" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">Piramidalny</text>
+        <text x="0" y="86" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">NH₃ · 107°</text>
+      </g>
+      <!-- Kątowy -->
+      <g transform="translate(720,100)">
+        <circle cx="0" cy="0" r="18" fill="#2b6cb0"/>
+        <text x="0" y="5" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">O</text>
+        <circle cx="-48" cy="28" r="14" fill="#f59e0b"/>
+        <text x="-48" y="32" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <circle cx="48" cy="28" r="14" fill="#f59e0b"/>
+        <text x="48" y="32" font-size="11" text-anchor="middle" fill="#fff" font-family="Segoe UI">H</text>
+        <line x1="-13" y1="9" x2="-35" y2="22" stroke="#0a2540" stroke-width="3"/>
+        <line x1="13" y1="9" x2="35" y2="22" stroke="#0a2540" stroke-width="3"/>
+        <text x="-15" y="-22" font-size="14" text-anchor="middle" fill="#dc3545">••</text>
+        <text x="15" y="-22" font-size="14" text-anchor="middle" fill="#dc3545">••</text>
+        <text x="0" y="70" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">Kątowy</text>
+        <text x="0" y="86" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">H₂O · 104,5°</text>
+      </g>
+    </svg>
+    <div class="caption">Kształty cząsteczek według VSEPR. Czerwone kropki to wolne pary elektronowe — zajmują więcej miejsca i zmniejszają kąty.</div>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Dlaczego kąt H–O–H w wodzie (104,5°) jest mniejszy niż 109,5°? Bo dwie wolne pary na tlenie „rozpychają się" mocniej niż pary wiążące i ściskają wiązania O–H. To skutek odpychania wolna–wolna.
+  </div>
+</section>
+
+<!-- ============================================================
+3. HYBRYDYZACJA
+============================================================ -->
+<section class="section" id="hybrydyzacja">
+  <div class="part-heading"><span class="part-num">3. Hybrydyzacja</span></div>
+
+  <div class="def-box">
+    <p><span class="term">Hybrydyzacja</span> — <span class="meaning">mieszanie orbitali atomowych o zbliżonej energii w nowe, równoważne orbitale hybrydowe, które mają taki sam kształt i energię. Dzięki temu atom może tworzyć więcej równocennych wiązań.</span></p>
+  </div>
+
+  <h3>3.1. Typy hybrydyzacji</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Typ</th><th>Orbitale mieszane</th><th>Liczba hybryd</th><th>Kształt</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td><strong>sp</strong></td><td>1×s + 1×p</td><td>2</td><td>liniowy (180°)</td><td>BeCl₂, CO₂, C₂H₂</td></tr>
+        <tr><td><strong>sp²</strong></td><td>1×s + 2×p</td><td>3</td><td>trygonalny (120°)</td><td>BF₃, C₂H₄, benzen</td></tr>
+        <tr><td><strong>sp³</strong></td><td>1×s + 3×p</td><td>4</td><td>tetraedryczny (109,5°)</td><td>CH₄, H₂O, NH₃</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SVG: hybrydyzacja -->
+  <div class="diagram">
+    <svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Typy hybrydyzacji">
+      <!-- sp -->
+      <g transform="translate(130,110)">
+        <circle cx="0" cy="0" r="14" fill="#7c3aed"/>
+        <text x="0" y="4" font-size="10" text-anchor="middle" fill="#fff" font-family="Segoe UI">C</text>
+        <ellipse cx="-45" cy="0" rx="28" ry="12" fill="#7c3aed" opacity="0.35"/>
+        <ellipse cx="45" cy="0" rx="28" ry="12" fill="#7c3aed" opacity="0.35"/>
+        <text x="0" y="70" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">sp</text>
+        <text x="0" y="86" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">liniowy · 180°</text>
+        <text x="0" y="102" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">C₂H₂, CO₂</text>
+      </g>
+      <!-- sp2 -->
+      <g transform="translate(400,110)">
+        <circle cx="0" cy="0" r="14" fill="#7c3aed"/>
+        <text x="0" y="4" font-size="10" text-anchor="middle" fill="#fff" font-family="Segoe UI">C</text>
+        <ellipse cx="0" cy="-45" rx="28" ry="12" fill="#7c3aed" opacity="0.35"/>
+        <ellipse cx="-42" cy="28" rx="28" ry="12" fill="#7c3aed" opacity="0.35" transform="rotate(-40 -42 28)"/>
+        <ellipse cx="42" cy="28" rx="28" ry="12" fill="#7c3aed" opacity="0.35" transform="rotate(40 42 28)"/>
+        <text x="0" y="70" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">sp²</text>
+        <text x="0" y="86" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">trygonalny · 120°</text>
+        <text x="0" y="102" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">C₂H₄, BF₃</text>
+      </g>
+      <!-- sp3 -->
+      <g transform="translate(670,110)">
+        <circle cx="0" cy="0" r="14" fill="#7c3aed"/>
+        <text x="0" y="4" font-size="10" text-anchor="middle" fill="#fff" font-family="Segoe UI">C</text>
+        <ellipse cx="0" cy="-45" rx="24" ry="10" fill="#7c3aed" opacity="0.35"/>
+        <ellipse cx="-45" cy="20" rx="24" ry="10" fill="#7c3aed" opacity="0.35" transform="rotate(-55 -45 20)"/>
+        <ellipse cx="45" cy="20" rx="24" ry="10" fill="#7c3aed" opacity="0.35" transform="rotate(55 45 20)"/>
+        <ellipse cx="0" cy="45" rx="24" ry="10" fill="#7c3aed" opacity="0.35"/>
+        <text x="0" y="70" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">sp³</text>
+        <text x="0" y="86" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">tetraedryczny · 109,5°</text>
+        <text x="0" y="102" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">CH₄, H₂O, NH₃</text>
+      </g>
+    </svg>
+    <div class="caption">Trzy typy hybrydyzacji. Fioletowe „chmurki" to orbitale hybrydowe.</div>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Jak rozpoznać typ hybrydyzacji?</span>
+    <ol>
+      <li>Policz <strong>pary elektronowe</strong> (wiążące + wolne) wokół atomu centralnego.</li>
+      <li>2 pary → sp; 3 pary → sp²; 4 pary → sp³.</li>
+      <li>Narysuj geometrię zgodną z VSEPR.</li>
+    </ol>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    W cząsteczce wody tlen ma hybrydyzację sp³ (4 pary: 2 wiążące + 2 wolne), ale kształt cząsteczki jest <strong>kątowy</strong>, a nie tetraedryczny. Hybrydyzacja opisuje orbitale atomu centralnego, a VSEPR — geometrię całej cząsteczki. To dwa różne (choć powiązane) poziomy opisu.
+  </div>
+</section>
+
+<!-- ============================================================
+4. REDOKS ZAAWANSOWANY
+============================================================ -->
+<section class="section" id="redoks">
+  <div class="part-heading"><span class="part-num">4. Redoks zaawansowany</span></div>
+
+  <div class="card card-gray">
+    <p>W L010 poznałeś podstawy redoks. Tutaj uczysz się <strong>metody jonowo-elektronowej</strong> (połówkowej) — najbardziej uniwersalnej metody bilansowania.</p>
+  </div>
+
+  <h3>4.1. Metoda jonowo-elektronowa — kroki</h3>
+  <div class="card card-remember">
+    <ol>
+      <li>Zapisz <strong>szkielet</strong> reakcji (substraty → produkty).</li>
+      <li>Wskaż atomy zmieniające stopień utlenienia.</li>
+      <li>Zapisz <strong>połówkowe reakcje</strong> utleniania i redukcji.</li>
+      <li>Wyrównaj atomy (poza H i O).</li>
+      <li>Wyrównaj O, dodając H₂O.</li>
+      <li>Wyrównaj H, dodając H⁺ (środowisko kwasowe) lub OH⁻ (zasadowe).</li>
+      <li>Wyrównaj ładunki, dodając e⁻.</li>
+      <li>Dobierz mnożniki, by liczba e⁻ oddanych = przyjętych.</li>
+      <li>Zsumuj połówki i sprawdź bilans.</li>
+    </ol>
+  </div>
+
+  <h3>4.2. Przykład — środowisko kwasowe</h3>
+  <div class="example">
+    <span class="tag">Reakcja</span>
+    <span class="chem">MnO₄⁻ + Fe²⁺ + H⁺ → Mn²⁺ + Fe³⁺ + H₂O</span>
+  </div>
+  <div class="card card-gray">
+    <p><strong>Redukcja:</strong> MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O</p>
+    <p><strong>Utlenianie:</strong> Fe²⁺ → Fe³⁺ + e⁻ | ·5</p>
+    <p><strong>Suma:</strong> MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺</p>
+  </div>
+
+  <h3>4.3. Przykład — środowisko zasadowe (dysproporcjonowanie)</h3>
+  <div class="example">
+    <span class="tag">Reakcja</span>
+    <span class="chem">Cl₂ + OH⁻ → Cl⁻ + ClO₃⁻ + H₂O</span>
+  </div>
+  <div class="card card-gray">
+    <p><strong>Redukcja:</strong> Cl₂ + 2e⁻ → 2Cl⁻ | ·5</p>
+    <p><strong>Utlenianie:</strong> Cl₂ + 12OH⁻ → 2ClO₃⁻ + 6H₂O + 10e⁻ | ·1</p>
+    <p><strong>Suma:</strong> 3Cl₂ + 6OH⁻ → 5Cl⁻ + ClO₃⁻ + 3H₂O</p>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    W reakcjach redoks w środowisku zasadowym zamiast H⁺ używamy OH⁻ i H₂O. Trzeba tylko pamiętać, że po każdej stronie równania liczba atomów i ładunków musi się zgadzać.
+  </div>
+</section>
+
+<!-- ============================================================
+5. STECHIOMETRIA Z WYDAJNOŚCIĄ
+============================================================ -->
+<section class="section" id="stechiometria">
+  <div class="part-heading"><span class="part-num">5. Stechiometria z wydajnością</span></div>
+
+  <div class="def-box">
+    <p><span class="term">Wydajność (W)</span> — <span class="meaning">stosunek ilości produktu rzeczywiście otrzymanego do ilości teoretycznej (obliczonej ze stechiometrii), wyrażony w procentach. W = (m_rzecz / m_teor) · 100%.</span></p>
+  </div>
+
+  <div class="def-box">
+    <p><span class="term">Reagent ograniczający</span> — <span class="meaning">substrat, który zużyje się pierwszy i tym samym decyduje o ilości powstającego produktu. Drugi substrat jest w nadmiarze.</span></p>
+  </div>
+
+  <h3>5.1. Algorytm</h3>
+  <div class="card card-hint">
+    <ol>
+      <li>Zapisz i zbilansuj równanie.</li>
+      <li>Przelicz dane na mole.</li>
+      <li>Ustal reagent ograniczający: podziel n przez współczynnik stechiometryczny; mniejszy wynik = ograniczający.</li>
+      <li>Oblicz n produktu z reagenta ograniczającego.</li>
+      <li>Przelicz na masę/objętość.</li>
+      <li>Uwzględnij wydajność: pomnóż przez W/100%.</li>
+    </ol>
+  </div>
+
+  <div class="example">
+    <span class="tag">Przykład</span>
+    <span class="chem">10 g Mg + 50 g 20% HCl → ? dm³ H₂ (W = 90%)</span>
+    <span class="desc">Mg + 2HCl → MgCl₂ + H₂</span>
+  </div>
+  <div class="card card-gray">
+    <ul>
+      <li>n(Mg) = 10/24 ≈ 0,417 mol</li>
+      <li>m(HCl) = 50 · 0,2 = 10 g → n(HCl) = 10/36,5 ≈ 0,274 mol</li>
+      <li>Potrzeba 2 mole HCl na 1 mol Mg → 0,417 mol Mg wymaga 0,833 mol HCl. Mamy 0,274 mol → <strong>HCl jest ograniczający</strong>.</li>
+      <li>n(H₂) = 0,274/2 = 0,137 mol (teoretycznie)</li>
+      <li>Z wydajnością 90%: n(H₂) = 0,137 · 0,9 = 0,1233 mol</li>
+      <li>V = 0,1233 · 22,4 ≈ 2,76 dm³</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+6. KINETYKA
+============================================================ -->
+<section class="section" id="kinetyka">
+  <div class="part-heading"><span class="part-num">6. Kinetyka chemiczna</span></div>
+
+  <div class="def-box">
+    <p><span class="term">Szybkość reakcji</span> — <span class="meaning">zmiana stężenia substratu (lub produktu) w jednostce czasu. Im większa szybkość, tym szybciej reakcja zachodzi.</span></p>
+  </div>
+
+  <div class="def-box">
+    <p><span class="term">Energia aktywacji (Ea)</span> — <span class="meaning">minimalna energia, jaką muszą mieć cząsteczki, aby zderzenie było skuteczne (doprowadziło do reakcji). Im niższa Ea, tym szybciej zachodzi reakcja.</span></p>
+  </div>
+
+  <h3>6.1. Czynniki szybkości reakcji</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Czynnik</th><th>Wpływ</th><th>Wyjaśnienie</th></tr></thead>
+      <tbody>
+        <tr><td>Stężenie substratów</td><td>↑ stężenie → ↑ szybkość</td><td>więcej zderzeń</td></tr>
+        <tr><td>Temperatura</td><td>↑ T → ↑ szybkość</td><td>więcej cząsteczek o E ≥ Ea (reguła van't Hoffa: +10°C → 2–4× szybciej)</td></tr>
+        <tr><td>Katalizator</td><td>↑ szybkość</td><td>obniża Ea</td></tr>
+        <tr><td>Powierzchnia kontaktu</td><td>↑ powierzchnia → ↑ szybkość</td><td>więcej miejsc kontaktu (dla ciał stałych)</td></tr>
+        <tr><td>Ciśnienie (gazy)</td><td>↑ ciśnienie → ↑ szybkość</td><td>więcej zderzeń</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SVG: wykres energii -->
+  <div class="diagram">
+    <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wykres energii reakcji">
+      <!-- osie -->
+      <line x1="60" y1="240" x2="560" y2="240" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="60" y1="240" x2="60" y2="30" stroke="#6b7a8d" stroke-width="2"/>
+      <text x="300" y="270" font-size="12" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">postęp reakcji →</text>
+      <text x="30" y="30" font-size="12" fill="#6b7a8d" font-family="Segoe UI">E</text>
+      <!-- substraty -->
+      <line x1="80" y1="180" x2="180" y2="180" stroke="#2b6cb0" stroke-width="3"/>
+      <text x="130" y="170" font-size="12" text-anchor="middle" fill="#2b6cb0" font-family="Segoe UI" font-weight="600">substraty</text>
+      <!-- stan przejściowy -->
+      <path d="M180,180 Q300,40 420,180" stroke="#dc3545" stroke-width="3" fill="none"/>
+      <circle cx="300" cy="90" r="4" fill="#dc3545"/>
+      <text x="300" y="80" font-size="12" text-anchor="middle" fill="#dc3545" font-family="Segoe UI" font-weight="600">stan przejściowy</text>
+      <!-- produkty -->
+      <line x1="420" y1="150" x2="540" y2="150" stroke="#2d8f5e" stroke-width="3"/>
+      <text x="480" y="140" font-size="12" text-anchor="middle" fill="#2d8f5e" font-family="Segoe UI" font-weight="600">produkty</text>
+      <!-- Ea -->
+      <line x1="220" y1="180" x2="220" y2="95" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="230" y="140" font-size="12" fill="#f59e0b" font-family="Segoe UI" font-weight="600">Ea</text>
+      <!-- ΔH -->
+      <line x1="460" y1="180" x2="460" y2="150" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="470" y="170" font-size="12" fill="#7c3aed" font-family="Segoe UI" font-weight="600">ΔH</text>
+      <!-- katalizator -->
+      <path d="M180,180 Q300,110 420,180" stroke="#2d8f5e" stroke-width="2" stroke-dasharray="6 4" fill="none"/>
+      <text x="300" y="135" font-size="11" text-anchor="middle" fill="#2d8f5e" font-family="Segoe UI">z katalizatorem (niższa Ea)</text>
+    </svg>
+    <div class="caption">Wykres energii reakcji. Katalizator obniża energię aktywacji (Ea), ale nie zmienia ΔH ani położenia równowagi.</div>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Reguła van't Hoffa mówi, że wzrost temperatury o 10°C przyspiesza reakcję 2–4 razy. To dlatego jedzenie w lodówce psuje się wolniej, a reakcje w wysokich temperaturach (np. spalanie) zachodzą gwałtownie.
+  </div>
+</section>
+
+<!-- ============================================================
+7. RÓWNOWAGA
+============================================================ -->
+<section class="section" id="rownowaga">
+  <div class="part-heading"><span class="part-num">7. Równowaga chemiczna</span></div>
+
+  <div class="def-box">
+    <p><span class="term">Równowaga chemiczna</span> — <span class="meaning">stan, w którym szybkość reakcji w prawo jest równa szybkości reakcji w lewo, a stężenia wszystkich substancji są stałe (choć reakcje nie ustają — zachodzą w obie strony z tą samą szybkością).</span></p>
+  </div>
+
+  <div class="def-box">
+    <p><span class="term">Stała równowagi (K)</span> — <span class="meaning">iloraz iloczynu stężeń produktów (podniesionych do potęg równych współczynnikom) do iloczynu stężeń substratów. Dla reakcji aA + bB ⇌ cC + dD: K = ([C]^c · [D]^d) / ([A]^a · [B]^b).</span></p>
+  </div>
+
+  <h3>7.1. Reguła Le Chateliera</h3>
+  <div class="card card-remember">
+    <span class="card-label">Zasada przekory</span>
+    <p>Jeśli na układ w równowadze podziałamy czynnikiem zewnętrznym (zmiana stężenia, temperatury, ciśnienia), to układ <strong>przeciwdziała</strong> tej zmianie — przesuwa równowagę w kierunku, który ją minimalizuje.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Zmiana</th><th>Kierunek przesunięcia</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td>↑ stężenie substratu</td><td>w prawo (więcej produktu)</td><td>dodanie N₂ do N₂ + 3H₂ ⇌ 2NH₃</td></tr>
+        <tr><td>↑ temperatura</td><td>w stronę reakcji endotermicznej</td><td>dla egzotermicznej syntezy NH₃ → w lewo</td></tr>
+        <tr><td>↑ ciśnienie (gazy)</td><td>w stronę mniejszej liczby moli gazu</td><td>N₂ + 3H₂ → 2NH₃ (4 mole → 2 mole)</td></tr>
+        <tr><td>katalizator</td><td>nie zmienia położenia K</td><td>tylko przyspiesza osiągnięcie równowagi</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>7.2. Przykład przemysłowy — synteza amoniaku</h3>
+  <div class="card card-gray">
+    <p><strong>N₂ + 3H₂ ⇌ 2NH₃</strong>, ΔH = −92 kJ/mol (egzotermiczna)</p>
+    <ul>
+      <li><strong>Wysokie ciśnienie</strong> sprzyja produktom (mniej moli gazu).</li>
+      <li><strong>Niska temperatura</strong> sprzyja produktom (reakcja egzotermiczna), ale spowalnia reakcję.</li>
+      <li>W praktyce stosuje się <strong>~450°C i katalizator (Fe)</strong>, by uzyskać kompromis między szybkością a wydajnością.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+8. ELEKTROCHEMIA
+============================================================ -->
+<section class="section" id="elektrochemia">
+  <div class="part-heading"><span class="part-num">8. Elektrochemia</span></div>
+
+  <div class="def-box">
+    <p><span class="term">Potencjał standardowy (E°)</span> — <span class="meaning">miara zdolności danego układu redoks do przyjmowania elektronów (czyli do redukcji), mierzona względem elektrody wodorowej (E° = 0,00 V). Im większe E°, tym silniejszy utleniacz.</span></p>
+  </div>
+
+  <h3>8.1. Szereg napięciowy (wybrane)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Układ</th><th>E° [V]</th><th>Rola</th></tr></thead>
+      <tbody>
+        <tr><td>Li⁺/Li</td><td>−3,05</td><td>silny reduktor</td></tr>
+        <tr><td>K⁺/K</td><td>−2,93</td><td></td></tr>
+        <tr><td>Na⁺/Na</td><td>−2,71</td><td></td></tr>
+        <tr><td>Mg²⁺/Mg</td><td>−2,36</td><td></td></tr>
+        <tr><td>Al³⁺/Al</td><td>−1,66</td><td></td></tr>
+        <tr><td>Zn²⁺/Zn</td><td>−0,76</td><td></td></tr>
+        <tr><td>Fe²⁺/Fe</td><td>−0,44</td><td></td></tr>
+        <tr><td>2H⁺/H₂</td><td>0,00</td><td>odniesienie</td></tr>
+        <tr><td>Cu²⁺/Cu</td><td>+0,34</td><td></td></tr>
+        <tr><td>Ag⁺/Ag</td><td>+0,80</td><td></td></tr>
+        <tr><td>Au³⁺/Au</td><td>+1,50</td><td>silny utleniacz</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>8.2. Siła elektromotoryczna (SEM)</h3>
+  <div class="card card-remember">
+    <span class="card-label">Wzór</span>
+    <p style="font-size:1.1rem;font-weight:700;color:#2b6cb0;">SEM = E°(katoda) − E°(anoda)</p>
+    <p>Katoda to elektroda, na której zachodzi redukcja (wyższy potencjał). Anoda — utlenianie (niższy potencjał).</p>
+  </div>
+
+  <!-- SVG: ogniwo Daniella -->
+  <div class="diagram">
+    <svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ogniwo Daniella">
+      <!-- zlewki -->
+      <rect x="60" y="120" width="140" height="130" fill="#f0f6ff" stroke="#2b6cb0" stroke-width="2"/>
+      <rect x="320" y="120" width="140" height="130" fill="#fff5f5" stroke="#dc3545" stroke-width="2"/>
+      <!-- roztwory -->
+      <rect x="60" y="160" width="140" height="90" fill="#dbeafe" opacity="0.6"/>
+      <rect x="320" y="160" width="140" height="90" fill="#fee2e2" opacity="0.6"/>
+      <text x="130" y="200" font-size="13" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">ZnSO₄(aq)</text>
+      <text x="390" y="200" font-size="13" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">CuSO₄(aq)</text>
+      <!-- elektrody -->
+      <rect x="118" y="60" width="24" height="130" fill="#6b7a8d" stroke="#0a2540" stroke-width="2"/>
+      <text x="130" y="55" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="700">Zn (−)</text>
+      <rect x="378" y="60" width="24" height="130" fill="#dc3545" stroke="#0a2540" stroke-width="2"/>
+      <text x="390" y="55" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="700">Cu (+)</text>
+      <!-- przewód -->
+      <line x1="130" y1="60" x2="130" y2="30" stroke="#0a2540" stroke-width="2"/>
+      <line x1="130" y1="30" x2="390" y2="30" stroke="#0a2540" stroke-width="2"/>
+      <line x1="390" y1="30" x2="390" y2="60" stroke="#0a2540" stroke-width="2"/>
+      <!-- woltomierz -->
+      <circle cx="260" cy="30" r="18" fill="#fff" stroke="#0a2540" stroke-width="2"/>
+      <text x="260" y="35" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="700">V</text>
+      <text x="260" y="15" font-size="11" text-anchor="middle" fill="#2b6cb0" font-family="Segoe UI" font-weight="700">1,10 V</text>
+      <!-- most solny -->
+      <path d="M200,180 Q260,150 320,180" stroke="#f59e0b" stroke-width="4" fill="none"/>
+      <text x="260" y="145" font-size="11" text-anchor="middle" fill="#f59e0b" font-family="Segoe UI" font-weight="600">most solny</text>
+      <!-- reakcje -->
+      <text x="130" y="255" font-size="11" text-anchor="middle" fill="#2b6cb0" font-family="Segoe UI">Zn → Zn²⁺ + 2e⁻</text>
+      <text x="130" y="270" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">(utlenianie)</text>
+      <text x="390" y="255" font-size="11" text-anchor="middle" fill="#dc3545" font-family="Segoe UI">Cu²⁺ + 2e⁻ → Cu</text>
+      <text x="390" y="270" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">(redukcja)</text>
+    </svg>
+    <div class="caption">Ogniwo Daniella. Anoda (−) to Zn (utlenianie), katoda (+) to Cu (redukcja). SEM = 0,34 − (−0,76) = 1,10 V.</div>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka</span>
+    Ogniwo Daniella to klasyczny przykład ogniwa galwanicznego. W praktyce stosuje się ogniwa litowo-jonowe (baterie w telefonach) i ogniwa paliwowe (wodór + tlen → prąd + woda). Wszystkie działają na tej samej zasadzie: reakcja redoks rozdzielona na dwa półogniwa.
+  </div>
+</section>
+
+<!-- ============================================================
+ĆWICZENIA
+============================================================ -->
+<section class="section" id="cwiczenia">
+  <div class="part-heading"><span class="part-num">Ćwiczenia</span></div>
+
+  <h3>Poziom podstawowy <span class="level-badge level-basic">podstawowy</span></h3>
+  <div class="exercise">
+    <ol>
+      <li>Zapisz konfigurację elektronową atomów: C, O, Na, Ar.</li>
+      <li>Określ geometrię cząsteczek: CH₄, H₂O, NH₃, CO₂.</li>
+      <li>Określ hybrydyzację atomu centralnego: CH₄, C₂H₄, C₂H₂.</li>
+      <li>Wymień 3 czynniki szybkości reakcji.</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-cw-podst')">Pokaż odpowiedzi</button>
+    <div id="ans-cw-podst" class="answer-content">
+      <ol>
+        <li>C: 1s² 2s² 2p²; O: 1s² 2s² 2p⁴; Na: [Ne] 3s¹; Ar: [Ne] 3s² 3p⁶.</li>
+        <li>CH₄ — tetraedryczna; H₂O — kątowa; NH₃ — piramidalna; CO₂ — liniowa.</li>
+        <li>CH₄ — sp³; C₂H₄ — sp²; C₂H₂ — sp.</li>
+        <li>Stężenie, temperatura, katalizator (także rozdrobnienie, ciśnienie).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Poziom rozszerzony <span class="level-badge level-ambitious">ambitny</span></h3>
+  <div class="exercise">
+    <ol start="5">
+      <li>Zapisz konfigurację skróconą dla K, Ca, Fe.</li>
+      <li>Oblicz SEM ogniwa Zn/Fe (E°Zn = −0,76 V; E°Fe = −0,44 V).</li>
+      <li>Zbilansuj metodą jonowo-elektronową: MnO₄⁻ + Fe²⁺ + H⁺ → Mn²⁺ + Fe³⁺ + H₂O.</li>
+      <li>Wyjaśnij, dlaczego katalizator nie zmienia stałej równowagi K.</li>
+      <li>Oblicz wydajność, jeśli teoretycznie powinno powstać 8 g produktu, a otrzymano 7 g.</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-cw-rozsz')">Pokaż odpowiedzi</button>
+    <div id="ans-cw-rozsz" class="answer-content">
+      <ol>
+        <li>K: [Ar] 4s¹; Ca: [Ar] 4s²; Fe: [Ar] 4s² 3d⁶.</li>
+        <li>SEM = −0,44 − (−0,76) = 0,32 V.</li>
+        <li>MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺.</li>
+        <li>Katalizator obniża Ea zarówno reakcji w prawo, jak i w lewo — nie zmienia energii substratów ani produktów, więc nie zmienia położenia równowagi.</li>
+        <li>W = (7/8)·100% = 87,5%.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+FISZKI
+============================================================ -->
+<section class="section" id="fiszki">
+  <div class="part-heading"><span class="part-num">Fiszki (22)</span></div>
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Konfiguracja H</span><span class="back"><strong>1s¹</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Konfiguracja C</span><span class="back"><strong>1s² 2s² 2p²</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Konfiguracja Na</span><span class="back"><strong>[Ne] 3s¹</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Konfiguracja Ar</span><span class="back"><strong>[Ne] 3s² 3p⁶</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Kolejność Aufbau</span><span class="back"><strong>1s 2s 2p 3s 3p 4s 3d</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Reguła Hunda</span><span class="back"><strong>Pojedynczo przed parowaniem</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Reguła Pauliego</span><span class="back"><strong>2 e⁻ w orbitalu, przeciwne spiny</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Geometria CH₄</span><span class="back"><strong>tetraedryczna</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Geometria H₂O</span><span class="back"><strong>kątowa</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Geometria NH₃</span><span class="back"><strong>piramidalna</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Geometria CO₂</span><span class="back"><strong>liniowa</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Hybrydyzacja CH₄</span><span class="back"><strong>sp³</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Hybrydyzacja C₂H₄</span><span class="back"><strong>sp²</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Hybrydyzacja C₂H₂</span><span class="back"><strong>sp</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Energia aktywacji</span><span class="back"><strong>min. energia reakcji</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Katalizator</span><span class="back"><strong>obniża Ea, nie zmienia K</strong></span><span class="card-tag tag-trap">pułapka</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Reguła van't Hoffa</span><span class="back"><strong>+10°C → 2–4× szybciej</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Le Chatelier</span><span class="back"><strong>układ przeciwdziała zmianom</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">SEM ogniwa</span><span class="back"><strong>E°(katoda) − E°(anoda)</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">E° Zn²⁺/Zn</span><span class="back"><strong>−0,76 V</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">E° Cu²⁺/Cu</span><span class="back"><strong>+0,34 V</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Wyjątek Cr</span><span class="back"><strong>[Ar] 4s¹ 3d⁵</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+  </div>
+</section>
+
+<!-- ============================================================
+TEST KOŃCOWY
+============================================================ -->
+<section class="section" id="test-koncowy">
+  <div class="part-heading"><span class="part-num">Test końcowy</span></div>
+  <div class="exercise">
+    <ol>
+      <li>Zapisz konfigurację elektronową dla C, O, Na, Ar.</li>
+      <li>Określ geometrię i hybrydyzację: CH₄, H₂O, NH₃.</li>
+      <li>Wymień 3 czynniki szybkości reakcji.</li>
+      <li>Zbilansuj: MnO₄⁻ + Fe²⁺ + H⁺ → …</li>
+      <li>Oblicz SEM ogniwa Zn/Cu.</li>
+      <li>Co to reguła Le Chateliera?</li>
+      <li>(extra) Dlaczego 4s zapełnia się przed 3d?</li>
+      <li>(extra) Co to energia aktywacji?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-test')">Pokaż odpowiedzi</button>
+    <div id="ans-test" class="answer-content">
+      <ol>
+        <li>C: 1s² 2s² 2p²; O: 1s² 2s² 2p⁴; Na: [Ne] 3s¹; Ar: [Ne] 3s² 3p⁶.</li>
+        <li>CH₄ — tetraedryczna, sp³; H₂O — kątowa, sp³; NH₃ — piramidalna, sp³.</li>
+        <li>Stężenie, temperatura, katalizator.</li>
+        <li>MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺.</li>
+        <li>SEM = 0,34 − (−0,76) = 1,10 V.</li>
+        <li>Układ w równowadze przeciwdziała zmianom zewnętrznym.</li>
+        <li>4s ma niższą energię niż 3d dla pierwszych 20 pierwiastków — elektrony zapełniają najpierw niższe energetycznie orbitale.</li>
+        <li>Minimalna energia, jaką muszą mieć cząsteczki, aby zderzenie było skuteczne.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+SŁOWNIK + CIEKAWOSTKI
+============================================================ -->
+<section class="section" id="slownik">
+  <div class="part-heading"><span class="part-num">Słownik i ciekawostki</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pojęcie</th><th>Definicja</th></tr></thead>
+      <tbody>
+        <tr><td>Orbital</td><td>Obszar przestrzeni, gdzie prawdopodobieństwo znalezienia elektronu jest największe.</td></tr>
+        <tr><td>Podpowłoka</td><td>Zbiór orbitali o tej samej energii (s, p, d, f).</td></tr>
+        <tr><td>VSEPR</td><td>Teoria odpychania par elektronowych — przewiduje geometrię cząsteczki.</td></tr>
+        <tr><td>Hybrydyzacja</td><td>Mieszanie orbitali atomowych w równoważne orbitale hybrydowe.</td></tr>
+        <tr><td>Energia aktywacji</td><td>Minimalna energia potrzebna do zapoczątkowania reakcji.</td></tr>
+        <tr><td>Katalizator</td><td>Substancja obniżająca Ea, niezmieniająca K.</td></tr>
+        <tr><td>Stała równowagi K</td><td>Iloraz stężeń produktów i substratów w stanie równowagi.</td></tr>
+        <tr><td>Reguła Le Chateliera</td><td>Układ w równowadze przeciwdziała zmianom zewnętrznym.</td></tr>
+        <tr><td>Potencjał standardowy E°</td><td>Miara zdolności do przyjmowania elektronów (redukcji).</td></tr>
+        <tr><td>SEM</td><td>Siła elektromotoryczna ogniwa: E°(katoda) − E°(anoda).</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="curiosity">
+    <span class="label">Ciekawostka 1</span>
+    Elektron nie „krąży" wokół jądra jak planeta. To chmura prawdopodobieństwa. Model Bohra (orbity) to uproszczenie — w rzeczywistości mówimy o orbitalach.
+  </div>
+  <div class="curiosity">
+    <span class="label">Ciekawostka 2</span>
+    Liczba Avogadra (6,02·10²³) jest tak ogromna, że gdybyś liczył cząsteczki po jednej na sekundę, policzenie jednego mola zajęłoby Ci około 20 miliardów lat — więcej niż wiek Wszechświata.
+  </div>
+  <div class="curiosity">
+    <span class="label">Ciekawostka 3</span>
+    W ogniwie paliwowym wodór i tlen łączą się w wodę, dając prąd elektryczny — bez spalania. To najbardziej „czysta" metoda pozyskiwania energii z wodoru.
+  </div>
+</section>
+
+
+<section class="section" id="plus-md">
+<div class="part-heading"><span class="part-num">PLUS z MD</span> — extra, nie start roku</div>
+<div class="card card-remember"><span class="card-label">Pozycja w roku</span>
+<p>To L013 extra po L001–L012, nie lekcja 1. Orbitale, VSEPR, redoks jonowo-elektronowy, Le Chatelier, SEM — warstwa ambitna/zaawansowana.</p></div>
+<div class="card card-hint"><span class="card-label">Most do L001</span>
+<p>Powłoki K, L, M w szkole = n = 1, 2, 3. Konfiguracja jonów: najpierw zdejmuj elektrony z podpowłoki o najwyższym n (4s przed 3d u jonów metali 4 okresu — extra).</p></div>
+</section>
+
+<footer class="footer">
+  <p><strong>CHEMIA L013 EXTRA</strong> · po L012 · most z L001 · nie materiał startowy E8 · 2026</p>
+  <p style="font-size:0.78rem;opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+</footer>
+
+</div>
+
+<script>
+// ---------- LOCAL STORAGE ----------
+function toggleAnswer(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle('show');
+  const btn=document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+  if(btn)btn.textContent=el.classList.contains('show')?'Ukryj odpowiedzi':'Pokaż odpowiedzi';
+}
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+
+</script>
+</body>
+</html>

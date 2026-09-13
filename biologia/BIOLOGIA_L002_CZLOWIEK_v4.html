@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Biologia L002 — Człowiek: krew, gamety, płeć i cechy organizmu (v7.0)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+/* =========================================================
+   BAZA
+   ========================================================= */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;
+  background:linear-gradient(135deg,#f5f7fa 0%,#e8eefc 100%);
+  color:#1e293b;line-height:1.7;
+  padding:16px 16px 90px;min-height:100vh;
+}
+.container{max-width:1100px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px 6px 90px;}}
+
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+code{background:#0a2540;color:#fff;padding:1px 6px;border-radius:4px;font-family:'Courier New',monospace;font-size:0.88em;}
+
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-new:#059669;--color-new-bg:#ecfdf5;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+  --viz-common:#2b6cb0;
+  --viz-blood:#dc2626;
+  --viz-gamete:#7c3aed;
+  --viz-info:#0891b2;
+  --viz-absent:#94a3b8;
+}
+
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card-new{background:var(--color-new-bg);border-left:5px solid var(--color-new);border-color:var(--color-new);}
+.card-new .card-label{color:var(--color-new);}
+.card-exam{background:var(--color-exam-bg);border-left:5px solid var(--color-exam);border-color:var(--color-exam);}
+.card-exam .card-label{color:var(--color-exam);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+.card-optional{background:#f8fafc;border:1px dashed #94a3b8;border-left:5px solid #94a3b8;}
+.card-optional .card-label{color:#64748b;font-style:italic;}
+.card-meaning{background:#f0f9ff;border-left:5px solid #0891b2;border-color:#0891b2;border-radius:12px;padding:10px 16px;margin:8px 0;font-size:0.88rem;}
+.card-meaning .card-label{color:#0891b2;}
+.card-boundary{background:#fef2f2;border:1.5px dashed #dc2626;border-left:5px solid #dc2626;border-radius:12px;padding:12px 18px;margin:12px 0;font-size:0.9rem;}
+.card-boundary .card-label{color:#991b1b;}
+.card-language{background:#f0fdfa;border-left:5px solid #14b8a6;border-color:#14b8a6;border-radius:12px;padding:12px 18px;margin:12px 0;}
+.card-language .card-label{color:#0f766e;}
+
+.minimum-card{
+  background:linear-gradient(135deg,#fff7ed 0%,#fef3c7 100%);
+  border:2px solid #d97706;border-radius:16px;
+  padding:20px 24px;margin:20px 0;
+  box-shadow:0 4px 16px rgba(217,119,6,0.12);
+}
+.minimum-card h3{margin:0 0 12px;color:#78350f;font-size:1.15rem;}
+.minimum-card ol{margin:0;padding-left:22px;}
+.minimum-card li{margin-bottom:10px;font-size:0.98rem;line-height:1.55;}
+.minimum-card li strong{color:#78350f;}
+
+.layer-legend{
+  background:#fff;border:1px solid var(--color-border);border-radius:12px;
+  padding:12px 16px;margin:12px 0;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 16px;
+}
+.layer-legend .layer-row{display:flex;gap:8px;align-items:center;font-size:0.82rem;}
+.layer-legend .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:#2d8f5e;}
+.layer-legend .dot.understand{background:#2b6cb0;}
+.layer-legend .dot.extra{background:#7c3aed;}
+.layer-legend .dot.contest{background:#b45309;}
+
+.viz-legend{background:#fff;border:1px solid var(--color-border);border-radius:12px;padding:12px 16px;margin:12px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px 16px;}
+.viz-legend-item{display:flex;gap:8px;align-items:center;font-size:0.8rem;}
+.viz-swatch{width:14px;height:14px;border-radius:4px;flex-shrink:0;}
+.viz-swatch.common{background:var(--viz-common);}
+.viz-swatch.blood{background:var(--viz-blood);}
+.viz-swatch.gamete{background:var(--viz-gamete);}
+.viz-swatch.info{background:var(--viz-info);}
+.viz-swatch.absent{background:var(--viz-absent);}
+
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-exam{background:#ffe8cc;color:#8a6d3b;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.level-new{background:#a7f3d0;color:#065f46;}
+.level-optional{background:#e2e8f0;color:#475569;font-style:italic;}
+
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;vertical-align:top;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+.table-wrap .error-row{background:#fef2f2;}
+.table-wrap .correct-row{background:#f0faf4;}
+
+details.answer{background:var(--color-training-bg);border-left:3px solid var(--color-training);border-radius:6px;padding:8px 12px;margin-top:6px;}
+details.answer summary{cursor:pointer;font-weight:600;color:var(--color-training);font-size:0.9rem;padding:2px 0;list-style:none;}
+details.answer summary::marker{content:"";}
+details.answer summary::before{content:"\25B6 ";font-size:0.7rem;display:inline-block;transition:transform 0.2s;}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer > *:not(summary){margin-top:8px;}
+details.answer .ans-part{display:block;margin-bottom:6px;}
+details.answer .ans-part b{color:#1e4a7a;}
+
+details.foldout{background:#f8fafc;border:1px dashed #94a3b8;border-radius:12px;padding:0;margin:12px 0;}
+details.foldout > summary{cursor:pointer;font-weight:600;color:#475569;font-size:0.9rem;padding:12px 16px;list-style:none;display:flex;align-items:center;gap:6px;}
+details.foldout > summary::marker{content:"";}
+details.foldout > summary::before{content:"\25B6 ";font-size:0.7rem;transition:transform 0.2s;display:inline-block;}
+details.foldout[open] > summary::before{transform:rotate(90deg);}
+details.foldout > summary:hover{background:#f1f5f9;}
+details.foldout > *:not(summary){padding:0 16px 12px 16px;}
+details.foldout .foldout-note{font-size:0.78rem;color:#64748b;font-style:italic;margin-left:8px;font-weight:400;}
+
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+.exercise.exam{background:var(--color-exam-bg);border:1px solid #f0d090;}
+
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+
+.mode-bar{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 20px;padding:10px 14px;background:#fff;border:1px solid var(--color-border);border-radius:12px;}
+.mode-btn{padding:6px 14px;border:1px solid var(--color-border);border-radius:8px;background:#fff;font-family:inherit;font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.15s;color:#475569;}
+.mode-btn:hover{background:#f1f5f9;}
+.mode-btn.active{background:#0a2540;color:#fff;border-color:#0a2540;}
+body.mode-e8 .mode-further{display:none!important;}
+body.mode-e8 .mode-understand{display:none!important;}
+body.mode-understand .mode-further{display:none!important;}
+
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"\25B6";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+
+.section{margin-bottom:8px;}
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+
+/* Ścieżka postępu (spine) */
+.spine{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:0.75rem;padding:10px 14px;background:#f8fafc;border:1px solid var(--color-border);border-radius:10px;margin:8px 0 14px;}
+.spine .node{padding:3px 10px;border-radius:20px;background:#fff;border:1px solid var(--color-border);color:#64748b;font-weight:600;}
+.spine .node.done{background:#dcfce7;border-color:#86efac;color:#166534;}
+.spine .node.current{background:#0a2540;border-color:#0a2540;color:#fff;}
+.spine .arrow{color:#94a3b8;font-weight:700;}
+
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:140px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:100px;}
+.flashcard .front{font-weight:600;font-size:0.95rem;line-height:1.4;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.9rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+.flashcard .card-tag.tag-exam{background:#ffe8cc;color:#8a6d3b;}
+
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+
+.diagram{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:16px 0;text-align:center;overflow-x:auto;}
+.diagram svg{max-width:100%;height:auto;display:block;margin:0 auto;}
+.diagram .caption{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:8px;}
+
+.step-flow{background:#0a2540;color:#fff;padding:12px 16px;border-radius:8px;font-family:'Courier New',monospace;font-size:0.9rem;line-height:1.7;margin:8px 0;overflow-x:auto;white-space:pre;}
+
+.core-path{background:linear-gradient(180deg,#f0faf4 0%,#e5f5ea 100%);border:2px solid var(--color-basic);border-radius:14px;padding:16px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:700;color:#14532d;font-size:1.1rem;margin-bottom:10px;}
+.core-path ol{margin-bottom:0;}
+
+.mini-note{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:6px;}
+.rule-box{background:#eef4fb;border:1px solid #b9d3ee;border-radius:10px;padding:12px 16px;margin:12px 0;font-size:0.9rem;}
+.rule-box b{color:#1e4a7a;}
+
+/* Tabela: co wolno / czego nie wolno */
+.boundary-table{width:100%;border-collapse:collapse;font-size:0.86rem;margin:10px 0;}
+.boundary-table th,.boundary-table td{padding:8px 10px;text-align:left;border-bottom:1px solid #edf2f7;vertical-align:top;}
+.boundary-table th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;}
+.boundary-table td.no{background:#fef2f2;color:#991b1b;}
+.boundary-table td.yes{background:#f0faf4;color:#14532d;}
+
+/* Karta "model vs rzeczywistość" */
+.model-card{background:#fff;border:2px solid #94a3b8;border-radius:14px;padding:16px 20px;margin:16px 0;}
+.model-card h4{margin:0 0 8px;font-size:1rem;color:#0a2540;}
+.model-card .m-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;}
+@media(max-width:640px){.model-card .m-row{grid-template-columns:1fr;}}
+.model-card .m-col{padding:12px 14px;border-radius:10px;font-size:0.86rem;}
+.model-card .m-col.school{background:#f0f6ff;border-left:4px solid #2b6cb0;}
+.model-card .m-col.real{background:#fffbeb;border-left:4px solid #d97706;}
+.model-card .m-col .m-title{font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.3px;display:block;margin-bottom:6px;}
+.model-card .m-col.school .m-title{color:#1e4a7a;}
+.model-card .m-col.real .m-title{color:#78350f;}
+
+/* Widget ABO — nowa wersja z kartą "paszport krwinki" */
+.abo-widget{background:#fff;border:2px solid #b45309;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.abo-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.abo-widget .ab-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.abo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:14px;}
+.abo-card{padding:12px;border-radius:10px;background:#fffbeb;border:2px solid #fcd34d;cursor:pointer;text-align:center;transition:all 0.15s;font-family:inherit;}
+.abo-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(180,83,9,0.15);}
+.abo-card.active{border-color:#b45309;background:#fef3c7;box-shadow:0 4px 12px rgba(180,83,9,0.25);}
+.abo-card .abo-name{font-size:1.4rem;font-weight:700;color:#78350f;line-height:1.2;}
+.abo-card .abo-geno{font-size:0.8rem;color:#92400e;font-weight:600;font-family:'Courier New',monospace;}
+.abo-desc{background:#fffbeb;border-left:4px solid #b45309;border-radius:10px;padding:12px 16px;font-size:0.9rem;min-height:80px;}
+.abo-desc b{color:#78350f;}
+.abo-warning{background:#fef2f2;border-left:4px solid #dc2626;border-radius:8px;padding:8px 12px;font-size:0.82rem;color:#991b1b;margin-top:10px;}
+
+/* Widget XX/XY */
+.sex-widget{background:#fff;border:2px solid #0891b2;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.sex-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.sex-widget .sx-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.sex-buttons{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.sex-btn{padding:6px 14px;border:1px solid var(--color-border);border-radius:20px;background:#fff;font-family:inherit;font-size:0.8rem;font-weight:600;cursor:pointer;color:#334155;transition:all 0.15s;}
+.sex-btn.active{background:#0891b2;color:#fff;border-color:#0891b2;}
+.sex-view{background:#ecfeff;border:1px solid #a5f3fc;border-radius:10px;padding:14px;margin-bottom:10px;}
+.sex-view svg{display:block;margin:0 auto;max-width:100%;height:auto;}
+.sex-desc{background:#ecfeff;border-left:4px solid #0891b2;border-radius:10px;padding:12px 16px;font-size:0.9rem;min-height:60px;}
+.sex-desc b{color:#155e75;}
+
+/* Widget: krew jako źródło danych */
+.blood-widget{background:#fff;border:2px solid #dc2626;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.blood-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.blood-widget .bw-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.blood-buttons{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.blood-btn{padding:6px 14px;border:1px solid var(--color-border);border-radius:20px;background:#fff;font-family:inherit;font-size:0.8rem;font-weight:600;cursor:pointer;color:#334155;transition:all 0.15s;}
+.blood-btn.active{background:#dc2626;color:#fff;border-color:#dc2626;}
+.blood-view{background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:14px;margin-bottom:10px;}
+.blood-view svg{display:block;margin:0 auto;max-width:100%;height:auto;}
+.blood-desc{background:#fef2f2;border-left:4px solid #dc2626;border-radius:10px;padding:12px 16px;font-size:0.9rem;min-height:60px;}
+.blood-desc b{color:#991b1b;}
+
+/* Widget: gameta → zygota */
+.gamete-widget{background:#fff;border:2px solid #7c3aed;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.gamete-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.gamete-widget .gw-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.gamete-view{background:#faf5ff;border:1px solid #e9d5ff;border-radius:10px;padding:14px;margin-bottom:10px;}
+.gamete-view svg{display:block;margin:0 auto;max-width:100%;height:auto;}
+.gamete-desc{background:#faf5ff;border-left:4px solid #7c3aed;border-radius:10px;padding:12px 16px;font-size:0.9rem;min-height:60px;}
+.gamete-desc b{color:#5b21b6;}
+
+.sticky-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(10,37,64,0.94);color:#fff;padding:8px 12px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;z-index:100;box-shadow:0 -4px 12px rgba(0,0,0,0.15);backdrop-filter:blur(6px);}
+.sticky-nav a{color:#fff;font-size:0.75rem;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,0.1);text-decoration:none;font-weight:500;}
+.sticky-nav a:hover{background:rgba(255,255,255,0.25);}
+@media(max-width:600px){.sticky-nav a{font-size:0.68rem;padding:3px 7px;}}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}
+}
+:focus-visible{outline:3px solid #fbbf24;outline-offset:2px;border-radius:6px;}
+</style>
+</head>
+<body class="mode-understand">
+
+<div class="container" id="app">
+
+<!-- ================= TOP PANEL ================= -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L002 — Człowiek: krew, gamety, płeć i cechy organizmu</div>
+      <div class="subtitle">Powtórka z biologii człowieka, która prowadzi do genetyki: krew, gamety, chromosomy i dziedziczenie</div>
+      <div class="lesson-info">
+        Poprzednia: L001 (komórka) · Następna: L003 (diagnoza startowa)<br>
+        <strong style="color:var(--color-new)">Wersja 7.0</strong> — korekta merytoryczna i redakcyjna po recenzji:
+        HLA ≠ ABO/Rh, „typowa komórka somatyczna" zamiast „każda", RhD zamiast Rh przy antygenie D,
+        ostrożniejsze sformułowania o konflikcie Rh i transfuzji, nowe sekcje
+        „Co wynika, a czego nie wolno wnioskować?" i „Język precyzyjnego biologa",
+        materiały nadprogramowe w zwijanych ramkach. Rozwija i porządkuje treść v6.0.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= EKRAN STARTOWY E8 ================= -->
+<div class="minimum-card" id="minimum-e8-start" style="background:linear-gradient(135deg,#eef4fb 0%,#dbeafe 100%);border-color:#2b6cb0;">
+  <h3 style="color:#1e4a7a;">Muszę umieć na E8 — 5 zdań</h3>
+  <ol style="font-size:1.0rem;line-height:1.7;">
+    <li><strong>Typowa komórka somatyczna człowieka ma 46 chromosomów (2n), a gameta 23 (n).</strong></li>
+    <li><strong>Zygota po zapłodnieniu ma znów 46 chromosomów (2n = 23 + 23).</strong></li>
+    <li><strong>W typowym szkolnym modelu plemnik wnosi chromosom X albo Y; komórka jajowa zawsze X.</strong></li>
+    <li><strong>Grupy krwi ABO (A, B, AB, 0) są dziedziczone; grupa 0 wynika z genotypu ii.</strong></li>
+    <li><strong>Krew to tkanka płynna, nie narząd; dojrzały erytrocyt człowieka i większości ssaków nie ma jądra ani organelli.</strong></li>
+  </ol>
+  <p style="margin-top:12px;color:#1e4a7a;font-size:0.9rem;"><strong>Dopiero gdy te zdania są jasne — przejdź do sekcji 5 i 6.</strong> Potem możesz wrócić do krwi, HLA i konfliktu Rh.</p>
+</div>
+
+<!-- ================= LEGENDA WARSTW ================= -->
+<div class="layer-legend" aria-label="Legenda poziomów materiału">
+  <div class="layer-row"><span class="dot e8"></span><span><b>E8 — obowiązkowo:</b> 2n/n, gameta/zygota, XX/XY, ABO, Rh, krew jako tkanka</span></div>
+  <div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> skąd się bierze cecha organizmu, układy istotne dla genetyki</span></div>
+  <div class="layer-row"><span class="dot extra"></span><span><b>Idę dalej:</b> HLA, przeszczepy, inne układy grupowe (Kell, Duffy, Kidd)</span></div>
+  <div class="layer-row"><span class="dot contest"></span><span><b>Zaawansowane:</b> mtDNA, epigenetyka, szczegóły transfuzjologii</span></div>
+</div>
+
+<!-- ================= WIZUALNA LEGENDA KOLORÓW ================= -->
+<div class="viz-legend" aria-label="Legenda kolorów używanych w wizualizacjach">
+  <div class="viz-legend-item"><span class="viz-swatch common"></span><span><b>Granat</b> — organizm, komórki somatyczne, tło</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch blood"></span><span><b>Czerwony</b> — krew, erytrocyty, grupy krwi</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch gamete"></span><span><b>Fiolet</b> — gamety, mejoza, chromosomy płci</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch info"></span><span><b>Cyan</b> — informacja genetyczna (DNA, allele)</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch absent"></span><span><b>Szarość</b> — brak elementu, wyjątek, „nie myl"</span></div>
+</div>
+
+<!-- ================= MODE FILTER ================= -->
+<div class="mode-bar">
+  <button class="mode-btn" data-mode="e8">Muszę umieć na E8</button>
+  <button class="mode-btn active" data-mode="understand">Chcę zrozumieć</button>
+  <button class="mode-btn" data-mode="further">Idę dalej</button>
+</div>
+
+<!-- ================= RDZEŃ LEKCJI ================= -->
+<div class="core-path">
+  <div class="cp-title">Rdzeń lekcji — najpierw to</div>
+  <ol>
+    <li><strong>Sekcja 5.1–5.3</strong> — definicja mostu, cztery układy, trzy liczby (46 / 23 / 46).</li>
+    <li><strong>Sekcja 5.5</strong> — płeć XX/XY i rola plemnika w typowym modelu szkolnym.</li>
+    <li><strong>Sekcja 6.8</strong> — przykład prowadzony: matka 0 / ojciec A.</li>
+    <li><strong>Sekcja 12</strong> — Klinika błędów (2n vs n, plemnik, grupa 0 = ii).</li>
+    <li><strong>Sekcja 14A i 17</strong> — mini-check i test końcowy.</li>
+  </ol>
+</div>
+
+<!-- ================= TOC ================= -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+
+  <details class="toc-item" open>
+    <summary class="toc-summary">0. Wprowadzenie + historia grup krwi (zwijana)</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wprowadzenie">Wprowadzenie</a>
+      <a class="toc-anchor" href="#historia">Historia (zwijana)</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">1–4. Pytanie, cele, kompas, problem</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#pytanie">Pytanie</a>
+      <a class="toc-anchor" href="#cele">Cele + 80/20</a>
+      <a class="toc-anchor" href="#kompas">Kompas</a>
+      <a class="toc-anchor" href="#problem">Zacznij od problemu</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">5. Ściąga — most do genetyki</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#sciaga">Ściąga</a>
+      <a class="toc-anchor" href="#uklady">Cztery układy</a>
+      <a class="toc-anchor" href="#liczby">Trzy liczby</a>
+      <a class="toc-anchor" href="#krew">Krew</a>
+      <a class="toc-anchor" href="#plec">Płeć</a>
+      <a class="toc-anchor" href="#mnemotechniki">Mnemotechniki</a>
+      <a class="toc-anchor" href="#model-vs-rzeczywistosc">Model szkolny vs rzeczywistość</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">6. Wyjaśnienie od podstaw (z widgetami)</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wyjasnienie">Analogia miasta</a>
+      <a class="toc-anchor" href="#blood-widget">Widget: krew jako źródło danych</a>
+      <a class="toc-anchor" href="#gamete-widget">Widget: gameta → zygota</a>
+      <a class="toc-anchor" href="#sex-widget">Widget: XX/XY</a>
+      <a class="toc-anchor" href="#abo-widget">Widget: ABO</a>
+      <a class="toc-anchor" href="#przyklad">Przykład prowadzony</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">7. Krew — anatomia i antygeny</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#krew-sklad">Skład krwi</a>
+      <a class="toc-anchor" href="#antygeny">Antygeny i zgodność</a>
+      <a class="toc-anchor" href="#transfuzja">Transfuzja — model szkolny</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">8. Gamety, zygota i płeć</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#gamety">Gamety i zygota</a>
+      <a class="toc-anchor" href="#plec-dziedziczenie">Dziedziczenie płci</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">9. Co wynika, a czego nie wolno wnioskować? (NOWA)</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wnioskowanie">Granice wnioskowania</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">10. Język precyzyjnego biologa (NOWA)</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#jezyk">Poprawne sformułowania</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">11–13. Ciało a komórki · ambitny · zaawansowany</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#cialo-komorki">Ciało a komórki</a>
+      <a class="toc-anchor" href="#ambitny">Idę dalej</a>
+      <a class="toc-anchor" href="#zaawansowany">Zaawansowane</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">14. Klinika błędów</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#klinika">Klinika + Klinika 2.0</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">15–20. Obserwacja, ćwiczenia, egzamin, fiszki, test, checklista</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#obserwacja">Obserwacja</a>
+      <a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a>
+      <a class="toc-anchor" href="#quiz">Quiz „dowód, nie zgadywanie"</a>
+      <a class="toc-anchor" href="#egzamin">Zadania egzaminacyjne</a>
+      <a class="toc-anchor" href="#fiszki">Fiszki</a>
+      <a class="toc-anchor" href="#test">Test końcowy</a>
+      <a class="toc-anchor" href="#checklista">Checklista</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">21–27. Mapa, co dalej, słownik, dodatek, życie, jak się uczyć, status</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#mapa">Mapa pojęć</a>
+      <a class="toc-anchor" href="#dalej">Co dalej</a>
+      <a class="toc-anchor" href="#slownik">Słownik</a>
+      <a class="toc-anchor" href="#dodatek">Dodatek (zwijany)</a>
+      <a class="toc-anchor" href="#zycie">Z życia</a>
+      <a class="toc-anchor" href="#jak-sie-uczyc">Jak się uczyć</a>
+      <a class="toc-anchor" href="#status">Status</a>
+    </nav>
+  </details>
+
+  <div class="toc-keywords"><span>krew · erytrocyty · grupy ABO · RhD · HLA · gameta · zygota · 2n = 46 · n = 23 · XX/XY · konflikt RhD</span></div>
+</div>
+
+<!-- ================= 0. WPROWADZENIE ================= -->
+<section class="section" id="wprowadzenie">
+  <div class="part-heading"><span class="part-num">0. Wprowadzenie</span></div>
+
+  <div class="spine" aria-label="Gdzie jesteś w lekcji">
+    <span class="node current">Wprowadzenie</span>
+    <span class="arrow">→</span>
+    <span class="node">Krew</span>
+    <span class="arrow">→</span>
+    <span class="node">Gamety</span>
+    <span class="arrow">→</span>
+    <span class="node">Zygota</span>
+    <span class="arrow">→</span>
+    <span class="node">Dziedziczenie</span>
+  </div>
+
+  <div class="card card-new">
+    <span class="card-label">O co tu właściwie chodzi?</span>
+    <p>W lekcji L001 poznałeś komórkę — podstawowy „klocek" życia. Teraz czas na <strong>organizm złożony z komórek</strong> — i to jest właśnie <strong>człowiek</strong>.</p>
+    <p>Ale to nie jest lekcja całej anatomii. To lekcja <strong>mostów</strong> — punktów, w których wiedza o biologii człowieka łączy się z genetyką, którą będziemy zgłębiać od L010:</p>
+    <ol>
+      <li><strong>Krew i grupy krwi</strong> — antygeny są dziedziczone. To pomost do L019 (grupy ABO i Rh).</li>
+      <li><strong>Gamety i zygota</strong> — komórki rozrodcze mają n = 23 chromosomy, zygota 2n = 46. To pomost do L015 (mejoza).</li>
+      <li><strong>Płeć XX/XY</strong> — chromosomy płci. To pomost do L018 (cechy sprzężone z X).</li>
+      <li><strong>Każda cecha organizmu</strong> bierze się z komórek i genów. To pomost do L010 (dziedziczenie i zmienność).</li>
+    </ol>
+    <p>Nie musisz pamiętać wszystkich układów człowieka — wystarczy wiedzieć, <strong>gdzie genetyka styka się z ciałem człowieka</strong>.</p>
+  </div>
+
+  <div class="card card-meaning">
+    <span class="card-label">Co to naprawdę znaczy?</span>
+    <p>„Krew to tkanka" — to nie tylko szkolny szczegół. To wyjaśnia, dlaczego krew ma <strong>wiele typów komórek</strong> (erytrocyty, leukocyty, płytki) i dlaczego <strong>leukocyty</strong> (a nie erytrocyty) są źródłem DNA do badań. Dojrzały erytrocyt człowieka i większości ssaków traci jądro oraz organelle — więc nie ma w nim ani jądrowego DNA, ani mtDNA.</p>
+  </div>
+
+  <h3>Dlaczego zaczynamy od człowieka?</h3>
+  <div class="card card-hint">
+    <p>Bo żeby zrozumieć <strong>genetykę</strong>, trzeba wiedzieć:</p>
+    <ol>
+      <li><strong>Ile chromosomów ma typowa komórka ciała (46), a ile gameta (23)</strong> — to fundament liczb w całym dziale genetyki.</li>
+      <li><strong>Jak dziedziczy się płeć</strong> — bo to wyjaśnia, dlaczego syn nie dostaje X od ojca.</li>
+      <li><strong>Dlaczego krew ma grupy</strong> — bo to pierwszy przykład dziedziczenia wielu alleli (Iᴬ, Iᴮ, i) i kodominacji.</li>
+    </ol>
+    <p>Ten pierwszy punkt jest pomostem do <strong>L015 — Jak powstają gamety?</strong>.</p>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Kluczowa myśl</span>
+    <p>Ta lekcja nie uczy anatomii — <strong>ustawia pomost</strong> między ciałem człowieka a genetyką.</p>
+  </div>
+
+  <h3>Dlaczego to ma znaczenie?</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Dziedzina</th><th>Zastosowanie</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Medycyna</strong></td><td>transfuzje krwi, przeszczepy, konflikt RhD</td></tr>
+        <tr><td><strong>Genetyka</strong></td><td>grupy krwi jako cecha dziedziczna, krew jako jedno ze źródeł DNA</td></tr>
+        <tr><td><strong>Kryminalistyka</strong></td><td>identyfikacja na podstawie śladów biologicznych</td></tr>
+        <tr><td><strong>Rozrodczość</strong></td><td>gdzie powstają gamety, jak dziedziczy się płeć</td></tr>
+        <tr><td><strong>Poradnictwo genetyczne</strong></td><td>ryzyko chorób w rodzinie</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 0.2 HISTORIA (zwijana) ================= -->
+<section class="section" id="historia">
+  <div class="part-heading"><span class="part-num">0.2</span> Historia odkrycia grup krwi <span class="level-badge level-ambitious">IDĘ DALEJ</span></div>
+
+  <details class="foldout">
+    <summary>Pokaż oś czasu — od transfuzji do układu ABO <span class="foldout-note">(materiał nadprogramowy, zwijany)</span></summary>
+    <p>Skąd wiemy to, co wiemy o krwi? Poznanie grup krwi to historia odkryć, które uratowały miliony istnień.</p>
+
+    <div class="timeline-widget" id="timelineWidget" style="border:2px solid #dc2626;border-radius:16px;padding:20px 22px;margin:14px 0;background:#fff;">
+      <h4 style="margin:0 0 6px;color:#0a2540;font-size:1.05rem;">Oś czasu</h4>
+      <p style="font-size:0.82rem;color:#64748b;margin-bottom:16px;">Kliknij punkt na osi, aby zobaczyć opis odkrycia.</p>
+
+      <div class="timeline-axis" id="timelineAxis" role="tablist" aria-label="Oś czasu odkrycia grup krwi" style="position:relative;padding:20px 0 10px;display:flex;justify-content:space-between;gap:4px;overflow-x:auto;">
+        <button class="timeline-point active" data-tl="1628" role="tab" aria-selected="true" style="position:relative;z-index:1;flex-shrink:0;display:flex;flex-direction:column;align-items:center;min-width:90px;cursor:pointer;background:transparent;border:0;font:inherit;padding:0;">
+          <span style="font-size:0.72rem;font-weight:700;color:#475569;margin-bottom:8px;">1628</span>
+          <span style="width:16px;height:16px;border-radius:50%;background:#0a2540;border:3px solid #0a2540;"></span>
+          <span style="font-size:0.7rem;color:#0a2540;font-weight:700;margin-top:6px;text-align:center;max-width:90px;line-height:1.3;">Harvey</span>
+        </button>
+        <button class="timeline-point" data-tl="1665" role="tab" aria-selected="false" style="position:relative;z-index:1;flex-shrink:0;display:flex;flex-direction:column;align-items:center;min-width:90px;cursor:pointer;background:transparent;border:0;font:inherit;padding:0;">
+          <span style="font-size:0.72rem;font-weight:700;color:#475569;margin-bottom:8px;">1665–1667</span>
+          <span style="width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #dc2626;"></span>
+          <span style="font-size:0.7rem;color:#64748b;margin-top:6px;text-align:center;max-width:90px;line-height:1.3;">pierwsze transfuzje</span>
+        </button>
+        <button class="timeline-point" data-tl="1901" role="tab" aria-selected="false" style="position:relative;z-index:1;flex-shrink:0;display:flex;flex-direction:column;align-items:center;min-width:90px;cursor:pointer;background:transparent;border:0;font:inherit;padding:0;">
+          <span style="font-size:0.72rem;font-weight:700;color:#475569;margin-bottom:8px;">1901</span>
+          <span style="width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #dc2626;"></span>
+          <span style="font-size:0.7rem;color:#64748b;margin-top:6px;text-align:center;max-width:90px;line-height:1.3;">Landsteiner</span>
+        </button>
+        <button class="timeline-point" data-tl="1937" role="tab" aria-selected="false" style="position:relative;z-index:1;flex-shrink:0;display:flex;flex-direction:column;align-items:center;min-width:90px;cursor:pointer;background:transparent;border:0;font:inherit;padding:0;">
+          <span style="font-size:0.72rem;font-weight:700;color:#475569;margin-bottom:8px;">1937</span>
+          <span style="width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #dc2626;"></span>
+          <span style="font-size:0.7rem;color:#64748b;margin-top:6px;text-align:center;max-width:90px;line-height:1.3;">RhD</span>
+        </button>
+        <button class="timeline-point" data-tl="1950" role="tab" aria-selected="false" style="position:relative;z-index:1;flex-shrink:0;display:flex;flex-direction:column;align-items:center;min-width:90px;cursor:pointer;background:transparent;border:0;font:inherit;padding:0;">
+          <span style="font-size:0.72rem;font-weight:700;color:#475569;margin-bottom:8px;">1950–1960</span>
+          <span style="width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #dc2626;"></span>
+          <span style="font-size:0.7rem;color:#64748b;margin-top:6px;text-align:center;max-width:90px;line-height:1.3;">HLA</span>
+        </button>
+      </div>
+
+      <div class="timeline-info" id="timelineInfo" aria-live="polite" style="margin-top:16px;padding:14px 18px;background:#fef2f2;border-left:4px solid #dc2626;border-radius:10px;font-size:0.9rem;min-height:70px;">
+        <b>1628 — William Harvey:</b> opisał krążenie krwi. To był fundament — bez zrozumienia, że krew krąży w zamkniętym układzie, nie byłoby mowy o transfuzjach.
+      </div>
+    </div>
+  </details>
+</section>
+
+<!-- ================= 1. PYTANIE ================= -->
+<section class="section" id="pytanie">
+  <div class="part-heading"><span class="part-num">1. Pytanie przewodnie</span></div>
+  <div class="card card-correct">
+    <p style="font-size:1.1rem;font-weight:600;">Jak z komórek i genów wynikają cechy organizmu człowieka — i które układy są mostem do genetyki?</p>
+  </div>
+</section>
+
+<!-- ================= 2. CELE ================= -->
+<section class="section" id="cele">
+  <div class="part-heading"><span class="part-num">2. Cele lekcji</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <div class="card card-correct">
+    <span class="card-label">Po tej lekcji umiesz:</span>
+    <ul>
+      <li><strong>wyjaśnić</strong>, że cechy organizmu wynikają z komórek i genów (most do L010–L019),</li>
+      <li><strong>wskazać</strong> układy człowieka istotne dla genetyki: krwionośny (grupy krwi), rozrodczy (mejoza),</li>
+      <li><strong>rozróżnić</strong> typową komórkę somatyczną (2n = 46) od gamet (n = 23),</li>
+      <li><strong>wyjaśnić</strong>, że w typowym modelu szkolnym to plemnik wnosi chromosom X albo Y,</li>
+      <li>(idę dalej) rozumieć, że ABO, RhD i HLA to różne układy antygenów,</li>
+      <li>(zaawansowane) znać ideę dziedziczenia wielogenowego i wpływu środowiska.</li>
+    </ul>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Zasada 80/20 — co naprawdę daje 80% efektu</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>20% = 80% efektu</th><th>Dlaczego to jest kluczowe</th></tr></thead>
+        <tbody>
+          <tr><td><strong>2n = 46 (ciało), n = 23 (gameta)</strong></td><td>fundament liczb w całej genetyce</td></tr>
+          <tr><td><strong>Krew + grupy ABO (i Rh)</strong></td><td>most do L019 (kodominacja, 3 allele)</td></tr>
+          <tr><td><strong>Układ rozrodczy → gamety → mejoza</strong></td><td>most do L015</td></tr>
+          <tr><td><strong>XX/XY — model szkolny</strong></td><td>most do L018</td></tr>
+          <tr><td><strong>Krew jako jedno ze źródeł DNA (leukocyty)</strong></td><td>praktyczne zastosowanie genetyki</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:6px;"><strong>Dlaczego to wystarczy?</strong> Bo ta lekcja ma jeden cel: pokazać <strong>pomost</strong> między ciałem a genetyką. Nie uczysz się anatomii — uczysz się łączyć fakty.</p>
+  </div>
+</section>
+
+<!-- ================= 3. KOMPAS ================= -->
+<section class="section" id="kompas">
+  <div class="part-heading"><span class="part-num">3. Kompas</span> <span class="level-badge level-basic">PRZYPOMNIENIE</span></div>
+  <div class="card card-remember">
+    <span class="card-label">Co trzeba wiedzieć wcześniej</span>
+    <ul>
+      <li><strong>L001 (komórka):</strong> jądro zawiera większość DNA; komórki mają błonę i cytoplazmę.</li>
+      <li><strong>Z klas 4–7:</strong> podstawowa anatomia człowieka — krew, serce, układy.</li>
+      <li><strong>Z życia:</strong> każdy zna swoją grupę krwi lub słyszał o transfuzji.</li>
+    </ul>
+    <p style="margin-top:8px;font-size:0.88rem;color:var(--color-text-muted);">Jeśli nie pamiętasz, co to jądro komórkowe — wróć do L001, sekcja 5.</p>
+  </div>
+</section>
+
+<!-- ================= 4. PROBLEM ================= -->
+<section class="section" id="problem">
+  <div class="part-heading"><span class="part-num">4. Zacznij od problemu</span></div>
+  <div class="highlight-box">
+    <p><strong>Skąd organizm wie, jak zbudować krew, mięśnie, nerwy? Dlaczego krew jednych ludzi jest „zgodna", a innych nie?</strong></p>
+    <p style="margin-top:8px;">Zapisz hipotezę: ....................................</p>
+    <p style="margin-top:8px;"><strong>Podpowiedź:</strong> Pomyśl o dwóch rzeczach:</p>
+    <ul>
+      <li><strong>Instrukcje:</strong> komórki mają „przepisy" zapisane w DNA (L001). Z tych przepisów wynika, jakie białka i jakie cechy ma organizm.</li>
+      <li><strong>Oznaczenia na powierzchni:</strong> na komórkach (np. erytrocytach) są <strong>antygeny</strong> — swoiste „znaczki". Jeśli układ odpornościowy nie rozpozna „znaczka" jako swojego, może zareagować na obce komórki.</li>
+    </ul>
+    <p style="margin-top:8px;font-size:0.9rem;color:#78350f;">💡 Po lekcji wróć do hipotezy i sprawdź, czy była trafna.</p>
+  </div>
+</section>
+
+<!-- ================= 5. ŚCIĄGA ================= -->
+<section class="section" id="sciaga">
+  <div class="part-heading"><span class="part-num">5. Ściąga</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <div class="spine" aria-label="Gdzie jesteś w lekcji">
+    <span class="node">Wprowadzenie</span>
+    <span class="arrow">→</span>
+    <span class="node current">Ściąga</span>
+    <span class="arrow">→</span>
+    <span class="node">Krew</span>
+    <span class="arrow">→</span>
+    <span class="node">Gamety</span>
+    <span class="arrow">→</span>
+    <span class="node">Dziedziczenie</span>
+  </div>
+
+  <h3>5.1. Czym jest ta lekcja? (definicja mostu)</h3>
+  <div class="card card-new">
+    <span class="card-label">Definicja</span>
+    <p>Ta lekcja to <strong>nie pełny podręcznik anatomii człowieka</strong>, tylko <strong>most</strong> — zestaw faktów o biologii człowieka, które są potrzebne w genetyce klasy 8.</p>
+    <p style="margin-top:6px;">Zapamiętaj cztery kluczowe myśli:</p>
+    <ol>
+      <li><strong>Cechy organizmu</strong> wynikają z komórek i genów — a nie „z niczego".</li>
+      <li><strong>Typowa komórka somatyczna</strong> człowieka ma <strong>2n = 46</strong> chromosomów.</li>
+      <li><strong>Gamety</strong> (plemnik, komórka jajowa) mają <strong>n = 23</strong> chromosomy.</li>
+      <li><strong>Zygota</strong> (po zapłodnieniu) znów ma <strong>2n = 46</strong>.</li>
+    </ol>
+  </div>
+
+  <h3 id="uklady">5.2. Cztery układy istotne dla genetyki</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Układ</th><th>Funkcja w skrócie</th><th>Most do genetyki</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Krwionośny</strong></td><td>transportuje krew, tlen, substancje odżywcze, komórki odpornościowe</td><td>grupy krwi ABO i RhD (L019); krew jako jedno ze źródeł DNA</td></tr>
+        <tr><td><strong>Rozrodczy</strong></td><td>wytwarza gamety (plemniki, komórki jajowe)</td><td>mejoza — L015; redukcja 2n → n</td></tr>
+        <tr><td><strong>Nerwowy i hormonalny</strong></td><td>regulacja pracy organizmu</td><td>działanie białek → ekspresja genów (L011, L020)</td></tr>
+        <tr><td><strong>Odpornościowy</strong></td><td>rozpoznaje „swoje" i „obce"; zwalcza patogeny</td><td>antygeny, zgodność tkanek (HLA), konflikt RhD (L019)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="mini-note"><strong>Uwaga:</strong> Podziały układów organizmu mogą wyglądać nieco inaczej w różnych podręcznikach. Tu wyróżniamy te, które najłatwiej łączą się z genetyką.</p>
+
+  <h3 id="liczby">5.3. Trzy kluczowe liczby</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Struktura</th><th>Liczba chromosomów</th><th>Oznaczenie</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Typowa komórka somatyczna</strong> (np. skóry, mięśnia)</td><td>46 (23 pary)</td><td>2n</td></tr>
+        <tr><td><strong>Gameta</strong> (plemnik, komórka jajowa)</td><td>23</td><td>n</td></tr>
+        <tr><td><strong>Zygota</strong> (po zapłodnieniu)</td><td>46 (23 + 23)</td><td>2n</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Uwaga na słowo „wszystkie"</span>
+    <p>W biologii zwykle bezpieczniej mówić: <strong>„typowa komórka somatyczna człowieka ma 46 chromosomów"</strong>.</p>
+    <p style="margin-top:6px;">Wyjątki:</p>
+    <ul>
+      <li><strong>Gamety</strong> mają 23 chromosomy (po jednym z każdej pary).</li>
+      <li><strong>Dojrzały erytrocyt człowieka i większości ssaków</strong> nie ma jądra ani organelli — więc nie zawiera chromosomów (ani jądrowego DNA, ani mtDNA).</li>
+    </ul>
+  </div>
+
+  <h3 id="krew">5.4. Krew — co trzeba zapamiętać przed L019</h3>
+  <div class="card card-correct">
+    <p><strong>Krew to tkanka płynna</strong> — nie narząd. Składa się z:</p>
+    <ul>
+      <li><strong>osocza</strong> (ok. 90% wody + białka + substancje rozpuszczone),</li>
+      <li><strong>elementów morfotycznych</strong>: erytrocyty (czerwone krwinki), leukocyty (białe krwinki), trombocyty (płytki krwi).</li>
+    </ul>
+    <p style="margin-top:6px;"><strong>Antygeny i zgodność biologiczna — ABO, RhD oraz HLA:</strong></p>
+    <ul>
+      <li><strong>ABO</strong> — antygeny A i B (albo brak A i B → grupa 0) na erytrocytach. Podstawowy układ przy transfuzjach.</li>
+      <li><strong>RhD</strong> — obecność lub brak antygenu D na erytrocytach (Rh+ / Rh−).</li>
+      <li><strong>HLA</strong> — <em>nie jest typowym układem antygenów erytrocytów</em>, lecz układem <strong>białek zgodności tkankowej</strong> obecnych na powierzchni wielu komórek jądrzastych. Kluczowy przy przeszczepach.</li>
+    </ul>
+    <p class="mini-note">ABO obejmuje antygeny na erytrocytach, ale także w innych tkankach i wydzielinach. RhD to konkretnie antygen D. HLA to osobny, wielogenowy układ zgodności tkankowej.</p>
+  </div>
+
+  <h3 id="plec">5.5. Płeć — jak się dziedziczy (model szkolny)</h3>
+  <div class="card card-correct">
+    <p>W <strong>typowym szkolnym modelu</strong>:</p>
+    <ul>
+      <li><strong>XX</strong> — najczęściej wiąże się z rozwojem żeńskim.</li>
+      <li><strong>XY</strong> — najczęściej wiąże się z rozwojem męskim.</li>
+    </ul>
+    <p><strong>Komórka jajowa</strong> zawsze wnosi chromosom X. <strong>Plemnik</strong> wnosi X albo Y.</p>
+    <p style="margin-top:6px;"><strong>Wniosek (model szkolny):</strong> to chromosom płciowy plemnika wpływa na kombinację XX lub XY zygoty.</p>
+  </div>
+
+  <div class="card card-optional">
+    <span class="card-label">Uwaga — model szkolny a rzeczywistość</span>
+    <p>W biologii występują też rzadsze warianty chromosomów płci i rozwoju płciowego. XX/XY to <strong>model podstawowy</strong>, bardzo przydatny do zadań — ale nie opisuje wszystkich możliwych sytuacji biologicznych.</p>
+  </div>
+
+  <h3 id="mnemotechniki">5.6. Mnemotechniki</h3>
+  <div class="card card-hint">
+    <ul>
+      <li><strong>46 = 2n (ciało), 23 = n (gameta)</strong></li>
+      <li><strong>23 + 23 = 46</strong> — gamety + zygota</li>
+      <li><strong>XX / XY</strong> — typowy model szkolny</li>
+      <li><strong>Plemnik wnosi X albo Y</strong> — jajo zawsze X</li>
+      <li><strong>Krew = transport + antygeny</strong></li>
+      <li><strong>Krew to tkanka, nie narząd</strong></li>
+      <li><strong>0 = ii</strong> — grupa 0 wynika z genotypu ii</li>
+      <li><strong>ABO ≠ RhD ≠ HLA</strong> — trzy różne układy</li>
+    </ul>
+  </div>
+
+  <h3 id="model-vs-rzeczywistosc">5.7. Karta: model szkolny a rzeczywistość</h3>
+  <div class="model-card">
+    <h4>Co mówi model szkolny, a co doprecyzowuje biologia i medycyna?</h4>
+    <div class="m-row">
+      <div class="m-col school">
+        <span class="m-title">Model szkolny (E8)</span>
+        <ul style="margin-bottom:0;">
+          <li>ABO: A, B, AB, 0</li>
+          <li>Rh: Rh+ lub Rh−</li>
+          <li>Płeć: XX/XY</li>
+          <li>Komórka somatyczna: 46 chromosomów</li>
+        </ul>
+      </div>
+      <div class="m-col real">
+        <span class="m-title">Co doprecyzowuje biologia i medycyna</span>
+        <ul style="margin-bottom:0;">
+          <li>Istnieje wiele innych antygenów krwinkowych (Kell, Duffy, Kidd…).</li>
+          <li>Układ Rh to więcej niż sam antygen D.</li>
+          <li>Rozwój płci biologicznej może przebiegać w różnych wariantach.</li>
+          <li>„Typowa komórka somatyczna" — nie „każda bez wyjątku".</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mini-note" style="margin-top:12px;">Model szkolny jest <strong>uproszczeniem</strong>, które ułatwia naukę. To nie znaczy, że jest „fałszywy" — pokazuje najważniejszy rdzeń, a biologia opisuje dodatkowe przypadki.</p>
+  </div>
+</section>
+
+<!-- ================= 6. WYJAŚNIENIE ================= -->
+<section class="section" id="wyjasnienie">
+  <div class="part-heading"><span class="part-num">6. Wyjaśnienie od podstaw</span></div>
+
+  <h3>6.1. Ciało człowieka jako „miasto komórek" (analogia)</h3>
+  <div class="card card-new">
+    <span class="card-label">Analogia</span>
+    <p>Organizm człowieka to <strong>miasto komórek</strong>:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Element organizmu</th><th>Odpowiednik w mieście</th><th>Rola</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Komórki ciała</strong></td><td>mieszkańcy i pracownicy</td><td>wykonują różne zadania</td></tr>
+          <tr><td><strong>DNA w jądrze</strong></td><td>księgozbiór instrukcji</td><td>większość komórek organizmu ma prawie ten sam zestaw informacji DNA, lecz korzysta z innych fragmentów tej informacji</td></tr>
+          <tr><td><strong>Geny</strong></td><td>poszczególne przepisy</td><td>każdy gen → produkt (często białko, czasem funkcjonalny RNA)</td></tr>
+          <tr><td><strong>Krew</strong></td><td>sieć transportowa</td><td>dostarcza tlen, substancje, komórki odpornościowe</td></tr>
+          <tr><td><strong>Erytrocyty</strong></td><td>kurierzy z „identyfikatorami"</td><td>transportują tlen; mają antygeny A/B/D</td></tr>
+          <tr><td><strong>Układ odpornościowy</strong></td><td>straż miejska</td><td>rozpoznaje „swoje" i „obce"</td></tr>
+          <tr><td><strong>Gamety</strong></td><td>„karty do gry" z połową informacji</td><td>przekazują jeden zestaw chromosomów następnemu pokoleniu</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Analogia pomaga zapamiętać funkcje</strong> — ale pamiętaj, że żadna analogia nie jest idealna.</p>
+  </div>
+
+  <h3>6.2. Łańcuch: od genu do cechy organizmu</h3>
+  <div class="card card-gray">
+    <div class="step-flow">DNA → RNA → często białko → działanie komórki → cecha
+                     (+ środowisko + rozwój)</div>
+    <p style="margin-top:8px;">Ten schemat wyjaśnia, dlaczego <strong>grupa krwi jest cechą dziedziczną</strong> — allele ABO decydują o tym, jakie antygeny pojawią się na erytrocytach.</p>
+    <p class="mini-note">Uwaga: wiele genów koduje RNA, które nie staje się białkiem. Schemat jest więc <strong>uproszczonym modelem</strong>, pomocnym na tym etapie nauki.</p>
+  </div>
+
+  <h3 id="blood-widget">6.3. Widget: krew jako jedno ze źródeł danych</h3>
+  <p>Krew to nie tylko transport tlenu. Z krwi można zbadać <strong>wiele różnych rzeczy</strong>. Kliknij każdy przycisk, aby zobaczyć, co i jak.</p>
+
+  <div class="blood-widget" id="bloodWidget">
+    <h4>Co można zbadać z krwi?</h4>
+    <p class="bw-hint">Kliknij element, aby zobaczyć szczegóły.</p>
+
+    <div class="blood-buttons">
+      <button class="blood-btn active" data-bw="grupa">Grupa krwi ABO</button>
+      <button class="blood-btn" data-bw="rh">RhD (antygen D)</button>
+      <button class="blood-btn" data-bw="dna">DNA (leukocyty)</button>
+      <button class="blood-btn" data-bw="hla">HLA (zgodność tkanek)</button>
+      <button class="blood-btn" data-bw="morfologia">Morfologia</button>
+    </div>
+
+    <div class="blood-view">
+      <svg viewBox="0 0 420 140" xmlns="http://www.w3.org/2000/svg" id="bloodSvg"></svg>
+    </div>
+
+    <div class="blood-desc" id="bloodDesc">
+      <b>Grupa krwi ABO:</b> podstawowy układ antygenów na erytrocytach. A, B, AB lub 0. Decyduje o zgodności przy transfuzji. Dziedziczona — allele Iᴬ, Iᴮ, i (L019).
+    </div>
+  </div>
+
+  <h3 id="gamete-widget">6.4. Widget: gameta → zygota (n + n = 2n)</h3>
+  <p>Dlaczego gameta ma 23 chromosomy, a zygota 46? Klikaj kolejne kroki, aby zobaczyć, jak to działa.</p>
+
+  <div class="gamete-widget" id="gameteWidget">
+    <h4>Od gamet do zygoty</h4>
+    <p class="gw-hint">Kliknij krok, aby zobaczyć wyjaśnienie.</p>
+
+    <div class="blood-buttons">
+      <button class="blood-btn active" data-gw="1">1. Komórka ciała: 46</button>
+      <button class="blood-btn" data-gw="2">2. Mejoza: 46 → 23</button>
+      <button class="blood-btn" data-gw="3">3. Gameta: n = 23</button>
+      <button class="blood-btn" data-gw="4">4. Zapłodnienie: 23 + 23</button>
+      <button class="blood-btn" data-gw="5">5. Zygota: 46</button>
+    </div>
+
+    <div class="gamete-view">
+      <svg viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg" id="gameteSvg"></svg>
+    </div>
+
+    <div class="gamete-desc" id="gameteDesc">
+      <b>Krok 1 — Typowa komórka ciała: 2n = 46.</b> Typowa komórka somatyczna ma dwa zestawy chromosomów (23 pary). Jeden zestaw od matki, jeden od ojca.
+    </div>
+  </div>
+
+  <div class="card card-meaning">
+    <span class="card-label">Co znaczy „n = 23"?</span>
+    <p>„23" nie oznacza „połowy DNA w sensie informacji" ani „połowy człowieka". Oznacza <strong>jeden chromosom z każdej z 23 par</strong> — czyli jeden haploidalny zestaw chromosomów.</p>
+  </div>
+
+  <h3 id="sex-widget">6.5. Widget: XX/XY — kto wnosi co?</h3>
+  <p>W typowym modelu szkolnym to <strong>plemnik</strong> wnosi chromosom X albo Y. Kliknij przyciski, aby zobaczyć kombinacje.</p>
+
+  <div class="sex-widget" id="sexWidget">
+    <h4>XX / XY — kombinacje</h4>
+    <p class="sx-hint">Kliknij kombinację, aby zobaczyć wynik.</p>
+
+    <div class="sex-buttons">
+      <button class="sex-btn active" data-sx="xx">X + X → XX</button>
+      <button class="sex-btn" data-sx="xy">X + Y → XY</button>
+      <button class="sex-btn" data-sx="kto">Kto wnosi Y?</button>
+    </div>
+
+    <div class="sex-view">
+      <svg viewBox="0 0 420 130" xmlns="http://www.w3.org/2000/svg" id="sexSvg"></svg>
+    </div>
+
+    <div class="sex-desc" id="sexDesc">
+      <b>X + X → XX:</b> Komórka jajowa wnosi X, plemnik wnosi X. Powstaje zygota XX — w typowym modelu szkolnym rozwój żeński.
+    </div>
+  </div>
+
+  <h3 id="abo-widget">6.6. Widget: ABO — allele i grupy</h3>
+  <p>Grupy krwi ABO to pierwszy przykład dziedziczenia <strong>trzech alleli</strong> w populacji. Kliknij każdą grupę, aby zobaczyć genotyp i antygeny.</p>
+
+  <div class="abo-widget" id="aboWidget">
+    <h4>Grupy krwi ABO — genotyp i antygeny</h4>
+    <p class="ab-hint">Kliknij grupę, aby zobaczyć szczegóły.</p>
+
+    <div class="abo-grid" id="aboGrid">
+      <button class="abo-card active" data-abo="A">
+        <div class="abo-name">A</div>
+        <div class="abo-geno">IᴬIᴬ lub Iᴬi</div>
+      </button>
+      <button class="abo-card" data-abo="B">
+        <div class="abo-name">B</div>
+        <div class="abo-geno">IᴮIᴮ lub Iᴮi</div>
+      </button>
+      <button class="abo-card" data-abo="AB">
+        <div class="abo-name">AB</div>
+        <div class="abo-geno">IᴬIᴮ</div>
+      </button>
+      <button class="abo-card" data-abo="0">
+        <div class="abo-name">0</div>
+        <div class="abo-geno">ii</div>
+      </button>
+    </div>
+
+    <div class="abo-desc" id="aboDesc">
+      <b>Grupa A:</b> genotyp <code>IᴬIᴬ</code> lub <code>Iᴬi</code>. Na erytrocytach obecny antygen A. W osoczu — przeciwciała anty-B.
+    </div>
+
+    <div class="abo-warning">
+      <strong>Model szkolny ABO.</strong> ABO jest ważne przy transfuzji, ale w medycynie dobiera się też zgodność RhD i innych antygenów oraz wykonuje próby zgodności. Nie wyciągaj samodzielnie wniosków medycznych z prostego schematu.
+    </div>
+  </div>
+
+  <h3 id="przyklad">6.7. Przykład prowadzony</h3>
+  <div class="card card-correct">
+    <p><strong>Dane:</strong> Matka ma grupę krwi 0 (genotyp ii), ojciec ma grupę A (genotyp IᴬIᴬ lub Iᴬi).</p>
+    <p><strong>Pytanie:</strong> Jakie grupy krwi może mieć ich dziecko?</p>
+    <p><strong>Rozumowanie:</strong></p>
+    <ol>
+      <li>Matka ii → wszystkie jej gamety mają allel <code>i</code>.</li>
+      <li>Ojciec A → jeśli IᴬIᴬ, wszystkie gamety mają <code>Iᴬ</code>. Jeśli Iᴬi, połowa gamet ma <code>Iᴬ</code>, połowa <code>i</code>.</li>
+      <li>Dziecko może mieć:
+        <ul>
+          <li>grupę A (genotyp Iᴬi) — jeśli ojciec daje Iᴬ;</li>
+          <li>grupę 0 (genotyp ii) — jeśli ojciec daje i (a to możliwe tylko, gdy ojciec jest Iᴬi).</li>
+        </ul>
+      </li>
+      <li><strong>Grupa B ani AB jest niemożliwa</strong> — matka ii nie może dać Iᴮ, a ojciec A nie ma Iᴮ.</li>
+    </ol>
+    <p><strong>Odpowiedź:</strong> Dziecko może mieć grupę A lub 0.</p>
+  </div>
+
+  <h3>6.8. Powiązanie z innymi lekcjami</h3>
+  <div class="card card-gray">
+    <div class="step-flow">L001 (komórka: jądro = większość DNA)
+  → L002 (człowiek: krew → L019, gamety → L015, płeć → L018)
+  → L003 (diagnoza startowa)
+  → L010 (cechy i zmienność)
+  → L011 (budowa DNA) ← najważniejszy most</div>
+    <p style="margin-top:8px;"><strong>Most:</strong> jeśli umiesz powiedzieć, ile chromosomów ma gameta, a ile zygota → jesteś gotowy na L003 (diagnoza) i L010 (cechy).</p>
+  </div>
+</section>
+
+<!-- ================= 7. KREW ================= -->
+<section class="section" id="krew-sklad">
+  <div class="part-heading"><span class="part-num">7. Krew — anatomia i antygeny</span></div>
+
+  <div class="spine" aria-label="Gdzie jesteś w lekcji">
+    <span class="node">Wprowadzenie</span>
+    <span class="arrow">→</span>
+    <span class="node">Ściąga</span>
+    <span class="arrow">→</span>
+    <span class="node current">Krew</span>
+    <span class="arrow">→</span>
+    <span class="node">Gamety</span>
+    <span class="arrow">→</span>
+    <span class="node">Dziedziczenie</span>
+  </div>
+
+  <h3>7.1. Skład krwi</h3>
+  <div class="card card-correct">
+    <p>Krew to <strong>tkanka płynna</strong> — nie narząd. Składa się z:</p>
+    <ul>
+      <li><strong>osocza</strong> (ok. 55% objętości; ok. 90% wody + białka + substancje rozpuszczone),</li>
+      <li><strong>elementów morfotycznych</strong> (ok. 45%):
+        <ul>
+          <li><strong>erytrocyty</strong> — czerwone krwinki (transport tlenu przez hemoglobinę),</li>
+          <li><strong>leukocyty</strong> — białe krwinki (obrona organizmu),</li>
+          <li><strong>trombocyty</strong> — płytki krwi (krzepnięcie).</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="mini-note">To wartości orientacyjne dla zdrowej osoby dorosłej. Udział elementów morfotycznych zależy głównie od liczby erytrocytów.</p>
+    <p><strong>Ciekawostka:</strong> dojrzały erytrocyt człowieka i większości ssaków traci jądro i organelle — ma więcej miejsca na hemoglobinę, ale nie może się dzielić.</p>
+  </div>
+
+  <h3 id="antygeny">7.2. Antygeny i zgodność biologiczna — ABO, RhD oraz HLA</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Układ</th><th>Co rozpoznaje</th><th>Znaczenie praktyczne</th></tr></thead>
+      <tbody>
+        <tr><td><strong>ABO</strong></td><td>antygeny A i B (lub brak A i B) na erytrocytach</td><td>podstawowy układ przy transfuzjach</td></tr>
+        <tr><td><strong>RhD</strong></td><td>antygen D na erytrocytach: Rh+ (jest D) / Rh− (brak D)</td><td>konflikt RhD w ciąży</td></tr>
+        <tr><td><strong>HLA</strong></td><td>białka zgodności tkankowej obecne na powierzchni wielu komórek jądrzastych — <em>nie jest to typowy układ antygenów erytrocytów</em></td><td>zgodność tkanek przy przeszczepach</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.88rem;color:var(--color-text-muted);">Pełne omówienie ABO + RhD → L019. Tu tylko zapoznajemy się z ideą. HLA wykracza poza podstawę E8 — jest dla chętnych.</p>
+
+  <h3 id="transfuzja">7.3. Transfuzja — model szkolny</h3>
+  <div class="card card-ambitious">
+    <p>W <strong>modelu szkolnym</strong>, rozważając tylko ABO i przetaczanie koncentratu krwinek czerwonych, krwinki grupy 0 nie mają antygenów A ani B.</p>
+    <p><strong>W rzeczywistej transfuzjologii</strong> dobiera się zgodność ABO, RhD i innych antygenów oraz wykonuje próby zgodności. <em>Nie należy samodzielnie wyciągać wniosków medycznych z prostego schematu.</em></p>
+  </div>
+
+  <h3>7.4. Konflikt RhD — idea (zwijana)</h3>
+  <details class="foldout">
+    <summary>Pokaż pełniejsze wyjaśnienie konfliktu RhD <span class="foldout-note">(materiał nadprogramowy)</span></summary>
+    <div class="card card-ambitious">
+      <p>Jeśli matka jest <strong>RhD−</strong>, a płód <strong>RhD+</strong>, może dojść do kontaktu krwi płodu z krwią matki. <strong>Nie każda taka ciąża prowadzi do uczulenia</strong>, ale jeśli organizm matki wytworzy przeciwciała anty-D, mogą one zagrozić kolejnemu płodowi RhD+.</p>
+      <p>Profilaktyka immunoglobuliną anty-D <strong>ogranicza ryzyko uczulenia</strong>. <em>Szczegóły medyczne nie są wymagane na E8 — to materiał dla chętnych.</em></p>
+    </div>
+  </details>
+</section>
+
+<!-- ================= 8. GAMETY ================= -->
+<section class="section" id="gamety">
+  <div class="part-heading"><span class="part-num">8. Gamety, zygota i płeć</span></div>
+
+  <div class="spine" aria-label="Gdzie jesteś w lekcji">
+    <span class="node">Wprowadzenie</span>
+    <span class="arrow">→</span>
+    <span class="node">Ściąga</span>
+    <span class="arrow">→</span>
+    <span class="node">Krew</span>
+    <span class="arrow">→</span>
+    <span class="node current">Gamety</span>
+    <span class="arrow">→</span>
+    <span class="node">Dziedziczenie</span>
+  </div>
+
+  <h3>8.1. Trzy kluczowe liczby — pełne wyjaśnienie</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Struktura</th><th>Liczba chromosomów</th><th>Oznaczenie</th><th>Jak powstaje</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Typowa komórka somatyczna</strong></td><td>46 (23 pary)</td><td>2n (diploidalna)</td><td>powstaje w mitozie (L014)</td></tr>
+        <tr><td><strong>Gameta</strong></td><td>23</td><td>n (haploidalna)</td><td>powstaje w mejozie (L015)</td></tr>
+        <tr><td><strong>Zygota</strong></td><td>46 (23 + 23)</td><td>2n</td><td>po zapłodnieniu (n + n = 2n)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>8.2. Gamety — gdzie i jak powstają</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li><strong>Plemniki</strong> — powstają w <strong>jądrach</strong> (mężczyzna). W wyniku mejozy powstają 4 funkcjonalne plemniki z każdej komórki wyjściowej.</li>
+      <li><strong>Komórki jajowe</strong> — powstają w <strong>jajnikach</strong> (kobieta). W wyniku mejozy powstaje <strong>1 funkcjonalna komórka jajowa</strong> + ciałka kierunkowe. Podział cytoplazmy jest nierówny, ponieważ komórka jajowa zachowuje większość cytoplazmy i zasobów potrzebnych na najwcześniejszych etapach rozwoju zarodka.</li>
+    </ul>
+    <p><strong>Wniosek:</strong> „mejoza daje 4 gamety" to <strong>uproszczenie</strong>. U kobiety funkcjonalna jest tylko jedna (L015).</p>
+  </div>
+
+  <h3 id="plec-dziedziczenie">8.3. Płeć — XX/XY (model szkolny)</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li><strong>W modelu szkolnym kobieta: XX</strong> — dwa chromosomy X. Każda komórka jajowa ma jeden X.</li>
+      <li><strong>W modelu szkolnym mężczyzna: XY</strong> — jeden X i jeden Y. Plemniki: połowa ma X, połowa Y.</li>
+    </ul>
+    <p><strong>W typowym modelu szkolnym</strong> to <strong>plemnik</strong> wnosi chromosom X albo Y. Komórka jajowa zawsze wnosi X.</p>
+    <div class="step-flow">jajo X + plemnik X → XX (w modelu: rozwój żeński)
+jajo X + plemnik Y → XY (w modelu: rozwój męski)</div>
+    <p><strong>Uwaga:</strong> XX/XY to model podstawowy. W biologii występują rzadsze warianty chromosomów i rozwoju płciowego. Chromosomy są ważnym, ale nie jedynym elementem tego procesu.</p>
+  </div>
+
+  <h3>8.4. Dlaczego te liczby mają sens?</h3>
+  <div class="card card-hint">
+    <p>Gdyby gamety miały po 46 chromosomów, a zygota 46, po zapłodnieniu byłoby 92 → i tak dalej (92 → 184 → 368…). <strong>Liczba chromosomów musiałaby rosnąć z pokolenia na pokolenie.</strong></p>
+    <p><strong>Mejoza rozwiązuje ten problem:</strong> redukuje 2n → n. Dzięki temu po zapłodnieniu zygota znów ma 2n = 46 (L015).</p>
+  </div>
+</section>
+
+<!-- ================= 9. NOWA: GRANICE WNIOSKOWANIA ================= -->
+<section class="section" id="wnioskowanie">
+  <div class="part-heading"><span class="part-num">9.</span> Co wynika, a czego nie wolno wnioskować? <span class="level-badge level-new">NOWA SEKCJA</span></div>
+
+  <p>W genetyce bardzo ważne jest odróżnienie tego, <strong>co wynika z danych</strong>, od tego, <strong>czego z nich wywnioskować nie można</strong>. Zobacz przykłady:</p>
+
+  <div class="table-wrap">
+    <table class="boundary-table">
+      <thead>
+        <tr><th>Z danych</th><th>Wolno powiedzieć</th><th>Czego NIE wolno powiedzieć</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Matka 0, ojciec AB</td>
+          <td class="yes">Dziecko może mieć A albo B</td>
+          <td class="no">„Na pewno będzie miało A"</td>
+        </tr>
+        <tr>
+          <td>Dziecko 0, rodzice A i B</td>
+          <td class="yes">Oboje rodzice muszą mieć allel <code>i</code></td>
+          <td class="no">„Znamy pełną historię rodziny"</td>
+        </tr>
+        <tr>
+          <td>Matka RhD−, ojciec RhD+</td>
+          <td class="yes">Płód może być RhD+ albo RhD−</td>
+          <td class="no">„Na pewno dojdzie do konfliktu RhD"</td>
+        </tr>
+        <tr>
+          <td>Ktoś ma grupę A</td>
+          <td class="yes">Genotyp to <code>IᴬIᴬ</code> albo <code>Iᴬi</code></td>
+          <td class="no">„Na pewno ma genotyp <code>IᴬIᴬ</code>"</td>
+        </tr>
+        <tr>
+          <td>Dziecko ma grupę 0, a matka 0</td>
+          <td class="yes">Ojciec musi dać allel <code>i</code></td>
+          <td class="no">„Ojciec na pewno ma grupę 0"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-boundary">
+    <span class="card-label">Ważne</span>
+    <p><strong>Grupa krwi nie służy do ustalania ojcostwa ani pokrewieństwa.</strong> Zgodność lub niezgodność prostego modelu ABO nie wystarcza do takich wniosków. Do ustalania pokrewieństwa używa się specjalistycznych badań DNA (np. analizy wielu markerów), a nie grup krwi.</p>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Trzy kategorie do zapamiętania</span>
+    <ul>
+      <li><strong>Pewne z danych</strong> — wynika jednoznacznie z podanych informacji i modelu.</li>
+      <li><strong>Możliwe</strong> — nie da się wykluczyć, ale też nie jest pewne.</li>
+      <li><strong>Niemożliwe</strong> — sprzeczne z modelem i danymi.</li>
+      <li>(dodatkowo) <strong>Brakuje danych</strong> — żeby coś rozstrzygnąć, potrzebujemy np. genotypu rodzica, a nie tylko fenotypu.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 10. NOWA: JĘZYK PREcyzyjnego biologa ================= -->
+<section class="section" id="jezyk">
+  <div class="part-heading"><span class="part-num">10.</span> Język precyzyjnego biologa <span class="level-badge level-new">NOWA SEKCJA</span></div>
+
+  <p>W genetyce precyzja językowa ma znaczenie. Poniższa tabela pomaga uniknąć nieprecyzyjnych sformułowań — szczególnie na sprawdzianach i egzaminie.</p>
+
+  <div class="card card-language">
+    <span class="card-label">Zamiast — lepiej</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Nieprecyzyjne</th><th>Precyzyjne</th></tr></thead>
+        <tbody>
+          <tr><td>„Każda komórka ma 46 chromosomów"</td><td><strong>„Typowa komórka somatyczna człowieka ma 46 chromosomów"</strong></td></tr>
+          <tr><td>„Grupa 0 nie ma genów"</td><td><strong>„Grupa 0 wynika z genotypu <code>ii</code>"</strong></td></tr>
+          <tr><td>„Rh− jest chorobą"</td><td><strong>„Rh− oznacza brak antygenu D na erytrocytach"</strong></td></tr>
+          <tr><td>„Matka decyduje o płci"</td><td><strong>„W modelu XX/XY plemnik wnosi X albo Y"</strong></td></tr>
+          <tr><td>„ABO wystarcza do transfuzji"</td><td><strong>„ABO jest ważne, ale w medycynie sprawdza się też inne czynniki zgodności"</strong></td></tr>
+          <tr><td>„Erytrocyt nie ma DNA"</td><td><strong>„Dojrzały erytrocyt człowieka i większości ssaków nie ma jądra ani organelli — więc nie zawiera ani jądrowego DNA, ani mtDNA"</strong></td></tr>
+          <tr><td>„Pasożyt nic nie robi" (poza L002)</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11. CIAŁO A KOMÓRKI ================= -->
+<section class="section" id="cialo-komorki">
+  <div class="part-heading"><span class="part-num">11. Ciało a komórki — uzupełnienie</span></div>
+
+  <div class="card card-new">
+    <span class="card-label">Kluczowa myśl</span>
+    <p><strong>Cechy organizmu wynikają z komórek i genów.</strong> Większość komórek organizmu ma <strong>prawie ten sam zestaw informacji DNA</strong> (ten sam genotyp), ale różni się funkcją — bo różnie <strong>korzysta z różnych fragmentów tej informacji</strong> (ekspresja genów).</p>
+    <p><strong>Przykład:</strong> neuron i komórka mięśniowa mają ten sam zestaw DNA, ale różnią się tym, które geny są w nich aktywne. Dlatego neuron przewodzi impulsy, a komórka mięśniowa się kurczy.</p>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Uwaga</span>
+    <p><strong>Cecha = geny + środowisko + rozwój</strong> (L010). Nie wszystko jest „zapisane w genach". Np. wzrost, masa ciała — zależą też od odżywiania, snu, aktywności.</p>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Most do genetyki</span>
+    <ul>
+      <li><strong>L010</strong> — cechy dziedziczne vs nabyte vs wieloczynnikowe.</li>
+      <li><strong>L011</strong> — jak DNA przechowuje informację, z której powstają białka.</li>
+      <li><strong>L017</strong> — jak przewidywać dziedziczenie jednej cechy (Punnett).</li>
+      <li><strong>L019</strong> — grupy krwi ABO + RhD.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 12. IDĘ DALEJ ================= -->
+<section class="section" id="ambitny">
+  <div class="part-heading"><span class="part-num">12. Idę dalej</span> <span class="level-badge level-ambitious">IDĘ DALEJ</span></div>
+
+  <h3>12.1. Typowa komórka somatyczna vs gamety</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>Typowa komórka somatyczna</th><th>Gameta</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Przykład</strong></td><td>komórka skóry, mięśnia, wątroby</td><td>plemnik, komórka jajowa</td></tr>
+        <tr><td><strong>Liczba chromosomów (człowiek)</strong></td><td>46 = 2n</td><td>23 = n</td></tr>
+        <tr><td><strong>Powstają przez</strong></td><td>mitozę</td><td>mejozę</td></tr>
+        <tr><td><strong>Zestaw DNA</strong></td><td>pełny (46)</td><td>jeden zestaw (23)</td></tr>
+        <tr><td><strong>Mogą się dzielić?</strong></td><td>wiele z nich może dzielić się przez mitozę, ale nie wszystkie robią to aktywnie; np. dojrzałe neurony zwykle się nie dzielą</td><td>nie — są już końcowym produktem mejozy</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>12.2. Krew to nie tylko ABO — wiele układów antygenów</h3>
+  <div class="card card-ambitious">
+    <p>Poza ABO i RhD istnieje <strong>wiele innych układów grupowych</strong>, np. Kell, Duffy i Kidd. Dlatego w medycynie nie wystarczy znać tylko „grupy krwi ABO i RhD" — bada się więcej.</p>
+    <p><strong>W szkole</strong> wystarczy: ABO + RhD. Ale warto wiedzieć, że krew ma więcej „oznaczeń".</p>
+  </div>
+
+  <h3>12.3. HLA — zgodność tkankowa</h3>
+  <div class="card card-ambitious">
+    <p><strong>HLA</strong> (Human Leukocyte Antigen) to układ <strong>wielu genów</strong>, kodujących białka zgodności tkankowej obecne na powierzchni wielu komórek jądrzastych. Układ odpornościowy rozpoznaje po nich „swoje" i „obce".</p>
+    <p><strong>Uwaga:</strong> HLA <strong>nie jest typowym układem antygenów erytrocytów</strong> — nie należy go mylić z ABO i RhD.</p>
+    <p><strong>Znaczenie:</strong> przy przeszczepach (nerka, serce, szpik) im większa zgodność HLA dawcy i biorcy, tym mniejsze ryzyko odrzucenia.</p>
+  </div>
+
+  <h3>12.4. Wiele cech jest wielogenowych</h3>
+  <div class="card card-ambitious">
+    <p>Wzrost, masa ciała, kolor skóry, ciśnienie krwi — te cechy zależą od <strong>wielu genów jednocześnie</strong> i od środowiska.</p>
+    <p><strong>Wniosek:</strong> nie da się ich opisać prostą krzyżówką Aa × Aa jak kolor kwiatu u grochu (L017, L019).</p>
+  </div>
+</section>
+
+<!-- ================= 13. ZAAWANSOWANE ================= -->
+<section class="section" id="zaawansowany">
+  <div class="part-heading"><span class="part-num">13. Zaawansowane</span> <span class="level-badge level-ambitious">ZAAWANSOWANE</span></div>
+
+  <details class="foldout">
+    <summary>mtDNA — dziedziczenie mitochondrialne <span class="foldout-note">(zaawansowane)</span></summary>
+    <div class="card card-ambitious">
+      <p><strong>mtDNA</strong> (DNA mitochondrialny) u człowieka dziedziczy się <strong>prawie zawsze po matce</strong> — bo mitochondria zygoty pochodzą głównie z komórki jajowej.</p>
+      <p><strong>W szkolnym modelu przyjmujemy dziedziczenie matczyne.</strong> Udokumentowano niezwykle rzadkie doniesienia o udziale mtDNA ojcowskiego, ale nie zmienia to reguły omawianej na tym poziomie.</p>
+      <p><strong>Znaczenie:</strong> mtDNA jest wykorzystywany w badaniach genealogicznych oraz w diagnostyce chorób mitochondrialnych. Most: L001 (endosymbioza — mitochondria mają własny DNA).</p>
+    </div>
+  </details>
+
+  <details class="foldout">
+    <summary>Epigenetyka — środowisko wpływa na ekspresję genów <span class="foldout-note">(zaawansowane)</span></summary>
+    <div class="card card-ambitious">
+      <p><strong>Epigenetyka</strong> zajmuje się zmianami w <strong>ekspresji</strong> genów, które nie polegają na zmianie sekwencji DNA (np. dodanie grup metylowych do DNA). To dodatkowy mechanizm, przez który środowisko wpływa na fenotyp.</p>
+      <p><em>To pojęcie zaawansowane — na egzaminie ósmoklasisty nieobowiązkowe. Opis jest uproszczony.</em></p>
+    </div>
+  </details>
+</section>
+
+<!-- ================= 14. KLINIKA ================= -->
+<section class="section" id="klinika">
+  <div class="part-heading"><span class="part-num">14. Klinika błędów</span> <span class="level-badge level-trap">PUŁAPKI</span></div>
+
+  <h3>14.1. Tabela błędów</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Błąd</th><th>Poprawa</th><th>Dlaczego?</th></tr></thead>
+      <tbody>
+        <tr class="error-row"><td>„Krew to narząd"</td><td>Krew to <strong>tkanka płynna</strong></td><td>narząd to np. serce, wątroba</td></tr>
+        <tr class="error-row"><td>„Grupa 0 = brak genów"</td><td>Grupa 0 = genotyp <strong>ii</strong></td><td>każdy ma dwa allele ABO</td></tr>
+        <tr class="error-row"><td>„Każda komórka człowieka ma 46 chromosomów"</td><td>Typowa komórka somatyczna 46; gamety 23; dojrzały erytrocyt nie ma jądra</td><td>wyjątki istnieją</td></tr>
+        <tr class="error-row"><td>„Płeć zależy od komórki jajowej"</td><td>W modelu XX/XY plemnik wnosi X albo Y</td><td>jajo zawsze X</td></tr>
+        <tr class="error-row"><td>„Gameta ma 46 chromosomów"</td><td>gameta ma <strong>23 (n)</strong></td><td>mejoza redukuje 2n → n</td></tr>
+        <tr class="error-row"><td>„HLA to układ erytrocytów"</td><td>HLA to białka zgodności tkankowej na wielu komórkach jądrzastych</td><td>HLA ≠ ABO/RhD</td></tr>
+        <tr class="error-row"><td>„Rh− to choroba"</td><td>Rh− oznacza <strong>brak antygenu D</strong> na erytrocytach</td><td>to wariant, nie choroba</td></tr>
+        <tr class="error-row"><td>„Dojrzały erytrocyt ssaka ma DNA"</td><td>Dojrzały erytrocyt człowieka i większości ssaków nie ma jądra ani organelli</td><td>brak jądrowego DNA i mtDNA</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>14.2. Klinika 2.0 — pięć pełnych przykładów</h3>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 1 — „Gameta ma tyle samo chromosomów co komórka ciała"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Gameta ma 46 chromosomów, jak każda komórka."</li>
+      <li><strong>Znajdź:</strong> Mylenie n z 2n.</li>
+      <li><strong>Popraw:</strong> Gameta ma <strong>23 chromosomy (n)</strong>.</li>
+      <li><strong>Reguła:</strong> Mejoza redukuje 2n → n.</li>
+      <li><strong>Dlaczego:</strong> Po zapłodnieniu 23 + 23 = 46 (zygota 2n).</li>
+      <li><strong>Pułapka:</strong> „Gameta = komórka ciała" — <strong>nie</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 2 — „Matka decyduje o płci"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Matka decyduje o płci, bo daje X albo Y."</li>
+      <li><strong>Znajdź:</strong> Brak rozróżnienia X od Y.</li>
+      <li><strong>Popraw:</strong> Komórka jajowa zawsze ma X. <strong>W modelu XX/XY plemnik</strong> wnosi X lub Y.</li>
+      <li><strong>Reguła:</strong> Chromosom płciowy plemnika wpływa na kombinację XX lub XY.</li>
+      <li><strong>Dlaczego:</strong> jajo X + plemnik X → XX; jajo X + plemnik Y → XY.</li>
+      <li><strong>Pułapka:</strong> „Wina matki, że syn" — <strong>błędne</strong> i krzywdzące.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 3 — „Grupa 0 to brak genów"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Grupa 0 oznacza brak genu grupy krwi."</li>
+      <li><strong>Popraw:</strong> Grupa 0 wynika z genotypu <strong>ii</strong>.</li>
+      <li><strong>Reguła:</strong> Każdy ma dwa allele ABO: Iᴬ, Iᴮ lub i.</li>
+      <li><strong>Dlaczego:</strong> Allel i nie koduje antygenu A ani B — dlatego brak antygenów na erytrocytach.</li>
+      <li><strong>Pułapka:</strong> „0 = nic" — nie. To <strong>konkretna konfiguracja genów</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 4 — „Krew = narząd"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Krew to narząd, jak serce."</li>
+      <li><strong>Popraw:</strong> Krew to <strong>tkanka płynna</strong>.</li>
+      <li><strong>Reguła:</strong> Narząd = zbiór tkanek o określonej funkcji (np. serce).</li>
+      <li><strong>Dlaczego:</strong> Krew nie ma stałego kształtu, krąży w naczyniach.</li>
+      <li><strong>Pułapka:</strong> Potoczne „krew to narząd" — <strong>nie</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 5 — „HLA to układ erytrocytów"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „HLA to kolejny układ antygenów krwi, jak ABO."</li>
+      <li><strong>Popraw:</strong> HLA to <strong>białka zgodności tkankowej</strong> obecne na powierzchni wielu komórek jądrzastych.</li>
+      <li><strong>Reguła:</strong> ABO i RhD dotyczą głównie erytrocytów; HLA to osobny, wielogenowy układ zgodności tkanek.</li>
+      <li><strong>Dlaczego:</strong> HLA ma znaczenie głównie przy przeszczepach, a nie przy zwykłej transfuzji krwinek.</li>
+      <li><strong>Pułapka:</strong> „wszystkie układy antygenów są takie same" — <strong>nie</strong>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 15. OBSERWACJA ================= -->
+<section class="section" id="obserwacja">
+  <div class="part-heading"><span class="part-num">15. Obserwacja / model</span></div>
+  <div class="card card-gray">
+    <pre class="step-flow">Problem: Jakie grupy krwi mają członkowie mojej rodziny?
+Hipoteza: Możliwe różne kombinacje (zgodnie z modelem ABO).
+Materiał: dane rodzinne (grupy krwi rodziców, rodzeństwa, dziadków).
+Obserwacja: Spisujemy grupy krwi.
+Wniosek: Grupa krwi dziedziczy się zgodnie z modelem ABO (L019).
+Ograniczenia: mała próba, brak danych o innych układach (RhD, HLA).
+BHP: nie zbieraj danych identyfikujących osoby. Użyj fikcyjnej tabeli
+     albo anonimowych, dobrowolnie podanych danych. Grupa krwi nie służy
+     do ustalania ojcostwa ani pokrewieństwa — zgodność lub niezgodność
+     prostego modelu ABO nie wystarcza do takich wniosków.</pre>
+    <p style="margin-top:8px;font-style:italic;color:var(--color-text-muted);">To <strong>model ankietowy</strong>, nie eksperyment laboratoryjny. Wnioski z małej próby są ograniczone.</p>
+  </div>
+</section>
+
+<!-- ================= 16. ĆWICZENIA ================= -->
+<section class="section" id="cwiczenia">
+  <div class="part-heading"><span class="part-num">16. Ćwiczenia</span> <span class="level-badge level-training">TRENING</span></div>
+
+  <h3>16A. Mini-check (5 pytań)</h3>
+  <div class="exercise">
+    <ol>
+      <li>Jakie układy człowieka są istotne dla genetyki?</li>
+      <li>Ile chromosomów ma gameta?</li>
+      <li>Ile chromosomów ma zygota?</li>
+      <li>Kto wnosi chromosom X albo Y w typowym modelu szkolnym?</li>
+      <li>Co to antygen?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>Krwionośny, rozrodczy, nerwowy/hormonalny, odpornościowy.</li>
+        <li>23 (n).</li>
+        <li>46 (2n) — po połączeniu dwóch gamet.</li>
+        <li>Plemnik — w typowym modelu szkolnym wnosi X albo Y; jajo zawsze X.</li>
+        <li>Cząsteczka (białko/cukier) na powierzchni komórki, rozpoznawana przez układ odpornościowy.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h3>16B. Ćwiczenie prowadzone</h3>
+  <div class="exercise">
+    <p><strong>Dane:</strong> Matka 0 (ii), ojciec AB (IᴬIᴮ).</p>
+    <p><strong>Pytanie:</strong> Jakie grupy może mieć dziecko?</p>
+    <p><strong>Rozumowanie:</strong></p>
+    <ol>
+      <li>Gamety matki: <code>i</code>, <code>i</code>.</li>
+      <li>Gamety ojca: <code>Iᴬ</code>, <code>Iᴮ</code>.</li>
+      <li>Możliwe genotypy dziecka: <code>Iᴬi</code> (grupa A) lub <code>Iᴮi</code> (grupa B).</li>
+    </ol>
+    <p><strong>Odpowiedź:</strong> Dziecko może mieć grupę A lub B (nigdy 0, nigdy AB).</p>
+  </div>
+
+  <h3>16C. Ćwiczenia samodzielne</h3>
+
+  <h4>A. Podstawa <span class="level-badge level-basic">A</span></h4>
+  <div class="exercise">
+    <ol>
+      <li>Jakie układy człowieka znasz?</li>
+      <li>Ile chromosomów ma gameta?</li>
+      <li>Co to zygota?</li>
+      <li>Kto wnosi chromosom Y?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>Np. krwionośny, rozrodczy, nerwowy, odpornościowy, pokarmowy.</li>
+        <li>23 (n).</li>
+        <li>Komórka powstała z połączenia plemnika i komórki jajowej — ma 2n = 46.</li>
+        <li>Plemnik — w typowym modelu szkolnym.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h4>B. Trening <span class="level-badge level-training">B</span></h4>
+  <div class="exercise">
+    <ol start="5">
+      <li><strong>Matka ma fenotyp A, ojciec fenotyp B.</strong> Wypisz wszystkie grupy krwi, które dziecko <em>może</em> mieć, oraz wyjaśnij, od jakich genotypów rodziców to zależy.</li>
+      <li>Dlaczego grupy krwi są ważne przy transfuzji?</li>
+      <li>Popraw: „Gameta ma 46 chromosomów".</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol start="5">
+        <li><strong>Odpowiedź:</strong> Dziecko może mieć grupę A, B, AB lub 0 — zależnie od genotypów rodziców. Jeśli oboje są heterozygotami (Iᴬi × Iᴮi), możliwe są wszystkie 4 grupy. Jeśli rodzic A to IᴬIᴬ, a rodzic B to IᴮIᴮ — wszystkie dzieci będą AB. Jeśli tylko jedno jest heterozygotą, wykluczamy jedną z grup (np. 0).</li>
+        <li>Bo niezgodna grupa może wywołać reakcję — przeciwciała biorcy mogą zaatakować krwinki dawcy. W medycynie sprawdza się też RhD i inne układy oraz wykonuje próby zgodności.</li>
+        <li>Gameta ma <strong>23</strong> chromosomy (n), nie 46.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h4>C. Ambitne <span class="level-badge level-ambitious">C</span></h4>
+  <div class="exercise">
+    <ol start="8">
+      <li>Matka 0, ojciec AB — jakie grupy krwi może mieć dziecko? Uzasadnij.</li>
+      <li>Dlaczego krew ma wiele układów antygenów?</li>
+      <li>Wyjaśnij różnicę: ABO, RhD, HLA.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol start="8">
+        <li>Grupa A lub B. Matka ii daje tylko <code>i</code>; ojciec AB daje <code>Iᴬ</code> lub <code>Iᴮ</code>. Dziecko: Iᴬi (A) lub Iᴮi (B).</li>
+        <li>Na erytrocytach jest wiele różnych antygenów; każdy układ to odrębne geny.</li>
+        <li><strong>ABO</strong> — antygeny A i B na erytrocytach. <strong>RhD</strong> — antygen D (jeden konkretny). <strong>HLA</strong> — białka zgodności tkankowej na wielu komórkach jądrzastych, nie tylko erytrocytach; istotne przy przeszczepach.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h4>D. Zaawansowane <span class="level-badge level-ambitious">D</span></h4>
+  <div class="exercise">
+    <ol start="11">
+      <li>Co to HLA? Do czego służy?</li>
+      <li>Co to konflikt RhD (idea)?</li>
+      <li>Czy dziecko może mieć grupę AB, jeśli matka ma 0?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol start="11">
+        <li>HLA = układ zgodności tkankowej — wiele genów kodujących białka zgodności tkankowej na powierzchni wielu komórek jądrzastych. Istotny przy przeszczepach. <em>Nie jest typowym układem erytrocytów.</em></li>
+        <li>Sytuacja, gdy matka RhD− a płód RhD+. Nie każda taka ciąża prowadzi do uczulenia. Jeśli matka wytworzy przeciwciała anty-D, mogą one zagrozić kolejnemu płodowi RhD+. Profilaktyka immunoglobuliną anty-D ogranicza ryzyko uczulenia.</li>
+        <li><strong>Nie</strong> — matka ii nie może dać Iᴬ ani Iᴮ.</li>
+      </ol>
+    </details>
+  </div>
+
+  <h3>Drabinka trudności</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Poziom</th><th>Zadanie</th></tr></thead>
+      <tbody>
+        <tr><td>ODTWÓRZ</td><td>Ile chromosomów ma gameta? Zygota?</td></tr>
+        <tr><td>ZASTOSUJ</td><td>Ustal grupy krwi dziecka na podstawie genotypów rodziców.</td></tr>
+        <tr><td>WYJAŚNIJ</td><td>Dlaczego grupy krwi są ważne przy transfuzji?</td></tr>
+        <tr><td>ODKRYJ</td><td>Kto wnosi chromosom Y?</td></tr>
+        <tr><td>POŁĄCZ</td><td>Połącz krew z genetyką (ABO, L019).</td></tr>
+        <tr><td>ZAKWESTIONUJ</td><td>Czy dziecko może mieć grupę AB, jeśli matka ma 0?</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 17. QUIZ ================= -->
+<section class="section" id="quiz">
+  <div class="part-heading"><span class="part-num">17. Quiz</span> „dowód, nie zgadywanie" <span class="level-badge level-ambitious">KONKURS</span></div>
+  <p>Przy każdym schemacie odpowiedz na cztery pytania: <strong>co widzę? czego nie widzę? jakie są dwie możliwe odpowiedzi? jakiej informacji brakuje, aby rozstrzygnąć?</strong></p>
+
+  <div class="exercise">
+    <p><strong>Schemat 1.</strong> Dziecko ma grupę 0, matka ma grupę A, ojciec ma grupę B.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><span class="ans-part"><b>Co widzę:</b> dziecko ii — musi dostać <code>i</code> od obojga rodziców.</span></p>
+      <p><span class="ans-part"><b>Czego nie widzę:</b> czy rodzice są homo-, czy heterozygotami.</span></p>
+      <p><span class="ans-part"><b>Dwie możliwości:</b> matka Iᴬi lub IᴬIᴬ; ojciec Iᴮi lub IᴮIᴮ. Ale skoro dziecko ma ii, oboje muszą być heterozygotami: Iᴬi × Iᴮi.</span></p>
+      <p><span class="ans-part"><b>Wniosek:</b> rodzice to Iᴬi (A) i Iᴮi (B). Dziecko mogło dostać <code>i</code> od obojga.</span></p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>Schemat 2.</strong> Matka ma grupę 0, ojciec ma grupę A, dziecko ma grupę AB.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><span class="ans-part"><b>Co widzę:</b> matka ii, ojciec A (IᴬIᴬ lub Iᴬi), dziecko AB (IᴬIᴮ).</span></p>
+      <p><span class="ans-part"><b>Sprzeczność:</b> dziecko AB wymaga Iᴬ od jednego i Iᴮ od drugiego rodzica. Matka ii nie ma Iᴮ — nie może dać Iᴮ. Ojciec A nie ma Iᴮ — nie może dać Iᴮ.</span></p>
+      <p><span class="ans-part"><b>Wniosek:</b> <strong>taka sytuacja jest niemożliwa</strong> przy założeniu, że matka jest biologiczną matką, a ojciec biologicznym ojcem.</span></p>
+      <p><span class="ans-part"><b>Informacja rozstrzygająca:</b> gdyby ojciec był AB (IᴬIᴮ), a matka 0 (ii) — dziecko mogłoby mieć A lub B, ale nie AB. Wciąż nie AB.</span></p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>Schemat 3.</strong> Rodzice mają grupę A i B, dziecko ma grupę 0.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><span class="ans-part"><b>Co widzę:</b> rodzice A i B, dziecko 0 (ii).</span></p>
+      <p><span class="ans-part"><b>Wniosek:</b> dziecko ii musi dostać <code>i</code> od obojga. Rodzic A musi być Iᴬi, rodzic B — Iᴮi.</span></p>
+      <p><span class="ans-part"><b>Możliwe?</b> Tak — jeśli oboje rodzice są heterozygotami.</span></p>
+      <p><span class="ans-part"><b>Informacja rozstrzygająca:</b> genotypy rodziców. Z fenotypu A/B nie widać, czy niosą <code>i</code>.</span></p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 18. ZADANIA EGZAMINACYJNE ================= -->
+<section class="section" id="egzamin">
+  <div class="part-heading"><span class="part-num">18. Zadania egzaminacyjne</span> <span class="level-badge level-exam">E8 — z uzasadnieniem</span></div>
+
+  <div class="exercise exam">
+    <p style="font-weight:600;">Zadanie 1</p>
+    <p>Matka ma grupę krwi 0, ojciec ma grupę krwi B. Dziecko ma grupę krwi B. Czy to możliwe? Uzasadnij, posługując się genotypami.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><strong>Tak, jest to możliwe.</strong></p>
+      <p>Matka 0 = genotyp ii → daje tylko allel <code>i</code>.<br>
+      Ojciec B = genotyp IᴮIᴮ lub Iᴮi.<br>
+      Dziecko B = genotyp IᴮIᴮ lub Iᴮi. Skoro matka daje <code>i</code>, dziecko musi mieć genotyp <strong>Iᴮi</strong> (grupa B). Ojciec musi więc mieć co najmniej jeden allel Iᴮ — co jest zgodne z grupą B.</p>
+      <p><strong>Wniosek:</strong> dziecko może mieć grupę B.</p>
+    </details>
+  </div>
+
+  <div class="exercise exam">
+    <p style="font-weight:600;">Zadanie 2</p>
+    <p>Uczeń napisał: „Gameta ma 46 chromosomów, bo jest komórką ciała."</p>
+    <p><strong>Oceń prawdziwość zdania i wyjaśnij błąd.</strong></p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><strong>Zdanie jest fałszywe.</strong></p>
+      <p><strong>Wyjaśnienie:</strong> Gameta nie jest komórką ciała. Gameta to komórka rozrodcza o liczbie chromosomów <strong>n = 23</strong>. Powstaje w procesie mejozy, która redukuje 2n → n. Dzięki temu po zapłodnieniu (23 + 23 = 46) zygota znów ma 2n = 46.</p>
+    </details>
+  </div>
+
+  <div class="exercise exam">
+    <p style="font-weight:600;">Zadanie 3</p>
+    <p>Kobieta z grupą krwi RhD− spodziewa się dziecka. Ojciec dziecka ma grupę RhD+. Wyjaśnij, dlaczego lekarz może zalecić profilaktykę (podanie immunoglobulin anty-D).</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p>Jeżeli dziecko odziedziczy RhD+ po ojcu, jego erytrocyty będą miały antygen D. Krew płodu może wejść w kontakt z krwią matki (np. podczas porodu). <strong>Nie każda taka ciąża prowadzi do uczulenia</strong>, ale jeśli organizm matki RhD− wytworzy przeciwciała anty-D, mogą one zagrozić kolejnemu płodowi RhD+.</p>
+      <p>Dlatego podaje się immunoglobuliny anty-D — żeby <strong>ograniczyć ryzyko uczulenia</strong> matki.</p>
+    </details>
+  </div>
+
+  <div class="exercise exam">
+    <p style="font-weight:600;">Zadanie 4</p>
+    <p>Wyjaśnij jednym zdaniem, dlaczego „gameta ma 23 chromosomy" jest informacją kluczową dla zrozumienia dziedziczenia.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p>Ponieważ po połączeniu dwóch gamet (23 + 23 = 46) powstaje zygota z 2n = 46 — stała liczba chromosomów w każdym pokoleniu. Bez redukcji liczby chromosomów w mejozie liczba chromosomów podwajałaby się w każdym pokoleniu.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 19. FISZKI ================= -->
+<section class="section" id="fiszki">
+  <div class="part-heading"><span class="part-num">19. Fiszki</span> <span class="level-badge level-training">POWTÓRKA</span></div>
+
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Ile chromosomów ma gameta człowieka?</span>
+      <span class="back"><strong>23 chromosomy (n)</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Ile chromosomów ma zygota człowieka?</span>
+      <span class="back"><strong>46 chromosomów (2n)</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Kto wnosi chromosom X albo Y w typowym modelu szkolnym?</span>
+      <span class="back"><strong>Plemnik</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jakie grupy krwi wyróżniamy w układzie ABO?</span>
+      <span class="back"><strong>0, A, B, AB</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to HLA?</span>
+      <span class="back"><strong>Układ białek zgodności tkankowej na wielu komórkach jądrzastych — istotny przy przeszczepach; nie jest typowym układem erytrocytów</strong></span>
+      <span class="card-tag tag-ambitious">idę dalej</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czy krew to narząd?</span>
+      <span class="back"><strong>Nie — to tkanka płynna</strong></span>
+      <span class="card-tag tag-trap">pułapka</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to antygen?</span>
+      <span class="back"><strong>Cząsteczka na powierzchni komórki rozpoznawana przez układ odpornościowy</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jaka jest różnica między n a 2n?</span>
+      <span class="back"><strong>n = haploidalna (gameta, 23); 2n = diploidalna (typowa komórka somatyczna, 46)</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Od kogo syn dostaje chromosom X?</span>
+      <span class="back"><strong>Od matki (od ojca dostaje Y)</strong></span>
+      <span class="card-tag tag-ambitious">idę dalej</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to konflikt RhD?</span>
+      <span class="back"><strong>Sytuacja matka RhD− / płód RhD+ — nie każda prowadzi do uczulenia; profilaktyka immunoglobuliną anty-D ogranicza ryzyko</strong></span>
+      <span class="card-tag tag-ambitious">idę dalej</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czy każda komórka człowieka ma 46 chromosomów?</span>
+      <span class="back"><strong>Nie — typowa komórka somatyczna 46; gamety 23; dojrzały erytrocyt nie ma jądra</strong></span>
+      <span class="card-tag tag-exam">E8</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Jak zapisujemy genotyp grupy 0?</span>
+      <span class="back"><strong>ii</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co oznacza Rh+ i Rh−?</span>
+      <span class="back"><strong>Rh+ = obecny antygen D; Rh− = brak antygenu D</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Gdzie powstają gamety u człowieka?</span>
+      <span class="back"><strong>W gonadach: jądra (plemniki) i jajniki (komórki jajowe)</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Dlaczego jedna cecha może zależeć od wielu genów?</span>
+      <span class="back"><strong>Bo istnieje dziedziczenie wielogenowe (np. wzrost, kolor skóry)</strong></span>
+      <span class="card-tag tag-ambitious">idę dalej</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Skąd się bierze DNA mitochondrialne (mtDNA) i jak się dziedziczy?</span>
+      <span class="back"><strong>Z mitochondriów; w modelu szkolnym prawie zawsze po matce</strong></span>
+      <span class="card-tag tag-ambitious">zaawansowane</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czy z grupy krwi można ustalić ojcostwo?</span>
+      <span class="back"><strong>Nie — grupa krwi nie służy do ustalania ojcostwa; używa się specjalistycznych badań DNA</strong></span>
+      <span class="card-tag tag-trap">pułapka</span>
+    </button>
+  </div>
+</section>
+
+<!-- ================= 20. TEST ================= -->
+<section class="section" id="test">
+  <div class="part-heading"><span class="part-num">20. Test końcowy (3+2+2+1)</span> <span class="level-badge level-training">TRENING</span></div>
+  <p style="font-size:0.85rem;color:var(--color-text-muted);">Format 3+2+2+1: 3 zadania podstawowe, 2 treningowe, 2 ambitne, 1 zaawansowane.</p>
+  <div class="exercise">
+    <ol>
+      <li>(P) Ile chromosomów ma gameta?</li>
+      <li>(P) Ile chromosomów ma zygota?</li>
+      <li>(P) Kto wnosi chromosom Y w typowym modelu szkolnym?</li>
+      <li>(T) Matka 0, ojciec AB — jakie grupy krwi może mieć dziecko?</li>
+      <li>(T) Popraw: „Gameta ma 46 chromosomów".</li>
+      <li>(A) Dlaczego grupy krwi są ważne przy transfuzji?</li>
+      <li>(A) Co to HLA? Czym różni się od ABO i RhD?</li>
+      <li>(Z) Matka 0, dziecko AB — czy to możliwe? Uzasadnij.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>23 (n).</li>
+        <li>46 (2n).</li>
+        <li>Plemnik — w typowym modelu szkolnym wnosi X albo Y; jajo zawsze X.</li>
+        <li>Grupa A (Iᴬi) lub grupa B (Iᴮi).</li>
+        <li>Gameta ma 23 chromosomy (n), nie 46.</li>
+        <li>Bo niezgodna grupa może wywołać reakcję układu odpornościowego — przeciwciała mogą zaatakować krwinki dawcy. W medycynie sprawdza się też RhD i inne układy oraz wykonuje próby zgodności.</li>
+        <li>HLA = układ białek zgodności tkankowej na wielu komórkach jądrzastych; nie jest typowym układem erytrocytów, jak ABO i RhD. Istotny głównie przy przeszczepach.</li>
+        <li><strong>Nie jest możliwe</strong> — matka ii daje tylko <code>i</code>, nie może dać Iᴬ ani Iᴮ. Grupa AB wymaga obu tych alleli.</li>
+      </ol>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 21. CHECKLISTA ================= -->
+<section class="section" id="checklista">
+  <div class="part-heading"><span class="part-num">21. Checklista</span></div>
+  <div class="card card-correct">
+    <ul style="list-style:none;padding-left:0;">
+      <li>☐ Wiem, że cechy organizmu wynikają z komórek i genów.</li>
+      <li>☐ Wiem, które układy człowieka są istotne dla genetyki.</li>
+      <li>☐ Znam różnicę: gameta (n = 23) vs zygota (2n = 46).</li>
+      <li>☐ Wiem, że w modelu XX/XY plemnik wnosi X albo Y.</li>
+      <li>☐ Rozumiem znaczenie grup krwi (ABO, RhD).</li>
+      <li>☐ Rozumiem, że HLA ≠ ABO/RhD.</li>
+      <li>☐ Wiem, że krew to tkanka, nie narząd.</li>
+      <li>☐ Wiem, że dojrzały erytrocyt nie ma jądra ani organelli.</li>
+      <li>☐ Znam ideę konfliktu RhD (idę dalej).</li>
+      <li>☐ Wiem, że istnieje dziedziczenie wielogenowe (idę dalej).</li>
+      <li>☐ Wiem, że grupa krwi nie służy do ustalania ojcostwa.</li>
+      <li>☐ Rozumiem różnicę: „typowa komórka somatyczna" vs „każda komórka".</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 22. MAPA ================= -->
+<section class="section" id="mapa">
+  <div class="part-heading"><span class="part-num">22. Mapa pojęć</span></div>
+  <div class="diagram">
+    <svg viewBox="0 0 660 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa pojęć L002">
+      <rect x="240" y="10" width="180" height="42" rx="10" fill="#2b6cb0"/>
+      <text x="330" y="36" font-size="14" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-weight="700">CZŁOWIEK</text>
+
+      <line x1="330" y1="52" x2="330" y2="78" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="90" y1="78" x2="570" y2="78" stroke="#6b7a8d" stroke-width="2"/>
+
+      <line x1="90" y1="78" x2="90" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="240" y1="78" x2="240" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="420" y1="78" x2="420" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="570" y1="78" x2="570" y2="108" stroke="#6b7a8d" stroke-width="2"/>
+
+      <rect x="20" y="108" width="140" height="60" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+      <text x="90" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">krew</text>
+      <text x="90" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">ABO + RhD + HLA</text>
+      <text x="90" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">→ L019</text>
+
+      <rect x="175" y="108" width="130" height="60" rx="8" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
+      <text x="240" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">gamety</text>
+      <text x="240" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">n = 23</text>
+      <text x="240" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">→ L015 (mejoza)</text>
+
+      <rect x="355" y="108" width="130" height="60" rx="8" fill="#dbeafe" stroke="#2b6cb0" stroke-width="2"/>
+      <text x="420" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">zygota</text>
+      <text x="420" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">2n = 46</text>
+      <text x="420" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">23 + 23</text>
+
+      <rect x="500" y="108" width="140" height="60" rx="8" fill="#e1bee7" stroke="#7c3aed" stroke-width="2"/>
+      <text x="570" y="130" font-size="11" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">płeć</text>
+      <text x="570" y="146" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">XX / XY (model)</text>
+      <text x="570" y="159" font-size="9" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">→ L018</text>
+
+      <line x1="330" y1="168" x2="330" y2="200" stroke="#6b7a8d" stroke-width="2"/>
+
+      <rect x="140" y="200" width="380" height="50" rx="8" fill="#2b6cb0"/>
+      <text x="330" y="224" font-size="13" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-weight="700">CECHY ORGANIZMU = KOMÓRKI + GENY</text>
+      <text x="330" y="240" font-size="10" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI">cecha = geny + środowisko + rozwój (L010)</text>
+
+      <line x1="330" y1="250" x2="330" y2="278" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="130" y1="278" x2="530" y2="278" stroke="#6b7a8d" stroke-width="2"/>
+
+      <line x1="130" y1="278" x2="130" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="40" y="305" width="180" height="60" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="130" y="325" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">układ krwionośny</text>
+      <text x="130" y="340" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">transport + antygeny</text>
+      <text x="130" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">ABO, RhD, HLA</text>
+
+      <line x1="330" y1="278" x2="330" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="240" y="305" width="180" height="60" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="330" y="325" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">układ rozrodczy</text>
+      <text x="330" y="340" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">mejoza → gamety</text>
+      <text x="330" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">redukcja 2n → n</text>
+
+      <line x1="530" y1="278" x2="530" y2="305" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="440" y="305" width="180" height="60" rx="8" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="530" y="325" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">układ odpornościowy</text>
+      <text x="530" y="340" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">anty­geny i przeciwciała</text>
+      <text x="530" y="355" font-size="9" text-anchor="middle" fill="#155724" font-family="Segoe UI">przeszczepy, konflikt RhD</text>
+
+      <line x1="330" y1="365" x2="330" y2="400" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="80" y="400" width="500" height="50" rx="8" fill="#fef3c7" stroke="#d69e2e"/>
+      <text x="330" y="423" font-size="12" text-anchor="middle" fill="#78350f" font-family="Segoe UI" font-weight="700">Most do genetyki: krew → L019 · gamety → L015 · płeć → L018</text>
+      <text x="330" y="440" font-size="10" text-anchor="middle" fill="#78350f" font-family="Segoe UI">Wszystkie cechy ciała wynikają z komórek i genów</text>
+    </svg>
+    <div class="caption">Mapa pojęć L002 — od biologii człowieka do genetyki.</div>
+  </div>
+</section>
+
+<!-- ================= 23. CO DALEJ ================= -->
+<section class="section" id="dalej">
+  <div class="part-heading"><span class="part-num">23. Co dalej?</span></div>
+  <div class="card card-hint">
+    <p><strong>Następna lekcja:</strong> L003 — diagnoza startowa genetyki (sprawdzenie, co już wiesz przed L010–L021).</p>
+    <p><strong>Most wstecz:</strong> L001 (komórka → jądro = większość DNA) → L002 (krew, gamety) → L003 (diagnoza) → L010 (cechy) → L011 (DNA).</p>
+  </div>
+
+  <h3>Mosty do kolejnych lekcji</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Lekcja</th><th>Co wnosi z L002</th></tr></thead>
+      <tbody>
+        <tr><td><strong>L003 (diagnoza)</strong></td><td>Sprawdzenie wiedzy o komórce, krwi, gametach i płci.</td></tr>
+        <tr><td><strong>L010 (cechy)</strong></td><td>Skąd się biorą cechy organizmu — z komórek i genów.</td></tr>
+        <tr><td><strong>L011 (DNA)</strong></td><td>Krew jako jedno ze źródeł DNA; leukocyty mają jądro.</td></tr>
+        <tr><td><strong>L015 (mejoza)</strong></td><td>Gamety: n = 23; redukcja 2n → n.</td></tr>
+        <tr><td><strong>L018 (X-linked)</strong></td><td>Płeć: XX/XY (model szkolny); ojciec nie daje X synowi.</td></tr>
+        <tr><td><strong>L019 (ABO + RhD)</strong></td><td>Grupy krwi: allele Iᴬ, Iᴮ, i; kodominacja.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 24. SŁOWNIK ================= -->
+<section class="section" id="slownik">
+  <div class="part-heading"><span class="part-num">24. Słownik</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+      <tbody>
+        <tr><td>Krew</td><td>Tkanka płynna — osocze + elementy morfotyczne (erytrocyty, leukocyty, trombocyty)</td></tr>
+        <tr><td>Erytrocyt</td><td>Czerwona krwinka — transportuje tlen dzięki hemoglobinie; dojrzały erytrocyt człowieka i większości ssaków nie ma jądra ani organelli</td></tr>
+        <tr><td>Antygen</td><td>Cząsteczka na powierzchni komórki, rozpoznawana przez układ odpornościowy</td></tr>
+        <tr><td>Gameta</td><td>Komórka rozrodcza (n = 23 u człowieka)</td></tr>
+        <tr><td>Zygota</td><td>Komórka po połączeniu gamet (2n = 46 u człowieka)</td></tr>
+        <tr><td>2n</td><td>Diploidalna liczba chromosomów (46 u człowieka)</td></tr>
+        <tr><td>n</td><td>Haploidalna liczba chromosomów (23 u człowieka)</td></tr>
+        <tr><td>HLA</td><td>Układ białek zgodności tkankowej na wielu komórkach jądrzastych; istotny przy przeszczepach; nie jest typowym układem erytrocytów</td></tr>
+        <tr><td>RhD</td><td>Układ grupowy krwi — obecność/brak antygenu D na erytrocytach</td></tr>
+        <tr><td>Konflikt RhD</td><td>Sytuacja matka RhD− / płód RhD+; nie każda prowadzi do uczulenia; profilaktyka immunoglobuliną anty-D</td></tr>
+        <tr><td>Mejoza</td><td>Podział redukcyjny (2n → n) — patrz L015</td></tr>
+        <tr><td>Mitoza</td><td>Podział zachowawczy (2n → 2n) — patrz L014</td></tr>
+        <tr><td>mtDNA</td><td>DNA mitochondrialny — w modelu szkolnym dziedziczony po matce</td></tr>
+        <tr><td>Dziedziczenie wielogenowe</td><td>Cecha zależy od wielu genów (np. wzrost, kolor skóry)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 25. DODATEK (zwijany) ================= -->
+<section class="section" id="dodatek">
+  <div class="part-heading"><span class="part-num">25. Dodatek</span> <span class="level-badge level-ambitious">ZAWWANSOWANE / DLA CHĘTNYCH</span></div>
+
+  <details class="foldout">
+    <summary>Krew w liczbach <span class="foldout-note">(dla chętnych)</span></summary>
+    <div class="card card-ambitious">
+      <ul>
+        <li>Dorosły człowiek ma ok. <strong>4,5–6 litrów</strong> krwi.</li>
+        <li>Jeden erytrocyt żyje ok. <strong>120 dni</strong>.</li>
+        <li>W jednej kropli krwi jest ok. <strong>5 milionów erytrocytów</strong>.</li>
+        <li>Szpik kostny produkuje ok. <strong>2 milionów erytrocytów na sekundę</strong>.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="foldout">
+    <summary>Ciekawostki o chromosomach <span class="foldout-note">(dla chętnych)</span></summary>
+    <div class="card card-ambitious">
+      <ul>
+        <li>Największy chromosom człowieka (chromosom 1) zawiera ok. 250 milionów par zasad.</li>
+        <li>Chromosom Y jest znacznie mniejszy niż X i zawiera mniej genów.</li>
+        <li>U człowieka chromosomy płci oznaczamy literami X i Y — w innych organizmach mogą być inne systemy (np. u ptaków: ZZ/ZW).</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="foldout">
+    <summary>Zadanie olimpijskie <span class="foldout-note">(dla chętnych)</span></summary>
+    <div class="card card-warning">
+      <p><strong>Pytanie:</strong> Matka ma grupę 0 (ii), ojciec ma grupę AB (IᴬIᴮ). Jakie grupy krwi mogą mieć ich dzieci? Uzasadnij, korzystając z gamet.</p>
+      <p><strong>Rozwiązanie:</strong></p>
+      <ul>
+        <li>Gamety matki: wszystkie <code>i</code>.</li>
+        <li>Gamety ojca: <code>Iᴬ</code> lub <code>Iᴮ</code>.</li>
+        <li>Możliwe genotypy dziecka: <code>Iᴬi</code> (grupa A) lub <code>Iᴮi</code> (grupa B).</li>
+      </ul>
+      <p><strong>Odpowiedź:</strong> Dziecko może mieć grupę A lub B. <strong>Nigdy 0 ani AB</strong> — matka nie ma Iᴬ/Iᴮ, ojciec nie ma i.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ================= 26. Z ŻYCIA ================= -->
+<section class="section" id="zycie">
+  <div class="part-heading"><span class="part-num">26. Zadania z życia codziennego</span></div>
+
+  <div class="exercise">
+    <p><strong>1. Dlaczego grupy krwi są ważne przy transfuzji?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Bo przy niezgodnej grupie krwi przeciwciała biorcy mogą zaatakować erytrocyty dawcy. W medycynie bada się zgodność ABO, RhD i innych antygenów oraz wykonuje próby zgodności. Dlatego przed transfuzją bada się grupę krwi i RhD.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>2. Jak dziedziczy się płeć u człowieka w typowym modelu szkolnym?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Komórka jajowa zawsze ma chromosom X. Plemnik ma X albo Y. Jeśli plemnik wnosi X — powstaje zygota XX (w modelu: rozwój żeński). Jeśli wnosi Y — powstaje zygota XY (w modelu: rozwój męski).</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>3. Dlaczego matka RhD− może potrzebować profilaktyki w ciąży z płodem RhD+?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Jeśli matka jest RhD−, a płód RhD+, krew płodu może wejść w kontakt z krwią matki. <strong>Nie każda taka ciąża prowadzi do uczulenia</strong>, ale jeśli organizm matki wytworzy przeciwciała anty-D, mogą one zagrozić kolejnemu płodowi RhD+. Dlatego podaje się immunoglobuliny anty-D — żeby ograniczyć ryzyko uczulenia.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>4. Dlaczego rodzeństwo może mieć różne grupy krwi?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Bo każde dziecko dostaje inną kombinację alleli od rodziców. Rodzice heterozygotyczni (np. Iᴬi × Iᴮi) mogą mieć dzieci z grupą A, B, AB lub 0 — zależnie od tego, które allele trafią do danej zygoty.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>5. Dlaczego krew jest dobrym materiałem do badania DNA?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary>
+      <p>Bo leukocyty w krwi mają jądra komórkowe z DNA. Można z nich wyizolować materiał genetyczny. <em>Uwaga: dojrzałe erytrocyty człowieka i większości ssaków nie mają jądra ani organelli — nie zawierają więc ani jądrowego DNA, ani mtDNA. Krew nie jest jednak jedynym możliwym źródłem DNA.</em></p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 27. JAK SIĘ UCZYĆ ================= -->
+<section class="section" id="jak-sie-uczyc">
+  <div class="part-heading"><span class="part-num">27. Jak się uczyć tej lekcji</span></div>
+
+  <div class="card card-hint">
+    <span class="card-label">Plan nauki</span>
+    <ol>
+      <li><strong>Ściąga (sekcja 5):</strong> przeczytaj definicję mostu, tabelę układów, trzy liczby, krew i płeć. Zanotuj 3 rzeczy, które są dla Ciebie nowe.</li>
+      <li><strong>Widgety (sekcja 6):</strong> przejdź przez krew jako źródło danych, gameta → zygota, XX/XY, ABO. Sprawdź, czy rozumiesz wyniki.</li>
+      <li><strong>Przykład prowadzony (6.7):</strong> przepisz do zeszytu. Sprawdź się na kilku przykładach.</li>
+      <li><strong>Nowe sekcje (9–10):</strong> „Co wynika, a czego nie wolno wnioskować?" i „Język precyzyjnego biologa".</li>
+      <li><strong>Klinika błędów (14):</strong> przeczytaj tabelę błędów i 5 pełnych przykładów.</li>
+      <li><strong>Ćwiczenia (16):</strong> zrób mini-check, potem ćwiczenia A i B. Potem C, jeśli masz czas. Na końcu D.</li>
+      <li><strong>Fiszki (19):</strong> przejrzyj wszystkie fiszki. Zaznacz te, których nie pamiętasz.</li>
+      <li><strong>Test (20):</strong> rozwiąż test końcowy. Sprawdź odpowiedzi.</li>
+      <li><strong>Powtórki:</strong> wróć do materiału po 1 dniu, po 3 dniach, po tygodniu, po miesiącu.</li>
+    </ol>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Trzy ścieżki nauki</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ścieżka</th><th>Obowiązkowe</th><th>Rozwinięcie</th></tr></thead>
+        <tbody>
+          <tr><td><strong>E8: muszę umieć</strong></td><td>2n/n, gameta/zygota, XX/XY, ABO, RhD, krew jako tkanka, ćwiczenia A–B</td><td>HLA, mtDNA, konflikt RhD, epigenetyka</td></tr>
+          <tr><td><strong>Rozumiem</strong></td><td>Układy istotne dla genetyki, skąd się bierze cecha, przykład prowadzony</td><td>Wielogenowość, inne układy grupowe</td></tr>
+          <tr><td><strong>Idę dalej</strong></td><td>HLA, konflikt RhD, dziedziczenie wielogenowe</td><td>mtDNA, epigenetyka, szczegóły transfuzjologii</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Powtórki rozłożone w czasie (spaced repetition)</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Kiedy</th><th>Co</th></tr></thead>
+        <tbody>
+          <tr><td>Po lekcji</td><td>ściąga + 5 fiszek</td></tr>
+          <tr><td>+1 dzień</td><td>fiszki + tabela układów</td></tr>
+          <tr><td>+3 dni</td><td>Klinika błędów + przykład prowadzony</td></tr>
+          <tr><td>+1 tydzień</td><td>test + powtórka fiszek</td></tr>
+          <tr><td>+1 miesiąc</td><td>mapa pojęć + zadania z życia</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:10px;"><strong>Zasada 3 pytań po powtórce:</strong></p>
+    <ol>
+      <li>Co już umiem?</li>
+      <li>Co jeszcze mylę?</li>
+      <li>Co mnie zaskoczyło?</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 28. POŁĄCZENIA (zwijane) ================= -->
+<section class="section" id="polaczenia">
+  <div class="part-heading"><span class="part-num">28. Połączenia międzyprzedmiotowe</span></div>
+
+  <details class="foldout">
+    <summary>Pokaż tabelę połączeń międzyprzedmiotowych <span class="foldout-note">(dla chętnych)</span></summary>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Przedmiot</th><th>Jak łączy się z L002</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Chemia</strong></td><td>Skład krwi: białka (hemoglobina, albuminy), sole mineralne, woda, pH. Antygeny to białka lub cukry.</td></tr>
+          <tr><td><strong>Fizyka</strong></td><td>Ciśnienie krwi, przepływ w naczyniach. Dyfuzja i osmoza w transporcie przez błony.</td></tr>
+          <tr><td><strong>Matematyka</strong></td><td>Prawdopodobieństwo (grupy krwi, płeć). Statystyka (dane rodzinne).</td></tr>
+          <tr><td><strong>Medycyna</strong></td><td>Transfuzje, przeszczepy, konflikt RhD, diagnostyka krwi.</td></tr>
+          <tr><td><strong>Etyka</strong></td><td>Poradnictwo genetyczne, choroby dziedziczne, badania prenatalne.</td></tr>
+          <tr><td><strong>Informatyka</strong></td><td>Bazy danych DNA, analiza sekwencji, genealogia genetyczna.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<!-- ================= 29. STATUS ================= -->
+<section class="section" id="status">
+  <div class="part-heading"><span class="part-num">29. Status lekcji</span></div>
+  <div class="card card-new">
+    <span class="card-label">Wersja 7.0 — korekta merytoryczna i redakcyjna po recenzji</span>
+    <p><strong>Wersja 7.0 rozwija materiał v6.0; część treści została uporządkowana, przeniesiona do warstw lub doprecyzowana.</strong></p>
+    <p><strong>Główne zmiany w tej wersji (v7.0):</strong></p>
+    <ul>
+      <li><strong>Tytuł i podtytuł</strong> — zamiast „powtórka z anatomii" → „powtórka z biologii człowieka, która prowadzi do genetyki".</li>
+      <li><strong>HLA ≠ ABO/RhD</strong> — poprawione nagłówki i treść. HLA opisane jako układ białek zgodności tkankowej na wielu komórkach jądrzastych, nie na erytrocytach.</li>
+      <li><strong>5.2 (cztery układy)</strong> — dodana uwaga, że podziały układów mogą wyglądać inaczej w różnych podręcznikach.</li>
+      <li><strong>„Typowa komórka somatyczna"</strong> zamiast „każda komórka" — z ramką ostrzegawczą.</li>
+      <li><strong>6.1, 6.2</strong> — uściślone sformułowania o DNA i łańcuchu DNA → RNA → białko → cecha; dodane zdanie o RNA, które nie staje się białkiem.</li>
+      <li><strong>7.1 (skład krwi)</strong> — proporcja osocze/elementy morfotyczne jako wartości orientacyjne.</li>
+      <li><strong>7.3 (transfuzja)</strong> — „grupa 0 dawca uniwersalny" zastąpione ostrożniejszym sformułowaniem o modelu szkolnym vs rzeczywistej transfuzjologii.</li>
+      <li><strong>7.4 / konflikt RhD</strong> — „nie każda taka ciąża prowadzi do uczulenia" + ograniczenie ryzyka zamiast „zapobiegania".</li>
+      <li><strong>8.2</strong> — zamiast „jajo musi wyżywić zarodek" → „komórka jajowa zachowuje większość cytoplazmy i zasobów na najwcześniejsze etapy rozwoju zarodka".</li>
+      <li><strong>8.3</strong> — model szkolny XX/XY opisany ostrożniej (z zaznaczeniem, że istnieją rzadsze warianty).</li>
+      <li><strong>10.1</strong> — „komórki somatyczne mogą się dzielić" uściślone (nie wszystkie dzielą się aktywnie; neurony zwykle nie).</li>
+      <li><strong>10.2</strong> — „kilkadziesiąt innych układów" → „wiele innych układów, np. Kell, Duffy, Kidd".</li>
+      <li><strong>11.1 (mtDNA)</strong> — dopisek o niezwykle rzadkich doniesieniach o udziale mtDNA ojcowskiego.</li>
+      <li><strong>13 (obserwacja)</strong> — BHP rozszerzone o etykę zbierania danych rodzinnych i granice wnioskowania z grup krwi.</li>
+      <li><strong>14C i 16B, zadanie 5</strong> — przeformułowane: „Matka A, ojciec B" z prośbą o wypisanie wszystkich możliwych grup i wyjaśnienie zależności od genotypów.</li>
+      <li><strong>27 (Jak się uczyć)</strong> — usunięto pozostałość „wirus ≠ komórka" (z L001).</li>
+      <li><strong>Nowa sekcja 9 — „Co wynika, a czego nie wolno wnioskować?"</strong> — tabela i kategorie Pewne / Możliwe / Niemożliwe / Brakuje danych.</li>
+      <li><strong>Nowa sekcja 10 — „Język precyzyjnego biologa"</strong> — zestawienie nieprecyzyjnych vs precyzyjnych sformułowań.</li>
+      <li><strong>Nowa sekcja 5.7 — „Karta: model szkolny a rzeczywistość"</strong> — dwukolumnowa karta.</li>
+      <li><strong>Ścieżka postępu (spine)</strong> na początku większych sekcji.</li>
+      <li><strong>Materiały nadprogramowe w zwijanych `<details>`</strong> — historia grup krwi, mtDNA, epigenetyka, krew w liczbach, ciekawostki, zadanie olimpijskie, pełny konflikt RhD, połączenia międzyprzedmiotowe.</li>
+      <li><strong>Korekty redakcyjne:</strong> ABO (nie AB0), RhD przy antygenie D, „jądro ani organelli", komórka skóry jako standardowy przykład, usunięcie pozostałości z L001.</li>
+      <li><strong>Fiszka o granicach wnioskowania</strong> — „Czy z grupy krwi można ustalić ojcostwo?" → Nie.</li>
+    </ul>
+    <p><strong>Uporządkowanie poziomów:</strong> dziedziczenie ABO i RhD przeniesione do E8; HLA, inne układy grupowe (Kell, Duffy, Kidd) → „Idę dalej"; mtDNA, epigenetyka, szczegóły profilaktyki anty-D → „Zaawansowane".</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><strong>BIOLOGIA L002 v7.0</strong> · Człowiek: krew, gamety, płeć i cechy organizmu · powtórka prowadząca do genetyki · 2026</p>
+  <p style="font-size:0.78rem;opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+</footer>
+
+</div>
+
+<!-- ================= STICKY NAV ================= -->
+<div class="sticky-nav">
+  <a href="#topPanel">Start</a>
+  <a href="#sciaga">Ściąga</a>
+  <a href="#blood-widget">Krew</a>
+  <a href="#gamete-widget">Gamety</a>
+  <a href="#sex-widget">Płeć</a>
+  <a href="#abo-widget">ABO</a>
+  <a href="#wnioskowanie">Wnioskowanie</a>
+  <a href="#jezyk">Język</a>
+  <a href="#klinika">Klinika</a>
+  <a href="#fiszki">Fiszki</a>
+  <a href="#test">Test</a>
+</div>
+
+<script>
+/* =========================================================
+   PODSTAWOWE
+   ========================================================= */
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const mode = btn.dataset.mode;
+    document.body.classList.remove('mode-e8','mode-understand','mode-further');
+    if(mode === 'e8') document.body.classList.add('mode-e8');
+    else if(mode === 'understand') document.body.classList.add('mode-understand');
+    else document.body.classList.add('mode-further');
+  });
+});
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+(function(){
+  const data = {
+    '1628': '<b>1628 — William Harvey:</b> opisał krążenie krwi. To był fundament — bez zrozumienia, że krew krąży w zamkniętym układzie, nie byłoby mowy o transfuzjach.',
+    '1665': '<b>1665–1667 — Pierwsze transfuzje:</b> próby przetaczania krwi u zwierząt i ludzi. Wiele z nich kończyło się tragicznie — nie znano jeszcze grup krwi. Dopiero odkrycie ABO wyjaśniło, dlaczego niektóre transfuzje się udawały, a inne nie.',
+    '1901': '<b>1901 — Karl Landsteiner:</b> odkrył <strong>układ grupowy ABO</strong>. Za to odkrycie otrzymał Nagrodę Nobla w 1930 r. To przełom — od tego momentu można było bezpiecznie przetaczać krew. Landsteiner opisał grupy A, B i 0 (AB odkryto później).',
+    '1937': '<b>1937 — Odkrycie układu RhD:</b> Karl Landsteiner i Alexander Wiener odkryli <strong>antygen D</strong>. Wyjaśniło to, dlaczego niektóre kobiety traciły kolejne ciąże — chodziło o <strong>konflikt RhD</strong>. Dziś profilaktyka immunoglobuliną anty-D ratuje życie nienarodzonym dzieciom.',
+    '1950': '<b>1950–1960 — Odkrycie HLA:</b> poznano <strong>układ zgodności tkankowej</strong> (Human Leukocyte Antigen) — wiele genów kodujących białka na powierzchni komórek jądrzastych. To umożliwiło rozwój transplantologii: im większa zgodność HLA, tym mniejsze ryzyko odrzucenia przeszczepu.'
+  };
+  document.querySelectorAll('#timelineAxis .timeline-point').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#timelineAxis .timeline-point').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.getElementById('timelineInfo').innerHTML = data[btn.dataset.tl];
+    });
+  });
+})();
+
+/* =========================================================
+   WIDGET: KREW JAKO ŹRÓDŁO DANYCH
+   ========================================================= */
+(function(){
+  const data = {
+    grupa: '<b>Grupa krwi ABO:</b> podstawowy układ antygenów na erytrocytach. A, B, AB lub 0. Decyduje o zgodności przy transfuzji. Dziedziczona — allele Iᴬ, Iᴮ, i (L019).',
+    rh: '<b>RhD (antygen D):</b> Rh+ = obecny antygen D; Rh− = brak. Osobny układ od ABO. Ma znaczenie w ciąży (konflikt RhD) i przy transfuzjach. Dziedziczony.',
+    dna: '<b>DNA (leukocyty):</b> do rutynowego badania DNA z krwi materiał uzyskuje się głównie z leukocytów — mają jądro komórkowe. Dojrzałe erytrocyty człowieka i większości ssaków nie mają jądra ani organelli. Krew nie jest jednak jedynym możliwym źródłem DNA.',
+    hla: '<b>HLA (zgodność tkankowa):</b> układ wielu genów kodujących białka zgodności tkankowej na powierzchni wielu komórek jądrzastych — <em>nie jest to typowy układ erytrocytów</em>. Kluczowy przy przeszczepach. Wykorzystywany też w badaniach genealogicznych.',
+    morfologia: '<b>Morfologia:</b> badanie liczby i wyglądu elementów morfotycznych krwi — erytrocytów, leukocytów, płytek. Wykrywa anemię, infekcje, zaburzenia krzepnięcia. Nie bada DNA ani grup krwi.'
+  };
+  function render(key){
+    const svg = document.getElementById('bloodSvg');
+    const parts = [];
+    parts.push('<rect x="0" y="0" width="420" height="140" fill="#fef2f2"/>');
+    parts.push('<rect x="40" y="20" width="40" height="100" rx="8" fill="#fff" stroke="#dc2626" stroke-width="2"/>');
+    parts.push('<rect x="44" y="60" width="32" height="56" rx="4" fill="#dc2626" opacity="0.7"/>');
+    parts.push('<text x="60" y="135" text-anchor="middle" font-size="9" fill="#991b1b" font-family="Segoe UI">krew</text>');
+    if(key === 'grupa'){
+      parts.push('<circle cx="140" cy="50" r="14" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/>');
+      parts.push('<text x="140" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#7f1d1d" font-family="Segoe UI">A</text>');
+      parts.push('<circle cx="180" cy="50" r="14" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>');
+      parts.push('<text x="180" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#1e3a8a" font-family="Segoe UI">B</text>');
+      parts.push('<text x="160" y="95" text-anchor="middle" font-size="10" fill="#991b1b" font-family="Segoe UI">antygeny na erytrocytach</text>');
+    } else if(key === 'rh'){
+      parts.push('<circle cx="140" cy="50" r="14" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/>');
+      parts.push('<text x="140" y="55" text-anchor="middle" font-size="11" font-weight="700" fill="#7f1d1d" font-family="Segoe UI">D</text>');
+      parts.push('<circle cx="180" cy="50" r="14" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="3 2"/>');
+      parts.push('<text x="180" y="55" text-anchor="middle" font-size="10" fill="#475569" font-family="Segoe UI">—</text>');
+      parts.push('<text x="160" y="95" text-anchor="middle" font-size="10" fill="#991b1b" font-family="Segoe UI">Rh+ / Rh−</text>');
+    } else if(key === 'dna'){
+      parts.push('<circle cx="140" cy="50" r="16" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>');
+      parts.push('<text x="140" y="55" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI">jądro</text>');
+      parts.push('<text x="160" y="95" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI">leukocyt = jądro = DNA</text>');
+    } else if(key === 'hla'){
+      parts.push('<circle cx="140" cy="50" r="16" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>');
+      parts.push('<circle cx="140" cy="50" r="4" fill="#b45309"/>');
+      parts.push('<circle cx="170" cy="50" r="16" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>');
+      parts.push('<circle cx="170" cy="50" r="4" fill="#b45309"/>');
+      parts.push('<text x="155" y="95" text-anchor="middle" font-size="10" fill="#78350f" font-family="Segoe UI">białka HLA — wiele komórek jądrzastych</text>');
+    } else if(key === 'morfologia'){
+      parts.push('<circle cx="130" cy="50" r="10" fill="#fecaca" stroke="#b91c1c"/>');
+      parts.push('<circle cx="155" cy="50" r="10" fill="#dbeafe" stroke="#2563eb"/>');
+      parts.push('<circle cx="180" cy="50" r="8" fill="#fef3c7" stroke="#b45309"/>');
+      parts.push('<text x="155" y="95" text-anchor="middle" font-size="10" fill="#334155" font-family="Segoe UI">erytrocyty · leukocyty · trombocyty</text>');
+    }
+    svg.innerHTML = parts.join('');
+  }
+  const gdata = {
+    '1': '<b>Krok 1 — Typowa komórka ciała: 2n = 46.</b> Typowa komórka somatyczna ma dwa zestawy chromosomów (23 pary). Jeden zestaw od matki, jeden od ojca.',
+    '2': '<b>Krok 2 — Mejoza: 46 → 23.</b> W mejozie liczba chromosomów redukuje się o połowę. Powstają komórki haploidalne.',
+    '3': '<b>Krok 3 — Gameta: n = 23.</b> Plemnik lub komórka jajowa ma tylko jeden zestaw chromosomów. Każda gameta niesie jeden chromosom z każdej pary.',
+    '4': '<b>Krok 4 — Zapłodnienie: 23 + 23.</b> Plemnik łączy się z komórką jajową. Ich zestawy chromosomów się sumują.',
+    '5': '<b>Krok 5 — Zygota: 2n = 46.</b> Powstała zygota ma znów dwa zestawy chromosomów. Liczba chromosomów w pokoleniach się nie zmienia.'
+  };
+  const gsvgs = {
+    '1': '<rect x="0" y="0" width="420" height="120" fill="#faf5ff"/><circle cx="210" cy="60" r="30" fill="#e0f2fe" stroke="#0369a1" stroke-width="3"/><text x="210" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#0369a1" font-family="Segoe UI">46</text><text x="210" y="75" text-anchor="middle" font-size="11" fill="#0369a1" font-family="Segoe UI">2n</text><text x="210" y="115" text-anchor="middle" font-size="10" fill="#5b21b6" font-family="Segoe UI">typowa kom. somatyczna</text>',
+    '2': '<rect x="0" y="0" width="420" height="120" fill="#faf5ff"/><circle cx="140" cy="60" r="28" fill="#e0f2fe" stroke="#0369a1" stroke-width="3"/><text x="140" y="55" text-anchor="middle" font-size="16" font-weight="700" fill="#0369a1" font-family="Segoe UI">46</text><text x="200" y="65" font-size="20" fill="#7c3aed" font-family="Segoe UI">→</text><circle cx="280" cy="60" r="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/><text x="280" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#6d28d9" font-family="Segoe UI">23</text><text x="280" y="70" text-anchor="middle" font-size="9" fill="#6d28d9" font-family="Segoe UI">n</text>',
+    '3': '<rect x="0" y="0" width="420" height="120" fill="#faf5ff"/><circle cx="120" cy="60" r="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/><text x="120" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#6d28d9" font-family="Segoe UI">23</text><text x="120" y="70" text-anchor="middle" font-size="9" fill="#6d28d9" font-family="Segoe UI">jajo</text><circle cx="300" cy="60" r="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/><text x="300" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#6d28d9" font-family="Segoe UI">23</text><text x="300" y="70" text-anchor="middle" font-size="9" fill="#6d28d9" font-family="Segoe UI">plemnik</text>',
+    '4': '<rect x="0" y="0" width="420" height="120" fill="#faf5ff"/><circle cx="140" cy="60" r="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/><text x="140" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#6d28d9" font-family="Segoe UI">23</text><text x="200" y="65" font-size="20" fill="#7c3aed" font-family="Segoe UI">+</text><circle cx="260" cy="60" r="22" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/><text x="260" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#6d28d9" font-family="Segoe UI">23</text><text x="320" y="65" font-size="20" fill="#7c3aed" font-family="Segoe UI">→</text><text x="360" y="65" font-size="14" font-weight="700" fill="#5b21b6" font-family="Segoe UI">zygota</text>',
+    '5': '<rect x="0" y="0" width="420" height="120" fill="#faf5ff"/><circle cx="210" cy="60" r="30" fill="#dcfce7" stroke="#15803d" stroke-width="3"/><text x="210" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d" font-family="Segoe UI">46</text><text x="210" y="75" text-anchor="middle" font-size="11" fill="#15803d" font-family="Segoe UI">2n</text><text x="210" y="115" text-anchor="middle" font-size="10" fill="#5b21b6" font-family="Segoe UI">zygota</text>'
+  };
+  document.querySelectorAll('.blood-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const parentId = btn.closest('.blood-widget, .gamete-widget')?.id;
+      if(parentId === 'gameteWidget'){
+        document.querySelectorAll('#gameteWidget .blood-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const key = btn.dataset.gw;
+        document.getElementById('gameteDesc').innerHTML = gdata[key];
+        document.getElementById('gameteSvg').innerHTML = gsvgs[key];
+      } else {
+        document.querySelectorAll('.blood-widget .blood-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const key = btn.dataset.bw;
+        document.getElementById('bloodDesc').innerHTML = data[key];
+        render(key);
+      }
+    });
+  });
+  render('grupa');
+  document.getElementById('gameteDesc').innerHTML = gdata['1'];
+  document.getElementById('gameteSvg').innerHTML = gsvgs['1'];
+})();
+
+/* =========================================================
+   WIDGET: XX/XY
+   ========================================================= */
+(function(){
+  const data = {
+    xx: '<b>X + X → XX:</b> Komórka jajowa wnosi X, plemnik wnosi X. Powstaje zygota XX — w typowym modelu szkolnym rozwój żeński.',
+    xy: '<b>X + Y → XY:</b> Komórka jajowa wnosi X, plemnik wnosi Y. Powstaje zygota XY — w typowym modelu szkolnym rozwój męski. To chromosom płciowy plemnika wpływa na kombinację.',
+    kto: '<b>Kto wnosi Y?</b> Komórka jajowa zawsze ma X. Plemnik ma X albo Y. Jeśli plemnik wniesie X — powstanie zygota XX. Jeśli Y — zygota XY. <strong>W typowym modelu szkolnym to chromosom płciowy plemnika wpływa na kombinację XX lub XY.</strong> To nie jest „wina" ani „zasługa" matki.'
+  };
+  const svgs = {
+    xx: '<rect x="0" y="0" width="420" height="130" fill="#ecfeff"/><circle cx="100" cy="65" r="26" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="100" y="72" text-anchor="middle" font-size="20" font-weight="700" fill="#1d4ed8" font-family="Segoe UI">X</text><text x="100" y="105" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI">jajo</text><text x="160" y="72" font-size="20" fill="#0891b2" font-family="Segoe UI">+</text><circle cx="220" cy="65" r="26" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="220" y="72" text-anchor="middle" font-size="20" font-weight="700" fill="#1d4ed8" font-family="Segoe UI">X</text><text x="220" y="105" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI">plemnik</text><text x="280" y="72" font-size="20" fill="#0891b2" font-family="Segoe UI">→</text><rect x="310" y="45" width="90" height="40" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="3"/><text x="355" y="72" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d" font-family="Segoe UI">XX</text><text x="355" y="105" text-anchor="middle" font-size="10" fill="#15803d" font-family="Segoe UI">model: żeński</text>',
+    xy: '<rect x="0" y="0" width="420" height="130" fill="#ecfeff"/><circle cx="100" cy="65" r="26" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="100" y="72" text-anchor="middle" font-size="20" font-weight="700" fill="#1d4ed8" font-family="Segoe UI">X</text><text x="100" y="105" text-anchor="middle" font-size="10" fill="#1e40af" font-family="Segoe UI">jajo</text><text x="160" y="72" font-size="20" fill="#0891b2" font-family="Segoe UI">+</text><circle cx="220" cy="65" r="26" fill="#fae8ff" stroke="#a21caf" stroke-width="3"/><text x="220" y="72" text-anchor="middle" font-size="20" font-weight="700" fill="#86198f" font-family="Segoe UI">Y</text><text x="220" y="105" text-anchor="middle" font-size="10" fill="#86198f" font-family="Segoe UI">plemnik</text><text x="280" y="72" font-size="20" fill="#0891b2" font-family="Segoe UI">→</text><rect x="310" y="45" width="90" height="40" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/><text x="355" y="72" text-anchor="middle" font-size="18" font-weight="700" fill="#1d4ed8" font-family="Segoe UI">XY</text><text x="355" y="105" text-anchor="middle" font-size="10" fill="#1d4ed8" font-family="Segoe UI">model: męski</text>',
+    kto: '<rect x="0" y="0" width="420" height="130" fill="#ecfeff"/><text x="210" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#0a2540" font-family="Segoe UI">Plemnik wnosi X albo Y</text><circle cx="140" cy="80" r="22" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="140" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#1d4ed8" font-family="Segoe UI">X</text><text x="175" y="86" font-size="18" fill="#0891b2" font-family="Segoe UI">lub</text><circle cx="230" cy="80" r="22" fill="#fae8ff" stroke="#a21caf" stroke-width="2"/><text x="230" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#86198f" font-family="Segoe UI">Y</text><text x="290" y="86" font-size="18" fill="#0891b2" font-family="Segoe UI">→</text><text x="340" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#0a2540" font-family="Segoe UI">XX lub XY</text><text x="210" y="120" text-anchor="middle" font-size="9" fill="#64748b" font-family="Segoe UI">jajo zawsze wnosi X</text>'
+  };
+  document.querySelectorAll('#sexWidget .sex-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#sexWidget .sex-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const key = btn.dataset.sx;
+      document.getElementById('sexDesc').innerHTML = data[key];
+      document.getElementById('sexSvg').innerHTML = svgs[key];
+    });
+  });
+  document.getElementById('sexSvg').innerHTML = svgs.xx;
+})();
+
+/* =========================================================
+   WIDGET: ABO
+   ========================================================= */
+(function(){
+  const data = {
+    A: '<b>Grupa A:</b> genotyp <code>IᴬIᴬ</code> lub <code>Iᴬi</code>. Na erytrocytach obecny antygen A. W osoczu — przeciwciała anty-B.',
+    B: '<b>Grupa B:</b> genotyp <code>IᴮIᴮ</code> lub <code>Iᴮi</code>. Na erytrocytach obecny antygen B. W osoczu — przeciwciała anty-A.',
+    AB: '<b>Grupa AB:</b> genotyp <code>IᴬIᴮ</code>. Na erytrocytach obecne oba antygeny: A i B (kodominacja!). W osoczu — brak przeciwciał anty-A i anty-B. W modelu szkolnym bywa nazywana biorcą uniwersalnym krwinek, ale w rzeczywistej transfuzjologii dobiera się też inne czynniki.',
+    '0': '<b>Grupa 0:</b> genotyp <code>ii</code> — dwa recesywne allele. Na erytrocytach brak antygenów A i B. W osoczu — przeciwciała anty-A i anty-B. <strong>Uwaga:</strong> 0 = ii, nie „brak genów". W modelu szkolnym bywa nazywana dawcą uniwersalnym krwinek, ale w rzeczywistej transfuzjologii dobiera się też inne czynniki.'
+  };
+  document.querySelectorAll('.abo-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.abo-card').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      document.getElementById('aboDesc').innerHTML = data[card.dataset.abo];
+    });
+  });
+})();
+</script>
+</body>
+</html>
