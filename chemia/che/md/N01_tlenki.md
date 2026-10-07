@@ -71,6 +71,8 @@ stopka: **CHEMIA N01 v6.2 MASTER LAB** · Tlenki · 2026
 - (ambitnie) wyjaśnia amfoteryczność i trendy w układzie okresowym,
 - (ambitnie) rozpoznaje tlenki mieszane i nietypowe,
 - (zaawansowanie) zna most do redoks, stechiometrii i metalurgii.
+
+> **Podstawa programowa:** chemia w szkole podstawowej (Dz.U. 2017 poz. 356), dział „Tlen, wodór i ich związki chemiczne. Powietrze”. Punkty oznaczone „ambitnie” i „zaawansowanie” wykraczają poza wymagania egzaminu ósmoklasisty.
 :::
 
 ::: karta exam | Pytanie przewodnie
@@ -729,6 +731,18 @@ $$ zasadowy → zasadowy → amfoteryczny → kwasowy → kwasowy → kwasowy �
 
 ::: karta extra
 W grupie (w dół) rośnie metaliczność, więc rośnie charakter zasadowy tlenków: BeO (amfoteryczny) → MgO → CaO → SrO → BaO (coraz silniej zasadowe). W grupie 15: N₂O₅ i P₄O₁₀ kwasowe, As₄O₆ amfoteryczny, Bi₂O₃ zasadowy.
+
+> **Dlaczego:** w dół grupy rośnie promień atomu i maleje elektroujemność, więc wiązanie E–O staje się bardziej jonowe, a tlenek bardziej zasadowy. W okresie w prawo elektroujemność rośnie, wiązanie E–O jest bardziej kowalencyjne, a tlenek bardziej kwasowy.
+
+**Charakter tlenków w układzie okresowym** (tlenki na najwyższym typowym stopniu utlenienia; zas. = zasadowy, amf. = amfoteryczny, kw. = kwasowy):
+
+::: div.table-wrap
+<table><thead><tr><th>Okres</th><th>gr. 1</th><th>gr. 2</th><th>gr. 13</th><th>gr. 14</th><th>gr. 15</th><th>gr. 16</th><th>gr. 17</th></tr></thead><tbody>
+<tr><td><b>2</b></td><td>Li₂O zas.</td><td>BeO amf.</td><td>B₂O₃ kw.</td><td>CO₂ kw.</td><td>N₂O₅ kw.</td><td>—</td><td>— (OF₂ to fluorek)</td></tr>
+<tr><td><b>3</b></td><td>Na₂O zas.</td><td>MgO zas.</td><td>Al₂O₃ amf.</td><td>SiO₂ kw.</td><td>P₄O₁₀ kw.</td><td>SO₃ kw.</td><td>Cl₂O₇ kw.</td></tr>
+<tr><td><b>4</b></td><td>K₂O zas.</td><td>CaO zas.</td><td>Ga₂O₃ amf.</td><td>GeO₂ amf.</td><td>As₂O₅ kw.</td><td>SeO₃ kw.</td><td>— (brak trwałego Br₂O₇)</td></tr>
+</tbody></table>
+:::
 :::
 
 ### Ten sam pierwiastek, różne stopnie utlenienia — metale przejściowe {.merge-h}
@@ -781,6 +795,10 @@ $$ Al₂O₃ + 2 NaOH + 3 H₂O → 2 Na[Al(OH)₄] <span class="mini-note">(roz
 <div class="formula-lg" data-rx="znoNaoh">ZnO + 2 NaOH → Na₂ZnO₂ + H₂O</div>
 
 > Na₂ZnO₂ — zapis dla stopu / warunków bezwodnych; w roztworze wodnym: ZnO + 2 NaOH + H₂O → Na₂[Zn(OH)₄].
+:::
+
+::: adv | Amfoteryczność w języku kwasów i zasad Lewisa | poziom akademicki
+**Kwas Lewisa** przyjmuje parę elektronową, **zasada Lewisa** ją oddaje. Mały, silnie naładowany kation Al³⁺ ma wolne orbitale i jest kwasem Lewisa: wobec mocnej zasady przyłącza jony OH⁻ (zasady Lewisa) i tworzy jon kompleksowy [Al(OH)₄]⁻, a w stopionej zasadzie wiąże O²⁻ w anion AlO₂⁻. Wobec kwasu ten sam tlenek dostarcza jonów O²⁻, które przyłączają H⁺ — zachowuje się jak zasada. Amfoteryczność to więc zdolność do działania jako akceptor lub donor, zależnie od partnera reakcji. Tak samo zachowują się Zn²⁺ ([Zn(OH)₄]²⁻) i Be²⁺.
 :::
 
 ## 16 | P₂O₅ i P₄O₁₀ — wzór empiryczny a cząsteczka [[extra:AMBITNE]] {#p4o10}
@@ -947,6 +965,8 @@ $$ Fe₂O₃ + 3 C → 2 Fe + 3 CO <span class="mini-note">(uproszczenie; w wiel
 
 <div class="formula-lg" data-rx="fe2o3Co">Fe₂O₃ + 3 CO →(Δ) 2 Fe + 3 CO₂</div>
 
+> **Stopnie utlenienia:** Fe: +III → 0 (redukcja), C: +II → +IV (utlenianie). **Utleniacz:** Fe₂O₃ · **reduktor:** CO.
+
 > Zapis z CO₂: 2 Fe₂O₃ + 3 C → 4 Fe + 3 CO₂ — oba zapisy są poprawnie zbilansowane; w wysokiej temperaturze, przy nadmiarze węgla, powstaje głównie CO.
 
 > W wielkim piecu tlenek węgla(II) redukuje tlenek żelaza(III) do żelaza metalicznego. Klasyczny proces metalurgiczny.
@@ -954,6 +974,8 @@ $$ Fe₂O₃ + 3 C → 2 Fe + 3 CO <span class="mini-note">(uproszczenie; w wiel
 ### Termit (redukcja aluminium)
 
 <div class="formula-lg" data-rx="termit">Fe₂O₃ + 2 Al → 2 Fe + Al₂O₃</div>
+
+> **Stopnie utlenienia:** Fe: +III → 0 (redukcja), Al: 0 → +III (utlenianie). **Utleniacz:** Fe₂O₃ · **reduktor:** Al (oddaje elektrony).
 
 > Reakcja silnie egzotermiczna. Lokalna temperatura może osiągać około 2500°C lub więcej, zależnie od warunków i miejsca pomiaru. Stosowana m.in. w spawaniu szyn kolejowych.
 
@@ -1044,6 +1066,22 @@ Równanie: C + O₂ → CO₂ (stosunek 1 : 1 : 1)
 - m(CO₂) = 83,3 mol × 44 g/mol ≈ **3,67 kg**
 - m(O₂) = 83,3 mol × 32 g/mol ≈ **2,67 kg**
 - Kontrola masy: 1 kg + 2,67 kg = 3,67 kg ✓ (bez moli: 12 g C → 44 g CO₂, więc 1000 g → 1000·44/12 g)
+:::
+:::
+
+::: karta extra
+**Przykład 5 (odczynnik limitujący):** Spalono 2,4 g magnezu w 2,4 g tlenu. Który substrat przereaguje całkowicie? Ile gramów MgO powstanie i ile substratu zostanie?
+
+::: odp | Pokaż rozwiązanie
+Równanie: 2 Mg + O₂ → 2 MgO
+
+- n(Mg) = 2,4 / 24 = 0,1 mol; n(O₂) = 2,4 / 32 = 0,075 mol
+- Do 0,1 mol Mg potrzeba 0,1 / 2 = 0,05 mol O₂, a jest 0,075 mol → **tlen w nadmiarze, magnez jest odczynnikiem limitującym**
+- n(MgO) = n(Mg) = 0,1 mol → m(MgO) = 0,1 × 40 = **4,0 g**
+- Zostaje 0,075 − 0,05 = 0,025 mol O₂ = **0,8 g O₂**
+- Kontrola masy: 2,4 g + 2,4 g = 4,0 g + 0,8 g ✓
+
+> Zasada: wynik liczysz zawsze z substratu, którego jest za mało w stosunku do równania. Ten sam typ zadania policzysz w kalkulatorze poniżej.
 :::
 :::
 
