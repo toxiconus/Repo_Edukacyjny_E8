@@ -1,0 +1,5 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const p=await b.newPage();await p.route(/fonts\./,r=>r.abort());const e=[];p.on('pageerror',x=>e.push(x.message));p.on('console',m=>{if(m.type()==='error'||m.type()==='warning')e.push(m.type()+': '+m.text().slice(0,160))});
+await p.goto('file:///home/claude/che/out/'+process.argv[2]);await p.waitForTimeout(3000);
+console.log(await p.evaluate(()=>{const r=[];Object.keys(CHE).filter(k=>/REGRESSION|AUDIT|SELFTEST|selfTest|GATE|VERIFY|TEST/.test(k)).forEach(k=>{try{const x=CHE[k],fn=typeof x==='function'?x:x&&(x.run||x.audit||x.check||x.verify);if(typeof fn==='function'){const v=fn.call(x);const ok=v&&(v.ok!==undefined?v.ok:v.pass!==undefined?v.pass:v.passed!==undefined&&v.failed!==undefined?!v.failed:'?');r.push(k+': '+(ok===true?'ok':ok===false?'FAIL '+JSON.stringify(v.failed||v.issues||v.errors||v.fails||'').slice(0,200):'?'))}}catch(err){r.push(k+': EXC '+err.message.slice(0,100))}});return r.filter(x=>!/: ok$/.test(x)).join('\n')+'\n— '+r.length+' sprawdzeń, ok: '+r.filter(x=>/: ok$/.test(x)).length}));
+console.log('CONSOLE',e.slice(0,15).join('\n'));await b.close()})();

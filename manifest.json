@@ -1,0 +1,881 @@
+{
+ "version": "0.57",
+ "source": "out/_pre_prune.html",
+ "gfx_order": [
+  "p0_phys.js",
+  "p0b_sim.js",
+  "p1_core.js",
+  "x_free.js",
+  "p2_free_add.js",
+  "x_app.js",
+  "p4_apparatus.js",
+  "x_instr.js",
+  "x_elektro.js",
+  "p3_engine.js",
+  "p5_tail.js",
+  "p5c_rx.js",
+  "x_ions.js",
+  "x_rx_n01.js",
+  "x_rx_n04.js",
+  "p5b_return.js",
+  "p6_library.js"
+ ],
+ "gfx_ext": "src/p6b_lib_phys.js",
+ "pieces": [
+  {
+   "t": "base",
+   "f": "modules/base/001_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/002_che-prepaint.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/003_che-prepaint-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/004_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/005_anon.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/006_CHE_eng_v054_03_inlined.js"
+  },
+  {
+   "t": "src",
+   "f": "src/d_reactions.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/007_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/d_oxides_rx.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/008_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/d_hydroxides_rx.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/009_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/d_substances.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/010_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/d_oxides_sub.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/011_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/d_hydroxides_sub.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/012_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/d_acid_systems.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/013_html.p01.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/013_html.p02.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/013_html.p03.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/013_html.p04.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/013_html.p05.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/013_html.p06.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/014_groupView.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/015_anon.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/016_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/017_mod-XX-_.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p01.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p02.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p03.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p04.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p05.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p06.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p07.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p08.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p09.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p10.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p11.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/018_api_ENGINE.p12.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/019_CHE_engx_v054_03_inlined.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/020_v16-11-fix.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/021_che-boot-hide.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/022_che-pre-wrap-fix.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/023_che-atlas-visual.css"
+  },
+  {
+   "t": "src",
+   "f": "src/atlas_visual.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/024_tail.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/025_che-gate-boot-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/026_che-project-shell-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/027_html_che-landing.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/028_anon.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/029_html_che-project-shell.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/030_MAPA_REAKCJI.p01.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/030_MAPA_REAKCJI.p02.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/030_MAPA_REAKCJI.p03.js"
+  },
+  {
+   "t": "src",
+   "f": "src/atlas_acid.js"
+  },
+  {
+   "t": "src",
+   "f": "src/atlas_lessons.js"
+  },
+  {
+   "t": "src",
+   "f": "src/d_mol3d_oxides.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/031_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/032_anon.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/033_v054_01_ARIA_zakładek.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/034_v054_02_komunikaty_aria-live_przy_zmian.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/035_paint.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/036_html_che-data-stale.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/037_che-lesson-data.json.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/038_DATA.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/039_esc.js"
+  },
+  {
+   "t": "src",
+   "f": "src/atlas_rx_list.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/040_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/041_CHE_v16_11.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/042_DATA.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/043_CHE_ref_atomic_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/044_CHE_ref_radii_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/045_CHE_ref_crystal_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/046_CHE_ref_slater_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/047_CHE_ref_isotopes_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/048_SCIENCE_GATE.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/049_SCIENCE_GATE.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/050_CHE_ref_cordero_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/051_CHE_ref_isotopes_long_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/052_apply.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/053_CHE_ref_vdw_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/054_CHE_ref_vdw_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/055_sym.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/056_sym.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/057_fillCard.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/058_CHE_ref_wiki_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/059_CHE_ref_ox_v01_00.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/060_che-v1620-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/061_che-v1620-js.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/062_che-kw-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/063_che-sole-src.json.html"
+  },
+  {
+   "t": "lesson",
+   "f": "lesson/sole_new.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/064_tail.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/065_fiz-elektro-src.json.html"
+  },
+  {
+   "t": "lesson",
+   "f": "lesson/fiz_elektro_new.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/066_tail.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/067_che-n02-src.json.html"
+  },
+  {
+   "t": "lesson",
+   "f": "lesson/n02_new.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/068_tail.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/069_che-n01-src.json.html"
+  },
+  {
+   "t": "lesson",
+   "f": "lesson/n01_new.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/070_tail.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/071_che-kw-src.json.html"
+  },
+  {
+   "t": "lesson",
+   "f": "lesson/kw_new.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/072_tail.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/073_che-zoom-engine-v001.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/074_che-zoom-engine-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/075_che-viz-energy-profile-v001.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/076_che-viz-kit-css.css"
+  },
+  {
+   "t": "src",
+   "f": "src/ionic.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/077_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/fiz_elektro.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/078_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/oxides.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/079_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/stoich.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/080_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/hydroxides.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/081_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/082_che-colors-v001.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/083_che-lab-engine-v001.js"
+  },
+  {
+   "t": "gfx"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/084_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/085_che-lab-bridge-v102.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/086_che-visual-library-v001.p01.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/086_che-visual-library-v001.p02.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/086_che-visual-library-v001.p03.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/086_che-visual-library-v001.p04.js"
+  },
+  {
+   "t": "src",
+   "f": "src/v_kwasy_views.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/087_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_kinetics.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/088_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_acid_rain.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/089_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_ionic_views.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/090_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_sole_views.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/091_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_dysocjacja.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/092_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_bufor_reszty.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/093_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_fiz_elektro.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/094_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_n01_tlenki.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/095_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_stoich.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/096_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_n02_wodorotlenki.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/097_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_pracownia.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/098_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/v_test_silnika.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/099_tail.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/100_che-lfs-toc-fix.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/101_che-visual-hub-v001.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/102_che-visual-hub-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/103_che-ph-original-palette-v001.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/104_che-visual-route-v004-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/105_che-lesson-registry-js.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/106_che-shared-lesson-style.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/107_html_che-lesson-close.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/108_che-shared-lesson-style.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/109_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/110_che-lesson-content-v080.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/111_che-lesson-shared-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/112_che-shared-visual-registry-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/113_che-lesson-architecture-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/114_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/115_che-legacy-bridge-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/116_che-legacy-engine-bridge-v003.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/117_che-wiz-v0030-widget-skin.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/118_che-wiz-v0030-widget-integration.p01.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/118_che-wiz-v0030-widget-integration.p02.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/118_che-wiz-v0030-widget-integration.p03.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/119_html_che-wiz-widget-bank.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/120_che-wiz-v0030-hub.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/121_che-wiz-v0030-hub-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/122_che-widget-api-v005.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/123_che-widget-migration-audit-v004.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/124_che-widget-migration-v006.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/125_che-experiment-migration-v007.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/126_che-legacy-consumer-audit-v009.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/127_che-chemistry-widget-migration-v010.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/128_che-char-central-data-v010.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/129_che-widget-migration-audit-v010.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/130_che-local-data-migration-v011.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/131_che-local-data-audit-v012.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/132_che-engine-hardening-v014.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/133_che-local-data-audit-v013.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/134_che-shared-visual-registry-v017.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/135_che-project-shell-v016.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/136_che-home-gate-v0182.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/137_anon.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/138_anon.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/139_Spis_treści_hamburger.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/140_che-lesson-context-v001.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/141_che-lesson-context-css.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/142_che-literal-newline-fix-v001.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/143_anon.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/144_fixNode.css"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/145_che-lesson-open-viz-v001.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/146_che-viz-overlay-css.css"
+  },
+  {
+   "t": "src",
+   "f": "src/consistency.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/147_html.html"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/148_che-v038-views.js"
+  },
+  {
+   "t": "src",
+   "f": "src/v_ion_map.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/149_tail.js"
+  },
+  {
+   "t": "src",
+   "f": "src/hub_przedmioty.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/150_html.html"
+  },
+  {
+   "t": "src",
+   "f": "src/viz_retire.js"
+  },
+  {
+   "t": "base",
+   "f": "modules/base/151_html.html"
+  }
+ ]
+}

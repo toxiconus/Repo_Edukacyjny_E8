@@ -1,0 +1,707 @@
+C.VIZ = { version:'2.17', el, makeSvg, marker, box, arrow, flowchart, barChart, molecule2D, table, radial, band, scale };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 30]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DOM;
+const scenes = [];
+let running = false, last = 0;
+const REDUCED = !!(g.matchMedia && g.matchMedia('(prefers-reduced-motion: reduce)').matches);
+const IO = typeof IntersectionObserver !== 'undefined'
+  ? IntersectionObserver
+  : function(cb){ this._cb = cb; this.observe = ()=>{ try{ cb([{target:null,isIntersecting:true}]); }catch(_){} }; this.unobserve = ()=>{}; };
+function wake(){ if(!running && scenes.length){ running = true; last = performance.now(); requestAnimationFrame(loop); } }
+function fit(canvas){
+  const dpr = Math.min(g.devicePixelRatio || 1, 2);
+  const w = canvas.clientWidth || 600, h = canvas.clientHeight || Number(canvas.dataset.h) || 320;
+  if(canvas.width !== Math.round(w*dpr) || canvas.height !== Math.round(h*dpr)){
+    canvas.width = Math.round(w*dpr); canvas.height = Math.round(h*dpr);
+  }
+  const ctx = canvas.getContext('2d');
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  return { ctx, w, h };
+}
+function makePilot(s){
+  if(s.canvas.dataset.motionPilot === '1') return;
+  s.canvas.dataset.motionPilot = '1';
+  const wrap = D.el('div', { class:'motion-pilot' });
+  const play = D.el('button', { type:'button' }, s.playing ? 'II' : '▶');
+  const step = D.el('button', { type:'button' }, '▸|');
+  const reset = D.el('button', { type:'button' }, '↺');
+  const speed = D.el('select');
+  [['0.5','0,5×'],['1','1×'],['1.5','1,5×'],['2','2×']].forEach(([v,t])=>{
+    const o = D.el('option', { value:v }, t);
+    if(v === '1') o.selected = true;
+    speed.appendChild(o);
+  });
+  const status = D.el('span', { class:'motion-status' }, s.playing ? 'odtwarzanie' : 'pauza');
+  wrap.append(play, step, reset, speed, status);
+  s.canvas.parentElement.insertBefore(wrap, s.canvas);
+  play.onclick = ()=>{ s.playing = !s.playing; status.textContent = s.playing ? 'odtwarzanie' : 'pauza'; play.textContent = s.playing ? 'II' : '▶'; wake(); };
+  step.onclick = ()=>{ s.playing = false; play.textContent = '▶'; s.phase += 1/30; s.force = true; status.textContent = 'krok'; renderOne(s, 0); };
+  reset.onclick = ()=>{ s.phase = 0; s.force = true; status.textContent = 'reset'; renderOne(s, 0); };
+  speed.onchange = ()=>{ s.speed = +speed.value; };
+}
+function renderOne(s, dt){
+  if(!s.canvas.isConnected) return;
+  const { ctx, w, h } = fit(s.canvas);
+  ctx.clearRect(0, 0, w, h);
+  try { s.draw(ctx, w, h, s.phase, dt); }
+  catch(e){ if(!s.errorReported){ s.errorReported = true; s.canvas.dataset.motionError = '1'; } }
+}
+function add(canvas, draw, opts){
+  opts = opts || {};
+  canvas.dataset.h = canvas.dataset.h || 320;
+  canvas.style.height = canvas.dataset.h + 'px';
+  const entry = { canvas, draw, visible:true, errorReported:false, playing:opts.autoplay !== false && !REDUCED, phase:0, speed:1, force:true };
+  scenes.push(entry);
+  if(!running){ running = true; requestAnimationFrame(loop); }
+  const io = new IO(es=>{
+    for(const e of es){ if(e.target === canvas){ entry.visible = e.isIntersecting; if(entry.visible) entry.force = true; } }
+    wake();
+  }, { rootMargin:'160px' });
+  io.observe(canvas);
+  makePilot(entry);
+  return ()=>{ const i = scenes.indexOf(entry); if(i>=0) scenes.splice(i, 1); io.unobserve(canvas); };
+}
+function loop(t){
+  if(!scenes.length){ running = false; last = t; return; }
+  const raw = Math.min((t-last)/1000, .05); last = t;
+  if(document.hidden){ running = false; return; }
+  let active = false;
+  for(const s of scenes.slice()){
+    if(!s.visible || !s.canvas.isConnected) continue;
+    if(s.playing || s.force) active = true;
+    const dt = s.playing ? raw*s.speed : 0;
+    if(s.playing) s.phase += dt;
+    if(s.playing || s.force){ s.force = false; renderOne(s, dt); }
+  }
+  if(active) requestAnimationFrame(loop); else running = false;
+}
+const helpers = {
+  dot(ctx, x, y, r, fill, stroke, text, textColor){
+    ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fillStyle = fill; ctx.fill();
+    if(stroke){ ctx.strokeStyle = stroke; ctx.lineWidth = 1.4; ctx.stroke(); }
+    if(text){ ctx.fillStyle = textColor || '#0f172a'; ctx.font = `700 ${Math.round(r*.85)}px Inter,system-ui,sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, x, y+.5); }
+  },
+  label(ctx, text, x, y, opts){
+    opts = opts || {};
+    ctx.fillStyle = opts.color || '#17242c';
+    ctx.font = `${opts.weight || 800} ${opts.size || 14}px Inter,system-ui,sans-serif`;
+    ctx.textAlign = opts.align || 'center';
+    ctx.textBaseline = opts.baseline || 'middle';
+    ctx.fillText(text, x, y);
+  },
+  roundRect(ctx, x, y, w, h, r, fill, stroke){
+    ctx.beginPath(); ctx.moveTo(x+r, y);
+    ctx.lineTo(x+w-r, y); ctx.quadraticCurveTo(x+w, y, x+w, y+r);
+    ctx.lineTo(x+w, y+h-r); ctx.quadraticCurveTo(x+w, y+h, x+w-r, y+h);
+    ctx.lineTo(x+r, y+h); ctx.quadraticCurveTo(x, y+h, x, y+h-r);
+    ctx.lineTo(x, y+r); ctx.quadraticCurveTo(x, y, x+r, y); ctx.closePath();
+    if(fill){ ctx.fillStyle = fill; ctx.fill(); }
+    if(stroke){ ctx.strokeStyle = stroke; ctx.stroke(); }
+  }
+};
+C.MOTION = { version:'2.17', add, helpers, fit, reduced:REDUCED,
+  stats:()=> scenes.map(s=>({ canvas:s.canvas, playing:s.playing, visible:s.visible, phase:s.phase, error:!!s.canvas.dataset.motionError })),
+  playAll:()=>{ scenes.forEach(s=> s.playing = true); wake(); },
+  pauseAll:()=> scenes.forEach(s=> s.playing = false),
+  resetAll:()=>{ scenes.forEach(s=>{ s.phase = 0; s.force = true; }); wake(); },
+  stepAll:()=>{ scenes.forEach(s=>{ s.phase += 1/30; s.force = true; }); wake(); },
+  wake };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 31]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DOM;
+const views = new Map();
+const TAG_CLASS = { E8:'e8', UND:'und', AMB:'amb', ZA:'za', MOTION:'motion' };
+function define(name, spec){ views.set(name, spec); }
+function mount(host){
+  const name = host.dataset.che;
+  const spec = views.get(name);
+  if(!spec) return;
+  host.classList.add('viz-card');
+  const head = D.el('div', { class:'viz-head' });
+  const h4 = D.el('h4', null, spec.title); head.appendChild(h4);
+  if(spec.tag){ const tag = D.el('span', { class:'viz-tag ' + (TAG_CLASS[spec.tag] || '') }, spec.tag); head.appendChild(tag); }
+  try { const st = C.VIEW_STATUS && C.VIEW_STATUS[name]; if(st){ const b = D.el('span', { class:'viz-status viz-status-' + st.k, title:st.note || '' }, st.k==='dubel' ? 'DUBEL → ' + st.ref : st.k==='engine' ? 'PRZEPIĄĆ NA SILNIK' : 'ROZWIJAĆ'); head.appendChild(b); } } catch(_){}
+  host.appendChild(head);
+  const body = D.el('div', { class:'viz-body' }); host.appendChild(body);
+  try { spec.build(body, host); }
+  catch(e){
+    body.innerHTML = '<div class="lab-note">Błąd widoku: ' + D.esc(e.message || e) + '</div>';
+  }
+  try { if(C.EXPLAIN) C.EXPLAIN.attach(host, name); } catch(_){}
+}
+function autoMount(root){
+  root = root || document;
+  D.$$('[data-che]', root).forEach(mount);
+}
+define('molecule-cv', {
+  title:'Karta cząsteczki', tag:'UND',
+  hint:'Wszystkie dane pochodzą z CHE.MOLECULE i CHE.PROFILE.',
+  build(body){
+    const id = C.MOLECULE?.getCurrent?.() || 'H2O';
+    const m = C.MOLECULE.get(id);
+    if(!m){ body.innerHTML = '<div class="lab-note">Brak modelu.</div>'; return; }
+    body.innerHTML =
+      '<div class="lab-eq">' + D.esc(m.formula) + '</div>' +
+      '<div class="lab-kv">' +
+        '<div><small>Geometria</small><b>' + D.esc(m.geometry||'—') + '</b></div>' +
+        '<div><small>Wiązania</small><b>' + m.bonds.length + '</b></div>' +
+        '<div><small>Kąty</small><b>' + (m.angles.map(a=>a.deg+'°').join(', ')||'—') + '</b></div>' +
+        '<div><small>e⁻ łącznie</small><b>' + (m.totalElectrons??'—') + '</b></div>' +
+      '</div>' +
+      '<div class="lab-note" style="margin-top:10px">' + D.esc(m.note||'') + '</div>';
+  }
+});
+define('molecule-2d', {
+  title:'Struktura 2D', tag:'UND',
+  hint:'Rząd wiązania i kąty z CHE.MOLECULE.',
+  build(body){
+    const id = C.MOLECULE?.getCurrent?.() || 'H2O';
+    const m = C.MOLECULE.get(id);
+    if(!m){ body.innerHTML = '<div class="lab-note">Brak modelu.</div>'; return; }
+    body.innerHTML = '<div class="lab-stage"></div>';
+    const stage = body.querySelector('.lab-stage');
+    const svg = D.svg('svg', { viewBox:'0 0 520 320', preserveAspectRatio:'xMidYMid meet' });
+    stage.appendChild(svg);
+    const atoms = m.atoms, bonds = m.bonds;
+    const cx = 260, cy = 160, scale = 1.4;
+    const pos = a => ({ x: cx + (Number(a.x)||0)*scale, y: cy + (Number(a.y)||0)*scale });
+    bonds.forEach(b=>{
+      const a = atoms.find(x=>x.id===b.a), q = atoms.find(x=>x.id===b.b);
+      if(!a || !q) return;
+      const p1 = pos(a), p2 = pos(q);
+      const dx = p2.x-p1.x, dy = p2.y-p1.y, len = Math.hypot(dx,dy)||1;
+      const nx = -dy/len, ny = dx/len;
+      const offs = b.order === 2 ? [-4,4] : [0];
+      offs.forEach(f=>{
+        svg.appendChild(D.svg('line', { x1:p1.x+nx*f, y1:p1.y+ny*f, x2:p2.x+nx*f, y2:p2.y+ny*f, stroke:'#5c6c73', 'stroke-width':5, 'stroke-linecap':'round' }));
+      });
+    });
+    atoms.forEach(a=>{
+      const p = pos(a);
+      const E = C.DATA.ELEM?.[a.element] || { r:20, s:'#64748b', t:'#0f172a' };
+      svg.appendChild(D.svg('circle', { cx:p.x, cy:p.y, r:E.r, fill:E.c2||'#8b7bb8', stroke:E.s, 'stroke-width':2 }));
+      svg.appendChild(D.svg('text', { x:p.x, y:p.y+5, 'text-anchor':'middle', 'font-size':16, 'font-weight':800, fill:E.t, 'pointer-events':'none' }, a.element));
+    });
+    (m.angles||[]).forEach(ang=>{
+      const c = atoms.find(x=>x.id === ang.atoms[1]); if(!c) return;
+      const p = pos(c);
+      svg.appendChild(D.svg('text', { x:p.x+12, y:p.y-14, 'font-size':12, 'font-weight':800, fill:'#176b8c' }, ang.deg + '°'));
+    });
+  }
+});
+define('molecule-3d', {
+  title:'Model przestrzenny', tag:'MOTION',
+  hint:'Współrzędne XYZ z CHE.MOLECULES.',
+  build(body){
+    body.innerHTML = '<div class="lab-stage" style="min-height:420px;cursor:grab"><canvas style="width:100%;height:420px;display:block"></canvas></div>';
+    const stage = body.querySelector('.lab-stage');
+    const canvas = body.querySelector('canvas');
+    const id = C.MOLECULE?.getCurrent?.() || 'H2O';
+    const m = C.MOLECULE.get(id);
+    if(!m || !C.MOTION?.add){ body.innerHTML = '<div class="lab-note">MOTION niedostępny.</div>'; return; }
+    let yaw = 0.5, pitch = 0.25, zoom = 1, dragging = false, lastX = 0, lastY = 0, auto = true;
+    const COLORS = { H:'#f1f5f9', C:'#334155', N:'#3b82f6', O:'#ef4444', F:'#22c55e', Cl:'#22c55e', S:'#eab308', P:'#f97316' };
+    const RAD = { H:.5, C:.78, N:.72, O:.68, F:.58, Cl:.99, S:1.05, P:1.08 };
+    C.MOTION.add(canvas, (ctx, w, h, phase)=>{
+      const ca = Math.cos(yaw), sa = Math.sin(yaw);
+      const cp = Math.cos(pitch), sp = Math.sin(pitch);
+      const Q = m.atoms.map(a=>{
+        const X = a.x*ca - a.z*sa;
+        const Z = a.x*sa + a.z*ca;
+        const Y = a.y*cp - Z*sp;
+        const Z2 = a.y*sp + Z*cp;
+        const s = zoom * (1 + Z2/600);
+        return { x: w/2 + X*s*1.15, y: h/2 + Y*s*1.15, z: Z2, s: s*1.15, e: a.element };
+      });
+      const prim = [];
+      m.bonds.forEach(b => prim.push({ z: (Q[b.a].z + Q[b.b].z)/2 - 1, b }));
+      Q.forEach(q => prim.push({ z: q.z, q }));
+      prim.sort((a,b)=>a.z - b.z);
+      for(const p of prim){
+        if(p.b){
+          const a = Q[p.b.a], b = Q[p.b.b], o = p.b.order || 1;
+          const dx = b.x-a.x, dy = b.y-a.y, L = Math.hypot(dx,dy)||1;
+          const nx = -dy/L, ny = dx/L;
+          const offs = o === 2 ? [-5,5] : [0];
+          for(const f of offs){
+            ctx.strokeStyle = 'rgba(203,213,225,.85)';
+            ctx.lineWidth = 9 * a.s; ctx.lineCap = 'round';
+            ctx.beginPath();
+            ctx.moveTo(a.x + nx*f*a.s, a.y + ny*f*a.s);
+            ctx.lineTo(b.x + nx*f*a.s, b.y + ny*f*a.s);
+            ctx.stroke();
+          }
+          continue;
+        }
+        const q = p.q;
+        const r = (RAD[q.e]||0.8) * 24 * Math.max(0.7, Math.min(1.4, q.s));
+        const base = COLORS[q.e] || '#8b7bb8';
+        const grad = ctx.createRadialGradient(q.x - r*0.35, q.y - r*0.4, r*0.1, q.x, q.y, r);
+        grad.addColorStop(0,'#ffffff'); grad.addColorStop(.2, base); grad.addColorStop(1,'#17212a');
+        ctx.fillStyle = grad;
+        ctx.beginPath(); ctx.arc(q.x, q.y, r, 0, 7); ctx.fill();
+        ctx.fillStyle = q.e === 'H' ? '#26363d' : '#fff';
+        ctx.font = '800 ' + Math.round(r*0.7) + 'px Arial';
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillText(q.e, q.x, q.y);
+      }
+      if(auto && !dragging) yaw += 0.004;
+    });
+    stage.onpointerdown = e => { dragging = true; lastX = e.clientX; lastY = e.clientY; stage.setPointerCapture?.(e.pointerId); };
+    stage.onpointermove = e => {
+      if(!dragging) return;
+      yaw += (e.clientX - lastX) * .009;
+      pitch += (e.clientY - lastY) * .009;
+      lastX = e.clientX; lastY = e.clientY;
+    };
+    stage.onpointerup = ()=>{ dragging = false; };
+    stage.onpointercancel = ()=>{ dragging = false; };
+    stage.onwheel = e => { e.preventDefault(); zoom = Math.max(.55, Math.min(2.2, zoom * (e.deltaY < 0 ? 1.08 : .93))); };
+  }
+});
+define('molecule-orbitals', {
+  title:'Orbitale atomowe', tag:'UND',
+  hint:'Obsada podpowłok z CHE.MOLECULE.electronConfiguration.',
+  build(body){
+    const id = C.MOLECULE?.getCurrent?.() || 'H2O';
+    const m = C.MOLECULE.get(id);
+    if(!m){ body.innerHTML = '<div class="lab-note">Brak modelu.</div>'; return; }
+    const symbol = m.atoms[0]?.element || 'O';
+    const atomModel = C.ATOM?.build?.(symbol);
+    const electrons = C.ATOM?.electrons?.(symbol) || [];
+    let html = '<h4 style="margin:0 0 10px">' + D.esc(symbol) + ' · ' + D.esc(C.MOLECULE.orbitalSummary(symbol)) + '</h4>';
+    html += '<div style="display:grid;gap:8px">';
+    (atomModel?.subshells||[]).forEach(ss=>{
+      const isV = atomModel.valenceSubshells.includes(ss.name);
+      let boxes = '';
+      for(let i=0;i<ss.orbitalCount;i++){
+        const inThis = electrons.filter(e=> e.subshell===ss.name && e.orbitalIndex===i);
+        const arrows = inThis.map(e=> e.ms>0 ? '↑' : '↓').join('');
+        boxes += '<span class="lab-box" style="' + (isV?'background:#d6eef5;':'') + '">' + arrows + '</span>';
+      }
+      html += '<div class="lab-orb-row"><span class="lab-orb-lbl">' + D.esc(ss.name) + (isV?'·w':'·r') + '</span><div class="lab-boxes">' + boxes + '</div><span class="lab-cap">' + ss.count + ' e⁻' + (isV?' walenc.':'') + '</span></div>';
+    });
+    html += '</div>';
+    body.innerHTML = html;
+  }
+});
+define('reaction', {
+  title:'Reakcja', tag:'ZA',
+  hint:'Bilans i równanie z CHE.REACTION.',
+  build(body){
+    const ids = Object.keys(C.DATA?.REACTIONS || {});
+    if(!ids.length){ body.innerHTML = '<div class="lab-note">Brak reakcji.</div>'; return; }
+    const id = ids[0];
+    const r = C.REACTION.get(id);
+    if(!r){ body.innerHTML = '<div class="lab-note">Brak reakcji.</div>'; return; }
+    const th = C.THERMO?.reactionGibbs?.(id) || null;
+    body.innerHTML =
+      '<div class="lab-eq">' + D.esc(C.REACTION.equation(id)) + '</div>' +
+      '<div class="lab-kv">' +
+        '<div><small>Typ</small><b>' + D.esc(r.type) + '</b></div>' +
+        '<div><small>Bilans</small><b>' + (r.balance.ok ? 'POPRAWNY' : 'DO KONTROLI') + '</b></div>' +
+        '<div><small>Warunki</small><b>' + D.esc(r.conditions||'—') + '</b></div>' +
+        '<div><small>ΔG° (298 K)</small><b>' + (th && th.ok ? th.dG.toFixed(1) + ' kJ/mol' : '—') + '</b></div>' +
+      '</div>' +
+      '<div class="lab-note" style="margin-top:10px">' + D.esc(r.observation||'') + '</div>' +
+      '<div class="lab-toolbar" style="margin-top:12px"><label class="lab-tag">Postęp Îľ</label><input type="range" min="0" max="100" value="50" style="flex:1"></div>';
+  }
+});
+define('substance', {
+  title:'Substancja', tag:'E8',
+  hint:'Profil z CHE.DATA + warstwy pochodne.',
+  build(body){
+    const ids = Object.keys(C.DATA?.SUBSTANCES || {});
+    if(!ids.length){ body.innerHTML = '<div class="lab-note">Brak substancji.</div>'; return; }
+    const id = ids[0];
+    const p = C.PROFILE?.substance?.(id) || C.DATA.SUBSTANCES[id];
+    const phy = p.physical, th = p.thermochem, sol = p.solubility;
+    body.innerHTML =
+      '<h4 style="margin:0 0 8px">' + D.esc(p.name||id) + '</h4>' +
+      '<div class="lab-kv">' +
+        '<div><small>Wzór</small><b>' + D.esc(p.formula||id) + '</b></div>' +
+        '<div><small>Masa</small><b>' + D.esc(p.molarMass??'—') + ' g/mol</b></div>' +
+        '<div><small>Rola</small><b>' + D.esc(p.role||'—') + '</b></div>' +
+        '<div><small>Stan</small><b>' + D.esc(p.state||'—') + '</b></div>' +
+      '</div>' +
+      (phy ? '<div class="lab-note" style="margin-top:10px">Fizyczne: mp ' + phy.mp + ' K · bp ' + phy.bp + ' K · Ď ' + phy.density + ' g/cm³</div>' : '') +
+      (th ? '<div class="lab-note" style="margin-top:6px">Termochemia: ΔHf° = ' + th.dHf + ' kJ/mol · S° = ' + th.S + ' J/(mol·K)</div>' : '') +
+      (sol ? '<div class="lab-note" style="margin-top:6px">Rozpuszczalność 20°C: ' + sol.water20_gL + ' g/L</div>' : '');
+  }
+});
+C.VIEW = { version:'2.17', define, mount, autoMount, views };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 32]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DOM;
+const DATA = {
+  'molecule-2d':[ ['Rząd wiązania','Pojedyncze, podwójne, potrójne — pochodzi z CHE.MOLECULE.'],['Kąt','Wartość z modelu lub wyliczona z geometrii XYZ.'],['Wolne pary','Wyliczane z elektronów walencyjnych minus rząd wiązania.'],['Geometria','VSEPR: liczba domen elektronowych wokół atomu centralnego.'] ],
+  'molecule-3d':[ ['Obrót','Przeciągnij, aby obrócić model.'],['Zoom','Kółko myszy lub pinch.'],['Autoobrót','Widok obraca się automatycznie wokół osi Y.'],['Źródło','Współrzędne XYZ z CHE.DATA.MOLECULES.'] ],
+  'molecule-orbitals':[ ['Pudełko','Reprezentuje orbital; strzałki — elektrony.'],['Zasada Pauliego','Maksymalnie dwa elektrony na orbital.'],['Reguła Hunda','Najpierw pojedyncze obsadzenia, potem parowanie.'],['Walencyjne','Podpowłoki oznaczone ·w są walencyjne.'] ],
+  'molecule-cv':[ ['Karta obiektu','Jedno źródło — wiele widoków tej samej cząsteczki.'],['Wzór','Kanoniczny, generowany z atomów.'],['Wiązania','Każde z rzędem i etykietą.'],['Relacje','Substancje i reakcje z CHE.PROFILE.'] ],
+  'reaction':[ ['Równanie','Budowane z centralnych współczynników.'],['Bilans','Sprawdzenie atomów i ładunków.'],['Obserwacja','Opis efektu widocznego dla obserwatora.'],['Termochemia','ΔG° z CHE.THERMO — jeśli dane są dostępne.'] ],
+  'substance':[ ['Profil','Jedno źródło — DATA — wiele pól pochodnych.'],['Właściwości','Fizyczne, termochemiczne, rozpuszczalność.'],['Relacje','Reakcje z CHE.REACTION.'],['Masa molowa','Sprawdzana z ATOMIC_MASS.'] ]
+};
+function attach(host, name){
+  const items = DATA[name];
+  if(!items || host.dataset.cheHints) return;
+  host.dataset.cheHints = '1';
+  const box = D.el('div', { class:'che-hints' });
+  const t = D.el('button', { type:'button', class:'t' }, 'Podpowiedzi ⌄');
+  const chips = D.el('div', { class:'chips' });
+  const txt = D.el('div', { class:'txt' });
+  let cur = -1;
+  items.forEach((it, i)=>{
+    const b = D.el('button', { type:'button' }, it[0]);
+    b.onclick = ()=>{
+      const same = cur === i;
+      D.$$('button', chips).forEach(x=> x.classList.remove('on'));
+      if(same){ cur = -1; txt.classList.remove('show'); return; }
+      cur = i; b.classList.add('on'); txt.textContent = it[1]; txt.classList.add('show');
+    };
+    chips.appendChild(b);
+  });
+  t.onclick = ()=>{
+    const open = box.classList.toggle('open');
+    t.textContent = open ? 'Podpowiedzi ⌃' : 'Podpowiedzi ⌄';
+    if(!open){ cur = -1; txt.classList.remove('show'); D.$$('button', chips).forEach(x=> x.classList.remove('on')); }
+  };
+  box.append(t, chips, txt);
+  host.appendChild(box);
+}
+function scan(){
+  D.$$('[data-che]').forEach(h=>{ const n = h.dataset.che; if(DATA[n] && !h.dataset.cheHints) attach(h, n); });
+}
+setTimeout(scan, 0);
+g.addEventListener('load', ()=> setTimeout(scan, 80));
+C.EXPLAIN = { version:'2.17', attach, scan, data: DATA };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 33]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{}, clone=o=>JSON.parse(JSON.stringify(o));
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const fail=(c,m,x)=>C.FAIL?C.FAIL(c,m,x):{ok:false,error:{code:c,message:m,context:x}};
+function mol(m){return C.STRUCTURE.canonicalize(m||{});}
+function adjacency(m){return C.STRUCTURE.adjacency(m);}
+function resonance(molecule,options){
+ const m=mol(molecule), A=adjacency(m), centers=[];
+ for(const b of m.bonds){if(Number(b.order)!==2)continue;const a=m.atoms.find(x=>x.id===b.atomA),z=m.atoms.find(x=>x.id===b.atomB);if(!a||!z)continue;
+   const aNbr=(A[a.id]||[]).filter(x=>x.atomId!==z.id).some(x=>[1,2].includes(Number(x.bond.order)));
+   const zNbr=(A[z.id]||[]).filter(x=>x.atomId!==a.id).some(x=>[1,2].includes(Number(x.bond.order)));
+   if(aNbr||zNbr)centers.push({bondId:b.id,atomA:a.id,atomB:z.id,conjugated:true});
+ }
+ const systems=[];if(centers.length)systems.push({id:'res-system-1',type:'conjugated',bonds:centers});
+ return ok({moleculeId:m.id,systems,source:'graph-analysis',level:options?.level||'STRUCTURAL_HEURISTIC'});
+}
+function tautomerCandidates(molecule){
+ const m=mol(molecule), A=adjacency(m), out=[];
+ for(const a of m.atoms.filter(x=>x.element==='O'||x.element==='N')){
+   const h=(A[a.id]||[]).find(x=>m.atoms.find(z=>z.id===x.atomId)?.element==='H'); if(!h)continue;
+   const carbonyl=(A[a.id]||[]).find(x=>Number(x.bond.order)===1&&m.atoms.find(z=>z.id===x.atomId)?.element==='C');
+   if(carbonyl)out.push({type:'prototropic',center:a.id,protonAtom:h.atomId,adjacentAtom:carbonyl.atomId,description:'potencjalny transfer protonu sprzężony ze zmianą rzędu wiązania'});
+ }
+ return ok({moleculeId:m.id,candidates:out,generatedStructures:[],source:'rule-based-candidate',note:'kandydat nie jest automatycznie uznawany za poprawny tautomer'});
+}
+function atomSignature(a){return [a.element,a.isotope??'',a.formalCharge??a.charge??0].join(':');}
+function graphSignature(m){const atoms=[...m.atoms].sort((a,b)=>String(a.id).localeCompare(String(b.id))).map(atomSignature).join(';');const bonds=[...m.bonds].map(b=>[String(b.atomA),String(b.atomB)].sort().join('-')+':'+b.order).sort().join(';');return atoms+'||'+bonds+'||'+m.charge;}
+function constitutionalIsomers(molecules){
+ const list=(molecules||[]).map(mol), groups=new Map();list.forEach(m=>{const formula=m.formula||'';if(!groups.has(formula))groups.set(formula,[]);groups.get(formula).push(m);});
+ const out=[];groups.forEach((ms,formula)=>{if(ms.length<2)return;out.push({formula,members:ms.map(m=>({id:m.id,signature:graphSignature(m)})),type:'constitutional-or-structural-variants'});});
+ return ok({groups:out,source:'graph-signature',note:'rozróżnienie pełnej równoważności grafów wymaga niezależnego algorytmu izomorfizmu grafów'});
+}
+function stereo(molecule){
+ const m=mol(molecule), A=adjacency(m), centers=[];
+ for(const a of m.atoms){const n=A[a.id]||[], unique=new Set(n.map(x=>m.atoms.find(z=>z.id===x.atomId)?.element));if(n.length>=4&&unique.size>=3)centers.push({atomId:a.id,kind:'potential-stereocenter',ligands:n.map(x=>x.atomId)});}
+ const ez=m.bonds.filter(b=>Number(b.order)===2&&b.stereochemistry).map(b=>({bondId:b.id,descriptor:b.stereochemistry}));
+ return ok({moleculeId:m.id,centers,EZ:ez,RS:(m.stereochemistry?.centers||[]),enantiomerOf:m.stereochemistry?.enantiomerOf||null,diastereomerOf:m.stereochemistry?.diastereomerOf||null,source:'graph-topology',level:'ASSIGNED_OR_CANDIDATE'});
+}
+function conformers(molecule,options){
+ const m=mol(molecule), list=Array.isArray(m.metadata?.conformers)?clone(m.metadata.conformers):[];
+ return ok({moleculeId:m.id,conformers:list,active:options?.conformerId||list[0]?.id||null,source:'stored-geometries',generated:false});
+}
+function classifyRelationship(a,b){
+ const x=mol(a),y=mol(b); if(x.formula!==y.formula)return {ok:true,relationship:'different-composition'};
+ const sx=graphSignature(x),sy=graphSignature(y);if(sx===sy)return {ok:true,relationship:'identical-canonical-signature'};
+ const stA=x.stereochemistry?.centers||[],stB=y.stereochemistry?.centers||[];if(stA.length&&stB.length)return {ok:true,relationship:'stereoisomer-candidate'};
+ return {ok:true,relationship:'structural-isomer-candidate'};
+}
+C.ORGANIC={version:'2.17',resonance,tautomerCandidates,constitutionalIsomers,stereochemistry:stereo,conformers,classifyRelationship};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 34]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{}, clone=o=>JSON.parse(JSON.stringify(o));
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const fail=(c,m,x)=>C.FAIL?C.FAIL(c,m,x):{ok:false,error:{code:c,message:m,context:x}};
+const SOURCES={EDUCATIONAL_APPROXIMATION:{kind:'educational',label:'przybliżenie dydaktyczne'},VSEPR:{kind:'model',label:'projekcja VSEPR'},COMPUTATIONAL:{kind:'computed',label:'geometria obliczeniowa'},EXPERIMENTAL:{kind:'experimental',label:'geometria eksperymentalna'},COORDINATES:{kind:'coordinates',label:'współrzędne wejściowe'}};
+function mol(m){return C.STRUCTURE.canonicalize(m||{});}
+function sourceRecord(source,detail){const s=SOURCES[source]||{kind:'other',label:String(source||'unknown')};return {id:source,kind:s.kind,label:s.label,detail:detail||null};}
+function layout2D(molecule,options){
+ const m=mol(molecule), spacing=Number(options?.spacing||1.4), coords={}, used=new Set();
+ const given=m.atoms.filter(a=>a.position2D); given.forEach(a=>{coords[a.id]={x:Number(a.position2D.x)||0,y:Number(a.position2D.y)||0};used.add(a.id);});
+ const A=C.STRUCTURE.adjacency(m), queue=[]; if(m.atoms[0]&&!coords[m.atoms[0].id])coords[m.atoms[0].id]={x:0,y:0};
+ const placed=()=>Object.keys(coords).length; while(placed()<m.atoms.length){
+   const root=m.atoms.find(a=>coords[a.id]); if(!root)break;
+   for(const a of m.atoms.filter(x=>!coords[x.id])){const neigh=(A[a.id]||[]).find(n=>coords[n.atomId]); if(neigh){const p=coords[neigh.atomId], idx=(queue.push(a.id)-1), angle=(idx%6)*Math.PI/3;coords[a.id]={x:p.x+spacing*Math.cos(angle),y:p.y+spacing*Math.sin(angle)};}}
+   if(!m.atoms.some(a=>!coords[a.id]))break;
+   const missing=m.atoms.find(a=>!coords[a.id]); if(missing)coords[missing.id]={x:((placed())%5)*spacing,y:-Math.floor(placed()/5)*spacing};
+ }
+ const bonds=m.bonds.map(b=>({bondId:b.id,atomA:b.atomA,atomB:b.atomB,order:b.order,start:clone(coords[b.atomA]),end:clone(coords[b.atomB])}));
+ return ok({moleculeId:m.id,units:options?.units||'angstrom',style:options?.style||'structural',source:sourceRecord(options?.source||'COORDINATES'),atoms:coords,bonds});
+}
+function vsepr(molecule,atomId){
+ const m=mol(molecule), center=m.atoms.find(a=>a.id===atomId);if(!center)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono atomu',{atomId});
+ const A=C.STRUCTURE.adjacency(m), neigh=A[center.id]||[], bondDomains=neigh.reduce((s,x)=>s+(Number(x.bond.order)>=1?1:0),0);
+ const lonePairs=Number.isFinite(Number(center.metadata?.lonePairs))?Number(center.metadata.lonePairs):Math.max(0,Math.round(((C.DATA?.ATOM_META?.[center.element]?.valence||0)-bondDomains)/2));
+ const steric=bondDomains+lonePairs;
+ const map={2:['linear',180],3:['trigonal-planar',120],4:['tetrahedral',109.5],5:['trigonal-bipyramidal',90],6:['octahedral',90]};
+ const item=map[steric]||['undetermined',null];
+ return ok({atomId:center.id,element:center.element,domains:{bonding:bondDomains,lonePairs,stericNumber:steric},molecularGeometry:item[0],idealAngles:item[1]?[item[1]]:[],source:sourceRecord('VSEPR'),note:'projekcja modelowa; nie zastępuje geometrii eksperymentalnej lub obliczeniowej'});
+}
+function conformers(molecule){
+ const m=mol(molecule), list=Array.isArray(m.metadata?.conformers)?clone(m.metadata.conformers):[];return ok({moleculeId:m.id,active:list[0]?.id||null,conformers:list,count:list.length});
+}
+function validate(molecule,geometry){
+ const m=mol(molecule), g=geometry||{}, issues=[],warnings=[];
+ const ids=new Set(m.atoms.map(a=>a.id)); for(const id of Object.keys(g.atoms||{}))if(!ids.has(id))issues.push({code:'GEOMETRY_UNKNOWN_ATOM',atomId:id});
+ for(const b of m.bonds){const p=g.atoms?.[b.atomA],q=g.atoms?.[b.atomB];if(!p||!q){warnings.push({code:'GEOMETRY_MISSING_BOND_ENDPOINT',bondId:b.id});continue;}const d=Math.hypot((p.x||0)-(q.x||0),(p.y||0)-(q.y||0),(p.z||0)-(q.z||0));if(!(d>0))issues.push({code:'ZERO_BOND_LENGTH',bondId:b.id});}
+ return ok({ok:issues.length===0,status:issues.length?'INVALID':warnings.length?'VALID_WITH_WARNING':'VALID',issues,warnings,moleculeId:m.id,source:g.source||null});
+}
+function geometry(molecule,options){
+ const m=mol(molecule), source=options?.source||'EDUCATIONAL_APPROXIMATION';
+ let layout=C.STRUCTURE.geometry3D(m,options).value;
+ const g2=layout2D(m,{source:'COORDINATES'}).value;
+ const atomGeometry=m.atoms.map(a=>({atomId:a.id,vsepr:vsepr(m,a.id).value}));
+ return ok({moleculeId:m.id,source:sourceRecord(source,options?.detail),conformerId:options?.conformerId||layout.conformerId,units:'angstrom',coordinates:layout.coordinates,layout2D:g2,atomGeometry,bondLengths:layout.bondLengths,angles:layout.angles,validation:validate(m,layout)});
+}
+C.GEOMETRY={version:'2.17',SOURCES,layout2D,vsepr,conformers,validate,geometry};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 35]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{}, clone=o=>JSON.parse(JSON.stringify(o));
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+function molecule(m){return C.STRUCTURE.canonicalize(m||{});}
+function moleculeCV(m,options){
+ const x=molecule(m), v=C.STRUCTURE.validate(x), geo=C.GEOMETRY.geometry(x,{source:options?.geometrySource||'EDUCATIONAL_APPROXIMATION'}).value, fg=C.STRUCTURE.detectFunctionalGroups(x).value||[];
+ return ok({type:'moleculeCV',id:x.id,name:x.name,formula:x.formula,charge:x.charge,model:x.model,validation:v,summary:{atoms:x.atoms.length,bonds:x.bonds.length,functionalGroups:fg.length},atoms:x.atoms.map(a=>({id:a.id,element:a.element,charge:a.charge,formalCharge:a.formalCharge,role:a.role,labels:a.labels})),bonds:x.bonds.map(b=>({id:b.id,atomA:b.atomA,atomB:b.atomB,order:b.order,type:b.type,stereochemistry:b.stereochemistry})),functionalGroups:fg,geometry:geo,relations:{organic:C.ORGANIC?.stereochemistry?.(x).value||null}});
+}
+function atomView(m,atomId){const x=molecule(m), a=x.atoms.find(z=>z.id===atomId);if(!a)return {ok:false,error:{code:'CHE.E.DATA_NOT_FOUND',message:'Nie znaleziono atomu',context:{atomId}}};const adj=C.STRUCTURE.adjacency(x)[atomId]||[];const vsepr=C.GEOMETRY?.vsepr?.(x,atomId);return ok({type:'atom',atom:{...a},neighbors:adj.map(n=>({atomId:n.atomId,bond:n.bond})),vsepr:vsepr?.value||null});}
+function bondView(m,bondId){const x=molecule(m), b=x.bonds.find(z=>z.id===bondId);if(!b)return {ok:false,error:{code:'CHE.E.DATA_NOT_FOUND',message:'Nie znaleziono wiązania',context:{bondId}}};const a=x.atoms.find(z=>z.id===b.atomA),z=x.atoms.find(q=>q.id===b.atomB);return ok({type:'bond',bond:b,atoms:[a,z],orderLabel:C.DATA?.BOND_TYPES?.[b.type]?.label||String(b.order),length:C.STRUCTURE.bondLengths(x).value?.find(q=>q.bondId===b.id)||null});}
+function groupView(m,groupIdOrType){const x=molecule(m), groups=C.STRUCTURE.detectFunctionalGroups(x).value||[], g=groups.find(q=>q.id===groupIdOrType||q.type===groupIdOrType);if(!g)return {ok:false,error:{code:'CHE.E.DATA_NOT_FOUND',message:'Nie znaleziono grupy funkcyjnej',context:{group:groupIdOrType}}};return ok({type:'functionalGroup',group:g,atoms:g.atoms.map(id=>x.atoms.find(a=>a.id===id)).filter(Boolean),bonds:x.bonds.filter(b=>g.atoms.includes(b.atomA)&&g.atoms.includes(b.atomB))});}
+function reactionView(reaction,options){const r=C.TRANSFORM.createReaction(reaction), validation=C.TRANSFORM.validateReaction(r,options).value;return ok({type:'reaction',id:r.id,status:r.status,conditions:r.conditions,validation,reactants:r.reactants.map(m=>moleculeCV(m).value),products:r.products.map(m=>moleculeCV(m).value),changes:r.changes});}
+C.VISUAL={version:'2.17',moleculeCV,atomView,bondView,groupView,reactionView};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 36]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DATA = C.DATA || {};
+
+D.BOND_TYPES = {
+  single:{ order:1, kind:'covalent', electronPairCount:1, label:'pojedyncze' },
+  double:{ order:2, kind:'covalent', electronPairCount:2, label:'podwójne' },
+  triple:{ order:3, kind:'covalent', electronPairCount:3, label:'potrójne' },
+  aromatic:{ order:1.5, kind:'covalent', electronPairCount:null, label:'aromatyczne' },
+  coordinate:{ order:1, kind:'coordinate', electronPairCount:1, label:'koordynacyjne' }
+};
+
+D.FUNCTIONAL_GROUPS = {
+  hydroxyl:{type:'hydroxyl', name:{pl:'grupa hydroksylowa',en:'hydroxyl group'}, pattern:'R-O-H', atomsPerMatch:3, tags:['alcohol','phenol']},
+  carbonyl:{type:'carbonyl', name:{pl:'grupa karbonylowa',en:'carbonyl group'}, pattern:'C=O', atomsPerMatch:2, tags:['aldehyde','ketone']},
+  aldehyde:{type:'aldehyde', name:{pl:'grupa aldehydowa',en:'aldehyde group'}, pattern:'R-C(=O)-H', atomsPerMatch:3, tags:['carbonyl']},
+  ketone:{type:'ketone', name:{pl:'grupa ketonowa',en:'ketone group'}, pattern:'R-C(=O)-R', atomsPerMatch:3, tags:['carbonyl']},
+  carboxyl:{type:'carboxyl', name:{pl:'grupa karboksylowa',en:'carboxyl group'}, pattern:'C(=O)-O-H', atomsPerMatch:4, tags:['acid','carbonyl','hydroxyl']},
+  ester:{type:'ester', name:{pl:'grupa estrowa',en:'ester group'}, pattern:'C(=O)-O-R', atomsPerMatch:4, tags:['carbonyl']},
+  ether:{type:'ether', name:{pl:'grupa eterowa',en:'ether group'}, pattern:'R-O-R', atomsPerMatch:3, tags:[]},
+  amine:{type:'amine', name:{pl:'grupa aminowa',en:'amine group'}, pattern:'R-NH2/R2NH/R3N', atomsPerMatch:null, tags:['basic']},
+  amide:{type:'amide', name:{pl:'grupa amidowa',en:'amide group'}, pattern:'C(=O)-N', atomsPerMatch:3, tags:['carbonyl','nitrogen']},
+  nitro:{type:'nitro', name:{pl:'grupa nitrowa',en:'nitro group'}, pattern:'N(=O)-O', atomsPerMatch:3, tags:['nitrogen','oxygen']},
+  halogen:{type:'halogen', name:{pl:'atom/grupa halogenowa',en:'halo group'}, pattern:'R-X', atomsPerMatch:2, tags:['substituent']},
+  sulfhydryl:{type:'sulfhydryl', name:{pl:'grupa sulfhydrylowa',en:'sulfhydryl group'}, pattern:'R-S-H', atomsPerMatch:3, tags:['thiol']},
+  phosphate:{type:'phosphate', name:{pl:'grupa fosforanowa',en:'phosphate group'}, pattern:'P(=O)(O)-O', atomsPerMatch:null, tags:['phosphorus','acid']},
+  alkene:{type:'alkene', name:{pl:'grupa alkenowa',en:'alkene'}, pattern:'C=C', atomsPerMatch:2, tags:['unsaturated']},
+  alkyne:{type:'alkyne', name:{pl:'grupa alkinowa',en:'alkyne'}, pattern:'C≡C', atomsPerMatch:2, tags:['unsaturated']},
+  aromatic:{type:'aromatic', name:{pl:'układ aromatyczny',en:'aromatic system'}, pattern:'aromatic ring/system', atomsPerMatch:null, tags:['aromatic']}
+};
+
+C.deepFreeze?.(D.BOND_TYPES);
+C.deepFreeze?.(D.FUNCTIONAL_GROUPS);
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 37]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{}, D=C.DATA||{};
+const clone=o=>JSON.parse(JSON.stringify(o));
+const fail=(code,message,context)=>C.FAIL?C.FAIL(code,message,context):{ok:false,error:{code,message,context}};
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const nid=(p,n)=>`${p}-${n}`;
+const atomicValence=e=>Number(D.ATOM_META?.[e]?.valence);
+function createAtom(input){
+  const x=input||{}, element=String(x.element||x.symbol||'').trim();
+  if(!element||!D.ATOM_META?.[element]) return fail('CHE.E.DATA_NOT_FOUND','Nieznany pierwiastek',{element});
+  return {id:String(x.id||nid('atom',Date.now()+Math.random().toString(36).slice(2,7))),element,
+    isotope:x.isotope??null,charge:Number.isFinite(Number(x.charge))?Number(x.charge):0,
+    formalCharge:Number.isFinite(Number(x.formalCharge))?Number(x.formalCharge):0,
+    partialCharge:x.partialCharge??null,hybridization:x.hybridization??null,
+    role:Array.isArray(x.role)?[...x.role]:[],labels:Array.isArray(x.labels)?[...x.labels]:[],
+    position2D:x.position2D?{...x.position2D}:null,position3D:x.position3D?{...x.position3D}:null,metadata:{...(x.metadata||{})}};
+}
+function normalizeBond(b){
+  const x=b||{}, order=Number(x.order), type=x.type||(order===2?'double':order===3?'triple':order===1.5?'aromatic':'single');
+  return {id:String(x.id||nid('bond',Date.now()+Math.random().toString(36).slice(2,7))),atomA:String(x.atomA??x.a),atomB:String(x.atomB??x.b),
+    order:Number.isFinite(order)?order:(D.BOND_TYPES?.[type]?.order??1),type,aromatic:!!x.aromatic,
+    bondType:x.bondType||null,stereochemistry:x.stereochemistry??null,length:x.length??null,
+    partialCharges:x.partialCharges??null,resonanceContribution:x.resonanceContribution??null,labels:Array.isArray(x.labels)?[...x.labels]:[]};
+}
+function createMolecule(input){
+  const x=input||{}, m={id:String(x.id||nid('mol',Date.now()+Math.random().toString(36).slice(2,7))),name:x.name||null,formula:x.formula||null,
+    charge:Number(x.charge||0),atoms:(x.atoms||[]).map(createAtom),bonds:(x.bonds||[]).map(normalizeBond),
+    layout2D:x.layout2D?clone(x.layout2D):null,geometry3D:x.geometry3D?clone(x.geometry3D):null,
+    functionalGroups:Array.isArray(x.functionalGroups)?clone(x.functionalGroups):[],resonance:x.resonance?clone(x.resonance):null,
+    stereochemistry:x.stereochemistry?clone(x.stereochemistry):null,metadata:{...(x.metadata||{})}};
+  return canonicalize(m);
+}
+function addBond(molecule,bond){
+  const m=clone(molecule),b=normalizeBond(bond),ids=new Set(m.atoms.map(a=>String(a.id)));
+  if(!ids.has(b.atomA)||!ids.has(b.atomB)||b.atomA===b.atomB)return fail('CHE.E.INVALID_INPUT','Wiązanie wskazuje niepoprawne atomy',{bond:b});
+  if(m.bonds.some(x=>(x.atomA===b.atomA&&x.atomB===b.atomB)||(x.atomA===b.atomB&&x.atomB===b.atomA)))return fail('CHE.E.INVALID_INPUT','Między atomami istnieje już wiązanie',{bond:b});
+  m.bonds.push(b); return ok(canonicalize(m));
+}
+function canonicalize(molecule){
+  const m=clone(molecule||{});m.atoms=(m.atoms||[]).map(createAtom);const ids=new Set(m.atoms.map(a=>String(a.id)));
+  m.bonds=(m.bonds||[]).map(normalizeBond).filter(b=>ids.has(b.atomA)&&ids.has(b.atomB)&&b.atomA!==b.atomB);
+  const counts={};m.atoms.forEach(a=>counts[a.element]=(counts[a.element]||0)+1);
+  m.formula=m.formula||Object.keys(counts).sort((a,b)=>a==='C'?-1:b==='C'?1:a==='H'?-1:b==='H'?1:a.localeCompare(b)).map(e=>e+(counts[e]===1?'':counts[e])).join('');
+  m.charge=Number(m.charge||0);m.schemaVersion='2.19';m.model='CHEMICAL_GRAPH';m.canonical=true;
+  m.functionalGroups=detectFunctionalGroupsRaw(m); return m;
+}
+function adjacency(m){const o={};(m.atoms||[]).forEach(a=>o[a.id]=[]);(m.bonds||[]).forEach(b=>{if(o[b.atomA])o[b.atomA].push({atomId:b.atomB,bond:b});if(o[b.atomB])o[b.atomB].push({atomId:b.atomA,bond:b});});return o;}
+function validate(molecule){
+  const m=canonicalize(molecule),issues=[],warnings=[],ids=new Set(),pairs=new Set(),sums={};
+  for(const a of m.atoms){if(ids.has(a.id))issues.push({code:'DUPLICATE_ATOM_ID',atomId:a.id});ids.add(a.id);sums[a.id]=0;if(!D.ATOM_META?.[a.element])issues.push({code:'UNKNOWN_ELEMENT',atomId:a.id,element:a.element});}
+  for(const b of m.bonds){if(!ids.has(b.atomA)||!ids.has(b.atomB))issues.push({code:'ORPHAN_BOND',bondId:b.id});const p=[b.atomA,b.atomB].sort().join('|');if(pairs.has(p))issues.push({code:'DUPLICATE_BOND',bondId:b.id});pairs.add(p);if(![1,1.5,2,3].includes(Number(b.order)))warnings.push({code:'UNCOMMON_BOND_ORDER',bondId:b.id,order:b.order});sums[b.atomA]=(sums[b.atomA]||0)+Number(b.order||0);sums[b.atomB]=(sums[b.atomB]||0)+Number(b.order||0);}
+  m.atoms.forEach(a=>{const v=atomicValence(a.element);if(Number.isFinite(v)&&v>0&&sums[a.id]>v+0.01)warnings.push({code:'VALENCE_EXCEEDED',atomId:a.id,element:a.element,bondOrderSum:sums[a.id],valence:v});});
+  const chargeSum=m.atoms.reduce((s,a)=>s+Number(a.formalCharge||a.charge||0),0);if(Math.abs(chargeSum-m.charge)>1e-9)warnings.push({code:'CHARGE_MISMATCH',moleculeCharge:m.charge,atomChargeSum:chargeSum});
+  const status=issues.length?'INVALID':warnings.length?'VALID_WITH_WARNING':'VALID';return {ok:!issues.length,status,issues,warnings,formula:m.formula,atomCount:m.atoms.length,bondCount:m.bonds.length,chargeSum};
+}
+function detectFunctionalGroupsRaw(m){
+  const A=adjacency(m), atoms=new Map(m.atoms.map(a=>[String(a.id),a]));
+  const out=[], seen=new Set();
+  const add=(type,atomIds,detail)=>{
+    const key=type+'|'+[...atomIds].sort().join(',');
+    if(seen.has(key)) return;
+    seen.add(key);
+    const def=D.FUNCTIONAL_GROUPS?.[type];
+    out.push({id:`fg-${type}-${out.length+1}`,type,atoms:[...atomIds],name:def?.name||{pl:type},pattern:def?.pattern||null,detail:detail||null});
+  };
+  for(const c of m.atoms.filter(a=>a.element==='C')){
+    const n=(A[c.id]||[]).map(x=>({a:atoms.get(x.atomId),bond:x.bond})).filter(x=>x.a);
+    const oxy=n.filter(x=>x.a.element==='O');
+    const dblO=oxy.find(x=>Number(x.bond.order)===2);
+    if(dblO){
+      add('carbonyl',[c.id,dblO.a.id]);
+      const singlesO=oxy.filter(x=>Number(x.bond.order)===1);
+      const hO=singlesO.find(x=>(A[x.a.id]||[]).some(y=>atoms.get(y.atomId)?.element==='H'));
+      if(hO){
+        const hIds=(A[hO.a.id]||[]).filter(y=>atoms.get(y.atomId)?.element==='H').map(y=>y.atomId);
+        add('carboxyl',[c.id,dblO.a.id,hO.a.id,...hIds]);
+      }
+      const nN=n.find(x=>x.a.element==='N'&&Number(x.bond.order)===1);
+      if(nN) add('amide',[c.id,dblO.a.id,nN.a.id]);
+      const rO=singlesO.find(x=>x.a.id!==hO?.a.id&&(A[x.a.id]||[]).some(y=>y.atomId!==c.id&&atoms.get(y.atomId)?.element==='C'));
+      if(rO) add('ester',[c.id,dblO.a.id,rO.a.id]);
+      const h=(A[c.id]||[]).find(x=>atoms.get(x.atomId)?.element==='H');
+      if(h) add('aldehyde',[c.id,dblO.a.id,h.atomId]);
+      else if(n.filter(x=>x.a.element==='C').length>=2) add('ketone',[c.id,dblO.a.id]);
+    }
+  }
+  for(const a of m.atoms){
+    const n=A[a.id]||[];
+    if(a.element==='O'){
+      const h=n.find(x=>atoms.get(x.atomId)?.element==='H'&&Number(x.bond.order)===1);
+      const heavy=n.find(x=>atoms.get(x.atomId)?.element!=='H'&&Number(x.bond.order)===1);
+      if(h&&heavy) add('hydroxyl',[a.id,h.atomId,heavy.atomId]);
+      if(n.filter(x=>atoms.get(x.atomId)?.element!=='H').length===2) add('ether',n.map(x=>x.atomId).concat(a.id));
+    }
+    if(a.element==='N'&&n.length>=1) add('amine',[a.id,...n.map(x=>x.atomId)]);
+    if(a.element==='S'){
+      const h=n.find(x=>atoms.get(x.atomId)?.element==='H'); if(h) add('sulfhydryl',[a.id,h.atomId]);
+    }
+    if(['F','Cl','Br','I'].includes(a.element)){
+      const heavy=n.find(x=>atoms.get(x.atomId)?.element!=='H'); if(heavy) add('halogen',[heavy.atomId,a.id]);
+    }
+  }
+  for(const b of m.bonds){
+    const a=atoms.get(b.atomA), z=atoms.get(b.atomB);
+    if(a&&z&&a.element==='C'&&z.element==='C'&&Number(b.order)===2) add('alkene',[a.id,z.id]);
+    if(a&&z&&a.element==='C'&&z.element==='C'&&Number(b.order)===3) add('alkyne',[a.id,z.id]);
+  }
+  return out;
+}
+function detectFunctionalGroups(molecule){return ok(detectFunctionalGroupsRaw(canonicalize(molecule)));}
+function layout2D(molecule,options){const m=canonicalize(molecule),s=Number(options?.spacing||1.4),out={moleculeId:m.id,units:options?.units||'angstrom',style:options?.style||'structural',atoms:{},bonds:{}};m.atoms.forEach((a,i)=>{const p=a.position2D||{x:(i%5)*s,y:-Math.floor(i/5)*s};out.atoms[a.id]={x:Number(p.x)||0,y:Number(p.y)||0};});m.bonds.forEach(b=>out.bonds[b.id]={start:{...out.atoms[b.atomA]},end:{...out.atoms[b.atomB]},order:b.order});return ok(out);}
+function distance(a,b){return Math.hypot((a.x||0)-(b.x||0),(a.y||0)-(b.y||0),(a.z||0)-(b.z||0));}
+function bondLengths(molecule){const m=canonicalize(molecule),by=new Map(m.atoms.map(a=>[a.id,a])),out=m.bonds.map(b=>{const a=by.get(b.atomA),z=by.get(b.atomB);if(!a?.position3D||!z?.position3D)return {bondId:b.id,length:null,source:'missing'};return {bondId:b.id,atomA:b.atomA,atomB:b.atomB,length:distance(a.position3D,z.position3D),unit:'angstrom',source:'coordinates'};});return ok(out);}
+function angles(molecule){const m=canonicalize(molecule),A=adjacency(m),by=new Map(m.atoms.map(a=>[a.id,a])),out=[];for(const center of m.atoms){const n=(A[center.id]||[]).map(x=>x.atomId).filter(id=>by.get(id)?.position3D);for(let i=0;i<n.length;i++)for(let j=i+1;j<n.length;j++){const c=by.get(center.id).position3D,a=by.get(n[i]).position3D,b=by.get(n[j]).position3D;const va=[a.x-c.x,a.y-c.y,a.z-c.z],vb=[b.x-c.x,b.y-c.y,b.z-c.z],dot=va[0]*vb[0]+va[1]*vb[1]+va[2]*vb[2],na=Math.hypot(...va),nb=Math.hypot(...vb);if(na&&nb){const q=Math.max(-1,Math.min(1,dot/(na*nb)));out.push({center:center.id,atomA:n[i],atomB:n[j],angleDeg:Math.acos(q)*180/Math.PI});}}}return ok(out);}
+function stereo(molecule){const m=canonicalize(molecule);return ok({moleculeId:m.id,defined:m.stereochemistry||null,bonds:m.bonds.filter(b=>b.stereochemistry).map(b=>({bondId:b.id,value:b.stereochemistry}))});}
+function resonance(molecule){const m=canonicalize(molecule);return ok({moleculeId:m.id,system:m.resonance||null,structures:Array.isArray(m.resonance?.structures)?m.resonance.structures:[]});}
+function geometry3D(molecule,options){const m=canonicalize(molecule),coords=[];m.atoms.forEach((a,i)=>{const p=a.position3D||{x:(i%3)*1.2,y:(Math.floor(i/3)%3)*1.2,z:Math.floor(i/9)*1.2};coords.push({atomId:a.id,x:Number(p.x)||0,y:Number(p.y)||0,z:Number(p.z)||0});});return ok({moleculeId:m.id,conformerId:options?.conformerId||'conf-001',units:'angstrom',coordinates:coords,geometrySource:options?.source||'canonical-placeholder',geometryLevel:options?.level||'EDUCATIONAL_APPROXIMATION',bondLengths:bondLengths(m).value,angles:angles(m).value});}

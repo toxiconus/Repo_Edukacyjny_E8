@@ -1,0 +1,495 @@
+C.REACTION_VALIDATOR={version:'2.30',validate,transform,validateTransformation,reactionBalance,mapChanges};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 53]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{}, ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const TYPES=new Set(['IR','NMR','MS','UV_VIS','ATOMIC']);
+function peak(input){const x=input||{},type=String(x.type||'').toUpperCase();if(!TYPES.has(type))return C.FAIL('CHE.E.INVALID_INPUT','Nieznany typ widma',{type});const axis=Number(x.axis);if(!Number.isFinite(axis))return C.FAIL('CHE.E.INVALID_INPUT','Brak osi piku',{axis});return ok({type,axis,unit:x.unit||null,intensity:Number.isFinite(Number(x.intensity))?Number(x.intensity):null,assignment:x.assignment||null,uncertainty:x.uncertainty??null,source:x.source||'EDUCATIONAL_APPROXIMATION'});}
+function spectrum(input){const x=input||{},type=String(x.type||'').toUpperCase();if(!TYPES.has(type))return C.FAIL('CHE.E.INVALID_INPUT','Nieznany typ widma',{type});const peaks=(x.peaks||[]).map(peak);const bad=peaks.filter(p=>!p.ok);if(bad.length)return C.FAIL('CHE.E.INVALID_INPUT','Niepoprawny pik',{bad});return ok({id:String(x.id||'spectrum-'+Date.now()),type,entityId:x.entityId||null,axis:x.axis||null,peaks:peaks.map(p=>p.value),method:x.method||null,source:x.source||'EDUCATIONAL_APPROXIMATION',uncertainty:x.uncertainty??null,calculationLevel:x.calculationLevel||null});}
+function assign(spectrumId,peakId,assignment){return ok({spectrumId,peakId,assignment,source:'USER_DEFINED'});}
+function validate(s){const x=s||{},e=[];if(!TYPES.has(String(x.type||'').toUpperCase()))e.push({code:'INVALID_SPECTRUM_TYPE'});if(!Array.isArray(x.peaks))e.push({code:'PEAKS_NOT_ARRAY'});return ok({ok:!e.length,errors:e});}
+C.SPECTRA_CONTRACT={version:'2.35',types:[...TYPES],peak,spectrum,assign,validate};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 54]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{}, ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+function atom(symbol,charge){const a=C.ATOM?.build?.(symbol,charge);if(!a)return C.FAIL('CHE.E.DATA_NOT_FOUND','Brak atomu',{symbol,charge});return ok({symbol,charge:Number(charge)||0,Z:a.Z,electronCount:a.electronCount,subshells:a.subshells.map(s=>({name:s.name,n:s.n,l:s.l,occupancy:s.count,capacity:s.orbitalCount*2,orbitals:s.distribution.map(d=>({index:d.orbitalIndex,spin:d.spin}))})),valenceSubshells:a.valenceSubshells.slice(),coreSubshells:a.coreSubshells.slice(),unpairedElectrons:a.unpairedCount,configFull:a.configFull,configShells:a.configShells,source:'CHE.ATOM'});}
+function configuration(symbol,charge){const a=atom(symbol,charge);if(!a.ok)return a;return ok({symbol,charge:Number(charge)||0,configuration:a.value.configFull,subshells:a.value.subshells,valence:a.value.valenceSubshells,source:'CHE.ATOM'});}
+function validate(m){const x=m||{},e=[];if(!x.symbol)e.push({code:'NO_SYMBOL'});if(!Number.isFinite(Number(x.electronCount)))e.push({code:'NO_ELECTRON_COUNT'});return ok({ok:!e.length,errors:e});}
+C.ELECTRONIC_MODEL={version:'2.36',atom,configuration,validate};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 55]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{}, ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+function clone(x){return JSON.parse(JSON.stringify(x));}
+function create(input){const x=input||{};return {id:String(x.id||'mechanism-'+Date.now()),nodes:Array.isArray(x.nodes)?clone(x.nodes):[],edges:Array.isArray(x.edges)?clone(x.edges):[],reactionId:x.reactionId||null,source:x.source||'USER_DEFINED',schemaVersion:'2.37'};}
+function addState(graph,state){const g=create(graph);const node={id:String(state?.id||'state-'+g.nodes.length),type:'state',moleculeIds:clone(state?.moleculeIds||[]),label:state?.label||null};g.nodes.push(node);return ok(g);}
+function addTransform(graph,transform){const g=create(graph),x=transform||{};if(!C.TRANSFORM)return C.FAIL('CHE.E.UNSUPPORTED','CHE.TRANSFORM niedostępny');const edge={id:String(x.id||'step-'+g.edges.length),type:'transform',from:x.from,to:x.to,changes:clone(x.changes||{}),reactionId:x.reactionId||null};g.edges.push(edge);return ok(g);}
+function validate(graph){const g=create(graph),e=[],ids=new Set();g.nodes.forEach(n=>{if(ids.has(n.id))e.push({code:'DUPLICATE_NODE',id:n.id});ids.add(n.id);});g.edges.forEach(x=>{if(!ids.has(x.from)||!ids.has(x.to))e.push({code:'BROKEN_EDGE',id:x.id});});return ok({ok:!e.length,errors:e,nodeCount:g.nodes.length,edgeCount:g.edges.length});}
+function fromReaction(reaction){const r=reaction||{},g=create({reactionId:r.id,source:'CHE.REACTION'});const a={id:'reactants',type:'state',moleculeIds:(r.reactants||[]).map(x=>x.formula)};const b={id:'products',type:'state',moleculeIds:(r.products||[]).map(x=>x.formula)};g.nodes=[a,b];g.edges=[{id:'reaction-transform',type:'transform',from:a.id,to:b.id,reactionId:r.id,changes:clone(r.changes||{})}];return ok(g);}
+C.MECHANISM_GRAPH={version:'2.37',create,addState,addTransform,validate,fromReaction};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 56]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{}, ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const SOURCES=new Set(['EXPERIMENTAL','COMPUTED','ESTIMATED','EDUCATIONAL_APPROXIMATION','USER_DEFINED','DATABASE']);
+function create(input){const x=input||{},source=SOURCES.has(x.source)?x.source:'EDUCATIONAL_APPROXIMATION';return ok({source,method:x.method||null,uncertainty:x.uncertainty??null,confidence:x.confidence??null,calculationLevel:x.calculationLevel||null,reference:x.reference||null,createdAt:x.createdAt||new Date().toISOString()});}
+function attach(data,meta){return ok({data,provenance:create(meta).value});}
+function merge(list){const xs=(list||[]).filter(Boolean);return ok({items:xs.map(x=>create(x).value),sources:[...new Set(xs.map(x=>x.source).filter(Boolean))]});}
+function validate(p){const x=p||{},e=[];if(!SOURCES.has(x.source))e.push({code:'INVALID_SOURCE',source:x.source});if(x.confidence!=null&&(!Number.isFinite(Number(x.confidence))||Number(x.confidence)<0||Number(x.confidence)>1))e.push({code:'INVALID_CONFIDENCE'});return ok({ok:!e.length,errors:e});}
+C.PROVENANCE={version:'2.38',sources:[...SOURCES],create,attach,merge,validate};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 57]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{},D=C.DATA||{},E=C.ENGINE=C.ENGINE||{},ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const BASELINE={molecules:20,reactions:13,reactionData:13,substances:39,atomicProps:23,isotopes:17,atomicSpectra:5,moleculeIds:['HCl','HF','H2O','H3O','H2SO4','H3PO4','H2CO3','CH3COOH','HCOOH','NH3','CO2','CH4','C2H5OH','C6H6','C3H6O','H2S','SO2','HCN','H2O2','CO'],reactionIds:['hclNaOH','znHcl','mgHcl','feHcl','caco3Hcl','h2so4Naoh','cuoH2so4','cuoHcl','agno3Hcl','cuHno3','so3H2o','naclH2SO4','h2Cl2']};
+const keys=x=>Object.keys(x||{}).sort();
+function inventory(){return {molecules:keys(D.MOLECULES).length,reactions:keys(D.REACTIONS).length,reactionData:keys(D.REACTION_DATA).length,substances:keys(D.SUBSTANCES).length,atomicProps:keys(D.ATOMIC_PROPS).length,isotopes:keys(D.ISOTOPES).length,atomicSpectra:keys(D.ATOMIC_SPECTRA).filter(k=>k!=='RYDBERG').length};}
+function compareBaseline(){const inv=inventory(),issues=[];for(const [k,v] of Object.entries(BASELINE))if(typeof v==='number'&&inv[k]!==v)issues.push({code:'BASELINE_COUNT_MISMATCH',table:k,expected:v,actual:inv[k]});const mi=keys(D.MOLECULES),ri=keys(D.REACTIONS);if(JSON.stringify(mi)!==JSON.stringify([...BASELINE.moleculeIds].sort()))issues.push({code:'MOLECULE_ID_SET_MISMATCH',expected:BASELINE.moleculeIds,actual:mi});if(JSON.stringify(ri)!==JSON.stringify([...BASELINE.reactionIds].sort()))issues.push({code:'REACTION_ID_SET_MISMATCH',expected:BASELINE.reactionIds,actual:ri});return {ok:!issues.length,issues,inventory:inv};}
+function reactionDataAudit(){const issues=[];for(const [id,r] of Object.entries(D.REACTIONS||{})){const missing=[];for(const side of ['reactants','products'])for(const x of r?.[side]||[])if(!D.SUBSTANCES?.[x.formula])missing.push(x.formula);if(missing.length)issues.push({code:'REACTION_SUBSTANCE_MISSING',id,missing});}return {ok:!issues.length,issues};}
+function run(){const base=compareBaseline(),rx=reactionDataAudit();return ok({ok:base.ok&&rx.ok,baseline:base,reactions:rx});}
+C.DATA_INTEGRITY={version:'2.47',baseline:BASELINE,inventory,compareBaseline,reactionDataAudit,run};
+if(E.registry)E.registry.DATA_INTEGRITY={layer:'META',owner:'CHE.DATA_INTEGRITY',role:'audyt kompletności danych legacy',depends:['DATA','REACTION']};
+if(E.modules)E.modules.DATA_INTEGRITY='2.47';
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 58]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{},E=C.ENGINE=C.ENGINE||{},ok=v=>C.OK?C.OK(v):{ok:true,value:v},fail=(c,m,x)=>C.FAIL?C.FAIL(c,m,x):{ok:false,error:{code:c,message:m,context:x}};
+const ALLOWED=new Set(['R','S','r','s','E','Z','cis','trans']);
+function validateDescriptor(d){const x=String(d||'');if(!ALLOWED.has(x))return fail('CHE.E.INVALID_INPUT','Nieznany deskryptor stereochemiczny',{descriptor:d});return ok({descriptor:x,complete:false,reason:'pełny CIP/E-Z nie jest jeszcze zaimplementowany'});}
+function validate(m){const x=C.STRUCTURE?.canonicalize?.(m||{});if(!x)return fail('CHE.E.INVALID_INPUT','Brak grafu');const errors=[];for(const b of x.bonds||[])if(b.stereochemistry!=null&&!validateDescriptor(b.stereochemistry).ok)errors.push({code:'INVALID_STEREO_DESCRIPTOR',bondId:b.id});for(const a of x.atoms||[])if(a.stereochemistry!=null&&!validateDescriptor(a.stereochemistry).ok)errors.push({code:'INVALID_STEREO_DESCRIPTOR',atomId:a.id});return ok({ok:!errors.length,errors,complete:false});}
+function assign(m){const x=C.STRUCTURE?.canonicalize?.(m||{});if(!x)return fail('CHE.E.INVALID_INPUT','Brak grafu');return ok({moleculeId:x.id,descriptors:[...(x.atoms||[]).filter(a=>a.stereochemistry).map(a=>({kind:'atom',id:a.id,descriptor:a.stereochemistry})),...(x.bonds||[]).filter(b=>b.stereochemistry).map(b=>({kind:'bond',id:b.id,descriptor:b.stereochemistry}))],complete:false});}
+C.STEREO_CONTRACT={version:'2.48',validateDescriptor,validate,assign,complete:false};
+if(E.registry)E.registry.STEREO_CONTRACT={layer:'DOMAIN',owner:'CHE.STEREO_CONTRACT',role:'jawne deskryptory stereo bez udawania pełnego CIP',depends:['STRUCTURE']};
+if(E.modules)E.modules.STEREO_CONTRACT='2.48';
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 59]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const E = C.ENGINE = C.ENGINE || {};
+E.version = '2.48';
+E.modules = {
+  DATA:'2.17', STRUCTURE:'2.17', CHEM:'2.17', MOLECULE:'2.17', REACTION:'2.17', TRANSFORM:'2.17', ORGANIC:'2.21', GEOMETRY:'2.23', VISUAL:'2.17', EQUILIBRIUM:'2.17',
+  STOICH:'2.17', UNITS:'2.17', THERMO:'2.17', ELECTRO:'2.17',
+  ATOM:'2.17', NUCLEUS:'2.17', ION:'2.17', ISOTOPE:'2.17', SPECTRA:'2.17', NUCLEAR:'2.17',
+  PROFILE:'2.17', STATE:'2.17', OBSERVER:'2.17', PROGRESS:'2.17', DERIVED:'2.17', EDITOR:'2.18', RECONSTRUCT:'2.19', REACTIONSET:'2.20', ORGANIC_GRAPH:'2.21', REPRESENTATION:'2.32', GEOMETRY_CONTRACT:'2.23', MAPPING:'2.29', NOMENCLATURE:'2.33', SCIENCE:'2.26', VALIDATOR:'2.27', ISOMORPHISM:'2.28', REACTION_VALIDATOR:'2.30', SPECTRA_CONTRACT:'2.35', ELECTRONIC_MODEL:'2.36', MECHANISM_GRAPH:'2.37', PROVENANCE:'2.38', DATA_INTEGRITY:'2.47', STEREO_CONTRACT:'2.48',
+  DOM:'2.17', VIZ:'2.17', MOTION:'2.17', VIEW:'2.17', EXPLAIN:'2.17',
+  REGISTRY:'2.17', CONTRACT:'2.17', AUDIT:'2.17', PUBLIC:'2.17'
+};
+E.registry = {
+  DATA:      { layer:'DATA',         owner:'CHE.DATA',         role:'centralne dane chemiczne i fizyczne', depends:[] },
+  STRUCTURE: { layer:'DOMAIN',       owner:'CHE.STRUCTURE',   role:'kanoniczny graf chemiczny, walidacja, grupy funkcyjne i geometria', depends:['DATA','CHEM'] },
+  CHEM:      { layer:'DOMAIN',       owner:'CHE.CHEM',         role:'parser, masa, bilans, pH',            depends:['DATA'] },
+  MOLECULE:  { layer:'DOMAIN',       owner:'CHE.MOLECULE',     role:'model atomu i cząsteczki',            depends:['DATA'] },
+  REACTION:  { layer:'DOMAIN',       owner:'CHE.REACTION',     role:'model reakcji, równanie, bilans',     depends:['DATA','CHEM','THERMO','ELECTRO'] },
+  TRANSFORM: { layer:'DOMAIN',       owner:'CHE.TRANSFORM',   role:'transformacje grafu reakcji, atomów i protonów, walidacja reakcji', depends:['STRUCTURE','REACTION'] },
+  ORGANIC:   { layer:'DOMAIN',       owner:'CHE.ORGANIC',      role:'chemia organiczna strukturalna: rezonans, tautomeria, stereochemia, konformery', depends:['STRUCTURE','DATA'] },
+  GEOMETRY:  { layer:'DOMAIN',       owner:'CHE.GEOMETRY',     role:'wspólna geometria 2D/3D/VSEPR i źródła geometrii', depends:['STRUCTURE','ATOM'] },
+  VISUAL:    { layer:'SERVICE',      owner:'CHE.VISUAL',       role:'wspólne projekcje CV atomu, wiązania, grupy i reakcji', depends:['STRUCTURE','ORGANIC','GEOMETRY','TRANSFORM'] },
+  EDITOR:    { layer:'SERVICE',      owner:'CHE.EDITOR',       role:'edycja kopii grafu, historia, walidacja i budowanie reakcji', depends:['STRUCTURE','TRANSFORM','ORGANIC','GEOMETRY'] },
+  REACTIONSET:{layer:'DOMAIN', owner:'CHE.REACTIONSET', role:'wieloskładnikowe reakcje, role, mapping i transfery między grafami', depends:['STRUCTURE','TRANSFORM','RECONSTRUCT']},
+  SPECTRA_CONTRACT:{layer:'DOMAIN', owner:'CHE.SPECTRA_CONTRACT', role:'wspólny kontrakt widm IR/NMR/MS/UV-Vis', depends:['SPECTRA']},
+  ELECTRONIC_MODEL:{layer:'DOMAIN', owner:'CHE.ELECTRONIC_MODEL', role:'projekcja konfiguracji elektronowej z CHE.ATOM', depends:['ATOM']},
+  MECHANISM_GRAPH:{layer:'DOMAIN', owner:'CHE.MECHANISM_GRAPH', role:'graf stanów i transformacji mechanizmu reakcji', depends:['TRANSFORM','REACTION']},
+  PROVENANCE:{layer:'META', owner:'CHE.PROVENANCE', role:'źródła, metoda, niepewność i poziom obliczeniowy', depends:['SCIENCE']} ,
+  DATA_INTEGRITY:{layer:'META', owner:'CHE.DATA_INTEGRITY', role:'audyt kompletności danych legacy i braków', depends:['DATA','REACTION']},
+  STEREO_CONTRACT:{layer:'DOMAIN', owner:'CHE.STEREO_CONTRACT', role:'jawna walidacja deskryptorów stereochemicznych bez pełnego CIP', depends:['STRUCTURE']},
+  RECONSTRUCT:{layer:'DOMAIN', owner:'CHE.RECONSTRUCT', role:'rekonstrukcja jawnych/implicitnych atomów i transformacji grafu', depends:['STRUCTURE','TRANSFORM']},
+  VALIDATOR:{layer:'DOMAIN', owner:'CHE.VALIDATOR', role:'walidacja wartościowości, ładunku i implicit H', depends:['STRUCTURE']},
+  ISOMORPHISM:{layer:'DOMAIN', owner:'CHE.ISOMORPHISM', role:'izomorfizm i canonical labeling grafów', depends:['STRUCTURE']},
+  ORGANIC_GRAPH:{layer:'DOMAIN', owner:'CHE.ORGANIC', role:'rozszerzona chemia organiczna oparta na grafie: równoważność, grupy, rezonans, tautomeria, stereo', depends:['STRUCTURE','RECONSTRUCT','ORGANIC']},
+  REPRESENTATION:{layer:'SERVICE', owner:'CHE.REPRESENTATION', role:'formula, półstrukturalny, szkieletowy i Lewis z grafu kanonicznego', depends:['STRUCTURE','DATA','VALIDATOR']},
+  GEOMETRY_CONTRACT:{layer:'DOMAIN', owner:'CHE.GEOMETRY_CONTRACT', role:'kontrakt geometrii i źródeł', depends:['STRUCTURE','GEOMETRY']},
+  MAPPING:{layer:'SERVICE', owner:'CHE.MAPPING', role:'mapowanie atomów między grafami', depends:['STRUCTURE','RECONSTRUCT']},
+  NOMENCLATURE:{layer:'SERVICE', owner:'CHE.NOMENCLATURE', role:'nomenklatura strukturalna wyprowadzana z grafu; bez udawania pełnego IUPAC', depends:['STRUCTURE','REPRESENTATION','ORGANIC_GRAPH']},
+  SCIENCE:{layer:'META', owner:'CHE.SCIENCE', role:'wspólny kontrakt typów naukowych', depends:[]},
+  LAB:{layer:'LAB', owner:'CHE.LAB', role:'zlewka modułowa, sesja, panele, BHP/pH', depends:['EQUILIBRIUM','DATA']},
+  EQUILIBRIUM:{layer:'DOMAIN',       owner:'CHE.EQUILIBRIUM',  role:'równowagi, bufory, miareczkowanie',   depends:['DATA','CHEM'] },
+  STOICH:    { layer:'DOMAIN',       owner:'CHE.STOICH',       role:'stechiometria ilościowa',             depends:['CHEM','REACTION'] },
+  UNITS:     { layer:'DOMAIN',       owner:'CHE.UNITS',        role:'konwersje jednostek',                 depends:[] },
+  THERMO:    { layer:'DOMAIN',       owner:'CHE.THERMO',       role:'termodynamika reakcji i Arrhenius',   depends:['DATA'] },
+  ELECTRO:   { layer:'DOMAIN',       owner:'CHE.ELECTRO',      role:'elektrochemia ogniw i Nernst',        depends:['DATA'] },
+  ATOM:      { layer:'DOMAIN',       owner:'CHE.ATOM',         role:'model atomu: jądro, powłoki, elektrony', depends:['DATA','MOLECULE'] },
+  NUCLEUS:   { layer:'DOMAIN',       owner:'CHE.NUCLEUS',      role:'model jądra: energia wiązania, defekt masy', depends:['DATA'] },
+  ION:       { layer:'DOMAIN',       owner:'CHE.ION',          role:'model jonu i izoelektronowości',      depends:['DATA','ATOM'] },
+  ISOTOPE:   { layer:'DOMAIN',       owner:'CHE.ISOTOPE',      role:'izotopy, abundancja, rozpady',        depends:['DATA'] },
+  SPECTRA:   { layer:'DOMAIN',       owner:'CHE.SPECTRA',      role:'widma atomowe i wzór Rydberga',       depends:['DATA'] },
+  NUCLEAR:   { layer:'DOMAIN',       owner:'CHE.NUCLEAR',      role:'reakcje jądrowe i rozpady',           depends:['DATA','NUCLEUS','ISOTOPE'] },
+  PROFILE:   { layer:'SERVICE',      owner:'CHE.PROFILE',      role:'most obiektów domenowych',            depends:['DATA','MOLECULE','REACTION','THERMO','ATOM'] },
+  STATE:     { layer:'DOMAIN',       owner:'CHE.STATE',        role:'warunki doświadczenia',               depends:[] },
+  OBSERVER:  { layer:'SERVICE',      owner:'CHE.OBSERVER',     role:'obserwowalne efekty chemiczne',       depends:['DATA','REACTION'] },
+  PROGRESS:  { layer:'DOMAIN',       owner:'CHE.PROGRESS',     role:'postęp reakcji Îľ',                    depends:['REACTION','STOICH'] },
+  DERIVED:   { layer:'SERVICE',      owner:'CHE.DERIVED',      role:'wyniki pochodne i cache',             depends:['DATA','CHEM'] },
+  DOM:       { layer:'PRESENTATION', owner:'CHE.DOM',          role:'wspólne helpery DOM/SVG',             depends:[] },
+  VIZ:       { layer:'PRESENTATION', owner:'CHE.VIZ',          role:'prymitywy SVG',                       depends:['DATA','DOM'] },
+  MOTION:    { layer:'PRESENTATION', owner:'CHE.MOTION',       role:'pętla RAF i animacje',                depends:['DOM'] },
+  VIEW:      { layer:'PRESENTATION', owner:'CHE.VIEW',         role:'runtime widoków',                     depends:['DOM','VIZ','MOTION'] },
+  EXPLAIN:   { layer:'PRESENTATION', owner:'CHE.EXPLAIN',      role:'klikane podpowiedzi',                 depends:['DOM'] },
+  REGISTRY:  { layer:'META',         owner:'CHE.ENGINE',       role:'rejestr modułów',                     depends:[] },
+  CONTRACT:  { layer:'META',         owner:'CHE.ENGINE',       role:'kontrakt architektury',               depends:['REGISTRY'] },
+  AUDIT:     { layer:'META',         owner:'CHE.ENGINE',       role:'audyt spójności',                     depends:['REGISTRY','CONTRACT'] },
+  PUBLIC:    { layer:'META',         owner:'CHE.ENGINE',       role:'publiczne API silnika',               depends:['REGISTRY','CONTRACT','AUDIT'] }
+};
+E.getModule = name => E.registry[name] || null;
+E.all = ()=> Object.entries(E.registry).map(([n,m])=>({ name:n, ...m, version:E.modules[n] || '—', loaded: !!C[n] }));
+E.layerOf = name => E.registry[name]?.layer || null;
+E.ownerOf = name => E.registry[name]?.owner || null;
+E.depsOf = name => E.registry[name]?.depends || [];
+E.entryOf = name => {
+  const owner = E.ownerOf(name);
+  if(!owner) return null;
+  const parts = owner.split('.');
+  let x = g;
+  for(const p of parts) x = x?.[p];
+  return x || null;
+};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 60]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const E = C.ENGINE = C.ENGINE || {};
+const layers = { DATA:1, DOMAIN:2, SERVICE:3, PRESENTATION:4, META:5 };
+const level = name => layers[E.registry?.[name]?.layer] ?? -1;
+function canUse(from, to, seen){
+  seen = seen || new Set();
+  if(from === to) return true;
+  if(seen.has(from)) return false;
+  seen.add(from);
+  const deps = E.registry?.[from]?.depends || [];
+  return deps.includes(to) || deps.some(d=> canUse(d, to, seen));
+}
+function assertUse(from, to){
+  if(!canUse(from, to)) throw new Error('Niedozwolona zależność: CHE.' + from + ' → CHE.' + to);
+  return true;
+}
+const rules = [
+  'DATA jest jedynym właścicielem danych chemicznych',
+  'Zależności płyną od DATA do warstw wyższych',
+  'Moduł nie może wymagać modułu, który zależy od niego',
+  'UI i VIZ nie definiują faktów chemicznych',
+  'Public API jest jedynym wejściem dla nowych konsumentów',
+  'Wynik obliczenia nie nadpisuje danych źródłowych',
+  'Każdy moduł ma jednego właściciela',
+  'Zmiana kontraktu wymaga bump wersji',
+  'Nowe funkcje publiczne zwracają {ok, value} lub {ok:false, error}',
+  'Warstwa atomowa i jądrowa należą do domeny, nie do UI',
+  'CHE.STRUCTURE jest jedynym właścicielem kanonicznego grafu molekularnego',
+  'CHE.TRANSFORM opisuje reakcję jako zmianę grafu, nie jako logikę renderera'
+];
+const errorCodes = {
+  DATA_NOT_FOUND:'CHE.E.DATA_NOT_FOUND', INVALID_TYPE:'CHE.E.INVALID_TYPE',
+  INVALID_ID:'CHE.E.INVALID_ID', INVALID_STATE:'CHE.E.INVALID_STATE',
+  INVALID_CONDITION:'CHE.E.INVALID_CONDITION', INVALID_INPUT:'CHE.E.INVALID_INPUT',
+  INVALID_CHARGE:'CHE.E.INVALID_CHARGE', CONTRACT:'CHE.E.CONTRACT',
+  CANONICAL:'CHE.E.CANONICAL', REACTION_UNBALANCED:'CHE.E.REACTION_UNBALANCED',
+  UNSUPPORTED:'CHE.E.UNSUPPORTED', INTERNAL:'CHE.E.INTERNAL',
+  ISOTOPE_NOT_FOUND:'CHE.E.ISOTOPE_NOT_FOUND', NUCLEUS_INVALID:'CHE.E.NUCLEUS_INVALID',
+  SPECTRUM_NOT_FOUND:'CHE.E.SPECTRUM_NOT_FOUND', STRUCTURE_INVALID:'CHE.E.STRUCTURE_INVALID',
+  BOND_NOT_FOUND:'CHE.E.BOND_NOT_FOUND', GROUP_NOT_FOUND:'CHE.E.GROUP_NOT_FOUND'
+};
+function envelope(type, id, data, extra){
+  extra = extra || {};
+  return { type, id,
+    version: E.modules?.[type] || extra.version || '2.17',
+    source: extra.source || E.registry?.[type]?.owner || null,
+    data: data ?? null,
+    relations: Array.isArray(extra.relations) ? extra.relations : [],
+    conditions: extra.conditions || null,
+    meta: { ...(extra.meta || {}), canonical:true, schema:E.schemaVersion } };
+}
+function isEnvelope(x){
+  return !!x && typeof x === 'object' && ['type','id','version','source','data','relations','meta'].every(k=> k in x);
+}
+function audit(){
+  const issues = [];
+  const R = E.registry || {};
+  const names = Object.keys(R);
+  for(const name of names){
+    const m = R[name];
+    if(!E.ownerOf(name)) issues.push({ code:'NO_OWNER', module:name });
+    if(!m.depends) issues.push({ code:'NO_DEPS_FIELD', module:name });
+    for(const d of (m.depends || [])){
+      if(!R[d]) issues.push({ code:'UNKNOWN_DEP', module:name, detail:d });
+      else if(level(name) >= 0 && level(d) >= 0 && level(name) < level(d)){
+        issues.push({ code:'WRONG_DIRECTION', module:name, detail:name + ' → ' + d });
+      }
+    }
+  }
+  const visited = new Set(), stack = new Set();
+  function dfs(n, path){
+    if(stack.has(n)){ issues.push({ code:'CYCLE', module:n, detail:[...path, n].join(' → ') }); return; }
+    if(visited.has(n)) return;
+    visited.add(n); stack.add(n);
+    for(const d of (R[n]?.depends || [])) if(R[d]) dfs(d, [...path, n]);
+    stack.delete(n);
+  }
+  names.forEach(n=> dfs(n, []));
+  return { ok:issues.length === 0, issues, layers, rules };
+}
+E.CONTRACT = { version:'2.38', layers, level, canUse, assertUse, rules, audit, errorCodes,
+  envelope, isEnvelope, errors:Object.values(errorCodes) };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 61]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const E = C.ENGINE = C.ENGINE || {};
+const near = (a,b,e)=> Math.abs(a-b) <= (e || 1e-9);
+
+function groupChemistry(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'chemistry',name,ok:!!ok,detail:detail||''});
+  const A = C.DATA?.ACIDS || {}; const CH = C.CHEM;
+  const w = CH?.weakAcid?.(0.1, A.CH3COOH?.Ka?.[0]);
+  add('CHEM-001','weakAcid CH3COOH 0.1M', w && near(w.pH,2.88,0.06));
+  add('CHEM-002','pHFromH 1e-3 → 3', near(CH.pHFromH(1e-3),3));
+  add('CHEM-003','HFromPH 3 → 1e-3', near(CH.HFromPH(3),1e-3));
+  add('CHEM-004','bufferPH 1:1 → pKa', near(CH.bufferPH(4.76,1,1),4.76,0.001));
+  add('CHEM-005','strongAcid 1e-3 → pH 3', near(CH.strongAcid(1e-3).pH,3,0.01));
+  add('CHEM-006','strongBase 1e-3 → pH 11', near(CH.strongBase(1e-3).pH,11,0.01));
+  add('CHEM-007','molarMass H2O', near(CH.molarMass('H2O'),18.015,0.002));
+  add('CHEM-008','parseFormula H2SO4', JSON.stringify(CH.parseFormula('H2SO4'))===JSON.stringify({H:2,S:1,O:4}));
+  add('CHEM-009','parseFormula Ca(OH)2', JSON.stringify(CH.parseFormula('Ca(OH)2'))===JSON.stringify({Ca:1,O:2,H:2}));
+  add('CHEM-010','parseFormula CuSO4·5H2O', JSON.stringify(CH.parseFormula('CuSO4·5H2O'))===JSON.stringify({Cu:1,S:1,O:9,H:10}));
+  add('CHEM-011','parseCharge SO4^2-', CH.parseCharge('SO4^2-')===-2);
+  add('CHEM-012','balanceReaction znHcl', CH.balanceReaction(C.DATA.REACTIONS.znHcl).ok);
+  add('CHEM-013','balanceReaction wykrywa błąd', CH.balanceReaction({reactants:[{formula:'HCl',coef:1}],products:[{formula:'H2',coef:1}]}).ok===false);
+  const ER = C.EQUILIBRIUM;
+  add('CHEM-014','equivalenceVolume', near(ER.equivalenceVolume(0.1,25,0.1),25,0.01));
+  add('CHEM-015','titrationPH strongStrong eq', near(ER.titrationPH({type:'strongStrong',C:0.1,V0:25,V:25}),7,0.05));
+  add('CHEM-016','polyproticPH H3PO4', Number.isFinite(ER.polyproticPH(0.1,[7.1e-3,6.3e-8,4.5e-13]).pH));
+  const spec = ER.speciate('H3PO4',0.1,{Kas:[7.1e-3,6.3e-8,4.5e-13],pH:7});
+  add('CHEM-017','speciate zwraca 4 formy', spec.ok && spec.species.length===4);
+  add('CHEM-018','speciate frakcje sumują się do 1', Math.abs(spec.fractions.reduce((a,b)=>a+b,0)-1)<1e-9);
+  const M = C.MOLECULE;
+  add('CHEM-019','MOLECULE H2O formuła', M.formula('H2O')==='H2O');
+  add('CHEM-020','MOLECULE H2O kąt', M.get('H2O').angles.some(a=>near(a.deg,104.5,0.2)));
+  add('CHEM-021','MOLECULE CO2 liniowa', M.get('CO2').geometry==='liniowa');
+  add('CHEM-022','MOLECULE CH4 tetraedr', M.get('CH4').geometry==='tetraedryczna');
+  add('CHEM-023','MOLECULE NH3 piramida', M.get('NH3').geometry==='piramidalna');
+  add('CHEM-024','MOLECULE H2O wolne pary', M.get('H2O').atoms.find(a=>a.element==='O').lonePairs===2);
+  add('CHEM-025','MOLECULE walencyjne H2O', M.valenceElectrons('H2O')===8);
+  add('CHEM-026','MOLECULE atom Cu Z=29', M.atom('Cu').Z===29);
+  add('CHEM-027','MOLECULE konfiguracja Cu', M.orbitalSummary('Cu').includes('3d10'));
+  add('CHEM-028','MOLECULE konfiguracja Fe', M.orbitalSummary('Fe').includes('3d6'));
+  add('CHEM-029','MOLECULE audyt wszystkich', M.auditAll().ok===M.auditAll().count);
+  add('CHEM-030','MOLECULE walidacja H2O', M.validate('H2O').ok);
+  const ST = C.STRUCTURE;
+  const water = ST.createMolecule({id:'audit-H2O', atoms:[
+    {id:'O1',element:'O',position2D:{x:0,y:0}},
+    {id:'H1',element:'H',position2D:{x:-1,y:0}},
+    {id:'H2',element:'H',position2D:{x:1,y:0}}
+  ], bonds:[
+    {id:'B1',atomA:'O1',atomB:'H1',order:1},
+    {id:'B2',atomA:'O1',atomB:'H2',order:1}
+  ], charge:0});
+  const wv = ST.validate(water);
+  add('STRUCT-001','kanoniczny graf H2O', water.canonical===true && water.model==='CHEMICAL_GRAPH');
+  add('STRUCT-002','walidacja H2O', wv.ok && wv.status!=='INVALID');
+  add('STRUCT-003','grupy funkcyjne H2O', ST.detectFunctionalGroups(water).ok);
+  const fg = ST.detectFunctionalGroups(C.MOLECULE?.get?.('CH3COOH'));
+  add('STRUCT-004','CH3COOH rozpoznaje karbonyl/karboksyl', fg.ok && fg.value.some(x=>x.type==='carboxyl'));
+  const lay = ST.layout2D(C.MOLECULE?.get?.('H2O'));
+  add('STRUCT-005','layout2D H2O', lay.ok && Object.keys(lay.value.atoms).length===3);
+  const geo = ST.geometry3D(C.MOLECULE?.get?.('H2O'));
+  add('STRUCT-006','schema geometrii 3D', geo.ok && geo.value.units==='angstrom' && geo.value.coordinates.length===3);
+  const S = C.STOICH;
+  add('CHEM-031','massFromMol 1 mol H2O', near(S.massFromMol(1,'H2O'),18.015,0.01));
+  add('CHEM-032','molFromMass 18g H2O', near(S.molFromMass(18.015,'H2O'),1,0.001));
+  const lim = S.limitingReagent('znHcl',{Zn:0.1,HCl:0.1});
+  add('CHEM-033','limitingReagent Zn/HCl', lim.ok && lim.limiting[0]==='HCl');
+  add('CHEM-034','yieldPercent 8/10', near(S.yieldPercent(8,10),80,0.01));
+  add('CHEM-035','UNITS mmol→mol', near(C.UNITS.convert(1,'mmol','mol','amount'),1e-3));
+  add('CHEM-036','UNITS atm→Pa', near(C.UNITS.convert(1,'atm','Pa','pressure'),101325,1));
+  add('CHEM-037','UNITS C→K', near(C.UNITS.convert(25,'C','K','temperature'),298.15,0.01));
+  add('CHEM-038','REACTION equation znHcl', C.REACTION.equation('znHcl')==='Zn + 2 HCl → ZnCl2 + H2');
+  add('CHEM-039','REACTION wszystkie bilanse', C.REACTION.list().every(r=>r.balance.ok));
+  add('CHEM-040','OBSERVER pHmeter', C.OBSERVER.pHmeter(7).valid);
+  add('CHEM-041','OBSERVER gas dla znHcl', C.OBSERVER.gas(C.REACTION.get('znHcl')).present);
+  add('CHEM-042','OBSERVER precipitate dla agno3Hcl', C.OBSERVER.precipitate(C.REACTION.get('agno3Hcl')).present);
+  const st = C.STATE.normalize({temperatureK:'298.15',pH:'7'});
+  add('CHEM-043','STATE normalizacja', st.temperatureK===298.15 && st.pH===7);
+  const pr = C.PROGRESS.state('znHcl',0.02,{Zn:0.1,HCl:0.1});
+  add('CHEM-044','PROGRESS xi w zakresie', pr.ok && pr.xi===0.02 && pr.xiMax===0.05);
+  return out;
+}
+function groupThermo(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'thermo',name,ok:!!ok,detail:detail||''});
+  const T = C.THERMO;
+  add('THERMO-001','THERMO.gibbs dostępne', typeof T?.gibbs==='function');
+  const g1 = T.gibbs(-100,100,298.15);
+  add('THERMO-002','Î”G egzoenergetyczna', g1.ok && g1.value.dG<0);
+  const g2 = T.gibbs(100,100,298.15);
+  add('THERMO-003','Î”G endoenergetyczna', g2.ok && g2.value.dG>0);
+  const a1 = T.arrhenius(1e13,50,298.15);
+  add('THERMO-004','arrhenius k>0', a1.ok && a1.value.k>0);
+  const a2 = T.arrhenius(1e13,50,400);
+  add('THERMO-005','arrhenius T↑ → k↑', a1.ok && a2.ok && a2.value.k>a1.value.k);
+  const r2 = T.reactionEnthalpy('znHcl');
+  add('THERMO-006','reactionEnthalpy znHcl', r2.ok, r2.ok ? 'Î”H = ' + r2.value.dH.toFixed(1) + ' kJ/mol' : 'brak danych');
+  add('THERMO-007','THERMO.R zdefiniowane', T.R>8 && T.R<9);
+  return out;
+}
+function groupElectro(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'electro',name,ok:!!ok,detail:detail||''});
+  const EL = C.ELECTRO;
+  add('ELECTRO-001','ELECTRO dostępne', typeof EL?.cellPotential==='function');
+  const c1 = EL.cellPotential('Cu2+/Cu','Zn2+/Zn');
+  add('ELECTRO-002','ogniwo Daniella E°=1.10', c1.ok && near(c1.E0,1.10,0.02));
+  const c2 = EL.cellPotential('2H+/H2','2H+/H2');
+  add('ELECTRO-003','E° identyczne pary = 0', c2.ok && near(c2.E0,0,1e-9));
+  const c3 = EL.cellPotential('F2/F-','Li+/Li');
+  add('ELECTRO-004','F₂/Li ogniwo bardzo dodatnie', c3.ok && c3.E0>5);
+  const n1 = EL.nernst(1.10,2,1,298.15);
+  add('ELECTRO-005','nernst Q=1 → E=E°', n1.ok && near(n1.value.E,1.10,1e-9));
+  const n2 = EL.nernst(1.10,2,0.01,298.15);
+  add('ELECTRO-006','nernst Q<1 → E>E°', n2.ok && n2.value.E>1.10);
+  add('ELECTRO-007','pary() zwraca listę', Array.isArray(EL.pairs()) && EL.pairs().length>5);
+  return out;
+}
+function groupAtom(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'atom',name,ok:!!ok,detail:detail||''});
+  const A = C.ATOM;
+  add('ATOM-001','ATOM dostępne', typeof A?.build==='function');
+  const o = A.build('O');
+  add('ATOM-002','build O zwraca model', o && o.Z===8);
+  add('ATOM-003','nucleus O protons=8', A.nucleus('O').protons===8);
+  add('ATOM-004','nucleus O neutrons=8', A.nucleus('O').neutrons===8);
+  add('ATOM-005','nucleus O massNumber=16', A.nucleus('O').massNumber===16);
+  add('ATOM-006','electrons O = 8', A.electrons('O').length===8);
+  add('ATOM-007','electrons O walencyjne = 6', A.electrons('O').filter(e=>e.isValence).length===6);
+  add('ATOM-008','valenceSubshells O zawiera 2s i 2p', A.valenceSubshells('O').includes('2s') && A.valenceSubshells('O').includes('2p'));
+  add('ATOM-009','coreSubshells O = 1s', A.coreSubshells('O').length===1 && A.coreSubshells('O')[0]==='1s');
+  add('ATOM-010','electrons Fe = 26', A.electrons('Fe').length===26);
+  add('ATOM-011','valenceSubshells Fe zawiera 4s i 3d', A.valenceSubshells('Fe').includes('4s') && A.valenceSubshells('Fe').includes('3d'));
+  add('ATOM-012','configFull O', A.configFull('O')==='1s2 2s2 2p4');
+  add('ATOM-013','configShort Na', A.configShort('Na')==='[Ne] 3s1');
+  add('ATOM-014','configShells O', A.configShells('O')==='K:2 L:6');
+  add('ATOM-015','unpaired O = 2', A.unpairedElectrons('O')===2);
+  const b = A.bondingElectrons('H2O',0);
+  add('ATOM-016','bondingElectrons H2O atom 0', b.ok && b.bondingCount===2);
+  add('ATOM-017','lonePairElectrons H2O atom 0 = 2', b.ok && b.lonePairCount===2);
+  const vs = A.valenceSummary('H2O',0);
+  add('ATOM-018','valenceSummary H2O atom 0', vs.ok && vs.bonding===2 && vs.lonePairs===2);
+  add('ATOM-019','hybrydyzacja H2O = sp³', A.hybridization('H2O',0)==='sp³');
+  add('ATOM-020','hybrydyzacja CO2 atom 1 = sp', A.hybridization('CO2',1)==='sp');
+  add('ATOM-021','forPrimary Na ma protons', A.forPrimary('Na').protons===11);
+  add('ATOM-022','forSecondary Cl- ma config', A.forSecondary('Cl',-1).configFull.includes('1s2'));
+  add('ATOM-023','forHighSchool C ma orbitale', A.forHighSchool('C').orbitals.length>0);
+  add('ATOM-024','forUniversity Cu ma termSymbol', A.forUniversity('Cu').termSymbol && A.forUniversity('Cu').termSymbol.term);
+  return out;
+}
+function groupNucleus(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'nucleus',name,ok:!!ok,detail:detail||''});
+  const N = C.NUCLEUS;
+  add('NUCL-001','NUCLEUS.build O A=16', N.build('O',16).A===16);
+  add('NUCL-002','radius(16) ≈ 3 fm', Math.abs(N.radius(16)-3.02)<0.2);
+  const b = N.bindingEnergy(2,2);
+  add('NUCL-003','bindingEnergy He-4 > 20 MeV', b.B>20);
+  const bp = N.bindingEnergyPerNucleon(26,30);
+  add('NUCL-004','B/A Fe-56 ≈ 8.8 MeV', Math.abs(bp-8.8)<1.0, bp.toFixed(2));
+  const md = N.massDefect(2,2);
+  add('NUCL-005','massDefect He-4 > 0', md>0);
+  add('NUCL-006','decayMode U-238 = alpha', N.decayMode(92,146)==='alpha');
+  const r = N.decayProduct('U',238,'alpha');
+  add('NUCL-007','U-238 alpha → Th-234', r && r.daughterA===234 && r.daughterSymbol==='Th');
+  const rb = N.decayProduct('C',14,'beta-');
+  add('NUCL-008','C-14 beta- → N-14', rb && rb.daughterSymbol==='N' && rb.daughterA===14);
+  return out;
+}
+function groupIon(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'ion',name,ok:!!ok,detail:detail||''});
+  const I = C.ION;
+  add('ION-001','electronCount Na+ = 10', I.electronCount('Na',1)===10);
+  add('ION-002','configFull Na+ = 1s2 2s2 2p6', I.configFull('Na',1)==='1s2 2s2 2p6');
+  const iso = I.isIsoelectronicWith({symbol:'Na',charge:1},{symbol:'F',charge:-1});
+  add('ION-003','Na+ i F- izoelektronowe', iso===true);
+  add('ION-004','isCation Na+', I.isCation('Na',1)===true);
+  add('ION-005','nobleGasConfig Na+', I.nobleGasConfig('Na',1)===true);
+  return out;
+}
+function groupIsotope(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'isotope',name,ok:!!ok,detail:detail||''});
+  const I = C.ISOTOPE;
+  add('ISO-001','H ma 3 izotopy', I.list('H').length===3);
+  add('ISO-002','H-2 nazwa deuter', I.get('H',2)?.name==='deuter');
+  add('ISO-003','H-3 stabilny=false', I.stable('H',3)===false);
+  add('ISO-004','C-14 halfLife', I.halfLife('C',14)==='5730 lat');
+  const avg = I.averageMass('C');
+  add('ISO-005','averageMass C ≈ 12.011', Math.abs(avg-12.011)<0.01);
+  return out;
+}
+function groupSpectra(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'spectra',name,ok:!!ok,detail:detail||''});
+  const S = C.SPECTRA;
+  add('SPEC-001','H widmo dostępne', S.atomic('H').ok===true);
+  add('SPEC-002','H Balmer ma 5+ linii', S.balmerLines('H').length>=4);
+  const l = S.lineAt('H',656.28,1);
+  add('SPEC-003','linia HÎ± 656.28 nm', l && l.color==='czerwony');
+  const ry = S.rydberg(2,3,1);
+  add('SPEC-004','rydberg HÎ± ≈ 656 nm', Math.abs(ry.wavelength-656.3)<1);
+  add('SPEC-005','region 656 nm = visible', S.region(656)==='visible');
+  return out;
+}
+function groupViz(){
+  const out=[], add=(id,name,ok,detail)=> out.push({id,group:'viz',name,ok:!!ok,detail:detail||''});
+  add('VIZ-001','VIZ.el dostępne', typeof C.VIZ?.el==='function');
+  add('VIZ-002','VIZ.table dostępne', typeof C.VIZ?.table==='function');
+  add('VIZ-003','DATA.ELEM kompletne', !!C.DATA?.ELEM && !!C.DATA.ELEM.H && !!C.DATA.ELEM.O);
+  add('VIZ-004','DOM.$ dostępne', typeof C.DOM?.$==='function');
+  add('VIZ-005','DOM.esc bezpieczne', C.DOM.esc('

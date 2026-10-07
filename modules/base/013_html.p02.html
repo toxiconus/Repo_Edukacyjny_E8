@@ -1,0 +1,856 @@
+C.MOLECULE = {
+  version:'2.17', current:'H2O',
+  atom, get, list, canonical, validate, auditAll,
+  formula, valenceElectrons, bondLabel, geometry,
+  electronConfiguration, orbitalSummary,
+  angleBetween, derivedAngles, formulaFromAtoms,
+  electronDomains, geometrySummary, lewisData, atomCard,
+  centralAtom, inferGeometry,
+  select(id, opts){
+    if(!get(id)) return false;
+    this.current = id;
+    if(document && typeof document.dispatchEvent === 'function'){
+      document.dispatchEvent(new CustomEvent('che:molecule-select', { detail:{ id, source: opts?.source || 'api' } }));
+    }
+    return true;
+  },
+  getCurrent(){ return this.current || 'H2O'; }
+};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 11]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const clone = o => { try { return JSON.parse(JSON.stringify(o)); } catch(_) { return o; } };
+function get(id){
+  const rx = C.DATA?.REACTIONS?.[id];
+  if(!rx) return null;
+  const meta = C.DATA?.REACTION_DATA?.[id] || {};
+  const balance = C.CHEM.balanceReaction(rx);
+  return { id, reactants:clone(rx.reactants), products:clone(rx.products),
+    conditions:meta.conditions||'', type:meta.type||'unknown', observation:meta.observation||'',
+    safety:meta.safety||[], balance, productKeys:meta.products||rx.products.map(x=>x.formula) };
+}
+function list(){ return Object.keys(C.DATA?.REACTIONS||{}).map(get).filter(Boolean); }
+function equation(id){
+  const r = get(id); if(!r) return '';
+  const fmt = side => side.map(x => `${x.coef===1?'':x.coef+' '}${x.formula}`).join(' + ');
+  return `${fmt(r.reactants)} → ${fmt(r.products)}`;
+}
+function check(id){ return !!get(id)?.balance?.ok; }
+function audit(){
+  const rows = list().map(r=>{
+    const species = [...(r.reactants||[]), ...(r.products||[])];
+    const SUBS = C.DATA?.SUBSTANCES||{}, byF = new Set(Object.values(SUBS).map(s=>s&&s.formula)); /* v0.35: szukaj też po wzorze (np. CuNO32 → Cu(NO3)2) */
+    const missing = species.filter(x=>!SUBS[x.formula] && !byF.has(x.formula));
+    return { id:r.id, type:r.type, balanced:!!r.balance?.ok, conditions:!!r.conditions,
+      observation:!!r.observation, safety:(r.safety||[]).length>0, missing:missing.map(x=>x.formula) };
+  });
+  return { count:rows.length, unbalanced:rows.filter(x=>!x.balanced),
+    missingData:rows.filter(x=>x.missing.length),
+    incomplete:rows.filter(x=>!x.conditions||!x.observation||!x.safety), rows };
+}
+function thermochem(id, T){
+  if(C.THERMO?.reactionGibbs) return C.THERMO.reactionGibbs(id, T || 298.15);
+  return { ok:false, reason:'CHE.THERMO niedostępny' };
+}
+function redoxPotential(cathodePair, anodePair){
+  if(C.ELECTRO?.cellPotential) return C.ELECTRO.cellPotential(cathodePair, anodePair);
+  return { ok:false, reason:'CHE.ELECTRO niedostępny' };
+}
+C.REACTION = { version:'2.17', get, list, equation, check, audit, thermochem, redoxPotential };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 12]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+function weakAcidPH(Cc, Ka){ return C.CHEM.weakAcid(Number(Cc), Number(Ka)).pH; }
+function strongNeutralizationPH(acidM, acidV, baseM, baseV){
+  const V=Number(acidV)+Number(baseV); if(!(V>0)) return NaN;
+  const H=Number(acidM)*Number(acidV), OH=Number(baseM)*Number(baseV);
+  const ex=H-OH;
+  if(Math.abs(ex)<1e-14) return 7;
+  if(ex>0) return -Math.log10(ex/V);
+  return 14+Math.log10((-ex)/V);
+}
+function titrationPH(opt){
+  const type=opt.type||'strongStrong';
+  const Cc=Number(opt.C), V0=Number(opt.V0), V=Number(opt.V), Ka=Number(opt.Ka??1.8e-5);
+  const vt=V0+V; if(!(Cc>0&&V0>0&&V>=0)) return NaN;
+  if(type==='strongStrong') return strongNeutralizationPH(Cc,V0,Cc,V);
+  const ca=Cc*V0/vt, cb=Cc*V/vt, Kw=1e-14;
+  const f=h=>h+cb-Kw/h-ca*Ka/(Ka+h);
+  let lo=1e-14, hi=1;
+  for(let i=0;i<100;i++){ const m=(lo+hi)/2; if(f(m)>0) hi=m; else lo=m; }
+  return -Math.log10((lo+hi)/2);
+}
+function equivalenceVolume(Cacid, Vacid, Cbase, stoichAcid, stoichBase){
+  stoichAcid=stoichAcid||1; stoichBase=stoichBase||1;
+  Cacid=Number(Cacid); Vacid=Number(Vacid); Cbase=Number(Cbase);
+  return Cacid>0&&Vacid>=0&&Cbase>0 ? Cacid*Vacid*stoichBase/(Cbase*stoichAcid) : NaN;
+}
+function bufferPH(pKa, base, acid){ return C.CHEM.bufferPH(pKa, base, acid); }
+function polyproticFractions(pH, Kas){ return C.CHEM.polyproticFractions(Number(pH), Kas); }
+function polyproticPH(Cc, Kas){
+  Cc=Number(Cc); const ks=(Kas||[]).map(Number);
+  if(!(Cc>=0)||!ks.length||ks.some(k=>!(k>0))) return NaN;
+  const Kw=1e-14;
+  const avgCharge=h=>{ const ph=-Math.log10(h); const a=C.CHEM.polyproticFractions(ph,ks); return a.reduce((s,v,i)=>s+i*v,0); };
+  const f=h=>h-Kw/h-Cc*avgCharge(h);
+  let lo=1e-14, hi=Math.max(1,Cc+1);
+  for(let i=0;i<100;i++){ const m=(lo+hi)/2; if(f(m)>0) hi=m; else lo=m; }
+  const h=(lo+hi)/2;
+  return { pH:-Math.log10(h), H:h, OH:Kw/h, alpha:C.CHEM.polyproticFractions(-Math.log10(h),ks), averageCharge:avgCharge(h) };
+}
+function speciate(formula, total, spec){
+  const Ctot=Number(total); const Kas=Array.isArray(spec)?spec:(spec?.Kas||spec?.pKa||[]);
+  if(!Number.isFinite(Ctot)||Ctot<0||!Kas.length) return { ok:false, formula, reason:'brak stężenia lub stałych' };
+  const ks=Kas.map(k=>{ const n=Number(k); return n>0&&n<1?n:Math.pow(10,-n); });
+  const pH=Number.isFinite(Number(spec?.pH))?Number(spec.pH):null;
+  const fractions=pH!==null?C.CHEM.polyproticFractions(pH,ks):Array(ks.length+1).fill(1/(ks.length+1));
+  const species=fractions.map((fraction,i)=>({ id:formula+'_'+i,
+    label:i===0?'H_nA':('H_'+Math.max(0,ks.length-i)+'A'+(i>0?('^'+i+'-'):'')),
+    fraction, concentration:Ctot*fraction, charge:-i }));
+  return { ok:true, formula, totalConcentration:Ctot, Kas:ks, pH, fractions, species,
+    chargeBalance:species.reduce((s,x)=>s+x.concentration*x.charge,0) };
+}
+C.EQUILIBRIUM = { version:'2.17', weakAcidPH, strongNeutralizationPH, titrationPH,
+  equivalenceVolume, bufferPH, polyproticFractions, polyproticPH, speciate };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 13]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const finite = x => Number.isFinite(Number(x));
+const NA = 6.02214076e23;
+function massFromMol(n, formula){ const M=C.CHEM.molarMass(formula); return finite(n)&&Number(n)>=0&&Number.isFinite(M)?Number(n)*M:NaN; }
+function molFromMass(m, formula){ const M=C.CHEM.molarMass(formula); return finite(m)&&Number(m)>=0&&Number.isFinite(M)&&M>0?Number(m)/M:NaN; }
+function concentrationFromMolVolume(n, V){ return finite(n)&&finite(V)&&Number(V)>0?Number(n)/Number(V):NaN; }
+function molFromConcentrationVolume(c, V){ return finite(c)&&finite(V)&&Number(c)>=0&&Number(V)>=0?Number(c)*Number(V):NaN; }
+function particlesFromMol(n){ return finite(n)&&Number(n)>=0?Number(n)*NA:NaN; }
+function limitingReagent(reactionId, available){
+  const rx = C.REACTION?.get(reactionId);
+  if(!rx || !available) return { ok:false, reason:'brak reakcji lub ilości' };
+  const ratios = rx.reactants.map(r=>({ formula:r.formula, coef:r.coef, mol:Number(available[r.formula]), ratio:Number(available[r.formula])/r.coef }));
+  if(ratios.some(x=>!finite(x.mol)||x.mol<0)) return { ok:false, reason:'nieprawidłowa ilość mola' };
+  const extent = Math.min(...ratios.map(x=>x.ratio));
+  const limiting = ratios.filter(x=>Math.abs(x.ratio-extent)<=Math.max(1e-12, Math.abs(extent)*1e-10)).map(x=>x.formula);
+  const consumed = {}; rx.reactants.forEach(r=> consumed[r.formula] = extent*r.coef);
+  const produced = {}; rx.products.forEach(r=> produced[r.formula] = extent*r.coef);
+  const remaining = {}; ratios.forEach(x=> remaining[x.formula] = x.mol - consumed[x.formula]);
+  return { ok:true, reactionId, extent, limiting, consumed, remaining, produced };
+}
+function yieldPercent(actual, theoretical){
+  return finite(actual)&&finite(theoretical)&&Number(theoretical)>0?100*Number(actual)/Number(theoretical):NaN;
+}
+C.STOICH = { version:'2.17', massFromMol, molFromMass, concentrationFromMolVolume,
+  molFromConcentrationVolume, particlesFromMol, limitingReagent, yieldPercent, NA };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 14]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const conv = {
+  amount:{ mol:1, mmol:1e-3, umol:1e-6 },
+  mass:{ g:1, kg:1000, mg:1e-3 },
+  volume:{ L:1, mL:1e-3, dm3:1, m3:1000 },
+  concentration:{ 'mol/L':1, M:1, 'mmol/L':1e-3, 'mol/m3':1e-3 },
+  pressure:{ Pa:1, kPa:1e3, bar:1e5, atm:101325 },
+  temperature:{ K:{toK:x=>x,fromK:x=>x}, C:{toK:x=>x+273.15, fromK:x=>x-273.15} },
+  energy:{ J:1, kJ:1e3 },
+  time:{ s:1, min:60, h:3600 },
+  charge:{ C:1, mC:1e-3 },
+  length:{ m:1, cm:1e-2, mm:1e-3, pm:1e-12, nm:1e-9, A:1e-10 }
+};
+function convert(value, from, to, kind){
+  const v = Number(value);
+  if(!Number.isFinite(v)) return NaN;
+  if(from === to) return v;
+  const set = conv[kind];
+  if(!set || !(from in set) || !(to in set)) return NaN;
+  if(kind === 'temperature'){ const k = set[from].toK(v); return set[to].fromK(k); }
+  return v * set[from] / set[to];
+}
+function describe(){ return Object.fromEntries(Object.entries(conv).map(([k,v])=>[k, Object.keys(v)])); }
+C.UNITS = { version:'2.17', convert, describe };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 15]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const R = 8.314462618;
+function gibbs(dH, dS, T){
+  dH=Number(dH); dS=Number(dS); T=Number(T||298.15);
+  if(!Number.isFinite(dH)||!Number.isFinite(dS)||!Number.isFinite(T)||T<=0)
+    return C.FAIL('CHE.E.INVALID_INPUT','dH, dS lub T niepoprawne',{dH,dS,T});
+  const dG = dH - T*dS/1000;
+  return C.OK({ dG, unit:'kJ/mol', spontaneous: dG<0, T });
+}
+function sumSideThermo(side){
+  const T = C.DATA?.THERMOCHEM || {};
+  let dH=0, dS=0, complete=true; const missing=[];
+  (side||[]).forEach(x=>{
+    const th = T[x.formula];
+    if(!th){ complete=false; missing.push(x.formula); return; }
+    dH += th.dHf*x.coef; dS += th.S*x.coef;
+  });
+  return { dH, dS, complete, missing };
+}
+function reactionEnthalpy(id){
+  const r = C.DATA?.REACTIONS?.[id];
+  if(!r) return C.FAIL('CHE.E.DATA_NOT_FOUND','brak reakcji',{id});
+  const L = sumSideThermo(r.reactants), R_ = sumSideThermo(r.products);
+  if(!L.complete || !R_.complete) return C.FAIL('CHE.E.DATA_NOT_FOUND','brak danych termochemicznych',{missing:[...L.missing,...R_.missing]});
+  return C.OK({ dH: R_.dH - L.dH, unit:'kJ/mol' });
+}
+function reactionEntropy(id){
+  const r = C.DATA?.REACTIONS?.[id];
+  if(!r) return C.FAIL('CHE.E.DATA_NOT_FOUND','brak reakcji',{id});
+  const L = sumSideThermo(r.reactants), R_ = sumSideThermo(r.products);
+  if(!L.complete || !R_.complete) return C.FAIL('CHE.E.DATA_NOT_FOUND','brak danych termochemicznych',{missing:[...L.missing,...R_.missing]});
+  return C.OK({ dS: R_.dS - L.dS, unit:'J/(mol·K)' });
+}
+function reactionGibbs(id, T){
+  T = Number(T||298.15);
+  const r = C.DATA?.REACTIONS?.[id];
+  if(!r) return { ok:false, reason:'brak reakcji', id };
+  const L = sumSideThermo(r.reactants), R_ = sumSideThermo(r.products);
+  if(!L.complete || !R_.complete) return { ok:false, reason:'brak danych termochemicznych', missing:[...L.missing,...R_.missing], id };
+  const dH = R_.dH - L.dH, dS = R_.dS - L.dS, dG = dH - T*dS/1000;
+  return { ok:true, id, T, dH, dS, dG, spontaneous: dG<0, unit:'kJ/mol' };
+}
+function arrhenius(k0, Ea, T){
+  k0=Number(k0); Ea=Number(Ea); T=Number(T||298.15);
+  if(!Number.isFinite(k0)||!Number.isFinite(Ea)||!Number.isFinite(T)||T<=0)
+    return C.FAIL('CHE.E.INVALID_INPUT','k0, Ea lub T niepoprawne',{k0,Ea,T});
+  const k = k0 * Math.exp(-(Ea*1000)/(R*T));
+  return C.OK({ k, k0, Ea, T, unit:'1/s' });
+}
+C.THERMO = { version:'2.17', gibbs, reactionEnthalpy, reactionEntropy, reactionGibbs, arrhenius, R };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 16]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const R = 8.314462618, F = 96485.33212;
+function cellPotential(cathodePair, anodePair){
+  const P = C.DATA?.REDOX_POTENTIALS || {};
+  const ec = P[cathodePair], ea = P[anodePair];
+  if(ec === undefined || ea === undefined)
+    return { ok:false, reason:'brak pary w rejestrze', available:Object.keys(P) };
+  return { ok:true, E0: ec - ea, unit:'V', cathode:cathodePair, anode:anodePair };
+}
+function nernst(E0, n, Q, T){
+  E0=Number(E0); n=Number(n); Q=Number(Q); T=Number(T||298.15);
+  if(!Number.isFinite(E0)||!Number.isFinite(n)||n<=0||!Number.isFinite(Q)||Q<=0||!Number.isFinite(T)||T<=0)
+    return C.FAIL('CHE.E.INVALID_INPUT','E0, n, Q lub T niepoprawne',{E0,n,Q,T});
+  const E = E0 - (R*T/(n*F))*Math.log(Q);
+  return C.OK({ E, E0, n, Q, T, unit:'V' });
+}
+function pairs(){ return Object.keys(C.DATA?.REDOX_POTENTIALS || {}); }
+C.ELECTRO = { version:'2.17', cellPotential, nernst, pairs, R, F };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 17]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const L_LETTER = ['s','p','d','f','g','h'];
+const L_NUM = { s:0, p:1, d:2, f:3, g:4, h:5 };
+const NOBLE_GAS_BEFORE = { 2:'He', 10:'Ne', 18:'Ar', 36:'Kr', 54:'Xe', 86:'Rn' };
+
+/* Mapowanie podpowłoki na numer powłoki. '3d' -> 3. */
+function subshellName(n, l){ return String(n) + L_LETTER[l]; }
+
+/**
+ * Rozkłada elektrony na orbitale podpowłoki wg reguły Hunda.
+ * @param {number} count liczba elektronów w podpowłoce
+ * @param {number} orbitalCount liczba orbitali w podpowłoce (2l+1)
+ * @returns {Array<{orbitalIndex:number, spin:number}>}
+ */
+function distributeHund(count, orbitalCount){
+  const out = [];
+  /* Faza 1: pojedyncze obsadzenia (spin +0.5) */
+  const single = Math.min(count, orbitalCount);
+  for(let i=0; i<single; i++) out.push({ orbitalIndex:i, spin:+0.5 });
+  /* Faza 2: parowanie (spin -0.5) */
+  let remaining = count - single;
+  let i = 0;
+  while(remaining > 0){ out.push({ orbitalIndex:i, spin:-0.5 }); i++; remaining--; }
+  return out;
+}
+
+/**
+ * Buduje pełny model atomu.
+ * @param {string} symbol
+ * @param {number} [charge=0]
+ * @returns {Object|null}
+ */
+function build(symbol, charge){
+  charge = Number(charge)||0;
+  const meta = C.DATA?.ATOM_META?.[symbol];
+  if(!meta) return null;
+  const cfg = C.MOLECULE.electronConfiguration(symbol, charge);
+  const subshells = Object.entries(cfg).map(([name, count])=>{
+    const n = Number(name[0]);
+    const l = L_NUM[name.slice(-1)];
+    const orbitalCount = 2*l + 1;
+    const distribution = distributeHund(count, orbitalCount);
+    return { name, n, l, orbitalCount, count, distribution };
+  });
+  const shells = shellsFromSubshells(subshells);
+  const { valenceNames, coreNames } = classifySubshells(symbol, subshells);
+  const zEff = effectiveZ(meta.Z, charge, shells);
+  return {
+    symbol,
+    charge,
+    Z: meta.Z,
+    name: meta.name,
+    mass: meta.mass,
+    massNumber: meta.massNumber,
+    neutrons: meta.neutrons,
+    group: meta.group,
+    period: meta.period,
+    block: meta.block,
+    classification: meta.classification,
+    electronegativity: meta.electronegativity,
+    subshells,
+    shells,
+    valenceSubshells: valenceNames,
+    coreSubshells: coreNames,
+    electronCount: meta.Z - charge,
+    valenceElectronCount: valenceNames.reduce((s,n)=> s + cfg[n], 0),
+    coreElectronCount: coreNames.reduce((s,n)=> s + cfg[n], 0),
+    unpairedCount: subshells.reduce((s,ss)=> s + Math.max(0, Math.min(ss.count, 2*ss.orbitalCount-ss.count)), 0),
+    effectiveZ: zEff,
+    configFull: subshells.map(ss=> ss.name + ss.count).join(' '),
+    configShells: shells.map(sh=> `${C.DATA.QUANTUM_RULES.shellNames[sh.n]}:${sh.count}`).join(' '),
+    quantumRules: C.DATA.QUANTUM_RULES
+  };
+}
+
+function shellsFromSubshells(subshells){
+  const map = {};
+  subshells.forEach(ss=>{
+    if(!map[ss.n]) map[ss.n] = { n:ss.n, count:0, subshells:[] };
+    map[ss.n].count += ss.count;
+    map[ss.n].subshells.push(ss.name);
+  });
+  return Object.keys(map).sort((a,b)=>Number(a)-Number(b)).map(k=>map[k]);
+}
+
+/**
+ * Klasyfikuje podpowłoki na walencyjne i rdzeniowe.
+ * Reguły:
+ *  - bloki s, p: najwyższe n
+ *  - blok d: (n)s + (n-1)d
+ *  - blok f: (n)s + (n-2)f + ewentualnie (n-1)d
+ */
+function classifySubshells(symbol, subshells){
+  const meta = C.DATA?.ATOM_META?.[symbol];
+  if(!meta) return { valenceNames:[], coreNames:subshells.map(s=>s.name) };
+  const block = meta.block;
+  const names = subshells.map(s=>s.name);
+  const maxN = Math.max(...subshells.map(s=>s.n));
+  const valence = new Set();
+  if(block === 's' || block === 'p'){
+    subshells.forEach(ss=>{ if(ss.n === maxN) valence.add(ss.name); });
+  } else if(block === 'd'){
+    subshells.forEach(ss=>{
+      if(ss.l === 0 && ss.n === maxN) valence.add(ss.name);
+      if(ss.l === 2 && ss.n === maxN - 1) valence.add(ss.name);
+    });
+  } else if(block === 'f'){
+    subshells.forEach(ss=>{
+      if(ss.l === 0 && ss.n === maxN) valence.add(ss.name);
+      if(ss.l === 3 && ss.n === maxN - 2) valence.add(ss.name);
+      if(ss.l === 2 && ss.n === maxN - 1 && (ss.name in meta.subshells ? meta.subshells[ss.name] > 0 : false)) {
+        /* dopełnienie 3d dla lantanowców — pomijamy dla czystości modelu dydaktycznego */
+      }
+    });
+  } else {
+    subshells.forEach(ss=>{ if(ss.n === maxN) valence.add(ss.name); });
+  }
+  /* Fallback: coś musi być walencyjne */
+  if(!valence.size && subshells.length){
+    const top = subshells.reduce((a,b)=> a.n > b.n ? a : b);
+    valence.add(top.name);
+  }
+  const coreNames = names.filter(n=> !valence.has(n));
+  return { valenceNames: names.filter(n=> valence.has(n)), coreNames };
+}
+
+/**
+ * Przybliżony ładunek jądra efektywny (reguła Slatera uproszczona).
+ */
+function effectiveZ(Z, charge, shells){
+  if(charge > 0) Z = Z - charge;
+  if(!shells.length) return Z;
+  let shield = 0;
+  shells.forEach(sh=>{
+    if(sh.n < shells[shells.length-1].n) shield += sh.count * 0.85;
+    else shield += Math.max(0, sh.count - 1) * 0.35;
+  });
+  return Math.max(0, Z - shield);
+}
+
+/**
+ * Model jądra.
+ * @param {string} symbol
+ * @param {number} [massNumber]
+ * @returns {Object|null}
+ */
+function nucleus(symbol, massNumber){
+  const meta = C.DATA?.ATOM_META?.[symbol];
+  if(!meta) return null;
+  const A = Number(massNumber) || meta.massNumber;
+  return {
+    symbol,
+    Z: meta.Z,
+    A,
+    protons: meta.Z,
+    neutrons: A - meta.Z,
+    charge: meta.Z,
+    massNumber: A,
+    isotopeLabel: symbol + '-' + A
+  };
+}
+function shells(symbol, charge){ const a = build(symbol, charge); return a ? a.shells : null; }
+function subshells(symbol, charge){ const a = build(symbol, charge); return a ? a.subshells : null; }
+
+/**
+ * Lista elektronów z liczbami kwantowymi.
+ * @param {string} symbol
+ * @param {number} [charge=0]
+ * @returns {Array<{index:number,n:number,l:number,ml:number,ms:number,subshell:string,orbitalIndex:number,isValence:boolean,isCore:boolean,isUnpaired:boolean,isBonding:boolean|null,isLonePair:boolean|null}>}
+ */
+function electrons(symbol, charge){
+  const a = build(symbol, charge);
+  if(!a) return [];
+  const out = [];
+  let idx = 0;
+  a.subshells.forEach(ss=>{
+    const isValence = a.valenceSubshells.includes(ss.name);
+    ss.distribution.forEach(d=>{
+      const ml = d.orbitalIndex - (ss.l);
+      out.push({
+        index: idx++,
+        n: ss.n,
+        l: ss.l,
+        ml,
+        ms: d.spin,
+        subshell: ss.name,
+        orbitalIndex: d.orbitalIndex,
+        isValence,
+        isCore: !isValence,
+        isUnpaired: d.spin > 0 && ss.count <= ss.orbitalCount,
+        isBonding: null,
+        isLonePair: null
+      });
+    });
+  });
+  return out;
+}
+
+function classify(symbol, charge){
+  const a = build(symbol, charge);
+  if(!a) return null;
+  return { valence: a.valenceSubshells.slice(), core: a.coreSubshells.slice() };
+}
+function valenceSubshells(symbol){ const a = build(symbol); return a ? a.valenceSubshells.slice() : []; }
+function coreSubshells(symbol){ const a = build(symbol); return a ? a.coreSubshells.slice() : []; }
+function orbitals(symbol){
+  const a = build(symbol);
+  if(!a) return [];
+  return a.subshells.map(ss=>({ name: ss.name, n: ss.n, l: ss.l, orbitalCount: ss.orbitalCount, capacity: ss.orbitalCount*2, occupancy: ss.count }));
+}
+function configFull(symbol, charge){ const a = build(symbol, charge); return a ? a.configFull : ''; }
+
+function configShort(symbol, charge){
+  charge = Number(charge)||0;
+  const a = build(symbol, charge);
+  if(!a) return '';
+  if(charge !== 0){
+    return configFull(symbol, charge);
+  }
+  /* znajdź gaz szlachetny o Z < Z pierwiastka */
+  const z = a.Z;
+  let ngZ = 0, ngSym = null;
+  Object.keys(NOBLE_GAS_BEFORE).forEach(k=>{ const kz = Number(k); if(kz < z && kz > ngZ){ ngZ = kz; ngSym = NOBLE_GAS_BEFORE[k]; } });
+  if(!ngSym) return a.configFull;
+  /* odejmij podpowłoki gazu szlachetnego */
+  const ngCfg = C.DATA.ATOM_META[ngSym].subshells;
+  const parts = [];
+  Object.entries(C.MOLECULE.electronConfiguration(symbol, 0)).forEach(([name, n])=>{
+    if(ngCfg[name] === n) return;
+    parts.push(name + (n - (ngCfg[name]||0)));
+  });
+  return '[' + ngSym + '] ' + parts.join(' ');
+}
+function configShells(symbol, charge){ const a = build(symbol, charge); return a ? a.configShells : ''; }
+function unpairedElectrons(symbol, charge){ const a = build(symbol, charge); return a ? a.unpairedCount : 0; }
+
+/**
+ * Rozkład Hunda — ile elektronów niesparowanych w każdej podpowłoce.
+ */
+function hundDistribution(symbol, charge){
+  const a = build(symbol, charge);
+  if(!a) return null;
+  return a.subshells.map(ss=>({
+    subshell: ss.name,
+    count: ss.count,
+    orbitalCount: ss.orbitalCount,
+    unpaired: ss.distribution.filter(e=> e.spin > 0).length
+  }));
+}
+
+/**
+ * Elektrony wiążące w kontekście cząsteczki.
+ * @param {string} moleculeId
+ * @param {number} atomId
+ */
+function bondingElectrons(moleculeId, atomId){
+  const m = C.MOLECULE?.get?.(moleculeId);
+  if(!m) return { ok:false, reason:'brak molekuły', moleculeId };
+  const a = m.atoms.find(x=> x.id === Number(atomId));
+  if(!a) return { ok:false, reason:'brak atomu o id ' + atomId, moleculeId };
+  const bondOrder = m.bondOrderSum[a.id] || 0;
+  const electronsAll = electrons(a.element, 0);
+  const valence = electronsAll.filter(e=> e.isValence);
+  const bondingCount = Math.min(bondOrder, valence.length);
+  const loneCount = Math.max(0, valence.length - bondingCount);
+  return {
+    ok:true,
+    moleculeId,
+    atomId: a.id,
+    element: a.element,
+    valenceElectronCount: valence.length,
+    bondingCount,
+    lonePairElectronCount: loneCount,
+    lonePairCount: loneCount / 2,
+    bondOrderSum: bondOrder,
+    bondingElectrons: valence.slice(0, bondingCount).map(e=> ({...e, isBonding:true, isLonePair:false})),
+    lonePairElectrons: valence.slice(bondingCount).map(e=> ({...e, isBonding:false, isLonePair:true}))
+  };
+}
+function lonePairElectrons(moleculeId, atomId){
+  const b = bondingElectrons(moleculeId, atomId);
+  return b.ok ? { ok:true, pairs:b.lonePairCount, electrons:b.lonePairElectrons } : b;
+}
+function valenceSummary(moleculeId, atomId){
+  const b = bondingElectrons(moleculeId, atomId);
+  if(!b.ok) return b;
+  return { ok:true, moleculeId, atomId:b.atomId, element:b.element,
+    bonding:b.bondingCount, lonePairs:b.lonePairCount, total:b.valenceElectronCount };
+}
+/**
+ * Hybrydyzacja atomu w molekule.
+ * @param {string} moleculeId
+ * @param {number} atomId
+ */
+function hybridization(moleculeId, atomId){
+  const m = C.MOLECULE?.get?.(moleculeId);
+  if(!m) return null;
+  const d = C.MOLECULE.electronDomains(m, Number(atomId));
+  if(!d) return null;
+  return ({2:'sp',3:'sp²',4:'sp³',5:'sp³d',6:'sp³d²'})[d.domains] || 'nieokreślona';
+}
+
+/** Projekcja dla E7 — uproszczona. */
+function forPrimary(symbol){
+  const a = build(symbol);
+  if(!a) return null;
+  return {
+    symbol: a.symbol,
+    name: a.name,
+    Z: a.Z,
+    protons: a.Z,
+    neutrons: a.neutrons,
+    shells: a.shells.map(sh=>({ shell: C.DATA.QUANTUM_RULES.shellNames[sh.n], n: sh.n, electrons: sh.count })),
+    valence: a.valenceElectronCount,
+    summary: `Atom ${a.name} ma ${a.Z} protonów, ${a.neutrons} neutronów i ${a.electronCount} elektronów. Elektrony walencyjne: ${a.valenceElectronCount}.`
+  };
+}
+/** Projekcja dla E8 — pełna konfiguracja + jony. */
+function forSecondary(symbol, charge){
+  const a = build(symbol, charge);
+  if(!a) return null;
+  return {
+    symbol: a.symbol, name: a.name, Z: a.Z, charge: a.charge,
+    configFull: a.configFull,
+    configShort: configShort(symbol, charge || 0),
+    configShells: a.configShells,
+    valence: a.valenceElectronCount,
+    ionLabel: a.charge > 0 ? `kation (+${a.charge})` : a.charge < 0 ? `anion (${a.charge})` : 'atom obojętny'
+  };
+}
+/** Projekcja dla LO — liczby kwantowe, orbitale, hybrydyzacja. */
+function forHighSchool(symbol){
+  const a = build(symbol);
+  if(!a) return null;
+  return {
+    symbol: a.symbol, name: a.name, Z: a.Z,
+    configFull: a.configFull, configShort: configShort(symbol, 0),
+    orbitals: orbitals(symbol),
+    electrons: electrons(symbol),
+    valenceSubshells: a.valenceSubshells,
+    coreSubshells: a.coreSubshells,
+    unpaired: a.unpairedCount,
+    hundDistribution: hundDistribution(symbol),
+    atomicProps: C.DATA.ATOMIC_PROPS?.[symbol] || null
+  };
+}
+/** Projekcja dla uniwersytetu — jądro, termy, sprzężenie. */
+function forUniversity(symbol){
+  const a = build(symbol);
+  if(!a) return null;
+  return {
+    symbol: a.symbol, name: a.name, Z: a.Z,
+    nucleus: nucleus(symbol),
+    configFull: a.configFull,
+    orbitals: orbitals(symbol),
+    electrons: electrons(symbol),
+    effectiveZ: a.effectiveZ,
+    termSymbol: termSymbol(symbol),
+    atomicProps: C.DATA.ATOMIC_PROPS?.[symbol] || null,
+    isotopes: C.ISOTOPE?.list?.(symbol) || []
+  };
+}
+
+/**
+ * Uproszczony symbol termu (²S+1 L_J) dla stanu podstawowego.
+ * Liczone dla pierwszego niesparowanego elektronu w najwyższej podpowłoce.
+ */
+function termSymbol(symbol){
+  const a = build(symbol);
+  if(!a) return null;
+  if(a.unpairedCount === 0) return '¹S₀';
+  const ss = a.subshells[a.subshells.length - 1];
+  if(!ss) return null;
+  const S = a.unpairedCount / 2;
+  const mult = Math.round(2*S + 1);
+  const L = ss.l;
+  const letter = ['S','P','D','F','G','H'][L];
+  /* Sprzężenie: dla mniej niż połowy zapełnionej podpowłoki J = |L - S|, dla więcej — L + S */
+  const half = Math.ceil(ss.orbitalCount / 2);
+  const J = ss.count <= half ? Math.abs(L - S) : L + S;
+  return { term: `${mult}${letter}${J}`, S, L, J, multiplicity:mult, letter };
+}
+
+C.ATOM = {
+  version: '2.17',
+  build, nucleus, shells, subshells, electrons, classify,
+  valenceSubshells, coreSubshells, orbitals, configFull, configShort, configShells,
+  unpairedElectrons, hundDistribution,
+  bondingElectrons, lonePairElectrons, valenceSummary, hybridization,
+  forPrimary, forSecondary, forHighSchool, forUniversity,
+  termSymbol,
+  distributeHund, classifySubshells, effectiveZ
+};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 18]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const AMU_MEV = 931.494102; /* MeV/c² */
+
+/**
+ * Model jądra atomowego.
+ * @param {string} symbol
+ * @param {number} [massNumber]
+ */
+function build(symbol, massNumber){
+  const meta = C.DATA?.ATOM_META?.[symbol];
+  if(!meta) return null;
+  const A = Number(massNumber) || meta.massNumber;
+  const Z = meta.Z;
+  const N = A - Z;
+  if(N < 0) return null;
+  const r = radius(A);
+  const b = bindingEnergy(Z, N);
+  return {
+    symbol,
+    Z, A, N,
+    protons: Z,
+    neutrons: N,
+    charge: Z,
+    isotopeLabel: symbol + '-' + A,
+    radiusFm: r,
+    bindingEnergyMeV: b.B,
+    bindingEnergyPerNucleon: b.B_per_A,
+    massDefectAmu: massDefect(Z, N),
+    stability: stability(Z, N),
+    decay: decayMode(Z, N),
+    density: C.DATA?.NUCLEAR_DATA?.constants?.nuclearDensity || 2.3e17
+  };
+}
+function protons(symbol){ const m = C.DATA?.ATOM_META?.[symbol]; return m ? m.Z : null; }
+function neutrons(symbol, massNumber){
+  const m = C.DATA?.ATOM_META?.[symbol]; if(!m) return null;
+  const A = Number(massNumber) || m.massNumber;
+  return A - m.Z;
+}
+function massNumber(symbol, massNumber){
+  const m = C.DATA?.ATOM_META?.[symbol]; if(!m) return null;
+  return Number(massNumber) || m.massNumber;
+}
+function charge(symbol){ const m = C.DATA?.ATOM_META?.[symbol]; return m ? m.Z : null; }
+
+/**
+ * Defekt masy: Î”m = Z·m_p + N·m_n − M_jądra.
+ * Zwraca w jednostkach amu.
+ */
+function massDefect(Z, N){
+  /* masy: proton 1.007276466, neutron 1.008664916, w amu */
+  const mp = 1.007276466;
+  const mn = 1.008664916;
+  const mNucleus = (Z * mp) + (N * mn) - (bindingEnergy(Z, N).B / AMU_MEV);
+  const mSum = Z * mp + N * mn;
+  return mSum - mNucleus;
+}
+
+/**
+ * Energia wiązania wg modelu Bethego-Weizsäckera.
+ * B(A, Z) = aV·A − aS·A^(2/3) − aC·Z(Z−1)/A^(1/3) − aA·(A−2Z)²/A + Î´
+ * Stałe z CHE.DATA.NUCLEAR_DATA.betheWeizsacker.
+ * Zwraca {B, B_per_A} w MeV.
+ */
+function bindingEnergy(Z, N){
+  const A = Z + N;
+  if(A <= 0) return { B:0, B_per_A:0 };
+  const c = C.DATA?.NUCLEAR_DATA?.betheWeizsacker || { aV:15.75, aS:17.8, aC:0.711, aA:23.7, aP:11.18 };
+  const aV=c.aV, aS=c.aS, aC=c.aC, aA=c.aA, aP=c.aP;
+  const volume = aV * A;
+  const surface = aS * Math.pow(A, 2/3);
+  const coulomb = aC * Z * (Z - 1) / Math.pow(A, 1/3);
+  const asymmetry = aA * Math.pow(A - 2*Z, 2) / A;
+  let pairing = 0;
+  if(Z % 2 === 0 && N % 2 === 0) pairing = +aP / Math.sqrt(A);
+  else if(Z % 2 === 1 && N % 2 === 1) pairing = -aP / Math.sqrt(A);
+  const B = volume - surface - coulomb - asymmetry + pairing;
+  return { B, B_per_A: B / A };
+}
+function bindingEnergyPerNucleon(Z, N){ return bindingEnergy(Z, N).B_per_A; }
+
+/**
+ * Promień jądra: R = R0 · A^(1/3). W femtometrach.
+ */
+function radius(A){
+  const R0 = C.DATA?.NUCLEAR_DATA?.constants?.R0 || 1.2;
+  return R0 * Math.pow(A, 1/3);
+}
+function density(){ return C.DATA?.NUCLEAR_DATA?.constants?.nuclearDensity || 2.3e17; }
+
+/**
+ * Prosta heurystyka stabilności: parzyste Z i N, w pobliżu linii stabilności.
+ * Dokładny test wymaga bazy izotopów — używamy uproszczonej reguły.
+ */
+function stability(Z, N){
+  const A = Z + N;
+  if(A === 0) return { stable:false, reason:'brak nukleonów' };
+  /* Reguła parowania: Z i N parzyste — najbardziej stabilne. */
+  const parityStable = (Z % 2 === 0) && (N % 2 === 0);
+  /* Linia stabilności: Z ≈ A / (1.98 + 0.015 A^(2/3)) */
+  const predictedZ = A / (1.98 + 0.015 * Math.pow(A, 2/3));
+  const onLine = Math.abs(Z - predictedZ) < 3;
+  /* Izotop w bazie ISOTOPES daje dokładniejszą odpowiedź */
+  const baseIso = C.DATA?.ISOTOPES?.[symbolOfZ(Z)]?.find(x=> x.A === A);
+  if(baseIso) return { stable:!!baseIso.stable, halfLife:baseIso.halfLife||null, decayMode:baseIso.decayMode||null, source:'ISOTOPES' };
+  return {
+    stable: parityStable && onLine,
+    parity: (Z%2===0 && N%2===0) ? 'even-even' : (Z%2===1 && N%2===1) ? 'odd-odd' : 'mixed',
+    onLine,
+    source: 'heuristic'
+  };
+}
+
+/**
+ * Heurystyka trybu rozpadu.
+ */
+function decayMode(Z, N){
+  const A = Z + N;
+  const iso = C.DATA?.ISOTOPES?.[symbolOfZ(Z)]?.find(x=> x.A === A);
+  if(iso && iso.decayMode) return iso.decayMode;
+  if(Z > 83) return 'alpha';
+  const predictedZ = A / (1.98 + 0.015 * Math.pow(A, 2/3));
+  if(Z < predictedZ - 1) return 'beta-';
+  if(Z > predictedZ + 1) return 'beta+';
+  return null;
+}
+
+function symbolOfZ(Z){
+  const el = (C.DATA?.ELEMENTS_118 || []).find(e=> e.z === Z);
+  return el ? el.s : null;
+}
+
+/**
+ * Produkt rozpadu — na podstawie trybu.
+ */
+function decayProduct(symbol, massNumber, mode){
+  const meta = C.DATA?.ATOM_META?.[symbol]; if(!meta) return null;
+  const A = Number(massNumber) || meta.massNumber;
+  const Z = meta.Z;
+  const modes = C.DATA?.NUCLEAR_DATA?.decayModes || {};
+  const m = modes[mode];
+  if(!m) return null;
+  const newZ = Z + m.deltaZ;
+  const newA = A + m.deltaA;
+  const newSym = symbolOfZ(newZ);
+  return {
+    parent: symbol + '-' + A,
+    mode,
+    daughterSymbol: newSym,
+    daughterA: newA,
+    daughterLabel: newSym ? newSym + '-' + newA : '?',
+    emitted: m.emitted,
+    deltaZ: m.deltaZ, deltaA: m.deltaA
+  };
+}
+

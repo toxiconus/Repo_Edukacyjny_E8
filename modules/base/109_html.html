@@ -1,0 +1,9 @@
+</head>');src=src.replace(/<body([^>]*)>/i,'<body$1 data-che-lesson="'+m.code+'">');frame.srcdoc=src;fs.classList.add('open');document.body.classList.add('che-lesson-fullscreen-open')}document.getElementById('che-lesson-close').onclick=function(){fs.classList.remove('open');document.body.classList.remove('che-lesson-fullscreen-open');frame.srcdoc=''};document.addEventListener('keydown',function(e){if(e.key==='Escape'&&fs.classList.contains('open'))document.getElementById('che-lesson-close').click()});window.addEventListener('message',function(e){var d=e.data||{};if(d.type!=='CHE_LESSON_OPEN_VISUAL'||!d.visualId)return;if(C.VISUAL_REGISTRY&&typeof C.VISUAL_REGISTRY.mount==='function'){var target=document.createElement('div');target.className='che-lesson-visual-focus';target.setAttribute('data-che',d.visualId);target.innerHTML='<div style="padding:12px;color:var(--tx,#172033)"><b>Wizualizacja</b></div>';document.body.appendChild(target);C.VISUAL_REGISTRY.mount(d.visualId,target);target.scrollIntoView({behavior:'smooth',block:'center'})}});
+ensureNav();
+}catch(e){console.warn('CHE lesson registry:',e)}})();
+</script>
+<!-- ===== /MODUŁ KWASY ===== -->
+
+
+
+

@@ -1,0 +1,55 @@
+
+C.deepFreeze(D.REACTIONS); C.deepFreeze(D.REACTION_DATA);
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 4]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DATA = C.DATA || {};
+const S = {
+  HCl:{formula:'HCl',name:'kwas chlorowodorowy',state:'aq',molarMass:36.46,role:'kwas',safety:['żrący'],uses:['żołądek','odkamienianie','PVC']},
+  NaOH:{formula:'NaOH',name:'wodorotlenek sodu',state:'aq',molarMass:40.0,role:'zasada',safety:['żrący'],uses:['chemia przemysłowa','mydło']},
+  Zn:{formula:'Zn',name:'cynk',state:'s',molarMass:65.38,role:'metal',safety:[],uses:['galwanizacja']},
+  Mg:{formula:'Mg',name:'magnez',state:'s',molarMass:24.305,role:'metal',safety:['palny'],uses:['stopy','pirotechnika']},
+  Fe:{formula:'Fe',name:'żelazo',state:'s',molarMass:55.845,role:'metal',safety:[],uses:['stal']},
+  MgCl2:{formula:'MgCl2',name:'chlorek magnezu',state:'aq',molarMass:95.211,role:'sól',safety:[],uses:['sól drogowa']},
+  FeCl2:{formula:'FeCl2',name:'chlorek żelaza(II)',state:'aq',molarMass:126.751,role:'sól',safety:[],uses:[]},
+  ZnCl2:{formula:'ZnCl2',name:'chlorek cynku',state:'aq',molarMass:136.315,role:'sól',safety:['żrący'],uses:['lutowanie']},
+  CaCO3:{formula:'CaCO3',name:'węglan wapnia',state:'s',molarMass:100.086,role:'sól',safety:[],uses:['wapno','budownictwo']},
+  CO2:{formula:'CO2',name:'dwutlenek węgla',state:'g',molarMass:44.009,role:'tlenek kwasowy',safety:[],uses:['napoje']},
+  H2O:{formula:'H2O',name:'woda',state:'l',molarMass:18.015,role:'rozpuszczalnik',safety:[],uses:[]},
+  H2:{formula:'H2',name:'wodór',state:'g',molarMass:2.016,role:'pierwiastek',safety:['palny'],uses:['paliwo']},
+  NaCl:{formula:'NaCl',name:'chlorek sodu',state:'aq',molarMass:58.44,role:'sól',safety:[],uses:['spożywczy']},
+  H2SO4:{formula:'H2SO4',name:'kwas siarkowy(VI)',state:'aq',molarMass:98.079,role:'kwas',safety:['żrący'],uses:['akumulatory','nawozy']},
+  Na2SO4:{formula:'Na2SO4',name:'siarczan(VI) sodu',state:'aq',molarMass:142.04,role:'sól',safety:[],uses:['detergenty']},
+  NaHSO4:{formula:'NaHSO4',name:'wodorosiarczan(VI) sodu',state:'aq',molarMass:120.06,role:'sól kwaśna',safety:['żrący'],uses:['czyszczenie']},
+  CuO:{formula:'CuO',name:'tlenek miedzi(II)',state:'s',molarMass:79.545,role:'tlenek zasadowy',safety:[],uses:['pigment']},
+  CuSO4:{formula:'CuSO4',name:'siarczan(VI) miedzi(II)',state:'aq',molarMass:159.609,role:'sól',safety:['szkodliwy'],uses:['fungicyd']},
+  CuCl2:{formula:'CuCl2',name:'chlorek miedzi(II)',state:'aq',molarMass:134.452,role:'sól',safety:['szkodliwy'],uses:['katalizator']},
+  CaCl2:{formula:'CaCl2',name:'chlorek wapnia',state:'aq',molarMass:110.978,role:'sól',safety:[],uses:['osuszacz']},
+  AgNO3:{formula:'AgNO3',name:'azotan(V) srebra',state:'aq',molarMass:169.871,role:'sól',safety:['żrący','plami'],uses:['fotografia']},
+  AgCl:{formula:'AgCl',name:'chlorek srebra',state:'s',molarMass:143.321,role:'osad',safety:[],uses:[]},
+  HNO3:{formula:'HNO3',name:'kwas azotowy(V)',state:'aq',molarMass:63.012,role:'kwas',safety:['żrący','utleniacz'],uses:['nawozy']},
+  NO2:{formula:'NO2',name:'dwutlenek azotu',state:'g',molarMass:46.005,role:'tlenek',safety:['toksyczny'],uses:[]},
+  CuNO32:{formula:'Cu(NO3)2',name:'azotan(V) miedzi(II)',state:'aq',molarMass:187.554,role:'sól',safety:['szkodliwy'],uses:[]},
+  SO3:{formula:'SO3',name:'tlenek siarki(VI)',state:'l',molarMass:80.06,role:'tlenek kwasowy',safety:['żrący'],uses:['H₂SO₄']},
+  HF:{formula:'HF',name:'kwas fluorowodorowy',state:'aq',molarMass:20.006,role:'kwas',safety:['silnie toksyczny'],uses:['trawienie szkła']},
+  CH3COOH:{formula:'CH3COOH',name:'kwas octowy',state:'aq',molarMass:60.052,role:'kwas',safety:['żrący'],uses:['ocet','synteza']},
+  H3PO4:{formula:'H3PO4',name:'kwas fosforowy(V)',state:'aq',molarMass:97.994,role:'kwas',safety:['żrący'],uses:['nawozy']},
+  H2CO3:{formula:'H2CO3',name:'kwas węglowy',state:'aq',molarMass:62.024,role:'kwas',safety:[],uses:[]},
+  HCOOH:{formula:'HCOOH',name:'kwas mrówkowy',state:'aq',molarMass:46.025,role:'kwas',safety:['żrący'],uses:['synteza']},
+  NH3:{formula:'NH3',name:'amoniak',state:'g',molarMass:17.031,role:'zasada',safety:['toksyczny'],uses:['nawozy']},
+  CH4:{formula:'CH4',name:'metan',state:'g',molarMass:16.043,role:'alkan',safety:['palny'],uses:['paliwo']},
+  H2S:{formula:'H2S',name:'siarkowodór',state:'g',molarMass:34.081,role:'kwas słaby',safety:['silnie toksyczny'],uses:[],cas:'7783-06-4'},
+  SO2:{formula:'SO2',name:'dwutlenek siarki',state:'g',molarMass:64.064,role:'tlenek kwasowy',safety:['toksyczny'],uses:[],cas:'7446-09-5'},
+  HCN:{formula:'HCN',name:'cyjanowodór',state:'g',molarMass:27.025,role:'kwas słaby',safety:['silnie toksyczny'],uses:[],cas:'74-90-8'},
+  H2O2:{formula:'H2O2',name:'nadtlenek wodoru',state:'l',molarMass:34.015,role:'nadtlenek',safety:['utleniacz','żrący'],uses:[],cas:'7722-84-1'},
+  CO:{formula:'CO',name:'tlenek węgla(II)',state:'g',molarMass:28.010,role:'tlenek obojętny',safety:['silnie toksyczny'],uses:[],cas:'630-08-0'},
+  H3O:{formula:'H3O+',name:'jon hydroniowy',state:'aq',molarMass:19.023,role:'jon',safety:[],uses:[]}
+};

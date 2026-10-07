@@ -1,0 +1,896 @@
+
+D.ACIDS = {};
+Object.values(D.ACID_SYSTEMS).forEach(a=>{
+  D.ACIDS[a.id] = { formula:a.formula, name:S[a.id]?.name||a.id,
+    type:a.strong?'strong':(a.pKa.length>1?'polyprotic':'weak'),
+    Ka:a.Ka.filter(x=>x!==null), pKa:a.pKa.filter(x=>x!==null), protons:a.protonsFormal||a.species.length-1, note:a.note||null };
+});
+C.deepFreeze(D.SUBSTANCES); C.deepFreeze(D.ACID_SYSTEMS); C.deepFreeze(D.ACIDS);
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 5]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DATA = C.DATA || {};
+D.INDICATORS = [
+  {name:'oranż metylowy',lo:3.1,hi:4.4,cLo:'#dc2626',cHi:'#facc15'},
+  {name:'lakmus',lo:4.5,hi:8.3,cLo:'#dc2626',cHi:'#2563eb'},
+  {name:'błękit bromotymolowy',lo:6.0,hi:7.6,cLo:'#eab308',cHi:'#2563eb'},
+  {name:'fenoloftaleina',lo:8.2,hi:10.0,cLo:'transparent',cHi:'#db2777'}
+];
+D.INDICATOR_RANGES = D.INDICATORS.map(x=>({name:x.name,lo:x.lo,hi:x.hi}));
+D.METAL_SERIES = ['K','Ca','Na','Mg','Al','Zn','Fe','Sn','Pb','H','Cu','Ag','Au'];
+D.METAL_ACTIVE = ['K','Ca','Na','Mg','Al','Zn','Fe','Sn','Pb'];
+D.ACID_STRENGTH = [
+  {n:'HCl',a:1,c:'mocny'},{n:'HBr',a:1,c:'mocny'},{n:'HI',a:1,c:'mocny'},{n:'HNO₃',a:1,c:'mocny'},
+  {n:'H₂SO₄ (I)',a:1,c:'mocny'},{n:'H₃PO₄',a:0.23,c:'średni'},{n:'HF',a:0.079,c:'średni'},
+  {n:'CH₃COOH',a:0.013,c:'słaby'},{n:'H₂CO₃',a:0.0021,c:'słaby'},{n:'H₂S',a:0.001,c:'słaby'}
+];
+D.CONCEPTS = [
+  {l:'definicja',c:'#2b5e9c',x:150,y:70,t:'Kwas Brønsteda: donor H⁺.'},
+  {l:'nazewnictwo',c:'#2b5e9c',x:450,y:50,t:'Beztlenowe: -wodorowy. Tlenowe: -owy z cyfrą.'},
+  {l:'wzór HₙR',c:'#2b5e9c',x:750,y:70,t:'H + reszta kwasowa.'},
+  {l:'dysocjacja',c:'#6b3fa0',x:100,y:235,t:'HA + H₂O ⇌ H₃O⁺ + A⁻.'},
+  {l:'reakcje',c:'#b06f1c',x:800,y:235,t:'metal · tlenek · wodorotlenek · węglan'},
+  {l:'pH',c:'#2e7d4f',x:150,y:400,t:'pH < 7 kwasowy.'},
+  {l:'zastosowania',c:'#2e7d4f',x:450,y:425,t:'żołądek · akumulatory · ocet'},
+  {l:'BHP',c:'#b83a45',x:750,y:400,t:'Zawsze kwas do wody.'}
+];
+D.TIMELINE = [
+  {year:'1887',who:'Svante Arrhenius',desc:'Teoria dysocjacji elektrolitycznej.'},
+  {year:'1923',who:'Johannes Brønsted',desc:'Teoria protonowa: kwas = donor H⁺.'},
+  {year:'1923',who:'Thomas Lowry',desc:'Niezależnie ta sama teoria protonowa.'},
+  {year:'1923',who:'Gilbert Lewis',desc:'Teoria elektronowa: kwas = akceptor pary e⁻.'},
+  {year:'XX w.',who:'Rozwój teorii',desc:'Pearson (HSAB), Usanovich, chemia supramolekularna.'}
+];
+D.COMPOUNDS = [
+  {f:'HCl',n:'kwas chlorowodorowy · kwas solny (aq)',tag:'mocny',rows:[
+    ['Reszta','Cl⁻ (chlorkowa)'],['Moc','Î± ≈ 1, pKa ≈ −7'],
+    ['Otrzymywanie','H₂ + Cl₂ → 2 HCl; NaCl + H₂SO₄ → NaHSO₄ + HCl↑'],
+    ['Reakcje','Zn + 2 HCl → ZnCl₂ + H₂↑ · NaOH + HCl → NaCl + H₂O'],
+    ['Zastosowanie','żołądek (pH 1,5–2), odkamienianie, PVC']]},
+  {f:'H₂SO₄',n:'kwas siarkowy(VI)',tag:'mocny',rows:[
+    ['Reszta','SO₄²⁻'],['Moc','α₁ ≈ 1, α₂ < 1; pKa₁ ≈ −3'],
+    ['Otrzymywanie','SO₃ + H₂O → H₂SO₄'],
+    ['Reakcje','H₂SO₄ + 2 NaOH → Na₂SO₄ + 2 H₂O'],
+    ['Zastosowanie','akumulatory, nawozy, produkcja metali']]},
+  {f:'CH₃COOH',n:'kwas octowy · etanowy',tag:'slaby',rows:[
+    ['Reszta','CH₃COO⁻'],['Moc','α ≈ 0,01 dla 0,1 M, pKa = 4,76'],
+    ['Otrzymywanie','Fermentacja octowa'],
+    ['Reakcje','CH₃COOH + NaOH → CH₃COONa + H₂O'],
+    ['Zastosowanie','ocet 5–10%, konserwant E260']]},
+  {f:'H₂CO₃',n:'kwas węglowy',tag:'slaby',rows:[
+    ['Reszta','CO₃²⁻'],['Moc','α << 1, pKa₁ = 6,37'],
+    ['Otrzymywanie','CO₂ + H₂O ⇌ H₂CO₃'],
+    ['Reakcje','H₂CO₃ + 2 NaOH → Na₂CO₃ + 2 H₂O'],
+    ['Zastosowanie','napoje gazowane, bufor krwi (pH 7,4)']]},
+  {f:'H₂S',n:'siarkowodór',tag:'gaz · toksyczny',rows:[
+    ['Budowa','cząsteczka kątowa H–S–H'],['Stan (25 °C)','gaz'],
+    ['Termochemia gazu','ΔfH° = −20,6 kJ/mol; S° = 205,81 J/(mol·K); Cp°(298,15 K) ≈ 34,20 J/(mol·K)'],
+    ['Warunki','298,15 K; 1 bar · wartości dla fazy gazowej'],
+    ['Źródło','NIST Chemistry WebBook SRD 69 · Cox, Wagman et al. 1984; Chase 1998 · https://webbook.nist.gov/cgi/cbook.cgi?ID=C7783064&Units=SI&Mask=1']]},
+  {f:'SO₂',n:'dwutlenek siarki',tag:'gaz · toksyczny',rows:[
+    ['Budowa','cząsteczka kątowa i polarna'],['Stan (25 °C)','gaz'],
+    ['Termochemia gazu','ΔfH° = −296,81 kJ/mol; S° = 248,223 J/(mol·K); Cp°(298,15 K) ≈ 39,87 J/(mol·K)'],
+    ['Warunki','298,15 K; 1 bar · wartości dla fazy gazowej'],
+    ['Źródło','NIST Chemistry WebBook SRD 69 · Cox, Wagman et al. 1984; Chase 1998 · https://webbook.nist.gov/cgi/cbook.cgi?ID=C7446095&Units=SI&Mask=1']]},
+  {f:'HCN',n:'cyjanowodór',tag:'gaz · silnie toksyczny',rows:[
+    ['Budowa','cząsteczka liniowa H–C≡N'],['Stan (25 °C)','gaz'],
+    ['Termochemia gazu','ΔfH° = 135,14 kJ/mol; S° = 201,82 J/(mol·K); Cp°(298,15 K) ≈ 35,85 J/(mol·K)'],
+    ['Warunki','298,15 K; 1 bar · wartości dla fazy gazowej'],
+    ['Źródło','NIST Chemistry WebBook SRD 69 · Chase 1998 · https://webbook.nist.gov/cgi/cbook.cgi?ID=C74908&Units=SI&Mask=1']]},
+  {f:'H₂O₂',n:'nadtlenek wodoru',tag:'nadtlenek · utleniacz',rows:[
+    ['Budowa','wiązanie nadtlenkowe O–O; szkic 2D uproszczony'],['Stan (25 °C)','czysta substancja: ciecz'],
+    ['Termochemia gazu','ΔfH° = −136,11 kJ/mol; S° = 232,95 J/(mol·K); Cp°(298,15 K) ≈ 43,08 J/(mol·K)'],
+    ['Warunki','298,15 K; 1 bar · podane wartości termochemiczne dotyczą fazy gazowej'],
+    ['Źródło','NIST Chemistry WebBook SRD 69 · Chase 1998 · https://webbook.nist.gov/cgi/cbook.cgi?ID=C7722841&Units=SI&Mask=1']]},
+  {f:'CO',n:'tlenek węgla(II)',tag:'gaz · silnie toksyczny',rows:[
+    ['Budowa','cząsteczka dwuatomowa C≡O'],['Stan (25 °C)','gaz'],
+    ['Termochemia gazu','ΔfH° = −110,53 kJ/mol; S° = 197,660 J/(mol·K); Cp°(298,15 K) ≈ 29,15 J/(mol·K)'],
+    ['Warunki','298,15 K; 1 bar · wartości dla fazy gazowej'],
+    ['Źródło','NIST Chemistry WebBook SRD 69 · Cox, Wagman et al. 1984; Chase 1998 · https://webbook.nist.gov/cgi/cbook.cgi?ID=C630080&Units=SI&Mask=1']]}
+];
+D.MODEL_LIMITS = {
+  temperatureK:298.15, idealSolution:true, activityCoefficients:'pomijane',
+  waterKw:1e-14, polyprotic:'idealny rozkład równowagowy',
+  pKaReference:'wartości zaokrąglone; zależne od temperatury i definicji układu'
+};
+C.deepFreeze(D.INDICATORS); C.deepFreeze(D.INDICATOR_RANGES); C.deepFreeze(D.METAL_SERIES);
+C.deepFreeze(D.METAL_ACTIVE); C.deepFreeze(D.ACID_STRENGTH); C.deepFreeze(D.CONCEPTS);
+C.deepFreeze(D.TIMELINE); C.deepFreeze(D.COMPOUNDS); C.deepFreeze(D.MODEL_LIMITS);
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 6]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DATA = C.DATA || {};
+D.ATOMIC_PROPS = {
+  H:{ atomicRadius:53, covalentRadius:37, vdwRadius:120, ionicRadius:{'1+':null,'1-':154},
+      electronegativityPauling:2.20, electronegativityMulliken:7.18, electronAffinity:72.8,
+      ionizationEnergies:[1312.0], oxidationStates:[-1,1], polarizability:0.6668, atomicVolume:14.1,
+      meltingPoint:14.01, boilingPoint:20.28, density:0.00008988, stateSTP:'gas',
+      crystalStructure:'phase-dependent', color:'bezbarwny', discovery:{year:1766, by:'Henry Cavendish'} },
+  He:{ atomicRadius:31, covalentRadius:32, vdwRadius:140, electronegativityPauling:null,
+      electronAffinity:-50, ionizationEnergies:[2372.3,5250.5], oxidationStates:[0],
+      meltingPoint:0.95, boilingPoint:4.22, density:0.0001785, stateSTP:'gas',
+      crystalStructure:'phase-dependent', color:'bezbarwny', discovery:{year:1868, by:'Janssen, Lockyer'} },
+  C:{ atomicRadius:67, covalentRadius:76, vdwRadius:170, electronegativityPauling:2.55,
+      electronegativityMulliken:12.20, electronAffinity:153.9,
+      ionizationEnergies:[1086.5,2352.6,4620.5,6222.7,37831,47277],
+      oxidationStates:[-4,-3,-2,-1,0,1,2,3,4], polarizability:1.76, atomicVolume:5.29,
+      meltingPoint:3823, boilingPoint:4098, density:2.267, stateSTP:'solid',
+      crystalStructure:'hexagonal', color:'czarny (grafit) / bezbarwny (diament)',
+      discovery:{year:'prehistory', by:'—'} },
+  N:{ atomicRadius:56, covalentRadius:71, vdwRadius:155, electronegativityPauling:3.04,
+      electronegativityMulliken:14.53, electronAffinity:-7, ionizationEnergies:[1402.3,2856,4578.1,7475,9444.9,53266.6,64360],
+      oxidationStates:[-3,-2,-1,0,1,2,3,4,5], polarizability:1.10, atomicVolume:17.3,
+      meltingPoint:63.15, boilingPoint:77.36, density:0.001251, stateSTP:'gas',
+      crystalStructure:'hexagonal', color:'bezbarwny', discovery:{year:1772, by:'Daniel Rutherford'} },
+  O:{ atomicRadius:48, covalentRadius:66, vdwRadius:152, ionicRadius:{'2-':140},
+      electronegativityPauling:3.44, electronegativityMulliken:13.61, electronAffinity:141.0,
+      ionizationEnergies:[1313.9,3388.3,5300.5,7469.2,10989.5,13326.5,71330,84078],
+      oxidationStates:[-2,-1,1,2], polarizability:0.802, atomicVolume:14.0,
+      meltingPoint:54.36, boilingPoint:90.20, density:0.001429, stateSTP:'gas',
+      crystalStructure:'phase-dependent', crystalStructureNote:'stałe O₂ występuje w kilku fazach; nie należy podawać jednej struktury bez warunków P,T', color:'bezbarwny', discovery:{year:1774, by:'Joseph Priestley'} },
+  F:{ atomicRadius:42, covalentRadius:57, vdwRadius:147, ionicRadius:{'1-':133},
+      electronegativityPauling:3.98, electronegativityMulliken:10.41, electronAffinity:328.0,
+      ionizationEnergies:[1681.0,3374.2,6050.4,8407.7,11022.7,15164.1,17868,92038.1,106434.3],
+      oxidationStates:[-1], polarizability:0.557, atomicVolume:11.2,
+      meltingPoint:53.53, boilingPoint:85.03, density:0.001696, stateSTP:'gas',
+      crystalStructure:'phase-dependent', crystalStructureNote:'α-F₂ ma strukturę monocliniczną C2/c; faza zależy od temperatury i ciśnienia', color:'jasnożółty', discovery:{year:1886, by:'Henri Moissan'} },
+  Na:{ atomicRadius:190, covalentRadius:166, vdwRadius:227, ionicRadius:{'1+':102},
+      electronegativityPauling:0.93, electronegativityMulliken:5.14, electronAffinity:52.8,
+      ionizationEnergies:[495.8,4562,6910.3,9543,13354,16613,20117,25496,28932,141362],
+      oxidationStates:[-1,0,1], polarizability:24.11, atomicVolume:23.7,
+      meltingPoint:370.87, boilingPoint:1156, density:0.968, stateSTP:'solid',
+      crystalStructure:'bcc', color:'srebrzysty', discovery:{year:1807, by:'Humphry Davy'} },
+  Mg:{ atomicRadius:145, covalentRadius:141, vdwRadius:173, ionicRadius:{'2+':72},
+      electronegativityPauling:1.31, electronegativityMulliken:7.65, electronAffinity:-40,
+      ionizationEnergies:[737.7,1450.7,7732.7,10542.5,13630,17995,21703,25656,31653,35458],
+      oxidationStates:[1,2], polarizability:10.6, atomicVolume:14.0,
+      meltingPoint:923, boilingPoint:1363, density:1.738, stateSTP:'solid',
+      crystalStructure:'hcp', color:'srebrzystobiały', discovery:{year:1755, by:'Joseph Black'} },
+  Al:{ atomicRadius:118, covalentRadius:121, vdwRadius:184, ionicRadius:{'3+':53.5},
+      electronegativityPauling:1.61, electronegativityMulliken:6.01, electronAffinity:42.5,
+      ionizationEnergies:[577.5,1816.7,2744.8,11577,14842,18379,23326,27465,31853,38473],
+      oxidationStates:[1,2,3], polarizability:6.8, atomicVolume:10.0,
+      meltingPoint:933.47, boilingPoint:2792, density:2.698, stateSTP:'solid',
+      crystalStructure:'fcc', color:'srebrzysty', discovery:{year:1825, by:'Hans Christian Ørsted'} },
+  Si:{ atomicRadius:111, covalentRadius:111, vdwRadius:210, ionicRadius:{'4+':40,'4-':271},
+      electronegativityPauling:1.90, electronegativityMulliken:7.06, electronAffinity:134.1,
+      ionizationEnergies:[786.5,1577.1,3231.6,4355.5,16091,19805,23780,29287,33878,38726],
+      oxidationStates:[-4,-3,-2,-1,1,2,3,4], polarizability:5.38, atomicVolume:12.1,
+      meltingPoint:1687, boilingPoint:3538, density:2.3296, stateSTP:'solid',
+      crystalStructure:'diamond', color:'szary, metaliczny', discovery:{year:1824, by:'Jöns Jacob Berzelius'} },
+  P:{ atomicRadius:98, covalentRadius:107, vdwRadius:180, ionicRadius:{'3+':44,'3-':212},
+      electronegativityPauling:2.19, electronegativityMulliken:10.49, electronAffinity:72.0,
+      ionizationEnergies:[1011.8,1907,2914.1,4963.6,6273.9,21267,25431,29872,35905,40950],
+      oxidationStates:[-3,-2,-1,1,2,3,4,5], polarizability:3.63, atomicVolume:17.0,
+      meltingPoint:317.30, boilingPoint:550, density:1.823, stateSTP:'solid',
+      crystalStructure:'orthorhombic', color:'biały / czerwony / czarny',
+      discovery:{year:1669, by:'Hennig Brand'} },
+  S:{ atomicRadius:88, covalentRadius:105, vdwRadius:180, ionicRadius:{'2-':184},
+      electronegativityPauling:2.58, electronegativityMulliken:8.54, electronAffinity:200.4,
+      ionizationEnergies:[999.6,2252,3357,4556,7004.3,8495.8,27107,31719,36621,43177],
+      oxidationStates:[-2,-1,1,2,3,4,5,6], polarizability:2.90, atomicVolume:15.5,
+      meltingPoint:388.36, boilingPoint:717.87, density:2.067, stateSTP:'solid',
+      crystalStructure:'orthorhombic', color:'żółty', discovery:{year:'prehistory', by:'—'} },
+  Cl:{ atomicRadius:79, covalentRadius:102, vdwRadius:175, ionicRadius:{'1-':181,'5+':12,'7+':27},
+      electronegativityPauling:3.16, electronegativityMulliken:8.30, electronAffinity:349.0,
+      ionizationEnergies:[1251.2,2298,3822,5158.6,6542,9362,11018,33604,38600,43961],
+      oxidationStates:[-1,1,2,3,4,5,6,7], polarizability:2.18, atomicVolume:18.7,
+      meltingPoint:171.6, boilingPoint:239.11, density:0.003214, stateSTP:'gas',
+      crystalStructure:'orthorhombic', color:'żółtozielony',
+      discovery:{year:1774, by:'Carl Wilhelm Scheele'} },
+  K:{ atomicRadius:243, covalentRadius:203, vdwRadius:275, ionicRadius:{'1+':138},
+      electronegativityPauling:0.82, electronegativityMulliken:4.34, electronAffinity:48.4,
+      ionizationEnergies:[418.8,3052,4419.6,5877,7975,9590,11343,14944,16963.7,48610],
+      oxidationStates:[1], polarizability:43.4, atomicVolume:45.4,
+      meltingPoint:336.53, boilingPoint:1032, density:0.862, stateSTP:'solid',
+      crystalStructure:'bcc', color:'srebrzysty', discovery:{year:1807, by:'Humphry Davy'} },
+  Ca:{ atomicRadius:194, covalentRadius:176, vdwRadius:231, ionicRadius:{'2+':100},
+      electronegativityPauling:1.00, electronegativityMulliken:6.11, electronAffinity:2.37,
+      ionizationEnergies:[589.8,1145.4,4912.4,6491,8153,10496,12270,14206,18191,20385],
+      oxidationStates:[1,2], polarizability:22.8, atomicVolume:26.2,
+      meltingPoint:1115, boilingPoint:1757, density:1.55, stateSTP:'solid',
+      crystalStructure:'fcc', color:'srebrzysty', discovery:{year:1808, by:'Humphry Davy'} },
+  Fe:{ atomicRadius:156, covalentRadius:132, vdwRadius:204, ionicRadius:{'2+':78,'3+':64.5},
+      electronegativityPauling:1.83, electronegativityMulliken:7.90, electronAffinity:14.8,
+      ionizationEnergies:[762.5,1561.9,2957,5290,7240,9560,12060,14580,22540,25290],
+      oxidationStates:[-2,-1,0,1,2,3,4,5,6,7], polarizability:8.4, atomicVolume:7.1,
+      meltingPoint:1811, boilingPoint:3134, density:7.874, stateSTP:'solid',
+      crystalStructure:'bcc', color:'srebrzystoszary', discovery:{year:'prehistory', by:'—'} },
+  Cu:{ atomicRadius:145, covalentRadius:132, vdwRadius:140, ionicRadius:{'1+':77,'2+':73},
+      electronegativityPauling:1.90, electronegativityMulliken:4.48, electronAffinity:118.4,
+      ionizationEnergies:[745.5,1957.9,3555,5536,7700,9900,13400,16000,19200,22400],
+      oxidationStates:[-2,1,2,3,4], polarizability:6.1, atomicVolume:7.1,
+      meltingPoint:1357.77, boilingPoint:2835, density:8.96, stateSTP:'solid',
+      crystalStructure:'fcc', color:'czerwono-pomarańczowy', discovery:{year:'prehistory', by:'—'} },
+  Zn:{ atomicRadius:142, covalentRadius:122, vdwRadius:139, ionicRadius:{'2+':74},
+      electronegativityPauling:1.65, electronegativityMulliken:4.45, electronAffinity:-58,
+      ionizationEnergies:[906.4,1733.3,3833,5731,7970,10400,12900,16800,19600,23000],
+      oxidationStates:[-2,0,1,2], polarizability:5.75, atomicVolume:9.2,
+      meltingPoint:692.68, boilingPoint:1180, density:7.134, stateSTP:'solid',
+      crystalStructure:'hcp', color:'niebieskawobiały', discovery:{year:1746, by:'Andreas Marggraf'} },
+  Ag:{ atomicRadius:165, covalentRadius:145, vdwRadius:172, ionicRadius:{'1+':115,'2+':94},
+      electronegativityPauling:1.93, electronegativityMulliken:4.44, electronAffinity:125.6,
+      ionizationEnergies:[731.0,2070,3361,5000,6800,8800,11000,13600,16600,20200],
+      oxidationStates:[1,2,3], polarizability:7.2, atomicVolume:10.3,
+      meltingPoint:1234.93, boilingPoint:2435, density:10.501, stateSTP:'solid',
+      crystalStructure:'fcc', color:'srebrzystobiały', discovery:{year:'prehistory', by:'—'} },
+  I:{ atomicRadius:133, covalentRadius:139, vdwRadius:198, ionicRadius:{'1-':220,'5+':95,'7+':50},
+      electronegativityPauling:2.66, electronegativityMulliken:6.76, electronAffinity:295.2,
+      ionizationEnergies:[1008.4,1845.9,3180],
+      oxidationStates:[-1,1,3,5,7], polarizability:5.35, atomicVolume:25.7,
+      meltingPoint:386.85, boilingPoint:457.4, density:4.933, stateSTP:'solid',
+      crystalStructure:'orthorhombic', color:'fioletowy', discovery:{year:1811, by:'Bernard Courtois'} },
+  Ba:{ atomicRadius:253, covalentRadius:215, vdwRadius:268, ionicRadius:{'2+':135},
+      electronegativityPauling:0.89, electronegativityMulliken:5.21, electronAffinity:13.95,
+      ionizationEnergies:[502.9,965.2,3600],
+      oxidationStates:[2], polarizability:39.7, atomicVolume:39.0,
+      meltingPoint:1000, boilingPoint:2170, density:3.594, stateSTP:'solid',
+      crystalStructure:'bcc', color:'srebrzystobiały', discovery:{year:1808, by:'Humphry Davy'} },
+  Pb:{ atomicRadius:154, covalentRadius:146, vdwRadius:202, ionicRadius:{'2+':119,'4+':77.5},
+      electronegativityPauling:2.33, electronegativityMulliken:4.29, electronAffinity:35.1,
+      ionizationEnergies:[715.6,1450.5,3081.5,4083,6640],
+      oxidationStates:[-4,-2,0,1,2,4], polarizability:6.8, atomicVolume:18.3,
+      meltingPoint:600.61, boilingPoint:2022, density:11.342, stateSTP:'solid',
+      crystalStructure:'fcc', color:'srebrzystoszary', discovery:{year:'prehistory', by:'—'} },
+  U:{ atomicRadius:156, covalentRadius:196, vdwRadius:240, ionicRadius:{'3+':102.5,'4+':89,'6+':73},
+      electronegativityPauling:1.38, electronegativityMulliken:3.92, electronAffinity:50.94,
+      ionizationEnergies:[597.6,1420],
+      oxidationStates:[1,2,3,4,5,6], polarizability:12.7, atomicVolume:12.5,
+      meltingPoint:1405.3, boilingPoint:4404, density:19.1, stateSTP:'solid',
+      crystalStructure:'orthorhombic', color:'srebrzystobiały', discovery:{year:1789, by:'Martin Klaproth'} }
+};
+C.deepFreeze(D.ATOMIC_PROPS);
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 7]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DATA = C.DATA || {};
+D.ISOTOPES = {
+  H:[
+    { A:1, name:'prot', atomicMass:1.007825, abundance:0.99985, stable:true, nuclearSpin:0.5, magneticMoment:2.7928 },
+    { A:2, name:'deuter', atomicMass:2.014102, abundance:0.00015, stable:true, nuclearSpin:1.0, magneticMoment:0.8574, applications:['NMR','reaktory'] },
+    { A:3, name:'tryt', atomicMass:3.016049, abundance:0, stable:false, halfLife:'12.32 roku', decayMode:'beta-', daughter:'He-3', nuclearSpin:0.5, applications:['datowanie','znacznik'] }
+  ],
+  He:[
+    { A:3, atomicMass:3.016029, abundance:0.000002, stable:true, nuclearSpin:0.5 },
+    { A:4, atomicMass:4.002603, abundance:0.999998, stable:true, nuclearSpin:0 },
+    { A:6, atomicMass:6.018889, abundance:0, stable:false, halfLife:'806 ms', decayMode:'beta-', daughter:'Li-6' }
+  ],
+  Li:[
+    { A:6, atomicMass:6.015123, abundance:0.0759, stable:true, nuclearSpin:1 },
+    { A:7, atomicMass:7.016004, abundance:0.9241, stable:true, nuclearSpin:1.5 }
+  ],
+  C:[
+    { A:12, atomicMass:12.000000, abundance:0.9893, stable:true, nuclearSpin:0 },
+    { A:13, atomicMass:13.003355, abundance:0.0107, stable:true, nuclearSpin:0.5, applications:['NMR','znacznik'] },
+    { A:14, atomicMass:14.003242, abundance:0, stable:false, halfLife:'5730 lat', decayMode:'beta-', daughter:'N-14', applications:['datowanie radiowęglowe'] }
+  ],
+  N:[
+    { A:14, atomicMass:14.003074, abundance:0.99636, stable:true, nuclearSpin:1 },
+    { A:15, atomicMass:15.000109, abundance:0.00364, stable:true, nuclearSpin:0.5, applications:['NMR','znacznik'] }
+  ],
+  O:[
+    { A:16, atomicMass:15.994915, abundance:0.99757, stable:true, nuclearSpin:0 },
+    { A:17, atomicMass:16.999132, abundance:0.00038, stable:true, nuclearSpin:2.5 },
+    { A:18, atomicMass:17.999160, abundance:0.00205, stable:true, nuclearSpin:0, applications:['paleoklimat'] }
+  ],
+  Na:[
+    { A:23, atomicMass:22.989770, abundance:1.0, stable:true, nuclearSpin:1.5, applications:['NMR'] },
+    { A:24, atomicMass:23.990963, abundance:0, stable:false, halfLife:'15 h', decayMode:'beta-' }
+  ],
+  P:[
+    { A:31, atomicMass:30.973762, abundance:1.0, stable:true, nuclearSpin:0.5, applications:['NMR'] },
+    { A:32, atomicMass:31.973907, abundance:0, stable:false, halfLife:'14.27 dnia', decayMode:'beta-', applications:['znacznik'] }
+  ],
+  S:[
+    { A:32, atomicMass:31.972071, abundance:0.9499, stable:true, nuclearSpin:0 },
+    { A:33, atomicMass:32.971459, abundance:0.0075, stable:true, nuclearSpin:1.5 },
+    { A:34, atomicMass:33.967867, abundance:0.0425, stable:true, nuclearSpin:0 },
+    { A:36, atomicMass:35.967081, abundance:0.0001, stable:true, nuclearSpin:0 }
+  ],
+  Cl:[
+    { A:35, atomicMass:34.968853, abundance:0.7576, stable:true, nuclearSpin:1.5 },
+    { A:37, atomicMass:36.965903, abundance:0.2424, stable:true, nuclearSpin:1.5 }
+  ],
+  K:[
+    { A:39, atomicMass:38.963707, abundance:0.93258, stable:true, nuclearSpin:1.5 },
+    { A:40, atomicMass:39.963999, abundance:0.000117, stable:false, halfLife:'1.25e9 lat', decayMode:'beta-', applications:['datowanie'] },
+    { A:41, atomicMass:40.961826, abundance:0.06730, stable:true, nuclearSpin:1.5 }
+  ],
+  Ca:[
+    { A:40, atomicMass:39.962591, abundance:0.96941, stable:true, nuclearSpin:0 },
+    { A:44, atomicMass:43.955482, abundance:0.02086, stable:true, nuclearSpin:0 }
+  ],
+  Fe:[
+    { A:54, atomicMass:53.939611, abundance:0.05845, stable:true, nuclearSpin:0 },
+    { A:56, atomicMass:55.934938, abundance:0.91754, stable:true, nuclearSpin:0 },
+    { A:57, atomicMass:56.935394, abundance:0.02119, stable:true, nuclearSpin:0.5 }
+  ],
+  Cu:[
+    { A:63, atomicMass:62.929601, abundance:0.6915, stable:true, nuclearSpin:1.5 },
+    { A:65, atomicMass:64.927794, abundance:0.3085, stable:true, nuclearSpin:1.5 }
+  ],
+  I:[
+    { A:127, atomicMass:126.904473, abundance:1.0, stable:true, nuclearSpin:2.5 },
+    { A:131, atomicMass:130.906126, abundance:0, stable:false, halfLife:'8.02 dnia', decayMode:'beta-', applications:['medycyna nuklearna'] }
+  ],
+  Cs:[
+    { A:133, atomicMass:132.905447, abundance:1.0, stable:true, nuclearSpin:3.5 },
+    { A:137, atomicMass:136.907090, abundance:0, stable:false, halfLife:'30.17 lat', decayMode:'beta-', applications:['skażenie','wzorzec czasu'] }
+  ],
+  U:[
+    { A:234, atomicMass:234.040952, abundance:0.000054, stable:false, halfLife:'245500 lat', decayMode:'alpha' },
+    { A:235, atomicMass:235.043930, abundance:0.007204, stable:false, halfLife:'7.04e8 lat', decayMode:'alpha', applications:['reaktory','broń'] },
+    { A:238, atomicMass:238.050788, abundance:0.992742, stable:false, halfLife:'4.468e9 lat', decayMode:'alpha', applications:['datowanie','reaktory'] }
+  ],
+  Mg:[
+    { A:24, atomicMass:23.985042, abundance:0.7899, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:25, atomicMass:24.985837, abundance:0.1000, stable:true, nuclearSpin:2.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:26, atomicMass:25.982593, abundance:0.1101, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Al:[
+    { A:27, atomicMass:26.981539, abundance:1.0, stable:true, nuclearSpin:2.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Si:[
+    { A:28, atomicMass:27.976927, abundance:0.9223, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:29, atomicMass:28.976495, abundance:0.0467, stable:true, nuclearSpin:0.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:30, atomicMass:29.973770, abundance:0.0310, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Ne:[
+    { A:20, atomicMass:19.992440, abundance:0.9048, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:21, atomicMass:20.993846, abundance:0.0027, stable:true, nuclearSpin:1.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:22, atomicMass:21.991385, abundance:0.0925, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Ar:[
+    { A:36, atomicMass:35.967546, abundance:0.00337, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:38, atomicMass:37.962732, abundance:0.00063, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:40, atomicMass:39.962383, abundance:0.99600, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Br:[
+    { A:79, atomicMass:78.918337, abundance:0.5065, stable:true, nuclearSpin:1.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:81, atomicMass:80.916291, abundance:0.4935, stable:true, nuclearSpin:1.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Zn:[
+    { A:64, atomicMass:63.929142, abundance:0.4915, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:66, atomicMass:65.926034, abundance:0.2773, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:67, atomicMass:66.927129, abundance:0.0404, stable:true, nuclearSpin:2.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:68, atomicMass:67.924845, abundance:0.1845, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:70, atomicMass:69.925325, abundance:0.0061, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Ag:[
+    { A:107, atomicMass:106.905097, abundance:0.5184, stable:true, nuclearSpin:0.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:109, atomicMass:108.904752, abundance:0.4816, stable:true, nuclearSpin:0.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Ba:[
+    { A:130, atomicMass:129.906320, abundance:0.0011, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:132, atomicMass:131.905061, abundance:0.0010, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:134, atomicMass:133.904508, abundance:0.0242, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:135, atomicMass:134.905688, abundance:0.0659, stable:true, nuclearSpin:1.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:136, atomicMass:135.904570, abundance:0.0785, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:137, atomicMass:136.905827, abundance:0.1123, stable:true, nuclearSpin:1.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:138, atomicMass:137.905242, abundance:0.7170, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ],
+  Pb:[
+    { A:204, atomicMass:203.973043, abundance:0.0140, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:206, atomicMass:205.974465, abundance:0.2410, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:207, atomicMass:206.975896, abundance:0.2210, stable:true, nuclearSpin:0.5, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' },
+    { A:208, atomicMass:207.976652, abundance:0.5240, stable:true, nuclearSpin:0, source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' }
+  ]
+};
+const fallbackFeed = {
+  B:[{A:10,atomicMass:10.012937,abundance:19.9,stable:true,nuclearSpin:3},{A:11,atomicMass:11.009305,abundance:80.1,stable:true,nuclearSpin:1.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Be:[{A:9,atomicMass:9.012183,abundance:100,stable:true,nuclearSpin:1.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  F:[{A:19,atomicMass:18.998403,abundance:100,stable:true,nuclearSpin:0.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Kr:[{A:78,atomicMass:77.920386,abundance:0.3553,stable:true,nuclearSpin:0},{A:80,atomicMass:79.916378,abundance:2.286,stable:true,nuclearSpin:0},{A:82,atomicMass:81.913485,abundance:11.593,stable:true,nuclearSpin:0},{A:83,atomicMass:82.914136,abundance:11.5,stable:true,nuclearSpin:4.5},{A:84,atomicMass:83.911507,abundance:57.0,stable:true,nuclearSpin:0},{A:86,atomicMass:85.910610,abundance:17.3,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Rb:[{A:85,atomicMass:84.911789,abundance:72.17,stable:true,nuclearSpin:2.5},{A:87,atomicMass:86.909183,abundance:27.83,stable:true,nuclearSpin:1.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Sr:[{A:84,atomicMass:83.913425,abundance:0.56,stable:true,nuclearSpin:0},{A:86,atomicMass:85.909262,abundance:9.86,stable:true,nuclearSpin:0},{A:87,atomicMass:86.908879,abundance:7.0,stable:true,nuclearSpin:4.5},{A:88,atomicMass:87.905614,abundance:82.58,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Y:[{A:89,atomicMass:88.905848,abundance:100,stable:true,nuclearSpin:0.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Zr:[{A:90,atomicMass:89.904704,abundance:51.45,stable:true,nuclearSpin:0},{A:91,atomicMass:90.905645,abundance:11.22,stable:true,nuclearSpin:2.5},{A:92,atomicMass:91.905040,abundance:17.15,stable:true,nuclearSpin:0},{A:94,atomicMass:93.906316,abundance:17.38,stable:true,nuclearSpin:0},{A:96,atomicMass:95.908273,abundance:2.80,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Nb:[{A:93,atomicMass:92.906378,abundance:100,stable:true,nuclearSpin:9/2,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Mo:[{A:92,atomicMass:91.906810,abundance:14.84,stable:true,nuclearSpin:0},{A:94,atomicMass:93.905087,abundance:9.25,stable:true,nuclearSpin:0},{A:95,atomicMass:94.905840,abundance:15.92,stable:true,nuclearSpin:2.5},{A:96,atomicMass:95.904676,abundance:16.68,stable:true,nuclearSpin:0},{A:97,atomicMass:96.906020,abundance:9.55,stable:true,nuclearSpin:2.5},{A:98,atomicMass:97.905406,abundance:24.13,stable:true,nuclearSpin:0},{A:100,atomicMass:99.907477,abundance:9.63,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Ru:[{A:96,atomicMass:95.907598,abundance:5.52,stable:true,nuclearSpin:0},{A:98,atomicMass:97.905287,abundance:1.88,stable:true,nuclearSpin:0},{A:99,atomicMass:98.905939,abundance:12.7,stable:true,nuclearSpin:3/2},{A:100,atomicMass:99.904220,abundance:12.6,stable:true,nuclearSpin:0},{A:101,atomicMass:100.905582,abundance:17.0,stable:true,nuclearSpin:5/2},{A:102,atomicMass:101.904348,abundance:31.6,stable:true,nuclearSpin:0},{A:104,atomicMass:103.905430,abundance:18.7,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Rh:[{A:103,atomicMass:102.905503,abundance:100,stable:true,nuclearSpin:0.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Pd:[{A:102,atomicMass:101.905608,abundance:1.02,stable:true,nuclearSpin:0},{A:104,atomicMass:103.904035,abundance:11.14,stable:true,nuclearSpin:0},{A:105,atomicMass:104.905084,abundance:22.33,stable:true,nuclearSpin:2.5},{A:106,atomicMass:105.903483,abundance:27.33,stable:true,nuclearSpin:0},{A:108,atomicMass:107.903892,abundance:26.46,stable:true,nuclearSpin:0},{A:110,atomicMass:109.905153,abundance:11.72,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Cd:[{A:106,atomicMass:105.906459,abundance:1.25,stable:true,nuclearSpin:0},{A:108,atomicMass:107.904184,abundance:0.89,stable:true,nuclearSpin:0},{A:110,atomicMass:109.903005,abundance:12.49,stable:true,nuclearSpin:0},{A:111,atomicMass:110.904182,abundance:12.8,stable:true,nuclearSpin:0.5},{A:112,atomicMass:111.902757,abundance:24.13,stable:true,nuclearSpin:0},{A:113,atomicMass:112.904401,abundance:12.22,stable:true,nuclearSpin:0.5},{A:114,atomicMass:113.903358,abundance:28.73,stable:true,nuclearSpin:0},{A:116,atomicMass:115.904756,abundance:7.49,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  In:[{A:113,atomicMass:112.904058,abundance:4.29,stable:true,nuclearSpin:4.5},{A:115,atomicMass:114.903878,abundance:95.71,stable:true,nuclearSpin:4.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Sn:[{A:112,atomicMass:111.904822,abundance:0.97,stable:true,nuclearSpin:0},{A:114,atomicMass:113.902779,abundance:0.66,stable:true,nuclearSpin:0},{A:115,atomicMass:114.903342,abundance:0.34,stable:true,nuclearSpin:0.5},{A:116,atomicMass:115.901744,abundance:14.54,stable:true,nuclearSpin:0},{A:117,atomicMass:116.902954,abundance:7.68,stable:true,nuclearSpin:1.5},{A:118,atomicMass:117.901606,abundance:24.22,stable:true,nuclearSpin:0},{A:119,atomicMass:118.903309,abundance:8.59,stable:true,nuclearSpin:0.5},{A:120,atomicMass:119.902197,abundance:32.58,stable:true,nuclearSpin:0},{A:122,atomicMass:121.903440,abundance:4.63,stable:true,nuclearSpin:0},{A:124,atomicMass:123.905274,abundance:5.79,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Sb:[{A:121,atomicMass:120.903818,abundance:57.21,stable:true,nuclearSpin:2.5},{A:123,atomicMass:122.904216,abundance:42.79,stable:true,nuclearSpin:3.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Te:[{A:120,atomicMass:119.904020,abundance:0.09,stable:true,nuclearSpin:0},{A:122,atomicMass:121.903047,abundance:2.55,stable:true,nuclearSpin:0},{A:123,atomicMass:122.904273,abundance:0.89,stable:true,nuclearSpin:1.5},{A:124,atomicMass:123.902819,abundance:4.74,stable:true,nuclearSpin:0},{A:125,atomicMass:124.904430,abundance:7.07,stable:true,nuclearSpin:1.5},{A:126,atomicMass:125.903312,abundance:18.84,stable:true,nuclearSpin:0},{A:128,atomicMass:127.904463,abundance:31.74,stable:true,nuclearSpin:0},{A:130,atomicMass:129.906224,abundance:34.08,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Xe:[{A:124,atomicMass:123.905893,abundance:0.095,stable:true,nuclearSpin:0},{A:126,atomicMass:125.904269,abundance:0.089,stable:true,nuclearSpin:0},{A:128,atomicMass:127.903530,abundance:1.91,stable:true,nuclearSpin:0},{A:129,atomicMass:128.904779,abundance:26.4,stable:true,nuclearSpin:0.5},{A:130,atomicMass:129.903508,abundance:4.07,stable:true,nuclearSpin:0},{A:131,atomicMass:130.905082,abundance:21.23,stable:true,nuclearSpin:1.5},{A:132,atomicMass:131.904153,abundance:26.91,stable:true,nuclearSpin:0},{A:134,atomicMass:133.905395,abundance:10.44,stable:true,nuclearSpin:0},{A:136,atomicMass:135.907220,abundance:8.86,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  La:[{A:138,atomicMass:137.907110,abundance:0.09,stable:true,nuclearSpin:5},{A:139,atomicMass:138.906348,abundance:99.91,stable:true,nuclearSpin:7/2,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Ce:[{A:140,atomicMass:139.905442,abundance:88.48,stable:true,nuclearSpin:0},{A:142,atomicMass:141.909249,abundance:11.08,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Pr:[{A:141,atomicMass:140.907657,abundance:100,stable:true,nuclearSpin:2.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Nd:[{A:142,atomicMass:141.907731,abundance:27.2,stable:true,nuclearSpin:0},{A:143,atomicMass:142.909817,abundance:12.2,stable:true,nuclearSpin:3.5},{A:144,atomicMass:143.910087,abundance:23.8,stable:true,nuclearSpin:0},{A:145,atomicMass:144.912569,abundance:8.3,stable:true,nuclearSpin:3.5},{A:146,atomicMass:145.913116,abundance:17.2,stable:true,nuclearSpin:0},{A:148,atomicMass:147.916891,abundance:5.7,stable:true,nuclearSpin:0},{A:150,atomicMass:149.920892,abundance:5.6,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Sm:[{A:144,atomicMass:143.911999,abundance:3.1,stable:true,nuclearSpin:0},{A:147,atomicMass:146.914904,abundance:14.99,stable:true,nuclearSpin:3.5},{A:148,atomicMass:147.914822,abundance:11.24,stable:true,nuclearSpin:0},{A:149,atomicMass:148.917184,abundance:13.82,stable:true,nuclearSpin:3.5},{A:150,atomicMass:149.917275,abundance:7.38,stable:true,nuclearSpin:0},{A:152,atomicMass:151.919741,abundance:26.75,stable:true,nuclearSpin:0},{A:154,atomicMass:153.922209,abundance:22.75,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Eu:[{A:151,atomicMass:150.919850,abundance:47.8,stable:true,nuclearSpin:2.5},{A:153,atomicMass:152.921230,abundance:52.2,stable:true,nuclearSpin:2.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Gd:[{A:152,atomicMass:151.919789,abundance:0.20,stable:true,nuclearSpin:0},{A:154,atomicMass:153.920874,abundance:2.18,stable:true,nuclearSpin:0},{A:155,atomicMass:154.922630,abundance:14.8,stable:true,nuclearSpin:1.5},{A:156,atomicMass:155.922125,abundance:20.47,stable:true,nuclearSpin:0},{A:157,atomicMass:156.923967,abundance:15.65,stable:true,nuclearSpin:1.5},{A:158,atomicMass:157.924410,abundance:24.84,stable:true,nuclearSpin:0},{A:160,atomicMass:159.927054,abundance:21.86,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Tb:[{A:159,atomicMass:158.925350,abundance:100,stable:true,nuclearSpin:1.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Dy:[{A:156,atomicMass:155.924282,abundance:0.056,stable:true,nuclearSpin:0},{A:158,atomicMass:157.924409,abundance:0.095,stable:true,nuclearSpin:0},{A:160,atomicMass:159.925197,abundance:2.329,stable:true,nuclearSpin:0},{A:161,atomicMass:160.926933,abundance:18.889,stable:true,nuclearSpin:2.5},{A:162,atomicMass:161.926798,abundance:25.475,stable:true,nuclearSpin:0},{A:163,atomicMass:162.928731,abundance:24.896,stable:true,nuclearSpin:3.5},{A:164,atomicMass:163.929175,abundance:28.260,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Ho:[{A:165,atomicMass:164.930330,abundance:100,stable:true,nuclearSpin:3.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Er:[{A:162,atomicMass:161.928787,abundance:0.139,stable:true,nuclearSpin:0},{A:164,atomicMass:163.929175,abundance:1.601,stable:true,nuclearSpin:0},{A:166,atomicMass:165.930293,abundance:33.503,stable:true,nuclearSpin:0},{A:167,atomicMass:166.932048,abundance:22.869,stable:true,nuclearSpin:3.5},{A:168,atomicMass:167.932370,abundance:26.978,stable:true,nuclearSpin:0},{A:170,atomicMass:169.935460,abundance:14.910,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Tm:[{A:169,atomicMass:168.934218,abundance:100,stable:true,nuclearSpin:0.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Yb:[{A:168,atomicMass:167.933897,abundance:0.13,stable:true,nuclearSpin:0},{A:170,atomicMass:169.934761,abundance:3.04,stable:true,nuclearSpin:0},{A:171,atomicMass:170.936325,abundance:14.28,stable:true,nuclearSpin:0.5},{A:172,atomicMass:171.936378,abundance:21.83,stable:true,nuclearSpin:0},{A:173,atomicMass:172.938210,abundance:16.13,stable:true,nuclearSpin:2.5},{A:174,atomicMass:173.938861,abundance:31.83,stable:true,nuclearSpin:0},{A:176,atomicMass:175.942571,abundance:12.76,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Lu:[{A:175,atomicMass:174.940771,abundance:97.41,stable:true,nuclearSpin:7/2},{A:176,atomicMass:175.942694,abundance:2.59,stable:true,nuclearSpin:7,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Hf:[{A:174,atomicMass:173.940046,abundance:0.16,stable:true,nuclearSpin:0},{A:176,atomicMass:175.941408,abundance:5.26,stable:true,nuclearSpin:0},{A:177,atomicMass:176.943221,abundance:18.6,stable:true,nuclearSpin:3.5},{A:178,atomicMass:177.943698,abundance:27.28,stable:true,nuclearSpin:0},{A:179,atomicMass:178.945816,abundance:13.62,stable:true,nuclearSpin:2.5},{A:180,atomicMass:179.946550,abundance:35.08,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Ta:[{A:181,atomicMass:180.947882,abundance:99.988,stable:true,nuclearSpin:3.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  W:[{A:180,atomicMass:179.946704,abundance:0.12,stable:true,nuclearSpin:0},{A:182,atomicMass:181.948206,abundance:26.5,stable:true,nuclearSpin:0},{A:183,atomicMass:182.950224,abundance:14.31,stable:true,nuclearSpin:0.5},{A:184,atomicMass:183.950931,abundance:30.64,stable:true,nuclearSpin:0},{A:186,atomicMass:185.954364,abundance:28.43,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Re:[{A:185,atomicMass:184.952956,abundance:37.4,stable:true,nuclearSpin:2.5},{A:187,atomicMass:186.955751,abundance:62.6,stable:true,nuclearSpin:2.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Os:[{A:184,atomicMass:183.952489,abundance:0.02,stable:true,nuclearSpin:0},{A:186,atomicMass:185.953838,abundance:1.59,stable:true,nuclearSpin:0},{A:187,atomicMass:186.955751,abundance:1.96,stable:true,nuclearSpin:1.5},{A:188,atomicMass:187.955750,abundance:13.24,stable:true,nuclearSpin:0},{A:189,atomicMass:188.958147,abundance:16.15,stable:true,nuclearSpin:1.5},{A:190,atomicMass:189.958447,abundance:26.26,stable:true,nuclearSpin:0},{A:192,atomicMass:191.961481,abundance:40.78,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Ir:[{A:191,atomicMass:190.960594,abundance:37.3,stable:true,nuclearSpin:1.5},{A:193,atomicMass:192.962924,abundance:62.7,stable:true,nuclearSpin:1.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Pt:[{A:194,atomicMass:193.962664,abundance:32.9,stable:true,nuclearSpin:0},{A:195,atomicMass:194.964774,abundance:33.8,stable:true,nuclearSpin:0.5},{A:196,atomicMass:195.964935,abundance:25.3,stable:true,nuclearSpin:0},{A:198,atomicMass:197.967876,abundance:7.2,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Au:[{A:197,atomicMass:196.966569,abundance:100,stable:true,nuclearSpin:1.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Hg:[{A:196,atomicMass:195.965833,abundance:0.15,stable:true,nuclearSpin:0},{A:198,atomicMass:197.966769,abundance:9.97,stable:true,nuclearSpin:0},{A:199,atomicMass:198.968280,abundance:16.87,stable:true,nuclearSpin:0.5},{A:200,atomicMass:199.968326,abundance:23.10,stable:true,nuclearSpin:0},{A:201,atomicMass:200.970293,abundance:13.18,stable:true,nuclearSpin:1.5},{A:202,atomicMass:201.970643,abundance:29.86,stable:true,nuclearSpin:0},{A:204,atomicMass:203.973494,abundance:6.87,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Tl:[{A:203,atomicMass:202.972344,abundance:29.52,stable:true,nuclearSpin:0.5},{A:205,atomicMass:204.974410,abundance:70.48,stable:true,nuclearSpin:0.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Bi:[{A:209,atomicMass:208.980399,abundance:100,stable:true,nuclearSpin:4.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Th:[{A:232,atomicMass:232.038055,abundance:100,stable:true,nuclearSpin:0,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}],
+  Pa:[{A:231,atomicMass:231.035884,abundance:100,stable:true,nuclearSpin:3.5,source:'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana'}]
+};
+Object.entries(fallbackFeed).forEach(([sym, rows]) => {
+  const list = Array.isArray(D.ISOTOPES[sym]) ? D.ISOTOPES[sym] : [];
+  const seen = new Set(list.map(x => Number(x.A)));
+  rows.forEach(item => {
+    const A = Number(item.A);
+    if (!seen.has(A)) {
+      list.push({ ...item, source: item.source || 'LOCAL_EDUCATIONAL_FALLBACK; nie kanoniczne; weryfikacja CIAAW/NIST wymagana' });
+      seen.add(A);
+    }
+  });
+  if (list.length) D.ISOTOPES[sym] = list;
+});
+C.deepFreeze(D.ISOTOPES);
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 8]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DATA = C.DATA || {};
+D.ATOMIC_SPECTRA = {
+  H:{
+    series:['Lyman','Balmer','Paschen','Brackett','Pfund'],
+    lines:[
+      {series:'Lyman',n1:1,n2:2,wavelength:121.567,energy:10.20,region:'UV'},
+      {series:'Lyman',n1:1,n2:3,wavelength:102.572,energy:12.09,region:'UV'},
+      {series:'Lyman',n1:1,n2:4,wavelength:97.254,energy:12.75,region:'UV'},
+      {series:'Balmer',n1:2,n2:3,wavelength:656.28,energy:1.89,region:'visible',color:'czerwony'},
+      {series:'Balmer',n1:2,n2:4,wavelength:486.13,energy:2.55,region:'visible',color:'niebieskozielony'},
+      {series:'Balmer',n1:2,n2:5,wavelength:434.05,energy:2.86,region:'visible',color:'niebieski'},
+      {series:'Balmer',n1:2,n2:6,wavelength:410.17,energy:3.03,region:'visible',color:'fioletowy'},
+      {series:'Balmer',n1:2,n2:7,wavelength:397.00,energy:3.12,region:'near-UV',color:'fioletowy'},
+      {series:'Paschen',n1:3,n2:4,wavelength:1875.1,energy:0.66,region:'IR'},
+      {series:'Paschen',n1:3,n2:5,wavelength:1281.8,energy:0.97,region:'IR'},
+      {series:'Brackett',n1:4,n2:5,wavelength:4051.2,energy:0.31,region:'IR'},
+      {series:'Pfund',n1:5,n2:6,wavelength:7460,energy:0.17,region:'IR'}
+    ]
+  },
+  He:{
+    lines:[
+      {wavelength:587.6,color:'żółty',transition:'3d→2p',intensity:1.0},
+      {wavelength:501.6,color:'zielony',transition:'3p→2s',intensity:0.5},
+      {wavelength:471.3,color:'niebieski',transition:'4s→2p',intensity:0.3},
+      {wavelength:667.8,color:'czerwony',transition:'3d→2p',intensity:0.8}
+    ]
+  },
+  Na:{
+    lines:[
+      {wavelength:589.00,color:'żółty',transition:'3p→3s',intensity:1.0},
+      {wavelength:589.59,color:'żółty',transition:'3p→3s',intensity:1.0},
+      {wavelength:818.3,color:'bliskie IR',transition:'3d→3p',intensity:0.4}
+    ]
+  },
+  Li:{
+    lines:[
+      {wavelength:670.8,color:'czerwony',transition:'2p→2s',intensity:1.0},
+      {wavelength:610.4,color:'pomarańczowy',transition:'3d→2p',intensity:0.3}
+    ]
+  },
+  Hg:{
+    lines:[
+      {wavelength:253.65,color:'UV',transition:'6p→6s',intensity:1.0},
+      {wavelength:404.66,color:'fioletowy',transition:'7s→6p',intensity:0.5},
+      {wavelength:435.83,color:'niebieski',transition:'7s→6p',intensity:0.7},
+      {wavelength:546.07,color:'zielony',transition:'7p→6d',intensity:1.0},
+      {wavelength:578.97,color:'żółty',transition:'6d→6p',intensity:0.8}
+    ]
+  },
+  RYDBERG:{ constant:1.0973731568160e7, unit:'1/m', note:'stała Rydberga dla wodoru' }
+};
+C.deepFreeze(D.ATOMIC_SPECTRA);
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 9]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const finite = x => Number.isFinite(Number(x));
+const positive = x => finite(x) && Number(x) > 0;
+const KW = () => Number(C.DATA?.MODEL_LIMITS?.waterKw) || 1e-14;
+function pHFromH(H){ return positive(H) ? -Math.log10(Number(H)) : NaN; }
+function HFromPH(pH){ return finite(pH) ? Math.pow(10, -Number(pH)) : NaN; }
+function solveMonotonic(fn, lo, hi, it){
+  it = it || 90;
+  let flo = fn(lo), fhi = fn(hi);
+  if(!Number.isFinite(flo) || !Number.isFinite(fhi) || flo*fhi > 0) return NaN;
+  for(let i=0;i<it;i++){ const m=(lo+hi)/2, fm=fn(m); if(!Number.isFinite(fm)) return NaN; if(fm>0) hi=m; else lo=m; }
+  return (lo+hi)/2;
+}
+function weakAcid(Cc, Ka){
+  Cc=Number(Cc); Ka=Number(Ka);
+  if(!positive(Cc) || !positive(Ka)) return {H:NaN,OH:NaN,alpha:NaN,pH:NaN};
+  const Kw=KW(); const f=H=>H-Kw/H-Cc*Ka/(Ka+H);
+  const H=solveMonotonic(f, Math.max(1e-14,Math.min(1e-12,Cc*Ka*1e-6)), Math.max(1,Cc+Ka));
+  const A=Cc*Ka/(Ka+H), OH=Kw/H;
+  return {H,OH,alpha:A/Cc,pH:pHFromH(H)};
+}
+function strongAcid(Cc){
+  Cc=Number(Cc); if(!positive(Cc)) return {H:NaN,OH:NaN,pH:NaN};
+  const Kw=KW(); const H=(Cc+Math.sqrt(Cc*Cc+4*Kw))/2;
+  return {H,OH:Kw/H,alpha:1,pH:pHFromH(H)};
+}
+function strongBase(Cc){
+  Cc=Number(Cc); if(!positive(Cc)) return {OH:NaN,H:NaN,pOH:NaN,pH:NaN};
+  const Kw=KW(); const OH=(Cc+Math.sqrt(Cc*Cc+4*Kw))/2, H=Kw/OH;
+  return {OH,H,pOH:-Math.log10(OH),pH:pHFromH(H)};
+}
+function bufferPH(pKa, base, acid){
+  pKa=Number(pKa); base=Number(base); acid=Number(acid);
+  return finite(pKa)&&positive(base)&&positive(acid)?pKa+Math.log10(base/acid):NaN;
+}
+function polyproticFractions(pH, Kas){
+  const H=HFromPH(pH); const ks=(Kas||[]).map(Number);
+  if(!positive(H)||!ks.length||ks.some(k=>!positive(k))) return [];
+  const logs=[ks.length*Math.log(H)]; let l=logs[0];
+  for(let i=0;i<ks.length;i++){ l=l+Math.log(ks[i])-Math.log(H); logs.push(l); }
+  const mx=Math.max(...logs); const w=logs.map(x=>Math.exp(x-mx));
+  const sum=w.reduce((a,b)=>a+b,0);
+  return w.map(x=>x/sum);
+}
+const SUB={'₀':'0','₁':'1','₂':'2','₃':'3','₄':'4','₅':'5','₆':'6','₇':'7','₈':'8','₉':'9'};
+const SUP={'⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9'};
+function normalizeFormula(f){
+  return String(f||'').replace(/[₀₁₂₃₄₅₆₇₈₉]/g,m=>SUB[m]).replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g,m=>SUP[m])
+    .replace(/[⁺]/g,'+').replace(/[⁻]/g,'-').replace(/\s+/g,'');
+}
+function stripCharge(formula){
+  const s=normalizeFormula(formula).trim();
+  if(!s) return '';
+  if(/\^\d*[+-]$/.test(s)) return s.replace(/\^\d*[+-]$/, '');
+  if(/[+-]$/.test(s)) return s.replace(/[+-]$/, '');
+  return s;
+}
+function parseCharge(formula){
+  const s=normalizeFormula(formula).trim();
+  if(!s) return 0;
+  const explicit = s.match(/\^(\d*)([+-])$/);
+  if(explicit) return (explicit[2]==='-'?-1:1) * Number(explicit[1] || 1);
+  if(/[+-]$/.test(s)) return s.endsWith('-') ? -1 : 1;
+  return 0;
+}
+function parseFormula(formula){
+  let src=stripCharge(formula);
+  if(!src) return null;
+  const merge=(to,from,mult)=>{ mult=mult||1; for(const k in from) to[k]=(to[k]||0)+from[k]*mult; };
+  function parseSegment(seg){
+    let i=0;
+    function group(stop){
+      const out={};
+      while(i<seg.length && seg[i]!==stop){
+        const ch=seg[i];
+        if(ch==='('||ch==='['){
+          const close=ch==='('?')':']';
+          i++;
+          const inner=group(close);
+          if(seg[i]!==close) return null;
+          i++;
+          const m=(seg.slice(i).match(/^\d+/)||['1'])[0];
+          i+=m.length; merge(out,inner,Number(m));
+        } else {
+          const m=seg.slice(i).match(/^([A-Z][a-z]?)(\d*)/);
+          if(!m) return null;
+          out[m[1]]=(out[m[1]]||0)+(m[2]?Number(m[2]):1);
+          i+=m[0].length;
+        }
+      }
+      return out;
+    }
+    const lead=(seg.match(/^\d+/)||[''])[0]; i=lead.length;
+    const out=group('');
+    if(i!==seg.length||!out||!Object.keys(out).length) return null;
+    if(lead) for(const k in out) out[k]*=Number(lead);
+    return out;
+  }
+  const parts=src.split(/[·.]/).filter(Boolean); const total={};
+  for(const part of parts){ const parsed=parseSegment(part); if(!parsed) return null; merge(total,parsed); }
+  return Object.keys(total).length?total:null;
+}
+function molarMass(formula){
+  const f=parseFormula(formula); const M=C.DATA?.ATOMIC_MASS||{};
+  if(!f) return NaN;
+  let sum=0;
+  for(const k in f){ if(!M[k]) return NaN; sum+=M[k]*f[k]; }
+  return sum;
+}
+function balanceReaction(rx){
+  const totals=(side)=>{ side=side||[]; return side.reduce((acc,item)=>{
+    const f=parseFormula(item.formula), c=Number(item.coef)||1;
+    if(!f||c<=0) return null;
+    for(const k in f) acc[k]=(acc[k]||0)+f[k]*c;
+    return acc;
+  },{}); };
+  const a=totals(rx?.reactants), b=totals(rx?.products);
+  if(!a||!b) return {ok:false,atoms:false,charge:false,reason:'niepoprawny wzór lub współczynnik'};
+  const keys=new Set([...Object.keys(a),...Object.keys(b)]);
+  const atoms=[...keys].filter(k=>a[k]!==b[k]);
+  const inferred=(side)=>(side||[]).reduce((q,x)=>q+(Number(x.coef)||1)*parseCharge(x.formula),0);
+  const chargeA=rx?.charges?.reactants ?? inferred(rx?.reactants);
+  const chargeB=rx?.charges?.products ?? inferred(rx?.products);
+  const charge = Number.isFinite(chargeA) && Number.isFinite(chargeB) && chargeA===chargeB;
+  return {ok:atoms.length===0&&charge,atoms:atoms.length===0,charge,unbalanced:atoms,reactants:a,products:b,chargeReactants:chargeA,chargeProducts:chargeB};
+}
+C.CHEM = { version:'2.17', pHFromH, HFromPH, weakAcid, strongAcid, strongBase, bufferPH,
+  polyproticFractions, parseCharge, normalizeFormula, parseFormula, molarMass, balanceReaction };
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 10]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const clone = o => { try { return JSON.parse(JSON.stringify(o)); } catch(_) { return o; } };
+const orbitals = [['1s',2],['2s',2],['2p',6],['3s',2],['3p',6],['4s',2],['3d',10],['4p',6],['5s',2],['4d',10],['5p',6]];
+function atom(symbol, charge){
+  charge = Number(charge)||0;
+  const m = C.DATA?.ATOM_META?.[symbol] || {};
+  return {
+    symbol,
+    Z: m.Z || 0,
+    mass: m.mass ?? null,
+    massNumber: m.massNumber ?? null,
+    neutrons: m.neutrons ?? null,
+    electrons: Math.max(0, (m.Z||0) - charge),
+    shells: m.shells || [],
+    subshells: electronConfiguration(symbol, charge),
+    valence: m.valence ?? ({H:1,C:4,N:5,O:6,F:7,P:5,S:6,Cl:7,Br:7,I:7,Na:1,K:1,Li:1,Mg:2,Ca:2,Zn:2,Al:3,Si:4}[symbol] ?? null),
+    charge
+  };
+}
+function electronConfiguration(symbol, charge){
+  charge = Number(charge)||0;
+  const meta = C.DATA?.ATOM_META?.[symbol];
+  if(charge === 0 && meta?.subshells) return clone(meta.subshells);
+  const neutral = meta?.subshells ? clone(meta.subshells) : (()=>{
+    let left = Number(meta?.Z || 0), out = {};
+    orbitals.forEach(([name,cap])=>{ if(left<=0) return; const n = Math.min(cap,left); if(n) out[name]=n; left -= n; });
+    return out;
+  })();
+  if(!charge) return neutral;
+  if(charge < 0){
+    let add = -charge;
+    for(const [name,cap] of orbitals){
+      if(add<=0) break;
+      const have = Number(neutral[name]||0), room = cap - have;
+      if(room > 0){ const n = Math.min(room, add); neutral[name] = have + n; add -= n; }
+    }
+    return neutral;
+  }
+  let remove = charge;
+  const order = Object.keys(neutral).sort((a,b)=>{
+    const pa = /^(\d+)([spdf])$/.exec(a), pb = /^(\d+)([spdf])$/.exec(b);
+    const l = {s:0,p:1,d:2,f:3};
+    return (Number(pb?.[1]||0) - Number(pa?.[1]||0)) || (l[pb?.[2]||'s'] - l[pa?.[2]||'s']);
+  });
+  for(const name of order){
+    if(remove<=0) break;
+    const have = Number(neutral[name]||0);
+    const n = Math.min(have, remove);
+    if(n){ neutral[name] = have - n; remove -= n; }
+  }
+  Object.keys(neutral).forEach(k=>{ if(!neutral[k]) delete neutral[k]; });
+  return neutral;
+}
+function orbitalSummary(symbol, charge){
+  const cfg = electronConfiguration(symbol, charge);
+  return Object.entries(cfg).map(([o,n])=>`${o}${n}`).join(' ');
+}
+function lonePairsForAtom(m, a){
+  const v = Number(a.valence);
+  if(!Number.isFinite(v)) return null;
+  const bonds = m.bondOrderSum?.[a.id] || 0;
+  const explicit = Number.isFinite(Number(a.formalCharge)) ? Number(a.formalCharge) : (Number.isFinite(Number(a.charge)) ? Number(a.charge) : 0);
+  let q = explicit;
+  if(q===0 && Number(m?.charge||0)!==0 && a.element!=='H'){
+    const carrier=(m.atoms||[]).filter(x=>x.element!=='H').sort((u,z)=>({N:5,O:5,S:4,P:4,C:3,Cl:2,Br:2,I:2,F:2}[z.element]||1)-({N:5,O:5,S:4,P:4,C:3,Cl:2,Br:2,I:2,F:2}[u.element]||1))[0];
+    if(carrier && String(carrier.id)===String(a.id)) q=Number(m.charge);
+  }
+  return Math.max(0, Math.round((v - q - bonds)/2));
+}
+function angleBetween(a,b,c){
+  const u = [a.x-b.x, a.y-b.y, a.z-b.z], v = [c.x-b.x, c.y-b.y, c.z-b.z];
+  const nu = Math.hypot(...u), nv = Math.hypot(...v);
+  if(!nu || !nv) return NaN;
+  const cos = Math.max(-1, Math.min(1, (u[0]*v[0]+u[1]*v[1]+u[2]*v[2])/(nu*nv)));
+  return Math.acos(cos) * 180/Math.PI;
+}
+function derivedAngles(m){
+  const out = [];
+  const by = new Map();
+  m.bonds.forEach(b=>{
+    const a=b.atomA, z=b.atomB;
+    if(!by.has(a)) by.set(a, []);
+    if(!by.has(z)) by.set(z, []);
+    by.get(a).push(z);
+    by.get(z).push(a);
+  });
+  const atomsById=new Map((m.atoms||[]).map(a=>[String(a.id),a]));
+  by.forEach((neighbors, center)=>{
+    for(let i=0;i<neighbors.length;i++)
+      for(let j=i+1;j<neighbors.length;j++){
+        const A=atomsById.get(String(neighbors[i])), B=atomsById.get(String(center)), Z=atomsById.get(String(neighbors[j]));
+        if(!A||!B||!Z) continue;
+        const deg = angleBetween(A, B, Z);
+        if(Number.isFinite(deg)) out.push({atoms:[neighbors[i],center,neighbors[j]], deg: Math.round(deg*10)/10});
+      }
+  });
+  return out;
+}
+function bondLabel(order){ return ({1:'pojedyncze',2:'podwójne',3:'potrójne'})[Number(order)] || 'inne'; }
+function formulaFromAtoms(atoms){
+  const c = {};
+  atoms.forEach(a=>{ c[a.element] = (c[a.element]||0)+1; });
+  const keys = Object.keys(c).sort((a,b)=>{
+    if(a==='C') return -1; if(b==='C') return 1;
+    if(a==='H') return -1; if(b==='H') return 1;
+    return a.localeCompare(b);
+  });
+  return keys.map(e=>e + (c[e]===1?'':c[e])).join('');
+}
+function centralAtom(m){
+  if(!m?.atoms?.length) return null;
+  return m.atoms.reduce((best, a)=>{
+    const degree = (m.bonds||[]).filter(b=> b.a===a.id || b.b===a.id).length;
+    const score = degree*10 - (a.element==='H'?5:0);
+    if(!best || score > best.score) return {atom:a, score};
+    return best;
+  }, null)?.atom || null;
+}
+function electronDomains(m, centerId){
+  const a = m?.atoms?.find(x=>x.id === centerId);
+  if(!a) return null;
+  const bonds = (m.bonds||[]).filter(b=> b.a===centerId || b.b===centerId).length;
+  const bondOrders = m.bondOrderSum?.[centerId] || 0;
+  const lp = Number.isFinite(a.lonePairs) ? a.lonePairs : 0;
+  return { center:centerId, bonds, bondOrders, lonePairs:lp, domains: bonds+lp };
+}
+function inferGeometry(m){
+  const c = centralAtom(m);
+  if(!c) return 'nieokreślona';
+  const d = electronDomains(m, c.id);
+  if(!d) return 'nieokreślona';
+  if(d.domains === 2) return 'liniowa';
+  if(d.domains === 3) return d.lonePairs === 1 ? 'kątowa' : 'trygonalna płaska';
+  if(d.domains === 4){
+    if(d.bonds === 2 && d.lonePairs === 2) return 'kątowa';
+    if(d.bonds === 3 && d.lonePairs === 1) return 'piramidalna';
+    return 'tetraedryczna';
+  }
+  if(d.domains === 5) return 'trygonalna bipiramidalna';
+  if(d.domains === 6) return 'oktaedryczna';
+  return 'modelowo nieustalona';
+}
+function get(id){
+  const m = C.DATA?.MOLECULES?.[id];
+  if(!m) return null;
+  const r = clone(m);
+  r.atoms = r.atoms.map(a => ({...a, ...atom(a.element, 0)}));
+  r.bondOrderSum = {};
+  r.atoms.forEach(a=> r.bondOrderSum[a.id] = 0);
+  r.bonds = r.bonds.map(b => ({ a:b.a, b:b.b, order: Number(b.order)||1, label: bondLabel(b.order) }));
+  r.bonds.forEach(b => {
+    r.bondOrderSum[b.a] = (r.bondOrderSum[b.a]||0) + b.order;
+    r.bondOrderSum[b.b] = (r.bondOrderSum[b.b]||0) + b.order;
+  });
+  r.atoms.forEach(a => a.lonePairs = lonePairsForAtom(r, a));
+  const derived = derivedAngles(r);
+  const supplied = Array.isArray(r.angles) ? r.angles : [];
+  const keyOf = a => Array.isArray(a?.atoms) ? a.atoms.join('-') : '';
+  const merged = []; const seen = new Set();
+  [...supplied, ...derived].forEach(a=>{
+    const k = keyOf(a);
+    if(k && !seen.has(k)){ seen.add(k); merged.push({atoms:[...a.atoms], deg: Number(a.deg)}); }
+  });
+  r.angles = merged;
+  r.formula = formulaFromAtoms(r.atoms);
+  r.totalElectrons = r.atoms.reduce((s,a)=> s + a.electrons, 0) - Number(r.charge||0);
+  r.geometry = r.geometry || inferGeometry(r);
+  r.bondSummary = r.bonds.map(b => `${r.atoms[b.a].element}–${r.atoms[b.b].element}: ${bondLabel(b.order)}`);
+  return r;
+}
+function canonical(id){ return get(id); }
+function list(){ return Object.keys(C.DATA?.MOLECULES||{}).map(get).filter(Boolean); }
+function valenceElectrons(id){
+  const m = get(id);
+  if(!m) return NaN;
+  const atomVE = m.atoms.reduce((s,a)=> s + Number(a.valence||0), 0);
+  const charge = Number(m.charge||0);
+  return atomVE - charge;
+}
+function geometry(id){ return get(id)?.geometry || 'nieokreślona'; }
+function formula(id){ return get(id)?.formula || ''; }
+function geometrySummary(id){
+  const m = get(id);
+  if(!m) return null;
+  const centers = {};
+  (m.atoms||[]).forEach(a=>{ const d = electronDomains(m, a.id); if(d && d.domains > 1) centers[a.id] = d; });
+  return { id, formula: m.formula, geometry: m.geometry, angles: m.angles, centers };
+}
+function lewisData(id){
+  const m = get(id);
+  if(!m) return null;
+  return {
+    formula: m.formula,
+    totalElectrons: m.totalElectrons,
+    atoms: m.atoms.map(a=>({id:a.id,element:a.element,valence:a.valence,lonePairs:a.lonePairs,bondOrderSum:m.bondOrderSum[a.id]})),
+    bonds: m.bonds.map(b=>({a:b.a,b:b.b,order:b.order,label:bondLabel(b.order)}))
+  };
+}
+function atomCard(id, atomId){
+  const m = get(id);
+  if(!m) return null;
+  const a = m.atoms.find(x=>x.id === atomId);
+  if(!a) return null;
+  return {...a, orbitalSummary: orbitalSummary(a.element, a.charge), electronConfiguration: electronConfiguration(a.element, a.charge), domain: electronDomains(m, atomId)};
+}
+function validate(id){
+  const m = canonical(id);
+  if(!m) return { id, ok:false, errors:['brak modelu'] };
+  const errors = [];
+  if(!m.atoms.length) errors.push('brak atomów');
+  m.bonds.forEach(b=>{
+    if(!m.atoms[b.a] || !m.atoms[b.b]) errors.push('wiązanie wskazuje nieistniejący atom');
+    if(![1,2,3].includes(Number(b.order))) errors.push('nieznany rząd wiązania');
+  });
+  m.atoms.forEach(a=>{ if(!C.DATA?.ATOM_META?.[a.element]) errors.push('brak ATOM_META: '+a.element); });
+  return { id, ok:errors.length===0, errors, formula:m.formula, geometry:m.geometry, angles:m.angles.length, bonds:m.bonds.length };
+}
+function auditAll(){
+  const ids = Object.keys(C.DATA?.MOLECULES || {});
+  const rows = ids.map(validate);
+  return { count:rows.length, ok:rows.filter(x=>x.ok).length, bad:rows.filter(x=>!x.ok), rows };
+}

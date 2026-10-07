@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Chemia N02 — Wodorotlenki i zasady (v9.0 MASTER LAB)</title>
+<style id="che-lesson-viz-ref-style">.che-lesson-viz-ref{margin:14px 0}.che-lesson-viz-ref button{display:flex;flex-direction:column;gap:4px;width:100%;padding:12px 14px;text-align:left;border:1px solid #cfd8e3;border-radius:12px;background:#f7f9fc;color:#182231;cursor:pointer}.che-lesson-viz-ref button:hover{border-color:#6b86a5;box-shadow:0 3px 12px rgba(20,40,70,.08)}.che-lesson-viz-ref b{font-size:14px}.che-lesson-viz-ref span{font-size:12px;color:#5b6675}</style><style id="kw-v15-style">details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}</style><style id="n02-style">.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}.mnemonic b{color:#78350f;}.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}.card-core .card-label{background:rgba(13,104,104,0.12);}.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}details.answer summary::-webkit-details-marker{display:none;}details.answer summary::marker{content:'';}details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}details.answer[open] summary::before{transform:rotate(90deg);}details.answer[open] summary{color:var(--accent);}details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}.table-wrap.table-compact th{font-size:10px;}.klinika-table td{font-size:12.5px;line-height:1.45;}@media(min-width:600px){.klinika-table td{font-size:13.5px;}}.table-wrap tr:last-child td{border-bottom:none;}.table-wrap tr:hover td{background:var(--accent-soft);}.table-wrap .error-row{background:var(--c-error-bg);}.table-wrap .error-row:hover td{background:#f7dade;}.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}.minimum-card h3::before{content:'★';font-size:16px;}.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}.minimum-card li:last-child{margin-bottom:0;}.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}.level-new{background:var(--c-new-bg);color:var(--c-new);}.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}.rule-box b{color:var(--c-understand);}.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}.footer p{margin-bottom:4px;}.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}@media(min-width:768px){.widget h4{font-size:16px;}}.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}.jonowe-box{background:var(--c-extra-bg);border:2px solid var(--c-extra-line);border-radius:var(--r-md);padding:16px 18px;margin:14px 0;}.jonowe-box .jb-level{display:inline-block;background:var(--c-extra);color:#fff;padding:3px 12px;border-radius:12px;font-size:10px;text-transform:uppercase;font-weight:800;letter-spacing:0.7px;margin-bottom:10px;}.jonowe-box .jb-eq{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--c-extra);padding:6px 0;font-size:13px;letter-spacing:0.3px;overflow-x:auto;}.jonowe-box .jb-label{font-size:11px;font-weight:800;color:var(--c-extra);text-transform:uppercase;letter-spacing:0.5px;margin-top:10px;}.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}.checklist ul{list-style:none;padding-left:0;margin:0;}.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}.checklist li:last-child{border-bottom:none;}.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}.core-path .cp-title::before{content:'▶';font-size:12px;}.core-path ol{margin:0;padding-left:22px;}.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}.audit-panel h4{margin:0 0 12px;color:var(--text);}.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}.layer-legend .dot.e8{background:var(--c-basic);}.layer-legend .dot.understand{background:var(--c-understand);}.layer-legend .dot.extra{background:var(--c-extra);}.layer-legend .dot.contest{background:var(--c-warn);}.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}.map-card{position:relative;}@media print{details.answer{page-break-inside:avoid;}.card{page-break-inside:avoid;}.widget{page-break-inside:avoid;}}.bond-legend{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:center;font-size:12px;color:var(--text-soft);margin:8px 0 4px;padding:8px 10px;background:var(--surface-soft);border-radius:var(--r-sm);border:1px solid var(--border);}.bond-legend span{display:inline-flex;align-items:center;gap:6px;}.bond-legend .bl-solid{display:inline-block;width:28px;height:3px;background:#1a2332;border-radius:1px;}.bond-legend .bl-dash{display:inline-block;width:28px;height:0;border-top:3px dashed #64748b;}.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}@media(min-width:600px){.exp-grid{grid-template-columns:90px 1fr;}}.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}.lime-flow{display:grid;grid-template-columns:1fr;gap:8px;margin:12px 0;}@media(min-width:600px){.lime-flow{grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;}}.lime-box{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px;text-align:center;font-size:13px;}.lime-box strong{display:block;color:var(--accent);margin-bottom:4px;}.lime-arrow{text-align:center;font-weight:800;color:var(--accent);font-size:1.2rem;}.tips-box{background:linear-gradient(135deg,var(--c-understand-bg) 0%,#dbe8f5 100%);border:2px solid var(--c-understand);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}.tips-box h4{color:var(--c-understand);margin:0 0 12px;font-size:15px;display:flex;align-items:center;gap:8px;}.tips-box h4::before{content:'';font-size:16px;}.tips-list{display:grid;grid-template-columns:1fr;gap:10px;}@media(min-width:600px){.tips-list{grid-template-columns:repeat(2,1fr);}}.tip-card{background:#fff;border-radius:var(--r-md);padding:12px 14px;border:1px solid var(--c-understand-line);font-size:13px;line-height:1.55;}.tip-card b{color:var(--c-understand);display:block;margin-bottom:4px;font-size:12px;text-transform:uppercase;letter-spacing:0.4px;}@media(max-width:599px){.klinika-table thead{display:none;}.klinika-table,.klinika-table tbody,.klinika-table tr,.klinika-table td{display:block;width:100%;}.klinika-table tr{margin-bottom:12px;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;background:#fff;}.klinika-table td{border:none;padding:4px 0;}.klinika-table td.col-blad::before{content:'Błąd: ';color:var(--c-error);font-weight:800;}.klinika-table td.col-ok::before{content:'Poprawnie: ';color:var(--c-basic);font-weight:800;}.klinika-table td:last-child::before{content:'Dlaczego: ';color:var(--text-muted);font-weight:700;font-size:11px;text-transform:uppercase;}.amph-cards{display:grid;gap:10px;}.amph-cards .amph-card{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px;}.amph-cards .amph-card strong{display:block;margin-bottom:6px;color:var(--accent);}.table-amph-desktop{display:none;}}@media(min-width:600px){.amph-cards{display:none;}.table-amph-desktop{display:block;}}.cond-viz{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0;}@media(max-width:480px){.cond-viz{grid-template-columns:1fr;}}.cond-box{border:1px solid var(--border);border-radius:var(--r-md);padding:12px;text-align:center;background:#fff;}.cond-box.ok{border-color:var(--c-basic);background:var(--c-basic-bg);}.cond-box.bad{border-color:var(--border);background:var(--surface-soft);}.cond-box .cond-title{font-weight:800;font-size:13px;margin-bottom:6px;}.cond-box .cond-icons{font-size:1.4rem;letter-spacing:4px;margin:8px 0;}.cond-box .cond-note{font-size:12px;color:var(--text-soft);line-height:1.45;}.quiz-wrap{margin:16px 0;}.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}.sol-bar{display:flex;align-items:center;gap:8px;margin:4px 0;}.sol-bar .track{flex:1;height:10px;background:#e2e8f0;border-radius:6px;overflow:hidden;}.sol-bar .fill-sol{height:100%;border-radius:6px;}.sol-bar .fill-sol.good{background:linear-gradient(90deg,#4ade80,#16a34a);width:92%;}.sol-bar .fill-sol.mid{background:linear-gradient(90deg,#fbbf24,#d97706);width:28%;}.sol-bar .fill-sol.bad{background:linear-gradient(90deg,#94a3b8,#64748b);width:6%;}.hygro-box{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:14px;background:#fff7ed;border:1px solid #fdba74;border-radius:var(--r-md);margin:12px 0;}.hygro-crystal{width:64px;height:64px;background:linear-gradient(135deg,#f8fafc,#cbd5e1);border:2px solid #94a3b8;border-radius:8px;position:relative;flex-shrink:0;}.hygro-crystal .w{position:absolute;width:10px;height:10px;border-radius:50%;background:#38bdf8;opacity:0;}.hygro-crystal .w:nth-child(1){top:6px;left:12px;animation-delay:.1s;}.hygro-crystal .w:nth-child(2){top:20px;right:8px;animation-delay:.35s;}.hygro-crystal .w:nth-child(3){bottom:10px;left:20px;animation-delay:.55s;}.hygro-crystal .w:nth-child(4){top:28px;left:28px;animation-delay:.75s;}.hl-index{background:#fef3c7;color:#92400e;padding:1px 4px;border-radius:3px;font-weight:800;}.table-wrap tr.sol-good{background:#f0fdf4;}.table-wrap tr.sol-mid{background:#fffbeb;}.table-wrap tr.sol-bad{background:#f8fafc;}.svgx{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0}.svgx span{border:1px solid #cbd5e1;border-radius:8px;padding:3px 9px;background:#f8fafc;font-size:13px}.mmx{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.mmx-box{border:2px solid var(--mm);border-radius:10px;padding:8px 12px;background:#fff;font-family:Inter,system-ui,sans-serif;text-align:left}.mmx-box b{color:var(--mm);font-size:12.5px;letter-spacing:.04em}.mmx-box ul{margin:6px 0 0 16px;padding:0;font-size:13px}.mmx-loose{grid-column:1/-1;font-size:13px;color:#475569}.merge-h{margin:16px 0 6px}.che-prac-go{margin-top:8px;border:1px solid #0d6868;color:#0d6868;background:#fff;border-radius:8px;padding:5px 12px;font-weight:700;cursor:pointer}.che-prac-go:hover{background:#0d6868;color:#fff}.hist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px;margin:10px 0}.hist-card{margin:0;border:1px solid var(--border,#e5e9ee);border-radius:12px;padding:10px;background:var(--surface,#fff)}.hist-year{font:800 18px/1.1 inherit;color:var(--accent,#0d6868)}.hist-who{font-weight:700;margin:2px 0 6px}.hist-ill svg{width:100%;height:auto;display:block;border-radius:8px}.hist-card figcaption{font-size:13.5px;margin-top:6px;color:var(--text-soft,#4a5568)}h3.sub-h{margin-top:18px}</style></head>
+<body>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">N02 · CHEMIA · MASTER LAB v9.0</div><h1>Wodorotlenki i zasady</h1><p class="lead">Kation metalu + OH⁻ → wzór M(OH)ₙ, nawias i nazwy; rozpuszczalność, wodorotlenek a zasada, dysocjacja i odczyn; trzy metody otrzymywania, strącanie, zobojętnianie, wskaźniki, amfoteryczność. Modele, liczby i równania z silnika CHE.HYDROXIDES.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-extra">AMBITNIE / LO</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<div class="minimum-card" id="minimum">
+<h3>Muszę umieć na E8 — 8 kluczowych faktów</h3>
+<ol>
+<li><strong>Wodorotlenek</strong> to związek zbudowany z kationu metalu i anionu wodorotlenkowego <span class="hl">OH⁻</span>.</li>
+<li><strong>Wzór ogólny: <span class="formula">M(OH)ₙ</span></strong>, gdzie <span class="hl">n</span> oznacza liczbę grup wodorotlenkowych. W <strong>typowych wodorotlenkach metali na poziomie klasy 8</strong> liczba ta jest równa wartości bezwzględnej ładunku kationu, np. Ca²⁺ tworzy Ca(OH)₂. <strong>Nie utożsamiaj indeksu z samym ładunkiem zapisanym ze znakiem „+”</strong>.</li>
+<li><strong>Nawias</strong> stosujemy, gdy grupa OH⁻ występuje więcej niż raz: <span class="formula">NaOH</span> vs <span class="formula">Ca(OH)₂</span>.</li>
+<li><strong>Zobojętnianie:</strong> <span class="hl-warn">wodorotlenek + kwas → sól + woda</span>.</li>
+<li><strong>Odczyn:</strong> roztwór dobrze rozpuszczalnego wodorotlenku ma <span class="hl">odczyn zasadowy</span>. Wodorotlenki trudno rozpuszczalne dają bardzo mało jonów OH⁻.</li>
+<li><strong>Trzy typowe szkolne sposoby otrzymywania wybranych wodorotlenków:</strong> tlenek + woda, metal aktywny + woda, sól + zasada (strącanie).</li>
+<li><strong>NaOH/KOH</strong> są higroskopijne i żrące; roztwór to elektrolit o odczynie zasadowym.</li>
+<li><strong>Woda wapienna</strong> to nasycony roztwór Ca(OH)₂ — mętnieje po przepuszczeniu odpowiedniej ilości CO₂.</li>
+</ol>
+</div>
+<details class="toc-item" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#wprowadzenie">1. Wprowadzenie</a><a class="toc-link" href="#cele">2. Cele lekcji</a><a class="toc-link" href="#kompas">3. Kompas — co trzeba wiedzieć wcześniej</a><a class="toc-link" href="#pytanie">4. Pytanie przewodnie i problem startowy</a><a class="toc-link" href="#budowa">5. Definicja, budowa i nazewnictwo</a><a class="toc-link" href="#wlasciwosci">6. Właściwości: rozpuszczalność, zasada, dysocjacja i odczyn</a><a class="toc-link" href="#otrzymywanie">7. Otrzymywanie wodorotlenków</a><a class="toc-link" href="#reakcje">8. Reakcje wodorotlenków</a><a class="toc-link" href="#zastosowania">9. Zastosowania, BHP i życie codzienne</a><a class="toc-link" href="#model">10. Model bez skrótów — cztery pytania o wodorotlenek</a><a class="toc-link" href="#modele-budowy">11. Modele budowy — rysunek szkolny a sieć jonowa</a><a class="toc-link" href="#ion-lab">12. Strącanie od środka — laboratorium jonowe</a><a class="toc-link" href="#rownania-jonowe">13. Równania jonowe</a><a class="toc-link" href="#amfoterycznosc">14. Amfoteryczność</a><a class="toc-link" href="#doswiadczenia">15. Doświadczenia modelowe</a><a class="toc-link" href="#klinika">16. Klinika błędów</a><a class="toc-link" href="#cwiczenia">17. Ćwiczenia</a><a class="toc-link" href="#test">18. Test końcowy</a><a class="toc-link" href="#karta">19. Karta szybkiego powtórzenia (do druku)</a><a class="toc-link" href="#fiszki">20. Fiszki</a><a class="toc-link" href="#mapa">21. Mapa pojęć</a><a class="toc-link" href="#slownik">22. Słownik</a><a class="toc-link" href="#checklista">23. Checklista</a><a class="toc-link" href="#wskazowki">24. Wskazówki do nauki</a><a class="toc-link" href="#historia">A. Dodatek A — Historia odkrycia</a><a class="toc-link" href="#ambitny">B. Dodatek B — teorie kwasów i zasad, hydraty</a><a class="toc-link" href="#modele-silnika">↻. Modele silnika w tej lekcji</a><a class="toc-link" href="#audyt">✓. Audyt jakości</a></nav></details>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>E8 — obowiązkowo:</b> grupa OH⁻, wzory, zobojętnianie, rozpuszczalność szkolna</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> skąd nawias, wodorotlenek vs zasada, dlaczego nie każdy tlenek reaguje z wodą</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Nadprogramowo:</b> amfoteryczność, równania jonowe, hydraty</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs / liceum:</b> moc zasad, AgOH, CuOH, teorie kwasów i zasad</span></div>
+</div>
+<div class="core-path" id="rdzen-lekcji">
+<div class="cp-title">Rdzeń lekcji — najpierw to (ok. 30 min)</div>
+<ol>
+<li><strong><a href="#budowa">§5</a></strong> — grupa OH⁻, wzór ogólny, nawias, nazwy.</li>
+<li><strong>Model „Wzór wodorotlenku”</strong> (<a href="#wzor-ogolny">§5.2</a>) — zbuduj wzory dla Na, Ca, Al, Fe(III).</li>
+<li><strong>Rozpuszczalność, zasada i odczyn</strong> (<a href="#wlasciwosci">§6</a>) — tabela rozpuszczalności, dysocjacja, wskaźniki.</li>
+<li><strong>Otrzymywanie + Laboratorium jonowe</strong> (<a href="#otrzymywanie">§7</a>, <a href="#ion-lab">§12</a>) — zobacz, jak powstaje osad.</li>
+<li><strong>Zobojętnianie</strong> (<a href="#zobojetnianie">§8.1</a>) — animacja i licznik moli.</li>
+<li><strong>pH i wskaźniki + Lab</strong> (<a href="#ph-wskazniki">§6.4</a>) — przewiduj odczyn.</li>
+<li><strong>Klinika błędów + Ćwiczenia + Test</strong> (<a href="#klinika">§16</a>–<a href="#test">§18</a>).</li>
+</ol>
+</div>
+<section class="section" id="wprowadzenie">
+<div class="part-heading"><span class="part-num">1</span> Wprowadzenie</div>
+<div class="card card-core">
+<span class="card-label">O co tu właściwie chodzi?</span>
+<p>W poprzedniej lekcji poznałeś <strong>tlenki</strong>. Wiesz już, że <span class="hl">część tlenków zasadowych</span> — zwłaszcza tlenki metali aktywnych — reaguje z wodą, tworząc <strong>wodorotlenki</strong>. Ale co to właściwie jest? Jak wygląda wzór? Jak nazwać taki związek? I dlaczego jedne wodorotlenki rozpuszczają się w wodzie, a inne nie?</p>
+<p>Odpowiedzi prowadzą przez <span class="hl">grupę wodorotlenkową OH⁻</span> — jeden mały klocek, który decyduje o właściwościach całej grupy związków.</p>
+</div>
+<p class="mini-note">Trzy fakty na start — OH⁻ ma ładunek −1; liczba grup OH⁻ odpowiada wartości bezwzględnej ładunku kationu; nawias stawiamy tylko przy więcej niż jednej grupie — zebrano w karcie <a href="#minimum">Minimum E8</a>, a pełne wyjaśnienie z przykładami jest w <a href="#budowa">§5</a>.</p>
+</section>
+<section class="section" id="cele">
+<div class="part-heading"><span class="part-num">2</span> Cele lekcji <span class="level-badge level-basic">E8</span></div>
+<div class="card card-basic">
+<span class="card-label">Po tej lekcji uczeń:</span>
+<ul>
+<li><strong>zapisuje</strong> wzór wodorotlenku na podstawie kationu metalu,</li>
+<li><strong>stosuje</strong> nawias, gdy grupa OH⁻ powtarza się więcej niż raz,</li>
+<li><strong>nazywa</strong> wodorotlenki (w tym z cyfrą rzymską dla Fe, Cu, Sn, Pb),</li>
+<li><strong>zapisuje</strong> otrzymywanie wodorotlenku trzema typowymi metodami szkolnymi,</li>
+<li><strong>zapisuje</strong> reakcję zobojętniania,</li>
+<li><strong>rozróżnia</strong> wodorotlenki rozpuszczalne i nierozpuszczalne,</li>
+<li><strong>rozróżnia</strong> substancję (wodorotlenek) od roztworu (zasada),</li>
+<li><strong>opisuje</strong> odczyn zasadowy i wskaźniki,</li>
+<li><strong>opisuje</strong> właściwości NaOH, KOH i Ca(OH)₂ (higroskopijność, BHP, wapno i woda wapienna),</li>
+<li>(ambitnie) <strong>wyjaśnia</strong> amfoteryczność i równania jonowe.</li>
+</ul>
+</div>
+</section>
+<section class="section" id="kompas">
+<div class="part-heading"><span class="part-num">3</span> Kompas — co trzeba wiedzieć wcześniej</div>
+<div class="card card-understand">
+<ul>
+<li><strong>Wcześniej:</strong> wartościowość, W–K–S–K, grupa OH⁻, ładunek jonu, nawias. Fundamenty F00–F09: jony, ładunek, zapis wzorów.</li>
+<li><strong>Tlenki (lekcja N01):</strong> tlenki zasadowe (<span class="formula">Na₂O</span>, <span class="formula">K₂O</span>, <span class="formula">CaO</span>, <span class="formula">BaO</span>) reagują z wodą → wodorotlenki. Tlenki amfoteryczne (<span class="formula">Al₂O₃</span>, <span class="formula">ZnO</span>) reagują z kwasami i zasadami.</li>
+<li><strong>Uwaga:</strong> określenie „tlenek zasadowy” nie oznacza automatycznie, że tlenek reaguje z wodą (CuO — nie, MgO — bardzo powoli); szczegóły i lista tlenków reagujących z wodą — <a href="#uwaga-tlenki">§7.1</a>.</li>
+</ul>
+</div>
+</section>
+<section class="section" id="pytanie">
+<div class="part-heading"><span class="part-num">4</span> Pytanie przewodnie i problem startowy</div>
+<div class="card card-core">
+<p style="font-size:17px;font-weight:700;line-height:1.6;">Jak zbudowany jest wodorotlenek i dlaczego jedne rozpuszczają się w wodzie, a inne nie?</p>
+</div>
+<div class="card card-warning" id="problem">
+<p><strong>Masz do dyspozycji:</strong> tlenek wapnia <span class="formula">CaO</span>, tlenek sodu <span class="formula">Na₂O</span>, metaliczny sód <span class="formula">Na</span>, metaliczny magnez <span class="formula">Mg</span>, wodorotlenek sodu <span class="formula">NaOH</span>, chlorek żelaza(III) <span class="formula">FeCl₃</span>.</p>
+<p><strong>Pytanie:</strong> Jak otrzymać <span class="formula">Ca(OH)₂</span>? Jak otrzymać <span class="formula">Fe(OH)₃</span>? Jak otrzymać <span class="formula">NaOH</span>?</p>
+<details class="answer"><summary>Pokaż rozwiązanie — trzy szkolne metody</summary>
+<p><strong>W szkolnych zadaniach spotkasz trzy typowe sposoby otrzymywania wybranych wodorotlenków:</strong></p>
+<ul>
+<li><strong>Tlenek metalu aktywnego + woda → wodorotlenek</strong> (<span class="formula" data-rx="caoH2o">CaO + H₂O → Ca(OH)₂</span>).</li>
+<li><strong>Metal aktywny + woda → wodorotlenek + wodór↑</strong> (<span class="formula" data-rx="naH2o">2Na + 2H₂O → 2NaOH + H₂↑</span>).</li>
+<li><strong>Sól metalu + zasada → wodorotlenek↓ + sól</strong> (<span class="formula" data-rx="fecl3Naoh">FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl</span>).</li>
+</ul>
+<p>Ca(OH)₂ — z CaO i wody (metoda 1); Fe(OH)₃ — z FeCl₃ i NaOH (metoda 3, strącanie); NaOH — z sodu i wody (metoda 2) albo z Na₂O i wody (metoda 1). Magnez reaguje z wodą dopiero na gorąco, dlatego Mg(OH)₂ wygodniej otrzymać przez strącanie (<a href="#stracanie">§7.2</a>).</p>
+<p class="mini-note" style="margin-top:10px;">To nie są uniwersalne metody dla każdego wodorotlenku — dotyczą wybranych związków i warunków szkolnych.</p>
+</details>
+</div>
+</section>
+<section class="section" id="budowa">
+<div class="part-heading"><span class="part-num">5</span> Definicja, budowa i nazewnictwo <span class="level-badge level-basic">E8</span></div>
+<h3 id="definicja">5.1 Definicja i grupa wodorotlenkowa OH⁻</h3>
+<div class="card card-basic">
+<p><strong>Wodorotlenki</strong> to związki chemiczne zbudowane z:</p>
+<ul>
+<li><strong>kationów metalu</strong> (lub jonu amonowego <span class="formula">NH₄⁺</span>),</li>
+<li><strong>anionów wodorotlenkowych <span class="hl">OH⁻</span></strong>.</li>
+</ul>
+<p style="margin-top:10px;">Wzór ogólny: <span class="formula-lg">M(OH)ₙ</span>, gdzie <strong>M</strong> = metal, <strong>OH⁻</strong> = grupa wodorotlenkowa o ładunku −1, <strong>n</strong> = liczba grup OH⁻. W <strong>typowych wodorotlenkach metali na poziomie klasy 8</strong> liczba grup OH⁻ jest równa wartości bezwzględnej ładunku kationu, np. Ca²⁺ tworzy Ca(OH)₂. W bardziej złożonych przypadkach (np. jony kompleksowe, hydraty) reguła ta nie obowiązuje.</p>
+</div>
+<div class="card card-core" id="grupa-oh">
+<dl class="def-list">
+<div class="def-item"><dt>Nazwa</dt><dd>Grupa wodorotlenkowa (anion wodorotlenkowy).</dd></div>
+<div class="def-item"><dt>Wzór</dt><dd><span class="formula">OH⁻</span></dd></div>
+<div class="def-item"><dt>Ładunek</dt><dd><strong>−1</strong></dd></div>
+<div class="def-item"><dt>Skład</dt><dd>1 atom tlenu + 1 atom wodoru, jako całość ma ładunek −1.</dd></div>
+<div class="def-item"><dt>Traktowanie w zadaniach</dt><dd>Jeden klocek (całość), nie osobne O i H.</dd></div>
+</dl>
+<div class="rule-box"><b>Zapamiętaj:</b> OH⁻ to <strong>jedna grupa</strong>. Nawet jeśli składa się z dwóch atomów, traktujemy ją jak jeden element.</div>
+<div class="rule-box" style="background:var(--c-warn-bg);border-color:var(--c-warn-line);"><b>Wodorotlenek ≠ alkohol:</b> w <span class="formula">OH⁻</span> mamy jon wodorotlenkowy. W alkoholu występuje <strong>grupa hydroksylowa <span class="formula">−OH</span> połączona kowalencyjnie z atomem węgla</strong>, ale <strong>nie jest ona osobnym jonem OH⁻</strong>. To zupełnie inna chemia (związek organiczny). Alkohol zapisujemy ogólnie jako R–OH, gdzie R to fragment węglowy; wodorotlenek to kation metalu (albo NH₄⁺) + OH⁻.</div>
+</div>
+<h3 id="wzor-ogolny">5.2 Wzór ogólny M(OH)ₙ — jak go zbudować?</h3>
+<p class="lead"><strong>Cel:</strong> uczeń ma nie tylko znać regułę, ale wiedzieć, co zrobić w następnym kroku i jak sprawdzić wynik.</p>
+<div class="core-path">
+<div class="cp-title">Nie zapamiętuj wzorów osobno — odtwórz je z ładunków.</div>
+<ol>
+<li>Kation metalu ma ładunek dodatni (np. <span class="formula">Ca²⁺</span>).</li>
+<li>Grupa OH⁻ ma zawsze ładunek −1.</li>
+<li>Związek jako całość jest elektrycznie obojętny.</li>
+</ol>
+</div>
+<div class="card card-core">
+<p><strong>Krok po kroku:</strong></p>
+<ol>
+<li>Zapisz kation metalu (np. <span class="formula">Ca²⁺</span>).</li>
+<li>Odczytaj jego ładunek (np. <strong>+2</strong>).</li>
+<li>Zapisz <span class="formula">OH⁻</span> jako jeden jon (−1). Dobierz liczbę grup OH⁻ tak, aby suma ładunków wynosiła 0. Tyle samo grup OH⁻ musisz przyłączyć.</li>
+<li>Zapisz wzór: <span class="formula">Ca(OH)₂</span>.</li>
+<li><strong>Kontrola:</strong> suma ładunków = 0; nawias, gdy grup OH⁻ jest więcej niż jedna; indeks za nawiasem mnoży wszystkie atomy w środku. Sprawdź indeks: ma dotyczyć całej grupy, nie tylko H. Przykład: <span class="formula">(+2) + 2·(−1) = 0</span>.</li>
+</ol>
+<p class="mini-note" style="margin-bottom:8px;">Liczba grup OH⁻ = wartość bezwzględna ładunku kationu (w prostych wodorotlenkach). W tabeli jest jedna kolumna <b>n</b> oznaczająca właśnie liczbę grup OH⁻.</p>
+<div class="table-wrap table-compact">
+<table>
+<thead><tr><th>Kation</th><th>n (liczba OH⁻)</th><th>Wzór</th><th>Nazwa</th></tr></thead>
+<tbody>
+<tr><td>Na⁺</td><td>1</td><td><strong>NaOH</strong></td><td>wodorotlenek sodu</td></tr>
+<tr><td>K⁺</td><td>1</td><td><strong>KOH</strong></td><td>wodorotlenek potasu</td></tr>
+<tr><td>Ca²⁺</td><td>2</td><td><strong>Ca(OH)₂</strong></td><td>wodorotlenek wapnia</td></tr>
+<tr><td>Mg²⁺</td><td>2</td><td><strong>Mg(OH)₂</strong></td><td>wodorotlenek magnezu</td></tr>
+<tr><td>Ba²⁺</td><td>2</td><td><strong>Ba(OH)₂</strong></td><td>wodorotlenek baru</td></tr>
+<tr><td>Al³⁺</td><td>3</td><td><strong>Al(OH)₃</strong></td><td>wodorotlenek glinu</td></tr>
+<tr><td>Fe²⁺</td><td>2</td><td><strong>Fe(OH)₂</strong></td><td>wodorotlenek żelaza(II)</td></tr>
+<tr><td>Fe³⁺</td><td>3</td><td><strong>Fe(OH)₃</strong></td><td>wodorotlenek żelaza(III)</td></tr>
+<tr><td>Cu²⁺</td><td>2</td><td><strong>Cu(OH)₂</strong></td><td>wodorotlenek miedzi(II)</td></tr>
+<tr><td>Zn²⁺</td><td>2</td><td><strong>Zn(OH)₂</strong></td><td>wodorotlenek cynku</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="rule-box">
+<b>Co naprawdę oznacza indeks n?</b> <strong>n oznacza liczbę całych grup OH⁻.</strong> W typowych prostych wodorotlenkach szkolnych jest ona równa wartości bezwzględnej ładunku kationu.
+<div class="equation-box"><strong>Al³⁺ → 3 × OH⁻ → Al(OH)₃ → (+3) + 3·(−1) = 0</strong></div>
+<p style="margin-top:8px;">Nie należy utożsamiać indeksu z samym ładunkiem zapisanym ze znakiem „+”. n to liczba grup OH⁻, a nie „ładunek kationu” jako taki.</p>
+</div>
+<div class="mnemonic">
+<b>Mnemotechnika:</b> „<span class="hl">OH⁻ to klocek o ładunku −1</span>. Kation metalu mówi, ile klocków potrzebuje." Na⁺ → 1 klocek. Ca²⁺ → 2 klocki. Al³⁺ → 3 klocki. Nie rozbijaj grupy na O i H w zadaniach.
+</div>
+<h4 class="merge-h" id="wzorometr">Model interaktywny — bilans ładunków i konstruktor wzorów</h4>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="n02-wzory-v01"><button data-che-open-viz="n02-wzory-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'n02-wzory-v01',lessonId:'N02'},'*')" type="button"><b>Wzór wodorotlenku: kation + OH⁻ — bilans ładunków, nawias, modele A/B/jony, sprawdzanie wzoru</b><span>Zastępuje Wzórometr, Bilansator, Konstruktor i animację nawiasu · CHE.HYDROXIDES.build / check</span></button></div>
+<p>Dodawaj grupy OH⁻, aż suma ładunków wyniesie zero. Wybierz kation i dodawaj grupy OH⁻, aż powstanie poprawny wzór.</p>
+<p class="mini-note">Bilans ładunków jest częścią modelu z tej podsekcji: pasek „+” (kation) i „−” (grupy OH⁻), suma ładunków i przycisk „dobierz automatycznie”.</p>
+<p class="mini-note">Konstruktor = ten sam model z tej podsekcji: pole „Sprawdź swój wzór” rozpoznaje brak nawiasu (CaOH₂), zbędny nawias (Na(OH)) i złą liczbę grup OH⁻.</p>
+<h3 id="nawias">5.3 Nawias — kiedy i dlaczego?</h3>
+<div class="card card-warning">
+<p><strong>Nawias stosujemy, gdy grupa OH⁻ występuje więcej niż raz.</strong></p>
+<p><strong>Przykłady:</strong></p>
+<ul>
+<li><span class="formula">NaOH</span>, <span class="formula">KOH</span> — bez nawiasu (1 grupa, n = 1).</li>
+<li><span class="formula">Ca(OH)₂</span> — z nawiasem (2 grupy).</li>
+<li><span class="formula">Al(OH)₃</span> — z nawiasem (3 grupy, n &gt; 1).</li>
+</ul>
+<div class="rule-box">
+<b>Dlaczego to ważne?</b> <span class="hl-warn">CaOH₂</span> sugeruje, że indeks 2 dotyczy tylko wodoru — to błąd. <span class="formula">Ca(OH)₂</span> mówi jasno: dwie całe grupy OH⁻. <strong>Ca(OH)₂ = Ca₁O₂H₂</strong>.
+      </div>
+<p class="mini-note">Cztery kroki „CaOH₂ → Ca(OH)₂” (błędny zapis → co jest nie tak → poprawa → co to znaczy) pokazuje model z <a href="#wzor-ogolny">§5.2</a> w części „Dlaczego nawias?” dla każdego kationu.</p>
+<div class="mnemonic">
+<b>Mnemotechnika:</b> „<span class="hl">Nawias to pudełko na grupę</span>." Wszystko, co w pudełku, powtarza się tyle razy, ile mówi indeks za nawiasem.
+      </div>
+</div>
+<h3 id="nazwy">5.4 Nazwy wodorotlenków</h3>
+<div class="card card-core">
+<p><strong>Reguła:</strong> „wodorotlenek" + nazwa metalu. Jeżeli metal może tworzyć kationy o różnych ładunkach, w nazwie podaje się stopień utlenienia cyfrą rzymską.</p>
+<dl class="def-list">
+<div class="def-item"><dt><span class="formula">NaOH</span></dt><dd>wodorotlenek sodu</dd></div>
+<div class="def-item"><dt><span class="formula">Ca(OH)₂</span></dt><dd>wodorotlenek wapnia</dd></div>
+<div class="def-item"><dt><span class="formula">Al(OH)₃</span></dt><dd>wodorotlenek glinu</dd></div>
+<div class="def-item"><dt><span class="formula">Fe(OH)₂</span></dt><dd>wodorotlenek żelaza(II)</dd></div>
+<div class="def-item"><dt><span class="formula">Fe(OH)₃</span></dt><dd>wodorotlenek żelaza(III)</dd></div>
+<div class="def-item"><dt><span class="formula">Cu(OH)₂</span></dt><dd>wodorotlenek miedzi(II)</dd></div>
+</dl>
+<p>Metale ze zmiennym stopniem utlenienia (np. Fe, Cu, Sn, Pb, Mn, Cr) — wymagają cyfry rzymskiej.</p>
+<div class="card card-extra">
+<span class="card-label">CuOH i AgOH — tylko jako ciekawostka</span> <span class="level-badge level-extra">AMBITNE</span>
+<p><span class="formula">CuOH</span> (formalny wodorotlenek miedzi(I)) jest nietrwały — w typowych warunkach szkolnego doświadczenia przechodzi w tlenek miedzi(I):</p>
+<p style="margin-top:8px;"><span class="formula-lg">2CuOH → Cu₂O + H₂O</span></p>
+<p><span class="formula">AgOH</span> (wodorotlenek srebra(I)) również jest nietrwały i rozpada się do tlenku srebra(I):</p>
+<p style="margin-top:8px;"><span class="formula-lg">2AgOH → Ag₂O + H₂O</span></p>
+<p>Dlatego w zadaniach szkolnych najczęściej stosuje się <strong>Cu(OH)₂</strong> oraz sole srebra(I) bezpośrednio w reakcjach strąceniowych.</p>
+<p><strong>AgOH — wyjaśnienie:</strong> W warunkach doświadczenia szybko przekształca się w Ag₂O, dlatego nie traktuje się go jako trwałego, izolowanego wodorotlenku. Nie używaj sformułowania „nie istnieje” — jest ono zbyt uproszczone.</p>
+</div>
+</div>
+</section>
+<section class="section" id="wlasciwosci">
+<div class="part-heading"><span class="part-num">6</span> Właściwości: rozpuszczalność, zasada, dysocjacja i odczyn <span class="level-badge level-basic">E8</span></div>
+<h3 id="higroskopijnosc">6.1 Stan skupienia, higroskopijność i właściwości NaOH / KOH</h3>
+<div class="card card-basic">
+<span class="card-label">Stan skupienia</span>
+<p>W temperaturze pokojowej <strong>wodorotlenki są ciałami stałymi</strong> (kryształy, proszki, osady). „Zasada sodowa w butelce” to już <em>wodny roztwór wodorotlenku sodu</em>, nazywany ługiem sodowym, a nie czysty wodorotlenek.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Higroskopijność</span>
+<p><strong>Higroskopijność</strong> — zdolność substancji do pochłaniania wilgoci z powietrza.</p>
+<p><span class="formula">NaOH</span> i <span class="formula">KOH</span> są substancjami silnie higroskopijnymi i żrącymi: pozostawione na powietrzu „rozpływają się”, bo wchłaniają wodę i tworzą stężony roztwór. Dlatego przechowuje się je w szczelnych naczyniach.</p>
+<p><strong>Przy rozpuszczaniu w wodzie</strong> wydziela się dużo ciepła (rozpuszczanie NaOH w wodzie przebiega z wydzieleniem ciepła) — naczynie może się mocno nagrzać. Zasady bezpiecznej pracy (ochrona, kolejność dodawania, pierwsza pomoc): <a href="#bhp">§9.2</a>.</p>
+<p><strong>Porównanie:</strong> KOH jest jeszcze lepiej rozpuszczalny w wodzie niż NaOH, ale oba są silnie żrące i higroskopijne.</p>
+</div>
+<div class="hygro-box" id="hygroBox">
+<div aria-hidden="true" class="hygro-crystal"><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span></div>
+<div style="flex:1;min-width:200px">
+<strong>Higroskopijność NaOH / KOH</strong>
+<p style="margin:6px 0 0;font-size:13.5px;color:var(--text-soft)">Stały NaOH „ciągnie” parę wodną z powietrza → powierzchnia robi się mokra / roztwór. Dlatego trzymamy w szczelnym naczyniu i nie zostawiamy otwartego na stole.</p>
+</div>
+</div>
+<h3 id="rozpuszczalnosc-tabela">6.2 Rozpuszczalność wodorotlenków — tabela (odczyt jak na klasówce)</h3>
+<div class="card card-basic">
+<span class="card-label">Szybka reguła rozpuszczalności (E8)</span>
+<ul>
+<li><strong>Dobrze rozpuszczalne</strong> (dają zasadę): wodorotlenki metali 1. grupy (NaOH, KOH, LiOH) oraz Ba(OH)₂; Ca(OH)₂ — trudno, ale tworzy wodę wapienną.</li>
+<li><strong>Trudno rozpuszczalne / praktycznie nierozpuszczalne</strong> (osady): Fe(OH)₂, Fe(OH)₃, Cu(OH)₂, Al(OH)₃, Zn(OH)₂, Mg(OH)₂.</li>
+<li><strong>Odczyn zasadowy</strong> ma tylko roztwór, w którym jest wystarczająco dużo wolnych OH⁻ — więc głównie dobrze rozpuszczalne wodorotlenki.</li>
+</ul>
+</div>
+<div class="table-wrap table-compact">
+<table>
+<thead><tr><th>Wodorotlenek</th><th>W wodzie</th><th>ok. g/100 mL (20 °C)</th><th>Odczyn</th><th>Uwagi E8</th></tr></thead>
+<tbody>
+<tr class="sol-good" data-hy="NaOH" data-hy-sol="R"><td>NaOH</td><td><strong>dobrze</strong><div class="sol-bar"><div class="track"><div class="fill-sol good"></div></div></div></td><td>~109</td><td>silnie zasadowy</td><td>zasada; <strong>higroskopijny</strong></td></tr>
+<tr class="sol-good" data-hy="KOH" data-hy-sol="R"><td>KOH</td><td><strong>dobrze</strong><div class="sol-bar"><div class="track"><div class="fill-sol good"></div></div></div></td><td>~112</td><td>silnie zasadowy</td><td>zasada; higroskopijny</td></tr>
+<tr class="sol-good" data-hy="Ba(OH)2" data-hy-sol="R"><td>Ba(OH)₂</td><td><strong>rozpuszczalny</strong><div class="sol-bar"><div class="track"><div class="fill-sol good"></div></div></div></td><td>~3,9 (8H₂O)</td><td>zasadowy</td><td>Ba²⁺ toksyczny — nie w doświadczeniach uczniowskich</td></tr>
+<tr class="sol-mid" data-hy="Ca(OH)2" data-hy-sol="T"><td>Ca(OH)₂</td><td><strong>trudno</strong><div class="sol-bar"><div class="track"><div class="fill-sol mid"></div></div></div></td><td>~0,17</td><td>zasadowy (woda wapienna)</td><td>nasycony roztwór do CO₂; mleko wapienne = zawiesina</td></tr>
+<tr class="sol-mid" data-hy="Mg(OH)2" data-hy-sol="N"><td>Mg(OH)₂</td><td><strong>praktycznie nierozp.</strong> (szkolnie: „trudno”)<div class="sol-bar"><div class="track"><div class="fill-sol mid"></div></div></div></td><td>~0,001</td><td>słabo zasadowy</td><td>mleko magnezowe; mało OH⁻</td></tr>
+<tr class="sol-bad" data-hy="Cu(OH)2" data-hy-sol="N"><td>Cu(OH)₂</td><td><strong>nierozp.</strong><div class="sol-bar"><div class="track"><div class="fill-sol bad"></div></div></div></td><td>~0</td><td>brak wyraźnego</td><td>niebieski osad ↓</td></tr>
+<tr class="sol-bad" data-hy="Fe(OH)3" data-hy-sol="N"><td>Fe(OH)₃</td><td><strong>nierozp.</strong><div class="sol-bar"><div class="track"><div class="fill-sol bad"></div></div></div></td><td>~0</td><td>brak wyraźnego</td><td>brunatny osad ↓ · vs NaOH: prawie „neutralny” osad</td></tr>
+<tr class="sol-bad" data-hy="Al(OH)3,Zn(OH)2" data-hy-sol="N"><td>Al(OH)₃, Zn(OH)₂</td><td><strong>nierozp.</strong><div class="sol-bar"><div class="track"><div class="fill-sol bad"></div></div></div></td><td>~0</td><td>brak wyraźnego</td><td>amfoteryczne (amb)</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mini-note"><strong>Reguła E8:</strong> rozpuszczalność ↔ siła odczynu w roztworze. Dużo wolnych OH⁻ (NaOH) = mocno zasadowy; osad Cu(OH)₂/Fe(OH)₃ ≈ brak typowego odczynu zasadowego w wodzie. Wartości g/100 mL — orientacyjne (podręcznik / tablice).</p>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="tabela-rozpuszczalnosci-v01"><button data-che-open-viz="tabela-rozpuszczalnosci-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'tabela-rozpuszczalnosci-v01',lessonId:'N02'},'*')" type="button"><b>Tabela rozpuszczalności (20 °C) — kolumna OH⁻ i wszystkie sole</b><span>To samo źródło danych co ta lekcja · CHE.DATA.SOLUBILITY_TABLE</span></button></div>
+<p id="wodor-grid">Jeden widok pokazuje pierwiastek, wartościowość, wzór wodorotlenku, rozpuszczalność i barwę osadu. Kliknij kafelek — szczegóły pojawią się na stałe pod spodem.</p>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="n02-przeglad-v01"><button data-che-open-viz="n02-przeglad-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'n02-przeglad-v01',lessonId:'N02'},'*')" type="button"><b>Wodorotlenki — kafelki: rozpuszczalność, barwa osadu, odczyn, dysocjacja, metody otrzymywania</b><span>CHE.DATA.HYDROXIDES + D.SOLUBILITY_TABLE</span></button></div>
+<h3 id="wodorotlenek-vs-zasada">6.3 Wodorotlenek a zasada; elektrolit i dysocjacja</h3>
+<div class="card card-basic">
+<p><strong>Wodorotlenek</strong> to związek chemiczny zawierający kation metalu i aniony OH⁻. Może być substancją stałą (stały NaOH) lub osadem (Cu(OH)₂).</p>
+<p><strong>Zasadą</strong> w szkolnym ujęciu nazywamy <em>wodny roztwór niektórych wodorotlenków</em>, który zawiera jony OH⁻ i ma odczyn zasadowy. Dobrze rozpuszczalne wodorotlenki tworzą roztwory o wyraźnie zasadowym odczynie, natomiast trudno rozpuszczalne tworzą bardzo mało jonów OH⁻. To praktyczne uproszczenie szkolne; w szerszym ujęciu chemicznym zasadą może być także substancja niezawierająca grup OH⁻, np. amoniak NH₃.</p>
+<dl class="def-list">
+<div class="def-item"><dt>NaOH(s)</dt><dd>Wodorotlenek sodu — substancja stała. Odczyn: —</dd></div>
+<div class="def-item"><dt>NaOH(aq)</dt><dd>Roztwór, czyli zasada sodowa. Odczyn: silnie zasadowy.</dd></div>
+<div class="def-item"><dt>Ba(OH)₂(aq)</dt><dd>Roztwór wodorotlenku baru. Odczyn: zasadowy.</dd></div>
+<div class="def-item"><dt>Ca(OH)₂(aq)</dt><dd>Woda wapienna — nasycony roztwór. Odczyn: zasadowy.</dd></div>
+<div class="def-item"><dt>Cu(OH)₂(s)</dt><dd>Osad wodorotlenku miedzi(II). Jest praktycznie nierozpuszczalny, dlatego jego zawiesina nie daje wyraźnego zasadowego odczynu.</dd></div>
+</dl>
+<p class="mini-note">Szkolne rozróżnienie wodorotlenek / zasada / jon OH⁻ i szersze definicje zasad (amoniak, Brønsted): <a href="#zasada-oh">§10.2</a>.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Elektrolit i nieelektrolit (PP)</span>
+<p><strong>Elektrolit</strong> — substancja, której wodny roztwór (lub stop) przewodzi prąd elektryczny, bo zawiera swobodne jony.</p>
+<p><strong>Nieelektrolit</strong> — substancja, która w roztworze nie daje swobodnych jonów (np. cukier, alkohol) — roztwór nie przewodzi.</p>
+<p>Roztwór <span class="formula">NaOH</span> jest <strong>elektrolitem</strong> (Na⁺ i OH⁻). Czysta woda destylowana praktycznie nie przewodzi; dodatek zasady silnie zwiększa przewodnictwo.</p>
+<div class="rule-box" style="margin-top:10px;"><b>Zapamiętaj:</b> zasada = wodny roztwór wodorotlenku → jony OH⁻ → odczyn zasadowy + przewodnictwo (elektrolit).</div>
+<div aria-label="Porównanie przewodnictwa" class="cond-viz" role="img">
+<div class="cond-box ok">
+<div class="cond-title">Roztwór NaOH</div>
+<div class="cond-icons"></div>
+<div class="cond-note">Jony Na⁺ i OH⁻ → <strong>elektrolit</strong><br/>żarówka świeci / przewodnictwo wysokie</div>
+</div>
+<div class="cond-box bad">
+<div class="cond-title">Roztwór cukru (sacharoza)</div>
+<div class="cond-icons">○ ○ ○</div>
+<div class="cond-note">Cząsteczki, brak swobodnych jonów → <strong>nieelektrolit</strong><br/>żarówka nie świeci</div>
+</div>
+</div>
+<p class="mini-note">Woda destylowana prawie nie przewodzi; po dodaniu NaOH przewodnictwo gwałtownie rośnie. To klasyczne doświadczenie z listy proponowanej w podstawie.</p>
+</div>
+<h4 class="merge-h" id="diss-widget">Dysocjacja elektrolityczna zasad</h4>
+<p><strong>Dysocjacja elektrolityczna</strong> to rozpad związku na jony pod wpływem wody. Rozpuszczona część wodorotlenku dysocjuje w szkolnym modelu praktycznie całkowicie, a liczba jonów OH⁻ w równaniu jest równa liczbie grup OH⁻ we wzorze (indeksowi za nawiasem):</p>
+<div class="equation-box">NaOH → Na⁺ + OH⁻</div>
+<div class="equation-box">KOH → K⁺ + OH⁻</div>
+<div class="equation-box">Ca(OH)₂ → Ca²⁺ + 2OH⁻</div>
+<div class="equation-box">Ba(OH)₂ → Ba²⁺ + 2OH⁻</div>
+<p class="mini-note">Na E8 wystarczy zapis ze strzałką i jonami. Stany skupienia, równowaga dla trudno rozpuszczalnego Ca(OH)₂ i różnica rozpuszczalność / moc: <a href="#moc-rozpuszczalnosc">§10.3</a>.</p>
+<p>Zobacz, jak kryształ NaOH rozpada się na jony, a jony otaczają się cząsteczkami wody.</p>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="n02-dysocjacja-v01"><button data-che-open-viz="n02-dysocjacja-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'n02-dysocjacja-v01',lessonId:'N02'},'*')" type="button"><b>Rozpuszczanie i dysocjacja: NaOH, KOH, Ca(OH)₂, Mg(OH)₂, Cu(OH)₂, Fe(OH)₃ — jony, hydratacja, efekt cieplny</b><span>GFX.ions · CHE.HYDROXIDES.dissociation / heat</span></button></div>
+<h4 class="merge-h">Energia rozpuszczania <span class="level-badge level-understand">ROZUMIENIE</span></h4>
+<p>Nie każdy wodorotlenek rozpuszcza się tak samo. NaOH wydziela ciepło (egzo), NH₄NO₃ pochłania (endo).</p>
+<div class="table-wrap table-compact"><table><thead><tr><th>Substancja</th><th>ΔH rozpuszczania (kJ/mol)</th><th>Efekt</th></tr></thead><tbody><tr data-hy-heat="NaOH"><td>NaOH</td><td>−44,5</td><td>egzotermiczny — temperatura rośnie</td></tr><tr data-hy-heat="KOH"><td>KOH</td><td>−57,6</td><td>egzotermiczny — temperatura rośnie</td></tr><tr data-hy-heat="LiOH"><td>LiOH</td><td>−23,6</td><td>egzotermiczny — temperatura rośnie</td></tr><tr data-hy-heat="Ca(OH)2"><td>Ca(OH)₂</td><td>−16,7</td><td>egzotermiczny — temperatura rośnie</td></tr><tr data-hy-heat="NH4NO3"><td>NH₄NO₃</td><td>+25,7</td><td>endotermiczny — temperatura spada</td></tr><tr data-hy-heat="NaCl"><td>NaCl</td><td>+3,9</td><td>endotermiczny — temperatura spada</td></tr></tbody></table></div><p class="mini-note">Wartości z silnika (CHE.HYDROXIDES.SOLHEAT). Ile stopni? 4 g NaOH (0,1 mol) w 100 g wody → ok. +10 °C. Symulacja z termometrem: model z tej podsekcji, część „Efekt cieplny”.</p>
+<h3 id="ph-wskazniki">6.4 Odczyn i wskaźniki</h3>
+<p><strong>Skala pH:</strong> pH &lt; 7 — odczyn kwasowy, pH = 7 — obojętny, pH &gt; 7 — zasadowy. Im więcej wolnych jonów OH⁻ w roztworze, tym wyższe pH. Odczyn badamy <strong>wskaźnikami</strong> — substancjami, które zmieniają barwę zależnie od pH.</p>
+<div class="table-wrap table-compact">
+<table>
+<thead><tr><th>Wskaźnik</th><th>Kwasowy</th><th>Obojętny</th><th>Zasadowy</th></tr></thead>
+<tbody>
+<tr><td>Fenoloftaleina</td><td>bezbarwna</td><td>bezbarwna</td><td>malinowa (zmiana barwy przy pH ≈ 8,2–10)</td></tr>
+<tr><td>Oranż metylowy</td><td>czerwony (pomarańczowy przy pH ≈ 3,1–4,4)</td><td>żółty</td><td>żółty</td></tr>
+<tr><td>Papierek uniwersalny</td><td>czerwony / pomarańczowy</td><td>żółtozielony</td><td>niebieski / granatowy</td></tr>
+<tr><td>Wywar z czerwonej kapusty (domowy)</td><td>czerwony / różowy</td><td>fioletowy</td><td>niebieskozielony, w silnie zasadowym żółty</td></tr>
+</tbody>
+</table>
+</div>
+<p>Przy <strong>fenoloftaleinie</strong> zasada jest malinowa; po zobojętnieniu roztwór odbarwia się. <strong>Oranż metylowy</strong>: czerwony w środowisku silnie kwasowym, pomarańczowy w zakresie zmiany barwy (pH ≈ 3,1–4,4), żółty powyżej.</p>
+<p>Przesuwaj suwak lub klikaj wartości na skali. Zobaczysz jednocześnie kolor roztworu, barwy trzech wskaźników i przykłady substancji.</p>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="ph-indicators-v03"><button data-che-open-viz="ph-indicators-v03" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'ph-indicators-v03',lessonId:'N02'},'*')" type="button"><b>Panel pH — skala, barwy wskaźników, przykłady roztworów</b><span>Barwy z CHE.COLORS</span></button></div>
+<p class="mini-note">Woda czysta ma w przybliżeniu pH 7. Woda destylowana przechowywana na powietrzu pochłania CO₂, dlatego jej pH bywa nieco niższe od 7. Zakres zmiany barwy oranżu metylowego: pH ≈ 3,1–4,4.</p>
+<h4 class="merge-h">Laboratorium wskaźników — przewidź i sprawdź</h4>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="gfx-scene-indicatorRack"><button data-che-open-viz="gfx-scene-indicatorRack" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'gfx-scene-indicatorRack',lessonId:'N02'},'*')" type="button"><b>Wskaźnik w siedmiu roztworach — przewidź barwę, potem sprawdź</b><span>Scena GFX · barwy wskaźników z CHE.COLORS</span></button></div>
+<p class="mini-note"><strong>Uwaga:</strong> Cu(OH)₂ w wodzie to zawiesina, nie jednorodny roztwór. Znikoma rozpuszczona część może wpływać na odczyn, ale nie traktuj zawiesiny jak roztworu NaOH.</p>
+<h3 id="wapno">6.5 Wodorotlenek wapnia — wapno palone, gaszone, mleko i woda wapienna</h3>
+<div class="card card-core">
+<span class="card-label">Schemat — nie myl nazw</span>
+<div class="lime-flow">
+<div class="lime-box"><strong>Wapno palone</strong>CaO<br/><span style="font-size:12px;color:var(--text-muted)">tlenek wapnia</span></div>
+<div class="lime-arrow">+ H₂O →</div>
+<div class="lime-box"><strong>Wapno gaszone</strong>Ca(OH)₂(s)<br/><span style="font-size:12px;color:var(--text-muted)">wodorotlenek stały</span></div>
+<div class="lime-arrow">+ H₂O →</div>
+<div class="lime-box"><strong>Mleko wapienne</strong><br/><span style="font-size:12px;color:var(--text-muted)">zawiesina Ca(OH)₂</span></div>
+<div class="lime-arrow">po odstaniu i zlaniu cieczy →</div>
+<div class="lime-box"><strong>Woda wapienna</strong><br/><span style="font-size:12px;color:var(--text-muted)">klarowny roztwór Ca(OH)₂</span></div>
+</div>
+<ul>
+<li><strong>Mleko wapienne</strong> — mętna zawiesina Ca(OH)₂ w wodzie (dużo nierozpuszczonego osadu).</li>
+<li><strong>Woda wapienna</strong> — klarowny, nasycony roztwór Ca(OH)₂ (po odstaniu i zlaniu znad osadu). Jej pH wynosi około <strong>12,4</strong>.</li>
+<li><strong>Wykrywanie CO₂ (E8):</strong> <span class="formula" data-rx="caoh2Co2">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span>. Woda wapienna mętnieje po przepuszczeniu przez nią odpowiedniej ilości CO₂, ponieważ powstaje osad CaCO₃. <span class="level-badge level-extra">ROZSZERZENIE</span> Przy dużym nadmiarze CO₂ osad może się ponownie rozpuszczać, tworząc rozpuszczalny wodorowęglan wapnia: <span class="formula" data-rx="caco3Co2H2o">CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂</span>.</li>
+<li><strong>Zaprawa wapienna:</strong> twardnieje na powietrzu: <span class="formula" data-rx="caoh2Co2">Ca(OH)₂ + CO₂ → CaCO₃ + H₂O</span>.</li>
+</ul>
+<div class="table-wrap table-compact" style="margin-top:12px;">
+<table>
+<thead><tr><th>Cecha</th><th>Mleko wapienne</th><th>Woda wapienna</th></tr></thead>
+<tbody>
+<tr><td>Stan</td><td>zawiesina (mętna)</td><td>roztwór (klarowny)</td></tr>
+<tr><td>Skład</td><td>dużo nierozpuszczonego Ca(OH)₂</td><td>nasycony roztwór Ca(OH)₂</td></tr>
+<tr><td>Zastosowanie</td><td>bielenie, zaprawa</td><td>wykrywanie CO₂</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="mini-note">Dlaczego woda wapienna i mleko wapienne to ta sama substancja w różnych układach (równowaga osad ⇌ jony) — <a href="#moc-rozpuszczalnosc">§10.3</a>. Otrzymywanie CaO + H₂O krok po kroku — <a href="#metody">§7.1</a>; BHP gaszenia wapna — <a href="#bhp">§9.2</a>.</p>
+</section>
+<section class="section" id="otrzymywanie">
+<div class="part-heading"><span class="part-num">7</span> Otrzymywanie wodorotlenków <span class="level-badge level-basic">E8</span></div>
+<h3 id="metody">7.1 Trzy szkolne metody i ich warunki</h3>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="n02-otrzymywanie-v01"><button data-che-open-viz="n02-otrzymywanie-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'n02-otrzymywanie-v01',lessonId:'N02'},'*')" type="button"><b>Otrzymywanie wodorotlenków — trzy metody, „Jak otrzymać…?” i mapa przemian</b><span>Zlewka GFX.rx · reguły CHE.HYDROXIDES.obtain (kiedy metoda działa, a kiedy nie)</span></button></div>
+<div class="rule-box">
+<h4 class="merge-h">Otrzymywanie — trzy modele, ale z warunkami</h4>
+<ol>
+<li><strong>Tlenek zasadowy + woda</strong> — np. Na₂O + H₂O → 2NaOH. Nie każdy tlenek metalu reaguje z wodą w ten sposób.</li>
+<li><strong>Aktywny metal + woda</strong> — np. 2Na + 2H₂O → 2NaOH + H₂↑. Reakcja zależy od metalu i warunków. Wapń reaguje z zimną wodą spokojniej niż sód (Ca + 2H₂O → Ca(OH)₂ + H₂↑), magnez — dopiero z gorącą wodą (Mg + 2H₂O → Mg(OH)₂ + H₂↑).</li>
+<li><strong>Sól + zasada</strong> — np. FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl, jeśli powstający wodorotlenek jest dostatecznie trudno rozpuszczalny. Ca(OH)₂ wytrąca się w ten sposób tylko z roztworów stężonych, bo jest trudno, ale nie praktycznie nierozpuszczalny.</li>
+</ol>
+<p class="mini-note">Typowe substraty: Na₂O, K₂O, CaO, BaO (metoda 1); Na, K, Ca (metoda 2); sole Cu²⁺, Fe²⁺, Fe³⁺, Mg²⁺, Al³⁺, Zn²⁺ + NaOH lub KOH (metoda 3).</p>
+</div>
+<div class="card card-warning" id="uwaga-tlenki">
+<span class="card-label">Ważne rozróżnienie</span>
+<p><strong>Określenie „tlenek zasadowy” nie oznacza automatycznie, że tlenek reaguje z wodą.</strong></p>
+<p>Przykładowo <span class="formula">CuO</span> reaguje z kwasami, ale nie reaguje z wodą. <span class="formula">MgO</span> reaguje z wodą bardzo powoli, dlatego w zadaniach należy korzystać z podanej tabeli lub znanych przykładów.</p>
+<p>W szkole najczęściej spotkasz reakcje z wodą dla tlenków metali aktywnych: <span class="formula">Na₂O</span>, <span class="formula">K₂O</span>, <span class="formula">CaO</span>, <span class="formula">BaO</span>.</p>
+</div>
+<h4 style="margin:14px 0 6px">Równanie krok po kroku — CaO + H₂O</h4><div class="equation-box" data-rx="caoH2o">CaO + H₂O → Ca(OH)₂</div><p class="mini-note">Bilans atomów: Ca 1 = 1 · O 1 + 1 = 2 · H 2 = 2 ✓. Most N01 → N02: tlenek zasadowy + woda = wodorotlenek (gdy tlenek z wodą reaguje).</p>
+<h3 id="stracanie">7.2 Strącanie wodorotlenków — barwy osadów</h3>
+<p>Metoda 3 to <strong>reakcja strąceniowa</strong>: kation metalu z roztworu soli łączy się z jonami OH⁻ z zasady i powstaje trudno rozpuszczalny osad. Barwa osadu pomaga rozpoznać kation.</p>
+<div class="equation-box" data-rx="cuso4Naoh">CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄</div><p class="mini-note">niebieski, galaretowaty osad — praktycznie nierozpuszczalny</p>
+<div class="equation-box" data-rx="fecl3Naoh">FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl</div><p class="mini-note">rdzawobrunatny osad — w roztworze nad osadem prawie nie ma OH⁻, więc odczyn nie jest „jak po NaOH”. Animacja cząsteczkowa: <a href="#ion-lab">§12</a>; zapis jonowy: <a href="#rownania-jonowe">§13</a>.</p>
+<div class="equation-box" data-rx="alcl3Naoh">AlCl₃ + 3NaOH → Al(OH)₃↓ + 3NaCl</div><p class="mini-note">biały, galaretowaty osad; w nadmiarze NaOH roztwarza się (amfoteryczność, <a href="#amfoterycznosc">§14</a>)</p>
+<div class="equation-box">MgCl₂ + 2NaOH → Mg(OH)₂↓ + 2NaCl</div><p class="mini-note">biały osad — tak w praktyce szkolnej otrzymuje się Mg(OH)₂</p>
+<div class="equation-box">FeSO₄ + 2NaOH → Fe(OH)₂↓ + Na₂SO₄</div><p class="mini-note">zielonkawy osad, który na powietrzu brunatnieje (niżej)</p>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka — Fe(OH)₂</span>
+<p><span class="formula">Fe(OH)₂</span> jest zwykle opisywany jako osad zielonkawy, który w obecności tlenu z powietrza może utleniać się do brunatnego <span class="formula">Fe(OH)₃</span>. Nie jest to wymagane na E8 — traktuj jako ciekawostkę.</p>
+</div>
+</section>
+<section class="section" id="reakcje">
+<div class="part-heading"><span class="part-num">8</span> Reakcje wodorotlenków <span class="level-badge level-basic">E8</span></div>
+<h3 id="zobojetnianie">8.1 Zobojętnianie</h3>
+<p>Zobojętnianie: kwas + zasada → sól + woda. Jony H⁺ i OH⁻ łączą się w wodę.</p>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="n02-zobojetnianie-v01"><button data-che-open-viz="n02-zobojetnianie-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'n02-zobojetnianie-v01',lessonId:'N02'},'*')" type="button"><b>Zobojętnianie — licznik moli, pH, wskaźniki, jony H⁺ + OH⁻ → H₂O i krzywa pH</b><span>Zastępuje animację i symulator zobojętniania · CHE.HYDROXIDES.neutral (Kw), GFX.ions</span></button></div>
+<p>Postęp zobojętniania śledzimy wskaźnikiem: fenoloftaleina odbarwia się, gdy w roztworze znika nadmiar OH⁻ (barwy wskaźników — <a href="#ph-wskazniki">§6.4</a>).</p>
+<div class="card card-core"><span class="card-label">Równania zobojętniania</span><div class="equation-box" data-rx="hclNaOH">NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)</div><div class="equation-box" data-rx="kohHno3">KOH(aq) + HNO₃(aq) → KNO₃(aq) + H₂O(l)</div><div class="equation-box" data-rx="caoh2Hcl">Ca(OH)₂(aq) + 2HCl(aq) → CaCl₂(aq) + 2H₂O(l)</div><div class="equation-box" data-rx="h2so4Naoh">2NaOH(aq) + H₂SO₄(aq) → Na₂SO₄(aq) + 2H₂O(l)</div><div class="equation-box" data-rx="baoh2H2so4">Ba(OH)₂(aq) + H₂SO₄(aq) → BaSO₄↓ + 2H₂O(l)</div><div class="equation-box" data-rx="cuoh2H2so4">Cu(OH)₂(s) + H₂SO₄(aq) → CuSO₄(aq) + 2H₂O(l)</div><div class="equation-box" data-rx="aloh3Hcl">Al(OH)₃(s) + 3HCl(aq) → AlCl₃(aq) + 3H₂O(l)</div><p class="mini-note">Kontrola: liczba OH⁻ z zasady = liczba H⁺ z kwasu.</p>
+</div><div class="card card-warning"><span class="card-label">Uwaga o Ba(OH)₂ + H₂SO₄</span><p>Zachodzą <strong>dwa procesy naraz</strong>: H⁺ + OH⁻ → H₂O (zobojętnianie) oraz Ba²⁺ + SO₄²⁻ → BaSO₄↓ (strącanie). Dlatego roztwór mętnieje.</p></div>
+<h4 class="merge-h">Licznik moli</h4>
+<p>Dolewaj kwas do zasady i obserwuj, kiedy nastąpi zobojętnienie. To stechiometria w praktyce.</p>
+<p class="mini-note">Licznik moli jest w modelu z tej podsekcji: n(OH⁻) na początku, n(H⁺) dodane, nadmiar, pH i objętość w punkcie równoważnikowym. <b>Założenia:</b> mocny kwas + mocna zasada, pełna dysocjacja, pH z iloczynu jonowego wody K<sub>w</sub> = 10⁻¹⁴, bez aktywności jonów i zmian temperatury. Objętość nie zmienia bilansu moli — zmienia stężenia i pH.</p>
+<p class="mini-note">Zapis jonowy zobojętniania (jony widzowe, równanie skrócone H⁺ + OH⁻ → H₂O): <a href="#rownania-jonowe">§13</a>.</p>
+<h3 id="co2-rozklad">8.2 Reakcja z CO₂ i rozkład termiczny</h3>
+<div class="card card-basic">
+<p><strong>Zasady reagują z tlenkami kwasowymi</strong>, np. z CO₂ — powstaje sól i woda:</p>
+<div class="equation-box" data-rx="caoh2Co2">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</div>
+<div class="equation-box">2NaOH + CO₂ → Na₂CO₃ + H₂O</div>
+<p>Pierwsza reakcja to wykrywanie CO₂ wodą wapienną i twardnienie zaprawy (<a href="#wapno">§6.5</a>). Druga wyjaśnia, dlaczego NaOH przechowuje się szczelnie: oprócz wilgoci pochłania też CO₂ z powietrza.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Rozkład termiczny</span> <span class="level-badge level-understand">ROZUMIENIE</span>
+<p>Trudno rozpuszczalne wodorotlenki podczas ogrzewania rozkładają się na tlenek i wodę, np. <span class="formula">Cu(OH)₂ → CuO + H₂O</span> (niebieski osad czernieje), <span class="formula">2Fe(OH)₃ → Fe₂O₃ + 3H₂O</span>, <span class="formula">Mg(OH)₂ → MgO + H₂O</span>. Wodorotlenki litowców (NaOH, KOH) w zwykłych warunkach w ten sposób się nie rozkładają — topią się.</p>
+</div>
+<h3 id="mapa-przemian">8.3 Mapa przemian i reaktor</h3>
+<div class="card card-core"><span class="card-label">Mapa przemian</span><ul><li><strong>tlenek zasadowy + woda</strong> → wodorotlenek (tylko tlenki metali aktywnych)</li><li><strong>metal aktywny + woda</strong> → wodorotlenek + H₂↑</li><li><strong>sól metalu + zasada</strong> → wodorotlenek↓ + sól (gdy wodorotlenek trudno rozpuszczalny)</li><li><strong>wodorotlenek rozpuszczalny + woda</strong> → zasada (roztwór, jony OH⁻)</li><li><strong>kwas + zasada</strong> → sól + woda</li><li><strong>ogrzewanie</strong> wodorotlenku (poza litowcami) → tlenek + woda (<a href="#co2-rozklad">§8.2</a>)</li></ul><p class="mini-note">Interaktywna mapa dla wybranego wodorotlenku (z równaniami z silnika): model z <a href="#metody">§7.1</a>, zakładka „Mapa przemian”.</p>
+</div>
+<p id="reactor"><strong>Reaktor:</strong> Wybierz dwa substraty — sprawdź, czy zachodzi reakcja i jaka.</p>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="n02-reaktor-v01"><button data-che-open-viz="n02-reaktor-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'n02-reaktor-v01',lessonId:'N02'},'*')" type="button"><b>Reaktor: wodorotlenek + odczynnik — przewiduj, potem sprawdź</b><span>CHE.HYDROXIDES.predict · H₂O, HCl, HNO₃, H₂SO₄, NaOH, CO₂, ogrzewanie, powietrze</span></button></div>
+</section>
+<section class="section" id="zastosowania">
+<div class="part-heading"><span class="part-num">9</span> Zastosowania, BHP i życie codzienne <span class="level-badge level-basic">E8</span></div>
+<h3 id="zastosowania-lista">9.1 Zastosowania</h3>
+<div class="card card-basic">
+<span class="card-label">Zastosowania (PP)</span>
+<ul>
+<li><strong>NaOH:</strong> produkcja mydła, udrażnianie rur, przemysł papierniczy i chemiczny, oczyszczanie spalin.</li>
+<li><strong>KOH:</strong> mydła potasowe (płynne), baterie alkaliczne, laboratoryjnie.</li>
+<li><strong>Ca(OH)₂:</strong> budownictwo (zaprawa), rolnictwo (odkwaszanie gleby — wapnowanie), bielenie pni drzew i ścian, uzdatnianie wody, wykrywanie CO₂ (woda wapienna).</li>
+<li><strong>Al(OH)₃:</strong> leki na zgagę — neutralizuje nadmiar kwasu solnego w żołądku (Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O).</li>
+<li><strong>Mg(OH)₂:</strong> zawiesina „mleko magnezowe” — środek zobojętniający kwas żołądkowy i przeczyszczający; dodatek ognioodporny do tworzyw.</li>
+</ul>
+</div>
+<h3 id="bhp">9.2 BHP — NaOH, KOH, CaO i związki baru</h3>
+<div class="card card-warning">
+<span class="card-label">Ochrona</span>
+<p><strong>Ochrona:</strong> okulary ochronne i odpowiednie rękawice; substancje są silnie żrące. <strong>NaOH i KOH powodują oparzenia chemiczne skóry i oczu</strong> — nie dotykaj ich gołymi rękami; przechowuj w szczelnych naczyniach.</p>
+</div>
+<div class="rule-box" style="background:var(--c-warn-bg);border-color:var(--c-warn-line)">
+<h4 class="merge-h">Rozpuszczanie stałego NaOH / KOH</h4>
+<p><strong>Okulary ochronne:</strong> stały NaOH/KOH oraz ich stężone roztwory są żrące.</p>
+<ol>
+<li>Przygotuj wodę.</li>
+<li>Dodawaj stały NaOH/KOH <strong>małymi porcjami do wody</strong>.</li>
+<li>Mieszaj i kontroluj temperaturę.</li>
+<li>Nie dodawaj wody do dużej porcji stałego NaOH/KOH.</li>
+<li>Po kontakcie ze skórą lub oczami natychmiast płucz dużą ilością wody i zgłoś zdarzenie nauczycielowi/opiekunowi, zgodnie z procedurą pracowni.</li>
+</ol>
+<p class="mini-note">Powód: rozpuszczanie jest silnie egzotermiczne i może powodować gwałtowne nagrzanie oraz rozprysk.</p>
+</div>
+<div class="rule-box" style="background:var(--c-warn-bg);border-color:var(--c-warn-line)">
+<h4 class="merge-h">Gaszenie wapna: CaO + H₂O</h4>
+<p>Doświadczenie wykonuje nauczyciel lub osoba prowadząca doświadczenie zgodnie z procedurą pracowni. CaO dodaje się ostrożnie, małymi porcjami; reakcja jest silnie egzotermiczna. Nie pochylaj się nad naczyniem i nie dotykaj gorącego układu. Nie dotykaj CaO mokrymi rękami — drobne cząstki Ca(OH)₂ unoszące się z parą są żrące dla oczu.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Inne zagrożenia</span>
+<ul>
+<li><strong>Związki baru:</strong> jony Ba²⁺ są toksyczne — Ba(OH)₂ nie jest stosowany w doświadczeniach uczniowskich.</li>
+<li><strong>Sód i potas:</strong> reagują z wodą gwałtownie, wydziela się palny wodór — wyłącznie pokaz nauczyciela, bardzo mała porcja metalu, osłona.</li>
+<li><strong>Środki do udrażniania rur</strong> zawierają NaOH — używaj w rękawicach, nie mieszaj z innymi środkami czystości (zwłaszcza kwasowymi).</li>
+</ul>
+</div>
+<h3 id="zycie">9.3 Z życia codziennego — pytania</h3>
+<div class="card">
+<p><strong>1. Dlaczego NaOH jest w środkach do udrażniania rur?</strong></p>
+<details class="answer"><summary>Model odpowiedzi</summary>
+<p>NaOH jest silnie żrący i rozkłada tłuszcze oraz białka (zmydlanie). <strong>BHP:</strong> bardzo niebezpieczny.</p>
+</details>
+</div>
+<div class="card">
+<p><strong>2. Dlaczego woda wapienna mętnieje przy dmuchaniu?</strong></p>
+<details class="answer"><summary>Model odpowiedzi</summary>
+<p><span class="formula" data-rx="caoh2Co2">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span>. Trudno rozpuszczalny CaCO₃ tworzy osad. Przy dużym nadmiarze CO₂ osad może się ponownie rozpuszczać (powstaje Ca(HCO₃)₂).</p>
+</details>
+</div>
+<div class="card">
+<p><strong>3. Dlaczego mydło ma odczyn lekko zasadowy?</strong></p>
+<details class="answer"><summary>Model odpowiedzi</summary>
+<p>Mydło to sól słabego kwasu i mocnej zasady. W wodzie ulega hydrolizie — powstają jony OH⁻.</p>
+</details>
+</div>
+<div class="card">
+<p><strong>4. Dlaczego preparaty na zgagę zawierają Al(OH)₃ lub Mg(OH)₂?</strong></p>
+<details class="answer"><summary>Model odpowiedzi</summary>
+<p>Neutralizują HCl w żołądku: <span class="formula" data-rx="aloh3Hcl">Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O</span>. Nie są tak żrące jak NaOH.</p>
+</details>
+</div>
+<div class="card">
+<p><strong>5. Dlaczego wapno palone gaśnie po zalaniu wodą?</strong></p>
+<details class="answer"><summary>Model odpowiedzi</summary>
+<p><span class="formula">CaO + H₂O → Ca(OH)₂ + ciepło</span>. Reakcja egzotermiczna. <strong>BHP:</strong> nie dotykać mokrymi rękami.</p>
+</details>
+</div>
+<p class="mini-note">Czy woda amoniakalna to wodorotlenek? — <a href="#zasada-oh">§10.2</a>.</p>
+</section>
+<section class="section" id="model">
+<div class="part-heading"><span class="part-num">10</span> Model bez skrótów — cztery pytania o wodorotlenek <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p class="lead"><strong>Cel korekty:</strong> oddzielić budowę substancji, jej rozpuszczalność, dysocjację i odczyn. Te cztery rzeczy są powiązane, ale nie są tym samym.</p>
+<h3 id="cztery-pytania">10.1 Cztery pytania zamiast jednego hasła „zasada”</h3>
+<div class="rule-box">
+<ol>
+<li><strong>Co to jest?</strong> Wodorotlenek metalu to związek zawierający kation metalu i aniony OH⁻; szkolny wzór zapisu składu ma postać M(OH)<sub>n</sub>.</li>
+<li><strong>Czy rozpuszcza się w wodzie?</strong> To pytanie o ilość substancji, która przechodzi do roztworu.</li>
+<li><strong>Co dzieje się z częścią rozpuszczoną?</strong> Dla typowych dobrze rozpuszczalnych wodorotlenków szkolny model zakłada praktycznie całkowitą dysocjację: NaOH → Na⁺ + OH⁻.</li>
+<li><strong>Jaki jest odczyn roztworu?</strong> Jeśli w roztworze jest zwiększone stężenie OH⁻, roztwór ma odczyn zasadowy.</li>
+</ol>
+<div class="table-wrap table-compact">
+<table>
+<thead><tr><th>Pytanie</th><th>Co sprawdzamy?</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>Co to jest?</td><td>budowa związku</td><td>Ca(OH)₂</td></tr>
+<tr><td>Czy się rozpuszcza?</td><td>ile substancji przechodzi do roztworu</td><td>Ca(OH)₂ — ograniczenie rozpuszczalności</td></tr>
+<tr><td>Co jest w roztworze?</td><td>jony rozpuszczonej części</td><td>Ca²⁺ i OH⁻</td></tr>
+<tr><td>Jaki jest odczyn?</td><td>związany ze stężeniem jonów w roztworze</td><td>woda wapienna ma odczyn zasadowy</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Wniosek:</strong> „trudno rozpuszczalny” nie znaczy „słaba zasada” w tym samym sensie co przy kwasach. Najpierw trzeba ustalić, ile substancji jest w roztworze, a dopiero potem rozpatrywać zachowanie rozpuszczonej części.</p>
+</div>
+<h3 id="zasada-oh">10.2 Wodorotlenek ≠ zasada ≠ OH⁻; amoniak i NH₄OH</h3>
+<div class="rule-box" style="background:var(--c-warn-bg);border-color:var(--c-warn-line)">
+<ul>
+<li><strong>OH⁻</strong> jest konkretnym anionem wodorotlenkowym.</li>
+<li><strong>Wodorotlenek</strong> jest związkiem chemicznym, np. NaOH(s), Ca(OH)₂(s), Cu(OH)₂(s).</li>
+<li><strong>Roztwór zasadowy</strong> zawiera nadmiar jonów OH⁻ względem czystej wody.</li>
+<li>W szerszym ujęciu <strong>zasada nie musi być wodorotlenkiem</strong>: NH₃ jest zasadą Brønsteda, bo może przyjąć proton, tworząc NH₄⁺.</li>
+</ul>
+<p>Szkolny skrót „zasada = rozpuszczalny wodorotlenek” jest użyteczny na poziomie E8, ale nie jest pełną definicją chemiczną.</p>
+</div>
+<div class="rule-box">
+<b>Uwaga o definicji szkolnej:</b> powyższe rozróżnienie to <strong>definicja szkolna</strong> (Arrheniusa). W szerszym ujęciu chemicznym (liceum, teoria Brønsteda) zasadami są także inne substancje zdolne do przyjmowania protonów (H⁺) — np. amoniak NH₃. Historia pojęcia i teoria Brønsteda: <a href="#ambitny">Dodatek B</a>.
+      </div>
+<div class="card card-extra">
+<span class="card-label">Amoniak i zapis NH₄OH — pułapka E8</span>
+<p><strong>Amoniak NH₃</strong> i woda amoniakalna dają odczyn zasadowy, ale NH₃ <em>nie jest wodorotlenkiem</em> (brak metalu i grupy OH⁻ we wzorze substancji). To zasada w sensie Brønsteda / odczynu roztworu — szczegóły w <a href="#ambitny">Dodatku B</a>.</p>
+<p><span class="formula">NH₄OH</span> można spotkać jako tradycyjny skrót. Dokładniejszy model wodnego amoniaku:</p>
+<div class="equation-box"><strong>NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)</strong></div>
+<p>Woda amoniakalna to roztwór <span class="formula">NH₃</span> w wodzie. Część cząsteczek reaguje: <span class="formula">NH₃ + H₂O ⇌ NH₄⁺ + OH⁻</span>. Powstają jony OH⁻, więc odczyn jest zasadowy, ale wzór „NH₄OH” to uproszczenie szkolne — w rzeczywistości nie ma stabilnej cząsteczki NH₄OH jak w NaOH. Na E8 wystarczy: roztwór amoniaku ma odczyn zasadowy i reaguje z kwasami.</p>
+</div>
+<h3 id="moc-rozpuszczalnosc">10.3 Rozpuszczalność, dysocjacja i moc — przykład Ca(OH)₂</h3>
+<div class="card card-warning">
+<span class="card-label">Rozpuszczalny ≠ mocny</span>
+<p><strong>Rozpuszczalność</strong> mówi, ile substancji przechodzi do wody. <strong>Moc zasady</strong> mówi, jak duża część rozpuszczonej substancji tworzy jony. To różne pojęcia.</p>
+<p>Na poziomie klasy 8 najważniejsze jest, że dobrze rozpuszczalne wodorotlenki dają roztwory zawierające dużo jonów OH⁻. Ca(OH)₂ jest słabo rozpuszczalny, ale jego rozpuszczona część dysocjuje praktycznie całkowicie — dlatego woda wapienna ma wyraźny odczyn zasadowy.</p>
+</div>
+<div class="rule-box">
+<h4 class="merge-h">Model rozpuszczania Ca(OH)₂ — nie myl osadu z roztworem</h4>
+<p>Ca(OH)₂ jest trudno rozpuszczalny. Ustala się równowaga między fazą stałą a jonami w roztworze:</p>
+<div class="equation-box"><strong>Ca(OH)₂(s) ⇌ Ca²⁺(aq) + 2OH⁻(aq)</strong></div>
+<p><strong>Woda wapienna</strong> to klarowny, nasycony roztwór zawierający rozpuszczoną część Ca(OH)₂. <strong>Mleko wapienne</strong> to zawiesina, w której pozostaje dużo fazy stałej. Nie są to dwie różne substancje.</p>
+</div>
+<div class="rule-box">
+<h4 class="merge-h">Dysocjacja a zapis wzoru</h4>
+<p>Nawias w <strong>Ca(OH)₂</strong> oznacza, że jednostka składu zawiera dwa aniony OH⁻. Po rozpuszczeniu zapisujemy:</p>
+<div class="equation-box"><strong>Ca(OH)₂(aq) → Ca²⁺(aq) + 2OH⁻(aq)</strong></div>
+<p>To nie oznacza, że w wodzie pływają „cząsteczki Ca(OH)₂” w takim samym sensie jak pojedyncze cząsteczki substancji kowalencyjnej. W szkolnym modelu dla rozpuszczonej soli/wodorotlenku śledzimy przede wszystkim jony.</p>
+</div>
+<details class="adv"><summary>Iloczyn rozpuszczalności — skąd pH 12,4 wody wapiennej? <span class="adv-tag">poziom LO / akademicki</span></summary><div class="adv-body"><p>Dla osadu M(OH)ₙ(s) ⇌ Mⁿ⁺ + n OH⁻: K<sub>sp</sub> = [Mⁿ⁺]·[OH⁻]ⁿ. Rozpuszczalność molowa s = (K<sub>sp</sub>/nⁿ)<sup>1/(n+1)</sup>, [OH⁻] = n·s, pH = 14 + log[OH⁻].</p><div class="table-wrap table-compact"><table><thead><tr><th>Wodorotlenek</th><th>K<sub>sp</sub> (25 °C)</th><th>s (mol/dm³)</th><th>pH nasyconego</th></tr></thead><tbody><tr><td>Ca(OH)₂</td><td>5,5e-06</td><td>1,1e-02</td><td>12,3</td></tr><tr><td>Mg(OH)₂</td><td>5,6e-12</td><td>1,1e-04</td><td>10,3</td></tr><tr><td>Fe(OH)₂</td><td>4,9e-17</td><td>2,3e-06</td><td>8,7</td></tr><tr><td>Fe(OH)₃</td><td>2,8e-39</td><td>1,0e-10</td><td>7,0 (≈ obojętny)</td></tr><tr><td>Cu(OH)₂</td><td>2,2e-20</td><td>1,8e-07</td><td>7,5 (≈ obojętny)</td></tr><tr><td>Zn(OH)₂</td><td>3,0e-17</td><td>2,0e-06</td><td>8,6</td></tr><tr><td>Al(OH)₃</td><td>1,3e-33</td><td>2,6e-09</td><td>7,0 (≈ obojętny)</td></tr><tr><td>Ni(OH)₂</td><td>5,5e-16</td><td>5,2e-06</td><td>9,0</td></tr><tr><td>Mn(OH)₂</td><td>2,0e-13</td><td>3,7e-05</td><td>9,9</td></tr></tbody></table></div><p class="mini-note">Ca(OH)₂: s ≈ 0,011 mol/dm³ → pH ≈ 12,35 (pomiar ≈ 12,4); Mg(OH)₂: pH ≈ 10,4 (mleko magnezowe). Dla Fe(OH)₃ czy Cu(OH)₂ jonów OH⁻ z osadu jest mniej niż w czystej wodzie — dlatego zawiesina nie zmienia odczynu. Wartości: CHE.HYDROXIDES.KSP / satpH.</p>
+</div></details>
+</section>
+<section class="section" id="modele-budowy">
+<div class="part-heading"><span class="part-num">11</span> Modele budowy — rysunek szkolny a sieć jonowa <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<h3 id="model3d">11.1 Dwa szkolne sposoby rysowania: NaOH, Ca(OH)₂, Al(OH)₃</h3>
+<p>W polskich podręcznikach kl. 8 wodorotlenki rysuje się jak poniżej: <strong>ciągła kreska</strong> = wiązanie kowalencyjne spolaryzowane O–H w grupie OH⁻, <strong>przerywana</strong> = oddziaływanie elektrostatyczne o charakterze jonowym między kationem metalu a jonami OH⁻. Rysunek jest modelem poglądowym, a nie dokładną geometrią struktury krystalicznej.</p>
+<div class="widget">
+<h4>Porównanie struktury (styl podręcznikowy)</h4>
+<p class="widget-hint">NaOH: jedna grupa OH⁻. Ca(OH)₂: dwie grupy OH⁻ — zapis składu związku, nie wzór strukturalny H–O–Ca–O–H.</p>
+<div style="display:grid;grid-template-columns:1fr;gap:14px;">
+<div style="background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:14px;text-align:center;">
+<div style="font-size:12px;font-weight:800;color:var(--text-muted);margin-bottom:8px;">NaOH — wodorotlenek sodu</div>
+<div class="svgx"><span>Na</span><span>O</span><span>H</span><span>Na⁺</span><span>OH⁻</span><span>- - - oddziaływanie jonowe —— kowalencyjne O–H</span></div><p class="mini-note">Ten sam układ (kation, grupy OH⁻, nawias) pokazuje interaktywnie model „Wzór wodorotlenku” w <a href="#wzor-ogolny">§5.2</a>: modele A, B i jony.</p>
+</div>
+<div style="background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:14px;text-align:center;">
+<div style="font-size:12px;font-weight:800;color:var(--text-muted);margin-bottom:8px;">Ca(OH)₂ — wodorotlenek wapnia (model poglądowy)</div>
+<div class="svgx"><span>H</span><span>O</span><span>Ca</span><span>OH⁻</span><span>Ca²⁺</span><span>zapis poglądowy: H–O–Ca–O–H</span></div>
+</div>
+<div style="background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:14px;text-align:center;grid-column:1/-1;">
+<div style="font-size:12px;font-weight:800;color:var(--text-muted);margin-bottom:8px;">Widok poglądowy składu — Ca(OH)₂ i Al(OH)₃ (nie przedstawia rzeczywistej geometrii kryształu)</div>
+<div style="display:grid;grid-template-columns:1fr;gap:10px;">
+<div id="modelBrCa"></div>
+<div id="modelBrAl"></div>
+</div>
+<p class="mini-note" style="margin-top:8px;">Ramiona M···O mogą iść pod kątem; <strong>grupa O–H zawsze w poziomie</strong> (jak w podręczniku). To <strong>model szkolny</strong> (ZPE / podręczniki kl. 8). W ciele stałym wodorotlenek to <strong>sieć jonów</strong>, a nie pojedyncza „cząsteczka” HO–M–OH.</p>
+</div>
+</div>
+<div class="bond-legend">
+<span><i class="bl-solid"></i> wiązanie kowalencyjne O–H wewnątrz grupy OH⁻</span>
+<span><i class="bl-dash"></i> oddziaływanie elektrostatyczne (jonowe) kation···OH⁻</span>
+</div>
+</div>
+<div class="card card-basic">
+<span class="card-label">Model A — szkolny, po prawej</span>
+<p>Najczęściej spotykany w podręcznikach. Grupy <span class="formula">OH⁻</span> rysuje się <strong>po jednej stronie</strong> kationu, zwykle po prawej. <strong>Linia od metalu do O</strong> jest przerywana, a <strong>linia od O do H</strong> jest ciągła.</p>
+<div class="formula-lg">Al(OH)₃</div>
+<div class="svgx"><span>O</span><span>H</span><span>Al</span></div>
+<p><strong>To jest model szkolny (A)</strong> — dobry do zrozumienia, ile jest grup OH⁻. Nie jest dokładną geometrią kryształu.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Model B — przestrzenny, bez udawania wzoru strukturalnego</span>
+<p>Jeżeli pokazujemy grupy <span class="formula">OH⁻</span> po obu stronach metalu, <strong>nie zmieniamy ich orientacji w napis „HO”</strong>. Każda grupa pozostaje jednym blokiem <span class="formula">OH⁻</span>. Schemat pokazuje relację przestrzenną, a nie rzeczywistą geometrię kryształu.</p>
+<div class="formula-lg">Al(OH)₃</div>
+<div class="svgx"><span>OH⁻</span><span>Al³⁺</span><span>centrum</span></div>
+<p><strong>Nie czytaj tego jako „Al–O–H” w jednej osi.</strong> Linie przerywane są tylko znakiem relacji/modelu. Nie są wiązaniami strukturalnymi. Najważniejsze: <span class="formula">Al³⁺ + 3 OH⁻ → Al(OH)₃</span> oraz suma ładunków <span class="formula">+3 + 3·(−1) = 0</span>.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Dlaczego obie konwencje są poprawne?</span>
+<p>W obu wariantach widać to samo: atom metalu jest połączony z <strong>n grupami OH⁻</strong> i związek ma ten sam wzór sumaryczny <span class="formula">M(OH)ₙ</span>.</p>
+<p>Różnica nie dotyczy <strong>składu chemicznego</strong>, tylko <strong>sposobu przedstawienia</strong>.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Poziom</th><th>Preferowana konwencja</th></tr>
+</thead>
+<tbody>
+<tr><td>Szkoła podstawowa</td><td>Wariant A — czytelność i prostota</td></tr>
+<tr><td>Liceum / rozszerzenie</td><td>Wariant B — większy realizm przestrzenny</td></tr>
+<tr><td>Olimpiada / chemia zaawansowana</td><td>Wariant B lub bardziej złożone zapisy polimeryczne</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card card-understand">
+<span class="card-label">Jak rysować — krok po kroku</span>
+<ol>
+<li>Zacznij od wzoru sumarycznego: np. <span class="formula">Al(OH)₃</span>.</li>
+<li>Odczytaj ładunek kationu.</li>
+<li>Ustal (policz) liczbę grup <span class="formula">OH⁻</span>.</li>
+<li>Rysuj każdą grupę <span class="formula">OH⁻</span> jako jeden blok.</li>
+<li>Zapisz wzór sumaryczny: <span class="formula">NaOH</span>, <span class="formula">Ca(OH)₂</span>, <span class="formula">Al(OH)₃</span>.</li>
+<li>W praktyce szkolnej wybierz <strong>czytelny model A</strong>, jeśli nie ma polecenia o geometrii przestrzennej.</li>
+</ol>
+<p>Ważne jest, żeby z rysunku było jasne: <strong>ile grup OH⁻ jest przyłączonych</strong>.</p>
+</div>
+<h3 id="siec-jonowa">11.2 Model a rzeczywista struktura — sieć jonowa</h3>
+<div class="card card-warning">
+<span class="card-label">Kluczowa poprawka</span>
+<p>Zapis <span class="formula">Ca(OH)₂</span> jest zapisem <strong>składu związku</strong>, a nie wzorem strukturalnym pojedynczej cząsteczki. W uproszczonym modelu pokazujemy jon <span class="formula">Ca²⁺</span> oraz dwa jony <span class="formula">OH⁻</span>.</p>
+<p>W krysztale <span class="formula">Ca(OH)₂</span> występuje uporządkowana <strong>sieć jonów</strong>, a nie pojedyncza cząsteczka <span class="formula">H–O–Ca–O–H</span>. Rysunek <span class="formula">H–O–Ca–O–H</span> jest tylko <strong>modelem poglądowym rozmieszczenia jonów</strong> — nie wzorem strukturalnym cząsteczki.</p>
+<p>Stały wodorotlenek wapnia nie jest pojedynczą cząsteczką typu <span class="formula">H–O–Ca–O–H</span>. Taki rysunek może służyć wyłącznie jako model poglądowy liczby grup OH⁻.</p>
+<p>Najważniejsze jest, aby z rysunku było jasne: <strong>ile grup <span class="formula">OH⁻</span> przyłącza się do kationu</strong> i że każda grupa <span class="formula">OH</span> jest traktowana jako <strong>jedna całość</strong>.</p>
+<p>Żaden z tych rysunków nie odtwarza dokładnie budowy kryształu w stanie stałym. Dlatego oba wzory to <strong>modele poglądowe</strong> — przydatne w nauce, ale nie całkowicie dokładne.</p>
+</div>
+<details class="adv"><summary>Jak naprawdę wygląda kryształ Ca(OH)₂ i Mg(OH)₂? <span class="adv-tag">poziom akademicki</span></summary><div class="adv-body"><p>Ca(OH)₂ (portlandyt) i Mg(OH)₂ (brucyt) mają <strong>strukturę warstwową</strong>: płaskie warstwy kationów M²⁺ leżą między dwiema warstwami jonów OH⁻. Każdy kation otacza sześć jonów OH⁻ (koordynacja oktaedryczna), a każdy jon OH⁻ łączy trzy kationy. Wiązania O–H są ustawione prostopadle do warstw, a sąsiednie warstwy trzymają się słabymi oddziaływaniami — dlatego kryształy łatwo się łupią. To wyjaśnia, dlaczego „cząsteczka H–O–Ca–O–H” nie istnieje: każdy Ca²⁺ ma sześciu sąsiadów OH⁻, a nie dwóch.</p></div></details>
+</section>
+<section class="section" id="ion-lab">
+<div class="part-heading"><span class="part-num">12</span> Strącanie od środka — laboratorium jonowe <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Zobacz, jak swobodne jony poruszają się w roztworze, zbliżają się dzięki oddziaływaniom elektrostatycznym, a następnie mogą tworzyć skupiska i osad. To jest <strong>model strącania od środka</strong>, a nie film dosłownej trajektorii każdego jonu.</p>
+<div class="card card-understand" id="n02-ion-model-rules">
+<div class="card-label">Co naprawdę pokazuje animacja?</div>
+<ol><li><strong>Co widzę?</strong> — swobodne jony poruszają się w roztworze.</li><li><strong>Co robię?</strong> — obserwuję zbliżanie się kationu i jonów <span class="formula">OH⁻</span>.</li><li><strong>Dlaczego?</strong> — ładunki przeciwne przyciągają się elektrostatycznie; samo przyciąganie nie oznacza jednak, że każdy kontakt od razu tworzy trwały osad.</li><li><strong>Jak sprawdzam?</strong> — sprawdzam proporcję jonów, rozpuszczalność produktu i zapis równania jonowego.</li></ol>
+<p class="widget-hint">Model dydaktyczny: wolne jony → zbliżanie i zderzenia → krótkotrwałe skupiska → zarodki → osad.</p>
+<p><strong>Ważne:</strong> w modelu animacji mogą pojawiać się krótkotrwałe, niepełne skupiska lub etapy pośrednie. Nie przedstawiamy ich jako „gotowych cząsteczek po kolei”, lecz jako uproszczony model zbliżania, reorganizacji i tworzenia zarodków osadu.</p>
+<p>Rzeczywisty proces jest bardziej złożony i może obejmować formy pośrednie oraz kompleksy. Animacja ma pokazać ideę powstawania fazy stałej, a nie pełną kinetykę procesu.</p>
+</div>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="n02-stracanie-v01"><button data-che-open-viz="n02-stracanie-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'n02-stracanie-v01',lessonId:'N02'},'*')" type="button"><b>Laboratorium jonowe — strącanie 13 wodorotlenków (model cząsteczkowy)</b><span>CHE.sim.ParticleSim · barwy osadów CHE.COLORS · równania jonowe CHE.IONIC</span></button></div>
+<details class="adv"><summary>Etapy pośrednie strącania — hydroksokompleksy <span class="adv-tag">poziom LO / akademicki</span></summary><div class="adv-body">
+<p>Ta animacja przedstawia <strong>uproszczony moment pojawienia się osadu</strong>. W rzeczywistości proces przebiega stopniowo: najpierw powstają hydroksokompleksy, np. <span class="formula">Fe(OH)²⁺</span> i <span class="formula">Fe(OH)₂⁺</span>, a dopiero później tworzy się <span class="formula">Fe(OH)₃↓</span>.</p>
+<p><strong>Uproszczony ciąg:</strong> <span class="formula">Fe³⁺ → Fe(OH)²⁺ → Fe(OH)₂⁺ → Fe(OH)₃⁰ → Fe(OH)₃↓</span>.</p>
+<p>Dla miedzi wygląda podobnie: <span class="formula">[Cu(H₂O)₆]²⁺ → [Cu(H₂O)₅(OH)]⁺ → [Cu(H₂O)₄(OH)₂]⁰ → Cu(OH)₂↓</span>. To jest <strong>dobry model dydaktyczny</strong>, ale nie pełny opis mechanizmu chemicznego w roztworze.</p>
+</div></details>
+<p class="mini-note">Równania strąceń i barwy osadów: <a href="#stracanie">§7.2</a>; zapis jonowy: <a href="#rownania-jonowe">§13</a>.</p>
+</section>
+<section class="section" id="rownania-jonowe">
+<div class="part-heading"><span class="part-num">13</span> Równania jonowe <span class="level-badge level-extra">AMBITNE</span></div>
+<p>Równanie jonowe pokazuje, które jony naprawdę biorą udział w reakcji. Zapis prowadzimy w trzech krokach: cząsteczkowe → jonowe pełne → jonowe skrócone (bez jonów widzów).</p>
+<h3 id="jonowe-zobojetnianie">13.1 Zobojętnianie w zapisie jonowym</h3>
+<div class="jonowe-box">
+<span class="jb-level">Liceum / konkurs</span>
+<p>Reakcja <span class="formula">NaOH + HCl</span> na trzech poziomach:</p>
+<div class="jb-label">1. Równanie cząsteczkowe (szkolne)</div>
+<div class="jb-eq">NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)</div>
+<div class="jb-label">2. Równanie jonowe pełne</div>
+<div class="jb-eq">Na⁺ + OH⁻ + H⁺ + Cl⁻ → Na⁺ + Cl⁻ + H₂O</div>
+<div class="jb-label">3. Równanie jonowe skrócone (istota reakcji)</div>
+<div class="jb-eq">H⁺ + OH⁻ → H₂O</div>
+<p style="margin-top:12px;font-size:13.5px;">Jony Na⁺ i Cl⁻ nie zmieniają się — to <strong>jony widzowe</strong>.</p>
+<p style="margin-top:10px;font-size:13px;"><strong>Ważne:</strong> równania jonowe dotyczą <strong>roztworów wodnych</strong>. Nie należy rozpisywać na jony substancji stałych ani czystych cieczy. HCl, NaOH i NaCl zapisuje się jako jony tylko wtedy, gdy są w roztworze wodnym.</p>
+</div>
+<h3 id="jonowe-stracanie">13.2 Strącanie i reakcje osadów w zapisie jonowym</h3>
+<div class="jonowe-box">
+<span class="jb-level">Liceum / konkurs</span>
+<div class="jb-label">CuSO₄ + 2NaOH — jonowe pełne</div>
+<div class="jb-eq">Cu²⁺ + SO₄²⁻ + 2Na⁺ + 2OH⁻ → Cu(OH)₂↓ + 2Na⁺ + SO₄²⁻</div>
+<div class="jb-label">Jonowe skrócone</div>
+<div class="jb-eq">Cu²⁺ + 2OH⁻ → Cu(OH)₂↓</div>
+<div class="jb-eq">Fe³⁺ + 3OH⁻ → Fe(OH)₃↓</div>
+<div class="jb-eq">Al³⁺ + 3OH⁻ → Al(OH)₃↓</div>
+<div class="jb-label">Osad jako substrat — nie rozpisujemy go na jony</div>
+<div class="jb-eq">Cu(OH)₂(s) + 2H⁺ → Cu²⁺ + 2H₂O</div>
+<div class="jb-label">Ba(OH)₂ + H₂SO₄ — nic się nie skraca</div>
+<div class="jb-eq">Ba²⁺ + 2OH⁻ + 2H⁺ + SO₄²⁻ → BaSO₄↓ + 2H₂O</div>
+<p style="margin-top:10px;font-size:13px;">W ostatniej reakcji wszystkie jony biorą udział w przemianie — powstaje osad i woda, dlatego nie ma jonów widzów.</p>
+</div>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="rownania-jonowe-v01"><button data-che-open-viz="rownania-jonowe-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'rownania-jonowe-v01',lessonId:'N02'},'*')" type="button"><b>Równania jonowe — wszystkie reakcje z silnika (strącanie OH⁻, zobojętnianie)</b><span>Zapis cząsteczkowy, jonowy pełny i skrócony · CHE.IONIC</span></button></div>
+<p class="mini-note">Zapis zobojętniania: cząsteczkowy, jonowy pełny i jonowy skrócony — w modelu „Równania jonowe” wyżej wybierz reakcję HCl + NaOH (jeden model dla wszystkich równań jonowych lekcji).</p>
+</section>
+<section class="section" id="amfoterycznosc">
+<div class="part-heading"><span class="part-num">14</span> Amfoteryczność <span class="level-badge level-extra">AMBITNE</span></div>
+<div class="card card-extra">
+<span class="card-label">Rozumienie rozszerzone</span>
+<p><strong>Amfoteryczny</strong> = reaguje z kwasami i z mocnymi zasadami. Najważniejsze: <span class="formula">Al(OH)₃</span> i <span class="formula">Zn(OH)₂</span>.</p>
+<div class="table-wrap table-compact table-amph-desktop">
+<table>
+<thead><tr><th>Wodorotlenek</th><th>Z kwasem</th><th>Z mocną zasadą</th></tr></thead>
+<tbody>
+<tr><td>Al(OH)₃</td><td>Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O</td><td>Al(OH)₃ + NaOH → Na[Al(OH)₄]</td></tr>
+<tr><td>Zn(OH)₂</td><td>Zn(OH)₂ + 2HCl → ZnCl₂ + 2H₂O</td><td>Zn(OH)₂ + 2NaOH → Na₂[Zn(OH)₄]</td></tr>
+</tbody>
+</table>
+</div>
+<div aria-label="Amfoteryczność — widok kart" class="amph-cards">
+<div class="amph-card"><strong>Al(OH)₃</strong>
+<div>Z kwasem: <span class="formula" data-rx="aloh3Hcl">Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O</span></div>
+<div style="margin-top:6px;">Z mocną zasadą: <span class="formula">Al(OH)₃ + NaOH → Na[Al(OH)₄]</span></div>
+</div>
+<div class="amph-card"><strong>Zn(OH)₂</strong>
+<div>Z kwasem: <span class="formula" data-rx="znoh2Hcl">Zn(OH)₂ + 2HCl → ZnCl₂ + 2H₂O</span></div>
+<div style="margin-top:6px;">Z mocną zasadą: <span class="formula">Zn(OH)₂ + 2NaOH → Na₂[Zn(OH)₄]</span></div>
+</div>
+</div>
+<p class="mini-note">Na poziomie E8 wystarczy wiedzieć, że <strong>Al(OH)₃ i Zn(OH)₂ reagują i z kwasami, i z mocnymi zasadami</strong>. Równania z jonami kompleksowymi (<span class="formula">Na[Al(OH)₄]</span>, <span class="formula">Na₂[Zn(OH)₄]</span>) są rozszerzeniem i nie są wymagane na egzaminie ósmoklasisty.</p>
+</div>
+<div class="rule-box">
+<h4 class="merge-h">Amfoteryczność — zawsze pytaj „z czym?”</h4>
+<p>Al(OH)₃ i Zn(OH)₂ są klasycznymi przykładami wodorotlenków amfoterycznych. Reagują zarówno z kwasami, jak i z mocnymi zasadami, ale <strong>produkt i zapis zależą od środowiska</strong>.</p>
+<div class="equation-box"><strong>Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O</strong></div>
+<div class="equation-box"><strong>Al(OH)₃ + OH⁻ → [Al(OH)₄]⁻</strong> <span class="level-badge level-extra">LO</span></div>
+<div class="equation-box"><strong>Zn(OH)₂ + 2OH⁻ → [Zn(OH)₄]²⁻</strong> <span class="level-badge level-extra">LO</span></div>
+<p>Nie używamy skrótu „amfoteryczny = reaguje ze wszystkim”.</p>
+<p class="mini-note">Reakcje z mocnymi zasadami prowadzą do jonów kompleksowych; szczegółowy zapis należy do warstwy rozszerzonej.</p>
+</div>
+<p class="mini-note">Doświadczenie z Al(OH)₃ w kwasie i w nadmiarze zasady: <a href="#doswiadczenia">§15, doświadczenie H</a>. Tlenki amfoteryczne (Al₂O₃, ZnO): lekcja N01.</p>
+</section>
+<section class="section" id="doswiadczenia">
+<div class="part-heading"><span class="part-num">15</span> Doświadczenia modelowe <span class="level-badge level-basic">E8</span></div>
+<p>Format egzaminacyjny: problem → hipoteza → sprzęt → przebieg → obserwacje → wniosek → równanie → BHP. Wykonuj tylko pod nadzorem nauczyciela. Każde doświadczenie obejrzysz w pracowni silnika (animacja, równania jonowe, warunki).</p>
+<p class="mini-note">Zasady BHP dla NaOH/KOH i gaszenia wapna: <a href="#bhp">§9.2</a>.</p>
+<div class="rule-box">
+<h4 class="merge-h">Obserwacja → wniosek — jak zapisać doświadczenie</h4>
+<div class="table-wrap table-compact">
+<table>
+<thead><tr><th>Warstwa</th><th>Przykład dla CaO + H₂O</th></tr></thead>
+<tbody>
+<tr><td>Obserwacja</td><td>układ wyraźnie się nagrzewa</td></tr>
+<tr><td>Wniosek</td><td>zaszła reakcja z wydzieleniem ciepła; powstaje Ca(OH)₂</td></tr>
+<tr><td>Równanie</td><td><span class="formula" data-rx="caoH2o">CaO + H₂O → Ca(OH)₂</span></td></tr>
+<tr><td>Ograniczenie</td><td>obserwacja nie pokazuje mikroskopowego mechanizmu reakcji</td></tr>
+</tbody>
+</table>
+</div>
+</div><div class="che-lesson-viz-ref" data-che-lesson-viz="n02-doswiadczenia-v01"><button data-che-open-viz="n02-doswiadczenia-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'n02-doswiadczenia-v01',lessonId:'N02'},'*')" type="button"><b>Pracownia: 26 doświadczeń z wodorotlenkami — zlewka, równania, obserwacje, BHP</b><span>GFX.rx · D.REACTIONS · CHE.IONIC</span></button></div>
+<div class="exp-card"><h5>Doświadczenie A — Otrzymywanie NaOH: sód + woda <span class="level-badge level-basic">E8</span></h5><div class="exp-grid"><b>Problem</b><span>Co powstaje w reakcji sodu z wodą?</span><b>Hipoteza</b><span>Powstaje zasada i gaz.</span><b>Sprzęt i odczynniki</b><span>krystalizator z wodą i fenoloftaleiną, kawałek sodu wielkości ziarna grochu, szczypce, osłona</span><b>Przebieg</b><span>Nauczyciel wrzuca mały kawałek Na do wody z fenoloftaleiną.</span><b>Obserwacje</b><span>Sód topi się w kulkę i „biega” po powierzchni, słychać syczenie, wydziela się gaz; roztwór barwi się na malinowo.</span><b>Równanie</b><span><span class="formula" data-rx="naH2o">2Na + 2H₂O → 2NaOH + H₂↑</span></span><b>Wniosek</b><span>Metal aktywny + woda → wodorotlenek + wodór; roztwór ma odczyn zasadowy.</span><b>BHP</b><span>Wyłącznie pokaz nauczyciela: okulary, osłona, bardzo mała porcja sodu (wodór może się zapalić).</span></div><button class="che-prac-go" data-k="naH2o" data-prac="n02-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button></div>
+<div class="exp-card"><h5>Doświadczenie B — Gaszenie wapna: CaO + H₂O <span class="level-badge level-basic">E8</span></h5><div class="exp-grid"><b>Problem</b><span>Co się dzieje, gdy do CaO dodamy wody?</span><b>Hipoteza</b><span>Powstanie wodorotlenek wapnia, wydzieli się ciepło.</span><b>Sprzęt i odczynniki</b><span>CaO, woda, parownica odporna na ciepło, fenoloftaleina, papierek uniwersalny</span><b>Przebieg</b><span>Do niewielkiej ilości CaO dodaje się wodę ostrożnie, małymi porcjami. Po ochłodzeniu bada się klarowny roztwór znad osadu.</span><b>Obserwacje</b><span>Silne rozgrzanie, często syk; powstaje biała papka (mleko wapienne); roztwór nad osadem: fenoloftaleina malinowa, papierek — barwa zasadowa.</span><b>Równanie</b><span><span class="formula" data-rx="caoH2o">CaO + H₂O → Ca(OH)₂</span></span><b>Wniosek</b><span>Tlenek zasadowy + woda → wodorotlenek. Część Ca(OH)₂ rozpuszcza się (woda wapienna), nadmiar zostaje jako zawiesina (mleko wapienne).</span><b>BHP</b><span>Wykonuje nauczyciel. Reakcja silnie egzotermiczna — nie dotykaj CaO mokrymi rękami, nie pochylaj się nad naczyniem (aerozol Ca(OH)₂ jest żrący). Nie badaj wskaźnikiem gorącej, gęstej zawiesiny.</span></div><button class="che-prac-go" data-k="caoH2o" data-prac="n02-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button></div>
+<div class="exp-card"><h5>Doświadczenie C — Strącanie Cu(OH)₂ <span class="level-badge level-basic">E8</span></h5><div class="exp-grid"><b>Problem</b><span>Czy z soli miedzi(II) i zasady powstanie wodorotlenek?</span><b>Hipoteza</b><span>Powstanie osad wodorotlenku miedzi(II).</span><b>Sprzęt i odczynniki</b><span>roztwór CuSO₄, roztwór NaOH, probówka, pipeta</span><b>Przebieg</b><span>Do roztworu CuSO₄ dodaje się kroplami roztwór NaOH.</span><b>Obserwacje</b><span>Niebieski, galaretowaty osad; roztwór nad osadem traci niebieską barwę.</span><b>Równanie</b><span><span class="formula" data-rx="cuso4Naoh">CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄</span></span><b>Wniosek</b><span>Sól + zasada → wodorotlenek↓ + sól (metoda strąceniowa) — działa, bo Cu(OH)₂ jest praktycznie nierozpuszczalny.</span><b>BHP</b><span>NaOH żrący — okulary, rękawice.</span></div><button class="che-prac-go" data-k="cuso4Naoh" data-prac="n02-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button></div>
+<div class="exp-card"><h5>Doświadczenie D — Strącanie Fe(OH)₃ <span class="level-badge level-basic">E8</span></h5><div class="exp-grid"><b>Problem</b><span>Czy z soli żelaza(III) i zasady powstaje wodorotlenek?</span><b>Hipoteza</b><span>Powstanie brunatny osad.</span><b>Sprzęt i odczynniki</b><span>roztwór FeCl₃, roztwór NaOH, probówka</span><b>Przebieg</b><span>Do roztworu FeCl₃ dodaje się roztwór NaOH.</span><b>Obserwacje</b><span>Rdzawobrunatny osad.</span><b>Równanie</b><span><span class="formula" data-rx="fecl3Naoh">FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl</span></span><b>Wniosek</b><span>Powstał praktycznie nierozpuszczalny wodorotlenek żelaza(III); Fe³⁺ potrzebuje trzech OH⁻ — stąd współczynnik 3.</span><b>BHP</b><span>NaOH żrący — okulary, rękawice.</span></div><button class="che-prac-go" data-k="fecl3Naoh" data-prac="n02-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button></div>
+<div class="exp-card"><h5>Doświadczenie E — Odczyn roztworu NaOH — trzy wskaźniki <span class="level-badge level-basic">E8</span></h5><div class="exp-grid"><b>Problem</b><span>Jaki odczyn ma roztwór NaOH?</span><b>Hipoteza</b><span>Zasadowy.</span><b>Sprzęt i odczynniki</b><span>roztwór NaOH przygotowany przez nauczyciela, papierek uniwersalny, fenoloftaleina, oranż metylowy, 3 probówki</span><b>Przebieg</b><span>Do trzech porcji roztworu dodaje się kolejno wskaźniki.</span><b>Obserwacje</b><span>Papierek uniwersalny — niebieski / fioletowy (zależnie od pH i papierka), fenoloftaleina — malinowa, oranż metylowy — żółty.</span><b>Równanie</b><span><span class="formula">NaOH → Na⁺ + OH⁻</span></span><b>Wniosek</b><span>Roztwór NaOH ma odczyn zasadowy (dla stężonego — silnie zasadowy): zawiera jony OH⁻.</span><b>BHP</b><span>NaOH żrący. Roztwór przygotowuje nauczyciel — rozpuszczanie stałego NaOH jest silnie egzotermiczne.</span></div><button class="che-prac-go" data-k="" data-prac="ph-indicators-v03" type="button">Zobacz w modelu wskaźników</button></div>
+<div class="exp-card"><h5>Doświadczenie F — Zobojętnianie NaOH kwasem solnym <span class="level-badge level-basic">E8</span></h5><div class="exp-grid"><b>Problem</b><span>Co się dzieje, gdy do zasady dodajemy kwas?</span><b>Hipoteza</b><span>Powstaje sól i woda; odczyn się zmienia.</span><b>Sprzęt i odczynniki</b><span>roztwór NaOH z fenoloftaleiną, rozcieńczony HCl, pipeta, zlewka</span><b>Przebieg</b><span>Do zasady z fenoloftaleiną dodaje się kroplami HCl, mieszając.</span><b>Obserwacje</b><span>Malinowa barwa stopniowo zanika — w punkcie zobojętnienia roztwór jest bezbarwny; zlewka lekko się ogrzewa.</span><b>Równanie</b><span><span class="formula" data-rx="hclNaOH">NaOH + HCl → NaCl + H₂O</span></span><b>Wniosek</b><span>Zaszło zobojętnianie: H⁺ + OH⁻ → H₂O. Zanik barwy fenoloftaleiny oznacza, że nie ma już nadmiaru OH⁻.</span><b>BHP</b><span>Roztwory żrące — okulary.</span></div><button class="che-prac-go" data-k="hclNaOH+php" data-prac="n02-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button></div>
+<div class="exp-card"><h5>Doświadczenie G — Woda wapienna i CO₂ <span class="level-badge level-basic">E8</span></h5><div class="exp-grid"><b>Problem</b><span>Czy w wydychanym powietrzu jest CO₂?</span><b>Hipoteza</b><span>Woda wapienna zmętnieje.</span><b>Sprzęt i odczynniki</b><span>woda wapienna (klarowny roztwór nasycony), rurka, probówka</span><b>Przebieg</b><span>Przez rurkę wdmuchuje się powietrze do wody wapiennej.</span><b>Obserwacje</b><span>Roztwór mętnieje (biały osad); przy bardzo długim dmuchaniu znów się klaruje.</span><b>Równanie</b><span><span class="formula" data-rx="caoh2Co2">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span></span><b>Wniosek</b><span>Wydychane powietrze zawiera CO₂ — woda wapienna służy do jego wykrywania. Klarowanie: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂ (rozszerzenie).</span><b>BHP</b><span>Nie zasysaj roztworu przez rurkę.</span></div><button class="che-prac-go" data-k="caoh2Co2" data-prac="n02-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button></div>
+<div class="exp-card"><h5>Doświadczenie H — Amfoteryczność Al(OH)₃ <span class="level-badge level-extra">AMB</span></h5><div class="exp-grid"><b>Problem</b><span>Czy Al(OH)₃ reaguje z kwasem i z zasadą?</span><b>Hipoteza</b><span>Reaguje z obydwoma.</span><b>Sprzęt i odczynniki</b><span>roztwór AlCl₃, roztwór NaOH, rozcieńczony HCl, 2 probówki</span><b>Przebieg</b><span>Strąca się Al(OH)₃ (NaOH kroplami), osad dzieli na dwie probówki; do jednej dodaje się HCl, do drugiej nadmiar NaOH.</span><b>Obserwacje</b><span>Biały, galaretowaty osad; w obu probówkach osad znika.</span><b>Równanie</b><span><span class="formula" data-rx="alcl3Naoh">AlCl₃ + 3NaOH → Al(OH)₃↓ + 3NaCl</span></span><b>Wniosek</b><span>Al(OH)₃ jest amfoteryczny: Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O oraz Al(OH)₃ + NaOH → Na[Al(OH)₄] (zapis LO).</span><b>BHP</b><span>NaOH żrący — okulary, rękawice.</span></div><button class="che-prac-go" data-k="aloh3Naoh" data-prac="n02-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button></div>
+</section>
+<section class="section" id="klinika">
+<div class="part-heading"><span class="part-num">16</span> Klinika błędów</div>
+<div class="table-wrap table-compact">
+<table class="klinika-table" id="klinikaTable">
+<thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th><th>Przykład z życia</th></tr></thead>
+<tbody>
+<tr class="error-row"><td class="col-blad">Ca<span class="hl-index">OH₂</span> <span style="font-size:11px;color:var(--c-error)">(indeks „przyklejony” tylko do H)</span></td><td class="col-ok">Ca(<span class="hl-index">OH</span>)₂ <span style="font-size:11px;color:var(--c-basic)">(indeks przy całej grupie)</span></td><td>Nawias obejmuje całą grupę OH⁻, nie tylko H. Indeks 2 dotyczy dwóch całych grup OH⁻.</td><td>Uczeń zapomniał nawiasu — wzór sugeruje, że indeks 2 dotyczy tylko wodoru, a nie dwóch całych grup OH⁻.</td></tr>
+<tr class="error-row"><td class="col-blad">AlOH₃</td><td class="col-ok">Al(OH)₃</td><td>Nawias — 3 grupy OH⁻. Indeks 3 dotyczy całych grup, nie tylko wodoru.</td><td>Jak wyżej: bez nawiasu indeks 3 dotyczyłby tylko wodoru.</td></tr>
+<tr class="error-row"><td class="col-blad">NaOH + HCl → NaCl</td><td class="col-ok">NaOH + HCl → NaCl + H₂O</td><td>Zobojętnianie daje sól i wodę. Woda jest produktem reakcji i nie może być pominięta.</td><td>Zapomniano o wodzie — najczęstszy błąd przy przepisywaniu równania zobojętniania.</td></tr>
+<tr class="error-row"><td class="col-blad">CaO + H₂O → CaOH</td><td class="col-ok">CaO + H₂O → Ca(OH)₂</td><td>Brak bilansu atomów wodoru (po lewej 2 H, po prawej 1 H) oraz brak nawiasu dla grupy OH⁻. Poprawny zapis wymaga dwóch grup OH⁻ przy wapniu.</td><td>Uczeń zapomina, że w reakcji tlenku z wodą powstaje wodorotlenek, a nie tlenek wodorotlenku. Dodatkowo myli zapis z nawiasem.</td></tr>
+<tr class="error-row"><td class="col-blad">Wszystkie wodorotlenki są silnie zasadowe</td><td class="col-ok">Tylko dobrze rozpuszczalne dają silny odczyn</td><td>Rozpuszczalność decyduje o stężeniu OH⁻. Trudno rozpuszczalne wodorotlenki dają bardzo mało jonów OH⁻ w roztworze.</td><td>Ktoś miesza zawiesinę Fe(OH)₃ i spodziewa się odczynu jak po NaOH — a odczynu praktycznie nie ma.</td></tr>
+<tr class="error-row"><td class="col-blad">Fe(OH)₃ rozpuszcza się w wodzie</td><td class="col-ok">Fe(OH)₃ jest praktycznie nierozpuszczalny</td><td>Większość wodorotlenków metali przejściowych jest nierozpuszczalna.</td><td>Po dodaniu NaOH do FeCl₃ powstaje brunatny osad, nie klarowny roztwór.</td></tr>
+<tr class="error-row"><td class="col-blad">MgO nie reaguje z wodą</td><td class="col-ok">MgO reaguje bardzo wolno; powstaje trudno rozpuszczalny Mg(OH)₂</td><td>Mg(OH)₂ otrzymuje się wygodniej przez strącanie, ale reakcja zachodzi.</td><td>W praktyce szkolnej Mg(OH)₂ robi się z MgCl₂ + NaOH, bo reakcja MgO z wodą jest zbyt wolna.</td></tr>
+<tr class="error-row"><td class="col-blad">Każdy tlenek metalu reaguje z wodą</td><td class="col-ok">Tylko niektóre tlenki zasadowe (metali aktywnych)</td><td>CuO, Fe₂O₃ i Al₂O₃ praktycznie nie reagują z wodą.</td><td>Wsypanie CuO do wody nie da niebieskiego roztworu — to nie zadziała.</td></tr>
+<tr class="error-row"><td class="col-blad">Zasada = wodorotlenek</td><td class="col-ok">Wodorotlenek = substancja; zasada = jej wodny roztwór</td><td>Stały NaOH to wodorotlenek; jego wodny roztwór jest zasadą (ługiem sodowym).</td><td>Butelka z NaOH to wodorotlenek; zlewka z roztworem NaOH to zasada — wodny roztwór wodorotlenku.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie — popraw zdanie</span>
+<p><strong>Polecenie:</strong> Uczeń napisał w zeszycie: „Fe(OH)₃ rozpuszcza się w wodzie i daje odczyn zasadowy." Popraw to zdanie i wyjaśnij, dlaczego jest błędne.</p>
+<details class="answer"><summary>Pokaż odpowiedź</summary>
+<p><strong>Poprawnie:</strong> Fe(OH)₃ jest praktycznie nierozpuszczalny w wodzie. Nie tworzy roztworu o wyraźnym odczynie zasadowym, bo stężenie jonów OH⁻ w roztworze jest zbyt małe.</p>
+<p><strong>Wyjaśnienie:</strong> O odczynie roztworu decyduje stężenie wolnych jonów OH⁻. Jeśli wodorotlenek prawie nie przechodzi do roztworu (jak Fe(OH)₃), to do roztworu trafia znikoma liczba jonów OH⁻ — odczyn praktycznie obojętny.</p>
+</details>
+</div>
+<details class="answer"><summary>Przełącznik błędu — ile grup OH⁻ jest w Ca(OH)₂? (1 / 2 / 3)</summary><p><strong>2.</strong> Indeks za nawiasem mnoży całą grupę OH: Ca(OH)₂ = 1 Ca, 2 O, 2 H. Zapis CaOH₂ oznaczałby 1 grupę OH i dodatkowy atom H.</p></details>
+<h3 class="merge-h">Sprawdź się</h3><div class="rule-box">
+<ol>
+<li>Popraw: <span class="formula">CaOH₂</span> → ?</li>
+<li>Czy <span class="formula">OH⁻</span> jest związkiem chemicznym czy jonem?</li>
+<li>Czy trudno rozpuszczalny wodorotlenek automatycznie oznacza „słabą zasadę”?</li>
+<li>Co różni wodę wapienną od mleka wapiennego?</li>
+<li>Dlaczego <span class="formula">H–O–Ca–O–H</span> nie powinno być podpisane jako rzeczywista cząsteczka Ca(OH)₂?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol>
+<li><span class="formula">Ca(OH)₂</span>.</li>
+<li>Jest anionem wodorotlenkowym.</li>
+<li>Nie. Rozpuszczalność i moc elektrolitu to różne pojęcia.</li>
+<li>Woda wapienna jest klarownym nasyconym roztworem; mleko wapienne jest zawiesiną z fazą stałą.</li>
+<li>Stały Ca(OH)₂ opisujemy jako układ jonowy; rysunek jest tylko modelem poglądowym składu.</li>
+</ol>
+</details>
+</div><details class="answer"><summary>Mini-klinika błędów</summary>
+<ol>
+<li><strong>„Ca(OH)₂ jest zasadą, bo ma OH w wzorze.”</strong> — Nie wystarczy sam wzór. Trzeba mówić o roztworze i obecności OH⁻.</li>
+<li><strong>„Amfoteryczny reaguje ze wszystkim.”</strong> — Nie. Wskazujemy konkretny reagent i środowisko.</li>
+<li><strong>„NH₄OH to zwykła cząsteczka w każdym roztworze amoniaku.”</strong> — To tradycyjny zapis szkolny; dokładniejszy model wodnego amoniaku używa NH₃(aq) ⇌ NH₄⁺ + OH⁻.</li>
+</ol>
+</details></section>
+<section class="section" id="cwiczenia">
+<div class="part-heading"><span class="part-num">17</span> Ćwiczenia</div>
+<p class="mini-note">Reguły potrzebne do zadań: wzory <a href="#budowa">§5</a>, rozpuszczalność <a href="#rozpuszczalnosc-tabela">§6.2</a>, otrzymywanie <a href="#otrzymywanie">§7</a>, zobojętnianie <a href="#zobojetnianie">§8.1</a>.</p>
+<h3>17.1 Mini-check</h3>
+<div class="card">
+<ol>
+<li>Co to wodorotlenek?</li>
+<li>Jaki ładunek ma grupa OH⁻?</li>
+<li>Kiedy stosujemy nawias?</li>
+<li>Trzy typowe szkolne metody otrzymywania wodorotlenków?</li>
+<li>Co to zobojętnianie?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<p><strong>1.</strong> Związek z kationu metalu i anionu OH⁻.</p>
+<p><strong>2.</strong> −1.</p>
+<p><strong>3.</strong> Gdy grupa OH⁻ powtarza się więcej niż raz.</p>
+<p><strong>4.</strong> Tlenek metalu aktywnego + woda; metal aktywny + woda; sól + zasada.</p>
+<p><strong>5.</strong> Reakcja kwasu z zasadą → sól + woda.</p>
+</details>
+</div>
+<h3>17.2 Ćwiczenie prowadzone — Ca(OH)₂</h3>
+<div class="card">
+<p><strong>Polecenie:</strong> Mając dany kation wapnia Ca²⁺, wykonaj kolejne polecenia:</p>
+<ol>
+<li>Zapisz wzór wodorotlenku.</li>
+<li>Podaj jego nazwę.</li>
+<li>Zapisz trzy metody otrzymywania tego wodorotlenku.</li>
+<li>Zapisz równanie zobojętniania tego wodorotlenku kwasem solnym HCl.</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedź</summary>
+<p><strong>1. Wzór:</strong> Ca(OH)₂ (wapń +2, więc 2 grupy OH⁻, nawias obowiązkowy).</p>
+<p><strong>2. Nazwa:</strong> wodorotlenek wapnia.</p>
+<p><strong>3. Trzy metody:</strong></p>
+<p>• tlenek + woda: CaO + H₂O → Ca(OH)₂</p>
+<p>• metal + woda: Ca + 2H₂O → Ca(OH)₂ + H₂↑ <span class="mini-note">(przykład szkolny; przebieg zależy od warunków, np. temperatury i stanu powierzchni metalu)</span></p>
+<p>• sól + zasada: CaCl₂ + 2NaOH → Ca(OH)₂↓ + 2NaCl <span class="mini-note">(tylko z roztworów stężonych — Ca(OH)₂ jest trudno, ale nie praktycznie nierozpuszczalny)</span></p>
+<p><strong>4. Zobojętnianie:</strong> Ca(OH)₂ + 2HCl → CaCl₂ + 2H₂O.</p>
+</details>
+</div>
+<h3>17.3 Ćwiczenia samodzielne</h3>
+<h4>A. Podstawa <span class="level-badge level-basic">E8</span></h4>
+<div class="card">
+<ol>
+<li>Wzory: wodorotlenek potasu, wodorotlenek wapnia, wodorotlenek glinu, wodorotlenek żelaza(III).</li>
+<li>Nazwy: NaOH, Mg(OH)₂, Fe(OH)₂, Cu(OH)₂.</li>
+<li>Dokończ: CaO + H₂O → … ; NaOH + HCl → …</li>
+<li>Popraw: CaOH₂; NaOH + H₂SO₄ → Na₂SO₄.</li>
+<li>Które wodorotlenki są dobrze rozpuszczalne?</li>
+<li>Jakie wskaźniki potwierdzają odczyn zasadowy?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol>
+<li>KOH, Ca(OH)₂, Al(OH)₃, Fe(OH)₃.</li>
+<li>wodorotlenek sodu, magnezu, żelaza(II), miedzi(II).</li>
+<li>Ca(OH)₂ ; NaCl + H₂O.</li>
+<li>Ca(OH)₂ ; 2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O.</li>
+<li>NaOH, KOH, LiOH, Ba(OH)₂ (dobrze); Ca(OH)₂ (trudno, ale tworzy wodę wapienną).</li>
+<li>fenoloftaleina (malinowa), oranż metylowy (żółty), papierek uniwersalny (niebieski).</li>
+</ol>
+</details>
+</div>
+<h4>B. Trening / egzamin <span class="level-badge level-basic">E8</span></h4>
+<div class="card">
+<ol start="7">
+<li>Zobojętnianie: KOH + HNO₃; Ca(OH)₂ + H₂SO₄; Al(OH)₃ + 3HCl.</li>
+<li>Skąd Ca(OH)₂, mając CaO?</li>
+<li>Dlaczego Ca(OH)₂, a nie CaOH₂?</li>
+<li>Otrzymywanie Mg(OH)₂ z MgCl₂ i NaOH.</li>
+<li>Uzupełnij: FeCl₃ + 3NaOH → ? ; CuSO₄ + 2NaOH → ?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol start="7">
+<li>KNO₃ + H₂O ; CaSO₄ + 2H₂O ; AlCl₃ + 3H₂O.</li>
+<li>CaO + H₂O → Ca(OH)₂.</li>
+<li>Indeks 2 dotyczy całej grupy OH⁻.</li>
+<li>MgCl₂ + 2NaOH → Mg(OH)₂↓ + 2NaCl.</li>
+<li>Fe(OH)₃↓ + 3NaCl ; Cu(OH)₂↓ + Na₂SO₄.</li>
+</ol>
+</details>
+</div>
+<h4>C. Ambitne <span class="level-badge level-understand">ROZUMIENIE</span></h4>
+<div class="card">
+<ol start="12">
+<li>FeCl₃ + NaOH — równanie + obserwacja + wniosek.</li>
+<li>Które wodorotlenki dają silnie zasadowy roztwór?</li>
+<li>Dlaczego Al(OH)₃ reaguje z HCl i NaOH?</li>
+<li>Zaprojektuj doświadczenie: odczyn KOH.</li>
+<li>Trzy poziomy zapisu NaOH + HCl.</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol start="12">
+<li>Problem → Hipoteza → Sprzęt → Obserwacja (brunatny osad) → Wniosek → Równanie → BHP. Równanie: FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl. Obserwacja: powstaje rdzawobrunatny osad. Wniosek: z soli żelaza(III) i zasady powstaje praktycznie nierozpuszczalny Fe(OH)₃ (por. doświadczenie D).</li>
+<li>NaOH, KOH i Ba(OH)₂ są dobrze rozpuszczalne i tworzą roztwory wyraźnie zasadowe. Fe(OH)₃ jest praktycznie nierozpuszczalny, więc nie tworzy w wodzie takiego roztworu.</li>
+<li>Al(OH)₃ jest amfoteryczny. Z kwasem reaguje jak zasada (Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O), a z mocną zasadą tworzy rozpuszczalny związek kompleksowy (Al(OH)₃ + NaOH → Na[Al(OH)₄]).</li>
+<li>Problem → Hipoteza → Sprzęt → Obserwacja → Wniosek → Równanie → BHP. Np.: problem — jaki odczyn ma roztwór KOH? Hipoteza — zasadowy. Sprzęt — roztwór KOH, fenoloftaleina, papierek uniwersalny, probówki. Obserwacja — fenoloftaleina malinowa, papierek niebieski. Wniosek — odczyn zasadowy (jony OH⁻). Równanie: KOH → K⁺ + OH⁻. BHP — okulary, rękawice.</li>
+<li>Cząsteczkowe: NaOH + HCl → NaCl + H₂O. Jonowe pełne: Na⁺ + OH⁻ + H⁺ + Cl⁻ → Na⁺ + Cl⁻ + H₂O. Skrócone: H⁺ + OH⁻ → H₂O.</li>
+</ol>
+</details>
+</div>
+<h4>D. Zaawansowane <span class="level-badge level-extra">AMBITNE</span></h4>
+<div class="card">
+<ol start="17">
+<li>Dysocjacja: NaOH, Ca(OH)₂, Ba(OH)₂.</li>
+<li>Co to hydrat? Przykład.</li>
+<li>Dlaczego AgOH jest nietrwały?</li>
+<li>Różnica rozpuszczalny vs mocny.</li>
+<li>Dlaczego Ba(OH)₂ + H₂SO₄ daje wodę i osad?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol start="17">
+<li>NaOH → Na⁺ + OH⁻ ; Ca(OH)₂ → Ca²⁺ + 2OH⁻ ; Ba(OH)₂ → Ba²⁺ + 2OH⁻.</li>
+<li>Związek z cząsteczkami wody w sieci, np. CuSO₄·5H₂O.</li>
+<li>2AgOH → Ag₂O + H₂O. Wodorotlenek srebra(I) szybko przekształca się w tlenek srebra(I).</li>
+<li>Rozpuszczalny = ile przechodzi do roztworu. Mocny = stopień dysocjacji cząstek w roztworze. Ca(OH)₂ jest słabiej rozpuszczalny niż NaOH, ale rozpuszczona część dysocjuje praktycznie całkowicie.</li>
+<li>Dwa procesy: H⁺ + OH⁻ → H₂O oraz Ba²⁺ + SO₄²⁻ → BaSO₄↓.</li>
+</ol>
+</details>
+</div>
+<h4>E. Zadania z obserwacją (typ E8) <span class="level-badge level-basic">E8</span></h4>
+<div class="card card-exam">
+<p><strong>Zadanie 1.</strong> Fenoloftaleina w probówkach A, B, C. A — malinowa, B — bezbarwna. Do A dodawano HCl, aż barwa znikła.</p>
+<ol>
+<li>Odczyn A?</li>
+<li>Jony odpowiedzialne?</li>
+<li>Nazwa reakcji po dodaniu HCl?</li>
+<li>Równanie jonowe skrócone.</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<p><strong>1.</strong> Zasadowy.</p>
+<p><strong>2.</strong> OH⁻.</p>
+<p><strong>3.</strong> Zobojętnianie.</p>
+<p><strong>4.</strong> H⁺ + OH⁻ → H₂O.</p>
+</details>
+</div>
+<div class="card card-exam">
+<p><strong>Zadanie 2.</strong> Do roztworu soli Fe(III) dodano kilka kropli NaOH bez nadmiaru. Powstał brunatny osad.</p>
+<ol>
+<li>Równanie cząsteczkowe.</li>
+<li>Typ reakcji.</li>
+<li>Jeżeli NaOH dodano bez nadmiaru, dlaczego po wytrąceniu Fe(OH)₃ nie obserwuje się wyraźnie zasadowego odczynu?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<p><strong>1.</strong> FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl.</p>
+<p><strong>2.</strong> Reakcja strąceniowa.</p>
+<p><strong>3.</strong> Bez nadmiaru NaOH jony OH⁻ zostały praktycznie w całości zużyte na wytrącenie Fe(OH)₃. Sam osad jest praktycznie nierozpuszczalny, więc nie uwalnia jonów OH⁻ do roztworu — stężenie OH⁻ jest zbyt małe, aby odczyn był wyraźnie zasadowy.</p>
+</details>
+</div>
+</section>
+<section class="section" id="test">
+<div class="part-heading"><span class="part-num">18</span> Test końcowy</div>
+<p>Kliknij odpowiedź — od razu zobaczysz, czy jest poprawna. Bez limitu czasu.</p>
+<div class="quiz-wrap" id="quizWrap"></div>
+<div class="quiz-score" id="quizScore"></div>
+<div class="card card-understand" style="margin-top:18px;">
+<span class="card-label">Ćwiczenie — współczynniki (bez limitu czasu)</span>
+<p>Uzupełnij i sprawdź w odpowiedzi poniżej.</p>
+<pre class="step-flow">FeCl₃ + ___ NaOH → Fe(OH)₃↓ + ___ NaCl
+CuSO₄ + ___ NaOH → Cu(OH)₂↓ + ___ Na₂SO₄
+AlCl₃ + ___ NaOH → Al(OH)₃↓ + ___ NaCl</pre>
+<details class="answer"><summary>Pokaż współczynniki</summary>
+<p><span class="formula" data-rx="fecl3Naoh">FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl</span></p>
+<p><span class="formula" data-rx="cuso4Naoh">CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄</span></p>
+<p><span class="formula" data-rx="alcl3Naoh">AlCl₃ + 3NaOH → Al(OH)₃↓ + 3NaCl</span></p>
+<p class="mini-note">Liczba OH⁻ = wartość bezwzględna ładunku kationu metalu. Potem domknij bilans atomów Cl / SO₄.</p>
+</details>
+</div>
+</section>
+<section class="section" id="karta">
+<div class="part-heading"><span class="part-num">19</span> Karta szybkiego powtórzenia (do druku) <span class="level-badge level-basic">E8</span></div>
+<div class="card card-basic">
+<span class="card-label">Najważniejsze w 8 punktach</span>
+<ol>
+<li><strong>Wodorotlenek</strong> = kation metalu + n grup OH⁻; wzór M(OH)ₙ, n = wartość bezwzględna ładunku kationu (<a href="#budowa">§5</a>).</li>
+<li><strong>Nawias</strong> tylko gdy OH⁻ &gt; 1: NaOH, Ca(OH)₂, Al(OH)₃; nazwa: wodorotlenek + metal (+ cyfra rzymska dla Fe, Cu…).</li>
+<li><strong>Rozpuszczalne</strong>: NaOH, KOH, LiOH, Ba(OH)₂; Ca(OH)₂ trudno; osady: Cu(OH)₂ (niebieski), Fe(OH)₃ (brunatny), Mg(OH)₂, Al(OH)₃, Zn(OH)₂ (białe) (<a href="#rozpuszczalnosc-tabela">§6.2</a>).</li>
+<li><strong>Zasada</strong> = wodny roztwór wodorotlenku z jonami OH⁻; dysocjacja Ca(OH)₂ → Ca²⁺ + 2OH⁻ (<a href="#wodorotlenek-vs-zasada">§6.3</a>).</li>
+<li><strong>Wskaźniki w zasadzie</strong>: fenoloftaleina malinowa, oranż metylowy żółty, papierek niebieski (<a href="#ph-wskazniki">§6.4</a>).</li>
+<li><strong>Otrzymywanie</strong>: tlenek + woda; metal aktywny + woda (+ H₂↑); sól + zasada → osad (<a href="#otrzymywanie">§7</a>).</li>
+<li><strong>Zobojętnianie</strong>: wodorotlenek + kwas → sól + woda; H⁺ + OH⁻ → H₂O (<a href="#zobojetnianie">§8.1</a>).</li>
+<li><strong>Woda wapienna + CO₂</strong> → CaCO₃↓ (mętnienie); NaOH/KOH higroskopijne i żrące (<a href="#wapno">§6.5</a>, <a href="#bhp">§9.2</a>).</li>
+</ol>
+</div>
+<div class="card card-exam">
+<span class="card-label">Strategia na E8 — 4 kroki przy wzorze</span>
+<ol>
+<li><strong>Kation</strong> — jaki metal i jaki ładunek? (Na⁺ / Ca²⁺ / Al³⁺ / Fe³⁺…)</li>
+<li><strong>Liczba OH⁻</strong> = wartość bezwzględna ładunku kationu.</li>
+<li><strong>Nawias?</strong> tylko gdy OH⁻ więcej niż 1.</li>
+<li><strong>Kontrola</strong> — suma ładunków = 0; indeks za nawiasem mnoży całą grupę.</li>
+</ol>
+<p class="mini-note">Na kartce egzaminacyjnej zapisz najpierw ładunek, potem dopiero wzór. To zmniejsza liczbę błędów typu CaOH₂.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Schemat W–K–S–K a wodorotlenki</span>
+<p>Wodorotlenek łączy się z <strong>kwasem</strong> (zobojętnianie) i powstaje z <strong>tlenku</strong> (lub metalu / soli). Na mapie przemian:</p>
+<p style="text-align:center;margin:12px 0;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.9;">
+<strong>Tlenek zasadowy</strong> + H₂O → <strong>Wodorotlenek</strong><br/>
+<strong>Wodorotlenek</strong> + kwas → <strong>Sól</strong> + H₂O<br/>
+<strong>Sól</strong> + zasada → <strong>Wodorotlenek↓</strong> + sól
+      </p>
+<p>Zapamiętaj: wodorotlenek stoi między tlenkiem a solą w łańcuchu przemian.</p>
+</div>
+</section>
+<section class="section" id="fiszki">
+<div class="part-heading"><span class="part-num">20</span> Fiszki</div>
+<div class="flashcard-grid">
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Co to wodorotlenek?</span>
+<span class="back"><strong>Związek z kationu metalu i anionu OH⁻.</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Wzór ogólny</span>
+<span class="back"><strong>M(OH)ₙ, n = liczba grup OH⁻. W typowych wodorotlenkach kl. 8 równa wartości bezwzględnej ładunku kationu.</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Kiedy nawias?</span>
+<span class="back"><strong>Gdy OH⁻ powtarza się więcej niż raz.</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Wiązania w modelu OH⁻</span>
+<span class="back"><strong>O–H ciągłe (kowalencyjne spolaryzowane); M···O przerywane (oddziaływanie jonowe). Model szkolny, nie sieć kryształu.</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Dlaczego nie CaOH₂?</span>
+<span class="back"><strong>Indeks 2 dotyczyłby tylko H. Poprawnie: Ca(OH)₂ — dwie całe grupy OH⁻ (= Ca₁O₂H₂).</strong></span>
+<span class="card-tag tag-error">błąd E8</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Elektrolit a zasada</span>
+<span class="back"><strong>Roztwór NaOH ma jony Na⁺ i OH⁻ → przewodzi prąd (elektrolit) i ma odczyn zasadowy.</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Higroskopijność</span>
+<span class="back"><strong>NaOH i KOH pochłaniają wilgoć z powietrza i „rozpływają się”. Szczelne naczynia!</strong></span>
+<span class="card-tag tag-exam">E8</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Woda wapienna vs mleko</span>
+<span class="back"><strong>Woda wapienna = klarowny nasycony roztwór Ca(OH)₂. Mleko = mętna zawiesina.</strong></span>
+<span class="card-tag tag-exam">E8</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Zobojętnianie — produkty</span>
+<span class="back"><strong>sól + woda</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">NaOH + HCl → ?</span>
+<span class="back"><strong>NaCl + H₂O</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Ca(OH)₂ + 2HCl → ?</span>
+<span class="back"><strong>CaCl₂ + 2H₂O</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Fenoloftaleina w zasadzie</span>
+<span class="back"><strong>Malinowa</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Dobrze rozpuszczalne wodorotlenki</span>
+<span class="back"><strong>NaOH, KOH, LiOH, Ba(OH)₂; Ca(OH)₂ trudno, ale tworzy wodę wapienną</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Dysocjacja NaOH</span>
+<span class="back"><strong>NaOH → Na⁺ + OH⁻</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Barwa Fe(OH)₃</span>
+<span class="back"><strong>Brunatna (rdzawa)</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Amfoteryczne wodorotlenki</span>
+<span class="back"><strong>Al(OH)₃, Zn(OH)₂</strong></span>
+<span class="card-tag tag-extra">ambitny</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Wodorotlenek vs zasada</span>
+<span class="back"><strong>Wodorotlenek = substancja. Zasada = wodny roztwór wodorotlenku dostarczający OH⁻.</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Równanie jonowe skrócone zobojętniania</span>
+<span class="back"><strong>H⁺ + OH⁻ → H₂O</strong></span>
+<span class="card-tag tag-extra">ambitny</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Woda wapienna + CO₂ → ?</span>
+<span class="back"><strong>CaCO₃↓ + H₂O — roztwór mętnieje (wykrywanie CO₂)</strong></span>
+<span class="card-tag tag-exam">E8</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Barwa Cu(OH)₂</span>
+<span class="back"><strong>Niebieska (galaretowaty osad)</strong></span>
+<span class="card-tag tag-basic">podstawa</span>
+</button>
+<button class="flashcard" onclick="toggleFlashcard(this)">
+<span class="front">Wapno palone, gaszone</span>
+<span class="back"><strong>Palone = CaO; gaszone = Ca(OH)₂</strong></span>
+<span class="card-tag tag-exam">E8</span>
+</button>
+</div>
+</section>
+<section class="section" id="mapa">
+<div class="part-heading"><span class="part-num">21</span> Mapa pojęć</div>
+<div class="card map-card">
+<div class="mmx"><div class="mmx-box" style="--mm:#0d6868"><b>WODOROTLENEK</b><ul><li>kation metalu + aniony OH⁻</li><li>substancja stała (kryształ, osad)</li><li>sieć jonowa, nie cząsteczka H–O–M–O–H</li></ul></div><div class="mmx-box" style="--mm:#b06f1c"><b>M(OH)ₙ — kation + n grup OH⁻</b><ul><li>n = liczba grup OH⁻ (w prostych wodorotlenkach = wartościowość kationu)</li><li>suma ładunków = 0</li></ul></div><div class="mmx-box" style="--mm:#2e7d4f"><b>WZORY I NAZWY</b><ul><li>NaOH, KOH, Ca(OH)₂</li><li>Al(OH)₃, Fe(OH)₃</li><li>Cu(OH)₂, Mg(OH)₂</li><li>nawias gdy OH &gt; 1</li><li>cyfra rzymska: Fe, Cu, Sn, Pb</li></ul></div><div class="mmx-box" style="--mm:#b06f1c"><b>ROZPUSZCZALNOŚĆ</b><ul><li>✓ NaOH, KOH, LiOH, Ba(OH)₂</li><li>~ Ca(OH)₂, Mg(OH)₂</li><li>× Fe(OH)₃, Cu(OH)₂, Al(OH)₃</li><li>Ca(OH)₂ = woda wapienna</li><li>mleko wapienne = zawiesina</li></ul></div><div class="mmx-box" style="--mm:#2b5e9c"><b>ZASADA I DYSOCJACJA</b><ul><li>zasada = wodny roztwór wodorotlenku</li><li>NaOH → Na⁺ + OH⁻</li><li>elektrolit — przewodzi prąd</li><li>rozpuszczalny ≠ mocny</li></ul></div><div class="mmx-box" style="--mm:#6b3fa0"><b>WŁAŚCIWOŚCI</b><ul><li>odczyn zasadowy</li><li>wskaźniki</li><li>zobojętnianie</li><li>tylko rozpuszczalne</li><li>NaOH, KOH: higroskopijne, żrące</li></ul></div><div class="mmx-box" style="--mm:#2b5e9c"><b>OTRZYMYWANIE</b><ul><li>1. tlenek + woda</li><li>2. metal aktywny + woda</li><li>3. sól + zasada</li><li>zależnie od wodorotlenku</li></ul></div><div class="mmx-box" style="--mm:#b83a45"><b>ZOBOJĘTNIANIE</b><ul><li>wodorotlenek + kwas</li><li>→ sól + woda</li><li>H⁺ + OH⁻ → H₂O</li><li>jony widzowe: Na⁺, Cl⁻</li></ul></div><div class="mmx-box" style="--mm:#2e7d4f"><b>INNE REAKCJE</b><ul><li>zasada + CO₂ → sól + woda</li><li>ogrzewanie → tlenek + woda</li><li>strącanie → osad o barwie kationu</li></ul></div><div class="mmx-box" style="--mm:#6b3fa0"><b>AMFOTERYCZNOŚĆ</b><ul><li>Al(OH)₃, Zn(OH)₂</li><li>+ kwasy, + zasady</li><li>poziom rozszerzony</li></ul></div><div class="mmx-box" style="--mm:#b06f1c"><b>Ca(OH)₂ — WAPNO</b><ul><li>palone CaO → gaszone Ca(OH)₂</li><li>mleko (zawiesina) → woda (roztwór)</li><li>wykrywanie CO₂, zaprawa</li></ul></div><div class="mmx-box" style="--mm:#1a2332"><b>MOSTY: tlenki · kwasy · sole</b><ul><li>N01: tlenek zasadowy + woda</li><li>N03: kwas + zasada</li><li>N04: sól + zasada, produkt zobojętniania</li></ul></div></div>
+</div>
+</section>
+<section class="section" id="slownik">
+<div class="part-heading"><span class="part-num">22</span> Słownik</div>
+<div class="card">
+<dl class="def-list">
+<div class="def-item"><dt>Higroskopijność</dt><dd>Zdolność substancji do pochłaniania wilgoci z powietrza (np. NaOH, KOH).</dd></div>
+<div class="def-item"><dt>Elektrolit</dt><dd>Substancja, której roztwór wodny przewodzi prąd dzięki jonom.</dd></div>
+<div class="def-item"><dt>Woda wapienna</dt><dd>Klarowny, nasycony roztwór Ca(OH)₂; mętnieje z CO₂.</dd></div>
+<div class="def-item"><dt>Wodorotlenek</dt><dd>Związek zawierający kation metalu i anion OH⁻. W zapisie szkolnym spotyka się NH₄OH, ale roztwór amoniaku opisujemy dokładniej przez równowagę NH₃ + H₂O ⇌ NH₄⁺ + OH⁻.</dd></div>
+<div class="def-item"><dt>Grupa wodorotlenkowa OH⁻</dt><dd>Anion o ładunku −1, składający się z tlenu i wodoru.</dd></div>
+<div class="def-item"><dt>Zasada (szkolnie)</dt><dd>Wodny roztwór niektórych wodorotlenków, który zawiera jony OH⁻ i ma odczyn zasadowy. W szerszym ujęciu zasadą może być także substancja niezawierająca grup OH⁻, np. amoniak NH₃.</dd></div>
+<div class="def-item"><dt>Zobojętnianie</dt><dd>Reakcja kwasu z zasadą → sól + woda.</dd></div>
+<div class="def-item"><dt>Wskaźnik</dt><dd>Substancja zmieniająca barwę zależnie od pH.</dd></div>
+<div class="def-item"><dt>Strącanie</dt><dd>Reakcja, w której powstaje trudno rozpuszczalny osad.</dd></div>
+<div class="def-item"><dt>Mleko wapienne</dt><dd>Zawiesina nierozpuszczonego Ca(OH)₂ w wodzie.</dd></div>
+<div class="def-item"><dt>Hydrat</dt><dd>Związek z cząsteczkami wody w sieci, np. CuSO₄·5H₂O.</dd></div>
+<div class="def-item"><dt>Amfoteryczny</dt><dd>Reagujący i z kwasami, i z zasadami.</dd></div>
+<div class="def-item"><dt>Dysocjacja elektrolityczna</dt><dd>Rozpad związku na jony w wodzie (Arrhenius).</dd></div>
+<div class="def-item"><dt>Nieelektrolit</dt><dd>Substancja, której roztwór nie przewodzi prądu, bo nie zawiera swobodnych jonów (np. cukier).</dd></div>
+<div class="def-item"><dt>Jony widzowe</dt><dd>Jony, które nie zmieniają się w reakcji (np. Na⁺ i Cl⁻ przy zobojętnianiu NaOH kwasem solnym); pomija się je w równaniu jonowym skróconym.</dd></div>
+<div class="def-item"><dt>Odczyn zasadowy</dt><dd>Odczyn roztworu o pH &gt; 7 — nadmiar jonów OH⁻ względem czystej wody.</dd></div>
+<div class="def-item"><dt>Wapno palone / gaszone</dt><dd>CaO / Ca(OH)₂.</dd></div>
+<div class="def-item"><dt>Teoria Brønsteda</dt><dd>Kwas = donor protonu H⁺, zasada = akceptor H⁺.</dd></div>
+</dl>
+</div>
+</section>
+<section class="section" id="checklista">
+<div class="part-heading"><span class="part-num">23</span> Checklista</div>
+<div class="checklist">
+<h4>Sprawdź, czy umiesz:</h4>
+<ul>
+<li>Zapisać wzór wodorotlenku dla dowolnego kationu.</li>
+<li>Potrafię zapisać wzory: NaOH, KOH, Ca(OH)₂, Al(OH)₃, Cu(OH)₂ i podać nazwy</li>
+<li>Zastosować nawias, gdy grupa OH⁻ powtarza się więcej niż raz.</li>
+<li>Nazwać wodorotlenek (z cyfrą rzymską dla Fe, Cu, Sn, Pb).</li>
+<li>Potrafię narysować szkolny model poglądowy Ca(OH)₂ i Al(OH)₃ (O–H ciągła, M···O przerywana) i wiem, że to nie jest wzór strukturalny cząsteczki</li>
+<li>Rozróżnić wodorotlenki rozpuszczalne i nierozpuszczalne.</li>
+<li>Rozróżnić wodorotlenek (substancja) od zasady (roztwór); znam pojęcie elektrolitu.</li>
+<li>Zapisać dysocjację zasady.</li>
+<li>Opisać odczyn zasadowy i wskaźniki.</li>
+<li>Znam higroskopijność NaOH/KOH i BHP ługów</li>
+<li>Rozróżniam wapno palone, gaszone, mleko i wodę wapienną</li>
+<li>Zapisać reakcję niektórych tlenków zasadowych metali aktywnych z wodą, np. CaO + H₂O → Ca(OH)₂.</li>
+<li>Wyjaśnić, dlaczego nie każdy tlenek reaguje z wodą.</li>
+<li>Rozpoznać, że metal aktywny + woda → wodorotlenek + wodór.</li>
+<li>Zapisać reakcję strącania z soli i zasady. Podać barwę osadu Cu(OH)₂ i Fe(OH)₃.</li>
+<li>Zapisać reakcję zobojętniania.</li>
+<li>Zapisać reakcję wody wapiennej z CO₂.</li>
+<li>(ambitnie) Wyjaśnić amfoteryczność.</li>
+<li>(ambitnie) Zapisać równanie jonowe skrócone.</li>
+</ul>
+</div>
+</section>
+<section class="section" id="wskazowki">
+<div class="part-heading"><span class="part-num">24</span> Wskazówki do nauki</div>
+<div class="tips-box">
+<h4>Jak uczyć się skuteczniej — nie plan, tylko porady</h4>
+<p style="margin-bottom:14px;font-size:13.5px;color:var(--text-soft);">Każdy uczy się inaczej i w swoim tempie. Poniżej zbiór wskazówek, które możesz wykorzystać w dowolnej kolejności.</p>
+<div class="tips-list">
+<div class="tip-card">
+<b>Odtwarzaj, nie zapamiętuj</b>
+          Nie ucz się wzorów na pamięć. Zawsze zaczynaj od ładunku kationu i policz, ile grup OH⁻ potrzebujesz. Wzór sam się zbuduje.
+        </div>
+<div class="tip-card">
+<b>Używaj modeli naprzemiennie</b> Po przeczytaniu teorii od razu otwórz model: wzór wodorotlenku (<a href="#wzor-ogolny">§5.2</a>), przegląd (<a href="#rozpuszczalnosc-tabela">§6.2</a>), strącanie (<a href="#ion-lab">§12</a>). Wzrokowiec zapamiętuje szybciej, gdy widzi i robi.
+        </div>
+<div class="tip-card">
+<b>Fiszki w krótkich sesjach</b>
+          Lepiej 5 minut dziennie niż 30 minut raz w tygodniu. Fiszki są do szybkiego przypominania — nie czytaj ich jak podręcznika.
+        </div>
+<div class="tip-card">
+<b>Sprawdzaj się po każdej sekcji</b>
+          Po każdej sekcji teoretycznej otwórz ćwiczenia i spróbuj rozwiązać 2–3 zadania. To pokaże, czy naprawdę rozumiesz, czy tylko rozpoznajesz.
+        </div>
+<div class="tip-card">
+<b>Rysuj wzory ręcznie</b>
+          Narysuj na kartce Ca(OH)₂ z kationem i dwiema grupami OH⁻. Ręczne rysowanie utrwala strukturę lepiej niż czytanie.
+        </div>
+<div class="tip-card">
+<b>Łącz z życiem codziennym</b>
+          Zauważ, gdzie w domu spotykasz wodorotlenki (środki czystości, leki na zgagę, wapno budowlane). Konkret zapamiętuje się łatwiej niż abstrakcja.
+        </div>
+<div class="tip-card">
+<b>Powtarzaj błędy, nie tylko sukcesy</b>
+          Wróć do „Kliniki błędów" i zapisz sobie trzy najczęstsze pułapki. Świadomość błędów chroni przed ich powtarzaniem.
+        </div>
+<div class="tip-card">
+<b>Wracaj do mapy pojęć</b>
+          Na końcu nauki otwórz mapę pojęć i spróbuj samodzielnie odtworzyć połączenia. To test globalnego zrozumienia.
+        </div>
+</div>
+</div>
+</section>
+<section class="section" id="historia">
+<div class="part-heading"><span class="part-num">A</span> Dodatek A — Historia odkrycia <span class="level-badge level-extra">NADPROGRAMOWE</span></div>
+<p>Skąd wiemy to, co wiemy? Poznanie wodorotlenków to ponad 200 lat obserwacji. Pięć momentów, które doprowadziły do dzisiejszej definicji.</p>
+<div class="hist-grid"><figure class="hist-card"><div class="hist-year">1754</div><div class="hist-who">Joseph Black</div><div class="hist-ill"><div class="svgx"><span>alkalia — substancje „mydlące”</span><span>wapno</span><span>potaż</span><span>soda</span></div></div><figcaption>Badał substancje alkaliczne (wapno, potaż, sodę). Pokazał, że „powietrze stałe” (CO₂) wiąże się z alkaliami — początek chemii zasad.</figcaption></figure><figure class="hist-card"><div class="hist-year">1807–08</div><div class="hist-who">Humphry Davy</div><div class="hist-ill"><div class="svgx"><span>K / Na</span><span>O₂</span><span>+ −</span><span>elektroliza stopionych alkaliów</span></div></div><figcaption>Przez elektrolizę otrzymał potas i sód z alkaliów. Pokazał, że alkalia żrące — „potaż” i „soda” — są związkami nieznanych wcześniej metali: potasu i sodu. Metale litowców istnieją!</figcaption></figure><figure class="hist-card"><div class="hist-year">1810–20</div><div class="hist-who">Gay-Lussac i Thenard</div><div class="hist-ill"><div class="svgx"><span>skład alkaliów = metal + tlen + wodór</span><span>Na</span><span>O</span><span>H</span><span>Na + O + H → NaOH</span></div></div><figcaption>Ustalili, że alkalia to połączenia metalu, tlenu i wodoru — droga do wzoru NaOH i pojęcia wodorotlenku.</figcaption></figure><figure class="hist-card"><div class="hist-year">1887</div><div class="hist-who">Svante Arrhenius</div><div class="hist-ill"><div class="svgx"><span>dysocjacja w wodzie</span><span>Na⁺</span><span>OH⁻</span><span>H₂O</span><span>zasada → jony OH⁻ (definicja szkolna)</span></div></div><figcaption>Teoria dysocjacji elektrolitycznej: zasada to substancja, która w wodzie daje jony OH⁻. To definicja, której uczysz się na E8. Zob. <a href="#wodorotlenek-vs-zasada">§6.3</a>.</figcaption></figure><figure class="hist-card"><div class="hist-year">1923</div><div class="hist-who">Brønsted i Lowry</div><div class="hist-ill"><div class="svgx"><span>teoria protonowa (liceum)</span><span>H⁺</span><span>NH₃</span><span>donor</span><span>akceptor protonu</span><span>NH₃ + H₂O ⇌ NH₄⁺ + OH⁻</span></div></div><figcaption>Zasada = akceptor protonu H⁺. NH₃ jest zasadą mimo braku OH⁻ we wzorze — to poziom liceum, na E8 wystarczy Arrhenius. Zob. <a href="#ambitny">Dodatek B</a>.</figcaption></figure></div>
+</section>
+<section class="section" id="ambitny">
+<div class="part-heading"><span class="part-num">B</span> Dodatek B — teorie kwasów i zasad, hydraty <span class="level-badge level-extra">AMBITNE</span></div>
+<div class="card card-extra">
+<span class="card-label">Teoria Brønsteda i Lowry'ego — kim byli?</span>
+<p><strong>Johannes Nicolaus Brønsted</strong> (1879–1947) — duński chemik fizyczny. <strong>Thomas Martin Lowry</strong> (1874–1936) — angielski chemik. W 1923 roku niezależnie od siebie zaproponowali nową definicję kwasów i zasad.</p>
+<p><strong>Ich definicja (teoria protonowa):</strong></p>
+<ul>
+<li><strong>Kwas</strong> = substancja, która oddaje proton H⁺ (donor protonu).</li>
+<li><strong>Zasada</strong> = substancja, która przyjmuje proton H⁺ (akceptor protonu).</li>
+</ul>
+<p><strong>Dlaczego to ważne?</strong> Teoria Arrheniusa (szkolna) mówi, że zasada to substancja dająca jony OH⁻ w wodzie. Ale w teorii Brønsteda <strong>amoniak NH₃</strong> jest zasadą, bo przyjmuje proton H⁺ od wody:</p>
+<div class="jb-eq" style="background:var(--c-extra-bg);border:1px solid var(--c-extra-line);color:var(--c-extra);padding:10px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-weight:700;margin:10px 0;">NH₃ + H₂O ⇌ NH₄⁺ + OH⁻</div>
+<p>NH₃ nie ma w cząsteczce grupy OH⁻ — a jednak jest zasadą, bo przyjmuje H⁺ od wody. To rozszerza pojęcie zasady na substancje bez grupy OH⁻. Na poziomie szkoły podstawowej (E8) wystarczy definicja Arrheniusa, ale warto wiedzieć, że w liceum zobaczysz definicję Brønsteda.</p>
+</div>
+<details class="adv"><summary>Teoria Lewisa — jeszcze szersza definicja <span class="adv-tag">poziom akademicki</span></summary><div class="adv-body"><p>Gilbert N. Lewis (1923): <strong>zasada</strong> to donor pary elektronowej, <strong>kwas</strong> — jej akceptor. Jon OH⁻ i cząsteczka NH₃ są zasadami Lewisa (mają wolną parę elektronową), a np. Al³⁺ czy BF₃ — kwasami Lewisa. Powstawanie jonu [Al(OH)₄]⁻ (<a href="#amfoterycznosc">§14</a>) to reakcja kwasu Lewisa Al(OH)₃ z zasadą Lewisa OH⁻.</p></div></details>
+<div class="card card-extra">
+<span class="card-label">Hydraty — poza E8</span>
+<p><strong>Hydraty</strong> to związki z cząsteczkami wody wbudowanymi w sieć krystaliczną. Jest to osobne zagadnienie, omawiane przede wszystkim przy solach, np. <span class="formula">CuSO₄·5H₂O</span> (sam hydrat soli nie jest wodorotlenkiem). Na poziomie E8 nie jest wymagane tworzenie wzorów hydratów ani przypisywanie hydratu do konkretnego wodorotlenku. Niektóre wodorotlenki tworzą hydraty (np. <span class="formula">Ba(OH)₂·8H₂O</span> — dlatego tablice podają jego rozpuszczalność dla hydratu), ale na E8 nie wymaga się ich wzorów.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Pozostałe zagadnienia ambitne — gdzie są w lekcji</span>
+<ul>
+<li><strong>Amfoteryczność</strong> Al(OH)₃ i Zn(OH)₂ — <a href="#amfoterycznosc">§14</a>.</li>
+<li><strong>AgOH, CuOH</strong> — nietrwałe wodorotlenki, równania rozkładu — <a href="#nazwy">§5.4</a>.</li>
+<li><strong>Moc a rozpuszczalność</strong>, iloczyn rozpuszczalności — <a href="#moc-rozpuszczalnosc">§10.3</a>.</li>
+<li><strong>Równania jonowe</strong> — <a href="#rownania-jonowe">§13</a>; <strong>hydroksokompleksy</strong> — <a href="#ion-lab">§12</a>.</li>
+</ul>
+</div>
+</section>
+<section class="section" id="modele-silnika">
+<div class="part-heading"><span class="part-num">↻</span> Modele silnika w tej lekcji</div>
+<div class="table-wrap table-compact"><table><thead><tr><th>Model</th><th>Co pokazuje</th><th>Gdzie</th></tr></thead><tbody>
+<tr><td><code>n02-wzory-v01</code></td><td>Wzór wodorotlenku: bilans ładunków, nawias, modele A/B/jony</td><td><a href="#wzor-ogolny">§5.2</a></td></tr>
+<tr><td><code>tabela-rozpuszczalnosci-v01</code></td><td>Tabela rozpuszczalności (kolumna OH⁻)</td><td><a href="#rozpuszczalnosc-tabela">§6.2</a></td></tr>
+<tr><td><code>n02-przeglad-v01</code></td><td>Kafelki wodorotlenków: rozpuszczalność, barwa, odczyn</td><td><a href="#rozpuszczalnosc-tabela">§6.2</a></td></tr>
+<tr><td><code>n02-dysocjacja-v01</code></td><td>Rozpuszczanie, dysocjacja, efekt cieplny</td><td><a href="#wodorotlenek-vs-zasada">§6.3</a></td></tr>
+<tr><td><code>ph-indicators-v03</code></td><td>Panel pH i barwy wskaźników (także doświadczenie E)</td><td><a href="#ph-wskazniki">§6.4</a></td></tr>
+<tr><td><code>gfx-scene-indicatorRack</code></td><td>Wskaźnik w siedmiu roztworach</td><td><a href="#ph-wskazniki">§6.4</a></td></tr>
+<tr><td><code>n02-otrzymywanie-v01</code></td><td>Trzy metody otrzymywania i mapa przemian</td><td><a href="#metody">§7.1</a></td></tr>
+<tr><td><code>n02-zobojetnianie-v01</code></td><td>Zobojętnianie: licznik moli, pH, krzywa</td><td><a href="#zobojetnianie">§8.1</a></td></tr>
+<tr><td><code>n02-reaktor-v01</code></td><td>Reaktor: wodorotlenek + odczynnik</td><td><a href="#mapa-przemian">§8.3</a></td></tr>
+<tr><td><code>n02-stracanie-v01</code></td><td>Laboratorium jonowe — strącanie 13 wodorotlenków</td><td><a href="#ion-lab">§12</a></td></tr>
+<tr><td><code>rownania-jonowe-v01</code></td><td>Równania jonowe — wszystkie reakcje (strącanie, zobojętnianie)</td><td><a href="#rownania-jonowe">§13</a></td></tr>
+<tr><td><code>n02-doswiadczenia-v01</code></td><td>Pracownia: 26 doświadczeń z wodorotlenkami</td><td><a href="#doswiadczenia">§15</a></td></tr>
+</tbody></table></div>
+<p class="mini-note">Każdy model ma w lekcji jeden przycisk. Zobojętnianie w trzech poziomach zapisu pokazuje model „Równania jonowe” (reakcja HCl + NaOH).</p>
+</section>
+<section class="section" id="audyt">
+<div class="part-heading"><span class="part-num">✓</span> Audyt jakości</div><div class="card card-new"><span class="card-label">v9.0 (2026-10-07) — redakcja według standardu lekcji</span><ul><li>Nowy układ: start (1–4) → rdzeń E8 (5–9: definicja i budowa, właściwości, otrzymywanie, reakcje, zastosowania i BHP) → rozumienie / ambitne (10–14) → praktyka (15–18) → powtórka (19–24) → dodatki A–B → modele silnika.</li><li>Scalono powtórzenia: Ściąga (dawna §7), Model bez skrótów (§8) i Wyjaśnienie (§9) — każdy temat ma jedno pełne miejsce, w innych tylko odnośnik.</li><li>Uzupełnienia: tabela wskaźników i skala pH, dysocjacja zasad, reakcja z CO₂ i rozkład termiczny, strącanie Mg(OH)₂, Al(OH)₃, Fe(OH)₂, równania jonowe strąceń, struktura warstwowa Ca(OH)₂ (akademickie), teoria Lewisa, karta powtórzenia, tabela modeli silnika.</li><li>Poprawki: Ca(OH)₂ w rolnictwie (wapnowanie, nie „bielenie”), opis odkrycia Davy’ego, „dwa jony OH⁻”, poprawnie zamknięty blok o hydroksokompleksach, odnośniki §.</li></ul></div><div class="card card-new"><span class="card-label">v8.1 CHE (2026-10) — integracja z silnikiem</span><ul><li>Widgety wbudowane zastąpione modelami silnika: n02-wzory, n02-przeglad, n02-otrzymywanie, n02-stracanie, n02-zobojetnianie, n02-dysocjacja, n02-reaktor, n02-doswiadczenia (CHE.HYDROXIDES, GFX.rx, GFX.ions, CHE.sim.ParticleSim).</li><li>Rozpuszczalność czytana z tabeli rozpuszczalności silnika; tabela 5.9 i równania oznaczone (audyt LES-N02).</li><li>Poprawki: mnemotechnika OH⁻, hydraty (Ba(OH)₂·8H₂O), Mg(OH)₂ = praktycznie nierozpuszczalny (zgodnie z tabelą), warunek strącania Ca(OH)₂, model poglądowy w checkliście.</li><li>Doświadczenia: jedna lista A–H w formacie egzaminacyjnym (usunięte dublujące się karty 1–4). Korekty v8.03/v8.04 włączone jako §8.</li><li>Nowe treści: tabela ΔH rozpuszczania, iloczyn rozpuszczalności → pH nasyconego roztworu (poziom LO).</li></ul></div>
+<div class="audit-panel">
+<h4>Audyt merytoryczny i funkcjonalny v7.5</h4>
+<div class="audit-grid">
+<div class="audit-item"><strong>v7.8 LAB — spójność z Konstruktor Uniwersalny:</strong> dodano bezpośrednie przejście do stanowiska LAB i odwrotny link z konstruktora; usunięto nieużywany zewnętrzny font ikon; doprecyzowano „wodorotlenek vs zasada”, opis roztworu NaOH i status zapisu NH₄OH; uporządkowano wzmiankę o hydratach, aby nie przedstawiać Ca(OH)₂·xH₂O jako typowego przykładu wymaganego na E8.</div>
+<div class="audit-item"><strong>v7.7 SYNC N02↔Konstruktor (2026-09-26):</strong> mosty dwukierunkowe (nawias, rozpuszczalność OH⁻, strącanie, zobojętnianie); kanoniczna lista wodorotlenków E8; reguła OH⁻ ujednolicona; w konstruktorze: feedback nawiasu OH, dodatkowe równania jonowe (Fe/Al/Ca), poprawione linki do CHEMIA_N02_WODOROTLENKI.html. Bez usuwania treści lekcji.</div>
+<div class="audit-item"><strong>v7.5 — poprawki na podstawie recenzji:</strong> poprawiono opis błędu CaO + H₂O → CaOH w Klinice błędów (dodano precyzyjne wyjaśnienie bilansu atomów wodoru i konieczności nawiasu); uzupełniono opis doświadczenia B o ostrzeżenie przed aerozolem Ca(OH)₂; dodano równania rozkładu AgOH i CuOH w sekcji ciekawostek; doprecyzowano definicję zasady w fiszkach (roztwór wodorotlenku); poprawiono wzmiankę o hydratach wodorotlenków w audycie (usunięto nieścisłość); ujednolicono terminologię w całym dokumencie.</div>
+<div class="audit-item"><strong>v7.4 — poprawki na podstawie recenzji:</strong> doprecyzowano definicję n we wzorze M(OH)ₙ (dodano zastrzeżenie „na poziomie klasy 8”); ujednolicono klasyfikację Mg(OH)₂ na „trudno rozpuszczalny”; uporządkowano rozróżnienie wodorotlenków i hydratów; wzmocniono BHP NaOH/KOH o ostrzeżenie przed oparzeniami chemicznymi; dodano porównanie rozpuszczalności KOH vs NaOH; dopisano pH wody wapiennej (≈12,4) oraz równanie rozpuszczania osadu CaCO₃ w nadmiarze CO₂ do Ca(HCO₃)₂; dodano tabelę „mleko wapienne vs woda wapienna”; uzupełniono ostrzeżenie o toksyczności Ba²⁺ (nie stosować w doświadczeniach uczniowskich); uzupełniono zastosowanie Al(OH)₃ w lekach na zgagę; dodano w klinice błędów kolumnę „Przykład z życia”; uzupełniono równania zobojętniania o stany skupienia (aq)/(l); doprecyzowano w amfoteryczności, że równania z jonami kompleksowymi nie są wymagane na E8; poprawiono opis doświadczenia B (nie pochylać się nad naczyniem — para może zawierać drobne cząstki Ca(OH)₂).</div>
+<div class="audit-item"><strong>v7.3 — poprawki merytoryczne:</strong> doprecyzowano definicję n we wzorze M(OH)ₙ; uściślono opis zasady i roztworów trudno rozpuszczalnych wodorotlenków; skorygowano klasyfikację Mg(OH)₂ i Ba(OH)₂; dodano równania rozkładu AgOH i CuOH; poprawiono opis modelu H–O–Ca–O–H jako modelu poglądowego; ujednolicono tabelę przeglądu wodorotlenków; wzmocniono BHP przy sodzie i CaO; doprecyzowano oznaczenie przykładowych wartości pH; poprawiono zakres działania oranżu metylowego (pH 3,1–4,4); zaktualizowano opis doświadczeń.</div>
+<div class="audit-item"><strong>v7.1 / v7.2 — wcześniejsze rozszerzenia:</strong> Bogatsze SVG w historii odkryć (5 scen); interaktywny quiz klikany (12 pytań + wynik); ćwiczenie współczynników zachowane.</div>
+<div class="audit-item"><strong>v6.9 / v7.0 — baza:</strong> Domknięta podstawa programowa (wzory, otrzymywanie, dysocjacja, wskaźniki, odczyn, zastosowania, elektrolit, higroskopijność, postacie wapna). Modele podręcznikowe (liniowy + rozgałęziony, legenda wiązań). Widgety: Wzórometr, Bilansator, Konstruktor, lab jonowe, Reaktor, pH, dysocjacja, zobojętnianie. Karty doświadczeń E8, fiszki, test + współczynniki, checklista. Responsywność mobile (pełna szerokość, karty kliniki/amfoteryczności).</div>
+<div class="audit-item"><strong>Świadomie poza zakresem tej lekcji:</strong> pełny dział kwasów i soli (osobne lekcje); tryb limitu czasu; wersja do druku.</div>
+</div>
+<p style="margin-top:14px;"><strong>Zachowana cała treść merytoryczna + wszystkie poprawki audytowe + rozbudowane wizualizacje interaktywne.</strong></p>
+<p><strong>Tryby nauki:</strong> Muszę umieć na E8 · Chcę zrozumieć · Idę dalej.</p>
+<p><strong>Wizualizacje:</strong> modele silnika CHE (lista w karcie v8.1 powyżej).</p>
+<p><strong>Numer:</strong> to jest <strong>N02</strong> (wodorotlenki).</p>
+</div>
+</section>
+<footer class="footer">
+<p><strong>CHEMIA N02 v9.0</strong> · Wodorotlenki · 2026</p>
+<p style="opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+</footer>
+</main>
+<script>
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+function checkError(ans){
+  const el=document.getElementById('errFeedback');
+  el.style.display='block';
+  if(ans==='2'){
+    el.style.background='var(--c-basic-bg)';
+    el.style.color='var(--c-basic)';
+    el.style.borderLeft='4px solid var(--c-basic)';
+    el.innerHTML='<b>Dobrze.</b> Ca(OH)₂ zawiera 2 grupy OH⁻. Wapń ma ładunek +2, więc potrzebuje 2 anionów OH⁻.';
+  }else if(ans==='1'){
+    el.style.background='var(--c-error-bg)';
+    el.style.color='var(--c-error)';
+    el.style.borderLeft='4px solid var(--c-error)';
+    el.innerHTML='<b>Nie.</b> 1 grupa byłaby w NaOH. W Ca(OH)₂ są 2 grupy.';
+  }else{
+    el.style.background='var(--c-error-bg)';
+    el.style.color='var(--c-error)';
+    el.style.borderLeft='4px solid var(--c-error)';
+    el.innerHTML='<b>Nie.</b> 3 grupy byłyby w Al(OH)₃. W Ca(OH)₂ są 2.';
+  }
+}
+</script>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+  anchor.addEventListener('click',function(e){
+    const targetId=this.getAttribute('href');
+    if(targetId==='#') return;
+    const target=document.querySelector(targetId);
+    if(target){
+      e.preventDefault();
+      const offset=80;
+      const elementPosition=target.getBoundingClientRect().top+window.pageYOffset;
+      window.scrollTo({top:elementPosition-offset,behavior:'smooth'});
+    }
+  });
+});
+</script>
+<script>
+(function(){
+  function setupTableHints(){
+    document.querySelectorAll('.table-wrap').forEach(wrap=>{
+      let hint=wrap.previousElementSibling;
+      if(!hint||!hint.classList.contains('table-scroll-hint')){
+        hint=document.createElement('div');
+        hint.className='table-scroll-hint';
+        hint.innerHTML='<span>Przesuń tabelę w bok, aby zobaczyć całość</span><span class="scroll-arrow">← ↔ →</span>';
+        wrap.parentNode.insertBefore(hint,wrap);
+      }
+      const update=()=>wrap.classList.toggle('is-scrollable',wrap.scrollWidth>wrap.clientWidth+4);
+      update();
+      wrap.addEventListener('scroll',()=>{
+        if(wrap.scrollLeft>8) hint.style.opacity='.45';
+        else hint.style.opacity='1';
+      },{passive:true});
+      if(window.ResizeObserver) new ResizeObserver(update).observe(wrap);
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',setupTableHints);
+  else setupTableHints();
+})();
+</script>
+<script>
+(function(){
+  const wrap=document.getElementById('quizWrap');
+  const scoreEl=document.getElementById('quizScore');
+  if(!wrap) return;
+  const questions=[
+    {tag:'P',q:'Co to wodorotlenek?',opts:['Związek z kationu metalu i anionu OH⁻','Każda substancja o odczynie zasadowym','Tlenek metalu rozpuszczony w wodzie','Jon OH⁻ w roztworze'],ok:0,fb:'Wodorotlenek = kation metalu + grupy OH⁻ (np. NaOH, Ca(OH)₂).'},
+    {tag:'P',q:'Kiedy w zapisie wodorotlenku stawiamy nawias?',opts:['Zawsze','Gdy grupa OH⁻ powtarza się więcej niż raz','Tylko dla metali 2. grupy','Nigdy — to błąd'],ok:1,fb:'NaOH bez nawiasu; Ca(OH)₂, Al(OH)₃ — nawias, bo OH⁻ × n.'},
+    {tag:'P',q:'Który zapis jest poprawny dla wodorotlenku wapnia?',opts:['CaOH₂','Ca(OH)₂','Ca₂OH','CaO₂H₂'],ok:1,fb:'CaOH₂ sugeruje, że 2 dotyczy tylko H. Poprawnie: Ca(OH)₂ (= Ca₁O₂H₂).'},
+    {tag:'P',q:'Roztwór NaOH jest elektrolitem, bo:',opts:['Jest żrący','Zawiera swobodne jony Na⁺ i OH⁻','Ma wysoką temperaturę wrzenia','Jest higroskopijny'],ok:1,fb:'Elektrolit = roztwór z jonami, które przewodzą prąd.'},
+    {tag:'T',q:'CaO + H₂O → ?',opts:['CaO₂ + H₂','Ca(OH)₂','Ca + H₂O₂','2CaOH'],ok:1,fb:'Tlenek metalu aktywnego + woda → wodorotlenek.'},
+    {tag:'T',q:'Uzupełnij: FeCl₃ + □ NaOH → Fe(OH)₃↓ + □ NaCl',opts:['1 i 1','2 i 2','3 i 3','6 i 3'],ok:2,fb:'Fe³⁺ wymaga 3× OH⁻ → współczynnik 3.'},
+    {tag:'T',q:'Co obserwujesz po dodaniu NaOH do CuSO₄?',opts:['Brunatny osad','Niebieski osad','Gaz H₂','Nic — reakcja nie zachodzi'],ok:1,fb:'Cu(OH)₂↓ — niebieski, galaretowaty osad.'},
+    {tag:'A',q:'Dlaczego Fe(OH)₃ nie daje wyraźnego odczynu zasadowego?',opts:['Nie zawiera OH⁻','Jest praktycznie nierozpuszczalny — mało OH⁻ w roztworze','Jest kwasem','Reaguje tylko z NaOH'],ok:1,fb:'Odczyn zależy od wolnych OH⁻ w roztworze. Nierozpuszczalny ≈ brak odczynu.'},
+    {tag:'A',q:'Czym różni się wodorotlenek od zasady (definicja szkolna)?',opts:['Niczym — to synonimy','Wodorotlenek = związek; zasada = jego wodny roztwór z OH⁻','Zasada to zawsze gaz','Wodorotlenek to tylko NaOH'],ok:1,fb:'NaOH(s) to wodorotlenek; NaOH(aq) to zasada sodowa.'},
+    {tag:'P',q:'Woda wapienna to:',opts:['Czysty CaO','Mętna zawiesina Ca(OH)₂','Klarowny, nasycony roztwór Ca(OH)₂','Roztwór NaOH z wapniem'],ok:2,fb:'Woda wapienna = klarowny nasycony roztwór; mleko wapienne = zawiesina.'},
+    {tag:'P',q:'Higroskopijność NaOH oznacza, że:',opts:['Reaguje z kwasami','Pochłania wilgoć z powietrza','Świeci w ciemności','Nie rozpuszcza się w wodzie'],ok:1,fb:'NaOH i KOH „rozpływają się” na powietrzu — trzymaj w szczelnym naczyniu.'},
+    {tag:'Z',q:'Równanie jonowe skrócone zobojętniania mocnego kwasu i mocnej zasady:',opts:['Na⁺ + Cl⁻ → NaCl','H⁺ + OH⁻ → H₂O','NaOH + HCl → NaCl + H₂O','2H₂ + O₂ → 2H₂O'],ok:1,fb:'Istota zobojętniania: proton z kwasu + OH⁻ z zasady → woda.'}
+  ];
+  let answered=0, correct=0;
+  function render(){
+    wrap.innerHTML='';
+    questions.forEach((item,qi)=>{
+      const div=document.createElement('div');
+      div.className='quiz-q';
+      div.dataset.qi=qi;
+      let optsHtml=item.opts.map((o,oi)=>
+        `<button type="button" class="quiz-opt" data-oi="${oi}">${o}</button>`
+      ).join('');
+      div.innerHTML=`<span class="q-tag">${item.tag}</span><h5>${qi+1}. ${item.q}</h5><div class="quiz-opts">${optsHtml}</div><div class="quiz-fb" id="qfb${qi}"></div>`;
+      wrap.appendChild(div);
+      div.querySelectorAll('.quiz-opt').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          if(div.dataset.done) return;
+          div.dataset.done='1';
+          answered++;
+          const oi=+btn.dataset.oi;
+          const fb=document.getElementById('qfb'+qi);
+          div.querySelectorAll('.quiz-opt').forEach(b=>{
+            b.disabled=true;
+            if(+b.dataset.oi===item.ok) b.classList.add('correct');
+          });
+          if(oi===item.ok){
+            correct++;
+            btn.classList.add('correct');
+            fb.className='quiz-fb show ok';
+            fb.textContent='✓ '+item.fb;
+          }else{
+            btn.classList.add('wrong');
+            fb.className='quiz-fb show bad';
+            fb.textContent='✕ '+item.fb;
+          }
+          if(answered===questions.length){
+            scoreEl.className='quiz-score show';
+            const pct=Math.round(100*correct/questions.length);
+            scoreEl.textContent=`Wynik: ${correct} / ${questions.length} (${pct}%) — bez presji, możesz wrócić do sekcji i poprawić.`;
+          }
+        });
+      });
+    });
+  }
+  render();
+})();
+</script>
+<script>(function(){var b=document.getElementById("advToggle");if(!b)return;var all=function(){return document.querySelectorAll("details.adv")};var n=all().length;b.textContent="Pokaż treści akademickie ("+n+")";b.addEventListener("click",function(){var on=b.getAttribute("aria-pressed")!=="true";all().forEach(function(d){d.open=on});b.setAttribute("aria-pressed",on?"true":"false");b.textContent=(on?"Ukryj":"Pokaż")+" treści akademickie ("+n+")"});window.addEventListener("beforeprint",function(){all().forEach(function(d){d.open=true})});})();</script>
+</body>
+</html>

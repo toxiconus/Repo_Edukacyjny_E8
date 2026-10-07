@@ -1,0 +1,89 @@
+
+  function rxCat(){var o=$('rx-cat');if(!o)return;var R=CH().REACTION;if(!R||!R.list){o.innerHTML='';return}
+    var L=R.list(),s=curSym();if(!rid||!L.some(function(r){return r.id===rid}))rid=(L.filter(function(r){return r.reactants.concat(r.products).some(function(x){return has(x.formula,s)})})[0]||L[0]).id;
+    var r=R.get(rid),tc=R.thermochem(rid),b=r.balance||{},M=CH().CHEM&&CH().CHEM.molarMass,ms=function(a){try{return a.reduce(function(t,x){return t+x.coef*M(x.formula)},0)}catch(e){return NaN}};
+    var atoms=Object.keys(b.reactants||{}),mr=ms(r.reactants),mp=ms(r.products);
+    var th=tc&&tc.ok?'<div class="bzr"><span>ΔH</span>'+bar(tc.dH,500)+'<b>'+tc.dH.toFixed(1)+' kJ/mol</b></div><div class="bzr"><span>ΔG (298 K)</span>'+bar(tc.dG,500)+'<b>'+tc.dG.toFixed(1)+' kJ/mol '+badge(tc.spontaneous?'samorzutna':'niesamorzutna',tc.spontaneous?'g':'r')+'</b></div><div class="rx-safe">ΔS = '+tc.dS.toFixed(1)+' J/(mol·K). Model uproszczony: dane dla HCl pochodzą z fazy gazowej.</div>':'<div class="rx-safe">Brak danych termochemicznych w silniku'+(tc&&tc.missing?': '+tc.missing.map(fm).join(', '):'')+'.</div>';
+    o.innerHTML='<div class="card sc-card"><h4>Katalog reakcji z silnika <small class="sc-sub">'+L.length+' reakcji w silniku · pogrupowane według typu</small></h4>'+rxList(L,s,R)+
+    '<div class="rx-flow">'+chips(r.reactants)+'<span class="ar">→</span>'+chips(r.products)+'</div><div class="rx-meta">'+badge((DT().REACTION_TYPE_NAMES||{})[r.type]||r.type,'b')+badge(b.ok?'zbilansowana':'niezbilansowana',b.ok?'g':'r')+' <span class="dn-mut">'+fx(r.conditions)+'</span></div>'+
+    '<div class="rx-result yes"><div class="rx-verdict">Obserwacja</div>'+fx(r.observation)+((r.safety||[]).length?'<div class="rx-safe">⚠ '+fx(r.safety.join('; '))+'</div>':'')+'</div>'+
+    '<h5 class="sub-h">Bilans atomów</h5>'+atoms.map(function(a){return '<div class="bzr"><span>'+a+'</span><span class="trk"><i class="fill" style="width:'+b.reactants[a]/Math.max.apply(null,atoms.map(function(z){return b.reactants[z]}))*100+'%"></i></span><b>'+b.reactants[a]+' = '+(b.products[a]||0)+'</b></div>'}).join('')+
+    (isFinite(mr)?'<div class="rx-safe">Bilans masy: '+mr.toFixed(2)+' g = '+mp.toFixed(2)+' g (dla podanych współczynników, w molach)</div>':'')+'<h5 class="sub-h">Termodynamika</h5>'+th+'</div>';
+    o.onclick=function(e){var f=e.target.closest('button[data-f]');if(f){rxF=f.dataset.f;rxCat();return}var q=e.target.closest('button[data-r]');if(q){var sc=o.querySelector('.rxl-box'),top=sc?sc.scrollTop:0;rid=q.dataset.r;rxCat();var sc2=o.querySelector('.rxl-box');if(sc2)sc2.scrollTop=top}};
+    var qi=o.querySelector('#rxl-q');if(qi)qi.oninput=function(){rxQ=qi.value;var p=qi.selectionStart;rxCat();var n=$('rx-cat').querySelector('#rxl-q');if(n){n.focus();try{n.setSelectionRange(p,p)}catch(_){}}}}
+  /* ---------- DIAGNOSTYKA (silnik) ---------- */
+  var lastReport='';
+  function diagRender(){var o=$('diag-out');if(!o)return;var C=CH(),D=C.DATA||{},rows=[],p=pack();
+    function add(st,n,d){rows.push({st:st,name:n,det:d})}
+    add('ok','Silnik','v'+(C.ENGINE?C.ENGINE.version:'?')+' · dane '+(C.ENGINE?C.ENGINE.dataVersion:'?')+' · zestawów danych: '+Object.keys(D).length+' · wbudowany w plik');
+    try{var t=C.selfTest();add(t.ok?'ok':'err','Autotest silnika',t.passed+'/'+t.total+' testów: '+t.checks.map(function(c){return (c.ok?'✓ ':'✗ ')+c.name}).join(' · '))}catch(e){add('err','Autotest',String(e))}
+    try{var a=C.REACTION.audit();add(a.unbalanced.length?'err':'ok','Reakcje',a.count+' reakcji, niezbilansowanych: '+a.unbalanced.length+(a.missingData.length?' · brak danych substancji: '+a.missingData.map(function(m){return m.id+' ('+m.missing.map(fx).join(', ')+')'}).join('; '):''))}catch(e){}
+    try{var el=D.ATOMIC_PROFILES||{},req=(C.DATA_COVERAGE&&C.DATA_COVERAGE.required)||[],ks=Object.keys(el),tot=ks.length*req.length,miss=0,w=[];
+      ks.forEach(function(k){req.forEach(function(r){var v=(el[k].properties||{})[r];if(v==null||v===''||(Array.isArray(v)&&!v.length)){miss++;if(w.length<6&&w.indexOf(r)<0)w.push(r)}})});
+      add(miss?'warn':'ok','Kompletność pierwiastków',ks.length+' pierwiastków × '+req.length+' pól: wypełnione '+(100*(tot-miss)/tot).toFixed(1)+'%'+(miss?' · braki np. w: '+w.join(', '):''))}catch(e){}
+    try{var di=C.DATA_INTEGRITY.run().value;add(di.ok?'ok':'warn','Spójność z wzorcem',di.ok?'zgodna':'wzorzec porównawczy jest nieaktualny (np. liczba cząsteczek 12 vs 15; id „naclH2SO4” vs „naclH2so4”) — to uwaga do silnika, nie błąd wyświetlania')}catch(e){}
+    add(p?'ok':'warn','Paczka szkolna',p?'v'+p.version+' · uzupełnia silnik o tlenki i wodorotlenki':'brak');
+    var br=window.__CHE_LAB_BRIDGE__;add(br&&br.active?'ok':'warn','Most CHE ↔ Lab',br&&br.active?br.elements+' pierwiastków, '+br.isotopes+' izotopów, '+br.atomicProps+' właściwości':'nieaktywny');
+    var bt=[].slice.call(document.querySelectorAll('#tabnav button[data-tab]')),bad=bt.filter(function(b){var q=document.querySelector('.tabpane[data-tab="'+b.dataset.tab+'"]');return !q||!q.closest('.app')}).map(function(b){return b.dataset.tab});
+    add(bad.length?'err':'ok','Zakładki',bt.length+' przycisków'+(bad.length?' · bez panelu: '+bad.join(', '):' · każda ma panel'));
+    add(lsOk()?'ok':'warn','Pamięć lokalna',lsOk()?'dostępna':'zablokowana');
+    var n={ok:0,warn:0,err:0},ic={ok:'✓',warn:'!',err:'×'};rows.forEach(function(r){n[r.st]++});
+    o.innerHTML='<div class="dg-sum"><span class="dn-b g">OK: '+n.ok+'</span><span class="dn-b o">Uwagi: '+n.warn+'</span><span class="dn-b '+(n.err?'r':'')+'">Błędy: '+n.err+'</span></div>'+rows.map(function(r){return '<div class="dg-row dg-'+r.st+'"><span class="dg-ic">'+ic[r.st]+'</span><span class="dg-name">'+esc(r.name)+'</span><span class="dg-det">'+esc(r.det)+'</span></div>'}).join('');
+    lastReport=rows.map(function(r){return '['+r.st.toUpperCase()+'] '+r.name+': '+r.det}).join('\n')}
+  function lsOk(){try{localStorage.setItem('__t','1');localStorage.removeItem('__t');return true}catch(e){return false}}
+  /* ---------- ZWIĄZKI / STRUKTURA ← SILNIK ---------- */
+  var AN=[['O',2,'tlenek'],['Cl',1,'chlorek'],['S',2,'siarczek'],['OH',1,'wodorotlenek'],['SO4',2,'siarczan(VI)'],['NO3',1,'azotan(V)']],RM=['','I','II','III','IV','V','VI','VII'];
+  function nm(f){return String(f||'').replace(/[₀-₉]/g,function(c){return c.charCodeAt(0)-8320}).replace(/[⁺⁻\s]/g,'')}
+  function subOf(f){var S=DT().SUBSTANCES||{},k=nm(f);if(S[k])return S[k];for(var x in S)if(nm(S[x].formula)===k)return S[x];return null}
+  function mm(f){try{var v=CH().CHEM.molarMass(f);return isFinite(v)?v:null}catch(e){return null}}
+  function goRx(id){rid=id;rxCat();var t=$('tab-reakcja');if(t)t.click()}
+  function rxBtns(f){var R=CH().REACTION;if(!R)return '';var k=nm(f),L=R.list().filter(function(r){return r.reactants.concat(r.products).some(function(x){return nm(x.formula)===k||(k.length<=3&&has(x.formula,k))})});
+    return L.length?'<h5 class="sub-h">Reakcje w silniku</h5><div class="rx-presets">'+L.map(function(r){return '<button type="button" data-go="'+r.id+'">'+fm(R.equation(r.id))+'</button>'}).join('')+'</div>':'<div class="rx-safe">Brak reakcji z tą substancją w katalogu silnika.</div>'}
+  function computed(s){var P=(DT().ATOMIC_PROFILES||{})[s],ir=P&&P.properties&&P.properties.ionicRadius,out=[];if(!ir)return out;
+    Object.keys(ir).filter(function(k){return /\+$/.test(k)}).forEach(function(k){var c=parseInt(k,10);AN.forEach(function(a){var g=gcd(c,a[1]),nc=a[1]/g,na=c/g,an=a[0].length>2||a[0]==='OH'?(na>1?'('+a[0]+')'+na:a[0]):a[0]+(na>1?na:''),f=s+(nc>1?nc:'')+an,eng=subOf(f);
+      out.push({f:f,n:a[2]+' '+s+'('+RM[c]+')',eng:eng,m:mm(f)})})});return out}
+  function card(k){var S=subOf(k),D=DT(),key=nm(k),h='',miss=[],st={aq:'roztwór',s:'ciało stałe',g:'gaz',l:'ciecz'};
+    var M=(S&&S.molarMass)||mm(key),T=D.THERMOCHEM&&D.THERMOCHEM[key],Ph=D.PHYSICAL_PROPS&&D.PHYSICAL_PROPS[key],So=D.SOLUBILITY&&D.SOLUBILITY[key],A=D.ACID_SYSTEMS&&D.ACID_SYSTEMS[key];
+    h+='<div class="rx-meta">'+(S?badge(S.role)+badge(st[S.state]||S.state,'b'):badge('brak w SUBSTANCES','o'))+(M?badge('M = '+(+M).toFixed(2)+' g/mol'):'')+'</div>';
+    if(S&&(S.uses||[]).length)h+='<div class="rx-safe">Zastosowania: '+esc(S.uses.join(', '))+'</div>';
+    if(S&&(S.safety||[]).length)h+='<div class="rx-safe">⚠ '+esc(S.safety.join(', '))+'</div>';
+    if(T)h+='<h5 class="sub-h">Termochemia</h5><div class="bzr"><span>ΔH°f</span>'+bar(T.dHf,1300)+'<b>'+T.dHf+' kJ/mol</b></div><div class="rx-safe">S° = '+T.S+' · Cp = '+T.Cp+' J/(mol·K)</div>';else miss.push('termochemia');
+    if(Ph)h+='<h5 class="sub-h">Właściwości fizyczne</h5><div class="rx-meta">'+badge('topn. '+Ph.mp+' K')+badge('wrz. '+Ph.bp+' K')+badge(Ph.density+' g/cm³')+badge(Ph.color,'b')+badge('zapach: '+Ph.odor)+'</div>';else miss.push('właściwości fizyczne');
+    if(So)h+='<div class="bzr"><span>Rozpuszczalność</span><span class="trk"><i class="fill" style="width:'+Math.max(2,(Math.log10(So.water20_gL)+4.5)/7.5*100)+'%"></i></span><b>'+So.water20_gL+' g/dm³</b></div>';else miss.push('rozpuszczalność');
+    if(A)h+='<div class="bzr"><span>pKa</span><span class="trk">'+A.pKa.map(function(p){return '<i class="dot" style="left:'+((p+8)/22*100)+'%"></i>'}).join('')+'</span><b>'+A.pKa.join('; ')+'</b></div>';
+    return h+(miss.length?'<div class="rx-safe">Brak w silniku: '+miss.join(', ')+'.</div>':'')+rxBtns(key)}
+  function host(id,tab){var h=$(id);if(!h){var p=document.querySelector('.tabpane[data-tab="'+tab+'"]');if(!p)return null;h=document.createElement('div');h.id=id;h.className='card sc-card';h.style.marginTop='14px';h.onclick=function(e){var b=e.target.closest('[data-go]');if(b)goRx(b.dataset.go)};p.appendChild(h)}return h}
+  function spMode(){try{return curKind==='sp'}catch(e){return false}}
+  function molEng(){var h=host('mol-eng','mol'),f=host('forms-eng','forms');if(!h)return;var s=curSym(),D=DT(),html;
+    if(spMode()){var c;try{c=CD[cur]}catch(e){}
+      html=c?'<h4>'+fm(nm(c.f))+' · dane z silnika</h4>'+card(c.f):'';if(f){f.innerHTML=html;h.innerHTML=html}return}
+    var S=D.SUBSTANCES||{},ks=Object.keys(S).filter(function(k){return has(S[k].formula||k,s)&&nm(S[k].formula)!==s}),cp=computed(s).filter(function(x){return !x.eng}),pr=(CH().PROFILE&&CH().PROFILE.substancesForFormula(s))||[];
+    html='<h4>'+esc(s)+' w silniku <small class="sc-sub">'+ks.length+' substancji · '+cp.length+' obliczonych</small></h4>';
+    html+=pr.length?'<div class="sub-grid">'+pr.concat(ks.map(function(k){return S[k]})).map(function(x){return '<div class="sub-c me"><b>'+fm(x.formula)+'</b><div>'+esc(x.name)+'</div><small>'+(x.molarMass?x.molarMass+' g/mol':'')+((x.uses||[]).length?' · '+esc(x.uses.join(', ')):'')+'</small></div>'}).join('')+'</div>':'';
+    html+=rxBtns(s);
+    if(cp.length)html+='<h5 class="sub-h">Uzupełnienie: związki obliczone z ładunków jonów</h5><div class="rx-safe">Brak ich w bazie substancji silnika, więc wzory wyznaczono z ładunków jonów (ionicRadius) i dopasowano do anionów O²⁻, Cl⁻, S²⁻, OH⁻, SO₄²⁻, NO₃⁻. Masy molowe liczy silnik.</div>'+tbl(['Wzór','Nazwa','Masa molowa'],cp.map(function(x){return [fm(x.f),esc(x.n),x.m?x.m.toFixed(2)+' g/mol':'—']}));
+    else if(!ks.length)html+='<div class="rx-safe">Brak danych o związkach tego pierwiastka (np. brak jonów w tablicy promieni jonowych).</div>';
+    h.innerHTML=html;if(f)f.innerHTML=''}
+  function copy(txt,btn){
+    var done=function(){var t=btn.textContent;btn.textContent='Skopiowano ✓';setTimeout(function(){btn.textContent=t},1400)};
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done,function(){fallback()}); else fallback();
+    function fallback(){var t=document.createElement('textarea');t.value=txt;document.body.appendChild(t);t.select();try{document.execCommand('copy');done()}catch(e){}t.remove()}
+  }
+  function init(){
+    var p=pack();
+    if(p) rxInit(p);
+    daneRender(); diagRender(); rxCat();
+    molEng(); ['mols','cinfo'].forEach(function(i){var e=$(i);if(e)new MutationObserver(molEng).observe(e,{childList:true})});
+    var ne=$('ec-name'); if(ne) new MutationObserver(function(){rxCat();daneRender();molEng()}).observe(ne,{childList:true,characterData:true,subtree:true});
+    var b=$('dane-copy'); if(b) b.onclick=function(){copy(JSON.stringify(pack(),null,2),b)};
+    b=$('diag-copy'); if(b) b.onclick=function(){diagRender();copy(lastReport,b)};
+    b=$('diag-refresh'); if(b) b.onclick=diagRender;
+    var nav=$('tabnav'); if(nav) nav.addEventListener('click',function(e){if(e.target.closest('button[data-tab="diag"]')) setTimeout(diagRender,30)});
+    window.addEventListener('resize',function(){var pn=document.querySelector('.tabpane[data-tab="diag"].show'); if(pn) diagRender()});
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init); else init();
+})();
+
+</script>
+
+

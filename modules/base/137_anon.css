@@ -1,0 +1,9 @@
+<style[^>]*>([\s\S]*?)<\/style>/gi, function(_, css){ styleBits.push(css); return ''; });
+  var common=($('che-lesson-shared-css')||{}).textContent||'';
+  var styleEl=document.createElement('style');
+  styleEl.id='che-lfs-lesson-css';
+  styleEl.textContent=common+'\n'+(L.SHARED_CSS||'')+'\n'+styleBits.join('\n')+'\n.che-lesson-viz-slot{margin:14px 0;border:1px solid var(--line,#d5dee6);border-radius:12px;background:var(--panel,#fff);overflow:hidden}.che-lesson-viz-slot > header{padding:8px 12px;border-bottom:1px solid var(--line);background:var(--panel-2,#f1f5f8);font:700 13px system-ui}.che-lesson-viz-slot > .che-lesson-viz-host{padding:10px 12px}.che-lesson-viz-again{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0;padding:8px 12px;border:1px dashed var(--line,#d5dee6);border-radius:10px;font:13px system-ui;color:var(--mut,#64748b)}.che-lesson-viz-again button{border:1px solid var(--line,#d5dee6);background:var(--panel,#fff);color:inherit;border-radius:8px;padding:5px 10px;font:600 12px system-ui;cursor:pointer}';
+  var oldStyle=$('che-lfs-lesson-css'); if(oldStyle) oldStyle.remove();
+  document.head.appendChild(styleEl);
+  /* usu\u0144 skrypty lekcji (dzia\u0142aj\u0105 w izolacji iframe; tu montujemy widoki CHE) */
+  var lsJs=[];lessonBody=lessonBody.replace(/

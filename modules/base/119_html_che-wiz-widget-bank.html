@@ -1,0 +1,1201 @@
+
+<div id="che-wiz-widget-bank" class="che-wiz-scope" hidden>
+<article class="component" id="c-ionization">
+<header class="comp-head">
+<span class="comp-badge src-n03">N03</span>
+<span class="comp-id">ionization</span>
+<span class="comp-tag svg">SVG</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>SVG pokazujący krok po kroku, jak proton przeskakuje z HCl na H₂O → H₃O⁺ + Cl⁻. 4 kroki, sterowane przyciskiem.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N03 (jonizacja kwasów), N02 (dysocjacja), N01 (jonizacja tlenków), elektrolity.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-ionization">
+<div class="widget-hint">Naciśnij „Krok”, aby zobaczyć, jak proton przeskakuje z HCl na wodę.</div>
+<svg aria-label="Jonizacja HCl" class="ion-svg" data-s="0" role="img" viewbox="0 0 460 170">
+<defs>
+<marker id="ahIon" markerheight="7" markerwidth="7" orient="auto" refx="8" refy="5" viewbox="0 0 10 10"><path d="M0 0L10 5L0 10z" fill="#b06f1c"></path></marker>
+</defs>
+<g class="mv g-hcl">
+<circle cx="60" cy="90" fill="#86efac" r="26" stroke="#15803d" stroke-width="2"></circle>
+<text fill="#14532d" font-size="15" x="60" y="90">Cl</text>
+<g class="mv proton"><circle cx="100" cy="90" fill="#fff" r="12" stroke="#0d6868" stroke-width="2"></circle><text fill="#0d6868" font-size="11" x="100" y="90">H</text></g>
+<text class="fade d3" fill="#b83a45" font-size="16" x="60" y="52">Cl⁻</text>
+</g>
+<g class="mv g-w">
+<circle class="glow" cx="350" cy="80" fill="#fca5a5" r="24" stroke="#b91c1c" stroke-width="2"></circle>
+<text fill="#7f1d1d" font-size="15" x="350" y="80">O</text>
+<circle cx="322" cy="112" fill="#fff" r="11" stroke="#64748b" stroke-width="2"></circle><text fill="#475569" font-size="10" x="322" y="112">H</text>
+<circle cx="378" cy="112" fill="#fff" r="11" stroke="#64748b" stroke-width="2"></circle><text fill="#475569" font-size="10" x="378" y="112">H</text>
+<text class="fade d1" fill="#b06f1c" font-size="11" x="350" y="145">δ⁻</text>
+<text class="fade d3" fill="#0d6868" font-size="16" x="350" y="152">H₃O⁺</text>
+</g>
+<path class="fade arrow" d="M150 60 C 190 20, 250 20, 310 50" fill="none" marker-end="url(#ahIon)" stroke="#b06f1c" stroke-dasharray="6 5" stroke-width="2.5"></path>
+<text class="fade d1" fill="#b06f1c" font-size="11" x="150" y="150">δ⁺ na H</text>
+</svg>
+<div class="button-grid">
+<button class="btn btn-primary" data-act="step" type="button">▶ Krok</button>
+<button class="btn" data-act="reset" type="button">↺ Reset</button>
+<span class="ion-text" style="font-size:12.5px;color:var(--text-soft);">Krok 0: HCl i H₂O osobno.</span>
+</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać warianty: HBr, HI, H₂SO₄ (dwustopniowa), HNO₃, CH₃COOH (słaby).</li>
+<li>Dodać tryb auto-play z pauzą.</li>
+<li>Dodać porównanie mocny vs słaby kwas obok siebie.</li>
+<li>Dodać animację hydratacji jonów (otaczanie przez H₂O).</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-bracket">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">bracketAnim</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Animacja przejścia CaOH₂ → Ca(OH)₂. 4 etapy: błąd → diagnoza → poprawa → znaczenie.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02 (nawias w wodorotlenkach), N03 (H₂SO₄ vs HSO₄⁻), N01 (FeO₃ vs Fe₂O₃).</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-bracket">
+<div class="widget-hint">Kliknij etapy lub uruchom animację.</div>
+<div class="br-stages">
+<button class="br-stage-btn active" data-br="1" type="button">1. Błędny zapis</button>
+<button class="br-stage-btn" data-br="2" type="button">2. Co jest nie tak</button>
+<button class="br-stage-btn" data-br="3" type="button">3. Poprawa</button>
+<button class="br-stage-btn" data-br="4" type="button">4. Co to znaczy</button>
+</div>
+<div class="br-display">CaOH<span class="err-part">₂</span></div>
+<div class="br-caption">Błędny zapis. Indeks 2 wydaje się dotyczyć tylko H.</div>
+<div class="button-grid">
+<button class="btn btn-primary" data-act="play" type="button">▶ Odtwórz animację</button>
+</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać AlOH₃, FeOH₃, CaNO₃, HSO₄.</li>
+<li>Tryb quiz — użytkownik sam poprawia.</li>
+<li>Animacja „co się stanie, jeśli zostawisz błąd”.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-dwstage">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">dwStage</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>4 tryby: CaO + H₂O, SO₃ + H₂O, CO₂ + H₂O, CuO (brak reakcji). Pokazuje różnicę między tlenkiem zasadowym, kwasowym i obojętnym.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01 (tlenki + woda), N02, N03, ochrona środowiska (kwaśne deszcze).</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-dwstage">
+<div class="widget-hint">Kliknij tryb — zobacz mikroskopijną interpretację.</div>
+<div class="dw-mode-bar">
+<button class="dw-mode-btn active" data-dw="cao" type="button">CaO + H₂O</button>
+<button class="dw-mode-btn" data-dw="so3" type="button">SO₃ + H₂O</button>
+<button class="dw-mode-btn" data-dw="co2" type="button">CO₂ + H₂O</button>
+<button class="dw-mode-btn" data-dw="cuo" type="button">CuO (brak reakcji)</button>
+</div>
+<div class="dw-stage"></div>
+<div class="dw-caption">Wybierz tryb.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać Na₂O, K₂O, BaO, MgO, Fe₂O₃, Al₂O₃, ZnO.</li>
+<li>Animacja ruchu cząsteczek wody.</li>
+<li>Porównanie szybkości reakcji (CaO szybko vs MgO wolno).</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-diss">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">dissWidget</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>4 tryby: kryształ NaOH → rozpad na jony → hydratacja → porównanie Cu(OH)₂ (nierozpuszczalny).</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02 (dysocjacja), N03, N01, elektrolity.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-diss">
+<div class="widget-hint">Kliknij tryb.</div>
+<div class="dw-mode-bar">
+<button class="dw-mode-btn active" data-diss="krystal" type="button">1. Kryształ NaOH</button>
+<button class="dw-mode-btn" data-diss="rozpad" type="button">2. Rozpad na jony</button>
+<button class="dw-mode-btn" data-diss="hydratacja" type="button">3. Hydratacja</button>
+<button class="dw-mode-btn" data-diss="cuoh" type="button">4. Porównaj: Cu(OH)₂</button>
+</div>
+<div class="dw-stage"></div>
+<div class="dw-caption"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać KOH, Ca(OH)₂, HCl, H₂SO₄, CH₃COOH (słaby — częściowa dysocjacja).</li>
+<li>Animacja hydratacji jonów.</li>
+<li>Wykres przewodnictwa.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-timeline">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">timelineAnim</span>
+<span class="comp-tag svg">SVG + DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>5 scen historycznych (Arrhenius, Brønsted, Lowry, Lewis, rozwój). Klikane kropki + nawigacja.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>Każda lekcja — historia odkryć dodaje kontekst.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-timeline">
+<div class="widget-hint">Kliknij kropkę lub użyj przycisków.</div>
+<div class="ta-stage"></div>
+<div class="ta-dots"></div>
+<div class="ta-controls">
+<button class="ta-nav" data-ta="prev" type="button">← Poprzedni</button>
+<div class="ta-progress">1 / 5</div>
+<button class="ta-nav" data-ta="next" type="button">Następny →</button>
+</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać więcej scen (7–8).</li>
+<li>Tryb auto-play z opcjonalnym dźwiękiem.</li>
+<li>Quiz historyczny po przejściu.</li>
+<li>Tryb porównania: dwie osie obok siebie.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-ionlab">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">particleSim (dawniej ionLab)</span>
+<span class="comp-tag canvas">Canvas</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Canvas — taniec jonów w roztworze. 3 reakcje: FeCl₃+NaOH, CuSO₄+NaOH, MgCl₂+NaOH. Licznik wolnych jonów i osadu.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02 (strącanie), N03, N01, N04 (sole).</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-ionlab">
+<div class="widget-hint">Wybierz sól, uruchom — obserwuj: ruch → zbliżanie → osad.</div>
+<div class="il-controls">
+<button class="il-picker active" data-ion="fecl3" type="button">FeCl₃ + NaOH</button>
+<button class="il-picker" data-ion="cuso4" type="button">CuSO₄ + NaOH</button>
+<button class="il-picker" data-ion="mgcl2" type="button">MgCl₂ + NaOH</button>
+</div>
+<div class="il-stage"><canvas height="340" width="800"></canvas></div>
+<div class="il-counters">
+<div class="il-counter"><div class="il-label">Wolne jony metalu</div><div class="il-value">0</div></div>
+<div class="il-counter"><div class="il-label">Wolne jony OH⁻</div><div class="il-value">0</div></div>
+<div class="il-counter"><div class="il-label">Osad</div><div class="il-value">0</div></div>
+</div>
+<div class="il-feedback">Start: naciśnij ▶, aby uruchomić.</div>
+<div class="button-grid">
+<button class="btn btn-primary" data-act="play" type="button">▶ Start / Pauza</button>
+<button class="btn" data-act="reset" type="button">Reset</button>
+</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać HCl+NaOH (bez osadu), BaCl₂+H₂SO₄, AgNO₃+NaCl.</li>
+<li>Slow motion i speed up.</li>
+<li>Animacja grawitacji (osad opada na dno).</li>
+<li>Wybór stężenia (mniej jonów = mniej zderzeń).</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-rx">
+<header class="comp-head">
+<span class="comp-badge src-n03">N03</span>
+<span class="comp-id">acidReactor</span>
+<span class="comp-tag dom">DOM + CSS</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Zlewka z efektami: bąbelki, osad, dym, zmiana koloru. 6 reakcji: Zn+HCl, CuO+HCl, NaOH+HCl, CaCO₃+HCl, AgNO₃+HCl, Cu+HNO₃.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N03, N02, N01, analiza jakościowa.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-rx">
+<div class="widget-hint">Wybierz reagent — zobacz równanie i zlewkę.</div>
+<div class="button-grid">
+<button class="btn btn-sm" data-r="metal" type="button">Zn + HCl</button>
+<button class="btn btn-sm" data-r="oxide" type="button">CuO + HCl</button>
+<button class="btn btn-sm" data-r="base" type="button">NaOH + HCl</button>
+<button class="btn btn-sm" data-r="carbonate" type="button">CaCO₃ + HCl</button>
+<button class="btn btn-sm" data-r="silverNitrate" type="button">AgNO₃ + HCl</button>
+<button class="btn btn-sm" data-r="copperNitric" type="button">Cu + HNO₃</button>
+</div>
+<div class="rx-stage">
+<div class="rx-beaker">
+<div class="rx-fumes"></div>
+<div class="rx-liquid"></div>
+<div class="rx-solid"></div>
+<div class="rx-precip"></div>
+<div class="rx-bubbles"></div>
+</div>
+<div class="rx-label">Wybierz reakcję.</div>
+</div>
+<div class="result-card"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać Mg+HCl, Fe+HCl, H₂SO₄+Zn, HNO₃+Cu rozcieńczony.</li>
+<li>Dźwięk (bulgotanie, syczenie).</li>
+<li>Tryb „przewidź produkt”.</li>
+<li>Pomiar temperatury (reakcje egzotermiczne).</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-titr">
+<header class="comp-head">
+<span class="comp-badge src-n03">N03</span>
+<span class="comp-id">titration</span>
+<span class="comp-tag canvas">Canvas</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Krzywa miareczkowania (Canvas) z punktem równoważnikowym. 3 typy: mocny+mocny, słaby+mocny, słaba zasada+mocny kwas.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N03 (titracja), N02 (zobojętnianie), analiza ilościowa.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-titr">
+<div class="widget-hint">Przesuń suwak lub naciśnij ▶.</div>
+<label style="display:block;margin-bottom:10px;font-size:13px;">Typ:
+<select class="titr-type" style="padding:6px 10px;border-radius:6px;border:1px solid var(--border-strong);font:inherit;background:#fff;color:var(--text);">
+<option value="strongStrong">mocny kwas + mocna zasada (HCl + NaOH)</option>
+<option value="weakStrong">słaby kwas + mocna zasada (CH₃COOH + NaOH)</option>
+<option value="strongWeak">słaba zasada + mocny kwas (NH₃ + HCl)</option>
+</select>
+</label>
+<div class="titr-wrap"><canvas class="titr-canvas" height="330" width="760"></canvas></div>
+<div class="titr-row">
+<button class="btn btn-primary" data-act="play" type="button">▶ Dodawaj titrant</button>
+<input class="titr-vol" max="50" min="0" step="0.1" type="range" value="0"/>
+<div class="titr-flask"></div>
+</div>
+<div class="metric-grid">
+<div><b>V titranta</b><strong class="titr-v">0,0 cm³</strong></div>
+<div><b>pH</b><strong class="titr-ph">—</strong></div>
+<div><b>Wskaźnik</b><strong class="titr-ind">—</strong></div>
+</div>
+<div class="result-card" style="margin-top:10px"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać słaby+słaby.</li>
+<li>Animacja kroplomierza.</li>
+<li>Tryb „znajdź punkt równoważnikowy” — quiz.</li>
+<li>Wykres pochodnej dpH/dV.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-burn">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">burnRun</span>
+<span class="comp-tag dom">DOM + CSS</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Symulator spalania (C, CH₄, C₃H₈). Suwak dopływu O₂ zmienia produkt: CO₂, CO, sadza.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01 (spalanie), N03 (egzotermiczne), ochrona środowiska (czad).</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-burn">
+<div class="widget-hint">Przesuń suwak tlenu i kliknij „Spal”.</div>
+<div class="ns-setup" style="grid-template-columns:1fr 1fr 1fr;">
+<div class="ns-input">
+<label>Paliwo</label>
+<select class="burn-fuel" style="width:100%;padding:7px 10px;border:1px solid var(--border-strong);border-radius:6px;font:inherit;background:#fff;color:var(--text);">
+<option value="C">Węgiel (C)</option>
+<option value="CH4">Metan (CH₄)</option>
+<option value="C3H8">Propan (C₃H₈)</option>
+</select>
+</div>
+<div class="ns-input">
+<label>Dopływ O₂: <span class="burn-o2-val">100%</span></label>
+<input class="burn-o2" max="100" min="0" step="5" style="width:100%;" type="range" value="100"/>
+</div>
+<div class="ns-input" style="display:flex;align-items:flex-end;">
+<button class="btn btn-primary" data-act="burn" style="width:100%;" type="button">Spal</button>
+</div>
+</div>
+<div class="co2-stage" style="min-height:200px;">
+<div class="burn-flame" style="width:30px;height:60px;background:radial-gradient(circle at 50% 80%,#dbeafe 0%,#60a5fa 30%,#2563eb 60%,transparent 90%);border-radius:50% 50% 40% 40%;transition:all 0.4s;"></div>
+<div class="burn-eq" style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:var(--text-soft);">—</div>
+</div>
+<div class="sim-status">Ustaw dopływ O₂ i kliknij „Spal”.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać C₂H₅OH, C₈H₁₈, C₆H₆.</li>
+<li>Kolor płomienia (niebieski/żółty/czerwony).</li>
+<li>Stechiometria na żywo.</li>
+<li>Wykres produkt vs O₂.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-co2">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">wykrywacz-co2</span>
+<span class="comp-tag dom">DOM + CSS</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Symulacja dmuchania do wody wapiennej — ciecz mętnieje, pojawiają się bąbelki.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01 (wykrywanie CO₂), N03, analiza jakościowa.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-co2">
+<div class="widget-hint">Kliknij „Dmuchaj do wody wapiennej”.</div>
+<div class="co2-stage">
+<div class="tube">
+<div class="tube-liquid"></div>
+<div class="co2-bubbles"></div>
+</div>
+<div class="sim-status">Woda wapienna — klarowna.</div>
+</div>
+<div class="button-grid">
+<button class="btn btn-primary" data-act="blow" type="button">Dmuchaj do wody wapiennej</button>
+<button class="btn" data-act="reset" type="button">Reset</button>
+</div>
+<div class="result-card info" style="margin-top:12px;">Równanie: CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Animacja osadu na dnie.</li>
+<li>Porównanie woda wapienna vs barytowa.</li>
+<li>Tryb „dmuchaj dłużej” — nadmiar CO₂ → osad znika.</li>
+<li>Pomiar pH w trakcie.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-nsim">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">neutralSim</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Symulator zobojętniania — ustawiasz stężenia i objętości, dodajesz kwas porcjami, widzisz licznik moli.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02, N03, stechiometria.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-nsim">
+<div class="widget-hint">Ustaw parametry, dodawaj kwas.</div>
+<div class="ns-setup">
+<div class="ns-input"><label>Stężenie HCl (M)</label><input class="ns-acid-cm" max="2" min="0.01" step="0.1" type="number" value="0.1"/></div>
+<div class="ns-input"><label>Stężenie NaOH (M)</label><input class="ns-base-cm" max="2" min="0.01" step="0.1" type="number" value="0.1"/></div>
+<div class="ns-input"><label>Objętość zasady (cm³)</label><input class="ns-base-v" max="200" min="10" step="5" type="number" value="50"/></div>
+<div class="ns-input"><label>Porcja kwasu (cm³)</label><input class="ns-acid-step" max="20" min="1" step="1" type="number" value="5"/></div>
+</div>
+<div class="ns-counters">
+<div class="ns-counter"><div class="ns-label">mole H⁺ dodane</div><div class="ns-value ns-acid-moles">0.000</div></div>
+<div class="ns-counter"><div class="ns-label">początkowe mole OH⁻</div><div class="ns-value ns-base-moles">0.005</div></div>
+<div class="ns-counter"><div class="ns-label">Nadmiar</div><div class="ns-value ns-excess">0.005</div></div>
+</div>
+<div class="ns-status base">Roztwór zasadowy — fenoloftaleina malinowa</div>
+<div class="button-grid">
+<button class="btn btn-primary" data-act="add" type="button">+ Dodaj kwas</button>
+<button class="btn" data-act="reset" type="button">Reset</button>
+</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać H₂SO₄ + NaOH (2:1), H₃PO₄ + KOH (3:1).</li>
+<li>Wykres pH vs dodany kwas.</li>
+<li>Tryb „przewidź punkt równoważnikowy”.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-buf">
+<header class="comp-head">
+<span class="comp-badge src-n03">N03</span>
+<span class="comp-id">buffer</span>
+<span class="comp-tag dom">DOM + CSS</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Pasek pojemności buforowej — dodawanie H⁺/OH⁻ zmienia pH i zużywa pojemność.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N03 (bufory), biochemia (krew pH 7,4).</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-buf">
+<div class="widget-hint">Dodawaj H⁺ lub OH⁻.</div>
+<div class="button-grid">
+<button class="btn" data-act="addH" type="button">Dodaj H⁺</button>
+<button class="btn" data-act="addOH" type="button">Dodaj OH⁻</button>
+<button class="btn" data-act="reset" type="button">Reset</button>
+</div>
+<div class="buffer-tank"><div id="bufferFillDemo"></div></div>
+<div class="metric-grid">
+<div><b>pH modelowe</b><strong class="buf-ph">4,80</strong></div>
+<div><b>Pojemność względna</b><strong class="buf-cap">100%</strong></div>
+<div><b>Stan</b><strong class="buf-state">stabilny</strong></div>
+</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Wykres pH vs dodany kwas.</li>
+<li>Bufory: octanowy, fosforanowy, węglanowy, amonowy.</li>
+<li>Porównanie z wodą destylowaną.</li>
+<li>Henderson–Hasselbalch.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-ph">
+<header class="comp-head">
+<span class="comp-badge src-all">N02+N03</span>
+<span class="comp-id">phWskazniki</span>
+<span class="comp-tag dom">DOM + SVG</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Interaktywna skala pH 0–14 — kliknij na pasku lub wybierz przykład. Pokazuje kolor roztworu i barwy wskaźników.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02, N03, każda lekcja o pH.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-ph">
+<div class="widget-hint">Przesuń suwak lub kliknij przykład.</div>
+<input class="ph-range" max="14" min="0" step="0.1" style="width:100%;" type="range" value="2"/>
+<div class="ph-bar"><i class="ph-marker" data-v="2.0"></i></div>
+<div class="ph-scale"><span>0</span><span>2</span><span>4</span><span>6</span><span>7</span><span>8</span><span>10</span><span>12</span><span>14</span></div>
+<p style="margin-top:8px;font-size:13px;color:var(--text-soft);"><span class="ph-flask"></span>Papierek uniwersalny: <b class="ph-color-name"></b></p>
+<div class="metric-grid">
+<div><b>pH</b><strong class="ph-value"></strong></div>
+<div><b>Odczyn</b><strong class="ph-type"></strong></div>
+<div><b>Wskaźnik</b><strong class="ph-indicator"></strong></div>
+</div>
+<div class="button-grid">
+<button class="btn btn-sm" data-ph="1" type="button">HCl pH 1</button>
+<button class="btn btn-sm" data-ph="3" type="button">ocet pH 3</button>
+<button class="btn btn-sm" data-ph="5" type="button">kawa pH 5</button>
+<button class="btn btn-sm" data-ph="7" type="button">woda pH 7</button>
+<button class="btn btn-sm" data-ph="9" type="button">mydło pH 9</button>
+<button class="btn btn-sm" data-ph="12" type="button">woda wapienna pH 12</button>
+</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać lakmus, błękit bromotymolowy.</li>
+<li>Animacja kropli wskaźnika.</li>
+<li>Tryb „zgadnij pH”.</li>
+<li>Wykres pH vs stężenie.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-indlab">
+<header class="comp-head">
+<span class="comp-badge src-all">N02+N03</span>
+<span class="comp-id">indLab</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Laboratorium wskaźników — wybierasz roztwór, wskaźnik, przewidujesz odczyn. Feedback z wyjaśnieniem.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02, N03, analiza jakościowa.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-indlab">
+<div class="widget-hint">Wybierz roztwór, wskaźnik i przewidź odczyn.</div>
+<div class="lab-step">
+<h5>Krok 1 — roztwór:</h5>
+<div class="lab-options">
+<button class="lab-opt" data-sol="hcl" type="button">HCl</button>
+<button class="lab-opt" data-sol="water" type="button">woda destylowana</button>
+<button class="lab-opt" data-sol="naoh" type="button">NaOH</button>
+<button class="lab-opt" data-sol="caoh" type="button">Ca(OH)₂</button>
+<button class="lab-opt" data-sol="cuoh" type="button">Cu(OH)₂ zawiesina</button>
+</div>
+</div>
+<div class="lab-step">
+<h5>Krok 2 — wskaźnik:</h5>
+<div class="lab-options">
+<button class="lab-opt" data-ind="phen" type="button">fenoloftaleina</button>
+<button class="lab-opt" data-ind="univ" type="button">papierek uniwersalny</button>
+<button class="lab-opt" data-ind="litmus" type="button">papierek lakmusowy</button>
+</div>
+</div>
+<div class="lab-step">
+<h5>Krok 3 — przewidź odczyn:</h5>
+<div class="lab-options">
+<button class="lab-opt" data-pred="acid" type="button">kwasowy</button>
+<button class="lab-opt" data-pred="neutral" type="button">obojętny</button>
+<button class="lab-opt" data-pred="base" type="button">zasadowy</button>
+</div>
+</div>
+<div style="text-align:center;">
+<button class="btn btn-primary" data-act="check" type="button">Sprawdź</button>
+</div>
+<div class="lab-result"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać 10–15 roztworów (H₂SO₄, HNO₃, KOH, Ba(OH)₂, CH₃COOH).</li>
+<li>Dodać błękit bromotymolowy, oranż metylowy.</li>
+<li>Tryb „eksperymentuj sam”.</li>
+<li>Dziennik obserwacji.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-stechio">
+<header class="comp-head">
+<span class="comp-badge src-all">N01–N05</span>
+<span class="comp-id">stoichSolver</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Uniwersalny solver stechiometrii. Wybierasz reakcję, wpisujesz masę — silnik liczy krok po kroku (n = m/M, stosunek molowy, masa produktu).</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01–N05, każda lekcja z obliczeniami.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-stechio">
+<div class="widget-hint">Wybierz reakcję, wpisz masę substratu.</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px;">
+<div><label style="font-size:11px;font-weight:800;color:var(--text-muted);text-transform:uppercase;">Reakcja</label>
+<select class="st-eq" style="width:100%;padding:7px 10px;border:1px solid var(--border-strong);border-radius:6px;font:inherit;background:#fff;color:var(--text);">
+<option value="mg">2 Mg + O₂ → 2 MgO</option>
+<option value="caco3">CaCO₃ → CaO + CO₂</option>
+<option value="zn">Zn + 2 HCl → ZnCl₂ + H₂</option>
+<option value="cuo">CuO + H₂SO₄ → CuSO₄ + H₂O</option>
+</select></div>
+<div><label style="font-size:11px;font-weight:800;color:var(--text-muted);text-transform:uppercase;">Masa substratu [g]</label>
+<input class="st-mass" min="0.1" step="0.1" style="width:100%;padding:7px 10px;border:1px solid var(--border-strong);border-radius:6px;font:inherit;background:#fff;color:var(--text);" type="number" value="4.8"/></div>
+<div style="display:flex;align-items:flex-end;">
+<button class="btn btn-primary" data-act="calc" style="width:100%;" type="button">Oblicz</button>
+</div>
+</div>
+<div class="result-card info">Wybierz reakcję, wpisz masę, kliknij Oblicz.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Tryb „od produktu do substratu”.</li>
+<li>Tryb „wydajność reakcji”.</li>
+<li>Wykres moli (słupkowy).</li>
+<li>20–30 gotowych reakcji.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-oxideb">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">oxideBuilder</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Buduje wzór tlenku z wartościowości pierwiastka i tlenu (II) metodą W–K–S–K.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01, N02, N03, N04, N05.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-oxideb">
+<div class="widget-hint">Wybierz pierwiastek — wzór liczy silnik.</div>
+<div class="bld-pool"></div>
+<div class="oxideb-ws" style="min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;color:var(--text);">Wybierz pierwiastek…</div>
+<div class="result-card info oxideb-fb">W–K–S–K: wartościowość pierwiastka i tlenu (II) → skrzyżuj → skróć.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać metale przejściowe (Cr, Mn, Co, Ni) — jedna linia w <code>ELEMENTS</code>.</li>
+<li>Tryb „od wzoru do nazwy”.</li>
+<li>Animacja skrzyżowania wartościowości.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-balans">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">balansatorEl</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Bilansator ładunków — dodajesz grupy OH⁻, aż suma ładunków wynosi 0.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02, N03, N04.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-balans">
+<div class="widget-hint">Wybierz kation, dodawaj OH⁻.</div>
+<div class="bld-pool">
+<button class="active" data-bal="na" type="button">Na⁺</button>
+<button data-bal="ca" type="button">Ca²⁺</button>
+<button data-bal="al" type="button">Al³⁺</button>
+</div>
+<div class="stage-box" style="min-height:150px;"></div>
+<div class="result-card info bal-charge" style="margin-top:10px;text-align:center;font-weight:700;">Suma ładunków: 0</div>
+<div class="button-grid">
+<button class="btn" data-act="remove" type="button">− Usuń OH⁻</button>
+<button class="btn btn-primary" data-act="add" type="button">+ Dodaj OH⁻</button>
+<button class="btn" data-act="reset" type="button">Reset</button>
+</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać Zn²⁺, Fe²⁺, Cu²⁺.</li>
+<li>Tryb „kontrola” — użytkownik sam sprawdza ładunek.</li>
+<li>Animacja „ładunki się równoważą”.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-build">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">builderEl</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Konstruktor wzorów — wybierasz kation, dodajesz OH⁻, aż powstanie poprawny wzór. Feedback na żywo.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02, N03, N04.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-build">
+<div class="widget-hint">Wybierz kation, dodaj OH⁻.</div>
+<div class="bld-pool">
+<button data-bld="na" type="button">Na⁺</button>
+<button data-bld="ca" type="button">Ca²⁺</button>
+<button data-bld="al" type="button">Al³⁺</button>
+<button data-bld="fe3" type="button">Fe³⁺</button>
+</div>
+<div class="bld-ws" style="min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;color:var(--text);">Wybierz kation…</div>
+<div class="button-grid">
+<button class="btn btn-primary" data-act="add" type="button">+ Dodaj OH⁻</button>
+<button class="btn" data-act="remove" type="button">− Usuń OH⁻</button>
+<button class="btn" data-act="clear" type="button">Wyczyść</button>
+</div>
+<div class="result-card info bld-fb">Wybierz kation i dodaj grupy OH⁻.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać więcej kationów.</li>
+<li>Tryb „błąd → poprawa”.</li>
+<li>Historia prób.</li>
+<li>Eksport wyniku.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-reszta">
+<header class="comp-head">
+<span class="comp-badge src-n03">N03</span>
+<span class="comp-id">reszta-converter</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Konwerter kwas → reszta kwasowa → przykładowa sól.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N03, N04, sole.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-reszta">
+<div class="widget-hint">Wybierz kwas.</div>
+<select class="reszta-sel" style="width:100%;padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;font:inherit;background:#fff;color:var(--text);margin-bottom:12px;">
+<option value="HCl|Cl⁻|NaCl">HCl</option>
+<option value="HNO3|NO₃⁻|KNO₃">HNO₃</option>
+<option value="H2SO4|SO₄²⁻|Na₂SO₄">H₂SO₄</option>
+<option value="H3PO4|PO₄³⁻|Ca₃(PO₄)₂">H₃PO₄</option>
+<option value="H2CO3|CO₃²⁻|Na₂CO₃">H₂CO₃</option>
+<option value="CH3COOH|CH₃COO⁻|CH₃COONa">CH₃COOH</option>
+</select>
+<div class="result-card info"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać 10–15 kwasów.</li>
+<li>Tryb „od soli do kwasu”.</li>
+<li>Tabela wszystkich reszt kwasowych.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-ionassem">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">ionAssemblyO</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Jon metalu + O²⁻ → tlenek. Klikasz kation, widzisz ile jonów O²⁻ potrzeba i gotowy wzór.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01, N02, N03, N04.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-ionassem">
+<div class="widget-hint">Kliknij kation.</div>
+<div class="bld-pool">
+<button class="active" data-ion="Na" type="button">Na⁺</button>
+<button data-ion="Ca" type="button">Ca²⁺</button>
+<button data-ion="Al" type="button">Al³⁺</button>
+<button data-ion="Fe" type="button">Fe³⁺</button>
+</div>
+<div style="display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:10px;margin:10px 0;">
+<span class="ia-cation" style="padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid #38bdf8;background:#e0f2fe;color:#0c4a6e;">Na⁺</span>
+<span style="font-size:1.4rem;font-weight:800;">+</span>
+<span style="padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid #fcd34d;background:#fef3c7;color:#78350f;">O²⁻</span>
+<span style="font-size:1.4rem;font-weight:800;">→</span>
+<span class="ia-product" style="padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid #4ade80;background:#dcfce7;color:#14532d;">Na₂O</span>
+</div>
+<div class="result-card info ia-note">Na⁺ (+1): dwa kationy na jeden O²⁻ → Na₂O.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać Zn²⁺, Ba²⁺, Cu²⁺, Fe²⁺.</li>
+<li>Animacja przyciągania ładunków.</li>
+<li>Tryb „kontrola ładunku”.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-char">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">charSim</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Detektor charakteru tlenku — klikasz, widzisz charakter, reakcję z wodą, przykłady.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01, N02, N03, ochrona środowiska.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-char">
+<div class="widget-hint">Kliknij tlenek.</div>
+<div class="bld-pool">
+<button data-ox="Na2O" type="button">Na₂O</button>
+<button data-ox="CaO" type="button">CaO</button>
+<button data-ox="MgO" type="button">MgO</button>
+<button data-ox="Al2O3" type="button">Al₂O₃</button>
+<button data-ox="ZnO" type="button">ZnO</button>
+<button data-ox="Fe2O3" type="button">Fe₂O₃</button>
+<button data-ox="CuO" type="button">CuO</button>
+<button data-ox="CO2" type="button">CO₂</button>
+<button data-ox="SO2" type="button">SO₂</button>
+<button data-ox="SO3" type="button">SO₃</button>
+<button data-ox="SiO2" type="button">SiO₂</button>
+<button data-ox="CO" type="button">CO</button>
+<button data-ox="Mn2O7" type="button">Mn₂O₇</button>
+<button data-ox="CrO3" type="button">CrO₃</button>
+</div>
+<div class="stage-box">Wybierz tlenek.</div>
+<div class="result-card info char-fb">Wybierz tlenek z listy.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać 30+ tlenków.</li>
+<li>Tryb quiz „zgadnij charakter”.</li>
+<li>Animacja reakcji z wodą.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-wg">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">wodorGrid</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Przegląd wodorotlenków — kafelki z symbolem, wzorem, rozpuszczalnością. Klikasz — szczegóły.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02, N03, N04.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-wg">
+<div class="widget-hint">Kliknij kafelek.</div>
+<div class="wg-tiles"></div>
+<div class="wg-detail"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać więcej wodorotlenków.</li>
+<li>Filtr po rozpuszczalności.</li>
+<li>Tryb „porównaj dwa”.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-trend">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">trendBars</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Wykres trendu charakteru tlenków w 3. okresie. Klikasz słupek — szczegóły.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01, N03, układ okresowy.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-trend">
+<div class="widget-hint">Kliknij słupek.</div>
+<div class="trend-chart">
+<div class="trend-bars"></div>
+</div>
+<div class="trend-detail">Kliknij słupek.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać 2. i 4. okres.</li>
+<li>Tryb „porównaj okresy”.</li>
+<li>Animacja „przesuwanie po okresie”.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-gallery">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">oxGallery</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Galeria kolorów tlenków — CuO czarny, Fe₂O₃ rdzawy, ZnO biały, PbO żółty. Klikasz — szczegóły.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01, N02, N03, identyfikacja.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-gallery">
+<div class="widget-hint">Kliknij kafelek.</div>
+<div class="ox-gallery"></div>
+<div class="stage-box oxg-stage">Kliknij tlenek.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać więcej tlenków.</li>
+<li>Quiz kolorów.</li>
+<li>Animacja zmiany koloru (np. redukcja CuO).</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-permini">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">periodicMini</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Miniaturowy układ okresowy — klikasz pierwiastek, widzisz wartościowość, wzór tlenku, charakter.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>Każda lekcja chemii.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-permini">
+<div class="widget-hint">Kliknij pierwiastek.</div>
+<div class="periodic-mini"></div>
+<div class="stage-box pm-stage">Kliknij pierwiastek.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Pełna tablica (118 pierwiastków).</li>
+<li>Filtr po typie.</li>
+<li>Tryb „porównaj dwa”.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-vsepr">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">vseprStage</span>
+<span class="comp-tag svg">SVG</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Modele VSEPR 6 cząsteczek: CO₂, SO₂, SO₃, H₂O, N₂O, NO₂.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01, N03, organiczna.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-vsepr">
+<div class="widget-hint">Kliknij cząsteczkę.</div>
+<div class="bld-pool">
+<button class="active" data-vs="CO2" type="button">CO₂</button>
+<button data-vs="SO2" type="button">SO₂</button>
+<button data-vs="SO3" type="button">SO₃</button>
+<button data-vs="H2O" type="button">H₂O</button>
+<button data-vs="N2O" type="button">N₂O</button>
+<button data-vs="NO2" type="button">NO₂</button>
+</div>
+<div class="vsepr-stage"></div>
+<div class="caption-soft vsepr-cap" style="margin-top:12px;"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać CH₄, NH₃, BF₃, H₃O⁺, H₂SO₄.</li>
+<li>Quiz geometrii.</li>
+<li>Animacja odpychania par.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-obs">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">obsInferenceLab</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Uczy rozdzielać obserwację od wniosku. 4 doświadczenia.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>Każda lekcja laboratoryjna.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-obs">
+<div class="widget-hint">Wybierz doświadczenie.</div>
+<div class="bld-pool">
+<button data-obs="lime" type="button">CO₂ + woda wapienna</button>
+<button data-obs="cao" type="button">CaO + H₂O</button>
+<button data-obs="cuo" type="button">CuO + H₂SO₄</button>
+<button data-obs="burn" type="button">Spalanie magnezu</button>
+</div>
+<div class="stage-box obs-stage">Wybierz doświadczenie.</div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać więcej doświadczeń.</li>
+<li>Tryb „wpisz własną obserwację”.</li>
+<li>Dziennik obserwacji.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-metoda">
+<header class="comp-head">
+<span class="comp-badge src-n02">N02</span>
+<span class="comp-id">metodaWidgetEl</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>3 metody otrzymywania wodorotlenków: tlenek + woda, metal + woda, sól + zasada.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N02, N03, N01.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-metoda">
+<div class="widget-hint">Wybierz metodę.</div>
+<div class="metoda-bar">
+<button class="metoda-btn active" data-met="tlenek" type="button">1. Tlenek + woda</button>
+<button class="metoda-btn" data-met="metal" type="button">2. Metal + woda</button>
+<button class="metoda-btn" data-met="sol" type="button">3. Sól + zasada</button>
+</div>
+<div class="metoda-view"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Dodać metody otrzymywania kwasów, soli, tlenków.</li>
+<li>Tabela porównawcza.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-mapa">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">mapa-reakcji</span>
+<span class="comp-tag svg">SVG</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Mapa reakcji — sieci przemian: Na → Na₂O → NaOH → NaCl; S → SO₃ → H₂SO₄ → Na₂SO₄.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>N01–N05, ciągi przemian.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-mapa">
+<div class="widget-hint">Kliknij przykład.</div>
+<div class="bld-pool">
+<button class="active" data-rm="Na" type="button">Na → Na₂O → NaOH → NaCl</button>
+<button data-rm="S" type="button">S → SO₃ → H₂SO₄ → Na₂SO₄</button>
+<button data-rm="C" type="button">C → CO₂ → H₂CO₃ → Na₂CO₃</button>
+</div>
+<div class="reaction-map"></div>
+<div class="caption-soft rm-cap" style="margin-top:12px;"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Więcej ścieżek.</li>
+<li>Kliknij węzeł — szczegóły.</li>
+<li>Animacja przemiany.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-adapt">
+<header class="comp-head">
+<span class="comp-badge src-n01">N01</span>
+<span class="comp-id">adaptQuiz</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Test adaptacyjny — 3 poziomy (A, B, C), po 5 pytań.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>Każda lekcja.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-adapt">
+<div class="widget-hint">Wybierz poziom.</div>
+<div class="bld-pool">
+<button class="active" data-lvl="A" type="button">Poziom A</button>
+<button data-lvl="B" type="button">Poziom B</button>
+<button data-lvl="C" type="button">Poziom C</button>
+</div>
+<div class="adapt-quiz"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Auto-adaptacja.</li>
+<li>Analiza błędów.</li>
+<li>Zapis wyników.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-quiz">
+<header class="comp-head">
+<span class="comp-badge src-all">N01+N02+N03</span>
+<span class="comp-id">quiz</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Quiz klikany — użytkownik wybiera odpowiedź, dostaje feedback i widzi wynik.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>Każda lekcja.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-quiz">
+<div class="widget-hint">Kliknij odpowiedzi.</div>
+<div class="quiz-wrap"></div>
+<div class="quiz-score"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Więcej pytań.</li>
+<li>Losowanie.</li>
+<li>Powtórka błędów.</li>
+</ul>
+</div>
+</details>
+</article>
+<article class="component" id="c-flash">
+<header class="comp-head">
+<span class="comp-badge src-all">N01+N02+N03</span>
+<span class="comp-id">flashcards</span>
+<span class="comp-tag dom">DOM</span>
+</header>
+<div class="comp-meta">
+<div class="meta-box"><b>Co robi</b><p>Fiszki — klikasz, obracasz, widzisz odpowiedź.</p></div>
+<div class="meta-box use"><b>Przyda się w</b><p>Każda lekcja.</p></div>
+</div>
+<div class="comp-demo">
+<div class="widget" id="w-flash">
+<div class="widget-hint">Kliknij fiszkę, aby ją obrócić.</div>
+<div class="flashcard-grid"></div>
+</div>
+</div>
+<details class="comp-details">
+<summary>Plan ulepszeń</summary>
+<div>
+<ul>
+<li>Więcej fiszek.</li>
+<li>Losowanie.</li>
+<li>Tryb „trudne fiszki” (SRS).</li>
+</ul>
+</div>
+</details>
+</article>
+</div>

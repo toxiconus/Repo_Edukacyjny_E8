@@ -1,0 +1,17 @@
+<style id="che-project-shell-css">
+#che-project-shell{position:relative;z-index:20;margin:14px auto 10px;max-width:1760px;padding:0 14px}
+.che-shell-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 24px -14px rgba(0,0,0,.35);overflow:hidden}
+.che-shell-head{display:flex;align-items:center;gap:16px;padding:13px 16px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(31,95,168,.06),transparent)}
+.che-shell-brand{min-width:190px}.che-shell-brand b{display:block;color:var(--ui,#1f5fa8);font-size:15px}.che-shell-brand small{display:block;color:var(--mut);font-size:11px;margin-top:2px}
+.che-shell-nav{display:flex;gap:5px;flex-wrap:wrap;flex:1}.che-shell-nav button{border:1px solid transparent;background:transparent;color:var(--mut);border-radius:9px;padding:8px 13px;font:700 12px var(--sans)}
+.che-shell-nav button:hover{background:var(--panel-2);color:var(--tx)}.che-shell-nav button.on{background:rgba(31,95,168,.1);border-color:rgba(31,95,168,.35);color:var(--ui,#1f5fa8)}
+#che-project-intro{padding:12px 16px;background:linear-gradient(180deg,var(--panel),var(--panel-2));border-bottom:1px solid var(--line)}
+#che-project-intro .cpi-row{display:flex;align-items:center;gap:14px;justify-content:space-between}.cpi-copy{min-width:0}.cpi-k{font:800 10px var(--mono);letter-spacing:.12em;color:var(--ui,#1f5fa8);text-transform:uppercase}.cpi-title{font-size:18px;font-weight:750;margin:2px 0}.cpi-text{font-size:12px;color:var(--mut);max-width:900px}.cpi-badges{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.cpi-badges span{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:4px 8px;font:600 10px var(--sans);color:var(--mut)}
+.che-route{display:none}.che-route.show{display:block}.che-route-inner{max-width:1760px;margin:0 auto;padding:0 14px 14px}
+#che-route-engine .che-engine-grid,#che-route-db .che-db-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.che-info-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:0 4px 14px -10px rgba(0,0,0,.35)}.che-info-card h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}.che-info-card p{color:var(--mut);font-size:12px;line-height:1.55}.che-kpi{font:700 22px var(--mono);color:var(--ui,#1f5fa8)}.che-list{margin:8px 0 0;padding-left:17px;color:var(--mut);font-size:12px;line-height:1.7}.che-ok{color:var(--c)}
+#che-route-lessons .che-route-inner,#che-route-visual .che-route-inner{padding-top:4px}#che-route-lessons .tabpane,#che-route-visual .tabpane{display:none!important}#che-route-lessons .tabpane.show,#che-route-visual .tabpane.show{display:block!important}
+#che-route-lessons .lesson-app,#che-route-visual .lesson-app{min-height:0}
+#che-route-atlas{display:block}.che-atlas-wrap.hidden{display:none}
+.tabnav [data-tab="lekcje"],.tabnav [data-tab="wizual"],.tabnav .che-lessons-group,.tabnav .che-visual-group,#lesson-btn{display:none!important}
+@media(max-width:760px){#che-project-shell{padding:0 8px}.che-shell-head{display:block}.che-shell-brand{margin-bottom:8px}.che-shell-nav{overflow-x:auto;flex-wrap:nowrap}.che-shell-nav button{white-space:nowrap}.cpi-row{display:block!important}.cpi-badges{justify-content:flex-start;margin-top:7px}.che-route-inner{padding:0 8px 10px}}
+</style>

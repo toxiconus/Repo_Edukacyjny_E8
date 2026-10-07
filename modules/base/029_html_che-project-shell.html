@@ -1,0 +1,298 @@
+
+
+<div id="che-project-shell">
+ <div class="che-shell-card">
+  <div class="che-shell-head">
+   <div class="che-shell-brand"><b>CHE · LAB / ATLAS</b><small>wspólny silnik · wspólne dane · wizualizacje</small></div>
+   <nav class="che-shell-nav" aria-label="Główne moduły projektu">
+    <button data-che-route="lessons">▣ Lekcje</button><button data-che-route="atlas">◈ Atlas</button><button data-che-route="visual">◉ Wizualizacje</button><button data-che-route="engine">⚙ Silnik</button>
+   </nav>
+  </div>
+  <div id="che-project-intro">
+   <div class="cpi-row"><div class="cpi-copy"><div class="cpi-k">CHEMICAL DIGITAL LAB</div><div class="cpi-title">Jedno środowisko do nauki, modeli i eksperymentów chemicznych</div><div class="cpi-text">Atlas pokazuje dane i modele pierwiastków. Lekcje prowadzą przez zagadnienia. Wizualizacje są wspólną biblioteką ekranów i modeli. Silnik oraz baza danych pozostają warstwą źródłową — bez dublowania przeniesionych modułów.</div></div><div class="cpi-badges"><span>ENGINE</span><span>DATA</span><span>LESSONS</span><span>VISUALS</span></div></div>
+  </div>
+ </div>
+</div>
+<div id="che-route-engine" class="che-route"><div class="che-route-inner"><div class="che-engine-grid">
+ <section class="che-info-card"><h3>Silnik</h3><div class="che-kpi" id="che-eng-version">—</div><p>Wersja wspólnego silnika. Tu mają trafiać kontrakty API, moduły, przepływ danych i reguły architektury.</p></section>
+ <section class="che-info-card"><h3>Audyt</h3><div class="che-kpi" id="che-audit-status">—</div><p id="che-audit-text">Sprawdzanie rejestrów i dostępności audytów…</p></section>
+ <section class="che-info-card"><h3>Testy / diagnostyka</h3><div class="che-kpi" id="che-test-count">—</div><p>Panel będzie zbierał testy silnika, danych, API, wizualizacji i zgodności lekcji.</p></section>
+ <section class="che-info-card"><h3>Zasada projektu</h3><ul class="che-list"><li>chemia = centralny silnik i baza</li><li>wizualizacja = renderer / UI</li><li>lekcja = zakres dydaktyczny, nie kopia bazy</li><li>Atlas = główny eksplorator danych</li></ul></section>
+ </div></div></div>
+<div id="che-route-lessons" class="che-route"><div class="che-route-inner" id="che-lessons-host"></div></div>
+<div id="che-route-atlas" class="che-route"><div class="che-atlas-wrap" id="che-atlas-wrap"></div></div>
+<div id="che-route-db" class="che-route"><div class="che-route-inner"><div class="che-db-grid">
+ <section class="che-info-card"><h3>Pierwiastki</h3><div class="che-kpi" id="che-db-elements">—</div><p>Centralne rekordy elementów, używane przez Atlas i moduły silnika.</p></section>
+ <section class="che-info-card"><h3>Reakcje</h3><div class="che-kpi" id="che-db-reactions">—</div><p>Centralny katalog równań i warunków reakcji.</p></section>
+ <section class="che-info-card"><h3>Cząsteczki</h3><div class="che-kpi" id="che-db-molecules">—</div><p>Modele atomów, wiązań, rzędów wiązań, geometrii i wizualizacji.</p></section>
+ <section class="che-info-card"><h3>Zakres danych</h3><p id="che-db-detail">Ładowanie statystyk centralnego DATA…</p></section>
+ </div></div></div>
+<div class="app">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sheet-head"><b>Katalog pierwiastków</b><button id="sheet-close" aria-label="Zamknij katalog">Zamknij ✕</button></div>
+    <div class="sb-block">
+      <div class="sb-head">
+        <h1>Laboratorium atomu <small>N03 · v054.03</small></h1>
+        <div class="lang" id="lang" title="Zmienia nazwy pierwiastków; reszta interfejsu pozostaje po polsku"><span class="lg-cap">nazwy</span>
+          <button data-lang="pl" class="on">PL</button>
+          <button data-lang="en">EN</button>
+          <button data-lang="de">DE</button>
+          <button data-lang="la">LA</button>
+        </div>
+      </div>
+      <div class="search"><input type="text" id="search-input" placeholder="Szukaj symbolu, nazwy lub wzoru…" autocomplete="off"/><button id="search-clear" type="button" aria-label="Wyczyść wyszukiwanie">×</button></div>
+      <div class="kind" id="kind"></div>
+      <details class="opt-more"><summary>Opcje listy: sortowanie i grupowanie</summary><div class="cat-ctl">
+        <label>Sortuj wg<select id="c-sort"></select></label>
+        <label>Grupuj wg<select id="c-grp"></select></label>
+      </div></details>
+      <div class="el-list" id="el-list"></div>
+      <div class="nav-row">
+        <button id="prev-btn" title="poprzedni na liście (wg sortowania i filtra)">‹</button>
+        <button id="pt-btn" title="pełna tablica okresowa (dodatek)">Pełna tablica ↗</button>
+        <button id="next-btn" title="następny na liście (wg sortowania i filtra)">›</button>
+      </div>
+    </div>
+
+    <div class="sb-block">
+      <div class="sub">Mikrotablica</div>
+      <div class="mini-pt" id="mini-pt"></div>
+      <div class="mini-cap" id="mini-cap"></div>
+      <div class="mini-legend">
+        <span><i style="background:#d3e2f1"></i>metale</span><span><i style="background:#dbe9c6"></i>półmetale</span>
+        <span><i style="background:#f6e6b0"></i>niemetale</span><span><i style="background:#e7d6ef"></i>szlachetne</span>
+        <span><i style="background:#f3d6e2"></i>lantanowce</span><span><i style="background:#d2ead8"></i>aktynowce</span>
+        <span><i style="background:var(--v)"></i>wybrany</span><span><i style="box-shadow:inset 0 0 0 1.5px var(--v)"></i>ta grupa / ten okres</span>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <div class="fb-head">Ciekawostka</div>
+      <div id="fact-content">Wybierz pierwiastek…</div>
+      <button id="next-fact-btn">następna ›</button>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <div class="content">
+    <nav class="tabnav" id="tabnav">
+<span class="tg tg-b">Budowa</span><button data-tab="atom" class="on">Atom</button><button data-tab="ds">Karta danych</button><button data-tab="nucleus">Jądro i fazy</button><button data-tab="orbitals">Orbitale · Z*</button><span class="tg tg-z">Zachowanie</span><button data-tab="mat">Materiał</button><button data-tab="props">Właściwości</button><button data-tab="chg">Jon: co znika</button><button data-tab="redox">Redoks</button><button data-tab="notes">Podsumowanie</button><span class="tg">Cząsteczki</span><button data-tab="mol">Związki</button><button data-tab="forms">Struktura i skład</button><span class="tg">Szkoła</span><button data-tab="reakcja">Reakcja</button><button data-tab="dane">Dane</button><button data-tab="diag">Diagnostyka</button>
+      </nav>
+    <div class="hud" id="hud"></div>
+    <div class="tabpane show" data-tab="atom"><div class="grid3">
+      <section class="panel" id="panel-ident">
+        <h3>Pierwiastek <span id="hmeta"></span></h3>
+        <div class="body">
+          <div class="ident-grid">
+            <div class="element-card">
+              <div class="ec-top"><span id="ec-z">—</span><span id="ec-mass">—</span></div>
+              <div class="ec-sym" id="ec-sym">—</div>
+              <div class="ec-name" id="ec-name">—</div>
+              <div class="ec-ions" id="ec-ions"></div>
+            </div>
+            <div class="ident-info">
+              <div class="badges" id="bdg"></div>
+              <div>
+                <div class="sub" style="margin-bottom:5px">Konfiguracja</div>
+                <div class="cfg" id="hcfg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="lewis-row">
+            <svg id="lew" viewBox="-60 -60 120 120"></svg>
+            <div class="charge-block">
+              <div class="sub">Ładunek jonu</div>
+              <div class="ch-btns" id="chsel"></div>
+            </div>
+          </div>
+          <div id="cov"></div>
+          <svg id="pos" viewBox="0 0 360 148"></svg>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-atom">
+        <h3>Model atomu <span class="atom-controls"><button data-sm="b" class="on">powłoki i jądro</button><button data-sm="o">orbital</button></span></h3>
+        <div class="body atom-body">
+          <div class="atom-stage" id="stage">
+            <canvas id="bohr" width="1400" height="1400"></canvas>
+            <canvas id="cloud" width="760" height="760" style="display:none"></canvas>
+            <div class="isobar" id="isobar"></div>
+            <div id="focus">Kliknij powłokę, jądro lub lupę. Dwuklik lub kółko myszy przybliża do jądra.</div>
+            <div class="zbar">
+              <button id="zo" title="oddal">−</button><small>powłoki</small>
+              <input type="range" id="zs" min="0" max="100" value="0" aria-label="powiększenie: od powłok do jądra"><small>jądro</small>
+              <button id="zi" title="przybliż">+</button>
+              <button id="zr" title="widok całego atomu">1×</button>
+              <button id="zn">do jądra</button>
+              <button id="pz">pauza</button>
+              <button id="fs">pełny ekran</button>
+            </div>
+          </div>
+          <div class="atom-side">
+            <div class="key">
+              <span><i style="background:var(--c);color:var(--c)"></i>rdzeń</span>
+              <span><i style="background:var(--v);color:var(--v)"></i>walencyjne</span>
+              <span><i style="background:var(--r);color:var(--r)"></i>d/f</span>
+              <span><i style="background:var(--p);color:var(--p)"></i>proton</span>
+              <span><i style="background:var(--n);color:var(--n)"></i>neutron</span>
+            </div>
+            <div id="bohrinfo"></div>
+            <div id="orbbox" style="display:none"><div class="sub">Orbital: <b id="orbname" style="color:var(--tx)"></b></div><div id="orbsel"></div></div>
+          </div>
+          <div class="hintbar" id="hintbar">
+            <div><div class="sub bldh"><span>Kolejność zapełniania podpowłok <small>— kliknij podpowłokę</small></span><button type="button" id="bld" class="bldbtn">▶ zbuduj atom</button></div><div class="madrow" id="madrow"></div></div>
+            <div><div class="sub">Podpowiedzi</div><div class="hchips" id="hchips"></div></div>
+            <div class="hbody" id="hbody"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-quick">
+        <h3>Dane <span>szybki podgląd</span></h3>
+        <div class="body">
+          <div class="stats" id="stats"></div>
+          <div class="block">
+            <div class="sub">Rozkład elektronów</div>
+            <div id="rb"></div>
+            <div class="roleskey" id="roleskey"></div>
+            <div id="shl"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    </div>
+
+    <section class="tabs-panel">
+      
+      <div class="tabpanes">
+        <div class="tabpane" data-tab="reakcja">
+  <div id="rx-cat"></div>
+  <div class="card sc-card" style="margin-top:14px">
+    <h4>Kreator: metal + kwas <small class="sc-sub">szereg aktywności</small></h4>
+    <p class="sc-lead">Metal stojący <b>przed wodorem</b> w szeregu aktywności wypiera wodór z kwasu. Kwasy utleniające (np. HNO₃) zachowują się inaczej.</p>
+    <div class="rx-controls">
+      <label>Metal <select id="rx-metal"></select></label>
+      <label>Kwas <select id="rx-acid"></select></label>
+      <button type="button" id="rx-go" class="sc-btn">Sprawdź</button>
+    </div>
+    <div class="rx-presets" id="rx-presets" aria-label="Przykłady"></div>
+    <div class="rx-series" id="rx-series" aria-label="Szereg aktywności"></div>
+    <div class="rx-result" id="rx-out" role="status" aria-live="polite"></div>
+  </div>
+</div>
+<div class="tabpane" data-tab="dane">
+  <div class="card sc-card">
+    <h4>Dane stałe <small class="sc-sub" id="dane-ver"></small><button type="button" id="dane-copy" class="sc-btn sc-btn-sm">Kopiuj JSON</button></h4>
+    <div id="dane-out"></div>
+  </div>
+</div>
+<div class="tabpane" data-tab="diag">
+  <div class="card sc-card">
+    <h4>Diagnostyka <small class="sc-sub">stan pliku i zakładek</small><span class="sc-actions"><button type="button" id="diag-refresh" class="sc-btn sc-btn-sm">Odśwież</button><button type="button" id="diag-copy" class="sc-btn sc-btn-sm">Kopiuj raport</button></span></h4>
+    <div id="diag-out"></div>
+  </div>
+</div>
+        <div class="tabpane" data-tab="ds"><div class="ds" id="ds"></div></div>
+        <div class="tabpane" data-tab="chg"><div class="mt" id="chgp"></div></div>
+        <div class="tabpane" data-tab="mat"><div class="mt" id="mt"></div></div>
+        <div class="tabpane" data-tab="mol"><div id="mols"></div></div>
+        <div class="tabpane" data-tab="forms">
+          <div class="forms-grid">
+            <div class="forms-list" id="clist"></div>
+            <canvas id="cmpv" width="600" height="600"></canvas>
+            <div class="forms-info" id="cinfo"></div>
+          </div>
+        </div>
+        <div class="tabpane" data-tab="props">
+          <div class="props-grid">
+            <div class="card">
+              <h4>Energie jonizacji <button id="lgb">log</button></h4>
+              <svg id="ie" viewBox="0 0 640 260"></svg>
+              <div class="cap" id="cp-ie"></div>
+            </div>
+            <div class="card">
+              <h4>Promienie</h4>
+              <svg id="rad" viewBox="0 0 300 300"></svg>
+              <div class="cap" id="cp-rad"></div>
+            </div>
+            <div class="card">
+              <h4>Profil właściwości</h4>
+              <svg id="radar" viewBox="0 0 340 300"></svg>
+              <div class="cap">Osie znormalizowane (0–100 %): r at. 260 pm, IE₁ 2400 kJ/mol, χ 4, EA 350 kJ/mol, T topn. i ρ w skali log, α 45 Å³. Przy osi podano wartość rzeczywistą.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tabpane" data-tab="orbitals">
+          <div class="orb-grid">
+            <div class="card">
+              <h4>Diagram orbitali — reguła Hunda</h4>
+              <svg id="lev" viewBox="0 0 420 400"></svg>
+              <div class="levsum" id="levsum"></div>
+              <div class="cap">Kwadrat = orbital. Strzałki pokazują spin (↑/↓). Reguła Hunda: podpowłoka najpierw zapełnia się pojedynczymi elektronami o spinach równoległych, dopiero potem paruje.</div>
+            </div>
+            <div class="card">
+              <h4>Ekranowanie Z* — reguły Slatera</h4>
+              <svg id="sl" viewBox="0 0 420 300"></svg>
+              <div class="cap">Z* to ładunek jądra „widziany” przez elektron po odjęciu ekranowania przez inne elektrony. Im wyższe Z*, tym mocniej związany elektron (niższa energia).</div>
+            </div>
+          </div>
+        </div>
+        <div class="tabpane" data-tab="nucleus">
+          <div id="spiso" style="display:none"></div>
+          <div class="nuc-grid">
+            <div class="card">
+              <h4>Zakres faz</h4>
+              <svg id="ph" viewBox="0 0 300 320"></svg>
+              <div class="cap" id="cp-ph"></div>
+            </div>
+            <div class="card">
+              <h4>Izotopy</h4>
+              <svg id="iso" viewBox="0 0 300 300"></svg>
+              <div class="cap" id="cp-iso"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tabpane" data-tab="redox">
+          <div class="card" style="margin-bottom:14px">
+            <h4>Stopnie utlenienia</h4>
+            <svg id="ox" viewBox="0 0 1000 150"></svg>
+            <div class="cap" id="cp-ox"></div>
+          </div>
+          <div class="card">
+            <h4>Potencjały standardowe vs SHE (V)</h4>
+            <svg id="redox" viewBox="0 0 1000 130"></svg>
+          </div>
+        </div>
+        <div class="tabpane" data-tab="notes">
+          <div class="card"><h4>Wnioski liczone z konfiguracji</h4><div id="nt"></div></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="sb-bg" id="sb-bg"></div>
+<nav class="mbar" id="mbar" aria-label="Wybór pierwiastka">
+  <button id="mb-prev" aria-label="poprzedni">‹</button>
+  <button id="mb-open" aria-label="otwórz katalog"><span class="mb-sym" id="mb-sym">—</span><span class="mb-txt"><b id="mb-name">—</b><small id="mb-sub">katalog ▴</small></span></button>
+  <button id="mb-next" aria-label="następny">›</button>
+</nav>
+<div class="drawer-bg" id="drawer-bg"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h2>Układ okresowy pierwiastków</h2>
+    <button id="close-drawer">Zamknij ✕</button>
+  </div>
+  <div class="ptbar">
+    <div class="btns" id="ptb"></div>
+    <span id="ptc"></span>
+  </div>
+  <div id="pt"></div>
+  <div id="ptl"></div>
+  <div class="pt-info" id="pt-info">Najedź kursorem na pierwiastek, aby zobaczyć szczegóły (rząd, kolumna, grupa, blok, konfiguracja).</div>
+</div>
+

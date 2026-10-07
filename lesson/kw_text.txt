@@ -1,0 +1,838 @@
+
+Przejdź do treści
+N03 · Kwasy · v1.2
+Rdzeń
+Minimum E8
+0. Jak pracować
+1. Definicja i kompas
+2. Nazewnictwo
+3. Reszty kwasowe
+4. Otrzymywanie
+5. Dysocjacja
+6. Moc kwasów
+7. pH i wskaźniki
+Reakcje i zastosowania
+8. Reakcje kwasów
+8.1 + metal
+8.2 + tlenek
+8.3 + wodorotlenek
+8.4 + sól
+9. Kwaśne deszcze
+10. Zastosowania
+11. Bezpieczeństwo BHP
+Rozszerzenia
+12. Kwasy organiczne
+13. Historia
+14. Titracja
+15. Bufory
+Doświadczenia i sprawdzenie
+16. Doświadczenia
+17. Klinika błędów
+18. Ćwiczenia
+19. Fiszki
+20. Test
+21. Checklista
+Mapa, słownik, audyt
+22. Mnemoniki
+23. Słownik
+24. Mosty do lekcji
+Audyt
+Chemia
+Kwasy
+N03
+‹
+›
+### Wznów naukę
+Nie zapisano jeszcze miejsca.
+Zapisz tutaj
+Wznów
+N03 · MASTER LAB v1.2
+### Kwasy
+Samodzielna lekcja MASTER: definicja, nazewnictwo, dysocjacja, moc, pH, reakcje, kwaśne deszcze, zastosowania, bezpieczeństwo, historia i rozszerzenia (titracja, bufory, kwasy organiczne).
+E8
+ROZUMIENIE
+LO ROZSZERZONE
+NOWE MODELE
+### Muszę umieć na E8 — 8 faktów
+Definicja kwasu (szkolna, Arrheniusa): związek, który w wodzie dysocjuje na kationy wodoru H⁺ (dokładniej H₃O⁺) i aniony reszty kwasowej. Rozszerzona (Brønsteda): donor protonu H⁺.
+Wzór ogólny: HₙR, gdzie R = reszta kwasowa, n = wartościowość reszty.
+Podział: beztlenowe (HCl, HBr, HI, HF, H₂S, HCN) vs tlenowe (HNO₃, H₂SO₄, H₂CO₃, H₃PO₄, HClO₄) — oraz mocne (HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄) vs słabe (HF, H₂S, H₂CO₃, H₂SO₃, HNO₂, H₃PO₄, CH₃COOH).
+Dysocjacja: HCl → H⁺ + Cl⁻; H₂SO₄ → 2H⁺ + SO₄²⁻; H₃PO₄ → 3H⁺ + PO₄³⁻. Dokładniej: H⁺ jest w wodzie jako jon hydroniowy H₃O⁺.
+pH: poniżej 7 kwasowy, 7 obojętny, powyżej 7 zasadowy. pH = −log₁₀[H₃O⁺].
+Wskaźniki: fenoloftaleina (bezbarwna w kwasie, malinowa w zasadzie); oranż metylowy (czerwony w kwasie, żółty w zasadzie); papierek uniwersalny (czerwony w kwasie, niebieski w zasadzie).
+Reakcje kwasów: + metal → sól + H₂ (tylko metale aktywniejsze od wodoru); + tlenek metalu → sól + H₂O; + wodorotlenek → sól + H₂O (zobojętnianie); + sól (węglan) → sól + H₂O + CO₂.
+BHP: kwas do wody, nigdy odwrotnie (reakcja egzotermiczna). Okulary, rękawice, nie pipetować ustami, nie wąchać bezpośrednio.
+E8: definicja, nazewnictwo, dysocjacja, pH, reakcje kluczowe
+Rozumienie: moc vs stężenie, szereg aktywności, dlaczego Cu nie reaguje
+Ambitne: kwasy organiczne, titracja, bufory, kwaśne deszcze
+Zaawansowane: Ka, pKa, równania jonowe, teorie kwasów i zasad
+Rdzeń lekcji — najpierw to (ok. 30 min)
+Sekcje 1–3 — definicja, nazewnictwo, reszty kwasowe.
+Sekcja 4 — otrzymywanie kwasów.
+Sekcja 5 — dysocjacja jonowa.
+Sekcje 6–7 — moc kwasu, pH i wskaźniki.
+Sekcja 8 — reakcje kwasów (metal, tlenek, wodorotlenek, sól).
+Klinika błędów + Ćwiczenia + Test.
+Most do Konstruktora Uniwersalnego
+Pełna analiza wzoru, bilans ładunków, jony, rozpuszczalność, równania jonowe, stopnie utlenienia.
+Otwórz Konstruktor
+N02 Wodorotlenki i zasady
+0 Jak pracować z lekcją
+Nie czytaj biernie. Po każdym akapicie: „Co ja z tego zapamiętam?”.
+Najpierw próbuj, potem patrz na odpowiedź.
+Powtarzaj w odstępach: dziś → jutro → za 3 dni → za tydzień.
+Mów na głos. Czytaj wzory: „H-dwa-S-O-cztery”.
+Rysuj. Dysocjacja, strzałki, wskaźniki.
+Łap moment „aha!”.
+Zasada 80/20: wzory kwasów · dysocjacja · reakcje z metalami i wodorotlenkami · pH.
+Mnemotechniki rdzeniowe:
+Kwasy beztlenowe: HCl, HBr, HI, H₂S, HF.
+Kwasy tlenowe: H + reszta kwasowa (np. HNO₃, H₂SO₄, H₃PO₄, H₂CO₃).
+Kwas = H⁺ + reszta kwasowa.
+Kwas + metal → sól + H₂ (metale aktywne).
+Kwas + wodorotlenek → sól + H₂O.
+Kwas + tlenek metalu → sól + H₂O.
+Kwas + sól → nowy kwas + nowa sól (jeśli powstaje osad / gaz / słaby elektrolit).
+1 Definicja kwasu i kompas
+### 1.1 Definicja szkolna (Arrheniusa)
+Kwas — definicja Arrheniusa
+Kwas to związek chemiczny, który w wodzie dysocjuje na kationy wodoru H⁺ (dokładniej — jony hydroniowe H₃O⁺) i aniony reszty kwasowej.
+HₙR → n H⁺ + Rⁿ⁻
+Wzór ogólny: HₙR. Przykłady: HCl, HNO₃, H₂SO₄, H₃PO₄, CH₃COOH.
+### 1.2 Definicja rozszerzona (Brønsteda)
+Kwas — definicja Brønsteda
+Kwas to donor protonu H⁺ — substancja, która oddaje proton innemu związkowi.
+Zasada to akceptor protonu H⁺ — substancja, która przyjmuje proton.
+HA + H₂O ⇌ H₃O⁺ + A⁻
+W tym ujęciu każdy kwas Arrheniusa jest też kwasem Brønsteda, ale nie odwrotnie — bo kwasem może być substancja, która nie ma wodoru w klasycznym sensie, o ile tylko oddaje proton.
+### 1.3 Kompas — co trzeba wiedzieć wcześniej
+wartościowość (H–I, O–II, Cl–I, S–II/IV/VI, N–III/V, P–III/V, C–IV),
+W–K–S–K (wartościowość → krzyżuj → skróć → kontrola),
+grupy atomów: NO₃⁻, SO₄²⁻, CO₃²⁻, PO₄³⁻, Cl⁻, Br⁻, I⁻, S²⁻, F⁻,
+tlenki kwasowe (SO₂, SO₃, CO₂, P₂O₅, N₂O₅) — reagują z wodą → kwasy (N01),
+zobojętnianie kwasu z wodorotlenkiem → sól + woda (N02),
+wskaźniki kwasowo-zasadowe (fenoloftaleina, oranż metylowy, papierek uniwersalny).
+2 Nazewnictwo kwasów
+Mnemonik: jak nazwać kwasBez tlenu → kwas + pierwiastek + „-owodorowy” (HCl – chlorowodorowy).
+Z tlenem → policz wartościowość: W = 2·O − H.
+H₂SO₄: 2·4 − 2 = 6 → siarkowy(VI) · HNO₂: 2·2 − 1 = 3 → azotowy(III) · HClO₄: 2·4 − 1 = 7 → chlorowy(VII).
+Wyjątek: H₂CO₃ – kwas węglowy (bez cyfry). HCl(aq) = kwas solny, HCl(g) = chlorowodór.
+### 2.1 Kwasy beztlenowe
+Reguła: kwas + nazwa pierwiastka + „-owodorowy”
+ | | Wzór | Nazwa | Uwaga
+ | HF | kwas fluorowodorowy | słaby, żrący
+ | HCl | kwas chlorowodorowy (solny) | mocny, żrący
+ | HBr | kwas bromowodorowy | mocny
+ | HI | kwas jodowodorowy | mocny
+ | H₂S | kwas siarkowodorowy | słaby, toksyczny gaz
+ | HCN | kwas cyjanowodorowy | silnie toksyczny
+### 2.2 Kwasy tlenowe
+Reguła: kwas + nazwa pierwiastka + (wartościowość rzymska)
+ | | Wzór | Nazwa | Reszta kwasowa
+ | HNO₂ | kwas azotowy(III) | NO₂⁻
+ | HNO₃ | kwas azotowy(V) | NO₃⁻
+ | H₂SO₃ | kwas siarkowy(IV) | SO₃²⁻
+ | H₂SO₄ | kwas siarkowy(VI) | SO₄²⁻
+ | H₂CO₃ | kwas węglowy | CO₃²⁻
+ | H₃PO₃ | kwas fosforowy(III) | PO₃³⁻
+ | H₃PO₄ | kwas fosforowy(V) | PO₄³⁻
+ | HClO | kwas chlorowy(I) | ClO⁻
+ | HClO₂ | kwas chlorowy(III) | ClO₂⁻
+ | HClO₃ | kwas chlorowy(V) | ClO₃⁻
+ | HClO₄ | kwas chlorowy(VII) | ClO₄⁻
+ | H₂SiO₃ | kwas krzemowy | SiO₃²⁻
+ | HMnO₄ | kwas manganowy(VII) | MnO₄⁻
+ | H₂CrO₄ | kwas chromowy(VI) | CrO₄²⁻
+ | H₂Cr₂O₇ | kwas dichromowy(VI) | Cr₂O₇²⁻
+H₂CO₃ — jedyny tlenowy bez cyfry rzymskiej w nazwie szkolnej.
+### 2.3 Podział ze względu na liczbę atomów wodoru
+ | | Typ | Definicja | Przykłady
+ | Jednoprotonowy | 1 atom H | HCl, HBr, HI, HF, HNO₃, HNO₂, HClO, HClO₄, CH₃COOH
+ | Dwuprotonowy | 2 atomy H | H₂SO₄, H₂SO₃, H₂CO₃, H₂S, H₂SiO₃
+ | Trójprotonowy | 3 atomy H | H₃PO₄, H₃PO₃
+Uwaga: nie każdy atom H w kwasie jest protonem kwasowym. W CH₃COOH tylko H z grupy –COOH jest protonem kwasowym — pozostałe 3 atomy H są związane z węglem i nie dysocjują.
+3 Reszty kwasowe
+Definicja
+Reszta kwasowa to anion powstający po formalnym odjęciu protonów H⁺ z cząsteczki kwasu. Ładunek reszty = −n, gdzie n = liczba atomów wodoru w kwasie.
+ | | Kwas | Reszta kwasowa | Ładunek
+ | HCl | Cl⁻ | −1
+ | HBr | Br⁻ | −1
+ | HI | I⁻ | −1
+ | HF | F⁻ | −1
+ | H₂S | S²⁻ | −2
+ | HCN | CN⁻ | −1
+ | HNO₃ | NO₃⁻ | −1
+ | HNO₂ | NO₂⁻ | −1
+ | H₂SO₄ | SO₄²⁻ | −2
+ | H₂SO₃ | SO₃²⁻ | −2
+ | H₂CO₃ | CO₃²⁻ | −2
+ | H₃PO₄ | PO₄³⁻ | −3
+ | H₂SiO₃ | SiO₃²⁻ | −2
+ | HClO | ClO⁻ | −1
+ | HClO₄ | ClO₄⁻ | −1
+ | CH₃COOH | CH₃COO⁻ | −1
+Kontrola ładunku: liczba atomów H w cząsteczce kwasu musi odpowiadać ładunkowi reszty. HCl (1 H) → Cl⁻ (−1). H₂SO₄ (2 H) → SO₄²⁻ (−2). H₃PO₄ (3 H) → PO₄³⁻ (−3).
+### 3.1 Nazywanie soli z reszt kwasowych
+Przykłady
+NaCl → chlorek sodu (od HCl)
+NaNO₃ → azotan(V) sodu (od HNO₃)
+Na₂SO₄ → siarczan(VI) sodu (od H₂SO₄)
+Na₂CO₃ → węglan sodu (od H₂CO₃)
+Na₃PO₄ → fosforan(V) sodu (od H₃PO₄)
+### Kwas → reszta → przykładowa sól
+Wybierz kwas z listy — zobaczysz resztę kwasową i przykładową sól.
+HCl
+HNO₃
+H₂SO₄
+H₃PO₄
+H₂CO₃
+4 Otrzymywanie kwasów
+Mnemonik: TNS – trzy drogi do kwasuTlenek kwasowy + woda → kwas tlenowy (SO₃ + H₂O → H₂SO₄).
+Niemetal + wodór → kwas beztlenowy (H₂ + Cl₂ → 2 HCl; dopiero w wodzie powstaje kwas).
+Sól + mocniejszy (lub mniej lotny) kwas → nowy kwas (NaCl + H₂SO₄ → NaHSO₄ + HCl↑).
+Uwaga: SiO₂ z wodą nie reaguje – H₂SiO₃ otrzymuje się z soli (Na₂SiO₃ + 2 HCl → H₂SiO₃↓ + 2 NaCl).
+### 4.1 Tlenek kwasowy + woda → kwas
+Metoda E8
+SO₃ + H₂O → H₂SO₄
+SO₂ + H₂O → H₂SO₃
+CO₂ + H₂O ⇌ H₂CO₃ (słaby)
+P₂O₅ + 3 H₂O → 2 H₃PO₄
+N₂O₅ + H₂O → 2 HNO₃
+N₂O₃ + H₂O → 2 HNO₂
+Typ reakcji: synteza (łączenie). Zachodzi dla tlenków kwasowych.
+### 4.2 Niemetal + wodór → kwas beztlenowy
+H₂ + Cl₂ → 2 HCl (nad kat.)
+H₂ + Br₂ → 2 HBr
+H₂ + I₂ → 2 HI (nad kat.)
+H₂ + S → H₂S (nad kat., podgrzewanie)
+Wymaga katalizatora lub warunków (temperatura, światło). W laboratorium otrzymuje się najczęściej przez reakcję soli z mocnym kwasem (metoda 4.3).
+### 4.3 Sól + mocny kwas → nowy kwas + nowa sól
+NaCl + H₂SO₄ →(Δ) NaHSO₄ + HCl↑
+CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑
+Na₂SO₃ + 2 HCl → 2 NaCl + H₂O + SO₂↑
+Na₂S + 2 HCl → 2 NaCl + H₂S↑
+Reakcja zachodzi, gdy powstaje gaz (HCl, CO₂, SO₂, H₂S) lub osad. Doświadczenie z NaCl + H₂SO₄ to wyłącznie pokaz nauczycielski pod dygestorium — HCl gazowy jest drażniący.
+### 4.4 Otrzymywanie HCl(aq) — etapy
+Od NaCl do kwasu solnego
+Do NaCl dodajemy stężonego H₂SO₄ (pod dygestorium): NaCl + H₂SO₄ → NaHSO₄ + HCl↑.
+Gazowy HCl (bezbarwny, drażniący) przepuszczamy przez wodę.
+Otrzymujemy roztwór HCl(aq) — kwas chlorowodorowy.
+W wilgotnym powietrzu HCl(g) tworzy białą mgłę — drobne kropelki kwaśnego roztworu, nie „biały gaz”.
+5 Dysocjacja jonowa kwasów
+### 5.1 Definicja
+Dysocjacja elektrolityczna
+Dysocjacja to rozpad związku chemicznego na jony w wodzie (w roztworze wodnym).
+Kwasy dysocjują na kation wodoru H⁺ (dokładniej: jon hydroniowy H₃O⁺) i anion reszty kwasowej.
+### 5.2 Równania dysocjacji
+HCl → H⁺ + Cl⁻
+HNO₃ → H⁺ + NO₃⁻
+H₂SO₄ → 2 H⁺ + SO₄²⁻
+H₃PO₄ → 3 H⁺ + PO₄³⁻
+CH₃COOH ⇌ H⁺ + CH₃COO⁻ (dysocjacja częściowa — kwas słaby)
+### 5.2a Trzy poziomy zapisu dysocjacji
+ | | Kwas | Szkolnie | Dokładniej (z wodą) | α
+ | HCl (mocny) | HCl → H⁺ + Cl⁻ | HCl + H₂O → H₃O⁺ + Cl⁻ | ≈ 1
+ | H₂SO₄ (mocny w I st.) | H₂SO₄ → 2 H⁺ + SO₄²⁻ | H₂SO₄ + 2 H₂O → 2 H₃O⁺ + SO₄²⁻ (stopniowo: I →, II ⇌) | α₁ ≈ 1, α₂ < 1
+ | CH₃COOH (słaby) | CH₃COOH ⇌ H⁺ + CH₃COO⁻ | CH₃COOH + H₂O ⇌ H₃O⁺ + CH₃COO⁻ | ≈ 0,01
+→ = dysocjacja praktycznie całkowita (mocny), ⇌ = równowaga (słaby).
+### 5.3 Jon hydroniowy H₃O⁺ — dokładniejszy model
+W wodzie kation H⁺ (proton) nie istnieje samodzielnie — natychmiast łączy się z cząsteczką wody, tworząc jon hydroniowy H₃O⁺:
+H⁺ + H₂O → H₃O⁺
+W szkole często piszemy w skrócie H⁺, ale poprawnie w wodzie mamy H₃O⁺. W zadaniach o pH chodzi o stężenie H₃O⁺, nie „wolnego H⁺”.
+### 5.4 Dysocjacja dwustopniowa kwasów wieloprotonowych
+H₂SO₄ — dwa etapy
+H₂SO₄ → H⁺ + HSO₄⁻ (I stopień — praktycznie całkowity)
+HSO₄⁻ ⇌ H⁺ + SO₄²⁻ (II stopień — częściowy)
+Dlatego mówimy, że H₂SO₄ jest mocnym kwasem tylko w I stopniu. W II stopniu jest słaby (HSO₄⁻ jest słabym kwasem).
+H₃PO₄ — trzy etapy
+H₃PO₄ ⇌ H⁺ + H₂PO₄⁻
+H₂PO₄⁻ ⇌ H⁺ + HPO₄²⁻
+HPO₄²⁻ ⇌ H⁺ + PO₄³⁻
+Wszystkie etapy są słabe — H₃PO₄ jest słabym kwasem trójprotonowym.
+### 5.5 Jonizacja a dysocjacja — różnica
+Jonizacja — powstawanie jonów w wyniku reakcji cząsteczki z rozpuszczalnikiem (np. HCl + H₂O → H₃O⁺ + Cl⁻). Cząsteczka HCl była kowalencyjna, po reakcji z wodą powstają jony.
+Dysocjacja — rozpad istniejącej substancji jonowej na jony (np. NaCl → Na⁺ + Cl⁻). Substancja była już jonowa (kryształ jonowy), w wodzie rozpada się na jony.
+W szkole często używa się obu terminów zamiennie, ale dokładnie to różne procesy.
+Jonizacja a dysocjacja – efekt w roztworze | | | HCl (jonizacja) | NaCl (dysocjacja)
+ | Zapis | HCl + H₂O → H₃O⁺ + Cl⁻ | NaCl(s) → Na⁺ + Cl⁻
+ | Skąd jony | powstają: proton przechodzi na wodę | istniały już w krysztale
+ | Roztwór | H₃O⁺ + Cl⁻, pH < 7 | Na⁺ + Cl⁻, pH ≈ 7
+### HCl + H₂O → H₃O⁺ + Cl⁻ — krok po kroku
+Naciśnij „Krok”, aby zobaczyć, jak proton przeskakuje z HCl na wodę.
+ Cl
+ H
+ Cl⁻
+ O
+ H
+ H
+ δ⁻ (wolne pary e⁻)
+ H₃O⁺
+ δ⁺ na H
+▶ Krok
+↺ Reset
+Krok 0: HCl i H₂O osobno.
+Dysocjacja HCl – mechanizm cząsteczkowyWizualizacja z biblioteki · otwiera się w oknie
+6 Moc kwasów
+### 6.1 Definicja mocy
+Moc kwasu
+Moc kwasu to zdolność do oddawania protonów H⁺ w wodzie. Mierzy się ją stopniem dysocjacji α (ułamek cząsteczek, które uległy dysocjacji).
+Kwas mocny: α ≈ 1 (dysocjuje praktycznie całkowicie).
+Kwas słaby: α << 1 (dysocjuje tylko częściowo).
+Moc ≠ stężenie. Mocny kwas może być bardzo rozcieńczony (małe stężenie), a słaby może być bardzo stężony. To dwa różne parametry.
+### 6.2 Tabela mocy kwasów
+ | | Kwas | Moc | α (stopień dysocjacji) | Zapis dysocjacji
+ | HCl | mocny | α ≈ 1 (100%) | → H⁺ + Cl⁻
+ | HBr | mocny | α ≈ 1 | → H⁺ + Br⁻
+ | HI | mocny | α ≈ 1 | → H⁺ + I⁻
+ | HNO₃ | mocny | α ≈ 1 | → H⁺ + NO₃⁻
+ | H₂SO₄ | mocny (tylko I stopień) | α₁ ≈ 1, α₂ < 1 | → H⁺ + HSO₄⁻ (I); HSO₄⁻ ⇌ H⁺ + SO₄²⁻ (II)
+ | HClO₄ | mocny | α ≈ 1 | → H⁺ + ClO₄⁻
+ | H₂SO₃ | słaby | α < 1 | ⇌ H⁺ + HSO₃⁻
+ | H₃PO₄ | słaby | α << 1 | ⇌ H⁺ + H₂PO₄⁻
+ | HF | słaby | α ≈ 0,1 | ⇌ H⁺ + F⁻
+ | CH₃COOH | słaby | α ≈ 0,01 | ⇌ H⁺ + CH₃COO⁻
+ | H₂CO₃ | słaby | α << 1 | ⇌ H⁺ + HCO₃⁻
+ | H₂S | słaby | α << 1 | ⇌ H⁺ + HS⁻
+### 6.3 Paradoks HF — dlaczego fluorowodorowy jest słaby?
+Fluor jest najbardziej elektroujemnym pierwiastkiem. Intuicja podpowiada, że HF powinien być mocnym kwasem. A jednak HF jest słabym kwasem w wodzie.
+Wyjaśnienie: wiązanie H–F jest bardzo silne (duża różnica elektroujemności → silna polaryzacja, ale też silne przyciąganie protonu przez F). Proton trudno się odrywa. Dodatkowo w wodzie tworzą się wiązania wodorowe F···H–O–H, które stabilizują cząsteczkę HF.
+Na poziomie E8 wystarczy zapamiętać: HF jest słabym kwasem, mimo że fluor jest bardzo elektroujemny. Pełne wyjaśnienie wymaga analizy energii wiązania i entalpii hydratacji.
+### 6.4 Wpływ rozcieńczenia na stopień dysocjacji
+Prawo rozcieńczeń Ostwalda: im bardziej rozcieńczony roztwór słabego kwasu, tym większy stopień dysocjacji α.
+Ale pH zależy też od stężenia: bardziej rozcieńczony kwas słaby ma wyższe pH (mniej kwaśny roztwór), mimo że α rośnie.
+Nie mylić: α rośnie, pH rośnie (odczyn słabnie) — mimo że oba mają „rosnąć”.
+Mocne vs słabe – cząstki i αWizualizacja z biblioteki · otwiera się w oknie
+7 pH i wskaźniki kwasowo-zasadowe
+### 7.1 Skala pH
+Definicja pH
+pH to ujemny logarytm dziesiętny ze stężenia jonów hydroniowych H₃O⁺ (w przybliżeniu szkolnym — stężenia, dokładniej aktywności):
+pH = −log₁₀[H₃O⁺]
+Odwrotnie:
+[H₃O⁺] = 10^(−pH)
+ | | pH | Odczyn | Przykład
+ | 0–3 | silnie kwasowy | HCl 1 M (pH 0), HCl 0,01 M (pH 2)
+ | 4–6 | słabo kwasowy | ocet (pH 3), kawa (pH 5), deszcz (pH 5,6)
+ | 7 | obojętny | woda destylowana
+ | 8–10 | słabo zasadowy | mydło (pH 9), mleko magnezji (pH 10)
+ | 11–14 | silnie zasadowy | woda wapienna (pH 12), NaOH (pH 13)
+### 7.2 Przykłady obliczeń pH
+Od stężenia do pH
+Kwas mocny — dysocjuje całkowicie, więc [H₃O⁺] ≈ stężenie kwasu:
+HCl 0,1 M → [H₃O⁺] = 0,1 M → pH = −log(0,1) = 1
+HCl 0,01 M → [H₃O⁺] = 0,01 M → pH = −log(0,01) = 2
+HCl 0,001 M → [H₃O⁺] = 0,001 M → pH = 3
+Od pH do stężenia
+pH = 2 → [H₃O⁺] = 10⁻² = 0,01 mol/dm³
+pH = 3 → [H₃O⁺] = 10⁻³ = 0,001 mol/dm³
+pH = 7 → [H₃O⁺] = 10⁻⁷ = 0,0000001 mol/dm³
+Skala logarytmiczna
+pH jest skalą logarytmiczną. Różnica 1 jednostki pH = 10× różnica stężenia H₃O⁺.
+pH 2 ma 10× więcej H₃O⁺ niż pH 3 i 100× więcej niż pH 4.
+### 7.3 Wskaźniki kwasowo-zasadowe
+Wskaźnik reaguje na pH, nie na „nazwę” substancji
+ | | Wskaźnik | Kwas | Obojętny | Zasada | Zakres zmiany (pH)
+ | Fenoloftaleina | bezbarwna | bezbarwna | malinowa | 8,2–10,0
+ | Oranż metylowy | czerwony | pomarańczowy | żółty | 3,1–4,4
+ | Papierek uniwersalny | czerwony | żółty | niebieski | pełna skala
+ | Papierek lakmusowy | czerwony | — | niebieski | 5,0–8,0
+ | Błękit bromotymolowy | żółty | zielony | niebieski | 6,0–7,6
+Zapamiętaj: fenoloftaleina jest bezbarwna w kwasie i obojętnym, malinowa w zasadzie. Oranż metylowy jest czerwony w kwasie, żółty w zasadzie.
+### Interaktywna skala pH — wskaźniki i kolory
+Przesuń suwak lub kliknij przykład.
+024678101214
+Papierek uniwersalny: 
+pH
+Odczyn
+Wskaźnik
+HCl pH 1
+ocet pH 3
+kawa pH 5
+woda pH 7
+mydło pH 9
+woda wapienna pH 12
+### 7.4 Laboratorium wskaźników
+Roztwór × wskaźnik w probówkach i drabinka pH kwasów i zasad dla wybranego stężenia – w panelu pH. Suwak powyżej to wersja podglądowa.
+Panel pH: skala, wskaźniki i drabinka kwasów i zasadPełny panel pH z silnika CHE · otwiera się w oknie
+8 Reakcje kwasów
+Cztery główne schematy reakcji kwasów
+Kwas + metal aktywny → sól + wodór↑
+Kwas + tlenek metalu (zasadowy) → sól + woda
+Kwas + wodorotlenek (zasada) → sól + woda (zobojętnianie)
+Kwas + sól (węglan) → sól + woda + CO₂↑ (dla węglanów)
+### 8.1 Kwas + metal → sól + wodór
+Warunek: metal musi być aktywniejszy od wodoru
+Zn + 2 HCl → ZnCl₂ + H₂↑
+Mg + 2 HCl → MgCl₂ + H₂↑
+Fe + 2 HCl → FeCl₂ + H₂↑
+2 Al + 6 HCl → 2 AlCl₃ + 3 H₂↑
+Zn + H₂SO₄ → ZnSO₄ + H₂↑
+Kontrprzykłady — metale za wodorem
+Cu + HCl → brak reakcji (miedź poniżej wodoru)
+Ag + HCl → brak reakcji (srebro poniżej wodoru)
+Au + HCl → brak reakcji (złoto poniżej wodoru)
+Te metale nie wypierają wodoru z rozcieńczonych kwasów nieutleniających.
+### 8.1.1 Szereg aktywności metali — pełna tabela
+Szereg aktywności (od najbardziej aktywnego)
+K+ wodaCa+ wodaNa+ wodaMgAlZnFeSnPbHCuAgAu
+Zielone (przed H): wypierają H₂ z kwasów nieutleniających. H – granica. Czerwone (za H): brak reakcji z HCl. Aktywność maleje od lewej do prawej.
+Reguła E8: kwas + metal → sól + H₂ tylko dla metali przed H w szeregu. Metale za H (Cu, Ag, Au) nie reagują z rozcieńczonymi kwasami nieutleniającymi.
+Uzasadnienie: metale aktywne mają mniejszą energię jonizacji i łatwiej oddają elektrony jonom H⁺ z kwasu. Metale szlachetne (Cu, Ag, Au) mają wysoką elektroujemność i wysoką energię jonizacji — nie oddają elektronów jonom H⁺, więc reakcja nie zachodzi.
+### 8.1.2 Wyjątek: HNO₃ jako kwas utleniający
+HNO₃ reaguje z miedzią, ale NIE wydziela wodoru — jest kwasem utleniającym.
+Cu + 4 HNO₃ (stężony) → Cu(NO₃)₂ + 2 NO₂↑ + 2 H₂O
+3 Cu + 8 HNO₃ (rozcieńczony) → 3 Cu(NO₃)₂ + 2 NO↑ + 4 H₂O
+Produkt zależy od stężenia i temperatury. Na E8 wystarczy wiedzieć, że nie stosuje się schematu „metal + kwas → H₂” dla HNO₃. Doświadczenie z HNO₃ wykonuje wyłącznie nauczyciel (toksyczne gazy NO₂, NO).
+### 8.2 Kwas + tlenek metalu → sól + woda
+Przykłady
+CaO + 2 HCl → CaCl₂ + H₂O
+CuO + H₂SO₄ → CuSO₄ + H₂O
+Fe₂O₃ + 6 HCl → 2 FeCl₃ + 3 H₂O
+Na₂O + 2 HNO₃ → 2 NaNO₃ + H₂O
+MgO + 2 HCl → MgCl₂ + H₂O
+Reakcja zachodzi nawet dla tlenków, które nie reagują z wodą (np. CuO, Fe₂O₃). To ważne — charakter zasadowy nie wymaga reakcji z wodą.
+### 8.3 Kwas + wodorotlenek → sól + woda (zobojętnianie)
+Zobojętnianie
+HCl + NaOH → NaCl + H₂O
+H₂SO₄ + 2 KOH → K₂SO₄ + 2 H₂O
+2 HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + 2 H₂O
+3 HCl + Al(OH)₃ → AlCl₃ + 3 H₂O
+2 H₃PO₄ + 3 Ca(OH)₂ → Ca₃(PO₄)₂ + 6 H₂O
+Kontrola współczynników
+Liczba grup OH⁻ z wodorotlenku musi zrównoważyć liczbę atomów H z kwasu.
+H₂SO₄ (2 H) + 2 KOH (2 OH) → K₂SO₄ + 2 H₂O. ✓
+H₃PO₄ (3 H) + 3 NaOH (3 OH) → Na₃PO₄ + 3 H₂O. ✓
+### 8.3.1 Równania jonowe zobojętniania
+NaOH + HCl — trzy poziomy zapisu
+Cząsteczkowe: NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)
+Jonowe pełne: Na⁺ + OH⁻ + H⁺ + Cl⁻ → Na⁺ + Cl⁻ + H₂O
+Jonowe skrócone: H⁺ + OH⁻ → H₂O
+Jony Na⁺ i Cl⁻ są jonami widzowymi — nie zmieniają się w reakcji, można je pominąć.
+### 8.4 Kwas + sól → nowy kwas + nowa sól
+Warunki zachodzenia reakcji
+Reakcja zachodzi, gdy powstaje osad, gaz lub słaby elektrolit (np. woda).
+2 HCl + CaCO₃ → CaCl₂ + H₂O + CO₂↑ (gaz)
+HCl + AgNO₃ → AgCl↓ + HNO₃ (osad)
+H₂SO₄ + BaCl₂ → BaSO₄↓ + 2 HCl (osad)
+2 HCl + Na₂S → 2 NaCl + H₂S↑ (gaz)
+2 HCl + Na₂SO₃ → 2 NaCl + H₂O + SO₂↑ (gaz)
+NaCl + H₂SO₄ →(Δ) NaHSO₄ + HCl↑ (gaz)
+Reguła „mocniejszy wypiera słabszy”
+Kwas mocniejszy wypiera kwas słabszy z jego soli. HCl (mocny) wypiera H₂CO₃ (słaby) z CaCO₃ → powstaje CO₂ + H₂O.
+H₂SO₄ (mocny) wypiera HCl (gazowy) z NaCl → powstaje HCl↑.
+### 8.5 Przewidź i sprawdź
+Reakcje kwasów: przewidź i sprawdźMetal, tlenek, węglan, sól, zobojętnianie · najpierw predykcja, potem zlewka
+9 Kwaśne deszcze
+Chemizm powstawania
+Tlenki siarki:
+S + O₂ → SO₂ (spalanie paliw z siarką)
+2 SO₂ + O₂ → 2 SO₃ (utlenianie w atmosferze)
+SO₃ + H₂O → H₂SO₄ (kwas siarkowy(VI))
+SO₂ + H₂O ⇌ H₂SO₃ (alternatywnie, kwas siarkowy(IV))
+Tlenki azotu:
+N₂ + O₂ → 2 NO (wysoka temperatura — silniki)
+2 NO + O₂ → 2 NO₂ (brązowy gaz)
+3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
+Skutki kwaśnych deszczy
+Zakwaszenie gleb i wód (pH < 5,6 — poniżej naturalnego).
+Uszkodzenie lasów (wymywanie składników odżywczych, obumieranie drzew).
+Korozja budynków (marmur, wapień: CaCO₃ + H₂SO₄ → CaSO₄ + H₂O + CO₂↑).
+Wymieranie organizmów wodnych (ryby, plankton nie tolerują pH < 5).
+Zniszczenie zabytków (np. rzeźby z piaskowca, marmuru).
+Zapobieganie
+Odsiarczanie paliw przed spalaniem.
+Filtry przemysłowe — zatrzymywanie SO₂ i NO₂ ze spalin.
+Katalizatory samochodowe — redukcja NOₓ do N₂.
+Odnawialne źródła energii (wiatr, słońce, wodór).
+Wapnowanie gleb — neutralizacja kwaśnych gleb wapnem (CaO, CaCO₃).
+Kwaśne deszcze – animacja obieguWizualizacja z biblioteki · otwiera się w oknie
+10 Zastosowania kwasów
+ | | Kwas | Zastosowanie | Konkretny przykład
+ | HCl | żołądek, czyszczenie | pH żołądka ~1,5–2 (trawienie białek); odkamienianie powierzchni
+ | H₂SO₄ | akumulatory, nawozy | elektrolit w akumulatorze ołowiowym; produkcja nawozów fosforowych
+ | HNO₃ | nawozy, materiały wybuchowe | saletra (NaNO₃, KNO₃); TNT (trinitrotoluen)
+ | H₃PO₄ | nawozy, żywność | E338 (zakwaszacz w coli); nawozy fosforowe; środki czyszczące
+ | H₂CO₃ | napoje gazowane | CO₂ + H₂O; orzeźwiający smak napojów
+ | CH₃COOH | spożywczy, konserwant | E260; 5–10% w occie; konserwowanie ogórków
+ | HF | trawienie szkła | grawerowanie szkła (SiO₂ + 4 HF → SiF₄ + 2 H₂O)
+ | H₂SiO₃ | szkło wodne | kleje silikatowe, uszczelniacze
+Kwasy w domu
+Ocet — CH₃COOH (5–10%) — konserwowanie, gotowanie, czyszczenie.
+Środek do czyszczenia WC — HCl (żrący!).
+Środek odkamieniający — kwasek cytrynowy (C₆H₈O₇) lub ocet.
+Napoje gazowane — H₂CO₃, H₃PO₄.
+Akumulator samochodowy — H₂SO₄ (30–40%).
+11 Bezpieczeństwo (BHP)
+Żrące właściwości kwasów
+Stężone kwasy niszczą skórę, błony śluzowe i oczy. Kontakt może prowadzić do trwałych oparzeń chemicznych.
+Zasady BHP pracy z kwasami
+✓ Zawsze kwas do wody (nie odwrotnie!) — wlewanie wody do stężonego kwasu może spowodować gwałtowne zagotowanie i rozprysk.
+✓ Okulary ochronne — obowiązkowo przy każdej pracy z kwasami.
+✓ Rękawice — przy pracy ze stężonymi kwasami.
+✓ Fartuch ochronny — przy stężonych kwasach.
+✓ Nie pipetować ustami — używać pipety automatycznej lub gruszki.
+✓ Nie wąchać bezpośrednio — wachlować ręką w kierunku nosa.
+✓ Mieszać i chłodzić przy rozcieńczaniu (reakcja egzotermiczna).
+✓ Płukać 15 min dużą ilością wody przy kontakcie ze skórą.
+✓ Płukać 15 min i natychmiast do lekarza przy kontakcie z oczami.
+✓ Pracować w dygestorium przy stężonych kwasach (opary drażniące).
+✗ Nie wlewać wody do stężonego kwasu.
+✗ Nie przechowywać kwasów w naczyniach metalowych (reakcja z metalem).
+✗ Nie dodawać stężonego kwasu do gorącej wody.
+✗ Nie próbować neutralizować rozlanego stężonego kwasu — najpierw rozcieńczyć dużą ilością wody, potem neutralizować.
+Dlaczego „kwas do wody”?
+Rozcieńczanie stężonego kwasu (np. H₂SO₄) wydziela dużo ciepła (reakcja egzotermiczna).
+Gdy wlewasz wodę do kwasu — woda (mniejsza gęstość) zostaje na powierzchni, miejscowo gwałtownie się nagrzewa, może zagotować się i rozprysnąć kwas.
+Gdy wlewasz kwas do wody — kwas opada, miesza się z całą objętością wody, ciepło rozchodzi się, ryzyko rozprysku znacznie mniejsze.
+12 Kwasy organiczne ROZSZERZENIE
+Kwasy organiczne (karboksylowe) — ogólnie
+Kwasy karboksylowe to związki organiczne zawierające grupę karboksylową –COOH.
+Wzór ogólny: R–COOH, gdzie R = grupa węglowodorowa (lub wodór).
+Wszystkie są słabymi kwasami (dysocjują częściowo). Proton kwasowy pochodzi z grupy –COOH.
+ | | Wzór | Nazwa zwyczajowa | Nazwa systematyczna | Gdzie spotykasz
+ | HCOOH | kwas mrówkowy | kwas metanowy | jad mrówek, pokrzywy
+ | CH₃COOH | kwas octowy | kwas etanowy | ocet 5–10%
+ | C₂H₅COOH | kwas propionowy | kwas propanowy | konserwant E280
+ | C₃H₇COOH | kwas masłowy | kwas butanowy | jełczenie masła
+ | C₆H₅COOH | kwas benzoesowy | — | konserwant E210
+ | HOOC–COOH | kwas szczawiowy | kwas etanodiowy | szczaw, rabarbar
+ | C₆H₈O₇ | kwas cytrynowy | — | cytryny, E330
+ | C₃H₆O₃ | kwas mlekowy | — | jogurt, kiszona kapusta
+Kwas octowy CH₃COOH
+Dysocjacja:
+CH₃COOH ⇌ H⁺ + CH₃COO⁻
+Uwaga: 3 atomy H w grupie CH₃ nie są protonami kwasowymi — tylko H z grupy –COOH. Dlatego CH₃COOH jest kwasem jednoprotonowym, mimo że ma 4 atomy H.
+13 Historia pojęcia kwasu CIEKAWOSTKA
+1887 — Svante Arrhenius (szwedzki chemik)
+Teoria dysocjacji elektrolitycznej: kwas to substancja, która w wodzie daje jony H⁺; zasada — substancja, która w wodzie daje jony OH⁻.
+Nagroda Nobla w 1903 r.
+Ograniczenie: nie wyjaśnia, dlaczego NH₃ (bez OH⁻ w cząsteczce) daje odczyn zasadowy.
+1923 — Johannes Brønsted (duński) i Thomas Lowry (angielski)
+Niezależnie zaproponowali teorię protonową:
+Kwas = donor protonu H⁺
+Zasada = akceptor protonu H⁺
+Przykład: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻. NH₃ przyjmuje proton od H₂O → NH₃ jest zasadą, a H₂O kwasem.
+Pary sprzężone: HCl/Cl⁻, H₂O/H₃O⁺, NH₄⁺/NH₃.
+1923 — Gilbert Lewis (amerykański)
+Teoria elektronowa:
+Kwas = akceptor pary elektronowej
+Zasada = donor pary elektronowej
+Najszersza teoria — obejmuje reakcje bez protonu (np. BF₃ + NH₃ → F₃B←NH₃).
+Używana głównie w chemii koordynacyjnej i organicznej.
+XX wiek — rozwój
+Teoria Pearsona (HSAB — twarde/miękkie kwasy i zasady), teoria Usanovicha (najszersza), rozwój chemii supramolekularnej.
+Na poziomie E8 wystarczy znać Arrheniusa i (ambitnie) Brønsteda.
+14 Titracja (miareczkowanie) ROZSZERZENIE
+Co to jest titracja?
+Titracja (miareczkowanie) to metoda analizy ilościowej polegająca na stopniowym dodawaniu titranta (roztworu o znanym stężeniu) do analitu (roztworu badanego) aż do osiągnięcia punktu równoważnikowego.
+Kluczowe pojęcia
+Titrant — roztwór o znanym stężeniu (np. NaOH 0,1 M).
+Analit — roztwór badany (np. HCl o nieznanym stężeniu).
+Wskaźnik — substancja sygnalizująca zmianę pH (np. fenoloftaleina).
+Punkt równoważnikowy — moment, w którym liczba moli titranta = liczba moli analitu (stechiometrycznie).
+Punkt końcowy — moment, w którym wskaźnik zmienia barwę (obserwowany).
+Punkt równoważnikowy wynika ze stechiometrii; punkt końcowy — z obserwacji wskaźnika. Nie zawsze pokrywają się dokładnie (błąd miareczkowania).
+Obliczenia w titracji
+Dla reakcji HCl + NaOH → NaCl + H₂O stosunek molowy 1:1:
+n(HCl) = n(NaOH)
+c(HCl) × V(HCl) = c(NaOH) × V(NaOH)
+Przykład: Na zmiareczkowanie 25 cm³ HCl zużyto 20 cm³ NaOH o stężeniu 0,1 M. Oblicz stężenie HCl.
+Rozwiązanie
+c(HCl) × 25 cm³ = 0,1 M × 20 cm³
+c(HCl) = (0,1 × 20) / 25 = 0,08 M
+### Krzywa miareczkowania — model (25 cm³ analitu, 0,1 M)
+Przesuń suwak lub naciśnij ▶ — punkt biegnie po krzywej, a kolba zmienia barwę wskaźnika.
+Typ: 
+mocny kwas + mocna zasada (HCl + NaOH)
+słaby kwas + mocna zasada (CH₃COOH + NaOH)
+słaba zasada + mocny kwas (NH₃ + HCl)
+▶ Dodawaj titrant
+V titranta0,0 cm³
+pH—
+Wskaźnik—
+15 Bufory — jakościowy model ROZSZERZENIE
+Definicja
+Bufor to układ (mieszanina), który ogranicza zmianę pH po dodaniu do niego niewielkiej ilości kwasu lub zasady, lub po rozcieńczeniu.
+Skład buforu
+Mieszanina słabego kwasu i jego soli z mocną zasadą — np. CH₃COOH + CH₃COONa.
+Lub mieszanina słabej zasady i jej soli z mocnym kwasem — np. NH₃ + NH₄Cl.
+Jak działa bufor?
+Bufor octanowy (CH₃COOH + CH₃COO⁻):
+Dodajesz H⁺ → reaguje z CH₃COO⁻ → powstaje CH₃COOH (pH prawie nie zmienia się).
+Dodajesz OH⁻ → reaguje z CH₃COOH → powstaje CH₃COO⁻ (pH prawie nie zmienia się).
+Pojemność buforowa — ograniczona. Po dodaniu zbyt dużej ilości kwasu/zasady bufor przestaje działać.
+Wzór Hendersona–Hasselbalcha (rozszerzenie)
+pH = pKa + log([A⁻]/[HA])
+gdzie pKa = −log Ka (stała dysocjacji słabego kwasu), [A⁻] — stężenie sprzężonej zasady, [HA] — stężenie kwasu.
+Optymalny zakres buforowania: pH ≈ pKa ± 1.
+Przykłady biologiczne
+Krew: bufor węglanowy H₂CO₃/HCO₃⁻ — utrzymuje pH ~7,4.
+Żołądek: HCl — pH ~2 (trawienie pokarmu, ochrona przed bakteriami).
+Ślina: bufor fosforanowy H₂PO₄⁻/HPO₄²⁻ — pH ~6,8.
+### Bufor — jakościowy model działania
+Dodawaj H⁺ lub OH⁻. Pasek to pojemność buforowa — gdy się wyczerpie, bufor przestaje działać.
+Dodaj H⁺
+Dodaj OH⁻
+Reset
+pH modelowe
+Pojemność względna
+Stan
+16 Doświadczenia modelowe
+BHP — zasady pracy
+Doświadczenia z kwasami wykonuj tylko pod nadzorem nauczyciela i w wyznaczonym do tego miejscu. Nigdy nie eksperymentuj samodzielnie z kwasami stężonymi.
+Doświadczenie 1 — Odczyn kwasu chlorowodorowego
+ProblemJaki odczyn ma roztwór HCl?
+HipotezaKwasowy — papierek uniwersalny czerwony, oranż metylowy czerwony.
+SprzętHCl (rozcieńczony), papierek uniwersalny, oranż metylowy, probówka.
+PrzebiegZanurzamy papierek uniwersalny w roztworze HCl; dodajemy kroplę oranżu metylowego do probówki z HCl.
+ObserwacjaPapierek uniwersalny czerwony; oranż metylowy czerwony; fenoloftaleina bezbarwna.
+WniosekRoztwór HCl ma odczyn kwasowy (pH < 7).
+RównanieHCl → H⁺ + Cl⁻
+BHPHCl żrący — okulary, rękawice; nie pipetować ustami.
+Doświadczenie 2 — Kwas + metal (Zn + HCl)
+ProblemCzy cynk reaguje z kwasem solnym?
+HipotezaWydzieli się wodór.
+SprzętZn (granulki), HCl (rozcieńczony), probówka, zapałka.
+PrzebiegDo probówki z HCl wrzucamy granulkę Zn. Po chwili zbliżamy zapaloną zapałkę do wylotu probówki.
+ObserwacjaPęcherzyki gazu; po zbliżeniu zapałki — charakterystyczny „szczek” (spalanie wodoru).
+WniosekCynk reaguje z HCl, wydzielając wodór.
+RównanieZn + 2 HCl → ZnCl₂ + H₂↑
+BHPOkulary; wodór łatwopalny — nie zbliżać ognia przed sprawdzeniem obecności wodoru.
+Doświadczenie 3 — Kwas + węglan (otrzymywanie CO₂)
+ProblemJak otrzymać CO₂ z węglanu?
+HipotezaPowstanie CO₂ (gaz).
+SprzętCaCO₃ (kreda), HCl, probówka, rurka, woda wapienna.
+PrzebiegDo probówki z CaCO₃ dodajemy HCl; gaz przepuszczamy przez rurkę do wody wapiennej.
+ObserwacjaPęcherzyki gazu; woda wapienna mętnieje.
+WniosekCaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑; CO₂ mętni wodę wapienną.
+RównanieCaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑
+BHPOkulary; nie wciągać wody wapiennej do ust.
+Doświadczenie 4 — Kwas + wodorotlenek (zobojętnianie)
+ProblemCo się dzieje, gdy do zasady dodajemy kwas?
+HipotezaPowstaje sól i woda; odczyn zmienia się.
+SprzętNaOH, HCl, fenoloftaleina, probówka.
+PrzebiegDo probówki z NaOH dodajemy kroplę fenoloftaleiny (róż/malinowy), następnie kroplami HCl, mieszając.
+ObserwacjaMalinowa barwa fenoloftaleiny zanika w miarę dodawania HCl.
+WniosekNaOH + HCl → NaCl + H₂O.
+RównanieNaOH + HCl → NaCl + H₂O
+BHPOkulary, rękawice — NaOH i HCl żrące.
+Doświadczenie 5 — Kwas + tlenek metalu
+ProblemCzy CuO reaguje z H₂SO₄?
+HipotezaPowstanie niebieski roztwór CuSO₄.
+SprzętCuO (czarny proszek), H₂SO₄ (rozcieńczony), probówka.
+PrzebiegDo probówki z rozcieńczonym H₂SO₄ dodajemy szczyptę CuO; mieszamy; lekko podgrzewamy.
+ObserwacjaCzarny CuO znika; powstaje niebieski roztwór.
+WniosekCuO reaguje z kwasem; powstaje Cu²⁺ (niebieski kolor).
+RównanieCuO + H₂SO₄ → CuSO₄ + H₂O
+BHPOkulary; H₂SO₄ żrący.
+Obserwacja ≠ wniosek
+ | | Obserwacja (zmysły) | Wniosek (interpretacja)
+ | Pojawiają się pęcherzyki | Wydziela się gaz (jakiego? — trzeba potwierdzić doświadczeniem)
+ | Roztwór zmętniał | Powstał osad (jaki? — np. CaCO₃)
+ | Roztwór zmienił barwę na niebieską | Powstał jon Cu²⁺
+ | Naczynie się ogrzewa | Reakcja egzotermiczna
+Nie pisz w obserwacji: „wydziela się H₂” — dopóki nie zidentyfikujesz gazu (np. przez „szczek” spalania).
+17 Klinika błędów
+ | | Błąd | Poprawnie | Dlaczego?
+ | H₂Cl
+ | HCl
+ | W–K–S–K: H(I), Cl(I) → stosunek 1:1 → HCl.
+ | HSO₄
+ | H₂SO₄
+ | Reszta SO₄²⁻ ma ładunek −2, więc potrzebujemy 2 atomów H.
+ | „wszystkie kwasy są mocne”
+ | Mocne: HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄. Słabe: HF, H₂CO₃, CH₃COOH, H₃PO₄.
+ | Moc zależy od stopnia dysocjacji α. Nie każdy kwas dysocjuje całkowicie.
+ | Cu + HCl → CuCl₂ + H₂↑
+ | Reakcja nie zachodzi (Cu za H w szeregu aktywności).
+ | Miedź nie wypiera wodoru z rozcieńczonego HCl. Szereg: K > Ca > Na > Mg > Al > Zn > Fe > Sn > Pb > H > Cu > Ag > Au.
+ | NaOH + HCl → NaCl
+ | NaOH + HCl → NaCl + H₂O
+ | Zobojętnianie daje sól i wodę. Woda jest produktem i nie może być pominięta.
+ | „fenoloftaleina w kwasie jest czerwona”
+ | Fenoloftaleina w kwasie jest bezbarwna.
+ | Fenoloftaleina zmienia barwę dopiero przy pH > 8,2 (malinowa w zasadzie). W kwasie pozostaje bezbarwna.
+ | „pH 7 to kwas”
+ | pH 7 = odczyn obojętny.
+ | pH < 7 kwasowy, pH = 7 obojętny, pH > 7 zasadowy.
+ | „wodę wlewamy do stężonego kwasu”
+ | Kwas wlewamy do wody.
+ | Rozcieńczanie kwasu wydziela dużo ciepła; woda do kwasu może gwałtownie się zagotować i rozpryskać kwas (niebezpieczeństwo oparzeń).
+ | „kwas chlorowodorowy = HClO”
+ | HCl = kwas chlorowodorowy; HClO = kwas chlorowy(I).
+ | Różne kwasy, różne wzory. HCl beztlenowy, HClO tlenowy.
+ | „moc = stężenie”
+ | Moc to stopień dysocjacji, stężenie to ilość moli w objętości.
+ | Rozcieńczony HCl (mocny kwas) ma mniejsze stężenie niż stężony CH₃COOH (słaby kwas). To różne parametry.
+ | „H⁺ w wodzie istnieje samodzielnie”
+ | H⁺ + H₂O → H₃O⁺ (jon hydroniowy).
+ | Proton H⁺ nie istnieje samodzielnie w wodzie; łączy się z H₂O, tworząc H₃O⁺.
+ | „H₂SO₄ ma 2 protony, więc w II stopniu też mocny”
+ | H₂SO₄ jest mocny tylko w I stopniu. HSO₄⁻ ⇌ H⁺ + SO₄²⁻ — słaby.
+ | I stopień praktycznie całkowity (H₂SO₄ → H⁺ + HSO₄⁻), II stopień słaby (HSO₄⁻ to słaby kwas).
+ | „HCl(g) i HCl(aq) to to samo”
+ | HCl(g) to gaz chlorowodór; HCl(aq) to roztwór kwasu chlorowodorowego.
+ | Gaz nie przewodzi prądu (brak jonów); roztwór wodny dysocjuje na jony, przewodzi prąd i ma odczyn kwasowy.
+Zadanie kliniczne 1
+Uczeń twierdzi: „0,1 M HF jest słabszy od 0,001 M HCl, więc ma mniej kwaśny charakter”. Wskaż dwa różne parametry i wyjaśnij, dlaczego samo porównanie stężeń nie rozstrzyga o mocy kwasu.
+Pokaż odpowiedź
+Parametry: moc kwasu (stopień dysocjacji α) i stężenie (mol/dm³).
+Wyjaśnienie: 0,1 M HF jest roztworem o wyższym stężeniu, ale HF jest słabym kwasem (α ≈ 0,1), więc tylko część cząsteczek dysocjuje — daje mało H₃O⁺. 0,001 M HCl jest kwasem mocnym (α ≈ 1), więc wszystkie cząsteczki dysocjują — daje dużo H₃O⁺ mimo niższego stężenia. Porównując pH tych dwóch roztworów, okazuje się, że HCl (mocny, rozcieńczony) może mieć niższe pH niż HF (słaby, stężony).
+Zadanie kliniczne 2
+Popraw równanie: Cu + HCl → CuCl₂ + H₂↑. Wyjaśnij, dlaczego reakcja nie zachodzi.
+Pokaż odpowiedź
+Poprawnie: Reakcja nie zachodzi.
+Dlaczego: Miedź jest w szeregu aktywności za wodorem: K > Ca > Na > Mg > Al > Zn > Fe > Sn > Pb > H > Cu > Ag > Au. Metale za wodorem nie wypierają wodoru z rozcieńczonych kwasów nieutleniających. Reakcja Cu + HCl nie jest możliwa. (Uwaga: HNO₃ reaguje z Cu jako kwas utleniający, ale nie wydziela H₂.)
+18 Ćwiczenia
+### Poziom A — podstawa
+Wzory: kwas chlorowodorowy, kwas siarkowy(VI), kwas azotowy(V), kwas węglowy.
+Nazwy: HCl, H₂SO₃, HNO₂, H₃PO₄.
+Zapisz dysocjację: HCl, HNO₃, H₂SO₄.
+Podaj resztę kwasową: HCl, H₂SO₄, HNO₃, H₃PO₄.
+Co powstaje z: HCl + NaOH? H₂SO₄ + KOH?
+Jakie pH ma kwas? Zasada? Woda?
+Pokaż odpowiedzi
+HCl, H₂SO₄, HNO₃, H₂CO₃.
+kwas chlorowodorowy, kwas siarkowy(IV), kwas azotowy(III), kwas fosforowy(V).
+HCl → H⁺ + Cl⁻; HNO₃ → H⁺ + NO₃⁻; H₂SO₄ → 2H⁺ + SO₄²⁻.
+Cl⁻, SO₄²⁻, NO₃⁻, PO₄³⁻.
+NaCl + H₂O; K₂SO₄ + 2H₂O.
+Kwas: < 7; zasada: > 7; woda: 7.
+### Poziom B — trening
+Zapisz reakcje: HCl + Mg; H₂SO₄ + CaO; HNO₃ + NaOH; HCl + CaCO₃.
+Popraw: H₂Cl; HSO₄; „wszystkie kwasy mocne".
+Dlaczego Cu nie reaguje z rozcieńczonym HCl?
+Które kwasy są mocne, a które słabe: HF, HNO₃, CH₃COOH, H₂SO₄?
+Uzupełnij: Zn + 2HCl → ? ; CaO + 2HNO₃ → ?
+Pokaż odpowiedzi
+Mg + 2HCl → MgCl₂ + H₂↑; CaO + H₂SO₄ → CaSO₄ + H₂O; HNO₃ + NaOH → NaNO₃ + H₂O; CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑.
+HCl; H₂SO₄; kwasy mają różną moc.
+Cu jest poniżej H w szeregu aktywności.
+Mocne: HNO₃, H₂SO₄. Słabe: HF, CH₃COOH.
+ZnCl₂ + H₂↑; Ca(NO₃)₂ + H₂O.
+### Poziom C — ambitny
+Zapisz dwustopniową dysocjację H₂SO₄.
+Wyjaśnij, dlaczego H⁺ w wodzie tworzy H₃O⁺.
+Dlaczego H₃PO₄ jest słaby, mimo że ma 3 atomy wodoru?
+Zaprojektuj doświadczenie: odczyn roztworu HCl (format DOŚWIADCZENIE).
+Wyjaśnij, dlaczego reakcja HCl + CaCO₃ daje CO₂.
+Pokaż odpowiedzi
+H₂SO₄ → H⁺ + HSO₄⁻; HSO₄⁻ ⇌ H⁺ + SO₄²⁻.
+H⁺ jest protonem; w wodzie łączy się z H₂O → H₃O⁺.
+Stopień dysocjacji H₃PO₄ jest niski — dysocjuje częściowo na każdym etapie.
+Problem → Hipoteza → Sprzęt → Obserwacja → Wniosek → Równanie → BHP.
+H₂CO₃ jest nietrwały → rozkłada się na H₂O + CO₂.
+### Poziom D — zaawansowany
+Oblicz pH roztworu o [H⁺] = 10⁻³ mol/dm³.
+Oblicz [H⁺] w roztworze o pH = 2.
+Wyjaśnij różnicę między stopniem dysocjacji a stałą dysocjacji.
+Porównaj moc kwasów: HCl, HF, CH₃COOH. Uzasadnij różnice.
+Zaprojektuj doświadczenie: odróżnienie HCl od CH₃COOH.
+Pokaż odpowiedzi
+pH = −log(10⁻³) = 3.
+[H⁺] = 10⁻² = 0,01 mol/dm³.
+Stopień dysocjacji α — ułamek cząsteczek zdysocjowanych; stała dysocjacji Ka — stała równowagi (nie zależy od stężenia).
+HCl mocny (α ≈ 1); HF słaby (α ≈ 0,1); CH₃COOH słaby (α ≈ 0,01). Różnice wynikają z energii wiązania H–X i stabilności anionu.
+Dodać kroplę fenoloftaleiny — bezbarwna w obu; dodać wskaźnik uniwersalny — oba kwaśne; zbadać pH-metrem — różne wartości; porównać przewodnictwo przy tym samym stężeniu — różne (HCl wyższe).
+Interleaving — mieszanie tematów
+Jaki charakter ma SO₃? (z N01)
+Zapisz wzór wodorotlenku wapnia. (z N02)
+Zapisz wzór kwasu siarkowego(VI). (z N03)
+Zbilansuj: Al + O₂ → Al₂O₃. (z F05/F06 + N01)
+Ca(OH)₂ + 2HCl → ? (z N02 + N03)
+Ile elektronów ma jon Cl⁻? (z F05/F06)
+SO₂ + H₂O → ? (z N01 + N03)
+Fe(OH)₃ + 3HNO₃ → ? (z N02 + N03)
+19 Fiszki
+20 Test końcowy
+Ćwiczenie — współczynniki
+Uzupełnij i sprawdź w odpowiedzi poniżej.
+___ HCl + ___ Ca(OH)₂ → ___ CaCl₂ + ___ H₂O
+___ H₂SO₄ + ___ NaOH → ___ Na₂SO₄ + ___ H₂O
+___ Al(OH)₃ + ___ HCl → ___ AlCl₃ + ___ H₂O
+Pokaż współczynniki
+2 HCl + 1 Ca(OH)₂ → 1 CaCl₂ + 2 H₂O
+1 H₂SO₄ + 2 NaOH → 1 Na₂SO₄ + 2 H₂O
+1 Al(OH)₃ + 3 HCl → 1 AlCl₃ + 3 H₂O
+Liczba grup OH⁻ z wodorotlenku = liczba atomów H z kwasu.
+21 Checklista
+### Sprawdź, czy umiesz:
+Zdefiniować kwas (Arrhenius, Brønsted).
+Zapisać wzór kwasu beztlenowego i tlenowego.
+Nazwać kwas (beztlenowy, tlenowy z cyfrą rzymską).
+Odczytać resztę kwasową z kwasu.
+Zapisać równanie dysocjacji kwasu.
+Rozróżnić kwasy mocne od słabych (tabela).
+Wyjaśnić, dlaczego moc ≠ stężenie.
+Obliczyć pH z [H₃O⁺] i odwrotnie.
+Zastosować wskaźniki (fenoloftaleina, oranż, papierek).
+Zapisać reakcje kwasów: metal, tlenek, wodorotlenek, sól.
+Znać szereg aktywności metali i wiedzieć, dlaczego Cu nie reaguje z HCl.
+Opisać powstawanie kwaśnych deszczy (SO₂, NO₂ → kwasy).
+Stosować BHP (kwas do wody, okulary, nie pipetować ustami).
+(ambitnie) Znać kwasy organiczne (HCOOH, CH₃COOH).
+(ambitnie) Wyjaśnić titrację — punkt równoważnikowy ≠ punkt końcowy.
+(ambitnie) Wyjaśnić działanie buforu.
+(zaawansowanie) Znać historię: Arrhenius, Brønsted, Lewis.
+22 Mnemoniki – mapa myśli
+Mapa myśli w pigułceKwas = H⁺ + reszta kwasowa (HₙR → n H⁺ + Rⁿ⁻); w wodzie H₃O⁺.
+MTWS – co robi kwas: Metal → sól + H₂ (tylko przed H) · Tlenek metalu → sól + H₂O · Wodorotlenek → sól + H₂O · Sól (węglan) → sól + H₂O + CO₂↑.
+Zawsze powstaje sól; dodatek: H₂ / H₂O / CO₂.
+Moc = α (nie stężenie). Mocne: HCl, HBr, HI, HNO₃, H₂SO₄ (I st.), HClO₄.
+pH < 7 kwas · = 7 obojętny · > 7 zasada; pH = −log[H₃O⁺].
+TNS – otrzymywanie: Tlenek + woda · Niemetal + wodór · Sól + mocniejszy kwas.
+BHP: kwas do wody, okulary, nie pipetować ustami.
+Szereg aktywności: K > Ca > Na > Mg > Al > Zn > Fe > Sn > Pb > H > Cu > Ag > Au (z kwasem reagują metale przed H).
+23 Słownik
+KwasZwiązek chemiczny, który w wodzie oddaje proton H⁺ (def. Brønsteda) lub dysocjuje na H⁺ i resztę kwasową (def. Arrheniusa).
+Reszta kwasowaAnion powstający po formalnym oddzieleniu protonów z kwasu; ma ładunek ujemny równy liczbie atomów H.
+Dysocjacja elektrolitycznaRozpad związku chemicznego na jony w roztworze wodnym.
+JonizacjaPowstawanie jonów w wyniku reakcji cząsteczki z rozpuszczalnikiem (HCl + H₂O → H₃O⁺ + Cl⁻).
+Jon hydroniowy H₃O⁺Kation powstający z protonu H⁺ i cząsteczki wody; faktyczna forma H⁺ w wodzie.
+Stopień dysocjacji αUłamek cząsteczek, które uległy dysocjacji. α = 1 dla kwasów mocnych, α < 1 dla słabych.
+pHUjemny logarytm dziesiętny stężenia (aktywności) jonów hydroniowych H₃O⁺: pH = −log[H₃O⁺].
+Wskaźnik kwasowo-zasadowySubstancja zmieniająca barwę w zależności od pH roztworu (fenoloftaleina, oranż metylowy).
+ZobojętnianieReakcja kwasu z zasadą → sól + woda. Jonowo: H⁺ + OH⁻ → H₂O.
+Szereg aktywności metaliUporządkowanie metali wg aktywności chemicznej: K > Ca > Na > Mg > Al > Zn > Fe > Sn > Pb > H > Cu > Ag > Au.
+Kwas mocnyKwas, który w wodzie dysocjuje praktycznie całkowicie (α ≈ 1): HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄.
+Kwas słabyKwas, który w wodzie dysocjuje tylko częściowo (α < 1): HF, H₂CO₃, H₂S, H₂SO₃, HNO₂, H₃PO₄, CH₃COOH.
+Kwas organicznyKwas zawierający grupę karboksylową –COOH (R–COOH); np. HCOOH, CH₃COOH.
+Titracja (miareczkowanie)Metoda analizy ilościowej — stopniowe dodawanie titranta do analitu do osiągnięcia punktu równoważnikowego.
+BuforUkład (mieszanina słabego kwasu i jego soli lub słabej zasady i jej soli) ograniczający zmianę pH.
+Kwaśne deszczeOpady o pH < 5,6, powstające z SO₂ i NO₂ w atmosferze.
+Punkt równoważnikowyMoment, w którym liczba moli titranta = liczba moli analitu (stechiometrycznie).
+Punkt końcowyMoment, w którym wskaźnik zmienia barwę; obserwowany, może różnić się od równoważnikowego.
+24 Mosty do innych lekcji
+Powiązania
+N01 — Tlenki: tlenki kwasowe (SO₂, SO₃, CO₂, P₂O₅, N₂O₅) + woda → kwasy.
+N02 — Wodorotlenki: kwas + wodorotlenek → sól + woda (zobojętnianie).
+L005 — Sole: każda reakcja kwasu z wodorotlenkiem lub tlenkiem metalu daje sól.
+L010 — Redoks: HCl + Zn → ZnCl₂ + H₂ to reakcja redoks (Zn utlenia się, H⁺ redukuje się).
+L013 — Liceum rozszerzone: Ka, pKa, pH, pOH, hydroliza soli, bufory (Henderson–Hasselbalch).
+✓ Audyt jakości
+### Audyt merytoryczny i funkcjonalny v1.2
+Usunięcie duplikatów: wersja v1.2 usuwa duplikację treści L004 (legacy-migration) i scalają ją z sekcjami N03. Jedna wersja dla każdego tematu.
+Struktura: sekcje uporządkowane zgodnie z docelowym porządkiem (0–24 + audyt).
+P1 (krytyczne E8) — dodane: szereg aktywności metali, otrzymywanie kwasów beztlenowych, reakcje z solami, przykłady pH, tabela wskaźników, zasady BHP, tabela mocy kwasów.
+P2 (rozumienie) — dodane: HCl(g) vs HCl(aq), kwas + metal (warunek), kwaśne deszcze (chemizm), kwasy organiczne (tabela), zastosowania (konkretne).
+P3 (rozszerzenie) — dodane: historia (Arrhenius, Brønsted, Lewis), titracja (punkt równoważnikowy vs końcowy), bufory (Henderson–Hasselbalch).
+Widgety: reszta-converter, ionization-anim, phWskazniki (interaktywna skala), ind-lab, acid-reactor, titration-curve, buffer-widget.
+Spójność: ten sam layout co N01/N02, te same klasy (card-basic, card-understand, card-warning, card-error, card-extra, card-exam, card-new, card-core).
+Nawigacja: TOC (details/summary), FAB (lewy/prawy), bottom-nav, resume, anchor-links.
+Dostępność: skip-link, aria-label, focus-visible, prefers-reduced-motion, print CSS.
+Mosty: linki do Konstruktora, N01, N02, N04. Bridge sekcja w treści.
+Zachowana cała treść merytoryczna N03 v1.1 + dodane wszystkie P1/P2/P3 + usunięte duplikaty.
+Numer: N03 (kwasy). Poprzednia: N02 Wodorotlenki i zasady. Następna: N04 Sole.
+CHEMIA N03 v1.2 MASTER LAB · Kwasy · 2026
+Ucz się świadomie, nie na pamięć.
+Minimum
+Nazwy
+Reszty
+Dysocjacja
+Moc
+pH
+Reakcje
+Deszcze
+BHP
+Fiszki
+Test
+▲ Nawigacja N03

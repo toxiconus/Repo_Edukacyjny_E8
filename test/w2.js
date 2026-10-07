@@ -1,0 +1,11 @@
+const {chromium}=require('playwright');
+(async()=>{const [file,theme]=process.argv.slice(2);const b=await chromium.launch();const p=await b.newPage({viewport:{width:1200,height:900},colorScheme:theme||'light'});await p.addInitScript(()=>{delete window.IntersectionObserver});const errs=[];p.on('pageerror',e=>errs.push(e.message));
+await p.goto('file://'+file);await p.waitForTimeout(2500);
+await p.evaluate(()=>{const box=document.createElement('div');box.id='WB';box.style.cssText='position:absolute;left:0;top:0;width:1180px;z-index:999999;background:var(--bg,#fff);padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:10px';document.body.appendChild(box);
+ window.W={};[['w-acid','acidReactor'],['w-titr','titration'],['w-burn','burnRun'],['w-co2','co2']].forEach(([id,n])=>{let w=document.getElementById(id)||[...document.querySelectorAll('.widget')].find(x=>x.querySelector({acidReactor:'.rx-beaker',titration:'.titr-canvas',burnRun:'.burn-fuel',co2:'.tube'}[n]));const sc=w.closest('.che-wiz-scope')||w;const cl=document.createElement('div');cl.className=(sc.className||'')+' che-wiz-scope';cl.appendChild(w);box.appendChild(cl);W[n]=CHE.mount(n,w)});
+ const q=s=>document.querySelector('#WB '+s);q('[data-r="carbonate"]').click();q('[data-act="blow"]').click();q('.burn-o2').value=40;q('[data-act="burn"]').click();const sl=q('.titr-vol');sl.value=26;sl.dispatchEvent(new Event('input'));
+ ['four-reactions','reactor'].forEach(v=>{const h=document.createElement('div');h.dataset.che=v;box.appendChild(h);CHE.VIEW.mount(h)});
+ setTimeout(()=>{[...document.querySelectorAll('#WB [data-che] button')].forEach(b=>{if(/wykonaj|Zn \+ HCl|CaCO/.test(b.textContent))b.click()})},300)});
+await p.waitForTimeout(3200);await p.screenshot({path:'v4/w2_'+(theme||'light')+'.png',fullPage:true});
+console.log(await p.evaluate(()=>document.querySelector('#WB .sim-status')?[...document.querySelectorAll('#WB .sim-status')].map(x=>x.textContent).join(' || '):'-'));
+console.log('ERR',errs.length,errs.slice(0,6).join('\n'));await b.close()})();

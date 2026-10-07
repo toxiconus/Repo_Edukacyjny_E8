@@ -1,0 +1,13 @@
+
+D.SUBSTANCES = S;
+D.ACID_SYSTEMS = {
+  HCl:{id:'HCl',formula:'HCl',species:['HCl','Cl⁻'],pKa:[-7],Ka:[null],strong:true,anion:'Cl⁻'},
+  HNO3:{id:'HNO3',formula:'HNO₃',species:['HNO₃','NO₃⁻'],pKa:[-1.4],Ka:[null],strong:true,anion:'NO₃⁻'},
+  H2SO4:{id:'H2SO4',formula:'H₂SO₄',species:['H₂SO₄','HSO₄⁻','SO₄²⁻'],pKa:[-3,1.99],Ka:[null,1.02e-2],strong:false,strongFirst:true,anion:'HSO₄⁻'},
+  H3PO4:{id:'H3PO4',formula:'H₃PO₄',species:['H₃PO₄','H₂PO₄⁻','HPO₄²⁻','PO₄³⁻'],pKa:[2.17,7.20,12.35],Ka:[7.1e-3,6.3e-8,4.5e-13],strong:false,anion:'H₂PO₄⁻'},
+  HF:{id:'HF',formula:'HF',species:['HF','F⁻'],pKa:[3.17],Ka:[6.8e-4],strong:false,anion:'F⁻'},
+  HCOOH:{id:'HCOOH',formula:'HCOOH',species:['HCOOH','HCOO⁻'],pKa:[3.75],Ka:[1.78e-4],strong:false,anion:'HCOO⁻'},
+  CH3COOH:{id:'CH3COOH',formula:'CH₃COOH',species:['CH₃COOH','CH₃COO⁻'],pKa:[4.76],Ka:[1.8e-5],strong:false,anion:'CH₃COO⁻'},
+  H2CO3:{id:'H2CO3',formula:'H₂CO₃',species:['H₂CO₃','HCO₃⁻','CO₃²⁻'],pKa:[6.37,10.32],Ka:[4.27e-7,4.8e-11],strong:false,anion:'HCO₃⁻'},
+  HCN:{id:'HCN',formula:'HCN',species:['HCN','CN⁻'],pKa:[9.21],Ka:[6.2e-10],strong:false,anion:'CN⁻'}
+};

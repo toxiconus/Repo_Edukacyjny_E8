@@ -1,0 +1,26 @@
+/* Atlas — warstwa wizualna (nagłówek pierwiastka, katalog reakcji) */
+#hud{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+#hud>b{font:800 30px/1 var(--sans);color:var(--ui);min-width:44px;text-align:center}
+#hud .hx-n{display:flex;flex-direction:column;line-height:1.15;min-width:130px}
+#hud .hx-n strong{font:700 22px/1.15 var(--sans);color:var(--tx)}
+#hud .hx-n small{font:500 12px var(--sans);color:var(--mut);margin-top:2px}
+#hud .hx-c{display:flex;flex-wrap:wrap;gap:6px}
+#hud .hx-k{display:flex;flex-direction:column;padding:4px 10px;border:1px solid var(--line-2);border-radius:10px;background:var(--panel-2);font:600 13px/1.25 var(--sans);color:var(--tx)}
+#hud .hx-k small{font:700 9.5px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
+#hud .ldt{box-shadow:inset 0 -4px 0 var(--fam,#94a3b8)}
+#hud[data-fam="Litowce"]{--fam:#e0524f}#hud[data-fam="Berylowce"]{--fam:#f59e0b}#hud[data-fam^="Metale"]{--fam:#3b82f6}#hud[data-fam="Transaktynowce"]{--fam:#64748b}
+#hud[data-fam="Lantanowce"]{--fam:#ec4899}#hud[data-fam="Aktynowce"]{--fam:#22c55e}#hud[data-fam="Borowce"],#hud[data-fam="Węglowce"]{--fam:#84cc16}
+#hud[data-fam="Azotowce"],#hud[data-fam="Tlenowce"]{--fam:#eab308}#hud[data-fam="Fluorowce"]{--fam:#14b8a6}#hud[data-fam="Helowce"]{--fam:#a855f7}
+.rxl-bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:4px 0 10px}
+.rxl-bar button{font:600 12px var(--sans);padding:5px 12px;border-radius:99px;border:1px solid var(--line-2);background:var(--panel-2);color:var(--tx);cursor:pointer}
+.rxl-bar button.on{background:var(--ui);border-color:var(--ui);color:#fff}
+.rxl-bar i,.rxl-t i{font-style:normal;opacity:.7;margin-left:3px}
+.rxl-bar input{flex:1;min-width:180px;padding:6px 10px;border-radius:10px;border:1px solid var(--line-2);background:var(--panel);color:var(--tx);font:13px var(--sans)}
+.rxl-n{font:600 12px var(--sans);color:var(--mut)}
+.rxl-box{max-height:360px;overflow:auto;padding-right:6px;margin-bottom:14px;border-bottom:1px solid var(--line-2)}
+.rxl-t{font:700 10.5px var(--sans);text-transform:uppercase;letter-spacing:.07em;color:var(--mut);margin:8px 0 5px}
+.rxl-g .rx-presets{margin-bottom:6px}
+.rxl-l{font:700 9.5px var(--sans);margin-left:6px;padding:1px 5px;border-radius:6px;background:var(--line-2);color:var(--mut);vertical-align:1px}
+.rx-presets button.on .rxl-l{background:rgba(255,255,255,.25);color:#fff}
+.rxl-s{font:800 10px var(--sans);color:var(--ui)}.rx-presets button.on .rxl-s{color:#fff}
+.tabpanes .card>h4:first-child{margin-top:6px}

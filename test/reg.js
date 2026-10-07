@@ -1,0 +1,4 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const out={};for(const f of process.argv.slice(2)){const p=await b.newPage();await p.route(/fonts\./,r=>r.abort());await p.goto('file:///home/claude/che/out/'+f);await p.waitForTimeout(2500);
+out[f]=await p.evaluate(()=>{const r={};Object.keys(CHE).filter(k=>/REGRESSION|AUDIT|SELFTEST/.test(k)).forEach(k=>{try{const x=CHE[k],fn=x&&(x.run||x.audit||x.check);if(typeof fn==='function'){const v=fn.call(x);r[k]=v&&v.ok!==undefined?(v.ok?'ok':'FAIL:'+((v.failed||v.issues||[]).map(q=>q.id||q).join(','))):'?'}}catch(e){r[k]='ERR'}});return r});await p.close()}
+const [a,c]=Object.values(out);Object.keys({...a,...c}).forEach(k=>{if(a[k]!==c[k])console.log('DIFF',k,'|',a[k],'=>',c[k])});console.log('checked',Object.keys(a).length);await b.close()})();

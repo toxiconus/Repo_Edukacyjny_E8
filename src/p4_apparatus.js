@@ -1,0 +1,75 @@
+/* ===================== v1.5: APARATURA I POMOCE (custom → własne rysowanie, stan ze st.*) ===================== */
+/* barwa wskaźnika: CHE.COLORS → zapas lokalny */
+const IND_FB={'ind-oranz-metylowy':p=>mc([220,38,38],[250,204,21],sm(p,3.1,4.4)),'ind-kapusta':p=>{const S=[[0,[220,38,38]],[4,[192,38,211]],[7,[109,91,208]],[9,[20,184,166]],[11,[34,197,94]],[14,[250,204,21]]];for(let i=1;i<S.length;i++)if(p<=S[i][0])return mc(S[i-1][1],S[i][1],(p-S[i-1][0])/(S[i][0]-S[i-1][0]));return S[S.length-1][1]},'ind-fenoloftaleina':p=>mc(WATER,[219,39,119],sm(p,8.2,10)),'ind-bbt':p=>mc([250,204,21],[37,99,235],sm(p,6,7.6))};
+const indCol=(id,p)=>{const a=colors.at(id,p);if(a)return a;const f=IND_FB[id]||PHF[id];return f?f(p):WATER.slice()};
+const indName=(id,p)=>{try{const s=C.COLORS&&C.COLORS.state&&C.COLORS.state(id,p);if(s)return s.label}catch(_){}return ''};
+/* statyw z łapą: st.clamps=[{x,y (ułamki płótna), w?, ring?}]; st.layer='front' → tylko szczęki (rysuj drugi raz nad naczyniem) */
+function stand(c,r,st,env){const T=env.th,X=f=>env.W?(env.X0||0)+f*env.W:r.x+f*r.w,Y=f=>env.H?f*env.H:r.y+f*r.h,rx=r.x+Math.min(14,r.w*.1),b=r.y+r.h,front=st.layer==='front',both=st.layer==='both',cl=st.clamps||[{x:.62,y:.3}];
+ if(!front||both){c.fillStyle=T.metalD;rr(c,r.x,b-10,Math.max(80,r.w*.8),10,3);c.fill();const g1=c.createLinearGradient(rx-3,0,rx+3,0);g1.addColorStop(0,T.metalL);g1.addColorStop(1,T.metalD);c.fillStyle=g1;c.fillRect(rx-3,r.y,6,b-10-r.y);c.fillStyle=T.metalD;c.beginPath();c.arc(rx,r.y,3,0,7);c.fill()}
+ cl.forEach(k=>{const y=Y(k.y),x=X(k.x),jw=(k.w>1?k.w:(k.w||.05)*(env.W||r.w))/2;if(!front||both){c.fillStyle=T.metal;c.fillRect(rx+6,y-2.5,Math.max(0,x-jw-rx-10),5);c.fillStyle=T.metalD;rr(c,rx-7,y-7,14,14,2);c.fill();c.fillStyle=T.metalL;c.beginPath();c.arc(rx-10,y,3,0,7);c.fill()}
+  if(k.ring){if(front){c.strokeStyle=T.metal;c.lineWidth=3.5;c.beginPath();c.ellipse(x,y,jw+5,4,0,0,Math.PI);c.stroke()}else{c.strokeStyle=T.metalD;c.lineWidth=3.5;c.beginPath();c.ellipse(x,y,jw+5,4,0,Math.PI,7);c.stroke()}return}
+  if(front||both){c.lineCap='round';c.strokeStyle=T.metalD;c.lineWidth=4;c.beginPath();c.moveTo(x-jw-10,y);c.lineTo(x-jw-3,y-8);c.moveTo(x-jw-10,y);c.lineTo(x-jw-3,y+8);c.moveTo(x+jw+3,y-8);c.quadraticCurveTo(x+jw+9,y,x+jw+3,y+8);c.stroke();c.fillStyle=T.wood;rr(c,x-jw-4,y-8,4,16,1);c.fill();rr(c,x+jw,y-8,4,16,1);c.fill();c.fillStyle=T.metalL;c.beginPath();c.arc(x+jw+11,y,3,0,7);c.fill()}})}
+vessel('stand',{custom:stand});
+/* trójnóg z siatką ceramiczną: st.heat → żarzenie siatki */
+function tripod(c,r,st,env){const T=env.th,cx=r.x+r.w/2,w=r.w,y0=r.y+5,b=r.y+r.h,k=cl01((st.heat||0)/3);c.lineCap='round';c.strokeStyle=T.metal;c.lineWidth=3;c.beginPath();c.moveTo(cx+w*.05,y0+4);c.lineTo(cx+w*.12,b);c.stroke();c.strokeStyle=T.metalD;c.lineWidth=4;c.beginPath();c.moveTo(cx-w*.36,y0+4);c.lineTo(cx-w*.46,b);c.moveTo(cx+w*.36,y0+4);c.lineTo(cx+w*.46,b);c.moveTo(cx-w*.4,y0+5);c.lineTo(cx+w*.4,y0+5);c.stroke();
+ c.fillStyle=T.metal;c.fillRect(cx-w*.48,r.y,w*.96,4);c.strokeStyle='rgba(0,0,0,.25)';c.lineWidth=.7;for(let x=cx-w*.47;x<cx+w*.47;x+=4){c.beginPath();c.moveTo(x,r.y);c.lineTo(x+3,r.y+4);c.stroke()}
+ c.fillStyle=T.dark?'#cbd5e1':'#e7e5e4';rr(c,cx-w*.2,r.y-1,w*.4,6,3);c.fill();if(k>0){const g1=c.createRadialGradient(cx,r.y+2,1,cx,r.y+2,w*.24);g1.addColorStop(0,'rgba(255,90,30,'+(.9*k)+')');g1.addColorStop(1,'rgba(255,90,30,0)');c.fillStyle=g1;c.fillRect(cx-w*.26,r.y-4,w*.52,12)}return{x:cx,y:r.y-2}}
+vessel('tripod',{custom:tripod});
+/* lampa spirytusowa: st.lamp={on,lv} → płomień (efekt flame, mieszanka bogata → żółty) */
+function spiritLamp(c,r,st,env){const T=env.th,L=st.lamp||{on:1,lv:.6},cx=r.x+r.w/2,b=r.y+r.h-3,bw=Math.min(r.w*.75,96),bh=Math.min(r.h*.42,64),ny=b-bh;
+ c.save();rr(c,cx-bw/2,ny,bw,bh,[bh*.5,bh*.5,8,8]);c.fillStyle=T.tint;c.fill();c.clip();c.fillStyle='rgba(196,214,236,.55)';c.fillRect(cx-bw/2,b-bh*cl01(L.lv==null?.6:L.lv),bw,bh);highlights({hl:.15},c,{x:cx-bw/2,y:ny,w:bw,h:bh},T);c.restore();
+ rr(c,cx-bw/2,ny,bw,bh,[bh*.5,bh*.5,8,8]);c.strokeStyle=T.glass;c.lineWidth=3;c.stroke();c.fillStyle=T.metal;rr(c,cx-11,ny-10,22,12,2);c.fill();c.fillStyle='#f5f5f4';c.fillRect(cx-3,ny-22,6,12);c.fillStyle='#292524';c.fillRect(cx-3,ny-24,6,3);
+ if(L.on){env.fx=Object.assign({},env.fx,{flame:{power:.42,phi:1.32,soot:0,temp:700,size:.6,flicker:1.4,glow:.8,fuel:'C2H5OH',diffusion:true,salt:L.salt||''}})}else{c.strokeStyle=T.glass;c.lineWidth=2.5;c.fillStyle=T.tint;rr(c,cx-14,ny-34,28,26,[12,12,2,2]);c.fill();c.stroke()}
+ return{x:cx,y:ny-22}}
+vessel('spiritLamp',{custom:spiritLamp});
+/* mieszadło magnetyczne z grzaniem: st.heat (0..3), st.stir (0..1) */
+function hotplate(c,r,st,env){const T=env.th,w=Math.min(r.w,230),x=r.x+(r.w-w)/2,h=Math.min(r.h*.8,46),y=r.y+r.h-h,k=cl01((st.heat||0)/3),s=cl01(st.stir||0);
+ c.fillStyle=T.dark?'#334155':'#e5e7eb';c.strokeStyle=T.glass;c.lineWidth=2;rr(c,x,y,w,h,8);c.fill();c.stroke();c.fillStyle=T.dark?'#cbd5e1':'#f8fafc';rr(c,x+8,y-7,w-16,9,3);c.fill();c.stroke();if(k>0){c.fillStyle='rgba(239,68,68,'+(.7*k)+')';rr(c,x+8,y-7,w-16,9,3);c.fill()}
+ [[.25,k,'grzanie'],[.75,s,'obroty']].forEach(([f,v,l])=>{const kx=x+w*f,ky=y+h*.5,a=-2.36+v*4.71;c.fillStyle=T.dark?'#1e293b':'#475569';c.beginPath();c.arc(kx,ky,9,0,7);c.fill();c.strokeStyle='#fff';c.lineWidth=2;c.beginPath();c.moveTo(kx,ky);c.lineTo(kx+Math.cos(a)*7,ky+Math.sin(a)*7);c.stroke();txt(c,l,kx+14,ky+4,T.mut,'left',9)});
+ c.fillStyle=k>0?'#ef4444':(T.dark?'#475569':'#cbd5e1');c.beginPath();c.arc(x+w*.5,y+h*.5,3.5,0,7);c.fill();return{x:x+w/2,y:y-7}}
+vessel('hotplate',{custom:hotplate});
+/* kroplomierz (pipeta Pasteura z gruszką): st.dropper={lv,color,drip}; krople: st.dropReq, st.landY, st.onDrop */
+function dropper(c,r,st,env){const T=env.th,d=st.dropper||{lv:.5,color:[219,39,119]},p=env.pool,cx=r.x+r.w/2,bR=Math.min(r.w*.22,14),t0=r.y+bR*2+6,tb=r.y+r.h-18,tip=r.y+r.h-2,w=9,col=d.color||[205,228,238];
+ if((st.dropReq||0)>(p.dq==null?st.dropReq||0:p.dq))p.sq=1;p.sq=Math.max(0,(p.sq||0)-(env.dt||.016)*3);const sq=p.sq;
+ c.fillStyle=T.dark?'#991b1b':'#dc2626';c.beginPath();c.ellipse(cx,r.y+bR+1,bR*(.78-.25*sq),bR,0,0,7);c.fill();c.fillRect(cx-w/2-2,r.y+bR*2-2,w+4,8);
+ const lv=cl01(d.lv==null?.5:d.lv),ly=tb-(tb-t0)*lv;c.fillStyle=rgba(col,.8);c.beginPath();c.moveTo(cx-w/2+1.5,ly);c.lineTo(cx+w/2-1.5,ly);c.lineTo(cx+w/2-1.5,tb);c.lineTo(cx+1,tip-2);c.lineTo(cx-1,tip-2);c.lineTo(cx-w/2+1.5,tb);c.closePath();c.fill();
+ c.strokeStyle=T.glass;c.lineWidth=2.5;c.lineJoin='round';c.beginPath();c.moveTo(cx-w/2,t0);c.lineTo(cx-w/2,tb);c.lineTo(cx-1.2,tip);c.lineTo(cx+1.2,tip);c.lineTo(cx+w/2,tb);c.lineTo(cx+w/2,t0);c.stroke();
+ drips(c,env,st,cx,tip+2,col,d.drip||0,r,2.6)}
+vessel('dropper',{custom:dropper});
+/* zbieranie gazu nad wodą: wanna + odwrócony cylinder; st.gasV 0..1, st.gas (natężenie pęcherzyków), st.gasColor, st.gasMax [cm³]; wlot rurki: lewa krawędź, 40% wysokości */
+function gasCollect(c,r,st,env){const T=env.th,p=env.pool,tx0=r.x+r.w*.06,tx1=r.x+r.w*.98,ty=r.y+r.h*.55,tb=r.y+r.h-4,wy=ty+10,cx=r.x+r.w*.64,cw=Math.min(r.w*.2,50),cy0=r.y+8,cy1=tb-16,gv=cl01(st.gasV||0),gy=cy0+(cy1-cy0-12)*gv,W=st.water||[205,228,238],gc=st.gasColor;
+ c.fillStyle=rgba(W,.5);c.fillRect(tx0,wy,tx1-tx0,tb-wy);c.strokeStyle='rgba(255,255,255,.6)';c.lineWidth=1.5;c.beginPath();c.moveTo(tx0,wy);c.lineTo(tx1,wy);c.stroke();
+ const inY=r.y+r.h*.4,tx=tx0+16;tube(c,[[r.x,inY],[tx,inY],[tx,tb-9],[cx-2,tb-9],[cx-2,cy1+6]],{flow:st.gas||0,t:env.t,th:T});
+ c.fillStyle=gc?rgba(gc,.35):(T.dark?'rgba(226,232,240,.08)':'rgba(255,255,255,.55)');c.fillRect(cx-cw/2,cy0,cw,gy-cy0);c.fillStyle=rgba(W,.62);c.fillRect(cx-cw/2,gy,cw,cy1-gy);c.strokeStyle='rgba(255,255,255,.7)';c.beginPath();c.moveTo(cx-cw/2,gy);c.lineTo(cx+cw/2,gy);c.stroke();
+ const b=p.bub=p.bub||[];if((st.gas||0)>0&&Math.random()<st.gas*(env.dt||.016)*14)b.push({y:cy1+4,x:cx+(Math.random()-.5)*6,r:2+Math.random()*3});for(let i=b.length-1;i>=0;i--){const q=b[i];q.y-=60*(env.dt||.016);q.x+=Math.sin((env.t||0)/180+i)*.3;if(q.y<gy+q.r){b.splice(i,1);continue}c.beginPath();c.arc(q.x,q.y,q.r,0,7);c.fillStyle='rgba(255,255,255,.55)';c.fill();c.strokeStyle='rgba(80,100,120,.45)';c.lineWidth=1;c.stroke()}
+ c.strokeStyle=T.glass;c.lineWidth=3;c.beginPath();c.moveTo(cx-cw/2,cy1);c.lineTo(cx-cw/2,cy0+6);c.quadraticCurveTo(cx-cw/2,cy0,cx-cw/2+6,cy0);c.lineTo(cx+cw/2-6,cy0);c.quadraticCurveTo(cx+cw/2,cy0,cx+cw/2,cy0+6);c.lineTo(cx+cw/2,cy1);c.stroke();
+ c.strokeStyle=T.mut;c.fillStyle=T.mut;c.lineWidth=1;font(c,600,8);c.textAlign='right';const mx=st.gasMax||100;for(let i=0;i<=10;i++){const y=cy0+(cy1-cy0-12)*i/10;c.beginPath();c.moveTo(cx+cw/2-(i%5?4:8),y);c.lineTo(cx+cw/2,y);c.stroke();if(!(i%5))c.fillText(Math.round(mx*i/10),cx+cw/2-10,y+3)}
+ c.save();rc(c,tx0,ty,tx1-tx0,tb-ty,10);c.strokeStyle=T.glass;c.lineWidth=3.5;c.stroke();c.restore();txt(c,'V = '+fmt(gv*mx,0)+' cm³',cx+cw/2+8,cy0+14,T.text,'left',11,800)}
+vessel('gasCollect',{custom:gasCollect});
+/* statyw z probówkami: st.tubes=[{label,liquid,level,gas,ppts,turb,solids,…}] — każda probówka to pełne naczynie GFX */
+function tubeRack(c,r,st,env){const T=env.th,tubes=st.tubes||[{label:'1',liquid:[229,38,46],level:.5},{label:'2',liquid:[246,162,30],level:.5},{label:'3',liquid:[92,184,92],level:.5},{label:'4',liquid:[74,75,181],level:.5}],n=tubes.length,pt=r.y+r.h*.34,pb=r.y+r.h-4,gap=r.w/n,tw=Math.min(gap*.55,34);
+ c.fillStyle=T.wood;c.globalAlpha=.75;c.fillRect(r.x+4,pt,7,pb-pt);c.fillRect(r.x+r.w-11,pt,7,pb-pt);c.globalAlpha=1;rr(c,r.x,pb-9,r.w,9,3);c.fill();
+ tubes.forEach((q,i)=>{const x=r.x+gap*(i+.5)-tw/2,pool=env.pool['t'+i]=env.pool['t'+i]||{events:[]},s=Object.assign({level:.5,liquid:WATER.slice()},q,{label:null});body('testTube',V.testTube,c,{x,y:r.y+4,w:tw,h:pb-14-r.y-4},s,Object.assign({},env,{pool,only:null,opt:{}}))});
+ rr(c,r.x,pt-6,r.w,13,3);c.fillStyle=T.wood;c.fill();c.strokeStyle='rgba(0,0,0,.2)';c.lineWidth=1;c.stroke();tubes.forEach((q,i)=>{if(q.label)txt(c,q.label,r.x+gap*(i+.5),pt+4,'#fff','center',10,800)})}
+vessel('tubeRack',{custom:tubeRack});
+/* tester przewodnictwa: zlewka + elektrody grafitowe + bateria + żarówka; st.cond 0..1 (jasność) */
+function conductivity(c,r,st,env){const T=env.th,k=cl01(st.cond||0),p=env.pool,bx=r.x+r.w*.16,bw=r.w*.68,by=r.y+r.h*.42,bh=r.h*.55,lv=cl01(st.level==null?.6:st.level),ltop=by+bh-bh*lv,e1=bx+bw*.32,e2=bx+bw*.68,ey0=by-26,ey1=by+bh-16,wy=r.y+r.h*.27,bt={x:r.x+r.w*.1,y:r.y+12,w:48,h:20},bl={x:r.x+r.w*.8,y:r.y+30};
+ body('beaker',V.beaker,c,{x:bx,y:by,w:bw,h:bh},Object.assign({},st,{label:null}),Object.assign({},env,{pool:p.bk=p.bk||{events:[]},only:null,opt:{effects:{scale:0}}}));
+ const wire=(pts,on)=>{c.lineJoin=c.lineCap='round';c.beginPath();pts.forEach((q,i)=>i?c.lineTo(q[0],q[1]):c.moveTo(q[0],q[1]));c.strokeStyle=T.dark?'#94a3b8':'#334155';c.lineWidth=2.2;c.stroke();if(on){c.setLineDash([3,7]);c.lineDashOffset=-(env.t||0)/1000*40*k;c.strokeStyle='rgba(250,204,21,.95)';c.lineWidth=2;c.stroke();c.setLineDash([])}};
+ const on=k>.12;wire([[e1,ey0],[e1,wy],[bt.x+8,wy],[bt.x+8,bt.y+bt.h]],on);wire([[bt.x+bt.w,bt.y+bt.h/2],[bl.x-5,bt.y+bt.h/2],[bl.x-5,bl.y+24]],on);wire([[bl.x+5,bl.y+26],[bl.x+5,wy],[e2,wy],[e2,ey0]],on);
+ /* v0.40: elektroliza na elektrodach — e1 połączona z biegunem (−) = KATODA, e2 przez żarówkę z (+) = ANODA. Gaz i jego ilość zależą od roztworu (st.el = {cat:{f,n,col}, an:{f,n,col}}) */
+const EL=st.el||null;[e1,e2].forEach((x,i)=>{c.fillStyle='#3f3f46';rr(c,x-4,ey0,8,ey1-ey0,2);c.fill();c.fillStyle='#71717a';c.fillRect(x-4,ey0,8,5);const g=EL?(i?EL.an:EL.cat):null;
+ if(g&&k>.12){const nb=Math.round(3+5*g.n*k),col=g.col||[255,255,255];for(let j=0;j<nb;j++){const u=((env.t||0)/1400*(.6+k)+rnd(j+i*9))%1,y=ey1-(ey1-ltop)*u;if(y>ltop+3){c.beginPath();c.arc(x+(j%2?6:-6),y,1.2+rnd(j)*1.3,0,7);c.fillStyle='rgba('+col.join(',')+','+(.75*k)+')';c.fill();c.strokeStyle='rgba(80,100,120,'+(.5*k)+')';c.lineWidth=.6;c.stroke()}}}
+ const lab=(i?'anoda (+)':'katoda (−)')+(g&&k>.12?': '+g.f:'');font(c,800,9);const lw=c.measureText(lab).width+8,lx=Math.max(r.x+2,Math.min(r.x+r.w-lw-2,x-lw/2)),ly=ey1+6;c.fillStyle=T.dark?'rgba(30,41,59,.9)':'rgba(255,255,255,.9)';rr(c,lx,ly,lw,13,3);c.fill();txt(c,lab,lx+lw/2,ly+10,i?'#b91c1c':'#1d4ed8','center',9,800)});
+ c.fillStyle=T.dark?'#475569':'#1f2937';rr(c,bt.x,bt.y,bt.w,bt.h,3);c.fill();c.fillStyle='#f59e0b';c.fillRect(bt.x+bt.w-12,bt.y,12,bt.h);txt(c,'−',bt.x+8,bt.y+14,'#fff','center',12,800);txt(c,'+',bt.x+bt.w-6,bt.y+14,'#1f2937','center',12,800);txt(c,'4,5 V',bt.x+bt.w/2-4,bt.y+bt.h+12,T.mut,'center',9);
+ if(k>0){const g1=c.createRadialGradient(bl.x,bl.y,2,bl.x,bl.y,18+55*k);g1.addColorStop(0,'rgba(255,226,120,'+(.85*k)+')');g1.addColorStop(1,'rgba(255,200,60,0)');c.fillStyle=g1;c.beginPath();c.arc(bl.x,bl.y,18+55*k,0,7);c.fill()}
+ c.fillStyle='rgba(255,250,225,'+(.18+.75*k)+')';c.strokeStyle=T.glass;c.lineWidth=2;c.beginPath();c.arc(bl.x,bl.y,15,0,7);c.fill();c.stroke();c.strokeStyle=k>.08?'#f59e0b':'#78716c';c.lineWidth=1.4;c.beginPath();c.moveTo(bl.x-5,bl.y+12);c.lineTo(bl.x-4,bl.y);for(let i=0;i<5;i++)c.lineTo(bl.x-4+i*2,bl.y+(i%2?-3:0));c.lineTo(bl.x+5,bl.y+12);c.stroke();c.fillStyle=T.metal;c.fillRect(bl.x-7,bl.y+14,14,12);
+ txt(c,k>.6?'świeci jasno':k>.15?'świeci słabo':'nie świeci',(bt.x+bt.w+bl.x-20)/2,bt.y+bt.h/2-6,T.text,'center',11,800);if(st.label){font(c,800,12);const lw=c.measureText(st.label).width+12,ly=by+bh*.8;c.fillStyle=T.dark?'rgba(30,41,59,.92)':'rgba(255,255,255,.93)';rr(c,bx+bw/2-lw/2,ly,lw,18,4);c.fill();c.strokeStyle=T.glass;c.lineWidth=1;c.stroke();txt(c,st.label,bx+bw/2,ly+13,T.text,'center',12,800)}}
+vessel('conductivity',{custom:conductivity});
+/* skala pH: st.pH, st.ind (id wskaźnika z CHE.COLORS), st.marks=[{pH,label}], st.hide (ukryj wartość) */
+function pHscale(c,r,st,env){const T=env.th,ind=st.ind||'ind-uniwersalny',x0=r.x+14,x1=r.x+r.w-14,h=Math.min(18,r.h*.22),y=r.y+Math.max(r.h*.38,24),X=p=>x0+(x1-x0)*p/14;const g1=c.createLinearGradient(x0,0,x1,0);for(let p=0;p<=14;p+=.5)g1.addColorStop(p/14,rgba(indCol(ind,p)));c.fillStyle=g1;rr(c,x0,y,x1-x0,h,5);c.fill();c.strokeStyle='rgba(0,0,0,.2)';c.lineWidth=1;c.stroke();
+ c.strokeStyle=T.mut;for(let p=0;p<=14;p++){c.beginPath();c.moveTo(X(p),y+h);c.lineTo(X(p),y+h+(p%7?4:8));c.stroke();txt(c,String(p),X(p),y+h+16,T.mut,'center',9)}
+ const by=y+h+26;[[0,6.8,'kwasowy','#dc2626'],[6.8,7.2,'',''],[7.2,14,'zasadowy','#2563eb']].forEach(([a,b,l,col])=>{if(!l)return;c.strokeStyle=col;c.lineWidth=2;c.beginPath();c.moveTo(X(a),by-4);c.lineTo(X(a),by);c.lineTo(X(b),by);c.lineTo(X(b),by-4);c.stroke();txt(c,l,(X(a)+X(b))/2,by+13,col,'center',10,800)});txt(c,'7 — obojętny',X(7),by+27,T.mut,'center',9,700);
+ (st.marks||[]).forEach((m,i)=>{const x=X(m.pH);c.fillStyle=T.text;c.beginPath();c.arc(x,y-4,2.5,0,7);c.fill();txt(c,m.label,x,y-9-(i%2)*11,T.mut,'center',9,600)});
+ if(st.pH!=null&&!st.hide){const v=Math.max(0,Math.min(14,st.pH)),x=X(v);c.fillStyle=T.text;c.beginPath();c.moveTo(x,y-1);c.lineTo(x-6,y-10);c.lineTo(x+6,y-10);c.closePath();c.fill();txt(c,'pH '+fmt(v,1),x,y-14,T.text,'center',11,800)}}
+vessel('pHscale',{custom:pHscale});

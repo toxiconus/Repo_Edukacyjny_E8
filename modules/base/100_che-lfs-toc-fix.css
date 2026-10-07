@@ -1,0 +1,17 @@
+<style id="che-lfs-toc-fix">
+body.che-lesson-fs-open .che-lfs-lesson .fab,
+body.che-lesson-fs-open .che-lfs-lesson .fab-left{
+  display:flex!important; visibility:visible!important; opacity:1!important;
+  position:fixed!important; left:12px!important; top:64px!important; z-index:1400!important;
+}
+body.che-lesson-fs-open .che-lfs-lesson .toc-wrapper{
+  z-index:1390!important;
+}
+body.che-lesson-fs-open .che-lfs-lesson .toc-overlay{
+  z-index:1380!important;
+}
+body.che-lesson-fs-open .che-lfs-lesson .toc-wrapper.is-open{
+  transform:translateX(0)!important;
+}
+</style>
+

@@ -1,0 +1,718 @@
+C.STRUCTURE={version:'2.17',createAtom,createMolecule,addBond,canonicalize,validate,detectFunctionalGroups,layout2D,geometry3D,angles,bondLengths,stereo,resonance,adjacency};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 38]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{}, clone=o=>JSON.parse(JSON.stringify(o));
+const fail=(c,m,x)=>C.FAIL?C.FAIL(c,m,x):{ok:false,error:{code:c,message:m,context:x}};
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+function canonical(m){return C.STRUCTURE.canonicalize(m||{});}
+function bondKey(b){return [b.atomA??b.a,b.atomB??b.b].map(String).sort().join('|');}
+function atomCounts(m){const o={};(m?.atoms||[]).forEach(a=>o[a.element]=(o[a.element]||0)+1);return o;}
+function atomMap(m){return new Map((m?.atoms||[]).map(a=>[String(a.id),a]));}
+function normalizeChangeList(t){const x=t||{};return {bondsBroken:Array.isArray(x.bondsBroken)?x.bondsBroken.slice():[],bondsFormed:Array.isArray(x.bondsFormed)?clone(x.bondsFormed):[],bondOrderChanges:Array.isArray(x.bondOrderChanges)?clone(x.bondOrderChanges):[],atomsTransferred:Array.isArray(x.atomsTransferred)?clone(x.atomsTransferred):[],protonTransfers:Array.isArray(x.protonTransfers)?clone(x.protonTransfers):[]};}
+function diff(before,after){
+  const b=canonical(before), a=canonical(after), bm=new Map((b.bonds||[]).map(x=>[bondKey(x),x])), am=new Map((a.bonds||[]).map(x=>[bondKey(x),x]));
+  const broken=[],formed=[],orders=[];
+  bm.forEach((x,k)=>{if(!am.has(k)) broken.push({bondId:x.id,atomA:x.atomA,atomB:x.atomB,order:x.order}); else if(Number(x.order)!==Number(am.get(k).order)) orders.push({bondId:x.id,atomA:x.atomA,atomB:x.atomB,from:x.order,to:am.get(k).order});});
+  am.forEach((x,k)=>{if(!bm.has(k)) formed.push({bondId:x.id,atomA:x.atomA,atomB:x.atomB,order:x.order});});
+  const ba=atomMap(b), aa=atomMap(a), transferred=[];
+  ba.forEach((x,id)=>{if(!aa.has(id)) transferred.push({atomId:id,element:x.element,from:'before',to:'absent'});});
+  aa.forEach((x,id)=>{if(!ba.has(id)) transferred.push({atomId:id,element:x.element,from:'absent',to:'after'});});
+  return {bondsBroken:broken,bondsFormed:formed,bondOrderChanges:orders,atomsTransferred:transferred,protonTransfers:[],changedAtomCount:transferred.length};
+}
+function createReaction(input){
+ const x=input||{}, changes=normalizeChangeList(x.changes);
+ return {id:String(x.id||'reaction-'+Date.now()),type:x.type||'transformation',reactants:(x.reactants||[]).map(canonical),products:(x.products||[]).map(canonical),changes,conditions:x.conditions?clone(x.conditions):{temperatureK:null,pressurePa:null,solvent:null,catalyst:null,light:null,timeS:null,atmosphere:null,notes:[]},annotations:Array.isArray(x.annotations)?clone(x.annotations):[],status:x.status||'STRUCTURAL',validation:null};
+}
+function balanceStructure(reactants,products){
+ const L={},R={};for(const m of reactants||[])Object.entries(atomCounts(m)).forEach(([e,n])=>L[e]=(L[e]||0)+n);for(const m of products||[])Object.entries(atomCounts(m)).forEach(([e,n])=>R[e]=(R[e]||0)+n);
+ const elements=[...new Set([...Object.keys(L),...Object.keys(R)])].sort(),delta={};elements.forEach(e=>delta[e]=(R[e]||0)-(L[e]||0));
+ const chargeL=(reactants||[]).reduce((s,m)=>s+Number(m.charge||0),0),chargeR=(products||[]).reduce((s,m)=>s+Number(m.charge||0),0);
+ return {ok:elements.every(e=>delta[e]===0)&&chargeL===chargeR,atomsLeft:L,atomsRight:R,delta,chargeLeft:chargeL,chargeRight:chargeR,elements};
+}
+function validateReaction(reaction,options){
+ const r=createReaction(reaction), warnings=[], errors=[];
+ const rb=r.reactants.map(canonical), rp=r.products.map(canonical);
+ rb.forEach((m,i)=>{const v=C.STRUCTURE.validate(m);if(!v.ok)errors.push({code:'INVALID_REACTANT',index:i,validation:v});});
+ rp.forEach((m,i)=>{const v=C.STRUCTURE.validate(m);if(!v.ok)errors.push({code:'INVALID_PRODUCT',index:i,validation:v});});
+ const balance=balanceStructure(rb,rp); if(!balance.ok)errors.push({code:'UNBALANCED_REACTION',balance});
+ const inferred=[]; for(let i=0;i<Math.max(rb.length,rp.length);i++){if(rb[i]&&rp[i]) inferred.push(diff(rb[i],rp[i]));}
+ const declared=r.changes; if(!declared.bondsBroken.length&&!declared.bondsFormed.length&&!declared.bondOrderChanges.length&&!declared.atomsTransferred.length){r.changes=mergeDiffs(inferred);}
+ const hasConditions=!!r.conditions && Object.values(r.conditions).some(v=>v!==null&&v!==undefined&&v!==''&&(Array.isArray(v)?v.length: true));
+ if(!hasConditions)warnings.push({code:'NO_REACTION_CONDITIONS',message:'Brak jawnych warunków transformacji'});
+ if(options?.requireCatalyst&&r.conditions?.catalyst==null)warnings.push({code:'CATALYST_NOT_SPECIFIED'});
+ if(options?.requireSolvent&&r.conditions?.solvent==null)warnings.push({code:'SOLVENT_NOT_SPECIFIED'});
+ const status=errors.length?'INVALID':warnings.length?'VALID_WITH_WARNING':'VALID';
+ r.validation={ok:!errors.length,status,errors,warnings,balance,inferredChanges:inferred}; return ok(r);
+}
+function mergeDiffs(ds){const out=normalizeChangeList();for(const d of ds){out.bondsBroken.push(...d.bondsBroken);out.bondsFormed.push(...d.bondsFormed);out.bondOrderChanges.push(...d.bondOrderChanges);out.atomsTransferred.push(...d.atomsTransferred);}return out;}
+function applyReaction(molecule,transformation,options){
+ const m=canonical(molecule), t=transformation?.changes||transformation||{}, out=clone(m), warnings=[], errors=[];
+ for(const bid of t.bondsBroken||[]){const id=typeof bid==='string'?bid:bid.bondId;const i=out.bonds.findIndex(b=>b.id===id||bondKey(b)===bid);if(i<0)errors.push({code:'BOND_NOT_FOUND',bondId:id});else out.bonds.splice(i,1);}
+ for(const ch of t.bondOrderChanges||[]){const b=out.bonds.find(x=>x.id===ch.bondId||bondKey(x)===ch.bondKey);if(!b)errors.push({code:'BOND_NOT_FOUND',bondId:ch.bondId});else b.order=Number(ch.to);}
+ for(const item of t.atomsTransferred||[]){const id=String(item.atomId);const i=out.atoms.findIndex(a=>String(a.id)===id);if(item.to==='absent'&&i>=0)out.atoms.splice(i,1);else if(item.to!=='absent'&&!out.atoms.some(a=>String(a.id)===id)&&item.element){const ca=C.STRUCTURE.createAtom({id,element:item.element,charge:item.charge||0});if(ca.ok)out.atoms.push(ca.value);else errors.push(ca.error);}}
+ for(const b of t.bondsFormed||[]){const r=C.STRUCTURE.addBond(out,b);if(!r.ok)errors.push(r.error);else{out.atoms=r.value.atoms;out.bonds=r.value.bonds;}}
+ const canonicalOut=C.STRUCTURE.canonicalize(out),validation=C.STRUCTURE.validate(canonicalOut); if(!validation.ok)errors.push({code:'PRODUCT_INVALID',validation});
+ const result={molecule:canonicalOut,changes:diff(m,canonicalOut),validation,warnings,errors,ok:errors.length===0&&validation.ok};
+ if(options?.validateBalance) result.balance=balanceStructure([m],[canonicalOut]);
+ return ok(result);
+}
+function transferAtom(molecule,atomId,toMolecule){const m=canonical(molecule), target=canonical(toMolecule||{atoms:[],bonds:[]}), atom=m.atoms.find(a=>String(a.id)===String(atomId));if(!atom)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono atomu',{atomId});const connected=(m.bonds||[]).filter(b=>b.atomA===atom.id||b.atomB===atom.id);if(connected.length)return fail('CHE.E.TRANSFER_REQUIRES_BOND_EDIT','Atom ma jeszcze wiązania',{atomId,bonds:connected.map(b=>b.id)});const out=clone(target);out.atoms.push(clone(atom));return ok({molecule:C.STRUCTURE.canonicalize(out),transferred:atom});}
+function transferProton(molecule,fromAtomId,toAtomId){const m=canonical(molecule), A=atomMap(m), h=(m.atoms||[]).find(a=>a.element==='H'&&A.has(a.id)&&String(a.id)===String(fromAtomId));if(!h)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono protonu',{atomId:fromAtomId});const donor=(m.bonds||[]).find(b=>b.atomA===h.id||b.atomB===h.id);if(!donor)return fail('CHE.E.INVALID_INPUT','Proton nie ma wiązania donorowego',{atomId:fromAtomId});const target=String(toAtomId);if(!A.has(target))return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono akceptora',{atomId:toAtomId});const out=clone(m);out.bonds=out.bonds.filter(b=>b.id!==donor.id);const newBond={id:'proton-'+Date.now(),atomA:target,atomB:h.id,order:1,type:'single'};const add=C.STRUCTURE.addBond(out,newBond);if(!add.ok)return add;return ok({molecule:add.value,proton:{atomId:h.id,from:donor.atomA===h.id?donor.atomB:donor.atomA,to:target}});}
+function conditions(input){const x=input||{};return {temperatureK:x.temperatureK??null,pressurePa:x.pressurePa??null,solvent:x.solvent??null,catalyst:x.catalyst??null,light:x.light??null,timeS:x.timeS??null,atmosphere:x.atmosphere??null,notes:Array.isArray(x.notes)?x.notes.slice():[]};}
+C.TRANSFORM={version:'2.17',createReaction,applyReaction,diff,balanceStructure,validateReaction,transferAtom,transferProton,conditions,atomCounts};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 39]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{}, clone=o=>JSON.parse(JSON.stringify(o));
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const fail=(c,m,x)=>C.FAIL?C.FAIL(c,m,x):{ok:false,error:{code:c,message:m,context:x}};
+const canonical=m=>C.STRUCTURE.canonicalize(m||{});
+const atomId=(prefix='atom')=>`${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2,7)}`;
+const bondId=()=>atomId('bond');
+function snapshot(state){return clone(state.graph);}
+function recalc(state){state.graph=canonical(state.graph);state.validation=C.STRUCTURE.validate(state.graph);state.functionalGroups=C.STRUCTURE.detectFunctionalGroups(state.graph).value||[];return state;}
+function pushHistory(state){state.history=state.history.slice(0,state.cursor+1);state.history.push(snapshot(state));if(state.history.length>100)state.history.shift();state.cursor=state.history.length-1;}
+function restore(state,gph){state.graph=canonical(gph);state.validation=C.STRUCTURE.validate(state.graph);state.functionalGroups=C.STRUCTURE.detectFunctionalGroups(state.graph).value||[];return state;}
+function create(input,options){
+ const base=canonical(input||{id:'editor-draft',atoms:[],bonds:[]});
+ const state={id:String(options?.id||`editor-${Date.now()}`),base:clone(base),graph:clone(base),history:[clone(base)],cursor:0,validation:null,functionalGroups:[],selection:{atomId:null,bondId:null},meta:{source:options?.source||'CHE.EDITOR',createdAt:new Date().toISOString()}};
+ return recalc(state);
+}
+function get(state){return state?clone(state.graph):null;}
+function addAtom(state,input){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');const a=C.STRUCTURE.createAtom({...input,id:input?.id||atomId('atom')});if(a?.ok===false)return a;const gph=clone(state.graph);gph.atoms.push(a.value||a);if(!gph.atoms.at(-1).position2D){const i=gph.atoms.length-1;gph.atoms.at(-1).position2D={x:(i%5)*1.4,y:-Math.floor(i/5)*1.4};}state.graph=canonical(gph);pushHistory(state);recalc(state);state.selection.atomId=state.graph.atoms.at(-1).id;return ok({state,atom:clone(state.graph.atoms.at(-1))});}
+function removeAtom(state,id){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');const key=String(id), gph=clone(state.graph), atom=gph.atoms.find(a=>String(a.id)===key);if(!atom)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono atomu',{atomId:id});gph.atoms=gph.atoms.filter(a=>String(a.id)!==key);gph.bonds=gph.bonds.filter(b=>String(b.atomA)!==key&&String(b.atomB)!==key);state.graph=canonical(gph);pushHistory(state);recalc(state);if(state.selection.atomId===key)state.selection.atomId=null;return ok({state,removed:clone(atom)});}
+function addBond(state,input){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');const r=C.STRUCTURE.addBond(state.graph,{...input,id:input?.id||bondId()});if(r?.ok===false)return r;state.graph=canonical(r.value);pushHistory(state);recalc(state);state.selection.bondId=state.graph.bonds.at(-1)?.id||null;return ok({state,bond:clone(state.graph.bonds.at(-1))});}
+function removeBond(state,id){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');const key=String(id), gph=clone(state.graph), i=gph.bonds.findIndex(b=>String(b.id)===key);if(i<0)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono wiązania',{bondId:id});const removed=gph.bonds.splice(i,1)[0];state.graph=canonical(gph);pushHistory(state);recalc(state);if(state.selection.bondId===key)state.selection.bondId=null;return ok({state,removed});}
+function setBondOrder(state,id,order){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');const n=Number(order);if(![1,1.5,2,3].includes(n))return fail('CHE.E.INVALID_INPUT','Nieobsługiwany rząd wiązania',{order});const gph=clone(state.graph), b=gph.bonds.find(x=>String(x.id)===String(id));if(!b)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono wiązania',{bondId:id});b.order=n;b.type=n===1?'single':n===1.5?'aromatic':n===2?'double':'triple';state.graph=canonical(gph);pushHistory(state);recalc(state);return ok({state,bond:clone(b)});}
+function setCharge(state,id,charge){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');const a=state.graph.atoms.find(x=>String(x.id)===String(id));if(!a)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono atomu',{atomId:id});const gph=clone(state.graph), x=gph.atoms.find(a=>String(a.id)===String(id));x.formalCharge=Number(charge)||0;x.charge=x.formalCharge;state.graph=canonical(gph);pushHistory(state);recalc(state);return ok({state,atom:clone(x)});}
+function undo(state){if(!state||state.cursor<=0)return ok({state,changed:false});state.cursor--;restore(state,state.history[state.cursor]);return ok({state,changed:true});}
+function redo(state){if(!state||state.cursor>=state.history.length-1)return ok({state,changed:false});state.cursor++;restore(state,state.history[state.cursor]);return ok({state,changed:true});}
+function reset(state){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');state.cursor=0;restore(state,state.history[0]);return ok({state,changed:true});}
+function validate(state){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');recalc(state);return ok(state.validation);}
+function functionalGroups(state){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');recalc(state);return ok(state.functionalGroups);}
+function formula(state){return state?.graph?.formula||'';}
+function reaction(state,options){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');const product=canonical(state.graph), reactant=canonical(state.base), changes=C.TRANSFORM.diff(reactant,product), r=C.TRANSFORM.createReaction({id:options?.id||`editor-rx-${Date.now()}`,type:'graph-edit',reactants:[reactant],products:[product],changes,conditions:C.TRANSFORM.conditions(options?.conditions||{}),annotations:[{type:'EDITOR_DIFF',source:'CHE.EDITOR'}]});return C.TRANSFORM.validateReaction(r,options?.validationOptions||{});}
+function exportData(state){if(!state)return fail('CHE.E.INVALID_INPUT','Brak sesji edytora');return ok({schemaVersion:'2.19',editorId:state.id,molecule:canonical(state.graph),base:canonical(state.base),diff:C.TRANSFORM.diff(state.base,state.graph),validation:state.validation,functionalGroups:state.functionalGroups});}
+function importData(data,options){const x=data?.molecule||data?.graph||data;if(!x)return fail('CHE.E.INVALID_INPUT','Brak grafu do importu');return ok(create(x,options));}
+C.EDITOR={version:'2.18',create,get,addAtom,removeAtom,addBond,removeBond,setBondOrder,setCharge,undo,redo,reset,validate,functionalGroups,formula,reaction,export:exportData,import:importData};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 40]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{};
+const clone=o=>JSON.parse(JSON.stringify(o));
+const fail=(code,message,context)=>C.FAIL?C.FAIL(code,message,context):{ok:false,error:{code,message,context}};
+const ok=value=>C.OK?C.OK(value):{ok:true,value};
+const canonical=m=>C.STRUCTURE?.canonicalize?C.STRUCTURE.canonicalize(m):m;
+const atomicValence=e=>Number(C.DATA?.ATOM_META?.[e]?.valence);
+const elementOrder=(a,b)=>a==='C'?-1:b==='C'?1:a==='H'?-1:b==='H'?1:a.localeCompare(b);
+function atomCounts(m){const c={};(m?.atoms||[]).forEach(a=>{c[a.element]=(c[a.element]||0)+1;});return c;}
+function formula(m,options){
+ const x=canonical(m||{}), c=atomCounts(x), keys=Object.keys(c).sort(elementOrder), body=keys.map(e=>e+(c[e]===1?'':c[e])).join('');
+ const charge=Number(x.charge||0), suffix=options?.charge===false||charge===0?'':(charge>0?`^${charge===1?'+':charge+'+'}`:`^${Math.abs(charge)===1?'-':Math.abs(charge)+'-'}`);
+ return {formula:body+suffix,counts:c,charge,order:keys};
+}
+function stableIds(m){
+ const x=canonical(m||{}), map={}, used=new Set(), next={};
+ const atoms=x.atoms.map((a,i)=>{let id=String(a.id||'');if(!id||used.has(id)){const base=`${a.element||'X'}${(next[a.element]||0)+1}`;next[a.element]=(next[a.element]||0)+1;id=base;while(used.has(id)){next[a.element]++;id=`${a.element}${next[a.element]}`;}}used.add(id);map[String(a.id||`@${i}`)]=id;return {...a,id};});
+ const bonds=x.bonds.map((b,i)=>({...b,id:String(b.id||`b${i+1}`),atomA:map[b.atomA]||b.atomA,atomB:map[b.atomB]||b.atomB}));
+ return {molecule:{...x,atoms,bonds},map};
+}
+function neighborOrder(m,id){return (m.bonds||[]).filter(b=>b.atomA===id||b.atomB===id).map(b=>Number(b.order||1)).sort((a,b)=>a-b);}
+function implicitHydrogenPlan(m){
+ const x=canonical(m||{}), plan=[];
+ for(const a of x.atoms){
+   if(a.element==='H') continue;
+   const target=atomicValence(a.element); if(!Number.isFinite(target)||target<=0) continue;
+   const used=(x.bonds||[]).filter(b=>b.atomA===a.id||b.atomB===a.id).reduce((s,b)=>s+Number(b.order||1),0);
+   const explicitH=(x.bonds||[]).filter(b=>{const other=b.atomA===a.id?b.atomB:b.atomB===a.id?b.atomA:null;return other&&x.atoms.find(z=>z.id===other)?.element==='H';}).reduce((s,b)=>s+Number(b.order||1),0);
+   const missing=Math.max(0,Math.round(target-used));
+   if(missing>0 && explicitH===0) plan.push({atomId:a.id,element:a.element,hydrogens:missing,targetValence:target,bondOrderSum:used,reason:'typical-valence'});
+ }
+ return plan;
+}
+function addExplicitHydrogens(m,options){
+ const x=clone(canonical(m||{})), plan=implicitHydrogenPlan(x), added=[];
+ if(options?.apply===false) return ok({molecule:x,plan,applied:false});
+ let seq=x.atoms.length+1;
+ for(const p of plan){for(let i=0;i<p.hydrogens;i++){let id=`H${seq++}`;while(x.atoms.some(a=>a.id===id))id=`H${seq++}`;x.atoms.push(C.STRUCTURE.createAtom({id,element:'H',role:['explicit-hydrogen'],metadata:{generatedBy:'CHE.RECONSTRUCT',sourceAtom:p.atomId}}));x.bonds.push({id:`hbond-${id}`,atomA:p.atomId,atomB:id,order:1,type:'single',labels:['generated-hydrogen']});added.push(id);}}
+ const out=canonical(x); return ok({molecule:out,plan,applied:true,added});
+}
+function removeGeneratedHydrogens(m){
+ const x=clone(canonical(m||{})), remove=new Set(x.atoms.filter(a=>a.element==='H'&&a.metadata?.generatedBy==='CHE.RECONSTRUCT').map(a=>a.id));
+ x.atoms=x.atoms.filter(a=>!remove.has(a.id));x.bonds=x.bonds.filter(b=>!remove.has(b.atomA)&&!remove.has(b.atomB));
+ return ok({molecule:canonical(x),removed:[...remove]});
+}
+function atomSignature(m,a){
+ const neigh=(m.bonds||[]).filter(b=>b.atomA===a.id||b.atomB===a.id).map(b=>{const id=b.atomA===a.id?b.atomB:b.atomA;const z=m.atoms.find(q=>q.id===id);return `${z?.element||'?'}:${Number(b.order||1)}`;}).sort();
+ return `${a.element}|${Number(a.formalCharge||a.charge||0)}|${neigh.join(',')}`;
+}
+function atomMap(reactant,product){
+ const r=canonical(reactant||{}),p=canonical(product||{}), used=new Set(), mapping={}, unmatched=[];
+ for(const a of r.atoms){let candidates=p.atoms.filter(z=>!used.has(z.id)&&z.element===a.element&&Number(z.formalCharge||z.charge||0)===Number(a.formalCharge||a.charge||0));candidates.sort((u,v)=>atomSignature(r,a).localeCompare(atomSignature(p,u)));const hit=candidates[0];if(hit){mapping[a.id]=hit.id;used.add(hit.id);}else unmatched.push({side:'reactant',atomId:a.id});}
+ p.atoms.forEach(a=>{if(!used.has(a.id))unmatched.push({side:'product',atomId:a.id});});
+ return {mapping,unmatched,complete:unmatched.length===0};
+}
+function mappedDiff(reactant,product){
+ const map=atomMap(reactant,product), r=canonical(reactant), p=canonical(product), reverse=Object.fromEntries(Object.entries(map.mapping).map(([a,b])=>[b,a]));
+ const key=(a,b)=>[a,b].sort().join('|');
+ const rb=new Map(r.bonds.map(b=>[key(b.atomA,b.atomB),b])), pb=new Map(p.bonds.map(b=>[key(reverse[b.atomA]||b.atomA,reverse[b.atomB]||b.atomB),b]));
+ const broken=[],formed=[],order=[];
+ rb.forEach((b,k)=>{if(!pb.has(k))broken.push(b);else if(Number(pb.get(k).order)!==Number(b.order))order.push({bondId:b.id,to:Number(pb.get(k).order),from:Number(b.order),productBondId:pb.get(k).id});});
+ pb.forEach((b,k)=>{if(!rb.has(k))formed.push(b);});
+ return {mapping:map,changes:{bondsBroken:broken,bondsFormed:formed,bondOrderChanges:order}};
+}
+function validate(m){
+ const x=canonical(m||{}), v=C.STRUCTURE?.validate?.(x)||{ok:false};
+ const f=formula(x), warnings=[];if(f.charge!==Number(x.charge||0))warnings.push({code:'FORMULA_CHARGE_MISMATCH'});
+ return {ok:v.ok,status:v.status||'INVALID',structure:v,formula:f,warnings};
+}
+function reactionTemplate(reactant,product,options){
+ const r=canonical(reactant),p=canonical(product), d=mappedDiff(r,p), countsR=atomCounts(r),countsP=atomCounts(p);
+ return ok({schemaVersion:'2.19',type:options?.type||'GRAPH_TRANSFORMATION',reactant: r,product:p,mapping:d.mapping,changes:d.changes,balance:{reactants:countsR,products:countsP,balanced:JSON.stringify(countsR)===JSON.stringify(countsP)},conditions:options?.conditions||{},annotations:options?.annotations||[]});
+}
+function condensedFormula(m){
+ const x=canonical(m||{}), f=formula(x).formula;
+ const carbon=x.atoms.filter(a=>a.element==='C');
+ if(carbon.length===0)return f;
+ const degree=id=>(x.bonds||[]).filter(b=>b.atomA===id||b.atomB===id).length;
+ const fragments=carbon.map(c=>({id:c.id,degree:degree(c.id),neighbors:(x.bonds||[]).filter(b=>b.atomA===c.id||b.atomB===c.id).map(b=>{const id=b.atomA===c.id?b.atomB:b.atomA;return x.atoms.find(a=>a.id===id)?.element||'?';})}));
+ return {formula:f,carbonFramework:fragments,notation:'GRAPH_DERIVED',note:'Pełna konwencja wzoru półstrukturalnego wymaga dalszych reguł nomenklaturowych.'};
+}
+function normalize(m,options){
+ const ids=stableIds(m), x=ids.molecule, f=formula(x), v=validate(x);
+ x.formula=f.formula;x.charge=f.charge;x.reconstruction={version:'2.19',normalized:true,idMap:ids.map};
+ if(options?.explicitHydrogens) return addExplicitHydrogens(x,{apply:true});
+ return ok({molecule:x,formula:f,validation:v,idMap:ids.map});
+}
+C.RECONSTRUCT={version:'2.19',atomCounts,formula,stableIds,implicitHydrogenPlan,addExplicitHydrogens,removeGeneratedHydrogens,atomMap,mappedDiff,validate,reactionTemplate,condensedFormula,normalize};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 41]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{}, clone=o=>JSON.parse(JSON.stringify(o));
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const fail=(c,m,x)=>C.FAIL?C.FAIL(c,m,x):{ok:false,error:{code:c,message:m,context:x}};
+const canonical=m=>C.STRUCTURE.canonicalize(m||{});
+function create(input){const x=input||{};return {id:String(x.id||'reaction-set-'+Date.now()),type:x.type||'multicomponent',components:Array.isArray(x.components)?clone(x.components):[],reactants:(x.reactants||[]).map(canonical),products:(x.products||[]).map(canonical),conditions:C.TRANSFORM.conditions(x.conditions||{}),changes:clone(x.changes||{}),status:x.status||'STRUCTURAL',validation:null,meta:{createdAt:new Date().toISOString(),source:x.source||'CHE.REACTIONSET'}};}
+function roles(r){const out={substrate:[],reagent:[],catalyst:[],solvent:[],product:[],byproduct:[]};for(const c of r.components||[]){const role=c.role||'reagent';(out[role]||(out[role]=[])).push(clone(c));}return out;}
+function atomInventory(graphs){const out={};for(const m of graphs||[])for(const a of m.atoms||[])out[a.element]=(out[a.element]||0)+1;return out;}
+function balance(r){const x=create(r),left=atomInventory(x.reactants),right=atomInventory(x.products),els=[...new Set([...Object.keys(left),...Object.keys(right)])].sort(),delta={};els.forEach(e=>delta[e]=(right[e]||0)-(left[e]||0));const charge=(gs)=>gs.reduce((n,m)=>n+Number(m.charge||0),0);const ql=charge(x.reactants),qr=charge(x.products);return {ok:els.every(e=>delta[e]===0)&&ql===qr,atomsLeft:left,atomsRight:right,delta,chargeLeft:ql,chargeRight:qr,elements:els};}
+function mapGraphs(before,after){const b=before||[],a=after||[], used=new Set(),maps=[];for(const bm of b){const map=[];for(const ba of bm.atoms||[]){let hit=null;for(const am of a){if(used.has(am.id)||am.element!==ba.element)continue;const sameCharge=Number(am.charge||0)===Number(ba.charge||0);if(sameCharge){hit=am;break;}}if(hit){used.add(hit.id);map.push({from:ba.id,to:hit.id,element:ba.element});}}maps.push(map);}return maps;}
+function diff(r){const x=create(r), pairs=[];const n=Math.max(x.reactants.length,x.products.length);for(let i=0;i<n;i++)if(x.reactants[i]&&x.products[i])pairs.push({index:i,diff:C.RECONSTRUCT?.mappedDiff?C.RECONSTRUCT.mappedDiff(x.reactants[i],x.products[i]):C.TRANSFORM.diff(x.reactants[i],x.products[i])});return {pairs,mapping:mapGraphs(x.reactants,x.products),globalBalance:balance(x)};}
+function transferAtom(r,fromIndex,atomId,toIndex){const x=create(r),src=x.reactants[fromIndex],dst=x.reactants[toIndex];if(!src||!dst)return fail('CHE.E.DATA_NOT_FOUND','Brak grafu źródłowego lub docelowego',{fromIndex,toIndex});const a=src.atoms.find(q=>String(q.id)===String(atomId));if(!a)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono atomu',{atomId});if(src.bonds.some(b=>b.atomA===a.id||b.atomB===a.id))return fail('CHE.E.TRANSFER_REQUIRES_BOND_EDIT','Atom ma wiązania',{atomId});const ns=clone(src),nd=clone(dst);ns.atoms=ns.atoms.filter(q=>q.id!==a.id);nd.atoms.push(clone(a));x.reactants[fromIndex]=canonical(ns);x.reactants[toIndex]=canonical(nd);return ok({reaction:x,transferred:clone(a)});}
+function transferProton(r,fromIndex,toIndex,hydrogenId,targetAtomId){const x=create(r),src=x.reactants[fromIndex],dst=x.reactants[toIndex];if(!src||!dst)return fail('CHE.E.DATA_NOT_FOUND','Brak grafu',{fromIndex,toIndex});const h=src.atoms.find(a=>a.id===hydrogenId&&a.element==='H');if(!h)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono protonu',{hydrogenId});const donorBond=src.bonds.find(b=>b.atomA===h.id||b.atomB===h.id);if(!donorBond)return fail('CHE.E.INVALID_INPUT','Proton nie ma wiązania donorowego',{hydrogenId});if(!dst.atoms.some(a=>a.id===targetAtomId))return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono akceptora',{targetAtomId});const ns=clone(src),nd=clone(dst);ns.atoms=ns.atoms.filter(a=>a.id!==h.id);ns.bonds=ns.bonds.filter(b=>b.id!==donorBond.id);nd.atoms.push(clone(h));nd.bonds.push({id:'transfer-H-'+Date.now(),atomA:targetAtomId,atomB:h.id,order:1,type:'single',labels:['transferred-proton']});x.reactants[fromIndex]=canonical(ns);x.reactants[toIndex]=canonical(nd);return ok({reaction:x,proton:{atomId:h.id,from:donorBond.atomA===h.id?donorBond.atomB:donorBond.atomA,to:targetAtomId}});}
+function validate(r){const x=create(r),errors=[],warnings=[];x.reactants.forEach((m,i)=>{const v=C.STRUCTURE.validate(m);if(!v.ok)errors.push({code:'INVALID_REACTANT',index:i,detail:v});});x.products.forEach((m,i)=>{const v=C.STRUCTURE.validate(m);if(!v.ok)errors.push({code:'INVALID_PRODUCT',index:i,detail:v});});const b=balance(x);if(!b.ok)errors.push({code:'UNBALANCED_REACTION_SET',detail:b});if(!x.products.length)warnings.push({code:'NO_PRODUCTS'});if(!x.reactants.length)warnings.push({code:'NO_REACTANTS'});return ok({ok:errors.length===0,status:errors.length?'INVALID':warnings.length?'VALID_WITH_WARNING':'VALID',errors,warnings,balance:b,diff:diff(x)});}
+function apply(r,ops){let x=create(r);for(const op of ops||[]){if(op.type==='transferAtom'){const q=transferAtom(x,op.fromIndex,op.atomId,op.toIndex);if(!q.ok)return q;x=q.value.reaction;}else if(op.type==='transferProton'){const q=transferProton(x,op.fromIndex,op.toIndex,op.hydrogenId,op.targetAtomId);if(!q.ok)return q;x=q.value.reaction;}else return fail('CHE.E.INVALID_OPERATION','Nieznana operacja',{operation:op.type});}x.validation=validate(x).value;return ok(x);}
+C.REACTIONSET={version:'2.20',create,roles,balance,mapGraphs,diff,transferAtom,transferProton,validate,apply};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 42]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{}, clone=o=>JSON.parse(JSON.stringify(o));
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const fail=(c,m,x)=>C.FAIL?C.FAIL(c,m,x):{ok:false,error:{code:c,message:m,context:x}};
+const canonical=m=>C.STRUCTURE.canonicalize(m||{});
+function adjacency(m){return C.STRUCTURE.adjacency(canonical(m));}
+function graphSignature(m){const x=canonical(m),atoms=[...x.atoms].sort((a,b)=>String(a.element).localeCompare(String(b.element))||String(a.id).localeCompare(String(b.id))), rel=adjacency(x);return atoms.map(a=>{const ns=(rel[a.id]||[]).map(n=>`${n.bond.order}:${x.atoms.find(z=>z.id===n.atomId)?.element||'?'}`).sort().join(',');return `${a.element}:${Number(a.charge||a.formalCharge||0)}:[${ns}]`;}).join('|');}
+function equivalent(a,b){const x=canonical(a),y=canonical(b);const fa=C.RECONSTRUCT?.formula(x).value?.formula||C.RECONSTRUCT?.formula(x)?.formula, fb=C.RECONSTRUCT?.formula(y).value?.formula||C.RECONSTRUCT?.formula(y)?.formula;if(fa&&fb&&fa!==fb)return ok({equivalent:false,reason:'FORMULA_MISMATCH',formulaA:fa,formulaB:fb});return ok({equivalent:graphSignature(x)===graphSignature(y),signatureA:graphSignature(x),signatureB:graphSignature(y),method:'degree-signature'});}
+function groupPriorities(m){const groups=C.STRUCTURE.detectFunctionalGroups(canonical(m)).value||[], rank={carboxyl:100,amide:90,aldehyde:80,ketone:75,ester:70,acid:65,amine:60,hydroxyl:50,ether:40,alkene:30,alkyne:30,aromatic:20,halogen:10};return groups.map(g=>({...g,priority:rank[g.type]||0})).sort((a,b)=>b.priority-a.priority);}
+function resonanceSystems(m){const x=canonical(m),A=adjacency(x),candidates=[];for(const b of x.bonds){if(Number(b.order)!==2)continue;const a=x.atoms.find(z=>z.id===b.atomA),z=x.atoms.find(q=>q.id===b.atomB);if(!a||!z)continue;const neighA=(A[a.id]||[]).some(n=>Number(n.bond.order)>=1&&n.atomId!==z.id);const neighZ=(A[z.id]||[]).some(n=>Number(n.bond.order)>=1&&n.atomId!==a.id);if(neighA||neighZ)candidates.push({bondId:b.id,atoms:[a.id,z.id],type:'conjugated-double-bond-candidate'});}return ok({moleculeId:x.id,candidates,complete:false,note:'kandydaci strukturalni; brak pełnego generatora form rezonansowych'});}
+function tautomerTransforms(m){const x=canonical(m),A=adjacency(x),out=[];for(const a of x.atoms){if(!['O','N','S'].includes(a.element))continue;const h=(A[a.id]||[]).find(n=>x.atoms.find(z=>z.id===n.atomId)?.element==='H');if(!h)continue;const heavy=(A[a.id]||[]).find(n=>x.atoms.find(z=>z.id===n.atomId)?.element==='C'&&Number(n.bond.order)===1);if(heavy)out.push({type:'prototropic-candidate',protonAtom:h.atomId,heteroAtom:a.id,carbonAtom:heavy.atomId});}return ok({moleculeId:x.id,candidates:out,complete:false});}
+function stereoDescriptors(m){const x=canonical(m),A=adjacency(x),centers=[];for(const a of x.atoms){const ns=(A[a.id]||[]).map(n=>n.atomId);const uniq=new Set(ns.map(id=>{const q=x.atoms.find(z=>z.id===id);return q?`${q.element}:${q.charge||0}`:'?';}));if(ns.length===4&&uniq.size===4)centers.push({atomId:a.id,element:a.element,descriptor:null,reason:'four distinct neighbor signatures; descriptor requires CIP + geometry'});}const ez=x.bonds.filter(b=>Number(b.order)===1&&b.stereochemistry).map(b=>({bondId:b.id,descriptor:b.stereochemistry}));return ok({moleculeId:x.id,centers,EZ:ez,complete:false});}
+function conformerRecord(m,coords,meta){const x=canonical(m);return ok({id:meta?.id||`conf-${Date.now()}`,moleculeId:x.id,coordinates:clone(coords||{}),energy:meta?.energy??null,source:meta?.source||'USER_DEFINED',active:!!meta?.active});}
+function classify(a,b){const eq=equivalent(a,b);if(!eq.ok)return eq;const sa=C.ORGANIC?.stereochemistry?.(a)?.value, sb=C.ORGANIC?.stereochemistry?.(b)?.value;if(eq.value.equivalent)return ok({relationship:'IDENTICAL_OR_UNRESOLVED'});return ok({relationship:'DIFFERENT_GRAPH_SIGNATURE',sameFormula:true,stereoA:sa,stereoB:sb});}
+const prior=C.ORGANIC||{};C.ORGANIC={...prior,version:'2.21',graphSignature,equivalent,groupPriorities,resonanceSystems,tautomerTransforms,stereoDescriptors,conformerRecord,classify};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 43]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{},ok=v=>C.OK?C.OK(v):{ok:true,value:v},canon=m=>C.STRUCTURE.canonicalize(m||{});
+const atomMap=(m)=>new Map((m.atoms||[]).map(a=>[String(a.id),a]));
+const bondOrder=(m,id)=> (m.bonds||[]).filter(b=>b.atomA===id||b.atomB===id).reduce((s,b)=>s+(Number(b.order)||1),0);
+function counts(m){const o={};for(const a of canon(m).atoms||[])o[a.element]=(o[a.element]||0)+1;return o}
+function hill(c){return Object.keys(c).sort((a,b)=>a==='C'?-1:b==='C'?1:a==='H'?-1:b==='H'?1:a.localeCompare(b)).map(e=>e+(c[e]===1?'':c[e])).join('')}
+function formula(m){const x=canon(m),c=counts(x),q=+x.charge||0;return ok({formula:hill(c)+(q?(q===1?'^+':q===-1?'^-':`^${q>0?q+'+':Math.abs(q)+'-'}`):''),counts:c,charge:q,notation:'Hill'})}
+function structural(m){const x=canon(m),A=C.STRUCTURE.adjacency(x),parts=[];for(const a of x.atoms){const ns=(A[a.id]||[]).map(n=>{const q=x.atoms.find(z=>z.id===n.atomId);return `${q?.element||'?'}${+n.bond.order>1?`(${n.bond.order})`:''}`}).sort();parts.push(`${a.element}[${ns.join(',')}]`)}return ok({text:parts.sort().join('–')})}
+function implicitH(m){
+  const x=canon(m);
+  const v=C.VALIDATOR?.validate?.(x);
+  if(v?.ok&&v.value?.implicitH?.byAtom)return v.value.implicitH.byAtom;
+  const target={H:1,C:4,N:3,O:2,F:1,Cl:1,Br:1,I:1,S:2,P:3};
+  const out={};for(const a of x.atoms||[]){const q=Number(a.formalCharge??a.charge??0),bo=bondOrder(x,a.id);out[a.id]=Math.max(0,(target[a.element]??0)-bo+q)}
+  return out;
+}
+function tokenFor(x,a,h){
+  if(a.element==='H')return 'H';
+  const q=Number(a.formalCharge??a.charge??0), suffix=h>0?`H${h===1?'':h}`:'';
+  const charge=q===0?'':q>0?`^${q===1?'+':q+'+'}`:`^${Math.abs(q)===1?'-':Math.abs(q)+'-'}`;
+  return `${a.element}${suffix}${charge}`;
+}
+function carbonGraph(x){
+  const A=C.STRUCTURE.adjacency(x), carbon=(x.atoms||[]).filter(a=>a.element==='C').map(a=>a.id);
+  const seen=new Set(), comps=[];
+  for(const start of carbon){if(seen.has(start))continue;const q=[start],ids=[];seen.add(start);while(q.length){const id=q.shift();ids.push(id);for(const n of A[id]||[])if(x.atoms.find(a=>a.id===n.atomId)?.element==='C'&&!seen.has(n.atomId)){seen.add(n.atomId);q.push(n.atomId)}}comps.push(ids)}
+  return comps;
+}
+function longestCarbonPath(x,ids){
+  const A=C.STRUCTURE.adjacency(x), set=new Set(ids);let best=[];
+  function dfs(id,path){if(path.length>best.length)best=path.slice();for(const n of A[id]||[])if(set.has(n.atomId)&&!path.includes(n.atomId))dfs(n.atomId,path.concat(n.atomId))}
+  ids.forEach(id=>dfs(id,[id]));return best;
+}
+function semiStructural(m){
+  const x=canon(m),H=implicitH(x),am=atomMap(x), A=C.STRUCTURE.adjacency(x), parts=[];
+  for(const ids of carbonGraph(x)){
+    const path=longestCarbonPath(x,ids);
+    if(path.length){
+      const chain=path.map(id=>tokenFor(x,am.get(id),Number(H[id])||0));
+      const branches=[];
+      for(const id of path)for(const n of A[id]||[]){
+        if(path.includes(n.atomId))continue;
+        const a=am.get(n.atomId);if(!a)continue;
+        branches.push({at:id,token:tokenFor(x,a,Number(H[a.id])||0),order:Number(n.bond.order)||1});
+      }
+      parts.push(chain.map((t,i)=>i<chain.length-1?t+'-' : t).join('')+(branches.length?`[${branches.map(b=>`${b.token}${b.order>1?'='+b.order:''}@${b.at}`).join(',')}]`:'')); 
+    }
+  }
+  if(!parts.length){
+    const toks=(x.atoms||[]).filter(a=>a.element!=='H').map(a=>tokenFor(x,a,Number(H[a.id])||0));
+    return ok({text:toks.join(''),notation:'semi-structural',fallback:true,reason:'no carbon skeleton'});
+  }
+  return ok({text:parts.join(' + '),notation:'semi-structural',fallback:false,implicitH:H});
+}
+function skeletal(m){
+  const x=canon(m);return ok({atoms:x.atoms.filter(a=>a.element!=='H').map(a=>({id:a.id,element:a.element})),bonds:x.bonds.filter(b=>x.atoms.find(a=>a.id===b.atomA)?.element!=='H'&&x.atoms.find(a=>a.id===b.atomB)?.element!=='H'),notation:'graph-skeleton'})}
+function valenceElectrons(el){return ({H:1,C:4,N:5,O:6,F:7,P:5,S:6,Cl:7,Br:7,I:7}[el]??0)}
+function lewis(m){
+  const x=canon(m),H=implicitH(x),am=atomMap(x),atoms=[];
+  for(const a of x.atoms){const explicitFc=Number(a.formalCharge??a.charge??0); const anyExplicit=(x.atoms||[]).some(z=>Number(z.formalCharge??z.charge??0)!==0); const fc=explicitFc!==0?explicitFc:((Number(x.charge||0)&&!anyExplicit&&a.element!=='H'&&a.id===((x.atoms||[]).find(z=>z.element!=='H')||{}).id)?Number(x.charge||0):0),bo=bondOrder(x,a.id),ih=Number(H[a.id])||0,ve=valenceElectrons(a.element);
+    const effectiveBondOrder=bo+ih;
+    const lp=Math.max(0,Math.round((ve-fc-effectiveBondOrder)/2));
+    atoms.push({id:a.id,element:a.element,formalCharge:fc,bondOrderSum:bo,effectiveBondOrder,implicitHydrogens:ih,valenceElectrons:ve,lonePairs:lp,nonbondingElectrons:lp*2});
+  }
+  return ok({atoms,bonds:x.bonds.map(b=>({id:b.id,atomA:b.atomA,atomB:b.atomB,order:Number(b.order)||1,electronPairs:(Number(b.order)||1)})),charge:Number(x.charge||0),level:'EDUCATIONAL',source:'COMPUTED'});
+}
+function representations(m){return ok({formula:formula(m).value,structural:structural(m).value,semiStructural:semiStructural(m).value,skeletal:skeletal(m).value,lewis:lewis(m).value})}
+function validate(m){const r=representations(m);return ok({ok:!!canon(m).atoms?.length,errors:canon(m).atoms?.length?[]:[{code:'EMPTY_GRAPH'}],representations:r.value})}
+C.REPRESENTATION={version:'2.32',counts,formula,structural,semiStructural,skeletal,lewis,representations,validate};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 44]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';const C=g.CHE=g.CHE||{},ok=v=>C.OK?C.OK(v):{ok:true,value:v};function sourceMeta(source,method){const a=['EXPERIMENTAL','COMPUTED','ESTIMATED','EDUCATIONAL_APPROXIMATION','USER_DEFINED','DATABASE'];return{source:a.includes(source)?source:'EDUCATIONAL_APPROXIMATION',method:method||'unspecified'}}function normalize(c){const o={};for(const[id,p]of Object.entries(c||{}))if(Number.isFinite(+p?.x)&&Number.isFinite(+p?.y))o[id]={x:+p.x,y:+p.y,...(Number.isFinite(+p?.z)?{z:+p.z}:{})};return o}function distances(m,c){const x=C.STRUCTURE.canonicalize(m||{}),p=normalize(c),o=[];for(const b of x.bonds){const a=p[b.atomA],d=p[b.atomB];if(a&&d)o.push({bondId:b.id,distance:Math.hypot(a.x-d.x,a.y-d.y,(a.z||0)-(d.z||0)),order:+b.order||1})}return o}function angleList(m,c){const x=C.STRUCTURE.canonicalize(m||{}),p=normalize(c),A=C.STRUCTURE.adjacency(x),o=[];for(const q of x.atoms){const ns=(A[q.id]||[]).map(n=>n.atomId).filter(id=>p[id]&&p[q.id]);for(let i=0;i<ns.length;i++)for(let j=i+1;j<ns.length;j++){const z=p[q.id],u=p[ns[i]],v=p[ns[j]],ax=u.x-z.x,ay=u.y-z.y,az=(u.z||0)-(z.z||0),bx=v.x-z.x,by=v.y-z.y,bz=(v.z||0)-(z.z||0),den=Math.hypot(ax,ay,az)*Math.hypot(bx,by,bz);if(den)o.push({center:q.id,a:ns[i],b:ns[j],angleDeg:Math.acos(Math.max(-1,Math.min(1,(ax*bx+ay*by+az*bz)/den)))*180/Math.PI})}}return o}function conformer(m,c,meta){const x=C.STRUCTURE.canonicalize(m||{}),p=normalize(c),missing=x.atoms.filter(a=>!p[a.id]).map(a=>a.id);return ok({moleculeId:x.id,coordinates:p,missing,source:sourceMeta(meta?.source,meta?.method),energy:meta?.energy??null,units:meta?.units||'Å'})}function validate(r){const e=[];if(!r?.moleculeId)e.push({code:'NO_MOLECULE_ID'});if(!r?.coordinates)e.push({code:'NO_COORDINATES'});return ok({ok:!e.length,errors:e})}C.GEOMETRY_CONTRACT={version:'2.23',sourceMeta,normalize,distances,angleList,conformer,validate}})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 45]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';const C=g.CHE=g.CHE||{},ok=v=>C.OK?C.OK(v):{ok:true,value:v},canon=m=>C.STRUCTURE.canonicalize(m||{});function key(m,a){const A=C.STRUCTURE.adjacency(m)[a.id]||[];return`${a.element}|${+(a.formalCharge??a.charge??0)}|${A.length}|${A.map(n=>`${m.atoms.find(z=>z.id===n.atomId)?.element||'?'}:${+n.bond.order||1}`).sort().join(',')}`}function map(a,b){const x=canon(a),y=canon(b),used=new Set(),pairs=[],ambiguous=[];for(const ax of x.atoms){const c=y.atoms.filter(by=>!used.has(by.id)&&key(y,by)===key(x,ax));if(c.length===1){pairs.push({from:ax.id,to:c[0].id,confidence:1});used.add(c[0].id)}else if(c.length>1)ambiguous.push({from:ax.id,candidates:c.map(z=>z.id)})}return ok({pairs,ambiguous,complete:pairs.length===x.atoms.length&&pairs.length===y.atoms.length&&!ambiguous.length})}function reactionMap(r){const pairs=[];for(let i=0;i<Math.min(r?.reactants?.length||0,r?.products?.length||0);i++)pairs.push({reactantIndex:i,productIndex:i,...map(r.reactants[i],r.products[i]).value});return ok({pairs,complete:pairs.every(p=>p.complete)})}C.MAPPING={version:'2.24',map,reactionMap}})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 46]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';
+const C=g.CHE=g.CHE||{},ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+function describe(m){
+ const x=C.STRUCTURE.canonicalize(m||{}),f=C.REPRESENTATION.formula(x).value,G=C.STRUCTURE.detectFunctionalGroups(x).value||[];
+ const groups=G.map(q=>q.type), carbon=(x.atoms||[]).filter(a=>a.element==='C').length;
+ const fgName={carboxyl:'kwas karboksylowy',hydroxyl:'alkohol/fenol',carbonyl:'związek karbonylowy',aldehyde:'aldehyd',ketone:'keton'};
+ let label=groups.length?fgName[groups[0]]||`związek z grupą ${groups[0]}`:'związek nieorganiczny';
+ if(carbon===1&&groups.includes('carboxyl'))label='kwas metanowy';
+ if(carbon===2&&groups.includes('carboxyl'))label='kwas etanowy';
+ return ok({formula:f.formula,label,functionalGroups:groups,carbonCount:carbon,systematic:{family:groups[0]||null,chainLength:carbon||null},complete:false,scope:'graph-derived structural nomenclature; not full IUPAC'});
+}
+function validate(m){const d=describe(m);return ok({ok:!!d.value.formula,complete:false,scope:d.value.scope})}
+C.NOMENCLATURE={version:'2.33',describe,validate};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 47]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){'use strict';const C=g.CHE=g.CHE||{},ok=v=>C.OK?C.OK(v):{ok:true,value:v},T=['Entity','Quantity','Unit','Dimension','Measurement','Uncertainty','Equation','Graph','Geometry','State','Event','Transformation','Simulation','EducationalProjection'];function envelope(type,value,meta){return ok({type,version:'2.26',value,meta:{source:meta?.source||'CHE.ENGINE',confidence:meta?.confidence??null}})}function quantity(value,unit,dimension,meta){return envelope('Quantity',{value:+value,unit,dimension},meta)}function measurement(value,unit,dimension,uncertainty,meta){return envelope('Measurement',{value:+value,unit,dimension,uncertainty:uncertainty??null},meta)}function projection(value,level,meta){return envelope('EducationalProjection',{level:level||'default',value},meta)}function validate(x){const e=[];if(!x||!T.includes(x.type))e.push({code:'INVALID_TYPE'});if(!x?.meta?.source)e.push({code:'MISSING_SOURCE'});return ok({ok:!e.length,errors:e})}C.SCIENCE={version:'2.38',TYPES:T,envelope,quantity,measurement,projection,validate}})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 48]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';const C=g.CHE=g.CHE||{};
+function run(){const out=[],add=(id,name,ok,detail)=>out.push({id,name,ok:!!ok,detail:detail||''});
+ const w=C.STRUCTURE.createMolecule({id:'audit-water',atoms:[{id:'O1',element:'O'},{id:'H1',element:'H'},{id:'H2',element:'H'}],bonds:[{id:'b1',atomA:'O1',atomB:'H1',order:1},{id:'b2',atomA:'O1',atomB:'H2',order:1}]});
+ const vw=C.STRUCTURE.validate(w);add('STR-001','graf H2O',vw.ok,w.formula);add('STR-002','grupy H2O',C.STRUCTURE.detectFunctionalGroups(w).ok);
+ const acid=C.STRUCTURE.createMolecule({id:'audit-acid',atoms:[{id:'C1',element:'C'},{id:'O1',element:'O'},{id:'O2',element:'O'},{id:'H1',element:'H'}],bonds:[{id:'c-o',atomA:'C1',atomB:'O1',order:2},{id:'c-oh',atomA:'C1',atomB:'O2',order:1},{id:'o-h',atomA:'O2',atomB:'H1',order:1}]});
+ const fg=C.STRUCTURE.detectFunctionalGroups(acid).value||[];add('STR-003','karboksylowa',fg.some(x=>x.type==='carboxyl'));
+ const rx=C.TRANSFORM.createReaction({id:'audit-rx',reactants:[w],products:[w],conditions:{catalyst:null,solvent:'water'}});const vr=C.TRANSFORM.validateReaction(rx);add('RX-001','bilans H2O',vr.ok&&vr.value.validation.balance.ok);
+ const broken=C.TRANSFORM.applyReaction(w,{bondsBroken:['b1']});add('RX-002','zerwanie wiązania',broken.ok&&broken.value.molecule.bonds.length===1);
+ const changed=C.TRANSFORM.diff(w,broken.value.molecule);add('RX-003','diff wykrywa zerwanie',changed.bondsBroken.length===1);
+ const order=C.TRANSFORM.applyReaction(acid,{bondOrderChanges:[{bondId:'c-o',to:1}]});add('RX-004','zmiana rzędu wiązania',order.ok&&order.value.changes.bondOrderChanges.length===1);
+ const organic=C.ORGANIC?.resonance?.(acid);add('ORG-001','analiza rezonansu',!!organic?.ok);const taut=C.ORGANIC?.tautomerCandidates?.(acid);add('ORG-002','kandydaci tautomerii',!!taut?.ok);const st=C.ORGANIC?.stereochemistry?.(acid);add('ORG-003','analiza stereochemii',!!st?.ok);
+ const geo=C.GEOMETRY?.geometry?.(acid,{source:'EDUCATIONAL_APPROXIMATION'});add('GEO-001','geometria wspólna',!!geo?.ok);const vs=C.GEOMETRY?.vsepr?.(w,'O1');add('GEO-002','VSEPR H2O',!!vs?.ok&&vs.value.domains.stericNumber===4);const gv=C.GEOMETRY?.validate?.(acid,geo?.value?.layout2D);add('GEO-003','walidacja geometrii',!!gv?.ok);
+ const rs20=C.REACTIONSET?.create?.({reactants:[w],products:[w],components:[{id:'audit-water',role:'substrate'}]});const rv20=C.REACTIONSET?.validate?.(rs20);add('RXSET-001','reakcja wieloskładnikowa',!!rv20?.ok&&rv20.value.ok);const gp21=C.ORGANIC?.groupPriorities?.(acid);add('ORG-004','priorytet grup funkcyjnych',Array.isArray(gp21)&&gp21.some(x=>x.type==='carboxyl'));const eq21=C.ORGANIC?.equivalent?.(acid,acid);add('ORG-005','równoważność grafu',!!eq21?.ok&&eq21.value.equivalent);const cv=C.VISUAL?.moleculeCV?.(acid);add('VIS-001','CV cząsteczki',!!cv?.ok&&cv.value.functionalGroups.length>0);const bv=C.VISUAL?.bondView?.(acid,'c-o');add('VIS-002','widok wiązania',!!bv?.ok);const gv2=C.VISUAL?.groupView?.(acid,'carboxyl');add('VIS-003','widok grupy',!!gv2?.ok);
+ const rep=C.REPRESENTATION?.representations?.(acid);add('REP-001','reprezentacje wzoru',!!rep?.ok&&!!rep.value.formula.formula);const gc=C.GEOMETRY_CONTRACT?.conformer?.(acid,{}, {source:'EDUCATIONAL_APPROXIMATION'});add('GEO-004','kontrakt geometrii',!!gc?.ok&&gc.value.source.source==='EDUCATIONAL_APPROXIMATION');const mp=C.MAPPING?.map?.(acid,acid);add('MAP-001','mapowanie grafu',!!mp?.ok&&mp.value.complete);const nm=C.NOMENCLATURE?.describe?.(acid);add('NOM-001','deskryptor',!!nm?.ok&&!!nm.value.formula);const sci=C.SCIENCE?.quantity?.(1,'mol','amount');add('SCI-001','Quantity',!!sci?.ok&&sci.value.type==='Quantity');
+ return out;} C.STRUCTURE_AUDIT={run};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 49]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{}, D=C.DATA||{};
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const fail=(code,message,context)=>C.FAIL?C.FAIL(code,message,context):{ok:false,error:{code,message,context}};
+const clone=o=>JSON.parse(JSON.stringify(o));
+const VALENCE={
+ H:[1],B:[3],C:[4],N:[3,4],O:[2],F:[1],P:[3,5],S:[2,4,6],Cl:[1],Br:[1],I:[1],
+ Na:[1],K:[1],Li:[1],Mg:[2],Ca:[2],Zn:[2],Al:[3],Si:[4]
+};
+const MAX={H:1,B:3,C:4,N:4,O:2,F:1,P:5,S:6,Cl:1,Br:1,I:1};
+function chargeOf(a){return Number(a?.formalCharge ?? a?.charge ?? 0);}
+function effectiveAtomCharge(m,a){
+ const explicit=(a?.formalCharge!=null||a?.charge!=null)?chargeOf(a):0;
+ if(explicit!==0) return explicit;
+ const q=Number(m?.charge||0); if(!q) return 0;
+ const atoms=m?.atoms||[];
+ const carrier=atoms.filter(x=>x.element!=='H').sort((u,v)=>{
+   const rank=x=>({N:5,O:5,S:4,P:4,C:3,Cl:2,Br:2,I:2,F:2}[x.element]||1);
+   return rank(v)-rank(u);
+ })[0];
+ return carrier&&String(carrier.id)===String(a?.id)?q:0;
+}
+function orderOf(b){return Number(b?.order||1);}
+function adjacency(m){
+ const A={};(m?.atoms||[]).forEach(a=>A[a.id]=[]);
+ (m?.bonds||[]).forEach(b=>{if(A[b.atomA]&&A[b.atomB]){A[b.atomA].push(b);A[b.atomB].push(b);}});
+ return A;
+}
+function bondOrderSum(m,id){return (adjacency(m)[id]||[]).reduce((s,b)=>s+orderOf(b),0);}
+function implicitHForAtom(m,atomId){
+ const a=(m?.atoms||[]).find(x=>String(x.id)===String(atomId));
+ if(!a)return fail('CHE.E.DATA_NOT_FOUND','Nie znaleziono atomu',{atomId});
+ if(a.element==='H')return ok({atomId:a.id,hydrogenCount:0,source:'COMPUTED',reason:'hydrogen'});
+ if(a.metadata?.generatedBy==='CHE.RECONSTRUCT')return ok({atomId:a.id,hydrogenCount:0,source:'DATABASE',reason:'explicit'});
+ const q=effectiveAtomCharge(m,a), sum=bondOrderSum(m,a.id), vals=VALENCE[a.element];
+ if(!vals)return ok({atomId:a.id,hydrogenCount:null,source:'ESTIMATED',reason:'NO_VALENCE_RULE'});
+ let target=vals[0];
+ if(a.element==='N' && q>0) target=4;
+ if(a.element==='O' && q<0) target=1;
+ if(a.element==='S' || a.element==='P'){
+   const candidates=vals.filter(v=>v>=sum);
+   target=candidates.length?candidates[0]:vals[vals.length-1];
+ }
+ const h=Math.max(0,target-sum);
+ return ok({atomId:a.id,hydrogenCount:h,source:'COMPUTED',targetValence:target,bondOrderSum:sum,charge:q});
+}
+function implicitHydrogen(m){
+ const x=C.STRUCTURE?.canonicalize?C.STRUCTURE.canonicalize(m||{}):clone(m||{});
+ const atoms=(x.atoms||[]).map(a=>implicitHForAtom(x,a.id).value||{atomId:a.id,hydrogenCount:null});
+ const total=atoms.reduce((s,a)=>s+(Number.isFinite(a.hydrogenCount)?a.hydrogenCount:0),0);
+ return ok({atoms,total,source:'COMPUTED',explicitHydrogenCount:(x.atoms||[]).filter(a=>a.element==='H').length});
+}
+function valenceCheck(m){
+ const x=C.STRUCTURE?.canonicalize?C.STRUCTURE.canonicalize(m||{}):clone(m||{}), A=adjacency(x), issues=[],warnings=[];
+ for(const a of x.atoms||[]){
+   const sum=(A[a.id]||[]).reduce((s,b)=>s+orderOf(b),0), q=chargeOf(a), vals=VALENCE[a.element], max=MAX[a.element];
+   if(max!=null && sum>max+1e-9) issues.push({code:'VALENCE_EXCEEDED',atomId:a.id,element:a.element,bondOrderSum:sum,maxValence:max,charge:q});
+   else if(vals && !vals.some(v=>Math.abs(v-sum)<1e-9 || v>=sum)){
+     warnings.push({code:'UNUSUAL_VALENCE',atomId:a.id,element:a.element,bondOrderSum:sum,allowed:vals,charge:q});
+   }
+ }
+ return {ok:issues.length===0,issues,warnings};
+}
+function chargeCheck(m){
+ const x=m||{}, atomCharge=(x.atoms||[]).reduce((s,a)=>s+chargeOf(a),0), declared=Number(x.charge||0);
+ return {ok:Math.abs(atomCharge-declared)<1e-9,atomChargeSum:atomCharge,moleculeCharge:declared};
+}
+function validate(m,options){
+ const x=C.STRUCTURE?.canonicalize?C.STRUCTURE.canonicalize(m||{}):clone(m||{});
+ const base=C.STRUCTURE?.validate?C.STRUCTURE.validate(x):{ok:true,issues:[],warnings:[]};
+ const v=valenceCheck(x), c=chargeCheck(x), h=implicitHydrogen(x);
+ const issues=[...(base.issues||[]),...v.issues];
+ const warnings=[...(base.warnings||[]),...v.warnings];
+ if(!c.ok) issues.push({code:'CHARGE_MISMATCH',atomChargeSum:c.atomChargeSum,moleculeCharge:c.moleculeCharge});
+ if(options?.requireKnownImplicitH && (h.value.atoms||[]).some(a=>a.hydrogenCount==null)) warnings.push({code:'IMPLICIT_H_UNKNOWN'});
+ const status=issues.length?'INVALID':warnings.length?'VALID_WITH_WARNING':'VALID';
+ return ok({ok:issues.length===0,status,issues,warnings,charge:c,implicitH:h.value,formula:x.formula,atomCount:x.atoms.length,bondCount:x.bonds.length,source:'COMPUTED'});
+}
+C.VALIDATOR={version:'2.27',validate,valenceCheck,chargeCheck,implicitHForAtom,implicitHydrogen,adjacency,bondOrderSum,allowedValences:clone(VALENCE)};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 50]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{};
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const canon=m=>C.STRUCTURE.canonicalize(m||{});
+const atomKey=a=>[a.element,Number(a.formalCharge??a.charge??0),a.isotope??'',a.aromatic?1:0].join(':');
+const bondKey=b=>String(Number(b.order||1));
+function adj(m){
+ const A={};(m.atoms||[]).forEach(a=>A[a.id]=[]);
+ (m.bonds||[]).forEach(b=>{if(A[b.atomA]&&A[b.atomB]){A[b.atomA].push({id:b.atomB,bond:b});A[b.atomB].push({id:b.atomA,bond:b});}});
+ return A;
+}
+function degreeSig(m,id,A){
+ return (A[id]||[]).map(x=>atomKey(m.atoms.find(a=>a.id===x.id))+'@'+bondKey(x.bond)).sort().join(',');
+}
+function initialColors(m,A){
+ const arr=m.atoms.map(a=>({id:a.id,key:atomKey(a)+'|d'+(A[a.id]||[]).length+'|'+degreeSig(m,a.id,A)}));
+ const dict={}; let next=0;
+ return Object.fromEntries(arr.map(x=>{if(dict[x.key]==null)dict[x.key]=next++;return [x.id,dict[x.key]];}));
+}
+function refine(m,A,colors){
+ let cur={...colors};
+ for(let round=0;round<Math.max(2,m.atoms.length);round++){
+   const sigs=m.atoms.map(a=>({id:a.id,s:[atomKey(a),cur[a.id],...(A[a.id]||[]).map(x=>cur[x.id]+':'+bondKey(x.bond)).sort()].join('|')}));
+   const dict={},nxt={};let n=0;
+   for(const x of sigs.sort((u,v)=>u.s.localeCompare(v.s))){if(dict[x.s]==null)dict[x.s]=n++;nxt[x.id]=dict[x.s];}
+   let same=true;for(const id of Object.keys(nxt))if(nxt[id]!==cur[id]){same=false;break;}
+   cur=nxt;if(same)break;
+ }
+ return cur;
+}
+function candidateOrder(m,A,colors){
+ return [...m.atoms].sort((a,b)=>(colors[a.id]-colors[b.id])||(A[a.id].length-A[b.id].length)||String(a.id).localeCompare(String(b.id)));
+}
+function compatible(a,b,m1,m2,A1,A2,map,rev){
+ if(atomKey(a)!==atomKey(b))return false;
+ if((A1[a.id]||[]).length!==(A2[b.id]||[]).length)return false;
+ for(const e of A1[a.id]||[]){
+   if(map[e.id]){
+     const target=map[e.id], edge=(A2[b.id]||[]).find(x=>x.id===target);
+     if(!edge || bondKey(edge.bond)!==bondKey(e.bond))return false;
+   }
+ }
+ return true;
+}
+function isomorphic(left,right,options){
+ const a=canon(left),b=canon(right);
+ if(a.atoms.length!==b.atoms.length||a.bonds.length!==b.bonds.length)return ok({isomorphic:false,mapping:{},reason:'COUNT_MISMATCH'});
+ const A=adj(a),B=adj(b), ca=refine(a,A,initialColors(a,A)), cb=refine(b,B,initialColors(b,B));
+ const counts=x=>Object.values(x).reduce((o,v)=>(o[v]=(o[v]||0)+1,o),{});
+ if(JSON.stringify(Object.values(counts(ca)).sort())!==JSON.stringify(Object.values(counts(cb)).sort()))return ok({isomorphic:false,mapping:{},reason:'COLOR_CLASS_MISMATCH'});
+ const order=candidateOrder(a,A,ca), map={},rev={};let nodes=0,found=null,limit=Number(options?.limit||100000);
+ function dfs(i){
+   if(found||nodes++>limit)return;
+   if(i===order.length){found={...map};return;}
+   const x=order[i], candidates=b.atoms.filter(y=>cb[y.id]===ca[x.id]&&!rev[y.id]);
+   for(const y of candidates){
+     if(!compatible(x,y,a,b,A,B,map,rev))continue;
+     map[x.id]=y.id;rev[y.id]=x.id;dfs(i+1);if(found)return;delete map[x.id];delete rev[y.id];
+   }
+ }
+ dfs(0);
+ return ok({isomorphic:!!found,mapping:found||{},nodes,limit,algorithm:'VF2-style backtracking + WL refinement'});
+}
+function canonicalLabel(m,options){
+ const x=canon(m),A=adj(x),colors=refine(x,A,initialColors(x,A)), order=candidateOrder(x,A,colors).map(a=>a.id);
+ const limit=Number(options?.limit||200000);let nodes=0,best=null;
+ const map={},used=new Set();
+ function serialize(ordering){
+   const pos=Object.fromEntries(ordering.map((id,i)=>[id,i]));
+   const atoms=ordering.map(id=>{const a=x.atoms.find(z=>z.id===id);return atomKey(a);}).join(';');
+   const bonds=x.bonds.map(b=>{const i=pos[b.atomA],j=pos[b.atomB];return [Math.min(i,j),Math.max(i,j),bondKey(b)].join(',');}).sort().join(';');
+   return atoms+'||'+bonds;
+ }
+ const groups={};order.forEach(id=>(groups[colors[id]]??=[]).push(id));
+ const groupKeys=Object.keys(groups).sort((a,b)=>Number(a)-Number(b));
+ const slots=groupKeys.map(k=>groups[k]);
+ function permute(arr,cb){
+   const usedI=new Set(),cur=[];
+   function go(){if(nodes++>limit)return false;if(cur.length===arr.length)return cb(cur.slice());for(let i=0;i<arr.length;i++)if(!usedI.has(i)){usedI.add(i);cur.push(arr[i]);if(go()===false)return false;cur.pop();usedI.delete(i);}return true;}
+   return go();
+ }
+ function walk(g){
+   if(g===slots.length){const ids=[].concat(...slots.map((_,i)=>map['g'+i]||[]));const s=serialize(ids);if(best==null||s<best.label)best={label:s,ordering:ids};return;}
+ }
+ // Enumerate permutations within each refined color class; deterministic bounded search.
+ let choices=[[]];
+ for(const s of slots){
+   const next=[];
+   permute(s,p=>{for(const base of choices)next.push(base.concat(p));});
+   choices=next.slice(0,limit);
+   if(!choices.length)break;
+ }
+ if(choices.length)best={label:choices.map(ids=>serialize(ids)).sort()[0],ordering:choices.sort((u,v)=>serialize(u).localeCompare(serialize(v)))[0]};
+ return ok({label:best?.label||'',ordering:best?.ordering||[],algorithm:'WL refinement + bounded exact color-class permutation',complete:choices.length>0&&nodes<=limit,nodes,limit});
+}
+C.ISOMORPHISM={version:'2.28',isomorphic,canonicalLabel,adjacency:adj,refine};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 51]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{};
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const canon=m=>C.STRUCTURE.canonicalize(m||{});
+const atomKey=a=>[a.element,Number(a.formalCharge??a.charge??0),a.isotope??''].join(':');
+const adj=m=>C.ISOMORPHISM.adjacency(m);
+function neighborhood(m,id,A,depth){
+ let cur=new Set([id]),seen=new Set([id]),out=[];
+ for(let d=0;d<depth;d++){const nxt=new Set();for(const x of cur)for(const e of A[x]||[]){out.push(atomKey(m.atoms.find(a=>a.id===e.id))+':'+Number(e.bond.order||1));if(!seen.has(e.id)){seen.add(e.id);nxt.add(e.id);}}cur=nxt;}
+ return out.sort().join('|');
+}
+function atomCandidates(r,p,ra,pa,a,used){
+ const sigR=[atomKey(a),ra[a.id]?.length||0,neighborhood(r,a.id,ra,2)];
+ return p.atoms.filter(z=>!used.has(z.id)&&atomKey(z)===atomKey(a)).map(z=>{
+   const sigP=[atomKey(z),pa[z.id]?.length||0,neighborhood(p,z.id,pa,2)];
+   let score=0;if(sigR[1]===sigP[1])score+=3;if(sigR[2]===sigP[2])score+=5;
+   const exact=neighborhood(r,a.id,ra,3)===neighborhood(p,z.id,pa,3);if(exact)score+=4;
+   return {atom:z,score};
+ }).sort((u,v)=>v.score-u.score||String(u.atom.id).localeCompare(String(v.atom.id)));
+}
+function map(reactant,product,options){
+ const r=canon(reactant),p=canon(product),ra=adj(r),pa=adj(p),used=new Set(),mapping={},scores=[],unmatched=[];
+ const atoms=[...r.atoms].sort((a,b)=>(atomCandidates(r,p,ra,pa,b,used).length-atomCandidates(r,p,ra,pa,a,used).length)||String(a.id).localeCompare(String(b.id)));
+ for(const a of atoms){
+   const cs=atomCandidates(r,p,ra,pa,a,used), best=cs[0];
+   if(!best){unmatched.push({side:'reactant',atomId:a.id});continue;}
+   mapping[a.id]=best.atom.id;used.add(best.atom.id);scores.push({reactantAtom:a.id,productAtom:best.atom.id,score:best.score,candidates:cs.length});
+ }
+ p.atoms.forEach(a=>{if(!used.has(a.id))unmatched.push({side:'product',atomId:a.id});});
+ const avg=scores.length?scores.reduce((s,x)=>s+x.score,0)/scores.length:0;
+ const confidence=unmatched.length===0?(avg>=10?'HIGH':avg>=7?'MEDIUM':'LOW'):(scores.length?'PARTIAL':'NONE');
+ return ok({mapping,unmatched,scores,averageScore:avg,confidence,complete:unmatched.length===0,algorithm:'iterative neighborhood refinement + deterministic symmetry resolution'});
+}
+function mapReaction(reaction,options){
+ const rs=(reaction?.reactants||[]).map(canon),ps=(reaction?.products||[]).map(canon);
+ const R=[],P=[];rs.forEach((m,i)=>(m.atoms||[]).forEach(a=>R.push({atom:a,component:i,molecule:m,ref:i+':'+String(a.id)})));ps.forEach((m,i)=>(m.atoms||[]).forEach(a=>P.push({atom:a,component:i,molecule:m,ref:i+':'+String(a.id)})));
+ const used=new Set(),mapping={},unmatched=[],scores=[];
+ const key=a=>atomKey(a);
+ const neighborhoodFlat=(item)=>{if(!item)return '';const A=adj(item.molecule),sig=[];for(const e of A[item.atom.id]||[])sig.push(key(item.molecule.atoms.find(a=>a.id===e.id))+':'+e.bond.order);return sig.sort().join('|');};
+ const atoms=[...R].sort((a,b)=>(P.filter(y=>!used.has(y.ref)&&key(a.atom)===key(y.atom)).length-P.filter(y=>!used.has(y.ref)&&key(b.atom)===key(y.atom)).length)||String(a.ref).localeCompare(String(b.ref)));
+ for(const x of atoms){
+   const cs=P.filter(y=>!used.has(y.ref)&&key(x.atom)===key(y.atom)).map(y=>({y,score:(x.component===y.component?1:0)+(neighborhoodFlat(x)===neighborhoodFlat(y)?6:0)+(x.molecule.atoms.length===y.molecule.atoms.length?2:0)})).sort((u,v)=>v.score-u.score||String(u.y.ref).localeCompare(String(v.y.ref)));
+   if(!cs.length){unmatched.push({side:'reactant',component:x.component,atomId:x.atom.id,ref:x.ref});continue;}
+   const best=cs[0];mapping[x.ref]=best.y.ref;used.add(best.y.ref);scores.push(best.score);
+ }
+ P.forEach(x=>{if(!used.has(x.ref))unmatched.push({side:'product',component:x.component,atomId:x.atom.id,ref:x.ref});});
+ const avg=scores.length?scores.reduce((a,b)=>a+b,0)/scores.length:0;
+ return ok({mapping,unmatched,complete:!unmatched.length,confidence:!unmatched.length?(avg>=6?'HIGH':avg>=3?'MEDIUM':'LOW'):'PARTIAL',averageScore:avg,algorithm:'global iterative mapping with component-scoped atom references'});
+}
+C.MAPPING={version:'2.29',map,mapReaction};
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 52]', err && err.message ? err.message : err); } catch(_){}
+}
+
+try {
+
+(function(g){
+'use strict';
+const C=g.CHE=g.CHE||{};
+const ok=v=>C.OK?C.OK(v):{ok:true,value:v};
+const canon=m=>C.STRUCTURE.canonicalize(m||{});
+function counts(ms){const out={};for(const m of ms||[])for(const a of m.atoms||[]){const coef=Number(m?.coef||1);out[a.element]=(out[a.element]||0)+coef;}return out;}
+function charges(ms){return (ms||[]).reduce((s,m)=>s+Number(m.charge||0),0);}
+function bondSet(ms){const out=new Map();for(const m of ms||[])for(const b of m.bonds||[]){const k=[m.id,b.atomA,b.atomB].sort().join('|');out.set(k,Number(b.order||1));}return out;}
+function reactionBalance(r,p){
+ const a=counts(r),b=counts(p),els=[...new Set([...Object.keys(a),...Object.keys(b)])].sort(),delta={};
+ els.forEach(e=>delta[e]=(b[e]||0)-(a[e]||0));
+ const chargeDelta=charges(p)-charges(r);
+ return {ok:els.every(e=>delta[e]===0)&&chargeDelta===0,elements:els,delta,chargeLeft:charges(r),chargeRight:charges(p),chargeDelta};
+}
+function mapChanges(r,p,mapping){
+ const reverse=Object.fromEntries(Object.entries(mapping||{}).map(([a,b])=>[b,a]));
+ const R=new Map(),P=new Map(); const ref=(ci,id)=>ci+':'+String(id);
+ for(let i=0;i<(r||[]).length;i++)for(const b of r[i].bonds||[]){const k=[ref(i,b.atomA),ref(i,b.atomB)].sort().join('|');R.set(k,{...b,molecule:r[i].id,component:i});}
+ for(let i=0;i<(p||[]).length;i++)for(const b of p[i].bonds||[]){const pa=reverse[ref(i,b.atomA)]||ref(i,b.atomA),pz=reverse[ref(i,b.atomB)]||ref(i,b.atomB),k=[pa,pz].sort().join('|');P.set(k,{...b,molecule:p[i].id,component:i});}
+ const broken=[],formed=[],order=[];
+ R.forEach((b,k)=>{if(!P.has(k))broken.push(b);else if(Number(P.get(k).order)!==Number(b.order))order.push({before:b,after:P.get(k)});});
+ P.forEach((b,k)=>{if(!R.has(k))formed.push(b);});
+ return {bondsBroken:broken,bondsFormed:formed,bondOrderChanges:order};
+}
+function validate(reaction,options){
+ const r= reaction||{}, rs=(r.reactants||[]).map(canon), ps=(r.products||[]).map(canon), errors=[],warnings=[];
+ const rv=rs.map(C.VALIDATOR.validate),pv=ps.map(C.VALIDATOR.validate);
+ rv.forEach((v,i)=>{if(!v.value.ok)errors.push({code:'INVALID_REACTANT',index:i,validation:v.value});});
+ pv.forEach((v,i)=>{if(!v.value.ok)errors.push({code:'INVALID_PRODUCT',index:i,validation:v.value});});
+ const bal=reactionBalance(rs,ps);if(!bal.ok)errors.push({code:'REACTION_UNBALANCED',balance:bal});
+ const hasStructuralData = rs.some(m=>Array.isArray(m?.atoms)&&m.atoms.length) || ps.some(m=>Array.isArray(m?.atoms)&&m.atoms.length);
+ const shouldMap = !!C.MAPPING?.mapReaction && (hasStructuralData || !!options?.requireMapping || !!options?.strictMapping);
+ const mp = shouldMap ? (C.MAPPING.mapReaction({reactants:rs,products:ps},options).value || {complete:true,mapping:{}}) : {complete:true,mapping:{}};
+ if(shouldMap && !mp.complete)errors.push({code:'ATOM_MAPPING_INCOMPLETE',mapping:mp});
+ const changes = shouldMap ? mapChanges(rs,ps,mp.mapping) : {bondsBroken:[],bondsFormed:[],bondOrderChanges:[]};
+ const declared=r.changes||{};
+ const declaredCounts={broken:(declared.bondsBroken||[]).length,formed:(declared.bondsFormed||[]).length,orders:(declared.bondOrderChanges||[]).length};
+ if(options?.requireDeclaredChanges && !declaredCounts.broken&&!declaredCounts.formed&&!declaredCounts.orders)warnings.push({code:'CHANGES_INFERRED_ONLY'});
+ const conditions=r.conditions||{};
+ if(options?.requireConditions && !Object.values(conditions).some(v=>v!=null&&v!==''&&(Array.isArray(v)?v.length:true)))warnings.push({code:'NO_REACTION_CONDITIONS'});
+ const status=errors.length?'INVALID':warnings.length?'VALID_WITH_WARNING':'VALID';
+ return ok({ok:!errors.length,status,errors,warnings,balance:bal,mapping:mp,changes,source:'COMPUTED'});
+}
+function transform(reaction,options){
+ const v=validate(reaction,options);
+ if(!v.value.ok)return v;
+ const r=JSON.parse(JSON.stringify(reaction||{}));
+ r.changes=v.value.changes;
+ r.validation=v.value;
+ r.status=v.value.status;
+ return ok(r);
+}
+function validateTransformation(before,after,options){
+ const r={reactants:[canon(before)],products:[canon(after)],changes:{}};
+ return validate(r,options);
+}

@@ -1,0 +1,1 @@
+<script(?![^>]*application\/json)[^>]*>([\s\S]*?)<\/script>/gi,function(_,js){lsJs.push(js);return ''}).replace(/
