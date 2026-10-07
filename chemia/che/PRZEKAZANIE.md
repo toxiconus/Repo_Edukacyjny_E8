@@ -78,6 +78,7 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 - Kanon md (CHE.core.md, 2 MB) jest w archiwum. Dla nowej lekcji szukać w nim tylko fragmentów z jej kodem (np. „N06”) — nie czytać całości.
 
 ## 7. Następne kroki
+0a. **F00 v1.1** (`chemia/lekcje_md/F_nowe/`): nowy plan bloku F — 21 lekcji w 5 fazach (pomysł użytkownika, poprawiony): F00 = dokument meta, F01 = „Jak myśli chemik”; mapowanie starego kanonu F00–F09 → nowe F01–F21, modele silnika dla każdej lekcji, decyzje przed podziałem (cz. VIII). Oryginał użytkownika: `CHE.01.F00.v1.0_oryginal.md`. **Nie dzielić i nie pisać lekcji F bez zgody użytkownika**; użytkownik ma wstępne wersje wszystkich lekcji F.
 0. **Sesja 2026-10-07 wieczór — gałąź `claude/chemia-podzial`** (od `main` po merge PR #1; zrobić PR do `main`):
    - `chemia/lekcje_md/`: `CHEMIA_PODSTAWA_PLUS_v1.1.md` podzielony po BEGIN/END na 16 plików wg uid (`INDEX.md`, `KOLEJNOSC.txt`; złożenie = oryginał). Skrypt: `che/narzedzia/podziel_all_md.py`.
    - `chemia/lekcje_md/F/`: F00–F09 wyjęte z kanonu `CHE.core.md` (archiwum): blok główny + sekcja z WARSTWY MASTER v5.0; F00 ma też części wspólne bloku F. Scalone: `lekcje_md/CHE.01.F00-F09.fundamenty_kanon.md` (370 KB).
