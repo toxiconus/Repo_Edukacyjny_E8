@@ -78,8 +78,12 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 - Kanon md (CHE.core.md, 2 MB) jest w archiwum. Dla nowej lekcji szukać w nim tylko fragmentów z jej kodem (np. „N06”) — nie czytać całości.
 
 ## 7. Następne kroki
-0. (2026-10-07) `chemia/lekcje_md/`: `CHEMIA_PODSTAWA_PLUS_v1.1.md` podzielony na 16 plików nazwanych wg uid (`INDEX.md`, skrypt `narzedzia/podziel_all_md.py`, złożenie = oryginał). Mapowanie L00x→kody (np. L006→O01-O07) do potwierdzenia przez użytkownika.
+0. **Sesja 2026-10-07 wieczór — gałąź `claude/chemia-podzial`** (od `main` po merge PR #1; zrobić PR do `main`):
+   - `chemia/lekcje_md/`: `CHEMIA_PODSTAWA_PLUS_v1.1.md` podzielony po BEGIN/END na 16 plików wg uid (`INDEX.md`, `KOLEJNOSC.txt`; złożenie = oryginał). Skrypt: `che/narzedzia/podziel_all_md.py`.
+   - `chemia/lekcje_md/F/`: F00–F09 wyjęte z kanonu `CHE.core.md` (archiwum): blok główny + sekcja z WARSTWY MASTER v5.0; F00 ma też części wspólne bloku F. Scalone: `lekcje_md/CHE.01.F00-F09.fundamenty_kanon.md` (370 KB).
+   - **Otwarte:** (a) potwierdzić mapowanie L00x→kody (L006→O01-O07, L007→O11-O19, L008→R03-R04, L009→R05-R08, L010→X01-X10, L011→LAB, L012→REV02, L013→REV06); (b) dopiski F rozproszone dalej w kanonie (od ~w. 32000) nie są dołączone; (c) reszta kanonu (N06–N07, R, J, O, X, E, K, A, P, REV) niewydzielona — tylko szkielety 7–9 KB, wyjątek X08 ~20 KB; (d) następna lekcja HTML: F01 (najpełniejsza treść).
+   - Pierwszy push tej gałęzi dawał 500 z serwera — po ponowieniu przeszedł.
 1. N06 Systematyka nieorganiczna (most N01–N05) albo fundamenty F00–F09.
 2. Testy N01–N03 → `::: test`; tryb Noc w `lekcja.css`.
 3. Kolejne zlewki i modele w `rozszerzenia.js` dla nowych lekcji.
-4. (użytkownik) PR do `main` i GitHub Pages.
+4. (użytkownik) GitHub Pages (PR #1 `claude/che-lekcje`→`main` już zmergowany 2026-10-07).
