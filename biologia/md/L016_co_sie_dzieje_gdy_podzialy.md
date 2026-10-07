@@ -1,0 +1,326 @@
+# L016 — Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli? (v3.8 — wzmocniona warstwa merytoryczna)
+
+**Dział:** Genetyka  
+**Poziomy:** podstawa · trening · ambitny · zaawansowany  
+**Warstwy:** [PRZYPOMNIENIE] · [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY] · ([KONKURS])  
+**Poprzednia lekcja:** L015  
+**Następna lekcja:** L017
+
+---
+
+### Mapa lekcji (etykiety warstw — treść bez zmian)
+
+| Warstwa | Gdzie w lekcji |
+|---------|----------------|
+| **[PRZYPOMNIENIE]** | pkt 3 Kompas |
+| **[PODSTAWA E8]** | pkt 5 Ściąga + pkt 6 + pkt 9 Klinika |
+| **[TRENING]** | pkt 11–14 |
+| **[MASTER]** | pkt 7 |
+| **[ZAAWANSOWANY]** | pkt 8 + pkt 19 |
+| **[KONKURS]** | pkt 11D (gdy jest) |
+| **[POWTÓRKA]** | pkt 13 Fiszki |
+
+
+---
+
+## 1. Pytanie przewodnie
+
+Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli?
+
+---
+
+## 2. Cele lekcji
+
+Po lekcji uczeń:
+
+- wyjaśnia, że nowotwór wiąże się z **niekontrolowanymi podziałami** komórek,
+- wymienia czynniki ryzyka (UV, dym tytoniowy, chemikalia, wirusy, predyspozycje),
+- rozróżnia: **mutacja ≠ nowotwór**; nowotwór często = **nagromadzenie** zmian,
+- (ambitny) łączy uszkodzenie DNA / mutacje w genach kontroli cyklu z utratą checkpointów i apoptozy,
+- (zaawansowany) zna ideę protoonkogen → onkogen oraz genów suppressorowych; somatyczne vs germinalne.
+
+### Zasada 80/20
+| 20% = 80% efektu | Dlaczego |
+|-------------------|----------|
+| nowotwór = niekontrolowane podziały | definicja operacyjna |
+| mutacja ≠ nowotwór | najczęstszy błąd |
+| nagromadzenie zmian | mechanizm |
+| UV, dym = mutageny | profilaktyka |
+
+---
+
+## 3. Kompas  · **[PRZYPOMNIENIE]**
+L014 (mitoza, cykl), L013 (replikacja), idea naprawy DNA.
+
+---
+
+## 4. Zacznij od problemu
+Dlaczego UV i dym tytoniowy zwiększają ryzyko nowotworów?
+
+**Hipoteza:** ....................................
+
+---
+
+## 5. Ściąga — poziom podstawowy  · **[PODSTAWA E8]**
+
+**Nowotwór** — choroba związana z **niekontrolowanymi podziałami** komórek.
+
+**Czynniki ryzyka:** UV, dym tytoniowy, chemikalia, wirusy, predyspozycje.
+
+**Ważne:** mutacja ≠ nowotwór; nowotwór = często **nagromadzenie** zmian.
+
+### Mnemotechniki
+| # | Mnemotechnika | Znaczenie |
+|---|---------------|-----------|
+| 1 | **UV + dym + X = mutagen** | czynniki |
+| 2 | **Mutacja ≠ nowotwór** | rozróżnienie |
+| 3 | **Nagromadzenie = nowotwór** | wiele zmian |
+| 4 | **Apoptoza = sprzątanie** | programowana śmierć |
+
+---
+
+## 6. Wyjaśnienie od podstaw  · **[PODSTAWA E8]**
+
+**Nowotwór** — choroba, w której komórki dzielą się **bez właściwej kontroli** cyklu komórkowego (most do L014: mitoza ma checkpointy; tu checkpointy zawodzą).
+
+```text
+mutagen (UV, dym, chemikalia…)
+      ↓
+uszkodzenie DNA
+      ↓
+naprawa OK  →  komórka „zdrowa”
+naprawa zawodzi → mutacja
+      ↓
+kolejne mutacje w genach kontroli cyklu
+      ↓
+checkpoint zawodzi / brak apoptozy
+      ↓
+niekontrolowane podziały  →  możliwy nowotwór
+```
+
+**Apoptoza** — programowana śmierć komórki: „sprzątanie” uszkodzonych komórek, zanim staną się groźne.
+
+**Kluczowa reguła:** **mutacja ≠ nowotwór**. Jedna zmiana w DNA prawie nigdy nie wystarcza; nowotwór to zwykle **nagromadzenie** kilku–kilkunastu zmian w genach kontroli.
+
+### 6A. Dlaczego?
+
+1. **Dlaczego UV i dym zwiększają ryzyko?** To **mutageny** — podnoszą liczbę uszkodzeń DNA → więcej szans na mutacje w genach kontroli.
+2. **Dlaczego jedna mutacja zwykle nie wystarcza?** Cykl komórkowy ma wiele „hamulców” (checkpointy, apoptoza, geny suppressorowe). Trzeba wyłączyć kilka naraz.
+3. **Dlaczego apoptoza jest ważna?** Usuwa komórkę z uszkodzonym DNA, zanim da początek klonowi niekontrolowanych podziałów.
+4. **Dlaczego „nie każdy palacz ma raka”?** Ryzyko ≠ pewność. Potrzeba czasu + nagromadzenia zmian + pecha w genach kontroli.
+
+### 6B. Krok po kroku
+1. Mutagen → uszkodzenie DNA (L011/L013 — DNA jako nośnik informacji).
+2. System naprawy DNA: sukces **albo** utrwalona mutacja.
+3. Mutacje trafiają w geny kontroli cyklu (L014).
+4. Checkpointy przestają zatrzymywać błędne komórki; apoptoza nie działa.
+5. Niekontrolowane podziały → masa komórek (guz); czasem naciekanie / przerzuty (poziom zaawansowany).
+
+### 6C. Przykład prowadzony
+Osoba często opalająca się bez filtra UV:
+- UV uszkadza DNA w komórkach skóry,
+- część uszkodzeń nie zostaje naprawiona → mutacje,
+- jeśli mutacje trafią w geny kontroli mitozy → komórki dzielą się mimo sygnałów „stop”,
+- rośnie ryzyko nowotworu skóry (nie: „UV zawsze = rak”).
+
+### 6D. Powiązanie
+```text
+L013 (replikacja, błędy DNA)
+  → L014 (mitoza + checkpointy cyklu)
+  → L016 (gdy kontrola zawodzi → nowotwór)
+  → L020 (mutacje, dziedziczenie ryzyka — opcjonalnie)
+```
+
+---
+
+## 7. Poziom ambitny  · **[MASTER]**
+
+| Pojęcie | Znaczenie dla ucznia |
+|---------|----------------------|
+| Mutagen | czynnik zwiększający liczbę uszkodzeń DNA (UV, dym, niektóre chemikalia) |
+| Checkpoint | „punkt kontrolny” cyklu — komórka nie powinna dzielić się z uszkodzonym DNA |
+| Apoptoza | programowana śmierć — usunięcie komórki, której nie da się naprawić |
+| Mutacja somatyczna | w komórce ciała — **nie** dziedziczy się na dzieci |
+| Mutacja germinalna | w linii płciowej — **może** zwiększyć ryzyko u potomstwa |
+
+**Most L014 → L016:** Mitoza ma wbudowane hamulce. Nowotwór = hamulce wyłączone + gaz wciśnięty (więcej podziałów).
+
+**Profilaktyka (poziom trening/ambitny):** mniej mutagenów (filtr UV, niepalenie) = mniej „strzałów” w DNA = niższe ryzyko nagromadzenia zmian.
+
+---
+
+## 8. Poziom zaawansowany  · **[ZAAWANSOWANY]**
+
+**Protoonkogen → onkogen:** gen, który **pobudza** podziały; po mutacji „włączony na stałe” → sprzyja nowotworowi.  
+**Gen suppressorowy (supresor nowotworu):** gen-hamulec; po mutacji (utrata funkcji) hamulec znika.
+
+**Kancerogeneza wielostopniowa:** zwykle kilka niezależnych mutacji w różnych genach kontroli, zanim komórka stanie się nowotworowa.
+
+**Somatyczne vs germinalne:**
+- zdecydowana większość nowotworów = mutacje **somatyczne** (nie dziedziczne),
+- rzadkie zespoły dziedziczne = mutacja germinalna w genie kontroli + dalsze mutacje somatyczne w życiu.
+
+---
+
+## 9. Klinika błędów  · **[PODSTAWA E8] / [TRENING]**
+
+| Błąd | Poprawa | Dlaczego? |
+|------|---------|-----------|
+| Mutacja = nowotwór / „rak” | mutacja ≠ nowotwór; potrzeba nagromadzenia | jedna zmiana rzadko wystarcza |
+| Nowotwór zawsze dziedziczny | większość = somatyczna | zmiana nie jest w gametach |
+| UV / dym **zawsze** powoduje raka | zwiększa **ryzyko** | probabilistyka, nie determinizm |
+| „Skoro tata miał raka, ja też będę miał” | ryzyko ≠ pewność; zależnie od typu i genów | większość nowotworów nie jest silnie dziedziczna |
+
+### Klinika 2.0
+**Błąd 1:** „UV zawsze powoduje raka.”
+- **Znajdź:** Determinizm zamiast ryzyka.
+- **Popraw:** UV zwiększa ryzyko (więcej uszkodzeń DNA).
+- **Reguła:** Ryzyko ≠ pewność.
+- **Dlaczego:** Potrzeba nagromadzenia zmian w genach kontroli.
+- **Podobne:** dym tytoniowy, niektóre chemikalia.
+
+**Błąd 2:** „Mutacja w DNA = już nowotwór.”
+- **Znajdź:** Pomylenie zdarzenia molekularnego z chorobą.
+- **Popraw:** Mutacja = zmiana w DNA; nowotwór = choroba z niekontrolowanych podziałów (często po wielu mutacjach).
+- **Reguła:** Mutacja ≠ nowotwór.
+- **Most:** L011 (DNA) + L014 (kontrola mitozy).
+
+---
+
+## 10. Obserwacja / model
+
+```text
+Problem: Dlaczego UV zwiększa ryzyko?
+Hipoteza: Uszkadza DNA → mutacje w genach kontroli.
+Obserwacja: Wyższe ryzyko przy długotrwałej ekspozycji.
+Wniosek: Mutageny podnoszą ryzyko niekontrolowanych podziałów.
+Ograniczenia: korelacja ≠ determinizm.
+BHP: ochrona przed UV.
+```
+
+---
+
+## 11. Ćwiczenia  · **[TRENING]** (11D → [KONKURS])
+
+### 11A. Mini-check
+1. Nowotwór a podziały? 2. 3 czynniki? 3. Mutacja = nowotwór? 4. Apoptoza? 5. Dlaczego „nagromadzenie”?
+
+### 11B. Ćwiczenie prowadzone
+Palacz: dym → mutageny → uszkodzenia DNA → mutacje → możliwe zmiany w kontroli cyklu → nowotwór.
+
+### 11C. Ćwiczenia samodzielne
+**A.** Nowotwór? 3 czynniki? Mutacja = nowotwór?
+**B.** Popraw: „Mutacja = rak”. Dlaczego dym? 
+**C.** Uszkodzenie DNA → checkpoint → nowotwór? Somatyczne vs germinalne?
+**D.** Protoonkogen (idea)? Dlaczego „nagromadzenie”?
+
+### 11D. PROBLEM / THINK
+Dlaczego nowotwór zwykle nie jest dziedziczny? Uzasadnij.
+
+### Drabinka trudności
+| Poziom | Zadanie |
+|--------|---------|
+| ODTWÓRZ | Co to nowotwór (w jednym zdaniu)? |
+| ZASTOSUJ | Podaj 3 czynniki ryzyka. |
+| WYJAŚNIJ | Dlaczego UV zwiększa ryzyko nowotworu skóry? |
+| ODKRYJ | Czy każda mutacja prowadzi do nowotworu? Uzasadnij. |
+| POŁĄCZ | Połącz L014 (checkpointy) z mechanizmem nowotworu. |
+| ZAKWESTIONUJ | „Tata miał raka → ja też będę miał” — czy to wynika z danych? |
+
+---
+
+## 12. Odpowiedzi
+
+1. Niekontrolowane podziały komórek. 2. UV, dym, chemikalia / wirusy / predyspozycje. 3. Nie (mutacja ≠ nowotwór). 4. Zwiększa ryzyko (nie: „zawsze powoduje”). 5. Zawiera mutageny → więcej uszkodzeń DNA. 6. Uszkodzenie DNA → brak naprawy / checkpointów → niekontrolowane podziały. 7. Mutacje somatyczne nie dziedziczą się na dzieci. 8. Protoonkogen po mutacji → onkogen (sprzyja podziałom). 9. Potrzeba nagromadzenia wielu zmian w genach kontroli.
+
+**Sposób oceniania:** Podstawa 1; Trening 1+1; Ambitne 2; Zaawansowane 3.
+
+---
+
+## 13. Fiszki  · **[POWTÓRKA]**
+
+| Pytanie | Odpowiedź |
+|---------|-----------|
+| Nowotwór a podziały | Niekontrolowane |
+| Mutacja = nowotwór? | Nie |
+| Przykłady | UV, dym |
+| Apoptoza | Programowana śmierć |
+| Somatyczne vs germinalne | Nie dziedziczy vs może |
+
+---
+
+## 14. Test końcowy  · **[TRENING]**
+1. (P) Nowotwór a podziały? 2. (P) 2 czynniki? 3. (P) Mutacja = rak? 4. (T) Popraw. 5. (T) Dym a DNA. 6. (A) Checkpoint i apoptoza. 7. (A) Somatyczna vs germinalna. 8. (Z) Dlaczego „nagromadzenie”?
+
+## 15. Checklista
+- [ ] Łączę nowotwór z niekontrolowanymi podziałami.
+- [ ] Znam czynniki ryzyka.
+- [ ] Wiem, że mutacja ≠ nowotwór.
+- [ ] Rozumiem ideę apoptozy.
+
+## 16. Mapa pojęć
+```text
+CYKL KOMÓRKOWY
+├── kontrola podziałów
+├── uszkodzenie DNA
+├── naprawa/apoptoza
+└── gdy zawodzi → nowotwór
+```
+
+## 17. Co dalej?
+L017 — dziedziczenie jednej cechy (Mendel, krzyżówki).
+
+**Most wstecz:** L014 (prawidłowa mitoza) + L013 (DNA) → L016 (gdy kontrola zawodzi).
+
+## 18. Słownik
+Nowotwór · Mutagen · Apoptoza · Checkpoint · Protoonkogen.
+
+## 19. Dodatek zaawansowany  · **[ZAAWANSOWANY]**
+Protoonkogen/onkogen · kancerogeneza wielostopniowa.
+
+## 20. Jak się uczyć?
+Ściąga (5 min) → przykład (5 min) → mini-check (5 min) → ćwiczenia (10 min) → fiszki (5 min) → test (10 min).
+
+## 21. Połączenia międzyprzedmiotowe
+Medycyna (profilaktyka) · Chemia (mutageny) · Edukacja zdrowotna (UV).
+
+## 22. Zadania z życia codziennego
+1. Dlaczego warto stosować filtr UV? 2. Dlaczego nie każdy palacz ma raka? 3. Dlaczego badania przesiewowe są ważne?
+
+
+
+
+---
+
+## 23. UZUPEŁNIENIE v3.8+ (doklejone)
+
+Nowotwór w kl. 8 = utrata kontroli cyklu komórkowego, nie „zakażenie”.
+
+### Ściąga
+- Cykl komórkowy ma punkty kontrolne (most L014).
+- Nowotwór: komórki dzielą się wbrew sygnałom; mogą tworzyć guz.
+- Łagodny vs złośliwy (szkolnie): ograniczony vs naciekanie / przerzuty (hasło).
+- Mutacje (L020) mogą uszkadzać geny kontroli; mutageny (UV, dym, niektóre wirusy — hasło) zwiększają ryzyko, nie „wyrok 1:1”.
+- Nie straszyć: większość mutacji nie kończy się nowotworem.
+
+### Pułapki
+| Błąd | Popraw |
+|------|--------|
+| Rak = każdy guz | guz ≠ zawsze złośliwy |
+| Nowotwór = zakaźny jak grypa | nie w modelu szkolnym kontaktu kropelkowego |
+| Jedna mutacja = natychmiast choroba | zwykle seria zmian + czas |
+| Mitoza jest „zła” | mitoza jest potrzebna; zła jest utrata hamulców |
+
+### 3 zadania extra
+1. Połącz L014 (mitoza) z „punkt kontrolny”.  
+2. Dlaczego UV i nowotwór skóry bywają w jednej narracji szkolnej?  
+3. Jednym zdaniem różnica łagodny / złośliwy (hasło).
+
+Odpowiedzi: 1 kontrola „czy dzielić”; nowotwór = kontrola zawodna. 2 UV uszkadza DNA (mutagen). 3 złośliwy może naciekać / dawać przerzuty.
+
+### Status
+doklej 2026-09-12.
+
+<!-- ==================== END L016 ==================== -->
+
+<!-- ==================== BEGIN L017 ==================== -->
