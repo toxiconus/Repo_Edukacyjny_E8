@@ -313,6 +313,8 @@ Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mie
 
 ## 10 | Doświadczenia {#doswiadczenia}
 
+@model f01-doswiadczenia-v01 | Pracownia: co naprawdę się zmieniło? | zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP
+
 ::: dosw | Doświadczenie 1 — Co naprawdę się zmieniło? (trzy naczynia)
 Problem: W którym naczyniu zachodzi reakcja chemiczna, a w którym zjawisko fizyczne?
 Hipoteza: Reakcja zachodzi tylko tam, gdzie powstaje nowa substancja i nie da się prosto odzyskać substancji wyjściowej.
@@ -322,6 +324,10 @@ Obserwacja: (a) lód topnieje, powstaje ciecz; (b) kryształy przestają być wi
 Wniosek: (a) i (b) — zjawiska fizyczne (substancję wyjściową da się odzyskać: zamrozić, odparować); (c) — reakcja chemiczna (powstał gaz — nowa substancja; sody nie odzyskamy przez odparowanie).
 Równanie:: NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑
 BHP: okulary ochronne; nie smakujemy substancji; parownicę po ogrzaniu chwytamy szczypcami — jest gorąca; ocet nie do oczu.
+
+@zlewka f01-doswiadczenia-v01 f01SolWoda | Zobacz w zlewce: sól w wodzie
+@zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w zlewce: odparowanie roztworu soli
+@zlewka f01-doswiadczenia-v01 f01SodaOcet | Zobacz w zlewce: soda + ocet
 :::
 
 ::: dosw | Doświadczenie 2 — Czy ten gaz to naprawdę CO₂?
@@ -334,7 +340,7 @@ Wniosek: Wydzielającym się gazem był CO₂ — tym razem wniosek ma dowód, a
 Równanie:: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O
 BHP: okulary; woda wapienna jest zasadowa i drażni oczy oraz skórę; rurka nie może być zatkana (rosnące ciśnienie).
 
-@zlewka n02-doswiadczenia-v01 caoh2Co2 | Zobacz w zlewce: woda wapienna i CO₂ (pracownia GFX)
+@zlewka f01-doswiadczenia-v01 f01WodaWapienna | Zobacz w zlewce: woda wapienna i CO₂
 :::
 
 ::: dosw | Doświadczenie 3 — Spalanie magnezu (pokaz)
@@ -347,7 +353,7 @@ Wniosek: Powstała nowa substancja — tlenek magnezu; to reakcja chemiczna (obj
 Równanie:: 2 Mg + O₂ → 2 MgO
 BHP: wykonuje nauczyciel; **nie patrzeć bezpośrednio w płomień** (bardzo jasne światło); płonącego magnezu nie gasić wodą; okulary, płytka ceramiczna pod spodem.
 
-@zlewka n01-spalanie-v01 mgO2 | Zobacz w zlewce: spalanie magnezu (pracownia GFX)
+@zlewka f01-doswiadczenia-v01 f01Mg | Zobacz w tyglu: spalanie magnezu
 :::
 
 ::: dosw | Doświadczenie 4 — Mieszanina czy związek? Żelazo i siarka (pokaz)
@@ -359,6 +365,8 @@ Obserwacja: (1) Magnes przyciąga szare opiłki, żółta siarka zostaje. (2) Mi
 Wniosek: (1) mieszanina — składniki zachowują właściwości; (2) reakcja chemiczna — powstał siarczek żelaza(II) o nowych właściwościach.
 Równanie:: Fe + S → FeS
 BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać trujący SO₂ — nie wąchać; gorąca probówka może pęknąć — okulary, szczypce.
+
+@zlewka f01-doswiadczenia-v01 f01FeS | Zobacz w probówce: Fe + S po ogrzaniu
 :::
 
 ::: karta understand | Przewiduj, potem sprawdź
@@ -616,9 +624,8 @@ Równanie reakcji :: zapis przemiany substratów w produkty z zachowaniem liczby
 | Sekcja | Model | Co pokazuje |
 |---|---|---|
 | [§2](#poziomy) | `live-cv` | łańcuch atom → cząsteczka → substancja → reakcja |
-| [§10](#doswiadczenia) | `n02-doswiadczenia-v01` · `caoh2Co2` | woda wapienna mętnieje od CO₂ |
-| [§10](#doswiadczenia) | `n01-spalanie-v01` · `mgO2` | spalanie magnezu |
+| [§10](#doswiadczenia) | `f01-doswiadczenia-v01` · `f01SolWoda`, `f01Odparowanie`, `f01SodaOcet`, `f01WodaWapienna`, `f01Mg`, `f01FeS` | pracownia F01: zjawiska fizyczne vs reakcje |
 | [§10](#doswiadczenia) | `beaker-prediction-enhanced` | przewiduj obserwację, potem sprawdź |
 | [§14](#powtorka) | `mind-map` | mapa myśli |
 
-> Do dodania w `rozszerzenia.js` (brak w silniku): zlewki „sól + woda → odparowanie”, „NaHCO₃ + ocet → CO₂”, „Fe + S: mieszanina vs FeS (magnes)”.
+> Do zbudowania w GFX (nowe elementy): magnes przy mieszaninie Fe + S (przyciąga opiłki przed reakcją, nie przyciąga FeS); lód pływający w wodzie (topnienie); efekty osadu i pary w parownicy (`evapDish` ich nie rysuje — odparowanie pokazujemy w zlewce).
