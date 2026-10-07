@@ -738,11 +738,13 @@ W grupie (w dół) rośnie metaliczność, więc rośnie charakter zasadowy tlen
 
 ::: div.table-wrap
 <table><thead><tr><th>Okres</th><th>gr. 1</th><th>gr. 2</th><th>gr. 13</th><th>gr. 14</th><th>gr. 15</th><th>gr. 16</th><th>gr. 17</th></tr></thead><tbody>
-<tr><td><b>2</b></td><td>Li₂O zas.</td><td>BeO amf.</td><td>B₂O₃ kw.</td><td>CO₂ kw.</td><td>N₂O₅ kw.</td><td>—</td><td>— (OF₂ to fluorek)</td></tr>
+<tr><td><b>2</b></td><td>Li₂O zas.</td><td>BeO amf.</td><td>B₂O₃ kw.</td><td>CO₂ kw.</td><td>N₂O₅ kw.</td><td>—</td><td>—</td></tr>
 <tr><td><b>3</b></td><td>Na₂O zas.</td><td>MgO zas.</td><td>Al₂O₃ amf.</td><td>SiO₂ kw.</td><td>P₄O₁₀ kw.</td><td>SO₃ kw.</td><td>Cl₂O₇ kw.</td></tr>
-<tr><td><b>4</b></td><td>K₂O zas.</td><td>CaO zas.</td><td>Ga₂O₃ amf.</td><td>GeO₂ amf.</td><td>As₂O₅ kw.</td><td>SeO₃ kw.</td><td>— (brak trwałego Br₂O₇)</td></tr>
+<tr><td><b>4</b></td><td>K₂O zas.</td><td>CaO zas.</td><td>Ga₂O₃ amf.</td><td>GeO₂ amf.</td><td>As₂O₅ kw.</td><td>SeO₃ kw.</td><td>—</td></tr>
 </tbody></table>
 :::
+
+> „—”: tlen nie tworzy tlenku sam ze sobą, OF₂ to fluorek tlenu, a trwały Br₂O₇ nie istnieje.
 :::
 
 ### Ten sam pierwiastek, różne stopnie utlenienia — metale przejściowe {.merge-h}
