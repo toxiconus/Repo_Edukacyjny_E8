@@ -33,7 +33,7 @@ Historia wersji:
 | `narzedzia/md2html.py` | md → `dist/` (wersja lekka + `dist/jeden_plik/`) |
 | `narzedzia/html2md.py`, `styl_wlasny.py`, `przebuduj_z_html.sh`, `porownaj.py` | jednorazowa migracja v0_57 → md (wykonana; **nie uruchamiać ponownie** — nadpisze md/) |
 | `narzedzia/split_viz.py` | jak powstał `che-viz.js` z aplikacji v0_57 (uruchamiany w archiwum) |
-| `dist/` | lekcje lekkie (100–170 KB) + `che-viz.js` (2,8 MB) + `index.html` — praca na komputerze |
+| `dist/` | lekcje lekkie (100–170 KB) + `che-viz.js` (2,8 MB, **jedyny plik z dist/ w gicie**, reszta powstaje z builda) + `index.html` — praca na komputerze |
 | `dist/jeden_plik/` | każda lekcja w jednym pliku (~3 MB) — **telefon, wysyłanie** |
 
 ## 3. Jak pracować
@@ -43,9 +43,9 @@ python3 narzedzia/md2html.py                          # wszystkie lekcje
 python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 ```
 - Wymaga tylko Pythona 3 (bez bibliotek). Nowa lekcja = nowy plik `md/<KOD>_<nazwa>.md` z nagłówkiem jak w SZABLON_LEKCJI.md — sama trafia do spisu.
-- Test w przeglądarce (w chmurze Claude: Playwright + Chromium są zainstalowane): 0 błędów konsoli, każdy model zamontowany, „Zobacz w zlewce” otwiera właściwy klucz, szerokość 390 px bez przewijania strony w bok.
+- Test: `node narzedzia/sprawdz.js` (Chromium 390 px; wypisuje tylko FAIL: błędy konsoli, brak lekcji, ekran startowy, przewijanie w bok). Ręcznie dodatkowo: każdy model zamontowany, „Zobacz w zlewce” otwiera właściwy klucz.
 
-**Start nowego wątku (oszczędnie):** dołącz `SZABLON_LEKCJI.md`, `KATALOG_MODELI.md` i md lekcji, nad którą pracujemy (~100 KB). Cały projekt tylko przy zmianach szablonu lub rozszerzeń — wtedy poproś Claude o sklonowanie repo (gałąź `claude/che-lekcje`).
+**Start nowego wątku (oszczędnie):** nic nie dołączaj — wystarczy napisać „CHE: <zadanie>, lekcja <KOD>”. Claude klonuje repo (gałąź `claude/che-lekcje`) i czyta tylko md tej lekcji oraz potrzebne fragmenty SZABLON/KATALOG. Uwagi o błędach: tekstem (lekcja, sekcja, co nie działa); zrzut tylko przycięty do miejsca błędu.
 
 ## 4. Git — jak to działa (instrukcja dla Claude)
 - Klonowanie: narzędzie `add_repo` (owner `toxiconus`, repo `Repo_Edukacyjny_E8`, access `push`), potem `git clone --depth 1 https://github.com/toxiconus/repo_edukacyjny_e8`.
