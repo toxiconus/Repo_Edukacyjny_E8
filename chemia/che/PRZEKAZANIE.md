@@ -78,6 +78,7 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 - Kanon md (CHE.core.md, 2 MB) jest w archiwum. Dla nowej lekcji szukać w nim tylko fragmentów z jej kodem (np. „N06”) — nie czytać całości.
 
 ## 7. Następne kroki
+0. (2026-10-07) `chemia/lekcje_md/`: `CHEMIA_PODSTAWA_PLUS_v1.1.md` podzielony na 16 plików nazwanych wg uid (`INDEX.md`, skrypt `narzedzia/podziel_all_md.py`, złożenie = oryginał). Mapowanie L00x→kody (np. L006→O01-O07) do potwierdzenia przez użytkownika.
 1. N06 Systematyka nieorganiczna (most N01–N05) albo fundamenty F00–F09.
 2. Testy N01–N03 → `::: test`; tryb Noc w `lekcja.css`.
 3. Kolejne zlewki i modele w `rozszerzenia.js` dla nowych lekcji.
