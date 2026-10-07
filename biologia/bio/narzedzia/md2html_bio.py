@@ -87,9 +87,7 @@ def preprocess(text):
 BAR = ('<div class="bio-bar" role="toolbar" aria-label="Narzędzia lekcji">'
        '<a class="bio-bar-btn" href="#spis" aria-label="Spis treści">Spis</a>'
        '<span class="bio-bar-title">%s</span>'
-       '<button type="button" class="bio-bar-btn" id="bioTheme" aria-label="Tryb dzienny lub nocny">Noc</button></div>')
-THEME_BOOT = ('<script>(function(){try{var t=localStorage.getItem("bio-theme")}catch(e){}'
-              'document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light")})()</script>\n')
+       '<a class="bio-bar-btn" href="#main" aria-label="Na górę">↑</a></div>')
 
 def build(path):
     src = _open(path, encoding='utf-8').read()
@@ -98,8 +96,6 @@ def build(path):
     try: meta, doc = m.render(tmp.name)
     finally: os.unlink(tmp.name)
     title = re.sub(r'<[^>]+>', '', m.inline(meta.get('tytul', '')))
-    doc = doc.replace('<html lang="pl">', '<html lang="pl" data-theme="light">', 1)
-    doc = doc.replace('<head>\n', '<head>\n' + THEME_BOOT, 1)
     doc = doc.replace('<title>%s · ' % meta.get('kod', ''), '<title>BIO %s · ' % meta.get('kod', ''), 1)
     doc = doc.replace('<details class="toc-item" open>', '<details class="toc-item" id="spis" open>', 1)
     doc = doc.replace('<main class="page" id="main">', (BAR % H.escape(meta.get('kod', '') + ' · ' + title)) + '\n<main class="page" id="main">', 1)

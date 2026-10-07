@@ -1,4 +1,4 @@
-/* lekcja.js — zachowanie lekcji BIO: fiszki, test, treści akademickie, tryb dzienny/nocny, montaż grafik. Jedno źródło dla wszystkich lekcji. */
+/* lekcja.js — zachowanie lekcji BIO: fiszki, test, treści akademickie, montaż grafik. Jedno źródło dla wszystkich lekcji. */
 (function(){
 function start(){
 var root=document;
@@ -13,9 +13,6 @@ if(b){var all=function(){return root.querySelectorAll('details.adv')},k=all().le
  if(!k)b.style.display='none';
  b.textContent='Pokaż treści akademickie ('+k+')';
  b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';all().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
-var t=root.getElementById('bioTheme'),h=document.documentElement;
-function lab(){t.textContent=h.getAttribute('data-theme')==='dark'?'Dzień':'Noc'}
-if(t){lab();t.onclick=function(){var d=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',d);try{localStorage.setItem('bio-theme',d)}catch(e){}lab()}}
 if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();

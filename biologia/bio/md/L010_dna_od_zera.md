@@ -163,7 +163,7 @@ Bracia: kolor oczu zależy głównie od odziedziczonych genów, a wzrost jest ce
 
 ## 6 | Od genu do cechy [[basic:E8]] {#gen-cecha}
 ### 6.1. Model podstawowy
-@viz lancuch {kroki="DNA (gen)|odcinek z informacją > RNA / białko|produkt genu > funkcja w komórce|np. enzym, barwnik > udział w cesze|fenotyp" boki="+ środowisko; + rozwój" wyroznij="4"} | Od genu do cechy | model uproszczony
+@viz lancuch {kroki="DNA (gen)|odcinek z informacją > RNA|kopia robocza > białko|produkt genu > funkcja w komórce|np. enzym, barwnik > udział w cesze|fenotyp" boki="+ środowisko; + rozwój" wyroznij="5"} | Od genu do cechy | model uproszczony
 
 To jest **model podstawowy**. W rzeczywistości:
 - nie każdy fragment DNA koduje białko,
@@ -237,7 +237,7 @@ Przechowuje informację biologiczną, ale samo nie jest „żywym organizmem”.
 | Rośliny i glony | jądro + mitochondria + **chloroplasty** (cpDNA) |
 | Bakterie (prokarionty) | bez jądra — DNA leży w cytoplazmie, w obszarze zwanym **nukleoidem** (często też plazmidy) |
 
-@viz gdzie-dna | Gdzie w komórce jest DNA? | kliknij jądro, mitochondrium, chloroplast, nukleoid lub erytrocyt
+@viz gdzie-dna | Gdzie w komórce jest DNA? | kliknij jądro, mitochondrium, chloroplast, nukleoid, plazmid, erytrocyt lub leukocyt
 
 ::: karta exam | Wyjątek — często na egzaminie
 **Dojrzały erytrocyt** człowieka (czerwona krwinka) nie ma jądra ani mitochondriów — dlatego **nie zawiera DNA**. Krew nadal może służyć do badania DNA: materiał pochodzi wtedy z **leukocytów** (białych krwinek), które mają jądro.
@@ -840,7 +840,7 @@ Erytrocyt :: czerwona krwinka; dojrzała nie ma jądra ani mitochondriów, więc
 | od-organizmu-do-genu | §1 | powiększenie organizm → gen |
 | szuflady-cech | §5 | sortowanie cech z wyjaśnieniem |
 | lancuch | §6 | DNA → RNA / białko → funkcja → cecha |
-| gdzie-dna | §8 | jądro, mtDNA, cpDNA, nukleoid, erytrocyt |
+| gdzie-dna | §8 | jądro, mtDNA, cpDNA, nukleoid, plazmidy, erytrocyt i leukocyt |
 | poziomy-dna | §9 | chromosom, histony, gen, regulator, DNA niekodujące |
 | nukleotyd | §10.1 | fosforan + deoksyryboza + zasada |
 | pary-zasad | §10.2 | A–T, G–C oraz błędne A–G, C–T, A–C |

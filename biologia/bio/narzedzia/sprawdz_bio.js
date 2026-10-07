@@ -6,7 +6,7 @@ const a=process.argv.slice(2),zi=a.indexOf('--zrzuty'),zd=zi>=0?a.splice(zi,2)[1
 const dir=path.join(__dirname,'..','dist');
 const files=a.length?a:fs.readdirSync(dir).filter(f=>f.endsWith('.html')&&f!=='index.html').map(f=>path.join(dir,f));
 (async()=>{const b=await pw.chromium.launch();let fail=0;
-for(const f of files)for(const [w,th] of [[390,'light'],[390,'dark'],[1200,'light']]){const p=await b.newPage({viewport:{width:w,height:900}});const errs=[];
+for(const f of files)for(const [w,th] of [[390,'light'],[1200,'light']]){const p=await b.newPage({viewport:{width:w,height:900}});const errs=[];
  p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});
  await p.addInitScript(t=>{try{localStorage.setItem('bio-theme',t)}catch(e){}},th);
  await p.goto('file://'+path.resolve(f));await p.waitForTimeout(800);
