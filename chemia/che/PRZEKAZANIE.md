@@ -88,6 +88,7 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 
 **Gotowe**
 - **F01 Jak myśli chemik** — `che/md/F01_jak_mysli_chemik.md` v1.1 (wersja użytkownika + poprawki: karta 15 punktów, kolejność ćwiczeń A–E, mapa bloku). md2html przechodzi; `sprawdz.js` nie uruchamiany. Modele: `live-cv`, `beaker-prediction-enhanced`, `mind-map`, zlewki `caoh2Co2`, `mgO2`.
+- **GFX dla F01** (`szablon/rozszerzenia.js` §5–6): wspólny budowniczy pracowni `C.EXT_PRACOWNIA(...)` + pracownia `f01-doswiadczenia-v01` (zlewki `f01SolWoda`, `f01Odparowanie`, `f01SodaOcet`, `f01WodaWapienna`, `f01Mg` w tyglu, `f01FeS` w probówce) z rekordami reakcji i substancji. F01 ma `@model f01-doswiadczenia-v01` w §10; test Chromium: 6/6 przycisków „Zobacz w zlewce” działa, bez błędów konsoli (jedyny FAIL `sprawdz.js` to brak sieci w sesji — jak w N05). Wiedza o silniku zapisana w KATALOG_MODELI.md: naczynia `beaker`/`testTube`/`crucible`; `evapDish` rysuje tylko ciecz; `noRx:1` zatrzymuje animację; lekcja potrzebuje `@model <pracownia>`, żeby `@zlewka` działała.
 - `chemia/PLAN_LEKCJI.md` — kolejność i nazwy 98 lekcji F–P + LAB/REV/FIZ (blok F tam jeszcze wg starego planu F00–F09 — **zaktualizować do F01–F21**).
 - `chemia/lekcje_md/` — `CHEMIA_PODSTAWA_PLUS_v1.1.md` podzielony po BEGIN/END na 16 plików wg uid (`INDEX.md`, `KOLEJNOSC.txt`, złożenie = oryginał; skrypt `che/narzedzia/podziel_all_md.py`).
 - `chemia/lekcje_md/F/` — stare F00–F09 wyjęte z kanonu `CHE.core.md` + scalone `CHE.01.F00-F09.fundamenty_kanon.md` (materiał źródłowy).
@@ -96,6 +97,6 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 **Następne kroki (kolejność)**
 1. **F02 Materia i substancje** z kanonu v16 (`lekcje_md/F_nowe/…v16.0…md`, sekcja `# CHE.01F.02-`) → `che/md/F02_*.md` tą samą metodą co F01; czytać tylko sekcję lekcji (grep numerów wierszy), modele z F00 cz. X.
 2. Kolejne F03–F21 tak samo; cienkie w v16 (F10, F15, F18–F21) — najpierw sprawdzić, czy użytkownik ma nowszą wersję.
-3. Brakujące zlewki/modele do `rozszerzenia.js`: sól + woda → odparowanie, NaHCO₃ + ocet → CO₂, Fe + S (mieszanina vs FeS, magnes); dalej: izotopy (F05), rozdzielanie mieszanin (F03), energia wiązania (F10), polarność (F15), bilansowanie (F17).
+3. GFX do zbudowania od podstaw (zasada GFX): magnes (Fe + S), lód pływający, osad i para w parownicy, płomień w tyglu; modele: rozdzielanie mieszanin (F03 — następny), izotopy (F05), energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17). Zlewki F01 — zrobione.
 4. `PLAN_LEKCJI.md` i kody w kanonie: blok F na F01–F21.
 5. Otwarte z wcześniej: mapowanie L006–L013 → kody (O, R, X, LAB, REV) do potwierdzenia; N06 Systematyka; testy N01–N03 → `::: test`; tryb Noc w `lekcja.css`; GitHub Pages (użytkownik).
