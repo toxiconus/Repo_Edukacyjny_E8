@@ -80,7 +80,16 @@ To pierwsza lekcja bloku F — nie wymaga wcześniejszych lekcji. Wystarczą rze
 - że substancje są zbudowane z drobin (cząstek),
 - kilka symboli pierwiastków (H, O, C, Na, Cl, Fe).
 
-Architekturę całego bloku (21 lekcji w pięciu fazach) opisuje dokument F00 — możesz go przejrzeć, żeby zobaczyć, gdzie jesteś.
+::: karta core | Gdzie jesteś — blok F w pięciu fazach
+**F to fundamenty: 21 lekcji, jeden łańcuch.** Każda lekcja daje wynik, który jest wejściem do następnej.
+- **A. Co badamy?** F01 jak myśli chemik · F02 materia i substancje · F03 właściwości i rozdzielanie
+- **B. Z czego to wynika?** F04 atom · F05 izotopy i jony · F06 układ okresowy · F07 konfiguracja · F08 konfiguracja ↔ układ · F09 wartościowość, ładunek, stopień utlenienia
+- **C. Jak powstaje struktura?** F10 dlaczego atomy się łączą · F11 typy wiązań · F12 wzory · F13 wzory elektronowe · F14 geometria (LO) · F15 polarność
+- **D. Jak opisujemy przemianę?** F16 od obserwacji do modelu reakcji · F17 równania
+- **E. Integracja:** F18 dossier substancji · F19 dossier reakcji · F20 klinika błędów · F21 transfer
+
+Po bloku F: chemia nieorganiczna (N01–N07) i kolejne działy.
+:::
 
 ## 0.4 | Diagnoza startowa {#diagnoza}
 

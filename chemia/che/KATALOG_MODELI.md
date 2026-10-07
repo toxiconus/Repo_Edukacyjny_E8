@@ -111,4 +111,6 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 
 - `n05-doswiadczenia-v01`: `cah2H2o`, `nahH2o`, `nh4clCaoh2`, `naclH2so4`, `fesHcl`, `nh3H2oPhp`, `hclH2oOranz`, `h2sH2oUni`, `nh3Hcl`, `h2sPbac`, `h2sCuso4`, `caOH2Co2`
 
+**Zasada GFX:** najpierw istniejący model lub zlewka (można rozszerzyć i ulepszyć). Brakujący element — naczynie, przyrząd, przedmiot, efekt — budujemy od podstaw jako komponent wielokrotnego użytku w `szablon/rozszerzenia.js` i dopisujemy tutaj; nie robimy jednorazowych rysunków w lekcjach.
+
 **Jak dodać nową zlewkę:** w `rozszerzenia.js` dopisz spec do obiektu zlewek (`n` nazwa, `solid`, `l0`/`l1` barwa przed/po — np. `['ind-fenoloftaleina',12]`, `ppt` osad, `gas` H2/O2/CO2/NH3/HCl/H2S/Cl2/NO2…, `bubN` ilość pęcherzyków, `heat`/`T`, `fumes`, `teacher`, `why`, `eq`) i rekord reakcji (bilans sprawdza silnik). Barwy osadów: `ppt-agcl`, `ppt-baso4`, `ppt-caco3`, `ppt-cus`, `ppt-pbs`, `ppt-cu-oh-2`, `ppt-fe-oh-3`… (pełna lista w CHE.COLORS); jony: `ion-cu2`, `ion-fe2`, `ion-fe3`, `ion-ni2`, `ion-cr3`, `ion-mn2`; wskaźniki: `ind-uniwersalny`, `ind-fenoloftaleina`, `ind-oranz-metylowy`, `ind-lakmus`, `ind-bbt`, `ind-kapusta`.

@@ -18,7 +18,8 @@ Obowiązuje lekcje chemii N01–N04 i kolejne. Lekcja to jeden plik `lesson/<x>_
 - Jeden model silnika = jedno miejsce w lekcji (przycisk `.che-lesson-viz-ref`); nie usuwamy przycisków modeli, można je przenieść do lepszego miejsca.
 - Równania zostają oznaczone (`data-rx`), barwy/tabele (`data-ox`, `data-hy*`) — audyty LES-* porównują je z silnikiem.
 - Bez emoji. Język polski, styl podręcznikowy, krótkie akapity, wzory z indeksami Unicode (H₂O, Ca²⁺).
-- Kody lekcji: F00–F09 fundamenty, N01 Tlenki, N02 Wodorotlenki, N03 Kwasy, N04 Sole, R…, X…; pełny uid np. CHE.02.N01.tlenki.
+- **Animacje, modele i zlewki GFX:** najpierw używamy istniejących (`KATALOG_MODELI.md`) — można je rozszerzać i ulepszać. Gdy czegoś brakuje (naczynie, przyrząd, przedmiot, efekt), budujemy to **od podstaw jako element wielokrotnego użytku** i dopisujemy do biblioteki GFX (`szablon/rozszerzenia.js`, wpis w `KATALOG_MODELI.md`), a nie jako jednorazowy rysunek w lekcji. Nowy element zastępuje istniejący tylko wtedy, gdy istniejący nie da się sensownie rozszerzyć. Braki zapisujemy na końcu lekcji („Do dodania w rozszerzenia.js”).
+- Kody lekcji: F01–F21 fundamenty (F00 nie istnieje jako lekcja — mapa bloku jest w F01 §0.3), N01 Tlenki, N02 Wodorotlenki, N03 Kwasy, N04 Sole, R…, X…; pełny uid np. CHE.02.N01.tlenki.
 
 ## Kontrola
 `python3 tools/lesson_check.py lesson/_snap/<migawka>.html lesson/<x>_new.html lesson/edits_<KOD>.md` — każde zdanie migawki musi istnieć w nowej wersji albo być wpisane w pliku edycji:

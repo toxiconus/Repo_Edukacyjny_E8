@@ -22,5 +22,8 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Gałąź pracy CHE: `claude/che-lekcje`. Push tylko na gałęzie `claude/...` (push na `main` kończy się 403).
 - Po każdym zamkniętym etapie: commit i push, krótki wpis w `PRZEKAZANIE.md`.
 
+## GFX i modele
+- Najpierw istniejące animacje, modele i zlewki (`chemia/che/KATALOG_MODELI.md`) — rozszerzamy je i ulepszamy. Brakujący element (naczynie, przyrząd, przedmiot, efekt) budujemy od podstaw jako komponent wielokrotnego użytku w `szablon/rozszerzenia.js` + wpis w katalogu, nie jednorazowo w lekcji.
+
 ## Merytoryka
 - Język lekcji: polski, poziom E8 (podstawa programowa). Dane liczbowe oznaczaj do weryfikacji, jeśli nie są pewne.
