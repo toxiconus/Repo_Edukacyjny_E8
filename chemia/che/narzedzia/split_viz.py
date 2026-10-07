@@ -33,12 +33,14 @@ html.che-standalone #che-landing,html.che-standalone #che-project-shell{display:
 </style>
 <script id="che-standalone-v001">
 (function(){var C=window.CHE=window.CHE||{};
-C.STANDALONE={version:'1.0',open:function(id,back){
+C.STANDALONE={version:'1.1',open:function(id,o){o=o||{};var back=o.back||'index.html';
  function go(){document.documentElement.setAttribute('data-che-ui','ready');
+  var L=C.LESSONS=C.LESSONS||{};L.registry=L.registry||{};
+  if(o.source){var m=L.registry[id]||{id:id,code:id,status:'active',visuals:[],dataScope:[],subject:'chemia'};m.source=o.source;if(o.title)m.title=o.title;if(o.uid)m.uid=o.uid;L.registry[id]=m}
   if(!C.HOME_GATE||!C.HOME_GATE.openLesson){document.body.insertAdjacentHTML('afterbegin','<p style="padding:20px">Brak silnika lekcji (che-viz.js).</p>');return}
   C.HOME_GATE.openLesson(id);
   var b=document.getElementById('che-lfs-close');
-  if(b){b.textContent='← Spis lekcji';b.onclick=function(){location.href=back||'index.html'}}}
+  if(b){b.textContent='← Spis lekcji';b.onclick=function(){location.href=back}}}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){setTimeout(go,0)});else setTimeout(go,0);}};
 })();
 </script>
