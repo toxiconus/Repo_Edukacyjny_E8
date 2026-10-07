@@ -3,13 +3,13 @@ kod: F01
 uid: CHE.01.F01.jak_mysli_chemik
 tytul: Jak myśli chemik
 opis: Obserwacja, wniosek i hipoteza · cztery poziomy opisu · pięć pytań chemika · model to nie rzeczywistość
-kicker: F01 · FUNDAMENTY · MASTER v1.0
+kicker: F01 · FUNDAMENTY · MASTER v1.1
 lead: Pierwsza lekcja bloku fundamentów: jak z pojedynczej obserwacji dojść do poprawnego modelu chemicznego i zapisu. Uczysz się odróżniać to, co widzisz, od tego, co z tego wnioskujesz,
 lead: przechodzić między poziomem makro, cząsteczkowym, symbolicznym i ilościowym oraz sprawdzać, czy wyjaśnienie zgadza się z danymi.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stopka: **CHEMIA F01 v1.0 MASTER** · Jak myśli chemik · 2026
+stopka: **CHEMIA F01 v1.1 MASTER** · Jak myśli chemik · 2026
 ---
-::: minimum | Muszę umieć na E8 — 10 faktów
+::: minimum | Muszę umieć na E8 — 15 punktów
 1. **Chemia** bada skład, budowę, właściwości i przemiany substancji.
 2. **Obserwacja** to to, co widzę, słyszę, czuję lub mierzę — bez przyczyny: „wydzielają się pęcherzyki gazu”.
 3. **Wniosek** to interpretacja obserwacji: „powstaje CO₂” jest wnioskiem, który trzeba potwierdzić testem (woda wapienna mętnieje).
@@ -20,6 +20,11 @@ stopka: **CHEMIA F01 v1.0 MASTER** · Jak myśli chemik · 2026
 8. **Symbol** pierwiastka ma jedną lub dwie litery (H, O, Na, Cl); **wzór** zapisuje skład substancji: H₂O = 2 atomy H i 1 atom O.
 9. W **równaniu reakcji** liczba atomów każdego pierwiastka po obu stronach jest taka sama: 2 H₂ + O₂ → 2 H₂O.
 10. **Model** (np. atom jako kulka) to uproszczenie rzeczywistości — przydatne, ale z ograniczeniami.
+11. Umiesz oddzielić **obserwację → hipotezę → test → wynik → wniosek** i wskazać, który fragment jest dowodem.
+12. Umiesz powiedzieć, **co zmieniasz, co obserwujesz i co utrzymujesz stałe**, gdy projektujesz prosty test.
+13. Umiesz zapisać odpowiedź w schemacie **twierdzenie → dowód → wyjaśnienie**, zamiast podawać samą etykietę („to reakcja”, „to CO₂”).
+14. Umiesz zaznaczyć **pewność i ograniczenie**: „dane wspierają hipotezę” nie zawsze znaczy „udowodniono ją raz na zawsze”.
+15. Umiesz przejść w obie strony: **obserwacja → model** oraz **model → przewidywanie → test**.
 :::
 
 ::: warstwy
@@ -54,8 +59,10 @@ stopka: **CHEMIA F01 v1.0 MASTER** · Jak myśli chemik · 2026
 - rozpoznać zjawisko fizyczne i reakcję chemiczną na podstawie dowodu nowej substancji,
 - odczytać symbol, wzór i proste równanie na poziomie cząstek,
 - zastosować pięć pytań chemika do nowej sytuacji,
+- zaplanować prosty test: zmienna, obserwacja/pomiar, warunki stałe i kryterium wyniku,
+- uzasadnić wniosek dowodem zamiast samą nazwą substancji lub reakcją,
 - (rozumienie) przejść między czterema poziomami opisu,
-- (ambitnie) wskazać ograniczenia modelu.
+- (ambitnie) wskazać ograniczenia modelu i zaproponować przewidywanie, które odróżni dwa modele.
 :::
 
 ::: karta exam | Pytanie przewodnie
@@ -84,16 +91,20 @@ Architekturę całego bloku (21 lekcji w pięciu fazach) opisuje dokument F00 �
 4. Kryształy soli w wodzie „zniknęły”. Czy zaszła reakcja chemiczna?
 5. Po co zapisuje się hipotezę przed doświadczeniem?
 6. Jak sprawdzić, czy model jest dobry?
+7. Uczeń mówi: „Powstał CO₂, bo były pęcherzyki”. Co w jego odpowiedzi jest obserwacją, a czego jeszcze brakuje?
+8. Chcesz sprawdzić, czy temperatura wpływa na szybkość rozpuszczania soli. Co zmieniasz, co mierzysz/obserwujesz i co powinno pozostać takie samo?
 
 ::: odp | Pokaż klucz i interpretację
-1. Obserwacja (opis tego, co widać, bez przyczyny).
-2. Wzór — zapis składu: 2 atomy wodoru i 1 atom tlenu. Nazwa to „woda”.
-3. Pierwiastek chlor (jeden atom chloru).
-4. Nie — to rozpuszczanie (zjawisko fizyczne); sól odzyskasz przez odparowanie.
-5. Żeby wynik doświadczenia mógł ją potwierdzić albo obalić — hipoteza musi być sprawdzalna.
-6. Porównać przewidywania modelu z danymi (obserwacjami, pomiarami).
+1. **Obserwacja** — opis zmiany bez podania przyczyny.
+2. **Wzór** — zapis składu: 2 atomy wodoru i 1 atom tlenu. Nazwa to „woda”.
+3. **Pierwiastek chlor**; w konkretnym zapisie symbol może oznaczać jeden atom chloru.
+4. **Nie na podstawie samego zniknięcia kryształów.** To rozpuszczanie; sól pozostaje w roztworze i można ją odzyskać przez odparowanie.
+5. Żeby przewidywanie było sformułowane **przed wynikiem** i można było zaplanować test, który je wesprze albo podważy.
+6. Porównać **przewidywania modelu z danymi**: obserwacjami, pomiarami i wynikami testów.
+7. „Pęcherzyki gazu” to obserwacja. „CO₂” to **hipoteza/wniosek**, który wymaga testu, np. przepuszczenia gazu przez wodę wapienną.
+8. Zmieniasz **temperaturę**; mierzysz np. czas rozpuszczenia; utrzymujesz takie same ilość i rodzaj soli, objętość wody, mieszanie i naczynie. To przykład kontrolowania zmiennych.
 
-**Interpretacja:** **0–2/6** → przeczytaj rdzeń krok po kroku · **3–4/6** → rdzeń, szczególnie punkty z błędami · **5–6/6** → przejdź szybko do [§7](#model)–[§8](#poprawnosc) i ćwiczeń C–D.
+**Interpretacja:** **0–2/8** → przejdź przez rdzeń razem z przykładami · **3–5/8** → rdzeń + klinika błędów · **6–7/8** → ćwiczenia transferowe · **8/8** → możesz przejść szybko do [§7](#model)–[§8](#poprawnosc), ale nadal wykonaj test końcowy.
 :::
 :::
 
@@ -120,7 +131,7 @@ Chemik patrzy na to samo zjawisko na czterech poziomach. Dobra odpowiedź umie p
 |---|---|---|
 | **makroskopowy** | to, co widzimy i mierzymy | pęcherzyki, para, 100 °C |
 | **cząsteczkowy** | atomy, jony, cząsteczki (model!) | cząsteczki H₂O odrywają się od cieczy i przechodzą w gaz |
-| **symboliczny** | symbole, wzory, równania | H₂O(c) → H₂O(g) |
+| **symboliczny** | symbole, wzory, równania | H₂O(l) → H₂O(g) |
 | **ilościowy** | masy, objętości, mole | z 18 g wody powstaje 18 g pary — masa się nie zmienia |
 
 ::: karta understand | Przykład przejścia przez cztery poziomy
@@ -143,7 +154,7 @@ W obserwacji nie ma nazw produktów ani przyczyn. „Wydziela się **wodór**”
 
 ::: karta core | Po czym poznać reakcję chemiczną? (objawy)
 Zmiana barwy · wydzielanie gazu · powstawanie osadu · wydzielanie lub pochłanianie ciepła lub światła · zmiana zapachu.
-**Żaden objaw sam w sobie nie jest dowodem.** Barwa może się zmienić przy rozcieńczaniu, gaz wydziela się też przy gotowaniu wody. Dowodem jest **nowa substancja o innych właściwościach** — i to, że nie da się prosto odzyskać substancji wyjściowej.
+**Żaden objaw sam w sobie nie jest dowodem powstania nowej substancji.** Barwa może się zmienić przy rozcieńczaniu, pęcherzyki mogą pochodzić z wrzenia lub wydzielania rozpuszczonego gazu. Silny wniosek wymaga **testu właściwości produktu** albo innego niezależnego dowodu. Odwracalność nie jest sama w sobie definicją reakcji: istnieją przemiany chemiczne odwracalne. Na poziomie E8 najważniejsze pytanie brzmi: **czy mamy podstawy stwierdzić powstanie substancji o nowych właściwościach?**
 :::
 
 ## 4 | Pięć pytań chemika [[basic:E8]] {#piec-pytan}
@@ -160,6 +171,24 @@ Uniwersalne narzędzie — stosuj je do każdego nowego zagadnienia, w każdej l
 Każde pytanie zatrzymuje jeden typowy błąd: 1 — dopisywanie przyczyny do obserwacji; 2 — uznawanie każdej zmiany za reakcję; 3 — uczenie się zapisu bez rozumienia; 4 — błędne wzory i równania; 5 — wiara w model bez sprawdzenia.
 :::
 
+::: karta core | Twierdzenie → dowód → wyjaśnienie
+Gdy odpowiadasz „co się stało?”, nie kończ na nazwie zjawiska.
+
+**Twierdzenie:** „Prawdopodobnie powstał CO₂.”  
+**Dowód:** „Gaz przepuszczony przez wodę wapienną spowodował zmętnienie i powstanie osadu CaCO₃.”  
+**Wyjaśnienie:** „CO₂ reaguje z Ca(OH)₂, tworząc trudno rozpuszczalny CaCO₃.”
+
+To rozdziela trzy rzeczy: **co twierdzę, na czym to opieram i dlaczego dane wspierają mój wniosek**. Ten schemat będzie wracał w dalszych lekcjach.
+:::
+
+::: karta understand | Model → przewidywanie → test
+Chemia nie działa tylko w kierunku „zobaczyłem → nazwałem”. Dobry model pozwala zrobić krok w drugą stronę:
+
+**model → przewidywanie → doświadczenie → dane → sprawdzenie modelu.**
+
+Jeżeli model przewiduje wynik, którego doświadczenie nie daje, nie „naginamy” danych do modelu. Sprawdzamy warunki, pomiar i zakres stosowalności modelu.
+:::
+
 ## 5 | Trzy przykłady: obserwacja → model [[basic:E8]] {#przyklady}
 
 ::: karta basic | Przykład 1 — sól w wodzie
@@ -172,7 +201,7 @@ Każde pytanie zatrzymuje jeden typowy błąd: 1 — dopisywanie przyczyny do ob
 
 ::: karta basic | Przykład 2 — kwas i zasada
 **Obserwacja:** po zmieszaniu roztwór się ogrzewa, a dodany wcześniej wskaźnik (fenoloftaleina) z malinowego staje się bezbarwny.
-**Model:** jony H⁺ z kwasu i OH⁻ z zasady łączą się w cząsteczki wody.
+**Model:** w roztworze jony hydroniowe H₃O⁺ i OH⁻ reagują, tworząc wodę (zapis szkolny często upraszcza to do H⁺ + OH⁻ → H₂O).
 **Zapis:**
 $$ HCl + NaOH → NaCl + H₂O
 **Wniosek:** to **reakcja chemiczna** (zobojętnianie) — więcej w N02 i N03.
@@ -256,6 +285,23 @@ Jeśli znasz wynik, ale nie umiesz powiedzieć, z którego modelu wynika — wie
 10. **Bądź ciekawy** — „dlaczego?” to najlepsze pytanie w chemii.
 :::
 
+## 9.1 | Mini-protokół dobrego testu {#protokol}
+
+::: karta understand | Zanim wykonasz doświadczenie
+Każdy prosty test możesz rozpisać w sześciu krokach:
+
+1. **Pytanie:** co chcę rozstrzygnąć?
+2. **Hipoteza:** jaki wynik przewiduję i dlaczego?
+3. **Zmienna:** co celowo zmieniam?
+4. **Kontrola:** co utrzymuję takie samo?
+5. **Pomiar/obserwacja:** co dokładnie zapisuję, bez interpretacji?
+6. **Kryterium wniosku:** jaki wynik wesprze hipotezę, a jaki ją osłabi?
+
+**Przykład:** „Czy cieplejsza woda przyspiesza rozpuszczanie soli?” — temperatura jest zmienną, czas rozpuszczenia wynikiem, a ilość soli, objętość wody i sposób mieszania powinny być porównywalne.
+
+Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mieć **jasne pytanie i określony sposób rozstrzygnięcia**.
+:::
+
 ## 10 | Doświadczenia {#doswiadczenia}
 
 ::: dosw | Doświadczenie 1 — Co naprawdę się zmieniło? (trzy naczynia)
@@ -320,6 +366,10 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 | „Atom wygląda jak kulka.” | „W modelu przedstawiamy atom jako kulkę.” | Model to uproszczenie, nie zdjęcie. |
 | „Hipoteza: powstał CO₂.” (zapisana po doświadczeniu) | „Hipoteza: jeśli powstaje CO₂, woda wapienna zmętnieje.” (przed) | Hipoteza ma być sprawdzalna i zapisana przed wynikiem. |
 | „W 2 H₂O są 2 atomy wodoru.” | „W 2 H₂O są 4 atomy wodoru i 2 atomy tlenu.” | Współczynnik mnoży cały wzór. |
+| „Są pęcherzyki, więc na pewno zaszła reakcja.” | „Pęcherzyki są obserwacją; trzeba ustalić ich pochodzenie i sprawdzić produkt.” | Gaz może pojawić się także bez reakcji chemicznej. |
+| „Doświadczenie udowodniło hipotezę na zawsze.” | „Wynik wsparł hipotezę w danych warunkach.” | Model i hipoteza mają zakres stosowalności; nowe dane mogą wymagać korekty. |
+| „Model nie pasuje, więc doświadczenie jest błędne.” | „Najpierw sprawdź warunki, pomiar i zakres modelu.” | Nie wolno dopasowywać danych do oczekiwanego wyniku. |
+| „Zmieniałem temperaturę i ilość soli naraz.” | „Zmieniam jedną główną zmienną, pozostałe warunki kontroluję.” | Inaczej nie wiadomo, co spowodowało różnicę. |
 :::
 
 ## 12 | Ćwiczenia {#cwiczenia}
@@ -361,7 +411,7 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 ::: odp | Pokaż odpowiedzi
 9. Pozwala liczyć atomy, budować cząsteczki i bilansować równania — do tych zadań szczegóły elektronów nie są potrzebne.
 10. Model Bohra — elektron nie krąży po torze; reguła oktetu — wyjątki (BF₃, SF₆); „przekazanie elektronu” w wiązaniu jonowym — wiązania mają też charakter częściowo kowalencyjny.
-11. Makro: pęcherzyki, 100 °C. Cząsteczkowy: cząsteczki H₂O pokonują przyciąganie i przechodzą w gaz, nie rozpadają się. Symboliczny: H₂O(c) → H₂O(g). Ilościowy: masa wody w zamkniętym naczyniu się nie zmienia.
+11. Makro: pęcherzyki pary i temperatura wrzenia (np. 100 °C przy ciśnieniu normalnym). Cząsteczkowy: cząsteczki H₂O pokonują przyciąganie i przechodzą w gaz, nie rozpadają się. Symboliczny: H₂O(l) → H₂O(g). Ilościowy: masa wody w zamkniętym naczyniu się nie zmienia.
 12. W mieszaninie atomy Fe i S są w osobnych drobinach swoich substancji; w reakcji powstają wiązania między Fe i S — nowa substancja FeS o innych właściwościach.
 :::
 :::
@@ -377,6 +427,20 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 14. „Utlenił się” i „MgO” to wnioski. Obserwacja: „wstążka spala się jasnym białym płomieniem, powstaje biały, kruchy proszek”. Wniosek (osobno): „powstał tlenek magnezu”.
 15. Odparować obie próbki na parownicach — po roztworze soli zostaje biały osad. Albo zbadać przewodnictwo prądu (roztwór soli przewodzi — N04).
 16. Modele to uproszczenia wymieniane na dokładniejsze; prawo zachowania masy potwierdzono w niezliczonych pomiarach i obowiązuje we wszystkich modelach.
+:::
+:::
+
+::: karta understand | E. Transfer — myślenie chemika
+17. Uczeń bada dwie próbki. A zmienia barwę, B wydziela gaz. Czy na tej podstawie możesz już powiedzieć, że w obu zaszły reakcje? Napisz, czego jeszcze potrzebujesz.
+18. Zaprojektuj test rozróżniający dwa wyjaśnienia: „gaz powstał w reakcji” oraz „gaz był wcześniej rozpuszczony w cieczy”.
+19. Otrzymujesz wynik sprzeczny z przewidywaniem modelu. Podaj trzy rzeczy, które sprawdzisz przed odrzuceniem modelu.
+20. Napisz krótką odpowiedź według schematu **twierdzenie → dowód → wyjaśnienie** dla dowolnego doświadczenia z tej lekcji.
+
+::: odp | Przykładowy kierunek
+17. Nie. Potrzebny jest test właściwości produktu lub inne dane wskazujące na powstanie nowej substancji.
+18. Próba kontrolna: tę samą ciecz bez drugiego odczynnika ogrzej lub zamieszaj — jeśli też wydziela pęcherzyki, gaz mógł być rozpuszczony (np. woda gazowana). Albo użyj cieczy wcześniej przegotowanej i ostudzonej. Jeśli gaz pojawia się tylko po dodaniu odczynnika, a test (np. woda wapienna) wykrywa nowy gaz — to wsparcie hipotezy reakcji.
+19. Sprawdź: warunki doświadczenia, poprawność pomiaru oraz zakres stosowalności modelu.
+20. Odpowiedź musi zawierać osobno **twierdzenie**, konkretny **dowód z danych** i **wyjaśnienie**, dlaczego ten dowód wspiera wniosek.
 :::
 :::
 
@@ -419,7 +483,7 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 - wydzielał się tlen
 ! Zmętnienie wody wapiennej to test na CO₂: powstaje osad CaCO₃.
 
-? Który poziom opisu reprezentuje zapis H₂O(c) → H₂O(g)?
+? Który poziom opisu reprezentuje zapis H₂O(l) → H₂O(g)?
 - makroskopowy
 - ilościowy
 + symboliczny
@@ -451,7 +515,9 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 - **Zjawisko fizyczne** (bez nowej substancji, odwracalne prostymi metodami) **vs reakcja** (nowa substancja). Jeden objaw to nie dowód.
 - **Symbol** — pierwiastek/atom · **wzór** — skład · **indeks** — atomy w cząsteczce · **współczynnik** — liczba cząsteczek · **równanie** — atomy się zgadzają.
 - **Pięć pytań chemika:** co obserwuję → jaki typ zmiany → jaki model → jaki zapis → jak sprawdzę.
-- **Model ≠ rzeczywistość** — wybieraj model adekwatny do pytania.
+- **Dobre uzasadnienie:** twierdzenie → dowód → wyjaśnienie.
+- **Dobry test:** pytanie → hipoteza → zmienna → kontrola → obserwacja/pomiar → kryterium wniosku.
+- **Model ≠ rzeczywistość** — wybieraj model adekwatny do pytania i sprawdzaj jego przewidywania.
 :::
 
 ::: karta understand | Mapa myśli
@@ -506,8 +572,10 @@ Równanie reakcji :: zapis przemiany substratów w produkty z zachowaniem liczby
 - ☐ wykryć CO₂ wodą wapienną,
 - ☐ odczytać symbol, wzór, indeks, współczynnik i proste równanie,
 - ☐ zastosować pięć pytań chemika do nowego zjawiska,
+- ☐ zaplanować prosty test i wskazać zmienną oraz warunki kontrolne,
+- ☐ uzasadnić wniosek schematem twierdzenie → dowód → wyjaśnienie,
 - ☐ (rozumienie) opisać zjawisko na czterech poziomach,
-- ☐ (ambitnie) podać ograniczenia dwóch modeli.
+- ☐ (ambitnie) podać ograniczenia dwóch modeli i przewidywanie wynikające z modelu.
 :::
 
 ## 18 | System powtórek {#powtorki}
@@ -527,7 +595,9 @@ Równanie reakcji :: zapis przemiany substratów w produkty z zachowaniem liczby
 - **F02 Materia i substancje** — następna lekcja: co dokładnie nazywamy substancją, pierwiastkiem, związkiem i mieszaniną.
 - **F03 Właściwości i rozdzielanie** — zjawisko fizyczne vs reakcja w pełnym ujęciu, metody rozdzielania mieszanin.
 - **F12 Wzory · F17 Równania** — pełne zasady zapisu, które tu tylko odczytujemy.
-- **F16 Od obserwacji do modelu reakcji** — rozwinięcie metody obserwacja → hipoteza → wniosek dla reakcji.
+- **F16 Od obserwacji do modelu reakcji** — rozwinięcie metody obserwacja → hipoteza → test → wniosek → model dla reakcji.
+- **F20 Klinika błędów** — późniejszy powrót do procedury rozpoznawania, gdzie dokładnie powstał błąd: obserwacja, model, zapis czy wniosek.
+- **F21 Transfer** — zastosowanie tej samej procedury w nowych, mieszanych sytuacjach.
 - **F15 Polarność** — dlaczego woda wrze wyżej niż H₂S.
 - **N02, N03** — zobojętnianie; **N01** — tlenki (spalanie magnezu).
 :::
