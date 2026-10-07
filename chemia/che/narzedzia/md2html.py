@@ -350,7 +350,9 @@ def page(meta, doc, fn):
     kod = meta.get('kod', ''); sid = 'che-lekcja-src'
     return ('<!DOCTYPE html>\n<html lang="pl">\n<head>\n<meta charset="utf-8"/>\n'
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>\n'
-            '<title>%s · %s</title>\n</head>\n<body class="che-landing">\n'
+            '<title>%s · %s</title>\n'
+            # ekran startowy aplikacji (#che-landing) silnik chowa dopiero stylem z końca che-viz.js — do tego czasu był widoczny
+            '<style id="che-bez-startu">#che-landing,#che-project-shell{display:none!important}</style>\n</head>\n<body class="che-landing">\n'
             '<script type="application/json" id="%s">%s</script>\n<script src="che-viz.js"></script>\n'
             '<script>if(!window.CHE||!CHE.STANDALONE)document.body.innerHTML=\'<p style="font:16px system-ui;padding:20px">Nie wczytano pliku che-viz.js. Na telefonie otwórz wersję z folderu <b>jeden_plik</b>.</p>\'</script>\n'
             '<script>CHE.STANDALONE.open(%s,{source:%s,title:%s,uid:%s})</script>\n</body>\n</html>\n') % (

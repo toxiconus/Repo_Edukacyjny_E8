@@ -71,6 +71,7 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 7. **Dane silnika są zamrożone (deepFreeze)** — `rozszerzenia.js` podmienia `CHE.DATA.REACTIONS`, `REACTION_DATA`, `SUBSTANCES` na rozszerzalne kopie. Nowe dane dopisywać tak samo. (zasada)
 8. **Kontrola spójności silnika** (konsola: `[CHE.CONSISTENCY] rozjazdy`): zlewka bez rekordu reakcji → ostrzeżenie GFX-01; reakcja z nieznaną substancją → ENG-07. Stan v0_59: 0 ostrzeżeń. (zasada)
 9. **Nowe widoki:** nie używać `color:var(--ink)` (w aplikacji jest jasna) — używać `inherit`. Wykresy SVG są owijane w ramkę powiększania `che-zoom-frame` — ustawić jej szerokość 100%. (zasada)
+10. **Ekran startowy aplikacji przed lekcją** — przy otwieraniu lekcji przez ~1 s było widać widok CHE · LAB (Atlas, Wizualizacje…). Przyczyna: `che-viz.js` chowa `#che-landing` stylem z samego końca pakietu, a przeglądarka rysuje stronę w trakcie wczytywania 2,8 MB. Naprawa w `md2html.py`: styl `che-bez-startu` w `<head>`. (rozwiązane)
 
 ## 6. Merytoryka
 - N05 Wodorki napisana od zera (kanon md miał tylko szkic). Dane liczbowe (t. wrzenia, EN Paulinga, rozpuszczalność, pKa) to wartości podręcznikowe — **do sprawdzenia w Perplexity / innym LLM**.
