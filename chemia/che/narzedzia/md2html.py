@@ -377,6 +377,8 @@ if __name__ == '__main__':
         viz = open(os.path.join(ROOT, 'dist', 'che-viz.js'), encoding='utf-8').read().replace('</', '<\\/')
         a, b = pg.split('<script src="che-viz.js"></script>', 1)
         one = a + '<script>\n' + viz + '\n</script>' + b
+        # w pliku pojedynczym nie ma spisu obok — chowamy przycisk „Spis lekcji”
+        one = one.replace('</body>', '<script>(function(n){var t=setInterval(function(){var b=document.getElementById("che-lfs-close");if(b||++n>100){clearInterval(t);if(b)b.style.display="none"}},50)})(0)</script>\n</body>', 1)
         open(os.path.join(ROOT, 'dist', 'jeden_plik', fn + '.html'), 'w', encoding='utf-8').write(one)
         os.makedirs(os.path.join(ROOT, 'dist', '_tresc'), exist_ok=True)
         open(os.path.join(ROOT, 'dist', '_tresc', fn + '.html'), 'w', encoding='utf-8').write(doc)
