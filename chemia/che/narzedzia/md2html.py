@@ -351,6 +351,7 @@ def page(meta, doc, fn):
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>\n'
             '<title>%s · %s</title>\n</head>\n<body class="che-landing">\n'
             '<script type="application/json" id="%s">%s</script>\n<script src="che-viz.js"></script>\n'
+            '<script>if(!window.CHE||!CHE.STANDALONE)document.body.innerHTML=\'<p style="font:16px system-ui;padding:20px">Nie wczytano pliku che-viz.js. Na telefonie otwórz wersję z folderu <b>jeden_plik</b>.</p>\'</script>\n'
             '<script>CHE.STANDALONE.open(%s,{source:%s,title:%s,uid:%s})</script>\n</body>\n</html>\n') % (
         kod, H.escape(re.sub(r'<[^>]+>', '', meta.get('tytul', ''))), sid,
         json.dumps(doc, ensure_ascii=False).replace('</', '<\\/'), json.dumps(kod), json.dumps(sid),
@@ -368,7 +369,14 @@ if __name__ == '__main__':
     for p in args:
         meta, doc = render(p)
         fn = os.path.splitext(os.path.basename(p))[0]
-        open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(page(meta, doc, fn))
+        pg = page(meta, doc, fn)
+        open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(pg)
+        # wersja jednoplikowa (telefon, e-mail): che-viz.js wklejony do środka
+        os.makedirs(os.path.join(ROOT, 'dist', 'jeden_plik'), exist_ok=True)
+        viz = open(os.path.join(ROOT, 'dist', 'che-viz.js'), encoding='utf-8').read().replace('</', '<\\/')
+        a, b = pg.split('<script src="che-viz.js"></script>', 1)
+        one = a + '<script>\n' + viz + '\n</script>' + b
+        open(os.path.join(ROOT, 'dist', 'jeden_plik', fn + '.html'), 'w', encoding='utf-8').write(one)
         os.makedirs(os.path.join(ROOT, 'dist', '_tresc'), exist_ok=True)
         open(os.path.join(ROOT, 'dist', '_tresc', fn + '.html'), 'w', encoding='utf-8').write(doc)
         metas.append((fn, meta)); print('ok', fn, len(doc))
