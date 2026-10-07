@@ -1,3 +1,33 @@
+# AUDYT ZAKRESU — GENETYKA / EWOLUCJA / EKOLOGIA
+
+Poniższa mapa jest kontrolą kompletności treści, a nie kolejnym materiałem do nauki.
+
+| Wymaganie / obszar | Lekcja | Status w v5.1 |
+|---|---|---|
+| struktura i rola DNA | L011 | rdzeń |
+| znaczenie podwójnej helisy dla replikacji | L011 + L013 | rdzeń |
+| chromosom, chromatydy, centromer | L012 | rdzeń |
+| liczba chromosomów człowieka, autosomy i płeć | L012 + L018 | rdzeń |
+| mitoza i mejoza, haploidalność/diploidalność | L014 + L015 | rdzeń |
+| nowotwory i niekontrolowane podziały | L016 | rdzeń |
+| dziedziczenie jednogenowe | L017 | rdzeń |
+| podstawowe pojęcia genetyki | L010 + L017 | rdzeń |
+| dziedziczenie płci | L018 | rdzeń |
+| ABO i Rh | L019 | rdzeń |
+| mutacje i mutageny | L020 | rdzeń |
+| przykłady chorób genetycznych | L020 | rdzeń |
+| ewolucja i dowody | L030 | rdzeń |
+| dobór naturalny i sztuczny | L031 | rdzeń |
+| człowiek i małpy człekokształtne | L030 | rdzeń |
+| ekosystem i czynniki | L040 | rdzeń |
+| łańcuchy i sieci pokarmowe | L041 | rdzeń |
+| relacje między organizmami | L042 | rdzeń |
+| wpływ człowieka na środowisko | L043 | rdzeń |
+
+**Uzupełnienie v5.1:** L016A porządkuje zmienność środowiskową, genetyczną, rekombinacyjną i mutacyjną oraz tworzy most między mejozą, dziedziczeniem i mutacjami.
+
+---
+
 # WARSTWA B — MASTER / PROBLEM / THINK (genetyka)
 
 Dodatek do L010–L021. **Nie zastępuje** lekcji — pogłębia.
@@ -114,6 +144,7 @@ Błąd → Znajdź → Popraw → Reguła → Dlaczego → Podobne → Pułapka
 
 <!-- ==================== END WARSTWA_B_MASTER ==================== -->
 
+
 <!-- ==================== BEGIN WARSTWA_C_GRAFIKA ==================== -->
 
 # WARSTWA C — GRAFIKA O WYSOKIEJ WARTOŚCI
@@ -211,6 +242,7 @@ mejoza → błąd → gameta n+1 lub n−1 → zygota 2n+1 lub 2n−1 → aneupl
 | 9 | Nondysjunkcja | tak | nondysjunkcja.svg | L015/L020 |
 
 <!-- ==================== END WARSTWA_C_GRAFIKA ==================== -->
+
 
 <!-- ==================== BEGIN SVG_ASSETS ==================== -->
 
@@ -382,51 +414,56 @@ mejoza → błąd → gameta n+1 lub n−1 → zygota 2n+1 lub 2n−1 → aneupl
 
 <!-- ==================== END SVG_ASSETS ==================== -->
 
+
 <!-- ==================== BEGIN BACKLOG_SWIADOMY ==================== -->
 
-# BACKLOG — świadomie odłożone
+# BACKLOG — świadomie odłożone / do dalszego rozwinięcia
 
-**Status:** zapisane, nierozwijane na razie.
+**Status:** część tematów została już wprowadzona w L090; poniższa lista oznacza **pełną osobną lekcję lub większy bank zadań**, a nie brak jakiejkolwiek wzmianki.
 
-## 1. Ekspresja genu — pełna lekcja
-- [ ] Transkrypcja (matryca, mRNA)
-- [ ] Translacja (kodony, tRNA)
-- [ ] Cechy kodu genetycznego
-- [ ] Dlaczego mutacja może być „cicha"
-- [ ] Regulacja ekspresji / epigenetyka
+## 1. Ekspresja genu — pełna osobna lekcja
+- [x] szkic transkrypcji
+- [x] szkic translacji
+- [x] cechy kodu genetycznego
+- [x] dlaczego mutacja może być „cicha”
+- [ ] pełna lekcja: regulacja ekspresji
+- [ ] epigenetyka jako osobny blok
 
-## 2. Hardy–Weinberg
-- [ ] Założenia
-- [ ] p + q = 1, p² + 2pq + q² = 1
-- [ ] Częstość alleli vs genotypów
-- [ ] Kiedy model nie działa
+## 2. Hardy–Weinberg — pełny bank zadań
+- [x] założenia
+- [x] `p + q = 1`
+- [x] `p² + 2pq + q² = 1`
+- [x] częstość alleli vs genotypów
+- [x] kiedy model nie działa
+- [ ] zadania wieloetapowe
+- [ ] interpretacja danych tabelarycznych
 
 ## 3. Mapowanie genów
-- [ ] Frekwencja rekombinacji
-- [ ] cM
-- [ ] Mapowanie trzech punktów
-- [ ] Sprzężenie autosomalne
+- [x] frekwencja rekombinacji
+- [x] cM
+- [x] podstawowe zadania
+- [ ] mapowanie trzech punktów
+- [ ] sprzężenie autosomalne w większych zadaniach
 
 ## 4. Bank rodowodów konkursowych
 - [ ] 20–30 rodowodów z kluczami
-- [ ] Modele: AD, AR, XR, XD
-- [ ] Pułapki: niepełna penetracja
+- [ ] modele AD, AR, XR, XD
+- [ ] niepełna penetracja
+- [ ] zadania, w których dane nie pozwalają na jednoznaczne rozstrzygnięcie
 
 ## 5. Pliki SVG w `assets/`
-- [ ] Wszystkie pliki SVG (patrz SVG_ASSETS)
+- [ ] wszystkie plansze produkcyjne
+- [ ] audyt czytelności na telefonie
+- [ ] wersje bezpieczne dla trybu druku
 
 ## 6. Inne haki
-- [ ] Krzyżówki dwugenowe
-- [ ] Dominacja niepełna, allele wielokrotne poza ABO
-- [ ] Y-linked
-- [ ] Mutacje: frameshift, nonsense, missense
-- [ ] Protoonkogen → onkogen
-- [ ] Telomery
-- [ ] mtDNA
-
-**Ostatnia aktualizacja:** 2026-09-12
+- [ ] pełny bank zadań „wykryj brak informacji”
+- [ ] bank zadań „znajdź błąd w rozumowaniu”
+- [ ] bank zadań z mieszaniem L012–L020
+- [ ] pełna matryca E8 → MASTER → KONKURS
 
 <!-- ==================== END BACKLOG_SWIADOMY ==================== -->
+
 
 <!-- ==================== BEGIN WARSTWA_WIZUALNA ==================== -->
 
@@ -480,11 +517,12 @@ repo/
 
 <!-- ==================== END WARSTWA_WIZUALNA ==================== -->
 
+
 <!-- ==================== BEGIN STATUS ==================== -->
 
-# STATUS v3.9
+# STATUS v4.1 WORKING
 
-## Źródła scalone (2026-09-12)
+## Źródła scalone 2026-09-12 · synchronizacja L012 HTML v8.1: 2026-09-14
 
 | Źródło | Co wniesiono |
 |--------|--------------|
@@ -531,10 +569,108 @@ repo/
 
 <!-- ==================== END STATUS ==================== -->
 
+
 ---
 
-## STATUS po scaleniu z poprawione.md (2026-09-12)
+## STATUS po synchronizacji L012 v8.1 i rozbudowie L050/L090 (2026-09-14)
 
 - Podmieniono na wersje MASTER z poprawione.md: L021, L030, L031, L032, L040, L041, L042, L043, L044, L050, L090.
 - Backup: `_backup_md_2026-09-12/`.
 - L001–L020 (poza L021) bez zmian, o ile nie było bloku w poprawione.
+
+
+---
+
+# NOTATKA ROBOCZA v4.1
+
+## Zakres tej rewizji
+
+- **L001–L011:** pozostawione bez merytorycznej przebudowy.
+- **L012:** zsynchronizowane z dostarczonym HTML v8.1 i rozszerzone w MD.
+- **L013–L044:** pozostawione bez merytorycznej przebudowy.
+- **L050:** rozszerzone o warstwę diagnostyczną i zadania z brakującą informacją.
+- **L090:** rozszerzone o kontrolę założeń i precyzji olimpijskiej.
+- **WARSTWA B / C / BACKLOG:** uporządkowane tak, aby nie deklarowały jako „brakujące” tematów, które już pojawiły się w L090.
+
+## Główna zasada dalszej pracy
+
+> Najpierw domykamy teorię i przykłady prowadzone, dopiero potem dokładamy kolejne trudne zadania.
+
+> Jeżeli zadanie wymaga rozumowania, uczeń powinien mieć wcześniej możliwość zobaczenia takiego rozumowania w teorii albo w przykładzie prowadzonym.
+
+
+
+# AUDYT GLOBALNY v4.2 — 2026-09-15
+
+## Zakres
+
+- L001–L011: **nietknięte** w tej rewizji.
+- L012: pozostaje wersją zsynchronizowaną z HTML v8.1; nie dublujemy jej całej treści.
+- L013–L020: wzmocniono przede wszystkim zależności przyczynowo-skutkowe, przykłady prowadzone i rozróżnienia pojęciowe.
+- L030–L031: doprecyzowano dowody ewolucji oraz role zmienności i doboru.
+- L040–L043: doprecyzowano przepływ energii, obieg materii, łańcuchy/sieci, relacje i analizę wpływu człowieka.
+- L050: dodano kontrolę transferu wiedzy.
+- L090: dodano kontrolę założeń modelu przed obliczeniami.
+
+## Najważniejsze problemy znalezione w audycie
+
+### Priorytet A — trzeba pilnować przy konwersji do HTML
+1. **Teoria nie może być krótsza niż wymagają tego zadania.**
+2. Każdy nowy typ zadania powinien mieć przynajmniej jeden przykład prowadzony.
+3. „[ZAAWANSOWANY]” powinien być oznaczony jako rozszerzenie, a nie jako konieczne minimum E8.
+4. W zadaniach z liczeniem trzeba zawsze rozdzielać: **chromosom / chromatyda / cząsteczka DNA / centromer**.
+5. W zadaniach olimpijskich trzeba oddzielać **model przyjęty w zadaniu** od twierdzeń o rzeczywistej biologii.
+
+### Priorytet B — ważne korekty językowe
+
+- „Semikonserwatywność gwarantuje bezbłędność” → zbyt mocne; chodzi o mechanizm wiernego kopiowania, ale błędy są możliwe.
+- „Homologiczne = różne funkcje” → zbyt wąskie; kluczowe jest wspólne pochodzenie, funkcje mogą się różnić.
+- „Mutacje tworzą nowe cechy, a dobór je wybiera” → lepiej: mutacje mogą tworzyć nowe allele, rekombinacja nowe kombinacje, a dobór zmienia częstości wariantów.
+- „Destruenci są ostatnim ogniwem łańcucha” → zbyt proste; uczestniczą w rozkładzie martwej materii pochodzącej z wielu poziomów.
+- „Jezioro → łąka → las” → tylko przykład sukcesji w określonych warunkach, nie uniwersalny schemat.
+- „Plemnik decyduje o płci” → zachować jako szkolny model XX/XY i nie przedstawiać jako pełnego opisu rozwoju płci.
+- „Dawca uniwersalny” → dopisywać, że chodzi o model dotyczący przede wszystkim krwinek czerwonych; rzeczywista zgodność jest szersza.
+
+## Ocena architektury
+
+Obecna konstrukcja jest dobra i nie wymaga mechanicznego ujednolicania. Największą wartością są:
+- warstwy E8 → trening → MASTER → zaawansowane,
+- klinika błędów,
+- ćwiczenie prowadzone,
+- drabinka trudności,
+- fiszki,
+- mosty między lekcjami,
+- zadania „PROBLEM / THINK”.
+
+Największy brak przed dalszą produkcją HTML to nie liczba sekcji, lecz **nierówna głębokość wyjaśnienia w niektórych lekcjach**. Dlatego v4.2 wzmacnia głównie miejsca, w których uczeń wcześniej dostawał test szybciej niż mechanizm.
+
+## Następny etap
+
+Przed finalnym HTML warto wykonać osobny audyt:
+1. każdego zadania i jego odpowiedzi,
+2. każdego przykładu liczbowego,
+3. każdego schematu/strzałki,
+4. zgodności etykiet [PODSTAWA E8] / [MASTER] / [ZAAWANSOWANY],
+5. brakujących grafik o wysokiej wartości dydaktycznej,
+6. testów końcowych pod kątem tego, czy każde pytanie ma przygotowanie w teorii.
+
+Zasada nadrzędna pozostaje: **niczego istotnego nie wycinamy; najpierw uzupełniamy teorię, dopiero potem ewentualnie skracamy powtórzenia ćwiczeń.**
+
+<!-- ==================== STATUS ROBOTY 2026-09-20 ==================== -->
+
+## STATUS ROBOTY (2026-09-20 20:31)
+
+- Ten plik jest **jedynym roboczym MD biologii**.
+- `BIOLOGIA_PODSTAWA_PLUS_v3.9_working.md` usunięty z katalogu roboczego po audycie bloków: v4.2 ≥ v3.9 w każdym BEGIN L* (L012 w v4.2 jest 4× dłuższy). Kopia: `_backup_md_2026-09-20/`.
+- L010: cechy + DNA od zera; L003 nie jest bramą.
+- HTML L011 kanon: `BIOLOGIA_L011_DNA.html` (v6.3) + `BIOLOGIA_L011_DNA_WIZUALIZACJA.html`.
+- FIX L011 (już w lekcji): A–C/G–T to też duża+mała, problem to **układ wiązań H**, nie „zła szerokość”; gen = produkt białko **albo** RNA; zmiana sekwencji ≠ zawsze inne białko.
+
+
+<!-- KEEP-ALIVE 2026-09-23 11:52 UTC — odświeżenie zapisu, bez zmiany treści dydaktycznej -->
+
+<!-- HTML SYNC 2026-09-23 -->
+- Kanon HTML L014: `BIOLOGIA_L014_MITOZA.html` (wykład + fazy P-M-A-T + cykl + klinika + fiszki + test; bez emotikon).
+- Kanon HTML L004: `BIOLOGIA_L004_ORGANIZACJA.html` (v3.1 MASTER + SVG rozmieszczenia tkanek).
+- Warianty L004 v1/v2/v2.1 i duplikaty L014 zostają w attachments; nic nie kasowane.
+- L014 HTML v3.0: `BIOLOGIA_L014_MITOZA.html` (~131 KB) — oś cyklu, licznik chromosomów 4/46, prometafaza, G0, pułapka X; korekty definicji cyklu/interfazy/nowotworu (2026-09-23).

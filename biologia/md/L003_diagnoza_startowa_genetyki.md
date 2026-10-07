@@ -1,4 +1,69 @@
-# L003 — Diagnoza startowa genetyki (v3.7 + v3.8 + v3.9.1)
+# L003 — Diagnoza startowa genetyki
+
+
+**Typ:** START / DIAGNOZA
+
+## 1. Cel diagnozy
+Diagnoza ma odpowiedzieć na pytanie: **co już rozumiem, a czego jeszcze nie rozumiem?** Nie jest pierwszą lekcją o DNA i nie zastępuje L010 ani L011.
+
+## 2. Zasada pracy
+Najpierw odpowiedz bez zaglądania do materiału. Potem sprawdź odpowiedzi i zaznacz tylko obszary, które rzeczywiście wymagają nauki.
+
+## 3. Diagnoza rdzeniowa
+1. Gdzie w typowej komórce eukariotycznej znajduje się większość DNA?
+2. Czym różni się gen od chromosomu?
+3. Co oznacza zapis `2n = 46`?
+4. Czym różni się mitoza od mejozy?
+5. Co oznaczają pojęcia: allel, genotyp, fenotyp?
+6. Dlaczego rodzeństwo może być podobne, ale nie identyczne?
+7. Co to mutacja? Czy każda mutacja powoduje chorobę?
+8. Co oznaczają symbole XX i XY w szkolnym modelu dziedziczenia płci?
+
+## 4. Klucz odpowiedzi
+1. Głównie w jądrze; DNA występuje też m.in. w mitochondriach.
+2. Gen to odcinek DNA zawierający informację genetyczną; chromosom to większa struktura organizująca DNA wraz z białkami.
+3. Organizm/komórka diploidalna ma dwa zestawy chromosomów; u człowieka komórka somatyczna ma 46 chromosomów.
+4. Mitoza służy m.in. wzrostowi i odnowie tkanek; mejoza prowadzi do powstania haploidalnych gamet i zwiększa różnorodność.
+5. Allel — wersja genu; genotyp — zestaw informacji/alleli w odniesieniu do badanych genów; fenotyp — obserwowalne cechy wynikające ze współdziałania genotypu i środowiska.
+6. Ponieważ potomstwo otrzymuje kombinacje alleli od rodziców, a różnorodność zwiększają m.in. procesy zachodzące podczas mejozy i losowe łączenie gamet.
+7. Mutacja to zmiana materiału genetycznego; może być neutralna, szkodliwa albo w określonych sytuacjach korzystna.
+8. XX/XY to uproszczony szkolny model determinacji płci u człowieka; nie należy traktować go jako pełnego opisu całej biologii płci.
+
+## 5. Mapa wyniku
+| Jeśli problemem jest… | Zacznij od… |
+|---|---|
+| komórka/jądro | L001 |
+| cechy i zmienność | L010 |
+| DNA/nukleotyd/helisa | L011 |
+| chromosom/chromatyda | L012 |
+| kopiowanie DNA | L013 |
+| mitoza | L014 |
+| mejoza/gamety | L015 |
+| krzyżówki/genotyp/fenotyp | L017 |
+| płeć i X | L018 |
+| ABO/Rh | L019 |
+| mutacje | L020 |
+
+## 6. Test po nauce
+Po przejściu bloku L010–L020 wróć do pytań 1–8. Nie porównuj tylko liczby punktów: sprawdź, czy potrafisz **wyjaśnić**, a nie tylko nazwać pojęcie.
+
+## 7. Bank materiału diagnostycznego z wcześniejszych wersji
+Poniżej zachowany zostaje wcześniejszy, rozbudowany materiał L003. Nie jest on już obowiązkową częścią diagnozy startowej; może być używany jako **bank pytań, klinika błędów, powtórka i materiał do testu przekrojowego L021**.
+
+---
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Diagnoza jako mapa.
+
+`[BIO: DIAGRAM type=FLOW]`
+`pytanie → odpowiedź → luka → lekcja`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** diagnoza nie jest wykładem.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 > Uzupełnienie MASTER jest **na końcu bloku** (sekcje 16–23). Treść v3.7 bez skreśleń.
 
@@ -204,7 +269,6 @@ Potem L011 (DNA), L012 (chromosom), L013 (replikacja).
 
 1. Dlaczego lekarz rodzinny pyta o choroby w rodzinie?
 2. Jakie znaczenie mają badania genetyczne?
-
 
 
 ---
@@ -413,4 +477,5 @@ L010 definicje dziedziczenia i zmienności → L011 budowa DNA.
 
 <!-- ==================== END L003 ==================== -->
 
-<!-- ==================== BEGIN L010 ==================== -->
+
+<!-- ==================== BEGIN L004 ==================== -->

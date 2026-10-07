@@ -1,4 +1,30 @@
-# L018 — Jak dziedziczy się płeć i cechy sprzężone z chromosomem X? (v3.8 — wzmocniona warstwa merytoryczna)
+# L018 — Jak dziedziczy się płeć i cechy sprzężone z chromosomem X?
+
+## KARTA LEKCJI L018
+
+- Numer: L018
+- Tytuł roboczy: Płeć i cechy sprzężone z X
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L017 · Następna: L019
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Dziedziczenie związane z X.
+
+`[BIO: DIAGRAM type=FLOW]`
+`XX/XY → allele na X → gamety → potomstwo`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** nie każdy gen na X jest „chorobą”.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -294,8 +320,6 @@ Matematyka (P) · Medycyna (hemofilia, daltonizm) · Etyka (poradnictwo).
 1. Dlaczego hemofilia częściej u chłopców? 2. Dlaczego daltonizm częstszy u mężczyzn? 3. Znaczenie badania rodowodu?
 
 
-
-
 ---
 
 ## 23. UZUPEŁNIENIE egzaminacyjne v3.8+ (doklejone)
@@ -329,6 +353,45 @@ Odpowiedzi: 1 1/2 wśród synów (połowa X matki jest Xᵃ); wśród wszystkich
 ### Status
 doklej 2026-09-12 · v3.8 zachowane.
 
+
+## 24. UZUPEŁNIENIE AUDYTOWE v4.2 — precyzja modelu XX/XY i X-linked
+
+### 24.1. Co naprawdę oznacza „plemnik decyduje o płci”?
+W **szkolnym modelu chromosomalnym XX/XY**:
+- komórka jajowa wnosi X,
+- plemnik wnosi X albo Y,
+- dlatego to rodzaj plemnika decyduje o tym, czy zygota ma układ XX czy XY.
+
+To sformułowanie dotyczy **kombinacji chromosomów płci**, a nie całego biologicznego rozwoju płci, który jest bardziej złożony.
+
+### 24.2. Algorytm zadania X-linked
+1. Zapisz chromosomy płci.
+2. Umieść allel genu na **X**, jeśli zadanie dotyczy cechy X-linked.
+3. Ustal gamety matki i ojca.
+4. Zbuduj krzyżówkę.
+5. Osobno policz córki i synów.
+6. Na końcu sprawdź, czy wynik pasuje do reguły: **ojciec nie przekazuje X synowi**.
+
+### 24.3. Przykład „od ojca do dziecka”
+**Ojciec XᵃY, matka XᴬXᴬ**
+
+- wszystkie córki otrzymują od ojca `Xᵃ`,
+- wszystkie córki otrzymują od matki `Xᴬ`,
+- więc w modelu recesywnym wszystkie córki są `XᴬXᵃ` — nosicielkami,
+- wszyscy synowie otrzymują od ojca `Y` i od matki `Xᴬ` — `XᴬY`.
+
+**Wniosek:** w tym modelu nie ma przekazania allelu X-linked z ojca bezpośrednio na syna.
+
+### 24.4. Pułapka językowa
+Nie pisz:
+> „Ojciec przekazuje córce chorobę."
+
+Lepiej:
+> „Ojciec przekazuje córce swój chromosom X z określonym allelem."
+
+Dopiero na tej podstawie ustala się możliwy fenotyp.
+
 <!-- ==================== END L018 ==================== -->
+
 
 <!-- ==================== BEGIN L019 ==================== -->

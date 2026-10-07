@@ -1,4 +1,30 @@
-# L044 — Powtórka ekologii (v4.0 — powtórka umiejętności)
+# L044 — Powtórka ekologii
+
+## KARTA LEKCJI L044
+
+- Numer: L044
+- Tytuł roboczy: Powtórka ekologii
+- Dział: Ekologia
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L040–L043 · Następna: L050
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Powtórka ekologii.
+
+`[BIO: DIAGRAM type=FLOW]`
+`element → zależność → proces → skutek`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** transfer.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Powtórka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -326,7 +352,6 @@ EKOLOGIA
 ---
 
 **Koniec L044 MASTER v4.0**
-
 
 
 ---

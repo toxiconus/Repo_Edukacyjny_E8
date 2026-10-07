@@ -215,7 +215,7 @@ Uczeń m.in.:
 | L003 | Diagnoza startowa | START | v3.7 |
 | L010 | Skąd podobieństwa i różnice? | GENETYKA | v3.7 |
 | L011 | Jak DNA przechowuje informację? | GENETYKA | **v3.8** |
-| L012 | Jak DNA jest upakowane? | GENETYKA | **v3.8** |
+| L012 | Jak DNA jest upakowane? | GENETYKA | **v8.1 HTML → v4.1 MD** |
 | L013 | Jak komórka kopiuje DNA? | GENETYKA | **v3.8** |
 | L014 | Jak komórki ciała się odnawiają? | GENETYKA | **v3.8** |
 | L015 | Jak powstają gamety? | GENETYKA | **v3.8** |
@@ -233,21 +233,37 @@ Uczeń m.in.:
 | L042 | Relacje między organizmami | EKOLOGIA | v3.7 |
 | L043 | Człowiek a środowisko | EKOLOGIA | v3.7 |
 | L044 | Powtórka ekologii | [POWTÓRKA] | v3.7 |
-| L050 | Powtórka roczna | [POWTÓRKA] | **v4.0** |
-| L090 | Extra olimpijska | [KONKURS] | **v4.0** |
+| L050 | Powtórka roczna | [POWTÓRKA] | **v4.1 WORKING** |
+| L090 | Extra olimpijska | [KONKURS] | **v4.1 WORKING** |
 
 **Harmonogram (MASTER):** IX — L001–L003 · IX–XI — L010–L021 · XI–I — L030–L032 · I–IV — L040–L044 · IV–VI — L050.
 
 **Warstwy w każdej lekcji:** [PRZYPOMNIENIE] → [PODSTAWA E8] → [TRENING] → [MASTER] → opcjonalnie [KONKURS].  
-HTML pojedynczych lekcji: na razie brak (status w indeksie MASTER / BIOLOGIA).
+HTML pojedynczych lekcji: L012 ma wersję **v8.1**; L001–L011 pozostają poza zakresem tej rewizji.
 
 <!-- ==================== END SYSTEM ==================== -->
 
+
 <!-- ==================== BEGIN L001 ==================== -->
+## KARTA LEKCJI L001
+
+- Numer: L001
+- Tytuł roboczy: Komórka
+- Dział: Biologia komórki
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: — · Następna: L002 / L001A
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: BIOLOGIA_L001_KOMORKA.html
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+<!-- FIX 2026-09-26 MD>=HTML: tkanki roślinne z BIO.004x -->
+**Liść (przekrój) i łodyga — skrót E8.** W liściu widać skórkę, miękisz (w tym z chloroplastami) i wiązki przewodzące. W łodyce **drewno** prowadzi wodę z solami w górę, **łyko** — produkty fotosyntezy. To ten sam poziom „tkanka → narząd”, co serce i skóra w HTML L004 — opis tu, schemat w HTML.
+
 
 ## WYKŁAD Z HTML L001 v5.2
 
-HTML: `BIOLOGIA_L001_KOMORKA.html`
+HTML: `BIO_001_v07_komorka_budowa_funkcje_typy_komorek_teoria_komorkowa.html`
 
 Biologia L001 — Komórka: budowa, funkcje, typy komórek i teoria komórkowa (v5.2)
 
@@ -725,7 +741,7 @@ Uwaga: komórka **nie jest** po prostu większą strukturą — jest pierwszą s
   
     
       
-- **Dlaczego bez jądra komórka nie działa?** Bo jądro zawiera większość **przepisów** na białka. Bez nich nie ma budowy, nie ma enzymów.
+- **Dlaczego jądro jest ważne w komórce eukariotycznej?** Jądro zawiera większość DNA i pomaga kontrolować pracę komórki. Nie oznacza to jednak, że komórka bez jądra nie może wytwarzać białek: komórki prokariotyczne nie mają jądra, ale mają DNA i rybosomy.
       
 - **Dlaczego komórka potrzebuje energii?** Bo **wiele procesów komórkowych wymaga dostarczenia energii**. Komórka wykorzystuje między innymi **ATP jako bezpośredni nośnik energii**. Niektóre reakcje uwalniają energię, a niektóre zachodzą bez bezpośredniego wykorzystania ATP.
       
@@ -1976,3 +1992,50 @@ Zachowano całą treść v5.1. Uściślono hasło „jądro = DNA", definicję k
 Ucz się świadomie, nie na pamięć.
 
 <details><summary>Wcześniejsza warstwa MD L001 (v4.0, zachowana)</summary>
+
+
+## MASTER 2026 — zasady przebudowy całego pliku
+
+### 1. Cel
+Ten plik jest **źródłem treści**, a nie gotowym HTML. Treść ma być kompletna i samodzielna, natomiast znaczniki `[BIO: ...]` opisują przyszłą warstwę wizualną/interaktywną.
+
+### 2. Zasada „bez utraty treści”
+- Materiał z poprzednich wersji pozostaje w odpowiedniej lekcji albo w banku powtórzeniowym.
+- Przeniesienie treści nie oznacza jej usunięcia.
+- Usuwamy tylko rzeczy faktycznie błędne, sprzeczne albo powielone w sposób utrudniający naukę; w takim przypadku poprawiona wersja zastępuje błędną.
+- Historyczne dopiski wersji nie mają być dla ucznia osobnymi „lekcjami”.
+
+### 3. Warstwy
+**PODSTAWA E8 → MASTER → ZAAWANSOWANY → KONKURS/OLIMPIADA**. Uczeń powinien móc zatrzymać się na poziomie podstawowym i nadal rozumieć lekcję.
+
+### 4. Zasada testów
+Każde wymagające zadanie musi mieć wcześniej przygotowaną teorię, przykład prowadzony albo analogiczne ćwiczenie. Diagnoza nie może wymagać wiedzy, która pojawia się dopiero później.
+
+### 5. Zasada wizualna
+Każdy kluczowy proces otrzymuje w MD opis przyszłej grafiki: **co pokazać → co podpisać → co uczeń ma zauważyć → jaka pułapka ma zostać wyjaśniona**.
+
+### 6. Checkboksy
+Checkbox nie jest elementem obowiązkowym. W większości lekcji wystarczy tabela „umiem / muszę powtórzyć”, test lub mini-check.
+
+### 7. Wspólny język
+- **DNA** — cząsteczka zbudowana z nukleotydów; informacja jest zapisana w kolejności zasad.
+- **Gen** — odcinek DNA zawierający informację genetyczną; na poziomie MASTER można doprecyzować, że informacja może dotyczyć produktu, np. białka lub funkcjonalnego RNA.
+- **Chromosom** — struktura z DNA i związanymi z nim białkami, służąca organizacji materiału genetycznego.
+- **Dominujący/recesywny** opisuje sposób ujawniania allelu w określonym modelu dziedziczenia, a nie „lepszość” ani częstość.
+- Zmiana DNA **może** wpłynąć na cechę, ale skutek zależy od miejsca, rodzaju zmiany i jej kontekstu biologicznego.
+
+### 8. Główna kolejność nauki
+`komórka → genetyka i zmienność → DNA → chromosomy → replikacja → mitoza → mejoza → dziedziczenie → płeć/ABO → mutacje → nowotwory → powtórka przekrojowa`
+
+### 9. Warstwa wizualna — standard
+```text
+[BIO: DIAGRAM type=CONCEPT]
+ELEMENT → RELACJA → PROCES → SKUTEK
+[/BIO: DIAGRAM]
+```
+Dla grafiki należy preferować jeden komunikat poznawczy na jedną planszę. Nie budować „dekoracyjnych” ilustracji bez funkcji dydaktycznej.
+
+### 10. Aktualność podstawy programowej
+Dla ucznia klasy VIII w roku szkolnym 2026/2027 punktem odniesienia pozostaje zakres obowiązujący dla obecnego etapu wdrażania; nowa podstawa z 2026 r. jest wdrażana sukcesywnie od klas I i IV, a nie jednocześnie we wszystkich klasach. Zakres genetyki obejmuje m.in. DNA, replikację, chromosomy, mitozę/mejozę, nowotwory, dziedziczenie, płeć, ABO/Rh i mutacje.
+
+---

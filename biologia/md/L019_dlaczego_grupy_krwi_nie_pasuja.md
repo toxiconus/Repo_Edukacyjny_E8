@@ -1,4 +1,30 @@
-# L019 — Dlaczego grupy krwi nie pasują do prostego modelu A/a? (v3.8 — wzmocniona warstwa merytoryczna)
+# L019 — Dlaczego grupy krwi nie pasują do prostego modelu A/a?
+
+## KARTA LEKCJI L019
+
+- Numer: L019
+- Tytuł roboczy: Grupy krwi ABO i Rh
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L017 / L018 · Następna: L020
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** ABO i Rh.
+
+`[BIO: DIAGRAM type=FLOW]`
+`allele → antygeny → grupa krwi`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** ABO i Rh to dwa różne układy.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -283,8 +309,6 @@ Medycyna (transfuzje, konflikt Rh) · Matematyka (P) · Etyka (ojcostwo).
 1. Dlaczego sprawdza się grupę krwi przy transfuzji? 2. Dlaczego matka Rh− potrzebuje profilaktyki? 3. Czy z grup krwi można wykluczyć ojcostwo?
 
 
-
-
 ---
 
 ## 23. UZUPEŁNIENIE egzaminacyjne v3.8+ (doklejone)
@@ -316,6 +340,54 @@ Odpowiedzi: 1 A, B, AB, 0. 2 tak: Iᴬi i Iᴮi → ii. 3 kodominacja Iᴬ i I�
 ### Status
 doklej 2026-09-12 · v3.8 zachowane.
 
+
+## 24. UZUPEŁNIENIE AUDYTOWE v4.2 — ABO: fenotyp nie mówi wszystkiego o genotypie
+
+### 24.1. Algorytm rozwiązywania krzyżówki ABO
+1. Zapisz **fenotypy** rodziców.
+2. Ustal możliwe **genotypy** każdego rodzica.
+3. Wypisz możliwe gamety.
+4. Wykonaj krzyżówkę.
+5. Porównaj możliwe genotypy dziecka z jego fenotypem.
+6. Jeśli pytanie dotyczy wykluczenia, sprawdź najpierw, czy rodzic może przekazać wymagany allel.
+
+### 24.2. Dlaczego sam fenotyp jest niepełną informacją?
+Osoba z grupą A może mieć:
+- `IᴬIᴬ`
+- `Iᴬi`
+
+Dlatego samo „A” nie mówi, który z tych dwóch genotypów występuje.
+
+Analogicznie grupa B może oznaczać:
+- `IᴮIᴮ`
+- `Iᴮi`
+
+### 24.3. Przykład prowadzony
+**Rodzice:** A × B  
+**Dziecko:** 0
+
+Aby dziecko miało grupę 0, musi mieć `ii`.
+
+Zatem:
+- rodzic A musi móc przekazać `i` → `Iᴬi`,
+- rodzic B musi móc przekazać `i` → `Iᴮi`.
+
+Krzyżówka:
+`Iᴬi × Iᴮi`
+
+Możliwe fenotypy potomstwa:
+- A
+- B
+- AB
+- 0
+
+### 24.4. Ważne ograniczenie
+Grupy krwi mogą **wykluczać** niektóre możliwości dziedziczenia, ale same w sobie nie są pełnym dowodem pokrewieństwa. W praktyce wykorzystuje się znacznie więcej informacji genetycznej.
+
+### 24.5. Bezpieczne rozróżnienie transfuzji
+W szkolnym modelu często mówi się o „dawcy uniwersalnym” i „biorcy uniwersalnym”. Trzeba dopisać **krwinki czerwone** oraz pamiętać, że rzeczywista zgodność transfuzji uwzględnia więcej układów i parametrów niż samo ABO.
+
 <!-- ==================== END L019 ==================== -->
+
 
 <!-- ==================== BEGIN L020 ==================== -->

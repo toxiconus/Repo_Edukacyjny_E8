@@ -1,4 +1,30 @@
-# L016 — Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli? (v3.8 — wzmocniona warstwa merytoryczna)
+# L016 — Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli?
+
+## KARTA LEKCJI L016
+
+- Numer: L016
+- Tytuł roboczy: Gdy podziały wymykają się spod kontroli
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L014 / L015 · Następna: L016A / L017
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Kontrola podziałów.
+
+`[BIO: DIAGRAM type=FLOW]`
+`sygnał → cykl komórkowy → kontrola → niekontrolowany wzrost`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** nowotwór jako zaburzenie kontroli, nie „osobna mutacja”.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -288,8 +314,6 @@ Medycyna (profilaktyka) · Chemia (mutageny) · Edukacja zdrowotna (UV).
 1. Dlaczego warto stosować filtr UV? 2. Dlaczego nie każdy palacz ma raka? 3. Dlaczego badania przesiewowe są ważne?
 
 
-
-
 ---
 
 ## 23. UZUPEŁNIENIE v3.8+ (doklejone)
@@ -321,6 +345,38 @@ Odpowiedzi: 1 kontrola „czy dzielić”; nowotwór = kontrola zawodna. 2 UV us
 ### Status
 doklej 2026-09-12.
 
+
+## 24. UZUPEŁNIENIE AUDYTOWE v4.2 — od uszkodzenia DNA do utraty kontroli
+
+### 24.1. Pełny łańcuch przyczynowo-skutkowy
+`uszkodzenie DNA → naprawa / brak naprawy → mutacja → zmiana genu kontroli → zaburzenie kontroli cyklu → niekontrolowane podziały`
+
+To **model wyjaśniający**, a nie reguła, że każde uszkodzenie przechodzi całą tę drogę.
+
+### 24.2. Mutacja, mutagen, nowotwór — trzy różne pojęcia
+| Pojęcie | Co oznacza? |
+|---|---|
+| mutacja | trwała zmiana w DNA |
+| mutagen | czynnik zwiększający prawdopodobieństwo uszkodzeń/mutacji |
+| nowotwór | choroba związana z nieprawidłową kontrolą wzrostu i podziałów komórek |
+
+**Pułapka:** mutagen nie jest „mutacją”, a mutacja nie jest automatycznie nowotworem.
+
+### 24.3. Przykład prowadzony
+**Sytuacja:** komórka ma uszkodzone DNA.
+
+1. Systemy kontroli mogą zatrzymać cykl.
+2. DNA może zostać naprawione.
+3. Jeśli uszkodzenie nie zostanie prawidłowo naprawione, może zostać utrwalona mutacja.
+4. Jeżeli zmiany dotyczą genów regulujących wzrost, podziały lub śmierć komórki, ryzyko nieprawidłowego rozrostu może wzrosnąć.
+5. Nie oznacza to, że pojedyncze uszkodzenie = nowotwór.
+
+### 24.4. Ćwiczenie „znajdź błąd”
+**Zdanie:** „UV powoduje raka, więc każde uszkodzenie DNA prowadzi do nowotworu."
+
+**Poprawa:** UV może zwiększać ryzyko przez uszkadzanie DNA, ale komórki mają mechanizmy naprawy i kontroli. Ryzyko nie oznacza pewności.
+
 <!-- ==================== END L016 ==================== -->
 
-<!-- ==================== BEGIN L017 ==================== -->
+
+<!-- ==================== BEGIN L016A ==================== -->

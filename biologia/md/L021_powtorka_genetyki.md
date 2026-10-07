@@ -1,4 +1,30 @@
-# L021 — Powtórka genetyki (v4.0 — powtórka umiejętności)
+# L021 — Powtórka genetyki
+
+## KARTA LEKCJI L021
+
+- Numer: L021
+- Tytuł roboczy: Powtórka genetyki
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L010–L020 · Następna: L030
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Mapa całej genetyki.
+
+`[BIO: DIAGRAM type=FLOW]`
+`DNA → chromosom → podział → gameta → dziedziczenie → mutacja`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** transfer wiedzy między tematami.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Powtórka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -316,6 +342,87 @@ GENETYKA
 
 ---
 
+
+## UZUPEŁNIENIE MASTER v4.1 — jak korzystać z powtórki rocznej
+
+### A. Rdzeń E8 — 12 zdań kontrolnych
+
+Przed rozpoczęciem testu przekrojowego uczeń powinien umieć bez podglądania:
+
+1. DNA jest nośnikiem informacji genetycznej.
+2. Człowiek ma typowo 46 chromosomów w komórce somatycznej.
+3. 46 = 23 pary.
+4. Chromosomy homologiczne pochodzą z dwóch rodzicielskich zestawów.
+5. Po replikacji DNA liczba chromosomów nie zwiększa się.
+6. Liczba chromosomów zależy od liczby centromerów.
+7. Mitoza i mejoza mają różne cele.
+8. Allel jest wersją genu.
+9. Prawdopodobieństwo 25% nie oznacza „co czwarte dziecko”.
+10. Mutacja nie musi oznaczać choroby.
+11. Ewolucja wymaga dziedzicznej zmienności i różnic w sukcesie rozrodczym.
+12. Ekosystem obejmuje organizmy oraz środowisko nieożywione.
+
+### B. Najpierw rozpoznaj typ zadania
+
+| Jeżeli zadanie pyta o… | Najpierw uruchom |
+|---|---|
+| liczbę chromosomów | regułę centromerów |
+| stosunek potomstwa | Punnetta / prawdopodobieństwo |
+| X-linked | chromosomy płci + pochodzenie X/Y |
+| ABO | `Iᴬ`, `Iᴮ`, `i` |
+| aneuploidię | nondysjunkcję |
+| dobór naturalny | zmienność → dziedziczenie → różny sukces |
+| ekosystem | biocenoza + biotop |
+| łańcuch pokarmowy | przepływ energii i kierunek zależności pokarmowej |
+
+### C. Kontrola jakości odpowiedzi
+
+Przed uznaniem odpowiedzi za gotową sprawdź:
+
+- **Czy podałem liczbę?**
+- **Czy podałem jednostkę / etap / zakres pytania?**
+- **Czy uzasadniłem wynik?**
+- **Czy nie pomyliłem chromosomu z chromatydą?**
+- **Czy nie zamieniłem prawdopodobieństwa w gwarancję?**
+- **Czy nie użyłem pojęcia „dobór naturalny” bez wskazania różnic w przeżyciu lub rozrodzie?**
+
+### D. Zadania „z brakującą informacją”
+
+W powtórce rocznej warto celowo zostawić zadania, w których **nie da się udzielić jednej odpowiedzi bez dodatkowego warunku**.
+
+Przykłady:
+
+1. „Komórka ma 92 cząsteczki DNA. Ile ma chromosomów?”  
+   → trzeba znać etap cyklu.
+
+2. „Fenotyp jest dominujący. Jaki jest genotyp?”  
+   → może być `AA` albo `Aa`, jeśli nie ma dodatkowych danych.
+
+3. „Rodzice mają zdrowe dziecko. Jaki jest model dziedziczenia?”  
+   → samo to zdanie zwykle nie wystarcza.
+
+4. „Gatunek ma więcej chromosomów niż człowiek. Czy jest bardziej złożony?”  
+   → nie można tak wnioskować.
+
+To jest ważny poziom MASTER: **uczeń nie tylko znajduje odpowiedź, ale rozpoznaje, kiedy danych jest za mało.**
+
+### E. Mini-test końcowy — diagnostyka błędów
+
+| Odpowiedź ucznia | Możliwa luka |
+|---|---|
+| „92 chromosomy po replikacji” | L012 — centromer/chromatyda |
+| „co czwarte dziecko” | prawdopodobieństwo |
+| „mejoza to dwie mitozy” | różnica celu i przebiegu podziałów |
+| „mutacja = choroba” | mutacja ≠ skutek kliniczny |
+| „bakteria nauczyła się odporności” | dobór naturalny |
+| „ekosystem = zwierzęta i rośliny” | biotop |
+| „więcej chromosomów = bardziej rozwinięty organizm” | interpretacja liczby chromosomów |
+
+### F. Zasada końcowa
+
+> **Powtórka roczna nie ma polegać na ponownym przeczytaniu wszystkiego od początku. Ma ujawnić, które mechanizmy uczeń potrafi odtworzyć, zastosować, połączyć i wyjaśnić.**
+
+
 ## 15. STATUS LEKCJI
 
 - Wersja 4.0 (2026-09-12) — przebudowa na powtórkę umiejętności.
@@ -326,7 +433,6 @@ GENETYKA
 ---
 
 **Koniec L021 MASTER v4.0**
-
 
 
 ---

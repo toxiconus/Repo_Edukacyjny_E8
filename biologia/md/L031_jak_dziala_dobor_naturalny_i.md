@@ -1,4 +1,30 @@
-# L031 — Jak działa dobór naturalny i czym różni się od sztucznego? (v4.0 — pełna warstwa dydaktyczna)
+# L031 — Jak działa dobór naturalny i czym różni się od sztucznego?
+
+## KARTA LEKCJI L031
+
+- Numer: L031
+- Tytuł roboczy: Dobór naturalny
+- Dział: Ewolucja
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L030 · Następna: L032
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Dobór.
+
+`[BIO: DIAGRAM type=FLOW]`
+`zmienność → różny sukces rozrodczy → zmiana częstości cech`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** środowisko nie „wybiera” świadomie.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Ewolucja  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -408,7 +434,6 @@ Biologia (genetyka, ekologia) · Medycyna (antybiotykooporność) · Rolnictwo (
 **Koniec L031 MASTER v4.0**
 
 
-
 ---
 
 ## 24. UZUPEŁNIENIE egzaminacyjne v4.0+ (doklejone)
@@ -444,6 +469,39 @@ Szkic: 2 sztuczny. 3 część komórek już odporna przeżywa. 4 środowisko ust
 
 ### Status doklejki
 2026-09-12 · wcześniejsze sekcje bez zmian.
+
+
+## 23. UZUPEŁNIENIE AUDYTOWE v4.2 — zmienność → dobór → zmiana populacji
+
+### 23.1. Najważniejszy łańcuch
+`zmienność → dziedziczenie → różny sukces rozrodczy → zmiana częstości cech/alleli w populacji`
+
+To populacja **ewoluuje**. Nie mówimy, że pojedynczy organizm „ewoluuje”, ponieważ w trakcie własnego życia nie zmienia swojej puli alleli przez dobór naturalny.
+
+### 23.2. Mutacja a dobór — nie zamieniaj ról
+- **Mutacje** mogą tworzyć nowe allele.
+- **Rekombinacja** tworzy nowe kombinacje istniejących alleli.
+- **Dobór naturalny** zmienia częstości wariantów, ponieważ niektóre warianty zwiększają sukces rozrodczy w określonym środowisku.
+
+Dlatego zdanie:
+> „Dobór naturalny tworzy nowe cechy"
+
+jest zbyt uproszczone.
+
+### 23.3. Przykład z antybiotykiem — model
+Przed zastosowaniem antybiotyku w populacji mogą istnieć bakterie o różnej wrażliwości.
+
+`zmienność → antybiotyk → większe przeżycie opornych → rozmnażanie → większy udział oporności`
+
+**Nie:** antybiotyk „uczy” bakterie odporności.
+
+### 23.4. Dobór nie działa „na zawsze”
+Cecha korzystna w jednym środowisku może być mniej korzystna w innym. Dostosowanie jest **zależne od warunków i kosztów**.
+
+### 23.5. Mini-zadanie
+**Pytanie:** Dlaczego zmiana częstości alleli jest lepszym wskaźnikiem ewolucji niż stwierdzenie „osobniki stały się lepsze”?
+
+**Odpowiedź:** Ewolucja dotyczy zmian dziedzicznych w populacjach na przestrzeni pokoleń, a nie świadomego doskonalenia pojedynczych osobników.
 
 <!-- ==================== END L031 ==================== -->
 

@@ -18,6 +18,10 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Pytaj tylko, gdy decyzja naprawdę należy do użytkownika.
 - Przy kończącym się limicie: najpierw zapisz stan (commit + wpis w PRZEKAZANIE), potem najmniejszy działający krok.
 
+## Biologia (BIO)
+- Praca BIO: najpierw `biologia/bio/PRZEKAZANIE.md`, potem tylko md lekcji (`biologia/bio/md/`) i `biologia/bio/BIO_KATALOG.md`. Gałąź `claude/bio-lekcje`.
+- Build `python3 biologia/bio/narzedzia/md2html_bio.py`, test `node biologia/bio/narzedzia/sprawdz_bio.js`. Wygenerowanego HTML nie czytać.
+
 ## Git
 - Gałąź pracy CHE: `claude/che-lekcje`. Push tylko na gałęzie `claude/...` (push na `main` kończy się 403).
 - Po każdym zamkniętym etapie: commit i push, krótki wpis w `PRZEKAZANIE.md`.

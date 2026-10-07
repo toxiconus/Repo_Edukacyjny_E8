@@ -1,4 +1,30 @@
-# L020 — Czym są mutacje i jakie mogą mieć skutki? (v3.8 — wzmocniona warstwa merytoryczna)
+# L020 — Czym są mutacje i jakie mogą mieć skutki?
+
+## KARTA LEKCJI L020
+
+- Numer: L020
+- Tytuł roboczy: Mutacje
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L011 / L016 · Następna: L021
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Mutacja i skutek.
+
+`[BIO: DIAGRAM type=FLOW]`
+`zmiana DNA → produkt/komórka → możliwy skutek`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** mutacja ≠ automatycznie choroba.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -295,6 +321,61 @@ Chemia (mutageny) · Medycyna (choroby) · Etyka (testy genetyczne).
 ## 22. Zadania z życia codziennego
 1. Dlaczego warto chronić się przed UV? 2. Dlaczego nie każda mutacja powoduje chorobę? 3. Jak mutacje wpływają na ewolucję?
 
+
+## 24. UZUPEŁNIENIE AUDYTOWE v4.2 — mapa typów mutacji i skutków
+
+### 24.1. Trzy pytania zamiast jednej listy
+Przy zadaniu o mutacji najpierw zapytaj:
+
+1. **Co się zmieniło?** — pojedyncza zasada, fragment chromosomu czy liczba chromosomów?
+2. **Gdzie powstała zmiana?** — komórka somatyczna czy linia płciowa?
+3. **Jaki jest skutek?** — neutralny, szkodliwy, korzystny albo zależny od warunków?
+
+### 24.2. Drabinka od DNA do fenotypu
+`DNA → gen → RNA → białko → funkcja komórki → cecha/fenotyp`
+
+Mutacja może zatrzymać się „po drodze”:
+- nie zmienić białka,
+- zmienić aminokwas,
+- wprowadzić przedwczesny sygnał STOP,
+- zmienić ilość białka,
+- zmienić funkcję białka,
+- albo nie mieć zauważalnego wpływu na fenotyp.
+
+### 24.3. Substytucja vs insercja/delecja
+| Zmiana | Idea | Typowy problem |
+|---|---|---|
+| substytucja | jedna zasada zostaje zastąpiona inną | może być cicha, missense lub nonsense |
+| insercja | dodanie zasad | jeśli liczba nie jest wielokrotnością 3, może wystąpić frameshift |
+| delecja | usunięcie zasad | analogicznie może wystąpić frameshift |
+
+**Ważne:** „typowy” nie znaczy „zawsze”. Skutek zależy od miejsca i kontekstu.
+
+### 24.4. Mutacja a mutagen
+- **Mutacja** = zmiana w materiale genetycznym.
+- **Mutagen** = czynnik, który zwiększa częstość uszkodzeń lub mutacji.
+- UV może być mutagenem; samo UV nie jest „mutacją”.
+
+### 24.5. Mini-zadanie
+**Zmiana:** usunięto jedną zasadę z odcinka kodującego.
+
+**Tok rozumowania:**
+1. To delecja.
+2. Jedna zasada ≠ wielokrotność trzech.
+3. Może dojść do przesunięcia ramki odczytu.
+4. Zmienione mogą zostać kolejne kodony.
+5. Skutek dla białka zależy od miejsca zmiany.
+
+### 24.6. Mapa pojęć
+`mutacja`
+├── genowa
+│   ├── substytucja
+│   ├── insercja
+│   └── delecja
+├── chromosomowa — zmiana struktury
+└── genomowa — zmiana liczby chromosomów
+
 <!-- ==================== END L020 ==================== -->
+
 
 <!-- ==================== BEGIN L021 ==================== -->

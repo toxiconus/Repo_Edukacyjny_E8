@@ -1,4 +1,30 @@
-# L032 — Powtórka ewolucji (v4.0 — powtórka umiejętności)
+# L032 — Powtórka ewolucji
+
+## KARTA LEKCJI L032
+
+- Numer: L032
+- Tytuł roboczy: Powtórka ewolucji
+- Dział: Ewolucja
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L030–L031 · Następna: L040
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Powtórka ewolucji.
+
+`[BIO: DIAGRAM type=FLOW]`
+`dane → mechanizm → wniosek`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** odtwarzanie i uzasadnianie.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Powtórka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -314,7 +340,6 @@ EWOLUCJA
 ---
 
 **Koniec L032 MASTER v4.0**
-
 
 
 ---

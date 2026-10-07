@@ -1,4 +1,30 @@
-# L017 — Jak przewidywać dziedziczenie jednej cechy? (v5.0 — przebudowa „od podstaw do zaawansowanych")
+# L017 — Jak przewidywać dziedziczenie jednej cechy?
+
+## KARTA LEKCJI L017
+
+- Numer: L017
+- Tytuł roboczy: Dziedziczenie jednej cechy (Punnett)
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L015 · Następna: L018
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: BIOLOGIA_L017_PUNNETT.html
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Krzyżówka genetyczna.
+
+`[BIO: DIAGRAM type=FLOW]`
+`rodzice → gamety → potomstwo → genotyp → fenotyp`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** najpierw założenia modelu, potem rachunek.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -988,13 +1014,9 @@ Szczegóły — w przyszłych lekcjach lub w materiale rozszerzonym.
 
 ---
 
-HTML lekcji: `BIOLOGIA_L017_PUNNETT.html` (spójny tematycznie; kanon dydaktyczny = ten blok v5.0).
-
-
+HTML lekcji: `BIOLOGIA_L017_PUNNETT.html` (v5.0).
 
 ## DOPISEK v5.1 (HTML v5.0 + recenzja)
-
-Plik HTML: `BIOLOGIA_L017_PUNNETT.html` (v5.0).
 
 - **Niepełna vs kodominacja:** niepełna = fenotyp pośredni; kodominacja = oba widać jednocześnie, nie „wymieszane w jeden kolor”.
 - Liczba pól Punnetta przy n niezależnych genach (2 allele każdy): **4ⁿ**.
@@ -1002,6 +1024,10 @@ Plik HTML: `BIOLOGIA_L017_PUNNETT.html` (v5.0).
 - Extra poza E8: mtDNA / imprinting jako wyjątki od prostego Mendla; epistaza recesywna bywa **9:3:4**.
 - Tabele Punnetta w MD i HTML trzymać jako prawdziwe siatki 2×2 (góra/lewa = gamety).
 - Powtórki Aa×Aa w kilku sekcjach są celowe (warstwy); w HTML wystarczy odsyłacz „patrz 6.6”.
+
+### Status L017 (2026-09-20)
+
+MD i HTML zsynchronizowane merytorycznie. Wizualne siatki Punnetta + flip-fiszki zostają w HTML. Nic nie obcinane.
 
 <!-- ==================== END L017 ==================== -->
 

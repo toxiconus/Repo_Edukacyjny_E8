@@ -1,4 +1,30 @@
-# L050 — Powtórka roczna (v4.0 — pełna warstwa dydaktyczna)
+# L050 — Powtórka roczna
+
+## KARTA LEKCJI L050
+
+- Numer: L050
+- Tytuł roboczy: Powtórka roczna
+- Dział: Synteza
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L001–L044 · Następna: L090
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Mapa całego roku.
+
+`[BIO: DIAGRAM type=FLOW]`
+`pojęcie → proces → zastosowanie`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** łączenie działów.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Powtórka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -311,6 +337,33 @@ ROK
 
 **Koniec L050 MASTER v4.0**
 
+
+## 16. UZUPEŁNIENIE AUDYTOWE v4.2 — powtórka ma sprawdzać transfer, nie tylko pamięć
+
+### 16.1. Test „jedna informacja, trzy zastosowania”
+Uczeń powinien umieć wykorzystać tę samą wiedzę w trzech formach:
+1. **definicja** — „Co to jest?”
+2. **dane** — „Co wynika z tabeli/schematu?”
+3. **transfer** — „Co się stanie, jeśli zmieni się warunek?”
+
+### 16.2. Przykład transferu — genetyka
+**Wiedza:** po replikacji DNA liczba chromosomów nie musi się podwoić.
+
+- Definicja: wyjaśnij, dlaczego.
+- Dane: podaj liczbę chromosomów i chromatyd dla `2n = 10`.
+- Transfer: co zmieni się w anafazie, gdy chromatydy siostrzane się rozdzielą?
+
+### 16.3. Przykład transferu — ekologia
+**Wiedza:** energia przepływa, materia krąży.
+
+- Definicja: rozróżnij oba pojęcia.
+- Dane: odczytaj schemat poziomów troficznych.
+- Transfer: przewidź skutek usunięcia producentów.
+
+### 16.4. Zasada jakości powtórki
+Jeżeli uczeń potrafi tylko odtworzyć definicję, ale nie potrafi zastosować jej do nowego przykładu, temat nie jest jeszcze opanowany na poziomie MASTER.
+
 <!-- ==================== END L050 ==================== -->
+
 
 <!-- ==================== BEGIN L090 ==================== -->

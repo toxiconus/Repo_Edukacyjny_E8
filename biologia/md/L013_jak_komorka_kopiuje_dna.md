@@ -1,4 +1,30 @@
-# L013 — Jak komórka kopiuje DNA? (v3.8 — wzmocniona warstwa merytoryczna)
+# L013 — Jak komórka kopiuje DNA?
+
+## KARTA LEKCJI L013
+
+- Numer: L013
+- Tytuł roboczy: Jak komórka kopiuje DNA
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L012 · Następna: L014
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: BIOLOGIA_L013_REPLIKACJA.html
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Kopiowanie DNA.
+
+`[BIO: DIAGRAM type=FLOW]`
+`nić rodzicielska → rozdzielenie → nici potomne`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** komplementarność umożliwia replikację.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -362,6 +388,88 @@ Helikaza, polimeraza, proofreading · kierunek 5'→3' · widełki replikacyjne 
 3. Dlaczego DNA jest stosunkowo stabilne mimo ciągłego kopiowania?  
 4. Jak komórka „wie”, że ma skopiować DNA przed podziałem?
 
+
+## 23. UZUPEŁNIENIE AUDYTOWE v4.2 — jak nie pomylić mechanizmu z wynikiem
+
+### 23.1. Semikonserwatywność nie oznacza „bezbłędności”
+**Semikonserwatywna replikacja** mówi, **jak zbudowane są dwie potomne cząsteczki DNA**:
+- każda zawiera jedną nić wyjściową i jedną nowo zsyntetyzowaną,
+- komplementarność pomaga wiernie odtworzyć sekwencję,
+- ale replikacja **nie gwarantuje absolutnego braku błędów**.
+
+Dlatego zdanie:
+> „Semikonserwatywność gwarantuje, że DNA zawsze będzie identyczne"
+
+należy poprawić na:
+> „Semikonserwatywność i komplementarność umożliwiają bardzo wierne kopiowanie DNA, ale błędy mogą się zdarzać."
+
+### 23.2. Przykład prowadzony — od nici do dwóch cząsteczek
+**Dane:** jedna cząsteczka:
+`5'–A T G C–3'`
+`3'–T A C G–5'`
+
+Po rozdzieleniu nici każda z nich staje się matrycą.
+
+**Krok 1:** do pierwszej matrycy dobudowuje się nić komplementarna.  
+**Krok 2:** do drugiej matrycy dobudowuje się druga nić komplementarna.  
+**Krok 3:** otrzymujemy dwie cząsteczki DNA.  
+**Krok 4:** każda z nich zawiera jedną nić starą i jedną nową.
+
+### 23.3. Najważniejsze rozróżnienie
+- **Replikacja** = kopiowanie DNA.
+- **Mitoza** = rozdzielenie skopiowanego materiału między komórki potomne.
+- **Faza S** = etap cyklu komórkowego, w którym zachodzi replikacja DNA.
+
+### 23.4. Mini-zadania kontrolne
+1. Czy po replikacji liczba chromosomów musi się podwoić? **Nie.**
+2. Co podwaja się w typowym szkolnym modelu przed mitozą? **Liczba cząsteczek DNA i chromatyd.**
+3. Czy każdy błąd replikacji od razu zmienia cechę organizmu? **Nie.**
+4. Dlaczego? **Błąd może zostać naprawiony albo nie zmienić produktu genu/fenotypu.**
+
+---
+
+## L013+ HTML v6.0 — Meselson–Stahl, widełki, klinika (KEEP; widgety w HTML)
+
+**HTML:** `BIOLOGIA_L013_REPLIKACJA.html` (v6.0) — trener komplementarności, animacja widełek, quiz semikonserwatywności.
+
+### Doświadczenie Meselsona i Stahla (1958) — [ZAAWANSOWANY / konkurs]
+
+Matthew Meselson i Franklin Stahl hodowali bakterie na izotopach azotu: <sup>15</sup>N („ciężki”) i <sup>14</sup>N („lekki”). DNA wirowało w ultrawirówce według gęstości.
+
+Po **jednej** rundzie replikacji **całe DNA miało gęstość pośrednią**. To wyklucza:
+- model **konserwatywny** (jedna cząsteczka cała stara + jedna cała nowa — byłby pasek ciężki i pasek lekki),
+- model **rozproszony** (mieszanina fragmentów w obu niciach — inny rozkład gęstości).
+
+Zostaje model **semikonserwatywny**: każda cząsteczka = 1 nić stara + 1 nić nowa.  
+Na E8 nie trzeba procedury; warto wiedzieć, że semikonserwatywność jest **faktem doświadczalnym**.
+
+### Widełki — szkic etapów (HTML ma animację)
+
+0. Dwie nici razem.  
+1. Helikaza rozrywa wiązania H → widełki.  
+2. Polimeraza DNA dobudowuje nukleotydy (A–T, C–G) do każdej starej nici.  
+3. Widełki jadą wzdłuż cząsteczki.  
+4. Dwie cząsteczki, każda semikonserwatywna → w chromosomie: dwie **chromatydy siostrzane** (most L012).
+
+### Fragmenty Okazaki — [ZAAWANSOWANY]
+
+Jedna nić syntetyzowana w sposób ciągły (wiodąca), druga **porcjami** (opóźniona), bo polimeraza pracuje tylko 5′→3′, a nici są antyrównoległe. Na E8 wystarczy wiedzieć, że synteza nie jest „lustrzana i jednoczesna w tym samym kierunku chemicznym”.
+
+### Klinika (z HTML, skrót)
+
+| Mit | Poprawka |
+|-----|----------|
+| „Replikacja = mitoza” | Replikacja = kopiowanie DNA (faza S); mitoza = podział jądra/komórki (faza M). |
+| „Replikacja w trakcie podziału” | **Przed** podziałem. |
+| „Powstaje jedna nowa cząsteczka” | Powstają **dwie**; każda = stara + nowa. |
+| „Po replikacji 92 chromosomy” | 46 chromosomów (centromery), 92 chromatydy / 92 cząsteczki DNA (L012). |
+| „A łączy się z C” | A–T, C–G (L011). |
+
+### Status L013 (2026-09-20)
+
+Wykład v3.8 + audyt v4.2 **zostaje**. Doklejono Meselsona–Stahla, widełki, Okazaki (extra) i klinikę z HTML v6.0. Nic nie wycięte.
+
 <!-- ==================== END L013 ==================== -->
+
 
 <!-- ==================== BEGIN L014 ==================== -->

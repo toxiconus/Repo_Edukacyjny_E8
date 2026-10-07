@@ -1,4 +1,18 @@
-# L015 — Jak powstają gamety i skąd bierze się różnorodność? (v3.8 — wzmocniona warstwa merytoryczna)
+# L015 — Jak powstają gamety i skąd bierze się różnorodność?
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Mejoza i różnorodność.
+
+`[BIO: DIAGRAM type=FLOW]`
+`komórka 2n → mejoza → gamety n → zapłodnienie`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** redukcja liczby chromosomów + rekombinacja.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -326,7 +340,7 @@ Matematyka (2²³ kombinacji) · Biologia (rozmnażanie) · Etyka (dziedziczenie
 
 ## L015 — warstwa v5.1/v5.2 (HTML + korekta; nic z v3.8 nie skreślono)
 
-HTML: `BIOLOGIA_L015_MEJOZA.html` (bez paska postępu i checkboxów TOC).
+HTML: `BIOLOGIA_L015_MEJOZA.html` (v5.1; dopisek v5.2 w pliku). Bez paska postępu i checkboxów TOC.
 
 **Tytuł precyzyjny:** komórki haploidalne i różnorodność — u zwierząt z nich gamety, u roślin spory.
 
@@ -354,8 +368,13 @@ Rośliny: mejoza → spory → gametofit → gamety mitozą. Nondysjunkcja I vs 
 2. „Po mejozie I każdy chromosom ma już jedną chromatydę” — **fałsz**. Redukcja par; chromatydy siostrzane do mejozy II.
 3. Rekombinacja nie w mejozie II: homologi są już w **różnych** komórkach.
 
+### Status L015 (2026-09-20)
+
+MD = HTML na plus (wykład v3.8 + warstwa v5.1/v5.2). Brak luk merytorycznych do doklejania. Widgety/schematy SVG zostają w HTML.
+
 </details>
 
 <!-- ==================== END L015 ==================== -->
+
 
 <!-- ==================== BEGIN L016 ==================== -->

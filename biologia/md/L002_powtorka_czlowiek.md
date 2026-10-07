@@ -1,5 +1,19 @@
 # L002 — Powtórka: człowiek (wybrane, v3.7 + v3.9.1)
 
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Człowiek jako układ.
+
+`[BIO: DIAGRAM type=FLOW]`
+`układ → narząd → tkanka → komórka`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** powiązanie organizmu z komórką.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
+
 **Dział:** Powtórka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
 **Warstwy:** [PRZYPOMNIENIE] · [PODSTAWA E8] · [TRENING] · [MASTER]  
@@ -439,14 +453,27 @@ Wniosek: na krwinkach jest antygen A (grupa A lub AB) — nie „na pewno A” b
 </details>
 
 
-**Wizualizacje HTML L002:** 23+23=46, XX/XY, ABO antygen/przeciwciało (`BIOLOGIA_L002_CZLOWIEK.html`).
+**Wizualizacje HTML L002:** 23+23=46, XX/XY, ABO antygen/przeciwciało (`BIO_002_v07_czlowiek_krew_gamety_plec_cechy_organizmu.html`).
+
 <!-- ==================== END L002 ==================== -->
 
+
 <!-- ==================== BEGIN L003 ==================== -->
+## KARTA LEKCJI L003
+
+- Numer: L003
+- Tytuł roboczy: Diagnoza startowa genetyki
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L002 · Następna: L010 (nie brama)
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: BIOLOGIA_L003_DIAGNOZA.html
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
 
 ## WYKŁAD Z HTML L003 v6.0
 
-HTML: `BIOLOGIA_L003_DIAGNOZA.html`
+HTML: `BIO_003_v08_diagnoza_startowa_genetyki.html`
 
 Diagnoza ≠ nowy wykład. Nieznajomość allelu/replikacji na starcie jest normalna.
 

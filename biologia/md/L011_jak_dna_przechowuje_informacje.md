@@ -1,9 +1,35 @@
-# L011 — Jak DNA przechowuje informację? (v5.0 — przebudowa „od podstaw do zaawansowanych")
+# L011 — Jak DNA przechowuje informację?
+
+## KARTA LEKCJI L011
+
+- Numer: L011
+- Tytuł roboczy: Jak DNA przechowuje informację
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L010 · Następna: L012
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: BIOLOGIA_L011_DNA.html + WIZUALIZACJA
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** DNA: od elementu do helisy.
+
+`[BIO: DIAGRAM type=FLOW]`
+`nukleotyd → nić → dwie nici → helisa`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** informacja tkwi w sekwencji zasad.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
 **Warstwy:** [PRZYPOMNIENIE] · [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]  
-**Poprzednia lekcja:** L010 (cechy dziedziczne i zmienność)  
+**Poprzednia lekcja:** L010 (cechy + DNA od zera; chemia par jest tutaj, nie wracaj do całego wstępu)  
 **Następna lekcja:** L012 (chromosom, kariotyp)
 
 **Wersja:** v5.0 (2026-09-13) — przebudowa strukturalna: dodano wprowadzenie, historię odkrycia DNA, pełne wyjaśnienia definicji, analogie, osobną sekcję o ekspresji genu i centralnym dogmacie, ograniczenia modelu, rozkład statystyczny. **Nic nie usunięto** względem v3.8/v3.9.1 — wszystko rozbudowano.
@@ -965,7 +991,7 @@ Chcesz, żebym teraz wygenerował **pełny HTML** na podstawie tego MD (analogic
 
 ## DOPISEK v5.1 — precyzja bez ubytku treści
 
-HTML: `BIOLOGIA_L011_DNA.html` (bez paska postępu i checkboxów TOC).
+HTML: `BIO_011_v06_jak_DNA_przechowuje_informacje.html` (bez paska postępu i checkboxów TOC).
 
 **Rdzeń E8:** DNA = nośnik; nukleotyd; A T C G; A–T / C–G; helisa; informacja = kolejność; DNA ≠ gen ≠ chromosom; krótkie DNA vs RNA.
 
@@ -984,11 +1010,9 @@ HTML: `BIOLOGIA_L011_DNA.html` (bez paska postępu i checkboxów TOC).
 **Ćwiczenia extra:** DNA/gen/chromosom uzupełnianie; czy ATGCC vs ATGGC = inna cecha? (niekoniecznie); matryca 3′–TAC GGA TTT–5′ → mRNA 5′–AUG CCU AAA–3′.
 
 
-
-
 ## WARSTWA HTML L011 v6.3
 
-HTML kanon wizualny: `BIOLOGIA_L011_DNA.html` (v6.3).
+HTML kanon wizualny: `BIO_011_v06_jak_DNA_przechowuje_informacje.html` (v6.3).
 
 **Nowe warstwy wizualne (zostają w HTML; w MD opis):**
 - karty par A–T (2 wiązania) vs C–G (3 wiązania)
@@ -999,7 +1023,6 @@ HTML kanon wizualny: `BIOLOGIA_L011_DNA.html` (v6.3).
 - trener komplementarności DNA→DNA i DNA→RNA
 
 **FIX merytoryczny (zostaje):** para musi mieć szerokość **oraz** pasujące wiązania; A–C/G–T to też duża+mała, ale zły układ H-bond. Gen = produkt białko **albo** RNA. Zmiana sekwencji ≠ zawsze inne białko.
-
 
 <!-- ==================== END L011 ==================== -->
 

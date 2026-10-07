@@ -1,4 +1,30 @@
-# L041 — Jak zapisać łańcuchy i sieci pokarmowe? (v4.0 — pełna warstwa dydaktyczna)
+# L041 — Jak zapisać łańcuchy i sieci pokarmowe?
+
+## KARTA LEKCJI L041
+
+- Numer: L041
+- Tytuł roboczy: Łańcuchy i sieci
+- Dział: Ekologia
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L040 · Następna: L042
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Sieć pokarmowa.
+
+`[BIO: DIAGRAM type=FLOW]`
+`producent → konsumenci → destruenci`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** strzałka pokazuje przepływ pokarmu/energii.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Ekologia  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -401,7 +427,6 @@ Biologia (ekologia) · Matematyka (proporcje).
 **Koniec L041 MASTER v4.0**
 
 
-
 ---
 
 ## 24. UZUPEŁNIENIE E8 v4.0+ (doklejone)
@@ -423,6 +448,38 @@ Szkic: 4 strata energii na każdym poziomie.
 
 ### Status
 2026-09-12 · plik roboczy.
+
+
+## 23. UZUPEŁNIENIE AUDYTOWE v4.2 — łańcuch to nie sieć
+
+### 23.1. Jak budować łańcuch pokarmowy
+Zawsze zacznij od pytania:
+**„Kto jest zjadany przez kogo?”**
+
+Przykład:
+`trawa → konik polny → żaba → bocian`
+
+Strzałka oznacza **kierunek przepływu energii i materii z pokarmu do organizmu, który go zjada**.
+
+### 23.2. Od łańcucha do sieci
+W rzeczywistym ekosystemie:
+- jeden organizm może zjadać kilka innych,
+- jeden organizm może być pokarmem dla kilku gatunków.
+
+Dlatego kilka połączonych łańcuchów tworzy **sieć pokarmową**.
+
+### 23.3. Zadanie z brakującym ogniwem
+`trawa → ? → lis`
+
+Nie wolno zgadywać tylko na podstawie nazwy lisa. Trzeba wskazać organizm, który:
+1. może zjadać trawę,
+2. może być zjadany przez lisa.
+
+Przykładowo: `trawa → królik → lis`.
+
+### 23.4. Pułapka na strzałkę
+`A → B` nie oznacza „A poluje na B”.
+Oznacza, że **B pobiera energię z A jako pokarmu**.
 
 <!-- ==================== END L041 ==================== -->
 

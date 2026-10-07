@@ -1,4 +1,30 @@
-# L090 — Extra olimpijska (v4.0 — pełna warstwa dydaktyczna)
+# L090 — Extra olimpijska
+
+## KARTA LEKCJI L090
+
+- Numer: L090
+- Tytuł roboczy: Extra olimpijska
+- Dział: Konkurs
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L050 · Następna: —
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Myślenie konkursowe.
+
+`[BIO: DIAGRAM type=FLOW]`
+`dane → model → obliczenie/wniosek`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** jawne założenia i kontrola wyniku.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Extra  
 **Poziomy:** zaawansowany  
@@ -343,6 +369,161 @@ Po L090:
 
 ---
 
+
+## UZUPEŁNIENIE MASTER v4.1 — kontrola precyzji olimpijskiej
+
+### 16. Jak czytać materiał rozszerzony?
+
+Materiał olimpijski powinien być traktowany jako **budowanie modelu**, a nie lista trudniejszych słów.
+
+Przy każdym nowym pojęciu zadaj cztery pytania:
+
+1. **Co to jest?**
+2. **Jak działa?**
+3. **Z czym łączy się z wcześniejszych lekcji?**
+4. **Jakie założenie muszę spełnić, aby mój wniosek był prawdziwy?**
+
+### 16.1. Kod genetyczny — ważne zastrzeżenia
+
+Warto rozróżniać:
+
+- **kod genetyczny** — reguła przyporządkowania kodonów aminokwasom,
+- **sekwencję DNA/RNA** — konkretny zapis nukleotydów,
+- **ekspresję genu** — proces wykorzystania informacji genetycznej.
+
+Cechy kodu genetycznego:
+
+- trójkowy,
+- zdegenerowany,
+- bezprzecinkowy,
+- niezachodzący,
+- prawie uniwersalny.
+
+„Prawie uniwersalny” jest bezpieczniejsze niż „zawsze uniwersalny”, ponieważ istnieją wyjątki, m.in. w niektórych genomach mitochondrialnych.
+
+### 16.2. Transkrypcja i translacja — nie myl kierunku
+
+Uproszczony schemat:
+
+```text
+DNA
+ ↓ transkrypcja
+RNA
+ ↓ translacja
+białko
+```
+
+W komórce eukariotycznej transkrypcja zachodzi w jądrze, natomiast translacja zachodzi na rybosomach.
+
+Przy przepisywaniu sekwencji trzeba zawsze sprawdzić, **która nić DNA została podana i w jakim kierunku**. Nie wolno mechanicznie zamieniać każdej litery bez określenia, czy podana sekwencja jest nicią matrycową.
+
+### 16.3. Hardy–Weinberg — model, nie prawo rzeczywistości
+
+Równania:
+
+```text
+p + q = 1
+p² + 2pq + q² = 1
+```
+
+opisują model równowagi populacji przy określonych założeniach.
+
+Przed zastosowaniem wzoru sprawdź:
+
+- czy populacja jest wystarczająco duża,
+- czy zakładamy brak doboru,
+- czy zakładamy brak migracji,
+- czy zakładamy brak mutacji,
+- czy kojarzenie jest losowe.
+
+> **Najważniejsza umiejętność olimpijska:** nie tylko policzyć, ale sprawdzić, czy model wolno zastosować.
+
+### 16.4. Mapowanie genów
+
+Przybliżenie:
+
+```text
+1% rekombinacji ≈ 1 cM
+```
+
+jest użyteczne dla zadań szkolnych i wielu zadań konkursowych, ale częstość rekombinacji nie jest bezwarunkowo idealną miarą fizycznej odległości DNA.
+
+### 16.5. Rodowody — nie zgaduj po jednym znaku
+
+Algorytm:
+
+```text
+1. Czy cecha występuje u obu płci?
+2. Czy zdrowi rodzice mają chore dziecko?
+3. Czy cecha przeskakuje pokolenia?
+4. Czy występuje przekaz ojciec → syn?
+5. Które modele można wykluczyć?
+6. Czy pozostałe dane jednoznacznie wybierają jeden model?
+```
+
+Jeśli dane nie rozstrzygają, odpowiedź powinna to powiedzieć.
+
+### 16.6. Mutacja ≠ skutek
+
+Schemat:
+
+```text
+mutacja
+ ↓
+zmiana sekwencji?
+ ↓
+zmiana RNA / białka?
+ ↓
+zmiana funkcji?
+ ↓
+zmiana fenotypu?
+```
+
+Nie każdy etap musi zakończyć się zmianą następnego.
+
+### 16.7. Nondysjunkcja — pilnuj poziomu
+
+Nie należy mieszać:
+
+```text
+błąd w mejozie
+→ nieprawidłowa gameta
+→ nieprawidłowa zygota
+→ aneuploidia
+```
+
+z:
+
+```text
+mutacja genu
+→ zmiana sekwencji DNA
+```
+
+To różne poziomy organizacji materiału genetycznego.
+
+### 16.8. Kontrola zadań olimpijskich
+
+Przed zapisaniem wyniku sprawdź:
+
+- jednostki,
+- zakres populacji,
+- kierunek nici DNA,
+- założenia modelu,
+- czy wynik jest biologicznie możliwy,
+- czy pytanie dotyczy genotypu, fenotypu, allelu, genu czy chromosomu.
+
+### 16.9. Zasada „nie przesadzaj z uproszczeniem”
+
+Jeżeli szkolny skrót jest użyteczny, oznacz go jako skrót.
+
+Przykłady:
+
+- „XX = kobieta, XY = mężczyzna” → **typowy model szkolny**,
+- „kod genetyczny jest uniwersalny” → lepiej: **prawie uniwersalny**,
+- „1 cM = 1% rekombinacji” → użyteczne przybliżenie,
+- „chromatyna = luźne DNA” → zbyt duże uproszczenie; chromatyna może mieć różny stopień kondensacji.
+
+
 ## 16. STATUS LEKCJI
 
 - Wersja 4.0 (2026-09-12) — pełny MASTER.
@@ -352,6 +533,41 @@ Po L090:
 ---
 
 **Koniec L090 MASTER v4.0**
+
+
+## 16.10. UZUPEŁNIENIE AUDYTOWE v4.2 — kontrola założeń przed liczeniem
+
+### 16.10.1. Zasada
+W zadaniu olimpijskim najpierw wypisz:
+- **dane**,
+- **założenia modelu**,
+- **niewiadomą**,
+- **regułę**, którą wolno zastosować.
+
+Dopiero potem licz.
+
+### 16.10.2. Przykład — Hardy–Weinberg
+Jeżeli zadanie każe użyć modelu Hardy’ego–Weinberga, nie zakładaj automatycznie, że rzeczywista populacja spełnia wszystkie warunki. Sprawdź, czy zadanie **jawnie** lub przez kontekst przyjmuje model.
+
+### 16.10.3. Przykład — mapowanie genów
+Nie wystarczy policzyć procentów. Trzeba ustalić:
+1. które klasy potomstwa są rodzicielskie,
+2. które są rekombinantami,
+3. jak obliczana jest częstość rekombinacji,
+4. jakie ograniczenia ma interpretacja wyniku.
+
+### 16.10.4. Przykład — rodowód
+Nie rozpoznawaj sposobu dziedziczenia po jednym pokoleniu. Najpierw sprawdź:
+- kto choruje,
+- jaka jest płeć osób,
+- czy występuje przekazanie ojciec → syn,
+- czy zdrowi rodzice mają chore dziecko,
+- czy wzór pasuje do jednego modelu lepiej niż do innych.
+
+### 16.10.5. Reguła olimpijska
+> **Najpierw model, potem obliczenia, na końcu wniosek.**
+
+To chroni przed poprawnym rachunkiem wykonanym na błędnych założeniach.
 
 <!-- ==================== END L090 ==================== -->
 

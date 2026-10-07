@@ -1,4 +1,30 @@
-# L030 — Czym jest ewolucja i jakie mamy na nią dowody? (v4.0 — pełna warstwa dydaktyczna)
+# L030 — Czym jest ewolucja i jakie mamy na nią dowody?
+
+## KARTA LEKCJI L030
+
+- Numer: L030
+- Tytuł roboczy: Ewolucja — dowody
+- Dział: Ewolucja
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L021 · Następna: L031
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Dowody ewolucji.
+
+`[BIO: DIAGRAM type=FLOW]`
+`obserwacja → dowód → wspólne pochodzenie`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** ewolucja jako zmiana populacji w czasie.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Ewolucja  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -417,7 +443,6 @@ Geografia (biogeografia) · Historia (myśl ewolucyjna) · Biologia (genetyka, e
 **Koniec L030 MASTER v4.0**
 
 
-
 ---
 
 ## 24. UZUPEŁNIENIE egzaminacyjne v4.0+ (doklejone)
@@ -450,6 +475,44 @@ Szkic: 3 ślad historii budowy. 4 molekularny. 5 przewidywania i zbieżność ni
 
 ### Status doklejki
 2026-09-12 · wcześniejsze sekcje bez zmian.
+
+
+## 23. UZUPEŁNIENIE AUDYTOWE v4.2 — jak dobierać dowód do wniosku
+
+### 23.1. Nie każdy dowód odpowiada na to samo pytanie
+| Dowód | Co przede wszystkim pokazuje? |
+|---|---|
+| skamieniałości | historię życia i zmiany w czasie |
+| homologie | podobieństwo planu budowy i wspólne pochodzenie |
+| analogie | niezależne powstawanie podobnych funkcji |
+| biogeografia | związek rozmieszczenia organizmów z ich historią |
+| dane molekularne | podobieństwo DNA/białek i pokrewieństwo |
+| embriologia porównawcza | podobieństwa rozwojowe |
+
+### 23.2. Korekta ważnego uproszczenia: homologia
+**Homologiczne struktury** mają wspólne pochodzenie, ale ich funkcje mogą być:
+- różne,
+- podobne,
+- albo częściowo nakładające się.
+
+Dlatego reguła „homologiczne = różne funkcje” jest zbyt wąska.
+
+Lepsza reguła:
+> **Homologia = wspólne pochodzenie / wspólny plan budowy; funkcja może się różnić.**
+
+### 23.3. Przykład porównawczy
+**Kończyna przednia człowieka i skrzydło nietoperza**
+- wspólny plan budowy kończyny kręgowca,
+- wspólne pochodzenie struktur,
+- różne przystosowania i funkcje szczegółowe.
+
+**Skrzydło ptaka i skrzydło owada**
+- podobna funkcja: lot,
+- inna budowa i pochodzenie,
+- dlatego są analogiczne jako narządy lotu.
+
+### 23.4. „Dowód” nie znaczy „jeden eksperyment rozstrzyga wszystko”
+W biologii ewolucyjnej siła wniosku wynika z **zgodności wielu niezależnych linii danych**.
 
 <!-- ==================== END L030 ==================== -->
 

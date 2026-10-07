@@ -1,7 +1,13 @@
-# BIOLOGIA: PODSTAWA PLUS — v3.9 (pełny, ulepszony, bez utraty treści · L050/L090 → v4.0)
+# BIOLOGIA: PODSTAWA PLUS — v5.2 MASTER 2026-09-20
 
-**Wersja v3.9** · 2026-09-12  
-**Źródła scalone:** v2.3c + v3.3 + v3.4 + v3.5 + v3.6 + ulepszenia v3.7 (rozwinięcie słabszych lekcji: L001–L003, L014, L016, L030–L044, L050, L090 — pełna warstwa dydaktyczna 6A–6D, 11A–11D, Klinika 2.0, drabinka trudności, sekcje „Jak się uczyć", „Połączenia międzyprzedmiotowe", „Zadania z życia codziennego").  
+> Wersja przebudowana: zachowanie materiału źródłowego + reorganizacja + uzupełnienia + wspólna architektura MD pod przyszły HTML.
+
+**Bieżący MD roboczy.** Bloki uporządkowane 2026-09-20 21:14. v4.2 archiwum. Nic nie wycięte.
+
+**Status:** źródło MD do dalszej redakcji i przyszłego generowania HTML. Nie jest to jeszcze finalny HTML.
+
+**Wersja v4.1 WORKING** · 2026-09-14  
+**Źródła scalone:** v2.3c + v3.3 + v3.4 + v3.5 + v3.6 + ulepszenia v3.7 (rozwinięcie słabszych lekcji: L001–L003, L014, L016, L030–L044, L050, L090 — pełna warstwa dydaktyczna 6A–6D, 11A–11D, Klinika 2.0, drabinka trudności, sekcje „Jak się uczyć", „Połączenia międzyprzedmiotowe", „Zadania z życia codziennego"). Dodatkowo L012 został zsynchronizowany z HTML v8.1.  
 **Zasada:** żadna treść nie została usunięta. Dla każdej sekcji wybrano najpełniejszą wersję i dodano warstwę v3.7.  
 **Priorytet dydaktyczny:** L011, L013, L015, L017, L020 (najbogatsze) — teraz także L030–L044 i L001–L003 (rozbudowane w v3.7).
 **Indeks obowiązujący:** `L000-INDEKS-ROKU_MASTER_v1.0.html` (zakładka Biologia). Audyt: `BIOLOGIA_INDEKS_AUDYT.md`.  
@@ -28,7 +34,7 @@ Spis treści = zwykłe kotwice. Tempo ucznia jest dowolne. Fiszki i „Pokaż od
 | L003 | Diagnoza (rozbudowana w v3.7) |
 | L010–L021 | Genetyka — pełne z warstwą dydaktyczną (najdłuższe wersje) |
 | L030–L044 | Ewolucja i ekologia — pełne (rozbudowane w v3.7) |
-| L050, L090 | Pełne MASTER v4.0 (z poprawione.md) |
+| L050, L090 | Pełne MASTER v4.1 WORKING (rozbudowane bez usuwania v4.0) |
 | WARSTWA_B_MASTER | B1–B10 |
 | WARSTWA_C_GRAFIKA | C1–C9 |
 | SVG_ASSETS | 9 plików |
@@ -92,6 +98,13 @@ Test nie może wyprzedzać podręcznika. Sekwencja lekcji (gdzie obecna):
 - **Zaawansowany** = co się stanie, jeśli zmienimy warunki.
 
 ---
+
+
+## KOLEJNOŚĆ BLOKÓW (2026-09-20 21:14)
+
+SYSTEM → L001 → L001A → L002 → L003 (diagnoza, nie brama) → L004–L009 (szkice) → L010 DNA od zera → L011–L014 → L015 mejoza → L016 nowotwory → L016A zmienność → L017 Punnett → L018–L021 → L030–L032 → L040–L044 → L050 → L090 → warstwy / SVG / backlog / STATUS.
+
+
 
 <!-- ==================== BEGIN SYSTEM ==================== -->
 

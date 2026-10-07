@@ -1,4 +1,28 @@
-# L014 — Jak komórki ciała powstają i się odnawiają? (v3.8 — wzmocniona warstwa merytoryczna)
+# L014 — Jak komórki ciała powstają i się odnawiają?
+
+## KARTA LEKCJI L014
+
+- Numer: L014
+- Tytuł: Jak komórki ciała powstają i się odnawiają? (mitoza)
+- Dział: Genetyka / podziały komórkowe
+- Poziom: klasa 8 — [PODSTAWA E8] + [TRENING] + [MASTER] + [ZAAWANSOWANY]
+- Powiązania: L012 · L013 · L015 · L016
+- Poprzednia: L013 · Następna: L015
+- Status treści: szkielet zachowany; 2026-09-23 warstwa + do standardu L015
+- Status HTML: BIOLOGIA_L014_MITOZA.html (kanon 2026-09-23)
+- Wzór układu: L015
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Cykl i mitoza.
+
+`[BIO: DIAGRAM type=FLOW]`
+`DNA → replikacja → podział → dwie komórki`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** liczba chromosomów a liczba chromatyd.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Genetyka  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -355,9 +379,96 @@ Fazy mitozy szczegółowo · checkpointy → L016 · różnice cytokinezy rośli
 3. Dlaczego niektóre komórki (np. nerwowe) prawie się nie dzielą?  
 4. Co by się stało, gdyby mitoza nie zachowywała liczby chromosomów?
 
+---
+
+## L014+ warstwa v5.2.1 (2026-09-23) — KEEP + dopiski; nic nie wycięte
+
+To jest **model szkolny**. W rzeczywistości bywają wyjątki (np. komórki wielojądrzaste, endoreplikacja — [ZAAWANSOWANY], nie E8).
+
+### Dopiski mer.
+
+<!-- AUDYT MER: liczba zestawów, nie „zawsze identyczne DNA” -->
+**Mitoza zachowuje liczbę zestawów chromosomów:** z komórki **2n** powstają **dwie komórki 2n**.
+Nie mówi to, że kopia jest bezbłędna (L013) ani że nic się nigdy nie zmieni (mutacje somatyczne — L016 / L020).
+
+<!-- AUDYT MER: mejoza = linia płciowa -->
+| | Mitoza [PODSTAWA E8] | Mejoza (L015) |
+|--|----------------------|---------------|
+| Gdzie | komórki somatyczne | linia płciowa w gonadach |
+| Ile podziałów | 1 (po fazie S) | 2 (po jednej fazie S) |
+| Wynik | **2** komórki **2n** | komórki **n** |
+| Podobieństwo | zbliżone do macierzystej | różne (rekombinacja + segregacja) |
+| Po co | wzrost, regeneracja, gojenie | haploidalność + zmienność |
+
+<!-- AUDYT MER: replikacja nie jest etapem mitozy -->
+Replikacja DNA jest w **fazie S** (przed mitozą). W mitozie rozdzielają się **już skopiowane** chromatydy.
+
+### Słownik — pełne zdania
+
+- **Mitoza** — podział jądra komórki somatycznej; z 2n powstają dwie komórki 2n, genetycznie zbliżone do macierzystej.
+- **Komórka somatyczna** — komórka ciała, nie linia gamet.
+- **Cytokineza** — podział cytoplazmy po podziale jądra.
+- **Interfaza** — G1 + S + G2; DNA kopiuje się w S, nie „w mitozie”.
+- **Checkpoint** — punkt kontroli cyklu; most do L016.
+
+### Klinika — 5 typowych pomyłek (uzupełnienie pkt 9)
+
+| Mit | Co nie tak | Popraw |
+|-----|------------|--------|
+| „Mitoza zmniejsza liczbę chromosomów.” | Redukcja to mejoza I. | Mitoza: 2n → 2n (zestawy). |
+| „W mitozie powstają 4 komórki.” | 4 to typowy wynik mejozy u samca. | Mitoza → **2** komórki. |
+| „Komórki potomne są z założenia różne.” | To cel mejozy / skutek mutacji. | Cel szkolny mitozy: komórki zbliżone. |
+| „Mitoza = w komórkach rozrodczych.” | Gamety: mejoza w linii płciowej. | Mitoza = soma. |
+| „Replikacja zachodzi w mitozie.” | Replikacja = faza S. | Mitoza rozdziela kopie. |
+
+### Znaczniki pod przyszły HTML
+
+<!-- BIO DIAGRAM type=MITOSIS -->
+Opis: profaza → metafaza → anafaza → telofaza + cytokineza; oś G1–S–G2–M; homologi dwoma kolorami; centromery widoczne.
+
+<!-- BIO COMPARE id=MITOSIS_vs_MEIOSIS -->
+Tabela powyżej + „kiedy które?”.
+
+<!-- BIO FLOW id=CELLCYCLE_2N -->
+G1 → S → G2 → M → dwie komórki 2n. Liczba **zestawów** stała; chromatydy i cząsteczki DNA się zmieniają (L012).
+
+<!-- BIO DIAGRAM type=CANCER_CHECKPOINT -->
+Most L016: sprawne vs uszkodzone checkpointy. Nowotwór ≠ „jedna mutacja = rak”.
+
+<!-- BIO FLASHCARDS id=MITOSIS -->
+Ile komórek? Jaka liczba zestawów? Gdzie? Kiedy replikacja?
+
+<!-- BIO QUIZ id=MITOSIS_MINICHECK -->
+5× ABCD + zdanie „dlaczego”.
+
+<!-- BIO STEP id=MITOSIS_GUIDED1 -->
+Uzupełnij G1→S→G2→M.
+
+<!-- BIO PROBLEM id=MITOSIS_THINK1 -->
+Mutacja w kontroli G1 — most L016. [KONKURS]
+
+<!-- BIO MAP id=MITOSIS_CONCEPT_MAP -->
+Centrum: mitoza. Gałęzie: cykl, chromosom/chromatyd/centromer, fazy, 2×2n, L013, L015, L016.
+
+### Status L014 (2026-09-23)
+
+Szkielet 1–22 zostaje. Doklejono kartę, porównanie z L015, klinikę, słownik, opisy widgetów. HTML — później, wzorzec L015.
+
 <!-- ==================== END L014 ==================== -->
 
+
 <!-- ==================== BEGIN L015 ==================== -->
+## KARTA LEKCJI L015
+
+- Numer: L015
+- Tytuł roboczy: Mejoza i różnorodność
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L014 · Następna: L016
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: BIOLOGIA_L015_MEJOZA.html
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
 
 ## WYKŁAD Z HTML L015
 
@@ -387,7 +498,6 @@ Biologia L015 — Jak powstają komórki haploidalne i skąd bierze się różno
 Roślinny cykl spor/gametofitu, pełne tabele nondysjunkcji I/II, oogeneza vs starzenie — **dla chętnych**.
 
 
-
       L015 — Jak powstają komórki haploidalne i skąd bierze się różnorodność?
       Genetyka · mejoza · 2n → n · rekombinacja chromosomowa · nondysjunkcja · oogeneza vs spermatogeneza
 
@@ -398,18 +508,12 @@ Roślinny cykl spor/gametofitu, pełne tabele nondysjunkcji I/II, oogeneza vs st
         **Wersja 5.1** — po korekcie merytorycznej
 
 
-
-
-
-
 ## Spis treści
 
 
     0. Wprowadzenie — o co tu chodzi?
 
       Wprowadzenie
-
-
 
 
     1–4. Pytanie, cele, kompas, problem
@@ -420,21 +524,16 @@ Roślinny cykl spor/gametofitu, pełne tabele nondysjunkcji I/II, oogeneza vs st
       Zacznij od problemu
 
 
-
-
     5. Ściąga — definicje i budowa
     Ściąga
-
 
 
     6. Wyjaśnienie od podstaw
     Wyjaśnienie
 
 
-
     7. Dlaczego rodzeństwo się różni?
     Różnorodność
-
 
 
     8–9. Poziom ambitny i zaawansowany
@@ -443,11 +542,8 @@ Roślinny cykl spor/gametofitu, pełne tabele nondysjunkcji I/II, oogeneza vs st
       ZAAWANSOWANY
 
 
-
-
     10. Klinika błędów + Klinika 2.0
     Klinika
-
 
 
     11–16. Obserwacja, ćwiczenia, fiszki, test, checklista
@@ -459,8 +555,6 @@ Roślinny cykl spor/gametofitu, pełne tabele nondysjunkcji I/II, oogeneza vs st
       Checklista
 
 
-
-
     17–23. Mapa, słownik, dodatek, życie, status
 
       Mapa
@@ -469,9 +563,7 @@ Roślinny cykl spor/gametofitu, pełne tabele nondysjunkcji I/II, oogeneza vs st
       Z życia
 
 
-
   Słowa kluczowe: mejoza · 2n → n · komórka haploidalna · rekombinacja chromosomowa · niezależna segregacja · nondysjunkcja · oogeneza · spermatogeneza
-
 
 
 ## 0. Wprowadzenie WPROWADZENIE
@@ -489,11 +581,7 @@ To jest właśnie **mejoza** — proces, w którym z komórki z **46 chromosomam
 Ale jest jeden haczyk: **nie dzielisz tych samych kart za każdym razem**. Karty tasują się, mieszają — i za każdym razem wychodzi **inny zestaw**. To dlatego **każde dziecko tej samej pary rodziców jest inne** (z wyjątkiem bliźniąt jednojajowych).
 
 
-
-
 ### Dlaczego bez mejozy mielibyśmy problem?
-
-
 
 
 Gdyby gamety miały 46 chromosomów, a nie 23:
@@ -506,12 +594,10 @@ Gdyby gamety miały 46 chromosomów, a nie 23:
 - Pokolenie 3: 92 + 92 = **184** chromosomy.
 
 
-
 **Liczba chromosomów podwajałaby się w każdym pokoleniu** — komórki nie byłyby w stanie tego utrzymać.
 
 
 **Mejoza rozwiązuje problem:** redukuje liczbę chromosomów o połowę przed zapłodnieniem → zygota znowu ma 46.
-
 
 
     Czego się nauczysz na tej lekcji?
@@ -526,9 +612,6 @@ Gdyby gamety miały 46 chromosomów, a nie 23:
 - **Jak policzyć chromosomy i chromatydy** na każdym etapie mejozy.
 
 - **Co się dzieje, gdy mejoza zawodzi** (nondysjunkcja → aneuploidia).
-
-
-
 
 
 ### Krótka historia
@@ -546,20 +629,13 @@ Gdyby gamety miały 46 chromosomów, a nie 23:
 **1900s — Walter Sutton i Theodor Boveri** połączyli obserwacje mejozy z prawami Mendla: **chromosomy to nośniki genów**. To dało podstawę **chromosomalnej teorii dziedziczenia**.
 
 
-
     Kluczowa myśl
 
 
 Mejoza to **dwa podziały po jednej replikacji**, które redukują liczbę chromosomów o połowę i **mieszają** informację genetyczną.
 
 
-
-
 ### Dlaczego to ma znaczenie?
-
-
-
-
 
 
         ****
@@ -579,16 +655,10 @@ Mejoza to **dwa podziały po jednej replikacji**, które redukują liczbę chrom
 | Poradnictwo genetyczne | ocena ryzyka chorób genetycznych u potomstwa |
 
 
-
-
-
 ## 1. Pytanie przewodnie
 
 
-
 Jak powstają komórki haploidalne i dlaczego rodzeństwo nie jest identyczne?
-
-
 
 
 ## 2. Cele lekcji PODSTAWA E8
@@ -608,12 +678,7 @@ Jak powstają komórki haploidalne i dlaczego rodzeństwo nie jest identyczne?
 - (zaawansowany) znać nondysjunkcję, aneuploidię i różnicę oogeneza vs spermatogeneza.
 
 
-
-
     Zasada 80/20 — co daje 80% efektu (i dlaczego)
-
-
-
 
 
           ****
@@ -631,11 +696,7 @@ Jak powstają komórki haploidalne i dlaczego rodzeństwo nie jest identyczne?
 | Jedna replikacja, dwa podziały | Bez tego nie zrozumiesz, dlaczego 2n → n wymaga dwóch etapów |
 
 
-
-
 **Dlaczego to wystarczy?** Bo 90% zadań E8 o mejozie sprowadza się do: policz chromosomy/chromatydy → rozróżnij mejozę I i II → wskaż źródła zmienności → rozpoznaj nondysjunkcję.
-
-
 
 
 ## 3. Kompas PRZYPOMNIENIE
@@ -650,14 +711,10 @@ Jak powstają komórki haploidalne i dlaczego rodzeństwo nie jest identyczne?
 - **L014:** mitoza — zachowuje liczbę zestawów (2n → 2n); cel: wzrost, regeneracja.
 
 
-
 Jeśli nie pamiętasz, co to chromosomy homologiczne — wróć do L012, sekcja 5. To fundament mejozy.
 
 
-
-
 ## 4. Zacznij od problemu
-
 
 
 **Gdyby gamety miały 46 chromosomów, zygota miałaby 92.** Potem następne pokolenie: 184, 368… Liczba chromosomów **podwajałaby się w każdym pokoleniu**.
@@ -672,10 +729,7 @@ Zapisz hipotezę: ....................................
 💡 **Podpowiedź:** Coś musi **zmniejszać** liczbę chromosomów o połowę przed zapłodnieniem. To właśnie robi **mejoza** — redukuje 2n → n. Po lekcji wróć do hipotezy i sprawdź, czy była trafna.
 
 
-
-
 ## 5. Ściąga PODSTAWA E8
-
 
 
 ### 5.1. Co to mejoza? (definicja pełna)
@@ -714,19 +768,11 @@ Mejoza **nie zawsze tworzy bezpośrednio gamety**:
 - U **roślin** — jej bezpośrednim produktem są zwykle **spory** (dopiero z nich, w drodze mitozy, powstają gamety — patrz sekcja 20).
 
 
-
-
 **Gdzie zachodzi mejoza u człowieka?**
 W **komórkach rozrodczych** znajdujących się w **gonadach**: w **jądrach** (spermatogeneza) i **jajnikach** (oogeneza).
 
 
-
-
 ### 5.2. Czym różni się od mitozy? (jedna wspólna tabela)
-
-
-
-
 
 
         ****
@@ -748,12 +794,7 @@ W **komórkach rozrodczych** znajdujących się w **gonadach**: w **jądrach** (
 | Gdzie zachodzi | prawie wszystkie komórki ciała | gonady / tkanki rozrodcze |
 
 
-
-
-
 ### 5.3. Jedna replikacja, dwa podziały — dlaczego?
-
-
 
 
 **Kluczowa zasada:**
@@ -769,20 +810,13 @@ W **komórkach rozrodczych** znajdujących się w **gonadach**: w **jądrach** (
 - **Mejoza II** — rozdzielają się **chromatydy siostrzane**.
 
 
-
-
-
 **Najkrócej:** pierwszy podział rozdziela **pary**, drugi — **kopie chromosomów**.
 
 
 (Pełne uzasadnienie — sekcja 6.3.)
 
 
-
-
 ### 5.4. Skąd różnorodność? Trzy źródła
-
-
 
 
 - **Rekombinacja chromosomowa** (crossing-over) — wymiana fragmentów chromatyd **niesiostrzanych** między homologami, zachodzi w profazie I mejozy.
@@ -790,7 +824,6 @@ W **komórkach rozrodczych** znajdujących się w **gonadach**: w **jądrach** (
 - **Niezależna segregacja chromosomów** — każda para chromosomów homologicznych rozchodzi się do komórek potomnych niezależnie od innych par.
 
 - **Losowe zapłodnienie** — dowolny plemnik może połączyć się z dowolną komórką jajową.
-
 
 
 **Ilościowo (u człowieka, bez rekombinacji):**
@@ -801,27 +834,13 @@ W **komórkach rozrodczych** znajdujących się w **gonadach**: w **jądrach** (
 - Jeśli uwzględnimy oboje rodziców: **8 388 608 × 8 388 608 ≈ 7 × 10¹³** (ok. **70 bilionów**) potencjalnych kombinacji zygoty.
 
 
-
 To **bardzo duża liczba**, ale **nie „nieskończona"** — możliwych kombinacji jest skończenie wiele (choć ogromnie dużo).
-
-
 
 
 ### 5.5. Liczby u człowieka + zasada liczenia
 
 
-
-
 **Zasada liczenia:** chromosom liczymy według liczby **centromerów**, a nie liczby chromatyd. Chromosom po replikacji to **nadal jeden chromosom**, choć składa się z dwóch chromatyd siostrzanych.
-
-
-
-
-
-
-
-
-
 
 
     | Etap | Chromosomy (centromery) | Chromatydy |
@@ -832,18 +851,7 @@ To **bardzo duża liczba**, ale **nie „nieskończona"** — możliwych kombina
 | Po mejozie II (4 komórki) | 23 w każdej | 23 w każdej |
 
 
-
-
-
 ### Kontrastowy przykład: 2n = 8
-
-
-
-
-
-
-
-
 
 
     | Etap | Chromosomy | Chromatydy |
@@ -853,12 +861,7 @@ To **bardzo duża liczba**, ale **nie „nieskończona"** — możliwych kombina
 | Po mejozie II (4 komórki) | 4 w każdej | 4 w każdej |
 
 
-
-
-
 ### 5.6. Mnemotechniki
-
-
 
 
 - **2n → mejoza → n** — redukcja
@@ -872,12 +875,7 @@ To **bardzo duża liczba**, ale **nie „nieskończona"** — możliwych kombina
 - **Jedna replikacja, dwa podziały** — kluczowa różnica od mitozy
 
 
-
-
-
 ### 5.7. „Cztery komórki haploidalne" — precyzyjnie
-
-
 
 
 **Mejoza zwykle daje cztery komórki haploidalne.**
@@ -888,18 +886,13 @@ To **bardzo duża liczba**, ale **nie „nieskończona"** — możliwych kombina
 - W **oogenezie** powstaje **jedna funkcjonalna komórka jajowa** i **ciałka kierunkowe** — otrzymują one niewiele cytoplazmy i zwykle zanikają.
 
 
-
 To jest **ważne rozróżnienie** — „mejoza daje cztery gamety" to uproszczenie: u kobiety funkcjonalna jest tylko jedna.
-
-
 
 
 ## 6. Wyjaśnienie od podstaw
 
 
-
 ### 6.1. Łańcuch procesu
-
 
 
 2n (komórka diploidalna, 46)
@@ -913,11 +906,7 @@ To jest **ważne rozróżnienie** — „mejoza daje cztery gamety" to uproszcze
 2n (zygota, 46)
 
 
-
-
 ### 6.2. Mejoza I — co się dzieje?
-
-
 
 
 - **Profaza I:** chromosomy homologiczne łączą się w pary — **synapsa chromosomów homologicznych**. W tym momencie zachodzi **rekombinacja chromosomowa** (crossing-over) — wymiana fragmentów chromatyd niesiostrzanych. Miejsca widocznego skrzyżowania chromatyd nazywamy **chiazmami**.
@@ -929,10 +918,7 @@ To jest **ważne rozróżnienie** — „mejoza daje cztery gamety" to uproszcze
 - **Telofaza I + cytokineza:** powstają 2 komórki haploidalne (n = 23), każda z chromosomami mającymi 2 chromatydy.
 
 
-
 **Kluczowe:** W mejozie I rozchodzą się **całe chromosomy** (pary homologów), a nie chromatydy.
-
-
 
 
 ### 6.3. Dlaczego są dwa podziały?
@@ -953,11 +939,7 @@ W **mejozie II** rozdzielają się chromatydy siostrzane. Dzięki temu każda ko
 **Najkrócej:** pierwszy podział rozdziela **pary**, drugi — **kopie chromosomów**.
 
 
-
-
 ### 6.4. Mejoza II — co się dzieje?
-
-
 
 
 - **Profaza II:** chromosomy (już bez pary) kondensują się.
@@ -969,15 +951,10 @@ W **mejozie II** rozdzielają się chromatydy siostrzane. Dzięki temu każda ko
 - **Telofaza II + cytokineza:** powstają 4 komórki haploidalne (n = 23).
 
 
-
 **Kluczowe:** Mejoza II jest **podobna do mitozy** — ale zachodzi w komórce haploidalnej.
 
 
-
-
 ### 6.5. 6A. Dlaczego?
-
-
 
 
 - **Dlaczego redukcja konieczna?** Bez niej liczba chromosomów podwajałaby się w każdym pokoleniu.
@@ -989,12 +966,7 @@ W **mejozie II** rozdzielają się chromatydy siostrzane. Dzięki temu każda ko
 - **Dlaczego „4 gamety" to uproszczenie?** Mejoza daje 4 komórki haploidalne — ale w oogenezie tylko jedna jest funkcjonalna.
 
 
-
-
-
 ### 6.6. 6B. Krok po kroku (człowiek)
-
-
 
 
 - **Start:** komórka 2n = 46 → **replikacja** (L013) → 46 chromosomów, 92 chromatydy.
@@ -1004,12 +976,7 @@ W **mejozie II** rozdzielają się chromatydy siostrzane. Dzięki temu każda ko
 - **Mejoza II:** chromatydy siostrzane się rozchodzą → 4 komórki z **23 chromosomami** (23 chromatydy).
 
 
-
-
-
 ### 6.7. 6C. Przykład prowadzony
-
-
 
 
 **Dane:** Człowiek, 2n = 46.
@@ -1030,13 +997,10 @@ W **mejozie II** rozdzielają się chromatydy siostrzane. Dzięki temu każda ko
 - Każdy chromosom nadal ma 2 chromatydy → 23 × 2 = 46 chromatyd.
 
 
-
 **Odpowiedź:** 2 komórki, każda z 23 chromosomami i 46 chromatydami.
 
 
 **Spróbuj sam:** 2n = 16 → komórka haploidalna n = ? **Odpowiedź:** n = 8.
-
-
 
 
 ### 6.8. 6D. Powiązanie z innymi lekcjami
@@ -1044,8 +1008,6 @@ W **mejozie II** rozdzielają się chromatydy siostrzane. Dzięki temu każda ko
 
     L012 (chromosom, homologi) → L013 (replikacja) → L014 (mitoza)
   → L015 (mejoza) → L016 (nowotwory) → L017 (dziedziczenie)
-
-
 
 
 ## 7. Dlaczego rodzeństwo się różni? KLUCZOWA RAMKA
@@ -1064,17 +1026,7 @@ Rodzeństwo ma tych samych rodziców, ale zwykle **nie otrzymuje dokładnie tego
 - **Losowe zapłodnienie** — dowolny plemnik może połączyć się z dowolną komórką jajową.
 
 
-
-
-
 ### Ilościowo (bez rekombinacji)
-
-
-
-
-
-
-
 
 
         ****
@@ -1087,15 +1039,10 @@ Rodzeństwo ma tych samych rodziców, ale zwykle **nie otrzymuje dokładnie tego
 | 23 pary (człowiek) | 2²³ = 8 388 608 |
 
 
-
-
-
-
 Jeśli połączymy możliwości obu rodziców: 8 388 608 × 8 388 608 ≈ **7 × 10¹³** (ok. **70 bilionów**) potencjalnych kombinacji — **jeszcze przed uwzględnieniem rekombinacji chromosomowej**.
 
 
 **Wniosek:** każdy człowiek (poza bliźniakami jednojajowymi) jest **genetycznie unikalny**, choć liczba możliwych kombinacji jest **skończona** (bardzo duża, ale nie „nieskończona").
-
 
 
     O bliźniętach jednojajowych
@@ -1104,17 +1051,10 @@ Jeśli połączymy możliwości obu rodziców: 8 388 608 × 8 388 608 ≈ **7 ×
 Zwykle mają **niemal identyczny genom jądrowy** (pochodzą z jednej zygoty), lecz z czasem mogą pojawić się między nimi **drobne różnice** wynikające z mutacji somatycznych i zmian epigenetycznych.
 
 
-
-
 ## 8. Poziom ambitny MASTER
 
 
-
 ### 8.1. Mejoza I vs II
-
-
-
-
 
 
         ************
@@ -1132,21 +1072,13 @@ Zwykle mają **niemal identyczny genom jądrowy** (pochodzą z jednej zygoty), l
 | Podobieństwo do mitozy? | nie (unikalny) | tak (jak „mini-mitoza") |
 
 
-
-
 **Pułapka:** „W mejozie rozchodzą się chromatydy" — **nie od razu**. Najpierw pary homologów (I), potem chromatydy (II).
-
 
 
 ### 8.2. Precyzyjne rozróżnienie: komórki haploidalne ≠ gamety
 
 
-
-
 **Mejoza daje 4 komórki haploidalne.** To, ile z nich staje się **funkcjonalnymi gametami**, zależy od organizmu i płci:
-
-
-
 
 
           ****
@@ -1160,33 +1092,19 @@ Zwykle mają **niemal identyczny genom jądrowy** (pochodzą z jednej zygoty), l
 | Roślina | 4 spory | (spory → gametofit → mitoza → gamety) |
 
 
-
-
-
-
 ### 8.3. Porównanie mitoza ↔ mejoza — uzupełnienie
-
-
 
 
 Mitoza **co do zasady** zachowuje informację genetyczną komórki macierzystej. **Sporadyczne mutacje** mogą jednak powstać wskutek błędów kopiowania DNA — dlatego komórki potomne mitozy **nie zawsze** są w 100% identyczne.
 
 
-
-
 ## 9. Poziom zaawansowany ZAAWANSOWANY
-
 
 
 ### 9.1. Nondysjunkcja — tabela zadań
 
 
-
-
 **Nondysjunkcja** = błąd rozchodzenia chromosomów w mejozie. Pary homologów (lub chromatydy siostrzane) **nie rozchodzą się prawidłowo** — trafiają do tej samej komórki potomnej.
-
-
-
 
 
           ************
@@ -1198,28 +1116,16 @@ Mitoza **co do zasady** zachowuje informację genetyczną komórki macierzystej.
 | Nondysjunkcja w mejozie II | chromatydy siostrzane | 2 komórki prawidłowe (n), 1 z n+1, 1 z n−1 |
 
 
-
-
 Po zapłodnieniu nieprawidłowej komórki haploidalnej przez prawidłową może powstać zygota z **trisomią (2n+1)** albo **monosomią (2n−1)**. Przykładem trisomii jest **trisomia chromosomu 21**, związana z zespołem Downa.
-
-
 
 
 ### 9.2. Ryzyko nondysjunkcji rośnie z wiekiem matki
 
 
-
-
 Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż do owulacji. Przez dziesięciolecia mogą gromadzić uszkodzenia, co zwiększa ryzyko błędów rozchodzenia chromosomów.
 
 
-
-
 ### 9.3. Oogeneza vs spermatogeneza
-
-
-
-
 
 
         ****
@@ -1233,12 +1139,7 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 | Czas | ciągła od dojrzewania | start w życiu płodowym; dokończenie przy owulacji/zapłodnieniu |
 
 
-
-
-
 ### 9.4. Chromosomy płci — jak się rozchodzą?
-
-
 
 
 - **Kobieta (XX):** oba chromosomy X są homologiczne → rozchodzą się w mejozie I → każda komórka jajowa ma 1 X.
@@ -1246,15 +1147,10 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 - **Mężczyzna (XY):** X i Y mają regiony częściowo homologiczne → rozchodzą się w mejozie I → **50% plemników ma X, 50% ma Y**.
 
 
-
 **Reguła:** płeć dziecka zależy od plemnika (X lub Y). Komórka jajowa zawsze ma X.
 
 
-
-
 ### 9.5. Mejoza u roślin — przemiana pokoleń
-
-
 
 
 - U roślin mejoza prowadzi do powstania **spor** (nie gamet).
@@ -1264,14 +1160,7 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 - U zwierząt: **organizm dorosły (2n)** → mejoza → **gamety (n)** → zapłodnienie → **zygota (2n)**.
 
 
-
-
-
 ### 9.6. Choroby związane z nondysjunkcją
-
-
-
-
 
 
         ****
@@ -1289,21 +1178,13 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 | Zespół Klinefeltera (47,XXY) | dodatkowy chromosom X |
 
 
-
-
 **Szczegóły — w L090.**
-
 
 
 ## 10. Klinika błędów PUŁAPKI
 
 
-
 ### 10.1. Tabela błędów
-
-
-
-
 
 
         ****
@@ -1331,9 +1212,6 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 | „Rekombinacja zachodzi 1–2 razy na parę" | zwykle zachodzi w wielu miejscach genomu; liczba zależy od chromosomu i organizmu | unikać nieuzasadnionych liczb |
 
 
-
-
-
 ### 10.2. Klinika 2.0 — pięć pełnych przykładów
 
 
@@ -1351,8 +1229,6 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 - **Dlaczego:** W oogenezie cytoplazma dzielona nierówno, ciałka kierunkowe zanikają.
 
 - **Pułapka:** „4 komórki = 4 gamety" — tylko w spermatogenezie.
-
-
 
 
     Przykład 2 — „Mejoza to mitoza w gonadach"
@@ -1373,8 +1249,6 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 - **Pułapka:** „Oba dzielą komórkę" — ale w różnym celu.
 
 
-
-
     Przykład 3 — „Gameta ma tyle samo chromosomów co komórka ciała"
 
 
@@ -1389,8 +1263,6 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 - **Podobne:** Zygota ma 2n = 46.
 
 - **Pułapka:** „Gameta = komórka ciała" — nie, to komórka haploidalna.
-
-
 
 
     Przykład 4 — „Rekombinacja chromosomowa w mejozie II"
@@ -1409,8 +1281,6 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 - **Pułapka:** „Rekombinacja w II" — niemożliwe, bo nie ma par.
 
 
-
-
     Przykład 5 — „Nondysjunkcja to normalny proces"
 
 
@@ -1427,9 +1297,6 @@ Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż
 - **Pułapka:** „Czasem się zdarza" ≠ „normalny etap".
 
 
-
-
-
 ## 11. Obserwacja / model
 
     Problem: Jak z 46 chromosomów powstają komórki z 23?
@@ -1444,11 +1311,6 @@ BHP: brak.
 Schemat mejozy **nie jest** doświadczeniem — to model.
 
 
-
-
-
-
-
         ****
         ****
 
@@ -1458,16 +1320,10 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
 | Model | schemat mejozy I i II, diagram rekombinacji chromosomowej |
 
 
-
-
-
 ## 12. Ćwiczenia (12A–12D) TRENING
 
 
-
 ### 12A. Mini-check (5 pytań)
-
-
 
 
 - Mejoza (2n → ?)?
@@ -1483,7 +1339,6 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
     Pokaż odpowiedzi
 
 
-
 - 2n → n.
 
 - 23 chromosomy.
@@ -1495,13 +1350,7 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
 - Bo u kobiety powstaje tylko 1 funkcjonalna komórka jajowa + ciałka kierunkowe.
 
 
-
-
-
-
 ### 12B. Ćwiczenie prowadzone
-
-
 
 
 **Dane:** Człowiek, 2n = 46.
@@ -1523,20 +1372,13 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
     Pokaż odpowiedź
 
 
-
 2n = 16 → n = **8**.
-
-
-
 
 
 ### 12C. Ćwiczenia samodzielne
 
 
-
 #### A. Podstawa A
-
-
 
 
 - Co to mejoza?
@@ -1550,7 +1392,6 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
     Pokaż odpowiedzi
 
 
-
 - Podział redukcyjny (2n → n), prowadzący do powstania komórek haploidalnych.
 
 - 23 chromosomy (n).
@@ -1560,13 +1401,7 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
 - Rekombinacja chromosomowa, niezależna segregacja.
 
 
-
-
-
-
 #### B. Trening B
-
-
 
 
 - Popraw: „Mejoza daje 2n".
@@ -1578,7 +1413,6 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
     Pokaż odpowiedzi
 
 
-
 - Mejoza daje **n** (2n → n), nie 2n.
 
 - Trzy mechanizmy zmienności (rekombinacja, segregacja, losowe zapłodnienie).
@@ -1586,13 +1420,7 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
 - Powstaje zygota 2n (23 + 23 = 46).
 
 
-
-
-
-
 #### C. Ambitne C
-
-
 
 
 - Mejoza I vs II — co się rozchodzi?
@@ -1604,7 +1432,6 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
     Pokaż odpowiedzi
 
 
-
 - Mejoza I — pary homologów. Mejoza II — chromatydy siostrzane.
 
 - Rekombinacja = wymiana fragmentów chromatyd niesiostrzanych w profazie I → nowe kombinacje alleli.
@@ -1612,13 +1439,7 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
 - Redukcja: 46 → 23 (połowa).
 
 
-
-
-
-
 #### D. Zaawansowane D
-
-
 
 
 - Co to nondysjunkcja?
@@ -1630,7 +1451,6 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
     Pokaż odpowiedzi
 
 
-
 - Błąd rozchodzenia chromosomów w mejozie → komórka z n+1 lub n−1 → zygota 2n±1.
 
 - U kobiety tylko 1 komórka jajowa jest funkcjonalna; pozostałe 3 to ciałka kierunkowe.
@@ -1638,18 +1458,11 @@ Schemat mejozy **nie jest** doświadczeniem — to model.
 - **Nondysjunkcja I:** pary homologów nie rozchodzą się → wszystkie 4 komórki nieprawidłowe (2 z n+1, 2 z n−1). **Nondysjunkcja II:** chromatydy nie rozchodzą się → 2 prawidłowe (n), 1 z n+1, 1 z n−1.
 
 
-
-
-
-
 ### 12D. PROBLEM / THINK KONKURS
-
-
 
 
 Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Podaj **3 mechanizmy** i wyjaśnij każdy.
     Pokaż odpowiedź
-
 
 
 **Trzy mechanizmy zmienności:**
@@ -1662,25 +1475,10 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 - **Losowe zapłodnienie** przy zapłodnieniu → niemal nieskończona liczba kombinacji genów w zygocie.
 
 
-
 **Wniosek:** Każdy człowiek (poza bliźniakami jednojajowymi) jest genetycznie unikalny, choć liczba możliwych kombinacji jest **skończona** (bardzo duża).
 
 
-
-
-
 ### Drabinka trudności
-
-
-
-
-
-
-
-
-
-
-
 
 
     | Poziom | Zadanie |
@@ -1693,11 +1491,7 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 | ZAKWESTIONUJ | Czy z faktu „4 komórki haploidalne" wynika „4 funkcjonalne gamety u kobiety"? |
 
 
-
-
-
 ## 13. Sposób oceniania
-
 
 
 - **Podstawa:** 1 pkt.
@@ -1707,9 +1501,6 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 - **Ambitne:** 2 pkt.
 
 - **Zaawansowane:** 3 pkt.
-
-
-
 
 
 ## 14. Fiszki POWTÓRKA
@@ -1733,10 +1524,7 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
     Chiazma**Miejsce skrzyżowania chromatyd**ambitny
 
 
-
-
 ## 15. Test końcowy (3+2+2+1) TRENING
-
 
 
 - (P) Co to mejoza (2n → ?)?
@@ -1758,7 +1546,6 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
     Pokaż odpowiedzi
 
 
-
 - Podział redukcyjny: 2n → n.
 
 - 23 chromosomy (n).
@@ -1776,12 +1563,7 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 - Zygota 2n+1 (trisomia) lub 2n−1 (monosomia).
 
 
-
-
-
-
 ## 16. Checklista
-
 
 
 - ☐ Wiem, że mejoza redukuje 2n → n.
@@ -1801,11 +1583,7 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 - ☐ Wiem, że rekombinacja zachodzi w profazie I.
 
 
-
-
-
 ## 17. Mapa pojęć
-
 
 
 [schemat SVG w HTML]
@@ -1813,10 +1591,7 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
     Mapa pojęć L015 — od mejozy przez 3 źródła zmienności do unikalności genetycznej.
 
 
-
-
 ## 18. Co dalej? Jak się uczyć?
-
 
 
 **Następna lekcja:** L016 — gdy podziały wymykają się kontroli (nowotwory).
@@ -1843,20 +1618,7 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 - Powtórka za 1 dzień, 3 dni, tydzień.
 
 
-
-
-
 ### Powtórki rozłożone w czasie
-
-
-
-
-
-
-
-
-
-
 
 
     | Kiedy | Co | Czas |
@@ -1868,31 +1630,7 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 | +1 miesiąc | mapa pojęć + pułapki | 15 min |
 
 
-
-
-
 ## 19. Słownik
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     | Termin | Definicja |
@@ -1916,25 +1654,16 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 | Mejoza II | Podział zachowawczy (rozdział chromatyd) |
 
 
-
-
-
 ## 20. Dodatek zaawansowany ZAAWANSOWANY
-
 
 
 ### 20.1. Mejoza a starzenie komórek jajowych
 
 
-
-
 Komórki jajowe są **zatrzymane w profazie I** od życia płodowego kobiety aż do owulacji. Przez dziesięciolecia mogą gromadzić uszkodzenia białek wrzeciona podziałowego — co zwiększa ryzyko **nondysjunkcji** i aneuploidii (np. trisomii 21).
 
 
-
-
 ### 20.2. Mejoza u roślin — cykl pełny
-
 
 
 Sporofit (2n)
@@ -1951,16 +1680,7 @@ Zygota (2n) → Sporofit (2n)
 U zwierząt mejoza zachodzi bezpośrednio przed powstaniem gamet; u roślin mejoza tworzy **spory**, a gamety powstają z nich **przez mitozę**.
 
 
-
-
 ### 20.3. Nondysjunkcja I vs II — pełna tabela
-
-
-
-
-
-
-
 
 
     | Typ | Co się dzieje | Produkty mejozy |
@@ -1969,22 +1689,13 @@ U zwierząt mejoza zachodzi bezpośrednio przed powstaniem gamet; u roślin mejo
 | Nondysjunkcja II | Chromatydy nie rozchodzą się w anafazie II | 2 komórki prawidłowe (n), 1 z n+1, 1 z n−1 |
 
 
-
-
-
 ### 20.4. Mejoza a mutacje
-
-
 
 
 W trakcie mejozy mogą wystąpić **błędy** (nondysjunkcja, niewłaściwa rekombinacja). Większość prowadzi do **niepłodności** lub **poronienia**, ale niektóre do chorób (np. trisomia 21).
 
 
-
-
 ### 20.5. Zadanie olimpijskie
-
-
 
 
 **Pytanie:** Organizm ma 2n = 20. Ile chromosomów i chromatyd w komórce po mejozie I?
@@ -1998,14 +1709,10 @@ W trakcie mejozy mogą wystąpić **błędy** (nondysjunkcja, niewłaściwa reko
 - Po mejozie I: 2 komórki, każda z **10 chromosomami** (20 chromatyd).
 
 
-
 **Odpowiedź:** 10 chromosomów, 20 chromatyd w każdej z 2 komórek.
 
 
-
-
 ## 21. Połączenia międzyprzedmiotowe
-
 
 
 - **Matematyka:** kombinatoryka (2²³), potęgi, prawdopodobieństwo.
@@ -2019,11 +1726,7 @@ W trakcie mejozy mogą wystąpić **błędy** (nondysjunkcja, niewłaściwa reko
 - **Etyka:** poradnictwo genetyczne (dyskusja).
 
 
-
-
-
 ## 22. Zadania z życia codziennego
-
 
 
 - Dlaczego dzieci tej samej pary rodziców różnią się między sobą?
@@ -2035,9 +1738,6 @@ W trakcie mejozy mogą wystąpić **błędy** (nondysjunkcja, niewłaściwa reko
 - Dlaczego bracia i siostry mogą mieć różne grupy krwi?
 
 - Czy bliźniaki jednojajowe mają identyczne DNA? (Zwykle **niemal identyczny genom jądrowy**, ale z czasem mogą pojawić się między nimi drobne różnice wynikające z mutacji somatycznych i zmian epigenetycznych.)
-
-
-
 
 
 ## 23. Status lekcji
@@ -2078,10 +1778,7 @@ W trakcie mejozy mogą wystąpić **błędy** (nondysjunkcja, niewłaściwa reko
 - **Powtórzenia:** scalono tabele mitoza/mejoza; scalono nondysjunkcję; usunięto duplikację „jedna replikacja, dwa podziały".
 
 
-
 **Zasada:** nic istotnego nie usunięto — tylko uporządkowano i uściślono.
-
-
 
 
 **BIOLOGIA L015 v5.1** · Genetyka · Mejoza · 2n → n · Rekombinacja chromosomowa · Nondysjunkcja · 2026

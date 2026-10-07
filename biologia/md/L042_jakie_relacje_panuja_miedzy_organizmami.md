@@ -1,4 +1,30 @@
-# L042 — Jakie relacje panują między organizmami? (v4.0 — pełna warstwa dydaktyczna)
+# L042 — Jakie relacje panują między organizmami?
+
+## KARTA LEKCJI L042
+
+- Numer: L042
+- Tytuł roboczy: Relacje między organizmami
+- Dział: Ekologia
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L041 · Następna: L043
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Relacje.
+
+`[BIO: DIAGRAM type=FLOW]`
+`gatunek A ↔ gatunek B → skutek dla obu`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** klasyfikacja na podstawie skutku, nie nazwy.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Ekologia  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -412,7 +438,6 @@ Biologia (ekologia, ewolucja) · Geografia (rozmieszczenie organizmów).
 **Koniec L042 MASTER v4.0**
 
 
-
 ---
 
 ## 24. UZUPEŁNIENIE E8 v4.0+ (doklejone)
@@ -434,6 +459,43 @@ Relacje — nazwij parę i korzyść/stratę.
 
 ### Status
 2026-09-12 · plik roboczy.
+
+
+## 23. UZUPEŁNIENIE AUDYTOWE v4.2 — relacja zależy od skutku dla obu stron
+
+### 23.1. Szybki algorytm
+Dla relacji między gatunkami ustal wpływ na każdą stronę:
+
+| Znak | Znaczenie |
+|---|---|
+| `+` | korzyść |
+| `−` | szkoda |
+| `0` | brak istotnego wpływu |
+
+Następnie rozpoznaj relację, np.:
+- `+/+` — obie strony korzystają,
+- `+/−` — jedna korzysta, druga ponosi koszt,
+- `−/−` — obie ponoszą koszt,
+- `+/0` — jedna korzysta, druga nie ponosi istotnego kosztu.
+
+### 23.2. Nie zgaduj po nazwie
+„Drapieżnictwo” i „pasożytnictwo” nie są synonimami:
+- w drapieżnictwie ofiara jest zwykle zabijana i zjadana,
+- pasożyt korzysta z gospodarza, zwykle nie zabijając go od razu.
+
+### 23.3. Przykład prowadzony
+**Pszczoła + kwiat**
+- pszczoła zdobywa pokarm,
+- roślina może zostać zapylona,
+- w typowym szkolnym przykładzie: `+/+` → mutualizm.
+
+**Lis + królik**
+- lis: `+`,
+- królik: `−`,
+- relacja: drapieżnictwo.
+
+### 23.4. Pułapka
+Nie każda relacja korzystna dla obu stron musi mieć identyczny stopień korzyści. W zadaniu E8 najważniejsze jest poprawne rozpoznanie znaku wpływu.
 
 <!-- ==================== END L042 ==================== -->
 

@@ -1,9 +1,35 @@
-# L010 — Skąd biorą się podobieństwa i różnice między organizmami? (v3.7 + v3.9.1)
+# L010 — Genetyka i DNA od zera (cechy + czym jest DNA)
 
-**Dział:** Genetyka  
+## KARTA LEKCJI L010
+
+- Numer: L010
+- Tytuł roboczy: Genetyka i DNA od zera
+- Dział: Genetyka
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L002 / L003 opcjonalnie · Następna: L011
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: BIOLOGIA_L010_DNA_OD_ZERA.html
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Od cechy do informacji.
+
+`[BIO: DIAGRAM type=FLOW]`
+`cecha → dziedziczenie/środowisko → zmienność → informacja genetyczna`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** DNA pojawia się dopiero jako most do L011.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
+
+**Dział:** Genetyka — **start działu** (L003 diagnoza jest opcjonalna, nie brama)  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
-**Poprzednia lekcja:** L003  
-**Następna lekcja:** L011
+**Poprzednia lekcja:** L002 (człowiek: krew, gamety, 46/23) · L003 tylko jeśli chcesz mapę luk  
+**Następna lekcja:** L011 (chemia par i logika zapisu — bez powtarzania całego wstępu)
 
 ---
 
@@ -321,8 +347,6 @@ L011 — jak DNA przechowuje informację.
 3. Dlaczego bliźniaki jednojajowe mogą się różnić?
 
 
-
-
 ---
 
 ## 23. UZUPEŁNIENIE v3.8 (doklejone — treść v3.7 bez skreśleń)
@@ -407,6 +431,67 @@ Nie mieszaj: „mutacja” to nie każde „inne niż rodzic”.
 - Epigenetyka (extra): oznaczenia na DNA/histonach bez zmiany sekwencji — idea, nie mechanizm na E8.
 - Hodowla roślin: człowiek wybiera cechy dziedziczne, nie nabyte.
 
+---
+
+## L010-DNA — Czym jest DNA? (scalenie z HTML v3.0 / L010.5; treść stara zostaje wyżej)
+
+**Źródło HTML:** `BIOLOGIA_L010_DNA_OD_ZERA.html` · widgety i trener zostają w HTML.
+
+### Pytanie drugie (most do L011)
+
+Czym jest DNA, gdzie jest w komórce i czego ten skrót **nie** oznacza?
+
+### Minimum E8 z tej części
+
+- DNA = kwas deoksyrybonukleinowy = **nośnik informacji** (nie „gotowy człowiek”).
+- Główne miejsce u eukariontów: **jądro**. Dodatkowo: **mtDNA**; u roślin **cpDNA**; u bakterii **nukleoid** (bez jądra).
+- **Dojrzały erytrocyt człowieka** nie ma jądra ani mitochondriów → **nie ma DNA**. Krew do badań DNA = głównie **leukocyty**.
+- Nukleotyd = cukier (deoksyryboza) + fosforan + zasada (A, T, C, G).
+- Pary szkolne: **A–T** (2 wiązania wodorowe), **C–G** (3). Szczegół „dlaczego nie A–C” = **L011**.
+- Poziomy: DNA (cząsteczka) ⊃ gen (odcinek z informacją o produkcie) ⊂ chromosom (DNA + białka).
+- Model uproszczony: DNA → RNA → białko → cecha. To **model**, nie cała biologia.
+- Fenotyp = geny + środowisko + rozwój (powtórka z części o cechach).
+
+### Czego DNA NIE oznacza (10 nieporozumień — KEEP z HTML)
+
+| Mit | Poprawka |
+|-----|----------|
+| „DNA to gotowy organizm.” | To zapis informacji; organizm powstaje w rozwoju. |
+| „Gen to cały chromosom.” | Gen = odcinek; chromosom niesie wiele genów + DNA niekodujące. |
+| „Jedno DNA = jedna cecha.” | Wiele genów + środowisko + rozwój. |
+| „Mam gen na X, więc na pewno będę miał X.” | Allel, regulacja, środowisko; „mam gen” ≠ pewny fenotyp. |
+| „Informacja genetyczna = los raz na zawsze.” | Mutacje somatyczne, epigenetyka (extra), środowisko. |
+| „Mutacja = choroba.” | Zmiana sekwencji; skutek bywa zerowy, korzystny albo szkodliwy (L020). |
+| „DNA jest tylko w jądrze.” | Jest też mtDNA (i cpDNA u roślin). |
+| „Każda komórka ma DNA w jądrze.” | Erytrocyt dojrzały — wyjątek; bakterie nie mają jądra. |
+| „DNA działa samo.” | Potrzeba maszynerii komórki (polimerazy, rybosomy…). |
+| „DNA to dosłowna instrukcja obsługi.” | Metafora; nie opisuje regulacji ani środowiska. |
+
+### DNA vs RNA (szkic, nie pełna L011)
+
+| Cecha | DNA | RNA |
+|-------|-----|-----|
+| Cukier | deoksyryboza | ryboza |
+| Zasady | A, T, C, G | A, U, C, G |
+| Typowo | dwie nici | jedna nić |
+| Rola szkolna | magazyn | kopia robocza / narzędzie |
+
+### Gdzie kończy się L010, a zaczyna L011
+
+- **L010:** co to genetyka, trzy szuflady cech, czym jest DNA, gdzie leży, nukleotyd i pary **jako fakt**, 10 mitów.
+- **L011:** dlaczego A–T a nie A–C, puryna+pirymidyna i szerokość helisy, antyrównoległość, gen vs produkt (białko **lub** RNA), kod zdegenerowany.
+- **L012:** upakowanie, 46/23 licząc **centromery**, chromatydy.
+- **L013:** semikonserwatywna replikacja, faza S, widełki.
+- **L015:** mejoza w linii płciowej, nie „w dojrzałych gametach”.
+- **L017:** Punnett jednogenowy.
+
+### Status L010 (2026-09-20)
+
+- v3.7/v3.9.1 (cechy) **zachowane w całości**.
+- Doklejono warstwę DNA-od-zera z HTML v3.0 (widgety zostają w HTML).
+- Ten plik (`v4.2_AUDYTOWANA_WORKING`) jest od teraz **MD roboczym** biologii.
+
 <!-- ==================== END L010 ==================== -->
+
 
 <!-- ==================== BEGIN L011 ==================== -->

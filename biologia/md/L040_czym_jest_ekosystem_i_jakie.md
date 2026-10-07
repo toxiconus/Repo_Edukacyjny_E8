@@ -1,4 +1,30 @@
-# L040 — Czym jest ekosystem i jakie czynniki na niego wpływają? (v4.0 — pełna warstwa dydaktyczna)
+# L040 — Czym jest ekosystem i jakie czynniki na niego wpływają?
+
+## KARTA LEKCJI L040
+
+- Numer: L040
+- Tytuł roboczy: Ekosystem
+- Dział: Ekologia
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L032 · Następna: L041
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Ekosystem.
+
+`[BIO: DIAGRAM type=FLOW]`
+`biotop + biocenoza → zależności → przepływ energii/obieg materii`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** elementy są połączone.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Ekologia  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -429,7 +455,6 @@ Geografia (klimat) · Chemia (obieg materii) · Biologia (ekologia).
 **Koniec L040 MASTER v4.0**
 
 
-
 ---
 
 ## 24. UZUPEŁNIENIE E8 v4.0+ (doklejone)
@@ -452,6 +477,34 @@ Szkic: 3 nie. 4 producenci.
 
 ### Status
 2026-09-12 · plik roboczy BIOLOGIA_PODSTAWA_PLUS_v3.9_working.md.
+
+
+## 23. UZUPEŁNIENIE AUDYTOWE v4.2 — energia, materia i poziomy troficzne
+
+### 23.1. Jeden schemat, trzy pytania
+`Słońce → producenci → konsumenci → ...`
+`martwa materia → destruenci → związki nieorganiczne → producenci`
+
+- **Energia** przepływa przez ekosystem i część zostaje rozproszona jako ciepło.
+- **Materia** krąży między organizmami i środowiskiem.
+- **Destruenci** uczestniczą w rozkładzie materii z wielu poziomów troficznych.
+
+### 23.2. Doprecyzowanie roli destruentów
+W szkolnych prostych łańcuchach pokarmowych destruenci często są przedstawiani obok łańcucha producent → konsument. Nie oznacza to jednak, że zawsze są „ostatnim ogniwem” jednego łańcucha.
+
+Lepszy model:
+> destruenci rozkładają martwą materię pochodzącą z różnych poziomów i pomagają zamknąć obieg pierwiastków.
+
+### 23.3. Przykład prowadzony — łąka
+1. Trawa pobiera wodę i sole mineralne oraz wykorzystuje CO₂.
+2. Konik polny zjada trawę.
+3. Ptak zjada konika.
+4. Martwe szczątki trafiają do destruentów.
+5. Produkty rozkładu wracają do środowiska.
+6. Energia nie wraca w ten sam sposób — część jest rozpraszana jako ciepło.
+
+### 23.4. Sukcesja — ostrożniej z jednym schematem
+Sukcesja to **kierunkowe zmiany składu i struktury ekosystemu w czasie**. Schemat „jezioro → łąka → las” może być przykładem sukcesji w określonych warunkach, ale nie jest uniwersalną drogą dla każdego ekosystemu.
 
 <!-- ==================== END L040 ==================== -->
 

@@ -1,4 +1,30 @@
-# L043 — Jak człowiek wpływa na środowisko? (v4.0 — pełna warstwa dydaktyczna)
+# L043 — Jak człowiek wpływa na środowisko?
+
+## KARTA LEKCJI L043
+
+- Numer: L043
+- Tytuł roboczy: Człowiek i środowisko
+- Dział: Ekologia
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L042 · Następna: L044
+- Status treści: jest wykład MD; audyt przy edycji
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Człowiek i środowisko.
+
+`[BIO: DIAGRAM type=FLOW]`
+`działanie → zmiana środowiska → skutek → ograniczenie`
+`[/BIO: DIAGRAM]`
+
+**Co uczeń ma zauważyć:** przyczyna i skutek zamiast listy zagrożeń.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
 
 **Dział:** Ekologia  
 **Poziomy:** podstawa · trening · ambitny · zaawansowany  
@@ -406,7 +432,6 @@ Geografia (klimat, zanieczyszczenia) · Chemia (gazy cieplarniane) · Edukacja (
 **Koniec L043 MASTER v4.0**
 
 
-
 ---
 
 ## 24. UZUPEŁNIENIE E8 v4.0+ (doklejone)
@@ -426,6 +451,37 @@ Człowiek a środowisko — przyczyna i skutek, nie sam slogan.
 
 ### Status
 2026-09-12 · plik roboczy.
+
+
+## 24. UZUPEŁNIENIE AUDYTOWE v4.2 — człowiek: przyczyna → skutek → rozwiązanie
+
+### 24.1. Schemat odpowiedzi na zadanie środowiskowe
+**Działanie człowieka → zmiana środowiska → skutek biologiczny → działanie ochronne**
+
+Przykład:
+`nadmiar nawozów → więcej biogenów w wodzie → eutrofizacja → ograniczenie dopływu biogenów`
+
+### 24.2. Nie mieszaj poziomów
+- **przyczyna:** emisja, wycinka, nadmiar nawozów,
+- **proces:** eutrofizacja, degradacja siedliska, wzrost stężenia zanieczyszczeń,
+- **skutek:** spadek liczebności organizmów, zmiana składu biocenozy,
+- **ochrona:** ograniczenie źródła problemu, odtworzenie siedliska, ochrona gatunków.
+
+### 24.3. Ważne doprecyzowanie klimatu
+Naturalny efekt cieplarniany jest częścią funkcjonowania systemu klimatycznego Ziemi. Problemem jest **wzrost wymuszenia cieplarnianego związany m.in. ze wzrostem stężeń gazów cieplarnianych wskutek działalności człowieka**.
+
+Nie pisz:
+> „Efekt cieplarniany = zjawisko złe."
+
+Lepiej:
+> „Naturalny efekt cieplarniany jest potrzebny, a jego antropogeniczne wzmocnienie przyczynia się do ocieplania klimatu.”
+
+### 24.4. Zadanie z brakującym ogniwem
+`nadmiar nawozów → ______ → zakwit → spadek tlenu → ______`
+
+Uzupełnienie:
+- **wzrost ilości biogenów / eutrofizacja**
+- **pogorszenie warunków życia organizmów wodnych / śnięcie części organizmów**
 
 <!-- ==================== END L043 ==================== -->
 
