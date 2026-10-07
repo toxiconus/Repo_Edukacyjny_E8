@@ -100,3 +100,15 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 - `n02-doswiadczenia-v01`: `aloh3Naoh`, `caoH2o`, `caoh2Co2`, `cuso4Naoh`, `fecl3Naoh`, `hclNaOH+php`, `naH2o`
 - `ph-indicators-v03`: `-`
 - `sole-doswiadczenia-v01`: `bacl2Na2so4`, `cacl2Na2co3`, `caoH2o`, `cuoH2so4`, `cuso4Hydrate`, `hclNaOH+php`, `hyd-na2co3`, `hyd-nh4cl`, `na2co3Hcl`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`
+
+## Rozszerzenia (szablon/rozszerzenia.js — dokładane do silnika bez zmiany che-viz.js)
+
+| id | tytuł | lekcje |
+|---|---|---|
+| `n05-wodorki-v01` | Mapa wodorków — typ, rola wodoru, właściwości | N05 |
+| `n05-trendy-v01` | Temperatury wrzenia wodorków — wiązania wodorowe | N05 |
+| `n05-doswiadczenia-v01` | Pracownia: doświadczenia z wodorkami | N05 |
+
+- `n05-doswiadczenia-v01`: `cah2H2o`, `nahH2o`, `nh4clCaoh2`, `naclH2so4`, `fesHcl`, `nh3H2oPhp`, `hclH2oOranz`, `h2sH2oUni`, `nh3Hcl`, `h2sPbac`, `h2sCuso4`, `caOH2Co2`
+
+**Jak dodać nową zlewkę:** w `rozszerzenia.js` dopisz spec do obiektu zlewek (`n` nazwa, `solid`, `l0`/`l1` barwa przed/po — np. `['ind-fenoloftaleina',12]`, `ppt` osad, `gas` H2/O2/CO2/NH3/HCl/H2S/Cl2/NO2…, `bubN` ilość pęcherzyków, `heat`/`T`, `fumes`, `teacher`, `why`, `eq`) i rekord reakcji (bilans sprawdza silnik). Barwy osadów: `ppt-agcl`, `ppt-baso4`, `ppt-caco3`, `ppt-cus`, `ppt-pbs`, `ppt-cu-oh-2`, `ppt-fe-oh-3`… (pełna lista w CHE.COLORS); jony: `ion-cu2`, `ion-fe2`, `ion-fe3`, `ion-ni2`, `ion-cr3`, `ion-mn2`; wskaźniki: `ind-uniwersalny`, `ind-fenoloftaleina`, `ind-oranz-metylowy`, `ind-lakmus`, `ind-bbt`, `ind-kapusta`.

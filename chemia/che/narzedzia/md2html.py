@@ -148,7 +148,8 @@ def leaf(blk, ctx):
             if m and not x.startswith('  '): items.append(m.group(1))
             else: items[-1] += '\n' + x.strip()
         tag = 'ol' if ordered else 'ul'
-        return '<%s>\n%s\n</%s>' % (tag, '\n'.join('<li>%s</li>' % inline(t) for t in items), tag)
+        st = re.match(r'(\d+)\. ', s0); st = ' start="%s"' % st.group(1) if ordered and st.group(1) != '1' else ''
+        return '<%s%s>\n%s\n</%s>' % (tag, st, '\n'.join('<li>%s</li>' % inline(t) for t in items), tag)
     if s0.startswith('|'):
         return table(blk)
     if s0.startswith('> '):
@@ -334,7 +335,7 @@ def render(path):
     if meta.get('stopka'):
         foot = '<footer class="footer">\n<p>%s</p>\n<p style="opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>\n</footer>' % inline(meta['stopka'])
     css = open(os.path.join(ROOT, 'szablon', 'lekcja.css'), encoding='utf-8').read()
-    js = open(os.path.join(ROOT, 'szablon', 'lekcja.js'), encoding='utf-8').read()
+    js = open(os.path.join(ROOT, 'szablon', 'rozszerzenia.js'), encoding='utf-8').read() + '\n' + open(os.path.join(ROOT, 'szablon', 'lekcja.js'), encoding='utf-8').read()
     own_css = '\n'.join(collect('styl', lines))
     doc = ('<!DOCTYPE html>\n<html lang="pl">\n<head>\n<meta charset="utf-8"/>\n<meta content="width=device-width,initial-scale=1.0" name="viewport"/>\n'
            '<title>%s · %s</title>\n<style id="che-lekcja-css">\n%s\n</style>\n%s</head>\n<body>\n'

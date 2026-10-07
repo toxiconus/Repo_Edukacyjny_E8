@@ -2,6 +2,7 @@
 
 Lekcję piszemy **tylko w md** (`md/<KOD>_<nazwa>.md`). HTML robi skrypt: `python3 narzedzia/md2html.py` → `dist/`.
 Wygląd i zachowanie są wspólne: `szablon/lekcja.css`, `szablon/lekcja.js`, silnik i modele `dist/che-viz.js` (zamrożony).
+Nowe modele, zlewki GFX i pracownie dopisujemy w `szablon/rozszerzenia.js` (instrukcja w KATALOG_MODELI.md) — silnika nie ruszamy.
 Kolejność części i zasady treści — jak w `STANDARD_LEKCJI.md` (start → rdzeń E8 → ambitne → praktyka → powtórka → dodatki).
 
 ## Nagłówek pliku
@@ -36,7 +37,7 @@ Wzory pisz znakami Unicode (H₂SO₄, Fe³⁺, →, ⇌, ↓, ↑). Dosłowną 
 Zwykły akapit.
 > Notka (mała, szara — mini-note).
 - lista punktowana
-1. lista numerowana
+1. lista numerowana (zaczyna się od pierwszego numeru, np. 6. → 6, 7, 8…)
 $$ Al₂(SO₄)₃ → 2 Al³⁺ + 3 SO₄²⁻                        ← wzór/równanie w ramce
 | Kolumna | Kolumna |                                  ← tabela
 |---|---|

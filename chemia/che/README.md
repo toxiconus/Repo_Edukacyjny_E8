@@ -4,11 +4,12 @@
 
 | folder / plik | co to |
 |---|---|
-| `md/` | **źródło lekcji** — tu piszemy i poprawiamy treść (N01, N02, N03, N04, FIZ01) |
+| `md/` | **źródło lekcji** — tu piszemy i poprawiamy treść (N01–N05, FIZ01) |
 | `SZABLON_LEKCJI.md` | format md (sekcje, karty, doświadczenia, modele, fiszki, test…) |
 | `STANDARD_LEKCJI.md` | kolejność części i zasady treści |
 | `KATALOG_MODELI.md` | modele silnika do `@model` i klucze do `@zlewka` |
-| `szablon/` | wspólny wygląd `lekcja.css` i zachowanie `lekcja.js`, spis `index.html` |
+| `szablon/` | wspólny wygląd `lekcja.css`, zachowanie `lekcja.js`, nowe modele i zlewki `rozszerzenia.js`, spis `index.html` |
+| `dist/jeden_plik/` | każda lekcja w jednym pliku (telefon, e-mail) |
 | `narzedzia/md2html.py` | md → `dist/*.html` |
 | `dist/che-viz.js` | silnik, dane, GFX, modele z CHE_lab v0_57 — **zamrożony** |
 
