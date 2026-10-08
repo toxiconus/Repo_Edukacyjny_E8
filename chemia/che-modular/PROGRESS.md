@@ -19,3 +19,4 @@
 - 2026-10-08 16:30 · Krok 1a (dane wg dziedzin): `tools/dane_eksport.py` (`che.py dane`) — CHE.DATA z silnika w Chromium → `engine/src/dane/*.json` (11 plików, 1,6 MB, 121 kluczy, 116 czystych). Wynik deterministyczny (`--sprawdz`). Test 11/11 OK. Następne: 1b — mapa lekcja → używane klucze.
 - 2026-10-08 16:50 · Krok 1b: dziedziny danych wg znaczenia (REGULY), `che.py dane --lekcje` → `engine/registry/dane_lekcji.json`. Lekcje czytają te same 36 z 41 kluczy (~300 KB); dane per lekcja nie zmniejszą pakietu — większy zysk w kodzie/GFX/CSS. Test 11/11 OK.
 - 2026-10-08 17:30 · Krok 2 rozpoczęty: `odchudz.py --start` (profil jednej lekcji z kopii wspólnego). F04_atom: 1,55 → 1,13 MB (test OK z wzorcem). Pozostałe 10 lekcji — do uruchomienia (przerwane na prośbę użytkownika).
+- 2026-10-08 17:45 · `atomSVG` — komponent modelu atomu (rozszerzenia.js, CHE.LAB.atomSVG): F05 bez zmian wyglądu, tryb `powloki:true` dla F07. Wpis w KATALOG_MODELI. Test F04+F05 OK.

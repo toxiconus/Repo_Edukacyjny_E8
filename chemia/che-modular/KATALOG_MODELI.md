@@ -77,6 +77,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `neutralization` | Równania jonowe — cząsteczkowe, jonowe pełne, jonowe skrócone |  |
 | `obtaining-hcl-steps` | Otrzymywanie kwasu solnego — etapy |  |
 | `obtaining-three` | Trzy drogi otrzymywania kwasów |  |
+| `atomSVG` (komponent, `CHE.LAB.atomSVG`) | Model atomu SVG: jądro p/n + elektrony; `powloki:true` → powłoki K–N 2,8,8 (kolory atlasu) (rozszerzenia.js) | F05, F07 |
 | `f05-izotopy-v01` | Konstruktor atomu: zmiana p/n/e → inny pierwiastek / izotop / jon + masa atomowa jako średnia ważona (rozszerzenia.js §8) | F05 |
 | `periodic-54` | Układ okresowy — pierwiastki 1–54, modele atomów, tlenki | N01 |
 | `ph-indicators-v03` | Panel pH — wskaźniki, roztwory, drabinka · v0.05 | N02, N03 |

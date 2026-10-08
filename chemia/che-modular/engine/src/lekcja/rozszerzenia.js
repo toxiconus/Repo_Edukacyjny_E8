@@ -213,6 +213,21 @@ function supN(n){return String(n).replace(/[0-9]/g,function(d){return '⁰¹²³
 function subN(n){return String(n).replace(/[0-9]/g,function(d){return '₀₁₂₃₄₅₆₇₈₉'[d]})}
 function chg(q){return q===0?'':(Math.abs(q)>1?supN(Math.abs(q)):'')+(q>0?'⁺':'⁻')}
 function pl(x,d){return x.toFixed(d).replace('.',',')}
+/* atomSVG — komponent wielokrotnego użytku (F05, F07, A01…): model atomu jako SVG, kolory jak w atlasie (_anon_004 bohr: elektrony wewnętrzne #2f8a55, walencyjne #b85f00).
+   o = {p, n, e, powloki:false|true, W:260}. powloki:false → elektrony na jednym okręgu (F05; powłoki to pojęcie F07);
+   powloki:true → powłoki K, L, M, N wg modelu szkolnego 2, 8, 8, … (do Z = 20; dalej uproszczenie — do weryfikacji). Zwraca otwarty <svg…> (zamknąć '</svg>'). */
+function atomSVG(o){var W=o.W||260,C=W/2,p=o.p|0,n=o.n|0,e=o.e|0,svg='<svg viewBox="0 0 '+W+' '+W+'" width="100%" style="max-width:'+W+'px;display:block;margin:auto" role="img" aria-label="Model atomu: '+p+' p, '+n+' n, '+e+' e">';
+ var N=p+n,sk=W/260;
+ for(var i=0;i<N;i++){var a=i*2.39996,r=4.2*sk*Math.sqrt(i+.5);svg+='<circle cx="'+(C+r*Math.cos(a)).toFixed(1)+'" cy="'+(C+r*Math.sin(a)).toFixed(1)+'" r="'+(4.6*sk).toFixed(1)+'" fill="'+(Math.floor((i+1)*p/N)>Math.floor(i*p/N)?'#d9534f':'#8a949e')+'" stroke="#fff" stroke-width=".8"/>'}
+ var sh=[];if(o.powloki){var cap=[2,8,8],left=e;for(var q=0;left>0;q++){var c=q<3?Math.min(cap[q],left):left;sh.push(c);left-=c}}else if(e)sh=[e];
+ var R0=o.powloki?Math.max(40*sk,6*sk*Math.sqrt(N)+18*sk):104*sk,st=sh.length>1?(104*sk-R0)/(sh.length-1):0;
+ sh.forEach(function(cnt,q){var R=sh.length>1?R0+q*st:(o.powloki?R0:104*sk),wal=o.powloki&&q===sh.length-1;
+  svg+='<circle cx="'+C+'" cy="'+C+'" r="'+R.toFixed(1)+'" fill="none" stroke="#9aa6b2" stroke-dasharray="4 4"/>';
+  if(o.powloki)svg+='<text x="'+(C+R*0.71+4).toFixed(1)+'" y="'+(C-R*0.71-4).toFixed(1)+'" font-size="'+(11*sk).toFixed(0)+'" fill="#5b6773">'+'KLMN'[q]+'</text>';
+  for(var k=0;k<cnt;k++){var b=k/cnt*2*Math.PI-Math.PI/2;svg+='<circle cx="'+(C+R*Math.cos(b)).toFixed(1)+'" cy="'+(C+R*Math.sin(b)).toFixed(1)+'" r="'+(5*sk).toFixed(1)+'" fill="'+(o.powloki?(wal?'#b85f00':'#2f8a55'):'#2f7bd8')+'"/>'}});
+ if(!e)svg+='<circle cx="'+C+'" cy="'+C+'" r="'+(104*sk)+'" fill="none" stroke="#9aa6b2" stroke-dasharray="4 4"/>';
+ return svg}
+try{C.LAB=C.LAB||{};C.LAB.atomSVG=atomSVG}catch(_){}
 V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa',tag:'MODEL',
  hint:'Dodawaj i zabieraj protony, neutrony i elektrony. Model mówi, co się zmieniło: pierwiastek (Z), izotop (n) czy ładunek (e). Niżej: skąd się bierze masa atomowa z układu okresowego.',
  foot:'rozszerzenia.js §8 · dane: CHE.DATA.ISOTOPES, ELEMENTS_54',
@@ -229,10 +244,7 @@ V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor
   function sym(z){var d=izo(z);return d?d[0]:('Z='+z)}
   function draw(){var A=s.p+s.n,q=s.p-s.e,X=sym(s.p),d=izo(s.p);
    /* rysunek: jądro (p czerwone, n szare) + elektrony na jednym okręgu (rozmieszczenie na powłokach — F07) */
-   var W=260,C=130,svg='<svg viewBox="0 0 '+W+' '+W+'" width="100%" style="max-width:260px;display:block;margin:auto" role="img" aria-label="Model atomu">';
-   svg+='<circle cx="'+C+'" cy="'+C+'" r="104" fill="none" stroke="#9aa6b2" stroke-dasharray="4 4"/>';
-   var N=s.p+s.n;for(var i=0;i<N;i++){var a=i*2.39996,r=4.2*Math.sqrt(i+.5);svg+='<circle cx="'+(C+r*Math.cos(a)).toFixed(1)+'" cy="'+(C+r*Math.sin(a)).toFixed(1)+'" r="4.6" fill="'+(Math.floor((i+1)*s.p/N)>Math.floor(i*s.p/N)?'#d9534f':'#8a949e')+'" stroke="#fff" stroke-width=".8"/>'}
-   for(var k=0;k<s.e;k++){var b=k/s.e*2*Math.PI-Math.PI/2;svg+='<circle cx="'+(C+104*Math.cos(b)).toFixed(1)+'" cy="'+(C+104*Math.sin(b)).toFixed(1)+'" r="5" fill="#2f7bd8"/>'}
+   var svg=atomSVG({p:s.p,n:s.n,e:s.e});
    pic.innerHTML=svg+'</svg><div class="nt" style="text-align:center"><span style="color:#d9534f">●</span> proton &nbsp; <span style="color:#8a949e">●</span> neutron &nbsp; <span style="color:#2f7bd8">●</span> elektron <small>(elektrony na jednym okręgu — powłoki: F07)</small></div>';
    var iso=d&&d[2].filter(function(x){return x[0]===A})[0];
    var zm=[];if(s.p!==start.p)zm.push('<b>zmieniła się liczba protonów</b> → to już <b>inny pierwiastek</b> ('+sym(start.p)+' → '+X+')');
