@@ -4,9 +4,10 @@
   python3 tools/che.py init               moduły z monolitu + podział GFX + test (raz na sesję)
   python3 tools/che.py nowa KOD nazwa     nowa lekcja z szablonu → lessons-md/KOD/LEKCJA.md
   python3 tools/che.py parity KOD         MD ↔ rejestr: czego brakuje w silniku
-  python3 tools/che.py build KOD [--zintegrowana]   MD → HTML (samodzielny / zintegrowany z silnikiem)
+  python3 tools/che.py lekcje [plik.md]   silnik z modułów + lekcje MD (kanon) → dist/ i dist/jeden_plik/
+  python3 tools/che.py build KOD [--zintegrowana]   prototyp $-makr: MD → HTML
   python3 tools/che.py pack KOD|--all     mały HTML offline z potrzebnymi modułami
-  python3 tools/che.py test               wszystkie testy (kompletność GFX, …) — wypisuje tylko błędy
+  python3 tools/che.py test [--szybki]    bezstratność (GFX, lab==monolit, che-viz==v0_59) + render lekcji
   python3 tools/che.py gfx                lista elementów GFX/VIEW (przedmiot/rodzaj: liczba, KB)
   python3 tools/che.py katalog            generuje engine/src/gfx/KATALOG.md (id ↔ nazwa PL ↔ plik)
 """
@@ -42,8 +43,20 @@ def nowa(kod, nazwa="lekcja"):
     print("→", dst.relative_to(ROOT), "| dopisz lekcję do engine/registry/lessons.json")
 
 
-def test():
+def lekcje(*md):
+    sys.path.insert(0, str(T))
+    import silnik
+    (ROOT / "dist").mkdir(exist_ok=True)
+    (ROOT / "dist/che-viz.js").write_text(silnik.che_viz(silnik.lab_html()), encoding="utf-8")
+    run(sys.executable, str(T / "md2html.py"), *md)
+
+
+def test(*a):
     run(sys.executable, str(T / "gfx_join.py"))
+    run(sys.executable, str(T / "silnik.py"))
+    if "--szybki" not in a:
+        lekcje()
+        run("node", str(T / "test_lekcje.cjs"))
 
 
 def gfx():
@@ -95,7 +108,8 @@ def main(a):
         extra = ["--mode", "integrated"] if "--zintegrowana" in rest else []
         run(sys.executable, str(T / "md_build_lesson.py"), *[x for x in rest if x != "--zintegrowana"], *extra)
     elif c == "pack": run(sys.executable, str(T / "pack_lesson.py"), *rest)
-    elif c == "test": test()
+    elif c == "test": test(*rest)
+    elif c == "lekcje": lekcje(*rest)
     elif c == "gfx": gfx()
     elif c == "katalog": katalog()
     else: sys.exit(f"nieznane: {c}\n{__doc__}")

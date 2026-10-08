@@ -11,6 +11,13 @@ cat = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
 html = Path(sys.argv[1]).read_text(encoding="utf-8")
 scripts = re.findall(r"<script\b([^>]*)>(.*?)</script>", html, flags=re.S)
 inline = [(a, b) for a, b in scripts if "src=" not in a]
+# szkielet labu: cały HTML z treścią skryptów zastąpioną markerami (lab = szkielet + moduły)
+_n = iter(range(10**6))
+def _mark(m):
+    if "src=" in m.group(1):
+        return m.group(0)
+    return f"<script{m.group(1)}>/*@@MOD {next(_n)}@@*/</script>"
+skel = re.sub(r"<script\b([^>]*)>(.*?)</script>", _mark, html, flags=re.S)
 out = ROOT / "modules"
 out.mkdir(exist_ok=True)
 ok = bad = 0
@@ -29,4 +36,6 @@ for c in cat:
         ok += 1
     else:
         bad += 1; print("SHA≠", c["id"], sha, c["sha1"])
+(out / "_lab_skeleton.html").write_text(skel, encoding="utf-8")
+print(f"szkielet labu: {len(skel.encode()):,} B")
 print(f"inline scripts: {len(inline)}, catalog: {len(cat)}, ok: {ok}, rozjazd: {bad}")
