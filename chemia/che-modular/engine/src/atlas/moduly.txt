@@ -17,3 +17,4 @@ che-ionic-v001
 che-lab-engine-v001
 che-lesson-data
 che-oxides-v001
+che-v1620-js     # m.in. usuwa podwójne przyciski reakcji w katalogu
