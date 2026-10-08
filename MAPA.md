@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (10 pl., 39 KB)
+## .  (10 pl., 40 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 5 KB
@@ -468,10 +468,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## narzedzia  (1 pl., 2 KB)
 - `mapa.py` 2 KB
 
-## olimpiada  (3 pl., 85 KB)
-- `MAPA_WSPOLNYCH.md` 1 KB
+## olimpiada  (4 pl., 111 KB)
+- `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
+- `PRIORYTETY.md` 7 KB
 - `PRZEKAZANIE.md` 3 KB
+
+## olimpiada/narzedzia  (1 pl., 7 KB)
+- `mapa_chemia.py` 7 KB
 
 ## polski  (18 pl., 2.5 MB)
 - (zwinięte; `ls polski`) — duże:
