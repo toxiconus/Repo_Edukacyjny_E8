@@ -21,3 +21,4 @@
 - 2026-10-08 17:30 · Krok 2 rozpoczęty: `odchudz.py --start` (profil jednej lekcji z kopii wspólnego). F04_atom: 1,55 → 1,13 MB (test OK z wzorcem). Pozostałe 10 lekcji — do uruchomienia (przerwane na prośbę użytkownika).
 - 2026-10-08 17:45 · `atomSVG` — komponent modelu atomu (rozszerzenia.js, CHE.LAB.atomSVG): F05 bez zmian wyglądu, tryb `powloki:true` dla F07. Wpis w KATALOG_MODELI. Test F04+F05 OK.
 - 2026-10-08 17:55 · `atomBohr` — grafika atomu z atlasu jako komponent canvas (rozszerzenia.js, CHE.LAB.atomBohr). Zrzut OK (Na, Cl⁻). Test F04+F05 OK. Następne: cloud, isoBar, potem atlas na komponentach.
+- 2026-10-08 18:05 · Spis dublowania (konfiguracja elektronowa ×5+, rysunki atomu ×6, izotopy) → PRZEKAZANIE §6.
