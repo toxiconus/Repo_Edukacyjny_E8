@@ -26,6 +26,10 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Praca BIO: najpierw `biologia/bio/PRZEKAZANIE.md`, potem tylko md lekcji (`biologia/bio/md/`) i `biologia/bio/BIO_KATALOG.md`. Gałąź: `claude/che-lekcje` (zbiorcza; `claude/bio-lekcje` scalona 2026-10-08).
 - Build `python3 biologia/bio/narzedzia/md2html_bio.py`, test `node biologia/bio/narzedzia/sprawdz_bio.js`. Wygenerowanego HTML nie czytać.
 
+## Olimpiada 8 (projekt przełączany)
+- Praca OLI: najpierw `olimpiada/PRZEKAZANIE.md`; `OLIMPIADA_8_MASTER.md` czytać tylko potrzebną sekcję (`grep -n '^#'`).
+- Lekcje są wspólne z kursem E8: jeden plik MD, warstwy poziomów 2–4 dopisywane w tej samej lekcji — nie kopiować treści do `olimpiada/`.
+
 ## Git
 - Klon: `git clone --depth 1` (jeden naraz, długi timeout); przy pracy nad jednym przedmiotem `git sparse-checkout set <folder>`.
 - Gałąź pracy (CHE, BIO, wizualizacje): `claude/che-lekcje` — zbiorcza, opis w `PRZEKAZANIE.md`. Push tylko na gałęzie `claude/...` (push na `main` kończy się 403).

@@ -6,7 +6,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## .  (10 pl., 39 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
-- `CLAUDE.md` 4 KB
+- `CLAUDE.md` 5 KB
 - `MAPA.md` 14 KB
 - `PRZEKAZANIE.md` 2 KB
 - `README.md` 0 KB
