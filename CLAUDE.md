@@ -5,7 +5,7 @@ Przeczytaj ten plik jako pierwszy, zanim otworzysz cokolwiek innego. Obowiązuje
 ## Kolejność startu
 1. Ten plik.
 2. `chemia/che-modular/PLAN_PRACY.md`: cele, audyt, kroki K0–K8 (praca CHE). Potem `tail PROGRESS.md`. Polecenia, dialekt MD, GFX: `SYSTEM.md` (czytaj tylko potrzebną sekcję).
-3. Tylko pliki dotyczące zadania (np. `lessons-md/_zrodla_v0_59/<KOD>_*.md`, jeden tool z `tools/`).
+3. Tylko pliki dotyczące zadania (np. `lessons-md/gotowe/<KOD>_*.md`, jeden tool z `tools/`).
 
 Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biologia/`, `angielski/`, `chemia/archiwum/` (tylko do odczytu, opis w `archiwum/OPIS.md`), `PODSUMOWANIE.md`/`AUDYT_I_PLAN.md`, jeśli zadanie ich nie dotyczy.
 
@@ -24,3 +24,10 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 
 ## Merytoryka
 - Język lekcji: polski, poziom E8 (podstawa programowa). Dane liczbowe oznaczaj do weryfikacji, jeśli nie są pewne.
+
+## GFX i modele
+- Najpierw istniejące animacje, modele i zlewki (`chemia/che-modular/engine/src/gfx/KATALOG.md` — silnik, `chemia/che-modular/KATALOG_MODELI.md` — modele i pracownie z rozszerzeń) — rozszerzamy je i ulepszamy. Brakujący element (naczynie, przyrząd, przedmiot, efekt) budujemy od podstaw jako komponent wielokrotnego użytku (`engine/src/lekcja/rozszerzenia.js` albo plik w `engine/src/gfx/<przedmiot>/<rodzaj>/`) + wpis w katalogu, nie jednorazowo w lekcji.
+
+## Plany kursu
+- Spis kursu (kanon v0.3, 113 lekcji): `chemia/plany/CHE_SPIS_TRESCI.md` (generowany: `cd chemia && python3 plany/narzedzia/spis_tresci.py`, dane w `plany/narzedzia/kanon_dane.py`). Materiał wstępny lekcji: `chemia/lekcje_md/<grupa>/` — czytać tylko sekcję potrzebnej lekcji.
+

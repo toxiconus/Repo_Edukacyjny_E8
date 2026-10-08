@@ -6,7 +6,7 @@ Ten plik zastępuje rozproszone opisy z ZIP (`MAKRA*.md`, `MD_CEGIELKI.md`, `SIL
 
 | Warstwa | Gdzie | Edytujemy? |
 |---|---|---|
-| Treść lekcji (MD) | `lessons-md/<KOD>/LEKCJA.md`; kanon v0_59: `lessons-md/_zrodla_v0_59/` | **tak** |
+| Treść lekcji (MD) | `lessons-md/<KOD>/LEKCJA.md`; kanon v0_59: `lessons-md/gotowe/` | **tak** |
 | Szablon lekcji | `lessons-md/_SZABLON/LEKCJA.md` | rzadko |
 | Rejestr zależności | `engine/registry/*.json` | przy nowej lekcji / elemencie |
 | GFX i widoki per element | `engine/src/gfx/{vessels,effects,scenes,rx,views}/<id>.js` | **tak** (nowe/ulepszone) |

@@ -5,7 +5,7 @@ Wspólne: engine/src/lekcja/lekcja.css, lekcja.js (wklejane do każdej lekcji), 
 import os, re, sys, json, html as H
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MD = os.path.join(ROOT, 'lessons-md', '_zrodla_v0_59')
+MD = os.path.join(ROOT, 'lessons-md', 'gotowe')
 BLOCK_TAGS = set('div section article aside details summary figure figcaption table thead tbody tfoot tr td th ul ol li dl dt dd '
                  'p h1 h2 h3 h4 h5 h6 pre blockquote nav header footer main form fieldset hr svg canvas iframe video audio '
                  'style script template'.split())

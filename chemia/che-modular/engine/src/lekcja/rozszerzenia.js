@@ -145,4 +145,48 @@ V.define('n05-trendy-v01',{title:'Temperatury wrzenia wodorków — wiązania wo
    box.innerHTML=s+'</svg>';
    info.innerHTML='<b>Odczyt:</b> w grupie 14 (CH₄ → SnH₄) temperatura wrzenia rośnie równo z masą cząsteczek — działają tylko słabe oddziaływania międzycząsteczkowe. W grupach 15–17 pierwszy wodorek (puste kółko) wrze <b>znacznie wyżej</b>, niż wynikałoby z trendu: między cząsteczkami NH₃, H₂O i HF tworzą się <b>wiązania wodorowe</b> (H przy bardzo elektroujemnym N, O, F). Woda ma ich najwięcej (2 atomy H i 2 wolne pary na cząsteczkę) — dlatego jako jedyna z tych wodorków jest w 20 °C cieczą.'}
   draw()}});
+/* ---------- 5. Wspólny budowniczy pracowni (zlewka + równanie + obserwacja + wniosek + BHP) ----------
+   Użycie: pracownia(id, tytuł, podpowiedź, [[grupa,[klucze]]...], {klucz:{war,wn,bhp,eq}}).
+   Spec zlewki może mieć `vessel` (beaker, tube, flask, evapDish, crucible, cylinder) — przekazywane do rx.mount. */
+function pracownia(id,title,hint,groups,notes,foot){
+ V.define(id,{title:title,tag:'GFX',hint:hint,foot:foot||'GFX.rx · rozszerzenia.js',
+  build:function(host){host.innerHTML='';host.classList.add('x5');var bars=el('div'),area=el('div');host.append(bars,area);var all=[];
+   if(!rx){area.textContent='Brak GFX.rx';return}
+   groups.forEach(function(g){var r=el('div','bar','<b>'+g[0]+':</b>'),n=0;g[1].forEach(function(k){if(!rx.get(k))return;n++;var sp=rx.get(k),d=notes[k]||{};var b=el('button','o',d.btn||(sp.n||k).split(' (')[0]);b.type='button';b._k=k;b.onclick=function(){all.forEach(function(x){x.classList.toggle('on',x===b)});show(k)};r.appendChild(b);all.push(b)});if(n)bars.appendChild(r)});
+   function show(k){area.innerHTML='';var g=el('div','two'),l=el('div'),r=el('div');g.append(l,r);area.appendChild(g);var I=rx.info(k)||{},d=notes[k]||{},sp=rx.get(k)||{};
+    var m=rx.mount(l,k,{height:240,dur:6,auto:true,vessel:sp.vessel});var bb=el('div','bar'),x=el('button','o','▶ powtórz');x.type='button';x.onclick=function(){m.play()};bb.appendChild(x);l.appendChild(bb);
+    r.innerHTML='<div class="eq">'+(d.eq||sp.eq||I.eq||'')+'</div><div class="nt"><b>Warunki:</b> '+(d.war||'—')+'<br><b>Obserwacja:</b> '+(d.obs||sp.why||I.obs||'—')+(I.gas&&!sp.noRx?'<br><b>Gaz:</b> '+I.gas.name+' — '+I.gas.test:'')+'<br><b>Wniosek:</b> '+(d.wn||'—')+'<br><b>BHP:</b> '+(d.bhp||'—')+(sp.teacher?'<br><span class="tch">Tylko pokaz nauczyciela.</span>':'')+'</div>'}
+   host._show=function(k){var b=all.filter(function(x){return x._k===k})[0];if(b){b.click();return true}return false};
+   var PR=C.PRACOWNIA=C.PRACOWNIA||{};(PR.live=PR.live||{})[id]=host;var p=PR.pending;PR.pending=null;if(p&&host._show(p))return;if(all[0])all[0].click()}})}
+C.EXT_PRACOWNIA=pracownia;
+
+/* ---------- 6. Zlewki GFX dla F01 (zjawisko fizyczne vs reakcja) ---------- */
+var RXF1={
+ f01SolWoda:{n:'Sól + woda (rozpuszczanie)',solid:pw([248,248,246]),out:['nic'],qualitative:1,eq:'NaCl(s) → Na⁺(aq) + Cl⁻(aq)',why:'Kryształy przestają być widoczne, roztwór jest przezroczysty i bezbarwny. Sól nie zniknęła — jej jony rozproszyły się w wodzie.'},
+ f01Odparowanie:{n:'Roztwór soli — odparowanie',level:.3,ppt:'ppt-caco3',habit:'crystal',out:['osad'],qualitative:1,heat:1,T:100,eq:'NaCl(aq) → NaCl(s) + H₂O(g)↑',why:'Woda paruje, a na dnie parownicy pojawia się i narasta biały osad — kryształy soli. Odzyskaliśmy substancję wyjściową.'},
+ f01SodaOcet:{n:'NaHCO₃ + ocet',solid:pw([246,246,240]),out:['gaz'],gas:'CO2',bubN:2.4,foam:.8,eq:'NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑',why:'Burzliwe pienienie, wydzielają się pęcherzyki bezbarwnego gazu, proszek znika. Powstał nowy gaz — CO₂ (test: woda wapienna mętnieje).'},
+ f01WodaWapienna:{n:'CO₂ + woda wapienna',rxKey:'caoh2Co2',ppt:'ppt-caco3',out:['osad'],gas:'CO2',bubN:.8,eq:'Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O',why:'Gaz przepuszczany przez klarowną wodę wapienną powoduje zmętnienie — powstaje biały osad węglanu wapnia. To test na CO₂.'},
+ f01Mg:{n:'Spalanie magnezu (pokaz)',rxKey:'mgO2',vessel:'crucible',level:.02,solid:{col:[196,200,206],col2:[250,250,248],eq:3,end:.15,t:'chips',shape:'chips'},ppt:'ppt-caco3',habit:'crystal',out:['osad'],heat:1.6,T:800,teacher:1,eq:'2 Mg + O₂ → 2 MgO',why:'Wstążka spala się oślepiająco jasnym, białym płomieniem; zostaje biały, kruchy proszek bez metalicznego połysku — tlenek magnezu.'},
+ f01FeS:{n:'Fe + S (ogrzewanie, pokaz)',vessel:'testTube',solid:{col:[150,146,96],col2:[38,36,34],eq:4,end:.9,t:'powder',shape:'powder'},level:.02,out:['nic'],heat:1.4,T:600,teacher:1,eq:'Fe + S → FeS',why:'Szarożółta mieszanina rozżarza się (także po odsunięciu palnika) i zmienia się w czarną, kruchą masę. Magnes nie przyciąga produktu — powstał siarczek żelaza(II).'}
+};
+var RDF1={
+ f01SodaOcet:[R([[1,'NaHCO3'],[1,'CH3COOH']],[[1,'CH3COONa'],[1,'H2O'],[1,'CO2']]),{type:'wymiana (wodorowęglan + kwas)',conditions:'temperatura pokojowa',observation:'pienienie, wydzielanie bezbarwnego gazu (CO₂)',safety:['ocet drażni oczy']}],
+ f01FeS:[R([[1,'Fe'],[1,'S']],[[1,'FeS']]),{type:'synteza',conditions:'ogrzewanie mieszaniny w probówce',observation:'mieszanina rozżarza się, powstaje czarna krucha substancja niemagnetyczna',safety:['pokaz nauczyciela pod wyciągiem; możliwy SO₂']}]};
+var SBF1={NaHCO3:['wodorowęglan sodu (soda oczyszczona)','s',84.007,'wodorosól',[],['proszek do pieczenia','gaśnice']],
+ CH3COONa:['octan sodu','aq',82.034,'sól',[],['przemysł spożywczy','ogrzewacze chemiczne']],
+ FeS:['siarczek żelaza(II)','s',87.91,'sól (czarna)',[],['otrzymywanie H₂S w laboratorium']]};
+Object.keys(SBF1).forEach(function(f){if(D.SUBSTANCES[f]||byF[f])return;var a=SBF1[f];D.SUBSTANCES[f]={formula:f,name:a[0],state:a[1],molarMass:a[2],role:a[3],safety:a[4],uses:a[5],src:'rozszerzenia.js'}});
+Object.keys(RDF1).forEach(function(k){if(D.REACTIONS[k])return;D.REACTIONS[k]=RDF1[k][0];D.REACTION_DATA[k]=Object.assign({products:RDF1[k][0].products.map(function(x){return x.formula})},RDF1[k][1])});
+if(rx)Object.keys(RXF1).forEach(function(k){if(!rx.get(k))rx.register(k,RXF1[k])});
+
+pracownia('f01-doswiadczenia-v01','Pracownia: co naprawdę się zmieniło?','Zjawisko fizyczne czy reakcja chemiczna? Topnienie, rozpuszczanie i odparowanie kontra reakcje z nową substancją — zlewka, obserwacja, wniosek i BHP.',
+ [['Zjawiska fizyczne',['f01SolWoda','f01Odparowanie']],['Reakcje chemiczne',['f01SodaOcet','f01Mg','f01FeS']],['Dowód produktu',['f01WodaWapienna']]],
+ {f01SolWoda:{war:'łyżeczka soli kuchennej w wodzie, mieszanie bagietką',wn:'Zjawisko fizyczne (rozpuszczanie). Dowód: po odparowaniu wody sól wraca.',bhp:'Nie smakujemy substancji w pracowni.'},
+  f01Odparowanie:{war:'część roztworu soli w parownicy, ogrzewanie palnikiem lub płytą',wn:'Odzyskanie substancji wyjściowej potwierdza, że rozpuszczanie nie było reakcją.',bhp:'Gorąca parownica — chwytać szczypcami; okulary (pryskanie przy końcu odparowania).'},
+  f01SodaOcet:{war:'łyżeczka sody oczyszczonej, dolewamy ocet',wn:'Reakcja chemiczna: powstaje nowa substancja (gaz CO₂). Nazwa gazu to wniosek — potwierdza go woda wapienna.',bhp:'Okulary; ocet nie do oczu.'},
+  f01Mg:{war:'wstążka magnezu w szczypcach, w płomieniu palnika (pokaz)',wn:'Reakcja chemiczna: biały, kruchy MgO ma inne właściwości niż metaliczny magnez.',bhp:'Nie patrzeć w płomień; płonącego magnezu nie gasić wodą.'},
+  f01FeS:{war:'mieszanina opiłek żelaza i siarki w probówce, ogrzewanie (pokaz)',wn:'Przed ogrzaniem — mieszanina (magnes wyciąga żelazo); po — związek FeS (magnes nie przyciąga). Rozstrzyga test właściwości.',bhp:'Pokaz pod wyciągiem; możliwy trujący SO₂; gorąca probówka może pęknąć.'},
+  f01WodaWapienna:{war:'gaz przepuszczony przez wodę wapienną',wn:'Zmętnienie wody wapiennej to dowód, że gazem był CO₂.',bhp:'Woda wapienna drażni oczy i skórę; okulary.'}},
+ 'GFX.rx · rozszerzenia.js (F01)');
+
 })();

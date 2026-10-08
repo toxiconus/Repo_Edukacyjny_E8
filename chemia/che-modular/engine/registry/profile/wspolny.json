@@ -173,7 +173,15 @@
   "anon001/s169.js",
   "anon001/s170.js",
   "anon001/s171.js",
-  "anon001/s172.js"
+  "anon001/s172.js",
+  "anon001/s173.js",
+  "anon001/s174.js",
+  "anon001/s175.js",
+  "anon001/s176.js",
+  "anon001/s177.js",
+  "anon001/s178.js",
+  "anon001/s179.js",
+  "anon001/s180.js"
  ],
  "drop_gfx": {},
  "log": [
@@ -254,6 +262,7 @@
   "anon audit/a/b: -4 → 2.11 MB",
   "anon audit/b: -9 → 2.10 MB",
   "anon thermo/a/a/b: -2 → 2.09 MB",
-  "anon thermo/a/b: -4 → 2.08 MB"
+  "anon thermo/a/b: -4 → 2.08 MB",
+  "anon thermo/b: -8 → 2.07 MB"
  ]
 }

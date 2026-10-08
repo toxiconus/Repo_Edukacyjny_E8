@@ -24,7 +24,7 @@ Czytaj ten plik zaraz po `CLAUDE.md`; zasady i polecenia: `SYSTEM.md`. Dziennik 
 | **Packi w przeglądarce** | ❌ | Chromium 390 px: widać tylko shell/TOC, **brak treści lekcji**, 3–4 błędy JS: `Unexpected token ':'` / `'.'` (wycinanie GFX/VIEW psuje składnię), `onpointerdown` na null (brak elementu labu), `pHFromH` undefined (wycięta zależność). |
 | `md_parity.py N01` | ✅ | 10/10 |
 | `md_build_lesson.py N01` | ⚠️ | Działa, 0 błędów konsoli, ale **przewijanie w bok** na 390 px; brak silnika/modeli (tylko przyciski `$gfx`). |
-| Szablon MD (`$makra`) | ⚠️ | N01 testowy = 4,8 KB. Prawdziwe lekcje v0_59 (`lessons-md/_zrodla_v0_59/`, 50–128 KB) są w **innym dialekcie** (`::: dosw`, `@model`, `@zlewka`, `::: test`…). Dwa dialekty = ryzyko. |
+| Szablon MD (`$makra`) | ⚠️ | N01 testowy = 4,8 KB. Prawdziwe lekcje v0_59 (`lessons-md/gotowe/`, 50–128 KB) są w **innym dialekcie** (`::: dosw`, `@model`, `@zlewka`, `::: test`…). Dwa dialekty = ryzyko. |
 | Rejestr | ⚠️ | `lessons.json`: N01–N04, FIZ01. **Brak N05**. |
 | Sekcje anon001 | ⚠️ | 278 plików (dokumenty mówią 279) — sprawdzić przy pick(). |
 | Test regresji | ❌ | Brak testu „lekcja renderuje treść + 0 błędów”. |
@@ -34,7 +34,7 @@ Czytaj ten plik zaraz po `CLAUDE.md`; zasady i polecenia: `SYSTEM.md`. Dziennik 
 ## 3. Decyzje
 
 - **D1.** Stary system v0_59 i bardzo stare pliki → `chemia/archiwum/` (opis w `archiwum/OPIS.md`). Nie edytujemy.
-- **D2.** Treść lekcji v0_59 (`_zrodla_v0_59/*.md`) to **kanon treści**. Nie przepisujemy ręcznie: builder ma rozumieć stare dyrektywy jako aliasy makr (jeden dialekt docelowy, konwersja automatyczna).
+- **D2.** Treść lekcji v0_59 (`gotowe/*.md`) to **kanon treści**. Nie przepisujemy ręcznie: builder ma rozumieć stare dyrektywy jako aliasy makr (jeden dialekt docelowy, konwersja automatyczna).
 - **D3.** Kolejność: **działa → test → chudnie**. Żadnego odchudzania bez testu renderu.
 - **D4.** Packer nie może wycinać kodu „po tekście”, jeśli psuje składnię: wycinamy całe wywołania z kontrolą składni (`node --check`) albo rejestrację wyłączamy flagą.
 - **D5.** `modules/` stają się źródłem w gicie dopiero, gdy zaczniemy je edytować (moduł edytowany → commit jego pliku).
@@ -47,11 +47,11 @@ Czytaj ten plik zaraz po `CLAUDE.md`; zasady i polecenia: `SYSTEM.md`. Dziennik 
 | **K1** ✅ | `tools/test_lekcje.cjs`: Chromium 390 px, lekcje równolegle — treść, 0 błędów (bez sieci), CONSISTENCY, modele zamontowane + klik 3 przycisków/select, każda pracownia otwiera się | 6/6 OK |
 | **K2** ✅ | Bezstratność: `silnik.py` — lab z modułów == monolit v0_57, che-viz.js == zamrożony v0_59 (sha1); sekcje `_anon_001` (280, `anon_split.mjs`) i GFX (175) składają się bajt w bajt. Builder kanonu `tools/md2html.py`, szablon wyglądu `engine/src/lekcja/`. Packer ZIP odstawiony (gubił HOME_GATE) | zrobione |
 | **K3** ⏳ | `tools/odchudz.py`: ddmin z testem jako wyrocznią → profile `engine/registry/profile/*.json` (najpierw `wspolny` dla 6 lekcji, potem per lekcja). `che.py silnik` → `dist/viz/<profil>.js`; `md2html.py` wkleja `dist/viz/<lekcja>.js` → `wspolny.js` → pełny | wspólny < 2 MB, per lekcja ≤ 1,4 MB |
-| **K4** | Builder MD rozumie kanon v0_59 + aliasy `$`-makr i porządkowanie klas (SYSTEM.md §3); `md_build_lesson.py N01` z `_zrodla_v0_59/N01_tlenki.md` | pełna N01 z MD, parity bez luk, K1 OK |
+| **K4** | Builder MD rozumie kanon v0_59 + aliasy `$`-makr i porządkowanie klas (SYSTEM.md §3); `md_build_lesson.py N01` z `gotowe/N01_tlenki.md` | pełna N01 z MD, parity bez luk, K1 OK |
 | **K5** | Połączenie: MD-build + pack silnika = jedna lekcja offline (`meta.json` → packer) | N01 offline z modelami i zlewkami, K1 OK |
 | **K6** | `rozszerzenia.js` z v0_59 → moduły domen (wodorki, nowe zlewki); N02–N05, FIZ01 przez ten sam pipeline; N05 do `lessons.json` | 6 lekcji OK w K1, kompletność OK |
 | **K7** | Podział danych na pliki domen (`engine/src/data/<domena>.js`) i GFX per plik; `pick()` wg manifestu; węższe tagi core | ≤ 1,4 MB / lekcja, K1 i kompletność OK |
-| **K8** | Nowe treści: N06 systematyka / F00–F09; potem biologia na tym samym silniku | wg potrzeb |
+| **K8** | Kurs (kanon v0.3, 113 lekcji) — patrz §6: blok F (F02→F21), potem przemianowanie N01–N05 → N02–N06 | wg §6 |
 
 Otwarte błędy z v0_59 do przeniesienia przy K4–K6: tryb Noc (podwójne odwrócenie kolorów), stare `::: skrypt` w N01–N03 → `::: test`.
 
@@ -63,3 +63,15 @@ python3 tools/che.py init      # raz na sesję
 python3 tools/che.py --help    # reszta poleceń (SYSTEM.md §2)
 ```
 Gałąź: `claude/che-lekcje`. Wyniki (`dist/`, `build/`) poza gitem.
+
+## 6. Kurs i blok F (z gałęzi `claude/chemia-podzial`, wcielone 2026-10-08 @a49e2ae)
+
+- **Spis kursu:** `chemia/plany/CHE_SPIS_TRESCI.md` (kanon v0.3, 113 lekcji: kod, poziom, wymaga/pogłębia, cel, stan, pliki). Generator: `cd chemia && python3 plany/narzedzia/spis_tresci.py` (dane: `plany/narzedzia/kanon_dane.py` — zmiany tylko w danych). Ścieżki E8/LO: `plany/PLAN_SCIEZKI_DYDAKTYCZNE.md`, architektura F: `plany/CHE.01.F00.architektura_bloku_F.md`.
+- **Materiał wstępny:** `chemia/lekcje_md/<grupa>/` (F: kanon v17.0 + na końcu „MATERIAŁ Z ARCHIWUM — do redakcji”; N/R/O/X/00: stare v1.1 pod nowymi kodami). Czytać tylko sekcję potrzebnej lekcji (grep), nie całość.
+- **Decyzje użytkownika (blok F):** 21 lekcji F01–F21 w 5 fazach (A F01–03, B F04–09, C F10–15, D F16–17, E F18–21); F00 nie jest lekcją (mapa bloku w F01 §0.3). **Nie piszemy od zera** — ulepszamy wersje użytkownika i przenosimy do kanonu MD (`SYSTEM.md` §3).
+- **Zasada GFX:** najpierw istniejący model/zlewka (rozszerzać, ulepszać); brakujący element = komponent wielokrotnego użytku (`engine/src/lekcja/rozszerzenia.js` lub `engine/src/gfx/<przedmiot>/…`) + wpis w katalogu. Nowa pracownia: `C.EXT_PRACOWNIA(...)` (rozszerzenia.js §5, opis w `KATALOG_MODELI.md`).
+- **Gotowe:** F01 Jak myśli chemik (`lessons-md/gotowe/F01_jak_mysli_chemik.md`, pracownia `f01-doswiadczenia-v01`, 6 zlewek). Test 2026-10-08: OK po poprawce (f01WodaWapienna, f01Mg nie miały rekordu reakcji → `rxKey` caoh2Co2 / mgO2).
+- **Kolejność:** F02 Materia i substancje → F03 (model rozdzielania mieszanin) → … F21; cienkie F10, F15, F18–F21 — najpierw zapytać o nowszą wersję. GFX do zbudowania: magnes (Fe+S), lód pływający, osad i para w parownicy, płomień w tyglu; modele: rozdzielanie mieszanin (F03), izotopy (F05), energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17).
+- **Po zatwierdzeniu kanonu v0.3:** przemianować gotowe N01…N05 → N02…N06 (pliki, `kod`, `uid`, rejestr).
+- Otwarte: mapowanie L006–L013 → kody (O, R, X, LAB, REV) do potwierdzenia; testy N01–N03 → `::: test`; tryb Noc w `lekcja.css`.
+
