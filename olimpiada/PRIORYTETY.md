@@ -12,11 +12,22 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 | rejonowy | 26.11.2025, 90 min | 24.11.2025, 90 min | — |
 | wojewódzki | 10.02.2026, 90 min | 06.02.2026, 90 min | — |
 
-**Chemia, etap szkolny (2025/26):** podstawa programowa pkt **I–VII**: substancje i ich właściwości · wewnętrzna budowa materii · reakcje chemiczne · tlen, wodór i ich właściwości (powietrze) · woda i roztwory wodne · wodorotlenki i kwasy · sole. **Bez chemii organicznej.** 40 pkt na każdym etapie, prosty kalkulator dozwolony; własny układ okresowy / tabela rozpuszczalności — niepotwierdzone. Zadania: zamknięte, P/F, dobieranie, luki, otwarte krótkie i rozszerzone, **obliczeniowe i problemowe, opis doświadczeń (przebieg, warunki, obserwacje, wnioski)**. Etapy wyższe kumulatywnie + rozszerzenia (mol, masa molowa, Avogadro, stężenie molowe, podpowłoki, bilans elektronowy, stechiometria, organiczna — wg zakresu).
-**Biologia, etap szkolny (2025/26):** podstawa programowa biologii kl. IV–VIII (całość).
-**Uwaga:** od 2026/27 wchodzi nowa podstawa programowa kl. IV–VIII — zakres konkursu może się do niej odwołać.
+**Zakresy 2025/26 (oficjalne, OCR: `zrodla/LKO/Zakresy_2025_2026_chemia_biologia_OCR.md`)**
 
-**Do zrobienia przez użytkownika:** pobrać z kuratorium.lublin.pl (strona blokuje pobieranie automatyczne) arkusze **etapu szkolnego chemii i biologii 2024/25** z kluczami (publikacja id=13802), PDF zakresów 2025/26 i — gdy wyjdzie — pakiet 2026/27; wrzucić do rozmowy → trafią do `olimpiada/zrodla/` i banku zadań.
+*Chemia* — każdy etap 40 pkt, prosty kalkulator; zadania zamknięte, P/F, luki, dobieranie, otwarte; opis doświadczeń, obserwacja ≠ wniosek, cykle przemian (metal → tlenek → wodorotlenek → sól), równania cząsteczkowe i jonowe, obliczenia, tablice/wykresy, sytuacje nietypowe.
+- **Etap I (szkolny, 60 min):** podstawa pkt **I–VII** (substancje · budowa materii · reakcje · tlen, wodór, powietrze · woda i roztwory · wodorotlenki i kwasy · sole).
+- **Etap II (rejonowy, 90 min):** I–VII + konfiguracje elektronowe na powłokach (grupy 1, 2, 13–18, do Z = 36, także jony) · typy reakcji · **wodorki niemetali** (NH₃, HCl, H₂S) · sole z innej soli · **jonowe równania** otrzymywania kwasów, wodorotlenków, soli · **szereg aktywności metali** (z wodą, kwasami, w roztworach soli) · kwasy z soli · masy cząsteczkowe · **stechiometria wzoru i równania (także nadmiar — stosunek niestechiometryczny)**.
+- **Etap III (wojewódzki, 90 min):** + pkt VIII–X (organiczna) + rozszerzenia: alkany do C5, halogenowanie, addycja do alkenów (Markownikow), alkohole (odczyn, Na, spalanie), glicerol, kwas octowy, kwasy C1–C3, estry, cukry, fermentacja, hydroliza, wzory elementarne/rzeczywiste, **mol, masa molowa, Avogadro, objętość molowa**.
+- Literatura: podręczniki SP; A. Rygielska, „Zadania dla uczestników konkursów chemicznych” (Pazdro).
+
+*Biologia* — każdy etap 40 pkt.
+- **Etap I (szkolny, 60 min):** pkt **I Organizacja i chemizm życia** + **II Różnorodność życia** (klasyfikacja, wirusy, bakterie, rośliny: tkanki, mchy, paprociowe, nagonasienne, okrytonasienne; grzyby; zwierzęta: tkanki, bezkręgowce, kręgowce) + umiejętności: wykresy/schematy, **planowanie doświadczeń (próba kontrolna/badawcza, hipoteza, wnioski)**, budowa ↔ funkcja. **Genetyki NIE MA na etapie szkolnym.**
+- **Etap II:** + III Organizm człowieka (wszystkie układy) + IV Homeostaza.
+- **Etap III:** + V Genetyka, VI Ewolucja, VII Ekologia, VIII Różnorodność biologiczna + rozszerzenia (białka, transport, ATP, oddychanie, transkrypcja/translacja, chloroplasty/mitochondria, protisty, porosty, widłaki, skrzypy).
+
+**Uwaga:** od 2026/27 wchodzi nowa podstawa programowa — zakres 2026/27 może się zmienić; do czasu publikacji pracujemy wg 2025/26.
+
+**Do zrobienia przez użytkownika:** (zakresy 2025/26 i arkusz rejonowy chemii 2025/26 — już w `zrodla/LKO/`) pobrać z kuratorium.lublin.pl (strona blokuje pobieranie automatyczne) arkusze **etapu szkolnego chemii i biologii 2024/25** z kluczami (publikacja id=13802), PDF zakresów 2025/26 i — gdy wyjdzie — pakiet 2026/27; wrzucić do rozmowy → trafią do `olimpiada/zrodla/` i banku zadań.
 
 ## 2. Kolejka lekcji — teraz (do etapów szkolnych)
 ### Chemia (do 23.10)
@@ -24,6 +35,7 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 |---|---|---|---|---|
 | C1 | **REV01 Powtórka klasy 7** (fundamenty: BHP, atom i jon, układ okresowy, wartościowość, wzory, wiązania, równania + nowa sekcja obliczeń konkursowych; gazy i roztwory — osobno) | zakres etapu szkolnego = głównie kl. 7 + początek kl. 8 | `chemia/lekcje_md/00/CHE.00.REV01.powtorka_klasy_7.md` | **[V] gotowa 2026-10-08** — `lessons-md/gotowe/REV01_powtorka_klasy_7.md` |
 | C1b | N01 Powietrze i gazy: tlen, wodór, skład powietrza, korozja (dział IV podstawy — w zakresie etapu szkolnego) | dział IV | `lekcje_md` — brak materiału; kanon N01 | [ ] |
+| C1c | (etap rejonowy) szereg aktywności, jonowe równania, stechiometria z nadmiarem, konfiguracje do Z = 36 | etap II | kanon X04, J03, R07–R08 (część bez mola), F07 | [ ] |
 | C2 | R03 Stężenie procentowe (+ R02 rozpuszczalność, krzywe) | obliczenia rozdzielają uczestników | `chemia/lekcje_md/R/CHE.03.R03+R05.stezenia.md` | [ ] |
 | C3 | F17 Równania reakcji + obliczenia z równań (masowe, prawo zachowania masy, proporcje — bez mola) | typowe zadanie konkursowe | `lekcje_md/F/CHE.01.F17…`, `R/…stechiometria.md` (część masowa) | [ ] |
 | C4 | Doświadczenia: obserwacja → wniosek → równanie (zbiorczo) | typowe zadanie konkursowe | `lekcje_md/00/CHE.00.LAB.doswiadczenia.md` | [ ] |
@@ -32,8 +44,9 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 ### Biologia (do 21.10)
 | # | lekcja | dlaczego | stan |
 |---|---|---|---|
-| B1 | genetyka bieżąca (L010 gotowa → L011…) | program kl. 8 teraz + konkurs | L010 gotowa |
-| B2 | powtórka kl. 5–7 (komórka, organizmy, człowiek) wg zakresu konkursu | etap szkolny | do zaplanowania po zakresie LKO |
+| B1 | **powtórka etapu szkolnego:** I Organizacja i chemizm życia + II Różnorodność życia (kl. 5–6) + doświadczenia biologiczne | cały zakres etapu szkolnego | [ ] — źródło: `biologia/BIO.all…`, `biologia/md/` |
+| B1b | genetyka bieżąca (L010 gotowa → L011…) | oceny w kl. 8; konkurs dopiero etap III | L010 gotowa |
+| B2 | człowiek + homeostaza (kl. 7) | etap rejonowy | [ ] |
 
 ## 3. Kolejka — później (oceny bieżące, kolejność szkolna kl. 8)
 - Chemia: (etap szkolny nie obejmuje organicznej) po solach → **węglowodory** (O01–O07, materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md`) → pochodne węglowodorów (O08–O13) → substancje o znaczeniu biologicznym (O15–O20).

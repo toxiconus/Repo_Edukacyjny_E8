@@ -295,19 +295,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (12 pl., 747 KB)
-- `F01_jak_mysli_chemik.md` 42 KB
-- `F02_materia_i_substancje.md` 31 KB
-- `F03_wlasciwosci_i_rozdzielanie.md` 33 KB
-- `F04_atom.md` 24 KB
-- `F05_izotopy_jony_masa_atomowa.md` 26 KB
-- `F06_uklad_okresowy.md` 45 KB
+## chemia/che-modular/lessons-md/gotowe  (13 pl., 806 KB)
+- (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 51 KB
 - ⚠`N01_tlenki.md` 117 KB
 - ⚠`N02_wodorotlenki.md` 122 KB
 - ⚠`N03_kwasy.md` 125 KB
 - ⚠`N04_sole.md` 80 KB
 - ⚠`N05_wodorki.md` 53 KB
+- ⚠`REV01_powtorka_klasy_7.md` 59 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
 - `FIZ01.json` 1 KB
@@ -468,14 +464,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## narzedzia  (1 pl., 2 KB)
 - `mapa.py` 2 KB
 
-## olimpiada  (4 pl., 111 KB)
+## olimpiada  (4 pl., 112 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
-- `PRIORYTETY.md` 7 KB
+- `PRIORYTETY.md` 9 KB
 - `PRZEKAZANIE.md` 3 KB
 
 ## olimpiada/narzedzia  (1 pl., 7 KB)
 - `mapa_chemia.py` 7 KB
+
+## olimpiada/zrodla  (1 pl., 17 KB)
+- `konkursy_LKO_2026_27_ustalenia.md` 17 KB
 
 ## polski  (18 pl., 2.5 MB)
 - (zwinięte; `ls polski`) — duże:
