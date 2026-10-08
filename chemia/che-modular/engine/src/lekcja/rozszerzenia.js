@@ -204,4 +204,59 @@ pracownia('f03-rozdzielanie-v01','Pracownia: rozdzielanie mieszanin','Najpierw n
   f01Odparowanie:{war:'roztwór soli w parownicy, ogrzewanie',wn:'Woda odparowuje, sól krystalizuje na dnie — odzyskujemy substancję rozpuszczoną (wodę tracimy; chcąc ją odzyskać — destylacja).',bhp:'Gorąca parownica — szczypce; okulary (pryskanie pod koniec).'}},
  'GFX.rx · rozszerzenia.js (F03)');
 
+/* ---------- 8. F05 — konstruktor: izotop / jon / inny pierwiastek + masa atomowa jako średnia ważona ----------
+   Model wielokrotnego użytku (F04, F05, F06, A01…): `f05-izotopy-v01`. Dane izotopów: masy i udziały wg IUPAC (zaokrąglone; do weryfikacji). */
+var IZO={1:['H','wodór',[[1,1.00783,99.9885],[2,2.01410,0.0115],[3,3.01605,0]]],
+ 6:['C','węgiel',[[12,12.0000,98.93],[13,13.00335,1.07],[14,14.00324,0]]],
+ 7:['N','azot',[[14,14.00307,99.636],[15,15.00011,0.364]]],
+ 8:['O','tlen',[[16,15.99491,99.757],[17,16.99913,0.038],[18,17.99916,0.205]]],
+ 11:['Na','sód',[[23,22.98977,100]]],
+ 12:['Mg','magnez',[[24,23.98504,78.99],[25,24.98584,10.00],[26,25.98259,11.01]]],
+ 13:['Al','glin',[[27,26.98154,100]]],
+ 17:['Cl','chlor',[[35,34.96885,75.76],[37,36.96590,24.24]]],
+ 19:['K','potas',[[39,38.96371,93.258],[40,39.96400,0.012],[41,40.96183,6.730]]],
+ 20:['Ca','wapń',[[40,39.96259,96.941],[42,41.95862,0.647],[43,42.95877,0.135],[44,43.95548,2.086],[48,47.95253,0.187]]]};
+var SYM={2:'He',3:'Li',4:'Be',5:'B',9:'F',10:'Ne',14:'Si',15:'P',16:'S',18:'Ar'};
+function supN(n){return String(n).replace(/[0-9]/g,function(d){return '⁰¹²³⁴⁵⁶⁷⁸⁹'[d]})}
+function subN(n){return String(n).replace(/[0-9]/g,function(d){return '₀₁₂₃₄₅₆₇₈₉'[d]})}
+function chg(q){return q===0?'':(Math.abs(q)>1?supN(Math.abs(q)):'')+(q>0?'⁺':'⁻')}
+function pl(x,d){return x.toFixed(d).replace('.',',')}
+V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa',tag:'MODEL',
+ hint:'Dodawaj i zabieraj protony, neutrony i elektrony. Model mówi, co się zmieniło: pierwiastek (Z), izotop (n) czy ładunek (e). Niżej: skąd się bierze masa atomowa z układu okresowego.',
+ foot:'rozszerzenia.js §8 · dane izotopów: IUPAC (zaokrąglone)',
+ build:function(host){host.innerHTML='';host.classList.add('x5');
+  var s={p:17,n:18,e:17},start={p:17,n:18,e:17};
+  var pick=el('div','bar','<b>Start:</b>');host.appendChild(pick);
+  [1,6,8,11,12,17,20].forEach(function(z){var d=IZO[z],b=el('button','o',d[0]);b.type='button';b.onclick=function(){s={p:z,n:d[2][0][0]-z,e:z};start={p:s.p,n:s.n,e:s.e};draw()};pick.appendChild(b)});
+  var ctl=el('div','bar');host.appendChild(ctl);
+  [['p','proton'],['n','neutron'],['e','elektron']].forEach(function(c){
+   var m=el('button','o','− '+c[1]),p=el('button','o','+ '+c[1]);m.type=p.type='button';
+   m.onclick=function(){if(s[c[0]]>(c[0]==='p'?1:0)){s[c[0]]--;draw()}};p.onclick=function(){if(s[c[0]]<(c[0]==='p'?20:c[0]==='n'?30:22)){s[c[0]]++;draw()}};ctl.append(m,p)});
+  var g=el('div','two'),pic=el('div'),txt=el('div');g.append(pic,txt);host.appendChild(g);
+  var avg=el('div');host.appendChild(avg);
+  function sym(z){return IZO[z]?IZO[z][0]:SYM[z]||('Z='+z)}
+  function draw(){var A=s.p+s.n,q=s.p-s.e,X=sym(s.p),d=IZO[s.p];
+   /* rysunek: jądro (p czerwone, n szare) + elektrony na jednym okręgu (rozmieszczenie na powłokach — F07) */
+   var W=260,C=130,svg='<svg viewBox="0 0 '+W+' '+W+'" width="100%" style="max-width:260px;display:block;margin:auto" role="img" aria-label="Model atomu">';
+   svg+='<circle cx="'+C+'" cy="'+C+'" r="104" fill="none" stroke="#9aa6b2" stroke-dasharray="4 4"/>';
+   var N=s.p+s.n;for(var i=0;i<N;i++){var a=i*2.39996,r=4.2*Math.sqrt(i+.5);svg+='<circle cx="'+(C+r*Math.cos(a)).toFixed(1)+'" cy="'+(C+r*Math.sin(a)).toFixed(1)+'" r="4.6" fill="'+(Math.floor((i+1)*s.p/N)>Math.floor(i*s.p/N)?'#d9534f':'#8a949e')+'" stroke="#fff" stroke-width=".8"/>'}
+   for(var k=0;k<s.e;k++){var b=k/s.e*2*Math.PI-Math.PI/2;svg+='<circle cx="'+(C+104*Math.cos(b)).toFixed(1)+'" cy="'+(C+104*Math.sin(b)).toFixed(1)+'" r="5" fill="#2f7bd8"/>'}
+   pic.innerHTML=svg+'</svg><div class="nt" style="text-align:center"><span style="color:#d9534f">●</span> proton &nbsp; <span style="color:#8a949e">●</span> neutron &nbsp; <span style="color:#2f7bd8">●</span> elektron <small>(elektrony na jednym okręgu — powłoki: F07)</small></div>';
+   var iso=d&&d[2].filter(function(x){return x[0]===A})[0];
+   var zm=[];if(s.p!==start.p)zm.push('<b>zmieniła się liczba protonów</b> → to już <b>inny pierwiastek</b> ('+sym(start.p)+' → '+X+')');
+   else{if(s.n!==start.n)zm.push('zmieniła się liczba neutronów → <b>inny izotop</b> tego samego pierwiastka');if(s.e!==start.e)zm.push('zmieniła się liczba elektronów → <b>jon</b>, pierwiastek ten sam')}
+   txt.innerHTML='<div class="eq" style="font-size:22px">'+supN(A)+subN(s.p)+X+chg(q)+'</div>'+
+    '<div class="nt"><b>'+(d?d[1]:X)+'</b> · Z = '+s.p+' · A = '+A+'<br>p⁺ = '+s.p+' · n⁰ = A − Z = '+s.n+' · e⁻ = '+s.e+
+    '<br><b>Ładunek</b> q = p − e = '+(q>0?'+':'')+q+' → '+(q===0?'atom obojętny':q>0?'<b>kation</b> (oddał '+q+' e⁻)':'<b>anion</b> (przyjął '+(-q)+' e⁻)')+
+    '<br><b>Izotop:</b> '+(!d?'— (brak danych w modelu)':iso?(iso[2]>0?'naturalny, udział '+pl(iso[2],iso[2]<1?3:2)+'%':'występuje śladowo / promieniotwórczy'):'nieznany w przyrodzie — jądro nietrwałe lub nie istnieje')+'</div>'+
+    '<div class="nt"><b>Co się zmieniło względem startu:</b><br>'+(zm.length?zm.join('<br>'):'nic — stan startowy (atom obojętny, najczęstszy izotop)')+'</div>';
+   /* średnia ważona */
+   if(!d){avg.innerHTML='';return}
+   var rows=d[2].filter(function(x){return x[2]>0}),M=0,t='';rows.forEach(function(x){var w=x[1]*x[2]/100;M+=w;
+    t+='<tr><td>'+supN(x[0])+d[0]+'</td><td>'+pl(x[1],3)+' u</td><td>'+pl(x[2],x[2]<1?3:2)+'%</td><td>'+pl(w,3)+' u</td><td><div style="height:10px;width:'+Math.max(1,x[2]).toFixed(0)+'%;background:#2f7bd8;border-radius:3px"></div></td></tr>'});
+   avg.innerHTML='<div class="nt" style="margin-top:10px"><b>Masa atomowa '+d[0]+' = średnia ważona mas izotopów</b> (masa × udział, potem suma):</div>'+
+    '<div class="table-wrap"><table><thead><tr><th>izotop</th><th>masa</th><th>udział</th><th>wkład</th><th></th></tr></thead><tbody>'+t+'</tbody></table></div>'+
+    '<div class="eq">Ar('+d[0]+') ≈ '+pl(M,M<100?2:1)+' u'+(rows.length>1?' — wynik leży między masami izotopów, bliżej najczęstszego':' — jeden trwały izotop, więc masa atomowa ≈ jego masa')+'</div>'}
+  draw()}});
+
 })();

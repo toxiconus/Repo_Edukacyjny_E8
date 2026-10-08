@@ -77,6 +77,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `neutralization` | Równania jonowe — cząsteczkowe, jonowe pełne, jonowe skrócone |  |
 | `obtaining-hcl-steps` | Otrzymywanie kwasu solnego — etapy |  |
 | `obtaining-three` | Trzy drogi otrzymywania kwasów |  |
+| `f05-izotopy-v01` | Konstruktor atomu: zmiana p/n/e → inny pierwiastek / izotop / jon + masa atomowa jako średnia ważona (rozszerzenia.js §8) | F05 |
 | `periodic-54` | Układ okresowy — pierwiastki 1–54, modele atomów, tlenki | N01 |
 | `ph-indicators-v03` | Panel pH — wskaźniki, roztwory, drabinka · v0.05 | N02, N03 |
 | `ph-ladder` | Obliczanie pH — od stężenia do pH |  |
@@ -117,6 +118,6 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 
 **Nowa pracownia bez pisania kodu widoku:** `C.EXT_PRACOWNIA(id, tytuł, podpowiedź, [[grupa,[klucze]]…], {klucz:{war,wn,bhp,eq,obs,btn}}, stopka)` (rozszerzenia.js §5). Spec zlewki może mieć `vessel`: `beaker` (domyślnie, wszystkie efekty), `testTube`, `crucible`, `flask`, `cylinder`; `evapDish` rysuje tylko ciecz (bez osadu i pary). Lekcja musi mieć `@model <id-pracowni>` — inaczej przyciski `@zlewka` nie mają gdzie się otworzyć. `noRx:1` zatrzymuje animację (bez zmian w zlewce).
 
-**Braki GFX do zbudowania od podstaw:** magnes (Fe + S), lód pływający, osad i para w parownicy, płomień przy spalaniu w tyglu; modele: izotopy (F05), rozdzielanie mieszanin (F03), energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17).
+**Braki GFX do zbudowania od podstaw:** magnes (Fe + S), lód pływający, osad i para w parownicy, płomień przy spalaniu w tyglu; rozdzielanie mieszanin (F03), energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17).
 
 **Jak dodać nową zlewkę:** w `rozszerzenia.js` dopisz spec do obiektu zlewek (`n` nazwa, `solid`, `l0`/`l1` barwa przed/po — np. `['ind-fenoloftaleina',12]`, `ppt` osad, `gas` H2/O2/CO2/NH3/HCl/H2S/Cl2/NO2…, `bubN` ilość pęcherzyków, `heat`/`T`, `fumes`, `teacher`, `why`, `eq`) i rekord reakcji (bilans sprawdza silnik). Barwy osadów: `ppt-agcl`, `ppt-baso4`, `ppt-caco3`, `ppt-cus`, `ppt-pbs`, `ppt-cu-oh-2`, `ppt-fe-oh-3`… (pełna lista w CHE.COLORS); jony: `ion-cu2`, `ion-fe2`, `ion-fe3`, `ion-ni2`, `ion-cr3`, `ion-mn2`; wskaźniki: `ind-uniwersalny`, `ind-fenoloftaleina`, `ind-oranz-metylowy`, `ind-lakmus`, `ind-bbt`, `ind-kapusta`.
