@@ -167,7 +167,13 @@
   "anon001/s260.js",
   "anon001/s267.js",
   "anon001/s268.js",
-  "anon001/s269.js"
+  "anon001/s269.js",
+  "anon001/s167.js",
+  "anon001/s168.js",
+  "anon001/s169.js",
+  "anon001/s170.js",
+  "anon001/s171.js",
+  "anon001/s172.js"
  ],
  "drop_gfx": {},
  "log": [
@@ -246,6 +252,8 @@
   "anon audit/b/a: -13 → 2.13 MB",
   "mod che-legacy-engine-bridge-v003: -1 → 2.12 MB",
   "anon audit/a/b: -4 → 2.11 MB",
-  "anon audit/b: -9 → 2.10 MB"
+  "anon audit/b: -9 → 2.10 MB",
+  "anon thermo/a/a/b: -2 → 2.09 MB",
+  "anon thermo/a/b: -4 → 2.08 MB"
  ]
 }
