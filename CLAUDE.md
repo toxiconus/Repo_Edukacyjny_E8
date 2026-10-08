@@ -4,7 +4,7 @@ Przeczytaj ten plik jako pierwszy, zanim otworzysz cokolwiek innego. Obowiązuje
 
 ## Kolejność startu
 1. Ten plik.
-2. `chemia/che-modular/PLAN_PRACY.md`: cele, audyt, kroki K0–K8 (praca CHE). Potem `tail PROGRESS.md`. Polecenia, dialekt MD, GFX: `SYSTEM.md` (czytaj tylko potrzebną sekcję).
+2. `chemia/che-modular/PRZEKAZANIE.md` (stan, jak pracować, decyzje użytkownika, następne kroki), potem `PLAN_PRACY.md` w razie potrzeby i `tail PROGRESS.md`. Polecenia, dialekt MD, GFX: `SYSTEM.md` (czytaj tylko potrzebną sekcję).
 3. Tylko pliki dotyczące zadania (np. `lessons-md/gotowe/<KOD>_*.md`, jeden tool z `tools/`).
 
 Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biologia/`, `angielski/`, `chemia/archiwum/` (tylko do odczytu, opis w `archiwum/OPIS.md`), `PODSUMOWANIE.md`/`AUDYT_I_PLAN.md`, jeśli zadanie ich nie dotyczy.
@@ -16,7 +16,7 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Wiele zmian w jednym pliku: jeden skrypt z `assert s.count(old)==1` zamiast wielu edycji.
 - Bez komentowania kroków w czacie. Odpowiedź końcowa po polsku, 1–4 zdania: co zmienione, wynik testów, następny krok.
 - Pytaj tylko, gdy decyzja naprawdę należy do użytkownika.
-- Przy kończącym się limicie: najpierw zapisz stan (commit + wpis w PRZEKAZANIE), potem najmniejszy działający krok.
+- Przy kończącym się limicie: najpierw zapisz stan (commit + wpis w `chemia/che-modular/PRZEKAZANIE.md` i `PROGRESS.md`), potem najmniejszy działający krok.
 
 ## Git
 - Gałąź pracy CHE: `claude/che-lekcje`. Push tylko na gałęzie `claude/...` (push na `main` kończy się 403).
