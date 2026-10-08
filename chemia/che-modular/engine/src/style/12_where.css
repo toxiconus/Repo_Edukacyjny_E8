@@ -1,0 +1,65 @@
+
+
+:where(.viz-card){--k-bd:var(--border,#e5e9ee);--k-bd2:var(--border-strong,#cdd5dd);--k-bg:var(--surface,#fff);--k-soft:var(--surface-soft,#f6f8fa);--k-tx:var(--text,#18212b);--k-mut:var(--text-muted,#667382);--k-ac:var(--accent,#0d6868);--k-acs:var(--accent-soft,#e6f2f1);--k-acl:var(--accent-line,#b8d8d6)}
+.viz-card{border:1px solid var(--border,#e5e9ee);border-radius:14px;background:var(--surface,#fff);padding:12px 14px 14px;margin:12px 0;color:var(--text,#18212b);min-width:0}
+.viz-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 10px}
+.viz-head h4{margin:0;font:700 15px/1.3 var(--sans,system-ui,-apple-system,'Segoe UI',sans-serif);letter-spacing:-.005em}
+.viz-tag{flex:none;padding:2px 8px;border-radius:999px;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text-muted,#667382);font:700 10px/1.6 var(--mono,ui-monospace,monospace);letter-spacing:.06em;text-transform:uppercase}
+.viz-tag.motion{background:#e6f2f1;border-color:#b8d8d6;color:#0d6868}
+.viz-tag.amb{background:#fff3e0;border-color:#e6b878;color:#8a4a00}
+.viz-tag.und{background:#e8f0fa;border-color:#a9c3e3;color:#1f4f8a}
+.viz-tag.e8{background:#e6f3ea;border-color:#9ccaaa;color:#1f6a3d}
+.viz-status{flex:none;margin-left:6px;padding:2px 8px;border-radius:999px;border:1px solid;font:700 10px/1.6 var(--mono,ui-monospace,monospace);letter-spacing:.04em;white-space:nowrap}.viz-status-rozwijac{background:#e6f3ea;border-color:#9ccaaa;color:#1f6a3d}.viz-status-engine{background:#fff3e0;border-color:#e6b878;color:#8a4a00}.viz-status-dubel{background:#fdecec;border-color:#e3a9a9;color:#9b2c2c}
+.viz-tag.za{background:#fdecea;border-color:#e3a79b;color:#9b2c1a}
+.viz-body{min-width:0}
+
+
+:where(.viz-card) .r,:where(.viz-card) .choice-row,:where(.viz-card) .chips{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:8px 0}
+:where(.viz-card) .r label{font:600 12px var(--sans,system-ui);color:var(--text-muted,#667382)}
+:where(.viz-card) .r > b,:where(.viz-card) .r output{font-family:var(--mono,ui-monospace,monospace);font-weight:700}
+
+
+:where(.viz-card, .che-viz-ov-body, .che-viz-focus) button{
+  appearance:none;-webkit-appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  min-height:36px;padding:6px 13px;border:1px solid var(--border-strong,#cdd5dd);border-radius:10px;
+  background:var(--surface,#fff);color:var(--text,#18212b);
+  font:600 13px/1.2 var(--sans,system-ui,-apple-system,'Segoe UI',sans-serif);
+  cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+  transition:background .12s,border-color .12s,box-shadow .12s,transform .06s}
+:where(.viz-card, .che-viz-ov-body, .che-viz-focus) button:hover{background:var(--accent-soft,#e6f2f1);border-color:var(--accent-line,#b8d8d6)}
+:where(.viz-card, .che-viz-ov-body, .che-viz-focus) button:active{transform:scale(.97)}
+:where(.viz-card, .che-viz-ov-body, .che-viz-focus) button:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+:where(.viz-card, .che-viz-ov-body, .che-viz-focus) button:disabled{opacity:.45;cursor:not-allowed;transform:none}
+
+:where(.viz-card) button.on,:where(.viz-card) button.active,:where(.viz-card) button.sel,:where(.viz-card) button[aria-pressed="true"],:where(.viz-card) button[aria-selected="true"]{
+  background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff;box-shadow:0 1px 0 rgba(0,0,0,.08) inset}
+
+:where(.viz-card) button.go,:where(.viz-card) button.play,:where(.viz-card) button.primary{background:var(--accent,#0d6868);border-color:var(--accent-dark,#084848);color:#fff}
+:where(.viz-card) button.go:hover,:where(.viz-card) button.play:hover,:where(.viz-card) button.primary:hover{background:var(--accent-dark,#084848)}
+
+:where(.viz-card) .chip,:where(.viz-card) .chips > button,:where(.viz-card) .choice-row > button{min-height:34px;border-radius:999px;padding:5px 12px}
+:where(.viz-card) .reset{color:var(--text-muted,#667382)}
+
+
+:where(.viz-card) select,:where(.viz-card) input[type="number"],:where(.viz-card) input[type="text"]{min-height:36px;padding:5px 10px;border:1px solid var(--border-strong,#cdd5dd);border-radius:10px;background:var(--surface,#fff);color:var(--text,#18212b);font:600 13px var(--sans,system-ui)}
+:where(.viz-card) input[type="range"]{accent-color:var(--accent,#0d6868);height:28px;min-width:120px;flex:1 1 140px;max-width:100%;touch-action:pan-y}
+
+
+:where(.viz-card) .note,:where(.viz-card) .lab-note{margin:10px 0;padding:9px 12px;border:1px solid var(--accent-line,#b8d8d6);border-left:4px solid var(--accent,#0d6868);border-radius:10px;background:var(--accent-soft,#e6f2f1);font:13px/1.5 var(--sans,system-ui);color:var(--text,#18212b)}
+:where(.viz-card) .muted,:where(.viz-card) .subtle{color:var(--text-muted,#667382);font-size:12.5px}
+:where(.viz-card) .mini-readout,:where(.viz-card) .score,:where(.viz-card) .prog{font:700 13px var(--mono,ui-monospace,monospace)}
+:where(.viz-card) .step{margin:8px 0;padding:9px 12px;border:1px solid var(--border,#e5e9ee);border-radius:10px;background:var(--surface-soft,#f6f8fa)}
+:where(.viz-card) .metric-grid{margin-top:10px}
+:where(.viz-card) canvas{max-width:100%;border-radius:10px}
+:where(.viz-card) table{width:100%;border-collapse:collapse;font-size:13px}
+:where(.viz-card) th,:where(.viz-card) td{padding:6px 8px;border-bottom:1px solid var(--border,#e5e9ee);text-align:left}
+
+
+@media (hover:none),(max-width:560px){
+  :where(.viz-card, .che-viz-ov-body, .che-viz-focus) button{min-height:42px;padding:8px 14px;font-size:14px}
+  :where(.viz-card) .chip,:where(.viz-card) .chips > button,:where(.viz-card) .choice-row > button{min-height:40px}
+  .viz-card{padding:10px 10px 12px;border-radius:12px}
+}
+@media (prefers-color-scheme:dark){
+  html[data-theme="dark"] .viz-tag.motion{background:#12302f;border-color:#1f5a58;color:#8fd6d1}
+}

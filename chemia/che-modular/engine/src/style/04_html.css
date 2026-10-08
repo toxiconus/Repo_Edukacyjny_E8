@@ -1,0 +1,17 @@
+
+
+html:not([data-che-ui="ready"]) body > .app,
+html:not([data-che-ui="ready"]) #che-route-atlas,
+html:not([data-che-ui="ready"]) #che-route-engine,
+html:not([data-che-ui="ready"]) #che-route-lessons,
+html:not([data-che-ui="ready"]) #che-route-db,
+html:not([data-che-ui="ready"]) #che-route-visual,
+html:not([data-che-ui="ready"]) #help-btn,
+html:not([data-che-ui="ready"]) #lesson-btn,
+html:not([data-che-ui="ready"]) #che-bridge-badge,
+html:not([data-che-ui="ready"]) #lesson-bar,
+html:not([data-che-ui="ready"]) .drawer,
+html:not([data-che-ui="ready"]) .drawer-bg,
+html:not([data-che-ui="ready"]) .mbar,
+html:not([data-che-ui="ready"]) .sb-bg{display:none!important;visibility:hidden!important}
+html:not([data-che-ui="ready"]) body{overflow:hidden}

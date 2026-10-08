@@ -20,7 +20,10 @@ from gfx_join import join  # noqa: E402
 MOD = ROOT / "modules"
 CATALOG = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
 BY_INDEX = {c["index"]: c for c in CATALOG}
-GFX_MODS = {p.stem for p in (ROOT / "engine/src/gfx/_szkielet").glob("*.js")}
+_SK = ROOT / "engine/src/gfx/_szkielet"
+GFX_MODS = {p.stem for p in _SK.glob("*.js")} | {p.name for p in _SK.iterdir() if p.is_dir()}
+SRC = ROOT / "engine/src"
+from scal import scal  # noqa: E402
 MONO_NAME = "CHE_lab_wizualizacje_v0_57_GFX16.html"
 LESSON_SRC = ["che-n01-src", "che-n02-src", "che-kw-src", "che-sole-src", "fiz-elektro-src"]
 
@@ -28,14 +31,30 @@ LESSON_SRC = ["che-n01-src", "che-n02-src", "che-kw-src", "che-sole-src", "fiz-e
 def module_body(c, gfx_allow=None, przedmiot="chemia", sections=None):
     if c["id"] in GFX_MODS:
         return join(c["id"], gfx_allow, przedmiot)
-    if c["id"] == "_anon_001" and sections is not None:
+    if c["id"] == "_anon_001":
+        if sections is None:
+            sections = [x["file"].split("/", 1)[1] for x in json.loads((ROOT / "sections/anon001_catalog.json").read_text(encoding="utf-8"))]
         return "".join((ROOT / "sections/anon001" / f).read_text(encoding="utf-8") for f in sections)  # kolejność jak w katalogu
-    return (MOD / c["file"]).read_text(encoding="utf-8")
+    f, d = SRC / "moduly" / f'{c["id"]}.js', SRC / "moduly" / c["id"]
+    if d.is_dir():
+        return scal(d)
+    if f.exists():
+        return f.read_text(encoding="utf-8")
+    return (MOD / c["file"]).read_text(encoding="utf-8")   # zapas: moduł z ekstrakcji
+
+
+def skeleton():
+    """HTML labu: engine/src/lab/szkielet.html + CSS z engine/src/style (zapas: modules/_lab_skeleton.html)."""
+    p = SRC / "lab/szkielet.html"
+    if not p.exists():
+        return (MOD / "_lab_skeleton.html").read_text(encoding="utf-8")
+    return re.sub(r"/\*@@CSS ([\w.-]+)@@\*/", lambda m: (SRC / "style" / m.group(1)).read_text(encoding="utf-8"),
+                  p.read_text(encoding="utf-8"))
 
 
 def lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None):
     drop = drop or set()
-    skel = (MOD / "_lab_skeleton.html").read_text(encoding="utf-8")
+    skel = skeleton()
 
     def rep(m):
         c = BY_INDEX[int(m.group(1))]
@@ -83,11 +102,12 @@ def sha(s):
 
 def test():
     bad = 0
-    cat = json.loads((ROOT / "sections/anon001_catalog.json").read_text(encoding="utf-8"))
-    joined = "".join((ROOT / "sections" / x["file"]).read_text(encoding="utf-8") for x in cat)
-    ok = joined == (MOD / "_anon_001.js").read_text(encoding="utf-8")
-    bad += not ok
-    print(("OK " if ok else "FAIL ") + f"sekcje _anon_001 ({len(cat)}) == moduł")
+    if (MOD / "_anon_001.js").exists():
+        cat = json.loads((ROOT / "sections/anon001_catalog.json").read_text(encoding="utf-8"))
+        joined = "".join((ROOT / "sections" / x["file"]).read_text(encoding="utf-8") for x in cat)
+        ok = joined == (MOD / "_anon_001.js").read_text(encoding="utf-8")
+        bad += not ok
+        print(("OK " if ok else "FAIL ") + f"sekcje _anon_001 ({len(cat)}) == moduł")
     lab = lab_html()
     mono = Path("/tmp/che_mono.html")
     if mono.exists():

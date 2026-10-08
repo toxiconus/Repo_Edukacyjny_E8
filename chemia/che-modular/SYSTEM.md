@@ -4,23 +4,30 @@ Ten plik zastępuje rozproszone opisy z ZIP (`MAKRA*.md`, `MD_CEGIELKI.md`, `SIL
 
 ## 1. Mapa
 
+Silnik jest w gicie jako **źródła** (od 2026-10-08); monolit v0_57 służy już tylko do testu „lab == monolit”.
+
 | Warstwa | Gdzie | Edytujemy? |
 |---|---|---|
-| Treść lekcji (MD) | `lessons-md/<KOD>/LEKCJA.md`; kanon v0_59: `lessons-md/gotowe/` | **tak** |
+| Treść lekcji (MD) | `lessons-md/gotowe/<KOD>_*.md` | **tak** |
 | Szablon lekcji | `lessons-md/_SZABLON/LEKCJA.md` | rzadko |
-| Rejestr zależności | `engine/registry/*.json` | przy nowej lekcji / elemencie |
-| GFX i widoki per element | `engine/src/gfx/{vessels,effects,scenes,rx,views}/<id>.js` | **tak** (nowe/ulepszone) |
-| Wspólny kod GFX/VIEW | `engine/src/gfx/_szkielet/*.js` (markery `/*@@GFX rodzaj/id@@*/`) | ostrożnie |
-| Layout (header, TOC) | `engine/src/layout/lesson-shell.{css,js}` | tak — działa we wszystkich lekcjach |
-| Pozostałe moduły silnika | `modules/*.js` — odtwarzane z monolitu, **poza gitem** | jeszcze nie (D5) |
-| Dane w sekcjach | `sections/anon001/m*.js` + katalog tagów | jeszcze nie (K7) |
-| Wyniki | `dist/`, `lessons-md/*/build/` — poza gitem | nigdy ręcznie |
+| Wygląd i rozszerzenia lekcji | `engine/src/lekcja/` (lekcja.css/js, `rozszerzenia.js` — nowe modele, pracownie, zlewki) | **tak** |
+| Moduły silnika | `engine/src/moduly/<id>.js`; duże (≥30 KB) pocięte: `engine/src/moduly/<id>/NN_*.js` + `_kolejnosc.txt` | tak, małymi krokami |
+| Dane `_anon_001` | `sections/anon001/sNNN.js` (280 sekcji) + `anon001_catalog.json` (tagi) | tak (K7: podział domenami) |
+| GFX i widoki per element | `engine/src/gfx/<przedmiot>/<rodzaj>/<id>.js` | **tak** |
+| Wspólny kod GFX/VIEW | `engine/src/gfx/_szkielet/<moduł>/NN_*.js` (markery `/*@@GFX rodzaj/id@@*/`) | ostrożnie |
+| HTML i CSS labu | `engine/src/lab/szkielet.html` (markery `/*@@MOD n@@*/`, `/*@@CSS plik@@*/`) + `engine/src/style/NN_*.css` | tak |
+| Layout lekcji (prototyp shell) | `engine/src/layout/lesson-shell.{css,js}` | tak |
+| Rejestr zależności | `engine/registry/*.json`, profile odchudzania `engine/registry/profile/` | przy nowej lekcji / elemencie |
+| Ekstrakcja z monolitu | `modules/` (poza gitem; `sh tools/pobierz_moduly.sh`) | nigdy — tylko weryfikacja |
+| Wyniki | `dist/` — poza gitem | nigdy ręcznie |
+
+**Części plików:** `tools/podziel.mjs <plik> <katalog> [KB]` tnie na granicach instrukcji (bezstratnie), `tools/scal.py` składa. Złożenie wszystkich źródeł = monolit bajt w bajt (`python3 tools/silnik.py`). **Nie uruchamiać ponownie** `anon_split.mjs`, `gfx_split.mjs`, `zrodla_silnika.py` — nadpisałyby edytowane źródła (to narzędzia jednorazowej ekstrakcji).
 
 ## 2. Polecenia (jedno wejście: `tools/che.py`)
 
 ```
 cd chemia/che-modular
-python3 tools/che.py init                 # raz na sesję: moduły z monolitu, sekcje, GFX, testy bezstratności
+python3 tools/che.py init                 # raz na sesję: acorn + testy bezstratności (monolit pobierany tylko do testu)
 python3 tools/che.py lekcje [plik.md]     # pełny silnik z modułów + lekcje MD → dist/, dist/jeden_plik/
 python3 tools/che.py silnik               # odchudzone silniki z profili → dist/viz/<profil>.js
 python3 tools/che.py test [--szybki]      # bezstratność + render 6 lekcji (--szybki: bez przeglądarki)

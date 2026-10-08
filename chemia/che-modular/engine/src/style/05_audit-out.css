@@ -1,0 +1,7 @@
+
+#audit-out, #api-out, #ov-audit, pre.che-pre, .che-engine-log {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+}

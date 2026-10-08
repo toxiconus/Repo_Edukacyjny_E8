@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """che.py — jedno polecenie do całej pracy z CHE (uruchamiaj z chemia/che-modular).
 
-  python3 tools/che.py init               moduły z monolitu + podział GFX + test (raz na sesję)
+  python3 tools/che.py init               raz na sesję: acorn + testy bezstratności
   python3 tools/che.py nowa KOD nazwa     nowa lekcja z szablonu → lessons-md/KOD/LEKCJA.md
   python3 tools/che.py parity KOD         MD ↔ rejestr: czego brakuje w silniku
   python3 tools/che.py lekcje [plik.md]   silnik z modułów + lekcje MD (kanon) → dist/ i dist/jeden_plik/
@@ -26,13 +26,12 @@ def run(*cmd):
 
 
 def init():
-    run("sh", str(T / "pobierz_moduly.sh"))
+    # źródła silnika są w gicie (engine/src, sections); monolit tylko do testu „lab == monolit”
+    if not Path("/tmp/che_mono.html").exists():
+        run("sh", str(T / "pobierz_moduly.sh"))
     if not (T / "node_modules" / "acorn").exists():
         run("npm", "i", "-s", "--prefix", str(T))
-    run("node", str(T / "anon_split.mjs"))   # sekcje _anon_001 (bezstratnie, deterministycznie)
-    if not (ROOT / "engine/src/gfx/_szkielet").exists():
-        run("node", str(T / "gfx_split.mjs"))
-    test()
+    test("--szybki")
 
 
 def nowa(kod, nazwa="lekcja"):

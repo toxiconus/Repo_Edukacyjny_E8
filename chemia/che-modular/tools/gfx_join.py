@@ -13,6 +13,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 GFX = ROOT / "engine" / "src" / "gfx"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from scal import scal  # noqa: E402
+
 MARK = re.compile(r"/\*@@GFX ([\w.-]+)/([\w.-]+)@@\*/")
 
 
@@ -32,7 +35,8 @@ def find(kind: str, fid: str, przedmiot: str = "chemia") -> Path:
 
 
 def join(mod: str, allow: dict | None = None, przedmiot: str = "chemia") -> str:
-    skel = (GFX / "_szkielet" / f"{mod}.js").read_text(encoding="utf-8")
+    d = GFX / "_szkielet" / mod
+    skel = scal(d) if d.is_dir() else (GFX / "_szkielet" / f"{mod}.js").read_text(encoding="utf-8")
 
     def rep(m):
         kind, fid = m.group(1), m.group(2)
@@ -46,8 +50,8 @@ def join(mod: str, allow: dict | None = None, przedmiot: str = "chemia") -> str:
 def test() -> int:
     cat = {c["id"]: c for c in json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))}
     bad = 0
-    for p in sorted((GFX / "_szkielet").glob("*.js")):
-        mod = p.stem
+    mods = sorted({p.stem for p in (GFX / "_szkielet").glob("*.js")} | {p.name for p in (GFX / "_szkielet").iterdir() if p.is_dir()})
+    for mod in mods:
         s = join(mod)
         sha = hashlib.sha1(s.encode("utf-8")).hexdigest()[:12]
         ok = sha == cat[mod]["sha1"]

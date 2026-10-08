@@ -1,0 +1,1 @@
+window.__N03_BUILD__="lite";

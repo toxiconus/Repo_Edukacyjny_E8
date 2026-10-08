@@ -37,7 +37,7 @@ Czytaj ten plik zaraz po `CLAUDE.md`; zasady i polecenia: `SYSTEM.md`. Dziennik 
 - **D2.** Treść lekcji v0_59 (`gotowe/*.md`) to **kanon treści**. Nie przepisujemy ręcznie: builder ma rozumieć stare dyrektywy jako aliasy makr (jeden dialekt docelowy, konwersja automatyczna).
 - **D3.** Kolejność: **działa → test → chudnie**. Żadnego odchudzania bez testu renderu.
 - **D4.** Packer nie może wycinać kodu „po tekście”, jeśli psuje składnię: wycinamy całe wywołania z kontrolą składni (`node --check`) albo rejestrację wyłączamy flagą.
-- **D5.** `modules/` stają się źródłem w gicie dopiero, gdy zaczniemy je edytować (moduł edytowany → commit jego pliku).
+- **D5.** ✅ 2026-10-08: silnik jest w gicie jako źródła (`engine/src/moduly`, `engine/src/gfx`, `engine/src/lab`, `engine/src/style`, `sections/`); duże pliki pocięte na części ≤ ~30 KB (`podziel.mjs`/`scal.py`). `modules/` tylko do weryfikacji z monolitem.
 
 ## 4. Kroki (każdy kończy się testem + commitem + wpisem w PROGRESS)
 
