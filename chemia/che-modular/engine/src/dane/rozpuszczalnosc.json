@@ -1,0 +1,428 @@
+{
+ "SOLUBILITY": {
+  "AgCl": {
+   "Ksp": 1.77e-10,
+   "water20_gL": 0.00019
+  },
+  "CaCO3": {
+   "Ksp": 3.3e-09,
+   "water20_gL": 0.013
+  },
+  "NaCl": {
+   "Ksp": null,
+   "water20_gL": 359
+  },
+  "CaCl2": {
+   "Ksp": null,
+   "water20_gL": 745
+  },
+  "CuSO4": {
+   "Ksp": null,
+   "water20_gL": 320
+  }
+ },
+ "SOLUBILITY_TABLE": {
+  "version": "1.0",
+  "temperatureC": 20,
+  "legend": {
+   "R": "dobrze rozpuszczalny (> 1 g / 100 g H₂O)",
+   "T": "trudno rozpuszczalny (0,1–1 g)",
+   "N": "praktycznie nierozpuszczalny (< 0,1 g)",
+   "—": "nie istnieje w roztworze wodnym / rozkłada się"
+  },
+  "cations": [
+   {
+    "id": "Na",
+    "ion": "Na⁺"
+   },
+   {
+    "id": "K",
+    "ion": "K⁺"
+   },
+   {
+    "id": "NH4",
+    "ion": "NH₄⁺"
+   },
+   {
+    "id": "Mg",
+    "ion": "Mg²⁺"
+   },
+   {
+    "id": "Ca",
+    "ion": "Ca²⁺"
+   },
+   {
+    "id": "Ba",
+    "ion": "Ba²⁺"
+   },
+   {
+    "id": "Al",
+    "ion": "Al³⁺"
+   },
+   {
+    "id": "Zn",
+    "ion": "Zn²⁺"
+   },
+   {
+    "id": "Mn",
+    "ion": "Mn²⁺"
+   },
+   {
+    "id": "Fe2",
+    "ion": "Fe²⁺"
+   },
+   {
+    "id": "Fe3",
+    "ion": "Fe³⁺"
+   },
+   {
+    "id": "Ni",
+    "ion": "Ni²⁺"
+   },
+   {
+    "id": "Cu",
+    "ion": "Cu²⁺"
+   },
+   {
+    "id": "Ag",
+    "ion": "Ag⁺"
+   },
+   {
+    "id": "Pb",
+    "ion": "Pb²⁺"
+   },
+   {
+    "id": "Sn",
+    "ion": "Sn²⁺"
+   }
+  ],
+  "anions": [
+   {
+    "id": "OH",
+    "ion": "OH⁻",
+    "name": "wodorotlenek"
+   },
+   {
+    "id": "Cl",
+    "ion": "Cl⁻",
+    "name": "chlorek"
+   },
+   {
+    "id": "Br",
+    "ion": "Br⁻",
+    "name": "bromek"
+   },
+   {
+    "id": "I",
+    "ion": "I⁻",
+    "name": "jodek"
+   },
+   {
+    "id": "NO3",
+    "ion": "NO₃⁻",
+    "name": "azotan(V)"
+   },
+   {
+    "id": "CH3COO",
+    "ion": "CH₃COO⁻",
+    "name": "octan"
+   },
+   {
+    "id": "SO4",
+    "ion": "SO₄²⁻",
+    "name": "siarczan(VI)"
+   },
+   {
+    "id": "SO3",
+    "ion": "SO₃²⁻",
+    "name": "siarczan(IV)"
+   },
+   {
+    "id": "CO3",
+    "ion": "CO₃²⁻",
+    "name": "węglan"
+   },
+   {
+    "id": "PO4",
+    "ion": "PO₄³⁻",
+    "name": "fosforan(V)"
+   },
+   {
+    "id": "S",
+    "ion": "S²⁻",
+    "name": "siarczek"
+   },
+   {
+    "id": "SiO3",
+    "ion": "SiO₃²⁻",
+    "name": "krzemian"
+   },
+   {
+    "id": "F",
+    "ion": "F⁻",
+    "name": "fluorek"
+   },
+   {
+    "id": "HCO3",
+    "ion": "HCO₃⁻",
+    "name": "wodorowęglan"
+   }
+  ],
+  "table": {
+   "OH": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "N",
+    "Ca": "T",
+    "Ba": "R",
+    "Al": "N",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "N",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "—",
+    "Pb": "N",
+    "Sn": "N"
+   },
+   "Cl": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "N",
+    "Pb": "T",
+    "Sn": "R"
+   },
+   "Br": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "N",
+    "Pb": "T",
+    "Sn": "R"
+   },
+   "I": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "—",
+    "Ni": "R",
+    "Cu": "—",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "R"
+   },
+   "NO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "R",
+    "Pb": "R",
+    "Sn": "—"
+   },
+   "CH3COO": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "T",
+    "Pb": "R",
+    "Sn": "—"
+   },
+   "SO4": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "T",
+    "Ba": "N",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "T",
+    "Pb": "N",
+    "Sn": "R"
+   },
+   "SO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "T",
+    "Ca": "N",
+    "Ba": "N",
+    "Al": "—",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "—",
+    "Ni": "N",
+    "Cu": "—",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "—"
+   },
+   "CO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "N",
+    "Ca": "N",
+    "Ba": "N",
+    "Al": "—",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "—",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "—"
+   },
+   "PO4": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "N",
+    "Ca": "N",
+    "Ba": "N",
+    "Al": "N",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "N",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "N"
+   },
+   "S": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "—",
+    "Ca": "—",
+    "Ba": "R",
+    "Al": "—",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "—",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "N"
+   },
+   "SiO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "—",
+    "Mg": "N",
+    "Ca": "N",
+    "Ba": "N",
+    "Al": "N",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "—",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "—"
+   },
+   "F": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "N",
+    "Ca": "N",
+    "Ba": "T",
+    "Al": "T",
+    "Zn": "T",
+    "Mn": "T",
+    "Fe2": "T",
+    "Fe3": "T",
+    "Ni": "T",
+    "Cu": "T",
+    "Ag": "R",
+    "Pb": "T",
+    "Sn": "R"
+   },
+   "HCO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "—",
+    "Zn": "—",
+    "Mn": "—",
+    "Fe2": "R",
+    "Fe3": "—",
+    "Ni": "—",
+    "Cu": "—",
+    "Ag": "—",
+    "Pb": "—",
+    "Sn": "—"
+   }
+  },
+  "source": "szkolna tabela rozpuszczalności (20 °C) — dane edukacyjne; F⁻ i SiO₃²⁻ orientacyjnie",
+  "status": "EDUCATIONAL"
+ }
+}

@@ -2,12 +2,13 @@
 """dane_eksport.py — CHE.DATA z działającego silnika → czyste pliki JSON wg dziedzin.
 
 Buduje lab (silnik.lab_html()), uruchamia go w Chromium i serializuje każdy klucz CHE.DATA.
-Klucz trafia do dziedziny podmodułu sekcji, która go pierwsza tworzy (engine/registry/mapa_sekcji.json).
+Klucz trafia do dziedziny wg znaczenia nazwy (REGULY); podmoduł sekcji, która go tworzy → "zrodlo" w indeksie.
 Wyjście: engine/src/dane/<dziedzina>.json + engine/src/dane/_indeks.json (klucz → dziedzina, sha1, czysty?).
 Klucze z funkcjami / cyklami / undefined / NaN nie są „czyste” — zapisywane z oznaczeniami {"$fn": src} itd.
 i flagą czysty=false (do ręcznego przejrzenia). Silnika NIE zmienia — to etap eksportu + weryfikacji.
   python3 tools/dane_eksport.py            # eksport
   python3 tools/dane_eksport.py --sprawdz  # tylko porównanie z istniejącymi plikami (sha1)
+  python3 tools/dane_eksport.py --lekcje   # które klucze czyta każda lekcja → engine/registry/dane_lekcji.json
 """
 import hashlib, json, re, subprocess, sys
 from pathlib import Path
@@ -65,6 +66,30 @@ def uruchom():
     return json.loads(raw.read_text(encoding="utf-8"))
 
 
+# Dziedzina wg znaczenia klucza (pierwsza pasująca reguła). Sekcja, która klucz tworzy, idzie do _indeks.json jako "zrodlo"
+# (podmoduły _anon_001 mieszają dane: np. ATOM_META powstaje w sekcji „dane-jadrowe”).
+REGULY = [
+    ("nauka", r"^[a-z]"),  # grupy referencyjne pisane małymi literami (acidBase, redox, organic…)
+    ("weryfikacja", r"SOURCE_REGISTRY|_V\d{3}$|AUDIT|LEDGER|VERIF|CONTRACT|PROVENANCE|NORMALIZATION|^SCIENCE_|_REFERENCE$|REFERENCE_"),
+    ("jadrowe", r"NUCLEAR|DECAY|HALF_LIFE|RADIO"),
+    ("pierwiastki", r"^ELEM|^ATOM|ISOTOPE|CIAAW|IONIZATION|QUANTUM|PHYSICAL_PROPS|ELECTRON|PERIODIC|ORBITAL|SHELL"),
+    ("rozpuszczalnosc", r"SOLUBILITY"),
+    ("termo-redoks", r"THERMO|REDOX|ELECTROCHEM|ENTHALP|KINETICS"),
+    ("reakcje", r"REACTION|EQUILIBRI"),
+    ("kwasy-zasady", r"ACID|BASE|INDICATOR|^PH_|METAL_|HYDROXIDE|SALT"),
+    ("substancje", r"SUBSTANCE|MOLECULE|^MOL\d|^MOL3D|^MOL2D|COMPOUND|OXIDE|COLOR|HYDRIDE"),
+    ("organiczna", r"FUNCTIONAL_GROUP|ORGANIC|BOND_TYPE"),
+    ("edukacja", r"^E8$|SCHOOL|^LO_|^EDU|EDUCATION|CONCEPT|TIMELINE|MODEL_LIMITS|LESSON|GLOSS"),
+]
+
+
+def dziedzina(k):
+    for d, r in REGULY:
+        if re.search(r, k):
+            return d
+    return "inne"
+
+
 def dziedzina_kluczy():
     m = json.loads((ROOT / "engine/registry/mapa_sekcji.json").read_text(encoding="utf-8"))
     pierwsza = {}
@@ -78,20 +103,42 @@ def sha(v):
     return hashlib.sha1(json.dumps(v, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
 
 
+def lekcje():
+    """Odczyty CHE.DATA per lekcja (dist/jeden_plik, sonda w test_lekcje.cjs) → engine/registry/dane_lekcji.json."""
+    kl = TMP / "klucze_lekcji.json"
+    TMP.mkdir(parents=True, exist_ok=True)
+    subprocess.run(["node", str(ROOT / "tools/test_lekcje.cjs"), "--cicho", "--klucze=" + str(kl)], check=True, cwd=ROOT)
+    ix = json.loads((OUT / "_indeks.json").read_text(encoding="utf-8"))
+    raw = json.loads(kl.read_text(encoding="utf-8"))
+    res = {}
+    for plik, kk in sorted(raw.items()):
+        kod = plik.split("_")[0]
+        dz = sorted({ix.get(k, {}).get("dziedzina", "?") for k in kk})
+        res[kod] = {"dziedziny": dz, "klucze": sorted(kk)}
+    wsp = set.intersection(*(set(v["klucze"]) for v in res.values())) if res else set()
+    out = {"opis": "Klucze CHE.DATA czytane przez lekcję (pakiet odchudzony). Generuje: python3 tools/che.py dane --lekcje",
+           "wspolne": sorted(wsp), "lekcje": res}
+    (ROOT / "engine/registry/dane_lekcji.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"lekcji: {len(res)}; klucze wspólne dla wszystkich: {len(wsp)}; "
+          f"różne: {sorted(set().union(*(set(v['klucze']) for v in res.values())) - wsp)}")
+
+
 def main():
+    if "--lekcje" in sys.argv:
+        return lekcje()
     sprawdz = "--sprawdz" in sys.argv
     dane = uruchom()
     dz = dziedzina_kluczy()
     pliki, indeks = {}, {}
     for k, x in dane.items():
-        d = dz.get(k, "inne")
+        d = dziedzina(k)
         js = json.dumps(x["v"], ensure_ascii=False)
         js2, n = CZAS.subn('"$czas"', js)
         if n:  # znaczniki czasu tworzone przy starcie silnika — klucz generowany w locie
             x["v"], x["f"]["czas"] = json.loads(js2), n
         czysty = not (x["f"]["fn"] or x["f"]["cykl"] or x["f"]["inne"]) and "$undef" not in json.dumps(x["v"]) and "$num" not in json.dumps(x["v"])
         pliki.setdefault(d, {})[k] = x["v"]
-        indeks[k] = {"dziedzina": d, "sha1": sha(x["v"]), "czysty": czysty, **({"flagi": {a: b for a, b in x["f"].items() if b}} if any(x["f"].values()) else {})}
+        indeks[k] = {"dziedzina": d, "zrodlo": dz.get(k, "?"), "sha1": sha(x["v"]), "czysty": czysty, **({"flagi": {a: b for a, b in x["f"].items() if b}} if any(x["f"].values()) else {})}
     if sprawdz:
         stary = json.loads((OUT / "_indeks.json").read_text(encoding="utf-8"))
         rozne = [k for k in indeks if stary.get(k, {}).get("sha1") != indeks[k]["sha1"]]
@@ -99,6 +146,8 @@ def main():
         print(f"klucze: {len(indeks)}; różne: {len(rozne)} {rozne[:10]}; brak w silniku: {brak[:10]}")
         sys.exit(1 if rozne or brak else 0)
     OUT.mkdir(parents=True, exist_ok=True)
+    for f in OUT.glob("*.json"):
+        f.unlink()
     for d, obj in sorted(pliki.items()):
         (OUT / f"{d}.json").write_text(json.dumps(obj, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "_indeks.json").write_text(json.dumps(indeks, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")

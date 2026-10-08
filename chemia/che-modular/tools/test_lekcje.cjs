@@ -2,7 +2,7 @@
    Użycie: node tools/test_lekcje.cjs [--cicho] [plik.html ...]   (domyślnie dist/jeden_plik/*.html)
    Sprawdza: treść lekcji, błędy konsoli (bez sieci), ostrzeżenia CHE.CONSISTENCY, ekran startowy,
    przewijanie w bok, modele (@model) zarejestrowane i zamontowane, pracownie (@zlewka) zarejestrowane
-   i każda otwiera się bez błędu; w każdym modelu klik w 3 przyciski i zmiana selecta. Jedna linia na lekcję; kod wyjścia 1 = FAIL. --cicho: tylko FAIL. */
+   i każda otwiera się bez błędu; w każdym modelu klik w 3 przyciski i zmiana selecta. Jedna linia na lekcję; kod wyjścia 1 = FAIL. --cicho: tylko FAIL. --klucze=plik.json: zapis odczytów CHE.DATA per lekcja. */
 const path = require('path'), fs = require('fs'), pw = require('playwright');
 const args = process.argv.slice(2), cicho = args.includes('--cicho');
 const dir = path.join(__dirname, '..', 'dist', 'jeden_plik');
@@ -13,6 +13,12 @@ const zrzut = (args.find(a => a.startsWith('--zrzut=')) || '').slice(8);
 const wzorzec = (args.find(a => a.startsWith('--wzorzec=')) || '').slice(10);
 const WZ = wzorzec && fs.existsSync(wzorzec) ? JSON.parse(fs.readFileSync(wzorzec, 'utf8')) : null;
 const ZR = {};
+// --klucze=plik.json: które klucze CHE.DATA lekcja czyta (Proxy od początku strony; liczy się odczyt istniejącego klucza)
+const klucze = (args.find(a => a.startsWith('--klucze=')) || '').slice(9), KL = {};
+const SONDA = `(function(){var R=window.__CHE_KL={},t={};function z(k){if(typeof k==='string'&&Object.prototype.hasOwnProperty.call(t,k))R[k]=(R[k]||0)+1}
+ var P=new Proxy(t,{get:function(o,k,r){z(k);return Reflect.get(o,k,r)},has:function(o,k){z(k);return Reflect.has(o,k)},
+  getOwnPropertyDescriptor:function(o,k){z(k);return Reflect.getOwnPropertyDescriptor(o,k)}});
+ window.CHE={DATA:P}})();`;
 function porownaj(name, odc) {
   ZR[name] = odc;
   if (!WZ || !WZ[name]) return [];
@@ -37,6 +43,7 @@ async function one(b, f) {
     if (/CONSISTENCY\] rozjazdy/.test(t)) errs.push(t);
   });
   await p.route(/^https?:/, r => r.abort());
+  if (klucze) await p.addInitScript(SONDA);
   await p.goto('file://' + path.resolve(f)); await p.waitForTimeout(2500);
   const n = await p.evaluate(() => document.querySelectorAll('[data-che-lesson-viz]').length);
   for (let i = 0; i < n; i++) {   // modele montują się leniwie przy przewinięciu
@@ -98,6 +105,7 @@ async function one(b, f) {
   if (r.vizBrak.length) bl.push('model niezarejestrowany: ' + r.vizBrak.join(','));
   if (r.vizPuste.length) bl.push('model pusty: ' + r.vizPuste.join(','));
   if (r.pracBrak.length) bl.push('pracownia niezarejestrowana: ' + r.pracBrak.join(','));
+  if (klucze) KL[path.basename(f)] = await p.evaluate(() => window.__CHE_KL || {});
   await p.close();
   bl.push(...porownaj(path.basename(f), odcisk));
   const kb = Math.round(fs.statSync(f).size / 1024);
@@ -120,6 +128,7 @@ async function one(b, f) {
     else if (!cicho) console.log('OK  ', path.basename(x.f), '|', x.stat);
   }
   if (zrzut) fs.writeFileSync(zrzut, JSON.stringify(ZR));
+  if (klucze) fs.writeFileSync(klucze, JSON.stringify(KL, null, 1));
   console.log(fail ? fail + ' FAIL' : 'OK ' + files.length + ' lekcji');
   b.close().catch(() => {}); setTimeout(() => process.exit(fail ? 1 : 0), 500);
 })();

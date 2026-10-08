@@ -1,193 +1,232 @@
 {
- "inorganic": {
-  "classes": [
-   "oxides",
-   "hydrides",
-   "hydroxides",
-   "acids",
-   "salts",
-   "amphoteric_compounds",
-   "complexes"
-  ],
-  "records": [
-   {
-    "id": "CaO",
-    "class": "oxide",
-    "reaction": "CaO+H2O->Ca(OH)2"
-   },
-   {
-    "id": "CO2",
-    "class": "acidic_oxide",
-    "reaction": "CO2+H2O⇌H2CO3"
-   },
-   {
-    "id": "Al2O3",
-    "class": "amphoteric_oxide"
-   }
-  ]
- },
- "organic": {
-  "hydrocarbons": {
-   "records": [
-    {
-     "id": "methane",
-     "formula": "CH4",
-     "class": "alkane"
-    },
-    {
-     "id": "ethene",
-     "formula": "C2H4",
-     "class": "alkene"
-    },
-    {
-     "id": "ethyne",
-     "formula": "C2H2",
-     "class": "alkyne"
-    },
-    {
-     "id": "benzene",
-     "formula": "C6H6",
-     "class": "aromatic"
-    }
-   ]
+ "BOND_TYPES": {
+  "single": {
+   "order": 1,
+   "kind": "covalent",
+   "electronPairCount": 1,
+   "label": "pojedyncze"
   },
-  "functional": {
-   "classes": [
-    "haloalkanes",
-    "alcohols",
-    "phenols",
-    "aldehydes",
-    "ketones",
-    "carboxylic_acids",
-    "esters",
-    "amines"
-   ],
-   "records": [
-    {
-     "id": "ethanol",
-     "formula": "C2H5OH",
-     "class": "alcohol"
-    },
-    {
-     "id": "ethanal",
-     "formula": "CH3CHO",
-     "class": "aldehyde"
-    },
-    {
-     "id": "propanone",
-     "formula": "CH3COCH3",
-     "class": "ketone"
-    },
-    {
-     "id": "ethanoic_acid",
-     "formula": "CH3COOH",
-     "class": "carboxylic_acid"
-    },
-    {
-     "id": "ethyl_ethanoate",
-     "formula": "CH3COOCH2CH3",
-     "class": "ester"
-    },
-    {
-     "id": "methylamine",
-     "formula": "CH3NH2",
-     "class": "amine"
-    }
-   ]
+  "double": {
+   "order": 2,
+   "kind": "covalent",
+   "electronPairCount": 2,
+   "label": "podwójne"
+  },
+  "triple": {
+   "order": 3,
+   "kind": "covalent",
+   "electronPairCount": 3,
+   "label": "potrójne"
+  },
+  "aromatic": {
+   "order": 1.5,
+   "kind": "covalent",
+   "electronPairCount": null,
+   "label": "aromatyczne"
+  },
+  "coordinate": {
+   "order": 1,
+   "kind": "coordinate",
+   "electronPairCount": 1,
+   "label": "koordynacyjne"
   }
  },
- "biochemistry": {
-  "scope": "CHEMISTRY_ONLY",
-  "classes": [
-   "amino_acids",
-   "peptides",
-   "proteins",
-   "monosaccharides",
-   "disaccharides",
-   "polysaccharides",
-   "lipids",
-   "nucleotides",
-   "DNA",
-   "RNA"
-  ],
-  "records": [
-   {
-    "id": "glycine",
-    "formula": "NH2CH2COOH",
-    "class": "amino_acid",
-    "amphoteric": true
+ "FUNCTIONAL_GROUPS": {
+  "hydroxyl": {
+   "type": "hydroxyl",
+   "name": {
+    "pl": "grupa hydroksylowa",
+    "en": "hydroxyl group"
    },
-   {
-    "id": "glucose",
-    "formula": "C6H12O6",
-    "class": "monosaccharide",
-    "reducing": true
+   "pattern": "R-O-H",
+   "atomsPerMatch": 3,
+   "tags": [
+    "alcohol",
+    "phenol"
+   ]
+  },
+  "carbonyl": {
+   "type": "carbonyl",
+   "name": {
+    "pl": "grupa karbonylowa",
+    "en": "carbonyl group"
    },
-   {
-    "id": "sucrose",
-    "formula": "C12H22O11",
-    "class": "disaccharide",
-    "reducing": false
+   "pattern": "C=O",
+   "atomsPerMatch": 2,
+   "tags": [
+    "aldehyde",
+    "ketone"
+   ]
+  },
+  "aldehyde": {
+   "type": "aldehyde",
+   "name": {
+    "pl": "grupa aldehydowa",
+    "en": "aldehyde group"
    },
-   {
-    "id": "starch",
-    "formula": "(C6H10O5)n",
-    "class": "polysaccharide"
+   "pattern": "R-C(=O)-H",
+   "atomsPerMatch": 3,
+   "tags": [
+    "carbonyl"
+   ]
+  },
+  "ketone": {
+   "type": "ketone",
+   "name": {
+    "pl": "grupa ketonowa",
+    "en": "ketone group"
    },
-   {
-    "id": "peptide_bond",
-    "representation": "-CO-NH-"
+   "pattern": "R-C(=O)-R",
+   "atomsPerMatch": 3,
+   "tags": [
+    "carbonyl"
+   ]
+  },
+  "carboxyl": {
+   "type": "carboxyl",
+   "name": {
+    "pl": "grupa karboksylowa",
+    "en": "carboxyl group"
    },
-   {
-    "id": "DNA_backbone",
-    "representation": "phosphate-sugar; base pairing via H-bonds"
+   "pattern": "C(=O)-O-H",
+   "atomsPerMatch": 4,
+   "tags": [
+    "acid",
+    "carbonyl",
+    "hydroxyl"
+   ]
+  },
+  "ester": {
+   "type": "ester",
+   "name": {
+    "pl": "grupa estrowa",
+    "en": "ester group"
    },
-   {
-    "id": "RNA_backbone",
-    "representation": "phosphate-ribose; bases A,U,G,C"
-   }
-  ],
-  "nucleicAcids": {
-   "records": [
-    {
-     "id": "A",
-     "DNA": "adenine",
-     "RNA": "adenine",
-     "pairing": [
-      "T",
-      "U"
-     ]
-    },
-    {
-     "id": "T",
-     "DNA": "thymine",
-     "pairing": [
-      "A"
-     ]
-    },
-    {
-     "id": "U",
-     "RNA": "uracil",
-     "pairing": [
-      "A"
-     ]
-    },
-    {
-     "id": "G",
-     "DNA": "guanine",
-     "RNA": "guanine",
-     "pairing": [
-      "C"
-     ]
-    },
-    {
-     "id": "C",
-     "DNA": "cytosine",
-     "RNA": "cytosine",
-     "pairing": [
-      "G"
-     ]
-    }
+   "pattern": "C(=O)-O-R",
+   "atomsPerMatch": 4,
+   "tags": [
+    "carbonyl"
+   ]
+  },
+  "ether": {
+   "type": "ether",
+   "name": {
+    "pl": "grupa eterowa",
+    "en": "ether group"
+   },
+   "pattern": "R-O-R",
+   "atomsPerMatch": 3,
+   "tags": []
+  },
+  "amine": {
+   "type": "amine",
+   "name": {
+    "pl": "grupa aminowa",
+    "en": "amine group"
+   },
+   "pattern": "R-NH2/R2NH/R3N",
+   "atomsPerMatch": null,
+   "tags": [
+    "basic"
+   ]
+  },
+  "amide": {
+   "type": "amide",
+   "name": {
+    "pl": "grupa amidowa",
+    "en": "amide group"
+   },
+   "pattern": "C(=O)-N",
+   "atomsPerMatch": 3,
+   "tags": [
+    "carbonyl",
+    "nitrogen"
+   ]
+  },
+  "nitro": {
+   "type": "nitro",
+   "name": {
+    "pl": "grupa nitrowa",
+    "en": "nitro group"
+   },
+   "pattern": "N(=O)-O",
+   "atomsPerMatch": 3,
+   "tags": [
+    "nitrogen",
+    "oxygen"
+   ]
+  },
+  "halogen": {
+   "type": "halogen",
+   "name": {
+    "pl": "atom/grupa halogenowa",
+    "en": "halo group"
+   },
+   "pattern": "R-X",
+   "atomsPerMatch": 2,
+   "tags": [
+    "substituent"
+   ]
+  },
+  "sulfhydryl": {
+   "type": "sulfhydryl",
+   "name": {
+    "pl": "grupa sulfhydrylowa",
+    "en": "sulfhydryl group"
+   },
+   "pattern": "R-S-H",
+   "atomsPerMatch": 3,
+   "tags": [
+    "thiol"
+   ]
+  },
+  "phosphate": {
+   "type": "phosphate",
+   "name": {
+    "pl": "grupa fosforanowa",
+    "en": "phosphate group"
+   },
+   "pattern": "P(=O)(O)-O",
+   "atomsPerMatch": null,
+   "tags": [
+    "phosphorus",
+    "acid"
+   ]
+  },
+  "alkene": {
+   "type": "alkene",
+   "name": {
+    "pl": "grupa alkenowa",
+    "en": "alkene"
+   },
+   "pattern": "C=C",
+   "atomsPerMatch": 2,
+   "tags": [
+    "unsaturated"
+   ]
+  },
+  "alkyne": {
+   "type": "alkyne",
+   "name": {
+    "pl": "grupa alkinowa",
+    "en": "alkyne"
+   },
+   "pattern": "C≡C",
+   "atomsPerMatch": 2,
+   "tags": [
+    "unsaturated"
+   ]
+  },
+  "aromatic": {
+   "type": "aromatic",
+   "name": {
+    "pl": "układ aromatyczny",
+    "en": "aromatic system"
+   },
+   "pattern": "aromatic ring/system",
+   "atomsPerMatch": null,
+   "tags": [
+    "aromatic"
    ]
   }
  }

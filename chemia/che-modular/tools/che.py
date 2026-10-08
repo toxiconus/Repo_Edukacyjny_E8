@@ -11,7 +11,7 @@
   python3 tools/che.py test [--szybki]    bezstratność (GFX, lab==monolit, che-viz==v0_59) + render lekcji
   python3 tools/che.py gfx                lista elementów GFX/VIEW (przedmiot/rodzaj: liczba, KB)
   python3 tools/che.py katalog            generuje engine/src/gfx/KATALOG.md (id ↔ nazwa PL ↔ plik)
-  python3 tools/che.py dane [--sprawdz]   CHE.DATA z silnika → engine/src/dane/<dziedzina>.json (+ _indeks.json)
+  python3 tools/che.py dane [--sprawdz|--lekcje] CHE.DATA z silnika → engine/src/dane/<dziedzina>.json (+ _indeks.json)
 """
 import json, shutil, subprocess, sys
 from pathlib import Path

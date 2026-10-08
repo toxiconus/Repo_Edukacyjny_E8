@@ -49,8 +49,9 @@ node tools/test_lekcje.cjs --wzorzec=dist/_wz/wzorzec.json   # z porównaniem tr
 
 1. **Dane według dziedzin jako czyste pliki** (w toku):
    - 1a ✅ eksport: `python3 tools/che.py dane` → `engine/src/dane/<podmoduł>.json` + `_indeks.json` (121 kluczy CHE.DATA, 116 czystych JSON; 5 z funkcjami: `SCIENCE_CORE_V288`, `*_V387/V406/V407`, `CIAAW_ATOMIC_WEIGHTS_AUDIT`; współdzielone obiekty w 4 kluczach; znaczniki czasu → `$czas`). `--sprawdz` = sha1 każdego klucza vs silnik (deterministyczne). Silnik bez zmian.
-   - 1b: które klucze czyta każda lekcja (Proxy na `CHE.DATA` w `test_lekcje.cjs`) → mapa lekcja → klucze, zestawienie z `domains.json`.
-   - 1c: pakiet lekcji ładuje dane z JSON zamiast sekcji danych (wstrzyknięcie przed sekcjami, które je tworzą) — test: 11/11 OK + `--sprawdz` po starcie lekcji.
+   - 1a: dziedziny wg znaczenia nazwy klucza (`REGULY` w `dane_eksport.py`): pierwiastki 481 KB, substancje 131, reakcje 94, weryfikacja 835 (audyty, rejestry, kontrakty — lekcje ich nie czytają), reszta drobna; sekcja-twórca → `zrodlo` w `_indeks.json`.
+   - 1b ✅ `python3 tools/che.py dane --lekcje` → `engine/registry/dane_lekcji.json` (sonda Proxy w `test_lekcje.cjs --klucze=`). **Wynik:** odchudzony silnik ma 41 kluczy (~300 KB danych z 1,55 MB); wszystkie 11 lekcji czyta te same 36 kluczy, różnice tylko `CHAR_COLORS`, `MOL3D_SETS`. Dane per lekcja prawie nic nie dadzą na rozmiarze — reszta (~1,25 MB) to kod, GFX i CSS.
+   - 1c (do decyzji): ładowanie danych z JSON zamiast sekcji — zysk porządkowy (dane oddzielone od kodu, edycja w jednym miejscu), nie rozmiarowy. Większy zysk rozmiaru: krok 2 (profil per lekcja dla kodu/GFX) i 4 (CSS/DOM).
 2. Profil per lekcja (zamiast jednego wspólnego) na bazie dziedzin z `engine/registry/lessons.json`.
 3. Przerobić `f05-izotopy-v01` na komponenty atlasu.
 4. Odchudzanie CSS/DOM z porównaniem zrzutów.
