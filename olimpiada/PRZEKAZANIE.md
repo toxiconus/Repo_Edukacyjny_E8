@@ -26,10 +26,10 @@ Foldery powstają, gdy pojawi się pierwsza treść.
 
 ## 4. Stan
 - 2026-10-08: dołączony MASTER v0.04 (architektura + szczegółowa mapa §58 + diagnostyka §91–100). Treści lekcji olimpijskich brak.
-- `MAPA_WSPOLNYCH.md` — szkielet; mapowanie ID MASTER ↔ istniejące lekcje (chemia kanon v0.3, 113 lekcji w `chemia/plany/CHE_SPIS_TRESCI.md`; biologia `BIO.all`) do zrobienia.
+- `MAPA_WSPOLNYCH.md` — **chemia zmapowana** (2026-10-08, generator `narzedzia/mapa_chemia.py`, przypisania w słowniku M): 133 tematy CHEM ↔ kanon CHE v0.3; 37 ma gotową lekcję E8 (brak poziomów 2–4), 88 czeka na lekcję z kanonu, 8 bez miejsca w kanonie. Kluczowa luka: mol i stechiometria to w kanonie LO, a w MASTER A+ (do decyzji). Biologia, polski, matematyka, OLI — do zrobienia.
 
 ## 5. Następne kroki (propozycja)
-1. Mapowanie CHEM-001…133 i BIO-001…  na istniejące lekcje (`MAPA_WSPOLNYCH.md`): co już jest, co brakuje, gdzie dopisać warstwy 2–4.
+1. Mapowanie BIO-001… (biologia), potem POL, MAT, OLI — jak chemia (generator na przedmiot).
 2. Plakietki poziomów 0–4 w dialekcie MD + przełącznik „E8 / Olimpiada” w md2html (jeden plik, dwa widoki).
 3. Format banku zadań (MASTER §46) jako MD/JSON + pierwsze zadania archiwalne (tylko ze źródeł oficjalnych — MASTER §12–13).
 4. Diagnostyka startowa (MASTER §93 — minimalny zestaw).
