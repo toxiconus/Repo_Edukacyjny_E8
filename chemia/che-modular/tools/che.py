@@ -6,7 +6,8 @@
   python3 tools/che.py parity KOD         MD ↔ rejestr: czego brakuje w silniku
   python3 tools/che.py lekcje [plik.md]   silnik z modułów + lekcje MD (kanon) → dist/ i dist/jeden_plik/
   python3 tools/che.py build KOD [--zintegrowana]   prototyp $-makr: MD → HTML
-  python3 tools/che.py pack KOD|--all     mały HTML offline z potrzebnymi modułami
+  python3 tools/che.py silnik             dist/viz/<profil>.js z engine/registry/profile/*.json
+  python3 tools/odchudz.py [--profil X] [--lekcje A,B]   odchudzanie silnika z testem (ddmin)
   python3 tools/che.py test [--szybki]    bezstratność (GFX, lab==monolit, che-viz==v0_59) + render lekcji
   python3 tools/che.py gfx                lista elementów GFX/VIEW (przedmiot/rodzaj: liczba, KB)
   python3 tools/che.py katalog            generuje engine/src/gfx/KATALOG.md (id ↔ nazwa PL ↔ plik)
@@ -28,6 +29,7 @@ def init():
     run("sh", str(T / "pobierz_moduly.sh"))
     if not (T / "node_modules" / "acorn").exists():
         run("npm", "i", "-s", "--prefix", str(T))
+    run("node", str(T / "anon_split.mjs"))   # sekcje _anon_001 (bezstratnie, deterministycznie)
     if not (ROOT / "engine/src/gfx/_szkielet").exists():
         run("node", str(T / "gfx_split.mjs"))
     test()
@@ -49,6 +51,16 @@ def lekcje(*md):
     (ROOT / "dist").mkdir(exist_ok=True)
     (ROOT / "dist/che-viz.js").write_text(silnik.che_viz(silnik.lab_html()), encoding="utf-8")
     run(sys.executable, str(T / "md2html.py"), *md)
+
+
+def silnik_profile():
+    sys.path.insert(0, str(T))
+    import silnik
+    (ROOT / "dist/viz").mkdir(parents=True, exist_ok=True)
+    for p in sorted((ROOT / "engine/registry/profile").glob("*.json")):
+        js = silnik.z_profilu(json.loads(p.read_text(encoding="utf-8")))
+        (ROOT / "dist/viz" / (p.stem + ".js")).write_text(js, encoding="utf-8")
+        print(f"→ dist/viz/{p.stem}.js {len(js.encode())/1e6:.2f} MB")
 
 
 def test(*a):
@@ -107,9 +119,9 @@ def main(a):
     elif c == "build":
         extra = ["--mode", "integrated"] if "--zintegrowana" in rest else []
         run(sys.executable, str(T / "md_build_lesson.py"), *[x for x in rest if x != "--zintegrowana"], *extra)
-    elif c == "pack": run(sys.executable, str(T / "pack_lesson.py"), *rest)
     elif c == "test": test(*rest)
     elif c == "lekcje": lekcje(*rest)
+    elif c == "silnik": silnik_profile()
     elif c == "gfx": gfx()
     elif c == "katalog": katalog()
     else: sys.exit(f"nieznane: {c}\n{__doc__}")

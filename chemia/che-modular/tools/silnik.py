@@ -29,7 +29,7 @@ def module_body(c, gfx_allow=None, przedmiot="chemia", sections=None):
     if c["id"] in GFX_MODS:
         return join(c["id"], gfx_allow, przedmiot)
     if c["id"] == "_anon_001" and sections is not None:
-        return "".join((ROOT / "sections/anon001" / f).read_text(encoding="utf-8") for f in sections)
+        return "".join((ROOT / "sections/anon001" / f).read_text(encoding="utf-8") for f in sections)  # kolejność jak w katalogu
     return (MOD / c["file"]).read_text(encoding="utf-8")
 
 
@@ -64,12 +64,30 @@ def che_viz(s, name=MONO_NAME):
         name, json.dumps(payload, ensure_ascii=False))
 
 
+def z_profilu(prof):
+    """che-viz.js z profilu odchudzania (engine/registry/profile/<nazwa>.json)."""
+    cat = json.loads((ROOT / "sections/anon001_catalog.json").read_text(encoding="utf-8"))
+    drop_s = set(prof.get("drop_sections", []))
+    keep = [x["file"].split("/", 1)[1] for x in cat if x["file"] not in drop_s]
+    allg = {}
+    for items in json.loads((ROOT / "engine/src/gfx/index.json").read_text(encoding="utf-8")).values():
+        for it in items:
+            allg.setdefault(it["kind"], set()).add(it["id"])
+    allow = {k: v - set(prof.get("drop_gfx", {}).get(k, [])) for k, v in allg.items()}
+    return che_viz(lab_html(drop=set(prof.get("drop_mods", [])), gfx_allow=allow, sections=keep))
+
+
 def sha(s):
     return hashlib.sha1(s.encode("utf-8")).hexdigest()[:12]
 
 
 def test():
     bad = 0
+    cat = json.loads((ROOT / "sections/anon001_catalog.json").read_text(encoding="utf-8"))
+    joined = "".join((ROOT / "sections" / x["file"]).read_text(encoding="utf-8") for x in cat)
+    ok = joined == (MOD / "_anon_001.js").read_text(encoding="utf-8")
+    bad += not ok
+    print(("OK " if ok else "FAIL ") + f"sekcje _anon_001 ({len(cat)}) == moduł")
     lab = lab_html()
     mono = Path("/tmp/che_mono.html")
     if mono.exists():

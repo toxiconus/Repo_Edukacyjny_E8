@@ -1,0 +1,9 @@
+
+
+try {
+ (()=>{const SRC='CHE_SP78_EXPERIMENTS_V349';const exp=[
+['subst-properties','badanie właściwości substancji'],['mixture-separation','sączenie/krystalizacja/destylacja/rozdzielanie cieczy'],['diffusion','dyfuzja'],['physical-vs-chemical','zjawisko fizyczne vs reakcja'],['oxygen','otrzymywanie i wykrywanie tlenu'],['hydrogen','otrzymywanie i właściwości wodoru'],['air-mixture','potwierdzenie że powietrze jest mieszaniną'],['co2','otrzymywanie i wykrywanie CO2'],['solubility','rozpuszczalność'],['dissolution-rate','czynniki wpływające na szybkość rozpuszczania'],['ph','badanie pH'],['indicators','rozróżnianie kwasów i wodorotlenków wskaźnikami'],['neutralization','zobojętnianie HCl+NaOH'],['precipitation','reakcja strąceniowa'],['hydrocarbon-unsaturation','odróżnianie nasyconych/nienasyconych'],['ester','otrzymywanie estru'],['fat-unsaturation','tłuszcz nasycony/nienasycony'],['protein','białko — denaturacja/wykrywanie'],['starch','wykrywanie skrobi']].map(([id,title])=>({id:`EXP-SP78-${id}`,title,required:['problem','procedure','observation','conclusion','safety']}));
+function validate(x={}){const miss=exp.find(e=>e.id===x.templateId)?.required.filter(k=>x[k]==null||String(x[k]).trim()==='')||[];return {status:miss.length?'INCOMPLETE':'READY_FOR_REVIEW',missing:miss,canonicalWrite:false};}CHE.SP78=CHE.SP78||{};CHE.SP78.EXPERIMENTS_V349={version:'3.49',source:SRC,templates:exp,validate};CHE.P0_REGRESSION_V349={version:'3.49',pass:exp.length>=19,browserRuntime:'NOT_VERIFIED',scientificGate:'BLOCKED',source:SRC};})();
+} catch (err) {
+  try { console.warn('[CHE module 239]', err && err.message ? err.message : err); } catch(_){}
+}

@@ -377,7 +377,11 @@ if __name__ == '__main__':
         open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(pg)
         # wersja jednoplikowa (telefon, e-mail): che-viz.js wklejony do środka
         os.makedirs(os.path.join(ROOT, 'dist', 'jeden_plik'), exist_ok=True)
-        viz = open(os.path.join(ROOT, 'dist', 'che-viz.js'), encoding='utf-8').read().replace('</', '<\\/')
+        # silnik: odchudzony dla tej lekcji (dist/viz/<lekcja>.js, tools/silnik.py / odchudz.py) albo pełny
+        vp = os.path.join(ROOT, 'dist', 'viz', fn + '.js')
+        if not os.path.exists(vp): vp = os.path.join(ROOT, 'dist', 'viz', 'wspolny.js')
+        if not os.path.exists(vp): vp = os.path.join(ROOT, 'dist', 'che-viz.js')
+        viz = open(vp, encoding='utf-8').read().replace('</', '<\\/')
         a, b = pg.split('<script src="che-viz.js"></script>', 1)
         one = a + '<script>\n' + viz + '\n</script>' + b
         # w pliku pojedynczym nie ma spisu obok — chowamy przycisk „Spis lekcji”
