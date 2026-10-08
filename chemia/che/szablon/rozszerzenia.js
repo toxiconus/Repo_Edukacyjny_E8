@@ -189,4 +189,19 @@ pracownia('f01-doswiadczenia-v01','Pracownia: co naprawdę się zmieniło?','Zja
   f01WodaWapienna:{war:'gaz przepuszczony przez wodę wapienną',wn:'Zmętnienie wody wapiennej to dowód, że gazem był CO₂.',bhp:'Woda wapienna drażni oczy i skórę; okulary.'}},
  'GFX.rx · rozszerzenia.js (F01)');
 
+/* ---------- 7. Zlewki GFX dla F03 (mieszaniny do rozdzielania) — pracownia łączy je z zlewkami F01 ---------- */
+var RXF3={
+ f03PiasekWoda:{n:'Piasek + woda (zawiesina)',solid:{col:[214,190,140],eq:4,end:1,t:'powder',shape:'powder'},turb:.25,out:['nic'],qualitative:1,eq:'piasek(s) + H₂O(c) — brak reakcji',why:'Piasek nie rozpuszcza się: po zamieszaniu woda mętnieje, po chwili ziarna opadają na dno (sedymentacja), a nad osadem zostaje prawie klarowna woda. Dwie fazy — mieszanina niejednorodna.'},
+ f03KredaWoda:{n:'Kreda + woda (zawiesina)',solid:{col:[246,246,242],eq:4,end:1,t:'powder',shape:'powder'},turb:.7,out:['nic'],qualitative:1,eq:'CaCO₃(s) + H₂O(c) — brak reakcji',why:'Drobna kreda tworzy mleczną zawiesinę, która opada wolno. Sączek zatrzymuje cząstki kredy, a przesącz jest klarowny.'}
+};
+if(rx)Object.keys(RXF3).forEach(function(k){if(!rx.get(k))rx.register(k,RXF3[k])});
+
+pracownia('f03-rozdzielanie-v01','Pracownia: rozdzielanie mieszanin','Najpierw nazwij różnicę właściwości, potem wybierz metodę: zawiesiny (sedymentacja, dekantacja, sączenie), roztwór (odparowanie, krystalizacja).',
+ [['Zawiesiny — ciało stałe nierozpuszczalne',['f03PiasekWoda','f03KredaWoda']],['Roztwór — substancja rozpuszczona',['f01SolWoda','f01Odparowanie']]],
+ {f03PiasekWoda:{war:'piasek w zlewce z wodą, zamieszanie bagietką, odstawienie',wn:'Różnica: piasek nie rozpuszcza się i ma większą gęstość niż woda → sedymentacja, potem dekantacja albo sączenie.',bhp:'Szkło — ostrożnie; okulary.'},
+  f03KredaWoda:{war:'sproszkowana kreda w wodzie, mieszanie',wn:'Drobne cząstki opadają wolno — szybciej rozdzieli je sączenie przez bibułę; przesącz jest klarowny.',bhp:'Okulary; sączek nie może być przedziurawiony bagietką.'},
+  f01SolWoda:{war:'sól kuchenna w wodzie, mieszanie',wn:'Sól rozpuszcza się — przechodzi przez sączek razem z wodą. Sączenie nie zadziała; trzeba wykorzystać lotność wody (odparowanie, krystalizacja lub destylacja).',bhp:'Nie smakujemy substancji w pracowni.'},
+  f01Odparowanie:{war:'roztwór soli w parownicy, ogrzewanie',wn:'Woda odparowuje, sól krystalizuje na dnie — odzyskujemy substancję rozpuszczoną (wodę tracimy; chcąc ją odzyskać — destylacja).',bhp:'Gorąca parownica — szczypce; okulary (pryskanie pod koniec).'}},
+ 'GFX.rx · rozszerzenia.js (F03)');
+
 })();

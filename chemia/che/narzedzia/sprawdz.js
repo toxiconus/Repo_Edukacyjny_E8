@@ -6,7 +6,7 @@ const dir=path.join(__dirname,'..','dist','jeden_plik');
 const files=process.argv.slice(2).length?process.argv.slice(2):fs.readdirSync(dir).filter(f=>f.endsWith('.html')).map(f=>path.join(dir,f));
 (async()=>{const b=await pw.chromium.launch();let fail=0;
 for(const f of files){const p=await b.newPage({viewport:{width:390,height:800}});const errs=[];
- p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});
+ p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error'&&!/net::ERR_(TUNNEL|NAME|INTERNET|PROXY)/.test(m.text()))errs.push(m.text())});
  await p.goto('file://'+path.resolve(f));await p.waitForTimeout(2500);
  const r=await p.evaluate(()=>{const l=document.getElementById('che-landing');return{lekcja:!!document.querySelector('.che-lfs-lesson'),
   start:!!l&&getComputedStyle(l).display!=='none',bok:document.documentElement.scrollWidth>innerWidth}});
