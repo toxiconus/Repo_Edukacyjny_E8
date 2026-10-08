@@ -18,7 +18,7 @@
 1. CHE: V012 (dipol) i V015 (bilans) do `chemia/che-modular/engine/src/lekcja/rozszerzenia.js` na danych silnika (MOL3D, elektroujemność z danych pierwiastków, parser wzorów z `CHE.IONIC`/`CHE.STECH`), potem V009, V008; wpis w `KATALOG_MODELI.md`; test `python3 tools/che.py test`.
 2. BIO: kod-genetyczny, punnett, transport-blona, siec-troficzna → `BIO.define` w `biologia/bio/szablon/bio-viz.js` (gałąź `claude/bio-lekcje`) + `BIO_KATALOG.md`.
 3. FIZ: obwód → silnik fizyki (`CHE.PHYS`) razem z lekcją FIZ-02.
-4. Scalić gałąź z `claude/che-lekcje` (konflikty mało prawdopodobne — nowy folder).
+4. ✅ Scalone z `claude/che-lekcje` 2026-10-08 18:40 (bez konfliktów).
 
 ## Git
 - Płytki klon: `git config --add remote.origin.fetch '+refs/heads/claude/wizualizacje-projekty:refs/remotes/origin/claude/wizualizacje-projekty'`, `git fetch`, `git checkout -b claude/wizualizacje-projekty origin/claude/wizualizacje-projekty`. Komunikat hooka o „unpushed commits” przy płytkim klonie jest fałszywy — naprawa `git branch -u origin/<gałąź>`.

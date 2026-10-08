@@ -4,7 +4,7 @@ Przeczytaj ten plik jako pierwszy, zanim otworzysz cokolwiek innego. Obowiązuje
 
 ## Kolejność startu
 1. Ten plik.
-2. `chemia/che-modular/PRZEKAZANIE.md` (stan, jak pracować, decyzje użytkownika, następne kroki), potem `PLAN_PRACY.md` w razie potrzeby i `tail PROGRESS.md`. Polecenia, dialekt MD, GFX: `SYSTEM.md` (czytaj tylko potrzebną sekcję).
+2. `PRZEKAZANIE.md` w katalogu głównym (gałęzie, obszary), potem przekazanie obszaru: `chemia/che-modular/PRZEKAZANIE.md` (stan, jak pracować, decyzje użytkownika, następne kroki), potem `PLAN_PRACY.md` w razie potrzeby i `tail PROGRESS.md`. Polecenia, dialekt MD, GFX: `SYSTEM.md` (czytaj tylko potrzebną sekcję).
 3. Tylko pliki dotyczące zadania (np. `lessons-md/gotowe/<KOD>_*.md`, jeden tool z `tools/`).
 
 Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biologia/`, `angielski/`, `chemia/archiwum/` (tylko do odczytu, opis w `archiwum/OPIS.md`), `PODSUMOWANIE.md`/`AUDYT_I_PLAN.md`, jeśli zadanie ich nie dotyczy.
@@ -19,11 +19,11 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Przy kończącym się limicie: najpierw zapisz stan (commit + wpis w `chemia/che-modular/PRZEKAZANIE.md` i `PROGRESS.md`), potem najmniejszy działający krok.
 
 ## Biologia (BIO)
-- Praca BIO: najpierw `biologia/bio/PRZEKAZANIE.md`, potem tylko md lekcji (`biologia/bio/md/`) i `biologia/bio/BIO_KATALOG.md`. Gałąź `claude/bio-lekcje`.
+- Praca BIO: najpierw `biologia/bio/PRZEKAZANIE.md`, potem tylko md lekcji (`biologia/bio/md/`) i `biologia/bio/BIO_KATALOG.md`. Gałąź: `claude/che-lekcje` (zbiorcza; `claude/bio-lekcje` scalona 2026-10-08).
 - Build `python3 biologia/bio/narzedzia/md2html_bio.py`, test `node biologia/bio/narzedzia/sprawdz_bio.js`. Wygenerowanego HTML nie czytać.
 
 ## Git
-- Gałąź pracy CHE: `claude/che-lekcje`. Push tylko na gałęzie `claude/...` (push na `main` kończy się 403).
+- Gałąź pracy (CHE, BIO, wizualizacje): `claude/che-lekcje` — zbiorcza, opis w `PRZEKAZANIE.md`. Push tylko na gałęzie `claude/...` (push na `main` kończy się 403).
 - Po każdym zamkniętym etapie: commit i push, krótki wpis w `chemia/che-modular/PROGRESS.md`.
 
 ## Merytoryka

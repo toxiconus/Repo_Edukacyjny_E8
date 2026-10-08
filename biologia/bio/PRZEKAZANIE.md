@@ -1,7 +1,7 @@
 # BIO — przekazanie (stan pracy)
 
 ## Stan 2026-10-07
-- Gałąź: `claude/bio-lekcje`. Kanon treści: `biologia/BIO.all.v01.00.md` (v5.2), pocięty na `biologia/md/<KOD>_*.md` (źródła robocze, nie format szablonu).
+- Gałąź: `claude/che-lekcje` (zbiorcza; `claude/bio-lekcje` scalona 2026-10-08). Kanon treści: `biologia/BIO.all.v01.00.md` (v5.2), pocięty na `biologia/md/<KOD>_*.md` (źródła robocze, nie format szablonu).
 - Nowy tor lekcji (jak CHE): `biologia/bio/md/<KOD>_*.md` w formacie `chemia/che/SZABLON_LEKCJI.md` + dodatki BIO (`@viz`, `::: mity`, `::: drzewo`).
 - Build: `python3 biologia/bio/narzedzia/md2html_bio.py` → `biologia/bio/dist/<KOD>.html` (jeden samodzielny plik, offline, telefon) + `index.html`.
 - Test: `node biologia/bio/narzedzia/sprawdz_bio.js` (390 px + 1200 px; konsola, grafiki, przewijanie w bok). Opcja `--zrzuty katalog`.
