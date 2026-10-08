@@ -4,7 +4,7 @@
 //        node tools/atlas_sprawdz.cjs dist/lab.html --zapisz wz.json ; node tools/atlas_sprawdz.cjs --wzorzec wz.json dist/atlas.html
 let pw; try { pw = require('playwright') } catch (_) { pw = require('/opt/npm-tools/node_modules/playwright') }
 const path = require('path');
-const SYM = ['H', 'Na', 'Cl', 'Fe', 'U'], POMIN = /^(dane|diag|lekcje|wizual)$/;
+const SYM = ['H', 'Na', 'Cl', 'Fe', 'U'] /* ATLAS_PELNY=1 → wszystkie pierwiastki atlasu (wolne, do kontroli końcowej) */, POMIN = /^(dane|diag|lekcje|wizual)$/;
 
 async function snap(b, f) {
   const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
@@ -50,7 +50,7 @@ async function snap(b, f) {
         const b2 = ib.querySelectorAll('[data-i]')[1]; if (b2) { b2.click(); await w(30); res['txt:isobar-klik-' + s] = ib.innerHTML + '|' + isoA + '|' + (document.getElementById('bohrinfo') || {}).innerHTML; isoA = null; } }
     }
     return res;
-  }, SYM);
+  }, process.env.ATLAS_PELNY ? await p.evaluate(() => Object.keys(DB)) : SYM);
   const png = null;
   await p.close();
   return { txt, err, png };
