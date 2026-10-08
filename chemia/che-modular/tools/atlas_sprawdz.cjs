@@ -42,6 +42,8 @@ async function snap(b, f) {
         zt = 1; for (let i = 0; i < 120; i++) bohr(0);
       }
       res['txt:geo'] = JSON.stringify(GEO);
+      // diagram orbitali (SVG #lev): atomy i jony (duchy usuniętych elektronów)
+      if (typeof levels === 'function') for (const s of ['O', 'Fe', 'Cu', 'Pd', 'Gd']) { go(s); await w(40); res['txt:lev-' + s] = levels(); for (const q of [2, -1]) { if (typeof chg !== 'undefined') { chg = q; try { res['txt:lev-' + s + q] = levels() + (document.getElementById('levsum') || {}).innerHTML } catch (e) { res['txt:lev-' + s + q] = 'ERR ' + e.message } chg = 0 } } }
       // pasek izotopów: HTML dla kilku pierwiastków i klik w drugi izotop
       for (const s of ['H', 'C', 'Cl', 'U']) { go(s); await w(40); const ib = document.getElementById('isobar'); if (!ib) break; res['txt:isobar-' + s] = ib.innerHTML;
         const b2 = ib.querySelectorAll('[data-i]')[1]; if (b2) { b2.click(); await w(30); res['txt:isobar-klik-' + s] = ib.innerHTML + '|' + isoA + '|' + (document.getElementById('bohrinfo') || {}).innerHTML; isoA = null; } }

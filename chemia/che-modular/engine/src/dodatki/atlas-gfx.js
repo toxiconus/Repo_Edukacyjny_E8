@@ -4,7 +4,7 @@
    swoich funkcji globalnych (niżej) — tylko gdy atlas jest na stronie. */
 (function(){
 var C=window.CHE=window.CHE||{},L;try{L=C.LAB=C.LAB||{}}catch(_){L={}}
-if(L.atomBohr&&L.orbitalCloud&&L.isotopeBar)return;
+if(L.atomBohr&&L.orbitalCloud&&L.isotopeBar&&L.orbitalDiagram)return;
 /* atomBohr — rysunek atomu z atlasu (_anon_004 bohr) jako komponent canvas, bez stanu i DOM atlasu.
    Ten sam wygląd: tło, jądro (kulki p/n złotym kątem, gradient, obręcz „ponad najczęstszy izotop”), powłoki z etykietą „K · 2/2”,
    elektrony wewnętrzne #2f8a55 / walencyjne #b85f00 z poświatą, obrót powłok w czasie.
@@ -168,6 +168,39 @@ L.isotopeBar=isotopeBar;
 try{if(typeof isoBar==='function'&&typeof isotopeData==='function'&&document.getElementById('isobar')){
  isoBar=function(){var e=state().e,isotopes=isotopeData(e),tp=isotopes.slice().sort(function(a,b){return (b.ab||0)-(a.ab||0)})[0],A=isoA||(tp?tp.A:0);
   isotopeBar($('isobar'),{sym:sym,isotopes:isotopes,A:A,onPick:function(a){isoA=a;hud();zt=zNuc}})}}}catch(e){console.warn('[atlas-gfx isoBar] '+e.message)}
+/* orbitalDiagram — diagram orbitali „klatki i strzałki” z atlasu (_anon_004 levels) jako komponent SVG.
+   orbitalDiagram({c, c0?, order?, role?, col?}) → {svg (wnętrze <svg>), W, H, unp, prs} — c = konfiguracja do pokazania, c0 = wyjściowa (duchy elektronów usuniętych w jonie).
+   Podpowłoki od najniższej energii, reguła Hunda (najpierw pojedyncze), kolory ról jak w atomBohr. Puste: null. */
+function orbitalDiagram(o){var c=o.c||{},c0=o.c0||c,CAP={s:2,p:6,d:10,f:14},COL=o.col||{c:'#2f8a55',v:'#b85f00',r:'#b0467a'},
+ ORDER=o.order||['1s','2s','2p','3s','3p','4s','3d','4p','5s','4d','5p','6s','4f','5d','6p','7s','5f','6d','7p'],
+ role=o.role||function(cc,k){var N=Math.max.apply(null,Object.keys(cc).map(function(x){return +x[0]}));return +k[0]===N?'v':'c'};
+ function arrow(x,y,col,down){var h=11;
+  if(!down)return '<line x1="'+x+'" y1="'+(y+h/2)+'" x2="'+x+'" y2="'+(y-h/2)+'" stroke="'+col+'" stroke-width="1.7" stroke-linecap="round"/><path d="M'+(x-2.6)+' '+(y-h/2+3.2)+'L'+x+' '+(y-h/2)+'L'+(x+2.6)+' '+(y-h/2+3.2)+'" stroke="'+col+'" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>';
+  return '<line x1="'+x+'" y1="'+(y-h/2)+'" x2="'+x+'" y2="'+(y+h/2)+'" stroke="'+col+'" stroke-width="1.7" stroke-linecap="round"/><path d="M'+(x-2.6)+' '+(y+h/2-3.2)+'L'+x+' '+(y+h/2)+'L'+(x+2.6)+' '+(y+h/2-3.2)+'" stroke="'+col+'" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>'}
+ var ks=ORDER.filter(function(k){return c0[k]||c[k]});if(!ks.length)return null;
+ var W=360,left=58,right=50,en=function(k){return +k[0]+'spdf'.indexOf(k[1])+.06*k[0]},sorted=ks.slice().sort(function(a,b){return en(a)-en(b)}),
+  maxOrb=Math.max.apply(null,sorted.map(function(k){return CAP[k[1]]/2})),gap=4,availW=W-left-right,boxW=Math.min(30,Math.floor((availW-(maxOrb-1)*gap)/maxOrb)),
+  rowH=boxW+12,top=26,H=top+sorted.length*rowH+8,
+  fillOcc=function(n,nb){var oc=Array(nb).fill(0),r=n,i;for(i=0;i<nb&&r>0;i++){oc[i]=1;r--}for(i=0;i<nb&&r>0;i++){oc[i]=2;r--}return oc},s='',unp=0,prs=0;
+ s+='<line x1="9" x2="9" y1="'+(H-4)+'" y2="14" stroke="#9aa8b5" stroke-width="1.4"/><path d="M5 19L9 13L13 19" fill="none" stroke="#9aa8b5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><text x="19" y="12" style="font-size:10.5px;letter-spacing:.08em">ENERGIA</text>';
+ sorted.forEach(function(k,i){var y=top+i*rowH,n=c[k]||0,nb=CAP[k[1]]/2,r=role(c,k),col=COL[r],lost=(c0[k]||0)>n,occ=fillOcc(n,nb),occ0=fillOcc(c0[k]||0,nb);
+  if(r==='v'&&n)s+='<rect x="16" y="'+(y-4)+'" width="'+(W-20)+'" height="'+(boxW+8)+'" rx="7" fill="rgba(217,119,6,.08)"/>';
+  s+='<text x="22" y="'+(y+boxW*.68)+'" style="font-size:14px;font-weight:700;fill:'+(n?col:'#6b7886')+';cursor:pointer" data-sub="'+k+'">'+k+'</text>';
+  for(var j=0;j<nb;j++){var bx=left+j*(boxW+gap),oc=occ[j];
+   s+='<rect x="'+bx+'" y="'+y+'" width="'+boxW+'" height="'+boxW+'" rx="4" fill="'+(oc?col:'none')+'" fill-opacity="'+(oc?.09:0)+'" stroke="'+(oc?col:lost?'#c98ba8':'#b8c5d1')+'" stroke-width="'+(oc?1.4:1)+'" stroke-dasharray="'+(oc?0:3)+'"/>';
+   var ghost=occ0[j]-oc;
+   if(ghost>0){s+='<g opacity=".4">';if(oc===0)s+=arrow(bx+boxW*(occ0[j]===2?.34:.5),y+boxW/2,'#b0467a',false);if(occ0[j]===2)s+=arrow(bx+boxW*.66,y+boxW/2,'#b0467a',true);s+='</g>'}
+   if(oc>=1)s+=arrow(bx+boxW*(oc===2?.34:.5),y+boxW/2,col,false);if(oc===2)s+=arrow(bx+boxW*.66,y+boxW/2,col,true);
+   if(oc===1)unp++;else if(oc===2)prs++}
+  s+='<text x="'+(W-4)+'" y="'+(y+boxW*.68)+'" text-anchor="end" style="font-size:12.5px;font-weight:600;fill:'+(n?'#17212b':'#9aa8b5')+'">'+n+' e⁻</text>'});
+ return {svg:s,W:W,H:H,unp:unp,prs:prs}}
+L.orbitalDiagram=orbitalDiagram;
+/* atlas: diagram orbitali z komponentu (podsumowanie #levsum i viewBox jak w atlasie) */
+try{if(typeof levels==='function'&&document.getElementById('lev')){
+ levels=function(){var st=state(),r=orbitalDiagram({c:st.c,c0:st.c0,order:ORDER,role:role,col:COL});if(!r)return nodata(360,200);
+  $('lev').setAttribute('viewBox','0 0 '+r.W+' '+r.H);var lv=$('levsum');
+  if(lv)lv.innerHTML='<span><em>niesparowane</em><b>'+r.unp+'</b></span><span><em>pary</em><b>'+r.prs+'</b></span><span><em>magnetyzm</em><b>'+(r.unp?'para':'dia')+'</b></span>'+(chg?'<span><em>jon</em><b>'+(chg>0?'+'+chg:chg)+'</b></span>':'');
+  return r.svg}}}catch(e){console.warn('[atlas-gfx levels] '+e.message)}
 /* atlas: atom Bohra rysowany komponentem atomBohr (stan, zoom, GEO i liczniki zostają w atlasie; widoczność jak w 19_poprawki-ui) */
 try{if(typeof bohr==='function'&&typeof state==='function'&&typeof GEO!=='undefined'&&document.getElementById('bohr')){
  bohr=function(ts){if(!still&&(document.hidden||!document.getElementById('stage').offsetParent))return;
@@ -182,5 +215,5 @@ try{if(typeof bohr==='function'&&typeof state==='function'&&typeof GEO!=='undefi
   $('zr').textContent=(zm<10?zm.toFixed(1):Math.round(zm))+'×';
   var fo=$('focus');if(fo)fo.style.opacity=zm>zNuc*.45?0:1;
   var zs=$('zs');if(document.activeElement!==zs)zs.value=100*Math.log(zm/.6)/Math.log(zNuc/.6)};
- L.atlasGfx='cloud,bohr,isoBar'}}catch(e){console.warn('[atlas-gfx bohr] '+e.message)}
+ L.atlasGfx='cloud,bohr,isoBar,levels'}}catch(e){console.warn('[atlas-gfx bohr] '+e.message)}
 })();
