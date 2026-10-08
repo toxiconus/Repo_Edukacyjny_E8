@@ -22,7 +22,7 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 ### Chemia (do 23.10)
 | # | lekcja | dlaczego | materiał źródłowy | stan |
 |---|---|---|---|---|
-| C1 | **REV01 Powtórka klasy 7** (fundamenty: BHP, atom i jon, układ okresowy, wartościowość, wzory, wiązania, równania + nowa sekcja obliczeń konkursowych; gazy i roztwory — osobno) | zakres etapu szkolnego = głównie kl. 7 + początek kl. 8 | `chemia/lekcje_md/00/CHE.00.REV01.powtorka_klasy_7.md` | [ ] następna — plan niżej (§5) |
+| C1 | **REV01 Powtórka klasy 7** (fundamenty: BHP, atom i jon, układ okresowy, wartościowość, wzory, wiązania, równania + nowa sekcja obliczeń konkursowych; gazy i roztwory — osobno) | zakres etapu szkolnego = głównie kl. 7 + początek kl. 8 | `chemia/lekcje_md/00/CHE.00.REV01.powtorka_klasy_7.md` | **[V] gotowa 2026-10-08** — `lessons-md/gotowe/REV01_powtorka_klasy_7.md` |
 | C1b | N01 Powietrze i gazy: tlen, wodór, skład powietrza, korozja (dział IV podstawy — w zakresie etapu szkolnego) | dział IV | `lekcje_md` — brak materiału; kanon N01 | [ ] |
 | C2 | R03 Stężenie procentowe (+ R02 rozpuszczalność, krzywe) | obliczenia rozdzielają uczestników | `chemia/lekcje_md/R/CHE.03.R03+R05.stezenia.md` | [ ] |
 | C3 | F17 Równania reakcji + obliczenia z równań (masowe, prawo zachowania masy, proporcje — bez mola) | typowe zadanie konkursowe | `lekcje_md/F/CHE.01.F17…`, `R/…stechiometria.md` (część masowa) | [ ] |
@@ -42,7 +42,7 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 ## 4. Olimpiada (poziomy 2–4) — po etapach szkolnych
 - Dopisywanie warstw 2–4 do gotowych lekcji (najpierw atom/układ okresowy/reakcje), bank zadań archiwalnych z oficjalnych źródeł, mol i stechiometria jako poziom 2 (w kanonie LO).
 
-## 5. Plan lekcji REV01 (ustalony 2026-10-08, do napisania)
+## 5. Plan lekcji REV01 (zrealizowany 2026-10-08)
 - Plik: `chemia/che-modular/lessons-md/gotowe/REV01_powtorka_klasy_7.md`, dialekt kanoniczny (`SYSTEM.md` §3), wzór budowy: `F06_uklad_okresowy.md`.
 - Źródło (przeczytane w całości): REV01 = fundamenty kl. 7 (BHP, atom/jon, układ okresowy, wartościowość, wzory, wiązania, równania). Pominąć meta-sekcje źródła (instrukcja, filozofia, globalny schemat, metadane, zasady HTML, status, dodatek A). Brak w źródle: powietrze/gazy, woda i roztwory — to osobne lekcje (N01, R01–R03).
 - Układ: minimum (10 pkt) · warstwy · rdzeń · jak pracować · mapa lekcji i pułapki · mapa skojarzeń · diagnoza (6 pytań + `::: odp`) · BHP + szkło · atom/izotopy/jony (`@model f05-izotopy-v01`) · układ okresowy (`@model periodic-54`) · wartościowość · wzory, grupy atomów, nawias, 5 pojęć, wzory strukturalne/elektronowe, masa cząsteczkowa (`@model n01-konstruktor-v01`, `@model n02-wzory-v01`) · wiązania (`@model molecule3d-merged`) · równania, typy, spalanie, egzo/endo, warunki, rozpuszczalność (`@model tabela-rozpuszczalnosci-v01`), zapis jonowy · strategia · pułapki + STOP · `::: klinika` (kolumna „Reguła” wliczona do „Dlaczego?”) · wszystkie ćwiczenia źródła z `::: odp` · rozszerzenie/ambitne (`karta extra`) · ściąga · `::: fiszki` (44) · `::: test` (ok. 12 pytań zamkniętych z treści) · `::: slownik` · checklista · powtórki · mapy myśli jako tabele · co dalej.
