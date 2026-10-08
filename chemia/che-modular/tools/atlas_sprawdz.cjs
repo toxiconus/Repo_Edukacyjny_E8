@@ -1,6 +1,7 @@
 // atlas_sprawdz.cjs — atlas poza silnikiem (dist/atlas.html) = atlas w pełnym labie (dist/lab.html)?
 // Porównuje tekst wszystkich zakładek atlasu i HUD dla kilku pierwiastków oraz piksele rysunków canvas (bohr, cloud) — bez animacji.
 // Użycie: node tools/atlas_sprawdz.cjs dist/lab.html dist/atlas.html   (wypisuje tylko różnice i błędy)
+//        node tools/atlas_sprawdz.cjs dist/lab.html --zapisz wz.json ; node tools/atlas_sprawdz.cjs --wzorzec wz.json dist/atlas.html
 let pw; try { pw = require('playwright') } catch (_) { pw = require('/opt/npm-tools/node_modules/playwright') }
 const path = require('path');
 const SYM = ['H', 'Na', 'Cl', 'Fe', 'U'], POMIN = /^(dane|diag|lekcje|wizual)$/;
@@ -56,9 +57,14 @@ async function snap(b, f) {
 }
 
 (async () => {
-  const [A, B] = process.argv.slice(2);
+  // --wzorzec plik.json: A to zapisany wynik (szybciej, np. w odchudzaniu); --zapisz plik.json: zapisz wynik A
+  const arg = process.argv.slice(2), opt = n => { const i = arg.indexOf(n); return i < 0 ? null : arg.splice(i, 2)[1] };
+  const wz = opt('--wzorzec'), zap = opt('--zapisz'), fs = require('fs');
+  const [A, B] = arg;
   const b = await pw.chromium.launch();
-  const a = await snap(b, A), x = await snap(b, B);
+  const a = wz ? { txt: JSON.parse(fs.readFileSync(wz, 'utf8')), err: [] } : await snap(b, A);
+  if (zap) { fs.writeFileSync(zap, JSON.stringify(a.txt)); if (!B) { await b.close(); console.log('zapisano ' + zap); return } }
+  const x = await snap(b, wz ? A : B);
   await b.close();
   let ok = 0, zle = 0, pz = 0, pzle = [];
   for (const k in a.txt) {

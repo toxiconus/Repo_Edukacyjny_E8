@@ -86,10 +86,21 @@ def atlas_moduly():
     return [l.split("#")[0].strip() for l in (ATLAS / "moduly.txt").read_text(encoding="utf-8").splitlines() if l.split("#")[0].strip()]
 
 
-def atlas_html():
-    """Atlas poza silnikiem: lab tylko z modułami z engine/src/atlas/moduly.txt + dodatki + start.js (bez ekranu powitalnego)."""
+def atlas_sekcje():
+    """Sekcje rdzenia _anon_001 dla atlasu (engine/src/atlas/sekcje.txt z tools/atlas_odchudz.py); brak pliku = wszystkie."""
+    p = ATLAS / "sekcje.txt"
+    if not p.exists():
+        return None
+    return [l.strip() for l in p.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")]
+
+
+def atlas_html(sections="plik"):
+    """Atlas poza silnikiem: lab tylko z modułami z engine/src/atlas/moduly.txt + dodatki + start.js (bez ekranu powitalnego).
+    sections: "plik" = engine/src/atlas/sekcje.txt (jeśli jest), None = cały rdzeń, lista = te sekcje (anon001/<podmoduł>/sNNN.js bez prefiksu)."""
     keep = set(atlas_moduly())
-    out = lab_html(drop={c["id"] for c in CATALOG} - keep, dodatki=True)
+    if sections == "plik":
+        sections = atlas_sekcje()
+    out = lab_html(drop={c["id"] for c in CATALOG} - keep, dodatki=True, sections=sections)
     js = (ATLAS / "start.js").read_text(encoding="utf-8").replace("</", "<\\/")
     i = out.rfind("</body>")
     return out[:i] + '<script id="che-atlas-start">\n' + js + "\n</script>\n" + out[i:]
