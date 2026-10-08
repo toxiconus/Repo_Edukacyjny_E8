@@ -2,6 +2,7 @@
 """odchudz.py — automatyczne odchudzanie silnika z testem jako wyrocznią (ddmin).
 
   python3 tools/odchudz.py [--profil wspolny] [--lekcje N01_tlenki,N05_wodorki] [--etap mod,anon,widoki,gfx]
+  python3 tools/odchudz.py --profil F04_atom --lekcje F04_atom --start wspolny --etap mod,pod,anon,widoki   # profil jednej lekcji
 
 Dla każdej grupy kandydatów: zbuduj che-viz.js bez niej → test_lekcje.cjs na lekcjach profilu.
 Test OK → grupa usunięta na stałe; FAIL → dziel na pół (do 1 elementu / 3 sekcji).
@@ -109,6 +110,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--profil", default="wspolny")
     ap.add_argument("--lekcje", default="")
+    ap.add_argument("--start", default="")   # profil startowy dla nowego profilu (np. wspolny → profil jednej lekcji)
     ap.add_argument("--etap", default="mod,anon,widoki")   # gfx (naczynia/efekty/sceny/reakcje) tylko jawnie: test nie widzi rysunku
     a = ap.parse_args()
     pages = [f"{x}.html" for x in a.lekcje.split(",") if x] or sorted(
@@ -116,6 +118,10 @@ def main():
     KAND.mkdir(parents=True, exist_ok=True)
     for p in pages:
         shutil.copy(DIST / p, KAND / p)
+    if a.start and not (PROF / f"{a.profil}.json").exists():
+        base = load(a.start)
+        save(a.profil, {**{k: v for k, v in base.items() if k not in ("log", "lekcje")},
+                        "log": [f"start z profilu {a.start}"], "lekcje": [x for x in a.lekcje.split(",") if x]})
     prof = load(a.profil)
     ok, size, out = test(prof, pages)
     print(f"start {a.profil}: {'OK' if ok else 'FAIL'} {size/1e6:.2f} MB lekcje={len(pages)}", flush=True)

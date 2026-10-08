@@ -52,7 +52,7 @@ node tools/test_lekcje.cjs --wzorzec=dist/_wz/wzorzec.json   # z porównaniem tr
    - 1a: dziedziny wg znaczenia nazwy klucza (`REGULY` w `dane_eksport.py`): pierwiastki 481 KB, substancje 131, reakcje 94, weryfikacja 835 (audyty, rejestry, kontrakty — lekcje ich nie czytają), reszta drobna; sekcja-twórca → `zrodlo` w `_indeks.json`.
    - 1b ✅ `python3 tools/che.py dane --lekcje` → `engine/registry/dane_lekcji.json` (sonda Proxy w `test_lekcje.cjs --klucze=`). **Wynik:** odchudzony silnik ma 41 kluczy (~300 KB danych z 1,55 MB); wszystkie 11 lekcji czyta te same 36 kluczy, różnice tylko `CHAR_COLORS`, `MOL3D_SETS`. Dane per lekcja prawie nic nie dadzą na rozmiarze — reszta (~1,25 MB) to kod, GFX i CSS.
    - 1c (do decyzji): ładowanie danych z JSON zamiast sekcji — zysk porządkowy (dane oddzielone od kodu, edycja w jednym miejscu), nie rozmiarowy. Większy zysk rozmiaru: krok 2 (profil per lekcja dla kodu/GFX) i 4 (CSS/DOM).
-2. Profil per lekcja (zamiast jednego wspólnego) na bazie dziedzin z `engine/registry/lessons.json`.
+2. Profil per lekcja (w toku): `python3 tools/odchudz.py --profil <LEKCJA> --lekcje <LEKCJA> --start wspolny --etap mod,pod,anon,widoki` (~5 min/lekcję, mało tokenów — tylko czekanie). Gotowe: **F04_atom 1,55 → 1,13 MB** (`engine/registry/profile/F04_atom.json`; md2html sam bierze `dist/viz/<lekcja>.js` po `che.py silnik`). Zostało 10 lekcji — pętla po kolei (wspólny katalog `dist/_kand`, nie równolegle). Wymaga `python3 tools/wzorzec.py 6` raz na sesję (~5 min).
 3. Przerobić `f05-izotopy-v01` na komponenty atlasu.
 4. Odchudzanie CSS/DOM z porównaniem zrzutów.
 5. Potem — na polecenie użytkownika — dalsze lekcje F06…
