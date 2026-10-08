@@ -5,6 +5,7 @@ import os, subprocess
 
 PROG = 50 * 1024
 POMIN = ('.specstory/', '.vscode/', '.claude/')
+ZWIN = ('chemia/archiwum',)
 NIE_CZYTAC = ('che-viz.js', '/dist/', '.specstory/', 'chemia/archiwum/', '/modules/_anon')
 
 pliki = subprocess.run(['git', 'ls-files'], capture_output=True, text=True).stdout.split('\n')
@@ -24,6 +25,11 @@ out = ['# MAPA repo (generowana: `python3 narzedzia/mapa.py`)', '',
 for folder in sorted(grupy):
     lst = sorted(grupy[folder])
     out.append(f'## {folder}  ({len(lst)} pl., {kb(sum(s for _, s in lst))})')
+    zwin = folder.startswith(ZWIN) or len(lst) > 12
+    if zwin:
+        duze = [x for x in lst if x[1] > PROG]
+        out.append(f'- (zwinięte; `ls {folder}`){" — duże:" if duze else ""}')
+        lst = duze[:8]
     for p, s in lst:
         znak = '⛔' if any(x in '/' + p for x in NIE_CZYTAC) else ('⚠' if s > PROG else '')
         out.append(f'- {znak}`{os.path.basename(p)}` {kb(s)}')
