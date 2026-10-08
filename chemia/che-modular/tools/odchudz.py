@@ -43,10 +43,7 @@ def save(name, prof):
 
 
 def build(prof):
-    keep_sections = [s["file"].split("/", 1)[1] for s in ANON if s["file"] not in set(prof["drop_sections"])]
-    allow = {k: ALL_GFX[k] - set(prof["drop_gfx"].get(k, [])) for k in ALL_GFX}
-    html = silnik.lab_html(drop=set(prof["drop_mods"]), gfx_allow=allow, sections=keep_sections)
-    return silnik.che_viz(html)
+    return silnik.z_profilu(prof)
 
 
 def test(prof, pages):
@@ -69,6 +66,9 @@ def apply(prof, kind, items):
     p = json.loads(json.dumps(prof))
     if kind == "mod":
         p["drop_mods"] += items
+    elif kind == "css":
+        p.setdefault("drop_css", [])
+        p["drop_css"] += items
     elif kind == "anon":
         p["drop_sections"] += items
     else:
@@ -138,6 +138,17 @@ def main():
             done = set(prof["drop_sections"])
         rest = [s["file"] for s in ANON if s["file"] not in done and s["num"] > 8]
         prof = ddmin(a.profil, prof, "anon", rest, "anon reszta", pages, 3)
+    if "pod" in et:   # całe podmoduły _anon_001 (sections/anon001/<podmoduł>/)
+        done = set(prof["drop_sections"])
+        mods = sorted({s.get("modul", "") for s in ANON} - {"", "rdzen"})
+        for m in mods:
+            grp = [s["file"] for s in ANON if s.get("modul") == m and s["file"] not in done and s["num"] > 8]
+            prof = ddmin(a.profil, prof, "anon", grp, "pod " + m, pages, 3)
+            done = set(prof["drop_sections"])
+    if "css" in et:   # bloki CSS labu (engine/src/style/)
+        for f in sorted(p.name for p in (ROOT / "engine/src/style").glob("*.css")):
+            if f not in prof.get("drop_css", []):
+                prof = ddmin(a.profil, prof, "css", [f], "css " + f, pages, 1)
     ids, keys = referenced(pages)
     if "widoki" in et:
         grp = sorted(ALL_GFX["widoki"] - ids - set(prof["drop_gfx"].get("widoki", [])))

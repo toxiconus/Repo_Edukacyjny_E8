@@ -43,18 +43,21 @@ def module_body(c, gfx_allow=None, przedmiot="chemia", sections=None):
     return (MOD / c["file"]).read_text(encoding="utf-8")   # zapas: moduł z ekstrakcji
 
 
-def skeleton():
-    """HTML labu: engine/src/lab/szkielet.html + CSS z engine/src/style (zapas: modules/_lab_skeleton.html)."""
+def skeleton(drop_css=None):
+    """HTML labu: engine/src/lab/szkielet.html + CSS z engine/src/style (zapas: modules/_lab_skeleton.html).
+    drop_css: nazwy plików CSS pominiętych (blok <style> zostaje pusty)."""
     p = SRC / "lab/szkielet.html"
     if not p.exists():
         return (MOD / "_lab_skeleton.html").read_text(encoding="utf-8")
-    return re.sub(r"/\*@@CSS ([\w.-]+)@@\*/", lambda m: (SRC / "style" / m.group(1)).read_text(encoding="utf-8"),
+    drop_css = drop_css or set()
+    return re.sub(r"/\*@@CSS ([\w.-]+)@@\*/",
+                  lambda m: "" if m.group(1) in drop_css else (SRC / "style" / m.group(1)).read_text(encoding="utf-8"),
                   p.read_text(encoding="utf-8"))
 
 
-def lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None):
+def lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None, drop_css=None):
     drop = drop or set()
-    skel = skeleton()
+    skel = skeleton(drop_css)
 
     def rep(m):
         c = BY_INDEX[int(m.group(1))]
@@ -93,7 +96,8 @@ def z_profilu(prof):
         for it in items:
             allg.setdefault(it["kind"], set()).add(it["id"])
     allow = {k: v - set(prof.get("drop_gfx", {}).get(k, [])) for k, v in allg.items()}
-    return che_viz(lab_html(drop=set(prof.get("drop_mods", [])), gfx_allow=allow, sections=keep))
+    return che_viz(lab_html(drop=set(prof.get("drop_mods", [])), gfx_allow=allow, sections=keep,
+                            drop_css=set(prof.get("drop_css", []))))
 
 
 def sha(s):

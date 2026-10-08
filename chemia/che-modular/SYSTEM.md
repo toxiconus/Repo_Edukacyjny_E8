@@ -12,7 +12,7 @@ Silnik jest w gicie jako **źródła** (od 2026-10-08); monolit v0_57 służy ju
 | Szablon lekcji | `lessons-md/_SZABLON/LEKCJA.md` | rzadko |
 | Wygląd i rozszerzenia lekcji | `engine/src/lekcja/` (lekcja.css/js, `rozszerzenia.js` — nowe modele, pracownie, zlewki) | **tak** |
 | Moduły silnika | `engine/src/moduly/<id>.js`; duże (≥30 KB) pocięte: `engine/src/moduly/<id>/NN_*.js` + `_kolejnosc.txt` | tak, małymi krokami |
-| Dane `_anon_001` | `sections/anon001/sNNN.js` (280 sekcji) + `anon001_catalog.json` (tagi) | tak (K7: podział domenami) |
+| Rdzeń danych `_anon_001` | `sections/anon001/<podmoduł>/sNNN.js` (280 sekcji w 13 podmodułach: rdzen, dane-pierwiastki, dane-reakcje, dane-substancje, dane-kwasy-zasady, dane-termo-redoks, dane-jadrowe, organiczna, edukacja, nauka-referencje, audyt, gfx-ui, inne) + `anon001_catalog.json` (num = kolejność, `modul`) | tak |
 | GFX i widoki per element | `engine/src/gfx/<przedmiot>/<rodzaj>/<id>.js` | **tak** |
 | Wspólny kod GFX/VIEW | `engine/src/gfx/_szkielet/<moduł>/NN_*.js` (markery `/*@@GFX rodzaj/id@@*/`) | ostrożnie |
 | HTML i CSS labu | `engine/src/lab/szkielet.html` (markery `/*@@MOD n@@*/`, `/*@@CSS plik@@*/`) + `engine/src/style/NN_*.css` | tak |
@@ -20,6 +20,8 @@ Silnik jest w gicie jako **źródła** (od 2026-10-08); monolit v0_57 służy ju
 | Rejestr zależności | `engine/registry/*.json`, profile odchudzania `engine/registry/profile/` | przy nowej lekcji / elemencie |
 | Ekstrakcja z monolitu | `modules/` (poza gitem; `sh tools/pobierz_moduly.sh`) | nigdy — tylko weryfikacja |
 | Wyniki | `dist/` — poza gitem | nigdy ręcznie |
+
+**Podmoduły sekcji:** przydział z pomiaru w przeglądarce — `tools/mapa_danych.py` (sonda między sekcjami: które klucze `CHE.DATA` i przestrzenie `CHE.*` tworzy sekcja → `engine/registry/mapa_sekcji.json`), potem `tools/dziedziny.py` (raport / `--przenies`).
 
 **Części plików:** `tools/podziel.mjs <plik> <katalog> [KB]` tnie na granicach instrukcji (bezstratnie), `tools/scal.py` składa. Złożenie wszystkich źródeł = monolit bajt w bajt (`python3 tools/silnik.py`). **Nie uruchamiać ponownie** `anon_split.mjs`, `gfx_split.mjs`, `zrodla_silnika.py` — nadpisałyby edytowane źródła (to narzędzia jednorazowej ekstrakcji).
 
