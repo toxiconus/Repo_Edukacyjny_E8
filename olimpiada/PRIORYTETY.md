@@ -45,7 +45,7 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 | # | lekcja | dlaczego | stan |
 |---|---|---|---|
 | B1 | **REV02 Różnorodność życia** (klasyfikacja, wirusy, bakterie, rośliny, grzyby, zwierzęta, doświadczenia) | etap szkolny pkt II | **[V] gotowa 2026-10-08** — `biologia/bio/md/REV02_roznorodnosc_zycia.md` (treść wg podstawy 2024 + zakresu LKO; w repo nie było materiału kl. 5–6) |
-| B1a | **REV01 BIO Organizacja i chemizm życia** (komórka, mikroskop, fotosynteza, oddychanie i fermentacja, czynności życiowe; doświadczenia: fotosynteza, drożdże + CO₂) | etap szkolny pkt I | [ ] — źródło: `biologia/md/L001, L004–L008` |
+| B1a | **REV01 BIO Organizacja i chemizm życia** (komórka, mikroskop, fotosynteza, oddychanie i fermentacja, czynności życiowe; doświadczenia: fotosynteza, drożdże + CO₂) | etap szkolny pkt I | **[V] gotowa 2026-10-08** — `biologia/bio/md/REV01_organizacja_i_chemizm_zycia.md` (z L001, L004–L008 + uzupełnienia) |
 | B1b | genetyka bieżąca (L010 gotowa → L011…) | oceny w kl. 8; konkurs dopiero etap III | L010 gotowa |
 | B2 | człowiek + homeostaza (kl. 7) | etap rejonowy | [ ] |
 
