@@ -95,8 +95,11 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 - `chemia/lekcje_md/F_nowe/` — kanony F od użytkownika (**v16.0 = najnowszy**, v15 + audyt, v14), prompty ulepszeń (`PROMPT_ulepszenia_F.md`, `PROMPT_ulepszenia_F_v15.md`), notatki autora F00 v1.1 (mapowanie stary → nowy kanon, modele silnika per lekcja F01–F21, cz. X) i oryginał F00 v1.0.
 
 **Następne kroki (kolejność)**
-1. **F02 Materia i substancje** z kanonu v16 (`lekcje_md/F_nowe/…v16.0…md`, sekcja `# CHE.01F.02-`) → `che/md/F02_*.md` tą samą metodą co F01; czytać tylko sekcję lekcji (grep numerów wierszy), modele z F00 cz. X.
-2. Kolejne F03–F21 tak samo; cienkie w v16 (F10, F15, F18–F21) — najpierw sprawdzić, czy użytkownik ma nowszą wersję.
+1. **F02 Materia i substancje** z kanonu **v17** (`lekcje_md/F_nowe/…v17.0…md` = v16 + warstwa v0.2x; v16 zostaje jako archiwum), sekcja `# CHE.01F.02-`) → `che/md/F02_*.md` tą samą metodą co F01; czytać tylko sekcję lekcji (grep numerów wierszy), modele z F00 cz. X.
+2. Kolejne F03–F21 tak samo; cienkie w v16 (F10, F15, F18–F21; v17 dodaje do F18–F20 po ~16 akapitów) — najpierw sprawdzić, czy użytkownik ma nowszą wersję.
 3. GFX do zbudowania od podstaw (zasada GFX): magnes (Fe + S), lód pływający, osad i para w parownicy, płomień w tyglu; modele: rozdzielanie mieszanin (F03 — następny), izotopy (F05), energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17). Zlewki F01 — zrobione.
 4. `PLAN_LEKCJI.md` i kody w kanonie: blok F na F01–F21.
 5. Otwarte z wcześniej: mapowanie L006–L013 → kody (O, R, X, LAB, REV) do potwierdzenia; N06 Systematyka; testy N01–N03 → `::: test`; tryb Noc w `lekcja.css`; GitHub Pages (użytkownik).
+
+
+- 2026-10-08 · Kanon F **v17.0** = v16 (pełna treść) + akapity nowe z pliku użytkownika CLEAN v0.2x (yaml zależności per lekcja, rozbudowa F01–F06, F09, F18–F20, audyt archiwalny L001–L013, zestawy interleavingu). CLEAN miał puste znaczniki zamiast treści F02–F21 — nie zastępuje v16. Poprawiono: ⁴⁰Ca²⁺ (było ²⁴Ca, n=4). Plany kursu: `chemia/plany/`.
