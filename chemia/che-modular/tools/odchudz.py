@@ -145,7 +145,7 @@ def main():
             grp = [s["file"] for s in ANON if s.get("modul") == m and s["file"] not in done and s["num"] > 8]
             prof = ddmin(a.profil, prof, "anon", grp, "pod " + m, pages, 3)
             done = set(prof["drop_sections"])
-    if "css" in et:   # bloki CSS labu (engine/src/style/)
+    if "css" in et and "--css-tak" in sys.argv:   # bloki CSS labu — test NIE widzi wyglądu; tylko z oceną wizualną
         for f in sorted(p.name for p in (ROOT / "engine/src/style").glob("*.css")):
             if f not in prof.get("drop_css", []):
                 prof = ddmin(a.profil, prof, "css", [f], "css " + f, pages, 1)

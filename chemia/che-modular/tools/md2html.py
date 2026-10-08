@@ -428,7 +428,10 @@ if __name__ == '__main__':
         os.makedirs(os.path.join(ROOT, 'dist', 'jeden_plik'), exist_ok=True)
         # silnik: odchudzony dla tej lekcji (dist/viz/<lekcja>.js, tools/silnik.py / odchudz.py) albo pełny
         vp = os.path.join(ROOT, 'dist', 'viz', fn + '.js')
-        if not os.path.exists(vp): vp = os.path.join(ROOT, 'dist', 'viz', 'wspolny.js')
+        if not os.path.exists(vp):   # profil wspólny tylko dla lekcji, na których go przetestowano
+            try: lk = json.load(open(os.path.join(ROOT, 'engine', 'registry', 'profile', 'wspolny.json'), encoding='utf-8')).get('lekcje', [])
+            except Exception: lk = []
+            vp = os.path.join(ROOT, 'dist', 'viz', 'wspolny.js') if fn in lk else ''
         if not os.path.exists(vp): vp = os.path.join(ROOT, 'dist', 'che-viz.js')
         viz = open(vp, encoding='utf-8').read().replace('</', '<\\/')
         a, b = pg.split('<script src="che-viz.js"></script>', 1)
