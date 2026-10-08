@@ -1,6 +1,6 @@
 # PLAN PRACY — CHE modular · od 2026-10-08
 
-Czytaj ten plik zaraz po `CLAUDE.md`. Dziennik kroków: `PROGRESS.md`. Historia decyzji ZIP: `PODSUMOWANIE.md`, `AUDYT_I_PLAN.md` (nie czytać przy zwykłej pracy).
+Czytaj ten plik zaraz po `CLAUDE.md`; zasady i polecenia: `SYSTEM.md`. Dziennik kroków: `PROGRESS.md`. Historia decyzji ZIP: `PODSUMOWANIE.md`, `AUDYT_I_PLAN.md` (nie czytać przy zwykłej pracy).
 
 ## 1. Cele (bez zmian merytorycznych, nowe podejście)
 
@@ -43,10 +43,11 @@ Czytaj ten plik zaraz po `CLAUDE.md`. Dziennik kroków: `PROGRESS.md`. Historia 
 
 | # | Krok | Gotowe, gdy |
 |---|---|---|
+| **K0** ✅ | Systematyzacja: `SYSTEM.md` (jeden dialekt MD = kanon v0_59 + aliasy `$`-makr), `tools/che.py` (jedno polecenie), `_SZABLON/LEKCJA.md`, bezstratny podział GFX/VIEW per element (`gfx_split.mjs` / `gfx_join.py`, sha1 = oryginał) | zrobione 2026-10-08 |
 | **K1** | Testy jednym poleceniem: (a) `test_pack.js` Chromium 390 px — treść lekcji, 0 błędów konsoli, brak przewijania w bok, modele zamontowane; (b) `test_kompletnosc` — inwentarz danych/GFX/VIEW z modułów = monolit | oba testy działają, pokazują FAIL dla obecnych packów |
 | **K2** | Naprawa packera: pack z **wyłączonymi filtrami** (`--no-gfx-filter`, bez VIEW/anon cięcia) musi przejść K1 → baza odniesienia | N01 pack bez filtrów: 0 błędów, treść widoczna |
-| **K3** | Włączać filtry po kolei (CSS → źródła lekcji → anon001 → VIEW → GFX), po każdym K1; naprawić cięcie składni (D4) | N01–N04, FIZ01 przechodzą K1 z filtrami |
-| **K4** | Builder MD rozumie dialekt v0_59 (aliasy → makra); `md_build_lesson.py N01` z `_zrodla_v0_59/N01_tlenki.md` | pełna N01 z MD, parity bez luk, K1 OK |
+| **K3** | Włączać filtry po kolei (CSS → źródła lekcji → anon001 → VIEW → GFX), po każdym K1; filtr GFX/VIEW przez `gfx_join.join(mod, allow)` zamiast cięcia tekstu (D4) | N01–N04, FIZ01 przechodzą K1 z filtrami |
+| **K4** | Builder MD rozumie kanon v0_59 + aliasy `$`-makr i porządkowanie klas (SYSTEM.md §3); `md_build_lesson.py N01` z `_zrodla_v0_59/N01_tlenki.md` | pełna N01 z MD, parity bez luk, K1 OK |
 | **K5** | Połączenie: MD-build + pack silnika = jedna lekcja offline (`meta.json` → packer) | N01 offline z modelami i zlewkami, K1 OK |
 | **K6** | `rozszerzenia.js` z v0_59 → moduły domen (wodorki, nowe zlewki); N02–N05, FIZ01 przez ten sam pipeline; N05 do `lessons.json` | 6 lekcji OK w K1, kompletność OK |
 | **K7** | Podział danych na pliki domen (`engine/src/data/<domena>.js`) i GFX per plik; `pick()` wg manifestu; węższe tagi core | ≤ 1,4 MB / lekcja, K1 i kompletność OK |
@@ -58,9 +59,7 @@ Otwarte błędy z v0_59 do przeniesienia przy K4–K6: tryb Noc (podwójne odwr�
 
 ```
 cd chemia/che-modular
-sh tools/pobierz_moduly.sh            # raz na sesję (modules/ nie są w gicie)
-python3 tools/pack_lesson.py N01      # pack → dist/
-python3 tools/md_parity.py N01
-python3 tools/md_build_lesson.py N01
+python3 tools/che.py init      # raz na sesję
+python3 tools/che.py --help    # reszta poleceń (SYSTEM.md §2)
 ```
 Gałąź: `claude/che-lekcje`. Wyniki (`dist/`, `build/`) poza gitem.

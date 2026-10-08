@@ -1,0 +1,7 @@
+V.define('sole-doswiadczenia-v01',{title:'Pracownia: doświadczenia z solami',tag:'GFX',hint:'Otrzymywanie soli, strącanie osadów, wypieranie metali, węglany, hydrat i odczyn roztworów soli — animacja, równanie cząsteczkowe i jonowe z silnika.',foot:'GFX.rx (barwy CHE.COLORS) · CHE.REACTION · CHE.IONIC',
+ build:function(host){host.innerHTML='';var G=C.LAB&&C.LAB.GFX;if(!G||!G.rx){host.textContent='Brak GFX.rx';return}var bars=el('div'),area=el('div');host.append(bars,area);var first=null;
+  GROUPS.forEach(function(g){var ks=g[1].filter(function(k){return G.rx.get(k)});if(!ks.length)return;var r=el('div','r','<b style="min-width:150px">'+g[0]+':</b> ');ks.forEach(function(k){first=first||k;var b=el('button',null,G.rx.get(k).n);b.type='button';b.dataset.k=k;b.onclick=function(){[].forEach.call(bars.querySelectorAll('button'),function(x){x.classList.toggle('on',x===b)});card(area,k)};r.appendChild(b)});bars.appendChild(r)});
+   
+  host._show=function(k){var b=bars.querySelector('button[data-k="'+k+'"]');if(b){b.click();return true}return false};
+  var P=C.PRACOWNIA;if(P){(P.live=P.live||{})['sole-doswiadczenia-v01']=host;var pk=P.pending;P.pending=null;if(pk&&host._show(pk))return}
+  if(first){bars.querySelector('button').classList.add('on');card(area,first)}}});

@@ -1,0 +1,1 @@
+P('hyd-nacl',{qualitative:1,n:'NaCl + H₂O (+ wskaźnik uniwersalny)',solid:pw(wh),l0:u(7),l1:u(7),out:['barwa'],eq:'NaCl → Na⁺ + Cl⁻ (brak hydrolizy)',why:'Sól mocnego kwasu i mocnej zasady — wskaźnik pozostaje zielony, pH ≈ 7.'});

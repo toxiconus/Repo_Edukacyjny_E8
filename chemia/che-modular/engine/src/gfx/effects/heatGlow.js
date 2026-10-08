@@ -1,0 +1,1 @@
+effect('heatGlow',{layer:'back',label:'Poświata cieplna',defaults:{color:null},schema:{color:{t:'color',l:'Barwa poświaty'}},draw:e=>{const s=e.st;const gc=e.o.color||[255,140,40];if(!(s.heat>0))return;const c=e.c;c.save();c.shadowColor=rgba(gc,Math.min(1,s.heat/2));c.shadowBlur=26;e.path();c.strokeStyle=rgba(gc,.8);c.lineWidth=6;c.stroke();c.restore()}});

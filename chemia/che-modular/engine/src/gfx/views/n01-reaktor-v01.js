@@ -1,0 +1,20 @@
+V.define('n01-reaktor-v01',{title:'Co powstanie? Tlenek + woda / kwas / zasada — przewiduj, potem sprawdź',tag:'CHE',
+ hint:'Wybierz tlenek i drugi reagent. Najpierw zaznacz swoje przewidywanie, dopiero potem „Sprawdź”: silnik przejdzie procedurę 7 kroków (rozpoznaj → stopień utlenienia → charakter → reagent → schemat → produkt → równanie z bilansem).',
+ foot:'CHE.OXIDES.predict (procedura MD 0A) · równania z CHE.REACTION albo bilans liczony przez silnik · wygląd: GFX.',
+ build:function(host){host.innerHTML='';var A=OXA(),OX=D().OXIDES,st={f:'CuO',r:'HCl',guess:null,res:null,t0:0};
+  var bar=el('div','r');host.appendChild(bar);var sel=el('select');Object.keys(OX).forEach(function(f){if(f==='H2O')return;var o=OX[f];var op=el('option',null,A.pretty(f)+' — '+o.name);op.value=f;sel.appendChild(op)});sel.value=st.f;var l=el('label',null,'Tlenek ');l.appendChild(sel);bar.appendChild(l);
+  var rb=el('div','r');host.appendChild(rb);var rB=[];Object.keys(A.reagents).forEach(function(k){var b=btn(rb,A.pretty(k)+' <small style="opacity:.7">'+A.reagents[k].kind+'</small>',function(){st.r=k;reset();rB.forEach(function(q){q.classList.toggle('on',q===b)})});rB.push(b);if(k===st.r)b.classList.add('on')});
+  var gb=el('div','r');host.appendChild(gb);gb.innerHTML='<span style="font:700 13px system-ui;margin-right:6px">Twoje przewidywanie:</span>';var G1=[['nie','nie zachodzi'],['wod','wodorotlenek'],['kw','kwas'],['sol','sól + woda'],['kpx','sól kompleksowa (LO)']],gB=[];
+  G1.forEach(function(g){var b=btn(gb,g[1],function(){st.guess=g[0];gB.forEach(function(q){q.classList.toggle('on',q===b)})});gB.push(b)});btn(gb,'Sprawdź ▶',function(){run()},'on');
+  var row=el('div');row.style.cssText='display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:12px;align-items:start;margin-top:6px';host.appendChild(row);var left=el('div'),out=el('div');row.append(left,out);
+  sel.onchange=function(){st.f=sel.value;reset()};
+  function cat(r){if(!r.occurs)return'nie';if(r.kind==='woda')return r.char==='kwasowy'?'kw':'wod';return/kompleks/.test(r.schema)?'kpx':'sol'}
+  function reset(){st.res=null;st.guess=null;gB.forEach(function(q){q.classList.remove('on')});out.innerHTML='<div class="note">Zaznacz przewidywanie i kliknij „Sprawdź”. Wskazówka: najpierw ustal charakter tlenku.</div>'}
+  function run(){var r=A.predict(st.f,st.r);st.res=r;st.t0=performance.now();var c=cat(r),ok=st.guess?st.guess===c:null;
+   out.innerHTML=(ok===null?'<div class="note">Bez przewidywania — następnym razem spróbuj najpierw sam.</div>':'<div class="note" style="border-color:'+(ok?'#16a34a':'#dc2626')+'"><b style="color:'+(ok?'#16a34a':'#dc2626')+'">'+(ok?'Dobrze przewidziane.':'Inaczej niż przewidziałeś — prześledź kroki.')+'</b></div>')+
+    '<ol style="margin:6px 0 6px 18px;padding:0;font:14px/1.5 system-ui">'+r.steps.map(function(s){return'<li style="list-style:none;margin-left:-18px">'+s+'</li>'}).join('')+'</ol>'+(r.occurs?eqHtml(r.equation)+(r.rx?'<div style="font:12px system-ui;opacity:.7">reakcja z bazy silnika: '+r.rx+((D().REACTION_DATA||{})[r.rx]&&D().REACTION_DATA[r.rx].observation?' · obserwacja: '+D().REACTION_DATA[r.rx].observation:'')+'</div>':'<div style="font:12px system-ui;opacity:.7">równanie zbudowane i zbilansowane przez silnik (CHE.OXIDES.predict)</div>'):'<div class="note">'+(r.note||'')+'</div>')}
+  G().mount(left,{height:250,parts:[{id:'beaker',x:.05,y:.05,w:.9,h:.92,get:function(){var o=OX[st.f]||{},r=st.res,k=r?Math.min(1,(performance.now()-st.t0)/1800):0,go=r&&r.occurs;var base=st.r==='H2O'?[226,236,244]:[232,236,240],end=base;
+     if(go){if(st.r==='H2O')end=uni(phAfter(st.f));else{var cc=CATCOL[o.el];if(cc&&r.kind==='kwas')end=cc}}var liq=base.map(function(v,i){return Math.round(v+(end[i]-v)*k)});
+     var sol=o.state==='s'?[{col:rgb(o.color||'#f1f5f9'),eq:go?2.6*(1-k):2.6,shape:'powder'}]:[];
+     return{liquid:liq,level:.55,solids:sol,gas:o.state==='g'&&!(go&&k>.6)?.5:0,heat:go&&(st.f==='CaO'||st.f==='SO3'||st.f==='Na2O')?k*1.5:0,T:25,label:A.pretty(st.f)+' + '+A.pretty(st.r)}}}]});
+  reset()}});

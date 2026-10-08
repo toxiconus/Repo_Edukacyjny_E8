@@ -1,0 +1,1 @@
+P('baoh2H2so4',{n:'Ba(OH)₂ + H₂SO₄ (+ fenoloftaleina)',l0:pink,l1:php,ppt:'ppt-baso4',out:['osad','barwa'],teacher:1,why:'Jednocześnie: zanik barwy (H⁺ + OH⁻ → H₂O) i biały osad BaSO₄.'});

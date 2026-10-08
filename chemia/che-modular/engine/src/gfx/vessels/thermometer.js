@@ -1,0 +1,1 @@
+vessel('thermometer',{custom:thermometer});

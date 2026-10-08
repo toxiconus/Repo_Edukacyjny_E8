@@ -1,0 +1,1 @@
+P('baoH2o',{n:'BaO + H₂O (+ fenoloftaleina)',solid:{col:ox,eq:4,end:0,t:'powder',shape:'powder'},l0:php,l1:pink,out:['barwa'],heat:1.4,T:50,teacher:1,why:'Tlenek znika, roztwór malinowy — powstaje Ba(OH)₂ (związki baru trujące).'});

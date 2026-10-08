@@ -1,0 +1,1 @@
+vessel('electroscope',{custom:(c,r,st,env)=>{let s=st;if(st.ball==null){const P=C.PHYS&&C.PHYS.electro,t=performance.now()/1000,d=.55+.45*Math.sin(t*.7),R=P?P.electroscope(0,-8,d,false):{ball:0,leaves:0};s={ball:R.ball,leaves:R.leaves,rod:{q:-8,d}}}ELX.electroscope(c,r,s,{th:env.th})}});

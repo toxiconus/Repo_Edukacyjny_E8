@@ -1,0 +1,1 @@
+vessel('testTube',{path:(c,r)=>{const w=Math.min(r.w,70),x=r.x+(r.w-w)/2;c.beginPath();c.moveTo(x,r.y);c.lineTo(x,r.y+r.h-w/2);c.arc(x+w/2,r.y+r.h-w/2,w/2,Math.PI,0,true);c.lineTo(x+w,r.y)},hmax:.8,pad:2,rim:r=>{const w=Math.min(r.w,70),x=r.x+(r.w-w)/2;return[x,x+w,r.y]},lw:3});

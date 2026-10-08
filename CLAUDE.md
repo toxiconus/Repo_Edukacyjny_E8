@@ -4,7 +4,7 @@ Przeczytaj ten plik jako pierwszy, zanim otworzysz cokolwiek innego. Obowiązuje
 
 ## Kolejność startu
 1. Ten plik.
-2. `chemia/che-modular/PLAN_PRACY.md`: cele, audyt, kroki K1–K8 (praca CHE). Potem `tail PROGRESS.md`.
+2. `chemia/che-modular/PLAN_PRACY.md`: cele, audyt, kroki K0–K8 (praca CHE). Potem `tail PROGRESS.md`. Polecenia, dialekt MD, GFX: `SYSTEM.md` (czytaj tylko potrzebną sekcję).
 3. Tylko pliki dotyczące zadania (np. `lessons-md/_zrodla_v0_59/<KOD>_*.md`, jeden tool z `tools/`).
 
 Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biologia/`, `angielski/`, `chemia/archiwum/` (tylko do odczytu, opis w `archiwum/OPIS.md`), `PODSUMOWANIE.md`/`AUDYT_I_PLAN.md`, jeśli zadanie ich nie dotyczy.

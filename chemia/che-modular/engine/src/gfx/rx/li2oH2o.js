@@ -1,0 +1,1 @@
+P('li2oH2o',{n:'Li₂O + H₂O (+ fenoloftaleina)',solid:{col:ox,eq:4,end:0,t:'powder',shape:'powder'},l0:php,l1:pink,out:['barwa'],heat:.8,T:35,why:'Powstaje LiOH — roztwór zasadowy.'});

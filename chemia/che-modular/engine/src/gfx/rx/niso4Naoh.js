@@ -1,0 +1,1 @@
+P('niso4Naoh',{n:'NiSO₄ + NaOH',l0:'ion-ni2',ppt:'ppt-ni-oh-2',out:['osad'],why:'Jasnozielony osad Ni(OH)₂.'});

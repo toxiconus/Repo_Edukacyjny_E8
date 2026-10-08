@@ -1,0 +1,1 @@
+P('alcl3Naoh',{n:'AlCl₃ + NaOH (bez nadmiaru)',ppt:'ppt-al-oh-3',out:['osad'],why:'Biały, galaretowaty osad Al(OH)₃ — w nadmiarze NaOH znika.'});

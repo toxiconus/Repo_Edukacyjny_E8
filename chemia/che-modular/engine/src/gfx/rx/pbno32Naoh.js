@@ -1,0 +1,1 @@
+P('pbno32Naoh',{n:'Pb(NO₃)₂ + NaOH',ppt:'ppt-pb-oh-2',out:['osad'],teacher:1,why:'Biały osad Pb(OH)₂ (amfoteryczny).'});

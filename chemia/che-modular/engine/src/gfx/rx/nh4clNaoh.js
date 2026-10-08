@@ -1,0 +1,1 @@
+P('nh4clNaoh',{n:'NH₄Cl + NaOH (ogrzewanie)',out:['gaz'],gas:'NH3',bubN:.6,heat:1,T:60,why:'Wydziela się amoniak — zapach, wilgotny papierek uniwersalny niebieszczeje.'});

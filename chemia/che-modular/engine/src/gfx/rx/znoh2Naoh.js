@@ -1,0 +1,1 @@
+P('znoh2Naoh',{n:'Zn(OH)₂ + NaOH (nadmiar)',solid:{col:'ppt-zn-oh-2',eq:4,end:0,t:'powder',shape:'powder'},out:['nic'],why:'Osad roztwarza się — amfoteryczność.'});

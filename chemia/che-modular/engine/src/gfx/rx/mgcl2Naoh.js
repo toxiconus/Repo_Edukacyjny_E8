@@ -1,0 +1,1 @@
+P('mgcl2Naoh',{n:'MgCl₂ + NaOH',ppt:'ppt-mg-oh-2',out:['osad'],why:'Biały, galaretowaty osad Mg(OH)₂.'});

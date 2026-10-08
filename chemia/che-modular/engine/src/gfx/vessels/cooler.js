@@ -1,0 +1,1 @@
+vessel('cooler',{custom:cooler});

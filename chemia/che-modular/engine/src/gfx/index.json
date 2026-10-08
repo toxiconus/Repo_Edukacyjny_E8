@@ -1,0 +1,1056 @@
+{
+ "che-lab-engine-v001": [
+  {
+   "kind": "vessels",
+   "id": "beaker",
+   "file": "vessels/beaker.js",
+   "bytes": 369
+  },
+  {
+   "kind": "vessels",
+   "id": "testTube",
+   "file": "vessels/testTube.js",
+   "bytes": 279
+  },
+  {
+   "kind": "vessels",
+   "id": "cylinder",
+   "file": "vessels/cylinder.js",
+   "bytes": 476
+  },
+  {
+   "kind": "vessels",
+   "id": "flask",
+   "file": "vessels/flask.js",
+   "bytes": 476
+  },
+  {
+   "kind": "vessels",
+   "id": "roundFlask",
+   "file": "vessels/roundFlask.js",
+   "bytes": 379
+  },
+  {
+   "kind": "vessels",
+   "id": "volFlask",
+   "file": "vessels/volFlask.js",
+   "bytes": 467
+  },
+  {
+   "kind": "vessels",
+   "id": "funnel",
+   "file": "vessels/funnel.js",
+   "bytes": 274
+  },
+  {
+   "kind": "vessels",
+   "id": "petri",
+   "file": "vessels/petri.js",
+   "bytes": 125
+  },
+  {
+   "kind": "vessels",
+   "id": "evapDish",
+   "file": "vessels/evapDish.js",
+   "bytes": 245
+  },
+  {
+   "kind": "vessels",
+   "id": "crucible",
+   "file": "vessels/crucible.js",
+   "bytes": 733
+  },
+  {
+   "kind": "vessels",
+   "id": "watchGlass",
+   "file": "vessels/watchGlass.js",
+   "bytes": 204
+  },
+  {
+   "kind": "vessels",
+   "id": "dropFunnel",
+   "file": "vessels/dropFunnel.js",
+   "bytes": 487
+  },
+  {
+   "kind": "effects",
+   "id": "heatGlow",
+   "file": "effects/heatGlow.js",
+   "bytes": 360
+  },
+  {
+   "kind": "effects",
+   "id": "liquid",
+   "file": "effects/liquid.js",
+   "bytes": 732
+  },
+  {
+   "kind": "effects",
+   "id": "meniscus",
+   "file": "effects/meniscus.js",
+   "bytes": 330
+  },
+  {
+   "kind": "effects",
+   "id": "precipitate",
+   "file": "effects/precipitate.js",
+   "bytes": 1286
+  },
+  {
+   "kind": "effects",
+   "id": "plume",
+   "file": "effects/plume.js",
+   "bytes": 345
+  },
+  {
+   "kind": "effects",
+   "id": "turbidity",
+   "file": "effects/turbidity.js",
+   "bytes": 500
+  },
+  {
+   "kind": "effects",
+   "id": "solids",
+   "file": "effects/solids.js",
+   "bytes": 1444
+  },
+  {
+   "kind": "effects",
+   "id": "bubbles",
+   "file": "effects/bubbles.js",
+   "bytes": 2299
+  },
+  {
+   "kind": "effects",
+   "id": "foam",
+   "file": "effects/foam.js",
+   "bytes": 383
+  },
+  {
+   "kind": "effects",
+   "id": "ripples",
+   "file": "effects/ripples.js",
+   "bytes": 315
+  },
+  {
+   "kind": "effects",
+   "id": "dropMix",
+   "file": "effects/dropMix.js",
+   "bytes": 999
+  },
+  {
+   "kind": "effects",
+   "id": "schlieren",
+   "file": "effects/schlieren.js",
+   "bytes": 524
+  },
+  {
+   "kind": "effects",
+   "id": "stirBar",
+   "file": "effects/stirBar.js",
+   "bytes": 402
+  },
+  {
+   "kind": "effects",
+   "id": "condensation",
+   "file": "effects/condensation.js",
+   "bytes": 539
+  },
+  {
+   "kind": "effects",
+   "id": "fumes",
+   "file": "effects/fumes.js",
+   "bytes": 890
+  },
+  {
+   "kind": "effects",
+   "id": "steam",
+   "file": "effects/steam.js",
+   "bytes": 741
+  },
+  {
+   "kind": "effects",
+   "id": "heatConvection",
+   "file": "effects/heatConvection.js",
+   "bytes": 314
+  },
+  {
+   "kind": "effects",
+   "id": "splash",
+   "file": "effects/splash.js",
+   "bytes": 727
+  },
+  {
+   "kind": "effects",
+   "id": "scale",
+   "file": "effects/scale.js",
+   "bytes": 651
+  },
+  {
+   "kind": "effects",
+   "id": "label",
+   "file": "effects/label.js",
+   "bytes": 410
+  },
+  {
+   "kind": "effects",
+   "id": "stopper",
+   "file": "effects/stopper.js",
+   "bytes": 580
+  },
+  {
+   "kind": "effects",
+   "id": "tap",
+   "file": "effects/tap.js",
+   "bytes": 497
+  },
+  {
+   "kind": "effects",
+   "id": "flame",
+   "file": "effects/flame.js",
+   "bytes": 2749
+  },
+  {
+   "kind": "effects",
+   "id": "sparks",
+   "file": "effects/sparks.js",
+   "bytes": 1219
+  },
+  {
+   "kind": "effects",
+   "id": "metalBurn",
+   "file": "effects/metalBurn.js",
+   "bytes": 2039
+  },
+  {
+   "kind": "effects",
+   "id": "explosion",
+   "file": "effects/explosion.js",
+   "bytes": 1744
+  },
+  {
+   "kind": "effects",
+   "id": "flash",
+   "file": "effects/flash.js",
+   "bytes": 409
+  },
+  {
+   "kind": "vessels",
+   "id": "stage",
+   "file": "vessels/stage.js",
+   "bytes": 315
+  },
+  {
+   "kind": "effects",
+   "id": "splint",
+   "file": "effects/splint.js",
+   "bytes": 1652
+  },
+  {
+   "kind": "effects",
+   "id": "pop",
+   "file": "effects/pop.js",
+   "bytes": 792
+  },
+  {
+   "kind": "vessels",
+   "id": "anchor",
+   "file": "vessels/anchor.js",
+   "bytes": 61
+  },
+  {
+   "kind": "vessels",
+   "id": "burner",
+   "file": "vessels/burner.js",
+   "bytes": 33
+  },
+  {
+   "kind": "vessels",
+   "id": "cooler",
+   "file": "vessels/cooler.js",
+   "bytes": 33
+  },
+  {
+   "kind": "vessels",
+   "id": "stand",
+   "file": "vessels/stand.js",
+   "bytes": 31
+  },
+  {
+   "kind": "vessels",
+   "id": "tripod",
+   "file": "vessels/tripod.js",
+   "bytes": 33
+  },
+  {
+   "kind": "vessels",
+   "id": "spiritLamp",
+   "file": "vessels/spiritLamp.js",
+   "bytes": 41
+  },
+  {
+   "kind": "vessels",
+   "id": "hotplate",
+   "file": "vessels/hotplate.js",
+   "bytes": 37
+  },
+  {
+   "kind": "vessels",
+   "id": "dropper",
+   "file": "vessels/dropper.js",
+   "bytes": 35
+  },
+  {
+   "kind": "vessels",
+   "id": "gasCollect",
+   "file": "vessels/gasCollect.js",
+   "bytes": 41
+  },
+  {
+   "kind": "vessels",
+   "id": "tubeRack",
+   "file": "vessels/tubeRack.js",
+   "bytes": 37
+  },
+  {
+   "kind": "vessels",
+   "id": "conductivity",
+   "file": "vessels/conductivity.js",
+   "bytes": 45
+  },
+  {
+   "kind": "vessels",
+   "id": "pHscale",
+   "file": "vessels/pHscale.js",
+   "bytes": 35
+  },
+  {
+   "kind": "vessels",
+   "id": "pHmeter",
+   "file": "vessels/pHmeter.js",
+   "bytes": 35
+  },
+  {
+   "kind": "vessels",
+   "id": "thermometer",
+   "file": "vessels/thermometer.js",
+   "bytes": 43
+  },
+  {
+   "kind": "vessels",
+   "id": "burette",
+   "file": "vessels/burette.js",
+   "bytes": 35
+  },
+  {
+   "kind": "vessels",
+   "id": "roundFlask",
+   "file": "vessels/roundFlask__2.js",
+   "bytes": 295
+  },
+  {
+   "kind": "vessels",
+   "id": "volFlask",
+   "file": "vessels/volFlask__2.js",
+   "bytes": 388
+  },
+  {
+   "kind": "vessels",
+   "id": "funnel",
+   "file": "vessels/funnel__2.js",
+   "bytes": 232
+  },
+  {
+   "kind": "vessels",
+   "id": "petri",
+   "file": "vessels/petri__2.js",
+   "bytes": 111
+  },
+  {
+   "kind": "vessels",
+   "id": "evapDish",
+   "file": "vessels/evapDish__2.js",
+   "bytes": 176
+  },
+  {
+   "kind": "effects",
+   "id": "ringMark",
+   "file": "effects/ringMark.js",
+   "bytes": 383
+  },
+  {
+   "kind": "vessels",
+   "id": "pipette",
+   "file": "vessels/pipette.js",
+   "bytes": 35
+  },
+  {
+   "kind": "vessels",
+   "id": "balance",
+   "file": "vessels/balance.js",
+   "bytes": 35
+  },
+  {
+   "kind": "vessels",
+   "id": "paper",
+   "file": "vessels/paper.js",
+   "bytes": 31
+  },
+  {
+   "kind": "vessels",
+   "id": "molTank",
+   "file": "vessels/molTank.js",
+   "bytes": 35
+  },
+  {
+   "kind": "vessels",
+   "id": "electroscope",
+   "file": "vessels/electroscope.js",
+   "bytes": 288
+  },
+  {
+   "kind": "vessels",
+   "id": "chargedRod",
+   "file": "vessels/chargedRod.js",
+   "bytes": 176
+  },
+  {
+   "kind": "vessels",
+   "id": "pendulum",
+   "file": "vessels/pendulum.js",
+   "bytes": 196
+  },
+  {
+   "kind": "vessels",
+   "id": "fieldMap",
+   "file": "vessels/fieldMap.js",
+   "bytes": 331
+  },
+  {
+   "kind": "vessels",
+   "id": "chargeBar",
+   "file": "vessels/chargeBar.js",
+   "bytes": 289
+  },
+  {
+   "kind": "effects",
+   "id": "discharge",
+   "file": "effects/discharge.js",
+   "bytes": 367
+  },
+  {
+   "kind": "scenes",
+   "id": "acidMetal",
+   "file": "scenes/acidMetal.js",
+   "bytes": 2182
+  },
+  {
+   "kind": "scenes",
+   "id": "indicator",
+   "file": "scenes/indicator.js",
+   "bytes": 1798
+  },
+  {
+   "kind": "scenes",
+   "id": "indicatorRack",
+   "file": "scenes/indicatorRack.js",
+   "bytes": 784
+  },
+  {
+   "kind": "scenes",
+   "id": "titration",
+   "file": "scenes/titration.js",
+   "bytes": 3072
+  },
+  {
+   "kind": "scenes",
+   "id": "dilution",
+   "file": "scenes/dilution.js",
+   "bytes": 2459
+  },
+  {
+   "kind": "scenes",
+   "id": "conductivity",
+   "file": "scenes/conductivity.js",
+   "bytes": 1310
+  },
+  {
+   "kind": "scenes",
+   "id": "gasCollection",
+   "file": "scenes/gasCollection.js",
+   "bytes": 1370
+  },
+  {
+   "kind": "scenes",
+   "id": "carbonate",
+   "file": "scenes/carbonate.js",
+   "bytes": 1449
+  },
+  {
+   "kind": "scenes",
+   "id": "heating",
+   "file": "scenes/heating.js",
+   "bytes": 1441
+  },
+  {
+   "kind": "rx",
+   "id": "liH2o",
+   "file": "rx/liH2o.js",
+   "bytes": 213
+  },
+  {
+   "kind": "rx",
+   "id": "kH2o",
+   "file": "rx/kH2o.js",
+   "bytes": 237
+  },
+  {
+   "kind": "rx",
+   "id": "caH2o",
+   "file": "rx/caH2o.js",
+   "bytes": 287
+  },
+  {
+   "kind": "rx",
+   "id": "mgH2oHot",
+   "file": "rx/mgH2oHot.js",
+   "bytes": 310
+  },
+  {
+   "kind": "rx",
+   "id": "na2oH2o",
+   "file": "rx/na2oH2o.js",
+   "bytes": 230
+  },
+  {
+   "kind": "rx",
+   "id": "k2oH2o",
+   "file": "rx/k2oH2o.js",
+   "bytes": 202
+  },
+  {
+   "kind": "rx",
+   "id": "li2oH2o",
+   "file": "rx/li2oH2o.js",
+   "bytes": 190
+  },
+  {
+   "kind": "rx",
+   "id": "caoH2o",
+   "file": "rx/caoH2o.js",
+   "bytes": 285
+  },
+  {
+   "kind": "rx",
+   "id": "mgoH2o",
+   "file": "rx/mgoH2o.js",
+   "bytes": 270
+  },
+  {
+   "kind": "rx",
+   "id": "baoH2o",
+   "file": "rx/baoH2o.js",
+   "bytes": 241
+  },
+  {
+   "kind": "rx",
+   "id": "mgcl2Naoh",
+   "file": "rx/mgcl2Naoh.js",
+   "bytes": 110
+  },
+  {
+   "kind": "rx",
+   "id": "alcl3Naoh",
+   "file": "rx/alcl3Naoh.js",
+   "bytes": 152
+  },
+  {
+   "kind": "rx",
+   "id": "znso4Naoh",
+   "file": "rx/znso4Naoh.js",
+   "bytes": 138
+  },
+  {
+   "kind": "rx",
+   "id": "feso4Naoh",
+   "file": "rx/feso4Naoh.js",
+   "bytes": 139
+  },
+  {
+   "kind": "rx",
+   "id": "cucl2Naoh",
+   "file": "rx/cucl2Naoh.js",
+   "bytes": 149
+  },
+  {
+   "kind": "rx",
+   "id": "niso4Naoh",
+   "file": "rx/niso4Naoh.js",
+   "bytes": 115
+  },
+  {
+   "kind": "rx",
+   "id": "mnso4Naoh",
+   "file": "rx/mnso4Naoh.js",
+   "bytes": 134
+  },
+  {
+   "kind": "rx",
+   "id": "pbno32Naoh",
+   "file": "rx/pbno32Naoh.js",
+   "bytes": 127
+  },
+  {
+   "kind": "rx",
+   "id": "cacl2Naoh",
+   "file": "rx/cacl2Naoh.js",
+   "bytes": 149
+  },
+  {
+   "kind": "rx",
+   "id": "agno3Naoh",
+   "file": "rx/agno3Naoh.js",
+   "bytes": 122
+  },
+  {
+   "kind": "rx",
+   "id": "caoh2Hcl",
+   "file": "rx/caoh2Hcl.js",
+   "bytes": 145
+  },
+  {
+   "kind": "rx",
+   "id": "kohHcl",
+   "file": "rx/kohHcl.js",
+   "bytes": 147
+  },
+  {
+   "kind": "rx",
+   "id": "kohHno3",
+   "file": "rx/kohHno3.js",
+   "bytes": 122
+  },
+  {
+   "kind": "rx",
+   "id": "naohHno3",
+   "file": "rx/naohHno3.js",
+   "bytes": 124
+  },
+  {
+   "kind": "rx",
+   "id": "baoh2H2so4",
+   "file": "rx/baoh2H2so4.js",
+   "bytes": 206
+  },
+  {
+   "kind": "rx",
+   "id": "cuoh2H2so4",
+   "file": "rx/cuoh2H2so4.js",
+   "bytes": 192
+  },
+  {
+   "kind": "rx",
+   "id": "cuoh2Hcl",
+   "file": "rx/cuoh2Hcl.js",
+   "bytes": 174
+  },
+  {
+   "kind": "rx",
+   "id": "feoh3Hcl",
+   "file": "rx/feoh3Hcl.js",
+   "bytes": 190
+  },
+  {
+   "kind": "rx",
+   "id": "znoh2Hcl",
+   "file": "rx/znoh2Hcl.js",
+   "bytes": 156
+  },
+  {
+   "kind": "rx",
+   "id": "aloh3Naoh",
+   "file": "rx/aloh3Naoh.js",
+   "bytes": 204
+  },
+  {
+   "kind": "rx",
+   "id": "znoh2Naoh",
+   "file": "rx/znoh2Naoh.js",
+   "bytes": 171
+  },
+  {
+   "kind": "rx",
+   "id": "baoh2Co2",
+   "file": "rx/baoh2Co2.js",
+   "bytes": 137
+  },
+  {
+   "kind": "rx",
+   "id": "cuoh2Heat",
+   "file": "rx/cuoh2Heat.js",
+   "bytes": 226
+  },
+  {
+   "kind": "rx",
+   "id": "feoh2O2",
+   "file": "rx/feoh2O2.js",
+   "bytes": 223
+  },
+  {
+   "kind": "rx",
+   "id": "caoh2Na2co3",
+   "file": "rx/caoh2Na2co3.js",
+   "bytes": 144
+  },
+  {
+   "kind": "rx",
+   "id": "nh4clNaoh",
+   "file": "rx/nh4clNaoh.js",
+   "bytes": 176
+  },
+  {
+   "kind": "rx",
+   "id": "so3H2o",
+   "file": "rx/so3H2o.js",
+   "bytes": 230
+  },
+  {
+   "kind": "rx",
+   "id": "so2H2o",
+   "file": "rx/so2H2o.js",
+   "bytes": 235
+  },
+  {
+   "kind": "rx",
+   "id": "co2H2o",
+   "file": "rx/co2H2o.js",
+   "bytes": 212
+  },
+  {
+   "kind": "rx",
+   "id": "p4o10H2o",
+   "file": "rx/p4o10H2o.js",
+   "bytes": 209
+  },
+  {
+   "kind": "rx",
+   "id": "caoHcl",
+   "file": "rx/caoHcl.js",
+   "bytes": 142
+  },
+  {
+   "kind": "rx",
+   "id": "mgoHcl",
+   "file": "rx/mgoHcl.js",
+   "bytes": 153
+  },
+  {
+   "kind": "rx",
+   "id": "znoHcl",
+   "file": "rx/znoHcl.js",
+   "bytes": 110
+  },
+  {
+   "kind": "rx",
+   "id": "al2o3Hcl",
+   "file": "rx/al2o3Hcl.js",
+   "bytes": 189
+  },
+  {
+   "kind": "rx",
+   "id": "fe2o3Hcl",
+   "file": "rx/fe2o3Hcl.js",
+   "bytes": 160
+  },
+  {
+   "kind": "rx",
+   "id": "fe2o3H2so4",
+   "file": "rx/fe2o3H2so4.js",
+   "bytes": 155
+  },
+  {
+   "kind": "rx",
+   "id": "so2Naoh",
+   "file": "rx/so2Naoh.js",
+   "bytes": 166
+  },
+  {
+   "kind": "rx",
+   "id": "so3Naoh",
+   "file": "rx/so3Naoh.js",
+   "bytes": 224
+  },
+  {
+   "kind": "rx",
+   "id": "naohCo2",
+   "file": "rx/naohCo2.js",
+   "bytes": 179
+  },
+  {
+   "kind": "rx",
+   "id": "al2o3NaohAq",
+   "file": "rx/al2o3NaohAq.js",
+   "bytes": 197
+  },
+  {
+   "kind": "rx",
+   "id": "znoNaohAq",
+   "file": "rx/znoNaohAq.js",
+   "bytes": 133
+  },
+  {
+   "kind": "rx",
+   "id": "sio2Naoh",
+   "file": "rx/sio2Naoh.js",
+   "bytes": 221
+  },
+  {
+   "kind": "rx",
+   "id": "bacl2Na2so4",
+   "file": "rx/bacl2Na2so4.js",
+   "bytes": 164
+  },
+  {
+   "kind": "rx",
+   "id": "cacl2Na2co3",
+   "file": "rx/cacl2Na2co3.js",
+   "bytes": 167
+  },
+  {
+   "kind": "rx",
+   "id": "na2co3Hcl",
+   "file": "rx/na2co3Hcl.js",
+   "bytes": 189
+  },
+  {
+   "kind": "rx",
+   "id": "cuso4Hydrate",
+   "file": "rx/cuso4Hydrate.js",
+   "bytes": 248
+  },
+  {
+   "kind": "rx",
+   "id": "hyd-nacl",
+   "file": "rx/hyd-nacl.js",
+   "bytes": 245
+  },
+  {
+   "kind": "rx",
+   "id": "hyd-na2co3",
+   "file": "rx/hyd-na2co3.js",
+   "bytes": 300
+  },
+  {
+   "kind": "rx",
+   "id": "hyd-nh4cl",
+   "file": "rx/hyd-nh4cl.js",
+   "bytes": 295
+  },
+  {
+   "kind": "rx",
+   "id": "hyd-cuso4",
+   "file": "rx/hyd-cuso4.js",
+   "bytes": 281
+  }
+ ],
+ "che-visual-library-v001": [
+  {
+   "kind": "views",
+   "id": "kw-szereg-metali-v01",
+   "file": "views/kw-szereg-metali-v01.js",
+   "bytes": 1253
+  },
+  {
+   "kind": "views",
+   "id": "kw-wlasciwosci-v01",
+   "file": "views/kw-wlasciwosci-v01.js",
+   "bytes": 450
+  },
+  {
+   "kind": "views",
+   "id": "kw-doswiadczenia-v01",
+   "file": "views/kw-doswiadczenia-v01.js",
+   "bytes": 2054
+  },
+  {
+   "kind": "views",
+   "id": "kinetics-v01",
+   "file": "views/kinetics-v01.js",
+   "bytes": 7044
+  },
+  {
+   "kind": "views",
+   "id": "acid-rain-v01",
+   "file": "views/acid-rain-v01.js",
+   "bytes": 8819
+  },
+  {
+   "kind": "views",
+   "id": "neutralization",
+   "file": "views/neutralization.js",
+   "bytes": 481
+  },
+  {
+   "kind": "views",
+   "id": "rownania-jonowe-v01",
+   "file": "views/rownania-jonowe-v01.js",
+   "bytes": 265
+  },
+  {
+   "kind": "views",
+   "id": "tabela-rozpuszczalnosci-v01",
+   "file": "views/tabela-rozpuszczalnosci-v01.js",
+   "bytes": 2690
+  },
+  {
+   "kind": "views",
+   "id": "sole-doswiadczenia-v01",
+   "file": "views/sole-doswiadczenia-v01.js",
+   "bytes": 1290
+  },
+  {
+   "kind": "views",
+   "id": "kw-dysocjacja-v01",
+   "file": "views/kw-dysocjacja-v01.js",
+   "bytes": 11566
+  },
+  {
+   "kind": "views",
+   "id": "kw-bufor-v01",
+   "file": "views/kw-bufor-v01.js",
+   "bytes": 5202
+  },
+  {
+   "kind": "views",
+   "id": "kw-reszty-v01",
+   "file": "views/kw-reszty-v01.js",
+   "bytes": 2327
+  },
+  {
+   "kind": "views",
+   "id": "fiz-elektryzowanie-v01",
+   "file": "views/fiz-elektryzowanie-v01.js",
+   "bytes": 5443
+  },
+  {
+   "kind": "views",
+   "id": "fiz-elektroskop-v01",
+   "file": "views/fiz-elektroskop-v01.js",
+   "bytes": 4116
+  },
+  {
+   "kind": "views",
+   "id": "fiz-coulomb-v01",
+   "file": "views/fiz-coulomb-v01.js",
+   "bytes": 3812
+  },
+  {
+   "kind": "views",
+   "id": "fiz-przewodniki-v01",
+   "file": "views/fiz-przewodniki-v01.js",
+   "bytes": 4121
+  },
+  {
+   "kind": "views",
+   "id": "fiz-ladunek-v01",
+   "file": "views/fiz-ladunek-v01.js",
+   "bytes": 8318
+  },
+  {
+   "kind": "views",
+   "id": "n01-tlenki-v01",
+   "file": "views/n01-tlenki-v01.js",
+   "bytes": 4440
+  },
+  {
+   "kind": "views",
+   "id": "n01-konstruktor-v01",
+   "file": "views/n01-konstruktor-v01.js",
+   "bytes": 5053
+  },
+  {
+   "kind": "views",
+   "id": "n01-reaktor-v01",
+   "file": "views/n01-reaktor-v01.js",
+   "bytes": 4105
+  },
+  {
+   "kind": "views",
+   "id": "n01-trend-v01",
+   "file": "views/n01-trend-v01.js",
+   "bytes": 3607
+  },
+  {
+   "kind": "views",
+   "id": "n01-spalanie-v01",
+   "file": "views/n01-spalanie-v01.js",
+   "bytes": 3013
+  },
+  {
+   "kind": "views",
+   "id": "stech-kalkulator-v01",
+   "file": "views/stech-kalkulator-v01.js",
+   "bytes": 4871
+  },
+  {
+   "kind": "views",
+   "id": "n02-wzory-v01",
+   "file": "views/n02-wzory-v01.js",
+   "bytes": 3987
+  },
+  {
+   "kind": "views",
+   "id": "n02-przeglad-v01",
+   "file": "views/n02-przeglad-v01.js",
+   "bytes": 3854
+  },
+  {
+   "kind": "views",
+   "id": "n02-otrzymywanie-v01",
+   "file": "views/n02-otrzymywanie-v01.js",
+   "bytes": 5016
+  },
+  {
+   "kind": "views",
+   "id": "n02-stracanie-v01",
+   "file": "views/n02-stracanie-v01.js",
+   "bytes": 3835
+  },
+  {
+   "kind": "views",
+   "id": "n02-zobojetnianie-v01",
+   "file": "views/n02-zobojetnianie-v01.js",
+   "bytes": 5461
+  },
+  {
+   "kind": "views",
+   "id": "n02-dysocjacja-v01",
+   "file": "views/n02-dysocjacja-v01.js",
+   "bytes": 4154
+  },
+  {
+   "kind": "views",
+   "id": "n02-reaktor-v01",
+   "file": "views/n02-reaktor-v01.js",
+   "bytes": 2247
+  },
+  {
+   "kind": "views",
+   "id": "n01-doswiadczenia-v01",
+   "file": "views/n01-doswiadczenia-v01.js",
+   "bytes": 438
+  },
+  {
+   "kind": "views",
+   "id": "n02-doswiadczenia-v01",
+   "file": "views/n02-doswiadczenia-v01.js",
+   "bytes": 496
+  },
+  {
+   "kind": "views",
+   "id": "che-test-silnika-v01",
+   "file": "views/che-test-silnika-v01.js",
+   "bytes": 4604
+  }
+ ]
+}

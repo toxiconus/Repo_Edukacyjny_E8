@@ -1,0 +1,1 @@
+P('cacl2Na2co3',{n:'CaCl₂ + Na₂CO₃',ppt:'ppt-caco3',out:['osad'],why:'Biały osad CaCO₃ — tak soda zmiękcza wodę twardą; osad musuje po dodaniu kwasu.'});

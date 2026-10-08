@@ -1,0 +1,1 @@
+effect('plume',{draw:e=>{const p=e.st.plume;if(!p||p.k<=.02)return;const c=e.c,r=e.r,cx=r.x+r.w/2,cy=e.bot-(e.ph||0)-22,rad=Math.max(24,r.w*.22)*(1+p.k*.8),g=c.createRadialGradient(cx,cy-rad*.2,2,cx,cy-rad*.2,rad);g.addColorStop(0,rgba(p.col,.55*p.k));g.addColorStop(1,rgba(p.col,0));c.fillStyle=g;c.fillRect(cx-rad,cy-rad*1.3,rad*2,rad*2.1)}});

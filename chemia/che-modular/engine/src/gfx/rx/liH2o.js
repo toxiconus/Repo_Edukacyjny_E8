@@ -1,0 +1,1 @@
+P('liH2o',{n:'Li + H₂O (+ fenoloftaleina)',bubFrom:'bottom',l0:php,l1:pink,out:['gaz','barwa'],gas:'H2',bubN:1,heat:.6,T:30,teacher:1,why:'Lit pływa i spokojnie wydziela wodór; roztwór malinowieje (LiOH).'});

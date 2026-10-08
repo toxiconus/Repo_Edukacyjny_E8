@@ -1,0 +1,1 @@
+P('baoh2Co2',{n:'Ba(OH)₂ + CO₂',ppt:'ppt-caco3',out:['osad'],turb:.7,gas:'CO2',bubN:.8,teacher:1,why:'Białe zmętnienie BaCO₃.'});

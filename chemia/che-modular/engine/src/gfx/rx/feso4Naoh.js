@@ -1,0 +1,1 @@
+P('feso4Naoh',{n:'FeSO₄ + NaOH',l0:'ion-fe2',ppt:'ppt-fe-oh-2',out:['osad'],why:'Zielonkawy osad Fe(OH)₂, na powietrzu brunatnieje.'});

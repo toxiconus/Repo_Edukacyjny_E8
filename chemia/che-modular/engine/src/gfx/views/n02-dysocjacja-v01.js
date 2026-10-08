@@ -1,0 +1,20 @@
+V.define('n02-dysocjacja-v01',{title:'Rozpuszczanie i dysocjacja wodorotlenków — jony, hydratacja, efekt cieplny',tag:'E8',
+ hint:'Porównaj NaOH, Ca(OH)₂ i Cu(OH)₂: ile kryształu przechodzi do wody, jakie jony powstają i jak otaczają je cząsteczki wody. W drugiej części zobacz, jak zmienia się temperatura przy rozpuszczaniu.',
+ foot:'Rozpuszczalność: D.SOLUBILITY_TABLE · dysocjacja: CHE.HYDROXIDES.dissociation · ΔH rozpuszczania (kJ/mol) — CHE.HYDROXIDES.SOLHEAT, c(wody) = 4,18 J/(g·K), bez strat ciepła · rysunek: GFX.ions.',
+ build:function(host){host.innerHTML='';var H=HY(),st={f:'NaOH',hf:'NaOH',m:4,mw:100},ions=null;
+  var bar=el('div','r','<b>Substancja:</b> ');host.appendChild(bar);seg(bar,[['NaOH','NaOH'],['KOH','KOH'],['Ca(OH)2','Ca(OH)₂'],['Mg(OH)2','Mg(OH)₂'],['Cu(OH)2','Cu(OH)₂'],['Fe(OH)3','Fe(OH)₃']],st.f,function(v){st.f=v;show()});
+  var g=grid(host,300),l=el('div'),r=el('div');g.append(l,r);var cb=el('div');l.appendChild(cb);var ctl=el('div','r');l.appendChild(ctl);btn(ctl,'↺ jeszcze raz',function(){show()});
+  var th=el('div');host.appendChild(th);
+  function show(){var row=H.get(st.f),s=H.solubility(st.f),d=H.dissociation(st.f);cb.innerHTML='';
+   try{ions=G().ions.mount(cb,{mode:'dissolve',height:280,nOH:row.q,cation:row.cation,catCol:catCol(row),sol:s.s,solidCol:row.hex,dur:7})}catch(e){cb.textContent='GFX.ions: '+e.message}
+   r.innerHTML='<div class="table-wrap"><table><tbody><tr><th>1. Co to jest?</th><td>'+row.pretty+' — '+row.name+'</td></tr><tr><th>2. Czy się rozpuszcza?</th><td style="color:'+SOLC[s.s]+'"><b>'+s.label+'</b></td></tr><tr><th>3. Co jest w roztworze?</th><td>'+d.eq+'</td></tr><tr><th>4. Jaki odczyn?</th><td>'+s.odczyn+(s.ph?' (pH ≈ '+fmt(s.ph,1)+')':'')+'</td></tr></tbody></table></div>'
+    +card('Wniosek',d.note,'#64748b')+card('Hydratacja','Jony w wodzie otaczają się cząsteczkami wody: do kationu zwrócony jest tlen (biegun −), do OH⁻ — wodory (biegun +). Dlatego jony „rozchodzą się” w roztworze.','#2563eb')
+    +card('Rozpuszczalny ≠ mocny','Rozpuszczalność mówi, ile substancji przejdzie do wody; moc — jaka część rozpuszczonej substancji jest w postaci jonów. Ca(OH)₂: mało się rozpuszcza, ale to, co się rozpuści, dysocjuje całkowicie.','#d97706')}
+  function heat(){th.innerHTML='';var bx=el('div');bx.innerHTML='<h4 style="margin:12px 0 4px">Efekt cieplny rozpuszczania</h4>';th.appendChild(bx);var b=el('div','r');th.appendChild(b);
+   seg(b,Object.keys(H.SOLHEAT).map(function(k){return[k,H.SOLHEAT[k].name]}),st.hf,function(v){st.hf=v;calc()});var w=el('label',null,' masa (g): ');var i=el('input');i.type='range';i.min=1;i.max=20;i.value=st.m;var iv=el('b',null,st.m+' g');i.oninput=function(){st.m=+i.value;iv.textContent=st.m+' g';calc()};w.append(i,iv);b.appendChild(w);
+   var out=el('div');th.appendChild(out);
+   function calc(){var h=H.heat(st.hf,st.m,st.mw,20),T=h.T,pct=Math.max(0,Math.min(1,(T-0)/60));
+    out.innerHTML='<div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><svg viewBox="0 0 60 200" width="50" height="170"><rect x="22" y="10" width="16" height="160" rx="8" fill="#e2e8f0" stroke="#94a3b8"/><rect x="25" y="'+(10+155*(1-pct))+'" width="10" height="'+(155*pct+5)+'" rx="5" fill="'+(h.dT>=0?'#dc2626':'#2563eb')+'"/><circle cx="30" cy="180" r="14" fill="'+(h.dT>=0?'#dc2626':'#2563eb')+'"/><text x="44" y="'+(10+155*(1-1/3))+'" font-size="9" fill="#64748b">20°</text></svg>'
+     +'<div>'+card(h.name+' — '+h.kind,'n = '+fmt(h.n,3)+' mol · ΔH = '+fmt(h.dH,1)+' kJ/mol → Q = '+fmt(h.Q/1000,2)+' kJ<br>ΔT ≈ <b>'+(h.dT>0?'+':'')+fmt(h.dT,1)+' K</b> → temperatura końcowa ok. <b>'+fmt(h.T,1)+' °C</b> ('+st.m+' g w 100 g wody)'+(h.limit&&st.m/100>h.limit/100?'<div class="note">Uwaga: Ca(OH)₂ rozpuści się tylko ok. 0,17 g — reszta zostanie jako zawiesina; efekt będzie znikomy.</div>':'')+(st.hf==='NaOH'||st.hf==='KOH'?'<div class="note">Uwaga: BHP: stały NaOH/KOH dodawaj małymi porcjami do wody (nie odwrotnie), mieszaj, okulary i rękawice.</div>':''),h.dT>=0?'#dc2626':'#2563eb')+'</div></div>'}
+   calc()}
+  show();heat()}});

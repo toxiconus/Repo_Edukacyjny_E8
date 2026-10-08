@@ -1,0 +1,1 @@
+P('naohCo2',{n:'CO₂ + NaOH',out:['nic'],gas:'CO2',bubN:.7,why:'CO₂ jest pochłaniany (powstaje Na₂CO₃) — bez widocznych zmian; tak pochłania się CO₂ z powietrza.'});
