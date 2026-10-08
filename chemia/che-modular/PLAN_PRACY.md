@@ -29,7 +29,7 @@ Czytaj ten plik zaraz po `CLAUDE.md`; zasady i polecenia: `SYSTEM.md`. Dziennik 
 | Sekcje anon001 | ⚠️ | 278 plików (dokumenty mówią 279) — sprawdzić przy pick(). |
 | Test regresji | ❌ | Brak testu „lekcja renderuje treść + 0 błędów”. |
 
-**Wniosek:** architektura (moduły + rejestr + MD + shell) jest dobra i powtarzalna, ale pipeline nie daje jeszcze działającej lekcji. Najpierw poprawność, potem odchudzanie.
+**Wniosek (rano):** architektura dobra, packer ZIP nie dawał działającej lekcji. **Stan (K2):** silnik złożony z modułów jest identyczny ze starym, 6 lekcji v0_59 działa na nim; odchudzanie idzie testem, nie zgadywaniem.
 
 ## 3. Decyzje
 
@@ -44,9 +44,9 @@ Czytaj ten plik zaraz po `CLAUDE.md`; zasady i polecenia: `SYSTEM.md`. Dziennik 
 | # | Krok | Gotowe, gdy |
 |---|---|---|
 | **K0** ✅ | Systematyzacja: `SYSTEM.md` (jeden dialekt MD = kanon v0_59 + aliasy `$`-makr), `tools/che.py` (jedno polecenie), `_SZABLON/LEKCJA.md`, bezstratny podział GFX/VIEW per element (`gfx_split.mjs` / `gfx_join.py`, sha1 = oryginał) | zrobione 2026-10-08 |
-| **K1** | Testy jednym poleceniem: (a) `test_pack.js` Chromium 390 px — treść lekcji, 0 błędów konsoli, brak przewijania w bok, modele zamontowane; (b) `test_kompletnosc` — inwentarz danych/GFX/VIEW z modułów = monolit | oba testy działają, pokazują FAIL dla obecnych packów |
-| **K2** | Naprawa packera: pack z **wyłączonymi filtrami** (`--no-gfx-filter`, bez VIEW/anon cięcia) musi przejść K1 → baza odniesienia | N01 pack bez filtrów: 0 błędów, treść widoczna |
-| **K3** | Włączać filtry po kolei (CSS → źródła lekcji → anon001 → VIEW → GFX), po każdym K1; filtr GFX/VIEW przez `gfx_join.join(mod, allow)` zamiast cięcia tekstu (D4) | N01–N04, FIZ01 przechodzą K1 z filtrami |
+| **K1** ✅ | `tools/test_lekcje.cjs`: Chromium 390 px, lekcje równolegle — treść, 0 błędów (bez sieci), CONSISTENCY, modele zamontowane + klik 3 przycisków/select, każda pracownia otwiera się | 6/6 OK |
+| **K2** ✅ | Bezstratność: `silnik.py` — lab z modułów == monolit v0_57, che-viz.js == zamrożony v0_59 (sha1); sekcje `_anon_001` (280, `anon_split.mjs`) i GFX (175) składają się bajt w bajt. Builder kanonu `tools/md2html.py`, szablon wyglądu `engine/src/lekcja/`. Packer ZIP odstawiony (gubił HOME_GATE) | zrobione |
+| **K3** ⏳ | `tools/odchudz.py`: ddmin z testem jako wyrocznią → profile `engine/registry/profile/*.json` (najpierw `wspolny` dla 6 lekcji, potem per lekcja). `che.py silnik` → `dist/viz/<profil>.js`; `md2html.py` wkleja `dist/viz/<lekcja>.js` → `wspolny.js` → pełny | wspólny < 2 MB, per lekcja ≤ 1,4 MB |
 | **K4** | Builder MD rozumie kanon v0_59 + aliasy `$`-makr i porządkowanie klas (SYSTEM.md §3); `md_build_lesson.py N01` z `_zrodla_v0_59/N01_tlenki.md` | pełna N01 z MD, parity bez luk, K1 OK |
 | **K5** | Połączenie: MD-build + pack silnika = jedna lekcja offline (`meta.json` → packer) | N01 offline z modelami i zlewkami, K1 OK |
 | **K6** | `rozszerzenia.js` z v0_59 → moduły domen (wodorki, nowe zlewki); N02–N05, FIZ01 przez ten sam pipeline; N05 do `lessons.json` | 6 lekcji OK w K1, kompletność OK |

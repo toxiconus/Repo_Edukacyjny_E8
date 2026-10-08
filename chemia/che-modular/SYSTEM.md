@@ -20,15 +20,17 @@ Ten plik zastępuje rozproszone opisy z ZIP (`MAKRA*.md`, `MD_CEGIELKI.md`, `SIL
 
 ```
 cd chemia/che-modular
-python3 tools/che.py init                 # raz na sesję: moduły + acorn + podział GFX + test
+python3 tools/che.py init                 # raz na sesję: moduły z monolitu, sekcje, GFX, testy bezstratności
+python3 tools/che.py lekcje [plik.md]     # pełny silnik z modułów + lekcje MD → dist/, dist/jeden_plik/
+python3 tools/che.py silnik               # odchudzone silniki z profili → dist/viz/<profil>.js
+python3 tools/che.py test [--szybki]      # bezstratność + render 6 lekcji (--szybki: bez przeglądarki)
 python3 tools/che.py nowa N06 systematyka # nowa lekcja z szablonu
-python3 tools/che.py parity N06           # czego lekcja chce, a silnik nie ma
-python3 tools/che.py build N06            # MD → HTML samodzielny   (--zintegrowana: z silnikiem labu)
-python3 tools/che.py pack N06|--all       # mały HTML offline z wybranymi modułami
-python3 tools/che.py test                 # testy, tylko błędy
-python3 tools/che.py gfx                  # ile elementów GFX/VIEW i ile KB
+python3 tools/che.py gfx | katalog        # liczniki GFX / KATALOG.md
+python3 tools/odchudz.py --profil X [--lekcje A,B]   # odchudzanie z testem (długie, wznawialne)
 ```
-Narzędzia pod spodem (wołać tylko przy debugowaniu): `extract_modules.py`, `pobierz_moduly.sh`, `gfx_split.mjs`, `gfx_join.py`, `md_parity.py`, `md_build_lesson.py`, `pack_lesson.py`, `engine_registry.py`.
+Pod spodem: `extract_modules.py` (monolit → moduły + szkielet labu), `anon_split.mjs`, `gfx_split.mjs`, `gfx_join.py`, `silnik.py` (składanie i testy sha1), `md2html.py` (builder kanonu), `test_lekcje.cjs`. Prototyp ZIP: `md_parity.py`, `md_build_lesson.py`, `engine_registry.py`; stary packer w `tools/_stare/`.
+
+**Praca w tle:** gdy działa `odchudz.py`, nie zmieniać `modules/`, `sections/`, `engine/src/gfx/`, `silnik.py`, `test_lekcje.cjs` (to wyrocznia i źródło kandydatów).
 
 ## 3. Dialekt MD — jeden, kanoniczny = v0_59
 

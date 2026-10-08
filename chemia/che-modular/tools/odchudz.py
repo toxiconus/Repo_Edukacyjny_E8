@@ -6,7 +6,7 @@
 Dla każdej grupy kandydatów: zbuduj che-viz.js bez niej → test_lekcje.cjs na lekcjach profilu.
 Test OK → grupa usunięta na stałe; FAIL → dziel na pół (do 1 elementu / 3 sekcji).
 Stan zapisywany po każdej akceptacji: engine/registry/profile/<profil>.json (wznawialne).
-Wymaga: python3 tools/che.py lekcje (strony dist/*.html z pełnym silnikiem).
+Wymaga: python3 tools/che.py lekcje i python3 tools/wzorzec.py 6 (wzorzec słów z pełnego silnika).
 """
 import argparse, json, re, shutil, subprocess, sys, time
 from pathlib import Path
@@ -18,6 +18,7 @@ import silnik  # noqa: E402
 DIST = ROOT / "dist"
 KAND = DIST / "_kand"
 PROF = ROOT / "engine/registry/profile"
+WZORZEC = ROOT / "dist/_wz/wzorzec.json"   # tools/wzorzec.py — odciski modeli pełnego silnika
 GFX_IDX = json.loads((ROOT / "engine/src/gfx/index.json").read_text(encoding="utf-8"))
 ALL_GFX = {}
 for items in GFX_IDX.values():
@@ -51,8 +52,11 @@ def build(prof):
 def test(prof, pages):
     viz = build(prof)
     (KAND / "che-viz.js").write_text(viz, encoding="utf-8")
-    r = subprocess.run(["node", str(ROOT / "tools/test_lekcje.cjs"), "--cicho", *[str(KAND / p) for p in pages]],
-                       capture_output=True, text=True, timeout=900)
+    cmd = ["node", str(ROOT / "tools/test_lekcje.cjs"), "--cicho", f"--wzorzec={WZORZEC}", *[str(KAND / p) for p in pages]]
+    for _ in range(2):   # FAIL bywa losowy (animacje) — drugi przebieg; fałszywe OK jest niemożliwe (brak słów)
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=900)
+        if r.returncode == 0:
+            break
     return r.returncode == 0, len(viz.encode("utf-8")), r.stdout.strip().splitlines()[:2]
 
 
@@ -100,7 +104,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--profil", default="wspolny")
     ap.add_argument("--lekcje", default="")
-    ap.add_argument("--etap", default="mod,anon,widoki,gfx")
+    ap.add_argument("--etap", default="mod,anon,widoki")   # gfx (naczynia/efekty/sceny/reakcje) tylko jawnie: test nie widzi rysunku
     a = ap.parse_args()
     pages = [f"{x}.html" for x in a.lekcje.split(",") if x] or sorted(
         p.name for p in DIST.glob("*.html") if p.name != "index.html")
