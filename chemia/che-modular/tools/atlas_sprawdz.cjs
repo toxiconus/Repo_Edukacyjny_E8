@@ -31,6 +31,18 @@ async function snap(b, f) {
     const bt = document.querySelector('button[data-tab="atom"]'); bt && bt.click(); go('Fe'); await w(300);
     // rysunki atlasu (canvas): porównanie pikseli, bez zależności od ramki strony
     for (const id of ['bohr', 'cloud']) { const c = document.getElementById(id); if (c && c.toDataURL) res['canvas:' + id] = c.toDataURL(); }
+    // scenariusze atomu Bohra: zoom (jądro + lupa), podświetlenie powłoki/podpowłoki, różne pierwiastki
+    const cv = document.getElementById('bohr');
+    if (cv && typeof bohr === 'function' && typeof GEO !== 'undefined') {
+      for (const s of ['H', 'Na', 'Fe', 'U']) {
+        go(s); await w(60); bohr(0); res['canvas:bohr-' + s] = cv.toDataURL();
+        GEO.sel = 2; GEO.hl = '2p'; bohr(0); res['canvas:bohr-hl-' + s] = cv.toDataURL(); GEO.sel = 0; GEO.hl = null;
+        zt = 0.7; for (let i = 0; i < 80; i++) bohr(0); res['canvas:bohr-z07-' + s] = cv.toDataURL();
+        zt = zNuc * 0.6; for (let i = 0; i < 120; i++) bohr(0); res['canvas:bohr-zjadro-' + s] = cv.toDataURL();
+        zt = 1; for (let i = 0; i < 120; i++) bohr(0);
+      }
+      res['txt:geo'] = JSON.stringify(GEO);
+    }
     return res;
   }, SYM);
   const png = null;
@@ -50,6 +62,6 @@ async function snap(b, f) {
     if (a.txt[k] === x.txt[k]) ok++; else { zle++; if (zle <= 5) { const u = String(a.txt[k]), v = String(x.txt[k]); let i = 0; while (i < u.length && u[i] === v[i]) i++; const o = Math.max(0, i - 40); console.log('RÓŻNICA', k, '@' + i, '\n  lab:  ', u.slice(o, i + 100), '\n  atlas:', v.slice(o, i + 100)); } }
   }
   if (x.err.length) console.log('BŁĘDY atlasu:', x.err.slice(0, 5).join(' | '));
-  console.log((zle || pzle.length || x.err.length ? 'FAIL' : 'OK') + ` atlas: zakładki ${ok} zgodne, ${zle} różne; rysunki canvas (Fe): ${pz} identyczne` + (pzle.length ? ', RÓŻNE: ' + pzle.join(',') : ''));
+  console.log((zle || pzle.length || x.err.length ? 'FAIL' : 'OK') + ` atlas: zakładki ${ok} zgodne, ${zle} różne; rysunki canvas: ${pz} identyczne (różnych obrazów: ${new Set(Object.keys(x.txt).filter(k => k.startsWith('canvas:')).map(k => x.txt[k])).size})` + (pzle.length ? ', RÓŻNE: ' + pzle.join(',') : ''));
   process.exit(zle || pzle.length || x.err.length ? 1 : 0);
 })();
