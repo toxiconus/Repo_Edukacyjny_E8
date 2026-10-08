@@ -14,7 +14,7 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 | Chemia — silnik, lekcje F/N, atlas | `chemia/che-modular/PRZEKAZANIE.md` (+ `PROGRESS.md`) | 12 lekcji (F01–F06, N01–N05, FIZ01), test 12/12. Dane CHE.DATA w `engine/src/dane/` (krok 1a–1b), profil per lekcja (F04 1,13 MB; reszta do zrobienia), warstwa `engine/src/dodatki/` (atlas-gfx: `atomBohr`, `orbitalCloud`; atlas rysuje chmurę komponentem), spis dublowania §6. |
 | Wizualizacje dla lekcji bez grafik | `wizualizacje-projekty/PRZEKAZANIE.md` | `PROJEKT.md` (CHE F06–F21, BIO, FIZ) + `wzorcownia.html` (9 prototypów). Czeka na akceptację użytkownika. |
 | Biologia | `biologia/bio/PRZEKAZANIE.md` | L010 gotowa (bio-viz.js, build `md2html_bio.py`, test `sprawdz_bio.js`); następna L011. |
-| Olimpiada 8 (projekt przełączany: chemia, biologia, polski, matematyka + OLI) | `olimpiada/PRZEKAZANIE.md` | MASTER v0.04 dołączony 2026-10-08; lekcje wspólne z kursem E8 (jeden MD, widok E8 / Olimpiada). Treści brak, następny krok: mapa ID MASTER ↔ lekcje. |
+| Olimpiada 8 (projekt przełączany: chemia, biologia, polski, matematyka + OLI) | `olimpiada/PRZEKAZANIE.md` | MASTER v0.04; lekcje wspólne z kursem E8. Mapa chemii gotowa (`MAPA_WSPOLNYCH.md`). **Priorytety klasy 8 i terminy konkursów: `olimpiada/PRIORYTETY.md`** — następna lekcja REV01 (plan gotowy). |
 
 ## Decyzje użytkownika (wspólne)
 - Zero utraty danych starego silnika — dzielić i ulepszać, nie wyrzucać; nowe rzeczy jako komponenty wielokrotnego użytku + wpis w katalogu.

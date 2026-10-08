@@ -29,6 +29,7 @@ Foldery powstają, gdy pojawi się pierwsza treść.
 - `MAPA_WSPOLNYCH.md` — **chemia zmapowana** (2026-10-08, generator `narzedzia/mapa_chemia.py`, przypisania w słowniku M): 133 tematy CHEM ↔ kanon CHE v0.3; 37 ma gotową lekcję E8 (brak poziomów 2–4), 88 czeka na lekcję z kanonu, 8 bez miejsca w kanonie. Kluczowa luka: mol i stechiometria to w kanonie LO, a w MASTER A+ (do decyzji). Biologia, polski, matematyka, OLI — do zrobienia.
 
 ## 5. Następne kroki (propozycja)
+0. **Priorytet (klasa 8, oceny + konkursy):** `PRIORYTETY.md` — etapy szkolne: biologia 21.10, chemia 23.10 (do weryfikacji w regulaminie LKO). Następna lekcja: **REV01 Powtórka klasy 7** — gotowy plan i policzone zadania konkursowe w `PRIORYTETY.md` §5; potem R03, F17, doświadczenia; biologia: zakres konkursu + genetyka.
 1. Mapowanie BIO-001… (biologia), potem POL, MAT, OLI — jak chemia (generator na przedmiot).
 2. Plakietki poziomów 0–4 w dialekcie MD + przełącznik „E8 / Olimpiada” w md2html (jeden plik, dwa widoki).
 3. Format banku zadań (MASTER §46) jako MD/JSON + pierwsze zadania archiwalne (tylko ze źródeł oficjalnych — MASTER §12–13).
