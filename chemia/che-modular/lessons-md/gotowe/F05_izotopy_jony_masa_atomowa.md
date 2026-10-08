@@ -442,6 +442,6 @@ Izotop promieniotwórczy :: izotop o nietrwałym jądrze, które samorzutnie si�
 
 | Sekcja | Model | Co pokazuje |
 |---|---|---|
-| [§3](#trzy-zmiany) | `f05-izotopy-v01` | konstruktor atomu: zmiana p / n / e → inny pierwiastek / izotop / jon; masa atomowa jako średnia ważona (H, C, O, Na, Mg, Cl, Ca) |
+| [§3](#trzy-zmiany) | `f05-izotopy-v01` | konstruktor atomu: zmiana p / n / e → inny pierwiastek / izotop / jon; masa atomowa jako średnia ważona (start: H, C, O, Na, Mg, Cl, Ca; dane z `CHE.DATA.ISOTOPES`) |
 
-> Dane izotopów w modelu: masy i udziały wg IUPAC, zaokrąglone — do weryfikacji. Model wielokrotnego użytku: można go użyć w F04 (jony), F06 (masa atomowa w układzie) i A01.
+> Dane izotopów model bierze z silnika (`CHE.DATA.ISOTOPES`, masy i udziały wg IUPAC/CIAAW) — bez lokalnej kopii. Model wielokrotnego użytku: można go użyć w F04 (jony), F06 (masa atomowa w układzie) i A01.

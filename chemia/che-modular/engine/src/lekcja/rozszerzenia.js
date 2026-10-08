@@ -205,37 +205,29 @@ pracownia('f03-rozdzielanie-v01','Pracownia: rozdzielanie mieszanin','Najpierw n
  'GFX.rx · rozszerzenia.js (F03)');
 
 /* ---------- 8. F05 — konstruktor: izotop / jon / inny pierwiastek + masa atomowa jako średnia ważona ----------
-   Model wielokrotnego użytku (F04, F05, F06, A01…): `f05-izotopy-v01`. Dane izotopów: masy i udziały wg IUPAC (zaokrąglone; do weryfikacji). */
-var IZO={1:['H','wodór',[[1,1.00783,99.9885],[2,2.01410,0.0115],[3,3.01605,0]]],
- 6:['C','węgiel',[[12,12.0000,98.93],[13,13.00335,1.07],[14,14.00324,0]]],
- 7:['N','azot',[[14,14.00307,99.636],[15,15.00011,0.364]]],
- 8:['O','tlen',[[16,15.99491,99.757],[17,16.99913,0.038],[18,17.99916,0.205]]],
- 11:['Na','sód',[[23,22.98977,100]]],
- 12:['Mg','magnez',[[24,23.98504,78.99],[25,24.98584,10.00],[26,25.98259,11.01]]],
- 13:['Al','glin',[[27,26.98154,100]]],
- 17:['Cl','chlor',[[35,34.96885,75.76],[37,36.96590,24.24]]],
- 19:['K','potas',[[39,38.96371,93.258],[40,39.96400,0.012],[41,40.96183,6.730]]],
- 20:['Ca','wapń',[[40,39.96259,96.941],[42,41.95862,0.647],[43,42.95877,0.135],[44,43.95548,2.086],[48,47.95253,0.187]]]};
-var SYM={2:'He',3:'Li',4:'Be',5:'B',9:'F',10:'Ne',14:'Si',15:'P',16:'S',18:'Ar'};
+   Model wielokrotnego użytku (F04, F05, F06, A01…): `f05-izotopy-v01`. Dane izotopów z silnika (CHE.DATA.ISOTOPES). */
+/* dane z silnika (bez lokalnej kopii): CHE.DATA.ELEMENTS_54 (symbol, nazwa) + CHE.DATA.ISOTOPES (A, masa, udział) */
+function izo(z){var E=(D.ELEMENTS_54||[]).filter(function(e){return e.z===z})[0];if(!E)return null;
+ var L=(D.ISOTOPES||{})[E.s]||[];return [E.s,String(E.n||E.s).toLowerCase(),L.map(function(x){return [x.A,x.atomicMass,(x.abundance||0)*100]}).sort(function(a,b){return b[2]-a[2]||a[0]-b[0]})]}
 function supN(n){return String(n).replace(/[0-9]/g,function(d){return '⁰¹²³⁴⁵⁶⁷⁸⁹'[d]})}
 function subN(n){return String(n).replace(/[0-9]/g,function(d){return '₀₁₂₃₄₅₆₇₈₉'[d]})}
 function chg(q){return q===0?'':(Math.abs(q)>1?supN(Math.abs(q)):'')+(q>0?'⁺':'⁻')}
 function pl(x,d){return x.toFixed(d).replace('.',',')}
 V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa',tag:'MODEL',
  hint:'Dodawaj i zabieraj protony, neutrony i elektrony. Model mówi, co się zmieniło: pierwiastek (Z), izotop (n) czy ładunek (e). Niżej: skąd się bierze masa atomowa z układu okresowego.',
- foot:'rozszerzenia.js §8 · dane izotopów: IUPAC (zaokrąglone)',
+ foot:'rozszerzenia.js §8 · dane: CHE.DATA.ISOTOPES, ELEMENTS_54',
  build:function(host){host.innerHTML='';host.classList.add('x5');
   var s={p:17,n:18,e:17},start={p:17,n:18,e:17};
   var pick=el('div','bar','<b>Start:</b>');host.appendChild(pick);
-  [1,6,8,11,12,17,20].forEach(function(z){var d=IZO[z],b=el('button','o',d[0]);b.type='button';b.onclick=function(){s={p:z,n:d[2][0][0]-z,e:z};start={p:s.p,n:s.n,e:s.e};draw()};pick.appendChild(b)});
+  [1,6,8,11,12,17,20].forEach(function(z){var d=izo(z);if(!d||!d[2].length)return;var b=el('button','o',d[0]);b.type='button';b.onclick=function(){s={p:z,n:d[2][0][0]-z,e:z};start={p:s.p,n:s.n,e:s.e};draw()};pick.appendChild(b)});
   var ctl=el('div','bar');host.appendChild(ctl);
   [['p','proton'],['n','neutron'],['e','elektron']].forEach(function(c){
    var m=el('button','o','− '+c[1]),p=el('button','o','+ '+c[1]);m.type=p.type='button';
    m.onclick=function(){if(s[c[0]]>(c[0]==='p'?1:0)){s[c[0]]--;draw()}};p.onclick=function(){if(s[c[0]]<(c[0]==='p'?20:c[0]==='n'?30:22)){s[c[0]]++;draw()}};ctl.append(m,p)});
   var g=el('div','two'),pic=el('div'),txt=el('div');g.append(pic,txt);host.appendChild(g);
   var avg=el('div');host.appendChild(avg);
-  function sym(z){return IZO[z]?IZO[z][0]:SYM[z]||('Z='+z)}
-  function draw(){var A=s.p+s.n,q=s.p-s.e,X=sym(s.p),d=IZO[s.p];
+  function sym(z){var d=izo(z);return d?d[0]:('Z='+z)}
+  function draw(){var A=s.p+s.n,q=s.p-s.e,X=sym(s.p),d=izo(s.p);
    /* rysunek: jądro (p czerwone, n szare) + elektrony na jednym okręgu (rozmieszczenie na powłokach — F07) */
    var W=260,C=130,svg='<svg viewBox="0 0 '+W+' '+W+'" width="100%" style="max-width:260px;display:block;margin:auto" role="img" aria-label="Model atomu">';
    svg+='<circle cx="'+C+'" cy="'+C+'" r="104" fill="none" stroke="#9aa6b2" stroke-dasharray="4 4"/>';
@@ -248,10 +240,10 @@ V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor
    txt.innerHTML='<div class="eq" style="font-size:22px">'+supN(A)+subN(s.p)+X+chg(q)+'</div>'+
     '<div class="nt"><b>'+(d?d[1]:X)+'</b> · Z = '+s.p+' · A = '+A+'<br>p⁺ = '+s.p+' · n⁰ = A − Z = '+s.n+' · e⁻ = '+s.e+
     '<br><b>Ładunek</b> q = p − e = '+(q>0?'+':'')+q+' → '+(q===0?'atom obojętny':q>0?'<b>kation</b> (oddał '+q+' e⁻)':'<b>anion</b> (przyjął '+(-q)+' e⁻)')+
-    '<br><b>Izotop:</b> '+(!d?'— (brak danych w modelu)':iso?(iso[2]>0?'naturalny, udział '+pl(iso[2],iso[2]<1?3:2)+'%':'występuje śladowo / promieniotwórczy'):'nieznany w przyrodzie — jądro nietrwałe lub nie istnieje')+'</div>'+
+    '<br><b>Izotop:</b> '+(!d||!d[2].length?'— (brak danych w modelu)':iso?(iso[2]>0?'naturalny, udział '+pl(iso[2],iso[2]<1?3:2)+'%':'występuje śladowo / promieniotwórczy'):'nieznany w przyrodzie — jądro nietrwałe lub nie istnieje')+'</div>'+
     '<div class="nt"><b>Co się zmieniło względem startu:</b><br>'+(zm.length?zm.join('<br>'):'nic — stan startowy (atom obojętny, najczęstszy izotop)')+'</div>';
    /* średnia ważona */
-   if(!d){avg.innerHTML='';return}
+   if(!d||!d[2].length){avg.innerHTML='';return}
    var rows=d[2].filter(function(x){return x[2]>0}),M=0,t='';rows.forEach(function(x){var w=x[1]*x[2]/100;M+=w;
     t+='<tr><td>'+supN(x[0])+d[0]+'</td><td>'+pl(x[1],3)+' u</td><td>'+pl(x[2],x[2]<1?3:2)+'%</td><td>'+pl(w,3)+' u</td><td><div style="height:10px;width:'+Math.max(1,x[2]).toFixed(0)+'%;background:#2f7bd8;border-radius:3px"></div></td></tr>'});
    avg.innerHTML='<div class="nt" style="margin-top:10px"><b>Masa atomowa '+d[0]+' = średnia ważona mas izotopów</b> (masa × udział, potem suma):</div>'+

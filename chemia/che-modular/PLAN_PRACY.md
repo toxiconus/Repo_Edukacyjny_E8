@@ -74,4 +74,5 @@ Gałąź: `claude/che-lekcje`. Wyniki (`dist/`, `build/`) poza gitem.
 - **Kolejność:** F06 Układ okresowy → F07 … F21; cienkie F10, F15, F18–F21 — najpierw zapytać o nowszą wersję. GFX do zbudowania: magnes (Fe+S), lód pływający, osad i para w parownicy, płomień w tyglu; modele: energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17).
 - **Po zatwierdzeniu kanonu v0.3:** przemianować gotowe N01…N05 → N02…N06 (pliki, `kod`, `uid`, rejestr).
 - Otwarte: mapowanie L006–L013 → kody (O, R, X, LAB, REV) do potwierdzenia; testy N01–N03 → `::: test`; tryb Noc w `lekcja.css`.
+- **Uwaga użytkownika (2026-10-08 14:17):** nie budować niezależnych grafik atomu / układu okresowego — duży silnik ma dobre w **atlasie** (`engine/src/moduly/_anon_004/`: `bohr`, `cloud`, `isoBar`, karty pierwiastków, izotopy). Przed każdym nowym modelem sprawdzić atlas i widoki silnika (`KATALOG.md`), a lekcję wpinać w istniejący element. Do zrobienia: model `f05-izotopy-v01` (własny rysunek atomu) zastąpić/oprzeć na elementach atlasu; projekt `f06-trendy-v01` wstrzymany (był niezależną tablicą — nie wgrany).
 
