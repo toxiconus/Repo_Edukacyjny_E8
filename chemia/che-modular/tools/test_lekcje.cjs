@@ -108,7 +108,12 @@ async function one(b, f) {
   const b = await pw.chromium.launch();
   // limit 150 s na lekcję: zawieszona strona (np. pętla po usunięciu danych) = FAIL, nie wieczne czekanie
   const limit = f => new Promise(r => setTimeout(() => r({ f, bl: ['zawieszenie > 150 s'], stat: '' }), 150000));
-  const res = await Promise.all(files.map(f => Promise.race([one(b, f).catch(e => ({ f, bl: ['wyjątek: ' + e.message.split('\n')[0]], stat: '' })), limit(f)])));
+  // najwyżej 5 lekcji naraz — przy większym obciążeniu animacje dają losowe różnice treści
+  const res = [], q = [...files];
+  await Promise.all(Array.from({ length: Math.min(5, q.length) }, async () => {
+    while (q.length) { const f = q.shift(); res.push(await Promise.race([one(b, f).catch(e => ({ f, bl: ['wyjątek: ' + e.message.split('\n')[0]], stat: '' })), limit(f)])); }
+  }));
+  res.sort((x, y) => x.f.localeCompare(y.f));
   let fail = 0;
   for (const x of res) {
     if (x.bl.length) { fail++; console.log('FAIL', path.basename(x.f), '—', x.bl.join('; '), '|', x.stat); }
