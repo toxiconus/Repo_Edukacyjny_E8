@@ -1,0 +1,234 @@
+{
+  "version": "1.0",
+  "description": "Efekty wizualne GFX — wspólne między przedmiotami. Nowa lekcja wybiera effectGroups lub pojedyncze id.",
+  "groups": {
+    "common.ui": {
+      "title": "UI / etykiety",
+      "subjects": [
+        "*"
+      ],
+      "items": [
+        "label",
+        "scale",
+        "stopper",
+        "tap"
+      ]
+    },
+    "chem.phase": {
+      "title": "Fazy i ciecze",
+      "subjects": [
+        "chemia"
+      ],
+      "items": [
+        "liquid",
+        "meniscus",
+        "solids",
+        "foam",
+        "ripples",
+        "schlieren",
+        "condensation",
+        "steam",
+        "fumes"
+      ]
+    },
+    "chem.reaction": {
+      "title": "Przebieg reakcji",
+      "subjects": [
+        "chemia"
+      ],
+      "items": [
+        "bubbles",
+        "precipitate",
+        "plume",
+        "turbidity",
+        "dropMix",
+        "splash",
+        "stirBar"
+      ]
+    },
+    "chem.heat": {
+      "title": "Ciepło i spalanie",
+      "subjects": [
+        "chemia"
+      ],
+      "items": [
+        "heatGlow",
+        "heatConvection",
+        "flame",
+        "sparks",
+        "metalBurn",
+        "flash",
+        "splint",
+        "pop",
+        "explosion"
+      ]
+    },
+    "chem.mark": {
+      "title": "Znaczniki laboratoryjne",
+      "subjects": [
+        "chemia"
+      ],
+      "items": [
+        "ringMark"
+      ]
+    },
+    "phys.electro": {
+      "title": "Efekty elektrostatyczne",
+      "subjects": [
+        "fizyka"
+      ],
+      "items": [
+        "discharge",
+        "sparks"
+      ]
+    }
+  },
+  "items": {
+    "liquid": {
+      "title": "Poziom cieczy",
+      "params": [
+        "color",
+        "level",
+        "opacity"
+      ],
+      "design": "Poziom i kolor cieczy."
+    },
+    "meniscus": {
+      "title": "Menisk",
+      "design": "Menisk."
+    },
+    "bubbles": {
+      "title": "Pęcherzyki gazu",
+      "params": [
+        "rate",
+        "size"
+      ],
+      "design": "Pęcherzyki gazu."
+    },
+    "precipitate": {
+      "title": "Osad",
+      "params": [
+        "color",
+        "amount"
+      ],
+      "design": "Osad."
+    },
+    "flame": {
+      "title": "Płomień",
+      "params": [
+        "color",
+        "intensity"
+      ],
+      "design": "Płomień."
+    },
+    "steam": {
+      "title": "Para",
+      "design": "Para."
+    },
+    "fumes": {
+      "title": "Opary",
+      "design": "Opary."
+    },
+    "discharge": {
+      "title": "Wyładowanie",
+      "subjects": [
+        "fizyka"
+      ],
+      "design": "Wyładowanie (fizyka)."
+    },
+    "label": {
+      "title": "Etykieta",
+      "core": true,
+      "design": "Etykieta tekstowa."
+    },
+    "scale": {
+      "title": "Skala / podziałka",
+      "core": true,
+      "design": "Podziałka."
+    },
+    "heatGlow": {
+      "title": "heatGlow",
+      "design": "Poświata ciepła."
+    },
+    "plume": {
+      "title": "plume",
+      "design": "Smuga w roztworze."
+    },
+    "turbidity": {
+      "title": "turbidity",
+      "design": "Zmętnienie."
+    },
+    "solids": {
+      "title": "solids",
+      "design": "Ciało stałe / proszek."
+    },
+    "foam": {
+      "title": "foam",
+      "design": "Piana."
+    },
+    "ripples": {
+      "title": "ripples",
+      "design": "Fale na powierzchni."
+    },
+    "dropMix": {
+      "title": "dropMix",
+      "design": "Kropla + mieszanie."
+    },
+    "schlieren": {
+      "title": "schlieren",
+      "design": "Smugi gęstości."
+    },
+    "stirBar": {
+      "title": "stirBar",
+      "design": "Mieszadełko."
+    },
+    "condensation": {
+      "title": "condensation",
+      "design": "Skropliny."
+    },
+    "heatConvection": {
+      "title": "heatConvection",
+      "design": "Konwekcja w cieczy."
+    },
+    "splash": {
+      "title": "splash",
+      "design": "Rozprysk."
+    },
+    "stopper": {
+      "title": "stopper",
+      "design": "Korek."
+    },
+    "tap": {
+      "title": "tap",
+      "design": "Kran biurety."
+    },
+    "sparks": {
+      "title": "sparks",
+      "design": "Iskry."
+    },
+    "metalBurn": {
+      "title": "metalBurn",
+      "design": "Płonący metal."
+    },
+    "explosion": {
+      "title": "explosion",
+      "design": "Efekt wybuchu (ostrożnie dydaktycznie)."
+    },
+    "flash": {
+      "title": "flash",
+      "design": "Błysk."
+    },
+    "splint": {
+      "title": "splint",
+      "design": "Łuczywko / test O₂."
+    },
+    "pop": {
+      "title": "pop",
+      "design": "„Strzał” H₂."
+    },
+    "ringMark": {
+      "title": "ringMark",
+      "design": "Pierścień na szkle."
+    }
+  }
+}

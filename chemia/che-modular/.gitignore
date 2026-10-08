@@ -1,0 +1,5 @@
+modules/
+dist/
+__pycache__/
+lessons-md/*/build/
+lessons-md/*/PARITY_REPORT.json

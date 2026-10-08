@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "description": "Wspólny shell lekcji — podpinany do każdej lekcji / packa.",
+  "components": {
+    "header": {
+      "id": "header",
+      "css": "engine/src/layout/lesson-shell.css",
+      "js": "engine/src/layout/lesson-shell.js",
+      "mount": "CHE.LessonShell.mount",
+      "fields": ["code", "title", "subject", "variant"]
+    },
+    "toc-float": {
+      "id": "toc-float",
+      "title": "Pływający hamburger — spis treści",
+      "behavior": [
+        "fixed top-left 3 bars",
+        "panel with section links",
+        "active section via IntersectionObserver",
+        "Esc / backdrop closes"
+      ],
+      "tocSources": [
+        "nav#che-lesson-toc-data a[href^='#']",
+        "section[id][data-toc]",
+        "main h2[id]"
+      ]
+    }
+  },
+  "variants": {
+    "chemia": { "accent": "#0f766e", "subject": "chemia" },
+    "fizyka": { "accent": "#7c3aed", "subject": "fizyka" },
+    "biologia": { "accent": "#15803d", "subject": "biologia" },
+    "default": { "accent": "#176b8c" }
+  },
+  "defaults": {
+    "toc": "float-hamburger",
+    "header": "standard"
+  }
+}

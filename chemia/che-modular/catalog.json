@@ -1,0 +1,773 @@
+[
+  {
+    "id": "che-prepaint",
+    "file": "che-prepaint.js",
+    "index": 0,
+    "bytes": 297,
+    "tags": [
+      "core"
+    ],
+    "sha1": "e5d2faf3b67f"
+  },
+  {
+    "id": "_anon_001",
+    "file": "_anon_001.js",
+    "index": 1,
+    "bytes": 1204920,
+    "tags": [
+      "core"
+    ],
+    "sha1": "2710bd921887"
+  },
+  {
+    "id": "_anon_002",
+    "file": "_anon_002.js",
+    "index": 2,
+    "bytes": 3257,
+    "tags": [
+      "core"
+    ],
+    "sha1": "48a3ba56b241"
+  },
+  {
+    "id": "_anon_003",
+    "file": "_anon_003.js",
+    "index": 3,
+    "bytes": 230,
+    "tags": [
+      "core"
+    ],
+    "sha1": "c698b34334de"
+  },
+  {
+    "id": "_anon_004",
+    "file": "_anon_004.js",
+    "index": 4,
+    "bytes": 179192,
+    "tags": [
+      "core"
+    ],
+    "sha1": "a183731c42e1"
+  },
+  {
+    "id": "che-atlas-acid-v001",
+    "file": "che-atlas-acid-v001.js",
+    "index": 5,
+    "bytes": 8560,
+    "tags": [
+      "acids",
+      "lessons"
+    ],
+    "sha1": "0bf26f8baebc"
+  },
+  {
+    "id": "che-atlas-lessons-v001",
+    "file": "che-atlas-lessons-v001.js",
+    "index": 6,
+    "bytes": 7402,
+    "tags": [
+      "lessons"
+    ],
+    "sha1": "457322956fda"
+  },
+  {
+    "id": "che-mol3d-oxides-v001",
+    "file": "che-mol3d-oxides-v001.js",
+    "index": 7,
+    "bytes": 528,
+    "tags": [
+      "oxides"
+    ],
+    "sha1": "de5aa7c1b68b"
+  },
+  {
+    "id": "_anon_008",
+    "file": "_anon_008.js",
+    "index": 8,
+    "bytes": 28,
+    "tags": [
+      "core"
+    ],
+    "sha1": "defccf35d00b"
+  },
+  {
+    "id": "_anon_009",
+    "file": "_anon_009.js",
+    "index": 9,
+    "bytes": 1908,
+    "tags": [
+      "core"
+    ],
+    "sha1": "adcb33499739"
+  },
+  {
+    "id": "_anon_010",
+    "file": "_anon_010.js",
+    "index": 10,
+    "bytes": 1158,
+    "tags": [
+      "core"
+    ],
+    "sha1": "e2351dcd8b94"
+  },
+  {
+    "id": "_anon_011",
+    "file": "_anon_011.js",
+    "index": 11,
+    "bytes": 1743,
+    "tags": [
+      "core"
+    ],
+    "sha1": "f7d056cdc95e"
+  },
+  {
+    "id": "che-lesson-data",
+    "file": "che-lesson-data.js",
+    "index": 12,
+    "bytes": 4135,
+    "tags": [
+      "lessons"
+    ],
+    "sha1": "2331a6353134"
+  },
+  {
+    "id": "_anon_013",
+    "file": "_anon_013.js",
+    "index": 13,
+    "bytes": 174,
+    "tags": [
+      "core"
+    ],
+    "sha1": "46be3664bd54"
+  },
+  {
+    "id": "_anon_014",
+    "file": "_anon_014.js",
+    "index": 14,
+    "bytes": 26983,
+    "tags": [
+      "core"
+    ],
+    "sha1": "087eb5e1bfcd"
+  },
+  {
+    "id": "_anon_015",
+    "file": "_anon_015.js",
+    "index": 15,
+    "bytes": 863,
+    "tags": [
+      "core"
+    ],
+    "sha1": "0fded174f8a6"
+  },
+  {
+    "id": "_anon_016",
+    "file": "_anon_016.js",
+    "index": 16,
+    "bytes": 4465,
+    "tags": [
+      "core"
+    ],
+    "sha1": "b013a7880f50"
+  },
+  {
+    "id": "_anon_017",
+    "file": "_anon_017.js",
+    "index": 17,
+    "bytes": 42919,
+    "tags": [
+      "core"
+    ],
+    "sha1": "f9f5ed01f177"
+  },
+  {
+    "id": "_anon_018",
+    "file": "_anon_018.js",
+    "index": 18,
+    "bytes": 29024,
+    "tags": [
+      "core"
+    ],
+    "sha1": "713a59a8961b"
+  },
+  {
+    "id": "_anon_019",
+    "file": "_anon_019.js",
+    "index": 19,
+    "bytes": 1189,
+    "tags": [
+      "core"
+    ],
+    "sha1": "4c0b0eaa2a90"
+  },
+  {
+    "id": "_anon_020",
+    "file": "_anon_020.js",
+    "index": 20,
+    "bytes": 1599,
+    "tags": [
+      "core"
+    ],
+    "sha1": "41fe02871145"
+  },
+  {
+    "id": "_anon_021",
+    "file": "_anon_021.js",
+    "index": 21,
+    "bytes": 20805,
+    "tags": [
+      "core"
+    ],
+    "sha1": "2e306fc9ac5e"
+  },
+  {
+    "id": "_anon_022",
+    "file": "_anon_022.js",
+    "index": 22,
+    "bytes": 557,
+    "tags": [
+      "core"
+    ],
+    "sha1": "5ff1b8f6d1f2"
+  },
+  {
+    "id": "_anon_023",
+    "file": "_anon_023.js",
+    "index": 23,
+    "bytes": 702,
+    "tags": [
+      "core"
+    ],
+    "sha1": "94e10a912b8d"
+  },
+  {
+    "id": "_anon_024",
+    "file": "_anon_024.js",
+    "index": 24,
+    "bytes": 1590,
+    "tags": [
+      "core"
+    ],
+    "sha1": "c348f3cce537"
+  },
+  {
+    "id": "_anon_025",
+    "file": "_anon_025.js",
+    "index": 25,
+    "bytes": 15709,
+    "tags": [
+      "core"
+    ],
+    "sha1": "b21fea75d999"
+  },
+  {
+    "id": "_anon_026",
+    "file": "_anon_026.js",
+    "index": 26,
+    "bytes": 749,
+    "tags": [
+      "core"
+    ],
+    "sha1": "50a728921ff7"
+  },
+  {
+    "id": "_anon_027",
+    "file": "_anon_027.js",
+    "index": 27,
+    "bytes": 1334,
+    "tags": [
+      "core"
+    ],
+    "sha1": "ce83ce71b7e9"
+  },
+  {
+    "id": "_anon_028",
+    "file": "_anon_028.js",
+    "index": 28,
+    "bytes": 1696,
+    "tags": [
+      "core"
+    ],
+    "sha1": "adbf67c64576"
+  },
+  {
+    "id": "_anon_029",
+    "file": "_anon_029.js",
+    "index": 29,
+    "bytes": 1842,
+    "tags": [
+      "core"
+    ],
+    "sha1": "f323b8302580"
+  },
+  {
+    "id": "_anon_030",
+    "file": "_anon_030.js",
+    "index": 30,
+    "bytes": 1936,
+    "tags": [
+      "core"
+    ],
+    "sha1": "fc4ba2b5e997"
+  },
+  {
+    "id": "_anon_031",
+    "file": "_anon_031.js",
+    "index": 31,
+    "bytes": 981,
+    "tags": [
+      "core"
+    ],
+    "sha1": "9502c897989a"
+  },
+  {
+    "id": "_anon_032",
+    "file": "_anon_032.js",
+    "index": 32,
+    "bytes": 24474,
+    "tags": [
+      "core"
+    ],
+    "sha1": "d2b8ad14c861"
+  },
+  {
+    "id": "_anon_033",
+    "file": "_anon_033.js",
+    "index": 33,
+    "bytes": 732,
+    "tags": [
+      "core"
+    ],
+    "sha1": "b9dbdf3da954"
+  },
+  {
+    "id": "che-v1620-js",
+    "file": "che-v1620-js.js",
+    "index": 34,
+    "bytes": 8337,
+    "tags": [],
+    "sha1": "8bdf9f578ea5"
+  },
+  {
+    "id": "che-sole-src",
+    "file": "che-sole-src.js",
+    "index": 35,
+    "bytes": 112833,
+    "tags": [
+      "salts"
+    ],
+    "sha1": "9de032334c18"
+  },
+  {
+    "id": "fiz-elektro-src",
+    "file": "fiz-elektro-src.js",
+    "index": 36,
+    "bytes": 74370,
+    "tags": [
+      "fiz"
+    ],
+    "sha1": "284dc6d8b6ee"
+  },
+  {
+    "id": "che-n02-src",
+    "file": "che-n02-src.js",
+    "index": 37,
+    "bytes": 176005,
+    "tags": [
+      "hydroxides"
+    ],
+    "sha1": "baf683e86cc5"
+  },
+  {
+    "id": "che-n01-src",
+    "file": "che-n01-src.js",
+    "index": 38,
+    "bytes": 170770,
+    "tags": [
+      "oxides"
+    ],
+    "sha1": "a278fdcda4b0"
+  },
+  {
+    "id": "che-kw-src",
+    "file": "che-kw-src.js",
+    "index": 39,
+    "bytes": 167398,
+    "tags": [
+      "acids"
+    ],
+    "sha1": "9c729eab36a9"
+  },
+  {
+    "id": "che-zoom-engine-v001",
+    "file": "che-zoom-engine-v001.js",
+    "index": 40,
+    "bytes": 11656,
+    "tags": [],
+    "sha1": "3591319548a8"
+  },
+  {
+    "id": "che-viz-energy-profile-v001",
+    "file": "che-viz-energy-profile-v001.js",
+    "index": 41,
+    "bytes": 2143,
+    "tags": [],
+    "sha1": "d1d0a7400199"
+  },
+  {
+    "id": "che-ionic-v001",
+    "file": "che-ionic-v001.js",
+    "index": 42,
+    "bytes": 9427,
+    "tags": [
+      "salts"
+    ],
+    "sha1": "05cfa686055e"
+  },
+  {
+    "id": "che-fiz-elektro-v001",
+    "file": "che-fiz-elektro-v001.js",
+    "index": 43,
+    "bytes": 4732,
+    "tags": [
+      "fiz"
+    ],
+    "sha1": "08338a3cbf6f"
+  },
+  {
+    "id": "che-oxides-v001",
+    "file": "che-oxides-v001.js",
+    "index": 44,
+    "bytes": 19632,
+    "tags": [
+      "oxides"
+    ],
+    "sha1": "5a3107b6ea54"
+  },
+  {
+    "id": "che-stoich-v001",
+    "file": "che-stoich-v001.js",
+    "index": 45,
+    "bytes": 3007,
+    "tags": [
+      "stoich"
+    ],
+    "sha1": "17bd7dc82890"
+  },
+  {
+    "id": "che-hydroxides-v001",
+    "file": "che-hydroxides-v001.js",
+    "index": 46,
+    "bytes": 19985,
+    "tags": [
+      "hydroxides",
+      "oxides"
+    ],
+    "sha1": "87d0033c008b"
+  },
+  {
+    "id": "che-colors-v001",
+    "file": "che-colors-v001.js",
+    "index": 47,
+    "bytes": 18552,
+    "tags": [
+      "colors",
+      "core"
+    ],
+    "sha1": "46913f90099d"
+  },
+  {
+    "id": "che-lab-engine-v001",
+    "file": "che-lab-engine-v001.js",
+    "index": 48,
+    "bytes": 370911,
+    "tags": [
+      "gfx"
+    ],
+    "sha1": "1a27c4aa3a4f"
+  },
+  {
+    "id": "che-lab-bridge-v102",
+    "file": "che-lab-bridge-v102.js",
+    "index": 49,
+    "bytes": 573,
+    "tags": [],
+    "sha1": "38675f67fa9f"
+  },
+  {
+    "id": "che-visual-library-v001",
+    "file": "che-visual-library-v001.js",
+    "index": 50,
+    "bytes": 323289,
+    "tags": [
+      "gfx"
+    ],
+    "sha1": "0e84f92d5a30"
+  },
+  {
+    "id": "che-visual-hub-v001",
+    "file": "che-visual-hub-v001.js",
+    "index": 51,
+    "bytes": 2441,
+    "tags": [
+      "devtools",
+      "gfx"
+    ],
+    "sha1": "db8be8bbafc8"
+  },
+  {
+    "id": "che-lesson-registry-js",
+    "file": "che-lesson-registry-js.js",
+    "index": 52,
+    "bytes": 12779,
+    "tags": [
+      "lessons"
+    ],
+    "sha1": "8e8d4706271e"
+  },
+  {
+    "id": "che-legacy-engine-bridge-v003",
+    "file": "che-legacy-engine-bridge-v003.js",
+    "index": 53,
+    "bytes": 3889,
+    "tags": [
+      "core"
+    ],
+    "sha1": "01ef92b572e0"
+  },
+  {
+    "id": "che-wiz-v0030-widget-integration",
+    "file": "che-wiz-v0030-widget-integration.js",
+    "index": 54,
+    "bytes": 2411,
+    "tags": [],
+    "sha1": "1edb7ceac8f4"
+  },
+  {
+    "id": "che-wiz-v0030-hub",
+    "file": "che-wiz-v0030-hub.js",
+    "index": 55,
+    "bytes": 2927,
+    "tags": [
+      "devtools"
+    ],
+    "sha1": "af49d9e6d8d4"
+  },
+  {
+    "id": "che-widget-api-v005",
+    "file": "che-widget-api-v005.js",
+    "index": 56,
+    "bytes": 1134,
+    "tags": [],
+    "sha1": "1d5b1953a1a6"
+  },
+  {
+    "id": "che-widget-migration-audit-v004",
+    "file": "che-widget-migration-audit-v004.js",
+    "index": 57,
+    "bytes": 3318,
+    "tags": [
+      "core",
+      "devtools"
+    ],
+    "sha1": "7c61c55f1b30"
+  },
+  {
+    "id": "che-widget-migration-v006",
+    "file": "che-widget-migration-v006.js",
+    "index": 58,
+    "bytes": 1343,
+    "tags": [
+      "core",
+      "devtools"
+    ],
+    "sha1": "c3d13226aa29"
+  },
+  {
+    "id": "che-experiment-migration-v007",
+    "file": "che-experiment-migration-v007.js",
+    "index": 59,
+    "bytes": 6123,
+    "tags": [
+      "devtools"
+    ],
+    "sha1": "475560edd203"
+  },
+  {
+    "id": "che-legacy-consumer-audit-v009",
+    "file": "che-legacy-consumer-audit-v009.js",
+    "index": 60,
+    "bytes": 573,
+    "tags": [
+      "devtools"
+    ],
+    "sha1": "423efc4ae388"
+  },
+  {
+    "id": "che-chemistry-widget-migration-v010",
+    "file": "che-chemistry-widget-migration-v010.js",
+    "index": 61,
+    "bytes": 1413,
+    "tags": [
+      "devtools"
+    ],
+    "sha1": "3527989abb3f"
+  },
+  {
+    "id": "che-char-central-data-v010",
+    "file": "che-char-central-data-v010.js",
+    "index": 62,
+    "bytes": 271,
+    "tags": [],
+    "sha1": "208c0b2f470d"
+  },
+  {
+    "id": "che-widget-migration-audit-v010",
+    "file": "che-widget-migration-audit-v010.js",
+    "index": 63,
+    "bytes": 489,
+    "tags": [
+      "core",
+      "devtools"
+    ],
+    "sha1": "373bc3332674"
+  },
+  {
+    "id": "che-local-data-migration-v011",
+    "file": "che-local-data-migration-v011.js",
+    "index": 64,
+    "bytes": 2785,
+    "tags": [
+      "core",
+      "devtools"
+    ],
+    "sha1": "89c2b4990de1"
+  },
+  {
+    "id": "che-local-data-audit-v012",
+    "file": "che-local-data-audit-v012.js",
+    "index": 65,
+    "bytes": 1735,
+    "tags": [
+      "core",
+      "devtools"
+    ],
+    "sha1": "17f094aa8750"
+  },
+  {
+    "id": "che-engine-hardening-v014",
+    "file": "che-engine-hardening-v014.js",
+    "index": 66,
+    "bytes": 761,
+    "tags": [
+      "core"
+    ],
+    "sha1": "55d7cc50ef9c"
+  },
+  {
+    "id": "che-local-data-audit-v013",
+    "file": "che-local-data-audit-v013.js",
+    "index": 67,
+    "bytes": 2262,
+    "tags": [
+      "core",
+      "devtools"
+    ],
+    "sha1": "52fe8cf8a64b"
+  },
+  {
+    "id": "che-shared-visual-registry-v017",
+    "file": "che-shared-visual-registry-v017.js",
+    "index": 68,
+    "bytes": 3918,
+    "tags": [
+      "lessons"
+    ],
+    "sha1": "af6e1c1af4bf"
+  },
+  {
+    "id": "che-project-shell-v016",
+    "file": "che-project-shell-v016.js",
+    "index": 69,
+    "bytes": 5832,
+    "tags": [
+      "devtools"
+    ],
+    "sha1": "cd206ec1c7a3"
+  },
+  {
+    "id": "che-home-gate-v0182",
+    "file": "che-home-gate-v0182.js",
+    "index": 70,
+    "bytes": 37718,
+    "tags": [
+      "devtools"
+    ],
+    "sha1": "212e1e9a445c"
+  },
+  {
+    "id": "che-lesson-context-v001",
+    "file": "che-lesson-context-v001.js",
+    "index": 71,
+    "bytes": 7998,
+    "tags": [
+      "core",
+      "lessons"
+    ],
+    "sha1": "78f026536abd"
+  },
+  {
+    "id": "che-literal-newline-fix-v001",
+    "file": "che-literal-newline-fix-v001.js",
+    "index": 72,
+    "bytes": 1286,
+    "tags": [],
+    "sha1": "988106e2ecd9"
+  },
+  {
+    "id": "che-lesson-open-viz-v001",
+    "file": "che-lesson-open-viz-v001.js",
+    "index": 73,
+    "bytes": 2608,
+    "tags": [
+      "lessons"
+    ],
+    "sha1": "906f7535981c"
+  },
+  {
+    "id": "che-consistency-v001",
+    "file": "che-consistency-v001.js",
+    "index": 74,
+    "bytes": 18441,
+    "tags": [
+      "devtools"
+    ],
+    "sha1": "4076f34545c6"
+  },
+  {
+    "id": "che-v038-views",
+    "file": "che-v038-views.js",
+    "index": 75,
+    "bytes": 6956,
+    "tags": [],
+    "sha1": "fedd821ceb39"
+  },
+  {
+    "id": "che-hub-przedmioty-v001",
+    "file": "che-hub-przedmioty-v001.js",
+    "index": 76,
+    "bytes": 14032,
+    "tags": [
+      "devtools"
+    ],
+    "sha1": "a2f5232ab13c"
+  },
+  {
+    "id": "che-viz-retire-v001",
+    "file": "che-viz-retire-v001.js",
+    "index": 77,
+    "bytes": 3923,
+    "tags": [],
+    "sha1": "88505be8ae92"
+  }
+]

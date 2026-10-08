@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "description": "Rejestr lekcji = kontrakt dla packera. Nowa lekcja = nowy wpis + source HTML + domains[].",
+  "lessons": {
+    "N01": {
+      "code": "N01",
+      "title": "Tlenki",
+      "subject": "chemia",
+      "source": "che-n01-src",
+      "status": "active",
+      "domains": ["atom", "oxides", "stoich", "reactions", "colors", "lab-chem"],
+      "visuals": [
+        "n01-tlenki-v01", "n01-konstruktor-v01", "n01-reaktor-v01", "n01-trend-v01",
+        "n01-spalanie-v01", "n01-doswiadczenia-v01", "molecule3d-merged", "periodic-54",
+        "chain-scn", "gfx-scene-carbonate", "stech-kalkulator-v01"
+      ],
+      "vesselGroups": ["chem.glassware", "chem.heat", "chem.setup", "common.stage"],
+      "effectGroups": ["chem.phase", "chem.reaction", "chem.heat", "common.ui"],
+      "scenes": ["carbonate", "heating", "gasCollection", "acidMetal"],
+      "tables": ["oxide-types", "oxide-colors", "periodic-basic"]
+    },
+    "N02": {
+      "code": "N02",
+      "title": "Wodorotlenki i zasady",
+      "subject": "chemia",
+      "source": "che-n02-src",
+      "status": "active",
+      "domains": ["hydroxides", "stoich", "reactions", "colors", "lab-chem"],
+      "visuals": [
+        "n02-wzory-v01", "n02-przeglad-v01", "n02-otrzymywanie-v01", "n02-stracanie-v01",
+        "n02-zobojetnianie-v01", "n02-dysocjacja-v01", "n02-reaktor-v01", "stech-kalkulator-v01"
+      ],
+      "vesselGroups": ["chem.glassware", "chem.heat", "chem.measure", "chem.setup", "common.stage"],
+      "effectGroups": ["chem.phase", "chem.reaction", "common.ui"],
+      "scenes": ["indicator", "acidMetal", "heating"],
+      "tables": ["hydroxide-solubility", "solheat", "solubility-full"]
+    },
+    "N03": {
+      "code": "N03",
+      "title": "Kwasy",
+      "subject": "chemia",
+      "source": "che-kw-src",
+      "status": "active",
+      "domains": ["acids", "stoich", "reactions", "colors", "lab-chem"],
+      "visuals": [
+        "kw-dysocjacja-v01", "kw-reszty-v01", "kw-bufor-v01", "kw-szereg-metali-v01",
+        "stech-kalkulator-v01"
+      ],
+      "vesselGroups": ["chem.glassware", "chem.measure", "chem.setup", "common.stage"],
+      "effectGroups": ["chem.phase", "chem.reaction", "common.ui"],
+      "scenes": ["indicator", "indicatorRack", "titration", "dilution", "acidMetal"],
+      "tables": ["acid-strength", "indicators-ph", "metal-activity"]
+    },
+    "N04": {
+      "code": "N04",
+      "title": "Sole",
+      "subject": "chemia",
+      "source": "che-sole-src",
+      "status": "active",
+      "domains": ["salts", "acids", "stoich", "reactions", "colors", "lab-chem"],
+      "visuals": [
+        "sole-doswiadczenia-v01", "tabela-rozpuszczalnosci-v01", "rownania-jonowe-v01",
+        "ion-map-v02", "kw-reszty-v01", "chain-scn", "kw-szereg-metali-v01", "stech-kalkulator-v01"
+      ],
+      "vesselGroups": ["chem.glassware", "chem.measure", "chem.setup", "chem.heat", "common.stage"],
+      "effectGroups": ["chem.phase", "chem.reaction", "common.ui"],
+      "scenes": ["conductivity", "indicator", "heating", "carbonate"],
+      "tables": ["solubility-full", "hydrolysis", "ion-colors", "precipitate-colors"]
+    },
+    "FIZ01": {
+      "code": "FIZ01",
+      "title": "Elektrostatyka",
+      "subject": "fizyka",
+      "source": "fiz-elektro-src",
+      "status": "active",
+      "domains": ["electrostatics", "atom"],
+      "visuals": [
+        "fiz-elektryzowanie-v01", "fiz-elektroskop-v01", "fiz-coulomb-v01",
+        "fiz-przewodniki-v01", "fiz-ladunek-v01"
+      ],
+      "vesselGroups": ["phys.electro", "common.stage"],
+      "effectGroups": ["phys.electro", "common.ui"],
+      "scenes": [],
+      "tables": ["triboelectric", "resistivity", "permittivity"]
+    }
+  },
+  "howtoAddLesson": [
+    "1. Dodaj wpis w lessons.json (code, subject, domains, visuals, vesselGroups, effectGroups).",
+    "2. Umieść treść lekcji jako moduł source (HTML) w modules/ lub engine/src/lessons/.",
+    "3. Zarejestruj nowe VIEW.define w visual-library lub engine/src/views/.",
+    "4. Jeśli nowe naczynie/efekt — dopisz do assets/vessels.json lub effects.json (grupa + item).",
+    "5. Jeśli nowa tablica — wpis w tables/index.json + dane w domenie.",
+    "6. python3 tools/pack_lesson.py CODE"
+  ]
+}
