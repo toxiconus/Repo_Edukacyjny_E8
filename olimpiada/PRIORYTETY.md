@@ -44,7 +44,8 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 ### Biologia (do 21.10)
 | # | lekcja | dlaczego | stan |
 |---|---|---|---|
-| B1 | **powtórka etapu szkolnego:** I Organizacja i chemizm życia + II Różnorodność życia (kl. 5–6) + doświadczenia biologiczne | cały zakres etapu szkolnego | [ ] — źródło: `biologia/BIO.all…`, `biologia/md/` |
+| B1 | **REV02 Różnorodność życia** (klasyfikacja, wirusy, bakterie, rośliny, grzyby, zwierzęta, doświadczenia) | etap szkolny pkt II | **[V] gotowa 2026-10-08** — `biologia/bio/md/REV02_roznorodnosc_zycia.md` (treść wg podstawy 2024 + zakresu LKO; w repo nie było materiału kl. 5–6) |
+| B1a | **REV01 BIO Organizacja i chemizm życia** (komórka, mikroskop, fotosynteza, oddychanie i fermentacja, czynności życiowe; doświadczenia: fotosynteza, drożdże + CO₂) | etap szkolny pkt I | [ ] — źródło: `biologia/md/L001, L004–L008` |
 | B1b | genetyka bieżąca (L010 gotowa → L011…) | oceny w kl. 8; konkurs dopiero etap III | L010 gotowa |
 | B2 | człowiek + homeostaza (kl. 7) | etap rejonowy | [ ] |
 

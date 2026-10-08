@@ -12,7 +12,8 @@ import os, io, re, sys, json, importlib.util, html as H, tempfile
 
 BIO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = os.path.dirname(os.path.dirname(BIO))
-spec = importlib.util.spec_from_file_location('che_md2html', os.path.join(REPO, 'chemia', 'che', 'narzedzia', 'md2html.py'))
+_P = [os.path.join(REPO, 'chemia', 'che', 'narzedzia', 'md2html.py'), os.path.join(REPO, 'chemia', 'archiwum', 'che_v0_59', 'narzedzia', 'md2html.py')]  # parser v0_59 (po reorganizacji chemii w archiwum)
+spec = importlib.util.spec_from_file_location('che_md2html', next(x for x in _P if os.path.exists(x)))
 m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 m.ROOT = BIO
 SZ = os.path.join(BIO, 'szablon')
