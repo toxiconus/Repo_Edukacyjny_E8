@@ -265,4 +265,104 @@ V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor
     '<div class="eq">Ar('+d[0]+') ≈ '+pl(M,M<100?2:1)+' u'+(rows.length>1?' — wynik leży między masami izotopów, bliżej najczęstszego':' — jeden trwały izotop, więc masa atomowa ≈ jego masa')+'</div>'}
   draw()}});
 
+/* ---------- 9. F06 — rozbudowa istniejącego `periodic-54` (bez nowej tablicy) ----------
+   Dokłada tryby: okres i grupa zaznaczonego, blok s/p/d, elektrony walencyjne, promień kowalencyjny, I energia jonizacji,
+   oraz kartę „adres → elektrony → przewidywanie”. Dane: CHE.DATA.ELEMENTS_54, ATOM_META (powłoki), ATOMIC_PROPS
+   (promień kowalencyjny), FIRST_IONIZATION_ENERGY (NIST). Braki promieni uzupełnia D.COVALENT_RADIUS_EXT (do weryfikacji). */
+if(!D.COVALENT_RADIUS_EXT)D.COVALENT_RADIUS_EXT={unit:'pm',source:'Cordero i in., Dalton Trans. 2008 (promienie kowalencyjne; Mn, Fe, Co — niskospinowe) — do weryfikacji',
+ values:{Li:128,Be:96,B:84,Ne:58,Ar:106,Sc:170,Ti:160,V:153,Cr:139,Mn:139,Co:126,Ni:124,Ga:122,Ge:120,As:119,Se:120,Br:120,Kr:116,Rb:220,Sr:195,Y:190,Zr:175,Nb:164,Mo:154,Tc:147,Ru:146,Rh:142,Pd:139,Cd:144,In:142,Sn:139,Sb:139,Te:138,Xe:140}};
+(function(){
+ var P54=V.views&&V.views.get&&V.views.get('periodic-54');if(!P54||P54._f06)return;
+ var ROM=['','I','II','III','IV','V','VI','VII','VIII'],SH='KLMNOP';
+ var FAM={1:'litowce (metale alkaliczne)',2:'berylowce',13:'borowce',14:'węglowce',15:'azotowce',16:'tlenowce',17:'fluorowce (halogeny)',18:'helowce (gazy szlachetne)'};
+ function rad(s){var p=(D.ATOMIC_PROPS||{})[s];if(p&&p.covalentRadius)return p.covalentRadius;return (D.COVALENT_RADIUS_EXT.values||{})[s]||null}
+ function ie(s){var x=(D.FIRST_IONIZATION_ENERGY||{})[s];return x&&x.value?x.value*96.485:null}/* eV → kJ/mol */
+ function main(e){return e.g<=2||e.g>=13}
+ function val(e){if(e.s==='He')return 2;if(!main(e))return null;return e.g<=2?e.g:e.g-10}
+ function blk(e){return e.block||(e.s==='He'||e.g<=2?'s':e.g>=13?'p':'d')}
+ function shells(e){var m=(D.ATOM_META||{})[e.s];return m&&m.shells?m.shells:null}
+ function ion(e){var v=val(e);
+  if(e.s==='H')return 'H⁺ (w kwasach) albo H⁻ (w wodorkach metali, N05) — wyjątek';
+  if(e.t==='noble')return 'nie tworzy jonów — zewnętrzna powłoka zapełniona ('+(e.s==='He'?'dublet':'oktet')+')';
+  if(!main(e))return 'metal przejściowy — kationy o różnych ładunkach (np. Fe²⁺, Fe³⁺); reguła grup głównych tu nie działa (F08)';
+  if(e.t==='metal'){if(e.g===14)return 'metal — kationy '+e.s+'²⁺ lub '+e.s+'⁴⁺ (F08)';return 'oddaje '+v+' e⁻ → kation <b>'+e.s+(v>1?'⁰¹²³⁴⁵⁶⁷⁸⁹'[v]:'')+'⁺</b>'}
+  if(e.t==='metalloid'||e.g===14)return 'zwykle nie tworzy jonów prostych — wspólne pary elektronów (wiązania kowalencyjne, F11)';
+  var q=8-v;return 'przyjmuje '+q+' e⁻ → anion <b>'+e.s+(q>1?'⁰¹²³⁴⁵⁶⁷⁸⁹'[q]:'')+'⁻</b> (w związkach z metalami)'}
+ function mix(a,b,t){var p=function(h){return[1,3,5].map(function(i){return parseInt(h.slice(i,i+2),16)})},A=p(a),B=p(b);return'#'+A.map(function(x,i){return Math.round(x+(B[i]-x)*t).toString(16).padStart(2,'0')}).join('')}
+ var BC={s:['#fde2e2','#d64545'],p:['#dbeafe','#2f6fd6'],d:['#fef3c7','#c98a0b']};
+ var MODES=[['adres','okres i grupa'],['blok','blok s / p / d'],['wal','e⁻ walencyjne'],['r','promień atomu'],['ie','energia jonizacji']];
+ var LEG={adres:'Zaznaczony pierwiastek: jego <b>okres</b> (wiersz = liczba powłok w modelu szkolnym) i <b>grupa</b> (kolumna = podobna budowa zewnętrznej powłoki). Kliknij inny pierwiastek.',
+  blok:'<b>Blok</b> = typ podpowłoki obsadzanej na końcu: s (grupy 1–2 i He), p (13–18), d (3–12, metale przejściowe). Blok f (lantanowce, aktynowce) leży poza zakresem 1–54. Szczegóły: F07–F08.',
+  wal:'Liczba <b>elektronów walencyjnych</b> w grupach głównych: grupy 1–2 → numer grupy, 13–18 → numer grupy − 10 (He: 2). Szare = metale przejściowe — prosta reguła ich nie obejmuje.',
+  r:'<b>Promień kowalencyjny</b> [pm]: rośnie w dół grupy (nowa powłoka), maleje w prawo okresu (większy ładunek jądra przy tej samej powłoce). Gazy szlachetne prawie nie tworzą wiązań — ich wartości są szacunkowe, nie wliczaj ich w trend. Ciemniej = większy.',
+  ie:'<b>I energia jonizacji</b> [kJ/mol] — energia potrzebna do oderwania pierwszego elektronu: rośnie w prawo i w górę, odwrotnie niż promień. Wyjątki (Be > B, N > O) — §8. Ciemniej = większa.'};
+ var B0=P54.build;
+ V.define('periodic-54',Object.assign({},P54,{_f06:1,
+  title:'Układ okresowy — pierwiastki 1–54: rodzaj, tlenki, okres i grupa, bloki, elektrony walencyjne, trendy',
+  hint:'Koloruj wg rodzaju, charakteru tlenku, elektroujemności — albo wg okresu i grupy, bloku, liczby elektronów walencyjnych, promienia, energii jonizacji. Kliknij pierwiastek: adres → elektrony → przewidywanie.',
+  foot:P54.foot+' · Tryby F06 (rozszerzenia.js §9): powłoki z CHE.DATA.ATOM_META, promień kowalencyjny z ATOMIC_PROPS + COVALENT_RADIUS_EXT (Cordero 2008, do weryfikacji), I energia jonizacji z FIRST_IONIZATION_ENERGY (NIST ASD, eV × 96,485).',
+  build:function(host){B0.call(this,host);
+   var row=host.querySelector('.r'),grid=host.querySelector('[style*="repeat(18"]');if(!row||!grid)return;
+   var divs=[].slice.call(host.querySelectorAll('div')),leg=divs.filter(function(d){return d.style.fontSize==='11px'}).pop(),
+       box=host.querySelector('[style*="surface-soft"]');
+   var E=D.ELEMENTS_54,sel=E[16],m=null;
+   var row2=document.createElement('div');row2.className='r';row2.style.marginTop='4px';row2.innerHTML='<label>F06:</label>'+MODES.map(function(x){return '<button data-f6="'+x[0]+'">'+x[1]+'</button>'}).join('');
+   row.parentNode.insertBefore(row2,row.nextSibling);
+   var card=document.createElement('div');card.className='f06-adres';card.style.cssText='margin-top:8px;padding:10px 12px;border-left:3px solid #0d6868;background:var(--surface-soft);border-radius:8px;font-size:13px;line-height:1.55';
+   if(box&&box.parentNode)box.parentNode.insertBefore(card,box.nextSibling);else host.appendChild(card);
+   function paint(){if(!m)return;var bs=grid.children,max=0,min=1e9,vals=E.map(function(e){return m==='r'?rad(e.s):m==='ie'?ie(e.s):null});
+    vals.forEach(function(v){if(v!=null){max=Math.max(max,v);min=Math.min(min,v)}});
+    E.forEach(function(e,i){var b=bs[i];if(!b)return;var bg='#f8fafc',bd='#cbd5e1',lab='',dark=false,fade=false;
+     if(m==='adres'){var inP=e.p===sel.p,inG=e.g===sel.g;bg=inP&&inG?'#0d6868':inP?'#cde8e6':inG?'#fde7c8':'#f8fafc';bd=inP&&inG?'#0d6868':inP?'#0d6868':inG?'#c98a0b':'#e2e8f0';dark=inP&&inG;fade=!inP&&!inG;lab=inP&&inG?'okr '+e.p+' · gr '+e.g:''}
+     else if(m==='blok'){var c=BC[blk(e)]||BC.d;bg=c[0];bd=c[1];lab=blk(e)}
+     else if(m==='wal'){var v=val(e);if(v==null){bg='#eef1f4';bd='#cbd5e1';lab='—';fade=true}else{bg=mix('#eef7f6','#0d6868',v/8);bd='#0d6868';dark=v>=5;lab=v+' e⁻'}}
+     else{var x=vals[i];if(x==null){lab='—';fade=true}else{var t=(x-min)/(max-min||1);bg=mix(m==='r'?'#fff7ed':'#f5f3ff',m==='r'?'#b45309':'#5b21b6',t);bd=m==='r'?'#b45309':'#5b21b6';dark=t>.55;lab=Math.round(x)+''}
+      if(e.t==='noble'&&m==='r')fade=true}
+     b.style.background=bg;b.style.borderColor=bd;b.style.color=dark?'#fff':'var(--text)';b.style.opacity=fade?'.55':'1';
+     var sm=b.querySelectorAll('small');if(sm[1])sm[1].textContent=lab;
+     b.style.boxShadow=e===sel?'0 0 0 3px var(--accent)':''});
+    if(leg)leg.innerHTML=LEG[m]}
+   function info(){var e=sel,v=val(e),sh=shells(e),r=rad(e.s),I=ie(e.s);
+    var fam=e.s==='H'?'wodór — położenie wyjątkowe (§6)':main(e)?FAM[e.g]:'metale przejściowe (grupy 3–12)';
+    card.innerHTML='<b>Adres → elektrony → przewidywanie: '+e.s+' ('+e.n+', Z = '+e.z+')</b><br>'+
+     '<b>1. Adres:</b> okres '+e.p+', grupa '+e.g+' ('+(main(e)?'główna':'poboczna')+'), blok '+blk(e)+' · rodzina: '+fam+' · '+({metal:'metal',metalloid:'półmetal',nonmetal:'niemetal',halogen:'niemetal (fluorowiec)',noble:'gaz szlachetny'}[e.t]||e.t)+'<br>'+
+     '<b>2. Elektrony:</b> '+(sh?'powłoki '+sh.map(function(n,k){return SH[k]}).join(', ')+' = '+sh.join(', ')+' → '+sh.length+' '+(sh.length===1?'powłoka':sh.length<5?'powłoki':'powłok')+' = numer okresu':'')+
+     (v!=null?' · elektrony walencyjne: <b>'+v+'</b>':' · elektrony walencyjne: reguła grup głównych nie obejmuje metali przejściowych')+'<br>'+
+     '<b>3. Przewidywanie:</b> '+ion(e)+'<br>'+
+     '<span style="color:var(--text-muted)">elektroujemność '+(e.en?String(e.en).replace('.',','):'—')+' · promień kowalencyjny '+(r?r+' pm':'—')+' · I energia jonizacji '+(I?Math.round(I)+' kJ/mol':'—')+'</span>'}
+   grid.addEventListener('click',function(ev){var b=ev.target.closest&&ev.target.closest('button');if(!b)return;var i=[].indexOf.call(grid.children,b);if(i>=0&&E[i]){sel=E[i];info()}},true);
+   new MutationObserver(function(){paint()}).observe(grid,{childList:true});
+   row.querySelectorAll('[data-m]').forEach(function(b){b.addEventListener('click',function(){m=null;row2.querySelectorAll('[data-f6]').forEach(function(x){x.classList.remove('on')});grid.querySelectorAll('button').forEach(function(x){x.style.opacity='1'})})});
+   row2.querySelectorAll('[data-f6]').forEach(function(b){b.onclick=function(){m=b.dataset.f6;row2.querySelectorAll('[data-f6]').forEach(function(x){x.classList.toggle('on',x===b)});row.querySelectorAll('[data-m]').forEach(function(x){x.classList.remove('on')});paint()}});
+   host._st={get mode(){return m},get sel(){return sel.s},set:function(s,mm){var i=E.findIndex(function(e){return e.s===s});if(i>=0)grid.children[i].click();if(mm){var b=row2.querySelector('[data-f6="'+mm+'"]');if(b)b.click()}}};
+   info()}}));
+})();
+
+/* ---------- 10. F06 — pracownia: podobieństwo w grupie i trend reaktywności (litowce + woda, fluorowce — wypieranie) ---------- */
+var CLW='#e4ecb4',BRW='#e7a23c';
+var RXF6={
+ f06Cl2Kbr:{n:'woda chlorowa + KBr',l0:CLW,l1:BRW,out:['barwa'],eq:'Cl₂ + 2 KBr → 2 KCl + Br₂',why:'Bezbarwny roztwór KBr po dodaniu wody chlorowej żółknie, potem staje się pomarańczowy — wydzielił się brom. Chlor wyparł brom z jego soli.'},
+ f06Cl2Ki:{n:'woda chlorowa + KI',l0:CLW,l1:'sol-i2',out:['barwa'],eq:'Cl₂ + 2 KI → 2 KCl + I₂',why:'Roztwór KI brunatnieje — wydzielił się jod (ze skrobią: granatowe zabarwienie). Chlor wyparł jod.'},
+ f06Br2Ki:{n:'woda bromowa + KI',l0:BRW,l1:'sol-i2',out:['barwa'],eq:'Br₂ + 2 KI → 2 KBr + I₂',why:'Pomarańczowa woda bromowa w roztworze KI zmienia barwę na brunatną — jod został wyparty przez brom.'},
+ f06I2Kbr:{n:'woda jodowa + KBr (brak reakcji)',l0:'sol-i2',l1:'sol-i2',out:['nic'],qualitative:1,noRx:1,eq:'I₂ + KBr → brak reakcji',why:'Barwa się nie zmienia: jod jest mniej aktywny od bromu i nie wypiera go z soli.'}
+};
+var RDF6={
+ f06Cl2Kbr:[R([[1,'Cl2'],[2,'KBr']],[[2,'KCl'],[1,'Br2']]),{type:'wypieranie fluorowca (redoks)',conditions:'roztwory wodne, temperatura pokojowa',observation:'roztwór żółknie/pomarańczowieje — wydziela się Br₂',safety:['woda chlorowa i bromowa — dygestorium, rękawice'],level:'LO',lesson:'F06'}],
+ f06Cl2Ki:[R([[1,'Cl2'],[2,'KI']],[[2,'KCl'],[1,'I2']]),{type:'wypieranie fluorowca (redoks)',conditions:'roztwory wodne, temperatura pokojowa',observation:'roztwór brunatnieje — wydziela się I₂ (ze skrobią granatowy)',safety:['woda chlorowa — dygestorium'],level:'LO',lesson:'F06'}],
+ f06Br2Ki:[R([[1,'Br2'],[2,'KI']],[[2,'KBr'],[1,'I2']]),{type:'wypieranie fluorowca (redoks)',conditions:'roztwory wodne, temperatura pokojowa',observation:'pomarańczowy roztwór brunatnieje — wydziela się I₂',safety:['woda bromowa — dygestorium, rękawice'],level:'LO',lesson:'F06'}]};
+var SBF6={KBr:['bromek potasu','s',119.00,'sól',[],['fotografia (dawniej)','źródło jonów Br⁻ w laboratorium']]};
+Object.keys(SBF6).forEach(function(f){if(D.SUBSTANCES[f]||byF[f])return;var a=SBF6[f];D.SUBSTANCES[f]={formula:f,name:a[0],state:a[1],molarMass:a[2],role:a[3],safety:a[4],uses:a[5],src:'rozszerzenia.js'}});
+Object.keys(RDF6).forEach(function(k){if(D.REACTIONS[k])return;D.REACTIONS[k]=RDF6[k][0];D.REACTION_DATA[k]=Object.assign({products:RDF6[k][0].products.map(function(x){return x.formula})},RDF6[k][1])});
+if(rx)Object.keys(RXF6).forEach(function(k){if(!rx.get(k))rx.register(k,RXF6[k])});
+pracownia('f06-doswiadczenia-v01','Pracownia: rodzina pierwiastków i trend w grupie','Grupa 1: lit, sód i potas z wodą (z fenoloftaleiną) — ta sama reakcja, rosnąca gwałtowność. Grupa 17: który fluorowiec wypiera który z soli?',
+ [['Litowce + woda',['liH2o','naH2o','kH2o']],['Fluorowce — wypieranie',['f06Cl2Kbr','f06Cl2Ki','f06Br2Ki','f06I2Kbr']]],
+ {liH2o:{eq:'2 Li + 2 H₂O → 2 LiOH + H₂↑',war:'mała grudka litu w krystalizatorze z wodą i fenoloftaleiną (pokaz)',wn:'Lit reaguje najspokojniej z trzech — leży najwyżej w grupie 1.',bhp:'pokaz nauczyciela; okulary, osłona'},
+  naH2o:{eq:'2 Na + 2 H₂O → 2 NaOH + H₂↑',war:'kawałek sodu wielkości ziarna grochu, krystalizator z wodą i fenoloftaleiną, osłona (pokaz)',wn:'Sód reaguje gwałtowniej niż lit: ta sama reakcja (wodorotlenek + wodór), większa szybkość.',bhp:'tylko pokaz; sód przechowywany pod naftą, kroić na sucho; osłona'},
+  kH2o:{eq:'2 K + 2 H₂O → 2 KOH + H₂↑',war:'bardzo mała grudka potasu (pokaz za osłoną)',wn:'Potas reaguje najgwałtowniej — reaktywność litowców rośnie w dół grupy (łatwiej oddają elektron walencyjny).',bhp:'wyłącznie pokaz za osłoną; ryzyko rozprysku i zapłonu wodoru'},
+  f06Cl2Kbr:{war:'do roztworu KBr dodajemy kilka kropli wody chlorowej',wn:'Chlor jest aktywniejszy od bromu — wypiera go z bromku.',bhp:'dygestorium; chlor i brom trujące'},
+  f06Cl2Ki:{war:'do roztworu KI dodajemy kilka kropli wody chlorowej (dla pewności — kroplę kleiku skrobiowego)',wn:'Chlor jest aktywniejszy od jodu.',bhp:'dygestorium'},
+  f06Br2Ki:{war:'do roztworu KI dodajemy kilka kropli wody bromowej',wn:'Brom jest aktywniejszy od jodu — reaktywność fluorowców maleje w dół grupy: Cl > Br > I.',bhp:'dygestorium, rękawice'},
+  f06I2Kbr:{war:'do roztworu KBr dodajemy wodę jodową',wn:'Brak zmiany potwierdza szereg: słabszy fluorowiec nie wypiera silniejszego.',bhp:'jod barwi skórę; okulary'}},
+ 'GFX.rx · rozszerzenia.js (F06)');
+
 })();

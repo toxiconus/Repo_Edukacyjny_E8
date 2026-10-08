@@ -11,7 +11,7 @@ Czytaj po `CLAUDE.md`. Szczegóły: `PLAN_PRACY.md` (cele, decyzje, kroki K0–K
   - GFX per przedmiot i element: `engine/src/gfx/{chemia,fizyka,wspolne}/{naczynia,efekty,sceny,reakcje,widoki}/<id>.js` + szkielety, katalog `engine/src/gfx/KATALOG.md`,
   - HTML/CSS labu: `engine/src/lab/szkielet.html`, `engine/src/style/*.css`,
   - wygląd lekcji i rozszerzenia (nowe modele, pracownie): `engine/src/lekcja/` (`rozszerzenia.js` §1–8).
-- **Lekcje gotowe (11, test 11/11 OK):** F01–F05, N01–N05, FIZ01 w `lessons-md/gotowe/` (kanoniczny dialekt MD — `SYSTEM.md` §3).
+- **Lekcje gotowe (12, test 12/12 OK):** F01–F06, N01–N05, FIZ01 w `lessons-md/gotowe/` (kanoniczny dialekt MD — `SYSTEM.md` §3).
 - **Odchudzanie (K3) zakończone:** profil `engine/registry/profile/wspolny.json` → silnik lekcyjny **1,55 MB** (było 2,86); pliki `dist/jeden_plik/` ~1,6–1,7 MB (było ~3 MB). CSS labu nieodchudzany (test nie widzi wyglądu).
 
 ## 2. Jak pracować
@@ -32,11 +32,13 @@ node tools/test_lekcje.cjs --wzorzec=dist/_wz/wzorzec.json   # z porównaniem tr
 
 1. **Zero utraty danych starego silnika** — dzielić, porządkować, ulepszać; nie wyrzucać ze źródeł (odchudzanie dotyczy tylko pakietu lekcji).
 2. **Grafiki z atlasu, nie własne:** przed każdym nowym modelem sprawdzić atlas (`engine/src/moduly/_anon_004/`: `bohr`, `cloud`, `isoBar`, karty pierwiastków) i widoki silnika (`KATALOG.md`, `KATALOG_MODELI.md`). Brakujący element = komponent wielokrotnego użytku + wpis w katalogu.
-3. **Blok F:** 21 lekcji F01–F21; nie pisać od zera — ulepszać materiał użytkownika z `chemia/lekcje_md/F/` (kanon v17). **Na razie nie robić kolejnych lekcji** (polecenie z 2026-10-08 14:21).
+3. **Blok F:** 21 lekcji F01–F21; nie pisać od zera — ulepszać materiał użytkownika z `chemia/lekcje_md/F/` (kanon v17). Kolejne lekcje tylko na polecenie (2026-10-08 17:36 użytkownik zlecił jedną — zrobiona F06; po etapie stop).
 4. Dane liczbowe niepewne — oznaczać „do weryfikacji”. Dane bierzemy z `CHE.DATA`, nie z lokalnych kopii w widokach.
 5. Silnika nie piszemy od nowa — stopniowa podmiana (czyste dane w dziedzinach, nowa mała warstwa obok starej).
 
 ## 4. Otwarte / znane problemy
+
+- **F06 (2026-10-08):** `lessons-md/gotowe/F06_uklad_okresowy.md` z materiału v17 (+ archiwum, poprawki merytoryczne: wartościowość Cl I/III/V/VII, etymologia „halogeny”, metale ziem alkalicznych, zad. D19–D20, doświadczenie z fluorowcami jako wypieranie). Model: istniejący `periodic-54` rozbudowany w rozszerzenia.js §9 (bez nowej tablicy; działa też w N01). Do weryfikacji: `COVALENT_RADIUS_EXT` (34 promienie Cordero 2008), wartości H 37 / He 32 w `ATOMIC_PROPS` różnią się od Cordero (31/28). F06 ma pełny silnik — profil odchudzony do zrobienia jak dla F04.
 
 - `f05-izotopy-v01` rysuje atom przez nowy komponent **`atomSVG`** (rozszerzenia.js przed §8, też `CHE.LAB.atomSVG`): kolory jak w atlasie, `powloki:true` = powłoki K/L/M/N 2,8,8 (gotowe dla F07; sprawdzone Na = 2,8,1). Atlasowy `bohr` (`_anon_004`) to cała strona związana z DOM i stanem atlasu — nie da się go wywołać jako komponentu; wyciągnięty do komponentu canvas **`atomBohr`** (`CHE.LAB.atomBohr(canvas,{p,n,e,n0,cfg,t})`, `.anim`) — wygląd atlasu sprawdzony zrzutem (Na 2,8,1; Cl⁻ 2,8,8 z podpowłokami). **Nowa warstwa `engine/src/dodatki/`** (`atlas-gfx.js`: `CHE.LAB.atomBohr`, `CHE.LAB.orbitalCloud`): lab dostaje ją przez `python3 tools/che.py lab` → `dist/lab.html`, lekcje przez md2html; test bajt w bajt liczy lab bez dodatków (stary silnik nietknięty). **Atlas rysuje chmurę orbitalną komponentem** (podmiana globalnej `cloud`) — piksele identyczne ze starym (hash canvasu przed/po kliknięciu orbitalu). `bohr` w atlasie jeszcze własny (zoom, lupa jądra, podświetlenia → najpierw do `atomBohr`). Dalej: (a) F05/F07 na `atomBohr`, (b) to samo dla `cloud` i `isoBar`, (c) atlas wywołuje komponenty (zmiana źródła `_anon_004` → aktualizacja wzorca sha w `silnik.py`, ocena wizualna), bez lupy/zoomu na razie.
 - Odchudzanie CSS labu (~170 KB) i DOM labu (~70 KB, m.in. bank widżetów 46 KB) wymaga oceny wizualnej (zrzuty) — flaga `--css-tak` w `odchudz.py`, domyślnie wyłączona.

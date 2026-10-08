@@ -23,3 +23,4 @@
 - 2026-10-08 17:55 · `atomBohr` — grafika atomu z atlasu jako komponent canvas (rozszerzenia.js, CHE.LAB.atomBohr). Zrzut OK (Na, Cl⁻). Test F04+F05 OK. Następne: cloud, isoBar, potem atlas na komponentach.
 - 2026-10-08 18:05 · Spis dublowania (konfiguracja elektronowa ×5+, rysunki atomu ×6, izotopy) → PRZEKAZANIE §6.
 - 2026-10-08 18:25 · Warstwa `engine/src/dodatki/` (atlas-gfx.js: atomBohr, orbitalCloud). Atlas rysuje chmurę orbitalną komponentem — piksele identyczne. `che.py lab` → dist/lab.html. Testy: bajt w bajt OK, 11/11 OK.
+- 2026-10-08 18:20 · F06 Układ okresowy: md z kanonu v17 (+archiwum, poprawki), `periodic-54` + tryby F06 (rozszerzenia.js §9: okres/grupa, blok, e⁻ wal., promień, energia jonizacji, karta adres→elektrony→przewidywanie), pracownia `f06-doswiadczenia-v01` (§10: Li/Na/K + woda, wypieranie fluorowców; reakcje f06Cl2Kbr/Cl2Ki/Br2Ki + KBr). Test 12/12 OK, model sprawdzony zrzutem (0 błędów JS).

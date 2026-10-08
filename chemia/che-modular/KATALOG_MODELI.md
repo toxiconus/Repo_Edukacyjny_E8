@@ -81,7 +81,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `orbitalCloud` (komponent canvas, `CHE.LAB.orbitalCloud`) | Chmura orbitalna z atlasu: `{sub:'2p', type:'pz'|'s'|'dz2'|'dxy', zoom}`; ψ>0/ψ<0, węzły (engine/src/dodatki/atlas-gfx.js) | atlas (używa), F07+ |
 | `atomSVG` (komponent, `CHE.LAB.atomSVG`) | Model atomu SVG: jądro p/n + elektrony; `powloki:true` → powłoki K–N 2,8,8 (kolory atlasu) (rozszerzenia.js) | F05, F07 |
 | `f05-izotopy-v01` | Konstruktor atomu: zmiana p/n/e → inny pierwiastek / izotop / jon + masa atomowa jako średnia ważona (rozszerzenia.js §8) | F05 |
-| `periodic-54` | Układ okresowy — pierwiastki 1–54, modele atomów, tlenki | N01 |
+| `periodic-54` | Układ okresowy — pierwiastki 1–54, modele atomów, tlenki; **tryby F06** (rozszerzenia.js §9): okres i grupa, blok s/p/d, e⁻ walencyjne, promień kowalencyjny, I energia jonizacji, karta „adres → elektrony → przewidywanie”; stan testowy `host._st.set(symbol, tryb)` | N01, F06 |
 | `ph-indicators-v03` | Panel pH — wskaźniki, roztwory, drabinka · v0.05 | N02, N03 |
 | `ph-ladder` | Obliczanie pH — od stężenia do pH |  |
 | `reaction` | Reakcja |  |
@@ -104,6 +104,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 - `n02-doswiadczenia-v01`: `aloh3Naoh`, `caoH2o`, `caoh2Co2`, `cuso4Naoh`, `fecl3Naoh`, `hclNaOH+php`, `naH2o`
 - `ph-indicators-v03`: `-`
 - `f03-rozdzielanie-v01`: `f03PiasekWoda`, `f03KredaWoda`, `f01SolWoda`, `f01Odparowanie` (rozszerzenia.js §7, F03)
+- `f06-doswiadczenia-v01`: `liH2o`, `naH2o`, `kH2o`, `f06Cl2Kbr`, `f06Cl2Ki`, `f06Br2Ki`, `f06I2Kbr` (rozszerzenia.js §10, F06)
 - `f01-doswiadczenia-v01`: `f01SolWoda`, `f01Odparowanie`, `f01SodaOcet`, `f01WodaWapienna`, `f01Mg`, `f01FeS` (rozszerzenia.js, F01)
 - `sole-doswiadczenia-v01`: `bacl2Na2so4`, `cacl2Na2co3`, `caoH2o`, `cuoH2so4`, `cuso4Hydrate`, `hclNaOH+php`, `hyd-na2co3`, `hyd-nh4cl`, `na2co3Hcl`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`
 
