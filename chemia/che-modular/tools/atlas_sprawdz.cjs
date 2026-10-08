@@ -42,6 +42,9 @@ async function snap(b, f) {
         zt = 1; for (let i = 0; i < 120; i++) bohr(0);
       }
       res['txt:geo'] = JSON.stringify(GEO);
+      // pasek izotopów: HTML dla kilku pierwiastków i klik w drugi izotop
+      for (const s of ['H', 'C', 'Cl', 'U']) { go(s); await w(40); const ib = document.getElementById('isobar'); if (!ib) break; res['txt:isobar-' + s] = ib.innerHTML;
+        const b2 = ib.querySelectorAll('[data-i]')[1]; if (b2) { b2.click(); await w(30); res['txt:isobar-klik-' + s] = ib.innerHTML + '|' + isoA + '|' + (document.getElementById('bohrinfo') || {}).innerHTML; isoA = null; } }
     }
     return res;
   }, SYM);

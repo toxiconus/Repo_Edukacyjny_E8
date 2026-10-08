@@ -4,7 +4,7 @@
    swoich funkcji globalnych (niżej) — tylko gdy atlas jest na stronie. */
 (function(){
 var C=window.CHE=window.CHE||{},L;try{L=C.LAB=C.LAB||{}}catch(_){L={}}
-if(L.atomBohr&&L.orbitalCloud)return;
+if(L.atomBohr&&L.orbitalCloud&&L.isotopeBar)return;
 /* atomBohr — rysunek atomu z atlasu (_anon_004 bohr) jako komponent canvas, bez stanu i DOM atlasu.
    Ten sam wygląd: tło, jądro (kulki p/n złotym kątem, gradient, obręcz „ponad najczęstszy izotop”), powłoki z etykietą „K · 2/2”,
    elektrony wewnętrzne #2f8a55 / walencyjne #b85f00 z poświatą, obrót powłok w czasie.
@@ -158,6 +158,16 @@ try{if(typeof cloud==='function'&&typeof state==='function'&&typeof ORDER!=='und
   document.getElementById('orbsel').innerHTML=b;
   document.querySelectorAll('#orbsel [data-o]').forEach(function(x){x.onclick=function(){orb=x.dataset.o;cloud()}});
  };L.atlasGfx='cloud';cloud()}}catch(e){console.warn('[atlas-gfx] '+e.message)}
+/* isotopeBar — pasek izotopów z atlasu (_anon_004 isoBar) jako komponent: isotopeBar(el, {sym, isotopes:[{A, ab, hl, abundanceProvenance}], A, onPick(A)}).
+   Przyciski ⁿSym (aktywny = wybrany A, * = promieniotwórczy), podpowiedź: % lub T½ + źródło (CIAAW 2024 / lokalny rekord). Wygląd: klasa .isobar (CSS labu). */
+function isotopeBar(el,o){var iso=o.isotopes||[],sym=o.sym||'';
+ el.innerHTML=iso.length?'<span>izotop</span>'+iso.map(function(i){return '<button data-i="'+i.A+'" class="'+(i.A===o.A?'on':'')+'" title="'+(i.ab?i.ab+' %':'promieniotwórczy, T½ '+i.hl)+(i.abundanceProvenance?' · CIAAW 2024':' · lokalny rekord bez weryfikacji')+'"><sup>'+i.A+'</sup>'+sym+(i.ab?'':'*')+'</button>'}).join(''):'';
+ el.querySelectorAll('[data-i]').forEach(function(b){b.onclick=function(){if(o.onPick)o.onPick(+b.dataset.i)}});return el}
+L.isotopeBar=isotopeBar;
+/* atlas: pasek izotopów z komponentu (wybór izotopu → isoA, odświeżenie HUD, zoom na jądro — jak w atlasie) */
+try{if(typeof isoBar==='function'&&typeof isotopeData==='function'&&document.getElementById('isobar')){
+ isoBar=function(){var e=state().e,isotopes=isotopeData(e),tp=isotopes.slice().sort(function(a,b){return (b.ab||0)-(a.ab||0)})[0],A=isoA||(tp?tp.A:0);
+  isotopeBar($('isobar'),{sym:sym,isotopes:isotopes,A:A,onPick:function(a){isoA=a;hud();zt=zNuc}})}}}catch(e){console.warn('[atlas-gfx isoBar] '+e.message)}
 /* atlas: atom Bohra rysowany komponentem atomBohr (stan, zoom, GEO i liczniki zostają w atlasie; widoczność jak w 19_poprawki-ui) */
 try{if(typeof bohr==='function'&&typeof state==='function'&&typeof GEO!=='undefined'&&document.getElementById('bohr')){
  bohr=function(ts){if(!still&&(document.hidden||!document.getElementById('stage').offsetParent))return;
@@ -172,5 +182,5 @@ try{if(typeof bohr==='function'&&typeof state==='function'&&typeof GEO!=='undefi
   $('zr').textContent=(zm<10?zm.toFixed(1):Math.round(zm))+'×';
   var fo=$('focus');if(fo)fo.style.opacity=zm>zNuc*.45?0:1;
   var zs=$('zs');if(document.activeElement!==zs)zs.value=100*Math.log(zm/.6)/Math.log(zNuc/.6)};
- L.atlasGfx='cloud,bohr'}}catch(e){console.warn('[atlas-gfx bohr] '+e.message)}
+ L.atlasGfx='cloud,bohr,isoBar'}}catch(e){console.warn('[atlas-gfx bohr] '+e.message)}
 })();
