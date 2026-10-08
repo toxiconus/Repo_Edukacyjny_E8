@@ -4,12 +4,16 @@ Czytaj ten plik zaraz po `CLAUDE.md`. Dziennik kroków: `PROGRESS.md`. Historia 
 
 ## 1. Cele (bez zmian merytorycznych, nowe podejście)
 
-1. **Lekcje E8 chemii (potem fizyka, biologia)** — pełna treść, doświadczenia, fiszki, testy, modele i zlewki GFX.
-2. **Jedno źródło treści = MD.** Autor pisze treść i makra; HTML powstaje z builda (zero tokenów).
-3. **Jeden silnik, rozbity na moduły** zamiast zamrożonego `che-viz.js` (2,8 MB). Rejestr (`engine/registry/`) mówi, czego lekcja potrzebuje; kod modułów mówi, jak to działa.
-4. **Lekcja offline na telefon** z samym potrzebnym kawałkiem silnika. Cel: **≤ 1,4 MB** na lekcję (dziś v0_59 jeden_plik ~3 MB).
-5. **Wspólny layout (`lesson-shell`)**: zmiana w jednym miejscu obejmuje wszystkie lekcje.
-6. **Rozszerzalność**: nowa lekcja / zlewka / efekt / tablica = wpis w rejestrze + mały plik kodu.
+**Zasada nadrzędna: zero utraty danych starego silnika.** Wszystko z v0_57/v0_59 (dane chemiczne, reakcje, substancje, GFX, widoki, atlas, `rozszerzenia.js`) przechodzi do modułów — dzielimy i ulepszamy, niczego nie wyrzucamy. Lab = suma modułów = pełny stary silnik.
+
+1. **Moduły danych i kodu** zamiast monolitu: dane podzielone domenami (tlenki, wodorotlenki, kwasy, sole, wodorki, pierwiastki, fizyka…), GFX podzielony na naczynia/efekty/sceny. Każdy kawałek da się dołączyć osobno.
+2. **Małe HTML**: lekcja bierze tylko potrzebne moduły (rejestr + manifest). Cel ≤ 1,4 MB offline (dziś ~3 MB).
+3. **MD → HTML tanio**: autor pisze treść i makra w MD; builder robi HTML bez tokenów. Ułatwienia: szablon, makra (fiszki, tabele błędów, karty, doświadczenia, testy, `$gfx`), parity (co brakuje w silniku), test.
+4. **Dwa wyjścia z tego samego MD**: HTML samodzielny (offline, telefon) i HTML zintegrowany z silnikiem (lab, wspólny shell). Ta sama treść, ten sam `meta.json`.
+5. **Tanie ulepszanie**: zmiana layoutu/makra/modelu w jednym miejscu obejmuje wszystkie lekcje; poprawka lekcji = edycja MD + build.
+6. **Rozszerzalność**: nowa lekcja / przedmiot / zlewka / efekt / tablica = wpis w rejestrze + mały plik.
+
+**Kontrola kompletności (od K1):** suma wszystkich modułów musi dawać te same dane co monolit (liczba i treść kluczy `CHE.DATA.*`, rejestrowanych naczyń/efektów/scen/widoków). Test porównuje lab z modułów z monolitem v0_57 + `rozszerzenia.js`.
 
 ## 2. Audyt nowego podejścia (stan faktyczny, sprawdzony 2026-10-08)
 
@@ -39,13 +43,13 @@ Czytaj ten plik zaraz po `CLAUDE.md`. Dziennik kroków: `PROGRESS.md`. Historia 
 
 | # | Krok | Gotowe, gdy |
 |---|---|---|
-| **K1** | Test regresji `tools/test_pack.js` (Chromium 390 px): treść lekcji > X znaków, 0 błędów konsoli, brak przewijania w bok, modele zamontowane | test uruchamia się jednym poleceniem i pokazuje FAIL dla obecnych packów |
+| **K1** | Testy jednym poleceniem: (a) `test_pack.js` Chromium 390 px — treść lekcji, 0 błędów konsoli, brak przewijania w bok, modele zamontowane; (b) `test_kompletnosc` — inwentarz danych/GFX/VIEW z modułów = monolit | oba testy działają, pokazują FAIL dla obecnych packów |
 | **K2** | Naprawa packera: pack z **wyłączonymi filtrami** (`--no-gfx-filter`, bez VIEW/anon cięcia) musi przejść K1 → baza odniesienia | N01 pack bez filtrów: 0 błędów, treść widoczna |
 | **K3** | Włączać filtry po kolei (CSS → źródła lekcji → anon001 → VIEW → GFX), po każdym K1; naprawić cięcie składni (D4) | N01–N04, FIZ01 przechodzą K1 z filtrami |
 | **K4** | Builder MD rozumie dialekt v0_59 (aliasy → makra); `md_build_lesson.py N01` z `_zrodla_v0_59/N01_tlenki.md` | pełna N01 z MD, parity bez luk, K1 OK |
 | **K5** | Połączenie: MD-build + pack silnika = jedna lekcja offline (`meta.json` → packer) | N01 offline z modelami i zlewkami, K1 OK |
-| **K6** | N02–N05, FIZ01 przez ten sam pipeline; N05 do `lessons.json`; `rozszerzenia.js` z v0_59 jako moduł | 6 lekcji OK w K1 |
-| **K7** | Odchudzanie: `pick(REACTIONS/OXIDES)`, węższe tagi core, GFX per plik | ≤ 1,4 MB / lekcja, K1 OK |
+| **K6** | `rozszerzenia.js` z v0_59 → moduły domen (wodorki, nowe zlewki); N02–N05, FIZ01 przez ten sam pipeline; N05 do `lessons.json` | 6 lekcji OK w K1, kompletność OK |
+| **K7** | Podział danych na pliki domen (`engine/src/data/<domena>.js`) i GFX per plik; `pick()` wg manifestu; węższe tagi core | ≤ 1,4 MB / lekcja, K1 i kompletność OK |
 | **K8** | Nowe treści: N06 systematyka / F00–F09; potem biologia na tym samym silniku | wg potrzeb |
 
 Otwarte błędy z v0_59 do przeniesienia przy K4–K6: tryb Noc (podwójne odwrócenie kolorów), stare `::: skrypt` w N01–N03 → `::: test`.
