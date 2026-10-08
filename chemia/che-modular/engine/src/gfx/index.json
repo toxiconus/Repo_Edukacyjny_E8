@@ -1,1055 +1,1230 @@
 {
  "che-lab-engine-v001": [
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "beaker",
-   "file": "vessels/beaker.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/beaker.js",
    "bytes": 369
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "testTube",
-   "file": "vessels/testTube.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/testTube.js",
    "bytes": 279
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "cylinder",
-   "file": "vessels/cylinder.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/cylinder.js",
    "bytes": 476
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "flask",
-   "file": "vessels/flask.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/flask.js",
    "bytes": 476
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "roundFlask",
-   "file": "vessels/roundFlask.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/roundFlask.js",
    "bytes": 379
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "volFlask",
-   "file": "vessels/volFlask.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/volFlask.js",
    "bytes": 467
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "funnel",
-   "file": "vessels/funnel.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/funnel.js",
    "bytes": 274
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "petri",
-   "file": "vessels/petri.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/petri.js",
    "bytes": 125
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "evapDish",
-   "file": "vessels/evapDish.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/evapDish.js",
    "bytes": 245
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "crucible",
-   "file": "vessels/crucible.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/crucible.js",
    "bytes": 733
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "watchGlass",
-   "file": "vessels/watchGlass.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/watchGlass.js",
    "bytes": 204
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "dropFunnel",
-   "file": "vessels/dropFunnel.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/dropFunnel.js",
    "bytes": 487
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "heatGlow",
-   "file": "effects/heatGlow.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/heatGlow.js",
    "bytes": 360
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "liquid",
-   "file": "effects/liquid.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/liquid.js",
    "bytes": 732
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "meniscus",
-   "file": "effects/meniscus.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/meniscus.js",
    "bytes": 330
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "precipitate",
-   "file": "effects/precipitate.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/precipitate.js",
    "bytes": 1286
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "plume",
-   "file": "effects/plume.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/plume.js",
    "bytes": 345
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "turbidity",
-   "file": "effects/turbidity.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/turbidity.js",
    "bytes": 500
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "solids",
-   "file": "effects/solids.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/solids.js",
    "bytes": 1444
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "bubbles",
-   "file": "effects/bubbles.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/bubbles.js",
    "bytes": 2299
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "foam",
-   "file": "effects/foam.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/foam.js",
    "bytes": 383
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "ripples",
-   "file": "effects/ripples.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/ripples.js",
    "bytes": 315
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "dropMix",
-   "file": "effects/dropMix.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/dropMix.js",
    "bytes": 999
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "schlieren",
-   "file": "effects/schlieren.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/schlieren.js",
    "bytes": 524
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "stirBar",
-   "file": "effects/stirBar.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/stirBar.js",
    "bytes": 402
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "condensation",
-   "file": "effects/condensation.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/condensation.js",
    "bytes": 539
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "fumes",
-   "file": "effects/fumes.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/fumes.js",
    "bytes": 890
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "steam",
-   "file": "effects/steam.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/steam.js",
    "bytes": 741
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "heatConvection",
-   "file": "effects/heatConvection.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/heatConvection.js",
    "bytes": 314
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "splash",
-   "file": "effects/splash.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/splash.js",
    "bytes": 727
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "scale",
-   "file": "effects/scale.js",
+   "subject": "wspolne",
+   "file": "wspolne/efekty/scale.js",
    "bytes": 651
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "label",
-   "file": "effects/label.js",
+   "subject": "wspolne",
+   "file": "wspolne/efekty/label.js",
    "bytes": 410
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "stopper",
-   "file": "effects/stopper.js",
+   "subject": "wspolne",
+   "file": "wspolne/efekty/stopper.js",
    "bytes": 580
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "tap",
-   "file": "effects/tap.js",
+   "subject": "wspolne",
+   "file": "wspolne/efekty/tap.js",
    "bytes": 497
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "flame",
-   "file": "effects/flame.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/flame.js",
    "bytes": 2749
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "sparks",
-   "file": "effects/sparks.js",
+   "subject": "wspolne",
+   "file": "wspolne/efekty/sparks.js",
    "bytes": 1219
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "metalBurn",
-   "file": "effects/metalBurn.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/metalBurn.js",
    "bytes": 2039
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "explosion",
-   "file": "effects/explosion.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/explosion.js",
    "bytes": 1744
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "flash",
-   "file": "effects/flash.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/flash.js",
    "bytes": 409
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "stage",
-   "file": "vessels/stage.js",
+   "subject": "wspolne",
+   "file": "wspolne/naczynia/stage.js",
    "bytes": 315
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "splint",
-   "file": "effects/splint.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/splint.js",
    "bytes": 1652
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "pop",
-   "file": "effects/pop.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/pop.js",
    "bytes": 792
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "anchor",
-   "file": "vessels/anchor.js",
+   "subject": "wspolne",
+   "file": "wspolne/naczynia/anchor.js",
    "bytes": 61
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "burner",
-   "file": "vessels/burner.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/burner.js",
    "bytes": 33
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "cooler",
-   "file": "vessels/cooler.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/cooler.js",
    "bytes": 33
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "stand",
-   "file": "vessels/stand.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/stand.js",
    "bytes": 31
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "tripod",
-   "file": "vessels/tripod.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/tripod.js",
    "bytes": 33
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "spiritLamp",
-   "file": "vessels/spiritLamp.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/spiritLamp.js",
    "bytes": 41
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "hotplate",
-   "file": "vessels/hotplate.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/hotplate.js",
    "bytes": 37
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "dropper",
-   "file": "vessels/dropper.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/dropper.js",
    "bytes": 35
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "gasCollect",
-   "file": "vessels/gasCollect.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/gasCollect.js",
    "bytes": 41
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "tubeRack",
-   "file": "vessels/tubeRack.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/tubeRack.js",
    "bytes": 37
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "conductivity",
-   "file": "vessels/conductivity.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/conductivity.js",
    "bytes": 45
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "pHscale",
-   "file": "vessels/pHscale.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/pHscale.js",
    "bytes": 35
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "pHmeter",
-   "file": "vessels/pHmeter.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/pHmeter.js",
    "bytes": 35
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "thermometer",
-   "file": "vessels/thermometer.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/thermometer.js",
    "bytes": 43
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "burette",
-   "file": "vessels/burette.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/burette.js",
    "bytes": 35
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "roundFlask",
-   "file": "vessels/roundFlask__2.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/roundFlask__2.js",
    "bytes": 295
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "volFlask",
-   "file": "vessels/volFlask__2.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/volFlask__2.js",
    "bytes": 388
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "funnel",
-   "file": "vessels/funnel__2.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/funnel__2.js",
    "bytes": 232
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "petri",
-   "file": "vessels/petri__2.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/petri__2.js",
    "bytes": 111
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "evapDish",
-   "file": "vessels/evapDish__2.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/evapDish__2.js",
    "bytes": 176
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "ringMark",
-   "file": "effects/ringMark.js",
+   "subject": "chemia",
+   "file": "chemia/efekty/ringMark.js",
    "bytes": 383
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "pipette",
-   "file": "vessels/pipette.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/pipette.js",
    "bytes": 35
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "balance",
-   "file": "vessels/balance.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/balance.js",
    "bytes": 35
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "paper",
-   "file": "vessels/paper.js",
+   "subject": "fizyka",
+   "file": "fizyka/naczynia/paper.js",
    "bytes": 31
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "molTank",
-   "file": "vessels/molTank.js",
+   "subject": "chemia",
+   "file": "chemia/naczynia/molTank.js",
    "bytes": 35
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "electroscope",
-   "file": "vessels/electroscope.js",
+   "subject": "fizyka",
+   "file": "fizyka/naczynia/electroscope.js",
    "bytes": 288
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "chargedRod",
-   "file": "vessels/chargedRod.js",
+   "subject": "fizyka",
+   "file": "fizyka/naczynia/chargedRod.js",
    "bytes": 176
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "pendulum",
-   "file": "vessels/pendulum.js",
+   "subject": "fizyka",
+   "file": "fizyka/naczynia/pendulum.js",
    "bytes": 196
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "fieldMap",
-   "file": "vessels/fieldMap.js",
+   "subject": "fizyka",
+   "file": "fizyka/naczynia/fieldMap.js",
    "bytes": 331
   },
   {
-   "kind": "vessels",
+   "kind": "naczynia",
    "id": "chargeBar",
-   "file": "vessels/chargeBar.js",
+   "subject": "fizyka",
+   "file": "fizyka/naczynia/chargeBar.js",
    "bytes": 289
   },
   {
-   "kind": "effects",
+   "kind": "efekty",
    "id": "discharge",
-   "file": "effects/discharge.js",
+   "subject": "fizyka",
+   "file": "fizyka/efekty/discharge.js",
    "bytes": 367
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "acidMetal",
-   "file": "scenes/acidMetal.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/acidMetal.js",
    "bytes": 2182
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "indicator",
-   "file": "scenes/indicator.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/indicator.js",
    "bytes": 1798
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "indicatorRack",
-   "file": "scenes/indicatorRack.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/indicatorRack.js",
    "bytes": 784
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "titration",
-   "file": "scenes/titration.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/titration.js",
    "bytes": 3072
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "dilution",
-   "file": "scenes/dilution.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/dilution.js",
    "bytes": 2459
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "conductivity",
-   "file": "scenes/conductivity.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/conductivity.js",
    "bytes": 1310
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "gasCollection",
-   "file": "scenes/gasCollection.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/gasCollection.js",
    "bytes": 1370
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "carbonate",
-   "file": "scenes/carbonate.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/carbonate.js",
    "bytes": 1449
   },
   {
-   "kind": "scenes",
+   "kind": "sceny",
    "id": "heating",
-   "file": "scenes/heating.js",
+   "subject": "chemia",
+   "file": "chemia/sceny/heating.js",
    "bytes": 1441
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "liH2o",
-   "file": "rx/liH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/liH2o.js",
    "bytes": 213
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "kH2o",
-   "file": "rx/kH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/kH2o.js",
    "bytes": 237
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "caH2o",
-   "file": "rx/caH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/caH2o.js",
    "bytes": 287
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "mgH2oHot",
-   "file": "rx/mgH2oHot.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/mgH2oHot.js",
    "bytes": 310
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "na2oH2o",
-   "file": "rx/na2oH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/na2oH2o.js",
    "bytes": 230
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "k2oH2o",
-   "file": "rx/k2oH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/k2oH2o.js",
    "bytes": 202
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "li2oH2o",
-   "file": "rx/li2oH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/li2oH2o.js",
    "bytes": 190
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "caoH2o",
-   "file": "rx/caoH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/caoH2o.js",
    "bytes": 285
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "mgoH2o",
-   "file": "rx/mgoH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/mgoH2o.js",
    "bytes": 270
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "baoH2o",
-   "file": "rx/baoH2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/baoH2o.js",
    "bytes": 241
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "mgcl2Naoh",
-   "file": "rx/mgcl2Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/mgcl2Naoh.js",
    "bytes": 110
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "alcl3Naoh",
-   "file": "rx/alcl3Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/alcl3Naoh.js",
    "bytes": 152
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "znso4Naoh",
-   "file": "rx/znso4Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/znso4Naoh.js",
    "bytes": 138
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "feso4Naoh",
-   "file": "rx/feso4Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/feso4Naoh.js",
    "bytes": 139
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "cucl2Naoh",
-   "file": "rx/cucl2Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/cucl2Naoh.js",
    "bytes": 149
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "niso4Naoh",
-   "file": "rx/niso4Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/niso4Naoh.js",
    "bytes": 115
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "mnso4Naoh",
-   "file": "rx/mnso4Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/mnso4Naoh.js",
    "bytes": 134
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "pbno32Naoh",
-   "file": "rx/pbno32Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/pbno32Naoh.js",
    "bytes": 127
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "cacl2Naoh",
-   "file": "rx/cacl2Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/cacl2Naoh.js",
    "bytes": 149
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "agno3Naoh",
-   "file": "rx/agno3Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/agno3Naoh.js",
    "bytes": 122
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "caoh2Hcl",
-   "file": "rx/caoh2Hcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/caoh2Hcl.js",
    "bytes": 145
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "kohHcl",
-   "file": "rx/kohHcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/kohHcl.js",
    "bytes": 147
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "kohHno3",
-   "file": "rx/kohHno3.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/kohHno3.js",
    "bytes": 122
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "naohHno3",
-   "file": "rx/naohHno3.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/naohHno3.js",
    "bytes": 124
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "baoh2H2so4",
-   "file": "rx/baoh2H2so4.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/baoh2H2so4.js",
    "bytes": 206
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "cuoh2H2so4",
-   "file": "rx/cuoh2H2so4.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/cuoh2H2so4.js",
    "bytes": 192
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "cuoh2Hcl",
-   "file": "rx/cuoh2Hcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/cuoh2Hcl.js",
    "bytes": 174
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "feoh3Hcl",
-   "file": "rx/feoh3Hcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/feoh3Hcl.js",
    "bytes": 190
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "znoh2Hcl",
-   "file": "rx/znoh2Hcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/znoh2Hcl.js",
    "bytes": 156
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "aloh3Naoh",
-   "file": "rx/aloh3Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/aloh3Naoh.js",
    "bytes": 204
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "znoh2Naoh",
-   "file": "rx/znoh2Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/znoh2Naoh.js",
    "bytes": 171
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "baoh2Co2",
-   "file": "rx/baoh2Co2.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/baoh2Co2.js",
    "bytes": 137
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "cuoh2Heat",
-   "file": "rx/cuoh2Heat.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/cuoh2Heat.js",
    "bytes": 226
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "feoh2O2",
-   "file": "rx/feoh2O2.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/feoh2O2.js",
    "bytes": 223
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "caoh2Na2co3",
-   "file": "rx/caoh2Na2co3.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/caoh2Na2co3.js",
    "bytes": 144
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "nh4clNaoh",
-   "file": "rx/nh4clNaoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/nh4clNaoh.js",
    "bytes": 176
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "so3H2o",
-   "file": "rx/so3H2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/so3H2o.js",
    "bytes": 230
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "so2H2o",
-   "file": "rx/so2H2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/so2H2o.js",
    "bytes": 235
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "co2H2o",
-   "file": "rx/co2H2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/co2H2o.js",
    "bytes": 212
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "p4o10H2o",
-   "file": "rx/p4o10H2o.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/p4o10H2o.js",
    "bytes": 209
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "caoHcl",
-   "file": "rx/caoHcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/caoHcl.js",
    "bytes": 142
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "mgoHcl",
-   "file": "rx/mgoHcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/mgoHcl.js",
    "bytes": 153
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "znoHcl",
-   "file": "rx/znoHcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/znoHcl.js",
    "bytes": 110
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "al2o3Hcl",
-   "file": "rx/al2o3Hcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/al2o3Hcl.js",
    "bytes": 189
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "fe2o3Hcl",
-   "file": "rx/fe2o3Hcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/fe2o3Hcl.js",
    "bytes": 160
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "fe2o3H2so4",
-   "file": "rx/fe2o3H2so4.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/fe2o3H2so4.js",
    "bytes": 155
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "so2Naoh",
-   "file": "rx/so2Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/so2Naoh.js",
    "bytes": 166
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "so3Naoh",
-   "file": "rx/so3Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/so3Naoh.js",
    "bytes": 224
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "naohCo2",
-   "file": "rx/naohCo2.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/naohCo2.js",
    "bytes": 179
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "al2o3NaohAq",
-   "file": "rx/al2o3NaohAq.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/al2o3NaohAq.js",
    "bytes": 197
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "znoNaohAq",
-   "file": "rx/znoNaohAq.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/znoNaohAq.js",
    "bytes": 133
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "sio2Naoh",
-   "file": "rx/sio2Naoh.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/sio2Naoh.js",
    "bytes": 221
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "bacl2Na2so4",
-   "file": "rx/bacl2Na2so4.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/bacl2Na2so4.js",
    "bytes": 164
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "cacl2Na2co3",
-   "file": "rx/cacl2Na2co3.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/cacl2Na2co3.js",
    "bytes": 167
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "na2co3Hcl",
-   "file": "rx/na2co3Hcl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/na2co3Hcl.js",
    "bytes": 189
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "cuso4Hydrate",
-   "file": "rx/cuso4Hydrate.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/cuso4Hydrate.js",
    "bytes": 248
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "hyd-nacl",
-   "file": "rx/hyd-nacl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/hyd-nacl.js",
    "bytes": 245
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "hyd-na2co3",
-   "file": "rx/hyd-na2co3.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/hyd-na2co3.js",
    "bytes": 300
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "hyd-nh4cl",
-   "file": "rx/hyd-nh4cl.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/hyd-nh4cl.js",
    "bytes": 295
   },
   {
-   "kind": "rx",
+   "kind": "reakcje",
    "id": "hyd-cuso4",
-   "file": "rx/hyd-cuso4.js",
+   "subject": "chemia",
+   "file": "chemia/reakcje/hyd-cuso4.js",
    "bytes": 281
   }
  ],
  "che-visual-library-v001": [
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "kw-szereg-metali-v01",
-   "file": "views/kw-szereg-metali-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/kw-szereg-metali-v01.js",
    "bytes": 1253
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "kw-wlasciwosci-v01",
-   "file": "views/kw-wlasciwosci-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/kw-wlasciwosci-v01.js",
    "bytes": 450
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "kw-doswiadczenia-v01",
-   "file": "views/kw-doswiadczenia-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/kw-doswiadczenia-v01.js",
    "bytes": 2054
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "kinetics-v01",
-   "file": "views/kinetics-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/kinetics-v01.js",
    "bytes": 7044
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "acid-rain-v01",
-   "file": "views/acid-rain-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/acid-rain-v01.js",
    "bytes": 8819
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "neutralization",
-   "file": "views/neutralization.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/neutralization.js",
    "bytes": 481
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "rownania-jonowe-v01",
-   "file": "views/rownania-jonowe-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/rownania-jonowe-v01.js",
    "bytes": 265
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "tabela-rozpuszczalnosci-v01",
-   "file": "views/tabela-rozpuszczalnosci-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/tabela-rozpuszczalnosci-v01.js",
    "bytes": 2690
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "sole-doswiadczenia-v01",
-   "file": "views/sole-doswiadczenia-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/sole-doswiadczenia-v01.js",
    "bytes": 1290
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "kw-dysocjacja-v01",
-   "file": "views/kw-dysocjacja-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/kw-dysocjacja-v01.js",
    "bytes": 11566
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "kw-bufor-v01",
-   "file": "views/kw-bufor-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/kw-bufor-v01.js",
    "bytes": 5202
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "kw-reszty-v01",
-   "file": "views/kw-reszty-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/kw-reszty-v01.js",
    "bytes": 2327
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "fiz-elektryzowanie-v01",
-   "file": "views/fiz-elektryzowanie-v01.js",
+   "subject": "fizyka",
+   "file": "fizyka/widoki/fiz-elektryzowanie-v01.js",
    "bytes": 5443
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "fiz-elektroskop-v01",
-   "file": "views/fiz-elektroskop-v01.js",
+   "subject": "fizyka",
+   "file": "fizyka/widoki/fiz-elektroskop-v01.js",
    "bytes": 4116
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "fiz-coulomb-v01",
-   "file": "views/fiz-coulomb-v01.js",
+   "subject": "fizyka",
+   "file": "fizyka/widoki/fiz-coulomb-v01.js",
    "bytes": 3812
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "fiz-przewodniki-v01",
-   "file": "views/fiz-przewodniki-v01.js",
+   "subject": "fizyka",
+   "file": "fizyka/widoki/fiz-przewodniki-v01.js",
    "bytes": 4121
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "fiz-ladunek-v01",
-   "file": "views/fiz-ladunek-v01.js",
+   "subject": "fizyka",
+   "file": "fizyka/widoki/fiz-ladunek-v01.js",
    "bytes": 8318
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n01-tlenki-v01",
-   "file": "views/n01-tlenki-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n01-tlenki-v01.js",
    "bytes": 4440
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n01-konstruktor-v01",
-   "file": "views/n01-konstruktor-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n01-konstruktor-v01.js",
    "bytes": 5053
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n01-reaktor-v01",
-   "file": "views/n01-reaktor-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n01-reaktor-v01.js",
    "bytes": 4105
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n01-trend-v01",
-   "file": "views/n01-trend-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n01-trend-v01.js",
    "bytes": 3607
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n01-spalanie-v01",
-   "file": "views/n01-spalanie-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n01-spalanie-v01.js",
    "bytes": 3013
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "stech-kalkulator-v01",
-   "file": "views/stech-kalkulator-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/stech-kalkulator-v01.js",
    "bytes": 4871
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n02-wzory-v01",
-   "file": "views/n02-wzory-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n02-wzory-v01.js",
    "bytes": 3987
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n02-przeglad-v01",
-   "file": "views/n02-przeglad-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n02-przeglad-v01.js",
    "bytes": 3854
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n02-otrzymywanie-v01",
-   "file": "views/n02-otrzymywanie-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n02-otrzymywanie-v01.js",
    "bytes": 5016
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n02-stracanie-v01",
-   "file": "views/n02-stracanie-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n02-stracanie-v01.js",
    "bytes": 3835
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n02-zobojetnianie-v01",
-   "file": "views/n02-zobojetnianie-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n02-zobojetnianie-v01.js",
    "bytes": 5461
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n02-dysocjacja-v01",
-   "file": "views/n02-dysocjacja-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n02-dysocjacja-v01.js",
    "bytes": 4154
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n02-reaktor-v01",
-   "file": "views/n02-reaktor-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n02-reaktor-v01.js",
    "bytes": 2247
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n01-doswiadczenia-v01",
-   "file": "views/n01-doswiadczenia-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n01-doswiadczenia-v01.js",
    "bytes": 438
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "n02-doswiadczenia-v01",
-   "file": "views/n02-doswiadczenia-v01.js",
+   "subject": "chemia",
+   "file": "chemia/widoki/n02-doswiadczenia-v01.js",
    "bytes": 496
   },
   {
-   "kind": "views",
+   "kind": "widoki",
    "id": "che-test-silnika-v01",
-   "file": "views/che-test-silnika-v01.js",
+   "subject": "wspolne",
+   "file": "wspolne/widoki/che-test-silnika-v01.js",
    "bytes": 4604
   }
  ]

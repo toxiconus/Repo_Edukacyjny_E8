@@ -1031,57 +1031,57 @@ const font=(c,w,s,m)=>{c.font=w+' '+s+'px '+(m?'ui-monospace,monospace':'Inter,s
 const txt=(c,s,x,y,col,al,sz,w)=>{c.fillStyle=col;c.textAlign=al||'left';font(c,w||600,sz||11);c.fillText(s,x,y)};
 
 const rc=(c,x,y,w,h,r)=>{c.beginPath();c.moveTo(x,y);c.lineTo(x,y+h-r);c.quadraticCurveTo(x,y+h,x+r,y+h);c.lineTo(x+w-r,y+h);c.quadraticCurveTo(x+w,y+h,x+w,y+h-r);c.lineTo(x+w,y)};
-/*@@GFX vessels/beaker@@*/
-/*@@GFX vessels/testTube@@*/
-/*@@GFX vessels/cylinder@@*/
-/*@@GFX vessels/flask@@*/
-/*@@GFX vessels/roundFlask@@*/
-/*@@GFX vessels/volFlask@@*/
-/*@@GFX vessels/funnel@@*/
-/*@@GFX vessels/petri@@*/
-/*@@GFX vessels/evapDish@@*/
-/*@@GFX vessels/crucible@@*/
-/*@@GFX vessels/watchGlass@@*/
+/*@@GFX naczynia/beaker@@*/
+/*@@GFX naczynia/testTube@@*/
+/*@@GFX naczynia/cylinder@@*/
+/*@@GFX naczynia/flask@@*/
+/*@@GFX naczynia/roundFlask@@*/
+/*@@GFX naczynia/volFlask@@*/
+/*@@GFX naczynia/funnel@@*/
+/*@@GFX naczynia/petri@@*/
+/*@@GFX naczynia/evapDish@@*/
+/*@@GFX naczynia/crucible@@*/
+/*@@GFX naczynia/watchGlass@@*/
  
 const dfG=r=>{const cx=r.x+r.w/2,n=Math.min(r.w*.08,8),R=Math.min(r.w*.42,r.h*.22),yb=r.y+r.h*.62,yt=r.y+r.h*.1,cy=yb-R*1.15;return{cx,n,R,yb,yt,cy}};
-/*@@GFX vessels/dropFunnel@@*/
+/*@@GFX naczynia/dropFunnel@@*/
 
-/*@@GFX effects/heatGlow@@*/
+/*@@GFX efekty/heatGlow@@*/
  
-/*@@GFX effects/liquid@@*/
-/*@@GFX effects/meniscus@@*/
+/*@@GFX efekty/liquid@@*/
+/*@@GFX efekty/meniscus@@*/
 
 const PPT_LOOK={serowaty:{per:1800,n:22,a:2.6,b:2.2,haze:.28,al:.85},'kłaczkowaty':{per:4200,n:18,a:4.5,b:3.2,haze:.36,al:.5},krystaliczny:{per:1300,n:30,a:1.4,b:1.4,haze:.14,al:.95,cr:1},drobny:{per:6500,n:60,a:1,b:1,haze:.46,al:.7}};
-/*@@GFX effects/precipitate@@*/
-/*@@GFX effects/plume@@*/
+/*@@GFX efekty/precipitate@@*/
+/*@@GFX efekty/plume@@*/
  
-/*@@GFX effects/turbidity@@*/
+/*@@GFX efekty/turbidity@@*/
  
 const shapeOf=s=>s.shape||(s.t==='metal'?'strip':'chips');
-/*@@GFX effects/solids@@*/
+/*@@GFX efekty/solids@@*/
  
-/*@@GFX effects/bubbles@@*/
-/*@@GFX effects/foam@@*/
-/*@@GFX effects/ripples@@*/
+/*@@GFX efekty/bubbles@@*/
+/*@@GFX efekty/foam@@*/
+/*@@GFX efekty/ripples@@*/
  
-/*@@GFX effects/dropMix@@*/
+/*@@GFX efekty/dropMix@@*/
  
-/*@@GFX effects/schlieren@@*/
+/*@@GFX efekty/schlieren@@*/
  
-/*@@GFX effects/stirBar@@*/
-/*@@GFX effects/condensation@@*/
-/*@@GFX effects/fumes@@*/
-/*@@GFX effects/steam@@*/
-/*@@GFX effects/heatConvection@@*/
-/*@@GFX effects/splash@@*/
+/*@@GFX efekty/stirBar@@*/
+/*@@GFX efekty/condensation@@*/
+/*@@GFX efekty/fumes@@*/
+/*@@GFX efekty/steam@@*/
+/*@@GFX efekty/heatConvection@@*/
+/*@@GFX efekty/splash@@*/
  
-/*@@GFX effects/scale@@*/
+/*@@GFX efekty/scale@@*/
  
-/*@@GFX effects/label@@*/
+/*@@GFX efekty/label@@*/
  
-/*@@GFX effects/stopper@@*/
+/*@@GFX efekty/stopper@@*/
  
-/*@@GFX effects/tap@@*/
+/*@@GFX efekty/tap@@*/
 
 function drips(c,env,st,x,y,col,rate,r,sz){const p=env.pool,d=p.drops=p.drops||[],dt=env.dt||.016;if(rate>0&&Math.random()<Math.min(1.5,rate)*dt*6)d.push({x,y,v:0});
  const req=st.dropReq||0;if(p.dq==null)p.dq=req;while(p.dq<req){d.push({x,y,v:0});p.dq++}
@@ -1094,11 +1094,11 @@ const FLAME_NAMES=(C.PHYS&&C.PHYS.flameNames())||{};
 const METALS={Mg:{flame:[255,255,255],glow:[255,252,240],ash:[240,240,235],smoke:[240,240,240],sparks:[255,250,225],dur:7,bright:1.5,sparkRate:45,ribbon:'#aab3bb'},Fe:{flame:[255,185,70],glow:[255,170,60],ash:[55,45,42],smoke:[100,95,92],sparks:[255,205,95],dur:10,bright:.65,sparkRate:75,ribbon:'#6b7280'},Na:{flame:[255,200,40],glow:[255,225,120],ash:[235,235,230],smoke:[235,235,230],sparks:[255,215,70],dur:6,bright:1,sparkRate:20,ribbon:'#cbd5e1'},Zn:{flame:[170,235,255],glow:[220,250,255],ash:[240,240,240],smoke:[235,240,245],sparks:[200,240,255],dur:8,bright:.9,sparkRate:25,ribbon:'#94a3b8'},Cu:{flame:[50,225,165],glow:[160,255,220],ash:[30,30,32],smoke:[60,90,80],sparks:[90,240,190],dur:9,bright:.7,sparkRate:15,ribbon:'#c2703a'}};
 function emit(pool,n,o,x,y){const sp=pool.sp=pool.sp||[];for(let i=0;i<n&&sp.length<700;i++){const an=(o.angle||0)*Math.PI/180+(Math.random()-.5)*(o.spread==null?1:o.spread),v=o.speed*(.35+Math.random()*.85);sp.push({x,y,vx:Math.cos(an)*v,vy:Math.sin(an)*v,life:o.life*(.5+Math.random()*.7),age:0,col:o.color,g:o.gravity,s:o.size*(.6+Math.random()*.8)})}}
 function trigger(pool,id,opts){const f=E[id];if(!f)return null;const o=Object.assign({},f.defaults,opts||{}),ev={id,o,age:0,dur:o.dur||f.dur||.5,fired:0};(pool.events=pool.events||[]).push(ev);return ev}
-/*@@GFX effects/flame@@*/
-/*@@GFX effects/sparks@@*/
-/*@@GFX effects/metalBurn@@*/
-/*@@GFX effects/explosion@@*/
-/*@@GFX effects/flash@@*/
+/*@@GFX efekty/flame@@*/
+/*@@GFX efekty/sparks@@*/
+/*@@GFX efekty/metalBurn@@*/
+/*@@GFX efekty/explosion@@*/
+/*@@GFX efekty/flash@@*/
 function hexOf(c){return '#'+c.map(v=>('0'+Math.round(v).toString(16)).slice(-2)).join('')}
 function rgbOf(h){return[1,3,5].map(i=>parseInt(h.substr(i,2),16))}
 function optionsPanel(host,id,o,cb){host.innerHTML='';const f=E[id];if(!f||!f.schema)return;const d=f.defaults||{};Object.keys(f.schema).forEach(k=>{const s=f.schema[k],row=document.createElement('label');row.style.cssText='display:grid;grid-template-columns:120px 1fr auto;gap:6px;align-items:center;font-size:12px';row.innerHTML='<span>'+s.l+'</span>';let inp;
@@ -1107,13 +1107,13 @@ else if(s.t==='color'){inp=document.createElement('input');inp.type='color';inp.
 else{inp=document.createElement('select');(s.opts||[]).forEach(x=>{const q=document.createElement('option');q.value=q.textContent=x;inp.appendChild(q)});inp.value=o[k]||d[k];inp.onchange=()=>{o[k]=inp.value;cb&&cb(k)};row.append(inp,document.createElement('span'))}
 host.appendChild(row)})}
 const PRESETS=[{label:'Spalanie magnezu',id:'metalBurn',o:{metal:'Mg'}},{label:'Wełna stalowa (iskry)',id:'metalBurn',o:{metal:'Fe'}},{label:'Spalanie sodu (żółty)',id:'metalBurn',o:{metal:'Na'}},{label:'Spalanie miedzi (zielone)',id:'metalBurn',o:{metal:'Cu'}},{label:'Płomień — metan',id:'flame',o:{phi:1,power:.8}},{label:'Płomień — kopcący',id:'flame',o:{phi:1.4,soot:.6,power:.9}},{label:'Płomień — lit (czerwony)',id:'flame',o:{color:FLAME_COLORS.Li,power:.8}},{label:'Płomień — sód (żółty)',id:'flame',o:{color:FLAME_COLORS.Na,power:.8}},{label:'Płomień — potas (fioletowy)',id:'flame',o:{color:FLAME_COLORS.K,power:.8}},{label:'Płomień — bar (zielony)',id:'flame',o:{color:FLAME_COLORS.Ba,power:.8}},{label:'Płomień — miedź (niebieskozielony)',id:'flame',o:{color:FLAME_COLORS.Cu,power:.8}},{label:'Wybuch H₂ + O₂ (niebieski)',id:'explosion',o:{color:[140,185,255],size:1.1,smoke:.5,smokeColor:[190,200,215]}},{label:'Wybuch — ognisty',id:'explosion',o:{}},{label:'Iskry',id:'sparks',o:{rate:90}},{label:'Błysk',id:'flash',o:{}}];
-/*@@GFX vessels/stage@@*/
+/*@@GFX naczynia/stage@@*/
  
-/*@@GFX effects/splint@@*/
-/*@@GFX effects/pop@@*/
+/*@@GFX efekty/splint@@*/
+/*@@GFX efekty/pop@@*/
 PRESETS.push({label:'Łuczywko płonące',id:'splint',o:{mode:'flame'}},{label:'Łuczywko tlące się (test na O₂)',id:'splint',o:{mode:'glow'}},{label:'„Pyk!" — wodór',id:'pop',o:{}});
  
-/*@@GFX vessels/anchor@@*/
+/*@@GFX naczynia/anchor@@*/
  
 function burner(c,r,st,env){const T=env.th,f=st.flame||{},cx=r.x+r.w/2,base=r.y+r.h-6,tw=Math.min(r.w*.14,16),top=base-64;
 c.strokeStyle=T.glass;c.lineWidth=5;c.lineCap='round';c.beginPath();c.moveTo(cx-58,base);c.lineTo(cx+58,base);c.stroke();
@@ -1123,7 +1123,7 @@ const air=Math.max(0,Math.min(1.6,(f.air==null?100:f.air)/100));c.fillStyle='rgb
 if(!f.on||!(f.power>.05)){c.fillStyle='rgba(120,140,160,.25)';c.beginPath();c.arc(cx,base-68,4,0,7);c.fill()}
 else env.fx=Object.assign({},env.fx,{flame:{power:Math.min(1,f.power),phi:f.phi==null?(1/Math.max(.08,air)):f.phi,soot:f.soot||0,temp:f.temp||900,color:f.color||null,fuel:f.fuel||'CH4',salt:f.salt||''}});
 return{x:cx,y:top}}
-/*@@GFX vessels/burner@@*/
+/*@@GFX naczynia/burner@@*/
  
 function cooler(c,r,st,env){const T=env.th,k=st.coolant||{Tin:15,Tout:15,flow:.0004,q:0},t=env.t,x0=r.x+r.w*.16,x1=r.x+r.w*.84,cy=r.y+r.h/2,jh=Math.min(r.h*.5,70),ih=jh*.28;
 const g=c.createLinearGradient(x0,0,x1,0);g.addColorStop(0,rgba(tc(k.Tout),.55));g.addColorStop(1,rgba(tc(k.Tin),.55));c.fillStyle=g;c.fillRect(x0,cy-jh/2,x1-x0,jh);
@@ -1134,7 +1134,7 @@ const cd=Math.min(1,(k.q||0)/80)*vap;c.fillStyle='rgba(120,180,230,.85)';for(let
 c.strokeStyle=T.glass;c.lineWidth=4;c.lineJoin='round';c.strokeRect(x0,cy-jh/2,x1-x0,jh);c.lineWidth=3;c.beginPath();c.moveTo(x0-14,cy-ih/2);c.lineTo(x1+14,cy-ih/2);c.moveTo(x0-14,cy+ih/2);c.lineTo(x1+14,cy+ih/2);c.stroke();
 c.lineWidth=5;c.beginPath();c.moveTo(x0+16,cy-jh/2);c.lineTo(x0+16,cy-jh/2-18);c.moveTo(x1-16,cy+jh/2);c.lineTo(x1-16,cy+jh/2+18);c.stroke();
 c.fillStyle=T.text;c.font='700 11px Inter,system-ui';c.textAlign='left';c.fillText('woda wyj. '+(+k.Tout||0).toFixed(1)+' °C',x0+22,cy-jh/2-8);c.textAlign='right';c.fillText('woda wej. '+(+k.Tin||0).toFixed(1)+' °C',x1-22,cy+jh/2+30);c.textAlign='left';c.fillStyle=T.mut;c.fillText('para →  ← skropliny',x0,r.y+10)}
-/*@@GFX vessels/cooler@@*/
+/*@@GFX naczynia/cooler@@*/
 
 const IND_FB={'ind-oranz-metylowy':p=>mc([220,38,38],[250,204,21],sm(p,3.1,4.4)),'ind-kapusta':p=>{const S=[[0,[220,38,38]],[4,[192,38,211]],[7,[109,91,208]],[9,[20,184,166]],[11,[34,197,94]],[14,[250,204,21]]];for(let i=1;i<S.length;i++)if(p<=S[i][0])return mc(S[i-1][1],S[i][1],(p-S[i-1][0])/(S[i][0]-S[i-1][0]));return S[S.length-1][1]},'ind-fenoloftaleina':p=>mc(WATER,[219,39,119],sm(p,8.2,10)),'ind-bbt':p=>mc([250,204,21],[37,99,235],sm(p,6,7.6))};
 const indCol=(id,p)=>{const a=colors.at(id,p);if(a)return a;const f=IND_FB[id]||PHF[id];return f?f(p):WATER.slice()};
@@ -1145,25 +1145,25 @@ function stand(c,r,st,env){const T=env.th,X=f=>env.W?(env.X0||0)+f*env.W:r.x+f*r
  cl.forEach(k=>{const y=Y(k.y),x=X(k.x),jw=(k.w>1?k.w:(k.w||.05)*(env.W||r.w))/2;if(!front||both){c.fillStyle=T.metal;c.fillRect(rx+6,y-2.5,Math.max(0,x-jw-rx-10),5);c.fillStyle=T.metalD;rr(c,rx-7,y-7,14,14,2);c.fill();c.fillStyle=T.metalL;c.beginPath();c.arc(rx-10,y,3,0,7);c.fill()}
   if(k.ring){if(front){c.strokeStyle=T.metal;c.lineWidth=3.5;c.beginPath();c.ellipse(x,y,jw+5,4,0,0,Math.PI);c.stroke()}else{c.strokeStyle=T.metalD;c.lineWidth=3.5;c.beginPath();c.ellipse(x,y,jw+5,4,0,Math.PI,7);c.stroke()}return}
   if(front||both){c.lineCap='round';c.strokeStyle=T.metalD;c.lineWidth=4;c.beginPath();c.moveTo(x-jw-10,y);c.lineTo(x-jw-3,y-8);c.moveTo(x-jw-10,y);c.lineTo(x-jw-3,y+8);c.moveTo(x+jw+3,y-8);c.quadraticCurveTo(x+jw+9,y,x+jw+3,y+8);c.stroke();c.fillStyle=T.wood;rr(c,x-jw-4,y-8,4,16,1);c.fill();rr(c,x+jw,y-8,4,16,1);c.fill();c.fillStyle=T.metalL;c.beginPath();c.arc(x+jw+11,y,3,0,7);c.fill()}})}
-/*@@GFX vessels/stand@@*/
+/*@@GFX naczynia/stand@@*/
  
 function tripod(c,r,st,env){const T=env.th,cx=r.x+r.w/2,w=r.w,y0=r.y+5,b=r.y+r.h,k=cl01((st.heat||0)/3);c.lineCap='round';c.strokeStyle=T.metal;c.lineWidth=3;c.beginPath();c.moveTo(cx+w*.05,y0+4);c.lineTo(cx+w*.12,b);c.stroke();c.strokeStyle=T.metalD;c.lineWidth=4;c.beginPath();c.moveTo(cx-w*.36,y0+4);c.lineTo(cx-w*.46,b);c.moveTo(cx+w*.36,y0+4);c.lineTo(cx+w*.46,b);c.moveTo(cx-w*.4,y0+5);c.lineTo(cx+w*.4,y0+5);c.stroke();
  c.fillStyle=T.metal;c.fillRect(cx-w*.48,r.y,w*.96,4);c.strokeStyle='rgba(0,0,0,.25)';c.lineWidth=.7;for(let x=cx-w*.47;x<cx+w*.47;x+=4){c.beginPath();c.moveTo(x,r.y);c.lineTo(x+3,r.y+4);c.stroke()}
  c.fillStyle=T.dark?'#cbd5e1':'#e7e5e4';rr(c,cx-w*.2,r.y-1,w*.4,6,3);c.fill();if(k>0){const g1=c.createRadialGradient(cx,r.y+2,1,cx,r.y+2,w*.24);g1.addColorStop(0,'rgba(255,90,30,'+(.9*k)+')');g1.addColorStop(1,'rgba(255,90,30,0)');c.fillStyle=g1;c.fillRect(cx-w*.26,r.y-4,w*.52,12)}return{x:cx,y:r.y-2}}
-/*@@GFX vessels/tripod@@*/
+/*@@GFX naczynia/tripod@@*/
  
 function spiritLamp(c,r,st,env){const T=env.th,L=st.lamp||{on:1,lv:.6},cx=r.x+r.w/2,b=r.y+r.h-3,bw=Math.min(r.w*.75,96),bh=Math.min(r.h*.42,64),ny=b-bh;
  c.save();rr(c,cx-bw/2,ny,bw,bh,[bh*.5,bh*.5,8,8]);c.fillStyle=T.tint;c.fill();c.clip();c.fillStyle='rgba(196,214,236,.55)';c.fillRect(cx-bw/2,b-bh*cl01(L.lv==null?.6:L.lv),bw,bh);highlights({hl:.15},c,{x:cx-bw/2,y:ny,w:bw,h:bh},T);c.restore();
  rr(c,cx-bw/2,ny,bw,bh,[bh*.5,bh*.5,8,8]);c.strokeStyle=T.glass;c.lineWidth=3;c.stroke();c.fillStyle=T.metal;rr(c,cx-11,ny-10,22,12,2);c.fill();c.fillStyle='#f5f5f4';c.fillRect(cx-3,ny-22,6,12);c.fillStyle='#292524';c.fillRect(cx-3,ny-24,6,3);
  if(L.on){env.fx=Object.assign({},env.fx,{flame:{power:.42,phi:1.32,soot:0,temp:700,size:.6,flicker:1.4,glow:.8,fuel:'C2H5OH',diffusion:true,salt:L.salt||''}})}else{c.strokeStyle=T.glass;c.lineWidth=2.5;c.fillStyle=T.tint;rr(c,cx-14,ny-34,28,26,[12,12,2,2]);c.fill();c.stroke()}
  return{x:cx,y:ny-22}}
-/*@@GFX vessels/spiritLamp@@*/
+/*@@GFX naczynia/spiritLamp@@*/
  
 function hotplate(c,r,st,env){const T=env.th,w=Math.min(r.w,230),x=r.x+(r.w-w)/2,h=Math.min(r.h*.8,46),y=r.y+r.h-h,k=cl01((st.heat||0)/3),s=cl01(st.stir||0);
  c.fillStyle=T.dark?'#334155':'#e5e7eb';c.strokeStyle=T.glass;c.lineWidth=2;rr(c,x,y,w,h,8);c.fill();c.stroke();c.fillStyle=T.dark?'#cbd5e1':'#f8fafc';rr(c,x+8,y-7,w-16,9,3);c.fill();c.stroke();if(k>0){c.fillStyle='rgba(239,68,68,'+(.7*k)+')';rr(c,x+8,y-7,w-16,9,3);c.fill()}
  [[.25,k,'grzanie'],[.75,s,'obroty']].forEach(([f,v,l])=>{const kx=x+w*f,ky=y+h*.5,a=-2.36+v*4.71;c.fillStyle=T.dark?'#1e293b':'#475569';c.beginPath();c.arc(kx,ky,9,0,7);c.fill();c.strokeStyle='#fff';c.lineWidth=2;c.beginPath();c.moveTo(kx,ky);c.lineTo(kx+Math.cos(a)*7,ky+Math.sin(a)*7);c.stroke();txt(c,l,kx+14,ky+4,T.mut,'left',9)});
  c.fillStyle=k>0?'#ef4444':(T.dark?'#475569':'#cbd5e1');c.beginPath();c.arc(x+w*.5,y+h*.5,3.5,0,7);c.fill();return{x:x+w/2,y:y-7}}
-/*@@GFX vessels/hotplate@@*/
+/*@@GFX naczynia/hotplate@@*/
  
 function dropper(c,r,st,env){const T=env.th,d=st.dropper||{lv:.5,color:[219,39,119]},p=env.pool,cx=r.x+r.w/2,bR=Math.min(r.w*.22,14),t0=r.y+bR*2+6,tb=r.y+r.h-18,tip=r.y+r.h-2,w=9,col=d.color||[205,228,238];
  if((st.dropReq||0)>(p.dq==null?st.dropReq||0:p.dq))p.sq=1;p.sq=Math.max(0,(p.sq||0)-(env.dt||.016)*3);const sq=p.sq;
@@ -1171,7 +1171,7 @@ function dropper(c,r,st,env){const T=env.th,d=st.dropper||{lv:.5,color:[219,39,1
  const lv=cl01(d.lv==null?.5:d.lv),ly=tb-(tb-t0)*lv;c.fillStyle=rgba(col,.8);c.beginPath();c.moveTo(cx-w/2+1.5,ly);c.lineTo(cx+w/2-1.5,ly);c.lineTo(cx+w/2-1.5,tb);c.lineTo(cx+1,tip-2);c.lineTo(cx-1,tip-2);c.lineTo(cx-w/2+1.5,tb);c.closePath();c.fill();
  c.strokeStyle=T.glass;c.lineWidth=2.5;c.lineJoin='round';c.beginPath();c.moveTo(cx-w/2,t0);c.lineTo(cx-w/2,tb);c.lineTo(cx-1.2,tip);c.lineTo(cx+1.2,tip);c.lineTo(cx+w/2,tb);c.lineTo(cx+w/2,t0);c.stroke();
  drips(c,env,st,cx,tip+2,col,d.drip||0,r,2.6)}
-/*@@GFX vessels/dropper@@*/
+/*@@GFX naczynia/dropper@@*/
  
 function gasCollect(c,r,st,env){const T=env.th,p=env.pool,tx0=r.x+r.w*.06,tx1=r.x+r.w*.98,ty=r.y+r.h*.55,tb=r.y+r.h-4,wy=ty+10,cx=r.x+r.w*.64,cw=Math.min(r.w*.2,50),cy0=r.y+8,cy1=tb-16,gv=cl01(st.gasV||0),gy=cy0+(cy1-cy0-12)*gv,W=st.water||[205,228,238],gc=st.gasColor;
  c.fillStyle=rgba(W,.5);c.fillRect(tx0,wy,tx1-tx0,tb-wy);c.strokeStyle='rgba(255,255,255,.6)';c.lineWidth=1.5;c.beginPath();c.moveTo(tx0,wy);c.lineTo(tx1,wy);c.stroke();
@@ -1181,13 +1181,13 @@ function gasCollect(c,r,st,env){const T=env.th,p=env.pool,tx0=r.x+r.w*.06,tx1=r.
  c.strokeStyle=T.glass;c.lineWidth=3;c.beginPath();c.moveTo(cx-cw/2,cy1);c.lineTo(cx-cw/2,cy0+6);c.quadraticCurveTo(cx-cw/2,cy0,cx-cw/2+6,cy0);c.lineTo(cx+cw/2-6,cy0);c.quadraticCurveTo(cx+cw/2,cy0,cx+cw/2,cy0+6);c.lineTo(cx+cw/2,cy1);c.stroke();
  c.strokeStyle=T.mut;c.fillStyle=T.mut;c.lineWidth=1;font(c,600,8);c.textAlign='right';const mx=st.gasMax||100;for(let i=0;i<=10;i++){const y=cy0+(cy1-cy0-12)*i/10;c.beginPath();c.moveTo(cx+cw/2-(i%5?4:8),y);c.lineTo(cx+cw/2,y);c.stroke();if(!(i%5))c.fillText(Math.round(mx*i/10),cx+cw/2-10,y+3)}
  c.save();rc(c,tx0,ty,tx1-tx0,tb-ty,10);c.strokeStyle=T.glass;c.lineWidth=3.5;c.stroke();c.restore();txt(c,'V = '+fmt(gv*mx,0)+' cm³',cx+cw/2+8,cy0+14,T.text,'left',11,800)}
-/*@@GFX vessels/gasCollect@@*/
+/*@@GFX naczynia/gasCollect@@*/
  
 function tubeRack(c,r,st,env){const T=env.th,tubes=st.tubes||[{label:'1',liquid:[229,38,46],level:.5},{label:'2',liquid:[246,162,30],level:.5},{label:'3',liquid:[92,184,92],level:.5},{label:'4',liquid:[74,75,181],level:.5}],n=tubes.length,pt=r.y+r.h*.34,pb=r.y+r.h-4,gap=r.w/n,tw=Math.min(gap*.55,34);
  c.fillStyle=T.wood;c.globalAlpha=.75;c.fillRect(r.x+4,pt,7,pb-pt);c.fillRect(r.x+r.w-11,pt,7,pb-pt);c.globalAlpha=1;rr(c,r.x,pb-9,r.w,9,3);c.fill();
  tubes.forEach((q,i)=>{const x=r.x+gap*(i+.5)-tw/2,pool=env.pool['t'+i]=env.pool['t'+i]||{events:[]},s=Object.assign({level:.5,liquid:WATER.slice()},q,{label:null});body('testTube',V.testTube,c,{x,y:r.y+4,w:tw,h:pb-14-r.y-4},s,Object.assign({},env,{pool,only:null,opt:{}}))});
  rr(c,r.x,pt-6,r.w,13,3);c.fillStyle=T.wood;c.fill();c.strokeStyle='rgba(0,0,0,.2)';c.lineWidth=1;c.stroke();tubes.forEach((q,i)=>{if(q.label)txt(c,q.label,r.x+gap*(i+.5),pt+4,'#fff','center',10,800)})}
-/*@@GFX vessels/tubeRack@@*/
+/*@@GFX naczynia/tubeRack@@*/
  
 function conductivity(c,r,st,env){const T=env.th,k=cl01(st.cond||0),p=env.pool,bx=r.x+r.w*.16,bw=r.w*.68,by=r.y+r.h*.42,bh=r.h*.55,lv=cl01(st.level==null?.6:st.level),ltop=by+bh-bh*lv,e1=bx+bw*.32,e2=bx+bw*.68,ey0=by-26,ey1=by+bh-16,wy=r.y+r.h*.27,bt={x:r.x+r.w*.1,y:r.y+12,w:48,h:20},bl={x:r.x+r.w*.8,y:r.y+30};
  body('beaker',V.beaker,c,{x:bx,y:by,w:bw,h:bh},Object.assign({},st,{label:null}),Object.assign({},env,{pool:p.bk=p.bk||{events:[]},only:null,opt:{effects:{scale:0}}}));
@@ -1201,14 +1201,14 @@ const EL=st.el||null;[e1,e2].forEach((x,i)=>{c.fillStyle='#3f3f46';rr(c,x-4,ey0,
  if(k>0){const g1=c.createRadialGradient(bl.x,bl.y,2,bl.x,bl.y,18+55*k);g1.addColorStop(0,'rgba(255,226,120,'+(.85*k)+')');g1.addColorStop(1,'rgba(255,200,60,0)');c.fillStyle=g1;c.beginPath();c.arc(bl.x,bl.y,18+55*k,0,7);c.fill()}
  c.fillStyle='rgba(255,250,225,'+(.18+.75*k)+')';c.strokeStyle=T.glass;c.lineWidth=2;c.beginPath();c.arc(bl.x,bl.y,15,0,7);c.fill();c.stroke();c.strokeStyle=k>.08?'#f59e0b':'#78716c';c.lineWidth=1.4;c.beginPath();c.moveTo(bl.x-5,bl.y+12);c.lineTo(bl.x-4,bl.y);for(let i=0;i<5;i++)c.lineTo(bl.x-4+i*2,bl.y+(i%2?-3:0));c.lineTo(bl.x+5,bl.y+12);c.stroke();c.fillStyle=T.metal;c.fillRect(bl.x-7,bl.y+14,14,12);
  txt(c,k>.6?'świeci jasno':k>.15?'świeci słabo':'nie świeci',(bt.x+bt.w+bl.x-20)/2,bt.y+bt.h/2-6,T.text,'center',11,800);if(st.label){font(c,800,12);const lw=c.measureText(st.label).width+12,ly=by+bh*.8;c.fillStyle=T.dark?'rgba(30,41,59,.92)':'rgba(255,255,255,.93)';rr(c,bx+bw/2-lw/2,ly,lw,18,4);c.fill();c.strokeStyle=T.glass;c.lineWidth=1;c.stroke();txt(c,st.label,bx+bw/2,ly+13,T.text,'center',12,800)}}
-/*@@GFX vessels/conductivity@@*/
+/*@@GFX naczynia/conductivity@@*/
  
 function pHscale(c,r,st,env){const T=env.th,ind=st.ind||'ind-uniwersalny',x0=r.x+14,x1=r.x+r.w-14,h=Math.min(18,r.h*.22),y=r.y+Math.max(r.h*.38,24),X=p=>x0+(x1-x0)*p/14;const g1=c.createLinearGradient(x0,0,x1,0);for(let p=0;p<=14;p+=.5)g1.addColorStop(p/14,rgba(indCol(ind,p)));c.fillStyle=g1;rr(c,x0,y,x1-x0,h,5);c.fill();c.strokeStyle='rgba(0,0,0,.2)';c.lineWidth=1;c.stroke();
  c.strokeStyle=T.mut;for(let p=0;p<=14;p++){c.beginPath();c.moveTo(X(p),y+h);c.lineTo(X(p),y+h+(p%7?4:8));c.stroke();txt(c,String(p),X(p),y+h+16,T.mut,'center',9)}
  const by=y+h+26;[[0,6.8,'kwasowy','#dc2626'],[6.8,7.2,'',''],[7.2,14,'zasadowy','#2563eb']].forEach(([a,b,l,col])=>{if(!l)return;c.strokeStyle=col;c.lineWidth=2;c.beginPath();c.moveTo(X(a),by-4);c.lineTo(X(a),by);c.lineTo(X(b),by);c.lineTo(X(b),by-4);c.stroke();txt(c,l,(X(a)+X(b))/2,by+13,col,'center',10,800)});txt(c,'7 — obojętny',X(7),by+27,T.mut,'center',9,700);
  (st.marks||[]).forEach((m,i)=>{const x=X(m.pH);c.fillStyle=T.text;c.beginPath();c.arc(x,y-4,2.5,0,7);c.fill();txt(c,m.label,x,y-9-(i%2)*11,T.mut,'center',9,600)});
  if(st.pH!=null&&!st.hide){const v=Math.max(0,Math.min(14,st.pH)),x=X(v);c.fillStyle=T.text;c.beginPath();c.moveTo(x,y-1);c.lineTo(x-6,y-10);c.lineTo(x+6,y-10);c.closePath();c.fill();txt(c,'pH '+fmt(v,1),x,y-14,T.text,'center',11,800)}}
-/*@@GFX vessels/pHscale@@*/
+/*@@GFX naczynia/pHscale@@*/
 const pHcol=p=>'hsl('+Math.round(Math.max(0,Math.min(14,p))/14*250)+',70%,48%)';
 function smooth(env,k,target,rate){const p=env.pool;if(p[k]==null||!isFinite(p[k]))p[k]=target;p[k]+=(target-p[k])*Math.min(1,(env.dt||.016)*rate);return p[k]}
 function pHmeter(c,r,st,env){const T=env.th,w=Math.min(r.w,150),x=r.x+(r.w-w)/2,bh=Math.min(r.h*.5,95),tgt=st.pH==null?7:st.pH,v=smooth(env,'ph',tgt,2.2),stable=Math.abs(v-tgt)<.02;
@@ -1218,28 +1218,28 @@ c.fillStyle=T.dark?'#7cffb2':'#10361f';c.font='800 '+Math.round(bh*.34)+'px ui-m
 const g=c.createLinearGradient(x+10,0,x+w-10,0);for(let i=0;i<=14;i+=2)g.addColorStop(i/14,pHcol(i));c.fillStyle=g;rr(c,x+10,r.y+bh*.68,w-20,7,3);c.fill();const px=x+10+(w-20)*Math.max(0,Math.min(1,v/14));c.fillStyle=T.text;c.beginPath();c.moveTo(px,r.y+bh*.68-2);c.lineTo(px-4,r.y+bh*.68-8);c.lineTo(px+4,r.y+bh*.68-8);c.fill();
 c.fillStyle=stable?'#22c55e':'#f59e0b';c.beginPath();c.arc(x+w-14,r.y+bh-9,4,0,7);c.fill();c.fillStyle=T.mut;c.font='600 9px Inter,system-ui';c.textAlign='left';c.fillText(stable?'stabilny':'ustala się…',x+12,r.y+bh-6);
 const ex=x+w/2,ey=r.y+bh,eb=r.y+r.h-14;c.strokeStyle=T.glass;c.lineWidth=5;c.lineCap='round';c.beginPath();c.moveTo(ex,ey);c.lineTo(ex,eb);c.stroke();c.fillStyle=pHcol(v);c.beginPath();c.arc(ex,eb+2,7,0,7);c.fill();c.strokeStyle=T.glass;c.lineWidth=2;c.stroke()}
-/*@@GFX vessels/pHmeter@@*/
+/*@@GFX naczynia/pHmeter@@*/
 function thermometer(c,r,st,env){const T=env.th,t=smooth(env,'T',st.T==null?25:st.T,2.5),cx=r.x+Math.min(r.w*.35,34),top=r.y+12,bR=Math.min(11,r.w*.14),by=r.y+r.h-bR-30,bot=by-bR*.6,lo=st.lo==null?-20:st.lo,hi=st.hi==null?120:st.hi,y=bot-(bot-top)*Math.max(0,Math.min(1,(t-lo)/(hi-lo))),tw=5.5,col=t>70?'#ef4444':t<5?'#3b82f6':'#f97316';
  c.fillStyle=T.tint;rr(c,cx-tw,top-tw,tw*2,by-top+tw,tw);c.fill();c.beginPath();c.arc(cx,by,bR+3,0,7);c.fill();
  c.fillStyle=col;c.fillRect(cx-2.5,y,5,by-y);c.beginPath();c.arc(cx,by,bR,0,7);c.fill();c.fillStyle='rgba(255,255,255,.45)';c.beginPath();c.arc(cx-bR*.35,by-bR*.35,bR*.3,0,7);c.fill();
  c.strokeStyle=T.glass;c.lineWidth=2.5;c.beginPath();c.moveTo(cx-tw,by-bR*.9);c.lineTo(cx-tw,top);c.arc(cx,top,tw,Math.PI,0);c.lineTo(cx+tw,by-bR*.9);c.arc(cx,by,bR+3,-1.1,Math.PI+1.1);c.stroke();
  c.strokeStyle=T.mut;c.fillStyle=T.mut;c.lineWidth=1;font(c,600,9);c.textAlign='left';const step=(hi-lo)>100?10:5;for(let v=Math.ceil(lo/step)*step;v<=hi;v+=step){const yy=bot-(bot-top)*(v-lo)/(hi-lo),maj=!(v%(step*2));c.beginPath();c.moveTo(cx+tw+2,yy);c.lineTo(cx+tw+(maj?11:6),yy);c.stroke();if(maj)c.fillText(v,cx+tw+14,yy+3)}
  const lw=Math.min(r.w-8,78),lx=Math.max(r.x+2,cx-lw/2);c.fillStyle=T.dark?'#06130c':'#cfe8d4';rr(c,lx,r.y+r.h-20,lw,18,4);c.fill();c.fillStyle=T.dark?'#7cffb2':'#10361f';font(c,800,12,1);c.textAlign='center';c.fillText(fmt(t,1)+' °C',lx+lw/2,r.y+r.h-7)}
-/*@@GFX vessels/thermometer@@*/
+/*@@GFX naczynia/thermometer@@*/
 function burette(c,r,st,env){const T=env.th,b=st.titrant||{V:0,Vmax:50,drip:0,color:[205,228,238]},cx=r.x+r.w/2,w=26,top=r.y+8,bot=r.y+r.h-34,fl=bot-top,lv=1-Math.max(0,Math.min(1,b.V/b.Vmax));
 c.fillStyle=rgba(b.color||[205,228,238],.7);c.fillRect(cx-w/2+2,top+fl*(1-lv),w-4,fl*lv);c.strokeStyle=T.glass;c.lineWidth=3;c.lineJoin='round';c.strokeRect(cx-w/2,top,w,fl);
 c.strokeStyle=T.mut;c.fillStyle=T.mut;c.lineWidth=1;c.font='600 9px Inter,system-ui';c.textAlign='left';for(let v=0;v<=b.Vmax;v+=5){const y=top+fl*v/b.Vmax;c.beginPath();c.moveTo(cx+w/2,y);c.lineTo(cx+w/2+(v%10?5:9),y);c.stroke();if(!(v%10))c.fillText(v,cx+w/2+12,y+3)}
 c.fillStyle=T.glass;c.fillRect(cx-3,bot,6,16);c.fillRect(cx-10,bot+6,20,4);c.fillRect(cx-1.5,bot+16,3,8);
 drips(c,env,st,cx,bot+24,b.color||[205,228,238],b.drip||0,r,2.6);
 c.fillStyle=T.text;c.font='800 11px Inter,system-ui';c.textAlign='center';c.fillText(fmt(b.V,2)+' cm³',cx,r.y+r.h-6)}
-/*@@GFX vessels/burette@@*/
+/*@@GFX naczynia/burette@@*/
  
-/*@@GFX vessels/roundFlask__2@@*/
-/*@@GFX vessels/volFlask__2@@*/
-/*@@GFX vessels/funnel__2@@*/
-/*@@GFX vessels/petri__2@@*/
-/*@@GFX vessels/evapDish__2@@*/
-/*@@GFX effects/ringMark@@*/
+/*@@GFX naczynia/roundFlask__2@@*/
+/*@@GFX naczynia/volFlask__2@@*/
+/*@@GFX naczynia/funnel__2@@*/
+/*@@GFX naczynia/petri__2@@*/
+/*@@GFX naczynia/evapDish__2@@*/
+/*@@GFX efekty/ringMark@@*/
  
 function pipette(c,r,st,env){const T=env.th,p=st.pip||{lv:.6,drip:0,color:[205,228,238]},cx=r.x+r.w/2,bR=Math.min(r.w*.2,16),top=r.y+bR*2+8,bot=r.y+r.h-30,w=10,tipY=bot+16,fl=bot-top,lv=Math.max(0,Math.min(1,p.lv==null?.6:p.lv));
 c.fillStyle=T.dark?'#7f1d1d':'#dc2626';c.beginPath();c.ellipse(cx,r.y+bR+2,bR*.8,bR,0,0,7);c.fill();c.fillRect(cx-w/2-1,r.y+bR*2,w+2,8);
@@ -1248,14 +1248,14 @@ c.fillStyle=rgba(p.color||[205,228,238],.75);c.fillRect(cx-w/2+1.5,bot-fl*lv,w-3
 c.strokeStyle=T.glass;c.lineWidth=3;c.lineJoin='round';c.beginPath();c.ellipse(cx,top+fl*.45,w*1.1,fl*.17,0,0,7);c.stroke();c.beginPath();c.moveTo(cx-w/2,top);c.lineTo(cx-w/2,bot);c.lineTo(cx-1.5,tipY);c.lineTo(cx+1.5,tipY);c.lineTo(cx+w/2,bot);c.lineTo(cx+w/2,top);c.stroke();
 c.strokeStyle=T.mut;c.lineWidth=1.5;c.beginPath();c.moveTo(cx-w/2-6,top+fl*.1);c.lineTo(cx+w/2+6,top+fl*.1);c.stroke();
 drips(c,env,st,cx,tipY,p.color||[205,228,238],p.drip||0,r,2.4)}
-/*@@GFX vessels/pipette@@*/
+/*@@GFX naczynia/pipette@@*/
  
 function balance(c,r,st,env){const T=env.th,m=smooth(env,'m',st.mass==null?0:st.mass,4),w=Math.min(r.w,170),x=r.x+(r.w-w)/2,by=r.y+r.h-44,cx=x+w/2;
 c.fillStyle=T.dark?'#1e293b':'#e2e8f0';c.strokeStyle=T.glass;c.lineWidth=3;rr(c,x,by,w,40,8);c.fill();c.stroke();
 c.fillStyle=T.dark?'#06130c':'#cfe8d4';rr(c,cx-34,by+7,68,22,4);c.fill();c.fillStyle=T.dark?'#7cffb2':'#10361f';c.font='800 14px ui-monospace,monospace';c.textAlign='center';c.fillText(fmt(m,2)+' g',cx,by+23);
 c.fillStyle=T.mut;c.fillRect(cx-3,by-12,6,12);c.fillStyle=T.dark?'#475569':'#94a3b8';rr(c,cx-w*.36,by-18,w*.72,7,3);c.fill();
 if(m>.005){const k=Math.min(1,m/40);c.fillStyle=rgba(st.massCol||[238,238,232],.95);c.beginPath();c.ellipse(cx,by-19,8+30*k,2+10*k,0,Math.PI,0);c.fill();c.strokeStyle='rgba(0,0,0,.25)';c.lineWidth=1;c.stroke()}}
-/*@@GFX vessels/balance@@*/
+/*@@GFX naczynia/balance@@*/
  
 const sm=(x,a,b)=>Math.max(0,Math.min(1,(x-a)/(b-a))),mc=(a,b,t)=>a.map((v,i)=>v+(b[i]-v)*t);
 const PHF={'ind-uniwersalny':p=>{const U=[[229,38,46],[239,90,40],[246,162,30],[232,194,44],[215,217,58],[92,184,92],[33,168,154],[47,127,193],[74,75,181],[107,45,143]],k=Math.max(0,Math.min(8.999,p/14*9)),i=Math.floor(k);return mc(U[i],U[i+1],k-i)},'ind-lakmus':p=>mc([220,38,38],[37,99,235],sm(p,4.5,8.3)),'ind-fenoloftaleina':()=>[219,39,119]};
@@ -1270,7 +1270,7 @@ if(wet>1){const wh=Math.min(len,wet);c.fillStyle=rgba(P.f(pc));rr(c,x,tipY-wh,sw
 c.strokeStyle='rgba(0,0,0,.18)';c.lineWidth=1;rr(c,x,top,sw,len,2);c.stroke();c.fillStyle=T.dark?'#475569':'#94a3b8';c.fillRect(x-3,top-5,sw+6,8);
 c.textAlign='center';c.fillStyle=T.mut;c.font='600 9px Inter,system-ui';c.fillText(P.n,x+sw/2,r.y+r.h-20);if(wet>30){c.fillStyle=T.text;c.font='700 9px Inter,system-ui';c.fillText(P.rd(pc),x+sw/2,r.y+r.h-8)}});
 c.strokeStyle=T.glass;c.lineWidth=3;c.lineJoin='round';rr(c,r.x+8,y0-6,r.w-16,r.y+r.h-34-y0+6,10);c.stroke()}
-/*@@GFX vessels/paper@@*/
+/*@@GFX naczynia/paper@@*/
  
 const ELC={H:'#f1f5f9',C:'#334155',N:'#3b82f6',O:'#ef4444',F:'#a3e635',Cl:'#22c55e',Br:'#9f1239',I:'#7c3aed',S:'#eab308',P:'#f97316',Na:'#a855f7',K:'#c084fc',Ca:'#fb923c',Mg:'#10b981',Cu:'#f59e0b',Fe:'#78716c',Zn:'#94a3b8',Ag:'#cbd5e1'},ELR={Na:.95,K:1.1,Mg:.85,Ca:1.0,Zn:.8,H:.5,C:.78,N:.72,O:.68,F:.58,Cl:.99,S:1.05,P:1.08};
 const CHG={'F-':'−','Br-':'−','HSO4-':'−','H2PO4-':'−','NH4+':'+','HCO3-':'−','H3O+':'+','OH-':'−','Cl-':'−','Na+':'+','H+':'+','K+':'+','Zn2+':'2+','Mg2+':'2+','Ca2+':'2+','SO42-':'2−','NO3-':'−','CH3COO-':'−'};
@@ -1292,7 +1292,7 @@ for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const a=pts[i],b=pt
 pts.forEach(q=>{c.fillStyle=ELC[q[2]]||'#a1a1aa';c.beginPath();c.arc(q[0],q[1],(ELR[q[2]]||.8)*s*.62,0,7);c.fill();c.strokeStyle='rgba(0,0,0,.35)';c.lineWidth=1;c.stroke()});const q=CHG[p.id];if(q){const bx=p.x+s*1.05,by=p.y-s*1.05,br=Math.max(5,s*.48);c.fillStyle=q.indexOf('+')>=0?'#ea580c':'#2563eb';c.beginPath();c.arc(bx,by,br,0,7);c.fill();c.fillStyle='#fff';c.font='800 '+Math.round(br*1.25)+'px Inter,system-ui';c.textAlign='center';c.fillText(q,bx,by+br*.45)}});
 c.strokeStyle=T.glass;c.lineWidth=4;c.lineJoin='round';rc(c,r.x+2,r.y+4,r.w-4,r.h-8,14);c.stroke();
 c.fillStyle=T.mut;c.font='600 10px Inter,system-ui';c.textAlign='left';c.fillText(spec.map(q=>MNAME(q.id)+'×'+q.n).join('  ')+' · '+({gas:'gaz',liquid:'ciecz',solid:'ciało stałe'}[ph]||ph),r.x+10,r.y+r.h-12)}
-/*@@GFX vessels/molTank@@*/
+/*@@GFX naczynia/molTank@@*/
 
 const ELX=(function(){
 const POS='#dc2626',NEG='#2563eb',PE=()=>C.PHYS&&C.PHYS.electro;
@@ -1342,12 +1342,12 @@ function sphere(c,x,y,R,q,o){o=o||{};const T=o.th||th(),g=c.createRadialGradient
 function spark(c,x1,y1,x2,y2,a,seed){const n=9,dx=x2-x1,dy=y2-y1,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l;let s=seed||1;const rnd=()=>(s=(s*9301+49297)%233280)/233280-.5;c.save();c.globalAlpha=a==null?1:a;c.strokeStyle='#e0e7ff';c.shadowColor='#818cf8';c.shadowBlur=12;c.lineWidth=2.5;c.beginPath();c.moveTo(x1,y1);for(let i=1;i<n;i++){const t=i/n,o=rnd()*l*.18;c.lineTo(x1+dx*t+nx*o,y1+dy*t+ny*o)}c.lineTo(x2,y2);c.stroke();c.restore()}
 return{charge,sphere,rod,cloth,pendulum,electroscope,fieldLines,pointCharge,arrow,bar,spark,POS,NEG}})();
  
-/*@@GFX vessels/electroscope@@*/
-/*@@GFX vessels/chargedRod@@*/
-/*@@GFX vessels/pendulum@@*/
-/*@@GFX vessels/fieldMap@@*/
-/*@@GFX vessels/chargeBar@@*/
-/*@@GFX effects/discharge@@*/
+/*@@GFX naczynia/electroscope@@*/
+/*@@GFX naczynia/chargedRod@@*/
+/*@@GFX naczynia/pendulum@@*/
+/*@@GFX naczynia/fieldMap@@*/
+/*@@GFX naczynia/chargeBar@@*/
+/*@@GFX efekty/discharge@@*/
  
 const padOf=(v,r)=>typeof v.pad==='function'?v.pad(r):v.pad;
  
@@ -1436,27 +1436,27 @@ const indBottle=id=>id==='ind-fenoloftaleina'?[236,240,244]:id==='ind-oranz-mety
 const odczyn=p=>p<6.8?'kwasowy':p>7.2?'zasadowy':'obojętny';
 
 const MRX={Mg:{k:.10,col:[217,221,226],sh:'strip',eq:'Mg + 2HCl → MgCl₂ + H₂↑',heat:1,obs:'Gwałtowne wydzielanie gazu, probówka wyraźnie się ogrzewa, magnez szybko znika.'},Zn:{k:.04,col:[154,167,179],sh:'granule',eq:'Zn + 2HCl → ZnCl₂ + H₂↑',obs:'Równomierne wydzielanie pęcherzyków gazu na powierzchni granulek cynku.'},Fe:{k:.014,col:[120,124,130],sh:'granule',eq:'Fe + 2HCl → FeCl₂ + H₂↑',obs:'Powolne wydzielanie gazu; roztwór z czasem bladozielony (jony Fe²⁺).',l1:[167,201,160]},Cu:{k:0,col:[184,115,51],sh:'strip',eq:'Cu + HCl → reakcja nie zachodzi',obs:'Brak objawów reakcji — miedź jest mniej aktywna niż wodór (szereg aktywności).'}};
-/*@@GFX scenes/acidMetal@@*/
+/*@@GFX sceny/acidMetal@@*/
 
-/*@@GFX scenes/indicator@@*/
+/*@@GFX sceny/indicator@@*/
 
-/*@@GFX scenes/indicatorRack@@*/
+/*@@GFX sceny/indicatorRack@@*/
 
 const tpH=S=>{const nA=S.ca*S.Va/1000,nB=S.cb*S.V/1000,Vt=(S.Va+S.V)/1000,d=(nA-nB)/Vt,Hc=d/2+Math.sqrt(d*d/4+1e-14);return-Math.log10(Hc)};
 const tLv=S=>Math.min(1,(S.Va+S.V)/62);
-/*@@GFX scenes/titration@@*/
+/*@@GFX sceny/titration@@*/
 
-/*@@GFX scenes/dilution@@*/
+/*@@GFX sceny/dilution@@*/
 
 const CSOL={dist:{n:'woda destylowana',f:'H₂O',cond:.02,mol:[{id:'H2O',n:16}],t:'nieelektrolit (prawie nie przewodzi)'},sugar:{n:'roztwór cukru',f:'C₆H₁₂O₆',cond:.02,mol:[{id:'C6H12O6',n:3},{id:'H2O',n:12}],t:'nieelektrolit — cząsteczki nie rozpadają się na jony'},HCl:{n:'kwas solny',f:'HCl(aq)',cond:1,el:{cat:{f:'H₂',n:1},an:{f:'Cl₂',n:.6,col:[214,232,140]},eq:'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 Cl⁻ → Cl₂↑ + 2 e⁻',rx:'elHcl'},mol:[{id:'H3O+',n:6},{id:'Cl-',n:6},{id:'H2O',n:8}],t:'elektrolit mocny — HCl całkowicie zdysocjowany: H₃O⁺ + Cl⁻'},H2SO4:{n:'kwas siarkowy(VI)',f:'H₂SO₄(aq)',cond:1,el:{cat:{f:'H₂',n:1},an:{f:'O₂',n:.5},eq:'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻ (jony SO₄²⁻ nie utleniają się)',rx:'elH2o'},mol:[{id:'H3O+',n:6},{id:'SO42-',n:3},{id:'H2O',n:8}],t:'elektrolit mocny: 2H₃O⁺ + SO₄²⁻'},CH3COOH:{n:'kwas octowy',f:'CH₃COOH(aq)',cond:.3,el:{cat:{f:'H₂',n:.5},an:{f:'O₂',n:.25},eq:'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻ — mało jonów, więc gazu niewiele',rx:'elH2o'},mol:[{id:'CH3COOH',n:5},{id:'H3O+',n:1},{id:'CH3COO-',n:1},{id:'H2O',n:9}],t:'elektrolit słaby — zdysocjowana tylko niewielka część cząsteczek'},NaOH:{n:'zasada sodowa',f:'NaOH(aq)',cond:.95,el:{cat:{f:'H₂',n:1},an:{f:'O₂',n:.5},eq:'katoda (−): 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ (Na⁺ się nie redukuje) · anoda (+): 4 OH⁻ → O₂↑ + 2 H₂O + 4 e⁻',rx:'elH2o'},mol:[{id:'Na+',n:6},{id:'OH-',n:6},{id:'H2O',n:8}],t:'elektrolit mocny: Na⁺ + OH⁻'},NaCl:{n:'roztwór soli kuchennej',f:'NaCl(aq)',cond:.9,el:{cat:{f:'H₂',n:1},an:{f:'Cl₂',n:.6,col:[214,232,140]},eq:'katoda (−): 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ · anoda (+): 2 Cl⁻ → Cl₂↑ + 2 e⁻ (w roztworze stężonym)',rx:'elNacl'},mol:[{id:'Na+',n:6},{id:'Cl-',n:6},{id:'H2O',n:8}],t:'elektrolit mocny: Na⁺ + Cl⁻'}};
-/*@@GFX scenes/conductivity@@*/
+/*@@GFX sceny/conductivity@@*/
 
 const GRX={H2:{n:'Zn + 2HCl → ZnCl₂ + H₂↑',sol:{col:[154,167,179],t:'metal',shape:'granule'},k:1,foam:0,txt:'Wodór słabo rozpuszcza się w wodzie, więc zbiera się go metodą wypierania wody.'},CO2:{n:'CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑',sol:{col:[240,240,232],t:'solid',shape:'chips'},k:.75,foam:.6,txt:'CO₂ częściowo rozpuszcza się w wodzie — zbiera się wolniej; lepiej zbierać go metodą wypierania powietrza.'}};
-/*@@GFX scenes/gasCollection@@*/
+/*@@GFX sceny/gasCollection@@*/
 
-/*@@GFX scenes/carbonate@@*/
+/*@@GFX sceny/carbonate@@*/
 
-/*@@GFX scenes/heating@@*/
+/*@@GFX sceny/heating@@*/
 
 const RX={};
  
@@ -1560,73 +1560,73 @@ function mount(host,o){o=Object.assign({mode:'dissolve',height:300},o||{});const
 return{mount,drawIon,drawWater,COL}})();
  
 (function(){const P=(k,sp)=>{if(!rx.get(k))rx.register(k,sp)};const php=['ind-fenoloftaleina',7],pink=['ind-fenoloftaleina',12.5];
- /*@@GFX rx/liH2o@@*/
- /*@@GFX rx/kH2o@@*/
- /*@@GFX rx/caH2o@@*/
- /*@@GFX rx/mgH2oHot@@*/
+ /*@@GFX reakcje/liH2o@@*/
+ /*@@GFX reakcje/kH2o@@*/
+ /*@@GFX reakcje/caH2o@@*/
+ /*@@GFX reakcje/mgH2oHot@@*/
  const ox=[245,245,240];
- /*@@GFX rx/na2oH2o@@*/
- /*@@GFX rx/k2oH2o@@*/
- /*@@GFX rx/li2oH2o@@*/
- /*@@GFX rx/caoH2o@@*/
- /*@@GFX rx/mgoH2o@@*/
- /*@@GFX rx/baoH2o@@*/
- /*@@GFX rx/mgcl2Naoh@@*/
- /*@@GFX rx/alcl3Naoh@@*/
- /*@@GFX rx/znso4Naoh@@*/
- /*@@GFX rx/feso4Naoh@@*/
- /*@@GFX rx/cucl2Naoh@@*/
- /*@@GFX rx/niso4Naoh@@*/
- /*@@GFX rx/mnso4Naoh@@*/
- /*@@GFX rx/pbno32Naoh@@*/
- /*@@GFX rx/cacl2Naoh@@*/
- /*@@GFX rx/agno3Naoh@@*/
- /*@@GFX rx/caoh2Hcl@@*/
- /*@@GFX rx/kohHcl@@*/
- /*@@GFX rx/kohHno3@@*/
- /*@@GFX rx/naohHno3@@*/
- /*@@GFX rx/baoh2H2so4@@*/
- /*@@GFX rx/cuoh2H2so4@@*/
- /*@@GFX rx/cuoh2Hcl@@*/
- /*@@GFX rx/feoh3Hcl@@*/
- /*@@GFX rx/znoh2Hcl@@*/
- /*@@GFX rx/aloh3Naoh@@*/
- /*@@GFX rx/znoh2Naoh@@*/
- /*@@GFX rx/baoh2Co2@@*/
- /*@@GFX rx/cuoh2Heat@@*/
- /*@@GFX rx/feoh2O2@@*/
- /*@@GFX rx/caoh2Na2co3@@*/
- /*@@GFX rx/nh4clNaoh@@*/
+ /*@@GFX reakcje/na2oH2o@@*/
+ /*@@GFX reakcje/k2oH2o@@*/
+ /*@@GFX reakcje/li2oH2o@@*/
+ /*@@GFX reakcje/caoH2o@@*/
+ /*@@GFX reakcje/mgoH2o@@*/
+ /*@@GFX reakcje/baoH2o@@*/
+ /*@@GFX reakcje/mgcl2Naoh@@*/
+ /*@@GFX reakcje/alcl3Naoh@@*/
+ /*@@GFX reakcje/znso4Naoh@@*/
+ /*@@GFX reakcje/feso4Naoh@@*/
+ /*@@GFX reakcje/cucl2Naoh@@*/
+ /*@@GFX reakcje/niso4Naoh@@*/
+ /*@@GFX reakcje/mnso4Naoh@@*/
+ /*@@GFX reakcje/pbno32Naoh@@*/
+ /*@@GFX reakcje/cacl2Naoh@@*/
+ /*@@GFX reakcje/agno3Naoh@@*/
+ /*@@GFX reakcje/caoh2Hcl@@*/
+ /*@@GFX reakcje/kohHcl@@*/
+ /*@@GFX reakcje/kohHno3@@*/
+ /*@@GFX reakcje/naohHno3@@*/
+ /*@@GFX reakcje/baoh2H2so4@@*/
+ /*@@GFX reakcje/cuoh2H2so4@@*/
+ /*@@GFX reakcje/cuoh2Hcl@@*/
+ /*@@GFX reakcje/feoh3Hcl@@*/
+ /*@@GFX reakcje/znoh2Hcl@@*/
+ /*@@GFX reakcje/aloh3Naoh@@*/
+ /*@@GFX reakcje/znoh2Naoh@@*/
+ /*@@GFX reakcje/baoh2Co2@@*/
+ /*@@GFX reakcje/cuoh2Heat@@*/
+ /*@@GFX reakcje/feoh2O2@@*/
+ /*@@GFX reakcje/caoh2Na2co3@@*/
+ /*@@GFX reakcje/nh4clNaoh@@*/
 })();
  
 (function(){const P=(k,sp)=>{if(!rx.get(k))rx.register(k,sp)};const u=v=>['ind-uniwersalny',v],wh=[245,245,240],pw=c=>({col:c,eq:4,end:0,t:'powder',shape:'powder'});
- /*@@GFX rx/so3H2o@@*/
- /*@@GFX rx/so2H2o@@*/
- /*@@GFX rx/co2H2o@@*/
- /*@@GFX rx/p4o10H2o@@*/
- /*@@GFX rx/caoHcl@@*/
- /*@@GFX rx/mgoHcl@@*/
- /*@@GFX rx/znoHcl@@*/
- /*@@GFX rx/al2o3Hcl@@*/
- /*@@GFX rx/fe2o3Hcl@@*/
- /*@@GFX rx/fe2o3H2so4@@*/
- /*@@GFX rx/so2Naoh@@*/
- /*@@GFX rx/so3Naoh@@*/
- /*@@GFX rx/naohCo2@@*/
- /*@@GFX rx/al2o3NaohAq@@*/
- /*@@GFX rx/znoNaohAq@@*/
- /*@@GFX rx/sio2Naoh@@*/
+ /*@@GFX reakcje/so3H2o@@*/
+ /*@@GFX reakcje/so2H2o@@*/
+ /*@@GFX reakcje/co2H2o@@*/
+ /*@@GFX reakcje/p4o10H2o@@*/
+ /*@@GFX reakcje/caoHcl@@*/
+ /*@@GFX reakcje/mgoHcl@@*/
+ /*@@GFX reakcje/znoHcl@@*/
+ /*@@GFX reakcje/al2o3Hcl@@*/
+ /*@@GFX reakcje/fe2o3Hcl@@*/
+ /*@@GFX reakcje/fe2o3H2so4@@*/
+ /*@@GFX reakcje/so2Naoh@@*/
+ /*@@GFX reakcje/so3Naoh@@*/
+ /*@@GFX reakcje/naohCo2@@*/
+ /*@@GFX reakcje/al2o3NaohAq@@*/
+ /*@@GFX reakcje/znoNaohAq@@*/
+ /*@@GFX reakcje/sio2Naoh@@*/
 })();
 ; 
 (function(){const P=(k,sp)=>{if(!rx.get(k))rx.register(k,sp)};const u=v=>['ind-uniwersalny',v],wh=[245,245,240],pw=c=>({col:c,eq:4,end:0,t:'powder',shape:'powder'});
- /*@@GFX rx/bacl2Na2so4@@*/
- /*@@GFX rx/cacl2Na2co3@@*/
- /*@@GFX rx/na2co3Hcl@@*/
- /*@@GFX rx/cuso4Hydrate@@*/
- /*@@GFX rx/hyd-nacl@@*/
- /*@@GFX rx/hyd-na2co3@@*/
- /*@@GFX rx/hyd-nh4cl@@*/
- /*@@GFX rx/hyd-cuso4@@*/
+ /*@@GFX reakcje/bacl2Na2so4@@*/
+ /*@@GFX reakcje/cacl2Na2co3@@*/
+ /*@@GFX reakcje/na2co3Hcl@@*/
+ /*@@GFX reakcje/cuso4Hydrate@@*/
+ /*@@GFX reakcje/hyd-nacl@@*/
+ /*@@GFX reakcje/hyd-na2co3@@*/
+ /*@@GFX reakcje/hyd-nh4cl@@*/
+ /*@@GFX reakcje/hyd-cuso4@@*/
 })();
 return{version:'1.7',electro:ELX,ions:IONX,phys:C.PHYS,rx,colors,fromReaction,canvasDraw,trigger,optionsPanel,presets:PRESETS,flameColors:FLAME_COLORS,flameNames:FLAME_NAMES,metals:METALS,
  effects:{register:effect,get:id=>E[id]||null,list:()=>Object.keys(E),options:id=>E[id]?{label:E[id].label||id,defaults:E[id].defaults||{},schema:E[id].schema||{},free:!!E[id].free,oneShot:!!E[id].oneShot,evented:!!E[id].evented}:null},

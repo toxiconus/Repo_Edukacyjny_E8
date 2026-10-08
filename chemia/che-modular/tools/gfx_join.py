@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """gfx_join.py — składa moduł GFX/VIEW ze szkieletu i plików per element.
 
-Jako biblioteka:  join(mod, allow=None) -> str
+Jako biblioteka:  join(mod, allow=None, przedmiot="chemia") -> str
   allow: None = wszystko (bajt w bajt = oryginał), albo dict {rodzaj: set(id)};
   rodzaj spoza dict jest brany w całości. Element pominięty → /* GFX-PACK drop rodzaj/id */.
+  Plik elementu: <przedmiot>/<rodzaj>/<id>.js → wspolne/… → dowolny inny przedmiot.
+  Ten sam id w kilku przedmiotach = wariant przedmiotowy (np. inna zlewka w biologii).
 Jako test:  python3 tools/gfx_join.py   → sprawdza sha1 pełnego złożenia z catalog.json.
 """
 import hashlib, json, re, sys
@@ -18,14 +20,25 @@ def _id(file_id: str) -> str:
     return file_id.split("__")[0]
 
 
-def join(mod: str, allow: dict | None = None) -> str:
+def find(kind: str, fid: str, przedmiot: str = "chemia") -> Path:
+    for subj in (przedmiot, "wspolne"):
+        p = GFX / subj / kind / f"{fid}.js"
+        if p.exists():
+            return p
+    hits = sorted(GFX.glob(f"*/{kind}/{fid}.js"))
+    if not hits:
+        raise FileNotFoundError(f"{kind}/{fid}")
+    return hits[0]
+
+
+def join(mod: str, allow: dict | None = None, przedmiot: str = "chemia") -> str:
     skel = (GFX / "_szkielet" / f"{mod}.js").read_text(encoding="utf-8")
 
     def rep(m):
         kind, fid = m.group(1), m.group(2)
         if allow is not None and kind in allow and _id(fid) not in allow[kind]:
             return f"/* GFX-PACK drop {kind}/{fid} */"
-        return (GFX / kind / f"{fid}.js").read_text(encoding="utf-8")
+        return find(kind, fid, przedmiot).read_text(encoding="utf-8")
 
     return MARK.sub(rep, skel)
 

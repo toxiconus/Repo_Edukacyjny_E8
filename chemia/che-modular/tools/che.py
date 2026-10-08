@@ -7,7 +7,8 @@
   python3 tools/che.py build KOD [--zintegrowana]   MD → HTML (samodzielny / zintegrowany z silnikiem)
   python3 tools/che.py pack KOD|--all     mały HTML offline z potrzebnymi modułami
   python3 tools/che.py test               wszystkie testy (kompletność GFX, …) — wypisuje tylko błędy
-  python3 tools/che.py gfx                lista elementów GFX/VIEW (rodzaj: liczba, KB)
+  python3 tools/che.py gfx                lista elementów GFX/VIEW (przedmiot/rodzaj: liczba, KB)
+  python3 tools/che.py katalog            generuje engine/src/gfx/KATALOG.md (id ↔ nazwa PL ↔ plik)
 """
 import json, shutil, subprocess, sys
 from pathlib import Path
@@ -50,10 +51,37 @@ def gfx():
     agg = {}
     for items in idx.values():
         for it in items:
-            n, b = agg.get(it["kind"], (0, 0))
-            agg[it["kind"]] = (n + 1, b + it["bytes"])
+            k = it["subject"] + "/" + it["kind"]
+            n, b = agg.get(k, (0, 0))
+            agg[k] = (n + 1, b + it["bytes"])
     for k, (n, b) in sorted(agg.items()):
-        print(f"{k:8} {n:3}  {b/1024:6.1f} KB")
+        print(f"{k:18} {n:3}  {b/1024:6.1f} KB")
+
+
+def katalog():
+    import re
+    idx = json.loads((ROOT / "engine/src/gfx/index.json").read_text(encoding="utf-8"))
+    reg = {}
+    for f, kind in (("vessels.json", "naczynia"), ("effects.json", "efekty"), ("scenes.json", "sceny")):
+        d = json.loads((ROOT / "engine/registry/assets" / f).read_text(encoding="utf-8"))
+        reg[kind] = d.get("items") or d.get("scenes") or {}
+    rows = {}
+    for items in idx.values():
+        for it in items:
+            r = reg.get(it["kind"], {}).get(it["id"], {})
+            name = r.get("title", "")
+            if not name:
+                head = (ROOT / "engine/src/gfx" / it["file"]).read_text(encoding="utf-8")[:400]
+                m = re.search(r"\b(?:title|n):'([^']{1,90})", head)
+                name = m.group(1) if m else ""
+            rows.setdefault((it["subject"], it["kind"]), []).append((it["id"], name, r.get("design", "")))
+    out = ["# KATALOG GFX — wygenerowany (`python3 tools/che.py katalog`), nie edytować", "",
+           "Id w MD/HTML/kodzie jest angielskie (jak w silniku); nazwa PL z rejestru. Plik: `engine/src/gfx/<przedmiot>/<rodzaj>/<id>.js`.", ""]
+    for (subj, kind) in sorted(rows):
+        out += [f"## {subj} / {kind} ({len(rows[(subj, kind)])})", "", "| id | nazwa | opis |", "|---|---|---|"]
+        out += [f"| `{i}` | {n} | {d} |" for i, n, d in sorted(rows[(subj, kind)])] + [""]
+    (ROOT / "engine/src/gfx/KATALOG.md").write_text("\n".join(out), encoding="utf-8")
+    print("→ engine/src/gfx/KATALOG.md", sum(len(v) for v in rows.values()), "pozycji")
 
 
 def main(a):
@@ -69,6 +97,7 @@ def main(a):
     elif c == "pack": run(sys.executable, str(T / "pack_lesson.py"), *rest)
     elif c == "test": test()
     elif c == "gfx": gfx()
+    elif c == "katalog": katalog()
     else: sys.exit(f"nieznane: {c}\n{__doc__}")
 
 

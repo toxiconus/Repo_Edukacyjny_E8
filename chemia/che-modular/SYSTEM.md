@@ -78,14 +78,24 @@ Decyzja: kanonem jest dialekt, w którym napisano 6 lekcji (560 KB). Makra `$…
 - Zasady treści (jeden temat = jedno miejsce, wiedzy nie ubywa, plakietki poziomów, bez emoji): `../archiwum/che_v0_59/STANDARD_LEKCJI.md` — obowiązują dalej.
 - `lessons-md/_prototyp_zip/` i `lessons-md/N01/` (4,8 KB) — prototyp `$`-makr, tylko do testów buildera.
 
-## 5. GFX i widoki — podział per element
+## 5. GFX i widoki — podział per przedmiot i element
 
-`tools/gfx_split.mjs` (parser acorn) wyciąga każdą instrukcję rejestracji do osobnego pliku: **42 naczynia, 31 efektów, 9 scen, 60 presetów rx, 33 widoki**. `gfx_join.py` składa z powrotem: pełne złożenie = oryginał bajt w bajt (sha1 z `catalog.json`), złożenie z allow-listą zawsze składniowo poprawne (całe instrukcje, nie wycinanie tekstu).
+```
+engine/src/gfx/
+  _szkielet/            wspólny kod rysowania (markery /*@@GFX rodzaj/id@@*/)
+  wspolne/<rodzaj>/     elementy kilku przedmiotów (scena, etykieta, skala, iskry…)
+  chemia/<rodzaj>/      naczynia 34 · efekty 25 · sceny 9 · reakcje 60 · widoki 27
+  fizyka/<rodzaj>/      naczynia 6 (elektroskop…) · efekty 1 · widoki 5
+  biologia/ matematyka/ geografia/ …   (powstają z pierwszym elementem)
+  index.json · KATALOG.md (id ↔ nazwa PL ↔ opis; `che.py katalog`)
+```
+Rodzaje: `naczynia`, `efekty`, `sceny`, `reakcje` (presety rx), `widoki` (modele `@model`).
 
-- Ulepszenie naczynia/efektu/widoku = edycja jednego pliku `engine/src/gfx/<rodzaj>/<id>.js`.
-- Nowy element = nowy plik + marker w szkielecie (lub plik w `engine/src/gfx/ext/`, K6) + wpis w `engine/registry/assets/*.json` (grupa, `design`).
-- Lekcja dostaje elementy z rejestru (`vesselGroups`, `effectGroups`, `scenes`, `visuals`) → packer woła `join(mod, allow)`.
-- Uwaga: elementy to tylko ~0,19 MB (widoki 125 KB, efekty 26, sceny 16, rx 11, naczynia 8), wspólny szkielet ~0,5 MB. Podział służy edycji i bezpiecznemu filtrowaniu; oszczędność wagi jest głównie w danych (K7) i w szkielecie (rysowanie wspólne — dzielić dopiero, gdy pomiar pokaże sens).
+- **Przydział:** z grup rejestru (`engine/registry/assets`, pole `subjects`). Element kilku przedmiotów → `wspolne/`. Przeniesienie pliku = zmiana przydziału, kod się nie zmienia.
+- **Warianty przedmiotowe:** ten sam id może mieć osobny plik w kilku przedmiotach (np. `biologia/naczynia/beaker.js` z inną skalą/opisem). Build lekcji bierze: przedmiot lekcji → `wspolne/` → inny.
+- **Bezstratność:** `che.py test` — pełne złożenie = oryginał bajt w bajt; złożenie z allow-listą zawsze poprawne składniowo (całe instrukcje).
+- **Nowy / ulepszony element:** plik `<przedmiot>/<rodzaj>/<id>.js` + wpis w `engine/registry/assets/*.json` (`title`, `aliases`, `design`, grupa z `subjects`) + `che.py katalog`.
+- Waga: elementy ~0,19 MB, szkielet ~0,5 MB — oszczędność głównie w danych (K7).
 
 ## 6. Dwa wyjścia z jednego MD
 
@@ -102,3 +112,30 @@ Decyzja: kanonem jest dialekt, w którym napisano 6 lekcji (560 KB). Makra `$…
 | Nowy przedmiot | `subjects.json` + `domains.json` |
 | Nowe naczynie/efekt/scena | `assets/vessels|effects|scenes.json` + plik w `engine/src/gfx/` |
 | Nowa tablica danych | `tables/index.json` + dane w domenie |
+
+## 8. Słownik i nazewnictwo (MD ↔ HTML ↔ silnik)
+
+| Pojęcie | MD | HTML / klasa | Uwagi |
+|---|---|---|---|
+| H1 tytuł lekcji | frontmatter `tytul` | `.hero h1`, header shell | jeden na lekcję |
+| H2 sekcja | `## 4 \| Tytuł [[basic:E8]] {#id}` | `<section id> .part-heading .part-num` | numer ciągły 1..n, dodatki A, B; `{#id}` = TOC |
+| H3–H5 | `###` … `#####` `{#id .klasa}` | `h3`–`h5` | |
+| plakietka poziomu | `[[basic:E8]]` | `.level-badge.level-basic` | basic understand extra exam new |
+| karta | `::: karta typ \| Etykieta` | `.card` + `.card-tag.tag-typ` | |
+| odpowiedź | `::: odp` | `details.answer` | |
+| akademickie | `::: adv` | `details.adv` (przycisk w nagłówku) | |
+| doświadczenie | `::: dosw` | `.exp-grid` + `.che-prac-go` | |
+| klinika błędów | `::: klinika` | `.error-row .col-blad .col-ok` | |
+| fiszki | `::: fiszki` | `.flashcard .front .back` | panel/flip = klocek |
+| test | `::: test` | `.che-quiz .quiz-q .quiz-opt` | |
+| słownik | `::: slownik` | `.def-item` | |
+| równanie | `$$ …` / `Równanie::` | `.formula` | `data-rx` z rejestru reakcji |
+| model | `@model id \| przycisk \| opis` | `.che-lesson-viz-ref[data-che-lesson-viz]` | id z `KATALOG.md` → widoki |
+| pracownia GFX | `@zlewka widok rx-klucz \| przycisk` | `.che-prac-go` | klucz z `KATALOG.md` → reakcje |
+| notka | `> tekst` | `.mini-note` | |
+
+**Nazwy (ustalone, stosować w nowych rzeczach):**
+- Kody lekcji: `F00–F09` fundamenty, `N01…` chemia nieorganiczna, `FIZ01…`, `BIO…`, `MAT…`; plik `lessons-md/<KOD>/LEKCJA.md`.
+- Widoki: `<kod-lekcji-małymi>-<temat>-vNN` (np. `n05-mapa-v01`, `fiz01-coulomb-v01`). Stare id (`kw-…`, `n01-…`, `fiz-…`) zostają.
+- Elementy GFX: id angielskie camelCase jak w silniku (`beaker`, `testTube`); nazwa PL tylko w rejestrze (`title`, `aliases`). Nie zmieniamy istniejących id (zależą od nich sceny, reakcje i lekcje).
+- Katalogi i polecenia: po polsku (`naczynia`, `che.py nowa`); kod i klucze JSON — jak w silniku.

@@ -2190,15 +2190,15 @@ function btn(bar,txt,fn){var b=el('button',null,txt);b.type='button';b.onclick=f
 var g0=G();
 if(g0&&g0.scenes)g0.scenes.list().forEach(function(id){var D=g0.scenes.get(id);V.define('gfx-scene-'+id,{title:D.label,tag:'GFX',hint:D.desc||'',foot:'Silnik CHE.LAB.GFX · zestaw „'+id+'” · ten sam w bibliotece i lekcji',build:function(host){host.innerHTML='';G().scene(host,id)}})});
  
-/*@@GFX views/kw-szereg-metali-v01@@*/
+/*@@GFX widoki/kw-szereg-metali-v01@@*/
  
 function rxCards(host,keys,height){var g=G(),grid=el('div');grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:10px';host.appendChild(grid);
  keys.forEach(function(k){var I=g.rx.info(k);if(!I)return;var c=el('div');c.style.cssText='border:1px solid var(--border,#d5dee6);border-radius:12px;padding:8px;min-width:0';c.appendChild(el('b',null,I.name));grid.appendChild(c);
   var m=g.rx.mount(c,k,{height:height||210,dur:6,auto:true});var bar=el('div','r');bar.style.marginTop='6px';c.appendChild(bar);btn(bar,'▶ powtórz',function(){m.play()});
   c.appendChild(el('div','note','<b>'+I.eq+'</b><br>'+(I.why||I.obs)+(I.teacher?'<br><b>Tylko pokaz nauczyciela.</b>':'')))})}
-/*@@GFX views/kw-wlasciwosci-v01@@*/
+/*@@GFX widoki/kw-wlasciwosci-v01@@*/
  
-/*@@GFX views/kw-doswiadczenia-v01@@*/
+/*@@GFX widoki/kw-doswiadczenia-v01@@*/
 })();
 
 ;
@@ -2209,7 +2209,7 @@ var el=function(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=
 var METAL={Mg:{M:24.305,Ea:30,base:3.0,col:'metal-mg',rx:'mgHcl'},Zn:{M:65.38,Ea:45,base:1.0,col:'metal-zn',rx:'znHcl'},Fe:{M:55.845,Ea:55,base:.3,col:'metal-fe',rx:'feHcl'}};
 var FORM={granulka:{S:1,shape:'granule',n:'granulki'},wiorki:{S:3,shape:'chips',n:'wiórki'},proszek:{S:8,shape:'powder',n:'proszek'}};
 var R=8.314,COLS=['#2563eb','#dc2626','#16a34a','#9333ea'];
-/*@@GFX views/kinetics-v01@@*/
+/*@@GFX widoki/kinetics-v01@@*/
 })();
 
 ;
@@ -2217,7 +2217,7 @@ var R=8.314,COLS=['#2563eb','#dc2626','#16a34a','#9333ea'];
 (function(){
 var C=window.CHE,V=C&&C.VIEW;if(!V||!V.define)return;
 var el=function(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
-/*@@GFX views/acid-rain-v01@@*/
+/*@@GFX widoki/acid-rain-v01@@*/
 })();
 
 ; 
@@ -2233,9 +2233,9 @@ function eqView(host,first){host.innerHTML='';var R=C.DATA.REACTIONS||{},RD=C.DA
  TYPES.forEach(function(t){var ks=Object.keys(R).filter(function(k){var J=RD[k]&&RD[k].type===t[0]&&!R[k].aliasOf?C.IONIC.equations(k):null;return J&&J.ionic});if(!ks.length)return;var r=el('div','r','<b style="min-width:120px">'+t[1]+':</b> ');ks.forEach(function(k){var b=el('button',null,C.IONIC.equations(k).molecular.split('→')[0].trim());b.type='button';b.dataset.k=k;b.onclick=function(){cur=k;show()};r.appendChild(b)});bar.appendChild(r)});
  function show(){[].forEach.call(bar.querySelectorAll('button'),function(b){b.classList.toggle('on',b.dataset.k===cur)});eqCard(area,cur);gfx.innerHTML='';var G=C.LAB&&C.LAB.GFX;if(G&&G.rx){var key=G.rx.list(function(s){return (s.rxKey||s.key)===cur})[0]||(G.rx.get(cur)?cur:null);if(key){m=G.rx.mount(gfx,key,{height:220,dur:5,auto:true})}}}
  show()}
-/*@@GFX views/neutralization@@*/
-/*@@GFX views/rownania-jonowe-v01@@*/
-/*@@GFX views/tabela-rozpuszczalnosci-v01@@*/
+/*@@GFX widoki/neutralization@@*/
+/*@@GFX widoki/rownania-jonowe-v01@@*/
+/*@@GFX widoki/tabela-rozpuszczalnosci-v01@@*/
 })();
 
 ; 
@@ -2251,7 +2251,7 @@ function card(host,k){var G=C.LAB.GFX,I=G.rx.info(k),sp=G.rx.get(k);if(!I)return
  var l=el('div'),r=el('div');c.append(l,r);var m=G.rx.mount(l,k,{height:260,dur:6,auto:true});var bar=el('div','r');l.appendChild(bar);var b=el('button',null,'▶ powtórz');b.type='button';b.onclick=function(){m.play()};bar.appendChild(b);
  var key=sp.rxKey||k,NOION={cuso4Hydrate:1,caoH2o:1},J=!NOION[key]&&C.IONIC&&C.REACTION.get(key)?C.IONIC.equations(key):null;if(J&&J.ionic===false)J=null;
  r.innerHTML='<p style="font:700 16px Inter,system-ui">'+(J?J.molecular:I.eq)+'</p>'+(J?'<p><b>Jonowo pełne:</b> '+J.full+'</p><p><b>Jonowo skrócone:</b> '+J.net+'</p><p><b>Obserwatory:</b> '+(J.spectators.join(', ')||'—')+'</p>':'')+'<div class="note"><b>Obserwacja:</b> '+(I.obs||I.why)+(I.safety?'<br><b>BHP:</b> '+I.safety:'')+'<br><small>źródło: '+I.src+(sp.rxKey?' · '+sp.rxKey:'')+'</small></div>'}
-/*@@GFX views/sole-doswiadczenia-v01@@*/
+/*@@GFX widoki/sole-doswiadczenia-v01@@*/
 })();
 
 ;
@@ -2267,7 +2267,7 @@ function model(acid,c){var A=(C.DATA.ACID_SYSTEMS||{})[acid]||{},K=(A.Ka||[]).ma
  if(K[0]===Infinity||A.strong){a1=1}else{var k=K[0];a1=(-k+Math.sqrt(k*k+4*k*c))/(2*c)}h=a1*c;var a2=0;
  if(CH[acid].length>2&&K[1]&&isFinite(K[1])){var k2=K[1],x=(-(h+k2)+Math.sqrt((h+k2)*(h+k2)+4*k2*h))/2;a2=Math.max(0,x/h);h+=x}
  return{a1:a1,a2:a2,h:h,pH:-Math.log10(h),pKa:A.pKa||[],strong:!!(A.strong||A.strongFirst)}}
-/*@@GFX views/kw-dysocjacja-v01@@*/
+/*@@GFX widoki/kw-dysocjacja-v01@@*/
 })();
 
 ; 
@@ -2276,11 +2276,11 @@ var C=window.CHE,V=C&&C.VIEW;if(!V||!V.define)return;
 var el=function(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
 var SUB='₀₁₂₃₄₅₆₇₈₉',pf=function(s){return String(s).replace(/([A-Za-z\)])(\d+)/g,function(m,a,n){return a+n.replace(/\d/g,function(d){return SUB[d]})})};
  
-/*@@GFX views/kw-bufor-v01@@*/
+/*@@GFX widoki/kw-bufor-v01@@*/
  
 var RM={HCl:'Cl',HBr:'Br',HI:'I',HF:'F',HNO3:'NO3',H2SO4:'SO4',H2SO3:'SO3',H2CO3:'CO3',H3PO4:'PO4',H2S:'S',CH3COOH:'CH3COO'};
 var CATS=['Na','K','NH4','Mg','Ca','Ba','Al','Zn','Fe2','Fe3','Cu','Ag','Pb'];
-/*@@GFX views/kw-reszty-v01@@*/
+/*@@GFX widoki/kw-reszty-v01@@*/
 })();
 
 ;
@@ -2302,15 +2302,15 @@ function fmt(v,d){if(Math.abs(v)<Math.pow(10,-(d==null?2:d))/2)v=0;return String
 function sci(v){if(v===0)return '0';var e=Math.floor(Math.log10(Math.abs(v))),m=v/Math.pow(10,e);if(e>=-2&&e<=3)return fmt(v,e<0?3:2);var S={'-':'⁻','0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹'};return fmt(m,2)+'·10'+String(e).split('').map(function(c){return S[c]}).join('')}
 var MATCOL={skora:'#e0b089',futro:'#a16207',szklo:'#bae6fd',wlosy:'#78350f',nylon:'#e5e7eb',welna:'#9ca3af',jedwab:'#fde68a',aluminium:'#cbd5e1',papier:'#f8fafc',bawelna:'#f1f5f9',stal:'#94a3b8',drewno:'#b45309',bursztyn:'#f59e0b',ebonit:'#1f2937',miedz:'#c2703d',poliester:'#a5b4fc',styropian:'#f8fafc',pe:'#e2e8f0',balon:'#ef4444',pvc:'#64748b',teflon:'#f5f5f4'};
 
-/*@@GFX views/fiz-elektryzowanie-v01@@*/
+/*@@GFX widoki/fiz-elektryzowanie-v01@@*/
 
-/*@@GFX views/fiz-elektroskop-v01@@*/
+/*@@GFX widoki/fiz-elektroskop-v01@@*/
 
-/*@@GFX views/fiz-coulomb-v01@@*/
+/*@@GFX widoki/fiz-coulomb-v01@@*/
 
-/*@@GFX views/fiz-przewodniki-v01@@*/
+/*@@GFX widoki/fiz-przewodniki-v01@@*/
 
-/*@@GFX views/fiz-ladunek-v01@@*/
+/*@@GFX widoki/fiz-ladunek-v01@@*/
 })();
 
 ;
@@ -2330,19 +2330,19 @@ var PHW={Li2O:13,Na2O:13,K2O:13,BaO:12.8,CaO:12.4,MgO:10.3,SO3:1,SO2:2.3,CO2:5.6
 function phAfter(f){return PHW[f]!=null?PHW[f]:7}
 function uni(p){try{return G().colors.at('ind-uniwersalny',Math.max(0,Math.min(14,p)))||[210,230,240]}catch(_){return[210,230,240]}}
 
-/*@@GFX views/n01-tlenki-v01@@*/
+/*@@GFX widoki/n01-tlenki-v01@@*/
 
-/*@@GFX views/n01-konstruktor-v01@@*/
+/*@@GFX widoki/n01-konstruktor-v01@@*/
 
 var CATCOL={Cu:[96,150,220],Fe:[205,160,70],Cr:[110,170,110],Mn:[235,205,215],Ni:[140,200,140]};
-/*@@GFX views/n01-reaktor-v01@@*/
+/*@@GFX widoki/n01-reaktor-v01@@*/
 
-/*@@GFX views/n01-trend-v01@@*/
+/*@@GFX widoki/n01-trend-v01@@*/
 
 var BURN={Mg:{rx:'mgO2',fx:'metal',metal:'Mg',prod:'MgO'},Fe:{rx:'feO2',fx:'metal',metal:'Fe',prod:'Fe3O4'},Na:{rx:'naO2',fx:'metal',metal:'Na',prod:'Na2O'},Cu:{rx:'cuO2',fx:'metal',metal:'Cu',prod:'CuO'},
  S:{rx:'sO2',fx:'flame',color:[70,100,255],prod:'SO2'},P:{rx:'pO2',fx:'flame',color:[255,250,235],smoke:1,prod:'P2O5'},H2:{rx:'h2O2',fx:'flame',fuel:'H2',prod:'H2O'},
  C:{rx:'cO2',inc:'cO2Inc',fx:'flame',color:[255,140,60],prod:'CO2',o2:1},CH4:{rx:'ch4O2',inc:'ch4O2Inc',soot:'ch4O2Soot',fx:'flame',fuel:'CH4',prod:'CO2',o2:1}};
-/*@@GFX views/n01-spalanie-v01@@*/
+/*@@GFX widoki/n01-spalanie-v01@@*/
 })();
 
 ; 
@@ -2351,7 +2351,7 @@ var C=window.CHE,V=C&&C.VIEW;if(!V||!V.define)return;
 var el=function(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
 var SUB='₀₁₂₃₄₅₆₇₈₉',pf=function(s){return String(s).replace(/\d/g,function(d){return SUB[d]})},fm=function(v,d){return isFinite(v)?(Math.round(v*Math.pow(10,d))/Math.pow(10,d)).toString().replace('.',','):'—'};
 var GROUPS=[['tlenki (N01)',/O2$|O2Inc|H2o$|Decomp|O2Soot|cuoH2|cuoC|fe2o3|termit|Naoh|Hcl|H2so4|caoCo2|na2oCo2/],['wszystkie',/.*/]];
-/*@@GFX views/stech-kalkulator-v01@@*/
+/*@@GFX widoki/stech-kalkulator-v01@@*/
 })();
 
 ;
@@ -2384,9 +2384,9 @@ function modelSVG(r,n,mode){var W=420,H=Math.max(150,60+n*44),cx=70,cy=H/2,M=r.m
  else{s+='<circle cx="'+cx+'" cy="'+cy+'" r="28" fill="#94a3b8"/>'+txt(cx,cy,r.cation,15,'#fff');for(var k=0;k<n;k++){var x2=170+(k%4)*58,y2=n<=4?cy:cy-24+Math.floor(k/4)*48;s+='<circle cx="'+x2+'" cy="'+y2+'" r="21" fill="#2563eb"/>'+txt(x2,y2,'OH⁻',13,'#fff')}
   var sum=r.q-n;s+=txt(W/2,H-14,'(+'+r.q+') + '+n+'·(−1) = '+(sum>0?'+':'')+sum+(sum===0?'  ✓ obojętny':'  ✗'),13,sum===0?'#16a34a':'#dc2626',800)}
  return s+'</svg>'}
-/*@@GFX views/n02-wzory-v01@@*/
+/*@@GFX widoki/n02-wzory-v01@@*/
 
-/*@@GFX views/n02-przeglad-v01@@*/
+/*@@GFX widoki/n02-przeglad-v01@@*/
 
 var MTYPES=[['tlenek zasadowy + woda','1. tlenek + woda'],['metal + woda','2. metal aktywny + woda'],['strącanie wodorotlenku','3. sól + zasada (strącanie)']];
 function rxOfType(t){var RD=D().REACTION_DATA||{},R=D().REACTIONS||{},H=HY();return Object.keys(RD).filter(function(k){if(!R[k])return false;var ty=RD[k].type;if(ty===t)return R[k].products.some(function(p){return H.get(p.formula)||p.formula==='Ag2O'});if(t==='metal + woda'&&k==='naH2o')return true;if(t==='strącanie wodorotlenku'&&/^(cuso4Naoh|fecl3Naoh)$/.test(k))return true;return false})}
@@ -2394,15 +2394,15 @@ function specFor(k){var g=G();if(!g||!g.rx)return null;if(g.rx.get(k))return k;v
 function beaker(box,k,h){box.innerHTML='';var g=G();k=specFor(k)||k;if(!g||!g.rx||!g.rx.get(k)){box.innerHTML='<div class="note">Brak animacji dla tej reakcji — opis i równanie poniżej.</div>';return null}var m=g.rx.mount(box,k,{height:h||240,dur:6,auto:true});var b=el('div','r');var x=btn(b,'▶ powtórz',function(){m.play()});box.appendChild(b);return m}
 function rxCard(k){var H=HY(),d=(D().REACTION_DATA||{})[k]||{},J=null;try{J=C.IONIC&&C.IONIC.equations(k)}catch(_){}
  return eqHtml(H.eq(k))+(J&&J.ionic&&J.net?'<div><b>Jonowo skrócone:</b> '+J.net+'</div>':'')+'<div class="note" style="margin-top:6px"><b>Warunki:</b> '+(d.conditions||'—')+'<br><b>Obserwacja:</b> '+(d.observation||'—')+(d.safety&&d.safety.length?'<br><b>BHP:</b> '+d.safety.join(' '):'')+(d.note?'<br><small>'+d.note+'</small>':'')+'<br><small>poziom: '+(d.level||'E8')+' · klucz silnika: '+k+'</small></div>'}
-/*@@GFX views/n02-otrzymywanie-v01@@*/
+/*@@GFX widoki/n02-otrzymywanie-v01@@*/
 
-/*@@GFX views/n02-stracanie-v01@@*/
+/*@@GFX widoki/n02-stracanie-v01@@*/
 
-/*@@GFX views/n02-zobojetnianie-v01@@*/
+/*@@GFX widoki/n02-zobojetnianie-v01@@*/
 
-/*@@GFX views/n02-dysocjacja-v01@@*/
+/*@@GFX widoki/n02-dysocjacja-v01@@*/
 
-/*@@GFX views/n02-reaktor-v01@@*/
+/*@@GFX widoki/n02-reaktor-v01@@*/
 })();
 
 ;
@@ -2435,8 +2435,8 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
  P.pending=k;var ref=doc.querySelector('.che-lesson-viz-slot[data-che-lesson-viz="'+id+'"]')||doc.querySelector('[data-che-lesson-viz="'+id+'"]');if(!ref)return;ref.scrollIntoView({behavior:'auto',block:'center'});var t=ref.querySelector('button[data-che-open-viz]');if(t)t.click();
  var n=0,iv=setInterval(function(){var hh=(P.live||{})[id];if(hh&&hh.isConnected&&doc.contains(hh)){clearInterval(iv);if(P.pending)hh._show(P.pending);P.pending=null;hh.scrollIntoView({behavior:'smooth',block:'center'})}else if(++n>40)clearInterval(iv)},100)});
 C.PRACOWNIA={version:'1.0',define:define,card:card};
-/*@@GFX views/n01-doswiadczenia-v01@@*/
-/*@@GFX views/n02-doswiadczenia-v01@@*/
+/*@@GFX widoki/n01-doswiadczenia-v01@@*/
+/*@@GFX widoki/n02-doswiadczenia-v01@@*/
 })();
 
 ;
@@ -2466,6 +2466,6 @@ function smoke(ids,onStep,done){var res=[],i=0,stage=el('div');stage.style.cssTe
   var id=ids[i++],host=el('div');host.dataset.che=id;stage.appendChild(host);errs=[];var t0=performance.now(),ex=null;try{V.mount(host)}catch(e){ex=e.message}
   setTimeout(function(){var ms=performance.now()-t0,len=(host.textContent||'').trim().length+host.querySelectorAll('canvas,svg').length*50;res.push({id:id,ok:!ex&&!errs.length&&len>0,ms:ms,d:ex?'wyjątek: '+ex:errs.length?errs.join(' | '):len?'':'pusty widok'});host.remove();onStep(i,ids.length);next()},120)}
  next()}
-/*@@GFX views/che-test-silnika-v01@@*/
+/*@@GFX widoki/che-test-silnika-v01@@*/
 })();
 
