@@ -85,7 +85,7 @@ async function one(b, f) {
   for (let i = 0; i < np; i++) {   // każda pracownia: klik, chwila, Esc
     try {
       await p.evaluate(i => document.querySelectorAll('.che-prac-go')[i].scrollIntoView(), i);
-      await p.locator('.che-prac-go').nth(i).click({ timeout: 3000, force: true });
+      await p.evaluate(i => document.querySelectorAll('.che-prac-go')[i].click(), i);
       await p.waitForTimeout(500); await p.keyboard.press('Escape');
     } catch (e) { errs.push('pracownia ' + i + ': ' + e.message.split('\n')[0]); }
   }
@@ -106,7 +106,9 @@ async function one(b, f) {
 
 (async () => {
   const b = await pw.chromium.launch();
-  const res = await Promise.all(files.map(f => one(b, f).catch(e => ({ f, bl: ['wyjątek: ' + e.message.split('\n')[0]], stat: '' }))));
+  // limit 150 s na lekcję: zawieszona strona (np. pętla po usunięciu danych) = FAIL, nie wieczne czekanie
+  const limit = f => new Promise(r => setTimeout(() => r({ f, bl: ['zawieszenie > 150 s'], stat: '' }), 150000));
+  const res = await Promise.all(files.map(f => Promise.race([one(b, f).catch(e => ({ f, bl: ['wyjątek: ' + e.message.split('\n')[0]], stat: '' })), limit(f)])));
   let fail = 0;
   for (const x of res) {
     if (x.bl.length) { fail++; console.log('FAIL', path.basename(x.f), '—', x.bl.join('; '), '|', x.stat); }
@@ -114,5 +116,5 @@ async function one(b, f) {
   }
   if (zrzut) fs.writeFileSync(zrzut, JSON.stringify(ZR));
   console.log(fail ? fail + ' FAIL' : 'OK ' + files.length + ' lekcji');
-  await b.close(); process.exit(fail ? 1 : 0);
+  b.close().catch(() => {}); setTimeout(() => process.exit(fail ? 1 : 0), 500);
 })();

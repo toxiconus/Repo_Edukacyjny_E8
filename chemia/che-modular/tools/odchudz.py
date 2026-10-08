@@ -54,7 +54,12 @@ def test(prof, pages):
     (KAND / "che-viz.js").write_text(viz, encoding="utf-8")
     cmd = ["node", str(ROOT / "tools/test_lekcje.cjs"), "--cicho", f"--wzorzec={WZORZEC}", *[str(KAND / p) for p in pages]]
     for _ in range(2):   # FAIL bywa losowy (animacje) — drugi przebieg; fałszywe OK jest niemożliwe (brak słów)
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=900)
+        try:
+            r = subprocess.run(cmd, capture_output=True, text=True, timeout=400)
+        except subprocess.TimeoutExpired:
+            subprocess.run(["pkill", "-f", "chromium_headless_shell"], check=False)
+            r = subprocess.CompletedProcess(cmd, 1, "FAIL zawieszenie testu", "")
+            break
         if r.returncode == 0:
             break
     return r.returncode == 0, len(viz.encode("utf-8")), r.stdout.strip().splitlines()[:2]
