@@ -468,6 +468,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## narzedzia  (1 pl., 2 KB)
 - `mapa.py` 2 KB
 
+## olimpiada  (3 pl., 85 KB)
+- `MAPA_WSPOLNYCH.md` 1 KB
+- ⚠`OLIMPIADA_8_MASTER.md` 81 KB
+- `PRZEKAZANIE.md` 3 KB
+
 ## polski  (18 pl., 2.5 MB)
 - (zwinięte; `ls polski`) — duże:
 - ⚠`L001_lekcja (2).html` 174 KB
