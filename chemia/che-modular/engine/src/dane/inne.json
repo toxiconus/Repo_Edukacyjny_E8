@@ -1,0 +1,3468 @@
+{
+ "MOL3D_SETS": {
+  "N01": {
+   "keys": [
+    "CO2",
+    "SO2",
+    "SO3",
+    "H2O",
+    "CO",
+    "N2O",
+    "NO2",
+    "H2O2",
+    "CH4"
+   ],
+   "start": "CO2",
+   "geom": {
+    "SO2": "kątowa · O–S–O ≈ 119°",
+    "SO3": "trygonalna płaska · 120°",
+    "N2O": "liniowa · 180°",
+    "NO2": "kątowa · ≈ 134°",
+    "CO": "liniowa (dwuatomowa)",
+    "H2O2": "niepłaska · wiązanie O–O"
+   }
+  },
+  "N02": {
+   "keys": [
+    "H2O",
+    "H3O",
+    "NH3",
+    "CO2",
+    "H2O2"
+   ],
+   "start": "H2O"
+  }
+ },
+ "SOLUBILITY_TABLE": {
+  "version": "1.0",
+  "temperatureC": 20,
+  "legend": {
+   "R": "dobrze rozpuszczalny (> 1 g / 100 g H₂O)",
+   "T": "trudno rozpuszczalny (0,1–1 g)",
+   "N": "praktycznie nierozpuszczalny (< 0,1 g)",
+   "—": "nie istnieje w roztworze wodnym / rozkłada się"
+  },
+  "cations": [
+   {
+    "id": "Na",
+    "ion": "Na⁺"
+   },
+   {
+    "id": "K",
+    "ion": "K⁺"
+   },
+   {
+    "id": "NH4",
+    "ion": "NH₄⁺"
+   },
+   {
+    "id": "Mg",
+    "ion": "Mg²⁺"
+   },
+   {
+    "id": "Ca",
+    "ion": "Ca²⁺"
+   },
+   {
+    "id": "Ba",
+    "ion": "Ba²⁺"
+   },
+   {
+    "id": "Al",
+    "ion": "Al³⁺"
+   },
+   {
+    "id": "Zn",
+    "ion": "Zn²⁺"
+   },
+   {
+    "id": "Mn",
+    "ion": "Mn²⁺"
+   },
+   {
+    "id": "Fe2",
+    "ion": "Fe²⁺"
+   },
+   {
+    "id": "Fe3",
+    "ion": "Fe³⁺"
+   },
+   {
+    "id": "Ni",
+    "ion": "Ni²⁺"
+   },
+   {
+    "id": "Cu",
+    "ion": "Cu²⁺"
+   },
+   {
+    "id": "Ag",
+    "ion": "Ag⁺"
+   },
+   {
+    "id": "Pb",
+    "ion": "Pb²⁺"
+   },
+   {
+    "id": "Sn",
+    "ion": "Sn²⁺"
+   }
+  ],
+  "anions": [
+   {
+    "id": "OH",
+    "ion": "OH⁻",
+    "name": "wodorotlenek"
+   },
+   {
+    "id": "Cl",
+    "ion": "Cl⁻",
+    "name": "chlorek"
+   },
+   {
+    "id": "Br",
+    "ion": "Br⁻",
+    "name": "bromek"
+   },
+   {
+    "id": "I",
+    "ion": "I⁻",
+    "name": "jodek"
+   },
+   {
+    "id": "NO3",
+    "ion": "NO₃⁻",
+    "name": "azotan(V)"
+   },
+   {
+    "id": "CH3COO",
+    "ion": "CH₃COO⁻",
+    "name": "octan"
+   },
+   {
+    "id": "SO4",
+    "ion": "SO₄²⁻",
+    "name": "siarczan(VI)"
+   },
+   {
+    "id": "SO3",
+    "ion": "SO₃²⁻",
+    "name": "siarczan(IV)"
+   },
+   {
+    "id": "CO3",
+    "ion": "CO₃²⁻",
+    "name": "węglan"
+   },
+   {
+    "id": "PO4",
+    "ion": "PO₄³⁻",
+    "name": "fosforan(V)"
+   },
+   {
+    "id": "S",
+    "ion": "S²⁻",
+    "name": "siarczek"
+   },
+   {
+    "id": "SiO3",
+    "ion": "SiO₃²⁻",
+    "name": "krzemian"
+   },
+   {
+    "id": "F",
+    "ion": "F⁻",
+    "name": "fluorek"
+   },
+   {
+    "id": "HCO3",
+    "ion": "HCO₃⁻",
+    "name": "wodorowęglan"
+   }
+  ],
+  "table": {
+   "OH": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "N",
+    "Ca": "T",
+    "Ba": "R",
+    "Al": "N",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "N",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "—",
+    "Pb": "N",
+    "Sn": "N"
+   },
+   "Cl": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "N",
+    "Pb": "T",
+    "Sn": "R"
+   },
+   "Br": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "N",
+    "Pb": "T",
+    "Sn": "R"
+   },
+   "I": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "—",
+    "Ni": "R",
+    "Cu": "—",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "R"
+   },
+   "NO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "R",
+    "Pb": "R",
+    "Sn": "—"
+   },
+   "CH3COO": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "T",
+    "Pb": "R",
+    "Sn": "—"
+   },
+   "SO4": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "T",
+    "Ba": "N",
+    "Al": "R",
+    "Zn": "R",
+    "Mn": "R",
+    "Fe2": "R",
+    "Fe3": "R",
+    "Ni": "R",
+    "Cu": "R",
+    "Ag": "T",
+    "Pb": "N",
+    "Sn": "R"
+   },
+   "SO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "T",
+    "Ca": "N",
+    "Ba": "N",
+    "Al": "—",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "—",
+    "Ni": "N",
+    "Cu": "—",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "—"
+   },
+   "CO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "N",
+    "Ca": "N",
+    "Ba": "N",
+    "Al": "—",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "—",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "—"
+   },
+   "PO4": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "N",
+    "Ca": "N",
+    "Ba": "N",
+    "Al": "N",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "N",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "N"
+   },
+   "S": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "—",
+    "Ca": "—",
+    "Ba": "R",
+    "Al": "—",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "—",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "N"
+   },
+   "SiO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "—",
+    "Mg": "N",
+    "Ca": "N",
+    "Ba": "N",
+    "Al": "N",
+    "Zn": "N",
+    "Mn": "N",
+    "Fe2": "N",
+    "Fe3": "—",
+    "Ni": "N",
+    "Cu": "N",
+    "Ag": "N",
+    "Pb": "N",
+    "Sn": "—"
+   },
+   "F": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "N",
+    "Ca": "N",
+    "Ba": "T",
+    "Al": "T",
+    "Zn": "T",
+    "Mn": "T",
+    "Fe2": "T",
+    "Fe3": "T",
+    "Ni": "T",
+    "Cu": "T",
+    "Ag": "R",
+    "Pb": "T",
+    "Sn": "R"
+   },
+   "HCO3": {
+    "Na": "R",
+    "K": "R",
+    "NH4": "R",
+    "Mg": "R",
+    "Ca": "R",
+    "Ba": "R",
+    "Al": "—",
+    "Zn": "—",
+    "Mn": "—",
+    "Fe2": "R",
+    "Fe3": "—",
+    "Ni": "—",
+    "Cu": "—",
+    "Ag": "—",
+    "Pb": "—",
+    "Sn": "—"
+   }
+  },
+  "source": "szkolna tabela rozpuszczalności (20 °C) — dane edukacyjne; F⁻ i SiO₃²⁻ orientacyjnie",
+  "status": "EDUCATIONAL"
+ },
+ "OXIDES": {
+  "Li2O": {
+   "f": "Li2O",
+   "name": "tlenek litu",
+   "el": "Li",
+   "ox": 1,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": "li2oH2o",
+    "text": "reaguje → LiOH"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak (sól + woda)"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały",
+   "state": "s",
+   "level": "AMB",
+   "notes": []
+  },
+  "Na2O": {
+   "f": "Na2O",
+   "name": "tlenek sodu",
+   "el": "Na",
+   "ox": 1,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": "na2oH2o",
+    "text": "reaguje → NaOH"
+   },
+   "acid": {
+    "rx": "na2oHno3",
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały",
+   "state": "s",
+   "level": "E8",
+   "notes": []
+  },
+  "K2O": {
+   "f": "K2O",
+   "name": "tlenek potasu",
+   "el": "K",
+   "ox": 1,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": "k2oH2o",
+    "text": "reaguje → KOH"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały / jasnożółty",
+   "state": "s",
+   "level": "E8",
+   "notes": []
+  },
+  "MgO": {
+   "f": "MgO",
+   "name": "tlenek magnezu",
+   "el": "Mg",
+   "ox": 2,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": "mgoH2o",
+    "text": "powoli i w niewielkim stopniu — Mg(OH)₂ trudno rozpuszczalny (fenoloftaleina słabo różowa)"
+   },
+   "acid": {
+    "rx": "mgoHcl",
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#f1f5f9",
+   "colorName": "biały",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "zasadowy ≠ „musi reagować z wodą”"
+   ]
+  },
+  "CaO": {
+   "f": "CaO",
+   "name": "tlenek wapnia (wapno palone)",
+   "el": "Ca",
+   "ox": 2,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": "caoH2o",
+    "text": "reaguje gwałtownie, egzotermicznie → Ca(OH)₂"
+   },
+   "acid": {
+    "rx": "caoHcl",
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#e2e8f0",
+   "colorName": "biały",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "gaszenie wapna — silnie egzotermiczne"
+   ]
+  },
+  "BeO": {
+   "f": "BeO",
+   "name": "tlenek berylu",
+   "el": "Be",
+   "ox": 2,
+   "char": "amfoteryczny",
+   "bond": "jonowo-kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak (mocne zasady)"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały",
+   "state": "s",
+   "level": "AMB",
+   "notes": [
+    "Li₂O — zasadowy, BeO — amfoteryczny: nie łączyć w jeden opis"
+   ]
+  },
+  "Al2O3": {
+   "f": "Al2O3",
+   "name": "tlenek glinu",
+   "el": "Al",
+   "ox": 3,
+   "char": "amfoteryczny",
+   "bond": "jonowy (sieć)",
+   "water": {
+    "rx": null,
+    "text": "praktycznie nie"
+   },
+   "acid": {
+    "rx": "al2o3Hcl",
+    "text": "tak"
+   },
+   "base": {
+    "rx": "al2o3NaohAq",
+    "text": "tak — z mocnymi zasadami"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "pasywacja glinu — cienka szczelna warstwa",
+    "NaAlO₂ — zapis zależny od warunków; w roztworze [Al(OH)₄]⁻"
+   ]
+  },
+  "ZnO": {
+   "f": "ZnO",
+   "name": "tlenek cynku",
+   "el": "Zn",
+   "ox": 2,
+   "char": "amfoteryczny",
+   "bond": "jonowo-kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "praktycznie nie"
+   },
+   "acid": {
+    "rx": "znoHcl",
+    "text": "tak"
+   },
+   "base": {
+    "rx": "znoNaohAq",
+    "text": "tak — z mocnymi zasadami"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały (na gorąco żółty)",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "Na₂ZnO₂ — zapis uproszczony"
+   ]
+  },
+  "FeO": {
+   "f": "FeO",
+   "name": "tlenek żelaza(II)",
+   "el": "Fe",
+   "ox": 2,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "praktycznie nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#1f2937",
+   "colorName": "czarny",
+   "state": "s",
+   "level": "AMB",
+   "notes": []
+  },
+  "Fe2O3": {
+   "f": "Fe2O3",
+   "name": "tlenek żelaza(III)",
+   "el": "Fe",
+   "ox": 3,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "praktycznie nie"
+   },
+   "acid": {
+    "rx": "fe2o3Hcl",
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie (szkolnie)"
+   },
+   "color": "#9a3412",
+   "colorName": "czerwonobrunatny (hematyt)",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "rdza ≠ czysty Fe₂O₃ (mieszanina uwodnionych tlenków i wodorotlenków)"
+   ]
+  },
+  "Fe3O4": {
+   "f": "Fe3O4",
+   "name": "tlenek żelaza(II,III)",
+   "el": "Fe",
+   "ox": null,
+   "char": "mieszany",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#111827",
+   "colorName": "czarny (magnetyt, magnetyczny)",
+   "state": "s",
+   "level": "AMB",
+   "notes": [
+    "tlenek mieszany: FeO·Fe₂O₃ — stopień „+8/3” to średnia, nie realny stopień"
+   ]
+  },
+  "Cu2O": {
+   "f": "Cu2O",
+   "name": "tlenek miedzi(I)",
+   "el": "Cu",
+   "ox": 1,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#b91c1c",
+   "colorName": "czerwony (kupryt)",
+   "state": "s",
+   "level": "AMB",
+   "notes": []
+  },
+  "CuO": {
+   "f": "CuO",
+   "name": "tlenek miedzi(II)",
+   "el": "Cu",
+   "ox": 2,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "praktycznie nie"
+   },
+   "acid": {
+    "rx": "cuoH2so4",
+    "text": "tak — roztwór niebieski (jony Cu²⁺)"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#1e293b",
+   "colorName": "czarny",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "niebieska barwa roztworu = jony Cu²⁺, nie „cząsteczki CuSO₄”"
+   ]
+  },
+  "Ag2O": {
+   "f": "Ag2O",
+   "name": "tlenek srebra(I)",
+   "el": "Ag",
+   "ox": 1,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#3f3f46",
+   "colorName": "brunatnoczarny",
+   "state": "s",
+   "level": "ZA",
+   "notes": [
+    "rozkłada się podczas ogrzewania"
+   ]
+  },
+  "HgO": {
+   "f": "HgO",
+   "name": "tlenek rtęci(II)",
+   "el": "Hg",
+   "ox": 2,
+   "char": "zasadowy",
+   "bond": "jonowo-kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#dc2626",
+   "colorName": "czerwony lub żółty (zależnie od otrzymywania)",
+   "state": "s",
+   "level": "AMB",
+   "notes": [
+    "toksyczny; rozkład termiczny — historycznie tlen (Priestley)"
+   ]
+  },
+  "PbO": {
+   "f": "PbO",
+   "name": "tlenek ołowiu(II)",
+   "el": "Pb",
+   "ox": 2,
+   "char": "amfoteryczny",
+   "bond": "jonowo-kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#eab308",
+   "colorName": "żółty (masykot)",
+   "state": "s",
+   "level": "ZA",
+   "notes": [
+    "toksyczny"
+   ]
+  },
+  "MnO": {
+   "f": "MnO",
+   "name": "tlenek manganu(II)",
+   "el": "Mn",
+   "ox": 2,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#4d7c0f",
+   "colorName": "szarozielony",
+   "state": "s",
+   "level": "ZA",
+   "notes": [
+    "ten sam metal: MnO zasadowy → MnO₂ amfoteryczny → Mn₂O₇ kwasowy"
+   ]
+  },
+  "MnO2": {
+   "f": "MnO2",
+   "name": "tlenek manganu(IV)",
+   "el": "Mn",
+   "ox": 4,
+   "char": "amfoteryczny",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak (redoks)"
+   },
+   "base": {
+    "rx": null,
+    "text": "słabo"
+   },
+   "color": "#3f3f46",
+   "colorName": "brunatnoczarny",
+   "state": "s",
+   "level": "AMB",
+   "notes": [
+    "katalizator rozkładu H₂O₂"
+   ]
+  },
+  "CrO": {
+   "f": "CrO",
+   "name": "tlenek chromu(II)",
+   "el": "Cr",
+   "ox": 2,
+   "char": "zasadowy",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": "#111827",
+   "colorName": "czarny",
+   "state": "s",
+   "level": "ZA",
+   "notes": [
+    "ten sam metal: CrO zasadowy → Cr₂O₃ amfoteryczny → CrO₃ kwasowy"
+   ]
+  },
+  "Cr2O3": {
+   "f": "Cr2O3",
+   "name": "tlenek chromu(III)",
+   "el": "Cr",
+   "ox": 3,
+   "char": "amfoteryczny",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "tak"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#166534",
+   "colorName": "zielony (pigment)",
+   "state": "s",
+   "level": "ZA",
+   "notes": []
+  },
+  "CrO3": {
+   "f": "CrO3",
+   "name": "tlenek chromu(VI)",
+   "el": "Cr",
+   "ox": 6,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "cro3H2o",
+    "text": "reaguje → H₂CrO₄"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#b91c1c",
+   "colorName": "ciemnoczerwony",
+   "state": "s",
+   "level": "AMB",
+   "notes": [
+    "metal na wysokim stopniu utlenienia → charakter kwasowy"
+   ]
+  },
+  "Mn2O7": {
+   "f": "Mn2O7",
+   "name": "tlenek manganu(VII)",
+   "el": "Mn",
+   "ox": 7,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "mn2o7H2o",
+    "text": "reaguje → HMnO₄"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#4c1d95",
+   "colorName": "ciemnozielona oleista ciecz",
+   "state": "l",
+   "level": "AMB",
+   "notes": [
+    "metal na +VII → tlenek kwasowy"
+   ]
+  },
+  "TiO2": {
+   "f": "TiO2",
+   "name": "tlenek tytanu(IV) (biel tytanowa)",
+   "el": "Ti",
+   "ox": 4,
+   "char": "amfoteryczny",
+   "bond": "jonowy",
+   "water": {
+    "rx": null,
+    "text": "nie"
+   },
+   "acid": {
+    "rx": null,
+    "text": "bardzo słabo"
+   },
+   "base": {
+    "rx": null,
+    "text": "bardzo słabo"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały",
+   "state": "s",
+   "level": "ZA",
+   "notes": [
+    "na E8: pigment i filtr UV — NIE wzorcowy tlenek amfoteryczny (tym są Al₂O₃, ZnO)"
+   ]
+  },
+  "B2O3": {
+   "f": "B2O3",
+   "name": "tlenek boru",
+   "el": "B",
+   "ox": 3,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "reaguje powoli → H₃BO₃"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#f8fafc",
+   "colorName": "bezbarwny / biały",
+   "state": "s",
+   "level": "AMB",
+   "notes": []
+  },
+  "CO2": {
+   "f": "CO2",
+   "name": "tlenek węgla(IV)",
+   "el": "C",
+   "ox": 4,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "co2H2o",
+    "text": "reaguje słabo → H₂CO₃ (nietrwały)"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": "naohCo2",
+    "text": "tak — produkt zależy od stosunku molowego"
+   },
+   "color": null,
+   "colorName": "bezbarwny gaz",
+   "state": "g",
+   "level": "E8",
+   "notes": [
+    "gaz cieplarniany, nie typowy składnik smogu",
+    "zmętnienie wody wapiennej — test"
+   ]
+  },
+  "CO": {
+   "f": "CO",
+   "name": "tlenek węgla(II) (czad)",
+   "el": "C",
+   "ox": 2,
+   "char": "obojętny",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "nie (model szkolny)"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": null,
+   "colorName": "bezbarwny, bezwonny gaz",
+   "state": "g",
+   "level": "E8",
+   "notes": [
+    "obojętny ≠ bierny: reduktor, trucizna (wiąże hemoglobinę ok. 200–250× silniej niż O₂ — przybliżenie)"
+   ]
+  },
+  "SiO2": {
+   "f": "SiO2",
+   "name": "tlenek krzemu(IV) (krzemionka)",
+   "el": "Si",
+   "ox": 4,
+   "char": "kwasowy",
+   "bond": "kowalencyjna sieć",
+   "water": {
+    "rx": null,
+    "text": "praktycznie nie"
+   },
+   "acid": {
+    "rx": "sio2Hf",
+    "text": "tylko z HF"
+   },
+   "base": {
+    "rx": "sio2Naoh",
+    "text": "tak — z mocnymi zasadami, zwykle po ogrzaniu (Δ)"
+   },
+   "color": "#f8fafc",
+   "colorName": "bezbarwny (kwarc), biały (piasek)",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "nie zapisuj SiO₂ + H₂O → H₂SiO₃ jako zwykłej reakcji w wodzie"
+   ]
+  },
+  "N2O": {
+   "f": "N2O",
+   "name": "tlenek azotu(I)",
+   "el": "N",
+   "ox": 1,
+   "char": "obojętny",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "nie (szkolnie)"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": null,
+   "colorName": "bezbarwny gaz",
+   "state": "g",
+   "level": "AMB",
+   "notes": [
+    "silny gaz cieplarniany (wartości ok. 270–300× CO₂ — zależnie od horyzontu)"
+   ]
+  },
+  "NO": {
+   "f": "NO",
+   "name": "tlenek azotu(II)",
+   "el": "N",
+   "ox": 2,
+   "char": "obojętny",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "nie (szkolnie)"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "nie"
+   },
+   "color": null,
+   "colorName": "bezbarwny gaz",
+   "state": "g",
+   "level": "E8",
+   "notes": [
+    "z O₂ → NO₂; biologiczny czynnik sygnałowy"
+   ]
+  },
+  "N2O3": {
+   "f": "N2O3",
+   "name": "tlenek azotu(III)",
+   "el": "N",
+   "ox": 3,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "n2o3H2o",
+    "text": "reaguje → HNO₂"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#1d4ed8",
+   "colorName": "niebieska ciecz (w niskiej T)",
+   "state": "l",
+   "level": "ZA",
+   "notes": []
+  },
+  "NO2": {
+   "f": "NO2",
+   "name": "tlenek azotu(IV)",
+   "el": "N",
+   "ox": 4,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "no2H2o",
+    "text": "reaguje (dysproporcjonowanie) → HNO₃ + NO"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#b45309",
+   "colorName": "brunatny gaz",
+   "state": "g",
+   "level": "AMB",
+   "notes": [
+    "składnik smogu i kwaśnych deszczy"
+   ]
+  },
+  "N2O5": {
+   "f": "N2O5",
+   "name": "tlenek azotu(V)",
+   "el": "N",
+   "ox": 5,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "n2o5H2o",
+    "text": "reaguje → HNO₃"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#f8fafc",
+   "colorName": "bezbarwne kryształy",
+   "state": "s",
+   "level": "E8",
+   "notes": []
+  },
+  "P2O5": {
+   "f": "P2O5",
+   "name": "tlenek fosforu(V) (zapis empiryczny)",
+   "el": "P",
+   "ox": 5,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "p2o5H2o",
+    "text": "reaguje gwałtownie → H₃PO₄"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "P₂O₅ — wzór empiryczny; P₄O₁₀ — wzór cząsteczkowy"
+   ]
+  },
+  "P4O10": {
+   "f": "P4O10",
+   "name": "tlenek fosforu(V) (wzór cząsteczkowy)",
+   "el": "P",
+   "ox": 5,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "p4o10H2o",
+    "text": "reaguje → H₃PO₄"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały",
+   "state": "s",
+   "level": "AMB",
+   "notes": [
+    "to ta sama substancja co P₂O₅ — inny rodzaj wzoru"
+   ]
+  },
+  "SO2": {
+   "f": "SO2",
+   "name": "tlenek siarki(IV)",
+   "el": "S",
+   "ox": 4,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "so2H2o",
+    "text": "reaguje → H₂SO₃"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": "so2Naoh",
+    "text": "tak"
+   },
+   "color": null,
+   "colorName": "bezbarwny gaz o duszącym zapachu",
+   "state": "g",
+   "level": "E8",
+   "notes": [
+    "konserwant E220; kwaśne deszcze"
+   ]
+  },
+  "SO3": {
+   "f": "SO3",
+   "name": "tlenek siarki(VI)",
+   "el": "S",
+   "ox": 6,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "so3H2o",
+    "text": "reaguje gwałtownie → H₂SO₄"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": "so3Naoh",
+    "text": "tak"
+   },
+   "color": "#f8fafc",
+   "colorName": "biały (ciało stałe) / bezbarwna ciecz",
+   "state": "s",
+   "level": "E8",
+   "notes": [
+    "w smogu SO₃ jest znacznie mniej niż SO₂"
+   ]
+  },
+  "Cl2O7": {
+   "f": "Cl2O7",
+   "name": "tlenek chloru(VII)",
+   "el": "Cl",
+   "ox": 7,
+   "char": "kwasowy",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": "cl2o7H2o",
+    "text": "reaguje → HClO₄"
+   },
+   "acid": {
+    "rx": null,
+    "text": "nie"
+   },
+   "base": {
+    "rx": null,
+    "text": "tak"
+   },
+   "color": null,
+   "colorName": "bezbarwna oleista ciecz",
+   "state": "l",
+   "level": "ZA",
+   "notes": []
+  },
+  "H2O": {
+   "f": "H2O",
+   "name": "woda (tlenek wodoru)",
+   "el": "H",
+   "ox": 1,
+   "char": "obojętny",
+   "bond": "kowalencyjny",
+   "water": {
+    "rx": null,
+    "text": "—"
+   },
+   "acid": {
+    "rx": null,
+    "text": "—"
+   },
+   "base": {
+    "rx": null,
+    "text": "—"
+   },
+   "color": null,
+   "colorName": "bezbarwna ciecz",
+   "state": "l",
+   "level": "E8",
+   "notes": [
+    "formalnie tlenek wodoru; w dziale „Tlenki” omawiana osobno (rozróżnienie organizacyjne)"
+   ]
+  }
+ },
+ "NOT_OXIDES": [
+  [
+   "Na2O2",
+   "nadtlenek sodu",
+   "grupa nadtlenkowa O₂²⁻, tlen −I"
+  ],
+  [
+   "H2O2",
+   "nadtlenek wodoru",
+   "grupa nadtlenkowa, tlen −I"
+  ],
+  [
+   "KO2",
+   "ponadtlenek potasu",
+   "jon ponadtlenkowy O₂⁻, tlen −½"
+  ],
+  [
+   "OF2",
+   "fluorek tlenu",
+   "tlen na +II — fluor bardziej elektroujemny"
+  ],
+  [
+   "O3",
+   "ozon",
+   "odmiana alotropowa tlenu, nie związek"
+  ]
+ ],
+ "OXIDE_STATES": {
+  "Li": [
+   1
+  ],
+  "Na": [
+   1
+  ],
+  "K": [
+   1
+  ],
+  "Be": [
+   2
+  ],
+  "Mg": [
+   2
+  ],
+  "Ca": [
+   2
+  ],
+  "Ba": [
+   2
+  ],
+  "Al": [
+   3
+  ],
+  "Zn": [
+   2
+  ],
+  "Fe": [
+   2,
+   3
+  ],
+  "Cu": [
+   1,
+   2
+  ],
+  "Ag": [
+   1
+  ],
+  "Hg": [
+   2
+  ],
+  "Pb": [
+   2,
+   4
+  ],
+  "Mn": [
+   2,
+   4,
+   7
+  ],
+  "Cr": [
+   2,
+   3,
+   6
+  ],
+  "Ti": [
+   4
+  ],
+  "B": [
+   3
+  ],
+  "C": [
+   2,
+   4
+  ],
+  "Si": [
+   4
+  ],
+  "N": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "P": [
+   3,
+   5
+  ],
+  "S": [
+   4,
+   6
+  ],
+  "Cl": [
+   1,
+   7
+  ],
+  "H": [
+   1
+  ]
+ },
+ "CHAR_COLORS": {
+  "zasadowy": "#2e7d4f",
+  "kwasowy": "#2b5e9c",
+  "amfoteryczny": "#6b3fa0",
+  "obojętny": "#64748b",
+  "mieszany": "#b06f1c"
+ },
+ "HYDROXIDES": [
+  {
+   "f": "LiOH",
+   "name": "wodorotlenek litu",
+   "metal": "Li",
+   "q": 1,
+   "cid": null,
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "oxide": "li2oH2o",
+    "metal": "liH2o"
+   },
+   "notes": [
+    "najmniej rozpuszczalny z wodorotlenków litowców, ale nadal dobrze rozpuszczalny"
+   ],
+   "dHsol": -23.6,
+   "phSat": null,
+   "sg": 12.8,
+   "sOwn": "R",
+   "pretty": "LiOH",
+   "cation": "Li⁺"
+  },
+  {
+   "f": "NaOH",
+   "name": "wodorotlenek sodu",
+   "metal": "Na",
+   "q": 1,
+   "cid": "Na",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "oxide": "na2oH2o",
+    "metal": "naH2o",
+    "acid": "hclNaOH",
+    "co2": "naohCo2"
+   },
+   "notes": [
+    "higroskopijny — „rozpływa się” na powietrzu",
+    "żrący; roztwór = zasada sodowa (ług sodowy)",
+    "rozpuszczanie silnie egzotermiczne"
+   ],
+   "dHsol": -44.5,
+   "phSat": null,
+   "sg": 109,
+   "sOwn": null,
+   "pretty": "NaOH",
+   "cation": "Na⁺"
+  },
+  {
+   "f": "KOH",
+   "name": "wodorotlenek potasu",
+   "metal": "K",
+   "q": 1,
+   "cid": "K",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "oxide": "k2oH2o",
+    "metal": "kH2o",
+    "acid": "kohHcl",
+    "co2": "co2Koh"
+   },
+   "notes": [
+    "higroskopijny, żrący; jeszcze lepiej rozpuszczalny niż NaOH",
+    "mydła potasowe (płynne), baterie alkaliczne"
+   ],
+   "dHsol": -57.6,
+   "phSat": null,
+   "sg": 112,
+   "sOwn": null,
+   "pretty": "KOH",
+   "cation": "K⁺"
+  },
+  {
+   "f": "Ca(OH)2",
+   "name": "wodorotlenek wapnia",
+   "metal": "Ca",
+   "q": 2,
+   "cid": "Ca",
+   "hex": "#f1f5f9",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "oxide": "caoH2o",
+    "metal": "caH2o",
+    "precip": "cacl2Naoh",
+    "acid": "caoh2Hcl",
+    "heat": "caoh2Heat",
+    "co2": "caoh2Co2"
+   },
+   "notes": [
+    "wapno gaszone; mleko wapienne = zawiesina, woda wapienna = klarowny roztwór nasycony",
+    "słabo rozpuszczalny, ale rozpuszczona część dysocjuje praktycznie całkowicie"
+   ],
+   "dHsol": -16.7,
+   "phSat": 12.4,
+   "sg": 0.173,
+   "sOwn": null,
+   "pretty": "Ca(OH)₂",
+   "cation": "Ca²⁺"
+  },
+  {
+   "f": "Ba(OH)2",
+   "name": "wodorotlenek baru",
+   "metal": "Ba",
+   "q": 2,
+   "cid": "Ba",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "oxide": "baoH2o",
+    "metal": "baH2o",
+    "acid": "baoh2Hcl",
+    "co2": "baoh2Co2"
+   },
+   "notes": [
+    "związki baru są trujące — nie do doświadczeń uczniowskich",
+    "rozpuszczalność ok. 3,9 g/100 g (jako hydrat Ba(OH)₂·8H₂O)"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 3.9,
+   "sOwn": null,
+   "pretty": "Ba(OH)₂",
+   "cation": "Ba²⁺"
+  },
+  {
+   "f": "Mg(OH)2",
+   "name": "wodorotlenek magnezu",
+   "metal": "Mg",
+   "q": 2,
+   "cid": "Mg",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "—",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "oxide": "mgoH2o",
+    "metal": "mgH2oHot",
+    "precip": "mgcl2Naoh",
+    "acid": "mgoh2Hcl",
+    "heat": "mgoh2Heat"
+   },
+   "notes": [
+    "mleko magnezowe — lek zobojętniający kwas żołądkowy",
+    "MgO reaguje z wodą bardzo powoli"
+   ],
+   "dHsol": null,
+   "phSat": 10.4,
+   "sg": 0.0009,
+   "sOwn": null,
+   "pretty": "Mg(OH)₂",
+   "cation": "Mg²⁺"
+  },
+  {
+   "f": "Al(OH)3",
+   "name": "wodorotlenek glinu",
+   "metal": "Al",
+   "q": 3,
+   "cid": "Al",
+   "hex": "#f8fafc",
+   "color": "biały, galaretowaty",
+   "strength": "—",
+   "amph": true,
+   "level": "E8",
+   "rx": {
+    "precip": "alcl3Naoh",
+    "acid": "aloh3Hcl",
+    "base": "aloh3Naoh",
+    "heat": "aloh3Heat"
+   },
+   "notes": [
+    "amfoteryczny: reaguje z kwasami i z mocnymi zasadami",
+    "leki na zgagę; uzdatnianie wody"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Al(OH)₃",
+   "cation": "Al³⁺"
+  },
+  {
+   "f": "Zn(OH)2",
+   "name": "wodorotlenek cynku",
+   "metal": "Zn",
+   "q": 2,
+   "cid": "Zn",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "—",
+   "amph": true,
+   "level": "E8",
+   "rx": {
+    "precip": "znso4Naoh",
+    "acid": "znoh2Hcl",
+    "base": "znoh2Naoh",
+    "heat": "znoh2Heat"
+   },
+   "notes": [
+    "amfoteryczny"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Zn(OH)₂",
+   "cation": "Zn²⁺"
+  },
+  {
+   "f": "Fe(OH)2",
+   "name": "wodorotlenek żelaza(II)",
+   "metal": "Fe",
+   "q": 2,
+   "cid": "Fe2",
+   "hex": "#9cbf8f",
+   "color": "zielonkawy (brunatnieje na powietrzu)",
+   "strength": "—",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "precip": "feso4Naoh",
+    "air": "feoh2O2"
+   },
+   "notes": [
+    "na powietrzu utlenia się do Fe(OH)₃"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Fe(OH)₂",
+   "cation": "Fe²⁺"
+  },
+  {
+   "f": "Fe(OH)3",
+   "name": "wodorotlenek żelaza(III)",
+   "metal": "Fe",
+   "q": 3,
+   "cid": "Fe3",
+   "hex": "#8b4513",
+   "color": "rdzawobrunatny",
+   "strength": "—",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "precip": "fecl3Naoh",
+    "acid": "feoh3Hcl",
+    "heat": "feoh3Heat"
+   },
+   "notes": [
+    "składnik rdzy"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 1e-05,
+   "sOwn": null,
+   "pretty": "Fe(OH)₃",
+   "cation": "Fe³⁺"
+  },
+  {
+   "f": "Cu(OH)2",
+   "name": "wodorotlenek miedzi(II)",
+   "metal": "Cu",
+   "q": 2,
+   "cid": "Cu",
+   "hex": "#4f9fe0",
+   "color": "niebieski, galaretowaty",
+   "strength": "—",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "precip": "cuso4Naoh",
+    "acid": "cuoh2H2so4",
+    "heat": "cuoh2Heat"
+   },
+   "notes": [
+    "po ogrzaniu czernieje (CuO)"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Cu(OH)₂",
+   "cation": "Cu²⁺"
+  },
+  {
+   "f": "Ni(OH)2",
+   "name": "wodorotlenek niklu(II)",
+   "metal": "Ni",
+   "q": 2,
+   "cid": "Ni",
+   "hex": "#7fd38a",
+   "color": "jasnozielony",
+   "strength": "—",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "precip": "niso4Naoh"
+   },
+   "notes": [
+    "akumulatory Ni-MH"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Ni(OH)₂",
+   "cation": "Ni²⁺"
+  },
+  {
+   "f": "Mn(OH)2",
+   "name": "wodorotlenek manganu(II)",
+   "metal": "Mn",
+   "q": 2,
+   "cid": "Mn",
+   "hex": "#efe6d2",
+   "color": "biały / beżowy (brunatnieje)",
+   "strength": "—",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "precip": "mnso4Naoh"
+   },
+   "notes": [
+    "na powietrzu utlenia się (brunatnieje)"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0003,
+   "sOwn": null,
+   "pretty": "Mn(OH)₂",
+   "cation": "Mn²⁺"
+  },
+  {
+   "f": "Pb(OH)2",
+   "name": "wodorotlenek ołowiu(II)",
+   "metal": "Pb",
+   "q": 2,
+   "cid": "Pb",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "—",
+   "amph": true,
+   "level": "AMB",
+   "rx": {
+    "precip": "pbno32Naoh",
+    "base": "pboh2Naoh"
+   },
+   "notes": [
+    "amfoteryczny; związki ołowiu trujące"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Pb(OH)₂",
+   "cation": "Pb²⁺"
+  },
+  {
+   "f": "Sn(OH)2",
+   "name": "wodorotlenek cyny(II)",
+   "metal": "Sn",
+   "q": 2,
+   "cid": "Sn",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "—",
+   "amph": true,
+   "level": "LO",
+   "rx": {},
+   "notes": [
+    "amfoteryczny"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Sn(OH)₂",
+   "cation": "Sn²⁺"
+  },
+  {
+   "f": "Cr(OH)3",
+   "name": "wodorotlenek chromu(III)",
+   "metal": "Cr",
+   "q": 3,
+   "cid": null,
+   "hex": "#6b8f71",
+   "color": "szarozielony",
+   "strength": "—",
+   "amph": true,
+   "level": "LO",
+   "rx": {},
+   "notes": [
+    "amfoteryczny"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": "N",
+   "pretty": "Cr(OH)₃",
+   "cation": "Cr³⁺"
+  },
+  {
+   "f": "AgOH",
+   "name": "wodorotlenek srebra(I)",
+   "metal": "Ag",
+   "q": 1,
+   "cid": "Ag",
+   "hex": "#4a3426",
+   "color": "— (od razu brunatny Ag₂O)",
+   "strength": "—",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "precip": "agno3Naoh",
+    "heat": "agohDec"
+   },
+   "notes": [
+    "nietrwały: 2AgOH → Ag₂O + H₂O; nie mów „nie istnieje” — to zbyt duże uproszczenie"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": null,
+   "sOwn": null,
+   "pretty": "AgOH",
+   "cation": "Ag⁺"
+  },
+  {
+   "f": "CuOH",
+   "name": "wodorotlenek miedzi(I)",
+   "metal": "Cu",
+   "q": 1,
+   "cid": null,
+   "hex": "#b45309",
+   "color": "— (przechodzi w Cu₂O)",
+   "strength": "—",
+   "amph": false,
+   "level": "LO",
+   "rx": {
+    "heat": "cuohDec"
+   },
+   "notes": [
+    "nietrwały: 2CuOH → Cu₂O + H₂O"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": null,
+   "sOwn": "—",
+   "pretty": "CuOH",
+   "cation": "Cu⁺"
+  },
+  {
+   "f": "NH4OH",
+   "name": "„wodorotlenek amonu” (zapis szkolny)",
+   "metal": "NH4",
+   "q": 1,
+   "cid": "NH4",
+   "hex": "#f8fafc",
+   "color": "— (roztwór)",
+   "strength": "słaba",
+   "amph": false,
+   "level": "AMB",
+   "rx": {},
+   "notes": [
+    "tradycyjny skrót: dokładniej NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ — nie ma trwałej cząsteczki NH₄OH",
+    "woda amoniakalna ma odczyn zasadowy"
+   ],
+   "dHsol": null,
+   "phSat": 11.1,
+   "sg": null,
+   "sOwn": null,
+   "pretty": "NH₄OH",
+   "cation": "NH₄⁺"
+  }
+ ],
+ "COLOR_DB": [
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-uniwersalny",
+   "kind": "universal",
+   "name": "papierek uniwersalny",
+   "short": "uniwersalny",
+   "stops": [
+    [
+     0,
+     "#e5262e"
+    ],
+    [
+     2,
+     "#ef5a28"
+    ],
+    [
+     4,
+     "#f6a21e"
+    ],
+    [
+     6,
+     "#d7d93a"
+    ],
+    [
+     7,
+     "#5cb85c"
+    ],
+    [
+     8,
+     "#21a89a"
+    ],
+    [
+     10,
+     "#2f7fc1"
+    ],
+    [
+     12,
+     "#4a4bb5"
+    ],
+    [
+     14,
+     "#6b2d8f"
+    ]
+   ],
+   "labels": [
+    [
+     2.5,
+     "czerwony"
+    ],
+    [
+     4.5,
+     "pomarańczowy"
+    ],
+    [
+     6.5,
+     "żółty"
+    ],
+    [
+     7.5,
+     "zielony"
+    ],
+    [
+     9,
+     "turkusowy"
+    ],
+    [
+     11,
+     "niebieski"
+    ],
+    [
+     13,
+     "granatowy"
+    ],
+    [
+     15,
+     "fioletowy"
+    ]
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-kapusta",
+   "kind": "universal",
+   "name": "sok z czerwonej kapusty",
+   "short": "czerwona kapusta",
+   "stops": [
+    [
+     0,
+     "#dc2626"
+    ],
+    [
+     2,
+     "#e11d48"
+    ],
+    [
+     4,
+     "#c026d3"
+    ],
+    [
+     6,
+     "#8b5cf6"
+    ],
+    [
+     7,
+     "#6d5bd0"
+    ],
+    [
+     8,
+     "#3b82f6"
+    ],
+    [
+     9,
+     "#14b8a6"
+    ],
+    [
+     10,
+     "#22c55e"
+    ],
+    [
+     12,
+     "#eab308"
+    ],
+    [
+     14,
+     "#facc15"
+    ]
+   ],
+   "labels": [
+    [
+     3,
+     "czerwony"
+    ],
+    [
+     5,
+     "różowofioletowy"
+    ],
+    [
+     6.5,
+     "fioletowy"
+    ],
+    [
+     7.5,
+     "niebieskofioletowy"
+    ],
+    [
+     8.5,
+     "niebieski"
+    ],
+    [
+     9.5,
+     "niebieskozielony"
+    ],
+    [
+     11,
+     "zielony"
+    ],
+    [
+     15,
+     "żółty"
+    ]
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-oranz-metylowy",
+   "kind": "indicator",
+   "name": "oranż metylowy",
+   "short": "oranż metylowy",
+   "tr": [
+    [
+     3.1,
+     4.4,
+     "#dc2626",
+     "#facc15"
+    ]
+   ],
+   "names": [
+    "czerwony",
+    "żółty"
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-czerwien-metylowa",
+   "kind": "indicator",
+   "name": "czerwień metylowa",
+   "short": "czerwień metylowa",
+   "tr": [
+    [
+     4.4,
+     6.2,
+     "#dc2626",
+     "#facc15",
+     "#f97316"
+    ]
+   ],
+   "names": [
+    "czerwony",
+    "żółty"
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-lakmus",
+   "kind": "indicator",
+   "name": "lakmus",
+   "short": "lakmus",
+   "tr": [
+    [
+     4.5,
+     8.3,
+     "#dc2626",
+     "#2563eb",
+     "#7c3aed"
+    ]
+   ],
+   "names": [
+    "czerwony",
+    "niebieski"
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-bbt",
+   "kind": "indicator",
+   "name": "błękit bromotymolowy",
+   "short": "błękit bromotymol.",
+   "tr": [
+    [
+     6,
+     7.6,
+     "#facc15",
+     "#2563eb",
+     "#4d9a45"
+    ]
+   ],
+   "names": [
+    "żółty",
+    "niebieski"
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-czerwien-fenolowa",
+   "kind": "indicator",
+   "name": "czerwień fenolowa",
+   "short": "czerwień fenolowa",
+   "tr": [
+    [
+     6.8,
+     8.4,
+     "#facc15",
+     "#dc2626",
+     "#f97316"
+    ]
+   ],
+   "names": [
+    "żółty",
+    "czerwony"
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-fenoloftaleina",
+   "kind": "indicator",
+   "name": "fenoloftaleina",
+   "short": "fenoloftaleina",
+   "tr": [
+    [
+     8.2,
+     10,
+     "transparent",
+     "#db2777"
+    ]
+   ],
+   "names": [
+    "bezbarwny",
+    "malinowy"
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ind-zolcien-alizarynowa",
+   "kind": "indicator",
+   "name": "żółcień alizarynowa R",
+   "short": "żółcień alizar. R",
+   "tr": [
+    [
+     10.1,
+     12,
+     "#facc15",
+     "#9f1239"
+    ]
+   ],
+   "names": [
+    "żółty",
+    "czerwonobrunatny"
+   ]
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "sol-water",
+   "kind": "solution",
+   "name": "woda / roztwór bezbarwny",
+   "hex": "#e8f2fa",
+   "state": "bezbarwny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-cu2",
+   "kind": "ion",
+   "name": "Cu²⁺(aq)",
+   "hex": "#3b82c4",
+   "state": "niebieski"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-fe2",
+   "kind": "ion",
+   "name": "Fe²⁺(aq)",
+   "hex": "#a7c9a0",
+   "state": "bladozielony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-fe3",
+   "kind": "ion",
+   "name": "Fe³⁺(aq)",
+   "hex": "#d9a441",
+   "state": "żółtobrunatny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-ni2",
+   "kind": "ion",
+   "name": "Ni²⁺(aq)",
+   "hex": "#5fae7a",
+   "state": "zielony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-co2",
+   "kind": "ion",
+   "name": "Co²⁺(aq)",
+   "hex": "#e58fa6",
+   "state": "różowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-cr3",
+   "kind": "ion",
+   "name": "Cr³⁺(aq)",
+   "hex": "#4a8f5a",
+   "state": "zielony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-mn2",
+   "kind": "ion",
+   "name": "Mn²⁺(aq)",
+   "hex": "#f3dfe3",
+   "state": "bladoróżowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-mno4",
+   "kind": "ion",
+   "name": "MnO₄⁻(aq)",
+   "hex": "#7a1fa2",
+   "state": "fioletowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-cr2o7",
+   "kind": "ion",
+   "name": "Cr₂O₇²⁻(aq)",
+   "hex": "#f08a24",
+   "state": "pomarańczowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ion-cro4",
+   "kind": "ion",
+   "name": "CrO₄²⁻(aq)",
+   "hex": "#e8d21f",
+   "state": "żółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "sol-i2",
+   "kind": "solution",
+   "name": "I₂(aq) — woda jodowa",
+   "hex": "#b45309",
+   "state": "brunatny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-cu-oh-2",
+   "kind": "precipitate",
+   "name": "Cu(OH)₂",
+   "hex": "#4fa3e0",
+   "state": "galaretowaty, niebieski"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-fe-oh-2",
+   "kind": "precipitate",
+   "name": "Fe(OH)₂",
+   "hex": "#9db79a",
+   "state": "zielonkawy, szybko brunatnieje"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-fe-oh-3",
+   "kind": "precipitate",
+   "name": "Fe(OH)₃",
+   "hex": "#a0522d",
+   "state": "rdzawobrunatny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-al-oh-3",
+   "kind": "precipitate",
+   "name": "Al(OH)₃",
+   "hex": "#f5f5f5",
+   "state": "biały, galaretowaty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-zn-oh-2",
+   "kind": "precipitate",
+   "name": "Zn(OH)₂",
+   "hex": "#f5f5f5",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-agcl",
+   "kind": "precipitate",
+   "name": "AgCl",
+   "hex": "#f8fafc",
+   "state": "biały, serowaty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-agbr",
+   "kind": "precipitate",
+   "name": "AgBr",
+   "hex": "#f3ecc0",
+   "state": "kremowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-agi",
+   "kind": "precipitate",
+   "name": "AgI",
+   "hex": "#f2e04a",
+   "state": "żółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-baso4",
+   "kind": "precipitate",
+   "name": "BaSO₄",
+   "hex": "#f8fafc",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-caco3",
+   "kind": "precipitate",
+   "name": "CaCO₃",
+   "hex": "#f8fafc",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-pbi2",
+   "kind": "precipitate",
+   "name": "PbI₂",
+   "hex": "#f5d90a",
+   "state": "żółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-cus",
+   "kind": "precipitate",
+   "name": "CuS",
+   "hex": "#1f1f1f",
+   "state": "czarny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-ag2cro4",
+   "kind": "precipitate",
+   "name": "Ag₂CrO₄",
+   "hex": "#a3341f",
+   "state": "ceglastoczerwony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-fe",
+   "kind": "metal",
+   "name": "Fe (ciało stałe)",
+   "hex": "#8b8f94",
+   "state": "szary"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-cu",
+   "kind": "metal",
+   "name": "Cu (ciało stałe)",
+   "hex": "#b87333",
+   "state": "czerwonobrunatny (miedziany)"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-zn",
+   "kind": "metal",
+   "name": "Zn (ciało stałe)",
+   "hex": "#9aa7b3",
+   "state": "niebieskoszary"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-mg",
+   "kind": "metal",
+   "name": "Mg (ciało stałe)",
+   "hex": "#d9dde2",
+   "state": "srebrzystobiały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-al",
+   "kind": "metal",
+   "name": "Al (ciało stałe)",
+   "hex": "#c8ced4",
+   "state": "srebrzystoszary (pokryty tlenkiem)"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-ag",
+   "kind": "metal",
+   "name": "Ag (ciało stałe)",
+   "hex": "#dfe3e8",
+   "state": "srebrzysty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-au",
+   "kind": "metal",
+   "name": "Au (ciało stałe)",
+   "hex": "#e6b422",
+   "state": "złoty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-pb",
+   "kind": "metal",
+   "name": "Pb (ciało stałe)",
+   "hex": "#6b7480",
+   "state": "szaroniebieski"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-sn",
+   "kind": "metal",
+   "name": "Sn (ciało stałe)",
+   "hex": "#b7bcc2",
+   "state": "srebrzystoszary"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-na",
+   "kind": "metal",
+   "name": "Na (ciało stałe)",
+   "hex": "#cfd3d8",
+   "state": "srebrzystobiały, miękki, szybko matowieje"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-k",
+   "kind": "metal",
+   "name": "K (ciało stałe)",
+   "hex": "#c9ccd1",
+   "state": "srebrzystobiały, miękki, szybko matowieje"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-ca",
+   "kind": "metal",
+   "name": "Ca (ciało stałe)",
+   "hex": "#c7cbd0",
+   "state": "srebrzystoszary"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-ni",
+   "kind": "metal",
+   "name": "Ni (ciało stałe)",
+   "hex": "#a8adb2",
+   "state": "srebrzystoszary"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-cr",
+   "kind": "metal",
+   "name": "Cr (ciało stałe)",
+   "hex": "#aab0b6",
+   "state": "srebrzystoszary, błyszczący"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-mn",
+   "kind": "metal",
+   "name": "Mn (ciało stałe)",
+   "hex": "#9a9ea3",
+   "state": "szary"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "metal-hg",
+   "kind": "metal",
+   "name": "Hg (ciało stałe)",
+   "hex": "#c4c8cc",
+   "state": "ciekły, srebrzysty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "solid-cuo",
+   "kind": "solid",
+   "name": "CuO",
+   "hex": "#1c1c1c",
+   "state": "czarny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "solid-cu2o",
+   "kind": "solid",
+   "name": "Cu₂O",
+   "hex": "#b5301f",
+   "state": "ceglastoczerwony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "solid-mno2",
+   "kind": "solid",
+   "name": "MnO₂",
+   "hex": "#3b2f2a",
+   "state": "czarnobrunatny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "solid-s",
+   "kind": "solid",
+   "name": "S (siarka)",
+   "hex": "#f2e24a",
+   "state": "żółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "solid-i2",
+   "kind": "solid",
+   "name": "I₂ (kryształy)",
+   "hex": "#4b3b6b",
+   "state": "ciemnofioletowy, połysk"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "solid-c",
+   "kind": "solid",
+   "name": "C (węgiel)",
+   "hex": "#222222",
+   "state": "czarny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-mg-oh-2",
+   "kind": "precipitate",
+   "name": "Mg(OH)₂",
+   "hex": "#f5f5f5",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-ni-oh-2",
+   "kind": "precipitate",
+   "name": "Ni(OH)₂",
+   "hex": "#7fc97f",
+   "state": "jasnozielony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-co-oh-2",
+   "kind": "precipitate",
+   "name": "Co(OH)₂",
+   "hex": "#8a9fd8",
+   "state": "niebieski, przechodzi w różowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-mn-oh-2",
+   "kind": "precipitate",
+   "name": "Mn(OH)₂",
+   "hex": "#f3ece6",
+   "state": "biały, na powietrzu brunatnieje"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-cr-oh-3",
+   "kind": "precipitate",
+   "name": "Cr(OH)₃",
+   "hex": "#8aa88a",
+   "state": "szarozielony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-pb-oh-2",
+   "kind": "precipitate",
+   "name": "Pb(OH)₂",
+   "hex": "#f5f5f5",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-mgco3",
+   "kind": "precipitate",
+   "name": "MgCO₃",
+   "hex": "#f8fafc",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-cuco3",
+   "kind": "precipitate",
+   "name": "CuCO₃·Cu(OH)₂",
+   "hex": "#5fb59a",
+   "state": "zielononiebieski (zasadowy węglan)"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-ag2co3",
+   "kind": "precipitate",
+   "name": "Ag₂CO₃",
+   "hex": "#e8d98a",
+   "state": "żółtawy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-pbcl2",
+   "kind": "precipitate",
+   "name": "PbCl₂",
+   "hex": "#f8fafc",
+   "state": "biały, krystaliczny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-pbso4",
+   "kind": "precipitate",
+   "name": "PbSO₄",
+   "hex": "#f8fafc",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-caso4",
+   "kind": "precipitate",
+   "name": "CaSO₄",
+   "hex": "#f8fafc",
+   "state": "biały, słabo rozpuszczalny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-bacro4",
+   "kind": "precipitate",
+   "name": "BaCrO₄",
+   "hex": "#e8d21f",
+   "state": "żółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-pbcro4",
+   "kind": "precipitate",
+   "name": "PbCrO₄",
+   "hex": "#f5c400",
+   "state": "jaskrawożółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-ag3po4",
+   "kind": "precipitate",
+   "name": "Ag₃PO₄",
+   "hex": "#f2d633",
+   "state": "żółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-ca3po4-2",
+   "kind": "precipitate",
+   "name": "Ca₃(PO₄)₂",
+   "hex": "#f8fafc",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-zns",
+   "kind": "precipitate",
+   "name": "ZnS",
+   "hex": "#f5f5f5",
+   "state": "biały"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-pbs",
+   "kind": "precipitate",
+   "name": "PbS",
+   "hex": "#1c1c1c",
+   "state": "czarny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-ag2s",
+   "kind": "precipitate",
+   "name": "Ag₂S",
+   "hex": "#1c1c1c",
+   "state": "czarny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-fes",
+   "kind": "precipitate",
+   "name": "FeS",
+   "hex": "#222222",
+   "state": "czarny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-cds",
+   "kind": "precipitate",
+   "name": "CdS",
+   "hex": "#f6c500",
+   "state": "żółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-mns",
+   "kind": "precipitate",
+   "name": "MnS",
+   "hex": "#e8b4b8",
+   "state": "cielistoróżowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-sns",
+   "kind": "precipitate",
+   "name": "SnS",
+   "hex": "#8b5a2b",
+   "state": "brunatny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "ppt-hgs",
+   "kind": "precipitate",
+   "name": "HgS",
+   "hex": "#2a2a2a",
+   "state": "czarny (forma czerwona: cynober)"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-zn-cuso4",
+   "kind": "reaction",
+   "name": "Zn + CuSO₄",
+   "before": "ion-cu2",
+   "after": "sol-water",
+   "obs": "niebieski roztwór odbarwia się; na cynku osadza się czerwonobrunatna miedź",
+   "solidBefore": "metal-zn",
+   "solidAfter": "metal-cu"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-fe-cuso4",
+   "kind": "reaction",
+   "name": "Fe + CuSO₄",
+   "before": "ion-cu2",
+   "after": "ion-fe2",
+   "obs": "niebieski roztwór blednie do bladozielonego; na żelazie miedziany nalot",
+   "solidBefore": "metal-fe",
+   "solidAfter": "metal-cu"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-cu-agno3",
+   "kind": "reaction",
+   "name": "Cu + AgNO₃",
+   "before": "sol-water",
+   "after": "ion-cu2",
+   "obs": "roztwór niebieszczeje; na miedzi srebrzyste kryształki Ag",
+   "solidBefore": "metal-cu",
+   "solidAfter": "metal-ag"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-pb-s",
+   "kind": "reaction",
+   "name": "Pb(NO₃)₂ + Na₂S",
+   "before": "sol-water",
+   "after": "ppt-pbs",
+   "obs": "bezbarwny roztwór → czarny osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-cu-s",
+   "kind": "reaction",
+   "name": "CuSO₄ + Na₂S",
+   "before": "ion-cu2",
+   "after": "ppt-cus",
+   "obs": "niebieski roztwór → czarny osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-cd-s",
+   "kind": "reaction",
+   "name": "CdSO₄ + Na₂S",
+   "before": "sol-water",
+   "after": "ppt-cds",
+   "obs": "bezbarwny roztwór → żółty osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-zn-naoh",
+   "kind": "reaction",
+   "name": "ZnSO₄ + NaOH",
+   "before": "sol-water",
+   "after": "ppt-zn-oh-2",
+   "obs": "biały osad, rozpuszcza się w nadmiarze NaOH"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-ni-naoh",
+   "kind": "reaction",
+   "name": "NiSO₄ + NaOH",
+   "before": "ion-ni2",
+   "after": "ppt-ni-oh-2",
+   "obs": "zielony roztwór → jasnozielony osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-ba-so4",
+   "kind": "reaction",
+   "name": "BaCl₂ + H₂SO₄",
+   "before": "sol-water",
+   "after": "ppt-baso4",
+   "obs": "biały osad nierozpuszczalny w kwasach"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-ca-co2",
+   "kind": "reaction",
+   "name": "Ca(OH)₂ + CO₂",
+   "before": "sol-water",
+   "after": "ppt-caco3",
+   "obs": "klarowna woda wapienna mętnieje (biały osad)"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-ag-po4",
+   "kind": "reaction",
+   "name": "AgNO₃ + Na₃PO₄",
+   "before": "sol-water",
+   "after": "ppt-ag3po4",
+   "obs": "bezbarwny roztwór → żółty osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-pb-cro4",
+   "kind": "reaction",
+   "name": "Pb(NO₃)₂ + K₂CrO₄",
+   "before": "ion-cro4",
+   "after": "ppt-pbcro4",
+   "obs": "żółty roztwór → jaskrawożółty osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "gas-no2",
+   "kind": "gas",
+   "name": "NO₂",
+   "hex": "#92400e",
+   "state": "brunatny, toksyczny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "gas-colorless",
+   "kind": "gas",
+   "name": "gaz bezbarwny (H₂, CO₂ — pęcherzyki)",
+   "hex": "#64748b",
+   "state": "bezbarwny; pęcherzyki rysowane umownym szarym"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "flame-li",
+   "kind": "flame",
+   "name": "Li",
+   "hex": "#e11d48",
+   "state": "karminowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "flame-na",
+   "kind": "flame",
+   "name": "Na",
+   "hex": "#ffb300",
+   "state": "żółty"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "flame-k",
+   "kind": "flame",
+   "name": "K",
+   "hex": "#b388ff",
+   "state": "fioletowy"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "flame-ca",
+   "kind": "flame",
+   "name": "Ca",
+   "hex": "#ea580c",
+   "state": "ceglastoczerwony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "flame-sr",
+   "kind": "flame",
+   "name": "Sr",
+   "hex": "#dc2626",
+   "state": "czerwony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "flame-ba",
+   "kind": "flame",
+   "name": "Ba",
+   "hex": "#a3e635",
+   "state": "żółtozielony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "flame-cu",
+   "kind": "flame",
+   "name": "Cu",
+   "hex": "#22c55e",
+   "state": "zielony"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-cu-naoh",
+   "kind": "reaction",
+   "name": "CuSO₄ + NaOH",
+   "before": "ion-cu2",
+   "after": "ppt-cu-oh-2",
+   "obs": "niebieski roztwór → niebieski galaretowaty osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-fe3-naoh",
+   "kind": "reaction",
+   "name": "FeCl₃ + NaOH",
+   "before": "ion-fe3",
+   "after": "ppt-fe-oh-3",
+   "obs": "żółtobrunatny roztwór → rdzawy osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-ag-cl",
+   "kind": "reaction",
+   "name": "AgNO₃ + NaCl",
+   "before": "sol-water",
+   "after": "ppt-agcl",
+   "obs": "bezbarwny roztwór → biały serowaty osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-ag-i",
+   "kind": "reaction",
+   "name": "AgNO₃ + KI",
+   "before": "sol-water",
+   "after": "ppt-agi",
+   "obs": "bezbarwny roztwór → żółty osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-pb-i",
+   "kind": "reaction",
+   "name": "Pb(NO₃)₂ + KI",
+   "before": "sol-water",
+   "after": "ppt-pbi2",
+   "obs": "bezbarwny roztwór → żółty osad"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-mno4-red",
+   "kind": "reaction",
+   "name": "MnO₄⁻ + redukcja (H⁺)",
+   "before": "ion-mno4",
+   "after": "ion-mn2",
+   "obs": "fioletowy → prawie bezbarwny"
+  },
+  {
+   "provenance": "EDUCATIONAL_BASE",
+   "referenceReady": false,
+   "note": "barwa orientacyjna, zależy od stężenia/temperatury/oświetlenia",
+   "id": "rx-cr2o7-cro4",
+   "kind": "reaction",
+   "name": "Cr₂O₇²⁻ + OH⁻",
+   "before": "ion-cr2o7",
+   "after": "ion-cro4",
+   "obs": "pomarańczowy → żółty"
+  }
+ ],
+ "EDU": {
+  "EXAM_FLOW": {
+   "steps": [
+    {
+     "title": "1. Co mam?",
+     "lines": [
+      "wzór, nazwa,",
+      "równanie"
+     ],
+     "detail": "Najpierw odczytaj dokładnie dane: wzór, nazwę, równanie, obserwację albo wartość liczbową. Określ, czego naprawdę szukasz."
+    },
+    {
+     "title": "2. Typ zadania?",
+     "lines": [
+      "nazwa, dysocjacja,",
+      "reakcja czy pH?"
+     ],
+     "detail": "Rozpoznaj typ zadania: nazewnictwo, dysocjacja, reakcja, pH, moc kwasu czy interpretacja doświadczenia."
+    },
+    {
+     "title": "3. Jaki model?",
+     "lines": [
+      "mocny czy słaby;",
+      "metal przed/za H?"
+     ],
+     "detail": "Dobierz model: mocny/słaby kwas, wartościowość, szereg aktywności metali, bilans ładunków albo dane roztworu."
+    },
+    {
+     "title": "4. Zapis",
+     "lines": [
+      "wzór, równanie",
+      "cząst. i jonowe"
+     ],
+     "detail": "Dopiero teraz zapisz wzór lub równanie. W razie potrzeby przejdź do zapisu jonowego."
+    },
+    {
+     "title": "5. Kontrola",
+     "lines": [
+      "ładunki i atomy;",
+      "czy to ma sens?"
+     ],
+     "detail": "Sprawdź atomy, ładunki, współczynniki i sens chemiczny. Sprawdź też, czy reakcja rzeczywiście zachodzi."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Przykład: „Ułóż wzór kwasu siarkowego(VI)”",
+     "lines": [
+      "1–2  nazwa → nazewnictwo tlenowych",
+      "3  S(VI), H(I), O(II)",
+      "4  H₂SO₄",
+      "5  2·(+1) + 6 + 4·(−2) = 0  ✓"
+     ]
+    },
+    {
+     "title": "Przykład: „Cu + HCl → ?”",
+     "lines": [
+      "1–2  metal + kwas",
+      "3  Cu stoi ZA H w szeregu",
+      "4  brak reakcji",
+      "5  H₂ nie powstaje ✓"
+     ]
+    }
+   ]
+  }
+ }
+}

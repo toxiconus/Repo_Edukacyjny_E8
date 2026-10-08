@@ -1,0 +1,194 @@
+{
+ "inorganic": {
+  "classes": [
+   "oxides",
+   "hydrides",
+   "hydroxides",
+   "acids",
+   "salts",
+   "amphoteric_compounds",
+   "complexes"
+  ],
+  "records": [
+   {
+    "id": "CaO",
+    "class": "oxide",
+    "reaction": "CaO+H2O->Ca(OH)2"
+   },
+   {
+    "id": "CO2",
+    "class": "acidic_oxide",
+    "reaction": "CO2+H2O⇌H2CO3"
+   },
+   {
+    "id": "Al2O3",
+    "class": "amphoteric_oxide"
+   }
+  ]
+ },
+ "organic": {
+  "hydrocarbons": {
+   "records": [
+    {
+     "id": "methane",
+     "formula": "CH4",
+     "class": "alkane"
+    },
+    {
+     "id": "ethene",
+     "formula": "C2H4",
+     "class": "alkene"
+    },
+    {
+     "id": "ethyne",
+     "formula": "C2H2",
+     "class": "alkyne"
+    },
+    {
+     "id": "benzene",
+     "formula": "C6H6",
+     "class": "aromatic"
+    }
+   ]
+  },
+  "functional": {
+   "classes": [
+    "haloalkanes",
+    "alcohols",
+    "phenols",
+    "aldehydes",
+    "ketones",
+    "carboxylic_acids",
+    "esters",
+    "amines"
+   ],
+   "records": [
+    {
+     "id": "ethanol",
+     "formula": "C2H5OH",
+     "class": "alcohol"
+    },
+    {
+     "id": "ethanal",
+     "formula": "CH3CHO",
+     "class": "aldehyde"
+    },
+    {
+     "id": "propanone",
+     "formula": "CH3COCH3",
+     "class": "ketone"
+    },
+    {
+     "id": "ethanoic_acid",
+     "formula": "CH3COOH",
+     "class": "carboxylic_acid"
+    },
+    {
+     "id": "ethyl_ethanoate",
+     "formula": "CH3COOCH2CH3",
+     "class": "ester"
+    },
+    {
+     "id": "methylamine",
+     "formula": "CH3NH2",
+     "class": "amine"
+    }
+   ]
+  }
+ },
+ "biochemistry": {
+  "scope": "CHEMISTRY_ONLY",
+  "classes": [
+   "amino_acids",
+   "peptides",
+   "proteins",
+   "monosaccharides",
+   "disaccharides",
+   "polysaccharides",
+   "lipids",
+   "nucleotides",
+   "DNA",
+   "RNA"
+  ],
+  "records": [
+   {
+    "id": "glycine",
+    "formula": "NH2CH2COOH",
+    "class": "amino_acid",
+    "amphoteric": true
+   },
+   {
+    "id": "glucose",
+    "formula": "C6H12O6",
+    "class": "monosaccharide",
+    "reducing": true
+   },
+   {
+    "id": "sucrose",
+    "formula": "C12H22O11",
+    "class": "disaccharide",
+    "reducing": false
+   },
+   {
+    "id": "starch",
+    "formula": "(C6H10O5)n",
+    "class": "polysaccharide"
+   },
+   {
+    "id": "peptide_bond",
+    "representation": "-CO-NH-"
+   },
+   {
+    "id": "DNA_backbone",
+    "representation": "phosphate-sugar; base pairing via H-bonds"
+   },
+   {
+    "id": "RNA_backbone",
+    "representation": "phosphate-ribose; bases A,U,G,C"
+   }
+  ],
+  "nucleicAcids": {
+   "records": [
+    {
+     "id": "A",
+     "DNA": "adenine",
+     "RNA": "adenine",
+     "pairing": [
+      "T",
+      "U"
+     ]
+    },
+    {
+     "id": "T",
+     "DNA": "thymine",
+     "pairing": [
+      "A"
+     ]
+    },
+    {
+     "id": "U",
+     "RNA": "uracil",
+     "pairing": [
+      "A"
+     ]
+    },
+    {
+     "id": "G",
+     "DNA": "guanine",
+     "RNA": "guanine",
+     "pairing": [
+      "C"
+     ]
+    },
+    {
+     "id": "C",
+     "DNA": "cytosine",
+     "RNA": "cytosine",
+     "pairing": [
+      "G"
+     ]
+    }
+   ]
+  }
+ }
+}

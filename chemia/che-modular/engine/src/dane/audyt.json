@@ -1,0 +1,216 @@
+{
+ "thermoKinetics": {
+  "reactionEnergy": {
+   "definition": "q = m*c*Î”T for calorimetry; Î”H is enthalpy change per mol under stated conditions",
+   "sourceType": "EDUCATIONAL_MODEL",
+   "units": {
+    "q": "J",
+    "deltaH": "kJ/mol",
+    "temperature": "K"
+   }
+  },
+  "kinetics": {
+   "factors": [
+    "temperature",
+    "concentration",
+    "pressure_for_gases",
+    "surface_area",
+    "catalyst"
+   ],
+   "note": "factor affects rate; catalyst changes pathway/activation energy, not equilibrium constant"
+  },
+  "catalyst": {
+   "definition": "substance changing reaction rate without being consumed overall",
+   "limits": [
+    "does not change ΔG°/K at fixed T",
+    "does not change equilibrium composition"
+   ]
+  }
+ },
+ "equilibrium": {
+  "contract": {
+   "sourceType": "EDUCATIONAL_MODEL",
+   "definition": "For aA+bB⇌cC+dD, Kc=[C]^c[D]^d/[A]^a[B]^b; pure solids/liquids omitted.",
+   "conditions": [
+    "temperature",
+    "phase",
+    "concentrations"
+   ],
+   "limitations": [
+    "K depends on temperature",
+    "catalyst does not change K",
+    "Q compares current composition with K"
+   ]
+  }
+ },
+ "thermoEquilibrium": {
+  "model": "K(T) is temperature-dependent; van t Hoff educational relation uses ΔH° and R",
+  "R_J_molK": 8.314462618
+ },
+ "acidBase": {
+  "definitions": {
+   "bronsed": "acid donates proton; base accepts proton",
+   "pH": "-log10(aH+), educational concentration approximation may use -log10[H+]",
+   "pOH": "-log10[OH-]"
+  },
+  "constants": {
+   "Kw25C": 1e-14
+  },
+  "records": [
+   {
+    "id": "HCl",
+    "type": "strong_acid",
+    "educational": "complete_dissociation"
+   },
+   {
+    "id": "NaOH",
+    "type": "strong_base",
+    "educational": "complete_dissociation"
+   },
+   {
+    "id": "CH3COOH",
+    "type": "weak_acid",
+    "Ka": 1.75e-05
+   },
+   {
+    "id": "NH3",
+    "type": "weak_base",
+    "Kb": 1.8e-05
+   }
+  ]
+ },
+ "buffers": {
+  "hendersonHasselbalch": "pH=pKa+log10([A-]/[HA])",
+  "limitations": [
+   "idealized educational model",
+   "activity effects omitted unless supplied"
+  ]
+ },
+ "titration": {
+  "types": [
+   "strong-strong",
+   "strong-weak",
+   "weak-strong"
+  ],
+  "equivalence": "stoichiometric neutralization point"
+ },
+ "solubility": {
+  "records": [
+   {
+    "id": "AgCl",
+    "formula": "AgCl",
+    "Ksp_educational": 1.8e-10,
+    "ions": [
+     "Ag+",
+     "Cl-"
+    ],
+    "sourceType": "EDUCATIONAL_REFERENCE"
+   },
+   {
+    "id": "BaSO4",
+    "formula": "BaSO4",
+    "Ksp_educational": 1.1e-10,
+    "ions": [
+     "Ba2+",
+     "SO4^2-"
+    ],
+    "sourceType": "EDUCATIONAL_REFERENCE"
+   }
+  ]
+ },
+ "redox": {
+  "concepts": [
+   "oxidation",
+   "reduction",
+   "oxidation_state",
+   "electron_transfer",
+   "oxidizing_agent",
+   "reducing_agent"
+  ]
+ },
+ "electrochemistry": {
+  "constants": {
+   "F_C_mol": 96485.33212
+  },
+  "cells": [
+   "galvanic",
+   "electrolytic"
+  ],
+  "relations": {
+   "Ecell": "E°cathode-E°anode",
+   "deltaG": "-nFE"
+  }
+ },
+ "metals": {
+  "activitySeries": [
+   {
+    "symbol": "K",
+    "relative": "very_high"
+   },
+   {
+    "symbol": "Ca",
+    "relative": "high"
+   },
+   {
+    "symbol": "Mg",
+    "relative": "high"
+   },
+   {
+    "symbol": "Al",
+    "relative": "passivated"
+   },
+   {
+    "symbol": "Zn",
+    "relative": "medium"
+   },
+   {
+    "symbol": "Fe",
+    "relative": "medium"
+   },
+   {
+    "symbol": "H",
+    "relative": "reference"
+   },
+   {
+    "symbol": "Cu",
+    "relative": "low"
+   },
+   {
+    "symbol": "Ag",
+    "relative": "very_low"
+   }
+  ],
+  "note": "relative educational ordering; not a numerical thermodynamic scale"
+ },
+ "methodology": {
+  "steps": [
+   "problem",
+   "hypothesis",
+   "variables",
+   "procedure",
+   "observation",
+   "data",
+   "analysis",
+   "conclusion",
+   "uncertainty",
+   "safety"
+  ]
+ },
+ "quality": {
+  "levels": [
+   "EDUCATIONAL_MODEL",
+   "ESTIMATED",
+   "COMPUTED",
+   "DATABASE",
+   "EXPERIMENTAL"
+  ],
+  "requiredReferenceFields": [
+   "value",
+   "unit",
+   "definition",
+   "conditions",
+   "source",
+   "limitations"
+  ]
+ }
+}

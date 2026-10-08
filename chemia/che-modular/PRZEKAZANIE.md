@@ -47,7 +47,10 @@ node tools/test_lekcje.cjs --wzorzec=dist/_wz/wzorzec.json   # z porównaniem tr
 
 ## 5. Następne kroki (propozycja, kolejność do potwierdzenia)
 
-1. **Dane według dziedzin jako czyste pliki:** z mapy sekcji wyciągnąć `CHE.DATA` (pierwiastki, izotopy, reakcje, substancje, kwasy…) do `engine/src/dane/<dziedzina>.json`, ładowane wg dziedzin lekcji — lekcja bierze tylko swoje dane (większy zysk niż ddmin).
+1. **Dane według dziedzin jako czyste pliki** (w toku):
+   - 1a ✅ eksport: `python3 tools/che.py dane` → `engine/src/dane/<podmoduł>.json` + `_indeks.json` (121 kluczy CHE.DATA, 116 czystych JSON; 5 z funkcjami: `SCIENCE_CORE_V288`, `*_V387/V406/V407`, `CIAAW_ATOMIC_WEIGHTS_AUDIT`; współdzielone obiekty w 4 kluczach; znaczniki czasu → `$czas`). `--sprawdz` = sha1 każdego klucza vs silnik (deterministyczne). Silnik bez zmian.
+   - 1b: które klucze czyta każda lekcja (Proxy na `CHE.DATA` w `test_lekcje.cjs`) → mapa lekcja → klucze, zestawienie z `domains.json`.
+   - 1c: pakiet lekcji ładuje dane z JSON zamiast sekcji danych (wstrzyknięcie przed sekcjami, które je tworzą) — test: 11/11 OK + `--sprawdz` po starcie lekcji.
 2. Profil per lekcja (zamiast jednego wspólnego) na bazie dziedzin z `engine/registry/lessons.json`.
 3. Przerobić `f05-izotopy-v01` na komponenty atlasu.
 4. Odchudzanie CSS/DOM z porównaniem zrzutów.

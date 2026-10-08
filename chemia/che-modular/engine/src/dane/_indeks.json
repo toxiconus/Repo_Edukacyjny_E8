@@ -1,0 +1,637 @@
+{
+ "ACIDS": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "e96e6583d128"
+ },
+ "ACID_BASE_REFERENCE_NORMALIZATION_V407": {
+  "czysty": false,
+  "dziedzina": "dane-kwasy-zasady",
+  "flagi": {
+   "fn": 1
+  },
+  "sha1": "aabf8bacec9b"
+ },
+ "ACID_STRENGTH": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "6a356be23a4f"
+ },
+ "ACID_SYSTEMS": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "1ee7e15e2299"
+ },
+ "AGCL_SOLUBILITY_PROVENANCE_V406": {
+  "czysty": false,
+  "dziedzina": "dane-kwasy-zasady",
+  "flagi": {
+   "fn": 1
+  },
+  "sha1": "84bc41281ce5"
+ },
+ "ATOMIC_DATA_REQUIREMENTS": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "4d1be194c9ed"
+ },
+ "ATOMIC_MASS": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "49000fc54b88"
+ },
+ "ATOMIC_PROFILES": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "e62ca72884c2"
+ },
+ "ATOMIC_PROPS": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "4c89059fd7c4"
+ },
+ "ATOMIC_PROP_META": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "0486fe80d264"
+ },
+ "ATOMIC_SPECTRA": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "4bc2071cbd34"
+ },
+ "ATOMIC_WEIGHT_REFERENCE": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "75de2b2e41d4"
+ },
+ "ATOM_META": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "44ab0d48a722"
+ },
+ "BIOMOLECULE_CHEMISTRY_V404": {
+  "czysty": true,
+  "dziedzina": "dane-substancje",
+  "sha1": "0257a2e86163"
+ },
+ "BOND_TYPES": {
+  "czysty": true,
+  "dziedzina": "dane-substancje",
+  "sha1": "9c0c4c378846"
+ },
+ "CHAR_COLORS": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "4913964ca107"
+ },
+ "CIAAW_ATOMIC_WEIGHTS_2024": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "ecd9821908c0"
+ },
+ "CIAAW_ATOMIC_WEIGHTS_AUDIT": {
+  "czysty": false,
+  "dziedzina": "dane-pierwiastki",
+  "flagi": {
+   "fn": 1
+  },
+  "sha1": "e54dbc6e256b"
+ },
+ "COLOR_DB": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "4f5b751f86b8"
+ },
+ "COMPOUNDS": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "79648284dd3b"
+ },
+ "CONCEPTS": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "9b238e3f3a75"
+ },
+ "E8": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "7439d6c55e9a"
+ },
+ "EDU": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "07d816cb62d7"
+ },
+ "EDUCATION_CLOSURE_V313": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "619da3835fd0"
+ },
+ "EDUCATION_CORE_V304": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "516a67fcd995"
+ },
+ "EDUCATION_MASS_V306": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "f989cb46f655"
+ },
+ "EDUCATION_MASS_V307": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "98b311c1627b"
+ },
+ "EDUCATION_MASS_V308": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "f65cc642023f"
+ },
+ "EDUCATION_MASS_V309": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "flagi": {
+   "wspolne": 142
+  },
+  "sha1": "5c5319539058"
+ },
+ "EDUCATION_MASS_V310": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "flagi": {
+   "wspolne": 47
+  },
+  "sha1": "7dfe0e4cd9aa"
+ },
+ "EDUCATION_MASS_V311": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "9caf66d0c09f"
+ },
+ "EDUCATION_MAX_V314": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "81bb3e28458e"
+ },
+ "EDUCATION_MAX_V315": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "c4d9a3e25c22"
+ },
+ "EDUCATION_P0_V305": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "a0fe44dcd746"
+ },
+ "ELECTROCHEM_REFERENCE_ROWS_V387": {
+  "czysty": false,
+  "dziedzina": "dane-termo-redoks",
+  "flagi": {
+   "fn": 1
+  },
+  "sha1": "1a5301e14896"
+ },
+ "ELECTRO_REFERENCE": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "95367ad2d3d9"
+ },
+ "ELEM": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "b8c8e1541960"
+ },
+ "ELEMENTS_118": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "26a32f4cc335"
+ },
+ "ELEMENTS_54": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "9df0de4f8a5e"
+ },
+ "ELEMENT_INDEX_V283": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "f3a89bc9c7b2"
+ },
+ "EQUILIBRIA_VERIFIED_2026": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "543dafdeb8d6"
+ },
+ "EQUILIBRIA_VERIFIED_REFERENCE": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "3546e4628778"
+ },
+ "FIRST_IONIZATION_ENERGY": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "a5a02ec92a21"
+ },
+ "FUNCTIONAL_GROUPS": {
+  "czysty": true,
+  "dziedzina": "dane-substancje",
+  "sha1": "2e6e6c0096f7"
+ },
+ "HYDROXIDES": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "9a12e7dd8525"
+ },
+ "INDICATORS": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "31916b739893"
+ },
+ "INDICATOR_RANGES": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "8fef2986a0dc"
+ },
+ "ISOTOPES": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "902905c43849"
+ },
+ "ISOTOPES_REFERENCE": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "88c448a0da2c"
+ },
+ "ISOTOPE_SCIENCE_CONTRACT": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "flagi": {
+   "wspolne": 333
+  },
+  "sha1": "5b19df8a1780"
+ },
+ "ISOTOPE_VERIFIED_CANDIDATES": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "0b7357f65ce0"
+ },
+ "KINETICS": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "4a934fef70ed"
+ },
+ "LO_CHEM_MAX381_388": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "1a310b81cf51"
+ },
+ "LO_CHEM_MAX389_396": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "9f914963f7b5"
+ },
+ "METAL_ACTIVE": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "457111cc0625"
+ },
+ "METAL_SERIES": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "26f778c56c43"
+ },
+ "MODEL_LIMITS": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "bb571d8cacd1"
+ },
+ "MOL2D": {
+  "czysty": true,
+  "dziedzina": "dane-substancje",
+  "sha1": "e6a585934f78"
+ },
+ "MOL3D": {
+  "czysty": true,
+  "dziedzina": "dane-substancje",
+  "sha1": "ca721b906b83"
+ },
+ "MOL3D_SETS": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "919a86d65395"
+ },
+ "MOLECULES": {
+  "czysty": true,
+  "dziedzina": "dane-substancje",
+  "sha1": "4e19f61bd606"
+ },
+ "MOLECULE_INDEX_V283": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "5660b4302bee"
+ },
+ "NEW_REFERENCE_DATA_V290": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "a92f59f39696"
+ },
+ "NOT_OXIDES": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "aacf6d319394"
+ },
+ "NUCLEAR_DATA": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "c9e882c77c5b"
+ },
+ "OXIDES": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "7c0b96264a9c"
+ },
+ "OXIDE_STATES": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "b50cb4696a87"
+ },
+ "PHYSICAL_PROPS": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "7aa2cd81217a"
+ },
+ "PROJECT_KNOWLEDGE_BASE": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "729a1b220db2"
+ },
+ "QUANTUM_RULES": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "f2615b2e6113"
+ },
+ "REACTIONS": {
+  "czysty": true,
+  "dziedzina": "dane-reakcje",
+  "sha1": "c1831d38b641"
+ },
+ "REACTION_DATA": {
+  "czysty": true,
+  "dziedzina": "dane-reakcje",
+  "flagi": {
+   "wspolne": 2
+  },
+  "sha1": "167a418d0f72"
+ },
+ "REACTION_INDEX_V283": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "45d1bfbf6b5b"
+ },
+ "REACTION_TYPE_NAMES": {
+  "czysty": true,
+  "dziedzina": "dane-reakcje",
+  "sha1": "9c6d984a4e7e"
+ },
+ "REDOX_CONTEXT": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "04186d0f5e67"
+ },
+ "REDOX_POTENTIALS": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "fb4394714c2f"
+ },
+ "REFERENCE_EQUILIBRIA_V273": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "543dafdeb8d6"
+ },
+ "REFERENCE_THERMO_V273": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "e8455b22f1fa"
+ },
+ "SCHOOL_PACK": {
+  "czysty": true,
+  "dziedzina": "edukacja",
+  "sha1": "b3b076b446bc"
+ },
+ "SCIENCE_BATCH_REFERENCE_V291": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "3003aefe283d"
+ },
+ "SCIENCE_BATCH_REFERENCE_V292": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "1d3f8f64b531"
+ },
+ "SCIENCE_BATCH_REFERENCE_V293": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "e337be403f6d"
+ },
+ "SCIENCE_BATCH_REFERENCE_V294": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "65020bd62ab3"
+ },
+ "SCIENCE_BATCH_REFERENCE_V295": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "0e01501f5d5c"
+ },
+ "SCIENCE_BATCH_REFERENCE_V296": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "641f9746f41e"
+ },
+ "SCIENCE_BATCH_REFERENCE_V297": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "c0a34b8f33ae"
+ },
+ "SCIENCE_CORE_V288": {
+  "czysty": false,
+  "dziedzina": "nauka-referencje",
+  "flagi": {
+   "fn": 3
+  },
+  "sha1": "e810343f2bad"
+ },
+ "SCIENCE_EQUILIBRIA_REFERENCE_V298": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "14ead0f511a0"
+ },
+ "SCIENCE_EQUILIBRIA_REFERENCE_V299": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "6fb7addd0b31"
+ },
+ "SCIENCE_HENRY_REFERENCE_V301": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "fc98d73ad850"
+ },
+ "SCIENCE_HENRY_REFERENCE_V302": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "562f71199020"
+ },
+ "SCIENCE_PKA_REFERENCE_V300": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "cdf6d2c8b94a"
+ },
+ "SCIENCE_REFERENCE_CORE_V287": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "981d158b1c37"
+ },
+ "SCIENCE_SMALL_BASES_V286": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "e7328c300a36"
+ },
+ "SCIENCE_VERIFICATION_LEDGER_V289": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "flagi": {
+   "czas": 94
+  },
+  "sha1": "5327e23e14f6"
+ },
+ "SIMPLE_BASE_FINAL_V284": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "98703c5d1e2a"
+ },
+ "SOLUBILITY": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "526045f747c8"
+ },
+ "SOLUBILITY_TABLE": {
+  "czysty": true,
+  "dziedzina": "inne",
+  "sha1": "28fad34d49f4"
+ },
+ "SOURCE_REGISTRY": {
+  "czysty": true,
+  "dziedzina": "nauka-referencje",
+  "sha1": "8cfa6fa6b449"
+ },
+ "SUBSTANCES": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "b38c8a0d0d74"
+ },
+ "SUBSTANCE_INDEX_V283": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "16ddd7e8e0b1"
+ },
+ "THERMOCHEM": {
+  "czysty": true,
+  "dziedzina": "dane-jadrowe",
+  "sha1": "fba63ea5676b"
+ },
+ "THERMO_CONTEXT": {
+  "czysty": true,
+  "dziedzina": "dane-pierwiastki",
+  "sha1": "d336c787c057"
+ },
+ "THERMO_REFERENCE": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "8caf5c1e091c"
+ },
+ "THERMO_VERIFIED_REFERENCE": {
+  "czysty": true,
+  "dziedzina": "dane-termo-redoks",
+  "sha1": "15c3cdcf6e2d"
+ },
+ "TIMELINE": {
+  "czysty": true,
+  "dziedzina": "dane-kwasy-zasady",
+  "sha1": "e2332a8e4d31"
+ },
+ "acidBase": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "cd35336f8d56"
+ },
+ "biochemistry": {
+  "czysty": true,
+  "dziedzina": "organiczna",
+  "sha1": "30c100b14ca7"
+ },
+ "buffers": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "facac9b7bddc"
+ },
+ "electrochemistry": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "8869ff2cb646"
+ },
+ "equilibrium": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "b7f1be6a5c85"
+ },
+ "inorganic": {
+  "czysty": true,
+  "dziedzina": "organiczna",
+  "sha1": "29d0c0e1abf6"
+ },
+ "metals": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "1dcfd973c625"
+ },
+ "methodology": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "b8b7a16e1929"
+ },
+ "organic": {
+  "czysty": true,
+  "dziedzina": "organiczna",
+  "sha1": "568dadf87d14"
+ },
+ "quality": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "6a416865dda5"
+ },
+ "redox": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "4296f46a3ce5"
+ },
+ "solubility": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "493a0b3052f7"
+ },
+ "thermoEquilibrium": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "0df63a4b0ed8"
+ },
+ "thermoKinetics": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "a2e4274c0a72"
+ },
+ "titration": {
+  "czysty": true,
+  "dziedzina": "audyt",
+  "sha1": "63fb48c369b3"
+ }
+}

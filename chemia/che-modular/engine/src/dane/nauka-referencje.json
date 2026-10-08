@@ -1,0 +1,2532 @@
+{
+ "SOURCE_REGISTRY": {
+  "CIAAW_AW_2024": {
+   "id": "CIAAW_AW_2024",
+   "name": "CIAAW Standard Atomic Weights 2024",
+   "url": "https://www.ciaaw.org/atomic-weights.htm",
+   "scope": "standard atomic weights / intervals / no-standard cases"
+  },
+  "CIAAW_ISO_2024": {
+   "id": "CIAAW_ISO_2024",
+   "name": "CIAAW Isotopic Compositions 2024",
+   "url": "https://www.ciaaw.org/isotopic-abundances.htm",
+   "scope": "representative isotopic compositions"
+  },
+  "NUBASE2020": {
+   "id": "NUBASE2020",
+   "name": "NUBASE2020",
+   "url": "https://amdc.impcas.ac.cn/web/nubase_en.html",
+   "scope": "nuclide masses, half-lives, decay, spin/parity"
+  },
+  "NIST_WEBBOOK": {
+   "id": "NIST_WEBBOOK",
+   "name": "NIST Chemistry WebBook SRD 69",
+   "url": "https://webbook.nist.gov/chemistry/",
+   "scope": "thermochemistry, ion energetics and selected physical data"
+  },
+  "NIST_ASD": {
+   "id": "NIST_ASD",
+   "name": "NIST Atomic Spectra Database",
+   "url": "https://physics.nist.gov/asd",
+   "scope": "atomic levels, wavelengths and ionization energies"
+  },
+  "OPENSTAX_CHEMISTRY_2E": {
+   "id": "OPENSTAX_CHEMISTRY_2E",
+   "name": "OpenStax Chemistry 2e",
+   "url": "https://openstax.org/details/books/chemistry-2e",
+   "scope": "standard electrode potential table and stated standard-state conventions"
+  }
+ },
+ "SCIENCE_REFERENCE_CORE_V287": {
+  "version": "2.87",
+  "contextContract": {
+   "required": [
+    "source",
+    "status",
+    "temperature",
+    "pressure",
+    "phase",
+    "medium",
+    "unit"
+   ],
+   "rule": "reference data must retain value meaning, conditions and provenance; missing fields remain missing",
+   "statuses": [
+    "REFERENCE_DEFINITION",
+    "REFERENCE_DATA",
+    "VERIFIED_REFERENCE",
+    "VERIFIED",
+    "COMPUTED",
+    "ESTIMATED",
+    "EDUCATIONAL_APPROXIMATION",
+    "USER_DEFINED",
+    "UNVERIFIED"
+   ]
+  },
+  "families": {
+   "atomicWeight": [
+    "ATOMIC_WEIGHT_REFERENCE",
+    "ATOMIC_WEIGHT_REFERENCE_V259",
+    "ATOMIC_PROVENANCE"
+   ],
+   "ionizationEnergy": [
+    "ATOMIC_PROPS",
+    "ATOMIC_PROVENANCE"
+   ],
+   "isotopes": [
+    "ISOTOPE_SCIENCE_CONTRACT",
+    "ISOTOPE_SCIENCE_AUDIT"
+   ],
+   "thermochemistry": [
+    "THERMO_VERIFIED_REFERENCE",
+    "THERMO_REFERENCE",
+    "REFERENCE_VERIFIED_V281"
+   ],
+   "equilibrium": [
+    "EQUILIBRIA_REFERENCE",
+    "EQUILIBRIA_VERIFIED_REFERENCE",
+    "REFERENCE_VERIFIED_V281"
+   ],
+   "electrochemistry": [
+    "ELECTRO_REFERENCE",
+    "ELECTRO_REFERENCE_CONTRACT_V281",
+    "ELECTRO_REFERENCE_CONTRACT"
+   ],
+   "pH": [
+    "SCIENCE_SMALL_BASES_V286"
+   ],
+   "reactions": [
+    "REACTIONS",
+    "REACTION_DATA",
+    "REACTION_AUDIT_V273"
+   ]
+  },
+  "audit": {
+   "version": "2.87",
+   "families": {
+    "atomicWeight": {
+     "present": [
+      "ATOMIC_WEIGHT_REFERENCE",
+      "ATOMIC_PROVENANCE"
+     ],
+     "available": true
+    },
+    "ionizationEnergy": {
+     "present": [
+      "ATOMIC_PROPS",
+      "ATOMIC_PROVENANCE"
+     ],
+     "available": true
+    },
+    "isotopes": {
+     "present": [
+      "ISOTOPE_SCIENCE_CONTRACT",
+      "ISOTOPE_SCIENCE_AUDIT"
+     ],
+     "available": true
+    },
+    "thermochemistry": {
+     "present": [
+      "THERMO_VERIFIED_REFERENCE",
+      "THERMO_REFERENCE",
+      "REFERENCE_VERIFIED_V281"
+     ],
+     "available": true
+    },
+    "equilibrium": {
+     "present": [
+      "EQUILIBRIA_REFERENCE",
+      "EQUILIBRIA_VERIFIED_REFERENCE",
+      "REFERENCE_VERIFIED_V281"
+     ],
+     "available": true
+    },
+    "electrochemistry": {
+     "present": [
+      "ELECTRO_REFERENCE",
+      "ELECTRO_REFERENCE_CONTRACT_V281"
+     ],
+     "available": true
+    },
+    "pH": {
+     "present": [
+      "SCIENCE_SMALL_BASES_V286"
+     ],
+     "available": true
+    },
+    "reactions": {
+     "present": [
+      "REACTIONS",
+      "REACTION_DATA",
+      "REACTION_AUDIT_V273"
+     ],
+     "available": true
+    }
+   },
+   "counts": {
+    "thermochemistry": 8,
+    "equilibrium": 3,
+    "ph": 1
+   },
+   "contextComplete": {
+    "thermochemistry": 0,
+    "equilibrium": 3
+   },
+   "pHDefinitionReference": true,
+   "sourceRegistryPresent": true,
+   "scientificGate": false,
+   "policy": "read-only aggregation of existing source-backed layers; no duplicated scientific database; no inferred values"
+  }
+ },
+ "SCIENCE_CORE_V288": {
+  "version": "2.88",
+  "context": {
+   "temperature": {
+    "value": 298.15,
+    "unit": "K",
+    "type": "fixed_reference"
+   },
+   "pressure": {
+    "value": 1,
+    "unit": "bar",
+    "type": "standard_pressure"
+   },
+   "phaseRequired": true,
+   "uncertaintyRequired": true,
+   "sourceRequired": true
+  },
+  "sources": {
+   "NIST_WEBBOOK": {
+    "name": "NIST Chemistry WebBook SRD 69",
+    "url": "https://webbook.nist.gov/chemistry/",
+    "accessed": "2026-10-02"
+   },
+   "IUPAC_GOLD_BOOK": {
+    "name": "IUPAC Compendium of Chemical Terminology / Gold Book",
+    "url": "https://goldbook.iupac.org/",
+    "accessed": "2026-10-02"
+   }
+  },
+  "thermochemistry": {
+   "H2O(l)": {
+    "cas": "7732-18-5",
+    "phase": "liquid",
+    "T": 298.15,
+    "P": 1,
+    "dHf": {
+     "value": -285.83,
+     "uncertainty": 0.04,
+     "unit": "kJ/mol"
+    },
+    "S": {
+     "value": 69.95,
+     "uncertainty": 0.03,
+     "unit": "J/mol/K"
+    },
+    "source": "NIST_WEBBOOK",
+    "status": "REFERENCE_DATA",
+    "basis": "CODATA Review value"
+   },
+   "H2O(g)": {
+    "cas": "7732-18-5",
+    "phase": "gas",
+    "T": 298.15,
+    "P": 1,
+    "dHf": {
+     "value": -241.826,
+     "uncertainty": 0.04,
+     "unit": "kJ/mol"
+    },
+    "S": {
+     "value": 188.835,
+     "uncertainty": 0.01,
+     "unit": "J/mol/K"
+    },
+    "source": "NIST_WEBBOOK",
+    "status": "REFERENCE_DATA",
+    "basis": "CODATA Review value"
+   },
+   "CO2(g)": {
+    "cas": "124-38-9",
+    "phase": "gas",
+    "T": 298.15,
+    "P": 1,
+    "dHf": {
+     "value": -393.51,
+     "uncertainty": 0.13,
+     "unit": "kJ/mol"
+    },
+    "S": {
+     "value": 213.785,
+     "uncertainty": 0.01,
+     "unit": "J/mol/K"
+    },
+    "source": "NIST_WEBBOOK",
+    "status": "REFERENCE_DATA",
+    "basis": "CODATA Review value"
+   },
+   "HCl(g)": {
+    "cas": "7647-01-0",
+    "phase": "gas",
+    "T": 298.15,
+    "P": 1,
+    "dHf": {
+     "value": -92.31,
+     "uncertainty": 0.1,
+     "unit": "kJ/mol"
+    },
+    "S": {
+     "value": 186.902,
+     "uncertainty": 0.005,
+     "unit": "J/mol/K"
+    },
+    "source": "NIST_WEBBOOK",
+    "status": "REFERENCE_DATA",
+    "basis": "CODATA Review value"
+   }
+  },
+  "shomate": {
+   "H2O(l)": {
+    "ranges": [
+     {
+      "T": [
+       298,
+       500
+      ],
+      "A": -203.606,
+      "B": 1523.29,
+      "C": -3196.413,
+      "D": 2474.455,
+      "E": 3.855326,
+      "F": -256.5478,
+      "G": -488.7163,
+      "H": -285.8304
+     }
+    ],
+    "units": {
+     "Cp": "J/mol/K",
+     "H": "kJ/mol",
+     "S": "J/mol/K"
+    },
+    "source": "NIST_WEBBOOK"
+   },
+   "H2O(g)": {
+    "ranges": [
+     {
+      "T": [
+       500,
+       1700
+      ],
+      "A": 30.092,
+      "B": 6.832514,
+      "C": 6.793435,
+      "D": -2.53448,
+      "E": 0.082139,
+      "F": -250.881,
+      "G": 223.3967,
+      "H": -241.8264
+     },
+     {
+      "T": [
+       1700,
+       6000
+      ],
+      "A": 41.96426,
+      "B": 8.622053,
+      "C": -1.49978,
+      "D": 0.098119,
+      "E": -11.15764,
+      "F": -272.1797,
+      "G": 219.7809,
+      "H": -241.8264
+     }
+    ],
+    "units": {
+     "Cp": "J/mol/K",
+     "H": "kJ/mol",
+     "S": "J/mol/K"
+    },
+    "source": "NIST_WEBBOOK"
+   },
+   "CO2(g)": {
+    "ranges": [
+     {
+      "T": [
+       298,
+       1200
+      ],
+      "A": 24.99735,
+      "B": 55.18696,
+      "C": -33.69137,
+      "D": 7.948387,
+      "E": -0.136638,
+      "F": -403.6075,
+      "G": 228.2431,
+      "H": -393.5224
+     },
+     {
+      "T": [
+       1200,
+       6000
+      ],
+      "A": 58.16639,
+      "B": 2.720074,
+      "C": -0.492289,
+      "D": 0.038844,
+      "E": -6.447293,
+      "F": -425.9186,
+      "G": 263.6125,
+      "H": -393.5224
+     }
+    ],
+    "units": {
+     "Cp": "J/mol/K",
+     "H": "kJ/mol",
+     "S": "J/mol/K"
+    },
+    "source": "NIST_WEBBOOK"
+   },
+   "HCl(g)": {
+    "ranges": [
+     {
+      "T": [
+       298,
+       1200
+      ],
+      "A": 32.12392,
+      "B": -13.45805,
+      "C": 19.86852,
+      "D": -6.853936,
+      "E": -0.049672,
+      "F": -101.6206,
+      "G": 228.6866,
+      "H": -92.31201
+     },
+     {
+      "T": [
+       1200,
+       6000
+      ],
+      "A": 31.91923,
+      "B": 3.203184,
+      "C": -0.541539,
+      "D": 0.035925,
+      "E": -3.438525,
+      "F": -108.015,
+      "G": 218.2768,
+      "H": -92.31201
+     }
+    ],
+    "units": {
+     "Cp": "J/mol/K",
+     "H": "kJ/mol",
+     "S": "J/mol/K"
+    },
+    "source": "NIST_WEBBOOK"
+   }
+  },
+  "cp": {
+   "$fn": "function cp(id,T){const s=shomate[id]; if(!s||!Number.isFinite(T))return null; const r=s.ranges.find(x=>T>=x.T[0]&&T<=x.T[1]); if(!r)return null; const t=T/1000; return r.A+r.B*t+r.C*t*t+r.D*t*t*t+r.E/(t*t);}"
+  },
+  "readiness": {
+   "$fn": "function readiness(){const rows=Object.entries(thermo).map(([id,r])=>({id,ready:validRecord(r),sourceKnown:!!SRC[r.source],cpModel:!!shomate[id]}));return {total:rows.length,ready:rows.filter(x=>x.ready).length,cpReady:rows.filter(x=>x.cpModel).length,rows};}"
+  },
+  "audit": {
+   "$fn": "function audit(){const a=readiness();return {version:'2.88',ok:a.ready===a.total&&a.cpReady===a.total,context:ctx,sourceRegistry:SRC,records:a};}"
+  }
+ },
+ "SCIENCE_VERIFICATION_LEDGER_V289": {
+  "version": "2.89",
+  "policy": "VERIFIED_ONCE_HARD_LOCK",
+  "rule": "verified fingerprint is skipped unless FORCE_REVERIFY is explicitly requested",
+  "records": {
+   "THERMO:H2O(l)": {
+    "id": "THERMO:H2O(l)",
+    "fingerprint": "03493781",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": null,
+    "verification": "PREVIOUSLY_VERIFIED_REFERENCE_DATA"
+   },
+   "THERMO:H2O(g)": {
+    "id": "THERMO:H2O(g)",
+    "fingerprint": "1743833f",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": null,
+    "verification": "PREVIOUSLY_VERIFIED_REFERENCE_DATA"
+   },
+   "THERMO:CO2(g)": {
+    "id": "THERMO:CO2(g)",
+    "fingerprint": "88677422",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": null,
+    "verification": "PREVIOUSLY_VERIFIED_REFERENCE_DATA"
+   },
+   "THERMO:HCl(g)": {
+    "id": "THERMO:HCl(g)",
+    "fingerprint": "c674fdd5",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": null,
+    "verification": "PREVIOUSLY_VERIFIED_REFERENCE_DATA"
+   },
+   "NEWREF:ATOM:Na(g)": {
+    "id": "NEWREF:ATOM:Na(g)",
+    "fingerprint": "59078a1d",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NEWREF:ATOM:Cl(g)": {
+    "id": "NEWREF:ATOM:Cl(g)",
+    "fingerprint": "35202e6b",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NEWREF:ATOM:Cl(g):S0": {
+    "id": "NEWREF:ATOM:Cl(g):S0",
+    "fingerprint": "77470d1c",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST291:H2(g)": {
+    "id": "NIST291:H2(g)",
+    "fingerprint": "c8106c11",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST291:N2(g)": {
+    "id": "NIST291:N2(g)",
+    "fingerprint": "259df70d",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST291:O2(g)": {
+    "id": "NIST291:O2(g)",
+    "fingerprint": "68fe5868",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST291:CH4(g)": {
+    "id": "NIST291:CH4(g)",
+    "fingerprint": "2bec755e",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST292:NH3(g)": {
+    "id": "NIST292:NH3(g)",
+    "fingerprint": "293a0b35",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST292:CO(g)": {
+    "id": "NIST292:CO(g)",
+    "fingerprint": "c2b2d67f",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST292:SO2(g)": {
+    "id": "NIST292:SO2(g)",
+    "fingerprint": "f16594d2",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST293:H2O2(g)": {
+    "id": "NIST293:H2O2(g)",
+    "fingerprint": "c72754e8",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST293:NO(g)": {
+    "id": "NIST293:NO(g)",
+    "fingerprint": "1e0c5850",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST293:NO2(g)": {
+    "id": "NIST293:NO2(g)",
+    "fingerprint": "7a8f1582",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST293:SO3(g)": {
+    "id": "NIST293:SO3(g)",
+    "fingerprint": "c8aefee3",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST294:H2S(g)": {
+    "id": "NIST294:H2S(g)",
+    "fingerprint": "98dcc72a",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST295:N2O(g)": {
+    "id": "NIST295:N2O(g)",
+    "fingerprint": "e023babf",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST295:HF(g)": {
+    "id": "NIST295:HF(g)",
+    "fingerprint": "81e3c763",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST295:HBr(g)": {
+    "id": "NIST295:HBr(g)",
+    "fingerprint": "191e6cbd",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST295:HI(g)": {
+    "id": "NIST295:HI(g)",
+    "fingerprint": "253c35f2",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST295:Br2(g)": {
+    "id": "NIST295:Br2(g)",
+    "fingerprint": "84fc262f",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST295:I2(g)": {
+    "id": "NIST295:I2(g)",
+    "fingerprint": "a3dc088a",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST296:Cl2(g)": {
+    "id": "NIST296:Cl2(g)",
+    "fingerprint": "edb3a7f1",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST296:Br2(l)": {
+    "id": "NIST296:Br2(l)",
+    "fingerprint": "b095dce9",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST296:I2(condensed)": {
+    "id": "NIST296:I2(condensed)",
+    "fingerprint": "7cb1536e",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST297:NaOH(s)": {
+    "id": "NIST297:NaOH(s)",
+    "fingerprint": "7405fb07",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST297:CaO(s)": {
+    "id": "NIST297:CaO(s)",
+    "fingerprint": "44fe769d",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST297:NaCl(s)": {
+    "id": "NIST297:NaCl(s)",
+    "fingerprint": "e70418f7",
+    "verifiedAt": "$czas",
+    "source": "NIST_WEBBOOK",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "EQ298:AgCl(aq-equilibrium)": {
+    "id": "EQ298:AgCl(aq-equilibrium)",
+    "fingerprint": "dd8b5f5f",
+    "verifiedAt": "$czas",
+    "source": "EPA_SILVER_KSP",
+    "sourceVersion": null,
+    "verification": "SOURCE_CHECKED"
+   },
+   "EQ298:AgBr(aq-equilibrium)": {
+    "id": "EQ298:AgBr(aq-equilibrium)",
+    "fingerprint": "f2ef27e5",
+    "verifiedAt": "$czas",
+    "source": "EPA_SILVER_KSP",
+    "sourceVersion": null,
+    "verification": "SOURCE_CHECKED"
+   },
+   "EQ298:AgI(aq-equilibrium)": {
+    "id": "EQ298:AgI(aq-equilibrium)",
+    "fingerprint": "e69aa013",
+    "verifiedAt": "$czas",
+    "source": "EPA_SILVER_KSP",
+    "sourceVersion": null,
+    "verification": "SOURCE_CHECKED"
+   },
+   "EQ298:[Ag(NH3)2]+": {
+    "id": "EQ298:[Ag(NH3)2]+",
+    "fingerprint": "a9660483",
+    "verifiedAt": "$czas",
+    "source": "UT_AUSTIN_KF",
+    "sourceVersion": null,
+    "verification": "SOURCE_CHECKED"
+   },
+   "EQ298:[Cu(NH3)4]2+": {
+    "id": "EQ298:[Cu(NH3)4]2+",
+    "fingerprint": "71737859",
+    "verifiedAt": "$czas",
+    "source": "UT_AUSTIN_KF",
+    "sourceVersion": null,
+    "verification": "SOURCE_CHECKED"
+   },
+   "EQ298:[Fe(CN)6]4-": {
+    "id": "EQ298:[Fe(CN)6]4-",
+    "fingerprint": "8ac42e3a",
+    "verifiedAt": "$czas",
+    "source": "UT_AUSTIN_KF",
+    "sourceVersion": null,
+    "verification": "SOURCE_CHECKED"
+   },
+   "EQ299:Kw-water-298.15K": {
+    "id": "EQ299:Kw-water-298.15K",
+    "fingerprint": "c6b60c3a",
+    "verifiedAt": "$czas",
+    "source": "NIST/IAPWS water-ionization reference; educational concentration form cross-check",
+    "sourceVersion": "IAPWS R11-24 / NIST 2025",
+    "verification": "SOURCE_CHECKED_CONDITIONAL"
+   },
+   "NIST301:H2S(g)-water-298.15-Hs-bp": {
+    "id": "NIST301:H2S(g)-water-298.15-Hs-bp",
+    "fingerprint": "6aec85f2",
+    "verifiedAt": "$czas",
+    "source": "NIST Chemistry WebBook SRD 69; Rolf Sander compilation",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED"
+   },
+   "NIST302:O2(g)-water-298.15-Hs-bp": {
+    "id": "NIST302:O2(g)-water-298.15-Hs-bp",
+    "fingerprint": "bbbb7f07",
+    "verifiedAt": "$czas",
+    "source": "NIST Chemistry WebBook SRD 69; Rolf Sander compilation",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED_DATABASE_ONLY"
+   },
+   "NIST302:CO2(g)-water-298.15-Hs-bp": {
+    "id": "NIST302:CO2(g)-water-298.15-Hs-bp",
+    "fingerprint": "aeda7937",
+    "verifiedAt": "$czas",
+    "source": "NIST Chemistry WebBook SRD 69; Rolf Sander compilation",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED_DATABASE_ONLY"
+   },
+   "NIST302:NH3(g)-water-298.15-Hs-bp": {
+    "id": "NIST302:NH3(g)-water-298.15-Hs-bp",
+    "fingerprint": "51706c74",
+    "verifiedAt": "$czas",
+    "source": "NIST Chemistry WebBook SRD 69; Rolf Sander compilation",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED_DATABASE_ONLY"
+   },
+   "NIST302:SO2(g)-water-298.15-Hs-bp": {
+    "id": "NIST302:SO2(g)-water-298.15-Hs-bp",
+    "fingerprint": "5780462f",
+    "verifiedAt": "$czas",
+    "source": "NIST Chemistry WebBook SRD 69; Rolf Sander compilation",
+    "sourceVersion": "SRD69",
+    "verification": "NIST_SOURCE_CHECKED_DATABASE_ONLY"
+   },
+   "PKA300:HF-aq-25C": {
+    "id": "PKA300:HF-aq-25C",
+    "fingerprint": "009ad94b",
+    "verifiedAt": "$czas",
+    "source": "ZPE_ACID_BASE",
+    "sourceVersion": "ZPE_ACID_BASE",
+    "verification": "SOURCE_CHECKED_SECONDARY"
+   },
+   "PKA300:HCl-aq-25C": {
+    "id": "PKA300:HCl-aq-25C",
+    "fingerprint": "6036c2d6",
+    "verifiedAt": "$czas",
+    "source": "ZPE_ACID_BASE",
+    "sourceVersion": "ZPE_ACID_BASE",
+    "verification": "SOURCE_CHECKED_SECONDARY"
+   },
+   "PKA300:HBr-aq-25C": {
+    "id": "PKA300:HBr-aq-25C",
+    "fingerprint": "14d42bad",
+    "verifiedAt": "$czas",
+    "source": "ZPE_ACID_BASE",
+    "sourceVersion": "ZPE_ACID_BASE",
+    "verification": "SOURCE_CHECKED_SECONDARY"
+   },
+   "PKA300:HI-aq-25C": {
+    "id": "PKA300:HI-aq-25C",
+    "fingerprint": "4febb5f7",
+    "verifiedAt": "$czas",
+    "source": "ZPE_ACID_BASE",
+    "sourceVersion": "ZPE_ACID_BASE",
+    "verification": "SOURCE_CHECKED_SECONDARY"
+   }
+  },
+  "history": [
+   {
+    "id": "THERMO:H2O(l)",
+    "fingerprint": "03493781",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "THERMO:H2O(g)",
+    "fingerprint": "1743833f",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "THERMO:CO2(g)",
+    "fingerprint": "88677422",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "THERMO:HCl(g)",
+    "fingerprint": "c674fdd5",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NEWREF:ATOM:Na(g)",
+    "fingerprint": "59078a1d",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NEWREF:ATOM:Cl(g)",
+    "fingerprint": "35202e6b",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NEWREF:ATOM:Cl(g):S0",
+    "fingerprint": "77470d1c",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST291:H2(g)",
+    "fingerprint": "c8106c11",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST291:N2(g)",
+    "fingerprint": "259df70d",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST291:O2(g)",
+    "fingerprint": "68fe5868",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST291:CH4(g)",
+    "fingerprint": "2bec755e",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST292:NH3(g)",
+    "fingerprint": "293a0b35",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST292:CO(g)",
+    "fingerprint": "c2b2d67f",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST292:SO2(g)",
+    "fingerprint": "f16594d2",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST293:H2O2(g)",
+    "fingerprint": "c72754e8",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST293:NO(g)",
+    "fingerprint": "1e0c5850",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST293:NO2(g)",
+    "fingerprint": "7a8f1582",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST293:SO3(g)",
+    "fingerprint": "c8aefee3",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST294:H2S(g)",
+    "fingerprint": "98dcc72a",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST295:N2O(g)",
+    "fingerprint": "e023babf",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST295:HF(g)",
+    "fingerprint": "81e3c763",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST295:HBr(g)",
+    "fingerprint": "191e6cbd",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST295:HI(g)",
+    "fingerprint": "253c35f2",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST295:Br2(g)",
+    "fingerprint": "84fc262f",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST295:I2(g)",
+    "fingerprint": "a3dc088a",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST296:Cl2(g)",
+    "fingerprint": "edb3a7f1",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST296:Br2(l)",
+    "fingerprint": "b095dce9",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST296:I2(condensed)",
+    "fingerprint": "7cb1536e",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST297:NaOH(s)",
+    "fingerprint": "7405fb07",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST297:CaO(s)",
+    "fingerprint": "44fe769d",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST297:NaCl(s)",
+    "fingerprint": "e70418f7",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "EQ298:AgCl(aq-equilibrium)",
+    "fingerprint": "dd8b5f5f",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "EQ298:AgBr(aq-equilibrium)",
+    "fingerprint": "f2ef27e5",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "EQ298:AgI(aq-equilibrium)",
+    "fingerprint": "e69aa013",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "EQ298:[Ag(NH3)2]+",
+    "fingerprint": "a9660483",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "EQ298:[Cu(NH3)4]2+",
+    "fingerprint": "71737859",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "EQ298:[Fe(CN)6]4-",
+    "fingerprint": "8ac42e3a",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "EQ299:Kw-water-298.15K",
+    "fingerprint": "c6b60c3a",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST301:H2S(g)-water-298.15-Hs-bp",
+    "fingerprint": "6aec85f2",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST302:O2(g)-water-298.15-Hs-bp",
+    "fingerprint": "bbbb7f07",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST302:CO2(g)-water-298.15-Hs-bp",
+    "fingerprint": "aeda7937",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST302:NH3(g)-water-298.15-Hs-bp",
+    "fingerprint": "51706c74",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "NIST302:SO2(g)-water-298.15-Hs-bp",
+    "fingerprint": "5780462f",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "PKA300:HF-aq-25C",
+    "fingerprint": "009ad94b",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "PKA300:HCl-aq-25C",
+    "fingerprint": "6036c2d6",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "PKA300:HBr-aq-25C",
+    "fingerprint": "14d42bad",
+    "action": "VERIFY",
+    "at": "$czas"
+   },
+   {
+    "id": "PKA300:HI-aq-25C",
+    "fingerprint": "4febb5f7",
+    "action": "VERIFY",
+    "at": "$czas"
+   }
+  ]
+ },
+ "NEW_REFERENCE_DATA_V290": {
+  "version": "2.90",
+  "sourceRegistry": {
+   "NIST_WEBBOOK": {
+    "name": "NIST Chemistry WebBook SRD 69",
+    "doi": "10.18434/T4D303",
+    "accessed": "2026-10-02"
+   }
+  },
+  "records": {
+   "ATOM:Na(g)": {
+    "species": "Na",
+    "phase": "gas",
+    "quantity": "standard_enthalpy_of_formation",
+    "value": 107.5,
+    "uncertainty": 0.7,
+    "unit": "kJ/mol",
+    "T": 298.15,
+    "P": "1 bar",
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman, et al. 1984",
+    "status": "REFERENCE_DATA"
+   },
+   "ATOM:Cl(g)": {
+    "species": "Cl",
+    "phase": "gas",
+    "quantity": "standard_enthalpy_of_formation",
+    "value": 121.301,
+    "uncertainty": 0.008,
+    "unit": "kJ/mol",
+    "T": 298.15,
+    "P": "1 bar",
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman, et al. 1984",
+    "status": "REFERENCE_DATA"
+   },
+   "ATOM:Cl(g):S0": {
+    "species": "Cl",
+    "phase": "gas",
+    "quantity": "standard_entropy",
+    "value": 165.19,
+    "uncertainty": 0.004,
+    "unit": "J/mol/K",
+    "T": 298.15,
+    "P": "1 bar",
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman, et al. 1984",
+    "status": "REFERENCE_DATA"
+   }
+  },
+  "phaseChange": {
+   "Na": {
+    "boiling": {
+     "value": 1156,
+     "uncertainty": 1,
+     "unit": "K",
+     "reference": "Honig and Kramer 1969"
+    },
+    "fusion": {
+     "value": 370.96,
+     "uncertainty": 0.01,
+     "unit": "K",
+     "reference": "Marsh 1987"
+    },
+    "triple": {
+     "value": 370.98,
+     "uncertainty": 0.03,
+     "unit": "K",
+     "reference": "Honig and Kramer 1969"
+    },
+    "antoine": {
+     "rangeK": [
+      924,
+      1118
+     ],
+     "A": 2.46077,
+     "B": 1873.728,
+     "C": -416.372,
+     "pressureUnit": "bar",
+     "temperatureUnit": "K",
+     "reference": "Rodebush and Walters 1930"
+    }
+   },
+   "Cl2": {
+    "boiling": {
+     "value": 239.5,
+     "uncertainty": 0.6,
+     "unit": "K",
+     "reference": "Thiele and Schulte 1920"
+    },
+    "triple": {
+     "value": 172.17,
+     "uncertainty": 0.05,
+     "unit": "K",
+     "reference": "Angus, Armstrong, et al. 1984"
+    },
+    "critical": {
+     "T": 416.956,
+     "P": 79.914,
+     "temperatureUnit": "K",
+     "pressureUnit": "bar",
+     "reference": "Angus, Armstrong, et al. 1984"
+    }
+   }
+  },
+  "added": [
+   "ATOM:Na(g)",
+   "ATOM:Cl(g)",
+   "ATOM:Cl(g):S0"
+  ],
+  "policy": "append-only; existing scientific records are not overwritten"
+ },
+ "SCIENCE_BATCH_REFERENCE_V291": {
+  "version": "2.91",
+  "sourceRegistry": {
+   "NIST_WEBBOOK": {
+    "name": "NIST Chemistry WebBook SRD 69",
+    "doi": "10.18434/T4D303",
+    "accessed": "2026-10-02"
+   }
+  },
+  "records": {
+   "H2(g)": {
+    "formula": "H2",
+    "phase": "gas",
+    "S298": {
+     "value": 130.68,
+     "uncertainty": 0.003,
+     "unit": "J/mol/K"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1000
+      ],
+      "A": 33.066178,
+      "B": -11.363417,
+      "C": 11.432816,
+      "D": -2.772874,
+      "E": -0.158558,
+      "F": -9.980797,
+      "G": 172.707974,
+      "H": 0
+     },
+     {
+      "rangeK": [
+       1000,
+       2500
+      ],
+      "A": 18.563083,
+      "B": 12.257357,
+      "C": -2.859786,
+      "D": 0.268238,
+      "E": 1.97799,
+      "F": -1.147438,
+      "G": 156.288133,
+      "H": 0
+     },
+     {
+      "rangeK": [
+       2500,
+       6000
+      ],
+      "A": 43.41356,
+      "B": -4.293079,
+      "C": 1.272428,
+      "D": -0.096876,
+      "E": -20.533862,
+      "F": -38.515158,
+      "G": 162.081354,
+      "H": 0
+     }
+    ],
+    "phaseData": {
+     "boilingK": 111,
+     "meltingK": 85.7,
+     "tripleK": 90.67,
+     "triplePbar": 0.1169,
+     "criticalK": 190.6,
+     "criticalPbar": 46.1
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998; NIST/TRC phase data"
+   },
+   "N2(g)": {
+    "formula": "N2",
+    "phase": "gas",
+    "S298": {
+     "value": 191.609,
+     "uncertainty": 0.004,
+     "unit": "J/mol/K"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       100,
+       500
+      ],
+      "A": 28.98641,
+      "B": 1.853978,
+      "C": -9.647459,
+      "D": 16.63537,
+      "E": 0.000117,
+      "F": -8.671914,
+      "G": 226.4168,
+      "H": 0
+     },
+     {
+      "rangeK": [
+       500,
+       2000
+      ],
+      "A": 19.50583,
+      "B": 19.88705,
+      "C": -8.598535,
+      "D": 1.369784,
+      "E": 0.527601,
+      "F": -4.935202,
+      "G": 212.39,
+      "H": 0
+     },
+     {
+      "rangeK": [
+       2000,
+       6000
+      ],
+      "A": 35.51872,
+      "B": 1.128728,
+      "C": -0.196103,
+      "D": 0.014662,
+      "E": -4.55376,
+      "F": -18.97091,
+      "G": 224.981,
+      "H": 0
+     }
+    ],
+    "phaseData": {
+     "boilingK": 77.34,
+     "meltingK": 63.3,
+     "tripleK": 63.14,
+     "triplePbar": 0.1252,
+     "criticalK": 126.19,
+     "criticalPbar": 50.43
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998; NIST/TRC phase data"
+   },
+   "O2(g)": {
+    "formula": "O2",
+    "phase": "gas",
+    "S298": {
+     "value": 205.152,
+     "uncertainty": 0.005,
+     "unit": "J/mol/K"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       100,
+       700
+      ],
+      "A": 31.32234,
+      "B": -20.23531,
+      "C": 57.86644,
+      "D": -36.50624,
+      "E": -0.007374,
+      "F": -8.903471,
+      "G": 246.7945,
+      "H": 0
+     },
+     {
+      "rangeK": [
+       700,
+       2000
+      ],
+      "A": 30.03235,
+      "B": 8.772972,
+      "C": -3.988133,
+      "D": 0.788313,
+      "E": -0.741599,
+      "F": -11.32468,
+      "G": 236.1663,
+      "H": 0
+     },
+     {
+      "rangeK": [
+       2000,
+       6000
+      ],
+      "A": 20.91111,
+      "B": 10.72071,
+      "C": -2.020498,
+      "D": 0.146449,
+      "E": 9.245722,
+      "F": 5.337651,
+      "G": 237.6185,
+      "H": 0
+     }
+    ],
+    "phaseData": {
+     "boilingK": 90.2,
+     "meltingK": 54.8,
+     "tripleK": 54.33,
+     "criticalK": 154.58,
+     "criticalPbar": 50.43
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998; NIST/TRC phase data"
+   },
+   "CH4(g)": {
+    "formula": "CH4",
+    "phase": "gas",
+    "formationEnthalpy": {
+     "value": -74.87,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 186.25,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1300
+      ],
+      "A": -0.703029,
+      "B": 108.4773,
+      "C": -42.52157,
+      "D": 5.862788,
+      "E": 0.678565,
+      "F": -76.84376,
+      "G": 158.7163,
+      "H": -74.8731
+     },
+     {
+      "rangeK": [
+       1300,
+       6000
+      ],
+      "A": 85.81217,
+      "B": 11.26467,
+      "C": -2.114146,
+      "D": 0.13819,
+      "E": -26.42221,
+      "F": -153.5327,
+      "G": 224.4143,
+      "H": -74.8731
+     }
+    ],
+    "phaseData": {
+     "boilingK": 111,
+     "meltingK": 85.7,
+     "tripleK": 90.67,
+     "triplePbar": 0.1169,
+     "criticalK": 190.6,
+     "criticalPbar": 46.1
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998; NIST/TRC phase data"
+   }
+  },
+  "added": [
+   "H2(g)",
+   "N2(g)",
+   "O2(g)",
+   "CH4(g)"
+  ],
+  "policy": "append-only; no overwrite; verified-once ledger enforced",
+  "coverage": {
+   "species": 4,
+   "shomate": 4,
+   "phase": 4
+  }
+ },
+ "SCIENCE_BATCH_REFERENCE_V292": {
+  "version": "2.92",
+  "sourceRegistry": {
+   "NIST_WEBBOOK": {
+    "name": "NIST Chemistry WebBook SRD 69",
+    "doi": "10.18434/T4D303",
+    "accessed": "2026-10-02"
+   }
+  },
+  "records": {
+   "NH3(g)": {
+    "formula": "NH3",
+    "phase": "gas",
+    "formationEnthalpy": {
+     "value": -45.94,
+     "uncertainty": 0.35,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "S298": {
+     "value": 192.77,
+     "uncertainty": 0.05,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1400
+      ],
+      "A": 19.99563,
+      "B": 49.77119,
+      "C": -15.37599,
+      "D": 1.921168,
+      "E": 0.189174,
+      "F": -53.30667,
+      "G": 203.8591,
+      "H": -45.89806
+     },
+     {
+      "rangeK": [
+       1400,
+       6000
+      ],
+      "A": 52.02427,
+      "B": 18.48801,
+      "C": -3.765128,
+      "D": 0.248541,
+      "E": -12.45799,
+      "F": -85.53895,
+      "G": 223.8022,
+      "H": -45.89806
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman, et al. 1984; Chase 1998"
+   },
+   "CO(g)": {
+    "formula": "CO",
+    "phase": "gas",
+    "formationEnthalpy": {
+     "value": -110.53,
+     "uncertainty": 0.17,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "S298": {
+     "value": 197.66,
+     "uncertainty": 0.004,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1300
+      ],
+      "A": 25.56759,
+      "B": 6.09613,
+      "C": 4.054656,
+      "D": -2.671301,
+      "E": 0.131021,
+      "F": -118.0089,
+      "G": 227.3665,
+      "H": -110.5271
+     },
+     {
+      "rangeK": [
+       1300,
+       6000
+      ],
+      "A": 35.1507,
+      "B": 1.300095,
+      "C": -0.205921,
+      "D": 0.01355,
+      "E": -3.28278,
+      "F": -127.8375,
+      "G": 231.712,
+      "H": -110.5271
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman, et al. 1984; Chase 1998"
+   },
+   "SO2(g)": {
+    "formula": "SO2",
+    "phase": "gas",
+    "formationEnthalpy": {
+     "value": -296.81,
+     "uncertainty": 0.2,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "S298": {
+     "value": 248.223,
+     "uncertainty": 0.05,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1200
+      ],
+      "A": 21.43049,
+      "B": 74.35094,
+      "C": -57.75217,
+      "D": 16.35534,
+      "E": 0.086731,
+      "F": -305.7688,
+      "G": 254.8872,
+      "H": -296.8422
+     },
+     {
+      "rangeK": [
+       1200,
+       6000
+      ],
+      "A": 57.48188,
+      "B": 1.009328,
+      "C": -0.07629,
+      "D": 0.005174,
+      "E": -4.045401,
+      "F": -324.414,
+      "G": 302.7798,
+      "H": -296.8422
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman, et al. 1984; Chase 1998"
+   }
+  },
+  "added": [
+   "NH3(g)",
+   "CO(g)",
+   "SO2(g)"
+  ],
+  "policy": "append-only; no overwrite; verified-once ledger enforced"
+ },
+ "SCIENCE_BATCH_REFERENCE_V293": {
+  "version": "2.93",
+  "sourceRegistry": {
+   "NIST_WEBBOOK": {
+    "name": "NIST Chemistry WebBook SRD 69",
+    "doi": "10.18434/T4D303",
+    "accessed": "2026-10-02"
+   }
+  },
+  "records": {
+   "H2O2(g)": {
+    "formula": "H2O2",
+    "phase": "gas",
+    "formationEnthalpy": {
+     "value": -136.11,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "S298": {
+     "value": 232.95,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1500
+      ],
+      "A": 34.25667,
+      "B": 55.18445,
+      "C": -35.15443,
+      "D": 9.08744,
+      "E": -0.422157,
+      "F": -149.9098,
+      "G": 257.0604,
+      "H": -136.1064
+     }
+    ],
+    "phaseData": {
+     "T_fus": {
+      "value": 272.26,
+      "unit": "K",
+      "source": "TRC"
+     },
+     "T_c": {
+      "value": 728,
+      "uncertainty": 15,
+      "unit": "K",
+      "source": "TRC"
+     },
+     "P_c": {
+      "value": 220,
+      "uncertainty": 20,
+      "unit": "bar",
+      "source": "TRC"
+     }
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998; TRC"
+   },
+   "NO(g)": {
+    "formula": "NO",
+    "phase": "gas",
+    "formationEnthalpy": {
+     "value": 90.29,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "S298": {
+     "value": 210.76,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1200
+      ],
+      "A": 23.83491,
+      "B": 12.58878,
+      "C": -1.139011,
+      "D": -1.497459,
+      "E": 0.214194,
+      "F": 83.35783,
+      "G": 237.1219,
+      "H": 90.29114
+     },
+     {
+      "rangeK": [
+       1200,
+       6000
+      ],
+      "A": 35.99169,
+      "B": 0.95717,
+      "C": -0.148032,
+      "D": 0.009974,
+      "E": -3.004088,
+      "F": 73.10787,
+      "G": 246.1619,
+      "H": 90.29114
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998"
+   },
+   "NO2(g)": {
+    "formula": "NO2",
+    "phase": "gas",
+    "formationEnthalpy": {
+     "value": 33.1,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "S298": {
+     "value": 240,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1200
+      ],
+      "A": 16.10857,
+      "B": 75.89525,
+      "C": -54.3874,
+      "D": 14.30777,
+      "E": 0.239423,
+      "F": 26.17464,
+      "G": 240.5386,
+      "H": 33.09502
+     },
+     {
+      "rangeK": [
+       1200,
+       6000
+      ],
+      "A": 56.82541,
+      "B": 0.738053,
+      "C": -0.144721,
+      "D": 0.009777,
+      "E": -5.459911,
+      "F": 2.846456,
+      "G": 290.5056,
+      "H": 33.09502
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998"
+   },
+   "SO3(g)": {
+    "formula": "SO3",
+    "phase": "gas",
+    "formationEnthalpy": {
+     "value": -395.77,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "S298": {
+     "value": 256.77,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1200
+      ],
+      "A": 24.02503,
+      "B": 119.4607,
+      "C": -94.38686,
+      "D": 26.96237,
+      "E": -0.117517,
+      "F": -407.8526,
+      "G": 253.5186,
+      "H": -395.7654
+     },
+     {
+      "rangeK": [
+       1200,
+       6000
+      ],
+      "A": 81.99008,
+      "B": 0.622236,
+      "C": -0.12244,
+      "D": 0.008294,
+      "E": -6.703688,
+      "F": -437.659,
+      "G": 330.9264,
+      "H": -395.7654
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998"
+   }
+  },
+  "added": [
+   "H2O2(g)",
+   "NO(g)",
+   "NO2(g)",
+   "SO3(g)"
+  ],
+  "policy": "append-only; no overwrite; verified-once ledger enforced"
+ },
+ "SCIENCE_BATCH_REFERENCE_V294": {
+  "version": "2.94",
+  "sourceRegistry": {
+   "NIST_WEBBOOK": {
+    "name": "NIST Chemistry WebBook SRD 69",
+    "doi": "10.18434/T4D303",
+    "accessed": "2026-10-02"
+   }
+  },
+  "records": {
+   "H2S(g)": {
+    "formula": "H2S",
+    "phase": "gas",
+    "CAS": "7783-06-4",
+    "formationEnthalpy": {
+     "value": -20.6,
+     "uncertainty": 0.5,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 205.81,
+     "uncertainty": 0.05,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1400
+      ],
+      "A": 26.88412,
+      "B": 18.67809,
+      "C": 3.434203,
+      "D": -3.378702,
+      "E": 0.135882,
+      "F": -28.91211,
+      "G": 233.3747,
+      "H": -20.50202
+     },
+     {
+      "rangeK": [
+       1400,
+       6000
+      ],
+      "A": 51.22136,
+      "B": 4.147486,
+      "C": -0.643566,
+      "D": 0.041621,
+      "E": -10.46385,
+      "F": -55.87606,
+      "G": 243.69,
+      "H": -20.50202
+     }
+    ],
+    "phaseData": {
+     "boilingK": {
+      "value": 212.87,
+      "uncertainty": 0.07,
+      "unit": "K"
+     },
+     "meltingK": {
+      "value": 190.85,
+      "uncertainty": 1.5,
+      "unit": "K"
+     },
+     "tripleK": {
+      "value": 187.66,
+      "uncertainty": 0.06,
+      "unit": "K"
+     },
+     "vaporization": {
+      "value": 19.5,
+      "unit": "kJ/mol",
+      "T": 200
+     },
+     "sublimation": {
+      "value": 22.5,
+      "unit": "kJ/mol",
+      "T": 135
+     }
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984; Chase 1998; TRC phase data"
+   }
+  },
+  "added": [
+   "H2S(g)"
+  ],
+  "policy": "append-only; no overwrite; verified-once ledger enforced"
+ },
+ "SCIENCE_BATCH_REFERENCE_V295": {
+  "version": "2.95",
+  "sourceRegistry": {
+   "NIST_WEBBOOK": {
+    "name": "NIST Chemistry WebBook SRD 69",
+    "doi": "10.18434/T4D303",
+    "accessed": "2026-10-02"
+   }
+  },
+  "records": {
+   "N2O(g)": {
+    "formula": "N2O",
+    "phase": "gas",
+    "CAS": "10024-97-2",
+    "formationEnthalpy": {
+     "value": 82.05,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 219.96,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1400
+      ],
+      "A": 27.67988,
+      "B": 51.14898,
+      "C": -30.64454,
+      "D": 6.847911,
+      "E": -0.157906,
+      "F": 71.24934,
+      "G": 238.6164,
+      "H": 82.04824
+     },
+     {
+      "rangeK": [
+       1400,
+       6000
+      ],
+      "A": 60.30274,
+      "B": 1.034566,
+      "C": -0.192997,
+      "D": 0.01254,
+      "E": -6.860254,
+      "F": 48.6139,
+      "G": 272.5002,
+      "H": 82.04824
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998"
+   },
+   "HF(g)": {
+    "formula": "HF",
+    "phase": "gas",
+    "CAS": "7664-39-3",
+    "formationEnthalpy": {
+     "value": -273.3,
+     "uncertainty": 0.7,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 173.779,
+     "uncertainty": 0.003,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1000
+      ],
+      "A": 30.11693,
+      "B": -3.246612,
+      "C": 2.868116,
+      "D": 0.457914,
+      "E": -0.024861,
+      "F": -281.4912,
+      "G": 210.9226,
+      "H": -272.5462
+     },
+     {
+      "rangeK": [
+       1000,
+       6000
+      ],
+      "A": 24.57033,
+      "B": 6.893391,
+      "C": -1.243874,
+      "D": 0.082583,
+      "E": -0.23406,
+      "F": -279.7653,
+      "G": 202.8525,
+      "H": -272.5462
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984; Chase 1998"
+   },
+   "HBr(g)": {
+    "formula": "HBr",
+    "phase": "gas",
+    "CAS": "10035-10-6",
+    "formationEnthalpy": {
+     "value": -36.29,
+     "uncertainty": 0.16,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 198.7,
+     "uncertainty": 0.004,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1100
+      ],
+      "A": 31.71409,
+      "B": -13.69992,
+      "C": 23.35567,
+      "D": -9.008529,
+      "E": -0.028758,
+      "F": -45.57464,
+      "G": 240.0428,
+      "H": -36.44306
+     },
+     {
+      "rangeK": [
+       1100,
+       6000
+      ],
+      "A": 32.88913,
+      "B": 2.822116,
+      "C": -0.478035,
+      "D": 0.032464,
+      "E": -3.174958,
+      "F": -52.46318,
+      "G": 230.8597,
+      "H": -36.44306
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984; Chase 1998"
+   },
+   "HI(g)": {
+    "formula": "HI",
+    "phase": "gas",
+    "CAS": "10034-85-2",
+    "formationEnthalpy": {
+     "value": 26.5,
+     "uncertainty": 0.1,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 206.59,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1400
+      ],
+      "A": 26.0454,
+      "B": 4.689678,
+      "C": 4.911765,
+      "D": -2.654397,
+      "E": 0.121419,
+      "F": 18.75499,
+      "G": 237.2018,
+      "H": 26.35903
+     },
+     {
+      "rangeK": [
+       1400,
+       6000
+      ],
+      "A": 35.44358,
+      "B": 1.414708,
+      "C": -0.182088,
+      "D": 0.011768,
+      "E": -4.054561,
+      "F": 7.919099,
+      "G": 240.1097,
+      "H": 26.35903
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984; Chase 1998"
+   },
+   "Br2(g)": {
+    "formula": "Br2",
+    "phase": "gas",
+    "CAS": "7726-95-6",
+    "formationEnthalpy": {
+     "value": 30.91,
+     "uncertainty": 0.11,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 245.468,
+     "uncertainty": 0.005,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       332.503,
+       3400
+      ],
+      "A": 38.52723,
+      "B": -1.976835,
+      "C": 1.526107,
+      "D": -0.198398,
+      "E": -0.185815,
+      "F": 18.8762,
+      "G": 291.4863,
+      "H": 30.91001
+     },
+     {
+      "rangeK": [
+       3400,
+       6000
+      ],
+      "A": 34.99288,
+      "B": 9.252248,
+      "C": -2.361588,
+      "D": 0.154336,
+      "E": -43.07637,
+      "F": -7.467771,
+      "G": 273.6303,
+      "H": 30.91001
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984; Chase 1998"
+   },
+   "I2(g)": {
+    "formula": "I2",
+    "phase": "gas",
+    "CAS": "7553-56-2",
+    "formationEnthalpy": {
+     "value": 62.42,
+     "uncertainty": 0.08,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 260.687,
+     "uncertainty": 0.005,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       457.666,
+       2000
+      ],
+      "A": 37.79763,
+      "B": 0.225453,
+      "C": -0.912556,
+      "D": 1.034913,
+      "E": -0.083826,
+      "F": 50.86865,
+      "G": 305.9199,
+      "H": 62.4211
+     },
+     {
+      "rangeK": [
+       2000,
+       6000
+      ],
+      "A": 76.73414,
+      "B": -4.045782,
+      "C": -1.848145,
+      "D": 0.219044,
+      "E": -82.39384,
+      "F": -53.87151,
+      "G": 281.2267,
+      "H": 62.4211
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984; Chase 1998"
+   }
+  },
+  "added": [
+   "N2O(g)",
+   "HF(g)",
+   "HBr(g)",
+   "HI(g)",
+   "Br2(g)",
+   "I2(g)"
+  ],
+  "policy": "append-only; no overwrite; verified-once ledger enforced",
+  "input": "dane.md"
+ },
+ "SCIENCE_BATCH_REFERENCE_V296": {
+  "version": "2.96",
+  "sourceRegistry": {
+   "NIST_WEBBOOK": "NIST Chemistry WebBook, SRD 69"
+  },
+  "records": {
+   "Cl2(g)": {
+    "formula": "Cl2",
+    "phase": "gas",
+    "CAS": "7782-50-5",
+    "S298": {
+     "value": 223.081,
+     "uncertainty": 0.01,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomate": [
+     {
+      "rangeK": [
+       298,
+       1000
+      ],
+      "A": 33.0506,
+      "B": 12.2294,
+      "C": -12.0651,
+      "D": 4.38533,
+      "E": -0.159494,
+      "F": -10.8348,
+      "G": 259.029,
+      "H": 0
+     },
+     {
+      "rangeK": [
+       1000,
+       3000
+      ],
+      "A": 42.6773,
+      "B": -5.00957,
+      "C": 1.904621,
+      "D": -0.165641,
+      "E": -2.09848,
+      "F": -17.2898,
+      "G": 269.84,
+      "H": 0
+     },
+     {
+      "rangeK": [
+       3000,
+       6000
+      ],
+      "A": -42.5535,
+      "B": 41.6857,
+      "C": -7.12683,
+      "D": 0.387839,
+      "E": 101.144,
+      "F": 132.764,
+      "G": 264.786,
+      "H": 0
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984; Chase 1998"
+   },
+   "Br2(l)": {
+    "formula": "Br2",
+    "phase": "liquid",
+    "CAS": "7726-95-6",
+    "S298": {
+     "value": 152.21,
+     "uncertainty": 0.3,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984"
+   },
+   "I2(condensed)": {
+    "formula": "I2",
+    "phase": "condensed",
+    "CAS": "7553-56-2",
+    "formationEnthalpyLiquid": {
+     "value": 13.52,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298Liquid": {
+     "value": 150.36,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298Solid": {
+     "value": 116.14,
+     "uncertainty": 0.3,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "shomateLiquid": [
+     {
+      "rangeK": [
+       386.75,
+       457.666
+      ],
+      "A": 80.66919,
+      "B": 6.855652e-08,
+      "C": -8.724352e-08,
+      "D": 3.723132e-08,
+      "E": 4.735829e-10,
+      "F": -10.52782,
+      "G": 247.9798,
+      "H": 13.52302
+     }
+    ],
+    "shomateSolid": [
+     {
+      "rangeK": [
+       298,
+       386.75
+      ],
+      "A": -195.7635,
+      "B": 918.8984,
+      "C": -1079.242,
+      "D": 534.3219,
+      "E": 5.156403,
+      "F": 43.29938,
+      "G": -322.478,
+      "H": 0
+     }
+    ],
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998; Cox, Wagman et al. 1984"
+   }
+  },
+  "added": [
+   "Cl2(g)",
+   "Br2(l)",
+   "I2(condensed)"
+  ],
+  "policy": "append-only; no overwrite; verified-once ledger enforced",
+  "input": "dane.md"
+ },
+ "SCIENCE_BATCH_REFERENCE_V297": {
+  "version": "2.97",
+  "sourceRegistry": {
+   "NIST_WEBBOOK": "NIST Chemistry WebBook, SRD 69"
+  },
+  "records": {
+   "NaOH(s)": {
+    "formula": "NaOH",
+    "phase": "solid",
+    "CAS": "1310-73-2",
+    "formationEnthalpy": {
+     "value": -425.93,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 64.46,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998"
+   },
+   "CaO(s)": {
+    "formula": "CaO",
+    "phase": "solid",
+    "CAS": "1305-78-8",
+    "formationEnthalpy": {
+     "value": -634.92,
+     "uncertainty": 0.9,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 38.1,
+     "uncertainty": 0.4,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Cox, Wagman et al. 1984 CODATA Review"
+   },
+   "NaCl(s)": {
+    "formula": "NaCl",
+    "phase": "solid",
+    "CAS": "7647-14-5",
+    "formationEnthalpy": {
+     "value": -411.12,
+     "unit": "kJ/mol",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "S298": {
+     "value": 72.11,
+     "unit": "J/mol/K",
+     "T": 298.15,
+     "P": "1 bar",
+     "status": "REFERENCE_DATA"
+    },
+    "source": "NIST_WEBBOOK",
+    "reference": "Chase 1998"
+   }
+  },
+  "added": [
+   "NaOH(s)",
+   "CaO(s)",
+   "NaCl(s)"
+  ],
+  "policy": "append-only; no overwrite; verified-once ledger enforced",
+  "input": "dane.md"
+ }
+}
