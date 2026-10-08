@@ -35,7 +35,7 @@ Numeracja lekcji (F01–F21, N01–N07 … P01–P08) zostaje na stałe jako **k
 
 ## 3. Cztery warstwy (uproszczone)
 
-1. **Kanon** — kod + tytuł lekcji. Stały. Już jest (`CHE_SPIS_LEKCJI.md`).
+1. **Kanon** — kod + tytuł lekcji. Stały. Już jest (`CHE_SPIS_TRESCI.md`).
 2. **Zależności** — w frontmatter każdej lekcji md (jedno źródło prawdy, bez osobnej bazy).
 3. **Ścieżki** — małe pliki `sciezki/E8-kl7.md`, `E8-kl8.md`, później `LO-P.md`, `LO-R.md`: lista kodów w kolejności + poziom (`E8`/`LO`) + tryb (`pelna` / `sciaga` / `pomin`).
 4. **Wejście „teraz”** — „klasa 8 → wodorotlenki”: narzędzie bierze N02, dokłada z zależności brakujące ściągi i pokazuje zestaw.
