@@ -6,7 +6,7 @@ import os, re, glob, sys, datetime
 sys.path.insert(0, os.path.dirname(__file__)); import kanon_dane as KD
 
 GOTOWE = {  # kod v0.3 -> gotowa lekcja (md w szablonie + HTML przez md2html.py)
-    'F01': 'che/md/F01_jak_mysli_chemik.md', 'N02': 'che/md/N01_tlenki.md', 'N03': 'che/md/N02_wodorotlenki.md',
+    'F01': 'che/md/F01_jak_mysli_chemik.md', 'F02': 'che/md/F02_materia_i_substancje.md', 'F03': 'che/md/F03_wlasciwosci_i_rozdzielanie.md', 'F04': 'che/md/F04_atom.md', 'N02': 'che/md/N01_tlenki.md', 'N03': 'che/md/N02_wodorotlenki.md',
     'N04': 'che/md/N03_kwasy.md', 'N05': 'che/md/N04_sole.md', 'N06': 'che/md/N05_wodorki.md',
 }
 

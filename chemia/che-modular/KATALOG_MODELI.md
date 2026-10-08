@@ -99,6 +99,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 - `n01-spalanie-v01`: `mgO2`
 - `n02-doswiadczenia-v01`: `aloh3Naoh`, `caoH2o`, `caoh2Co2`, `cuso4Naoh`, `fecl3Naoh`, `hclNaOH+php`, `naH2o`
 - `ph-indicators-v03`: `-`
+- `f03-rozdzielanie-v01`: `f03PiasekWoda`, `f03KredaWoda`, `f01SolWoda`, `f01Odparowanie` (rozszerzenia.js §7, F03)
 - `f01-doswiadczenia-v01`: `f01SolWoda`, `f01Odparowanie`, `f01SodaOcet`, `f01WodaWapienna`, `f01Mg`, `f01FeS` (rozszerzenia.js, F01)
 - `sole-doswiadczenia-v01`: `bacl2Na2so4`, `cacl2Na2co3`, `caoH2o`, `cuoH2so4`, `cuso4Hydrate`, `hclNaOH+php`, `hyd-na2co3`, `hyd-nh4cl`, `na2co3Hcl`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`
 

@@ -18,7 +18,7 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 - **Mamy:** pliki materiału w `chemia/lekcje_md/<grupa>/` — jeden plik na lekcję (blok F) albo plik zbiorczy starej lekcji v1.1. Na końcu każdego pliku F jest sekcja „MATERIAŁ Z ARCHIWUM — do redakcji” z treściami ze starszych wersji, których nie było w głównej.
 - **Było:** kod w spisie v0.1 (sprzed przenumerowania).
 
-**Bilans:** 113 lekcji w 10 grupach. ●●● 6 · ●●○ 14 · ◐○○ 6 · ●○○ 31 · ○○○ 56.
+**Bilans:** 113 lekcji w 10 grupach. ●●● 9 · ●●○ 11 · ◐○○ 6 · ●○○ 31 · ○○○ 56.
 
 ## 1. Zasady kanonu
 
@@ -45,7 +45,7 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 
 ## 2. Spis skrócony
 
-**F Fundamenty:** ●●● F01 Jak myśli chemik · ●●○ F02 Materia i substancje · ●●○ F03 Właściwości i rozdzielanie mieszanin · ●●○ F04 Atom · ●●○ F05 Izotopy, jony i masa atomowa · ●●○ F06 Układ okresowy · ●●○ F07 Konfiguracja elektronowa · ●●○ F08 Konfiguracja ↔ układ okresowy · ●●○ F09 Wartościowość, ładunek i stopień utlenienia · ◐○○ F10 Dlaczego atomy się łączą · ●●○ F11 Wiązania jonowe, kowalencyjne i metaliczne · ●●○ F12 Wzory chemiczne · ●●○ F13 Wzory elektronowe (Lewis) · ●●○ F14 Geometria cząsteczek (VSEPR) · ◐○○ F15 Polarność i oddziaływania · ●●○ F16 Od obserwacji do modelu reakcji · ●●○ F17 Równania reakcji · ◐○○ F18 Dossier substancji · ◐○○ F19 Dossier reakcji · ◐○○ F20 Klinika błędów fundamentów · ◐○○ F21 Zadania transferowe i diagnostyka
+**F Fundamenty:** ●●● F01 Jak myśli chemik · ●●● F02 Materia i substancje · ●●● F03 Właściwości i rozdzielanie mieszanin · ●●● F04 Atom · ●●○ F05 Izotopy, jony i masa atomowa · ●●○ F06 Układ okresowy · ●●○ F07 Konfiguracja elektronowa · ●●○ F08 Konfiguracja ↔ układ okresowy · ●●○ F09 Wartościowość, ładunek i stopień utlenienia · ◐○○ F10 Dlaczego atomy się łączą · ●●○ F11 Wiązania jonowe, kowalencyjne i metaliczne · ●●○ F12 Wzory chemiczne · ●●○ F13 Wzory elektronowe (Lewis) · ●●○ F14 Geometria cząsteczek (VSEPR) · ◐○○ F15 Polarność i oddziaływania · ●●○ F16 Od obserwacji do modelu reakcji · ●●○ F17 Równania reakcji · ◐○○ F18 Dossier substancji · ◐○○ F19 Dossier reakcji · ◐○○ F20 Klinika błędów fundamentów · ◐○○ F21 Zadania transferowe i diagnostyka
 
 **N Chemia nieorganiczna:** ○○○ N01 Powietrze i gazy · ●●● N02 Tlenki · ●●● N03 Wodorotlenki i zasady · ●●● N04 Kwasy · ●●● N05 Sole · ●●● N06 Wodorki · ○○○ N07 Systematyka nieorganiczna · ○○○ N08 Mapa przemian „co powstanie?”
 
@@ -103,7 +103,7 @@ kod: F02
 poziom: E8
 wymaga: "F01"
 poglebia: "F03; F04; F12"
-stan: "●●○"
+stan: "●●●"
 ```
 
 **Cel:** Uczeń klasyfikuje próbkę: substancja czysta (pierwiastek, związek) czy mieszanina (jednorodna, niejednorodna) i uzasadnia.
@@ -114,7 +114,7 @@ stan: "●●○"
 - drzewo klasyfikacji
 - metale i niemetale (wstęp)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (29 KB)
+**Mamy:** gotowa lekcja `che/md/F02_materia_i_substancje.md` (32 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (29 KB)
 
 #### F03 — Właściwości i rozdzielanie mieszanin
 
@@ -123,7 +123,7 @@ kod: F03
 poziom: E8
 wymaga: "F01; F02"
 poglebia: "F16–F17; R01–R02"
-stan: "●●○"
+stan: "●●●"
 ```
 
 **Cel:** Uczeń rozróżnia właściwości fizyczne i chemiczne, zjawisko i reakcję oraz dobiera metodę rozdzielania do różnicy właściwości.
@@ -135,7 +135,7 @@ stan: "●●○"
 - sączenie, dekantacja, odparowanie, krystalizacja, destylacja, chromatografia, magnes
 - dobór metody
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` (42 KB)
+**Mamy:** gotowa lekcja `che/md/F03_wlasciwosci_i_rozdzielanie.md` (33 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` (42 KB)
 
 ### Faza B — Z czego to wynika?
 
@@ -146,7 +146,7 @@ kod: F04
 poziom: E8
 wymaga: "F01; F02"
 poglebia: "F05; F06–F09"
-stan: "●●○"
+stan: "●●●"
 ```
 
 **Cel:** Uczeń oblicza liczbę protonów, neutronów i elektronów w atomie i jonie oraz rozróżnia Z i A.
@@ -158,7 +158,7 @@ stan: "●●○"
 - atom obojętny vs jon
 - modele atomu (historia skrócona)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F04.atom.md` (41 KB)
+**Mamy:** gotowa lekcja `che/md/F04_atom.md` (24 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F04.atom.md` (41 KB)
 
 #### F05 — Izotopy, jony i masa atomowa
 

@@ -94,7 +94,7 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 - Usunięte jako dublety (08.10, są w historii git): MASTER v14–v17, stare F00–F09, `CHEMIA_PODSTAWA_PLUS_v1.1.md` (= suma plików lekcje_md), L002 ×2, INDEX, KOLEJNOSC, Z99, `CHE_KANON_v0.2`, `CHE_SPIS_LEKCJI`, `AUDYT_SPISU_v0.2`. Sprawdzone skryptem: żadna linia treści nie zginęła.
 
 **Następne kroki (kolejność)**
-1. **F02 Materia i substancje** z `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (treść główna + przejrzeć „z archiwum”) → `che/md/F02_*.md` tą samą metodą co F01; czytać tylko sekcję lekcji (grep numerów wierszy), modele z F00 cz. X.
+1. **F05 Izotopy, jony i masa atomowa** z `lekcje_md/F/CHE.01.F05.*.md` tą samą metodą co F02–F04 (uwaga: w materiale F04/F05 były zepsute liczby „3**fikcyjny pierwiastek X…**” — poprawne: Ar(Cl) ≈ 35,45; m(³⁷Cl) = 36,966 u) → `che/md/F02_*.md` tą samą metodą co F01; czytać tylko sekcję lekcji (grep numerów wierszy), modele z F00 cz. X.
 2. Kolejne F03–F21 tak samo; cienkie w v16 (F10, F15, F18–F21; v17 dodaje do F18–F20 po ~16 akapitów) — najpierw sprawdzić, czy użytkownik ma nowszą wersję.
 3. GFX do zbudowania od podstaw (zasada GFX): magnes (Fe + S), lód pływający, osad i para w parownicy, płomień w tyglu; modele: rozdzielanie mieszanin (F03 — następny), izotopy (F05), energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17). Zlewki F01 — zrobione.
 4. Po zatwierdzeniu kanonu v0.3: przemianować gotowe lekcje N (`che/md/N01…N05` → N02…N06).
@@ -102,3 +102,5 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 
 
 - 2026-10-08 · Kanon F **v17.0** = v16 (pełna treść) + akapity nowe z pliku użytkownika CLEAN v0.2x (yaml zależności per lekcja, rozbudowa F01–F06, F09, F18–F20, audyt archiwalny L001–L013, zestawy interleavingu). CLEAN miał puste znaczniki zamiast treści F02–F21 — nie zastępuje v16. Poprawiono: ⁴⁰Ca²⁺ (było ²⁴Ca, n=4). Plany kursu: `chemia/plany/`.
+
+- 2026-10-08 · **F02, F03, F04 gotowe** (`che/md/F02_materia_i_substancje.md`, `F03_wlasciwosci_i_rozdzielanie.md`, `F04_atom.md`) — z materiału `lekcje_md/F/` wg szablonu F01; md2html OK, `sprawdz.js` OK (3 lekcje; sprawdz.js ignoruje teraz błędy sieci offline). Nowa pracownia GFX `f03-rozdzielanie-v01` (rozszerzenia.js §7: zlewki `f03PiasekWoda`, `f03KredaWoda` + zlewki F01). Zasada właściciela: metody rozdzielania — F03 (F02 tylko zapowiedź), konfiguracja powłokowa — F07, izotopy i masa atomowa — F05 (F04 tylko odesłanie). F05 wstrzymane na prośbę użytkownika.
