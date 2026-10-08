@@ -34,7 +34,7 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 | # | lekcja | dlaczego | materiał źródłowy | stan |
 |---|---|---|---|---|
 | C1 | **REV01 Powtórka klasy 7** (fundamenty: BHP, atom i jon, układ okresowy, wartościowość, wzory, wiązania, równania + nowa sekcja obliczeń konkursowych; gazy i roztwory — osobno) | zakres etapu szkolnego = głównie kl. 7 + początek kl. 8 | `chemia/lekcje_md/00/CHE.00.REV01.powtorka_klasy_7.md` | **[V] gotowa 2026-10-08** — `lessons-md/gotowe/REV01_powtorka_klasy_7.md` |
-| C1b | N01 Powietrze i gazy: tlen, wodór, skład powietrza, korozja (dział IV podstawy — w zakresie etapu szkolnego) | dział IV | `lekcje_md` — brak materiału; kanon N01 | [ ] |
+| C1b | N01 Powietrze i gazy: tlen, wodór, skład powietrza, korozja (dział IV podstawy — w zakresie etapu szkolnego) | dział IV | kanon N01; treść nowa | **[V] gotowa 2026-10-08** — `lessons-md/gotowe/N01_powietrze_i_gazy.md` |
 | C1c | (etap rejonowy) szereg aktywności, jonowe równania, stechiometria z nadmiarem, konfiguracje do Z = 36 | etap II | kanon X04, J03, R07–R08 (część bez mola), F07 | [ ] |
 | C2 | R03 Stężenie procentowe (+ R02 rozpuszczalność, krzywe) | obliczenia rozdzielają uczestników | `chemia/lekcje_md/R/CHE.03.R03+R05.stezenia.md` | [ ] |
 | C3 | F17 Równania reakcji + obliczenia z równań (masowe, prawo zachowania masy, proporcje — bez mola) | typowe zadanie konkursowe | `lekcje_md/F/CHE.01.F17…`, `R/…stechiometria.md` (część masowa) | [ ] |
