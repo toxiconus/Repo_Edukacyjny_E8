@@ -1,0 +1,19 @@
+# Atlas poza silnikiem: moduły labu potrzebne atlasowi (reszta silnika pominięta).
+# Ustalone testem „usuń jeden moduł” (2026-10-08): tylko te zmieniają treść zakładek atlasu
+# (atom, karta danych, jądro, orbitale, materia, właściwości, jony, redoks, notatki, cząsteczki, wzory, reakcje, HUD).
+# Kontrola: python3 tools/che.py atlas --sprawdz (tekst zakładek = pełny lab, dla Fe/U/Na).
+che-prepaint
+_anon_001        # rdzeń danych CHE.DATA + CHE.define/ATOM/NUCLEUS (do odchudzenia: profil sekcji)
+_anon_004        # atlas właściwy (DB, stan, bohr, cloud, isoBar, karty, PT)
+_anon_009        # ARIA zakładek: id pane-* (CSS karty danych w „Wzory”)
+_anon_013        # dane/opisy kart (ds, jądro, orbitale, materia, redoks…)
+_anon_014        # cząsteczki i reakcje
+_anon_029        # zakładka Atom (dodatki)
+_anon_030        # karta danych — rozszerzenia
+che-atlas-acid-v001
+che-atlas-lessons-v001
+che-hydroxides-v001
+che-ionic-v001
+che-lab-engine-v001
+che-lesson-data
+che-oxides-v001

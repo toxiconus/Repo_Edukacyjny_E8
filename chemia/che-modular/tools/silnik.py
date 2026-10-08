@@ -79,6 +79,22 @@ def lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None, drop_
     return out
 
 
+ATLAS = SRC / "atlas"
+
+
+def atlas_moduly():
+    return [l.split("#")[0].strip() for l in (ATLAS / "moduly.txt").read_text(encoding="utf-8").splitlines() if l.split("#")[0].strip()]
+
+
+def atlas_html():
+    """Atlas poza silnikiem: lab tylko z modułami z engine/src/atlas/moduly.txt + dodatki + start.js (bez ekranu powitalnego)."""
+    keep = set(atlas_moduly())
+    out = lab_html(drop={c["id"] for c in CATALOG} - keep, dodatki=True)
+    js = (ATLAS / "start.js").read_text(encoding="utf-8").replace("</", "<\\/")
+    i = out.rfind("</body>")
+    return out[:i] + '<script id="che-atlas-start">\n' + js + "\n</script>\n" + out[i:]
+
+
 STANDALONE = (ROOT / "engine/src/standalone.html")
 
 

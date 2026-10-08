@@ -12,6 +12,7 @@
   python3 tools/che.py gfx                lista elementów GFX/VIEW (przedmiot/rodzaj: liczba, KB)
   python3 tools/che.py katalog            generuje engine/src/gfx/KATALOG.md (id ↔ nazwa PL ↔ plik)
   python3 tools/che.py lab               pełny lab z nową warstwą engine/src/dodatki → dist/lab.html
+  python3 tools/che.py atlas [--sprawdz] atlas poza silnikiem → dist/atlas.html (moduły: engine/src/atlas/moduly.txt)
   python3 tools/che.py dane [--sprawdz|--lekcje] CHE.DATA z silnika → engine/src/dane/<dziedzina>.json (+ _indeks.json)
 """
 import json, shutil, subprocess, sys
@@ -129,6 +130,14 @@ def main(a):
         sys.path.insert(0, str(T)); import silnik
         (ROOT / "dist").mkdir(exist_ok=True)
         (ROOT / "dist/lab.html").write_text(silnik.lab_html(dodatki=True), encoding="utf-8"); print("→ dist/lab.html (z dodatkami)")
+    elif c == "atlas":
+        sys.path.insert(0, str(T)); import silnik
+        (ROOT / "dist").mkdir(exist_ok=True)
+        (ROOT / "dist/atlas.html").write_text(silnik.atlas_html(), encoding="utf-8")
+        print("→ dist/atlas.html (%d KB)" % ((ROOT / "dist/atlas.html").stat().st_size // 1024))
+        if "--sprawdz" in rest:
+            (ROOT / "dist/lab.html").write_text(silnik.lab_html(dodatki=True), encoding="utf-8")
+            run("node", str(T / "atlas_sprawdz.cjs"), str(ROOT / "dist/lab.html"), str(ROOT / "dist/atlas.html"))
     elif c == "dane": run(sys.executable, str(T / "dane_eksport.py"), *rest)
     else: sys.exit(f"nieznane: {c}\n{__doc__}")
 
