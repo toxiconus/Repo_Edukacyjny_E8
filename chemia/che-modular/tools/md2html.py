@@ -195,7 +195,15 @@ def parse_head(h):
 def merge_cls(at, *cls):
     at = dict(at); at['class'] = list(cls) + at.get('class', []); return at
 
+# nazwane kontenery (SYSTEM.md §3) → element z klasą
+NAZWANE = {'regula': 'div.rule-box', 'checklista': 'div.checklist', 'bilans': 'div.bil',
+           'historia': 'figure.hist-card', 'nie-myl': 'div.dont-confuse', 'wskazowki': 'div.tips-box'}
+
 def container(head, body, ctx):
+    hs = head.strip()
+    for k, v in NAZWANE.items():
+        if re.match(r':::\s*%s(\s|$|\|)' % re.escape(k), hs):
+            head = hs.replace(k, v, 1); break
     name, args, at, titles = parse_head(head)
     inner = lambda: parse_blocks(body, ctx)
     t0 = titles[0] if titles else ''
@@ -294,6 +302,8 @@ def front(text):
                 if k in meta: meta[k] = meta[k] + '\n' + v
                 else: meta[k] = v
         body = text[end + 5:]
+    for ang, pl in (('code', 'kod'), ('title', 'tytul'), ('subject', 'przedmiot'), ('description', 'opis')):
+        if ang in meta and pl not in meta: meta[pl] = meta[ang]   # frontmatter prototypu ZIP
     return meta, body
 
 def collect(name, lines):
@@ -307,8 +317,47 @@ def collect(name, lines):
         i += 1
     return out
 
+# aliasy prototypu ZIP ($-makra) → kanon (SYSTEM.md §3); kanon przechodzi bez zmian
+CALLOUT = {'bhp': 'warning', 'warn': 'warning', 'info': 'understand'}
+
+def aliasy(text):
+    out, stack = [], []
+    lines = text.split('\n')
+    i = 0
+    while i < len(lines):
+        ln = lines[i]; st = ln.strip()
+        m = re.match(r'\$(karta|callout)\s+typ=(\w+)\s*(?:"([^"]*)")?\s*$', st)
+        if m:
+            typ = m.group(2) if m.group(1) == 'karta' else CALLOUT.get(m.group(2), 'understand')
+            out.append('::: karta %s%s' % (typ, (' | ' + m.group(3)) if m.group(3) else '')); stack.append(':::'); i += 1; continue
+        if st in ('$fiszka_talia', '$fiszki_panel') or st.startswith('$fiszki_panel '):
+            out.append('::: fiszki'); stack.append(':::'); i += 1; continue
+        if st == '$tabela_bledy':   # wiersze prototypu: temat | dobrze | źle → | źle | dobrze | temat |
+            out.append('::: klinika | Błąd | Poprawnie | Temat'); i += 1
+            while i < len(lines) and lines[i].strip() != '$end':
+                c = [x.strip() for x in lines[i].strip().strip('|').split('|')]
+                if len(c) >= 3: out.append('| %s | %s | %s |' % (c[2], c[1], c[0]))
+                i += 1
+            out.append(':::'); i += 1; continue
+        if st == '$end':
+            out.append(stack.pop() if stack else ':::'); i += 1; continue
+        m = re.match(r'\$(?:fiszka|flip)\s+"([^"]*)"\s*\|\s*"([^"]*)"(?:\s+tag=(\w+))?', st)
+        if m:
+            row = '%s | %s%s' % (m.group(1), m.group(2), (' | %s:' % m.group(3)) if m.group(3) else '')
+            if stack: out.append(row)
+            else: out += ['::: fiszki', row, ':::']
+            i += 1; continue
+        m = re.match(r'\$gfx\s+view=([\w.-]+)(?:.*caption="([^"]*)")?', st) or re.match(r'\{\{gfx:([\w.-]+)\}\}()', st)
+        if m:
+            out.append('@model %s | %s | ' % (m.group(1), m.group(2) or 'Model')); i += 1; continue
+        if st in ('@header', '@toc'):
+            while i < len(lines) and lines[i].strip() != '@end': i += 1
+            i += 1; continue
+        out.append(ln); i += 1
+    return '\n'.join(out)
+
 def render(path):
-    text = open(path, encoding='utf-8').read()
+    text = aliasy(open(path, encoding='utf-8').read())
     meta, body = front(text)
     lines = body.split('\n')
     ctx = Ctx(meta)

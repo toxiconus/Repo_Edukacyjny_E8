@@ -55,12 +55,14 @@ Decyzja: kanonem jest dialekt, w którym napisano 6 lekcji (560 KB). Makra `$…
 | `div.klasa#id` (~120) · `ol`/`ul` · `details` · `figure` | dowolny element z klasą |
 | `html` · `styl` · `skrypt` (10) | wyjątki: surowy HTML / CSS / JS lekcji |
 
-**Porządkowanie (przy K4, automatycznie w builderze, bez ręcznej edycji 6 lekcji):**
+**Nazwane kontenery (działają w `md2html.py`):** `::: regula` (div.rule-box), `::: checklista` (div.checklist), `::: bilans` (div.bil), `::: historia` (figure.hist-card), `::: nie-myl` (div.dont-confuse), `::: wskazowki` (div.tips-box). Tabele są owijane w `.table-wrap` automatycznie.
+
+**Porządkowanie starych lekcji (opcjonalnie, przy edycji):**
 - `::: div.table-wrap` (66) → builder sam owija każdą tabelę; dyrektywa staje się zbędna (zostaje jako dozwolona).
 - Klasy powtarzane ≥ 3 razy dostają nazwę: `div.rule-box` → `::: regula`, `div.checklist` → `::: checklista`, `div.bil` → `::: bilans`, `div.hist-*`/`figure.hist-card` → `::: historia`, `div.audit-*` → koniec lekcji, generowane z rejestru.
 - `::: skrypt` (stare testy/widżety N01–N03) → `::: test` albo widok w `engine/src/gfx/views/`.
 
-**Aliasy z prototypu ZIP → kanon:**
+**Aliasy z prototypu ZIP → kanon** (działają w `md2html.py`, funkcja `aliasy()`; frontmatter `code/title/subject` też):
 
 | Prototyp | Kanon |
 |---|---|

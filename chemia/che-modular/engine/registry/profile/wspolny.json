@@ -1,0 +1,18 @@
+{
+ "drop_mods": [
+  "_anon_004",
+  "che-n02-src",
+  "che-n01-src",
+  "che-kw-src",
+  "che-sole-src"
+ ],
+ "drop_sections": [],
+ "drop_gfx": {},
+ "log": [
+  "mod _anon_004: -1 → 2.68 MB",
+  "mod che-n02-src: -1 → 2.68 MB",
+  "mod che-n01-src: -1 → 2.68 MB",
+  "mod che-kw-src: -1 → 2.68 MB",
+  "mod che-sole-src: -1 → 2.68 MB"
+ ]
+}
