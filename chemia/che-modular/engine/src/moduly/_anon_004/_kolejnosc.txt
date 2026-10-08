@@ -1,3 +1,4 @@
+../../komponenty/atlas-gfx.js
 01_dane-pierwiastkow.js
 02_stan-naglowek.js
 03_rys-bohr.js

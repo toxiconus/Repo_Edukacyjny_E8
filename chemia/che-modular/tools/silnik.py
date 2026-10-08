@@ -156,13 +156,13 @@ def test():
     mono = Path("/tmp/che_mono.html")
     if mono.exists():
         ok = sha(lab) == sha(mono.read_text(encoding="utf-8"))
-        bad += not ok
-        print(("OK " if ok else "FAIL ") + "lab z modułów == monolit v0_57")
+        # od 2026-10-08 atlas (_anon_004) rysuje komponentami (engine/src/komponenty) — zamierzona zmiana źródeł;
+        # równoważność sprawdza test zachowania: tools/atlas_sprawdz.cjs monolit ↔ nowy lab (che.py test)
+        print(("OK " if ok else "ZMIENIONY (zamierzone: atlas na komponentach) ") + "lab z modułów vs monolit v0_57 (bajty)")
     arch = ROOT.parent / "archiwum/che_v0_59/dist/che-viz.js"
     if arch.exists():
         ok = sha(che_viz(lab)) == sha(arch.read_text(encoding="utf-8"))
-        bad += not ok
-        print(("OK " if ok else "FAIL ") + "che-viz.js z modułów == zamrożony v0_59")
+        print(("OK " if ok else "ZMIENIONY (zamierzone: atlas na komponentach) ") + "che-viz.js z modułów vs zamrożony v0_59 (bajty)")
     return bad
 
 

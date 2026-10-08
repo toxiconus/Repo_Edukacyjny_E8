@@ -1,7 +1,8 @@
+../../komponenty/atlas-gfx.js: komponenty rysunków wspólne z lekcjami (CHE_GFX: atomBohr, orbitalCloud, isotopeBar, orbitalDiagram)
 01_dane-pierwiastkow.js: dane atlasu (DB 118 pierwiastków, nazwy PL/EN, REDOX, kolejność podpowłok ORDER, fill() = konfiguracja e⁻, pozycje w PT, rodziny)
 02_stan-naglowek.js: stan wybranego pierwiastka (state, isotopeData, elName), nagłówek, zmienne zoomu/budowania
-03_rys-bohr.js: rysunek atomu Bohra (canvas #bohr) + strzałki SVG
-04_rys-poziomy-chmura.js: diagram poziomów energii, chmura orbitalna (canvas #cloud)
+03_rys-bohr.js: atom Bohra — stan, zoom, GEO, liczniki; rysuje CHE_GFX.atomBohr
+04_rys-poziomy-chmura.js: diagram orbitali i chmura orbitalna — podsumowanie i wybór orbitalu; rysują CHE_GFX.orbitalDiagram / orbitalCloud
 05_wykresy-wlasciwosci.js: energie jonizacji, promienie, radar, pH, izotopy, stopnie utlenienia, redoks, Slater
 06_notatki.js: zakładka Notatki
 07_czasteczki-dane.js: baza cząsteczek CD/X (+ CHE.DATA.MOLECULES), właściwości, porównywarka
@@ -11,7 +12,7 @@
 11_uklad-okresowy.js: układ okresowy (go, buildPT, szuflada, mini-PT, mapa cieplna)
 12_katalog-lista.js: katalog pierwiastków i substancji (filtry, sortowanie, pick, nawigacja, fakty)
 13_substancje-karta.js: tryb substancji, karta danych (datasheet), materia (matl)
-14_hud-izotopy.js: HUD, pasek izotopów, klik na jądrze, jony (chgHtml)
+14_hud-izotopy.js: HUD, pasek izotopów (CHE_GFX.isotopeBar), klik na jądrze, jony (chgHtml)
 15_podpowiedzi-budowanie.js: podpowiedzi (HINTS), reguła Madelunga, budowanie atomu krok po kroku
 16_all.js: all() — odrysowanie wszystkiego
 17_most-che.js: mostek do silnika CHE (opcjonalny: window.CHE?.) i panel diagnostyki labu

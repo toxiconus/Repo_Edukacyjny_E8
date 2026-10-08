@@ -4,10 +4,11 @@ Części składają się (w kolejności `_kolejnosc.txt`) w moduł bajt w bajt �
 
 | część | rola | rozmiar |
 |---|---|---|
+| `../../komponenty/atlas-gfx.js` | komponenty rysunków wspólne z lekcjami (CHE_GFX: atomBohr, orbitalCloud, isotopeBar, orbitalDiagram) | 18.9 KB |
 | `01_dane-pierwiastkow.js` | dane atlasu (DB 118 pierwiastków, nazwy PL/EN, REDOX, kolejność podpowłok ORDER, fill() = konfiguracja e⁻, pozycje w PT, rodziny) | 24.0 KB |
 | `02_stan-naglowek.js` | stan wybranego pierwiastka (state, isotopeData, elName), nagłówek, zmienne zoomu/budowania | 2.8 KB |
-| `03_rys-bohr.js` | rysunek atomu Bohra (canvas #bohr) + strzałki SVG | 9.0 KB |
-| `04_rys-poziomy-chmura.js` | diagram poziomów energii, chmura orbitalna (canvas #cloud) | 7.6 KB |
+| `03_rys-bohr.js` | atom Bohra — stan, zoom, GEO, liczniki; rysuje CHE_GFX.atomBohr | 1.4 KB |
+| `04_rys-poziomy-chmura.js` | diagram orbitali i chmura orbitalna — podsumowanie i wybór orbitalu; rysują CHE_GFX.orbitalDiagram / orbitalCloud | 1.5 KB |
 | `05_wykresy-wlasciwosci.js` | energie jonizacji, promienie, radar, pH, izotopy, stopnie utlenienia, redoks, Slater | 13.8 KB |
 | `06_notatki.js` | zakładka Notatki | 2.5 KB |
 | `07_czasteczki-dane.js` | baza cząsteczek CD/X (+ CHE.DATA.MOLECULES), właściwości, porównywarka | 14.3 KB |
@@ -17,7 +18,7 @@ Części składają się (w kolejności `_kolejnosc.txt`) w moduł bajt w bajt �
 | `11_uklad-okresowy.js` | układ okresowy (go, buildPT, szuflada, mini-PT, mapa cieplna) | 6.6 KB |
 | `12_katalog-lista.js` | katalog pierwiastków i substancji (filtry, sortowanie, pick, nawigacja, fakty) | 10.3 KB |
 | `13_substancje-karta.js` | tryb substancji, karta danych (datasheet), materia (matl) | 13.3 KB |
-| `14_hud-izotopy.js` | HUD, pasek izotopów, klik na jądrze, jony (chgHtml) | 5.7 KB |
+| `14_hud-izotopy.js` | HUD, pasek izotopów (CHE_GFX.isotopeBar), klik na jądrze, jony (chgHtml) | 5.4 KB |
 | `15_podpowiedzi-budowanie.js` | podpowiedzi (HINTS), reguła Madelunga, budowanie atomu krok po kroku | 10.5 KB |
 | `16_all.js` | all() — odrysowanie wszystkiego | 0.4 KB |
 | `17_most-che.js` | mostek do silnika CHE (opcjonalny: window.CHE?.) i panel diagnostyki labu | 15.4 KB |
@@ -25,6 +26,10 @@ Części składają się (w kolejności `_kolejnosc.txt`) w moduł bajt w bajt �
 | `19_poprawki-ui.js` | późniejsze nakładki UI (motyw, karta, zakładki, skróty, pamięć ustawień, porównania) | 19.2 KB |
 
 ## Zależności części
+
+### ../../komponenty/atlas-gfx.js
+- definiuje: —
+- używa z innych części: 01_dane-pierwiastkow (COL, SH, sup, still, sym, CAP, ORDER, role); 02_stan-naglowek (zNuc); 04_rys-poziomy-chmura (zmCloud); 05_wykresy-wlasciwosci (ph, iso); 07_czasteczki-dane (lab, cur, X); 09_scena-sterowanie (zm)
 
 ### 01_dane-pierwiastkow.js
 - definiuje: `still` `$` `sup` `K2C` `nodata` `DB` `NAMES` `REDOX` `ORDER` `CAP` `SH` `COL` `EXC` `fill` `srt` `strip` `add` `role` `SYM` `pos` `PM` `blk` `ENG` `STUB` `stub` `sym` `chg` `orb` `lang` `NMT` `SMT` `NGS` `eclass` `FAMS`
@@ -38,13 +43,13 @@ Części składają się (w kolejności `_kolejnosc.txt`) w moduł bajt w bajt �
 - DOM (id): hmeta hcfg pos stats lew cov ec-z ec-mass ec-sym ec-name ec-ions chsel
 
 ### 03_rys-bohr.js
-- definiuje: `bohr` `arrowSVG`
-- używa z innych części: 01_dane-pierwiastkow ($, ORDER, role, SH, COL, sup, chg); 02_stan-naglowek (state, buildN, truncCfg, isotopeData, zNuc, zt, GEO); 07_czasteczki-dane (lab, cur); 09_scena-sterowanie (zm); 14_hud-izotopy (isoA); 15_podpowiedzi-budowanie (nl)
+- definiuje: `bohr`
+- używa z innych części: 01_dane-pierwiastkow ($, ORDER, role, chg); 02_stan-naglowek (state, buildN, truncCfg, isotopeData, zNuc, zt, GEO); 09_scena-sterowanie (zm); 14_hud-izotopy (isoA); 15_podpowiedzi-budowanie (nl)
 - DOM (id): bohr bohrinfo zr focus zs
 
 ### 04_rys-poziomy-chmura.js
-- definiuje: `levels` `ANG` `zmCloud` `cloud`
-- używa z innych części: 01_dane-pierwiastkow (ORDER, nodata, CAP, role, COL, $, chg, orb); 02_stan-naglowek (state); 03_rys-bohr (arrowSVG); 05_wykresy-wlasciwosci (ph); 07_czasteczki-dane (X)
+- definiuje: `levels` `zmCloud` `cloud`
+- używa z innych części: 01_dane-pierwiastkow (ORDER, role, COL, nodata, $, chg, orb); 02_stan-naglowek (state)
 - DOM (id): lev levsum cloud orbname orbsel
 
 ### 05_wykresy-wlasciwosci.js

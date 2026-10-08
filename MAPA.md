@@ -3,11 +3,11 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (10 pl., 51 KB)
+## .  (10 pl., 39 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 4 KB
-- `MAPA.md` 26 KB
+- `MAPA.md` 14 KB
 - `PRZEKAZANIE.md` 2 KB
 - `README.md` 0 KB
 - `edit_html.py` 3 KB
@@ -101,7 +101,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 93 KB)
+## chemia/che-modular  (13 pl., 97 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -145,6 +145,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src  (1 pl., 1 KB)
 - `standalone.html` 1 KB
 
+## chemia/che-modular/engine/src/atlas  (2 pl., 2 KB)
+- `moduly.txt` 1 KB
+- `start.js` 1 KB
+
 ## chemia/che-modular/engine/src/dane  (12 pl., 1.6 MB)
 - `_indeks.json` 15 KB
 - `edukacja.json` 14 KB
@@ -158,9 +162,6 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`substancje.json` 132 KB
 - `termo-redoks.json` 3 KB
 - ⚠`weryfikacja.json` 836 KB
-
-## chemia/che-modular/engine/src/dodatki  (1 pl., 11 KB)
-- `atlas-gfx.js` 11 KB
 
 ## chemia/che-modular/engine/src/gfx  (2 pl., 34 KB)
 - `KATALOG.md` 11 KB
@@ -235,6 +236,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
+## chemia/che-modular/engine/src/komponenty  (1 pl., 19 KB)
+- `atlas-gfx.js` 19 KB
+
 ## chemia/che-modular/engine/src/lab  (1 pl., 76 KB)
 - ⚠`szkielet.html` 76 KB
 
@@ -257,15 +261,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`che-sole-src.js` 110 KB
 - ⚠`fiz-elektro-src.js` 73 KB
 
-## chemia/che-modular/engine/src/moduly/_anon_004  (8 pl., 175 KB)
-- `01_still.js` 24 KB
-- `02_famOf.js` 24 KB
-- `03_ph.js` 26 KB
-- `04_FGC.js` 24 KB
-- `05_IC.js` 25 KB
-- `06_isoBar.js` 24 KB
-- `07_all.js` 26 KB
-- `_kolejnosc.txt` 0 KB
+## chemia/che-modular/engine/src/moduly/_anon_004  (22 pl., 174 KB)
+- (zwinięte; `ls chemia/che-modular/engine/src/moduly/_anon_004`)
 
 ## chemia/che-modular/engine/src/moduly/_anon_017  (3 pl., 42 KB)
 - `01_fill.js` 41 KB
@@ -413,7 +410,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (21 pl., 117 KB)
+## chemia/che-modular/tools  (24 pl., 132 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)

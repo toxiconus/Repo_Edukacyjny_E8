@@ -1,10 +1,10 @@
-/* atlas-gfx.js — grafiki atlasu (_anon_004) jako komponenty wielokrotnego użytku: CHE.LAB.atomBohr, CHE.LAB.orbitalCloud.
-   Dodatek (engine/src/dodatki/): lab dostaje go na końcu strony (tools/silnik.py lab_html), lekcje w md2html przed rozszerzeniami.
-   Stare źródła silnika bez zmian (test bajt w bajt liczy lab BEZ dodatków). Atlas korzysta z komponentów przez podmianę
-   swoich funkcji globalnych (niżej) — tylko gdy atlas jest na stronie. */
+/* atlas-gfx.js — rysunki atlasu jako komponenty wielokrotnego użytku (jeden kod dla atlasu i lekcji):
+   atomBohr, orbitalCloud, isotopeBar, orbitalDiagram. Dostępne jako window.CHE_GFX.* (stała przestrzeń) i CHE.LAB.* (lekcje).
+   Atlas: ten plik jest pierwszą częścią modułu _anon_004 (_kolejnosc.txt) — jego bohr/cloud/levels/isoBar tylko wołają komponenty.
+   Lekcje: tools/md2html.py dołącza engine/src/komponenty/*.js przed rozszerzeniami. */
 (function(){
-var C=window.CHE=window.CHE||{},L;try{L=C.LAB=C.LAB||{}}catch(_){L={}}
-if(L.atomBohr&&L.orbitalCloud&&L.isotopeBar&&L.orbitalDiagram)return;
+var G=window.CHE_GFX=window.CHE_GFX||{},L=G;
+if(G.atomBohr&&G.orbitalCloud&&G.isotopeBar&&G.orbitalDiagram)return;
 /* atomBohr — rysunek atomu z atlasu (_anon_004 bohr) jako komponent canvas, bez stanu i DOM atlasu.
    Ten sam wygląd: tło, jądro (kulki p/n złotym kątem, gradient, obręcz „ponad najczęstszy izotop”), powłoki z etykietą „K · 2/2”,
    elektrony wewnętrzne #2f8a55 / walencyjne #b85f00 z poświatą, obrót powłok w czasie.
@@ -12,7 +12,7 @@ if(L.atomBohr&&L.orbitalCloud&&L.isotopeBar&&L.orbitalDiagram)return;
    Pełna wersja z atlasu (2026-10-08): o.zoom (powiększenie, jak kółko myszy w atlasie), o.lupa (wstawka z jądrem przy małym zoomie),
    o.sel (podświetlona powłoka 1..7), o.hl ('3d' — podświetlona podpowłoka + opis u dołu; o.bn, o.chg, o.nl), o.cfgShow (część elektronów — budowanie),
    o.order + o.role (kolejność i role podpowłok jak w atlasie). Zwraca {R0, step, Rn, rings, ns, zNuc, inset, ix, iy, ir}.
-   atomBohr.anim(canvas, o) → funkcja stop(). Atlas rysuje bohr tym komponentem (podmiana niżej). */
+   atomBohr.anim(canvas, o) → funkcja stop(). Atlas: bohr() w _anon_004/03_rys-bohr.js. */
 function atomBohr(cv,o){var x=cv.getContext('2d'),P=cv.width,W=760,cx=380,cy=380,t=(o.t||0)/1000,z=o.p|0,N=Math.max(0,o.n|0),N0=o.n0==null?N:o.n0,ne=Math.max(0,o.e|0),
  zm=o.zoom||1,sel=o.sel||0,hl=o.hl||null,COL=o.col||{c:'#2f8a55',v:'#b85f00',r:'#b0467a'},SH='KLMNOPQ',shells=[],skeys=[],vflag=[],show=o.cfgShow||o.cfg;
  if(o.cfg&&o.order&&o.role){o.order.filter(function(k){return o.cfg[k]}).forEach(function(k){var i=+k[0]-1,ro=o.role(o.cfg,k);shells[i]=shells[i]||[];skeys[i]=skeys[i]||[];if(ro==='v')vflag[i]=true;for(var j=0;j<(show[k]||0);j++){shells[i].push(ro);skeys[i].push(k)}})}
@@ -147,27 +147,12 @@ return function(cv,o){var sub=o.sub||'1s',type=o.type||({s:'s',p:'pz',d:'dz2'}[s
   x.fillText('próbki: ' + g + ' · zoom ' + zmCloud.toFixed(1) + '×', 14, 26);
   return {samples:g}}})();
 L.orbitalCloud=orbitalCloud;
-/* atlas: chmura orbitalna rysowana komponentem (ten sam kod rysunku; stan i przyciski zostają w atlasie) */
-try{if(typeof cloud==='function'&&typeof state==='function'&&typeof ORDER!=='undefined'&&document.getElementById('cloud')){
- cloud=function(){var c=state().c,subs=ORDER.filter(function(k){return c[k]&&'spd'.includes(k[1])});
-  if(!orb||!subs.includes(orb.split(':')[0]))orb=(subs[subs.length-1]||'1s')+':'+({s:'s',p:'pz',d:'dz2'}[(subs[subs.length-1]||'s')[1]]);
-  var q=orb.split(':'),sub=q[0],type=q[1];orbitalCloud(document.getElementById('cloud'),{sub:sub,type:type,zoom:zmCloud});
-  document.getElementById('orbname').textContent=sub+' '+type;
-  var opts={s:['s'],p:['pz'],d:['dz2','dxy']},b='';
-  subs.forEach(function(k){opts[k[1]].forEach(function(t){b+='<button class="'+(orb===k+':'+t?'on':'')+'" data-o="'+k+':'+t+'">'+k+' '+t+'</button>'})});
-  document.getElementById('orbsel').innerHTML=b;
-  document.querySelectorAll('#orbsel [data-o]').forEach(function(x){x.onclick=function(){orb=x.dataset.o;cloud()}});
- };L.atlasGfx='cloud';cloud()}}catch(e){console.warn('[atlas-gfx] '+e.message)}
 /* isotopeBar — pasek izotopów z atlasu (_anon_004 isoBar) jako komponent: isotopeBar(el, {sym, isotopes:[{A, ab, hl, abundanceProvenance}], A, onPick(A)}).
    Przyciski ⁿSym (aktywny = wybrany A, * = promieniotwórczy), podpowiedź: % lub T½ + źródło (CIAAW 2024 / lokalny rekord). Wygląd: klasa .isobar (CSS labu). */
 function isotopeBar(el,o){var iso=o.isotopes||[],sym=o.sym||'';
  el.innerHTML=iso.length?'<span>izotop</span>'+iso.map(function(i){return '<button data-i="'+i.A+'" class="'+(i.A===o.A?'on':'')+'" title="'+(i.ab?i.ab+' %':'promieniotwórczy, T½ '+i.hl)+(i.abundanceProvenance?' · CIAAW 2024':' · lokalny rekord bez weryfikacji')+'"><sup>'+i.A+'</sup>'+sym+(i.ab?'':'*')+'</button>'}).join(''):'';
  el.querySelectorAll('[data-i]').forEach(function(b){b.onclick=function(){if(o.onPick)o.onPick(+b.dataset.i)}});return el}
 L.isotopeBar=isotopeBar;
-/* atlas: pasek izotopów z komponentu (wybór izotopu → isoA, odświeżenie HUD, zoom na jądro — jak w atlasie) */
-try{if(typeof isoBar==='function'&&typeof isotopeData==='function'&&document.getElementById('isobar')){
- isoBar=function(){var e=state().e,isotopes=isotopeData(e),tp=isotopes.slice().sort(function(a,b){return (b.ab||0)-(a.ab||0)})[0],A=isoA||(tp?tp.A:0);
-  isotopeBar($('isobar'),{sym:sym,isotopes:isotopes,A:A,onPick:function(a){isoA=a;hud();zt=zNuc}})}}}catch(e){console.warn('[atlas-gfx isoBar] '+e.message)}
 /* orbitalDiagram — diagram orbitali „klatki i strzałki” z atlasu (_anon_004 levels) jako komponent SVG.
    orbitalDiagram({c, c0?, order?, role?, col?}) → {svg (wnętrze <svg>), W, H, unp, prs} — c = konfiguracja do pokazania, c0 = wyjściowa (duchy elektronów usuniętych w jonie).
    Podpowłoki od najniższej energii, reguła Hunda (najpierw pojedyncze), kolory ról jak w atomBohr. Puste: null. */
@@ -195,25 +180,7 @@ function orbitalDiagram(o){var c=o.c||{},c0=o.c0||c,CAP={s:2,p:6,d:10,f:14},COL=
   s+='<text x="'+(W-4)+'" y="'+(y+boxW*.68)+'" text-anchor="end" style="font-size:12.5px;font-weight:600;fill:'+(n?'#17212b':'#9aa8b5')+'">'+n+' e⁻</text>'});
  return {svg:s,W:W,H:H,unp:unp,prs:prs}}
 L.orbitalDiagram=orbitalDiagram;
-/* atlas: diagram orbitali z komponentu (podsumowanie #levsum i viewBox jak w atlasie) */
-try{if(typeof levels==='function'&&document.getElementById('lev')){
- levels=function(){var st=state(),r=orbitalDiagram({c:st.c,c0:st.c0,order:ORDER,role:role,col:COL});if(!r)return nodata(360,200);
-  $('lev').setAttribute('viewBox','0 0 '+r.W+' '+r.H);var lv=$('levsum');
-  if(lv)lv.innerHTML='<span><em>niesparowane</em><b>'+r.unp+'</b></span><span><em>pary</em><b>'+r.prs+'</b></span><span><em>magnetyzm</em><b>'+(r.unp?'para':'dia')+'</b></span>'+(chg?'<span><em>jon</em><b>'+(chg>0?'+'+chg:chg)+'</b></span>':'');
-  return r.svg}}}catch(e){console.warn('[atlas-gfx levels] '+e.message)}
-/* atlas: atom Bohra rysowany komponentem atomBohr (stan, zoom, GEO i liczniki zostają w atlasie; widoczność jak w 19_poprawki-ui) */
-try{if(typeof bohr==='function'&&typeof state==='function'&&typeof GEO!=='undefined'&&document.getElementById('bohr')){
- bohr=function(ts){if(!still&&(document.hidden||!document.getElementById('stage').offsetParent))return;
-  var st=state(),e=st.e,cFull=st.c,c=buildN==null?cFull:truncCfg(cFull,buildN),cv=$('bohr');
-  var isotopes=isotopeData(e),top=isotopes.slice().sort(function(a,b){return (b.ab||0)-(a.ab||0)})[0],A0=top?top.A:(e.m?Math.round(e.m):Math.round(e.z*2.3));
-  var A=isoA||A0,N=Math.max(0,A-e.z),N0=Math.max(0,A0-e.z),Rn=3.4*Math.sqrt(e.z+N)+4;
-  zNuc=Math.min(70,262/Rn);zt=Math.min(Math.max(zt,.6),zNuc);
-  zm=Math.exp(Math.log(zm)+(Math.log(zt)-Math.log(zm))*.14);if(Math.abs(Math.log(zm/zt))<.002)zm=zt;
-  var g=atomBohr(cv,{p:e.z,n:N,n0:N0,cfg:cFull,cfgShow:c,order:ORDER,role:role,t:ts,zoom:zm,sel:GEO.sel,hl:GEO.hl,bn:GEO.bn,chg:chg,nl:nl,lupa:true});
-  Object.assign(GEO,{R0:g.R0,step:g.step,Rn:g.Rn,rings:g.rings,A:A,N:N,inset:false});if(g.ix!=null)Object.assign(GEO,{inset:g.inset,ix:g.ix,iy:g.iy,ir:g.ir});
-  $('bohrinfo').innerHTML='<div class="bi"><span><em>Z</em><b>'+e.z+'</b></span><span><em>N</em><b>'+N+'</b>'+(N!==N0?'<small>'+(N>N0?'+':'')+(N-N0)+' vs najczęstszy</small>':'')+'</span><span><em>A</em><b>'+A+'</b></span><span><em>e⁻</em><b>'+(e.z-chg)+'</b></span><span><em>powłok</em><b>'+g.ns+'</b></span></div>';
-  $('zr').textContent=(zm<10?zm.toFixed(1):Math.round(zm))+'×';
-  var fo=$('focus');if(fo)fo.style.opacity=zm>zNuc*.45?0:1;
-  var zs=$('zs');if(document.activeElement!==zs)zs.value=100*Math.log(zm/.6)/Math.log(zNuc/.6)};
- L.atlasGfx='cloud,bohr,isoBar,levels'}}catch(e){console.warn('[atlas-gfx bohr] '+e.message)}
+/* lustro w CHE.LAB (lekcje i widoki silnika); silnik podmienia CHE.LAB w trakcie ładowania — więc ponownie po załadowaniu strony */
+function lustro(){try{var C=window.CHE=window.CHE||{},LB=C.LAB=C.LAB||{};['atomBohr','orbitalCloud','isotopeBar','orbitalDiagram'].forEach(function(k){if(!LB[k])LB[k]=G[k]})}catch(_){}}
+lustro();if(document.readyState!=='complete')window.addEventListener('load',lustro);
 })();

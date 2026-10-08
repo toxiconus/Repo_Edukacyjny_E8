@@ -68,6 +68,17 @@ def silnik_profile():
 def test(*a):
     run(sys.executable, str(T / "gfx_join.py"))
     run(sys.executable, str(T / "silnik.py"))
+    mono = Path("/tmp/che_mono.html")
+    if mono.exists():   # zachowanie atlasu: stary monolit v0_57 ↔ nowy lab i atlas (zakładki, rysunki canvas)
+        sys.path.insert(0, str(T)); import silnik
+        (ROOT / "dist").mkdir(exist_ok=True)
+        (ROOT / "dist/lab.html").write_text(silnik.lab_html(dodatki=True), encoding="utf-8")
+        (ROOT / "dist/atlas.html").write_text(silnik.atlas_html(), encoding="utf-8")
+        wz = ROOT / "dist/_atlas_monolit.json"
+        if not wz.exists():
+            run("node", str(T / "atlas_sprawdz.cjs"), str(mono), "--zapisz", str(wz))
+        for f in ("dist/lab.html", "dist/atlas.html"):
+            run("node", str(T / "atlas_sprawdz.cjs"), "--wzorzec", str(wz), str(ROOT / f))
     if "--szybki" not in a:
         lekcje()
         run("node", str(T / "test_lekcje.cjs"))

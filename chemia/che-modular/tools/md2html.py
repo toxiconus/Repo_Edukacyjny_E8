@@ -385,8 +385,9 @@ def render(path):
     if meta.get('stopka'):
         foot = '<footer class="footer">\n<p>%s</p>\n<p style="opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>\n</footer>' % inline(meta['stopka'])
     css = open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'lekcja.css'), encoding='utf-8').read()
-    dod = os.path.join(ROOT, 'engine', 'src', 'dodatki')
-    js = ''.join(open(os.path.join(dod, f), encoding='utf-8').read() + '\n' for f in sorted(os.listdir(dod)) if f.endswith('.js')) if os.path.isdir(dod) else ''
+    js = ''
+    for dod in (os.path.join(ROOT, 'engine', 'src', 'komponenty'), os.path.join(ROOT, 'engine', 'src', 'dodatki')):   # komponenty wspólne z atlasem, potem dodatki
+        js += ''.join(open(os.path.join(dod, f), encoding='utf-8').read() + '\n' for f in sorted(os.listdir(dod)) if f.endswith('.js')) if os.path.isdir(dod) else ''
     js += open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'rozszerzenia.js'), encoding='utf-8').read() + '\n' + open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'lekcja.js'), encoding='utf-8').read()
     own_css = '\n'.join(collect('styl', lines))
     doc = ('<!DOCTYPE html>\n<html lang="pl">\n<head>\n<meta charset="utf-8"/>\n<meta content="width=device-width,initial-scale=1.0" name="viewport"/>\n'
