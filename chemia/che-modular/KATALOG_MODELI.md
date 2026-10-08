@@ -77,6 +77,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `neutralization` | Równania jonowe — cząsteczkowe, jonowe pełne, jonowe skrócone |  |
 | `obtaining-hcl-steps` | Otrzymywanie kwasu solnego — etapy |  |
 | `obtaining-three` | Trzy drogi otrzymywania kwasów |  |
+| `atomBohr` (komponent canvas, `CHE.LAB.atomBohr`, `.anim`) | Rysunek atomu z atlasu (bohr `_anon_004`) bez stanu atlasu: jądro p/n, powłoki „K · 2/2”, elektrony wewn./walencyjne, opcjonalnie `cfg` podpowłok (rozszerzenia.js) | F05, F07, atlas (po podmianie) |
 | `atomSVG` (komponent, `CHE.LAB.atomSVG`) | Model atomu SVG: jądro p/n + elektrony; `powloki:true` → powłoki K–N 2,8,8 (kolory atlasu) (rozszerzenia.js) | F05, F07 |
 | `f05-izotopy-v01` | Konstruktor atomu: zmiana p/n/e → inny pierwiastek / izotop / jon + masa atomowa jako średnia ważona (rozszerzenia.js §8) | F05 |
 | `periodic-54` | Układ okresowy — pierwiastki 1–54, modele atomów, tlenki | N01 |

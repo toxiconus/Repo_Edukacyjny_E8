@@ -38,7 +38,7 @@ node tools/test_lekcje.cjs --wzorzec=dist/_wz/wzorzec.json   # z porównaniem tr
 
 ## 4. Otwarte / znane problemy
 
-- `f05-izotopy-v01` rysuje atom przez nowy komponent **`atomSVG`** (rozszerzenia.js przed §8, też `CHE.LAB.atomSVG`): kolory jak w atlasie, `powloki:true` = powłoki K/L/M/N 2,8,8 (gotowe dla F07; sprawdzone Na = 2,8,1). Atlasowy `bohr` (`_anon_004`) to cała strona związana z DOM i stanem atlasu — nie da się go wywołać jako komponentu; dalszy krok: przenieść z niego jądro (kulki 3D, lupa) do `atomSVG` lub osobnego canvas-komponentu.
+- `f05-izotopy-v01` rysuje atom przez nowy komponent **`atomSVG`** (rozszerzenia.js przed §8, też `CHE.LAB.atomSVG`): kolory jak w atlasie, `powloki:true` = powłoki K/L/M/N 2,8,8 (gotowe dla F07; sprawdzone Na = 2,8,1). Atlasowy `bohr` (`_anon_004`) to cała strona związana z DOM i stanem atlasu — nie da się go wywołać jako komponentu; wyciągnięty do komponentu canvas **`atomBohr`** (`CHE.LAB.atomBohr(canvas,{p,n,e,n0,cfg,t})`, `.anim`) — wygląd atlasu sprawdzony zrzutem (Na 2,8,1; Cl⁻ 2,8,8 z podpowłokami). Atlas nadal ma własną kopię (test bajt w bajt). Dalej: (a) F05/F07 na `atomBohr`, (b) to samo dla `cloud` i `isoBar`, (c) atlas wywołuje komponenty (zmiana źródła `_anon_004` → aktualizacja wzorca sha w `silnik.py`, ocena wizualna), bez lupy/zoomu na razie.
 - Odchudzanie CSS labu (~170 KB) i DOM labu (~70 KB, m.in. bank widżetów 46 KB) wymaga oceny wizualnej (zrzuty) — flaga `--css-tak` w `odchudz.py`, domyślnie wyłączona.
 - Z v0_59: tryb Noc (podwójne odwrócenie kolorów), stare `::: skrypt` w N01–N03 → `::: test`.
 - Po zatwierdzeniu kanonu v0.3: przemianować N01…N05 → N02…N06 (pliki, `kod`, `uid`, rejestr, profil `lekcje`).
