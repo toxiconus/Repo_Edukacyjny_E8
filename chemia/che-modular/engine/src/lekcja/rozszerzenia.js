@@ -228,43 +228,8 @@ function atomSVG(o){var W=o.W||260,C=W/2,p=o.p|0,n=o.n|0,e=o.e|0,svg='<svg viewB
  if(!e)svg+='<circle cx="'+C+'" cy="'+C+'" r="'+(104*sk)+'" fill="none" stroke="#9aa6b2" stroke-dasharray="4 4"/>';
  return svg}
 try{C.LAB=C.LAB||{};C.LAB.atomSVG=atomSVG}catch(_){}
-/* atomBohr — rysunek atomu z atlasu (_anon_004 bohr) jako komponent canvas, bez stanu i DOM atlasu.
-   Ten sam wygląd: tło, jądro (kulki p/n złotym kątem, gradient, obręcz „ponad najczęstszy izotop”), powłoki z etykietą „K · 2/2”,
-   elektrony wewnętrzne #2f8a55 / walencyjne #b85f00 z poświatą, obrót powłok w czasie.
-   atomBohr(canvas, {p, n, e, n0?, cfg?, t?}) — cfg: {'1s':2,'2s':2,'2p':6,…} (jak fill() atlasu); bez cfg → model szkolny 2,8,8,… (powłoki = podpowłoki jednej grupy).
-   Zwraca {R0, step, Rn, rings}. atomBohr.anim(canvas, o) → funkcja stop(). Atlas na razie rysuje własną kopią (test bajt w bajt) — podmiana po ocenie wizualnej. */
-function atomBohr(cv,o){var x=cv.getContext('2d'),P=cv.width,W=760,cx=380,cy=380,t=(o.t||0)/1000,z=o.p|0,N=Math.max(0,o.n|0),N0=o.n0==null?N:o.n0,ne=Math.max(0,o.e|0),
- COL={c:'#2f8a55',v:'#b85f00',r:'#b0467a'},SH='KLMNOPQ',shells=[],skeys=[],vflag=[];
- if(o.cfg){var ks=Object.keys(o.cfg).filter(function(k){return o.cfg[k]>0}),maxn=0;ks.forEach(function(k){maxn=Math.max(maxn,+k[0])});
-  ks.forEach(function(k){var i=+k[0]-1,ro=+k[0]===maxn?'v':'c';shells[i]=shells[i]||[];skeys[i]=skeys[i]||[];if(ro==='v')vflag[i]=true;for(var j=0;j<o.cfg[k];j++){shells[i].push(ro);skeys[i].push(k)}})}
- else{var cap=[2,8,8],left=ne,q=0;while(left>0){var c=q<3?Math.min(cap[q],left):left;shells[q]=[];skeys[q]=[];for(var j=0;j<c;j++){shells[q].push('c');skeys[q].push(String(q+1))}left-=c;q++}
-  if(q){vflag[q-1]=true;shells[q-1]=shells[q-1].map(function(){return 'v'})}}
- var ns=shells.filter(Boolean).length,R0=ns<=1?150:ns===2?118:78,step=Math.min(84,(W/2-R0-34)/Math.max(ns-1,1)),tot=z+N,Rn=3.4*Math.sqrt(tot)+4,rings=[],kq=0;
- shells.forEach(function(sh,i){if(!sh)return;rings.push({n:i+1,R:R0+kq*step});kq++});
- x.setTransform(P/W,0,0,P/W,0,0);var bg=x.createRadialGradient(W/2,W/2,40,W/2,W/2,W*.72);bg.addColorStop(0,'#fcfdfe');bg.addColorStop(1,'#e6edf2');x.fillStyle=bg;x.fillRect(0,0,W,W);
- x.strokeStyle='rgba(23,33,43,.06)';x.lineWidth=1;for(var r=90;r<W;r+=90){x.beginPath();x.arc(cx,cy,r,0,7);x.stroke()}
- x.beginPath();x.moveTo(0,cy);x.lineTo(W,cy);x.moveTo(cx,0);x.lineTo(cx,W);x.stroke();
- var gl=x.createRadialGradient(cx,cy,2,cx,cy,Rn*2.4);gl.addColorStop(0,'rgba(214,69,43,.25)');gl.addColorStop(1,'rgba(214,69,43,0)');x.fillStyle=gl;x.beginPath();x.arc(cx,cy,Rn*2.4,0,7);x.fill();
- var rn=3.2,nI=0;
- for(var i=0;i<tot;i++){var rr=tot>1?3.4*Math.sqrt(i+.5):0,a=i*2.39996+t*.15,isP=((i*7919)%tot)<z,px=cx+rr*Math.cos(a)+Math.sin(t*6+i*1.7)*.22,py=cy+rr*Math.sin(a)+Math.cos(t*5+i*2.3)*.22,col=isP?'#d6452b':'#6f7882',ex=!isP&&++nI>N0;
-  x.fillStyle=col;x.beginPath();x.arc(px,py,rn,0,7);x.fill();if(ex){x.strokeStyle='#b85f00';x.lineWidth=1.4;x.stroke()}}
- var k=0;shells.forEach(function(sh,i){if(!sh)return;var R=R0+k*step,dir=k%2?-1:1,w=dir*.9/Math.pow(k+1,.9),isVal=!!vflag[i];
-  if(isVal){x.beginPath();x.arc(cx,cy,R,0,7);x.strokeStyle='rgba(217,119,6,.12)';x.lineWidth=9;x.stroke()}
-  x.beginPath();x.arc(cx,cy,R,0,7);x.strokeStyle=isVal?'rgba(184,95,0,.7)':'rgba(23,33,43,.18)';x.lineWidth=isVal?1.8:1.1;x.stroke();
-  var lb=SH[i]+' · '+sh.length+'/'+2*(i+1)*(i+1),lx=cx+R*.707+5,ly=cy-R*.707;x.font='600 12.5px JetBrains Mono, monospace';x.textAlign='left';
-  var tw=x.measureText(lb).width+10;x.beginPath();if(x.roundRect)x.roundRect(lx,ly-12,tw,17,8);else x.rect(lx,ly-12,tw,17);
-  x.fillStyle='rgba(255,255,255,.9)';x.fill();x.strokeStyle=isVal?'rgba(184,95,0,.55)':'rgba(23,33,43,.18)';x.lineWidth=1;x.stroke();x.fillStyle=isVal?'#b85f00':'#53616e';x.fillText(lb,lx+5,ly+1);
-  var kk=skeys[i],ang=[],gp=[];kk.forEach(function(q,j){if(!j||q!==kk[j-1])gp.push([q,j,j]);else gp[gp.length-1][2]=j});
-  var gap=gp.length>1?.17:0,stp=(6.2832-gap*gp.length)/Math.max(sh.length,1),cur=-Math.PI/2;kk.forEach(function(q,j){if(j&&q!==kk[j-1])cur+=gap;ang[j]=cur+stp*.5;cur+=stp});
-  if(gp.length>1&&o.cfg){x.font='600 9.5px JetBrains Mono, monospace';x.textAlign='center';gp.forEach(function(g){var am=(ang[g[1]]+ang[g[2]])/2+w*t;x.fillStyle=COL[sh[g[1]]];x.fillText(g[0],cx+(R+19)*Math.cos(am),cy+(R+19)*Math.sin(am)+3.2)})}
-  sh.forEach(function(ro,j){var a=ang[j]+w*t,px=cx+R*Math.cos(a),py=cy+R*Math.sin(a),col=COL[ro];
-   x.shadowColor=col;x.shadowBlur=ro==='c'?4:12;x.beginPath();x.arc(px,py,ro==='c'?5.6:7.2,0,7);x.fillStyle=col;x.fill();x.shadowBlur=0;
-   x.beginPath();x.arc(px,py,ro==='c'?1.9:2.5,0,7);x.fillStyle='rgba(255,255,255,.9)';x.fill()});k++});
- x.fillStyle='#d6452b';x.font='600 12px Inter,sans-serif';x.textAlign='center';x.fillText('jądro',cx,cy+Rn+20);
- return {R0:R0,step:step,Rn:Rn,rings:rings}}
-atomBohr.anim=function(cv,o){var on=true,still=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
- function f(ts){if(!on)return;atomBohr(cv,Object.assign({},o,{t:ts}));if(!still)requestAnimationFrame(f)}requestAnimationFrame(f);return function(){on=false}};
-try{C.LAB.atomBohr=atomBohr}catch(_){}
+/* atomBohr, orbitalCloud → engine/src/dodatki/atlas-gfx.js (wspólne dla labu i lekcji, CHE.LAB.*) */
+
 V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa',tag:'MODEL',
  hint:'Dodawaj i zabieraj protony, neutrony i elektrony. Model mówi, co się zmieniło: pierwiastek (Z), izotop (n) czy ładunek (e). Niżej: skąd się bierze masa atomowa z układu okresowego.',
  foot:'rozszerzenia.js §8 · dane: CHE.DATA.ISOTOPES, ELEMENTS_54',

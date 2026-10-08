@@ -55,7 +55,15 @@ def skeleton(drop_css=None):
                   p.read_text(encoding="utf-8"))
 
 
-def lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None, drop_css=None):
+DODATKI = SRC / "dodatki"   # nowa warstwa obok starego silnika (komponenty, podmiany) — poza testem bajt w bajt
+
+
+def dodatki_js():
+    return "\n".join(f.read_text(encoding="utf-8") for f in sorted(DODATKI.glob("*.js"))) if DODATKI.is_dir() else ""
+
+
+def lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None, drop_css=None, dodatki=False):
+    """dodatki=True: lab z nową warstwą engine/src/dodatki/*.js (na końcu <body>); False = stary silnik bajt w bajt."""
     drop = drop or set()
     skel = skeleton(drop_css)
 
@@ -63,7 +71,12 @@ def lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None, drop_
         c = BY_INDEX[int(m.group(1))]
         return "" if c["id"] in drop else module_body(c, gfx_allow, przedmiot, sections)
 
-    return re.sub(r"/\*@@MOD (\d+)@@\*/", rep, skel)
+    out = re.sub(r"/\*@@MOD (\d+)@@\*/", rep, skel)
+    if dodatki and dodatki_js():
+        js = dodatki_js().replace("</", "<\\/")
+        i = out.rfind("</body>")
+        out = out[:i] + '<script id="che-dodatki">\n' + js + "\n</script>\n" + out[i:]
+    return out
 
 
 STANDALONE = (ROOT / "engine/src/standalone.html")

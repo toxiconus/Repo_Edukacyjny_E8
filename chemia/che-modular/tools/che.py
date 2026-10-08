@@ -11,6 +11,7 @@
   python3 tools/che.py test [--szybki]    bezstratność (GFX, lab==monolit, che-viz==v0_59) + render lekcji
   python3 tools/che.py gfx                lista elementów GFX/VIEW (przedmiot/rodzaj: liczba, KB)
   python3 tools/che.py katalog            generuje engine/src/gfx/KATALOG.md (id ↔ nazwa PL ↔ plik)
+  python3 tools/che.py lab               pełny lab z nową warstwą engine/src/dodatki → dist/lab.html
   python3 tools/che.py dane [--sprawdz|--lekcje] CHE.DATA z silnika → engine/src/dane/<dziedzina>.json (+ _indeks.json)
 """
 import json, shutil, subprocess, sys
@@ -124,6 +125,10 @@ def main(a):
     elif c == "silnik": silnik_profile()
     elif c == "gfx": gfx()
     elif c == "katalog": katalog()
+    elif c == "lab":
+        sys.path.insert(0, str(T)); import silnik
+        (ROOT / "dist").mkdir(exist_ok=True)
+        (ROOT / "dist/lab.html").write_text(silnik.lab_html(dodatki=True), encoding="utf-8"); print("→ dist/lab.html (z dodatkami)")
     elif c == "dane": run(sys.executable, str(T / "dane_eksport.py"), *rest)
     else: sys.exit(f"nieznane: {c}\n{__doc__}")
 
