@@ -11,6 +11,7 @@ Przeczytaj ten plik jako pierwszy, zanim otworzysz cokolwiek innego. Obowiązuje
 Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biologia/`, `angielski/` ani starych `chemia/*.html`, jeśli zadanie ich nie dotyczy.
 
 ## Oszczędzanie tokenów (zawsze, chyba że użytkownik poprosi inaczej)
+- **Wyjątek:** gdy zadanie wymaga więcej tokenów, by nie stracić jakości, można dla niego ominąć oszczędzanie — ale przed startem zapytaj albo poinformuj jednym zdaniem: „W tym zadaniu nie mogę oszczędzać tokenów na <czym>, bo <powód>.” Tylko ta rzecz, tylko to zadanie.
 - Plików > 50 KB nie czytaj w całości: najpierw `grep -n`, potem fragment (`sed -n a,bp`). Dotyczy zwłaszcza `chemia/che/dist/che-viz.js` (zamrożony silnik, nie edytować) i wygenerowanych HTML.
 - Lekcje edytuje się w `md/`; HTML robi `python3 narzedzia/md2html.py` (zero tokenów). Wygenerowanego HTML nie czytaj ani nie poprawiaj ręcznie.
 - Wyniki poleceń skracaj (`| tail -3`, `| head`, liczniki zamiast list). Testy jednym poleceniem, pokazuj tylko błędy (`node narzedzia/sprawdz.js`).

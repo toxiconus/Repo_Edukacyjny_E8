@@ -7,6 +7,8 @@ description: Tryb oszczędnej pracy w repo Repo_Edukacyjny_E8 (CHE, BIO i inne p
 
 Użytkownik ma limity (godzinowe / tygodniowe). Cel: maksimum pracy na token bez utraty merytoryki. Domyślnie ZAWSZE oszczędnie, chyba że użytkownik poprosi inaczej.
 
+**Wyjątek — jakość ważniejsza niż limit:** gdy zadanie naprawdę wymaga więcej (np. pełna lektura dużego pliku, wiele zrzutów, szeroki przegląd), oszczędzanie można dla tego zadania pominąć — ale zawsze najpierw o tym mówię: pytam (gdy koszt duży) albo informuję jednym zdaniem przed startem: „W tym zadaniu nie mogę oszczędzać tokenów na <czym>, bo <powód>.” Wyjątek dotyczy tylko tego zadania i tylko tej rzeczy; reszta pracy dalej oszczędnie.
+
 ## 1. Start sesji (stała kolejność, nic „na wszelki wypadek”)
 1. `CLAUDE.md` (ładuje się sam).
 2. `MAPA.md` — rozmiary i rola plików; pliki z ⚠ czytać tylko grep/fragmentami.
