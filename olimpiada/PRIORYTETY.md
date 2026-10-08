@@ -18,7 +18,7 @@ Typowy arkusz konkursu chemicznego SP: teoria, **obliczenia (stężenie procento
 ### Chemia (do 23.10)
 | # | lekcja | dlaczego | materiał źródłowy | stan |
 |---|---|---|---|---|
-| C1 | **REV01 Powtórka klasy 7** (cały zakres kl. 7 w jednej lekcji: substancje, atom, wiązania, reakcje, gazy, woda i roztwory, obliczenia) | zakres etapu szkolnego = głównie kl. 7 + początek kl. 8 | `chemia/lekcje_md/00/CHE.00.REV01.powtorka_klasy_7.md` | [ ] następna — plan niżej (§5) |
+| C1 | **REV01 Powtórka klasy 7** (fundamenty: BHP, atom i jon, układ okresowy, wartościowość, wzory, wiązania, równania + nowa sekcja obliczeń konkursowych; gazy i roztwory — osobno) | zakres etapu szkolnego = głównie kl. 7 + początek kl. 8 | `chemia/lekcje_md/00/CHE.00.REV01.powtorka_klasy_7.md` | [ ] następna — plan niżej (§5) |
 | C2 | R03 Stężenie procentowe (+ R02 rozpuszczalność, krzywe) | obliczenia rozdzielają uczestników | `chemia/lekcje_md/R/CHE.03.R03+R05.stezenia.md` | [ ] |
 | C3 | F17 Równania reakcji + obliczenia z równań (masowe, prawo zachowania masy, proporcje — bez mola) | typowe zadanie konkursowe | `lekcje_md/F/CHE.01.F17…`, `R/…stechiometria.md` (część masowa) | [ ] |
 | C4 | Doświadczenia: obserwacja → wniosek → równanie (zbiorczo) | typowe zadanie konkursowe | `lekcje_md/00/CHE.00.LAB.doswiadczenia.md` | [ ] |
