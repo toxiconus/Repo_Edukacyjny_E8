@@ -1,0 +1,6 @@
+# Oszczędzanie tokenów: bez pełnych diffów dużych plików wynikowych (git diff --stat działa dalej)
+chemia/che/dist/** -diff
+*.html -diff
+.specstory/** -diff
+chemia/che-modular/dist/** -diff
+chemia/archiwum/** -diff
