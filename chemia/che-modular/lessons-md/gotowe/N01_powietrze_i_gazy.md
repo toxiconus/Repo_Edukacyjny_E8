@@ -148,7 +148,9 @@ Hel, neon, argon, krypton, ksenon, radon — grupa 18. Mają **trwałą konfigur
 **Zastosowania:** gaśnice, napoje gazowane, suchy lód (chłodzenie, efekty sceniczne), substrat fotosyntezy (szklarnie). **Zagrożenie:** w zamkniętych, nisko położonych pomieszczeniach (piwnice, studnie, fermentownie) może wypierać powietrze. Jest głównym gazem cieplarnianym związanym z działalnością człowieka.
 
 @model gfx-scene-carbonate | Węglan wapnia + kwas → CO₂ i woda wapienna | zobacz otrzymywanie i wykrywanie tlenku węgla(IV)
+@opis Scena doświadczenia: na węglan wapnia (kreda, marmur) działa kwas — wydzielają się pęcherzyki gazu, który przepuszczony przez klarowną wodę wapienną powoduje jej zmętnienie (biały osad CaCO₃). Wniosek: powstaje tlenek węgla(IV), a zmętnienie wody wapiennej to jego próba identyfikacyjna.
 @zlewka f01-doswiadczenia-v01 f01WodaWapienna | Zobacz w zlewce: woda wapienna + CO₂
+@opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina węglanu wapnia. Wniosek: zmętnienie wody wapiennej to test wykrywający CO₂.
 
 ## 6 | Wodór [[basic:E8]] {#wodor}
 
@@ -179,6 +181,7 @@ BHP: okulary, rękawice; kwas solny jest żrący; z wodorem pracujemy z daleka o
 :::
 
 @model gfx-scene-acidMetal | Metal + kwas solny → wodór (próba „pyk!”) | zobacz otrzymywanie i wykrywanie wodoru
+@opis Scena doświadczenia: do kwasu solnego wrzucono metal (np. cynk) — metal roztwarza się, wydzielają się pęcherzyki gazu zbierane w probówce; zbliżona do płomienia probówka z gazem daje charakterystyczny dźwięk „pyk”. Wniosek: w reakcji metalu z kwasem powstaje wodór, a odgłos przy płomieniu to jego próba identyfikacyjna.
 
 **Zastosowania:** paliwo przyszłości (spalanie daje tylko wodę), ogniwa paliwowe, paliwo rakietowe, utwardzanie tłuszczów roślinnych (margaryna), produkcja amoniaku. Dawniej wypełniano nim sterowce — wodór jest palny, dlatego dziś używa się helu.
 
@@ -210,6 +213,7 @@ Przy dostatecznej ilości tlenu węgiel spala się do **CO₂** (C + O₂ → CO
 :::
 
 @model n01-spalanie-v01 | Spalanie pierwiastków i paliw w tlenie | wybierz substancję — produkt, obserwacje, równanie
+@opis Pracownia spalania: po wybraniu substancji (np. węgla, siarki, magnezu, wodoru, metanu) widać przebieg spalania w tlenie — barwę płomienia i inne obserwacje, produkt oraz równanie reakcji. Wniosek: spalanie to reakcja z tlenem, której produktami są tlenki (paliwa organiczne dają CO₂ i H₂O).
 
 ## 9 | Korozja [[basic:E8]] {#korozja}
 
@@ -253,6 +257,11 @@ Gazy cieplarniane (para wodna, CO₂, metan) przepuszczają światło słoneczne
 | „Żelazo rdzewieje w samej wodzie.” | Potrzebna jest **woda i tlen**. | W wodzie przegotowanej pod olejem gwóźdź nie rdzewieje. |
 | „Ozon chroni nas, więc jest zdrowy w każdym miejscu.” | Warstwa ozonowa chroni przed UV, ale ozon przy ziemi jest **szkodliwy**. | Silny utleniacz, drażni drogi oddechowe. |
 | „MnO₂ jest substratem rozkładu H₂O₂.” | MnO₂ to **katalizator**. | Przyspiesza reakcję i nie zużywa się — zapisujemy go nad strzałką. |
+| „Skład powietrza jest wszędzie taki sam.” | Podaje się skład **suchego** powietrza (ok. 78% N₂, 21% O₂, 0,93% Ar, 0,04% CO₂); para wodna i zanieczyszczenia zmieniają się z miejscem i pogodą. | Powietrze to mieszanina — ma zmienny skład. |
+| „Świeczka pod zlewką dokładnie zmierzyła 21% tlenu.” | Doświadczenie pokazuje, że **część** powietrza (ok. 1/5) to tlen; wynik zwykle odbiega od tablicowego. | Zmienia się temperatura i ciśnienie gazu, część gazów rozpuszcza się w wodzie. |
+| „Gazy szlachetne w ogóle nie reagują.” | Są **mało** reaktywne; znane są związki np. ksenonu (XeF₂). | „Szlachetny” nie znaczy „absolutnie obojętny”. |
+| „Azot jest całkowicie bierny.” | W zwykłych warunkach reaguje bardzo wolno, ale np. przy wyładowaniach atmosferycznych tworzy tlenki azotu, a w przemyśle — amoniak. | Bierność zależy od warunków. |
+| „CO₂ jest trujący jak CO.” | CO₂ w dużym stężeniu powoduje niedotlenienie (wypiera tlen); CO jest silnie toksyczny, bo blokuje hemoglobinę. | Dwa różne tlenki — dwa różne zagrożenia. |
 :::
 
 ## 12 | Obliczenia konkursowe [[exam:KONKURS]] {#konkurs}
@@ -278,6 +287,24 @@ Gazy cieplarniane (para wodna, CO₂, metan) przepuszczają światło słoneczne
 
 ::: odp | Pokaż odpowiedzi
 1. 0,78 · 200 m³ = **156 m³**. 2. 1,98 ÷ 0,09 = **22 razy**. 3. Zn + 2HCl → ZnCl₂ + H₂: 65 g Zn — 2 g H₂ → **65 g**. 4. Hel ma mniejszą gęstość od powietrza (siła wyporu większa od ciężaru), CO₂ — większą.
+:::
+:::
+
+::: karta basic | Utrwalenie — powietrze i gazy (W1)
+1. Wyjaśnij, dlaczego powietrze jest mieszaniną, a nie związkiem.
+2. Podaj główny składnik powietrza.
+3. Czym różni się tlen od ozonu?
+4. Podaj próbę identyfikacyjną tlenu.
+5. Zapisz i zbilansuj równanie spalania siarki.
+6. Dlaczego zawartości pary wodnej nie podaje się w składzie powietrza jako stałego procentu?
+
+::: odp | Pokaż odpowiedzi
+1. Zawiera kilka gazów niepołączonych chemicznie, w zmiennych proporcjach; składniki zachowują swoje właściwości.
+2. Azot (ok. 78% objętości).
+3. To odmiany alotropowe tlenu: O₂ (2 atomy w cząsteczce) i O₃ (3 atomy) — inne cząsteczki, inne właściwości.
+4. Tlące się łuczywo włożone do gazu rozżarza się i zapala.
+5. S + O₂ → SO₂ (powstaje tlenek siarki(IV)).
+6. Ilość pary wodnej zmienia się z temperaturą, wilgotnością i miejscem — dlatego podaje się skład powietrza suchego.
 :::
 :::
 

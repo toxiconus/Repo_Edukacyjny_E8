@@ -156,6 +156,7 @@ Wybierz pierwiastek i jego **stopień utlenienia / wartościowość używaną w 
 :::
 
 @model n01-konstruktor-v01 | Konstruktor wzoru tlenku (W–K–S–K) i sprawdzanie wzoru — stopnie utlenienia, nadtlenki, OF₂ | CHE.OXIDES.build / oxState
+@opis Konstruktor wzoru tlenku: wybierasz pierwiastek i jego wartościowość (stopień utlenienia), a model prowadzi przez metodę W–K–S–K (wartościowość — krzyżowanie — skracanie — kontrola) i sprawdza wpisany wzór; osobno oznacza przypadki szczególne: nadtlenki (tlen −I) i OF₂ (fluorek tlenu). Wniosek: wzór tlenku wynika z wartościowości pierwiastka i tlenu (II).
 
 ::: karta core | Przykład W–K–S–K
 Fe(III) + O(II) → Fe₂O₃: wartościowości 3 i 2 → krzyżujemy → Fe₂O₃ → kontrola: 2·(+3) + 3·(−2) = 0.
@@ -250,8 +251,10 @@ Tlenki **aktywnych metali** mają zwykle charakter zasadowy, tlenki **niemetali*
 Kliknij pierwiastek — zobacz typową wartościowość, wzór tlenku i charakter.
 
 @model periodic-54 | Układ okresowy 1–54 — pierwiastek, wartościowość, tlenek i jego charakter | CHE.DATA.ELEMENTS + CHE.OXIDES
+@opis Układ okresowy 1–54: po wybraniu pierwiastka widać jego wartościowość w tlenkach, wzór tlenku i jego charakter (zasadowy, kwasowy, amfoteryczny, obojętny), zaznaczony kolorem. Wniosek: tlenki metali są zwykle zasadowe, niemetali — kwasowe, a charakter zmienia się regularnie w układzie okresowym.
 
 @model n01-tlenki-v01 | Tlenek — trzy pytania: charakter, woda, kwas / zasada (detektor charakteru) | CHE.OXIDES · 39 tlenków · zlewka z wskaźnikiem uniwersalnym
+@opis Detektor charakteru tlenku: dla wybranego tlenku (z 39 w bazie) model odpowiada na trzy pytania — jaki ma charakter, czy reaguje z wodą, czy reaguje z kwasem i z zasadą — i pokazuje zlewkę ze wskaźnikiem uniwersalnym, którego barwa odpowiada odczynowi. Wniosek: charakter tlenku, reakcja z wodą i rozpuszczalność to trzy różne sprawy.
 
 > CO jest tlenkiem obojętnym, a CO₂ kwasowym, choć oba to tlenki węgla — dlaczego, wyjaśnia [§13](#n01-why-sio2-mgo).
 
@@ -450,6 +453,7 @@ Tlenki powstają też przy spalaniu związków — każdy pierwiastek (poza tlen
 ### 9.3 Spalanie całkowite i niecałkowite
 
 @model n01-spalanie-v01 | Otrzymywanie tlenków: spalanie pierwiastków i paliw — dopływ O₂ → CO₂ / CO / sadza | CHE.REACTION (spalanie całkowite i niecałkowite)
+@opis Model spalania: wybierasz pierwiastek lub paliwo i ilość tlenu; przy pełnym dopływie O₂ powstaje CO₂ (spalanie całkowite), przy ograniczonym — CO lub sadza (spalanie niecałkowite); widać płomień, produkt i równanie. Wniosek: tlenki otrzymuje się spalaniem, a produkt zależy od ilości tlenu.
 
 ::: karta warning | Spalanie niecałkowite
 Przy niedoborze tlenu zamiast CO₂ powstaje CO (tlenek węgla(II)) lub sadza (C). CO jest bezbarwny, bezwonny i silnie toksyczny — stąd zagrożenie czadem w zamkniętych pomieszczeniach.
@@ -534,12 +538,14 @@ $$ Na₂O + SO₃ → Na₂SO₄ <span class="mini-note">(synteza soli bez wody:
 :::
 
 @model n01-reaktor-v01 | Co powstanie? Tlenek + woda / kwas / zasada — przewiduj, potem sprawdź | CHE.OXIDES.predict · procedura 7 kroków
+@opis Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas lub zasada), zapisujesz przewidywanie, potem model pokazuje, czy reakcja zachodzi, jakie są produkty i równanie, według procedury 7 kroków. Wniosek: wynik reakcji tlenku da się przewidzieć z jego charakteru.
 
 ### 10.5 Mapa reakcji — łańcuch przemian
 
 Kliknij węzeł — zobacz ścieżkę: pierwiastek → tlenek → wodorotlenek/kwas → sól. Most do N02, N03, N04.
 
 @model chain-scn | Łańcuch przemian: pierwiastek → tlenek → wodorotlenek / kwas → sól | Na → Na₂O → NaOH → NaCl · S → SO₃ → H₂SO₄ → Na₂SO₄ · C → CO₂ → H₂CO₃ → Na₂CO₃
+@opis Łańcuchy przemian przedstawione jako kolejne ogniwa: Na → Na₂O → NaOH → NaCl, S → SO₃ → H₂SO₄ → Na₂SO₄, C → CO₂ → H₂CO₃ i podobne, z równaniem każdego kroku. Wniosek: od pierwiastka przez tlenek do wodorotlenku lub kwasu i dalej do soli prowadzi ciąg typowych reakcji.
 
 ## 11 | Zastosowania tlenków [[basic:E8]] {#zastosowania}
 
@@ -710,6 +716,7 @@ MgO ma trwałą sieć jonową i małą rozpuszczalność w wodzie. W rezultacie 
 W okresie (od lewej do prawej) charakter tlenków zmienia się od zasadowego, przez amfoteryczny, do kwasowego.
 
 @model n01-trend-v01 | Trend charakteru tlenków: w okresie i według stopnia utlenienia (Cr, Mn) | CHE.OXIDES.trend
+@opis Wykres trendu charakteru tlenków: w okresie od lewej do prawej tlenki zmieniają się od zasadowych przez amfoteryczne do kwasowych, a dla jednego metalu (Cr, Mn) charakter staje się bardziej kwasowy wraz ze wzrostem stopnia utlenienia (np. CrO zasadowy, Cr₂O₃ amfoteryczny, CrO₃ kwasowy). Wniosek: charakter tlenku zależy od położenia pierwiastka i jego stopnia utlenienia.
 
 ::: karta extra | 2. i 3. okres — porównanie
 $$ Li₂O → BeO → B₂O₃ → CO₂ → N₂O₅
@@ -905,6 +912,7 @@ Pary elektronowe (wiążące i wolne) odpychają się. Pary wolne zajmują więc
 :::
 
 @model molecule3d-merged | Model 3D cząsteczek — CO₂, SO₂, SO₃, H₂O: geometria i kąty | CHE.MOLECULE · VSEPR
+@opis Trójwymiarowe modele cząsteczek CO₂, SO₂, SO₃ i H₂O z zaznaczonymi kątami między wiązaniami: CO₂ liniowa (180°), SO₂ i H₂O kątowe, SO₃ płaska trójkątna (120°). Wniosek: kształt cząsteczki wynika z rozmieszczenia par elektronowych wokół atomu centralnego (model VSEPR).
 
 ::: karta extra | Dlaczego H₂O i SO₂ są kątowe, a CO₂ liniowa?
 Tlen w H₂O ma 2 wiązania i **2 wolne pary**. Wolne pary odpychają się silniej niż pary wiążące i „ściskają” kąt H–O–H do 104,5°. W CO₂ węgiel ma tylko 2 wiązania i 0 wolnych par — cząsteczka jest liniowa.
@@ -1088,6 +1096,7 @@ Równanie: 2 Mg + O₂ → 2 MgO
 :::
 
 @model stech-kalkulator-v01 | Kalkulator stechiometryczny — masa, mole, objętość gazu, odczynnik limitujący | CHE.STECH na reakcjach silnika (spalanie, rozkład CaCO₃, CuO + H₂SO₄…)
+@opis Kalkulator stechiometryczny: dla wybranej reakcji (np. spalanie, rozkład CaCO₃, CuO z H₂SO₄) wpisujesz masę lub objętość jednego reagenta, a model przelicza mole, masy i objętości gazów pozostałych substancji i wskazuje odczynnik w niedomiarze. Wniosek: ilości substancji w reakcji wynikają ze współczynników równania.
 
 > Spalanie paliw (C, CH₄, C₃H₈, C₈H₁₈) liczysz w tym samym kalkulatorze stechiometrycznym (powyżej): wybierz reakcję spalania, wpisz masę paliwa — dostajesz masy CO₂, H₂O i O₂ z kontrolą masy.
 
@@ -1125,6 +1134,7 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 **BHP:** nie patrzeć bezpośrednio na płomień; okulary.
 
 @zlewka n01-spalanie-v01 mgO2 | Zobacz w modelu spalania (GFX)
+@opis Spalanie magnezu w tlenie: oślepiająco jasny, biały płomień, po spaleniu zostaje biały proszek tlenku magnezu. Wniosek: 2 Mg + O₂ → 2 MgO — tlenek metalu otrzymuje się syntezą z tlenem.
 :::
 
 ### Doświadczenie 2: CaO + H₂O (gaszenie wapna)
@@ -1147,6 +1157,7 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 **BHP:** nie dotykać CaO mokrymi rękami; okulary; reakcja egzotermiczna.
 
 @zlewka n01-doswiadczenia-v01 caoH2o | Zobacz w zlewce (pracownia GFX)
+@opis Tlenek wapnia (wapno palone) zalany wodą: mieszanina silnie się ogrzewa, powstaje białe „mleko wapienne”, a wskaźnik wskazuje odczyn zasadowy. Wniosek: CaO + H₂O → Ca(OH)₂ — tlenek metalu aktywnego tworzy z wodą wodorotlenek.
 :::
 
 ### Doświadczenie 3: Woda wapienna + CO₂
@@ -1169,6 +1180,7 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 **BHP:** nie wciągać wody wapiennej do ust.
 
 @zlewka n01-doswiadczenia-v01 caoh2Co2 | Zobacz w zlewce (pracownia GFX)
+@opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina. Wniosek: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O — test wykrywający CO₂ i dowód kwasowego charakteru tego tlenku.
 :::
 
 ### Doświadczenie 4: CuO + H₂SO₄ [[basic:E8]]
@@ -1191,11 +1203,14 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 **BHP:** okulary; H₂SO₄ żrący.
 
 @zlewka n01-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia GFX)
+@opis Czarny tlenek miedzi(II) w roztworze kwasu siarkowego(VI), lekko ogrzewanym: proszek znika, a roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O — tlenek zasadowy reaguje z kwasem, tworząc sól i wodę.
 :::
 
 @model n01-doswiadczenia-v01 | Pracownia: doświadczenia z tlenkami — zlewka, równania, obserwacje, BHP | GFX.rx · CHE.REACTION · CHE.IONIC · 22 doświadczenia
+@opis Pracownia doświadczeń z tlenkami (22 doświadczenia): zlewki i probówki w animacji, przy każdym obserwacje, równanie reakcji i zasady BHP — m.in. spalanie magnezu, CaO z wodą, CO₂ z wodą wapienną, CuO z kwasem siarkowym(VI). Wniosek: właściwości tlenków potwierdza się doświadczeniem i obserwacją produktów.
 
 @model gfx-scene-carbonate | Wykrywanie CO₂: węglan + kwas → gaz → woda wapienna mętnieje | Scena GFX
+@opis Scena doświadczenia: na węglan wapnia działa kwas — wydzielają się pęcherzyki gazu, który przepuszczony przez klarowną wodę wapienną powoduje jej zmętnienie (biały osad CaCO₃). Wniosek: powstaje tlenek węgla(IV), a zmętnienie wody wapiennej to jego próba identyfikacyjna.
 
 ### Obserwacja ≠ wniosek
 
@@ -1239,6 +1254,8 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 <tr class="error-row"><td class="col-blad" data-label="Błąd">CO₂ + NaOH zawsze → Na₂CO₃</td><td class="col-ok" data-label="Poprawnie">przy nadmiarze CO₂ → NaHCO₃</td><td data-label="Dlaczego">Produkt zależy od stosunku molowego substratów.</td></tr>
 <tr class="error-row"><td class="col-blad" data-label="Błąd">P₂O₅ i P₄O₁₀ to różne substancje</td><td class="col-ok" data-label="Poprawnie">ta sama substancja</td><td data-label="Dlaczego">Wzór empiryczny vs wzór cząsteczkowy.</td></tr>
 <tr class="error-row"><td class="col-blad" data-label="Błąd">Obserwacja: „powstał CaCO₃”</td><td class="col-ok" data-label="Poprawnie">Obserwacja: woda wapienna mętnieje</td><td data-label="Dlaczego">Nazwa produktu to wniosek, nie obserwacja.</td></tr>
+<tr class="error-row"><td class="col-blad" data-label="Błąd">„Każdy tlenek zasadowy daje z wodą zasadę.”</td><td class="col-ok" data-label="Poprawnie">Tylko tlenki metali aktywnych (Na₂O, K₂O, CaO, BaO); CuO, Fe₂O₃ z wodą nie reagują, choć są zasadowe.</td><td data-label="Dlaczego">Charakter ≠ reakcja z wodą.</td><td>—</td></tr>
+<tr class="error-row"><td class="col-blad" data-label="Błąd">„Tlenek obojętny w ogóle nie reaguje.”</td><td class="col-ok" data-label="Poprawnie">CO i NO nie wykazują charakteru kwasowego ani zasadowego, ale reagują (CO się pali, NO utlenia się do NO₂).</td><td data-label="Dlaczego">„Obojętny” dotyczy kwasowości/zasadowości, nie reaktywności.</td><td>—</td></tr>
 </tbody>
 </table>
 :::
@@ -1372,6 +1389,24 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 
 <li>2 HgO →(Δ) 2 Hg + O₂.</li>
 :::
+:::
+:::
+
+::: karta basic | Utrwalenie — tlenki (W1)
+1. Podaj nazwy: CO, CO₂, SO₂, SO₃.
+2. Zapisz wzór tlenku glinu.
+3. Zapisz równanie spalania wapnia.
+4. Zapisz reakcję tlenku wapnia z wodą.
+5. Czym różni się CO od CO₂?
+6. Określ charakter chemiczny: CaO, SO₃, Al₂O₃.
+
+::: odp | Pokaż odpowiedzi
+1. Tlenek węgla(II), tlenek węgla(IV), tlenek siarki(IV), tlenek siarki(VI).
+2. Al₂O₃.
+3. 2 Ca + O₂ → 2 CaO.
+4. CaO + H₂O → Ca(OH)₂.
+5. Inny skład i stopień utlenienia węgla (+II i +IV); CO jest silnie trujący i obojętny, CO₂ nie podtrzymuje spalania, jest kwasowy i z wodą tworzy kwas węglowy (CO₂ + H₂O ⇌ H₂CO₃).
+6. CaO — zasadowy, SO₃ — kwasowy, Al₂O₃ — amfoteryczny.
 :::
 :::
 

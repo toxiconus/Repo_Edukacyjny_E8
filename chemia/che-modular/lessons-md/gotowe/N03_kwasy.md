@@ -227,6 +227,7 @@ Kwasowe są tylko atomy H związane z **tlenem** (grupy –O–H). W H₃PO₃ s
 :::
 
 @model kw-reszty-v01 | Kwas → reszta kwasowa → sole (13 metali) | Dysocjacja, ładunek reszty, wzory i nazwy soli, rozpuszczalność · CHE.IONIC
+@opis Model kwas → reszta kwasowa → sól: kwas dysocjuje, model pokazuje ładunek reszty kwasowej (np. SO₄²⁻, NO₃⁻, PO₄³⁻), a dla 13 metali tworzy wzory i nazwy soli z informacją o rozpuszczalności. Wniosek: ładunek reszty kwasowej równa się liczbie atomów wodoru oddanych przez kwas i wyznacza wzór soli.
 
 ## 4 | Właściwości kwasów [[basic:E8]] {#wlasciwosci}
 
@@ -260,6 +261,7 @@ H₂SO₄ ma ogromne powinowactwo do wody — odbiera z cząsteczek cukru atomy 
 :::
 
 @model kw-wlasciwosci-v01 | Właściwości stężonych kwasów — pokazy | Cukier + H₂SO₄ · białko + HNO₃ · HCl dymi · silnik GFX, otwiera się w oknie
+@opis Pokazy właściwości stężonych kwasów: cukier zalany stężonym H₂SO₄ czernieje i pęcznieje w porowatą masę węgla, białko po dodaniu HNO₃ żółknie, otwarta butelka stężonego HCl „dymi” (chlorowodór tworzy z parą wodną mgiełkę). Wniosek: stężone kwasy mają właściwości żrące, utleniające i odwadniające — praca tylko z nauczycielem i pod wyciągiem.
 
 ## 5 | Dysocjacja jonowa kwasów [[basic:E8]] {#dysocjacja}
 
@@ -342,6 +344,7 @@ W szkole często używa się obu terminów zamiennie, ale dokładnie to różne 
 :::
 
 @model kw-dysocjacja-v01 | Dysocjacja kwasów mocnych i słabych na żywo: H⁺ przeskakuje na wodę (tryb „krok po kroku”), cząsteczki, α, pH | HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄ · α i pH z Ka silnika · porównanie α(c) wszystkich kwasów
+@opis Animacja dysocjacji kwasów mocnych i słabych (HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄): w trybie krok po kroku proton H⁺ przechodzi na cząsteczkę wody, tworząc H₃O⁺; przy kwasach mocnych rozpadają się prawie wszystkie cząsteczki, przy słabych tylko niewielka część; widać stopień dysocjacji α i pH. Wniosek: moc kwasu to stopień dysocjacji, a nie jego stężenie.
 
 ### 5.7 Przewodzenie prądu — dowód na jony [[basic:E8]]
 
@@ -366,6 +369,7 @@ Prąd w roztworze przenoszą **jony**. Tester (dwie elektrody + żarówka/dioda)
 :::
 
 @model gfx-scene-conductivity | Przewodzenie prądu: tester z żarówką i model jonów | Doświadczenie w silniku GFX · otwiera się w oknie
+@opis Tester przewodnictwa z żarówką zanurzany w różnych cieczach: w roztworach kwasów, zasad i soli żarówka świeci (jasność zależy od liczby jonów), w wodzie destylowanej i roztworze cukru nie świeci; obok model ruchomych jonów. Wniosek: prąd w roztworze przewodzą jony powstałe w dysocjacji.
 
 ## 6 | Moc kwasów [[basic:E8]] {#moc}
 
@@ -589,10 +593,12 @@ Wskaźnik to słaby kwas HInd, którego forma kwasowa i zasadowa mają różne b
 :::
 
 @model ph-indicators-v03 | Panel pH: skala, wskaźniki i barwy, drabinka kwasów i zasad | Barwy wskaźników z CHE.COLORS · roztwór × wskaźnik dla wybranego stężenia · silnik CHE
+@opis Panel pH: skala od 0 do 14 z zaznaczonym odczynem kwasowym, obojętnym i zasadowym, barwy wskaźników (uniwersalny, fenoloftaleina, oranż metylowy, wywar z czerwonej kapusty) przy różnych pH oraz przykłady codziennych roztworów. Wniosek: odczyn rozpoznaje się wskaźnikiem — fenoloftaleina barwi się na malinowo tylko w odczynie zasadowym.
 
 ### 7.4 Laboratorium wskaźników
 
 @model gfx-scene-indicatorRack | Wskaźnik w siedmiu roztworach (statyw probówek) | Doświadczenie w silniku GFX · otwiera się w oknie
+@opis Siedem probówek z różnymi roztworami i wskaźnikiem: najpierw przewidujesz barwę, potem animacja pokazuje rzeczywiste barwy zależne od odczynu każdego roztworu. Wniosek: barwa wskaźnika zależy od odczynu roztworu, nie od jego wyglądu.
 
 ::: karta basic
 Jeden wskaźnik w siedmiu roztworach — statyw probówek poniżej; roztwór × wskaźnik i drabinka pH kwasów i zasad dla wybranego stężenia — panel pH w [§7](#ph).3.
@@ -696,8 +702,10 @@ $$ Zn + H₂SO₄ (rozc.) → ZnSO₄ + H₂↑
 :::
 
 @model kw-szereg-metali-v01 | Szereg aktywności na żywo: Mg, Zn, Fe, Cu w HCl | Cztery probówki obok siebie · silnik GFX · otwiera się w oknie
+@opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu obok siebie: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, miedź wcale (brak pęcherzyków). Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru — szereg aktywności Mg > Zn > Fe > (H) > Cu.
 
 @model gfx-scene-acidMetal | Metal + kwas solny → wodór i próba „pyk!” | Doświadczenie w silniku GFX · otwiera się w oknie
+@opis Scena doświadczenia: metal (np. cynk) w kwasie solnym roztwarza się, wydzielają się pęcherzyki gazu zbierane w probówce; zbliżona do płomienia probówka daje charakterystyczny odgłos „pyk”. Wniosek: w reakcji metalu aktywnego z kwasem powstaje sól i wodór.
 
 ### 9.1.1 Szereg aktywności metali — pełna tabela
 
@@ -784,6 +792,7 @@ H₃PO₄ (3 H) + 3 NaOH (3 OH) → Na₃PO₄ + 3 H₂O. ✓
 ### 9.3.1 Równania jonowe zobojętniania
 
 @model rownania-jonowe-v01 | Równania jonowe dla wszystkich reakcji z lekcji (generowane przez silnik) | Cząsteczkowe → jonowe pełne → skrócone · jony obserwatory · CHE.IONIC
+@opis Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują.
 
 ::: karta extra | NaOH + HCl — trzy poziomy zapisu
 $$ Cząsteczkowe: NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)
@@ -803,6 +812,7 @@ Reakcja zachodzi, gdy powstaje **osad**, **gaz** lub **słaby elektrolit (np. wo
 > Czy powstanie osad, sprawdzasz w **tabeli rozpuszczalności**: produkt oznaczony N (nierozpuszczalny) lub T (trudno rozpuszczalny) wytrąca się — np. AgCl (N), BaSO₄ (N). Jeśli wszystkie produkty są rozpuszczalne (R) i nie powstaje gaz ani słaby elektrolit — reakcja nie zachodzi (same jony obserwatory).
 
 @model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności (20 °C) — kliknij komórkę | Wzór i nazwa soli, R / T / N, barwa osadu · CHE.DATA.SOLUBILITY_TABLE
+@opis Tabela rozpuszczalności w temperaturze 20 °C: wiersze kationów, kolumny anionów (w tym OH⁻), komórki oznaczone jako substancja rozpuszczalna, trudno rozpuszczalna lub praktycznie nierozpuszczalna. Wniosek: z tabeli odczytuje się, który wodorotlenek lub sól wytrąci się jako osad.
 
 $$ 2 HCl + CaCO₃ → CaCl₂ + H₂O + CO₂↑ (gaz)
 
@@ -830,6 +840,7 @@ Kwas mocniejszy wypiera kwas słabszy z jego soli. HCl (mocny) wypiera H₂CO₃
 ### 9.5 Przewidź i sprawdź
 
 @model reakcje-kwasu-v03 | Reakcje kwasów: przewidź i sprawdź | Metal, tlenek, węglan, sól, zobojętnianie · najpierw predykcja, potem zlewka
+@opis Reakcje kwasów w trybie „przewidź i sprawdź”: kwas z metalem, tlenkiem metalu, węglanem, solą i zasadą — najpierw wybierasz przewidywane obserwacje i produkty, potem zlewka pokazuje wynik i równanie. Wniosek: kwasy reagują według kilku stałych schematów prowadzących do soli.
 
 ## 10 | Kwaśne deszcze [[basic:E8]] {#deszcze}
 
@@ -870,6 +881,7 @@ $$ 3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
 :::
 
 @model acid-rain-v01 | Kwaśne deszcze – animacja obiegu | Wizualizacja z biblioteki · otwiera się w oknie
+@opis Animacja obiegu kwaśnych deszczy: spaliny z elektrowni i samochodów zawierają tlenki siarki i azotu, które w chmurach reagują z wodą, tworząc kwasy; opady niszczą lasy, zakwaszają jeziora i glebę i niszczą budynki z wapienia. Wniosek: kwasowe tlenki z emisji przemysłowej wracają na ziemię jako kwasy.
 
 ## 11 | Zastosowania kwasów [[basic:E8]] {#zastosowania}
 
@@ -912,6 +924,7 @@ $$ 3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
 ## 12 | Bezpieczeństwo (BHP) [[basic:E8]] {#bhp}
 
 @model gfx-scene-dilution | Rozcieńczanie: „kwas do wody!” — poprawnie i błędnie | Doświadczenie w silniku GFX · otwiera się w oknie
+@opis Dwie wersje rozcieńczania stężonego kwasu: poprawna — kwas wlewany powoli do wody, mieszanina tylko się ogrzewa; błędna — woda wlewana do kwasu, gwałtowne rozpryskiwanie wrzącej cieczy. Wniosek: zawsze wlewa się kwas do wody, powoli i mieszając.
 
 ::: karta error | Żrące właściwości kwasów
 Stężone kwasy **niszczą skórę, błony śluzowe i oczy**. Kontakt może prowadzić do trwałych oparzeń chemicznych.
@@ -1008,8 +1021,10 @@ c(HCl) = (0,1 × 20) / 25 = 0,08 M
 :::
 
 @model gfx-scene-titration | Miareczkowanie: biureta, kolba, wskaźnik | Scena GFX · pH z bilansu, barwa fenoloftaleiny z silnika
+@opis Miareczkowanie: z biurety kropla po kropli spływa roztwór zasady do kolby z kwasem i fenoloftaleiną; przy punkcie końcowym roztwór zmienia barwę z bezbarwnej na malinową, a obok widać pH. Wniosek: miareczkowanie pozwala ustalić, ile zasady zobojętnia daną ilość kwasu.
 
 @model titration-merged | Krzywa miareczkowania: mocny/słaby kwas | pH(V) z silnika · punkt równoważnikowy
+@opis Krzywa miareczkowania: wykres pH od objętości dodanej zasady dla kwasu mocnego i słabego; przy punkcie równoważnikowym pH zmienia się skokowo, a dla kwasu słabego krzywa zaczyna się wyżej i skok jest mniejszy. Wniosek: przebieg krzywej zależy od mocy kwasu.
 
 ## 15 | Bufory — model jakościowy [[extra:AMBITNE]] {#bufory}
 
@@ -1054,10 +1069,12 @@ Pojemność buforowa β = dn/dpH jest największa, gdy [HA] = [A⁻] (pH = pK<su
 :::
 
 @model kw-bufor-v01 | Bufor octanowy kontra woda — dodawaj HCl i NaOH | pH-metry, wskaźnik uniwersalny, wykres · pKa z silnika · wyczerpanie pojemności
+@opis Porównanie buforu octanowego z wodą: do obu dodaje się porcjami HCl lub NaOH; pH wody zmienia się gwałtownie, pH buforu prawie stoi w miejscu, dopóki bufor nie wyczerpie swojej pojemności; widać pH-metry, wskaźnik i wykres. Wniosek: bufor utrzymuje prawie stałe pH, ale tylko do pewnej ilości dodanego kwasu lub zasady.
 
 ## 16 | Doświadczenia {#doswiadczenia}
 
 @model kw-doswiadczenia-v01 | Pracownia: wszystkie doświadczenia z kwasami (GFX) | Zestawy, reakcje i pokazy w jednym oknie · silnik GFX
+@opis Pracownia doświadczeń z kwasami: zestawy i reakcje w zlewkach — wskaźniki w kwasie, metal z kwasem, węglan z kwasem, zobojętnianie, tlenek miedzi z kwasem, przewodnictwo, szereg aktywności metali i pokazy stężonych kwasów, z obserwacjami i równaniami. Wniosek: właściwości kwasów potwierdza się doświadczeniem.
 
 ::: karta error | BHP — zasady pracy
 Doświadczenia z kwasami wykonuj **tylko pod nadzorem nauczyciela** i w wyznaczonym do tego miejscu. Nigdy nie eksperymentuj samodzielnie z kwasami stężonymi.
@@ -1074,6 +1091,7 @@ Równanie:: HCl → H⁺ + Cl⁻
 BHP: HCl żrący — okulary, rękawice; nie pipetować ustami.
 
 @zlewka kw-doswiadczenia-v01 indicator | Zobacz w zlewce (pracownia GFX)
+@opis Wskaźniki dodane do roztworu kwasu: papierek uniwersalny i oranż metylowy barwią się na czerwono, a fenoloftaleina pozostaje bezbarwna. Wniosek: roztwory kwasów mają odczyn kwasowy (pH < 7).
 :::
 
 ::: dosw | Doświadczenie 2 — Kwas + metal (Zn + HCl)
@@ -1087,6 +1105,7 @@ Równanie:: Zn + 2 HCl → ZnCl₂ + H₂↑
 BHP: Okulary; wodór z powietrzem tworzy mieszaninę wybuchową — próbę „pyk” robimy tylko z małą ilością gazu zebraną w probówce (wylotem od siebie i innych), nigdy przy dużej aparaturze, w której gaz się wydziela.
 
 @zlewka kw-doswiadczenia-v01 acidMetal | Zobacz w zlewce (pracownia GFX)
+@opis Metal (np. cynk) w kwasie solnym: metal się roztwarza, wydzielają się pęcherzyki bezbarwnego gazu, który przy płomieniu daje odgłos „pyk”. Wniosek: Zn + 2 HCl → ZnCl₂ + H₂↑ — metal aktywny wypiera wodór z kwasu.
 :::
 
 ::: dosw | Doświadczenie 3 — Kwas + węglan (otrzymywanie CO₂)
@@ -1100,6 +1119,7 @@ Równanie:: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑
 BHP: Okulary; nie wciągać wody wapiennej do ust.
 
 @zlewka kw-doswiadczenia-v01 carbonate | Zobacz w zlewce (pracownia GFX)
+@opis Na węglan wapnia działa kwas: wydzielają się pęcherzyki gazu, który przepuszczony przez wodę wapienną powoduje jej zmętnienie. Wniosek: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑ — kwas wypiera z węglanu tlenek węgla(IV).
 :::
 
 ::: dosw | Doświadczenie 4 — Kwas + wodorotlenek (zobojętnianie)
@@ -1113,6 +1133,7 @@ Równanie:: NaOH + HCl → NaCl + H₂O
 BHP: Okulary, rękawice — NaOH i HCl żrące.
 
 @zlewka kw-doswiadczenia-v01 hclNaOH+php | Zobacz w zlewce (pracownia GFX)
+@opis Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają.
 :::
 
 ::: dosw | Doświadczenie 5 — Kwas + tlenek metalu
@@ -1126,6 +1147,7 @@ Równanie:: CuO + H₂SO₄ → CuSO₄ + H₂O
 BHP: Okulary; H₂SO₄ żrący.
 
 @zlewka kw-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia GFX)
+@opis Czarny tlenek miedzi(II) w roztworze kwasu siarkowego(VI), lekko ogrzewanym: proszek znika, a roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O — tlenek zasadowy reaguje z kwasem, tworząc sól i wodę.
 :::
 
 ::: dosw | Doświadczenie 6 — Przewodzenie prądu przez roztwory kwasów
@@ -1139,6 +1161,7 @@ Równanie:: HCl + H₂O → H₃O⁺ + Cl⁻;  CH₃COOH + H₂O ⇌ H₃O⁺ + 
 BHP: Niskie napięcie (bateria); okulary; nie dotykać elektrod mokrymi rękami.
 
 @zlewka kw-doswiadczenia-v01 conductivity | Zobacz w zlewce (pracownia GFX)
+@opis Tester z żarówką zanurzony w roztworze kwasu: żarówka świeci, a w wodzie destylowanej — nie. Wniosek: w roztworze kwasu są jony powstałe w dysocjacji, które przewodzą prąd.
 :::
 
 ::: dosw | Doświadczenie 7 — Aktywność metali wobec kwasu solnego
@@ -1152,6 +1175,7 @@ Równanie:: Mg + 2 HCl → MgCl₂ + H₂↑;  Fe + 2 HCl → FeCl₂ + H₂↑;
 BHP: Okulary; wodór łatwopalny — z dala od ognia.
 
 @zlewka kw-doswiadczenia-v01 szereg | Zobacz w zlewce (pracownia GFX)
+@opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, przy miedzi nie ma pęcherzyków. Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru.
 :::
 
 ::: dosw | Doświadczenie 8 — Działanie stężonego H₂SO₄ na cukier (pokaz nauczyciela)
@@ -1165,6 +1189,7 @@ Równanie:: C₁₂H₂₂O₁₁ →(H₂SO₄ stęż.) 12 C + 11 H₂O
 BHP: Tylko pokaz pod dygestorium; okulary, rękawice; SO₂ drażni drogi oddechowe.
 
 @zlewka kw-doswiadczenia-v01 wlasciwosci | Zobacz w zlewce (pracownia GFX)
+@opis Pokazy stężonych kwasów: cukier ze stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie, stężony HCl „dymi” na powietrzu. Wniosek: stężone kwasy są żrące, utleniające i odwadniające — tylko pokaz nauczyciela pod wyciągiem.
 :::
 
 ::: dosw | Doświadczenie 9 — Kwas azotowy(V) i białko (pokaz nauczyciela)
@@ -1178,6 +1203,7 @@ Równanie:: białko (reszty aromatyczne) + HNO₃ → żółte nitrozwiązki
 BHP: Stężony HNO₃ — silnie żrący i utleniający; tylko pokaz.
 
 @zlewka kw-doswiadczenia-v01 wlasciwosci | Zobacz w zlewce (pracownia GFX)
+@opis Pokazy stężonych kwasów: cukier ze stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie, stężony HCl „dymi” na powietrzu. Wniosek: stężone kwasy są żrące, utleniające i odwadniające — tylko pokaz nauczyciela pod wyciągiem.
 :::
 
 ::: dosw | Doświadczenie 10 — Odróżnianie HCl od CH₃COOH
@@ -1191,6 +1217,7 @@ Równanie:: Mg + 2 H₃O⁺ → Mg²⁺ + H₂↑ + 2 H₂O
 BHP: Okulary.
 
 @zlewka kw-doswiadczenia-v01 conductivity | Zobacz w zlewce (pracownia GFX)
+@opis Tester z żarówką zanurzony w roztworze kwasu: żarówka świeci, a w wodzie destylowanej — nie. Wniosek: w roztworze kwasu są jony powstałe w dysocjacji, które przewodzą prąd.
 :::
 
 ::: karta warning | Obserwacja ≠ wniosek
@@ -1232,6 +1259,7 @@ BHP: Okulary.
 | „oparzenie kwasem — posyp sodą” | płucz wodą ok. 15 min | Zobojętnianie na skórze wydziela ciepło i opóźnia płukanie. |
 | „rozcieńczony słaby kwas jest bardziej kwaśny, bo α rośnie” | pH rośnie — roztwór mniej kwaśny | [H₃O⁺] ≈ α·c maleje, bo c spada szybciej, niż rośnie α. |
 | „CH₃COOH jest czteroprotonowy (4 atomy H)” | jednoprotonowy | Kwasowy jest tylko H z grupy –COOH; H przy węglu nie dysocjują. |
+| „Każda substancja z wodorem we wzorze to kwas.” | CH₄, NH₃, H₂O zawierają wodór, a nie są kwasami. | Kwas to substancja zwiększająca w wodzie stężenie jonów H₃O⁺ (H⁺). |
 :::
 :::
 
@@ -1413,6 +1441,24 @@ Popraw równanie: Cu + HCl → CuCl₂ + H₂↑. Wyjaśnij, dlaczego reakcja ni
 
 <li>Na świetle rozkłada się: 4 HNO₃ → 4 NO₂ + O₂ + 2 H₂O (brunatny NO₂ barwi kwas na żółto).</li>
 :::
+:::
+:::
+
+::: karta basic | Utrwalenie — kwasy (W1)
+1. Podaj wzór kwasu azotowego(V).
+2. Zapisz reakcję kwasu chlorowodorowego z magnezem.
+3. Zapisz reakcję kwasu siarkowego(VI) z wodorotlenkiem sodu.
+4. Zapisz reakcję kwasu chlorowodorowego z węglanem wapnia.
+5. Czym różni się moc kwasu od jego stężenia?
+6. Jaki jon odpowiada za właściwości kwasowe roztworu?
+
+::: odp | Pokaż odpowiedzi
+1. HNO₃.
+2. Mg + 2 HCl → MgCl₂ + H₂↑.
+3. H₂SO₄ + 2 NaOH → Na₂SO₄ + 2 H₂O.
+4. CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑.
+5. Moc mówi, jaka część cząsteczek kwasu ulega dysocjacji (stopień dysocjacji); stężenie — ile kwasu jest w danej ilości roztworu. Stężony kwas może być słaby, rozcieńczony — mocny.
+6. Szkolnie H⁺, dokładniej kation hydroniowy H₃O⁺.
 :::
 :::
 

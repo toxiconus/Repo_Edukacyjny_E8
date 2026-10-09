@@ -173,6 +173,7 @@ Traktowanie w zadaniach :: Jeden klocek (całość), nie osobne O i H.
 #### Model interaktywny — bilans ładunków i konstruktor wzorów {#wzorometr .merge-h}
 
 @model n02-wzory-v01 | Wzór wodorotlenku: kation + OH⁻ — bilans ładunków, nawias, modele A/B/jony, sprawdzanie wzoru | Zastępuje Wzórometr, Bilansator, Konstruktor i animację nawiasu · CHE.HYDROXIDES.build / check
+@opis Konstruktor wzoru wodorotlenku: kation metalu łączy się z odpowiednią liczbą anionów OH⁻, aż ładunki się zrównoważą; model pokazuje zapis z nawiasem (np. Ca(OH)₂, Al(OH)₃) w trzech ujęciach — wzór, model kulkowy i jony — i sprawdza wpisany wzór. Wniosek: liczba grup OH⁻ równa się ładunkowi (wartościowości) metalu, a nawias obejmuje całą grupę.
 
 Dodawaj grupy OH⁻, aż suma ładunków wyniesie zero. Wybierz kation i dodawaj grupy OH⁻, aż powstanie poprawny wzór.
 
@@ -289,10 +290,12 @@ W temperaturze pokojowej **wodorotlenki są ciałami stałymi** (kryształy, pro
 > **Reguła E8:** rozpuszczalność ↔ siła odczynu w roztworze. Dużo wolnych OH⁻ (NaOH) = mocno zasadowy; osad Cu(OH)₂/Fe(OH)₃ ≈ brak typowego odczynu zasadowego w wodzie. Wartości g/100 mL — orientacyjne (podręcznik / tablice).
 
 @model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności (20 °C) — kolumna OH⁻ i wszystkie sole | To samo źródło danych co ta lekcja · CHE.DATA.SOLUBILITY_TABLE
+@opis Tabela rozpuszczalności w temperaturze 20 °C: wiersze kationów, kolumny anionów (w tym OH⁻), komórki oznaczone jako substancja rozpuszczalna, trudno rozpuszczalna lub praktycznie nierozpuszczalna. Wniosek: z tabeli odczytuje się, który wodorotlenek lub sól wytrąci się jako osad.
 
 Jeden widok pokazuje pierwiastek, wartościowość, wzór wodorotlenku, rozpuszczalność i barwę osadu. Kliknij kafelek — szczegóły pojawią się na stałe pod spodem. {#wodor-grid}
 
 @model n02-przeglad-v01 | Wodorotlenki — kafelki: rozpuszczalność, barwa osadu, odczyn, dysocjacja, metody otrzymywania | CHE.DATA.HYDROXIDES + D.SOLUBILITY_TABLE
+@opis Kafelki wodorotlenków: dla każdego podany jest wzór, rozpuszczalność, barwa osadu (np. Cu(OH)₂ niebieski, Fe(OH)₃ brunatnoczerwony), odczyn roztworu, równanie dysocjacji i metody otrzymywania. Wniosek: tylko wodorotlenki rozpuszczalne tworzą zasady; nierozpuszczalne poznaje się po barwie osadu.
 
 ### 6.3 Wodorotlenek a zasada; elektrolit i dysocjacja {#wodorotlenek-vs-zasada}
 
@@ -359,6 +362,7 @@ Roztwór <span class="formula">NaOH</span> jest **elektrolitem** (Na⁺ i OH⁻)
 Zobacz, jak kryształ NaOH rozpada się na jony, a jony otaczają się cząsteczkami wody.
 
 @model n02-dysocjacja-v01 | Rozpuszczanie i dysocjacja: NaOH, KOH, Ca(OH)₂, Mg(OH)₂, Cu(OH)₂, Fe(OH)₃ — jony, hydratacja, efekt cieplny | GFX.ions · CHE.HYDROXIDES.dissociation / heat
+@opis Animacja rozpuszczania i dysocjacji wodorotlenków (NaOH, KOH, Ca(OH)₂, Mg(OH)₂, Cu(OH)₂, Fe(OH)₃): kryształ rozpada się na jony otoczone cząsteczkami wody, widać efekt cieplny (rozpuszczanie NaOH silnie ogrzewa roztwór), a wodorotlenki trudno rozpuszczalne pozostają głównie osadem. Wniosek: zasada to roztwór z jonami OH⁻ powstałymi w dysocjacji.
 
 #### Energia rozpuszczania [[understand:ROZUMIENIE]] {.merge-h}
 
@@ -391,12 +395,14 @@ Przy **fenoloftaleinie** zasada jest malinowa; po zobojętnieniu roztwór odbarw
 Przesuwaj suwak lub klikaj wartości na skali. Zobaczysz jednocześnie kolor roztworu, barwy trzech wskaźników i przykłady substancji.
 
 @model ph-indicators-v03 | Panel pH — skala, barwy wskaźników, przykłady roztworów | Barwy z CHE.COLORS
+@opis Panel pH: skala od 0 do 14 z zaznaczonym odczynem kwasowym, obojętnym i zasadowym, barwy wskaźników (uniwersalny, fenoloftaleina, oranż metylowy, wywar z czerwonej kapusty) przy różnych pH oraz przykłady codziennych roztworów. Wniosek: odczyn rozpoznaje się wskaźnikiem — fenoloftaleina barwi się na malinowo tylko w odczynie zasadowym.
 
 > Woda czysta ma w przybliżeniu pH 7. Woda destylowana przechowywana na powietrzu pochłania CO₂, dlatego jej pH bywa nieco niższe od 7. Zakres zmiany barwy oranżu metylowego: pH ≈ 3,1–4,4.
 
 #### Laboratorium wskaźników — przewidź i sprawdź {.merge-h}
 
 @model gfx-scene-indicatorRack | Wskaźnik w siedmiu roztworach — przewidź barwę, potem sprawdź | Scena GFX · barwy wskaźników z CHE.COLORS
+@opis Siedem probówek z różnymi roztworami i wskaźnikiem: najpierw przewidujesz barwę, potem animacja pokazuje rzeczywiste barwy zależne od odczynu każdego roztworu. Wniosek: barwa wskaźnika zależy od odczynu roztworu, nie od jego wyglądu.
 
 > **Uwaga:** Cu(OH)₂ w wodzie to zawiesina, nie jednorodny roztwór. Znikoma rozpuszczona część może wpływać na odczyn, ale nie traktuj zawiesiny jak roztworu NaOH.
 
@@ -443,6 +449,7 @@ Przesuwaj suwak lub klikaj wartości na skali. Zobaczysz jednocześnie kolor roz
 ### 7.1 Trzy szkolne metody i ich warunki {#metody}
 
 @model n02-otrzymywanie-v01 | Otrzymywanie wodorotlenków — trzy metody, „Jak otrzymać…?” i mapa przemian | Zlewka GFX.rx · reguły CHE.HYDROXIDES.obtain (kiedy metoda działa, a kiedy nie)
+@opis Otrzymywanie wodorotlenków trzema metodami w zlewce: metal aktywny z wodą, tlenek metalu z wodą, strącanie z soli roztworem zasady; model mówi, kiedy dana metoda działa, a kiedy nie (np. CuO nie reaguje z wodą), i pokazuje mapę przemian. Wniosek: metodę dobiera się do aktywności metalu i rozpuszczalności produktu.
 
 ::: div.rule-box
 #### Otrzymywanie — trzy modele, ale z warunkami {.merge-h}
@@ -503,6 +510,7 @@ Metoda 3 to **reakcja strąceniowa**: kation metalu z roztworu soli łączy się
 Zobojętnianie: kwas + zasada → sól + woda. Jony H⁺ i OH⁻ łączą się w wodę.
 
 @model n02-zobojetnianie-v01 | Zobojętnianie — licznik moli, pH, wskaźniki, jony H⁺ + OH⁻ → H₂O i krzywa pH | Zastępuje animację i symulator zobojętniania · CHE.HYDROXIDES.neutral (Kw), GFX.ions
+@opis Zobojętnianie: do zasady dodaje się porcjami kwas; licznik moli pokazuje ubywanie jonów OH⁻ i przybywanie H₂O, zmienia się pH i barwa wskaźnika, a krzywa pH opada gwałtownie w punkcie zobojętnienia. Wniosek: H⁺ + OH⁻ → H₂O — w punkcie zobojętnienia ilości kwasu i zasady są równoważne.
 
 Postęp zobojętniania śledzimy wskaźnikiem: fenoloftaleina odbarwia się, gdy w roztworze znika nadmiar OH⁻ (barwy wskaźników — [§6.4](#ph-wskazniki)).
 
@@ -570,6 +578,7 @@ Trudno rozpuszczalne wodorotlenki podczas ogrzewania rozkładają się na tlenek
 **Reaktor:** Wybierz dwa substraty — sprawdź, czy zachodzi reakcja i jaka. {#reactor}
 
 @model n02-reaktor-v01 | Reaktor: wodorotlenek + odczynnik — przewiduj, potem sprawdź | CHE.HYDROXIDES.predict · H₂O, HCl, HNO₃, H₂SO₄, NaOH, CO₂, ogrzewanie, powietrze
+@opis Reaktor przewidywania: wybierasz wodorotlenek i odczynnik (woda, HCl, HNO₃, H₂SO₄, NaOH, CO₂, ogrzewanie, powietrze), zapisujesz przewidywanie, potem model pokazuje wynik, produkty i równanie. Wniosek: reakcje wodorotlenków da się przewidzieć z ich rozpuszczalności i charakteru.
 
 ## 9 | Zastosowania, BHP i życie codzienne [[basic:E8]] {#zastosowania .section}
 
@@ -882,6 +891,7 @@ Rzeczywisty proces jest bardziej złożony i może obejmować formy pośrednie o
 :::
 
 @model n02-stracanie-v01 | Laboratorium jonowe — strącanie 13 wodorotlenków (model cząsteczkowy) | CHE.sim.ParticleSim · barwy osadów CHE.COLORS · równania jonowe CHE.IONIC
+@opis Laboratorium jonowe: model cząsteczkowy strącania 13 wodorotlenków — jony metalu i jony OH⁻ łączą się w osad o charakterystycznej barwie, a jony obce pozostają w roztworze; obok równanie jonowe skrócone. Wniosek: osad powstaje, gdy kation tworzy z OH⁻ substancję trudno rozpuszczalną.
 
 ::: adv | Etapy pośrednie strącania — hydroksokompleksy | poziom LO / akademicki
 Ta animacja przedstawia **uproszczony moment pojawienia się osadu**. W rzeczywistości proces przebiega stopniowo: najpierw powstają hydroksokompleksy, np. <span class="formula">Fe(OH)²⁺</span> i <span class="formula">Fe(OH)₂⁺</span>, a dopiero później tworzy się <span class="formula">Fe(OH)₃↓</span>.
@@ -930,6 +940,7 @@ Równanie jonowe pokazuje, które jony naprawdę biorą udział w reakcji. Zapis
 </div>
 
 @model rownania-jonowe-v01 | Równania jonowe — wszystkie reakcje z silnika (strącanie OH⁻, zobojętnianie) | Zapis cząsteczkowy, jonowy pełny i skrócony · CHE.IONIC
+@opis Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują.
 
 > Zapis zobojętniania: cząsteczkowy, jonowy pełny i jonowy skrócony — w modelu „Równania jonowe” wyżej wybierz reakcję HCl + NaOH (jeden model dla wszystkich równań jonowych lekcji).
 
@@ -1004,6 +1015,7 @@ Format egzaminacyjny: problem → hipoteza → sprzęt → przebieg → obserwac
 :::
 
 @model n02-doswiadczenia-v01 | Pracownia: 26 doświadczeń z wodorotlenkami — zlewka, równania, obserwacje, BHP | GFX.rx · D.REACTIONS · CHE.IONIC
+@opis Pracownia 26 doświadczeń z wodorotlenkami: zlewki w animacji z obserwacjami, równaniami i zasadami BHP — m.in. sód z wodą, CaO z wodą, strącanie Cu(OH)₂ i Fe(OH)₃, zobojętnianie z fenoloftaleiną, Al(OH)₃ z nadmiarem NaOH. Wniosek: właściwości wodorotlenków potwierdza się doświadczeniem.
 
 ::: dosw | Doświadczenie A — Otrzymywanie NaOH: sód + woda [[basic:E8]]
 Problem: Co powstaje w reakcji sodu z wodą?
@@ -1016,6 +1028,7 @@ Wniosek: Metal aktywny + woda → wodorotlenek + wodór; roztwór ma odczyn zasa
 BHP: Wyłącznie pokaz nauczyciela: okulary, osłona, bardzo mała porcja sodu (wodór może się zapalić).
 
 @zlewka n02-doswiadczenia-v01 naH2o | Zobacz w zlewce (pracownia GFX)
+@opis Kawałek sodu w wodzie z dodatkiem wskaźnika: sód topi się w srebrzystą kulkę, porusza się po powierzchni i wydziela gaz, a roztwór zmienia barwę na charakterystyczną dla odczynu zasadowego. Wniosek: 2 Na + 2 H₂O → 2 NaOH + H₂↑ — metal aktywny z wodą daje zasadę i wodór.
 :::
 
 ::: dosw | Doświadczenie B — Gaszenie wapna: CaO + H₂O [[basic:E8]]
@@ -1029,6 +1042,7 @@ Wniosek: Tlenek zasadowy + woda → wodorotlenek. Część Ca(OH)₂ rozpuszcza 
 BHP: Wykonuje nauczyciel. Reakcja silnie egzotermiczna — nie dotykaj CaO mokrymi rękami, nie pochylaj się nad naczyniem (aerozol Ca(OH)₂ jest żrący). Nie badaj wskaźnikiem gorącej, gęstej zawiesiny.
 
 @zlewka n02-doswiadczenia-v01 caoH2o | Zobacz w zlewce (pracownia GFX)
+@opis Tlenek wapnia (wapno palone) zalany wodą: mieszanina silnie się ogrzewa, powstaje białe „mleko wapienne”, a wskaźnik wskazuje odczyn zasadowy. Wniosek: CaO + H₂O → Ca(OH)₂ — tlenek metalu aktywnego tworzy z wodą wodorotlenek.
 :::
 
 ::: dosw | Doświadczenie C — Strącanie Cu(OH)₂ [[basic:E8]]
@@ -1042,6 +1056,7 @@ Wniosek: Sól + zasada → wodorotlenek↓ + sól (metoda strąceniowa) — dzia
 BHP: NaOH żrący — okulary, rękawice.
 
 @zlewka n02-doswiadczenia-v01 cuso4Naoh | Zobacz w zlewce (pracownia GFX)
+@opis Do niebieskiego roztworu siarczanu(VI) miedzi(II) dodano roztwór NaOH: wytrąca się niebieski, galaretowaty osad. Wniosek: CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄ — wodorotlenek trudno rozpuszczalny otrzymuje się strącaniem.
 :::
 
 ::: dosw | Doświadczenie D — Strącanie Fe(OH)₃ [[basic:E8]]
@@ -1055,6 +1070,7 @@ Wniosek: Powstał praktycznie nierozpuszczalny wodorotlenek żelaza(III); Fe³�
 BHP: NaOH żrący — okulary, rękawice.
 
 @zlewka n02-doswiadczenia-v01 fecl3Naoh | Zobacz w zlewce (pracownia GFX)
+@opis Do żółtobrunatnego roztworu chlorku żelaza(III) dodano roztwór NaOH: wytrąca się brunatnoczerwony, galaretowaty osad. Wniosek: FeCl₃ + 3 NaOH → Fe(OH)₃↓ + 3 NaCl — barwa osadu pozwala rozpoznać jon Fe³⁺.
 :::
 
 ::: dosw | Doświadczenie E — Odczyn roztworu NaOH — trzy wskaźniki [[basic:E8]]
@@ -1068,6 +1084,7 @@ Wniosek: Roztwór NaOH ma odczyn zasadowy (dla stężonego — silnie zasadowy):
 BHP: NaOH żrący. Roztwór przygotowuje nauczyciel — rozpuszczanie stałego NaOH jest silnie egzotermiczne.
 
 @zlewka ph-indicators-v03 - | Zobacz w modelu wskaźników
+@opis Model wskaźników: skala pH z barwami wskaźnika uniwersalnego, fenoloftaleiny i oranżu metylowego w roztworach kwasowych, obojętnych i zasadowych. Wniosek: barwa wskaźnika pokazuje odczyn roztworu.
 :::
 
 ::: dosw | Doświadczenie F — Zobojętnianie NaOH kwasem solnym [[basic:E8]]
@@ -1081,6 +1098,7 @@ Wniosek: Zaszło zobojętnianie: H⁺ + OH⁻ → H₂O. Zanik barwy fenoloftale
 BHP: Roztwory żrące — okulary.
 
 @zlewka n02-doswiadczenia-v01 hclNaOH+php | Zobacz w zlewce (pracownia GFX)
+@opis Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają.
 :::
 
 ::: dosw | Doświadczenie G — Woda wapienna i CO₂ [[basic:E8]]
@@ -1094,6 +1112,7 @@ Wniosek: Wydychane powietrze zawiera CO₂ — woda wapienna służy do jego wyk
 BHP: Nie zasysaj roztworu przez rurkę.
 
 @zlewka n02-doswiadczenia-v01 caoh2Co2 | Zobacz w zlewce (pracownia GFX)
+@opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina. Wniosek: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O — test wykrywający CO₂ i dowód kwasowego charakteru tego tlenku.
 :::
 
 ::: dosw | Doświadczenie H — Amfoteryczność Al(OH)₃ [[extra:AMB]]
@@ -1107,6 +1126,7 @@ Wniosek: Al(OH)₃ jest amfoteryczny: Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O oraz
 BHP: NaOH żrący — okulary, rękawice.
 
 @zlewka n02-doswiadczenia-v01 aloh3Naoh | Zobacz w zlewce (pracownia GFX)
+@opis Do roztworu soli glinu dodaje się roztwór NaOH: najpierw wytrąca się biały galaretowaty osad Al(OH)₃, który w nadmiarze NaOH roztwarza się i roztwór znów jest klarowny. Wniosek: wodorotlenek glinu jest amfoteryczny — reaguje także z mocną zasadą.
 :::
 
 ## 16 | Klinika błędów {#klinika .section}
@@ -1124,6 +1144,8 @@ BHP: NaOH żrący — okulary, rękawice.
 <tr class="error-row"><td class="col-blad">MgO nie reaguje z wodą</td><td class="col-ok">MgO reaguje bardzo wolno; powstaje trudno rozpuszczalny Mg(OH)₂</td><td>Mg(OH)₂ otrzymuje się wygodniej przez strącanie, ale reakcja zachodzi.</td><td>W praktyce szkolnej Mg(OH)₂ robi się z MgCl₂ + NaOH, bo reakcja MgO z wodą jest zbyt wolna.</td></tr>
 <tr class="error-row"><td class="col-blad">Każdy tlenek metalu reaguje z wodą</td><td class="col-ok">Tylko niektóre tlenki zasadowe (metali aktywnych)</td><td>CuO, Fe₂O₃ i Al₂O₃ praktycznie nie reagują z wodą.</td><td>Wsypanie CuO do wody nie da niebieskiego roztworu — to nie zadziała.</td></tr>
 <tr class="error-row"><td class="col-blad">Zasada = wodorotlenek</td><td class="col-ok">Wodorotlenek = substancja; zasada = jej wodny roztwór</td><td>Stały NaOH to wodorotlenek; jego wodny roztwór jest zasadą (ługiem sodowym).</td><td>Butelka z NaOH to wodorotlenek; zlewka z roztworem NaOH to zasada — wodny roztwór wodorotlenku.</td></tr>
+<tr class="error-row"><td class="col-blad" data-label="Błąd">„Sprawdzę zasadowość na języku albo palcem.”</td><td class="col-ok" data-label="Poprawnie">Odczyn bada się **wskaźnikiem** (fenoloftaleina, uniwersalny papierek); odczynników nie dotykamy i nie smakujemy.</td><td data-label="Dlaczego">BHP — zasady są żrące dla skóry i oczu.</td><td>—</td><td>—</td></tr>
+<tr class="error-row"><td class="col-blad" data-label="Błąd">„Odczyn zasadowy = żrący.”</td><td class="col-ok" data-label="Poprawnie">Roztwór może mieć odczyn zasadowy i nie być żrący (np. woda z mydłem, rozcieńczony roztwór amoniaku); żrące są stężone roztwory mocnych zasad.</td><td data-label="Dlaczego">Zasadowość i żrącość to różne cechy.</td><td>—</td><td>—</td></tr>
 </tbody>
 </table>
 :::
@@ -1365,6 +1387,24 @@ BHP: NaOH żrący — okulary, rękawice.
 **2.** Reakcja strąceniowa.
 
 **3.** Bez nadmiaru NaOH jony OH⁻ zostały praktycznie w całości zużyte na wytrącenie Fe(OH)₃. Sam osad jest praktycznie nierozpuszczalny, więc nie uwalnia jonów OH⁻ do roztworu — stężenie OH⁻ jest zbyt małe, aby odczyn był wyraźnie zasadowy.
+:::
+:::
+
+::: karta basic | Utrwalenie — wodorotlenki i zasady (W1)
+1. Czym różni się wodorotlenek od zasady?
+2. Zapisz wzór wodorotlenku żelaza(III).
+3. Zapisz reakcję KOH z HNO₃.
+4. Zapisz dysocjację Ba(OH)₂.
+5. Dlaczego Al(OH)₃ nie zalicza się do zasad?
+6. Zapisz otrzymywanie Cu(OH)₂ z CuSO₄ i NaOH.
+
+::: odp | Pokaż odpowiedzi
+1. Wodorotlenek to związek z kationem metalu i anionami OH⁻; zasada to wodny roztwór wodorotlenku rozpuszczalnego (lub substancja dająca w wodzie jony OH⁻, np. NH₃).
+2. Fe(OH)₃.
+3. KOH + HNO₃ → KNO₃ + H₂O.
+4. Ba(OH)₂ → Ba²⁺ + 2 OH⁻.
+5. Jest praktycznie nierozpuszczalny w wodzie, więc nie daje roztworu zasadowego (jest amfoteryczny).
+6. CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄ (niebieski galaretowaty osad).
 :::
 :::
 

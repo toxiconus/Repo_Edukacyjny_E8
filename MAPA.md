@@ -3,14 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 50 KB)
+## .  (11 pl., 52 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 6 KB
 - `MAPA.md` 17 KB
 - `PRZEKAZANIE.md` 3 KB
 - `README.md` 0 KB
-- `WERYFIKACJA.md` 6 KB
+- `WERYFIKACJA.md` 7 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -298,13 +298,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 873 KB)
+## chemia/che-modular/lessons-md/gotowe  (15 pl., 905 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 51 KB
-- ⚠`N01_tlenki.md` 117 KB
-- ⚠`N02_wodorotlenki.md` 122 KB
-- ⚠`N03_kwasy.md` 125 KB
-- ⚠`N04_sole.md` 80 KB
+- ⚠`N01_tlenki.md` 123 KB
+- ⚠`N02_wodorotlenki.md` 129 KB
+- ⚠`N03_kwasy.md` 134 KB
+- ⚠`N04_sole.md` 86 KB
 - ⚠`N05_wodorki.md` 53 KB
 - ⚠`REV01_powtorka_klasy_7.md` 59 KB
 
@@ -456,9 +456,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (2 pl., 38 KB)
+## chemia/plany/audyty  (3 pl., 55 KB)
 - `W1_perplexity_F01-F06_2026-10-09.md` 18 KB
 - `W1_perplexity_F07-F14_2026-10-09.md` 20 KB
+- `W1_perplexity_F15-F21_2026-10-09.md` 17 KB
 
 ## chemia/plany/narzedzia  (3 pl., 47 KB)
 - `kanon_dane.py` 37 KB
@@ -474,10 +475,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 16 KB
 
-## narzedzia  (4 pl., 7 KB)
+## narzedzia  (5 pl., 10 KB)
+- `audyt_do_kanonu.py` 3 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
-- `opis_dlug.json` 1 KB
+- `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
 
 ## olimpiada  (4 pl., 116 KB)

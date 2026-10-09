@@ -120,6 +120,7 @@ Szkolny łańcuch: **kwas → reszta kwasowa → sól**, np. H₂SO₄ → SO₄
 :::
 
 @model ion-map-v02 | Mapa jonów — ładunki, pochodzenie, wykrywanie; z czym każdy jon tworzy osad | Dane: tabela rozpuszczalności i kwasy z silnika
+@opis Mapa jonów: dla każdego jonu podany jest ładunek, pochodzenie (z jakiego kwasu lub wodorotlenku), sposób wykrywania oraz jony, z którymi tworzy osad (np. Ag⁺ z Cl⁻, Ba²⁺ z SO₄²⁻, Ca²⁺ z CO₃²⁻). Wniosek: wiedząc, które pary jonów dają osad, można przewidzieć reakcje strąceniowe i wykrywać jony.
 
 ## 2 | Wzory soli — bilans ładunku [[basic:E8]] {#wzory}
 
@@ -182,6 +183,7 @@ Dla metali o zmiennej wartościowości podajemy ją cyfrą rzymską: FeCl₂ —
 :::
 
 @model kw-reszty-v01 | Kwas → reszta kwasowa → sole: wzory i nazwy dla 13 metali | Silnik CHE · otwiera się w oknie
+@opis Model kwas → reszta kwasowa → sól: kwas dysocjuje, model pokazuje ładunek reszty kwasowej (np. SO₄²⁻, NO₃⁻, PO₄³⁻), a dla 13 metali tworzy wzory i nazwy soli z informacją o rozpuszczalności. Wniosek: ładunek reszty kwasowej równa się liczbie atomów wodoru oddanych przez kwas i wyznacza wzór soli.
 
 ## 4 | Dysocjacja soli [[basic:E8]] {#dysocjacja}
 
@@ -210,6 +212,7 @@ Szkolna reguła „sole są mocnymi elektrolitami” ma wyjątki: niektóre sole
 :::
 
 @model gfx-scene-conductivity | Przewodzenie prądu: elektrolity i dysocjacja | Scena GFX · tester przewodnictwa
+@opis Tester przewodnictwa z żarówką zanurzany w różnych cieczach: w roztworach kwasów, zasad i soli żarówka świeci (jasność zależy od liczby jonów), w wodzie destylowanej i roztworze cukru nie świeci; obok model ruchomych jonów. Wniosek: prąd w roztworze przewodzą jony powstałe w dysocjacji.
 
 ## 5 | Tabela rozpuszczalności [[basic:E8]] {#rozpuszczalnosc}
 
@@ -239,6 +242,7 @@ Szkolna reguła „sole są mocnymi elektrolitami” ma wyjątki: niektóre sole
 :::
 
 @model tabela-rozpuszczalnosci-v01 | Interaktywna tabela rozpuszczalności (20 °C) — każda komórka podaje wzór i nazwę soli | CHE.DATA.SOLUBILITY_TABLE · kliknij komórkę
+@opis Tabela rozpuszczalności w temperaturze 20 °C: wiersze kationów, kolumny anionów (w tym OH⁻), komórki oznaczone jako substancja rozpuszczalna, trudno rozpuszczalna lub praktycznie nierozpuszczalna. Wniosek: z tabeli odczytuje się, który wodorotlenek lub sól wytrąci się jako osad.
 
 ## 6 | Otrzymywanie soli — 10 metod [[basic:E8]] {#otrzymywanie}
 
@@ -369,6 +373,7 @@ $$ Cu + Cl₂ → CuCl₂ (ogrzewanie)
 :::
 
 @model chain-scn | Łańcuch przemian: pierwiastek → tlenek → kwas → sól | Silnik CHE · otwiera się w oknie
+@opis Łańcuchy przemian przedstawione jako kolejne ogniwa: Na → Na₂O → NaOH → NaCl, S → SO₃ → H₂SO₄ → Na₂SO₄, C → CO₂ → H₂CO₃ i podobne, z równaniem każdego kroku. Wniosek: od pierwiastka przez tlenek do wodorotlenku lub kwasu i dalej do soli prowadzi ciąg typowych reakcji.
 
 ## 7 | Reakcje strąceniowe, zapis jonowy i wykrywanie jonów [[basic:E8]] {#stracanie}
 
@@ -443,6 +448,7 @@ Samo powstanie osadu nie zawsze jednoznacznie identyfikuje jon — potrzebny jes
 :::
 
 @model rownania-jonowe-v01 | Równania jonowe dla tych reakcji (generowane przez silnik) — strącanie, wypieranie, zobojętnianie | cząsteczkowe → jonowe pełne → skrócone
+@opis Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują.
 
 ## 8 | Wypieranie metali — szereg aktywności [[basic:E8]] {#wypieranie}
 
@@ -461,6 +467,7 @@ To reakcja **redoks**: Fe oddaje elektrony (utlenia się), Cu²⁺ je przyjmuje 
 :::
 
 @model kw-szereg-metali-v01 | Szereg aktywności: metale w kwasie solnym | Silnik CHE · otwiera się w oknie
+@opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu obok siebie: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, miedź wcale (brak pęcherzyków). Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru — szereg aktywności Mg > Zn > Fe > (H) > Cu.
 
 ## 9 | Hydraty [[understand:ROZUMIENIE]] {#hydraty}
 
@@ -577,6 +584,7 @@ Nie należy używać reguły „sól → obojętna”. Dla tej samej grupy soli 
 :::
 
 @zlewka sole-doswiadczenia-v01 hyd-na2co3 | Zobacz w zlewce: odczyn roztworów soli (pracownia GFX)
+@opis Roztwór węglanu sodu z wskaźnikiem: wskaźnik pokazuje odczyn zasadowy (fenoloftaleina barwi się na malinowo). Wniosek: roztwory niektórych soli nie mają odczynu obojętnego — sól mocnej zasady i słabego kwasu daje odczyn zasadowy.
 
 ::: adv | Hydroliza ilościowo | poziom akademicki · poza maturą rozszerzoną
 Dla anionu słabego kwasu: K<sub>b</sub> = K<sub>w</sub>/K<sub>a</sub>. Np. CH₃COO⁻: K<sub>b</sub> = 10⁻¹⁴ / 1,75·10⁻⁵ ≈ 5,7·10⁻¹⁰; dla 0,1 mol/dm³ CH₃COONa [OH⁻] ≈ √(K<sub>b</sub>·c) ≈ 7,6·10⁻⁶ → pOH ≈ 5,1, pH ≈ 8,9. Dla CO₃²⁻ (K<sub>a2</sub> H₂CO₃ = 4,68·10⁻¹¹) K<sub>b</sub> ≈ 2,1·10⁻⁴ → 0,1 M Na₂CO₃ ma pH ≈ 11,7. Kationy metali hydrolizują jako akwakompleksy: [Fe(H₂O)₆]³⁺ ⇌ [Fe(OH)(H₂O)₅]²⁺ + H⁺ (pK<sub>a</sub> ≈ 2,2).
@@ -626,6 +634,7 @@ Dla osadu MₐXᵦ: K<sub>sp</sub> = [M]ᵃ[X]ᵇ (np. AgCl: K<sub>sp</sub> = 1,
 ## 16 | Doświadczenia {#doswiadczenia}
 
 @model sole-doswiadczenia-v01 | Pracownia: doświadczenia z solami (GFX) — otrzymywanie soli, strącanie, wypieranie metali, cykl wapienny, hydrat, odczyn | Zlewki i probówki w silniku GFX · równania z CHE.REACTION i CHE.IONIC
+@opis Pracownia doświadczeń z solami: otrzymywanie soli różnymi metodami, strącanie osadów, wypieranie metali z roztworów soli, cykl wapienny, odwadnianie hydratu i badanie odczynu roztworów soli — zlewki i probówki w animacji z obserwacjami i równaniami. Wniosek: sole otrzymuje się wieloma sposobami, a ich reakcje przewiduje się z rozpuszczalności i aktywności metali.
 
 ::: karta understand | Format doświadczenia i „obserwacja ≠ wniosek”
 Problem → hipoteza → sprzęt → przebieg → obserwacje → wniosek → równanie → BHP. Obserwacja to to, co widać: „biały osad”. Wniosek to interpretacja: „powstaje AgCl (trudno rozpuszczalny)”. Błąd: „Obserwacja: powstał AgCl” — to już wniosek.
@@ -642,6 +651,7 @@ Równanie:: HCl + NaOH → NaCl + H₂O
 BHP: Okulary; nie dopuścić do pryskania przy odparowywaniu; pipetować gruszką.
 
 @zlewka sole-doswiadczenia-v01 hclNaOH+php | Zobacz w zlewce (pracownia GFX)
+@opis Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają.
 :::
 
 ::: dosw | Doświadczenie 2 — Strącanie wodorotlenku miedzi(II)
@@ -655,6 +665,7 @@ Równanie:: CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄
 BHP: NaOH żrący — okulary, rękawice.
 
 @zlewka sole-doswiadczenia-v01 rx-cu-naoh | Zobacz w zlewce (pracownia GFX)
+@opis Do niebieskiego roztworu soli miedzi(II) dodano roztwór NaOH: wytrąca się niebieski, galaretowaty osad wodorotlenku miedzi(II). Wniosek: Cu²⁺ + 2 OH⁻ → Cu(OH)₂↓ — reakcja soli z zasadą zachodzi, gdy powstaje osad.
 :::
 
 ::: dosw | Doświadczenie 3 — Wykrywanie jonów chlorkowych
@@ -670,6 +681,7 @@ BHP: AgNO₃ plami skórę na czarno.
 > Wersja klasyczna: roztwory AgNO₃ i NaCl w probówce dają biały, serowaty osad (AgNO₃ + NaCl → AgCl↓ + NaNO₃).
 
 @zlewka sole-doswiadczenia-v01 rx-ag-cl | Zobacz w zlewce (pracownia GFX)
+@opis Do roztworu chlorku dodano roztwór azotanu(V) srebra: wytrąca się biały, serowaty osad. Wniosek: Ag⁺ + Cl⁻ → AgCl↓ — reakcja strąceniowa służy do wykrywania jonów chlorkowych.
 :::
 
 ::: dosw | Doświadczenie 4 — Gwóźdź w roztworze CuSO₄
@@ -683,6 +695,7 @@ Równanie:: Fe + CuSO₄ → FeSO₄ + Cu
 BHP: Okulary.
 
 @zlewka sole-doswiadczenia-v01 rx-fe-cuso4 | Zobacz w zlewce (pracownia GFX)
+@opis Żelazny gwóźdź w niebieskim roztworze siarczanu(VI) miedzi(II): na żelazie osadza się rudy nalot miedzi, a roztwór stopniowo traci niebieską barwę. Wniosek: Fe + CuSO₄ → FeSO₄ + Cu — metal aktywniejszy wypiera mniej aktywny z roztworu jego soli.
 :::
 
 ::: dosw | Doświadczenie 5 — Wapno palone i gaszone (pokaz)
@@ -696,6 +709,7 @@ Równanie:: CaCO₃ → CaO + CO₂;  CaO + H₂O → Ca(OH)₂
 BHP: CaO żrący, wysoka temperatura — tylko pokaz.
 
 @zlewka sole-doswiadczenia-v01 caoH2o | Zobacz w zlewce (pracownia GFX)
+@opis Tlenek wapnia (wapno palone) zalany wodą: mieszanina silnie się ogrzewa, powstaje białe „mleko wapienne”, a wskaźnik wskazuje odczyn zasadowy. Wniosek: CaO + H₂O → Ca(OH)₂ — tlenek metalu aktywnego tworzy z wodą wodorotlenek.
 :::
 
 ::: dosw | Doświadczenie 6 — Odczyn roztworów soli (LO)
@@ -709,6 +723,7 @@ Równanie:: CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻;  NH₄⁺ + H₂O ⇌ NH�
 BHP: Okulary.
 
 @zlewka sole-doswiadczenia-v01 hyd-nh4cl | Zobacz w zlewce (pracownia GFX)
+@opis Roztwór chlorku amonu z wskaźnikiem: wskaźnik uniwersalny pokazuje odczyn lekko kwasowy. Wniosek: sól słabej zasady i mocnego kwasu daje w roztworze odczyn kwasowy.
 :::
 
 ::: dosw | Doświadczenie 7 — Otrzymywanie CuSO₄ z tlenku miedzi(II)
@@ -722,6 +737,7 @@ Równanie:: CuO + H₂SO₄ → CuSO₄ + H₂O
 BHP: H₂SO₄ żrący — okulary, rękawice; ogrzewać ostrożnie, wylotem probówki od siebie.
 
 @zlewka sole-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia GFX)
+@opis Czarny tlenek miedzi(II) w roztworze kwasu siarkowego(VI), lekko ogrzewanym: proszek znika, a roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O — tlenek zasadowy reaguje z kwasem, tworząc sól i wodę.
 :::
 
 ::: dosw | Doświadczenie 8 — Rozróżnianie NaCl, Na₂SO₄ i Na₂CO₃ (pytanie przewodnie)
@@ -735,10 +751,13 @@ Równanie:: Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂↑;  Ba²⁺ + SO₄²
 BHP: Sole baru trujące — odpady do pojemnika; AgNO₃ plami skórę.
 
 @zlewka sole-doswiadczenia-v01 na2co3Hcl | Zobacz w zlewce: krok 1 (pracownia GFX)
+@opis Do roztworu węglanu sodu dodano kwas solny: wydzielają się pęcherzyki bezbarwnego gazu. Wniosek: Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂↑ — sól z kwasem reaguje, gdy powstaje gaz.
 
 @zlewka sole-doswiadczenia-v01 bacl2Na2so4 | krok 2
+@opis Do roztworu siarczanu(VI) sodu dodano roztwór chlorku baru: wytrąca się biały, drobnokrystaliczny osad. Wniosek: Ba²⁺ + SO₄²⁻ → BaSO₄↓ — reakcja dwóch soli zachodzi, gdy powstaje osad.
 
 @zlewka sole-doswiadczenia-v01 rx-ag-cl | krok 3
+@opis Do roztworu chlorku dodano roztwór azotanu(V) srebra: wytrąca się biały, serowaty osad. Wniosek: Ag⁺ + Cl⁻ → AgCl↓ — reakcja strąceniowa służy do wykrywania jonów chlorkowych.
 :::
 
 ::: dosw | Doświadczenie 9 — Hydrat CuSO₄: wykrywanie wody
@@ -752,6 +771,7 @@ Równanie:: CuSO₄·5H₂O → CuSO₄ + 5 H₂O (ogrzewanie);  CuSO₄ + 5 H�
 BHP: Okulary; CuSO₄ szkodliwy — nie dotykać gołą ręką; gorąca parownica.
 
 @zlewka sole-doswiadczenia-v01 cuso4Hydrate | Zobacz w zlewce (pracownia GFX)
+@opis Niebieskie kryształy uwodnionego siarczanu(VI) miedzi(II) ogrzewane w probówce: tracą wodę (para skrapla się u wylotu) i stają się białym proszkiem; po dodaniu kropli wody znów błękitnieją. Wniosek: CuSO₄·5H₂O ⇌ CuSO₄ + 5 H₂O — hydrat zawiera wodę krystalizacyjną, a bezwodny CuSO₄ wykrywa wodę.
 :::
 
 ::: dosw | Doświadczenie 10 — Zmiękczanie wody sodą
@@ -765,6 +785,7 @@ Równanie:: CaCl₂ + Na₂CO₃ → CaCO₃↓ + 2 NaCl;  Ca²⁺ + CO₃²⁻ 
 BHP: Okulary; soda drażni oczy.
 
 @zlewka sole-doswiadczenia-v01 cacl2Na2co3 | Zobacz w zlewce (pracownia GFX)
+@opis Do roztworu chlorku wapnia dodano roztwór węglanu sodu: wytrąca się biały osad. Wniosek: Ca²⁺ + CO₃²⁻ → CaCO₃↓ — węglan wapnia jest trudno rozpuszczalny.
 :::
 
 ## 17 | Klinika błędów {#klinika}
@@ -1059,6 +1080,24 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 > Odpowiedzi: 1 siarczan(VI) sodu; H₂SO₄. 2 NaNO₃ + H₂O. 3 AgCl↓ + NaNO₃. 4 CaCl₂. 5 nie — dobrze rozpuszczalny. 6 by przewidzieć, czy powstanie osad.
 :::
 
+::: karta basic | Utrwalenie — sole (W1)
+1. Zapisz wzór azotanu(V) wapnia.
+2. Zapisz wzór węglanu sodu.
+3. Zapisz wzór fosforanu(V) glinu.
+4. Zapisz reakcję strącania chlorku srebra.
+5. Zapisz reakcję siarczanu(VI) miedzi(II) z wodorotlenkiem sodu.
+6. Dlaczego nie każda reakcja dwóch soli zachodzi?
+
+::: odp | Pokaż odpowiedzi
+1. Ca(NO₃)₂.
+2. Na₂CO₃.
+3. AlPO₄ (Al³⁺ i PO₄³⁻ — ładunki równe, stosunek 1 : 1).
+4. AgNO₃ + NaCl → AgCl↓ + NaNO₃ (biały osad).
+5. CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄.
+6. Wymiana jonów zachodzi, gdy powstaje osad, gaz lub słaby elektrolit (np. woda); jeśli wszystkie produkty zostają rozpuszczone w roztworze, jony tylko się mieszają.
+:::
+:::
+
 ## 19 | Typologia zadań E8 [[basic:E8]] {#typologia}
 
 ::: div.table-wrap
@@ -1086,6 +1125,7 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 :::
 
 @model stech-kalkulator-v01 | Kalkulator stechiometryczny — masa osadu, mole, odczynnik limitujący | Silnik CHE · otwiera się w oknie
+@opis Kalkulator stechiometryczny: dla wybranej reakcji (np. spalanie, rozkład CaCO₃, CuO z H₂SO₄) wpisujesz masę lub objętość jednego reagenta, a model przelicza mole, masy i objętości gazów pozostałych substancji i wskazuje odczynnik w niedomiarze. Wniosek: ilości substancji w reakcji wynikają ze współczynników równania.
 
 ## 20 | Test {#test}
 
