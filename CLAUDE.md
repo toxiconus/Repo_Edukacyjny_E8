@@ -49,6 +49,9 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 ## Polski — lekcje podstawowe (priorytet)
 - Szkielety G01–G17 (części mowy, składnia) i S01–S06 (środki stylistyczne) w `polski/podstawy/`, generator `python3 narzedzia/szkielety_polski.py` (nie nadpisuje wypełnionych), paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md`. Wypełniony plik: zmienić `stan: PUSTY` → `stan: WYPEŁNIONY — model, data`, potem W1.
 
+## Szablon HTML lekcji (wszystkie przedmioty)
+- Wspólny wygląd: `szablon/` (baza + ulepszenia + `motywy/<che|bio|pol|ang|oli>.css`, `lekcja.js`), opis w `szablon/README.md`. Build: `python3 narzedzia/lekcja_html.py -p <przedmiot> plik.md`. Zmiany wspólne tylko w `szablon/ulepszenia.css`, przedmiotowe w motywie.
+
 ## Merytoryka
 - Język lekcji: polski, poziom E8 (podstawa programowa). Dane liczbowe oznaczaj do weryfikacji, jeśli nie są pewne.
 

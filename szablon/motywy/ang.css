@@ -1,0 +1,14 @@
+/* motyw ang (Język angielski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#2a4d9b;--accent-dark:#1b336a;--accent-soft:#e9eef9;--accent-line:#c4d1ee;--accent-glow:rgba(42,77,155,.15);--hl-key:#2a4d9b;--hl-key-bg:#dfe7f7;--hl-formula:#1b336a;--hl-formula-bg:#e9eef9;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 130 200%27%3E%3Cg fill=%27none%27 stroke=%27%232a4d9b%27 stroke-width=%274%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M14 14h80a10 10 0 0 1 10 10v34a10 10 0 0 1-10 10H48l-18 16V68H14A10 10 0 0 1 4 58V24a10 10 0 0 1 10-10z%27/%3E%3Cpath d=%27M40 106h76a10 10 0 0 1 10 10v30a10 10 0 0 1-10 10h-12v16l-18-16H40a10 10 0 0 1-10-10v-30a10 10 0 0 1 10-10z%27/%3E%3C/g%3E%3Cg fill=%27%232a4d9b%27%3E%3Ccircle cx=%2736%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2754%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2772%27 cy=%2741%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}}
+:root[data-theme=dark]{--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}
+
+/* wyrażenie po angielsku w tekście polskim i wymowa */
+.en{font-style:italic;font-weight:600;color:var(--accent)}
+.ipa{font-family:var(--serif);font-size:.95em;color:var(--text-muted);white-space:nowrap}
+.ipa::before{content:"/"}.ipa::after{content:"/"}
+/* wzór zdania: podmiot + operator + czasownik */
+.wzor{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+.wzor span{padding:5px 10px;border-radius:8px;border:1px solid var(--accent-line);background:var(--accent-soft);font-weight:700;font-size:14px}
+.wzor span.op{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.wzor b{color:var(--text-muted);font-weight:700}

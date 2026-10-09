@@ -578,11 +578,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/zrodla/pakiet_2026-10-09/research  (1 pl., 5 KB)
 - `RESEARCH_OLIMPIADY_I_KONKURSY_2026-10-09.md` 5 KB
 
-## polski  (4 pl., 287 KB)
+## polski  (5 pl., 296 KB)
 - `L001-L006-PL-Wszystkie-lekcje.md` 47 KB
 - `MAPA_POLSKI.md` 14 KB
 - ⚠`POLSKI_PODSTAWA_PLUS_v7.11.md` 209 KB
 - `POSTEP_UZUPELNIANIA.md` 17 KB
+- `SPIS_TRESCI_POLSKI.md` 9 KB
 
 ## polski/archiwum  (1 pl., 0 KB)
 - `README.md` 0 KB
@@ -607,7 +608,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## polski/archiwum/wersje_wejsciowe  (25 pl., 149 KB)
 - (zwinięte; `ls polski/archiwum/wersje_wejsciowe`)
 
-## polski/blok_D  (2 pl., 26 KB)
+## polski/blok_D  (3 pl., 28 KB)
+- `AUDYT_ZBIORCZY_D_v3.md` 2 KB
 - `POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` 22 KB
 - `README.md` 3 KB
 
@@ -649,15 +651,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 86 KB
 - ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 104 KB
 
-## polski/plany/audyty  (8 pl., 37 KB)
-- `AUDYT_ZBIORCZY_POLSKI_2026-10-09.md` 4 KB
-- `L007_AUDYT_2026-10-09.md` 2 KB
-- `L008_AUDYT_2026-10-09.md` 2 KB
-- `L009_AUDYT_2026-10-09.md` 2 KB
-- `L010_AUDYT_2026-10-09.md` 2 KB
-- `L011_AUDYT_2026-10-09.md` 2 KB
-- `W1_POLSKI_ocena_2026-10-09.md` 4 KB
-- `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
+## polski/plany/audyty  (15 pl., 55 KB)
+- (zwinięte; `ls polski/plany/audyty`)
 
 ## polski/plany/wypelnienia  (6 pl., 32 KB)
 - `G01_Rzeczownik_WYPELNIONY.md` 8 KB
