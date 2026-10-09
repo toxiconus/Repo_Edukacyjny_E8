@@ -3,12 +3,12 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 120 KB)
+## .  (8 pl., 121 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 8 KB
-- `MAPA.md` 25 KB
-- `PRZEKAZANIE.md` 14 KB
+- `MAPA.md` 26 KB
+- `PRZEKAZANIE.md` 15 KB
 - `README.md` 0 KB
 - `SPIS_WSZYSTKICH.md` 40 KB
 - `WERYFIKACJA.md` 28 KB
@@ -152,7 +152,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 103 KB)
+## chemia/che-modular  (13 pl., 104 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -185,10 +185,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/registry/layout  (1 pl., 1 KB)
 - `shell.json` 1 KB
 
-## chemia/che-modular/engine/registry/profile  (3 pl., 32 KB)
+## chemia/che-modular/engine/registry/profile  (10 pl., 106 KB)
 - `F01_jak_mysli_chemik.json` 9 KB
+- `F02_materia_i_substancje.json` 11 KB
+- `F03_wlasciwosci_i_rozdzielanie.json` 11 KB
 - `F04_atom.json` 11 KB
-- `wspolny.json` 12 KB
+- `F05_izotopy_jony_masa_atomowa.json` 11 KB
+- `N02_wodorotlenki.json` 11 KB
+- `N03_kwasy.json` 11 KB
+- `N04_sole.json` 11 KB
+- `N05_wodorki.json` 8 KB
+- `wspolny.json` 13 KB
 
 ## chemia/che-modular/engine/registry/tables  (1 pl., 4 KB)
 - `index.json` 4 KB
@@ -457,7 +464,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (24 pl., 133 KB)
+## chemia/che-modular/tools  (24 pl., 135 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
@@ -567,9 +574,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (3 pl., 21 KB)
+## eksport  (4 pl., 25 KB)
 - `.gitignore` 0 KB
 - `html2md.py` 4 KB
+- `w1_paczka.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
 ## narzedzia  (10 pl., 82 KB)
