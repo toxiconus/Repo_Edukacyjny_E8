@@ -115,6 +115,10 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `n05-wodorki-v01` | Mapa wodorków — typ, rola wodoru, właściwości | N05 |
 | `n05-trendy-v01` | Temperatury wrzenia wodorków — wiązania wodorowe | N05 |
 | `n05-doswiadczenia-v01` | Pracownia: doświadczenia z wodorkami | N05 |
+| `f09-trzy-liczby-v01` | Ładunek, wartościowość, stopień utlenienia — ta sama drobina, trzy pytania | (F09) |
+| `f10-energia-h2-v01` | Energia dwóch atomów wodoru — skąd się bierze wiązanie | (F10) |
+| `f15-dipol-v01` | Wektory dipola — polarność wiązań a polarność cząsteczki | (F15) |
+| `f17-bilans-v01` | Bilans równania reakcji — atomy i ładunek | (F17) |
 
 - `n05-doswiadczenia-v01`: `cah2H2o`, `nahH2o`, `nh4clCaoh2`, `naclH2so4`, `fesHcl`, `nh3H2oPhp`, `hclH2oOranz`, `h2sH2oUni`, `nh3Hcl`, `h2sPbac`, `h2sCuso4`, `caOH2Co2`
 
@@ -122,6 +126,6 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 
 **Nowa pracownia bez pisania kodu widoku:** `C.EXT_PRACOWNIA(id, tytuł, podpowiedź, [[grupa,[klucze]]…], {klucz:{war,wn,bhp,eq,obs,btn}}, stopka)` (rozszerzenia.js §5). Spec zlewki może mieć `vessel`: `beaker` (domyślnie, wszystkie efekty), `testTube`, `crucible`, `flask`, `cylinder`; `evapDish` rysuje tylko ciecz (bez osadu i pary). Lekcja musi mieć `@model <id-pracowni>` — inaczej przyciski `@zlewka` nie mają gdzie się otworzyć. `noRx:1` zatrzymuje animację (bez zmian w zlewce).
 
-**Braki GFX do zbudowania od podstaw:** magnes (Fe + S), lód pływający, osad i para w parownicy, płomień przy spalaniu w tyglu; rozdzielanie mieszanin (F03), energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17).
+**Braki GFX do zbudowania od podstaw:** magnes (Fe + S), lód pływający, osad i para w parownicy, płomień przy spalaniu w tyglu; rozdzielanie mieszanin (F03), ~~energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17)~~ — zrobione 2026-10-09 (§11 rozszerzenia.js, z wzorcowni).
 
 **Jak dodać nową zlewkę:** w `rozszerzenia.js` dopisz spec do obiektu zlewek (`n` nazwa, `solid`, `l0`/`l1` barwa przed/po — np. `['ind-fenoloftaleina',12]`, `ppt` osad, `gas` H2/O2/CO2/NH3/HCl/H2S/Cl2/NO2…, `bubN` ilość pęcherzyków, `heat`/`T`, `fumes`, `teacher`, `why`, `eq`) i rekord reakcji (bilans sprawdza silnik). Barwy osadów: `ppt-agcl`, `ppt-baso4`, `ppt-caco3`, `ppt-cus`, `ppt-pbs`, `ppt-cu-oh-2`, `ppt-fe-oh-3`… (pełna lista w CHE.COLORS); jony: `ion-cu2`, `ion-fe2`, `ion-fe3`, `ion-ni2`, `ion-cr3`, `ion-mn2`; wskaźniki: `ind-uniwersalny`, `ind-fenoloftaleina`, `ind-oranz-metylowy`, `ind-lakmus`, `ind-bbt`, `ind-kapusta`.

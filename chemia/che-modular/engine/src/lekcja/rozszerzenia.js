@@ -366,3 +366,171 @@ pracownia('f06-doswiadczenia-v01','Pracownia: rodzina pierwiastków i trend w gr
  'GFX.rx · rozszerzenia.js (F06)');
 
 })();
+
+/* ---------- 11. Wzorcownia → biblioteka (2026-10-09): F09 karty, F10 energia H₂, F15 dipol, F17 bilans ----------
+   Prototypy z wizualizacje-projekty/wzorcownia.html przeniesione do CHE.VIEW. Elektroujemność z CHE.DATA (ELEMENTS_118/54),
+   zapas: wartości Paulinga. Każdy widok rysuje się w swoim hoście (bez globalnych id) — można montować wielokrotnie. */
+(function(){
+var C=window.CHE;if(!C||!C.VIEW||!C.VIEW.define||C.EXT_WZOR)return;C.EXT_WZOR=1;
+var V=C.VIEW,D=C.DATA||{},NS='http://www.w3.org/2000/svg',MINUS='−',UID=0;
+var css=document.createElement('style');css.textContent=
+'.xw{font:14px/1.5 Inter,system-ui,sans-serif;color:inherit;display:grid;gap:10px}.xw .ctl{display:flex;flex-wrap:wrap;gap:6px;align-items:center}'+
+'.xw .seg{display:flex;flex-wrap:wrap;gap:4px}.xw .seg button,.xw select{font:600 12.5px Inter,system-ui;border:1px solid var(--line,#d5dee6);background:var(--panel,#fff);color:inherit;padding:5px 10px;border-radius:7px;cursor:pointer}'+
+'.xw .seg button[aria-pressed=true]{background:#0d6868;border-color:#0d6868;color:#fff}.xw label.chk{display:inline-flex;gap:5px;align-items:center;font-size:13px}'+
+'.xw .out{background:var(--panel-2,#f1f5f8);border-left:3px solid #0d6868;border-radius:6px;padding:8px 10px;font-size:13.5px;display:grid;gap:4px}'+
+'.xw .tbl{overflow-x:auto}.xw table{border-collapse:collapse;width:100%;font-size:13.5px}.xw th,.xw td{padding:4px 6px;border-bottom:1px solid var(--line,#e2e8ee);text-align:left}'+
+'.xw th button{all:unset;cursor:pointer;font-weight:700;border-bottom:2px dotted currentColor}.xw .hl{background:#e3f1f1}.xw .mono{font-family:ui-monospace,Consolas,monospace}'+
+'.xw .okc{color:#2b7a4b;font-weight:700}.xw .badc{color:#b83a45;font-weight:700}.xw .chip{display:inline-block;font:600 12px ui-monospace,monospace;padding:1px 8px;border-radius:999px}'+
+'.xw .chip.ok{background:#dcefe3;color:#2b7a4b}.xw .chip.bad{background:#f6dfda;color:#b83a45}.xw .chip.warn{background:#f6ecd5;color:#9a6a12}'+
+'.xw .eqb{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:600 15px ui-monospace,Consolas,monospace}'+
+'.xw .sp{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--line,#d5dee6);border-radius:8px;padding:3px 4px}.xw .sp button{all:unset;cursor:pointer;width:24px;height:24px;text-align:center;border-radius:5px;background:var(--panel-2,#eef3f6);font-weight:700}'+
+'.xw .sp .k{min-width:16px;text-align:center;font-weight:800;color:#0d6868}.xw .tally{display:flex;flex-wrap:wrap;gap:2px;max-width:150px}.xw .tally i{width:9px;height:9px;border-radius:2px;display:inline-block}'+
+'.xw svg{width:100%;max-width:560px;display:block}.xw svg text{font-family:system-ui,sans-serif}';
+document.head.appendChild(css);
+function S(t,a,x){var e=document.createElementNS(NS,t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e}
+function H(t,a,h){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else e.setAttribute(k,a[k])}if(h!=null)e.innerHTML=h;return e}
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function pl(x,d){return x.toFixed(d).replace('.',',')}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=H('button',{type:'button','aria-pressed':String(it[0]===cur)});b.textContent=it[1];b.onclick=function(){cb(it[0])};box.appendChild(b)})}
+var ROM=['0','I','II','III','IV','V','VI','VII','VIII'];function stTxt(v){return v===0?'0':(v>0?'+':MINUS)+ROM[Math.abs(v)]}
+var ENZ={H:2.20,C:2.55,N:3.04,O:3.44,Cl:3.16,F:3.98,S:2.58};
+function EN(s){var L=D.ELEMENTS_118||D.ELEMENTS_54||[];for(var i=0;i<L.length;i++)if(L[i].s===s&&L[i].en!=null)return L[i].en;return ENZ[s]}
+function base(host,cls){host.innerHTML='';host.classList.add('xw');if(cls)host.classList.add(cls);return host}
+
+/* F09 — ładunek / wartościowość / stopień utlenienia */
+var F09={
+ H2O:{n:'H₂O',q:0,at:[['H',2,null,1,1],['O',1,null,2,-2]],u:'Wartościowość i stopień utlenienia mają tu tę samą cyfrę, ale stopień utlenienia ma znak. Ładunku nie ma żaden atom: cząsteczka jest obojętna.'},
+ O2:{n:'O₂',q:0,at:[['O',2,null,2,0]],u:'Pierwiastek: stopień utlenienia 0, choć każdy atom tlenu tworzy dwa wiązania (wartościowość II).'},
+ H2O2:{n:'H₂O₂',q:0,at:[['H',2,null,1,1],['O',2,null,2,-1]],u:'Nadtlenek: tlen ma wartościowość II (H–O–O–H), ale stopień utlenienia −I.'},
+ CH4:{n:'CH₄',q:0,at:[['C',1,null,4,-4],['H',4,null,1,1]],u:'Węgiel: wartościowość IV i stopień utlenienia −IV. Ta sama cyfra, inne znaczenie.'},
+ CO2:{n:'CO₂',q:0,at:[['C',1,null,4,4],['O',2,null,2,-2]],u:'Węgiel +IV: elektrony wiązań przypisujemy bardziej elektroujemnemu tlenowi.'},
+ NaCl:{n:'NaCl',q:0,at:[['Na',1,1,1,1],['Cl',1,-1,1,-1]],u:'Związek jonowy: ładunek jonu, wartościowość i stopień utlenienia pokrywają się liczbowo.'},
+ Fe2O3:{n:'Fe₂O₃',q:0,at:[['Fe',2,3,3,3],['O',3,-2,2,-2]],u:'Kationy Fe³⁺ i aniony O²⁻: suma ładunków 2·(3+) + 3·(2−) = 0.'},
+ SO4:{n:'SO₄²⁻',q:-2,at:[['S',1,null,6,6],['O',4,null,2,-2]],u:'Jon wieloatomowy: ładunek 2− ma cały jon, nie pojedynczy atom. Suma stopni utlenienia równa się ładunkowi jonu.'}};
+var F09D={lad:['Ładunek','Ile ładunków elementarnych ma drobina (jon): ładunek = p − e. Atom w obojętnej cząsteczce nie ma ładunku.',['Czy drobina jest jonem?','Jon prosty: ładunek z położenia w układzie (gr. 1 → 1+, gr. 2 → 2+, gr. 16 → 2−, gr. 17 → 1−).','Jon złożony: ładunek ma cały jon.']],
+ wart:['Wartościowość','Liczba wiązań, które tworzy atom (w związku jonowym: liczba oddanych lub przyjętych elektronów). Bez znaku, cyfrą rzymską.',['Narysuj wzór kreskowy.','Policz kreski wychodzące z atomu (wiązanie podwójne = 2).','Zapisz cyfrą rzymską.']],
+ st:['Stopień utlenienia','Umowny ładunek atomu, gdyby wszystkie wiązania były jonowe: elektrony wiązania oddajemy atomowi bardziej elektroujemnemu.',['Pierwiastek wolny → 0.','F zawsze −I; O zwykle −II (w nadtlenkach −I); H zwykle +I (w wodorkach metali −I).','Suma stopni utlenienia = ładunek drobiny; policz niewiadomą.']]};
+V.define('f09-trzy-liczby-v01',{title:'Ładunek, wartościowość, stopień utlenienia — ta sama drobina, trzy pytania',tag:'MODEL',
+ hint:'Wybierz drobinę i kliknij nagłówek kolumny: definicja, algorytm i kontrola sumy stopni utlenienia.',foot:'rozszerzenia.js §11 (V008, wzorcownia)',
+ build:function(host){base(host);var sel=H('div',{'class':'seg ctl'}),tw=H('div',{'class':'tbl'}),t=H('table'),out=H('div',{'class':'out'});tw.appendChild(t);[sel,tw,out].forEach(function(e){host.appendChild(e)});
+  var st={k:'H2O',col:'st'};
+  function draw(){var d=F09[st.k];clr(t);var hr=H('tr');hr.appendChild(H('th',{text:'Atom'}));
+   [['lad','Ładunek'],['wart','Wartościowość'],['st','Stopień utlenienia']].forEach(function(c){var th=H('th');if(c[0]===st.col)th.className='hl';var b=H('button',{type:'button','aria-pressed':String(c[0]===st.col)});b.textContent=c[1];b.onclick=function(){st.col=c[0];draw()};th.appendChild(b);hr.appendChild(th)});t.appendChild(hr);
+   d.at.forEach(function(a){var tr=H('tr');tr.appendChild(H('td',{'class':'mono',text:a[0]+(a[1]>1?' (×'+a[1]+')':'')}));
+    var lad=a[2]!=null?(Math.abs(a[2])+(a[2]>0?'+':MINUS)):(d.q!==0?'— (cały jon: '+Math.abs(d.q)+MINUS+')':'brak');
+    [['lad',lad],['wart',ROM[a[3]]],['st',stTxt(a[4])]].forEach(function(c){tr.appendChild(H('td',{'class':'mono'+(c[0]===st.col?' hl':''),text:c[1]}))});t.appendChild(tr)});
+   var sum=0,parts=[];d.at.forEach(function(a){sum+=a[1]*a[4];parts.push(a[1]+'·('+stTxt(a[4])+')')});var X=F09D[st.col];
+   out.innerHTML='<b>'+X[0]+'</b><span>'+X[1]+'</span><span>Algorytm: '+X[2].map(function(x,i){return (i+1)+'. '+x}).join(' ')+'</span>'+
+    '<span>Kontrola: '+parts.join(' + ')+' = '+(sum===0?'0':(sum>0?'+':MINUS)+Math.abs(sum))+' = ładunek drobiny '+(sum===d.q?'<span class="okc">✓</span>':'<span class="badc">✗</span>')+'</span><span><b>'+d.n+':</b> '+d.u+'</span>';
+   seg(sel,Object.keys(F09).map(function(k){return [k,F09[k].n]}),st.k,function(k){st.k=k;draw()})}
+  draw()}});
+
+/* F10 — energia dwóch atomów H (krzywa Morse'a, schemat) */
+V.define('f10-energia-h2-v01',{title:'Energia dwóch atomów wodoru — skąd się bierze wiązanie',tag:'WYKRES',
+ hint:'Przesuwaj suwak: atomy zbliżają się, kropka na wykresie pokazuje energię układu. Minimum = długość i energia wiązania H–H.',foot:'krzywa Morse’a dla H₂ (schemat); 74 pm, 436 kJ/mol — do weryfikacji · rozszerzenia.js §11 (V009)',
+ build:function(host){base(host);var id='xw'+(++UID),svg=S('svg',{viewBox:'0 0 360 300',role:'img','aria-label':'Dwa atomy wodoru i wykres energii od odległości jąder'}),ctl=H('div',{'class':'ctl'}),out=H('div',{'class':'out'});
+  ctl.innerHTML='<label class="chk">Odległość jąder</label>';var rng=H('input',{type:'range',min:'30',max:'300',value:'160',style:'flex:1;min-width:140px','aria-label':'Odległość jąder w pikometrach'});ctl.appendChild(rng);[svg,ctl,out].forEach(function(e){host.appendChild(e)});
+  var De=436,re=74,a=0.0194;function E(r){var x=1-Math.exp(-a*(r-re));return De*x*x-De}
+  var X0=46,X1=345,Y0=112,Y1=282,EMAX=300,EMIN=-500;function px(r){return X0+(r-30)/(300-30)*(X1-X0)}function py(e){return Y0+(EMAX-e)/(EMAX-EMIN)*(Y1-Y0)}
+  var defs=S('defs'),g=S('radialGradient',{id:id+'c'});g.appendChild(S('stop',{offset:'0','stop-color':'#5aa6ad','stop-opacity':'.55'}));g.appendChild(S('stop',{offset:'1','stop-color':'#5aa6ad','stop-opacity':'0'}));defs.appendChild(g);
+  var cp=S('clipPath',{id:id+'k'});cp.appendChild(S('rect',{x:X0,y:Y0,width:X1-X0,height:Y1-Y0}));defs.appendChild(cp);
+  var mk=S('marker',{id:id+'a',viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto-start-reverse'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#1a2528'}));defs.appendChild(mk);svg.appendChild(defs);
+  svg.appendChild(S('text',{x:12,y:18,'font-size':'11',fill:'#5a6a6d'},'model: dwa atomy H'));svg.appendChild(S('line',{x1:10,y1:96,x2:350,y2:96,stroke:'#d3dddb'}));
+  for(var e=-400;e<=200;e+=200){svg.appendChild(S('line',{x1:X0,x2:X1,y1:py(e),y2:py(e),stroke:e===0?'#9fb0ad':'#e8efed'}));svg.appendChild(S('text',{x:X0-4,y:py(e)+4,'text-anchor':'end','font-size':'10',fill:'#5a6a6d'},e===0?'0':(e<0?MINUS+(-e):e)))}
+  for(var r=50;r<=300;r+=50){svg.appendChild(S('line',{x1:px(r),x2:px(r),y1:Y1,y2:Y1+4,stroke:'#5a6a6d'}));svg.appendChild(S('text',{x:px(r),y:Y1+15,'text-anchor':'middle','font-size':'10',fill:'#5a6a6d'},r))}
+  svg.appendChild(S('line',{x1:X0,x2:X1,y1:Y1,y2:Y1,stroke:'#5a6a6d'}));svg.appendChild(S('text',{x:X1,y:Y1-4,'text-anchor':'end','font-size':'10',fill:'#5a6a6d'},'r / pm'));svg.appendChild(S('text',{x:X0+4,y:Y0+10,'font-size':'10',fill:'#5a6a6d'},'E / kJ·mol⁻¹'));
+  var dp='';for(var rr=30;rr<=300;rr+=2)dp+=(rr===30?'M':'L')+px(rr).toFixed(1)+','+py(Math.min(E(rr),EMAX+40)).toFixed(1);
+  svg.appendChild(S('path',{d:dp,fill:'none',stroke:'#0d6b70','stroke-width':'2.4','clip-path':'url(#'+id+'k)'}));
+  svg.appendChild(S('line',{x1:px(re),x2:px(re),y1:py(-De),y2:Y1,stroke:'#0d6b70','stroke-dasharray':'3 3'}));svg.appendChild(S('line',{x1:X0,x2:px(re),y1:py(-De),y2:py(-De),stroke:'#0d6b70','stroke-dasharray':'3 3'}));
+  svg.appendChild(S('text',{x:px(re)+6,y:py(-De)+4,'font-size':'10',fill:'#0d6b70','font-weight':'700'},'minimum: 74 pm, '+MINUS+'436'));
+  var dyn=S('g');svg.appendChild(dyn);
+  function ar(x1,x2,y,c,w){dyn.appendChild(S('line',{x1:x1,y1:y,x2:x2,y2:y,stroke:c,'stroke-width':w,'marker-end':'url(#'+id+'a)'}))}
+  function draw(){var r=+rng.value,en=E(r);clr(dyn);var sep=r*0.55,cx=180,y=56,x1=cx-sep/2,x2=cx+sep/2;
+   [x1,x2].forEach(function(x){dyn.appendChild(S('circle',{cx:x,cy:y,r:30,fill:'url(#'+id+'c)'}));dyn.appendChild(S('circle',{cx:x,cy:y,r:4,fill:'#c03d2c'}));dyn.appendChild(S('text',{x:x,y:y+44,'text-anchor':'middle','font-size':'10',fill:'#5a6a6d'},'p⁺'))});
+   var z=r>220?['Daleko','Atomy prawie się nie oddziałują, energia układu ≈ 0.']:r>=85?['Przyciąganie','Elektron każdego atomu przyciąga też drugie jądro: energia spada, atomy zbliżają się.']:r>=63?['Minimum energii','Najtrwalszy układ. Ta odległość to długość wiązania H–H (ok. 74 pm).']:['Za blisko','Dwa dodatnie jądra silnie się odpychają: energia gwałtownie rośnie.'];
+   if(r>=85&&r<=220){ar(x1-38,x1-14,y,'#1a2528',1.6);ar(x2+38,x2+14,y,'#1a2528',1.6)}if(r<63){ar(x1-8,x1-34,y,'#c03d2c',1.8);ar(x2+8,x2+34,y,'#c03d2c',1.8)}
+   dyn.appendChild(S('circle',{cx:px(r),cy:py(Math.min(en,EMAX)),r:6,fill:'#f5c542',stroke:'#1a2528','stroke-width':'1.5'}));
+   var ro=Math.round(en);out.innerHTML='<b>'+z[0]+'</b><span>'+z[1]+'</span><span class="mono">r = '+r+' pm · E ≈ '+(en>=EMAX?'&gt; 300':(ro<0?MINUS+Math.abs(ro):ro))+' kJ/mol</span>'}
+  rng.addEventListener('input',draw);draw()}});
+
+/* F15 — wektory dipola (EN z danych silnika) */
+var c68=0.372,s68=Math.sqrt(1-c68*c68),ct=1/3,stt=Math.sqrt(1-ct*ct);
+function ring(n,cs,sn,len,off){var o=[];for(var i=0;i<n;i++){var f=(off+i*120)*Math.PI/180;o.push([len*sn*Math.cos(f),-len*cs,len*sn*Math.sin(f)])}return o}
+var M15={
+ CO2:{n:'CO₂',c:'C',L:[['O',[1.16,0,0]],['O',[-1.16,0,0]]],lp:[],v:'Wiązania C=O są polarne, ale cząsteczka jest liniowa: dwa wektory mają przeciwne zwroty i znoszą się. Cząsteczka niepolarna.'},
+ H2O:{n:'H₂O',c:'O',L:[['H',[0.96*Math.sin(0.912),-0.96*Math.cos(0.912),0]],['H',[-0.96*Math.sin(0.912),-0.96*Math.cos(0.912),0]]],lp:[[0.32,0.42,0.2],[-0.32,0.42,-0.2]],v:'Wiązania O–H polarne. Kształt kątowy (104,5°): wektory nie znoszą się, suma wskazuje tlen. Cząsteczka polarna.'},
+ NH3:{n:'NH₃',c:'N',L:ring(3,c68,s68,1.01,90).map(function(p){return ['H',p]}),lp:[[0,0.55,0]],v:'Wiązania N–H polarne. Piramida trygonalna (107°): suma wektorów wskazuje azot, po stronie wolnej pary. Cząsteczka polarna.'},
+ CH4:{n:'CH₄',c:'C',L:[['H',[0,1.09,0]]].concat(ring(3,ct,stt,1.09,90).map(function(p){return ['H',p]})),lp:[],v:'Wiązania C–H słabo polarne. Tetraedr: cztery jednakowe wektory dają sumę zero. Cząsteczka niepolarna.'},
+ HCl:{n:'HCl',c:'Cl',L:[['H',[-1.27,0,0]]],lp:[[0.45,0.3,0],[0.45,-0.3,0],[0.55,0,0.3]],v:'Jedno wiązanie H–Cl, polarne. Nie ma drugiego wektora, który mógłby je znieść. Cząsteczka polarna.'}};
+var COL15={H:'#ffffff',C:'#3d4447',N:'#3459c9',O:'#d0402e',Cl:'#3d9a3d'};
+V.define('f15-dipol-v01',{title:'Wektory dipola — polarność wiązań a polarność cząsteczki',tag:'MODEL',
+ hint:'Włączaj warstwy po kolei: elektroujemność, cząstkowe ładunki δ, wektory wiązań i ich suma μ. Kształt (VSEPR) decyduje, czy wektory się znoszą.',foot:'EN wg Paulinga z danych silnika · strzałka wskazuje atom δ− (konwencja szkolna) · rozszerzenia.js §11 (V012)',
+ build:function(host){base(host);var id='xw'+(++UID),sel=H('div',{'class':'seg ctl'}),lb=H('div',{'class':'ctl'}),svg=S('svg',{viewBox:'0 0 360 250',role:'img','aria-label':'Cząsteczka z wektorami dipola'}),out=H('div',{'class':'out'});[sel,lb,svg,out].forEach(function(e){host.appendChild(e)});
+  var lay={en:true,d:true,w:true,s:true},cur='H2O',A=25*Math.PI/180,B=14*Math.PI/180,SC=78,CX=180,CY=120;
+  function P(p){var x=p[0]*Math.cos(A)+p[2]*Math.sin(A),z=-p[0]*Math.sin(A)+p[2]*Math.cos(A),y=p[1]*Math.cos(B)-z*Math.sin(B);return [CX+x*SC,CY-y*SC,z]}
+  function nrm(v){var l=Math.hypot(v[0],v[1],v[2]);return [v[0]/l,v[1]/l,v[2]/l]}
+  var defs=S('defs');['#c03d2c','#1a2528'].forEach(function(c,i){var mk=S('marker',{id:id+'a'+i,viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:i?'5':'6',markerHeight:i?'5':'6',orient:'auto'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:c}));defs.appendChild(mk)});
+  function arrow(x1,y1,x2,y2,c,w,m){svg.appendChild(S('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:c,'stroke-width':w,'marker-end':'url(#'+id+'a'+m+')','stroke-linecap':'round'}));var dx=x2-x1,dy=y2-y1,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l,tx=x1+dx/l*7,ty=y1+dy/l*7;svg.appendChild(S('line',{x1:tx+nx*5,y1:ty+ny*5,x2:tx-nx*5,y2:ty-ny*5,stroke:c,'stroke-width':w}))}
+  function draw(){var m=M15[cur];clr(svg);svg.appendChild(defs);var pc=P([0,0,0]),sum=[0,0,0],g=S('g');svg.appendChild(g);
+   m.L.forEach(function(L){var q=P(L[1]);g.appendChild(S('line',{x1:pc[0],y1:pc[1],x2:q[0],y2:q[1],stroke:'#9aa8a6','stroke-width':'5','stroke-linecap':'round'}))});
+   m.lp.forEach(function(lp){var p=P(lp);g.appendChild(S('circle',{cx:p[0]-4,cy:p[1],r:2.6,fill:'#1a2528'}));g.appendChild(S('circle',{cx:p[0]+4,cy:p[1],r:2.6,fill:'#1a2528'}))});
+   var all=[[m.c,[0,0,0]]].concat(m.L);
+   all.map(function(a,i){return {s:a[0],p:P(a[1]),c:i===0}}).sort(function(a,b){return a.p[2]-b.p[2]}).forEach(function(a){var rad=a.s==='H'?13:19;
+    g.appendChild(S('circle',{cx:a.p[0],cy:a.p[1],r:rad,fill:COL15[a.s],stroke:'#1a2528','stroke-width':'1.2'}));g.appendChild(S('text',{x:a.p[0],y:a.p[1]+4,'text-anchor':'middle','font-size':a.s==='H'?'11':'13','font-weight':'700',fill:a.s==='H'?'#1a2528':'#ffffff'},a.s));
+    if(lay.en)g.appendChild(S('text',{x:a.p[0],y:a.p[1]+rad+12,'text-anchor':'middle','font-size':'10',fill:'#5a6a6d'},pl(EN(a.s),2)));
+    if(lay.d){var o=a.c?m.L[0][0]:m.c,neg=EN(a.s)>EN(o);g.appendChild(S('text',{x:a.p[0]+rad*.75,y:a.p[1]-rad*.75,'font-size':'12','font-weight':'700',fill:neg?'#c03d2c':'#2a62b5'},neg?'δ−':'δ+'))}});
+   var dE=0;m.L.forEach(function(L){var d=nrm(L[1]),de=EN(m.c)-EN(L[0]);dE=Math.abs(de);var v=[d[0]*-de,d[1]*-de,d[2]*-de];sum=[sum[0]+v[0],sum[1]+v[1],sum[2]+v[2]];
+    if(!lay.w)return;var q=P(L[1]),mx=(pc[0]+q[0])/2,my=(pc[1]+q[1])/2,dx=q[0]-pc[0],dy=q[1]-pc[1],l=Math.hypot(dx,dy),ux=dx/l,uy=dy/l,nx=-uy,ny=ux,len=14+34*Math.abs(de),s=de>0?-1:1;
+    arrow(mx-ux*len/2*s+nx*12,my-uy*len/2*s+ny*12,mx+ux*len/2*s+nx*12,my+uy*len/2*s+ny*12,'#1a2528',1.8,1)});
+   var mag=Math.hypot(sum[0],sum[1],sum[2]);
+   if(lay.s){if(mag>.05){var tip=P([sum[0]*.6,sum[1]*.6,sum[2]*.6]),bs=P([-sum[0]*.25,-sum[1]*.25,-sum[2]*.25]),bx=bs[0]+70,tx=tip[0]+70;arrow(bx,bs[1],tx,tip[1],'#c03d2c',3.2,0);svg.appendChild(S('text',{x:tx+6,y:tip[1]+4,'font-size':'13','font-weight':'700',fill:'#c03d2c'},'μ'));svg.appendChild(S('text',{x:bx+6,y:bs[1]+14,'font-size':'10',fill:'#c03d2c'},'suma'))}
+    else svg.appendChild(S('text',{x:300,y:40,'font-size':'13','font-weight':'700',fill:'#2b7a4b','text-anchor':'middle'},'μ = 0'))}
+   out.innerHTML='<b>'+m.n+': cząsteczka '+(mag>.05?'polarna':'niepolarna')+'</b><span>'+m.v+'</span><span class="mono">ΔEN wiązania = '+pl(dE,2)+' · długość wektora sumy (umowna): '+pl(mag,2)+'</span>';
+   seg(sel,Object.keys(M15).map(function(k){return [k,M15[k].n]}),cur,function(k){cur=k;draw()})}
+  [['en','1 · EN'],['d','2 · δ'],['w','3 · wektory wiązań'],['s','4 · suma μ']].forEach(function(x){var l=H('label',{'class':'chk'}),i=H('input',{type:'checkbox'});i.checked=true;i.onchange=function(){lay[x[0]]=i.checked;draw()};l.appendChild(i);l.appendChild(document.createTextNode(x[1]));lb.appendChild(l)});
+  draw()}});
+
+/* F17 — bilans równania: atomy + ładunek */
+var SUBN='₀₁₂₃₄₅₆₇₈₉',SUP={1:'',2:'²',3:'³'};
+function parse(f){var st=[{}],re=/([A-Z][a-z]?|\(|\)|\d+)/g,m,last=null;
+ while((m=re.exec(f))){var t=m[1];
+  if(t==='('){st.push({});last=null}
+  else if(t===')'){last=st.pop();var top=st[st.length-1];for(var k in last)top[k]=(top[k]||0)+last[k];last={grp:last}}
+  else if(/\d/.test(t)){var n=+t,t2=st[st.length-1];if(last&&last.grp){for(var k2 in last.grp)t2[k2]+=last.grp[k2]*(n-1)}else if(last){t2[last.el]+=n-1}last=null}
+  else{var tp=st[st.length-1];tp[t]=(tp[t]||0)+1;last={el:t}}}
+ return st[0]}
+function disp(f,q){var s=f.replace(/\d/g,function(d){return SUBN[+d]});if(q){var a=Math.abs(q);s+=(a>1?SUP[a]:'')+(q>0?'⁺':'⁻')}return s}
+var EQ17=[
+ {n:'wodór + tlen → woda',L:[['H2',0],['O2',0]],R:[['H2O',0]]},{n:'spalanie metanu',L:[['CH4',0],['O2',0]],R:[['CO2',0],['H2O',0]]},
+ {n:'spalanie propanu',L:[['C3H8',0],['O2',0]],R:[['CO2',0],['H2O',0]]},{n:'glin + kwas solny',L:[['Al',0],['HCl',0]],R:[['AlCl3',0],['H2',0]]},
+ {n:'żelazo + tlen → tlenek żelaza(III)',L:[['Fe',0],['O2',0]],R:[['Fe2O3',0]]},{n:'miedź + jony srebra (ładunek!)',L:[['Cu',0],['Ag',1]],R:[['Cu',2],['Ag',0]]},
+ {n:'strącanie wodorotlenku żelaza(III)',L:[['Fe',3],['OH',-1]],R:[['Fe(OH)3',0]]},{n:'siarczan(VI) glinu + wodorotlenek sodu',L:[['Al2(SO4)3',0],['NaOH',0]],R:[['Al(OH)3',0],['Na2SO4',0]]}];
+var ECOL={H:'#8fa3a6',O:'#d0402e',C:'#3d4447',N:'#3459c9',Al:'#a07cc5',Cl:'#3d9a3d',Fe:'#b5651d',Cu:'#c47a3a',Ag:'#9aa0a6',S:'#d6b21e',Na:'#7a5bd6'};
+C.EXT_BILANS=parse;/* parser wzorów dostępny dla innych widoków */
+V.define('f17-bilans-v01',{title:'Bilans równania reakcji — atomy i ładunek',tag:'MODEL',
+ hint:'Zmieniasz tylko współczynniki (wzory są stałe — inny indeks to inna substancja). Tabela liczy atomy każdego pierwiastka i łączny ładunek po obu stronach.',foot:'rozszerzenia.js §11 (V015) · tryb ekspercki: najmniejsze współczynniki do obliczeń',
+ build:function(host){base(host);var ctl=H('div',{'class':'ctl'}),sel=H('select',{'aria-label':'Równanie'}),xl=H('label',{'class':'chk'}),xp=H('input',{type:'checkbox'}),eq=H('div',{'class':'eqb'}),tw=H('div',{'class':'tbl'}),t=H('table'),out=H('div',{'class':'out'});
+  xl.appendChild(xp);xl.appendChild(document.createTextNode(' tryb ekspercki'));ctl.appendChild(sel);ctl.appendChild(xl);tw.appendChild(t);[ctl,eq,tw,out].forEach(function(e){host.appendChild(e)});
+  EQ17.forEach(function(e,i){var o=H('option',{value:i});o.textContent=e.n;sel.appendChild(o)});
+  var cur=0,co=[];function reset(){co=EQ17[cur].L.concat(EQ17[cur].R).map(function(){return 1})}function gcd(a,b){return b?gcd(b,a%b):a}
+  function tally(n,c){var d=H('div',{'class':'tally'});for(var j=0;j<Math.min(n,30);j++){var i=H('i');i.style.background=c;d.appendChild(i)}return d}
+  function qs(q){return q===0?'0':(q>0?'+':MINUS)+Math.abs(q)}
+  function draw(){var e=EQ17[cur],sp=e.L.concat(e.R),nL=e.L.length;clr(eq);
+   sp.forEach(function(s,i){if(i===nL)eq.appendChild(H('span',{text:'→'}));else if(i>0)eq.appendChild(H('span',{text:'+'}));
+    var w=H('span',{'class':'sp'}),m=H('button',{type:'button','aria-label':'zmniejsz współczynnik'},MINUS),k=H('span',{'class':'k',text:String(co[i])}),p=H('button',{type:'button','aria-label':'zwiększ współczynnik'},'+');
+    m.onclick=function(){if(co[i]>1){co[i]--;draw()}};p.onclick=function(){if(co[i]<12){co[i]++;draw()}};w.appendChild(m);w.appendChild(k);w.appendChild(H('span',{text:disp(s[0],s[1])}));w.appendChild(p);eq.appendChild(w)});
+   var Lc={},Rc={},qL=0,qR=0,els=[];sp.forEach(function(s,i){var a=parse(s[0]),tg=i<nL?Lc:Rc;for(var k in a){tg[k]=(tg[k]||0)+a[k]*co[i];if(els.indexOf(k)<0)els.push(k)}if(i<nL)qL+=s[1]*co[i];else qR+=s[1]*co[i]});
+   clr(t);var hr=H('tr');['Pierwiastek','Lewa','','Prawa','',''].forEach(function(x){hr.appendChild(H('th',{text:x}))});t.appendChild(hr);var ok=true;
+   els.forEach(function(el){var l=Lc[el]||0,r=Rc[el]||0,o=l===r;ok=ok&&o;var tr=H('tr');tr.appendChild(H('td',{'class':'mono',text:el}));tr.appendChild(H('td',{'class':'mono',text:String(l)}));var a1=H('td');a1.appendChild(tally(l,ECOL[el]||'#888'));tr.appendChild(a1);
+    tr.appendChild(H('td',{'class':'mono',text:String(r)}));var a2=H('td');a2.appendChild(tally(r,ECOL[el]||'#888'));tr.appendChild(a2);tr.appendChild(H('td',null,o?'<span class="chip ok">OK</span>':'<span class="chip bad">nie</span>'));t.appendChild(tr)});
+   var qok=qL===qR,tq=H('tr');tq.appendChild(H('td',{text:'ładunek'}));tq.appendChild(H('td',{'class':'mono',text:qs(qL)}));tq.appendChild(H('td'));tq.appendChild(H('td',{'class':'mono',text:qs(qR)}));tq.appendChild(H('td'));tq.appendChild(H('td',null,qok?'<span class="chip ok">OK</span>':'<span class="chip bad">nie</span>'));t.appendChild(tq);
+   var g=co.reduce(gcd),tx=sp.map(function(s,i){return (co[i]>1?co[i]+' ':'')+disp(s[0],s[1])}),eqs=tx.slice(0,nL).join(' + ')+' → '+tx.slice(nL).join(' + '),h;
+   if(ok&&qok){h='<b>Równanie uzgodnione</b><span class="mono">'+eqs+'</span>';if(xp.checked)h+=g>1?'<span><span class="chip warn">uwaga</span> Współczynniki można podzielić przez '+g+'. Do obliczeń weź najmniejsze: '+co.map(function(x){return x/g}).join(' : ')+'.</span>':'<span>Stosunek molowy '+co.join(' : ')+' — równanie nadaje się do obliczeń stechiometrycznych.</span>'}
+   else h='<b>Jeszcze nie</b><span>'+(!ok?'Liczba atomów się nie zgadza. ':'')+(!qok?'Łączny ładunek po obu stronach jest różny — sam bilans atomów nie wystarcza. ':'')+'</span><span class="mono">'+eqs+'</span>';out.innerHTML=h}
+  sel.onchange=function(){cur=+sel.value;reset();draw()};xp.onchange=draw;reset();draw()}});
+})();
+
+/* ---------- 12. Osłona canvas: ujemny promień w animacjach (cząstki z malejącym r) rzucał wyjątek — rysujemy wtedy r = 0 ---------- */
+(function(){var P=window.CanvasRenderingContext2D&&CanvasRenderingContext2D.prototype;if(!P||P.arc.__xw)return;var a=P.arc;
+P.arc=function(x,y,r,s,e,cc){return a.call(this,x,y,r>0?r:0,s,e,cc)};P.arc.__xw=1;
+if(P.ellipse){var el=P.ellipse;P.ellipse=function(x,y,rx,ry,ro,s,e,cc){return el.call(this,x,y,rx>0?rx:0,ry>0?ry:0,ro,s,e,cc)}}})();
