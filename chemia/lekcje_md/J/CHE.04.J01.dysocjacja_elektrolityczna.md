@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "F15; N03–N05; R01"
 poglebia: "J02–J04; J06; J07"
 opis: "Pełna lekcja E8: elektrolity i nieelektrolity, zapis dysocjacji kwasów/zasad/soli, mocne i słabe, dysocjacja stopniowa. LO: stopień dysocjacji α."
-stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktury kanonicznej (karta, cele, ściąga, wyjaśnienie, przykłady prowadzone, klinika, ćwiczenia, test, słownik)
+stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktury kanonicznej (karta, cele, ściąga, wyjaśnienie, przykłady prowadzone, klinika, ćwiczenia, test, słownik); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J01 — Dysocjacja elektrolityczna

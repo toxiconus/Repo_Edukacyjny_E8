@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "E02; X06"
 poglebia: "—"
 opis: "Nowa lekcja LO: elektroliza stopionych soli i roztworów, kolejność wydzielania, prawa Faradaya."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # E04 — Elektroliza

@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "J03; J04"
 poglebia: "J12"
 opis: "Nowa lekcja: analiza jakościowa, reakcje charakterystyczne kationów i anionów, projekt doświadczenia."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J11 — Identyfikacja jonów

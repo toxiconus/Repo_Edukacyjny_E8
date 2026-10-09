@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "K02"
 poglebia: "—"
 opis: "Pełna lekcja LO: ciepło właściwe, kalorymetr, ciepło przemian fazowych, wykres ogrzewania, obliczenia bilansu cieplnego."
-stan: W23 — Grok, 2026-10-09; pełna lekcja od zera (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; pełna lekcja od zera (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K03 — Kalorymetria i przemiany fazowe

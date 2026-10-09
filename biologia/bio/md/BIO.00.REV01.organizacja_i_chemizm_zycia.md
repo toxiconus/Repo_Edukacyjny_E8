@@ -63,6 +63,7 @@ stopka: **BIOLOGIA REV01 v1.0** · Organizacja i chemizm życia · 2026
 ## 1 | Poziomy organizacji organizmów [[basic:E8]] {#poziomy}
 
 @viz lancuch {kroki="komórka|podstawowa jednostka > tkanka|komórki o podobnej budowie i funkcji > narząd|kilka tkanek, wspólna funkcja > układ narządów|narządy współpracujące > organizm|całość"} | Od komórki do organizmu | kliknij poziom
+@opis Łańcuch pięciu poziomów połączonych strzałkami: komórka (podstawowa jednostka) → tkanka (komórki o podobnej budowie i funkcji) → narząd (kilka tkanek, wspólna funkcja) → układ narządów (narządy współpracujące) → organizm (całość); kliknięcie poziomu pokazuje objaśnienie. Wniosek: każdy wyższy poziom składa się z elementów niższego, a organizm działa dzięki ich współpracy.
 
 Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narządy**, narządy współtworzą **układy narządów**. Atomy i cząsteczki to materia, z której zbudowane są struktury biologiczne, a nie poziomy organizacji organizmu w tym samym sensie. **Nie każdy organizm ma wszystkie poziomy:** bakteria jest jedną komórką, a mchy nie mają tkanek takich jak rośliny nasienne.
 

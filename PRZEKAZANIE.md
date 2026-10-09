@@ -6,7 +6,7 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - **`claude/che-lekcje` = gałąź zbiorcza.** 2026-10-08 scalone do niej: `claude/wizualizacje-projekty` (folder `wizualizacje-projekty/`), `claude/bio-lekcje` (`biologia/`), wcześniej `claude/chemia-podzial` i `claude/project-thread-71s81b` (zawarte w całości).
 - Pozostałe gałęzie są już w `claude/che-lekcje` — nowe prace zaczynać od niej. Wyjątek: `claude/che-lab-archiwum-v0_57` (osobna historia, archiwum źródeł v0_57; nie scalać).
 - `main` (@ae82cb8) — aktualizuje użytkownik przez PR `claude/che-lekcje` → `main` na github.com (push na `main` = 403).
-- Płytki klon: po `git fetch` hook może fałszywie zgłaszać „unpushed commits” — `git fetch origin claude/che-lekcje:refs/remotes/origin/claude/che-lekcje` i `git branch -u origin/claude/che-lekcje`.
+- Płytki klon: hook fałszywie zgłasza „unpushed commits”, bo klon pobiera tylko `main`. Raz po sklonowaniu: `git config --add remote.origin.fetch '+refs/heads/claude/che-lekcje:refs/remotes/origin/claude/che-lekcje' && git fetch origin && git branch -u origin/claude/che-lekcje`. Repo przeniesione: `https://github.com/toxiconus/Repo_Edukacyjny_E8.git`.
 
 ## Obszary
 | Obszar | Przekazanie | Stan w skrócie |
@@ -28,7 +28,7 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - **CHE nowe (Grok W23/W24):** N07–N08, R01/R02/R06, J07–J12, O09/O10/O14/O21/O24/O25, E01–E06, K01–K11 (K01 W24 ~22 KB, reszta krótsze W23), A01. Wartości Ka/Ksp/E°/Vₘ u Groka oznaczone jako orientacyjne — **bez niezależnej recenzji (W1 do zrobienia)**.
 - **J00–J06 — kolizja:** Grok napisał od nowa i nie zachował materiału W1–W22 (wbrew swojemu RAPORT). Scalenie: lekcja Groka jako treść główna + sekcja „MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22)” bez skracania + notka „SCALENIE — Claude”. Do zrobienia: sprawdzić, czy uwagi W22 są w treści głównej, potem odchudzić.
 - **Spis CHE:** 113 kodów, ○○○ (brak materiału) 18 → 11: zostały A02–A06, P01–P06; RT00–RT10 (A4) też nie ruszone.
-- **Testy:** `narzedzia/sprawdz.js` z CLAUDE.md nie istnieje (jest tylko `chemia/archiwum/che_v0_59/narzedzia/sprawdz.js`) — poprawić odwołanie. BIO: `md2html_bio.py` + `sprawdz_bio.js` OK.
+- **Testy:** odwołanie w CLAUDE.md poprawione (testy: `che.py test`, `sprawdz_bio.js`); chemia 15/15 OK. BIO: `md2html_bio.py` + `sprawdz_bio.js` OK.
 - **Następne kroki:** (a) W1 nowych lekcji chemii Groka; (b) przegląd J00–J06 po scaleniu; (c) A02–A06, P01–P06, RT00–RT10; (d) angielski moduły, polski W2, olimpiada OLI.* (z `ZADANIA.md` — LLM ich nie zrobił); (e) dług `@opis` (42).
 
 ## Sesja 2026-10-09 (08:25–09:15) — paczka W23, grafiki L001, audyty BIO, kolizje CHE
@@ -58,13 +58,13 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - **Polski W1:** poprawione potwierdzone błędy L002–L005; ocena `polski/plany/audyty/W1_POLSKI_ocena_2026-10-09.md` (odrzucone nieaktualne zasady „nie” — reforma 2026). **Decyzja użytkownika otwarta:** korekta scalająca kursu polskiego (moduły wspólne + odsyłacze).
 - **Angielski W1:** poprawki D1/D2/L008/L010; ocena `angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md`.
 - **Polski — priorytet:** szkielety lekcji podstawowych `polski/podstawy/` (G01–G17 części mowy i składnia, S01–S06 środki stylistyczne), generator `narzedzia/szkielety_polski.py`, paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (zawiera tylko puste). G01–G03 wypełnione przez Grok i przejrzane (poprawki opisane na końcu plików). G04–G17 i S01–S06: od Grok przyszły tylko zwarte zarysy (bez ćwiczeń i kluczy) — wstawione jako sekcja „Zarys” (stan CZĘŚCIOWY), paczka nadal je zawiera do pełnego rozwinięcia. **Następny krok:** wypełnić G04–G17 i S01–S06 w innym LLM (po 2–4 lekcje), przejrzeć jak G01–G03, potem W1; potem ewentualnie build HTML dla polskiego (nowy skrypt musi wołać `OPIS.egzekwuj()`).
-- **Znany błąd:** test chemii sporadycznie FAIL `N01_powietrze_i_gazy` (canvas `arc` z ujemnym promieniem) — sprzed tych zmian, do naprawy.
+- ~~Znany błąd: sporadyczny FAIL `N01_powietrze_i_gazy` (canvas `arc`)~~ — naprawione osłoną w `engine/src/lekcja/rozszerzenia.js` (§12); test 15/15 OK 2026-10-09 12:45.
 
 ### Plan na następną sesję (ustalony z użytkownikiem 2026-10-09 04:20)
 **Decyzja użytkownika: nowe lekcje pisać tylko w MD — HTML na razie nie.**
 1. **Polski (priorytet):** Claude sam rozwija `polski/podstawy/` G04–G11 (części mowy), G12–G17 (składnia), S01–S06 (środki stylistyczne) do pełnych sekcji 0–12 jak w G01–G03: konkretne zadania z treścią, kluczem i punktacją CKE, przykłady z lektur obowiązkowych (bez Froda i postaci spoza lektur), pisownia wg reformy 2026, przecinek przed każdym zdaniem podrzędnym, `@opis` pod każdą wizualizacją. Zarys Groka jest w każdym pliku (sekcja „Zarys od Grok”) i surowo w `polski/plany/wypelnienia/`. Po napisaniu: `stan: WYPEŁNIONY — Claude, data; czeka na W1`, wiersz w `WERYFIKACJA.md`.
 2. **Po polskim — md brakujących lekcji innych przedmiotów** (tylko md): angielski — moduły z oceny audytu (`angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md`: słuchanie, czytanie, funkcje językowe, przetwarzanie, wpis na blogu, used to/would, been/gone itd.); chemia — materiały wstępne J01–J06 i alkohole/kwasy/estry do weryfikacji.
-3. Chemia: sporadyczny FAIL testu `N01_powietrze_i_gazy` (canvas `arc` z ujemnym promieniem).
+3. ~~Chemia: FAIL `N01_powietrze_i_gazy`~~ — naprawione (osłona `arc`).
 4. Dług `@opis` (42): N05, FIZ01, R03 itd., biologia L010/REV01.
 5. Otwarte decyzje użytkownika: korekta scalająca kursu polskiego (moduły wspólne + odsyłacze).
 

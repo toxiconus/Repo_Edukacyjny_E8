@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "K04; J06"
 poglebia: "K09; K10"
 opis: "Nowa lekcja LO: reakcje odwracalne, stan równowagi dynamicznej, modele."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K08 — Równowaga dynamiczna

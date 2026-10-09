@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "J01"
 poglebia: "J07; J09; J12"
 opis: "Pełna lekcja E8: odczyn kwasowy/obojętny/zasadowy, skala pH, wskaźniki, zobojętnianie. LO: obliczanie pH mocnych elektrolitów."
-stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktury kanonicznej
+stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktury kanonicznej; W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J02 — Odczyn i pH

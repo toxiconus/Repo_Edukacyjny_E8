@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "X01; X04; J01"
 poglebia: "E02–E06"
 opis: "Nowa lekcja LO: ogniwo Daniella, anoda, katoda, klucz elektrolityczny, schemat ogniwa."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # E01 — Ogniwo galwaniczne

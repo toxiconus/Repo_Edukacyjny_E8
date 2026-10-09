@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "K04"
 poglebia: "K06; K07"
 opis: "Nowa lekcja E8+LO: stężenie, temperatura, rozdrobnienie, katalizator — doświadczenia."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K05 — Czynniki wpływające na szybkość

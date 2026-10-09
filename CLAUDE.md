@@ -14,7 +14,7 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - **Wyjątek:** gdy zadanie wymaga więcej tokenów, by nie stracić jakości, można dla niego ominąć oszczędzanie — ale przed startem zapytaj albo poinformuj jednym zdaniem: „W tym zadaniu nie mogę oszczędzać tokenów na <czym>, bo <powód>.” Tylko ta rzecz, tylko to zadanie.
 - Plików > 50 KB nie czytaj w całości: najpierw `grep -n`, potem fragment (`sed -n a,bp`). Dotyczy zwłaszcza `modules/_anon_001.js`, `modules/che-lab-engine-v001.js`, packów w `dist/` i wygenerowanych HTML.
 - Lekcje edytuje się w MD (`lessons-md/`); HTML robią narzędzia z `chemia/che-modular/tools/` (zero tokenów). Wygenerowanego HTML nie czytaj ani nie poprawiaj ręcznie. `modules/` odtwarza `sh tools/pobierz_moduly.sh`.
-- Wyniki poleceń skracaj (`| tail -3`, `| head`, liczniki zamiast list). Testy jednym poleceniem, pokazuj tylko błędy (`node narzedzia/sprawdz.js`).
+- Wyniki poleceń skracaj (`| tail -3`, `| head`, liczniki zamiast list). Testy jednym poleceniem, pokazuj tylko błędy (chemia: `cd chemia/che-modular && python3 tools/che.py test` — wcześniej raz `che.py init` i `che.py lekcje`; biologia: `node biologia/bio/narzedzia/sprawdz_bio.js` po `md2html_bio.py`).
 - Wiele zmian w jednym pliku: jeden skrypt z `assert s.count(old)==1` zamiast wielu edycji.
 - Bez komentowania kroków w czacie. Odpowiedź końcowa po polsku, 1–4 zdania: co zmienione, wynik testów, następny krok.
 - Pytaj tylko, gdy decyzja naprawdę należy do użytkownika.

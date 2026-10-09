@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "K09; K10"
 poglebia: "—"
 opis: "Nowa lekcja LO: stopień przereagowania, zadania złożone z K."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K11 — Równowaga ilościowa

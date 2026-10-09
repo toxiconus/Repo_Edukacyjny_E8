@@ -5,7 +5,7 @@ poziom: E8
 wymaga: "F03; F15"
 poglebia: "R02; J01"
 opis: "Nowa lekcja E8: budowa i polarność wody, rozpuszczanie, roztwór / zawiesina / koloid, czynniki szybkości rozpuszczania."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # R01 — Woda i roztwory

@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "F16; F17"
 poglebia: "K02; K06; K07"
 opis: "Pełna lekcja E8+LO+olimpiada: egzo- i endoenergetyczne, wykres energetyczny, energia aktywacji, związek z obserwacją, analiza błędów, warstwa konkursowa."
-stan: W24 — Grok, 2026-10-09; pełna przebudowa do standardu 20–30 KB (wykład, analizy, ciekawostki, E8/LO/olimpiada)
+stan: W24 — Grok, 2026-10-09; pełna przebudowa do standardu 20–30 KB (wykład, analizy, ciekawostki, E8/LO/olimpiada); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K01 — Energia reakcji

@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "R04"
 poglebia: "R07"
 opis: "Nowa lekcja LO: objętość molowa (warunki normalne), równanie Clapeyrona, gęstość gazu, obliczenia stechiometryczne z gazami."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # R06 — Gazy: objętość molowa

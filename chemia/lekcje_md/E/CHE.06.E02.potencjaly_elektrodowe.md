@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "E01; X04"
 poglebia: "E03"
 opis: "Nowa lekcja LO: potencjał standardowy, elektroda wodorowa, szereg elektrochemiczny."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # E02 — Potencjały elektrodowe

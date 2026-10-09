@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "E02"
 poglebia: "E06"
 opis: "Nowa lekcja LO: obliczanie SEM, kierunek reakcji, wstęp do równania Nernsta."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # E03 — SEM

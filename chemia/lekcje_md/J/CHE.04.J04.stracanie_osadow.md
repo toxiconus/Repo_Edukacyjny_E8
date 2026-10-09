@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "J01; J03"
 poglebia: "J10; J11"
 opis: "Pełna lekcja E8: tabela rozpuszczalności, przewidywanie osadu, zapis cząsteczkowy i jonowy, barwy typowych osadów."
-stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktury kanonicznej
+stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktury kanonicznej; W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J04 — Strącanie osadów

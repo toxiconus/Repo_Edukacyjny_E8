@@ -5,7 +5,7 @@ poziom: E8
 wymaga: "R01"
 poglebia: "R03; J04; J10"
 opis: "Nowa lekcja E8: rozpuszczalność, zależność od temperatury, krzywe, roztwór nasycony/nienasycony, krystalizacja, odczyt z wykresu."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # R02 — Rozpuszczalność

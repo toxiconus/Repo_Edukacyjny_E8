@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "O04; O08; O12"
 poglebia: "—"
 opis: "Nowa lekcja E8+LO: polimeryzacja i polikondensacja; PE, PVC, PET; tworzywa i środowisko; recykling."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # O21 — Polimery i tworzywa

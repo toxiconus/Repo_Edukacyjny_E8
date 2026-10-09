@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "F04; F05"
 poglebia: "A02–A06"
 opis: "Nowa lekcja LO: skład jądra (REF F04–F05), siły jądrowe, ścieżka stabilności."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # A01 — Jądro atomowe

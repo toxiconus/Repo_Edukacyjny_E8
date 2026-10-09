@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "N02–N07"
 poglebia: "J03; X01"
 opis: "Nowa lekcja: łańcuch pierwiastek → tlenek → wodorotlenek/kwas → sól; reakcje między klasami; przewidywanie produktów."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # N08 — Mapa przemian „co powstanie?”

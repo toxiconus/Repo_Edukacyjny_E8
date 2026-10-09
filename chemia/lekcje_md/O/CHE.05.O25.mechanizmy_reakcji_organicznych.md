@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "O01–O14; O24"
 poglebia: "—"
 opis: "Nowa lekcja LO: substytucja rodnikowa, elektrofilowa, nukleofilowa; addycja; eliminacja; zapis strzałkowy."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # O25 — Mechanizmy reakcji organicznych

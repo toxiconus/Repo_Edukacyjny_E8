@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "O08; O01"
 poglebia: "O11; O25"
 opis: "Nowa lekcja LO: budowa i nazwy aldehydów/ketonów, otrzymywanie z alkoholi, próba Tollensa i Trommera."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # O10 — Aldehydy i ketony

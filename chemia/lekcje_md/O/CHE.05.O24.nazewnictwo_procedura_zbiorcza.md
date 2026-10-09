@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "O01–O14"
 poglebia: "—"
 opis: "Nowa lekcja LO: priorytety grup funkcyjnych, łańcuch główny, lokanty, związki wielofunkcyjne — procedura zbiorcza."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # O24 — Nazewnictwo — procedura zbiorcza

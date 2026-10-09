@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "J01"
 poglebia: "J04; J11"
 opis: "Pełna lekcja E8: równanie cząsteczkowe → pełne jonowe → skrócone; jony obserwatorowe; kiedy reakcja zachodzi (osad, gaz, woda, słaby elektrolit)."
-stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktury kanonicznej
+stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktury kanonicznej; W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J03 — Reakcje jonowe

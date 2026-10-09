@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "J07; N05"
 poglebia: "J09"
 opis: "Nowa lekcja LO: hydroliza kationowa, anionowa, kationowo-anionowa; przewidywanie odczynu roztworu soli; obliczenia (wstęp)."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J08 — Hydroliza soli

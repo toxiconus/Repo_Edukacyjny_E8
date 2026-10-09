@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "O01; J01"
 poglebia: "O18; O25"
 opis: "Nowa lekcja LO: aminy — budowa, zasadowość; amidy; mocznik."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # O14 — Aminy i amidy

@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "J02; R05"
 poglebia: "—"
 opis: "Nowa lekcja LO: procedura i sprzęt miareczkowania alkacymetrycznego, punkt równoważnikowy, wskaźnik, krzywe, obliczenia."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J12 — Miareczkowanie

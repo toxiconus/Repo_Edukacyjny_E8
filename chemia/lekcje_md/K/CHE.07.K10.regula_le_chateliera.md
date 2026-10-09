@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "K08; K09"
 poglebia: "K11"
 opis: "Nowa lekcja LO: wpływ stężenia, ciśnienia, temperatury; zastosowania przemysłowe (synteza amoniaku)."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K10 — Reguła Le Chateliera

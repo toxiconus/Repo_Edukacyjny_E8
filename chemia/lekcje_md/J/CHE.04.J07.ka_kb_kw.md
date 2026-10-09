@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "J06; K09"
 poglebia: "J08; J09"
 opis: "Nowa lekcja LO: stałe dysocjacji Ka, Kb, iloczyn jonowy wody Kw, pKa, prawo Ostwalda, pH słabych elektrolitów."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J07 — Ka, Kb i Kw

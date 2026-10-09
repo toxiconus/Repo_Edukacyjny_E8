@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "X04; E01"
 poglebia: "—"
 opis: "Nowa lekcja E8+LO: korozja chemiczna i elektrochemiczna, czynniki, ochrona (powłoki, protektor)."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # E05 — Korozja

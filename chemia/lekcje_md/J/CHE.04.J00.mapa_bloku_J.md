@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "—"
 poglebia: "J01–J12"
 opis: "Mapa bloku J, ścieżka nauki, test przekrojowy, most do J07+."
-stan: W23 — Grok, 2026-10-09; aktualizacja po pełnej rozbudowie J01–J06
+stan: W23 — Grok, 2026-10-09; aktualizacja po pełnej rozbudowie J01–J06; W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J00 — Mapa bloku J01–J06

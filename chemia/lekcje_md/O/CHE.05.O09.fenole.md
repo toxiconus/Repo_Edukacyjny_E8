@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "O07; O08; J01"
 poglebia: "O25"
 opis: "Nowa lekcja LO: budowa fenolu, kwasowość, reakcje, porównanie z alkoholami."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # O09 — Fenole

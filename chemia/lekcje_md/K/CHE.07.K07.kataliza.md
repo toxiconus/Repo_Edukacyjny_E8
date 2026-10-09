@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "K05; K06"
 poglebia: "—"
 opis: "Nowa lekcja E8+LO: kataliza homo- i heterogeniczna, enzymy, inhibitory, katalizatory w przemyśle i samochodach."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K07 — Kataliza

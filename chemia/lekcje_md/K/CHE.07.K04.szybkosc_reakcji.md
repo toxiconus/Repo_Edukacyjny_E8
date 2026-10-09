@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "R05"
 poglebia: "K05"
 opis: "Nowa lekcja LO: szybkość średnia i chwilowa, pomiar, wykresy stężenie–czas, równanie kinetyczne (wstęp)."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K04 — Szybkość reakcji

@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "K01; K05"
 poglebia: "K07"
 opis: "Nowa lekcja LO: teoria zderzeń, energia aktywacji na wykresie, rozkład energii cząsteczek."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K06 — Zderzenia i energia aktywacji

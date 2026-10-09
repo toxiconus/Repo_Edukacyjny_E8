@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "E03"
 poglebia: "—"
 opis: "Nowa lekcja LO: ogniwo Leclanchégo, akumulator ołowiowy i litowo-jonowy, ogniwo paliwowe."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # E06 — Źródła energii i akumulatory

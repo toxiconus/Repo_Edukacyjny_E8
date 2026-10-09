@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "K01"
 poglebia: "K03"
 opis: "Pełna lekcja LO: ΔH, prawo Hessa, entalpie tworzenia i spalania, energie wiązań — ciągłość z K01 (układ/otoczenie, wykres), bez dublowania."
-stan: W24 — Grok, 2026-10-09; pełna lekcja (inspiracja Khan: bond enthalpy + system/surroundings; ZPE: efekt energetyczny)
+stan: W24 — Grok, 2026-10-09; pełna lekcja (inspiracja Khan: bond enthalpy + system/surroundings; ZPE: efekt energetyczny); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # K02 — Entalpia

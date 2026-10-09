@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "J04; K09"
 poglebia: "J11"
 opis: "Nowa lekcja LO: Ksp, rozpuszczalność molowa, warunek strącania, efekt wspólnego jonu."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J10 — Iloczyn rozpuszczalności Ksp

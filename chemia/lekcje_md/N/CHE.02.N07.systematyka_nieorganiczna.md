@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "N02–N06"
 poglebia: "N08"
 opis: "Nowa lekcja: klasyfikacja związków nieorganicznych (wzór → nazwa → klasa), nazewnictwo systematyczne, procedura rozpoznawania."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # N07 — Systematyka nieorganiczna

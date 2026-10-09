@@ -2154,7 +2154,7 @@ bylo: "K02"
 **Co ma być:**
 - stężenie, temperatura, rozdrobnienie, katalizator — doświadczenia
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K05.czynniki_szybkosci.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K05.czynniki_szybkosci.md` (3 KB)
 
 #### K06 — Zderzenia i energia aktywacji
 

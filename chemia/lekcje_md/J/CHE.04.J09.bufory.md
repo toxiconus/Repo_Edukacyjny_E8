@@ -5,7 +5,7 @@ poziom: LO
 wymaga: "J07; J08"
 poglebia: "J12"
 opis: "Nowa lekcja LO: skład i działanie buforu, bufory w organizmie, pH buforu (Henderson-Hasselbalch — wstęp)."
-stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE)
+stan: W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J09 — Bufory

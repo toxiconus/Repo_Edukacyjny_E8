@@ -198,9 +198,9 @@ Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: le
 
 | kod | lekcja | o czym | rozmiar | plik |
 |---|---|---|---|---|
-| REV01 | Organizacja i chemizm życia — powtórka do konkursu | poziomy organizacji · mikroskop · budowa komórki i organelle · komórka bakterii, roślinna, zwierzęca, grzyba · błona i transport · fotosynteza · oddychanie i fermentacja… | 28 KB | `biologia/bio/md/BIO.00.REV01.organizacja_i_chemizm_zycia.md` |
+| REV01 | Organizacja i chemizm życia — powtórka do konkursu | poziomy organizacji · mikroskop · budowa komórki i organelle · komórka bakterii, roślinna, zwierzęca, grzyba · błona i transport · fotosynteza · oddychanie i fermentacja… | 29 KB | `biologia/bio/md/BIO.00.REV01.organizacja_i_chemizm_zycia.md` |
 | REV02 | Różnorodność życia — powtórka do konkursu | klasyfikacja · wirusy · bakterie · tkanki i grupy roślin (mchy, paprociowe, nagonasienne, okrytonasienne) · grzyby i porosty · tkanki zwierzęce · bezkręgowce · kręgowce… | 49 KB | `biologia/bio/md/BIO.00.REV02.roznorodnosc_zycia.md` |
-| L010 | Genetyka i DNA od zera | cechy dziedziczne, nabyte i wieloczynnikowe; czym jest DNA, gdzie leży, nukleotyd, pary A–T i C–G | 50 KB | `biologia/bio/md/BIO.02.L010.dna_od_zera.md` |
+| L010 | Genetyka i DNA od zera | cechy dziedziczne, nabyte i wieloczynnikowe; czym jest DNA, gdzie leży, nukleotyd, pary A–T i C–G | 54 KB | `biologia/bio/md/BIO.02.L010.dna_od_zera.md` |
 
 ### BIO.01 — komórka
 

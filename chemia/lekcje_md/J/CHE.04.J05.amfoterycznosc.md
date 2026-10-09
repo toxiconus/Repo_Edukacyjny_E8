@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "J01; N04–N05"
 poglebia: "J06; N"
 opis: "Pełna lekcja E8: substancje amfoteryczne (Al(OH)₃, Zn(OH)₂, Al₂O₃, ZnO), reakcje z kwasem i mocną zasadą, odróżnienie od obojętności."
-stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22; poprawka klucza z NOTA (amfoteryczność ≠ obojętność)
+stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22; poprawka klucza z NOTA (amfoteryczność ≠ obojętność); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J05 — Amfoteryczność

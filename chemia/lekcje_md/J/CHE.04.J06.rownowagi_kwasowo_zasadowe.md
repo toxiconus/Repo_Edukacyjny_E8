@@ -5,7 +5,7 @@ poziom: E8+LO
 wymaga: "J01; J02"
 poglebia: "J07; J08; J09"
 opis: "Pełna lekcja E8: równowaga dynamiczna, pary sprzężone, moc kwasu vs stężenie. LO/extra: bufory, wspólny jon (oznaczone)."
-stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22; Ka/pKa/bufory w [[extra]]
+stan: W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22; Ka/pKa/bufory w [[extra]]; W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
 ---
 
 # J06 — Równowagi kwasowo-zasadowe
