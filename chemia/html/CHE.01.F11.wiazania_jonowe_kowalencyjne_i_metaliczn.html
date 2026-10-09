@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>F11 · &quot;Wiązania jonowe, kowalencyjne i metaliczne&quot;</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">F11 &quot;Wiązania jonowe, kowalencyjne i metaliczne&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Chemia, lekcja F11</div><h1>"Wiązania jonowe, kowalencyjne i metaliczne"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">CHE.01F.11-WIĄZANIA — WIĄZANIA JONOWE, KOWALENCYJNE I METALICZNE</a><a class="toc-link" href="#s2">CHE.01F.11-WIĄZANIA — WIĄZANIA JONOWE, KOWALENCYJNE I METALICZNE</a><a class="toc-link" href="#s3">F07 — WARSTWA MASTER v5.0</a><a class="toc-link" href="#s4">F07 — WIĄZANIA CHEMICZNE (Fundamenty)</a></nav></details>
+<section id="s1">
+<div class="part-heading">CHE.01F.11-WIĄZANIA — WIĄZANIA JONOWE, KOWALENCYJNE I METALICZNE</div>
+<h3>KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</h3>
+<ol>
+<li>NaCl jest przykładem modelu jonowego</li>
+<li>H₂O i HCl mają wiązania kowalencyjne spolaryzowane</li>
+<li>H₂ ma wiązanie kowalencyjne niespolaryzowane</li>
+<li>metal ma wiązanie metaliczne i elektrony zdelokalizowane</li>
+<li>sieć jonowa nie jest pojedynczą cząsteczką NaCl</li>
+<li>rodzaj wiązania pomaga przewidywać właściwości</li>
+<li>różnica elektroujemności jest wskazówką, nie absolutną granicą</li>
+<li>wiązanie kowalencyjne oznacza współdzielenie pary elektronowej</li>
+<li>typ wiązania ≠ polarność całej cząsteczki</li>
+<li>HCl(g) i HCl(aq) to różne opisy tego samego związku w różnych układach</li>
+</ol>
+<h4>Diagnoza wejściowa</h4>
+<ol>
+<li>Jaki model wiązania ma NaCl?</li>
+<li>Jaki model ma H₂?</li>
+<li>Czy H₂O jest jonowe?</li>
+<li>Co wyróżnia wiązanie metaliczne?</li>
+<li>Czy NaCl jest pojedynczą cząsteczką?</li>
+<li>Czy typ wiązania mówi od razu o polarności cząsteczki?</li>
+</ol>
+<p><strong>Klucz:</strong> 1 jonowy; 2 kowalencyjny; 3 nie; 4 zdelokalizowane elektrony; 5 nie; 6 nie</p>
+<p><strong>Interpretacja:</strong>
+- <strong>0–2/6</strong> → zacznij od rdzenia lekcji i wróć do przykładów krok po kroku.
+- <strong>3–4/6</strong> → przejdź przez rdzeń, szczególnie punkty z błędami.
+- <strong>5–6/6</strong> → przejdź szybko do ROZUMIENIA / zadań transferowych.</p>
+<p><strong>Pytanie przewodnie:</strong> Jak typ oddziaływania wpływa na strukturę i właściwości?</p>
+<h3>Wiązanie jonowe</h3>
+<p>W uproszczeniu szkolnym opisujemy je jako wynik przyciągania elektrostatycznego kationów i anionów. W krysztale nie mamy izolowanych par „Na⁺Cl⁻”, lecz rozległą sieć jonów.</p>
+<p>Właściwości takie jak kruchość kryształów czy przewodnictwo po stopieniu/rozpuszczeniu wynikają ze struktury i możliwości przemieszczania jonów.</p>
+<h3>Wiązanie kowalencyjne</h3>
+<p>Atomy współdzielą elektrony. Wiązanie może być spolaryzowane, gdy rozkład gęstości elektronowej jest nierówny.</p>
+<p>Ważne rozróżnienie:
+- <strong>wiązanie polarne</strong> nie musi oznaczać
+- <strong>polarnej całej cząsteczki</strong>.</p>
+<h3>Wiązanie metaliczne</h3>
+<p>W modelu szkolnym metal opisujemy jako uporządkowaną sieć dodatnich rdzeni atomowych z elektronami zdelokalizowanymi. Model wyjaśnia m.in. przewodnictwo elektryczne i cieplne.</p>
+<h3>Elektroujemność</h3>
+<p>Elektroujemność opisuje tendencję atomu w związku do przyciągania wspólnej pary elektronowej. Różnica elektroujemności pomaga przewidywać polaryzację wiązania, ale nie jest jedynym kryterium pełnej klasyfikacji.</p>
+<h3>Wizualizacja</h3>
+<p><code>V009v001</code> może dostać tryb porównawczy:
+<code>jonowe | kowalencyjne | metaliczne</code>.</p>
+<p>Każdy tryb pokazuje:
+- strukturę;
+- ruchliwość elektronów/jonów;
+- przewidywane właściwości;
+- typowe przykłady.</p>
+<h3>Klinika</h3>
+<p>Nie klasyfikować wiązania wyłącznie według „metal + niemetal = zawsze idealnie jonowe”. Rzeczywista natura wiązań ma charakter ciągły i zależy od rozkładu gęstości elektronowej.</p>
+<h3>Most</h3>
+<p>Wzór mówi, jakie atomy i w jakiej proporcji występują. Teraz uczymy się zapisywać tę informację poprawnie.</p>
+<hr class="lk-hr"/>
+<h3>DOMKNIĘCIE WYKŁADU MASTER 5.0 — Wiązanie jako model rozkładu elektronów</h3>
+<p><strong>Rdzeń pojęciowy:</strong> Wiązanie chemiczne nie jest jedną „substancją między atomami”, lecz modelem opisującym stabilizujące oddziaływanie elektronów i jąder. W szkole rozróżniamy wiązania jonowe, kowalencyjne i metaliczne, ale rzeczywiste układy tworzą kontinuum.</p>
+<p><strong>Przykład prowadzony:</strong> W NaCl model jonowy opisuje powstanie jonów Na⁺ i Cl⁻ oraz ich przyciąganie. W HCl wiązanie jest kowalencyjne spolaryzowane: para elektronowa jest przesunięta ku bardziej elektroujemnemu Cl.</p>
+<p><strong>Procedura pracy:</strong> 1. nazwij dokładnie obiekt lub proces; 2. wybierz model właściwy dla poziomu zadania; 3. zapisz dane i założenia; 4. wykonaj operację bez zmiany znaczenia wzoru lub równania; 5. sprawdź jednostki, bilans oraz sens chemiczny wyniku.</p>
+<p><strong>Ograniczenie modelu:</strong> wynik szkolny jest poprawny tylko przy zachowaniu założeń podanych w lekcji; nie wolno przenosić reguły na układ, którego model nie obejmuje.</p>
+<p><strong>Kontrola rozumowania:</strong> uczeń powinien umieć powiedzieć nie tylko <em>co</em> otrzymał, ale <em>dlaczego ten model i ta reguła pasują do danych</em>.</p>
+<h4>WARSTWA INTEGRACYJNA MASTER 3.0 —</h4>
+<p><strong>Model:</strong> Wiązanie → model oddziaływania.</p>
+<p><strong>Wyjaśnij teraz:</strong> Wiązanie opisuje sposób stabilizacji układu przez oddziaływania elektronowe.</p>
+<p><strong>Mini-przykład:</strong> HCl ma wiązanie kowalencyjne spolaryzowane.</p>
+<p><strong>Ograniczenie/kontrola:</strong> Podziały jonowe/kowalencyjne/metaliczne są modelami; rzeczywistość ma charakter ciągły.</p>
+<p><strong>Poziom:</strong> E7/E8 → LO podstawowe → LO rozszerzone → pomost akademicki
+<strong>Poprzednia:</strong> · <strong>Następna:</strong> Geometria cząsteczek
+<strong>Plik źródłowy:</strong> CHE.all.v01.00.md (blok L001, sekcja 5.6)</p>
+<hr class="lk-hr"/>
+<h3>JAK PRACOWAĆ Z TĄ LEKCJĄ</h3>
+<ol>
+<li><strong>Nie czytaj biernie.</strong></li>
+<li><strong>Najpierw próbuj, potem patrz na odpowiedź.</strong></li>
+<li><strong>Powtarzaj w odstępach.</strong></li>
+<li><strong>Mów na głos.</strong></li>
+<li><strong>Rysuj.</strong></li>
+<li><strong>Łap moment „aha!".</strong></li>
+</ol>
+<p><strong>Zasada 80/20 tej lekcji:</strong>
+- trzy typy wiązań,
+- rozpoznawanie charakteru wiązania,
+- elektroujemność,
+- związek budowy z właściwościami substancji.</p>
+<h4>Wyjaśnij teraz</h4>
+<p><strong>Wiązanie chemiczne</strong> to oddziaływanie, które utrzymuje atomy lub jony w określonym układzie. W szkolnym modelu wyróżniamy m.in. wiązanie jonowe, kowalencyjne i metaliczne. Reguła „metal + niemetal → zwykle jonowe” jest użyteczną wskazówką, ale nie jest pełną definicją rodzaju wiązania. O rodzaju i stopniu polaryzacji decyduje przede wszystkim sposób rozmieszczenia elektronów i różnica elektroujemności.</p>
+<p><strong>Rozwiń:</strong> w dalszej części — elektroujemność i polaryzacja.
+<strong>Zajrzyj wyżej:</strong> LO rozszerzone — charakter wiązania jako kontinuum, struktury Lewisa i modele orbitalne.</p>
+<hr class="lk-hr"/>
+<h3>0. WYKŁAD KANONICZNY — RDZEŃ: DLACZEGO ATOMY TWORZĄ WIĄZANIA</h3>
+<p>Wiązanie chemiczne opisuje sposób, w jaki atomy lub jony są utrzymywane w układzie o określonej energii. W szkolnym modelu rozróżniamy przede wszystkim wiązanie jonowe, kowalencyjne i metaliczne.</p>
+<ul>
+<li><strong>Jonowe:</strong> w modelu szkolnym opisujemy przyciąganie przeciwnie naładowanych jonów, np. <code>Na⁺</code> i <code>Cl⁻</code> w <code>NaCl</code>.</li>
+<li><strong>Kowalencyjne:</strong> atomy współdzielą parę lub pary elektronowe, np. w <code>H₂</code> albo <code>H₂O</code>.</li>
+<li><strong>Metaliczne:</strong> elektrony walencyjne są opisywane jako zdelokalizowane w strukturze metalu.</li>
+</ul>
+<p><strong>Elektroujemność</strong> jest miarą tendencji atomu do przyciągania elektronów w wiązaniu. Różnica elektroujemności pomaga przewidywać polaryzację wiązania, ale granice między „jonowym” i „kowalencyjnym” nie są ostrą linią.</p>
+<p><strong>Przykład:</strong> w <code>H–Cl</code> para wiążąca jest przesunięta w stronę bardziej elektroujemnego chloru, więc wiązanie jest spolaryzowane. Nie oznacza to automatycznie, że mamy dwa swobodne jony <code>H⁺</code> i <code>Cl⁻</code> w każdej cząsteczce HCl.</p>
+<p><strong>Procedura:</strong> rozpoznaj składniki → oceń typ modelu wiązania → sprawdź elektroujemność i polaryzację → dopiero potem przewiduj właściwości.</p>
+<p><strong>Granica modelu:</strong> reguła „metal + niemetal = jonowe” jest heurystyką szkolną, a nie pełną definicją.</p>
+<p><strong>Rozwiń:</strong> dalsze sekcje . <strong>Zajrzyj wyżej:</strong> rozwija wpływ rozmieszczenia elektronów na geometrię i polarność cząsteczki.</p>
+<h3>WARSTWOWANIE LEKCJI</h3>
+<p>Każde pojęcie omawiamy najpierw w zakresie potrzebnym na bieżącym poziomie. Jeżeli pełniejsze wyjaśnienie należy do wyższego poziomu, uczeń dostaje krótkie objaśnienie tutaj oraz odnośnik do rozwinięcia. Odnośnik nie zastępuje definicji.</p>
+<ul>
+<li><strong>E7/E8 — RDZEŃ:</strong> trzeba umieć zastosować.</li>
+<li><strong>LO PODSTAWOWE:</strong> trzeba szerzej rozumieć zależności.</li>
+<li><strong>LO ROZSZERZONE:</strong> trzeba znać mechanizm i wyjątki.</li>
+<li><strong>POMOST AKADEMICKI:</strong> można wejść w pełniejszy model.</li>
+</ul>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;## POZIOMY (STAŁE)&#10;&#10;| Poziom | Znaczenie |&#10;|--------|-----------|&#10;| **E7/E8 — RDZEŃ** | pojęcia i procedury konieczne na tym etapie |&#10;| **LO PODSTAWOWE** | pełniejsze zastosowania i zależności |&#10;| **LO ROZSZERZONE** | mechanizmy, wyjątki i formalizm |&#10;| **POMOST AKADEMICKI** | głębszy model i ograniczenia uproszczeń |&#10;&#10;---&#10;&#10;## CO WARTO WIEDZIEĆ WCZEŚNIEJ (KOMPAS)&#10;&#10;Z :&#10;- atom, jon (kation, anion).&#10;&#10;Z :&#10;- układ okresowy, elektroujemność.&#10;&#10;Z :&#10;- wzory chemiczne.&#10;&#10;---&#10;&#10;## ODNIESIENIA W TEJ LEKCJI&#10;&#10;**Wyjaśnij teraz:** najpierw poznaj definicję i prostą regułę potrzebną do wykonania bieżącego zadania.&#10;&#10;**Rozwiń:** wykorzystaj dalsze sekcje tej lekcji, gdy potrzebujesz pełniejszej procedury i przykładów.&#10;&#10;**Zajrzyj wyżej:** LO rozszerzone i pomost akademicki rozwijają mechanizm, wyjątki oraz ograniczenia modelu.&#10;&#10;---&#10;&#10;## 1. CEL LEKCJI&#10;&#10;Po tej lekcji uczeń:&#10;&#10;- **definiuje** wiązanie chemiczne,&#10;- **rozróżnia** wiązanie jonowe, kowalencyjne i metaliczne,&#10;- **stosuje** regułę: metal + niemetal = jonowe; niemetal + niemetal = kowalencyjne,&#10;- **rozumie** rolę elektroujemności,&#10;- **rozpoznaje** typ wiązania na podstawie wzoru,&#10;- (ambitnie) **rozumie** wiązanie kowalencyjne spolaryzowane i niespolaryzowane,&#10;- (zaawansowanie) **zna** wiązanie koordynacyjne (donorowo-akceptorowe).&#10;&#10;---&#10;&#10;## 2. PYTANIE PRZEWODNIE&#10;&#10;**Dlaczego atomy łączą się w związki — i dlaczego NaCl zachowuje się inaczej niż H₂O?**&#10;&#10;---&#10;&#10;## 3. MAPA POJĘĆ TEJ LEKCJI&#10;</code></pre>
+<p>WIĄZANIA CHEMICZNE
+│
+├── JONOWE
+│ ├── metal + niemetal
+│ ├── przekazanie elektronów
+│ └── przykłady: NaCl, MgO, CaF₂
+│
+├── KOWALENCYJNE
+│ ├── niemetal + niemetal
+│ ├── uwspólnienie elektronów
+│ ├── niespolaryzowane (H₂, Cl₂)
+│ ├── spolaryzowane (H₂O, HCl)
+│ └── przykłady: H₂O, CO₂, CH₄
+│
+└── METALICZNE
+├── metal + metal
+├── morze elektronów
+└── przykłady: Fe, Cu, Al</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;## 4. DIAGNOZA STARTOWA&#10;&#10;1. Co to wiązanie chemiczne?&#10;2. Jakie znasz typy wiązań?&#10;3. Jaki typ wiązania w NaCl?&#10;4. Jaki typ wiązania w H₂O?&#10;5. Co to elektroujemność?&#10;&#10;**Odpowiedzi:**&#10;1. Oddziaływanie łączące atomy w związki.&#10;2. Jonowe, kowalencyjne, metaliczne.&#10;3. Jonowe.&#10;4. Kowalencyjne (spolaryzowane).&#10;5. Zdolność przyciągania elektronów.&#10;&#10;---&#10;&#10;## 5. ŚCIĄGA — WIĄZANIA CHEMICZNE&#10;&#10;### 5.1. Definicja&#10;&#10;**Wiązanie chemiczne** — trwałe oddziaływanie między atomami, które łączy je w cząsteczki lub sieci krystaliczne.&#10;&#10;**Reguła oktetu (uproszczenie szkolne):** atomy dążą do uzyskania 8 elektronów walencyjnych (lub 2 — wodór, hel) — konfiguracji najbliższego gazu szlachetnego.&#10;&#10;**Uwaga:** reguła oktetu ma wyjątki (BeH₂, BF₃ — niedobór; PCl₅, SF₆ — rozszerzony oktet).&#10;&#10;### 5.2. Wiązanie jonowe&#10;&#10;**Definicja:** wiązanie powstające w wyniku przekazania elektronów z atomu metalu do atomu niemetalu. Powstałe jony (kation i anion) przyciągają się elektrostatycznie.&#10;&#10;**Kiedy:** metal + niemetal (z dużą różnicą elektroujemności).&#10;&#10;**Przykłady:**&#10;- NaCl — Na⁺ + Cl⁻,&#10;- MgO — Mg²⁺ + O²⁻,&#10;- CaF₂ — Ca²⁺ + 2 F⁻,&#10;- KBr — K⁺ + Br⁻.&#10;&#10;**Właściwości:**&#10;- sieć krystaliczna (nie pojedyncze cząsteczki),&#10;- wysokie temperatury topnienia i wrzenia ,&#10;- przewodzą prąd po stopieniu lub w roztworze (jony),&#10;- rozpuszczalne w wodzie (większość),&#10;- twarde, ale kruche (przesunięcie warstw powoduje odpychanie jonów) .&#10;&#10;**Energia sieci krystalicznej:** Zależy od ładunków jonów i ich promieni. Im wyższe ładunki i mniejsze promienie, tym wyższa energia sieci i wyższa temperatura topnienia . Np. CaO (ładunki +2/−2) ma znacznie wyższą temperaturę topnienia niż NaF (ładunki +1/−1) .&#10;&#10;### 5.3. Wiązanie kowalencyjne&#10;&#10;**Definicja:** wiązanie powstające przez uwspólnienie pary elektronowej między dwoma atomami.&#10;&#10;**Kiedy:** niemetal + niemetal.&#10;&#10;**Dwa typy:**&#10;- **niespolaryzowane** — te same atomy (H₂, Cl₂, O₂, N₂),&#10;- **spolaryzowane** — różne niemetale (HCl, H₂O, NH₃).&#10;&#10;**Przykłady:**&#10;- H₂ — H–H,&#10;- H₂O — H–O–H,&#10;- CO₂ — O=C=O,&#10;- CH₄ — tetraedryczny.&#10;&#10;**Właściwości:**&#10;- cząsteczki (zwykle),&#10;- niższe temperatury topnienia i wrzenia (niż jonowe),&#10;- nie przewodzą prądu (wyjątki: HCl(aq)),&#10;- rozpuszczalność różna (H₂O — tak; CO₂ — słabo).&#10;&#10;**Wiązanie podwójne i potrójne:**&#10;- podwójne: O=C=O,&#10;- potrójne: N≡N, H–C≡C–H.&#10;&#10;### 5.4. Wiązanie metaliczne&#10;&#10;**Definicja:** wiązanie w metalach, gdzie dodatnie jony metalu są zanurzone w „morzu elektronów&quot; (elektrony zdelokalizowane).&#10;&#10;**Kiedy:** metal + metal.&#10;&#10;**Przykłady:** Fe, Cu, Al, Na, Mg.&#10;&#10;**Właściwości:**&#10;- przewodzą prąd (elektrony swobodne),&#10;- przewodzą ciepło,&#10;- kowalne i ciągliwe,&#10;- połysk metaliczny,&#10;- wysokie temperatury topnienia (zmienna).&#10;&#10;### 5.5. Elektroujemność a typ wiązania&#10;&#10;**Elektroujemność (χ)** — zdolność atomu do przyciągania elektronów w wiązaniu.&#10;&#10;**Największa elektroujemność:** F (3,98).&#10;&#10;**Różnica elektroujemności Δχ:**&#10;&#10;| Δχ | Typ wiązania |&#10;|----|--------------|&#10;| 0 | kowalencyjne niespolaryzowane |&#10;| 0,4–1,7 | kowalencyjne spolaryzowane |&#10;| &gt; 1,7 | jonowe |&#10;&#10;**Uwaga:** te progi są orientacyjne. W szkole stosujemy prostszą regułę: metal + niemetal = jonowe; niemetal + niemetal = kowalencyjne.&#10;&#10;**Przykłady:**&#10;- H₂ (Δχ = 0) → niespolaryzowane,&#10;- HCl (Δχ ≈ 0,96) → spolaryzowane,&#10;- NaCl (Δχ ≈ 2,23) → jonowe.&#10;&#10;### 5.6. Algorytm rozpoznawania wiązań&#10;&#10;1. Oba pierwiastki to metale → **wiązanie metaliczne**.&#10;2. Jeden metal, drugi niemetal → **wiązanie jonowe**.&#10;3. Oba niemetale → **wiązanie kowalencyjne**.&#10;4. Niemetale różne → zwykle **kowalencyjne spolaryzowane** (HCl, H₂O).&#10;5. Niemetale takie same → **kowalencyjne niespolaryzowane** (H₂, Cl₂).&#10;&#10;**Reguła logiczna:** metal oddaje, niemetal bierze; niemetale się dzielą; metale tworzą morze elektronów.&#10;&#10;### 5.7. Właściwości substancji — porównanie&#10;&#10;| Cecha | Jonowe (NaCl) | Kowalencyjne (H₂O) | Metaliczne (Fe) |&#10;|-------|---------------|---------------------|------------------|&#10;| Budowa | sieć jonów | cząsteczki | sieć jonów + elektrony |&#10;| T. topnienia | wysoka | niska | wysoka |&#10;| T. wrzenia | wysoka | niska | wysoka |&#10;| Przewodzenie | po stopieniu/rozpuszczeniu | nie (wyjątki) | tak |&#10;| Rozpuszczalność w H₂O | wysoka | różna | nie |&#10;| Kowalność | kruche | — | kowalne |&#10;&#10;### 5.8. Wiązanie koordynacyjne (rozszerzenie)&#10;&#10;**Wiązanie koordynacyjne (donorowo-akceptorowe)** — szczególny typ wiązania kowalencyjnego: jedna strona dostarcza parę elektronową, druga puste miejsce.&#10;&#10;**Przykład:** NH₄⁺ — azot (wolna para) + H⁺ (puste miejsce).&#10;&#10;Po utworzeniu nie da się odróżnić od zwykłego wiązania kowalencyjnego.&#10;&#10;### 5.9. Reguła oktetu — wyjątki&#10;&#10;- H, He — dublet (2 e⁻),&#10;- Li, Be — mniej niż oktet,&#10;- B — 6 e⁻ (BF₃),&#10;- P, S, Cl — rozszerzony oktet (PCl₅, SF₆).&#10;&#10;---&#10;&#10;## 6. DOŚWIADCZENIA MODELOWE&#10;&#10;### Doświadczenie 1: Przewodzenie prądu przez roztwory&#10;&#10;**Problem:** Czy różne roztwory przewodzą prąd?&#10;**Hipoteza:** Roztwór soli przewodzi, roztwór cukru nie.&#10;**Sprzęt:** roztwór NaCl, roztwór cukru, bateria, żarówka, elektrody.&#10;**Obserwacja:** żarówka świeci dla NaCl, nie świeci dla cukru.&#10;**Wniosek:** Roztwór NaCl zawiera jony, roztwór cukru — cząsteczki.&#10;**BHP:** ostrożnie z elektrycznością.&#10;&#10;### Doświadczenie 2: Rozpuszczanie soli w wodzie&#10;&#10;**Problem:** Jak zachowuje się NaCl w wodzie?&#10;**Hipoteza:** Sole jonowe rozpuszczają się, tworząc jony.&#10;**Sprzęt:** NaCl, woda, przewodnik.&#10;**Obserwacja:** roztwór przewodzi prąd.&#10;**Wniosek:** NaCl dysocjuje na Na⁺ i Cl⁻.&#10;&#10;**Obserwacja ≠ wniosek:**&#10;- Obserwacja: żarówka świeci.&#10;- Wniosek: w roztworze są jony.&#10;&#10;---&#10;&#10;## 7. KLINIKA BŁĘDÓW (KLINIKA 2.0)&#10;&#10;### Tabela błędów&#10;&#10;| Błąd | Poprawnie | Dlaczego |&#10;|------|-----------|----------|&#10;| „Wszystkie wiązania są jonowe&quot; | są też kowalencyjne i metaliczne | różne typy zależnie od pierwiastków |&#10;| „H₂O to wiązanie jonowe&quot; | H₂O to kowalencyjne spolaryzowane | dwa niemetale |&#10;| „NaCl to cząsteczka&quot; | NaCl to sieć jonowa | w sieci, nie pojedyncza cząsteczka |&#10;| „HCl to wiązanie jonowe&quot; | HCl to kowalencyjne spolaryzowane | dwa niemetale; w wodzie dysocjuje |&#10;| „Kowalencyjne zawsze nie przewodzi&quot; | HCl(aq) przewodzi | jony w roztworze |&#10;| „Metale nie tworzą wiązań&quot; | tworzą wiązanie metaliczne | morze elektronów |&#10;&#10;### Klinika 2.0 — przykład 1&#10;&#10;**Błąd:** „H₂O to wiązanie jonowe.&quot;&#10;&#10;- **Znajdź:** zła klasyfikacja.&#10;- **Popraw:** H₂O — kowalencyjne spolaryzowane.&#10;- **Reguła:** niemetal + niemetal = kowalencyjne.&#10;- **Dlaczego:** H i O to niemetale — wiązanie kowalencyjne; polaryzacja wynika z różnicy elektroujemności.&#10;- **Zadanie podobne:** Jaki typ wiązania w HCl?&#10;- **Pułapka:** „ma ładunki cząstkowe, więc jonowe&quot; — nie.&#10;&#10;### Klinika 2.0 — przykład 2&#10;&#10;**Błąd:** „NaCl to cząsteczka.&quot;&#10;&#10;- **Znajdź:** zła budowa.&#10;- **Popraw:** NaCl to sieć jonowa.&#10;- **Reguła:** wiązanie jonowe = sieć jonów, nie pojedyncza cząsteczka.&#10;- **Dlaczego:** każdy Na⁺ przyciąga wszystkie sąsiednie Cl⁻.&#10;- **Zadanie podobne:** Jaka jest budowa MgO?&#10;- **Pułapka:** „NaCl ma wzór, więc to cząsteczka&quot; — nie.&#10;&#10;### Klinika 2.0 — przykład 3&#10;&#10;**Błąd:** „HCl to wiązanie jonowe, bo w wodzie przewodzi prąd.&quot;&#10;&#10;- **Znajdź:** mylenie wiązania z właściwościami roztworu.&#10;- **Popraw:** HCl (gaz) to kowalencyjne spolaryzowane; w wodzie dysocjuje na jony.&#10;- **Reguła:** typ wiązania zależy od pierwiastków, nie od właściwości roztworu.&#10;- **Dlaczego:** HCl to dwa niemetale — wiązanie kowalencyjne. W wodzie powstają jony H⁺ i Cl⁻.&#10;- **Zadanie podobne:** Czy HCl(g) przewodzi prąd?&#10;- **Pułapka:** „przewodzi prąd = jonowe&quot; — nie.&#10;&#10;---&#10;&#10;## 8. ĆWICZENIA&#10;&#10;### 8.1. Mini-check (5 pytań)&#10;&#10;1. Jakie znasz typy wiązań?&#10;2. Kiedy wiązanie jonowe?&#10;3. Kiedy wiązanie kowalencyjne?&#10;4. Co to wiązanie metaliczne?&#10;5. Jaki typ wiązania w MgO?&#10;&#10;### 8.2. Ćwiczenie prowadzone&#10;&#10;**Dane:** Związek CaCl₂.&#10;&#10;**Krok 1.** Pierwiastki: Ca (metal), Cl (niemetal).&#10;**Krok 2.** Reguła: metal + niemetal = jonowe.&#10;**Krok 3.** Wniosek: CaCl₂ — wiązanie jonowe.&#10;**Krok 4.** Budowa: sieć jonowa Ca²⁺ i Cl⁻.&#10;&#10;**Spróbuj sam:** CH₄, Fe, KCl.&#10;&#10;### 8.3. Ćwiczenia samodzielne&#10;&#10;**A. Podstawa**&#10;&#10;1. Jaki typ wiązania: NaCl, H₂O, Fe, CaO, CH₄, Cl₂?&#10;2. Kiedy wiązanie jonowe?&#10;3. Kiedy wiązanie kowalencyjne?&#10;4. Kiedy wiązanie metaliczne?&#10;5. Który pierwiastek ma największą elektroujemność?&#10;&#10;**B. Trening**&#10;&#10;6. Wyjaśnij, dlaczego NaCl ma wysoką temperaturę topnienia, a H₂O niską.&#10;7. Dlaczego HCl przewodzi prąd w wodzie, a cukier nie?&#10;8. Jaka jest różnica między kowalencyjnym spolaryzowanym a niespolaryzowanym?&#10;9. Podaj 3 właściwości metali wynikające z wiązania metalicznego.&#10;10. Popraw: „NaCl to cząsteczka&quot;.&#10;&#10;**C. Ambitne**&#10;&#10;11. Wyjaśnij, dlaczego woda jest polarna, a CO₂ nie.&#10;12. Co to wiązanie koordynacyjne? Podaj przykład.&#10;13. Dlaczego Al₂O₃ ma wysoką temperaturę topnienia?&#10;14. Co to sieć kowalencyjna? Podaj 2 przykłady.&#10;15. Dlaczego metale są kowalne?&#10;&#10;**D. Zaawansowane**&#10;&#10;16. Reguła oktetu — jakie ma wyjątki?&#10;17. Co to moment dipolowy?&#10;18. Porównaj wiązanie jonowe i kowalencyjne pod względem energii.&#10;19. Dlaczego grafit przewodzi prąd, a diament nie?&#10;20. Co to wiązanie wodorowe? Jaki ma wpływ na właściwości wody?&#10;&#10;### 8.4. Interleaving (przeplatany)&#10;&#10;1. Co to Z?&#10;2. Jaki typ wiązania w NaCl?&#10;3. Zapisz wzór tlenku glinu.&#10;4. Stopień utlenienia S w H₂SO₄?&#10;5. Dlaczego woda jest polarna?&#10;&#10;---&#10;&#10;## 9. ODPOWIEDZI&#10;&#10;### Mini-check&#10;&#10;1. Jonowe, kowalencyjne, metaliczne.&#10;2. Metal + niemetal.&#10;3. Niemetal + niemetal.&#10;4. Metal + metal (morze elektronów).&#10;5. Jonowe.&#10;&#10;### Ćwiczenia A&#10;&#10;1. NaCl — jonowe; H₂O — kowalencyjne spolaryzowane; Fe — metaliczne; CaO — jonowe; CH₄ — kowalencyjne (niespolaryzowane); Cl₂ — kowalencyjne niespolaryzowane.&#10;2. Metal + niemetal.&#10;3. Niemetal + niemetal.&#10;4. Metal + metal.&#10;5. Fluor.&#10;&#10;### Ćwiczenia B&#10;&#10;6. NaCl — sieć jonowa (silne oddziaływania); H₂O — słabe oddziaływania międzycząsteczkowe.&#10;7. HCl dysocjuje na jony; cukier nie.&#10;8. Niespolaryzowane — te same atomy (H₂); spolaryzowane — różne niemetale (HCl).&#10;9. Przewodzenie prądu, przewodzenie ciepła, kowalność.&#10;10. NaCl to sieć jonowa, nie cząsteczka.&#10;&#10;### Ćwiczenia C&#10;&#10;11. Woda — kątowa, polaryzacje się sumują; CO₂ — liniowa, polaryzacje się znoszą.&#10;12. NH₄⁺ (donor: NH₃, akceptor: H⁺).&#10;13. Al₂O₃ — sieć jonowa z silnymi oddziaływaniami.&#10;14. Diament (C), SiO₂ (kwarc).&#10;15. Morze elektronów pozwala przesuwać warstwy.&#10;&#10;### Ćwiczenia D&#10;&#10;16. H, He (dublet); Li, Be (mniej niż oktet); B (6 e⁻); P, S (rozszerzony oktet).&#10;17. Miara polaryzacji cząsteczki.&#10;18. Jonowe zwykle silniejsze niż kowalencyjne.&#10;19. Grafit — warstwy, elektrony zdelokalizowane; diament — tetraedryczna sieć, brak swobodnych elektronów.&#10;20. Wiązanie wodorowe — słabe oddziaływanie między cząsteczkami; wpływa na temperaturę wrzenia wody.&#10;&#10;---&#10;&#10;## 10. FISZKI — tylko jeśli potrzebne&#10;&#10;| Pytanie | Odpowiedź |&#10;|---------|-----------|&#10;| Co to wiązanie chemiczne? | Oddziaływanie łączące atomy |&#10;| Typy wiązań? | Jonowe, kowalencyjne, metaliczne |&#10;| Kiedy jonowe? | Metal + niemetal |&#10;| Kiedy kowalencyjne? | Niemetal + niemetal |&#10;| Kiedy metaliczne? | Metal + metal |&#10;| Typ w NaCl? | jonowe |&#10;| Typ w H₂O? | kowalencyjne spolaryzowane |&#10;| Typ w Fe? | metaliczne |&#10;| Typ w Cl₂? | kowalencyjne niespolaryzowane |&#10;| Typ w HCl? | kowalencyjne spolaryzowane |&#10;| Typ w CH₄? | kowalencyjne |&#10;| Typ w MgO? | jonowe |&#10;| Reguła oktetu? | Dążenie do 8 e⁻ |&#10;| Wyjątki oktetu? | H (dublet), BF₃, PCl₅, SF₆ |&#10;| Największa elektroujemność? | F |&#10;| Δχ &gt; 1,7 → ? | jonowe |&#10;| Δχ 0,4–1,7 → ? | kowalencyjne spolaryzowane |&#10;| Δχ &lt; 0,4 → ? | kowalencyjne niespolaryzowane |&#10;| Przewodzenie NaCl? | po stopieniu/rozpuszczeniu |&#10;| Przewodzenie Fe? | tak (elektrony swobodne) |&#10;| Przewodzenie H₂O? | nie |&#10;| Budowa NaCl? | sieć jonowa |&#10;| Budowa H₂O? | cząsteczki |&#10;| Budowa Fe? | sieć jonów + morze e⁻ |&#10;| Wiązanie koordynacyjne — przykład? | NH₄⁺ |&#10;&#10;---&#10;&#10;## 11. SPRAWDZENIE DIAGNOSTYCZNE&#10;&#10;1. Jakie są typy wiązań? Kiedy który?&#10;2. Jaki typ wiązania: NaCl, H₂O, Fe, CaO, CH₄, Cl₂?&#10;3. Dlaczego NaCl ma wysoką temperaturę topnienia, a H₂O niską?&#10;4. Co to elektroujemność? Który pierwiastek ma największą?&#10;5. Popraw: „NaCl to cząsteczka&quot;.&#10;6. (extra) Co to wiązanie koordynacyjne?&#10;7. (extra) Co to sieć kowalencyjna? Podaj przykład.&#10;8. (extra) Porównaj wiązanie jonowe i kowalencyjne.&#10;&#10;---&#10;&#10;## 12. CHECKLISTA&#10;&#10;| Temat | Musisz umieć |&#10;|-------|--------------|&#10;| Typy wiązań | jonowe, kowalencyjne, metaliczne |&#10;| Reguła | metal + niemetal = jonowe; niemetal + niemetal = kowalencyjne |&#10;| Elektroujemność | definicja, trendy, wpływ na typ |&#10;| Kowalencyjne spolaryzowane | różnica, przykłady |&#10;| Właściwości | przewodzenie, T. topnienia, budowa |&#10;| Koordynacyjne | definicja, przykład (ambitnie) |&#10;&#10;---&#10;&#10;## 13. SYSTEM POWTÓREK&#10;&#10;| Kiedy | Co powtarzać | Jak długo |&#10;|-------|--------------|-----------|&#10;| Po lekcji | Całą lekcję przeczytaj raz | 20 min |&#10;| Po 1 dniu | Fiszki + ściąga | 10 min |&#10;| Po 3 dniach | Ćwiczenia A + B | 15 min |&#10;| Po 1 tygodniu | Test końcowy + mapa myśli | 20 min |&#10;&#10;---&#10;&#10;## 14. MAPA MYŚLI&#10;</code></pre>
+<p>WIĄZANIA CHEMICZNE
+├── JONOWE
+│ ├── metal + niemetal
+│ ├── przekazanie e⁻
+│ ├── sieć jonowa
+│ └── NaCl, MgO, CaF₂
+├── KOWALENCYJNE
+│ ├── niemetal + niemetal
+│ ├── uwspólnienie e⁻
+│ ├── niespolaryzowane (H₂, Cl₂)
+│ ├── spolaryzowane (HCl, H₂O)
+│ └── cząsteczki / sieci (SiO₂, diament)
+└── METALICZNE
+├── metal + metal
+├── morze elektronów
+└── Fe, Cu, Al</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;## 15. CO DALEJ?&#10;&#10;** — Geometria cząsteczek (VSEPR):** kształt cząsteczek.&#10;&#10;**N01 — Tlenki:** pierwsza grupa związków nieorganicznych.&#10;&#10;---&#10;&#10;## 16. SŁOWNIK&#10;&#10;| Pojęcie | Definicja |&#10;|---------|-----------|&#10;| Wiązanie chemiczne | Oddziaływanie łączące atomy. |&#10;| Wiązanie jonowe | Przekazanie elektronów; sieć jonów. |&#10;| Wiązanie kowalencyjne | Uwspólnienie elektronów. |&#10;| Wiązanie metaliczne | Morze elektronów. |&#10;| Elektroujemność | Zdolność przyciągania elektronów. |&#10;| Kowalencyjne spolaryzowane | Różne niemetale; polaryzacja. |&#10;| Kowalencyjne niespolaryzowane | Te same niemetale. |&#10;| Wiązanie koordynacyjne | Donor + akceptor pary elektronowej. |&#10;| Sieć kowalencyjna | Cząsteczki połączone kowalencyjnie (diament, SiO₂). |&#10;&#10;---&#10;&#10;## 17. DODATEK C — FORMAT DOŚWIADCZENIA&#10;</code></pre>
+<p>Problem → Hipoteza → Sprzęt → Obserwacja → Wniosek → Równanie → BHP</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;## 18. DODATEK D — FORMAT KLINIKI&#10;</code></pre>
+<p>Błąd → Co nie tak? → Popraw → Reguła → Dlaczego? → Zadanie podobne → Pułapka</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;## 19. DODATEK E — WARSTWA EXTRA&#10;&#10;### E.1. Wiązanie wodorowe&#10;&#10;Słabe oddziaływanie między cząsteczkami, gdy H związany z elektroujemnym atomem (O, N, F) przyciąga wolne pary elektronowe innego elektroujemnego atomu.&#10;&#10;**Wpływ na właściwości wody:** wysoka temperatura wrzenia, lód pływa (mniejsza gęstość).&#10;&#10;### E.2. Energia wiązania (kJ/mol)&#10;&#10;| Wiązanie | Energia |&#10;|----------|---------|&#10;| H–H | 436 |&#10;| Cl–Cl | 243 |&#10;| C–C | 348 |&#10;| C=C | 614 |&#10;| C≡C | 839 |&#10;| N≡N | 946 |&#10;| O=O | 498 |&#10;&#10;### E.3. Moment dipolowy&#10;&#10;- CO₂ — liniowy, μ = 0 (polaryzacje się znoszą),&#10;- H₂O — kątowy, μ = 1,85 D (polaryzacje się sumują),&#10;- NH₃ — piramidalny, μ = 1,47 D,&#10;- CCl₄ — tetraedryczny, μ = 0 (symetria).&#10;&#10;### E.4. Most do L013 (Zaawansowana)&#10;&#10;Orbitale molekularne, hybrydyzacja, rezonans.&#10;&#10;---&#10;&#10;## 20. DEFINICJE JEDNYM ZDANIEM&#10;&#10;| Pojęcie | Definicja |&#10;|---------|-----------|&#10;| Wiązanie chemiczne | Oddziaływanie łączące atomy. |&#10;| Wiązanie jonowe | Przekazanie elektronów i przyciąganie jonów. |&#10;| Wiązanie kowalencyjne | Uwspólnienie pary elektronowej. |&#10;| Wiązanie metaliczne | Morze elektronów w metalu. |&#10;| Elektroujemność | Zdolność atomu do przyciągania elektronów. |&#10;&#10;---&#10;&#10;## 21. 10 ZASAD SUPERNAUKI&#10;&#10;1. **Najpierw próbuj, potem czytaj.**&#10;2. **Mów na głos.**&#10;3. **Rysuj.**&#10;4. **Powtarzaj w odstępach.**&#10;5. **Mieszaj tematy.**&#10;6. **Testuj się.**&#10;7. **Tłumacz komuś.**&#10;8. **Łap moment „aha!&quot;.**&#10;9. **Śpij.**&#10;10. **Bądź ciekawy.**&#10;&#10;---&#10;&#10;## 22. SZYBKA ŚCIĄGA NA JEDNEJ STRONIE (DO WYDRUKU)&#10;</code></pre>
+<p>TYPY WIĄZAŃ:
+JONOWE: metal + niemetal → sieć jonów
+KOWALENCYJNE: niemetal + niemetal → cząsteczki
+METALICZNE: metal + metal → morze elektronów</p>
+<p>PRZYKŁADY:
+NaCl — jonowe
+H₂O — kowalencyjne spolaryzowane
+Fe — metaliczne
+Cl₂ — kowalencyjne niespolaryzowane
+HCl — kowalencyjne spolaryzowane</p>
+<p>ELEKTROUJEMNOŚĆ:
+F największa (3,98)
+Rośnie w prawo i w górę
+Δχ > 1,7 → jonowe
+Δχ 0,4–1,7 → kowalencyjne spolaryzowane
+Δχ &lt; 0,4 → kowalencyjne niespolaryzowane</p>
+<p>WŁAŚCIWOŚCI:
+Jonowe: sieć, wysoka T. topnienia, przewodzi po stopieniu
+Kowalencyjne: cząsteczki, niska T. topnienia, nie przewodzi
+Metaliczne: morze elektronów, przewodzi, kowalne</p>
+<p>PUŁAPKI:
+- H₂O to nie jonowe
+- NaCl to sieć, nie cząsteczka
+- HCl(g) nie przewodzi — HCl(aq) tak
+- przewodzenie ≠ typ wiązania</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;## 23. STATUS LEKCJI&#10;&#10;- **Wersja 1.1** (2026-09-27).&#10;- **Nowa numeracja:** .&#10;- **Następna lekcja:** Geometria cząsteczek (VSEPR).&#10;&#10;---&#10;&#10;**Koniec MASTER v1.1**&#10;&#10;---&#10;&#10;&lt;!-- ŹRÓDŁO: kanon CHE.core.md, WARSTWA MASTER v5.0 dla (w. 10373–10473) --&gt;&#10;&#10;&#10;---&#10;&#10;---&#10;&#10;## WARSTWA v0.2x — dopisane do F11 (nowe względem v16)&#10;</code></pre>
+<p>kod: F11
+tytul: "Wiązania jonowe, kowalencyjne i metaliczne"
+wymaga: "F06; F08; F09; F10"
+poglebia: "F12–F15; P03–P06"
+poziomy: "E8; LO-P; LO-R"
+granice: "elastyczne; kontrolowane nakładanie dozwolone"</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;## 1. Cel i zakres&#10;&#10;Porównaj modele wiązania jonowego, kowalencyjnego i metalicznego. Elektroujemność pomaga oceniać polaryzację, ale nie wyznacza ostrej granicy typów wiązań. Model wiązania należy łączyć z właściwościami substancji.&#10;&#10;---&#10;&#10;&#10;---&#10;&#10;# MATERIAŁ Z ARCHIWUM — do redakcji (akapity, których nie ma w treści głównej)&#10;&#10;## z: MASTER v15.0&#10;&#10;# CHE.01F.11-WIĄZANIA — WIĄZANIA JONOWE, KOWALENCYJNE I METALICZNE&#10;&#10;## KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć&#10;&#10;**Dominująca umiejętność:** Typy wiązań chemicznych.&#10;**Poziomy:** E8 — rdzeń · ROZUMIENIE — wyjaśniam mechanizm · AMBITNE — łączę i uzasadniam · AKADEMICKI — znam granice modelu.&#10;&#10;1. wiązanie jonowe wiąże się z przyciąganiem jonów.&#10;2. kowalencyjne wiązanie wynika ze współdzielenia elektronów.&#10;3. metaliczne wiązanie opisuje elektrony zdelokalizowane.&#10;4. typ wiązania ≠ rząd wiązania.&#10;5. typ wiązania ≠ polarność.&#10;6. sieć jonowa nie jest zbiorem cząsteczek.&#10;7. sieć kowalencyjna ma rozległą strukturę.&#10;8. metale przewodzą dzięki ruchliwym elektronom.&#10;9. różnice elektroujemności są wskazówką, nie absolutną granicą.&#10;10. model trzeba dobrać do substancji.&#10;&#10;### Diagnoza wejściowa&#10;&#10;Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Typy wiązań chemicznych” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.&#10;&#10;## WARSTWOWANIE LEKCJI&#10;&#10;PUŁAPKI:&#10;- H₂O to nie jonowe&#10;- NaCl to sieć, nie cząsteczka&#10;- HCl(g) nie przewodzi — HCl(aq) tak&#10;- przewodzenie ≠ typ wiązania</code></pre>
+<hr class="lk-hr"/>
+<h3>23. STATUS LEKCJI</h3>
+<ul>
+<li><strong>Wersja 1.1</strong> (2026-09-27).</li>
+<li><strong>Nowa numeracja:</strong> .</li>
+<li><strong>Następna lekcja:</strong> Geometria cząsteczek (VSEPR).</li>
+</ul>
+<hr class="lk-hr"/>
+<p><strong>Koniec MASTER v1.1</strong></p>
+<hr class="lk-hr"/>
+<!-- ŹRÓDŁO: kanon CHE.core.md, WARSTWA MASTER v5.0 dla (w. 10373–10473) -->
+<hr class="lk-hr"/>
+<h3>WARSTWA ULEPSZENIA — WIĄZANIE JAKO MODEL ROZKŁADU ELEKTRONÓW</h3>
+<h4>Jonowe</h4>
+<p>Opisuje przyciąganie elektrostatyczne między przeciwnoimiennymi jonami w sieci; nie należy rysować pojedynczej cząsteczki NaCl jako pełnego obrazu kryształu jonowego.</p>
+<h4>Kowalencyjne</h4>
+<p>Para elektronowa jest współdzielona między atomami. W zależności od różnicy elektroujemności wiązanie może mieć większy lub mniejszy udział jonowy.</p>
+<h4>Metaliczne</h4>
+<p>W modelu metalu elektrony walencyjne są zdelokalizowane w strukturze wielu atomów, co pomaga wyjaśnić przewodnictwo i kowalność.</p>
+<h4>Kontrola modelu</h4>
+<p>Wizualizacja powinna rozróżniać <strong>typ wiązania, rząd wiązania, polarność oraz geometrię</strong>. To cztery różne informacje.</p>
+<h3>TEST JEDNOKROTNEGO WYBORU</h3>
+<p><strong>Który opis najlepiej pasuje do metalu?</strong> A. wyłącznie izolowane cząsteczki; B. sieć z ruchliwymi/zdelokalizowanymi elektronami; C. wyłącznie aniony; D. zawsze wiązania wodorowe. <strong>Odp.: B.</strong></p>
+<h3>SŁOWNIK</h3>
+<p><strong>Wiązanie jonowe</strong> — oddziaływanie elektrostatyczne w układzie jonów. <strong>Wiązanie kowalencyjne</strong> — współdzielenie par elektronowych. <strong>Wiązanie metaliczne</strong> — model zdelokalizowanych elektronów w sieci metalu. <strong>Rząd wiązania</strong> — liczba współdzielonych par w prostym zapisie Lewisa, nie tożsama z typem wiązania.</p>
+<h3>z: MASTER v14.0</h3>
+</section>
+<section id="s2">
+<div class="part-heading">CHE.01F.11-WIĄZANIA — WIĄZANIA JONOWE, KOWALENCYJNE I METALICZNE</div>
+<h3>WARSTWOWANIE LEKCJI</h3>
+<p>PUŁAPKI:
+- H₂O to nie jonowe
+- NaCl to sieć, nie cząsteczka
+- HCl(g) nie przewodzi — HCl(aq) tak
+- przewodzenie ≠ typ wiązania</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;## 23. STATUS LEKCJI&#10;&#10;- **Wersja 1.1** (2026-09-27).&#10;- **Nowa numeracja:** .&#10;- **Następna lekcja:** Geometria cząsteczek (VSEPR).&#10;&#10;---&#10;&#10;**Koniec MASTER v1.1**&#10;&#10;---&#10;&#10;&lt;!-- ŹRÓDŁO: kanon CHE.core.md, WARSTWA MASTER v5.0 dla (w. 10373–10473) --&gt;&#10;&#10;&#10;---&#10;&#10;&#10;&#10;## WARSTWA ULEPSZENIA — WIĄZANIE JAKO MODEL ROZKŁADU ELEKTRONÓW&#10;&#10;### Jonowe&#10;Opisuje przyciąganie elektrostatyczne między przeciwnoimiennymi jonami w sieci; nie należy rysować pojedynczej cząsteczki NaCl jako pełnego obrazu kryształu jonowego.&#10;&#10;### Kowalencyjne&#10;Para elektronowa jest współdzielona między atomami. W zależności od różnicy elektroujemności wiązanie może mieć większy lub mniejszy udział jonowy.&#10;&#10;### Metaliczne&#10;W modelu metalu elektrony walencyjne są zdelokalizowane w strukturze wielu atomów, co pomaga wyjaśnić przewodnictwo i kowalność.&#10;&#10;### Kontrola modelu&#10;Wizualizacja powinna rozróżniać **typ wiązania, rząd wiązania, polarność oraz geometrię**. To cztery różne informacje.&#10;&#10;&#10;&#10;## z: stary kanon F00–F09 (v4.1/v5.0)&#10;&#10;# F07 — WIĄZANIA CHEMICZNE (Fundamenty)&#10;&#10;## DOMKNIĘCIE WYKŁADU MASTER 5.0 — Wiązanie jako model rozkładu elektronów&#10;&#10;### WARSTWA INTEGRACYJNA MASTER 3.0 — F07&#10;&#10;**Wersja:** 1.3 · 2026-09-28&#10;**Poziom:** E7/E8 → LO podstawowe → LO rozszerzone → pomost akademicki&#10;**Poprzednia:** F06 · **Następna:** F08 Geometria cząsteczek&#10;**Plik źródłowy:** CHE.all.v01.00.md (blok L001, sekcja 5.6)&#10;&#10;## JAK PRACOWAĆ Z TĄ LEKCJĄ&#10;&#10;**Rozwiń:** w dalszej części F07 — elektroujemność i polaryzacja.&#10;**Zajrzyj wyżej:** LO rozszerzone — charakter wiązania jako kontinuum, struktury Lewisa i modele orbitalne.&#10;&#10;## 0. WYKŁAD KANONICZNY — RDZEŃ: DLACZEGO ATOMY TWORZĄ WIĄZANIA&#10;&#10;**Rozwiń:** dalsze sekcje F07. **Zajrzyj wyżej:** F08 rozwija wpływ rozmieszczenia elektronów na geometrię i polarność cząsteczki.&#10;&#10;## WARSTWOWANIE LEKCJI&#10;&#10;- **E7/E8 — RDZEŃ:** trzeba umieć zastosować.&#10;- **LO PODSTAWOWE:** trzeba szerzej rozumieć zależności.&#10;- **LO ROZSZERZONE:** trzeba znać mechanizm i wyjątki.&#10;- **POMOST AKADEMICKI:** można wejść w pełniejszy model.</code></pre>
+<hr class="lk-hr"/>
+<h3>POZIOMY (STAŁE)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Poziom</th><th>Znaczenie</th></tr></thead>
+<tbody>
+<tr><td><strong>E7/E8 — RDZEŃ</strong></td><td>pojęcia i procedury konieczne na tym etapie</td></tr>
+<tr><td><strong>LO PODSTAWOWE</strong></td><td>pełniejsze zastosowania i zależności</td></tr>
+<tr><td><strong>LO ROZSZERZONE</strong></td><td>mechanizmy, wyjątki i formalizm</td></tr>
+<tr><td><strong>POMOST AKADEMICKI</strong></td><td>głębszy model i ograniczenia uproszczeń</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>CO WARTO WIEDZIEĆ WCZEŚNIEJ (KOMPAS)</h3>
+<p>Z F02:
+- atom, jon (kation, anion).</p>
+<p>Z F03:
+- układ okresowy, elektroujemność.</p>
+<p>Z F06:
+- wzory chemiczne.</p>
+<hr class="lk-hr"/>
+<h3>ODNIESIENIA W TEJ LEKCJI</h3>
+<p><strong>Wyjaśnij teraz:</strong> najpierw poznaj definicję i prostą regułę potrzebną do wykonania bieżącego zadania.</p>
+<p><strong>Rozwiń:</strong> wykorzystaj dalsze sekcje tej lekcji, gdy potrzebujesz pełniejszej procedury i przykładów.</p>
+<p><strong>Zajrzyj wyżej:</strong> LO rozszerzone i pomost akademicki rozwijają mechanizm, wyjątki oraz ograniczenia modelu.</p>
+<hr class="lk-hr"/>
+<h3>1. CEL LEKCJI</h3>
+<p>Po tej lekcji uczeń:</p>
+<ul>
+<li><strong>definiuje</strong> wiązanie chemiczne,</li>
+<li><strong>rozróżnia</strong> wiązanie jonowe, kowalencyjne i metaliczne,</li>
+<li><strong>stosuje</strong> regułę: metal + niemetal = jonowe; niemetal + niemetal = kowalencyjne,</li>
+<li><strong>rozumie</strong> rolę elektroujemności,</li>
+<li><strong>rozpoznaje</strong> typ wiązania na podstawie wzoru,</li>
+<li>(ambitnie) <strong>rozumie</strong> wiązanie kowalencyjne spolaryzowane i niespolaryzowane,</li>
+<li>(zaawansowanie) <strong>zna</strong> wiązanie koordynacyjne (donorowo-akceptorowe).</li>
+</ul>
+<hr class="lk-hr"/>
+<h3>2. PYTANIE PRZEWODNIE</h3>
+<p><strong>Dlaczego atomy łączą się w związki — i dlaczego NaCl zachowuje się inaczej niż H₂O?</strong></p>
+<hr class="lk-hr"/>
+<h3>3. MAPA POJĘĆ TEJ LEKCJI</h3>
+<pre class="lk-pre" data-jezyk="tekst"><code>WIĄZANIA CHEMICZNE&#10;│&#10;├── JONOWE&#10;│   ├── metal + niemetal&#10;│   ├── przekazanie elektronów&#10;│   └── przykłady: NaCl, MgO, CaF₂&#10;│&#10;├── KOWALENCYJNE&#10;│   ├── niemetal + niemetal&#10;│   ├── uwspólnienie elektronów&#10;│   ├── niespolaryzowane (H₂, Cl₂)&#10;│   ├── spolaryzowane (H₂O, HCl)&#10;│   └── przykłady: H₂O, CO₂, CH₄&#10;│&#10;└── METALICZNE&#10;    ├── metal + metal&#10;    ├── morze elektronów&#10;    └── przykłady: Fe, Cu, Al</code></pre>
+<hr class="lk-hr"/>
+<h3>4. DIAGNOZA STARTOWA</h3>
+<ol>
+<li>Co to wiązanie chemiczne?</li>
+<li>Jakie znasz typy wiązań?</li>
+<li>Jaki typ wiązania w NaCl?</li>
+<li>Jaki typ wiązania w H₂O?</li>
+<li>Co to elektroujemność?</li>
+</ol>
+<p><strong>Odpowiedzi:</strong>
+1. Oddziaływanie łączące atomy w związki.
+2. Jonowe, kowalencyjne, metaliczne.
+3. Jonowe.
+4. Kowalencyjne (spolaryzowane).
+5. Zdolność przyciągania elektronów.</p>
+<hr class="lk-hr"/>
+<h3>5. ŚCIĄGA — WIĄZANIA CHEMICZNE</h3>
+<h4>5.1. Definicja</h4>
+<p><strong>Wiązanie chemiczne</strong> — trwałe oddziaływanie między atomami, które łączy je w cząsteczki lub sieci krystaliczne.</p>
+<p><strong>Reguła oktetu (uproszczenie szkolne):</strong> atomy dążą do uzyskania 8 elektronów walencyjnych (lub 2 — wodór, hel) — konfiguracji najbliższego gazu szlachetnego.</p>
+<p><strong>Uwaga:</strong> reguła oktetu ma wyjątki (BeH₂, BF₃ — niedobór; PCl₅, SF₆ — rozszerzony oktet).</p>
+<h4>5.2. Wiązanie jonowe</h4>
+<p><strong>Definicja:</strong> wiązanie powstające w wyniku przekazania elektronów z atomu metalu do atomu niemetalu. Powstałe jony (kation i anion) przyciągają się elektrostatycznie.</p>
+<p><strong>Kiedy:</strong> metal + niemetal (z dużą różnicą elektroujemności).</p>
+<p><strong>Przykłady:</strong>
+- NaCl — Na⁺ + Cl⁻,
+- MgO — Mg²⁺ + O²⁻,
+- CaF₂ — Ca²⁺ + 2 F⁻,
+- KBr — K⁺ + Br⁻.</p>
+<p><strong>Właściwości:</strong>
+- sieć krystaliczna (nie pojedyncze cząsteczki),
+- wysokie temperatury topnienia i wrzenia ,
+- przewodzą prąd po stopieniu lub w roztworze (jony),
+- rozpuszczalne w wodzie (większość),
+- twarde, ale kruche (przesunięcie warstw powoduje odpychanie jonów) .</p>
+<p><strong>Energia sieci krystalicznej:</strong> Zależy od ładunków jonów i ich promieni. Im wyższe ładunki i mniejsze promienie, tym wyższa energia sieci i wyższa temperatura topnienia . Np. CaO (ładunki +2/−2) ma znacznie wyższą temperaturę topnienia niż NaF (ładunki +1/−1) .</p>
+<h4>5.3. Wiązanie kowalencyjne</h4>
+<p><strong>Definicja:</strong> wiązanie powstające przez uwspólnienie pary elektronowej między dwoma atomami.</p>
+<p><strong>Kiedy:</strong> niemetal + niemetal.</p>
+<p><strong>Dwa typy:</strong>
+- <strong>niespolaryzowane</strong> — te same atomy (H₂, Cl₂, O₂, N₂),
+- <strong>spolaryzowane</strong> — różne niemetale (HCl, H₂O, NH₃).</p>
+<p><strong>Przykłady:</strong>
+- H₂ — H–H,
+- H₂O — H–O–H,
+- CO₂ — O=C=O,
+- CH₄ — tetraedryczny.</p>
+<p><strong>Właściwości:</strong>
+- cząsteczki (zwykle),
+- niższe temperatury topnienia i wrzenia (niż jonowe),
+- nie przewodzą prądu (wyjątki: HCl(aq)),
+- rozpuszczalność różna (H₂O — tak; CO₂ — słabo).</p>
+<p><strong>Wiązanie podwójne i potrójne:</strong>
+- podwójne: O=C=O,
+- potrójne: N≡N, H–C≡C–H.</p>
+<h4>5.4. Wiązanie metaliczne</h4>
+<p><strong>Definicja:</strong> wiązanie w metalach, gdzie dodatnie jony metalu są zanurzone w „morzu elektronów" (elektrony zdelokalizowane).</p>
+<p><strong>Kiedy:</strong> metal + metal.</p>
+<p><strong>Przykłady:</strong> Fe, Cu, Al, Na, Mg.</p>
+<p><strong>Właściwości:</strong>
+- przewodzą prąd (elektrony swobodne),
+- przewodzą ciepło,
+- kowalne i ciągliwe,
+- połysk metaliczny,
+- wysokie temperatury topnienia (zmienna).</p>
+<h4>5.5. Elektroujemność a typ wiązania</h4>
+<p><strong>Elektroujemność (χ)</strong> — zdolność atomu do przyciągania elektronów w wiązaniu.</p>
+<p><strong>Największa elektroujemność:</strong> F (3,98).</p>
+<p><strong>Różnica elektroujemności Δχ:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Δχ</th><th>Typ wiązania</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>kowalencyjne niespolaryzowane</td></tr>
+<tr><td>0,4–1,7</td><td>kowalencyjne spolaryzowane</td></tr>
+<tr><td>> 1,7</td><td>jonowe</td></tr>
+</tbody></table></div>
+<p><strong>Uwaga:</strong> te progi są orientacyjne. W szkole stosujemy prostszą regułę: metal + niemetal = jonowe; niemetal + niemetal = kowalencyjne.</p>
+<p><strong>Przykłady:</strong>
+- H₂ (Δχ = 0) → niespolaryzowane,
+- HCl (Δχ ≈ 0,96) → spolaryzowane,
+- NaCl (Δχ ≈ 2,23) → jonowe.</p>
+<h4>5.6. Algorytm rozpoznawania wiązań</h4>
+<ol>
+<li>Oba pierwiastki to metale → <strong>wiązanie metaliczne</strong>.</li>
+<li>Jeden metal, drugi niemetal → <strong>wiązanie jonowe</strong>.</li>
+<li>Oba niemetale → <strong>wiązanie kowalencyjne</strong>.</li>
+<li>Niemetale różne → zwykle <strong>kowalencyjne spolaryzowane</strong> (HCl, H₂O).</li>
+<li>Niemetale takie same → <strong>kowalencyjne niespolaryzowane</strong> (H₂, Cl₂).</li>
+</ol>
+<p><strong>Reguła logiczna:</strong> metal oddaje, niemetal bierze; niemetale się dzielą; metale tworzą morze elektronów.</p>
+<h4>5.7. Właściwości substancji — porównanie</h4>
+<div class="table-wrap"><table>
+<thead><tr><th>Cecha</th><th>Jonowe (NaCl)</th><th>Kowalencyjne (H₂O)</th><th>Metaliczne (Fe)</th></tr></thead>
+<tbody>
+<tr><td>Budowa</td><td>sieć jonów</td><td>cząsteczki</td><td>sieć jonów + elektrony</td></tr>
+<tr><td>T. topnienia</td><td>wysoka</td><td>niska</td><td>wysoka</td></tr>
+<tr><td>T. wrzenia</td><td>wysoka</td><td>niska</td><td>wysoka</td></tr>
+<tr><td>Przewodzenie</td><td>po stopieniu/rozpuszczeniu</td><td>nie (wyjątki)</td><td>tak</td></tr>
+<tr><td>Rozpuszczalność w H₂O</td><td>wysoka</td><td>różna</td><td>nie</td></tr>
+<tr><td>Kowalność</td><td>kruche</td><td>—</td><td>kowalne</td></tr>
+</tbody></table></div>
+<h4>5.8. Wiązanie koordynacyjne (rozszerzenie)</h4>
+<p><strong>Wiązanie koordynacyjne (donorowo-akceptorowe)</strong> — szczególny typ wiązania kowalencyjnego: jedna strona dostarcza parę elektronową, druga puste miejsce.</p>
+<p><strong>Przykład:</strong> NH₄⁺ — azot (wolna para) + H⁺ (puste miejsce).</p>
+<p>Po utworzeniu nie da się odróżnić od zwykłego wiązania kowalencyjnego.</p>
+<h4>5.9. Reguła oktetu — wyjątki</h4>
+<ul>
+<li>H, He — dublet (2 e⁻),</li>
+<li>Li, Be — mniej niż oktet,</li>
+<li>B — 6 e⁻ (BF₃),</li>
+<li>P, S, Cl — rozszerzony oktet (PCl₅, SF₆).</li>
+</ul>
+<hr class="lk-hr"/>
+<h3>6. DOŚWIADCZENIA MODELOWE</h3>
+<h4>Doświadczenie 1: Przewodzenie prądu przez roztwory</h4>
+<p><strong>Problem:</strong> Czy różne roztwory przewodzą prąd?
+<strong>Hipoteza:</strong> Roztwór soli przewodzi, roztwór cukru nie.
+<strong>Sprzęt:</strong> roztwór NaCl, roztwór cukru, bateria, żarówka, elektrody.
+<strong>Obserwacja:</strong> żarówka świeci dla NaCl, nie świeci dla cukru.
+<strong>Wniosek:</strong> Roztwór NaCl zawiera jony, roztwór cukru — cząsteczki.
+<strong>BHP:</strong> ostrożnie z elektrycznością.</p>
+<h4>Doświadczenie 2: Rozpuszczanie soli w wodzie</h4>
+<p><strong>Problem:</strong> Jak zachowuje się NaCl w wodzie?
+<strong>Hipoteza:</strong> Sole jonowe rozpuszczają się, tworząc jony.
+<strong>Sprzęt:</strong> NaCl, woda, przewodnik.
+<strong>Obserwacja:</strong> roztwór przewodzi prąd.
+<strong>Wniosek:</strong> NaCl dysocjuje na Na⁺ i Cl⁻.</p>
+<p><strong>Obserwacja ≠ wniosek:</strong>
+- Obserwacja: żarówka świeci.
+- Wniosek: w roztworze są jony.</p>
+<hr class="lk-hr"/>
+<h3>7. KLINIKA BŁĘDÓW (KLINIKA 2.0)</h3>
+<h4>Tabela błędów</h4>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego</th></tr></thead>
+<tbody>
+<tr><td>„Wszystkie wiązania są jonowe"</td><td>są też kowalencyjne i metaliczne</td><td>różne typy zależnie od pierwiastków</td></tr>
+<tr><td>„H₂O to wiązanie jonowe"</td><td>H₂O to kowalencyjne spolaryzowane</td><td>dwa niemetale</td></tr>
+<tr><td>„NaCl to cząsteczka"</td><td>NaCl to sieć jonowa</td><td>w sieci, nie pojedyncza cząsteczka</td></tr>
+<tr><td>„HCl to wiązanie jonowe"</td><td>HCl to kowalencyjne spolaryzowane</td><td>dwa niemetale; w wodzie dysocjuje</td></tr>
+<tr><td>„Kowalencyjne zawsze nie przewodzi"</td><td>HCl(aq) przewodzi</td><td>jony w roztworze</td></tr>
+<tr><td>„Metale nie tworzą wiązań"</td><td>tworzą wiązanie metaliczne</td><td>morze elektronów</td></tr>
+</tbody></table></div>
+<h4>Klinika 2.0 — przykład 1</h4>
+<p><strong>Błąd:</strong> „H₂O to wiązanie jonowe."</p>
+<ul>
+<li><strong>Znajdź:</strong> zła klasyfikacja.</li>
+<li><strong>Popraw:</strong> H₂O — kowalencyjne spolaryzowane.</li>
+<li><strong>Reguła:</strong> niemetal + niemetal = kowalencyjne.</li>
+<li><strong>Dlaczego:</strong> H i O to niemetale — wiązanie kowalencyjne; polaryzacja wynika z różnicy elektroujemności.</li>
+<li><strong>Zadanie podobne:</strong> Jaki typ wiązania w HCl?</li>
+<li><strong>Pułapka:</strong> „ma ładunki cząstkowe, więc jonowe" — nie.</li>
+</ul>
+<h4>Klinika 2.0 — przykład 2</h4>
+<p><strong>Błąd:</strong> „NaCl to cząsteczka."</p>
+<ul>
+<li><strong>Znajdź:</strong> zła budowa.</li>
+<li><strong>Popraw:</strong> NaCl to sieć jonowa.</li>
+<li><strong>Reguła:</strong> wiązanie jonowe = sieć jonów, nie pojedyncza cząsteczka.</li>
+<li><strong>Dlaczego:</strong> każdy Na⁺ przyciąga wszystkie sąsiednie Cl⁻.</li>
+<li><strong>Zadanie podobne:</strong> Jaka jest budowa MgO?</li>
+<li><strong>Pułapka:</strong> „NaCl ma wzór, więc to cząsteczka" — nie.</li>
+</ul>
+<h4>Klinika 2.0 — przykład 3</h4>
+<p><strong>Błąd:</strong> „HCl to wiązanie jonowe, bo w wodzie przewodzi prąd."</p>
+<ul>
+<li><strong>Znajdź:</strong> mylenie wiązania z właściwościami roztworu.</li>
+<li><strong>Popraw:</strong> HCl (gaz) to kowalencyjne spolaryzowane; w wodzie dysocjuje na jony.</li>
+<li><strong>Reguła:</strong> typ wiązania zależy od pierwiastków, nie od właściwości roztworu.</li>
+<li><strong>Dlaczego:</strong> HCl to dwa niemetale — wiązanie kowalencyjne. W wodzie powstają jony H⁺ i Cl⁻.</li>
+<li><strong>Zadanie podobne:</strong> Czy HCl(g) przewodzi prąd?</li>
+<li><strong>Pułapka:</strong> „przewodzi prąd = jonowe" — nie.</li>
+</ul>
+<hr class="lk-hr"/>
+<h3>8. ĆWICZENIA</h3>
+<h4>8.1. Mini-check (5 pytań)</h4>
+<ol>
+<li>Jakie znasz typy wiązań?</li>
+<li>Kiedy wiązanie jonowe?</li>
+<li>Kiedy wiązanie kowalencyjne?</li>
+<li>Co to wiązanie metaliczne?</li>
+<li>Jaki typ wiązania w MgO?</li>
+</ol>
+<h4>8.2. Ćwiczenie prowadzone</h4>
+<p><strong>Dane:</strong> Związek CaCl₂.</p>
+<p><strong>Krok 1.</strong> Pierwiastki: Ca (metal), Cl (niemetal).
+<strong>Krok 2.</strong> Reguła: metal + niemetal = jonowe.
+<strong>Krok 3.</strong> Wniosek: CaCl₂ — wiązanie jonowe.
+<strong>Krok 4.</strong> Budowa: sieć jonowa Ca²⁺ i Cl⁻.</p>
+<p><strong>Spróbuj sam:</strong> CH₄, Fe, KCl.</p>
+<h4>8.3. Ćwiczenia samodzielne</h4>
+<p><strong>A. Podstawa</strong></p>
+<ol>
+<li>Jaki typ wiązania: NaCl, H₂O, Fe, CaO, CH₄, Cl₂?</li>
+<li>Kiedy wiązanie jonowe?</li>
+<li>Kiedy wiązanie kowalencyjne?</li>
+<li>Kiedy wiązanie metaliczne?</li>
+<li>Który pierwiastek ma największą elektroujemność?</li>
+</ol>
+<p><strong>B. Trening</strong></p>
+<ol start="6">
+<li>Wyjaśnij, dlaczego NaCl ma wysoką temperaturę topnienia, a H₂O niską.</li>
+<li>Dlaczego HCl przewodzi prąd w wodzie, a cukier nie?</li>
+<li>Jaka jest różnica między kowalencyjnym spolaryzowanym a niespolaryzowanym?</li>
+<li>Podaj 3 właściwości metali wynikające z wiązania metalicznego.</li>
+<li>Popraw: „NaCl to cząsteczka".</li>
+</ol>
+<p><strong>C. Ambitne</strong></p>
+<ol start="11">
+<li>Wyjaśnij, dlaczego woda jest polarna, a CO₂ nie.</li>
+<li>Co to wiązanie koordynacyjne? Podaj przykład.</li>
+<li>Dlaczego Al₂O₃ ma wysoką temperaturę topnienia?</li>
+<li>Co to sieć kowalencyjna? Podaj 2 przykłady.</li>
+<li>Dlaczego metale są kowalne?</li>
+</ol>
+<p><strong>D. Zaawansowane</strong></p>
+<ol start="16">
+<li>Reguła oktetu — jakie ma wyjątki?</li>
+<li>Co to moment dipolowy?</li>
+<li>Porównaj wiązanie jonowe i kowalencyjne pod względem energii.</li>
+<li>Dlaczego grafit przewodzi prąd, a diament nie?</li>
+<li>Co to wiązanie wodorowe? Jaki ma wpływ na właściwości wody?</li>
+</ol>
+<h4>8.4. Interleaving (przeplatany)</h4>
+<ol>
+<li>Co to Z? (F02)</li>
+<li>Jaki typ wiązania w NaCl? (F07)</li>
+<li>Zapisz wzór tlenku glinu. (F06)</li>
+<li>Stopień utlenienia S w H₂SO₄? (F05)</li>
+<li>Dlaczego woda jest polarna? (F07)</li>
+</ol>
+<hr class="lk-hr"/>
+<h3>9. ODPOWIEDZI</h3>
+<h4>Mini-check</h4>
+<ol>
+<li>Jonowe, kowalencyjne, metaliczne.</li>
+<li>Metal + niemetal.</li>
+<li>Niemetal + niemetal.</li>
+<li>Metal + metal (morze elektronów).</li>
+<li>Jonowe.</li>
+</ol>
+<h4>Ćwiczenia A</h4>
+<ol>
+<li>NaCl — jonowe; H₂O — kowalencyjne spolaryzowane; Fe — metaliczne; CaO — jonowe; CH₄ — kowalencyjne (niespolaryzowane); Cl₂ — kowalencyjne niespolaryzowane.</li>
+<li>Metal + niemetal.</li>
+<li>Niemetal + niemetal.</li>
+<li>Metal + metal.</li>
+<li>Fluor.</li>
+</ol>
+<h4>Ćwiczenia B</h4>
+<ol start="6">
+<li>NaCl — sieć jonowa (silne oddziaływania); H₂O — słabe oddziaływania międzycząsteczkowe.</li>
+<li>HCl dysocjuje na jony; cukier nie.</li>
+<li>Niespolaryzowane — te same atomy (H₂); spolaryzowane — różne niemetale (HCl).</li>
+<li>Przewodzenie prądu, przewodzenie ciepła, kowalność.</li>
+<li>NaCl to sieć jonowa, nie cząsteczka.</li>
+</ol>
+<h4>Ćwiczenia C</h4>
+<ol start="11">
+<li>Woda — kątowa, polaryzacje się sumują; CO₂ — liniowa, polaryzacje się znoszą.</li>
+<li>NH₄⁺ (donor: NH₃, akceptor: H⁺).</li>
+<li>Al₂O₃ — sieć jonowa z silnymi oddziaływaniami.</li>
+<li>Diament (C), SiO₂ (kwarc).</li>
+<li>Morze elektronów pozwala przesuwać warstwy.</li>
+</ol>
+<h4>Ćwiczenia D</h4>
+<ol start="16">
+<li>H, He (dublet); Li, Be (mniej niż oktet); B (6 e⁻); P, S (rozszerzony oktet).</li>
+<li>Miara polaryzacji cząsteczki.</li>
+<li>Jonowe zwykle silniejsze niż kowalencyjne.</li>
+<li>Grafit — warstwy, elektrony zdelokalizowane; diament — tetraedryczna sieć, brak swobodnych elektronów.</li>
+<li>Wiązanie wodorowe — słabe oddziaływanie między cząsteczkami; wpływa na temperaturę wrzenia wody.</li>
+</ol>
+<hr class="lk-hr"/>
+<h3>10. FISZKI — tylko jeśli potrzebne</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Pytanie</th><th>Odpowiedź</th></tr></thead>
+<tbody>
+<tr><td>Co to wiązanie chemiczne?</td><td>Oddziaływanie łączące atomy</td></tr>
+<tr><td>Typy wiązań?</td><td>Jonowe, kowalencyjne, metaliczne</td></tr>
+<tr><td>Kiedy jonowe?</td><td>Metal + niemetal</td></tr>
+<tr><td>Kiedy kowalencyjne?</td><td>Niemetal + niemetal</td></tr>
+<tr><td>Kiedy metaliczne?</td><td>Metal + metal</td></tr>
+<tr><td>Typ w NaCl?</td><td>jonowe</td></tr>
+<tr><td>Typ w H₂O?</td><td>kowalencyjne spolaryzowane</td></tr>
+<tr><td>Typ w Fe?</td><td>metaliczne</td></tr>
+<tr><td>Typ w Cl₂?</td><td>kowalencyjne niespolaryzowane</td></tr>
+<tr><td>Typ w HCl?</td><td>kowalencyjne spolaryzowane</td></tr>
+<tr><td>Typ w CH₄?</td><td>kowalencyjne</td></tr>
+<tr><td>Typ w MgO?</td><td>jonowe</td></tr>
+<tr><td>Reguła oktetu?</td><td>Dążenie do 8 e⁻</td></tr>
+<tr><td>Wyjątki oktetu?</td><td>H (dublet), BF₃, PCl₅, SF₆</td></tr>
+<tr><td>Największa elektroujemność?</td><td>F</td></tr>
+<tr><td>Δχ > 1,7 → ?</td><td>jonowe</td></tr>
+<tr><td>Δχ 0,4–1,7 → ?</td><td>kowalencyjne spolaryzowane</td></tr>
+<tr><td>Δχ &lt; 0,4 → ?</td><td>kowalencyjne niespolaryzowane</td></tr>
+<tr><td>Przewodzenie NaCl?</td><td>po stopieniu/rozpuszczeniu</td></tr>
+<tr><td>Przewodzenie Fe?</td><td>tak (elektrony swobodne)</td></tr>
+<tr><td>Przewodzenie H₂O?</td><td>nie</td></tr>
+<tr><td>Budowa NaCl?</td><td>sieć jonowa</td></tr>
+<tr><td>Budowa H₂O?</td><td>cząsteczki</td></tr>
+<tr><td>Budowa Fe?</td><td>sieć jonów + morze e⁻</td></tr>
+<tr><td>Wiązanie koordynacyjne — przykład?</td><td>NH₄⁺</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>11. SPRAWDZENIE DIAGNOSTYCZNE (F07)</h3>
+<ol>
+<li>Jakie są typy wiązań? Kiedy który?</li>
+<li>Jaki typ wiązania: NaCl, H₂O, Fe, CaO, CH₄, Cl₂?</li>
+<li>Dlaczego NaCl ma wysoką temperaturę topnienia, a H₂O niską?</li>
+<li>Co to elektroujemność? Który pierwiastek ma największą?</li>
+<li>Popraw: „NaCl to cząsteczka".</li>
+<li>(extra) Co to wiązanie koordynacyjne?</li>
+<li>(extra) Co to sieć kowalencyjna? Podaj przykład.</li>
+<li>(extra) Porównaj wiązanie jonowe i kowalencyjne.</li>
+</ol>
+<hr class="lk-hr"/>
+<h3>12. CHECKLISTA</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Temat</th><th>Musisz umieć</th></tr></thead>
+<tbody>
+<tr><td>Typy wiązań</td><td>jonowe, kowalencyjne, metaliczne</td></tr>
+<tr><td>Reguła</td><td>metal + niemetal = jonowe; niemetal + niemetal = kowalencyjne</td></tr>
+<tr><td>Elektroujemność</td><td>definicja, trendy, wpływ na typ</td></tr>
+<tr><td>Kowalencyjne spolaryzowane</td><td>różnica, przykłady</td></tr>
+<tr><td>Właściwości</td><td>przewodzenie, T. topnienia, budowa</td></tr>
+<tr><td>Koordynacyjne</td><td>definicja, przykład (ambitnie)</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>13. SYSTEM POWTÓREK</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Kiedy</th><th>Co powtarzać</th><th>Jak długo</th></tr></thead>
+<tbody>
+<tr><td>Po lekcji</td><td>Całą lekcję przeczytaj raz</td><td>20 min</td></tr>
+<tr><td>Po 1 dniu</td><td>Fiszki + ściąga</td><td>10 min</td></tr>
+<tr><td>Po 3 dniach</td><td>Ćwiczenia A + B</td><td>15 min</td></tr>
+<tr><td>Po 1 tygodniu</td><td>Test końcowy + mapa myśli</td><td>20 min</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>14. MAPA MYŚLI</h3>
+<pre class="lk-pre" data-jezyk="tekst"><code>WIĄZANIA CHEMICZNE&#10;├── JONOWE&#10;│   ├── metal + niemetal&#10;│   ├── przekazanie e⁻&#10;│   ├── sieć jonowa&#10;│   └── NaCl, MgO, CaF₂&#10;├── KOWALENCYJNE&#10;│   ├── niemetal + niemetal&#10;│   ├── uwspólnienie e⁻&#10;│   ├── niespolaryzowane (H₂, Cl₂)&#10;│   ├── spolaryzowane (HCl, H₂O)&#10;│   └── cząsteczki / sieci (SiO₂, diament)&#10;└── METALICZNE&#10;    ├── metal + metal&#10;    ├── morze elektronów&#10;    └── Fe, Cu, Al</code></pre>
+<hr class="lk-hr"/>
+<h3>15. CO DALEJ?</h3>
+<p><strong>F08 — Geometria cząsteczek (VSEPR):</strong> kształt cząsteczek.</p>
+<p><strong>N01 — Tlenki:</strong> pierwsza grupa związków nieorganicznych.</p>
+<hr class="lk-hr"/>
+<h3>16. SŁOWNIK</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Pojęcie</th><th>Definicja</th></tr></thead>
+<tbody>
+<tr><td>Wiązanie chemiczne</td><td>Oddziaływanie łączące atomy.</td></tr>
+<tr><td>Wiązanie jonowe</td><td>Przekazanie elektronów; sieć jonów.</td></tr>
+<tr><td>Wiązanie kowalencyjne</td><td>Uwspólnienie elektronów.</td></tr>
+<tr><td>Wiązanie metaliczne</td><td>Morze elektronów.</td></tr>
+<tr><td>Elektroujemność</td><td>Zdolność przyciągania elektronów.</td></tr>
+<tr><td>Kowalencyjne spolaryzowane</td><td>Różne niemetale; polaryzacja.</td></tr>
+<tr><td>Kowalencyjne niespolaryzowane</td><td>Te same niemetale.</td></tr>
+<tr><td>Wiązanie koordynacyjne</td><td>Donor + akceptor pary elektronowej.</td></tr>
+<tr><td>Sieć kowalencyjna</td><td>Cząsteczki połączone kowalencyjnie (diament, SiO₂).</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>17. DODATEK C — FORMAT DOŚWIADCZENIA</h3>
+<pre class="lk-pre" data-jezyk="tekst"><code>Problem → Hipoteza → Sprzęt → Obserwacja → Wniosek → Równanie → BHP</code></pre>
+<hr class="lk-hr"/>
+<h3>18. DODATEK D — FORMAT KLINIKI</h3>
+<pre class="lk-pre" data-jezyk="tekst"><code>Błąd → Co nie tak? → Popraw → Reguła → Dlaczego? → Zadanie podobne → Pułapka</code></pre>
+<hr class="lk-hr"/>
+<h3>19. DODATEK E — WARSTWA EXTRA</h3>
+<h4>E.1. Wiązanie wodorowe</h4>
+<p>Słabe oddziaływanie między cząsteczkami, gdy H związany z elektroujemnym atomem (O, N, F) przyciąga wolne pary elektronowe innego elektroujemnego atomu.</p>
+<p><strong>Wpływ na właściwości wody:</strong> wysoka temperatura wrzenia, lód pływa (mniejsza gęstość).</p>
+<h4>E.2. Energia wiązania (kJ/mol)</h4>
+<div class="table-wrap"><table>
+<thead><tr><th>Wiązanie</th><th>Energia</th></tr></thead>
+<tbody>
+<tr><td>H–H</td><td>436</td></tr>
+<tr><td>Cl–Cl</td><td>243</td></tr>
+<tr><td>C–C</td><td>348</td></tr>
+<tr><td>C=C</td><td>614</td></tr>
+<tr><td>C≡C</td><td>839</td></tr>
+<tr><td>N≡N</td><td>946</td></tr>
+<tr><td>O=O</td><td>498</td></tr>
+</tbody></table></div>
+<h4>E.3. Moment dipolowy</h4>
+<ul>
+<li>CO₂ — liniowy, μ = 0 (polaryzacje się znoszą),</li>
+<li>H₂O — kątowy, μ = 1,85 D (polaryzacje się sumują),</li>
+<li>NH₃ — piramidalny, μ = 1,47 D,</li>
+<li>CCl₄ — tetraedryczny, μ = 0 (symetria).</li>
+</ul>
+<h4>E.4. Most do L013 (Zaawansowana)</h4>
+<p>Orbitale molekularne, hybrydyzacja, rezonans.</p>
+<hr class="lk-hr"/>
+<h3>20. DEFINICJE JEDNYM ZDANIEM</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Pojęcie</th><th>Definicja</th></tr></thead>
+<tbody>
+<tr><td>Wiązanie chemiczne</td><td>Oddziaływanie łączące atomy.</td></tr>
+<tr><td>Wiązanie jonowe</td><td>Przekazanie elektronów i przyciąganie jonów.</td></tr>
+<tr><td>Wiązanie kowalencyjne</td><td>Uwspólnienie pary elektronowej.</td></tr>
+<tr><td>Wiązanie metaliczne</td><td>Morze elektronów w metalu.</td></tr>
+<tr><td>Elektroujemność</td><td>Zdolność atomu do przyciągania elektronów.</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>21. 10 ZASAD SUPERNAUKI</h3>
+<ol>
+<li><strong>Najpierw próbuj, potem czytaj.</strong></li>
+<li><strong>Mów na głos.</strong></li>
+<li><strong>Rysuj.</strong></li>
+<li><strong>Powtarzaj w odstępach.</strong></li>
+<li><strong>Mieszaj tematy.</strong></li>
+<li><strong>Testuj się.</strong></li>
+<li><strong>Tłumacz komuś.</strong></li>
+<li><strong>Łap moment „aha!".</strong></li>
+<li><strong>Śpij.</strong></li>
+<li><strong>Bądź ciekawy.</strong></li>
+</ol>
+<hr class="lk-hr"/>
+<h3>22. SZYBKA ŚCIĄGA NA JEDNEJ STRONIE (DO WYDRUKU)</h3>
+<pre class="lk-pre" data-jezyk="tekst"><code>TYPY WIĄZAŃ:&#10;JONOWE: metal + niemetal → sieć jonów&#10;KOWALENCYJNE: niemetal + niemetal → cząsteczki&#10;METALICZNE: metal + metal → morze elektronów&#10;&#10;PUŁAPKI:&#10;- H₂O to nie jonowe&#10;- NaCl to sieć, nie cząsteczka&#10;- HCl(g) nie przewodzi — HCl(aq) tak&#10;- przewodzenie ≠ typ wiązania</code></pre>
+<hr class="lk-hr"/>
+<h3>23. STATUS LEKCJI</h3>
+<ul>
+<li><strong>Wersja 1.1</strong> (2026-09-27).</li>
+<li><strong>Nowa numeracja:</strong> F07.</li>
+<li><strong>Następna lekcja:</strong> F08 Geometria cząsteczek (VSEPR).</li>
+</ul>
+<hr class="lk-hr"/>
+<p><strong>Koniec F07 MASTER v1.1</strong></p>
+<hr class="lk-hr"/>
+<hr class="lk-hr"/>
+<!-- ŹRÓDŁO: kanon CHE.core.md, WARSTWA MASTER v5.0 dla F07 (w. 10373–10473) -->
+</section>
+<section id="s3">
+<div class="part-heading">F07 — WARSTWA MASTER v5.0</div>
+<h3>F07 — WIĄZANIA CHEMICZNE</h3>
+<h4>A. Główna ścieżka</h4>
+<pre class="lk-pre" data-jezyk="text"><code>elektrony walencyjne&#10;→ różnica elektroujemności / charakter pierwiastków&#10;→ sposób oddziaływania&#10;→ wiązanie&#10;→ struktura Lewisa&#10;→ właściwości</code></pre>
+<h4>B. Trzy modele</h4>
+<div class="table-wrap"><table>
+<thead><tr><th>Model</th><th>Główna idea</th><th>Typowy przykład</th></tr></thead>
+<tbody>
+<tr><td>jonowe</td><td>przyciąganie jonów</td><td>NaCl</td></tr>
+<tr><td>kowalencyjne</td><td>wspólne pary elektronowe</td><td>H₂, H₂O</td></tr>
+<tr><td>metaliczne</td><td>zdelokalizowane elektrony w sieci metalu</td><td>Cu</td></tr>
+</tbody></table></div>
+<h4>C. Lewis krok po kroku</h4>
+<pre class="lk-pre" data-jezyk="text"><code>1. policz elektrony walencyjne&#10;2. wybierz szkielet&#10;3. połącz atomy&#10;4. uzupełnij oktety / dublet H&#10;5. sprawdź elektrony&#10;6. rozważ wiązania wielokrotne&#10;7. przy jonach sprawdź ładunek formalny / całkowity</code></pre>
+<h4>D. Zadanie „znajdź błąd”</h4>
+<p>Pokazywać błędne struktury Lewisa i wymagać wskazania:</p>
+<ul>
+<li>brakujących elektronów,</li>
+<li>nadmiarowych elektronów,</li>
+<li>złego atomu centralnego,</li>
+<li>złego ładunku,</li>
+<li>naruszenia typowej wartościowości.</li>
+</ul>
+<h4>E. Most do F08</h4>
+<pre class="lk-pre" data-jezyk="text"><code>Lewis&#10;→ liczba domen elektronowych&#10;→ VSEPR&#10;→ geometria&#10;→ kąt&#10;→ polarność</code></pre>
+<hr class="lk-hr"/>
+<h4>ZINTEGROWANE FRAGMENTY CHE.ALL — v12.0</h4>
+<p class="mini-note">Materiał przeniesiony z warstwy migracyjnej do kanonicznej lekcji. Treść zachowana; usunięto wyłącznie powtórzenia wykazane w audycie.</p>
+<h4>Ćwiczenia na wzory strukturalne (rozszerzenie)</h4>
+<ol>
+<li>Narysuj wzór strukturalny H₂O, CO₂, CH₄.</li>
+<li>Narysuj wzór elektronowy Cl₂, HCl, H₂O.</li>
+<li>Ile wiązań tworzy każdy atom w CO₂? Jaka jest wartościowość węgla?</li>
+</ol>
+<p><strong>Odpowiedzi:</strong>
+1. H–O–H; O=C=O; H–C(–H)(–H)–H.
+2. Cl:Cl; H:Cl; H:O:H (z dwiema wolnymi parami na O).
+3. C tworzy 4 wiązania (dwa podwójne), O tworzy 2 wiązania (jedno podwójne). Wartościowość C = IV.</p>
+<!-- źródłowy fragment: ### Ćwiczenia na wzory strukturalne (rozszerzenie); dopasowanie: F07:2, J09:1, F06:1, F05:1 -->
+<h4>8. ROZSZERZENIE</h4>
+<h3>8. ROZSZERZENIE</h3>
+<ul>
+<li>Wartościowość a <strong>stopień utlenienia</strong> — różnica pojęć.</li>
+<li>Elektroujemność a charakter wiązania (uproszczenie szkolne).</li>
+<li>Konfiguracje elektronowe na powłokach (K, L, M…) jako uzasadnienie wartościowości.</li>
+<li>Sieci kowalencyjne (diament, SiO₂) jako wyjątek od „cząsteczek”.</li>
+<li>Wiązanie metaliczne.</li>
+<li>Alotropia.</li>
+</ul>
+<p><strong>Powłoki elektronowe — ważne rozdzielenie:</strong>
+<strong>Dla pierwszych 20 pierwiastków</strong> stosujemy wygodny zapis powłokowy: <strong>2, 8, 8, 2</strong>.
+Powłoka K mieści maksymalnie 2 elektrony, L — 8, a M <strong>może</strong> mieścić do 18, lecz w atomach pierwszych 20 pierwiastków przed rozpoczęciem jej dalszego zapełniania zaczyna zapełniać się powłoka N.</p>
+<p><strong>Mnemonic (dla pierwszych 20):</strong>
+<strong>„2 – 8 – 8 – 2”</strong>.</p>
+<p><strong>Alotropia:</strong>
+<strong>Alotropia</strong> — występowanie tego samego pierwiastka w różnych postaciach, różniących się budową i właściwościami. Np. tlen (O₂) i ozon (O₃); węgiel: diament, grafit, fullereny; fosfor: biały, czerwony, czarny.</p>
+<hr class="lk-hr"/>
+<!-- źródłowy fragment: ## 8. ROZSZERZENIE; dopasowanie: F07:2, F05:2, F04:2, X01:1 -->
+<hr class="lk-hr"/>
+<hr class="lk-hr"/>
+<!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 6378–7113 -->
+<h3>z: stary podział CHE.01.F07.wiazania_chemiczne.md</h3>
+<!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 5643–6378 -->
+</section>
+<section id="s4">
+<div class="part-heading">F07 — WIĄZANIA CHEMICZNE (Fundamenty)</div>
+<h3>WARSTWOWANIE LEKCJI</h3>
+<p>PUŁAPKI:
+- H₂O to nie jonowe
+- NaCl to sieć, nie cząsteczka
+- HCl(g) nie przewodzi — HCl(aq) tak
+- przewodzenie ≠ typ wiązania</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;## 23. STATUS LEKCJI&#10;&#10;- **Wersja 1.1** (2026-09-27).&#10;- **Nowa numeracja:** F07.&#10;- **Następna lekcja:** F08 Geometria cząsteczek (VSEPR).&#10;&#10;---&#10;&#10;**Koniec F07 MASTER v1.1**&#10;&#10;---&#10;&#10;&#10;---&#10;&#10;&lt;!-- ŹRÓDŁO: kanon CHE.core.md, WARSTWA MASTER v5.0 dla F07 (w. 10373–10473) --&gt;&#10;&#10;# F07 — WARSTWA MASTER v5.0&#10;&#10;## F07 — WIĄZANIA CHEMICZNE&#10;&#10;### A. Główna ścieżka&#10;</code></pre>
+<p>elektrony walencyjne
+→ różnica elektroujemności / charakter pierwiastków
+→ sposób oddziaływania
+→ wiązanie
+→ struktura Lewisa
+→ właściwości</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;### B. Trzy modele&#10;&#10;| Model | Główna idea | Typowy przykład |&#10;|---|---|---|&#10;| jonowe | przyciąganie jonów | NaCl |&#10;| kowalencyjne | wspólne pary elektronowe | H₂, H₂O |&#10;| metaliczne | zdelokalizowane elektrony w sieci metalu | Cu |&#10;&#10;### C. Lewis krok po kroku&#10;</code></pre>
+<ol>
+<li>policz elektrony walencyjne</li>
+<li>wybierz szkielet</li>
+<li>połącz atomy</li>
+<li>uzupełnij oktety / dublet H</li>
+<li>sprawdź elektrony</li>
+<li>rozważ wiązania wielokrotne</li>
+<li>przy jonach sprawdź ładunek formalny / całkowity</li>
+</ol>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;### D. Zadanie „znajdź błąd”&#10;&#10;Pokazywać błędne struktury Lewisa i wymagać wskazania:&#10;&#10;- brakujących elektronów,&#10;- nadmiarowych elektronów,&#10;- złego atomu centralnego,&#10;- złego ładunku,&#10;- naruszenia typowej wartościowości.&#10;&#10;### E. Most do F08&#10;</code></pre>
+<p>Lewis
+→ liczba domen elektronowych
+→ VSEPR
+→ geometria
+→ kąt
+→ polarność</p>
+<pre class="lk-pre" data-jezyk="tekst"><code>&#10;---&#10;&#10;&#10;### ZINTEGROWANE FRAGMENTY CHE.ALL — v12.0&#10;&#10;&gt; Materiał przeniesiony z warstwy migracyjnej do kanonicznej lekcji. Treść zachowana; usunięto wyłącznie powtórzenia wykazane w audycie.&#10;&#10;#### Ćwiczenia na wzory strukturalne (rozszerzenie)&#10;&#10;1. Narysuj wzór strukturalny H₂O, CO₂, CH₄.  &#10;2. Narysuj wzór elektronowy Cl₂, HCl, H₂O.  &#10;3. Ile wiązań tworzy każdy atom w CO₂? Jaka jest wartościowość węgla?&#10;&#10;**Odpowiedzi:**  &#10;1. H–O–H; O=C=O; H–C(–H)(–H)–H.  &#10;2. Cl:Cl; H:Cl; H:O:H (z dwiema wolnymi parami na O).  &#10;3. C tworzy 4 wiązania (dwa podwójne), O tworzy 2 wiązania (jedno podwójne). Wartościowość C = IV.&#10;&#10;&lt;!-- źródłowy fragment: ### Ćwiczenia na wzory strukturalne (rozszerzenie); dopasowanie: F07:2, J09:1, F06:1, F05:1 --&gt;&#10;&#10;#### 8. ROZSZERZENIE&#10;&#10;## 8. ROZSZERZENIE&#10;&#10;- Wartościowość a **stopień utlenienia** — różnica pojęć.  &#10;- Elektroujemność a charakter wiązania (uproszczenie szkolne).  &#10;- Konfiguracje elektronowe na powłokach (K, L, M…) jako uzasadnienie wartościowości.  &#10;- Sieci kowalencyjne (diament, SiO₂) jako wyjątek od „cząsteczek”.  &#10;- Wiązanie metaliczne.  &#10;- Alotropia.&#10;&#10;**Powłoki elektronowe — ważne rozdzielenie:**  &#10;**Dla pierwszych 20 pierwiastków** stosujemy wygodny zapis powłokowy: **2, 8, 8, 2**.  &#10;Powłoka K mieści maksymalnie 2 elektrony, L — 8, a M **może** mieścić do 18, lecz w atomach pierwszych 20 pierwiastków przed rozpoczęciem jej dalszego zapełniania zaczyna zapełniać się powłoka N.&#10;&#10;**Mnemonic (dla pierwszych 20):**  &#10;**„2 – 8 – 8 – 2”**.&#10;&#10;**Alotropia:**  &#10;**Alotropia** — występowanie tego samego pierwiastka w różnych postaciach, różniących się budową i właściwościami. Np. tlen (O₂) i ozon (O₃); węgiel: diament, grafit, fullereny; fosfor: biały, czerwony, czarny.&#10;&#10;---&#10;&#10;&lt;!-- źródłowy fragment: ## 8. ROZSZERZENIE; dopasowanie: F07:2, F05:2, F04:2, X01:1 --&gt;&#10;&#10;---&#10;&#10;## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)&#10;&#10;&gt; Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.&#10;&#10;&gt; Uwaga przy scalaniu: Tabela porównawcza z audytu ma niepełne wiersze (brak „typowej właściwości” dla H₂ i HCl) — uzupełnić przy budowie lekcji.&#10;&#10;### Poprawki&#10;&#10;- Wiązanie jonowe opisuje przyciąganie elektrostatyczne między przeciwnie naładowanymi jonami w sieci krystalicznej.&#10;- Nie pisz, że „w NaCl jedna cząsteczka sodu łączy się z jedną cząsteczką chloru”.&#10;- Chlorek sodu nie tworzy odrębnych cząsteczek NaCl w krysztale jonowym; wzór określa najmniejszy stosunek jonów.&#10;- Wiązanie kowalencyjne powstaje wskutek współdzielenia par elektronowych przez atomy.&#10;- Wiązanie kowalencyjne może być niespolaryzowane lub spolaryzowane.&#10;- Wiązanie metaliczne obejmuje dodatnie rdzenie atomowe lub kationy metalu oraz zdelokalizowane elektrony.&#10;- Nie definiuj wiązania metalicznego jako „wspólnej pary elektronów między dwoma atomami”.&#10;- Typ wiązania nie zależy wyłącznie od tego, czy pierwiastki są metalami lub niemetalami; to szkolna reguła orientacyjna.&#10;- Różnica elektroujemności pomaga przewidywać polaryzację wiązania, ale nie stanowi absolutnej granicy między typami wiązań.&#10;&#10;### Uzupełnienia&#10;&#10;#### Porównanie&#10;&#10;| Typ wiązania | Model | Przykład | Typowa właściwość |&#10;|---|---|---|---|&#10;| Jonowe | Przyciąganie jonów w sieci | NaCl | Wysoka temperatura topnienia |&#10;| Kowalencyjne niespolaryzowane | Wspólna para elektronowa dzielona podobnie | H₂ |&#10;| Kowalencyjne spolaryzowane | Wspólna para przesunięta ku bardziej elektroujemnemu atomowi | HCl |&#10;| Metaliczne | Zdelokalizowane elektrony w sieci metalu | Cu | Przewodnictwo elektryczne |&#10;&#10;#### Przewodnictwo&#10;&#10;- Kryształy jonowe w stanie stałym zwykle nie przewodzą prądu, ponieważ jony nie mogą swobodnie się przemieszczać.&#10;- Stopione kryształy jonowe mogą przewodzić, ponieważ jony stają się ruchliwe.&#10;- Roztwory substancji elektrolitycznych przewodzą dzięki ruchliwym jonom.&#10;- Metale przewodzą dzięki ruchliwym elektronom.&#10;- Nie każda substancja zawierająca wiązania kowalencyjne przewodzi prąd.&#10;&#10;#### Zadania&#10;&#10;1. Określ dominujący typ wiązania w NaCl, H₂, HCl i Cu.&#10;2. Wyjaśnij, dlaczego stały NaCl nie przewodzi prądu tak jak stopiony NaCl.&#10;3. Wyjaśnij różnicę między cząsteczką H₂ a siecią jonową NaCl.&#10;4. Oceń zdanie: „Wiązanie jonowe polega na utworzeniu jednej wspólnej pary elektronowej.”&#10;&#10;#### Klucz&#10;&#10;1. NaCl — jonowe; H₂ — kowalencyjne niespolaryzowane; HCl — kowalencyjne spolaryzowane; Cu — metaliczne.&#10;2. W krysztale jony są unieruchomione, a w stopionym NaCl mogą się przemieszczać.&#10;3. H₂ składa się z odrębnych cząsteczek, natomiast NaCl tworzy rozległą sieć jonów.&#10;4. Fałsz. Wiązanie jonowe wynika z przyciągania elektrostatycznego jonów o przeciwnych ładunkach.&#10;</code></pre>
+</section>
+
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

@@ -91,12 +91,25 @@ def slowka(titles, body):
     return '<div class="table-wrap"><table class="lk-vocab"><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (
         ''.join('<th>%s</th>' % m.inline(h) for h in hd), rows)
 
+def bloki_kodu(L):
+    """```…``` → <pre> w jednej linii (żaden późniejszy krok nie zmienia jego treści; układ ASCII zostaje)."""
+    out = []; i = 0
+    while i < len(L):
+        mm = re.match(r'\s*```\s*([\w-]*)\s*$', L[i])
+        if mm:
+            j = i + 1
+            while j < len(L) and not L[j].strip().startswith('```'): j += 1
+            body = H.escape('\n'.join(L[i + 1:j])).replace('\n', '&#10;')
+            out += ['', '::: html', '<pre class="lk-pre" data-jezyk="%s"><code>%s</code></pre>' % (mm.group(1) or 'tekst', body), ':::', '']
+            i = j + 1; continue
+        out.append(L[i]); i += 1
+    return out
+
 def poziomy(L):
     """Ujednolica nagłówki: tytuł „# …” na górze znika (jest w nagłówku lekcji), najpłytszy poziom
     występujący ≥3 razy (lub najgłębszy obecny) staje się sekcją „##”, głębsze — „###”/„####”."""
     kod = False; idx = []
     for i, ln in enumerate(L):
-        if ln.strip().startswith('```'): kod = not kod
         mm = re.match(r'(#{1,4}) (\S.*)$', ln) if not kod else None
         if mm: idx.append((i, len(mm.group(1))))
     if not idx: return L
@@ -114,7 +127,7 @@ def preprocess(text, p):
     L = text.split('\n'); fm = 0
     if L and L[0].strip() == '---':   # front matter zostaje bez zmian
         fm = next((k for k in range(1, len(L)) if L[k].strip() == '---'), 0) + 1
-    out = L[:fm]; L = poziomy(L[fm:]); i = 0; nsec = 0
+    out = L[:fm]; L = poziomy(bloki_kodu(L[fm:])); i = 0; nsec = 0
     while i < len(L):
         st = L[i].strip()
         if st.startswith('@viz '):
@@ -138,6 +151,8 @@ def preprocess(text, p):
                 mn = re.match(r'(\d+[A-Za-z]?(?:\.\d+)*)\.?\s+(.*)$', t)
                 t = '%s | %s' % (mn.group(1), mn.group(2)) if mn else t
             out.append('## %s {#s%d}' % (t, nsec)); i += 1; continue
+        if st.startswith('<!--') and st.endswith('-->'):   # komentarz w jednej linii — osobny blok, żeby nie połknął akapitu
+            out += [L[i], '']; i += 1; continue
         if re.fullmatch(r'(-{3,}|\*{3,}|_{3,})', st):   # linia pozioma
             out += ['::: html', '<hr class="lk-hr"/>', ':::']; i += 1; continue
         out.append(L[i]); i += 1

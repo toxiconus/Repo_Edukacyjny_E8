@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="pol">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PL.G01 · Rzeczownik — znaczenie, kategorie gramatyczne, odmiana i funkcje</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* motyw pol (Język polski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#7a2848;--accent-dark:#561a32;--accent-soft:#f6e9ee;--accent-line:#e2c3cf;--accent-glow:rgba(122,40,72,.15);--hl-key:#7a2848;--hl-key-bg:#f3dfe7;--hl-formula:#561a32;--hl-formula-bg:#f6e9ee;--bg:#fbfafa;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 140 200%27%3E%3Ctext x=%276%27 y=%27120%27 font-family=%27Georgia,serif%27 font-size=%27150%27 fill=%27%237a2848%27%3E%E2%80%9E%3C/text%3E%3Ctext x=%2760%27 y=%27190%27 font-family=%27Georgia,serif%27 font-size=%2770%27 font-style=%27italic%27 fill=%27%237a2848%27%3EAa%3C/text%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}}
+:root[data-theme=dark]{--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}
+
+/* przykłady i cytaty literackie krojem szeryfowym */
+.hero h1{font-family:var(--serif);font-weight:700;letter-spacing:-.2px}
+.part-heading{font-family:var(--serif);letter-spacing:0}
+.przyklad,.lk-quote blockquote{font-family:var(--serif)}
+.przyklad{display:block;margin:8px 0;padding:6px 0 6px 14px;border-left:2px solid var(--accent-line);font-size:16.5px;line-height:1.7}
+/* części zdania — szkolne oznaczenia (podkreślenia) */
+.z-pod{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-orz{text-decoration:underline double;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-prz{text-decoration:underline wavy;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-dop{text-decoration:underline dashed;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-oko{text-decoration:underline dotted;text-decoration-thickness:2.5px;text-underline-offset:5px}
+.z-leg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--text-soft);margin:6px 0 12px}
+.z-pod,.z-orz,.z-prz,.z-dop,.z-oko{text-decoration-color:var(--accent)}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Język polski</span><span class="lk-title">PL.G01 Rzeczownik — znaczenie, kategorie gramatyczne, odmiana i funkcje</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Język polski, lekcja PL.G01</div><h1>Rzeczownik — znaczenie, kategorie gramatyczne, odmiana i funkcje</h1><div class="tag-row"></div><div class="lk-meta"><span><b>Powiązania:</b> G02 czasownik; G03 przymiotnik; G04 liczebnik; G05 zaimek; G06 imiesłowy; G12 części zdania; G13 związki wyrazowe; G14 zdanie pojedyncze; L005 Kajko i Kokosz</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">Jak pracować z lekcją</a><a class="toc-link" href="#s2">1. Cele i kryteria sukcesu</a><a class="toc-link" href="#s3">2. Definicja i zakres znaczeniowy</a><a class="toc-link" href="#s4">3. Jak rozpoznawać rzeczownik — procedura</a><a class="toc-link" href="#s5">4. Rodzaj gramatyczny</a><a class="toc-link" href="#s6">5. Liczba pojedyncza i mnoga</a><a class="toc-link" href="#s7">6. Przypadki — pytania i funkcje</a><a class="toc-link" href="#s8">7. Żywotność i biernik — ważne rozróżnienie</a><a class="toc-link" href="#s9">8. Odmiana i typowe trudności</a><a class="toc-link" href="#s10">9. Rzeczownik odczasownikowy, czasownik i imiesłów</a><a class="toc-link" href="#s11">10. Pisownia „nie” z rzeczownikami</a><a class="toc-link" href="#s12">11. Nazwy własne i wielka litera</a><a class="toc-link" href="#s13">12. Funkcja rzeczownika w zdaniu</a><a class="toc-link" href="#s14">13. Analiza zdań krok po kroku</a><a class="toc-link" href="#s15">14. Klinika błędów</a><a class="toc-link" href="#s16">15. Ćwiczenia — poziom podstawowy</a><a class="toc-link" href="#s17">16. Ćwiczenia — poziom średni</a><a class="toc-link" href="#s18">17. Ćwiczenia — poziom konkursowy</a><a class="toc-link" href="#s19">18. Klucz odpowiedzi i objaśnienia</a><a class="toc-link" href="#s20">19. Test końcowy — 20 punktów treningowych</a><a class="toc-link" href="#s21">20. Fiszki do powtórki</a><a class="toc-link" href="#s22">21. Samoocena i plan naprawczy</a><a class="toc-link" href="#s23">22. Materiały powiązane</a><a class="toc-link" href="#s24">23. Źródła i uwagi redakcyjne</a></nav></details>
+<section id="s1">
+<div class="part-heading">Jak pracować z lekcją</div>
+<p>To pełna lekcja do nauki i powtórki, nie tylko notatka. Najpierw przeczytaj objaśnienia i przykłady, następnie rozwiązuj zadania bez zaglądania do klucza. Przy każdym trudniejszym wyrazie uzasadnij odpowiedź: samo zadanie pytania „kto? co?” nie zawsze wystarcza do rozpoznania części mowy. Zadania oznaczone <strong>KONKURS</strong> są trudniejsze niż typowe minimum szkolne.</p>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">1</span> Cele i kryteria sukcesu</div>
+<p>Po lekcji potrafisz:</p>
+<ol>
+<li>wyjaśnić, czym jest rzeczownik, i rozpoznać go w zdaniu oraz w dłuższym tekście;</li>
+<li>odróżnić rzeczowniki konkretne i abstrakcyjne, własne i pospolite, osobowe i nieosobowe oraz wskazać rzeczowniki zbiorowe i odczasownikowe;</li>
+<li>określić liczbę, rodzaj i przypadek tam, gdzie dana kategoria ma zastosowanie;</li>
+<li>odmienić rzeczownik przez siedem przypadków i poprawnie użyć go w zdaniu;</li>
+<li>rozumieć różnicę między rodzajem gramatycznym a płcią lub rzeczywistą żywotnością;</li>
+<li>rozpoznać typowe wzorce biernika rzeczowników rodzaju męskiego;</li>
+<li>wyjaśnić, dlaczego niektóre rzeczowniki występują tylko w liczbie mnogiej;</li>
+<li>zapisać poprawnie nazwy własne i „nie” z rzeczownikami w typowych konstrukcjach;</li>
+<li>odróżnić rzeczownik odczasownikowy od czasownika i imiesłowu;</li>
+<li>określić funkcję rzeczownika w zdaniu, nie myląc części mowy z częścią zdania;</li>
+<li>skorygować błędy i uzasadnić korektę.</li>
+</ol>
+<p><strong>Sprawdź się na końcu:</strong> wynik co najmniej 80% w teście i umiejętność uzasadnienia odpowiedzi własnymi słowami oznaczają, że możesz przejść do kolejnej lekcji. To próg treningowy, nie oficjalna skala egzaminacyjna.</p>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">2</span> Definicja i zakres znaczeniowy</div>
+<p><strong>Rzeczownik</strong> to odmienna część mowy, która nazywa między innymi osoby, zwierzęta, przedmioty, miejsca, zjawiska, uczucia, cechy, czynności i pojęcia. Typowe pytania rzeczownika to <strong>kto? co?</strong>: <em>kto? uczennica; co? zeszyt; co? burza; co? radość; co? czytanie</em>.</p>
+<p>Rzeczownik nie musi oznaczać przedmiotu, który można zobaczyć lub dotknąć. <em>Odwaga, pamięć, sprawiedliwość, hałas, spotkanie</em> także są rzeczownikami. Z kolei samo znaczenie wyrazu nie wystarcza do ustalenia jego części mowy: o rozpoznaniu decydują także forma gramatyczna i funkcja w zdaniu.</p>
+<h3>2.1. Praktyczne grupy rzeczowników</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Grupa</th><th>Co nazywa?</th><th>Przykłady</th><th>Uwaga</th></tr></thead>
+<tbody>
+<tr><td>konkretne</td><td>osoby, zwierzęta, przedmioty i inne byty ujmowane jako konkretne</td><td><em>dziecko, pies, stół, telefon</em></td><td>„Konkretne” nie znaczy zawsze „można dotknąć”; klasyfikacja szkolna bywa uproszczona.</td></tr>
+<tr><td>abstrakcyjne</td><td>cechy, stany, uczucia, pojęcia, zjawiska ujmowane abstrakcyjnie</td><td><em>odwaga, smutek, wolność, wiedza</em></td><td>Często nie mają jednej materialnej postaci.</td></tr>
+<tr><td>własne</td><td>indywidualnie nazywają osobę, miejsce, instytucję, utwór itp.</td><td><em>Jan, Wisła, Kraków, „Akademia pana Kleksa”</em></td><td>Pisownia zależy od typu nazwy i aktualnych zasad ortograficznych.</td></tr>
+<tr><td>pospolite</td><td>nazywają klasę osób, przedmiotów lub zjawisk</td><td><em>chłopiec, rzeka, miasto, książka</em></td><td>Zwykle zapis małą literą, chyba że wymaga jej początek zdania.</td></tr>
+<tr><td>osobowe</td><td>nazywają osoby</td><td><em>lekarka, uczeń, przyjaciel</em></td><td>„Osobowy” to kategoria znaczeniowa, nie osobny rodzaj gramatyczny.</td></tr>
+<tr><td>zbiorowe</td><td>nazywają zbiór ujmowany jako całość</td><td><em>młodzież, rodzeństwo, stado, publiczność</em></td><td>Nie każdy rzeczownik oznaczający wiele osób jest rzeczownikiem zbiorowym.</td></tr>
+<tr><td>odczasownikowe</td><td>nazywają czynność, proces lub rezultat i są utworzone od czasownika</td><td><em>czytanie, bieganie, pisanie, odkrycie</em></td><td>Są rzeczownikami, mimo że znaczeniowo wiążą się z czynnością.</td></tr>
+</tbody></table></div>
+<p>Podział na rzeczowniki konkretne i abstrakcyjne jest przydatny, ale nie zawsze mechaniczny. W razie wątpliwości wyjaśnij, jak rozumiesz nazwę w danym kontekście.</p>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">3</span> Jak rozpoznawać rzeczownik — procedura</div>
+<ol>
+<li><strong>Przeczytaj całe zdanie.</strong> Nie klasyfikuj wyrazu w oderwaniu od kontekstu, jeśli może mieć różne użycia.</li>
+<li><strong>Sprawdź znaczenie:</strong> czy wyraz nazywa osobę, rzecz, miejsce, zjawisko, cechę, stan, czynność lub pojęcie?</li>
+<li><strong>Zadaj pytanie „kto?” lub „co?”</strong> do wyrazu w jego formie zdaniowej, np. <em>Czego brakuje? — cierpliwości</em>.</li>
+<li><strong>Sprawdź odmianę przez przypadki:</strong> <em>książka, książki, książce, książkę…</em>. To mocna wskazówka, ale nie jedyny test.</li>
+<li><strong>Ustal, czy wyraz nie jest inną częścią mowy.</strong> <em>Czyta</em> jest czasownikiem, <em>czytający</em> może być imiesłowem, a <em>czytanie</em> — rzeczownikiem odczasownikowym.</li>
+<li><strong>Sprawdź funkcję w zdaniu osobno.</strong> Rzeczownik może być podmiotem, dopełnieniem, przydawką lub inną częścią zdania. Część mowy i część zdania to dwa różne opisy.</li>
+</ol>
+<h3>Porównaj</h3>
+<ul>
+<li><em>Czytam ciekawą książkę.</em> — <strong>czytam</strong>: czasownik; <strong>książkę</strong>: rzeczownik.</li>
+<li><em>Czytanie książek rozwija wyobraźnię.</em> — <strong>czytanie</strong>: rzeczownik odczasownikowy; <strong>książek</strong>: rzeczownik.</li>
+<li><em>Czytający uczeń robi notatki.</em> — <strong>czytający</strong>: imiesłów przymiotnikowy czynny; <strong>uczeń</strong>: rzeczownik.</li>
+<li><em>To było niezwykłe przeżycie.</em> — <strong>przeżycie</strong>: rzeczownik, choć nazywa zdarzenie/doświadczenie.</li>
+<li><em>Przeżył trudną przygodę.</em> — <strong>przeżył</strong>: czasownik.</li>
+</ul>
+<p><strong>Uwaga:</strong> wyrazy <em>ktoś, coś, nic, nikt</em> to zaimki, a nie rzeczowniki, mimo że mogą zajmować podobne miejsce w zdaniu. Wypowiedzenie <em>Ktoś zapukał</em> nie zawiera rzeczownika w roli podmiotu — podmiotem jest zaimek.</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">4</span> Rodzaj gramatyczny</div>
+<p>W liczbie pojedynczej rzeczowniki mają rodzaj <strong>męski, żeński albo nijaki</strong>. Rodzaj jest kategorią gramatyczną, a nie prostym opisem biologicznej płci.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj</th><th>Typowe przykłady</th><th>Pomocna wskazówka</th></tr></thead>
+<tbody>
+<tr><td>męski</td><td><em>stół, uczeń, pies, tata</em></td><td>często kończy się spółgłoską, ale są wyjątki, np. <em>mężczyzna</em></td></tr>
+<tr><td>żeński</td><td><em>książka, noc, przyjaźń, pani</em></td><td>często kończy się na <em>-a</em>, ale nie zawsze</td></tr>
+<tr><td>nijaki</td><td><em>dziecko, okno, morze, czytanie</em></td><td>często kończy się na <em>-o, -e, -ę</em>, ale nie wolno polegać wyłącznie na końcówce</td></tr>
+</tbody></table></div>
+<p>Rodzaj najlepiej sprawdzać w zgodzie gramatycznej: <em>ten stół, ta noc, to okno</em>. Nie każda końcówka jednoznacznie wskazuje rodzaj: <em>mężczyzna</em> jest rodzaju męskiego, a <em>noc</em> — żeńskiego.</p>
+<h3>4.1. Rodzaj w liczbie mnogiej</h3>
+<p>W liczbie mnogiej istotne jest rozróżnienie <strong>męskoosobowe</strong> i <strong>niemęskoosobowe</strong>, widoczne m.in. w zgodzie gramatycznej:</p>
+<ul>
+<li><em>ci uczniowie przyszli</em> — rodzaj męskoosobowy;</li>
+<li><em>te uczennice przyszły, te psy biegły, te okna stały</em> — rodzaj niemęskoosobowy.</li>
+</ul>
+<p>Nie należy mechanicznie przenosić trzech rodzajów liczby pojedynczej na każdą formę liczby mnogiej. Rzeczowniki występujące tylko w liczbie mnogiej (np. <em>drzwi, nożyczki</em>) wymagają opisu zgodnego z ich użyciem w liczbie mnogiej.</p>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">5</span> Liczba pojedyncza i mnoga</div>
+<p>Większość rzeczowników ma dwie liczby: <em>uczeń — uczniowie; książka — książki; dziecko — dzieci</em>. Nie zawsze forma liczby mnogiej jest tworzona przez prostą zmianę końcówki.</p>
+<h3>5.1. Rzeczowniki występujące tylko w liczbie pojedynczej</h3>
+<p>Niektóre rzeczowniki w typowym znaczeniu nie mają zwykłej liczby mnogiej, np. <em>młodzież, odzież, mąka, powietrze, dobroć</em>. W użyciu przenośnym, specjalistycznym albo przy innym znaczeniu mogą pojawiać się odstępstwa; w zadaniu szkolnym kieruj się konkretnym kontekstem.</p>
+<h3>5.2. Rzeczowniki występujące tylko w liczbie mnogiej</h3>
+<p>Przykłady: <em>drzwi, nożyczki, skrzypce, spodnie, urodziny</em>. W standardowym znaczeniu nie używamy ich jako zwykłych rzeczowników liczby pojedynczej. Dlatego mówimy: <em>te drzwi są otwarte</em>, nie: <em>te drzwi jest otwarte</em>.</p>
+<h3>5.3. Dawna liczba podwójna</h3>
+<p>W polszczyźnie pozostały ślady dawnej liczby podwójnej, np. w odmianie wyrazów <em>oko, ucho, ręka</em>: <em>oczy, uszy, ręce</em>. To przydatna ciekawostka językowa, ale nie należy na tej podstawie uznawać, że współczesny polski ma produktywną, osobną liczbę podwójną.</p>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">6</span> Przypadki — pytania i funkcje</div>
+<p>Rzeczownik odmienia się przez <strong>siedem przypadków</strong>. Pytania pomagają, ale trzeba uwzględniać przyimek i sens zdania.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przypadek</th><th>Pytania pomocnicze</th><th>Przykład w zdaniu</th></tr></thead>
+<tbody>
+<tr><td>Mianownik (M.)</td><td>kto? co?</td><td><strong>Uczeń</strong> czyta.</td></tr>
+<tr><td>Dopełniacz (D.)</td><td>kogo? czego?</td><td>Nie ma <strong>ucznia</strong>.</td></tr>
+<tr><td>Celownik (C.)</td><td>komu? czemu?</td><td>Przyglądam się <strong>uczniowi</strong>.</td></tr>
+<tr><td>Biernik (B.)</td><td>kogo? co?</td><td>Widzę <strong>ucznia</strong> i <strong>książkę</strong>.</td></tr>
+<tr><td>Narzędnik (N.)</td><td>z kim? z czym?</td><td>Idę z <strong>uczniem</strong>.</td></tr>
+<tr><td>Miejscownik (Ms.)</td><td>o kim? o czym?</td><td>Rozmawiam o <strong>uczniu</strong>.</td></tr>
+<tr><td>Wołacz (W.)</td><td>o! — forma zwrotu</td><td><strong>Uczniu</strong>, posłuchaj!</td></tr>
+</tbody></table></div>
+<h3>6.1. Pełna odmiana wzorcowa</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Przypadek</th><th><em>uczeń</em></th><th><em>książka</em></th><th><em>dziecko</em></th></tr></thead>
+<tbody>
+<tr><td>M.</td><td>uczeń</td><td>książka</td><td>dziecko</td></tr>
+<tr><td>D.</td><td>ucznia</td><td>książki</td><td>dziecka</td></tr>
+<tr><td>C.</td><td>uczniowi</td><td>książce</td><td>dziecku</td></tr>
+<tr><td>B.</td><td>ucznia</td><td>książkę</td><td>dziecko</td></tr>
+<tr><td>N.</td><td>uczniem</td><td>książką</td><td>dzieckiem</td></tr>
+<tr><td>Ms.</td><td>uczniu</td><td>książce</td><td>dziecku</td></tr>
+<tr><td>W.</td><td>uczniu!</td><td>książko!</td><td>dziecko!</td></tr>
+</tbody></table></div>
+<p>To tabela przykładowa, nie uniwersalny wzór dla każdego rzeczownika. Odmiana może być nieregularna lub mieć oboczne formy. Wołacz istnieje w systemie języka, lecz w codziennej polszczyźnie bywa zastępowany mianownikiem w niektórych zwrotach; w starannych zwrotach bezpośrednich warto znać formę poprawną.</p>
+<h3>6.2. Jak ustalić przypadek</h3>
+<ol>
+<li>Odczytaj całe zdanie.</li>
+<li>Znajdź wyraz nadrzędny lub przyimek, który wpływa na formę rzeczownika.</li>
+<li>Zadaj właściwe pytanie do rzeczownika w tym zdaniu.</li>
+<li>Sprawdź końcówkę i zgodność z konstrukcją.</li>
+<li>Jeśli możliwe są różne interpretacje, uzasadnij wybór kontekstem.</li>
+</ol>
+<p>Przykład: <em>Przyglądam się mapie.</em> — <em>przyglądać się komu? czemu?</em> → celownik; <em>mapie</em> jest formą celownika. Nie wystarczy zapamiętać, że końcówka <em>-e</em> zawsze oznacza jeden przypadek — ta sama lub podobna końcówka może występować w różnych formach.</p>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">7</span> Żywotność i biernik — ważne rozróżnienie</div>
+<p>W rodzaju męskim w liczbie pojedynczej żywotność często wpływa na formę biernika:</p>
+<ul>
+<li>rzeczownik męski <strong>żywotny</strong>: biernik ma zwykle formę taką jak dopełniacz — <em>widzę psa, kota, ucznia</em>;</li>
+<li>rzeczownik męski <strong>nieżywotny</strong>: biernik ma zwykle formę taką jak mianownik — <em>widzę stół, dom, miecz</em>.</li>
+</ul>
+<p>To reguła przydatna w szkole, ale należy mówić precyzyjnie: dotyczy typowego wzorca rzeczowników rodzaju męskiego w liczbie pojedynczej. W liczbie mnogiej, przy nazwach zwierząt użytych żartobliwie lub personifikująco i w konstrukcjach specjalnych mogą wystąpić inne formy. Przykładowo w liczbie mnogiej spotykamy <em>widzę psy</em> oraz <em>widzę uczniów</em>.</p>
+<p><strong>Żywotność gramatyczna nie zawsze pokrywa się z biologiczną.</strong> O formie decyduje także zwyczaj językowy i sposób użycia. Nie klasyfikuj wyrazu wyłącznie na podstawie tego, czy jego desygnat żyje.</p>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">8</span> Odmiana i typowe trudności</div>
+<h3>8.1. Temat i końcówka</h3>
+<p>W odmianie rzeczownika może zmieniać się końcówka, temat lub oba elementy: <em>pies — psa; ręka — ręce; człowiek — ludzie</em>. Nie wszystkie formy da się utworzyć przez dodanie jednej końcówki. Dlatego w wątpliwych przypadkach sprawdzaj formę w słowniku lub wiarygodnym źródle językowym.</p>
+<h3>8.2. Rzeczowniki nieodmienne</h3>
+<p>W polszczyźnie występują rzeczowniki, których forma nie zmienia się w przypadkach, np. część zapożyczeń i nazw własnych. Brak widocznej zmiany formy nie oznacza, że wyraz przestaje pełnić funkcję rzeczownika. Przypadek można wtedy rozpoznać z konstrukcji składniowej.</p>
+<h3>8.3. Rzeczowniki z nietypową liczbą</h3>
+<p><em>Drzwi</em> i <em>nożyczki</em> mają formę liczby mnogiej; <em>młodzież</em> jest zwykle rzeczownikiem w liczbie pojedynczej, mimo że oznacza wiele osób. Liczba gramatyczna nie jest prostym liczeniem obiektów.</p>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">9</span> Rzeczownik odczasownikowy, czasownik i imiesłów</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Forma</th><th>Część mowy</th><th>Jak ją rozpoznać?</th></tr></thead>
+<tbody>
+<tr><td><em>czyta</em></td><td>czasownik</td><td>oznacza czynność w formie osobowej; można określić osobę, liczbę i czas</td></tr>
+<tr><td><em>czytanie</em></td><td>rzeczownik odczasownikowy</td><td>nazywa czynność jako zjawisko; odmienia się przez przypadki: <em>czytania, czytaniu</em></td></tr>
+<tr><td><em>czytający</em></td><td>zwykle imiesłów przymiotnikowy czynny</td><td>określa rzeczownik: <em>czytający uczeń</em>; odmienia się jak przymiotnik</td></tr>
+<tr><td><em>przeczytawszy</em></td><td>imiesłów przysłówkowy uprzedni</td><td>forma nieodmienna, oznacza czynność wcześniejszą; poziom rozszerzający</td></tr>
+</tbody></table></div>
+<p>Przykłady: <em>Czytanie przed snem mnie uspokaja</em> — rzeczownik <em>czytanie</em> jest podmiotem. <em>Czytając przed snem, robię notatki</em> — <em>czytając</em> jest imiesłowem przysłówkowym współczesnym, a nie rzeczownikiem.</p>
+<p><strong>Pułapka:</strong> rzeczownik odczasownikowy może zachować znaczenie czynności, ale gramatycznie zachowuje się jak rzeczownik: <em>długie czytanie, bez czytania, o czytaniu</em>. Z kolei czasownik nazywa czynność w sposób gramatycznie typowy dla czasownika: <em>czytam, czytałem, przeczytają</em>.</p>
+</section>
+<section id="s11">
+<div class="part-heading"><span class="part-num">10</span> Pisownia „nie” z rzeczownikami</div>
+<p>W typowych połączeniach <strong>„nie” z rzeczownikami piszemy łącznie</strong>: <em>nieprzyjaciel, niepokój, nieład, nieszczęście, nieczytanie</em>. Rozdzielna pisownia występuje m.in. wtedy, gdy „nie” jest wyraźnym zaprzeczeniem lub pojawia się przeciwstawienie:</p>
+<ul>
+<li><em>To nie przyjaciel, lecz wróg.</em></li>
+<li><em>Nie pokój, ale wojna.</em> — zaprzeczenie i przeciwstawienie znaczeń.</li>
+</ul>
+<p>Porównaj:
+- <em>Nieprzyjaciel nadchodził.</em> — rzeczownik oznacza wroga.
+- <em>To nie przyjaciel przyszedł, tylko sąsiad.</em> — zaprzeczamy, że przyszedł przyjaciel.</p>
+<p>Nie opieraj decyzji wyłącznie na tym, czy zdanie zawiera słowo <em>lecz</em> lub <em>ale</em>; sprawdź, czy chodzi o utrwaloną nazwę, czy o rzeczywiste zaprzeczenie. W razie wątpliwości dotyczącej szczególnej konstrukcji sprawdź aktualne zasady ortograficzne.</p>
+</section>
+<section id="s12">
+<div class="part-heading"><span class="part-num">11</span> Nazwy własne i wielka litera</div>
+<p>Nazwy własne identyfikują konkretne osoby, miejsca, obiekty lub utwory. Przykłady: <em>Jan, Warszawa, Wisła, Tatry, Polska, „Akademia pana Kleksa”</em>. Nazwy pospolite zapisujemy zazwyczaj małą literą: <em>uczeń, miasto, rzeka, góra, książka</em>.</p>
+<p>Nie wystarczy stwierdzić, że rzeczownik oznacza coś ważnego — o wielkiej literze decyduje typ nazwy i obowiązujące reguły. W tytułach utworów wielka litera nie musi występować na początku każdego wyrazu. Przy nazwach instytucji, wydarzeń, mieszkańców i przymiotnikach utworzonych od nazw geograficznych obowiązują szczegółowe reguły; nie należy ich uogólniać na podstawie kilku przykładów.</p>
+</section>
+<section id="s13">
+<div class="part-heading"><span class="part-num">12</span> Funkcja rzeczownika w zdaniu</div>
+<p><strong>Część mowy</strong> odpowiada na pytanie, jakim typem wyrazu jest dana forma. <strong>Część zdania</strong> opisuje jej rolę składniową. Rzeczownik nie jest zawsze podmiotem.</p>
+<ul>
+<li><strong>Podmiot:</strong> <em>Odwaga pomaga bohaterowi.</em> — <em>odwaga</em> odpowiada na pytanie „co pomaga?”.</li>
+<li><strong>Dopełnienie:</strong> <em>Bohater okazał odwagę.</em> — <em>odwagę</em> uzupełnia znaczenie czasownika: „okazał co?”.</li>
+<li><strong>Przydawka:</strong> <em>Książka ucznia leży na stole.</em> — <em>ucznia</em> określa rzeczownik <em>książka</em> („czyja książka?”).</li>
+<li><strong>Orzecznik w orzeczeniu imiennym:</strong> <em>Mój brat jest lekarzem.</em> — <em>lekarzem</em> jest rzeczownikiem użytym jako orzecznik.</li>
+<li><strong>Wołacz w zwrocie:</strong> <em>Mamo, posłuchaj!</em> — <em>mamo</em> jest formą wołacza, używaną w zwrocie do adresata.</li>
+</ul>
+<p>W analizie składniowej trzeba rozpatrzyć całą konstrukcję. Sam fakt, że wyraz odpowiada na pytanie „kogo? czego?”, nie zawsze wystarcza do rozstrzygnięcia, jaką dokładnie pełni funkcję.</p>
+</section>
+<section id="s14">
+<div class="part-heading"><span class="part-num">13</span> Analiza zdań krok po kroku</div>
+<h3>Przykład A</h3>
+<p><em>Odwaga młodej bohaterki dodała otuchy przyjaciołom.</em></p>
+<ol>
+<li>Rzeczowniki: <em>odwaga, bohaterki, otuchy, przyjaciołom</em>.</li>
+<li><em>odwaga</em> — rzeczownik abstrakcyjny, rodzaj żeński, liczba pojedyncza, mianownik; pełni funkcję podmiotu.</li>
+<li><em>bohaterki</em> — rzeczownik, dopełniacz liczby pojedynczej; określa rzeczownik <em>odwaga</em> (czyja odwaga?).</li>
+<li><em>otuchy</em> — rzeczownik, dopełniacz liczby pojedynczej w konstrukcji <em>dodać otuchy</em>; uzupełnia znaczenie czasownika.</li>
+<li><em>przyjaciołom</em> — rzeczownik, celownik liczby mnogiej; wskazuje odbiorców tego, co zostało dodane.</li>
+</ol>
+<h3>Przykład B</h3>
+<p><em>Czytanie lektur pomaga uczniom rozwijać wyobraźnię.</em></p>
+<ol>
+<li><em>czytanie</em> — rzeczownik odczasownikowy, mianownik, podmiot.</li>
+<li><em>lektur</em> — rzeczownik, dopełniacz liczby mnogiej; określa zakres czynności czytania.</li>
+<li><em>uczniom</em> — rzeczownik, celownik liczby mnogiej; określa, komu czytanie pomaga.</li>
+<li><em>wyobraźnię</em> — rzeczownik, biernik liczby pojedynczej; dopełnienie czasownika <em>rozwijać</em>.</li>
+</ol>
+</section>
+<section id="s15">
+<div class="part-heading"><span class="part-num">14</span> Klinika błędów</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błędna forma lub wniosek</th><th>Poprawa / wyjaśnienie</th></tr></thead>
+<tbody>
+<tr><td>„Czytanie” to czasownik, bo oznacza czynność.</td><td><em>Czytanie</em> jest rzeczownikiem odczasownikowym; <em>czyta</em> jest czasownikiem.</td></tr>
+<tr><td>Każdy rzeczownik oznacza przedmiot.</td><td>Rzeczowniki nazywają też uczucia, cechy, zjawiska, czynności i pojęcia.</td></tr>
+<tr><td>Rodzaj gramatyczny to zawsze płeć.</td><td><em>Mężczyzna</em> jest rodzaju męskiego; <em>dziecko</em> — nijakiego. Rodzaj to kategoria gramatyczna.</td></tr>
+<tr><td>Każda końcówka jednoznacznie wskazuje przypadek.</td><td>Formę ustala się na podstawie zdania, składni, pytania i odmiany.</td></tr>
+<tr><td>„Drzwi jest otwarte”.</td><td><em>Drzwi są otwarte</em> — rzeczownik używany tylko w liczbie mnogiej łączy się z formą mnogą orzeczenia.</td></tr>
+<tr><td>„Widzę pies”.</td><td><em>Widzę psa</em> — typowy biernik rzeczownika męskiego żywotnego ma formę jak dopełniacz.</td></tr>
+<tr><td>„Widzę miecza” (w znaczeniu zwykłego przedmiotu).</td><td><em>Widzę miecz</em> — typowy biernik rzeczownika męskiego nieżywotnego ma formę jak mianownik.</td></tr>
+<tr><td>„To nieprzyjaciel, lecz kolega” — bez rozpoznania znaczenia.</td><td>Jeśli chodzi o zaprzeczenie i przeciwstawienie: <em>To nie przyjaciel, lecz kolega</em>.</td></tr>
+<tr><td>Każdy wyraz po przyimku jest dopełnieniem.</td><td>Przyimek wpływa na przypadek, ale funkcję składniową ustala się w całej konstrukcji.</td></tr>
+<tr><td>Rzeczownik zawsze pełni funkcję podmiotu.</td><td>Może być m.in. dopełnieniem, przydawką lub orzecznikiem.</td></tr>
+</tbody></table></div>
+</section>
+<section id="s16">
+<div class="part-heading"><span class="part-num">15</span> Ćwiczenia — poziom podstawowy</div>
+<h3>Zadanie 1. Wskaż rzeczowniki</h3>
+<p>W zdaniu <em>Mały podróżnik z odwagą wszedł do ciemnej jaskini i usłyszał szum wody</em> wypisz rzeczowniki.</p>
+<h3>Zadanie 2. Klasyfikacja</h3>
+<p>Przyporządkuj wyrazy do grup: konkretne, abstrakcyjne, własne, odczasownikowe. Kategorie mogą się nakładać.</p>
+<p><em>Warszawa, cierpliwość, bieganie, pies, czytanie, Wisła, radość, okno.</em></p>
+<h3>Zadanie 3. Rodzaj i liczba</h3>
+<p>Określ rodzaj i liczbę gramatyczną: <em>noc, mężczyzna, dziecko, uczniowie, rodzeństwo, nożyczki</em>.</p>
+<h3>Zadanie 4. Przypadek</h3>
+<p>Nazwij przypadek wyróżnionego rzeczownika:
+1. Nie ma <strong>zeszytu</strong>.
+2. Przyglądam się <strong>obrazowi</strong>.
+3. Rozmawiamy o <strong>wakacjach</strong>.
+4. Idę z <strong>siostrą</strong>.
+5. <strong>Przyjacielu</strong>, zaczekaj!</p>
+<h3>Zadanie 5. Uzupełnij formę</h3>
+<p>Wstaw poprawną formę rzeczownika w nawiasie:
+1. Nie widzę (pies) __________.
+2. Przyglądam się (książka) __________.
+3. Idę z (kolega) __________.
+4. Nie ma (dziecko) __________ w sali.
+5. Rozmawiam o (przyjaźń) __________.</p>
+<h3>Zadanie 6. Rozróżnij części mowy</h3>
+<p>Określ, czy wyróżniony wyraz jest rzeczownikiem, czasownikiem czy imiesłowem:
+1. <strong>Pisanie</strong> listów wymaga skupienia.
+2. Ona <strong>pisze</strong> list.
+3. <strong>Piszący</strong> uczeń nie słyszał dzwonka.
+4. <strong>Odkrycie</strong> nowej planety wzbudziło zainteresowanie.</p>
+<h3>Zadanie 7. Popraw błędy</h3>
+<p>Popraw zdania i krótko uzasadnij:
+1. Te drzwi jest zamknięte.
+2. Nie ma uczeń w klasie.
+3. Warszawa jest dużym miastem, a warszawa leży nad Wisłą.
+4. Czytając lekturę jest przyjemne.</p>
+</section>
+<section id="s17">
+<div class="part-heading"><span class="part-num">16</span> Ćwiczenia — poziom średni</div>
+<h3>Zadanie 8. Pełna analiza</h3>
+<p>Przeanalizuj rzeczowniki w zdaniu: <em>Pamięć o bohaterach dodaje odwagi młodym ludziom.</em> Dla każdego rzeczownika określ przypadek, liczbę, rodzaj (jeśli można go ustalić) i funkcję w zdaniu.</p>
+<h3>Zadanie 9. „Nie” z rzeczownikami</h3>
+<p>Wybierz poprawny zapis i wyjaśnij różnicę:
+1. To (nieprzyjaciel / nie przyjaciel), lecz sprzymierzeniec.
+2. W opowiadaniu pojawił się (niepokój / nie pokój) bohatera.
+3. To (nie przygoda / nieprzygoda), lecz zwykły spacer.</p>
+<h3>Zadanie 10. Nazwa własna czy pospolita?</h3>
+<p>Popraw wielkie i małe litery: <em>W sobotę odwiedziliśmy warszawę i spacerowaliśmy nad wisłą. Potem czytaliśmy „akademię pana kleksa”.</em></p>
+<h3>Zadanie 11. Funkcja w zdaniu</h3>
+<p>Określ funkcję rzeczowników zapisanych pogrubieniem:
+1. <strong>Odwaga</strong> jest ważna.
+2. Bohater okazał <strong>odwagę</strong>.
+3. <strong>Odwaga</strong> bohatera zachwyciła czytelników.
+4. Moja siostra jest <strong>lekarką</strong>.</p>
+<h3>Zadanie 12. Przypadek a końcówka</h3>
+<p>Wyjaśnij, dlaczego nie wolno rozpoznawać przypadku wyłącznie na podstawie końcówki. Podaj dwa przykłady, w których podobna końcówka występuje w różnych funkcjach lub przypadkach.</p>
+</section>
+<section id="s18">
+<div class="part-heading"><span class="part-num">17</span> Ćwiczenia — poziom konkursowy</div>
+<h3>Zadanie 13. Pułapka klasyfikacyjna</h3>
+<p>W zdaniu <em>Młodzież długo rozmawiała o przyszłości, a potem uczniowie zapisali swoje plany</em> wskaż rzeczowniki. Wyjaśnij, dlaczego <em>młodzież</em> ma formę liczby pojedynczej, mimo że oznacza wiele osób, oraz określ rodzaj i liczbę wyrazu <em>uczniowie</em>.</p>
+<h3>Zadanie 14. Rzeczownik odczasownikowy</h3>
+<p>Porównaj zdania:
+A. <em>Bieganie po lesie uspokaja.</em>
+B. <em>Biegając po lesie, słucham ptaków.</em>
+C. <em>Biegam po lesie.</em></p>
+<p>Wskaż formy związane z czasownikiem <em>biegać</em>, nazwij ich części mowy i uzasadnij odpowiedź.</p>
+<h3>Zadanie 15. Analiza wieloetapowa</h3>
+<p>Przeanalizuj zdanie: <em>Po przeczytaniu opowiadania uczennica napisała recenzję o odwadze bohaterów.</em>
+1. Wypisz wszystkie rzeczowniki.
+2. Określ przypadek i liczbę każdego z nich.
+3. Wskaż rzeczownik odczasownikowy, jeśli występuje.
+4. Wskaż rzeczownik pełniący funkcję podmiotu i dwa rzeczowniki pełniące inne funkcje.
+5. Uzasadnij, dlaczego <em>przeczytaniu</em> jest rzeczownikiem, a nie czasownikiem.</p>
+<h3>Zadanie 16. Oceń stwierdzenia</h3>
+<p>Zapisz P (prawda) lub F (fałsz) i popraw każde fałszywe stwierdzenie:
+1. Każdy rzeczownik ma liczbę pojedynczą i mnogą.
+2. Rzeczownik rodzaju męskiego zawsze oznacza osobę płci męskiej.
+3. W zdaniu <em>Czytanie jest pożyteczne</em> wyraz <em>czytanie</em> jest rzeczownikiem.
+4. Wszystkie rzeczowniki odpowiadające na pytanie „kogo?” są dopełnieniami.
+5. W zdaniu <em>Widzę psa</em> forma <em>psa</em> jest biernikiem.
+6. Rzeczownik może być orzecznikiem.</p>
+</section>
+<section id="s19">
+<div class="part-heading"><span class="part-num">18</span> Klucz odpowiedzi i objaśnienia</div>
+<p><strong>Zadanie 1:</strong> <em>podróżnik, odwagą, jaskini, szum, wody</em>. Wyraz <em>wody</em> jest rzeczownikiem, mimo że w tym zdaniu określa dopełnienie nazwy <em>szum</em>.</p>
+<p><strong>Zadanie 2:</strong> <em>Warszawa</em> — własny; <em>cierpliwość</em> — abstrakcyjny; <em>bieganie</em> — odczasownikowy i abstrakcyjny; <em>pies</em> — konkretny; <em>czytanie</em> — odczasownikowy; <em>Wisła</em> — własny; <em>radość</em> — abstrakcyjny; <em>okno</em> — konkretny. W niektórych kontekstach klasyfikacja znaczeniowa może wymagać dopowiedzenia.</p>
+<p><strong>Zadanie 3:</strong> <em>noc</em> — rodzaj żeński, liczba pojedyncza; <em>mężczyzna</em> — rodzaj męski, liczba pojedyncza; <em>dziecko</em> — nijaki, liczba pojedyncza; <em>uczniowie</em> — męskoosobowy, liczba mnoga; <em>rodzeństwo</em> — nijaki, liczba pojedyncza; <em>nożyczki</em> — liczba mnoga, rodzaj określa się zgodnie z użyciem i zgodą gramatyczną, nie przez dopisywanie formy pojedynczej.</p>
+<p><strong>Zadanie 4:</strong> 1. dopełniacz; 2. celownik; 3. miejscownik (po przyimku <em>o</em>); 4. narzędnik; 5. wołacz.</p>
+<p><strong>Zadanie 5:</strong> 1. psa; 2. książce; 3. kolegą; 4. dziecka; 5. przyjaźni.</p>
+<p><strong>Zadanie 6:</strong> 1. rzeczownik odczasownikowy; 2. czasownik; 3. imiesłów przymiotnikowy czynny; 4. rzeczownik odczasownikowy.</p>
+<p><strong>Zadanie 7:</strong> 1. <em>Te drzwi są zamknięte</em> — rzeczownik używany tylko w liczbie mnogiej. 2. <em>Nie ma ucznia w klasie</em> — konstrukcja <em>nie ma kogo? czego?</em> wymaga dopełniacza. 3. <em>Warszawa jest dużym miastem, a Wisła przepływa przez…</em> — w pierwotnym zdaniu <em>warszawa</em> powinno być nazwą własną wielką literą, a nazwa rzeki również wielką literą; przykładowa poprawa: <em>Warszawa jest dużym miastem, a Wisła przepływa przez wiele miejscowości.</em> 4. <em>Czytanie lektury jest przyjemne</em> albo <em>Czytając lekturę, można miło spędzić czas</em> — trzeba dopasować konstrukcję składniową.</p>
+<p><strong>Zadanie 8:</strong> <em>pamięć</em> — mianownik, lp., rodzaj żeński, podmiot; <em>bohaterach</em> — miejscownik, lm., forma po przyimku <em>o</em>, określenie rzeczownika <em>pamięć</em> (pamięć o kim?); <em>odwagi</em> — dopełniacz, lp., rodzaj żeński, dopełnienie w konstrukcji <em>dodaje odwagi</em>; <em>ludziom</em> — celownik, lm., forma męskoosobowa, wskazuje odbiorców (komu dodaje odwagi?).</p>
+<p><strong>Zadanie 9:</strong> 1. <em>To nie przyjaciel, lecz sprzymierzeniec</em> — zaprzeczenie; 2. <em>niepokój bohatera</em> — rzeczownik nazywający stan, pisownia łączna; 3. <em>To nie przygoda, lecz zwykły spacer</em> — zaprzeczenie z przeciwstawieniem.</p>
+<p><strong>Zadanie 10:</strong> <em>W sobotę odwiedziliśmy Warszawę i spacerowaliśmy nad Wisłą. Potem czytaliśmy „Akademię pana Kleksa”.</em> Zapis tytułu wymaga uwzględnienia zasad pisowni tytułów utworów.</p>
+<p><strong>Zadanie 11:</strong> 1. <em>odwaga</em> — podmiot; 2. <em>odwagę</em> — dopełnienie; 3. <em>odwaga</em> — podmiot, <em>bohatera</em> — przydawka; 4. <em>lekarką</em> — orzecznik w orzeczeniu imiennym.</p>
+<p><strong>Zadanie 12:</strong> Końcówki mogą się powtarzać w różnych formach, a część rzeczowników odmienia się nieregularnie lub jest nieodmienna. Np. <em>książce</em> może być celownikiem (<em>przyglądam się książce</em>) albo miejscownikiem (<em>mówię o książce</em>). Forma <em>domu</em> może być dopełniaczem (<em>nie ma domu</em>) albo miejscownikiem (<em>mieszkam w domu</em>). Kontekst, przyimek i składnia rozstrzygają przypadek.</p>
+<p><strong>Zadanie 13:</strong> Rzeczowniki: <em>młodzież, przyszłości, uczniowie, plany</em>. <em>Młodzież</em> to rzeczownik rodzaju żeńskiego w liczbie pojedynczej, choć ma znaczenie zbiorowe. <em>Uczniowie</em> to liczba mnoga, rodzaj męskoosobowy.</p>
+<p><strong>Zadanie 14:</strong> A: <em>bieganie</em> — rzeczownik odczasownikowy, podmiot. B: <em>biegając</em> — imiesłów przysłówkowy współczesny, forma nieodmienna; C: <em>biegam</em> — czasownik w formie osobowej, 1. osoba liczby pojedynczej czasu teraźniejszego.</p>
+<p><strong>Zadanie 15:</strong> Rzeczowniki: <em>przeczytaniu, opowiadania, uczennica, recenzję, odwadze, bohaterów</em>. <em>przeczytaniu</em> — miejscownik w konstrukcji <em>po przeczytaniu</em> (po + miejscownik), liczba pojedyncza, rzeczownik odczasownikowy; <em>opowiadania</em> — dopełniacz liczby pojedynczej (czego przeczytaniu?); <em>uczennica</em> — mianownik liczby pojedynczej, rodzaj żeński, podmiot; <em>recenzję</em> — biernik liczby pojedynczej, dopełnienie; <em>odwadze</em> — miejscownik po <em>o</em>; <em>bohaterów</em> — dopełniacz liczby mnogiej, określenie rzeczownika <em>odwadze</em> (odwaga kogo?).</p>
+<p><strong>Zadanie 16:</strong> 1. F — niektóre występują tylko w jednej liczbie; 2. F — rodzaj gramatyczny nie zawsze odpowiada płci; 3. P; 4. F — pytanie przypadkowe nie przesądza funkcji składniowej; 5. P; 6. P.</p>
+</section>
+<section id="s20">
+<div class="part-heading"><span class="part-num">19</span> Test końcowy — 20 punktów treningowych</div>
+<ol>
+<li>(2 pkt) Wypisz wszystkie rzeczowniki ze zdania: <em>Po burzy dzieci z radością wróciły do domu.</em></li>
+<li>(2 pkt) Określ przypadek i liczbę form: <em>uczniom, przyjaźni, drzwi, książkę</em>.</li>
+<li>(2 pkt) Wyjaśnij różnicę między <em>czyta</em>, <em>czytanie</em> i <em>czytający</em>.</li>
+<li>(2 pkt) Uzupełnij: <em>Nie ma (kot) ___; widzę (kot) ___; idę z (kot) ___</em>.</li>
+<li>(2 pkt) Popraw zapis: <em>To nieprzyjaciel, lecz kolega. Widziałem warszawę i wisłę.</em></li>
+<li>(2 pkt) Określ funkcję rzeczowników: <em>Odwaga bohaterki zachwyciła czytelników.</em></li>
+<li>(2 pkt) Wyjaśnij, dlaczego <em>młodzież</em> jest w liczbie pojedynczej, a <em>uczniowie</em> w mnogiej.</li>
+<li>(2 pkt) Podaj dwa rzeczowniki abstrakcyjne i dwa konkretne oraz uzasadnij wybór.</li>
+<li>(2 pkt) Odmień <em>książka</em> w dopełniaczu, celowniku, bierniku i narzędniku liczby pojedynczej.</li>
+<li>(2 pkt) Ułóż zdanie z rzeczownikiem odczasownikowym i nazwij jego funkcję w zdaniu.</li>
+</ol>
+<h3>Klucz do testu</h3>
+<ol>
+<li><em>burzy, dzieci, radością, domu</em> (2 pkt za komplet, 1 pkt za częściowy poprawny zestaw).</li>
+<li><em>uczniom</em> — celownik lm.; <em>przyjaźni</em> — forma może zależeć od kontekstu (np. D./C./Ms. lp.); <em>drzwi</em> — lm., przypadek zależy od zdania; <em>książkę</em> — B. lp. (2 pkt za poprawne rozpoznanie i wskazanie, gdzie sam wyraz nie wystarcza).</li>
+<li><em>czyta</em> — czasownik; <em>czytanie</em> — rzeczownik odczasownikowy; <em>czytający</em> — zwykle imiesłów przymiotnikowy czynny.</li>
+<li><em>kota; kota; kotem</em>.</li>
+<li><em>To nie przyjaciel, lecz kolega. Widziałem Warszawę i Wisłę.</em> (W zdaniu z „nieprzyjaciel” sens byłby inny: wróg.)</li>
+<li><em>odwaga</em> — podmiot; <em>bohaterki</em> — przydawka; <em>czytelników</em> — dopełnienie.</li>
+<li><em>Młodzież</em> to rzeczownik zbiorowy rodzaju żeńskiego, zwykle w liczbie pojedynczej; <em>uczniowie</em> to forma liczby mnogiej, męskoosobowej.</li>
+<li>Przykładowo: abstrakcyjne <em>radość, odwaga</em>; konkretne <em>stół, pies</em>. Uzasadnienie ma wskazywać znaczenie.</li>
+<li><em>książki; książce; książkę; książką</em>.</li>
+<li>Dowolne poprawne zdanie, np. <em>Czytanie pomaga w nauce</em> — <em>czytanie</em> jest podmiotem.</li>
+</ol>
+<p><strong>Interpretacja wyniku (autorska):</strong> 18–20 — bardzo dobrze; 15–17 — dobrze, powtórz zadania z błędami; 11–14 — wróć do tabel przypadków i rozpoznawania części mowy; 0–10 — przerób lekcję ponownie etapami. To skala treningowa.</p>
+</section>
+<section id="s21">
+<div class="part-heading"><span class="part-num">20</span> Fiszki do powtórki</div>
+<ol>
+<li>Jakie pytania są typowe dla rzeczownika? — <em>kto? co?</em></li>
+<li>Ile przypadków ma polski rzeczownik? — Siedem.</li>
+<li>Jakie są trzy rodzaje w liczbie pojedynczej? — Męski, żeński, nijaki.</li>
+<li>Jak nazywa się rozróżnienie rodzajów w liczbie mnogiej ważne dla zgody? — Męskoosobowy i niemęskoosobowy.</li>
+<li>Czym jest rzeczownik abstrakcyjny? — Nazywa np. cechę, stan, uczucie lub pojęcie.</li>
+<li>Podaj rzeczownik odczasownikowy. — Np. <em>czytanie, bieganie, pisanie</em>.</li>
+<li>Jak brzmi typowy biernik męskiego rzeczownika żywotnego? — Jak dopełniacz: <em>widzę psa</em>.</li>
+<li>Jak brzmi typowy biernik męskiego rzeczownika nieżywotnego? — Jak mianownik: <em>widzę stół</em>.</li>
+<li>Podaj rzeczownik używany tylko w liczbie mnogiej. — <em>Drzwi, nożyczki, spodnie</em>.</li>
+<li>Czy rzeczownik zawsze jest podmiotem? — Nie; może pełnić różne funkcje składniowe.</li>
+<li>Co rozstrzyga przypadek, gdy końcówka jest niejednoznaczna? — Kontekst, składnia, przyimek i pytanie.</li>
+<li>Jak zwykle zapisujemy „nie” z rzeczownikiem? — Łącznie; rozdzielnie m.in. przy wyraźnym zaprzeczeniu/przeciwstawieniu.</li>
+</ol>
+</section>
+<section id="s22">
+<div class="part-heading"><span class="part-num">21</span> Samoocena i plan naprawczy</div>
+<p>Zaznacz: <strong>umiem samodzielnie / umiem z pomocą / muszę powtórzyć</strong>.</p>
+<ul>
+<li>Rozpoznaję rzeczownik w kontekście.</li>
+<li>Odróżniam rzeczownik odczasownikowy od czasownika i imiesłowu.</li>
+<li>Rozpoznaję rodzaj, liczbę i przypadek.</li>
+<li>Odmieniam rzeczowniki i sprawdzam formę w zdaniu.</li>
+<li>Stosuję wzorzec biernika rzeczowników męskich.</li>
+<li>Rozpoznaję rzeczowniki tylko mnogie i zbiorowe.</li>
+<li>Poprawnie zapisuję „nie” i nazwy własne.</li>
+<li>Rozróżniam część mowy i część zdania.</li>
+<li>Potrafię wyjaśnić, dlaczego odpowiedź jest poprawna.</li>
+</ul>
+<p>Jeśli trudność sprawia <strong>przypadek</strong>, wróć do tabeli z sekcji 6 i analizuj całe zdania. Jeśli trudność sprawia <strong>rozpoznawanie części mowy</strong>, porównaj sekcję 3 z sekcją 9. Jeśli trudność sprawia <strong>funkcja w zdaniu</strong>, przećwicz sekcję 12 i zadania 8 oraz 11.</p>
+</section>
+<section id="s23">
+<div class="part-heading"><span class="part-num">22</span> Materiały powiązane</div>
+<ul>
+<li><code>PL_G02_czasownik.md</code> — porównanie rzeczownika odczasownikowego i czasownika.</li>
+<li><code>PL_G03_przymiotnik.md</code> — zgoda przymiotnika z rzeczownikiem.</li>
+<li><code>PL_G04_liczebnik.md</code> — połączenia liczebników z rzeczownikami, w tym formy zbiorowe.</li>
+<li><code>PL_G05_zaimek.md</code> — odróżnianie zaimków <em>ktoś, coś, nic</em> od rzeczowników.</li>
+<li><code>PL_G06_imieslowy.md</code> — rozpoznawanie imiesłowów.</li>
+<li><code>PL_G12_czesci_zdania.md</code>, <code>PL_G13_zwiazki_wyrazowe.md</code>, <code>PL_G14_zdanie_pojedyncze.md</code> — analiza składniowa.</li>
+<li>Lekcja <code>L005-PL-Kajko-i-Kokosz-rzeczownik</code> — zastosowanie gramatyki w pracy z tekstem literackim i komiksem.</li>
+</ul>
+</section>
+<section id="s24">
+<div class="part-heading"><span class="part-num">23</span> Źródła i uwagi redakcyjne</div>
+<p>Lekcja została opracowana na podstawie istniejącego materiału <code>PL_G01_rzeczownik.md</code>, sekcji o rzeczowniku w pliku <code>POLSKI_PODSTAWA_PLUS</code>, materiałów L005 oraz powiązanych notatek gramatycznych w repozytorium. Zadania i skala testu są autorskie i treningowe. Przed uznaniem lekcji za ostatecznie zweryfikowaną należy przeprowadzić niezależny audyt poprawności językowej i porównać zakres z aktualnymi wymaganiami szkoły oraz wymaganiami konkursowymi właściwymi dla danego województwa.</p>
+</section>
+
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

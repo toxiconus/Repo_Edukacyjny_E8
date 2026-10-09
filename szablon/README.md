@@ -10,6 +10,14 @@ python3 narzedzia/lekcja_html.py -p <che|bio|pol|ang|oli> plik.md [...] [-o kata
 
 Wynik: jeden samodzielny plik HTML (style, skrypt i grafiki w środku) — działa offline i na telefonie. Domyślnie trafia do `<folder pliku>/../html/`. Brak `@opis` pod grafiką w nowej lekcji przerywa build (zasada z CLAUDE.md).
 
+## Wszystkie lekcje naraz
+
+```
+python3 narzedzia/zbuduj_wszystkie.py [pol bio che oli]
+```
+
+Wynik: `polski/html/`, `biologia/html/`, `chemia/html/` (kanon `lekcje_md`), `olimpiada/html/`, w każdym `index.html`. Bloki ```…``` stają się ramkami z tekstem stałej szerokości (schematy ASCII zostają), komentarze `<!-- -->` nie połykają akapitu, poziomy nagłówków są ujednolicane.
+
 ## Pliki
 
 | Plik | Rola | Edycja |

@@ -487,9 +487,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (6 pl., 37 KB)
+## narzedzia  (7 pl., 50 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
+- `lekcja_html.py` 14 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
@@ -664,6 +665,34 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## polski/podstawy  (23 pl., 373 KB)
 - (zwinięte; `ls polski/podstawy`)
+
+## szablon  (4 pl., 65 KB)
+- `README.md` 4 KB
+- `baza.css` 45 KB
+- `lekcja.js` 4 KB
+- `ulepszenia.css` 12 KB
+
+## szablon/motywy  (5 pl., 20 KB)
+- `ang.css` 2 KB
+- `bio.css` 11 KB
+- `che.css` 2 KB
+- `oli.css` 3 KB
+- `pol.css` 2 KB
+
+## szablon/podglad  (6 pl., 407 KB)
+- ⚠`ang.html` 67 KB
+- ⚠`bio.html` 136 KB
+- ⚠`che.html` 66 KB
+- `index.html` 2 KB
+- ⚠`oli.html` 66 KB
+- ⚠`pol.html` 69 KB
+
+## szablon/przyklady  (5 pl., 7 KB)
+- `ang.md` 2 KB
+- `bio.md` 1 KB
+- `che.md` 1 KB
+- `oli.md` 1 KB
+- `pol.md` 2 KB
 
 ## wizualizacje-projekty  (3 pl., 72 KB)
 - `PROJEKT.md` 9 KB

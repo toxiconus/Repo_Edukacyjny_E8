@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="pol">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>G07 · Przysłówek</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* motyw pol (Język polski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#7a2848;--accent-dark:#561a32;--accent-soft:#f6e9ee;--accent-line:#e2c3cf;--accent-glow:rgba(122,40,72,.15);--hl-key:#7a2848;--hl-key-bg:#f3dfe7;--hl-formula:#561a32;--hl-formula-bg:#f6e9ee;--bg:#fbfafa;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 140 200%27%3E%3Ctext x=%276%27 y=%27120%27 font-family=%27Georgia,serif%27 font-size=%27150%27 fill=%27%237a2848%27%3E%E2%80%9E%3C/text%3E%3Ctext x=%2760%27 y=%27190%27 font-family=%27Georgia,serif%27 font-size=%2770%27 font-style=%27italic%27 fill=%27%237a2848%27%3EAa%3C/text%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}}
+:root[data-theme=dark]{--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}
+
+/* przykłady i cytaty literackie krojem szeryfowym */
+.hero h1{font-family:var(--serif);font-weight:700;letter-spacing:-.2px}
+.part-heading{font-family:var(--serif);letter-spacing:0}
+.przyklad,.lk-quote blockquote{font-family:var(--serif)}
+.przyklad{display:block;margin:8px 0;padding:6px 0 6px 14px;border-left:2px solid var(--accent-line);font-size:16.5px;line-height:1.7}
+/* części zdania — szkolne oznaczenia (podkreślenia) */
+.z-pod{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-orz{text-decoration:underline double;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-prz{text-decoration:underline wavy;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-dop{text-decoration:underline dashed;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-oko{text-decoration:underline dotted;text-decoration-thickness:2.5px;text-underline-offset:5px}
+.z-leg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--text-soft);margin:6px 0 12px}
+.z-pod,.z-orz,.z-prz,.z-dop,.z-oko{text-decoration-color:var(--accent)}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Język polski</span><span class="lk-title">G07 Przysłówek</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Język polski, lekcja G07</div><h1>Przysłówek</h1><p class="lead">Jak? Gdzie? Kiedy? W jakim stopniu? — nieodmienny, ale stopniowany; szybki czy szybko, „po polsku” czy „popolsku”.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span></div><div class="lk-meta"><span><b>Zakres:</b> gramatyka — części mowy i składnia; powiązania: L002, G03, G12</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">0. Cel i kryterium gotowości</a><a class="toc-link" href="#s2">1. Definicja i pytania</a><a class="toc-link" href="#s3">2. Jak rozpoznać — procedura krok po kroku</a><a class="toc-link" href="#s4">3. Formy, odmiana lub rodzaje</a><a class="toc-link" href="#s5">4. Funkcja w zdaniu</a><a class="toc-link" href="#s6">5. Pisownia i interpunkcja</a><a class="toc-link" href="#s7">6. Przykłady z lektur</a><a class="toc-link" href="#s8">7. Klinika błędów</a><a class="toc-link" href="#s9">8. Ćwiczenia A — podstawa</a><a class="toc-link" href="#s10">9. Ćwiczenia B — trening i C — konkurs</a><a class="toc-link" href="#s11">10. Zadania w stylu CKE</a><a class="toc-link" href="#s12">11. Fiszki</a><a class="toc-link" href="#s13">12. Wizualizacja</a><a class="toc-link" href="#s14">13. Uzupełnienie po audycie braków — wersja 2.0</a><a class="toc-link" href="#s15">14. Audyt po uzupełnieniu</a><a class="toc-link" href="#s16">14. Drugi cykl opracowania: przysłówek w analizie zdania v3.0</a></nav></details>
+<section id="s1">
+<div class="part-heading"><span class="part-num">0</span> Cel i kryterium gotowości <span class="level-badge level-basic">E8</span></div>
+<p>Potrafię rozpoznać przysłówek i odróżnić go od przymiotnika (<em>szybki — szybko</em>).
+Potrafię nazwać rodzaj znaczeniowy przysłówka (sposobu, miejsca, czasu, stopnia i miary).
+Potrafię stopniować przysłówki regularnie, nieregularnie i opisowo.
+Potrafię zapisać „nie” z przysłówkiem i poprawnie zapisać wyrażenia typu <em>po polsku, na pewno, naprzeciwko</em>.
+Potrafię wskazać przysłówek jako okolicznik.</p>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">1</span> Definicja i pytania <span class="level-badge level-basic">E8</span></div>
+<p><strong>Przysłówek</strong> — nieodmienna część mowy, która określa czasownik (<em>biegnie <strong>szybko</strong></em>), przymiotnik (<strong><em>bardzo</strong> wysoki</em>) lub inny przysłówek (<strong><em>zbyt</strong> późno</em>). Nazywa sposób, miejsce, czas, stopień lub miarę.</p>
+<p><strong>Pytania:</strong> jak? gdzie? kiedy? skąd? dokąd? jak bardzo? ile?</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj</th><th>Pytanie</th><th>Przykłady</th></tr></thead>
+<tbody>
+<tr><td>sposobu</td><td>jak? w jaki sposób?</td><td>szybko, cicho, dobrze, pieszo, po cichu</td></tr>
+<tr><td>miejsca</td><td>gdzie? skąd? dokąd?</td><td>tu, tam, wysoko, daleko, wszędzie, blisko</td></tr>
+<tr><td>czasu</td><td>kiedy? jak długo?</td><td>dziś, wczoraj, wcześnie, zawsze, długo, wkrótce</td></tr>
+<tr><td>stopnia i miary</td><td>jak bardzo? ile? w jakim stopniu?</td><td>bardzo, trochę, zbyt, dużo, mało, całkiem</td></tr>
+</tbody></table></div>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">2</span> Jak rozpoznać — procedura krok po kroku <span class="level-badge level-basic">E8</span></div>
+<ol>
+<li>Zadaj pytanie <strong>jak? gdzie? kiedy? jak bardzo?</strong> — przysłówek zwykle odpowiada na nie przy czasowniku.</li>
+<li>Sprawdź, czy wyraz się <strong>nie odmienia</strong> (<em>szybko</em> zawsze tak samo) — przymiotnik się odmienia (<em>szybki, szybkiego</em>).</li>
+<li>Sprawdź, co określa: czasownik → zapewne przysłówek (<em>mówi głośno</em>); rzeczownik → przymiotnik (<em>głośny śmiech</em>).</li>
+<li>Przysłówki odprzymiotnikowe kończą się zwykle na <strong>-o</strong> lub <strong>-e</strong>: <em>szybko, ładnie, dobrze</em>.</li>
+<li>Trudne przypadki: <em>tu, tam, wtedy, gdzie</em> — to przysłówki zaimkowe (zaimki przysłowne, G05); <em>blisko domu</em> — tu <em>blisko</em> pełni funkcję przyimka (z dopełniaczem), <em>mieszka blisko</em> — przysłówek (G08); <em>jest zimno</em> — przysłówek w orzeczeniu zdania bezpodmiotowego.</li>
+</ol>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">3</span> Formy, odmiana lub rodzaje <span class="level-badge level-basic">E8</span></div>
+<p>Przysłówek <strong>nie odmienia się</strong> przez przypadki, liczby, rodzaje ani osoby. Część przysłówków (odprzymiotnikowe) <strong>stopniuje się</strong>:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Stopniowanie</th><th>Równy</th><th>Wyższy</th><th>Najwyższy</th></tr></thead>
+<tbody>
+<tr><td>regularne</td><td>szybko</td><td>szybciej</td><td>najszybciej</td></tr>
+<tr><td>regularne</td><td>ładnie</td><td>ładniej</td><td>najładniej</td></tr>
+<tr><td>nieregularne</td><td>dobrze</td><td>lepiej</td><td>najlepiej</td></tr>
+<tr><td>nieregularne</td><td>źle</td><td>gorzej</td><td>najgorzej</td></tr>
+<tr><td>nieregularne</td><td>dużo</td><td>więcej</td><td>najwięcej</td></tr>
+<tr><td>nieregularne</td><td>mało</td><td>mniej</td><td>najmniej</td></tr>
+<tr><td>opisowe</td><td>interesująco</td><td>bardziej interesująco</td><td>najbardziej interesująco</td></tr>
+<tr><td>niestopniowalne</td><td>dziś, tu, pieszo, wczoraj</td><td>—</td><td>—</td></tr>
+</tbody></table></div>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">4</span> Funkcja w zdaniu <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<ul>
+<li>Najczęściej <strong>okolicznik</strong>:
+<em>Bilbo szedł <strong>cicho</strong>.</em> (jak? — okolicznik sposobu)
+<em>Smok mieszkał <strong>daleko</strong>.</em> (gdzie? — okolicznik miejsca)
+<em>Krasnoludy wyruszyły <strong>wcześnie</strong>.</em> (kiedy? — okolicznik czasu)</li>
+<li><strong>Określenie przymiotnika lub przysłówka</strong> (w związku przynależności, G13): <em>bardzo odważny</em>, <em>zbyt późno</em>.</li>
+<li><strong>Orzecznik</strong> w zdaniu bezpodmiotowym: <em>Było <strong>zimno</strong>.</em> <em>W lesie zrobiło się <strong>ciemno</strong>.</em></li>
+</ul>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">5</span> Pisownia i interpunkcja <span class="level-badge level-basic">E8</span></div>
+<p><strong>„Nie” z przysłówkami:</strong>
+- z przysłówkami <strong>odprzymiotnikowymi</strong> — <strong>łącznie we wszystkich stopniach</strong> (zasady od 1.01.2026): <em>niedobrze, nieładnie, nielepiej, nienajlepiej, niewyraźnie</em>;
+- z pozostałymi przysłówkami — <strong>rozdzielnie</strong>: <em>nie tu, nie teraz, nie dziś, nie bardzo, nie zawsze, nie całkiem</em>;
+- łącznie także wyrazy, które bez „nie-” nie istnieją lub zmieniają znaczenie: <em>niebawem, niechcący, nieco, niekiedy, nieraz</em> (= często).</p>
+<p><strong>Wyrażenia przyimkowe pisane rozdzielnie</strong> (to nie są jednolite przysłówki): <em>po polsku, po angielsku, po cichu, po trochu, na pewno, na razie, na zewnątrz, w ogóle, w końcu, z powrotem, do widzenia, bez przerwy</em>.</p>
+<p><strong>Przysłówki złożone pisane łącznie:</strong> <em>naprzeciwko, dookoła, naprawdę, nadal, wkrótce, natychmiast, potem, wprost, zaraz, znowu, odtąd, dotąd, nareszcie</em>.</p>
+<p>Przecinek: przysłówek nie wymaga przecinka; przecinek stawiamy przy wyliczeniu przysłówków bez spójnika (<em>szedł powoli, ostrożnie, cicho</em>) i przed <em>a, ale, lecz</em> (<em>szedł powoli, ale pewnie</em>).</p>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">6</span> Przykłady z lektur <span class="level-badge level-basic">E8</span></div>
+<ol>
+<li>Bilbo zakradł się <strong><em>cicho</strong></em> do jaskini Smauga. („Hobbit”) → przysłówek sposobu, okolicznik.</li>
+<li>Łucja <strong><em>natychmiast</strong></em> opowiedziała rodzeństwu o Narnii. → przysłówek czasu (pisany łącznie).</li>
+<li>Nemeczek przyszedł na plac, choć czuł się <strong><em>źle</strong></em>. („Chłopcy z Placu Broni”) → przysłówek nieodmienny, stopniowany nieregularnie (źle — gorzej — najgorzej).</li>
+<li>Mały Książę mówił, że <strong><em>dobrze</strong></em> widzi się tylko sercem. → przysłówek sposobu (parafraza).</li>
+<li>Scrooge <strong><em>nigdy</strong></em> nie dawał jałmużny — aż do Wigilii. („Opowieść wigilijna”) → przysłówek zaimkowy czasu.</li>
+<li>Staś i Nel szli <strong><em>coraz wolniej</strong></em> przez rozgrzaną pustynię. („W pustyni i w puszczy”) → przysłówek w stopniu wyższym.</li>
+<li>Rudy czuł się <strong><em>bardzo</strong></em> słabo po śledztwie. („Kamienie na szaniec”) → przysłówek stopnia określa inny przysłówek.</li>
+</ol>
+<p>(Parafrazy treści lektur.)</p>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">7</span> Klinika błędów</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead>
+<tbody>
+<tr><td>Biega szybki.</td><td>Biega szybko.</td><td>czasownik określa przysłówek</td></tr>
+<tr><td>Czuję się dobry.</td><td>Czuję się dobrze.</td><td>jak się czuję? — przysłówek</td></tr>
+<tr><td>popolsku, napewno, wogóle</td><td>po polsku, na pewno, w ogóle</td><td>wyrażenia przyimkowe — rozdzielnie</td></tr>
+<tr><td>na przeciwko, na prawdę</td><td>naprzeciwko, naprawdę</td><td>przysłówki złożone — łącznie</td></tr>
+<tr><td>nie dobrze, nie najlepiej</td><td>niedobrze, nienajlepiej</td><td>odprzymiotnikowe — łącznie (od 2026 także w stopniu wyższym i najwyższym)</td></tr>
+<tr><td>nieteraz, niezawsze</td><td>nie teraz, nie zawsze</td><td>nieodprzymiotnikowe — rozdzielnie</td></tr>
+<tr><td>bardziej lepiej</td><td>lepiej</td><td>podwójne stopniowanie</td></tr>
+<tr><td>najbardziej najszybciej</td><td>najszybciej</td><td>j.w.</td></tr>
+</tbody></table></div>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">8</span> Ćwiczenia A — podstawa <span class="level-badge level-basic">E8</span></div>
+<p><strong>A1.</strong> Podkreśl przysłówki: <em>Wczoraj Ania bardzo długo czytała w domu.</em>
+<strong>Klucz:</strong> Wczoraj, bardzo, długo. (<em>w domu</em> — wyrażenie przyimkowe)</p>
+<p><strong>A2.</strong> Utwórz przysłówki od przymiotników: <em>cichy, dobry, wesoły, zły</em>.
+<strong>Klucz:</strong> cicho, dobrze, wesoło, źle.</p>
+<p><strong>A3.</strong> Stopniuj: <em>wysoko, dobrze, dużo, interesująco</em>.
+<strong>Klucz:</strong> wyżej–najwyżej; lepiej–najlepiej; więcej–najwięcej; bardziej/najbardziej interesująco.</p>
+<p><strong>A4.</strong> Przymiotnik czy przysłówek? <em>(Głośny / Głośno) chłopiec śpiewał (głośny / głośno).</em>
+<strong>Klucz:</strong> Głośny (określa rzeczownik), głośno (określa czasownik).</p>
+<p><strong>A5.</strong> Zapisz poprawnie: <em>(nie)dobrze, (nie)dziś, (na)pewno, (po)cichu, (na)przeciwko</em>.
+<strong>Klucz:</strong> niedobrze, nie dziś, na pewno, po cichu, naprzeciwko.</p>
+<p><strong>A6.</strong> Nazwij rodzaj przysłówka: <em>pieszo, wszędzie, wkrótce, trochę</em>.
+<strong>Klucz:</strong> sposobu, miejsca, czasu, stopnia i miary.</p>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">9</span> Ćwiczenia B — trening i C — konkurs <span class="level-badge level-exam">KONKURS</span></div>
+<p><strong>B1.</strong> Wyjaśnij, dlaczego przysłówek jest nieodmienny, choć ma formy <em>szybciej, najszybciej</em>.
+<strong>Klucz:</strong> stopniowanie nie jest odmianą (przez przypadki, liczby, osoby) — to zmiana natężenia cechy.</p>
+<p><strong>B2.</strong> Ustal funkcję wyrazu <em>blisko</em> w zdaniach: <em>Mieszkam blisko.</em> / <em>Mieszkam blisko szkoły.</em>
+<strong>Klucz:</strong> 1) przysłówek, okolicznik miejsca; 2) <em>blisko szkoły</em> — wyrażenie przyimkowe (<em>blisko</em> + dopełniacz), okolicznik miejsca.</p>
+<p><strong>B3.</strong> Zapisz poprawnie i uzasadnij: <em>Czuł się nie najlepiej.</em>
+<strong>Klucz:</strong> <em>nienajlepiej</em> — przysłówek odprzymiotnikowy w stopniu najwyższym, od 2026 łącznie.</p>
+<p><strong>C1.</strong> W zdaniu <em>Było już późno, więc krasnoludy szły coraz ostrożniej.</em> wskaż przysłówki i określ funkcję każdego.
+<strong>Klucz:</strong> <em>już</em> — partykuła (nie przysłówek!); <em>późno</em> — orzecznik w zdaniu bezpodmiotowym (<em>było późno</em>); <em>coraz</em> — przysłówek stopnia, określa <em>ostrożniej</em>; <em>ostrożniej</em> — przysłówek sposobu w stopniu wyższym, okolicznik.</p>
+</section>
+<section id="s11">
+<div class="part-heading"><span class="part-num">10</span> Zadania w stylu CKE</div>
+<p><strong>Zadanie 1. (0–1)</strong>
+Wyraz <em>lepiej</em> to:
+A. przymiotnik w stopniu wyższym  B. przysłówek w stopniu wyższym  C. czasownik  D. partykuła
+<strong>Klucz:</strong> B (dobrze — lepiej — najlepiej).</p>
+<p><strong>Zadanie 2. (0–2)</strong>
+Popraw dwa błędy ortograficzne: <em>Wogóle nie znał drogi napamięć.</em>
+<strong>Klucz:</strong> W ogóle; na pamięć (po 1 pkt).</p>
+<p><strong>Zadanie 3. (0–1)</strong>
+Który zapis jest poprawny według zasad obowiązujących od 2026 roku?
+A. nie najgorzej  B. nienajgorzej
+<strong>Klucz:</strong> B.</p>
+<p><strong>Zadanie 4. (0–2)</strong>
+Uzupełnij zdanie dwoma przysłówkami różnych rodzajów i nazwij ich rodzaje: <em>Bilbo ……… szedł ……… .</em>
+<strong>Klucz:</strong> np. <em>Bilbo ostrożnie szedł naprzód.</em> — sposobu, miejsca (po 1 pkt za poprawny przysłówek z nazwą).</p>
+</section>
+<section id="s12">
+<div class="part-heading"><span class="part-num">11</span> Fiszki</div>
+<ol>
+<li>Pytania przysłówka? → jak? gdzie? kiedy? jak bardzo?</li>
+<li>Czy przysłówek się odmienia? → nie (ale część się stopniuje)</li>
+<li>Stopień wyższy od <em>dobrze</em>? → lepiej</li>
+<li>Najczęstsza funkcja? → okolicznik</li>
+<li><em>szybki</em> czy <em>szybko</em> przy czasowniku? → szybko</li>
+<li>„Nie” z przysłówkiem odprzymiotnikowym? → łącznie we wszystkich stopniach</li>
+<li><em>nie teraz</em> — łącznie czy rozdzielnie? → rozdzielnie</li>
+<li><em>po polsku</em> — pisownia? → rozdzielnie</li>
+<li><em>naprawdę</em> — pisownia? → łącznie</li>
+<li>Cztery rodzaje znaczeniowe? → sposobu, miejsca, czasu, stopnia i miary</li>
+<li><em>Było zimno</em> — funkcja <em>zimno</em>? → orzecznik w zdaniu bezpodmiotowym</li>
+<li><em>w ogóle</em> — pisownia? → rozdzielnie</li>
+</ol>
+</section>
+<section id="s13">
+<div class="part-heading"><span class="part-num">12</span> Wizualizacja</div>
+<p><strong>Grafika 1:</strong> Para „przymiotnik ↔ przysłówek”: lewa kolumna <em>szybki chłopiec</em> (strzałka do rzeczownika), prawa <em>biegnie szybko</em> (strzałka do czasownika), pod spodem tabela stopniowania.</p>
+<!-- OPIS: Dwie karty obok siebie: po lewej przymiotnik ze strzałką do rzeczownika i odmianą (szybki, szybkiego, szybkiemu), po prawej przysłówek ze strzałką do czasownika i jedną niezmienną formą. Pod nimi wiersze stopniowania: szybko–szybciej–najszybciej, dobrze–lepiej–najlepiej. Wniosek: przymiotnik określa rzeczownik i się odmienia, przysłówek określa czasownik i się nie odmienia. -->
+<p><strong>Grafika 2:</strong> Tabela pisowni „łącznie / rozdzielnie”: dwie kolumny wyrazów (<em>naprawdę, naprzeciwko, wkrótce</em> | <em>po polsku, na pewno, w ogóle, z powrotem</em>).</p>
+<!-- OPIS: Dwie kolumny z nagłówkami „łącznie” (zielone) i „rozdzielnie” (niebieskie), po 6–8 przykładów w każdej, pod spodem pasek „nie + przysłówek odprzymiotnikowy = łącznie (od 2026)”. Wniosek: wyrażenia przyimkowe piszemy osobno, przysłówki złożone — razem. -->
+</section>
+<section id="s14">
+<div class="part-heading"><span class="part-num">13</span> Uzupełnienie po audycie braków — wersja 2.0</div>
+<h3>13.1. Rozpoznawanie przysłówka przez funkcję</h3>
+<p>Przysłówek jest nieodmienny i najczęściej określa czasownik, przymiotnik albo inny przysłówek. Samo pytanie „jak?” nie wystarcza: pytanie trzeba zadać do konkretnego wyrazu w zdaniu.</p>
+<ul>
+<li><em>Biegł <strong>szybko</strong></em> — jak biegł? szybko; przysłówek określa czasownik.</li>
+<li><em>To <strong>bardzo</strong> wysoki budynek</em> — jak wysoki / w jakim stopniu? bardzo; przysłówek określa przymiotnik.</li>
+<li><em>Przyjechał <strong>zbyt</strong> późno</em> — w jakim stopniu późno? zbyt; przysłówek określa inny przysłówek.</li>
+<li><em>Spotkamy się <strong>jutro</strong></em> — kiedy? jutro; przysłówek czasu.</li>
+<li><em>Mieszka <strong>blisko</strong></em> — gdzie? blisko; przysłówek miejsca, ale w innym kontekście <em>blisko domu</em> zawiera też wyrażenie przyimkowe/połączenie z dopełniaczem.</li>
+</ul>
+<p>Porównaj: <em>szybki samochód</em> (przymiotnik, określa rzeczownik) — <em>samochód jedzie szybko</em> (przysłówek, określa czasownik). Nie twórz klasyfikacji wyłącznie z końcówki: istnieją przysłówki o formach podobnych do innych części mowy, np. <em>dobrze, źle, dużo, mało</em>.</p>
+<h3>13.2. Rodzaje znaczeniowe i pytania pomocnicze</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj</th><th>Pytania</th><th>Przykłady</th></tr></thead>
+<tbody>
+<tr><td>sposobu</td><td>jak? w jaki sposób?</td><td>starannie, szybko, głośno</td></tr>
+<tr><td>miejsca</td><td>gdzie? dokąd? skąd? którędy?</td><td>blisko, daleko, stąd, tędy</td></tr>
+<tr><td>czasu</td><td>kiedy? odkąd? dokąd? jak długo?</td><td>dziś, jutro, wcześniej, długo</td></tr>
+<tr><td>stopnia i miary</td><td>jak bardzo? w jakim stopniu? ile?</td><td>bardzo, trochę, zbyt, niemal</td></tr>
+<tr><td>przyczyny/celu w określonych konstrukcjach</td><td>dlaczego? po co?</td><td>dlatego, celowo — analiza zależy od funkcji w zdaniu</td></tr>
+</tbody></table></div>
+<p>Nie każda klasyfikacja szkolna wyróżnia dokładnie ten sam zestaw rodzajów. W zadaniu należy korzystać z terminologii podanej w poleceniu i zawsze uzasadniać odpowiedź funkcją wyrazu.</p>
+<h3>13.3. Stopniowanie — regularne, nieregularne i opisowe</h3>
+<p>Stopniowanie proste:
+- równy: <em>szybko, cicho, wysoko</em>;
+- wyższy: <em>szybciej, ciszej, wyżej</em>;
+- najwyższy: <em>najszybciej, najciszej, najwyżej</em>.</p>
+<p>Formy nieregularne, które warto zapamiętać:
+- <em>dobrze — lepiej — najlepiej</em>;
+- <em>źle — gorzej — najgorzej</em>;
+- <em>dużo — więcej — najwięcej</em>;
+- <em>mało — mniej — najmniej</em>;
+- <em>daleko — dalej — najdalej</em> (w części kontekstów możliwe są warianty zależne od znaczenia).</p>
+<p>Stopniowanie opisowe tworzymy za pomocą <em>bardziej / mniej</em> i <em>najbardziej / najmniej</em>, zwłaszcza gdy prosta forma brzmi nienaturalnie: <em>bardziej skomplikowanie, mniej precyzyjnie</em>. Nie stopniuje się każdego przysłówka: <em>wczoraj, tutaj, zawsze</em> nie mają typowego stopnia wyższego.</p>
+<p><strong>Uwaga na znaczenie:</strong> stopień wyższy nie zawsze oznacza większą jakość; porównanie musi mieć punkt odniesienia: <em>Dzisiaj pracował staranniej niż wczoraj.</em></p>
+<h3>13.4. Pisownia i częste pułapki</h3>
+<ul>
+<li>Przysłówki odprzymiotnikowe zakończone na <em>-o, -e</em> często piszemy z <em>nie</em> łącznie, gdy tworzą zwykłe zaprzeczenie cechy: <em>niedobrze, nieładnie, niestarannie</em>. Przy wyraźnym przeciwstawieniu: <em>nie dobrze, lecz znakomicie</em> — rozdzielnie.</li>
+<li><em>Po polsku, po cichu, po prostu</em> — zapis rozdzielny.</li>
+<li><em>Na pewno, na razie, z powrotem</em> — zapis rozdzielny.</li>
+<li><em>Naprawdę, naprzeciwko, wkrótce, dotąd</em> — zapis łączny.</li>
+<li><em>Bynajmniej</em> znaczy „wcale nie”, a nie „przynajmniej”. To częsty błąd znaczeniowy.</li>
+<li><em>Tym bardziej</em> zapisujemy rozdzielnie; <em>coraz lepiej</em> — dwa wyrazy.</li>
+</ul>
+<p>Nie stosuj jednej reguły do wszystkich wyrażeń zaczynających się od <em>na, po, z</em>. Pisownię utrwalaj na konkretnych połączeniach i w razie wątpliwości sprawdzaj w aktualnym słowniku ortograficznym.</p>
+<h3>13.5. Ćwiczenia dodatkowe z kluczem</h3>
+<p><strong>D1.</strong> Wskaż przysłówki i napisz, co określają: <em>Bardzo uważnie przeczytała wyjątkowo trudny tekst.</em>
+<strong>Klucz:</strong> <em>uważnie</em> — czasownik <em>przeczytała</em>; <em>bardzo</em> — przysłówek <em>uważnie</em>; <em>wyjątkowo</em> — przymiotnik <em>trudny</em>.</p>
+<p><strong>D2.</strong> Utwórz stopień wyższy i najwyższy: <em>dobrze, cicho, dużo, starannie</em>.
+<strong>Klucz:</strong> lepiej/najlepiej; ciszej/najciszej; więcej/najwięcej; staranniej/najstaranniej (możliwe też stopniowanie opisowe zależnie od kontekstu).</p>
+<p><strong>D3.</strong> Popraw zapis: <em>na prawdę, po polsku, nie dobrze mi poszło, bynajmniej trzy osoby</em>.
+<strong>Klucz:</strong> <em>naprawdę</em>; <em>po polsku</em>; <em>niedobrze mi poszło</em> (jeśli brak przeciwstawienia); <em>przynajmniej trzy osoby</em> (jeśli chodzi o minimum). <em>Bynajmniej</em> nie znaczy „co najmniej”.</p>
+<p><strong>D4.</strong> Czy można stopniować wyrazy <em>jutro, zawsze, daleko, źle</em>? Uzasadnij.
+<strong>Klucz:</strong> <em>jutro</em> i <em>zawsze</em> — nie w typowym znaczeniu; <em>daleko</em> — tak (<em>dalej, najdalej</em>); <em>źle</em> — nieregularnie (<em>gorzej, najgorzej</em>).</p>
+<p><strong>D5.</strong> Ułóż dwa zdania, w których ten sam wyraz będzie miał różne funkcje lub klasyfikację.
+<strong>Klucz:</strong> odpowiedź własna; uczeń musi wskazać kontekst i uzasadnić funkcję, np. <em>Blisko mieszkam</em> / <em>Blisko szkoły stoi sklep</em> — drugie zawiera połączenie z dopełniaczem.</p>
+<h3>13.6. Checklista</h3>
+<ul>
+<li>Czy wiem, jaki wyraz przysłówek określa?</li>
+<li>Czy odróżniam przysłówek od przymiotnika?</li>
+<li>Czy potrafię utworzyć stopnie regularne i nieregularne?</li>
+<li>Czy rozpoznaję przysłówki, których się nie stopniuje?</li>
+<li>Czy sprawdziłem/sprawdziłam pisownię stałych wyrażeń i znaczenie <em>bynajmniej</em>?</li>
+</ul>
+</section>
+<section id="s15">
+<div class="part-heading"><span class="part-num">14</span> Audyt po uzupełnieniu</div>
+<p>Wersja 2.0 dodaje rozpoznawanie przez funkcję, tabelę rodzajów, stopniowanie nieregularne i opisowe, pułapki pisowni oraz zadania z kluczem. Zachowano treść bazową.</p>
+<p><strong>Do kontroli niezależnej:</strong> granice kategorii znaczeniowych przysłówków oraz klasyfikacja wyrazów typu <em>blisko, dlatego, celowo</em> mogą różnić się w opisach szkolnych. Odpowiedź powinna być oceniana według funkcji w konkretnym zdaniu.</p>
+</section>
+<section id="s16">
+<div class="part-heading"><span class="part-num">14</span> Drugi cykl opracowania: przysłówek w analizie zdania v3.0</div>
+<h3>14.1. Co przysłówek określa?</h3>
+<p>Przysłówek jest najczęściej nieodmienną częścią mowy określającą czasownik (<em>biegnie szybko</em>), przymiotnik (<em>bardzo miły</em>), inny przysłówek (<em>wyjątkowo cicho</em>) albo całe zdanie (<em>Niestety, nie zdążyliśmy</em>). Odpowiada m.in. na pytania: jak? gdzie? dokąd? skąd? kiedy? odkąd? jak długo? w jakim stopniu? Nie każdy wyraz odpowiadający na „jak?” jest przysłówkiem: <em>ładnie</em> w „ładnie śpiewa” to przysłówek, ale <em>ładna</em> w „ładna piosenka” to przymiotnik.</p>
+<h3>14.2. Przysłówek a przymiotnik</h3>
+<p>Przymiotnik określa rzeczownik i odmienia się: <em>uważny uczeń, uważna uczennica, uważne dziecko</em>. Przysłówek określa przede wszystkim czynność lub cechę: <em>uczeń czyta uważnie; wyjątkowo uważnie czyta</em>. Przysłówki odprzymiotnikowe często kończą się na <em>-e</em> lub <em>-o</em>: <em>dobry → dobrze, szybki → szybko, cichy → cicho</em>. Są jednak formy nieregularne i leksykalizowane, dlatego nie należy tworzyć ich mechanicznie.</p>
+<h3>14.3. Stopniowanie — regularne i nieregularne</h3>
+<ul>
+<li>regularne: <em>szybko — szybciej — najszybciej</em>; <em>cicho — ciszej — najciszej</em>;</li>
+<li>opisowe: <em>bardziej elegancko — najbardziej elegancko</em>;</li>
+<li>nieregularne: <em>dobrze — lepiej — najlepiej; źle — gorzej — najgorzej; dużo — więcej — najwięcej; mało — mniej — najmniej</em>.</li>
+</ul>
+<p>Stopień wyższy nie zawsze oznacza rzeczywisty pomiar: <em>zachował się lepiej</em> jest oceną zależną od kontekstu. Stopień najwyższy często tworzymy przez dodanie <em>naj-</em> do stopnia wyższego, ale form nieregularnych trzeba się nauczyć. Nie wszystkie przysłówki mają stopień wyższy: przysłówki oznaczające relację lub czas (<em>wczoraj, tutaj, wszędzie</em>) zwykle nie stopniują się.</p>
+<h3>14.4. Pisownia i wyrażenia łatwe do pomylenia</h3>
+<ul>
+<li><strong>naprawdę</strong> — łącznie: <em>Naprawdę nie wiedziałem</em>;</li>
+<li><strong>na pewno</strong> — rozdzielnie;</li>
+<li><strong>po polsku, po cichu, po trochu</strong> — rozdzielnie;</li>
+<li><strong>niedobrze</strong> — łącznie, gdy znaczy „źle”; rozdzielnie przy wyraźnym przeciwstawieniu: <em>nie dobrze, lecz znakomicie</em>;</li>
+<li><strong>bynajmniej</strong> nie znaczy „przynajmniej”: <em>bynajmniej nie twierdzę</em> = „wcale nie twierdzę”; <em>przynajmniej trzy osoby</em> = „co najmniej trzy osoby”.</li>
+</ul>
+<h3>14.5. Funkcja w zdaniu i stopień zależności</h3>
+<p>W zdaniu <em>Bardzo uważnie przeczytała wyjątkowo trudny tekst</em>:
+- <em>przeczytała</em> — czasownik;
+- <em>uważnie</em> — przysłówek określający czasownik;
+- <em>bardzo</em> — przysłówek określający <em>uważnie</em>;
+- <em>wyjątkowo</em> — przysłówek określający przymiotnik <em>trudny</em>.</p>
+<p>Przysłówek może też określać całe zdanie: <em>Niestety, pociąg odjechał</em>. W takim użyciu komentuje treść wypowiedzi, a nie tylko pojedynczy wyraz. Nie myl funkcji części mowy z funkcją składniową: „przysłówek” to część mowy, „okolicznik” to funkcja składniowa, często realizowana przez przysłówek, ale nie wyłącznie.</p>
+<h3>14.6. Ćwiczenia po uzupełnieniu</h3>
+<p><strong>A. Wskaż przysłówki i wyjaśnij, co określają:</strong>
+1. <em>Bardzo dokładnie przepisała wyjątkowo długi tekst.</em>
+2. <em>Wczoraj spotkaliśmy się tutaj.</em>
+3. <em>Niestety, autobus przyjechał późno.</em></p>
+<p><strong>Klucz:</strong> 1. <em>dokładnie</em> określa <em>przepisała</em>; <em>bardzo</em> określa <em>dokładnie</em>; <em>wyjątkowo</em> określa <em>długi</em>; 2. <em>wczoraj</em> — czas; <em>tutaj</em> — miejsce; 3. <em>niestety</em> komentuje całe zdanie, <em>późno</em> określa <em>przyjechał</em>.</p>
+<p><strong>B. Utwórz stopnie:</strong> <em>starannie, źle, dużo, daleko, interesująco.</em></p>
+<p><strong>Klucz:</strong> <em>staranniej — najstaranniej</em>; <em>gorzej — najgorzej</em>; <em>więcej — najwięcej</em>; <em>dalej/dalejże</em> nie jest właściwą formą szkolną w tym ćwiczeniu — przy porównaniu odległości typowo <em>dalej — najdalej</em>; <em>bardziej interesująco — najbardziej interesująco</em>.</p>
+<p><strong>C. Popraw zapis i wyjaśnij:</strong>
+1. <em>na prawdę</em>;
+2. <em>napewno</em>;
+3. <em>by najmniej trzy osoby</em> (znaczenie: co najmniej);
+4. <em>nie dobrze, lecz źle</em>.</p>
+<p><strong>Klucz:</strong> <em>naprawdę</em>; <em>na pewno</em>; <em>przynajmniej trzy osoby</em>; <em>niedobrze, lecz źle</em> — w ostatnim przykładzie przeciwstawienie nie jest naturalne semantycznie; lepiej: <em>nie dobrze, lecz znakomicie</em>.</p>
+<h3>14.7. Zadanie analityczne</h3>
+<p>Przeanalizuj: „Niezwykle starannie i naprawdę szybko wykonała doświadczenie, ale niestety zbyt późno zapisała wynik”. Wskaż przysłówki, określane wyrazy, stopniowanie oraz funkcję spójnika <em>ale</em>. <strong>Klucz:</strong> <em>niezwykle</em> określa <em>starannie</em>; <em>starannie</em> i <em>szybko</em> określają <em>wykonała</em>; <em>naprawdę</em> wzmacnia <em>szybko</em>; <em>niestety</em> komentuje drugą część; <em>zbyt</em> określa <em>późno</em>; <em>późno</em> określa <em>zapisała</em>. <em>Ale</em> jest spójnikiem przeciwstawnym.</p>
+<h3>14.8. Samokontrola</h3>
+<p>Umiem odróżnić przysłówek od przymiotnika, rozpoznać wyraz określany, stopniować formy regularne i nieregularne, wskazać formy niestopniowalne oraz poprawnie zapisać <em>naprawdę, na pewno, po polsku, niedobrze, bynajmniej/przynajmniej</em>.</p>
+</section>
+
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

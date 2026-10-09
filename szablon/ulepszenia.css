@@ -95,6 +95,8 @@ details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;back
 @media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
   .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
 
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
 .lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
 
 /* ---------- dostępność ---------- */

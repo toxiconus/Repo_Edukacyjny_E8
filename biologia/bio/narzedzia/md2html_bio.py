@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""md → HTML lekcji BIO. Parser wspólny z chemią (chemia/che/narzedzia/md2html.py), wygląd i grafiki własne.
+"""md → HTML lekcji BIO — od 2026-10-09 na wspólnym szablonie (szablon/, motywy/bio.css); stary wygląd: build_stary(). Parser wspólny z chemią (chemia/che/narzedzia/md2html.py), wygląd i grafiki własne.
 Użycie: python3 biologia/bio/narzedzia/md2html_bio.py [md/L010_*.md ...]   → biologia/bio/dist/<plik>.html (+ index.html)
 Wynik: jeden samodzielny plik HTML (style + bio-viz.js w środku) — działa offline i na telefonie.
 
@@ -97,7 +97,13 @@ BAR = ('<div class="bio-bar" role="toolbar" aria-label="Narzędzia lekcji">'
        '<span class="bio-bar-title">%s</span>'
        '<a class="bio-bar-btn" href="#main" aria-label="Na górę">↑</a></div>')
 
+sys.path.insert(0, os.path.join(REPO, 'narzedzia'))
+import lekcja_html as LH   # wspólny szablon wszystkich przedmiotów (szablon/, motyw bio)
+
 def build(path):
+    return LH.render(path, 'bio')
+
+def build_stary(path):
     src = _open(path, encoding='utf-8').read()
     tmp = tempfile.NamedTemporaryFile('w', suffix='.md', delete=False, encoding='utf-8')
     tmp.write(preprocess(src)); tmp.close()

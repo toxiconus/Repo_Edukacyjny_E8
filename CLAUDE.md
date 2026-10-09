@@ -50,7 +50,7 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Szkielety G01–G17 (części mowy, składnia) i S01–S06 (środki stylistyczne) w `polski/podstawy/`, generator `python3 narzedzia/szkielety_polski.py` (nie nadpisuje wypełnionych), paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md`. Wypełniony plik: zmienić `stan: PUSTY` → `stan: WYPEŁNIONY — model, data`, potem W1.
 
 ## Szablon HTML lekcji (wszystkie przedmioty)
-- Wspólny wygląd: `szablon/` (baza + ulepszenia + `motywy/<che|bio|pol|ang|oli>.css`, `lekcja.js`), opis w `szablon/README.md`. Build: `python3 narzedzia/lekcja_html.py -p <przedmiot> plik.md`. Zmiany wspólne tylko w `szablon/ulepszenia.css`, przedmiotowe w motywie.
+- Wspólny wygląd: `szablon/` (baza + ulepszenia + `motywy/<che|bio|pol|ang|oli>.css`, `lekcja.js`), opis w `szablon/README.md`. Build jednej lekcji: `python3 narzedzia/lekcja_html.py -p <przedmiot> plik.md`; wszystkich: `python3 narzedzia/zbuduj_wszystkie.py` → `polski/html/`, `biologia/html/`, `chemia/html/` (kanon), `olimpiada/html/` (wygenerowane — nie czytać, nie poprawiać ręcznie). BIO `dist/` też idzie przez szablon. Gotowe lekcje chemii z modelami: nadal `che-modular/tools/md2html.py`. Zmiany wspólne tylko w `szablon/ulepszenia.css`, przedmiotowe w motywie.
 
 ## Merytoryka
 - Język lekcji: polski, poziom E8 (podstawa programowa). Dane liczbowe oznaczaj do weryfikacji, jeśli nie są pewne.

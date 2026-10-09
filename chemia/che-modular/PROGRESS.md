@@ -44,3 +44,4 @@
 - 2026-10-09 04:20: sesja zatrzymana na prośbę użytkownika; plan następnych kroków (tylko MD) w PRZEKAZANIE.md.
 - 2026-10-09 07:30: W1 Perplexity — bloki X01–X06, E, K, A, P, LAB, REV i audyt końcowy zapisane surowo w chemia/plany/audyty/ (8 plików) + nota kolizji numeracji z kanonem; nie scalone z lekcjami (decyzje: rejestr statusów, treść ponad E8, nowa numeracja REV).
 - 2026-10-09 08:00: wspólny szablon HTML lekcji dla wszystkich przedmiotów (szablon/, narzedzia/lekcja_html.py): pasek z postępem, spis z aktywną sekcją, tryb ciemny, druk, 5 motywów (che, bio, pol, ang, oli) z komponentami przedmiotów; podgląd szablon/podglad/.
+- 2026-10-09 08:15: wszystkie lekcje md przebudowane na wspólny szablon (132: pol 41, bio 36, che 45 kanon, oli 10) → <przedmiot>/html/; BIO dist też na szablonie; test 390 px: 0 problemów.

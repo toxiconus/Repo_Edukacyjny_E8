@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="oli">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>X04 · Szereg aktywności metali — reakcje z wodą, kwasami i solami</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
+:root[data-theme=dark]{--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}
+
+/* poziomy olimpijskie 2–4 (wspólne lekcje E8: warstwy dopisane w tej samej lekcji) */
+.poz{display:inline-flex;align-items:center;gap:5px;font:800 11.5px/1 Inter,system-ui;padding:4px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);vertical-align:middle}
+.poz::before{content:"";width:22px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--poz-w,33%),var(--accent-line) 0)}
+.poz-2{--poz-w:33%}.poz-3{--poz-w:66%}.poz-4{--poz-w:100%}
+.zad-konk{border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:12px 16px;margin:14px 0;background:var(--surface)}
+.zad-konk>b:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.zad-konk .pkt{font:800 12px Inter,system-ui;color:var(--accent);white-space:nowrap}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Olimpiada</span><span class="lk-title">X04 Szereg aktywności metali — reakcje z wodą, kwasami i solami</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Olimpiada, lekcja X04</div><h1>Szereg aktywności metali — reakcje z wodą, kwasami i solami</h1><p class="lead">Który metal wypiera który i dlaczego — przewidywanie reakcji bez pamięciowego wkuwania.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-exam">KONKURS</span><span class="level-badge level-exam">LKO-REJ</span></div><div class="lk-meta"><span><b>Zakres:</b> LKO etap II / rejonowy + E8</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">0. Cel lekcji i kryterium gotowości</a><a class="toc-link" href="#s2">1. Szereg aktywności — wersja robocza do zapamiętania</a><a class="toc-link" href="#s3">2. Metale + woda — pełna tabela</a><a class="toc-link" href="#s4">3. Metale + kwasy nieutleniające</a><a class="toc-link" href="#s5">4. Metal + roztwór soli (reakcje wypierania)</a><a class="toc-link" href="#s6">5. Doświadczenie do zaprojektowania (pełny schemat)</a><a class="toc-link" href="#s7">6. Zadania konkursowe z pełnymi rozwiązaniami</a><a class="toc-link" href="#s8">7. Najczęstsze błędy i jak je naprawiać</a><a class="toc-link" href="#s9">8. Powiązania i dalsza droga</a><a class="toc-link" href="#s10">9. Mini-test samodzielny (5 min)</a></nav></details>
+<section id="s1">
+<div class="part-heading"><span class="part-num">0</span> Cel lekcji i kryterium gotowości</div>
+<p><strong>Cel:</strong> Uczennica samodzielnie przewiduje przebieg reakcji metalu z wodą, rozcieńczonym kwasem nieutleniającym i roztworem soli innego metalu wyłącznie na podstawie położenia w szeregu aktywności. Zapisuje poprawne równania i uzasadnia obserwacje.</p>
+<p><strong>Kryterium gotowości:</strong>
+1. Zna szereg (przynajmniej szkolną wersję).
+2. Potrafi wskazać, który metal jest bardziej aktywny.
+3. Przewiduje, czy reakcja zajdzie i jakie będą produkty.
+4. Zapisuje równanie cząsteczkowe i (jeśli wymagane) jonowe skrócone.
+5. Rozwiązuje zadanie transferowe (nowa para metali / nowa sytuacja).</p>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">1</span> Szereg aktywności — wersja robocza do zapamiętania</div>
+<p><strong>Wersja szkolna / konkursowa (najczęstsza):</strong></p>
+<p>K  Ca  Na  Mg  Al  Zn  Fe  Sn  Pb  | <strong>H</strong> |  Cu  Ag  Hg  Au</p>
+<p>Czasem pojawiają się też: Li, Ba, Mn, Ni, Cr.
+<strong>Najważniejsze jest względne położenie względem wodoru i względem siebie.</strong></p>
+<p><strong>Zasady żelazne:</strong>
+- Im bardziej na <strong>lewo</strong>, tym metal łatwiej oddaje elektrony → silniejszy reduktor → bardziej aktywny.
+- Metal bardziej aktywny <strong>wypiera</strong> metal mniej aktywny z roztworu jego soli.
+- Metale <strong>przed wodorem</strong> wypierają wodór z rozcieńczonych kwasów nieutleniających (HCl, rozc. H₂SO₄).
+- Metale <strong>za wodorem</strong> nie wypierają wodoru z tych kwasów.
+- Litowce i berylowce (K, Na, Ca…) reagują z wodą zamiast wypierać metale z roztworów soli (w typowych warunkach szkolnych).</p>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">2</span> Metale + woda — pełna tabela</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Metal</th><th>Warunki</th><th>Produkty</th><th>Obserwacje typowe</th><th>Równanie</th></tr></thead>
+<tbody>
+<tr><td>K, Na</td><td>zimna woda, gwałtownie</td><td>wodorotlenek + H₂</td><td>pływa, topi się, zapala się H₂</td><td>2Na + 2H₂O → 2NaOH + H₂↑</td></tr>
+<tr><td>Ca</td><td>zimna woda, żywo</td><td>Ca(OH)₂ + H₂</td><td>gaz, mętny roztwór</td><td>Ca + 2H₂O → Ca(OH)₂ + H₂↑</td></tr>
+<tr><td>Mg</td><td>zimna — bardzo wolno; gorąca / para — szybko</td><td>Mg(OH)₂ lub MgO + H₂</td><td>powolne wydzielanie gazu</td><td>Mg + 2H₂O → Mg(OH)₂ + H₂↑ (zimna)</td></tr>
+<tr><td>Al, Zn, Fe</td><td>tylko z parą wodną w wysokiej temp.</td><td>tlenek + H₂</td><td>—</td><td>3Fe + 4H₂O → Fe₃O₄ + 4H₂</td></tr>
+<tr><td>Cu, Ag, Au</td><td>brak reakcji</td><td>—</td><td>brak zmian</td><td>—</td></tr>
+</tbody></table></div>
+<p><strong>Uwaga konkursowa:</strong> Glin pasywuje się (warstwa Al₂O₃), więc czasem reakcja z wodą/kwasem wymaga usunięcia warstwy tlenkowej.</p>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">3</span> Metale + kwasy nieutleniające</div>
+<p><strong>Zachodzi tylko dla metali przed H.</strong></p>
+<p>Przykłady obowiązkowe:
+- Zn + 2HCl → ZnCl₂ + H₂↑
+- Fe + H₂SO₄ (rozc.) → FeSO₄ + H₂↑
+- Mg + 2HCl → MgCl₂ + H₂↑
+- Cu + HCl → <strong>brak</strong>
+- Ag + HCl → <strong>brak</strong>
+- Pb + 2HCl → PbCl₂ + H₂↑ (powoli; PbCl₂ słabo rozpuszczalny)</p>
+<p><strong>Pułapka:</strong> stężony HNO₃ i stężony H₂SO₄ to kwasy utleniające — reagują też z Cu i Ag. Na poziomie klasy 8 / LKO rejon zwykle nie wymagane, ale warto wiedzieć.</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">4</span> Metal + roztwór soli (reakcje wypierania)</div>
+<p><strong>Zasada:</strong> metal bardziej aktywny wypiera mniej aktywny.</p>
+<p>Klasyczne doświadczenia szkolne i konkursowe:</p>
+<ol>
+<li><strong>Fe + CuSO₄</strong>
+Fe + CuSO₄ → FeSO₄ + Cu↓
+Obserwacja: niebieski roztwór blednie / zielenieje, na żelazie osad czerwonawej miedzi.
+Jonowo skrócone: Fe + Cu²⁺ → Fe²⁺ + Cu</li>
+</ol>
+<ol start="2">
+<li><strong>Zn + CuSO₄</strong>
+Zn + CuSO₄ → ZnSO₄ + Cu↓
+Jonowo: Zn + Cu²⁺ → Zn²⁺ + Cu</li>
+</ol>
+<ol start="3">
+<li><strong>Cu + 2AgNO₃</strong>
+Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag↓
+Obserwacja: na miedzi srebrzysty/szary osad, roztwór błękitnieje (Cu²⁺).
+Jonowo: Cu + 2Ag⁺ → Cu²⁺ + 2Ag</li>
+</ol>
+<ol start="4">
+<li><strong>Cu + FeSO₄</strong> → <strong>brak reakcji</strong> (Cu jest mniej aktywny)</li>
+</ol>
+<ol start="5">
+<li><strong>Zn + FeSO₄</strong> → ZnSO₄ + Fe↓ (zachodzi)</li>
+</ol>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">5</span> Doświadczenie do zaprojektowania (pełny schemat)</div>
+<p><strong>Problem badawczy:</strong> Który z metali Mg, Zn, Cu jest najbardziej aktywny chemicznie?</p>
+<p><strong>Hipoteza:</strong> Aktywność maleje w kolejności Mg > Zn > Cu (zgodnie z szeregiem).</p>
+<p><strong>Przebieg:</strong>
+1. Do trzech probówek z jednakową ilością rozcieńczonego HCl wrzucić jednakowe opiłki Mg, Zn, Cu.
+2. Obserwować szybkość wydzielania gazu i ewentualny wzrost temperatury.
+3. Dodatkowo: wrzucić pasek Zn i pasek Cu do roztworu CuSO₄ oraz do roztworu FeSO₄.</p>
+<p><strong>Oczekiwane obserwacje:</strong>
+- Mg — bardzo szybkie wydzielanie H₂, nagrzewanie.
+- Zn — wyraźne wydzielanie H₂.
+- Cu — brak reakcji z HCl.
+- Zn w CuSO₄ — osad Cu; Cu w FeSO₄ — brak.</p>
+<p><strong>Wniosek:</strong> kolejność aktywności Mg > Zn > Cu.</p>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">6</span> Zadania konkursowe z pełnymi rozwiązaniami</div>
+<p><strong>Zadanie 1</strong> (poziom szkolny/rejon)
+Podaj, które z poniższych reakcji zachodzą. Zapisz równania tych, które zachodzą.
+a) Cu + 2HCl
+b) Zn + CuSO₄
+c) Ag + FeCl₃
+d) Mg + 2H₂O (zimna woda)</p>
+<p><strong>Rozwiązanie:</strong>
+a) nie zachodzi (Cu za H)
+b) Zn + CuSO₄ → ZnSO₄ + Cu↓
+c) nie zachodzi (Ag mniej aktywny niż Fe)
+d) Mg + 2H₂O → Mg(OH)₂ + H₂↑ (powoli)</p>
+<p><strong>Zadanie 2</strong>
+Do niebieskiego roztworu CuSO₄ wrzucono opiłki żelaza.
+a) Co zaobserwujesz?
+b) Zapisz równanie cząsteczkowe i jonowe skrócone.
+c) Który metal jest bardziej aktywny? Uzasadnij położeniem w szeregu.</p>
+<p><strong>Rozwiązanie:</strong>
+a) Roztwór traci intensywną niebieską barwę (lub zielenieje), na powierzchni żelaza pojawia się czerwony/brunatny osad miedzi.
+b) Fe + CuSO₄ → FeSO₄ + Cu↓
+Fe + Cu²⁺ → Fe²⁺ + Cu
+c) Żelazo jest bardziej aktywne, bo leży przed miedzią w szeregu aktywności.</p>
+<p><strong>Zadanie 3</strong> (transfer)
+Metal X wypiera miedź z roztworu CuSO₄, ale nie reaguje z zimną wodą. Metal Y reaguje gwałtownie z zimną wodą.
+Który metal jest bardziej aktywny? Podaj przykładowe symbole zgodne z szeregiem.</p>
+<p><strong>Rozwiązanie:</strong>
+Y jest bardziej aktywny (reaguje z zimną wodą → litowiec lub berylowiec, np. Na, Ca).
+X leży między Mg a H (np. Zn, Fe) — wypiera Cu, ale nie reaguje z zimną wodą.</p>
+<p><strong>Zadanie 4</strong> (obliczeniowe + szereg)
+Do 200 g 10% roztworu CuSO₄ wrzucono 5 g cynku. Czy cały cynk się rozpuści? Ile miedzi się wydzieli? (Cu=64, Zn=65, S=32, O=16)</p>
+<p><strong>Rozwiązanie (szkic):</strong>
+Masa CuSO₄ = 20 g.
+Zn + CuSO₄ → ZnSO₄ + Cu
+65 g Zn ↔ 160 g CuSO₄ ↔ 64 g Cu
+20 g CuSO₄ wymaga (65/160)×20 ≈ 8,1 g Zn → cynku jest za mało (5 g), więc ogranicza Zn.
+Masa Cu = (64/65)×5 ≈ 4,9 g.</p>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">7</span> Najczęstsze błędy i jak je naprawiać</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Jak naprawić</th></tr></thead>
+<tbody>
+<tr><td>„Mniej aktywny wypiera bardziej aktywny”</td><td>Ćwiczenie: zawsze rysuj strzałkę od bardziej aktywnego do mniej aktywnego</td></tr>
+<tr><td>Pisanie reakcji Cu + HCl</td><td>Powtarzać: Cu jest za H</td></tr>
+<tr><td>Brak stanu skupienia / strzałki gazu</td><td>Checklist: gaz ↑, osad ↓</td></tr>
+<tr><td>Nieuzasadnianie odpowiedzi szeregiem</td><td>Wymóg: każde „zachodzi / nie zachodzi” musi mieć uzasadnienie położeniem</td></tr>
+</tbody></table></div>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">8</span> Powiązania i dalsza droga</div>
+<ul>
+<li>CHE-J03 — równania jonowe (kolejny naturalny krok)</li>
+<li>CHE-R07 — obliczenia z nadmiarem (gdy w zadaniu są masy)</li>
+<li>CHE-051 / CHE-054 — reakcje metali</li>
+<li>Doświadczenia identyfikacyjne gazów (H₂ — próba palności)</li>
+</ul>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">9</span> Mini-test samodzielny (5 min)</div>
+<ol>
+<li>Czy Zn wypiera Fe z FeSO₄?</li>
+<li>Czy Cu reaguje z rozcieńczonym H₂SO₄?</li>
+<li>Zapisz równanie: Mg + HCl</li>
+<li>Co zaobserwujesz po wrzuceniu Fe do CuSO₄?</li>
+<li>Metal A leży przed H, metal B za H. Który wypiera wodór z HCl?</li>
+</ol>
+<p><strong>Klucz:</strong> 1. tak; 2. nie; 3. Mg + 2HCl → MgCl₂ + H₂↑; 4. osad Cu + zmiana barwy roztworu; 5. metal A.</p>
+<hr class="lk-hr"/>
+<p><strong>Status:</strong> MAX — gotowe do intensywnego treningu konkursowego.
+Po pojawieniu się arkuszy LKO rejonowych dodać sekcję „Archiwalne zadania LKO” z numerami i punktacją.</p>
+<h3>Do uzupełnienia danymi (z pierwotnego szkieletu)</h3>
+<ul>
+<li>DANE: szereg w wersji z Twojego podręcznika (K, Ca, Na, Mg, Al, Zn, Fe, … H … Cu, Ag, Au — dokładnie jaka kolejność?)</li>
+<li>DANE: przykłady z lekcji/podręcznika</li>
+<li>DANE: czy klasa robiła doświadczenie Zn/Mg/Cu + HCl? co zaobserwowano?</li>
+<li>DANE: doświadczenia z obserwacjami (kolor roztworu, osad na metalu)</li>
+<li>DANE: zadania z arkuszy rejonowych LKO (najlepiej 2024/25, 2025/26) + klucz</li>
+</ul>
+<h3>AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</h3>
+<p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md</code>. Weryfikacja treści wysłanego zapisu, nie zakresu.</p>
+<h4>X04 — Szereg aktywności metali</h4>
+<h4>Poprawki</h4>
+<ul>
+<li>Szereg aktywności porządkuje metale według ich skłonności do oddawania elektronów i wypierania wodoru lub innych metali z niektórych związków.</li>
+<li>Nie jest uniwersalną tabelą przewidującą każdą reakcję w każdych warunkach.</li>
+<li>Położenie metalu w szeregu nie wystarcza do opisania pasywacji, wpływu środowiska, stężenia, temperatury i kinetyki.</li>
+<li>Metal znajdujący się wyżej może wypierać metal znajdujący się niżej z jego soli, jeśli reakcja jest możliwa w danych warunkach.</li>
+<li>Wodór w szeregu jest punktem odniesienia dla reakcji metali z kwasami.</li>
+<li>Metale poniżej wodoru zwykle nie wypierają wodoru z rozcieńczonych kwasów nieutleniających.</li>
+<li>Kwasy utleniające, takie jak stężony kwas azotowy(V), wymagają osobnych reguł.</li>
+<li>Glin może być pozornie mniej reaktywny wskutek warstwy pasywnej, mimo wysokiej aktywności chemicznej samego metalu.</li>
+</ul>
+<h4>Uzupełnienia</h4>
+<h5>Uproszczony szereg</h5>
+<p>K, Ca, Na, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au</p>
+<p>Kolejność należy traktować jako szkolne przybliżenie. W zależności od źródła i celu mogą występować różne rozszerzenia szeregu.</p>
+<h5>Przykłady</h5>
+<p>Zn+2HCl→ ZnCl₂+H₂</p>
+<p>Fe+CuSO₄→ FeSO₄+Cu</p>
+<p>Cu+2AgNO₃→ Cu(NO₃)₂+2Ag</p>
+<p>Brak typowej reakcji:</p>
+<p>Cu+HCl→ brak reakcji</p>
+<h5>Zadania</h5>
+<ol>
+<li>Czy cynk wypiera miedź z CuSO₄?</li>
+<li>Czy miedź wypiera wodór z rozcieńczonego HCl?</li>
+<li>Zapisz reakcję żelaza z siarczanem miedzi(II).</li>
+<li>Wyjaśnij, dlaczego aluminium może reagować słabiej niż wynikałoby z jego miejsca w szeregu.</li>
+<li>Podaj ograniczenie szeregu aktywności.</li>
+</ol>
+<h5>Klucz</h5>
+<ol>
+<li>Tak:</li>
+</ol>
+<p>Zn+CuSO₄→ ZnSO₄+Cu</p>
+<ol start="2">
+<li>Zwykle nie.
+3.</li>
+</ol>
+<p>Fe+CuSO₄→ FeSO₄+Cu</p>
+<ol start="4">
+<li>Chroni je warstwa tlenku, czyli pasywacja.</li>
+<li>Szereg nie uwzględnia wszystkich warunków, kinetyki, pasywacji i charakteru odczynnika.</li>
+</ol>
+<h4>Uzupełnienie — CHEX04. Szereg aktywności metali — uzupełnienie</h4>
+<p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md</code>.</p>
+<h4>Reguła wypierania</h4>
+<p>Metal bardziej aktywny może wypierać metal mniej aktywny z roztworu jego soli, jeżeli:</p>
+<ul>
+<li>oba metale pozostają w odpowiednich formach chemicznych;</li>
+<li>powstający produkt jest możliwy w danych warunkach;</li>
+<li>nie występuje pasywacja uniemożliwiająca kontakt;</li>
+<li>reakcja nie jest hamowana kinetycznie.</li>
+</ul>
+<h5>Przykład</h5>
+<p>Mg+CuSO₄→ MgSO₄+Cu</p>
+<p>Magnez znajduje się wyżej niż miedź, dlatego może oddać elektrony, a jony Cu²⁺ ulegają redukcji do miedzi.</p>
+<p>Równanie jonowe skrócone:</p>
+<p>Mg+Cu²⁺→ Mg²⁺+Cu</p>
+<h5>Brak reakcji</h5>
+<p>Cu+MgSO₄→ brak reakcji</p>
+<p>Miedź jest mniej aktywna niż magnez i nie wypiera go z jego soli.</p>
+<h4>Metale i kwasy</h4>
+<h5>Metale powyżej wodoru</h5>
+<p>Niektóre metale znajdujące się przed wodorem mogą reagować z rozcieńczonymi kwasami nieutleniającymi:</p>
+<p>Fe+2HCl→ FeCl₂+H₂</p>
+<p>Mg+H₂SO₄→ MgSO₄+H₂</p>
+<h5>Metale poniżej wodoru</h5>
+<p>Miedź, srebro, platyna i złoto nie wypierają zwykle wodoru z rozcieńczonego kwasu chlorowodorowego:</p>
+<p>Cu+HCl→ brak typowej reakcji</p>
+<p>Nie wolno rozszerzać tej reguły na wszystkie kwasy. Kwas azotowy(V) i stężony kwas siarkowy(VI) mają właściwości utleniające i mogą reagować z metalami według innych schematów.</p>
+<h4>Redoks w szeregu</h4>
+<p>Metal bardziej aktywny:</p>
+<ul>
+<li>oddaje elektrony;</li>
+<li>ulega utlenieniu;</li>
+<li>tworzy kation.</li>
+</ul>
+<p>Jon metalu mniej aktywnego:</p>
+<ul>
+<li>przyjmuje elektrony;</li>
+<li>ulega redukcji;</li>
+<li>tworzy atom metalu.</li>
+</ul>
+<p>Dla reakcji:</p>
+<p>Zn+Cu²⁺→ Zn²⁺+Cu</p>
+<ul>
+<li>cynk: Zn⁰→ Zn²⁺+2e⁻;</li>
+<li>miedź: Cu²⁺+2e⁻→ Cu⁰.</li>
+</ul>
+<h4>Zadania uzupełniające</h4>
+<ol>
+<li>Zapisz równanie reakcji magnezu z azotanem(V) srebra.</li>
+<li>Wskaż utleniacz i reduktor w reakcji cynku z jonami miedzi(II).</li>
+<li>Oceń, czy zachodzi reakcja żelaza z AgNO₃.</li>
+<li>Zapisz równanie reakcji glinu z kwasem chlorowodorowym, pomijając efekt pasywacji.</li>
+<li>Wyjaśnij, dlaczego po zanurzeniu żelaznego gwoździa w roztworze CuSO₄ może pojawić się miedź.</li>
+</ol>
+<h4>Klucz</h4>
+<p>1.</p>
+<p>Mg+2AgNO₃→ Mg(NO₃)₂+2Ag</p>
+<ol start="2">
+<li>Cynk jest reduktorem, a jony Cu²⁺ są utleniaczem.</li>
+<li>Tak:</li>
+</ol>
+<p>Fe+2AgNO₃→ Fe(NO₃)₂+2Ag</p>
+<p>4.</p>
+<p>2Al+6HCl→2AlCl₃+3H₂</p>
+<ol start="5">
+<li>Żelazo oddaje elektrony i przechodzi do roztworu jako Fe²⁺, a jony Cu²⁺ przyjmują elektrony i wydzielają miedź.</li>
+</ol>
+<h4>Uzupełnienie — Dodatkowe uzupełnienie: doświadczenia</h4>
+<p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md</code>.</p>
+<h4>Próba szeregu aktywności</h4>
+<h5>Problem</h5>
+<p>Czy metal X wypiera metal Y z roztworu jego soli?</p>
+<h5>Procedura</h5>
+<ol>
+<li>Przygotuj porównywalne próbki metali.</li>
+<li>Umieść je w roztworach soli o znanym stężeniu.</li>
+<li>Zachowaj taki sam czas obserwacji i temperaturę.</li>
+<li>Nie mieszaj próbek między roztworami.</li>
+<li>Obserwuj zmianę powierzchni metalu, barwy roztworu i ewentualne wydzielanie nowej substancji.</li>
+<li>Zapisz równanie tylko wtedy, gdy obserwacje i dane potwierdzają zachodzenie reakcji.</li>
+</ol>
+<h5>Obserwacje możliwe</h5>
+<ul>
+<li>osadzenie metalu na powierzchni próbki;</li>
+<li>zmiana barwy roztworu;</li>
+<li>zanikanie części metalu;</li>
+<li>brak widocznych zmian.</li>
+</ul>
+<h5>Wniosek</h5>
+<p>Widoczny osad może wskazywać na redukcję jonów metalu z roztworu, ale należy wykluczyć zanieczyszczenie próbki i reakcje powierzchniowe niezwiązane z właściwą reakcją wypierania.</p>
+<h4>BHP</h4>
+<ul>
+<li>używaj okularów i rękawic;</li>
+<li>nie dotykaj odczynników gołymi rękami;</li>
+<li>nie wylewaj roztworów metali ciężkich do zlewu;</li>
+<li>odpady zbieraj do właściwego pojemnika;</li>
+<li>doświadczenie wykonuj pod nadzorem.</li>
+</ul>
+<h4>Uzupełnienie — CHEX04. Zadania z szeregu aktywności</h4>
+<p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexity_uzupelnienia_koncowe_2026-10-09.md</code>.</p>
+<h5>Zadanie 1</h5>
+<p>Do probówki z roztworem siarczanu(VI) miedzi(II) włożono:</p>
+<ul>
+<li>blaszkę cynkową;</li>
+<li>blaszkę srebrną;</li>
+<li>blaszkę magnezową;</li>
+<li>blaszkę żelazną.</li>
+</ul>
+<h5>Klucz</h5>
+<p>Cynk, magnez i żelazo mogą wypierać miedź z roztworu:</p>
+<p>Zn+CuSO₄→ ZnSO₄+Cu</p>
+<p>Mg+CuSO₄→ MgSO₄+Cu</p>
+<p>Fe+CuSO₄→ FeSO₄+Cu</p>
+<p>Srebro nie wypiera miedzi:</p>
+<p>Ag+CuSO₄→ brak typowej reakcji</p>
+<h5>Zadanie 2</h5>
+<p>Uszereguj metale według rosnącej aktywności:</p>
+<p>Cu, Zn, Ag, Mg, Fe</p>
+<h5>Klucz</h5>
+<p>Ag<Cu<Fe<Zn<Mg</p>
+<h5>Zadanie 3</h5>
+<p>Do roztworu AgNO₃ wprowadzono miedziany drut.</p>
+<h5>Klucz</h5>
+<p>Zachodzi reakcja:</p>
+<p>Cu+2AgNO₃→ Cu(NO₃)₂+2Ag</p>
+<p>Równanie jonowe:</p>
+<p>Cu+2Ag⁺→ Cu²⁺+2Ag</p>
+<p>Obserwacje:</p>
+<ul>
+<li>na drucie może pojawić się srebrzysty osad;</li>
+<li>roztwór może przyjąć niebieskie zabarwienie wskutek obecności jonów Cu²⁺.</li>
+</ul>
+</section>
+
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>
