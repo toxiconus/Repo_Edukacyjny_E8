@@ -233,3 +233,55 @@ Najczęstszy błąd nie powinien być tylko poprawiony. Trzeba zapisać: **objaw
 ### Diagnoza wejściowa
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Klinika błędów fundamentów” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+> Uwaga przy scalaniu: Punkt „CO₂ jako jon CO₂²⁻” jest niejasny — prawdopodobnie chodziło o mylenie CO₂ (cząsteczka) z jonem węglanowym CO₃²⁻; tak go zapisać w lekcji.
+
+### Poprawki
+
+#### Błąd: zmiana indeksu przy bilansowaniu
+
+**Błędnie:**
+
+ H₂ + O₂ → H₂O₂
+
+**Poprawnie:**
+
+ 2H₂ + O₂ → 2H₂O
+
+**Reguła:** indeks jest częścią wzoru substancji; bilansujemy współczynnikami.
+
+#### Błąd: utożsamienie grupy z okresem
+
+**Poprawnie:**
+
+- grupa — kolumna pionowa;
+- okres — szereg poziomy.
+
+#### Błąd: utożsamienie Z z A - Z — liczba protonów;
+- A — liczba protonów i neutronów.
+
+#### Błąd: twierdzenie, że jon powstaje po zmianie liczby protonów
+
+W typowych reakcjach chemicznych zmienia się liczba elektronów, a nie protonów.
+
+#### Błąd: zapis CaOH₂
+
+Poprawnie:
+Ca(OH)₂
+ ### Błąd: traktowanie CO₂ jako jonuCO₂ jest obojętną cząsteczką kowalencyjną, a nie jonem CO₂²⁻.
+
+#### Błąd: utożsamienie stopnia utlenienia z ładunkiem
+
+W cząsteczce kowalencyjnej stopień utlenienia jest formalnym przypisaniem, a nie dowodem występowania wolnych jonów.
+
+#### Błąd: „więcej atomów oznacza większą cząsteczkę”
+
+Rozmiar i masa cząsteczki zależą od rodzaju atomów, budowy i sposobu porównania.
+
+#### Błąd: „każda reakcja daje osad, gaz albo zmianę barwy”
+
+Niektóre reakcje nie mają łatwo widocznego objawu.

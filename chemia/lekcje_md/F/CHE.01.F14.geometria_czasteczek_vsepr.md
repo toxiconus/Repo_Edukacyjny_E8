@@ -1960,7 +1960,7 @@ Pary elektronowe wokół atomu centralnego odpychają się i układają jak najd
 
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
-> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
 > Uwaga przy scalaniu: W tabeli audytu kolumna nazywa się „geometria elektronowa”, ale wiersze NH₃ i H₂O podają kształt cząsteczki (piramidalna, kątowa) — przy budowie lekcji dać dwie kolumny: geometria elektronowa i kształt cząsteczki. Lista „Najważniejsze poprawki do F07–F14” w odpowiedzi Perplexity była ucięta (pkt 6).
 

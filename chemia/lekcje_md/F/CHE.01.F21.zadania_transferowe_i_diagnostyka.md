@@ -236,3 +236,115 @@ Transfer nie podaje metody. Zadanie wymusza przełączanie między obserwacją, 
 ### Diagnoza wejściowa
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Transfer i diagnostyka mistrzostwa” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Zadanie 1
+
+Pierwiastek X ma 17 protonów. Określ:
+
+- symbol;
+- liczbę elektronów w atomie;
+- okres;
+- grupę;
+- typowy jon;
+- liczbę elektronów w tym jonie.
+
+#### Klucz
+
+- symbol: Cl;
+- atom ma 17 elektronów;
+- okres 3;
+- grupa 17;
+- typowy jon: Cl⁻;
+- jon ma 18 elektronów.
+
+### Zadanie 2
+
+Pierwiastek X tworzy jon X²⁺, który ma 18 elektronów. Podaj symbol pierwiastka.
+
+#### Klucz
+
+Atom obojętny miałby 20 elektronów, więc Z=20. Pierwiastek to wapń, Ca.
+
+### Zadanie 3
+
+Zapisz wzór związku utworzonego przez jony Al³⁺ i SO₄²⁻.
+
+#### Klucz
+
+Najmniejsza wspólna wielokrotność ładunków wynosi 6:
+
+ Al₂(SO₄)₃
+
+### Zadanie 4
+
+Uczeń twierdzi: „Woda jest niepolarna, bo jej wzór nie zawiera jonów”. Oceń odpowiedź.
+
+#### Klucz
+
+Odpowiedź jest błędna. Polarność cząsteczki wynika z rozkładu elektronów, polarności wiązań i geometrii. Woda ma polarne wiązania O-H i kształt kątowy, dlatego jest polarna.
+
+### Zadanie 5
+
+Zbilansuj reakcję:
+
+ Al + O₂ → Al₂O₃
+
+#### Klucz
+
+ 4Al + 3O₂ → 2Al₂O₃
+
+### Zadanie 6
+
+Wyjaśnij, dlaczego NaCl przewodzi prąd w roztworze, ale nie przewodzi dobrze jako kryształ stały.
+
+#### Klucz
+
+W krysztale jony są unieruchomione. W roztworze mogą się przemieszczać i przenosić ładunek elektryczny.
+
+### Zadanie 7
+
+W doświadczeniu po zmieszaniu dwóch roztworów pojawiło się zmętnienie. Zapisz:
+
+- obserwację;
+- ostrożny wniosek;
+- informację, czego jeszcze trzeba dowieść.
+
+#### Klucz
+
+- obserwacja: roztwór zmętniał lub powstała zawiesina;
+- wniosek: prawdopodobnie powstała trudno rozpuszczalna substancja stała;
+- trzeba ustalić skład osadu odpowiednią reakcją lub porównaniem z próbą kontrolną.
+
+### Zadanie 8
+
+Wyjaśnij różnicę między:
+
+ 2H₂O
+
+a
+
+ H₂O₂
+
+#### Klucz
+
+2H₂O oznacza dwie cząsteczki wody. H₂O₂ oznacza nadtlenek wodoru, inną substancję o innym składzie i właściwościach.
+
+
+## Powtórka F15–F21
+
+1. Elektroujemność określa zdolność przyciągania elektronów w wiązaniu.
+2. Cząsteczka polarna ma niezerowy wypadkowy moment dipolowy.
+3. Wiązanie wodorowe jest oddziaływaniem, a nie zwykłym wiązaniem O-H.
+4. Obserwacja nie jest wnioskiem.
+5. Równanie reakcji musi zachować liczbę atomów.
+6. W równaniach jonowych trzeba zachować także ładunek.
+7. Współczynniki zmieniają ilość substancji.
+8. Indeksy zmieniają skład substancji.
+9. Dossier powinno oddzielać dane, obserwacje, wnioski i model.
+10. Stopień utlenienia nie jest automatycznie rzeczywistym ładunkiem atomu.
+11. Stały kryształ jonowy i jego roztwór mają różne właściwości przewodzenia.
+12. Wzory jonów wieloatomowych wymagają nawiasów, gdy grupa występuje więcej niż raz.

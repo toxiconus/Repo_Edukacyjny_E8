@@ -1886,7 +1886,7 @@ Powłoka K mieści maksymalnie 2 elektrony, L — 8, a M **może** mieścić do 
 
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
-> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
 > Uwaga przy scalaniu: Tabela porównawcza z audytu ma niepełne wiersze (brak „typowej właściwości” dla H₂ i HCl) — uzupełnić przy budowie lekcji.
 

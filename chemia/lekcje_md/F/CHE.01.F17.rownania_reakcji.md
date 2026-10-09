@@ -1539,3 +1539,87 @@ R08 wydajność
 
 <!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 7113–7894 -->
 # F09 — RÓWNANIA REAKCJI (Fundamenty)
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Równanie reakcji musi spełniać zasadę zachowania atomów.
+- W reakcjach jonowych należy dodatkowo zachować całkowity ładunek.
+- Współczynniki stechiometryczne zmieniają ilość substancji, a indeksy zmieniają jej skład.
+- Nie wolno bilansować równania przez zmianę indeksów.
+- Najpierw ustal poprawne wzory substratów i produktów, dopiero potem dobieraj współczynniki.
+- Współczynnik 1 pomija się w zapisie.
+- Stan skupienia należy zapisywać tylko wtedy, gdy jest potrzebny lub wymagany:
+
+ (s), (l), (g), (aq)
+
+- Strzałka ↑ może oznaczać wydzielanie gazu, a ↓ powstawanie osadu, ale nie należy używać ich bez uzasadnienia.
+- Katalizator i warunki reakcji zapisuje się nad strzałką.
+- Równanie reakcji nie jest równoważne opisowi mechanizmu reakcji.
+
+### Uzupełnienia
+
+#### Procedura bilansowania
+
+1. Zapisz wzory substratów i produktów.
+2. Policz atomy każdego pierwiastka po obu stronach.
+3. Zacznij od pierwiastka występującego w najmniejszej liczbie związków.
+4. Wodór i tlen zostaw często na koniec, jeśli pojawiają się w kilku związkach.
+5. Zmieniaj wyłącznie współczynniki.
+6. Skróć współczynniki do najmniejszych liczb całkowitych.
+7. Sprawdź wszystkie atomy.
+8. Dla równań jonowych sprawdź także ładunek.
+
+#### Przykłady
+
+ Al + O₂ → Al₂O₃
+
+ 4Al + 3O₂ → 2Al₂O₃
+
+ Fe + O₂ → Fe₂O₃
+
+ 4Fe + 3O₂ → 2Fe₂O₃
+
+ C₃H₈ + O₂ → CO₂ + H₂O
+
+ C₃H₈ + 5O₂ → 3CO₂ + 4H₂O
+
+#### Równanie jonowe skrócone
+
+Dla reakcji:
+
+ AgNO₃ + NaCl → AgCl↓ + NaNO₃
+
+Równanie pełne jonowe:
+
+ Ag⁺ + NO₃⁻ + Na⁺ + Cl⁻ → AgCl↓ + Na⁺ + NO₃⁻
+
+Równanie jonowe skrócone:
+
+ Ag⁺ + Cl⁻ → AgCl↓
+
+#### Zadania
+
+Zbilansuj:
+
+1. H₂ + O₂ → H₂O 2. Mg + HCl → MgCl₂ + H₂
+3. NaOH + H₂SO₄ → Na₂SO₄ + H₂O
+4. Fe(OH)₃ → Fe₂O₃ + H₂O
+5. Al + HCl → AlCl₃ + H₂
+
+#### Klucz
+
+1.
+2H₂ + O₂ → 2H₂O
+ 2.
+Mg + 2HCl → MgCl₂ + H₂
+ 3.
+2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O
+ 4.
+2Fe(OH)₃ → Fe₂O₃ + 3H₂O
+ 5.
+2Al + 6HCl → 2AlCl₃ + 3H₂
+

@@ -3,13 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (10 pl., 42 KB)
+## .  (11 pl., 50 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 6 KB
-- `MAPA.md` 15 KB
+- `MAPA.md` 17 KB
 - `PRZEKAZANIE.md` 3 KB
 - `README.md` 0 KB
+- `WERYFIKACJA.md` 6 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -422,7 +423,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.00.S00.system_kursu.md` 18 KB
 - `CHE.00.W00.wstep.md` 6 KB
 
-## chemia/lekcje_md/F  (22 pl., 1014 KB)
+## chemia/lekcje_md/F  (22 pl., 1.0 MB)
 - (zwinięte; `ls chemia/lekcje_md/F`) — duże:
 - ⚠`CHE.01.F00.wspolne_bloku_F.md` 110 KB
 - ⚠`CHE.01.F01.jak_mysli_chemik.md` 81 KB
@@ -455,6 +456,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
+## chemia/plany/audyty  (2 pl., 38 KB)
+- `W1_perplexity_F01-F06_2026-10-09.md` 18 KB
+- `W1_perplexity_F07-F14_2026-10-09.md` 20 KB
+
 ## chemia/plany/narzedzia  (3 pl., 47 KB)
 - `kanon_dane.py` 37 KB
 - `podziel_all_md.py` 2 KB
@@ -469,7 +474,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 16 KB
 
-## narzedzia  (3 pl., 6 KB)
+## narzedzia  (4 pl., 7 KB)
+- `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 1 KB
 - `opis_wizualizacji.py` 3 KB
@@ -506,7 +512,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `Zakresy_2025_2026_chemia_biologia_OCR.md` 16 KB
 - ⚠`Zakresy_wymagan_2025_2026.pdf` 2.7 MB
 
-## olimpiada/zrodla/pakiet_2026-10-09  (1 pl., 1 KB)
+## olimpiada/zrodla/pakiet_2026-10-09  (2 pl., 4 KB)
+- `00_OPIS_POZIOMOW_I_OZNACZEN.md` 2 KB
 - `README_PAKIET.md` 1 KB
 
 ## olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO  (3 pl., 23 KB)
@@ -532,8 +539,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE_X04_szereg_aktywnosci_metali_MAX.md` 8 KB
 - `CHE_X04_szereg_aktywnosci_metali_UZUPELNIONY.md` 5 KB
 
-## olimpiada/zrodla/pakiet_2026-10-09/lekcje_polski  (1 pl., 17 KB)
+## olimpiada/zrodla/pakiet_2026-10-09/lekcje_polski  (2 pl., 24 KB)
 - `PL_L007-L011_LEKCJE_ROZBUDOWANE_v02.md` 17 KB
+- `PL_L007-L011_MAX_z_rozwiazaniami.md` 7 KB
 
 ## olimpiada/zrodla/pakiet_2026-10-09/master  (2 pl., 124 KB)
 - ⚠`KONKURSY_LUBELSKIE_MASTER_PREMIUM_v05.md` 67 KB
@@ -543,6 +551,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PODSUMOWANIE_MAX_lekcje.md` 2 KB
 - `PODSUMOWANIE_sesja_2026-10-09.md` 3 KB
 - `PODSUMOWANIE_uzupelnienia_szkielety_10.md` 3 KB
+
+## olimpiada/zrodla/pakiet_2026-10-09/research  (1 pl., 5 KB)
+- `RESEARCH_OLIMPIADY_I_KONKURSY_2026-10-09.md` 5 KB
 
 ## polski  (18 pl., 2.5 MB)
 - (zwinięte; `ls polski`) — duże:

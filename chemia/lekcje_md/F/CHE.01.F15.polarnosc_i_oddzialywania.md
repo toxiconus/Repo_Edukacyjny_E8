@@ -513,3 +513,97 @@ Pary elektronowe wokół atomu centralnego odpychają się i układają jak najd
 <!-- źródłowy fragment: ### VSEPR (hasła); dopasowanie: :2, J09:1 -->
 
 <!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 7113–7894 -->
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Polarność wiązania wynika z nierównomiernego rozkładu gęstości elektronowej.
+- Elektroujemność jest miarą zdolności atomu do przyciągania elektronów w wiązaniu.
+- Wiązanie między identycznymi atomami, na przykład H-H, jest kowalencyjne niespolaryzowane.
+- Wiązanie między różnymi atomami może być polarne, ale sama różnica elektroujemności nie wystarcza do określenia polarności całej cząsteczki.
+- Polarność cząsteczki zależy od:
+  - polarności wiązań;
+  - geometrii cząsteczki;
+  - wartości i kierunku momentów dipolowych.
+- Cząsteczka może mieć polarne wiązania, ale być niepolarna, jeśli momenty dipolowe wzajemnie się znoszą.
+- Nie przedstawiaj elektroujemności jako „ładunku atomu”.
+- Elektroujemność nie jest tym samym co ładunek jonu.
+- Nie zapisuj kolejności elektroujemności jako „F O Cl N” bez wyjaśnienia. Dla najczęściej używanych niemetali poprawna kolejność malejąca to:
+
+ F > O > Cl > N > Br > I > S > C > H
+
+- Wartości elektroujemności zależą od zastosowanej skali; podane liczby należy traktować jako wartości przybliżone.
+- Nie wyznaczaj typu wiązania wyłącznie na podstawie sztywnej granicy liczbowej różnicy elektroujemności.
+- Wiązanie C-H często traktuje się szkolnie jako prawie niespolaryzowane, choć różnica elektroujemności nie wynosi dokładnie zero.
+
+### Uzupełnienia
+
+#### Dipol wiązania
+
+W wiązaniu spolaryzowanym atom bardziej elektroujemny uzyskuje częściowy ładunek ujemny δ⁻, a drugi atom częściowy ładunek dodatni δ⁺.
+
+Przykład:
+
+ Hδ⁺-Clδ⁻
+
+Nie są to pełne ładunki jonowe.
+
+#### Porównanie
+
+| Pojęcie | Znaczenie |
+|---|---|
+| Elektroujemność | Zdolność atomu do przyciągania elektronów w wiązaniu |
+| Ładunek jonu | Rzeczywisty ładunek elektryczny jonu |
+| Ładunek częściowy | Formalne oznaczenie przesunięcia gęstości elektronowej |
+| Moment dipolowy | Wektor opisujący rozdzielenie ładunków |
+| Cząsteczka polarna | Cząsteczka mająca niezerowy wypadkowy moment dipolowy |
+
+#### Przykłady
+
+HCl:
+
+- wiązanie polarne;
+- cząsteczka liniowa dwuatomowa;
+- moment dipolowy nie znosi się;
+- cząsteczka polarna.
+
+CO₂:
+
+- oba wiązania C=O są polarne;
+- cząsteczka jest liniowa;
+- momenty dipolowe mają przeciwne kierunki;
+- cząsteczka jest niepolarna.
+
+H₂O:
+
+- wiązania O-H są polarne;
+- cząsteczka ma kształt kątowy;
+- momenty dipolowe nie znoszą się;
+- cząsteczka jest polarna.
+
+#### Oddziaływania międzycząsteczkowe
+
+- Siły dyspersyjne występują między wszystkimi cząsteczkami i atomami.
+- Oddziaływania dipol–dipol występują między cząsteczkami polarnymi.
+- Wiązania wodorowe są szczególnie silnym rodzajem oddziaływań, gdy wodór jest związany z silnie elektroujemnym atomem, najczęściej F, O lub N.
+- Wiązanie wodorowe nie jest tym samym co wiązanie kowalencyjne O-H lub N-H.
+- Oddziaływania międzycząsteczkowe są zwykle słabsze niż wiązania chemiczne wewnątrz cząsteczek, ale wpływają między innymi na temperaturę wrzenia, lepkość i rozpuszczalność.
+
+#### Zadania
+
+1. Wskaż wiązanie bardziej polarne: H-F czy H-Cl.
+2. Wyjaśnij, dlaczego CO₂ jest niepolarny.
+3. Podaj warunek powstania wiązania wodorowego.
+4. Wskaż, która cząsteczka ma silniejsze oddziaływania wodorowe: H₂O czy CH₄.
+5. Wyjaśnij różnicę między wiązaniem O-H a wiązaniem wodorowym między cząsteczkami wody.
+
+#### Klucz
+
+1. H-F, ponieważ różnica elektroujemności jest większa.
+2. Jest liniowy, dlatego momenty dwóch wiązań C=O znoszą się.
+3. Wodór związany z silnie elektroujemnym atomem, zwykle F, O lub N, musi oddziaływać z wolną parą elektronową innego takiego atomu.
+4. H₂O.
+5. Wiązanie O-H jest wiązaniem kowalencyjnym wewnątrz cząsteczki; wiązanie wodorowe jest oddziaływaniem między cząsteczkami.

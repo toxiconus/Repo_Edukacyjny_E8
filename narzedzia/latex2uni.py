@@ -8,6 +8,9 @@ def _sup(t):
 
 def conv(s):
     s = re.sub(r"\\text\{([^}]*)\}", r"\1", s)
+    s = re.sub(r"\^\{?\\delta\s*([+-])\}?", lambda m: "δ" + ("⁺" if m.group(1) == "+" else "⁻"), s)
+    for x, y in (("\\delta", "δ"), ("\\downarrow", "↓"), ("\\uparrow", "↑"), ("\\leftrightarrow", "⇌"), ("\\ ", " "), ("\\;", " ")):
+        s = s.replace(x, y)
     for _ in range(3):
         s = re.sub(r"\\mathrm\{([^{}]*)\}", r"\1", s)
     s = s.replace("\\rightarrow", "→").replace("\\cdot", "·").replace("^\\circ", "°").replace("\\,", " ")

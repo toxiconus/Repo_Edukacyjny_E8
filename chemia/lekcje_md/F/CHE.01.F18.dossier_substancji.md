@@ -287,3 +287,54 @@ Najczęstszy błąd nie powinien być tylko poprawiony. Trzeba zapisać: **objaw
 ### Diagnoza wejściowa
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dossier substancji” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Dossier substancji powinno oddzielać dane obserwacyjne, modelowe i obliczeniowe.
+- Nie wpisuj jednej właściwości jako absolutnej, jeśli zależy od temperatury, ciśnienia lub czystości próbki.
+- Temperatura topnienia i wrzenia musi mieć podane warunki, najczęściej ciśnienie atmosferyczne.
+- Rozpuszczalność zawsze zależy od temperatury i rodzaju rozpuszczalnika.
+- Gęstość zależy od temperatury.
+- Wartościowość, stopień utlenienia i ładunek jonu muszą być zapisane osobno.
+- Właściwości substancji nie wynikają wyłącznie z jej wzoru; znaczenie ma również budowa i rodzaj oddziaływań.
+- Nie utożsamiaj „substancji niebezpiecznej” z substancją, której nie wolno używać w żadnych warunkach.
+- Każde doświadczenie powinno mieć ocenę ryzyka i wymagania BHP.
+
+### Uzupełnienia
+
+#### Szablon dossier
+
+- nazwa;
+- wzór;
+- rodzaj substancji;
+- pierwiastki składowe;
+- budowa: cząsteczkowa, jonowa, metaliczna lub sieciowa;
+- stan skupienia w określonych warunkach;
+- barwa i zapach, jeśli bezpieczne;
+- rozpuszczalność;
+- temperatura topnienia;
+- temperatura wrzenia;
+- przewodnictwo;
+- reaktywność;
+- zastosowania;
+- zagrożenia;
+- zasady przechowywania;
+- sposób identyfikacji;
+- źródło danych;
+- poziom pewności informacji.
+
+#### Przykład: chlorek sodu
+
+- nazwa: chlorek sodu;
+- wzór: NaCl;
+- rodzaj: związek jonowy;
+- budowa: sieć jonów Na⁺ i Cl⁻;
+- stan w temperaturze pokojowej: ciało stałe;
+- rozpuszczalność: dobrze rozpuszcza się w wodzie;
+- przewodnictwo: stały kryształ nie przewodzi tak jak roztwór, roztwór przewodzi dzięki jonom;
+- reakcje: może uczestniczyć w reakcjach strącania;
+- BHP: nie spożywać odczynników laboratoryjnych i nie mieszać nieznanych substancji.

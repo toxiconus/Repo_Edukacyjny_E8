@@ -1330,4 +1330,88 @@ Zmiana barwy, temperatura, światło, gaz, osad, zapach lub zmiana pH mogą wska
 ### BHP
 Każde doświadczenie powinno mieć osobny rekord BHP, a wizualizacja ma pokazywać tylko te warunki, które są zapisane w danych reakcji.
 
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
+> Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+> Uwaga przy scalaniu: W zadaniu 1 i kluczu zamiast „dwutlenek węgla” używać nazwy „tlenek węgla(IV)”; „powstał osad” w kluczu zaliczono do obserwacji — to dopuszczalne (osad widać), w odróżnieniu od nazwy gazu.
+
+### Poprawki
+
+- Nie każda zmiana obserwowana podczas doświadczenia oznacza jedną konkretną reakcję chemiczną.
+- Obserwacja nie może zawierać nieudowodnionego wniosku.
+- „Powstał wodór” jest wnioskiem, a nie samą obserwacją, chyba że wykonano odpowiednią próbę identyfikacyjną.
+- „Pojawiły się pęcherzyki gazu” jest obserwacją.
+- „Gaz zapalił się z charakterystycznym dźwiękiem” jest obserwacją próby identyfikacyjnej.
+- Wniosek „wydzielił się wodór” wynika z obserwacji oraz znanej próby.
+- Równanie reakcji zapisuje model przemiany, a nie samo zdjęcie doświadczenia.
+- Przed zapisaniem równania trzeba rozpoznać:
+  - substraty;
+  - produkty;
+  - ich wzory;
+  - stany skupienia, jeżeli są potrzebne;
+  - warunki reakcji.
+- Nie należy dobierać produktów wyłącznie na podstawie tego, co wygląda prawdopodobnie.
+
+### Uzupełnienia
+
+#### Schemat doświadczenia
+
+1. Problem badawczy.
+2. Hipoteza.
+3. Zmienne.
+4. Sprzęt i odczynniki.
+5. Procedura.
+6. Obserwacje.
+7. Próby identyfikacyjne.
+8. Wniosek.
+9. Równanie reakcji.
+10. BHP.
+
+#### Przykład: magnez i kwas solny
+
+**Problem:** Czy magnez reaguje z kwasem solnym?
+
+**Hipoteza:** Magnez może reagować z kwasem, ponieważ jest metalem aktywniejszym od wodoru.
+
+**Obserwacje:**
+
+- magnez stopniowo znika;
+- wydzielają się pęcherzyki gazu;
+- probówka może się ogrzać.
+
+**Próba identyfikacyjna:** Gaz przy zbliżeniu płonącego łuczywa daje charakterystyczny efekt dla wodoru.
+
+**Wniosek:** Magnez reaguje z kwasem solnym; powstają chlorek magnezu i wodór.
+
+ Mg + 2HCl → MgCl₂ + H₂
+
+#### Przykład: strącanie
+
+ AgNO₃ + NaCl → AgCl↓ + NaNO₃
+
+Obserwacja: powstaje biały osad.
+
+Wniosek: zaszła reakcja, w której powstał trudno rozpuszczalny chlorek srebra.
+
+#### Zadania
+
+1. Rozdziel obserwacje i wnioski:
+   - roztwór zmętniał;
+   - powstał osad;
+   - wydzielił się dwutlenek węgla;
+   - temperatura wzrosła;
+   - pojawiły się pęcherzyki.
+2. Zapisz równanie reakcji cynku z kwasem chlorowodorowym.
+3. Podaj próbę identyfikacyjną wodoru.
+4. Wyjaśnij, dlaczego samo wydzielanie gazu nie wystarcza do rozpoznania jego rodzaju.
+
+#### Klucz
+
+1. Obserwacje: roztwór zmętniał, pojawił się osad, temperatura wzrosła, pojawiły się pęcherzyki. Wniosek wymagający próby: wydzielił się dwutlenek węgla.
+2.
+
+ Zn + 2HCl → ZnCl₂ + H₂
+
+3. Zbliżenie płonącego łuczywa; wodór daje charakterystyczny „szczekający” efekt.
+4. Wiele różnych gazów może tworzyć pęcherzyki, więc potrzebna jest próba identyfikacyjna.

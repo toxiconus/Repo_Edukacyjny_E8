@@ -254,3 +254,56 @@ Najczęstszy błąd nie powinien być tylko poprawiony. Trzeba zapisać: **objaw
 ### Diagnoza wejściowa
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dossier reakcji” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Dossier reakcji powinno zawierać warunki, a nie tylko samo równanie.
+- Należy odróżnić:
+  - reagenty;
+  - produkty;
+  - obserwacje;
+  - wniosek;
+  - równanie cząsteczkowe;
+  - równanie jonowe;
+  - warunki;
+  - zagrożenia.
+- Nie wolno wyciągać wniosku o produkcie wyłącznie z jednego objawu.
+- Reakcja może zachodzić w kilku etapach, choć zapis szkolny przedstawia ją jednym równaniem.
+- Szybkość reakcji i możliwość jej zajścia to różne kwestie.
+- Katalizator przyspiesza reakcję, ale nie jest zużywany w jej bilansie stechiometrycznym.
+- Wydzielanie ciepła nie oznacza, że wszystkie reakcje egzotermiczne są gwałtowne.
+
+### Uzupełnienia
+
+#### Szablon dossier reakcji
+
+- nazwa reakcji;
+- typ reakcji;
+- substraty;
+- produkty;
+- równanie cząsteczkowe;
+- równanie jonowe, jeśli dotyczy;
+- warunki;
+- obserwacje;
+- próby identyfikacyjne;
+- interpretacja;
+- BHP;
+- typowe błędy;
+- zastosowanie;
+- ograniczenia modelu.
+
+#### Przykład: neutralizacja
+
+ HCl + NaOH → NaCl + H₂O
+
+Równanie jonowe skrócone:
+
+ H⁺ + OH⁻ → H₂O
+
+Obserwacja: zwykle brak osadu i gazu; roztwór może się ogrzać.
+
+Wniosek: jony wodoru reagują z jonami wodorotlenkowymi, tworząc wodę.
