@@ -4,7 +4,7 @@ Generowany 2026-10-09: `python3 narzedzia/spis_polski.py` — nie edytować ręc
 
 **Plan** = temat w kanonie; **lekcja** = plik w repo. Plik: najnowszy md (HTML tylko gdy brak md); KB = rozmiar; stan = pole `stan:` z nagłówka md.
 
-**Stan:** 106 tematów w kanonie · 51 z plikiem · 11 z audytem W1.
+**Stan:** 106 tematów w kanonie · 66 z plikiem · 11 z audytem W1.
 
 **Priorytety produkcji:** 1: K02-K14 T01-T03 M05 · 2: R01-R08 · 3: J01-J03 P01-P04 D16 · 4: D14 M01-M02 T04 G20 J04-J06 · 5: B01-B08 S07-S08 D15 M03-M04 M06 G18-G19 K15
 
@@ -41,9 +41,9 @@ Generowany 2026-10-09: `python3 narzedzia/spis_polski.py` — nie edytować ręc
 | G15 | Zdanie złożone współrzędnie | ISTNIEJE | `polski/podstawy/PL_G15_zdania_wspolrzedne.md` | 2 | CZĘŚCIOWY | — |
 | G16 | Zdanie złożone podrzędnie | ISTNIEJE | `polski/podstawy/PL_G16_zdania_podrzedne.md` | 3 | CZĘŚCIOWY | — |
 | G17 | Mowa zależna | ISTNIEJE | `polski/podstawy/PL_G17_mowa_zalezna.md` | 3 | CZĘŚCIOWY | — |
-| G18 | Zdania wielokrotnie złożone i wykresy | NOWA (treść częściowo w L009 — wydzielić | — | — | BRAK | — |
-| G19 | Fleksja w zadaniach testowych — typologia pułapek | NOWA | — | — | BRAK | — |
-| G20 | Fonetyka: głoska, litera, sylaba, akcent | NOWA (materiał powtórkowy W0–W1) | — | — | BRAK | — |
+| G18 | Zdania wielokrotnie złożone i wykresy | NOWA (treść częściowo w L009 — wydzielić | `polski/lekcje/PL_G18_zdania_wielokrotnie_zlozone_i_wykresy.md` | 1 | PUSTY | — |
+| G19 | Fleksja w zadaniach testowych — typologia pułapek | NOWA | `polski/lekcje/PL_G19_fleksja_w_zadaniach_testowych_typologia_.md` | 1 | PUSTY | — |
+| G20 | Fonetyka: głoska, litera, sylaba, akcent | NOWA (materiał powtórkowy W0–W1) | `polski/lekcje/PL_G20_fonetyka_gloska_litera_sylaba_akcent.md` | 1 | PUSTY | — |
 
 ## POL.03 S — środki stylistyczne i poetyka
 
@@ -55,8 +55,8 @@ Generowany 2026-10-09: `python3 narzedzia/spis_polski.py` — nie edytować ręc
 | S04 | Powtórzenie, anafora, wyliczenie, kontrast | ISTNIEJE | `polski/podstawy/PL_S04_powtorzenie_anafora_wyliczenie.md` | 2 | CZĘŚCIOWY | — |
 | S05 | Neologizm, zdrobnienie, zgrubienie, archaizm | ISTNIEJE | `polski/podstawy/PL_S05_neologizm_zdrobnienie_archaizm.md` | 2 | CZĘŚCIOWY | — |
 | S06 | Hiperbola, ironia, symbol, alegoria | ISTNIEJE | `polski/podstawy/PL_S06_hiperbola_ironia_symbol_alegoria.md` | 3 | CZĘŚCIOWY | — |
-| S07 | Środki obrazowania i rytmu: przerzutnia, inwersja, paralelizm, elipsa, | NOWA | — | — | BRAK | — |
-| S08 | Retoryka i perswazja: środki retoryczne, apel, pointa (właściciel teor | NOWA | — | — | BRAK | — |
+| S07 | Środki obrazowania i rytmu: przerzutnia, inwersja, paralelizm, elipsa, | NOWA | `polski/lekcje/PL_S07_srodki_obrazowania_i_rytmu_przerzutnia_i.md` | 1 | PUSTY | — |
+| S08 | Retoryka i perswazja: środki retoryczne, apel, pointa (właściciel teor | NOWA | `polski/lekcje/PL_S08_retoryka_i_perswazja_srodki_retoryczne_a.md` | 1 | PUSTY | — |
 
 ## POL.04 D — kompetencje egzaminacyjne
 
@@ -117,21 +117,21 @@ Generowany 2026-10-09: `python3 narzedzia/spis_polski.py` — nie edytować ręc
 
 | Kod | Lekcja | Status w kanonie | Plik | KB | Stan | Audyt |
 |---|---|---|---|---|---|---|
-| J01 | Słowotwórstwo: rodziny wyrazów, formanty, złożenia | NOWA | — | — | BRAK | — |
-| J02 | Frazeologia: frazeologizmy, przysłowia i ich funkcja | NOWA — E8 wprost daje zadania na przysło | — | — | BRAK | — |
-| J03 | Semantyka i leksyka: polisemia, homonimy, synonimy, antonimy, pola sem | NOWA | — | — | BRAK | — |
-| J04 | Kultura języka: norma wzorcowa i użytkowa, błędy, samokształcenie ze s | NOWA — rozwinięcie sekcji „Poprawna pols | — | — | BRAK | — |
-| J05 | Etymologia, zapożyczenia, neologizmy, mody językowe | NOWA | — | — | BRAK | — |
-| J06 | Komunikacja językowa i odmiany polszczyzny | NOWA | — | — | BRAK | — |
+| J01 | Słowotwórstwo: rodziny wyrazów, formanty, złożenia | NOWA | `polski/lekcje/PL_J01_slowotworstwo_rodziny_wyrazow_formanty_z.md` | 1 | PUSTY | — |
+| J02 | Frazeologia: frazeologizmy, przysłowia i ich funkcja | NOWA — E8 wprost daje zadania na przysło | `polski/lekcje/PL_J02_frazeologia_frazeologizmy_przyslowia_i_i.md` | 1 | PUSTY | — |
+| J03 | Semantyka i leksyka: polisemia, homonimy, synonimy, antonimy, pola sem | NOWA | `polski/lekcje/PL_J03_semantyka_i_leksyka_polisemia_homonimy_s.md` | 1 | PUSTY | — |
+| J04 | Kultura języka: norma wzorcowa i użytkowa, błędy, samokształcenie ze s | NOWA — rozwinięcie sekcji „Poprawna pols | `polski/lekcje/PL_J04_kultura_jezyka_norma_wzorcowa_i_uzytkowa.md` | 1 | PUSTY | — |
+| J05 | Etymologia, zapożyczenia, neologizmy, mody językowe | NOWA | `polski/lekcje/PL_J05_etymologia_zapozyczenia_neologizmy_mody_.md` | 1 | PUSTY | — |
+| J06 | Komunikacja językowa i odmiany polszczyzny | NOWA | `polski/lekcje/PL_J06_komunikacja_jezykowa_i_odmiany_polszczyz.md` | 1 | PUSTY | — |
 
 ## POL.08 POP — ortografia i interpunkcja
 
 | Kod | Lekcja | Status w kanonie | Plik | KB | Stan | Audyt |
 |---|---|---|---|---|---|---|
-| P01 | Pisownia „nie" z częściami mowy (zasady 2026) | NOWA — skonsolidować rozproszone fragmen | — | — | BRAK | — |
-| P02 | Nowe zasady RJP 2026 — kompendium zmian | NOWA — L001 już ma aktualizację dla imie | — | — | BRAK | — |
-| P03 | Przecinek: zdanie złożone, imiesłowy, „który", wyliczenia | NOWA — skonsolidować G15–G17 + G06 + L00 | — | — | BRAK | — |
-| P04 | Znaki inne niż przecinek: dwukropek, średnik, cudzysłów, myślnik, wiel | NOWA | — | — | BRAK | — |
+| P01 | Pisownia „nie" z częściami mowy (zasady 2026) | NOWA — skonsolidować rozproszone fragmen | `polski/lekcje/PL_P01_pisownia_nie_z_czesciami_mowy_zasady_202.md` | 1 | PUSTY | — |
+| P02 | Nowe zasady RJP 2026 — kompendium zmian | NOWA — L001 już ma aktualizację dla imie | `polski/lekcje/PL_P02_nowe_zasady_rjp_2026_kompendium_zmian.md` | 1 | PUSTY | — |
+| P03 | Przecinek: zdanie złożone, imiesłowy, „który", wyliczenia | NOWA — skonsolidować G15–G17 + G06 + L00 | `polski/lekcje/PL_P03_przecinek_zdanie_zlozone_imieslowy_ktory.md` | 1 | PUSTY | — |
+| P04 | Znaki inne niż przecinek: dwukropek, średnik, cudzysłów, myślnik, wiel | NOWA | `polski/lekcje/PL_P04_znaki_inne_niz_przecinek_dwukropek_sredn.md` | 1 | PUSTY | — |
 
 ## POL.09 MOT — motywy, konteksty, porównania, interpretacja
 

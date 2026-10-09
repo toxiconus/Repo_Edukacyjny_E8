@@ -65,7 +65,7 @@ def rozwin(spec):
     kody = []
     for cz in spec.split():
         m = re.fullmatch(r"([A-Z])(\d+)-[A-Z](\d+)", cz)
-        kody += [f"{m.group(1)}{i:02d}" for i in range(int(m.group(2)), int(m.group(3)) + 1)] if m else [cz]
+        kody += [f"{m.group(1)}{i:0{len(m.group(2))}d}" for i in range(int(m.group(2)), int(m.group(3)) + 1)] if m else [cz]
     return kody
 
 

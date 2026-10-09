@@ -24,6 +24,7 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 
 ## Sesja 2026-10-09 (popołudnie) — polski: kanon v2
 - Przyjęty kanon `polski/plany/POL_SPIS_TRESCI_v2.md` (106 tematów; korekta: D01–D13 nie istnieją w repo → NOWE). Katalog z KB/stanem/audytem: `polski/plany/POL_KATALOG.md` (`narzedzia/spis_polski.py`). Szkielety priorytetu 1 (K02–K14, T01–T03, M05) w `polski/lekcje/` — stan PUSTY.
+- Paczka dla Perplexity (język: składnia, przecinki, pisownia 2026, środki, słownictwo, przeniesienie L001–L011): `python3 eksport/paczka_polski.py` → `eksport/out/PL_JEZYK_DO_ZROBIENIA_<data>.zip` (prompt `polski/plany/PROMPT_PERPLEXITY_JEZYK.md`, 8 etapów). Dodane szkielety G18–G20, S07–S08, P01–P04, J01–J06. Odpowiedzi Perplexity: przejrzeć jak G01–G03, potem wiersz w `WERYFIKACJA.md`.
 - **Następne:** (1) dokończyć G12–G17, S01–S06 (CZĘŚCIOWY); (2) wypełniać priorytet 1 od K14+M05 (wiersz w każdym arkuszu) i K05; (3) adaptacja L001–L006 (wydzielenie gramatyki do G); (4) build HTML polskiego z przełącznikami W0–W3 (`::: warstwa`, `OPIS.egzekwuj()`).
 
 ## Sesja 2026-10-09 (noc) — eksport, weryfikacja W1, polski

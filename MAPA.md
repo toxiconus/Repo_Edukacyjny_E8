@@ -496,12 +496,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (6 pl., 37 KB)
+## narzedzia  (7 pl., 46 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
+- `spis_polski.py` 9 KB
 - `szkielety_polski.py` 24 KB
 
 ## olimpiada  (4 pl., 116 KB)
@@ -597,6 +598,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PL_L009_zdania_zlozone.md` 4 KB
 - `PL_L010_srodki_stylistyczne.md` 4 KB
 - `PL_L011_elementy_utworu_moral_puenta.md` 5 KB
+
+## polski/lekcje  (17 pl., 24 KB)
+- (zwinięte; `ls polski/lekcje`)
+
+## polski/plany  (2 pl., 56 KB)
+- `POL_KATALOG.md` 16 KB
+- `POL_SPIS_TRESCI_v2.md` 40 KB
 
 ## polski/plany/audyty  (2 pl., 25 KB)
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
