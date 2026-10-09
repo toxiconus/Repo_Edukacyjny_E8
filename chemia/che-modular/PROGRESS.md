@@ -42,3 +42,4 @@
 - 2026-10-09: W1 Perplexity scalone: REV01 (gotowa) + REV02, LAB, O08–O11, J03/R07/X04 (szkielety MAX), uzupełnienia; J01–J06 jako materiał wstępny w chemia/lekcje_md/J/ (napisany przez Perplexity, wymaga W1). Test: N01_powietrze — sporadyczny FAIL canvas arc (ujemny promień), błąd sprzed zmian.
 - 2026-10-09 04:20: polski G01–G03 (Grok) przejrzane i wstawione do polski/podstawy; przekazanie sesji w PRZEKAZANIE.md.
 - 2026-10-09 04:20: sesja zatrzymana na prośbę użytkownika; plan następnych kroków (tylko MD) w PRZEKAZANIE.md.
+- 2026-10-09 07:30: W1 Perplexity — bloki X01–X06, E, K, A, P, LAB, REV i audyt końcowy zapisane surowo w chemia/plany/audyty/ (8 plików) + nota kolizji numeracji z kanonem; nie scalone z lekcjami (decyzje: rejestr statusów, treść ponad E8, nowa numeracja REV).
