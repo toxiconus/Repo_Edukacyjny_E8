@@ -8,7 +8,7 @@
 - Poziom: klasa 8 — [PODSTAWA E8] + [TRENING] + [MASTER] + [ZAAWANSOWANY]
 - Powiązania: L012 · L013 · L015 · L016
 - Poprzednia: L013 · Następna: L015
-- Status treści: szkielet zachowany; 2026-09-23 warstwa + do standardu L015
+- Status treści: szkielet zachowany; 2026-09-23 warstwa + do standardu L015; audyt punktowy W15 — 2026-10-09
 - Status HTML: BIOLOGIA_L014_MITOZA.html (kanon 2026-09-23)
 - Wzór układu: L015
 
@@ -19,6 +19,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `DNA → replikacja → podział → dwie komórki`
 `[/BIO: DIAGRAM]`
+@opis Cykl komórkowy i mitoza: DNA jest kopiowane przed podziałem; w mitozie rozdzielają się chromatydy siostrzane, a po cytokinezie powstają dwie komórki potomne. Schemat nie oznacza, że DNA kopiuje się w trakcie mitozy.
 
 **Co uczeń ma zauważyć:** liczba chromosomów a liczba chromatyd.
 
@@ -1787,3 +1788,34 @@ W trakcie mejozy mogą wystąpić **błędy** (nondysjunkcja, niewłaściwa reko
 Ucz się świadomie, nie na pamięć.
 
 <details><summary>Wcześniejsza warstwa MD (zachowana, bez kasowania)</summary>
+
+
+## 23. Doprecyzowanie — mitoza, cytokineza i liczenie (W15)
+
+- **Mitoza** to podział jądra; **cytokineza** to podział cytoplazmy. W typowym cyklu komórkowym następują po sobie, ale nie są tym samym pojęciem.
+- Przed podziałem DNA ulega replikacji. Chromosom złożony z dwóch chromatyd siostrzanych nadal jest liczony jako **jeden chromosom**; po rozdzieleniu chromatyd każda staje się osobnym chromosomem potomnym.
+- Nie wszystkie komórki ciała dzielą się w tym samym tempie. Wzrost i regeneracja zależą od tkanki i stanu organizmu.
+
+**Przykład:** komórka człowieka przed replikacją ma 46 chromosomów i 46 cząsteczek DNA; po replikacji ma 46 chromosomów i 92 chromatydy/cząsteczki DNA. To przykład dla typowej komórki diploidalnej w fazie S zakończonej replikacji.
+
+## AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)
+
+**Zakres:** kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.
+
+### Uściślenia do utrzymania w treści
+- Kontrola pojęć: odróżnić podział jądra (mitozę) od cytokinezy, czyli podziału cytoplazmy. W części szkolnych ujęć słowo „mitoza” bywa używane skrótowo na cały proces; w odpowiedzi precyzyjnej nazwać oba etapy.
+- Klucz liczenia: po replikacji DNA liczba chromosomów nie podwaja się — rośnie liczba chromatyd; chromosom z dwiema chromatydami siostrzanymi nadal liczy się jako jeden chromosom.
+- Nie sugerować, że każda komórka organizmu stale się dzieli. Tempo odnowy zależy od tkanki; część komórek dzieli się rzadko lub praktycznie nie dzieli w dojrzałym stanie.
+
+### Status
+- Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
+- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+
+## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana odpowiedzi o liczbie chromosomów/chromatyd i przebiegu podziałów; nie jest to pełna walidacja wszystkich zadań.
+
+- **Doprecyzowanie do kluczy z liczeniem:** podawaj, czy komórka jest przed replikacją, po replikacji, po mejozie I czy po mejozie II. Bez etapu nie zawsze istnieje jedna liczba chromatyd.
+- **Reguła kontrolna dla komórki somatycznej człowieka:** przed replikacją 46 chromosomów i 46 chromatyd; po replikacji 46 chromosomów i 92 chromatydy; po prawidłowej mejozie II każda gameta ma 23 chromosomy, zwykle po jednej chromatydzie na chromosom.
+- **Nie utożsamiać** liczby DNA/chromatyd z liczbą chromosomów. Chromosom z dwiema chromatydami siostrzanymi liczy się jako jeden chromosom do momentu rozdzielenia chromatyd.
+- **Status:** reguły kontrolne dodane; wszystkie klucze wymagają osobnego przejścia zadanie po zadaniu.

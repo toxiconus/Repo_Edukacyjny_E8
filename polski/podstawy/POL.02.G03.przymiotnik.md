@@ -7,7 +7,7 @@ lead: Jak rozpoznać przymiotnik, dopasować jego formę do rzeczownika i popraw
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: części mowy, fleksja, składnia, ortografia 2026
 powiazania: G01, G02, G04, G05, G06, G07, G12, G13; L004
-stan: ROZBUDOWANA v3.0; po dwóch cyklach audytu wewnętrznego; wymaga niezależnej kontroli polonistycznej
+stan: W1 — GPT-6, 2026-10-09; kontrola redakcyjno-merytoryczna, wymaga niezależnej recenzji polonistycznej
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -559,3 +559,18 @@ Progi są orientacyjne i nie są oficjalną skalą CKE.
 - Materiały porównawcze: `polski/plany/wypelnienia/G03_Przymiotnik_WYPELNIONY.md`, `polski/POLSKI_PODSTAWA_PLUS_v7.11.md`, lekcje sąsiednie G01/G02/G04/G06/G07/G12 oraz HTML L004 w dwóch wersjach.
 - Zasady pisowni 2026: komunikat Rady Języka Polskiego przy Prezydium PAN z 7 listopada 2025 r. oraz aktualne „Zasady pisowni i interpunkcji polskiej”.
 - Wersja 3.0 jest opracowaniem edukacyjnym. Klucze i podział punktów są autorskie; wymagają niezależnego przeglądu polonistycznego przed oznaczeniem jako zatwierdzone.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+**Zakres kontroli:** rozpoznawanie przymiotników, zgoda gramatyczna, stopniowanie, użycia rzeczownikowe, funkcje składniowe oraz pisownia „nie” według zasad obowiązujących od 1.01.2026.
+
+**Ustalenia:**
+- Zachowano rozróżnienie przymiotnika i przysłówka (*szybki samochód — jedzie szybko*) oraz części mowy i części zdania.
+- Doprecyzowano, że nie każdy przymiotnik jest stopniowalny; zależy to od znaczenia i kontekstu.
+- Stopniowanie nieregularne (*dobry — lepszy — najlepszy*) oraz opisowe przedstawiono osobno; konstrukcje typu *bardziej lepszy* niepoprawnie dublują wykładniki stopnia.
+- Reguły pisowni „nie” z przymiotnikami w stopniu wyższym i najwyższym należy stosować zgodnie z nowymi zasadami ortograficznymi, a w zadaniach egzaminacyjnych uwzględniać okres przejściowy wskazany przez CKE.
+- Ćwiczenia i punktacja są autorskie i treningowe; nie są oficjalną punktacją CKE.
+
+**Do dalszej kontroli:** niezależna korekta wszystkich przykładów i kluczy oraz sprawdzenie zasad bezpośrednio w aktualnym tekście RJP/CKE.
+
+**Status:** kontrola redakcyjno-merytoryczna wykonana w podanym zakresie; nie jest to pełna recenzja ekspercka.

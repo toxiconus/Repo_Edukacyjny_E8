@@ -5,7 +5,7 @@ tytul: Układ oddechowy, układ moczowy i wydalanie
 lead: Wymiana gazowa w płucach i oczyszczanie krwi w nerkach — dwie drogi pozbywania się zbędnych produktów.
 plakietki: [[basic:E8]][[exam:KONKURS]]
 zakres: LKO biologia etap II pkt III.6–7
-stan: UZUPEŁNIONY v1
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 wersja: 2026-10-09
 ---
 
@@ -86,3 +86,9 @@ Gotowe. Poziom nefronu dostosowany do klasy 8.
 - DANE: na jakim poziomie szczegółu szkoła uczy nefronu?
 - DANE: doświadczenia z podręcznika lub z lekcji
 - DANE: zadania rejonowe LKO biologia + klucz
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Sprawdzono roboczo rozdzielenie wymiany gazowej w płucach od oddychania komórkowego oraz filtracji, resorpcji i wydzielania w nefronie.
+- Wymiana gazowa zachodzi na powierzchni pęcherzyków płucnych; nie opisywać jej jako aktywnego „pompowania” tlenu do krwi przez pęcherzyki.
+- Mocz ostateczny nie jest po prostu przesączem: powstaje po procesach zachodzących w kanalikach nerkowych.
+- Zakres konkursowy wymaga niezależnego porównania z aktualnym zakresem LKO.

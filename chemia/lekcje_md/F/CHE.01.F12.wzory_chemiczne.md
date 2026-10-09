@@ -6,6 +6,7 @@ wymaga: "F09; F11"
 poglebia: "F13; F17; N02–N08"
 zrodla: "MASTER v17.0; MASTER v15.0; MASTER v14.0; stary kanon F00–F09 (v4.1/v5.0); stary podział CHE.01.F06.wzory_chemiczne.md"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicznej
 ---
 # CHE.01F.12-WZORY — WZORY CHEMICZNE
 
@@ -3638,6 +3639,38 @@ Ca(OH)₂ →  Ca–(O–H)(O–H) ← indeks obejmuje całą grupę OH
 
 ---
 
+## UZUPEŁNIENIE KANONICZNE — czytanie i budowanie wzorów (W1, 2026-10-09)
+
+- **Indeks dolny** podaje liczbę atomów danego pierwiastka w cząsteczce lub najmniejszej jednostce wzoru.
+- **Współczynnik** przed wzorem określa liczbę cząsteczek, jednostek wzoru lub moli; nie tworzy nowej substancji.
+- Podczas bilansowania równania zmieniamy współczynniki, a nie indeksy we wzorach.
+- Nawias jest potrzebny, gdy grupa atomów, np. `OH` lub `NO₃`, występuje więcej niż raz.
+- W związkach jonowych indeksy dobiera się tak, aby suma ładunków w jednostce wzoru wynosiła zero, a stosunek był możliwie najmniejszy.
+
+### Przykłady i typowe błędy
+
+- `Ca(OH)₂` — jeden jon `Ca²⁺` i dwie grupy `OH⁻`; zapis `CaOH₂` jest niepoprawny.
+- `Al₂(SO₄)₃` — dwa jony `Al³⁺` i trzy grupy `SO₄²⁻`; zapis `AlSO₄` nie zachowuje obojętności.
+- `Na₂O` oznacza stosunek atomów/jonów sodu do tlenu 2:1.
+- `2NaOH` oznacza dwie jednostki wzoru NaOH, nie nową substancję.
+- Stosunek 2:2 należy skrócić do 1:1, dlatego poprawny wzór tlenku wapnia to `CaO`, a nie `Ca₂O₂`.
+
+### Metoda budowania wzoru z ładunków
+
+Dla `Al³⁺` i `O²⁻` najmniejsza wspólna wielokrotność wartości ładunków to 6: potrzebne są dwa jony glinu (+6) i trzy jony tlenkowe (−6). Otrzymujemy `Al₂O₃`.
+
+Dla `Ca²⁺` i `OH⁻` potrzebne są dwie grupy wodorotlenkowe: `Ca(OH)₂`.
+
+### Ćwiczenia kontrolne
+
+1. Zapisz wzór tlenku glinu.
+2. Zapisz wzór wodorotlenku magnezu.
+3. Zapisz wzór siarczanu glinu.
+4. Wyjaśnij różnicę między `3CO₂` a `CO₂`.
+5. Popraw wzory: `BaOH₂`, `NaSO₄`, `FeNO₃` (przyjmij żelazo na stopniu utlenienia +III).
+
+**Klucz:** 1. `Al₂O₃`; 2. `Mg(OH)₂`; 3. `Al₂(SO₄)₃`; 4. `3CO₂` oznacza trzy cząsteczki lub trzy mole, a `CO₂` — jedną cząsteczkę lub jednostkę ilościową; 5. `Ba(OH)₂`, `Na₂SO₄`, `Fe(NO₃)₃`. Nazwa `CO₂` w kluczu: tlenek węgla(IV).
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -3646,16 +3679,16 @@ Ca(OH)₂ →  Ca–(O–H)(O–H) ← indeks obejmuje całą grupę OH
 
 ### Poprawki
 
-- Indeks dolny opisuje liczbę atomów danego pierwiastka w jednej cząsteczce lub najmniejszej jednostce wzoru.
-- Współczynnik przed wzorem zmienia liczbę cząsteczek, jednostek wzoru lub moli.
-- Nie wolno zmieniać indeksów podczas bilansowania równania reakcji.
-- Nawias stosuje się wtedy, gdy grupa atomów występuje więcej niż raz.
-- Wzór CaOH₂ jest błędny; poprawny zapis to Ca(OH)₂.
-- Wzór AlSO₄ jest błędny dla siarczanu glinu; poprawny zapis to Al₂(SO₄)₃.
-- Wzór Na₂O oznacza dwa atomy sodu przypadające na jeden atom tlenu w jednostce wzoru.
-- Wzór 2NaOH oznacza dwie jednostki wzoru wodorotlenku sodu, a nie nową substancję.
-- W związku jonowym indeksy wynikają z obojętności elektrycznej całej jednostki wzoru.
-- Wzór sumaryczny nie pokazuje zawsze sposobu połączenia atomów.
+- Indeks dolny opisuje liczbę atomów danego pierwiastka w jednej cząsteczce lub najmniejszej jednostce wzoru. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Współczynnik przed wzorem zmienia liczbę cząsteczek, jednostek wzoru lub moli. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie wolno zmieniać indeksów podczas bilansowania równania reakcji. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nawias stosuje się wtedy, gdy grupa atomów występuje więcej niż raz. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wzór CaOH₂ jest błędny; poprawny zapis to Ca(OH)₂. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wzór AlSO₄ jest błędny dla siarczanu glinu; poprawny zapis to Al₂(SO₄)₃. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wzór Na₂O oznacza dwa atomy sodu przypadające na jeden atom tlenu w jednostce wzoru. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wzór 2NaOH oznacza dwie jednostki wzoru wodorotlenku sodu, a nie nową substancję. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- W związku jonowym indeksy wynikają z obojętności elektrycznej całej jednostki wzoru. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wzór sumaryczny nie pokazuje zawsze sposobu połączenia atomów. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 ### Uzupełnienia
 
@@ -3699,3 +3732,5 @@ Poprawny zapis:
 3. Al₂(SO₄)₃.
 4. 3CO₂ oznacza trzy cząsteczki lub trzy mole dwutlenku węgla; CO₂ oznacza jedną cząsteczkę lub jednostkę ilościową.
 5. Ba(OH)₂, Na₂SO₄, Fe(NO₃)₃ dla żelaza na stopniu utlenienia +III.
+
+**Status audytu:** poprawki i uzupełnienia przeniesiono do sekcji „UZUPEŁNIENIE KANONICZNE”; dodano przykłady, ćwiczenia i klucze.

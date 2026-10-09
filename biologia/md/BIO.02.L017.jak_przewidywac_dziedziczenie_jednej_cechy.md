@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L015 · Następna: L018
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: jest wykład MD; audyt przy edycji; audyt punktowy W15 — 2026-10-09
 - Status HTML: BIOLOGIA_L017_PUNNETT.html
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `rodzice → gamety → potomstwo → genotyp → fenotyp`
 `[/BIO: DIAGRAM]`
+@opis Krzyżówka genetyczna daje przewidywania dla modelu i określonych założeń; nie gwarantuje dokładnego rozkładu cech w małej rodzinie.
 
 **Co uczeń ma zauważyć:** najpierw założenia modelu, potem rachunek.
 
@@ -1037,3 +1038,33 @@ MD i HTML zsynchronizowane merytorycznie. Wizualne siatki Punnetta + flip-fiszki
 
 
 <!-- ==================== BEGIN L018 ==================== -->
+
+
+## 23. Doprecyzowanie — prawdopodobieństwo a rzeczywisty wynik (W15)
+
+Dla krzyżówki **Aa × Aa**, przy pełnej dominacji i prostym dziedziczeniu jednego genu, prawdopodobieństwo genotypu `aa` wynosi 1/4 dla każdego kolejnego potomstwa. Nie oznacza to, że w każdej rodzinie z czworgiem dzieci dokładnie jedno będzie `aa`. Wyniki kolejnych poczęć nie „wyrównują” automatycznie wcześniejszych.
+
+Przed rozwiązaniem zadania zapisz założenia: genotypy rodziców, relację dominacji i recesywności oraz czy cecha jest autosomalna i jednogenowa. Dominacja nie oznacza częstszego występowania ani większej wartości biologicznej allelu.
+
+## AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)
+
+**Zakres:** kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.
+
+### Uściślenia do utrzymania w treści
+- Przy podawaniu 25% dla aa w krzyżówce Aa × Aa dopisać, że to prawdopodobieństwo dla każdego kolejnego potomstwa przy założeniach modelu, a nie obietnica „jedno na czworo” w każdej rodzinie.
+- Przed użyciem krzyżówki ustalić dominację, genotypy rodziców, sposób dziedziczenia i czy zadanie rzeczywiście dotyczy jednej cechy/pojedynczego genu.
+- Nie utożsamiać dominacji z częstszym występowaniem, większą „siłą” allelu ani korzyścią biologiczną.
+
+### Status
+- Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
+- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+
+## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana zadań o krzyżówkach, prawdopodobieństwie i dziedziczeniu cech.
+
+- W krzyżówce Punnetta wynik 1:2:1 dotyczy genotypów przy krzyżowaniu Aa × Aa; stosunek fenotypów 3:1 obowiązuje tylko przy pełnej dominacji i założeniach prostego modelu jednogenowego.
+- Prawdopodobieństwo dla każdego poczęcia/urodzenia jest liczone od nowa w modelu szkolnym; wynik 25% nie oznacza, że dokładnie jedno na czworo dzieci w konkretnej rodzinie musi mieć dany genotyp.
+- Zapis „cecha dominująca” nie oznacza, że jest częstsza, lepsza ani korzystniejsza. Dominacja opisuje relację alleli w określonym modelu fenotypowym.
+- Przed oceną odpowiedzi sprawdź, czy treść podaje genotypy rodziców, rodzaj dominacji oraz czy chodzi o genotyp, fenotyp, płeć czy prawdopodobieństwo.
+- **Status:** dopisano kontrolę warunków modelu; pełny audyt wszystkich kluczy pozostaje otwarty.

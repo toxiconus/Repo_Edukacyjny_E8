@@ -5,7 +5,7 @@ tytul: Epitet i porównanie
 lead: Określenia i zestawienia — jak autor buduje obraz.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: PO W1 — poprawiono doprecyzowania merytoryczne; GPT-6; 2026-10-09
 utworzono: 2026-10-09
 wersja: 2.0
 ---
@@ -16,7 +16,7 @@ wersja: 2.0
 Potrafię rozpoznać epitet i porównanie, odróżnić określenie dosłowne od metaforycznego, wskazać człony porównania i wyjaśnić funkcję środka w konkretnym fragmencie. Nie poprzestaję na samej nazwie — uzasadniam wpływ na obraz, nastrój lub ocenę.
 
 ## 1. Epitet
-**Epitet** to określenie rzeczownika, które podkreśla cechę, wygląd, ocenę lub sposób postrzegania osoby, przedmiotu czy zjawiska. Często jest przymiotnikiem (*ciemny las, spokojne morze*), ale może mieć inną postać: *uśmiech dziecka, dom z kamienia, dzień pełen nadziei*. Epitet nie zawsze jest ozdobny — może być zwykłą informacją (*drewniany stół*) albo wywoływać obraz i emocje (*złowroga cisza*).
+**Epitet** to określenie rzeczownika, które uwydatnia cechę, ocenę lub sposób postrzegania osoby, przedmiotu czy zjawiska. Najczęściej jest wyrażony przymiotnikiem (*ciemny las, spokojne morze*), ale określenie może mieć także inną postać. Nie każda grupa rzeczownikowa, np. *uśmiech dziecka*, jest automatycznie epitetem stylistycznym — trzeba wykazać, że w danym kontekście pełni funkcję określającą i znaczącą. Epitet nie zawsze jest ozdobny: *drewniany stół* może przekazywać zwykłą informację, a *złowroga cisza* budować nastrój.
 
 - **epitet zwykły/dosłowny:** *zimna woda* — cecha rzeczywista;
 - **epitet metaforyczny:** *złote serce* — określenie przenośne;
@@ -93,3 +93,9 @@ Przy każdym środku umiem wskazać dokładny fragment, nazwać cechę, wyjaśni
 **Kryteria:** poprawne zestawienie dwóch elementów (1 pkt), nazwanie wspólnej cechy (1 pkt), wskazanie efektu (1 pkt).
 
 **Zastosowanie do lektury:** w opisie przyrody w dowolnej lekturze zaznacz jeden epitet i jedno porównanie. Zacytuj krótki fragment zgodnie z tekstem, a następnie wyjaśnij, jak autor tworzy obraz miejsca lub nastroju. Nie przypisuj funkcji bez dowodu w tekście.
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+- Doprecyzowano definicję epitetu: grupa rzeczownikowa nie staje się automatycznie epitetem stylistycznym; wymaga funkcji określającej w kontekście. ✔ wprowadzone (sekcja 1)
+- Ćwiczenia i klucze sprawdzono pod kątem rozróżnienia epitetu, porównania i zwykłej informacji; nie stwierdzono błędu wymagającego zmiany klucza. ✔ sprawdzone
+- Wizualizacja ma opis słowny `@opis`. ✔ sprawdzone
+

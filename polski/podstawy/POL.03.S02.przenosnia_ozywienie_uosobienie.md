@@ -5,7 +5,7 @@ tytul: Przenośnia, ożywienie i uosobienie
 lead: Metafora i nadawanie cech istot żywych przedmiotom i zjawiskom.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010, S06
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: PO W1 — doprecyzowano granice pojęć i klucz; GPT-6; 2026-10-09
 utworzono: 2026-10-09
 wersja: 2.0
 ---
@@ -21,7 +21,7 @@ Rozpoznaję metaforę, animizację i personifikację, potrafię wyjaśnić znacz
 Aby wyjaśnić metaforę, nie wystarczy przepisać ją innymi słowami. Trzeba wskazać sens dosłowny, sens przenośny i efekt. *Lawina pytań* oznacza bardzo dużą liczbę pytań pojawiających się szybko; obraz lawiny podkreśla gwałtowność i przytłoczenie.
 
 ## 2. Ożywienie (animizacja)
-**Ożywienie** przypisuje przedmiotom, zjawiskom lub zjawiskom przyrody cechy istot żywych, ale niekoniecznie ludzkie: *wiatr wyje, rzeka biegnie, gwiazdy mrugają, liście tańczą*. Środek ułatwia przedstawienie przyrody jako dynamicznej i aktywnej. Czasownik związany z ruchem nie zawsze jest animizacją — *rzeka płynie* jest dosłownym opisem; *rzeka pędzi przez dolinę* może być obrazowe w kontekście.
+**Ożywienie (animizacja)** przypisuje przedmiotom lub zjawiskom cechy istot żywych, niekoniecznie ludzkie: *wiatr wyje, liście tańczą*. Może dynamizować obraz przyrody. Sam czasownik ruchu nie wystarcza: *rzeka płynie* to zwykły opis, a *rzeka pędzi przez dolinę* może być obrazowe — zależnie od kontekstu. Granica między animizacją a personifikacją bywa płynna, dlatego odpowiedź trzeba uzasadnić konkretną cechą.
 
 ## 3. Uosobienie (personifikacja)
 **Uosobienie** nadaje rzeczom, pojęciom abstrakcyjnym, zjawiskom lub zwierzętom cechy typowo ludzkie: mówienie, myślenie, podejmowanie decyzji, intencje i ludzkie emocje. Przykłady autorskie: *Nadzieja zapukała do drzwi; Śmierć zaprosiła go do tańca; Miasto nie chciało zasnąć.*
@@ -80,3 +80,9 @@ Potrafię podać fragment, nazwać środek, wyjaśnić jego sens przenośny i ws
 **Kryteria:** metafora nie ma jawnego łącznika porównawczego; porównanie jawnie zestawia dwa elementy; uczeń wyjaśnia efekt.
 
 **Zastosowanie do lektury:** jeśli w bajce zwierzęta mówią, rozdziel trzy kwestie: (1) personifikacja w zachowaniu postaci, (2) funkcja fabularna, (3) ewentualna alegoria wynikająca z utrwalonej tradycji. Nie zakładaj alegorii bez uzasadnienia.
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+- Doprecyzowano animizację i zaznaczono płynną granicę z personifikacją; rozstrzygnięcie ma być uzasadniane kontekstem. ✔ wprowadzone (sekcja 2)
+- Klucze rozróżniają opis dosłowny, metaforę, ożywienie i uosobienie; przypadki graniczne pozostawiono jako zależne od kontekstu. ✔ sprawdzone
+- Wizualizacja ma opis słowny `@opis`. ✔ sprawdzone
+

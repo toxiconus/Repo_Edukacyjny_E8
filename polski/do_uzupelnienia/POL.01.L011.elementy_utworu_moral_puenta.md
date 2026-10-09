@@ -4,7 +4,7 @@ przedmiot: język polski
 tytul: Budowa utworu — narrator, podmiot liryczny, gatunki, morał, puenta i przesłanie
 wersja: 4.0
 poziom: E8 + trening konkursowy
-status: PEŁNA LEKCJA po cyklu: analiza materiałów literackich → diagnoza luk → uzupełnienie → ponowna kontrola
+status: W2 — GPT-6, 2026-10-09; audyt i doprecyzowania wprowadzone; niezależna recenzja zewnętrzna niepotwierdzona
 powiazania: POL.01.L010.srodki_stylistyczne.md; POL.02.G17.mowa_zalezna.md; POL.03.S04.powtorzenie_anafora_wyliczenie.md; POL.03.S06.hiperbola_ironia_symbol_alegoria.md
 czas: 2–3 jednostki lekcyjne + powtórka
 ---
@@ -347,3 +347,13 @@ Dodano pełne wyjaśnienia autora/narratora/podmiotu lirycznego, epiki/liryki/dr
 - [x] Punkt kulminacyjny nie jest utożsamiony z końcowym zdaniem.
 - [x] W przykładzie narracji pierwszoosobowej zaznaczono ograniczenie wiedzy narratora.
 - [ ] Pozostaje niezależna recenzja polonistyczna i walidacja względem aktualnych wymagań/arkuszy CKE.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Zakres:** Kontrola rozróżnienia autora, narratora, podmiotu lirycznego, morału, puenty i przesłania.
+
+**Uzupełnienie wprowadzone:** Doprecyzowano, że autora nie utożsamia się automatycznie z narratorem ani podmiotem lirycznym; interpretację morału i puenty należy poprzeć zakończeniem lub przebiegiem utworu.
+
+- Sprawdzono spójność celu lekcji, pojęć i kluczy z poziomem E8; materiał konkursowy/rozszerzający należy traktować jako dodatkowy, a nie wymagany do podstawowej odpowiedzi.
+- Własne rubryki ćwiczeniowe są kryteriami treningowymi, nie oficjalną punktacją CKE.
+- Źródło do niezależnej kontroli wymagań egzaminacyjnych: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory oraz Informator CKE: https://bip.cke.gov.pl/attachments/download/9824.

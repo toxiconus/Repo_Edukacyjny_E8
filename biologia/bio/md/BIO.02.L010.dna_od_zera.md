@@ -850,3 +850,13 @@ Erytrocyt :: czerwona krwinka; dojrzała nie ma jądra ani mitochondriów, więc
 | trener-nici | §10.7 | DNA→DNA i DNA→RNA |
 
 **Wersja 4.0 (2026-10-07)** — przeniesienie do szablonu lekcji BIO (md → HTML) i nowej biblioteki grafik `bio-viz.js`. Źródła: L010 z pakietu BIO.all v5.2 (cechy, v3.8, v3.9.1, warstwa DNA-od-zera) oraz HTML v3.0 (ściąga 5.1–5.10, klinika 16 + 5, 17 ćwiczeń, 26 fiszek, test). Treść scalona bez usuwania; dopisano odpowiedź do pytania o „przeskakiwanie pokoleń”. Liczby (3,4 nm, 2 nm, 10 par) — wartości podręcznikowe.
+
+
+## AUDYT W19 — DNA i interpretacja uproszczeń (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana twierdzeń o lokalizacji DNA i zależności genotyp–fenotyp.
+
+- Doprecyzowanie: DNA eukariontów znajduje się głównie w jądrze, a także w mitochondriach; u roślin i wielu glonów DNA występuje również w plastydach, w tym chloroplastach. Nie należy przenosić lokalizacji jądrowej na bakterie.
+- Zdanie o dojrzałym erytrocycie człowieka dotyczy typowej dojrzałej krwinki czerwonej: nie ma jądra i mitochondriów, dlatego nie zawiera własnego jądrowego DNA; próbka krwi zawiera DNA m.in. z leukocytów.
+- Model „DNA → RNA → białko → cecha” jest schematem pomocniczym, nie każda cząsteczka RNA jest tłumaczona na białko, a fenotyp zależy także od regulacji, środowiska i rozwoju.
+- **Status:** audyt celowany; pełna kontrola wszystkich ćwiczeń i kluczy pozostaje otwarta.

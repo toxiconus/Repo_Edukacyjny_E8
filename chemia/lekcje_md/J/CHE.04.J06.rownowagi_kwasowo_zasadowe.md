@@ -2,8 +2,32 @@
 kod: "J06"
 tytul: "Równowagi kwasowo-zasadowe"
 opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie było treści tych lekcji; do weryfikacji przed budową lekcji."
+stan: W22 — GPT-6, 2026-10-09; audyt przekrojowy równań i modeli, pełna niezależna recenzja nadal otwarta
 ---
 # Równowagi kwasowo-zasadowe — materiał wstępny
+
+## TREŚĆ KANONICZNA PO W1 — RÓWNOWAGI KWASOWO-ZASADOWE
+
+Reakcja odwracalna może przebiegać w obu kierunkach. W stanie równowagi dynamicznej szybkości reakcji w przód i wstecz są równe, a stężenia makroskopowe pozostają stałe — nie oznacza to, że reakcje ustają.
+
+### Moc kwasu i pary sprzężone
+
+Moc kwasu opisuje skłonność do oddawania protonu w określonym rozpuszczalniku; nie jest tym samym co stężenie. Kwas po oddaniu protonu tworzy sprzężoną zasadę, a zasada po przyjęciu protonu — sprzężony kwas. Przykład: CH₃COOH/CH₃COO⁻ oraz NH₄⁺/NH₃.
+
+CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺
+
+NH₃ + H₂O ⇌ NH₄⁺ + OH⁻
+
+### Bufory i wspólny jon — rozszerzenie
+
+[[exam:KONKURS]] Bufor ogranicza zmianę pH po dodaniu umiarkowanej ilości kwasu lub zasady; zwykle zawiera słaby kwas i jego sprzężoną zasadę w porównywalnych ilościach. Nie utrzymuje pH niezmienionego w każdych warunkach i ma ograniczoną pojemność. Dodanie wspólnego jonu może przesunąć równowagę słabego elektrolitu; opis kierunku wymaga wskazania równania i składu układu.
+
+### Sprawdź się
+
+1. Czy w równowadze reakcje zatrzymują się? **Nie.**
+2. Czy mocny kwas musi być stężony? **Nie; moc i stężenie to różne cechy.**
+3. W jaką parę sprzężoną tworzy się CH₃COOH po oddaniu protonu? **CH₃COO⁻.**
+4. Czy bufor ma nieograniczoną pojemność? **Nie.**
 
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
@@ -17,11 +41,11 @@ opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie
 
 Uczeń powinien:
 
-- rozumieć, że wiele reakcji kwasowo-zasadowych jest odwracalnych;
-- odróżnić moc kwasu od jego stężenia;
-- wyjaśnić rolę sprzężonych par kwas–zasada;
-- opisać działanie buforu na poziomie odpowiednim do kursu;
-- nie utożsamiać równowagi z zatrzymaniem reakcji.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozumieć, że wiele reakcji kwasowo-zasadowych jest odwracalnych;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): odróżnić moc kwasu od jego stężenia;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wyjaśnić rolę sprzężonych par kwas–zasada;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): opisać działanie buforu na poziomie odpowiednim do kursu;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): nie utożsamiać równowagi z zatrzymaniem reakcji.
 
 #### Równowaga dynamiczna
 
@@ -33,10 +57,10 @@ Dla słabego kwasu:
 
 W roztworze znajdują się:
 
-- cząsteczki HA;
-- jony H₃O⁺;
-- jony A⁻;
-- woda.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): cząsteczki HA;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): jony H₃O⁺;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): jony A⁻;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): woda.
 
 #### Moc kwasu
 
@@ -62,8 +86,8 @@ Dla reakcji:
 
 pary sprzężone to:
 
-- HA/A⁻;
-- H₃O⁺/H₂O.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): HA/A⁻;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): H₃O⁺/H₂O.
 
 Kwas oddaje proton, a zasada sprzężona może go przyjąć.
 
@@ -71,8 +95,8 @@ Kwas oddaje proton, a zasada sprzężona może go przyjąć.
 
 Bufor ogranicza zmiany pH po dodaniu małej ilości kwasu lub zasady. Zwykle zawiera:
 
-- słaby kwas;
-- jego sprzężoną zasadę, często w postaci rozpuszczalnej soli.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): słaby kwas;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): jego sprzężoną zasadę, często w postaci rozpuszczalnej soli.
 
 Przykład: układ kwasu etanowego i jonów etanianowych.
 
@@ -116,3 +140,10 @@ dodanie etanianu sodu zwiększa stężenie CH₃COO⁻, co w prostym modelu prze
 4. Jon etanianowy zużywa część jonów hydroniowych, tworząc kwas etanowy i wodę.
 5. Nie. Moc i stężenie to różne wielkości.
 6. Równowaga przesuwa się w stronę cząsteczek kwasu etanowego, ograniczając jego dysocjację.
+
+
+## W22 — kontrola równowag (2026-10-09, GPT-6)
+
+- **Sprawdzono:** `CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺`, `NH₃ + H₂O ⇌ NH₄⁺ + OH⁻` oraz `CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O` — bilans atomów i ładunku jest zachowany.
+- **Doprecyzowanie:** dla słabych elektrolitów stosuje się strzałkę równowagi; reakcja kwasu z OH⁻ może być zapisana jako reakcja zobojętniania netto.
+- **Ograniczenie:** kontrola wybranych przykładów, nie pełna walidacja wszystkich stałych równowagi ani zadań rozszerzonych.

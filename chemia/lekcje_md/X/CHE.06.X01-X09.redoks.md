@@ -3,6 +3,7 @@ kod: "X01–X09"
 tytul: "LEKCJA L010 — REDOKS"
 zrodla: "CHEMIA_PODSTAWA_PLUS v1.1 (CHE.06.X01-X10.redoks.md)"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W22 — GPT-6, 2026-10-09; kontrola celowana równań, warunków i BHP; pełna niezależna recenzja nadal otwarta
 ---
 <!-- ==================== BEGIN L010 ==================== -->
 
@@ -55,7 +56,7 @@ Poprzednia lekcja: L009 (stechiometria) · Następna: L011 (doświadczenia)
 4. REDUKTOR = sam się utlenia (oddaje e⁻)  
 5. Suma stopni utlenienia = 0 (cząsteczka) lub ładunek (jon)  
 6. Wodór: +I (z niemetalami), −I (z metalami)  
-7. Tlen: −II (wyjątki: nadtlenki −I, OF₂ +II)
+7. Tlen: zwykle −II (wyjątki m.in. nadtlenki −I; w OF₂ ma +II, ponieważ fluor jest bardziej elektroujemny).
 
 ---
 
@@ -132,7 +133,7 @@ Po tej lekcji umiesz:
 
 ### Definicja
 
-**Reakcja redoks** — reakcja, w której następuje wymiana elektronów między pierwiastkami; stopnie utlenienia pierwiastków ulegają zmianie.
+**Reakcja redoks** — reakcja, w której zmieniają się stopnie utlenienia co najmniej dwóch składników procesu. Opisuje się ją przez formalne oddawanie i przyjmowanie elektronów; nie oznacza to, że w każdej reakcji elektrony występują jako swobodne cząstki pośrednie.
 
 **Utlenianie** — oddawanie elektronów (stopień utlenienia rośnie).
 **Redukcja** — przyjmowanie elektronów (stopień utlenienia maleje).
@@ -152,7 +153,7 @@ Po tej lekcji umiesz:
 3. **Suma stopni utlenienia w cząsteczce = 0.**
 4. **Suma stopni utlenienia w jonie = ładunek jonu.**
 5. **Wodór:** +I (z niemetalami, np. HCl, H₂O); −I (z metalami, np. NaH, CaH₂).
-6. **Tlen:** −II (wyjątki: nadtlenki −I, np. H₂O₂; ponadtlenki −½, np. KO₂; OF₂: +II; tlenki z fluorem: +I, +II).
+6. **Tlen:** zwykle −II; w nadtlenkach, np. H₂O₂, ma −I; w ponadtlenkach, np. KO₂, średnio −½; w OF₂ ma +II, a w O₂F₂ ma +I. To związki tlenu z fluorem, nie typowe tlenki.
 7. **Fluor:** zawsze −I.
 8. **Metale grup 1–2:** zawsze +I, +II.
 9. **Glin:** zawsze +III.
@@ -309,7 +310,7 @@ Chlor w Cl₂ jednocześnie się utlenia i redukuje.
 4. **Wypieranie metali:** Fe + CuSO₄ → FeSO₄ + Cu (Fe: 0 → +II; Cu: +II → 0).
 5. **Utlenianie tlenków:** 2SO₂ + O₂ → 2SO₃ (S: +IV → +VI; O: 0 → −II).
 6. **Redukcja tlenków:** Fe₂O₃ + 3CO → 2Fe + 3CO₂ (Fe: +III → 0; C: +II → +IV).
-7. **Dysproporcjonowanie:** 3Cl₂ + 6KOH → 5KCl + KClO₃ + 3H₂O.
+7. **Dysproporcjonowanie:** w gorącym, stężonym roztworze KOH: 3Cl₂ + 6KOH → 5KCl + KClO₃ + 3H₂O. W zimnym, rozcieńczonym roztworze zasady typowy zapis to Cl₂ + 2KOH → KCl + KClO + H₂O. Warunki są częścią opisu reakcji.
 
 ### Zastosowania redoks
 
@@ -863,7 +864,7 @@ K > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Ag > Au
 Ten sam pierwiastek jednocześnie się utlenia i redukuje.
 
 - Cl₂ + 2NaOH → NaCl + NaClO + H₂O
-- 3Cl₂ + 6KOH → 5KCl + KClO₃ + 3H₂O
+- W gorącym, stężonym KOH: 3Cl₂ + 6KOH → 5KCl + KClO₃ + 3H₂O; w zimnym, rozcieńczonym KOH: Cl₂ + 2KOH → KCl + KClO + H₂O.
 - 2H₂O₂ → 2H₂O + O₂ (kat. MnO₂)
 
 ### E.3. Reakcje redoks w organizmach
@@ -1064,4 +1065,28 @@ Dysproporcjonowanie — extra. Ogniwo: anoda utlenianie, katoda redukcja.
 - Żółty płomień gazu często = niedobór O₂ / sadza.
 - H₂O₂ musuje: 2 H₂O₂ → 2 H₂O + O₂.
 
+## W22 — warunki reakcji i korekty redoks (2026-10-09, GPT-6)
+
+- **Korekta pojęciowa w treści głównej:** definicja redoks odwołuje się do zmiany stopni utlenienia; formalny bilans elektronowy nie powinien sugerować, że elektrony zawsze występują jako swobodne cząstki pośrednie.
+- **Korekta stopni utlenienia tlenu:** w OF₂ tlen ma +II, a w O₂F₂ +I. Nie należy nazywać tych związków „typowymi tlenkami”; są to związki tlenu z fluorem.
+- **Doprecyzowanie warunków:** reakcja Cl₂ z zimnym, rozcieńczonym KOH prowadzi w szkolnym modelu do chlorku i podchlorynu; gorący, stężony KOH prowadzi do chlorku i chloranu(V). Równanie bez warunków jest niepełnym opisem.
+- **Bezpieczeństwo:** reakcji KMnO₄ z HCl nie należy proponować do samodzielnego doświadczenia; może wydzielać się toksyczny chlor. W materiale szkolnym traktować ją jako równanie do analizy, chyba że nauczyciel zapewnia odpowiednie warunki laboratoryjne i procedury BHP.
+- **Warunek kwasu azotowego(V):** zapis reakcji miedzi z HNO₃ stężonym daje zwykle NO₂; dla rozcieńczonego kwasu produkt redukcji może być inny, np. NO. Nie wolno pomijać stężenia w zadaniu.
+- **Zakres kontroli:** sprawdzono wskazane reguły i przykłady z treści; nie jest to pełna recenzja wszystkich 20+ zadań ani niezależna recenzja chemiczna.
+
 <!-- ==================== END L010 ==================== -->
+
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+Zakres tej kontroli: przegląd wybranych równań, kluczy i rozróżnień pojęciowych w pliku X01–X09; nie jest to pełna walidacja każdej pozycji ani niezależna recenzja ekspercka.
+
+- **Cytat:** `KMnO₄ + HCl → KCl + MnCl₂ + Cl₂ + H₂O`.
+  **Korekta:** traktować wyłącznie jako zapis wyjściowy przed bilansem; poprawne równanie sumaryczne to `2KMnO₄ + 16HCl → 2KCl + 2MnCl₂ + 5Cl₂ + 8H₂O`.
+  **Kontrola:** liczba atomów K, Mn, O, H i Cl jest zachowana po obu stronach.
+- **Cytat:** `Zn + 2HCl → ZnCl₂ + H₂`.
+  **Kontrola:** równanie jest zbilansowane; Zn przechodzi z 0 na +II, a wodór z +I na 0. Cynk jest reduktorem, a jony H⁺ — utleniaczem.
+- **Cytat:** `NaOH + HCl → NaCl + H₂O` jako przykład redoks.
+  **Korekta:** to neutralizacja, nie redoks; stopnie utlenienia nie zmieniają się.
+- **Zasada interpretacji:** wzrost stopnia utlenienia oznacza utlenianie, a spadek — redukcję. Utleniacz ulega redukcji, reduktor — utlenieniu.
+- **Źródło robocze:** kontrola bilansu atomów i stopni utlenienia bezpośrednio na równaniach z tej lekcji; szczegółowe dane doświadczeń i dobór warunków wymagają osobnego sprawdzenia źródłowego.

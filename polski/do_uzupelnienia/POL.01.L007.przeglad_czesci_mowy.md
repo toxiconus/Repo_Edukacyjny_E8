@@ -4,7 +4,7 @@ przedmiot: język polski
 tytul: Przegląd części mowy — rozpoznawanie, odmiana i funkcja w zdaniu
 wersja: 3.0
 poziom: E8 + trening konkursowy
-status: UZUPEŁNIONA v3.0 — audyt kompletności W2 wykonany wewnętrznie; niezależna recenzja pozostaje otwarta
+status: W2 — GPT-6, 2026-10-09; audyt i doprecyzowania wprowadzone; niezależna recenzja zewnętrzna niepotwierdzona
 czas: 2–3 jednostki lekcyjne + powtórka
 wymaga:
   - podstawowej znajomości rzeczownika, czasownika i przymiotnika
@@ -654,3 +654,13 @@ Jeśli nie możesz zaznaczyć któregoś punktu, wróć do odpowiedniej sekcji, 
 - Wersja 3.0 zawiera aktualizację ortografii „nie” z imiesłowami i informację o okresie przejściowym CKE 2026–2030.
 - Niezależna recenzja polonistyczna i końcowa walidacja względem aktualnego informatora oraz arkuszy CKE pozostają otwarte.
 - Kolejne lekcje L008–L011 rozbudowano do wersji 4.0; szczegóły zapisano w ich osobnych audytach.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Zakres:** Kontrola terminologii części mowy, form nieodmiennych, imiesłowów oraz rozróżnienia klasy wyrazu od funkcji w zdaniu.
+
+**Uzupełnienie wprowadzone:** Uzupełniono kryterium: najpierw rozpoznaj formę i jej cechy gramatyczne, potem określ funkcję w zdaniu; samą funkcją składniową nie wolno wyznaczać części mowy.
+
+- Sprawdzono spójność celu lekcji, pojęć i kluczy z poziomem E8; materiał konkursowy/rozszerzający należy traktować jako dodatkowy, a nie wymagany do podstawowej odpowiedzi.
+- Własne rubryki ćwiczeniowe są kryteriami treningowymi, nie oficjalną punktacją CKE.
+- Źródło do niezależnej kontroli wymagań egzaminacyjnych: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory oraz Informator CKE: https://bip.cke.gov.pl/attachments/download/9824.

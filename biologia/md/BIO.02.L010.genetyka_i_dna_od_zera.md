@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L002 / L003 opcjonalnie · Następna: L011
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: wersja robocza po kontroli wizualnej i redakcyjnej — wymaga niezależnej recenzji biologicznej
 - Status HTML: BIOLOGIA_L010_DNA_OD_ZERA.html
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `cecha → dziedziczenie/środowisko → zmienność → informacja genetyczna`
 `[/BIO: DIAGRAM]`
+@opis Schemat strzałkowy: cecha organizmu → jej źródła (dziedziczenie i wpływ środowiska) → zmienność między osobnikami → informacja genetyczna jako to, co przekazywane jest potomstwu. Wniosek: cecha powstaje ze współdziałania genów i środowiska, a dziedziczy się tylko informację zapisaną w DNA.
 
 **Co uczeń ma zauważyć:** DNA pojawia się dopiero jako most do L011.
 
@@ -495,3 +496,10 @@ Czym jest DNA, gdzie jest w komórce i czego ten skrót **nie** oznacza?
 
 
 <!-- ==================== BEGIN L011 ==================== -->
+
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Przeprowadzono kontrolę redakcyjną i kontrolę oznaczeń wizualizacji; dopisano `@opis` bezpośrednio pod blokami `[BIO: DIAGRAM]` tam, gdzie go brakowało.
+- Zachowano dotychczasową treść i kody lekcji; nie usuwano wcześniejszych wersji ani banków zadań.
+- Zwrócono uwagę na rozróżnienie modelu od rzeczywistości oraz na to, że schematy przepływu pokazują uproszczone relacje.
+- **Ograniczenie:** nie jest to pełna niezależna walidacja wszystkich danych i kluczy zadań; przed publikacją wymagane jest sprawdzenie merytoryczne przez nauczyciela biologii.

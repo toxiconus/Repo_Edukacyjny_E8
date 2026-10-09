@@ -5,7 +5,7 @@ tytul: Hiperbola, ironia, symbol, alegoria
 lead: Środki znaczeniowe trudniejsze — poziom E8+ i konkurs.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L011
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: PO W1 — doprecyzowano symbol/alegorię i kryteria interpretacji; GPT-6; 2026-10-09
 utworzono: 2026-10-09
 wersja: 2.0
 ---
@@ -31,7 +31,7 @@ Ironia nie jest tym samym co kłamstwo. Kłamca chce, by odbiorca uznał fałszy
 Interpretując symbol, odwołaj się do miejsca w utworze, powtarzalności motywu, działań bohaterów i nastroju. Unikaj zdania „symbol oznacza X” bez uzasadnienia.
 
 ## 4. Alegoria
-**Alegoria** ma znaczenie bardziej utrwalone i konwencjonalne niż symbol. W tradycji bajkowej lis często przedstawia spryt, osioł — upór lub ograniczenie, a sowa — mądrość; znaczenie wynika z konwencji kulturowej i sposobu przedstawienia. Alegoria może być postacią, przedmiotem, sceną lub całym obrazem.
+**Alegoria** ma zwykle znaczenie bardziej utrwalone i konwencjonalne niż symbol. W tradycji bajkowej lis może przedstawiać spryt, a sowa — mądrość, lecz nie wolno przypisywać tych znaczeń automatycznie każdemu utworowi: trzeba sprawdzić konwencję i sposób przedstawienia. Alegorią może być postać, przedmiot, scena lub cały obraz. Symbol częściej pozostawia kilka możliwych odczytań, które należy uzasadnić tekstem.
 
 Granica między symbolem i alegorią nie zawsze jest absolutna, ale na poziomie szkolnym przydatne jest rozróżnienie: symbol ma sens otwarty i wieloznaczny, alegoria — bardziej ustalony, umowny. Zawsze uzasadnij rozpoznanie tekstem i konwencją.
 
@@ -84,3 +84,9 @@ Potrafię uzasadnić interpretację cytatem lub sytuacją, odróżnić dosłowny
 **Klucz:** po sukcesie może być pochwałą; po katastrofie — ironią. Kontekst odwraca interpretację.
 
 **Zastosowanie do lektury:** interpretację symbolu lub ironii poprzyj wydarzeniem, zachowaniem bohatera, tonem narracji albo powracającym motywem. Zaznacz, jeśli tekst dopuszcza więcej niż jedno odczytanie.
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+- Doprecyzowano, że znaczenie alegoryczne nie może być przypisywane automatycznie tylko na podstawie postaci lub gatunku. ✔ wprowadzone (sekcja 4)
+- Klucze dotyczące ironii, hiperboli i symbolu poprawnie wymagają uwzględnienia kontekstu; wieloznaczność symbolu została zachowana. ✔ sprawdzone
+- Wizualizacja ma opis słowny `@opis`. ✔ sprawdzone
+

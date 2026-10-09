@@ -5,7 +5,7 @@ blok: D
 numer: 5
 wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
+status: W2 — GPT-6, 2026-10-09; audyt kontrolny i doprecyzowanie zapisane; niezależna recenzja zewnętrzna niepotwierdzona
 wymaga: PL.D01–D04; umiejętność przywoływania lektur
 ---
 
@@ -258,3 +258,11 @@ Punktacja w poprzedniej rubryce pozostaje treningowa. Wymagania formalne, długo
 - [x] Sprawdzono, że wniosek nie rozszerza przykładu Scrooge’a na wszystkich ludzi.
 - [x] Dodano ćwiczenia naprawcze dotyczące uogólnienia, różnorodności argumentów i słowa „zawsze”.
 - [ ] Pozostaje niezależna recenzja polonistyczna oraz sprawdzenie wymagań aktualnego egzaminu.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Doprecyzowanie kontrolne:** Rozprawka ma odpowiadać na dokładny problem; argument to nie samo streszczenie lektury. Przykład literacki powinien być rzeczowo poprawny i wyjaśniony.
+
+- Kontrola zakresu: zadanie należy rozwiązywać zgodnie z konkretnym poleceniem; szablon nie zastępuje realizacji tematu.
+- Kryteria i punktacje w ćwiczeniach są treningowe, chyba że plik wyraźnie cytuje oficjalny dokument. Nie przedstawiać ich jako oficjalnej punktacji CKE.
+- Źródło do kontroli aktualnych wymagań: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory; informator język polski: https://bip.cke.gov.pl/attachments/download/9824.

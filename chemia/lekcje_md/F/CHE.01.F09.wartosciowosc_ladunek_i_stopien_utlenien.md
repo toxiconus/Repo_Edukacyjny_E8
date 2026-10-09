@@ -6,6 +6,7 @@ wymaga: "F04; F05; F06; F08"
 poglebia: "F12; F17; X01–X09"
 zrodla: "MASTER v17.0; MASTER v15.0; MASTER v14.0; stary kanon F00–F09 (v4.1/v5.0); stary podział CHE.01.F05.wartosciowosc_ladunek_stopien_utlenienia.md"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicznej
 ---
 # CHE.01F.09-WARTOŚCIOŚĆ-LADUNEK — WARTOŚCIOWOŚĆ, ŁADUNEK I STOPIEŃ UTLENIENIA
 
@@ -3007,34 +3008,68 @@ CO₂ → tlen ma II, dwa atomy tlenu dają łącznie IV. Węgiel ma zatem warto
 
 ---
 
+## UZUPEŁNIENIE KANONICZNE — trzy pojęcia, których nie wolno utożsamiać (W1, 2026-10-09)
+
+- **Wartościowość** opisuje liczbę wiązań przypisywanych atomowi w danym związku w przyjętym modelu; w szkolnym zapisie często oznacza się ją cyfrą rzymską bez znaku.
+- **Ładunek jonu** jest rzeczywistym ładunkiem elektrycznym jonu, np. `Fe³⁺` lub `Ca²⁺`.
+- **Stopień utlenienia** jest formalną wartością wyznaczaną według reguł; zapisuje się go ze znakiem, np. `+III`.
+
+W jonie jednoatomowym liczba odpowiadająca ładunkowi jest równa stopniowi utlenienia, ale pojęcia nadal opisują co innego. W związku kowalencyjnym stopień utlenienia nie dowodzi, że cząsteczka zawiera wolne jony.
+
+### Podstawowe reguły stopni utlenienia
+
+- Pierwiastek w stanie wolnym ma stopień utlenienia `0`.
+- Suma stopni utlenienia w cząsteczce obojętnej wynosi `0`.
+- Suma stopni utlenienia w jonie wieloatomowym jest równa ładunkowi jonu.
+- Fluor w związkach ma `−I`.
+- Tlen ma zwykle `−II`, ale w nadtlenkach ma `−I`.
+- Wodór ma zwykle `+I`, a w wodorkach metali `−I`.
+- Litowce mają zwykle `+I`, a berylowce `+II`.
+
+### Przykłady obliczeń
+
+W `H₂SO₄`: `2·(+I) + x + 4·(−II) = 0`, więc `x = +VI`. Siarka ma stopień utlenienia `+VI`.
+
+W `FeCl₃` każdy chlor ma zwykle `−I`, więc żelazo ma formalny stopień utlenienia `+III`. Nie oznacza to, że zapis `Fe³⁺` jest po prostu innym sposobem zapisania stopnia utlenienia w cząsteczce.
+
+### Ćwiczenia kontrolne
+
+1. Wyznacz stopień utlenienia siarki w `SO₂`.
+2. Wyznacz stopień utlenienia azotu w `HNO₃`.
+3. Wyznacz stopień utlenienia manganu w `KMnO₄`.
+4. Wyjaśnij różnicę między jonem `Ca²⁺` a stopniem utlenienia `+II` wapnia w związku.
+5. Dlaczego w `H₂O` tlen ma stopień utlenienia `−II`, mimo że woda nie jest zbiorem jonów `H⁺` i `O²⁻`?
+
+**Klucz:** 1. `+IV`; 2. `+V`; 3. `+VII`; 4. `Ca²⁺` jest jonem o rzeczywistym ładunku `2+`, a `+II` to formalny stopień utlenienia; 5. stopień utlenienia wynika z formalnego przypisania elektronów według reguł, a nie z istnienia wolnych jonów w cząsteczce.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
 ### Poprawki
 
-- Wartościowość, ładunek jonu i stopień utlenienia to różne pojęcia.
-- **Wartościowość** określa liczbę wiązań, które atom danego pierwiastka tworzy w określonej substancji lub związku.
-- Wartościowość zapisuje się zwykle cyfrą rzymską bez znaku, na przykład  Fe(III)  w znaczeniu wartościowości żelaza.
-- **Ładunek jonu** jest rzeczywistym ładunkiem elektrycznym jonu i zapisuje się cyfrą arabską ze znakiem, na przykład Fe³⁺.
-- **Stopień utlenienia** jest formalnym ładunkiem przypisanym atomowi zgodnie z ustalonymi regułami.
-- Stopień utlenienia zapisuje się cyfrą rzymską ze znakiem, na przykład +III.
-- Wartościowość nie musi być równa wartości bezwzględnej stopnia utlenienia.
-- W jonie jednoatomowym ładunek jonu i stopień utlenienia mają tę samą wartość liczbową, ale są innymi pojęciami.
-- W związku kowalencyjnym atom może mieć stopień utlenienia, mimo że nie występuje jako osobny jon.
+- Wartościowość, ładunek jonu i stopień utlenienia to różne pojęcia. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- **Wartościowość** określa liczbę wiązań, które atom danego pierwiastka tworzy w określonej substancji lub związku. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wartościowość zapisuje się zwykle cyfrą rzymską bez znaku, na przykład  Fe(III)  w znaczeniu wartościowości żelaza. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- **Ładunek jonu** jest rzeczywistym ładunkiem elektrycznym jonu i zapisuje się cyfrą arabską ze znakiem, na przykład Fe³⁺. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- **Stopień utlenienia** jest formalnym ładunkiem przypisanym atomowi zgodnie z ustalonymi regułami. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Stopień utlenienia zapisuje się cyfrą rzymską ze znakiem, na przykład +III. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wartościowość nie musi być równa wartości bezwzględnej stopnia utlenienia. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- W jonie jednoatomowym ładunek jonu i stopień utlenienia mają tę samą wartość liczbową, ale są innymi pojęciami. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- W związku kowalencyjnym atom może mieć stopień utlenienia, mimo że nie występuje jako osobny jon. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 ### Uzupełnienia
 
 #### Zasady wyznaczania stopni utlenienia
 
-- Pierwiastek w stanie wolnym ma stopień utlenienia 0.
-- Suma stopni utlenienia w obojętnej cząsteczce wynosi 0.
-- Suma stopni utlenienia w jonie wieloatomowym jest równa jego ładunkowi.
-- Fluor ma w związkach stopień utlenienia -I.
-- Tlen ma najczęściej -II, ale występują wyjątki, na przykład nadtlenki.
-- Wodór ma zwykle +I, ale w wodorkach metali może mieć -I.
-- Litowce mają zwykle +I.
-- Berylowce mają zwykle +II.
+- Pierwiastek w stanie wolnym ma stopień utlenienia 0. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Suma stopni utlenienia w obojętnej cząsteczce wynosi 0. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Suma stopni utlenienia w jonie wieloatomowym jest równa jego ładunkowi. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Fluor ma w związkach stopień utlenienia -I. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Tlen ma najczęściej -II, ale występują wyjątki, na przykład nadtlenki. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wodór ma zwykle +I, ale w wodorkach metali może mieć -I. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Litowce mają zwykle +I. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Berylowce mają zwykle +II. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 #### Przykład
 
@@ -3050,14 +3085,14 @@ Siarka ma stopień utlenienia +VI.
 
 W zapisie FeCl₃:
 
-- chlorek zawiera jony Cl⁻;
-- formalny stopień utlenienia żelaza wynosi +III;
-- można powiedzieć, że żelazo ma wartościowość III w szkolnym opisie;
-- nie należy zapisywać tych informacji jednym symbolem.
+- chlorek zawiera jony Cl⁻; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- formalny stopień utlenienia żelaza wynosi +III; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- można powiedzieć, że żelazo ma wartościowość III w szkolnym opisie; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- nie należy zapisywać tych informacji jednym symbolem. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 #### Zadania
 
-1. Wyznacz stopień utlenienia siarki w SO₂.
+1. Wyznacz stopień utlenienia siarki w SO₂. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 2. Wyznacz stopień utlenienia azotu w HNO₃.
 3. Wyznacz stopień utlenienia manganu w KMnO₄.
 4. Podaj różnicę między Ca²⁺ a +II wapnia w związku.
@@ -3065,8 +3100,10 @@ W zapisie FeCl₃:
 
 #### Klucz
 
-1. Siarka: +IV.
+1. Siarka: +IV. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 2. Azot: +V.
 3. Mangan: +VII.
 4. Ca²⁺ jest rzeczywistym jonem o ładunku 2+; +II jest formalnym stopniem utlenienia atomu wapnia w związku.
 5. Stopień utlenienia jest formalnym przypisaniem elektronów według reguł elektroujemności, a nie dowodem rzeczywistego występowania wolnych jonów w cząsteczce.
+
+**Status audytu:** poprawki i uzupełnienia zostały przeniesione do sekcji „UZUPEŁNIENIE KANONICZNE”; ćwiczenia i klucze dodano do treści lekcji.

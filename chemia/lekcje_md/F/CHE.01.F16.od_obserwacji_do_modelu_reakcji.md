@@ -6,6 +6,7 @@ wymaga: "F01; F02; F03"
 poglebia: "F17; F19"
 zrodla: "MASTER v17.0; MASTER v15.0; MASTER v14.0"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W6 — GPT-6, 2026-10-09; poprawki wprowadzone do treści kanonicznej, wymaga niezależnej recenzji chemicznej
 ---
 # CHE.01F.16-REAKCJE-OBSERWACJA — OD OBSERWACJI DO MODELU REAKCJI
 
@@ -1330,30 +1331,65 @@ Zmiana barwy, temperatura, światło, gaz, osad, zapach lub zmiana pH mogą wska
 ### BHP
 Każde doświadczenie powinno mieć osobny rekord BHP, a wizualizacja ma pokazywać tylko te warunki, które są zapisane w danych reakcji.
 
+## UZUPEŁNIENIE KANONICZNE W6 — OD OBSERWACJI DO MODELU
+
+### Obserwacja, próba identyfikacyjna i wniosek
+
+Obserwacja opisuje to, co bezpośrednio zaobserwowano: „pojawiły się pęcherzyki”, „roztwór zmętniał”, „temperatura wzrosła”, „magnez stopniowo znika”. Zdanie „wydzielił się wodór” lub „powstał tlenek węgla(IV)” jest wnioskiem o tożsamości substancji i wymaga odpowiednich danych lub próby identyfikacyjnej. Samo pojawienie się gazu nie rozstrzyga, jaki to gaz. Równanie jest modelem przemiany, a nie fotografią doświadczenia ani opisem pełnego mechanizmu.
+
+### Protokół doświadczenia
+
+1. Sformułuj problem badawczy i hipotezę.
+2. Wskaż zmienne oraz próbę kontrolną, jeśli jest potrzebna.
+3. Zapisz sprzęt, odczynniki, procedurę i zasady BHP.
+4. Zapisz obserwacje bez dopisywania niepotwierdzonych interpretacji.
+5. Wykonaj odpowiednią próbę identyfikacyjną.
+6. Sformułuj wniosek, a następnie dobierz substraty, produkty, ich wzory i warunki.
+7. Zapisz i sprawdź równanie reakcji.
+
+### Przykład: magnez i kwas chlorowodorowy
+
+**Obserwacje:** magnez stopniowo znika, pojawiają się pęcherzyki gazu, a naczynie może się ogrzać. **Identyfikacja:** wodór daje charakterystyczny dźwięk po zbliżeniu płonącego łuczywa; próbę wykonuje nauczyciel lub prowadzący, z zachowaniem zasad BHP. **Wniosek:** w reakcji magnezu z kwasem chlorowodorowym powstają chlorek magnezu i wodór.
+
+Mg + 2HCl → MgCl₂ + H₂
+
+### Przykład: strącanie osadu
+
+AgNO₃(aq) + NaCl(aq) → AgCl(s)↓ + NaNO₃(aq)
+
+**Obserwacja:** pojawia się biały osad. **Wniosek:** model reakcji wskazuje na powstanie trudno rozpuszczalnego chlorku srebra; sama barwa osadu nie zawsze wystarcza do pewnej identyfikacji.
+
+### Sprawdź się
+
+1. „Roztwór zmętniał” — obserwacja czy wniosek? **Obserwacja.**
+2. „Wydzielił się tlenek węgla(IV)” — obserwacja czy wniosek? **Wniosek wymagający identyfikacji.**
+3. Zapisz reakcję cynku z kwasem chlorowodorowym: **Zn + 2HCl → ZnCl₂ + H₂.**
+4. Dlaczego pęcherzyki nie dowodzą, że gazem jest wodór? **Różne gazy mogą wydzielać się w postaci pęcherzyków; potrzebna jest próba identyfikacyjna.**
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
 > Uwaga przy scalaniu: W zadaniu 1 i kluczu zamiast „dwutlenek węgla” używać nazwy „tlenek węgla(IV)”; „powstał osad” w kluczu zaliczono do obserwacji — to dopuszczalne (osad widać), w odróżnieniu od nazwy gazu.
 
-### Poprawki
+### Poprawki — status wdrożenia
 
-- Nie każda zmiana obserwowana podczas doświadczenia oznacza jedną konkretną reakcję chemiczną.
-- Obserwacja nie może zawierać nieudowodnionego wniosku.
-- „Powstał wodór” jest wnioskiem, a nie samą obserwacją, chyba że wykonano odpowiednią próbę identyfikacyjną.
-- „Pojawiły się pęcherzyki gazu” jest obserwacją.
-- „Gaz zapalił się z charakterystycznym dźwiękiem” jest obserwacją próby identyfikacyjnej.
-- Wniosek „wydzielił się wodór” wynika z obserwacji oraz znanej próby.
-- Równanie reakcji zapisuje model przemiany, a nie samo zdjęcie doświadczenia.
-- Przed zapisaniem równania trzeba rozpoznać:
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie każda zmiana obserwowana podczas doświadczenia oznacza jedną konkretną reakcję chemiczną.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Obserwacja nie może zawierać nieudowodnionego wniosku.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): „Powstał wodór” jest wnioskiem, a nie samą obserwacją, chyba że wykonano odpowiednią próbę identyfikacyjną.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): „Pojawiły się pęcherzyki gazu” jest obserwacją.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): „Gaz zapalił się z charakterystycznym dźwiękiem” jest obserwacją próby identyfikacyjnej.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wniosek „wydzielił się wodór” wynika z obserwacji oraz znanej próby.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Równanie reakcji zapisuje model przemiany, a nie samo zdjęcie doświadczenia.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Przed zapisaniem równania trzeba rozpoznać:
   - substraty;
   - produkty;
   - ich wzory;
   - stany skupienia, jeżeli są potrzebne;
   - warunki reakcji.
-- Nie należy dobierać produktów wyłącznie na podstawie tego, co wygląda prawdopodobnie.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie należy dobierać produktów wyłącznie na podstawie tego, co wygląda prawdopodobnie.
 
-### Uzupełnienia
+### Uzupełnienia — status wdrożenia
 
 #### Schemat doświadczenia
 
@@ -1376,9 +1412,9 @@ Każde doświadczenie powinno mieć osobny rekord BHP, a wizualizacja ma pokazyw
 
 **Obserwacje:**
 
-- magnez stopniowo znika;
-- wydzielają się pęcherzyki gazu;
-- probówka może się ogrzać.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): magnez stopniowo znika;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wydzielają się pęcherzyki gazu;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): probówka może się ogrzać.
 
 **Próba identyfikacyjna:** Gaz przy zbliżeniu płonącego łuczywa daje charakterystyczny efekt dla wodoru.
 

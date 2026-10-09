@@ -8839,6 +8839,8 @@ Używamy *the*, gdy:
 
 1. I play the piano every day.
 2. She is at the school now. (= w konkretnym budynku, np. przyszła na zebranie) · She is at school. (= jest w szkole jako uczennica / na lekcjach — szkoła w swojej funkcji)
+
+**Uwaga o kontekście:** *at school* zwykle podkreśla udział w nauce lub szkolną funkcję miejsca, a *at the school* wskazuje konkretną szkołę/budynek. Nie rozstrzyga o tym sam zawód osoby: nauczycielka może być *at school* podczas pracy albo *at the school* przy wskazywaniu konkretnego budynku. Wybór zależy od sensu wypowiedzi.
 3. I like chocolate very much.
 4. He is an honest man.
 5. (poprawne – go to bed)
@@ -9961,6 +9963,8 @@ FORMA: przymiotnik + -ly
 
 POZYCJA: zazwyczaj po czasowniku
 - She runs quickly (najczęstszy szyk; She quickly runs też jest poprawne, ale rzadsze — przysłówki sposobu stoją zwykle po czasowniku lub po dopełnieniu, a przysłówki częstotliwości przed czasownikiem głównym i po „be”)
+
+**Doprecyzowanie:** *She quickly ran home* jest naturalne w wielu kontekstach; *She ran quickly home* jest możliwe, ale często mniej naturalne. Nie ucz się zakazu „przysłówek nigdy przed czasownikiem”. Porównaj też **hard** (= ciężko) i **hardly** (= prawie wcale), **late** (= późno) i **lately** (= ostatnio), **near** (= blisko) i **nearly** (= prawie).
 
 WYJĄTKI: good→well, fast→fast, hard→hard
 - She speaks well (nie: she speaks good)
@@ -12620,6 +12624,17 @@ Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapis
 
 <!-- UI: AUDIO --> *She is very nice. / I'm currently busy. / Can I have the receipt?*
 
+### 2.3. Pułapki kontekstowe — nie ucz się samych par
+
+- **chef / cook / boss:** *chef* to zwykle szef kuchni, *cook* to osoba gotująca lub kucharz, a *boss* to szef/przełożony. Nie zamieniaj tych słów automatycznie.
+- **conductor / guide:** *conductor* to m.in. dyrygent, a w brytyjskim angielskim także konduktor; *guide* to przewodnik.
+- **data / date:** *data* oznacza dane, a *date* — datę lub randkę. W angielszczyźnie współczesnej *data* bywa traktowane jako rzeczownik niepoliczalny w liczbie pojedynczej, zwłaszcza w AmE; w tekstach formalnych spotyka się też zgodę mnogą (*the data show*).
+- **sensible / sensitive:** *sensible* = rozsądny/praktyczny; *sensitive* = wrażliwy/czuły. Tłumaczenie dobieraj do kontekstu.
+- **eventually / possibly:** *eventually* = ostatecznie, w końcu; *possibly/maybe* = być może, ewentualnie.
+- **résumé / summary:** *résumé* (zwłaszcza AmE) = CV; *summary* = streszczenie. W BrE powszechne jest *CV*.
+
+
+
 ---
 
 ## 3. Przydatne powiedzenia i idiomy
@@ -13460,7 +13475,7 @@ Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapis
 | Długość | 50–120 wyrazów (40 wyrazów lub mniej — oceniana jest tylko treść) |
 | Punkty | maksymalnie 10 punktów — za treść, spójność i logikę, zakres środków językowych oraz poprawność środków językowych |
 | Poziom | A2/A2+ |
-| Styl | nieformalny, ale poprawny |
+| Styl | zgodny z poleceniem; w zadaniu do kolegi zwykle nieformalny, ale nie zakładaj nieformalności automatycznie w każdej sytuacji |
 | Podpunkty | polecenie zawiera 3 elementy — do każdego trzeba się odnieść i go rozwinąć |
 
 ### 2.2. Zasady ogólne
@@ -13472,6 +13487,7 @@ Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapis
 5. **Podpisz się jako XYZ** – nie wpisuj swojego prawdziwego imienia.
 6. **Zadbaj o spójność** – tekst musi być logiczny i czytelny.
 7. **Sprawdź błędy** – gramatyka, ortografia, interpunkcja.
+8. **Nie dopisuj automatycznych kar, których nie podaje polecenie.** Limit 50–120 wyrazów jest wymaganiem zadania; tekst krótszy niż 40 wyrazów podlega szczególnej zasadzie oceny treści. Przekroczenie limitu nie oznacza samo w sobie jednej automatycznej kary punktowej, ale może zaszkodzić realizacji polecenia, spójności i poprawności.
 
 ---
 
@@ -14206,3 +14222,12 @@ XYZ
 - Kolejny krok: wspólny CSS HTML z Chemią/Polskim; ewentualne `[CARD:]` punktowo.
 
 **KONIEC PAKIETU ANGIELSKI: PODSTAWA PLUS v1.0**
+
+
+---
+
+## DODATEK AUDYTOWY W17 — wdrożenie potwierdzonych uwag W1 (2026-10-09)
+
+Wprowadzono wyłącznie uzupełnienia zgodne z oceną W1: doprecyzowanie kontekstów *chef/cook/boss*, *conductor/guide*, *data/date*, *sensible/sensitive*, *eventually/possibly* i *résumé/summary*; rozróżnienie *at school* / *at the school* jako zależne od kontekstu; korektę kategorycznej reguły szyku przysłówków; oraz doprecyzowanie zasad limitu wypowiedzi pisemnej. Wcześniejsze tabele, przykłady i ćwiczenia pozostawiono.
+
+**Ograniczenie:** nie przeprowadzono ponownej pełnej recenzji całego kursu ani niezależnej weryfikacji wszystkich informacji egzaminacyjnych. Uwaga W1 dotycząca „It's a piece of cake” nie została wdrożona jako błąd, ponieważ polskie „bułka z masłem” jest poprawnym odpowiednikiem idiomatycznym.

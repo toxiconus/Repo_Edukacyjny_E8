@@ -2039,3 +2039,15 @@ Dla grafiki należy preferować jeden komunikat poznawczy na jedną planszę. Ni
 Dla ucznia klasy VIII w roku szkolnym 2026/2027 punktem odniesienia pozostaje zakres obowiązujący dla obecnego etapu wdrażania; nowa podstawa z 2026 r. jest wdrażana sukcesywnie od klas I i IV, a nie jednocześnie we wszystkich klasach. Zakres genetyki obejmuje m.in. DNA, replikację, chromosomy, mitozę/mejozę, nowotwory, dziedziczenie, płeć, ABO/Rh i mutacje.
 
 ---
+
+
+---
+
+## AUDYT W1 — kontrola kompletności szablonu (2026-10-09, GPT-6)
+
+- Zachowano istniejące sekcje i numerację; nie przesuwano ani nie usuwano bloków.
+- Szablon przewiduje sekcje 1–22 oraz osobne sekcje systemowe S3–S11. Przy tworzeniu nowej lekcji należy zachować rozróżnienie: sekcje lekcji 1–22 są treścią uczniowską, a S3–S11 to instrukcje dla autora.
+- Każdy element `[BIO: DIAGRAM]`, `[BIO: IMAGE]` lub `[BIO: MODEL]` musi mieć bezpośrednio pod nim `@opis:` opisujący, co widać i jaki wniosek wolno wyciągnąć.
+- W zadaniach liczbowych należy podać jednostki, warunki i klucz; w razie braku pewnego źródła oznaczyć `[do weryfikacji]`.
+- Sekcje, których nie da się jeszcze rzetelnie wypełnić, oznaczać `STATUS: DO UZUPEŁNIENIA`; nie wstawiać pustych nagłówków jako pozornej kompletności.
+- **Ograniczenie:** kontrola struktury szablonu, nie pełna recenzja wszystkich lekcji zbudowanych na jego podstawie.

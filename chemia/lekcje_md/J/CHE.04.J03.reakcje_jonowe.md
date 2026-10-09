@@ -2,8 +2,33 @@
 kod: "J03"
 tytul: "Reakcje jonowe"
 opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie było treści tych lekcji; do weryfikacji przed budową lekcji."
+stan: W22 — GPT-6, 2026-10-09; audyt przekrojowy równań i modeli, pełna niezależna recenzja nadal otwarta
 ---
 # Reakcje jonowe — materiał wstępny
+
+## TREŚĆ KANONICZNA PO W1 — RÓWNANIA JONOWE
+
+Równanie jonowe skrócone zapisuje tylko te jony lub cząsteczki, które rzeczywiście uczestniczą w przemianie. Aby je otrzymać, zapisz i zbilansuj równanie cząsteczkowe, rozpisz na jony mocne elektrolity rozpuszczone w wodzie, pozostaw osady, gazy, wodę i słabe elektrolity w postaci cząsteczkowej, a następnie skróć jony obserwatorów występujące po obu stronach.
+
+### Strącanie
+
+AgNO₃(aq) + NaCl(aq) → AgCl(s)↓ + NaNO₃(aq)
+
+Po skróceniu: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)↓.
+
+### Neutralizacja
+
+HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
+
+Zapis jonowy skrócony: H⁺(aq) + OH⁻(aq) → H₂O(l), albo dokładniej w wodzie: H₃O⁺ + OH⁻ → 2H₂O.
+
+### Wydzielanie gazu
+
+Dla reakcji węglanu z kwasem zapis jonowy skrócony może mieć postać: CO₃²⁻ + 2H⁺ → CO₂(g)↑ + H₂O(l). Równanie zachowuje liczbę atomów i ładunek. W praktyce wydzielanie pęcherzyków jest obserwacją; identyfikacja gazu wymaga odpowiedniej próby.
+
+### Kiedy reakcja zachodzi?
+
+Reakcja jonowa zachodzi, gdy jony tworzą produkt, który opuszcza roztwór jako osad, gaz lub słaby elektrolit, np. wodę, albo gdy inny proces jest uzasadniony warunkami. Po skróceniu nie powinny pozostać niezmienione jony obserwatorów. Zawsze sprawdź bilans atomów i ładunku.
 
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
@@ -17,10 +42,10 @@ opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie
 
 Uczeń powinien:
 
-- rozróżnić równanie cząsteczkowe, pełne jonowe i skrócone jonowe;
-- rozpoznać jony obserwatorowe;
-- sprawdzić, czy reakcja zachodzi w roztworze;
-- zachować bilans atomów i ładunków.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozróżnić równanie cząsteczkowe, pełne jonowe i skrócone jonowe;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozpoznać jony obserwatorowe;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): sprawdzić, czy reakcja zachodzi w roztworze;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): zachować bilans atomów i ładunków.
 
 #### Procedura
 
@@ -68,10 +93,10 @@ Skrócone:
 
 Wymiana jonowa jest napędzana między innymi przez:
 
-- powstanie osadu;
-- wydzielenie gazu;
-- powstanie wody;
-- powstanie słabego elektrolitu.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): powstanie osadu;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wydzielenie gazu;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): powstanie wody;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): powstanie słabego elektrolitu.
 
 Samo „zamienienie partnerów” w zapisie nie dowodzi reakcji netto.
 
@@ -99,3 +124,10 @@ Samo „zamienienie partnerów” w zapisie nie dowodzi reakcji netto.
 
 4. Na⁺ i NO₃⁻.
 5. Wszystkie potencjalne produkty pozostają rozpuszczone i nie powstaje osad, gaz ani słaby elektrolit.
+
+
+## W22 — kontrola równań jonowych (2026-10-09, GPT-6)
+
+- **Sprawdzono:** `Ag⁺ + Cl⁻ → AgCl(s)↓`, `H⁺ + OH⁻ → H₂O` (skrót szkolny) oraz `CO₃²⁻ + 2H⁺ → CO₂↑ + H₂O` — bilans atomów i ładunku jest zachowany.
+- **Doprecyzowanie:** obserwacja wydzielania gazu sama nie identyfikuje go; potrzebna jest właściwa próba. W pełnym zapisie wodnym neutralizację można przedstawić jako `H₃O⁺ + OH⁻ → 2H₂O`.
+- **Ograniczenie:** kontrola wybranych równań, nie pełna walidacja wszystkich kluczy.

@@ -4,7 +4,7 @@ przedmiot: język polski
 tytul: Części zdania — podmiot, orzeczenie, przydawka, dopełnienie i okolicznik
 wersja: 4.0
 poziom: E8 + trening konkursowy
-status: PEŁNA LEKCJA po cyklu: analiza materiałów G12–G13 → diagnoza luk → uzupełnienie → ponowna kontrola
+status: W2 — GPT-6, 2026-10-09; audyt i doprecyzowania wprowadzone; niezależna recenzja zewnętrzna niepotwierdzona
 powiazania: POL.02.G12.czesci_zdania.md; POL.02.G13.zwiazki_wyrazowe.md; POL.02.G14.zdanie_pojedyncze.md
 czas: 2–3 jednostki lekcyjne + powtórka
 ---
@@ -437,3 +437,13 @@ Dodano szczegółowe sekcje o podmiocie, orzeczeniu, przydawce, dopełnieniu i o
 - [x] Wyjaśniono, że orzeczenie imienne i strona bierna nie są automatycznie tą samą konstrukcją.
 - [x] Punktacja testu jest wyraźnie oznaczona jako treningowa.
 - [ ] Pozostaje niezależna recenzja polonistyczna oraz porównanie z aktualnym informatorem i arkuszami CKE.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Zakres:** Kontrola podmiotu, orzeczenia, przydawki, dopełnienia, okolicznika i związków składniowych.
+
+**Uzupełnienie wprowadzone:** Doprecyzowano procedurę: część zdania ustala się w relacji do orzeczenia lub wyrazu nadrzędnego, a pytanie pomocnicze nie zastępuje analizy znaczenia i składni.
+
+- Sprawdzono spójność celu lekcji, pojęć i kluczy z poziomem E8; materiał konkursowy/rozszerzający należy traktować jako dodatkowy, a nie wymagany do podstawowej odpowiedzi.
+- Własne rubryki ćwiczeniowe są kryteriami treningowymi, nie oficjalną punktacją CKE.
+- Źródło do niezależnej kontroli wymagań egzaminacyjnych: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory oraz Informator CKE: https://bip.cke.gov.pl/attachments/download/9824.

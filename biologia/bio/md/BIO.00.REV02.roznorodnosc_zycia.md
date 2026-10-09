@@ -12,7 +12,7 @@ stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 ---
 ::: minimum | Muszę umieć — 12 punktów
 1. **Kolejność rang:** królestwo → typ → gromada → rząd → rodzina → rodzaj → **gatunek**. Nazwa gatunku jest **dwuczłonowa** (rodzaj + epitet), np. *Canis lupus*.
-2. **Wirusy nie są organizmami:** nie mają budowy komórkowej, nie przeprowadzają przemiany materii i namnażają się tylko w żywej komórce. **Antybiotyki na nie nie działają.**
+2. **Wirusy nie mają budowy komórkowej** i namnażają się tylko w komórkach gospodarza; nie prowadzą samodzielnie pełnej przemiany materii. W szkolnych ujęciach zwykle odróżnia się je od organizmów komórkowych; ich status na granicy życia i materii nieożywionej opisuje się ostrożnie. **Antybiotyki nie działają na wirusy** — działają na określone bakterie.
 3. **Bakterie** to organizmy jednokomórkowe **bez jądra** (prokarionty); rozmnażają się przez podział komórki; są samożywne lub cudzożywne.
 4. Choroby wirusowe: grypa, ospa wietrzna, różyczka, świnka, odra, AIDS; bakteryjne: gruźlica, borelioza, tężec, salmonelloza — **droga zakażenia + profilaktyka**.
 5. **Tkanki roślinne:** twórcza, okrywająca, miękiszowa, wzmacniająca, przewodząca (drewno — woda w górę, łyko — produkty fotosyntezy).
@@ -689,3 +689,12 @@ Próba kontrolna :: próba do porównania — różni się od badawczej tylko ba
 :::
 
 **Co dalej:** organizacja i chemizm życia (komórka, fotosynteza, oddychanie, czynności życiowe) — druga część zakresu etapu szkolnego; na etapie rejonowym dochodzi organizm człowieka i homeostaza, na wojewódzkim — genetyka, ewolucja i ekologia.
+
+
+## AUDYT W19 — różnorodność życia (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana twierdzeń o wirusach oraz kluczy, które mogą wymagać ostrożniejszego sformułowania.
+
+- Zastąpiono bezwarunkowe zdanie „wirusy nie są organizmami” precyzyjniejszym opisem: wirusy nie mają budowy komórkowej i nie namnażają się samodzielnie; ich status w klasyfikacji życia zależy od przyjętego ujęcia.
+- Zachowano szkolny wniosek praktyczny: antybiotyki nie leczą infekcji wirusowych; nie oznacza to, że antybiotyki są nieskuteczne wobec wszystkich bakterii — skuteczność zależy od drobnoustroju i leku.
+- **Status:** poprawiono treść główną; nie przeprowadzono pełnej walidacji wszystkich kluczy i przykładów chorób.

@@ -5,7 +5,7 @@ tytul: Związki wyrazowe
 lead: Związek główny, zgody, rządu, przynależności — wyraz nadrzędny i podrzędny.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G12
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: W1 — GPT-6, 2026-10-09; kontrola definicji, przykładów i kluczy
 utworzono: 2026-10-09
 wersja: 2.1
 ---
@@ -25,7 +25,7 @@ Nie każda grupa wyrazów tworzy zwykły związek podrzędny. Podmiot i orzeczen
 
 **Związek rządu** — wyraz nadrzędny narzuca podrzędnemu określony przypadek, ale sam nie musi przyjmować tej samej formy: *czytam książkę* (czasownik + biernik), *słucham muzyki* (czasownik + dopełniacz), *pomagam siostrze* (czasownik + celownik), *z dala od domu* (wyrażenie z wymaganym przypadkiem). Przypadek wynika z rekcji wyrazu nadrzędnego.
 
-**Związek przynależności** — wyraz podrzędny nie odmienia się, lecz określa nadrzędny: *biegnie szybko*, *bardzo interesujący*, *chce czytać*. Podrzędny przysłówek lub bezokolicznik nie uzgadnia swojej formy z nadrzędnym.
+**Związek przynależności** — wyraz podrzędny jest nieodmienny i nie uzgadnia z nadrzędnym formy ani nie podlega narzuconemu przypadkowi; typowe przykłady to *biegnie szybko*, *bardzo interesujący*. Konstrukcje z bezokolicznikiem, np. *chce czytać*, warto analizować ostrożnie: w zależności od szkolnego opisu może być omawiana jako połączenie czasownika modalnego z bezokolicznikiem, a nie jako najbardziej typowy przykład przynależności.
 
 ## 3. Jak rozpoznawać krok po kroku
 1. Wybierz dwa wyrazy, które są ze sobą powiązane znaczeniowo.
@@ -108,7 +108,7 @@ W zdaniu *Drużyna uczniów przygotowała przedstawienie* forma *przygotowała* 
 ## 16. Ćwiczenia rozszerzające z kluczem
 
 **Zadanie 1.** W grupie *mały pies sąsiada* wskaż nadrzędny wyraz i dwa związki.  
-**Klucz:** *pies* jest centrum grupy; *mały–pies* — zgoda; *sąsiada–pies* — określenie właściciela, zwykle analizowane jako związek rządu w grupie rzeczownikowej (dopełniacz).
+**Klucz:** *pies* jest centrum grupy; *mały–pies* — zgoda; *pies–sąsiada* — przydawka dopełniaczowa (*pies kogo? czyj? sąsiada*). W klasyfikacji trzech typów związków szkolnych uznaje się ją zwykle za związek rządu, ponieważ podrzędny rzeczownik występuje w dopełniaczu; warto uzasadnić odpowiedź.
 
 **Zadanie 2.** Wskaż rodzaj związku między wyrazami pogrubionymi: *czytam **uważnie***; *boję się **burzy***; ***wysoka** wieża*.  
 **Klucz:** przynależności; rządu; zgody.
@@ -131,3 +131,12 @@ W zdaniu *Drużyna uczniów przygotowała przedstawienie* forma *przygotowała* 
 6. Wyjaśnij, dlaczego *jabłka i gruszki* nie tworzą związku zgody (2 pkt).
 
 **Klucz:** 1. Połączenie wyrazów o relacji nadrzędno-podrzędnej. 2. Np. *nowa książka*. 3. Np. *słucham muzyki* — dopełniacz. 4. Np. *mówi cicho*. 5. *bardzo–cierpliwy* — przynależność; *cierpliwy–nauczyciel* — zgoda; *wyjaśnił–uczniom* — rząd; *wyjaśnił–zagadnienie* — rząd; *trudne–zagadnienie* — zgoda. 6. To składniki równorzędne połączone spójnikiem, nie nadrzędne i podrzędne.
+
+
+## AUDYT W1 — wynik
+
+- Zgoda/rząd/przynależność: ✔ uzupełniono procedurę i doprecyzowano przykład bezokolicznika.
+- „mały pies sąsiada”: ✔ opisano „sąsiada” jako przydawkę dopełniaczową i wyjaśniono klasyfikację.
+- Klucze: ✔ sprawdzono zgodność z przykładami podanymi w lekcji.
+
+**Zakres kontroli:** kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.

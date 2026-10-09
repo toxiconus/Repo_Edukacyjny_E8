@@ -9,6 +9,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `układ → narząd → tkanka → komórka`
 `[/BIO: DIAGRAM]`
+@opis Schemat strzałkowy czterech poziomów budowy człowieka od największego do najmniejszego: układ → narząd → tkanka → komórka. Wniosek: każdy poziom składa się z elementów poziomu następnego, a komórka jest najmniejszą jednostką budowy i funkcji organizmu.
 
 **Co uczeń ma zauważyć:** powiązanie organizmu z komórką.
 
@@ -466,7 +467,7 @@ Wniosek: na krwinkach jest antygen A (grupa A lub AB) — nie „na pewno A” b
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L002 · Następna: L010 (nie brama)
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: wersja robocza po kontroli wizualnej i redakcyjnej — wymaga niezależnej recenzji biologicznej
 - Status HTML: BIOLOGIA_L003_DIAGNOZA.html
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -2390,3 +2391,10 @@ Zachowano całą treść v3.7–v5.1: pytania rdzeniowe 1–5, dodatkowe 6–8, 
 To nie jest ocena — to mapa twoich luk.
 
 <details><summary>Wcześniejsza warstwa MD L003 (v3.7–v3.9.1, zachowana)</summary>
+
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Przeprowadzono kontrolę redakcyjną i kontrolę oznaczeń wizualizacji; dopisano `@opis` bezpośrednio pod blokami `[BIO: DIAGRAM]` tam, gdzie go brakowało.
+- Zachowano dotychczasową treść i kody lekcji; nie usuwano wcześniejszych wersji ani banków zadań.
+- Zwrócono uwagę na rozróżnienie modelu od rzeczywistości oraz na to, że schematy przepływu pokazują uproszczone relacje.
+- **Ograniczenie:** nie jest to pełna niezależna walidacja wszystkich danych i kluczy zadań; przed publikacją wymagane jest sprawdzenie merytoryczne przez nauczyciela biologii.

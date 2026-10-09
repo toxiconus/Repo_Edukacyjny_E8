@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L011 · Następna: L013
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: wersja robocza po kontroli wizualnej i redakcyjnej — wymaga niezależnej recenzji biologicznej
 - Status HTML: BIOLOGIA_L012_CHROMOSOMY.html
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `DNA → chromatyna → chromosom → chromatydy`
 `[/BIO: DIAGRAM]`
+@opis Schemat strzałkowy coraz silniejszego upakowania: nić DNA → chromatyna (DNA nawinięte na białka) → chromosom widoczny podczas podziału → dwie chromatydy siostrzane po replikacji. Wniosek: to ta sama cząsteczka DNA w różnym stopniu upakowania, a chromosom z dwiema chromatydami zawiera dwie identyczne kopie DNA.
 
 **Co uczeń ma zauważyć:** X nie oznacza automatycznie dwóch chromosomów.
 
@@ -2194,3 +2195,10 @@ HTML kanon: `BIOLOGIA_L012_CHROMOSOMY.html` (v8.1). MD już zawiera wykład + li
 
 
 <!-- ==================== BEGIN L013 ==================== -->
+
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Przeprowadzono kontrolę redakcyjną i kontrolę oznaczeń wizualizacji; dopisano `@opis` bezpośrednio pod blokami `[BIO: DIAGRAM]` tam, gdzie go brakowało.
+- Zachowano dotychczasową treść i kody lekcji; nie usuwano wcześniejszych wersji ani banków zadań.
+- Zwrócono uwagę na rozróżnienie modelu od rzeczywistości oraz na to, że schematy przepływu pokazują uproszczone relacje.
+- **Ograniczenie:** nie jest to pełna niezależna walidacja wszystkich danych i kluczy zadań; przed publikacją wymagane jest sprawdzenie merytoryczne przez nauczyciela biologii.

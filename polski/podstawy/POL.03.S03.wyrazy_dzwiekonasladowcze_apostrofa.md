@@ -5,7 +5,7 @@ tytul: Wyrazy dźwiękonaśladowcze, apostrofa, pytanie retoryczne, wykrzyknieni
 lead: Środki brzmieniowe i retoryczne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010, G11
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: PO W1 — doprecyzowano onomatopeję i rozróżnienie wykrzyknienia/znaku; GPT-6; 2026-10-09
 utworzono: 2026-10-09
 wersja: 2.0
 ---
@@ -16,7 +16,7 @@ wersja: 2.0
 Rozpoznaję onomatopeję, apostrofę, pytanie retoryczne i wykrzyknienie, odróżniam nazwę środka od znaku interpunkcyjnego oraz wyjaśniam funkcję w tekście.
 
 ## 1. Wyrazy dźwiękonaśladowcze (onomatopeje)
-Onomatopeja naśladuje dźwięk lub jego rytm: *kap-kap, brzdęk, szum, trzask, miau, kuku*. Może oddawać dźwięk natury, przedmiotu, zwierzęcia lub działania. W poezji instrumentacja głoskowa — nagromadzenie podobnych głosek — również może sugerować dźwięk albo rytm, choć nie każdy powtarzający się dźwięk jest samodzielną onomatopeją.
+Onomatopeja (wyraz dźwiękonaśladowczy) naśladuje dźwięk lub jego rytm: *kap-kap, brzdęk, trzask, miau, kuku*. Wyraz *szum* może w odpowiednim kontekście przywoływać brzmienie, ale często po prostu nazywa zjawisko. O tym, czy dany fragment działa dźwiękonaśladowczo, decyduje użycie w kontekście, a nie sam wyraz z listy. W poezji instrumentacja głoskowa — nagromadzenie podobnych głosek — również może sugerować dźwięk albo rytm, choć nie każdy powtarzający się dźwięk jest samodzielną onomatopeją.
 
 Przykład: *„Kap, kap — deszcz stukał w parapet”.* Wyraz *kap* naśladuje odgłos kropli. Powtórzenie może budować rytm i wrażenie regularnego kapania. W odpowiedzi nazwij dźwięk i efekt, a nie tylko napisz „naśladuje dźwięk”.
 
@@ -31,7 +31,7 @@ Nie każdy zwrot do rozmówcy jest apostrofą. W zwykłym dialogu *Aniu, podaj z
 Nie każde pytanie w wierszu jest retoryczne. Jeśli podmiot liryczny rzeczywiście poszukuje odpowiedzi lub nie zna rozwiązania, pytanie może być zwykłym pytaniem. Uzasadnij funkcję na podstawie treści.
 
 ## 4. Wykrzyknienie a wykrzyknik
-**Wykrzyknienie** to wypowiedź o silnym zabarwieniu emocjonalnym lub ekspresywnym. **Wykrzyknik (!)** jest znakiem interpunkcyjnym. W zdaniu *„Jak pięknie!”* mamy wykrzyknienie i znak „!”; w zdaniu *„Zamknij drzwi!”* znak wykrzyknika kończy polecenie, ale nie oznacza, że w zdaniu występuje wykrzyknik jako część mowy.
+**Wykrzyknienie** to wypowiedź o silnym zabarwieniu emocjonalnym lub ekspresywnym; **wykrzyknik (!)** jest znakiem interpunkcyjnym. Nie są to dwie części mowy. W *„Jak pięknie!”* wypowiedź ma charakter wykrzyknieniowy i kończy się wykrzyknikiem; w *„Zamknij drzwi!”* wykrzyknik może wzmacniać polecenie, ale sam znak nie przesądza o rodzaju środka stylistycznego.
 
 ## 5. Funkcje w utworze
 Onomatopeja — słuchowy obraz i rytm; apostrofa — bezpośredniość, emocjonalność, podniosłość lub błaganie; pytanie retoryczne — refleksja, perswazja, podkreślenie; wykrzyknienie — intensywna emocja, zaskoczenie, zachwyt, strach lub gniew. Funkcję dobieraj do konkretnego fragmentu.
@@ -78,3 +78,10 @@ Umiem odróżnić środki po funkcji, a nie po samym znaku interpunkcyjnym, i za
 **Klucz:** może oddawać rytm, regularność i trwanie dźwięku, budować napięcie lub atmosferę oczekiwania.
 
 **Zastosowanie do lektury:** w wierszu lub przemówieniu sprawdź, do kogo skierowany jest zwrot, czy pytanie wymaga odpowiedzi i jakie emocje ujawnia. Cytat powinien być krótki i wierny źródłu.
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+- Doprecyzowano, że „szum” może nazywać zjawisko, a efekt onomatopeiczny zależy od kontekstu. ✔ wprowadzone (sekcja 1)
+- Uściślono różnicę między wykrzyknieniem jako typem wypowiedzi a wykrzyknikiem jako znakiem interpunkcyjnym. ✔ wprowadzone (sekcja 4)
+- Ćwiczenia o apostrofie i pytaniu retorycznym prawidłowo uzależniają rozpoznanie od funkcji i kontekstu. ✔ sprawdzone
+- Wizualizacja ma opis słowny `@opis`. ✔ sprawdzone
+

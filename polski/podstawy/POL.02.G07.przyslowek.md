@@ -5,7 +5,7 @@ tytul: Przysłówek
 lead: Jak? Gdzie? Kiedy? W jakim stopniu? — nieodmienny, ale stopniowany; szybki czy szybko, „po polsku” czy „popolsku”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G03, G12
-stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
+stan: W1 — GPT-6, 2026-10-09; kontrola zewnętrzna treści i kluczy; wersja 3.1
 utworzono: 2026-10-09
 wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
@@ -314,7 +314,7 @@ Przysłówek może też określać całe zdanie: *Niestety, pociąg odjechał*. 
 
 **B. Utwórz stopnie:** *starannie, źle, dużo, daleko, interesująco.*
 
-**Klucz:** *staranniej — najstaranniej*; *gorzej — najgorzej*; *więcej — najwięcej*; *dalej/dalejże* nie jest właściwą formą szkolną w tym ćwiczeniu — przy porównaniu odległości typowo *dalej — najdalej*; *bardziej interesująco — najbardziej interesująco*.
+**Klucz:** *staranniej — najstaranniej*; *gorzej — najgorzej*; *więcej — najwięcej*; *dalej — najdalej*; *bardziej interesująco — najbardziej interesująco*. Forma *dalejże* nie jest stopniem przysłówka w tym zestawieniu.
 
 **C. Popraw zapis i wyjaśnij:**
 1. *na prawdę*;
@@ -331,3 +331,13 @@ Przeanalizuj: „Niezwykle starannie i naprawdę szybko wykonała doświadczenie
 ### 14.8. Samokontrola
 
 Umiem odróżnić przysłówek od przymiotnika, rozpoznać wyraz określany, stopniować formy regularne i nieregularne, wskazać formy niestopniowalne oraz poprawnie zapisać *naprawdę, na pewno, po polsku, niedobrze, bynajmniej/przynajmniej*.
+
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+
+- Poprawiono błędną/niepotrzebną formę „dalejże” w szeregu stopniowania: pozostawiono *dalej — najdalej*.
+- Doprecyzowano różnicę między *bynajmniej* („wcale”) a *przynajmniej* („co najmniej”).
+- Sprawdzono przykłady pisowni „nie” z przysłówkami odprzymiotnikowymi w świetle zasad obowiązujących od 1.01.2026 r.
+- Klucze ćwiczeń i pozostałe przykłady: kontrola wykonana; zadania autorskie pozostają materiałem autorskim.
+
+**Źródła normatywne:** Rada Języka Polskiego PAN, „Zasady pisowni i interpunkcji polskiej” (https://rjp.pan.pl/zasady-pisowni-i-interpunkcji-polskiej-2/); CKE, informacja z 20.08.2025 r. — w latach 2026–2030 na egzaminach akceptowane są zasady dotychczasowe i nowe (https://bip.cke.gov.pl/attachments/download/10293).

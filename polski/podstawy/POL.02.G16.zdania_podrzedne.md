@@ -5,7 +5,7 @@ tytul: Zdanie złożone podrzędnie
 lead: Zdanie nadrzędne i podrzędne: podmiotowe, orzecznikowe, przydawkowe, dopełnieniowe, okolicznikowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L003, G05, G09
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: W1 — GPT-6, 2026-10-09; kontrola typów zdań, przecinków i kluczy
 utworzono: 2026-10-09
 wersja: 2.1
 ---
@@ -131,4 +131,13 @@ Jeśli zdanie podrzędne zaczyna się od *o którym*, przecinek stawiamy przed c
 3. Wstaw przecinki: *Kiedy skończysz pracę która leży na biurku odpoczniesz* (2 pkt).
 4. Uzasadnij różnicę między zdaniem przydawkowym a dopełnieniowym z *który* (2 pkt).
 
-**Klucz:** 1. dowolne trzy poprawne typy; 2. dopełnieniowe; 3. *Kiedy skończysz pracę, która leży na biurku, odpoczniesz* — tu jednak sens sugeruje, że *która leży na biurku* określa *pracę*, a całe zdanie czasu kończy się po *biurku*; 4. przydawkowe określa rzeczownik (*książka, którą czytam*), dopełnieniowe uzupełnia np. czasownik (*wiem, który wybrać*).
+**Klucz:** 1. dowolne trzy poprawne typy; 2. dopełnieniowe (*Nie wiem tego: czy zdążymy?*); 3. *Kiedy skończysz pracę, która leży na biurku, odpoczniesz.* Pierwszy przecinek zamyka zdanie podrzędne czasu, a drugi — wtrącone w nie zdanie przydawkowe; 4. przydawkowe określa rzeczownik (*książka, którą czytam*), dopełnieniowe uzupełnia treść czasownika, np. *Wiem, który wybrać*.
+
+
+## AUDYT W1 — wynik
+
+- Typy zdań podrzędnych: ✔ doprecyzowano klucz pytania „Nie wiem, czy zdążymy”.
+- Zdanie podrzędne w środku innego zdania: ✔ wyjaśniono oba przecinki w przykładzie z „która leży na biurku”.
+- Klucze: ✔ poprawiono objaśnienie interpunkcji i relacji składniowych.
+
+**Zakres kontroli:** kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.

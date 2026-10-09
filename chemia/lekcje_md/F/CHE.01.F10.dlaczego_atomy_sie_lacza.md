@@ -6,6 +6,7 @@ wymaga: "F06–F09"
 poglebia: "F11; F13–F15"
 zrodla: "MASTER v17.0; MASTER v15.0"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicznej
 ---
 # CHE.01F.10-DLACZEGO-LACZYMY — DLACZEGO ATOMY SIĘ ŁĄCZĄ
 
@@ -326,21 +327,42 @@ granice: "elastyczne; kontrolowane nakładanie dozwolone"
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dlaczego atomy się łączą” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
 
+## UZUPEŁNIENIE KANONICZNE — energia i granice reguły oktetu (W1, 2026-10-09)
+
+### Reguła oktetu jest modelem, a nie uniwersalnym prawem
+
+W wielu prostych związkach pierwiastków grup głównych konfiguracja zbliżona do konfiguracji gazu szlachetnego pomaga wyjaśnić tworzenie wiązań. Nie każdy atom uzyskuje jednak osiem elektronów walencyjnych. Wodór w `H₂` osiąga duet, bor w `BF₃` ma niepełny oktet, `NO` ma nieparzystą liczbę elektronów walencyjnych, a w szkolnym modelu `PCl₅` i `SF₆` przedstawia się jako przykłady rozszerzonego oktetu. To przykłady pokazujące granice prostego modelu, nie dowód, że atomy „chcą” uzyskać określoną liczbę elektronów.
+
+### Wiązania a energia
+
+O tym, czy utworzenie wiązania jest korzystne, decyduje bilans energetyczny całego układu. Utworzeniu wiązania zwykle towarzyszy wydzielenie energii, a rozerwanie wiązania wymaga jej dostarczenia. W reakcji chemicznej bilans zależy od wszystkich wiązań zrywanych i tworzonych, a nie od samej liczby oktetów.
+
+Atomy mogą łączyć się poprzez wiązania jonowe, kowalencyjne lub metaliczne. Są to modele opisowe; rzeczywiste oddziaływania nie zawsze dają się rozdzielić ostrymi granicami na te trzy kategorie.
+
+### Ćwiczenia kontrolne
+
+1. Wyjaśnij, dlaczego reguła oktetu nie jest pełną teorią wiązań.
+2. Podaj przykład cząsteczki, w której wodór osiąga duet.
+3. Wyjaśnij, dlaczego podczas reakcji jedne wiązania zanikają, a inne powstają.
+4. Oceń zdanie: „Każdy atom chce mieć osiem elektronów walencyjnych”.
+
+**Klucz:** 1. Istnieją m.in. układy z duetem, niepełnym oktetem i nieparzystą liczbą elektronów; 2. `H₂`; 3. reakcja przebudowuje połączenia między atomami, a całkowity efekt zależy od bilansu energii; 4. fałsz — to antropomorfizujące uproszczenie, które nie opisuje wszystkich układów.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
 ### Poprawki
 
-- Nie pisz, że atomy zawsze łączą się po to, aby uzyskać oktet.
-- Reguła oktetu jest użytecznym modelem dla wielu związków pierwiastków grup głównych, ale ma wyjątki.
-- Niektóre atomy stabilizują się przy dwóch elektronach na pierwszej powłoce, na przykład wodór.
-- Występują cząsteczki z niepełnym oktetem, rozszerzonym oktetem i nieparzystą liczbą elektronów.
-- Stabilność układu nie oznacza wyłącznie „posiadania pełnej powłoki”.
-- O tym, czy wiązanie powstanie, decyduje bilans energetyczny całego układu.
-- Powstanie wiązania może obniżyć energię układu, ale podczas rozrywania wiązania energia jest pochłaniana.
-- Nie przedstawiaj wiązania jako „przyciągania atomów przez chęć uzyskania oktetu”.
-- Atomy mogą tworzyć wiązania jonowe, kowalencyjne lub metaliczne, a granice między modelami bywają umowne.
+- Nie pisz, że atomy zawsze łączą się po to, aby uzyskać oktet. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Reguła oktetu jest użytecznym modelem dla wielu związków pierwiastków grup głównych, ale ma wyjątki. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Niektóre atomy stabilizują się przy dwóch elektronach na pierwszej powłoce, na przykład wodór. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Występują cząsteczki z niepełnym oktetem, rozszerzonym oktetem i nieparzystą liczbą elektronów. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Stabilność układu nie oznacza wyłącznie „posiadania pełnej powłoki”. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- O tym, czy wiązanie powstanie, decyduje bilans energetyczny całego układu. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Powstanie wiązania może obniżyć energię układu, ale podczas rozrywania wiązania energia jest pochłaniana. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie przedstawiaj wiązania jako „przyciągania atomów przez chęć uzyskania oktetu”. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Atomy mogą tworzyć wiązania jonowe, kowalencyjne lub metaliczne, a granice między modelami bywają umowne. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 ### Uzupełnienia
 
@@ -350,31 +372,33 @@ W wielu prostych związkach atomy pierwiastków grup głównych dążą do konfi
 
 #### Przykłady wyjątków
 
-- H₂ — wodór osiąga duet;
-- BF₃ — bor może mieć niepełny oktet;
-- NO — liczba elektronów walencyjnych jest nieparzysta;
-- PCl₅ — w modelu szkolnym fosfor może mieć rozszerzony oktet;
-- SF₆ — siarka ma rozszerzoną powłokę walencyjną w opisie szkolnym.
+- H₂ — wodór osiąga duet; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- BF₃ — bor może mieć niepełny oktet; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- NO — liczba elektronów walencyjnych jest nieparzysta; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- PCl₅ — w modelu szkolnym fosfor może mieć rozszerzony oktet; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- SF₆ — siarka ma rozszerzoną powłokę walencyjną w opisie szkolnym. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 #### Uzupełnienie energetyczne
 
 Podczas tworzenia wiązań:
 
-- układ może osiągnąć niższą energię;
-- wydziela się energia, jeśli proces prowadzi do stabilniejszego układu;
-- zerwanie wiązań wymaga dostarczenia energii;
-- całkowity efekt energetyczny reakcji zależy od wszystkich zrywanych i tworzonych wiązań.
+- układ może osiągnąć niższą energię; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- wydziela się energia, jeśli proces prowadzi do stabilniejszego układu; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- zerwanie wiązań wymaga dostarczenia energii; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- całkowity efekt energetyczny reakcji zależy od wszystkich zrywanych i tworzonych wiązań. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 #### Zadania
 
-1. Wyjaśnij, dlaczego reguła oktetu nie jest pełną teorią wiązań.
+1. Wyjaśnij, dlaczego reguła oktetu nie jest pełną teorią wiązań. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 2. Podaj przykład cząsteczki, w której wodór osiąga duet.
 3. Wyjaśnij, dlaczego podczas reakcji chemicznej jedne wiązania zanikają, a inne powstają.
 4. Oceń zdanie: „Każdy atom chce mieć osiem elektronów walencyjnych.”
 
 #### Klucz
 
-1. Istnieją cząsteczki z duetem, niepełnym oktetem, rozszerzonym oktetem i nieparzystą liczbą elektronów.
+1. Istnieją cząsteczki z duetem, niepełnym oktetem, rozszerzonym oktetem i nieparzystą liczbą elektronów. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 2. H₂.
 3. Reakcja polega na przebudowie połączeń między atomami; zerwanie jednych wiązań umożliwia utworzenie innych.
 4. Fałsz. To uproszczenie dotyczące wielu, ale nie wszystkich układów.
+
+**Status audytu:** poprawki i uzupełnienia zostały przeniesione do sekcji „UZUPEŁNIENIE KANONICZNE”; ćwiczenia i klucze dodano do treści lekcji.

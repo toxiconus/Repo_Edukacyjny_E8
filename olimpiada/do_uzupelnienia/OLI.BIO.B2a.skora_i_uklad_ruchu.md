@@ -5,7 +5,7 @@ tytul: Skóra i układ ruchu
 lead: Skóra chroni i reguluje; kości, stawy i mięśnie współpracują jak dźwignie.
 plakietki: [[basic:E8]][[exam:KONKURS]]
 zakres: LKO biologia etap II pkt III.1–2
-stan: UZUPEŁNIONY v1
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 wersja: 2026-10-09
 ---
 
@@ -93,3 +93,9 @@ Gotowe.
 - DANE: czy robiliście doświadczenie z kością w occie / wyprażaniem?
 - DANE: doświadczenia z podręcznika lub z lekcji
 - DANE: zadania rejonowe LKO biologia + klucz
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Sprawdzono roboczo połączenie budowy skóry z ochroną i termoregulacją oraz współpracę mięśni antagonistycznych.
+- W zadaniach o urazach nie sugerować samodzielnego nastawiania złamań; pierwsza pomoc powinna skupiać się na wezwaniu pomocy i unieruchomieniu w bezpieczny sposób.
+- Jeśli pojawiają się liczby dotyczące temperatury skóry, wytrzymałości kości lub czasu gojenia, należy podać kontekst albo oznaczyć `[do weryfikacji]`.
+- Zakres konkursowy wymaga niezależnego porównania z aktualnym zakresem LKO.

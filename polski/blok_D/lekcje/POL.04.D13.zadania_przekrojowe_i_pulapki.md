@@ -5,7 +5,7 @@ blok: D
 numer: 13
 wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
+status: W2 — GPT-6, 2026-10-09; audyt kontrolny i doprecyzowanie zapisane; niezależna recenzja zewnętrzna niepotwierdzona
 wymaga: PL.D01–D12
 ---
 
@@ -230,3 +230,11 @@ Wybierz dwie najsłabsze kategorie i wróć do właściwych lekcji. Dopiero po p
 - [x] Dodano warianty pracy pisemnej dopasowane do różnych form.
 - [x] Dodano system diagnozy błędów po teście.
 - [ ] Pozostaje niezależna recenzja polonistyczna i porównanie z aktualnymi arkuszami.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Doprecyzowanie kontrolne:** Przy zadaniach przekrojowych najpierw rozpoznaj, czego dokładnie żąda polecenie; unikaj odpowiedzi obok tematu, nieuzasadnionych interpretacji i automatycznych schematów.
+
+- Kontrola zakresu: zadanie należy rozwiązywać zgodnie z konkretnym poleceniem; szablon nie zastępuje realizacji tematu.
+- Kryteria i punktacje w ćwiczeniach są treningowe, chyba że plik wyraźnie cytuje oficjalny dokument. Nie przedstawiać ich jako oficjalnej punktacji CKE.
+- Źródło do kontroli aktualnych wymagań: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory; informator język polski: https://bip.cke.gov.pl/attachments/download/9824.

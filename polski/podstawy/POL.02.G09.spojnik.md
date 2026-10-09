@@ -5,7 +5,7 @@ tytul: Spójnik
 lead: Łączy wyrazy i zdania: i, ale, więc, że, bo, gdy — i decyduje o przecinku.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G15, G16
-stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
+stan: W1 — GPT-6, 2026-10-09; kontrola zewnętrzna treści i kluczy; wersja 3.1
 utworzono: 2026-10-09
 wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
@@ -70,7 +70,7 @@ Wyjątek: przecinek przed *i* zamyka **wtrącenie** albo zdanie podrzędne: *Wsz
 
 **Spójnik na początku zdania złożonego:** przecinek między zdaniami: *Ponieważ padało, zostaliśmy.* *Gdy wrócił, było ciemno.*
 
-**Pisownia łączna:** *żeby, aby, ażeby, gdyby, jakby, choćby, czyżby* — cząstka *-by* łącznie ze spójnikiem.
+**Pisownia i rozpoznawanie form:** zapisujemy łącznie spójniki *żeby, aby, ażeby, gdyby, jakby, choćby* oraz partykułę w wyrazach typu *czyżby*. Nie należy jednak przenosić tej reguły na każde połączenie spójnika z cząstką *by*: w konstrukcji *Zastanawiam się, czy by nie wyjechać* zapis jest rozdzielny. Od 2026 r. rozdzielnie zapisuje się cząstki *-bym, -byś, -by, -byśmy, -byście* występujące po spójnikach, np. *czy by*, *że by* w konstrukcji, w której *że* jest spójnikiem, a *by* odrębną cząstką.
 
 ## 6 | Przykłady z lektur [[basic:E8]]
 
@@ -93,7 +93,7 @@ Wyjątek: przecinek przed *i* zamyka **wtrącenie** albo zdanie podrzędne: *Wsz
 | Chciał ale nie mógł. | Chciał, ale nie mógł. | przecinek przed *ale* |
 | Ponieważ padało zostaliśmy. | Ponieważ padało, zostaliśmy. | przecinek między zdaniami |
 | Poszedł mimo, że padało. | Poszedł, mimo że padało. | przecinek przed całym spójnikiem złożonym |
-| że by, gdy by (spójnik) | żeby, gdyby | spójniki z *-by* łącznie |
+| że by, gdy by (jako rzekome warianty spójników) | żeby, gdyby | *żeby* i *gdyby* są odrębnymi spójnikami pisanymi łącznie; sekwencje *że by* i *gdy by* mogą wystąpić w innych konstrukcjach i nie są automatycznie błędami — trzeba analizować składnię |
 | ani mleka ani kawy | ani mleka, ani kawy | przecinek przed powtórzonym spójnikiem |
 | *który* — spójnik | *który* — zaimek względny | zastępuje rzeczownik i jest częścią zdania |
 
@@ -322,3 +322,12 @@ Popraw interpunkcję i opisz relacje: „Kiedy skończyłem czytać książkę o
 ### 14.8. Samokontrola
 
 Umiem wskazać spójnik, nazwać relację znaczeniową, odróżnić współrzędność od podrzędności, stawiać przecinki na granicach zdań składowych, rozpoznać powtórzone spójniki oraz odróżnić *że/czy* od zaimka względnego *który*.
+
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+
+- Usunięto nadmierne uogólnienie, jakoby każda sekwencja „że by/gdy by” była błędną pisownią spójnika; odróżniono spójniki *żeby, gdyby* od konstrukcji składniowych z rozdzielnym *by*.
+- Dodano uwagę o rozdzielnym zapisie cząstki *by* po spójniku, zgodnie z zasadami ortograficznymi obowiązującymi od 1.01.2026 r.
+- Sprawdzono klucze interpunkcyjne, w tym przecinki przy zdaniach podrzędnych i wtrąceniach.
+
+**Źródła normatywne:** Rada Języka Polskiego PAN, „Zasady pisowni i interpunkcji polskiej” (https://rjp.pan.pl/zasady-pisowni-i-interpunkcji-polskiej-2/); CKE, informacja z 20.08.2025 r. — w latach 2026–2030 na egzaminach akceptowane są zasady dotychczasowe i nowe (https://bip.cke.gov.pl/attachments/download/10293).

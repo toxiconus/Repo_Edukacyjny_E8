@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L010 · Następna: L012
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: wersja robocza po kontroli wizualnej i redakcyjnej — wymaga niezależnej recenzji biologicznej
 - Status HTML: BIOLOGIA_L011_DNA.html + WIZUALIZACJA
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `nukleotyd → nić → dwie nici → helisa`
 `[/BIO: DIAGRAM]`
+@opis Schemat strzałkowy kolejnych poziomów budowy DNA: nukleotyd (fosforan, deoksyryboza, zasada) → pojedyncza nić z nukleotydów → dwie komplementarne nici połączone parami zasad A–T i G–C → skręcona podwójna helisa. Wniosek: informacja jest zapisana w kolejności zasad, a helisa to tylko przestrzenny kształt tej samej cząsteczki.
 
 **Co uczeń ma zauważyć:** informacja tkwi w sekwencji zasad.
 
@@ -1046,3 +1047,10 @@ HTML kanon wizualny: `BIO_011_v06_jak_DNA_przechowuje_informacje.html` (v6.3).
 
 
 <!-- ==================== BEGIN L012 ==================== -->
+
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Przeprowadzono kontrolę redakcyjną i kontrolę oznaczeń wizualizacji; dopisano `@opis` bezpośrednio pod blokami `[BIO: DIAGRAM]` tam, gdzie go brakowało.
+- Zachowano dotychczasową treść i kody lekcji; nie usuwano wcześniejszych wersji ani banków zadań.
+- Zwrócono uwagę na rozróżnienie modelu od rzeczywistości oraz na to, że schematy przepływu pokazują uproszczone relacje.
+- **Ograniczenie:** nie jest to pełna niezależna walidacja wszystkich danych i kluczy zadań; przed publikacją wymagane jest sprawdzenie merytoryczne przez nauczyciela biologii.

@@ -5,7 +5,7 @@ tytul: Wykrzyknik
 lead: Ach! Hej! Bęc! — wyraz emocji, wołania i dźwięku; wykrzyknik (część mowy) a wykrzyknienie (zdanie).
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, S03, G14
-stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
+stan: W1 — GPT-6, 2026-10-09; kontrola merytoryczna i językowa, pozycje wymagające źródła normatywnego oznaczono w audycie
 utworzono: 2026-10-09
 wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
@@ -32,7 +32,7 @@ Potrafię odróżnić wykrzyknik (część mowy) od wykrzyknienia (środek styli
 
 ## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
 
-1. Sprawdź, czy wyraz wyraża **emocję, wołanie lub dźwięk**, a nie nazywa niczego.  
+1. Sprawdź, czy wyraz samodzielnie wyraża **emocję, wołanie, reakcję albo naśladuje dźwięk**. O funkcji rozstrzyga kontekst: np. *hop* może zachęcać do skoku, a *bum* naśladować odgłos.  
 2. Sprawdź, czy jest **nieodmienny** i czy można go wypowiedzieć jako samodzielne zdanie (*Ojej!*).  
 3. Odróżnij od **rzeczownika**: *hałas* (nazywa dźwięk) — *trach!* (naśladuje dźwięk).  
 4. Odróżnij od **czasownika**: *miauczy* (czasownik) — *miau!* (wykrzyknik).  
@@ -275,3 +275,12 @@ Przeczytaj: „— Hej! — zawołała Lena. — Uff, zdążyliśmy! Nagle rozle
 ### 14.7. Samokontrola
 
 Umiem odróżnić wykrzyknik jako część mowy od znaku „!”, nazwać funkcje emocjonalne, przywołujące i dźwiękonaśladowcze, analizować kontekst, poprawnie zapisać dialog i dostosować ekspresję do sytuacji komunikacyjnej.
+
+
+## AUDYT W1 — wynik
+
+- Rozróżnienie części mowy i znaku interpunkcyjnego: ✔ sprawdzono w definicji i ćwiczeniach.
+- Klucze ćwiczeń: ✔ przykładowe odpowiedzi nie wykluczają interpretacji uzasadnionych kontekstem.
+- Uwaga: podział wykrzykników na typy ma charakter szkolny; konkretne klasyfikacje mogą różnić się w opracowaniach.
+
+**Zakres kontroli:** kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.

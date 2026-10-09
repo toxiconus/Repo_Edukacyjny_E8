@@ -6,6 +6,7 @@ wymaga: "F11; F12"
 poglebia: "F14; F15; F18"
 zrodla: "MASTER v17.0; MASTER v15.0"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicznej
 ---
 # CHE.01F.13-LEWIS — STRUKTURY LEWISA I ELEKTRONY WALENCYJNE
 
@@ -783,23 +784,53 @@ Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Struktu
 | Ca(OH)₂ | 40 + 2·(16+1) | 74 u (masa jednostki wzoru) |
 | H₂SO₄ | 2·1 + 32 + 4·16 | 98 u (masa cząsteczkowa) |
 
+## UZUPEŁNIENIE KANONICZNE — procedura wzorów Lewisa (W1, 2026-10-09)
+
+Wzór Lewisa pokazuje elektrony walencyjne, pary wiążące i wolne pary elektronowe. Jedna kreska zwykle oznacza jedną wspólną parę elektronową; dwie kreski — wiązanie podwójne, trzy — potrójne. To model, który nie pokazuje dokładnych długości wiązań ani sam w sobie nie wyznacza geometrii cząsteczki.
+
+### Procedura
+
+1. Policz wszystkie elektrony walencyjne.
+2. Dla anionu dodaj elektrony zgodnie z wartością ładunku, a dla kationu odejmij.
+3. Wybierz atom centralny (zwykle nie wodór) i połącz atomy wiązaniami pojedynczymi.
+4. Uzupełnij oktety atomów zewnętrznych; wodór potrzebuje duetu.
+5. Rozmieść pozostałe elektrony i w razie potrzeby rozważ wiązania wielokrotne.
+6. Sprawdź całkowitą liczbę elektronów i zapisz ładunek jonu w nawiasie kwadratowym, np. `[OH]⁻`.
+
+### Przykłady
+
+- `H₂O`: 6 + 1 + 1 = 8 elektronów walencyjnych; dwa wiązania O–H i dwie wolne pary na tlenie.
+- `CO₂`: 4 + 2·6 = 16 elektronów walencyjnych; typowy wzór Lewisa to `O=C=O`.
+
+Reguła oktetu jest pomocna, ale nie uniwersalna; wzór Lewisa należy traktować jako model, nie fotografię rozkładu elektronów.
+
+### Ćwiczenia kontrolne
+
+1. Opisz wzór Lewisa `NH₃`.
+2. Opisz wzór Lewisa `CH₄`.
+3. Opisz wzór Lewisa `HCl`.
+4. Policz elektrony walencyjne w `[CO₃]²⁻`.
+5. Wyjaśnij, dlaczego w modelu Lewisa CO₂ przedstawia się z dwoma wiązaniami podwójnymi.
+
+**Klucz:** 1. N tworzy trzy wiązania N–H i ma jedną wolną parę; 2. C tworzy cztery wiązania pojedyncze C–H; 3. H–Cl, a Cl ma trzy wolne pary; 4. 4 + 3·6 + 2 = 24; 5. taki zapis pozwala uzyskać oktet węgla i obu atomów tlenu w podstawowym modelu Lewisa.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
 ### Poprawki
 
-- Wzór Lewisa przedstawia elektrony walencyjne, pary wiążące i wolne pary elektronowe.
-- Nie utożsamiaj kreski we wzorze Lewisa z całym wiązaniem chemicznym w każdym możliwym modelu.
-- Jedna kreska zwykle oznacza jedną wspólną parę elektronową.
-- Dwie kreski oznaczają wiązanie podwójne, a trzy kreski wiązanie potrójne.
-- Najpierw należy policzyć wszystkie elektrony walencyjne.
-- Dla jonu wieloatomowego liczbę elektronów należy skorygować o ładunek:
-  - dla anionu dodaj elektrony;
-  - dla kationu odejmij elektrony.
-- Wzór Lewisa nie pokazuje rzeczywistych długości wiązań ani dokładnej geometrii cząsteczki.
-- Reguła oktetu pomaga budować wzory, ale ma wyjątki.
-- Dla jonu wieloatomowego należy stosować nawias kwadratowy i zapisać ładunek, na przykład [OH]⁻.
+- Wzór Lewisa przedstawia elektrony walencyjne, pary wiążące i wolne pary elektronowe. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie utożsamiaj kreski we wzorze Lewisa z całym wiązaniem chemicznym w każdym możliwym modelu. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Jedna kreska zwykle oznacza jedną wspólną parę elektronową. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Dwie kreski oznaczają wiązanie podwójne, a trzy kreski wiązanie potrójne. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Najpierw należy policzyć wszystkie elektrony walencyjne. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Dla jonu wieloatomowego liczbę elektronów należy skorygować o ładunek: — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - dla anionu dodaj elektrony; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - dla kationu odejmij elektrony. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wzór Lewisa nie pokazuje rzeczywistych długości wiązań ani dokładnej geometrii cząsteczki. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Reguła oktetu pomaga budować wzory, ale ma wyjątki. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Dla jonu wieloatomowego należy stosować nawias kwadratowy i zapisać ładunek, na przykład [OH]⁻. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 ### Uzupełnienia
 
@@ -822,8 +853,8 @@ Tlen ma 6 elektronów walencyjnych, a dwa atomy wodoru po 1:
 
 Struktura zawiera:
 
-- dwa wiązania O-H;
-- dwie wolne pary elektronowe na atomie tlenu.
+- dwa wiązania O-H; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- dwie wolne pary elektronowe na atomie tlenu. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 #### Przykład: dwutlenek węgla
 
@@ -850,3 +881,5 @@ Poprawny zapis strukturalny:
 3. Chlor tworzy jedno wiązanie z wodorem i ma trzy wolne pary.
 4. 4+3·6+2=24 elektrony walencyjne.
 5. Dwa wiązania podwójne pozwalają wypełnić oktet atomu węgla i obu atomów tlenu.
+
+**Status audytu:** poprawki i uzupełnienia przeniesiono do sekcji „UZUPEŁNIENIE KANONICZNE”; dodano przykłady, ćwiczenia i klucze.

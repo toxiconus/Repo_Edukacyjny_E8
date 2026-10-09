@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L011 / L016 · Następna: L021
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: jest wykład MD; audyt przy edycji; audyt punktowy W15 — 2026-10-09
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `zmiana DNA → produkt/komórka → możliwy skutek`
 `[/BIO: DIAGRAM]`
+@opis Mutacje mogą dotyczyć sekwencji DNA, struktury chromosomu albo liczby chromosomów; skutek zależy m.in. od typu zmiany, miejsca i komórki, w której zaszła.
 
 **Co uczeń ma zauważyć:** mutacja ≠ automatycznie choroba.
 
@@ -383,3 +384,33 @@ Mutacja może zatrzymać się „po drodze”:
 
 
 <!-- ==================== BEGIN L021 ==================== -->
+
+
+## 23. Doprecyzowanie — czy mutacja jest dziedziczna? (W15)
+
+- **Mutacja somatyczna** zachodzi w komórce ciała; zwykle pozostaje w jej linii komórkowej i nie jest przekazywana potomstwu.
+- **Mutacja w linii płciowej** może trafić do gamety i zostać przekazana potomstwu.
+- Mutacja nie musi zmieniać białka ani widocznej cechy. Jej skutek zależy m.in. od miejsca zmiany, typu komórki i mechanizmów naprawy oraz regulacji.
+- Mutagen zwiększa prawdopodobieństwo uszkodzeń lub mutacji; nie oznacza to, że każda ekspozycja wywoła mutację.
+
+## AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)
+
+**Zakres:** kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.
+
+### Uściślenia do utrzymania w treści
+- Wyraźnie rozdzielić mutacje somatyczne od germinalnych: mutacje somatyczne zwykle nie są przekazywane potomstwu, natomiast zmiany obecne w linii płciowej mogą być dziedziczone.
+- Nie pisać, że każda mutacja zmienia białko lub fenotyp: część zmian nie wpływa istotnie na produkt, może leżeć w obszarze niekodującym albo nie zmieniać aminokwasu.
+- Mutagen zwiększa prawdopodobieństwo zmian, ale nie każda ekspozycja wywołuje mutację; podkreślić dawkę, czas, mechanizm i naprawę DNA.
+
+### Status
+- Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
+- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+
+## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana zadań o typach mutacji i skutkach dziedzicznych.
+
+- Mutacja w komórce somatycznej zwykle nie jest przekazywana potomstwu przez rozmnażanie płciowe; mutacja w linii płciowej może zostać przekazana potomstwu, jeśli uczestniczy w powstaniu gamety.
+- Skutek mutacji może być szkodliwy, obojętny lub — w określonym środowisku — korzystny. Nie każda mutacja zmienia białko, fenotyp ani powoduje chorobę.
+- Odróżniaj mutację genu od zmiany struktury/liczby chromosomów; jeśli zadanie podaje tylko „zmianę DNA”, bez szczegółów nie zawsze można wskazać dokładny typ.
+- **Status:** dodano kryteria oceny odpowiedzi; wszystkie klucze pozostają do pełnego audytu.

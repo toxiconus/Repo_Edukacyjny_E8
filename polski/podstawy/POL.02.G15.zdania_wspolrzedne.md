@@ -5,7 +5,7 @@ tytul: Zdanie złożone współrzędnie
 lead: Zdania równorzędne: łączne, rozłączne, przeciwstawne, wynikowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G09, G16
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: W1 — GPT-6, 2026-10-09; kontrola typów zdań i interpunkcji
 utworzono: 2026-10-09
 wersja: 2.1
 ---
@@ -111,3 +111,12 @@ Spójnik *a* często łączy zdania przeciwstawnie lub porównawczo i zwykle pop
 4. Wyjaśnij różnicę między *bo* i *więc* (2 pkt).
 
 **Klucz:** 1. łączne, rozłączne, przeciwstawne, wynikowe; 2. np. *Słońce zaszło, zrobiło się chłodno*; 3. *Było późno, ale nie zasnęliśmy, więc obejrzeliśmy film*; 4. *bo* wprowadza zwykle przyczynę, *więc* — skutek/wniosek.
+
+
+## AUDYT W1 — wynik
+
+- Cztery podstawowe typy zdań współrzędnych: ✔ sprawdzono zgodność terminów i klucza mini-testu.
+- Interpunkcja przed „ale” i „więc”: ✔ klucz zachowuje przecinki między członami zdań składowych.
+- Przykłady autorskie: traktować jako ćwiczenia autorskie, nie jako oficjalne zadania CKE.
+
+**Zakres kontroli:** kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.

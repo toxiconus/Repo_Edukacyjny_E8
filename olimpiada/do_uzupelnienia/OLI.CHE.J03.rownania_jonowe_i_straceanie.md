@@ -5,7 +5,7 @@ tytul: Równania jonowe, strącanie osadów, sól z soli, kwas z soli
 lead: Zapis cząsteczkowy → jonowy pełny → jonowy skrócony; kiedy reakcja w roztworze w ogóle zachodzi.
 plakietki: [[basic:E8]][[exam:KONKURS]][[exam:LKO-REJ]]
 zakres: LKO etap II / rejonowy + E8
-stan: MAX v1 (2026-10-09)
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 ---
 
 # 0. Cel i kryterium gotowości
@@ -142,7 +142,7 @@ Osad odfiltrować i przemyć.
 4. Jak wykryć jon SO₄²⁻?  
 5. Zapisz skrócone: Ba(OH)₂ + H₂SO₄
 
-**Klucz:** 1. Ag⁺ + Cl⁻ → AgCl↓; 2. niebieski; 3. nie; 4. Ba²⁺ (biały osad); 5. Ba²⁺ + SO₄²⁻ → BaSO₄↓ (oraz H⁺ + OH⁻ → H₂O).
+**Klucz:** 1. Ag⁺ + Cl⁻ → AgCl↓; 2. niebieski; 3. nie; 4. wykrywanie SO₄²⁻ wymaga odpowiedniego odczynnika zawierającego Ba²⁺ i kontroli warunków próbki; biały osad BaSO₄ jest obserwacją, którą należy interpretować z uwzględnieniem możliwych interferencji; 5. Ba²⁺ + SO₄²⁻ → BaSO₄↓ oraz 2H⁺ + 2OH⁻ → 2H₂O.
 
 ---
 **Status:** MAX. Gotowe pod rejon LKO.
@@ -329,3 +329,15 @@ Zakwaszenie pomaga ograniczyć zakłócenia powodowane przez niektóre inne anio
 Potwierdzenie gazu:
 
  Ca(OH)₂+CO₂→ CaCO₃↓+H₂O
+
+## W20 — kontrola kluczy i bilansu (2026-10-09, GPT-6)
+
+- Poprawiono współczynniki neutralizacji w kluczu mini-testu: `2H⁺ + 2OH⁻ → 2H₂O`; strącanie `Ba²⁺ + SO₄²⁻ → BaSO₄↓` jest osobnym procesem jonowym.
+- Doprecyzowano odpowiedź dotyczącą wykrywania siarczanów; sam zapis „Ba²⁺” nie jest wystarczającą instrukcją doświadczenia.
+- Audyt celowany wybranych kluczy, nie pełna walidacja wszystkich zadań.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Wyrywkowo sprawdzono bilanse: NaOH + HCl → NaCl + H₂O; 2KOH + H₂SO₄ → K₂SO₄ + 2H₂O; CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄. Atomy i ładunki w zapisach jonowych tych reakcji są zgodne.
+- Dla równania jonowego skróconego należy usuwać jony obserwatorowe tylko wtedy, gdy są rzeczywiście obecne po obu stronach w tej samej postaci.
+- Przy próbach strąceniowych uwzględnić rozpuszczalność, stężenie i możliwe reakcje uboczne; sam kolor osadu nie zawsze stanowi jednoznaczną identyfikację.
+- To kontrola wybranych przykładów, nie pełny audyt każdego klucza.

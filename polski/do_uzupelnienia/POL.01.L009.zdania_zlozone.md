@@ -4,7 +4,7 @@ przedmiot: język polski
 tytul: Zdanie pojedyncze i złożone — współrzędność, podrzędność i interpunkcja
 wersja: 4.0
 poziom: E8 + trening konkursowy
-status: PEŁNA LEKCJA po cyklu: analiza G14–G16 → diagnoza luk → uzupełnienie → ponowna kontrola
+status: W2 — GPT-6, 2026-10-09; audyt i doprecyzowania wprowadzone; niezależna recenzja zewnętrzna niepotwierdzona
 powiazania: POL.02.G14.zdanie_pojedyncze.md; POL.02.G15.zdania_wspolrzedne.md; POL.02.G16.zdania_podrzedne.md
 czas: 2–3 jednostki lekcyjne + powtórka
 ---
@@ -376,3 +376,13 @@ Dodano pełne rozróżnienie wypowiedzeń, procedurę liczenia zdań składowych
 - [x] Wyjaśniono różnicę między liczeniem orzeczeń a rozpoznaniem zdań składowych z bezokolicznikiem.
 - [x] Test ma 20 punktów.
 - [ ] Pozostaje niezależna recenzja polonistyczna oraz walidacja z aktualnym informatorem i arkuszami CKE.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Zakres:** Kontrola granic zdań składowych, współrzędności/podrzędności, spójników i interpunkcji.
+
+**Uzupełnienie wprowadzone:** Doprecyzowano, że przecinka nie stawia się mechanicznie przed każdym spójnikiem; trzeba najpierw rozpoznać granice zdań składowych i konstrukcję wypowiedzenia.
+
+- Sprawdzono spójność celu lekcji, pojęć i kluczy z poziomem E8; materiał konkursowy/rozszerzający należy traktować jako dodatkowy, a nie wymagany do podstawowej odpowiedzi.
+- Własne rubryki ćwiczeniowe są kryteriami treningowymi, nie oficjalną punktacją CKE.
+- Źródło do niezależnej kontroli wymagań egzaminacyjnych: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory oraz Informator CKE: https://bip.cke.gov.pl/attachments/download/9824.

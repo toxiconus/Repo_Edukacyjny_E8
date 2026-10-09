@@ -5,7 +5,7 @@ tytul: Powtórzenie, anafora, wyliczenie, kontrast
 lead: Środki budujące rytm i podkreślające treść.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: PO W1 — doprecyzowano antytezę i funkcję powtórzenia; GPT-6; 2026-10-09
 utworzono: 2026-10-09
 wersja: 2.0
 ---
@@ -30,7 +30,7 @@ Powtórzenie polega na celowym ponownym użyciu wyrazu, zwrotu, konstrukcji lub 
 **Refren** to powtarzający się wers, grupa wersów lub fragment, zwykle w regularnych odstępach utworu, np. na końcu zwrotek piosenki. Utrwala główną myśl, tworzy rytm, spaja kompozycję i może zmieniać znaczenie w zależności od kontekstu zwrotki. Refren jest zabiegiem kompozycyjnym; może zawierać anaforę, ale pojęcia nie są tożsame.
 
 ## 5. Kontrast i antyteza
-**Kontrast** zestawia przeciwstawne elementy, np. światło i ciemność, ciszę i hałas, nadzieję i rozpacz. **Antyteza** to wyraziste, retoryczne zestawienie przeciwstawnych myśli lub pojęć: *„Mały ciałem, wielki duchem”.* Aby rozpoznać kontrast, wskaż oba przeciwstawne elementy. Samo wystąpienie dwóch różnych rzeczy nie wystarczy.
+**Kontrast** zestawia przeciwstawne elementy, np. światło i ciemność, ciszę i hałas, nadzieję i rozpacz. **Antyteza** to wyraziste, retoryczne zestawienie przeciwstawnych myśli lub pojęć, często w równoległej konstrukcji: *„Mały ciałem, wielki duchem”.* Kontrast jest pojęciem szerszym i może dotyczyć samych obrazów lub sytuacji; antyteza mocniej eksponuje przeciwieństwo w budowie wypowiedzi. W obu przypadkach wskaż oba bieguny i wyjaśnij ich znaczenie.
 
 ## 6. Funkcje i procedura analizy
 1. Zaznacz dokładny fragment.
@@ -84,3 +84,9 @@ Nie tylko rozpoznaję nazwę, ale wskazuję elementy i uzasadniam efekt w konkre
 **Klucz:** mróz na zewnątrz kontra ciepło i bezpieczeństwo wewnątrz; podkreśla różnicę między przestrzeniami.
 
 **Zastosowanie do lektury:** przy powtórzeniu sprawdź nie tylko to, co powraca, ale też czy znaczenie zmienia się przy każdym powrocie. W refrenie sens może nabierać nowych odcieni dzięki kolejnym zwrotkom.
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+- Uściślono różnicę między szerokim kontrastem a retoryczną antytezą. ✔ wprowadzone (sekcja 5)
+- Sprawdzono relację powtórzenia, anafory, refrenu i wyliczenia; klucze nie utożsamiają tych pojęć. ✔ sprawdzone
+- Wizualizacja ma opis słowny `@opis`. ✔ sprawdzone
+

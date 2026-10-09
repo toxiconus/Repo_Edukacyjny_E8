@@ -5,7 +5,7 @@ tytul: Zdanie pojedyncze i równoważnik zdania
 lead: Zdanie z jednym orzeczeniem, rozwinięte i nierozwinięte; wypowiedzenie bez orzeczenia.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G12, G15
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: W1 — GPT-6, 2026-10-09; kontrola definicji, przykładów i kluczy
 utworzono: 2026-10-09
 wersja: 2.1
 ---
@@ -18,7 +18,7 @@ Potrafię odróżnić zdanie od równoważnika, policzyć orzeczenia, rozpoznać
 ## 1. Zdanie, wypowiedzenie, równoważnik
 **Wypowiedzenie** to komunikat stanowiący całość znaczeniową. **Zdanie** zawiera orzeczenie, zwykle wyrażone osobową formą czasownika; orzeczenie może być czasownikowe (*Uczeń czyta*) lub imienne (*Uczeń jest spokojny*). **Równoważnik zdania** nie ma orzeczenia, ale przekazuje komunikat: *Cisza!*; *Dzień dobry*; *Po lekcjach do domu*.
 
-Nie wystarczy znaleźć dowolną formę czasownika. Bezokolicznik (*chcę czytać*) sam nie jest orzeczeniem osobowym, ale w zdaniu może występować obok orzeczenia *chcę*. Imiesłów przysłówkowy (*idąc, przeczytawszy*) także nie jest samodzielnym orzeczeniem osobowym. Zdanie *Chcę przeczytać książkę* ma jedno orzeczenie osobowe: *chcę*.
+Nie wystarczy znaleźć dowolną formę czasownika. Bezokolicznik (*chcę czytać*) sam nie jest orzeczeniem osobowym, ale może dopełniać znaczenie orzeczenia *chcę*. Imiesłów przysłówkowy (*idąc, przeczytawszy*) także nie jest samodzielnym orzeczeniem osobowym. Zdanie *Chcę przeczytać książkę* ma jedno orzeczenie osobowe: *chcę*. Liczbę zdań składowych ustalaj na podstawie budowy całego wypowiedzenia, a nie przez mechaniczne liczenie wszystkich form czasownikowych.
 
 ## 2. Zdanie pojedyncze rozwinięte i nierozwinięte
 Zdanie pojedyncze ma jedno orzeczenie (także imienne). **Nierozwinięte** składa się zasadniczo z podmiotu i orzeczenia: *Ptak śpiewa*. **Rozwinięte** zawiera dodatkowe określenia: *Mały ptak śpiewa głośno na drzewie*. Zdanie może być też bezpodmiotowe: *Świta*. Kryterium „pojedynczości” dotyczy liczby orzeczeń, a nie długości zdania.
@@ -91,7 +91,7 @@ Przed klasyfikacją policz orzeczenia, rozpoznaj formy nieosobowe i dopiero wted
 W zdaniu *Ona była bardzo zadowolona* orzeczenie imienne obejmuje łącznik *była* i orzecznik *zadowolona*. W zdaniu *Zadanie zostało rozwiązane* konstrukcja bierna może być analizowana jako orzeczenie złożone. Przy liczeniu zdań składowych nie dziel orzeczenia na części tylko dlatego, że składa się z dwóch wyrazów.
 
 ### 14.2. Bezokolicznik w zdaniu
-W zdaniu *Chcę odpocząć* jest jedno orzeczenie osobowe *chcę*, a *odpocząć* jest bezokolicznikiem dopełniającym znaczenie czasownika. W konstrukcjach z wyrazami typu *aby, żeby* trzeba jednak rozpoznać budowę całego wypowiedzenia: *Przyszedłem, żeby pomóc* ma podrzędną relację celu, mimo że druga część zawiera bezokolicznik. Szkolne sposoby liczenia orzeczeń mogą w tym miejscu wymagać uwzględnienia konstrukcji bezokolicznikowych — kieruj się definicją używaną w danym podręczniku i nie stosuj hasła „każdy bezokolicznik nigdy nie tworzy części zdania złożonego” bez sprawdzenia konstrukcji.
+W zdaniu *Chcę odpocząć* jest jedno orzeczenie osobowe *chcę*, a *odpocząć* jest bezokolicznikiem dopełniającym znaczenie czasownika. Konstrukcje z *aby/żeby* wymagają odróżnienia zdania podrzędnego z osobową formą czasownika od połączenia z bezokolicznikiem. Porównaj: *Przyszedłem, żeby pomóc* oraz *Przyszedłem, żebyś mi pomógł*. W pierwszym przykładzie *pomóc* jest bezokolicznikiem; w drugim *pomógł* tworzy orzeczenie w zdaniu podrzędnym. Nie należy automatycznie uznawać każdego członu z *żeby* za osobne zdanie składowe bez analizy formy orzeczenia i przyjętej szkolnej definicji.
 
 ### 14.3. Równoważniki w praktyce
 Równoważniki są naturalne w nagłówkach, planach, ogłoszeniach i dialogu: *Spotkanie o 16.00; Zakaz wstępu; Do zobaczenia jutro; Ciszej!* Nie trzeba ich zawsze przekształcać w pełne zdania. W ćwiczeniu przekształcania zachowaj sens i styl: *Zakaz fotografowania* → *Nie wolno fotografować*; *Po wejściu do sali zajmij miejsce* → *Kiedy wejdziesz do sali, zajmij miejsce*.
@@ -114,3 +114,12 @@ Równoważniki są naturalne w nagłówkach, planach, ogłoszeniach i dialogu: *
 5. Wskaż orzeczenie imienne w *Mój brat jest świetnym pływakiem* (2 pkt).
 
 **Klucz:** 1. Zdanie ma orzeczenie, równoważnik go nie ma; 2. dowolny przykład z określeniami; 3. jedno orzeczenie osobowe *chcę*, a *przeczytać* jest bezokolicznikiem; 4. np. *Po odrobieniu pracy domowej poszedłem na spacer*; 5. *jest świetnym pływakiem*.
+
+
+## AUDYT W1 — wynik
+
+- Kryterium zdania pojedynczego: ✔ doprecyzowano rolę orzeczenia osobowego i bezokolicznika.
+- Konstrukcje „aby/żeby”: ✔ poprawiono objaśnienie przez kontrast dwóch przykładów.
+- Zadania końcowe: ✔ sprawdzono zgodność kluczy z poleceniami.
+
+**Zakres kontroli:** kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.

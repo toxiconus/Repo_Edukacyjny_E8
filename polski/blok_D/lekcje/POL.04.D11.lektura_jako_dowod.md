@@ -5,7 +5,7 @@ blok: D
 numer: 11
 wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
+status: W2 — GPT-6, 2026-10-09; audyt kontrolny i doprecyzowanie zapisane; niezależna recenzja zewnętrzna niepotwierdzona
 wymaga: znajomość omawianych lektur; PL.D05
 ---
 
@@ -173,3 +173,11 @@ Jeżeli zadanie wymaga konkretnego przykładu z określonej lektury obowiązkowe
 - [x] Rozdzielono fakt fabularny, interpretację i zakres wniosku.
 - [x] Dodano tabelę porównywania kandydatów na przykład.
 - [ ] Pozostaje niezależna recenzja polonistyczna i kontrola wymagań aktualnego egzaminu.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Doprecyzowanie kontrolne:** Odwołanie do lektury musi być trafne rzeczowo i funkcjonalne: przykład wspiera argument, a nie tylko wymienia tytuł lub bohatera.
+
+- Kontrola zakresu: zadanie należy rozwiązywać zgodnie z konkretnym poleceniem; szablon nie zastępuje realizacji tematu.
+- Kryteria i punktacje w ćwiczeniach są treningowe, chyba że plik wyraźnie cytuje oficjalny dokument. Nie przedstawiać ich jako oficjalnej punktacji CKE.
+- Źródło do kontroli aktualnych wymagań: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory; informator język polski: https://bip.cke.gov.pl/attachments/download/9824.

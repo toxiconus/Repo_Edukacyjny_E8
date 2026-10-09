@@ -6,6 +6,7 @@ wymaga: "F01–F20 zależnie od problemu"
 poglebia: "dalsze grupy kursu"
 zrodla: "MASTER v17.0; MASTER v15.0"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna niezależna recenzja nadal otwarta
 ---
 # CHE.01F.21-TRANSFER — ZADANIA TRANSFEROWE I DIAGNOSTYKA
 
@@ -237,6 +238,60 @@ Transfer nie podaje metody. Zadanie wymusza przełączanie między obserwacją, 
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Transfer i diagnostyka mistrzostwa” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
 
+## UZUPEŁNIENIE KANONICZNE W6 — ZADANIA TRANSFEROWE Z KLUCZAMI
+
+### Zadanie 1. Atom i jon
+
+Pierwiastek X ma 17 protonów. Podaj symbol, liczbę elektronów w atomie obojętnym, okres, grupę oraz typowy jon i liczbę jego elektronów.
+
+**Klucz:** Cl; atom obojętny ma 17 elektronów; okres 3; grupa 17; typowy jon Cl⁻ ma 18 elektronów.
+
+### Zadanie 2. Wnioskowanie z liczby elektronów
+
+Jon X²⁺ ma 18 elektronów. Ustal pierwiastek.
+
+**Klucz:** atom obojętny miał 20 elektronów, więc Z = 20; jest to wapń, Ca.
+
+### Zadanie 3. Wzór związku jonowego
+
+Ustal wzór związku z jonów Al³⁺ i SO₄²⁻.
+
+**Klucz:** najmniejsza wspólna wielokrotność ładunków wynosi 6, więc potrzeba dwóch Al³⁺ i trzech SO₄²⁻: Al₂(SO₄)₃.
+
+### Zadanie 4. Polarność
+
+Uczeń twierdzi: „Woda jest niepolarna, bo jej wzór nie zawiera jonów”. Oceń wypowiedź.
+
+**Klucz:** to błędne rozumowanie. Cząsteczka może być polarna mimo braku jonów; w H₂O wiązania O—H są polarne, a geometria kątowa sprawia, że dipole się nie znoszą.
+
+### Zadanie 5. Bilans
+
+Zbilansuj Al + O₂ → Al₂O₃.
+
+**Klucz:** 4Al + 3O₂ → 2Al₂O₃.
+
+### Zadanie 6. Przewodnictwo
+
+Dlaczego NaCl przewodzi prąd w roztworze wodnym, ale nie przewodzi dobrze jako kryształ?
+
+**Klucz:** w krysztale jony są unieruchomione w sieci; w roztworze mogą przemieszczać się i przenosić ładunek.
+
+### Zadanie 7. Obserwacja i wniosek
+
+Po zmieszaniu dwóch roztworów pojawiło się zmętnienie. Zapisz obserwację, ostrożny wniosek i informację, co należy jeszcze ustalić.
+
+**Klucz:** obserwacja: roztwór zmętniał lub pojawiła się zawiesina; wniosek: mogła powstać trudno rozpuszczalna substancja; trzeba ustalić skład osadu odpowiednią próbą lub porównaniem z próbą kontrolną.
+
+### Zadanie 8. Indeks a współczynnik
+
+Wyjaśnij różnicę między 2H₂O a H₂O₂.
+
+**Klucz:** 2H₂O oznacza dwie cząsteczki wody; H₂O₂ to wzór innej substancji — nadtlenku wodoru.
+
+### Samoocena
+
+Dla każdego zadania oznacz: **umiem samodzielnie**, **umiem z podpowiedzią** albo **wracam do lekcji**. Zapisz kod lekcji, do której wracasz, oraz pierwszy krok, który był niepewny. Nie traktuj samego wyniku liczbowego jako dowodu poprawnego rozumowania.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -245,21 +300,21 @@ Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Transfe
 
 Pierwiastek X ma 17 protonów. Określ:
 
-- symbol;
-- liczbę elektronów w atomie;
-- okres;
-- grupę;
-- typowy jon;
-- liczbę elektronów w tym jonie.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): symbol;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): liczbę elektronów w atomie;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): okres;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): grupę;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): typowy jon;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): liczbę elektronów w tym jonie.
 
 #### Klucz
 
-- symbol: Cl;
-- atom ma 17 elektronów;
-- okres 3;
-- grupa 17;
-- typowy jon: Cl⁻;
-- jon ma 18 elektronów.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): symbol: Cl;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): atom ma 17 elektronów;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): okres 3;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): grupa 17;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): typowy jon: Cl⁻;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): jon ma 18 elektronów.
 
 ### Zadanie 2
 
@@ -309,15 +364,15 @@ W krysztale jony są unieruchomione. W roztworze mogą się przemieszczać i prz
 
 W doświadczeniu po zmieszaniu dwóch roztworów pojawiło się zmętnienie. Zapisz:
 
-- obserwację;
-- ostrożny wniosek;
-- informację, czego jeszcze trzeba dowieść.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): obserwację;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): ostrożny wniosek;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): informację, czego jeszcze trzeba dowieść.
 
 #### Klucz
 
-- obserwacja: roztwór zmętniał lub powstała zawiesina;
-- wniosek: prawdopodobnie powstała trudno rozpuszczalna substancja stała;
-- trzeba ustalić skład osadu odpowiednią reakcją lub porównaniem z próbą kontrolną.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): obserwacja: roztwór zmętniał lub powstała zawiesina;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wniosek: prawdopodobnie powstała trudno rozpuszczalna substancja stała;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): trzeba ustalić skład osadu odpowiednią reakcją lub porównaniem z próbą kontrolną.
 
 ### Zadanie 8
 
@@ -348,3 +403,8 @@ a
 10. Stopień utlenienia nie jest automatycznie rzeczywistym ładunkiem atomu.
 11. Stały kryształ jonowy i jego roztwór mają różne właściwości przewodzenia.
 12. Wzory jonów wieloatomowych wymagają nawiasów, gdy grupa występuje więcej niż raz.
+
+
+## W23 — zadania transferowe (2026-10-09, GPT-6)
+
+Skontrolowano logikę oddzielania obserwacji od wniosku, wymaganie bilansu i ocenę danych niewystarczających. Nie oznaczono wszystkich kluczy jako zweryfikowanych.

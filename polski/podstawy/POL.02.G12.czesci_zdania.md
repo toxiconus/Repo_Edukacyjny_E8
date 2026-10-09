@@ -5,7 +5,7 @@ tytul: Części zdania
 lead: Podmiot, orzeczenie, przydawka, dopełnienie, okolicznik — od pytań do wykresu zdania.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L008, G13
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: W1 — GPT-6, 2026-10-09; kontrola definicji, przykładów i kluczy
 utworzono: 2026-10-09
 wersja: 2.1
 ---
@@ -29,7 +29,7 @@ Części zdania opisują funkcje wyrazów i grup wyrazowych w wypowiedzeniu. W t
 Pytania są narzędziem, a nie mechanicznym dowodem. Najpierw rozpoznaj sens i zależności w zdaniu, potem zadaj pytanie od wyrazu nadrzędnego.
 
 ## 2. Podmiot — rodzaje i przypadki trudne
-**Podmiot gramatyczny** najczęściej występuje w mianowniku: *Kot śpi; Uczniowie przyszli*. **Podmiot logiczny** może wystąpić w innym przypadku, często w dopełniaczu: *Nie było **Jacka***; *Przybyło **gości***; *Zabrakło **czasu***. Nie wskazuj wtedy automatycznie „nie było” jako podmiotu — to orzeczenie, a rzeczownik w dopełniaczu jest podmiotem logicznym w tradycyjnej analizie szkolnej.
+**Podmiot gramatyczny** najczęściej występuje w mianowniku: *Kot śpi; Uczniowie przyszli*. W tradycyjnej analizie szkolnej w zdaniach typu *Nie było Jacka; Przybyło gości; Zabrakło czasu* rzeczownik w dopełniaczu bywa opisywany jako **podmiot logiczny**. Nazewnictwo może zależeć od przyjętego opisu składni, dlatego na egzaminie stosuj terminologię zgodną z poleceniem i podręcznikiem. Nie utożsamiaj automatycznie rzeczownika w dopełniaczu z dopełnieniem.
 
 **Podmiot szeregowy** składa się z kilku składników: *Ania i Kuba przygotowali plakat*. **Podmiot domyślny** wynika z formy czasownika lub kontekstu: *Wróciłam późno* — podmiot „ja” jest domyślny. **Zdanie bezpodmiotowe** nie wskazuje wykonawcy, a podmiotu nie da się sensownie odtworzyć: *Świta; Zrobiło się ciemno; Mówi się o konkursie; Należy uważać*. Nie każde zdanie bez wyrażonego rzeczownikiem podmiotu jest bezpodmiotowe — *Idę do domu* ma podmiot domyślny „ja”.
 
@@ -112,3 +112,12 @@ Schemat: zdanie w środku; od orzeczenia prowadzi strzałka do podmiotu, dopełn
 
 ## 14. Podsumowanie
 Najpierw znajdź orzeczenie, następnie podmiot, potem składniki zależne. Przy każdym składniku uzasadnij pytanie i relację znaczeniową. W przypadkach spornych zapisz przyjętą analizę i nie utożsamiaj części mowy z częścią zdania.
+
+
+## AUDYT W1 — wynik
+
+- Część mowy a część zdania: ✔ rozdzielono poziomy analizy w definicji i podsumowaniu.
+- Podmiot logiczny w dopełniaczu: ✔ doprecyzowano, że chodzi o tradycyjną analizę szkolną.
+- Klucz zadania „Nie było gości”: ✔ pozostawiono z kwalifikatorem „w tradycyjnej analizie szkolnej”.
+
+**Zakres kontroli:** kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.

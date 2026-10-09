@@ -6,6 +6,7 @@ wymaga: "zależnie od diagnozy F01–F19"
 poglebia: "F21 i właściciele pojęć"
 zrodla: "MASTER v17.0; MASTER v15.0"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna niezależna recenzja nadal otwarta
 ---
 # CHE.01F.20-KLINIKA-BLEDOW — KLINIKA BŁĘDÓW FUNDAMENTÓW
 
@@ -234,13 +235,35 @@ Najczęstszy błąd nie powinien być tylko poprawiony. Trzeba zapisać: **objaw
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Klinika błędów fundamentów” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
 
+## UZUPEŁNIENIE KANONICZNE W6 — KATALOG BŁĘDÓW I NAPRAW
+
+| Błędne twierdzenie/zapis | Poprawka | Dlaczego |
+|---|---|---|
+| H₂ + O₂ → H₂O₂ jako sposób bilansowania wody | 2H₂ + O₂ → 2H₂O | Indeksu nie wolno zmieniać; H₂O₂ to inna substancja — nadtlenek wodoru. |
+| Grupa to szereg poziomy | Grupa jest kolumną pionową; okres — szeregiem poziomym | To dwa różne kierunki w układzie okresowym. |
+| Z to liczba neutronów | Z to liczba protonów; A to suma protonów i neutronów | W atomie obojętnym liczba elektronów jest równa Z. |
+| Jon powstaje przez zmianę liczby protonów | W typowych przemianach chemicznych jon powstaje przez zmianę liczby elektronów | Zmiana protonów oznaczałaby zmianę pierwiastka. |
+| CaOH₂ | Ca(OH)₂ | Nawias obejmuje dwie grupy OH. |
+| CO₂ jest jonem CO₂²⁻ | CO₂ to obojętna cząsteczka; jon węglanowy to CO₃²⁻ | Różne wzory oznaczają różne obiekty chemiczne. |
+| Stopień utlenienia jest zawsze rzeczywistym ładunkiem atomu | To formalna wielkość rachunkowa; nie dowodzi istnienia wolnych jonów w cząsteczce kowalencyjnej | Nie utożsamiaj modelu z rzeczywistym rozkładem ładunku. |
+| Więcej atomów zawsze oznacza większą lub cięższą cząsteczkę | Rozmiar i masa zależą od rodzaju atomów, składu i budowy | Liczbę atomów należy rozpatrywać wraz z ich rodzajem i sposobem porównania. |
+| Każda reakcja daje osad, gaz albo zmianę barwy | Niektóre reakcje nie mają łatwo widocznego objawu | Brak widocznej zmiany nie dowodzi braku reakcji; potrzebne są odpowiednie metody. |
+
+### Procedura naprawiania błędu
+
+1. Zacytuj dokładnie błędny krok.
+2. Ustal, czy problem dotyczy pojęcia, wzoru, modelu, obserwacji czy rachunku.
+3. Popraw tylko pierwszy niezgodny krok.
+4. Sprawdź poprawkę na przykładzie i kontrprzykładzie.
+5. Wróć do właściwej lekcji F01–F19 i zanotuj, jak uniknąć powtórzenia błędu.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
 > Uwaga przy scalaniu: Punkt „CO₂ jako jon CO₂²⁻” jest niejasny — prawdopodobnie chodziło o mylenie CO₂ (cząsteczka) z jonem węglanowym CO₃²⁻; tak go zapisać w lekcji.
 
-### Poprawki
+### Poprawki — status wdrożenia
 
 #### Błąd: zmiana indeksu przy bilansowaniu
 
@@ -258,11 +281,11 @@ Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Klinika
 
 **Poprawnie:**
 
-- grupa — kolumna pionowa;
-- okres — szereg poziomy.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): grupa — kolumna pionowa;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): okres — szereg poziomy.
 
 #### Błąd: utożsamienie Z z A - Z — liczba protonów;
-- A — liczba protonów i neutronów.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): A — liczba protonów i neutronów.
 
 #### Błąd: twierdzenie, że jon powstaje po zmianie liczby protonów
 
@@ -272,7 +295,8 @@ W typowych reakcjach chemicznych zmienia się liczba elektronów, a nie protonó
 
 Poprawnie:
 Ca(OH)₂
- ### Błąd: traktowanie CO₂ jako jonuCO₂ jest obojętną cząsteczką kowalencyjną, a nie jonem CO₂²⁻.
+ ### Błąd: traktowanie CO₂ jako jonu
+CO₂ jest obojętną cząsteczką kowalencyjną, a nie jonem CO₂²⁻; jon węglanowy ma wzór CO₃²⁻.
 
 #### Błąd: utożsamienie stopnia utlenienia z ładunkiem
 
@@ -285,3 +309,8 @@ Rozmiar i masa cząsteczki zależą od rodzaju atomów, budowy i sposobu porówn
 #### Błąd: „każda reakcja daje osad, gaz albo zmianę barwy”
 
 Niektóre reakcje nie mają łatwo widocznego objawu.
+
+
+## W23 — klinika błędów (2026-10-09, GPT-6)
+
+Sprawdzono przykłady rozróżniające indeks i współczynnik, cząsteczkę CO₂ i jon CO₃²⁻ oraz liczbę masową A. Zachowano korektę: 2H₂ + O₂ → 2H₂O, nie H₂O₂; audyt punktowy.

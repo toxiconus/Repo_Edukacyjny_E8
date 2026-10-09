@@ -7,7 +7,7 @@
 - Dział: Ekologia
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L040 · Następna: L042
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: audyt W1 punktowy 2026-10-09; pełna walidacja wszystkich kluczy nadal wymagana
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `producent → konsumenci → destruenci`
 `[/BIO: DIAGRAM]`
+@opis Łańcuchy i sieci: strzałka pokazuje przepływ materii i energii od organizmu zjadanego do zjadającego. Schemat 1 w lekcji L041 pokazuje relację opisaną w jego etykietach; strzałki należy czytać zgodnie z kierunkiem zapisu. Jest modelem dydaktycznym, nie pełnym obrazem wszystkich wyjątków.
 
 **Co uczeń ma zauważyć:** strzałka pokazuje przepływ pokarmu/energii.
 
@@ -489,3 +490,22 @@ Oznacza, że **B pobiera energię z A jako pokarmu**.
 
 
 <!-- ==================== BEGIN L042 ==================== -->
+
+---
+
+## 25. AUDYT W16 — ewolucja, ekologia i synteza (2026-10-09)
+
+**Zakres:** punktowa kontrola pojęć wysokiego ryzyka i czytelności schematów; nie jest to niezależna recenzja całego materiału.
+
+### Co sprawdzać przy rozwiązywaniu zadań
+
+- **Wniosek musi wynikać z danych.** Nazwij obserwację, wyjaśnij mechanizm i dopiero wtedy sformułuj wniosek. Samo podobieństwo nie wystarcza do rozstrzygnięcia pokrewieństwa, a brak jednego rodzaju skamieniałości nie obala całej teorii ewolucji.
+- **Poziom osobnika a poziom populacji.** Dobór różnicuje sukces rozrodczy osobników, ale ewolucję opisuje się jako zmianę populacji na przestrzeni pokoleń. Mutacja nie pojawia się dlatego, że jest potrzebna; dobór nie działa świadomie.
+- **Energia a materia.** Energia przepływa przez ekosystem i ulega rozproszeniu jako ciepło; materia jest ponownie wykorzystywana w obiegach. Strzałka w łańcuchu pokarmowym prowadzi od pokarmu do konsumenta.
+- **Relacje ekologiczne.** Najpierw ustal skutek dla organizmu A i B, a potem nazwij relację. Nie wnioskuj wyłącznie z nazwy gatunku lub pojedynczej ilustracji.
+- **Człowiek i środowisko.** Oddziel źródło wpływu, mechanizm, skutek i możliwe ograniczenie. Naturalny efekt cieplarniany jest konieczny dla obecnego klimatu Ziemi; problemem jest jego dodatkowe nasilenie przez działalność człowieka.
+- **Warstwa olimpijska.** Model Hardy’ego–Weinberga to model z założeniami (m.in. losowe kojarzenie, brak doboru, mutacji i migracji oraz bardzo duża populacja); nie traktuj go jako automatycznego opisu każdej populacji.
+
+### Ograniczenie audytu
+
+Wprowadzono doprecyzowania pojęciowe i opisy wizualne, lecz nie sprawdzono niezależnie każdego zadania, klucza odpowiedzi ani zgodności zakresu z aktualnym regulaminem konkursu. Liczby, przykłady lokalne i wymagania konkretnego etapu należy walidować osobno.

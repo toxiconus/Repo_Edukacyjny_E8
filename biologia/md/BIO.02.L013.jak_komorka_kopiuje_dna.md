@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L012 · Następna: L014
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: wersja robocza po kontroli wizualnej i redakcyjnej — wymaga niezależnej recenzji biologicznej
 - Status HTML: BIOLOGIA_L013_REPLIKACJA.html
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `nić rodzicielska → rozdzielenie → nici potomne`
 `[/BIO: DIAGRAM]`
+@opis Schemat strzałkowy replikacji: dwuniciowe DNA rodzicielskie → rozdzielenie nici → do każdej starej nici dobudowana nowa nić komplementarna → dwie cząsteczki potomne, każda z jedną starą i jedną nową nicią. Wniosek: replikacja jest semikonserwatywna, a kopie są identyczne dzięki parowaniu A–T i G–C.
 
 **Co uczeń ma zauważyć:** komplementarność umożliwia replikację.
 
@@ -473,3 +474,10 @@ Wykład v3.8 + audyt v4.2 **zostaje**. Doklejono Meselsona–Stahla, widełki, O
 
 
 <!-- ==================== BEGIN L014 ==================== -->
+
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Przeprowadzono kontrolę redakcyjną i kontrolę oznaczeń wizualizacji; dopisano `@opis` bezpośrednio pod blokami `[BIO: DIAGRAM]` tam, gdzie go brakowało.
+- Zachowano dotychczasową treść i kody lekcji; nie usuwano wcześniejszych wersji ani banków zadań.
+- Zwrócono uwagę na rozróżnienie modelu od rzeczywistości oraz na to, że schematy przepływu pokazują uproszczone relacje.
+- **Ograniczenie:** nie jest to pełna niezależna walidacja wszystkich danych i kluczy zadań; przed publikacją wymagane jest sprawdzenie merytoryczne przez nauczyciela biologii.

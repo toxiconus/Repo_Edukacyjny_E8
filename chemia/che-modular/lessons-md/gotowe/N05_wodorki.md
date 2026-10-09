@@ -3,6 +3,7 @@ kod: N05
 uid: CHE.02.N05.wodorki
 tytul: Wodorki
 opis: Wodorki jonowe, kowalencyjne i metaliczne · rola wodoru (H⁻ / H⁺) · amoniak, chlorowodór, siarkowodór · trendy
+stan: W10 — GPT-6, 2026-10-09; korekty bezpieczeństwa i doprecyzowania danych, wymaga niezależnej recenzji chemicznej
 kicker: N05 · MASTER LAB v1.0
 lead: Związki wodoru z innymi pierwiastkami: wzory z wartościowości, nazwy, trzy typy wodorków i rola wodoru (−I albo +I), właściwości i temperatury wrzenia, zachowanie w wodzie (kwasy beztlenowe, amoniak), otrzymywanie, reakcje wodorków jonowych z wodą, wykrywanie gazów, BHP; dla ambitnych: trendy kwasowości, elektroliza LiH, synteza amoniaku, magazynowanie wodoru.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
@@ -11,13 +12,13 @@ stopka: **CHEMIA N05 v1.0 MASTER LAB** · Wodorki · 2026
 ::: minimum | Muszę umieć na E8 — 10 faktów
 1. **Wodorek** to związek wodoru z jednym innym pierwiastkiem: NaH, CaH₂, CH₄, NH₃, H₂O, H₂S, HCl.
 2. **Wzór** układamy z wartościowości pierwiastka względem wodoru: grupy 1–2 → I–II, grupa 14 → IV, 15 → III, 16 → II, 17 → I (H zawsze I).
-3. W wodorkach grup **16–17** wodór piszemy **na początku** (H₂S, HCl), w pozostałych — **na końcu** (NaH, CH₄, NH₃).
+3. Dla wielu prostych wodorków grup **16–17** wodór zapisuje się **na początku** (H₂S, HCl), a dla wielu wodorków metali i grup 13–15 — **na końcu** (NaH, CH₄, NH₃). To reguła szkolna dla typowych przykładów, nie uniwersalny algorytm dla wszystkich związków wodoru.
 4. **Nazwy:** wodorek + metal (wodorek sodu); dla niemetali nazwy zwyczajowe: metan, amoniak, woda, siarkowodór, chlorowodór.
 5. **Wodorki metali aktywnych** (NaH, CaH₂) są **jonowe** — wodór jest w nich anionem **H⁻**, stopień utlenienia **−I**.
 6. **Wodorki niemetali** (CH₄, NH₃, H₂O, H₂S, HCl) są **kowalencyjne** — wodór ma stopień utlenienia **+I**.
 7. Wodorek jonowy + woda → **wodorotlenek + wodór**: CaH₂ + 2 H₂O → Ca(OH)₂ + 2 H₂↑.
 8. **Chlorowodór** i **siarkowodór** rozpuszczone w wodzie dają **kwasy beztlenowe** (kwas solny, kwas siarkowodorowy); **amoniak** daje roztwór **zasadowy**; **metan** nie rozpuszcza się i nie reaguje z wodą.
-9. **Wykrywanie:** NH₃ — wilgotny papierek uniwersalny niebieszczeje; HCl — z amoniakiem biały dym NH₄Cl; H₂S — zapach zgniłych jaj, czernieje bibuła z octanem ołowiu.
+9. **Wykrywanie:** NH₃ — odpowiedni wilgotny papierek wskaźnikowy; HCl — w kontrolowanym pokazie biały dym NH₄Cl po kontakcie z amoniakiem; H₂S — specjalistyczny papierek z octanem ołowiu czernieje. **Nie identyfikuj gazów przez wąchanie.**
 10. **BHP:** H₂S, NH₃ i HCl są trujące lub drażniące — tylko pod dygestorium; NaH i CaH₂ z wodą dają palny wodór.
 :::
 
@@ -61,7 +62,7 @@ stopka: **CHEMIA N05 v1.0 MASTER LAB** · Wodorki · 2026
 :::
 
 ::: karta exam | Pytanie przewodnie
-NaH, CH₄, NH₃ i HCl to cztery wodorki pierwiastków leżących w tym samym okresie lub obok siebie. Do czterech zlewek z wodą i fenoloftaleiną wprowadzamy po jednym z nich. W pierwszej woda burzy się i malinowieje, w drugiej nic się nie dzieje, w trzeciej roztwór malinowieje bez wydzielania gazu, w czwartej pozostaje bezbarwny, a oranż metylowy zmieniłby barwę na czerwoną. **Dlaczego cztery „związki wodoru” zachowują się aż tak różnie?**
+Porównajmy modelowo zachowanie NaH, CH₄, NH₃ i HCl wobec wody i wskaźników. Nie jest to instrukcja wykonania doświadczenia: NaH gwałtownie reaguje z wodą, a NH₃ i HCl są niebezpiecznymi gazami; realne doświadczenia wymagają oceny ryzyka i odpowiednich warunków laboratoryjnych. W modelu: wodorek jonowy wydziela H₂ i tworzy roztwór zasadowy; metan nie reaguje z wodą; amoniak tworzy roztwór zasadowy bez wydzielania H₂; chlorowodór tworzy roztwór kwasowy. **Dlaczego cztery „związki wodoru” zachowują się tak różnie?**
 
 > Odpowiedź budujesz w [§4](#budowa) (rola wodoru), [§6](#woda) (wodorki w wodzie) i [§11](#trendy) (trendy); sprawdzasz ją w doświadczeniach ([§14](#doswiadczenia)).
 :::
@@ -204,13 +205,13 @@ Bor (2,04) i krzem (1,90) są **mniej** elektroujemne od wodoru — formalnie wo
 ## 5 | Właściwości fizyczne i temperatury wrzenia [[basic:E8]] {#wlasciwosci}
 
 ::: karta basic | Najważniejsze wodorki niemetali
-| Wodorek | Stan (20 °C) | Barwa i zapach | Gęstość względem powietrza | Rozpuszczalność w wodzie | T. wrzenia |
+| Wodorek | Stan (20 °C) | Barwa (zapach nie służy do identyfikacji) | Gęstość względem powietrza | Rozpuszczalność w wodzie (wartości orientacyjne, wymagają warunków) | T. wrzenia przy ok. 1 atm |
 |---|---|---|---|---|---|
 | CH₄ | gaz | bezbarwny, bez zapachu | lżejszy (M = 16 g/mol) | prawie nierozpuszczalny | −161,5 °C |
-| NH₃ | gaz | bezbarwny, ostry, duszący | lżejszy (17 g/mol) | bardzo dobra (ok. 700 obj. w 1 obj. wody) | −33,3 °C |
+| NH₃ | gaz | bezbarwny, ostry, duszący | lżejszy (17 g/mol) | bardzo dobra (ok. 700 obj. w 1 obj. wody) [do weryfikacji: temperatura i warunki] | −33,3 °C |
 | H₂O | ciecz | bezbarwna, bez zapachu | — | — | 100 °C |
-| H₂S | gaz | bezbarwny, zgniłe jaja | cięższy (34 g/mol) | umiarkowana (ok. 2,6 obj.) | −60,3 °C |
-| HCl | gaz | bezbarwny, ostry, „dymi” w wilgotnym powietrzu | cięższy (36,5 g/mol) | bardzo dobra (ok. 450 obj.) | −85,1 °C |
+| H₂S | gaz | bezbarwny, zgniłe jaja | cięższy (34 g/mol) | umiarkowana (ok. 2,6 obj.) [do weryfikacji: temperatura i warunki] | −60,3 °C |
+| HCl | gaz | bezbarwny, ostry, „dymi” w wilgotnym powietrzu | cięższy (36,5 g/mol) | bardzo dobra (ok. 450 obj.) [do weryfikacji: temperatura i warunki] | −85,1 °C |
 
 > Powietrze ma średnią masę molową ok. 29 g/mol. Gaz o M < 29 g/mol jest lżejszy od powietrza (zbieramy go do naczynia odwróconego dnem do góry), o M > 29 g/mol — cięższy (zbieramy do naczynia ustawionego normalnie).
 :::
@@ -374,8 +375,8 @@ Wodór jest paliwem przyszłości, ale trudno go przechowywać (gaz o bardzo ma�
 ## 10 | Bezpieczeństwo (BHP) [[basic:E8]] {#bhp}
 
 ::: karta warning | Zasady pracy z wodorkami
-- **Siarkowodór** — silnie trujący (porównywalnie z cyjanowodorem). Przy wyższych stężeniach **poraża węch** — przestajemy czuć zapach, choć gazu przybywa. Tylko pod dygestorium, małe ilości.
-- **Amoniak** — drażni oczy i drogi oddechowe; stężony roztwór żrący. Nie wąchać znad naczynia — „nagarniać” zapach dłonią.
+- **Siarkowodór** — silnie toksyczny; przy wyższych stężeniach może osłabiać/wyłączać węch, więc zapach nie jest ostrzeżeniem. Nie wytwarzać ani nie wykrywać przez wąchanie; ewentualny pokaz wyłącznie przez uprawnioną osobę w sprawnym dygestorium, preferować symulację.
+- **Amoniak** — drażni oczy i drogi oddechowe; stężony roztwór żrący. Nie wąchać bezpośrednio ani nie stosować celowego „nagarniania” zapachu jako próby identyfikacyjnej.
 - **Chlorowodór / stężony kwas solny** — drażni drogi oddechowe, „dymi”; okulary, rękawice, dygestorium.
 - **Fluorowodór** — wyjątkowo niebezpieczny: przenika przez skórę i wiąże wapń w tkankach; w szkole się go nie używa.
 - **NaH, CaH₂** — reagują z wodą (także z wilgocią powietrza), wydzielając **palny wodór**; przechowywać w szczelnych naczyniach, z dala od ognia. NaH — tylko pokaz nauczyciela.
@@ -458,8 +459,7 @@ W długiej rurze z watą nasączoną stężonym NH₃(aq) z jednej strony i stę
 ::: dosw | Doświadczenie 1 — Wodorek wapnia i woda
 Problem: Co powstaje w reakcji wodorku wapnia z wodą?
 Hipoteza: Wydzieli się wodór, a w roztworze powstanie wodorotlenek wapnia (odczyn zasadowy).
-Sprzęt: Zlewka z wodą, fenoloftaleina, szczypta CaH₂, łuczywo, probówka.
-Przebieg: Do wody z fenoloftaleiną wsypujemy odrobinę CaH₂; gaz zbieramy do probówki odwróconej dnem do góry i zbliżamy do płomienia.
+Uwaga: to nie jest doświadczenie do samodzielnego wykonania przez ucznia. CaH₂ reaguje z wodą, wydzielając palny H₂ i ciepło. Realny pokaz może prowadzić wyłącznie nauczyciel/wykwalifikowana osoba po ocenie ryzyka, z osłoną i właściwą wentylacją; bezpieczniejszą alternatywą jest symulacja. Nie zbierać i nie zapalać gazu bez formalnej procedury BHP.
 Obserwacja: Proszek „musuje”, wydziela się bezbarwny gaz, który zapalony daje „pyk”; roztwór malinowieje i lekko się ogrzewa.
 Wniosek: Wodorek jonowy reaguje z wodą — powstaje wodór i wodorotlenek (zasada).
 Równanie:: CaH₂ + 2 H₂O → Ca(OH)₂ + 2 H₂↑
@@ -473,7 +473,7 @@ Problem: Jak otrzymać amoniak i jak go rozpoznać?
 Hipoteza: Ogrzewanie soli amonowej z wodorotlenkiem wapnia uwolni amoniak, który zmieni barwę wilgotnego papierka na niebieską.
 Sprzęt: Probówka, statyw, palnik, NH₄Cl, Ca(OH)₂, wilgotny papierek uniwersalny, bagietka zwilżona stęż. HCl.
 Przebieg: Mieszaninę NH₄Cl i Ca(OH)₂ ogrzewamy w probówce; u jej wylotu trzymamy wilgotny papierek, potem bagietkę z HCl.
-Obserwacja: Ostry zapach; papierek niebieszczeje; przy bagietce z HCl pojawia się biały dym.
+Obserwacja: papierek wskaźnikowy zmienia barwę; przy kontrolowanym kontakcie z HCl powstaje biały dym NH₄Cl. Zapach nie jest kryterium identyfikacji.
 Wniosek: Powstał amoniak — gaz o odczynie zasadowym w obecności wody; z HCl tworzy chlorek amonu.
 Równanie:: 2 NH₄Cl + Ca(OH)₂ → CaCl₂ + 2 NH₃↑ + 2 H₂O
 BHP: Nie wąchać bezpośrednio; dygestorium; probówkę kierować wylotem od siebie i innych.
@@ -484,8 +484,7 @@ BHP: Nie wąchać bezpośrednio; dygestorium; probówkę kierować wylotem od si
 ::: dosw | Doświadczenie 3 — Fontanna amoniakowa
 Problem: Jak dobrze amoniak rozpuszcza się w wodzie i jaki odczyn ma roztwór?
 Hipoteza: Amoniak rozpuści się bardzo szybko, a roztwór będzie zasadowy.
-Sprzęt: Kolba wypełniona suchym NH₃, korek z rurką i wkraplaczem z wodą, zlewka z wodą i fenoloftaleiną.
-Przebieg: Wstrzykujemy do kolby kilka kropel wody; dolny koniec rurki zanurzony jest w wodzie z fenoloftaleiną.
+Pokaz wyłącznie dla wykwalifikowanego prowadzącego w sprawnym dygestorium i po ocenie ryzyka; dla samodzielnej nauki użyj animacji. NH₃ drażni drogi oddechowe, a kolba z gazem wymaga zabezpieczenia przed rozpryskiem i wciągnięciem cieczy.
 Obserwacja: Woda gwałtownie wtryskuje do kolby jak fontanna i barwi się na malinowo.
 Wniosek: NH₃ rozpuszcza się tak dobrze, że w kolbie powstaje podciśnienie; roztwór jest zasadowy.
 Równanie:: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻
@@ -499,7 +498,7 @@ BHP: Kolba okrągłodenna bez pęknięć (podciśnienie); pokaz nauczyciela.
 ::: dosw | Doświadczenie 4 — Otrzymywanie chlorowodoru i kwasu solnego (pokaz)
 Problem: Jak z soli kamiennej otrzymać kwas solny?
 Hipoteza: Stężony H₂SO₄ wyprze z NaCl lotny chlorowodór, który rozpuszczony w wodzie da kwas.
-Sprzęt: Kolba z rurką odprowadzającą, NaCl, stęż. H₂SO₄, zlewka z wodą i oranżem metylowym (lejek nad powierzchnią).
+To demonstracja nauczycielska, nie ćwiczenie uczniowskie: stężony H₂SO₄ jest silnie żrący, a HCl drażni drogi oddechowe. Wymagane są dygestorium, osłona, właściwe środki ochrony i zatwierdzona procedura; bez tego użyj symulacji.
 Przebieg: Na NaCl wlewamy stęż. H₂SO₄ i łagodnie ogrzewamy; gaz wprowadzamy nad powierzchnię wody przez odwrócony lejek.
 Obserwacja: Wydziela się bezbarwny gaz „dymiący” w wilgotnym powietrzu; oranż w wodzie zmienia barwę na czerwoną.
 Wniosek: Powstał chlorowodór; jego roztwór wodny to kwas chlorowodorowy (solny).
@@ -514,7 +513,7 @@ Problem: Jak otrzymać i wykryć siarkowodór?
 Hipoteza: Z siarczku żelaza(II) i kwasu solnego powstanie H₂S, który zaczerni bibułę z octanem ołowiu(II).
 Sprzęt: Aparat Kippa lub probówka z rurką, FeS, kwas solny, bibuła nasączona (CH₃COO)₂Pb, roztwór CuSO₄.
 Przebieg: Na grudki FeS działamy kwasem solnym; nad wylotem trzymamy bibułę, następnie gaz przepuszczamy przez roztwór CuSO₄.
-Obserwacja: Zapach zgniłych jaj; bibuła czernieje; w roztworze CuSO₄ wytrąca się czarny osad.
+Obserwacja: odpowiedni papierek z octanem ołowiu czernieje; w kontrolowanym układzie z jonami Cu²⁺ może powstać czarny osad CuS. Nie wykrywa się H₂S przez wąchanie; pokaz wyłącznie w warunkach profesjonalnych, najlepiej zastąpić symulacją.
 Wniosek: Powstał siarkowodór; z jonami Pb²⁺ i Cu²⁺ tworzy czarne siarczki (PbS, CuS).
 Równanie:: FeS + 2 HCl → FeCl₂ + H₂S↑
 BHP: H₂S bardzo trujący — tylko pokaz pod dygestorium; sole ołowiu trujące.
@@ -880,3 +879,13 @@ Aparat Kippa :: urządzenie do otrzymywania gazów (H₂, H₂S, CO₂) z ciała
 | [§5](#wlasciwosci) | `n05-trendy-v01` | temperatury wrzenia gr. 14–17, wiązania wodorowe |
 | [§6](#woda) | `ph-indicators-v03` | wskaźniki i skala pH |
 | [§8](#reakcje) | `n05-doswiadczenia-v01` | pracownia: 12 zlewek z wodorkami |
+
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+- **Bezpieczeństwo H₂S:** usunięto wąchanie jako metodę identyfikacji; pozostawiono opis zapachu wyłącznie jako właściwość, z ostrzeżeniem o osłabieniu węchu i toksyczności. Wykrywanie oparto na odpowiednim papierku/reakcji modelowej.
+- **Bezpieczeństwo NH₃ i HCl:** usunięto celowe wąchanie i „nagarnianie” zapachu jako procedurę; podkreślono rolę wskaźników i kontrolowanych pokazów.
+- **Niebezpieczne pokazy:** dopisano wyraźne ograniczenie doświadczeń z CaH₂, NH₃, HCl i H₂S do wykwalifikowanego prowadzącego, z oceną ryzyka i dygestorium; wskazano symulację jako alternatywę.
+- **Zakres reguły wzorów:** regułę kolejności zapisu wodoru ograniczono do typowych przykładów, bez przedstawiania jej jako uniwersalnej zasady dla wszystkich wodorków.
+- **Dane fizyczne:** liczby rozpuszczalności zależne od warunków oznaczono `[do weryfikacji]`; temperatury wrzenia opisano jako wartości przy ciśnieniu około 1 atm.
+- **Ograniczenie:** nie przeprowadzono pełnego audytu każdego z 882 wierszy ani niezależnej weryfikacji wszystkich danych liczbowych. Wymagana recenzja chemiczna i BHP przed użyciem jako instrukcji laboratoryjnej.

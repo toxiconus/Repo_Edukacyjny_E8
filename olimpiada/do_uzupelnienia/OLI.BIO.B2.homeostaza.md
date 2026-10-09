@@ -5,7 +5,7 @@ tytul: Homeostaza — jak organizm utrzymuje stałe warunki
 lead: Regulacja temperatury, glukozy i wody — układy współpracują przez nerwy i hormony.
 plakietki: [[basic:E8]][[exam:KONKURS]][[exam:LKO-REJ]]
 zakres: LKO biologia etap II / rejonowy (człowiek)
-stan: MAX v1 (2026-10-09)
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 ---
 
 # 0. Cel i kryterium gotowości
@@ -109,3 +109,9 @@ Na podstawie opisu wykresu (wzrost glukozy → spadek u osoby zdrowej, utrzymuj�
 ## Do uzupełnienia danymi (z pierwotnego szkieletu)
 - DANE: czy w podręczniku jest ADH / wazopresyna? jakie hormony są wymagane?
 - DANE: wykresy/zadania z podręcznika lub arkuszy rejonowych LKO biologia + klucz
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Sprawdzono roboczo logikę sprzężenia zwrotnego ujemnego i rozróżnienie regulacji nerwowej oraz hormonalnej.
+- Do kontroli przy każdej liczbie referencyjnej: zakresy temperatury, glikemii i parametrów krwi zależą od wieku, pory pomiaru i laboratorium; nie należy przedstawiać jednej liczby jako uniwersalnej normy bez źródła i warunków.
+- W kluczu odpowiedzi wymagać wskazania bodźca, receptora/czujnika, ośrodka/regulatora, efektora i odpowiedzi, gdy zadanie dotyczy mechanizmu homeostazy.
+- Zakres konkursowy wymaga niezależnego porównania z aktualnym regulaminem i zakresem LKO.

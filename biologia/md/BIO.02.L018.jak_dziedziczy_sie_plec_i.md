@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L017 · Następna: L019
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: jest wykład MD; audyt przy edycji; audyt punktowy W15 — 2026-10-09
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `XX/XY → allele na X → gamety → potomstwo`
 `[/BIO: DIAGRAM]`
+@opis Model XX/XY i cechy sprzężone z X jest modelem szkolnym. Prawdopodobieństwa w krzyżówkach dotyczą założeń tego modelu, a biologiczny rozwój płci jest bardziej złożony.
 
 **Co uczeń ma zauważyć:** nie każdy gen na X jest „chorobą”.
 
@@ -59,7 +60,7 @@ Jak dziedziczy się płeć i cechy sprzężone z chromosomem X?
 
 Po lekcji uczeń:
 
-- zapisuje XX (kobieta) i XY (mężczyzna) oraz wyjaśnia, że **plemnik** decyduje o płci,
+- zapisuje typowy szkolny model XX/XY: komórka jajowa wnosi X, a plemnik X albo Y; rozumie, że nie opisuje to wszystkich wariantów rozwoju płci,
 - opisuje dziedziczenie cechy **X-linked** (gen na X),
 - stosuje regułę: **ojciec nie przekazuje X synowi**,
 - (ambitny) uzasadnia, dlaczego recesywne cechy X-linked częściej ujawniają się u mężczyzn (hemizygota),
@@ -399,3 +400,32 @@ Dopiero na tej podstawie ustala się możliwy fenotyp.
 
 
 <!-- ==================== BEGIN L019 ==================== -->
+
+
+## 23. Doprecyzowanie — model XX/XY (W15)
+
+W typowym szkolnym modelu XX/XY komórka jajowa wnosi chromosom X, a plemnik wnosi X albo Y; połączenie XX lub XY jest najczęstszym wynikiem tego modelu. Nie jest to pełny opis wszystkich biologicznych wariantów rozwoju płci.
+
+W krzyżówce dla recesywnej cechy sprzężonej z X prawdopodobieństwo 1/2 może dotyczyć **synów** matki-nosicielki. Wynik 1/4 wśród wszystkich dzieci wymaga dodatkowego założenia, że prawdopodobieństwo urodzenia syna i córki jest jednakowe oraz że ojciec nie ma danej cechy w przyjętym modelu.
+
+## AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)
+
+**Zakres:** kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.
+
+### Uściślenia do utrzymania w treści
+- W treści podstawowej zastąpić bezwarunkowe „plemnik decyduje o płci” precyzyjnym: „w typowym szkolnym modelu XX/XY komórka jajowa wnosi X, a plemnik X albo Y, co zwykle prowadzi odpowiednio do XX albo XY”.
+- Przy chorobie recesywnej sprzężonej z X wynik 1/2 dotyczy synów matki-nosicielki; 1/4 wśród wszystkich dzieci wymaga dodatkowego założenia jednakowego prawdopodobieństwa płci i zdrowego ojca w danym modelu.
+- „Nosicielka” jest właściwym uproszczeniem dla wielu recesywnych alleli, ale nie każda osoba heterozygotyczna jest bezobjawowa; uwzględnić zmienność i inaktywację X jako rozszerzenie.
+
+### Status
+- Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
+- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+
+## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana zadań o dziedziczeniu sprzężonym z X i modelu XX/XY.
+
+- W zadaniach szkolnych model XX/XY jest modelem uproszczonym; przedstawiaj go jako typowy model chromosomalnego ustalania płci u człowieka, nie jako opis wszystkich wariantów rozwoju płci.
+- Dla recesywnej cechy sprzężonej z X: syn otrzymuje chromosom X od matki, a Y od ojca; ojciec nie przekazuje synowi swojego allelu położonego na X. Córka otrzymuje X od każdego z rodziców.
+- Jeżeli matka jest heterozygotyczną nosicielką, a ojciec nie ma danego wariantu, w uproszczonym modelu każde dziecko ma 1/2 szansy odziedziczenia wariantu od matki; ryzyko fenotypu zależy od płci i sposobu dziedziczenia.
+- **Status:** dodano jawne warunki modelu; wszystkie odpowiedzi wymagają jeszcze pełnego sprawdzenia.

@@ -7,7 +7,7 @@
 - Dział: Komórka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L001 · Następna: L002
-- Status treści: szkic / częściowa — treść do uzupełnienia
+- Status treści: wersja robocza po kontroli wizualnej i redakcyjnej — wymaga niezależnej recenzji biologicznej
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -1470,6 +1470,7 @@ Format 3+2+2+1: 3 zadania podstawowe, 2 treningowe, 2 ambitne, 1 zaawansowane.
     
 
 [schemat SVG w HTML]
+@opis Miejsce na schemat SVG opisany w lekcji; przed publikacją HTML grafika musi pokazywać wskazane zależności, a nie służyć jako dekoracja.
 
     Mapa pojęć L002 — od ciała człowieka do genetyki.
   
@@ -1711,3 +1712,10 @@ Lekcja L002 przebudowana z myślą o **moście do genetyki** (nie pełna anatomi
 Ucz się świadomie, nie na pamięć.
 
 <details><summary>Wcześniejsza warstwa MD L002 (zachowana)</summary>
+
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Przeprowadzono kontrolę redakcyjną i kontrolę oznaczeń wizualizacji; dopisano `@opis` bezpośrednio pod blokami `[BIO: DIAGRAM]` tam, gdzie go brakowało.
+- Zachowano dotychczasową treść i kody lekcji; nie usuwano wcześniejszych wersji ani banków zadań.
+- Zwrócono uwagę na rozróżnienie modelu od rzeczywistości oraz na to, że schematy przepływu pokazują uproszczone relacje.
+- **Ograniczenie:** nie jest to pełna niezależna walidacja wszystkich danych i kluczy zadań; przed publikacją wymagane jest sprawdzenie merytoryczne przez nauczyciela biologii.

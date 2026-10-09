@@ -2,8 +2,29 @@
 kod: "J02"
 tytul: "Odczyn i pH"
 opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie było treści tych lekcji; do weryfikacji przed budową lekcji."
+stan: W22 — GPT-6, 2026-10-09; audyt przekrojowy równań i modeli, pełna niezależna recenzja nadal otwarta
 ---
 # Odczyn i pH — materiał wstępny
+
+## TREŚĆ KANONICZNA PO W1 — ODCZYN I pH
+
+Odczyn roztworu opisuje jego charakter kwasowy, obojętny lub zasadowy w określonych warunkach. W uproszczonym modelu szkolnym przy 25°C: pH < 7 oznacza odczyn kwasowy, pH = 7 obojętny, a pH > 7 zasadowy. Wartość pH obojętnego roztworu zależy od temperatury, dlatego reguły z liczbą 7 stosuj z podanym warunkiem temperatury.
+
+Skala pH jest logarytmiczna: zmiana o jedną jednostkę odpowiada dziesięciokrotnej zmianie aktywności H₃O⁺. W prostych zadaniach rozcieńczonych roztworów używa się przybliżenia pH = −log[H₃O⁺], które nie jest uniwersalnym dokładnym opisem wszystkich roztworów.
+
+### Wskaźniki
+
+Wskaźnik zmienia barwę w pewnym zakresie pH; nie podaje zwykle dokładnej wartości pH. Uniwersalny papierek daje wynik orientacyjny. Fenoloftaleina jest bezbarwna w środowisku kwaśnym i w przybliżeniu obojętnym, a malinowa w zasadowym zakresie przejścia. Oranż metylowy jest czerwony w kwaśnym zakresie, przechodzi przez barwę pomarańczową i żółknie przy wyższym pH. Kolor zależy od zakresu przejścia i warunków pomiaru.
+
+### Zobojętnianie
+
+Dla mocnego kwasu i mocnej zasady w zapisie jonowym skróconym: H₃O⁺ + OH⁻ → 2H₂O (równoważny zapis szkolny: H⁺ + OH⁻ → H₂O). Zmiana barwy wskaźnika wskazuje zakres, a nie zawsze dokładny punkt równoważnikowy. Podczas doświadczeń nie próbuj odczynników smakiem ani bezpośrednim wąchaniem.
+
+### Sprawdź się
+
+1. Przy 25°C roztwór o pH 3 ma jaki odczyn? **Kwasowy.**
+2. Czy pH 6 oznacza dziesięć razy większą aktywność H₃O⁺ niż pH 7? **W przybliżeniu tak.**
+3. Czy wskaźnik zawsze daje dokładną wartość pH? **Nie, zwykle wskazuje zakres.**
 
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
@@ -15,11 +36,11 @@ opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie
 
 Uczeń powinien:
 
-- odróżnić odczyn kwaśny, obojętny i zasadowy;
-- wyjaśnić znaczenie pH;
-- korzystać ze skali pH w zakresie szkolnym;
-- rozróżnić wskaźnik od pomiaru pH;
-- zapisać reakcję zobojętniania.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): odróżnić odczyn kwaśny, obojętny i zasadowy;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wyjaśnić znaczenie pH;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): korzystać ze skali pH w zakresie szkolnym;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozróżnić wskaźnik od pomiaru pH;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): zapisać reakcję zobojętniania.
 
 #### Rdzeń
 
@@ -31,9 +52,9 @@ W przybliżeniu:
 
 W temperaturze około 25°C:
 
-- pH<7 — odczyn kwaśny;
-- pH=7 — odczyn obojętny;
-- pH>7 — odczyn zasadowy.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): pH<7 — odczyn kwaśny;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): pH=7 — odczyn obojętny;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): pH>7 — odczyn zasadowy.
 
 Wartość 7 jako pH obojętnego dotyczy określonej temperatury i czystej wody w odpowiednim modelu. Nie jest bezwarunkową regułą dla każdej temperatury i każdego roztworu.
 
@@ -49,24 +70,24 @@ Wskaźnik zmienia barwę w określonym zakresie pH.
 
 Przykłady:
 
-- lakmus;
-- fenoloftaleina;
-- oranż metylowy;
-- wskaźnik uniwersalny;
-- wywar z czerwonej kapusty.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): lakmus;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): fenoloftaleina;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): oranż metylowy;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wskaźnik uniwersalny;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wywar z czerwonej kapusty.
 
 Barwa zależy od rodzaju wskaźnika i jego zakresu zmiany. Sam kolor bez informacji o wskaźniku nie wystarcza do dokładnego wyznaczenia pH.
 
 ##### Fenoloftaleina
 
-- w środowisku kwaśnym i obojętnym jest bezbarwna;
-- w odpowiednio zasadowym środowisku przyjmuje barwę różową lub malinową.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w środowisku kwaśnym i obojętnym jest bezbarwna;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w odpowiednio zasadowym środowisku przyjmuje barwę różową lub malinową.
 
 ##### Oranż metylowy
 
-- w środowisku kwaśnym jest czerwony;
-- w zakresie przejściowym przyjmuje barwy pośrednie;
-- w środowisku mniej kwaśnym jest żółty.
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w środowisku kwaśnym jest czerwony;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w zakresie przejściowym przyjmuje barwy pośrednie;
+- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w środowisku mniej kwaśnym jest żółty.
 
 #### Pomiar pH
 
@@ -106,3 +127,15 @@ Zobojętnianie nie oznacza automatycznie, że końcowe pH zawsze wynosi dokładn
 
 5. Barwa obejmuje zakres pH i zależy od warunków obserwacji.
 6. pH na ogół rośnie, czyli roztwór staje się mniej kwaśny.
+
+
+## W21 — zakres wskaźnika a dokładny punkt pH (2026-10-09, GPT-6)
+
+Barwa wskaźnika zależy od jego zakresu zmiany barwy i warunków pomiaru. Nie należy z samej pojedynczej barwy wyznaczać dokładnej wartości pH ani utożsamiać zmiany barwy z dokładnym punktem równoważnikowym miareczkowania. Do wyniku liczbowego używa się odpowiedniej metody pomiaru lub skali porównawczej.
+
+
+## W22 — kontrola pH i zobojętniania (2026-10-09, GPT-6)
+
+- **Sprawdzono:** `HNO₃ + KOH → KNO₃ + H₂O` jest zbilansowane. W modelu jonowym skróconym `H⁺ + OH⁻ → H₂O` to zapis szkolny; w wodzie dokładniej `H₃O⁺ + OH⁻ → 2H₂O`.
+- **Doprecyzowano interpretację:** różnica pH o 2 jednostki odpowiada w prostym modelu około stukrotnej różnicy stężenia H₃O⁺, nie dziesięciokrotnej. Barwa wskaźnika nie wyznacza sama dokładnego pH.
+- **Ograniczenie:** sprawdzono przykłady i reguły wskazane w raporcie, nie każdy wariant zadania.

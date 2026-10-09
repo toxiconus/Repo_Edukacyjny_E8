@@ -5,7 +5,7 @@ tytul: Neologizm, zdrobnienie, zgrubienie, archaizm
 lead: Środki słowotwórcze i leksykalne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010, L006
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: PO W1 — doprecyzowano status neologizmu i archaizmu; GPT-6; 2026-10-09
 utworzono: 2026-10-09
 wersja: 2.0
 ---
@@ -16,7 +16,7 @@ wersja: 2.0
 Rozpoznaję neologizm, zdrobnienie, zgrubienie, archaizm, kolokwializm i regionalizm; potrafię odróżnić budowę wyrazu od jego funkcji i wyjaśnić, jaki efekt wywołuje w tekście.
 
 ## 1. Neologizm
-**Neologizm** to nowy wyraz, nowe znaczenie wyrazu już istniejącego lub nowe połączenie językowe. Powstaje, gdy trzeba nazwać nową rzecz, zjawisko, doświadczenie albo stworzyć efekt artystyczny. Neologizm może być słowotwórczy (*chmurzyć* w nowym znaczeniu), znaczeniowy (znany wyraz otrzymuje nowe znaczenie) lub artystyczny, stworzony na potrzeby utworu.
+**Neologizm** to nowy wyraz, nowe znaczenie wyrazu już istniejącego lub nowe połączenie językowe względem określonego czasu, środowiska lub utworu. Dlatego określenie „neologizm” wymaga wskazania perspektywy: wyraz nowy dla czytelnika nie musi być nowy w całym języku. Powstaje, gdy trzeba nazwać nową rzecz, zjawisko, doświadczenie albo stworzyć efekt artystyczny. Neologizm może być słowotwórczy (*chmurzyć* w nowym znaczeniu), znaczeniowy (znany wyraz otrzymuje nowe znaczenie) lub artystyczny, stworzony na potrzeby utworu.
 
 Nie każdy wyraz obcy jest neologizmem — słowo zapożyczone może być od dawna utrwalone w polszczyźnie. O neologizmie decyduje nowość w danym czasie lub kontekście, nie samo obce brzmienie. W literaturze neologizm może budować niezwykły świat, humor, rytm lub indywidualny język bohatera.
 
@@ -26,7 +26,7 @@ Nie każdy wyraz obcy jest neologizmem — słowo zapożyczone może być od daw
 Analizując zdrobnienie lub zgrubienie, rozdziel: (1) znaczenie słowotwórcze — rozmiar; (2) znaczenie pragmatyczne — stosunek mówiącego; (3) kontekst — kto mówi, do kogo i w jakiej sytuacji.
 
 ## 3. Archaizm
-**Archaizm** to dawny element języka, który wyszedł z powszechnego użycia albo zmienił formę lub znaczenie. Może dotyczyć słownictwa, gramatyki, składni lub pisowni. Archaizmy pomagają odtworzyć realia epoki, budują stylizację historyczną, podniosłość albo humor. Nie każdy rzadki wyraz jest archaizmem: może być specjalistyczny, regionalny lub po prostu mało popularny.
+**Archaizm** to dawny element języka, który wyszedł z powszechnego użycia albo zmienił formę lub znaczenie. Rzadkość sama w sobie nie wystarcza: przed nazwaniem wyrazu archaizmem sprawdź jego znaczenie i użycie w danej epoce, ponieważ może to być także termin, regionalizm lub słowo specjalistyczne. Może dotyczyć słownictwa, gramatyki, składni lub pisowni. Archaizmy pomagają odtworzyć realia epoki, budują stylizację historyczną, podniosłość albo humor. Nie każdy rzadki wyraz jest archaizmem: może być specjalistyczny, regionalny lub po prostu mało popularny.
 
 Przy interpretacji archaizmu: podaj wyraz, objaśnij jego znaczenie na podstawie kontekstu i wskaż efekt stylizacji. Nie zgaduj znaczenia wyłącznie na podstawie podobieństwa do współczesnego słowa.
 
@@ -79,3 +79,10 @@ Umiem wskazać formę, objaśnić znaczenie i odróżnić je od efektu emocjonal
 **Kryteria:** kontekst wskazuje brak czułości; wyjaśnienie odnosi się do relacji lub tonu, a nie tylko do przyrostka.
 
 **Zastosowanie do lektury:** wskaż element języka, który charakteryzuje epokę lub bohatera. Rozdziel znaczenie słownikowe od efektu stylistycznego i nie nazywaj każdego rzadkiego wyrazu archaizmem.
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+- Doprecyzowano, że status neologizmu zależy od czasu i środowiska językowego. ✔ wprowadzone (sekcja 1)
+- Wzmocniono ostrzeżenie, że rzadki wyraz nie musi być archaizmem. ✔ wprowadzone (sekcja 3)
+- Klucze rozróżniają znaczenie słowotwórcze od emocjonalnej funkcji zdrobnienia/zgrubienia. ✔ sprawdzone
+- Wizualizacja ma opis słowny `@opis`. ✔ sprawdzone
+

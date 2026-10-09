@@ -5,9 +5,9 @@ tytul: Imiesłowy
 lead: Czasownik w przebraniu: czytający, przeczytany, czytając, przeczytawszy — i imiesłowowy równoważnik zdania.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L001, G02, G03, G14
-stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
+stan: W1 — GPT-6, 2026-10-09; kontrola treści wykonana, W2 źródeł normatywnych nadal wymagana
 utworzono: 2026-10-09
-wersja: 3.0
+wersja: 3.1
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -331,7 +331,7 @@ Imiesłowowy równoważnik zdania z imiesłowem przysłówkowym oddzielamy przec
 
 **D. Pisownia:** popraw: *nie wiedząc; nieprzygotowany uczeń; nie wykonawszy zadania; nie zrobiona, lecz tylko rozpoczęta praca.*
 
-**Klucz:** *nie wiedząc*; *nieprzygotowany uczeń*; *nie wykonawszy zadania*; przy przeciwstawieniu: *nie zrobiona, lecz tylko rozpoczęta praca* (w zależności od akcentu i przyjętej normy szkolnej uzasadnij rozdzielenie).
+**Klucz:** *nie wiedząc*; *nieprzygotowany uczeń*; *nie wykonawszy zadania*; *niezrobiona, lecz tylko rozpoczęta praca* — od 1.01.2026 „nie” z imiesłowami przymiotnikowymi piszemy łącznie także przy przeciwstawieniu; w latach 2026–2030 CKE uznaje na egzaminie również dawny zapis rozdzielny (*nie zrobiona, lecz…*).
 
 ### 14.7. Zadanie przekrojowe
 
@@ -342,3 +342,21 @@ Popraw i uzasadnij: „Przeczytawszy polecenie, rozwiązanie stało się proste,
 ### 14.8. Samokontrola
 
 Potrafię rozpoznać cztery typy imiesłowów, utworzyć poprawne formy, sprawdzić aspekt i przechodniość, wskazać wykonawcę czynności, uzasadnić przecinki oraz rozstrzygnąć pisownię „nie” z imiesłowem przymiotnikowym i przysłówkowym.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+### Zakres kontroli
+Sprawdzono cztery typy imiesłowów, aspekt i przechodniość, imiesłowowe równoważniki zdań, zgodność wykonawcy czynności, interpunkcję oraz pisownię „nie”.
+
+### Ustalenia i poprawki
+1. **Imiesłów przymiotnikowy bierny:** typowo tworzy się go od czasowników przechodnich; nie należy sugerować, że każdy czasownik przechodni zawsze ma w praktyce używaną formę bierną. W razie wątpliwości uczeń powinien sprawdzić, czy forma jest rzeczywiście utworzona i naturalna.
+2. **Imiesłów przysłówkowy uprzedni:** wiąże się zwykle z czasownikami dokonanymi i czynnością wcześniejszą względem czynności orzeczenia. Przykłady *przeczytawszy, zjadłszy, zrobiwszy* są poprawne.
+3. **Wykonawca czynności:** ćwiczenia dobrze wskazują błąd konstrukcyjny w zdaniach typu *Czytając książkę, zadzwonił telefon*. Reguła szkolna: podmiot czynności wyrażonej imiesłowem przysłówkowym powinien być tożsamy z podmiotem zdania nadrzędnego.
+4. **Przecinki przy imiesłowach:** imiesłowowe równoważniki zdań z imiesłowem przysłówkowym oddzielamy przecinkiem; imiesłowy przymiotnikowe nie wymagają automatycznie przecinków — decyduje składnia i funkcja dopowiedzenia.
+5. **Pisownia „nie” z imiesłowami przymiotnikowymi:** od 1.01.2026 (zasady RJP) piszemy je łącznie z „nie” zawsze, także przy przeciwstawieniu — zniesiono wyjątek „świadomej pisowni rozdzielnej”. W latach 2026–2030 CKE na egzaminie uznaje również zapis według dawnych zasad. Z imiesłowami przysłówkowymi „nie” piszemy rozdzielnie, np. *nie wiedząc, nie wykonawszy*.
+
+### Korekta do sekcji 14.6 D — pisownia
+Zalecany klucz: *nie wiedząc; nieprzygotowany uczeń; nie wykonawszy zadania; nie zrobiona, lecz tylko rozpoczęta praca* — w ostatnim przykładzie należy zaakceptować także zapis łączny *niezrobiona, lecz tylko rozpoczęta praca*, jeśli zadanie jest oceniane zgodnie z podaną w paczce zasadą akceptacji wariantów CKE na lata 2026–2030. Uczeń powinien umieć wyjaśnić, że imiesłów przysłówkowy zapisujemy z *nie* rozdzielnie.
+
+### Status
+Lekcja jest rozbudowana i zasadniczo spójna. Najważniejsze ryzyko dotyczy zbyt kategorycznego klucza pisowni w przeciwstawieniu oraz uproszczenia reguły tworzenia imiesłowu biernego. Kontrola W2 aktualnego źródła RJP/CKE pozostaje wymagana.

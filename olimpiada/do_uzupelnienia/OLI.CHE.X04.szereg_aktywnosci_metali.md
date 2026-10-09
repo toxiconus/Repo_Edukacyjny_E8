@@ -5,7 +5,7 @@ tytul: Szereg aktywności metali — reakcje z wodą, kwasami i solami
 lead: Który metal wypiera który i dlaczego — przewidywanie reakcji bez pamięciowego wkuwania.
 plakietki: [[basic:E8]][[exam:KONKURS]][[exam:LKO-REJ]]
 zakres: LKO etap II / rejonowy + E8
-stan: MAX v1 (2026-10-09)
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 ---
 
 # 0. Cel lekcji i kryterium gotowości
@@ -116,7 +116,7 @@ d) Mg + 2H₂O (zimna woda)
 **Rozwiązanie:**  
 a) nie zachodzi (Cu za H)  
 b) Zn + CuSO₄ → ZnSO₄ + Cu↓  
-c) nie zachodzi (Ag mniej aktywny niż Fe)  
+c) w typowym szkolnym modelu Ag nie wypiera żelaza z FeCl₃; należy jednak zaznaczyć, że FeCl₃ zawiera Fe³⁺, więc proste reguły wypierania metalu z soli Fe²⁺ nie wystarczają do analizy wszystkich możliwych procesów redoks.  
 d) Mg + 2H₂O → Mg(OH)₂ + H₂↑ (powoli)
 
 **Zadanie 2**  
@@ -136,8 +136,7 @@ Metal X wypiera miedź z roztworu CuSO₄, ale nie reaguje z zimną wodą. Metal
 Który metal jest bardziej aktywny? Podaj przykładowe symbole zgodne z szeregiem.
 
 **Rozwiązanie:**  
-Y jest bardziej aktywny (reaguje z zimną wodą → litowiec lub berylowiec, np. Na, Ca).  
-X leży między Mg a H (np. Zn, Fe) — wypiera Cu, ale nie reaguje z zimną wodą.
+Y jest bardziej aktywny od X; gwałtowna reakcja z zimną wodą pasuje np. do Na (Ca także reaguje z wodą, choć opis gwałtowności zależy od warunków). X musi być bardziej aktywny od Cu, skoro wypiera miedź z roztworu CuSO₄, ale dane nie wyznaczają jednego metalu ani ścisłego przedziału „między Mg a H”. Przykładami zgodnymi z typowym szkolnym modelem są Zn lub Fe; Mg reaguje z zimną wodą bardzo powoli.
 
 **Zadanie 4** (obliczeniowe + szereg)  
 Do 200 g 10% roztworu CuSO₄ wrzucono 5 g cynku. Czy cały cynk się rozpuści? Ile miedzi się wydzieli? (Cu=64, Zn=65, S=32, O=16)
@@ -186,6 +185,13 @@ Po pojawieniu się arkuszy LKO rejonowych dodać sekcję „Archiwalne zadania L
 - DANE: czy klasa robiła doświadczenie Zn/Mg/Cu + HCl? co zaobserwowano?
 - DANE: doświadczenia z obserwacjami (kolor roztworu, osad na metalu)
 - DANE: zadania z arkuszy rejonowych LKO (najlepiej 2024/25, 2025/26) + klucz
+
+## W20 — kontrola kluczy i ograniczeń wnioskowania (2026-10-09, GPT-6)
+
+- Zadanie 3: poprawiono nadmiernie wąski wniosek „X leży między Mg a H”. Dane wskazują, że X wypiera Cu, a Y jest bardziej aktywny, ale nie wyznaczają jednego metalu ani ścisłego przedziału szeregu.
+- Zadanie 1c: doprecyzowano, że FeCl₃ zawiera Fe³⁺, więc prosta reguła wypierania metalu z soli nie opisuje wszystkich możliwych procesów redoks.
+- Zadanie 4: 20 g CuSO₄ wymaga ok. 8,13 g Zn; przy 5 g Zn reagentem ograniczającym jest Zn, a teoretyczna masa Cu wynosi ok. 4,92 g.
+- Audyt celowany, nie pełna walidacja wszystkich warunków reakcji i doświadczeń.
 
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
@@ -429,3 +435,10 @@ Obserwacje:
 
 - na drucie może pojawić się srebrzysty osad;
 - roztwór może przyjąć niebieskie zabarwienie wskutek obecności jonów Cu²⁺.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Wyrywkowo sprawdzono równania wypierania: Fe + CuSO₄ → FeSO₄ + Cu; Zn + CuSO₄ → ZnSO₄ + Cu; Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag — zapisy są zbilansowane.
+- Reakcje metali z wodą silnie zależą od temperatury i warstwy pasywnej; tabela musi zachować podane warunki, a nie być czytana jako bezwarunkowa reguła.
+- Zastrzeżenie dla kwasów utleniających jest ważne: reguły „metal przed wodorem wypiera wodór” dotyczą typowo rozcieńczonych kwasów nieutleniających, a nie każdego kwasu.
+- Wykonywanie prób z K/Na i wodą wymaga profesjonalnych warunków; materiał uczniowski powinien preferować symulację, nagranie lub demonstrację prowadzoną przez nauczyciela zgodnie z oceną ryzyka.
+- To kontrola wybranych reakcji i warunków, nie pełny audyt całego zestawu.

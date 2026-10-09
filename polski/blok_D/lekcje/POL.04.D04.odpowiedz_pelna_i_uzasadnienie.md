@@ -5,7 +5,7 @@ blok: D
 numer: 4
 wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
+status: W2 — GPT-6, 2026-10-09; audyt kontrolny i doprecyzowanie zapisane; niezależna recenzja zewnętrzna niepotwierdzona
 wymaga: PL.D01–D03
 ---
 
@@ -226,3 +226,11 @@ Tekst:
 - [x] Dodano treningową listę kryteriów bez podszywania się pod oficjalną punktację.
 - [x] Dodano zadanie wieloetapowe z jednoznacznym kluczem i pytaniem o granice wnioskowania.
 - [ ] Pozostaje niezależna recenzja polonistyczna i walidacja względem aktualnych wymagań egzaminacyjnych.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Doprecyzowanie kontrolne:** Pełna odpowiedź zawiera wszystkie elementy wymagane poleceniem oraz uzasadnienie, jeśli jest wymagane; długość sama w sobie nie gwarantuje kompletności.
+
+- Kontrola zakresu: zadanie należy rozwiązywać zgodnie z konkretnym poleceniem; szablon nie zastępuje realizacji tematu.
+- Kryteria i punktacje w ćwiczeniach są treningowe, chyba że plik wyraźnie cytuje oficjalny dokument. Nie przedstawiać ich jako oficjalnej punktacji CKE.
+- Źródło do kontroli aktualnych wymagań: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory; informator język polski: https://bip.cke.gov.pl/attachments/download/9824.

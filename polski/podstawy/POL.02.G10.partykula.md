@@ -5,7 +5,7 @@ tytul: Partykuła
 lead: Mały wyraz, który zmienia ton zdania: czy, nie, niech, nawet, -by, -że — i pisownia „nie” w jednym zestawieniu.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G02, G09
-stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
+stan: W1 — GPT-6, 2026-10-09; kontrola zewnętrzna treści i kluczy; wersja 3.1
 utworzono: 2026-10-09
 wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
@@ -60,7 +60,7 @@ Partykuła **nie jest częścią zdania** (na wykresie ją pomijamy albo dołąc
 
 ### Cząstka *-by*
 - **łącznie** z osobowymi formami czasownika: *zrobiłbym, chcielibyśmy, poszłabyś*; ze spójnikami: *żeby, gdyby, aby, jakby, choćby*;  
-- **rozdzielnie** z formami nieosobowymi i bezokolicznikiem: *trzeba by, można by, zrobiono by, warto by*; jako osobny wyraz w zdaniu: *Kto by pomyślał?*
+- **rozdzielnie** z formami nieosobowymi i bezokolicznikiem: *trzeba by, można by, zrobiono by, warto by*; jako osobny wyraz w zdaniu: *Kto by pomyślał?*; rozdzielnie także po spójniku, gdy *by* jest odrębną cząstką, np. *Zastanawiam się, czy by nie wyjść wcześniej*.
 
 ### Cząstki *-że, -ż*
 **łącznie**: *chodźże, dajże, cóż, któż, gdzież, czyż*.
@@ -298,7 +298,7 @@ Nie wszystkie tradycje gramatyczne przypisują każdemu z tych wyrazów dokładn
 4. *Nie wiem, czy masz chwilę.*
 5. *Dopiero po południu dostałem wiadomość.*
 
-**Klucz:** 1. *chyba* — partykuła przypuszczenia; 2. *może* — czasownik; 3. *czy* — partykuła pytająca; 4. *czy* — element wprowadzający pytanie zależne/spójnik; 5. *dopiero* — partykuła ograniczająca czas.
+**Klucz:** 1. *chyba* — partykuła przypuszczenia; 2. *może* — czasownik modalny („ma możliwość”); 3. *czy* — partykuła pytająca; 4. *czy* — wyraz wprowadzający pytanie zależne, w szkolnej analizie zwykle spójnik; 5. *dopiero* — partykuła ograniczająca czas.
 
 **B. Wyjaśnij różnicę zakresu:**
 1. *Tylko nauczyciel przeczytał odpowiedź.*
@@ -321,3 +321,12 @@ Nie wszystkie tradycje gramatyczne przypisują każdemu z tych wyrazów dokładn
 ### 14.7. Samokontrola
 
 Potrafię objaśnić, jak partykuła zmienia sens wypowiedzi; wskazać jej zakres; odróżnić *może* czasownikowe od modalnego; odróżnić pytanie bezpośrednie od zależnego; poprawnie stosować przecinki w zdaniach z *czy* oraz rozpoznawać zależność klasyfikacji od przyjętej gramatyki.
+
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+
+- Uzupełniono regułę zapisu rozdzielnego cząstki *by* po spójniku, np. *czy by nie wyjść*.
+- Doprecyzowano funkcję modalnego *może* i klasyfikację *czy* w pytaniu zależnym.
+- Sprawdzono tabelę pisowni „nie” w odniesieniu do zmian obowiązujących od 1.01.2026 r.; zachowano rozróżnienie czasownika, imiesłowu przymiotnikowego i przysłówka odprzymiotnikowego.
+
+**Źródła normatywne:** Rada Języka Polskiego PAN, „Zasady pisowni i interpunkcji polskiej” (https://rjp.pan.pl/zasady-pisowni-i-interpunkcji-polskiej-2/); CKE, informacja z 20.08.2025 r. — w latach 2026–2030 na egzaminach akceptowane są zasady dotychczasowe i nowe (https://bip.cke.gov.pl/attachments/download/10293).

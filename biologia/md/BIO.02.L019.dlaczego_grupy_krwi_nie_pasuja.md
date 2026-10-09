@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L017 / L018 · Następna: L020
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: jest wykład MD; audyt przy edycji; audyt punktowy W15 — 2026-10-09
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `allele → antygeny → grupa krwi`
 `[/BIO: DIAGRAM]`
+@opis ABO i Rh to odrębne układy antygenów. Zgodność transfuzji zależy od składnika krwi i wielu czynników, nie tylko od samego oznaczenia ABO.
 
 **Co uczeń ma zauważyć:** ABO i Rh to dwa różne układy.
 
@@ -395,3 +396,33 @@ W szkolnym modelu często mówi się o „dawcy uniwersalnym” i „biorcy uniw
 
 
 <!-- ==================== BEGIN L020 ==================== -->
+
+
+## 23. Doprecyzowanie — zgodność transfuzji (W15)
+
+Określenia „dawca uniwersalny” i „biorca uniwersalny” w uproszczeniu szkolnym dotyczą **krwinek czerwonych** i podstawowych układów ABO/Rh. Nie wolno przenosić ich bez zastrzeżeń na osocze ani traktować jako kompletnej instrukcji medycznej. W praktyce sprawdza się zgodność i uwzględnia więcej antygenów oraz sytuację kliniczną.
+
+Grupy ABO mogą wykluczyć niektóre kombinacje rodzic–dziecko w prostym modelu, ale nie są samodzielnym dowodem pokrewieństwa.
+
+## AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)
+
+**Zakres:** kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.
+
+### Uściślenia do utrzymania w treści
+- Zachować zastrzeżenie „krwinki czerwone” przy szkolnych określeniach dawcy/biorcy uniwersalnego; nie przenosić tej reguły bezpośrednio na osocze ani na wszystkie sytuacje kliniczne.
+- Wykluczanie ojcostwa na podstawie ABO jest ograniczone i zależy od poprawnego oznaczenia oraz modelowych założeń; grupa krwi nie potwierdza pokrewieństwa.
+- Rh− nie oznacza „braku genu D” w każdym możliwym wariancie genetycznym; na poziomie E8 można użyć modelu obecność/brak antygenu D, a warianty genetyczne oznaczyć jako rozszerzenie.
+
+### Status
+- Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
+- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+
+## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana kluczy ABO/Rh oraz wnioskowania o transfuzji i pokrewieństwie.
+
+- W szkolnym modelu ABO allele Iᴬ i Iᴮ są kodominujące, a i jest recesywny; fenotyp A może mieć genotyp IᴬIᴬ lub Iᴬi, B — IᴮIᴮ lub Iᴮi, AB — IᴬIᴮ, a 0 — ii.
+- Dziecko z grupą AB nie może w prostym modelu ABO otrzymać allelu i od obojga rodziców, ale wnioski z grup krwi dotyczą wyłącznie modelowych kombinacji i nie zastępują badań genetycznych.
+- Nie utożsamiać zgodności ABO z pełną zgodnością transfuzji: w praktyce uwzględnia się także Rh, inne antygeny i badania przedtransfuzyjne.
+- Konflikt Rh nie jest tym samym co niezgodność ABO; ryzyko i profilaktyka zależą od sytuacji klinicznej, a nie wyłącznie od samego skrótu grupy krwi.
+- **Status:** dodano kryteria interpretacji; pełna walidacja każdego zadania i klucza nadal wymagana.

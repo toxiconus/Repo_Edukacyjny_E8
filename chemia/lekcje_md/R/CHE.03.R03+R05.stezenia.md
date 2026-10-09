@@ -3,6 +3,7 @@ kod: "R03; R05"
 tytul: "LEKCJA L008 — STĘŻENIA"
 zrodla: "CHEMIA_PODSTAWA_PLUS v1.1 (CHE.03.R03-R04.stezenia.md)"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W23 — GPT-6, 2026-10-09; korekta wzoru Cp↔Cm i kontrola wybranych obliczeń, pełna niezależna recenzja nadal otwarta
 ---
 <!-- ==================== BEGIN L008 ==================== -->
 
@@ -243,10 +244,11 @@ Cm = m / (M · V)
 
 **Potrzebna gęstość roztworu (d).**
 
-**Wzór przeliczeniowy:**
+**Wzór przeliczeniowy (Cp wpisuj jako wartość liczbową w procentach, np. 36,5):**
 ```
-Cm = (Cp · d) / (100% · M)
+Cm = (10 · Cp · d) / M
 ```
+Jeśli zamiast wartości procentowej używasz ułamka masowego `w` (np. 0,365), równoważny wzór to `Cm = 1000 · w · d / M`. W obu zapisach `d` podaje się w g/cm³, `M` w g/mol, a wynik otrzymuje się w mol/dm³.
 gdzie:
 - Cp — stężenie procentowe [%]
 - d — gęstość roztworu [g/cm³]
@@ -504,7 +506,7 @@ Różnica od Cm: molalność — masa rozpuszczalnika; Cm — objętość roztwo
 
 - **Znajdź:** Brak potrzebnej danej.
 - **Popraw:** Przeliczenie Cp ↔ Cm wymaga gęstości (d).
-- **Reguła:** Cm = (Cp · d) / (100% · M).
+- **Reguła:** Cm = (10 · Cp · d) / M.
 - **Dlaczego:** Cp opisuje masę, Cm — objętość; potrzebne jest powiązanie (gęstość).
 - **Zadanie podobne:** Cp = 10%; d = 1,05 g/cm³; M = 40 g/mol — Cm? (Odp.: 2,625 mol/dm³.)
 - **Zadanie z pułapką:** Bez d można przeliczyć Cp na Cm? (Odp.: Nie.)
@@ -657,7 +659,7 @@ Różnica od Cm: molalność — masa rozpuszczalnika; Cm — objętość roztwo
 | 1 dm³ — ile cm³ | 1000 cm³ |
 | Rozpuszczalność — definicja | Maks. masa w 100 g rozpuszczalnika |
 | Rozcieńczanie — wzór | C₁V₁ = C₂V₂ |
-| Przeliczanie Cp ↔ Cm — wzór | Cm = (Cp · d)/(100% · M) |
+| Przeliczanie Cp ↔ Cm — wzór | Cm = (10 · Cp · d)/M |
 | 10 g soli w 90 g wody — Cp? | 10% |
 | 30 g cukru w 170 g wody — Cp? | 15% |
 | 0,5 mola w 2 dm³ — Cm? | 0,25 mol/dm³ |
@@ -741,7 +743,7 @@ STĘŻENIA
 │   ├── g/100 g rozpuszczalnika
 │   └── zależność od temperatury
 ├── PRZELICZANIE
-│   └── Cm = (Cp · d)/(100% · M)
+│   └── Cm = (10 · Cp · d)/M
 ├── ROZCIEŃCZANIE
 │   └── C₁V₁ = C₂V₂
 └── ROZSZERZENIA
@@ -898,7 +900,7 @@ STĘŻENIE MOLOWE:
 Cm = n/V
 
 PRZELICZANIE:
-Cm = (Cp · d)/(100% · M)
+Cm = (10 · Cp · d)/M
 
 ROZCIEŃCZANIE:
 C₁V₁ = C₂V₂
@@ -1006,6 +1008,22 @@ Rozpuszczalność zależy od T; **gazy zwykle gorzej** rozpuszczają się przy w
 
 <!-- ==================== END L008 ==================== -->
 
+## UZUPEŁNIENIE KANONICZNE W8 — STĘŻENIA I ROZTWORY
+
+### Stężenie procentowe
+
+Stężenie procentowe masowe określa, ile gramów substancji rozpuszczonej przypada na 100 g roztworu: Cₚ = (mₛ / mᵣ) · 100%, gdzie mₛ to masa substancji rozpuszczonej, a mᵣ to masa całego roztworu. Masa roztworu = masa substancji rozpuszczonej + masa rozpuszczalnika. Nie podstawiaj do mianownika samej masy wody.
+
+**Przykład:** 10 g NaCl dodano do 90 g wody. Masa roztworu wynosi 100 g, więc Cₚ = 10/100 · 100% = 10%.
+
+### [[extra:AMBITNE]] Stężenie molowe
+
+Stężenie molowe określa liczbę moli substancji rozpuszczonej w 1 dm³ roztworu: c = n/V, gdzie V jest objętością całego roztworu w dm³, nie objętością rozpuszczalnika. Jednostka: mol/dm³. Przeliczenia: 1 dm³ = 1 L; 1 cm³ = 1 mL; 1000 mL = 1 dm³. Liczbę moli obliczamy n = m/M.
+
+**Przykład:** rozpuszczono 5,85 g NaCl i przygotowano 500 mL roztworu. Przy M(NaCl) ≈ 58,5 g/mol: n = 5,85/58,5 = 0,100 mol; V = 0,500 dm³; c = 0,100/0,500 = 0,200 mol/dm³.
+
+Przy przygotowaniu roztworu odważa się substancję, rozpuszcza w części rozpuszczalnika, przenosi ilościowo do kolby miarowej i dopełnia do kreski — nie dodaje od razu objętości wody równej końcowej objętości roztworu. Stężenie molowe i procentowe to różne wielkości; przeliczenie między nimi wymaga m.in. masy molowej, a często również gęstości roztworu.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexityR03-R09₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -1016,27 +1034,27 @@ Rozpuszczalność zależy od T; **gazy zwykle gorzej** rozpuszczają się przy w
 
 #### Poprawki
 
-- Stężenie molowe określa liczbę moli substancji rozpuszczonej w jednym decymetrze sześciennym roztworu.
-- Wzór:
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Stężenie molowe określa liczbę moli substancji rozpuszczonej w jednym decymetrze sześciennym roztworu.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wzór:
 
  c=n / V
 
 gdzie:
 
-- c — stężenie molowe;
-- n — liczba moli substancji;
-- V — objętość roztworu w dm³.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): c — stężenie molowe;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): n — liczba moli substancji;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): V — objętość roztworu w dm³.
 
-- Jednostką jest mol/dm³, zapisywane również jako mol· dm⁻³.
-- Wzór wykorzystuje objętość roztworu, a nie objętość samego rozpuszczalnika.
-- 1 dm³=1 L.
-- 1 cm³=1 mL.
-- Do wzoru trzeba przeliczyć mililitry na decymetry sześcienne:
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Jednostką jest mol/dm³, zapisywane również jako mol· dm⁻³.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wzór wykorzystuje objętość roztworu, a nie objętość samego rozpuszczalnika.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): 1 dm³=1 L.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): 1 cm³=1 mL.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Do wzoru trzeba przeliczyć mililitry na decymetry sześcienne:
 
  1000 mL=1 dm³
 
-- Stężenie molowe nie jest tym samym co stężenie procentowe.
-- Do przeliczenia między nimi potrzebna jest między innymi gęstość roztworu i masa molowa substancji.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Stężenie molowe nie jest tym samym co stężenie procentowe.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Do przeliczenia między nimi potrzebna jest między innymi gęstość roztworu i masa molowa substancji.
 
 #### Uzupełnienia
 
@@ -1046,8 +1064,8 @@ gdzie:
 
 gdzie:
 
-- m — masa substancji;
-- M — masa molowa.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): m — masa substancji;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): M — masa molowa.
 
 ##### Przykład
 
@@ -1115,3 +1133,11 @@ Podczas rozcieńczania bez reakcji:
  2·0,100=0,5V₂
 
  V₂=0,400 dm³=400 mL
+
+
+## W23 — kontrola wzoru Cp ↔ Cm i rachunków (2026-10-09, GPT-6)
+
+- **Błąd w wersji poprzedniej:** `Cm = (Cp · d)/(100% · M)` nie odpowiadało podanemu przykładowi, jeśli Cp wpisuje się jako liczbę wyrażoną w procentach, a gęstość jest w g/cm³.
+- **Poprawka w treści i ściągach:** przy Cp podanym liczbowo w procentach stosuj `Cm = 10 · Cp · d / M`. Jeżeli używasz ułamka masowego `w`, stosuj `Cm = 1000 · w · d / M`.
+- **Kontrola przykładu:** dla Cp = 36,5%, d = 1,18 g/cm³ i M(HCl) = 36,5 g/mol otrzymujemy `Cm = 10·36,5·1,18/36,5 = 11,8 mol/dm³`, zgodnie z obliczeniem metodą masy w 1 dm³ roztworu.
+- **Ograniczenie:** poprawiono wzór we wszystkich znalezionych skrótach i sprawdzono przykład przeliczeniowy; pozostałe zadania wymagają pełnej walidacji.

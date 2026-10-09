@@ -5,7 +5,7 @@ tytul: Układ pokarmowy i odżywianie się
 lead: Od kęsa do wchłonięcia: gdzie i czym trawione są cukry, białka i tłuszcze.
 plakietki: [[basic:E8]][[exam:KONKURS]]
 zakres: LKO biologia etap II pkt III.3
-stan: UZUPEŁNIONY v1
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 wersja: 2026-10-09
 ---
 
@@ -91,3 +91,9 @@ Gotowe.
 - DANE: czy BMI / piramida żywienia jest w Waszym podręczniku?
 - DANE: doświadczenia z podręcznika lub z lekcji
 - DANE: zadania rejonowe LKO biologia + klucz
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Sprawdzono roboczo rozróżnienie trawienia mechanicznego i chemicznego, miejsca wchłaniania oraz ról enzymów.
+- Uważać na uogólnienie, że wszystkie składniki pokarmowe są wchłaniane w tej samej postaci i w tym samym miejscu; większość wchłaniania zachodzi w jelicie cienkim, ale szczegóły zależą od substancji.
+- Nie podawać diet jako leczenia ani nie wyprowadzać diagnoz medycznych z pojedynczych objawów.
+- Zakres konkursowy wymaga niezależnego porównania z aktualnym zakresem LKO.

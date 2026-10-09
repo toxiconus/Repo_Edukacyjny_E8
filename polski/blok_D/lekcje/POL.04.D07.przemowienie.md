@@ -5,7 +5,7 @@ blok: D
 numer: 7
 wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
+status: W2 — GPT-6, 2026-10-09; audyt kontrolny i doprecyzowanie zapisane; niezależna recenzja zewnętrzna niepotwierdzona
 ---
 
 # D07. Przemówienie — cel, odbiorca i perswazja
@@ -189,3 +189,11 @@ Na końcu skróć tekst o około jedną trzecią. Usuń powtórzenia, ale zachow
 - [x] Rozróżniono perswazję od manipulacji.
 - [x] Apel modelowy zawiera wykonalne działanie i nie wykorzystuje zmyślonych danych.
 - [ ] Pozostaje niezależna recenzja polonistyczna i walidacja względem aktualnych wymagań egzaminacyjnych.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Doprecyzowanie kontrolne:** Przemówienie wymaga rozpoznawalnego odbiorcy, celu, argumentów/elementów retorycznych i zakończenia odpowiedniego do sytuacji.
+
+- Kontrola zakresu: zadanie należy rozwiązywać zgodnie z konkretnym poleceniem; szablon nie zastępuje realizacji tematu.
+- Kryteria i punktacje w ćwiczeniach są treningowe, chyba że plik wyraźnie cytuje oficjalny dokument. Nie przedstawiać ich jako oficjalnej punktacji CKE.
+- Źródło do kontroli aktualnych wymagań: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory; informator język polski: https://bip.cke.gov.pl/attachments/download/9824.

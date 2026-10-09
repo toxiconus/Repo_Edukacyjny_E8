@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L010–L020 · Następna: L030
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: jest wykład MD; audyt przy edycji; audyt punktowy W15 — 2026-10-09
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `DNA → chromosom → podział → gameta → dziedziczenie → mutacja`
 `[/BIO: DIAGRAM]`
+@opis Powtórka łączy DNA, chromosomy, mitozę, mejozę, dziedziczenie, grupy krwi, mutacje i nowotwory; odpowiedzi powinny ujawniać tok rozumowania, nie tylko wynik.
 
 **Co uczeń ma zauważyć:** transfer wiedzy między tematami.
 
@@ -473,3 +474,35 @@ L011–L013 jeśli sypie się 46/DNA; L017 jeśli Punnett; L018–L019 jeśli p�
 
 
 <!-- ==================== BEGIN L030 ==================== -->
+
+
+## 16. Doprecyzowanie — algorytm rozwiązywania zadań mieszanych (W15)
+
+1. **Ustal, co liczysz:** chromosomy, chromatydy/cząsteczki DNA czy zestawy chromosomów.
+2. **Ustal etap:** przed replikacją, po replikacji, po mejozie I czy po mejozie II.
+3. **W dziedziczeniu zapisz założenia:** genotypy, dominację, typ dziedziczenia i gamety.
+4. **Oddziel prawdopodobieństwo od wyniku:** 25% nie oznacza gwarancji jednego potomka z czterech.
+5. **W mutacjach rozdziel przyczynę i skutek:** mutacja może być neutralna, szkodliwa lub w określonych warunkach korzystna; nie jest równoznaczna z chorobą.
+
+## AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)
+
+**Zakres:** kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.
+
+### Uściślenia do utrzymania w treści
+- W zadaniach z liczeniem chromosomów zawsze określić etap cyklu/podziału oraz to, czy pytanie dotyczy chromosomów, chromatyd, cząsteczek DNA czy zestawów chromosomów.
+- W krzyżówkach zapisywać założenia modelu i oddzielać prawdopodobieństwo od rzeczywistego wyniku małej liczby potomstwa.
+- W pytaniach o mutacje i nowotwory nie przyjmować automatycznego związku „mutacja = choroba”; wskazać możliwe skutki neutralne, szkodliwe lub rzadziej korzystne.
+
+### Status
+- Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
+- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+
+## AUDYT W18 — klucz mieszany (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana zadań łączących chromosomy, mejozę, dziedziczenie, ABO, mutacje i nowotwory.
+
+- Przy odpowiedzi liczbowej uczeń powinien podać warunek (etap cyklu komórkowego, genotyp rodziców, model dominacji lub płeć), jeśli zmienia on wynik.
+- „A albo B” przy grupie krwi jest akceptowalne tylko wtedy, gdy wynika z treści zadania i podanych genotypów; sam fenotyp rodzica może nie wystarczyć do jednoznacznego wyniku.
+- „UV uszkadza DNA” nie jest równoznaczne z „UV zawsze wywołuje mutację lub nowotwór”. Poprawna odpowiedź opisuje zwiększenie ryzyka oraz zależność od naprawy i dalszych zmian.
+- Przy ocenie genetyki punktuj tok rozumowania: zapis alleli, gamety, krzyżówka, wynik i interpretacja prawdopodobieństwa.
+- **Status:** dodano kryteria do sprawdzania klucza; nie zastępują one osobnego sprawdzenia wszystkich pozycji.

@@ -5,7 +5,7 @@ blok: D
 numer: 9
 wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
+status: W2 — GPT-6, 2026-10-09; audyt kontrolny i doprecyzowanie zapisane; niezależna recenzja zewnętrzna niepotwierdzona
 ---
 
 # D09. Krótkie formy użytkowe: ogłoszenie, zaproszenie, podziękowanie i życzenia
@@ -195,3 +195,11 @@ Nie należy jednak stosować mechanicznej listy, jeśli polecenie wymaga tylko j
 - [x] Rozróżniono zadanie twórcze od zadania opartego na źródle.
 - [x] Podkreślono, że dane fikcyjne są tylko treningowe.
 - [ ] Pozostaje niezależna recenzja polonistyczna i walidacja względem aktualnego informatora.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Doprecyzowanie kontrolne:** Krótkie formy użytkowe oceniaj przede wszystkim przez kompletność wymaganych informacji, adresata, cel i rejestr językowy.
+
+- Kontrola zakresu: zadanie należy rozwiązywać zgodnie z konkretnym poleceniem; szablon nie zastępuje realizacji tematu.
+- Kryteria i punktacje w ćwiczeniach są treningowe, chyba że plik wyraźnie cytuje oficjalny dokument. Nie przedstawiać ich jako oficjalnej punktacji CKE.
+- Źródło do kontroli aktualnych wymagań: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory; informator język polski: https://bip.cke.gov.pl/attachments/download/9824.

@@ -5,7 +5,7 @@ tytul: Układ dokrewny — hormony
 lead: Gruczoły, hormony i ich działanie; współpraca z układem nerwowym.
 plakietki: [[basic:E8]][[exam:KONKURS]]
 zakres: LKO biologia etap II pkt III.10
-stan: UZUPEŁNIONY v1
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 wersja: 2026-10-09
 ---
 
@@ -86,3 +86,9 @@ Gotowe.
 - DANE: lista hormonów wymaganych w Waszym podręczniku
 - DANE: doświadczenia z podręcznika lub z lekcji
 - DANE: zadania rejonowe LKO biologia + klucz
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Sprawdzono roboczo pojęcie hormonu, gruczołu dokrewnego i regulacji przez sprzężenie zwrotne.
+- Nie przypisywać jednemu hormonowi wyłącznie jednego skutku w całym organizmie; działanie zależy od tkanki docelowej i receptorów.
+- Wartości stężeń hormonów i zakresy laboratoryjne wymagają źródła oraz kontekstu klinicznego; nie są konieczne do rdzenia E8.
+- Zakres konkursowy wymaga niezależnego porównania z aktualnym zakresem LKO.

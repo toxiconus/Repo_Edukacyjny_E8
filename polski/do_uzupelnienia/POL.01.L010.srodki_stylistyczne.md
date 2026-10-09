@@ -4,7 +4,7 @@ przedmiot: język polski
 tytul: Środki stylistyczne — rozpoznanie, funkcja i interpretacja
 wersja: 4.0
 poziom: E8 + trening konkursowy
-status: PEŁNA LEKCJA po cyklu: analiza S01–S06 → diagnoza luk → uzupełnienie → ponowna kontrola
+status: W2 — GPT-6, 2026-10-09; audyt i doprecyzowania wprowadzone; niezależna recenzja zewnętrzna niepotwierdzona
 powiazania: POL.03.S01.epitet_porownanie.md; POL.03.S02.przenosnia_ozywienie_uosobienie.md; POL.03.S03.wyrazy_dzwiekonasladowcze_apostrofa.md; POL.03.S04.powtorzenie_anafora_wyliczenie.md; POL.03.S05.neologizm_zdrobnienie_archaizm.md; POL.03.S06.hiperbola_ironia_symbol_alegoria.md
 czas: 2–3 jednostki lekcyjne + powtórka
 ---
@@ -393,3 +393,13 @@ Rozwinięto definicje wszystkich głównych środków z bloków S01–S06, dodan
 - [x] Nie utożsamiono symbolu z alegorią ani ironii z kłamstwem.
 - [x] Zaznaczono, że jedno wyrażenie może zawierać kilka środków.
 - [ ] Pozostaje niezależna recenzja polonistyczna i porównanie z aktualnymi wymaganiami/arkuszami CKE.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Zakres:** Kontrola zgodności pojęć z S01–S06 i kluczy interpretacyjnych.
+
+**Uzupełnienie wprowadzone:** Doprecyzowano metodę odpowiedzi: cytat/fragment → nazwa środka → sens w kontekście → funkcja; samo nazwanie środka nie jest pełną interpretacją.
+
+- Sprawdzono spójność celu lekcji, pojęć i kluczy z poziomem E8; materiał konkursowy/rozszerzający należy traktować jako dodatkowy, a nie wymagany do podstawowej odpowiedzi.
+- Własne rubryki ćwiczeniowe są kryteriami treningowymi, nie oficjalną punktacją CKE.
+- Źródło do niezależnej kontroli wymagań egzaminacyjnych: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory oraz Informator CKE: https://bip.cke.gov.pl/attachments/download/9824.

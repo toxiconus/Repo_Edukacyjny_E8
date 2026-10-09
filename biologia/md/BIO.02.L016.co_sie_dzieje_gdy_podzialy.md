@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L014 / L015 · Następna: L016A / L017
-- Status treści: jest wykład MD; audyt przy edycji
+- Status treści: jest wykład MD; audyt przy edycji; audyt punktowy W15 — 2026-10-09
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -21,6 +21,7 @@
 `[BIO: DIAGRAM type=FLOW]`
 `sygnał → cykl komórkowy → kontrola → niekontrolowany wzrost`
 `[/BIO: DIAGRAM]`
+@opis Niekontrolowany wzrost komórek może wiązać się z zaburzeniem genów regulujących cykl komórkowy, naprawę DNA i śmierć komórki. Pojedyncza mutacja lub pojedyncze uszkodzenie DNA nie oznacza automatycznie nowotworu.
 
 **Co uczeń ma zauważyć:** nowotwór jako zaburzenie kontroli, nie „osobna mutacja”.
 
@@ -380,3 +381,34 @@ To **model wyjaśniający**, a nie reguła, że każde uszkodzenie przechodzi ca
 
 
 <!-- ==================== BEGIN L016A ==================== -->
+
+
+## 23. Doprecyzowanie — uszkodzenie, mutacja i nowotwór (W15)
+
+1. **Uszkodzenie DNA** to zmiana chemiczna lub strukturalna, która może zostać naprawiona.
+2. **Mutacja** to utrwalona zmiana materiału genetycznego.
+3. **Nowotwór** rozwija się wskutek zaburzeń regulacji wzrostu i przeżycia komórek; proces zwykle wymaga kilku zmian i zależy także od środowiska tkanki.
+
+Dlatego zdanie „UV uszkadza DNA” nie znaczy, że każde narażenie prowadzi do mutacji ani że każda mutacja prowadzi do raka. Należy mówić o mechanizmie i wzroście ryzyka, nie o nieuchronności.
+
+## AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)
+
+**Zakres:** kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.
+
+### Uściślenia do utrzymania w treści
+- Rozróżnić uszkodzenie DNA (zmiana chemiczna, czasem odwracalna), mutację (utrwalona zmiana sekwencji/struktury materiału genetycznego) i nowotwór (proces wieloetapowy, zwykle związany z nagromadzeniem zmian i wpływem środowiska tkankowego).
+- Nie utożsamiać wszystkich nowotworów złośliwych z jednym przebiegiem: naciekanie i przerzuty są cechami nowotworów złośliwych, a nie każdego guza.
+- W zadaniach o UV mówić o wzroście ryzyka i mechanizmie uszkadzania DNA, nie o nieuchronnym skutku każdego narażenia.
+
+### Status
+- Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
+- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+
+## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana odpowiedzi o mutacjach, uszkodzeniach DNA i nowotworach.
+
+- Uszkodzenie DNA nie jest automatycznie mutacją utrwaloną w sekwencji. Jeśli uszkodzenie zostanie naprawione, mutacja może nie powstać.
+- UV może powodować uszkodzenia DNA; nie każde narażenie prowadzi do nowotworu, a ryzyko zależy m.in. od dawki, czasu, ochrony i naprawy DNA.
+- Nowotwór nie jest synonimem pojedynczej mutacji. Rozwój nowotworu zwykle wiąże się z nagromadzeniem zmian oraz zaburzeniem kontroli podziałów, przeżycia i innych procesów komórkowych.
+- **Status:** dodano kryteria rozróżniania pojęć; nie oznacza to pełnego sprawdzenia każdego klucza.

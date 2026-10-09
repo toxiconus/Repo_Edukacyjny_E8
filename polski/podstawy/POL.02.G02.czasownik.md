@@ -5,7 +5,7 @@ tytul: Czasownik — formy, odmiana, aspekt, tryb i strona
 lead: Rozpoznawaj formy czasownika, opisuj ich cechy i buduj poprawne zdania.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy; powiązania: G01, G06, G12, L006
-stan: ROZBUDOWANA v2.0 — po analizie źródeł i kontroli wewnętrznej; wymaga niezależnej kontroli polonistycznej
+stan: W1 — GPT-6, 2026-10-09; kontrola redakcyjno-merytoryczna, wymaga niezależnej recenzji polonistycznej
 utworzono: 2026-10-09
 poziom: [[poziom:SP]] [[LKO]]
 ---
@@ -376,3 +376,18 @@ Czasownik należy analizować wielowymiarowo: jedna forma może jednocześnie mi
 - Metoda: porównanie dotychczasowej lekcji G02, mastera `POLSKI_PODSTAWA_PLUS`, istniejącej lekcji HTML L006 oraz lekcji powiązanych.
 - Kontrola wewnętrzna: sprawdzono przykłady, rozróżnienie form osobowych i nieosobowych, aspekt, czasy, tryby, stronę, zapis „nie” i „by”, klucze zadań.
 - Ograniczenie: punktacja ćwiczeń jest autorska, nieoficjalna; potrzebna niezależna kontrola polonistyczna, w tym aktualnych reguł normatywnych.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+**Zakres kontroli:** aspekt, czasy, tryby, strona, formy nieosobowe, zapis „nie” i cząstki „by”, odróżnianie czasownika od rzeczownika odczasownikowego oraz klucze.
+
+**Ustalenia:**
+- Zachowano rozróżnienie formy nieosobowej na -no/-to (*zrobiono, napisano*) i strony biernej (*zostało zrobione, został napisany*).
+- Doprecyzowano, że forma *przeczytam* ma znaczenie przyszłe, choć jest prostą formą czasu przyszłego czasownika dokonanego.
+- Utrzymano rozróżnienie aspektu od czasu oraz osobowych i nieosobowych form czasownika.
+- Zapis cząstki „by” zależy od konstrukcji; nie należy sprowadzać go do jednej reguły mechanicznej.
+- Zadania i punktacja są autorskie, treningowe i nieoficjalne.
+
+**Do dalszej kontroli:** niezależna korekta polonistyczna wszystkich przykładów i pełnych kluczy oraz porównanie wymagań z aktualnymi materiałami egzaminacyjnymi.
+
+**Status:** kontrola redakcyjno-merytoryczna wykonana w podanym zakresie; nie jest to pełna recenzja ekspercka.

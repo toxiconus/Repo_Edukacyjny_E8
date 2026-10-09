@@ -4,7 +4,7 @@ przedmiot: język polski
 blok: G — gramatyka i składnia
 tytul: Rzeczownik — znaczenie, kategorie gramatyczne, odmiana i funkcje
 wersja: 3.0
-status: ROZBUDOWANA PO AUDYCIE WEWNĘTRZNYM; wymaga zewnętrznej kontroli W1/W2
+status: W1 — GPT-6, 2026-10-09; kontrola redakcyjno-merytoryczna, wymaga niezależnej recenzji polonistycznej
 poziom: szkoła podstawowa, klasy 7–8; rozszerzenie konkursowe oznaczone osobno
 powiazania: G02 czasownik; G03 przymiotnik; G04 liczebnik; G05 zaimek; G06 imiesłowy; G12 części zdania; G13 związki wyrazowe; G14 zdanie pojedyncze; L005 Kajko i Kokosz
 ---
@@ -471,3 +471,17 @@ Jeśli trudność sprawia **przypadek**, wróć do tabeli z sekcji 6 i analizuj 
 ## 23. Źródła i uwagi redakcyjne
 
 Lekcja została opracowana na podstawie istniejącego materiału `POL.02.G01.rzeczownik.md`, sekcji o rzeczowniku w pliku `POLSKI_PODSTAWA_PLUS`, materiałów L005 oraz powiązanych notatek gramatycznych w repozytorium. Zadania i skala testu są autorskie i treningowe. Przed uznaniem lekcji za ostatecznie zweryfikowaną należy przeprowadzić niezależny audyt poprawności językowej i porównać zakres z aktualnymi wymaganiami szkoły oraz wymaganiami konkursowymi właściwymi dla danego województwa.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+**Zakres kontroli:** definicja i klasyfikacja rzeczownika, rodzaj i liczba, przypadki, rzeczowniki odczasownikowe, biernik rodzaju męskiego, pisownia „nie”, przykłady i klucze.
+
+**Ustalenia:**
+- W lekcji wskazano, że pytania „kto? co?” są wskazówką, a nie samodzielnym testem rozstrzygającym; potrzebny jest kontekst i analiza formy.
+- Zachowano rozróżnienie części mowy i części zdania oraz oddzielono rodzaj gramatyczny od płci.
+- Reguły biernika męskiego opisano jako typowe, a nie bezwyjątkowe; formę należy sprawdzać w kontekście.
+- Zadania, samoocena i progi procentowe są autorskie/treningowe, nie stanowią oficjalnej punktacji CKE.
+
+**Do dalszej niezależnej kontroli:** pełna korekta językowa wszystkich przykładów i kluczy oraz weryfikacja aktualnych przykładów ortograficznych w źródle normatywnym.
+
+**Status:** kontrola redakcyjno-merytoryczna wykonana w podanym zakresie; nie jest to pełna recenzja ekspercka.

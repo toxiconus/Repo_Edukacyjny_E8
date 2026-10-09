@@ -5,7 +5,7 @@ tytul: Rozmnażanie i rozwój człowieka
 lead: Układy rozrodcze, cykl miesiączkowy, ciąża i etapy życia.
 plakietki: [[basic:E8]][[exam:KONKURS]]
 zakres: LKO biologia etap II pkt III.11
-stan: UZUPEŁNIONY v1
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 wersja: 2026-10-09
 ---
 
@@ -85,3 +85,9 @@ Gotowe. Poziom dostosowany do podstawy programowej klasy 8 i typowych konkursów
 - DANE: na jakim poziomie (dni cyklu, hormony) uczy szkoła?
 - DANE: doświadczenia z podręcznika lub z lekcji
 - DANE: zadania rejonowe LKO biologia + klucz
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Sprawdzono roboczo rozróżnienie zapłodnienia, rozwoju zarodkowego i płodowego oraz ogólną rolę gamet.
+- Długość cyklu miesiączkowego i moment owulacji różnią się między osobami i cyklami; nie przedstawiać „14. dnia” jako reguły dla każdej osoby.
+- Treści o dojrzewaniu i zdrowiu reprodukcyjnym formułować rzeczowo, bez zawstydzania i bez zastępowania konsultacji medycznej.
+- Zakres konkursowy wymaga niezależnego porównania z aktualnym zakresem LKO.

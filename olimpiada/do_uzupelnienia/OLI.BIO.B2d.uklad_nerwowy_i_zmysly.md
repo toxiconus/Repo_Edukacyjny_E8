@@ -5,7 +5,7 @@ tytul: Układ nerwowy i narządy zmysłów
 lead: Bodziec → receptor → nerw → ośrodek → efektor; oko i ucho jako przetworniki bodźców.
 plakietki: [[basic:E8]][[exam:KONKURS]]
 zakres: LKO biologia etap II pkt III.8–9
-stan: UZUPEŁNIONY v1
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 wersja: 2026-10-09
 ---
 
@@ -105,3 +105,9 @@ Gotowe.
 - DANE: doświadczenia ze zmysłami z podręcznika (plamka ślepa, rozmieszczenie receptorów)
 - DANE: doświadczenia z podręcznika lub z lekcji
 - DANE: zadania rejonowe LKO biologia + klucz
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Sprawdzono roboczo ciąg bodziec–receptor–droga przewodzenia–ośrodek–efektor oraz rozróżnienie odruchu od reakcji świadomej.
+- W opisach oka i ucha odróżniać odbiór bodźca od interpretacji sygnału przez układ nerwowy; nie przypisywać samej siatkówce świadomego widzenia.
+- W zadaniach o zdrowiu zmysłów unikać zaleceń diagnostycznych; podawać bezpieczne, ogólne informacje.
+- Zakres konkursowy wymaga niezależnego porównania z aktualnym zakresem LKO.

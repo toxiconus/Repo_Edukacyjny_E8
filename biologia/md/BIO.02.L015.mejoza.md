@@ -1348,3 +1348,32 @@ MD = HTML na plus (wykład v3.8 + warstwa v5.1/v5.2). Brak luk merytorycznych do
 
 <!-- ==================== BEGIN L016 ==================== -->
 :::
+
+
+## Doprecyzowanie — wynik mejozy zależy od organizmu (W15)
+
+- U człowieka spermatogeneza prowadzi zwykle do czterech funkcjonalnych plemników, natomiast oogeneza — do jednej dużej komórki jajowej i małych ciałek kierunkowych. Nie opisuj obu procesów jako „czterech równych gamet”.
+- U roślin mejoza prowadzi do **zarodników**, a gamety powstają później w gametoficie, zwykle przez mitozę.
+- Crossing-over zachodzi w profazie I; niezależne ustawienie par homologów w metafazie I wpływa na kombinacje chromosomów. Zapłodnienie dodaje kolejne źródło losowości.
+
+## AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)
+
+**Zakres:** kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.
+
+### Uściślenia do utrzymania w treści
+- Potwierdzenie kluczowego rozróżnienia: po mejozie I liczba zestawów chromosomów jest zredukowana, ale każdy chromosom zwykle nadal składa się z dwóch chromatyd.
+- Opis „cztery komórki” nie jest uniwersalnym opisem oogenezy człowieka: wynik obejmuje jedną dużą komórkę jajową i małe ciałka kierunkowe; cytokineza jest nierówna.
+- Źródła różnorodności rozdzielić: crossing-over zachodzi w profazie I, niezależna orientacja par homologów w metafazie I, a losowe łączenie gamet podczas zapłodnienia.
+
+### Status
+- Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
+- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+
+## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana zadań o mejozie, gametach i ploidalności; nie jest to pełna walidacja wszystkich odpowiedzi.
+
+- Po mejozie I komórki są haploidalne (n), ale chromosomy zwykle nadal mają po dwie chromatydy; po mejozie II chromatydy siostrzane zostają rozdzielone.
+- U człowieka typowa gameta ma 23 chromosomy. Nie wpisuj „23 pary” — to liczba dla diploidalnej komórki somatycznej (46 chromosomów, 23 pary homologiczne).
+- U roślin cykle życiowe obejmują przemianę pokoleń; gamety powstają mitotycznie w gametoficie, a mejoza prowadzi do powstania zarodników. Nie uogólniać modelu zwierzęcego na wszystkie organizmy.
+- **Status:** doprecyzowano zasady kontroli kluczy; pełna walidacja odpowiedzi pozostaje do wykonania.

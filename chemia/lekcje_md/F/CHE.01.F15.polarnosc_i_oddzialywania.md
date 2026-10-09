@@ -6,6 +6,7 @@ wymaga: "F11; F13; F14"
 poglebia: "F18; R01–R03; J01–J02"
 zrodla: "MASTER v17.0; MASTER v15.0; MASTER v14.0"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W6 — GPT-6, 2026-10-09; poprawki wprowadzone do treści kanonicznej, wymaga niezależnej recenzji chemicznej
 ---
 # CHE.01F.15-POLARNOSC — POLARNOŚĆ WIĄZAŃ, CZĄSTECZEK I ODDZIAŁYWANIA
 
@@ -514,32 +515,69 @@ Pary elektronowe wokół atomu centralnego odpychają się i układają jak najd
 
 <!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 7113–7894 -->
 
+## UZUPEŁNIENIE KANONICZNE W6 — POLARNOŚĆ I ODDZIAŁYWANIA
+
+### Od elektroujemności do polarności
+
+Elektroujemność opisuje zdolność atomu do przyciągania wspólnej pary elektronowej w wiązaniu. Nie jest ładunkiem atomu ani jonu. Gdy para elektronowa jest przesunięta ku bardziej elektroujemnemu atomowi, zapisujemy ładunki częściowe δ⁻ i δ⁺; nie oznaczają one pełnych ładunków jonowych. Przykład: Hδ⁺—Clδ⁻. Wiązanie H—H jest niespolaryzowane, ponieważ oba atomy jednakowo przyciągają elektrony.
+
+Dla często omawianych niemetali orientacyjny porządek malejącej elektroujemności to F > O > Cl > N > Br > I > S > C > H. To porządek przybliżony, a wartości zależą od skali. Nie istnieje jedna sztywna granica różnicy elektroujemności, która bez kontekstu rozstrzyga każdy typ wiązania. Wiązanie C—H w szkolnych modelach często traktuje się jako prawie niespolaryzowane.
+
+| Pojęcie | Znaczenie |
+|---|---|
+| Elektroujemność | Zdolność atomu do przyciągania elektronów w wiązaniu |
+| Ładunek jonu | Ładunek elektryczny całego jonu, np. Cl⁻ |
+| Ładunek częściowy | Oznaczenie nierównomiernego rozkładu gęstości elektronowej, np. δ⁺/δ⁻ |
+| Moment dipolowy | Wielkość wektorowa opisująca rozdzielenie ładunków |
+| Polarność cząsteczki | Niezerowy wypadkowy moment dipolowy cząsteczki |
+
+### Dlaczego geometria ma znaczenie?
+
+- **HCl:** wiązanie polarne; w cząsteczce dwuatomowej nie ma drugiego dipola, który mógłby je skasować, więc HCl jest polarny.
+- **CO₂:** każde wiązanie C=O jest polarne, ale cząsteczka jest liniowa i symetryczna; dipole skierowane przeciwnie znoszą się, więc cała cząsteczka jest niepolarna.
+- **H₂O:** wiązania O—H są polarne, a cząsteczka ma kształt kątowy; dipole się nie znoszą, więc H₂O jest polarna.
+- **NH₃:** geometria piramidy trygonalnej sprawia, że dipole wiązań nie znoszą się całkowicie; cząsteczka jest polarna.
+
+### Oddziaływania międzycząsteczkowe
+
+Siły dyspersyjne występują między wszystkimi atomami i cząsteczkami. Oddziaływania dipol–dipol dotyczą cząsteczek polarnych. Wiązanie wodorowe jest szczególnym, kierunkowym oddziaływaniem, które w typowych przykładach szkolnych występuje, gdy H związany z F, O lub N oddziałuje z wolną parą elektronową F, O lub N innej cząsteczki albo odpowiedniego fragmentu. Nie jest tym samym co kowalencyjne wiązanie O—H lub N—H. Oddziaływania międzycząsteczkowe wpływają m.in. na temperaturę wrzenia, lepkość i rozpuszczalność; zwykle są słabsze od wiązań chemicznych wewnątrz cząsteczek.
+
+### Sprawdź się
+
+1. Które wiązanie jest zwykle bardziej polarne: H—F czy H—Cl? **H—F**, bo różnica elektroujemności jest większa.
+2. Dlaczego CO₂ jest niepolarny mimo polarnych wiązań C=O? **Dipole znoszą się dzięki liniowej, symetrycznej geometrii.**
+3. Dlaczego H₂O jest polarna? **Ma polarne wiązania i kątową geometrię, więc dipole się nie znoszą.**
+4. Czym różni się O—H w jednej cząsteczce wody od wiązania wodorowego między cząsteczkami? **O—H jest wiązaniem kowalencyjnym; wiązanie wodorowe to oddziaływanie między odpowiednimi fragmentami cząsteczek.**
+5. Dlaczego nie wolno utożsamiać elektroujemności z ładunkiem jonu? **Pierwsza opisuje przyciąganie elektronów w wiązaniu, a drugi jest ładunkiem całego jonu.**
+
+[[exam:KONKURS]] W opisie wektorowym momenty dipolowe dodaje się jako wektory, nie przez samo dodawanie ich wartości liczbowych.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
-### Poprawki
+### Poprawki — status wdrożenia
 
-- Polarność wiązania wynika z nierównomiernego rozkładu gęstości elektronowej.
-- Elektroujemność jest miarą zdolności atomu do przyciągania elektronów w wiązaniu.
-- Wiązanie między identycznymi atomami, na przykład H-H, jest kowalencyjne niespolaryzowane.
-- Wiązanie między różnymi atomami może być polarne, ale sama różnica elektroujemności nie wystarcza do określenia polarności całej cząsteczki.
-- Polarność cząsteczki zależy od:
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Polarność wiązania wynika z nierównomiernego rozkładu gęstości elektronowej.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Elektroujemność jest miarą zdolności atomu do przyciągania elektronów w wiązaniu.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązanie między identycznymi atomami, na przykład H-H, jest kowalencyjne niespolaryzowane.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązanie między różnymi atomami może być polarne, ale sama różnica elektroujemności nie wystarcza do określenia polarności całej cząsteczki.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Polarność cząsteczki zależy od:
   - polarności wiązań;
   - geometrii cząsteczki;
   - wartości i kierunku momentów dipolowych.
-- Cząsteczka może mieć polarne wiązania, ale być niepolarna, jeśli momenty dipolowe wzajemnie się znoszą.
-- Nie przedstawiaj elektroujemności jako „ładunku atomu”.
-- Elektroujemność nie jest tym samym co ładunek jonu.
-- Nie zapisuj kolejności elektroujemności jako „F O Cl N” bez wyjaśnienia. Dla najczęściej używanych niemetali poprawna kolejność malejąca to:
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Cząsteczka może mieć polarne wiązania, ale być niepolarna, jeśli momenty dipolowe wzajemnie się znoszą.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie przedstawiaj elektroujemności jako „ładunku atomu”.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Elektroujemność nie jest tym samym co ładunek jonu.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie zapisuj kolejności elektroujemności jako „F O Cl N” bez wyjaśnienia. Dla najczęściej używanych niemetali poprawna kolejność malejąca to:
 
  F > O > Cl > N > Br > I > S > C > H
 
-- Wartości elektroujemności zależą od zastosowanej skali; podane liczby należy traktować jako wartości przybliżone.
-- Nie wyznaczaj typu wiązania wyłącznie na podstawie sztywnej granicy liczbowej różnicy elektroujemności.
-- Wiązanie C-H często traktuje się szkolnie jako prawie niespolaryzowane, choć różnica elektroujemności nie wynosi dokładnie zero.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wartości elektroujemności zależą od zastosowanej skali; podane liczby należy traktować jako wartości przybliżone.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie wyznaczaj typu wiązania wyłącznie na podstawie sztywnej granicy liczbowej różnicy elektroujemności.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązanie C-H często traktuje się szkolnie jako prawie niespolaryzowane, choć różnica elektroujemności nie wynosi dokładnie zero.
 
-### Uzupełnienia
+### Uzupełnienia — status wdrożenia
 
 #### Dipol wiązania
 
@@ -565,32 +603,32 @@ Nie są to pełne ładunki jonowe.
 
 HCl:
 
-- wiązanie polarne;
-- cząsteczka liniowa dwuatomowa;
-- moment dipolowy nie znosi się;
-- cząsteczka polarna.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wiązanie polarne;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka liniowa dwuatomowa;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): moment dipolowy nie znosi się;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka polarna.
 
 CO₂:
 
-- oba wiązania C=O są polarne;
-- cząsteczka jest liniowa;
-- momenty dipolowe mają przeciwne kierunki;
-- cząsteczka jest niepolarna.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): oba wiązania C=O są polarne;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka jest liniowa;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): momenty dipolowe mają przeciwne kierunki;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka jest niepolarna.
 
 H₂O:
 
-- wiązania O-H są polarne;
-- cząsteczka ma kształt kątowy;
-- momenty dipolowe nie znoszą się;
-- cząsteczka jest polarna.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wiązania O-H są polarne;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka ma kształt kątowy;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): momenty dipolowe nie znoszą się;
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka jest polarna.
 
 #### Oddziaływania międzycząsteczkowe
 
-- Siły dyspersyjne występują między wszystkimi cząsteczkami i atomami.
-- Oddziaływania dipol–dipol występują między cząsteczkami polarnymi.
-- Wiązania wodorowe są szczególnie silnym rodzajem oddziaływań, gdy wodór jest związany z silnie elektroujemnym atomem, najczęściej F, O lub N.
-- Wiązanie wodorowe nie jest tym samym co wiązanie kowalencyjne O-H lub N-H.
-- Oddziaływania międzycząsteczkowe są zwykle słabsze niż wiązania chemiczne wewnątrz cząsteczek, ale wpływają między innymi na temperaturę wrzenia, lepkość i rozpuszczalność.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Siły dyspersyjne występują między wszystkimi cząsteczkami i atomami.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Oddziaływania dipol–dipol występują między cząsteczkami polarnymi.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązania wodorowe są szczególnie silnym rodzajem oddziaływań, gdy wodór jest związany z silnie elektroujemnym atomem, najczęściej F, O lub N.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązanie wodorowe nie jest tym samym co wiązanie kowalencyjne O-H lub N-H.
+- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Oddziaływania międzycząsteczkowe są zwykle słabsze niż wiązania chemiczne wewnątrz cząsteczek, ale wpływają między innymi na temperaturę wrzenia, lepkość i rozpuszczalność.
 
 #### Zadania
 

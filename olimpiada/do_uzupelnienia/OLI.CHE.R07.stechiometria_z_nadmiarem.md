@@ -5,7 +5,7 @@ tytul: Obliczenia z równań — substraty w stosunku niestechiometrycznym (bez 
 lead: Który substrat się skończy, ile zostanie nadmiaru, ile powstanie produktu — tylko masy i proporcje.
 plakietki: [[basic:E8]][[exam:KONKURS]][[exam:LKO-REJ]]
 zakres: LKO etap II / rejonowy + E8
-stan: MAX v1 (2026-10-09)
+stan: W1 — GPT-6, 2026-10-09; audyt roboczy, niezależna recenzja wymagana
 ---
 
 # 0. Cel i kryterium gotowości
@@ -164,6 +164,16 @@ Odczyn mieszaniny: **zasadowy** (nadmiar NaOH).
 - DANE: czy w szkole liczycie S i P jako S₈/P₄, czy jako S/P?
 - DANE: zadania z nadmiarem z arkuszy LKO + klucz (punktacja za metodę!)
 
+## W20 — kontrola obliczeń i kluczy (2026-10-09, GPT-6)
+
+Kontrola rachunkowa treści głównej:
+- Zadanie 1: 10 g Mg daje teoretycznie 16,67 g MgO; zużycie O₂ wynosi 6,67 g, pozostaje 13,33 g O₂.
+- Zadanie 2: 5,4 g Al może wytworzyć 0,6 g H₂. Sama masa wodoru nie dowodzi nadmiaru kwasu, jeśli nie podano ilości początkowej H₂SO₄.
+- Zadanie 3: 10 g HNO₃ jest reagentem ograniczającym; powstaje ok. 13,49 g NaNO₃, zużywa się ok. 6,35 g NaOH, pozostaje ok. 1,65 g NaOH.
+- Mini-test: 2 g H₂ wymaga 16 g O₂; przy 20 g O₂ tlen jest w nadmiarze, a powstaje 18 g H₂O.
+
+Wartości są zaokrąglone zgodnie z danymi wejściowymi. Audyt celowany, nie pełna walidacja każdego zadania.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -321,3 +331,9 @@ Dostępne jest 0,5 mola, więc kwas chlorowodorowy jest reagentem ograniczający
 Powstaje:
 
  n(H₂)=0,5 / 2=0,25 mol
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+- Zweryfikowano przykład 4 g H₂ + 40 g O₂: zgodnie z 2H₂ + O₂ → 2H₂O, 4 g H₂ reaguje z 32 g O₂, powstaje 36 g H₂O, pozostaje 8 g O₂.
+- Zweryfikowano przykład 2Mg + O₂ → 2MgO dla 10 g Mg i 20 g O₂: z 10 g Mg powstaje około 16,67 g MgO, a O₂ pozostaje w nadmiarze (zużycie ok. 6,67 g; reszta ok. 13,33 g). Zaokrąglenia powinny być konsekwentne.
+- Słusznie zaznaczono, że z samej ilości H₂ w reakcji Al z kwasem nie da się rozstrzygnąć, czy kwas był w nadmiarze, jeżeli nie podano jego ilości.
+- Dalsze zadania i klucze wymagają kontroli rachunkowej w całości.

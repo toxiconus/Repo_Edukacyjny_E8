@@ -5,9 +5,9 @@ tytul: Liczebnik
 lead: Ile? Który z kolei? — liczebniki główne, porządkowe, zbiorowe, ułamkowe i nieokreślone; „dwaj / dwóch / dwie / dwoje”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L004, G01, G13
-stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
+stan: W1 — GPT-6, 2026-10-09; kontrola treści wykonana, W2 źródeł normatywnych nadal wymagana
 utworzono: 2026-10-09
-wersja: 3.0
+wersja: 3.1
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -358,9 +358,9 @@ Warto odróżnić mianownik od przypadków zależnych: *obaj bracia*, ale *nie b
 2. Rozmawiałem z ___ (trzy) kolegami.
 3. ___ (pięć) uczniów nie oddało pracy.
 4. Spotkamy się ___ (pierwszy) września.
-5. W konkursie wystąpiło ___ (oboje / obaj) rodzeństwo — wybierz formę stosowną do znaczenia i wyjaśnij.
+5. ___ (oboje / obaj) dzieci przyszło na konkurs — wybierz formę i uzasadnij.
 
-**Klucz:** 1. dwóm; 2. trzema; 3. pięciu; 4. pierwszego; 5. *oboje rodzeństwo* — gdy mówimy o dwojgu rodzeństwa jako parze; dopuszczalne sformułowanie zależy od sensu zdania.
+**Klucz:** 1. dwóm; 2. trzema; 3. pięciu; 4. pierwszego; 5. *oboje dzieci przyszło* — liczebnik zbiorowy *oboje* łączy się tu z rzeczownikiem *dzieci*; orzeczenie ma formę liczby pojedynczej rodzaju nijakiego.
 
 **C. Popraw i nazwij błąd:**
 1. *W 8 klasa czytaliśmy lekturę.*
@@ -384,3 +384,18 @@ Wniosek: w jednym zdaniu może wystąpić kilka rodzajów liczebników, a ich fo
 ### 14.8. Samokontrola po drugim cyklu
 
 Zaznacz: **umiem samodzielnie / umiem z pomocą / muszę powtórzyć**: rozróżniam rodzaje liczebników; dobieram formę do rodzaju i przypadku rzeczownika; uzgadniam orzeczenie; zapisuję daty i liczebniki porządkowe; odróżniam liczebnik od rzeczownika o znaczeniu liczbowym. Jeśli któryś punkt pozostaje niepewny, wróć do odpowiedniej tabeli i wykonaj ponownie ćwiczenia B–C.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+### Zakres kontroli
+Sprawdzono definicje i klasyfikację liczebników, przykłady odmiany, zgodę orzeczenia, zapis dat i liczebników porządkowych oraz klucze ćwiczeń widoczne w lekcji.
+
+### Ustalenia i poprawki
+1. **Doprecyzowanie klasyfikacji:** wyrazy takie jak *kilka, wiele, parę* bywają w szkolnych opracowaniach ujmowane jako liczebniki nieokreślone, ale w opisach gramatycznych część z nich może być klasyfikowana odmiennie zależnie od przyjętego modelu. W zadaniu wymagającym jednej odpowiedzi należy stosować klasyfikację podaną w tabeli tej lekcji.
+2. **„Oboje rodzeństwo”**: przykład jest niezręczny składniowo i może utrwalać niejasność. Zalecana forma: *oboje dzieci / oboje z rodzeństwa przyszło* albo *brat i siostra przyszli*. Samo *rodzeństwo* jest rzeczownikiem zbiorowym rodzaju nijakiego; w zdaniu należy dopasować konstrukcję do zamierzonego znaczenia.
+3. **Zgoda orzeczenia przy liczebnikach:** przykłady *Pięciu uczniów przyszło* oraz *Trzy dziewczyny przyszły* są poprawne, ale zgoda zależy od typu liczebnika i konstrukcji podmiotu; nie należy uogólniać jednej reguły na wszystkie liczebniki.
+4. **Zapis dat:** *spotkamy się pierwszego września* jest poprawne; zapis cyfrą wymaga kropki po liczebniku porządkowym, np. *1 września* w zapisie daty jest konwencją daty, natomiast *w 1. klasie* oznacza liczebnik porządkowy.
+5. **Klucz ćwiczenia C.3:** zdanie *Dwoje chłopców czekało…* nie jest automatycznie błędne gramatycznie w każdej możliwej klasyfikacji, ale w standardowym szkolnym ćwiczeniu o dwóch chłopcach zaleca się *Dwaj chłopcy czekali* albo *Dwóch chłopców czekało*, zgodnie z celem zadania.
+
+### Status
+Nie stwierdzono błędu, który unieważniałby całą lekcję. Najważniejsze ryzyko dotyczy uproszczeń klasyfikacyjnych i niejednoznacznego przykładu z *rodzeństwem*. Wymagana jest jeszcze niezależna kontrola W2 źródeł normatywnych i zgodności z aktualnym informatorem egzaminacyjnym.

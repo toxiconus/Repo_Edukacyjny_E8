@@ -5,7 +5,7 @@ tytul: Przyimek
 lead: Mały wyraz, wielka władza: w, na, do, spod, zza — przyimek rządzi przypadkiem i tworzy wyrażenie przyimkowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G01, G12, G13
-stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
+stan: W1 — GPT-6, 2026-10-09; kontrola zewnętrzna treści i kluczy; wersja 3.1
 utworzono: 2026-10-09
 wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
@@ -305,7 +305,7 @@ W zdaniu *Przed lekcją spotkaliśmy się przed szkołą* występują dwa wyraż
 
 **B. Popraw pisownię:** *z poza domu; z pod łóżka; na pewno; zpowrotem; przedewszystkim; przed tym poszedłem spać* (zamierzone znaczenie: wcześniej).
 
-**Klucz:** *spoza domu; spod łóżka; na pewno; z powrotem; przede wszystkim; przedtem poszedłem spać* — jeśli chodzi o znaczenie „wcześniej”.
+**Klucz:** *spoza domu; spod łóżka; na pewno; z powrotem; przede wszystkim; przedtem poszedłem spać* — jeśli chodzi o znaczenie „wcześniej”. Uwaga: *przed tym* piszemy rozdzielnie, gdy *tym* jest zaimkiem, np. *przed tym budynkiem*; *przedtem* to przysłówek „wcześniej”.
 
 **C. Określ funkcję całego wyrażenia:**
 1. *Czekam na kolegę.*
@@ -322,3 +322,12 @@ W zdaniu *Przed lekcją spotkaliśmy się przed szkołą* występują dwa wyraż
 ### 14.8. Samokontrola
 
 Potrafię znaleźć wyrażenie przyimkowe, wskazać przypadek, odróżnić ruch od położenia bez mechanicznego stosowania reguły, rozpoznać rekcję czasownika, nazwać funkcję całego wyrażenia i poprawnie zapisać częste połączenia.
+
+
+## AUDYT W1 — wynik (GPT-6, 2026-10-09)
+
+- Doprecyzowano różnicę między przysłówkiem *przedtem* („wcześniej”) a wyrażeniem *przed tym*.
+- Sprawdzono rekcję przyimków w tabeli oraz formy złożone *spoza, spod, zza, sprzed*.
+- Klucze ćwiczeń: kontrola wykonana; w zadaniu o funkcji wyrażeń przyimkowych zachowano zastrzeżenie, że funkcja zależy od kontekstu.
+
+**Źródła normatywne:** Rada Języka Polskiego PAN, „Zasady pisowni i interpunkcji polskiej” (https://rjp.pan.pl/zasady-pisowni-i-interpunkcji-polskiej-2/); CKE, informacja z 20.08.2025 r. — w latach 2026–2030 na egzaminach akceptowane są zasady dotychczasowe i nowe (https://bip.cke.gov.pl/attachments/download/10293).

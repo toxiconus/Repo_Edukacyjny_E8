@@ -5,7 +5,7 @@ blok: D
 numer: 6
 wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
+status: W2 — GPT-6, 2026-10-09; audyt kontrolny i doprecyzowanie zapisane; niezależna recenzja zewnętrzna niepotwierdzona
 wymaga: rozpoznawanie narratora, czasu, miejsca i następstwa wydarzeń
 ---
 
@@ -215,3 +215,11 @@ Scena: pokazuje miejsce, konkretną czynność, przeszkodę, reakcję bohatera i
 - [x] Zakończenie nie usuwa konsekwencji i wynika z decyzji postaci.
 - [x] Dodano narzędzie do sprawdzania funkcji każdej sceny.
 - [ ] Pozostaje niezależna recenzja polonistyczna i sprawdzenie wymagań aktualnego egzaminu.
+
+## AUDYT W2 — wynik (GPT-6, 2026-10-09)
+
+**Doprecyzowanie kontrolne:** Opowiadanie twórcze powinno spełniać wszystkie elementy polecenia; fabuła, dialog, opis i puenta mają być funkcjonalne, a nie dodane mechanicznie.
+
+- Kontrola zakresu: zadanie należy rozwiązywać zgodnie z konkretnym poleceniem; szablon nie zastępuje realizacji tematu.
+- Kryteria i punktacje w ćwiczeniach są treningowe, chyba że plik wyraźnie cytuje oficjalny dokument. Nie przedstawiać ich jako oficjalnej punktacji CKE.
+- Źródło do kontroli aktualnych wymagań: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory; informator język polski: https://bip.cke.gov.pl/attachments/download/9824.

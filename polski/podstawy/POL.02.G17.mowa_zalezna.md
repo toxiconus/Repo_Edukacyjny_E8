@@ -5,7 +5,7 @@ tytul: Mowa zależna i niezależna
 lead: Przytaczanie cudzych słów: dialog, cytat, przekształcanie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G16
-stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
+stan: W1 — GPT-6, 2026-10-09; kontrola przekształceń i interpunkcji
 utworzono: 2026-10-09
 wersja: 2.1
 ---
@@ -134,4 +134,13 @@ W praktyce szkolnej najważniejsza jest czytelność: każda zmiana mówiącego 
 3. Wymień trzy elementy, które mogą zmienić się przy przekształceniu (2 pkt).
 4. Wyjaśnij, dlaczego *„Może przyjdę”* nie powinno być automatycznie relacjonowane jako obietnica (1 pkt).
 
-**Klucz:** 1. dosłowny cytat vs relacja/parafraza; 2. *Mama zapytała, gdzie położyłem/położyłam klucze* — forma zależy od osoby mówiącej; 3. osoba, zaimki, określenia czasu/miejsca, forma pytania/rozkazu; 4. bo przypuszczenie nie oznacza pewnej deklaracji.
+**Klucz:** 1. mowa niezależna przytacza wypowiedź bezpośrednio, a zależna relacjonuje jej treść; 2. *Mama zapytała, gdzie położyłem/położyłam klucze* — forma zależy od osoby relacjonującej; 3. mogą zmienić się osoba, zaimki, określenia czasu i miejsca oraz szyk/interpunkcja; 4. *Może przyjdę* wyraża możliwość, więc nie należy zmieniać go w pewną obietnicę.
+
+
+## AUDYT W1 — wynik
+
+- Mowa niezależna/zależna: ✔ sprawdzono definicje i kierunek przekształceń.
+- Zmiana osoby i zaimków: ✔ klucz dopuszcza wariant zależny od osoby relacjonującej.
+- Sens wypowiedzi: ✔ doprecyzowano, że przypuszczenia nie wolno zmieniać w pewną obietnicę.
+
+**Zakres kontroli:** kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.

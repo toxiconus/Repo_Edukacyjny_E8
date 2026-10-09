@@ -16,7 +16,7 @@ stopka: **BIOLOGIA REV01 v1.0** · Organizacja i chemizm życia · 2026
 3. **Organelle:** jądro — DNA, kieruje pracą komórki; mitochondrium — oddychanie, **ATP**; chloroplast — **fotosynteza**; błona — granica i transport; ściana — ochrona i kształt; wakuola — magazyn, turgor; rybosomy — synteza białek.
 4. **Roślinna** = ściana z celulozy + chloroplasty + duża wakuola; **zwierzęca** = bez ściany i chloroplastów; **grzyba** = ściana z chityny, bez chloroplastów; **bakterii** = bez jądra (nukleoid), bez mitochondriów i chloroplastów.
 5. **Mikroskop:** zaczynamy od najmniejszego powiększenia; powiększenie = okular × obiektyw.
-6. **Fotosynteza:** dwutlenek węgla + woda —(światło, chlorofil)→ glukoza + tlen; w chloroplastach.
+6. **Fotosynteza:** w uproszczonym równaniu sumarycznym: **6CO₂ + 6H₂O —(energia światła)→ C₆H₁₂O₆ + 6O₂**; u roślin zachodzi w chloroplastach. Równanie pokazuje bilans sumaryczny, nie wszystkie etapy procesu.
 7. **Oddychanie tlenowe:** glukoza + tlen → dwutlenek węgla + woda + energia (ATP); u eukariontów głównie w mitochondriach; **zachodzi stale**, także u roślin i w dzień.
 8. **Fermentacja** — beztlenowy rozkład glukozy; drożdże: glukoza → alkohol etylowy + dwutlenek węgla + energia (mniej niż w oddychaniu tlenowym).
 9. **Czynności życiowe:** odżywianie, oddychanie, wydalanie, ruch, reagowanie na bodźce, wzrost i rozwój, rozmnażanie.
@@ -153,7 +153,7 @@ Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest **selekty
 ## 6 | Fotosynteza [[basic:E8]] {#fotosynteza}
 
 ::: regula
-**Fotosynteza** — proces, w którym organizm samożywny wytwarza związki organiczne (glukozę) z dwutlenku węgla i wody, wykorzystując **energię światła** pochłanianą przez **chlorofil**. U roślin zachodzi w **chloroplastach**; produktem ubocznym jest **tlen**.
+**Fotosynteza tlenowa u roślin** — proces, w którym z CO₂ i wody powstają związki organiczne dzięki energii światła. W szkolnym równaniu sumarycznym zapisujemy: **6CO₂ + 6H₂O —(światło)→ C₆H₁₂O₆ + 6O₂**. U roślin zachodzi w chloroplastach. W bardziej zaawansowanym ujęciu tlen wydzielany w fotosyntezie pochodzi z wody; organizmy fotosyntetyzujące nie wszystkie wykorzystują ten sam mechanizm.
 :::
 
 $$ 6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂
@@ -421,3 +421,12 @@ Cudzożywność :: pobieranie gotowych związków organicznych z otoczenia
 :::
 
 **Co dalej:** REV02 Różnorodność życia (druga część etapu szkolnego); na etapie rejonowym — organizm człowieka i homeostaza.
+
+
+## AUDYT W19 — chemizm życia i klucze (2026-10-09, GPT-6)
+
+**Zakres:** kontrola celowana równania fotosyntezy i częstych uogólnień.
+
+- Wprowadzono zbilansowane równanie sumaryczne fotosyntezy tlenowej: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. W kluczu należy akceptować równoważny zapis słowny, jeśli pytanie nie wymaga wzorów.
+- Zaznaczono, że jest to bilans sumaryczny, a nie opis wszystkich etapów reakcji.
+- **Status:** poprawiono konkretny zapis w treści głównej; pozostałe klucze nie zostały w tej partii sprawdzone jeden po drugim.

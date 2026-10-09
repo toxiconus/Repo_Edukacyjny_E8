@@ -5,9 +5,9 @@ tytul: Zaimek
 lead: Zamiast nazwy — wskazuje: ja, ten, który, ktoś, nikt; „swój” czy „jego”, „mi” czy „mnie”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L003, G16
-stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
+stan: W1 — GPT-6, 2026-10-09; kontrola treści wykonana, W2 źródeł normatywnych nadal wymagana
 utworzono: 2026-10-09
-wersja: 3.0
+wersja: 3.1
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -371,3 +371,18 @@ Popraw interpunkcję: **„Osoba, która nie powiedziała nikomu nic o swoim pla
 ### 14.8. Samokontrola
 
 Sprawdź, czy potrafisz: nazwać rodzaj zaimka; odmienić zaimki osobowe; odróżnić *mi/mnie*, *go/jego*, *nim/o nim*; właściwie użyć *swój*; rozpoznać zaimek względny i postawić przecinki; poprawnie budować zdania z kilkoma przeczącymi wyrazami; usuwać dwuznaczność odniesienia. Jeśli nie — wróć do sekcji 14.2–14.5.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+### Zakres kontroli
+Sprawdzono definicję, podział zaimków, formy przypadków, użycie *swój*, funkcję zaimków względnych, interpunkcję i klucze ćwiczeń.
+
+### Ustalenia i poprawki
+1. **Klasyfikacja zaimków:** nazwy kategorii (np. „upowszechniające”, „określające”) różnią się między szkolnymi opracowaniami. Na potrzeby zadań należy przyjąć nazwy z tabeli tej lekcji i nie mieszać ich bez wyjaśnienia z inną klasyfikacją.
+2. **„Własną” w zdaniu „Każdy powinien sprawdzić własną odpowiedź”**: wyraz pełni funkcję określenia rzeczownika i może być omawiany jako zaimek dzierżawczy/zwrotny w zależności od przyjętego opisu. Jeśli zadanie dotyczy wyłącznie wskazywania zaimków, trzeba uwzględnić tę szkolną klasyfikację w kluczu.
+3. **Zaimek „który”**: może być pytajny albo względny — rozstrzyga funkcja w zdaniu. W zdaniu *To jest zadanie, którego nie rozumiem* jest względny i wprowadza zdanie podrzędne; przecinek przed nim jest wymagany.
+4. **Formy „mi/mnie”**: obie formy mogą być poprawne w zależności od składni i akcentu, ale nie są wymienne w każdym kontekście. Klucz prawidłowo dopuszcza wariant z naciskiem; zalecane jest dodanie kontekstu, jeśli zadanie ma mieć tylko jedną odpowiedź.
+5. **Dwuznaczność zaimków**: przykłady z *jej* i *jego* trafnie pokazują, że poprawność gramatyczna nie gwarantuje jednoznaczności odniesienia. W rozwiązaniach należy wymagać doprecyzowania osoby, nie tylko „poprawienia przecinka”.
+
+### Status
+Nie znaleziono oczywistego błędu w podanych kluczach końcowych. Najważniejsze pole do poprawy to konsekwencja terminologii i rozróżnianie funkcji zaimka zależnie od kontekstu. Niezależna kontrola W2 źródeł normatywnych pozostaje do wykonania.
