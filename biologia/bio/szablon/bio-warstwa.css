@@ -116,3 +116,6 @@ animation:bio-drift 60s linear infinite}
 .hero{background:linear-gradient(135deg,var(--surface),var(--accent-soft))}
 @media(min-width:640px){.flashcard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .level-contest{background:var(--c-warn-bg);color:var(--c-warn)}
+
+.bv-info>span+span{display:block;margin-top:4px}
+.bw-tbl{overflow-x:auto;-webkit-overflow-scrolling:touch}@media(max-width:480px){.bw-tbl table{font-size:12px}.bw-tbl td,.bw-tbl th{padding:4px 5px}}

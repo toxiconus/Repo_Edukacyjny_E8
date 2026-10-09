@@ -98,6 +98,9 @@ Brak widoczności struktury pod mikroskopem **nie oznacza**, że jej nie ma — 
 | skórka cebuli | wyraźne granice komórek, brak zieleni | ściana komórkowa; ta tkanka nie ma chloroplastów — cebula nadal jest rośliną |
 | wymaz z policzka | komórki bez wyraźnej ściany, z jądrem | komórki zwierzęce |
 
+@viz mikroskop-model | Obraz z mikroskopu a model szkolny | ta sama komórka liścia moczarki
+@opis Okrągłe pole widzenia mikroskopu świetlnego (ok. ×400, bez barwienia): jedna prostokątna komórka liścia moczarki z grubą ścianą komórkową, zielone owalne chloroplasty rozmieszczone przy ścianach, jasny pusty środek — wakuola; jądro słabo widoczne. Przyciski: „model szkolny” pokazuje tę samą komórkę jako uproszczony schemat z podpisami (ściana, błona, cytoplazma, jądro, chloroplasty, wakuola), „zabarw preparat” — jądro po barwieniu płynem Lugola staje się ciemniejszą plamką. Panel pod obrazem mówi, czego w mikroskopie świetlnym nie widać (rybosomy, szczegóły mitochondriów, błona obok ściany). Wniosek: w mikroskopie świetlnym widać tylko część struktur (ściana, chloroplasty, czasem jądro); model szkolny jest uproszczeniem, a nie zdjęciem — nie wszystko, co jest na modelu, zobaczysz w preparacie.
+
 ## 3 | Budowa komórki — organelle [[basic:E8]] {#organelle}
 
 | Struktura | Funkcja | Występuje u |
@@ -137,6 +140,9 @@ Mitochondria i chloroplasty mają **własne DNA** (mtDNA, cpDNA) i rybosomy podo
 
 **Prokarionty** (bakterie, sinice) — bez jądra i bez organelli błonowych. **Eukarionty** (protisty, grzyby, rośliny, zwierzęta) — z jądrem. Sinice prowadzą fotosyntezę, choć nie mają chloroplastów.
 
+@viz komorka-nakladki {start="roslinna"} | Typy komórek: wspólny rdzeń i nakładki | przełączaj typ komórki i warstwy
+@opis Jedna komórka zbudowana z warstw. Wspólny rdzeń każdej komórki: błona komórkowa, cytoplazma, rybosomy. Przyciski dodają nakładki typowe dla danego typu: bakteria (ściana, nukleoid, plazmid, bez jądra), komórka zwierzęca (jądro, mitochondria, bez ściany), roślinna (jądro, mitochondria, chloroplasty, duża wakuola, ściana z celulozy), grzyba (jądro, mitochondria, ściana z chityny, bez chloroplastów). Wniosek: typ komórki rozpoznajemy po obecności lub braku jądra, ściany (i jej budulca), chloroplastów i dużej wakuoli — rdzeń jest wspólny dla wszystkich.
+
 ## 5 | Błona komórkowa i transport [[understand:TRENING]] {#blona}
 
 Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest **selektywnie przepuszczalna** (jedne substancje przechodzą łatwiej, inne trudniej).
@@ -146,6 +152,9 @@ Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest **selekty
 | **dyfuzja** | samorzutny ruch cząsteczek z miejsca o większym stężeniu do miejsca o mniejszym | tlen z płuc do krwi |
 | **osmoza** | ruch **wody** przez błonę selektywnie przepuszczalną w stronę roztworu bardziej stężonego | jędrne komórki roślin (turgor); więdnięcie przy braku wody |
 | transport z udziałem energii | przenoszenie substancji wbrew różnicy stężeń, przez białka błonowe, z użyciem ATP | pobieranie soli przez korzeń |
+
+@viz transport-blona | Przekrój błony: cztery sposoby transportu | kliknij sposób transportu
+@opis Cztery wąskie panele przekroju błony (dwie warstwy fosfolipidów: żółte główki i ogonki), u góry zewnątrz komórki, na dole wnętrze; kropki oznaczają cząsteczki, ich zagęszczenie — stężenie. Dyfuzja prosta: małe cząsteczki przechodzą przez błonę z miejsca o większym stężeniu do mniejszego. Dyfuzja ułatwiona: cząsteczki glukozy przechodzą przez białkowy kanał, też zgodnie ze stężeniem. Transport aktywny: niebieska pompa białkowa przenosi jony wbrew stężeniu, zużywając ATP. Osmoza: przez błonę przechodzi woda w stronę roztworu bardziej stężonego. Kliknięcie panelu pokazuje opis i tabelę porównawczą. Wniosek: tylko transport aktywny wymaga energii; dyfuzja i osmoza zachodzą samorzutnie zgodnie z różnicą stężeń.
 
 ::: nie-myl
 **Błona ≠ ściana.** Błona jest selektywnie przepuszczalna i ma ją każda komórka; ściana daje ochronę i sztywność, a mają ją tylko rośliny, grzyby i bakterie. **Dyfuzja ≠ osmoza:** osmoza dotyczy tylko ruchu wody przez błonę.
