@@ -142,6 +142,9 @@ Zapis **ᴬ_Z X**: u góry liczba masowa A, u dołu liczba atomowa Z, obok symbo
 
 > Elektronów **nie** odczytujesz z A — A mówi tylko o jądrze.
 
+@model f04-nuklid-v01 | Trening: odczytaj zapis nuklidu i policz p, n, e
+@opis Duży zapis nuklidu (np. ³⁵₁₇Cl⁻): u góry liczba masowa A, u dołu liczba atomowa Z, w prawym górnym rogu ładunek jonu. Uczeń wpisuje liczbę protonów, neutronów i elektronów; po „Sprawdź” pola zmieniają kolor (zielony — dobrze, czerwony — źle), pojawia się rachunek p = Z, n = A − Z, e = Z − ładunek oraz model atomu (protony czerwone, neutrony szare, elektrony na powłokach). Licznik pokazuje wynik. Wniosek: liczbę elektronów wyznacza Z i ładunek, a nie liczba masowa; kation ma mniej elektronów niż protonów, anion — więcej.
+
 @model periodic-54 | Układ okresowy z modelami atomów (pierwiastki 1–54) | wybierz pierwiastek: Z, liczba elektronów, schemat atomu
 @opis Interaktywny układ okresowy pierwiastków od 1 do 54; po wybraniu pierwiastka widać jego liczbę atomową Z, liczbę elektronów i schemat atomu z elektronami rozmieszczonymi na powłokach. Wniosek: miejsce pierwiastka w tablicy wynika z liczby protonów i budowy powłok elektronowych.
 

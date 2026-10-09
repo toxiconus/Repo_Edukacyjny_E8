@@ -56,3 +56,4 @@
 - 2026-10-09 14:20 — Odchudzanie per lekcja: profile F02, F03, F05, N02, N03, N04 (1,09–1,21 MB z 1,55); wspolny + s086 (energia jonizacji dla periodic-54); wstrzymane, zostało 7 lekcji (N05 wznawialny). Też: J00–J06 przegląd W22, paczka W1 (eksport/w1_paczka.py), dług @opis = 0.
 - 2026-10-09 16:35 — Odchudzanie per lekcja zakończone: 15/15 profili (N05, R03, REV01, N01_powietrze, FIZ01, F06, N01_tlenki dziś po południu); lekcje 1,19–1,45 MB (było ~3 MB), test 15/15. F05 na atomBohr (powłoki + lupa), atomSVG usunięty.
 - 2026-10-09 17:30 wizualizacje: probówka/parownica w kartach doświadczeń, odparowanie-v01 (F03), R03 krzywe rozpuszczalności + stężenie procentowe, testTube z brzegiem; test 15/15 (1280, 390 px).
+- 2026-10-09 18:15 F04: trening f04-nuklid-v01 (p, n, e z zapisu nuklidu); kontrola molecule3d i tabel rozpuszczalności — bez błędów.
