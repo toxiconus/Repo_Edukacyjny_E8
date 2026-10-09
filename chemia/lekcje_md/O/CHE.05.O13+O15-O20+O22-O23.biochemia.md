@@ -1021,15 +1021,17 @@ Składniki odżywcze pełnią różne funkcje, ale organizm nie wykorzystuje ich
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Tłuszcze są estrami glicerolu i wyższych kwasów karboksylowych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie każdy tłuszcz jest ciałem stałym.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Stan skupienia zależy między innymi od długości łańcuchów i liczby wiązań podwójnych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Tłuszcze nasycone nie zawierają wiązań podwójnych C=C w łańcuchach kwasów tłuszczowych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Tłuszcze nienasycone zawierają co najmniej jedno wiązanie podwójne.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Określenia „nasycony” i „nienasycony” odnoszą się do łańcuchów kwasów tłuszczowych, a nie do całej cząsteczki w prostym sensie.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Tłuszcze nie rozpuszczają się w wodzie, ale mogą rozpuszczać się w niektórych rozpuszczalnikach organicznych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Emulgator ułatwia utworzenie emulsji, ale nie zamienia tłuszczu w roztwór wodny.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie każdy olej jest chemicznie wyłącznie jednym związkiem.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Tłuszcze są estrami glicerolu i wyższych kwasów karboksylowych.
+- Nie każdy tłuszcz jest ciałem stałym.
+- Stan skupienia zależy między innymi od długości łańcuchów i liczby wiązań podwójnych.
+- Tłuszcze nasycone nie zawierają wiązań podwójnych C=C w łańcuchach kwasów tłuszczowych.
+- Tłuszcze nienasycone zawierają co najmniej jedno wiązanie podwójne.
+- Określenia „nasycony” i „nienasycony” odnoszą się do łańcuchów kwasów tłuszczowych, a nie do całej cząsteczki w prostym sensie.
+- Tłuszcze nie rozpuszczają się w wodzie, ale mogą rozpuszczać się w niektórych rozpuszczalnikach organicznych.
+- Emulgator ułatwia utworzenie emulsji, ale nie zamienia tłuszczu w roztwór wodny.
+- Nie każdy olej jest chemicznie wyłącznie jednym związkiem.
 
 #### Uzupełnienia
 
@@ -1037,9 +1039,11 @@ Składniki odżywcze pełnią różne funkcje, ale organizm nie wykorzystuje ich
 
 Typowa cząsteczka tłuszczu zawiera:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): glicerol;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): trzy reszty wyższych kwasów karboksylowych;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): trzy wiązania estrowe.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- glicerol;
+- trzy reszty wyższych kwasów karboksylowych;
+- trzy wiązania estrowe.
 
 ##### Reakcje
 
@@ -1077,29 +1081,33 @@ Uwodornienie części wiązań podwójnych może zmieniać właściwości tłusz
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Cukry, czyli sacharydy, są związkami organicznymi zawierającymi przede wszystkim węgiel, wodór i tlen.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wszystkie cukry mają słodki smak.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie każdy słodki związek jest cukrem.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Glukoza i fruktoza mają ten sam wzór sumaryczny:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Cukry, czyli sacharydy, są związkami organicznymi zawierającymi przede wszystkim węgiel, wodór i tlen.
+- Nie wszystkie cukry mają słodki smak.
+- Nie każdy słodki związek jest cukrem.
+- Glukoza i fruktoza mają ten sam wzór sumaryczny:
 
  C₆H₁₂O₆
 
 ale inną budowę, dlatego są izomerami.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Sacharoza jest dwucukrem zbudowanym z glukozy i fruktozy.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Skrobia i celuloza są polisacharydami zbudowanymi z wielu jednostek glukozy, ale różnią się sposobem połączenia tych jednostek i właściwościami.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Człowiek trawi skrobię, natomiast celuloza pełni głównie funkcję błonnika pokarmowego.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie należy pisać, że celuloza jest całkowicie „niestrawna” w każdym znaczeniu; jej część może być fermentowana przez mikroorganizmy jelitowe.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Glukoza jest cukrem redukującym.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Sacharoza nie daje dodatniej próby Trommera lub Benedicta bez wcześniejszego rozkładu hydrolitycznego.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Próby charakterystyczne nie powinny być przedstawiane jako absolutne identyfikatory bez warunków i kontroli.
+- Sacharoza jest dwucukrem zbudowanym z glukozy i fruktozy.
+- Skrobia i celuloza są polisacharydami zbudowanymi z wielu jednostek glukozy, ale różnią się sposobem połączenia tych jednostek i właściwościami.
+- Człowiek trawi skrobię, natomiast celuloza pełni głównie funkcję błonnika pokarmowego.
+- Nie należy pisać, że celuloza jest całkowicie „niestrawna” w każdym znaczeniu; jej część może być fermentowana przez mikroorganizmy jelitowe.
+- Glukoza jest cukrem redukującym.
+- Sacharoza nie daje dodatniej próby Trommera lub Benedicta bez wcześniejszego rozkładu hydrolitycznego.
+- Próby charakterystyczne nie powinny być przedstawiane jako absolutne identyfikatory bez warunków i kontroli.
 
 #### Uzupełnienia
 
 ##### Podział
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): monosacharydy: glukoza, fruktoza;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): disacharydy: sacharoza, maltoza, laktoza;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): polisacharydy: skrobia, celuloza, glikogen.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- monosacharydy: glukoza, fruktoza;
+- disacharydy: sacharoza, maltoza, laktoza;
+- polisacharydy: skrobia, celuloza, glikogen.
 
 ##### Próba z jodem
 
@@ -1154,19 +1162,21 @@ Proces zachodzi z udziałem drożdży w odpowiednich warunkach.
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Białka są wielkocząsteczkowymi związkami zbudowanymi z aminokwasów.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Aminokwasy białkowe zawierają co najmniej grupę aminową -NH₂ i karboksylową -COOH.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): W organizmach białka zawierają przede wszystkim węgiel, wodór, tlen i azot; niektóre zawierają również siarkę.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Peptydy i białka nie są tym samym:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Białka są wielkocząsteczkowymi związkami zbudowanymi z aminokwasów.
+- Aminokwasy białkowe zawierają co najmniej grupę aminową -NH₂ i karboksylową -COOH.
+- W organizmach białka zawierają przede wszystkim węgiel, wodór, tlen i azot; niektóre zawierają również siarkę.
+- Peptydy i białka nie są tym samym:
   - peptydy są krótszymi łańcuchami aminokwasów;
   - białka mają większy stopień organizacji i określoną strukturę.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wiązanie peptydowe powstaje między grupą karboksylową jednego aminokwasu a grupą aminową drugiego.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Podczas tworzenia wiązania peptydowego wydziela się cząsteczka wody.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Denaturacja nie zawsze oznacza rozcięcie wszystkich wiązań peptydowych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Podczas denaturacji zmienia się przestrzenna struktura białka, a pierwotna sekwencja aminokwasów może pozostać zachowana.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie każda denaturacja jest odwracalna.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wszystkie białka są rozpuszczalne w wodzie.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Próba biuretowa wykrywa wiązania peptydowe w środowisku zasadowym w obecności jonów miedzi(II), a nie „dowolne białko jednym odczynnikiem”.
+- Wiązanie peptydowe powstaje między grupą karboksylową jednego aminokwasu a grupą aminową drugiego.
+- Podczas tworzenia wiązania peptydowego wydziela się cząsteczka wody.
+- Denaturacja nie zawsze oznacza rozcięcie wszystkich wiązań peptydowych.
+- Podczas denaturacji zmienia się przestrzenna struktura białka, a pierwotna sekwencja aminokwasów może pozostać zachowana.
+- Nie każda denaturacja jest odwracalna.
+- Nie wszystkie białka są rozpuszczalne w wodzie.
+- Próba biuretowa wykrywa wiązania peptydowe w środowisku zasadowym w obecności jonów miedzi(II), a nie „dowolne białko jednym odczynnikiem”.
 
 #### Uzupełnienia
 
@@ -1190,19 +1200,23 @@ Wynik dodatni: fioletowe zabarwienie roztworu.
 
 Wymagane są:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): środowisko zasadowe;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): jony miedzi(II);
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): co najmniej dwa wiązania peptydowe w wykrywanej strukturze, zależnie od zastosowanej wersji próby.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- środowisko zasadowe;
+- jony miedzi(II);
+- co najmniej dwa wiązania peptydowe w wykrywanej strukturze, zależnie od zastosowanej wersji próby.
 
 ##### Denaturacja
 
 Czynniki denaturujące mogą obejmować:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): wysoką temperaturę;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): silne kwasy i zasady;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): sole metali ciężkich;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): alkohole i inne rozpuszczalniki;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): promieniowanie w określonych warunkach.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- wysoką temperaturę;
+- silne kwasy i zasady;
+- sole metali ciężkich;
+- alkohole i inne rozpuszczalniki;
+- promieniowanie w określonych warunkach.
 
 Przykład: ogrzewanie białka jaja powoduje jego ścinanie i zwykle nieodwracalne zmiany struktury.
 
@@ -1226,16 +1240,18 @@ Przykład: ogrzewanie białka jaja powoduje jego ścinanie i zwykle nieodwracaln
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Woda pełni funkcję rozpuszczalnika, środowiska reakcji, regulatora temperatury i składnika organizmów.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie każda substancja polarna rozpuszcza się dobrze w wodzie; znaczenie ma również rozmiar i budowa cząsteczki.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Tłuszcze są ważnym źródłem energii, ale nie powinny być przedstawiane jako jedyne źródło energii.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Cukry pełnią funkcję energetyczną, zapasową i strukturalną.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Białka pełnią funkcje budulcowe, enzymatyczne, transportowe, odpornościowe i regulacyjne.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Enzym jest biologicznym katalizatorem, ale nie zmienia położenia równowagi chemicznej.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Enzym obniża energię aktywacji reakcji i przyspiesza jej osiągnięcie.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Enzym działa wybiórczo, ale określenie „jeden enzym zawsze działa tylko na jedną substancję” jest zbyt uproszczone.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Witaminy nie dostarczają organizmowi energii w taki sposób jak tłuszcze, cukry i białka.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Sole mineralne nie są wyłącznie „odpadami” ani wyłącznie składnikami kości; pełnią wiele funkcji fizjologicznych.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Woda pełni funkcję rozpuszczalnika, środowiska reakcji, regulatora temperatury i składnika organizmów.
+- Nie każda substancja polarna rozpuszcza się dobrze w wodzie; znaczenie ma również rozmiar i budowa cząsteczki.
+- Tłuszcze są ważnym źródłem energii, ale nie powinny być przedstawiane jako jedyne źródło energii.
+- Cukry pełnią funkcję energetyczną, zapasową i strukturalną.
+- Białka pełnią funkcje budulcowe, enzymatyczne, transportowe, odpornościowe i regulacyjne.
+- Enzym jest biologicznym katalizatorem, ale nie zmienia położenia równowagi chemicznej.
+- Enzym obniża energię aktywacji reakcji i przyspiesza jej osiągnięcie.
+- Enzym działa wybiórczo, ale określenie „jeden enzym zawsze działa tylko na jedną substancję” jest zbyt uproszczone.
+- Witaminy nie dostarczają organizmowi energii w taki sposób jak tłuszcze, cukry i białka.
+- Sole mineralne nie są wyłącznie „odpadami” ani wyłącznie składnikami kości; pełnią wiele funkcji fizjologicznych.
 
 #### Uzupełnienia
 

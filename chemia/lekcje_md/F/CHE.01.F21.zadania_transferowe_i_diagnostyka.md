@@ -300,21 +300,25 @@ Dla każdego zadania oznacz: **umiem samodzielnie**, **umiem z podpowiedzią** a
 
 Pierwiastek X ma 17 protonów. Określ:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): symbol;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): liczbę elektronów w atomie;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): okres;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): grupę;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): typowy jon;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): liczbę elektronów w tym jonie.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- symbol;
+- liczbę elektronów w atomie;
+- okres;
+- grupę;
+- typowy jon;
+- liczbę elektronów w tym jonie.
 
 #### Klucz
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): symbol: Cl;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): atom ma 17 elektronów;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): okres 3;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): grupa 17;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): typowy jon: Cl⁻;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): jon ma 18 elektronów.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- symbol: Cl;
+- atom ma 17 elektronów;
+- okres 3;
+- grupa 17;
+- typowy jon: Cl⁻;
+- jon ma 18 elektronów.
 
 ### Zadanie 2
 
@@ -364,15 +368,19 @@ W krysztale jony są unieruchomione. W roztworze mogą się przemieszczać i prz
 
 W doświadczeniu po zmieszaniu dwóch roztworów pojawiło się zmętnienie. Zapisz:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): obserwację;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): ostrożny wniosek;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): informację, czego jeszcze trzeba dowieść.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- obserwację;
+- ostrożny wniosek;
+- informację, czego jeszcze trzeba dowieść.
 
 #### Klucz
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): obserwacja: roztwór zmętniał lub powstała zawiesina;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wniosek: prawdopodobnie powstała trudno rozpuszczalna substancja stała;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): trzeba ustalić skład osadu odpowiednią reakcją lub porównaniem z próbą kontrolną.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- obserwacja: roztwór zmętniał lub powstała zawiesina;
+- wniosek: prawdopodobnie powstała trudno rozpuszczalna substancja stała;
+- trzeba ustalić skład osadu odpowiednią reakcją lub porównaniem z próbą kontrolną.
 
 ### Zadanie 8
 

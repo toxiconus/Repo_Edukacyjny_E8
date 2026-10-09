@@ -1374,20 +1374,22 @@ AgNO₃(aq) + NaCl(aq) → AgCl(s)↓ + NaNO₃(aq)
 
 ### Poprawki — status wdrożenia
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie każda zmiana obserwowana podczas doświadczenia oznacza jedną konkretną reakcję chemiczną.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Obserwacja nie może zawierać nieudowodnionego wniosku.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): „Powstał wodór” jest wnioskiem, a nie samą obserwacją, chyba że wykonano odpowiednią próbę identyfikacyjną.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): „Pojawiły się pęcherzyki gazu” jest obserwacją.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): „Gaz zapalił się z charakterystycznym dźwiękiem” jest obserwacją próby identyfikacyjnej.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wniosek „wydzielił się wodór” wynika z obserwacji oraz znanej próby.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Równanie reakcji zapisuje model przemiany, a nie samo zdjęcie doświadczenia.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Przed zapisaniem równania trzeba rozpoznać:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- Nie każda zmiana obserwowana podczas doświadczenia oznacza jedną konkretną reakcję chemiczną.
+- Obserwacja nie może zawierać nieudowodnionego wniosku.
+- „Powstał wodór” jest wnioskiem, a nie samą obserwacją, chyba że wykonano odpowiednią próbę identyfikacyjną.
+- „Pojawiły się pęcherzyki gazu” jest obserwacją.
+- „Gaz zapalił się z charakterystycznym dźwiękiem” jest obserwacją próby identyfikacyjnej.
+- Wniosek „wydzielił się wodór” wynika z obserwacji oraz znanej próby.
+- Równanie reakcji zapisuje model przemiany, a nie samo zdjęcie doświadczenia.
+- Przed zapisaniem równania trzeba rozpoznać:
   - substraty;
   - produkty;
   - ich wzory;
   - stany skupienia, jeżeli są potrzebne;
   - warunki reakcji.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie należy dobierać produktów wyłącznie na podstawie tego, co wygląda prawdopodobnie.
+- Nie należy dobierać produktów wyłącznie na podstawie tego, co wygląda prawdopodobnie.
 
 ### Uzupełnienia — status wdrożenia
 
@@ -1412,9 +1414,11 @@ AgNO₃(aq) + NaCl(aq) → AgCl(s)↓ + NaNO₃(aq)
 
 **Obserwacje:**
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): magnez stopniowo znika;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wydzielają się pęcherzyki gazu;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): probówka może się ogrzać.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- magnez stopniowo znika;
+- wydzielają się pęcherzyki gazu;
+- probówka może się ogrzać.
 
 **Próba identyfikacyjna:** Gaz przy zbliżeniu płonącego łuczywa daje charakterystyczny efekt dla wodoru.
 

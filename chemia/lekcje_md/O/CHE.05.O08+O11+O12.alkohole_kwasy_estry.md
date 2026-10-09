@@ -42,25 +42,29 @@ Estry zawierają grupę –COO–. Często powstają w reakcji kwasu karboksylow
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkohole zawierają grupę hydroksylową -OH połączoną z atomem węgla nasyconym.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Grupa -OH w alkoholu nie jest tym samym co jon OH⁻ w wodorotlenku.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Etanol jest alkoholem, a nie wodorotlenkiem.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Metanol jest silnie toksyczny i może spowodować ślepotę lub śmierć.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Etanol jest substancją psychoaktywną i w dużych ilościach jest toksyczny.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wolno określać etanolu jako „bezpiecznego alkoholu”.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkohol nie zawsze dobrze rozpuszcza się w wodzie; rozpuszczalność zależy między innymi od długości łańcucha i liczby grup hydroksylowych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkohole wielowodorotlenowe zawierają więcej niż jedną grupę -OH.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wszystkie związki zawierające -OH są alkoholami; fenole tworzą odrębną grupę.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Alkohole zawierają grupę hydroksylową -OH połączoną z atomem węgla nasyconym.
+- Grupa -OH w alkoholu nie jest tym samym co jon OH⁻ w wodorotlenku.
+- Etanol jest alkoholem, a nie wodorotlenkiem.
+- Metanol jest silnie toksyczny i może spowodować ślepotę lub śmierć.
+- Etanol jest substancją psychoaktywną i w dużych ilościach jest toksyczny.
+- Nie wolno określać etanolu jako „bezpiecznego alkoholu”.
+- Alkohol nie zawsze dobrze rozpuszcza się w wodzie; rozpuszczalność zależy między innymi od długości łańcucha i liczby grup hydroksylowych.
+- Alkohole wielowodorotlenowe zawierają więcej niż jedną grupę -OH.
+- Nie wszystkie związki zawierające -OH są alkoholami; fenole tworzą odrębną grupę.
 
 #### Uzupełnienia
 
 ##### Przykładowe alkohole
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): metanol: CH₃OH;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): etanol: C₂H₅OH;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): propan-1-ol: CH₃CH₂CH₂OH;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): etano-1,2-diol: HOCH₂CH₂OH;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): propano-1,2,3-triol: HOCH₂CHOHCH₂OH.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- metanol: CH₃OH;
+- etanol: C₂H₅OH;
+- propan-1-ol: CH₃CH₂CH₂OH;
+- etano-1,2-diol: HOCH₂CH₂OH;
+- propano-1,2,3-triol: HOCH₂CHOHCH₂OH.
 
 ##### Spalanie etanolu
 
@@ -103,23 +107,27 @@ Produkty zależą od warunków i użytego utleniacza.
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Kwasy karboksylowe zawierają grupę karboksylową -COOH.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Grupa karboksylowa składa się z grupy karbonylowej C=O i hydroksylowej -OH.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Właściwości kwasowe nie wynikają z obecności dowolnej grupy -OH, lecz z budowy całej grupy karboksylowej.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Kwas etanowy jest nazwą systematyczną; kwas octowy jest nazwą zwyczajową.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Kwas mrówkowy to kwas metanowy.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Kwas octowy i kwas solny nie są tą samą substancją.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Kwas etanowy jest słabym kwasem, ale stężony roztwór może być żrący.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wolno utożsamiać kwaśnego smaku z bezpiecznym rozpoznawaniem kwasu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wyższe kwasy karboksylowe mają długie łańcuchy węglowodorowe i mogą być składnikami tłuszczów.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Kwasy karboksylowe zawierają grupę karboksylową -COOH.
+- Grupa karboksylowa składa się z grupy karbonylowej C=O i hydroksylowej -OH.
+- Właściwości kwasowe nie wynikają z obecności dowolnej grupy -OH, lecz z budowy całej grupy karboksylowej.
+- Kwas etanowy jest nazwą systematyczną; kwas octowy jest nazwą zwyczajową.
+- Kwas mrówkowy to kwas metanowy.
+- Kwas octowy i kwas solny nie są tą samą substancją.
+- Kwas etanowy jest słabym kwasem, ale stężony roztwór może być żrący.
+- Nie wolno utożsamiać kwaśnego smaku z bezpiecznym rozpoznawaniem kwasu.
+- Wyższe kwasy karboksylowe mają długie łańcuchy węglowodorowe i mogą być składnikami tłuszczów.
 
 #### Uzupełnienia
 
 ##### Przykłady
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): kwas metanowy: HCOOH;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): kwas etanowy: CH₃COOH;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): kwas propanowy: CH₃CH₂COOH.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- kwas metanowy: HCOOH;
+- kwas etanowy: CH₃COOH;
+- kwas propanowy: CH₃CH₂COOH.
 
 ##### Dysocjacja kwasu etanowego
 
@@ -168,18 +176,20 @@ Spalanie:
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Estry zawierają grupę funkcyjną -COO-.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Ester powstaje najczęściej w reakcji kwasu karboksylowego z alkoholem.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Reakcja estryfikacji jest reakcją równowagową.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): W obecności kwasu katalizującego zapisuje się często:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Estry zawierają grupę funkcyjną -COO-.
+- Ester powstaje najczęściej w reakcji kwasu karboksylowego z alkoholem.
+- Reakcja estryfikacji jest reakcją równowagową.
+- W obecności kwasu katalizującego zapisuje się często:
 
  kwas+alkohol⇌ ester+woda
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Kwas i alkohol nie są po prostu „zastępowane” bez zmiany budowy; reakcja polega na przebudowie grup funkcyjnych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nazwa estru składa się z nazwy reszty kwasowej i grupy alkilowej pochodzącej od alkoholu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Estry często mają charakterystyczne zapachy, ale zapach nie jest bezpieczną metodą identyfikacji.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wszystkie estry są lotne, pachnące ani nierozpuszczalne w wodzie.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Hydroliza estru jest reakcją odwrotną do estryfikacji; w środowisku zasadowym prowadzi do zmydlania.
+- Kwas i alkohol nie są po prostu „zastępowane” bez zmiany budowy; reakcja polega na przebudowie grup funkcyjnych.
+- Nazwa estru składa się z nazwy reszty kwasowej i grupy alkilowej pochodzącej od alkoholu.
+- Estry często mają charakterystyczne zapachy, ale zapach nie jest bezpieczną metodą identyfikacji.
+- Nie wszystkie estry są lotne, pachnące ani nierozpuszczalne w wodzie.
+- Hydroliza estru jest reakcją odwrotną do estryfikacji; w środowisku zasadowym prowadzi do zmydlania.
 
 #### Uzupełnienia
 
@@ -191,9 +201,11 @@ Produktem jest etanian etylu, tradycyjnie octan etylu.
 
 ##### Schemat nazewnictwa
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): kwas metanowy + metanol → metanian metylu;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): kwas etanowy + etanol → etanian etylu;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): kwas propanowy + metanol → propanian metylu.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- kwas metanowy + metanol → metanian metylu;
+- kwas etanowy + etanol → etanian etylu;
+- kwas propanowy + metanol → propanian metylu.
 
 ##### Hydroliza zasadowa
 
@@ -226,12 +238,14 @@ Ogólny zapis:
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Węglowodory, alkohole, kwasy karboksylowe i estry należy przedstawiać jako powiązane grupy związków, a nie całkowicie odrębne działy.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Grupa funkcyjna wpływa na właściwości chemiczne związku.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Długość łańcucha węglowego wpływa między innymi na temperaturę wrzenia i rozpuszczalność.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Obecność grup polarnych może zwiększać oddziaływania z wodą, ale wraz ze wzrostem części węglowodorowej rozpuszczalność może maleć.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Reakcja spalania nie identyfikuje jednoznacznie konkretnej grupy związku organicznego, ponieważ wiele związków organicznych spala się do CO₂ i H₂O.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Próby charakterystyczne powinny być dobierane do konkretnej grupy funkcyjnej.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Węglowodory, alkohole, kwasy karboksylowe i estry należy przedstawiać jako powiązane grupy związków, a nie całkowicie odrębne działy.
+- Grupa funkcyjna wpływa na właściwości chemiczne związku.
+- Długość łańcucha węglowego wpływa między innymi na temperaturę wrzenia i rozpuszczalność.
+- Obecność grup polarnych może zwiększać oddziaływania z wodą, ale wraz ze wzrostem części węglowodorowej rozpuszczalność może maleć.
+- Reakcja spalania nie identyfikuje jednoznacznie konkretnej grupy związku organicznego, ponieważ wiele związków organicznych spala się do CO₂ i H₂O.
+- Próby charakterystyczne powinny być dobierane do konkretnej grupy funkcyjnej.
 
 #### Uzupełnienia
 
@@ -270,19 +284,23 @@ Schemat ten nie opisuje wszystkich możliwych reakcji i wymaga określenia warun
 
 Zidentyfikuj grupę związków:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): C₂H₆;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): C₂H₄;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): C₂H₂;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): C₂H₅OH;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): CH₃COOH.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- C₂H₆;
+- C₂H₄;
+- C₂H₂;
+- C₂H₅OH;
+- CH₃COOH.
 
 ##### Klucz
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): C₂H₆ — alkan;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): C₂H₄ — alken;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): C₂H₂ — alkin;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): C₂H₅OH — alkohol;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): CH₃COOH — kwas karboksylowy.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- C₂H₆ — alkan;
+- C₂H₄ — alken;
+- C₂H₂ — alkin;
+- C₂H₅OH — alkohol;
+- CH₃COOH — kwas karboksylowy.
 
 ##### Zadanie 2
 

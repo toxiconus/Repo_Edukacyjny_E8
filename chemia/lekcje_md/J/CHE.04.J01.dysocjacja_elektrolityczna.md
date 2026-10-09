@@ -46,11 +46,13 @@ W każdym równaniu sprawdź liczbę atomów i sumę ładunków po obu stronach.
 
 Po tej lekcji uczeń powinien:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wyjaśnić, czym jest elektrolit;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): odróżnić dysocjację od rozpuszczania;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): zapisać dysocjację kwasów, zasad i soli;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozpoznać mocne i słabe elektrolity;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): sprawdzić bilans atomów i ładunku.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- wyjaśnić, czym jest elektrolit;
+- odróżnić dysocjację od rozpuszczania;
+- zapisać dysocjację kwasów, zasad i soli;
+- rozpoznać mocne i słabe elektrolity;
+- sprawdzić bilans atomów i ładunku.
 
 #### Rdzeń
 
@@ -58,19 +60,23 @@ Dysocjacja elektrolityczna to rozpad cząsteczek lub kryształów elektrolitu na
 
 Elektrolity przewodzą prąd elektryczny, ponieważ zawierają jony zdolne do przemieszczania się. W roztworze przewodnictwo zależy między innymi od:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): liczby jonów;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): ich ruchliwości;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): stężenia;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): temperatury;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rodzaju rozpuszczalnika.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- liczby jonów;
+- ich ruchliwości;
+- stężenia;
+- temperatury;
+- rodzaju rozpuszczalnika.
 
 ##### Elektrolity mocne
 
 Mocne elektrolity są w wodzie w dużym stopniu zdysocjowane:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): mocne kwasy, na przykład HCl, HNO₃;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): mocne zasady, na przykład NaOH, KOH;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): dobrze rozpuszczalne sole, na przykład NaCl.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- mocne kwasy, na przykład HCl, HNO₃;
+- mocne zasady, na przykład NaOH, KOH;
+- dobrze rozpuszczalne sole, na przykład NaCl.
 
 Przykłady:
 
@@ -146,13 +152,15 @@ Kryształ rozpada się na ruchliwe jony.
 
 #### Typowe błędy
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): zapisanie NaCl→ Na+Cl bez ładunków;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): pominięcie współczynnika przy jonie wieloatomowym;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): zapisanie CaOH₂ zamiast Ca(OH)₂;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozpisanie trudno rozpuszczalnego osadu na jony;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): utożsamienie rozpuszczania każdej substancji z dysocjacją;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): używanie strzałki jednokierunkowej dla słabego elektrolitu bez zaznaczenia uproszczenia;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): brak kontroli sumy ładunków.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- zapisanie NaCl→ Na+Cl bez ładunków;
+- pominięcie współczynnika przy jonie wieloatomowym;
+- zapisanie CaOH₂ zamiast Ca(OH)₂;
+- rozpisanie trudno rozpuszczalnego osadu na jony;
+- utożsamienie rozpuszczania każdej substancji z dysocjacją;
+- używanie strzałki jednokierunkowej dla słabego elektrolitu bez zaznaczenia uproszczenia;
+- brak kontroli sumy ładunków.
 
 #### Zadania
 

@@ -1034,27 +1034,29 @@ Przy przygotowaniu roztworu odważa się substancję, rozpuszcza w części rozp
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Stężenie molowe określa liczbę moli substancji rozpuszczonej w jednym decymetrze sześciennym roztworu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wzór:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Stężenie molowe określa liczbę moli substancji rozpuszczonej w jednym decymetrze sześciennym roztworu.
+- Wzór:
 
  c=n / V
 
 gdzie:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): c — stężenie molowe;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): n — liczba moli substancji;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): V — objętość roztworu w dm³.
+- c — stężenie molowe;
+- n — liczba moli substancji;
+- V — objętość roztworu w dm³.
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Jednostką jest mol/dm³, zapisywane również jako mol· dm⁻³.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wzór wykorzystuje objętość roztworu, a nie objętość samego rozpuszczalnika.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): 1 dm³=1 L.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): 1 cm³=1 mL.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Do wzoru trzeba przeliczyć mililitry na decymetry sześcienne:
+- Jednostką jest mol/dm³, zapisywane również jako mol· dm⁻³.
+- Wzór wykorzystuje objętość roztworu, a nie objętość samego rozpuszczalnika.
+- 1 dm³=1 L.
+- 1 cm³=1 mL.
+- Do wzoru trzeba przeliczyć mililitry na decymetry sześcienne:
 
  1000 mL=1 dm³
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Stężenie molowe nie jest tym samym co stężenie procentowe.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Do przeliczenia między nimi potrzebna jest między innymi gęstość roztworu i masa molowa substancji.
+- Stężenie molowe nie jest tym samym co stężenie procentowe.
+- Do przeliczenia między nimi potrzebna jest między innymi gęstość roztworu i masa molowa substancji.
 
 #### Uzupełnienia
 
@@ -1064,8 +1066,10 @@ gdzie:
 
 gdzie:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): m — masa substancji;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): M — masa molowa.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- m — masa substancji;
+- M — masa molowa.
 
 ##### Przykład
 

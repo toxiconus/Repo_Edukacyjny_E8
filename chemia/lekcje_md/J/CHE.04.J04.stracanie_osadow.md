@@ -38,21 +38,25 @@ W równaniu cząsteczkowym przykładowo: CuSO₄(aq) + 2NaOH(aq) → Cu(OH)₂(s
 
 Uczeń powinien:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): korzystać z tabeli rozpuszczalności;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): przewidzieć powstanie osadu;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): zapisać równanie cząsteczkowe i jonowe;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): odróżnić osad od zmętnienia lub zanieczyszczenia.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- korzystać z tabeli rozpuszczalności;
+- przewidzieć powstanie osadu;
+- zapisać równanie cząsteczkowe i jonowe;
+- odróżnić osad od zmętnienia lub zanieczyszczenia.
 
 #### Reguły orientacyjne
 
 Typowe szkolne reguły:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): sole metali grupy 1 i sole amonowe są zwykle rozpuszczalne;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): azotany są zwykle rozpuszczalne;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wiele chlorków jest rozpuszczalnych, ale AgCl, PbCl₂ i Hg₂Cl₂ stanowią wyjątki;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wiele siarczanów jest rozpuszczalnych, ale BaSO₄, PbSO₄ i częściowo CaSO₄ są wyjątkami;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wiele węglanów jest trudno rozpuszczalnych;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wodorotlenki są często trudno rozpuszczalne, z wyjątkami dotyczącymi między innymi metali grupy 1 i częściowo Ba(OH)₂.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- sole metali grupy 1 i sole amonowe są zwykle rozpuszczalne;
+- azotany są zwykle rozpuszczalne;
+- wiele chlorków jest rozpuszczalnych, ale AgCl, PbCl₂ i Hg₂Cl₂ stanowią wyjątki;
+- wiele siarczanów jest rozpuszczalnych, ale BaSO₄, PbSO₄ i częściowo CaSO₄ są wyjątkami;
+- wiele węglanów jest trudno rozpuszczalnych;
+- wodorotlenki są często trudno rozpuszczalne, z wyjątkami dotyczącymi między innymi metali grupy 1 i częściowo Ba(OH)₂.
 
 Reguły należy stosować razem z konkretną tabelą rozpuszczalności.
 

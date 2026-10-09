@@ -290,8 +290,10 @@ H⁺(aq) + OH⁻(aq) → H₂O(l)
 
 ### Poprawki — status wdrożenia
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Dossier reakcji powinno zawierać warunki, a nie tylko samo równanie.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Należy odróżnić:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- Dossier reakcji powinno zawierać warunki, a nie tylko samo równanie.
+- Należy odróżnić:
   - reagenty;
   - produkty;
   - obserwacje;
@@ -300,30 +302,32 @@ H⁺(aq) + OH⁻(aq) → H₂O(l)
   - równanie jonowe;
   - warunki;
   - zagrożenia.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie wolno wyciągać wniosku o produkcie wyłącznie z jednego objawu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Reakcja może zachodzić w kilku etapach, choć zapis szkolny przedstawia ją jednym równaniem.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Szybkość reakcji i możliwość jej zajścia to różne kwestie.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Katalizator przyspiesza reakcję, ale nie jest zużywany w jej bilansie stechiometrycznym.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wydzielanie ciepła nie oznacza, że wszystkie reakcje egzotermiczne są gwałtowne.
+- Nie wolno wyciągać wniosku o produkcie wyłącznie z jednego objawu.
+- Reakcja może zachodzić w kilku etapach, choć zapis szkolny przedstawia ją jednym równaniem.
+- Szybkość reakcji i możliwość jej zajścia to różne kwestie.
+- Katalizator przyspiesza reakcję, ale nie jest zużywany w jej bilansie stechiometrycznym.
+- Wydzielanie ciepła nie oznacza, że wszystkie reakcje egzotermiczne są gwałtowne.
 
 ### Uzupełnienia — status wdrożenia
 
 #### Szablon dossier reakcji
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): nazwa reakcji;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): typ reakcji;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): substraty;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): produkty;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): równanie cząsteczkowe;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): równanie jonowe, jeśli dotyczy;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): warunki;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): obserwacje;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): próby identyfikacyjne;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): interpretacja;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): BHP;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): typowe błędy;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): zastosowanie;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): ograniczenia modelu.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- nazwa reakcji;
+- typ reakcji;
+- substraty;
+- produkty;
+- równanie cząsteczkowe;
+- równanie jonowe, jeśli dotyczy;
+- warunki;
+- obserwacje;
+- próby identyfikacyjne;
+- interpretacja;
+- BHP;
+- typowe błędy;
+- zastosowanie;
+- ograniczenia modelu.
 
 #### Przykład: neutralizacja
 

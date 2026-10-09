@@ -42,10 +42,12 @@ Reakcja jonowa zachodzi, gdy jony tworzą produkt, który opuszcza roztwór jako
 
 Uczeń powinien:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozróżnić równanie cząsteczkowe, pełne jonowe i skrócone jonowe;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozpoznać jony obserwatorowe;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): sprawdzić, czy reakcja zachodzi w roztworze;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): zachować bilans atomów i ładunków.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- rozróżnić równanie cząsteczkowe, pełne jonowe i skrócone jonowe;
+- rozpoznać jony obserwatorowe;
+- sprawdzić, czy reakcja zachodzi w roztworze;
+- zachować bilans atomów i ładunków.
 
 #### Procedura
 
@@ -93,10 +95,12 @@ Skrócone:
 
 Wymiana jonowa jest napędzana między innymi przez:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): powstanie osadu;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wydzielenie gazu;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): powstanie wody;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): powstanie słabego elektrolitu.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- powstanie osadu;
+- wydzielenie gazu;
+- powstanie wody;
+- powstanie słabego elektrolitu.
 
 Samo „zamienienie partnerów” w zapisie nie dowodzi reakcji netto.
 

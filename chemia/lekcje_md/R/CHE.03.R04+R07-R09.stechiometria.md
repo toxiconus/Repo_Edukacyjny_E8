@@ -1149,20 +1149,22 @@ Jeżeli reagenty są użyte w ilościach niezgodnych ze stosunkiem stechiometryc
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Mol jest jednostką ilości substancji w układzie SI.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Jeden mol zawiera dokładnie 6,02214076·10²³ obiektów elementarnych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Liczba Avogadra ma jednostkę mol⁻¹.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Obiektem elementarnym może być atom, cząsteczka, jon, elektron lub inny określony obiekt.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Trzeba zawsze podać, czego dotyczy liczba moli:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Mol jest jednostką ilości substancji w układzie SI.
+- Jeden mol zawiera dokładnie 6,02214076·10²³ obiektów elementarnych.
+- Liczba Avogadra ma jednostkę mol⁻¹.
+- Obiektem elementarnym może być atom, cząsteczka, jon, elektron lub inny określony obiekt.
+- Trzeba zawsze podać, czego dotyczy liczba moli:
   - mol atomów;
   - mol cząsteczek;
   - mol jonów;
   - mol jednostek wzoru.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Masa molowa to masa jednego mola określonych obiektów.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Masa molowa ma jednostkę g/mol.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wartość liczbową masy molowej związku można obliczyć na podstawie wzoru chemicznego, używając względnych mas atomowych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wolno utożsamiać masy molowej z masą jednej cząsteczki.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Dla związku jonowego należy mówić o masie molowej jednostek wzoru, choć w zadaniach szkolnych często skrótowo mówi się o masie molowej związku.
+- Masa molowa to masa jednego mola określonych obiektów.
+- Masa molowa ma jednostkę g/mol.
+- Wartość liczbową masy molowej związku można obliczyć na podstawie wzoru chemicznego, używając względnych mas atomowych.
+- Nie wolno utożsamiać masy molowej z masą jednej cząsteczki.
+- Dla związku jonowego należy mówić o masie molowej jednostek wzoru, choć w zadaniach szkolnych często skrótowo mówi się o masie molowej związku.
 
 #### Uzupełnienia
 
@@ -1231,15 +1233,17 @@ Liczba atomów:
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Współczynniki w zbilansowanym równaniu określają stosunki molowe reagujących substancji.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wolno odczytywać współczynników jako stosunków mas bez dodatkowych obliczeń.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Najpierw trzeba zbilansować równanie, a dopiero potem wykonywać obliczenia.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Stosunek mas wynika ze stosunku moli i mas molowych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Jeśli reagent jest podany w objętości, trzeba znać jego stężenie albo warunki gazowe.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): W przypadku roztworu obliczenia powinny uwzględniać ilość substancji, a nie samą objętość roztworu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): W przypadku gazów trzeba określić warunki, ponieważ objętość gazu zależy od temperatury i ciśnienia.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie należy stosować objętości molowej bez podania warunków i przyjętej wartości.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wynik teoretyczny nie musi być równy wynikowi rzeczywistemu.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Współczynniki w zbilansowanym równaniu określają stosunki molowe reagujących substancji.
+- Nie wolno odczytywać współczynników jako stosunków mas bez dodatkowych obliczeń.
+- Najpierw trzeba zbilansować równanie, a dopiero potem wykonywać obliczenia.
+- Stosunek mas wynika ze stosunku moli i mas molowych.
+- Jeśli reagent jest podany w objętości, trzeba znać jego stężenie albo warunki gazowe.
+- W przypadku roztworu obliczenia powinny uwzględniać ilość substancji, a nie samą objętość roztworu.
+- W przypadku gazów trzeba określić warunki, ponieważ objętość gazu zależy od temperatury i ciśnienia.
+- Nie należy stosować objętości molowej bez podania warunków i przyjętej wartości.
+- Wynik teoretyczny nie musi być równy wynikowi rzeczywistemu.
 
 #### Uzupełnienia
 
@@ -1295,13 +1299,15 @@ Stosunek Mg:MgO=1:1, więc:
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Reagent ograniczający to substrat, który zostanie zużyty jako pierwszy i ograniczy maksymalną ilość produktu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Reagent w nadmiarze pozostanie częściowo po zakończeniu reakcji.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wolno określać reagenta ograniczającego wyłącznie na podstawie mniejszej masy.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Trzeba porównać ilości moli z wymaganym stosunkiem stechiometrycznym.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Reagent ograniczający nie musi mieć najmniejszej liczby moli.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Jeśli substraty są podane jako roztwory, najpierw oblicz liczbę moli substancji.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Jeśli reakcja nie zachodzi całkowicie, wynik rzeczywisty może być mniejszy od teoretycznego.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Reagent ograniczający to substrat, który zostanie zużyty jako pierwszy i ograniczy maksymalną ilość produktu.
+- Reagent w nadmiarze pozostanie częściowo po zakończeniu reakcji.
+- Nie wolno określać reagenta ograniczającego wyłącznie na podstawie mniejszej masy.
+- Trzeba porównać ilości moli z wymaganym stosunkiem stechiometrycznym.
+- Reagent ograniczający nie musi mieć najmniejszej liczby moli.
+- Jeśli substraty są podane jako roztwory, najpierw oblicz liczbę moli substancji.
+- Jeśli reakcja nie zachodzi całkowicie, wynik rzeczywisty może być mniejszy od teoretycznego.
 
 #### Uzupełnienia
 
@@ -1311,15 +1317,17 @@ Stosunek Mg:MgO=1:1, więc:
 
 Dane:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): 3 mole H₂;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): 1 mol O₂.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- 3 mole H₂;
+- 1 mol O₂.
 
 Do 1 mola O₂ potrzeba 2 moli H₂. Dostępne są 3 mole wodoru, więc:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): O₂ jest reagentem ograniczającym;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): zużyją się 2 mole H₂;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): pozostanie 1 mol H₂;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): powstaną 2 mole H₂O.
+- O₂ jest reagentem ograniczającym;
+- zużyją się 2 mole H₂;
+- pozostanie 1 mol H₂;
+- powstaną 2 mole H₂O.
 
 ##### Algorytm
 
@@ -1353,17 +1361,19 @@ zmieszano 3 mole magnezu i 2 mole tlenu. Oblicz reagent ograniczający i ilość
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wydajność reakcji porównuje ilość produktu rzeczywiście otrzymanego z ilością produktu teoretycznie możliwego do otrzymania.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wzór:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Wydajność reakcji porównuje ilość produktu rzeczywiście otrzymanego z ilością produktu teoretycznie możliwego do otrzymania.
+- Wzór:
 
  η = m(rzecz) / m(teor)·100%
 
 lub analogicznie dla liczby moli.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wydajność nie może być większa niż 100% w poprawnie wykonanym, zamkniętym bilansie, jeśli wynik jest interpretowany jako rzeczywista wydajność czystego produktu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wynik większy niż 100% może oznaczać obecność zanieczyszczeń, wilgoci, błędny pomiar lub błąd obliczeń.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Najpierw trzeba wyznaczyć reagent ograniczający.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Masa teoretyczna wynika z równania reakcji i danych początkowych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Masa rzeczywista jest wartością uzyskaną eksperymentalnie.
+- Wydajność nie może być większa niż 100% w poprawnie wykonanym, zamkniętym bilansie, jeśli wynik jest interpretowany jako rzeczywista wydajność czystego produktu.
+- Wynik większy niż 100% może oznaczać obecność zanieczyszczeń, wilgoci, błędny pomiar lub błąd obliczeń.
+- Najpierw trzeba wyznaczyć reagent ograniczający.
+- Masa teoretyczna wynika z równania reakcji i danych początkowych.
+- Masa rzeczywista jest wartością uzyskaną eksperymentalnie.
 
 #### Uzupełnienia
 

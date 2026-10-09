@@ -36,11 +36,13 @@ Dla mocnego kwasu i mocnej zasady w zapisie jonowym skróconym: H₃O⁺ + OH⁻
 
 Uczeń powinien:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): odróżnić odczyn kwaśny, obojętny i zasadowy;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wyjaśnić znaczenie pH;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): korzystać ze skali pH w zakresie szkolnym;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozróżnić wskaźnik od pomiaru pH;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): zapisać reakcję zobojętniania.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- odróżnić odczyn kwaśny, obojętny i zasadowy;
+- wyjaśnić znaczenie pH;
+- korzystać ze skali pH w zakresie szkolnym;
+- rozróżnić wskaźnik od pomiaru pH;
+- zapisać reakcję zobojętniania.
 
 #### Rdzeń
 
@@ -52,9 +54,11 @@ W przybliżeniu:
 
 W temperaturze około 25°C:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): pH<7 — odczyn kwaśny;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): pH=7 — odczyn obojętny;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): pH>7 — odczyn zasadowy.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- pH<7 — odczyn kwaśny;
+- pH=7 — odczyn obojętny;
+- pH>7 — odczyn zasadowy.
 
 Wartość 7 jako pH obojętnego dotyczy określonej temperatury i czystej wody w odpowiednim modelu. Nie jest bezwarunkową regułą dla każdej temperatury i każdego roztworu.
 
@@ -70,24 +74,30 @@ Wskaźnik zmienia barwę w określonym zakresie pH.
 
 Przykłady:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): lakmus;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): fenoloftaleina;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): oranż metylowy;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wskaźnik uniwersalny;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wywar z czerwonej kapusty.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- lakmus;
+- fenoloftaleina;
+- oranż metylowy;
+- wskaźnik uniwersalny;
+- wywar z czerwonej kapusty.
 
 Barwa zależy od rodzaju wskaźnika i jego zakresu zmiany. Sam kolor bez informacji o wskaźniku nie wystarcza do dokładnego wyznaczenia pH.
 
 ##### Fenoloftaleina
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w środowisku kwaśnym i obojętnym jest bezbarwna;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w odpowiednio zasadowym środowisku przyjmuje barwę różową lub malinową.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- w środowisku kwaśnym i obojętnym jest bezbarwna;
+- w odpowiednio zasadowym środowisku przyjmuje barwę różową lub malinową.
 
 ##### Oranż metylowy
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w środowisku kwaśnym jest czerwony;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w zakresie przejściowym przyjmuje barwy pośrednie;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): w środowisku mniej kwaśnym jest żółty.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- w środowisku kwaśnym jest czerwony;
+- w zakresie przejściowym przyjmuje barwy pośrednie;
+- w środowisku mniej kwaśnym jest żółty.
 
 #### Pomiar pH
 

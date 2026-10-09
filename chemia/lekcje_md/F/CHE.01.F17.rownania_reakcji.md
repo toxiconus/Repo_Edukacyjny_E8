@@ -1580,19 +1580,21 @@ Dla strącania chlorku srebra równanie jonowe skrócone ma postać: **Ag⁺ + C
 
 ### Poprawki — status wdrożenia
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Równanie reakcji musi spełniać zasadę zachowania atomów.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): W reakcjach jonowych należy dodatkowo zachować całkowity ładunek.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Współczynniki stechiometryczne zmieniają ilość substancji, a indeksy zmieniają jej skład.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie wolno bilansować równania przez zmianę indeksów.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Najpierw ustal poprawne wzory substratów i produktów, dopiero potem dobieraj współczynniki.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Współczynnik 1 pomija się w zapisie.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Stan skupienia należy zapisywać tylko wtedy, gdy jest potrzebny lub wymagany:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- Równanie reakcji musi spełniać zasadę zachowania atomów.
+- W reakcjach jonowych należy dodatkowo zachować całkowity ładunek.
+- Współczynniki stechiometryczne zmieniają ilość substancji, a indeksy zmieniają jej skład.
+- Nie wolno bilansować równania przez zmianę indeksów.
+- Najpierw ustal poprawne wzory substratów i produktów, dopiero potem dobieraj współczynniki.
+- Współczynnik 1 pomija się w zapisie.
+- Stan skupienia należy zapisywać tylko wtedy, gdy jest potrzebny lub wymagany:
 
  (s), (l), (g), (aq)
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Strzałka ↑ może oznaczać wydzielanie gazu, a ↓ powstawanie osadu, ale nie należy używać ich bez uzasadnienia.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Katalizator i warunki reakcji zapisuje się nad strzałką.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Równanie reakcji nie jest równoważne opisowi mechanizmu reakcji.
+- Strzałka ↑ może oznaczać wydzielanie gazu, a ↓ powstawanie osadu, ale nie należy używać ich bez uzasadnienia.
+- Katalizator i warunki reakcji zapisuje się nad strzałką.
+- Równanie reakcji nie jest równoważne opisowi mechanizmu reakcji.
 
 ### Uzupełnienia — status wdrożenia
 

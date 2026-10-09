@@ -281,11 +281,15 @@ Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Klinika
 
 **Poprawnie:**
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): grupa — kolumna pionowa;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): okres — szereg poziomy.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- grupa — kolumna pionowa;
+- okres — szereg poziomy.
 
 #### Błąd: utożsamienie Z z A - Z — liczba protonów;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): A — liczba protonów i neutronów.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- A — liczba protonów i neutronów.
 
 #### Błąd: twierdzenie, że jon powstaje po zmianie liczby protonów
 

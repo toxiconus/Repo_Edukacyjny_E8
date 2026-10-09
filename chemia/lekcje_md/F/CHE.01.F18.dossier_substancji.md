@@ -317,47 +317,53 @@ NaCl jest związkiem jonowym zbudowanym z sieci jonów Na⁺ i Cl⁻, a nie z od
 
 ### Poprawki — status wdrożenia
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Dossier substancji powinno oddzielać dane obserwacyjne, modelowe i obliczeniowe.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie wpisuj jednej właściwości jako absolutnej, jeśli zależy od temperatury, ciśnienia lub czystości próbki.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Temperatura topnienia i wrzenia musi mieć podane warunki, najczęściej ciśnienie atmosferyczne.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Rozpuszczalność zawsze zależy od temperatury i rodzaju rozpuszczalnika.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Gęstość zależy od temperatury.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wartościowość, stopień utlenienia i ładunek jonu muszą być zapisane osobno.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Właściwości substancji nie wynikają wyłącznie z jej wzoru; znaczenie ma również budowa i rodzaj oddziaływań.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie utożsamiaj „substancji niebezpiecznej” z substancją, której nie wolno używać w żadnych warunkach.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Każde doświadczenie powinno mieć ocenę ryzyka i wymagania BHP.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- Dossier substancji powinno oddzielać dane obserwacyjne, modelowe i obliczeniowe.
+- Nie wpisuj jednej właściwości jako absolutnej, jeśli zależy od temperatury, ciśnienia lub czystości próbki.
+- Temperatura topnienia i wrzenia musi mieć podane warunki, najczęściej ciśnienie atmosferyczne.
+- Rozpuszczalność zawsze zależy od temperatury i rodzaju rozpuszczalnika.
+- Gęstość zależy od temperatury.
+- Wartościowość, stopień utlenienia i ładunek jonu muszą być zapisane osobno.
+- Właściwości substancji nie wynikają wyłącznie z jej wzoru; znaczenie ma również budowa i rodzaj oddziaływań.
+- Nie utożsamiaj „substancji niebezpiecznej” z substancją, której nie wolno używać w żadnych warunkach.
+- Każde doświadczenie powinno mieć ocenę ryzyka i wymagania BHP.
 
 ### Uzupełnienia — status wdrożenia
 
 #### Szablon dossier
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): nazwa;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wzór;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): rodzaj substancji;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): pierwiastki składowe;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): budowa: cząsteczkowa, jonowa, metaliczna lub sieciowa;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): stan skupienia w określonych warunkach;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): barwa i zapach, jeśli bezpieczne;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): rozpuszczalność;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): temperatura topnienia;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): temperatura wrzenia;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): przewodnictwo;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): reaktywność;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): zastosowania;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): zagrożenia;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): zasady przechowywania;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): sposób identyfikacji;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): źródło danych;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): poziom pewności informacji.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- nazwa;
+- wzór;
+- rodzaj substancji;
+- pierwiastki składowe;
+- budowa: cząsteczkowa, jonowa, metaliczna lub sieciowa;
+- stan skupienia w określonych warunkach;
+- barwa i zapach, jeśli bezpieczne;
+- rozpuszczalność;
+- temperatura topnienia;
+- temperatura wrzenia;
+- przewodnictwo;
+- reaktywność;
+- zastosowania;
+- zagrożenia;
+- zasady przechowywania;
+- sposób identyfikacji;
+- źródło danych;
+- poziom pewności informacji.
 
 #### Przykład: chlorek sodu
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): nazwa: chlorek sodu;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wzór: NaCl;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): rodzaj: związek jonowy;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): budowa: sieć jonów Na⁺ i Cl⁻;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): stan w temperaturze pokojowej: ciało stałe;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): rozpuszczalność: dobrze rozpuszcza się w wodzie;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): przewodnictwo: stały kryształ nie przewodzi tak jak roztwór, roztwór przewodzi dzięki jonom;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): reakcje: może uczestniczyć w reakcjach strącania;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): BHP: nie spożywać odczynników laboratoryjnych i nie mieszać nieznanych substancji.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- nazwa: chlorek sodu;
+- wzór: NaCl;
+- rodzaj: związek jonowy;
+- budowa: sieć jonów Na⁺ i Cl⁻;
+- stan w temperaturze pokojowej: ciało stałe;
+- rozpuszczalność: dobrze rozpuszcza się w wodzie;
+- przewodnictwo: stały kryształ nie przewodzi tak jak roztwór, roztwór przewodzi dzięki jonom;
+- reakcje: może uczestniczyć w reakcjach strącania;
+- BHP: nie spożywać odczynników laboratoryjnych i nie mieszać nieznanych substancji.

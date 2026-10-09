@@ -41,11 +41,13 @@ NH₃ + H₂O ⇌ NH₄⁺ + OH⁻
 
 Uczeń powinien:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): rozumieć, że wiele reakcji kwasowo-zasadowych jest odwracalnych;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): odróżnić moc kwasu od jego stężenia;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): wyjaśnić rolę sprzężonych par kwas–zasada;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): opisać działanie buforu na poziomie odpowiednim do kursu;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): nie utożsamiać równowagi z zatrzymaniem reakcji.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- rozumieć, że wiele reakcji kwasowo-zasadowych jest odwracalnych;
+- odróżnić moc kwasu od jego stężenia;
+- wyjaśnić rolę sprzężonych par kwas–zasada;
+- opisać działanie buforu na poziomie odpowiednim do kursu;
+- nie utożsamiać równowagi z zatrzymaniem reakcji.
 
 #### Równowaga dynamiczna
 
@@ -57,10 +59,12 @@ Dla słabego kwasu:
 
 W roztworze znajdują się:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): cząsteczki HA;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): jony H₃O⁺;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): jony A⁻;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): woda.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- cząsteczki HA;
+- jony H₃O⁺;
+- jony A⁻;
+- woda.
 
 #### Moc kwasu
 
@@ -86,8 +90,10 @@ Dla reakcji:
 
 pary sprzężone to:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): HA/A⁻;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): H₃O⁺/H₂O.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- HA/A⁻;
+- H₃O⁺/H₂O.
 
 Kwas oddaje proton, a zasada sprzężona może go przyjąć.
 
@@ -95,8 +101,10 @@ Kwas oddaje proton, a zasada sprzężona może go przyjąć.
 
 Bufor ogranicza zmiany pH po dodaniu małej ilości kwasu lub zasady. Zwykle zawiera:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): słaby kwas;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): jego sprzężoną zasadę, często w postaci rozpuszczalnej soli.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- słaby kwas;
+- jego sprzężoną zasadę, często w postaci rozpuszczalnej soli.
 
 Przykład: układ kwasu etanowego i jonów etanianowych.
 

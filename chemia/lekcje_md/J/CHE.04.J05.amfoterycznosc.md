@@ -42,10 +42,12 @@ Substancja obojętna nie wykazuje w danym modelu właściwości kwasowych ani za
 
 Substancja amfoteryczna może reagować zarówno z kwasem, jak i z zasadą. W szkolnym kursie najczęściej omawia się amfoteryczne:
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): Al(OH)₃;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): Zn(OH)₂;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): Al₂O₃;
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): ZnO.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- Al(OH)₃;
+- Zn(OH)₂;
+- Al₂O₃;
+- ZnO.
 
 Amfoteryczność nie oznacza, że substancja zachowuje się identycznie wobec każdego kwasu i każdej zasady.
 
@@ -94,10 +96,12 @@ Al(OH)₃ zawiera grupy OH, ale jest trudno rozpuszczalny w wodzie i nie jest ty
 
 ## AUDYT W1 — wynik (2026-10-09, GPT-6)
 
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): **Poprawiono klucz zadania 4:** poprzednia odpowiedź jedynie powtarzała definicję amfoteryczności; dodano kontrast z obojętnością i odniesienie do dwóch typów reakcji.
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): **Doprecyzowano zapis równań** przez dodanie odstępów ułatwiających odczyt; równanie Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O jest zbilansowane atomowo.
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): Równanie Al(OH)₃ + OH⁻ → [Al(OH)₄]⁻ zachowuje bilans atomów i ładunku (ładunek −1 po obu stronach).
-- ✔ uwzględniono w treści kanonicznej (sekcja TREŚĆ KANONICZNA PO W1): **Do dalszej weryfikacji:** warunki tworzenia kompleksu glinianowego zależą od środowiska i składu roztworu; zapis traktować jako model jonowy szkolny.
+> ✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.
+
+- **Poprawiono klucz zadania 4:** poprzednia odpowiedź jedynie powtarzała definicję amfoteryczności; dodano kontrast z obojętnością i odniesienie do dwóch typów reakcji.
+- **Doprecyzowano zapis równań** przez dodanie odstępów ułatwiających odczyt; równanie Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O jest zbilansowane atomowo.
+- Równanie Al(OH)₃ + OH⁻ → [Al(OH)₄]⁻ zachowuje bilans atomów i ładunku (ładunek −1 po obu stronach).
+- **Do dalszej weryfikacji:** warunki tworzenia kompleksu glinianowego zależą od środowiska i składu roztworu; zapis traktować jako model jonowy szkolny.
 
 
 ## W22 — kontrola amfoteryczności (2026-10-09, GPT-6)

@@ -558,24 +558,26 @@ Siły dyspersyjne występują między wszystkimi atomami i cząsteczkami. Oddzia
 
 ### Poprawki — status wdrożenia
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Polarność wiązania wynika z nierównomiernego rozkładu gęstości elektronowej.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Elektroujemność jest miarą zdolności atomu do przyciągania elektronów w wiązaniu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązanie między identycznymi atomami, na przykład H-H, jest kowalencyjne niespolaryzowane.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązanie między różnymi atomami może być polarne, ale sama różnica elektroujemności nie wystarcza do określenia polarności całej cząsteczki.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Polarność cząsteczki zależy od:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- Polarność wiązania wynika z nierównomiernego rozkładu gęstości elektronowej.
+- Elektroujemność jest miarą zdolności atomu do przyciągania elektronów w wiązaniu.
+- Wiązanie między identycznymi atomami, na przykład H-H, jest kowalencyjne niespolaryzowane.
+- Wiązanie między różnymi atomami może być polarne, ale sama różnica elektroujemności nie wystarcza do określenia polarności całej cząsteczki.
+- Polarność cząsteczki zależy od:
   - polarności wiązań;
   - geometrii cząsteczki;
   - wartości i kierunku momentów dipolowych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Cząsteczka może mieć polarne wiązania, ale być niepolarna, jeśli momenty dipolowe wzajemnie się znoszą.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie przedstawiaj elektroujemności jako „ładunku atomu”.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Elektroujemność nie jest tym samym co ładunek jonu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie zapisuj kolejności elektroujemności jako „F O Cl N” bez wyjaśnienia. Dla najczęściej używanych niemetali poprawna kolejność malejąca to:
+- Cząsteczka może mieć polarne wiązania, ale być niepolarna, jeśli momenty dipolowe wzajemnie się znoszą.
+- Nie przedstawiaj elektroujemności jako „ładunku atomu”.
+- Elektroujemność nie jest tym samym co ładunek jonu.
+- Nie zapisuj kolejności elektroujemności jako „F O Cl N” bez wyjaśnienia. Dla najczęściej używanych niemetali poprawna kolejność malejąca to:
 
  F > O > Cl > N > Br > I > S > C > H
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wartości elektroujemności zależą od zastosowanej skali; podane liczby należy traktować jako wartości przybliżone.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Nie wyznaczaj typu wiązania wyłącznie na podstawie sztywnej granicy liczbowej różnicy elektroujemności.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązanie C-H często traktuje się szkolnie jako prawie niespolaryzowane, choć różnica elektroujemności nie wynosi dokładnie zero.
+- Wartości elektroujemności zależą od zastosowanej skali; podane liczby należy traktować jako wartości przybliżone.
+- Nie wyznaczaj typu wiązania wyłącznie na podstawie sztywnej granicy liczbowej różnicy elektroujemności.
+- Wiązanie C-H często traktuje się szkolnie jako prawie niespolaryzowane, choć różnica elektroujemności nie wynosi dokładnie zero.
 
 ### Uzupełnienia — status wdrożenia
 
@@ -603,32 +605,36 @@ Nie są to pełne ładunki jonowe.
 
 HCl:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wiązanie polarne;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka liniowa dwuatomowa;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): moment dipolowy nie znosi się;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka polarna.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- wiązanie polarne;
+- cząsteczka liniowa dwuatomowa;
+- moment dipolowy nie znosi się;
+- cząsteczka polarna.
 
 CO₂:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): oba wiązania C=O są polarne;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka jest liniowa;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): momenty dipolowe mają przeciwne kierunki;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka jest niepolarna.
+- oba wiązania C=O są polarne;
+- cząsteczka jest liniowa;
+- momenty dipolowe mają przeciwne kierunki;
+- cząsteczka jest niepolarna.
 
 H₂O:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): wiązania O-H są polarne;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka ma kształt kątowy;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): momenty dipolowe nie znoszą się;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): cząsteczka jest polarna.
+- wiązania O-H są polarne;
+- cząsteczka ma kształt kątowy;
+- momenty dipolowe nie znoszą się;
+- cząsteczka jest polarna.
 
 #### Oddziaływania międzycząsteczkowe
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Siły dyspersyjne występują między wszystkimi cząsteczkami i atomami.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Oddziaływania dipol–dipol występują między cząsteczkami polarnymi.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązania wodorowe są szczególnie silnym rodzajem oddziaływań, gdy wodór jest związany z silnie elektroujemnym atomem, najczęściej F, O lub N.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Wiązanie wodorowe nie jest tym samym co wiązanie kowalencyjne O-H lub N-H.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W6): Oddziaływania międzycząsteczkowe są zwykle słabsze niż wiązania chemiczne wewnątrz cząsteczek, ale wpływają między innymi na temperaturę wrzenia, lepkość i rozpuszczalność.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
+
+- Siły dyspersyjne występują między wszystkimi cząsteczkami i atomami.
+- Oddziaływania dipol–dipol występują między cząsteczkami polarnymi.
+- Wiązania wodorowe są szczególnie silnym rodzajem oddziaływań, gdy wodór jest związany z silnie elektroujemnym atomem, najczęściej F, O lub N.
+- Wiązanie wodorowe nie jest tym samym co wiązanie kowalencyjne O-H lub N-H.
+- Oddziaływania międzycząsteczkowe są zwykle słabsze niż wiązania chemiczne wewnątrz cząsteczek, ale wpływają między innymi na temperaturę wrzenia, lepkość i rozpuszczalność.
 
 #### Zadania
 

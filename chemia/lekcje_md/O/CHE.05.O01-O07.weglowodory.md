@@ -1008,25 +1008,27 @@ Przykłady: CH₄ + 2O₂ → CO₂ + 2H₂O; 2CH₄ + 3O₂ → 2CO + 4H₂O; C
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Węglowodory to związki organiczne zbudowane wyłącznie z węgla i wodoru.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie każdy związek zawierający węgiel jest węglowodorem.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): CO, CO₂, węglany i wodorowęglany nie są węglowodorami.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Węgiel jest czterowartościowy w typowych związkach organicznych.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wodór tworzy zwykle jedno wiązanie.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkany zawierają wyłącznie wiązania pojedyncze między atomami węgla.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkeny zawierają co najmniej jedno wiązanie podwójne C=C.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkiny zawierają co najmniej jedno wiązanie potrójne C≡ C.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Węglowodory aromatyczne zawierają układ aromatyczny; nie należy definiować ich wyłącznie jako „związków z naprzemiennymi wiązaniami pojedynczymi i podwójnymi”.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Wzór ogólny dotyczy określonej klasy związków i nie może być stosowany do wszystkich węglowodorów.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Dla acyklicznych alkanów:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Węglowodory to związki organiczne zbudowane wyłącznie z węgla i wodoru.
+- Nie każdy związek zawierający węgiel jest węglowodorem.
+- CO, CO₂, węglany i wodorowęglany nie są węglowodorami.
+- Węgiel jest czterowartościowy w typowych związkach organicznych.
+- Wodór tworzy zwykle jedno wiązanie.
+- Alkany zawierają wyłącznie wiązania pojedyncze między atomami węgla.
+- Alkeny zawierają co najmniej jedno wiązanie podwójne C=C.
+- Alkiny zawierają co najmniej jedno wiązanie potrójne C≡ C.
+- Węglowodory aromatyczne zawierają układ aromatyczny; nie należy definiować ich wyłącznie jako „związków z naprzemiennymi wiązaniami pojedynczymi i podwójnymi”.
+- Wzór ogólny dotyczy określonej klasy związków i nie może być stosowany do wszystkich węglowodorów.
+- Dla acyklicznych alkanów:
 
  CₙH₂n₊₂
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Dla acyklicznych alkenów z jednym wiązaniem podwójnym:
+- Dla acyklicznych alkenów z jednym wiązaniem podwójnym:
 
  CₙH₂n
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Dla acyklicznych alkinów z jednym wiązaniem potrójnym:
+- Dla acyklicznych alkinów z jednym wiązaniem potrójnym:
 
  CₙH₂n₋₂
 
@@ -1047,10 +1049,12 @@ Kolejne związki szeregu homologicznego różnią się o grupę -CH₂-, ale maj
 
 ##### Nazewnictwo
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): najdłuższy łańcuch węglowy określa nazwę podstawową;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): położenie wiązania wielokrotnego oznacza się numerem;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): łańcuch numeruje się od strony bliższej wiązania wielokrotnego;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): nazwy kończą się odpowiednio na:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- najdłuższy łańcuch węglowy określa nazwę podstawową;
+- położenie wiązania wielokrotnego oznacza się numerem;
+- łańcuch numeruje się od strony bliższej wiązania wielokrotnego;
+- nazwy kończą się odpowiednio na:
   - „-an” dla alkanów;
   - „-en” dla alkenów;
   - „-yn” dla alkinów.
@@ -1061,8 +1065,10 @@ Izomery mają ten sam wzór sumaryczny, ale różną budowę lub różne rozmies
 
 Przykład dla C₄H₁₀:
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): butan;
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): 2-metylopropan.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- butan;
+- 2-metylopropan.
 
 Nie są to różne pierwiastki ani różne wzory sumaryczne.
 
@@ -1072,17 +1078,19 @@ Nie są to różne pierwiastki ani różne wzory sumaryczne.
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Spalanie całkowite zachodzi przy wystarczającej ilości tlenu i prowadzi do powstania CO₂ oraz H₂O.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Spalanie niecałkowite może prowadzić do powstania:
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Spalanie całkowite zachodzi przy wystarczającej ilości tlenu i prowadzi do powstania CO₂ oraz H₂O.
+- Spalanie niecałkowite może prowadzić do powstania:
   - tlenku węgla(II), CO;
   - węgla, C;
   - wody.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie zapisuj, że brak tlenu zawsze prowadzi wyłącznie do sadzy.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Produkty spalania niecałkowitego zależą od ilości tlenu i warunków procesu.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Tlen jest substratem spalania, a nie produktem.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Spalanie jest reakcją utleniania i zwykle reakcją egzotermiczną.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Tlenek węgla(II) jest bezbarwnym i silnie toksycznym gazem.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Nie wolno identyfikować CO przez zapach, ponieważ jest bezwonny.
+- Nie zapisuj, że brak tlenu zawsze prowadzi wyłącznie do sadzy.
+- Produkty spalania niecałkowitego zależą od ilości tlenu i warunków procesu.
+- Tlen jest substratem spalania, a nie produktem.
+- Spalanie jest reakcją utleniania i zwykle reakcją egzotermiczną.
+- Tlenek węgla(II) jest bezbarwnym i silnie toksycznym gazem.
+- Nie wolno identyfikować CO przez zapach, ponieważ jest bezwonny.
 
 #### Uzupełnienia
 
@@ -1141,16 +1149,18 @@ Niecałkowite do węgla:
 
 #### Poprawki
 
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkany są nasycone, ponieważ zawierają maksymalną możliwą liczbę atomów wodoru dla danego szkieletu acyklicznego.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkeny i alkiny są nienasycone, ponieważ zawierają wiązania wielokrotne.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Próba z wodą bromową nie jest ogólnym testem na „każdy związek organiczny”.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkeny i alkiny mogą odbarwiać wodę bromową wskutek reakcji addycji, ale warunki i zakres próby należy określić.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Odbarwienie wody bromowej nie jest dowodem wyłącznie na obecność alkenu, ponieważ niektóre inne substancje także mogą reagować z bromem.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Reakcja addycji polega na przyłączeniu atomów lub grup do atomów połączonych wiązaniem wielokrotnym.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Reakcja substytucji polega na zastąpieniu jednego atomu lub grupy innym atomem lub grupą.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkany typowo uczestniczą w substytucji rodnikowej w odpowiednich warunkach, na przykład pod wpływem światła.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkeny typowo uczestniczą w addycji.
-- ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE W8): Alkiny również mogą uczestniczyć w addycji, często etapami.
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
+- Alkany są nasycone, ponieważ zawierają maksymalną możliwą liczbę atomów wodoru dla danego szkieletu acyklicznego.
+- Alkeny i alkiny są nienasycone, ponieważ zawierają wiązania wielokrotne.
+- Próba z wodą bromową nie jest ogólnym testem na „każdy związek organiczny”.
+- Alkeny i alkiny mogą odbarwiać wodę bromową wskutek reakcji addycji, ale warunki i zakres próby należy określić.
+- Odbarwienie wody bromowej nie jest dowodem wyłącznie na obecność alkenu, ponieważ niektóre inne substancje także mogą reagować z bromem.
+- Reakcja addycji polega na przyłączeniu atomów lub grup do atomów połączonych wiązaniem wielokrotnym.
+- Reakcja substytucji polega na zastąpieniu jednego atomu lub grupy innym atomem lub grupą.
+- Alkany typowo uczestniczą w substytucji rodnikowej w odpowiednich warunkach, na przykład pod wpływem światła.
+- Alkeny typowo uczestniczą w addycji.
+- Alkiny również mogą uczestniczyć w addycji, często etapami.
 
 #### Uzupełnienia
 
