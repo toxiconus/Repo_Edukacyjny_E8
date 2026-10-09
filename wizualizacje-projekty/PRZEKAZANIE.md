@@ -9,7 +9,13 @@
   - FIZ: obwód szeregowy/równoległy (propozycja FIZ-02).
 - Silnika CHE, `rozszerzenia.js` i `bio-viz.js` nie zmieniano (równolegle pracowała inna sesja na `claude/che-lekcje`).
 
-## Czeka na użytkownika
+## ✅ Wdrożone do bibliotek (2026-10-09, polecenie użytkownika „uzupełnij brakujące wizualizacje”)
+- CHE (`chemia/che-modular/engine/src/lekcja/rozszerzenia.js` §11, §13; `KATALOG_MODELI.md`): `f09-trzy-liczby-v01` (V008), `f10-energia-h2-v01` (V009), `f15-dipol-v01` (V012, EN z danych silnika), `f17-bilans-v01` (V015), `fiz02-obwod-v01`. Test renderu: wszystkie montują się bez błędów.
+- BIO (`biologia/bio/szablon/bio-viz.js`, `BIO_KATALOG.md`): `kod-genetyczny`, `punnett` (tryb A/K/X), `transport-blona`, `siec-troficzna`. Test `sprawdz_bio.js` OK.
+- Przy okazji: osłona canvas `arc` z ujemnym promieniem (§12) — naprawia sporadyczny FAIL `N01_powietrze_i_gazy`.
+- Użycie w lekcjach dopiero, gdy powstaną (F09, F10, F15, F17, FIZ-02, BIO L005, L011, L017–L020, L041–L042) — `@model <id>` / `@viz <id>` + `@opis`.
+
+## Czeka na użytkownika (pozostałe)
 - Akceptacja prototypów (wygląd, zakres, dane do weryfikacji: EN Paulinga, H₂ 74 pm / 436 kJ/mol, barwy płomieni).
 - Potwierdzenie listy lekcji fizyki.
 - Lekcje F06+ nadal wstrzymane (decyzja z 2026-10-08 14:21).

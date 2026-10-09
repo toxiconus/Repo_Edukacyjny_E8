@@ -119,6 +119,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `f10-energia-h2-v01` | Energia dwóch atomów wodoru — skąd się bierze wiązanie | (F10) |
 | `f15-dipol-v01` | Wektory dipola — polarność wiązań a polarność cząsteczki | (F15) |
 | `f17-bilans-v01` | Bilans równania reakcji — atomy i ładunek | (F17) |
+| `fiz02-obwod-v01` | Obwód z dwiema żarówkami — szeregowo i równolegle | (FIZ-02) |
 
 - `n05-doswiadczenia-v01`: `cah2H2o`, `nahH2o`, `nh4clCaoh2`, `naclH2so4`, `fesHcl`, `nh3H2oPhp`, `hclH2oOranz`, `h2sH2oUni`, `nh3Hcl`, `h2sPbac`, `h2sCuso4`, `caOH2Co2`
 

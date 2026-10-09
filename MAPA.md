@@ -3,12 +3,12 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 74 KB)
+## .  (11 pl., 76 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
 - `MAPA.md` 19 KB
-- `PRZEKAZANIE.md` 5 KB
+- `PRZEKAZANIE.md` 6 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 25 KB
 - `edit_html.py` 3 KB
@@ -45,7 +45,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `STAN_LEKCJI_PODSTAWA_PLUS.md` 15 KB
 
 ## biologia/bio  (2 pl., 5 KB)
-- `BIO_KATALOG.md` 2 KB
+- `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
 ## biologia/bio/md  (3 pl., 123 KB)
@@ -57,9 +57,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 98 KB)
+## biologia/bio/szablon  (5 pl., 119 KB)
 - `baza-wspolna.css` 45 KB
-- `bio-viz.js` 40 KB
+- ⚠`bio-viz.js` 61 KB
 - `bio-warstwa.css` 10 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
@@ -254,11 +254,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 62 KB)
+## chemia/che-modular/engine/src/lekcja  (4 pl., 94 KB)
 - `index.html` 1 KB
 - `lekcja.css` 4 KB
 - `lekcja.js` 2 KB
-- ⚠`rozszerzenia.js` 56 KB
+- ⚠`rozszerzenia.js` 87 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/engine/src/moduly`) — duże:
@@ -602,15 +602,18 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
 - `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
 
-## polski/plany/wypelnienia  (3 pl., 20 KB)
+## polski/plany/wypelnienia  (6 pl., 32 KB)
 - `G01_Rzeczownik_WYPELNIONY.md` 8 KB
 - `G02_Czasownik_WYPELNIONY.md` 6 KB
 - `G03_Przymiotnik_WYPELNIONY.md` 6 KB
+- `G04_G11_Czesci_mowy_reszta_WYPELNIONE.md` 5 KB
+- `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
+- `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
 ## polski/podstawy  (23 pl., 89 KB)
 - (zwinięte; `ls polski/podstawy`)
 
-## wizualizacje-projekty  (3 pl., 71 KB)
+## wizualizacje-projekty  (3 pl., 72 KB)
 - `PROJEKT.md` 9 KB
-- `PRZEKAZANIE.md` 2 KB
+- `PRZEKAZANIE.md` 3 KB
 - ⚠`wzorcownia.html` 59 KB

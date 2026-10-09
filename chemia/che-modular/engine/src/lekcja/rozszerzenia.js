@@ -534,3 +534,46 @@ V.define('f17-bilans-v01',{title:'Bilans równania reakcji — atomy i ładunek'
 (function(){var P=window.CanvasRenderingContext2D&&CanvasRenderingContext2D.prototype;if(!P||P.arc.__xw)return;var a=P.arc;
 P.arc=function(x,y,r,s,e,cc){return a.call(this,x,y,r>0?r:0,s,e,cc)};P.arc.__xw=1;
 if(P.ellipse){var el=P.ellipse;P.ellipse=function(x,y,rx,ry,ro,s,e,cc){return el.call(this,x,y,rx>0?rx:0,ry>0?ry:0,ro,s,e,cc)}}})();
+
+/* ---------- 13. FIZ-02 — obwód z dwiema żarówkami (wzorcownia → biblioteka, 2026-10-09) ---------- */
+(function(){
+var C=window.CHE;if(!C||!C.VIEW||!C.VIEW.define||C.EXT_FIZ02)return;C.EXT_FIZ02=1;
+var NS='http://www.w3.org/2000/svg',UID=0,MINUS='−';
+function S(t,a,x){var e=document.createElementNS(NS,t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e}
+function H(t,a,h){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else e.setAttribute(k,a[k])}if(h!=null)e.innerHTML=h;return e}
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function pl(x,d){return x.toFixed(d).replace('.',',')}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=H('button',{type:'button','aria-pressed':String(it[0]===cur)});b.textContent=it[1];b.onclick=function(){cb(it[0])};box.appendChild(b)})}
+C.VIEW.define('fiz02-obwod-v01',{title:'Obwód z dwiema żarówkami — szeregowo i równolegle',tag:'MODEL',
+ hint:'Połącz żarówki szeregowo albo równolegle, zmień napięcie i opory, otwórz wyłącznik. Tabela: R, I, U, P dla każdej żarówki i całego obwodu.',foot:'żarówki jako stałe opory (model szkolny) · rozszerzenia.js §13 (FIZ-02)',
+ build:function(host){host.innerHTML='';host.classList.add('xw');var id='xf'+(++UID),mode='sz',dir='umowny';
+  var c1=H('div',{'class':'ctl'}),sm=H('div',{'class':'seg'}),sd=H('div',{'class':'seg'});c1.appendChild(sm);c1.appendChild(sd);
+  var svg=S('svg',{viewBox:'0 0 360 230',role:'img','aria-label':'Schemat obwodu elektrycznego'}),c2=H('div',{'class':'ctl'}),us=H('select',{'aria-label':'Napięcie źródła'});
+  [1.5,3,4.5,6,9,12].forEach(function(u){var o=H('option',{value:u});o.textContent=pl(u,1)+' V';us.appendChild(o)});us.value='6';
+  var r1=H('input',{type:'range',min:'2',max:'20',value:'6',style:'width:110px','aria-label':'Opór R₁'}),r2=H('input',{type:'range',min:'2',max:'20',value:'12',style:'width:110px','aria-label':'Opór R₂'}),sl=H('label',{'class':'chk'}),sw=H('input',{type:'checkbox'});sw.checked=true;sl.appendChild(sw);sl.appendChild(document.createTextNode(' wyłącznik zamknięty'));
+  [H('label',{'class':'chk'},'U'),us,H('label',{'class':'chk'},'R₁'),r1,H('label',{'class':'chk'},'R₂'),r2,sl].forEach(function(e){c2.appendChild(e)});
+  var tw=H('div',{'class':'tbl'}),t=H('table'),out=H('div',{'class':'out'});tw.appendChild(t);[c1,svg,c2,tw,out].forEach(function(e){host.appendChild(e)});
+  function bulb(g,x,y,P,on,lab){var b=on?Math.min(1,P/8):0;g.appendChild(S('circle',{cx:x,cy:y,r:26,fill:'url(#'+id+'g)',opacity:b.toFixed(2)}));g.appendChild(S('circle',{cx:x,cy:y,r:12,fill:b>.05?'#fff6d3':'#ffffff',stroke:'#1a2528','stroke-width':'1.6'}));
+   g.appendChild(S('path',{d:'M'+(x-8.5)+','+(y-8.5)+'L'+(x+8.5)+','+(y+8.5)+'M'+(x+8.5)+','+(y-8.5)+'L'+(x-8.5)+','+(y+8.5),stroke:'#1a2528','stroke-width':'1.4'}));g.appendChild(S('text',{x:x,y:y-17,'text-anchor':'middle','font-size':'10','font-weight':'700',fill:'#3b4ea0'},lab))}
+  function chev(g,x,y,a){g.appendChild(S('path',{d:'M-4,-4L2,0L-4,4',fill:'none',stroke:dir==='umowny'?'#c03d2c':'#2a62b5','stroke-width':'2',transform:'translate('+x+','+y+') rotate('+a+')'}))}
+  function draw(){var U=+us.value,R1=+r1.value,R2=+r2.value,on=sw.checked,I,I1,I2,U1,U2,Rz;
+   if(mode==='sz'){Rz=R1+R2;I=on?U/Rz:0;I1=I2=I;U1=I*R1;U2=I*R2}else{Rz=R1*R2/(R1+R2);I1=on?U/R1:0;I2=on?U/R2:0;I=I1+I2;U1=U2=on?U:0}var P1=I1*I1*R1,P2=I2*I2*R2;
+   clr(svg);var d=S('defs'),gr=S('radialGradient',{id:id+'g'});gr.appendChild(S('stop',{offset:'0','stop-color':'#f5c542','stop-opacity':'.95'}));gr.appendChild(S('stop',{offset:'1','stop-color':'#f5c542','stop-opacity':'0'}));d.appendChild(gr);svg.appendChild(d);
+   var g=S('g',{fill:'none',stroke:'#1a2528','stroke-width':'2'});svg.appendChild(g);function L(p){g.appendChild(S('path',{d:p}))}
+   L('M40,100V40');L('M40,118V190');L('M40,40H320V190');if(mode!=='sz')L('M180,40V120H320');L('M40,190H150');L('M210,190H320');
+   g.appendChild(S('circle',{cx:150,cy:190,r:3,fill:'#1a2528'}));g.appendChild(S('circle',{cx:210,cy:190,r:3,fill:'#1a2528'}));g.appendChild(S('line',{x1:150,y1:190,x2:on?210:202,y2:on?190:162}));
+   svg.appendChild(S('line',{x1:22,y1:100,x2:58,y2:100,stroke:'#1a2528','stroke-width':'2.4'}));svg.appendChild(S('line',{x1:31,y1:118,x2:49,y2:118,stroke:'#1a2528','stroke-width':'5'}));
+   svg.appendChild(S('text',{x:64,y:104,'font-size':'12','font-weight':'700',fill:'#c03d2c'},'+'));svg.appendChild(S('text',{x:56,y:126,'font-size':'13','font-weight':'700',fill:'#2a62b5'},MINUS));
+   svg.appendChild(S('text',{x:8,y:150,'font-size':'10',fill:'#5a6a6d'},pl(U,1)+' V'));svg.appendChild(S('text',{x:180,y:214,'font-size':'10',fill:'#5a6a6d','text-anchor':'middle'},on?'wyłącznik zamknięty':'wyłącznik otwarty'));
+   var ax=mode==='sz'?320:110,ay=mode==='sz'?150:40;svg.appendChild(S('circle',{cx:ax,cy:ay,r:12,fill:'#ffffff',stroke:'#1a2528','stroke-width':'1.8'}));svg.appendChild(S('text',{x:ax,y:ay+4,'text-anchor':'middle','font-size':'11','font-weight':'700',fill:'#1a2528'},'A'));
+   svg.appendChild(S('text',{x:mode==='sz'?ax-16:ax,y:mode==='sz'?ay+4:ay+26,'text-anchor':mode==='sz'?'end':'middle','font-size':'10',fill:'#3b4ea0','font-weight':'700'},pl(I,2)+' A'));
+   var bg=S('g');svg.appendChild(bg);if(mode==='sz'){bulb(bg,140,40,P1,on,'Ż₁');bulb(bg,240,40,P2,on,'Ż₂')}else{bulb(bg,250,40,P1,on,'Ż₁');bulb(bg,250,120,P2,on,'Ż₂')}
+   if(on){var cg=S('g');svg.appendChild(cg);var f=dir==='umowny'?1:-1;chev(cg,40,70,f>0?-90:90);chev(cg,90,40,f>0?0:180);chev(cg,320,100,f>0?90:-90);chev(cg,260,190,f>0?180:0);chev(cg,90,190,f>0?180:0);
+    cg.appendChild(S('text',{x:180,y:168,'text-anchor':'middle','font-size':'10','font-weight':'700',fill:dir==='umowny'?'#c03d2c':'#2a62b5'},dir==='umowny'?'kierunek umowny prądu: + → −':'ruch elektronów: − → +'))}
+   clr(t);var hr=H('tr');['Wielkość','Ż₁','Ż₂','Cały obwód'].forEach(function(x){hr.appendChild(H('th',{text:x}))});t.appendChild(hr);
+   [['Opór R',pl(R1,0)+' Ω',pl(R2,0)+' Ω',pl(Rz,2)+' Ω'],['Natężenie I',pl(I1,2)+' A',pl(I2,2)+' A',pl(I,2)+' A'],['Napięcie U',pl(U1,2)+' V',pl(U2,2)+' V',pl(on?U:0,1)+' V'],['Moc P = U·I',pl(P1,2)+' W',pl(P2,2)+' W',pl(P1+P2,2)+' W']].forEach(function(r){var tr=H('tr');r.forEach(function(x,i){tr.appendChild(H(i?'td':'th',{'class':i?'mono':'',text:x}))});t.appendChild(tr)});
+   out.innerHTML=mode==='sz'?'<b>Szeregowo</b><span>Przez obie żarówki płynie ten sam prąd, napięcia się sumują: U = U₁ + U₂. Opór zastępczy R = R₁ + R₂ — jaśniej świeci żarówka o większym oporze.</span>':'<b>Równolegle</b><span>Na obu żarówkach jest to samo napięcie, prądy się sumują: I = I₁ + I₂. Opór zastępczy jest mniejszy od najmniejszego oporu — jaśniej świeci żarówka o mniejszym oporze.</span>';
+   if(!on)out.innerHTML+='<span>Obwód otwarty: prąd nie płynie, żarówki nie świecą.</span>';
+   seg(sm,[['sz','szeregowo'],['rw','równolegle']],mode,function(m){mode=m;draw()});seg(sd,[['umowny','prąd umowny'],['elektrony','elektrony']],dir,function(m){dir=m;draw()})}
+  [us,r1,r2,sw].forEach(function(e){e.addEventListener('input',draw);e.addEventListener('change',draw)});draw()}});
+})();
