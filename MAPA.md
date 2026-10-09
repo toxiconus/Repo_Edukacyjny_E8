@@ -3,14 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 52 KB)
+## .  (11 pl., 56 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 6 KB
 - `MAPA.md` 17 KB
 - `PRZEKAZANIE.md` 3 KB
 - `README.md` 0 KB
-- `WERYFIKACJA.md` 7 KB
+- `WERYFIKACJA.md` 11 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -298,7 +298,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 905 KB)
+## chemia/che-modular/lessons-md/gotowe  (15 pl., 907 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 51 KB
 - ⚠`N01_tlenki.md` 123 KB
@@ -440,13 +440,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.02.N04.kwasy.md` 35 KB
 - `CHE.02.N05.sole.md` 37 KB
 
-## chemia/lekcje_md/O  (2 pl., 64 KB)
-- `CHE.05.O01-O07.weglowodory.md` 31 KB
-- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 33 KB
+## chemia/lekcje_md/O  (2 pl., 72 KB)
+- `CHE.05.O01-O07.weglowodory.md` 38 KB
+- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 35 KB
 
-## chemia/lekcje_md/R  (2 pl., 61 KB)
-- `CHE.03.R03+R05.stezenia.md` 29 KB
-- `CHE.03.R04+R07-R09.stechiometria.md` 31 KB
+## chemia/lekcje_md/R  (2 pl., 70 KB)
+- `CHE.03.R03+R05.stezenia.md` 32 KB
+- `CHE.03.R04+R07-R09.stechiometria.md` 39 KB
 
 ## chemia/lekcje_md/X  (1 pl., 35 KB)
 - `CHE.06.X01-X09.redoks.md` 35 KB
@@ -456,10 +456,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (3 pl., 55 KB)
+## chemia/plany/audyty  (4 pl., 71 KB)
 - `W1_perplexity_F01-F06_2026-10-09.md` 18 KB
 - `W1_perplexity_F07-F14_2026-10-09.md` 20 KB
 - `W1_perplexity_F15-F21_2026-10-09.md` 17 KB
+- `W1_perplexity_N01-N05_2026-10-09.md` 17 KB
 
 ## chemia/plany/narzedzia  (3 pl., 47 KB)
 - `kanon_dane.py` 37 KB
@@ -475,8 +476,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 16 KB
 
-## narzedzia  (5 pl., 10 KB)
-- `audyt_do_kanonu.py` 3 KB
+## narzedzia  (5 pl., 13 KB)
+- `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB

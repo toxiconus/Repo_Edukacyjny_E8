@@ -87,6 +87,7 @@ Cząsteczka wody H₂O jest **polarna** (kątowa, z biegunem ujemnym przy tlenie
 :::
 
 @zlewka f01-doswiadczenia-v01 f01SolWoda | Zobacz w zlewce: rozpuszczanie soli w wodzie
+@opis Sól wsypana do wody w zlewce: kryształy stopniowo znikają, powstaje klarowny, bezbarwny roztwór. Wniosek: sól się rozpuściła, a nie zniknęła — jej jony rozproszyły się w wodzie; odzyskamy ją, odparowując wodę.
 
 ## 3 | Szybkość rozpuszczania [[basic:E8]] {#szybkosc}
 
@@ -148,6 +149,7 @@ BHP: okulary; nie pochylamy się nad parownicą (pryskanie), gorącą parownicę
 :::
 
 @zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w zlewce: odparowanie wody i krystalizacja
+@opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, roztwór staje się coraz bardziej stężony, aż na dnie pojawiają się białe kryształy soli. Wniosek: przy odparowaniu masa soli się nie zmienia, maleje masa roztworu — stężenie rośnie, a po przekroczeniu rozpuszczalności sól krystalizuje.
 
 ## 5 | Stężenie procentowe [[basic:E8]] {#cp}
 
@@ -230,6 +232,11 @@ Po zmieszaniu roztworu 10% z roztworem 20% stężenie **musi** wyjść **między
 | Mieszanie 10% i 20% → 30% | Wynik między 10% a 20%. | Stężeń nie dodaje się — sumujemy masy substancji i masy roztworów. |
 | Rozpuszczalność „na 100 g roztworu” | Na **100 g wody**. | Roztwór nasycony z R = 36 g ma masę 136 g. |
 | „Zawiesinę rozdzielimy, odparowując wodę.” | Zawiesinę rozdzielamy **sączeniem**. | Odparowanie służy do roztworów właściwych. |
+| „Mieszanie i rozdrabnianie zwiększają rozpuszczalność.” | Przyspieszają **rozpuszczanie**, ale nie zmieniają **rozpuszczalności** (maksymalnej ilości w danej temperaturze). | Szybkość ≠ ile się rozpuści. |
+| „Ogrzewanie zawsze zwiększa rozpuszczalność.” | Dla większości ciał stałych tak (są wyjątki), ale rozpuszczalność **gazów** w wodzie maleje z temperaturą. | Ciepły napój gazowany szybciej traci CO₂. |
+| „Stężenie 10% to 10 g substancji na 100 g wody.” | 10% to 10 g substancji w **100 g roztworu** (czyli w 90 g wody). | Cp = ms / mr · 100%, mr = ms + mw. |
+| „Stężenie procentowe to procent objętości.” | Cp to procent **masowy**; procent objętościowy (np. „40% alkoholu”) to inna wielkość. | Masa i objętość to różne wielkości. |
+| „Mleko i błoto to roztwory.” | Mleko to koloid (emulsja), błoto — zawiesina; roztwór jest jednorodny. | Roztwór nie ma widocznych, rozproszonych cząstek ani kropli. |
 :::
 
 ## 9 | Ćwiczenia {#cwiczenia}
@@ -266,6 +273,30 @@ Po zmieszaniu roztworu 10% z roztworem 20% stężenie **musi** wyjść **między
 
 ::: odp | Pokaż odpowiedzi
 11. ok. **74,3 g** (rozwiązanie w [§7](#konkurs)). 12. ms = 25 g; mr = 25 · 100% ÷ 10% = **250 g** (dolać 150 g wody). 13. Rozpuszczalność tlenu w wodzie maleje ze wzrostem temperatury — w ciepłej wodzie jest go za mało.
+:::
+
+::: karta basic | Utrwalenie — roztwory i stężenie procentowe (W1)
+1. Wskaż rozpuszczalnik w roztworze cukru w wodzie.
+2. Czym różni się rozpuszczalność od szybkości rozpuszczania?
+3. Czy rozdrobnienie kryształów soli zwiększa jej rozpuszczalność?
+4. Dlaczego napój gazowany szybciej traci gaz po ogrzaniu i otwarciu?
+5. Oblicz stężenie roztworu: 15 g cukru w 85 g wody.
+6. Ile soli jest w 400 g roztworu 12-procentowego?
+7. Ile wody trzeba dodać do 50 g soli, aby otrzymać roztwór 20-procentowy?
+8. Do 100 g roztworu 10-procentowego dodano 100 g wody. Oblicz nowe stężenie.
+9. Z 300 g roztworu 20-procentowego odparowano 50 g wody (bez strat soli). Oblicz nowe stężenie.
+
+::: odp | Pokaż odpowiedzi
+1. Woda.
+2. Szybkość mówi, jak prędko substancja się rozpuszcza; rozpuszczalność — ile najwięcej może się rozpuścić w 100 g wody w danej temperaturze.
+3. Nie — przyspiesza rozpuszczanie, rozpuszczalność się nie zmienia.
+4. Rozpuszczalność gazu maleje ze wzrostem temperatury i ze spadkiem ciśnienia (otwarcie butelki).
+5. mr = 15 + 85 = 100 g; Cp = 15 / 100 · 100% = 15%.
+6. ms = 0,12 · 400 g = 48 g.
+7. mr = 50 g / 0,20 = 250 g; mw = 250 − 50 = 200 g.
+8. ms = 10 g; mr = 200 g; Cp = 10 / 200 · 100% = 5%.
+9. ms = 0,20 · 300 = 60 g; mr = 300 − 50 = 250 g; Cp = 60 / 250 · 100% = 24%.
+:::
 :::
 
 ## 10 | Test końcowy {#test}

@@ -984,3 +984,59 @@ Wiązanie peptydowe –CO–NH–. Próby: biuret, Fehling/Tollens (redukujące)
 - Szkorbut / krzywica — C / D.
 
 <!-- ==================== END L007 ==================== -->
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexityO01-O07₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### O13 — Tłuszcze (w audycie: O07)
+
+#### Poprawki
+
+- Tłuszcze są estrami glicerolu i wyższych kwasów karboksylowych.
+- Nie każdy tłuszcz jest ciałem stałym.
+- Stan skupienia zależy między innymi od długości łańcuchów i liczby wiązań podwójnych.
+- Tłuszcze nasycone nie zawierają wiązań podwójnych C=C w łańcuchach kwasów tłuszczowych.
+- Tłuszcze nienasycone zawierają co najmniej jedno wiązanie podwójne.
+- Określenia „nasycony” i „nienasycony” odnoszą się do łańcuchów kwasów tłuszczowych, a nie do całej cząsteczki w prostym sensie.
+- Tłuszcze nie rozpuszczają się w wodzie, ale mogą rozpuszczać się w niektórych rozpuszczalnikach organicznych.
+- Emulgator ułatwia utworzenie emulsji, ale nie zamienia tłuszczu w roztwór wodny.
+- Nie każdy olej jest chemicznie wyłącznie jednym związkiem.
+
+#### Uzupełnienia
+
+##### Budowa
+
+Typowa cząsteczka tłuszczu zawiera:
+
+- glicerol;
+- trzy reszty wyższych kwasów karboksylowych;
+- trzy wiązania estrowe.
+
+##### Reakcje
+
+Hydroliza tłuszczu:
+
+ tłuszcz+3H₂O→ glicerol+3 kwasy tłuszczowe
+
+Zmydlanie:
+
+ tłuszcz+3NaOH→ glicerol+3 sole kwasów tłuszczowych
+
+Uwodornienie części wiązań podwójnych może zmieniać właściwości tłuszczu, ale nie należy przedstawiać tego jako automatycznego procesu dla każdego oleju.
+
+##### Zadania
+
+1. Z czego zbudowane są tłuszcze?
+2. Wyjaśnij różnicę między tłuszczem nasyconym i nienasyconym.
+3. Dlaczego tłuszcze nie tworzą z wodą typowego roztworu?
+4. Co powstaje podczas zmydlania?
+5. Podaj rolę emulgatora.
+
+##### Klucz
+
+1. Z glicerolu i wyższych kwasów karboksylowych.
+2. Nasycone nie mają wiązań C=C w łańcuchach kwasów tłuszczowych, a nienasycone mają co najmniej jedno.
+3. Mają inną budowę i polarność niż woda, dlatego tworzą odrębną fazę.
+4. Glicerol i sole kwasów tłuszczowych.
+5. Ułatwia rozproszenie jednej cieczy w drugiej i stabilizuje emulsję.

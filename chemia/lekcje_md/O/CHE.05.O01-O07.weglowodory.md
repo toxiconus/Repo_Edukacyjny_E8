@@ -977,3 +977,200 @@ Polimeryzacja etenu → polietylen (hasło).
 - Benzen — kancerogen; nie jako rozpuszczalnik szkolny.
 
 <!-- ==================== END L006 ==================== -->
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexityO01-O07₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### O01/O02 — Węglowodory (w audycie: O01)
+
+#### Poprawki
+
+- Węglowodory to związki organiczne zbudowane wyłącznie z węgla i wodoru.
+- Nie każdy związek zawierający węgiel jest węglowodorem.
+- CO, CO₂, węglany i wodorowęglany nie są węglowodorami.
+- Węgiel jest czterowartościowy w typowych związkach organicznych.
+- Wodór tworzy zwykle jedno wiązanie.
+- Alkany zawierają wyłącznie wiązania pojedyncze między atomami węgla.
+- Alkeny zawierają co najmniej jedno wiązanie podwójne C=C.
+- Alkiny zawierają co najmniej jedno wiązanie potrójne C≡ C.
+- Węglowodory aromatyczne zawierają układ aromatyczny; nie należy definiować ich wyłącznie jako „związków z naprzemiennymi wiązaniami pojedynczymi i podwójnymi”.
+- Wzór ogólny dotyczy określonej klasy związków i nie może być stosowany do wszystkich węglowodorów.
+- Dla acyklicznych alkanów:
+
+ CₙH₂n₊₂
+
+- Dla acyklicznych alkenów z jednym wiązaniem podwójnym:
+
+ CₙH₂n
+
+- Dla acyklicznych alkinów z jednym wiązaniem potrójnym:
+
+ CₙH₂n₋₂
+
+#### Uzupełnienia
+
+##### Szereg homologiczny alkanów
+
+| Nazwa | Wzór |
+|---|---|
+| Metan | CH₄ |
+| Etan | C₂H₆ |
+| Propan | C₃H₈ |
+| Butan | C₄H₁₀ |
+| Pentan | C₅H₁₂ |
+| Heksan | C₆H₁₄ |
+
+Kolejne związki szeregu homologicznego różnią się o grupę -CH₂-, ale mają podobny typ budowy i podobne właściwości chemiczne.
+
+##### Nazewnictwo
+
+- najdłuższy łańcuch węglowy określa nazwę podstawową;
+- położenie wiązania wielokrotnego oznacza się numerem;
+- łańcuch numeruje się od strony bliższej wiązania wielokrotnego;
+- nazwy kończą się odpowiednio na:
+  - „-an” dla alkanów;
+  - „-en” dla alkenów;
+  - „-yn” dla alkinów.
+
+##### Izomeria
+
+Izomery mają ten sam wzór sumaryczny, ale różną budowę lub różne rozmieszczenie atomów w przestrzeni.
+
+Przykład dla C₄H₁₀:
+
+- butan;
+- 2-metylopropan.
+
+Nie są to różne pierwiastki ani różne wzory sumaryczne.
+
+### O06 — Spalanie węglowodorów (w audycie: O02)
+
+> Uwaga przy scalaniu: W kluczu zad. 5 zamiast „dwutlenek węgla” — „tlenek węgla(IV)”.
+
+#### Poprawki
+
+- Spalanie całkowite zachodzi przy wystarczającej ilości tlenu i prowadzi do powstania CO₂ oraz H₂O.
+- Spalanie niecałkowite może prowadzić do powstania:
+  - tlenku węgla(II), CO;
+  - węgla, C;
+  - wody.
+- Nie zapisuj, że brak tlenu zawsze prowadzi wyłącznie do sadzy.
+- Produkty spalania niecałkowitego zależą od ilości tlenu i warunków procesu.
+- Tlen jest substratem spalania, a nie produktem.
+- Spalanie jest reakcją utleniania i zwykle reakcją egzotermiczną.
+- Tlenek węgla(II) jest bezbarwnym i silnie toksycznym gazem.
+- Nie wolno identyfikować CO przez zapach, ponieważ jest bezwonny.
+
+#### Uzupełnienia
+
+##### Spalanie całkowite metanu
+
+ CH₄+2O₂→ CO₂+2H₂O
+
+##### Spalanie niecałkowite do tlenku węgla(II)
+
+ 2CH₄+3O₂→2CO+4H₂O
+
+##### Spalanie niecałkowite do węgla
+
+ CH₄+O₂→ C+2H₂O
+
+##### Spalanie propanu
+
+Całkowite:
+
+ C₃H₈+5O₂→3CO₂+4H₂O
+
+Niecałkowite do CO:
+
+ 2C₃H₈+7O₂→6CO+8H₂O
+
+Niecałkowite do węgla:
+
+ C₃H₈+2O₂→3C+4H₂O
+
+##### Zadania
+
+1. Zbilansuj spalanie etanu.
+2. Zapisz spalanie całkowite butanu.
+3. Zapisz jeden przykład spalania niecałkowitego propanu.
+4. Wyjaśnij, dlaczego spalanie niecałkowite jest niebezpieczne.
+5. Podaj produkty spalania całkowitego węglowodorów.
+
+##### Klucz
+
+1.
+
+ 2C₂H₆+7O₂→4CO₂+6H₂O
+
+2.
+
+ 2C₄H₁₀+13O₂→8CO₂+10H₂O
+
+3.
+
+ 2C₃H₈+7O₂→6CO+8H₂O
+
+4. Może powstawać silnie toksyczny tlenek węgla(II), a niewystarczająca ilość tlenu zwiększa ryzyko zatrucia i pożaru.
+5. Dwutlenek węgla i woda.
+
+### O02/O04/O05 — Alkany, alkeny i alkiny (w audycie: O03)
+
+#### Poprawki
+
+- Alkany są nasycone, ponieważ zawierają maksymalną możliwą liczbę atomów wodoru dla danego szkieletu acyklicznego.
+- Alkeny i alkiny są nienasycone, ponieważ zawierają wiązania wielokrotne.
+- Próba z wodą bromową nie jest ogólnym testem na „każdy związek organiczny”.
+- Alkeny i alkiny mogą odbarwiać wodę bromową wskutek reakcji addycji, ale warunki i zakres próby należy określić.
+- Odbarwienie wody bromowej nie jest dowodem wyłącznie na obecność alkenu, ponieważ niektóre inne substancje także mogą reagować z bromem.
+- Reakcja addycji polega na przyłączeniu atomów lub grup do atomów połączonych wiązaniem wielokrotnym.
+- Reakcja substytucji polega na zastąpieniu jednego atomu lub grupy innym atomem lub grupą.
+- Alkany typowo uczestniczą w substytucji rodnikowej w odpowiednich warunkach, na przykład pod wpływem światła.
+- Alkeny typowo uczestniczą w addycji.
+- Alkiny również mogą uczestniczyć w addycji, często etapami.
+
+#### Uzupełnienia
+
+##### Addycja bromu do etenu
+
+ CH₂=CH₂+Br₂→ CH₂Br-CH₂Br
+
+Obserwacja: odbarwienie roztworu bromu.
+
+##### Uwodornienie etenu
+
+ CH₂=CH₂+H₂→ CH₃-CH₃
+
+Reakcja wymaga odpowiednich warunków i katalizatora.
+
+##### Substytucja metanu chlorem
+
+ CH₄+Cl₂—(światło)→CH₃Cl+HCl
+
+##### Polimeryzacja etenu
+
+ nCH₂=CH₂→[-CH₂-CH₂-]ₙ
+
+W zapisie należy zaznaczyć, że powstaje polietylen, a symbol n oznacza dużą liczbę powtarzających się jednostek.
+
+##### Zadania
+
+1. Rozpoznaj klasę: C₃H₈, C₃H₆, C₃H₄.
+2. Zapisz reakcję etenu z bromem.
+3. Podaj typ reakcji metanu z chlorem w świetle.
+4. Wyjaśnij, dlaczego eten odbarwia wodę bromową, a etan zwykle nie reaguje w tych warunkach.
+5. Zapisz produkt uwodornienia propenu.
+
+##### Klucz
+
+1. C₃H₈ — alkan; C₃H₆ — alken acykliczny z jednym wiązaniem podwójnym; C₃H₄ — alkin acykliczny z jednym wiązaniem potrójnym.
+2.
+
+ CH₂=CH₂+Br₂→ CH₂Br-CH₂Br
+
+3. Substytucja.
+4. Eten zawiera wiązanie podwójne, które może ulec addycji bromu; etan nie ma wiązania wielokrotnego i wymaga innych warunków reakcji.
+5. Propan:
+
+ CH₃-CH=CH₂+H₂→ CH₃-CH₂-CH₃

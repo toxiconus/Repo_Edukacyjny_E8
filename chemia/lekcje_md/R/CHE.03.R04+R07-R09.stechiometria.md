@@ -1113,3 +1113,269 @@ Wydajność = m_rzecz / m_teor · 100%. Reagent ograniczający = ten, który pie
 - Reakcje odwracalne → równowaga (most L013).
 
 <!-- ==================== END L009 ==================== -->
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexityR03-R09₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### R04 — Mol i masa molowa (w audycie: R06)
+
+> Uwaga przy scalaniu: Mol i masa molowa — poziom LO / konkurs (poza podstawą SP). W lekcji używać nazwy „tlenek węgla(IV)” zamiast „dwutlenek węgla”.
+
+#### Poprawki
+
+- Mol jest jednostką ilości substancji w układzie SI.
+- Jeden mol zawiera dokładnie 6,02214076·10²³ obiektów elementarnych.
+- Liczba Avogadra ma jednostkę mol⁻¹.
+- Obiektem elementarnym może być atom, cząsteczka, jon, elektron lub inny określony obiekt.
+- Trzeba zawsze podać, czego dotyczy liczba moli:
+  - mol atomów;
+  - mol cząsteczek;
+  - mol jonów;
+  - mol jednostek wzoru.
+- Masa molowa to masa jednego mola określonych obiektów.
+- Masa molowa ma jednostkę g/mol.
+- Wartość liczbową masy molowej związku można obliczyć na podstawie wzoru chemicznego, używając względnych mas atomowych.
+- Nie wolno utożsamiać masy molowej z masą jednej cząsteczki.
+- Dla związku jonowego należy mówić o masie molowej jednostek wzoru, choć w zadaniach szkolnych często skrótowo mówi się o masie molowej związku.
+
+#### Uzupełnienia
+
+##### Podstawowe wzory
+
+ N=nNA
+
+ n=N / NA
+
+ n=m / M
+
+ m=nM
+
+##### Przykład
+
+Ile cząsteczek znajduje się w 0,5 mola wody?
+
+ N=0,5·6,02214076·10²³
+
+ N≈3,01·10²³
+
+##### Masa molowa
+
+ M(CO₂)=12+2·16=44 g/mol
+
+ M(Al₂(SO₄)₃)
+=2·27+3·(32+4·16)
+=342 g/mol
+
+##### Zadania
+
+1. Ile moli stanowi 3,011·10²³ cząsteczek?
+2. Oblicz masę 0,25 mola CaCO₃.
+3. Oblicz masę molową Na₂CO₃.
+4. Ile atomów tlenu znajduje się w 2 molach CO₂?
+5. Oblicz liczbę moli w 18 g wody.
+
+##### Klucz
+
+1. 0,5 mola.
+2.
+
+ M(CaCO₃)=100 g/mol
+
+ m=0,25·100=25 g
+
+3.
+
+ M(Na₂CO₃)=2·23+12+3·16=106 g/mol
+
+4. W jednej cząsteczce są 2 atomy tlenu, więc:
+
+ 2 mol CO₂→4 mol atomów O
+
+Liczba atomów:
+
+ 4NA≈2,41·10²⁴
+
+5.
+
+ n=18 / 18=1 mol
+
+### R07 — Stechiometria reakcji
+
+> Uwaga przy scalaniu: Na poziomie SP obliczenia stechiometryczne prowadzi się na masach (stosunek mas z równania); wersja na molach — dla ambitnych/konkurs.
+
+#### Poprawki
+
+- Współczynniki w zbilansowanym równaniu określają stosunki molowe reagujących substancji.
+- Nie wolno odczytywać współczynników jako stosunków mas bez dodatkowych obliczeń.
+- Najpierw trzeba zbilansować równanie, a dopiero potem wykonywać obliczenia.
+- Stosunek mas wynika ze stosunku moli i mas molowych.
+- Jeśli reagent jest podany w objętości, trzeba znać jego stężenie albo warunki gazowe.
+- W przypadku roztworu obliczenia powinny uwzględniać ilość substancji, a nie samą objętość roztworu.
+- W przypadku gazów trzeba określić warunki, ponieważ objętość gazu zależy od temperatury i ciśnienia.
+- Nie należy stosować objętości molowej bez podania warunków i przyjętej wartości.
+- Wynik teoretyczny nie musi być równy wynikowi rzeczywistemu.
+
+#### Uzupełnienia
+
+##### Schemat
+
+1. Zapisz i zbilansuj równanie.
+2. Wypisz dane.
+3. Przelicz dane na mole.
+4. Zastosuj stosunek współczynników.
+5. Przelicz wynik na żądaną wielkość.
+6. Sprawdź jednostkę i sens wyniku.
+
+##### Przykład
+
+Ile gramów wody powstanie ze spalania 4 g wodoru?
+
+ 2H₂ + O₂ → 2H₂O
+
+ n(H₂)=4 / 2=2 mol
+
+Stosunek:
+
+ n(H₂):n(H₂O)=2:2=1:1
+
+ n(H₂O)=2 mol
+
+ m(H₂O)=2·18=36 g
+
+##### Zadania
+
+1. Ile moli CO₂ powstanie ze spalenia 2 moli węgla?
+2. Ile gramów MgO powstanie z 12 g magnezu?
+3. Ile moli tlenu potrzeba do spalenia 3 moli metanu?
+
+ CH₄+2O₂→ CO₂+2H₂O
+
+##### Klucz
+
+1. 2 mole CO₂.
+2.
+
+ n(Mg)=12 / 24=0,5 mol
+
+Stosunek Mg:MgO=1:1, więc:
+
+ m(MgO)=0,5·40=20 g
+
+3.
+
+ 3 mol CH₄→6 mol O₂
+
+### R08 — Reagent ograniczający
+
+#### Poprawki
+
+- Reagent ograniczający to substrat, który zostanie zużyty jako pierwszy i ograniczy maksymalną ilość produktu.
+- Reagent w nadmiarze pozostanie częściowo po zakończeniu reakcji.
+- Nie wolno określać reagenta ograniczającego wyłącznie na podstawie mniejszej masy.
+- Trzeba porównać ilości moli z wymaganym stosunkiem stechiometrycznym.
+- Reagent ograniczający nie musi mieć najmniejszej liczby moli.
+- Jeśli substraty są podane jako roztwory, najpierw oblicz liczbę moli substancji.
+- Jeśli reakcja nie zachodzi całkowicie, wynik rzeczywisty może być mniejszy od teoretycznego.
+
+#### Uzupełnienia
+
+##### Przykład
+
+ 2H₂+O₂→2H₂O
+
+Dane:
+
+- 3 mole H₂;
+- 1 mol O₂.
+
+Do 1 mola O₂ potrzeba 2 moli H₂. Dostępne są 3 mole wodoru, więc:
+
+- O₂ jest reagentem ograniczającym;
+- zużyją się 2 mole H₂;
+- pozostanie 1 mol H₂;
+- powstaną 2 mole H₂O.
+
+##### Algorytm
+
+1. Zbilansuj równanie.
+2. Przelicz ilości wszystkich substratów na mole.
+3. Podziel liczbę moli każdego substratu przez jego współczynnik.
+4. Najmniejsza wartość wskazuje reagent ograniczający.
+5. Oblicz produkt na podstawie reagenta ograniczającego.
+6. Oblicz ilość pozostałego reagenta w nadmiarze.
+
+##### Zadania
+
+1. Dla reakcji:
+
+ N₂+3H₂→2NH₃
+
+wskaż reagent ograniczający, gdy dostępne są 2 mole N₂ i 3 mole H₂.
+
+2. W reakcji:
+
+ 2Mg+O₂→2MgO
+
+zmieszano 3 mole magnezu i 2 mole tlenu. Oblicz reagent ograniczający i ilość powstałego MgO.
+
+##### Klucz
+
+1. Do 2 moli N₂ potrzeba 6 moli H₂, więc ograniczający jest wodór. Powstaną 2 mole NH₃.
+2. Do 3 moli Mg potrzeba 1,5 mola O₂, więc ograniczający jest magnez. Powstaną 3 mole MgO, a pozostanie 0,5 mola O₂.
+
+### R09 — Wydajność reakcji
+
+#### Poprawki
+
+- Wydajność reakcji porównuje ilość produktu rzeczywiście otrzymanego z ilością produktu teoretycznie możliwego do otrzymania.
+- Wzór:
+
+ η = m(rzecz) / m(teor)·100%
+
+lub analogicznie dla liczby moli.
+- Wydajność nie może być większa niż 100% w poprawnie wykonanym, zamkniętym bilansie, jeśli wynik jest interpretowany jako rzeczywista wydajność czystego produktu.
+- Wynik większy niż 100% może oznaczać obecność zanieczyszczeń, wilgoci, błędny pomiar lub błąd obliczeń.
+- Najpierw trzeba wyznaczyć reagent ograniczający.
+- Masa teoretyczna wynika z równania reakcji i danych początkowych.
+- Masa rzeczywista jest wartością uzyskaną eksperymentalnie.
+
+#### Uzupełnienia
+
+##### Przykład
+
+Teoretycznie powinno powstać 20 g produktu, a otrzymano 16 g:
+
+ η=16 / 20·100%=80%
+
+##### Zadania
+
+1. Teoretycznie można otrzymać 50 g produktu, a otrzymano 42,5 g. Oblicz wydajność.
+2. Wydajność wynosi 75%, a masa teoretyczna 80 g. Oblicz masę rzeczywistą.
+3. Otrzymano 105 g produktu, choć obliczona masa teoretyczna wynosiła 100 g. Podaj możliwe przyczyny.
+
+##### Klucz
+
+1.
+
+ η=42,5 / 50·100%=85%
+
+2.
+
+ m(rzecz) =0,75·80=60 g
+
+3. Produkt mógł zawierać wodę lub zanieczyszczenia, masa mogła być błędnie zmierzona albo obliczenia były niepoprawne.
+
+
+### Poprawki wspólne R03–R09
+
+1. Zawsze odróżniaj masę roztworu od masy rozpuszczalnika.
+2. Przy stężeniu molowym używaj objętości całego roztworu.
+3. Przeliczaj mililitry na decymetry sześcienne.
+4. Nie mieszaj stężenia procentowego ze stężeniem molowym.
+5. W obliczeniach stechiometrycznych najpierw bilansuj równanie.
+6. Współczynniki dają stosunki molowe, nie masowe.
+7. Przy dwóch substratach sprawdzaj reagent ograniczający.
+8. Do rozcieńczania stosuj zachowanie liczby moli substancji.
+9. Wydajność licz na podstawie ilości teoretycznej i rzeczywistej.
+10. Wynik zawsze zapisuj z jednostką i kontroluj jego sens fizyczny.

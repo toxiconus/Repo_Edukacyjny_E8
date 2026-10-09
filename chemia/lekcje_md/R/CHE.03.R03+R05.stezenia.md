@@ -1005,3 +1005,113 @@ Rozpuszczalność zależy od T; **gazy zwykle gorzej** rozpuszczają się przy w
 - Morze ~3,5% soli.
 
 <!-- ==================== END L008 ==================== -->
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexityR03-R09₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### R05 — Stężenie molowe
+
+> Uwaga przy scalaniu: Mol i stężenie molowe są poza podstawą programową SP — poziom LO / konkurs; w lekcji oznaczyć [[extra:AMBITNE]].
+
+#### Poprawki
+
+- Stężenie molowe określa liczbę moli substancji rozpuszczonej w jednym decymetrze sześciennym roztworu.
+- Wzór:
+
+ c=n / V
+
+gdzie:
+
+- c — stężenie molowe;
+- n — liczba moli substancji;
+- V — objętość roztworu w dm³.
+
+- Jednostką jest mol/dm³, zapisywane również jako mol· dm⁻³.
+- Wzór wykorzystuje objętość roztworu, a nie objętość samego rozpuszczalnika.
+- 1 dm³=1 L.
+- 1 cm³=1 mL.
+- Do wzoru trzeba przeliczyć mililitry na decymetry sześcienne:
+
+ 1000 mL=1 dm³
+
+- Stężenie molowe nie jest tym samym co stężenie procentowe.
+- Do przeliczenia między nimi potrzebna jest między innymi gęstość roztworu i masa molowa substancji.
+
+#### Uzupełnienia
+
+##### Liczba moli
+
+ n=m / M
+
+gdzie:
+
+- m — masa substancji;
+- M — masa molowa.
+
+##### Przykład
+
+Rozpuszczono 5,85 g NaCl i otrzymano 500 mL roztworu.
+
+ M(NaCl)=58,5 g/mol
+
+ n=5,85 / 58,5=0,100 mol
+
+ V=0,500 dm³
+
+ c=0,100 / 0,500=0,200 mol/dm³
+
+##### Przygotowanie roztworu
+
+Aby przygotować roztwór o określonym stężeniu:
+
+1. oblicz liczbę moli;
+2. oblicz masę substancji;
+3. odważ substancję;
+4. rozpuść ją w części rozpuszczalnika;
+5. przenieś ilościowo do kolby miarowej;
+6. dopełnij rozpuszczalnikiem do kreski;
+7. wymieszaj.
+
+Nie należy rozpuszczać odważonej substancji w objętości wody równej końcowej objętości roztworu.
+
+##### Rozcieńczanie
+
+Podczas rozcieńczania bez reakcji:
+
+ n₁=n₂
+
+ c₁V₁=c₂V₂
+
+##### Zadania
+
+1. Oblicz liczbę moli w 9,8 g H₂SO₄.
+2. Oblicz stężenie molowe roztworu zawierającego 0,2 mola substancji w 400 mL roztworu.
+3. Ile gramów NaOH potrzeba do przygotowania 250 mL roztworu o stężeniu 0,4 mol/dm³?
+4. Do jakiej objętości należy rozcieńczyć 100 mL roztworu 2 mol/dm³, aby uzyskać 0,5 mol/dm³?
+
+##### Klucz
+
+1.
+
+ M(H₂SO₄)=98 g/mol
+
+ n=9,8 / 98=0,10 mol
+
+2.
+
+ V=0,400 dm³
+
+ c=0,2 / 0,4=0,5 mol/dm³
+
+3.
+
+ n=cV=0,4·0,250=0,100 mol
+
+ m=nM=0,100·40=4,0 g
+
+4.
+
+ 2·0,100=0,5V₂
+
+ V₂=0,400 dm³=400 mL
