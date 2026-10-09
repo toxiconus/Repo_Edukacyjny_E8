@@ -7,7 +7,7 @@
 - Dział: Genetyka
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L017 · Następna: L019
-- Status treści: jest wykład MD; audyt przy edycji; audyt punktowy W15 — 2026-10-09
+- Status treści: jest wykład MD; audyt W15/W18 — 2026-10-09, uściślenia wprowadzone do treści
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
@@ -69,7 +69,7 @@ Po lekcji uczeń:
 ### Zasada 80/20
 | 20% = 80% efektu | Dlaczego |
 |-------------------|----------|
-| XX / XY; plemnik decyduje | płeć |
+| XX / XY; plemnik wnosi X albo Y | płeć |
 | jeden X u chłopca → recesywny widać | dlaczego mężczyźni częściej |
 | ojciec nie daje X synowi | kluczowa reguła X-linked |
 | nosicielka XᴬXᵃ | krzyżówki |
@@ -91,7 +91,7 @@ Dlaczego daltonizm i hemofilia częściej dotyczą mężczyzn?
 ## 5. Ściąga — poziom podstawowy  · **[PODSTAWA E8]**
 
 - Kobieta: **XX**; mężczyzna: **XY**.
-- Plemnik wnosi X lub Y → decyduje o płci.
+- Plemnik wnosi X lub Y → od niego zależy, czy zygota ma układ XX czy XY (typowy model szkolny).
 - Komórka jajowa zawsze X.
 
 **Cecha sprzężona z X** — gen na chromosomie X (hemofilia, daltonizm).
@@ -117,7 +117,9 @@ Dlaczego daltonizm i hemofilia częściej dotyczą mężczyzn?
 
 **Chromosomy płci (most L012):** kobieta **XX**, mężczyzna **XY**.
 
-Komórka jajowa zawsze wnosi **X**. Plemnik wnosi **X** albo **Y** → **plemnik decyduje o płci**.
+Komórka jajowa zawsze wnosi **X**. Plemnik wnosi **X** albo **Y** → od rodzaju plemnika zależy, czy zygota ma układ **XX** czy **XY**.
+
+To typowy szkolny model chromosomalnego ustalania płci u człowieka. Sam rozwój płci jest bardziej złożony (udział genów i hormonów), a u niektórych osób występują inne układy chromosomów płci — model XX/XY nie opisuje wszystkich wariantów.
 
 ```text
 jajowa X + plemnik X → XX (dziewczynka)
@@ -141,7 +143,7 @@ Gen leży na chromosomie **X** (przykłady szkolne: daltonizm, hemofilia).
 
 ### 6A. Dlaczego?
 
-1. **Dlaczego plemnik decyduje o płci?** Jajowa zawsze X; tylko plemnik wybiera X lub Y.
+1. **Dlaczego to plemnik rozstrzyga o układzie XX/XY?** Jajowa zawsze wnosi X; tylko plemnik może wnieść X albo Y.
 2. **Dlaczego ojciec nie daje X synowi?** Syn dostaje od ojca Y (jest XY).
 3. **Dlaczego mężczyźni częściej ujawniają recesywne X-linked?** Mają tylko jeden X — nie ma drugiego allelu, który mógłby zdominować.
 4. **Dlaczego córka chorego ojca jest co najmniej nosicielką?** Ojciec chory (XᵃY) przekazuje **wszystkim córkom** swój Xᵃ.
@@ -161,8 +163,11 @@ Córka: X od matki  +  X od ojca
 | **Xᴬ** (matka) | XᴬXᴬ zdrowa | XᴬY zdrowy |
 | **Xᵃ** (matka) | XᴬXᵃ nosicielka | XᵃY **chory** |
 
-- córki: 50% zdrowe, 50% nosicielki  
-- synowie: 50% zdrowi, 50% chorzy  
+- **wśród córek:** 50% zdrowe, 50% nosicielki  
+- **wśród synów:** 50% zdrowi, 50% chorzy  
+- **wśród wszystkich dzieci:** 1/4 chorzy synowie, 1/4 nosicielki — ale tylko przy założeniu, że urodzenie syna i córki jest jednakowo prawdopodobne. Pewne jest jedno: każde dziecko ma 1/2 szansy, że dostanie od matki Xᵃ; czy zachoruje, zależy od płci.
+
+> Czytaj polecenie: „jakie prawdopodobieństwo, że **syn** będzie chory” → 1/2; „że **dziecko** będzie chorym synem” → 1/4.
 
 **Ojciec chory XᵃY × zdrowa matka XᴬXᴬ:** wszystkie córki nosicielki XᴬXᵃ; wszyscy synowie zdrowi XᴬY (dostali X od matki).
 
@@ -191,7 +196,7 @@ L012 (chromosomy płci) → L015 (mejoza, gamety)
 
 ## 8. Poziom zaawansowany  · **[ZAAWANSOWANY]**
 
-- **Inaktywacja X** (ciałko Barra) — u kobiet jeden X jest wyciszany; stąd mozaikowość u niektórych nosicielek.
+- **Inaktywacja X** (ciałko Barra) — w każdej komórce kobiety jeden X jest losowo wyciszany; stąd mozaikowość. Dlatego „nosicielka” to uproszczenie: większość nosicielek recesywnego allelu jest bez objawów, ale część może mieć objawy łagodne (np. słabsze krzepnięcie krwi przy hemofilii).
 - **Y-linked** — geny tylko na Y (rzadkie w podstawie; cecha idzie z ojca na **wszystkich** synów).
 - Przykład kliniczny: dystrofia mięśniowa Duchenne’a (X-linked).
 
@@ -402,7 +407,7 @@ Dopiero na tej podstawie ustala się możliwy fenotyp.
 <!-- ==================== BEGIN L019 ==================== -->
 
 
-## 23. Doprecyzowanie — model XX/XY (W15)
+## 25. Doprecyzowanie — model XX/XY (W15)
 
 W typowym szkolnym modelu XX/XY komórka jajowa wnosi chromosom X, a plemnik wnosi X albo Y; połączenie XX lub XY jest najczęstszym wynikiem tego modelu. Nie jest to pełny opis wszystkich biologicznych wariantów rozwoju płci.
 
@@ -419,7 +424,7 @@ W krzyżówce dla recesywnej cechy sprzężonej z X prawdopodobieństwo 1/2 moż
 
 ### Status
 - Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
-- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+- ✔ Wprowadzone do treści głównej (2026-10-09, Claude): model XX/XY bez „plemnik decyduje o płci” (karta 80/20, sekcje 5, 6, 6A), 1/2 wśród synów vs 1/4 wśród wszystkich dzieci (6C), nosicielka a inaktywacja X (8).
 
 ## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
 
