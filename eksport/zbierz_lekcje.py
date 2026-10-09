@@ -232,7 +232,7 @@ def polski():
             "zaimek, przymiotnik/liczebnik, rzeczownik, czasownik). Sprawdź zgodność z listą lektur obowiązkowych "
             "na egzaminie 2027 i z zasadami pisowni (w tym zmiany ortograficzne obowiązujące od 2026, np. „nie” z imiesłowami). "
             "Oceń też brak lekcji o formach wypowiedzi (rozprawka, opowiadanie, wypowiedzi argumentacyjne) i lekturach z klas 7–8.")
-    szk = md_dir("polski/do_uzupelnienia")
+    szk = md_dir("polski/do_uzupelnienia") + md_dir("polski/podstawy")
     return build("POLSKI", "język polski", "języka polskiego", kont, les, szkielety=szk, pomin=["starsze wersje HTML L001 v2–v7 i L002–L006 bez v2", "POLSKI_PODSTAWA_PLUS_v7 (kopie)",
                   "L001-L006-PL-Wszystkie-lekcje.md (skrót)"])
 

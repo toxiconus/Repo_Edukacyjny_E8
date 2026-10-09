@@ -3,10 +3,10 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 70 KB)
+## .  (11 pl., 71 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
-- `CLAUDE.md` 6 KB
+- `CLAUDE.md` 7 KB
 - `MAPA.md` 18 KB
 - `PRZEKAZANIE.md` 3 KB
 - `README.md` 0 KB
@@ -27,7 +27,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
 - ⚠`L012-EN-Future-Simple.html` 121 KB
 
-## angielski/plany/audyty  (1 pl., 21 KB)
+## angielski/plany/audyty  (2 pl., 24 KB)
+- `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
 - `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
 
 ## biologia  (11 pl., 2.2 MB)

@@ -46,6 +46,9 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Rejestr weryfikacji: `WERYFIKACJA.md` (W1 = treść wysłanego zapisu, W2 = zakres). Po każdym audycie: surowa odpowiedź do `chemia/plany/audyty/` (lub `<przedmiot>/plany/audyty/`), poprawki do lekcji gotowej albo jako sekcja „AUDYT W1” do kanonu, wiersz w rejestrze. LaTeX z odpowiedzi → Unicode: `narzedzia/latex2uni.py`. Dla lekcji z kanonu (niegotowych) jednym poleceniem: `python3 narzedzia/audyt_do_kanonu.py <odpowiedź> [--uwaga KOD "tekst"]` (zapis surowy + sekcja AUDYT W1 + wiersz rejestru).
 - `python3 eksport/zbierz_lekcje.py` → `eksport/out/PERPLEXITY_<PRZEDMIOT>.md` (prompt na początku + wszystkie lekcje, jedna najnowsza wersja każdej). Katalog `out/` jest poza gitem.
 
+## Polski — lekcje podstawowe (priorytet)
+- Szkielety G01–G17 (części mowy, składnia) i S01–S06 (środki stylistyczne) w `polski/podstawy/`, generator `python3 narzedzia/szkielety_polski.py` (nie nadpisuje wypełnionych), paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md`. Wypełniony plik: zmienić `stan: PUSTY` → `stan: WYPEŁNIONY — model, data`, potem W1.
+
 ## Merytoryka
 - Język lekcji: polski, poziom E8 (podstawa programowa). Dane liczbowe oznaczaj do weryfikacji, jeśli nie są pewne.
 
