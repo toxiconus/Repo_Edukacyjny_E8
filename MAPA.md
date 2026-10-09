@@ -3,14 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 121 KB)
+## .  (8 pl., 137 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 8 KB
 - `MAPA.md` 26 KB
 - `PRZEKAZANIE.md` 15 KB
 - `README.md` 0 KB
-- `SPIS_WSZYSTKICH.md` 40 KB
+- ⚠`SPIS_WSZYSTKICH.md` 55 KB
 - `WERYFIKACJA.md` 28 KB
 
 ## angielski  (3 pl., 959 KB)
@@ -305,11 +305,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 94 KB)
+## chemia/che-modular/engine/src/lekcja  (4 pl., 92 KB)
 - `index.html` 1 KB
 - `lekcja.css` 4 KB
 - `lekcja.js` 2 KB
-- ⚠`rozszerzenia.js` 87 KB
+- ⚠`rozszerzenia.js` 86 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/engine/src/moduly`) — duże:
@@ -580,7 +580,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `w1_paczka.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (10 pl., 82 KB)
+## narzedzia  (11 pl., 97 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `html_do_md.py` 22 KB
 - `latex2uni.py` 2 KB
@@ -588,7 +588,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
-- `spis_wszystkich.py` 6 KB
+- `polski_paczka.py` 7 KB
+- `spis_wszystkich.py` 14 KB
 - `szkielety_polski.py` 24 KB
 - `zbuduj_wszystkie.py` 3 KB
 
@@ -697,11 +698,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `UZUPELNIENIA_Z_WATKU.md` 2 KB
 - `ZADANIA.md` 19 KB
 
-## polski  (5 pl., 297 KB)
+## polski  (6 pl., 313 KB)
 - `L001-L006-PL-Wszystkie-lekcje.md` 47 KB
 - `MAPA_POLSKI.md` 14 KB
 - ⚠`POLSKI_PODSTAWA_PLUS_v7.11.md` 209 KB
 - `POSTEP_UZUPELNIANIA.md` 17 KB
+- `SPIS_LEKCJI_POLSKI.md` 16 KB
 - `SPIS_TRESCI_POLSKI.md` 9 KB
 
 ## polski/archiwum  (1 pl., 0 KB)

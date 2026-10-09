@@ -22,6 +22,10 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - Dane niepewne oznaczać „do weryfikacji”.
 - (2026-10-09) Każda wizualizacja/obraz ma opis `@opis` w md → ukryty komentarz w HTML; build egzekwuje (`narzedzia/opis_wizualizacji.py`). Eksport do Perplexity: `python3 eksport/zbierz_lekcje.py`.
 
+## Spisy (2026-10-09 15:00) — jeden punkt wejścia
+- `SPIS_WSZYSTKICH.md` (`python3 narzedzia/spis_wszystkich.py`): podsumowanie per przedmiot (tematy w planie, pliki lekcji, KB, weryfikacja W1+ / tylko audyt w pliku / brak), tabele lekcji z kolumnami rozmiar i weryfikacja (stan/status lekcji, a gdy brak — rejestr `WERYFIKACJA.md`), osobno **„Tematy planowane — to nie są lekcje”**: CHE kanon + mapa OLI, BIO kanon + mapa OLI, POL mapa OLI z ręcznym pokryciem (brak planu kursu; luki: lektury VII–VIII, słowotwórstwo, frazeologia, semantyka, gatunki, interpretacja wiersza, esej), ANG master L001–L012 + D2 + moduły z W1, MAT i OLI.
+- Polski szczegółowo: `polski/SPIS_LEKCJI_POLSKI.md` + paczka `python3 narzedzia/polski_paczka.py` (zakres, stan, KB, luki).
+
 ## Sesja 2026-10-09 (12:28–12:40) — wyniki paczki braków wgrane — STAN AKTUALNY
 - **Wgrane (commity f20b55d, 8ed4b0f):** 5 paczek BRAKI (L004, L005–L007, L008–L010, GENETYKA; L004 przyszła 3× identycznie) + 2 paczki Grok. Pliki bazowe paczek nie zmieniły się w repo od 504ac8d, więc kopia nowszej wersji = wynik scalenia trójstronnego. Pliki identyczne z repo pominięte (polski G/S, angielski, olimpiada, audyty Perplexity, F18–F21, O08+O11+O12, CHE_SPIS — paczki ich nie zmieniły, więc A3/B część/C/D/E z `ZADANIA.md` dalej otwarte).
 - **BIO:** L004–L010, L013, L016A, L018–L021 pogłębione (GPT-6, ostatnia paczka = nadzbiór poprzednich). L013: replikacja przed mitozą i przed mejozą I, nie między I i II. L004: zachowany stary blok „AUDYT W1”.

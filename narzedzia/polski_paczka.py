@@ -62,7 +62,14 @@ def zakres(d, body):
     return "—"
 
 
-def luki(d, body):
+REJ = {}   # WERYFIKACJA.md: kod → data W1 (polski)
+for _ln in (ROOT / "WERYFIKACJA.md").read_text(encoding="utf-8").split("\n"):
+    _c = [x.strip() for x in _ln.strip().strip("|").split("|")]
+    if len(_c) > 3 and _c[0] == "polski" and re.match(r"\d{4}-", _c[3]):
+        REJ[_c[1]] = _c[3]
+
+
+def luki(d, body, kod=""):
     out = []
     for rx, opis in ZNACZNIKI:
         n = len(re.findall(rx, body))
@@ -84,7 +91,7 @@ def luki(d, body):
     if "w2" in stan and ("wymagan" in stan or "nadal" in stan):
         out.append("W2 (źródła normatywne) do zrobienia")
     elif "w1" not in stan and "w2" not in stan:
-        out.append("bez weryfikacji W1")
+        out.append(f"W1 w rejestrze {REJ[kod]}, stan w pliku nieuzupełniony" if kod in REJ else "bez weryfikacji W1")
     return "; ".join(out) or "—"
 
 
@@ -97,7 +104,7 @@ def lekcje():
             tyt = re.sub(r"\s*·.*$", "", re.sub(r"^L\d+\s*[–-]\s*", "", d.get("tytul") or p.stem))
             stan = d.get("stan") or d.get("status") or "—"
             yield dict(grupa=grupa, kod=kod, tytul=tyt, zakres=zakres(d, body), stan=skrot(stan, 110),
-                       kb=round(p.stat().st_size / 1024, 1), luki=luki(d, body), plik=p.relative_to(ROOT), tekst=t)
+                       kb=round(p.stat().st_size / 1024, 1), luki=luki(d, body, kod), plik=p.relative_to(ROOT), tekst=t)
 
 
 def main():
