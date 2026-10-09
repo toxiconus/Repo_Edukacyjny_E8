@@ -21,9 +21,9 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 - **Status (rejestr z audytu końcowego W1):** GOTOWE HTML — lekcja zbudowana · GOTOWE MASTER — pełny materiał i specyfikacja · UZUPEŁNIONE — dopisana treść kanoniczna · POPRAWIONE — korekty z audytu · DO SPRAWDZENIA · ŹRÓDŁO — materiał bazowy bez audytu · PRZENIESIONE — treść ma właściciela w innej lekcji · DO IMPLEMENTACJI — tylko opis w kanonie. Wyliczany z plików; ręcznie: `kanon_dane.STATUS`.
 - **Treść ponad E8** (np. Faraday, rząd reakcji, Hess, Ka/pKa, bufory) idzie do sekcji `[[extra:ZAAWANSOWANY]]` w tej samej lekcji — nie do osobnych lekcji OLIMPIADA.
 
-**Statusy:** GOTOWE HTML 13 · UZUPEŁNIONE 45 · POPRAWIONE 37 · DO IMPLEMENTACJI 18.
+**Statusy:** GOTOWE HTML 13 · UZUPEŁNIONE 45 · POPRAWIONE 44 · DO IMPLEMENTACJI 11.
 
-**Bilans:** 113 lekcji w 10 grupach. ●●● 13 · ●●○ 10 · ◐○○ 39 · ●○○ 33 · ○○○ 18.
+**Bilans:** 113 lekcji w 10 grupach. ●●● 13 · ●●○ 10 · ◐○○ 46 · ●○○ 33 · ○○○ 11.
 
 ## 1. Zasady kanonu
 
@@ -64,9 +64,9 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 
 **E Elektrochemia:** ◐○○ E01 Ogniwo galwaniczne · ◐○○ E02 Potencjały elektrodowe · ◐○○ E03 SEM · ◐○○ E04 Elektroliza · ◐○○ E05 Korozja · ◐○○ E06 Źródła energii i akumulatory
 
-**K Energetyka, kinetyka i równowaga:** ◐○○ K01 Energia reakcji · ○○○ K02 Entalpia · ○○○ K03 Kalorymetria i przemiany fazowe · ○○○ K04 Szybkość reakcji · ◐○○ K05 Czynniki wpływające na szybkość · ○○○ K06 Zderzenia i energia aktywacji · ◐○○ K07 Kataliza · ◐○○ K08 Równowaga dynamiczna · ○○○ K09 Stała równowagi · ◐○○ K10 Reguła Le Chateliera · ○○○ K11 Równowaga ilościowa
+**K Energetyka, kinetyka i równowaga:** ◐○○ K01 Energia reakcji · ◐○○ K02 Entalpia · ◐○○ K03 Kalorymetria i przemiany fazowe · ◐○○ K04 Szybkość reakcji · ◐○○ K05 Czynniki wpływające na szybkość · ◐○○ K06 Zderzenia i energia aktywacji · ◐○○ K07 Kataliza · ◐○○ K08 Równowaga dynamiczna · ◐○○ K09 Stała równowagi · ◐○○ K10 Reguła Le Chateliera · ◐○○ K11 Równowaga ilościowa
 
-**A Chemia jądrowa:** ○○○ A01 Jądro atomowe · ○○○ A02 Radioaktywność · ○○○ A03 Przemiany jądrowe · ○○○ A04 Okres półtrwania i aktywność · ○○○ A05 Energia wiązania jądra · ○○○ A06 Zastosowania i BHP
+**A Chemia jądrowa:** ◐○○ A01 Jądro atomowe · ○○○ A02 Radioaktywność · ○○○ A03 Przemiany jądrowe · ○○○ A04 Okres półtrwania i aktywność · ○○○ A05 Energia wiązania jądra · ○○○ A06 Zastosowania i BHP
 
 **P Układ okresowy — pogłębienie:** ○○○ P01 Blok s · ○○○ P02 Blok p · ○○○ P03 Blok d i metale przejściowe · ○○○ P04 Charakterystyka grup · ○○○ P05 Związki charakterystyczne pierwiastków · ○○○ P06 Trend → właściwość → reaktywność
 
@@ -2067,7 +2067,7 @@ bylo: "K05"
 - egzo- i endoenergetyczne
 - wykres energetyczny — jakościowo
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K01.energia_reakcji.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K01.energia_reakcji.md` (21 KB)
 
 **Dlaczego tu:** energia przed szybkością — energia aktywacji wymaga wykresu energetycznego
 
@@ -2075,11 +2075,11 @@ bylo: "K05"
 
 ```yaml
 kod: K02
-status: DO IMPLEMENTACJI
+status: POPRAWIONE
 poziom: LO
 wymaga: "K01"
 poglebia: "K03"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K06"
 ```
 
@@ -2091,17 +2091,17 @@ bylo: "K06"
 - prawo Hessa
 - energia wiązań
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K02.entalpia.md` (9 KB)
 
 #### K03 — Kalorymetria i przemiany fazowe
 
 ```yaml
 kod: K03
-status: DO IMPLEMENTACJI
+status: POPRAWIONE
 poziom: LO
 wymaga: "K02"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K10"
 ```
 
@@ -2113,17 +2113,17 @@ bylo: "K10"
 - ciepło przemian fazowych
 - wykres ogrzewania
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K03.kalorymetria_i_przemiany_fazowe.md` (16 KB)
 
 #### K04 — Szybkość reakcji
 
 ```yaml
 kod: K04
-status: DO IMPLEMENTACJI
+status: POPRAWIONE
 poziom: LO
 wymaga: "R05"
 poglebia: "K05"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K01"
 ```
 
@@ -2135,7 +2135,7 @@ bylo: "K01"
 - wykresy stężenie–czas
 - równanie kinetyczne (LO-R)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K04.szybkosc_reakcji.md` (2 KB)
 
 #### K05 — Czynniki wpływające na szybkość
 
@@ -2160,11 +2160,11 @@ bylo: "K02"
 
 ```yaml
 kod: K06
-status: DO IMPLEMENTACJI
+status: POPRAWIONE
 poziom: LO
 wymaga: "K01; K05"
 poglebia: "K07"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K03"
 ```
 
@@ -2175,7 +2175,7 @@ bylo: "K03"
 - energia aktywacji na wykresie
 - rozkład energii cząsteczek
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K06.zderzenia_energia_aktywacji.md` (2 KB)
 
 #### K07 — Kataliza
 
@@ -2224,11 +2224,11 @@ bylo: "K07"
 
 ```yaml
 kod: K09
-status: DO IMPLEMENTACJI
+status: POPRAWIONE
 poziom: LO
 wymaga: "K08; R05"
 poglebia: "K10; J07; J10"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K08"
 ```
 
@@ -2239,7 +2239,7 @@ bylo: "K08"
 - obliczenia stężeń równowagowych
 - Kp (LO-R)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K09.stala_rownowagi.md` (2 KB)
 
 #### K10 — Reguła Le Chateliera
 
@@ -2265,11 +2265,11 @@ bylo: "K09"
 
 ```yaml
 kod: K11
-status: DO IMPLEMENTACJI
+status: POPRAWIONE
 poziom: LO
 wymaga: "K09; K10"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń rozwiązuje zadania z równowagi.
@@ -2278,7 +2278,7 @@ stan: "○○○"
 - stopień przereagowania
 - zadania złożone z K
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K11.rownowaga_ilosciowa.md` (2 KB)
 
 ---
 
@@ -2290,11 +2290,11 @@ _rozwija F04–F05; niezależna od reszty_
 
 ```yaml
 kod: A01
-status: DO IMPLEMENTACJI
+status: POPRAWIONE
 poziom: LO
 wymaga: "F04; F05"
 poglebia: "A02"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń opisuje siły jądrowe i stabilność jąder.
@@ -2304,7 +2304,7 @@ stan: "○○○"
 - siły jądrowe
 - ścieżka stabilności
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/A/CHE.08.A01.jadro_atomowe.md` (2 KB)
 
 #### A02 — Radioaktywność
 

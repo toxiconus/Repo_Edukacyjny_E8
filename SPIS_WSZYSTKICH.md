@@ -136,22 +136,22 @@ Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: le
 | kod | lekcja | o czym | poziom | status |
 |---|---|---|---|---|
 | K01 | Energia reakcji | Uczeń rozróżnia reakcje egzo- i endoenergetyczne i czyta wykres energetyczny. | E8+LO | POPRAWIONE |
-| K02 | Entalpia | Uczeń oblicza ΔH, także z prawa Hessa. | LO | DO IMPLEMENTACJI |
-| K03 | Kalorymetria i przemiany fazowe | Uczeń mierzy i oblicza ciepło reakcji i przemian fazowych. | LO | DO IMPLEMENTACJI |
-| K04 | Szybkość reakcji | Uczeń definiuje i mierzy szybkość reakcji. | LO | DO IMPLEMENTACJI |
+| K02 | Entalpia | Uczeń oblicza ΔH, także z prawa Hessa. | LO | POPRAWIONE |
+| K03 | Kalorymetria i przemiany fazowe | Uczeń mierzy i oblicza ciepło reakcji i przemian fazowych. | LO | POPRAWIONE |
+| K04 | Szybkość reakcji | Uczeń definiuje i mierzy szybkość reakcji. | LO | POPRAWIONE |
 | K05 | Czynniki wpływające na szybkość | Uczeń przewiduje wpływ stężenia, temperatury i rozdrobnienia. | E8+LO | POPRAWIONE |
-| K06 | Zderzenia i energia aktywacji | Uczeń wyjaśnia szybkość teorią zderzeń. | LO | DO IMPLEMENTACJI |
+| K06 | Zderzenia i energia aktywacji | Uczeń wyjaśnia szybkość teorią zderzeń. | LO | POPRAWIONE |
 | K07 | Kataliza | Uczeń opisuje działanie katalizatora, enzymu i inhibitora. | E8+LO | POPRAWIONE |
 | K08 | Równowaga dynamiczna | Uczeń opisuje stan równowagi w reakcjach odwracalnych. | LO | POPRAWIONE |
-| K09 | Stała równowagi | Uczeń zapisuje wyrażenie na K i wykonuje obliczenia. | LO | DO IMPLEMENTACJI |
+| K09 | Stała równowagi | Uczeń zapisuje wyrażenie na K i wykonuje obliczenia. | LO | POPRAWIONE |
 | K10 | Reguła Le Chateliera | Uczeń przewiduje przesunięcie równowagi. | LO | POPRAWIONE |
-| K11 | Równowaga ilościowa | Uczeń rozwiązuje zadania z równowagi. | LO | DO IMPLEMENTACJI |
+| K11 | Równowaga ilościowa | Uczeń rozwiązuje zadania z równowagi. | LO | POPRAWIONE |
 
 ### CHE.09 A — Chemia jądrowa
 
 | kod | lekcja | o czym | poziom | status |
 |---|---|---|---|---|
-| A01 | Jądro atomowe | Uczeń opisuje siły jądrowe i stabilność jąder. | LO | DO IMPLEMENTACJI |
+| A01 | Jądro atomowe | Uczeń opisuje siły jądrowe i stabilność jąder. | LO | POPRAWIONE |
 | A02 | Radioaktywność | Uczeń rozróżnia rodzaje promieniowania i ich właściwości. | E8+LO | DO IMPLEMENTACJI |
 | A03 | Przemiany jądrowe | Uczeń zapisuje równania przemian jądrowych. | LO | DO IMPLEMENTACJI |
 | A04 | Okres półtrwania i aktywność | Uczeń oblicza ubytek substancji promieniotwórczej. | LO | DO IMPLEMENTACJI |
