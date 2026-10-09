@@ -10,8 +10,8 @@ status: analiza źródeł, uzupełnienie i kontrola wewnętrzna wykonane; niezal
 ## 1. Źródła porównane przed zmianą
 
 1. `polski/podstawy/PL_G02_czasownik.md` — istniejąca lekcja kanoniczna.
-2. `polski/POLSKI_PODSTAWA_PLUS_v7.11 (3).md` — master: definicje, rozróżnienie form, reguły zapisu, pułapki i zadania.
-3. `polski/L006-PL-Akademia-Pana-Kleksa-czasownik.html` oraz wersja v2 — zastosowanie zagadnień gramatycznych w lekcji literackiej.
+2. `polski/POLSKI_PODSTAWA_PLUS_v7.11.md` — master: definicje, rozróżnienie form, reguły zapisu, pułapki i zadania.
+3. `polski/archiwum/html/L006-PL-Akademia-Pana-Kleksa-czasownik.html` oraz wersja v2 — zastosowanie zagadnień gramatycznych w lekcji literackiej.
 4. `polski/podstawy/PL_G06_imieslowy.md` — granica między czasownikiem a imiesłowem.
 5. `polski/podstawy/PL_G01_rzeczownik.md` — rzeczowniki odczasownikowe i ryzyko błędnej klasyfikacji.
 6. `polski/podstawy/PL_G12_czesci_zdania.md` — związek form osobowych z orzeczeniem.

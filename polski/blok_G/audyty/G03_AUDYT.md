@@ -13,7 +13,7 @@ Porównano przed rozbudową:
 
 - kanoniczny plik `polski/podstawy/PL_G03_przymiotnik.md`;
 - materiał planistyczny `polski/plany/wypelnienia/G03_Przymiotnik_WYPELNIONY.md`;
-- master `polski/POLSKI_PODSTAWA_PLUS_v7.11 (3).md`;
+- master `polski/POLSKI_PODSTAWA_PLUS_v7.11.md`;
 - sąsiednie lekcje G01, G02, G04, G06, G07 i G12;
 - dwie wersje HTML L004 o przymiotniku i liczebniku.
 

@@ -8,7 +8,7 @@ status: mapa kanoniczna bloku; lekcje opracowane v2.0, zbiorczy audyt zewnętrzn
 
 # Blok D — Kompetencje egzaminacyjne
 
-**Zasada pracy:** każda lekcja jest osobnym plikiem, ma własny audyt braków, uzupełnienie, ćwiczenia i kontrolę końcową. Starszy plik `polski/bloki/POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` pozostaje zachowany jako źródło robocze, a nie jako jedyne miejsce lekcji.
+**Zasada pracy:** każda lekcja jest osobnym plikiem, ma własny audyt braków, uzupełnienie, ćwiczenia i kontrolę końcową. Starszy plik `polski/blok_D/POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` pozostaje zachowany jako źródło robocze, a nie jako jedyne miejsce lekcji.
 
 ## Kolejność lekcji
 

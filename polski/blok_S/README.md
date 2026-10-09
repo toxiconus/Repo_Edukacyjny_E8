@@ -22,4 +22,4 @@ status: S01–S06 rozbudowane; audyty wewnętrzne zapisane; niezależna recenzja
 Dla każdej lekcji wykonano diagnozę braków, uzupełnienie, ponowną analizę i zapis audytu w `audyty/`. Ćwiczenia są autorskie i w stylu egzaminacyjnym, a nie kopiami z arkuszy CKE. Audyt wewnętrzny nie zastępuje niezależnej recenzji polonistycznej.
 
 ## Materiały źródłowe
-Oryginalne szkielety zachowano w `../szkielety/`, a wersje wejściowe w `../archiwum_wersji_wejsciowych/`. Nie usuwano archiwalnych materiałów HTML ani masterów.
+Oryginalne szkielety zachowano w `../archiwum/szkielety/`, a wersje wejściowe w `../archiwum/wersje_wejsciowe/`. Nie usuwano archiwalnych materiałów HTML ani masterów.

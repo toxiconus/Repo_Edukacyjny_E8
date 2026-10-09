@@ -86,4 +86,4 @@ Szkielety G12–G17 zostały przekształcone w pełne lekcje z teorią, procedur
 - Należy wykonać niezależną recenzję ekspercką oraz test zgodności z wymaganiami aktualnego egzaminu; wewnętrzny audyt nie zastępuje takiej recenzji.
 
 
-Oryginalne szkielety G12–G17 zachowano w `../szkielety/`, a wersje wejściowe G04–G17 w `../archiwum_wersji_wejsciowych/`.
+Oryginalne szkielety G12–G17 zachowano w `../archiwum/szkielety/`, a wersje wejściowe G04–G17 w `../archiwum/wersje_wejsciowe/`.

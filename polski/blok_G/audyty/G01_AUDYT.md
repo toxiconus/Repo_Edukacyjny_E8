@@ -5,8 +5,8 @@ Data opracowania: 2026-10-09. Wersja pliku kanonicznego: `polski/podstawy/PL_G01
 ## A. Materiały porównane
 
 - `polski/podstawy/PL_G01_rzeczownik.md` — dotychczasowa lekcja (ok. 1,1 tys. słów).
-- `polski/POLSKI_PODSTAWA_PLUS_v7.11 (3).md` — duży materiał bazowy, w tym sekcje o rzeczowniku i odsyłacze do L005.
-- `polski/L005-PL-Kajko-i-Kokosz-rzeczownik v2.html` — lekcja zastosowaniowa z przypadkami, żywotnością, „nie” i rzeczownikami odczasownikowymi.
+- `polski/POLSKI_PODSTAWA_PLUS_v7.11.md` — duży materiał bazowy, w tym sekcje o rzeczowniku i odsyłacze do L005.
+- `polski/lekcje_html/L005-PL-Kajko-i-Kokosz-rzeczownik.html` — lekcja zastosowaniowa z przypadkami, żywotnością, „nie” i rzeczownikami odczasownikowymi.
 - `polski/podstawy/PL_G02_czasownik.md`, `PL_G03_przymiotnik.md`, `PL_G04_liczebnik.md`, `PL_G05_zaimek.md`, `PL_G06_imieslowy.md`, `PL_G12_czesci_zdania.md` — źródła do rozgraniczenia części mowy i funkcji.
 
 ## B. Diagnoza przed uzupełnieniem

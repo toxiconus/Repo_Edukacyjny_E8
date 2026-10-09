@@ -554,6 +554,6 @@ Progi są orientacyjne i nie są oficjalną skalą CKE.
 ## 18. Źródła i status kontroli
 
 - Materiał bazowy: `polski/podstawy/PL_G03_przymiotnik.md` — wcześniejsza wersja zachowana w historii repozytorium / odczytana przed rozbudową.
-- Materiały porównawcze: `polski/plany/wypelnienia/G03_Przymiotnik_WYPELNIONY.md`, `polski/POLSKI_PODSTAWA_PLUS_v7.11 (3).md`, lekcje sąsiednie G01/G02/G04/G06/G07/G12 oraz HTML L004 w dwóch wersjach.
+- Materiały porównawcze: `polski/plany/wypelnienia/G03_Przymiotnik_WYPELNIONY.md`, `polski/POLSKI_PODSTAWA_PLUS_v7.11.md`, lekcje sąsiednie G01/G02/G04/G06/G07/G12 oraz HTML L004 w dwóch wersjach.
 - Zasady pisowni 2026: komunikat Rady Języka Polskiego przy Prezydium PAN z 7 listopada 2025 r. oraz aktualne „Zasady pisowni i interpunkcji polskiej”.
 - Wersja 3.0 jest opracowaniem edukacyjnym. Klucze i podział punktów są autorskie; wymagają niezależnego przeglądu polonistycznego przed oznaczeniem jako zatwierdzone.

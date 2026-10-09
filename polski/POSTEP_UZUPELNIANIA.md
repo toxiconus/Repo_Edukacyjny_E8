@@ -37,7 +37,7 @@ Data startu: 2026-10-09
 - [x] Utworzono osobną mapę bloku: `polski/blok_D/README.md`.
 - [x] Opracowano pojedyncze lekcje D01–D13 w wersji 2.0.
 - [x] Każda lekcja ma plik audytu w `polski/blok_D/audyty/` (diagnoza luki → uzupełnienie → kontrola).
-- [x] Zachowano starszy `polski/bloki/POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` jako materiał źródłowy i dodano do niego odsyłacz do kanonicznej mapy.
+- [x] Zachowano starszy `polski/blok_D/POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` jako materiał źródłowy i dodano do niego odsyłacz do kanonicznej mapy.
 - [ ] Wykonać zbiorczy audyt W1/W2 całego bloku na podstawie aktualnego informatora CKE i arkuszy; nie oznaczać bloku jako ostatecznie zweryfikowanego przed tą kontrolą.
 
 Następny krok w pracy nad blokiem D: zbiorcza kontrola pokrycia wymagań, spójności terminologii, odsyłaczy i brakujących typów zadań.
@@ -97,8 +97,8 @@ Każda lekcja przeszła wewnętrzny cykl analizy braków, uzupełnienia i kontro
 
 ## Zachowanie źródeł
 
-- Oryginalne szkielety G12–G17 i S01–S06 skopiowano do `polski/szkielety/`.
-- Wersje wejściowe G04–G17 i S01–S06 zachowano w `polski/archiwum_wersji_wejsciowych/`.
+- Oryginalne szkielety G12–G17 i S01–S06 skopiowano do `polski/archiwum/szkielety/`.
+- Wersje wejściowe G04–G17 i S01–S06 zachowano w `polski/archiwum/wersje_wejsciowe/`.
 - Audyty S01–S06 przeniesiono do `polski/blok_S/audyty/`; mapę bloku zapisano w `polski/blok_S/README.md`.
 
 
@@ -108,9 +108,9 @@ Każda lekcja przeszła wewnętrzny cykl analizy braków, uzupełnienia i kontro
 - L009 Zdania pojedyncze i złożone — rozbudowano do v3.0; połączono z G14–G16.
 - L010 Środki stylistyczne — rozbudowano do v3.0; połączono z S01–S06.
 - L011 Budowa utworu, narrator, podmiot liryczny, morał i puenta — rozbudowano do v3.0.
-- Wersje wejściowe zachowano w `archiwum_wersji_wejsciowych/`, a audyty w `plany/audyty/`.
+- Wersje wejściowe zachowano w `archiwum/wersje_wejsciowe/`, a audyty w `plany/audyty/`.
 
 
 ## Kontrola zbiorcza i przygotowanie do scalania
 
-Dodano `AUDYT_ZBIORCZY_POLSKI_2026-10-09.md`, README katalogów szkiele­tów i archiwum oraz mapę lekcji integrujących. Przed przygotowaniem ZIP-a wykonuję jeszcze kontrolę kompletności plików i integralności archiwum.
+Dodano `plany/audyty/AUDYT_ZBIORCZY_POLSKI_2026-10-09.md`, README katalogów szkiele­tów i archiwum oraz mapę lekcji integrujących. Przed przygotowaniem ZIP-a wykonuję jeszcze kontrolę kompletności plików i integralności archiwum.

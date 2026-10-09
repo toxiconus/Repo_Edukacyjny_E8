@@ -220,13 +220,13 @@ def chemia():
 
 
 def polski():
-    pak = split_md(ROOT / "polski/POLSKI_PODSTAWA_PLUS_v7.11 (3).md", r"^LEKCJA (\d) — (.*)$", end_re=r"^## STATUS")
+    pak = split_md(ROOT / "polski/POLSKI_PODSTAWA_PLUS_v7.11.md", r"^LEKCJA (\d) — (.*)$", end_re=r"^## STATUS")
     pak = {f"L00{k}": v for k, v in pak.items()}
-    html = {"L001": "polski/L001_lekcja (2).html", "L002": "polski/L002_lekcja (3).html",
-            "L003": "polski/L003-PL-Opowiesci-z-Narnii-zaimek v2.html",
-            "L004": "polski/L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik v2.html",
-            "L005": "polski/L005-PL-Kajko-i-Kokosz-rzeczownik v2.html",
-            "L006": "polski/L006-PL-Akademia-Pana-Kleksa-czasownik v2.html"}
+    html = {"L001": "polski/lekcje_html/L001-PL-Lektury-klas-IV-VI-imieslow.html", "L002": "polski/lekcje_html/L002-PL-Hobbit-nieodmienne-czesci-mowy.html",
+            "L003": "polski/lekcje_html/L003-PL-Opowiesci-z-Narnii-zaimek.html",
+            "L004": "polski/lekcje_html/L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html",
+            "L005": "polski/lekcje_html/L005-PL-Kajko-i-Kokosz-rzeczownik.html",
+            "L006": "polski/lekcje_html/L006-PL-Akademia-Pana-Kleksa-czasownik.html"}
     les = [(c, *pick(c, pak.get(c), html.get(c))) for c in sorted(set(pak) | set(html))]
     kont = ("Kurs języka polskiego: każda lekcja łączy lekturę obowiązkową z gramatyką (imiesłowy, nieodmienne części mowy, "
             "zaimek, przymiotnik/liczebnik, rzeczownik, czasownik). Sprawdź zgodność z listą lektur obowiązkowych "

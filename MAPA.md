@@ -3,18 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 79 KB)
+## .  (7 pl., 65 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
-- `MAPA.md` 18 KB
+- `MAPA.md` 19 KB
 - `PRZEKAZANIE.md` 7 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 28 KB
-- `edit_html.py` 3 KB
-- `fix_encoding.ps1` 1 KB
-- `fix_encoding_v2.ps1` 5 KB
-- `replace_gereb_card.ps1` 5 KB
 
 ## angielski  (9 pl., 1.8 MB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` 474 KB
@@ -495,6 +491,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `opis_wizualizacji.py` 3 KB
 - `szkielety_polski.py` 24 KB
 
+## narzedzia/jednorazowe  (4 pl., 14 KB)
+- `edit_html.py` 3 KB
+- `fix_encoding.ps1` 1 KB
+- `fix_encoding_v2.ps1` 5 KB
+- `replace_gereb_card.ps1` 5 KB
+
 ## olimpiada  (4 pl., 116 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
@@ -571,16 +573,58 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/zrodla/pakiet_2026-10-09/research  (1 pl., 5 KB)
 - `RESEARCH_OLIMPIADY_I_KONKURSY_2026-10-09.md` 5 KB
 
-## polski  (18 pl., 2.5 MB)
-- (zwinięte; `ls polski`) — duże:
-- ⚠`L001_lekcja (2).html` 174 KB
+## polski  (4 pl., 274 KB)
+- `L001-L006-PL-Wszystkie-lekcje.md` 47 KB
+- `MAPA_POLSKI.md` 9 KB
+- ⚠`POLSKI_PODSTAWA_PLUS_v7.11.md` 209 KB
+- `POSTEP_UZUPELNIANIA.md` 8 KB
+
+## polski/archiwum/html  (6 pl., 850 KB)
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy v2.html` 114 KB
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy.html` 152 KB
-- ⚠`L002_lekcja (3).html` 131 KB
-- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek v2.html` 134 KB
 - ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 153 KB
-- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik v2.html` 90 KB
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 146 KB
+- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 139 KB
+- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 145 KB
+
+## polski/archiwum/master  (4 pl., 736 KB)
+- ⚠`POLSKI_PODSTAWA_PLUS_v7 (10).md` 200 KB
+- ⚠`POLSKI_PODSTAWA_PLUS_v7 (2).md` 173 KB
+- ⚠`POLSKI_PODSTAWA_PLUS_v7 (4).md` 178 KB
+- ⚠`POLSKI_PODSTAWA_PLUS_v7 (5).md` 186 KB
+
+## polski/archiwum/szkielety  (13 pl., 39 KB)
+- (zwinięte; `ls polski/archiwum/szkielety`)
+
+## polski/archiwum/wersje_wejsciowe  (25 pl., 149 KB)
+- (zwinięte; `ls polski/archiwum/wersje_wejsciowe`)
+
+## polski/blok_D  (2 pl., 26 KB)
+- `POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` 22 KB
+- `README.md` 3 KB
+
+## polski/blok_D/audyty  (13 pl., 13 KB)
+- (zwinięte; `ls polski/blok_D/audyty`)
+
+## polski/blok_D/lekcje  (13 pl., 122 KB)
+- (zwinięte; `ls polski/blok_D/lekcje`)
+
+## polski/blok_G  (1 pl., 7 KB)
+- `README.md` 7 KB
+
+## polski/blok_G/audyty  (17 pl., 57 KB)
+- (zwinięte; `ls polski/blok_G/audyty`)
+
+## polski/blok_S  (1 pl., 2 KB)
+- `README.md` 2 KB
+
+## polski/blok_S/audyty  (6 pl., 10 KB)
+- `S01_AUDYT.md` 2 KB
+- `S02_AUDYT.md` 2 KB
+- `S03_AUDYT.md` 2 KB
+- `S04_AUDYT.md` 2 KB
+- `S05_AUDYT.md` 2 KB
+- `S06_AUDYT.md` 2 KB
 
 ## polski/do_uzupelnienia  (5 pl., 56 KB)
 - `PL_L007_przeglad_czesci_mowy.md` 31 KB
@@ -589,7 +633,21 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PL_L010_srodki_stylistyczne.md` 6 KB
 - `PL_L011_elementy_utworu_moral_puenta.md` 7 KB
 
-## polski/plany/audyty  (2 pl., 25 KB)
+## polski/lekcje_html  (6 pl., 716 KB)
+- ⚠`L001-PL-Lektury-klas-IV-VI-imieslow.html` 174 KB
+- ⚠`L002-PL-Hobbit-nieodmienne-czesci-mowy.html` 131 KB
+- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 134 KB
+- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 90 KB
+- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 84 KB
+- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 102 KB
+
+## polski/plany/audyty  (8 pl., 30 KB)
+- `AUDYT_ZBIORCZY_POLSKI_2026-10-09.md` 1 KB
+- `L007_AUDYT_2026-10-09.md` 1 KB
+- `L008_AUDYT_2026-10-09.md` 1 KB
+- `L009_AUDYT_2026-10-09.md` 1 KB
+- `L010_AUDYT_2026-10-09.md` 1 KB
+- `L011_AUDYT_2026-10-09.md` 1 KB
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
 - `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
 

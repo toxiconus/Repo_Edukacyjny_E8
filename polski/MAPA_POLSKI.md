@@ -15,14 +15,14 @@ Ten indeks obejmuje stare i nowe materiały. Nie usuwa ani nie zastępuje archiw
 |---|---|---|
 | Ten indeks | `polski/MAPA_POLSKI.md` | Spis całego zasobu i mapowanie wersji |
 | Rejestr pracy | `polski/POSTEP_UZUPELNIANIA.md` | Status lekcji, następne kroki i kontrola jakości |
-| Master Podstawa Plus | `polski/POLSKI_PODSTAWA_PLUS_v7.11 (3).md` | Rozbudowany master źródłowy; przed dalszym scalaniem porównywać z pozostałymi wersjami |
+| Master Podstawa Plus | `polski/POLSKI_PODSTAWA_PLUS_v7.11.md` | Rozbudowany master źródłowy; przed dalszym scalaniem porównywać z pozostałymi wersjami |
 | Zbiorcze lekcje L001–L006 | `polski/L001-L006-PL-Wszystkie-lekcje.md` | Zbiór materiału do lekcji literacko-gramatycznych |
 | Blok D | `polski/blok_D/README.md` | Mapa 13 lekcji kompetencji egzaminacyjnych |
 | Blok G | `polski/blok_G/README.md` | Mapa 17 lekcji gramatyczno-składniowych |
 | Blok S | `polski/blok_S/README.md` | Mapa 6 lekcji środków stylistycznych |
-| Szkielety źródłowe | `polski/szkielety/` | Zachowane pierwotne szkielety G12–G17 i S01–S06 |
-| Wersje wejściowe | `polski/archiwum_wersji_wejsciowych/` | Zachowane wcześniejsze wersje G04–G17 i S01–S06 |
-| Dawny dokument bloku D | `polski/bloki/POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` | Zachowany materiał źródłowy i punkt porównania |
+| Szkielety źródłowe | `polski/archiwum/szkielety/` | Zachowane pierwotne szkielety G12–G17 i S01–S06 |
+| Wersje wejściowe | `polski/archiwum/wersje_wejsciowe/` | Zachowane wcześniejsze wersje G04–G17 i S01–S06 |
+| Dawny dokument bloku D | `polski/blok_D/POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` | Zachowany materiał źródłowy i punkt porównania |
 
 ## 2. Kanoniczne lekcje podstaw gramatyki i stylistyki
 
@@ -92,11 +92,11 @@ W katalogu głównym `polski/` zachowano wiele wersji HTML tych lekcji. Nie kaso
 | Lekcja | Główny temat | Zasób zbiorczy / pliki źródłowe |
 |---|---|---|
 | L001 | Lektury z klas IV–VI i imiesłów | `L001-L006-PL-Wszystkie-lekcje.md`; `L001-PL-Lektury z klas IV–VI + imiesłow v2.html` do `v7.html` |
-| L002 | Hobbit i nieodmienne części mowy | `L002-PL-Hobbit-nieodmienne-czesc-mowy.html` oraz `v2.html` |
-| L003 | Opowieści z Narnii i zaimek | `L003-PL-Opowiesci-z-Narnii-zaimek.html` oraz `v2.html` |
-| L004 | Chłopcy z Placu Broni: przymiotnik i liczebnik | `L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` oraz `v2.html` |
-| L005 | Kajko i Kokosz: rzeczownik | `L005-PL-Kajko-i-Kokosz-rzeczownik.html` oraz `v2.html` |
-| L006 | Akademia Pana Kleksa: czasownik | `L006-PL-Akademia-Pana-Kleksa-czasownik.html` oraz `v2.html` |
+| L002 | Hobbit i nieodmienne części mowy | `archiwum/html/L002-PL-Hobbit-nieodmienne-czesc-mowy.html` oraz `v2.html` |
+| L003 | Opowieści z Narnii i zaimek | `archiwum/html/L003-PL-Opowiesci-z-Narnii-zaimek.html` oraz `v2.html` |
+| L004 | Chłopcy z Placu Broni: przymiotnik i liczebnik | `archiwum/html/L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` oraz `v2.html` |
+| L005 | Kajko i Kokosz: rzeczownik | `archiwum/html/L005-PL-Kajko-i-Kokosz-rzeczownik.html` oraz `v2.html` |
+| L006 | Akademia Pana Kleksa: czasownik | `archiwum/html/L006-PL-Akademia-Pana-Kleksa-czasownik.html` oraz `v2.html` |
 
 ## 6. Szkielety do uzupełnienia
 
@@ -142,5 +142,5 @@ W repozytorium istnieje kilka kopii `POLSKI_PODSTAWA_PLUS` o różnych nazwach i
 - Blok D — `blok_D/README.md`, 13 lekcji kompetencji egzaminacyjnych.
 - Blok G — `blok_G/README.md`, 17 lekcji gramatyki i składni.
 - Blok S — `blok_S/README.md`, 6 lekcji środków stylistycznych.
-- Szkielety źródłowe — `szkielety/`; wcześniejsze wersje — `archiwum_wersji_wejsciowych/`.
+- Szkielety źródłowe — `archiwum/szkielety/`; wcześniejsze wersje — `archiwum/wersje_wejsciowe/`.
 - Audyty L007–L011 — `plany/audyty/`; audyty bloków D/G/S w katalogach poszczególnych bloków.
