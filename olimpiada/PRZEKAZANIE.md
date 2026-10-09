@@ -41,3 +41,9 @@ Foldery powstają, gdy pojawi się pierwsza treść.
 2. Plakietki poziomów 0–4 w dialekcie MD + przełącznik „E8 / Olimpiada” w md2html (jeden plik, dwa widoki).
 3. Format banku zadań (MASTER §46) jako MD/JSON + pierwsze zadania archiwalne (tylko ze źródeł oficjalnych — MASTER §12–13).
 4. Diagnostyka startowa (MASTER §93 — minimalny zestaw).
+
+## Pakiet 2026-10-09 (od użytkownika, nie z Perplexity)
+- Całość: `olimpiada/zrodla/pakiet_2026-10-09/` (lekcje MAX/UZUPEŁNIONY, arkusze LKO szkolne 2025/26 + klucze jako tekst, MASTER-y, podsumowania).
+- Szkielety wypełnione: `olimpiada/do_uzupelnienia/` CHE X04/J03/R07 (MAX), BIO B2 (MAX), B2a–f (UZUPEŁNIONY); `polski/do_uzupelnienia/` PL L007–L011 (v02). Linie `DANE:` ze szkieletów zostały na końcu plików.
+- Do scalenia bez strat: `OLIMPIADA_8_MASTER_v003.md` (pakiet, v0.3, 57 KB) z `olimpiada/OLIMPIADA_8_MASTER.md` (repo, v0.1, 82 KB) oraz `KONKURSY_LUBELSKIE_MASTER_PREMIUM_v05.md`.
+
