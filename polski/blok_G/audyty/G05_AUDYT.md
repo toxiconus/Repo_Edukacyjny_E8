@@ -8,7 +8,7 @@ data: 2026-10-09
 # G05 — audyt braków, uzupełnienie i ponowna kontrola
 
 ## 1. Materiał sprawdzony
-- Kanoniczna lekcja: `polski/podstawy/PL_G05_zaimek.md`.
+- Kanoniczna lekcja: `polski/podstawy/POL.02.G05.zaimek.md`.
 - Kontekst: spis bloku G, master `POLSKI_PODSTAWA_PLUS`, powiązane lekcje gramatyczne i istniejące materiały HTML wskazane w metadanych lekcji.
 - Wersja bazowa zachowana; uzupełnienia dodano jako osobną, oznaczoną sekcję, by nie nadpisywać wcześniejszych treści.
 

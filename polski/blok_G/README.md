@@ -14,23 +14,23 @@ Blok porządkuje istniejące lekcje gramatyczne `polski/podstawy/PL_G01–G17`. 
 
 | Kolejność | Kod | Temat | Plik kanoniczny | Status |
 |---:|---|---|---|---|
-| 1 | G01 | Rzeczownik | `../podstawy/PL_G01_rzeczownik.md` | Rozbudowana v3.0; audyt wewnętrzny wykonany; wymaga niezależnej kontroli |
-| 2 | G02 | Czasownik | `../podstawy/PL_G02_czasownik.md` | Rozbudowana v2.0; audyt wewnętrzny wykonany; wymaga niezależnej kontroli |
-| 3 | G03 | Przymiotnik | `../podstawy/PL_G03_przymiotnik.md` | Rozbudowana v3.0 po dwóch cyklach audytu; niezależna kontrola polonistyczna wymagana |
-| 4 | G04 | Liczebnik | `../podstawy/PL_G04_liczebnik.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
-| 5 | G05 | Zaimek | `../podstawy/PL_G05_zaimek.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
-| 6 | G06 | Imiesłowy | `../podstawy/PL_G06_imieslowy.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
-| 7 | G07 | Przysłówek | `../podstawy/PL_G07_przyslowek.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
-| 8 | G08 | Przyimek | `../podstawy/PL_G08_przyimek.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
-| 9 | G09 | Spójnik | `../podstawy/PL_G09_spojnik.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
-| 10 | G10 | Partykuła | `../podstawy/PL_G10_partykula.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
-| 11 | G11 | Wykrzyknik | `../podstawy/PL_G11_wykrzyknik.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
-| 12 | G12 | Części zdania | `../podstawy/PL_G12_czesci_zdania.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
-| 13 | G13 | Związki wyrazowe | `../podstawy/PL_G13_zwiazki_wyrazowe.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
-| 14 | G14 | Zdanie pojedyncze | `../podstawy/PL_G14_zdanie_pojedyncze.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
-| 15 | G15 | Zdania współrzędne | `../podstawy/PL_G15_zdania_wspolrzedne.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
-| 16 | G16 | Zdania podrzędne | `../podstawy/PL_G16_zdania_podrzedne.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
-| 17 | G17 | Mowa zależna | `../podstawy/PL_G17_mowa_zalezna.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
+| 1 | G01 | Rzeczownik | `../podstawy/POL.02.G01.rzeczownik.md` | Rozbudowana v3.0; audyt wewnętrzny wykonany; wymaga niezależnej kontroli |
+| 2 | G02 | Czasownik | `../podstawy/POL.02.G02.czasownik.md` | Rozbudowana v2.0; audyt wewnętrzny wykonany; wymaga niezależnej kontroli |
+| 3 | G03 | Przymiotnik | `../podstawy/POL.02.G03.przymiotnik.md` | Rozbudowana v3.0 po dwóch cyklach audytu; niezależna kontrola polonistyczna wymagana |
+| 4 | G04 | Liczebnik | `../podstawy/POL.02.G04.liczebnik.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
+| 5 | G05 | Zaimek | `../podstawy/POL.02.G05.zaimek.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
+| 6 | G06 | Imiesłowy | `../podstawy/POL.02.G06.imieslowy.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
+| 7 | G07 | Przysłówek | `../podstawy/POL.02.G07.przyslowek.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
+| 8 | G08 | Przyimek | `../podstawy/POL.02.G08.przyimek.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
+| 9 | G09 | Spójnik | `../podstawy/POL.02.G09.spojnik.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
+| 10 | G10 | Partykuła | `../podstawy/POL.02.G10.partykula.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
+| 11 | G11 | Wykrzyknik | `../podstawy/POL.02.G11.wykrzyknik.md` | Rozbudowana v3.0; drugi cykl audytu wewnętrznego wykonany |
+| 12 | G12 | Części zdania | `../podstawy/POL.02.G12.czesci_zdania.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
+| 13 | G13 | Związki wyrazowe | `../podstawy/POL.02.G13.zwiazki_wyrazowe.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
+| 14 | G14 | Zdanie pojedyncze | `../podstawy/POL.02.G14.zdanie_pojedyncze.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
+| 15 | G15 | Zdania współrzędne | `../podstawy/POL.02.G15.zdania_wspolrzedne.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
+| 16 | G16 | Zdania podrzędne | `../podstawy/POL.02.G16.zdania_podrzedne.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
+| 17 | G17 | Mowa zależna | `../podstawy/POL.02.G17.mowa_zalezna.md` | Rozbudowana v2.1; audyt wewnętrzny wykonany |
 
 ## Procedura dla każdej lekcji
 

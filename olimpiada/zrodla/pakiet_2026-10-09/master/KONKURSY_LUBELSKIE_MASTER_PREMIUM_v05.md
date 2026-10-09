@@ -492,11 +492,11 @@ Przesłano plik `szkielety_polski_5.zip`. Zawiera pięć szkieletów lekcji jęz
 
 | Plik | Temat | Stan opisany w pliku |
 |---|---|---|
-| `PL_L007_przeglad_czesci_mowy.md` | Przegląd części mowy | szkielet / powtórka zbiorcza; wskazano szczegóły w L001–L006 |
-| `PL_L008_czesci_zdania.md` | Części zdania | pusty szkielet |
-| `PL_L009_zdania_zlozone.md` | Zdania pojedyncze i złożone | pusty szkielet |
-| `PL_L010_srodki_stylistyczne.md` | Środki stylistyczne | pusty szkielet |
-| `PL_L011_elementy_utworu_moral_puenta.md` | Budowa utworu, morał, puenta, narrator, podmiot liryczny | pusty szkielet |
+| `POL.01.L007.przeglad_czesci_mowy.md` | Przegląd części mowy | szkielet / powtórka zbiorcza; wskazano szczegóły w L001–L006 |
+| `POL.01.L008.czesci_zdania.md` | Części zdania | pusty szkielet |
+| `POL.01.L009.zdania_zlozone.md` | Zdania pojedyncze i złożone | pusty szkielet |
+| `POL.01.L010.srodki_stylistyczne.md` | Środki stylistyczne | pusty szkielet |
+| `POL.01.L011.elementy_utworu_moral_puenta.md` | Budowa utworu, morał, puenta, narrator, podmiot liryczny | pusty szkielet |
 
 Każdy plik wskazuje klasę 8 i egzamin ósmoklasisty jako poziom odniesienia. W nagłówkach są prośby o uzupełnienie danymi z podręcznika, zeszytu, sprawdzianów i zadań egzaminacyjnych z kluczem.
 
@@ -820,11 +820,11 @@ Strony źródłowe potwierdzają publikację zestawów oraz schematów. Samo ist
 ## 23.1. Audyt wejściowy plików
 
 W archiwum `szkielety_polski_5.zip` znajdują się dokładnie:
-- `PL_L007_przeglad_czesci_mowy.md`
-- `PL_L008_czesci_zdania.md`
-- `PL_L009_zdania_zlozone.md`
-- `PL_L010_srodki_stylistyczne.md`
-- `PL_L011_elementy_utworu_moral_puenta.md`
+- `POL.01.L007.przeglad_czesci_mowy.md`
+- `POL.01.L008.czesci_zdania.md`
+- `POL.01.L009.zdania_zlozone.md`
+- `POL.01.L010.srodki_stylistyczne.md`
+- `POL.01.L011.elementy_utworu_moral_puenta.md`
 
 To są szkielety, nie kompletne lekcje. W kilku miejscach pozostawiono instrukcje `DANE:` oczekujące na zeszyt, wymagania nauczyciela lub autentyczne zadania. Poniższe uzupełnienia stanowią samodzielną bazę dydaktyczną do dalszej weryfikacji. Nie udają notatek z konkretnego podręcznika ani zadań z oficjalnego arkusza.
 

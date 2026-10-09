@@ -11,7 +11,7 @@ status: dwa cykle analizy i uzupełnienia wykonane; niezależny przegląd poloni
 
 Porównano przed rozbudową:
 
-- kanoniczny plik `polski/podstawy/PL_G03_przymiotnik.md`;
+- kanoniczny plik `polski/podstawy/POL.02.G03.przymiotnik.md`;
 - materiał planistyczny `polski/plany/wypelnienia/G03_Przymiotnik_WYPELNIONY.md`;
 - master `polski/POLSKI_PODSTAWA_PLUS_v7.11.md`;
 - sąsiednie lekcje G01, G02, G04, G06, G07 i G12;
@@ -40,7 +40,7 @@ Porównano przed rozbudową:
 
 ## 3. Uzupełnienia po cyklu 1
 
-W `polski/podstawy/PL_G03_przymiotnik.md` utworzono pełną wersję 3.0, obejmującą:
+W `polski/podstawy/POL.02.G03.przymiotnik.md` utworzono pełną wersję 3.0, obejmującą:
 
 - cele i kryteria sukcesu;
 - procedurę rozpoznawania przymiotnika;

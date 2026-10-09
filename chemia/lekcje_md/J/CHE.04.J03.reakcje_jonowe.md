@@ -11,7 +11,7 @@ opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie
 
 ### J03 — Reakcje jonowe
 
-> Uwaga przy scalaniu: Szkielet konkursowy J03 (pakiet 2026-10-09, MAX) jest w olimpiada/do_uzupelnienia/CHE_J03_rownania_jonowe_i_straceanie.md — przy budowie lekcji scalić oba źródła.
+> Uwaga przy scalaniu: Szkielet konkursowy J03 (pakiet 2026-10-09, MAX) jest w olimpiada/do_uzupelnienia/OLI.CHE.J03.rownania_jonowe_i_straceanie.md — przy budowie lekcji scalić oba źródła.
 
 #### Cel
 

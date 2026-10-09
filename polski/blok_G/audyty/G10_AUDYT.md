@@ -8,7 +8,7 @@ data: 2026-10-09
 # G10 — audyt braków, uzupełnienie i ponowna kontrola
 
 ## 1. Materiał wejściowy
-- Lekcja kanoniczna: `polski/podstawy/PL_G10_partykula.md`.
+- Lekcja kanoniczna: `polski/podstawy/POL.02.G10.partykula.md`.
 - Przeanalizowano istniejącą definicję, przykłady, rozróżnienia części mowy i ćwiczenia.
 
 ## 2. Diagnoza braków

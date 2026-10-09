@@ -3,11 +3,11 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (7 pl., 68 KB)
+## .  (7 pl., 71 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
-- `CLAUDE.md` 7 KB
-- `MAPA.md` 21 KB
+- `CLAUDE.md` 8 KB
+- `MAPA.md` 23 KB
 - `PRZEKAZANIE.md` 7 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 28 KB
@@ -24,6 +24,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L005-EN-Present-Perfect.html` 141 KB
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
 - ⚠`L012-EN-Future-Simple.html` 121 KB
+
+## angielski/lekcje_md  (6 pl., 206 KB)
+- ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.md` 70 KB
+- `ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.md` 30 KB
+- `ANG.01.L004.czasy_terazniejsze_i_przeszle.md` 24 KB
+- `ANG.01.L005.present_perfect.md` 27 KB
+- `ANG.01.L006.past_simple_continuous.md` 27 KB
+- `ANG.01.L012.future_simple.md` 28 KB
 
 ## angielski/plany/audyty  (2 pl., 24 KB)
 - `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
@@ -49,9 +57,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 3 KB
 
 ## biologia/bio/md  (3 pl., 123 KB)
-- `L010_dna_od_zera.md` 48 KB
-- `REV01_organizacja_i_chemizm_zycia.md` 27 KB
-- `REV02_roznorodnosc_zycia.md` 47 KB
+- `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 27 KB
+- `BIO.00.REV02.roznorodnosc_zycia.md` 47 KB
+- `BIO.02.L010.dna_od_zera.md` 48 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
@@ -64,23 +72,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
-## biologia/html  (34 pl., 5.3 MB)
-- (zwinięte; `ls biologia/html`) — duże:
-- ⚠`L001A_dodatek_ambitny_od_komorki_do.html` 186 KB
-- ⚠`L002_powtorka_czlowiek.html` 221 KB
-- ⚠`L004_organizacja_budowy_organizmu_od_komorki.html` 140 KB
-- ⚠`L005_blona_komorkowa_i_transport_substancji.html` 140 KB
-- ⚠`L006_fotosynteza_skad_roslina_bierze_materie.html` 140 KB
-- ⚠`L007_oddychanie_komorkowe_skad_komorka_bierze.html` 139 KB
-- ⚠`L008_mikroskop_jak_obserwowac_komorke_a.html` 139 KB
-- ⚠`L009_podzial_komorki_wzrost_regeneracja_i.html` 139 KB
-
-## biologia/md  (34 pl., 669 KB)
+## biologia/md  (37 pl., 883 KB)
 - (zwinięte; `ls biologia/md`) — duże:
-- ⚠`L002_powtorka_czlowiek.md` 74 KB
-- ⚠`L012_jak_dna_jest_upakowane_w.md` 54 KB
-- ⚠`L014_jak_komorki_ciala_powstaja_i.md` 57 KB
-- ⚠`X01_szablon_lekcji.md` 60 KB
+- ⚠`BIO.01.L001.komorka.md` 81 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.md` 74 KB
+- ⚠`BIO.01.L003.diagnoza.md` 77 KB
+- ⚠`BIO.02.L012.jak_dna_jest_upakowane_w.md` 54 KB
+- ⚠`BIO.02.L014.jak_komorki_ciala_powstaja_i.md` 57 KB
+- ⚠`BIO.02.L015.mejoza.md` 56 KB
+- ⚠`BIO.99.X01.szablon_lekcji.md` 60 KB
 
 ## biologia/md/archiwum  (3 pl., 46 KB)
 - `L001_komorka_jako_podstawowa_jednostka_zycia.md` 13 KB
@@ -435,17 +435,6 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
 - `pack_lesson.py` 28 KB
 
-## chemia/html  (46 pl., 4.8 MB)
-- (zwinięte; `ls chemia/html`) — duże:
-- ⚠`CHE.00.LAB.doswiadczenia.html` 106 KB
-- ⚠`CHE.00.REV01.powtorka_klasy_7.html` 214 KB
-- ⚠`CHE.00.REV02.powtorka_klasy_8.html` 92 KB
-- ⚠`CHE.00.REV06.zaawansowana.html` 119 KB
-- ⚠`CHE.00.S00.system_kursu.html` 88 KB
-- ⚠`CHE.00.W00.wstep.html` 73 KB
-- ⚠`CHE.01.F00.wspolne_bloku_F.html` 207 KB
-- ⚠`CHE.01.F01.jak_mysli_chemik.html` 158 KB
-
 ## chemia/lekcje_md/00  (6 pl., 238 KB)
 - `CHE.00.LAB.doswiadczenia.md` 29 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.md` 124 KB
@@ -514,8 +503,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (8 pl., 54 KB)
+## narzedzia  (9 pl., 76 KB)
 - `audyt_do_kanonu.py` 5 KB
+- `html_do_md.py` 22 KB
 - `latex2uni.py` 2 KB
 - `lekcja_html.py` 14 KB
 - `mapa.py` 2 KB
@@ -538,30 +528,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 6 KB
 
 ## olimpiada/do_uzupelnienia  (11 pl., 62 KB)
-- `BIO_B2_homeostaza.md` 5 KB
-- `BIO_B2a_skora_i_uklad_ruchu.md` 3 KB
-- `BIO_B2b_uklad_pokarmowy_i_odzywianie.md` 4 KB
-- `BIO_B2c_oddychanie_i_wydalanie.md` 3 KB
-- `BIO_B2d_uklad_nerwowy_i_zmysly.md` 4 KB
-- `BIO_B2e_uklad_dokrewny.md` 4 KB
-- `BIO_B2f_rozmnazanie_i_rozwoj.md` 3 KB
-- `CHE_J03_rownania_jonowe_i_straceanie.md` 11 KB
-- `CHE_R07_stechiometria_z_nadmiarem.md` 8 KB
-- `CHE_X04_szereg_aktywnosci_metali.md` 15 KB
+- `OLI.BIO.B2.homeostaza.md` 5 KB
+- `OLI.BIO.B2a.skora_i_uklad_ruchu.md` 3 KB
+- `OLI.BIO.B2b.uklad_pokarmowy_i_odzywianie.md` 4 KB
+- `OLI.BIO.B2c.oddychanie_i_wydalanie.md` 3 KB
+- `OLI.BIO.B2d.uklad_nerwowy_i_zmysly.md` 4 KB
+- `OLI.BIO.B2e.uklad_dokrewny.md` 4 KB
+- `OLI.BIO.B2f.rozmnazanie_i_rozwoj.md` 3 KB
+- `OLI.CHE.J03.rownania_jonowe_i_straceanie.md` 11 KB
+- `OLI.CHE.R07.stechiometria_z_nadmiarem.md` 8 KB
+- `OLI.CHE.X04.szereg_aktywnosci_metali.md` 15 KB
 - `README.md` 1 KB
-
-## olimpiada/html  (11 pl., 737 KB)
-- ⚠`BIO_B2_homeostaza.html` 72 KB
-- ⚠`BIO_B2a_skora_i_uklad_ruchu.html` 70 KB
-- ⚠`BIO_B2b_uklad_pokarmowy_i_odzywianie.html` 71 KB
-- ⚠`BIO_B2c_oddychanie_i_wydalanie.html` 70 KB
-- ⚠`BIO_B2d_uklad_nerwowy_i_zmysly.html` 71 KB
-- ⚠`BIO_B2e_uklad_dokrewny.html` 71 KB
-- ⚠`BIO_B2f_rozmnazanie_i_rozwoj.html` 70 KB
-- ⚠`CHE_J03_rownania_jonowe_i_straceanie.html` 79 KB
-- ⚠`CHE_R07_stechiometria_z_nadmiarem.html` 76 KB
-- ⚠`CHE_X04_szereg_aktywnosci_metali.html` 84 KB
-- `index.html` 2 KB
 
 ## olimpiada/narzedzia  (1 pl., 7 KB)
 - `mapa_chemia.py` 7 KB
@@ -620,7 +597,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/zrodla/pakiet_2026-10-09/research  (1 pl., 5 KB)
 - `RESEARCH_OLIMPIADY_I_KONKURSY_2026-10-09.md` 5 KB
 
-## polski  (5 pl., 296 KB)
+## polski  (5 pl., 297 KB)
 - `L001-L006-PL-Wszystkie-lekcje.md` 47 KB
 - `MAPA_POLSKI.md` 14 KB
 - ⚠`POLSKI_PODSTAWA_PLUS_v7.11.md` 209 KB
@@ -687,22 +664,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `S06_AUDYT.md` 2 KB
 
 ## polski/do_uzupelnienia  (5 pl., 122 KB)
-- `PL_L007_przeglad_czesci_mowy.md` 32 KB
-- `PL_L008_czesci_zdania.md` 26 KB
-- `PL_L009_zdania_zlozone.md` 21 KB
-- `PL_L010_srodki_stylistyczne.md` 23 KB
-- `PL_L011_elementy_utworu_moral_puenta.md` 21 KB
+- `POL.01.L007.przeglad_czesci_mowy.md` 32 KB
+- `POL.01.L008.czesci_zdania.md` 26 KB
+- `POL.01.L009.zdania_zlozone.md` 21 KB
+- `POL.01.L010.srodki_stylistyczne.md` 23 KB
+- `POL.01.L011.elementy_utworu_moral_puenta.md` 21 KB
 
-## polski/html  (42 pl., 3.4 MB)
-- (zwinięte; `ls polski/html`) — duże:
-- ⚠`D01_czytanie_ze_zrozumieniem.html` 105 KB
-- ⚠`D02_fakt_opinia_teza_argument_wniosek.html` 83 KB
-- ⚠`D03_wnioskowanie_i_laczenie_informacji.html` 81 KB
-- ⚠`D04_odpowiedz_pelna_i_uzasadnienie.html` 80 KB
-- ⚠`D05_rozprawka.html` 86 KB
-- ⚠`D06_opowiadanie_tworcze.html` 83 KB
-- ⚠`D07_przemowienie.html` 79 KB
-- ⚠`D08_list_oficjalny.html` 77 KB
+## polski/lekcje_md  (6 pl., 251 KB)
+- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.md` 80 KB
+- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.md` 54 KB
+- `POL.01.L003.narnia_zaimek.md` 37 KB
+- `POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.md` 27 KB
+- `POL.01.L005.kajko_i_kokosz_rzeczownik.md` 23 KB
+- `POL.01.L006.akademia_pana_kleksa_czasownik.md` 30 KB
 
 ## polski/plany/audyty  (15 pl., 55 KB)
 - (zwinięte; `ls polski/plany/audyty`)

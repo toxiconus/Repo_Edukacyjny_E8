@@ -8,7 +8,7 @@ data: 2026-10-09
 # G11 — audyt braków, uzupełnienie i ponowna kontrola
 
 ## 1. Materiał wejściowy
-- Lekcja kanoniczna: `polski/podstawy/PL_G11_wykrzyknik.md`.
+- Lekcja kanoniczna: `polski/podstawy/POL.02.G11.wykrzyknik.md`.
 - Przeanalizowano istniejącą definicję, przykłady, rozróżnienia części mowy i ćwiczenia.
 
 ## 2. Diagnoza braków

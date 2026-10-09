@@ -158,7 +158,7 @@ def md_dir(d, pattern="*.md", skip=()):
         if any(p.name.startswith(x) for x in skip):
             continue
         meta, body = front(p)
-        kod = meta.get("kod", "").strip('"') or p.stem.split("_")[0].split(".")[-1]
+        kod = meta.get("kod", "").strip('"') or (re.match(r"[A-Z]{3}\.\w+\.([A-Z]+\d*[A-Za-z]?)\.", p.name) or re.match(r"(?:PL_|EN_)?([A-Za-z]+\d*[A-Za-z]?)_", p.name) or re.match(r"(.+)", p.stem)).group(1)
         tyt = meta.get("tytul", "").strip('"')
         if not tyt:
             m = re.match(r"#\s*\S+\s*[—–-]\s*(.+)", body.lstrip())
@@ -171,11 +171,11 @@ def md_dir(d, pattern="*.md", skip=()):
 
 
 def biologia():
-    kanon = {k: v for k, v in ((x[0], x) for x in md_dir("biologia/md", "L*.md"))}
+    kanon = {k: v for k, v in ((x[0], x) for x in md_dir("biologia/md", "BIO.*.L*.md"))}
     for x in md_dir("biologia/bio/md"):  # gotowe lekcje (nowsze) zastępują kanon
         kanon[x[0]] = x
     les = [kanon[k] for k in sorted(kanon, key=lambda k: (k.startswith("REV"), k))]
-    szk = md_dir("olimpiada/do_uzupelnienia", "BIO_*.md")
+    szk = md_dir("olimpiada/do_uzupelnienia", "OLI.BIO.*.md")
     kont = ("Kurs biologii klasy 8: genetyka, ewolucja, ekologia + powtórki z klas 5–7 (komórka, człowiek) "
             "oraz powtórki konkursowe REV01–REV02 (konkurs kuratoryjny, etap szkolny). Kanon: BIO.all v5.2 pocięty na lekcje; "
             "L010, REV01, REV02 to wersje gotowe (najnowsze). Część lekcji (L004–L009, L016A) to krótkie zarysy — "
@@ -205,7 +205,7 @@ def chemia():
         if k.startswith("REV"): return (6, k)
         return (rz.get(k[0], 8), k, x[3])
     les = sorted(gotowe + kanon, key=klucz)
-    szk = md_dir("olimpiada/do_uzupelnienia", "CHE_*.md")
+    szk = md_dir("olimpiada/do_uzupelnienia", "OLI.CHE.*.md")
     kont = ("Kurs chemii klasy 7–8 (+ ambitne LO, konkurs kuratoryjny). Dwa rodzaje plików: "
             "`lessons-md/gotowe` = lekcje gotowe (najnowsze, najlepiej dopracowane: F01–F06, N01 Powietrze, N01–N05 związki nieorganiczne, "
             "R03, REV01, FIZ01); `lekcje_md` = materiał roboczy kanonu (F00, F07–F21, R, O, powtórki) — jeszcze nie gotowe lekcje. "

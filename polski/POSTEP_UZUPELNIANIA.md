@@ -25,11 +25,11 @@ Data startu: 2026-10-09
 ## Rejestr
 | Kod | Plik | Status | Uwagi |
 |---|---|---|---|
-| L007 | `polski/do_uzupelnienia/PL_L007_przeglad_czesci_mowy.md` | PEŁNA v3.0 — audyt W2 wewnętrzny wykonany | Rozbudowano szkielet do pełnej lekcji: mapa 10 części mowy, procedura rozpoznawania, imiesłowy, pułapki, ćwiczenia z kluczami, test 20 pkt, fiszki i samoocena. |
-| L008 | `polski/do_uzupelnienia/PL_L008_czesci_zdania.md` | PEŁNA v4.0 — audyt wewnętrzny zapisany | Porównać z `polski/podstawy/PL_G12_czesci_zdania.md`; scalić bez utraty wartościowej treści. |
-| L009 | `polski/do_uzupelnienia/PL_L009_zdania_zlozone.md` | PEŁNA v4.0 — audyt wewnętrzny zapisany | Porównać z G14–G16 i uzupełnić tylko luki. |
-| L010 | `polski/do_uzupelnienia/PL_L010_srodki_stylistyczne.md` | PEŁNA v4.0 — audyt wewnętrzny zapisany | Porównać z S01–S06 i dodać ćwiczenia przekrojowe. |
-| L011 | `polski/do_uzupelnienia/PL_L011_elementy_utworu_moral_puenta.md` | PEŁNA v4.0 — audyt wewnętrzny zapisany | Sprawdzić pokrycie: elementy utworu, morał, puenta, interpretacja. |
+| L007 | `polski/do_uzupelnienia/POL.01.L007.przeglad_czesci_mowy.md` | PEŁNA v3.0 — audyt W2 wewnętrzny wykonany | Rozbudowano szkielet do pełnej lekcji: mapa 10 części mowy, procedura rozpoznawania, imiesłowy, pułapki, ćwiczenia z kluczami, test 20 pkt, fiszki i samoocena. |
+| L008 | `polski/do_uzupelnienia/POL.01.L008.czesci_zdania.md` | PEŁNA v4.0 — audyt wewnętrzny zapisany | Porównać z `polski/podstawy/POL.02.G12.czesci_zdania.md`; scalić bez utraty wartościowej treści. |
+| L009 | `polski/do_uzupelnienia/POL.01.L009.zdania_zlozone.md` | PEŁNA v4.0 — audyt wewnętrzny zapisany | Porównać z G14–G16 i uzupełnić tylko luki. |
+| L010 | `polski/do_uzupelnienia/POL.01.L010.srodki_stylistyczne.md` | PEŁNA v4.0 — audyt wewnętrzny zapisany | Porównać z S01–S06 i dodać ćwiczenia przekrojowe. |
+| L011 | `polski/do_uzupelnienia/POL.01.L011.elementy_utworu_moral_puenta.md` | PEŁNA v4.0 — audyt wewnętrzny zapisany | Sprawdzić pokrycie: elementy utworu, morał, puenta, interpretacja. |
 
 ## Kontrola jakości L007
 - [x] Rozbudowana teoria i tabela porównawcza.
@@ -55,7 +55,7 @@ Zbiorczy audyt bloku D zapisano w `blok_D/AUDYT_ZBIORCZY_D_v3.md`; niezależna w
 ## Blok G — gramatyka i składnia
 
 - [x] Rozpoczęto blok G bez dublowania kanonicznych lekcji: mapa i audyty są w `polski/blok_G/`, a lekcje kanoniczne pozostają w `polski/podstawy/`.
-- [x] G01 — `polski/podstawy/PL_G01_rzeczownik.md` rozbudowano do v3.0 po porównaniu z masterem, L005 i lekcjami powiązanymi.
+- [x] G01 — `polski/podstawy/POL.02.G01.rzeczownik.md` rozbudowano do v3.0 po porównaniu z masterem, L005 i lekcjami powiązanymi.
 - [x] Dodano `polski/blok_G/audyty/G01_AUDYT.md`: diagnoza braków, uzupełnienia, kontrola po zmianie i uwagi wymagające niezależnej weryfikacji.
 - [ ] G01 wymaga niezależnej kontroli polonistycznej kluczy, szczególnie zadań 8, 12 i 15.
 - [x] G02 — czasownik rozbudowany do v2.0; dodano audyt braków i kontroli po zmianie.

@@ -8,7 +8,7 @@ data: 2026-10-09
 # G09 — audyt braków, uzupełnienie i ponowna kontrola
 
 ## 1. Materiał wejściowy
-- Lekcja kanoniczna: `polski/podstawy/PL_G09_spojnik.md`.
+- Lekcja kanoniczna: `polski/podstawy/POL.02.G09.spojnik.md`.
 - Sprawdzono układ istniejącej lekcji, cele, definicje, przykłady, typowe błędy, ćwiczenia i powiązania z pozostałymi częściami bloku G.
 
 ## 2. Diagnoza braków

@@ -8,7 +8,7 @@ data: 2026-10-09
 # G08 — audyt braków, uzupełnienie i ponowna kontrola
 
 ## 1. Materiał wejściowy
-- Lekcja kanoniczna: `polski/podstawy/PL_G08_przyimek.md`.
+- Lekcja kanoniczna: `polski/podstawy/POL.02.G08.przyimek.md`.
 - Sprawdzono układ istniejącej lekcji, cele, definicje, przykłady, typowe błędy, ćwiczenia i powiązania z pozostałymi częściami bloku G.
 
 ## 2. Diagnoza braków

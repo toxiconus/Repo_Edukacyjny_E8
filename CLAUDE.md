@@ -47,7 +47,10 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - `python3 eksport/zbierz_lekcje.py` → `eksport/out/PERPLEXITY_<PRZEDMIOT>.md` (prompt na początku + wszystkie lekcje, jedna najnowsza wersja każdej). Katalog `out/` jest poza gitem.
 
 ## Polski — lekcje podstawowe (priorytet)
-- Szkielety G01–G17 (części mowy, składnia) i S01–S06 (środki stylistyczne) w `polski/podstawy/`, generator `python3 narzedzia/szkielety_polski.py` (nie nadpisuje wypełnionych), paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md`. Wypełniony plik: zmienić `stan: PUSTY` → `stan: WYPEŁNIONY — model, data`, potem W1.
+- Szkielety G01–G17 (części mowy, składnia) i S01–S06 (środki stylistyczne) w `polski/podstawy/`, generator `python3 narzedzia/szkielety_polski.py` (nie nadpisuje wypełnionych), paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md`. Pliki: `POL.02.G01.rzeczownik.md` itd. Wypełniony plik: zmienić `stan: PUSTY` → `stan: WYPEŁNIONY — model, data`, potem W1.
+
+## Nazwy plików lekcji
+- Wzór `PRZ.NN.KOD.slug.md` (jak chemia `CHE.01.F07.…`): `POL.01.L…` lektury + gramatyka, `POL.02.G…` części mowy/składnia, `POL.03.S…` środki stylistyczne, `POL.04.D…` kompetencje E8; `ANG.01.L…`; `BIO.01` komórka (L001–L009), `BIO.02` genetyka (L010–L021), `BIO.03` ewolucja, `BIO.04` ekologia, `BIO.05` powtórka, `BIO.06` extra, `BIO.00.REV…`, `BIO.99.X…` pliki systemowe; olimpiada `OLI.BIO.B2…`, `OLI.CHE.J03…`. HTML ma tę samą nazwę.
 
 ## Szablon HTML lekcji (wszystkie przedmioty)
 - Wspólny wygląd: `szablon/` (baza + ulepszenia + `motywy/<che|bio|pol|ang|oli>.css`, `lekcja.js`), opis w `szablon/README.md`. Build jednej lekcji: `python3 narzedzia/lekcja_html.py -p <przedmiot> plik.md`; wszystkich: `python3 narzedzia/zbuduj_wszystkie.py` → `polski/html/`, `biologia/html/`, `chemia/html/` (kanon), `olimpiada/html/` (wygenerowane — nie czytać, nie poprawiać ręcznie). BIO `dist/` też idzie przez szablon. Gotowe lekcje chemii z modelami: nadal `che-modular/tools/md2html.py`. Zmiany wspólne tylko w `szablon/ulepszenia.css`, przedmiotowe w motywie.

@@ -2,8 +2,8 @@
 """md → HTML lekcji dowolnego przedmiotu, na wspólnym szablonie (szablon/).
 
 Użycie:
-  python3 narzedzia/lekcja_html.py -p pol polski/podstawy/PL_G03_przymiotnik.md [...]   [-o katalog]
-  python3 narzedzia/lekcja_html.py -p bio biologia/bio/md/L010_dna_od_zera.md
+  python3 narzedzia/lekcja_html.py -p pol polski/podstawy/POL.02.G03.przymiotnik.md [...]   [-o katalog]
+  python3 narzedzia/lekcja_html.py -p bio biologia/bio/md/BIO.02.L010.dna_od_zera.md
 Przedmioty (-p): che, bio, pol, ang, oli — motyw w szablon/motywy/<p>.css. Domyślne wyjście: <katalog pliku>/../html/.
 Wynik: jeden samodzielny plik HTML (style, skrypt i grafiki przedmiotu w środku) — działa offline i na telefonie.
 
@@ -159,9 +159,23 @@ def preprocess(text, p):
     s = '\n'.join(out)
     return re.sub(r'\[\[([^\]:\[]+)\]\]', r'[[contest:\1]]', s)   # [[LKO]] → plakietka
 
+def z_nazwy(path):
+    """kod z nazwy pliku: PRZ.NN.KOD.slug (np. BIO.02.L011.jak_dna…) albo dawne KOD_slug"""
+    b = os.path.basename(path)
+    mm = re.match(r'[A-Z]{3}\.[\w]+\.([A-Z]+\d*[A-Za-z]?)\.', b) or re.match(r'(?:PL_|EN_)?([A-Z]+\d+[A-Z]?)_', b)
+    return mm.group(1) if mm else ''
+
 def render(path, p):
-    text = m.aliasy(preprocess(rd(path), p))
+    surowy = rd(path)
+    meta0, body0 = m.front(surowy)
+    pierwszy = re.search(r'(?m)^# (.+)$', body0)   # „# KOD — Tytuł” w plikach bez nagłówka YAML
+    text = m.aliasy(preprocess(surowy, p))
     meta, body = m.front(text)
+    if not meta.get('kod'): meta['kod'] = z_nazwy(path)
+    if not meta.get('tytul') and pierwszy:
+        t = pierwszy.group(1).strip()
+        mm = re.match(r'(?:%s\s*[—–-]\s*)(.+)$' % re.escape(meta['kod']), t) if meta['kod'] else None
+        meta['tytul'] = mm.group(1) if mm else t
     lines = body.split('\n')
     ctx = m.Ctx(meta)
     main = m.parse_blocks(lines, ctx)

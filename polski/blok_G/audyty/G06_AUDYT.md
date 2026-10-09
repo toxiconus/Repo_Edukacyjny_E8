@@ -8,7 +8,7 @@ data: 2026-10-09
 # G06 — audyt braków, uzupełnienie i ponowna kontrola
 
 ## 1. Materiał sprawdzony
-- Kanoniczna lekcja: `polski/podstawy/PL_G06_imieslowy.md`.
+- Kanoniczna lekcja: `polski/podstawy/POL.02.G06.imieslowy.md`.
 - Kontekst: spis bloku G, master `POLSKI_PODSTAWA_PLUS`, powiązane lekcje gramatyczne i istniejące materiały HTML wskazane w metadanych lekcji.
 - Wersja bazowa zachowana; uzupełnienia dodano jako osobną, oznaczoną sekcję, by nie nadpisywać wcześniejszych treści.
 

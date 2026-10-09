@@ -10,10 +10,10 @@ import opis_wizualizacji as OPIS
 R = L.REPO
 ZRODLA = {
     'pol': ('polski/html', ['polski/lekcje_md/*.md', 'polski/podstawy/*.md', 'polski/do_uzupelnienia/*.md', 'polski/blok_D/lekcje/*.md']),
-    'bio': ('biologia/html', ['biologia/md/L*.md', 'biologia/bio/md/*.md']),
+    'bio': ('biologia/html', ['biologia/md/BIO.*.md', 'biologia/bio/md/*.md']),
     'che': ('chemia/html', ['chemia/lekcje_md/*/*.md']),
     'ang': ('angielski/html', ['angielski/lekcje_md/*.md']),
-    'oli': ('olimpiada/html', ['olimpiada/do_uzupelnienia/*_*.md']),
+    'oli': ('olimpiada/html', ['olimpiada/do_uzupelnienia/OLI.*.md']),
 }
 
 def index(p, out, rows):
@@ -37,7 +37,7 @@ def main():
     for p in wyb:
         outrel, wz = ZRODLA[p]
         out = os.path.join(R, outrel); os.makedirs(out, exist_ok=True)
-        pliki = [f for w in wz for f in sorted(glob.glob(os.path.join(R, w))) if not os.path.basename(f).startswith(('README', 'X01_szablon', 'X99_'))]
+        pliki = [f for w in wz for f in sorted(glob.glob(os.path.join(R, w))) if not os.path.basename(f).startswith('README') and '.99.X' not in os.path.basename(f)]
         OPIS.egzekwuj(pliki, wyjdz=False)
         rows = []
         for f in pliki:

@@ -1,13 +1,13 @@
 # G01 — audyt braków, uzupełnienie i kontrola po zmianie
 
-Data opracowania: 2026-10-09. Wersja pliku kanonicznego: `polski/podstawy/PL_G01_rzeczownik.md` v3.0.
+Data opracowania: 2026-10-09. Wersja pliku kanonicznego: `polski/podstawy/POL.02.G01.rzeczownik.md` v3.0.
 
 ## A. Materiały porównane
 
-- `polski/podstawy/PL_G01_rzeczownik.md` — dotychczasowa lekcja (ok. 1,1 tys. słów).
+- `polski/podstawy/POL.02.G01.rzeczownik.md` — dotychczasowa lekcja (ok. 1,1 tys. słów).
 - `polski/POLSKI_PODSTAWA_PLUS_v7.11.md` — duży materiał bazowy, w tym sekcje o rzeczowniku i odsyłacze do L005.
 - `polski/archiwum/lekcje_html_stare/L005-PL-Kajko-i-Kokosz-rzeczownik.html` — lekcja zastosowaniowa z przypadkami, żywotnością, „nie” i rzeczownikami odczasownikowymi.
-- `polski/podstawy/PL_G02_czasownik.md`, `PL_G03_przymiotnik.md`, `PL_G04_liczebnik.md`, `PL_G05_zaimek.md`, `PL_G06_imieslowy.md`, `PL_G12_czesci_zdania.md` — źródła do rozgraniczenia części mowy i funkcji.
+- `polski/podstawy/POL.02.G02.czasownik.md`, `POL.02.G03.przymiotnik.md`, `POL.02.G04.liczebnik.md`, `POL.02.G05.zaimek.md`, `POL.02.G06.imieslowy.md`, `POL.02.G12.czesci_zdania.md` — źródła do rozgraniczenia części mowy i funkcji.
 
 ## B. Diagnoza przed uzupełnieniem
 
