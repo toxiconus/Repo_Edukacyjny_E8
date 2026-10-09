@@ -51,3 +51,4 @@
 - 2026-10-09 08:5x — Scalenie paczki W23 (GPT-6): 119 plików trójstronnie pod nowymi nazwami, 13 nowych; odrzucone stare L001/L003/L015 BIO, zły klucz G07; naprawione backticki BIO, @opis:, 5 szablonowych opisów, G06. Raport: paczki/W23_2026-10-09/AUDYT_SCALENIA_Claude.md. Buildy i testy OK.
 - 2026-10-09 — BIO L001: nowe grafiki bio-viz „komorka-nakladki” (rdzeń + nakładki typów, rozpoznanie zestawu) i „mikroskop-model” (×400, barwienie vs model); zastąpiły puste SVG z dawnego HTML; katalog i @opis uzupełnione.
 - 2026-10-09 — BIO L018: zalecenia audytu W15/W18 przeniesione do treści (model XX/XY, 1/2 vs 1/4, nosicielka/inaktywacja X).
+- 2026-10-09 — CHE: decyzje noty kolizji (status w spisie, ponad E8 → extra w lekcji, RT00–RT10); spis_tresci.py naprawiony (ścieżki gotowych lekcji).

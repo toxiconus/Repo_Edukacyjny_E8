@@ -45,3 +45,10 @@ Numeracja Perplexity NIE jest kanoniczna. Przy scalaniu mapować:
 1. Czy przyjąć „rejestr statusów” (ŹRÓDŁO / POPRAWIONE / … / GOTOWE HTML) i macierz audytu z `audyt_koncowy`.
 2. Czy treść ponad E8 (E05 Faraday, K02 rząd, K09 termodynamika) idzie do OLIMPIADA czy do warstwy rozszerzenia CHE.
 3. Nowa numeracja REV dla wersji tematycznej.
+
+## Decyzje użytkownika (2026-10-09)
+
+1. **Rejestr statusów — przyjęty** jako kolumna `status` w `CHE_SPIS_TRESCI.md` (wyliczana w `plany/narzedzia/spis_tresci.py` z plików; ręczne nadpisanie `kanon_dane.STATUS`).
+2. **Treść ponad E8** (E05 Faraday, K02 rząd, Hess/termodynamika, Ka/pKa, bufory) → sekcja `[[extra:ZAAWANSOWANY]]` w tej samej lekcji CHE, nie osobne lekcje OLIMPIADA.
+3. **REV tematyczne Perplexity → kody RT00–RT10** (lista w `kanon_dane.UZUPELNIENIA`); REV01/REV02/REV06 bez zmian.
+4. J05 klucz zad. 4 — poprawiony (W22).

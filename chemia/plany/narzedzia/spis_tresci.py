@@ -5,10 +5,26 @@ Użycie (z katalogu chemia/):  python3 che/narzedzia/spis_tresci.py
 import os, re, glob, sys, datetime
 sys.path.insert(0, os.path.dirname(__file__)); import kanon_dane as KD
 
-GOTOWE = {  # kod v0.3 -> gotowa lekcja (md w szablonie + HTML przez md2html.py)
-    'F01': 'che/md/F01_jak_mysli_chemik.md', 'F02': 'che/md/F02_materia_i_substancje.md', 'F03': 'che/md/F03_wlasciwosci_i_rozdzielanie.md', 'F04': 'che/md/F04_atom.md', 'N02': 'che/md/N01_tlenki.md', 'N03': 'che/md/N02_wodorotlenki.md',
-    'N04': 'che/md/N03_kwasy.md', 'N05': 'che/md/N04_sole.md', 'N06': 'che/md/N05_wodorki.md',
+G = 'che-modular/lessons-md/gotowe/'
+GOTOWE = {  # kod v0.3 -> gotowa lekcja (md w szablonie + HTML przez che-modular/tools/md2html.py)
+    'F01': G+'F01_jak_mysli_chemik.md', 'F02': G+'F02_materia_i_substancje.md', 'F03': G+'F03_wlasciwosci_i_rozdzielanie.md', 'F04': G+'F04_atom.md',
+    'F05': G+'F05_izotopy_jony_masa_atomowa.md', 'F06': G+'F06_uklad_okresowy.md', 'N01': G+'N01_powietrze_i_gazy.md',
+    'N02': G+'N01_tlenki.md', 'N03': G+'N02_wodorotlenki.md', 'N04': G+'N03_kwasy.md', 'N05': G+'N04_sole.md', 'N06': G+'N05_wodorki.md',
+    'R03': G+'R03_woda_roztwory_stezenie_procentowe.md',
 }
+GOTOWE = {k: v for k, v in GOTOWE.items() if os.path.exists(v)}
+
+STATUSY = ['GOTOWE HTML', 'GOTOWE MASTER', 'UZUPEŁNIONE', 'POPRAWIONE', 'DO SPRAWDZENIA', 'ŹRÓDŁO', 'PRZENIESIONE', 'DO IMPLEMENTACJI']
+def status(k):
+    """Rejestr statusów (audyt końcowy W1). Ręczne nadpisanie: kanon_dane.STATUS[kod]."""
+    if k in getattr(KD, 'STATUS', {}): return KD.STATUS[k]
+    if k in GOTOWE: return 'GOTOWE HTML'
+    fs = MAT.get(k, [])
+    if not fs: return 'DO IMPLEMENTACJI'
+    s = ' '.join(open(f, encoding='utf-8').read() for f in fs)
+    if 'UZUPEŁNIENIE KANONICZNE' in s or 'TREŚĆ KANONICZNA' in s: return 'UZUPEŁNIONE'
+    if 'AUDYT' in s: return 'POPRAWIONE'
+    return 'ŹRÓDŁO'
 
 def kody_z_nazwy(name):
     """CHE.03.R04+R07-R09.x.md -> {R04,R07,R08,R09}"""
@@ -47,6 +63,11 @@ w('- **Poziom:** `E8` szkoła podstawowa · `E8+LO` część E8 + rozszerzenie L
 w('- **Stan:** ●●● gotowa lekcja (md w szablonie + HTML) · ●●○ obszerny materiał w osobnym md · ◐○○ materiał cienki · ●○○ materiał wspólny z innymi lekcjami (stara lekcja zbiorcza) · ○○○ brak materiału.')
 w('- **Mamy:** pliki materiału w `chemia/lekcje_md/<grupa>/` — jeden plik na lekcję (blok F) albo plik zbiorczy starej lekcji v1.1. Na końcu każdego pliku F jest sekcja „MATERIAŁ Z ARCHIWUM — do redakcji” z treściami ze starszych wersji, których nie było w głównej.')
 w('- **Było:** kod w spisie v0.1 (sprzed przenumerowania).\n')
+st = {}
+for d in KD.L: st[status(d['kod'])] = st.get(status(d['kod']), 0) + 1
+w('- **Status (rejestr z audytu końcowego W1):** GOTOWE HTML — lekcja zbudowana · GOTOWE MASTER — pełny materiał i specyfikacja · UZUPEŁNIONE — dopisana treść kanoniczna · POPRAWIONE — korekty z audytu · DO SPRAWDZENIA · ŹRÓDŁO — materiał bazowy bez audytu · PRZENIESIONE — treść ma właściciela w innej lekcji · DO IMPLEMENTACJI — tylko opis w kanonie. Wyliczany z plików; ręcznie: `kanon_dane.STATUS`.')
+w('- **Treść ponad E8** (np. Faraday, rząd reakcji, Hess, Ka/pKa, bufory) idzie do sekcji `[[extra:ZAAWANSOWANY]]` w tej samej lekcji — nie do osobnych lekcji OLIMPIADA.\n')
+w('**Statusy:** ' + ' · '.join('%s %d' % (s, st[s]) for s in STATUSY if s in st) + '.\n')
 w('**Bilans:** %d lekcji w 10 grupach. ' % n + ' · '.join('%s %d' % (k, cnt.get(k, 0)) for k in ['●●●', '●●○', '◐○○', '●○○', '○○○']) + '.\n')
 
 w('## 1. Zasady kanonu\n')
@@ -73,7 +94,7 @@ for nr, g, nm, why in KD.GRUPY:
         k = d['kod']
         if k in KD.FAZY_F: w('### %s\n' % KD.FAZY_F[k])
         w('#### %s — %s\n' % (k, d['tytul']))
-        y = ['kod: ' + k, 'poziom: ' + d['poziom'], 'wymaga: "%s"' % d['wymaga'], 'poglebia: "%s"' % d['poglebia'], 'stan: "%s"' % stan(k)]
+        y = ['kod: ' + k, 'status: ' + status(k), 'poziom: ' + d['poziom'], 'wymaga: "%s"' % d['wymaga'], 'poglebia: "%s"' % d['poglebia'], 'stan: "%s"' % stan(k)]
         if d.get('bylo') and d['bylo'] != k: y.append('bylo: "%s"' % d['bylo'])
         w('```yaml\n' + '\n'.join(y) + '\n```\n')
         w('**Cel:** ' + d['cel'] + '\n')
@@ -90,7 +111,7 @@ for nr, g, nm, why in KD.GRUPY:
 w('---\n\n## %d. Uzupełnienia (poza grupami)\n\n| kod | co | mamy |\n|---|---|---|' % sec); sec += 1
 for k, t in KD.UZUPELNIENIA:
     fs = [f for f in glob.glob('lekcje_md/00/*.md') if '.%s.' % k in f]
-    if k == 'FIZ-01': fs = ['che/md/FIZ01_elektrostatyka.md (gotowa ●●●)']
+    if k == 'FIZ-01': fs = [G + 'FIZ01_elektrostatyka.md (gotowa ●●●)']
     w('| %s | %s | %s |' % (k, t, ', '.join('`%s`' % f for f in fs) or '—'))
 w('\nMateriał wspólny kursu: `lekcje_md/00/CHE.00.W00.wstep.md` (wstęp pakietu v1.1), `lekcje_md/00/CHE.00.S00.system_kursu.md` (system kursu), `lekcje_md/F/CHE.01.F00.wspolne_bloku_F.md` (systemy zadań, powtórek, mistrzostwa i specyfikacja HTML bloku F).\n')
 
@@ -108,8 +129,8 @@ for a, b, c in [('F10 cienkie', 'osobno, do rozbudowy', 'scalić z F11'), ('Powi
     w('| %s | %s | %s |' % (a, b, c))
 w('\n## %d. Następne kroki\n' % sec)
 w('1. Zatwierdzić decyzje z tabeli wyżej i kolumnę „poziom” (podstawa E8 po 2024).')
-w('2. Przemianować gotowe lekcje N (che/md) na nowe kody.')
-w('3. Wydzielać kolejne lekcje F do szablonu (F02 → `che/md/`) z plików `lekcje_md/F/` — treść główna + przegląd sekcji „z archiwum”.')
+w('2. Przemianować gotowe lekcje N (`che-modular/lessons-md/gotowe/`) na nowe kody.')
+w('3. Wydzielać kolejne lekcje F do szablonu (→ `che-modular/lessons-md/gotowe/`) z plików `lekcje_md/F/` — treść główna + przegląd sekcji „z archiwum”.')
 w('4. Rozdzielić stare lekcje zbiorcze v1.1 (R, O, X) na pojedyncze kody przy pisaniu tych lekcji.')
 open('plany/CHE_SPIS_TRESCI.md', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 print('ok', n, cnt)
