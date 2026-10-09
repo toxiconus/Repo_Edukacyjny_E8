@@ -12315,7 +12315,7 @@ Szkielet 1–22 zostaje. Doklejono kartę, porównanie z L015, klinikę, słowni
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L014 · Następna: L016
 - Status treści: jest wykład MD; audyt przy edycji
-- Status HTML: lekcje_html/BIOLOGIA_L015_MEJOZA.html
+- Status HTML: archiwum/lekcje_html_stare/BIOLOGIA_L015_MEJOZA.html
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
 
@@ -13980,7 +13980,7 @@ Matematyka (2²³ kombinacji) · Biologia (rozmnażanie) · Etyka (dziedziczenie
 
 ## L015 — warstwa v5.1/v5.2 (HTML + korekta; nic z v3.8 nie skreślono)
 
-HTML: `lekcje_html/BIOLOGIA_L015_MEJOZA.html` (v5.1; dopisek v5.2 w pliku). Bez paska postępu i checkboxów TOC.
+HTML: `archiwum/lekcje_html_stare/BIOLOGIA_L015_MEJOZA.html` (v5.1; dopisek v5.2 w pliku). Bez paska postępu i checkboxów TOC.
 
 **Tytuł precyzyjny:** komórki haploidalne i różnorodność — u zwierząt z nich gamety, u roślin spory.
 

@@ -222,11 +222,11 @@ def chemia():
 def polski():
     pak = split_md(ROOT / "polski/POLSKI_PODSTAWA_PLUS_v7.11.md", r"^LEKCJA (\d) — (.*)$", end_re=r"^## STATUS")
     pak = {f"L00{k}": v for k, v in pak.items()}
-    html = {"L001": "polski/lekcje_html/L001-PL-Lektury-klas-IV-VI-imieslow.html", "L002": "polski/lekcje_html/L002-PL-Hobbit-nieodmienne-czesci-mowy.html",
-            "L003": "polski/lekcje_html/L003-PL-Opowiesci-z-Narnii-zaimek.html",
-            "L004": "polski/lekcje_html/L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html",
-            "L005": "polski/lekcje_html/L005-PL-Kajko-i-Kokosz-rzeczownik.html",
-            "L006": "polski/lekcje_html/L006-PL-Akademia-Pana-Kleksa-czasownik.html"}
+    html = {"L001": "polski/archiwum/lekcje_html_stare/L001-PL-Lektury-klas-IV-VI-imieslow.html", "L002": "polski/archiwum/lekcje_html_stare/L002-PL-Hobbit-nieodmienne-czesci-mowy.html",
+            "L003": "polski/archiwum/lekcje_html_stare/L003-PL-Opowiesci-z-Narnii-zaimek.html",
+            "L004": "polski/archiwum/lekcje_html_stare/L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html",
+            "L005": "polski/archiwum/lekcje_html_stare/L005-PL-Kajko-i-Kokosz-rzeczownik.html",
+            "L006": "polski/archiwum/lekcje_html_stare/L006-PL-Akademia-Pana-Kleksa-czasownik.html"}
     les = [(c, *pick(c, pak.get(c), html.get(c))) for c in sorted(set(pak) | set(html))]
     kont = ("Kurs języka polskiego: każda lekcja łączy lekturę obowiązkową z gramatyką (imiesłowy, nieodmienne części mowy, "
             "zaimek, przymiotnik/liczebnik, rzeczownik, czasownik). Sprawdź zgodność z listą lektur obowiązkowych "
@@ -248,10 +248,10 @@ def angielski():
                    stop_re=r"^# LEKCJA DODATKOWA 2")
     if dod:
         pak2["D1"] = ("Lekcje dodatkowe (phrasal verbs, false friends, ciekawostki)", dod["LEKCJE DODATKOWE"][1])
-    html = {"L002": "angielski/lekcje_html/L002-EN-Operatory-i-czasowniki-posilkowe.html",
-            "L003": "angielski/lekcje_html/L003-EN-Tryb-rozkazujacy-czasowniki-stanow-phrasal-verbs.html",
-            "L004": "angielski/lekcje_html/L004-EN-Czasy-terazniejsze-i-przeszle.html", "L005": "angielski/lekcje_html/L005-EN-Present-Perfect.html",
-            "L006": "angielski/lekcje_html/L006-EN-Past-Simple-Continuous.html", "L012": "angielski/lekcje_html/L012-EN-Future-Simple.html"}
+    html = {"L002": "angielski/archiwum/lekcje_html_stare/L002-EN-Operatory-i-czasowniki-posilkowe.html",
+            "L003": "angielski/archiwum/lekcje_html_stare/L003-EN-Tryb-rozkazujacy-czasowniki-stanow-phrasal-verbs.html",
+            "L004": "angielski/archiwum/lekcje_html_stare/L004-EN-Czasy-terazniejsze-i-przeszle.html", "L005": "angielski/archiwum/lekcje_html_stare/L005-EN-Present-Perfect.html",
+            "L006": "angielski/archiwum/lekcje_html_stare/L006-EN-Past-Simple-Continuous.html", "L012": "angielski/archiwum/lekcje_html_stare/L012-EN-Future-Simple.html"}
     les = [(c, *pick(c, pak2.get(c), html.get(c))) for c in sorted(set(pak2) | set(html))]
     kont = ("Kurs gramatyki angielskiej z objaśnieniami po polsku (poziom A2+/B1, egzamin ósmoklasisty z angielskiego). "
             "Sprawdź poprawność przykładów angielskich i reguł. Oceń, czego brakuje względem egzaminu: "

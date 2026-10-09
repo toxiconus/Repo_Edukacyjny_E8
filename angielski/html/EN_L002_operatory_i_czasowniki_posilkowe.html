@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="ang">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>L002 · Czasowniki / Operatory posiłkowe BE i DO</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* motyw ang (Język angielski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#2a4d9b;--accent-dark:#1b336a;--accent-soft:#e9eef9;--accent-line:#c4d1ee;--accent-glow:rgba(42,77,155,.15);--hl-key:#2a4d9b;--hl-key-bg:#dfe7f7;--hl-formula:#1b336a;--hl-formula-bg:#e9eef9;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 130 200%27%3E%3Cg fill=%27none%27 stroke=%27%232a4d9b%27 stroke-width=%274%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M14 14h80a10 10 0 0 1 10 10v34a10 10 0 0 1-10 10H48l-18 16V68H14A10 10 0 0 1 4 58V24a10 10 0 0 1 10-10z%27/%3E%3Cpath d=%27M40 106h76a10 10 0 0 1 10 10v30a10 10 0 0 1-10 10h-12v16l-18-16H40a10 10 0 0 1-10-10v-30a10 10 0 0 1 10-10z%27/%3E%3C/g%3E%3Cg fill=%27%232a4d9b%27%3E%3Ccircle cx=%2736%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2754%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2772%27 cy=%2741%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}}
+:root[data-theme=dark]{--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}
+
+/* wyrażenie po angielsku w tekście polskim i wymowa */
+.en{font-style:italic;font-weight:600;color:var(--accent)}
+.ipa{font-family:var(--serif);font-size:.95em;color:var(--text-muted);white-space:nowrap}
+.ipa::before{content:"/"}.ipa::after{content:"/"}
+/* wzór zdania: podmiot + operator + czasownik */
+.wzor{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+.wzor span{padding:5px 10px;border-radius:8px;border:1px solid var(--accent-line);background:var(--accent-soft);font-weight:700;font-size:14px}
+.wzor span.op{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.wzor b{color:var(--text-muted);font-weight:700}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Język angielski</span><span class="lk-title">L002 Czasowniki / Operatory posiłkowe BE i DO</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Język angielski, lekcja L002</div><h1>Czasowniki / Operatory posiłkowe BE i DO</h1><p class="lead">Egzamin ósmoklasisty · kompleksowe przygotowanie — Lekcja 2 – twierdzenia, przeczenia, pytania i krótkie odpowiedzi</p><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">Spis treści</a><a class="toc-link" href="#s2">1. Wprowadzenie</a><a class="toc-link" href="#s3">Cel lekcji</a><a class="toc-link" href="#s4">1. Zanim zaczniesz – szybki test</a><a class="toc-link" href="#s5">2. Co to jest operator?</a><a class="toc-link" href="#s6">3. Czasownik główny vs czasownik posiłkowy</a><a class="toc-link" href="#s7">4. BE, DO i HAVE – większy obraz</a><a class="toc-link" href="#s8">5. Najważniejsza decyzja: BE czy DO?</a><a class="toc-link" href="#s9">2. Operator BE</a><a class="toc-link" href="#s10">6. Formy BE</a><a class="toc-link" href="#s11">7. BE – twierdzenie</a><a class="toc-link" href="#s12">8. BE – przeczenie</a><a class="toc-link" href="#s13">9. BE – pytanie</a><a class="toc-link" href="#s14">10. BE – krótkie odpowiedzi</a><a class="toc-link" href="#s15">11. Ćwiczenia z BE (tłumaczenie PL→EN)</a><a class="toc-link" href="#s16">3. Operator DO</a><a class="toc-link" href="#s17">12. Formy DO</a><a class="toc-link" href="#s18">13. DO – twierdzenie</a><a class="toc-link" href="#s19">14. DO – pytanie</a><a class="toc-link" href="#s20">15. DO – przeczenie</a><a class="toc-link" href="#s21">16. DO – krótkie odpowiedzi</a><a class="toc-link" href="#s22">17. Ćwiczenia z DO (tłumaczenie PL→EN)</a><a class="toc-link" href="#s23">4. Złota zasada i porównania</a><a class="toc-link" href="#s24">18. Najważniejsza zasada: DOES / DID + FORMA PODSTAWOWA</a><a class="toc-link" href="#s25">19. BE i DO obok siebie – porównanie stanu i czynności</a><a class="toc-link" href="#s26">20. HAVE – szczególny przypadek</a><a class="toc-link" href="#s27">21. DO jako czasownik główny</a><a class="toc-link" href="#s28">22. Podwójne DO</a><a class="toc-link" href="#s29">23. Podwójne HAVE</a><a class="toc-link" href="#s30">5. Pytania szczegółowe</a><a class="toc-link" href="#s31">Jak BE i DO pojawiają się na egzaminie E8?</a><a class="toc-link" href="#s32">24. Pytania z WH-words</a><a class="toc-link" href="#s33">25. WHO – najważniejsza pułapka</a><a class="toc-link" href="#s34">26. What time / How often / How much / How many</a><a class="toc-link" href="#s35">27. There is / There are</a><a class="toc-link" href="#s36">28. Krótkie odpowiedzi – zasady</a><a class="toc-link" href="#s37">29. DO w zdaniu twierdzącym – podkreślenie</a><a class="toc-link" href="#s38">30. Jak zbudować pytanie krok po kroku?</a><a class="toc-link" href="#s39">31. Szybki algorytm egzaminacyjny</a><a class="toc-link" href="#s40">6. Bank konstrukcji</a><a class="toc-link" href="#s41">32. Bank konstrukcji – ucz się konstrukcji, nie pojedynczych słów</a><a class="toc-link" href="#s42">Fiszki – najważniejsze konstrukcje</a><a class="toc-link" href="#s43">7. Ćwiczenia</a><a class="toc-link" href="#s44">33. Tip tygodnia – cztery formy jednego czasownika</a><a class="toc-link" href="#s45">34. Poziom A – Rozpoznaj operator</a><a class="toc-link" href="#s46">35. Poziom B – Uzupełnij</a><a class="toc-link" href="#s47">36. Poziom C – Zamień na pytanie i przeczenie</a><a class="toc-link" href="#s48">37. Poziom D – Znajdź i popraw błąd</a><a class="toc-link" href="#s49">38. Poziom E – Krótkie odpowiedzi</a><a class="toc-link" href="#s50">39. Poziom F – WH-questions</a><a class="toc-link" href="#s51">40. Poziom G – Main verb czy auxiliary?</a><a class="toc-link" href="#s52">41. Ćwiczenie specjalne – WHO</a><a class="toc-link" href="#s53">42. There is / There are</a><a class="toc-link" href="#s54">43. Zadanie w formule E8 – Present Continuous</a><a class="toc-link" href="#s55">44. Zadanie w formule E8 – How often</a><a class="toc-link" href="#s56">45. Co było trudne dla ósmoklasistów?</a><a class="toc-link" href="#s57">46. Zadania treningowe wzorowane na E8</a><a class="toc-link" href="#s58">47. Dodatkowe ćwiczenie – Present Continuous w pytaniach</a><a class="toc-link" href="#s59">48. Mini-dialogi – ćwiczenia mówione</a><a class="toc-link" href="#s60">49. Mini-wypowiedź</a><a class="toc-link" href="#s61">50. Zadanie mistrzowskie</a><a class="toc-link" href="#s62">BE, LIKE, GO, HAVE</a><a class="toc-link" href="#s63">BE – być</a><a class="toc-link" href="#s64">LIKE – lubić</a><a class="toc-link" href="#s65">GO – iść / jechać</a><a class="toc-link" href="#s66">HAVE – mieć</a><a class="toc-link" href="#s67">50 słówek z przykładami i wymową</a><a class="toc-link" href="#s68">8. Podsumowanie</a><a class="toc-link" href="#s69">51. Najczęstsze błędy Polaków</a><a class="toc-link" href="#s70">52. Pułapki egzaminacyjne (lista)</a><a class="toc-link" href="#s71">53. Mini-powtórka z lekcji 1</a><a class="toc-link" href="#s72">54. 11 najważniejszych zasad</a><a class="toc-link" href="#s73">55. Schemat decyzyjny</a><a class="toc-link" href="#s74">56. Fiszka egzaminacyjna</a><a class="toc-link" href="#s75">57. Fiszka 2.0 – kompaktowa ściąga</a><a class="toc-link" href="#s76">58. Test końcowy – MISJA</a><a class="toc-link" href="#s77">59. Bank konstrukcji do powtórek</a><a class="toc-link" href="#s78">60. FAQ – najczęstsze wątpliwości</a><a class="toc-link" href="#s79">61. Co powinieneś umieć po tej lekcji?</a><a class="toc-link" href="#s80">Lista tematów głównych</a></nav></details>
+<p>Lekcja 2 · orientacja</p>
+<p><strong>1. Rozpoznaj</strong> Ustal, czy zdanie potrzebuje BE, DO czy innej konstrukcji.</p>
+<p><strong>2. Zbuduj</strong> Ułóż operator, podmiot i resztę zdania.</p>
+<p><strong>3. Sprawdź</strong> Poszukaj typowej pułapki przed zatwierdzeniem odpowiedzi.</p>
+<p>Zasada pracy</p>
+<p><strong>Nie zgaduj całego zdania naraz.</strong> Najpierw znajdź czasownik i zdecyduj, jaka konstrukcja nim rządzi. Dopiero potem wybierz formę operatora.</p>
+<section id="s1">
+<div class="part-heading">Spis treści</div>
+<p>Słownictwo: szkoła · rodzina · zainteresowania · czas wolny Otwórz słowniczek</p>
+<div class="card card-understand">
+<span class="card-label">Sprawdź się przed nauką — 3 szybkie decyzje</span>
+<ol>
+<li>„Czy jesteś zmęczony?” → BE czy DO?</li>
+<li>„Czy lubisz muzykę?” → BE czy DO?</li>
+<li>„Kto lubi piłkę?” → czy potrzebujesz DO?</li>
+</ol>
+<details class="answer"><summary>Odpowiedzi</summary>
+<ol>
+<li>Are you tired? — BE</li>
+<li>Do you like music? — DO</li>
+<li>Who likes football? — WHO jako podmiot</li>
+</ol>
+</details>
+<p>To nie jest test na ocenę. Ma pokazać, co już działa automatycznie.</p>
+</div>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">1</span> Wprowadzenie</div>
+</section>
+<section id="s3">
+<div class="part-heading">Cel lekcji</div>
+<p>Po tej lekcji będziesz potrafić szybko rozpoznać, czy potrzebujesz <strong>BE</strong>, czy <strong>DO</strong>, i bez zastanawiania tworzyć poprawne pytania, przeczenia oraz krótkie odpowiedzi.</p>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">1</span> Zanim zaczniesz – szybki test</div>
+<ol>
+<li>_____ you interested in sport? (Are / Do)</li>
+<li>Popraw: <em>You like pizza do?</em></li>
+<li>Popraw: <em>She doesn't likes pizza.</em></li>
+<li>_____ your brother play football? (Is / Does)</li>
+<li>Uzupełnij: <em>Do you like music?</em> → <em>Yes, I _____.</em></li>
+<li>_____ she at home yesterday? (Did / Was)</li>
+<li>Popraw: <em>Did he went to school?</em></li>
+<li>Przetłumacz: <em>Czy jesteś zmęczony?</em></li>
+</ol>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li><strong>Are</strong> you interested in sport? (<em>interested</em> opisuje stan)</li>
+<li><strong>Do you like pizza?</strong> (DO stawiamy przed podmiotem)</li>
+<li><strong>She doesn't like pizza.</strong> (po <em>doesn't</em> używamy formy podstawowej)</li>
+<li><strong>Does</strong> your brother play football? (<em>play</em> jest zwykłym czasownikiem)</li>
+<li>Yes, I <strong>do</strong>.</li>
+<li><strong>Was</strong> she at home yesterday? (czas przeszły czasownika BE)</li>
+<li><strong>Did he go to school?</strong> (po <em>did</em> używamy formy podstawowej)</li>
+<li><strong>Are you tired?</strong></li>
+</ol>
+</details>
+<p>Najpierw rozwiąż test samodzielnie, a potem sprawdź odpowiedzi. Zapisz swój wynik i wróć do tych samych pytań po zakończeniu lekcji, aby zobaczyć postęp.</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">2</span> Co to jest operator?</div>
+<p>W języku angielskim specjalne słowa pomagają tworzyć:</p>
+<ul>
+<li>pytania,</li>
+<li>przeczenia,</li>
+<li>krótkie odpowiedzi,</li>
+<li>a czasami także mocne podkreślenie.</li>
+</ul>
+<p>Takie słowo nazywamy <strong>operatorem</strong>.</p>
+<p>Najważniejsze operatory w tej lekcji to:</p>
+<ul>
+<li><strong>BE</strong> – am / is / are / was / were</li>
+<li><strong>DO</strong> – do / does / did</li>
+</ul>
+<h3>Dlaczego to jest ważne?</h3>
+<p>Po polsku możemy powiedzieć: <strong>Lubisz muzykę?</strong> Nie potrzebujemy osobnego słowa przed „lubisz”.<br> W angielskim standardowe pytanie brzmi: <strong>Do you like music?</strong><br> A nie: <span class="error-text">You like music do?</span></p>
+<div class="card card-basic">
+<span class="card-label">Dlaczego operator jest potrzebny?</span>
+<p>W czasach Present Simple i Past Simple zwykły czasownik nie tworzy sam pytania ani przeczenia. Potrzebuje operatora <strong>do / does / did</strong>. Czasownik <strong>BE</strong> zachowuje się inaczej: sam przechodzi przed podmiot i łączy się z <em>not</em>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj zdania</th><th>Polski</th><th>Angielski</th><th>Rola operatora</th></tr></thead>
+<tbody>
+<tr><td><strong>Pytanie</strong></td><td><em>Lubisz muzykę?</em></td><td><span class="hl-operator">Do</span> you like music?</td><td><strong>do</strong> sygnalizuje pytanie</td></tr>
+<tr><td><strong>Przeczenie</strong></td><td><em>Nie lubię kawy.</em></td><td>I <span class="hl-operator">don't</span> like coffee.</td><td><strong>don't</strong> tworzy przeczenie</td></tr>
+<tr><td><strong>Krótka odpowiedź</strong></td><td><em>Tak, lubię.</em></td><td>Yes, I <span class="hl-operator">do</span>.</td><td><strong>do</strong> zastępuje powtarzaną część zdania</td></tr>
+</tbody></table></div>
+<p>W języku polskim często wystarcza intonacja albo słowo „nie”. W angielskim operator wskazuje rodzaj zdania i pomaga zachować właściwy szyk.</p>
+</div>
+<p>Co dzieje się po dodaniu DO?</p>
+<p><strong>does / did</strong><br>pokazuje osobę lub czas → <strong>czasownik główny</strong><br>wraca do formy podstawowej</p>
+<p>&#8203;<span class="correct-text">Does she like music?</span> | <span class="error-text">Does she likes music?</span></p>
+<p><strong>Ćwiczenie – znajdź operatora <span class="level-badge level-basic">PODSTAWA</span></strong></p>
+<p>Wskaż operator w każdym zdaniu. Jeśli go nie ma, napisz „brak”.</p>
+<ol>
+<li><em>Are you ready?</em></li>
+<li><em>She doesn't like coffee.</em></li>
+<li><em>I am a student.</em></li>
+<li><em>Did they go home?</em></li>
+<li><em>We watch TV every day.</em></li>
+</ol>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li><strong>Are</strong></li>
+<li><strong>doesn't</strong> (<em>does + not</em>)</li>
+<li><strong>am</strong></li>
+<li><strong>Did</strong></li>
+<li><strong>brak</strong> – to zdanie twierdzące w Present Simple</li>
+</ol>
+</details>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">3</span> Czasownik główny vs czasownik posiłkowy</div>
+<h3>Czasownik główny (main verb)</h3>
+<ul>
+<li><em>I have a dog.</em> → <strong>have</strong> = mieć</li>
+<li><em>I do my homework.</em> → <strong>do</strong> = robić</li>
+<li><em>She is a teacher.</em> → <strong>is</strong> = być</li>
+</ul>
+<h3>Czasownik posiłkowy (operator)</h3>
+<ul>
+<li><em>Do you like music?</em> → <strong>do</strong> nie oznacza „robić” – jest operatorem.</li>
+<li><em>She has finished.</em> → <strong>has</strong> pomaga utworzyć Present Perfect.</li>
+<li><em>They are working.</em> → <strong>are</strong> pomaga utworzyć Present Continuous.</li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">Zapamiętaj</span>
+<p>To samo słowo może być czasownikiem głównym <strong>albo</strong> operatorem. Decyduje o tym kontekst.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">To samo słowo – dwie różne funkcje</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Słowo</th><th>Jako czasownik główny</th><th>Jako operator</th></tr></thead>
+<tbody>
+<tr><td><strong>do</strong></td><td><em>I <span class="hl-main-verb">do</span> my homework.</em> – robię</td><td><em><span class="hl-operator">Do</span> you like music?</em> – tworzy pytanie</td></tr>
+<tr><td><strong>have</strong></td><td><em>She <span class="hl-main-verb">has</span> a dog.</em> – ma</td><td><em>She <span class="hl-operator">has</span> finished.</em> – tworzy Present Perfect</td></tr>
+<tr><td><strong>be</strong></td><td><em>They <span class="hl-main-verb">are</span> happy.</em> – są</td><td><em>They <span class="hl-operator">are</span> working.</em> – tworzy Present Continuous</td></tr>
+</tbody></table></div>
+<p><strong>Jak rozpoznać funkcję?</strong> Gdy <em>do / have / be</em> pomaga utworzyć formę innego czasownika, pełni funkcję posiłkową. Gdy samodzielnie przekazuje główne znaczenie, jest czasownikiem głównym.</p>
+</div>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">4</span> BE, DO i HAVE – większy obraz</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Czasownik</th><th>Funkcja jako operator</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>BE</strong> (am/is/are/was/were/been)</td><td>Czasy <em>continuous</em>, strona bierna</td><td><em>She is working.</em> / <em>It was written.</em></td></tr>
+<tr><td><strong>DO</strong> (do/does/did)</td><td>Pytania i przeczenia w czasach <em>Simple</em>, emfaza</td><td><em>Do you like it?</em> / <em>I do like it!</em></td></tr>
+<tr><td><strong>HAVE</strong> (have/has/had)</td><td>Czasy <em>Perfect</em></td><td><em>I have seen it.</em> / <em>She has finished.</em></td></tr>
+</tbody></table></div>
+<div class="card card-warning">
+<span class="card-label">Uwaga</span>
+<p>Te same słowa mogą być też <strong>czasownikami głównymi</strong> (np. <em>I have a car</em>, <em>I do my homework</em>, <em>She is tired</em>). Kontekst zdania decyduje.</p>
+</div>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">5</span> Najważniejsza decyzja: BE czy DO?</div>
+<p><strong>Jeśli mamy BE</strong> – BE samo tworzy pytanie i przeczenie.</p>
+<ul>
+<li><em>She is tired.</em></li>
+<li><em>Is she tired?</em></li>
+<li><em>She isn't tired.</em></li>
+</ul>
+<p><strong>Jeśli mamy zwykły czasownik</strong> – używamy DO.</p>
+<ul>
+<li><em>She likes music.</em></li>
+<li><em>Does she like music?</em></li>
+<li><em>She doesn't like music.</em></li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">Złota zasada</span>
+<p><strong>BE → BE</strong><br><strong>zwykły czasownik → DO</strong></p>
+<p>&#8203;<em>Are you tired?</em> ale <em>Do you like music?</em></p>
+</div>
+<p>Kliknij słowo, żeby przećwiczyć decyzję</p>
+<ol>
+<li>Znajdź czasownik</li>
+</ol>
+<p>↓</p>
+<p>tired like working play happy</p>
+<p>↓</p>
+<ol start="2">
+<li>Czy to BE?</li>
+</ol>
+<p>↓</p>
+<p>TAK → BE NIE → DO</p>
+<p>Wybierz słowo i operator, aby zobaczyć wynik.</p>
+<div class="card">
+<span class="card-label">Ćwiczenie – BE czy DO?</span>
+<p>Wybierz poprawny operator dla każdego zdania.</p>
+<ol>
+<li>___ you tired?</li>
+<li>___ she like music?</li>
+<li>___ they at school?</li>
+<li>___ he play tennis?</li>
+<li>___ you have a brother?</li>
+<li>___ she your sister?</li>
+<li>___ they go to school yesterday?</li>
+<li>___ they at school yesterday?</li>
+</ol>
+<details class="answer"><summary>Odpowiedzi</summary>
+<ol>
+<li><strong>be</strong></li>
+<li><strong>do</strong></li>
+<li><strong>be</strong></li>
+<li><strong>do</strong></li>
+<li><strong>do</strong></li>
+<li><strong>be</strong></li>
+<li><strong>do</strong></li>
+<li><strong>be</strong></li>
+</ol>
+</details>
+</div>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">2</span> Operator BE</div>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">6</span> Formy BE</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Osoba</th><th>Teraźniejszość</th><th>Przeszłość</th></tr></thead>
+<tbody>
+<tr><td>I</td><td>am</td><td>was</td></tr>
+<tr><td>you</td><td>are</td><td>were</td></tr>
+<tr><td>he / she / it</td><td>is</td><td>was</td></tr>
+<tr><td>we</td><td>are</td><td>were</td></tr>
+<tr><td>they</td><td>are</td><td>were</td></tr>
+</tbody></table></div>
+</section>
+<section id="s11">
+<div class="part-heading"><span class="part-num">7</span> BE – twierdzenie</div>
+<p><strong>Schemat:</strong> podmiot + BE + reszta</p>
+<div class="przyklad">
+<p>&#8203;<span class="tag">twierdzenie</span> <span class="eng">I <span class="hl-operator">am</span> <span class="hl-main-verb">tired</span>.</span> <span class="pl">Jestem zmęczony.</span></p>
+</div>
+<div class="przyklad">
+<p>&#8203;<span class="tag">twierdzenie</span> <span class="eng">She <span class="hl-operator">is</span> <span class="hl-main-verb">a student</span>.</span> <span class="pl">Ona jest uczennicą.</span></p>
+</div>
+<div class="przyklad">
+<p>&#8203;<span class="tag">twierdzenie (przeszłość)</span> <span class="eng">They <span class="hl-operator">were</span> <span class="hl-main-verb">at school yesterday</span>.</span> <span class="pl">Oni byli w szkole wczoraj.</span></p>
+</div>
+</section>
+<section id="s12">
+<div class="part-heading"><span class="part-num">8</span> BE – przeczenie</div>
+<p><strong>Schemat:</strong> podmiot + BE + not + reszta</p>
+<div class="przyklad">
+<p>&#8203;<span class="tag">przeczenie</span> <span class="eng">I <span class="hl-operator">am</span> <span class="hl-main-verb">not</span> tired.</span> <span class="pl">Nie jestem zmęczony.</span></p>
+</div>
+<div class="przyklad">
+<p>&#8203;<span class="tag">przeczenie (skrót)</span> <span class="eng">She <span class="hl-operator">isn't</span> <span class="hl-main-verb">tired</span>.</span> <span class="pl">Ona nie jest zmęczona.</span></p>
+</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Pełna forma</th><th>Skrót</th></tr></thead>
+<tbody>
+<tr><td>is not</td><td>isn't</td></tr>
+<tr><td>are not</td><td>aren't</td></tr>
+<tr><td>was not</td><td>wasn't</td></tr>
+<tr><td>were not</td><td>weren't</td></tr>
+</tbody></table></div>
+<div class="card card-basic">
+<span class="card-label">Formy skrócone na egzaminie E8</span>
+<p>Formy <strong>isn't, aren't, wasn't</strong> i <strong>weren't</strong> są poprawne gramatycznie i można ich używać w zadaniach egzaminacyjnych, o ile polecenie nie wymaga konkretnej formy.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Kontekst</th><th>Zalecenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>Limit wyrazów</strong></td><td>Forma z apostrofem jest liczona jako jeden wyraz.</td><td><em>isn't</em> = 1 wyraz</td></tr>
+<tr><td><strong>Mowa</strong></td><td>Skróty brzmią naturalnie; pełna forma może służyć podkreśleniu.</td><td><em>She isn't ready.</em> / <em>She is not ready.</em></td></tr>
+<tr><td><strong>Styl nieformalny</strong></td><td>Skróty są naturalne w wiadomości, e-mailu lub wpisie.</td><td><em>We weren't at home.</em></td></tr>
+<tr><td><strong>Styl formalny</strong></td><td>Pełne formy są zwykle bezpieczniejszym wyborem.</td><td><em>We were not informed.</em></td></tr>
+</tbody></table></div>
+<p><strong>Ważne:</strong> najpierw przeczytaj polecenie. Jeśli zadanie narzuca liczbę wyrazów albo konkretną konstrukcję, odpowiedź musi spełniać te warunki.</p>
+</div>
+</section>
+<section id="s13">
+<div class="part-heading"><span class="part-num">9</span> BE – pytanie</div>
+<p>BE przechodzi przed podmiot.</p>
+<div class="przyklad">
+<p>&#8203;<span class="tag">pytanie</span> <span class="eng"><span class="hl-operator">Is</span> she <span class="hl-main-verb">tired</span>?</span> <span class="pl">Czy ona jest zmęczona?</span></p>
+</div>
+<div class="przyklad">
+<p>&#8203;<span class="tag">pytanie</span> <span class="eng"><span class="hl-operator">Are</span> you <span class="hl-main-verb">ready</span>?</span> <span class="pl">Czy jesteś gotowy?</span> Nauczyciel pyta przed rozpoczęciem testu.</p>
+</div>
+<div class="card">
+<span class="card-label">Schemat</span>
+<p><strong>BE + podmiot + reszta?</strong></p>
+</div>
+</section>
+<section id="s14">
+<div class="part-heading"><span class="part-num">10</span> BE – krótkie odpowiedzi</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Pytanie</th><th>Tak</th><th>Nie</th></tr></thead>
+<tbody>
+<tr><td>Are you ready?</td><td>Yes, I am.</td><td>No, I'm not.</td></tr>
+<tr><td>Is she tired?</td><td>Yes, she is.</td><td>No, she isn't.</td></tr>
+<tr><td>Were they at home?</td><td>Yes, they were.</td><td>No, they weren't.</td></tr>
+</tbody></table></div>
+<div class="card card-warning">
+<span class="card-label">Uwaga!</span>
+<p>Nie odpowiadamy <em>Yes, I do.</em> na pytanie <em>Are you ready?</em></p>
+<p><strong>Dlaczego?</strong> Pytanie używa BE (<em>are</em>), więc odpowiedź również używa BE. Dla podmiotu <em>I</em> właściwą formą jest <em>am</em>: <strong>Yes, I am.</strong></p>
+</div>
+</section>
+<section id="s15">
+<div class="part-heading"><span class="part-num">11</span> Ćwiczenia z BE (tłumaczenie PL→EN)</div>
+<p><strong>Przetłumacz na angielski. Użyj BE. <span class="level-badge level-basic">PODSTAWA</span></strong></p>
+<ol>
+<li>Czy jesteś zmęczony?</li>
+<li>Ona nie jest w domu.</li>
+<li>Czy oni byli w szkole?</li>
+<li>Jestem uczniem.</li>
+<li>Czy twoja siostra jest nauczycielką?</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>W każdym zdaniu użyj odpowiedniej formy BE (am/is/are/was/were). 2. Sprawdź osobę podmiotu – dla I użyj <em>am</em>, dla you/we/they <em>are</em>, dla he/she/it <em>is</em>, dla przeszłości <em>was/were</em>. 3. Pytanie: BE przed podmiotem. Przeczenie: BE + not.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>Are you tired?</li>
+<li>She is not (isn't) at home.</li>
+<li>Were they at school?</li>
+<li>I am a student.</li>
+<li>Is your sister a teacher?</li>
+</ol>
+</details>
+<p><strong>Uzupełnij dialog formami BE <span class="level-badge level-basic">PODSTAWA</span></strong></p>
+<p><strong>Rozmowa w kawiarni:</strong></p>
+<p>A: _____ you ready to order?<br> B: Yes, I _____. _____ the soup hot?<br> A: Yes, it _____. The sandwiches _____ fresh too.<br> B: Great. How much _____ the soup?</p>
+<details class="answer"><summary>Odpowiedź</summary>
+<p>A: <strong>Are</strong> you ready to order?<br> B: Yes, I <strong>am</strong>. <strong>Is</strong> the soup hot?<br> A: Yes, it <strong>is</strong>. The sandwiches <strong>are</strong> fresh too.<br> B: Great. How much <strong>is</strong> the soup?</p>
+</details>
+<p><strong>Wybierz właściwą formę BE <span class="level-badge level-understand">TRENING</span></strong></p>
+<ol>
+<li>I _____ at home yesterday. (<em>am / was</em>)</li>
+<li>They _____ in the garden now. (<em>are / were</em>)</li>
+<li>She _____ a teacher. (<em>is / was</em>) – to jej zawód.</li>
+<li>We _____ at the cinema last Friday. (<em>are / were</em>)</li>
+<li>_____ you hungry? (<em>Are / Were</em>) – pytam teraz.</li>
+</ol>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li><strong>was</strong> – <em>yesterday</em> wskazuje przeszłość, a podmiotem jest <em>I</em>.</li>
+<li><strong>are</strong> – <em>now</em> wskazuje teraźniejszość, a <em>they</em> wymaga formy <em>are</em>.</li>
+<li><strong>is</strong> – zdanie opisuje obecny zawód osoby <em>she</em>.</li>
+<li><strong>were</strong> – <em>last Friday</em> wskazuje przeszłość, a <em>we</em> łączy się z <em>were</em>.</li>
+<li><strong>Are</strong> – pytamy o obecny stan osoby <em>you</em>.</li>
+</ol>
+</details>
+</section>
+<section id="s16">
+<div class="part-heading"><span class="part-num">3</span> Operator DO</div>
+</section>
+<section id="s17">
+<div class="part-heading"><span class="part-num">12</span> Formy DO</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Osoba</th><th>Teraźniejszość</th><th>Przeszłość</th></tr></thead>
+<tbody>
+<tr><td>I</td><td>do</td><td>did</td></tr>
+<tr><td>you</td><td>do</td><td>did</td></tr>
+<tr><td>he / she / it</td><td>does</td><td>did</td></tr>
+<tr><td>we</td><td>do</td><td>did</td></tr>
+<tr><td>they</td><td>do</td><td>did</td></tr>
+</tbody></table></div>
+</section>
+<section id="s18">
+<div class="part-heading"><span class="part-num">13</span> DO – twierdzenie</div>
+<p>W zwykłym zdaniu nie używamy operatora DO.</p>
+<div class="przyklad">
+<p>&#8203;<span class="tag">twierdzenie</span> <span class="eng">I <span class="hl-main-verb">like</span> music.</span> <span class="pl">Lubię muzykę.</span></p>
+</div>
+<div class="przyklad">
+<p>&#8203;<span class="tag">twierdzenie</span> <span class="eng">She <span class="hl-main-verb">likes</span> music.</span> <span class="pl">Ona lubi muzykę.</span></p>
+</div>
+</section>
+<section id="s19">
+<div class="part-heading"><span class="part-num">14</span> DO – pytanie</div>
+<p><strong>Schemat:</strong> Do / Does / Did + podmiot + czasownik podstawowy + reszta?</p>
+<div class="przyklad">
+<p>&#8203;<span class="tag">pytanie</span> <span class="eng"><span class="hl-operator">Do</span> you <span class="hl-main-verb">like</span> music?</span> <span class="pl">Czy lubisz muzykę?</span> Rozmowa o zainteresowaniach.</p>
+</div>
+<div class="przyklad">
+<p>&#8203;<span class="tag">pytanie</span> <span class="eng"><span class="hl-operator">Does</span> she <span class="hl-main-verb">like</span> music?</span> <span class="pl">Czy ona lubi muzykę?</span></p>
+</div>
+<div class="przyklad">
+<p>&#8203;<span class="tag">pytanie (przeszłość)</span> <span class="eng"><span class="hl-operator">Did</span> they <span class="hl-main-verb">go</span> home?</span> <span class="pl">Czy oni poszli do domu?</span></p>
+</div>
+</section>
+<section id="s20">
+<div class="part-heading"><span class="part-num">15</span> DO – przeczenie</div>
+<p><strong>Schemat:</strong> podmiot + don't / doesn't / didn't + czasownik podstawowy</p>
+<div class="przyklad">
+<p>&#8203;<span class="tag">przeczenie</span> <span class="eng">I <span class="hl-operator">don't</span> <span class="hl-main-verb">like</span> coffee.</span> <span class="pl">Nie lubię kawy.</span> Ktoś mówi o swojej preferencji.</p>
+</div>
+<div class="przyklad">
+<p>&#8203;<span class="tag">przeczenie</span> <span class="eng">She <span class="hl-operator">doesn't</span> <span class="hl-main-verb">like</span> coffee.</span> <span class="pl">Ona nie lubi kawy.</span></p>
+</div>
+</section>
+<section id="s21">
+<div class="part-heading"><span class="part-num">16</span> DO – krótkie odpowiedzi</div>
+<ul>
+<li><em>Do you like football?</em> → <em>Yes, I do.</em> / <em>No, I don't.</em></li>
+<li><em>Does she study English?</em> → <em>Yes, she does.</em> / <em>No, she doesn't.</em></li>
+<li><em>Did they go home?</em> → <em>Yes, they did.</em> / <em>No, they didn't.</em></li>
+</ul>
+</section>
+<section id="s22">
+<div class="part-heading"><span class="part-num">17</span> Ćwiczenia z DO (tłumaczenie PL→EN)</div>
+<p><strong>Przetłumacz na angielski. Użyj DO. <span class="level-badge level-basic">PODSTAWA</span></strong></p>
+<ol>
+<li>Czy lubisz muzykę?</li>
+<li>Ona nie lubi kawy.</li>
+<li>Czy oni poszli do domu?</li>
+<li>Czy twój brat gra w piłkę?</li>
+<li>Nie odrabiam pracy domowej codziennie.</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Użyj do/does/did + forma podstawowa czasownika. 2. Sprawdź podmiot: I/you/we/they → <em>do</em>; he/she/it → <em>does</em>; przeszłość → <em>did</em>. 3. Po <em>does</em> i <em>did</em> czasownik wraca do formy podstawowej.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>Do you like music?</li>
+<li>She doesn't like coffee.</li>
+<li>Did they go home?</li>
+<li>Does your brother play football?</li>
+<li>I don't do my homework every day.</li>
+</ol>
+</details>
+<p><strong>Wybierz DO, DOES lub DID <span class="level-badge level-understand">TRENING</span></strong></p>
+<ol>
+<li>_____ you like swimming?</li>
+<li>_____ she play the guitar?</li>
+<li>_____ they go to the cinema yesterday?</li>
+<li>What _____ you do last weekend?</li>
+<li>Where _____ your parents live?</li>
+<li>_____ he have a car?</li>
+</ol>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li><strong>Do</strong></li>
+<li><strong>Does</strong></li>
+<li><strong>Did</strong></li>
+<li><strong>did</strong></li>
+<li><strong>do</strong></li>
+<li><strong>Does</strong></li>
+</ol>
+</details>
+</section>
+<section id="s23">
+<div class="part-heading"><span class="part-num">4</span> Złota zasada i porównania</div>
+</section>
+<section id="s24">
+<div class="part-heading"><span class="part-num">18</span> Najważniejsza zasada: DOES / DID + FORMA PODSTAWOWA</div>
+<div class="card card-warning">
+<span class="card-label">To jedna z najważniejszych zasad egzaminacyjnych.</span>
+
+</div>
+<ul>
+<li><span class="error-text">She likes music.</span> → <span class="correct-text">Does she like music?</span> ✗ <span class="error-text">Does she likes?</span> ✓ <span class="correct-text">Does she like?</span></li>
+<li><span class="error-text">He went home.</span> → <span class="correct-text">Did he go home?</span> ✗ <span class="error-text">Did he went?</span> ✓ <span class="correct-text">Did he go?</span></li>
+<li><span class="error-text">She has a brother.</span> → <span class="correct-text">Does she have a brother?</span> ✗ <span class="error-text">Does she has?</span> ✓ <span class="correct-text">Does she have?</span></li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">Zasada</span>
+<p>Po <strong>do / does / did</strong> czasownik wraca do <strong>formy podstawowej</strong>.</p>
+</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Twierdzenie</th><th>Pytanie</th></tr></thead>
+<tbody>
+<tr><td>She likes</td><td>Does she like?</td></tr>
+<tr><td>He plays</td><td>Does he play?</td></tr>
+<tr><td>She has</td><td>Does she have?</td></tr>
+<tr><td>He goes</td><td>Does he go?</td></tr>
+<tr><td>She went</td><td>Did she go?</td></tr>
+<tr><td>He studied</td><td>Did he study?</td></tr>
+</tbody></table></div>
+</section>
+<section id="s25">
+<div class="part-heading"><span class="part-num">19</span> BE i DO obok siebie – porównanie stanu i czynności</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Stan (BE)</th><th>Czynność (DO)</th></tr></thead>
+<tbody>
+<tr><td>She is tired.</td><td>She likes music.</td></tr>
+<tr><td>Is she tired?</td><td>Does she like music?</td></tr>
+<tr><td>She isn't tired.</td><td>She doesn't like music.</td></tr>
+<tr><td>Yes, she is.</td><td>Yes, she does.</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Stan (BE)</th><th>Czynność (DO)</th></tr></thead>
+<tbody>
+<tr><td>He is happy.</td><td>He plays football.</td></tr>
+<tr><td>Is he happy?</td><td>Does he play football?</td></tr>
+<tr><td>He isn't happy.</td><td>He doesn't play football.</td></tr>
+<tr><td>They are at home.</td><td>They watch TV.</td></tr>
+<tr><td>Are they at home?</td><td>Do they watch TV?</td></tr>
+<tr><td>They aren't at home.</td><td>They don't watch TV.</td></tr>
+<tr><td>She was tired.</td><td>She went home.</td></tr>
+<tr><td>Was she tired?</td><td>Did she go home?</td></tr>
+<tr><td>She wasn't tired.</td><td>She didn't go home.</td></tr>
+</tbody></table></div>
+</section>
+<section id="s26">
+<div class="part-heading"><span class="part-num">20</span> HAVE – szczególny przypadek</div>
+<p>&#8203;<em>Have</em> może być zwykłym czasownikiem.</p>
+<ul>
+<li><em>She has a brother.</em></li>
+<li><span class="error-text">Does she has a brother?</span> → <span class="correct-text">Does she have a brother?</span></li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">HAVE – najważniejsza zasada</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Forma</th><th>Przykład</th><th>Co się dzieje?</th></tr></thead>
+<tbody>
+<tr><td><strong>Twierdzenie</strong></td><td>She <span class="hl-main-verb">has</span> a dog.</td><td><strong>has</strong> odpowiada podmiotowi <em>she</em>.</td></tr>
+<tr><td><strong>Błąd</strong></td><td><span class="error-text">Does she has a dog?</span></td><td>Po <strong>does</strong> nie używamy formy <em>has</em>.</td></tr>
+<tr><td><strong>Poprawne pytanie</strong></td><td><span class="hl-operator">Does</span> she <span class="hl-main-verb">have</span> a dog?</td><td><strong>does</strong> wskazuje trzecią osobę, więc zostaje podstawowa forma <strong>have</strong>.</td></tr>
+<tr><td><strong>Przeczenie</strong></td><td>She <span class="hl-operator">doesn't</span> <span class="hl-main-verb">have</span> a dog.</td><td>Po <strong>doesn't</strong> również używamy formy <strong>have</strong>.</td></tr>
+<tr><td><strong>Przeszłość</strong></td><td><span class="hl-operator">Did</span> she <span class="hl-main-verb">have</span> a dog?</td><td><strong>did</strong> wskazuje czas przeszły, a <strong>have</strong> pozostaje w formie podstawowej.</td></tr>
+</tbody></table></div>
+<p><strong>Zapamiętaj:</strong> w twierdzeniu mówimy <em>she has</em>, ale po <em>does</em>, <em>doesn't</em> i <em>did</em> zawsze używamy <em>have</em>.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">HAVE a HAVE GOT</span>
+<p>Obie konstrukcje mogą oznaczać posiadanie. <strong>Have got</strong> jest szczególnie częste w nieformalnym brytyjskim angielskim.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Twierdzenie</th><th>Pytanie</th><th>Przeczenie</th></tr></thead>
+<tbody>
+<tr><td><strong>have</strong></td><td><em>You have a dog.</em></td><td><em>Do you have a dog?</em></td><td><em>You don't have a dog.</em></td></tr>
+<tr><td><strong>have got</strong></td><td><em>You've got a dog.</em></td><td><em>Have you got a dog?</em></td><td><em>You haven't got a dog.</em></td></tr>
+</tbody></table></div>
+<p><strong>Nie łącz obu schematów:</strong> <span class="error-text">Do you have got a dog?</span></p>
+</div>
+</section>
+<section id="s27">
+<div class="part-heading"><span class="part-num">21</span> DO jako czasownik główny</div>
+<p>&#8203;<em>DO</em> również może być zwykłym czasownikiem.</p>
+<ul>
+<li><em>I do my homework.</em> → <em>do</em> = robić / odrabiać</li>
+<li><em>Do you do your homework?</em> (pierwsze <em>do</em> = operator, drugie = czasownik główny)</li>
+</ul>
+</section>
+<section id="s28">
+<div class="part-heading"><span class="part-num">22</span> Podwójne DO <span class="level-badge level-extra">DLA AMBITNYCH</span></div>
+<div class="card card-basic">
+<span class="card-label">DO jako operator i czasownik główny</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Zdanie</th><th>Funkcja DO</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-operator">Do</span> you <span class="hl-main-verb">do</span> your homework?</td><td>Pierwsze <strong>do</strong> to operator, drugie to czasownik główny.</td><td><em>Czy odrabiasz pracę domową?</em></td></tr>
+<tr><td><span class="hl-operator">Does</span> she <span class="hl-main-verb">do</span> the dishes?</td><td><strong>does</strong> to operator, <strong>do</strong> to czasownik główny.</td><td><em>Czy ona zmywa naczynia?</em></td></tr>
+<tr><td>They <span class="hl-main-verb">do</span> their best.</td><td><strong>do</strong> to czasownik główny; w twierdzeniu nie ma operatora.</td><td><em>Oni robią, co mogą.</em></td></tr>
+<tr><td><span class="hl-operator">Did</span> you <span class="hl-main-verb">do</span> the shopping?</td><td><strong>did</strong> to operator, <strong>do</strong> to czasownik główny.</td><td><em>Czy zrobiłeś zakupy?</em></td></tr>
+</tbody></table></div>
+<p>&#8203;<span class="hl-operator">Niebieski</span> oznacza operator, a <span class="hl-main-verb">złoty</span> czasownik główny.</p>
+</div>
+</section>
+<section id="s29">
+<div class="part-heading"><span class="part-num">23</span> Podwójne HAVE <span class="level-badge level-extra">DLA AMBITNYCH</span></div>
+<div class="card card-extra">
+<span class="card-label">HAVE jako operator i czasownik główny</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Zdanie</th><th>Funkcja HAVE</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td><span class="hl-operator">Have</span> you ever <span class="hl-main-verb">had</span> a pet?</td><td><strong>have</strong> to operator Present Perfect, a <strong>had</strong> to czasownik główny.</td><td><em>Czy kiedykolwiek miałeś zwierzę?</em></td></tr>
+<tr><td>She <span class="hl-operator">has</span> <span class="hl-main-verb">had</span> three jobs.</td><td><strong>has</strong> to operator, a <strong>had</strong> to czasownik główny.</td><td><em>Ona miała dotąd trzy prace.</em></td></tr>
+<tr><td>I <span class="hl-operator">had</span> already <span class="hl-main-verb">had</span> lunch.</td><td>Pierwsze <strong>had</strong> to operator Past Perfect, a drugie to czasownik główny.</td><td><em>Zjadłem już obiad.</em></td></tr>
+<tr><td><span class="hl-operator">Has</span> she <span class="hl-main-verb">had</span> breakfast yet?</td><td><strong>has</strong> to operator, a <strong>had</strong> to czasownik główny.</td><td><em>Czy ona jadła już śniadanie?</em></td></tr>
+</tbody></table></div>
+<p>Na tym etapie wystarczy rozpoznawać, że pierwsza forma HAVE buduje czas Perfect, a druga niesie znaczenie „mieć” lub jest częścią wyrażenia <em>have a meal</em>.</p>
+</div>
+</section>
+<section id="s30">
+<div class="part-heading"><span class="part-num">5</span> Pytania szczegółowe</div>
+</section>
+<section id="s31">
+<div class="part-heading">Jak BE i DO pojawiają się na egzaminie E8?</div>
+<div class="card card-basic">
+<span class="card-label">Zadania egzaminacyjne</span>
+<p>Arkusz z języka angielskiego sprawdza rozumienie ze słuchu, znajomość funkcji językowych, rozumienie tekstów pisanych, znajomość środków językowych oraz tworzenie wypowiedzi pisemnej.</p>
+<p>Konstrukcje z <strong>BE</strong> i <strong>DO</strong> są szczególnie ważne przy uzupełnianiu luk, przekształcaniu zdań, tłumaczeniu fragmentów oraz samodzielnym tworzeniu pytań i przeczeń.</p>
+<p>Na stronach poszczególnych roczników CKE publikuje arkusze, zasady oceniania, transkrypcje i nagrania do zadań ze słuchania.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Jak pracować z nagraniem egzaminacyjnym?</span>
+<ol>
+<li><strong>Słuchanie i decyzja:</strong> rozpoznaj, czy pytanie wykorzystuje BE, czy DO.</li>
+<li><strong>Słuchanie i analiza:</strong> zapisz usłyszane pytanie, a następnie sprawdź szyk w transkrypcji.</li>
+<li><strong>Własna wypowiedź:</strong> ułóż podobne pytanie, zmieniając osobę, czas lub temat.</li>
+</ol>
+<p>Do systematycznego ćwiczenia jednej konstrukcji używaj krótkich nagrań w tej lekcji. Pełne nagrania CKE wykorzystuj do treningu rozumienia wypowiedzi w szerszym kontekście.</p>
+</div>
+</section>
+<section id="s32">
+<div class="part-heading"><span class="part-num">24</span> Pytania z WH-words</div>
+<p>Najważniejsze słowa pytające: what, where, when, why, who, which, whose, how</p>
+<h3>WH + BE</h3>
+<ul>
+<li><em>Where are you?</em></li>
+<li><em>Why is she tired?</em></li>
+<li><em>When were they at school?</em></li>
+<li><em>Which book is yours?</em></li>
+<li><em>Whose bag is this?</em></li>
+</ul>
+<h3>WH + DO</h3>
+<ul>
+<li><em>Where do you live?</em></li>
+<li><em>What does she like?</em></li>
+<li><em>Why did he leave?</em></li>
+<li><em>Which one do you want?</em></li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>WH-word</th><th>Przykład z BE</th><th>Przykład z DO</th></tr></thead>
+<tbody>
+<tr><td><strong>what</strong></td><td><em>What is your name?</em></td><td><em>What do you like?</em></td></tr>
+<tr><td><strong>where</strong></td><td><em>Where are you?</em></td><td><em>Where do you live?</em></td></tr>
+<tr><td><strong>when</strong></td><td><em>When is the party?</em></td><td><em>When do you leave?</em></td></tr>
+<tr><td><strong>why</strong></td><td><em>Why is she tired?</em></td><td><em>Why did he leave?</em></td></tr>
+<tr><td><strong>who</strong></td><td><em>Who is your teacher?</em></td><td><em>Who do you like?</em></td></tr>
+<tr><td><strong>which</strong></td><td><em>Which book is yours?</em></td><td><em>Which one do you want?</em></td></tr>
+<tr><td><strong>whose</strong></td><td><em>Whose bag is this?</em></td><td><em>Whose book do you want?</em></td></tr>
+<tr><td><strong>how</strong></td><td><em>How are you?</em></td><td><em>How do you do it?</em></td></tr>
+</tbody></table></div>
+<p>Słowo pytające nie wybiera operatora. Najpierw sprawdź, czy w zdaniu potrzebujesz BE, czy zwykłego czasownika z DO.</p>
+</section>
+<section id="s33">
+<div class="part-heading"><span class="part-num">25</span> WHO – najważniejsza pułapka</div>
+<p><strong>Kogo lubisz?</strong> → <em>Who do you like?</em> (tu <em>you</em> = podmiot, potrzebujemy <em>do</em>)</p>
+<p><strong>Kto lubi muzykę?</strong> → <em>Who likes music?</em> (tu <em>who</em> = podmiot, nie potrzebujemy DO) <span class="error-text">Who does like music?</span></p>
+<div class="card card-warning">
+<span class="card-label">Zapamiętaj</span>
+<ul>
+<li>WHO = kto wykonuje czynność? → <em>Who plays football?</em></li>
+<li>WHO = kogo / co? → <em>Who do you like?</em></li>
+</ul>
+</div>
+</section>
+<section id="s34">
+<div class="part-heading"><span class="part-num">26</span> What time / How often / How much / How many</div>
+<h3>What time</h3>
+<ul>
+<li><em>What time do you get up?</em></li>
+<li><em>What time are we meeting?</em></li>
+</ul>
+<h3>How often TRUDNE DLA WIELU</h3>
+<ul>
+<li><em>How often do you play football?</em></li>
+<li><em>How often does she go swimming?</em></li>
+</ul>
+<p><strong>Wzór:</strong> <em>How often + do/does/did + podmiot + czasownik podstawowy?</em></p>
+<h3>How much</h3>
+<ul>
+<li><em>How much is it?</em> (cena)</li>
+<li><em>How much water do you drink?</em> (niepoliczalne)</li>
+</ul>
+<h3>How many</h3>
+<ul>
+<li><em>How many brothers do you have?</em> (policzalne)</li>
+<li><em>How many students are there?</em></li>
+</ul>
+</section>
+<section id="s35">
+<div class="part-heading"><span class="part-num">27</span> There is / There are</div>
+<p>Konstrukcja używa <strong>BE</strong>.</p>
+<ul>
+<li><em>There is a computer in the room.</em></li>
+<li><em>There are twenty students in the classroom.</em></li>
+<li><em>Is there a computer?</em> / <em>Are there any students?</em></li>
+<li><em>There isn't a computer.</em> / <em>There aren't any students.</em></li>
+</ul>
+<p>&#8203;<span class="error-text">Does there is a computer?</span></p>
+</section>
+<section id="s36">
+<div class="part-heading"><span class="part-num">28</span> Krótkie odpowiedzi – zasady</div>
+<ul>
+<li>Operator odpowiedzi = operator pytania.</li>
+<li>Nie powtarzamy całego czasownika głównego.</li>
+</ul>
+<p><strong>BE</strong> → <em>Yes, I am.</em> / <em>No, she isn't.</em><br> <strong>DO</strong> → <em>Yes, I do.</em> / <em>No, she doesn't.</em><br> <strong>DID</strong> → <em>Yes, they did.</em> / <em>No, they didn't.</em></p>
+</section>
+<section id="s37">
+<div class="part-heading"><span class="part-num">29</span> DO w zdaniu twierdzącym – podkreślenie</div>
+<ul>
+<li><em>I like this book.</em> = Lubię tę książkę.</li>
+<li><em>I do like this book!</em> = Naprawdę lubię tę książkę!</li>
+<li><em>She does understand you.</em> = Ona naprawdę cię rozumie.</li>
+</ul>
+</section>
+<section id="s38">
+<div class="part-heading"><span class="part-num">30</span> Jak zbudować pytanie krok po kroku?</div>
+<ol>
+<li>Znajdź czasownik i określ czas zdania.</li>
+<li>Sprawdź, czy zdanie ma BE albo inny operator, np. <em>can, must, will, have</em>.</li>
+<li>Jeśli operator już jest, przesuń go przed podmiot. Nie dodawaj DO.</li>
+<li>Jeśli operatora nie ma, wybierz <em>do / does / did</em>.</li>
+<li>Po <em>does / did</em> czasownik wraca do formy podstawowej.</li>
+<li>Jeśli pytasz o szczegół, dodaj właściwy WH-word na początku.</li>
+</ol>
+</section>
+<section id="s39">
+<div class="part-heading"><span class="part-num">31</span> Szybki algorytm egzaminacyjny</div>
+<ol>
+<li>Znajdź czasownik i czas zdania.</li>
+<li>BE lub inny operator już jest → przesuń go przed podmiot.</li>
+<li>Brak operatora + zwykły czasownik w Simple → wybierz <em>do / does / did</em>.</li>
+<li>Po <em>does / did</em> użyj formy podstawowej.</li>
+<li>WH-word dodaj na początku gotowego pytania.</li>
+</ol>
+<p><strong>Ułóż pytanie do odpowiedzi <span class="level-badge level-exam">EGZAMIN</span></strong></p>
+<ol>
+<li>Odpowiedź: <em>I live in Kraków.</em><br>Pytanie: ______________________________</li>
+<li>Odpowiedź: <em>She likes pop music.</em><br>Pytanie: ______________________________</li>
+<li>Odpowiedź: <em>They went to the cinema.</em><br>Pytanie: ______________________________</li>
+<li>Odpowiedź: <em>She is tired because she worked hard.</em><br>Pytanie: ______________________________</li>
+</ol>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li><strong>Where do you live?</strong></li>
+<li><strong>What kind of music does she like?</strong></li>
+<li><strong>Where did they go?</strong></li>
+<li><strong>Why is she tired?</strong></li>
+</ol>
+</details>
+</section>
+<section id="s40">
+<div class="part-heading"><span class="part-num">6</span> Bank konstrukcji</div>
+</section>
+<section id="s41">
+<div class="part-heading"><span class="part-num">32</span> Bank konstrukcji – ucz się konstrukcji, nie pojedynczych słów</div>
+<div class="card card-basic">
+<span class="card-label">Zasada</span>
+<p>Nie ucz się: <span class="error-text">are = jesteś</span><br> Ucz się: <span class="correct-text">Are you...?</span></p>
+<p>Nie ucz się: <span class="error-text">do = robić</span><br> Ucz się: <span class="correct-text">Do you...?</span></p>
+<p>Nie ucz się: <span class="error-text">does = robi</span><br> Ucz się: <span class="correct-text">Does she...?</span></p>
+<p>Nie ucz się: <span class="error-text">how = jak</span><br> Ucz się: <span class="correct-text">How often do you...?</span></p>
+</div>
+<div class="card">
+<span class="card-label">Konstrukcje egzaminacyjne</span>
+<p>Are you...? Czy jesteś...?</p>
+<div class="przyklad">
+<p>&#8203;<span class="eng">Are you tired?</span> <span class="pl">Czy jesteś zmęczony?</span></p>
+</div>
+<p>Do you...? Czy ...?</p>
+<div class="przyklad">
+<p>&#8203;<span class="eng">Do you like music?</span> <span class="pl">Czy lubisz muzykę?</span></p>
+</div>
+<p>Does she...? Czy ona...?</p>
+<div class="przyklad">
+<p>&#8203;<span class="eng">Does she like music?</span> <span class="pl">Czy ona lubi muzykę?</span></p>
+</div>
+<p>Did they...? Czy oni...?</p>
+<div class="przyklad">
+<p>&#8203;<span class="eng">Did they go home?</span> <span class="pl">Czy oni poszli do domu?</span></p>
+</div>
+<p>Where do you...? Gdzie...?</p>
+<div class="przyklad">
+<p>&#8203;<span class="eng">Where do you live?</span> <span class="pl">Gdzie mieszkasz?</span></p>
+</div>
+<p>How often do you...? Jak często...?</p>
+<div class="przyklad">
+<p>&#8203;<span class="eng">How often do you play?</span> <span class="pl">Jak często grasz?</span></p>
+</div>
+<p>Who likes...? Kto lubi...?</p>
+<div class="przyklad">
+<p>&#8203;<span class="eng">Who likes football?</span> <span class="pl">Kto lubi piłkę?</span></p>
+</div>
+<p>Who do you...? Kogo...?</p>
+<div class="przyklad">
+<p>&#8203;<span class="eng">Who do you like?</span> <span class="pl">Kogo lubisz?</span></p>
+</div>
+</div>
+</section>
+<section id="s42">
+<div class="part-heading">Fiszki – najważniejsze konstrukcje</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Do you like...?</span><span class="back">Czy lubisz...?<br><small>DO + you + forma podstawowa</small></span></button><button class="flashcard" type="button"><span class="front">Are you ready?</span><span class="back">Czy jesteś gotowy?<br><small>BE przed podmiotem</small></span></button><button class="flashcard" type="button"><span class="front">Does she play...?</span><span class="back">Czy ona gra...?<br><small>Po DOES: play, nie plays</small></span></button><button class="flashcard" type="button"><span class="front">Did they go...?</span><span class="back">Czy oni poszli...?<br><small>Po DID: go, nie went</small></span></button><button class="flashcard" type="button"><span class="front">Who likes...?</span><span class="back">Kto lubi...?<br><small>WHO jest podmiotem: bez DO</small></span></button><button class="flashcard" type="button"><span class="front">Who do you like?</span><span class="back">Kogo lubisz?<br><small>WHO jest dopełnieniem: użyj DO</small></span></button><button class="flashcard" type="button"><span class="front">Are there any...?</span><span class="back">Czy są jakieś...?<br><small>THERE ARE w pytaniu</small></span></button><button class="flashcard" type="button"><span class="front">Have you got...?</span><span class="back">Czy masz...?<br><small>Nie dodawaj DO do HAVE GOT</small></span></button></div>
+</section>
+<section id="s43">
+<div class="part-heading"><span class="part-num">7</span> Ćwiczenia</div>
+</section>
+<section id="s44">
+<div class="part-heading"><span class="part-num">33</span> Tip tygodnia – cztery formy jednego czasownika</div>
+<div class="card card-warning">
+<span class="card-label">LIKE</span>
+<p>Twierdzenie: <em>She likes music.</em><br> Przeczenie: <em>She doesn't like music.</em><br> Pytanie: <em>Does she like music?</em><br> Krótka odpowiedź: <em>Yes, she does.</em> / <em>No, she doesn't.</em></p>
+</div>
+<p><strong>Twoja kolej – PLAY <span class="level-badge level-basic">PODSTAWA</span></strong></p>
+<p>Użyj: <em>he + play + football</em></p>
+<ul>
+<li>Twierdzenie: _______________________________</li>
+<li>Przeczenie: _______________________________</li>
+<li>Pytanie: _______________________________</li>
+<li>Krótka odpowiedź: _______________________________</li>
+</ul>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Pamiętaj: w 3. osobie l.poj. dodajemy -s w twierdzeniu. 2. W pytaniu i przeczeniu używamy <em>does</em> + forma podstawowa. 3. Krótka odpowiedź powtarza operator: <em>Yes, he does.</em> / <em>No, he doesn't.</em></li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ul>
+<li>He plays football.</li>
+<li>He doesn't play football.</li>
+<li>Does he play football?</li>
+<li>Yes, he does. / No, he doesn't.</li>
+</ul>
+</details>
+</section>
+<section id="s45">
+<div class="part-heading"><span class="part-num">34</span> Poziom A – Rozpoznaj operator</div>
+<p><strong>Wybierz poprawny operator. <span class="level-badge level-basic">PODSTAWA</span></strong></p>
+<ol>
+<li>_____ you tired? (Are / Do)</li>
+<li>_____ she like music? (Is / Does)</li>
+<li>_____ they at school? (Are / Do)</li>
+<li>_____ he play tennis? (Is / Does)</li>
+<li>_____ you have a brother? (Are / Do)</li>
+<li>_____ she your sister? (Is / Does)</li>
+<li>_____ they go to school yesterday? (Did / Were)</li>
+<li>_____ they at school yesterday? (Did / Were)</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Sprawdź, czy czasownik to BE (am/is/are/was/were). 2. Jeśli nie – użyj DO/DOES/DID. 3. Pamiętaj o czasie: teraźniejszość → do/does, przeszłość → did.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>Are</li>
+<li>Does</li>
+<li>Are</li>
+<li>Does</li>
+<li>Do</li>
+<li>Is</li>
+<li>Did</li>
+<li>Were</li>
+</ol>
+</details>
+</section>
+<section id="s46">
+<div class="part-heading"><span class="part-num">35</span> Poziom B – Uzupełnij</div>
+<p><strong>Uzupełnij lukę odpowiednim operatorem. <span class="level-badge level-understand">TRENING</span></strong></p>
+<ol>
+<li>She _____ not like coffee.</li>
+<li>_____ your brother play football?</li>
+<li>We _____ students.</li>
+<li>_____ he have a dog?</li>
+<li>They _____ at home yesterday.</li>
+<li>She _____ tired yesterday.</li>
+<li>_____ you live in Poland?</li>
+<li>My parents _____ at work.</li>
+<li>_____ your teacher nice?</li>
+<li>He _____ not understand the question.</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Zidentyfikuj czasownik: czy to BE, czy zwykły czasownik? 2. Jeśli zwykły – użyj do/does/did. 3. Sprawdź osobę i czas.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>does</li>
+<li>Does</li>
+<li>are</li>
+<li>Does</li>
+<li>were</li>
+<li>was</li>
+<li>Do</li>
+<li>are</li>
+<li>Is</li>
+<li>does</li>
+</ol>
+</details>
+</section>
+<section id="s47">
+<div class="part-heading"><span class="part-num">36</span> Poziom C – Zamień na pytanie i przeczenie</div>
+<p><strong>Przekształć zdanie na pytanie i przeczenie. <span class="level-badge level-understand">TRENING</span></strong></p>
+<ol>
+<li><em>She likes music.</em><br>Pytanie: ___________________<br>Przeczenie: ___________________</li>
+<li><em>They are at home.</em><br>Pytanie: ___________________<br>Przeczenie: ___________________</li>
+<li><em>He went to school.</em><br>Pytanie: ___________________<br>Przeczenie: ___________________</li>
+<li><em>She has a dog.</em><br>Pytanie: ___________________<br>Przeczenie: ___________________</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Pytanie: operator przed podmiot. 2. Przeczenie: operator + not (lub skrót). 3. Po <em>does</em> i <em>did</em> czasownik wraca do formy podstawowej.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>Does she like music? / She doesn't like music.</li>
+<li>Are they at home? / They aren't at home.</li>
+<li>Did he go to school? / He didn't go to school.</li>
+<li>Does she have a dog? / She doesn't have a dog.</li>
+</ol>
+</details>
+</section>
+<section id="s48">
+<div class="part-heading"><span class="part-num">37</span> Poziom D – Znajdź i popraw błąd</div>
+<p><strong>Popraw błędne zdania. <span class="level-badge level-exam">EGZAMIN</span></strong></p>
+<ol>
+<li><span class="error-text">Do you are happy?</span> → <span class="correct-text">Are you happy?</span></li>
+<li><span class="error-text">She doesn't likes pizza.</span> → <span class="correct-text">She doesn't like pizza.</span></li>
+<li><span class="error-text">Did he went home?</span> → <span class="correct-text">Did he go home?</span></li>
+<li><span class="error-text">Does she has a dog?</span> → <span class="correct-text">Does she have a dog?</span></li>
+<li><span class="error-text">Where you live?</span> → <span class="correct-text">Where do you live?</span></li>
+<li><span class="error-text">Are they like football?</span> → <span class="correct-text">Do they like football?</span></li>
+<li><span class="error-text">Does he plays tennis?</span> → <span class="correct-text">Does he play tennis?</span></li>
+<li><span class="error-text">Did she was tired?</span> → <span class="correct-text">Was she tired?</span></li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Szukaj łączenia DO z BE – to zawsze błąd. 2. Po <em>does/did</em> czasownik musi być w formie podstawowej. 3. W pytaniach WH + zwykły czasownik potrzebujesz DO.</li>
+</ol>
+</details>
+<p><strong>1.</strong> Do + are = błąd — BE samo tworzy pytanie.</p>
+<p><strong>2.</strong> Po doesn't używamy formy podstawowej: <span class="error-text">likes</span> → <span class="correct-text">like</span></p>
+<p><strong>3.</strong> Po did używamy formy podstawowej: <span class="error-text">went</span> → <span class="correct-text">go</span></p>
+<p><strong>4.</strong> Po does używamy formy podstawowej: <span class="error-text">has</span> → <span class="correct-text">have</span></p>
+<p><strong>5.</strong> W pytaniu WH + zwykły czasownik potrzebujemy DO: <span class="error-text">Where you live?</span> → <span class="correct-text">Where do you live?</span></p>
+<p><strong>6.</strong> Like to zwykły czasownik → DO, nie BE.</p>
+<p><strong>7.</strong> Po does forma podstawowa: <span class="error-text">plays</span> → <span class="correct-text">play</span></p>
+<p><strong>8.</strong> BE samo tworzy pytanie: <span class="error-text">Did she was?</span> → <span class="correct-text">Was she?</span></p>
+</section>
+<section id="s49">
+<div class="part-heading"><span class="part-num">38</span> Poziom E – Krótkie odpowiedzi</div>
+<p><strong>Uzupełnij krótką odpowiedź. <span class="level-badge level-exam">EGZAMIN</span></strong></p>
+<ol>
+<li>Do you study English? – Yes, __________.</li>
+<li>Is she your sister? – No, __________.</li>
+<li>Did they go to the cinema? – Yes, __________.</li>
+<li>Are you ready? – No, __________.</li>
+<li>Does he live near the school? – No, __________.</li>
+<li>Were they at home? – Yes, __________.</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Krótka odpowiedź powtarza operator z pytania. 2. Dla <em>do</em> → <em>do/don't</em>; dla <em>does</em> → <em>does/doesn't</em>; dla <em>did</em> → <em>did/didn't</em>. 3. Dla <em>are</em> → <em>am/aren't</em>; dla <em>is</em> → <em>is/isn't</em>; dla <em>were</em> → <em>were/weren't</em>.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>I do</li>
+<li>she isn't</li>
+<li>they did</li>
+<li>I'm not</li>
+<li>he doesn't</li>
+<li>they were</li>
+</ol>
+</details>
+</section>
+<section id="s50">
+<div class="part-heading"><span class="part-num">39</span> Poziom F – WH-questions</div>
+<p><strong>Uzupełnij pytanie odpowiednim operatorem. <span class="level-badge level-exam">EGZAMIN</span></strong></p>
+<ol>
+<li>Where _____ you live?</li>
+<li>What _____ she like?</li>
+<li>Why _____ he tired?</li>
+<li>When _____ they arrive?</li>
+<li>Where _____ she yesterday?</li>
+<li>What _____ you do at weekends?</li>
+<li>Why _____ they at home?</li>
+<li>Where _____ your brother work?</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>WH-word + operator + podmiot + reszta? 2. Operator zależy od czasownika: BE lub DO. 3. Pamiętaj o czasie i osobie.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>do</li>
+<li>does</li>
+<li>is</li>
+<li>did</li>
+<li>was</li>
+<li>do</li>
+<li>are</li>
+<li>does</li>
+</ol>
+</details>
+</section>
+<section id="s51">
+<div class="part-heading"><span class="part-num">40</span> Poziom G – Main verb czy auxiliary? <span class="level-badge level-extra">DLA AMBITNYCH</span></div>
+<p><strong>Określ, czy podkreślone słowo to czasownik główny (main) czy posiłkowy (aux).</strong></p>
+<ol>
+<li><em>I <u>do</u> my homework every day.</em> → __________</li>
+<li><em><u>Do</u> you like coffee?</em> → __________</li>
+<li><em>She <u>has</u> a brother.</em> → __________</li>
+<li><em>She <u>has</u> finished her work.</em> → __________</li>
+<li><em>They <u>are</u> playing football now.</em> → __________</li>
+<li><em>They <u>are</u> at home.</em> → __________</li>
+<li><em>What <u>do</u> you <u>do</u> in your free time?</em> → __________ / __________</li>
+<li><em><u>Have</u> you ever <u>had</u> a pet?</em> → __________ / __________</li>
+</ol>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>main</li>
+<li>aux</li>
+<li>main</li>
+<li>aux</li>
+<li>aux</li>
+<li>main</li>
+<li>pierwsze: aux, drugie: main</li>
+<li>Have: aux, had: main</li>
+</ol>
+</details>
+</section>
+<section id="s52">
+<div class="part-heading"><span class="part-num">41</span> Ćwiczenie specjalne – WHO</div>
+<p><strong>Wybierz poprawne pytanie. PUŁAPKA E8</strong></p>
+<ol>
+<li>Kto lubi piłkę nożną?<br>A. <span class="error-text">Who does like football?</span> B. <span class="correct-text">Who likes football?</span></li>
+<li>Kogo lubisz?<br>A. <span class="correct-text">Who do you like?</span> B. <span class="error-text">Who you like?</span></li>
+<li>Kto mieszka tutaj?<br>A. <span class="error-text">Who does live here?</span> B. <span class="correct-text">Who lives here?</span></li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Who = podmiot → nie używamy DO: <span class="error-text">Who does like?</span> → <span class="correct-text">Who likes?</span> 2. Who = dopełnienie → potrzebujemy DO: <span class="error-text">Who you like?</span> → <span class="correct-text">Who do you like?</span> 3. Sprawdź, czy <em>who</em> jest podmiotem (kto wykonuje czynność) czy dopełnieniem (kogo).</li>
+</ol>
+</details>
+<p><strong>1.</strong> Who = podmiot → nie używamy DO: <span class="error-text">Who does like?</span> → <span class="correct-text">Who likes?</span></p>
+<p><strong>2.</strong> Who = dopełnienie → potrzebujemy DO: <span class="error-text">Who you like?</span> → <span class="correct-text">Who do you like?</span></p>
+<p><strong>3.</strong> Who = podmiot → <span class="error-text">Who does live?</span> → <span class="correct-text">Who lives?</span></p>
+</section>
+<section id="s53">
+<div class="part-heading"><span class="part-num">42</span> There is / There are</div>
+<p><strong>Uzupełnij. <span class="level-badge level-understand">TRENING</span></strong></p>
+<ol>
+<li>_____ there a computer in the room?</li>
+<li>_____ there any books on the desk?</li>
+<li>There _____ a dog in the garden.</li>
+<li>There _____ three students in the classroom.</li>
+<li>There _____ not a shop near my house.</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>There is/are używa BE. 2. <em>Is</em> dla liczby pojedynczej, <em>are</em> dla mnogiej. 3. W pytaniu BE przesuwa się przed <em>there</em>.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>Is</li>
+<li>Are</li>
+<li>is</li>
+<li>are</li>
+<li>is</li>
+</ol>
+</details>
+</section>
+<section id="s54">
+<div class="part-heading"><span class="part-num">43</span> Zadanie w formule E8 – Present Continuous</div>
+<p>PUŁAPKA E8 Present Continuous + szyk pytania</p>
+<p><strong>Sytuacja:</strong> Rozmówca pyta o czynność, która dzieje się teraz.</p>
+<p><strong>Zadanie:</strong> <em>Why ______ you waiting here?</em></p>
+<p>✓ <strong>Poprawna odpowiedź:</strong> <span class="correct-text">Why are you waiting here?</span></p>
+<p>✗ <strong>Typowy błąd:</strong> <span class="error-text">Why do you waiting here?</span></p>
+<p><strong>Dlaczego?</strong> <em>waiting</em> = czynność wykonywana teraz → używamy <strong>BE + -ing</strong>.<br> Dlatego: <span class="correct-text">are + you + waiting</span>, a nie <span class="error-text">do + you + waiting</span>.</p>
+<p>Typowa trudność: rozpoznanie, że końcówka <em>-ing</em> wymaga odpowiedniej formy BE.</p>
+<p><strong>Co zapamiętać?</strong> <br> <span class="correct-text">-ing → sprawdź BE</span></p>
+</section>
+<section id="s55">
+<div class="part-heading"><span class="part-num">44</span> Zadanie w formule E8 – How often</div>
+<p>TRUDNE DLA WIELU How often...?</p>
+<p><strong>Kontekst:</strong> Mark pyta, jak często ktoś gra w tenisa.</p>
+<p><strong>Zadanie:</strong> <em>Mark, ______ do you play tennis?</em></p>
+<p>✓ <strong>Poprawna odpowiedź:</strong> <span class="correct-text">How often do you play tennis?</span></p>
+<p>✗ <strong>Typowy błąd:</strong> <span class="error-text">How much do you play tennis?</span></p>
+<p><strong>Dlaczego?</strong> <em>How often</em> = <strong>jak często</strong>.<br> Odpowiedź: <em>Twice a week.</em> (dwa razy w tygodniu).<br> <span class="error-text">How much</span> pyta o ilość, nie o częstotliwość.</p>
+<p>Typowa trudność: odróżnienie pytania o częstotliwość od pytania o ilość.</p>
+<p><strong>Wniosek:</strong> <br> <span class="correct-text">How often + DO + podmiot + czasownik?</span></p>
+</section>
+<section id="s56">
+<div class="part-heading"><span class="part-num">45</span> Co było trudne dla ósmoklasistów?</div>
+<ul>
+<li>Samodzielne budowanie pytania</li>
+<li>Szyk pytania (<span class="error-text">You are waiting?</span> zamiast <span class="correct-text">Are you waiting?</span>)</li>
+<li>Wybór operatora (<span class="error-text">do</span> zamiast <span class="correct-text">are</span> przy <em>-ing</em>)</li>
+<li>WH-question + DO (<span class="error-text">Where you live?</span> zamiast <span class="correct-text">Where do you live?</span>)</li>
+<li><em>How often</em></li>
+</ul>
+</section>
+<section id="s57">
+<div class="part-heading"><span class="part-num">46</span> Zadania treningowe wzorowane na E8</div>
+<p><strong>Uzupełnij pytania. <span class="level-badge level-exam">EGZAMIN</span></strong></p>
+<ol>
+<li><strong>Cena – how much</strong><br><em>(much) __________ are these shoes?</em> (odpowiedź: £40.)</li>
+<li><strong>Czynność trwająca – waiting</strong><br><em>Why (waiting) __________ you here?</em> (czynność odbywa się teraz)</li>
+<li><strong>Częstotliwość – how often</strong><br><em>Mark, (how) __________ do you play tennis?</em> (odpowiedź: Twice a week.)</li>
+<li><strong>Godzina – what time</strong><br><em>What (time) __________ the film start?</em> (odpowiedź: At 7 p.m.)</li>
+<li><strong>Trzecia osoba – does</strong><br><em>What __________ she do after school?</em></li>
+<li><strong>Pytanie o miejsce – do</strong><br><em>Where __________ you live?</em></li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Znajdź słowo kluczowe w nawiasie – to podpowiedź, czego użyć. 2. Sprawdź, czy pytanie dotyczy stanu (BE) czy czynności (DO). 3. Pamiętaj o szyku: WH-word + operator + podmiot + reszta.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>How much are these shoes?</li>
+<li>Why are you waiting here?</li>
+<li>How often do you play tennis?</li>
+<li>What time does the film start?</li>
+<li>What does she do after school?</li>
+<li>Where do you live?</li>
+</ol>
+</details>
+</section>
+<section id="s58">
+<div class="part-heading"><span class="part-num">47</span> Dodatkowe ćwiczenie – Present Continuous w pytaniach</div>
+<p><strong>Przekształć twierdzenia na pytania (użyj BE + -ing). <span class="level-badge level-exam">EGZAMIN</span></strong></p>
+<ol>
+<li><em>She is reading a book.</em> → ___________________</li>
+<li><em>They are playing football.</em> → ___________________</li>
+<li><em>You are waiting for the bus.</em> → ___________________</li>
+<li><em>He is sleeping.</em> → ___________________</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>BE + -ing = Present Continuous. 2. W pytaniu BE przesuwa się przed podmiot. 3. Zachowaj formę <em>-ing</em> czasownika.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>Is she reading a book?</li>
+<li>Are they playing football?</li>
+<li>Are you waiting for the bus?</li>
+<li>Is he sleeping?</li>
+</ol>
+</details>
+</section>
+<section id="s59">
+<div class="part-heading"><span class="part-num">48</span> Mini-dialogi – ćwiczenia mówione</div>
+<p><strong>Uzupełnij luki w dialogach. <span class="level-badge level-understand">TRENING</span></strong></p>
+<p><strong>Dialog 1</strong><br> A: _____ you tired?<br> B: Yes, I _____. I _____ sleep well last night.<br> A: _____ you go to bed late?<br> B: No, I _____.</p>
+<p><strong>Dialog 2</strong><br> A: _____ your sister like music?<br> B: Yes, she _____. She _____ listen to pop songs every day.<br> A: _____ she play an instrument?<br> B: No, she _____.</p>
+<p><strong>Dialog 3</strong><br> A: Where _____ you live?<br> B: I _____ in Kraków.<br> A: _____ your parents live there too?<br> B: Yes, they _____.</p>
+<p><strong>Dialog 4</strong><br> A: _____ there a cinema near your house?<br> B: No, there _____. But there _____ a nice park.<br> A: _____ you go there often?<br> B: Yes, I _____.</p>
+<p><strong>Dialog 5 – przeszłość</strong><br> A: _____ you at the concert last night?<br> B: No, I _____. I _____ at home.<br> A: _____ you watch the game on TV?<br> B: Yes, I _____. It _____ really exciting!</p>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Czytaj dialog po kolei – kontekst podpowiada operator. 2. Zwróć uwagę na czas: teraźniejszość czy przeszłość. 3. Krótkie odpowiedzi powtarzają operator.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<p><strong>Dialog 1</strong><br> A: Are you tired?<br>B: Yes, I am. I didn't sleep well last night.<br>A: Did you go to bed late?<br>B: No, I didn't.</p>
+<p><strong>Dialog 2</strong><br> A: Does your sister like music?<br>B: Yes, she does. She listens to pop songs every day.<br>A: Does she play an instrument?<br>B: No, she doesn't.</p>
+<p><strong>Dialog 3</strong><br> A: Where do you live?<br>B: I live in Kraków.<br>A: Do your parents live there too?<br>B: Yes, they do.</p>
+<p><strong>Dialog 4</strong><br> A: Is there a cinema near your house?<br>B: No, there isn't. But there is a nice park.<br>A: Do you go there often?<br>B: Yes, I do.</p>
+<p><strong>Dialog 5 – przeszłość</strong><br> A: Were you at the concert last night?<br>B: No, I wasn't. I was at home.<br>A: Did you watch the game on TV?<br>B: Yes, I did. It was really exciting!</p>
+</details>
+</section>
+<section id="s60">
+<div class="part-heading"><span class="part-num">49</span> Mini-wypowiedź</div>
+<p><strong>Napisz 4–5 zdań o sobie. PISANIE</strong></p>
+<p>Użyj: przynajmniej jednego zdania z BE, jednego z DO, jednego przeczenia, jednego pytania.</p>
+<details class="answer"><summary>Odpowiedź</summary>
+<p>&#8203;<em>I am thirteen years old. I live in Warsaw with my family. I don't have any brothers or sisters. My parents work in an office. Do you have any pets?</em></p>
+</details>
+</section>
+<section id="s61">
+<div class="part-heading"><span class="part-num">50</span> Zadanie mistrzowskie</div>
+<p><strong>Znajdź wszystkie błędy. PUŁAPKA E8</strong></p>
+<p>&#8203;<em>My sister are 14 years old. She don't like maths. Does she likes English? Yes, she do. Yesterday she were tired and didn't went to school.</em></p>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li>Sprawdź BE (am/is/are/was/were) – dopasuj do osoby. 2. Sprawdź DO (do/does/did) – po <em>does/did</em> forma podstawowa. 3. Sprawdź krótkie odpowiedzi – operator musi się zgadzać.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<p><strong>Poprawna wersja:</strong><br> <span class="correct-text">My sister is 14 years old. She doesn't like maths. Does she like English? Yes, she does. Yesterday she was tired and didn't go to school.</span></p>
+<p><strong>Wyjaśnienie błędów:</strong><br> 1. <span class="error-text">sister are</span> → <span class="correct-text">is</span> (sister = she)<br> 2. <span class="error-text">She don't</span> → <span class="correct-text">doesn't</span><br> 3. <span class="error-text">Does she likes</span> → <span class="correct-text">like</span> (po does forma podstawowa)<br> 4. <span class="error-text">Yes, she do</span> → <span class="correct-text">does</span><br> 5. <span class="error-text">she were</span> → <span class="correct-text">was</span><br> 6. <span class="error-text">didn't went</span> → <span class="correct-text">go</span></p>
+</details>
+<p><strong>Zadanie mistrzowskie – wersja dodatkowa <span class="level-badge level-extra">DLA AMBITNYCH</span></strong></p>
+<p>&#8203;<em>My parents is very kind. They doesn't like when I am late. Do they worries about me? Yes, they do. Yesterday my mother were angry and didn't said anything.</em></p>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li><em>Parents</em> to liczba mnoga, czyli <em>they</em>. 2. Po <em>do / does / did</em> używamy formy podstawowej. 3. Sprawdź osobę i czas każdej formy BE.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<p>&#8203;<span class="correct-text">My parents <strong>are</strong> very kind. They <strong>don't</strong> like when I am late. <strong>Do</strong> they <strong>worry</strong> about me? Yes, they do. Yesterday my mother <strong>was</strong> angry and didn't <strong>say</strong> anything.</span></p>
+<p><strong>Poprawione formy:</strong> <em>parents are</em>, <em>they don't</em>, <em>do they worry</em>, <em>mother was</em>, <em>didn't say</em>.</p>
+</details>
+</section>
+<section id="s62">
+<div class="part-heading"><span class="part-num">Tabele odmiany</span> BE, LIKE, GO, HAVE</div>
+</section>
+<section id="s63">
+<div class="part-heading">BE – być</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Osoba / czas</th><th>Zdanie twierdzące</th><th>Pytanie</th><th>Przeczenie</th></tr></thead>
+<tbody>
+<tr><td>I – teraźniejszość</td><td>I am tired.</td><td>Am I tired?</td><td>I am not tired.</td></tr>
+<tr><td>you / we / they – teraźniejszość</td><td>You are ready.</td><td>Are you ready?</td><td>You aren't ready.</td></tr>
+<tr><td>he / she / it – teraźniejszość</td><td>She is a student.</td><td>Is she a student?</td><td>She isn't a student.</td></tr>
+<tr><td>I / he / she / it – przeszłość</td><td>I was at home.</td><td>Was I at home?</td><td>I wasn't at home.</td></tr>
+<tr><td>you / we / they – przeszłość</td><td>They were happy.</td><td>Were they happy?</td><td>They weren't happy.</td></tr>
+</tbody></table></div>
+</section>
+<section id="s64">
+<div class="part-heading">LIKE – lubić</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Osoba</th><th>Zdanie twierdzące</th><th>Pytanie</th><th>Przeczenie</th></tr></thead>
+<tbody>
+<tr><td>I / you / we / they</td><td>I like music.</td><td>Do you like music?</td><td>I don't like music.</td></tr>
+<tr><td>he / she / it</td><td>She likes music.</td><td>Does she like music?</td><td>She doesn't like music.</td></tr>
+<tr><td>wszystkie – przeszłość</td><td>They liked music.</td><td>Did they like music?</td><td>They didn't like music.</td></tr>
+</tbody></table></div>
+<div class="card card-basic">
+<span class="card-label">Najważniejsza reguła</span>
+<p>Końcówka <strong>-s</strong> występuje tylko w zdaniu twierdzącym przy <strong>he, she, it</strong>. Po <strong>does</strong> i <strong>doesn't</strong> znika.</p>
+</div>
+</section>
+<section id="s65">
+<div class="part-heading">GO – iść / jechać</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Forma</th><th>Przykład</th><th>Tłumaczenie</th><th>Audio</th></tr></thead>
+<tbody>
+<tr><td>go</td><td>I go to school.</td><td>Chodzę do szkoły.</td><td></td></tr>
+<tr><td>goes</td><td>She goes to school.</td><td>Ona chodzi do szkoły.</td><td></td></tr>
+<tr><td>went</td><td>He went home.</td><td>On poszedł do domu.</td><td></td></tr>
+<tr><td>do ... go</td><td>Do they go home?</td><td>Czy oni idą do domu?</td><td></td></tr>
+<tr><td>does ... go</td><td>Does she go swimming?</td><td>Czy ona pływa?</td><td></td></tr>
+<tr><td>did ... go</td><td>Did he go home?</td><td>Czy on poszedł do domu?</td><td></td></tr>
+</tbody></table></div>
+</section>
+<section id="s66">
+<div class="part-heading">HAVE – mieć</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Osoba / czas</th><th>Forma</th><th>Przykład</th><th>Audio</th></tr></thead>
+<tbody>
+<tr><td>I / you / we / they</td><td>have</td><td>They have a dog.</td><td></td></tr>
+<tr><td>he / she / it</td><td>has</td><td>She has a brother.</td><td></td></tr>
+<tr><td>pytanie z DO</td><td>does ... have</td><td>Does she have a brother?</td><td></td></tr>
+<tr><td>przeszłość</td><td>had</td><td>They had a test.</td><td></td></tr>
+<tr><td>pytanie z DID</td><td>did ... have</td><td>Did they have a test?</td><td></td></tr>
+</tbody></table></div>
+<div class="card card-warning">
+<span class="card-label">Pułapka</span>
+<p>&#8203;<span class="error-text"> Does she has a dog?</span><br> <span class="correct-text"> Does she have a dog?</span></p>
+<p>Po <strong>does</strong> czasownik <em>have</em> wraca do formy podstawowej.</p>
+</div>
+</section>
+<section id="s67">
+<div class="part-heading"><span class="part-num">Słowniczek</span> 50 słówek z przykładami i wymową</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Słowo / konstrukcja</th><th>Tłumaczenie</th><th>Przykład</th><th>Tłumaczenie przykładu</th><th>Audio</th></tr></thead>
+<tbody>
+<tr><td><strong>school</strong></td><td>szkoła</td><td>I go to school every day.</td><td>Codziennie chodzę do szkoły.</td><td></td></tr>
+<tr><td><strong>classroom</strong></td><td>sala lekcyjna</td><td>Our classroom is big.</td><td>Nasza sala lekcyjna jest duża.</td><td></td></tr>
+<tr><td><strong>homework</strong></td><td>praca domowa</td><td>Do you do your homework?</td><td>Czy odrabiasz pracę domową?</td><td></td></tr>
+<tr><td><strong>teacher</strong></td><td>nauczyciel / nauczycielka</td><td>Is your teacher nice?</td><td>Czy twój nauczyciel jest miły?</td><td></td></tr>
+<tr><td><strong>student</strong></td><td>uczeń / uczennica</td><td>She is a good student.</td><td>Ona jest dobrą uczennicą.</td><td></td></tr>
+<tr><td><strong>test</strong></td><td>sprawdzian</td><td>We have a test tomorrow.</td><td>Jutro mamy sprawdzian.</td><td></td></tr>
+<tr><td><strong>exam</strong></td><td>egzamin</td><td>Are you nervous before the exam?</td><td>Czy denerwujesz się przed egzaminem?</td><td></td></tr>
+<tr><td><strong>break</strong></td><td>przerwa</td><td>We have a break now.</td><td>Mamy teraz przerwę.</td><td></td></tr>
+<tr><td><strong>subject</strong></td><td>przedmiot</td><td>What subject do you like?</td><td>Jaki przedmiot lubisz?</td><td></td></tr>
+<tr><td><strong>lesson</strong></td><td>lekcja</td><td>The lesson starts at eight.</td><td>Lekcja zaczyna się o ósmej.</td><td></td></tr>
+<tr><td><strong>class</strong></td><td>klasa</td><td>Our class is very friendly.</td><td>Nasza klasa jest bardzo koleżeńska.</td><td></td></tr>
+<tr><td><strong>school uniform</strong></td><td>mundurek szkolny</td><td>Do you wear a school uniform?</td><td>Czy nosisz mundurek szkolny?</td><td></td></tr>
+<tr><td><strong>mark / grade</strong></td><td>ocena</td><td>I got a good mark.</td><td>Dostałem dobrą ocenę.</td><td></td></tr>
+<tr><td><strong>timetable</strong></td><td>plan lekcji</td><td>Look at the timetable.</td><td>Spójrz na plan lekcji.</td><td></td></tr>
+<tr><td><strong>school rules</strong></td><td>zasady szkolne</td><td>We must follow school rules.</td><td>Musimy przestrzegać zasad szkolnych.</td><td></td></tr>
+<tr><td><strong>classmate</strong></td><td>kolega / koleżanka z klasy</td><td>Are your classmates friendly?</td><td>Czy twoi koledzy z klasy są mili?</td><td></td></tr>
+<tr><td><strong>family</strong></td><td>rodzina</td><td>My family is big.</td><td>Moja rodzina jest duża.</td><td></td></tr>
+<tr><td><strong>parents</strong></td><td>rodzice</td><td>My parents work hard.</td><td>Moi rodzice ciężko pracują.</td><td></td></tr>
+<tr><td><strong>mother</strong></td><td>mama</td><td>My mother is a doctor.</td><td>Moja mama jest lekarką.</td><td></td></tr>
+<tr><td><strong>father</strong></td><td>tata</td><td>My father is a teacher.</td><td>Mój tata jest nauczycielem.</td><td></td></tr>
+<tr><td><strong>brother</strong></td><td>brat</td><td>I have two brothers.</td><td>Mam dwóch braci.</td><td></td></tr>
+<tr><td><strong>sister</strong></td><td>siostra</td><td>She is my sister.</td><td>Ona jest moją siostrą.</td><td></td></tr>
+<tr><td><strong>grandparents</strong></td><td>dziadkowie</td><td>My grandparents live near us.</td><td>Moi dziadkowie mieszkają blisko nas.</td><td></td></tr>
+<tr><td><strong>relative</strong></td><td>krewny / krewna</td><td>I have many relatives.</td><td>Mam wielu krewnych.</td><td></td></tr>
+<tr><td><strong>cousin</strong></td><td>kuzyn / kuzynka</td><td>My cousin lives in London.</td><td>Mój kuzyn mieszka w Londynie.</td><td></td></tr>
+<tr><td><strong>aunt</strong></td><td>ciocia</td><td>My aunt is very nice.</td><td>Moja ciocia jest bardzo miła.</td><td></td></tr>
+<tr><td><strong>uncle</strong></td><td>wujek</td><td>My uncle has a car.</td><td>Mój wujek ma samochód.</td><td></td></tr>
+<tr><td><strong>free time / spare time</strong></td><td>czas wolny</td><td>What do you do in your free time?</td><td>Co robisz w wolnym czasie?</td><td></td></tr>
+<tr><td><strong>hobby</strong></td><td>hobby</td><td>My hobby is reading.</td><td>Moim hobby jest czytanie.</td><td></td></tr>
+<tr><td><strong>interested in</strong></td><td>zainteresowany / zainteresowana</td><td>Are you interested in photography?</td><td>Czy interesujesz się fotografią?</td><td></td></tr>
+<tr><td><strong>favourite</strong></td><td>ulubiony / ulubiona</td><td>What is your favourite film?</td><td>Jaki jest twój ulubiony film?</td><td></td></tr>
+<tr><td><strong>play football</strong></td><td>grać w piłkę nożną</td><td>Does he play football?</td><td>Czy on gra w piłkę nożną?</td><td></td></tr>
+<tr><td><strong>play basketball</strong></td><td>grać w koszykówkę</td><td>Do you play basketball?</td><td>Czy grasz w koszykówkę?</td><td></td></tr>
+<tr><td><strong>listen to music</strong></td><td>słuchać muzyki</td><td>She listens to music every day.</td><td>Ona codziennie słucha muzyki.</td><td></td></tr>
+<tr><td><strong>watch films</strong></td><td>oglądać filmy</td><td>We watch films at home.</td><td>Oglądamy filmy w domu.</td><td></td></tr>
+<tr><td><strong>watch series</strong></td><td>oglądać seriale</td><td>Does she watch series online?</td><td>Czy ona ogląda seriale w internecie?</td><td></td></tr>
+<tr><td><strong>read books</strong></td><td>czytać książki</td><td>I read books every day.</td><td>Codziennie czytam książki.</td><td></td></tr>
+<tr><td><strong>meet friends</strong></td><td>spotykać się z przyjaciółmi</td><td>Do you meet friends after school?</td><td>Czy spotykasz się z przyjaciółmi po szkole?</td><td></td></tr>
+<tr><td><strong>play computer games</strong></td><td>grać w gry komputerowe</td><td>He plays computer games at weekends.</td><td>On gra w gry komputerowe w weekendy.</td><td></td></tr>
+<tr><td><strong>ride a bike</strong></td><td>jeździć na rowerze</td><td>I ride a bike every day.</td><td>Codziennie jeżdżę na rowerze.</td><td></td></tr>
+<tr><td><strong>go swimming</strong></td><td>pływać / chodzić na basen</td><td>How often do you go swimming?</td><td>Jak często pływasz?</td><td></td></tr>
+<tr><td><strong>draw</strong></td><td>rysować</td><td>She can draw very well.</td><td>Ona bardzo dobrze rysuje.</td><td></td></tr>
+<tr><td><strong>take photos</strong></td><td>robić zdjęcia</td><td>I like taking photos.</td><td>Lubię robić zdjęcia.</td><td></td></tr>
+<tr><td><strong>paint</strong></td><td>malować</td><td>My sister likes painting.</td><td>Moja siostra lubi malować.</td><td></td></tr>
+<tr><td><strong>play an instrument</strong></td><td>grać na instrumencie</td><td>Does he play an instrument?</td><td>Czy on gra na jakimś instrumencie?</td><td></td></tr>
+<tr><td><strong>go cycling</strong></td><td>jeździć na wycieczki rowerowe</td><td>We go cycling every Sunday.</td><td>Co niedzielę jeździmy na rowerze.</td><td></td></tr>
+<tr><td><strong>go for a walk</strong></td><td>iść na spacer</td><td>We often go for a walk after dinner.</td><td>Często idziemy na spacer po kolacji.</td><td></td></tr>
+<tr><td><strong>after school</strong></td><td>po szkole</td><td>What do you do after school?</td><td>Co robisz po szkole?</td><td></td></tr>
+<tr><td><strong>at the weekend</strong></td><td>w weekend</td><td>We meet friends at the weekend.</td><td>Spotykamy się z przyjaciółmi w weekend.</td><td></td></tr>
+<tr><td><strong>in the evening</strong></td><td>wieczorem</td><td>Does she study in the evening?</td><td>Czy ona uczy się wieczorem?</td><td></td></tr>
+</tbody></table></div>
+<div class="card card-basic">
+<span class="card-label">Czasowniki nieregularne – 10 najważniejszych dla tej lekcji</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Bezokolicznik</th><th>Past Simple</th><th>Znaczenie</th><th>Przykład (Past Simple)</th><th>Audio</th></tr></thead>
+<tbody>
+<tr><td><strong>be</strong></td><td>was / were</td><td>być</td><td><em>I was tired.</em></td><td></td></tr>
+<tr><td><strong>do</strong></td><td>did</td><td>robić</td><td><em>He did his homework.</em></td><td></td></tr>
+<tr><td><strong>go</strong></td><td>went</td><td>iść, jechać</td><td><em>She went home.</em></td><td></td></tr>
+<tr><td><strong>have</strong></td><td>had</td><td>mieć</td><td><em>We had a test.</em></td><td></td></tr>
+<tr><td><strong>meet</strong></td><td>met</td><td>spotkać</td><td><em>I met my friend.</em></td><td></td></tr>
+<tr><td><strong>swim</strong></td><td>swam</td><td>pływać</td><td><em>She swam in the pool.</em></td><td></td></tr>
+<tr><td><strong>ride</strong></td><td>rode</td><td>jechać (np. na rowerze)</td><td><em>He rode his bike.</em></td><td></td></tr>
+<tr><td><strong>draw</strong></td><td>drew</td><td>rysować</td><td><em>She drew a picture.</em></td><td></td></tr>
+<tr><td><strong>take</strong></td><td>took</td><td>brać; robić (zdjęcie)</td><td><em>I took a photo.</em></td><td></td></tr>
+<tr><td><strong>read</strong></td><td>read /red/</td><td>czytać</td><td><em>I read a book.</em></td><td></td></tr>
+</tbody></table></div>
+<p><strong>Uwaga:</strong> <em>read</em> w teraźniejszości wymawia się <strong>/riːd/</strong>, a w przeszłości <strong>/red/</strong>.</p>
+</div>
+</section>
+<section id="s68">
+<div class="part-heading"><span class="part-num">8</span> Podsumowanie</div>
+</section>
+<section id="s69">
+<div class="part-heading"><span class="part-num">51</span> Najczęstsze błędy Polaków</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead>
+<tbody>
+<tr><td><span class="error-text">You like pizza do?</span></td><td><span class="correct-text">Do you like pizza?</span></td><td>DO stoi przed podmiotem</td></tr>
+<tr><td><span class="error-text">Do you are happy?</span></td><td><span class="correct-text">Are you happy?</span></td><td>BE samo tworzy pytanie</td></tr>
+<tr><td><span class="error-text">Does she likes?</span></td><td><span class="correct-text">Does she like?</span></td><td>po does forma podstawowa</td></tr>
+<tr><td><span class="error-text">Did he went?</span></td><td><span class="correct-text">Did he go?</span></td><td>po did forma podstawowa</td></tr>
+<tr><td><span class="error-text">Does she has...?</span></td><td><span class="correct-text">Does she have...?</span></td><td>po does forma podstawowa</td></tr>
+<tr><td><span class="error-text">Where you live?</span></td><td><span class="correct-text">Where do you live?</span></td><td>potrzebny DO</td></tr>
+<tr><td><span class="error-text">Are they like football?</span></td><td><span class="correct-text">Do they like football?</span></td><td>like = zwykły czasownik</td></tr>
+<tr><td><span class="error-text">Did she was tired?</span></td><td><span class="correct-text">Was she tired?</span></td><td>BE samo tworzy pytanie</td></tr>
+<tr><td><span class="error-text">Who does like football?</span></td><td><span class="correct-text">Who likes football?</span></td><td>WHO jest podmiotem</td></tr>
+<tr><td><span class="error-text">Does she works?</span></td><td><span class="correct-text">Does she work?</span></td><td>po does forma podstawowa</td></tr>
+<tr><td><span class="error-text">She have visited.</span></td><td><span class="correct-text">She has visited.</span></td><td>3. os. l.poj. → has</td></tr>
+<tr><td><span class="error-text">I have working here.</span></td><td><span class="correct-text">I have been working here.</span></td><td>Present Perfect Continuous</td></tr>
+<tr><td><span class="error-text">You are waiting?</span></td><td><span class="correct-text">Are you waiting?</span></td><td>W pytaniu BE + -ing operator BE jest na początku (E8 2023)</td></tr>
+<tr><td><span class="error-text">How much do you play?</span></td><td><span class="correct-text">How often do you play?</span></td><td>Pytanie o częstotliwość, nie o ilość (E8 2024)</td></tr>
+</tbody></table></div>
+</section>
+<section id="s70">
+<div class="part-heading"><span class="part-num">52</span> Pułapki egzaminacyjne (lista)</div>
+<ul>
+<li>BE vs DO → <span class="error-text">Do you are tired?</span> → <span class="correct-text">Are you tired?</span></li>
+<li>Końcówka -s → <span class="error-text">Does she likes music?</span> → <span class="correct-text">Does she like music?</span></li>
+<li>Przeszłość → <span class="error-text">Did he went home?</span> → <span class="correct-text">Did he go home?</span></li>
+<li>HAVE → <span class="error-text">Does she has a brother?</span> → <span class="correct-text">Does she have a brother?</span></li>
+<li>WH-word → <span class="error-text">Where you live?</span> → <span class="correct-text">Where do you live?</span></li>
+<li>WHO jako podmiot → <span class="error-text">Who does like football?</span> → <span class="correct-text">Who likes football?</span></li>
+<li>Present Continuous → <span class="error-text">Do you waiting?</span> → <span class="correct-text">Are you waiting?</span></li>
+<li>How often → <span class="error-text">How much do you play football?</span> → <span class="correct-text">How often do you play football?</span></li>
+<li>How much / many → <span class="error-text">How much apples?</span> → <span class="correct-text">How many apples?</span></li>
+<li>Which / whose → <span class="error-text">Which book is?</span> → <span class="correct-text">Which book is yours?</span></li>
+</ul>
+</section>
+<section id="s71">
+<div class="part-heading"><span class="part-num">53</span> Mini-powtórka z lekcji 1</div>
+<p><strong>Uzupełnij. <span class="level-badge level-basic">PODSTAWA</span></strong></p>
+<ol>
+<li>You __________ run in the corridor. (mustn't / don't have to)</li>
+<li>She __________ wear a uniform at school. (must / has to)</li>
+<li>Ułóż pytanie: <em>she / have to / wear a uniform</em></li>
+<li>Uzupełnij: <em>Does he like maths?</em> → <em>Yes, __________.</em></li>
+<li>Popraw: <span class="error-text">Do you are tired?</span></li>
+</ol>
+<details class="answer"><summary>Podpowiedzi</summary>
+<ol>
+<li><em>mustn't</em> = zakaz, <em>don't have to</em> = brak obowiązku. 2. <em>must</em> = muszę (wewnętrzny), <em>has to</em> = musi (zewnętrzny). 3. Pytanie z <em>have to</em> tworzymy z DO.</li>
+</ol>
+</details>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li>mustn't</li>
+<li>has to</li>
+<li>Does she have to wear a uniform?</li>
+<li>he does</li>
+<li><span class="correct-text">Are you tired?</span></li>
+</ol>
+</details>
+</section>
+<section id="s72">
+<div class="part-heading"><span class="part-num">54</span> 11 najważniejszych zasad</div>
+<ol>
+<li>BE samo tworzy pytanie.</li>
+<li>Jeżeli zdanie ma już operator, np. <em>can, must, will</em> albo HAVE w czasie Perfect, nie dodajemy DO.</li>
+<li>Zwykły czasownik w czasie Simple potrzebuje DO w pytaniu i przeczeniu.</li>
+<li>Po <em>do / does / did</em> używamy formy podstawowej.</li>
+<li>Nie łączymy DO z BE ani z innym operatorem.</li>
+<li>W 3. osobie l.poj. czasu teraźniejszego mamy <em>does</em>, nie <em>do</em>.</li>
+<li><em>Did</em> jest takie samo dla wszystkich osób.</li>
+<li>Krótka odpowiedź powtarza operator z pytania.</li>
+<li>WH-word nie oznacza automatycznie, że trzeba użyć DO.</li>
+<li>Jeżeli WHO jest podmiotem, nie używamy DO.</li>
+<li><em>Do you have...?</em> i <em>Have you got...?</em> są poprawne, ale nie łączymy obu schematów.</li>
+</ol>
+</section>
+<section id="s73">
+<div class="part-heading"><span class="part-num">55</span> Schemat decyzyjny</div>
+<ol>
+<li>Znajdź czasownik i określ czas</li>
+</ol>
+<p>↓</p>
+<ol start="2">
+<li>Czy zdanie ma BE albo inny operator?</li>
+</ol>
+<p>TAK <br> Przenieś ten operator</p>
+<p>NIE <br> Wybierz DO / DOES / DID</p>
+<p>↓</p>
+<ol start="3">
+<li>Po DOES / DID zostaw czasownik w formie podstawowej</li>
+</ol>
+<p>↓</p>
+<ol start="4">
+<li>Dodaj WH-word, jeśli pytasz o szczegół</li>
+</ol>
+<p>Inne operatory to m.in. <em>can, must, will</em> oraz <em>have / has</em> w czasach Perfect.</p>
+</section>
+<section id="s74">
+<div class="part-heading"><span class="part-num">56</span> Fiszka egzaminacyjna</div>
+<h3>BE</h3>
+<h4>Teraźniejszość</h4>
+<ul>
+<li>am / is / are</li>
+</ul>
+<h4>Przeszłość</h4>
+<ul>
+<li>was / were</li>
+</ul>
+<h4>Pytanie</h4>
+<ul>
+<li><em>Are you happy?</em></li>
+</ul>
+<h4>Przeczenie</h4>
+<ul>
+<li><em>I am not happy.</em></li>
+</ul>
+<h3>DO</h3>
+<h4>Teraźniejszość</h4>
+<ul>
+<li>do / does</li>
+</ul>
+<h4>Przeszłość</h4>
+<ul>
+<li>did</li>
+</ul>
+<h4>Pytanie</h4>
+<ul>
+<li><em>Do you like pizza?</em></li>
+</ul>
+<h4>Przeczenie</h4>
+<ul>
+<li><em>I don't like pizza.</em></li>
+</ul>
+<h3>Najważniejsze kontrasty</h3>
+<ul>
+<li><span class="correct-text">Are you tired?</span> ≠ <span class="correct-text">Do you like music?</span></li>
+<li><span class="correct-text">Does she like music?</span> ≠ <span class="error-text">Does she likes music?</span></li>
+<li><span class="correct-text">Did he go home?</span> ≠ <span class="error-text">Did he went home?</span></li>
+<li><span class="correct-text">Does she have a brother?</span> ≠ <span class="error-text">Does she has a brother?</span></li>
+<li><span class="correct-text">Do you have a pet?</span> = <span class="correct-text">Have you got a pet?</span></li>
+</ul>
+</section>
+<section id="s75">
+<div class="part-heading"><span class="part-num">57</span> Fiszka 2.0 – kompaktowa ściąga</div>
+<h3>ZŁOTA ZASADA</h3>
+<p><strong>BE → BE | zwykły czasownik → DO</strong></p>
+<h4>11 REGUŁ</h4>
+<ol>
+<li>BE samo tworzy pytanie.</li>
+<li>Jeśli jest już operator, nie dodawaj DO.</li>
+<li>Zwykły czasownik w Simple potrzebuje DO.</li>
+<li>Po does/did → forma podstawowa.</li>
+<li>Nie łącz DO z BE ani innym operatorem.</li>
+<li>3. os. l.poj. → does (nie do).</li>
+<li>Did dla wszystkich osób.</li>
+<li>Krótka odpowiedź = operator z pytania.</li>
+<li>WH-word ≠ automatycznie DO.</li>
+<li>WHO jako podmiot → bez DO.</li>
+<li>Nie łącz <em>do you have</em> z <em>have you got</em>.</li>
+</ol>
+<h4>BANK KONSTRUKCJI</h4>
+<ul>
+<li><em>Are you...?</em></li>
+<li><em>Do you...?</em></li>
+<li><em>Does she...?</em></li>
+<li><em>Did they...?</em></li>
+<li><em>Where do you...?</em></li>
+<li><em>Who likes...?</em></li>
+<li><em>Who do you...?</em></li>
+<li><em>How often do you...?</em></li>
+<li><em>How much is...?</em></li>
+<li><em>Is there...?</em> / <em>Are there...?</em></li>
+<li><em>Do you have...?</em> / <em>Have you got...?</em></li>
+</ul>
+<h4>5 NAJCZĘSTSZYCH PUŁAPEK</h4>
+<ol>
+<li><span class="error-text">Do you are?</span> → <span class="correct-text">Are you?</span></li>
+<li><span class="error-text">Does she likes?</span> → <span class="correct-text">Does she like?</span></li>
+<li><span class="error-text">Did he went?</span> → <span class="correct-text">Did he go?</span></li>
+<li><span class="error-text">Does she has?</span> → <span class="correct-text">Does she have?</span></li>
+<li><span class="error-text">Where you live?</span> → <span class="correct-text">Where do you live?</span></li>
+</ol>
+</section>
+<section id="s76">
+<div class="part-heading"><span class="part-num">58</span> Test końcowy – MISJA</div>
+<div class="card card-basic">
+<span class="card-label">Misja końcowa</span>
+<p>Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+</div>
+<p><strong>Uzupełnij poprawnym operatorem lub formą. <span class="level-badge level-exam">EGZAMIN</span></strong></p>
+<ol>
+<li>___ you tired?</li>
+<li>___ you like pizza?</li>
+<li>___ she play tennis?</li>
+<li>___ they at home yesterday?</li>
+<li>Why ___ he leave?</li>
+<li>Who ___ football? (lubi)</li>
+<li>She doesn't ___ coffee.</li>
+<li>Did he ___ home?</li>
+<li>___ there any books on the desk?</li>
+<li>___ you got a pet?</li>
+<li>Whose bag ___ this?</li>
+<li>How often ___ she go swimming?</li>
+</ol>
+<details class="answer"><summary>Odpowiedzi</summary>
+<ol>
+<li><strong>Are</strong></li>
+<li><strong>Do</strong></li>
+<li><strong>Does</strong></li>
+<li><strong>Were</strong></li>
+<li><strong>did</strong></li>
+<li><strong>likes</strong></li>
+<li><strong>like</strong></li>
+<li><strong>go</strong></li>
+<li><strong>Are</strong></li>
+<li><strong>Have</strong></li>
+<li><strong>is</strong></li>
+<li><strong>does</strong></li>
+</ol>
+</details>
+</section>
+<section id="s77">
+<div class="part-heading"><span class="part-num">59</span> Bank konstrukcji do powtórek</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Przykład</th><th>Poziom</th></tr></thead>
+<tbody>
+<tr><td>BE + osoba</td><td>Are you tired?</td><td><span class="level-badge level-basic">PODSTAWA</span></td></tr>
+<tr><td>DO + osoba</td><td>Do you like music?</td><td><span class="level-badge level-basic">PODSTAWA</span></td></tr>
+<tr><td>DOES + osoba</td><td>Does she like music?</td><td><span class="level-badge level-basic">PODSTAWA</span></td></tr>
+<tr><td>DID + osoba</td><td>Did he go home?</td><td><span class="level-badge level-basic">PODSTAWA</span></td></tr>
+<tr><td>WH + BE</td><td>Where are you?</td><td><span class="level-badge level-basic">PODSTAWA</span></td></tr>
+<tr><td>WH + DO</td><td>Where do you live?</td><td><span class="level-badge level-basic">PODSTAWA</span></td></tr>
+<tr><td>WH + DOES</td><td>What does she like?</td><td><span class="level-badge level-understand">TRENING</span></td></tr>
+<tr><td>WH + DID</td><td>Why did he leave?</td><td><span class="level-badge level-understand">TRENING</span></td></tr>
+<tr><td>WHO + czasownik</td><td>Who likes football?</td><td>PUŁAPKA</td></tr>
+<tr><td>WHO + DO</td><td>Who do you like?</td><td>PUŁAPKA</td></tr>
+<tr><td>HOW OFTEN + DO</td><td>How often do you...?</td><td>PUŁAPKA</td></tr>
+<tr><td>HOW MUCH + BE</td><td>How much are they?</td><td><span class="level-badge level-exam">EGZAMIN</span></td></tr>
+<tr><td>HOW MANY + DO</td><td>How many brothers do you have?</td><td><span class="level-badge level-exam">EGZAMIN</span></td></tr>
+<tr><td>THERE IS / ARE</td><td>Is there...? / Are there...?</td><td><span class="level-badge level-exam">EGZAMIN</span></td></tr>
+<tr><td>BE + -ing</td><td>Are you waiting?</td><td>PUŁAPKA</td></tr>
+<tr><td>HAVE + V3</td><td>Have you finished?</td><td><span class="level-badge level-extra">DLA AMBITNYCH</span></td></tr>
+<tr><td>HAVE + osoba + GOT</td><td>Have you got a pet?</td><td><span class="level-badge level-understand">TRENING</span></td></tr>
+<tr><td>DO + DO</td><td>Do you do...?</td><td><span class="level-badge level-extra">DLA AMBITNYCH</span></td></tr>
+<tr><td>WHAT TIME + DO</td><td>What time do you...?</td><td><span class="level-badge level-exam">EGZAMIN</span></td></tr>
+<tr><td>WHOSE + BE</td><td>Whose bag is this?</td><td><span class="level-badge level-exam">EGZAMIN</span></td></tr>
+</tbody></table></div>
+</section>
+<section id="s78">
+<div class="part-heading"><span class="part-num">60</span> FAQ – najczęstsze wątpliwości</div>
+<div class="card">
+<p><strong>1. Co zrobić, gdy nie wiem, czy to BE?</strong><br> Sprawdź, czy czasownik można zastąpić słowem „być” w języku polskim. Jeśli tak – to BE.</p>
+<p><strong>2. Czy zawsze potrzebuję DO?</strong><br> Nie. Gdy jest BE lub inny operator (have, will, can, must…), nie używamy DO.</p>
+<p><strong>3. Po co jest DOES, skoro już jest końcówka -s w czasowniku?</strong><br> DOES przejmuje informację o 3. osobie, więc czasownik wraca do formy podstawowej.</p>
+<p><strong>4. Czy „Do you do…?” to błąd?</strong><br> Nie. To poprawna konstrukcja – pierwsze DO to operator, drugie to czasownik główny.</p>
+<p><strong>5. Dlaczego w pytaniu z WHO czasem nie ma DO?</strong><br> Gdy WHO jest podmiotem, nie potrzebujemy DO. Gdy WHO jest dopełnieniem – potrzebujemy.</p>
+<p><strong>6. Czy można używać skrótów w wypowiedzi pisemnej?</strong><br> Tak. Skróty są naturalne w wiadomościach i e-mailach o nieformalnym charakterze. Zawsze przestrzegaj formy oraz limitu wyrazów podanych w poleceniu.</p>
+<p><strong>7. Kiedy używamy DOES, a kiedy IS?</strong><br> <em>Does</em> łączymy ze zwykłym czasownikiem w 3. osobie, np. <em>Does she play?</em> Formy <em>is</em> używamy m.in. przed przymiotnikiem, rzeczownikiem lub formą <em>-ing</em>: <em>Is she happy? Is she working?</em></p>
+<p><strong>8. Czy „How much is it?” i „How much does it cost?” są poprawne?</strong><br> Tak. Pierwsze pytanie używa BE, a drugie czasownika <em>cost</em> z operatorem DOES. Oba pytają o cenę.</p>
+<p><strong>9. Czy można połączyć DO z HAVE GOT?</strong><br> Nie. Mówimy <em>Do you have a dog?</em> albo <em>Have you got a dog?</em>, ale nie <span class="error-text">Do you have got a dog?</span></p>
+</div>
+</section>
+<section id="s79">
+<div class="part-heading"><span class="part-num">61</span> Co powinieneś umieć po tej lekcji?</div>
+<ul>
+<li><span class="correct-text">„Czy jesteś zmęczony?”</span> → <em>Are you tired?</em></li>
+<li><span class="correct-text">„Czy lubisz muzykę?”</span> → <em>Do you like music?</em></li>
+<li><span class="correct-text">„Czy ona lubi muzykę?”</span> → <em>Does she like music?</em></li>
+<li><span class="correct-text">„Czy ona ma brata?”</span> → <em>Does she have a brother?</em></li>
+<li><span class="correct-text">„Czy oni byli w szkole?”</span> → <em>Were they at school?</em></li>
+<li><span class="correct-text">„Czy poszli do szkoły?”</span> → <em>Did they go to school?</em></li>
+<li><span class="correct-text">„Gdzie mieszkasz?”</span> → <em>Where do you live?</em></li>
+<li><span class="correct-text">„Jak często grasz w piłkę?”</span> → <em>How often do you play football?</em></li>
+<li><span class="correct-text">„Kto lubi piłkę?”</span> → <em>Who likes football?</em></li>
+<li><span class="correct-text">„Kogo lubisz?”</span> → <em>Who do you like?</em></li>
+<li><span class="correct-text">„Czy są jakieś książki?”</span> → <em>Are there any books?</em></li>
+<li><span class="correct-text">„Czy masz zwierzę?”</span> → <em>Do you have a pet?</em> / <em>Have you got a pet?</em></li>
+<li><span class="correct-text">„Czyja to torba?”</span> → <em>Whose bag is this?</em></li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">Osiągnąłeś najważniejszy cel lekcji:</span>
+<p>Nie tylko znasz zasadę – zaczynasz ją stosować automatycznie.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Notatka dla ucznia</span>
+<p>Nie ucz się angielskiego przez zapamiętywanie pojedynczych słów. Ucz się <strong>konstrukcji</strong>.</p>
+<ul>
+<li>Nie: <span class="error-text">are = jesteś</span> → tylko <span class="correct-text">Are you...?</span></li>
+<li>Nie: <span class="error-text">do = robić</span> → tylko <span class="correct-text">Do you...?</span></li>
+<li>Nie: <span class="error-text">does = robi</span> → tylko <span class="correct-text">Does she...?</span></li>
+<li>Nie: <span class="error-text">how = jak</span> → tylko <span class="correct-text">How often do you...?</span></li>
+</ul>
+<p>To właśnie konstrukcje pozwalają szybciej rozwiązywać zadania egzaminacyjne.</p>
+</div>
+</section>
+<section id="s80">
+<div class="part-heading">Lista tematów głównych</div>
+<p>Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.</p>
+<ol>
+<li>Operator – znaczenie i zastosowanie</li>
+<li>Czasownik główny a posiłkowy</li>
+<li>BE, DO i HAVE – większy obraz</li>
+<li>Najważniejsza decyzja: BE czy DO?</li>
+<li>Formy BE: am, is, are, was, were</li>
+<li>Zdania, pytania i odpowiedzi z BE</li>
+<li>Formy DO: do, does, did</li>
+<li>Zdania, pytania i odpowiedzi z DO</li>
+<li>DOES / DID + forma podstawowa</li>
+<li>BE i DO: stan a czynność</li>
+<li>HAVE jako szczególny przypadek</li>
+<li>DO jako czasownik główny i podwójne DO</li>
+<li>Pytania z WH-words</li>
+<li>WHO: podmiot a dopełnienie</li>
+<li>What time, How often, How much, How many</li>
+<li>There is / There are</li>
+<li>Krótkie odpowiedzi</li>
+<li>Algorytm budowania pytania</li>
+<li>E8 i materiały CKE</li>
+<li>Bank konstrukcji</li>
+<li>Fiszki interaktywne</li>
+<li>Najczęstsze błędy i pułapki E8</li>
+<li>Słownictwo kontekstowe</li>
+<li>Tabele odmiany BE, LIKE, GO i HAVE</li>
+<li>Czasowniki nieregularne</li>
+</ol>
+<p class="mini-note">Ucz się świadomie, nie na pamięć.</p>
+<p class="mini-note">Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.</p>
+</section>
+<footer class="footer"><p>Lekcja 2 – BE i DO • Wersja 7.0 (uproszczona, czystsza) • 2026-08-21</p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

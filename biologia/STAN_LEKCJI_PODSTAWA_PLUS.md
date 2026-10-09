@@ -25,7 +25,7 @@ Zasada: **MD = kanon wykładu**, HTML = warstwa do czytania. Bez paska postępu 
 | Biologia | L012 | L012 — Jak DNA jest upakowane w chromosomach? (v3.8 — wzmocniona warstwa merytoryczna) | 12988 | nie | — | robocza | dopiąć jak L001/L017 |
 | Biologia | L013 | L013 — Jak komórka kopiuje DNA? (v3.8 — wzmocniona warstwa merytoryczna) | 11751 | nie | — | robocza | dopiąć jak L001/L017 |
 | Biologia | L014 | L014 — Jak komórki ciała powstają i się odnawiają? (v3.8 — wzmocniona warstwa merytoryczna | 12440 | nie | — | robocza | dopiąć jak L001/L017 |
-| Biologia | L015 | WYKŁAD Z HTML L015 | 52204 | tak | lekcje_html/BIOLOGIA_L015_MEJOZA.html | rozbudowana | spójna para MD+HTML |
+| Biologia | L015 | WYKŁAD Z HTML L015 | 52204 | tak | archiwum/lekcje_html_stare/BIOLOGIA_L015_MEJOZA.html | rozbudowana | spójna para MD+HTML |
 | Biologia | L016 | L016 — Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli? (v3.8 — wzmocnion | 11887 | nie | — | robocza | dopiąć jak L001/L017 |
 | Biologia | L017 | L017 — Jak przewidywać dziedziczenie jednej cechy? (v5.0 — przebudowa „od podstaw do zaawa | 37691 | tak | BIOLOGIA_L017_PUNNETT.html | rozbudowana | spójna para MD+HTML |
 | Biologia | L018 | L018 — Jak dziedziczy się płeć i cechy sprzężone z chromosomem X? (v3.8 — wzmocniona warst | 11046 | nie | — | robocza | dopiąć jak L001/L017 |

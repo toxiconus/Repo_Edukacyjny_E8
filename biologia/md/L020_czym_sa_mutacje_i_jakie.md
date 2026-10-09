@@ -143,6 +143,10 @@ Most **L016**: mutageny podnoszą ryzyko uszkodzeń DNA → przy nagromadzeniu w
 4. **Dlaczego mutacje są ważne dla ewolucji?** Dostarczają **zmienności** (surowiec doboru — most L030).
 
 ### 6B. Krok po kroku — czy mutacja „widać”?
+
+@viz kod-genetyczny | Mutacja punktowa w kodzie | kliknij zasadę i porównaj białko
+@opis DNA, mRNA i łańcuch aminokwasów; po kliknięciu zasady pojawia się zmieniony kodon i rodzaj mutacji: cicha (ten sam aminokwas), zmiany sensu (inny aminokwas) albo nonsensowna (kodon STOP). Wniosek: nie każda mutacja zmienia cechę — skutek zależy od tego, co dzieje się z kodonem.
+
 1. Zmiana w DNA.
 2. Czy zmienia kodon / produkt genu?
 3. Czy zmienia funkcję białka?

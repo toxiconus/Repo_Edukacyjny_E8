@@ -237,6 +237,10 @@ To dokładnie ten sam pomysł co Punnett! Tyle że zamiast monet mamy **gamety**
 
 ### 6.2. Jak zrobić Punnett — krok po kroku
 
+@viz punnett {tryb="A"} | Szachownica Punnetta | wybierz genotypy rodziców
+@opis Szachownica 2×2: gamety jednego rodzica w wierszach, drugiego w kolumnach, w polach genotypy potomstwa (AA, Aa, aa), pod spodem udział genotypów i fenotypów w procentach. Wniosek: przy krzyżówce Aa × Aa stosunek fenotypów wynosi 3 : 1, a genotypów 1 : 2 : 1.
+
+
 1. **Zapisz genotypy rodziców** (np. Aa × Aa).
 2. **Wypisz gamety każdego rodzica** (po jednym allelu z pary):
    - Aa → A i a

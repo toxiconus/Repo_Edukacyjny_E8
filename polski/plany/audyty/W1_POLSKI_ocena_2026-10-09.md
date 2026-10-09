@@ -5,9 +5,9 @@ Surowa odpowiedź: `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` (ucięta w pkt
 ## Wprowadzone (błędy potwierdzone w źródle)
 | Lekcja | Plik | Zmiana |
 |---|---|---|
-| L003 | `lekcje_html/L003-PL-Opowiesci-z-Narnii-zaimek.html` i starsza wersja | Usunięta błędna reguła „bez przecinka przed »który« w zdaniu dopełnieniowym” (przykład obok miał przecinek). Nowa ramka: przecinek przed każdym zdaniem podrzędnym; gdy zaczyna się od przyimka (o którym) — przed przyimkiem. Poprawione „DLACZEGO” (przecinek nie zależy od tego, czy zdanie to „dodatkowa informacja”). |
+| L003 | `archiwum/lekcje_html_stare/L003-PL-Opowiesci-z-Narnii-zaimek.html` i starsza wersja | Usunięta błędna reguła „bez przecinka przed »który« w zdaniu dopełnieniowym” (przykład obok miał przecinek). Nowa ramka: przecinek przed każdym zdaniem podrzędnym; gdy zaczyna się od przyimka (o którym) — przed przyimkiem. Poprawione „DLACZEGO” (przecinek nie zależy od tego, czy zdanie to „dodatkowa informacja”). |
 | L003 | jw. | „jego” nie jest zawsze błędne — niejasne tylko, gdy chodzi o rodzeństwo podmiotu. |
-| L002 | `lekcje_html/L002-PL-Hobbit-nieodmienne-czesci-mowy.html` | „bliżej, dalej” to stopień wyższy przysłówków, nie „stopniowane przyimki”. Beorn: przybywa w decydującym momencie bitwy, nie uczestniczy w całej wyprawie. |
+| L002 | `archiwum/lekcje_html_stare/L002-PL-Hobbit-nieodmienne-czesci-mowy.html` | „bliżej, dalej” to stopień wyższy przysłówków, nie „stopniowane przyimki”. Beorn: przybywa w decydującym momencie bitwy, nie uczestniczy w całej wyprawie. |
 | L004 | `POLSKI_PODSTAWA_PLUS_v7.11.md` | „dwoje uczniów” = chłopiec i dziewczynka; o samych chłopcach: dwaj / dwóch uczniów. |
 | L005 | jw. | „nie” z rzeczownikami: łącznie, gdy tworzy nową nazwę; rozdzielnie przy zwykłym zaprzeczeniu lub przeciwstawieniu. |
 

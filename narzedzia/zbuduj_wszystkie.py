@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Buduje wszystkie lekcje md na wspólnym szablonie (szablon/) → <przedmiot>/html/ + index.html.
-Użycie: python3 narzedzia/zbuduj_wszystkie.py [pol bio che oli]
+Użycie: python3 narzedzia/zbuduj_wszystkie.py [pol ang bio che oli]
 Gotowe lekcje chemii z modelami silnika (chemia/che-modular/lessons-md/gotowe) buduje nadal che-modular/tools/md2html.py."""
 import os, sys, glob, re, html as H
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -9,9 +9,10 @@ import opis_wizualizacji as OPIS
 
 R = L.REPO
 ZRODLA = {
-    'pol': ('polski/html', ['polski/podstawy/*.md', 'polski/do_uzupelnienia/*.md', 'polski/blok_D/lekcje/*.md']),
+    'pol': ('polski/html', ['polski/lekcje_md/*.md', 'polski/podstawy/*.md', 'polski/do_uzupelnienia/*.md', 'polski/blok_D/lekcje/*.md']),
     'bio': ('biologia/html', ['biologia/md/L*.md', 'biologia/bio/md/*.md']),
     'che': ('chemia/html', ['chemia/lekcje_md/*/*.md']),
+    'ang': ('angielski/html', ['angielski/lekcje_md/*.md']),
     'oli': ('olimpiada/html', ['olimpiada/do_uzupelnienia/*_*.md']),
 }
 

@@ -344,6 +344,10 @@ doklej 2026-09-12 · v3.8 zachowane.
 ## 24. UZUPEŁNIENIE AUDYTOWE v4.2 — ABO: fenotyp nie mówi wszystkiego o genotypie
 
 ### 24.1. Algorytm rozwiązywania krzyżówki ABO
+
+@viz punnett {tryb="K"} | Grupy krwi AB0 | wybierz grupy rodziców
+@opis Szachownica dla alleli I^A, I^B, i: gamety rodziców, genotypy dzieci i wynikające z nich grupy krwi z udziałem procentowym. Wniosek: ta sama grupa krwi (np. A) może kryć różne genotypy (I^A I^A albo I^A i), dlatego rodzice z grupą A mogą mieć dziecko z grupą 0.
+
 1. Zapisz **fenotypy** rodziców.
 2. Ustal możliwe **genotypy** każdego rodzica.
 3. Wypisz możliwe gamety.

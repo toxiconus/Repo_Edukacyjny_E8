@@ -18,6 +18,10 @@ python3 narzedzia/zbuduj_wszystkie.py [pol bio che oli]
 
 Wynik: `polski/html/`, `biologia/html/`, `chemia/html/` (kanon `lekcje_md`), `olimpiada/html/`, w każdym `index.html`. Bloki ```…``` stają się ramkami z tekstem stałej szerokości (schematy ASCII zostają), komentarze `<!-- -->` nie połykają akapitu, poziomy nagłówków są ujednolicane.
 
+## Dawne lekcje HTML → md
+
+`python3 narzedzia/html_do_md.py -p <przedmiot> -k <KOD> stara.html nowa.md` — konwersja ręcznie robionych lekcji (szablon PODSTAWA PLUS): karty, ćwiczenia z odpowiedziami (także te ukryte w skrypcie), fiszki, testy z danych JS, tabele. Własne SVG zostają jako `::: html` z `@opis` i znacznikiem `GFX:` do przeniesienia do biblioteki grafik. Oryginały: `<przedmiot>/archiwum/lekcje_html_stare/`.
+
 ## Pliki
 
 | Plik | Rola | Edycja |

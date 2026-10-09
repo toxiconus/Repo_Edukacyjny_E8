@@ -79,9 +79,9 @@ Główne wersje robocze są wskazane poniżej; wcześniejsze warianty pozostają
 
 | Kod | Temat | Główna wersja | Audyt |
 |---|---|---|---|
-| L001 | Lektury z klas IV–VI i imiesłów | [L001 HTML](<lekcje_html/L001-PL-Lektury-klas-IV-VI-imieslow.html>) | [audyt](plany/audyty/L001_AUDYT_2026-10-09.md) |
-| L002 | Hobbit i nieodmienne części mowy | [L002 HTML](<lekcje_html/L002-PL-Hobbit-nieodmienne-czesci-mowy.html>) | [audyt](plany/audyty/L002_AUDYT_2026-10-09.md) |
-| L003 | Opowieści z Narnii i zaimek | [L003 HTML](<lekcje_html/L003-PL-Opowiesci-z-Narnii-zaimek.html>) | [audyt](plany/audyty/L003_AUDYT_2026-10-09.md) |
+| L001 | Lektury z klas IV–VI i imiesłów | [L001 HTML](<archiwum/lekcje_html_stare/L001-PL-Lektury-klas-IV-VI-imieslow.html>) | [audyt](plany/audyty/L001_AUDYT_2026-10-09.md) |
+| L002 | Hobbit i nieodmienne części mowy | [L002 HTML](<archiwum/lekcje_html_stare/L002-PL-Hobbit-nieodmienne-czesci-mowy.html>) | [audyt](plany/audyty/L002_AUDYT_2026-10-09.md) |
+| L003 | Opowieści z Narnii i zaimek | [L003 HTML](<archiwum/lekcje_html_stare/L003-PL-Opowiesci-z-Narnii-zaimek.html>) | [audyt](plany/audyty/L003_AUDYT_2026-10-09.md) |
 | L004 | Chłopcy z Placu Broni: przymiotnik i liczebnik | [L004 HTML](<archiwum/html/L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html>) | [audyt](plany/audyty/L004_AUDYT_2026-10-09.md) |
 | L005 | Kajko i Kokosz: rzeczownik | [L005 HTML](<archiwum/html/L005-PL-Kajko-i-Kokosz-rzeczownik.html>) | [audyt](plany/audyty/L005_AUDYT_2026-10-09.md) |
 | L006 | Akademia Pana Kleksa: czasownik | [L006 HTML](<archiwum/html/L006-PL-Akademia-Pana-Kleksa-czasownik.html>) | [audyt](plany/audyty/L006_AUDYT_2026-10-09.md) |

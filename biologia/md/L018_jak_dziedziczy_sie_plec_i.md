@@ -124,6 +124,10 @@ jajowa X + plemnik Y → XY (chłopiec)
 ```
 
 ### Cechy sprzężone z X (X-linked)
+
+@viz punnett {tryb="X"} | Dziedziczenie sprzężone z płcią | hemofilia — allel na chromosomie X
+@opis Szachownica dla chromosomów płci: gamety matki (X^H, X^h) i ojca (X^H, Y), w polach córki i synowie z oznaczeniem nosicielek i chorych, udziały w procentach. Wniosek: syn dostaje chromosom X tylko od matki, dlatego choroby sprzężone z X częściej ujawniają się u chłopców.
+
 Gen leży na chromosomie **X** (przykłady szkolne: daltonizm, hemofilia).
 
 | | Kobieta (XX) | Mężczyzna (XY) |

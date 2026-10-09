@@ -25,6 +25,10 @@ Jak komórka może pobierać potrzebne substancje, skoro jej wnętrze jest oddzi
 Błona komórkowa oddziela wnętrze komórki od środowiska, ale nie jest szczelną ścianą. Jest selektywnie przepuszczalna: niektóre substancje przechodzą łatwiej, inne trudniej.
 
 ## 3. Dyfuzja
+
+@viz transport-blona | Transport przez błonę | wybierz sposób transportu
+@opis Przekrój błony z białkami transportowymi; przełączniki: dyfuzja prosta, dyfuzja ułatwiona, transport aktywny (ATP) i osmoza; strzałki pokazują kierunek ruchu cząsteczek względem stężenia, pod spodem tabela porównawcza. Wniosek: dyfuzja i osmoza zachodzą zgodnie z gradientem bez energii, transport aktywny idzie wbrew gradientowi i zużywa ATP.
+
 Dyfuzja to samorzutne przemieszczanie się cząsteczek z obszaru o większym ich stężeniu do obszaru o mniejszym stężeniu.
 
 **Ważne:** dyfuzja nie wymaga bezpośredniego dostarczania ATP do samego ruchu cząsteczek.

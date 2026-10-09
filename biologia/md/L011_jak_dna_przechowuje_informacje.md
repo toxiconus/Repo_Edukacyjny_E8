@@ -171,6 +171,13 @@ Czy za ich pomocą można zapisać bardzo dużą ilość informacji?
 
 ### 5.2. Budowa — od cegiełki do helisy
 
+@viz nukleotyd | Nukleotyd — cegiełka DNA | kliknij część, aby zobaczyć jej nazwę i rolę
+@opis Nukleotyd: reszta fosforanowa, cukier deoksyryboza z ponumerowanymi węglami 1′, 3′, 5′ i zasada azotowa przyłączona do węgla 1′. Wniosek: każdy nukleotyd ma te same trzy części, a różni się tylko zasadą.
+
+@viz pary-zasad | Pary zasad | porównaj pary prawidłowe i błędne
+@opis Pary A–T (dwa wiązania wodorowe) i G–C (trzy wiązania) obok błędnych par A–G, C–T, A–C; puryny mają dwa pierścienie, pirymidyny jeden. Wniosek: pasują tylko pary puryna–pirymidyna o zgodnych wiązaniach, dlatego szerokość helisy jest stała.
+
+
 **Nukleotyd** = podstawowa jednostka DNA. Składa się z **trzech** części:
 
 | Składnik | Co to | Rola |
@@ -202,6 +209,13 @@ Czy za ich pomocą można zapisać bardzo dużą ilość informacji?
 3. **Gdyby A łączyło się z G** — duża + duża = helisa byłaby za szeroka i niestabilna.
 
 ### 5.4. Podwójna helisa — struktura
+
+@viz drabina {seq="ATGCCA"} | DNA jako drabina | dwie nici antyrównoległe
+@opis Dwie nici ułożone jak drabina: z boków cukry i fosforany, szczeble to pary zasad A–T i G–C połączone wiązaniami wodorowymi; nici biegną w przeciwnych kierunkach (5′→3′ i 3′→5′). Wniosek: kolejność zasad na jednej nici wyznacza kolejność na drugiej.
+
+@viz helisa | Od drabiny do helisy | przesuń suwak, aby skręcić drabinę
+@opis Suwak zamienia płaską drabinę w podwójną helisę; podpisy: średnica 2 nm, jeden skręt 3,4 nm, około 10 par zasad na skręt. Wniosek: helisa to ta sama drabina skręcona — skręcenie nie zmienia par zasad.
+
 
 ```text
      nić 1 (5'→3')         nić 2 (3'→5')
@@ -424,6 +438,10 @@ DNA --(transkrypcja)--> RNA --(translacja)--> BIAŁKO
 - UAA, UAG, UGA → stop
 
 ### 7.4. Kod genetyczny — cechy (zapowiedź)
+
+@viz kod-genetyczny | Od DNA do aminokwasów | kliknij zasadę, aby wprowadzić mutację
+@opis Nić kodująca i matrycowa DNA, pod nimi mRNA podzielone na trójki (kodony) i odczytane aminokwasy; kliknięcie zasady zmienia kodon i pokazuje skutek: mutacja cicha, zmiany sensu albo nonsensowna. Wniosek: informacja jest zapisana w trójkach zasad, a zmiana jednej zasady może, ale nie musi zmienić białka.
+
 
 - **Trójkowy** — 3 nukleotydy (kodon) kodują 1 aminokwas.
 - **Zdegenerowany** — wiele kodonów koduje ten sam aminokwas (64 kodony, 20 aminokwasów).

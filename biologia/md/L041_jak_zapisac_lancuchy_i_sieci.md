@@ -462,6 +462,10 @@ Przykład:
 Strzałka oznacza **kierunek przepływu energii i materii z pokarmu do organizmu, który go zjada**.
 
 ### 23.2. Od łańcucha do sieci
+
+@viz siec-troficzna | Sieć troficzna lasu | kliknij organizm albo usuń gatunek
+@opis Sieć zależności pokarmowych w lesie: producenci, roślinożercy, drapieżniki i destruenci połączone strzałkami „kto zjada kogo”, z oznaczeniem poziomów troficznych; tryb usuwania gatunku pokazuje, które łańcuchy się przerywają. Wniosek: sieć składa się z wielu łańcuchów, więc zniknięcie jednego gatunku wpływa na wiele innych.
+
 W rzeczywistym ekosystemie:
 - jeden organizm może zjadać kilka innych,
 - jeden organizm może być pokarmem dla kilku gatunków.

@@ -155,17 +155,17 @@ W repozytorium istnieje kilka kopii `POLSKI_PODSTAWA_PLUS` o różnych nazwach i
 
 ## L001 — status po audycie 2026-10-09
 
-Główna wersja robocza do dalszej kontroli: `lekcje_html/L001-PL-Lektury-klas-IV-VI-imieslow.html` (metadane w pliku: wersja 19). Starsze warianty `L001-PL-Lektury...html` pozostają zachowane jako źródła porównawcze. Audyt: `plany/audyty/L001_AUDYT_2026-10-09.md`. Weryfikacja potwierdziła brak zduplikowanych ID i poprawność składni JavaScriptu; niezależna recenzja merytoryczna pozostaje otwarta.
+Główna wersja robocza do dalszej kontroli: `archiwum/lekcje_html_stare/L001-PL-Lektury-klas-IV-VI-imieslow.html` (metadane w pliku: wersja 19). Starsze warianty `L001-PL-Lektury...html` pozostają zachowane jako źródła porównawcze. Audyt: `plany/audyty/L001_AUDYT_2026-10-09.md`. Weryfikacja potwierdziła brak zduplikowanych ID i poprawność składni JavaScriptu; niezależna recenzja merytoryczna pozostaje otwarta.
 
 
 ## L002 — status po audycie 2026-10-09
 
-Główna wersja robocza: `lekcje_html/L002-PL-Hobbit-nieodmienne-czesci-mowy.html` (metadane w pliku: wersja 7.9). Dodano mikroćwiczenie rozpoznawania „czy” jako partykuły lub spójnika. Audyt: `plany/audyty/L002_AUDYT_2026-10-09.md`. Starsze warianty zachowano.
+Główna wersja robocza: `archiwum/lekcje_html_stare/L002-PL-Hobbit-nieodmienne-czesci-mowy.html` (metadane w pliku: wersja 7.9). Dodano mikroćwiczenie rozpoznawania „czy” jako partykuły lub spójnika. Audyt: `plany/audyty/L002_AUDYT_2026-10-09.md`. Starsze warianty zachowano.
 
 
 ## L003–L004 — status po audycie 2026-10-09
 
-- L003: doprecyzowano terminologię zaimków względnych/przysłownych w `lekcje_html/L003-PL-Opowiesci-z-Narnii-zaimek.html`; audyt `plany/audyty/L003_AUDYT_2026-10-09.md`.
+- L003: doprecyzowano terminologię zaimków względnych/przysłownych w `archiwum/lekcje_html_stare/L003-PL-Opowiesci-z-Narnii-zaimek.html`; audyt `plany/audyty/L003_AUDYT_2026-10-09.md`.
 - L004: poprawiono oba zachowane warianty HTML, aby reguła „nie” z przymiotnikami w 2026 r. nie sugerowała dowolnej pisowni rozdzielnej; audyt `plany/audyty/L004_AUDYT_2026-10-09.md`.
 
 

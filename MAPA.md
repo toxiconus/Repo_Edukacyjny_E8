@@ -3,11 +3,11 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (7 pl., 67 KB)
+## .  (7 pl., 68 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
-- `MAPA.md` 20 KB
+- `MAPA.md` 21 KB
 - `PRZEKAZANIE.md` 7 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 28 KB
@@ -17,7 +17,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L000-EN-Fiszki.txt` 11 KB
 - ⚠`L001-EN-Wszystkie-lekcje.md` 470 KB
 
-## angielski/lekcje_html  (6 pl., 902 KB)
+## angielski/archiwum/lekcje_html_stare  (6 pl., 902 KB)
 - ⚠`L002-EN-Operatory-i-czasowniki-posilkowe.html` 256 KB
 - ⚠`L003-EN-Tryb-rozkazujacy-czasowniki-stanow-phrasal-verbs.html` 145 KB
 - ⚠`L004-EN-Czasy-terazniejsze-i-przeszle.html` 109 KB
@@ -31,8 +31,18 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## biologia  (3 pl., 1.3 MB)
 - ⚠`BIO.all.v01.00.md` 711 KB
-- ⚠`BIOLOGIA_PODSTAWA_PLUS_v3.9.md` 578 KB
+- ⚠`BIOLOGIA_PODSTAWA_PLUS_v3.9.md` 579 KB
 - `STAN_LEKCJI_PODSTAWA_PLUS.md` 15 KB
+
+## biologia/archiwum/lekcje_html_stare  (8 pl., 990 KB)
+- ⚠`BIOLOGIA_L001_KOMORKA.html` 161 KB
+- ⚠`BIOLOGIA_L002_CZLOWIEK.html` 145 KB
+- ⚠`BIOLOGIA_L003_DIAGNOZA.html` 142 KB
+- ⚠`BIOLOGIA_L011_DNA.html` 85 KB
+- ⚠`BIOLOGIA_L012_CHROMOSOM.html` 230 KB
+- ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
+- ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
+- ⚠`L000-INDEKS-ROKU.html` 54 KB
 
 ## biologia/bio  (2 pl., 5 KB)
 - `BIO_KATALOG.md` 3 KB
@@ -54,22 +64,28 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
-## biologia/lekcje_html  (8 pl., 990 KB)
-- ⚠`BIOLOGIA_L001_KOMORKA.html` 161 KB
-- ⚠`BIOLOGIA_L002_CZLOWIEK.html` 145 KB
-- ⚠`BIOLOGIA_L003_DIAGNOZA.html` 142 KB
-- ⚠`BIOLOGIA_L011_DNA.html` 85 KB
-- ⚠`BIOLOGIA_L012_CHROMOSOM.html` 230 KB
-- ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
-- ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
-- ⚠`L000-INDEKS-ROKU.html` 54 KB
+## biologia/html  (34 pl., 5.3 MB)
+- (zwinięte; `ls biologia/html`) — duże:
+- ⚠`L001A_dodatek_ambitny_od_komorki_do.html` 186 KB
+- ⚠`L002_powtorka_czlowiek.html` 221 KB
+- ⚠`L004_organizacja_budowy_organizmu_od_komorki.html` 140 KB
+- ⚠`L005_blona_komorkowa_i_transport_substancji.html` 140 KB
+- ⚠`L006_fotosynteza_skad_roslina_bierze_materie.html` 140 KB
+- ⚠`L007_oddychanie_komorkowe_skad_komorka_bierze.html` 139 KB
+- ⚠`L008_mikroskop_jak_obserwowac_komorke_a.html` 139 KB
+- ⚠`L009_podzial_komorki_wzrost_regeneracja_i.html` 139 KB
 
-## biologia/md  (37 pl., 711 KB)
+## biologia/md  (34 pl., 669 KB)
 - (zwinięte; `ls biologia/md`) — duże:
 - ⚠`L002_powtorka_czlowiek.md` 74 KB
 - ⚠`L012_jak_dna_jest_upakowane_w.md` 54 KB
 - ⚠`L014_jak_komorki_ciala_powstaja_i.md` 57 KB
 - ⚠`X01_szablon_lekcji.md` 60 KB
+
+## biologia/md/archiwum  (3 pl., 46 KB)
+- `L001_komorka_jako_podstawowa_jednostka_zycia.md` 13 KB
+- `L003_diagnoza_startowa_genetyki.md` 17 KB
+- `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB
@@ -108,7 +124,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 101 KB)
+## chemia/che-modular  (13 pl., 102 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -419,6 +435,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
 - `pack_lesson.py` 28 KB
 
+## chemia/html  (46 pl., 4.8 MB)
+- (zwinięte; `ls chemia/html`) — duże:
+- ⚠`CHE.00.LAB.doswiadczenia.html` 106 KB
+- ⚠`CHE.00.REV01.powtorka_klasy_7.html` 214 KB
+- ⚠`CHE.00.REV02.powtorka_klasy_8.html` 92 KB
+- ⚠`CHE.00.REV06.zaawansowana.html` 119 KB
+- ⚠`CHE.00.S00.system_kursu.html` 88 KB
+- ⚠`CHE.00.W00.wstep.html` 73 KB
+- ⚠`CHE.01.F00.wspolne_bloku_F.html` 207 KB
+- ⚠`CHE.01.F01.jak_mysli_chemik.html` 158 KB
+
 ## chemia/lekcje_md/00  (6 pl., 238 KB)
 - `CHE.00.LAB.doswiadczenia.md` 29 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.md` 124 KB
@@ -487,7 +514,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (7 pl., 50 KB)
+## narzedzia  (8 pl., 54 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `lekcja_html.py` 14 KB
@@ -495,6 +522,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
 - `szkielety_polski.py` 24 KB
+- `zbuduj_wszystkie.py` 3 KB
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
 - `README.md` 0 KB
@@ -521,6 +549,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE_R07_stechiometria_z_nadmiarem.md` 8 KB
 - `CHE_X04_szereg_aktywnosci_metali.md` 15 KB
 - `README.md` 1 KB
+
+## olimpiada/html  (11 pl., 737 KB)
+- ⚠`BIO_B2_homeostaza.html` 72 KB
+- ⚠`BIO_B2a_skora_i_uklad_ruchu.html` 70 KB
+- ⚠`BIO_B2b_uklad_pokarmowy_i_odzywianie.html` 71 KB
+- ⚠`BIO_B2c_oddychanie_i_wydalanie.html` 70 KB
+- ⚠`BIO_B2d_uklad_nerwowy_i_zmysly.html` 71 KB
+- ⚠`BIO_B2e_uklad_dokrewny.html` 71 KB
+- ⚠`BIO_B2f_rozmnazanie_i_rozwoj.html` 70 KB
+- ⚠`CHE_J03_rownania_jonowe_i_straceanie.html` 79 KB
+- ⚠`CHE_R07_stechiometria_z_nadmiarem.html` 76 KB
+- ⚠`CHE_X04_szereg_aktywnosci_metali.html` 84 KB
+- `index.html` 2 KB
 
 ## olimpiada/narzedzia  (1 pl., 7 KB)
 - `mapa_chemia.py` 7 KB
@@ -597,6 +638,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 140 KB
 - ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 147 KB
 
+## polski/archiwum/lekcje_html_stare  (6 pl., 723 KB)
+- ⚠`L001-PL-Lektury-klas-IV-VI-imieslow.html` 175 KB
+- ⚠`L002-PL-Hobbit-nieodmienne-czesci-mowy.html` 132 KB
+- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 134 KB
+- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 91 KB
+- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 86 KB
+- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 104 KB
+
 ## polski/archiwum/master  (4 pl., 736 KB)
 - ⚠`POLSKI_PODSTAWA_PLUS_v7 (10).md` 200 KB
 - ⚠`POLSKI_PODSTAWA_PLUS_v7 (2).md` 173 KB
@@ -644,13 +693,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PL_L010_srodki_stylistyczne.md` 23 KB
 - `PL_L011_elementy_utworu_moral_puenta.md` 21 KB
 
-## polski/lekcje_html  (6 pl., 723 KB)
-- ⚠`L001-PL-Lektury-klas-IV-VI-imieslow.html` 175 KB
-- ⚠`L002-PL-Hobbit-nieodmienne-czesci-mowy.html` 132 KB
-- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 134 KB
-- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 91 KB
-- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 86 KB
-- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 104 KB
+## polski/html  (42 pl., 3.4 MB)
+- (zwinięte; `ls polski/html`) — duże:
+- ⚠`D01_czytanie_ze_zrozumieniem.html` 105 KB
+- ⚠`D02_fakt_opinia_teza_argument_wniosek.html` 83 KB
+- ⚠`D03_wnioskowanie_i_laczenie_informacji.html` 81 KB
+- ⚠`D04_odpowiedz_pelna_i_uzasadnienie.html` 80 KB
+- ⚠`D05_rozprawka.html` 86 KB
+- ⚠`D06_opowiadanie_tworcze.html` 83 KB
+- ⚠`D07_przemowienie.html` 79 KB
+- ⚠`D08_list_oficjalny.html` 77 KB
 
 ## polski/plany/audyty  (15 pl., 55 KB)
 - (zwinięte; `ls polski/plany/audyty`)
