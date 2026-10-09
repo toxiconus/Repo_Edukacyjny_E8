@@ -44,9 +44,7 @@ $$ Al₂(SO₄)₃ → 2 Al³⁺ + 3 SO₄²⁻                        ← wzór
 | a | b |
 @model kw-reszty-v01 | Tytuł przycisku | co pokazuje    ← model silnika (id z KATALOG_MODELI.md); jeden model = jedno miejsce
 @zlewka sole-doswiadczenia-v01 rx-cu-naoh | Zobacz w zlewce (pracownia GFX)
-@opis Zlewka z niebieskim CuSO₄(aq); po dodaniu NaOH wypada niebieski galaretowaty osad Cu(OH)₂↓.   ← OBOWIĄZKOWO pod każdym @model/@zlewka/obrazem
 ```
-**Opis wizualizacji (zasada stała):** pod każdym `@model`, `@zlewka`, wykresem i obrazem linia `@opis …` — co widać (elementy, kolory, liczby, co się zmienia) i jaki wniosek. W md jest jawna, w HTML staje się ukrytym komentarzem `<!-- OPIS: … -->`. Obraz w surowym HTML ma też `alt` z tym samym sensem. Build ostrzega o brakach.
 Pusta linia kończy akapit, listę i tabelę.
 
 ## Kontenery (`::: nazwa` … `:::`, można zagnieżdżać)

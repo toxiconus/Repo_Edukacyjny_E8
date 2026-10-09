@@ -20,3 +20,6 @@
 1. L011 (DNA: chemia par, ekspresja) — źródło `biologia/md/L011_*.md` + `biologia/wizualizacje/BIO.011w…` (tylko treść); nowe grafiki: kodon/transkrypcja.
 2. Liczby (2 nm, 3,4 nm, 10 par, ~2 m DNA) — do weryfikacji w Perplexity.
 3. (użytkownik) PR `claude/bio-lekcje` → `main` / GitHub Pages.
+
+## Zasada @opis (2026-10-09)
+- Każda wizualizacja w md ma linię `@opis` (build egzekwuje, `narzedzia/opis_wizualizacji.py`). Dług starych lekcji: `narzedzia/opis_dlug.json` — przy edycji lekcji dopisywać opisy.

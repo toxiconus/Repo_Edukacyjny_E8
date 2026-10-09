@@ -37,8 +37,9 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 
 ## Wizualizacje i obrazy — opis obowiązkowy (zawsze, każdy przedmiot)
 - Każda wizualizacja, model, zlewka, wykres, schemat SVG i obraz w lekcji ma **opis słowny w md**: co dokładnie widać (elementy, oznaczenia, kolory, liczby, co się zmienia) i jaki wniosek uczeń ma z tego wyciągnąć.
-- Opis jest jawny w md (linia `@opis …` zaraz pod `@model` / `@zlewka`; przy obrazie dodatkowo `alt`), a w HTML trafia jako ukryty komentarz `<!-- OPIS: … -->` (robi to `md2html.py`).
-- `md2html.py` wypisuje `UWAGA: N wizualizacji bez @opis` — przy nowych i edytowanych lekcjach ma być 0 dla tej lekcji.
+- **Piszę opis od razu przy tworzeniu md** — linia `@opis …` zaraz pod każdą `@model` / `@zlewka` / `@viz` / obrazem (`![…]`, `<img>` + `alt`, `<svg>`). W HTML staje się ukrytym komentarzem `<!-- OPIS: … -->`.
+- **Build to egzekwuje** (`chemia/che-modular/tools/md2html.py`, `biologia/bio/narzedzia/md2html_bio.py` → `narzedzia/opis_wizualizacji.py`): nowa lekcja bez opisu = błąd, build się nie wykona. Stare lekcje mają dług w `narzedzia/opis_dlug.json` — może tylko maleć (przy edycji lekcji uzupełniam opisy). Sprawdzenie bez budowania: `python3 narzedzia/opis_wizualizacji.py`.
+- Każdy nowy skrypt md→HTML (inne przedmioty) ma wołać `OPIS.egzekwuj()` i zamieniać `@opis` przez `OPIS.komentarz()`.
 - Cel: treść czytelna bez grafiki (eksport do Perplexity/LLM, czytniki ekranu, druk).
 
 ## Eksport do analizy (Perplexity)

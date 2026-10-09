@@ -86,11 +86,14 @@ PROMPT = """# PROMPT DLA PERPLEXITY — analiza lekcji: {przedmiot} (klasa 8, eg
 4. **Nowe lekcje.** Zaproponuj listę brakujących lekcji w kolejności realizacji (tytuł, zakres, wymagania podstawy, szacowana liczba godzin).
 5. **Spójność.** Wskaż sprzeczności między lekcjami (np. różne definicje lub oznaczenia tego samego) i powtórzenia.
 
+6. **Szkielety** (jeśli są na końcu pliku): dla każdego zaproponuj treść i zadania z kluczem.
+
 **Format odpowiedzi:**
 - A. Tabela per lekcja: `Lekcja | Błędy (cytat → poprawka → źródło) | Braki do uzupełnienia | Do skrócenia/przeniesienia`.
 - B. Lista wymagań podstawy niepokrytych (numer, treść, priorytet).
 - C. Plan nowych lekcji (tabela).
 - D. 10 najważniejszych poprawek do zrobienia najpierw.
+- E. Szkielety: propozycja treści per szkielet.
 Pisz po polsku, konkretnie, bez przepisywania całych lekcji. Każdą poprawkę merytoryczną poprzyj źródłem.
 
 ---
@@ -103,64 +106,90 @@ Pisz po polsku, konkretnie, bez przepisywania całych lekcji. Każdą poprawkę 
 """
 
 
-def build(nazwa, przedmiot, przedmiot_dop, kontekst, lessons, pomin):
+def build(nazwa, przedmiot, przedmiot_dop, kontekst, lessons, pomin, szkielety=()):
     """lessons: lista (kod, tytuł, treść, źródło)."""
     spis = "\n".join(f"- **{k}** — {t}  _(źródło: {z})_" for k, t, _, z in lessons)
+    if szkielety:
+        spis += "\n\nSzkielety na końcu pliku: " + "; ".join(f"{k} {t}" for k, t, _, _ in szkielety)
     if pomin:
         spis += "\n\nPominięte (starsze/duplikaty): " + "; ".join(pomin)
     parts = [PROMPT.format(przedmiot=przedmiot, przedmiot_dop=przedmiot_dop, liczba=len(lessons),
                            kontekst=kontekst, spis=spis)]
     for k, t, body, z in lessons:
         parts.append(f"\n\n## {k} — {t}\n\n_Źródło: {z}_\n\n{demote(body)}\n")
+    if szkielety:
+        parts.append("\n\n---\n\n# SZKIELETY DO UZUPEŁNIENIA (lekcje bez treści)\n\n"
+                     "Dla każdego szkieletu zaproponuj treść: kluczowe fakty, definicje, przykłady, doświadczenia, "
+                     "typowe błędy, 3–5 zadań w stylu CKE/konkursu z kluczem i źródłami.\n")
+        for k, t, body, z in szkielety:
+            parts.append(f"\n## {k} — {t}\n\n_Plik: {z}_\n\n{demote(body)}\n")
     parts.append(f"\n\n---\n_Plik wygenerowany automatycznie {DZIS} skryptem eksport/zbierz_lekcje.py._\n")
     out = OUT / f"PERPLEXITY_{nazwa}.md"
     out.write_text("".join(parts), encoding="utf-8")
     return out, len(lessons)
 
 
+def md_dir(d, pattern="*.md", skip=()):
+    """Lekcje z katalogu md (plik = lekcja, nagłówek YAML lub '# KOD — tytuł')."""
+    res = []
+    for p in sorted((ROOT / d).glob(pattern)):
+        if any(p.name.startswith(x) for x in skip):
+            continue
+        meta, body = front(p)
+        kod = meta.get("kod", "").strip('"') or p.stem.split("_")[0].split(".")[-1]
+        tyt = meta.get("tytul", "").strip('"')
+        if not tyt:
+            m = re.match(r"#\s*\S+\s*[—–-]\s*(.+)", body.lstrip())
+            tyt = m.group(1).strip() if m else p.stem
+            if m:
+                body = body.lstrip().split("\n", 1)[-1]
+        lead = meta.get("lead", "")
+        res.append((kod, tyt, (f"_{lead}_\n\n" if lead else "") + body, f"{d}/{p.name}"))
+    return res
+
+
 def biologia():
-    pak = split_md(ROOT / "biologia/BIOLOGIA_PODSTAWA_PLUS_v3.9_working (5).md",
-                   r"^# (L\d{3}) — (.*)$", end_re=r"^# (WARSTWA|SVG|BACKLOG|STATUS)")
-    html = {"L001": "biologia/BIOLOGIA_L001_KOMORKA v4.html", "L002": "biologia/BIOLOGIA_L002_CZLOWIEK_v4.html",
-            "L003": "biologia/BIOLOGIA_L003_DIAGNOZA_v4.html", "L011": "biologia/BIOLOGIA_L011_DNA (1).html",
-            "L012": "biologia/BIOLOGIA_L012_Chromosom v2.html", "L015": "biologia/BIOLOGIA_L015_MEJOZA.html",
-            "L017": "biologia/BIOLOGIA_L017_PUNNETT (2).html"}
-    les = []
-    for code in sorted(set(pak) | set(html)):
-        t, b, z = pick(code, pak.get(code), html.get(code))
-        les.append((code, t, b, z))
-    kont = ("Kurs biologii klasy 8: genetyka, ewolucja, ekologia + powtórki z klas 5–7 (komórka, człowiek). "
-            "Lekcje L001/L002/L011/L015/L017 są rozbudowane; pozostałe to wersje robocze (krótsze) — "
-            "oceń, czego im brakuje do poziomu lekcji rozbudowanych.")
-    return build("BIOLOGIA", "biologia", "biologii", kont, les, ["BIOLOGIA_PODSTAWA_PLUS: sekcje SYSTEM/WARSTWA/BACKLOG"])
+    kanon = {k: v for k, v in ((x[0], x) for x in md_dir("biologia/md", "L*.md"))}
+    for x in md_dir("biologia/bio/md"):  # gotowe lekcje (nowsze) zastępują kanon
+        kanon[x[0]] = x
+    les = [kanon[k] for k in sorted(kanon, key=lambda k: (k.startswith("REV"), k))]
+    szk = md_dir("olimpiada/do_uzupelnienia", "BIO_*.md")
+    kont = ("Kurs biologii klasy 8: genetyka, ewolucja, ekologia + powtórki z klas 5–7 (komórka, człowiek) "
+            "oraz powtórki konkursowe REV01–REV02 (konkurs kuratoryjny, etap szkolny). Kanon: BIO.all v5.2 pocięty na lekcje; "
+            "L010, REV01, REV02 to wersje gotowe (najnowsze). Część lekcji (L004–L009, L016A) to krótkie zarysy — "
+            "oceń, czego im brakuje. Na końcu są szkielety działu „organizm człowieka i homeostaza” (etap rejonowy konkursu) — do wypełnienia.")
+    return build("BIOLOGIA", "biologia", "biologii", kont, les,
+                 ["X00–X99 (system, szablon, backlog)", "stare HTML i pakiet v3.9 (scalone w kanonie v5.2)"], szk)
 
 
 def chemia():
-    pak = split_md(ROOT / "chemia/CHEMIA_PODSTAWA_PLUS_v1.1.md", r"^# LEKCJA (L\d{3}) — (.*)$")
-    html = {"L001": "chemia/CHEMIA_L001_FUNDAMENTY.html", "L013": "chemia/CHEMIA_L013_ZAAWANSOWANA_extra.html"}
-    zastap = {"L002": "N01", "L003": "N02", "L004": "N03", "L005": "N04"}
-    nowe = {}
-    for p in sorted((ROOT / "chemia/che/md").glob("*.md")):
-        meta, body = front(p)
-        nowe[meta.get("kod", p.stem)] = (meta.get("tytul", p.stem), meta.get("lead", ""), body, p.name)
-    les = []
-    for code in sorted(pak):
-        if code in zastap:
-            k = zastap[code]
-            t, lead, body, fn = nowe.pop(k)
-            les.append((k, t, (f"_{lead}_\n\n" if lead else "") + body, f"nowa wersja chemia/che/md/{fn} (zastępuje {code})"))
-            continue
-        t, b, z = pick(code, pak[code], html.get(code))
-        les.append((code, t, b, z))
-    for k, (t, lead, body, fn) in nowe.items():
-        les.append((k, t, (f"_{lead}_\n\n" if lead else "") + body, f"chemia/che/md/{fn}"))
-    kont = ("Kurs chemii klasy 8 (z powtórką klasy 7). Lekcje N01–N05 to najnowsza, najbardziej rozbudowana seria "
-            "(związki nieorganiczne: tlenki, wodorotlenki, kwasy, sole, wodorki); FIZ-01 to most z fizyką. "
-            "Dane liczbowe w N05 (temperatury wrzenia, elektroujemność, pKa, rozpuszczalność) wymagają szczególnej weryfikacji. "
-            "Planowany jest też blok fundamentów F00–F09 — zaproponuj jego zakres.")
+    got = "chemia/che-modular/lessons-md/gotowe"
+    gotowe = md_dir(got)
+    gk = {x[3].split("/")[-1].split("_")[0] for x in gotowe}  # F01, N01, REV01...
+    # kanon (lekcje_md): bez tego, co już jest w gotowych; seria N kanonu = stara numeracja tlenki..sole (zastąpiona)
+    kanon = []
+    for sub in ("00", "F", "R", "O"):
+        for x in md_dir(f"chemia/lekcje_md/{sub}", skip=("CHE.00.S00",)):
+            kod = x[0]
+            if kod in gk and kod != "R03":
+                continue
+            kanon.append(x)
+    def klucz(x):
+        k = x[0]
+        rz = {"W": 0, "F": 1, "N": 3, "R": 4, "O": 5, "L": 7, "R0": 4}
+        if k.startswith("FIZ"): return (2, k)
+        if k.startswith("REV"): return (6, k)
+        return (rz.get(k[0], 8), k, x[3])
+    les = sorted(gotowe + kanon, key=klucz)
+    szk = md_dir("olimpiada/do_uzupelnienia", "CHE_*.md")
+    kont = ("Kurs chemii klasy 7–8 (+ ambitne LO, konkurs kuratoryjny). Dwa rodzaje plików: "
+            "`lessons-md/gotowe` = lekcje gotowe (najnowsze, najlepiej dopracowane: F01–F06, N01 Powietrze, N01–N05 związki nieorganiczne, "
+            "R03, REV01, FIZ01); `lekcje_md` = materiał roboczy kanonu (F00, F07–F21, R, O, powtórki) — jeszcze nie gotowe lekcje. "
+            "Uwaga na numerację: w gotowych tlenki = N01, w kanonie tlenki = N02 (stara numeracja — kanonowe N02–N05 pominięto jako zastąpione). "
+            "Dane liczbowe (np. w N05: temperatury wrzenia, elektroujemność, pKa, rozpuszczalność) wymagają szczególnej weryfikacji. "
+            "Na końcu są szkielety (szereg aktywności, równania jonowe, stechiometria z nadmiarem) — do wypełnienia.")
     return build("CHEMIA", "chemia", "chemii", kont, les,
-                 ["L000-CHEMIA-Spis-tresci.html", "L001-CHEMIA-Zaawansowana.html", "L002-CHEMIA-Powtorka-Klasy7.html",
-                  "pakiet L002–L005 (zastąpione przez N01–N04)"])
+                 ["CHE.00.S00 (system kursu)", "kanon N02–N05 i F01–F06, REV01 (są w gotowych)", "stare HTML i pakiety PODSTAWA_PLUS"], szk)
 
 
 def polski():
@@ -176,8 +205,8 @@ def polski():
             "zaimek, przymiotnik/liczebnik, rzeczownik, czasownik). Sprawdź zgodność z listą lektur obowiązkowych "
             "na egzaminie 2027 i z zasadami pisowni (w tym zmiany ortograficzne obowiązujące od 2026, np. „nie” z imiesłowami). "
             "Oceń też brak lekcji o formach wypowiedzi (rozprawka, opowiadanie, wypowiedzi argumentacyjne) i lekturach z klas 7–8.")
-    return build("POLSKI", "język polski", "języka polskiego", kont, les,
-                 ["starsze wersje HTML L001 v2–v7 i L002–L006 bez v2", "POLSKI_PODSTAWA_PLUS_v7 (kopie)",
+    szk = md_dir("polski/do_uzupelnienia")
+    return build("POLSKI", "język polski", "języka polskiego", kont, les, szkielety=szk, pomin=["starsze wersje HTML L001 v2–v7 i L002–L006 bez v2", "POLSKI_PODSTAWA_PLUS_v7 (kopie)",
                   "L001-L006-PL-Wszystkie-lekcje.md (skrót)"])
 
 

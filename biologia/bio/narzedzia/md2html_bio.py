@@ -5,6 +5,7 @@ Wynik: jeden samodzielny plik HTML (style + bio-viz.js w środku) — działa of
 
 Dodatki składni (ponad SZABLON_LEKCJI.md chemii):
   @viz <id> {klucz="wartość" ...} | Tytuł | podpis     → grafika z biblioteki szablon/bio-viz.js (lista: BIO_KATALOG.md)
+  @opis tekst                                           → OBOWIĄZKOWO pod każdym @viz/obrazem: co widać + wniosek (HTML: <!-- OPIS -->)
   ::: mity | nagłówek                                   → karty „mit → poprawka”, linie:  mit || poprawka
   ::: drzewo                                            → mapa pojęć z listy wcięć (2 spacje = poziom)
 """
@@ -17,6 +18,10 @@ spec = importlib.util.spec_from_file_location('che_md2html', next(x for x in _P 
 m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 m.ROOT = BIO
 SZ = os.path.join(BIO, 'szablon')
+
+# zasada stała: każda wizualizacja ma linię @opis (narzedzia/opis_wizualizacji.py)
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'narzedzia'))
+import opis_wizualizacji as OPIS
 
 _open = open
 def _bio_open(path, *a, **k):
@@ -76,6 +81,8 @@ def preprocess(text):
         st = L[i].strip()
         if st.startswith('@viz '):
             out += ['', viz_line(st), '']; i += 1; continue
+        if st.startswith('@opis '):  # opis grafiki → ukryty komentarz w HTML
+            out += ['::: html', OPIS.komentarz(st[6:]), ':::']; i += 1; continue
         if st.startswith('::: mity') or st == '::: drzewo':
             j = i + 1
             while L[j].strip() != ':::': j += 1
@@ -105,6 +112,7 @@ def build(path):
 if __name__ == '__main__':
     mdd = os.path.join(BIO, 'md'); dist = os.path.join(BIO, 'dist'); os.makedirs(dist, exist_ok=True)
     args = sys.argv[1:] or sorted(os.path.join(mdd, f) for f in os.listdir(mdd) if f.endswith('.md'))
+    OPIS.egzekwuj(args)  # brak @opis w nowej lekcji = błąd
     for p in args:
         meta, doc = build(p)
         fn = os.path.splitext(os.path.basename(p))[0]

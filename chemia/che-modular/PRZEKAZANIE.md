@@ -66,3 +66,6 @@ node tools/test_lekcje.cjs --wzorzec=dist/_wz/wzorzec.json   # z porównaniem tr
 - **Rysunki atomu:** atlas `bohr`/`cloud` (`_anon_004/03_rys-bohr.js / 04_rys-poziomy-chmura.js`), widoki `atomModel` (`rdzen/s020.js`, `s021.js`, `s216.js`, `gfx-ui/s032.js`, `s074.js`), nowe `atomSVG`/`atomBohr` (rozszerzenia.js). Cel: `atomBohr` jako wspólny rysunek, widoki i atlas go wywołują.
 - **Izotopy:** `isotopeData` atlasu + odczyty `CHE.DATA.ISOTOPES` w ~10 modułach (`_anon_002, 021, 025, 026, 029, 030, 031`) — sprawdzić, czy to te same przeliczenia.
 - Każda podmiana zmienia źródła → test bajt w bajt (`silnik.py`) trzeba świadomie przestawić na nowy wzorzec + porównać zrzuty.
+
+## Zasada @opis (2026-10-09)
+- Każda wizualizacja w md ma linię `@opis` (build egzekwuje, `narzedzia/opis_wizualizacji.py`). Dług starych lekcji: `narzedzia/opis_dlug.json` — przy edycji lekcji dopisywać opisy.

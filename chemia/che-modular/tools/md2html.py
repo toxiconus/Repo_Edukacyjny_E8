@@ -6,6 +6,10 @@ import os, re, sys, json, html as H
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD = os.path.join(ROOT, 'lessons-md', 'gotowe')
+
+# zasada stała: każda wizualizacja ma linię @opis (narzedzia/opis_wizualizacji.py)
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'narzedzia'))
+import opis_wizualizacji as OPIS
 BLOCK_TAGS = set('div section article aside details summary figure figcaption table thead tbody tfoot tr td th ul ol li dl dt dd '
                  'p h1 h2 h3 h4 h5 h6 pre blockquote nav header footer main form fieldset hr svg canvas iframe video audio '
                  'style script template'.split())
@@ -107,6 +111,9 @@ def parse_blocks(lines, ctx):
         if m:
             t, at = split_trailing_attrs(m.group(2)); lv = len(m.group(1))
             out.append('<h%d%s>%s</h%d>' % (lv, attr_html(at), inline(t), lv)); i += 1; continue
+        # @opis — opis wizualizacji: jawny w md, w HTML ukryty komentarz
+        if st.startswith('@opis '):
+            out.append(OPIS.komentarz(st[6:])); i += 1; continue
         # @model / @zlewka
         if st.startswith('@model '):
             parts = [p.strip() for p in st[7:].split(' | ')]
@@ -128,7 +135,7 @@ def parse_blocks(lines, ctx):
             out.append('<div%s>%s</div>' % (attr_html(at), inline(t))); i += 1; continue
         # akapit / lista / tabela / surowy HTML — do pustej linii
         j = i
-        while j < n and lines[j].strip() and not lines[j].strip().startswith(':::') and not (j > i and re.match(r'(#{2,6} |@model |@zlewka |\$\$ )', lines[j].strip())):
+        while j < n and lines[j].strip() and not lines[j].strip().startswith(':::') and not (j > i and re.match(r'(#{2,6} |@model |@zlewka |@opis |\$\$ )', lines[j].strip())):
             j += 1
         blk = [x.rstrip() for x in lines[i:j]]; i = j
         out.append(leaf(blk, ctx))
@@ -421,6 +428,7 @@ def index(metas):
 
 if __name__ == '__main__':
     args = sys.argv[1:] or sorted(os.path.join(MD, f) for f in os.listdir(MD) if f.endswith('.md'))
+    OPIS.egzekwuj(args)  # brak @opis w nowej lekcji = błąd
     metas = []
     for p in args:
         meta, doc = render(p)

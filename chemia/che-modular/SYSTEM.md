@@ -49,7 +49,7 @@ Decyzja: kanonem jest dialekt, w którym napisano 6 lekcji (560 KB). Makra `$…
 
 **W tekście:** `**pogrub**`, `*kurs*`, `` `kod` ``, `[§3](#id)`, plakietki `[[basic:E8]] [[understand:…]] [[extra:…]] [[exam:…]] [[new:…]]`, wzory Unicode (H₂SO₄, Fe³⁺, →, ⇌, ↓, ↑), dosłowna gwiazdka `\*`.
 
-**Bloki:** `## n | Tytuł [[plakietka]] {#id}` · `###`–`#####` · `> notka` · listy `-` / `1.` · `$$ równanie` · tabela `| … |` · `@model id | przycisk | opis` · `@zlewka pracownia rx-klucz | przycisk`.
+**Bloki:** `## n | Tytuł [[plakietka]] {#id}` · `###`–`#####` · `> notka` · listy `-` / `1.` · `$$ równanie` · tabela `| … |` · `@model id | przycisk | opis` · `@zlewka pracownia rx-klucz | przycisk` · **`@opis tekst` — obowiązkowo w linii pod każdym `@model`/`@zlewka`/obrazem** (co widać + wniosek; w HTML ukryty komentarz `<!-- OPIS -->`; build bez niego kończy się błędem — `narzedzia/opis_wizualizacji.py`).
 
 **Kontenery `::: nazwa | argumenty` … `:::`** (użycie w 6 lekcjach w nawiasie):
 

@@ -20,3 +20,4 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - Zero utraty danych starego silnika — dzielić i ulepszać, nie wyrzucać; nowe rzeczy jako komponenty wielokrotnego użytku + wpis w katalogu.
 - Lekcje F tylko na polecenie, po jednej (ostatnio F06, 2026-10-08 17:36).
 - Dane niepewne oznaczać „do weryfikacji”.
+- (2026-10-09) Każda wizualizacja/obraz ma opis `@opis` w md → ukryty komentarz w HTML; build egzekwuje (`narzedzia/opis_wizualizacji.py`). Eksport do Perplexity: `python3 eksport/zbierz_lekcje.py`.
