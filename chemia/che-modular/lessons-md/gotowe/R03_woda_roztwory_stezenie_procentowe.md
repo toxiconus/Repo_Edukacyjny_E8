@@ -126,6 +126,9 @@ BHP: ostrożnie z gorącą wodą.
 
 *Wartości orientacyjne (tablice chemiczne); w zadaniu zawsze korzystaj z danych podanych w treści lub z wykresu.*
 
+@model r03-krzywe-v01 | Krzywe rozpuszczalności: odczyt, nasycenie, krystalizacja przy ochładzaniu
+@opis Wykres: oś pozioma — temperatura 0–100 °C, oś pionowa — masa substancji w gramach na 100 g wody (0–250 g). Cztery krzywe: KNO₃ (czerwona, stromo rośnie od ok. 13 g do ok. 246 g), NH₄Cl (fioletowa), KCl (zielona) i NaCl (niebieska, prawie pozioma, ok. 36–40 g). Kolorowy punkt (T, m) jest zielony pod krzywą (roztwór nienasycony), pomarańczowy na krzywej (nasycony), czerwony nad krzywą (nadmiar zostaje na dnie). Przerywane linie pokazują odczyt rozpuszczalności, a niebieska strzałka — ochłodzenie roztworu nasyconego do niższej temperatury; panel pod wykresem liczy masę kryształów i Cp roztworu nasyconego. Wniosek: rozpuszczalność odczytujemy z krzywej; im bardziej stroma krzywa, tym więcej soli wykrystalizuje przy ochładzaniu (KNO₃ — dużo, NaCl — prawie nic).
+
 **Wnioski z tabeli:** rozpuszczalność KNO₃ silnie rośnie z temperaturą, NaCl — prawie się nie zmienia. Dlatego KNO₃ łatwo **krystalizuje przy ochładzaniu**, a sól kuchenną otrzymuje się przez **odparowanie** wody.
 
 ::: karta understand | Gazy w wodzie
@@ -148,7 +151,7 @@ Wniosek: Odparowanie rozpuszczalnika pozwala wyodrębnić substancję rozpuszczo
 BHP: okulary; nie pochylamy się nad parownicą (pryskanie), gorącą parownicę chwytamy szczypcami.
 :::
 
-@zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w zlewce: odparowanie wody i krystalizacja
+@zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w parownicy: odparowanie wody i krystalizacja
 @opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, roztwór staje się coraz bardziej stężony, aż na dnie pojawiają się białe kryształy soli. Wniosek: przy odparowaniu masa soli się nie zmienia, maleje masa roztworu — stężenie rośnie, a po przekroczeniu rozpuszczalności sól krystalizuje.
 
 ## 5 | Stężenie procentowe [[basic:E8]] {#cp}
@@ -158,6 +161,9 @@ BHP: okulary; nie pochylamy się nad parownicą (pryskanie), gorącą parownicę
 **Cp = ms ÷ mr · 100%** · **mr = ms + mw** · **ms = Cp · mr ÷ 100%** · **mr = ms · 100% ÷ Cp**
 Roztwór 10% to 10 g substancji w 100 g **roztworu** (czyli 10 g substancji i 90 g wody).
 :::
+
+@model r03-stezenie-v01 | Stężenie procentowe: zlewka, pasek mas, rozcieńczanie i zatężanie
+@opis Po lewej zlewka 500 mL z roztworem: poziom cieczy rośnie z masą roztworu, a roztwór CuSO₄ jest tym bardziej niebieski, im większe stężenie; nierozpuszczony nadmiar soli leży na dnie. Po prawej poziomy pasek dzieli masę roztworu na część substancji (ms, granatowa) i wody (mw, jasnoniebieska), pod nim wzór Cp = ms ÷ mr · 100% z bieżącymi liczbami. Przyciski: dolej 100 g wody, odparuj 50 g wody, dosyp 10 g. Wniosek: przy rozcieńczaniu i odparowaniu masa substancji się nie zmienia, zmienia się masa roztworu i stężenie; substancja ponad rozpuszczalność nie wlicza się do Cp.
 
 | Zadanie | Rozwiązanie | Wynik |
 |---|---|---|

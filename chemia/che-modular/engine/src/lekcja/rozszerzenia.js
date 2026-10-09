@@ -591,6 +591,10 @@ G.vessels.register('probowka',{
  hmax:.86,pad:1,lw:2.5,rim:function(r){return[r.x,r.x+r.w,r.y+LIP]},
  deco:function(c,r,T){var dk=T&&T.dark;c.lineWidth=2;c.strokeStyle=dk?'rgba(203,213,225,.85)':'rgba(71,85,105,.85)';c.fillStyle=dk?'rgba(148,163,184,.18)':'rgba(255,255,255,.7)';
   rr(c,r.x-3,r.y,r.w+6,LIP+1,2.5);c.fill();c.stroke();blik(c,r.x+r.w*.22,r.y+LIP+6,r.x+r.w*.22,r.y+r.h-r.w*.7,dk)}});
+// 1b) ta sama szata dla starej probówki silnika 'testTube' (sceny: metal + kwas, węglan, wskaźniki…): geometria bez zmian (szer. ≤ 70 px), dochodzi brzeg i refleks
+(function(){var tt=G.vessels.get('testTube');if(!tt||tt._v3)return;var tw=function(r){var w=Math.min(r.w,70);return{w:w,x:r.x+(r.w-w)/2}};
+ G.vessels.register('testTube',Object.assign({},tt,{_v3:1,deco:function(c,r,T,st){if(tt.deco)tt.deco(c,r,T,st);var g=tw(r),dk=T&&T.dark;c.lineWidth=2;c.strokeStyle=dk?'rgba(203,213,225,.85)':'rgba(71,85,105,.85)';c.fillStyle=dk?'rgba(148,163,184,.18)':'rgba(255,255,255,.7)';
+  rr(c,g.x-3,r.y-2,g.w+6,LIP+1,2.5);c.fill();c.stroke();blik(c,g.x+g.w*.22,r.y+LIP+4,g.x+g.w*.22,r.y+r.h-g.w*.7,dk)}}))})();
 // 2) probówka nachylona (ogrzewanie): oś pod kątem A od pionu, wylot w lewo-górę, dno w prawo-dół (nad płomieniem);
 //    ciecz zostaje pozioma, bo silnik wypełnia prostokąt do poziomu i przycina go do kształtu probówki
 var A=45*Math.PI/180;
@@ -653,3 +657,74 @@ if(C.EXT_PRACOWNIA)C.EXT_PRACOWNIA('odparowanie-v01','Pracownia: odparowanie i k
  'GFX.rx · rozszerzenia.js §P (parownica: burner + tripod + evapDish)');
 })();
 
+
+/* §R R03 — krzywe rozpuszczalności i stężenie procentowe (lekcja R03 nie miała żadnego modelu, a to stały temat E8).
+   r03-krzywe-v01: krzywe KNO₃, NaCl, KCl, NH₄Cl (g/100 g wody, 0–100 °C), punkt (T, m) → nienasycony / nasycony / nadmiar; ochładzanie → masa kryształów; Cp roztworu nasyconego.
+   r03-stezenie-v01: zlewka GFX + pasek mas: Cp = ms ÷ mr · 100%; dolewanie wody, odparowanie, dosypanie; nadmiar ponad rozpuszczalność zostaje na dnie.
+   Dane: wartości tablicowe (orientacyjne, zgodne z tabelą w R03); w zadaniach liczy się dane z treści. */
+(function(){
+var C=window.CHE,V=C&&C.VIEW,G=C&&C.LAB&&C.LAB.GFX;if(!V||!V.define||C.EXT_R03)return;C.EXT_R03=1;
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+var ROZP={ // g substancji / 100 g wody, T = 0,10,...,100 °C
+ KNO3:{n:'KNO₃ — azotan(V) potasu',k:'#dc2626',d:[13.3,20.9,31.6,45.8,63.9,85.5,110,138,169,202,246]},
+ NH4Cl:{n:'NH₄Cl — chlorek amonu',k:'#7c3aed',d:[29.4,33.3,37.2,41.4,45.8,50.4,55.3,60.2,65.6,71.3,77.3]},
+ KCl:{n:'KCl — chlorek potasu',k:'#16a34a',d:[27.6,31.0,34.0,37.0,40.0,42.6,45.5,48.3,51.1,54.0,56.7]},
+ NaCl:{n:'NaCl — chlorek sodu',k:'#2563eb',d:[35.7,35.8,36.0,36.3,36.6,37.0,37.3,37.8,38.4,39.0,39.8]}};
+function R(s,T){var d=ROZP[s].d,i=Math.max(0,Math.min(9,Math.floor(T/10))),f=(T-i*10)/10;return d[i]+(d[i+1]-d[i])*f}
+function f1(x){return (Math.round(x*10)/10).toString().replace('.',',')}
+var CSS='.r3{font:14px/1.5 Inter,system-ui,sans-serif;color:inherit}.r3 .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0}.r3 label{display:flex;gap:6px;align-items:center}.r3 input[type=range]{width:160px}.r3 .nt{border:1px solid var(--border,#e2e8f0);border-left:4px solid var(--accent,#0d6868);border-radius:10px;padding:8px 12px;margin-top:8px}.r3 .o{border:1px solid var(--border,#cbd5e1);background:var(--surface,#fff);color:inherit;border-radius:8px;padding:4px 10px;cursor:pointer}.r3 .o.on{background:var(--accent,#0d6868);color:#fff;border-color:transparent}.r3 svg text{font:12px Inter,system-ui,sans-serif;fill:currentColor}.r3 .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}@media(max-width:640px){.r3 .two{grid-template-columns:1fr}}';
+function css(){if(document.getElementById('r3-css'))return;var s=el('style');s.id='r3-css';s.textContent=CSS;document.head.appendChild(s)}
+
+V.define('r03-krzywe-v01',{title:'Krzywe rozpuszczalności — odczyt, nasycenie, krystalizacja',tag:'E8',
+ hint:'Wybierz sól, ustaw temperaturę i masę substancji w 100 g wody. Punkt pod krzywą — roztwór nienasycony, na krzywej — nasycony, nad krzywą — nadmiar nie rozpuści się. Ochłodź roztwór nasycony i odczytaj masę kryształów.',
+ foot:'rozszerzenia.js §R · dane tablicowe (orientacyjne)',
+ build:function(host){css();host.innerHTML='';host.classList.add('r3');var sel='KNO3',T=40,m=50,T2=20;
+  var bs=el('div','bar','<b>Substancja:</b>');Object.keys(ROZP).forEach(function(k){var b=el('button','o',ROZP[k].n.split(' — ')[0]);b.type='button';b.onclick=function(){sel=k;draw()};b._k=k;bs.appendChild(b)});
+  var bc=el('div','bar');function rng(lab,min,max,st,v,f){var l=el('label',null,lab+' '),i=el('input');i.type='range';i.min=min;i.max=max;i.step=st;i.value=v;var o=el('b');l.append(i,o);i.oninput=function(){f(+i.value);draw()};bc.appendChild(l);return o}
+  var oT=rng('T =',0,100,1,T,function(v){T=v}),oM=rng('m =',0,250,1,m,function(v){m=v}),oT2=rng('ochłódź do',0,100,1,T2,function(v){T2=v});
+  var box=el('div'),info=el('div','nt');host.append(bs,bc,box,info);
+  var W=640,H=380,L=52,B=40,TP=14,RP=14,X=function(t){return L+t/100*(W-L-RP)},Y=function(v){return H-B-v/250*(H-B-TP)};
+  function draw(){[].forEach.call(bs.querySelectorAll('button'),function(b){b.classList.toggle('on',b._k===sel)});oT.textContent=T+' °C';oM.textContent=m+' g';oT2.textContent=T2+' °C';
+   var s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Wykres rozpuszczalności soli w zależności od temperatury">';
+   for(var t=0;t<=100;t+=10)s+='<line x1="'+X(t)+'" y1="'+TP+'" x2="'+X(t)+'" y2="'+(H-B)+'" stroke="currentColor" stroke-opacity=".12"/><text x="'+X(t)+'" y="'+(H-B+16)+'" text-anchor="middle">'+t+'</text>';
+   for(var v=0;v<=250;v+=50)s+='<line x1="'+L+'" y1="'+Y(v)+'" x2="'+(W-RP)+'" y2="'+Y(v)+'" stroke="currentColor" stroke-opacity=".12"/><text x="'+(L-6)+'" y="'+(Y(v)+4)+'" text-anchor="end">'+v+'</text>';
+   s+='<text x="'+((L+W-RP)/2)+'" y="'+(H-4)+'" text-anchor="middle">temperatura [°C]</text><text transform="translate(14 '+((TP+H-B)/2)+') rotate(-90)" text-anchor="middle">g substancji / 100 g wody</text>';
+   Object.keys(ROZP).forEach(function(k){var p=ROZP[k].d.map(function(v,i){return X(i*10)+','+Y(v)}).join(' '),on=k===sel;
+    s+='<polyline points="'+p+'" fill="none" stroke="'+ROZP[k].k+'" stroke-width="'+(on?3.5:1.6)+'" stroke-opacity="'+(on?1:.45)+'"/><text x="'+(X(100)-4)+'" y="'+(Y(ROZP[k].d[10])-6)+'" text-anchor="end" fill="'+ROZP[k].k+'" style="fill:'+ROZP[k].k+'">'+k.replace(/(\d)/g,function(d){return '₀₁₂₃₄₅₆₇₈₉'[d]})+'</text>'});
+   var r=R(sel,T),r2=R(sel,T2),stan=Math.abs(m-r)<=Math.max(1,r*.02)?'nasycony':m<r?'nienasycony':'nadmiar';
+   s+='<line x1="'+X(T)+'" y1="'+Y(r)+'" x2="'+X(T)+'" y2="'+(H-B)+'" stroke="currentColor" stroke-dasharray="4 3" stroke-opacity=".6"/><line x1="'+L+'" y1="'+Y(r)+'" x2="'+X(T)+'" y2="'+Y(r)+'" stroke="currentColor" stroke-dasharray="4 3" stroke-opacity=".6"/>';
+   if(T2<T){var mm=Math.min(m,r);s+='<line x1="'+X(T)+'" y1="'+Y(mm)+'" x2="'+X(T2)+'" y2="'+Y(mm)+'" stroke="#0891b2" stroke-width="2" marker-end="url(#r3a)"/><line x1="'+X(T2)+'" y1="'+Y(mm)+'" x2="'+X(T2)+'" y2="'+Y(Math.min(mm,r2))+'" stroke="#0891b2" stroke-width="2" stroke-dasharray="3 3"/>';
+    s+='<defs><marker id="r3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0891b2"/></marker></defs>'}
+   s+='<circle cx="'+X(T)+'" cy="'+Y(m)+'" r="7" fill="'+(stan==='nienasycony'?'#16a34a':stan==='nasycony'?'#f59e0b':'#dc2626')+'" stroke="#fff" stroke-width="2"/></svg>';
+   box.innerHTML=s;
+   var nad=Math.max(0,m-r),kr=Math.max(0,Math.min(m,r)-r2),cp=r/(r+100)*100;
+   info.innerHTML='<b>'+ROZP[sel].n+'</b>: rozpuszczalność w '+T+' °C ≈ <b>'+f1(r)+' g</b> / 100 g wody (odczyt z krzywej).<br>'+
+    'Punkt: '+m+' g w 100 g wody → '+(stan==='nienasycony'?'<b>roztwór nienasycony</b> (pod krzywą) — rozpuści się jeszcze ok. '+f1(r-m)+' g.':stan==='nasycony'?'<b>roztwór nasycony</b> (na krzywej).':'<b>nad krzywą</b> — rozpuści się tylko '+f1(r)+' g, <b>'+f1(nad)+' g zostanie na dnie</b> (roztwór nasycony z osadem).')+
+    '<br>Cp roztworu nasyconego w '+T+' °C = '+f1(r)+' ÷ ('+f1(r)+' + 100) · 100% ≈ <b>'+f1(cp)+'%</b>.'+
+    (T2<T?'<br>Ochłodzenie do '+T2+' °C: rozpuszczalność '+f1(r2)+' g → wykrystalizuje ok. <b>'+f1(kr)+' g</b> soli (na każde 100 g wody).':'<br><i>Ustaw „ochłódź do” poniżej '+T+' °C, aby policzyć krystalizację.</i>')}
+  draw()}});
+
+V.define('r03-stezenie-v01',{title:'Stężenie procentowe — zlewka i pasek mas',tag:'E8',
+ hint:'Ustaw masę substancji i wody albo dolewaj wodę, odparowuj i dosypuj. Masa substancji przy rozcieńczaniu i odparowaniu się nie zmienia — zmienia się masa roztworu i Cp. Nadmiar ponad rozpuszczalność zostaje na dnie.',
+ foot:'rozszerzenia.js §R · GFX beaker',
+ build:function(host){css();host.innerHTML='';host.classList.add('r3');var sub='CuSO4',ms=20,mw=180,T=20;
+  var SUB={CuSO4:{n:'CuSO₄ (niebieski roztwór)',R:20.7,col:[60,130,205]},NaCl:{n:'NaCl (bezbarwny)',R:36,col:[226,236,244]}}; // R przy 20 °C, g/100 g wody (orientacyjnie)
+  var b0=el('div','bar','<b>Substancja:</b>');Object.keys(SUB).forEach(function(k){var b=el('button','o',SUB[k].n);b.type='button';b._k=k;b.onclick=function(){sub=k;draw()};b0.appendChild(b)});
+  var bc=el('div','bar');function rng(lab,min,max,st,get,f){var l=el('label',null,lab+' '),i=el('input');i.type='range';i.min=min;i.max=max;i.step=st;var o=el('b');l.append(i,o);i.oninput=function(){f(+i.value);draw()};bc.appendChild(l);return{i:i,o:o,get:get}}
+  var rS=rng('ms',0,120,1,function(){return ms},function(v){ms=v}),rW=rng('mw',0,400,5,function(){return mw},function(v){mw=v});
+  var ba=el('div','bar');[['+ 100 g wody',function(){mw=Math.min(400,mw+100)}],['odparuj 50 g wody',function(){mw=Math.max(0,mw-50)}],['dosyp 10 g',function(){ms=Math.min(120,ms+10)}],['od nowa',function(){ms=20;mw=180}]].forEach(function(a){var b=el('button','o',a[0]);b.type='button';b.onclick=function(){a[1]();draw()};ba.appendChild(b)});
+  var two=el('div','two'),gl=el('div'),pr=el('div');two.append(gl,pr);host.append(b0,bc,ba,two);
+  var st={liquid:[226,236,244],level:.5,solids:[]};
+  if(G&&G.mount&&G.vessels){var bk=G.vessels.get('zlewka500')||G.vessels.register('zlewka500',Object.assign({},G.vessels.get('beaker'),{id:'zlewka500',scale:{max:500,step:100,minor:50,x:.68}}));G.mount(gl,{vessel:'zlewka500',height:250,get:function(){return st}})}else gl.textContent='Brak GFX';
+  function draw(){[].forEach.call(b0.querySelectorAll('button'),function(b){b.classList.toggle('on',b._k===sub)});rS.i.value=ms;rW.i.value=mw;rS.o.textContent=ms+' g';rW.o.textContent=mw+' g';
+   var S=SUB[sub],max=S.R*mw/100,rozp=Math.min(ms,max),nad=ms-rozp,mr=rozp+mw,cp=mr>0?rozp/mr*100:0;
+   var k=Math.min(1,cp/18),w=[245,248,252];st.liquid=sub==='CuSO4'?w.map(function(v,i){return Math.round(v+(S.col[i]-v)*k)}):S.col;
+   st.level=Math.max(.02,Math.min(1,mr/500));   // zlewka 500 mL, gęstość roztworu ≈ 1 g/cm³ (uproszczenie)st.solids=nad>.5?[{col:sub==='CuSO4'?[40,110,200]:[250,250,248],eq:Math.min(4,.6+nad/8),t:'powder',shape:'powder'}]:[];
+   var pw=mr>0?rozp/(mr)*100:0;
+   pr.innerHTML='<div style="font-size:13px;margin-bottom:4px">Masa roztworu mr = '+f1(rozp)+' g + '+mw+' g = <b>'+f1(mr)+' g</b></div>'+
+    '<div style="display:flex;height:28px;border-radius:8px;overflow:hidden;border:1px solid var(--border,#cbd5e1)"><div style="width:'+pw+'%;background:'+(sub==='CuSO4'?'#2563eb':'#94a3b8')+';color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;white-space:nowrap">'+(pw>12?'ms '+f1(rozp)+' g':'')+'</div><div style="flex:1;background:#bae6fd;color:#075985;font-size:12px;display:flex;align-items:center;justify-content:center">mw '+mw+' g</div></div>'+
+    '<div style="font-size:22px;margin:10px 0"><b>Cp = '+f1(rozp)+' ÷ '+f1(mr)+' · 100% ≈ '+f1(cp)+'%</b></div>'+
+    (nad>.5?'<div class="nt" style="border-left-color:#dc2626"><b>Nadmiar:</b> w '+mw+' g wody w '+T+' °C rozpuści się najwyżej '+f1(max)+' g ('+S.R.toString().replace('.',',')+' g / 100 g wody). <b>'+f1(nad)+' g zostaje na dnie</b> — roztwór jest nasycony, a do Cp liczymy tylko substancję rozpuszczoną.</div>':'')+
+    '<div class="nt"><b>Pamiętaj:</b> zlewka pokazuje objętość przy założeniu gęstości ≈ 1 g/cm³; dolewanie wody i odparowanie nie zmienia ms — zmienia się mr. Roztwór 10% to 10 g substancji w 100 g <b>roztworu</b> (10 g + 90 g wody).</div>'}
+  draw()}});
+})();

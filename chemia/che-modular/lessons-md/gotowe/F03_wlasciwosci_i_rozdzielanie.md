@@ -249,6 +249,8 @@ BHP: okulary; gorąca parownica — tylko szczypcami; pod koniec odparowania kry
 
 @zlewka f03-rozdzielanie-v01 f01Odparowanie | Zobacz w parownicy: odparowanie roztworu soli
 @opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
+@zlewka odparowanie-v01 odpCuSO4 | Zobacz w parownicy: krystalizacja siarczanu(VI) miedzi(II)
+@opis Parownica z niebieskim roztworem CuSO₄ stoi na trójnogu z siatką nad płomieniem palnika: ubywa cieczy, nad parownicą unosi się para, przy brzegach i na dnie rosną niebieskie kryształy. Wniosek: krystalizacja odzyskuje substancję rozpuszczoną; odparowujemy tylko do pojawienia się kryształów, bo prażenie do sucha usuwa wodę krystalizacyjną (hydrat bieleje).
 :::
 
 ::: dosw | Doświadczenie 3 — Opiłki żelaza, piasek i sól
