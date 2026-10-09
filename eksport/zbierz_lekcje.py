@@ -44,6 +44,7 @@ def demote(txt, shift=2):
 
 def front(path):
     s = Path(path).read_text(encoding="utf-8")
+    s = re.sub(r"^\s*<!--.*?-->\s*", "", s, flags=re.S)  # komentarz przed nagłówkiem (szkielety)
     meta, body = {}, s
     m = re.match(r"---\n(.*?)\n---\n", s, re.S)
     if m:
@@ -106,7 +107,11 @@ Pisz po polsku, konkretnie, bez przepisywania całych lekcji. Każdą poprawkę 
 """
 
 
-def build(nazwa, przedmiot, przedmiot_dop, kontekst, lessons, pomin, szkielety=()):
+def build(nazwa, przedmiot, przedmiot_dop, kontekst, lessons, pomin, szkielety=(), zalaczniki=()):
+    # szkielety już wypełnione (stan ≠ PUSTY) → lekcje robocze; puste zostają szkieletami
+    pelne = [x for x in szkielety if "PUSTY" not in front(ROOT / x[3])[0].get("stan", "PUSTY")]
+    szkielety = [x for x in szkielety if x not in pelne]
+    lessons = list(lessons) + [(k, t + " (konkursowa, wersja robocza)", b, z) for k, t, b, z in pelne]
     """lessons: lista (kod, tytuł, treść, źródło)."""
     spis = "\n".join(f"- **{k}** — {t}  _(źródło: {z})_" for k, t, _, z in lessons)
     if szkielety:
@@ -123,6 +128,9 @@ def build(nazwa, przedmiot, przedmiot_dop, kontekst, lessons, pomin, szkielety=(
                      "typowe błędy, 3–5 zadań w stylu CKE/konkursu z kluczem i źródłami.\n")
         for k, t, body, z in szkielety:
             parts.append(f"\n## {k} — {t}\n\n_Plik: {z}_\n\n{demote(body)}\n")
+    for tyt, plik in zalaczniki:
+        parts.append(f"\n\n---\n\n# ZAŁĄCZNIK: {tyt}\n\n_Plik: {plik}_ — użyj do oceny, czy lekcje przygotowują do takich zadań.\n\n"
+                     + (ROOT / plik).read_text(encoding="utf-8", errors="replace") + "\n")
     parts.append(f"\n\n---\n_Plik wygenerowany automatycznie {DZIS} skryptem eksport/zbierz_lekcje.py._\n")
     out = OUT / f"PERPLEXITY_{nazwa}.md"
     out.write_text("".join(parts), encoding="utf-8")
@@ -159,7 +167,9 @@ def biologia():
             "L010, REV01, REV02 to wersje gotowe (najnowsze). Część lekcji (L004–L009, L016A) to krótkie zarysy — "
             "oceń, czego im brakuje. Na końcu są szkielety działu „organizm człowieka i homeostaza” (etap rejonowy konkursu) — do wypełnienia.")
     return build("BIOLOGIA", "biologia", "biologii", kont, les,
-                 ["X00–X99 (system, szablon, backlog)", "stare HTML i pakiet v3.9 (scalone w kanonie v5.2)"], szk)
+                 ["X00–X99 (system, szablon, backlog)", "stare HTML i pakiet v3.9 (scalone w kanonie v5.2)"], szk,
+                 [("arkusz LKO biologia, etap szkolny 2025/26", "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_BIOLOGIA_SZKOLNY_2025_2026_PEŁNY.txt"),
+                  ("klucz LKO biologia, etap szkolny 2025/26", "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_BIOLOGIA_KLUCZ_SZKOLNY_2025_2026.txt")])
 
 
 def chemia():
@@ -189,7 +199,10 @@ def chemia():
             "Dane liczbowe (np. w N05: temperatury wrzenia, elektroujemność, pKa, rozpuszczalność) wymagają szczególnej weryfikacji. "
             "Na końcu są szkielety (szereg aktywności, równania jonowe, stechiometria z nadmiarem) — do wypełnienia.")
     return build("CHEMIA", "chemia", "chemii", kont, les,
-                 ["CHE.00.S00 (system kursu)", "kanon N02–N05 i F01–F06, REV01 (są w gotowych)", "stare HTML i pakiety PODSTAWA_PLUS"], szk)
+                 ["CHE.00.S00 (system kursu)", "kanon N02–N05 i F01–F06, REV01 (są w gotowych)", "stare HTML i pakiety PODSTAWA_PLUS"], szk,
+                 [("arkusz LKO chemia, etap szkolny 2025/26", "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_CHEMIA_SZKOLNY_2025_2026_PEŁNY.txt"),
+                  ("klucz LKO chemia, etap szkolny 2025/26", "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_CHEMIA_KLUCZ_SZKOLNY_2025_2026.txt"),
+                  ("fragmenty LKO etap rejonowy 2025/26", "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_REJON_2025_2026_fragmenty.md")])
 
 
 def polski():

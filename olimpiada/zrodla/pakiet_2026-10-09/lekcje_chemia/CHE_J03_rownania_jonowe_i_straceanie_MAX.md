@@ -146,9 +146,3 @@ Osad odfiltrować i przemyć.
 
 ---
 **Status:** MAX. Gotowe pod rejon LKO.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: wersja tabeli używana w szkole/na konkursie (zdjęcie lub lista)
-- DANE: doświadczenia z lekcji z obserwacjami
-- DANE: zadania rejonowe LKO + klucz; typowe zapisy wymagane w kluczu (strzałki ↓, ładunki)

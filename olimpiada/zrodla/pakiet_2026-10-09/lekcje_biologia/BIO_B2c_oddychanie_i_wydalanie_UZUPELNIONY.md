@@ -80,9 +80,3 @@ Wykrywanie CO₂ w powietrzu wydychanym (woda wapienna lub wskaźnik pH).
 
 # Status
 Gotowe. Poziom nefronu dostosowany do klasy 8.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: na jakim poziomie szczegółu szkoła uczy nefronu?
-- DANE: doświadczenia z podręcznika lub z lekcji
-- DANE: zadania rejonowe LKO biologia + klucz

@@ -84,10 +84,3 @@ Wykrywanie skrobi (jodyna), białek (reakcja biuretowa — jeśli dostępna), t�
 
 # Status
 Gotowe.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: tabela witamin i skutków niedoboru wymagana w szkole
-- DANE: czy BMI / piramida żywienia jest w Waszym podręczniku?
-- DANE: doświadczenia z podręcznika lub z lekcji
-- DANE: zadania rejonowe LKO biologia + klucz

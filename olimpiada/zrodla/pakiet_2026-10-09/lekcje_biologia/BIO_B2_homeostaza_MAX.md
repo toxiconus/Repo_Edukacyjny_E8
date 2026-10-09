@@ -104,8 +104,3 @@ Na podstawie opisu wykresu (wzrost glukozy → spadek u osoby zdrowej, utrzymuj�
 
 ---
 **Status:** MAX. Gotowe pod etap rejonowy (organizm człowieka).
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: czy w podręczniku jest ADH / wazopresyna? jakie hormony są wymagane?
-- DANE: wykresy/zadania z podręcznika lub arkuszy rejonowych LKO biologia + klucz

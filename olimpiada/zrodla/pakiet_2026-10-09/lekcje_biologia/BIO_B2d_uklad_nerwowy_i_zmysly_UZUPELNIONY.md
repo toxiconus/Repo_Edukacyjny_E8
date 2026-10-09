@@ -99,9 +99,3 @@ Dotyk, temperatura, ból — receptory w skórze.
 
 # Status
 Gotowe.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: doświadczenia ze zmysłami z podręcznika (plamka ślepa, rozmieszczenie receptorów)
-- DANE: doświadczenia z podręcznika lub z lekcji
-- DANE: zadania rejonowe LKO biologia + klucz

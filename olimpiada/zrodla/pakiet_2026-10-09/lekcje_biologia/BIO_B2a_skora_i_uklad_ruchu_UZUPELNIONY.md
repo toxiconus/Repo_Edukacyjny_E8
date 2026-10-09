@@ -87,9 +87,3 @@ Mięśnie działają na kości jak dźwignie (przyczepy: początkowy i końcowy)
 
 # Status
 Gotowe.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: czy robiliście doświadczenie z kością w occie / wyprażaniem?
-- DANE: doświadczenia z podręcznika lub z lekcji
-- DANE: zadania rejonowe LKO biologia + klucz

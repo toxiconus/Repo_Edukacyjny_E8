@@ -80,9 +80,3 @@ Oba układy współpracują (np. podwzgórze + przysadka).
 
 # Status
 Gotowe.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: lista hormonów wymaganych w Waszym podręczniku
-- DANE: doświadczenia z podręcznika lub z lekcji
-- DANE: zadania rejonowe LKO biologia + klucz

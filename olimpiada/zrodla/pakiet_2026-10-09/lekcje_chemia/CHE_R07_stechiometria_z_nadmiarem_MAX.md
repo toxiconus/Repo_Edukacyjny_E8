@@ -158,8 +158,3 @@ Odczyn mieszaniny: **zasadowy** (nadmiar NaOH).
 
 ---
 **Status:** MAX. Bezpośrednio pod zadania rejonowe LKO z nadmiarem.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: czy w szkole liczycie S i P jako S₈/P₄, czy jako S/P?
-- DANE: zadania z nadmiarem z arkuszy LKO + klucz (punktacja za metodę!)

@@ -178,11 +178,3 @@ Masa Cu = (64/65)×5 ≈ 4,9 g.
 ---
 **Status:** MAX — gotowe do intensywnego treningu konkursowego.  
 Po pojawieniu się arkuszy LKO rejonowych dodać sekcję „Archiwalne zadania LKO” z numerami i punktacją.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: szereg w wersji z Twojego podręcznika (K, Ca, Na, Mg, Al, Zn, Fe, … H … Cu, Ag, Au — dokładnie jaka kolejność?)
-- DANE: przykłady z lekcji/podręcznika
-- DANE: czy klasa robiła doświadczenie Zn/Mg/Cu + HCl? co zaobserwowano?
-- DANE: doświadczenia z obserwacjami (kolor roztworu, osad na metalu)
-- DANE: zadania z arkuszy rejonowych LKO (najlepiej 2024/25, 2025/26) + klucz

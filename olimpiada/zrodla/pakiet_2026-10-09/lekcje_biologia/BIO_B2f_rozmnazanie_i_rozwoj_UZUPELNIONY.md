@@ -79,9 +79,3 @@ Dojrzewanie: u dziewcząt zwykle wcześniej niż u chłopców; hormony płciowe 
 
 # Status
 Gotowe. Poziom dostosowany do podstawy programowej klasy 8 i typowych konkursów.
-
-
-## Do uzupełnienia danymi (z pierwotnego szkieletu)
-- DANE: na jakim poziomie (dni cyklu, hormony) uczy szkoła?
-- DANE: doświadczenia z podręcznika lub z lekcji
-- DANE: zadania rejonowe LKO biologia + klucz
