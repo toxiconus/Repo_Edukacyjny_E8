@@ -133,6 +133,9 @@ Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się anty
 
 **Budowa komórki bakteryjnej:** ściana komórkowa, błona komórkowa, cytoplazma, rybosomy, **nukleoid** (DNA bez otoczki jądrowej); u niektórych otoczka śluzowa, rzęski (ruch), plazmidy. **Kształty:** ziarniaki (kuliste), pałeczki, przecinkowce, krętki (spiralne).
 
+@viz wirus-bakteria | Wirus a bakteria — budowa | kliknij część, aby zobaczyć opis
+@opis Po lewej mały sześciokątny wirus: niebieski białkowy kapsyd, w środku fioletowa nitka materiału genetycznego (DNA albo RNA), wokół przerywana linia osłonki (nie u wszystkich wirusów); podpis „ok. 0,1 µm, powiększony bardziej”. Po prawej duża pałeczka bakterii (ok. 2 µm): gruba zielona ściana komórkowa, żółta błona, cytoplazma z szarymi kropkami rybosomów, fioletowy nukleoid, czerwony kolisty plazmid i rzęska. Kliknięcie części pokazuje jej opis. Wniosek: bakteria jest komórką z własną przemianą materii i rybosomami (antybiotyki mogą na nią działać), a wirus to cząstka bez budowy komórkowej — kapsyd z DNA lub RNA, namnaża się tylko w komórce gospodarza; antybiotyki na wirusy nie działają.
+
 | Czynność | Bakterie |
 |---|---|
 | Odżywianie | **samożywne** (np. sinice — fotosynteza) lub **cudzożywne**: saprotrofy (rozkładają martwą materię), pasożyty, symbionty |
@@ -375,6 +378,9 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 
 ### 8.2 Płazy {#plazy}
 **Bezogonowe** (żaba, ropucha, rzekotka) i **ogoniaste** (traszka, salamandra). Żyją w wodzie i na lądzie. **Skóra** cienka, wilgotna, z gruczołami śluzowymi — **oddychanie skórą** i **płucami** (kijanki — skrzelami). Kończyny — u żaby tylne skoczne z błoną pływną. **Rozmnażanie:** u bezogonowych **zapłodnienie zewnętrzne** w wodzie, jaja w osłonkach (**skrzek**); **rozwój złożony z przeobrażeniem**: kijanka (skrzela, ogon, życie w wodzie) → młoda żaba. Zimują w odrętwieniu. **W Polsce wszystkie płazy są chronione.** **Znaczenie:** zjadają owady (także szkodniki), są pokarmem innych zwierząt, świadczą o czystości środowiska.
+
+@viz przeobrazenie-plaza | Rozwój złożony żaby — przeobrażenie | przesuń suwak etapów
+@opis Scena przy powierzchni wody z osią pięciu etapów u dołu (aktywny etap zaznaczony). Etapy: skrzek — skupisko jaj z ciemnym zarodkiem w galaretowatej osłonce w wodzie; kijanka — ciało z długim ogonem i czerwonymi skrzelami zewnętrznymi; kijanka z kończynami — pojawiają się tylne nogi, ogon nadal jest; młoda żaba — cztery kończyny, krótki zanikający ogon, wychodzi na brzeg; dorosła żaba bez ogona na lądzie. Panel pod sceną podaje dla etapu sposób oddychania (skrzela → płuca i skóra), pokarm i środowisko. Wniosek: żaba ma rozwój złożony — larwa (kijanka) żyje w wodzie i oddycha skrzelami, a dorosły płaz oddycha płucami i skórą i żyje głównie na lądzie.
 
 ### 8.3 Gady {#gady}
 **Przystosowania do lądu:** sucha skóra pokryta **rogowymi łuskami** lub tarczkami (chroni przed utratą wody; linienie), oddychanie **płucami**, **zapłodnienie wewnętrzne**, jaja z dużą ilością żółtka w **skórzastej lub wapiennej osłonce** składane na lądzie, **rozwój prosty**. **W Polsce:** jaszczurka zwinka, padalec (beznoga jaszczurka), **żmija zygzakowata** (jedyny jadowity wąż w Polsce), zaskroniec (żółte plamy na głowie), żółw błotny. Wszystkie gady w Polsce są chronione. **Znaczenie:** zjadają owady i gryzonie.

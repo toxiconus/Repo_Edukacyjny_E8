@@ -556,7 +556,7 @@ mount:function(el){var id='bw'+(++UID),mode='info',sel=null,removed={},sg=H('div
 (function(){
 var BIO=window.BIO;if(!BIO||!BIO.define||BIO.REV_VIZ)return;BIO.REV_VIZ=1;
 var S=BIO.S,svg=BIO.svg,T=BIO.T,btn=BIO.btn;
-function H(t,c,h,k){var e=BIO.H(t,c,h,k);if(c==='bv-info'){var w=BIO.H('div');e.appendChild(w);Object.defineProperty(e,'innerHTML',{set:function(v){w.innerHTML=String(v).replace(/<(\/?)b(\s|>)/g,'<$1strong$2')},get:function(){return w.innerHTML}})}return e}  // tekst w środku jednego div — <b> nie łamie wiersza
+function H(t,c,h,k){var e=BIO.H(t,c,h,k);if(c==='bv-info'){var w=BIO.H('div');e.appendChild(w);Object.defineProperty(e,'innerHTML',{set:function(v){w.innerHTML=String(v).replace(/^<b>([\s\S]*?)<\/b>/,'<strong style="display:block;margin-bottom:2px">$1</strong>').replace(/<(\/?)b(\s|>)/g,'<$1strong$2').replace(/<span>/g,'<span style="display:block;margin-top:3px">')},get:function(){return w.innerHTML}})}return e}  // tekst w środku jednego div — <b> nie łamie wiersza
 function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
 function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=btn(it[1],function(){cb(it[0])});if(it[0]===cur)b.classList.add('on');b.setAttribute('aria-pressed',String(it[0]===cur));box.appendChild(b)})}
 
@@ -633,4 +633,59 @@ mount:function(el,o){var K={q1:['Czy ciało pokrywają pióra?','PTAKI','q2'],q2
      (zw&&/delfin|wieloryb/.test(zw[0])?' Delfin i wieloryb mają płetwy, ale oddychają <b>płucami</b> i karmią młode mlekiem — to ssaki.':zw&&zw[0]==='nietoperz'?' Nietoperz lata, ale ma sierść, nie pióra — to ssak.':zw&&zw[0]==='pingwin'?' Pingwin nie lata, ale ma pióra — to ptak.':zw&&zw[0]==='konik morski'?' Konik morski nie przypomina ryby, ale ma skrzela i płetwy — to ryba.':'')}
    else out.innerHTML='Klucz dwudzielny: na każde pytanie odpowiadasz <b>tak</b> albo <b>nie</b>; kolejność pytań prowadzi od cech najbardziej wyróżniających (pióra, sierść).'}
   draw()}});
+
+BIO.define('wirus-bakteria',{opis:'Wirus (kapsyd + DNA/RNA, ew. osłonka) obok komórki bakterii (ściana, błona, cytoplazma, rybosomy, nukleoid, plazmid, rzęska) w różnej skali; klik = opis; panel porównania (komórka? metabolizm? antybiotyk?)',
+mount:function(el,o){var pic=H('div'),out=H('div','bv-info');el.appendChild(pic);el.appendChild(out);
+  var s=svg(420,230,'Porównanie budowy wirusa i komórki bakterii');
+  function g(k,kids){var e=S('g',{'data-k':k});kids.forEach(function(c){e.appendChild(c)});s.appendChild(e);return e}
+  // bakteria (pałeczka) — duża
+  g('sciana',[S('rect',{x:150,y:40,width:250,height:130,rx:65,fill:'#e9f1dc',stroke:'#6b8f3a','stroke-width':7})]);
+  g('blona',[S('rect',{x:158,y:48,width:234,height:114,rx:57,fill:'#f4f8ec',stroke:'#c7a73a','stroke-width':2.5})]);
+  var ryb=[];for(var i=0;i<26;i++){var x=180+(i*53)%195,y=62+(i*37)%88;ryb.push(S('circle',{cx:x,cy:y,r:2.6,fill:'#5d6b7a'}))}g('rybosomy',ryb);
+  g('nukleoid',[S('path',{d:'M235 92 q12 -22 26 0 t26 0 t26 0 q-6 22 -22 14 t-28 8 t-26 -4 t-2 -18z',fill:'none',stroke:'#7b3fa0','stroke-width':2.4})]);
+  g('plazmid',[S('circle',{cx:350,cy:130,r:9,fill:'none',stroke:'#c0392b','stroke-width':2.2})]);
+  g('rzeska',[S('path',{d:'M400 105 q14 -16 10 -2 t12 0 t10 -6',fill:'none',stroke:'#6b8f3a','stroke-width':2.4})]);
+  s.appendChild(T(275,190,'bakteria (pałeczka) ≈ 2 µm',{s:12}));
+  // wirus — mały
+  var vx=62,vy=110,hex=[];for(var k=0;k<6;k++){var a=Math.PI/3*k-Math.PI/6;hex.push((vx+24*Math.cos(a)).toFixed(1)+','+(vy+24*Math.sin(a)).toFixed(1))}
+  g('oslonka',[S('circle',{cx:vx,cy:vy,r:33,fill:'none',stroke:'#c7a73a','stroke-width':2,'stroke-dasharray':'3 3'})]);
+  g('kapsyd',[S('polygon',{points:hex.join(' '),fill:'#dbe8f6',stroke:'#2a62b5','stroke-width':2.5})]);
+  g('kwas',[S('path',{d:'M'+(vx-11)+' '+vy+' q5 -10 10 0 t10 0',fill:'none',stroke:'#7b3fa0','stroke-width':2.2})]);
+  s.appendChild(T(vx,160,'wirus ≈ 0,1 µm',{s:12}));s.appendChild(T(vx,176,'(powiększony bardziej!)',{s:10,f:'var(--viz-mut)'}));
+  s.appendChild(T(210,214,'Skale nie są równe — bakteria jest ok. 10–100 razy większa od wirusa.',{s:11,f:'var(--viz-mut)'}));
+  pic.appendChild(s);
+  BIO.fx.info(pic,out,{sciana:['Ściana komórkowa',' Sztywna osłona bakterii (u bakterii z mureiny — nie z celulozy). Na nią działa część antybiotyków.'],
+   blona:['Błona komórkowa',' Oddziela wnętrze od otoczenia, selektywnie przepuszczalna — jak u każdej komórki.'],
+   rybosomy:['Rybosomy',' Wytwarzają białka. Wirus nie ma rybosomów — używa rybosomów gospodarza.'],
+   nukleoid:['Nukleoid',' Kolista cząsteczka DNA leżąca w cytoplazmie, bez otoczki jądrowej — bakteria nie ma jądra (prokariont).'],
+   plazmid:['Plazmid',' Mała kolista cząsteczka DNA; może nieść np. geny oporności na antybiotyki.'],
+   rzeska:['Rzęska',' Służy do ruchu (nie wszystkie bakterie ją mają).'],
+   kapsyd:['Kapsyd',' Białkowy płaszcz wirusa, chroni materiał genetyczny.'],
+   kwas:['Materiał genetyczny wirusa',' DNA albo RNA (nigdy oba). To jedyna „instrukcja”, jaką wirus wnosi do komórki.'],
+   oslonka:['Osłonka (nie u wszystkich wirusów)',' Błoniasta warstwa pochodząca z komórki gospodarza — ma ją np. wirus grypy i HIV.']});
+  out.innerHTML='<b>Wirus a bakteria</b><span>Bakteria to <strong>komórka</strong>: ma własną przemianę materii, rybosomy, rozmnaża się przez podział — antybiotyki mogą ją zniszczyć. Wirus to <strong>cząstka bez budowy komórkowej</strong>: kapsyd + DNA lub RNA; namnaża się tylko w żywej komórce — <strong>antybiotyki na wirusy nie działają</strong>.</span>'}});
+
+BIO.define('przeobrazenie-plaza',{opis:'Rozwój złożony żaby: skrzek → kijanka (skrzela zewnętrzne) → kijanka z kończynami → młoda żaba (zanik ogona) → żaba; suwak etapów, oddychanie i środowisko na każdym etapie',
+mount:function(el,o){var E=[['skrzek','jaja w galaretowatej osłonce, w wodzie','—','woda'],['kijanka','ogon, skrzela zewnętrzne, odżywia się roślinami (glonami)','skrzela','woda'],['kijanka z kończynami','najpierw tylne, potem przednie kończyny; skrzela wewnętrzne, rozwijają się płuca','skrzela → płuca','woda'],['młoda żaba','zanika ogon, cztery kończyny, wychodzi na ląd','płuca + skóra','woda i ląd'],['żaba (dorosła)','drapieżnik (owady); rozmnaża się w wodzie — zapłodnienie zewnętrzne','płuca + skóra','ląd i woda']];
+  var tools=H('div','bv-tools'),rng=document.createElement('input');rng.type='range';rng.min=0;rng.max=4;rng.value=o.etap||1;rng.setAttribute('aria-label','Etap rozwoju');rng.style.flex='1 1 160px';
+  tools.appendChild(H('span','bv-score','etap:'));tools.appendChild(rng);var pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  function zaba(e,x,y,k){var G=S('g'),c='#4f8a3c',d='#2f5e22';
+   if(e===0){for(var i=0;i<9;i++){var a=i*0.7,r=8+i*2.2;G.appendChild(S('circle',{cx:x+r*Math.cos(a),cy:y+r*Math.sin(a),r:7,fill:'#e7f1f7',stroke:'#9bb7c7'}));G.appendChild(S('circle',{cx:x+r*Math.cos(a),cy:y+r*Math.sin(a),r:2.6,fill:'#1a2332'}))}return G}
+   var ogon=e<=2?1:e===3?.4:0,body=e>=3?[26,18]:[16,12];
+   if(ogon)G.appendChild(S('path',{d:'M'+(x-body[0]+4)+' '+y+' q-'+(30*ogon)+' -14 -'+(46*ogon)+' 0 q'+(16*ogon)+' 14 '+(46*ogon)+' 0z',fill:c,opacity:.85}));
+   if(e>=2){G.appendChild(S('path',{d:'M'+(x-8)+' '+(y+10)+' l-12 14 l-8 0',fill:'none',stroke:d,'stroke-width':3,'stroke-linecap':'round'}))}
+   if(e>=3){G.appendChild(S('path',{d:'M'+(x+12)+' '+(y+10)+' l6 12 l6 0',fill:'none',stroke:d,'stroke-width':3,'stroke-linecap':'round'}))}
+   G.appendChild(S('ellipse',{cx:x,cy:y,rx:body[0],ry:body[1],fill:c}));
+   G.appendChild(S('circle',{cx:x+body[0]*.5,cy:y-body[1]*.55,r:3.4,fill:'#fff',stroke:d}));G.appendChild(S('circle',{cx:x+body[0]*.5,cy:y-body[1]*.55,r:1.6,fill:'#1a2332'}));
+   if(e===1){[-1,1].forEach(function(z){G.appendChild(S('path',{d:'M'+(x+2)+' '+(y+z*10)+' q4 '+(z*8)+' 10 '+(z*6),fill:'none',stroke:'#c0392b','stroke-width':2}))})}
+   return G}
+  function draw(){var e=+rng.value,s=svg(420,200,'Przeobrażenie żaby, etap: '+E[e][0]);
+   s.appendChild(S('rect',{x:0,y:0,width:420,height:200,fill:'#f1f7fb'}));
+   s.appendChild(S('path',{d:'M0 60 Q105 52 210 60 T420 60 L420 200 L0 200z',fill:'#d6ebf6'}));
+   s.appendChild(S('path',{d:'M0 60 Q105 52 210 60 T420 60',fill:'none',stroke:'#7fb6d6','stroke-width':2}));if(e>=3)s.appendChild(S('path',{d:'M0 200 L0 78 Q50 52 120 56 Q185 60 215 92 Q238 130 246 200z',fill:'#cfe3b8',stroke:'#8fb36a','stroke-width':2}));s.appendChild(T(410,48,'powierzchnia wody',{s:10,a:'end',f:'#4b86a8'}));
+   E.forEach(function(q,i){var cx=44+i*83,on=i===e;s.appendChild(S('circle',{cx:cx,cy:182,r:on?9:6,fill:on?'var(--accent)':'#c9d6dd'}));if(i<4)s.appendChild(S('line',{x1:cx+10,y1:182,x2:cx+73,y2:182,stroke:'#c9d6dd','stroke-width':2}))});
+   s.appendChild(zaba(e,e>=3?112:210,e>=3?34:118,1));
+   s.appendChild(T(e>=3?330:210,24,E[e][0],{s:16,w:800}));clr(pic);pic.appendChild(s);
+   out.innerHTML='<b>'+(e+1)+'. '+E[e][0]+'</b><span>'+E[e][1]+'.</span><span>Oddychanie: <strong>'+E[e][2]+'</strong> · środowisko: <strong>'+E[e][3]+'</strong></span>'+(e===4?'<span>To <strong>rozwój złożony (z przeobrażeniem)</strong>: larwa (kijanka) różni się od dorosłej żaby budową, oddychaniem, pokarmem i środowiskiem.</span>':'')}
+  rng.oninput=draw;draw()}});
 })();

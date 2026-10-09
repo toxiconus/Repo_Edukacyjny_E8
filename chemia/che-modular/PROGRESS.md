@@ -59,3 +59,4 @@
 - 2026-10-09 18:15 F04: trening f04-nuklid-v01 (p, n, e z zapisu nuklidu); kontrola molecule3d i tabel rozpuszczalności — bez błędów.
 - 2026-10-09 18:50 wizualizacje: F02 f02-czastki-v01; BIO REV01 fotosynteza-oddychanie, energia-glukozy, proba-kontrolna; REV02 klucz-kregowce.
 - 2026-10-09 19:15 BIO REV01: +3 grafiki z katalogu, poprawki czytelności (panel info, ATP, tabela, telefon).
+- 2026-10-09 19:40 BIO REV02: wirus-bakteria, przeobrazenie-plaza.
