@@ -21,3 +21,13 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - Lekcje F tylko na polecenie, po jednej (ostatnio F06, 2026-10-08 17:36).
 - Dane niepewne oznaczać „do weryfikacji”.
 - (2026-10-09) Każda wizualizacja/obraz ma opis `@opis` w md → ukryty komentarz w HTML; build egzekwuje (`narzedzia/opis_wizualizacji.py`). Eksport do Perplexity: `python3 eksport/zbierz_lekcje.py`.
+
+## Sesja 2026-10-09 (noc) — eksport, weryfikacja W1, polski
+- **Eksport do LLM:** `python3 eksport/zbierz_lekcje.py` → `eksport/out/PERPLEXITY_<PRZEDMIOT>.md` (prompt + wszystkie lekcje, znacznik [W1] przy zweryfikowanych). Rejestr weryfikacji: `WERYFIKACJA.md` (W1 = treść zapisu, W2 = zakres — jeszcze nie robiony; na końcu „Wnioski przekrojowe”).
+- **Zasada @opis** (każda wizualizacja ma opis w md → komentarz w HTML) egzekwowana w buildach CHE i BIO (`narzedzia/opis_wizualizacji.py`, dług `narzedzia/opis_dlug.json`, zostało 42 — N05, FIZ01, R03?, BIO).
+- **Chemia W1:** F01–F06, N01 powietrze, N01–N04, R03, REV01 — wprowadzone do lekcji gotowych (+@opis); F07–F21, R04–R09, O, REV02, LAB, X04/J03/R07 — sekcje „AUDYT W1” w kanonie (`chemia/lekcje_md/`, `olimpiada/do_uzupelnienia/`); J01–J06 i alkohole/kwasy/estry — materiał wstępny od Perplexity (czeka na W1). Narzędzia: `narzedzia/audyt_do_kanonu.py`, `narzedzia/latex2uni.py`.
+- **Polski W1:** poprawione potwierdzone błędy L002–L005; ocena `polski/plany/audyty/W1_POLSKI_ocena_2026-10-09.md` (odrzucone nieaktualne zasady „nie” — reforma 2026). **Decyzja użytkownika otwarta:** korekta scalająca kursu polskiego (moduły wspólne + odsyłacze).
+- **Angielski W1:** poprawki D1/D2/L008/L010; ocena `angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md`.
+- **Polski — priorytet:** szkielety lekcji podstawowych `polski/podstawy/` (G01–G17 części mowy i składnia, S01–S06 środki stylistyczne), generator `narzedzia/szkielety_polski.py`, paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (zawiera tylko puste). G01–G03 wypełnione przez Grok i przejrzane (poprawki opisane na końcu plików). **Następny krok:** wypełnić G04–G17 i S01–S06 w innym LLM (po 2–4 lekcje), przejrzeć jak G01–G03, potem W1; potem ewentualnie build HTML dla polskiego (nowy skrypt musi wołać `OPIS.egzekwuj()`).
+- **Znany błąd:** test chemii sporadycznie FAIL `N01_powietrze_i_gazy` (canvas `arc` z ujemnym promieniem) — sprzed tych zmian, do naprawy.
+

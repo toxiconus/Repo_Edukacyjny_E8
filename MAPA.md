@@ -3,14 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 71 KB)
+## .  (11 pl., 74 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
 - `MAPA.md` 18 KB
-- `PRZEKAZANIE.md` 3 KB
+- `PRZEKAZANIE.md` 5 KB
 - `README.md` 0 KB
-- `WERYFIKACJA.md` 24 KB
+- `WERYFIKACJA.md` 25 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -496,12 +496,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (5 pl., 13 KB)
+## narzedzia  (6 pl., 36 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
+- `szkielety_polski.py` 24 KB
 
 ## olimpiada  (4 pl., 116 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
@@ -599,6 +600,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## polski/plany/audyty  (2 pl., 25 KB)
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
 - `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
+
+## polski/podstawy  (23 pl., 74 KB)
+- (zwinięte; `ls polski/podstawy`)
 
 ## wizualizacje-projekty  (3 pl., 71 KB)
 - `PROJEKT.md` 9 KB

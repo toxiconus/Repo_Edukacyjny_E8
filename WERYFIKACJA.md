@@ -83,6 +83,9 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 | angielski | L009 | Przymiotniki | 2026-10-09 | bez błędów potwierdzonych; uzupełnienia w planie (`angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md`); ocena: `angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md` | `angielski/plany/audyty/W1_perplexity_ANGIELSKI_2026-10-09.md` | — |
 | angielski | L011 | Zaimki | 2026-10-09 | bez błędów potwierdzonych; uzupełnienia w planie (`angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md`); ocena: `angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md` | `angielski/plany/audyty/W1_perplexity_ANGIELSKI_2026-10-09.md` | — |
 | angielski | L012 | Future Simple | 2026-10-09 | bez błędów potwierdzonych; uzupełnienia w planie (`angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md`); ocena: `angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md` | `angielski/plany/audyty/W1_perplexity_ANGIELSKI_2026-10-09.md` | — |
+| polski | G01 | Rzeczownik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/PL_G01_rzeczownik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
+| polski | G02 | Czasownik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/PL_G02_czasownik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
+| polski | G03 | Przymiotnik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/PL_G03_przymiotnik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
 
 ## Wnioski przekrojowe z W1 (do wdrożenia w całym kursie chemii)
 

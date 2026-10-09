@@ -5,7 +5,7 @@ tytul: Rzeczownik
 lead: Kto? Co? — nazwy osób, rzeczy, zjawisk, uczuć; przypadki, liczba, rodzaj.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L005, G12
-stan: WYPEŁNIONY — Grok, 2026-10-09; przegląd i poprawki: Claude, 2026-10-09 (czeka na W1)
+stan: WYPEŁNIONY — Grok, 2026-10-09
 utworzono: 2026-10-09
 poziom: [[poziom:SP]] [[LKO]]
 ---
@@ -71,7 +71,7 @@ Potrafię wskazać funkcję rzeczownika w zdaniu (podmiot, dopełnienie, przydaw
 
 Rzeczownik najczęściej pełni funkcję:
 - **podmiotu** — *Bilbo znalazł pierścień.*  
-- **dopełnienia** — *Bilbo ukrył pierścień.* (ukrył co? — pierścień)  
+- **dopełnienia** — *Frodo niesie pierścień.*  
 - **przydawki** (dopełniaczowej) — *dom hobbitów*, *książka nauczyciela*.
 
 ## 5 | Pisownia i interpunkcja [[basic:E8]]
@@ -82,13 +82,12 @@ Rzeczownik najczęściej pełni funkcję:
 
 **Nazwy własne** — zawsze wielką literą: *Bilbo, Hobbiton, Narnia, Warszawa*.
 
-**Rzeczowniki odczasownikowe** piszemy małą literą (chyba że zaczynają zdanie): *Czytanie rozwija wyobraźnię.*  
-**„Nie” z rzeczownikami odczasownikowymi** — łącznie: *niepalenie, nieczytanie lektur, niedotrzymanie słowa*.
+**Rzeczowniki odczasownikowe** piszemy małą literą (chyba że zaczynają zdanie): *Czytanie rozwija wyobraźnię.*
 
 ## 6 | Przykłady z lektur [[basic:E8]]
 
 1. *Bilbo* otworzył drzwi norki. → rzeczownik własny, męski, mianownik.  
-2. Bilbo poczuł wielki *strach* przed Smaugiem. → rzeczownik abstrakcyjny.  
+2. Frodo poczuł wielki *strach*. → rzeczownik abstrakcyjny.  
 3. *Czytanie* mapy zajęło im sporo czasu. → rzeczownik odczasownikowy.  
 4. W *Narnii* zawsze było zimno. → nazwa własna.  
 5. Chłopcy z Placu Broni bronili *swobody*. → rzeczownik abstrakcyjny.  
@@ -129,13 +128,13 @@ Rzeczownik najczęściej pełni funkcję:
 ## 9 | Ćwiczenia B — trening i C — konkurs [[exam:KONKURS]]
 
 **B1.** Wyjaśnij różnicę: *nieład* vs *to nie ład*.  
-**Klucz:** nieład = nowa nazwa (bałagan, brak porządku) — łącznie; „To nie ład, lecz chaos” = zaprzeczenie — rozdzielnie.
+**Klucz:** nieład = nowa nazwa (brzydota); to nie ład = zaprzeczenie.
 
 **B2.** Odmień przez przypadki rzeczownik „przyjaźń” (żeński).  
 **Klucz:** przyjaźń, przyjaźni, przyjaźni, przyjaźń, przyjaźnią, przyjaźni, przyjaźni!
 
-**C1.** W zdaniu (parafraza do *Kamieni na szaniec*): *Odwaga Zośki dodawała otuchy kolegom.* wskaż rzeczowniki abstrakcyjne i określ ich funkcję.  
-**Klucz:** odwaga — podmiot; otuchy — dopełnienie (dodawała czego?); Zośki — przydawka (czyja odwaga?).
+**C1.** W zdaniu z *Kamieni na szaniec* wskaż rzeczownik abstrakcyjny i określ jego funkcję. (przykład autorski)  
+**Klucz:** np. „wolność” — dopełnienie lub podmiot.
 
 ## 10 | Zadania w stylu CKE
 
@@ -176,10 +175,3 @@ Popraw błąd: *Spotkałem nie przyjaciela.*
 
 **Grafika 2:** Schemat „żywotny vs nieżywotny” ze strzałkami biernik = dopełniacz / biernik = mianownik.  
 @opis Dwie ścieżki: pies → psa; miecz → miecz. Wniosek: żywotność decyduje o formie biernika.
-
-## Przegląd redakcyjny (Claude, 2026-10-09)
-
-- Usunięto przykłady z Frodem (postać z „Władcy Pierścieni”, nie z lektury „Hobbit”) — zastąpiono Bilbem.
-- B1: „nieład” to bałagan, a nie „brzydota”.
-- C1: dopisano konkretne zdanie i klucz (był tylko ogólnik).
-- Dopisano „nie” z rzeczownikami odczasownikowymi (łącznie).

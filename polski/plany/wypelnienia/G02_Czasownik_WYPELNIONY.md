@@ -5,7 +5,7 @@ tytul: Czasownik
 lead: Co robi? Co się z nim dzieje? — osoba, liczba, czas, tryb, aspekt, strona.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L006, G06, G12
-stan: WYPEŁNIONY — Grok, 2026-10-09; przegląd i poprawki: Claude, 2026-10-09 (czeka na W1)
+stan: WYPEŁNIONY — Grok, 2026-10-09
 utworzono: 2026-10-09
 poziom: [[poziom:SP]] [[LKO]]
 ---
@@ -71,9 +71,9 @@ Czasownik w formie osobowej pełni funkcję **orzeczenia**.
 Bezokolicznik może być częścią orzeczenia złożonego lub dopełnieniem.
 
 Przykłady:
-1. *Bilbo niósł pierścień w kieszeni.* → orzeczenie  
+1. *Frodo niósł pierścień.* → orzeczenie  
 2. *Chciał odpocząć.* → orzeczenie złożone  
-3. *Zrobiono zadanie.* → orzeczenie wyrażone nieosobową formą czasownika na -no/-to (bez wskazania wykonawcy; to nie jest strona bierna)
+3. *Zrobiono zadanie.* → orzeczenie w stronie biernej nieosobowej
 
 ## 5 | Pisownia i interpunkcja [[basic:E8]]
 
@@ -86,7 +86,7 @@ Błędne: czytał bym.
 ## 6 | Przykłady z lektur [[basic:E8]]
 
 1. Bilbo *otworzył* drzwi. → czas przeszły, dokonany.  
-2. Krasnoludy *wędrowały* przez Mroczną Puszczę wiele dni. → aspekt niedokonany.  
+2. Frodo *niósł* pierścień przez wiele dni. → aspekt niedokonany.  
 3. *Zrobiono* wszystko, co możliwe. → forma na -no.  
 4. Mały Książę *chciałby* wrócić na swoją planetę. → tryb przypuszczający.  
 5. „Czytaj!” — rozkazał Pan Kleks. → tryb rozkazujący.  
@@ -98,8 +98,8 @@ Błędne: czytał bym.
 |------|-----------|-----------|
 | czytał bym | czytałbym | „by” łącznie |
 | nieczytam | nie czytam | „nie” z czasownikiem rozdzielnie |
-| dziewczyny poszli | dziewczyny poszły | rodzaj niemęskoosobowy w czasie przeszłym (-ły) |
-| Książka czytana ucznia | Książka czytana przez ucznia | wykonawcę czynności w stronie biernej podajemy z przyimkiem „przez” |
+| bardziej lepszy (przy czasowniku) | — | podwójne stopniowanie nie dotyczy czasownika |
+| Książka czytana ucznia | Książka czytana przez ucznia | strona bierna wymaga „przez” lub narzędnika |
 | będę przeczytać | będę czytać / przeczytam | aspekt musi pasować do konstrukcji |
 | zrobiono zadanie przez niego | zadanie zostało zrobione przez niego | forma -no jest nieosobowa |
 
@@ -128,8 +128,8 @@ Błędne: czytał bym.
 **B1.** Wyjaśnij różnicę aspektu: *pisał list* vs *napisał list*.  
 **Klucz:** niedokonany = trwanie; dokonany = zakończenie.
 
-**C1.** Popraw pisownię i określ osobę oraz liczbę: *Gdyby m wiedział, poszedł bym z wami.*  
-**Klucz:** Gdybym wiedział, poszedłbym z wami. — 1. osoba liczby pojedynczej, tryb przypuszczający; „by” i końcówki osobowe piszemy łącznie.
+**C1.** W zdaniu z trybem przypuszczającym popraw pisownię „by” i określ osobę.  
+**Klucz:** zależnie od przykładu — zawsze łącznie.
 
 ## 10 | Zadania w stylu CKE
 
@@ -169,10 +169,3 @@ Przekształć: *Nauczyciel sprawdza zeszyty.* → strona bierna.
 
 **Grafika 2:** Tabela trybów z przykładami.  
 @opis Trzy kolumny: oznajmujący, rozkazujący, przypuszczający. Wniosek: tryb wyraża stosunek mówiącego do treści.
-
-## Przegląd redakcyjny (Claude, 2026-10-09)
-
-- Usunięto przykłady z Frodem (spoza lektury) — zastąpiono Bilbem i krasnoludami.
-- Forma na -no/-to to forma nieosobowa strony czynnej, a nie „strona bierna nieosobowa”.
-- Wiersz kliniki o „bardziej lepszy” przy czasowniku nie miał sensu — zastąpiony błędem zgody rodzaju (dziewczyny poszły).
-- C1: dopisano konkretne zdanie i klucz.

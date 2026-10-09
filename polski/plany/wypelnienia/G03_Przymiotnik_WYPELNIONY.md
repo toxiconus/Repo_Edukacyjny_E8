@@ -5,7 +5,7 @@ tytul: Przymiotnik
 lead: Jaki? Który? Czyj? — cechy, odmiana i stopniowanie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L004, G12
-stan: WYPEŁNIONY — Grok, 2026-10-09; przegląd i poprawki: Claude, 2026-10-09 (czeka na W1)
+stan: WYPEŁNIONY — Grok, 2026-10-09
 utworzono: 2026-10-09
 poziom: [[poziom:SP]] [[LKO]]
 ---
@@ -56,7 +56,7 @@ Przymiotnik odmienia się przez przypadki, liczby i rodzaje — **zawsze zgodnie
 | Nieregularne | zły | gorszy | najgorszy |
 | Nieregularne | duży | większy | największy |
 | Opisowe | interesujący | bardziej interesujący | najbardziej interesujący |
-| Niestopniowalne | główny, ostatni, drewniany, złoty (= z metalu) | — | — |
+| Niestopniowalne | główny, ostatni, złoty (w przenośni) | — | — |
 
 ## 4 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
 
@@ -66,7 +66,7 @@ Przymiotnik odmienia się przez przypadki, liczby i rodzaje — **zawsze zgodnie
 ## 5 | Pisownia i interpunkcja [[basic:E8]]
 
 **„Nie” z przymiotnikami — ZAWSZE łącznie** (reforma od 1.01.2026):  
-niedobry, niemiły, nienajlepszy, niemilszy, nienajmilszy.
+niedobry, niemily, nienajlepszy, niemilszy, nienajmilszy.
 
 **Przymiotniki od nazw własnych** — małą literą: *polski język*, *warszawski rynek* (wyjątki: nazwy własne typu *Jagielloński*).
 
@@ -74,7 +74,7 @@ niedobry, niemiły, nienajlepszy, niemilszy, nienajmilszy.
 
 1. *mały* Książę → przydawka  
 2. Bilbo był *odważny* w potrzebie. → orzecznik  
-3. Smaug był *największym* zagrożeniem dla krasnoludów. → stopień najwyższy, orzecznik  
+3. *najlepszy* przyjaciel Froda  
 4. *polski* krajobraz w *Panu Tadeuszu*  
 5. *złoty* pierścień (cecha)  
 6. *gorszy* los czekał bohaterów *Kamieni na szaniec*
@@ -83,7 +83,7 @@ niedobry, niemiły, nienajlepszy, niemilszy, nienajmilszy.
 
 | Błąd | Poprawnie | Dlaczego? |
 |------|-----------|-----------|
-| bardziej lepszy | lepszy | podwójne stopniowanie; „dobry” stopniuje się tylko nieregularnie |
+| bardziej lepszy | lepszy / bardziej dobry | podwójne stopniowanie |
 | nie dobry | niedobry | od 2026 zawsze łącznie |
 | nie najładniejszy | nienajładniejszy | łącznie także w stopniu najwyższym |
 | Polski język | polski język | przymiotnik od nazwy — mała litera |
@@ -115,8 +115,8 @@ niedobry, niemiły, nienajlepszy, niemilszy, nienajmilszy.
 **B1.** Wyjaśnij, dlaczego „bardziej lepszy” jest błędem.  
 **Klucz:** „lepszy” już jest stopniem wyższym — podwójne stopniowanie.
 
-**C1.** W zdaniu *Najodważniejszy z chłopców z Placu Broni okazał się najmniejszy z nich.* wskaż przymiotniki w stopniu najwyższym i określ ich funkcję.  
-**Klucz:** najodważniejszy — podmiot (przymiotnik w funkcji rzeczownika: kto okazał się?); najmniejszy — orzecznik (część orzeczenia imiennego „okazał się najmniejszy”).
+**C1.** W tekście wskaż przymiotnik w stopniu najwyższym i określ jego funkcję.  
+**Klucz:** zależnie od tekstu.
 
 ## 10 | Zadania w stylu CKE
 
@@ -133,7 +133,7 @@ Stopniuj przymiotnik „zły” i użyj stopnia wyższego w zdaniu.
 
 **Zadanie 3. (0–1)**  
 Popraw: *To bardziej lepsze rozwiązanie.*  
-**Klucz:** To lepsze rozwiązanie. (forma „bardziej dobre” jest niepoprawna — „dobry” stopniuje się nieregularnie)
+**Klucz:** To lepsze rozwiązanie. / To bardziej dobre rozwiązanie.
 
 ## 11 | Fiszki
 
@@ -155,10 +155,3 @@ Popraw: *To bardziej lepsze rozwiązanie.*
 
 **Grafika 2:** Schemat „nie + przymiotnik = zawsze łącznie” z datą 1.01.2026.  
 @opis Duży napis „ZAWSZE ŁĄCZNIE” i przykłady we wszystkich stopniach. Wniosek: stara zasada o przeciwstawieniu już nie obowiązuje.
-
-## Przegląd redakcyjny (Claude, 2026-10-09)
-
-- Literówka „niemily” → „niemiły”.
-- „bardziej dobry” nie jest poprawną formą — usunięto jako alternatywę.
-- „złoty” niestopniowalny w znaczeniu „z metalu” (w przenośni bywa stopniowany) — odwrócono błędne zastrzeżenie.
-- Usunięto przykład z Frodem; C1 dostało konkretne zdanie i klucz.
