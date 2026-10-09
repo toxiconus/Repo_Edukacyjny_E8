@@ -31,3 +31,11 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - **Polski — priorytet:** szkielety lekcji podstawowych `polski/podstawy/` (G01–G17 części mowy i składnia, S01–S06 środki stylistyczne), generator `narzedzia/szkielety_polski.py`, paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (zawiera tylko puste). G01–G03 wypełnione przez Grok i przejrzane (poprawki opisane na końcu plików). G04–G17 i S01–S06: od Grok przyszły tylko zwarte zarysy (bez ćwiczeń i kluczy) — wstawione jako sekcja „Zarys” (stan CZĘŚCIOWY), paczka nadal je zawiera do pełnego rozwinięcia. **Następny krok:** wypełnić G04–G17 i S01–S06 w innym LLM (po 2–4 lekcje), przejrzeć jak G01–G03, potem W1; potem ewentualnie build HTML dla polskiego (nowy skrypt musi wołać `OPIS.egzekwuj()`).
 - **Znany błąd:** test chemii sporadycznie FAIL `N01_powietrze_i_gazy` (canvas `arc` z ujemnym promieniem) — sprzed tych zmian, do naprawy.
 
+### Plan na następną sesję (ustalony z użytkownikiem 2026-10-09 04:20)
+**Decyzja użytkownika: nowe lekcje pisać tylko w MD — HTML na razie nie.**
+1. **Polski (priorytet):** Claude sam rozwija `polski/podstawy/` G04–G11 (części mowy), G12–G17 (składnia), S01–S06 (środki stylistyczne) do pełnych sekcji 0–12 jak w G01–G03: konkretne zadania z treścią, kluczem i punktacją CKE, przykłady z lektur obowiązkowych (bez Froda i postaci spoza lektur), pisownia wg reformy 2026, przecinek przed każdym zdaniem podrzędnym, `@opis` pod każdą wizualizacją. Zarys Groka jest w każdym pliku (sekcja „Zarys od Grok”) i surowo w `polski/plany/wypelnienia/`. Po napisaniu: `stan: WYPEŁNIONY — Claude, data; czeka na W1`, wiersz w `WERYFIKACJA.md`.
+2. **Po polskim — md brakujących lekcji innych przedmiotów** (tylko md): angielski — moduły z oceny audytu (`angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md`: słuchanie, czytanie, funkcje językowe, przetwarzanie, wpis na blogu, used to/would, been/gone itd.); chemia — materiały wstępne J01–J06 i alkohole/kwasy/estry do weryfikacji.
+3. Chemia: sporadyczny FAIL testu `N01_powietrze_i_gazy` (canvas `arc` z ujemnym promieniem).
+4. Dług `@opis` (42): N05, FIZ01, R03 itd., biologia L010/REV01.
+5. Otwarte decyzje użytkownika: korekta scalająca kursu polskiego (moduły wspólne + odsyłacze).
+

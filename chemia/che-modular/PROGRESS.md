@@ -41,3 +41,4 @@
 - 2026-10-09: audyt W1 (Perplexity) F01–F06 wprowadzony do lekcji gotowych + @opis wszystkich 26 wizualizacji F01–F06 (dług opisów 0 dla F); F07–F14 — audyt dopisany do kanonu jako sekcja „AUDYT W1”. Rejestr: `WERYFIKACJA.md`. Test: 14/15 OK — FAIL N01_powietrze_i_gazy (konsola: canvas arc z ujemnym promieniem), błąd sprzed tych zmian, do naprawy w modelu tej lekcji.
 - 2026-10-09: W1 Perplexity scalone: REV01 (gotowa) + REV02, LAB, O08–O11, J03/R07/X04 (szkielety MAX), uzupełnienia; J01–J06 jako materiał wstępny w chemia/lekcje_md/J/ (napisany przez Perplexity, wymaga W1). Test: N01_powietrze — sporadyczny FAIL canvas arc (ujemny promień), błąd sprzed zmian.
 - 2026-10-09 04:20: polski G01–G03 (Grok) przejrzane i wstawione do polski/podstawy; przekazanie sesji w PRZEKAZANIE.md.
+- 2026-10-09 04:20: sesja zatrzymana na prośbę użytkownika; plan następnych kroków (tylko MD) w PRZEKAZANIE.md.
