@@ -1447,6 +1447,77 @@ if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-r
   var st=document.createElement('style');st.textContent='.bio-fig.rv{opacity:0;transform:translateY(10px)}.bio-fig.rv.in{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}';document.head.appendChild(st);
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
   var mA=BIO.mountAll;BIO.mountAll=function(root){mA(root);(root||document).querySelectorAll('.bio-fig:not(.rv)').forEach(function(f){f.classList.add('rv');io.observe(f)})}}
+
+/* ---- komórka: wspólny rdzeń + nakładki typów (L001) ---- */
+var KN_WARSTWY=[['jadro','jądro'],['mito','mitochondria'],['chloro','chloroplasty'],['wakuola','duża wakuola'],['sciana','ściana komórkowa'],['plazmid','plazmid']];
+var KN_TYPY=[
+ {k:'rdzen',n:'tylko rdzeń',w:[],opis:'Błona komórkowa, cytoplazma, rybosomy i materiał genetyczny (DNA) — to ma każda komórka.'},
+ {k:'bakteria',n:'bakteria',w:['sciana','plazmid'],sc:'mureina',opis:'Komórka prokariotyczna: DNA leży w cytoplazmie (nukleoid), brak jądra i organelli błoniastych; ściana z mureiny, często plazmidy.'},
+ {k:'zwierzeca',n:'zwierzęca',w:['jadro','mito'],opis:'Jądro i mitochondria, brak ściany komórkowej, chloroplastów i dużej wakuoli.'},
+ {k:'roslinna',n:'roślinna',w:['jadro','mito','chloro','wakuola','sciana'],sc:'celuloza',opis:'Jądro, mitochondria, chloroplasty, duża wakuola i ściana z celulozy.'},
+ {k:'grzyb',n:'grzyb',w:['jadro','mito','wakuola','sciana'],sc:'chityna',opis:'Jądro, mitochondria, wakuola i ściana z chityny; brak chloroplastów — grzyb jest cudzożywny.'}];
+BIO.define('komorka-nakladki',{opis:'Komórka z warstwami: wspólny rdzeń (błona, cytoplazma, rybosomy, DNA) + nakładki — jądro, mitochondria, chloroplasty, wakuola, ściana, plazmid; przyciski typów (bakteria, zwierzęca, roślinna, grzyb) i pojedynczych warstw; opcja start="rdzen|bakteria|zwierzeca|roslinna|grzyb"',
+mount:function(el,o){var on={},typ=null,typy=H('div','bv-tools'),warstwy=H('div','bv-tools'),hold=H('div'),box=H('div','bv-info');
+  [typy,warstwy,hold,box].forEach(function(e){el.appendChild(e)});
+  function ustaw(t){on={};t.w.forEach(function(w){on[w]=1})}
+  function rozpoznaj(){var k=KN_WARSTWY.map(function(w){return on[w[0]]?1:0}).join('');
+    return KN_TYPY.filter(function(t){return KN_WARSTWY.map(function(w){return t.w.indexOf(w[0])>=0?1:0}).join('')===k})[0]||null}
+  function rys(){var t=rozpoznaj(),sc=t&&t.sc?t.sc:null,R=[];
+    var s=svg(460,240,'Komórka: '+(t?t.n:'zestaw własny'),R);
+    if(on.sciana){s.appendChild(S('rect',{x:8,y:8,width:444,height:224,rx:on.jadro?14:70,fill:'var(--wall)','fill-opacity':0.15,stroke:'var(--wall)','stroke-width':7}));
+      s.appendChild(T(230,22,'ściana komórkowa'+(sc?' ('+sc+')':''),{s:10.5,f:'var(--viz-mut)'}))}
+    s.appendChild(S('rect',{x:20,y:30,width:420,height:190,rx:on.jadro?10:64,fill:'var(--cell-cyto)',stroke:'var(--cell-mem)','stroke-width':3}));
+    s.appendChild(T(110,212,'błona komórkowa',{s:10,f:'var(--cell-mem)'}));
+    if(on.wakuola){s.appendChild(S('rect',{x:196,y:48,width:on.chloro?150:120,height:92,rx:30,fill:'#ffffff',stroke:'var(--viz-line)','stroke-width':1.6}));s.appendChild(T(on.chloro?271:256,94,'wakuola',{s:11,f:'var(--viz-mut)',w:500}))}
+    for(var i=0;i<26;i++){var x=40+((i*67)%380),y=46+((i*41)%160);if(on.wakuola&&x>190&&x<352&&y>44&&y<144)continue;s.appendChild(S('circle',{cx:x,cy:y,r:2.2,fill:'var(--viz-mut)',opacity:0.7}))}
+    s.appendChild(T(230,212,'rybosomy (kropki)',{s:9.5,f:'var(--viz-mut)',w:500}));
+    if(on.jadro){s.appendChild(nucleus(110,104,38,3));s.appendChild(T(110,156,'jądro (DNA)',{s:10.5}))}
+    else{s.appendChild(S('g',{},[S('ellipse',{cx:150,cy:118,rx:62,ry:34,fill:'none',stroke:'var(--nucleus)','stroke-width':1.2,'stroke-dasharray':'4 3'}),g.squiggle(150,118,40,5),g.squiggle(152,116,30,9)]));
+      s.appendChild(T(150,164,'DNA w cytoplazmie (nukleoid)',{s:10.5}))}
+    if(on.mito){s.appendChild(mito(330,188,22,10,-12));s.appendChild(mito(62,186,17,8,20));s.appendChild(T(330,210,'mitochondrium',{s:10}))}
+    if(on.chloro){[[392,80,-20],[388,136,15],[178,190,0]].forEach(function(c){s.appendChild(S('g',{transform:'rotate('+c[2]+' '+c[0]+' '+c[1]+')'},[S('ellipse',{cx:c[0],cy:c[1],rx:24,ry:11,fill:'var(--chloro-bg)',stroke:'var(--chloro)','stroke-width':2}),S('path',{d:'M'+(c[0]-14)+' '+(c[1]-4)+'h10M'+(c[0]-14)+' '+c[1]+'h10M'+(c[0]-14)+' '+(c[1]+4)+'h10M'+(c[0]+2)+' '+(c[1]-4)+'h10M'+(c[0]+2)+' '+c[1]+'h10M'+(c[0]+2)+' '+(c[1]+4)+'h10',stroke:'var(--chloro)','stroke-width':2})]))});
+      s.appendChild(T(392,60,'chloroplasty',{s:10,f:'var(--chloro)'}))}
+    if(on.plazmid){var px=on.wakuola?236:280,py=on.wakuola?176:90;s.appendChild(S('circle',{cx:px,cy:py,r:11,fill:'none',stroke:'var(--dna-ink)','stroke-width':2}));s.appendChild(on.wakuola?T(px+16,py,'plazmid',{s:10,a:'start'}):T(px,py+22,'plazmid',{s:10}))}
+    return{s:s,t:t}}
+  function opis(t){var lista=['błona','cytoplazma','rybosomy',on.jadro?'jądro z DNA':'DNA w cytoplazmie'].concat(KN_WARSTWY.filter(function(w){return w[0]!=='jadro'&&on[w[0]]}).map(function(w){return w[1]}));
+    var h='<b>'+(t&&t.k==='rdzen'?'Wspólny rdzeń każdej komórki':t?'To pasuje do komórki: '+t.n:'Zestaw własny — nie pasuje do żadnego z czterech typów')+'</b><span>'+(t?t.opis:'')+'</span><span>Na rysunku: '+lista.join(', ')+'.</span>';
+    if(!t&&!on.jadro&&(on.mito||on.chloro))h+='<span>Uwaga: mitochondria i chloroplasty mają tylko komórki z jądrem (eukariotyczne). Bakteria ich nie ma.</span>';
+    else if(!t&&on.chloro&&!on.sciana)h+='<span>Chloroplasty bez ściany: tak bywa u niektórych protistów (np. euglena), ale nie u typowej rośliny.</span>';
+    else if(!t&&on.plazmid&&on.jadro)h+='<span>Plazmidy są typowe dla bakterii; w komórkach z jądrem zdarzają się rzadko (np. u drożdży).</span>';
+    else if(!t)h+='<span>Porównaj z przyciskami typów u góry: czego brakuje, a co jest za dużo?</span>';
+    return h}
+  function przyciski(){typy.innerHTML='';warstwy.innerHTML='';
+    KN_TYPY.forEach(function(t){var b=btn(t.n,function(){ustaw(t);typ=t.k;draw()});if(typ===t.k)b.className+=' on';b.setAttribute('aria-pressed',String(typ===t.k));typy.appendChild(b)});
+    KN_WARSTWY.forEach(function(w){var b=btn((on[w[0]]?'− ':'+ ')+w[1],function(){if(on[w[0]])delete on[w[0]];else on[w[0]]=1;typ=null;draw()});if(on[w[0]])b.className+=' on';b.setAttribute('aria-pressed',String(!!on[w[0]]));warstwy.appendChild(b)})}
+  function draw(){var r=rys();hold.innerHTML='';hold.appendChild(r.s);box.innerHTML=opis(r.t);przyciski()}
+  var st=KN_TYPY.filter(function(t){return t.k===(o&&o.start)})[0]||KN_TYPY[0];ustaw(st);typ=st.k;draw()}});
+
+/* ---- „nie wszystko widać”: mikroskop świetlny vs model szkolny (L001) ---- */
+BIO.define('mikroskop-model',{opis:'Ta sama komórka liścia moczarki w dwóch widokach: obraz z mikroskopu świetlnego (rozmyty, widać ścianę, chloroplasty, wakuolę; jądro po barwieniu) i model szkolny ze wszystkimi strukturami podpisanymi; przełącznik barwienia; opcja start="mikroskop|model"',
+mount:function(el,o){var uid='bm'+Math.random().toString(36).slice(2,7),widok=(o&&o.start==='model')?'model':'mikroskop',barw=false,tools=H('div','bv-tools'),hold=H('div'),box=H('div','bv-info');
+  [tools,hold,box].forEach(function(e){el.appendChild(e)});
+  var CH=[[150,52],[196,48],[248,56],[300,54],[96,90],[104,140],[314,104],[322,152],[140,182],[204,186],[262,180]];
+  function rys(){var mik=widok==='mikroskop',s=svg(440,220,mik?'Obraz komórki w mikroskopie świetlnym':'Model szkolny komórki roślinnej',[]);
+    var d=S('defs',{},[S('filter',{id:uid+'b'},[S('feGaussianBlur',{stdDeviation:mik?1.6:0})]),S('clipPath',{id:uid+'c'},[S('circle',{cx:220,cy:110,r:150})]),S('radialGradient',{id:uid+'p'},[S('stop',{offset:'60%','stop-color':'#fbfbf2'}),S('stop',{offset:'100%','stop-color':'#d9d9c9'})])]);s.appendChild(d);
+    if(mik){s.appendChild(S('circle',{cx:220,cy:110,r:150,fill:'url(#'+uid+'p)'}));}
+    var k=S('g',mik?{filter:'url(#'+uid+'b)','clip-path':'url(#'+uid+'c)'}:{});s.appendChild(k);
+    if(mik){[[-150,0],[150,0]].forEach(function(p){k.appendChild(S('rect',{x:70+p[0],y:24+p[1],width:280,height:172,rx:8,fill:'#eef2df',stroke:'#7d8a5c','stroke-width':4}))})}
+    k.appendChild(S('rect',{x:70,y:24,width:280,height:172,rx:8,fill:mik?'#eef2df':'var(--cell-cyto)',stroke:mik?'#7d8a5c':'var(--wall)','stroke-width':mik?4:6}));
+    if(!mik)k.appendChild(S('rect',{x:76,y:30,width:268,height:160,rx:5,fill:'none',stroke:'var(--cell-mem)','stroke-width':1.6}));
+    k.appendChild(S('rect',{x:130,y:72,width:170,height:84,rx:26,fill:mik?'#f7f8ee':'#ffffff',stroke:mik?'#c9cdb4':'var(--viz-line)','stroke-width':1.2}));
+    CH.forEach(function(c){k.appendChild(S('ellipse',{cx:c[0],cy:c[1],rx:mik?9:11,ry:mik?6:6,fill:mik?'#5f9a3a':'var(--chloro-bg)',stroke:mik?'none':'var(--chloro)','stroke-width':1.6}))});
+    if(mik){if(barw){k.appendChild(S('circle',{cx:108,cy:60,r:15,fill:'#6d5aa8',opacity:0.75}));}else{k.appendChild(S('circle',{cx:108,cy:60,r:15,fill:'#e6e8d6',stroke:'#cfd2bb','stroke-width':1}))}}
+    else{k.appendChild(nucleus(108,60,16,6));[[232,168,0],[96,172,20]].forEach(function(m){k.appendChild(mito(m[0],m[1],13,6,m[2]))});
+      [[100,110],[90,40],[170,40],[226,40],[276,36],[330,80],[330,130],[120,160],[180,165],[290,166],[86,190],[340,186]].forEach(function(p){k.appendChild(S('circle',{cx:p[0],cy:p[1],r:1.8,fill:'var(--viz-mut)',opacity:0.8}))})}
+    if(mik){s.appendChild(T(220,212,'×400 · '+(barw?'po barwieniu':'bez barwienia'),{s:11,f:'var(--viz-mut)'}))}
+    else{[[356,34,350,34,'ściana'],[356,52,345,52,'błona'],[356,104,325,104,'chloroplast'],[356,130,300,130,'wakuola'],[356,168,245,168,'mitochondrium'],[64,60,92,60,'jądro'],[64,110,98,110,'rybosom']].forEach(function(l){var L=l[0]<l[2];s.appendChild(S('line',{x1:L?l[0]+3:l[0]-3,y1:l[1],x2:l[2],y2:l[3],stroke:'var(--viz-mut)','stroke-width':1}));s.appendChild(T(l[0],l[1],l[4],{s:10.5,a:L?'end':'start'}))})}
+    return s}
+  function opis(){if(widok==='model')return'<b>Model szkolny</b><span>Narysowane i podpisane są wszystkie struktury: ściana, błona, jądro, wakuola, chloroplasty, mitochondria, rybosomy. To uproszczenie — kształty i proporcje są umowne, a zwykle nie da się zobaczyć ich wszystkich jednocześnie.</span>';
+    return'<b>Mikroskop świetlny (ok. ×400)</b><span>Wyraźnie widać: ścianę komórkową (granice komórek) i zielone chloroplasty; wakuolę rozpoznajemy po pustym, jasnym środku. '+(barw?'Po barwieniu (np. płynem Lugola) jądro staje się widoczne jako ciemniejsza plamka.':'Jądro jest słabo widoczne — trzeba zabarwić preparat.')+'</span><span>Nie widać: rybosomów (ok. 25 nm) ani szczegółów mitochondriów — są mniejsze niż zdolność rozdzielcza mikroskopu świetlnego (ok. 0,2 µm). Błony komórkowej nie odróżnisz od ściany.</span>'}
+  function draw(){hold.innerHTML='';hold.appendChild(rys());box.innerHTML=opis();tools.innerHTML='';
+    [['mikroskop','widok w mikroskopie'],['model','model szkolny']].forEach(function(v){var b=btn(v[1],function(){widok=v[0];draw()});if(widok===v[0])b.className+=' on';b.setAttribute('aria-pressed',String(widok===v[0]));tools.appendChild(b)});
+    if(widok==='mikroskop'){var b=btn(barw?'usuń barwienie':'zabarw preparat',function(){barw=!barw;draw()});if(barw)b.className+=' on';tools.appendChild(b)}}
+  draw()}});
 })();
 
 /* ---------- Wzorcownia → biblioteka (2026-10-09): kod genetyczny, Punnett, transport przez błonę, sieć troficzna ----------

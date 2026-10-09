@@ -49,3 +49,4 @@
 - 2026-10-09 09:00: nazwy lekcji ujednolicone do PRZ.NN.KOD.slug (103 pliki: POL, ANG, BIO, OLI), odwołania i narzędzia (zbuduj_wszystkie, zbierz_lekcje, szkielety_polski, lekcja_html) zaktualizowane; tytuły lekcji kanonu BIO z nagłówka „# KOD — tytuł”; 144 lekcje HTML przebudowane, 0 problemów.
 
 - 2026-10-09 08:5x — Scalenie paczki W23 (GPT-6): 119 plików trójstronnie pod nowymi nazwami, 13 nowych; odrzucone stare L001/L003/L015 BIO, zły klucz G07; naprawione backticki BIO, @opis:, 5 szablonowych opisów, G06. Raport: paczki/W23_2026-10-09/AUDYT_SCALENIA_Claude.md. Buildy i testy OK.
+- 2026-10-09 — BIO L001: nowe grafiki bio-viz „komorka-nakladki” (rdzeń + nakładki typów, rozpoznanie zestawu) i „mikroskop-model” (×400, barwienie vs model); zastąpiły puste SVG z dawnego HTML; katalog i @opis uzupełnione.

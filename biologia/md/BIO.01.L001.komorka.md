@@ -362,11 +362,8 @@ Zamiast czterech oddzielnych rysunków, ten widget pokazuje, że komórki mają 
 
 Klikaj przyciski, aby dodawać lub usuwać warstwy.
 
-<!-- GFX: własne SVG z dawnego HTML — przenieść do biblioteki grafik przedmiotu -->
-::: html
-<figure class="lk-fig lk-fig-stare"><div class="lk-fig-body"><svg id="ocSvg" viewbox="0 0 460 222" xmlns="http://www.w3.org/2000/svg"></svg></div></figure>
-:::
-@opis Rysunek komórki z warstwami (wspólny rdzeń: błona, cytoplazma, jądro; nakładki typowe dla komórki roślinnej, zwierzęcej, grzyba i bakterii). W dawnej wersji przyciski dodawały i usuwały warstwy. Wniosek: wszystkie komórki mają wspólny rdzeń, a typy różnią się dodatkowymi strukturami. [GFX: do zbudowania w bio-viz jako „komorka-nakladki”]
+@viz komorka-nakladki {start="rdzen"} | Nakładki — od wspólnego rdzenia do typu komórki | kliknij typ komórki albo dodawaj i usuwaj pojedyncze warstwy
+@opis Rysunek jednej komórki w cytoplazmie z błoną, rybosomami (kropki) i DNA. Przyciski typów dokładają nakładki: bakteria — ściana z mureiny i plazmid, DNA luzem w cytoplazmie (nukleoid); zwierzęca — jądro i mitochondria; roślinna — jądro, mitochondria, zielone chloroplasty, duża wakuola i ściana z celulozy; grzyb — jądro, mitochondria, wakuola i ściana z chityny. Pojedyncze warstwy można też włączać ręcznie; pole pod rysunkiem mówi, do którego typu pasuje zestaw, a przy zestawie niemożliwym (np. mitochondria bez jądra) wyjaśnia dlaczego. Wniosek: wszystkie komórki mają wspólny rdzeń, a typy różnią się dodatkowymi strukturami.
 
 **Wspólny rdzeń każdej komórki:** błona komórkowa, cytoplazma, materiał genetyczny i rybosomy. Bakteria ma ten sam rdzeń co komórka roślinna — różnią się obecnością jądra i organelli błoniastych.
 
@@ -766,11 +763,8 @@ Zobacz tę samą komórkę cebuli w dwóch widokach — to, co widać pod mikros
 
 Przełącz widok, aby zobaczyć różnicę.
 
-<!-- GFX: własne SVG z dawnego HTML — przenieść do biblioteki grafik przedmiotu -->
-::: html
-<figure class="lk-fig lk-fig-stare"><div class="lk-fig-body"><svg id="microSvg" viewbox="0 0 420 220" xmlns="http://www.w3.org/2000/svg"></svg></div></figure>
-:::
-@opis Porównanie dwóch widoków tej samej komórki: obraz mikroskopowy (niewyraźny, widać tylko część struktur) i model szkolny (wszystkie struktury narysowane wyraźnie). Wniosek: w mikroskopie świetlnym nie widać wszystkiego, co pokazuje model — model to uproszczenie. [GFX: do zbudowania w bio-viz jako „mikroskop-model”]
+@viz mikroskop-model {start="mikroskop"} | „Nie wszystko widać” — mikroskop vs model | przełącz widok i zabarw preparat
+@opis Ta sama komórka liścia moczarki w dwóch widokach. Mikroskop świetlny (×400): rozmyty obraz, widać grube granice ścian sąsiednich komórek, zielone ziarna chloroplastów i jasną wakuolę; jądro jest blade, a po przyciśnięciu „zabarw preparat” staje się ciemną plamką; rybosomów i mitochondriów nie widać. Model szkolny: te same miejsca, ale ostro narysowane i podpisane — ściana, błona, jądro, wakuola, chloroplasty, mitochondria, rybosomy. Wniosek: mikroskop świetlny pokazuje tylko struktury większe niż ok. 0,2 µm, a model to uproszczenie pokazujące wszystko naraz.
 
 W mikroskopie świetlnym widać przede wszystkim ścianę komórkową i dużą wakuolę; jądro bywa widoczne po barwieniu.
 
