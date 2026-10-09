@@ -133,6 +133,11 @@ $$ Mg → Mg²⁺ + 2 e⁻    ·    S + 2 e⁻ → S²⁻
 **ładunek = p⁺ − e⁻** · Na⁺: 11 − 10 = +1 · Cl⁻: 17 − 18 = −1 · S²⁻: 16 − 18 = −2. Jeśli wynik nie zgadza się ze znakiem jonu, policz jeszcze raz.
 :::
 
+::: karta core | Reguła skrócona
+**kation Xⁿ⁺:** e⁻ = Z − n · **anion Xⁿ⁻:** e⁻ = Z + n · liczba protonów się **nie zmienia** (to nadal ten sam pierwiastek).
+Al³⁺: 13 − 3 = 10 e⁻ · S²⁻: 16 + 2 = 18 e⁻
+:::
+
 **Jony wieloatomowe.** Ładunek może należeć do całej grupy atomów: SO₄²⁻ (siarczanowy(VI)), NO₃⁻ (azotanowy(V)), CO₃²⁻ (węglanowy), OH⁻ (wodorotlenkowy), NH₄⁺ (amonowy). Grupa zachowuje się w związkach jak jedna całość — dlatego w Ca(OH)₂ piszemy nawias. Nazwy i wzory jonów utrwalasz w [F09 i F12](#mosty), a jon w roztworze — w lekcjach N.
 
 ## 3 | Izotop, jon czy inny pierwiastek? Trzy różne zmiany [[understand:ROZUMIENIE]] {#trzy-zmiany}
@@ -150,6 +155,7 @@ Izotop, jon i atom innego pierwiastka odpowiadają na **różne pytania**. Nie w
 :::
 
 @model f05-izotopy-v01 | Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa | dodawaj i zabieraj p, n, e — model nazywa zmianę; niżej średnia ważona izotopów
+@opis Konstruktor atomu: jądro z protonami i neutronami oraz elektrony na powłokach. Gdy dodajesz lub zabierasz cząstki, model nazywa zmianę: inna liczba neutronów — izotop, inna liczba elektronów — jon, inna liczba protonów — inny pierwiastek. Niżej obliczenie masy atomowej jako średniej ważonej mas izotopów. Wniosek: o tym, jaki to pierwiastek, decyduje wyłącznie liczba protonów.
 
 > W modelu zmień najpierw tylko neutrony, potem tylko elektrony, na końcu protony. Za każdym razem przeczytaj: co się zmieniło, a co zostało?
 
@@ -251,6 +257,9 @@ BHP: brak szczególnych zagrożeń; drobne elementy trzymać z dala od małych d
 | „Każdy atom chloru ma masę 35,45 u.” | Atomy chloru mają masę ok. 35 u albo ok. 37 u. | 35,45 to średnia dla mieszaniny. |
 | „Średnia: (35 + 37) : 2 = 36.” | Średnia **ważona**: 0,76 · 35 + 0,24 · 37 ≈ 35,5. | Izotopy nie występują po równo. |
 | „⁴⁰Ar i ⁴⁰Ca to izotopy.” | To izobary — różne pierwiastki o tym samym A. | Izotopy mają to samo Z, nie to samo A. |
+| „Każdy izotop jest promieniotwórczy.” | Wiele pierwiastków ma tylko izotopy trwałe (¹²C, ¹³C, ³⁵Cl, ³⁷Cl); promieniotwórcze są tylko niektóre (¹⁴C). | Izotop = ta sama liczba protonów, inna liczba neutronów — o trwałości to nie mówi. |
+| „Masa atomowa musi być liczbą całkowitą.” | To średnia ważona mas izotopów, np. Cl ≈ 35,5 u, Cu ≈ 63,5 u. | Liczbą całkowitą jest liczba masowa A pojedynczego nuklidu. |
+| „Masa cząsteczkowa NaCl.” | Dla związków jonowych poprawnie: masa jednostki wzoru (masa formalna). | NaCl nie tworzy cząsteczek. |
 :::
 
 ## 8 | Ćwiczenia {#cwiczenia}
@@ -292,6 +301,22 @@ BHP: brak szczególnych zagrożeń; drobne elementy trzymać z dala od małych d
 1. Atom obojętny: e = Z = 20 → wapń ⁴⁰Ca, 20 p⁺, 20 n⁰. Jon 2+ z 18 e⁻: Z = e + q = 18 + 2 = 20 → to też wapń (⁴⁰Ca²⁺), 20 n⁰. Zawsze zaczynaj od pytania „atom czy jon?” — liczba elektronów sama nie mówi, jaki to pierwiastek.
 2. 79x + 81(1 − x) = 79,90 → 81 − 2x = 79,90 → x = 0,55 → ok. 55% ⁷⁹Br (tablice: ok. 50,7% — przybliżenie mas zawyża wynik).
 3. ⁴⁰Ar, ⁴⁰K, ⁴⁰Ca — to samo A, różne Z, więc różne pierwiastki; izotopy mają to samo Z.
+:::
+:::
+
+::: karta basic | F. Utrwalenie — jony i masa atomowa
+1. Oblicz liczbę elektronów w jonach: Mg²⁺, F⁻, Ca²⁺, N³⁻.
+2. Podaj liczbę protonów, neutronów i elektronów dla ⁴⁰₂₀Ca²⁺.
+3. Czym różnią się ³⁵Cl i ³⁷Cl?
+4. Pierwiastek ma dwa izotopy o masach 24 u (75%) i 26 u (25%). Oblicz masę atomową.
+5. Pierwiastek ma izotopy 10 u (20%) i 11 u (80%). Oblicz masę atomową i rozpoznaj pierwiastek w układzie okresowym.
+
+::: odp | Pokaż odpowiedzi
+1. Mg²⁺: 12 − 2 = 10 · F⁻: 9 + 1 = 10 · Ca²⁺: 20 − 2 = 18 · N³⁻: 7 + 3 = 10.
+2. p = 20, n = 40 − 20 = 20, e = 20 − 2 = 18.
+3. Ta sama liczba protonów (17), ³⁷Cl ma o dwa neutrony więcej (20 zamiast 18).
+4. 24 · 0,75 + 26 · 0,25 = 18 + 6,5 = 24,5 u (model zadania — rzeczywisty magnez ma trzy izotopy, Aᵣ ≈ 24,3).
+5. 10 · 0,20 + 11 · 0,80 = 2 + 8,8 = 10,8 u → bor (B).
 :::
 :::
 

@@ -3,12 +3,12 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (10 pl., 40 KB)
+## .  (10 pl., 42 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
-- `CLAUDE.md` 5 KB
+- `CLAUDE.md` 6 KB
 - `MAPA.md` 15 KB
-- `PRZEKAZANIE.md` 2 KB
+- `PRZEKAZANIE.md` 3 KB
 - `README.md` 0 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
@@ -39,17 +39,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L000-INDEKS-ROKU_MASTER_v1.0 (8) (1).html` 54 KB
 - `STAN_LEKCJI_PODSTAWA_PLUS.md` 15 KB
 
-## biologia/bio  (2 pl., 4 KB)
+## biologia/bio  (2 pl., 5 KB)
 - `BIO_KATALOG.md` 2 KB
-- `PRZEKAZANIE.md` 2 KB
+- `PRZEKAZANIE.md` 3 KB
 
 ## biologia/bio/md  (3 pl., 123 KB)
 - `L010_dna_od_zera.md` 48 KB
 - `REV01_organizacja_i_chemizm_zycia.md` 27 KB
 - `REV02_roznorodnosc_zycia.md` 47 KB
 
-## biologia/bio/narzedzia  (2 pl., 8 KB)
-- `md2html_bio.py` 6 KB
+## biologia/bio/narzedzia  (2 pl., 9 KB)
+- `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
 ## biologia/bio/szablon  (5 pl., 98 KB)
@@ -103,7 +103,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 98 KB)
+## chemia/che-modular  (13 pl., 99 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -297,7 +297,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 854 KB)
+## chemia/che-modular/lessons-md/gotowe  (15 pl., 873 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 51 KB
 - ⚠`N01_tlenki.md` 117 KB
@@ -408,7 +408,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (24 pl., 132 KB)
+## chemia/che-modular/tools  (24 pl., 133 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
@@ -422,15 +422,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.00.S00.system_kursu.md` 18 KB
 - `CHE.00.W00.wstep.md` 6 KB
 
-## chemia/lekcje_md/F  (22 pl., 994 KB)
+## chemia/lekcje_md/F  (22 pl., 1014 KB)
 - (zwinięte; `ls chemia/lekcje_md/F`) — duże:
 - ⚠`CHE.01.F00.wspolne_bloku_F.md` 110 KB
 - ⚠`CHE.01.F01.jak_mysli_chemik.md` 81 KB
-- ⚠`CHE.01.F08.konfiguracja_uklad_okresowy.md` 50 KB
-- ⚠`CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien.md` 101 KB
-- ⚠`CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn.md` 59 KB
-- ⚠`CHE.01.F12.wzory_chemiczne.md` 122 KB
-- ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 60 KB
+- ⚠`CHE.01.F07.konfiguracja_elektronowa.md` 50 KB
+- ⚠`CHE.01.F08.konfiguracja_uklad_okresowy.md` 52 KB
+- ⚠`CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien.md` 104 KB
+- ⚠`CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn.md` 62 KB
+- ⚠`CHE.01.F12.wzory_chemiczne.md` 124 KB
+- ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 63 KB
 
 ## chemia/lekcje_md/N  (4 pl., 140 KB)
 - `CHE.02.N02.tlenki.md` 37 KB
@@ -463,26 +464,33 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## narzedzia  (1 pl., 2 KB)
-- `mapa.py` 2 KB
+## eksport  (3 pl., 20 KB)
+- `.gitignore` 0 KB
+- `html2md.py` 4 KB
+- `zbierz_lekcje.py` 16 KB
 
-## olimpiada  (4 pl., 113 KB)
+## narzedzia  (3 pl., 6 KB)
+- `mapa.py` 2 KB
+- `opis_dlug.json` 1 KB
+- `opis_wizualizacji.py` 3 KB
+
+## olimpiada  (4 pl., 116 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
 - `PRIORYTETY.md` 9 KB
-- `PRZEKAZANIE.md` 4 KB
+- `PRZEKAZANIE.md` 6 KB
 
-## olimpiada/do_uzupelnienia  (11 pl., 12 KB)
-- `BIO_B2_homeostaza.md` 1 KB
-- `BIO_B2a_skora_i_uklad_ruchu.md` 1 KB
-- `BIO_B2b_uklad_pokarmowy_i_odzywianie.md` 1 KB
-- `BIO_B2c_oddychanie_i_wydalanie.md` 1 KB
-- `BIO_B2d_uklad_nerwowy_i_zmysly.md` 1 KB
-- `BIO_B2e_uklad_dokrewny.md` 1 KB
-- `BIO_B2f_rozmnazanie_i_rozwoj.md` 1 KB
-- `CHE_J03_rownania_jonowe_i_straceanie.md` 1 KB
-- `CHE_R07_stechiometria_z_nadmiarem.md` 1 KB
-- `CHE_X04_szereg_aktywnosci_metali.md` 1 KB
+## olimpiada/do_uzupelnienia  (11 pl., 47 KB)
+- `BIO_B2_homeostaza.md` 5 KB
+- `BIO_B2a_skora_i_uklad_ruchu.md` 3 KB
+- `BIO_B2b_uklad_pokarmowy_i_odzywianie.md` 4 KB
+- `BIO_B2c_oddychanie_i_wydalanie.md` 3 KB
+- `BIO_B2d_uklad_nerwowy_i_zmysly.md` 4 KB
+- `BIO_B2e_uklad_dokrewny.md` 4 KB
+- `BIO_B2f_rozmnazanie_i_rozwoj.md` 3 KB
+- `CHE_J03_rownania_jonowe_i_straceanie.md` 6 KB
+- `CHE_R07_stechiometria_z_nadmiarem.md` 5 KB
+- `CHE_X04_szereg_aktywnosci_metali.md` 8 KB
 - `README.md` 1 KB
 
 ## olimpiada/narzedzia  (1 pl., 7 KB)
@@ -498,6 +506,44 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `Zakresy_2025_2026_chemia_biologia_OCR.md` 16 KB
 - ⚠`Zakresy_wymagan_2025_2026.pdf` 2.7 MB
 
+## olimpiada/zrodla/pakiet_2026-10-09  (1 pl., 1 KB)
+- `README_PAKIET.md` 1 KB
+
+## olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO  (3 pl., 23 KB)
+- `LKO_BIOLOGIA_KLUCZ_SZKOLNY_2025_2026.txt` 13 KB
+- `LKO_CHEMIA_KLUCZ_SZKOLNY_2025_2026.txt` 7 KB
+- `LKO_REJON_2025_2026_fragmenty.md` 3 KB
+
+## olimpiada/zrodla/pakiet_2026-10-09/lekcje_biologia  (8 pl., 30 KB)
+- `BIO_B2_homeostaza_MAX.md` 5 KB
+- `BIO_B2_homeostaza_UZUPELNIONY.md` 4 KB
+- `BIO_B2a_skora_i_uklad_ruchu_UZUPELNIONY.md` 3 KB
+- `BIO_B2b_uklad_pokarmowy_i_odzywianie_UZUPELNIONY.md` 4 KB
+- `BIO_B2c_oddychanie_i_wydalanie_UZUPELNIONY.md` 3 KB
+- `BIO_B2d_uklad_nerwowy_i_zmysly_UZUPELNIONY.md` 4 KB
+- `BIO_B2e_uklad_dokrewny_UZUPELNIONY.md` 4 KB
+- `BIO_B2f_rozmnazanie_i_rozwoj_UZUPELNIONY.md` 3 KB
+
+## olimpiada/zrodla/pakiet_2026-10-09/lekcje_chemia  (6 pl., 33 KB)
+- `CHE_J03_rownania_jonowe_i_straceanie_MAX.md` 6 KB
+- `CHE_J03_rownania_jonowe_i_straceanie_UZUPELNIONY.md` 6 KB
+- `CHE_R07_stechiometria_z_nadmiarem_MAX.md` 5 KB
+- `CHE_R07_stechiometria_z_nadmiarem_UZUPELNIONY.md` 4 KB
+- `CHE_X04_szereg_aktywnosci_metali_MAX.md` 8 KB
+- `CHE_X04_szereg_aktywnosci_metali_UZUPELNIONY.md` 5 KB
+
+## olimpiada/zrodla/pakiet_2026-10-09/lekcje_polski  (1 pl., 17 KB)
+- `PL_L007-L011_LEKCJE_ROZBUDOWANE_v02.md` 17 KB
+
+## olimpiada/zrodla/pakiet_2026-10-09/master  (2 pl., 124 KB)
+- ⚠`KONKURSY_LUBELSKIE_MASTER_PREMIUM_v05.md` 67 KB
+- ⚠`OLIMPIADA_8_MASTER_v003.md` 57 KB
+
+## olimpiada/zrodla/pakiet_2026-10-09/podsumowania  (3 pl., 8 KB)
+- `PODSUMOWANIE_MAX_lekcje.md` 2 KB
+- `PODSUMOWANIE_sesja_2026-10-09.md` 3 KB
+- `PODSUMOWANIE_uzupelnienia_szkielety_10.md` 3 KB
+
 ## polski  (18 pl., 2.5 MB)
 - (zwinięte; `ls polski`) — duże:
 - ⚠`L001_lekcja (2).html` 174 KB
@@ -508,6 +554,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 154 KB
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik v2.html` 90 KB
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 146 KB
+
+## polski/do_uzupelnienia  (5 pl., 25 KB)
+- `PL_L007_przeglad_czesci_mowy.md` 7 KB
+- `PL_L008_czesci_zdania.md` 4 KB
+- `PL_L009_zdania_zlozone.md` 4 KB
+- `PL_L010_srodki_stylistyczne.md` 4 KB
+- `PL_L011_elementy_utworu_moral_puenta.md` 5 KB
 
 ## wizualizacje-projekty  (3 pl., 71 KB)
 - `PROJEKT.md` 9 KB

@@ -119,7 +119,7 @@ Po bloku F: chemia nieorganiczna (N01–N07) i kolejne działy.
 
 ## 1 | Czym zajmuje się chemia [[basic:E8]] {#chemia}
 
-Chemia bada **skład, budowę, właściwości i przemiany** materii. To jedno zdanie zawiera cały kurs.
+Chemia bada **skład, budowę, właściwości i przemiany** substancji oraz zależności między nimi. To jedno zdanie zawiera cały kurs.
 
 | Pytanie | Co opisuje | Przykład |
 |---|---|---|
@@ -148,6 +148,7 @@ Roztwór **mętnieje** (makro) → powstaje trudno rozpuszczalna substancja, kt�
 :::
 
 @model live-cv | Łańcuch chemii: atom → cząsteczka → substancja → reakcja | jak jeden obiekt wygląda na kolejnych poziomach opisu
+@opis Łańcuch czterech poziomów opisu: pojedynczy atom → cząsteczka z połączonych atomów → próbka substancji → reakcja, w której atomy łączą się w nowe cząsteczki. Wniosek: ten sam obiekt można opisać na różnych poziomach — od cząstek do tego, co widać w probówce.
 
 ## 3 | Obserwacja, wniosek, hipoteza [[basic:E8]] {#obserwacja}
 
@@ -164,6 +165,23 @@ W obserwacji nie ma nazw produktów ani przyczyn. „Wydziela się **wodór**”
 ::: karta core | Po czym poznać reakcję chemiczną? (objawy)
 Zmiana barwy · wydzielanie gazu · powstawanie osadu · wydzielanie lub pochłanianie ciepła lub światła · zmiana zapachu.
 **Żaden objaw sam w sobie nie jest dowodem powstania nowej substancji.** Barwa może się zmienić przy rozcieńczaniu, pęcherzyki mogą pochodzić z wrzenia lub wydzielania rozpuszczonego gazu. Silny wniosek wymaga **testu właściwości produktu** albo innego niezależnego dowodu. Odwracalność nie jest sama w sobie definicją reakcji: istnieją przemiany chemiczne odwracalne. Na poziomie E8 najważniejsze pytanie brzmi: **czy mamy podstawy stwierdzić powstanie substancji o nowych właściwościach?**
+:::
+
+::: karta core | Schemat analizy doświadczenia — 6 pytań
+1. Co było na początku (substancje, warunki)?
+2. Co zmieniono (dodano, ogrzano, zmieszano)?
+3. Co zaobserwowano (bez nazw produktów)?
+4. Czy powstała nowa substancja?
+5. Jakie dane lub test potwierdzają wniosek?
+6. Jak zapisać przemianę równaniem?
+
+**Przykład.** Do kwasu solnego dodano wiórki magnezu.
+Obserwacje: magnez stopniowo znika, wydzielają się pęcherzyki bezbarwnego gazu, probówka się ogrzewa.
+Wniosek: zachodzi reakcja chemiczna; gaz zbliżony do płomienia spala się z charakterystycznym dźwiękiem — to wodór.
+
+$$ Mg + 2 HCl → MgCl₂ + H₂↑
+
+> „Magnez zniknął” nie znaczy „został zniszczony” — jego atomy są teraz w jonach Mg²⁺ w roztworze (prawo zachowania masy).
 :::
 
 ## 4 | Pięć pytań chemika [[basic:E8]] {#piec-pytan}
@@ -231,8 +249,8 @@ $$ Fe + S → FeS
 |---|---|---|
 | **symbol** | pierwiastek albo jeden jego atom | Na — sód; Cl — chlor |
 | **wzór** | skład substancji: jakie atomy i ile | H₂O — 2 atomy H i 1 atom O; CO₂ — 1 atom C i 2 atomy O |
-| **indeks** (mała cyfra) | liczba atomów w jednej cząsteczce | H₂ — cząsteczka z dwóch atomów |
-| **współczynnik** (duża cyfra przed wzorem) | liczba cząsteczek | 2 H₂O — dwie cząsteczki wody |
+| **indeks** (mała cyfra) | liczba atomów w jednej cząsteczce albo w jednostce wzoru (związki jonowe, np. NaCl, nie tworzą cząsteczek) | H₂ — cząsteczka z dwóch atomów; CaCl₂ — 1 Ca²⁺ na 2 Cl⁻ |
+| **współczynnik** (duża cyfra przed wzorem) | liczba cząsteczek lub jednostek wzoru (na poziomie LO także moli) | 2 H₂O — dwie cząsteczki wody; 2 NaCl — dwie jednostki wzoru |
 | **równanie** | przemiana substratów w produkty, z zachowaniem atomów | 2 H₂ + O₂ → 2 H₂O |
 
 ::: karta core | Odczytaj równanie na głos
@@ -314,6 +332,7 @@ Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mie
 ## 10 | Doświadczenia {#doswiadczenia}
 
 @model f01-doswiadczenia-v01 | Pracownia: co naprawdę się zmieniło? | zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP
+@opis Pracownia z doświadczeniami w zlewce, parownicy, probówce i tyglu: rozpuszczanie soli, odparowanie roztworu, soda z octem, woda wapienna z CO₂, żelazo z siarką po ogrzaniu, spalanie magnezu; przy każdym obserwacje, wniosek i zasady BHP. Wniosek: tylko część zmian to reakcje chemiczne — rozstrzyga, czy powstała nowa substancja.
 
 ::: dosw | Doświadczenie 1 — Co naprawdę się zmieniło? (trzy naczynia)
 Problem: W którym naczyniu zachodzi reakcja chemiczna, a w którym zjawisko fizyczne?
@@ -326,8 +345,11 @@ Równanie:: NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑
 BHP: okulary ochronne; nie smakujemy substancji; parownicę po ogrzaniu chwytamy szczypcami — jest gorąca; ocet nie do oczu.
 
 @zlewka f01-doswiadczenia-v01 f01SolWoda | Zobacz w zlewce: sól w wodzie
+@opis Sól wsypana do wody w zlewce: kryształy stopniowo znikają, powstaje klarowny, bezbarwny roztwór. Wniosek: to rozpuszczanie, czyli zjawisko fizyczne — sól można odzyskać, odparowując wodę.
 @zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w zlewce: odparowanie roztworu soli
+@opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
 @zlewka f01-doswiadczenia-v01 f01SodaOcet | Zobacz w zlewce: soda + ocet
+@opis Do sody oczyszczonej dodano ocet: mieszanina pieni się i intensywnie wydziela pęcherzyki bezbarwnego gazu. Wniosek: zachodzi reakcja chemiczna — powstaje nowa substancja, tlenek węgla(IV) CO₂.
 :::
 
 ::: dosw | Doświadczenie 2 — Czy ten gaz to naprawdę CO₂?
@@ -341,6 +363,7 @@ Równanie:: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O
 BHP: okulary; woda wapienna jest zasadowa i drażni oczy oraz skórę; rurka nie może być zatkana (rosnące ciśnienie).
 
 @zlewka f01-doswiadczenia-v01 f01WodaWapienna | Zobacz w zlewce: woda wapienna i CO₂
+@opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina węglanu wapnia. Wniosek: zmętnienie wody wapiennej to test wykrywający CO₂.
 :::
 
 ::: dosw | Doświadczenie 3 — Spalanie magnezu (pokaz)
@@ -354,6 +377,7 @@ Równanie:: 2 Mg + O₂ → 2 MgO
 BHP: wykonuje nauczyciel; **nie patrzeć bezpośrednio w płomień** (bardzo jasne światło); płonącego magnezu nie gasić wodą; okulary, płytka ceramiczna pod spodem.
 
 @zlewka f01-doswiadczenia-v01 f01Mg | Zobacz w tyglu: spalanie magnezu
+@opis Wstążka magnezu spalana w tyglu: oślepiająco jasny, biały płomień, po spaleniu zostaje biały proszek (tlenek magnezu). Wniosek: zaszła reakcja chemiczna 2 Mg + O₂ → 2 MgO; w płomień nie patrzymy bezpośrednio.
 :::
 
 ::: dosw | Doświadczenie 4 — Mieszanina czy związek? Żelazo i siarka (pokaz)
@@ -367,10 +391,12 @@ Równanie:: Fe + S → FeS
 BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać trujący SO₂ — nie wąchać; gorąca probówka może pęknąć — okulary, szczypce.
 
 @zlewka f01-doswiadczenia-v01 f01FeS | Zobacz w probówce: Fe + S po ogrzaniu
+@opis Probówka z mieszaniną opiłków żelaza i siarki po ogrzaniu: mieszanina rozżarza się, powstaje ciemnoszara substancja (siarczek żelaza(II)), której magnes już nie przyciąga. Wniosek: powstała nowa substancja o innych właściwościach — reakcja chemiczna Fe + S → FeS.
 :::
 
 ::: karta understand | Przewiduj, potem sprawdź
 @model beaker-prediction-enhanced | Zlewka z predykcją | wybierz obserwację, której się spodziewasz, i sprawdź wynik — trening „hipoteza przed doświadczeniem”
+@opis Zlewka z doświadczeniem i listą możliwych obserwacji: najpierw wybierasz, czego się spodziewasz, potem animacja pokazuje wynik i porównuje go z twoim przewidywaniem. Wniosek: hipotezę formułuje się przed doświadczeniem, a wynik ją wspiera albo obala.
 :::
 
 ## 11 | Klinika błędów {#klinika}
@@ -387,6 +413,12 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 | „Doświadczenie udowodniło hipotezę na zawsze.” | „Wynik wsparł hipotezę w danych warunkach.” | Model i hipoteza mają zakres stosowalności; nowe dane mogą wymagać korekty. |
 | „Model nie pasuje, więc doświadczenie jest błędne.” | „Najpierw sprawdź warunki, pomiar i zakres modelu.” | Nie wolno dopasowywać danych do oczekiwanego wyniku. |
 | „Zmieniałem temperaturę i ilość soli naraz.” | „Zmieniam jedną główną zmienną, pozostałe warunki kontroluję.” | Inaczej nie wiadomo, co spowodowało różnicę. |
+| „Nie widać żadnych zmian, więc reakcja nie zachodzi.” | „Brak widocznych zmian nie wyklucza reakcji — potrzebny test lub pomiar.” | Niektóre reakcje przebiegają powoli albo bez objawów widocznych gołym okiem (np. zobojętnianie bezbarwnych roztworów — widać je dopiero ze wskaźnikiem). |
+| „Zrobiło się ciepło (zimno), więc zaszła reakcja.” | „Zmiana temperatury to objaw; trzeba sprawdzić, czy powstała nowa substancja.” | Temperatura zmienia się też przy rozpuszczaniu (np. saletra amonowa chłodzi wodę), topnieniu, parowaniu. |
+| „Powstał osad, więc na pewno zaszła reakcja.” | „Osad może powstać w reakcji albo po zmianie rozpuszczalności (np. krystalizacja po ochłodzeniu).” | Objaw ≠ dowód. |
+| „H₂O to rysunek cząsteczki wody.” | „H₂O to wzór — zapis składu: rodzaj atomów i ich stosunek.” | Wzór sumaryczny nie pokazuje kształtu ani wiązań. |
+| „Powącham, żeby sprawdzić, co powstało.” | „Zapach sprawdzamy tylko ruchem dłoni znad naczynia, nigdy bezpośrednio.” | Wiele gazów jest trujących lub drażniących (BHP). |
+| „Substancja, materia, próbka, ciało — to to samo.” | „Substancja to rodzaj materii; próbka to porcja substancji lub mieszaniny; ciało to przedmiot.” | Gwóźdź (ciało) jest z żelaza (substancja). |
 :::
 
 ## 12 | Ćwiczenia {#cwiczenia}
@@ -545,6 +577,7 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 :::
 
 @model mind-map | Mapy myśli MASTER | mapa myśli chemii do samodzielnego uzupełniania
+@opis Mapa myśli z pojęciami lekcji ułożonymi wokół centralnego hasła, z gałęziami do samodzielnego uzupełniania. Wniosek: pojęcia z lekcji łączą się w jedną sieć, a nie są osobnymi definicjami do wykucia.
 
 ## 15 | Fiszki {#fiszki}
 

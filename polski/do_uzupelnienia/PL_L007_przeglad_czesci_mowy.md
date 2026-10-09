@@ -64,6 +64,66 @@ Rozpoznawać część mowy na podstawie znaczenia, pytania, funkcji w zdaniu i m
 Uczeń powinien poprawnie rozpoznać części mowy w zdaniu, uzasadnić decyzję, rozróżnić formy odmienne i nieodmienne oraz wyjaśnić funkcję imiesłowu. Samo wyrecytowanie listy części mowy nie wystarcza.
 
 
+## Wersja MAX — Części mowy (MAX) (pakiet 2026-10-09, z rozwiązaniami)
+
+### Cel
+Rozpoznawać część mowy na podstawie znaczenia, pytania, funkcji w zdaniu i możliwości odmiany. Kontekst jest ważniejszy niż samo pytanie.
+
+### Mapa pełna
+
+| Część mowy | Pytania | Odmienne? | Kluczowe cechy | Przykłady |
+|------------|---------|-----------|----------------|---------|
+| Rzeczownik | kto? co? | tak | przypadek, liczba, rodzaj | uczeń, radość, deszcz, wolność |
+| Czasownik | co robi? co się dzieje? | tak | osoba, liczba, czas, tryb, aspekt | czytam, zbudowano, biegnij |
+| Przymiotnik | jaki? który? czyj? | tak | przypadek, liczba, rodzaj; stopniowanie | spokojny, drewniany, lepszy |
+| Liczebnik | ile? który z kolei? | zależnie | główne, porządkowe, zbiorowe, ułamkowe | pięć, drugi, dwoje, pół |
+| Zaimek | zastępuje inną część | zależnie | osobowy, dzierżawczy, wskazujący, względny, nieokreślony… | ona, mój, ten, który, ktoś |
+| Przysłówek | jak? gdzie? kiedy? | nie | wiele się stopniuje | szybko, blisko, dziś, lepiej |
+| Przyimek | łączy z wyrazem | nie | wymaga przypadku | pod, do, z, mimo |
+| Spójnik | łączy wyrazy/zdania | nie | współrzędne / podrzędne | i, ale, ponieważ, że |
+| Partykuła | modyfikuje sens | nie | niech, czy, nawet, -że, by | — |
+| Wykrzyknik | emocja / dźwięk | nie | ach!, hop!, miau! | — |
+
+### Imiesłowy – obowiązkowe
+
+- **Przymiotnikowy czynny** (`-ący`): śpiewający ptak  
+- **Przymiotnikowy bierny** (`-ny`, `-ty`): napisany list, zamknięte drzwi  
+- **Przysłówkowy współczesny** (`-ąc`): Idąc do domu…  
+- **Przysłówkowy uprzedni** (`-wszy`, `-łszy`): Zjadłszy obiad…
+
+**Zasada równoważnika imiesłowowego:** ten sam wykonawca czynności co w zdaniu nadrzędnym.
+
+### Ćwiczenia z pełnymi rozwiązaniami
+
+**A. Określ część mowy (z uzasadnieniem)**
+
+1. Uczeń mówił **spokojnie**.  
+   → **przysłówek** (określa czasownik, odpowiada na „jak?”)
+
+2. **Pięcioro** dzieci weszło do sali.  
+   → **liczebnik zbiorowy**
+
+3. To jest **moja** książka.  
+   → **zaimek dzierżawczy**
+
+4. **Ponieważ** padało, zostaliśmy w domu.  
+   → **spójnik podrzędny**
+
+5. **Zamknięte** okno nie przepuszczało hałasu.  
+   → **imiesłów przymiotnikowy bierny** (funkcja przydawki)
+
+6. **Idąc** do szkoły, spotkałem kolegę.  
+   → **imiesłów przysłówkowy współczesny**
+
+7. **Niech** zaraz przyjdzie!  
+   → **partykuła**
+
+8. **Ach**, jak pięknie!  
+   → **wykrzyknik**
+
+**B. Popraw błędy**
+- „W zdaniu *Ona śpiewa pięknie* wyraz *pięknie* jest przymiotnikiem” → **BŁĄD**. To przysłówek (określa czasownik).
+
 ## Do uzupełnienia danymi (z pierwotnego szkieletu)
 - DANE: tabela części mowy z zeszytu ucznia (jak ją zapisuje nauczyciel)
 - DANE: zadania z egzaminów ósmoklasisty / sprawdzianów z tego działu (z odpowiedziami)

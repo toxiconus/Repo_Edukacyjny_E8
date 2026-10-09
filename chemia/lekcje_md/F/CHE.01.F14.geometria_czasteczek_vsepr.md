@@ -1958,3 +1958,70 @@ Pary elektronowe wokół atomu centralnego odpychają się i układają jak najd
 
 ---
 
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+> Uwaga przy scalaniu: W tabeli audytu kolumna nazywa się „geometria elektronowa”, ale wiersze NH₃ i H₂O podają kształt cząsteczki (piramidalna, kątowa) — przy budowie lekcji dać dwie kolumny: geometria elektronowa i kształt cząsteczki. Lista „Najważniejsze poprawki do F07–F14” w odpowiedzi Perplexity była ucięta (pkt 6).
+
+### Poprawki
+
+- Model VSEPR opiera się na założeniu, że pary elektronowe wokół atomu centralnego odpychają się.
+- Geometria elektronowa uwzględnia wszystkie domeny elektronowe.
+- Geometria cząsteczki uwzględnia położenie atomów, ale pomija wolne pary przy opisie kształtu.
+- Wolne pary zwykle odpychają silniej niż pary wiążące.
+- Nie utożsamiaj liczby wiązań z liczbą domen elektronowych.
+- Wiązanie podwójne i potrójne liczy się jako jedna domena elektronowa.
+- Kąt wiązania jest wartością przybliżoną, ponieważ wolne pary i różne atomy odkształcają geometrię.
+- Nie każda cząsteczka z polarnymi wiązaniami jest cząsteczką polarną.
+- Polaryzacja cząsteczki zależy od wartości i kierunku wszystkich momentów dipolowych.
+
+### Uzupełnienia
+
+| Liczba domen | Geometria elektronowa | Przykład |
+|---|---|---|
+| 2 | Liniowa | CO₂ |
+| 3 | Trygonalna płaska | BF₃ |
+| 4 | Tetraedryczna | CH₄ |
+| 4, trzy wiązania i jedna wolna para | Piramidalna trygonalna | NH₃ |
+| 4, dwa wiązania i dwie wolne pary | Kątowa | H₂O |
+
+#### Przykłady
+
+CO₂:
+
+- atom centralny: C;
+- dwie domeny elektronowe;
+- geometria liniowa;
+- kąt około 180°;
+- cząsteczka niepolarna, ponieważ dipole wiązań znoszą się.
+
+H₂O:
+
+- atom centralny: O;
+- cztery domeny elektronowe;
+- geometria elektronowa tetraedryczna;
+- geometria cząsteczki kątowa;
+- cząsteczka polarna.
+
+NH₃:
+
+- atom centralny: N;
+- cztery domeny elektronowe;
+- geometria elektronowa tetraedryczna;
+- geometria cząsteczki piramidalna;
+- cząsteczka polarna.
+
+#### Zadania
+
+1. Określ kształt CH₄, NH₃, H₂O, CO₂.
+2. Wyjaśnij, dlaczego CO₂ jest niepolarny, a H₂O polarna.
+3. Policz domeny elektronowe wokół atomu centralnego w NH₃.
+4. Wyjaśnij różnicę między geometrią elektronową i geometrią cząsteczki.
+
+#### Klucz
+
+1. CH₄ — tetraedryczna; NH₃ — piramidalna; H₂O — kątowa; CO₂ — liniowa.
+2. W CO₂ momenty dipolowe dwóch wiązań mają przeciwne kierunki i się znoszą; w H₂O kształt kątowy nie pozwala na ich zniesienie.
+3. Cztery domeny: trzy wiązania i jedna wolna para.
+4. Geometria elektronowa uwzględnia wiązania i wolne pary, a geometria cząsteczki opisuje rozmieszczenie atomów.

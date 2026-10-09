@@ -46,6 +46,27 @@ W praktyce szkolnej kategorie bywają omawiane łącznie; gdy polecenie wymaga r
 **Klucz przykładowy:** 1. uosobienie, nadaje wiatrowi ludzką zdolność szeptania; 2. porównanie, podkreśla szybkość; 3. pytanie retoryczne, skłania do przyjęcia stanowiska; 4. powtórzenie, wzmacnia wrażenie ciszy; 5. `srebrny` — epitet, `patrzył` — uosobienie.
 
 
+## Wersja MAX — Środki stylistyczne (MAX) (pakiet 2026-10-09, z rozwiązaniami)
+
+| Środek | Definicja | Przykład |
+|--------|-----------|----------|
+| Epitet | określenie artystyczne | srebrzyste fale |
+| Porównanie | jak / niczym / niby | szybki jak wiatr |
+| Metafora | przenośnia | morze łez |
+| Personifikacja | ożywienie | wiatr szepce |
+| Hiperbola | wyolbrzymienie | umieram z głodu |
+| Onomatopeja | naśladowanie dźwięku | szum, stukot |
+| Anafora | powtórzenie na początku | Idzie… Idzie… |
+| Apostrofa | zwrot do kogoś/czegoś | O ojczyzno! |
+
+### Ćwiczenie
+Wskaż środki w fragmencie:  
+„Srebrzyste fale morza szumiały jak ogromny chór, a wiatr szeptał stare legendy.”
+
+- epitet: srebrzyste  
+- porównanie: jak ogromny chór  
+- personifikacja: wiatr szeptał
+
 ## Do uzupełnienia danymi (z pierwotnego szkieletu)
 - DANE: lista środków wymaganych przez nauczyciela; wiersze z lektur do przykładów
 - DANE: zadania z egzaminów ósmoklasisty / sprawdzianów z tego działu (z odpowiedziami)

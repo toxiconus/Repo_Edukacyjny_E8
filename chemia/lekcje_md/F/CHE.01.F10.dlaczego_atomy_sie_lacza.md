@@ -325,3 +325,56 @@ granice: "elastyczne; kontrolowane nakładanie dozwolone"
 ### Diagnoza wejściowa
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dlaczego atomy się łączą” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Nie pisz, że atomy zawsze łączą się po to, aby uzyskać oktet.
+- Reguła oktetu jest użytecznym modelem dla wielu związków pierwiastków grup głównych, ale ma wyjątki.
+- Niektóre atomy stabilizują się przy dwóch elektronach na pierwszej powłoce, na przykład wodór.
+- Występują cząsteczki z niepełnym oktetem, rozszerzonym oktetem i nieparzystą liczbą elektronów.
+- Stabilność układu nie oznacza wyłącznie „posiadania pełnej powłoki”.
+- O tym, czy wiązanie powstanie, decyduje bilans energetyczny całego układu.
+- Powstanie wiązania może obniżyć energię układu, ale podczas rozrywania wiązania energia jest pochłaniana.
+- Nie przedstawiaj wiązania jako „przyciągania atomów przez chęć uzyskania oktetu”.
+- Atomy mogą tworzyć wiązania jonowe, kowalencyjne lub metaliczne, a granice między modelami bywają umowne.
+
+### Uzupełnienia
+
+#### Reguła oktetu
+
+W wielu prostych związkach atomy pierwiastków grup głównych dążą do konfiguracji zbliżonej do konfiguracji gazu szlachetnego. Nie jest to uniwersalne prawo.
+
+#### Przykłady wyjątków
+
+- H₂ — wodór osiąga duet;
+- BF₃ — bor może mieć niepełny oktet;
+- NO — liczba elektronów walencyjnych jest nieparzysta;
+- PCl₅ — w modelu szkolnym fosfor może mieć rozszerzony oktet;
+- SF₆ — siarka ma rozszerzoną powłokę walencyjną w opisie szkolnym.
+
+#### Uzupełnienie energetyczne
+
+Podczas tworzenia wiązań:
+
+- układ może osiągnąć niższą energię;
+- wydziela się energia, jeśli proces prowadzi do stabilniejszego układu;
+- zerwanie wiązań wymaga dostarczenia energii;
+- całkowity efekt energetyczny reakcji zależy od wszystkich zrywanych i tworzonych wiązań.
+
+#### Zadania
+
+1. Wyjaśnij, dlaczego reguła oktetu nie jest pełną teorią wiązań.
+2. Podaj przykład cząsteczki, w której wodór osiąga duet.
+3. Wyjaśnij, dlaczego podczas reakcji chemicznej jedne wiązania zanikają, a inne powstają.
+4. Oceń zdanie: „Każdy atom chce mieć osiem elektronów walencyjnych.”
+
+#### Klucz
+
+1. Istnieją cząsteczki z duetem, niepełnym oktetem, rozszerzonym oktetem i nieparzystą liczbą elektronów.
+2. H₂.
+3. Reakcja polega na przebudowie połączeń między atomami; zerwanie jednych wiązań umożliwia utworzenie innych.
+4. Fałsz. To uproszczenie dotyczące wielu, ale nie wszystkich układów.

@@ -85,9 +85,10 @@ PROMPT = """# PROMPT DLA PERPLEXITY — analiza lekcji: {przedmiot} (klasa 8, eg
 2. **Pokrycie podstawy programowej.** Zestaw wymagania szczegółowe podstawy programowej (klasy 7–8) i informatora CKE z tym, co jest w lekcjach. Wypisz wymagania **niepokryte lub pokryte słabo**, z numerem wymagania i priorytetem (wysoki = często na egzaminie).
 3. **Co uzupełnić w istniejących lekcjach.** Dla każdej lekcji: czego brakuje (pojęcia, typowe pułapki egzaminacyjne, typy zadań CKE, zadania otwarte z kluczem i punktacją, powtórka), co jest zbędne lub za trudne dla poziomu E8 (ale może zostać jako MASTER/KONKURS).
 4. **Nowe lekcje.** Zaproponuj listę brakujących lekcji w kolejności realizacji (tytuł, zakres, wymagania podstawy, szacowana liczba godzin).
-5. **Spójność.** Wskaż sprzeczności między lekcjami (np. różne definicje lub oznaczenia tego samego) i powtórzenia.
+5. **Lekcje oznaczone [W1 …]** przeszły już weryfikację treści — sprawdź je tylko pod kątem zakresu i spójności, nie powtarzaj poprawek treści.
+6. **Spójność.** Wskaż sprzeczności między lekcjami (np. różne definicje lub oznaczenia tego samego) i powtórzenia.
 
-6. **Szkielety** (jeśli są na końcu pliku): dla każdego zaproponuj treść i zadania z kluczem.
+7. **Szkielety** (jeśli są na końcu pliku): dla każdego zaproponuj treść i zadania z kluczem.
 
 **Format odpowiedzi:**
 - A. Tabela per lekcja: `Lekcja | Błędy (cytat → poprawka → źródło) | Braki do uzupełnienia | Do skrócenia/przeniesienia`.
@@ -113,7 +114,15 @@ def build(nazwa, przedmiot, przedmiot_dop, kontekst, lessons, pomin, szkielety=(
     szkielety = [x for x in szkielety if x not in pelne]
     lessons = list(lessons) + [(k, t + " (konkursowa, wersja robocza)", b, z) for k, t, b, z in pelne]
     """lessons: lista (kod, tytuł, treść, źródło)."""
-    spis = "\n".join(f"- **{k}** — {t}  _(źródło: {z})_" for k, t, _, z in lessons)
+    w1 = {}
+    for ln in (ROOT / "WERYFIKACJA.md").read_text(encoding="utf-8").split("\n"):
+        c = [x.strip() for x in ln.strip("|").split("|")]
+        if len(c) > 3 and re.match(r"\d{4}-", c[3]):
+            w1[(c[0], c[1])] = c[3]
+    def znak(k):
+        d = w1.get((przedmiot.split()[-1] if przedmiot.startswith("język") else przedmiot, k))
+        return f" **[W1 {d} — po weryfikacji treści]**" if d else ""
+    spis = "\n".join(f"- **{k}** — {t}  _(źródło: {z})_{znak(k)}" for k, t, _, z in lessons)
     if szkielety:
         spis += "\n\nSzkielety na końcu pliku: " + "; ".join(f"{k} {t}" for k, t, _, _ in szkielety)
     if pomin:

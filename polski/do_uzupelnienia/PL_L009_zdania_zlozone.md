@@ -51,6 +51,28 @@ Wstaw interpunkcję i określ rodzaj zdania:
 Poprawny przykład: `Wracając ze szkoły, spotkałam koleżankę.` Osoba wracająca i spotykająca jest ta sama. Niepoprawna konstrukcja powstaje, gdy podmiot zdania głównego nie może wykonać czynności opisanej imiesłowem.
 
 
+## Wersja MAX — Zdania złożone i interpunkcja (MAX) (pakiet 2026-10-09, z rozwiązaniami)
+
+### Podział
+- **Współrzędnie złożone**: i, oraz, a, ale, lecz, więc, dlatego…  
+- **Podrzędnie złożone**: że, ponieważ, który, gdy, jeśli, choć…
+
+### Interpunkcja – reguły konkursowe
+1. Przed „że”, „żeby”, „ponieważ”, „chociaż” – **przecinek**.  
+2. Przed „i”, „oraz”, „albo”, „lub” – zwykle **bez przecinka** (wyjątki: wtrącenia, powtórzenia).  
+3. Imiesłowowy równoważnik zdania – **przecinek**.  
+4. Wtrącenia i dopowiedzenia – przecinki lub myślniki.
+
+### Ćwiczenia z rozwiązaniami
+
+1. Napisz z poprawną interpunkcją:  
+   „Kiedy wrócił do domu zjadł obiad i poszedł spać.”  
+   → **Kiedy wrócił do domu, zjadł obiad i poszedł spać.**
+
+2. Rozpoznaj rodzaj zdania złożonego:  
+   „Nie poszedłem na spacer, ponieważ padał deszcz.”  
+   → **podrzędnie złożone okolicznikowe przyczyny**
+
 ## Do uzupełnienia danymi (z pierwotnego szkieletu)
 - DANE: czy klasa już przerobiła podrzędne (które rodzaje)?
 - DANE: zadania z egzaminów ósmoklasisty / sprawdzianów z tego działu (z odpowiedziami)

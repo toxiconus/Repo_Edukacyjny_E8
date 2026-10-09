@@ -174,14 +174,16 @@ Składniki mieszaniny zachowują swoje właściwości ([F02](#mosty)), więc ka�
 | **odparowanie** | rozpuszczalnik jest lotny, substancja rozpuszczona — nie | substancja stała w parownicy; rozpuszczalnik ucieka | sól z roztworu |
 | **krystalizacja** | rozpuszczalność zależy od temperatury i ilości rozpuszczalnika | kryształy substancji | oczyszczanie soli, cukru |
 | **destylacja** | różne temperatury wrzenia | **destylat** w odbieralniku, reszta w kolbie | woda z roztworu soli, etanol z wody |
-| **rozdzielacz** | ciecze nie mieszają się i mają różną gęstość | dolna warstwa spuszczana kranem | woda i olej |
-| **magnes** | właściwości magnetyczne | składnik magnetyczny na magnesie | opiłki żelaza i siarka lub piasek |
-| **chromatografia** | różne powinowactwo do bibuły i rozpuszczalnika | barwniki w różnych miejscach bibuły | barwniki tuszu |
+| **rozdzielacz** (lejek rozdzielający) | ciecze **nie mieszają się** i mają różną gęstość (cieczy mieszających się, np. wody z etanolem, nie rozdzieli) | dolna warstwa spuszczana kranem | woda i olej |
+| **magnes** | właściwości magnetyczne (żelazo, nikiel, kobalt — nie każdy metal: glin i miedź nie są przyciągane) | składnik magnetyczny na magnesie | opiłki żelaza i siarka lub piasek |
+| **przesiewanie (sito)** | różna wielkość ziaren | grubsze ziarna na sicie, drobne przechodzą | piasek i żwir, mąka z grudkami |
+| **chromatografia** | różne powinowactwo składników do fazy nieruchomej (bibuła) i ruchomej (rozpuszczalnik) | barwniki w różnych miejscach bibuły | barwniki tuszu |
 | **wirowanie** | różna gęstość, przyspieszone opadanie | osad na dnie probówki | składniki krwi |
 
 **Sączenie a destylacja:** sączenie oddziela ciało stałe od cieczy; destylacja rozdziela ciecze lub odzyskuje rozpuszczalnik z roztworu. **Odparowanie a destylacja:** obie usuwają lotny rozpuszczalnik, ale tylko destylacja go **odzyskuje** — para jest chłodzona w chłodnicy, skrapla się i spływa do odbieralnika.
 
 @model f03-rozdzielanie-v01 | Pracownia: rozdzielanie mieszanin | zawiesiny i roztwór w zlewce — sedymentacja, sączenie, odparowanie; jaką różnicę właściwości wykorzystujesz?
+@opis Zlewki z zawiesinami i roztworem pokazane w kolejnych metodach: sedymentacja (osad opada na dno), sączenie (osad zostaje na sączku, klarowny przesącz spływa do zlewki), odparowanie (w parownicy zostaje substancja stała). Wniosek: metodę rozdzielania dobiera się do różnicy właściwości składników mieszaniny.
 
 ## 6 | Procedura doboru metody [[basic:E8]] {#dobor}
 
@@ -219,6 +221,7 @@ Nie zawsze. Pojedyncza destylacja mieszaniny etanolu z wodą daje destylat **wzb
 - **Produkcja cukru** — sączenie soku, zatężanie, krystalizacja. **Wzbogacanie rud** — flotacja i rozdział magnetyczny.
 
 @model lab-stations-v102 | Stanowiska laboratoryjne: zlewka, gaz, chłodnica, palnik | sprzęt do destylacji — kolba, chłodnica, odbieralnik
+@opis Zestaw do destylacji: kolba z cieczą ogrzewana palnikiem, chłodnica, w której para się skrapla, i odbieralnik, do którego spływa destylat. Wniosek: destylacja to odparowanie i skroplenie — odzyskuje się składnik o niższej temperaturze wrzenia.
 
 ## 8 | Doświadczenia {#doswiadczenia}
 
@@ -232,6 +235,7 @@ Wniosek: Sedymentacja, dekantacja i sączenie rozdzielają nierozpuszczalne cia�
 BHP: okulary; szkło — ostrożnie; ciecz wlewamy po bagietce, nie przebijamy sączka.
 
 @zlewka f03-rozdzielanie-v01 f03PiasekWoda | Zobacz w zlewce: piasek + woda
+@opis Zlewka z wodą i piaskiem: po zamieszaniu woda jest mętna, po chwili piasek opada na dno, a nad nim zostaje klarowna woda. Wniosek: piasek nie rozpuszcza się w wodzie — taką mieszaninę rozdziela się sedymentacją z dekantacją albo sączeniem.
 :::
 
 ::: dosw | Doświadczenie 2 — Otrzymywanie soli z roztworu
@@ -244,6 +248,7 @@ Wniosek: Sól rozpuszczona przechodzi przez sączek; odzyskujemy ją przez odpar
 BHP: okulary; gorąca parownica — tylko szczypcami; pod koniec odparowania kryształy pryskają — zmniejszyć ogrzewanie.
 
 @zlewka f03-rozdzielanie-v01 f01Odparowanie | Zobacz w parownicy: odparowanie roztworu soli
+@opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
 :::
 
 ::: dosw | Doświadczenie 3 — Opiłki żelaza, piasek i sól
@@ -288,6 +293,11 @@ BHP: pokaz nauczyciela; kamyczki wrzenne zapobiegają gwałtownemu wrzeniu; nie 
 | „Sól zniknęła w wodzie.” | Sól jest w roztworze. | Po odparowaniu wody wraca. |
 | „Najpierw wsypię wszystko do wody, potem użyję magnesu.” | Magnes przed dodaniem wody. | Mokre opiłki trudno wyciągnąć, zaczynają rdzewieć. |
 | „Temperatura wrzenia wody to zawsze 100 °C.” | 100 °C pod ciśnieniem normalnym. | W górach (niższe ciśnienie) woda wrze niżej. |
+| „Rozpuszczanie to zawsze zjawisko fizyczne.” | Zwykle tak (sól, cukier), ale niektóre substancje reagują z wodą podczas „rozpuszczania” (CaO → Ca(OH)₂, sód → NaOH + H₂). | Sprawdź, czy po odparowaniu wody odzyskasz tę samą substancję. |
+| „Krystalizacja daje zawsze czystą substancję.” | Krystalizacja oczyszcza, ale część zanieczyszczeń może zostać w kryształach — czasem powtarza się ją kilka razy. | Czystość potwierdza się pomiarem (np. temperatura topnienia). |
+| „Magnes oddzieli każdy metal.” | Tylko substancje ferromagnetyczne (Fe, Ni, Co). | Glin i miedź nie są przyciągane przez magnes. |
+| „Destylacja to odparowanie cieczy.” | Destylacja = odparowanie **i skroplenie** pary w chłodnicy. | Dlatego odzyskuje się rozpuszczalnik (destylat). |
+| „Lejkiem rozdzielającym rozdzielę wodę i alkohol.” | Woda i etanol mieszają się — potrzebna destylacja. | Rozdzielacz działa tylko dla cieczy niemieszających się. |
 :::
 
 ## 10 | Ćwiczenia {#cwiczenia}
@@ -347,6 +357,20 @@ Mieszanina zawiera ciało stałe nierozpuszczalne w wodzie oraz substancję w wo
 
 ::: odp | Przykładowy kierunek
 Rozpuszczenie w wodzie → sączenie (osad: składnik nierozpuszczalny) → destylacja przesączu (destylat: woda; w kolbie: substancja rozpuszczona). Destylacja zamiast odparowania, bo celem jest też odzyskanie wody.
+:::
+:::
+
+::: karta basic | F. Utrwalenie — dobór metody
+1. Dobierz metodę: kreda i woda, olej i woda, sól i woda, opiłki żelaza i siarka.
+2. Wyjaśnij, dlaczego sączenie nie oddzieli soli rozpuszczonej w wodzie.
+3. Które przemiany są zjawiskami fizycznymi: topnienie lodu, spalanie drewna, wrzenie wody, rdzewienie żelaza?
+4. Zaproponuj sposób otrzymania soli z jej roztworu.
+
+::: odp | Pokaż odpowiedzi
+1. Kreda i woda — sączenie (lub sedymentacja i dekantacja); olej i woda — rozdzielacz; sól i woda — odparowanie lub krystalizacja; żelazo i siarka — magnes (tylko w mieszaninie; po ogrzaniu powstaje siarczek żelaza(II) i magnes już nie rozdzieli).
+2. Jony soli są dużo mniejsze od porów sączka i przechodzą razem z wodą do przesączu.
+3. Topnienie lodu i wrzenie wody — zjawiska fizyczne; spalanie drewna i rdzewienie żelaza — reakcje chemiczne.
+4. Odparować część wody, ostudzić roztwór (krystalizacja), oddzielić kryształy sączeniem i wysuszyć.
 :::
 :::
 

@@ -1379,3 +1379,115 @@ HTML: `CHE.001e.v01.00.html` (v1.5 mer). Nie zastępuje L001. Warstwa [ZAAWANSOW
 
 <!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 3280–4149 -->
 # F04 — KONFIGURACJA ELEKTRONOWA (Fundamenty)
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Elektrony zajmują powłoki, podpowłoki i orbitale.
+- Powłoka elektronowa jest określana główną liczbą kwantową n.
+- Podpowłoki oznacza się symbolami s, p, d i f.
+- Maksymalna liczba elektronów na podpowłoce wynosi:
+  - s: 2;
+  - p: 6;
+  - d: 10;
+  - f: 14.
+- Orbital może pomieścić najwyżej dwa elektrony o przeciwnych spinach.
+- Nie zapisuj, że elektrony „krążą po powłokach jak planety”. To wyłącznie uproszczony model.
+- Zasada obsadzania orbitali według rosnącej energii jest przybliżeniem używanym do zapisu konfiguracji elektronowej.
+- Zasada Pauliego: w jednym orbitalu mogą znajdować się najwyżej dwa elektrony o przeciwnych spinach.
+- Reguła Hunda: orbitale o tej samej energii są najpierw obsadzane pojedynczo elektronami o równoległych spinach.
+- W zapisie szkolnym należy rozróżniać:
+  - powłokę, na przykład n=3;
+  - podpowłokę, na przykład 3p;
+  - orbital, na przykład jeden z trzech orbitali podpowłoki 3p.
+- Kolejność zapisu podpowłok nie jest tym samym co kolejność powłok w układzie okresowym.
+- Dla atomów metali przejściowych elektrony są zwykle zapisywane najpierw na podpowłoce 4s, a następnie na 3d, ale podczas tworzenia kationów elektrony 4s usuwa się przed elektronami 3d.
+- Nie przedstawiaj konfiguracji 4s i 3d jako bezwyjątkowej reguły dla wszystkich atomów.
+
+### Uzupełnienia
+
+#### Maksymalna liczba elektronów
+
+Dla powłoki o numerze n maksymalna liczba elektronów wynosi:
+
+ 2n²
+
+W szkolnym modelu:
+
+- pierwsza powłoka: maksymalnie 2 elektrony;
+- druga powłoka: maksymalnie 8 elektronów;
+- trzecia powłoka: w podstawowych przykładach często zapisywana jako 8 elektronów na zewnętrznej części, ale pełna pojemność powłoki wynosi 18;
+- czwarta powłoka: pełna pojemność wynosi 32 elektrony.
+
+#### Przykłady
+
+Sód, Z=11:
+
+ 1s² 2s² 2p⁶ 3s¹
+
+Zapis powłokowy:
+
+ K²L⁸M¹
+
+Chlor, Z=17:
+
+ 1s² 2s² 2p⁶ 3s² 3p⁵
+
+Zapis powłokowy:
+
+ K²L⁸M⁷
+
+Wapń, Z=20:
+
+ 1s² 2s² 2p⁶ 3s² 3p⁶ 4s²
+
+Zapis powłokowy:
+
+ K²L⁸M⁸N²
+
+#### Konfiguracja jonu
+
+Dla Na⁺:
+
+ Na: 1s² 2s² 2p⁶ 3s¹
+
+ Na⁺: 1s² 2s² 2p⁶
+
+Dla Cl⁻:
+
+ Cl: 1s² 2s² 2p⁶ 3s² 3p⁵
+
+ Cl⁻: 1s² 2s² 2p⁶ 3s² 3p⁶
+
+#### Poprawki do zadań
+
+1. Nie pytaj wyłącznie o „liczbę powłok” bez określenia, czy chodzi o atom czy jon.
+2. Przy zapisie jonu zawsze sprawdzaj liczbę elektronów.
+3. Nie dopuszczaj konfiguracji, w której orbital s zawiera więcej niż 2 elektrony.
+4. Nie dopuszczaj konfiguracji, w której podpowłoka p zawiera więcej niż 6 elektronów.
+5. W zadaniach rozszerzonych zaznacz, że kolejność energetyczna i kolejność usuwania elektronów mogą być różne.
+
+#### Zadania
+
+1. Zapisz konfigurację elektronową atomu glinu.
+2. Zapisz konfigurację powłokową atomu tlenu.
+3. Zapisz konfigurację elektronową jonu Mg²⁺.
+4. Wskaż błąd w zapisie 1s² 2s² 2p⁷.
+5. Wyjaśnij, dlaczego Na i Na⁺ mają różną liczbę elektronów.
+
+#### Klucz
+
+1. Al:
+
+ 1s² 2s² 2p⁶ 3s² 3p¹
+
+2. O: K²L⁶.
+3. Mg²⁺:
+
+ 1s² 2s² 2p⁶
+
+4. Podpowłoka p może zawierać najwyżej 6 elektronów.
+5. Atom sodu oddał jeden elektron, tworząc kation Na⁺.

@@ -782,3 +782,71 @@ Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Struktu
 | NaCl | 23 + 35,5 | 58,5 u (masa jednostki wzoru) |
 | Ca(OH)₂ | 40 + 2·(16+1) | 74 u (masa jednostki wzoru) |
 | H₂SO₄ | 2·1 + 32 + 4·16 | 98 u (masa cząsteczkowa) |
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Wzór Lewisa przedstawia elektrony walencyjne, pary wiążące i wolne pary elektronowe.
+- Nie utożsamiaj kreski we wzorze Lewisa z całym wiązaniem chemicznym w każdym możliwym modelu.
+- Jedna kreska zwykle oznacza jedną wspólną parę elektronową.
+- Dwie kreski oznaczają wiązanie podwójne, a trzy kreski wiązanie potrójne.
+- Najpierw należy policzyć wszystkie elektrony walencyjne.
+- Dla jonu wieloatomowego liczbę elektronów należy skorygować o ładunek:
+  - dla anionu dodaj elektrony;
+  - dla kationu odejmij elektrony.
+- Wzór Lewisa nie pokazuje rzeczywistych długości wiązań ani dokładnej geometrii cząsteczki.
+- Reguła oktetu pomaga budować wzory, ale ma wyjątki.
+- Dla jonu wieloatomowego należy stosować nawias kwadratowy i zapisać ładunek, na przykład [OH]⁻.
+
+### Uzupełnienia
+
+#### Procedura
+
+1. Policz elektrony walencyjne.
+2. Wybierz atom centralny.
+3. Połącz atomy wiązaniami pojedynczymi.
+4. Uzupełnij oktety atomów zewnętrznych.
+5. Umieść pozostałe elektrony na atomie centralnym.
+6. Jeśli atom centralny nie ma oktetu, utwórz wiązania wielokrotne.
+7. Sprawdź łączną liczbę elektronów.
+8. Dla jonów zapisz nawias i ładunek.
+
+#### Przykład: woda
+
+Tlen ma 6 elektronów walencyjnych, a dwa atomy wodoru po 1:
+
+ 6+1+1=8
+
+Struktura zawiera:
+
+- dwa wiązania O-H;
+- dwie wolne pary elektronowe na atomie tlenu.
+
+#### Przykład: dwutlenek węgla
+
+Łączna liczba elektronów walencyjnych:
+
+ 4+2·6=16
+
+Poprawny zapis strukturalny:
+
+ O=C=O
+
+#### Zadania
+
+1. Narysuj wzór Lewisa dla NH₃.
+2. Narysuj wzór Lewisa dla CH₄.
+3. Narysuj wzór Lewisa dla HCl.
+4. Policz elektrony walencyjne w CO₃²⁻.
+5. Wyjaśnij, dlaczego wzór CO₂ zawiera dwa wiązania podwójne w modelu Lewisa.
+
+#### Klucz
+
+1. Azot tworzy trzy wiązania z wodorem i ma jedną wolną parę elektronową.
+2. Węgiel tworzy cztery wiązania pojedyncze z wodorem.
+3. Chlor tworzy jedno wiązanie z wodorem i ma trzy wolne pary.
+4. 4+3·6+2=24 elektrony walencyjne.
+5. Dwa wiązania podwójne pozwalają wypełnić oktet atomu węgla i obu atomów tlenu.

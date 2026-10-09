@@ -1255,3 +1255,67 @@ UKŁAD OKRESOWY
 <!-- źródłowy fragment: ### ADD 2026-09-26 — zrównanie z HTML v5.3 (nic nie wycięte); dopasowanie: :4, :3, :3, J02:2 -->
 
 <!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 3280–4149 -->
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Numer okresu odpowiada najwyższemu numerowi zajętej powłoki w atomie w stanie podstawowym.
+- Dla pierwiastków grup głównych liczba elektronów walencyjnych pomaga określić położenie w grupie.
+- Konfiguracja elektronowa nie wyznacza bezpośrednio wszystkich właściwości pierwiastka.
+- Pierwiastki w jednej grupie mają podobną konfigurację zewnętrznej powłoki, ale różnią się liczbą powłok i rozmiarem atomu.
+- Nie pisz, że numer grupy zawsze jest równy liczbie elektronów walencyjnych.
+- Dla grup 13–18 liczbę elektronów walencyjnych dla pierwiastków grup głównych można wiązać z cyfrą jedności numeru grupy.
+- Hel jest wyjątkiem od prostego zapisu dla grupy 18.
+- Położenie w układzie okresowym można odczytywać z konfiguracji, ale wymaga rozpoznania rodzaju pierwiastka.
+
+### Uzupełnienia
+
+#### Schemat odczytu
+
+1. Zapisz konfigurację elektronową.
+2. Znajdź najwyższy numer powłoki.
+3. Określ okres.
+4. Policz elektrony walencyjne.
+5. Dla pierwiastka grupy głównej określ grupę.
+6. Sprawdź, czy konfiguracja kończy się na s, p, d czy f.
+7. Określ blok.
+
+#### Przykład
+
+Konfiguracja:
+
+ 1s² 2s² 2p⁶ 3s² 3p⁴
+
+- liczba elektronów: 16;
+- pierwiastek: siarka;
+- najwyższa powłoka: n=3;
+- okres: 3;
+- elektrony walencyjne: 6;
+- grupa: 16;
+- blok: p.
+
+#### Zadania
+
+1. Określ położenie pierwiastka o konfiguracji:
+
+ 1s² 2s² 2p⁶ 3s¹
+
+2. Określ położenie pierwiastka o konfiguracji:
+
+ 1s² 2s² 2p⁶ 3s² 3p²
+
+3. Zapisz konfigurację atomu o numerze atomowym 9.
+4. Wyjaśnij, dlaczego sód i potas należą do tej samej grupy.
+
+#### Klucz
+
+1. Sód: okres 3, grupa 1, blok s.
+2. Krzem: okres 3, grupa 14, blok p.
+3. Fluor:
+
+ 1s² 2s² 2p⁵
+
+4. Mają po jednym elektronie walencyjnym, choć potas ma o jedną powłokę więcej.

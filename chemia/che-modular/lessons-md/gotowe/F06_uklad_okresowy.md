@@ -238,6 +238,7 @@ Ogólnie **rośnie w dół i w lewo** układu: metale leżące nisko i po lewej 
 :::
 
 @model periodic-54 | Układ okresowy 1–54 — okres i grupa, bloki, elektrony walencyjne, trendy | koloruj wg okresu i grupy, bloku, liczby elektronów walencyjnych, promienia, elektroujemności, energii jonizacji; kliknij pierwiastek — adres → elektrony → przewidywanie, tlenki i model atomu
+@opis Układ okresowy pierwiastków 1–54, którego komórki można kolorować według okresu i grupy, bloku (s, p, d), liczby elektronów walencyjnych, promienia atomowego, elektroujemności i energii jonizacji. Wniosek: właściwości zmieniają się regularnie — wzdłuż okresu i w dół grupy (trendy okresowe).
 
 ::: karta understand | Zadania predykcyjne — z samego położenia
 1. Który ma większy promień atomowy: Na czy K? — **K**: leży niżej w tej samej grupie (jedna powłoka więcej).
@@ -286,8 +287,11 @@ BHP: wyłącznie pokaz nauczyciela za osłoną — sód i potas mogą rozprysną
 :::
 
 @zlewka f06-doswiadczenia-v01 liH2o | Zobacz w zlewce: lit + woda
+@opis Kawałek litu wrzucony do wody: lit pływa po powierzchni i spokojnie wydziela pęcherzyki gazu (wodoru). Wniosek: lit reaguje z wodą najsłabiej z porównywanych litowców — reaktywność rośnie w dół grupy: Li < Na < K.
 @zlewka f06-doswiadczenia-v01 naH2o | Zobacz w zlewce: sód + woda
+@opis Kawałek sodu wrzucony do wody: sód topi się w srebrzystą kulkę, szybko porusza się po powierzchni i intensywnie wydziela gaz (wodór). Wniosek: sód reaguje z wodą gwałtowniej niż lit — reaktywność litowców rośnie w dół grupy.
 @zlewka f06-doswiadczenia-v01 kH2o | Zobacz w zlewce: potas + woda
+@opis Kawałek potasu wrzucony do wody: reakcja jest bardzo gwałtowna, wydzielający się wodór zapala się fioletowym płomieniem. Wniosek: potas jest najbardziej reaktywny z porównywanych litowców (Li < Na < K).
 
 ::: dosw | Doświadczenie 2 — Który fluorowiec wypiera który? [[extra:LO]]
 Problem: Czy fluorowce mają podobne właściwości i jak zmienia się ich aktywność w grupie?
@@ -303,7 +307,9 @@ BHP: woda chlorowa i bromowa — pod dygestorium, w rękawicach i okularach; chl
 :::
 
 @zlewka f06-doswiadczenia-v01 f06Cl2Kbr | Zobacz w zlewce: chlor wypiera brom
+@opis Do bezbarwnego roztworu bromku potasu dodano wodę chlorową: roztwór barwi się na żółtopomarańczowo od wydzielonego bromu. Wniosek: chlor jest aktywniejszy od bromu i wypiera go z soli: Cl₂ + 2 KBr → 2 KCl + Br₂.
 @zlewka f06-doswiadczenia-v01 f06Br2Ki | Zobacz w zlewce: brom wypiera jod
+@opis Do bezbarwnego roztworu jodku potasu dodano wodę bromową: roztwór brunatnieje od wydzielonego jodu. Wniosek: brom wypiera jod — aktywność fluorowców maleje w dół grupy: Br₂ + 2 KI → 2 KBr + I₂.
 
 ::: karta understand | Obserwacja ≠ wniosek
 - **Obserwacja:** sód „biega” po wodzie, wydziela się gaz, fenoloftaleina malinowieje.
@@ -325,6 +331,8 @@ BHP: woda chlorowa i bromowa — pod dygestorium, w rękawicach i okularach; chl
 | „Trend nie ma wyjątków.” | Trend jest regułą ogólną. | Np. energia jonizacji Be > B, N > O ([§8](#bloki)). |
 | „Grupa 1 zawsze ma jeden elektron walencyjny bez wyjątków.” | Najpierw określ, czy mówisz o grupie głównej i jaki poziom opisu stosujesz. | Reguła dotyczy grup głównych; wodór jest wyjątkiem chemicznym. |
 | „Układ okresowy służy tylko do znalezienia symbolu.” | Służy do przewidywania właściwości. | Adres → elektrony → przewidywanie ([§1](#mapa)). |
+| „Układ okresowy jest ułożony według mas atomowych.” | Według rosnącej liczby atomowej Z. | Wyjątki od kolejności mas: Ar (39,9) przed K (39,1), Te przed I. |
+| „Pierwiastki jednej grupy mają identyczne właściwości.” | Mają podobne właściwości, ale zmieniające się w dół grupy (np. reaktywność litowców rośnie). | Rośnie liczba powłok i promień atomu. |
 :::
 
 ::: karta error | Klinika — przykład 1: „Grupa = wartościowość”
@@ -449,6 +457,40 @@ Cl (3,16) — leży po prawej stronie tego samego okresu; Na ma 0,93.
 
 ::: odp | Pokaż odpowiedzi
 1. Liczba atomowa = liczba protonów. 2. 6. 3. 1. 4. 7. 5. Zdolność atomu w związku do przyciągania wspólnej pary elektronowej.
+:::
+:::
+
+::: karta basic | F. Utrwalenie — odczyt z układu okresowego
+1. Odczytaj okres, grupę i liczbę elektronów walencyjnych dla Na, O, Al, Cl.
+2. Który atom jest większy: Na czy Cl? Uzasadnij.
+3. Który atom jest większy: Li czy Cs? Uzasadnij.
+4. Wyjaśnij, dlaczego sód tworzy jon Na⁺, a tlen jon O²⁻.
+5. Podaj ograniczenie reguły „numer grupy mówi, ile jest elektronów walencyjnych”.
+
+::: odp | Pokaż odpowiedzi
+1. Na: okres 3, grupa 1, 1 e⁻ walencyjny · O: okres 2, grupa 16, 6 e⁻ · Al: okres 3, grupa 13, 3 e⁻ · Cl: okres 3, grupa 17, 7 e⁻.
+2. Na — w okresie promień maleje w prawo (rośnie ładunek jądra przy tej samej liczbie powłok).
+3. Cs — w grupie promień rośnie w dół (więcej powłok).
+4. Sód łatwo oddaje 1 elektron walencyjny, tlen przyjmuje 2 elektrony — oba uzyskują trwałą konfigurację gazu szlachetnego (Ne).
+5. Działa dla grup głównych (1–2: tyle, ile numer grupy; 13–18: numer grupy − 10; hel ma 2). Nie stosuje się prosto do metali przejściowych (grupy 3–12).
+:::
+:::
+
+::: karta understand | Powtórka bloku F01–F06 — test kontrolny
+Łańcuch rozumowania: **próbka → substancja czy mieszanina → pierwiastek czy związek → atom → Z, A, n, e → jon → miejsce w układzie okresowym**.
+1. Czy każda mieszanina jest związkiem chemicznym?
+2. Co oznacza liczba atomowa Z?
+3. Jak obliczyć liczbę neutronów?
+4. Czym różni się kation od anionu?
+5. Co się nie zmienia, gdy z atomu powstaje jon?
+6. Co oznacza numer okresu?
+7. Dlaczego atomy jednego pierwiastka mogą mieć różną liczbę neutronów?
+8. Czy sączenie rozdzieli roztwór soli?
+9. Czy każda zmiana temperatury oznacza reakcję chemiczną?
+10. Dlaczego H₂O nie jest równaniem reakcji?
+
+::: odp | Pokaż odpowiedzi
+1. Nie — mieszanina to co najmniej dwie substancje, ma zmienny skład. 2. Liczbę protonów w jądrze. 3. n = A − Z. 4. Kation (+) powstaje po oddaniu elektronów, anion (−) po przyjęciu. 5. Liczba protonów (i neutronów). 6. Liczbę powłok elektronowych atomu. 7. To izotopy — ta sama liczba protonów, różna liczba neutronów. 8. Nie — jony przechodzą przez sączek. 9. Nie — np. rozpuszczanie, topnienie. 10. Wzór opisuje skład substancji; równanie opisuje przemianę substratów w produkty.
 :::
 :::
 

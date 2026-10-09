@@ -3007,3 +3007,66 @@ CO₂ → tlen ma II, dwa atomy tlenu dają łącznie IV. Węgiel ma zatem warto
 
 ---
 
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### Poprawki
+
+- Wartościowość, ładunek jonu i stopień utlenienia to różne pojęcia.
+- **Wartościowość** określa liczbę wiązań, które atom danego pierwiastka tworzy w określonej substancji lub związku.
+- Wartościowość zapisuje się zwykle cyfrą rzymską bez znaku, na przykład  Fe(III)  w znaczeniu wartościowości żelaza.
+- **Ładunek jonu** jest rzeczywistym ładunkiem elektrycznym jonu i zapisuje się cyfrą arabską ze znakiem, na przykład Fe³⁺.
+- **Stopień utlenienia** jest formalnym ładunkiem przypisanym atomowi zgodnie z ustalonymi regułami.
+- Stopień utlenienia zapisuje się cyfrą rzymską ze znakiem, na przykład +III.
+- Wartościowość nie musi być równa wartości bezwzględnej stopnia utlenienia.
+- W jonie jednoatomowym ładunek jonu i stopień utlenienia mają tę samą wartość liczbową, ale są innymi pojęciami.
+- W związku kowalencyjnym atom może mieć stopień utlenienia, mimo że nie występuje jako osobny jon.
+
+### Uzupełnienia
+
+#### Zasady wyznaczania stopni utlenienia
+
+- Pierwiastek w stanie wolnym ma stopień utlenienia 0.
+- Suma stopni utlenienia w obojętnej cząsteczce wynosi 0.
+- Suma stopni utlenienia w jonie wieloatomowym jest równa jego ładunkowi.
+- Fluor ma w związkach stopień utlenienia -I.
+- Tlen ma najczęściej -II, ale występują wyjątki, na przykład nadtlenki.
+- Wodór ma zwykle +I, ale w wodorkach metali może mieć -I.
+- Litowce mają zwykle +I.
+- Berylowce mają zwykle +II.
+
+#### Przykład
+
+W H₂SO₄:
+
+ 2·(+1)+x+4·(-2)=0
+
+ x=+6
+
+Siarka ma stopień utlenienia +VI.
+
+#### Uwaga
+
+W zapisie FeCl₃:
+
+- chlorek zawiera jony Cl⁻;
+- formalny stopień utlenienia żelaza wynosi +III;
+- można powiedzieć, że żelazo ma wartościowość III w szkolnym opisie;
+- nie należy zapisywać tych informacji jednym symbolem.
+
+#### Zadania
+
+1. Wyznacz stopień utlenienia siarki w SO₂.
+2. Wyznacz stopień utlenienia azotu w HNO₃.
+3. Wyznacz stopień utlenienia manganu w KMnO₄.
+4. Podaj różnicę między Ca²⁺ a +II wapnia w związku.
+5. Wyjaśnij, dlaczego w cząsteczce H₂O tlen ma stopień utlenienia -II, mimo że cząsteczka nie składa się z jonów H⁺ i O²⁻.
+
+#### Klucz
+
+1. Siarka: +IV.
+2. Azot: +V.
+3. Mangan: +VII.
+4. Ca²⁺ jest rzeczywistym jonem o ładunku 2+; +II jest formalnym stopniem utlenienia atomu wapnia w związku.
+5. Stopień utlenienia jest formalnym przypisaniem elektronów według reguł elektroujemności, a nie dowodem rzeczywistego występowania wolnych jonów w cząsteczce.

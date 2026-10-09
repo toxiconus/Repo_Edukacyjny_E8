@@ -57,6 +57,34 @@ Część mowy i część zdania to dwie różne klasyfikacje. Rzeczownik może b
 5. Zapisz wykres zgodnie z notacją stosowaną w szkole — ta część wymaga porównania z notatkami nauczyciela.
 
 
+## Wersja MAX — Części zdania (MAX) (pakiet 2026-10-09, z rozwiązaniami)
+
+### Zasada nadrzędna
+Część mowy ≠ część zdania. Ten sam wyraz może pełnić różne funkcje.
+
+### Główne części
+- **Podmiot** – o kim/czym mowa (kto? co?)
+- **Orzeczenie** – czynność / stan / cecha podmiotu
+- **Przydawka** – określa rzeczownik (jaki? który? czyj?)
+- **Dopełnienie** – uzupełnia czasownik (kogo? czego? komu? czemu?…)
+- **Okolicznik** – miejsce, czas, sposób, przyczyna, cel…
+
+### Ćwiczenia z rozwiązaniami
+
+**A. Wskaż części zdania**
+Zdanie: *Wczoraj w parku wysoko latał kolorowy latawiec.*
+
+- Podmiot: latawiec  
+- Orzeczenie: latał  
+- Przydawka: kolorowy  
+- Okolicznik czasu: Wczoraj  
+- Okolicznik miejsca: w parku  
+- Okolicznik sposobu: wysoko
+
+**B. Rozróżnij**
+- „dobry” w „dobry uczeń” → **przydawka** (przymiotnik)  
+- „dobrze” w „pisze dobrze” → **okolicznik sposobu** (przysłówek)
+
 ## Do uzupełnienia danymi (z pierwotnego szkieletu)
 - DANE: jak nauczyciel rysuje wykres (zdjęcie z zeszytu) — żeby lekcja trzymała ten sam zapis
 - DANE: zadania z egzaminów ósmoklasisty / sprawdzianów z tego działu (z odpowiedziami)

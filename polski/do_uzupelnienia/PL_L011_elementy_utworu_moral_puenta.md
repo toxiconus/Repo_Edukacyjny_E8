@@ -56,6 +56,44 @@ Pojęcia mogą się częściowo pokrywać, ale nie są synonimami w każdym kont
 **Klucz:** 1. narrator pierwszoosobowy; 2. bajka; 3. puenta; 4. podmiot liryczny, chyba że istnieją szczególne przesłanki pozwalające mówić inaczej; 5. morał to pouczenie, przesłanie to szersza myśl utworu.
 
 
+## Wersja MAX — Narrator, podmiot liryczny, gatunki, morał, puenta (MAX) (pakiet 2026-10-09, z rozwiązaniami)
+
+### Kluczowe rozróżnienia
+- **Narrator** – opowiada w epice (1. os. / 3. os., wszechwiedzący / ograniczony)
+- **Podmiot liryczny** – „ja” mówiące w liryce (nie zawsze = autor)
+- **Morał** – pouczenie (bajka)
+- **Puenta** – zaskakujące domknięcie (fraszka, aforyzm)
+
+### Gatunki obowiązkowe
+- bajka, fraszka, ballada, pieśń, hymn, tren, satyra, nowela, opowiadanie, powieść
+
+### Ćwiczenie z rozwiązaniem
+Tekst: bajka o lisie i kruku.  
+- Gatunek: bajka  
+- Morał: nie ufaj pochlebcom / pycha kroczy przed upadkiem  
+- Narrator: trzecioosobowy, wszechwiedzący
+
+---
+
+# Mini-test końcowy (polski)
+
+1. Jaka część mowy to „szybciej” w zdaniu „Biegnie szybciej”?  
+2. Wskaż okolicznik w zdaniu „Przyszedł wczoraj”.  
+3. Czy przed „i” zawsze stawiamy przecinek?  
+4. Co to jest personifikacja? Podaj przykład.  
+5. Czym różni się narrator od podmiotu lirycznego?
+
+**Klucz:**  
+1. przysłówek (stopień wyższy)  
+2. wczoraj (okolicznik czasu)  
+3. nie  
+4. nadanie cech ludzkich (wiatr szepce)  
+5. narrator – epika; podmiot liryczny – liryka
+
+---
+
+**Status:** MAX – gotowe do intensywnego treningu konkursowego z języka polskiego.
+
 ## Do uzupełnienia danymi (z pierwotnego szkieletu)
 - DANE: lista lektur obowiązkowych kl. 7–8 przerobionych do tej pory (przykłady muszą być z nich)
 - DANE: zadania z egzaminów ósmoklasisty / sprawdzianów z tego działu (z odpowiedziami)

@@ -143,6 +143,7 @@ Zapis **ᴬ_Z X**: u góry liczba masowa A, u dołu liczba atomowa Z, obok symbo
 > Elektronów **nie** odczytujesz z A — A mówi tylko o jądrze.
 
 @model periodic-54 | Układ okresowy z modelami atomów (pierwiastki 1–54) | wybierz pierwiastek: Z, liczba elektronów, schemat atomu
+@opis Interaktywny układ okresowy pierwiastków od 1 do 54; po wybraniu pierwiastka widać jego liczbę atomową Z, liczbę elektronów i schemat atomu z elektronami rozmieszczonymi na powłokach. Wniosek: miejsce pierwiastka w tablicy wynika z liczby protonów i budowy powłok elektronowych.
 
 ## 4 | Atom obojętny i jon [[basic:E8]] {#jony}
 
@@ -253,6 +254,8 @@ BHP: brak — doświadczenie modelowe.
 | „Elektron krąży po orbicie jak planeta.” | Model powłokowy to uproszczenie. | Elektron opisuje się obszarem prawdopodobieństwa (F07). |
 | „Atom ma zawsze tyle samo neutronów co protonów.” | Liczba neutronów zależy od nuklidu. | ²³Na: 11 p⁺, 12 n⁰; ³⁵Cl: 17 p⁺, 18 n⁰. |
 | „Zmiana liczby elektronów zmienia pierwiastek.” | Powstaje jon tego samego pierwiastka. | Pierwiastek definiuje Z. |
+| „Atom jest niepodzielny.” | Atom składa się z jądra (protony, neutrony) i elektronów; w reakcjach chemicznych się nie dzieli, ale nie jest niepodzielny. | „átomos” to nazwa historyczna (Demokryt, Dalton). |
+| „Liczba masowa to masa atomowa.” | A to liczba protonów i neutronów jednego nuklidu (liczba całkowita); masa atomowa to średnia ważona mas izotopów. | Cl: A = 35 lub 37, a masa atomowa ≈ 35,5 u. |
 :::
 
 ## 9 | Ćwiczenia {#cwiczenia}
@@ -314,6 +317,20 @@ Uczeń twierdzi: „W reakcji sodu z chlorem sód zamienił się w inny pierwias
 
 ::: odp | Przykładowy kierunek
 Twierdzenie jest fałszywe. Dowód: Na⁺ ma nadal 11 protonów (Z = 11). Wyjaśnienie: ładunek powstał przez oddanie elektronu; o tożsamości pierwiastka decyduje Z, a zwykła reakcja chemiczna nie zmienia jąder.
+:::
+:::
+
+::: karta basic | F. Utrwalenie — p, n, e
+1. Oblicz liczbę protonów, neutronów i elektronów w ³⁵₁₇Cl.
+2. Ile elektronów ma jon O²⁻?
+3. Zapisz symbol nuklidu, który ma 13 protonów i 14 neutronów.
+4. Wyjaśnij, dlaczego ¹²C i ¹⁴C są izotopami.
+
+::: odp | Pokaż odpowiedzi
+1. p = 17, n = 35 − 17 = 18, e = 17.
+2. Tlen: Z = 8; jon O²⁻ przyjął 2 elektrony → 10 elektronów.
+3. ²⁷₁₃Al (Z = 13 → glin; A = 13 + 14 = 27).
+4. Oba mają 6 protonów (to ten sam pierwiastek — węgiel), ale różną liczbę neutronów: 6 i 8.
 :::
 :::
 

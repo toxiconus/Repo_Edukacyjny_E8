@@ -99,6 +99,8 @@ stopka: **CHEMIA F02 v1.0 MASTER** · Materia i substancje · 2026
 **Substancja czysta** ma stały, określony skład i stałe właściwości: woda destylowana w normalnych warunkach wrze w 100 °C, a lód topnieje w 0 °C. Nie da się jej rozdzielić metodami fizycznymi na prostsze składniki.
 
 ::: karta warning | „Substancja” w chemii a w języku potocznym
+> W praktyce każda próbka ma śladowe zanieczyszczenia. „Substancja czysta” oznacza jeden składnik chemiczny; stopień czystości podaje się w procentach (np. odczynnik 99,9%).
+
 W języku potocznym „substancja” to dowolny „materiał”. W chemii **substancja czysta ma ściśle określony skład**. Powietrze, mleko czy woda z kranu to **nie** substancje czyste, tylko mieszaniny.
 :::
 
@@ -106,7 +108,7 @@ W języku potocznym „substancja” to dowolny „materiał”. W chemii **subs
 
 ## 2 | Pierwiastek, substancja prosta, związek [[basic:E8]] {#pierwiastek}
 
-Substancje czyste dzielimy na **substancje proste (pierwiastki)** i **związki chemiczne**.
+Substancje czyste dzielimy na **substancje proste** (zbudowane z atomów jednego pierwiastka) i **związki chemiczne**. Pierwiastek to **rodzaj atomów**, a substancja prosta to **próbka** zbudowana z tych atomów — to nie są synonimy.
 
 | Pojęcie | Co to jest | Przykłady |
 |---|---|---|
@@ -115,6 +117,10 @@ Substancje czyste dzielimy na **substancje proste (pierwiastki)** i **związki c
 | **Związek chemiczny** | substancja z atomów **co najmniej dwóch** pierwiastków połączonych wiązaniami w stałych proporcjach | H₂O, NaCl, CO₂, H₂SO₄ |
 
 Substancja prosta **nie musi** składać się z pojedynczych atomów. Tlen, wodór, azot i chlor tworzą cząsteczki dwuatomowe (O₂, H₂, N₂, Cl₂). Ozon O₃ to **inna** substancja prosta tego samego pierwiastka — ma inną budowę i inne właściwości niż O₂.
+
+::: karta understand | Związek nie zawsze składa się z cząsteczek
+Woda, CO₂, cukier tworzą **cząsteczki**. Chlorek sodu nie — to **kryształ jonowy**: uporządkowana sieć jonów Na⁺ i Cl⁻. Wzór NaCl podaje stosunek jonów 1 : 1, czyli **jednostkę wzoru**, a nie „cząsteczkę NaCl”. Dlatego zdanie „każdy związek składa się z cząsteczek” jest fałszywe (szczegóły: wiązania — F11).
+:::
 
 ::: karta core | Jedno pytanie rozstrzyga: ile **rodzajów** atomów?
 - jeden rodzaj → **substancja prosta** (O₂ ma dwa atomy, ale jeden rodzaj — to nie związek),
@@ -133,6 +139,7 @@ Właściwości związku **nie są sumą** właściwości pierwiastków. Wodór j
 Pierwiastek i związek klasyfikują **skład**; atom i cząsteczka opisują **cząstki**. Zdanie „tlen to atom” miesza poziomy: tlen to pierwiastek, a jego najmniejsza cząstka to atom O.
 
 @model molecule3d-merged | Model 3D: O₂, O₃, H₂O, CO₂ | jedna substancja prosta, dwie odmiany tlenu i dwa związki — ile rodzajów atomów widzisz?
+@opis Trójwymiarowe modele cząsteczek: O₂ (2 atomy tlenu), O₃ (3 atomy tlenu), H₂O (2 atomy wodoru + 1 atom tlenu), CO₂ (1 atom węgla + 2 atomy tlenu); atomy pokazane jako kulki w kolorach pierwiastków. Wniosek: O₂ i O₃ to dwie substancje proste tego samego pierwiastka, a H₂O i CO₂ to związki — decyduje liczba rodzajów atomów, nie liczba atomów.
 
 ## 3 | Mieszanina [[basic:E8]] {#mieszanina}
 
@@ -264,6 +271,9 @@ Jeden pierwiastek może tworzyć kilka substancji prostych — **odmian alotropo
 | „Rozdzielanie mieszaniny zmienia substancje.” | Składniki po rozdzieleniu są tymi samymi substancjami. | Rozdzielanie to zjawisko fizyczne. |
 | „Stal to związek żelaza.” | Stal to stop — mieszanina jednorodna. | Ma zmienny skład, nie ma jednego wzoru. |
 | „Woda z lodem to mieszanina.” | To jedna substancja w dwóch fazach. | Dwie fazy ≠ dwie substancje. |
+| „Każdy związek chemiczny składa się z cząsteczek.” | Związki jonowe (NaCl, CaO) tworzą sieci jonów, nie cząsteczki. | Wzór NaCl to jednostka wzoru 1 : 1. |
+| „Mieszanina to substancja złożona.” | Mieszanina to co najmniej dwie substancje; „substancja złożona” to związek chemiczny. | Związek ma stały skład, mieszanina — zmienny. |
+| „Jedna faza = jedna substancja.” | Faza to jednorodna część układu; może zawierać kilka substancji (roztwór soli), a jedna substancja może tworzyć kilka faz (woda z lodem). | Liczba faz ≠ liczba substancji. |
 :::
 
 ## 10 | Ćwiczenia {#cwiczenia}
@@ -326,6 +336,20 @@ Etanol z wodą tworzy jedną fazę ciekłą — sączenie nie zadziała; trzeba 
 :::
 :::
 
+::: karta basic | F. Utrwalenie — klasyfikacja
+1. Zaklasyfikuj: powietrze, tlen, woda destylowana, mleko, chlorek sodu, granit.
+2. Wyjaśnij, dlaczego woda i wodór nie są tą samą substancją, choć woda zawiera wodór.
+3. Podaj dwie różnice między mieszaniną a związkiem chemicznym.
+4. Oceń zdanie: „Każda substancja złożona jest mieszaniną”.
+
+::: odp | Pokaż odpowiedzi
+1. Powietrze — mieszanina jednorodna; tlen — substancja prosta; woda destylowana — związek chemiczny; mleko — mieszanina niejednorodna (koloid — niejednorodność widać pod mikroskopem); chlorek sodu — związek chemiczny; granit — mieszanina niejednorodna.
+2. Woda to związek o stałym składzie H₂O i własnych właściwościach (gasi ogień); wodór to substancja prosta H₂ (palny gaz). W wodzie wodór jest połączony chemicznie z tlenem.
+3. Mieszanina ma zmienny skład, a związek — stały; składniki mieszaniny zachowują właściwości i rozdziela się je metodami fizycznymi, związek rozkłada się tylko reakcją chemiczną.
+4. Fałsz. „Substancja złożona” to związek chemiczny — substancja czysta o stałym składzie, a nie mieszanina.
+:::
+:::
+
 ## 11 | Doświadczenia {#doswiadczenia}
 
 ::: dosw | Doświadczenie 1 — Mieszanina czy związek? Żelazo i siarka
@@ -339,6 +363,7 @@ Równanie:: Fe + S → FeS
 BHP: ogrzewanie wykonuje nauczyciel pod wyciągiem — może powstawać trujący SO₂; okulary; gorąca probówka może pęknąć.
 
 @zlewka f01-doswiadczenia-v01 f01FeS | Zobacz w probówce: Fe + S po ogrzaniu
+@opis Probówka z mieszaniną opiłków żelaza i siarki po ogrzaniu: mieszanina rozżarza się, powstaje ciemnoszara substancja (siarczek żelaza(II)), której magnes już nie przyciąga. Wniosek: powstała nowa substancja o innych właściwościach — reakcja chemiczna Fe + S → FeS.
 :::
 
 ::: dosw | Doświadczenie 2 — Woda z kranu czy destylowana?
@@ -351,6 +376,7 @@ Wniosek: Woda z kranu to mieszanina jednorodna (zawiera rozpuszczone substancje)
 BHP: gorące szkiełko chwytać szczypcami; okulary.
 
 @zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w parownicy: odparowanie roztworu
+@opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
 :::
 
 ::: dosw | Doświadczenie 3 — Ile faz?
@@ -363,6 +389,7 @@ Wniosek: Woda z solą: 2 substancje, 1 faza. Woda z olejem: 2 substancje, 2 fazy
 BHP: nie smakujemy substancji w pracowni; rozlany olej wytrzeć — śliska podłoga.
 
 @zlewka f01-doswiadczenia-v01 f01SolWoda | Zobacz w zlewce: sól w wodzie
+@opis Sól wsypana do wody w zlewce: kryształy stopniowo znikają, powstaje klarowny, bezbarwny roztwór. Wniosek: to rozpuszczanie, czyli zjawisko fizyczne — sól można odzyskać, odparowując wodę.
 :::
 
 ## 12 | Test {#test}

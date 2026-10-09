@@ -3638,3 +3638,64 @@ Ca(OH)₂ →  Ca–(O–H)(O–H) ← indeks obejmuje całą grupę OH
 
 ---
 
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+> Uwaga przy scalaniu: W kluczu zad. 4 zamiast „dwutlenek węgla” używać nazwy systematycznej „tlenek węgla(IV)”.
+
+### Poprawki
+
+- Indeks dolny opisuje liczbę atomów danego pierwiastka w jednej cząsteczce lub najmniejszej jednostce wzoru.
+- Współczynnik przed wzorem zmienia liczbę cząsteczek, jednostek wzoru lub moli.
+- Nie wolno zmieniać indeksów podczas bilansowania równania reakcji.
+- Nawias stosuje się wtedy, gdy grupa atomów występuje więcej niż raz.
+- Wzór CaOH₂ jest błędny; poprawny zapis to Ca(OH)₂.
+- Wzór AlSO₄ jest błędny dla siarczanu glinu; poprawny zapis to Al₂(SO₄)₃.
+- Wzór Na₂O oznacza dwa atomy sodu przypadające na jeden atom tlenu w jednostce wzoru.
+- Wzór 2NaOH oznacza dwie jednostki wzoru wodorotlenku sodu, a nie nową substancję.
+- W związku jonowym indeksy wynikają z obojętności elektrycznej całej jednostki wzoru.
+- Wzór sumaryczny nie pokazuje zawsze sposobu połączenia atomów.
+
+### Uzupełnienia
+
+#### Metoda krzyżowa
+
+Dla jonów Al³⁺ i O²⁻:
+
+1. zapisujemy ładunki;
+2. dobieramy najmniejszą wspólną wielokrotność 6;
+3. potrzebne są 2 jony Al³⁺ i 3 jony O²⁻;
+4. otrzymujemy Al₂O₃.
+
+Dla jonów Ca²⁺ i OH⁻:
+
+ Ca(OH)₂
+
+#### Redukcja indeksów
+
+Jeśli stosunek jonów wynosi 2:2, należy go skrócić do 1:1.
+
+Błędny zapis:
+
+ Ca₂O₂
+
+Poprawny zapis:
+
+ CaO
+
+#### Zadania
+
+1. Zapisz wzór tlenku glinu.
+2. Zapisz wzór wodorotlenku magnezu.
+3. Zapisz wzór siarczanu glinu.
+4. Wyjaśnij różnicę między 3CO₂ a CO₂.
+5. Popraw: BaOH₂, NaSO₄, FeNO₃.
+
+#### Klucz
+
+1. Al₂O₃.
+2. Mg(OH)₂.
+3. Al₂(SO₄)₃.
+4. 3CO₂ oznacza trzy cząsteczki lub trzy mole dwutlenku węgla; CO₂ oznacza jedną cząsteczkę lub jednostkę ilościową.
+5. Ba(OH)₂, Na₂SO₄, Fe(NO₃)₃ dla żelaza na stopniu utlenienia +III.
