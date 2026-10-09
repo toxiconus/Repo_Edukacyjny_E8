@@ -43,8 +43,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 2 KB
 - `PRZEKAZANIE.md` 2 KB
 
-## biologia/bio/md  (1 pl., 48 KB)
+## biologia/bio/md  (3 pl., 123 KB)
 - `L010_dna_od_zera.md` 48 KB
+- `REV01_organizacja_i_chemizm_zycia.md` 27 KB
+- `REV02_roznorodnosc_zycia.md` 47 KB
 
 ## biologia/bio/narzedzia  (2 pl., 8 KB)
 - `md2html_bio.py` 6 KB
@@ -101,7 +103,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 97 KB)
+## chemia/che-modular  (13 pl., 98 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -295,7 +297,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (13 pl., 806 KB)
+## chemia/che-modular/lessons-md/gotowe  (15 pl., 854 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 51 KB
 - ⚠`N01_tlenki.md` 117 KB
@@ -464,17 +466,24 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## narzedzia  (1 pl., 2 KB)
 - `mapa.py` 2 KB
 
-## olimpiada  (4 pl., 112 KB)
+## olimpiada  (4 pl., 113 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
 - `PRIORYTETY.md` 9 KB
-- `PRZEKAZANIE.md` 3 KB
+- `PRZEKAZANIE.md` 4 KB
 
 ## olimpiada/narzedzia  (1 pl., 7 KB)
 - `mapa_chemia.py` 7 KB
 
 ## olimpiada/zrodla  (1 pl., 17 KB)
 - `konkursy_LKO_2026_27_ustalenia.md` 17 KB
+
+## olimpiada/zrodla/LKO  (5 pl., 3.4 MB)
+- ⚠`Chemia_etap_rejonowy_2025_2026.pdf` 696 KB
+- `Chemia_etap_rejonowy_2025_2026.txt.md` 25 KB
+- `Terminy_eliminacji_2024_2025.docx` 22 KB
+- `Zakresy_2025_2026_chemia_biologia_OCR.md` 16 KB
+- ⚠`Zakresy_wymagan_2025_2026.pdf` 2.7 MB
 
 ## polski  (18 pl., 2.5 MB)
 - (zwinięte; `ls polski`) — duże:
