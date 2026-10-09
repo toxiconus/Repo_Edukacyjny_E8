@@ -3,12 +3,12 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (7 pl., 75 KB)
+## .  (7 pl., 77 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 8 KB
 - `MAPA.md` 24 KB
-- `PRZEKAZANIE.md` 10 KB
+- `PRZEKAZANIE.md` 12 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 28 KB
 
@@ -42,7 +42,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `ANG.01.L006.past_simple_continuous.md` 27 KB
 - `ANG.01.L012.future_simple.md` 28 KB
 
-## angielski/plany/audyty  (2 pl., 24 KB)
+## angielski/plany/audyty  (3 pl., 25 KB)
+- `W17_WDROZENIE_W1_ANGIELSKI_2026-10-09.md` 1 KB
 - `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
 - `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
 
@@ -61,7 +62,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
-## biologia/bio  (2 pl., 5 KB)
+## biologia/bio  (2 pl., 6 KB)
 - `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
@@ -74,25 +75,25 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 119 KB)
+## biologia/bio/szablon  (5 pl., 130 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 61 KB
+- ⚠`bio-viz.js` 72 KB
 - `bio-warstwa.css` 10 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
-## biologia/html  (37 pl., 6.2 MB)
+## biologia/html  (37 pl., 6.5 MB)
 - (zwinięte; `ls biologia/html`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 179 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 209 KB
-- ⚠`BIO.01.L001.komorka.html` 241 KB
-- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 187 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 223 KB
-- ⚠`BIO.01.L003.diagnoza.html` 239 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 154 KB
-- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 154 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 190 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 220 KB
+- ⚠`BIO.01.L001.komorka.html` 252 KB
+- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 197 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 233 KB
+- ⚠`BIO.01.L003.diagnoza.html` 249 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 165 KB
+- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 165 KB
 
-## biologia/md  (37 pl., 994 KB)
+## biologia/md  (37 pl., 997 KB)
 - (zwinięte; `ls biologia/md`) — duże:
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 75 KB
@@ -106,6 +107,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L001_komorka_jako_podstawowa_jednostka_zycia.md` 13 KB
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
+
+## biologia/plany/audyty  (4 pl., 9 KB)
+- `W15_BIOLOGIA_L014-L021_2026-10-09.md` 2 KB
+- `W16_BIOLOGIA_L030-L050_L090_2026-10-09.md` 4 KB
+- `W18_BIOLOGIA_KLUCZE_L014-L021_2026-10-09.md` 2 KB
+- `W19_BIOLOGIA_REV01_REV02_L010_2026-10-09.md` 1 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB
@@ -144,7 +151,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 102 KB)
+## chemia/che-modular  (13 pl., 103 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -485,12 +492,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE.01.F12.wzory_chemiczne.md` 127 KB
 - ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 66 KB
 
-## chemia/lekcje_md/J  (7 pl., 43 KB)
-- `CHE.04.J00.mapa_bloku_J.md` 6 KB
-- `CHE.04.J01.dysocjacja_elektrolityczna.md` 8 KB
-- `CHE.04.J02.odczyn_i_ph.md` 7 KB
+## chemia/lekcje_md/J  (7 pl., 38 KB)
+- `CHE.04.J00.mapa_bloku_J.md` 5 KB
+- `CHE.04.J01.dysocjacja_elektrolityczna.md` 7 KB
+- `CHE.04.J02.odczyn_i_ph.md` 6 KB
 - `CHE.04.J03.reakcje_jonowe.md` 5 KB
-- `CHE.04.J04.stracanie_osadow.md` 5 KB
+- `CHE.04.J04.stracanie_osadow.md` 4 KB
 - `CHE.04.J05.amfoterycznosc.md` 5 KB
 - `CHE.04.J06.rownowagi_kwasowo_zasadowe.md` 6 KB
 
@@ -500,30 +507,31 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.02.N04.kwasy.md` 35 KB
 - `CHE.02.N05.sole.md` 37 KB
 
-## chemia/lekcje_md/O  (3 pl., 105 KB)
-- `CHE.05.O01-O07.weglowodory.md` 42 KB
-- `CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` 15 KB
-- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 48 KB
+## chemia/lekcje_md/O  (3 pl., 99 KB)
+- `CHE.05.O01-O07.weglowodory.md` 41 KB
+- `CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` 12 KB
+- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 46 KB
 
-## chemia/lekcje_md/R  (2 pl., 78 KB)
-- `CHE.03.R03+R05.stezenia.md` 35 KB
-- `CHE.03.R04+R07-R09.stechiometria.md` 43 KB
+## chemia/lekcje_md/R  (2 pl., 76 KB)
+- `CHE.03.R03+R05.stezenia.md` 34 KB
+- `CHE.03.R04+R07-R09.stechiometria.md` 42 KB
 
 ## chemia/lekcje_md/X  (1 pl., 38 KB)
 - `CHE.06.X01-X09.redoks.md` 38 KB
 
-## chemia/plany  (3 pl., 87 KB)
+## chemia/plany  (4 pl., 112 KB)
+- `ANALIZA_bloki_XEKAPLR.md` 18 KB
 - `CHE.01.F00.architektura_bloku_F.md` 22 KB
-- ⚠`CHE_SPIS_TRESCI.md` 59 KB
+- ⚠`CHE_SPIS_TRESCI.md` 65 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (19 pl., 254 KB)
+## chemia/plany/audyty  (22 pl., 263 KB)
 - (zwinięte; `ls chemia/plany/audyty`)
 
-## chemia/plany/narzedzia  (3 pl., 47 KB)
-- `kanon_dane.py` 37 KB
+## chemia/plany/narzedzia  (3 pl., 50 KB)
+- `kanon_dane.py` 38 KB
 - `podziel_all_md.py` 2 KB
-- `spis_tresci.py` 8 KB
+- `spis_tresci.py` 10 KB
 
 ## chemia/plany/prompty  (2 pl., 17 KB)
 - `PROMPT_ulepszenia_F.md` 6 KB
@@ -558,7 +566,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRIORYTETY.md` 9 KB
 - `PRZEKAZANIE.md` 6 KB
 
-## olimpiada/do_uzupelnienia  (11 pl., 72 KB)
+## olimpiada/do_uzupelnienia  (12 pl., 73 KB)
 - `OLI.BIO.B2.homeostaza.md` 6 KB
 - `OLI.BIO.B2a.skora_i_uklad_ruchu.md` 4 KB
 - `OLI.BIO.B2b.uklad_pokarmowy_i_odzywianie.md` 5 KB
@@ -570,6 +578,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `OLI.CHE.R07.stechiometria_z_nadmiarem.md` 10 KB
 - `OLI.CHE.X04.szereg_aktywnosci_metali.md` 17 KB
 - `README.md` 2 KB
+- `W20_AUDYT_KLUCZY_CHEMIA_2026-10-09.md` 2 KB
 
 ## olimpiada/html  (11 pl., 746 KB)
 - ⚠`OLI.BIO.B2.homeostaza.html` 73 KB
@@ -640,6 +649,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## olimpiada/zrodla/pakiet_2026-10-09/research  (1 pl., 5 KB)
 - `RESEARCH_OLIMPIADY_I_KONKURSY_2026-10-09.md` 5 KB
+
+## paczki/W23_2026-10-09  (6 pl., 71 KB)
+- `AUDYT_SCALENIA_Claude.md` 4 KB
+- `MANIFEST_SCALENIA.md` 28 KB
+- `POSTEP_W4_2026-10-09.md` 3 KB
+- `POSTEP_W6_2026-10-09.md` 15 KB
+- `UZUPELNIENIA_Z_WATKU.md` 2 KB
+- `ZADANIA.md` 19 KB
 
 ## polski  (5 pl., 297 KB)
 - `L001-L006-PL-Wszystkie-lekcje.md` 47 KB
