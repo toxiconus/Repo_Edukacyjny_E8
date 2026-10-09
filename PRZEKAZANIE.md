@@ -2,6 +2,13 @@
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
+## ⚑ PRZEKAZANIE DLA NOWEGO WĄTKU (2026-10-09 15:07)
+- **W tej chwili w innej rozmowie trwa odchudzanie silnika** (N05, R03, REV01, N01_powietrze, FIZ01, F06, N01_tlenki; ~2 h, od 15:07). **Nie ruszać `chemia/che-modular/`** (zmienia `engine/registry/profile/*.json` i `dist/`). Przed każdym push: `git pull --rebase`.
+- Po klonie (płytki klon pobiera tylko `main`): `git config --add remote.origin.fetch '+refs/heads/claude/che-lekcje:refs/remotes/origin/claude/che-lekcje' && git fetch origin && git branch -u origin/claude/che-lekcje`.
+- Start: `CLAUDE.md`, ten plik (sekcje 2026-10-09), `SPIS_WSZYSTKICH.md` (podsumowanie + „Tematy planowane”).
+- Stan: spisy `SPIS_WSZYSTKICH.md` (`narzedzia/spis_wszystkich.py`), `polski/SPIS_LEKCJI_POLSKI.md` (`narzedzia/polski_paczka.py` + zip). Polski: 47 lekcji, brak planu kursu (tylko mapa POL-01…39 w `olimpiada/OLIMPIADA_8_MASTER.md`); luki bez lekcji: lektury VII–VIII, słowotwórstwo, frazeologia, semantyka, gatunki, interpretacja wiersza, esej; do porównania pisownia „nie” przy przeciwstawieniu (master vs G06/L001, RJP 2026: zawsze łącznie). Biologia: 36 lekcji bez niezależnego W1 (tylko audyty GPT-6 w plikach). Chemia kanon: 42 lekcje Groka czekają na W1 (`eksport/w1_paczka.py` → odpowiedź `narzedzia/audyt_do_kanonu.py`). Angielski: z 13 lekcji mastera tylko 6 w osobnym md; moduły do dodania w `angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md`.
+- Chemia F05: rysunek atomu przez wspólny `atomBohr` (powłoki K, L, M + lupa jądra), `atomSVG` usunięty; atlas 89/18 bez zmian.
+
 ## Gałęzie
 - **`claude/che-lekcje` = gałąź zbiorcza.** 2026-10-08 scalone do niej: `claude/wizualizacje-projekty` (folder `wizualizacje-projekty/`), `claude/bio-lekcje` (`biologia/`), wcześniej `claude/chemia-podzial` i `claude/project-thread-71s81b` (zawarte w całości).
 - Pozostałe gałęzie są już w `claude/che-lekcje` — nowe prace zaczynać od niej. Wyjątek: `claude/che-lab-archiwum-v0_57` (osobna historia, archiwum źródeł v0_57; nie scalać).
