@@ -7,7 +7,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 5 KB
-- `MAPA.md` 14 KB
+- `MAPA.md` 15 KB
 - `PRZEKAZANIE.md` 2 KB
 - `README.md` 0 KB
 - `edit_html.py` 3 KB
@@ -472,8 +472,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRIORYTETY.md` 9 KB
 - `PRZEKAZANIE.md` 4 KB
 
-## olimpiada/do_uzupelnienia  (5 pl., 5 KB)
+## olimpiada/do_uzupelnienia  (11 pl., 12 KB)
 - `BIO_B2_homeostaza.md` 1 KB
+- `BIO_B2a_skora_i_uklad_ruchu.md` 1 KB
+- `BIO_B2b_uklad_pokarmowy_i_odzywianie.md` 1 KB
+- `BIO_B2c_oddychanie_i_wydalanie.md` 1 KB
+- `BIO_B2d_uklad_nerwowy_i_zmysly.md` 1 KB
+- `BIO_B2e_uklad_dokrewny.md` 1 KB
+- `BIO_B2f_rozmnazanie_i_rozwoj.md` 1 KB
 - `CHE_J03_rownania_jonowe_i_straceanie.md` 1 KB
 - `CHE_R07_stechiometria_z_nadmiarem.md` 1 KB
 - `CHE_X04_szereg_aktywnosci_metali.md` 1 KB
