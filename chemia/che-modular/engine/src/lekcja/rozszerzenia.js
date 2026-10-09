@@ -579,7 +579,9 @@ C.VIEW.define('fiz02-obwod-v01',{title:'Obwód z dwiema żarówkami — szeregow
 var C=window.CHE,G=C&&C.LAB&&C.LAB.GFX,rx=G&&G.rx;
 if(!G||!rx||!G.vessels||!G.mount||C.EXT_PROBOWKA)return;C.EXT_PROBOWKA=1;
 var ZLEWKA={naH2o:1,kH2o:1,liH2o:1,h2so4Sugar:1,h2so4Dil:1};   // klasycznie w zlewce / krystalizatorze
-var GRZANIE={cuoh2Heat:1,mgH2oHot:1,cuoH2so4:1};               // ogrzewane w płomieniu (rozkład Cu(OH)₂, Mg + gorąca woda, CuO + H₂SO₄ „lekko ogrzewamy”)
+var GRZANIE={cuoh2Heat:1,mgH2oHot:1,cuoH2so4:1,f01FeS:1};      // ogrzewane w płomieniu (rozkład Cu(OH)₂, Mg + gorąca woda, CuO + H₂SO₄ „lekko ogrzewamy”, Fe + S)
+var ALIAS={testTube:'probowka',tube:'probowka',evapDish:'parownica'}; // stare nazwy z RXDEF/rozszerzeń → nowe układy
+var PAROWNICA={f01Odparowanie:1};                                // parownica na trójnogu z siatką nad palnikiem
 function rr(c,x,y,w,h,q){c.beginPath();c.moveTo(x+q,y);c.lineTo(x+w-q,y);c.quadraticCurveTo(x+w,y,x+w,y+q);c.lineTo(x+w,y+h-q);c.quadraticCurveTo(x+w,y+h,x+w-q,y+h);c.lineTo(x+q,y+h);c.quadraticCurveTo(x,y+h,x,y+h-q);c.lineTo(x,y+q);c.quadraticCurveTo(x,y,x+q,y);c.closePath()}
 function blik(c,x0,y0,x1,y1,dk){c.save();c.lineCap='round';c.strokeStyle=dk?'rgba(255,255,255,.16)':'rgba(255,255,255,.8)';c.lineWidth=2.5;c.beginPath();c.moveTo(x0,y0);c.lineTo(x1,y1);c.stroke();c.restore()}
 var LIP=5;
@@ -609,31 +611,45 @@ G.vessels.register('probowkaSkos',{
   c.fillStyle=dk?'#94a3b8':'#64748b';rr(c,-g.w/2-4,-5,g.w+8,10,3);c.fill();
   c.fillStyle=(T&&T.wood)||'#b7793e';rr(c,g.w/2+3,-g.L*.3,8,g.L*.36,3);c.fill();c.strokeStyle='rgba(0,0,0,.25)';c.lineWidth=1;c.stroke();
   c.restore()}});
-function wybierz(k,sp,o){if(o.vessel)return o.vessel;if(sp&&sp.vessel&&sp.vessel!=='testTube')return sp.vessel;return ZLEWKA[k]?'beaker':'probowka'}
+function wybierz(k,sp,o){var v=o.vessel||(sp&&sp.vessel);if(v)return ALIAS[v]||v;if(PAROWNICA[k])return 'parownica';return ZLEWKA[k]?'beaker':'probowka'}
 function grzane(k,sp,o){return o.ogrzewanie!=null?!!o.ogrzewanie:!!(sp&&(sp.ogrzewanie||GRZANIE[k]))}
 var stary=rx.mount;
 rx.mount=function(host,k,o){o=Object.assign({},o||{});var key=k,t0=null,p=0,dur=o.dur||6,ves=wybierz(k,rx.get(k),o),api=null,box=null;
  var ctl={get api(){return api},get key(){return key},get progress(){return p},get vessel(){return ves},
   play:function(){t0=1;p=0;if(api){api.state.ended=0;api.reset()}},reset:function(){t0=null;p=0;if(api)api.reset()},
-  set:function(nk){key=nk;if(!o.vessel)ves=wybierz(nk,rx.get(nk),o);build();this.reset()},
+  set:function(nk){key=nk;ves=wybierz(nk,rx.get(nk),o);build();this.reset()},
   setVessel:function(v){ves=v;build();this.play()}};
- function stan(){var s=rx.state(key,p);if(s&&ves==='probowka')s.level=grzane(key,rx.get(key),o)?.3:Math.min(.5,(s.level==null?.5:s.level)*.5);return s}
+ function stan(){var s=rx.state(key,p);if(!s)return s;if(ves==='probowka')s.level=grzane(key,rx.get(key),o)?.3:Math.min(.5,(s.level==null?.5:s.level)*.5);
+  else if(ves==='parownica'){var l0=(rx.get(key)||{}).level||.6;s.level=Math.max(.04,l0*(1-.92*p));s.T=p>0?Math.min(100,25+p*600):25;s.heat=0}return s}   // woda odparowuje, kryształy rosną (ppt z reakcji)
  function build(){if(api&&api.destroy)api.destroy();if(!box){box=document.createElement('div');box.style.position='relative';host.appendChild(box)}
   var H=o.height||260,heat=ves==='probowka'&&grzane(key,rx.get(key),o),spec={height:H,state:{},get:stan,
    tick:function(S,dt){if(t0!=null){p=Math.min(1,p+dt/dur);if(p>=1&&o.onEnd&&!S.ended){S.ended=1;o.onEnd(key)}}}};
   if(heat){var dno=Math.max(.45,1-112/H);spec.aspect=1;   // dno probówki w najgorętszej strefie płomienia, nad niebieskim stożkiem
    spec.parts=[{id:'burner',x:.42,y:.4,w:.4,h:.6,get:function(){return{flame:{on:p>0?1:0,power:.3,air:85,phi:1.0,soot:0,temp:1300}}}},
     {id:'probowkaSkos',x:.1,y:.04,w:.66,h:dno-.04}]}
+  else if(ves==='parownica'){spec.aspect=1.35;var ogien=function(){return p>0?1:0};      // układ jak w scenie silnika 'heating': palnik + trójnóg z siatką + naczynie
+   spec.parts=[{id:'burner',x:.3,y:.58,w:.4,h:.42,clip:[0,.63,1,.37],get:function(){return{flame:{on:ogien(),power:.6,air:85,phi:1.0,soot:0,temp:1300}}}},
+    {id:'tripod',x:.26,y:.62,w:.48,h:.38,get:function(){return{heat:ogien()*2}}},
+    {id:'evapDish',x:.29,y:.38,w:.42,h:.25}]}
   else if(ves==='probowka'){spec.aspect=1.4;var cx=.5,tw=.14;
    spec.parts=[{id:'stand',x:.12,y:.02,w:.5,h:.96,s:{clamps:[{x:cx,y:.2,w:tw}]}},
     {id:'probowka',x:cx-tw/2,y:.06,w:tw,h:.8},
     {id:'stand',x:.12,y:.02,w:.5,h:.96,s:{layer:'front',clamps:[{x:cx,y:.2,w:tw}]}}]}
   else spec.vessel=ves;
   api=G.mount(box,spec);
-  if(o.toggle!==false&&!o.vessel&&!box._btn){var b=document.createElement('button');b.type='button';box._btn=b;
+  if(o.toggle!==false&&(ves==='probowka'||ves==='beaker')&&!box._btn){var b=document.createElement('button');b.type='button';box._btn=b;
    b.style.cssText='position:absolute;top:6px;right:6px;font:12px/1 system-ui,sans-serif;padding:4px 8px;border-radius:8px;border:1px solid var(--border,#cbd5e1);background:var(--surface,#fff);color:inherit;cursor:pointer;opacity:.85';
    b.onclick=function(){ctl.setVessel(ves==='probowka'?'beaker':'probowka')};box.appendChild(b)}
-  if(box._btn){box._btn.textContent=ves==='probowka'?'⇄ zlewka':'⇄ probówka';box._btn.title='Pokaż doświadczenie w '+(ves==='probowka'?'zlewce':'probówce')}}
+  if(box._btn){box._btn.style.display=(ves==='probowka'||ves==='beaker')?'':'none';box._btn.textContent=ves==='probowka'?'⇄ zlewka':'⇄ probówka';box._btn.title='Pokaż doświadczenie w '+(ves==='probowka'?'zlewce':'probówce')}}
  build();if(o.auto)ctl.play();return ctl};
 rx.mount.stary=stary;
+// pracownia: odparowanie roztworu w parownicy (krystalizacja) — gotowa do wstawienia w lekcji: @zlewka odparowanie-v01
+rx.register('odpNaCl',{n:'Roztwór NaCl — odparowanie',vessel:'evapDish',l0:[226,236,244],level:.6,ppt:[250,250,248],habit:'crystal',out:['osad'],qualitative:1,T:100,eq:'NaCl(aq) → NaCl(s) + H₂O(g)↑',why:'Woda paruje (para nad parownicą), objętość roztworu maleje, przy brzegach i na dnie pojawiają się białe kryształki soli.'});
+rx.register('odpCuSO4',{n:'Roztwór CuSO₄ — krystalizacja',vessel:'evapDish',l0:[120,169,215],level:.6,ppt:[40,110,200],habit:'crystal',out:['osad'],qualitative:1,T:100,eq:'CuSO₄(aq) + 5 H₂O → CuSO₄·5H₂O(s)',why:'Niebieski roztwór gęstnieje, przy brzegach powstają niebieskie kryształy hydratu. Odparowujemy tylko do pojawienia się kryształów — przy prażeniu do sucha hydrat traci wodę i bieleje.'});
+if(C.EXT_PRACOWNIA)C.EXT_PRACOWNIA('odparowanie-v01','Pracownia: odparowanie i krystalizacja','Roztwór w parownicy na trójnogu z siatką, nad płomieniem palnika: woda paruje, substancja rozpuszczona zostaje i krystalizuje.',
+ [['Odparowanie',['odpNaCl','odpCuSO4']]],
+ {odpNaCl:{war:'parownica na trójnogu z siatką (lub trójkątem ceramicznym), płomień nieświecący; mieszamy bagietką',wn:'Odparowanie rozdziela roztwór: woda (lotna) uchodzi, sól (nielotna) zostaje. To zjawisko fizyczne.',bhp:'Okulary; pod koniec zmniejsz płomień — kryształy „strzelają”; gorącej parownicy nie dotykamy (szczypce).'},
+  odpCuSO4:{war:'jak wyżej; odparowujemy do pojawienia się pierwszych kryształów, potem studzimy',wn:'Krystalizacja daje kryształy hydratu CuSO₄·5H₂O; dalsze prażenie usuwa wodę krystalizacyjną (biały CuSO₄ — test na wodę).',bhp:'Związki miedzi szkodliwe — nie dotykać, myć ręce; okulary.'}},
+ 'GFX.rx · rozszerzenia.js §P (parownica: burner + tripod + evapDish)');
 })();
+
