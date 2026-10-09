@@ -3,12 +3,12 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 78 KB)
+## .  (11 pl., 79 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
 - `MAPA.md` 19 KB
-- `PRZEKAZANIE.md` 6 KB
+- `PRZEKAZANIE.md` 7 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 28 KB
 - `edit_html.py` 3 KB
@@ -470,17 +470,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (10 pl., 156 KB)
-- `W1_perplexity_F01-F06_2026-10-09.md` 18 KB
-- `W1_perplexity_F07-F14_2026-10-09.md` 20 KB
-- `W1_perplexity_F15-F21_2026-10-09.md` 17 KB
-- `W1_perplexity_J01-J00_2026-10-09.md` 19 KB
-- `W1_perplexity_N01-N05_2026-10-09.md` 17 KB
-- `W1_perplexity_O01-O07_2026-10-09.md` 14 KB
-- `W1_perplexity_O08-X04_2026-10-09.md` 20 KB
-- `W1_perplexity_R03-R09_2026-10-09.md` 16 KB
-- `W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md` 9 KB
-- `W1_perplexity_uzupelnienia_koncowe_2026-10-09.md` 8 KB
+## chemia/plany/audyty  (19 pl., 254 KB)
+- (zwinięte; `ls chemia/plany/audyty`)
 
 ## chemia/plany/narzedzia  (3 pl., 47 KB)
 - `kanon_dane.py` 37 KB
