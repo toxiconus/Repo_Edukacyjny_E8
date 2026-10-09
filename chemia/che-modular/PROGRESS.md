@@ -42,3 +42,4 @@
 - 2026-10-09: W1 Perplexity scalone: REV01 (gotowa) + REV02, LAB, O08–O11, J03/R07/X04 (szkielety MAX), uzupełnienia; J01–J06 jako materiał wstępny w chemia/lekcje_md/J/ (napisany przez Perplexity, wymaga W1). Test: N01_powietrze — sporadyczny FAIL canvas arc (ujemny promień), błąd sprzed zmian.
 - 2026-10-09 04:20: polski G01–G03 (Grok) przejrzane i wstawione do polski/podstawy; przekazanie sesji w PRZEKAZANIE.md.
 - 2026-10-09 04:20: sesja zatrzymana na prośbę użytkownika; plan następnych kroków (tylko MD) w PRZEKAZANIE.md.
+- 2026-10-09 polski: kanon v2 (POL_SPIS_TRESCI_v2.md), katalog POL_KATALOG.md, narzedzia/spis_polski.py, 17 szkieletów priorytetu 1 w polski/lekcje/.

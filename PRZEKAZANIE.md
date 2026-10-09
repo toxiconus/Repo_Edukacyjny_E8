@@ -22,6 +22,10 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - Dane niepewne oznaczać „do weryfikacji”.
 - (2026-10-09) Każda wizualizacja/obraz ma opis `@opis` w md → ukryty komentarz w HTML; build egzekwuje (`narzedzia/opis_wizualizacji.py`). Eksport do Perplexity: `python3 eksport/zbierz_lekcje.py`.
 
+## Sesja 2026-10-09 (popołudnie) — polski: kanon v2
+- Przyjęty kanon `polski/plany/POL_SPIS_TRESCI_v2.md` (106 tematów; korekta: D01–D13 nie istnieją w repo → NOWE). Katalog z KB/stanem/audytem: `polski/plany/POL_KATALOG.md` (`narzedzia/spis_polski.py`). Szkielety priorytetu 1 (K02–K14, T01–T03, M05) w `polski/lekcje/` — stan PUSTY.
+- **Następne:** (1) dokończyć G12–G17, S01–S06 (CZĘŚCIOWY); (2) wypełniać priorytet 1 od K14+M05 (wiersz w każdym arkuszu) i K05; (3) adaptacja L001–L006 (wydzielenie gramatyki do G); (4) build HTML polskiego z przełącznikami W0–W3 (`::: warstwa`, `OPIS.egzekwuj()`).
+
 ## Sesja 2026-10-09 (noc) — eksport, weryfikacja W1, polski
 - **Eksport do LLM:** `python3 eksport/zbierz_lekcje.py` → `eksport/out/PERPLEXITY_<PRZEDMIOT>.md` (prompt + wszystkie lekcje, znacznik [W1] przy zweryfikowanych). Rejestr weryfikacji: `WERYFIKACJA.md` (W1 = treść zapisu, W2 = zakres — jeszcze nie robiony; na końcu „Wnioski przekrojowe”).
 - **Zasada @opis** (każda wizualizacja ma opis w md → komentarz w HTML) egzekwowana w buildach CHE i BIO (`narzedzia/opis_wizualizacji.py`, dług `narzedzia/opis_dlug.json`, zostało 42 — N05, FIZ01, R03?, BIO).

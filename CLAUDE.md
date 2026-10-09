@@ -47,6 +47,7 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - `python3 eksport/zbierz_lekcje.py` → `eksport/out/PERPLEXITY_<PRZEDMIOT>.md` (prompt na początku + wszystkie lekcje, jedna najnowsza wersja każdej). Katalog `out/` jest poza gitem.
 
 ## Polski — lekcje podstawowe (priorytet)
+- **Kanon kursu: `polski/plany/POL_SPIS_TRESCI_v2.md`** (106 tematów, bloki POL.01–11, warstwy W0–W3, znaczniki `[SPRAWDZIAN]/[E8]/[KONKURS]/[LO]`, kolejność klas 7–8, priorytety produkcji). Stan plików/KB/audytów: `polski/plany/POL_KATALOG.md` ← `python3 narzedzia/spis_polski.py` (po każdej zmianie lekcji). Szkielety nowych lekcji: `--szkielety K02 T01` lub `--priorytet N` → `polski/lekcje/` (nie nadpisuje). Warstwy w md: `::: warstwa W2 [KONKURS]` … `:::`.
 - Szkielety G01–G17 (części mowy, składnia) i S01–S06 (środki stylistyczne) w `polski/podstawy/`, generator `python3 narzedzia/szkielety_polski.py` (nie nadpisuje wypełnionych), paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md`. Wypełniony plik: zmienić `stan: PUSTY` → `stan: WYPEŁNIONY — model, data`, potem W1.
 
 ## Merytoryka
