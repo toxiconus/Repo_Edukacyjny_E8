@@ -12,14 +12,12 @@ if(G.atomBohr&&G.orbitalCloud&&G.isotopeBar&&G.orbitalDiagram)return;
    Pełna wersja z atlasu (2026-10-08): o.zoom (powiększenie, jak kółko myszy w atlasie), o.lupa (wstawka z jądrem przy małym zoomie),
    o.sel (podświetlona powłoka 1..7), o.hl ('3d' — podświetlona podpowłoka + opis u dołu; o.bn, o.chg, o.nl), o.cfgShow (część elektronów — budowanie),
    o.order + o.role (kolejność i role podpowłok jak w atlasie). Zwraca {R0, step, Rn, rings, ns, zNuc, inset, ix, iy, ir}.
-   o.jeden (bez cfg): wszystkie elektrony na jednym okręgu, etykieta „e⁻ · n” — lekcje przed powłokami (F05; powłoki od F07).
    atomBohr.anim(canvas, o) → funkcja stop(). Atlas: bohr() w _anon_004/03_rys-bohr.js. */
 function atomBohr(cv,o){var x=cv.getContext('2d'),P=cv.width,W=760,cx=380,cy=380,t=(o.t||0)/1000,z=o.p|0,N=Math.max(0,o.n|0),N0=o.n0==null?N:o.n0,ne=Math.max(0,o.e|0),
  zm=o.zoom||1,sel=o.sel||0,hl=o.hl||null,COL=o.col||{c:'#2f8a55',v:'#b85f00',r:'#b0467a'},SH='KLMNOPQ',shells=[],skeys=[],vflag=[],show=o.cfgShow||o.cfg;
  if(o.cfg&&o.order&&o.role){o.order.filter(function(k){return o.cfg[k]}).forEach(function(k){var i=+k[0]-1,ro=o.role(o.cfg,k);shells[i]=shells[i]||[];skeys[i]=skeys[i]||[];if(ro==='v')vflag[i]=true;for(var j=0;j<(show[k]||0);j++){shells[i].push(ro);skeys[i].push(k)}})}
  else if(o.cfg){var ks=Object.keys(o.cfg).filter(function(k){return o.cfg[k]>0}),maxn=0;ks.forEach(function(k){maxn=Math.max(maxn,+k[0])});
   ks.forEach(function(k){var i=+k[0]-1,ro=+k[0]===maxn?'v':'c';shells[i]=shells[i]||[];skeys[i]=skeys[i]||[];if(ro==='v')vflag[i]=true;for(var j=0;j<(show[k]||0);j++){shells[i].push(ro);skeys[i].push(k)}})}
- else if(o.jeden){shells[0]=[];skeys[0]=[];for(var j=0;j<ne;j++){shells[0].push('v');skeys[0].push('1')}vflag[0]=ne>0}
  else{var cap=[2,8,8],left=ne,q=0;while(left>0){var c=q<3?Math.min(cap[q],left):left;shells[q]=[];skeys[q]=[];for(var j=0;j<c;j++){shells[q].push('c');skeys[q].push(String(q+1))}left-=c;q++}
   if(q){vflag[q-1]=true;shells[q-1]=shells[q-1].map(function(){return 'v'})}}
  var ns=shells.filter(Boolean).length,R0=ns<=1?150:ns===2?118:78,step=Math.min(84,(W/2-R0-34)/Math.max(ns-1,1)),tot=z+N,Rn=3.4*Math.sqrt(tot)+4,zNuc=Math.min(70,262/Rn),rings=[],kq=0;
@@ -40,7 +38,7 @@ function atomBohr(cv,o){var x=cv.getContext('2d'),P=cv.width,W=760,cx=380,cy=380
   if(sel===i+1){x.beginPath();x.arc(cx,cy,R,0,7);x.strokeStyle='rgba(37,99,235,.20)';x.lineWidth=13*lw;x.stroke()}
   if(isVal){x.beginPath();x.arc(cx,cy,R,0,7);x.strokeStyle='rgba(217,119,6,.12)';x.lineWidth=9*lw;x.stroke()}
   x.beginPath();x.arc(cx,cy,R,0,7);x.strokeStyle=isVal?'rgba(184,95,0,.7)':'rgba(23,33,43,.18)';x.lineWidth=(isVal?1.8:1.1)*lw;x.stroke();
-  var lb=o.jeden?'e⁻ · '+sh.length:SH[i]+' · '+sh.length+'/'+2*(i+1)*(i+1),lx=cx+R*.707+5,ly=cy-R*.707;x.font='600 12.5px JetBrains Mono, monospace';x.textAlign='left';
+  var lb=SH[i]+' · '+sh.length+'/'+2*(i+1)*(i+1),lx=cx+R*.707+5,ly=cy-R*.707;x.font='600 12.5px JetBrains Mono, monospace';x.textAlign='left';
   var tw=x.measureText(lb).width+10;x.beginPath();if(x.roundRect)x.roundRect(lx,ly-12,tw,17,8);else x.rect(lx,ly-12,tw,17);
   x.fillStyle='rgba(255,255,255,.9)';x.fill();x.strokeStyle=isVal?'rgba(184,95,0,.55)':'rgba(23,33,43,.18)';x.lineWidth=lw;x.stroke();x.fillStyle=isVal?'#b85f00':'#53616e';x.fillText(lb,lx+5,ly+1);
   var kk=skeys[i],ang=[],gp=[];kk.forEach(function(q,j){if(!j||q!==kk[j-1])gp.push([q,j,j]);else gp[gp.length-1][2]=j});

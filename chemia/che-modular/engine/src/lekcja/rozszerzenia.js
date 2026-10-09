@@ -213,7 +213,7 @@ function supN(n){return String(n).replace(/[0-9]/g,function(d){return '⁰¹²³
 function subN(n){return String(n).replace(/[0-9]/g,function(d){return '₀₁₂₃₄₅₆₇₈₉'[d]})}
 function chg(q){return q===0?'':(Math.abs(q)>1?supN(Math.abs(q)):'')+(q>0?'⁺':'⁻')}
 function pl(x,d){return x.toFixed(d).replace('.',',')}
-/* atomSVG usunięty 2026-10-09 — model atomu w lekcjach rysuje wspólny komponent CHE.LAB.atomBohr (engine/src/komponenty/atlas-gfx.js), ten sam co atlas; elektrony na jednym okręgu: o.jeden. */
+/* atomSVG usunięty 2026-10-09 — model atomu w lekcjach rysuje wspólny komponent CHE.LAB.atomBohr (engine/src/komponenty/atlas-gfx.js), ten sam co atlas (powłoki K, L, M — model szkolny 2, 8, 8). */
 /* atomBohr, orbitalCloud → engine/src/dodatki/atlas-gfx.js (wspólne dla labu i lekcji, CHE.LAB.*) */
 
 V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa',tag:'MODEL',
