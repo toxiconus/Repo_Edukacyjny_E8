@@ -3,13 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (7 pl., 77 KB)
+## .  (8 pl., 120 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 8 KB
-- `MAPA.md` 24 KB
-- `PRZEKAZANIE.md` 12 KB
+- `MAPA.md` 25 KB
+- `PRZEKAZANIE.md` 14 KB
 - `README.md` 0 KB
+- `SPIS_WSZYSTKICH.md` 40 KB
 - `WERYFIKACJA.md` 28 KB
 
 ## angielski  (3 pl., 959 KB)
@@ -66,10 +67,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (3 pl., 126 KB)
+## biologia/bio/md  (3 pl., 130 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 28 KB
 - `BIO.00.REV02.roznorodnosc_zycia.md` 48 KB
-- `BIO.02.L010.dna_od_zera.md` 49 KB
+- ⚠`BIO.02.L010.dna_od_zera.md` 53 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
@@ -82,7 +83,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
-## biologia/html  (37 pl., 6.5 MB)
+## biologia/html  (37 pl., 6.7 MB)
 - (zwinięte; `ls biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 190 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 220 KB
@@ -90,10 +91,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 197 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.html` 233 KB
 - ⚠`BIO.01.L003.diagnoza.html` 249 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 165 KB
-- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 165 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 186 KB
+- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 180 KB
 
-## biologia/md  (37 pl., 997 KB)
+## biologia/md  (37 pl., 1.1 MB)
 - (zwinięte; `ls biologia/md`) — duże:
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 75 KB
@@ -345,14 +346,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 913 KB)
+## chemia/che-modular/lessons-md/gotowe  (15 pl., 922 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
-- ⚠`FIZ01_elektrostatyka.md` 51 KB
+- ⚠`FIZ01_elektrostatyka.md` 55 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 129 KB
 - ⚠`N03_kwasy.md` 134 KB
 - ⚠`N04_sole.md` 86 KB
-- ⚠`N05_wodorki.md` 55 KB
+- ⚠`N05_wodorki.md` 60 KB
 - ⚠`REV01_powtorka_klasy_7.md` 62 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
@@ -462,7 +463,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
 - `pack_lesson.py` 28 KB
 
-## chemia/html  (46 pl., 4.9 MB)
+## chemia/html  (81 pl., 7.4 MB)
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`CHE.00.LAB.doswiadczenia.html` 106 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.html` 214 KB
@@ -481,6 +482,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.00.S00.system_kursu.md` 18 KB
 - `CHE.00.W00.wstep.md` 6 KB
 
+## chemia/lekcje_md/A  (1 pl., 2 KB)
+- `CHE.08.A01.jadro_atomowe.md` 2 KB
+
+## chemia/lekcje_md/E  (6 pl., 20 KB)
+- `CHE.06.E01.ogniwo_galwaniczne.md` 3 KB
+- `CHE.06.E02.potencjaly_elektrodowe.md` 3 KB
+- `CHE.06.E03.sem.md` 3 KB
+- `CHE.06.E04.elektroliza.md` 3 KB
+- `CHE.06.E05.korozja.md` 4 KB
+- `CHE.06.E06.zrodla_energii_akumulatory.md` 4 KB
+
 ## chemia/lekcje_md/F  (22 pl., 1.1 MB)
 - (zwinięte; `ls chemia/lekcje_md/F`) — duże:
 - ⚠`CHE.01.F00.wspolne_bloku_F.md` 110 KB
@@ -492,37 +504,55 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE.01.F12.wzory_chemiczne.md` 127 KB
 - ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 66 KB
 
-## chemia/lekcje_md/J  (7 pl., 38 KB)
-- `CHE.04.J00.mapa_bloku_J.md` 5 KB
-- `CHE.04.J01.dysocjacja_elektrolityczna.md` 7 KB
-- `CHE.04.J02.odczyn_i_ph.md` 6 KB
-- `CHE.04.J03.reakcje_jonowe.md` 5 KB
-- `CHE.04.J04.stracanie_osadow.md` 4 KB
-- `CHE.04.J05.amfoterycznosc.md` 5 KB
-- `CHE.04.J06.rownowagi_kwasowo_zasadowe.md` 6 KB
+## chemia/lekcje_md/J  (13 pl., 108 KB)
+- (zwinięte; `ls chemia/lekcje_md/J`)
 
-## chemia/lekcje_md/N  (4 pl., 140 KB)
+## chemia/lekcje_md/K  (11 pl., 66 KB)
+- `CHE.07.K01.energia_reakcji.md` 21 KB
+- `CHE.07.K02.entalpia.md` 9 KB
+- `CHE.07.K03.kalorymetria_i_przemiany_fazowe.md` 16 KB
+- `CHE.07.K04.szybkosc_reakcji.md` 2 KB
+- `CHE.07.K05.czynniki_szybkosci.md` 3 KB
+- `CHE.07.K06.zderzenia_energia_aktywacji.md` 2 KB
+- `CHE.07.K07.kataliza.md` 2 KB
+- `CHE.07.K08.rownowaga_dynamiczna.md` 2 KB
+- `CHE.07.K09.stala_rownowagi.md` 2 KB
+- `CHE.07.K10.regula_le_chateliera.md` 3 KB
+- `CHE.07.K11.rownowaga_ilosciowa.md` 2 KB
+
+## chemia/lekcje_md/N  (6 pl., 150 KB)
 - `CHE.02.N02.tlenki.md` 37 KB
 - `CHE.02.N03.wodorotlenki.md` 31 KB
 - `CHE.02.N04.kwasy.md` 35 KB
 - `CHE.02.N05.sole.md` 37 KB
+- `CHE.02.N07.systematyka_nieorganiczna.md` 4 KB
+- `CHE.02.N08.mapa_przemian.md` 5 KB
 
-## chemia/lekcje_md/O  (3 pl., 99 KB)
+## chemia/lekcje_md/O  (9 pl., 122 KB)
 - `CHE.05.O01-O07.weglowodory.md` 41 KB
 - `CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` 12 KB
+- `CHE.05.O09.fenole.md` 4 KB
+- `CHE.05.O10.aldehydy_i_ketony.md` 4 KB
 - `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 46 KB
+- `CHE.05.O14.aminy_i_amidy.md` 3 KB
+- `CHE.05.O21.polimery_i_tworzywa.md` 4 KB
+- `CHE.05.O24.nazewnictwo_procedura_zbiorcza.md` 4 KB
+- `CHE.05.O25.mechanizmy_reakcji_organicznych.md` 4 KB
 
-## chemia/lekcje_md/R  (2 pl., 76 KB)
+## chemia/lekcje_md/R  (5 pl., 90 KB)
+- `CHE.03.R01.woda_i_roztwory.md` 5 KB
+- `CHE.03.R02.rozpuszczalnosc.md` 4 KB
 - `CHE.03.R03+R05.stezenia.md` 34 KB
 - `CHE.03.R04+R07-R09.stechiometria.md` 42 KB
+- `CHE.03.R06.gazy_objetosc_molowa.md` 4 KB
 
 ## chemia/lekcje_md/X  (1 pl., 38 KB)
 - `CHE.06.X01-X09.redoks.md` 38 KB
 
-## chemia/plany  (4 pl., 112 KB)
+## chemia/plany  (4 pl., 113 KB)
 - `ANALIZA_bloki_XEKAPLR.md` 18 KB
 - `CHE.01.F00.architektura_bloku_F.md` 22 KB
-- ⚠`CHE_SPIS_TRESCI.md` 65 KB
+- ⚠`CHE_SPIS_TRESCI.md` 66 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
 ## chemia/plany/audyty  (22 pl., 263 KB)
@@ -542,7 +572,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (9 pl., 76 KB)
+## narzedzia  (10 pl., 82 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `html_do_md.py` 22 KB
 - `latex2uni.py` 2 KB
@@ -550,6 +580,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
+- `spis_wszystkich.py` 6 KB
 - `szkielety_polski.py` 24 KB
 - `zbuduj_wszystkie.py` 3 KB
 
