@@ -54,3 +54,4 @@
 - 2026-10-09 — CHE: decyzje noty kolizji (status w spisie, ponad E8 → extra w lekcji, RT00–RT10); spis_tresci.py naprawiony (ścieżki gotowych lekcji).
 - 2026-10-09 09:15 — przekazanie + PACZKA_BRAKI_2026-10-09.zip (87 plików: CHE 46 kodów do napisania, J00–J06, F18–F21, O08, RT; BIO 24 cienkie; ANG moduły; POL W2; OLI).
 - 2026-10-09 14:20 — Odchudzanie per lekcja: profile F02, F03, F05, N02, N03, N04 (1,09–1,21 MB z 1,55); wspolny + s086 (energia jonizacji dla periodic-54); wstrzymane, zostało 7 lekcji (N05 wznawialny). Też: J00–J06 przegląd W22, paczka W1 (eksport/w1_paczka.py), dług @opis = 0.
+- 2026-10-09 16:35 — Odchudzanie per lekcja zakończone: 15/15 profili (N05, R03, REV01, N01_powietrze, FIZ01, F06, N01_tlenki dziś po południu); lekcje 1,19–1,45 MB (było ~3 MB), test 15/15. F05 na atomBohr (powłoki + lupa), atomSVG usunięty.
