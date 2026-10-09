@@ -2,6 +2,11 @@
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
+## ⚑ KONIEC WĄTKU „silnik/atlas” (2026-10-09 17:00) — równolegle pracuje drugi wątek
+- **Drugi wątek nadal działa** na tej samej gałęzi (`claude/che-lekcje`): zawsze `git pull --rebase --autostash` przed pracą i przed push; nie nadpisywać jego plików bez sprawdzenia `git log`.
+- **Zrobione w tym wątku (12:28–17:00):** wgrane paczki LLM (BIO L004–L021, CHE 35 lekcji Groka + K02–K11, A01; J00–J06 scalone z W22); dług `@opis` = 0; paczka W1 dla 42 lekcji Groka (`eksport/w1_paczka.py`, wysłana — czeka na odpowiedź Perplexity); spisy `SPIS_WSZYSTKICH.md` + `polski/SPIS_LEKCJI_POLSKI.md`; F05 na wspólnym `atomBohr` (powłoki + lupa), `atomSVG` usunięty; **odchudzanie silnika zakończone** — 15/15 profili, lekcje 1,19–1,45 MB (razem 19,4 MB, było ~45), test 15/15, atlas 89/18 bez zmian; pomiar CSS (`test_lekcje.cjs --css= --szer=`): działa ~120 KB z 355 KB arkuszy.
+- **Następne kroki silnik/atlas:** (1) N02 przy 1280 px — 3 modele puste (`n02-zobojetnianie-v01`, `n02-reaktor-v01`, `n02-stracanie-v01`), na 390 px OK; (2) bank widżetów DOM (46 KB) tylko z widżetami lekcji; (3) cięcie CSS po plikach/regułach z porównaniem zrzutów (wzorzec jak w atlasie); (4) dublowanie z §6 `chemia/che-modular/PRZEKAZANIE.md` — konfiguracja elektronowa liczona w kilku miejscach (do jednego źródła); (5) po każdej zmianie silnika: `che.py silnik` → `lekcje` → `test` (+ `atlas --sprawdz`).
+
 ## ⚑ PRZEKAZANIE DLA NOWEGO WĄTKU (2026-10-09 15:07)
 - Odchudzanie silnika zakończone 16:55 (15/15 profili, lekcje 1,19–1,45 MB, test 15/15) — `chemia/che-modular/` znów wolne. Przed push: `git pull --rebase`.
 - Po klonie (płytki klon pobiera tylko `main`): `git config --add remote.origin.fetch '+refs/heads/claude/che-lekcje:refs/remotes/origin/claude/che-lekcje' && git fetch origin && git branch -u origin/claude/che-lekcje`.
