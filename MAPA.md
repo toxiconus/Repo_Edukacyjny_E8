@@ -600,7 +600,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PL_L010_srodki_stylistyczne.md` 4 KB
 - `PL_L011_elementy_utworu_moral_puenta.md` 5 KB
 
-## polski/lekcje  (32 pl., 60 KB)
+## polski/lekcje  (32 pl., 80 KB)
 - (zwinięte; `ls polski/lekcje`)
 
 ## polski/plany  (3 pl., 60 KB)
@@ -612,11 +612,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
 - `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
 
-## polski/plany/wypelnienia  (6 pl., 32 KB)
+## polski/plany/wypelnienia  (7 pl., 67 KB)
 - `G01_Rzeczownik_WYPELNIONY.md` 8 KB
 - `G02_Czasownik_WYPELNIONY.md` 6 KB
 - `G03_Przymiotnik_WYPELNIONY.md` 6 KB
 - `G04_G11_Czesci_mowy_reszta_WYPELNIONE.md` 5 KB
+- `G12-G17_P01-P04_Perplexity_2026-10-09_surowe.md` 35 KB
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 

@@ -41,9 +41,9 @@ Generowany 2026-10-09: `python3 narzedzia/spis_polski.py` — nie edytować ręc
 | G15 | Zdanie złożone współrzędnie | ISTNIEJE | `polski/podstawy/PL_G15_zdania_wspolrzedne.md` | 5 | WSTĘPNY | — |
 | G16 | Zdanie złożone podrzędnie | ISTNIEJE | `polski/podstawy/PL_G16_zdania_podrzedne.md` | 6 | WSTĘPNY | — |
 | G17 | Mowa zależna | ISTNIEJE | `polski/podstawy/PL_G17_mowa_zalezna.md` | 5 | WSTĘPNY | — |
-| G18 | Zdania wielokrotnie złożone i wykresy | NOWA (treść częściowo w L009 — wydzielić | `polski/lekcje/PL_G18_zdania_wielokrotnie_zlozone_i_wykresy.md` | 1 | PUSTY | — |
-| G19 | Fleksja w zadaniach testowych — typologia pułapek | NOWA | `polski/lekcje/PL_G19_fleksja_w_zadaniach_testowych_typologia_.md` | 1 | PUSTY | — |
-| G20 | Fonetyka: głoska, litera, sylaba, akcent | NOWA (materiał powtórkowy W0–W1) | `polski/lekcje/PL_G20_fonetyka_gloska_litera_sylaba_akcent.md` | 1 | PUSTY | — |
+| G18 | Zdania wielokrotnie złożone i wykresy | NOWA (treść częściowo w L009 — wydzielić | `polski/lekcje/PL_G18_zdania_wielokrotnie_zlozone_i_wykresy.md` | 5 | WSTĘPNY | — |
+| G19 | Fleksja w zadaniach testowych — typologia pułapek | NOWA | `polski/lekcje/PL_G19_fleksja_w_zadaniach_testowych_typologia_.md` | 3 | WSTĘPNY | — |
+| G20 | Fonetyka: głoska, litera, sylaba, akcent | NOWA (materiał powtórkowy W0–W1) | `polski/lekcje/PL_G20_fonetyka_gloska_litera_sylaba_akcent.md` | 3 | WSTĘPNY | — |
 
 ## POL.03 S — środki stylistyczne i poetyka
 
@@ -117,12 +117,12 @@ Generowany 2026-10-09: `python3 narzedzia/spis_polski.py` — nie edytować ręc
 
 | Kod | Lekcja | Status w kanonie | Plik | KB | Stan | Audyt |
 |---|---|---|---|---|---|---|
-| J01 | Słowotwórstwo: rodziny wyrazów, formanty, złożenia | NOWA | `polski/lekcje/PL_J01_slowotworstwo_rodziny_wyrazow_formanty_z.md` | 1 | PUSTY | — |
-| J02 | Frazeologia: frazeologizmy, przysłowia i ich funkcja | NOWA — E8 wprost daje zadania na przysło | `polski/lekcje/PL_J02_frazeologia_frazeologizmy_przyslowia_i_i.md` | 1 | PUSTY | — |
-| J03 | Semantyka i leksyka: polisemia, homonimy, synonimy, antonimy, pola sem | NOWA | `polski/lekcje/PL_J03_semantyka_i_leksyka_polisemia_homonimy_s.md` | 1 | PUSTY | — |
-| J04 | Kultura języka: norma wzorcowa i użytkowa, błędy, samokształcenie ze s | NOWA — rozwinięcie sekcji „Poprawna pols | `polski/lekcje/PL_J04_kultura_jezyka_norma_wzorcowa_i_uzytkowa.md` | 1 | PUSTY | — |
-| J05 | Etymologia, zapożyczenia, neologizmy, mody językowe | NOWA | `polski/lekcje/PL_J05_etymologia_zapozyczenia_neologizmy_mody_.md` | 1 | PUSTY | — |
-| J06 | Komunikacja językowa i odmiany polszczyzny | NOWA | `polski/lekcje/PL_J06_komunikacja_jezykowa_i_odmiany_polszczyz.md` | 1 | PUSTY | — |
+| J01 | Słowotwórstwo: rodziny wyrazów, formanty, złożenia | NOWA | `polski/lekcje/PL_J01_slowotworstwo_rodziny_wyrazow_formanty_z.md` | 3 | WSTĘPNY | — |
+| J02 | Frazeologia: frazeologizmy, przysłowia i ich funkcja | NOWA — E8 wprost daje zadania na przysło | `polski/lekcje/PL_J02_frazeologia_frazeologizmy_przyslowia_i_i.md` | 3 | WSTĘPNY | — |
+| J03 | Semantyka i leksyka: polisemia, homonimy, synonimy, antonimy, pola sem | NOWA | `polski/lekcje/PL_J03_semantyka_i_leksyka_polisemia_homonimy_s.md` | 3 | WSTĘPNY | — |
+| J04 | Kultura języka: norma wzorcowa i użytkowa, błędy, samokształcenie ze s | NOWA — rozwinięcie sekcji „Poprawna pols | `polski/lekcje/PL_J04_kultura_jezyka_norma_wzorcowa_i_uzytkowa.md` | 3 | WSTĘPNY | — |
+| J05 | Etymologia, zapożyczenia, neologizmy, mody językowe | NOWA | `polski/lekcje/PL_J05_etymologia_zapozyczenia_neologizmy_mody_.md` | 2 | WSTĘPNY | — |
+| J06 | Komunikacja językowa i odmiany polszczyzny | NOWA | `polski/lekcje/PL_J06_komunikacja_jezykowa_i_odmiany_polszczyz.md` | 3 | WSTĘPNY | — |
 
 ## POL.08 POP — ortografia i interpunkcja
 

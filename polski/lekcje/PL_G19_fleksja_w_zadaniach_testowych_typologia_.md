@@ -6,50 +6,78 @@ blok: POL.02 G — gramatyka: fleksja i składnia
 cel_W1: uczeń rozpoznaje typowy błąd fleksyjny i go poprawia
 cel_W2: bank pułapek konkursowych; format testu OLiJP
 cel_W3: —
-stan: PUSTY
+stan: WSTĘPNY — Perplexity 2026-10-09, przegląd i poprawki: Claude 2026-10-09; braki: zob. sekcja „Do uzupełnienia”
 utworzono: 2026-10-09
 ---
 
-> Szkielet z kanonu v2 (`polski/plany/POL_SPIS_TRESCI_v2.md`). Rdzeń W1 bez znaczników; warstwy w blokach `::: warstwa W2 [KONKURS]` … `:::`. Każde ćwiczenie ma znacznik `[SPRAWDZIAN]`/`[E8]`/`[KONKURS]`/`[LO]`. Pisownia wg zasad RJP od 2026. `@opis` pod każdą wizualizacją.
+> Lekcja wstępna: treść Perplexity z poprawkami merytorycznymi Claude (surowa wersja: `polski/plany/wypelnienia/G18-G20_J01-J06_Perplexity_2026-10-09_surowe.md`). Przed W1 uzupełnić braki z ostatniej sekcji.
 
-## 0 | Cel i kryterium gotowości
+## Cele (wersja Perplexity — wiążące są cele z nagłówka i kanonu)
+- W1: rozpoznawanie form gramatycznych wyrazów.
+- W2: określanie przypadka, liczby, rodzaju i osoby.
+- W3: rozpoznawanie typowych pułapek testowych.
 
-DO UZUPEŁNIENIA
+## 1. Co to jest fleksja?
+**Fleksja** to odmiana wyrazów przez przypadki, liczby, rodzaje, osoby, czasy i inne kategorie gramatyczne.
 
-## 1 | Wiedza — definicje i pojęcia
+Przykłady:
+- *kot, kota, kotu, kota, kotem, kocie*
+- *czytam, czytasz, czyta, czytamy, czytacie, czytają*
+- *ładny, ładna, ładne*
 
-DO UZUPEŁNIENIA
+## 2. Rzeczownik
+Odmieniamy przez przypadki i liczby.
 
-## 2 | Procedura krok po kroku
+| Przypadek | Pytanie | Przykład |
+|---|---|---|
+| Mianownik | kto? co? | kot |
+| Dopełniacz | kogo? czego? | kota |
+| Celownik | komu? czemu? | kotu |
+| Biernik | kogo? co? | kota |
+| Narzędnik | kim? czym? | kotem |
+| Miejscownik | o kim? o czym? | o kocie |
+| Wołacz | o! | kocie! |
 
-DO UZUPEŁNIENIA
+## 3. Czasownik
+Odmieniamy przez osoby, liczby, czasy, strony i tryby.
 
-## 3 | Przykłady (z lektur obowiązkowych)
+- **osoby:** czytam, czytasz, czyta
+- **liczby:** czytam, czytamy
+- **czasy:** czytam, czytałem, będę czytał
+- **strony:** czytam — jestem czytany
+- **tryby:** oznajmujący *czytam*, rozkazujący *czytaj!*, przypuszczający *czytałbym*
 
-DO UZUPEŁNIENIA
+## 4. Przymiotnik
+Odmieniamy przez przypadki, liczby i rodzaje.
 
-## 4 | Klinika błędów
+- *ładny chłopiec*
+- *ładna dziewczynka*
+- *ładne dziecko*
+- *ładnych chłopców*
 
-DO UZUPEŁNIENIA
+## 5. Typowe pułapki
+- Biernik równy dopełniaczowi u rzeczowników męskożywotnych: *Widzę kota* (biernik) — *Nie ma kota* (dopełniacz). Rozstrzyga pytanie: *widzę kogo? co?* / *nie ma kogo? czego?*; podstaw rzeczownik żeński: *Widzę mamę* / *Nie ma mamy*.
+- Mylenie dopełniacza z celownikiem: *Nie mam kota* — dopełniacz; *Daj kotu mleko* — celownik.
+- Mylenie osoby i liczby w czasowniku: *czytacie* — 2. osoba liczby mnogiej.
+- Nieodróżnianie rodzaju przymiotnika: *ładny*, *ładna*, *ładne*.
+- Mylenie czasu przeszłego z trybem przypuszczającym: *czytałem* — czas przeszły; *czytałbym* — tryb przypuszczający.
 
-## 5 | Ćwiczenia A — podstawa
+## 6. Ćwiczenia
+1. Określ przypadki: *Widzę psa.*, *Daj kotu mleko.*, *Nie mam czasu.*, *Rozmawiam z nauczycielem.*
+2. Określ osobę, liczbę i czas: *czytam*, *czytaliście*, *będę czytał*, *czytałbym*.
+3. Określ rodzaj przymiotnika: *wysoki*, *wysoka*, *wysokie*.
+4. Popraw błędy: *Widzę kot.*, *Daj kot mleko.*, *My czytacie książkę.*
 
-DO UZUPEŁNIENIA
+## 7. Odpowiedzi
+1. *psa* — biernik; *kotu* — celownik; *czasu* — dopełniacz; *z nauczycielem* — narzędnik.  
+2. *czytam* — 1. os. lp., czas teraźniejszy; *czytaliście* — 2. os. lm., czas przeszły; *będę czytał* — 1. os. lp., czas przyszły; *czytałbym* — 1. os. lp., tryb przypuszczający.  
+3. *wysoki* — rodzaj męski; *wysoka* — rodzaj żeński; *wysokie* — rodzaj nijaki.  
+4. *Widzę kota.*, *Daj kotu mleko.*, *My czytamy książkę.*
 
-## 6 | Zadania w stylu CKE (z kluczem i punktacją)
+## Klucz do ćwiczeń (Claude)
 
-DO UZUPEŁNIENIA
+Klucz w sekcji „Odpowiedzi” (sprawdzony).
 
-## 7 | Fiszki
+## Do uzupełnienia
 
-DO UZUPEŁNIENIA
-
-## 8 | Wizualizacja + @opis
-
-DO UZUPEŁNIENIA
-
-::: warstwa W2 [KONKURS]
-## Rozszerzenie — konkurs/olimpiada: bank pułapek konkursowych; format testu OLiJP
-
-DO UZUPEŁNIENIA
-:::
+przykłady z lektur obowiązkowych; zadania w stylu CKE z punktacją; fiszki; warstwa `::: warstwa W2 [KONKURS]` (G18: konstrukcje 3-zdaniowe z testu olimpijskiego; G19: bank pułapek i format testu OLiJP; G20: uproszczenia grup spółgłoskowych, upodobnienia); znaczniki przy ćwiczeniach.

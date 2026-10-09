@@ -6,50 +6,63 @@ blok: POL.07 JĘZ+ — słowotwórstwo, frazeologia, semantyka, leksyka, komunik
 cel_W1: uczeń rozróżnia typy znaczeń i dobiera wyraz do kontekstu
 cel_W2: konotacja i denotacja; semantyka w testach
 cel_W3: —
-stan: PUSTY
+stan: WSTĘPNY — Perplexity 2026-10-09, przegląd i poprawki: Claude 2026-10-09; braki: zob. sekcja „Do uzupełnienia”
 utworzono: 2026-10-09
 ---
 
-> Szkielet z kanonu v2 (`polski/plany/POL_SPIS_TRESCI_v2.md`). Rdzeń W1 bez znaczników; warstwy w blokach `::: warstwa W2 [KONKURS]` … `:::`. Każde ćwiczenie ma znacznik `[SPRAWDZIAN]`/`[E8]`/`[KONKURS]`/`[LO]`. Pisownia wg zasad RJP od 2026. `@opis` pod każdą wizualizacją.
+> Lekcja wstępna: treść Perplexity z poprawkami merytorycznymi Claude (surowa wersja: `polski/plany/wypelnienia/G18-G20_J01-J06_Perplexity_2026-10-09_surowe.md`). Przed W1 uzupełnić braki z ostatniej sekcji.
 
-## 0 | Cel i kryterium gotowości
+## Cele (wersja Perplexity — wiążące są cele z nagłówka i kanonu)
+- W1: rozpoznawanie polisemii, homonimów, synonimów i antonimów.
+- W2: dobieranie wyrazów bliskoznacznych i przeciwstawnych.
+- W3: poprawne stosowanie słownictwa w zdaniach.
 
-DO UZUPEŁNIENIA
+## 1. Polisemia
+**Polisemia** to wieloznaczność wyrazu — jeden wyraz ma kilka znaczeń.
 
-## 1 | Wiedza — definicje i pojęcia
+- *głowa* — część ciała; osoba kierująca (*głowa rodziny*)
+- *zamek* — budowla obronna; urządzenie w drzwiach; zapięcie (*zamek błyskawiczny*)
+- *klucz* — narzędzie do zamka; znak nutowy (*klucz wiolinowy*); sposób rozwiązania (*klucz do zadania*)
 
-DO UZUPEŁNIENIA
+Znaczenia wyrazu wieloznacznego są ze sobą **powiązane** (np. wszystkie *klucze* coś „otwierają”).
 
-## 2 | Procedura krok po kroku
+## 2. Homonimy
+**Homonimy** to wyrazy o tej samej formie, ale znaczeniach **niepowiązanych** (często innego pochodzenia).
 
-DO UZUPEŁNIENIA
+- *bal* — zabawa taneczna / gruba kłoda
+- *pokój* — pomieszczenie / brak wojny
+- *zamek* bywa podawany jako homonim (budowla / zapięcie) — w testach sprawdź, której definicji używa zadanie [DO WERYFIKACJI w podręczniku/słowniku].
 
-## 3 | Przykłady (z lektur obowiązkowych)
+## 3. Synonimy
+**Synonimy** to wyrazy o podobnym lub bliskim znaczeniu.
 
-DO UZUPEŁNIENIA
+- *dom* — mieszkanie, siedziba
+- *radość* — szczęście, zadowolenie
+- *smutny* — przygnębiony, zmartwiony
 
-## 4 | Klinika błędów
+## 4. Antonimy
+**Antonimy** to wyrazy o znaczeniu przeciwnym.
 
-DO UZUPEŁNIENIA
+- *duży* — mały
+- *jasny* — ciemny
+- *szybki* — wolny
+- *miły* — niemiły
 
-## 5 | Ćwiczenia A — podstawa
+## 5. Ćwiczenia
+1. Podaj dwa znaczenia wyrazów: *zamek*, *klucz*, *głowa*.
+2. Dobierz synonimy do: *dom*, *radość*, *smutny*.
+3. Dobierz antonimy do: *duży*, *jasny*, *szybki*, *miły*.
+4. Ułóż zdania z wyrazami wieloznacznymi.
 
-DO UZUPEŁNIENIA
+## 6. Odpowiedzi
+1. *zamek* — budowla / zapięcie; *klucz* — narzędzie / znak nutowy; *głowa* — część ciała / osoba kierująca.  
+2. *mieszkanie*, *szczęście*, *przygnębiony*.  
+3. *mały*, *ciemny*, *wolny*, *niemiły*.
 
-## 6 | Zadania w stylu CKE (z kluczem i punktacją)
+## Klucz do ćwiczeń (Claude)
 
-DO UZUPEŁNIENIA
+Klucz w sekcji „Odpowiedzi” (poprawiony: *klucz*). Ćw. 4: odpowiedź otwarta.
 
-## 7 | Fiszki
+## Do uzupełnienia
 
-DO UZUPEŁNIENIA
-
-## 8 | Wizualizacja + @opis
-
-DO UZUPEŁNIENIA
-
-::: warstwa W2 [KONKURS]
-## Rozszerzenie — konkurs/olimpiada: konotacja i denotacja; semantyka w testach
-
-DO UZUPEŁNIENIA
-:::
+przykłady z lektur; zadania w stylu CKE z punktacją; fiszki; warstwa W2 wg kanonu (J01: derywacja, format testu olimpiady; J02: frazeologia biblijna i mitologiczna; J03: konotacja i denotacja, pola semantyczne; J04: norma a uzus, korzystanie ze słowników — wymaganie wprost; J05: internacjonalizmy, neologizm a żargon; J06: funkcje językowe W3); znaczniki przy ćwiczeniach.

@@ -44,3 +44,4 @@
 - 2026-10-09 04:20: sesja zatrzymana na prośbę użytkownika; plan następnych kroków (tylko MD) w PRZEKAZANIE.md.
 - 2026-10-09 polski: kanon v2 (POL_SPIS_TRESCI_v2.md), katalog POL_KATALOG.md, narzedzia/spis_polski.py, 17 szkieletów priorytetu 1 w polski/lekcje/.
 - 2026-10-09 polski: G12–G17, P01–P04 wstępne (Perplexity + poprawki i klucze Claude).
+- 2026-10-09 polski: G18–G20, J01–J06 wstępne (Perplexity + poprawki Claude).

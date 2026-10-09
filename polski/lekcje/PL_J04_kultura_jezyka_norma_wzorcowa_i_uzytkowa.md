@@ -6,56 +6,62 @@ blok: POL.07 JĘZ+ — słowotwórstwo, frazeologia, semantyka, leksyka, komunik
 cel_W1: uczeń poprawia zdanie z błędem i uzasadnia poprawkę
 cel_W2: norma a uzus
 cel_W3: kultura wypowiedzi LO
-stan: PUSTY
+stan: WSTĘPNY — Perplexity 2026-10-09, przegląd i poprawki: Claude 2026-10-09; braki: zob. sekcja „Do uzupełnienia”
 utworzono: 2026-10-09
 ---
 
-> Szkielet z kanonu v2 (`polski/plany/POL_SPIS_TRESCI_v2.md`). Rdzeń W1 bez znaczników; warstwy w blokach `::: warstwa W2 [KONKURS]` … `:::`. Każde ćwiczenie ma znacznik `[SPRAWDZIAN]`/`[E8]`/`[KONKURS]`/`[LO]`. Pisownia wg zasad RJP od 2026. `@opis` pod każdą wizualizacją.
+> Lekcja wstępna: treść Perplexity z poprawkami merytorycznymi Claude (surowa wersja: `polski/plany/wypelnienia/G18-G20_J01-J06_Perplexity_2026-10-09_surowe.md`). Przed W1 uzupełnić braki z ostatniej sekcji.
 
-## 0 | Cel i kryterium gotowości
+## Cele (wersja Perplexity — wiążące są cele z nagłówka i kanonu)
+- W1: rozróżnianie normy wzorcowej i użytkowej.
+- W2: rozpoznawanie błędów językowych.
+- W3: poprawianie wypowiedzi.
 
-DO UZUPEŁNIENIA
+## 1. Norma wzorcowa
+**Norma wzorcowa** to wzór poprawnej polszczyzny, którego należy uczyć w szkole i stosować w sytuacjach oficjalnych.
 
-## 1 | Wiedza — definicje i pojęcia
+Przykłady:
+- *Poszliśmy do kina.*
+- *Wzięliśmy udział w konkursie.*
+- *Pożyczyłem książkę.*
 
-DO UZUPEŁNIENIA
+## 2. Norma użytkowa
+**Norma użytkowa** to sposób mówienia akceptowany w codziennej komunikacji, choć nie zawsze zgodny ze wzorcem.
 
-## 2 | Procedura krok po kroku
+Przykłady (wzorcowa → użytkowa, obie poprawne):
+- akcent *zro-BI-li-śmy* → *zro-bi-LI-śmy*
+- akcent *ma-TE-ma-ty-ka* → *ma-te-MA-ty-ka*
+- *tu napisano* → *tu jest napisane*
 
-DO UZUPEŁNIENIA
+## 3. Typowe błędy
+- *Wszedłem do środka* — pleonazm, bo *wszedłem* już oznacza wejście do wnętrza.
+- *w każdym bądź razie* — kontaminacja (zlanie *w każdym razie* + *bądź co bądź*); poprawnie: *w każdym razie*.
+- *wziąść* → *wziąć*; *poszłem* → *poszedłem*; *włanczać* → *włączać* (błędy fleksyjne).
+- *pożyczyć komuś* i *pożyczyć od kogoś* — **oba** poprawne.
 
-## 3 | Przykłady (z lektur obowiązkowych)
+## 4. Pleonazm
+**Pleonazm** to powtórzenie znaczenia w wyrażeniu.
 
-DO UZUPEŁNIENIA
+- *cofnąć się do tyłu* → *cofnąć się*
+- *wrócił z powrotem* → *wrócił*
+- *akwen wodny* → *akwen*
 
-## 4 | Klinika błędów
+## 5. Ćwiczenia
+1. Popraw zdania:  
+   *Wszedłem do środka do domu.*  
+   *Wróciłem z powrotem do domu.*  
+   *W każdym bądź razie będę gotowy.*
+2. Wskaż pleonazmy: *cofnąć się do tyłu*, *wrócił z powrotem*, *główny priorytet*, *szybki spacer*.
+3. Ułóż zdania w stylu oficjalnym i potocznym.
 
-DO UZUPEŁNIENIA
+## 6. Odpowiedzi
+1. *Wszedłem do domu.*, *Wróciłem do domu.*, *W każdym razie będę gotowy.*  
+2. pleonazmy: *cofnąć się do tyłu*, *wrócił z powrotem*, *główny priorytet* (priorytet = to, co najważniejsze); *szybki spacer* — poprawne.
 
-## 5 | Ćwiczenia A — podstawa
+## Klucz do ćwiczeń (Claude)
 
-DO UZUPEŁNIENIA
+Klucz w sekcji „Odpowiedzi” (poprawiony: kontaminacja *w każdym bądź razie*, pleonazmy). Ćw. 3: odpowiedź otwarta.
 
-## 6 | Zadania w stylu CKE (z kluczem i punktacją)
+## Do uzupełnienia
 
-DO UZUPEŁNIENIA
-
-## 7 | Fiszki
-
-DO UZUPEŁNIENIA
-
-## 8 | Wizualizacja + @opis
-
-DO UZUPEŁNIENIA
-
-::: warstwa W2 [KONKURS]
-## Rozszerzenie — konkurs/olimpiada: norma a uzus
-
-DO UZUPEŁNIENIA
-:::
-
-::: warstwa W3 [LO]
-## Pomost LO: kultura wypowiedzi LO
-
-DO UZUPEŁNIENIA
-:::
+przykłady z lektur; zadania w stylu CKE z punktacją; fiszki; warstwa W2 wg kanonu (J01: derywacja, format testu olimpiady; J02: frazeologia biblijna i mitologiczna; J03: konotacja i denotacja, pola semantyczne; J04: norma a uzus, korzystanie ze słowników — wymaganie wprost; J05: internacjonalizmy, neologizm a żargon; J06: funkcje językowe W3); znaczniki przy ćwiczeniach.
