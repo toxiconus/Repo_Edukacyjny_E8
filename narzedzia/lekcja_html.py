@@ -26,6 +26,13 @@ m = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(m)
 sys.path.insert(0, os.path.join(REPO, 'narzedzia'))
 import opis_wizualizacji as OPIS
 
+_leaf = m.leaf
+def _leaf_wciecie(blk, ctx):   # lista zaczynająca się od wcięcia (np. po akapicie) — zdejmij wspólne wcięcie
+    ind = len(blk[0]) - len(blk[0].lstrip(' '))
+    if ind: blk = [x[ind:] if not x[:ind].strip() else x for x in blk]
+    return _leaf(blk, ctx)
+m.leaf = _leaf_wciecie
+
 PRZEDMIOTY = {'che': 'Chemia', 'bio': 'Biologia', 'pol': 'Język polski', 'ang': 'Język angielski', 'oli': 'Olimpiada'}
 VIZ = {'bio': os.path.join(REPO, 'biologia', 'bio', 'szablon', 'bio-viz.js')}   # biblioteki grafik przedmiotów
 
@@ -84,8 +91,30 @@ def slowka(titles, body):
     return '<div class="table-wrap"><table class="lk-vocab"><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (
         ''.join('<th>%s</th>' % m.inline(h) for h in hd), rows)
 
+def poziomy(L):
+    """Ujednolica nagłówki: tytuł „# …” na górze znika (jest w nagłówku lekcji), najpłytszy poziom
+    występujący ≥3 razy (lub najgłębszy obecny) staje się sekcją „##”, głębsze — „###”/„####”."""
+    kod = False; idx = []
+    for i, ln in enumerate(L):
+        if ln.strip().startswith('```'): kod = not kod
+        mm = re.match(r'(#{1,4}) (\S.*)$', ln) if not kod else None
+        if mm: idx.append((i, len(mm.group(1))))
+    if not idx: return L
+    lv = [l for _, l in idx]
+    if lv.count(1) == 1 and idx[0][1] == 1:   # tytuł
+        L[idx[0][0]] = ''; idx = idx[1:]; lv = lv[1:]
+    if not idx: return L
+    sec = next((k for k in range(1, 5) if lv.count(k) >= 3), max(lv))
+    for i, l in idx:
+        nowy = 2 if l <= sec else min(4, 2 + l - sec)
+        L[i] = '#' * nowy + L[i][l:]
+    return L
+
 def preprocess(text, p):
-    L = text.split('\n'); out = []; i = 0; nsec = 0
+    L = text.split('\n'); fm = 0
+    if L and L[0].strip() == '---':   # front matter zostaje bez zmian
+        fm = next((k for k in range(1, len(L)) if L[k].strip() == '---'), 0) + 1
+    out = L[:fm]; L = poziomy(L[fm:]); i = 0; nsec = 0
     while i < len(L):
         st = L[i].strip()
         if st.startswith('@viz '):
@@ -103,14 +132,14 @@ def preprocess(text, p):
                  'cytat': lambda: cytat(parts[0] if parts else '', body), 'dialog': lambda: dialog(body),
                  'slowka': lambda: slowka(parts, body)}[kind]()
             out += ['::: html', h, ':::']; i = j + 1; continue
-        if re.match(r'# \S', st):   # tytuł z treści — jest już w nagłówku lekcji
-            i += 1; continue
         if st.startswith('## ') and '{#' not in st:   # automatyczna kotwica + numer
             nsec += 1; t = st[3:].strip()
             if ' | ' not in t:
                 mn = re.match(r'(\d+[A-Za-z]?(?:\.\d+)*)\.?\s+(.*)$', t)
                 t = '%s | %s' % (mn.group(1), mn.group(2)) if mn else t
             out.append('## %s {#s%d}' % (t, nsec)); i += 1; continue
+        if re.fullmatch(r'(-{3,}|\*{3,}|_{3,})', st):   # linia pozioma
+            out += ['::: html', '<hr class="lk-hr"/>', ':::']; i += 1; continue
         out.append(L[i]); i += 1
     s = '\n'.join(out)
     return re.sub(r'\[\[([^\]:\[]+)\]\]', r'[[contest:\1]]', s)   # [[LKO]] → plakietka
@@ -166,13 +195,17 @@ def main():
     ap.add_argument('pliki', nargs='+')
     a = ap.parse_args()
     if not a.bez_opisu: OPIS.egzekwuj(a.pliki)
+    bledy = 0
     for f in a.pliki:
-        meta, doc = render(f, a.przedmiot)
+        try: meta, doc = render(f, a.przedmiot)
+        except Exception as e:
+            bledy += 1; print('BŁĄD', f, '—', type(e).__name__, e); continue
         out = a.out or os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(f))), 'html')
         os.makedirs(out, exist_ok=True)
         dst = os.path.join(out, os.path.splitext(os.path.basename(f))[0] + '.html')
         open(dst, 'w', encoding='utf-8').write(doc)
         print('ok', os.path.relpath(dst, REPO), len(doc) // 1024, 'KB')
+    if bledy: sys.exit(1)
 
 if __name__ == '__main__':
     main()
