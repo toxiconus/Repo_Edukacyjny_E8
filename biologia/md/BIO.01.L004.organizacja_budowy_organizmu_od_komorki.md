@@ -82,6 +82,266 @@ Ich budowa jest związana z funkcją: neuron musi odbierać i przekazywać infor
 # LEKCJA KANONICZNA — Organizacja budowy organizmu: od komórki do organizmu
 
 ## 1. Pytanie przewodnie
+Jak organizm przechodzi od pojedynczych komórek do współpracujących tkanek, narządów i układów — i dlaczego ten schemat nie pasuje w identyczny sposób do wszystkich organizmów?
+
+## 2. Cele lekcji (+ 80/20)
+Po lekcji uczeń potrafi:
+- uporządkować poziomy organizacji ciała typowego organizmu wielokomórkowego;
+- odróżnić komórkę, tkankę, narząd i układ narządów;
+- wyjaśnić związek między budową komórki a jej funkcją;
+- wyjaśnić, dlaczego narząd zwykle składa się z kilku rodzajów tkanek;
+- podać przykłady współpracy układów narządów;
+- wskazać, dlaczego nie każdy organizm ma tkanki, narządy i układy narządów;
+- odróżnić obserwację od wniosku oraz zauważyć ograniczenia schematu.
+
+**Rdzeń 80/20:** komórka jest podstawową jednostką życia; wyspecjalizowane komórki współpracują; tkanki budują narządy, narządy współdziałają w układach; ten porządek dotyczy przede wszystkim złożonych organizmów wielokomórkowych, a nie wszystkich organizmów bez wyjątku.
+
+## 3. Co trzeba wiedzieć wcześniej (kompas) — [PRZYPOMNIENIE]
+Przypomnij sobie:
+- komórka jest podstawową jednostką budowy i funkcjonowania organizmów;
+- komórki zawierają różne struktury, których budowa wiąże się z funkcją;
+- organizmy pobierają materię i energię, reagują na bodźce i utrzymują warunki potrzebne do życia;
+- DNA przechowuje informację genetyczną, a aktywność genów wpływa na to, jakie białka komórka wytwarza.
+
+Jeżeli nie pamiętasz organelli, wróć do lekcji o budowie komórki. Ta lekcja nie zastępuje szczegółowego opisu organelli.
+
+## 4. Zacznij od problemu (hipoteza ucznia)
+**Problem:** Serce jest zbudowane z komórek, ale nie jest po prostu „dużą komórką”. Jakie poziomy organizacji można wskazać w jego budowie i dlaczego potrzebne są różne typy komórek?
+
+**Hipoteza:** Zapisz 1–2 zdania. Po lekturze sprawdź, czy uwzględniasz współpracę komórek i obecność różnych tkanek.
+
+## 5. Ściąga — poziom podstawowy (+ mnemotechniki) — [PODSTAWA E8]
+### Schemat dla typowego organizmu wielokomórkowego
+`komórka → tkanka → narząd → układ narządów → organizm`
+
+- **Komórka** — podstawowa jednostka budowy i funkcjonowania organizmu.
+- **Tkanka** — zespół komórek oraz, zależnie od rodzaju tkanki, składników międzykomórkowych, które współpracują przy określonych zadaniach.
+- **Narząd** — część organizmu zbudowana zwykle z kilku rodzajów tkanek, które współpracują w wykonywaniu określonych funkcji.
+- **Układ narządów** — grupa narządów współpracujących w realizacji większych zadań organizmu.
+- **Organizm** — całość zdolna do wykonywania procesów życiowych.
+
+**Przykład człowieka:** komórka mięśniowa → tkanka mięśniowa → serce (narząd) → układ krwionośny → organizm.
+
+**Ważne ograniczenie:** nie każdy organizm ma tkanki, narządy i układy narządów. Bakteria jest jednokomórkowa. Wiele organizmów wielokomórkowych ma prostszą organizację niż człowiek. Schemat jest użytecznym modelem, a nie uniwersalną listą struktur występujących u wszystkich organizmów.
+
+**Nie myl:** organellum to struktura wewnątrz komórki, a narząd to część organizmu zbudowana z tkanek. Nie są to synonimy.
+
+## 6. Wyjaśnienie od podstaw — [PODSTAWA E8]
+
+### 6A. Dlaczego organizacja jest wielopoziomowa?
+W złożonym organizmie pojedyncza komórka nie wykonuje samodzielnie wszystkich zadań w skali całego ciała. Jedne komórki przewodzą informacje, inne kurczą się, transportują substancje, chronią powierzchnię ciała albo pobierają wodę. Współpraca komórek pozwala podzielić pracę. Dzięki temu różne procesy mogą zachodzić równocześnie, a cały organizm funkcjonuje jako zintegrowana całość.
+
+Specjalizacja ma swoją cenę: komórki zależą od siebie i od warunków w organizmie. Na przykład komórki mięśnia sercowego potrzebują tlenu i substancji odżywczych dostarczanych przez krew. Nie oznacza to, że każda komórka ma identyczną budowę lub aktywność.
+
+### 6B. Krok po kroku
+1. **Komórki** wykonują określone zadania. Mogą różnić się kształtem, rozmiarem, liczbą organelli i aktywnością genów.
+2. **Tkanka** powstaje tam, gdzie komórki i składniki międzykomórkowe współpracują. Definicja „komórki podobne do siebie” jest przydatnym skrótem, ale nie obejmuje całej różnorodności tkanek.
+3. **Narząd** zawiera różne tkanki. Serce potrzebuje m.in. tkanki mięśniowej do skurczów, tkanki łącznej do podparcia, nabłonka do wyściełania powierzchni i elementów nerwowych do regulacji.
+4. **Układ narządów** łączy działanie kilku narządów. W układzie krwionośnym serce napędza przepływ krwi, a naczynia umożliwiają jej transport.
+5. **Organizm** jest całością, w której układy współdziałają. Układ krwionośny nie zastępuje oddechowego: transportuje gazy, a wymiana gazowa zachodzi m.in. w płucach.
+
+Strzałka na schemacie oznacza relację organizacyjną „współtworzy poziom bardziej złożony”, a nie to, że pojedyncza komórka wprost i natychmiast zmienia się w tkankę albo narząd.
+
+### 6C. Przykład prowadzony: droga od komórki do organizmu
+**Polecenie:** Uporządkuj: organizm człowieka, serce, komórka mięśnia sercowego, układ krwionośny, tkanka mięśniowa serca.
+
+**Krok 1:** najmniejszą z wymienionych struktur jest komórka mięśnia sercowego.  
+**Krok 2:** współpracujące komórki tego rodzaju tworzą tkankę mięśniową serca.  
+**Krok 3:** tkanka mięśniowa wraz z innymi tkankami współtworzy narząd — serce.  
+**Krok 4:** serce współpracuje z naczyniami krwionośnymi, tworząc układ krwionośny.  
+**Krok 5:** układ jest częścią całego organizmu.
+
+**Odpowiedź:** komórka mięśnia sercowego → tkanka mięśniowa serca → serce → układ krwionośny → organizm człowieka.
+
+### 6D. Budowa a funkcja — przykłady
+| Typ komórki | Przykładowe przystosowanie | Funkcja |
+|---|---|---|
+| neuron | wypustki umożliwiające łączenie się z innymi komórkami | odbieranie i przekazywanie sygnałów |
+| komórka mięśniowa | białka kurczliwe | skurcz |
+| dojrzały erytrocyt ssaka | kształt sprzyjający wymianie gazów; brak jądra | transport tlenu |
+| komórka włośnikowa korzenia | długa wypustka zwiększająca powierzchnię kontaktu z glebą | pobieranie wody i jonów mineralnych |
+| komórka szparkowa | zmiana turgoru umożliwia zmianę szerokości szparki | regulacja wymiany gazowej i utraty wody |
+
+To przykłady, a nie zasada, że każdą funkcję można przypisać tylko jednemu typowi komórki.
+
+### 6E. Czy wszystkie komórki organizmu mają takie samo DNA?
+Wiele komórek ciała danego człowieka zawiera zasadniczo ten sam zestaw informacji genetycznej, ale różne geny są aktywne w różnym stopniu. Dlatego neuron i komórka mięśniowa mogą wytwarzać inne zestawy białek i pełnić inne funkcje. Istnieją wyjątki, np. dojrzałe erytrocyty ssaków nie mają jądra, a niektóre komórki nabywają zmiany DNA.
+
+**Wniosek:** różnica funkcji nie oznacza automatycznie różnicy całego DNA; ważne jest także to, które geny są aktywne.
+
+### 6F. Rośliny a zwierzęta
+U roślin także występują komórki, tkanki i organy, np. korzeń, łodyga i liść. Organy rośliny pełnią różne funkcje, a ich działanie jest skoordynowane. Nie należy jednak mechanicznie przenosić nazw układów narządów człowieka na rośliny. U bakterii nie ma tkanek ani narządów w takim znaczeniu jak u człowieka.
+
+## 7. Poziom ambitny — [MASTER]
+### 7A. Nie każda grupa organizmów ma tę samą organizację
+Wielokomórkowość nie oznacza automatycznie obecności tkanek i narządów. W biologii rozróżnia się m.in. organizmy jednokomórkowe, organizmy wielokomórkowe o prostej budowie oraz organizmy o wyraźnie zróżnicowanych tkankach i narządach. O klasyfikacji decyduje organizacja biologiczna, nie sam rozmiar organizmu.
+
+### 7B. Tkanka to nie tylko „grupa identycznych komórek”
+Komórki w tkance mogą nie być zupełnie identyczne. Istotne jest ich współdziałanie, pochodzenie i organizacja, a także obecność substancji międzykomórkowej. Dlatego prosta definicja szkolna jest punktem wyjścia, nie pełnym opisem wszystkich tkanek.
+
+### 7C. Narząd jest strukturą funkcjonalną
+Narząd rozpoznajemy nie tylko po kształcie, ale także po tym, że tworzą go różne tkanki współdziałające w realizacji określonej funkcji. Samo skupisko komórek nie musi być narządem.
+
+## 8. Poziom zaawansowany — [ZAAWANSOWANY]
+[[exam:KONKURS]] Porównaj organizację kolonijną, tkankową i narządową. Nie zakładaj, że każda kolonia komórek jest tkanką. W uzasadnieniu wskaż kryteria, np. stopień specjalizacji komórek, ich wzajemną zależność, koordynację i organizację przestrzenną.
+
+**Pytanie problemowe:** Czy wzrost liczby komórek zawsze oznacza większą złożoność organizmu?  
+**Kierunek odpowiedzi:** nie. Liczba komórek jest tylko jednym z kryteriów. Ważne są także ich specjalizacja, współpraca i organizacja.
+
+## 9. Klinika błędów — [PODSTAWA E8] / [TRENING]
+| Błąd | Co jest nie tak? | Poprawna reguła |
+|---|---|---|
+| Każdy organizm ma narządy. | Bakterie są jednokomórkowe, a wiele organizmów wielokomórkowych nie ma narządów podobnych do ludzkich. | Poziomy organizacji zależą od grupy organizmów. |
+| Narząd składa się tylko z jednego rodzaju tkanki. | Zwykle współpracuje w nim kilka rodzajów tkanek. | Narząd jest strukturą złożoną. |
+| Tkanka to zawsze zbiór identycznych komórek. | Komórki i składniki międzykomórkowe mogą być zróżnicowane. | Kluczowa jest organizacja i współpraca. |
+| Organellum i narząd oznaczają to samo. | Organellum jest częścią komórki; narząd jest częścią organizmu. | Rozróżniaj poziom komórkowy i poziom całego organizmu. |
+| Komórki o różnych funkcjach zawsze mają zupełnie inne DNA. | Wiele komórek ma zasadniczo ten sam genom, ale różną aktywność genów. | Budowa i funkcja zależą m.in. od ekspresji genów. |
+| Strzałka oznacza, że komórka od razu zamienia się w narząd. | Pominięto poziomy pośrednie i procesy rozwoju. | Strzałki oznaczają zależności organizacyjne. |
+| Każdy układ narządów działa niezależnie. | Układy są wzajemnie zależne. | Organizm funkcjonuje dzięki współpracy układów. |
+
+**Klinika 2.0 — popraw zdanie:** „Serce to tkanka, ponieważ zbudowane jest z komórek mięśniowych”.  
+**Poprawa:** Serce jest narządem, ponieważ oprócz tkanki mięśniowej zawiera także inne tkanki, które wspólnie umożliwiają jego działanie.
+
+## 10. Obserwacja / model
+`komórka → tkanka → narząd → układ narządów → organizm`
+
+@opis Na schemacie pokazano pięć poziomów organizacji typowego organizmu wielokomórkowego, od komórki do całego organizmu. Strzałki oznaczają, że niższy poziom współtworzy poziom bardziej złożony; nie pokazują skali, czasu ani wszystkich etapów rozwoju.
+
+**Model do wykonania:** narysuj pięć pól. W każdym wpisz przykład człowieka: komórka mięśnia sercowego, tkanka mięśniowa serca, serce, układ krwionośny, człowiek. Połącz pola strzałkami i pod każdą strzałką dopisz, jaka relacja zachodzi.
+
+**Obserwacja:** w narządzie i układzie współpracuje wiele różnych struktur.  
+**Wniosek:** większy poziom organizacji powstaje dzięki współdziałaniu poziomów niższych.  
+**Ograniczenie modelu:** schemat nie przedstawia wszystkich typów komórek, wszystkich tkanek ani wyjątków występujących u różnych organizmów.
+
+## 11. Ćwiczenia (11A–11D) — [TRENING]
+### 11A. Uporządkuj
+Ułóż od poziomu najmniejszego do największego: serce, komórka mięśnia sercowego, organizm człowieka, tkanka mięśniowa serca, układ krwionośny.
+
+### 11B. Wyjaśnij
+Dlaczego serce jest narządem, a nie tkanką? W odpowiedzi użyj słów „różne tkanki” i „współpraca”.
+
+### 11C. Zastosuj
+Podaj przykład współpracy dwóch układów narządów i opisz, co każdy z nich wnosi do procesu.
+
+### 11D. [[exam:KONKURS]]
+Wyjaśnij, dlaczego zdanie „każdy organizm ma układ narządów” jest fałszywe. Podaj dwa argumenty odnoszące się do różnych poziomów organizacji.
+
+### 11E. Znajdź błąd
+Uczeń twierdzi: „Neuron ma inny kształt niż komórka mięśniowa, więc musi mieć całkiem inne DNA”. Popraw jego rozumowanie.
+
+### 11F. Przenieś wiedzę
+Porównaj komórkę włośnikową korzenia i neuron. Wskaż, jak budowa każdej z nich wspiera jej funkcję, ale nie twierdź, że podobieństwo lub różnica kształtu sama w sobie dowodzi podobieństwa lub różnicy DNA.
+
+## 12. Odpowiedzi i sposób oceniania
+**11A:** komórka mięśnia sercowego → tkanka mięśniowa serca → serce → układ krwionośny → organizm człowieka.
+
+**11B:** Serce jest narządem, bo tworzą je różne tkanki, m.in. mięśniowa, łączna, nabłonkowa i nerwowa, współpracujące przy pompowaniu krwi i regulacji pracy serca.
+
+**11C — przykładowo:** układ oddechowy umożliwia wymianę gazową w płucach, a układ krwionośny transportuje tlen i dwutlenek węgla. Możliwe są też inne poprawne przykłady, np. układ pokarmowy i krwionośny.
+
+**11D:** bakteria jest organizmem jednokomórkowym i nie ma układu narządów; ponadto wielokomórkowość nie zawsze oznacza występowanie narządów i układów narządów.
+
+**11E:** Różne funkcje komórek mogą wynikać z odmiennej aktywności genów i wytwarzanych białek. Wiele komórek ciała ma zasadniczo ten sam zestaw DNA; sam kształt nie dowodzi, że DNA jest całkiem inne.
+
+**11F:** Włośnik ma wydłużoną wypustkę zwiększającą powierzchnię pobierania wody i jonów; neuron ma wypustki umożliwiające odbieranie i przekazywanie sygnałów.
+
+**Ocenianie:** w zadaniu „wyjaśnij” oceniaj zarówno poprawność faktu, jak i związek przyczynowy. Samo podanie definicji bez uzasadnienia nie jest pełną odpowiedzią, jeśli polecenie wymaga wyjaśnienia.
+
+## 13. Fiszki — [POWTÓRKA]
+1. **Komórka** — podstawowa jednostka budowy i funkcjonowania organizmów.
+2. **Tkanka** — zorganizowany zespół współpracujących komórek i, zależnie od rodzaju, składników międzykomórkowych.
+3. **Narząd** — struktura zbudowana zwykle z kilku rodzajów tkanek.
+4. **Układ narządów** — narządy współpracujące przy realizacji większych zadań organizmu.
+5. **Specjalizacja komórki** — przystosowanie budowy i aktywności do określonej funkcji.
+6. **Ekspresja genów** — wykorzystywanie informacji z określonych genów, m.in. do wytwarzania RNA i białek.
+7. **Organellum** — struktura wewnątrz komórki, nie synonim narządu.
+8. **Ograniczenie schematu** — nie wszystkie organizmy mają wszystkie poziomy organizacji przedstawione w modelu człowieka.
+
+## 14. Test końcowy (3+2+2+1) — [TRENING]
+### Podstawowe
+1. Podaj podstawową jednostkę budowy i funkcjonowania organizmu.
+2. Czym różni się tkanka od narządu?
+3. Czy bakteria ma układ narządów? Uzasadnij krótko.
+
+### Zastosowanie
+4. Podaj przykład specjalizacji komórki i wyjaśnij związek budowy z funkcją.
+5. Wyjaśnij, dlaczego układ oddechowy i krwionośny współpracują.
+
+### Analiza
+6. Oceń zdanie: „Każda komórka człowieka ma inne DNA, ponieważ pełni inną funkcję”.
+7. Dlaczego schemat komórka → tkanka → narząd → układ narządów nie opisuje jednakowo wszystkich organizmów?
+
+### Transfer
+8. W jednym krótkim akapicie wyjaśnij, jak organizacja na różnych poziomach pomaga organizmowi wykonywać procesy życiowe.
+
+**Klucz odpowiedzi:**
+1. Komórka.
+2. Tkanka jest zespołem współpracujących komórek i składników międzykomórkowych; narząd jest strukturą złożoną zwykle z kilku tkanek.
+3. Nie; bakteria jest jednokomórkowa.
+4. Np. włośnik ma wydłużoną wypustkę, która zwiększa powierzchnię pobierania wody i jonów.
+5. Układ oddechowy umożliwia wymianę gazową, a krwionośny transportuje gazy.
+6. Fałsz; wiele komórek ma zasadniczo ten sam genom, ale różni się aktywnością genów; istnieją wyjątki.
+7. Organizmy różnią się organizacją; część jest jednokomórkowa, a część wielokomórkowych nie ma narządów i układów.
+8. Odpowiedź powinna połączyć co najmniej dwa poziomy i pokazać ich współpracę.
+
+## 15. Checklista
+- [ ] Umiem podać i wyjaśnić kolejność poziomów organizacji.
+- [ ] Odróżniam komórkę, tkankę, narząd, układ narządów i organellum.
+- [ ] Wyjaśniam związek budowy komórki z funkcją.
+- [ ] Wiem, dlaczego narząd zwykle zawiera kilka tkanek.
+- [ ] Podaję przykład współpracy układów narządów.
+- [ ] Nie zakładam, że wszystkie organizmy mają identyczne poziomy organizacji.
+- [ ] Potrafię wskazać ograniczenie prostego schematu.
+
+## 16. Mapa pojęć
+**Pojęcie centralne:** organizacja budowy organizmu.
+
+Połącz z nim: komórka, specjalizacja, tkanka, narząd, układ narządów, organizm, współpraca, budowa i funkcja. Przy każdej strzałce użyj czasownika, np. „współtworzy”, „specjalizuje się”, „zawiera”, „współpracuje”, „umożliwia”.
+
+## 17. Co dalej?
+Temat łączy się z budową komórki, transportem przez błonę, oddychaniem komórkowym, fotosyntezą oraz funkcjonowaniem układów narządów. Przy następnych lekcjach sprawdzaj, na którym poziomie zachodzi opisywany proces: w organellum, komórce, tkance, narządzie czy całym organizmie.
+
+## 18. Słownik
+- **Komórka:** podstawowa jednostka budowy i funkcjonowania organizmów.
+- **Tkanka:** zorganizowany zespół współpracujących komórek i składników międzykomórkowych.
+- **Narząd:** część organizmu złożona zwykle z kilku rodzajów tkanek.
+- **Układ narządów:** współpracujące narządy realizujące większe zadania.
+- **Specjalizacja:** przystosowanie budowy i działania komórki do określonej funkcji.
+- **Organellum:** struktura komórkowa pełniąca określoną funkcję.
+- **Ekspresja genów:** wykorzystywanie informacji zapisanej w genach.
+- **Model biologiczny:** uproszczone przedstawienie rzeczywistości, które pomaga zrozumieć wybrane zależności, ale nie pokazuje wszystkiego.
+
+## 19. Dodatek zaawansowany — [ZAAWANSOWANY]
+[[exam:KONKURS]] Przy porównywaniu organizacji kolonijnej, tkankowej i narządowej analizuj stopień specjalizacji komórek, ich wzajemną zależność, koordynację i organizację przestrzenną. Nie utożsamiaj dużej liczby komórek z wysokim stopniem organizacji.
+
+**Uwaga metodologiczna:** jeśli w zadaniu pojawiają się dane liczbowe lub wyniki doświadczenia, oddziel dane od interpretacji. Nie traktuj schematu dydaktycznego jako pełnego opisu mechanizmu rozwoju organizmu.
+
+## 20. Jak się uczyć tej lekcji?
+1. Przeczytaj sekcję 5 i zamknij materiał.
+2. Odtwórz z pamięci schemat pięciu poziomów.
+3. Wyjaśnij własnymi słowami, dlaczego serce jest narządem.
+4. Rozwiąż zadania 11A–11D bez zaglądania do klucza.
+5. Sprawdź nie tylko odpowiedzi, ale i uzasadnienia.
+6. Wróć do fiszek po 1, 3 i 7 dniach; na końcu spróbuj podać przykład spoza człowieka.
+
+## 21. Połączenia międzyprzedmiotowe
+- **Chemia:** cząsteczki i reakcje chemiczne są podstawą procesów komórkowych; budowa materii nie jest jednak tym samym poziomem co tkanka czy narząd.
+- **Fizyka:** dyfuzja, przepływ, ciśnienie i energia pomagają wyjaśniać transport substancji i pracę narządów.
+- **Matematyka:** porządkowanie poziomów, odczytywanie danych i rozpoznawanie zależności.
+- **Język polski:** precyzyjne definiowanie pojęć oraz odróżnianie obserwacji od wniosku.
+
+## 22. Zadania z życia codziennego
+Podczas wysiłku mięśnie potrzebują tlenu i substancji odżywczych. Układ oddechowy umożliwia wymianę gazową, układ pokarmowy dostarcza składników odżywczych, układ krwionośny transportuje substancje, a układ nerwowy pomaga koordynować ruch. To przykład, że układy narządów nie działają jako odizolowane części.
+
+**Zadanie:** wybierz dowolną codzienną czynność, np. chodzenie po schodach, i wskaż co najmniej trzy współpracujące układy. Przy każdym napisz, jaki jest jego wkład.
+
+
+## ARCHIWUM — poprzednia wersja kanoniczna przed audytem
+Poniżej zachowano poprzednią wersję sekcji kanonicznej w całości, aby nie utracić żadnej wcześniejszej treści. W razie rozbieżności merytorycznej należy korzystać z poprawionej wersji kanonicznej powyżej.
+
+# LEKCJA KANONICZNA — Organizacja budowy organizmu: od komórki do organizmu
+
+## 1. Pytanie przewodnie
 Jak współpracują komórki, tkanki, narządy i układy narządów?
 
 ## 2. Cele lekcji (+ 80/20)
@@ -202,3 +462,35 @@ Gdy mięśnie pracują, potrzebują tlenu i substancji odżywczych: układ oddec
 - Treść sprawdzono roboczo pod kątem spójności pojęć, odpowiedzi do zadań i oznaczeń poziomu.
 - Każdy schemat tekstowy ma linię `@opis` opisującą zawartość i główny wniosek.
 - **Ograniczenie:** to redakcyjno-merytoryczna kontrola robocza, nie niezależna recenzja nauczyciela biologii. Dane liczbowe lub mechanizmy wykraczające poza E8 należy weryfikować osobno przed publikacją.
+
+## AUDYT BIO — GPT-6 — 2026-10-09
+
+### 1. Wynik audytu wejściowego
+- Plik zawierał zachowany szkic oraz krótką wersję kanoniczną 1–22. Materiał był użyteczny, ale zbyt skrótowy jak na docelowy podręcznik; kilka sekcji powtarzało treść bez rozwijania rozumowania.
+- Cel lekcji zawierał błąd gramatyczny („uporządkujesz” w liście celów dla ucznia); poprawiono na „uporządkować”.
+- Definicja tkanki jako grupy komórek o podobnej budowie i funkcji była użyteczna jako uproszczenie, ale zbyt wąska bez wzmianki o składnikach międzykomórkowych i zróżnicowaniu tkanek.
+- Schemat poziomów organizacji wymagał wyraźniejszego zaznaczenia, że dotyczy typowego organizmu wielokomórkowego i nie jest uniwersalny dla wszystkich organizmów.
+- Rozróżnienie organellum/narząd, relacja budowa–funkcja, współpraca układów i ograniczenia modelu wymagały pełniejszego objaśnienia.
+- Zadania i klucz były krótkie; dodano stopniowanie, zadania transferowe oraz uzasadnienia odpowiedzi.
+- Poprzednią wersję kanoniczną zachowano w archiwum w tym samym pliku. Nie usunięto pierwotnego szkicu.
+
+### 2. Co poprawiono i uzupełniono
+- Rozbudowano wyjaśnienia „dlaczego” i procedurę przechodzenia przez poziomy organizacji.
+- Dodano prowadzony przykład, tabelę specjalizacji komórek, porównanie roślin i zwierząt oraz omówienie aktywności genów.
+- Doprecyzowano definicje tkanki, narządu i układu narządów; wyraźnie odróżniono organellum od narządu.
+- Rozbudowano klinikę błędów, model, ćwiczenia, klucz odpowiedzi, fiszki, test, słownik i zadanie z życia codziennego.
+- Dodano ograniczenia modelu i wyjaśniono, że strzałki nie przedstawiają dosłownej, natychmiastowej przemiany jednej struktury w drugą.
+- Zachowano architekturę sekcji 1–22 i kod lekcji L004.
+- Sprawdzono zgodność odpowiedzi z treścią oraz poprawność najważniejszych zależności biologicznych na poziomie szkolnym.
+
+### 3. Kontrola końcowa
+- [x] Sekcje 1–22 obecne.
+- [x] Klucz odpowiedzi odpowiada nowym ćwiczeniom i testowi.
+- [x] Schemat ma opis `@opis`.
+- [x] Poziom podstawowy jest oddzielony od rozszerzenia.
+- [x] Zachowano wcześniejszą wersję kanoniczną i szkic.
+- [x] Brak celowo dodanych niebezpiecznych doświadczeń.
+- [ ] Nie przeprowadzono walidacji w docelowym generatorze HTML ani niezależnej recenzji nauczyciela biologii.
+- [ ] Nie porównano pliku z pełną, aktualną podstawą programową ani z pozostałymi lekcjami repozytorium; powiązania między lekcjami należy sprawdzić podczas audytu całego zestawu.
+
+**Status po audycie:** L004 — merytorycznie rozbudowana wersja robocza po audycie wewnętrznym; wymaga późniejszej walidacji HTML i kontroli spójności z sąsiednimi lekcjami.

@@ -65,7 +65,7 @@ Po lekcji uczeń:
 - opisuje replikację jako **semikonserwatywną**,
 - wskazuje, że zachodzi **przed** podziałem (faza S),
 - łączy replikację z podwojeniem chromatyd (most do L012),
-- (ambitny) uzasadnia, dlaczego semikonserwatywność gwarantuje wierność kopii,
+- (ambitny) uzasadnia, dlaczego semikonserwatywność pomaga wiernie kopiować DNA, ale nie eliminuje wszystkich błędów,
 - (zaawansowany) zna rolę helikazy i polimerazy DNA oraz most do mutacji.
 
 ### Zasada 80/20
@@ -104,7 +104,7 @@ Jak skopiować DNA wiernie — tak, by błędy były jak najrzadsze?
 
 **Wynik:** 2 identyczne cząsteczki DNA → 2 chromatydy siostrzane (L012).
 
-**Kiedy:** przed mitozą **i** mejozą (faza S cyklu komórkowego).
+**Kiedy:** w fazie S przed podziałem. Przed mejozą DNA kopiuje się raz, przed mejozą I; pomiędzy mejozą I i II nie zachodzi kolejna faza S i DNA nie jest ponownie replikowane.
 
 ### Mnemotechniki
 | # | Mnemotechnika | Znaczenie |
@@ -207,7 +207,7 @@ L011 (DNA + komplementarność) → L012 (chromosom + chromatydy)
 | Replikacja = podział | replikacja ≠ mitoza | różne procesy |
 | Jedna nowa cząsteczka | dwie cząsteczki | semikonserwatywność |
 | A z C | A–T, C–G | komplementarność |
-| Replikacja tylko w mejozie | przed mitozą **i** mejozą | faza S |
+| Replikacja tylko w mejozie | przed mitozą oraz przed mejozą I | faza S; bez ponownej replikacji między mejozą I i II |
 | Po replikacji 92 chromosomy | 46 chromosomów, 92 chromatydy | most do L012 |
 
 ### Klinika 2.0
@@ -223,7 +223,7 @@ L011 (DNA + komplementarność) → L012 (chromosom + chromatydy)
 **Błąd 2:** „Replikacja to to samo co mitoza.”
 - **Znajdź:** Mylenie procesów.
 - **Popraw:** Replikacja = kopiowanie DNA; mitoza = podział komórki.
-- **Reguła:** Replikacja poprzedza podział (faza S → mitoza/mejoza).
+- **Reguła:** Replikacja poprzedza mitozę i mejozę I (faza S); między mejozą I i II nie powtarza się.
 - **Dlaczego:** Bez skopiowanego DNA komórki potomne nie dostałyby pełnej informacji.
 - **Podobne:** Faza S vs faza M.
 - **Pułapka:** „Komórka się dzieli, więc DNA się kopiuje w trakcie podziału” — nie, wcześniej.
@@ -270,7 +270,7 @@ Wynik: 2 cząsteczki, każda = stara + nowa.
 7. Popraw: „Replikacja = mitoza”.
 
 **C. Ambitne**  
-8. Dlaczego semikonserwatywność gwarantuje wierność?  
+8. Dlaczego semikonserwatywność pomaga zachować informację, ale nie gwarantuje bezbłędności?  
 9. Co się stanie, jeśli wstawiona zostanie zła zasada?  
 10. Jak replikacja łączy się z liczbą chromatyd (L012)?
 
@@ -336,7 +336,7 @@ Wynik: 2 cząsteczki, każda = stara + nowa.
 3. (P) Co oznacza semikonserwatywna?  
 4. (T) Uzupełnij: `G–A–T–C`.  
 5. (T) Popraw: „Replikacja = mitoza”.  
-6. (A) Dlaczego semikonserwatywność gwarantuje wierność?  
+6. (A) Dlaczego semikonserwatywność pomaga zachować informację, ale nie gwarantuje bezbłędności?  
 7. (A) Jak replikacja łączy się z chromatydami?  
 8. (Z) Matryca ATGC — wynik po replikacji. Czy model konserwatywny byłby równie dobry?
 
@@ -481,3 +481,31 @@ Wykład v3.8 + audyt v4.2 **zostaje**. Doklejono Meselsona–Stahla, widełki, O
 - Zachowano dotychczasową treść i kody lekcji; nie usuwano wcześniejszych wersji ani banków zadań.
 - Zwrócono uwagę na rozróżnienie modelu od rzeczywistości oraz na to, że schematy przepływu pokazują uproszczone relacje.
 - **Ograniczenie:** nie jest to pełna niezależna walidacja wszystkich danych i kluczy zadań; przed publikacją wymagane jest sprawdzenie merytoryczne przez nauczyciela biologii.
+
+
+## AUDYT GENETYKI — doprecyzowanie pojęć i typowych pułapek (2026-10-09)
+
+### Co naprawdę oznacza semikonserwatywność?
+Semikonserwatywność opisuje **sposób rozmieszczenia nici** po replikacji: każda potomna cząsteczka DNA zawiera jedną nić pochodzącą z cząsteczki wyjściowej i jedną nić nowo zsyntetyzowaną. Nie oznacza to, że każda kopia jest automatycznie idealna. Wierność zależy także od komplementarnego dobierania nukleotydów, korekty części pomyłek przez polimerazę DNA oraz systemów naprawy DNA. Błąd, który nie zostanie naprawiony, może utrwalić się jako mutacja.
+
+### Rozwiązywanie zadań z sekwencją — algorytm
+1. Ustal, czy podano nić DNA, czy RNA. W DNA używamy A, T, C, G; w RNA zamiast T występuje U.
+2. Dobierz pary: A–T i C–G.
+3. Jeśli zadanie podaje kierunki 5′ i 3′, pamiętaj, że nici są antyrównoległe. Sam zapis liter bez kierunków wystarcza tylko w prostych zadaniach szkolnych.
+4. Odróżnij **nić komplementarną** od całego wyniku replikacji. Wynikiem są dwie dwuniciowe cząsteczki DNA, a nie tylko jedna dopisana sekwencja.
+5. Przy odpowiedzi wyjaśnij, skąd bierze się nowa nić: jest syntetyzowana na podstawie starej nici matrycowej.
+
+### Przykład z pełnym rozumowaniem
+Dana nić: 5′–A G T C–3′. Nić komplementarna, zapisana antyrównolegle, to 3′–T C A G–5′. W szkolnym zapisie bez kierunków można podać sekwencję komplementarną `TCAG`, ale zapis z końcami pokazuje poprawną orientację. Po replikacji powstają dwie dwuniciowe cząsteczki; każda zawiera jedną nić starą i jedną nową.
+
+### Zadania kontrolne z kluczem
+1. **Czy semikonserwatywność wyklucza mutacje?** Nie. Opisuje sposób kopiowania nici; pomyłki mogą się zdarzyć i nie zawsze zostaną naprawione.
+2. **Czy DNA kopiuje się ponownie między mejozą I a II?** Nie. DNA replikuje się przed mejozą I, a następnie zachodzą dwa podziały mejotyczne.
+3. **Dlaczego po replikacji liczba chromosomów zwykle się nie podwaja?** Liczbę chromosomów liczy się według liczby centromerów. Każdy chromosom składa się wtedy z dwóch chromatyd siostrzanych.
+4. **Czym różni się replikacja od transkrypcji?** Replikacja kopiuje DNA do DNA; transkrypcja przepisuje informację z DNA na RNA.
+
+### Audyt końcowy L013
+- Poprawiono nadmiernie kategoryczne sformułowanie, jakoby sama semikonserwatywność gwarantowała idealną kopię.
+- Doprecyzowano moment replikacji przed mejozą: nie zachodzi ona ponownie między mejozą I i II.
+- Dodano algorytm pracy z sekwencją i przykład z kierunkami 5′/3′.
+- Zachowano wcześniejszą treść; dopisek nie zastępuje niezależnej recenzji biologicznej ani testu renderowania HTML.

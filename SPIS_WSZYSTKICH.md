@@ -42,19 +42,19 @@ Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: le
 | N04 | Kwasy | Uczeń zapisuje i otrzymuje kwasy tlenowe i beztlenowe, opisuje ich właściwości i odczyn. | E8+LO | GOTOWE HTML |
 | N05 | Sole | Uczeń zapisuje i nazywa sole, zna metody ich otrzymywania i przewiduje strącanie. | E8+LO | GOTOWE HTML |
 | N06 | Wodorki | E8: wodór i jego proste związki. LO: systematyka wodorków. | E8+LO | GOTOWE HTML |
-| N07 | Systematyka nieorganiczna | Uczeń klasyfikuje dowolny związek nieorganiczny: wzór → nazwa → klasa. | E8+LO | DO IMPLEMENTACJI |
-| N08 | Mapa przemian „co powstanie?” | Uczeń przewiduje produkty przemian między klasami związków. | E8+LO | DO IMPLEMENTACJI |
+| N07 | Systematyka nieorganiczna | Uczeń klasyfikuje dowolny związek nieorganiczny: wzór → nazwa → klasa. | E8+LO | POPRAWIONE |
+| N08 | Mapa przemian „co powstanie?” | Uczeń przewiduje produkty przemian między klasami związków. | E8+LO | POPRAWIONE |
 
 ### CHE.03 R — Roztwory i stechiometria
 
 | kod | lekcja | o czym | poziom | status |
 |---|---|---|---|---|
-| R01 | Woda i roztwory | Uczeń opisuje wodę jako rozpuszczalnik i rozróżnia roztwór, zawiesinę i koloid. | E8 | DO IMPLEMENTACJI |
-| R02 | Rozpuszczalność | Uczeń odczytuje krzywe rozpuszczalności i rozróżnia roztwór nasycony i nienasycony. | E8 | DO IMPLEMENTACJI |
+| R01 | Woda i roztwory | Uczeń opisuje wodę jako rozpuszczalnik i rozróżnia roztwór, zawiesinę i koloid. | E8 | POPRAWIONE |
+| R02 | Rozpuszczalność | Uczeń odczytuje krzywe rozpuszczalności i rozróżnia roztwór nasycony i nienasycony. | E8 | POPRAWIONE |
 | R03 | Stężenie procentowe | Uczeń oblicza stężenie procentowe, rozcieńcza, zatęża i miesza roztwory. | E8+LO | GOTOWE HTML |
 | R04 | Mol i masa molowa | Uczeń przelicza masę, liczbę moli i liczbę cząstek. | LO | UZUPEŁNIONE |
 | R05 | Stężenie molowe | Uczeń oblicza stężenie molowe i przelicza Cp ↔ Cm. | LO | UZUPEŁNIONE |
-| R06 | Gazy: objętość molowa | Uczeń stosuje objętość molową i równanie Clapeyrona. | LO | DO IMPLEMENTACJI |
+| R06 | Gazy: objętość molowa | Uczeń stosuje objętość molową i równanie Clapeyrona. | LO | POPRAWIONE |
 | R07 | Stechiometria | Uczeń wykonuje obliczenia na podstawie równań reakcji. | LO | UZUPEŁNIONE |
 | R08 | Reagent ograniczający | Uczeń wskazuje reagent ograniczający i oblicza skład mieszaniny poreakcyjnej. | LO | UZUPEŁNIONE |
 | R09 | Wydajność reakcji | Uczeń oblicza wydajność i uwzględnia zanieczyszczenia substratów. | LO | UZUPEŁNIONE |
@@ -69,12 +69,12 @@ Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: le
 | J04 | Strącanie osadów | Uczeń przewiduje powstanie osadu z tabeli rozpuszczalności. | E8+LO | UZUPEŁNIONE |
 | J05 | Amfoteryczność | Uczeń rozpoznaje substancje amfoteryczne i zapisuje ich reakcje. | LO | UZUPEŁNIONE |
 | J06 | Równowagi kwasowo-zasadowe | Uczeń stosuje teorię Brønsteda jakościowo. | LO | UZUPEŁNIONE |
-| J07 | Ka, Kb i Kw | Uczeń oblicza stałe dysocjacji i korzysta z iloczynu jonowego wody. | LO | DO IMPLEMENTACJI |
-| J08 | Hydroliza soli | Uczeń przewiduje odczyn roztworów soli i zapisuje równania hydrolizy. | LO | DO IMPLEMENTACJI |
-| J09 | Bufory | Uczeń wyjaśnia działanie buforu i oblicza jego pH. | LO | DO IMPLEMENTACJI |
-| J10 | Iloczyn rozpuszczalności Ksp | Uczeń oblicza rozpuszczalność z Ksp i warunek strącania. | LO | DO IMPLEMENTACJI |
-| J11 | Identyfikacja jonów | Uczeń planuje wykrycie jonów reakcjami charakterystycznymi. | E8+LO | DO IMPLEMENTACJI |
-| J12 | Miareczkowanie | Uczeń przeprowadza i interpretuje miareczkowanie alkacymetryczne. | LO | DO IMPLEMENTACJI |
+| J07 | Ka, Kb i Kw | Uczeń oblicza stałe dysocjacji i korzysta z iloczynu jonowego wody. | LO | POPRAWIONE |
+| J08 | Hydroliza soli | Uczeń przewiduje odczyn roztworów soli i zapisuje równania hydrolizy. | LO | POPRAWIONE |
+| J09 | Bufory | Uczeń wyjaśnia działanie buforu i oblicza jego pH. | LO | POPRAWIONE |
+| J10 | Iloczyn rozpuszczalności Ksp | Uczeń oblicza rozpuszczalność z Ksp i warunek strącania. | LO | POPRAWIONE |
+| J11 | Identyfikacja jonów | Uczeń planuje wykrycie jonów reakcjami charakterystycznymi. | E8+LO | POPRAWIONE |
+| J12 | Miareczkowanie | Uczeń przeprowadza i interpretuje miareczkowanie alkacymetryczne. | LO | POPRAWIONE |
 
 ### CHE.05 O — Chemia organiczna
 
@@ -88,23 +88,23 @@ Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: le
 | O06 | Spalanie węglowodorów | Uczeń zapisuje spalanie całkowite i niecałkowite i wykrywa produkty. | E8 | UZUPEŁNIONE |
 | O07 | Areny | Uczeń opisuje aromatyczność benzenu i substytucję. | LO | UZUPEŁNIONE |
 | O08 | Alkohole | Uczeń opisuje budowę, właściwości i reakcje alkoholi. | E8+LO | UZUPEŁNIONE |
-| O09 | Fenole | Uczeń porównuje fenole z alkoholami. | LO | DO IMPLEMENTACJI |
-| O10 | Aldehydy i ketony | Uczeń rozpoznaje grupę karbonylową i wykonuje próby Tollensa i Trommera. | LO | DO IMPLEMENTACJI |
+| O09 | Fenole | Uczeń porównuje fenole z alkoholami. | LO | POPRAWIONE |
+| O10 | Aldehydy i ketony | Uczeń rozpoznaje grupę karbonylową i wykonuje próby Tollensa i Trommera. | LO | POPRAWIONE |
 | O11 | Kwasy karboksylowe | Uczeń opisuje budowę i reakcje kwasów karboksylowych. | E8+LO | UZUPEŁNIONE |
 | O12 | Estry | Uczeń zapisuje estryfikację i hydrolizę estrów. | E8+LO | UZUPEŁNIONE |
 | O13 | Tłuszcze, mydła i detergenty | Uczeń opisuje budowę tłuszczów, zmydlanie i działanie mydła. | E8+LO | UZUPEŁNIONE |
-| O14 | Aminy i amidy | Uczeń opisuje zasadowość amin i budowę amidów. | LO | DO IMPLEMENTACJI |
+| O14 | Aminy i amidy | Uczeń opisuje zasadowość amin i budowę amidów. | LO | POPRAWIONE |
 | O15 | Cukry — monosacharydy | Uczeń opisuje glukozę i fruktozę i je wykrywa. | E8+LO | UZUPEŁNIONE |
 | O16 | Cukry — disacharydy | Uczeń opisuje sacharozę i jej hydrolizę. | E8+LO | UZUPEŁNIONE |
 | O17 | Cukry — polisacharydy | Uczeń porównuje skrobię i celulozę i wykrywa skrobię. | E8+LO | UZUPEŁNIONE |
 | O18 | Aminokwasy | Uczeń opisuje budowę aminokwasów i wiązanie peptydowe. | E8+LO | UZUPEŁNIONE |
 | O19 | Białka — struktura | Uczeń opisuje struktury białek, denaturację i koagulację. | E8+LO | UZUPEŁNIONE |
 | O20 | Białka — reakcje charakterystyczne | Uczeń wykrywa białka reakcjami charakterystycznymi. | E8+LO | UZUPEŁNIONE |
-| O21 | Polimery i tworzywa | Uczeń opisuje polimeryzację, polikondensację i problem tworzyw sztucznych. | E8+LO | DO IMPLEMENTACJI |
+| O21 | Polimery i tworzywa | Uczeń opisuje polimeryzację, polikondensację i problem tworzyw sztucznych. | E8+LO | POPRAWIONE |
 | O22 | Witaminy i sole mineralne | Aspekt chemiczny — właściciel tematu w biologii (REF). | E8 | UZUPEŁNIONE |
 | O23 | Metabolizm | Aspekt chemiczny — właściciel tematu w biologii (REF). | LO | UZUPEŁNIONE |
-| O24 | Nazewnictwo — procedura zbiorcza | Uczeń nazywa związki wszystkich klas wg zasad IUPAC. | LO | DO IMPLEMENTACJI |
-| O25 | Mechanizmy reakcji organicznych | Uczeń opisuje przepływ elektronów w typowych mechanizmach. | LO | DO IMPLEMENTACJI |
+| O24 | Nazewnictwo — procedura zbiorcza | Uczeń nazywa związki wszystkich klas wg zasad IUPAC. | LO | POPRAWIONE |
+| O25 | Mechanizmy reakcji organicznych | Uczeń opisuje przepływ elektronów w typowych mechanizmach. | LO | POPRAWIONE |
 
 ### CHE.06 X — Redoks
 
@@ -124,27 +124,27 @@ Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: le
 
 | kod | lekcja | o czym | poziom | status |
 |---|---|---|---|---|
-| E01 | Ogniwo galwaniczne | Uczeń opisuje budowę i działanie ogniwa i zapisuje jego schemat. | LO | DO IMPLEMENTACJI |
-| E02 | Potencjały elektrodowe | Uczeń korzysta z szeregu elektrochemicznego. | LO | DO IMPLEMENTACJI |
-| E03 | SEM | Uczeń oblicza SEM i przewiduje samorzutność reakcji. | LO | DO IMPLEMENTACJI |
-| E04 | Elektroliza | Uczeń zapisuje procesy elektrodowe i stosuje prawa Faradaya. | LO | DO IMPLEMENTACJI |
-| E05 | Korozja | Uczeń wyjaśnia korozję i dobiera ochronę. | E8+LO | DO IMPLEMENTACJI |
-| E06 | Źródła energii i akumulatory | Uczeń porównuje baterie, akumulatory i ogniwa paliwowe. | LO | DO IMPLEMENTACJI |
+| E01 | Ogniwo galwaniczne | Uczeń opisuje budowę i działanie ogniwa i zapisuje jego schemat. | LO | POPRAWIONE |
+| E02 | Potencjały elektrodowe | Uczeń korzysta z szeregu elektrochemicznego. | LO | POPRAWIONE |
+| E03 | SEM | Uczeń oblicza SEM i przewiduje samorzutność reakcji. | LO | POPRAWIONE |
+| E04 | Elektroliza | Uczeń zapisuje procesy elektrodowe i stosuje prawa Faradaya. | LO | POPRAWIONE |
+| E05 | Korozja | Uczeń wyjaśnia korozję i dobiera ochronę. | E8+LO | POPRAWIONE |
+| E06 | Źródła energii i akumulatory | Uczeń porównuje baterie, akumulatory i ogniwa paliwowe. | LO | POPRAWIONE |
 
 ### CHE.08 K — Energetyka, kinetyka i równowaga
 
 | kod | lekcja | o czym | poziom | status |
 |---|---|---|---|---|
-| K01 | Energia reakcji | Uczeń rozróżnia reakcje egzo- i endoenergetyczne i czyta wykres energetyczny. | E8+LO | DO IMPLEMENTACJI |
+| K01 | Energia reakcji | Uczeń rozróżnia reakcje egzo- i endoenergetyczne i czyta wykres energetyczny. | E8+LO | POPRAWIONE |
 | K02 | Entalpia | Uczeń oblicza ΔH, także z prawa Hessa. | LO | DO IMPLEMENTACJI |
 | K03 | Kalorymetria i przemiany fazowe | Uczeń mierzy i oblicza ciepło reakcji i przemian fazowych. | LO | DO IMPLEMENTACJI |
 | K04 | Szybkość reakcji | Uczeń definiuje i mierzy szybkość reakcji. | LO | DO IMPLEMENTACJI |
-| K05 | Czynniki wpływające na szybkość | Uczeń przewiduje wpływ stężenia, temperatury i rozdrobnienia. | E8+LO | DO IMPLEMENTACJI |
+| K05 | Czynniki wpływające na szybkość | Uczeń przewiduje wpływ stężenia, temperatury i rozdrobnienia. | E8+LO | POPRAWIONE |
 | K06 | Zderzenia i energia aktywacji | Uczeń wyjaśnia szybkość teorią zderzeń. | LO | DO IMPLEMENTACJI |
-| K07 | Kataliza | Uczeń opisuje działanie katalizatora, enzymu i inhibitora. | E8+LO | DO IMPLEMENTACJI |
-| K08 | Równowaga dynamiczna | Uczeń opisuje stan równowagi w reakcjach odwracalnych. | LO | DO IMPLEMENTACJI |
+| K07 | Kataliza | Uczeń opisuje działanie katalizatora, enzymu i inhibitora. | E8+LO | POPRAWIONE |
+| K08 | Równowaga dynamiczna | Uczeń opisuje stan równowagi w reakcjach odwracalnych. | LO | POPRAWIONE |
 | K09 | Stała równowagi | Uczeń zapisuje wyrażenie na K i wykonuje obliczenia. | LO | DO IMPLEMENTACJI |
-| K10 | Reguła Le Chateliera | Uczeń przewiduje przesunięcie równowagi. | LO | DO IMPLEMENTACJI |
+| K10 | Reguła Le Chateliera | Uczeń przewiduje przesunięcie równowagi. | LO | POPRAWIONE |
 | K11 | Równowaga ilościowa | Uczeń rozwiązuje zadania z równowagi. | LO | DO IMPLEMENTACJI |
 
 ### CHE.09 A — Chemia jądrowa
@@ -210,30 +210,30 @@ Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: le
 | L001A | Dodatek ambitny: od komórki do teorii endosymbiozy | Nie włączać do głównego toku podstawowego. | 45 KB | `biologia/md/BIO.01.L001A.dodatek_ambitny_od_komorki_do.md` |
 | L002 | Powtórka: człowiek (wybrane, v3.7 + v3.9.1) | Jak z komórek i genów wynikają cechy organizmu człowieka? | 76 KB | `biologia/md/BIO.01.L002.powtorka_czlowiek.md` |
 | L003 | Diagnoza startowa genetyki | Trzy etapy: diagnoza właściwa · strefa podglądu · powrót po bloku genetyki | 78 KB | `biologia/md/BIO.01.L003.diagnoza.md` |
-| L004 | Organizacja budowy organizmu: od komórki do organizmu | Jak z pojedynczej komórki może powstać złożony organizm? | 12 KB | `biologia/md/BIO.01.L004.organizacja_budowy_organizmu_od_komorki.md` |
-| L005 | Błona komórkowa i transport substancji | Jak komórka kontroluje, co do niej wnika i co ją opuszcza? | 12 KB | `biologia/md/BIO.01.L005.blona_komorkowa_i_transport_substancji.md` |
-| L006 | Fotosynteza: skąd roślina bierze materię organiczną? | Skoro roślina nie „je” liści, to skąd bierze materiał do budowy swojego organizmu? | 12 KB | `biologia/md/BIO.01.L006.fotosynteza_skad_roslina_bierze_materie.md` |
-| L007 | Oddychanie komórkowe: skąd komórka bierze użyteczną energię? | Dlaczego komórka potrzebuje pokarmu i tlenu, nawet gdy nie wykonuje widocznego ruchu? | 11 KB | `biologia/md/BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze.md` |
-| L008 | Mikroskop: jak obserwować komórkę, a nie tylko na nią patrzeć? | Jak uzyskać wiarygodny obraz bardzo małego obiektu? | 10 KB | `biologia/md/BIO.01.L008.mikroskop_jak_obserwowac_komorke_a.md` |
-| L009 | Podział komórki: wzrost, regeneracja i powstawanie gamet | Jak organizm zwiększa liczbę komórek, a jednocześnie utrzymuje liczbę chromosomów? | 11 KB | `biologia/md/BIO.01.L009.podzial_komorki_wzrost_regeneracja_i.md` |
+| L004 | Organizacja budowy organizmu: od komórki do organizmu | Jak z pojedynczej komórki może powstać złożony organizm? | 36 KB | `biologia/md/BIO.01.L004.organizacja_budowy_organizmu_od_komorki.md` |
+| L005 | Błona komórkowa i transport substancji | Jak komórka kontroluje, co do niej wnika i co ją opuszcza? | 30 KB | `biologia/md/BIO.01.L005.blona_komorkowa_i_transport_substancji.md` |
+| L006 | Fotosynteza: skąd roślina bierze materię organiczną? | Skoro roślina nie „je” liści, to skąd bierze materiał do budowy swojego organizmu? | 30 KB | `biologia/md/BIO.01.L006.fotosynteza_skad_roslina_bierze_materie.md` |
+| L007 | Oddychanie komórkowe: skąd komórka bierze użyteczną energię? | Dlaczego komórka potrzebuje pokarmu i tlenu, nawet gdy nie wykonuje widocznego ruchu? | 27 KB | `biologia/md/BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze.md` |
+| L008 | Mikroskop: jak obserwować komórkę, a nie tylko na nią patrzeć? | Jak uzyskać wiarygodny obraz bardzo małego obiektu? | 22 KB | `biologia/md/BIO.01.L008.mikroskop_jak_obserwowac_komorke_a.md` |
+| L009 | Podział komórki: wzrost, regeneracja i powstawanie gamet | Jak organizm zwiększa liczbę komórek, a jednocześnie utrzymuje liczbę chromosomów? | 21 KB | `biologia/md/BIO.01.L009.podzial_komorki_wzrost_regeneracja_i.md` |
 
 ### BIO.02 — genetyka
 
 | kod | lekcja | o czym | rozmiar | plik |
 |---|---|---|---|---|
-| L010 | Genetyka i DNA od zera (cechy + czym jest DNA) | Skąd biorą się podobieństwa i różnice między organizmami? | 18 KB | `biologia/md/BIO.02.L010.genetyka_i_dna_od_zera.md` |
+| L010 | Genetyka i DNA od zera (cechy + czym jest DNA) | Skąd biorą się podobieństwa i różnice między organizmami? | 24 KB | `biologia/md/BIO.02.L010.genetyka_i_dna_od_zera.md` |
 | L011 | Jak DNA przechowuje informację? | Jak jedna cząsteczka może przechowywać informacje potrzebne do budowy i funkcjonowania organizmu? | 42 KB | `biologia/md/BIO.02.L011.jak_dna_przechowuje_informacje.md` |
 | L012 | Jak DNA jest upakowane w chromosomach? | Jak bardzo długa cząsteczka DNA mieści się w małym jądrze i jak jest zorganizowana podczas podziału? | 56 KB | `biologia/md/BIO.02.L012.jak_dna_jest_upakowane_w.md` |
-| L013 | Jak komórka kopiuje DNA? | Jak komórka kopiuje DNA tak, by obie komórki potomne dostały pełną, poprawną informację? | 18 KB | `biologia/md/BIO.02.L013.jak_komorka_kopiuje_dna.md` |
+| L013 | Jak komórka kopiuje DNA? | Jak komórka kopiuje DNA tak, by obie komórki potomne dostały pełną, poprawną informację? | 21 KB | `biologia/md/BIO.02.L013.jak_komorka_kopiuje_dna.md` |
 | L014 | Jak komórki ciała powstają i się odnawiają? | Jak z jednej komórki ciała powstają dwie komórki z tą samą liczbą zestawów chromosomów? | 61 KB | `biologia/md/BIO.02.L014.jak_komorki_ciala_powstaja_i.md` |
 | L015 | Jak powstają komórki haploidalne i skąd bierze się różnorodność? | Genetyka · mejoza · 2n → n · rekombinacja chromosomowa · nondysjunkcja · oogeneza vs spermatogeneza | 59 KB | `biologia/md/BIO.02.L015.mejoza.md` |
 | L016 | Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli? | Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli? | 17 KB | `biologia/md/BIO.02.L016.co_sie_dzieje_gdy_podzialy.md` |
-| L016A | Zmienność: dlaczego potomstwo nie jest kopią rodziców? | Dlaczego rodzeństwo może mieć tych samych rodziców, a mimo to różnić się wieloma cechami? | 12 KB | `biologia/md/BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest.md` |
+| L016A | Zmienność: dlaczego potomstwo nie jest kopią rodziców? | Dlaczego rodzeństwo może mieć tych samych rodziców, a mimo to różnić się wieloma cechami? | 16 KB | `biologia/md/BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest.md` |
 | L017 | Jak przewidywać dziedziczenie jednej cechy? | Jak przewidywać dziedziczenie jednej cechy na podstawie alleli rodziców? | 43 KB | `biologia/md/BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy.md` |
-| L018 | Jak dziedziczy się płeć i cechy sprzężone z chromosomem X? | Jak dziedziczy się płeć i cechy sprzężone z chromosomem X? | 18 KB | `biologia/md/BIO.02.L018.jak_dziedziczy_sie_plec_i.md` |
-| L019 | Dlaczego grupy krwi nie pasują do prostego modelu A/a? | Dlaczego ABO to przykład, że nie wszystkie cechy dziedziczą się według prostego modelu A/a? | 16 KB | `biologia/md/BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja.md` |
-| L020 | Czym są mutacje i jakie mogą mieć skutki? | Czym są mutacje i dlaczego nie każda zmiana w DNA zmienia cechę? | 16 KB | `biologia/md/BIO.02.L020.czym_sa_mutacje_i_jakie.md` |
-| L021 | Powtórka genetyki | Jak połączyć DNA, chromosomy, podziały i dziedziczenie w jeden spójny obraz? | 17 KB | `biologia/md/BIO.02.L021.powtorka_genetyki.md` |
+| L018 | Jak dziedziczy się płeć i cechy sprzężone z chromosomem X? | Jak dziedziczy się płeć i cechy sprzężone z chromosomem X? | 21 KB | `biologia/md/BIO.02.L018.jak_dziedziczy_sie_plec_i.md` |
+| L019 | Dlaczego grupy krwi nie pasują do prostego modelu A/a? | Dlaczego ABO to przykład, że nie wszystkie cechy dziedziczą się według prostego modelu A/a? | 19 KB | `biologia/md/BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja.md` |
+| L020 | Czym są mutacje i jakie mogą mieć skutki? | Czym są mutacje i dlaczego nie każda zmiana w DNA zmienia cechę? | 19 KB | `biologia/md/BIO.02.L020.czym_sa_mutacje_i_jakie.md` |
+| L021 | Powtórka genetyki | Jak połączyć DNA, chromosomy, podziały i dziedziczenie w jeden spójny obraz? | 21 KB | `biologia/md/BIO.02.L021.powtorka_genetyki.md` |
 
 ### BIO.03 — ewolucja
 

@@ -604,30 +604,141 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;J06&quot; &quot;Równowagi kwasowo-zasadowe&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "J06"</div><h1>"Równowagi kwasowo-zasadowe"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">TREŚĆ KANONICZNA PO W1 — RÓWNOWAGI KWASOWO-ZASADOWE</a><a class="toc-link" href="#s2">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</a><a class="toc-link" href="#s3">W22 — kontrola równowag (2026-10-09, GPT-6)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele (E8)</a><a class="toc-link" href="#s3">3. Wyjaśnienie</a><a class="toc-link" href="#s4">4. Przykłady prowadzone</a><a class="toc-link" href="#s5">5. Bufory i wspólny jon</a><a class="toc-link" href="#s6">6. Klinika błędów</a><a class="toc-link" href="#s7">7. Ćwiczenia z kluczem</a><a class="toc-link" href="#s8">8. Test (3+2+2+1)</a><a class="toc-link" href="#s9">9. Słownik</a><a class="toc-link" href="#s10">MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22, zachowane bez zmian)</a><a class="toc-link" href="#s11">Równowagi kwasowo-zasadowe — materiał wstępny</a><a class="toc-link" href="#s12">AUDYT Grok — 2026-10-09</a><a class="toc-link" href="#s13">SCALENIE — Claude, 2026-10-09</a></nav></details>
+<p><strong>Dział:</strong> Chemia jonowa (blok J)
+<strong>Poziomy:</strong> E8 (jakościowo) · LO (Ka, bufory → extra)
+<strong>Poprzednia:</strong> J05
+<strong>Następna:</strong> J07 (Ka, Kb, Kw)</p>
 <section id="s1">
-<div class="part-heading">TREŚĆ KANONICZNA PO W1 — RÓWNOWAGI KWASOWO-ZASADOWE</div>
+<div class="part-heading">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</div>
+<ol>
+<li>Równowaga dynamiczna: szybkości w przód i wstecz równe; stężenia stałe — reakcje <strong>nie</strong> ustają.</li>
+<li>Moc kwasu ≠ stężenie (mocny ≠ stężony).</li>
+<li>Para sprzężona: kwas ↔ zasada (CH₃COOH / CH₃COO⁻; NH₄⁺ / NH₃).</li>
+<li>Słaby kwas: CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺.</li>
+<li>Słaba zasada: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻.</li>
+<li>Woda jest amfiprotyczna (może oddawać i przyjmować H⁺).</li>
+<li>(E8) Jakościowo: im mocniejszy kwas, tym słabsza sprzężona zasada.</li>
+<li><span class="level-badge level-contest">extra</span> Bufor = słaby kwas + sprzężona zasada (ogranicza zmianę pH).</li>
+<li><span class="level-badge level-contest">extra</span> Wspólny jon przesuwa równowagę.</li>
+<li>Ka, pKa, obliczenia ilościowe → J07 / LO.</li>
+</ol>
+<h3>Diagnoza wejściowa</h3>
+<ol>
+<li>Czy w równowadze reakcje się zatrzymują?</li>
+<li>Podaj parę sprzężoną do CH₃COOH.</li>
+<li>Czy mocny kwas musi być stężony?</li>
+<li>Zapisz równowagę dysocjacji NH₃ w wodzie.</li>
+<li>Co to jest bufor (jednym zdaniem)?</li>
+</ol>
+<p><strong>Klucz:</strong> 1 nie; 2 CH₃COO⁻; 3 nie; 4 NH₃+H₂O⇌NH₄⁺+OH⁻; 5 układ ograniczający zmianę pH (słaby kwas + sprzężona zasada).</p>
+<p><strong>Pytanie przewodnie:</strong> Co się dzieje, gdy reakcja „się zatrzymuje”, a stężenia przestają się zmieniać?</p>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">2</span> Cele (E8)</div>
+<ul>
+<li>Wyjaśnia równowagę dynamiczną.</li>
+<li>Rozpoznaje pary sprzężone.</li>
+<li>Odróżnia moc od stężenia.</li>
+<li>Zapisuje równowagi słabych elektrolitów.</li>
+</ul>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">3</span> Wyjaśnienie</div>
+<p><strong>Równowaga dynamiczna</strong>
+Reakcje w obu kierunkach trwają; szybkości się wyrównują → stężenia netto stałe.</p>
+<p><strong>Pary sprzężone</strong>
+Kwas oddaje H⁺ → sprzężona zasada.
+Zasada przyjmuje H⁺ → sprzężony kwas.
+Przykłady: HCl / Cl⁻ (mocny kwas → bardzo słaba zasada); CH₃COOH / CH₃COO⁻; H₃O⁺ / H₂O; H₂O / OH⁻; NH₄⁺ / NH₃.</p>
+<p><strong>Moc vs stężenie</strong>
+Moc = skłonność do oddawania protonu.
+Stężenie = ile substancji w danej objętości.
+Można mieć rozcieńczony mocny kwas i stężony słaby.</p>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">4</span> Przykłady prowadzone</div>
+<p>CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺
+NH₃ + H₂O ⇌ NH₄⁺ + OH⁻
+2H₂O ⇌ H₃O⁺ + OH⁻ (autodysocjacja)</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">5</span> <span class="level-badge level-extra">ZAAWANSOWANY</span> Bufory i wspólny jon</div>
+<p>Bufor: słaby kwas + jego sól (sprzężona zasada) w porównywalnych ilościach.
+Ogranicza zmianę pH po dodaniu niewielkiej ilości mocnego kwasu lub zasady.
+Pojemność buforowa jest ograniczona.
+Wspólny jon (np. CH₃COO⁻ dodany do CH₃COOH) przesuwa równowagę w lewo (mniej dysocjacji).</p>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">6</span> Klinika błędów</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Popraw</th></tr></thead>
+<tbody>
+<tr><td>„W równowadze nic się nie dzieje”</td><td>Reakcje trwają, szybkości równe</td></tr>
+<tr><td>Mocny = stężony</td><td>To różne pojęcia</td></tr>
+<tr><td>Bufor ma nieograniczoną pojemność</td><td>Ma ograniczoną</td></tr>
+<tr><td>Para sprzężona w złej kolejności</td><td>Kwas / zasada</td></tr>
+</tbody></table></div>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">7</span> Ćwiczenia z kluczem</div>
+<ol>
+<li>Zapisz parę sprzężoną do: HNO₂, NH₃, H₃O⁺.</li>
+<li>Czy 0,001 mol/dm³ HCl jest mocnym elektrolitem?</li>
+<li>Zapisz równowagę H₂CO₃ (I etap).</li>
+<li>(extra) Co się stanie z pH buforu octanowego po dodaniu małej ilości HCl?</li>
+</ol>
+<p><strong>Klucz:</strong>
+1. NO₂⁻; NH₄⁺; H₂O
+2. Tak (mocny, choć rozcieńczony).
+3. H₂CO₃ ⇌ H⁺ + HCO₃⁻
+4. pH spadnie nieznacznie (bufor ogranicza zmianę).</p>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">8</span> Test (3+2+2+1)</div>
+<p>A. Zapisz równowagi: CH₃COOH w wodzie; NH₃ w wodzie; autodysocjacja wody.
+B. Prawda/fałsz: a) W równowadze reakcje ustają. b) Moc ≠ stężenie.
+C. Podaj sprzężoną zasadę do NH₄⁺ i sprzężony kwas do OH⁻.
+D. Jednym zdaniem: czym jest równowaga dynamiczna?</p>
+<p><strong>Klucz:</strong> A: CH₃COOH+H₂O⇌CH₃COO⁻+H₃O⁺; NH₃+H₂O⇌NH₄⁺+OH⁻; 2H₂O⇌H₃O⁺+OH⁻. B: F, P. C: NH₃; H₂O. D: stan, w którym szybkości reakcji w obu kierunkach są równe, a stężenia netto stałe.</p>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">9</span> Słownik</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+<tbody>
+<tr><td>Równowaga dynamiczna</td><td>Szybkości w przód i wstecz równe; stężenia stałe</td></tr>
+<tr><td>Para sprzężona</td><td>Kwas i zasada różniące się o H⁺</td></tr>
+<tr><td>Moc kwasu</td><td>Skłonność do oddawania protonu</td></tr>
+<tr><td>Bufor</td><td>Układ ograniczający zmianę pH</td></tr>
+</tbody></table></div>
+</section>
+<section id="s10">
+<div class="part-heading">MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22, zachowane bez zmian)</div>
+<p class="mini-note">Treść kanonu sprzed rozbudowy W23 — zachowana w całości, bo lekcja Groka napisana od nowa jej nie zawierała. Poprzedni stan: W22 — GPT-6, 2026-10-09; audyt przekrojowy równań i modeli, pełna niezależna recenzja nadal otwarta</p>
+</section>
+<section id="s11">
+<div class="part-heading">Równowagi kwasowo-zasadowe — materiał wstępny</div>
+<h3>TREŚĆ KANONICZNA PO W1 — RÓWNOWAGI KWASOWO-ZASADOWE</h3>
 <p>Reakcja odwracalna może przebiegać w obu kierunkach. W stanie równowagi dynamicznej szybkości reakcji w przód i wstecz są równe, a stężenia makroskopowe pozostają stałe — nie oznacza to, że reakcje ustają.</p>
-<h3>Moc kwasu i pary sprzężone</h3>
+<h4>Moc kwasu i pary sprzężone</h4>
 <p>Moc kwasu opisuje skłonność do oddawania protonu w określonym rozpuszczalniku; nie jest tym samym co stężenie. Kwas po oddaniu protonu tworzy sprzężoną zasadę, a zasada po przyjęciu protonu — sprzężony kwas. Przykład: CH₃COOH/CH₃COO⁻ oraz NH₄⁺/NH₃.</p>
 <p>CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺</p>
 <p>NH₃ + H₂O ⇌ NH₄⁺ + OH⁻</p>
-<h3>Bufory i wspólny jon — rozszerzenie</h3>
+<h4>Bufory i wspólny jon — rozszerzenie</h4>
 <p><span class="level-badge level-exam">KONKURS</span> Bufor ogranicza zmianę pH po dodaniu umiarkowanej ilości kwasu lub zasady; zwykle zawiera słaby kwas i jego sprzężoną zasadę w porównywalnych ilościach. Nie utrzymuje pH niezmienionego w każdych warunkach i ma ograniczoną pojemność. Dodanie wspólnego jonu może przesunąć równowagę słabego elektrolitu; opis kierunku wymaga wskazania równania i składu układu.</p>
-<h3>Sprawdź się</h3>
+<h4>Sprawdź się</h4>
 <ol>
 <li>Czy w równowadze reakcje zatrzymują się? <strong>Nie.</strong></li>
 <li>Czy mocny kwas musi być stężony? <strong>Nie; moc i stężenie to różne cechy.</strong></li>
 <li>W jaką parę sprzężoną tworzy się CH₃COOH po oddaniu protonu? <strong>CH₃COO⁻.</strong></li>
 <li>Czy bufor ma nieograniczoną pojemność? <strong>Nie.</strong></li>
 </ol>
-</section>
-<section id="s2">
-<div class="part-heading">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</div>
+<h3>AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</h3>
 <p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexity_J01-J00_2026-10-09.md</code>. Weryfikacja treści wysłanego zapisu, nie zakresu.</p>
-<h3>J06 — Równowagi kwasowo-zasadowe</h3>
+<h4>J06 — Równowagi kwasowo-zasadowe</h4>
 <p class="mini-note">Uwaga przy scalaniu: Pary sprzężone zapisywać w kolejności kwas/zasada: NH₄⁺/NH₃ oraz H₂O/OH⁻. Ka, pKa, bufory i wspólny jon — poziom LO/konkurs, oznaczyć <span class="level-badge level-extra">AMBITNE</span>.</p>
-<h4>Cel</h4>
+<h5>Cel</h5>
 <p>Uczeń powinien:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
@@ -637,7 +748,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>opisać działanie buforu na poziomie odpowiednim do kursu;</li>
 <li>nie utożsamiać równowagi z zatrzymaniem reakcji.</li>
 </ul>
-<h4>Równowaga dynamiczna</h4>
+<h5>Równowaga dynamiczna</h5>
 <p>W stanie równowagi reakcja w przód i reakcja wsteczna nadal zachodzą, ale ich szybkości są równe.</p>
 <p>Dla słabego kwasu:</p>
 <p>HA+H₂O⇌ H₃O⁺+A⁻</p>
@@ -649,7 +760,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>jony A⁻;</li>
 <li>woda.</li>
 </ul>
-<h4>Moc kwasu</h4>
+<h5>Moc kwasu</h5>
 <p>Stała dysocjacji kwasu:</p>
 <p>Ka=([H₃O⁺][A⁻]) / ([HA])</p>
 <p>Większe Ka oznacza większy stopień dysocjacji w porównywalnych warunkach.</p>
@@ -657,7 +768,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <p>pKa=-log Ka</p>
 <p>mniejsza wartość pKa oznacza na ogół mocniejszy kwas.</p>
 <p>Na poziomie szkoły podstawowej wystarczy rozumieć, że moc kwasu zależy od jego dysocjacji, a nie od samego stężenia.</p>
-<h4>Sprzężone pary</h4>
+<h5>Sprzężone pary</h5>
 <p>Dla reakcji:</p>
 <p>HA+H₂O⇌ H₃O⁺+A⁻</p>
 <p>pary sprzężone to:</p>
@@ -667,7 +778,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>H₃O⁺/H₂O.</li>
 </ul>
 <p>Kwas oddaje proton, a zasada sprzężona może go przyjąć.</p>
-<h4>Bufor</h4>
+<h5>Bufor</h5>
 <p>Bufor ogranicza zmiany pH po dodaniu małej ilości kwasu lub zasady. Zwykle zawiera:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
@@ -680,12 +791,12 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <p>Po dodaniu zasady:</p>
 <p>CH₃COOH+OH⁻→ CH₃COO⁻+H₂O</p>
 <p>Bufor nie utrzymuje pH idealnie stałego i ma ograniczoną pojemność.</p>
-<h4>Wspólny jon</h4>
+<h5>Wspólny jon</h5>
 <p>Dodanie elektrolitu zawierającego jon obecny już w równowadze może przesunąć równowagę w stronę ograniczenia jego dalszej dysocjacji.</p>
 <p>Dla:</p>
 <p>CH₃COOH⇌ H⁺+CH₃COO⁻</p>
 <p>dodanie etanianu sodu zwiększa stężenie CH₃COO⁻, co w prostym modelu przesuwa równowagę w lewo.</p>
-<h4>Zadania</h4>
+<h5>Zadania</h5>
 <ol>
 <li>Co oznacza strzałka równowagi?</li>
 <li>Który kwas jest mocniejszy: ten o większym czy mniejszym Ka?</li>
@@ -697,7 +808,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>Czy stężony kwas słaby musi być mocniejszy od rozcieńczonego kwasu mocnego?</li>
 <li>Co stanie się z równowagą kwasu etanowego po dodaniu jonów etanianowych?</li>
 </ol>
-<h4>Klucz</h4>
+<h5>Klucz</h5>
 <ol>
 <li>Reakcja zachodzi w obu kierunkach i ustala się stan równowagi dynamicznej.</li>
 <li>Ten o większym Ka, przy porównywalnych warunkach.</li>
@@ -706,13 +817,23 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>Nie. Moc i stężenie to różne wielkości.</li>
 <li>Równowaga przesuwa się w stronę cząsteczek kwasu etanowego, ograniczając jego dysocjację.</li>
 </ol>
-</section>
-<section id="s3">
-<div class="part-heading">W22 — kontrola równowag (2026-10-09, GPT-6)</div>
+<h3>W22 — kontrola równowag (2026-10-09, GPT-6)</h3>
 <ul>
 <li><strong>Sprawdzono:</strong> <code>CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺</code>, <code>NH₃ + H₂O ⇌ NH₄⁺ + OH⁻</code> oraz <code>CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O</code> — bilans atomów i ładunku jest zachowany.</li>
 <li><strong>Doprecyzowanie:</strong> dla słabych elektrolitów stosuje się strzałkę równowagi; reakcja kwasu z OH⁻ może być zapisana jako reakcja zobojętniania netto.</li>
 <li><strong>Ograniczenie:</strong> kontrola wybranych przykładów, nie pełna walidacja wszystkich stałych równowagi ani zadań rozszerzonych.</li>
+</ul>
+</section>
+<section id="s12">
+<div class="part-heading">AUDYT Grok — 2026-10-09</div>
+<p><strong>Co zmieniono:</strong> Pełna rozbudowa. Ka/pKa/bufory oznaczone <span class="level-badge level-contest">extra</span> zgodnie z SPIS (E8 jakościowo). Zachowano treść W1. Dodano kartę, cele, klinikę, ćwiczenia, test.
+<strong>Otwarte:</strong> Ilościowe obliczenia → J07.
+<strong>Status:</strong> UZUPEŁNIONE.</p>
+</section>
+<section id="s13">
+<div class="part-heading">SCALENIE — Claude, 2026-10-09</div>
+<ul>
+<li>Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przy budowie lekcji: sprawdzić, czy uwagi W22 są uwzględnione w części głównej.</li>
 </ul>
 </section>
 

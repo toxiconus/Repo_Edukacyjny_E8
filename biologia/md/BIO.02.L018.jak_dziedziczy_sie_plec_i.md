@@ -434,3 +434,31 @@ W krzyżówce dla recesywnej cechy sprzężonej z X prawdopodobieństwo 1/2 moż
 - Dla recesywnej cechy sprzężonej z X: syn otrzymuje chromosom X od matki, a Y od ojca; ojciec nie przekazuje synowi swojego allelu położonego na X. Córka otrzymuje X od każdego z rodziców.
 - Jeżeli matka jest heterozygotyczną nosicielką, a ojciec nie ma danego wariantu, w uproszczonym modelu każde dziecko ma 1/2 szansy odziedziczenia wariantu od matki; ryzyko fenotypu zależy od płci i sposobu dziedziczenia.
 - **Status:** dodano jawne warunki modelu; wszystkie odpowiedzi wymagają jeszcze pełnego sprawdzenia.
+
+## AUDYT GENETYKI — doprecyzowanie dziedziczenia cech sprzężonych z X (2026-10-09)
+
+### Jak czytać krzyżówkę genetyczną?
+Najpierw zapisz allele i chromosomy płci, a dopiero potem wypisz gamety. W typowym szkolnym modelu osoba z chromosomami XX przekazuje do gamety jeden chromosom X, a osoba XY — X albo Y. W zapłodnieniu połączenie X z X daje zwykle układ XX, a X z Y — XY. To model podstawowy; rzeczywisty rozwój płci biologicznej jest bardziej złożony i nie wszystkie warianty rozwoju mieszczą się w tym uproszczeniu.
+
+### Dlaczego cechy recesywne sprzężone z X częściej ujawniają się u osób XY?
+W typowym układzie XY geny zlokalizowane na chromosomie X nie mają drugiej kopii na chromosomie Y, która mogłaby maskować recesywny wariant. Osoba XX może mieć allel recesywny na jednym chromosomie X i allel bez wariantu na drugim, przez co cecha może się nie ujawnić, choć osoba może być nosicielką. Nie oznacza to, że każda cecha sprzężona z X zawsze występuje wyłącznie u osób XY.
+
+### Przykład rachunkowy
+Oznaczmy prawidłowy wariant jako Xᴺ, a recesywny wariant jako Xⁿ. Matka-nosicielka XᴺXⁿ i ojciec bez wariantu XᴺY mogą przekazać: XᴺXᴺ, XᴺXⁿ, XᴺY albo XⁿY — przy założeniu jednakowego prawdopodobieństwa gamet. Każda kombinacja ma w tym prostym modelu prawdopodobieństwo 1/4. Wśród dzieci XX połowa byłaby nosicielkami; wśród dzieci XY połowa miałaby wariant i ujawniałaby cechę. Są to prawdopodobieństwa dla każdej ciąży, a nie gwarantowana kolejność urodzeń.
+
+### Pułapki
+- Prawdopodobieństwo 1/4 nie oznacza, że „co czwarte dziecko” na pewno będzie miało daną cechę.
+- Ojciec przekazuje synowi chromosom Y w typowym modelu XY, więc nie przekazuje mu swojego chromosomu X.
+- Nosicielstwo nie jest tym samym co ujawnienie cechy.
+- Wnioski dotyczą konkretnego modelu dziedziczenia; nie wolno przenosić ich automatycznie na wszystkie cechy płciowe lub wszystkie choroby.
+
+### Zadania z kluczem
+1. **Czy ojciec przekazuje synowi swój chromosom X?** W typowym układzie XY — nie, przekazuje Y; chromosom X syn otrzymuje od matki.
+2. **Czy przy krzyżówce matki-nosicielki i ojca bez wariantu każde dziecko XY musi mieć cechę?** Nie. W prostym modelu prawdopodobieństwo wynosi 1/2 dla każdego dziecka XY.
+3. **Czy prawdopodobieństwo 1/2 oznacza, że przy dwóch ciążach dokładnie jedno dziecko będzie miało cechę?** Nie. Każda ciąża jest osobnym zdarzeniem; wynik dwóch ciąż może być różny.
+
+### Audyt końcowy L018
+- Dodano rozpisany przykład krzyżówki X-sprzężonej z prawdopodobieństwami.
+- Doprecyzowano różnicę między nosicielstwem, genotypem i fenotypem.
+- Ograniczono uogólnienia do jawnie wskazanego modelu szkolnego.
+

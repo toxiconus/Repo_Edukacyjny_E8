@@ -604,16 +604,141 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;J04&quot; &quot;Strącanie osadów&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "J04"</div><h1>"Strącanie osadów"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">TREŚĆ KANONICZNA PO W1 — STRĄCANIE OSADÓW</a><a class="toc-link" href="#s2">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</a><a class="toc-link" href="#s3">W22 — kontrola strącania (2026-10-09, GPT-6)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele</a><a class="toc-link" href="#s3">3. Reguły rozpuszczalności (szkolne, orientacyjne)</a><a class="toc-link" href="#s4">4. Przykłady prowadzone</a><a class="toc-link" href="#s5">5. Procedura</a><a class="toc-link" href="#s6">6. Klinika błędów</a><a class="toc-link" href="#s7">7. Ćwiczenia z kluczem</a><a class="toc-link" href="#s8">8. Test (3+2+2+1)</a><a class="toc-link" href="#s9">9. Słownik</a><a class="toc-link" href="#s10">MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22, zachowane bez zmian)</a><a class="toc-link" href="#s11">Strącanie osadów — materiał wstępny</a><a class="toc-link" href="#s12">AUDYT Grok — 2026-10-09</a><a class="toc-link" href="#s13">SCALENIE — Claude, 2026-10-09</a></nav></details>
+<p><strong>Dział:</strong> Chemia jonowa (blok J)
+<strong>Poziomy:</strong> E8 · LO
+<strong>Poprzednia:</strong> J03
+<strong>Następna:</strong> J05 / J11</p>
 <section id="s1">
-<div class="part-heading">TREŚĆ KANONICZNA PO W1 — STRĄCANIE OSADÓW</div>
+<div class="part-heading">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</div>
+<ol>
+<li>Osad powstaje, gdy jony tworzą substancję trudno rozpuszczalną.</li>
+<li>Korzystam z tabeli rozpuszczalności (reguły + wyjątki).</li>
+<li>Sole grupy 1 i NH₄⁺ — zwykle rozpuszczalne; azotany — zwykle rozpuszczalne.</li>
+<li>Wyjątki: AgCl, PbCl₂, BaSO₄, PbSO₄, wiele węglanów i wodorotlenków.</li>
+<li>Zapis: cząsteczkowy → jonowy skrócony (np. Ag⁺ + Cl⁻ → AgCl↓).</li>
+<li>Barwy: AgCl biały, BaSO₄ biały, Cu(OH)₂ niebieski, Fe(OH)₃ brunatny, AgBr żółtawy.</li>
+<li>Zmętnienie = obserwacja; identyfikacja osadu = wniosek + uzasadnienie.</li>
+<li>Nie rozpisuję osadu na jony.</li>
+<li>Sprawdzam bilans atomów i ładunków.</li>
+<li>(LO) Warunek strącania związany z Ksp (J10).</li>
+</ol>
+<h3>Diagnoza wejściowa</h3>
+<ol>
+<li>Czy powstanie osad: AgNO₃ + NaCl?</li>
+<li>Zapisz skrócone jonowe tej reakcji.</li>
+<li>Czy powstanie osad: NaCl + KNO₃?</li>
+<li>Jaki kolor ma osad Cu(OH)₂?</li>
+<li>Wymień dwa wyjątki od rozpuszczalności chlorków.</li>
+</ol>
+<p><strong>Klucz:</strong> 1 tak; 2 Ag⁺+Cl⁻→AgCl↓; 3 nie; 4 niebieski; 5 AgCl, PbCl₂ (Hg₂Cl₂).</p>
+<p><strong>Pytanie przewodnie:</strong> Jak przewidzieć, czy po zmieszaniu dwóch roztworów pojawi się osad?</p>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">2</span> Cele</div>
+<ul>
+<li>Korzysta z tabeli rozpuszczalności.</li>
+<li>Przewiduje powstanie osadu.</li>
+<li>Zapisuje równania cząsteczkowe i jonowe.</li>
+<li>Odróżnia obserwację (zmętnienie) od wniosku (identyfikacja).</li>
+</ul>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">3</span> Reguły rozpuszczalności (szkolne, orientacyjne)</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Klasa</th><th>Zwykle</th><th>Wyjątki</th></tr></thead>
+<tbody>
+<tr><td>Sole grupy 1, NH₄⁺</td><td>rozpuszczalne</td><td>—</td></tr>
+<tr><td>Azotany NO₃⁻</td><td>rozpuszczalne</td><td>—</td></tr>
+<tr><td>Chlorki Cl⁻</td><td>rozpuszczalne</td><td>AgCl, PbCl₂, Hg₂Cl₂</td></tr>
+<tr><td>Siarczany SO₄²⁻</td><td>rozpuszczalne</td><td>BaSO₄, PbSO₄, (CaSO₄ częściowo)</td></tr>
+<tr><td>Węglany CO₃²⁻</td><td>trudno rozp.</td><td>grupa 1, NH₄⁺</td></tr>
+<tr><td>Wodorotlenki OH⁻</td><td>trudno rozp.</td><td>grupa 1, Ba(OH)₂ (dobrze), Ca(OH)₂ (średnio)</td></tr>
+</tbody></table></div>
+<p><strong>Zawsze sprawdzaj konkretną tabelę.</strong></p>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">4</span> Przykłady prowadzone</div>
+<p><strong>AgCl (biały)</strong>
+AgNO₃(aq) + NaCl(aq) → AgCl(s)↓ + NaNO₃(aq)
+Ag⁺ + Cl⁻ → AgCl↓</p>
+<p><strong>BaSO₄ (biały)</strong>
+Ba(NO₃)₂ + Na₂SO₄ → BaSO₄↓ + 2NaNO₃
+Ba²⁺ + SO₄²⁻ → BaSO₄↓</p>
+<p><strong>Cu(OH)₂ (niebieski)</strong>
+CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄
+Cu²⁺ + 2OH⁻ → Cu(OH)₂↓</p>
+<p><strong>Fe(OH)₃ (brunatny)</strong>
+FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl
+Fe³⁺ + 3OH⁻ → Fe(OH)₃↓</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">5</span> Procedura</div>
+<ol>
+<li>Wypisz jony z obu roztworów.</li>
+<li>Przewidź możliwe sole / wodorotlenki.</li>
+<li>Sprawdź rozpuszczalność w tabeli.</li>
+<li>Zapisz cząsteczkowe i skrócone jonowe.</li>
+<li>Podaj obserwację (kolor, postać) i wniosek.</li>
+</ol>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">6</span> Klinika błędów</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Popraw</th></tr></thead>
+<tbody>
+<tr><td>Rozpisanie osadu</td><td>Zostaw (s)↓</td></tr>
+<tr><td>Zignorowanie wyjątku (np. AgCl)</td><td>Sprawdź tabelę</td></tr>
+<tr><td>Zmętnienie = „na pewno AgCl”</td><td>Uzasadnij (reakcja charakterystyczna)</td></tr>
+<tr><td>Zmiana indeksów zamiast współczynników</td><td>Dobieraj współczynniki</td></tr>
+</tbody></table></div>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">7</span> Ćwiczenia z kluczem</div>
+<ol>
+<li>Przewidź osad i zapisz skrócone: Pb(NO₃)₂ + KI; BaCl₂ + Na₂SO₄; CuSO₄ + NaOH.</li>
+<li>Czy powstanie osad: Na₂CO₃ + CaCl₂? Zapisz.</li>
+<li>Jaki kolor osadów: AgCl, Cu(OH)₂, Fe(OH)₃?</li>
+<li>Dlaczego NaCl + KNO₃ nie daje osadu?</li>
+</ol>
+<p><strong>Klucz:</strong>
+1. Pb²⁺+2I⁻→PbI₂↓ (żółty); Ba²⁺+SO₄²⁻→BaSO₄↓; Cu²⁺+2OH⁻→Cu(OH)₂↓
+2. Tak; Ca²⁺+CO₃²⁻→CaCO₃↓
+3. biały, niebieski, brunatny
+4. Wszystkie potencjalne produkty rozpuszczalne.</p>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">8</span> Test (3+2+2+1)</div>
+<p>A. Zapisz skrócone i podaj kolor: AgNO₃+KBr; FeCl₃+3KOH; Ba(NO₃)₂+Na₂SO₄.
+B. Prawda/fałsz: a) Wszystkie chlorki są rozpuszczalne. b) Azotany są zwykle rozpuszczalne.
+C. Uczeń napisał CuSO₄+NaOH→Cu(OH)₂+NaSO₄. Popraw.
+D. Czym różni się obserwacja od wniosku przy strącaniu?</p>
+<p><strong>Klucz:</strong> A: Ag⁺+Br⁻→AgBr↓ (żółtawy); Fe³⁺+3OH⁻→Fe(OH)₃↓ (brunatny); Ba²⁺+SO₄²⁻→BaSO₄↓ (biały). B: F, P. C: 2NaOH, Na₂SO₄. D: obserwacja = zmętnienie/kolor; wniosek = identyfikacja z uzasadnieniem.</p>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">9</span> Słownik</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+<tbody>
+<tr><td>Osad</td><td>Trudno rozpuszczalna substancja stała powstająca w roztworze</td></tr>
+<tr><td>Tabela rozpuszczalności</td><td>Zestawienie reguł i wyjątków</td></tr>
+<tr><td>Zmętnienie</td><td>Obserwacja (nie identyfikacja)</td></tr>
+</tbody></table></div>
+</section>
+<section id="s10">
+<div class="part-heading">MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22, zachowane bez zmian)</div>
+<p class="mini-note">Treść kanonu sprzed rozbudowy W23 — zachowana w całości, bo lekcja Groka napisana od nowa jej nie zawierała. Poprzedni stan: W22 — GPT-6, 2026-10-09; audyt przekrojowy równań i modeli, pełna niezależna recenzja nadal otwarta</p>
+</section>
+<section id="s11">
+<div class="part-heading">Strącanie osadów — materiał wstępny</div>
+<h3>TREŚĆ KANONICZNA PO W1 — STRĄCANIE OSADÓW</h3>
 <p>Osad powstaje, gdy po zmieszaniu roztworów stężenie jonów umożliwia utworzenie trudno rozpuszczalnej substancji stałej. Reguły rozpuszczalności są narzędziem przewidywania, ale mają wyjątki; w razie wątpliwości sprawdź wiarygodną tabelę. Zmętnienie jest obserwacją, a identyfikacja osadu — wnioskiem wymagającym uzasadnienia.</p>
-<h3>Przykłady</h3>
+<h4>Przykłady</h4>
 <p>Ag⁺(aq) + Cl⁻(aq) → AgCl(s)↓ — biały osad chlorku srebra.</p>
 <p>Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)↓ — biały osad siarczanu baru.</p>
 <p>Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)↓ — niebieski osad wodorotlenku miedzi(II).</p>
 <p>W równaniu cząsteczkowym przykładowo: CuSO₄(aq) + 2NaOH(aq) → Cu(OH)₂(s)↓ + Na₂SO₄(aq). Nie zmieniaj indeksów, by dopasować równanie — dobieraj współczynniki.</p>
-<h3>Procedura</h3>
+<h4>Procedura</h4>
 <ol>
 <li>Zapisz jony obecne w obu roztworach.</li>
 <li>Przewidź możliwe połączenia jonów i sprawdź rozpuszczalność.</li>
@@ -621,12 +746,10 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>Sprawdź atomy oraz ładunek.</li>
 <li>Oddziel obserwację od wniosku i wskaż, jak potwierdzić skład osadu.</li>
 </ol>
-</section>
-<section id="s2">
-<div class="part-heading">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</div>
+<h3>AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</h3>
 <p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexity_J01-J00_2026-10-09.md</code>. Weryfikacja treści wysłanego zapisu, nie zakresu.</p>
-<h3>J04 — Strącanie osadów</h3>
-<h4>Cel</h4>
+<h4>J04 — Strącanie osadów</h4>
+<h5>Cel</h5>
 <p>Uczeń powinien:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
@@ -635,7 +758,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>zapisać równanie cząsteczkowe i jonowe;</li>
 <li>odróżnić osad od zmętnienia lub zanieczyszczenia.</li>
 </ul>
-<h4>Reguły orientacyjne</h4>
+<h5>Reguły orientacyjne</h5>
 <p>Typowe szkolne reguły:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
@@ -647,16 +770,16 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>wodorotlenki są często trudno rozpuszczalne, z wyjątkami dotyczącymi między innymi metali grupy 1 i częściowo Ba(OH)₂.</li>
 </ul>
 <p>Reguły należy stosować razem z konkretną tabelą rozpuszczalności.</p>
-<h4>Przykład 1: chlorek srebra</h4>
+<h5>Przykład 1: chlorek srebra</h5>
 <p>AgNO₃+NaCl→ AgCl↓+NaNO₃</p>
 <p>Ag⁺+Cl⁻→ AgCl↓</p>
-<h4>Przykład 2: siarczan baru</h4>
+<h5>Przykład 2: siarczan baru</h5>
 <p>Ba(NO₃)₂+Na₂SO₄→ BaSO₄↓+2NaNO₃</p>
 <p>Ba²⁺+SO₄²⁻→ BaSO₄↓</p>
-<h4>Przykład 3: wodorotlenek miedzi(II)</h4>
+<h5>Przykład 3: wodorotlenek miedzi(II)</h5>
 <p>CuSO₄+2NaOH→ Cu(OH)₂↓+Na₂SO₄</p>
 <p>Cu²⁺+2OH⁻→ Cu(OH)₂↓</p>
-<h4>Zasada kontroli</h4>
+<h5>Zasada kontroli</h5>
 <p>Jeśli dwa roztwory są mieszane, sprawdź:</p>
 <ol>
 <li>jakie jony występują przed reakcją;</li>
@@ -665,7 +788,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>czy pozostałe jony są obserwatorowe;</li>
 <li>czy równanie jest zbilansowane.</li>
 </ol>
-<h4>Zadania</h4>
+<h5>Zadania</h5>
 <ol>
 <li>Przewidź, czy powstanie osad po zmieszaniu AgNO₃ i KBr.</li>
 <li>Zapisz reakcję CaCl₂ z Na₂CO₃.</li>
@@ -673,7 +796,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>Czy po zmieszaniu NaCl i KNO₃ powstaje osad?</li>
 <li>Zapisz równanie jonowe reakcji Pb²⁺ z I⁻.</li>
 </ol>
-<h4>Klucz</h4>
+<h5>Klucz</h5>
 <p>1.</p>
 <p>Ag⁺+Br⁻→ AgBr↓</p>
 <p>2.</p>
@@ -685,13 +808,23 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 5.</li>
 </ol>
 <p>Pb²⁺+2I⁻→ PbI₂↓</p>
-</section>
-<section id="s3">
-<div class="part-heading">W22 — kontrola strącania (2026-10-09, GPT-6)</div>
+<h3>W22 — kontrola strącania (2026-10-09, GPT-6)</h3>
 <ul>
 <li><strong>Sprawdzono:</strong> <code>Ba²⁺ + SO₄²⁻ → BaSO₄(s)↓</code>, <code>Cu²⁺ + 2OH⁻ → Cu(OH)₂(s)↓</code> oraz <code>Fe³⁺ + 3OH⁻ → Fe(OH)₃(s)↓</code> — bilans atomów i ładunku jest zachowany.</li>
 <li><strong>Doprecyzowanie:</strong> w równaniach jonowych zapisuj jony w roztworze i osad jako fazę stałą; nie rozpisuj trudno rozpuszczalnego osadu na jony po stronie produktów.</li>
 <li><strong>Ograniczenie:</strong> kontrola wybranych równań i kolorów osadów, nie pełna analiza wszystkich reakcji identyfikacyjnych.</li>
+</ul>
+</section>
+<section id="s12">
+<div class="part-heading">AUDYT Grok — 2026-10-09</div>
+<p><strong>Co zmieniono:</strong> Pełna rozbudowa z ~4,3 KB. Zachowano reguły, przykłady, procedurę. Dodano kartę, cele, ściągę barw, klinikę, ćwiczenia, test.
+<strong>Otwarte:</strong> Pełna tabela rozpuszczalności do wstawienia z standardu szkolnego; Ksp → J10.
+<strong>Status:</strong> UZUPEŁNIONE.</p>
+</section>
+<section id="s13">
+<div class="part-heading">SCALENIE — Claude, 2026-10-09</div>
+<ul>
+<li>Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przy budowie lekcji: sprawdzić, czy uwagi W22 są uwzględnione w części głównej.</li>
 </ul>
 </section>
 

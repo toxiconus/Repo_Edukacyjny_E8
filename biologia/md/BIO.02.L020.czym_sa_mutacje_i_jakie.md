@@ -414,3 +414,35 @@ Mutacja może zatrzymać się „po drodze”:
 - Skutek mutacji może być szkodliwy, obojętny lub — w określonym środowisku — korzystny. Nie każda mutacja zmienia białko, fenotyp ani powoduje chorobę.
 - Odróżniaj mutację genu od zmiany struktury/liczby chromosomów; jeśli zadanie podaje tylko „zmianę DNA”, bez szczegółów nie zawsze można wskazać dokładny typ.
 - **Status:** dodano kryteria oceny odpowiedzi; wszystkie klucze pozostają do pełnego audytu.
+
+## AUDYT GENETYKI — typy mutacji, skutek i dziedziczenie (2026-10-09)
+
+### Mutacja nie jest synonimem choroby
+Mutacja to zmiana materiału genetycznego. Jej skutek zależy m.in. od miejsca zmiany, rodzaju zmiany, funkcji danego fragmentu DNA, rodzaju komórki i warunków środowiska. Mutacja może nie mieć zauważalnego skutku, wpływać na cechę, zaburzać działanie komórki albo w określonych warunkach dawać przewagę. Nie można ocenić skutku wyłącznie po nazwie typu mutacji.
+
+### Trzy poziomy opisu
+- **Zmiana sekwencji:** np. podstawienie, wstawienie lub utrata nukleotydu.
+- **Skutek dla produktu genu:** zmiana może nie zmienić aminokwasu, zmienić jeden aminokwas, wprowadzić przedwczesny sygnał stop lub zaburzyć odczyt. Nie każda zmiana w DNA zachodzi w części kodującej białko.
+- **Skutek dla organizmu:** może być neutralny, szkodliwy albo korzystny w konkretnym środowisku; nie da się go zawsze przewidzieć na podstawie samego typu zmiany.
+
+### Mutacje punktowe i przesunięcie ramki odczytu
+Podstawienie jednego nukleotydu może zmienić kodon, ale z powodu zdegenerowania kodu genetycznego czasem nie zmienia aminokwasu. Wstawienie lub usunięcie liczby nukleotydów niepodzielnej przez trzy w sekwencji kodującej może przesunąć ramkę odczytu i zmienić wiele kolejnych kodonów. To model ogólny; skutek zależy od dokładnego miejsca i kontekstu zmiany.
+
+### Somatyczna a dziedziczna
+Mutacja w komórce somatycznej może wpływać na tkankę lub organizm, ale zwykle nie zostaje przekazana dzieciom. Mutacja w linii komórkowej prowadzącej do gamet może zostać przekazana potomstwu. U organizmów rozmnażających się bezpłciowo zasady przekazywania zmian zależą od tego, w której komórce powstała mutacja i czy jej potomne linie komórkowe tworzą nowy organizm.
+
+### Mutageny i ostrożność w wnioskowaniu
+Niektóre czynniki fizyczne i chemiczne zwiększają prawdopodobieństwo uszkodzeń DNA, ale kontakt z czynnikiem nie oznacza automatycznie, że u konkretnej osoby powstała mutacja lub choroba. Organizm ma systemy naprawy DNA, a wynik zależy od dawki, czasu, rodzaju czynnika i biologicznego kontekstu. Nie należy na podstawie pojedynczej ekspozycji samodzielnie diagnozować skutków zdrowotnych.
+
+### Zadania z kluczem
+1. **Czy każda mutacja zmienia białko?** Nie; może wystąpić poza sekwencją kodującą albo nie zmienić aminokwasu.
+2. **Dlaczego wstawienie jednego nukleotydu może mieć duży skutek?** W sekwencji kodującej może przesunąć ramkę odczytu.
+3. **Czy mutacja somatyczna zwykle przechodzi na dzieci?** Nie, zwykle dotyczy komórek ciała; dziedziczenie jest możliwe, gdy zmiana występuje w linii prowadzącej do gamet.
+4. **Czy mutacja zawsze jest szkodliwa?** Nie; skutki mogą być różne, także neutralne.
+
+### Audyt końcowy L020
+- Rozdzielono zmianę w DNA, skutek dla produktu genu i skutek dla organizmu.
+- Rozwinięto podstawienia oraz insercje/delecje i ramkę odczytu.
+- Doprecyzowano dziedziczenie mutacji somatycznych i zmian w linii rozrodczej.
+- Dodano zadania z kluczem i zastrzeżenie dotyczące nadinterpretowania ekspozycji na mutageny.
+

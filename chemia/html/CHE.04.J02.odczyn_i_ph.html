@@ -604,27 +604,190 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;J02&quot; &quot;Odczyn i pH&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "J02"</div><h1>"Odczyn i pH"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">TREŚĆ KANONICZNA PO W1 — ODCZYN I pH</a><a class="toc-link" href="#s2">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</a><a class="toc-link" href="#s3">W21 — zakres wskaźnika a dokładny punkt pH (2026-10-09, GPT-6)</a><a class="toc-link" href="#s4">W22 — kontrola pH i zobojętniania (2026-10-09, GPT-6)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele lekcji (+ 80/20)</a><a class="toc-link" href="#s3">3. Co trzeba wiedzieć wcześniej</a><a class="toc-link" href="#s4">4. Zacznij od problemu</a><a class="toc-link" href="#s5">5. Ściąga</a><a class="toc-link" href="#s6">6. Wyjaśnienie od podstaw</a><a class="toc-link" href="#s7">7. LO — obliczanie pH mocnych elektrolitów</a><a class="toc-link" href="#s8">8. Klinika błędów</a><a class="toc-link" href="#s9">9. Ćwiczenia z kluczem</a><a class="toc-link" href="#s10">10. Test końcowy (3+2+2+1)</a><a class="toc-link" href="#s11">11. Checklista</a><a class="toc-link" href="#s12">12. Słownik</a><a class="toc-link" href="#s13">MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22, zachowane bez zmian)</a><a class="toc-link" href="#s14">Odczyn i pH — materiał wstępny</a><a class="toc-link" href="#s15">AUDYT Grok — 2026-10-09</a><a class="toc-link" href="#s16">SCALENIE — Claude, 2026-10-09</a></nav></details>
+<p><strong>Dział:</strong> Chemia jonowa (blok J)
+<strong>Poziomy:</strong> E8 · LO (obliczenia pH)
+<strong>Poprzednia:</strong> J01 (dysocjacja)
+<strong>Następna:</strong> J03 (reakcje jonowe)</p>
 <section id="s1">
-<div class="part-heading">TREŚĆ KANONICZNA PO W1 — ODCZYN I pH</div>
+<div class="part-heading">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</div>
+<ol>
+<li>Odczyn: kwasowy (pH &lt; 7), obojętny (pH = 7), zasadowy (pH > 7) — przy ~25 °C.</li>
+<li>pH = −log[H₃O⁺] (przybliżenie szkolne dla rozcieńczonych roztworów).</li>
+<li>Skala logarytmiczna: ΔpH = 1 → 10× zmiana [H₃O⁺].</li>
+<li>Wskaźnik zmienia barwę w zakresie — nie podaje dokładnego pH.</li>
+<li>Fenoloftaleina: bezbarwna (kwaśny/obojętny) → malinowa (zasadowy).</li>
+<li>Oranż metylowy: czerwony (kwaśny) → żółty (mniej kwaśny).</li>
+<li>Uniwersalny papierek / wywar z kapusty — wynik orientacyjny.</li>
+<li>Zobojętnianie: H₃O⁺ + OH⁻ → 2H₂O (szkolnie H⁺ + OH⁻ → H₂O).</li>
+<li>pH po zobojętnieniu mocny+mocny ≈ 7; nie zawsze dokładnie 7.</li>
+<li>(LO) Dla mocnego kwasu [H₃O⁺] ≈ c; pH = −log c.</li>
+</ol>
+<h3>Diagnoza wejściowa</h3>
+<ol>
+<li>Jaki odczyn ma roztwór o pH 3 (25 °C)?</li>
+<li>Który ma większe [H₃O⁺]: pH 2 czy pH 5?</li>
+<li>Czy wskaźnik podaje dokładne pH?</li>
+<li>Zapisz zobojętnianie HCl + NaOH (cząsteczkowo i jonowo skrócone).</li>
+<li>Co robi fenoloftaleina w NaOH?</li>
+<li>Czy pH = 7 zawsze oznacza roztwór obojętny niezależnie od temperatury?</li>
+</ol>
+<p><strong>Klucz:</strong> 1 kwasowy; 2 pH 2 (1000× większe); 3 nie; 4 HCl+NaOH→NaCl+H₂O ; H⁺+OH⁻→H₂O; 5 malinowa/różowa; 6 nie (zależy od T).</p>
+<p><strong>Pytanie przewodnie:</strong> Jak jednym liczbą (pH) opisać, czy roztwór jest „kwaśny” czy „zasadowy” i jak to sprawdzić bez smakowania?</p>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">2</span> Cele lekcji (+ 80/20)</div>
+<ul>
+<li>Określa odczyn roztworu na podstawie pH lub barwy wskaźnika.</li>
+<li>Posługuje się skalą pH i rozumie jej logarytmiczny charakter.</li>
+<li>Dobiera i interpretuje wskaźniki (fenoloftaleina, oranż, uniwersalny).</li>
+<li>Zapisuje reakcję zobojętniania (cząsteczkowo i jonowo).</li>
+<li>(LO) Oblicza pH roztworów mocnych kwasów i zasad.</li>
+</ul>
+<p><strong>80/20:</strong> odczyt odczynu z pH, barwy wskaźników, zapis H⁺ + OH⁻ → H₂O.</p>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">3</span> Co trzeba wiedzieć wcześniej</div>
+<ul>
+<li>Dysocjacja → H₃O⁺ / OH⁻ (J01).</li>
+<li>Mocne vs słabe elektrolity.</li>
+<li>Stężenie molowe (R03 / F).</li>
+</ul>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">4</span> Zacznij od problemu</div>
+<p>Sok z cytryny, woda destylowana, roztwór mydła — jak je rozróżnić bez smaku?
+Hipoteza: „po kolorze” / „po zapachu”.
+Po lekcji: wskaźnik lub pH-metr + skala.</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">5</span> Ściąga</div>
+<div class="table-wrap"><table>
+<thead><tr><th>pH (≈25 °C)</th><th>Odczyn</th><th>[H₃O⁺] (przybliżenie)</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>&lt; 7</td><td>kwasowy</td><td>> 10⁻⁷ mol/dm³</td><td>sok cytrynowy, HCl</td></tr>
+<tr><td>= 7</td><td>obojętny</td><td>≈ 10⁻⁷</td><td>czysta woda</td></tr>
+<tr><td>> 7</td><td>zasadowy</td><td>&lt; 10⁻⁷</td><td>mydło, NaOH</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Wskaźnik</th><th>Kwaśny</th><th>Przejście</th><th>Zasadowy</th></tr></thead>
+<tbody>
+<tr><td>Fenoloftaleina</td><td>bezbarwna</td><td>~8,2–10</td><td>malinowa</td></tr>
+<tr><td>Oranż metylowy</td><td>czerwony</td><td>~3,1–4,4</td><td>żółty</td></tr>
+<tr><td>Lakmus</td><td>czerwony</td><td>~5–8</td><td>niebieski</td></tr>
+<tr><td>Uniwersalny</td><td>skala barw</td><td>—</td><td>skala barw</td></tr>
+</tbody></table></div>
+<p><strong>Mnemotechnika:</strong> <strong>Fenoloftaleina lubi zasady</strong> (malinowa w zasadowym).
+<strong>Oranż czerwony jak kwas.</strong></p>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">6</span> Wyjaśnienie od podstaw</div>
+<h3>6A. Skąd się bierze odczyn?</h3>
+<p>Woda autodysocjuje: 2H₂O ⇌ H₃O⁺ + OH⁻.
+W czystej wodzie [H₃O⁺] = [OH⁻] ≈ 10⁻⁷ mol/dm³ (25 °C) → pH = 7.
+Dodatek kwasu → więcej H₃O⁺ → pH spada.
+Dodatek zasady → więcej OH⁻ → [H₃O⁺] spada → pH rośnie.</p>
+<h3>6B. Skala logarytmiczna</h3>
+<p>pH = −log[H₃O⁺]
+ΔpH = 1 → [H₃O⁺] zmienia się 10-krotnie.
+ΔpH = 2 → 100-krotnie.</p>
+<h3>6C. Przykłady prowadzone</h3>
+<p><strong>Przykład 1:</strong> pH = 3 → odczyn kwasowy; [H₃O⁺] ≈ 10⁻³ mol/dm³.
+<strong>Przykład 2:</strong> 0,01 mol/dm³ HCl (mocny) → [H₃O⁺] ≈ 0,01 → pH = 2.
+<strong>Przykład 3:</strong> 0,01 mol/dm³ NaOH → [OH⁻] ≈ 0,01 → [H₃O⁺] ≈ 10⁻¹² → pH = 12.
+<strong>Przykład 4:</strong> Zobojętnianie: HCl + NaOH → NaCl + H₂O; jonowo: H₃O⁺ + OH⁻ → 2H₂O.</p>
+<h3>6D. Powiązania</h3>
+<ul>
+<li>J01 → źródło H₃O⁺ i OH⁻.</li>
+<li>J03 → zapis jonowy zobojętniania.</li>
+<li>J12 → miareczkowanie (punkt równoważnikowy + wskaźnik).</li>
+</ul>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">7</span> LO — obliczanie pH mocnych elektrolitów</div>
+<p>Dla mocnego kwasu jednoprotonowego: [H₃O⁺] ≈ c → pH = −log c.
+Dla mocnej zasady: [OH⁻] ≈ c → pOH = −log c → pH = 14 − pOH (25 °C).
+Uwaga: przy bardzo małych stężeniach (&lt; ~10⁻⁶) trzeba uwzględnić autodysocjację wody.</p>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">8</span> Klinika błędów</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Popraw</th><th>Reguła</th></tr></thead>
+<tbody>
+<tr><td>„pH 6 to prawie obojętne, więc OK”</td><td>pH 6 jest 10× bardziej kwaśne niż 7</td><td>Logarytm</td></tr>
+<tr><td>Wskaźnik = dokładne pH</td><td>Wskaźnik = zakres</td><td>Zakres przejścia</td></tr>
+<tr><td>Zobojętnianie zawsze pH 7</td><td>Tylko mocny+mocny w równoważnych ilościach</td><td>Hydroliza soli</td></tr>
+<tr><td>Smakowanie / wąchanie</td><td>Zakaz</td><td>BHP</td></tr>
+<tr><td>pH 7 niezależnie od T</td><td>Tylko ~25 °C</td><td>Kw zależy od T</td></tr>
+</tbody></table></div>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">9</span> Ćwiczenia z kluczem</div>
+<ol>
+<li>Określ odczyn: pH 1,5; 7,0; 9,2; 13.</li>
+<li>Który roztwór ma większe [H₃O⁺]: pH 4 czy pH 6? Ile razy?</li>
+<li>Zapisz cząsteczkowo i jonowo skrócone: H₂SO₄ + 2KOH.</li>
+<li>Jaka barwa fenoloftaleiny w HCl, a jaka w KOH?</li>
+<li>(LO) Oblicz pH: 0,001 mol/dm³ HNO₃; 0,1 mol/dm³ NaOH.</li>
+</ol>
+<p><strong>Klucz:</strong>
+1. kwasowy, obojętny, zasadowy, zasadowy.
+2. pH 4 — 100× większe.
+3. H₂SO₄+2KOH→K₂SO₄+2H₂O; H⁺+OH⁻→H₂O (lub H₃O⁺+OH⁻→2H₂O).
+4. bezbarwna; malinowa.
+5. pH=3; pH=13.</p>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">10</span> Test końcowy (3+2+2+1)</div>
+<p>A. (3) Podaj odczyn i przybliżone [H₃O⁺] dla pH 2, 7, 11 (25 °C).
+B. (2) Prawda/fałsz: a) Zmiana pH o 1 = 10× [H₃O⁺]. b) Fenoloftaleina jest czerwona w kwasie.
+C. (2) Zapisz zobojętnianie HBr + KOH (cząst. + jon. skrócone).
+D. (1) Dlaczego nie wolno określać odczynu smakiem?</p>
+<p><strong>Klucz:</strong> A: kwasowy ~10⁻²; obojętny ~10⁻⁷; zasadowy ~10⁻¹¹. B: P, F. C: HBr+KOH→KBr+H₂O; H⁺+OH⁻→H₂O. D: substancje mogą być trujące/żrące.</p>
+</section>
+<section id="s11">
+<div class="part-heading"><span class="part-num">11</span> Checklista</div>
+<ul>
+<li>[ ] Odczytam odczyn z pH.</li>
+<li>[ ] Znam barwy głównych wskaźników.</li>
+<li>[ ] Zapisuję zobojętnianie.</li>
+<li>[ ] (LO) Liczę pH mocnego kwasu/zasady.</li>
+</ul>
+</section>
+<section id="s12">
+<div class="part-heading"><span class="part-num">12</span> Słownik</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+<tbody>
+<tr><td>Odczyn</td><td>Charakter roztworu: kwasowy / obojętny / zasadowy</td></tr>
+<tr><td>pH</td><td>−log[H₃O⁺] (przybliżenie szkolne)</td></tr>
+<tr><td>Wskaźnik</td><td>Substancja zmieniająca barwę w zależności od pH</td></tr>
+<tr><td>Zobojętnianie</td><td>Reakcja kwasu z zasadą → sól + woda</td></tr>
+</tbody></table></div>
+</section>
+<section id="s13">
+<div class="part-heading">MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22, zachowane bez zmian)</div>
+<p class="mini-note">Treść kanonu sprzed rozbudowy W23 — zachowana w całości, bo lekcja Groka napisana od nowa jej nie zawierała. Poprzedni stan: W22 — GPT-6, 2026-10-09; audyt przekrojowy równań i modeli, pełna niezależna recenzja nadal otwarta</p>
+</section>
+<section id="s14">
+<div class="part-heading">Odczyn i pH — materiał wstępny</div>
+<h3>TREŚĆ KANONICZNA PO W1 — ODCZYN I pH</h3>
 <p>Odczyn roztworu opisuje jego charakter kwasowy, obojętny lub zasadowy w określonych warunkach. W uproszczonym modelu szkolnym przy 25°C: pH &lt; 7 oznacza odczyn kwasowy, pH = 7 obojętny, a pH > 7 zasadowy. Wartość pH obojętnego roztworu zależy od temperatury, dlatego reguły z liczbą 7 stosuj z podanym warunkiem temperatury.</p>
 <p>Skala pH jest logarytmiczna: zmiana o jedną jednostkę odpowiada dziesięciokrotnej zmianie aktywności H₃O⁺. W prostych zadaniach rozcieńczonych roztworów używa się przybliżenia pH = −log[H₃O⁺], które nie jest uniwersalnym dokładnym opisem wszystkich roztworów.</p>
-<h3>Wskaźniki</h3>
+<h4>Wskaźniki</h4>
 <p>Wskaźnik zmienia barwę w pewnym zakresie pH; nie podaje zwykle dokładnej wartości pH. Uniwersalny papierek daje wynik orientacyjny. Fenoloftaleina jest bezbarwna w środowisku kwaśnym i w przybliżeniu obojętnym, a malinowa w zasadowym zakresie przejścia. Oranż metylowy jest czerwony w kwaśnym zakresie, przechodzi przez barwę pomarańczową i żółknie przy wyższym pH. Kolor zależy od zakresu przejścia i warunków pomiaru.</p>
-<h3>Zobojętnianie</h3>
+<h4>Zobojętnianie</h4>
 <p>Dla mocnego kwasu i mocnej zasady w zapisie jonowym skróconym: H₃O⁺ + OH⁻ → 2H₂O (równoważny zapis szkolny: H⁺ + OH⁻ → H₂O). Zmiana barwy wskaźnika wskazuje zakres, a nie zawsze dokładny punkt równoważnikowy. Podczas doświadczeń nie próbuj odczynników smakiem ani bezpośrednim wąchaniem.</p>
-<h3>Sprawdź się</h3>
+<h4>Sprawdź się</h4>
 <ol>
 <li>Przy 25°C roztwór o pH 3 ma jaki odczyn? <strong>Kwasowy.</strong></li>
 <li>Czy pH 6 oznacza dziesięć razy większą aktywność H₃O⁺ niż pH 7? <strong>W przybliżeniu tak.</strong></li>
 <li>Czy wskaźnik zawsze daje dokładną wartość pH? <strong>Nie, zwykle wskazuje zakres.</strong></li>
 </ol>
-</section>
-<section id="s2">
-<div class="part-heading">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</div>
+<h3>AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</h3>
 <p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexity_J01-J00_2026-10-09.md</code>. Weryfikacja treści wysłanego zapisu, nie zakresu.</p>
-<h3>J02 — Odczyn i pH</h3>
-<h4>Cel</h4>
+<h4>J02 — Odczyn i pH</h4>
+<h5>Cel</h5>
 <p>Uczeń powinien:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
@@ -634,7 +797,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>rozróżnić wskaźnik od pomiaru pH;</li>
 <li>zapisać reakcję zobojętniania.</li>
 </ul>
-<h4>Rdzeń</h4>
+<h5>Rdzeń</h5>
 <p>pH jest miarą kwasowości roztworu. W dokładnym ujęciu zależy od aktywności jonów hydroniowych, a w modelu szkolnym wiąże się ze stężeniem H₃O⁺.</p>
 <p>W przybliżeniu:</p>
 <p>pH=-log[H₃O⁺]</p>
@@ -646,10 +809,10 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>pH>7 — odczyn zasadowy.</li>
 </ul>
 <p>Wartość 7 jako pH obojętnego dotyczy określonej temperatury i czystej wody w odpowiednim modelu. Nie jest bezwarunkową regułą dla każdej temperatury i każdego roztworu.</p>
-<h5>Skala logarytmiczna</h5>
+<h6>Skala logarytmiczna</h6>
 <p>Zmiana pH o jedną jednostkę odpowiada dziesięciokrotnej zmianie stężenia jonów hydroniowych w prostym modelu.</p>
 <p>Roztwór o pH 3 ma około dziesięć razy większe stężenie jonów hydroniowych niż roztwór o pH 4.</p>
-<h4>Wskaźniki</h4>
+<h5>Wskaźniki</h5>
 <p>Wskaźnik zmienia barwę w określonym zakresie pH.</p>
 <p>Przykłady:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
@@ -661,29 +824,29 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>wywar z czerwonej kapusty.</li>
 </ul>
 <p>Barwa zależy od rodzaju wskaźnika i jego zakresu zmiany. Sam kolor bez informacji o wskaźniku nie wystarcza do dokładnego wyznaczenia pH.</p>
-<h5>Fenoloftaleina</h5>
+<h6>Fenoloftaleina</h6>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
 <li>w środowisku kwaśnym i obojętnym jest bezbarwna;</li>
 <li>w odpowiednio zasadowym środowisku przyjmuje barwę różową lub malinową.</li>
 </ul>
-<h5>Oranż metylowy</h5>
+<h6>Oranż metylowy</h6>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
 <li>w środowisku kwaśnym jest czerwony;</li>
 <li>w zakresie przejściowym przyjmuje barwy pośrednie;</li>
 <li>w środowisku mniej kwaśnym jest żółty.</li>
 </ul>
-<h4>Pomiar pH</h4>
+<h5>Pomiar pH</h5>
 <p>Do dokładniejszego pomiaru można użyć pH-metru. Wskaźnik barwny daje najczęściej wynik przybliżony.</p>
 <p>Nie należy utożsamiać pH z „siłą żrącą”. Niektóre roztwory o podobnym pH mogą mieć różne właściwości, a niebezpieczeństwo zależy także od stężenia, rodzaju substancji i czasu kontaktu.</p>
-<h4>Zobojętnianie</h4>
+<h5>Zobojętnianie</h5>
 <p>Reakcja kwasu z zasadą, w której powstają sól i woda, jest reakcją zobojętniania.</p>
 <p>HCl+NaOH→ NaCl+H₂O</p>
 <p>Jonowo skrócone:</p>
 <p>H⁺+OH⁻→ H₂O</p>
 <p>Zobojętnianie nie oznacza automatycznie, że końcowe pH zawsze wynosi dokładnie 7. Zależy ono od mocy kwasu i zasady, ich ilości oraz ewentualnej hydrolizy soli.</p>
-<h4>Zadania</h4>
+<h5>Zadania</h5>
 <ol>
 <li>Jaki odczyn ma roztwór o pH 2?</li>
 <li>Jaki odczyn ma roztwór o pH 11?</li>
@@ -692,7 +855,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>Dlaczego wskaźnik uniwersalny nie daje tak dokładnego wyniku jak pH-metr?</li>
 <li>Co dzieje się z pH kwaśnego roztworu podczas dodawania zasady?</li>
 </ol>
-<h4>Klucz</h4>
+<h5>Klucz</h5>
 <ol>
 <li>Kwaśny.</li>
 <li>Zasadowy.</li>
@@ -704,17 +867,25 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>Barwa obejmuje zakres pH i zależy od warunków obserwacji.</li>
 <li>pH na ogół rośnie, czyli roztwór staje się mniej kwaśny.</li>
 </ol>
-</section>
-<section id="s3">
-<div class="part-heading">W21 — zakres wskaźnika a dokładny punkt pH (2026-10-09, GPT-6)</div>
+<h3>W21 — zakres wskaźnika a dokładny punkt pH (2026-10-09, GPT-6)</h3>
 <p>Barwa wskaźnika zależy od jego zakresu zmiany barwy i warunków pomiaru. Nie należy z samej pojedynczej barwy wyznaczać dokładnej wartości pH ani utożsamiać zmiany barwy z dokładnym punktem równoważnikowym miareczkowania. Do wyniku liczbowego używa się odpowiedniej metody pomiaru lub skali porównawczej.</p>
-</section>
-<section id="s4">
-<div class="part-heading">W22 — kontrola pH i zobojętniania (2026-10-09, GPT-6)</div>
+<h3>W22 — kontrola pH i zobojętniania (2026-10-09, GPT-6)</h3>
 <ul>
 <li><strong>Sprawdzono:</strong> <code>HNO₃ + KOH → KNO₃ + H₂O</code> jest zbilansowane. W modelu jonowym skróconym <code>H⁺ + OH⁻ → H₂O</code> to zapis szkolny; w wodzie dokładniej <code>H₃O⁺ + OH⁻ → 2H₂O</code>.</li>
 <li><strong>Doprecyzowano interpretację:</strong> różnica pH o 2 jednostki odpowiada w prostym modelu około stukrotnej różnicy stężenia H₃O⁺, nie dziesięciokrotnej. Barwa wskaźnika nie wyznacza sama dokładnego pH.</li>
 <li><strong>Ograniczenie:</strong> sprawdzono przykłady i reguły wskazane w raporcie, nie każdy wariant zadania.</li>
+</ul>
+</section>
+<section id="s15">
+<div class="part-heading">AUDYT Grok — 2026-10-09</div>
+<p><strong>Co zmieniono:</strong> Pełna rozbudowa z ~6,6 KB materiału wstępnego do struktury kanonicznej. Zachowano treść W1/W21/W22 (skala, wskaźniki, zobojętnianie, ograniczenia temperatury). Dodano kartę, cele, ściągę, przykłady LO, klinikę, ćwiczenia, test, checklistę, słownik.
+<strong>Otwarte:</strong> wartości zakresów wskaźników [do weryfikacji w tablicach], niezależna recenzja, arkusze CKE.
+<strong>Status:</strong> UZUPEŁNIONE.</p>
+</section>
+<section id="s16">
+<div class="part-heading">SCALENIE — Claude, 2026-10-09</div>
+<ul>
+<li>Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przy budowie lekcji: sprawdzić, czy uwagi W22 są uwzględnione w części głównej.</li>
 </ul>
 </section>
 

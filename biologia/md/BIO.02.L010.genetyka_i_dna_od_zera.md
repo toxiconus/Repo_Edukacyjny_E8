@@ -492,6 +492,75 @@ Czym jest DNA, gdzie jest w komórce i czego ten skrót **nie** oznacza?
 - Doklejono warstwę DNA-od-zera z HTML v3.0 (widgety zostają w HTML).
 - Ten plik (`v4.2_AUDYTOWANA_WORKING`) jest od teraz **MD roboczym** biologii.
 
+
+
+## UZUPEŁNIENIE PO AUDYCIE — precyzja pojęć i pełniejszy trening
+
+### Korekta ważnych uproszczeń
+
+1. **Cechy dziedziczne nie muszą być prosto „zapisane w DNA” jako gotowa instrukcja wyglądu.** DNA zawiera sekwencje, które wpływają na działanie komórek; cechy powstają przez współdziałanie wielu genów, regulacji, środowiska i rozwoju.
+2. **Nie każda cecha dziedziczna jest niezmienna.** Wiele cech zależy również od środowiska, a ekspresja genów może się zmieniać w trakcie życia.
+3. **Cechy nabyte nie są automatycznie dziedziczone jako takie.** Przykładowo blizna nie jest przekazywana potomstwu. Nie należy jednak formułować ogólnej reguły, że środowisko nigdy nie może wpływać na informacje biologiczne przekazywane między pokoleniami; zjawiska epigenetyczne są bardziej złożone i nie uzasadniają dziedziczenia dowolnych nabytych cech.
+4. **Fenotyp nie jest prostym równaniem liczbowym.** Zapis „fenotyp = genotyp + środowisko” jest skrótem myślowym oznaczającym ich współdziałanie, a nie dodawanie wartości.
+5. **Dominujący nie znaczy częstszy, silniejszy ani lepszy.** Dominacja opisuje sposób ujawniania się alleli w określonym układzie, a częstość allelu zależy od populacji i historii ewolucyjnej.
+
+### 6E. Gen, allel, genotyp i fenotyp
+
+- **Gen** — odcinek DNA, którego informacja przyczynia się do powstania funkcjonalnego produktu, np. RNA lub białka.
+- **Allel** — jedna z wersji danego genu lub sekwencji genetycznej.
+- **Genotyp** — zestaw wariantów genetycznych osobnika w rozpatrywanym zakresie.
+- **Fenotyp** — obserwowalne lub mierzalne właściwości organizmu, wynikające z genotypu, środowiska i rozwoju.
+
+Nie należy używać słów „gen”, „DNA”, „chromosom” i „cecha” zamiennie. Gen jest fragmentem DNA; DNA jest składnikiem chromosomów; cecha jest właściwością organizmu, na którą informacja genetyczna może wpływać.
+
+### 6F. Dlaczego rodzeństwo nie jest identyczne?
+
+Rodzeństwo biologiczne tych samych rodziców zwykle otrzymuje różne kombinacje alleli. Podczas mejozy chromosomy rozchodzą się niezależnie, a crossing-over może tworzyć nowe kombinacje odcinków. Dodatkowo zapłodnienie łączy losowo jedną z gamet jednego rodzica z jedną z gamet drugiego. Środowisko i przebieg rozwoju również wpływają na fenotyp. Wyjątkiem pod względem podobieństwa genetycznego są m.in. bliźnięta jednojajowe, choć także one nie są identyczne pod każdym względem przez całe życie.
+
+### 6G. Przykłady klasyfikacji cech — ostrożnie
+
+| Przykład | Jak go opisać | Uwaga |
+|---|---|---|
+| Grupa krwi ABO | cecha o silnym uwarunkowaniu genetycznym | nie należy wnioskować o całym genotypie wyłącznie z wyglądu |
+| Blizna | cecha nabyta | sama blizna nie jest dziedziczona |
+| Wzrost | cecha wieloczynnikowa | zależy od wielu wariantów genetycznych, rozwoju i warunków środowiska |
+| Umiejętność posługiwania się językiem | nabyta zdolność oparta na biologicznych predyspozycjach i uczeniu | nie jest przekazywana jako konkretny język zapisany w DNA |
+| Kolor oczu | cecha o podłożu genetycznym, złożona | nie należy przedstawiać jej jako prostego przykładu jednego genu i dwóch alleli |
+
+### Klinika błędów — uzupełnienie
+
+| Twierdzenie | Co jest nie tak? | Lepsze wyjaśnienie |
+|---|---|---|
+| „Jeśli cecha jest dziedziczna, środowisko nie ma znaczenia”. | Pomija cechy wieloczynnikowe. | Geny i środowisko mogą współdziałać. |
+| „Dominujący allel jest częstszy”. | Myli dwa różne pojęcia. | Dominacja dotyczy ujawniania fenotypu, częstość — populacji. |
+| „Gen to mały organizm, który powoduje cechę”. | Błędny poziom organizacji. | Gen to odcinek DNA, którego produkt może wpływać na cechę. |
+| „Wzrost jest w całości zapisany w genach”. | Pomija żywienie, zdrowie, hormony i rozwój. | Wzrost jest wieloczynnikowy. |
+| „Dziecko dziedziczy język rodziców”. | Myli zdolności biologiczne z uczeniem się konkretnej umiejętności. | Dziecko zwykle uczy się języka w środowisku, w którym dorasta. |
+
+### Zadania transferowe
+
+1. Wyjaśnij, dlaczego stwierdzenie „geny odpowiadają za wzrost” jest częściowo poprawne, ale niepełne.
+2. Podaj przykład cechy dziedzicznej i nabytej, a następnie wyjaśnij, dlaczego nie wolno ich utożsamiać.
+3. Uczeń mówi: „Allel dominujący musi występować u większości ludzi”. Popraw jego wypowiedź.
+4. Dlaczego dwoje rodzeństwa może różnić się wyglądem, mimo że ma tych samych rodziców?
+5. Wytłumacz różnicę między genem a cechą w trzech logicznych krokach.
+
+**Klucz odpowiedzi:**
+1. Warianty genetyczne wpływają na potencjał wzrostu, ale znaczenie mają także odżywianie, zdrowie, hormony i rozwój.
+2. Np. grupa krwi — uwarunkowana genetycznie; blizna — nabyta. Blizna nie jest przekazywana jako taka w DNA gamet.
+3. Dominacja opisuje relację alleli w określonym układzie, a nie częstość w populacji.
+4. Mejoza tworzy różne kombinacje alleli, gamety łączą się losowo, a środowisko także wpływa na cechy.
+5. Gen to odcinek DNA; jego informacja wpływa na produkt lub regulację; działanie wielu elementów wraz ze środowiskiem może przyczyniać się do cechy.
+
+### Audyt uzupełniający L010
+
+- Wzmocniono precyzję pojęć gen/allel/genotyp/fenotyp.
+- Ograniczono ryzyko nadmiernego uproszczenia cech dziedzicznych i nabytych.
+- Dopisano przykłady, klinikę błędów i zadania transferowe z kluczem.
+- Zachowano istniejące treści i strukturę; niniejszy blok jest dodatkiem, a nie zamiennikiem wcześniejszego materiału.
+- Do dalszej kontroli pozostaje zgodność wszystkich sekcji z finalnym szablonem 0–22 i poprawność ich renderowania w HTML.
+
+
 <!-- ==================== END L010 ==================== -->
 
 

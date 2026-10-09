@@ -427,3 +427,33 @@ Grupy ABO mogą wykluczyć niektóre kombinacje rodzic–dziecko w prostym model
 - Nie utożsamiać zgodności ABO z pełną zgodnością transfuzji: w praktyce uwzględnia się także Rh, inne antygeny i badania przedtransfuzyjne.
 - Konflikt Rh nie jest tym samym co niezgodność ABO; ryzyko i profilaktyka zależą od sytuacji klinicznej, a nie wyłącznie od samego skrótu grupy krwi.
 - **Status:** dodano kryteria interpretacji; pełna walidacja każdego zadania i klucza nadal wymagana.
+
+## AUDYT GENETYKI — układ ABO i Rh bez niebezpiecznych uproszczeń (2026-10-09)
+
+### Dlaczego układ ABO nie pasuje do prostego modelu A/a?
+W szkolnym modelu układu ABO występują trzy allele: Iᴬ, Iᴮ oraz i. Allele Iᴬ i Iᴮ są względem siebie kodominujące — u osoby z genotypem IᴬIᴮ ujawniają się oba antygeny. Każdy z nich dominuje nad allelem i. Stąd genotypy: grupa A — IᴬIᴬ lub Iᴬi; grupa B — IᴮIᴮ lub Iᴮi; grupa AB — IᴬIᴮ; grupa 0 — ii.
+
+### Fenotyp nie zawsze wskazuje jeden genotyp
+Osoba z grupą A może mieć genotyp IᴬIᴬ albo Iᴬi. Sam wynik grupy krwi A nie pozwala rozstrzygnąć, który z tych genotypów występuje. Podobnie grupa B może odpowiadać IᴮIᴮ lub Iᴮi. To przykład, że ta sama cecha obserwowana może wynikać z różnych genotypów.
+
+### Przykład krzyżówki
+Jeśli rodzice mają genotypy Iᴬi oraz Iᴮi, każde z rodziców może przekazać jeden z dwóch alleli. Możliwe genotypy potomstwa to IᴬIᴮ (AB), Iᴬi (A), Iᴮi (B) oraz ii (0). W prostym modelu każda z czterech kombinacji ma prawdopodobieństwo 1/4. Nie oznacza to, że wszystkie grupy muszą pojawić się w rodzinie ani że kolejność urodzeń jest przewidywalna.
+
+### A co z czynnikiem Rh?
+Rh to odrębny układ antygenów, a nie kolejny allel układu ABO. W szkolnych zadaniach często stosuje się uproszczony model, w którym allel D warunkuje Rh dodatni i dominuje nad d. Wtedy DD i Dd oznaczają Rh+, a dd — Rh−. W rzeczywistości układ Rh jest bardziej złożony; zadanie powinno wyraźnie określać, że używa uproszczonego modelu.
+
+### Ważna granica zastosowania
+Krzyżówki genetyczne pomagają zrozumieć dziedziczenie, ale nie służą do samodzielnego podejmowania decyzji o transfuzji ani do ustalania ojcostwa. W praktyce medycznej stosuje się odpowiednie badania i procedury laboratoryjne; sama grupa krwi nie wystarcza do rozstrzygnięcia takich spraw.
+
+### Zadania kontrolne z odpowiedziami
+1. **Dlaczego IᴬIᴮ daje grupę AB?** Ponieważ allele Iᴬ i Iᴮ są kodominujące.
+2. **Czy grupa A wskazuje jednoznacznie genotyp IᴬIᴬ?** Nie; możliwe są IᴬIᴬ i Iᴬi.
+3. **Czy rodzice Iᴬi i Iᴮi mogą mieć dziecko z grupą 0 w modelu szkolnym?** Tak, jeśli oboje przekażą allel i; prawdopodobieństwo wynosi 1/4.
+4. **Czy ABO i Rh to ten sam układ?** Nie, są odrębnymi układami antygenów.
+
+### Audyt końcowy L019
+- Wyjaśniono wieloalleliczność, kodominację i dominację nad allelem i.
+- Dodano przykład krzyżówki z grupami A, B, AB i 0.
+- Oddzielono szkolny model Rh od rzeczywistej złożoności biologicznej.
+- Dodano ostrzeżenie przed używaniem uproszczonych krzyżówek do decyzji medycznych lub ustalania pokrewieństwa.
+

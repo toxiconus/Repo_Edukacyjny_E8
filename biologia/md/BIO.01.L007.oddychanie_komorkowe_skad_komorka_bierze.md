@@ -1,6 +1,202 @@
 # L007 — Oddychanie komórkowe: skąd komórka bierze użyteczną energię?
 
 ## KARTA LEKCJI L007
+- Numer: L007
+- Tytuł: Oddychanie komórkowe — skąd komórka bierze użyteczną energię?
+- Dział: Fizjologia i metabolizm
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L006 · Następna: L008
+- Status treści: po audycie redakcyjnym i merytorycznym; przed niezależną recenzją nauczycielską
+- Status HTML: brak HTML; plik jest źródłem treści i specyfikacji wizualnej
+- Zasada redakcyjna: archiwum oryginału zachowano na końcu; sekcje 0–22 są wersją kanoniczną
+
+## 0. MAPA LEKCJI I WARSTWA WIZUALNA
+**Pytanie centralne:** Jak energia ze związków organicznych staje się dostępna do pracy komórki?
+
+**Główny schemat:** `glukoza + O₂ → CO₂ + H₂O + energia przekazana m.in. do ATP` — z dopiskiem, że to zapis sumaryczny oddychania tlenowego.
+**Schemat komórki:** glikoliza w cytozolu; u eukariontów dalsze główne etapy oddychania tlenowego związane z mitochondrium. Nie rysować mitochondrium jako miejsca każdego etapu.
+**Porównanie:** fotosynteza, oddychanie tlenowe, fermentacja i wymiana gazowa muszą mieć oddzielne definicje.
+**Pułapka wizualna:** ATP to przenośnik energii wykorzystywany przez komórkę, a nie „energia sama w sobie” ani długoterminowy magazyn całej energii organizmu.
+
+## 1. Problem na początek
+Komórka musi budować swoje składniki, transportować substancje, naprawiać struktury i czasem się poruszać. Skąd bierze energię do tych zadań, skoro sama glukoza nie jest bezpośrednio wykorzystywana w każdej reakcji?
+
+## 2. Podstawa E8 — czym jest oddychanie komórkowe?
+**Oddychanie komórkowe** to zespół reakcji, w których energia związków organicznych zostaje uwolniona i przekazana w formie użytecznej dla komórki, między innymi do ATP. W oddychaniu tlenowym tlen uczestniczy w końcowym etapie łańcucha transportu elektronów.
+
+Uproszczone równanie sumaryczne oddychania tlenowego:
+
+`C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (część przekazana do ATP)`
+
+Równanie pokazuje ogólny bilans przemiany glukozy, a nie jeden etap. Nie oznacza też, że cała energia glukozy jest przechwytywana w ATP — część rozprasza się jako ciepło. Dokładny bilans ATP zależy od warunków i sposobu liczenia, dlatego nie należy bez kontekstu podawać jednej liczby jako bezwzględnie uniwersalnej.
+
+## 3. Po co komórce ATP?
+ATP (adenozynotrifosforan) jest cząsteczką, której przemiany pozwalają sprzęgać reakcje uwalniające energię z procesami, które jej wymagają. Można porównać je do krótkotrwałego nośnika energii: jest stale zużywane i odtwarzane.
+
+ATP jest wykorzystywane m.in. do:
+- transportu aktywnego przez błony;
+- syntezy białek i innych związków;
+- skurczu mięśni i ruchu struktur komórkowych;
+- podziałów i wzrostu komórek;
+- utrzymywania gradientów jonowych oraz innych procesów wymagających nakładu energii.
+
+ATP nie jest jedyną cząsteczką uczestniczącą w przekazywaniu energii i elektronów, ale jest kluczowym nośnikiem energii w wielu procesach komórkowych.
+
+## 4. Gdzie zachodzi oddychanie?
+U organizmów eukariotycznych **glikoliza** — pierwszy etap rozkładu glukozy — zachodzi w cytozolu. Dalsze główne etapy oddychania tlenowego są związane z mitochondriami: w macierzy mitochondrialnej zachodzą m.in. reakcje utleniania pirogronianu i cykl kwasu cytrynowego, a w wewnętrznej błonie mitochondrialnej działa łańcuch transportu elektronów i syntaza ATP.
+
+Bakterie nie mają mitochondriów, ale mogą prowadzić oddychanie z wykorzystaniem struktur błonowych komórki. Dlatego nie wolno definiować oddychania komórkowego jako procesu, który zawsze zachodzi w mitochondriach.
+
+## 5. Co robi tlen?
+W oddychaniu tlenowym tlen jest końcowym akceptorem elektronów w łańcuchu transportu elektronów. Umożliwia działanie tego układu i wydajne uzyskiwanie ATP. Nie jest „paliwem” w tym samym sensie co glukoza: glukoza dostarcza elektronów i energii chemicznej, a tlen pełni inną rolę w procesie.
+
+Brak tlenu może ograniczać oddychanie tlenowe, ale skutki zależą od organizmu, rodzaju komórki i warunków. Nie każda komórka ma te same możliwości uzyskiwania ATP bez tlenu.
+
+## 6. Oddychanie komórkowe a wymiana gazowa
+Te pojęcia opisują różne poziomy organizacji.
+
+- **Wymiana gazowa:** pobieranie tlenu i oddawanie dwutlenku węgla między organizmem a środowiskiem lub między płynami ustrojowymi a tkankami.
+- **Oddychanie komórkowe:** reakcje chemiczne w komórkach, w których energia związków organicznych jest udostępniana do pracy komórkowej.
+
+Oddychanie komórkowe może zachodzić tylko wtedy, gdy komórka ma odpowiednie substraty i warunki. Samo wdychanie powietrza nie jest tym samym procesem co reakcje zachodzące w komórkach.
+
+## 7. Oddychanie tlenowe a fermentacja — [MASTER]
+Gdy tlen nie jest dostępny w odpowiednich warunkach, niektóre komórki mogą uzyskiwać ATP dzięki procesom beztlenowym. W fermentacji glikoliza dostarcza niewielką ilość ATP, a przemiany produktów glikolizy pozwalają odtworzyć NAD⁺, potrzebny do dalszego przebiegu glikolizy.
+
+Przykłady:
+- **Fermentacja mlekowa:** zachodzi m.in. w komórkach niektórych bakterii; u człowieka przemiany prowadzące do mleczanu mogą zachodzić w mięśniach podczas intensywnego wysiłku lub ograniczonej dostępności tlenu, choć fizjologia mięśni jest bardziej złożona niż samo hasło „brak tlenu”.
+- **Fermentacja alkoholowa:** zachodzi m.in. u drożdży; wytwarzany jest etanol i CO₂.
+
+Fermentacja nie jest tym samym co oddychanie tlenowe i zwykle daje znacznie mniej ATP z jednej cząsteczki glukozy. Nie wszystkie organizmy ani komórki korzystają z tych samych szlaków.
+
+## 8. Fotosynteza a oddychanie komórkowe
+| Cecha | Fotosynteza tlenowa | Oddychanie tlenowe |
+|---|---|---|
+| Główna funkcja | synteza związków organicznych z użyciem energii światła | uzyskanie energii ze związków organicznych |
+| Substraty w równaniu sumarycznym | CO₂ i H₂O | glukoza i O₂ |
+| Produkty w równaniu sumarycznym | związki organiczne i O₂ | CO₂, H₂O i energia przekazana m.in. do ATP |
+| Miejsce u roślin | chloroplasty | cytozol oraz mitochondria |
+| Zależność od światła | bezpośrednio wymaga energii światła | nie wymaga światła |
+
+Nie są to procesy będące po prostu „odwróceniem” jeden drugiego w każdym szczególe. Mają różne mechanizmy, enzymy i etapy, choć ich bilanse sumaryczne wykazują powiązanie substratów i produktów.
+
+## 9. Rośliny również oddychają
+Rośliny potrzebują ATP do transportu substancji, wzrostu, syntezy związków i utrzymywania komórek. Dlatego oddychają komórkowo w dzień i w nocy. W świetle fotosynteza i oddychanie mogą zachodzić jednocześnie.
+
+Fotosynteza nie jest odpowiednikiem „oddychania rośliny”. Fotosynteza wykorzystuje energię światła do syntezy związków organicznych, a oddychanie udostępnia energię z tych związków. Część związków powstałych w fotosyntezie może później zostać wykorzystana w oddychaniu.
+
+## 10. Klinika błędów
+| Błędne stwierdzenie | Poprawka i uzasadnienie |
+|---|---|
+| Oddychanie komórkowe to oddychanie płucami. | Wymiana gazowa i reakcje komórkowe to różne procesy. |
+| ATP jest energią samą w sobie. | ATP jest cząsteczką przenoszącą energię w wielu reakcjach. |
+| Tlen jest paliwem, które komórka spala jak drewno. | W oddychaniu tlenowym tlen jest końcowym akceptorem elektronów. |
+| Oddychanie zachodzi tylko w mitochondriach. | Glikoliza zachodzi w cytozolu; bakterie nie mają mitochondriów. |
+| Tylko zwierzęta oddychają komórkowo. | Oddychanie komórkowe prowadzą rośliny, zwierzęta, grzyby i liczne inne organizmy. |
+| Rośliny w nocy przestają oddychać. | Oddychanie zachodzi również w ciemności. |
+| Cała energia glukozy zostaje zamieniona na ATP. | Część energii zostaje rozproszona; ATP przechwytuje tylko część. |
+| Fermentacja i oddychanie tlenowe są tym samym. | To różne szlaki, różniące się mechanizmem i uzyskiem ATP. |
+
+## 11. Model procesu i interpretacja
+`związek organiczny + O₂ → CO₂ + H₂O + energia chemiczna przekazana m.in. do ATP`
+
+Model przedstawia ogólny bilans oddychania tlenowego. Pomija pośrednie związki, enzymy, transport elektronów i regulację. Nie wolno wyciągać z niego wniosku, że proces zachodzi w jednym kroku ani że cała energia jest gromadzona w ATP.
+
+## 12. Ćwiczenia — od podstaw do transferu
+**A. Podstawy:** podaj dwie czynności komórki wymagające energii.
+
+**B. Rozróżnianie:** wyjaśnij różnicę między wymianą gazową a oddychaniem komórkowym.
+
+**C. Mechanizm:** jaka jest rola tlenu w oddychaniu tlenowym? Nie odpowiadaj wyłącznie „daje energię”.
+
+**D. Zastosowanie:** wyjaśnij, dlaczego roślina oddycha również w nocy.
+
+**E. [ZAAWANSOWANY]:** wyjaśnij, dlaczego bakteria może prowadzić oddychanie komórkowe mimo braku mitochondriów.
+
+**F. Analiza modelu:** wskaż dwa uproszczenia równania sumarycznego oddychania tlenowego.
+
+## 13. Odpowiedzi i sposób oceniania
+A. Np. transport aktywny, synteza białek, ruch, podział komórki.
+B. Wymiana gazowa opisuje wymianę gazów z otoczeniem lub między tkankami i krwią; oddychanie komórkowe to reakcje chemiczne w komórkach.
+C. Tlen jest końcowym akceptorem elektronów w łańcuchu transportu elektronów, co umożliwia wydajne wytwarzanie ATP.
+D. Komórki stale potrzebują ATP, a oddychanie komórkowe nie wymaga energii światła.
+E. Bakterie nie mają mitochondriów, ale mogą wykorzystywać błony komórkowe i inne elementy swojej komórki do etapów oddychania.
+F. Równanie pomija etapy pośrednie i enzymy; nie pokazuje też, że tylko część energii zostaje przekazana do ATP.
+
+**Ocenianie:** za odpowiedź przyczynową przyznawaj punkt za fakt i punkt za wyjaśnienie mechanizmu, jeśli polecenie zawiera „wyjaśnij” lub „uzasadnij”.
+
+## 14. Test końcowy (3 + 2 + 2 + 1)
+1. Wyjaśnij funkcję oddychania komórkowego i rolę ATP. **(3 pkt)**
+2. Podaj miejsce glikolizy i miejsce głównych dalszych etapów oddychania tlenowego u eukariontów. **(2 pkt)**
+3. Odróżnij wymianę gazową od oddychania komórkowego. **(2 pkt)**
+4. Czy roślina oddycha nocą? **(1 pkt)**
+
+**Klucz:** 1. Oddychanie udostępnia energię ze związków organicznych; część jest przekazywana do ATP, które zasila wiele procesów komórkowych. 2. Glikoliza — cytozol; dalsze główne etapy — mitochondria. 3. Wymiana gazowa to wymiana gazów z otoczeniem/tkankami, oddychanie komórkowe to reakcje chemiczne komórki. 4. Tak.
+
+## 15. Checklista opanowania
+- [ ] Wyjaśniam rolę oddychania komórkowego i ATP.
+- [ ] Odczytuję równanie sumaryczne, pamiętając, że pomija etapy pośrednie.
+- [ ] Znam lokalizację glikolizy i głównych dalszych etapów u eukariontów.
+- [ ] Odróżniam oddychanie komórkowe od wymiany gazowej.
+- [ ] Porównuję oddychanie tlenowe z fermentacją na podstawowym poziomie.
+- [ ] Wyjaśniam, dlaczego rośliny oddychają także w nocy.
+
+## 16. Mapa pojęć
+**Związki organiczne** → rozkład i utlenianie → energia chemiczna → ATP → transport, synteza, ruch i inne prace komórki. **Tlen** → końcowy akceptor elektronów w oddychaniu tlenowym. **Wymiana gazowa** → dostarczanie O₂ i usuwanie CO₂ na poziomie organizmu; nie jest tym samym co oddychanie komórkowe.
+
+## 17. Słownik
+- **Oddychanie komórkowe:** zespół reakcji uwalniających energię ze związków organicznych i przekazujących jej część do procesów komórkowych.
+- **Oddychanie tlenowe:** sposób uzyskiwania energii z udziałem tlenu jako końcowego akceptora elektronów.
+- **ATP:** adenozynotrifosforan, cząsteczka wykorzystywana do przenoszenia energii.
+- **Glikoliza:** etap rozkładu glukozy zachodzący w cytozolu.
+- **Mitochondrium:** organellum eukariontów, w którym zachodzą główne dalsze etapy oddychania tlenowego.
+- **Wymiana gazowa:** pobieranie i oddawanie gazów między organizmem a otoczeniem lub między tkankami i płynami ustrojowymi.
+- **Fermentacja:** szlak przemian umożliwiający odtwarzanie NAD⁺ i dalszy przebieg glikolizy bez łańcucha oddechowego z tlenem jako końcowym akceptorem.
+- **Końcowy akceptor elektronów:** substancja przyjmująca elektrony na końcu łańcucha transportu elektronów.
+
+## 18. Dodatek zaawansowany — [ZAAWANSOWANY]
+Energia chemiczna nie jest „tworzona z niczego”. W reakcjach metabolicznych energia jest przekształcana, a komórka wykorzystuje sprzężenie reakcji, aby część energii udostępnić do pracy. ATP jest szybko odnawiane, a nie przechowywane jako jedyny długoterminowy magazyn energii.
+
+Nie należy uczyć jednego dokładnego bilansu ATP bez określenia kontekstu: wydajność zależy od organizmu, warunków, transportu metabolitów i przyjętej konwencji liczenia. Na poziomie podstawowym wystarczy zrozumieć, że oddychanie tlenowe jest znacznie wydajniejsze pod względem uzysku ATP z glukozy niż sama glikoliza z fermentacją.
+
+## 19. Mini-model energetyczny
+Porównaj dwa poziomy opisu:
+- **Bilans materii:** jakie substraty są zużywane i jakie produkty powstają?
+- **Bilans energii:** jaka część energii zostaje przekazana do ATP, a jaka rozprasza się?
+
+Równanie sumaryczne dobrze opisuje ogólny bilans materii, ale nie wystarcza do odtworzenia wszystkich etapów i przepływu energii. Dobra odpowiedź biologiczna dopasowuje poziom szczegółowości do pytania.
+
+## 20. Jak się uczyć tej lekcji
+1. Odtwórz z pamięci równanie oddychania tlenowego i wyjaśnij każdy składnik.
+2. Narysuj schemat: glikoliza w cytozolu → dalsze etapy u eukariontów głównie w mitochondriach.
+3. Wyjaśnij na głos, czym ATP różni się od „energii” jako pojęcia.
+4. Rozwiąż ćwiczenia B–F i sprawdź uzasadnienia.
+5. Powtórz fiszki po 1, 3 i 7 dniach.
+
+## 21. Połączenia międzyprzedmiotowe
+- **Chemia:** utlenianie, substraty, produkty i przemiany energii.
+- **Fizyka:** energia, jej przekazywanie i rozpraszanie.
+- **Wychowanie fizyczne:** zapotrzebowanie mięśni na ATP podczas wysiłku, z zastrzeżeniem, że fizjologia wysiłku obejmuje wiele współdziałających procesów.
+- **Matematyka:** interpretacja bilansu, tabel i danych dotyczących zużycia tlenu lub produkcji CO₂.
+
+## 22. Zastosowanie w życiu
+Podczas wysiłku mięśnie szybciej zużywają ATP i muszą je odtwarzać. Układ krążenia i oddechowy wspierają dostarczanie tlenu oraz substratów i usuwanie produktów przemian. Zwiększone oddychanie i tętno są częścią odpowiedzi całego organizmu, a nie samym oddychaniem komórkowym.
+
+## AUDYT KOŃCOWY L007
+- **Poprawiono:** nieprecyzyjne utożsamianie oddychania z wymianą gazową; uproszczone określenie roli tlenu; zbyt skrótowe ujęcie ATP; niepełną lokalizację etapów procesu.
+- **Uzupełniono:** funkcje ATP, glikolizę i mitochondria, oddychanie bakterii, fermentację, rośliny oddychające nocą, ograniczenia równania sumarycznego i test z kluczem.
+- **Kontrola merytoryczna:** tlen opisany jako końcowy akceptor elektronów; ATP jako nośnik energii; nie podano bezwarunkowo jednego bilansu ATP; oddychanie i wymiana gazowa są rozdzielone.
+- **Kontrola redakcyjna:** sekcje 0–22 kompletne; oryginalny plik pozostaje w archiwum.
+- **Do dalszej kontroli:** niezależna recenzja nauczycielska i sprawdzenie renderowania HTML.
+
+---
+
+## ARCHIWUM MATERIAŁU ŹRÓDŁOWEGO — L007
+Poniżej zachowano oryginalny plik z paczki wejściowej, łącznie ze szkicem oraz wcześniejszą wersją kanoniczną. To archiwum nie jest drugą ścieżką nauki.
+
+# L007 — Oddychanie komórkowe: skąd komórka bierze użyteczną energię?
+
+## KARTA LEKCJI L007
 
 - Numer: L007
 - Tytuł roboczy: Oddychanie komórkowe (szkic)
@@ -191,3 +387,6 @@ Podczas wysiłku mięśnie zużywają więcej ATP, więc rośnie zapotrzebowanie
 - Treść sprawdzono roboczo pod kątem spójności pojęć, odpowiedzi do zadań i oznaczeń poziomu.
 - Każdy schemat tekstowy ma linię `@opis` opisującą zawartość i główny wniosek.
 - **Ograniczenie:** to redakcyjno-merytoryczna kontrola robocza, nie niezależna recenzja nauczyciela biologii. Dane liczbowe lub mechanizmy wykraczające poza E8 należy weryfikować osobno przed publikacją.
+
+
+<!-- END ARCHIWUM MATERIAŁU ŹRÓDŁOWEGO -->

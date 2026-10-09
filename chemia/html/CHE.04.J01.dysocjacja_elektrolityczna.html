@@ -604,31 +604,319 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;J01&quot; &quot;Dysocjacja elektrolityczna&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "J01"</div><h1>"Dysocjacja elektrolityczna"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">W21 — doprecyzowanie dysocjacji H₂SO₄ (2026-10-09, GPT-6)</a><a class="toc-link" href="#s2">TREŚĆ KANONICZNA PO W1 — DYSOCJACJA ELEKTROLITYCZNA</a><a class="toc-link" href="#s3">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</a><a class="toc-link" href="#s4">W22 — kontrola równań i klucza (2026-10-09, GPT-6)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele lekcji (+ 80/20)</a><a class="toc-link" href="#s3">3. Co trzeba wiedzieć wcześniej (kompas)</a><a class="toc-link" href="#s4">4. Zacznij od problemu</a><a class="toc-link" href="#s5">5. Ściąga — poziom podstawowy</a><a class="toc-link" href="#s6">6. Wyjaśnienie od podstaw</a><a class="toc-link" href="#s7">7. Poziom ambitny / LO — stopień dysocjacji α</a><a class="toc-link" href="#s8">8. Klinika błędów</a><a class="toc-link" href="#s9">9. Obserwacja / model</a><a class="toc-link" href="#s10">10. Ćwiczenia (z kluczem)</a><a class="toc-link" href="#s11">11. Test końcowy (3+2+2+1)</a><a class="toc-link" href="#s12">12. Checklista przed sprawdzianem</a><a class="toc-link" href="#s13">13. Mapa pojęć</a><a class="toc-link" href="#s14">14. Słownik</a><a class="toc-link" href="#s15">15. Co dalej?</a><a class="toc-link" href="#s16">MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22, zachowane bez zmian)</a><a class="toc-link" href="#s17">Dysocjacja elektrolityczna — materiał wstępny</a><a class="toc-link" href="#s18">AUDYT Grok — 2026-10-09</a><a class="toc-link" href="#s19">SCALENIE — Claude, 2026-10-09</a></nav></details>
+<p><strong>Dział:</strong> Chemia jonowa (blok J)
+<strong>Poziomy:</strong> E8 · LO (stopień dysocjacji)
+<strong>Poprzednia:</strong> R01 (woda i roztwory) / N03–N05 (kwasy, zasady, sole)
+<strong>Następna:</strong> J02 (pH i odczyn)</p>
 <section id="s1">
-<div class="part-heading">W21 — doprecyzowanie dysocjacji H₂SO₄ (2026-10-09, GPT-6)</div>
-<p>Wzór <code>H₂SO₄ → 2H⁺ + SO₄²⁻</code> bywa używany jako zapis sumaryczny w prostych zadaniach, ale nie pokazuje etapowości. Dokładniej w wodzie: pierwszy etap <code>H₂SO₄ + H₂O → H₃O⁺ + HSO₄⁻</code> jest traktowany jako praktycznie całkowity w szkolnym modelu; drugi etap <code>HSO₄⁻ + H₂O ⇌ H₃O⁺ + SO₄²⁻</code> jest równowagowy. W zadaniu należy stosować model i zapis wskazany w poleceniu.</p>
+<div class="part-heading">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</div>
+<ol>
+<li>Elektrolit w roztworze lub stopie rozpada się na jony i przewodzi prąd.</li>
+<li>Nieelektrolit rozpuszcza się jako cząsteczki obojętne — nie przewodzi.</li>
+<li>Dysocjacja ≠ rozpuszczanie (cukier się rozpuszcza, ale nie dysocjuje).</li>
+<li>Mocny elektrolit: praktycznie całkowicie zdysocjowany (HCl, NaOH, NaCl).</li>
+<li>Słaby elektrolit: tylko częściowo (CH₃COOH, NH₃) — zapisujemy ⇌.</li>
+<li>Zapis dysocjacji soli: indeks staje się współczynnikiem przy jonie.</li>
+<li>Kwasy wieloprotonowe dysocjują etapami (H₂SO₄, H₂CO₃, H₂S).</li>
+<li>W wodzie dokładniejszy zapis: H₃O⁺ zamiast H⁺.</li>
+<li>Zawsze sprawdzaj bilans atomów <strong>i</strong> ładunków.</li>
+<li>Stopień dysocjacji α (LO) = n_zdysocjowane / n_wprowadzone.</li>
+</ol>
+<h3>Diagnoza wejściowa (6 pytań)</h3>
+<ol>
+<li>Co to jest elektrolit?</li>
+<li>Zapisz dysocjację NaCl.</li>
+<li>Dlaczego roztwór cukru nie przewodzi prądu tak jak roztwór soli?</li>
+<li>Zapisz dysocjację H₂SO₄ (zapis sumaryczny szkolny).</li>
+<li>Czym różni się strzałka → od ⇌ w równaniu dysocjacji?</li>
+<li>Zapisz dysocjację Al₂(SO₄)₃.</li>
+</ol>
+<p><strong>Klucz:</strong>
+1. Substancja, która w roztworze lub stopie rozpada się na jony i przewodzi prąd.
+2. NaCl(s) → Na⁺(aq) + Cl⁻(aq)
+3. Cząsteczki cukru pozostają obojętne, nie ma ruchliwych jonów.
+4. H₂SO₄ → 2H⁺ + SO₄²⁻ (uproszczenie; etapowo dokładniej).
+5. → = praktycznie całkowita (mocny); ⇌ = równowaga (słaby).
+6. Al₂(SO₄)₃ → 2Al³⁺ + 3SO₄²⁻</p>
+<p><strong>Interpretacja:</strong>
+- 0–2/6 → zacznij od sekcji 5–6 i wróć do przykładów.
+- 3–4/6 → przejdź przez rdzeń, szczególnie klinika błędów.
+- 5–6/6 → przejdź do zadań i LO (α).</p>
+<p><strong>Pytanie przewodnie:</strong> Dlaczego jedne roztwory przewodzą prąd, a inne nie — i jak to zapisać równaniami?</p>
 </section>
 <section id="s2">
-<div class="part-heading">TREŚĆ KANONICZNA PO W1 — DYSOCJACJA ELEKTROLITYCZNA</div>
+<div class="part-heading"><span class="part-num">2</span> Cele lekcji (+ 80/20)</div>
+<p><strong>Po tej lekcji uczeń:</strong>
+- wyjaśnia, czym jest elektrolit i nieelektrolit;
+- odróżnia dysocjację od rozpuszczania;
+- zapisuje równania dysocjacji kwasów, zasad i soli (bilans atomów i ładunków);
+- rozróżnia elektrolity mocne i słabe oraz dobiera strzałkę (→ / ⇌);
+- zapisuje dysocjację stopniową kwasów wieloprotonowych;
+- (LO) oblicza stopień dysocjacji α i rozumie jego zależność od stężenia.</p>
+<p><strong>80/20 (to, co daje 80 % punktów na E8):</strong>
+- zapis dysocjacji soli z indeksami (Al₂(SO₄)₃, Ca(OH)₂, Na₂CO₃);
+- mocny vs słaby + strzałka;
+- bilans ładunków.</p>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">3</span> Co trzeba wiedzieć wcześniej (kompas)</div>
+<ul>
+<li>Wzory kwasów, zasad i soli (N03–N05).</li>
+<li>Jon, kation, anion, ładunek (F04–F05, F09).</li>
+<li>Rozpuszczanie w wodzie, (aq), polarność wody (R01 / F15).</li>
+<li>Równanie chemiczne: bilans atomów (F11–F12).</li>
+</ul>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">4</span> Zacznij od problemu</div>
+<p><strong>Sytuacja:</strong> Masz dwa bezbarwne roztwory: A — cukier w wodzie, B — sól kuchenna w wodzie. Podłączasz elektrody i żarówkę.
+<strong>Hipoteza ucznia (przed lekcją):</strong> Oba roztwory powinny świecić tak samo, bo „coś się rozpuściło”.
+<strong>Po lekcji:</strong> Żarówka świeci tylko w B, bo tylko tam są ruchliwe jony.</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">5</span> Ściąga — poziom podstawowy</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Pojęcie</th><th>Definicja / reguła</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>Elektrolit</td><td>Substancja, która w roztworze wodnym lub w stanie stopionym rozpada się na jony i przewodzi prąd</td><td>NaCl, HCl, NaOH, CH₃COOH</td></tr>
+<tr><td>Nieelektrolit</td><td>Substancja, której cząsteczki w roztworze pozostają obojętne</td><td>cukier, etanol, glukoza</td></tr>
+<tr><td>Dysocjacja elektrolityczna</td><td>Rozpad elektrolitu na jony</td><td>NaCl(s) → Na⁺(aq) + Cl⁻(aq)</td></tr>
+<tr><td>Mocny elektrolit</td><td>Praktycznie całkowicie zdysocjowany (→)</td><td>HCl, HNO₃, H₂SO₄ (I etap), NaOH, KOH, dobrze rozpuszczalne sole</td></tr>
+<tr><td>Słaby elektrolit</td><td>Częściowo zdysocjowany (⇌)</td><td>CH₃COOH, H₂CO₃, H₂S, NH₃, H₃PO₄</td></tr>
+<tr><td>Dysocjacja stopniowa</td><td>Kwasy wieloprotonowe oddają H⁺ etapami</td><td>H₂SO₄ → H⁺ + HSO₄⁻; HSO₄⁻ ⇌ H⁺ + SO₄²⁻</td></tr>
+<tr><td>Stopień dysocjacji α (LO)</td><td>α = n_zdysocjowane / n_wprowadzone (0 ≤ α ≤ 1)</td><td>α = 1 → mocny; α ≪ 1 → słaby</td></tr>
+</tbody></table></div>
+<p><strong>Mnemotechnika:</strong>
+<strong>Mocny = strzałka prosta (→), słaby = strzałka podwójna (⇌).</strong>
+<strong>Indeks w soli = współczynnik przy jonie</strong> (Al₂(SO₄)₃ → 2 Al³⁺ + 3 SO₄²⁻).</p>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">6</span> Wyjaśnienie od podstaw</div>
+<h3>6A. Dlaczego roztwór przewodzi prąd?</h3>
+<p>Prąd elektryczny w roztworze to ruch <strong>jonów</strong>, nie elektronów swobodnych (jak w metalu).
+Jeśli w roztworze są jony zdolne do ruchu → roztwór przewodzi.
+Jeśli są tylko cząsteczki obojętne → nie przewodzi (lub bardzo słabo).</p>
+<h3>6B. Krok po kroku — zapis dysocjacji</h3>
+<ol>
+<li>Rozpoznaj klasę: kwas / zasada / sól / nieelektrolit.</li>
+<li>Zapisz wzór z fazą (s) lub (aq).</li>
+<li>Rozbij na jony: kationy + aniony.</li>
+<li>Indeks dolny staje się współczynnikiem.</li>
+<li>Sprawdź bilans atomów i <strong>sumę ładunków</strong> po obu stronach.</li>
+<li>Dobierz strzałkę: mocny → , słaby ⇌ .</li>
+</ol>
+<h3>6C. Przykłady prowadzone</h3>
+<p><strong>Przykład 1 — sól</strong>
+Al₂(SO₄)₃(s) → 2Al³⁺(aq) + 3SO₄²⁻(aq)
+Kontrola: Al: 2=2; S: 3=3; O: 12=12; ładunek: 2×(+3) + 3×(−2) = 0.</p>
+<p><strong>Przykład 2 — mocny kwas</strong>
+HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)
+(szkolnie uproszczone: HCl → H⁺ + Cl⁻)</p>
+<p><strong>Przykład 3 — słaby kwas</strong>
+CH₃COOH(aq) + H₂O(l) ⇌ CH₃COO⁻(aq) + H₃O⁺(aq)</p>
+<p><strong>Przykład 4 — zasada</strong>
+Ba(OH)₂(s) → Ba²⁺(aq) + 2OH⁻(aq)</p>
+<p><strong>Przykład 5 — dysocjacja stopniowa H₂SO₄</strong>
+I etap (praktycznie całkowity): H₂SO₄ + H₂O → H₃O⁺ + HSO₄⁻
+II etap (równowagowy): HSO₄⁻ + H₂O ⇌ H₃O⁺ + SO₄²⁻
+Zapis sumaryczny szkolny (uproszczenie): H₂SO₄ → 2H⁺ + SO₄²⁻</p>
+<p><strong>Przykład 6 — nieelektrolit</strong>
+C₁₂H₂₂O₁₁(s) → C₁₂H₂₂O₁₁(aq)  (brak jonów)</p>
+<h3>6D. Powiązanie z innymi lekcjami</h3>
+<ul>
+<li>R01: woda jako rozpuszczalnik polarny — „podobne rozpuszcza podobne”.</li>
+<li>N03–N05: wzory kwasów, zasad, soli.</li>
+<li>J02: z jonów H₃O⁺ / OH⁻ wynika odczyn i pH.</li>
+<li>J03: reakcje jonowe zapisujemy tylko tymi jonami, które reagują.</li>
+<li>J04: strącanie — sole słabo rozpuszczalne nie zapisujemy jako pełna dysocjacja.</li>
+</ul>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">7</span> Poziom ambitny / LO — stopień dysocjacji α</div>
+<p>α = (liczba moli cząsteczek zdysocjowanych) / (liczba moli cząsteczek wprowadzonych)
+α ∈ [0; 1]; często podaje się w %.</p>
+<ul>
+<li>Dla mocnych elektrolitów w rozcieńczonych roztworach α ≈ 1.</li>
+<li>Dla słabych α ≪ 1 i rośnie przy rozcieńczaniu (prawo rozcieńczeń Ostwalda — J07).</li>
+<li>α nie jest stałą materiałową — zależy od stężenia, temperatury i rozpuszczalnika.</li>
+</ul>
+<p><strong>Przykład LO:</strong>
+0,1 mol CH₃COOH w 1 dm³; zdysocjowało 0,0013 mol.
+α = 0,0013 / 0,1 = 0,013 = 1,3 %.</p>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">8</span> Klinika błędów</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Co nie tak?</th><th>Popraw</th><th>Reguła</th></tr></thead>
+<tbody>
+<tr><td>NaCl → Na + Cl</td><td>Brak ładunków</td><td>NaCl → Na⁺ + Cl⁻</td><td>Każdy jon ma ładunek</td></tr>
+<tr><td>CaOH₂ → …</td><td>Zły wzór</td><td>Ca(OH)₂ → Ca²⁺ + 2OH⁻</td><td>Nawiasy przy grupie OH</td></tr>
+<tr><td>Al₂(SO₄)₃ → Al³⁺ + SO₄²⁻</td><td>Brak współczynników</td><td>→ 2Al³⁺ + 3SO₄²⁻</td><td>Indeks = współczynnik</td></tr>
+<tr><td>CH₃COOH → CH₃COO⁻ + H⁺</td><td>Strzałka dla słabego</td><td>⇌</td><td>Słaby = równowaga</td></tr>
+<tr><td>CaCO₃ → Ca²⁺ + CO₃²⁻ (jako pełna)</td><td>Słabo rozpuszczalny</td><td>Nie zapisuj pełnej dysocjacji jakby wszystko przeszło do roztworu</td><td>Uwzględnij rozpuszczalność</td></tr>
+<tr><td>H₂SO₄ → 2H⁺ + SO₄²⁻ bez komentarza</td><td>Ukrywa etapowość</td><td>Podaj etapowo lub zaznacz „sumaryczny”</td><td>I etap mocny, II słaby</td></tr>
+<tr><td>Cukier → jony</td><td>Nieelektrolit</td><td>C₁₂H₂₂O₁₁(aq)</td><td>Rozpuszczanie ≠ dysocjacja</td></tr>
+</tbody></table></div>
+<p><strong>Klinika 2.0 (ćwiczenie):</strong>
+Znajdź błąd → popraw → nazwij regułę → wyjaśnij dlaczego → zadanie podobne.</p>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">9</span> Obserwacja / model</div>
+<p><strong>Problem:</strong> Które roztwory przewodzą prąd?
+<strong>Materiał:</strong> roztwór NaCl, roztwór cukru, roztwór CH₃COOH, woda destylowana, elektrody + żarówka / miernik.
+<strong>Obserwacja:</strong> NaCl — świeci mocno; CH₃COOH — słabo; cukier i woda — prawie wcale.
+<strong>Wniosek:</strong> Przewodnictwo zależy od obecności i stężenia ruchliwych jonów.
+<strong>Ograniczenia modelu:</strong> W szkolnym modelu pomijamy autodysocjację wody i wpływ temperatury.
+<strong>BHP:</strong> Niskie napięcie; nie dotykać elektrod mokrymi rękami; kwasy/zasady — okulary.</p>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">10</span> Ćwiczenia (z kluczem)</div>
+<h3>10A. Podstawowe (E8)</h3>
+<ol>
+<li>Zapisz dysocjację: MgCl₂, K₂SO₄, Fe(NO₃)₃, Na₂CO₃.</li>
+<li>Zapisz dysocjację: HNO₃, KOH, Ba(OH)₂.</li>
+<li>Zapisz dysocjację stopniową H₂CO₃ (dwa etapy, ⇌).</li>
+<li>Które z poniższych są mocnymi elektrolitami: HCl, CH₃COOH, NaOH, NH₃, NaCl, H₂S?</li>
+<li>Wyjaśnij jednym zdaniem, dlaczego roztwór NaCl przewodzi prąd, a roztwór glukozy nie.</li>
+</ol>
+<h3>10B. Trening</h3>
+<ol start="6">
+<li>Uzupełnij i zbilansuj: Al₂(SO₄)₃ → … + …</li>
+<li>Popraw błędy:
+a) Ca(OH)₂ → Ca⁺ + OH⁻
+b) H₂SO₄ → H⁺ + SO₄²⁻
+c) NH₃ → NH₄⁺ + OH⁻</li>
+<li>Zapisz dysocjację H₃PO₄ w trzech etapach (wszystkie ⇌).</li>
+</ol>
+<h3>10C. Transfer</h3>
+<ol start="9">
+<li>W roztworze pewnej substancji żarówka świeci bardzo słabo. Co możesz wnioskować o rodzaju elektrolitu?</li>
+<li>Dlaczego w zapisie dysocjacji soli słabo rozpuszczalnej (np. AgCl) nie piszemy pełnej strzałki jak dla NaCl?</li>
+</ol>
+<h3>Klucz</h3>
+<ol>
+<li>MgCl₂ → Mg²⁺ + 2Cl⁻
+K₂SO₄ → 2K⁺ + SO₄²⁻
+Fe(NO₃)₃ → Fe³⁺ + 3NO₃⁻
+Na₂CO₃ → 2Na⁺ + CO₃²⁻</li>
+</ol>
+<ol start="2">
+<li>HNO₃ → H⁺ + NO₃⁻ (lub + H₂O → H₃O⁺ + NO₃⁻)
+KOH → K⁺ + OH⁻
+Ba(OH)₂ → Ba²⁺ + 2OH⁻</li>
+</ol>
+<ol start="3">
+<li>H₂CO₃ ⇌ H⁺ + HCO₃⁻
+HCO₃⁻ ⇌ H⁺ + CO₃²⁻</li>
+</ol>
+<ol start="4">
+<li>Mocne: HCl, NaOH, NaCl. Słabe: CH₃COOH, NH₃, H₂S.</li>
+</ol>
+<ol start="5">
+<li>W NaCl powstają ruchliwe jony Na⁺ i Cl⁻; w glukozie cząsteczki pozostają obojętne.</li>
+</ol>
+<ol start="6">
+<li>Al₂(SO₄)₃ → 2Al³⁺ + 3SO₄²⁻</li>
+</ol>
+<ol start="7">
+<li>a) Ca(OH)₂ → Ca²⁺ + 2OH⁻
+b) H₂SO₄ → 2H⁺ + SO₄²⁻ (sumaryczny) lub etapowo
+c) NH₃ + H₂O ⇌ NH₄⁺ + OH⁻</li>
+</ol>
+<ol start="8">
+<li>H₃PO₄ ⇌ H⁺ + H₂PO₄⁻
+H₂PO₄⁻ ⇌ H⁺ + HPO₄²⁻
+HPO₄²⁻ ⇌ H⁺ + PO₄³⁻</li>
+</ol>
+<ol start="9">
+<li>To najprawdopodobniej słaby elektrolit (mało jonów).</li>
+<li>AgCl jest słabo rozpuszczalny — stężenie jonów w roztworze jest bardzo małe; pełna dysocjacja „jak NaCl” wprowadzałaby w błąd.</li>
+</ol>
+</section>
+<section id="s11">
+<div class="part-heading"><span class="part-num">11</span> Test końcowy (3+2+2+1)</div>
+<p><strong>A. (3 pkt)</strong> Zapisz równania dysocjacji:
+1. Fe₂(SO₄)₃
+2. HBr (mocny)
+3. CH₃COOH (słaby)</p>
+<p><strong>B. (2 pkt)</strong> Wskaż, które zdania są prawdziwe:
+a) Każda substancja rozpuszczalna w wodzie jest elektrolitem.
+b) Mocny elektrolit jest zawsze stężony.
+c) W dysocjacji Ba(OH)₂ powstają dwa jony OH⁻.
+d) Słaby elektrolit zapisujemy ze strzałką ⇌.</p>
+<p><strong>C. (2 pkt)</strong> Uczeń zapisał: Al₂(SO₄)₃ → Al³⁺ + SO₄²⁻.
+Wskaż dwa błędy i podaj poprawny zapis.</p>
+<p><strong>D. (1 pkt)</strong> Dlaczego w dokładnym zapisie dysocjacji kwasów w wodzie używamy H₃O⁺ zamiast H⁺?</p>
+<p><strong>Klucz testu</strong>
+A1: Fe₂(SO₄)₃ → 2Fe³⁺ + 3SO₄²⁻
+A2: HBr → H⁺ + Br⁻ (lub + H₂O → H₃O⁺ + Br⁻)
+A3: CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺
+B: fałsz, fałsz, prawda, prawda
+C: brak współczynników 2 i 3; poprawnie: → 2Al³⁺ + 3SO₄²⁻
+D: Proton H⁺ w wodzie nie istnieje swobodnie — jest związany z cząsteczką wody jako H₃O⁺.</p>
+</section>
+<section id="s12">
+<div class="part-heading"><span class="part-num">12</span> Checklista przed sprawdzianem</div>
+<ul>
+<li>[ ] Potrafię odróżnić elektrolit od nieelektrolitu.</li>
+<li>[ ] Zapisuję dysocjację soli z poprawnymi współczynnikami.</li>
+<li>[ ] Dobieram strzałkę → / ⇌.</li>
+<li>[ ] Znam przykłady mocnych i słabych elektrolitów.</li>
+<li>[ ] Sprawdzam bilans ładunków.</li>
+<li>[ ] (LO) Potrafię obliczyć α.</li>
+</ul>
+</section>
+<section id="s13">
+<div class="part-heading"><span class="part-num">13</span> Mapa pojęć</div>
+<pre class="lk-pre" data-jezyk="tekst"><code>Elektrolit ──► mocny (→) / słaby (⇌)&#10;     │&#10;     ├── dysocjacja kwasów (H₃O⁺)&#10;     ├── dysocjacja zasad (OH⁻)&#10;     └── dysocjacja soli (kation + anion)&#10;            │&#10;            └── dysocjacja stopniowa (wieloprotonowe)</code></pre>
+</section>
+<section id="s14">
+<div class="part-heading"><span class="part-num">14</span> Słownik</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+<tbody>
+<tr><td>Elektrolit</td><td>Substancja, która w roztworze lub stopie rozpada się na jony i przewodzi prąd</td></tr>
+<tr><td>Nieelektrolit</td><td>Substancja, której cząsteczki w roztworze pozostają obojętne</td></tr>
+<tr><td>Dysocjacja elektrolityczna</td><td>Rozpad elektrolitu na jony</td></tr>
+<tr><td>Stopień dysocjacji α</td><td>Stosunek liczby moli zdysocjowanych do wprowadzonych</td></tr>
+<tr><td>Jon hydroniowy H₃O⁺</td><td>Proton związany z cząsteczką wody</td></tr>
+<tr><td>Dysocjacja stopniowa</td><td>Oddawanie kolejnych protonów przez kwas wieloprotonowy</td></tr>
+</tbody></table></div>
+</section>
+<section id="s15">
+<div class="part-heading"><span class="part-num">15</span> Co dalej?</div>
+<ul>
+<li>J02 — odczyn i pH (z jonów H₃O⁺ i OH⁻).</li>
+<li>J03 — reakcje jonowe (zapis skrócony).</li>
+<li>J04 — strącanie (tabela rozpuszczalności).</li>
+</ul>
+</section>
+<section id="s16">
+<div class="part-heading">MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22, zachowane bez zmian)</div>
+<p class="mini-note">Treść kanonu sprzed rozbudowy W23 — zachowana w całości, bo lekcja Groka napisana od nowa jej nie zawierała. Poprzedni stan: W22 — GPT-6, 2026-10-09; audyt przekrojowy równań i modeli, pełna niezależna recenzja nadal otwarta</p>
+</section>
+<section id="s17">
+<div class="part-heading">Dysocjacja elektrolityczna — materiał wstępny</div>
+<h3>W21 — doprecyzowanie dysocjacji H₂SO₄ (2026-10-09, GPT-6)</h3>
+<p>Wzór <code>H₂SO₄ → 2H⁺ + SO₄²⁻</code> bywa używany jako zapis sumaryczny w prostych zadaniach, ale nie pokazuje etapowości. Dokładniej w wodzie: pierwszy etap <code>H₂SO₄ + H₂O → H₃O⁺ + HSO₄⁻</code> jest traktowany jako praktycznie całkowity w szkolnym modelu; drugi etap <code>HSO₄⁻ + H₂O ⇌ H₃O⁺ + SO₄²⁻</code> jest równowagowy. W zadaniu należy stosować model i zapis wskazany w poleceniu.</p>
+<h3>TREŚĆ KANONICZNA PO W1 — DYSOCJACJA ELEKTROLITYCZNA</h3>
 <p>Dysocjacja elektrolityczna to rozpad elektrolitu na jony w roztworze lub w stanie stopionym. Przewodnictwo wynika z ruchu jonów, a nie z samej obecności elektronów swobodnych w roztworze. Mocny elektrolit jest w danych warunkach w dużym stopniu zdysocjowany; słaby — tylko częściowo. „Mocny/słaby” nie oznacza automatycznie „stężony/rozcieńczony”.</p>
-<h3>Przykłady zapisu</h3>
+<h4>Przykłady zapisu</h4>
 <p>NaCl(s) → Na⁺(aq) + Cl⁻(aq)</p>
 <p>NaOH(s) → Na⁺(aq) + OH⁻(aq)</p>
 <p>HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)</p>
 <p>CH₃COOH(aq) + H₂O(l) ⇌ CH₃COO⁻(aq) + H₃O⁺(aq)</p>
 <p>NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)</p>
 <p>W szkolnym skrócie można spotkać H⁺(aq), ale w wodzie proton jest związany z cząsteczkami wody; dokładniejszy zapis używa H₃O⁺. Dla kwasów wieloprotonowych dysocjacja może zachodzić etapami, a każdy etap ma własną równowagę.</p>
-<h3>Rozpuszczanie a dysocjacja</h3>
+<h4>Rozpuszczanie a dysocjacja</h4>
 <p>Cukier rozpuszcza się, ale jego cząsteczki nie rozpadają się na jony: C₁₂H₂₂O₁₁(s) → C₁₂H₂₂O₁₁(aq). Sól jonowa rozpuszczając się, przechodzi do roztworu jako jony. Nie każda substancja rozpuszczalna jest elektrolitem.</p>
-<h3>Kontrola zapisu</h3>
+<h4>Kontrola zapisu</h4>
 <p>W każdym równaniu sprawdź liczbę atomów i sumę ładunków po obu stronach. Dla soli słabo rozpuszczalnych nie zapisuj pełnej dysocjacji, jakby wszystkie jony przechodziły do roztworu; uwzględnij rozpuszczalność.</p>
-</section>
-<section id="s3">
-<div class="part-heading">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</div>
+<h3>AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</h3>
 <p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexity_J01-J00_2026-10-09.md</code>. Weryfikacja treści wysłanego zapisu, nie zakresu.</p>
-<h3>J01 — Dysocjacja elektrolityczna</h3>
-<h4>Cel</h4>
+<h4>J01 — Dysocjacja elektrolityczna</h4>
+<h5>Cel</h5>
 <p>Po tej lekcji uczeń powinien:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
@@ -638,7 +926,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>rozpoznać mocne i słabe elektrolity;</li>
 <li>sprawdzić bilans atomów i ładunku.</li>
 </ul>
-<h4>Rdzeń</h4>
+<h5>Rdzeń</h5>
 <p>Dysocjacja elektrolityczna to rozpad cząsteczek lub kryształów elektrolitu na jony podczas rozpuszczania w wodzie albo w stanie stopionym.</p>
 <p>Elektrolity przewodzą prąd elektryczny, ponieważ zawierają jony zdolne do przemieszczania się. W roztworze przewodnictwo zależy między innymi od:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
@@ -649,7 +937,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>temperatury;</li>
 <li>rodzaju rozpuszczalnika.</li>
 </ul>
-<h5>Elektrolity mocne</h5>
+<h6>Elektrolity mocne</h6>
 <p>Mocne elektrolity są w wodzie w dużym stopniu zdysocjowane:</p>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
@@ -661,12 +949,12 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <p>NaCl→ Na⁺+Cl⁻</p>
 <p>NaOH→ Na⁺+OH⁻</p>
 <p>HCl+H₂O→ H₃O⁺+Cl⁻</p>
-<h5>Elektrolity słabe</h5>
+<h6>Elektrolity słabe</h6>
 <p>Słabe elektrolity dysocjują tylko częściowo. W roztworze występują zarówno cząsteczki, jak i jony.</p>
 <p>CH₃COOH+H₂O⇌ CH₃COO⁻+H₃O⁺</p>
 <p>NH₃+H₂O⇌ NH₄⁺+OH⁻</p>
 <p>Nie zapisuj strzałki jednokierunkowej dla słabego kwasu lub słabej zasady, jeśli chcesz zaznaczyć ustalającą się równowagę.</p>
-<h4>Dysocjacja kwasów</h4>
+<h5>Dysocjacja kwasów</h5>
 <p>W zapisie szkolnym:</p>
 <p>HCl→ H⁺+Cl⁻</p>
 <p>HNO₃→ H⁺+NO₃⁻</p>
@@ -676,24 +964,24 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <p>Dla kwasu dwuprotonowego dysocjacja może przebiegać etapami:</p>
 <p>H₂CO₃⇌ H⁺+HCO₃⁻</p>
 <p>HCO₃⁻⇌ H⁺+CO₃²⁻</p>
-<h4>Dysocjacja zasad</h4>
+<h5>Dysocjacja zasad</h5>
 <p>KOH→ K⁺+OH⁻</p>
 <p>Ba(OH)₂→ Ba²⁺+2OH⁻</p>
 <p>Indeks przy grupie OH staje się współczynnikiem przy jonach.</p>
-<h4>Dysocjacja soli</h4>
+<h5>Dysocjacja soli</h5>
 <p>Al₂(SO₄)₃→2Al³⁺+3SO₄²⁻</p>
 <p>Ca(NO₃)₂→ Ca²⁺+2NO₃⁻</p>
 <p>Na₂CO₃→2Na⁺+CO₃²⁻</p>
 <p>Nawiasy w zapisie Al₂(SO₄)₃ oznaczają trzy grupy siarczanowe. Po dysocjacji współczynnik 3 stoi przed jonem SO₄²⁻.</p>
-<h4>Rozpuszczanie a dysocjacja</h4>
+<h5>Rozpuszczanie a dysocjacja</h5>
 <p>Nie każde rozpuszczanie jest dysocjacją.</p>
-<h5>Rozpuszczanie cukru</h5>
+<h6>Rozpuszczanie cukru</h6>
 <p>C₁₂H₂₂O₁₁(s)→ C₁₂H₂₂O₁₁(aq)</p>
 <p>Cząsteczki cukru pozostają obojętne, więc roztwór cukru nie przewodzi prądu tak jak roztwór soli.</p>
-<h5>Rozpuszczanie soli</h5>
+<h6>Rozpuszczanie soli</h6>
 <p>NaCl(s)→ Na⁺(aq)+Cl⁻(aq)</p>
 <p>Kryształ rozpada się na ruchliwe jony.</p>
-<h4>Typowe błędy</h4>
+<h5>Typowe błędy</h5>
 <p class="mini-note">✔ Punkty poniżej są wprowadzone do sekcji „TREŚĆ KANONICZNA PO W1”.</p>
 <ul>
 <li>zapisanie NaCl→ Na+Cl bez ładunków;</li>
@@ -704,7 +992,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>używanie strzałki jednokierunkowej dla słabego elektrolitu bez zaznaczenia uproszczenia;</li>
 <li>brak kontroli sumy ładunków.</li>
 </ul>
-<h4>Zadania</h4>
+<h5>Zadania</h5>
 <ol>
 <li>Zapisz dysocjację MgCl₂.</li>
 <li>Zapisz dysocjację Al(NO₃)₃.</li>
@@ -713,7 +1001,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>Wyjaśnij, dlaczego roztwór chlorku sodu przewodzi prąd.</li>
 <li>Wyjaśnij, dlaczego roztwór cukru przewodzi prąd znacznie słabiej.</li>
 </ol>
-<h4>Klucz</h4>
+<h5>Klucz</h5>
 <p>1.</p>
 <p>MgCl₂→ Mg²⁺+2Cl⁻</p>
 <p>2.</p>
@@ -727,13 +1015,32 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <li>W wodzie powstają ruchliwe jony Na⁺ i Cl⁻.</li>
 <li>Cukier rozpuszcza się głównie w postaci obojętnych cząsteczek, a nie jonów.</li>
 </ol>
-</section>
-<section id="s4">
-<div class="part-heading">W22 — kontrola równań i klucza (2026-10-09, GPT-6)</div>
+<h3>W22 — kontrola równań i klucza (2026-10-09, GPT-6)</h3>
 <ul>
 <li><strong>Sprawdzono:</strong> <code>MgCl₂ → Mg²⁺ + 2Cl⁻</code>, <code>Al(NO₃)₃ → Al³⁺ + 3NO₃⁻</code> i <code>Ca(OH)₂ → Ca²⁺ + 2OH⁻</code> — zachowany bilans atomów i ładunku.</li>
 <li><strong>Doprecyzowanie:</strong> dla H₂S zapis etapowy powinien zachować równowagowy charakter obu etapów; <code>HS⁻</code> jest jonem wodorosiarczkowym, a nie <code>HS²⁻</code>.</li>
 <li><strong>Źródło kontroli:</strong> bezpośredni bilans atomów i ładunków w równaniach z klucza; wnioski dotyczą wskazanych przykładów.</li>
+</ul>
+</section>
+<section id="s18">
+<div class="part-heading">AUDYT Grok — 2026-10-09</div>
+<p><strong>Co zmieniono:</strong>
+- Pełna rozbudowa z materiału wstępnego W1/W22 (~7 KB) do struktury kanonicznej lekcji (karta, cele 80/20, ściąga, wyjaśnienie 6A–6D, przykłady prowadzone, klinika błędów z tabelą, ćwiczenia 10A–C z kluczem, test 3+2+2+1, checklista, mapa, słownik).
+- Dopisano sekcję LO (α) z przykładem liczbowym.
+- Uporządkowano zapisy H₂SO₄ (etapowy vs sumaryczny) zgodnie z W21.
+- Dodano diagnozę wejściową i pytanie przewodnie.
+- Zachowano całą treść kanoniczną z poprzednich wersji; nic nie usunięto.</p>
+<p><strong>Czego nie sprawdzono / otwarte:</strong>
+- Niezależna recenzja chemiczna przez drugiego eksperta.
+- Porównanie z konkretnymi arkuszami CKE 2024/2025 (brak w paczce).
+- Wartości α dla CH₃COOH — orientacyjne [do weryfikacji w tablicach].
+- Brak pliku W1_perplexity_J01 w paczce — treść oparta na istniejącym md + standard E8.</p>
+<p><strong>Status:</strong> UZUPEŁNIONE → gotowe do dalszej warstwy HTML / recenzji.</p>
+</section>
+<section id="s19">
+<div class="part-heading">SCALENIE — Claude, 2026-10-09</div>
+<ul>
+<li>Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przy budowie lekcji: sprawdzić, czy uwagi W22 są uwzględnione w części głównej.</li>
 </ul>
 </section>
 

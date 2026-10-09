@@ -1,6 +1,211 @@
 # L006 — Fotosynteza: skąd roślina bierze materię organiczną?
 
 ## KARTA LEKCJI L006
+- Numer: L006
+- Tytuł: Fotosynteza — skąd roślina bierze materię organiczną?
+- Dział: Fizjologia roślin i metabolizm
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L005 · Następna: L007
+- Status treści: po audycie redakcyjnym i merytorycznym; przed niezależną recenzją nauczycielską
+- Status HTML: brak HTML; plik stanowi źródło treści i specyfikacji wizualnej
+- Zasada redakcyjna: archiwum oryginału zachowano na końcu; sekcje 0–22 są wersją kanoniczną
+
+## 0. MAPA LEKCJI I WARSTWA WIZUALNA
+**Pytanie centralne:** Skąd roślina bierze węgiel i energię potrzebne do zbudowania własnej materii?
+
+**Główny schemat:** `6CO₂ + 6H₂O + energia światła → C₆H₁₂O₆ + 6O₂` — podpisany jako równanie sumaryczne fotosyntezy tlenowej, nie pojedyncza reakcja.
+**Ilustracja chloroplastu:** błony tylakoidów/grana, stroma, chlorofil; wyraźnie odróżnić miejsce reakcji zależnych od światła od cyklu Calvina na poziomie rozszerzonym.
+**Doświadczenie:** wpływ natężenia światła na wskaźnik tempa fotosyntezy, z oddzieleniem zmiennej niezależnej, zależnej i kontrolowanych.
+**Pułapki wizualne:** nie przedstawiać gleby jako głównego źródła suchej masy rośliny; nie sugerować, że światło jest materią ani że tlen fotosyntetyczny pochodzi z CO₂.
+
+## 1. Problem na początek
+Roślina może z czasem zbudować pień, liście, korzenie i owoce. Skąd bierze materiał, skoro nie pobiera gotowych kawałków drewna ani liści z gleby? Jaką rolę odgrywają powietrze, woda, sole mineralne i światło?
+
+Zapisz własną hipotezę. Wróć do niej po lekcji i sprawdź, które elementy były poprawne.
+
+## 2. Podstawa E8 — definicja i równanie
+**Fotosynteza** to proces, w którym energia światła jest przekształcana w energię chemiczną związków organicznych syntetyzowanych z prostszych substancji. U roślin i glonów fotosynteza tlenowa zachodzi w chloroplastach komórek wyposażonych w aparat fotosyntetyczny.
+
+Uproszczone równanie sumaryczne:
+
+`6CO₂ + 6H₂O —(energia światła, barwniki fotosyntetyczne)→ C₆H₁₂O₆ + 6O₂`
+
+Równanie pokazuje bilans ogólny. Nie oznacza, że sześć cząsteczek dwutlenku węgla i sześć cząsteczek wody łączą się w jednym prostym kroku. Rzeczywisty proces obejmuje wiele reakcji i związków pośrednich. Glukoza w równaniu jest wygodnym symbolem produktu organicznego; w komórce produkty fotosyntezy są wykorzystywane i przekształcane w różne związki.
+
+## 3. Co dostarcza każdy składnik?
+| Składnik / czynnik | Znaczenie |
+|---|---|
+| Dwutlenek węgla (CO₂) | dostarcza atomów węgla do syntezy związków organicznych |
+| Woda (H₂O) | jest substratem fotosyntezy tlenowej; dostarcza m.in. elektronów i protonów |
+| Energia światła | dostarcza energii do napędzania procesu |
+| Chlorofil i inne barwniki | pochłaniają światło o określonych długościach fal |
+| Związki organiczne | magazynują energię chemiczną i dostarczają materiału do budowy organizmu |
+| Tlen (O₂) | powstaje w fotosyntezie tlenowej i może być uwalniany do otoczenia |
+
+**Ważne rozróżnienie:** CO₂ jest źródłem węgla dla większości materii organicznej rośliny, a światło jest źródłem energii. To różne role.
+
+## 4. Skąd roślina pobiera surowce?
+Dwutlenek węgla z powietrza dostaje się do liścia głównie przez **aparaty szparkowe**. Woda jest pobierana z podłoża przez korzenie i transportowana do części nadziemnych. Światło dociera do organów zawierających chloroplasty, przede wszystkim do liści, choć fotosynteza może zachodzić także w innych zielonych częściach roślin.
+
+Korzenie pobierają również sole mineralne. Są one niezbędne do prawidłowego wzrostu i budowy wielu cząsteczek, ale nie stanowią głównego źródła węgla w suchej masie rośliny. Węgiel wbudowywany w cukry pochodzi przede wszystkim z CO₂, a nie z gleby.
+
+## 5. Chloroplast, chlorofil i liść
+Chloroplasty są organellami komórek roślinnych i glonów, w których przebiega fotosynteza. Chlorofil jest barwnikiem pochłaniającym energię światła; zielony kolor liści wynika z tego, że chlorofil pochłania część długości fal silniej, a część światła jest odbijana lub przepuszczana.
+
+Budowa liścia sprzyja fotosyntezie: duża powierzchnia ułatwia przechwytywanie światła, miękisz asymilacyjny zawiera liczne chloroplasty, aparaty szparkowe umożliwiają wymianę gazową, a wiązki przewodzące transportują wodę, sole mineralne i produkty organiczne.
+
+Nie każda komórka rośliny prowadzi fotosyntezę. Komórki korzeniowe zwykle nie mają chloroplastów fotosyntetycznych, ale nadal żyją, prowadzą oddychanie komórkowe i potrzebują związków organicznych.
+
+## 6. Co dzieje się z produktami fotosyntezy?
+Produkty fotosyntezy nie służą wyłącznie do „nakarmienia” rośliny w potocznym sensie. Związki organiczne mogą:
+- być rozkładane w oddychaniu komórkowym, aby komórka uzyskała energię użyteczną;
+- być transportowane z liści do innych organów;
+- być przechowywane w postaci skrobi lub innych związków zapasowych;
+- dostarczać materiału do syntezy celulozy, lipidów, aminokwasów i wielu innych cząsteczek.
+
+Wzrost rośliny wymaga zarówno dostarczenia węgla i energii, jak i wody, soli mineralnych oraz odpowiednich warunków. Fotosynteza jest kluczowym źródłem materii organicznej dla rośliny, ale nie zastępuje pozostałych procesów życiowych.
+
+## 7. Co dokładnie oznacza „energia zostaje zmagazynowana”?
+Część energii światła zostaje przekształcona w energię chemiczną związków organicznych. Nie oznacza to, że światło staje się materią ani że każda energia padająca na liść zostaje wykorzystana. Część światła jest odbijana lub przepuszczana, a część pochłoniętej energii może zostać rozproszona w inny sposób.
+
+Związki organiczne są później wykorzystywane w wielu reakcjach. Energia chemiczna może być przekazywana w procesach metabolicznych i wykorzystywana m.in. do syntezy ATP. Fotosynteza nie jest tym samym co oddychanie komórkowe: procesy te są powiązane, ale pełnią różne funkcje.
+
+## 8. Fotosynteza a oddychanie komórkowe
+| Cecha | Fotosynteza tlenowa | Oddychanie tlenowe |
+|---|---|---|
+| Główna funkcja | synteza związków organicznych z wykorzystaniem energii światła | uwalnianie energii ze związków organicznych i przekazywanie jej m.in. do ATP |
+| Ważne substraty w równaniu sumarycznym | CO₂ i H₂O | związki organiczne, np. glukoza, oraz O₂ |
+| Ważne produkty w równaniu sumarycznym | związki organiczne i O₂ | CO₂, H₂O i energia przekazana m.in. do ATP |
+| Główne miejsce u roślin | chloroplasty | glikoliza w cytozolu; dalsze główne etapy w mitochondriach |
+| Czy proces wymaga światła bezpośrednio? | tak, energia światła napędza fotosyntezę | nie |
+
+Roślina oddycha komórkowo zarówno w dzień, jak i w nocy. W świetle fotosynteza i oddychanie mogą zachodzić równocześnie. Nie należy mówić, że roślina „w dzień fotosyntetyzuje zamiast oddychać”.
+
+## 9. Czynniki wpływające na tempo fotosyntezy
+Tempo fotosyntezy może zależeć od natężenia i jakości światła, stężenia CO₂, temperatury, dostępności wody, stanu liścia i innych warunków. Jeśli jeden czynnik staje się ograniczający, zwiększenie innego nie musi już podnosić tempa procesu.
+
+**Czynnik ograniczający** to taki, którego dostępność lub wartość ogranicza tempo badanego procesu w danych warunkach. Na przykład zwiększanie natężenia światła nie musi stale przyspieszać fotosyntezy: przy wysokim natężeniu może zadziałać inny limit, np. dostępność CO₂ lub temperatura.
+
+W szkolnym doświadczeniu należy zmieniać jeden badany czynnik, a pozostałe możliwie utrzymywać stałe. W przeciwnym razie nie wiadomo, który czynnik spowodował różnicę.
+
+## 10. Reakcje zależne od światła i cykl Calvina — [MASTER]
+Na poziomie rozszerzonym fotosyntezę opisuje się jako zespół współpracujących etapów. Reakcje zależne od światła zachodzą w błonach tylakoidów chloroplastów: energia światła napędza przepływ elektronów, a w fotosyntezie tlenowej dochodzi do rozkładu wody i uwalniania tlenu. Powstają też nośniki energii chemicznej wykorzystywane w dalszych reakcjach.
+
+W cyklu Calvina, zachodzącym w stromie chloroplastu, CO₂ zostaje włączony do związków organicznych przy wykorzystaniu produktów reakcji zależnych od światła. Nie należy nazywać tego cyklu po prostu „reakcjami ciemnymi” w znaczeniu, że normalnie zachodzi wyłącznie nocą — jego przebieg zależy od produktów i regulacji powiązanych z oświetleniem.
+
+## 11. Klinika błędów
+| Błąd | Poprawka i uzasadnienie |
+|---|---|
+| Roślina bierze większość swojej masy z ziemi. | Węgiel w większości związków organicznych pochodzi z CO₂; gleba dostarcza wodę i składniki mineralne. |
+| Światło jest pokarmem lub materią. | Światło jest źródłem energii, nie atomów budujących cukry. |
+| Chlorofil to miejsce fotosyntezy. | Chlorofil jest barwnikiem; fotosynteza u roślin zachodzi w chloroplastach. |
+| Tlen powstaje z dwutlenku węgla. | W fotosyntezie tlenowej uwalniany O₂ pochodzi z wody. |
+| Fotosynteza zachodzi w każdej komórce rośliny. | Wymaga odpowiedniego aparatu fotosyntetycznego i warunków. |
+| Roślina nocą przestaje oddychać. | Oddychanie komórkowe zachodzi stale, także w ciemności. |
+| Równanie fotosyntezy opisuje jeden krok. | To bilans sumaryczny wieloetapowego procesu. |
+
+## 12. Doświadczenie — wpływ światła na fotosyntezę
+**Problem badawczy:** Jak zmiana natężenia światła wpływa na tempo fotosyntezy u wybranego organizmu fotosyntetyzującego?
+
+**Hipoteza:** W określonym zakresie zwiększenie natężenia światła zwiększy tempo fotosyntezy, jeśli światło jest czynnikiem ograniczającym.
+
+**Możliwy model:** obserwacja rośliny wodnej, np. moczarki, w bezpiecznych warunkach szkolnych. Liczba pęcherzyków gazu na jednostkę czasu może być wskaźnikiem pośrednim, ale nie jest idealnym pomiarem ilości tlenu ani samej fotosyntezy.
+
+- **Zmienna niezależna:** natężenie światła lub odległość źródła światła, jeśli odległość jest poprawnym i kontrolowanym sposobem zmiany natężenia.
+- **Zmienna zależna:** wybrany wskaźnik tempa fotosyntezy, np. liczba pęcherzyków w określonym czasie.
+- **Warunki stałe:** gatunek i długość pędu, temperatura wody, czas obserwacji, objętość wody, dostępność CO₂ i sposób liczenia.
+- **Próba porównawcza:** warunek z innym natężeniem światła; dobrze wykonać powtórzenia.
+- **Obserwacja:** zapis pomiarów bez wyjaśniania ich przyczyny.
+- **Wniosek:** odniesienie wyników do hipotezy, z uwzględnieniem ograniczeń metody.
+
+**Bezpieczeństwo i jakość:** nie używaj źródła światła, które niebezpiecznie nagrzewa próbkę; zmiana temperatury mogłaby stać się dodatkowym czynnikiem. Nie twierdź, że pęcherzyki to czysty tlen bez odpowiednich danych.
+
+## 13. Ćwiczenia — od podstaw do transferu
+**A. Podstawy:** wymień dwa substraty fotosyntezy, źródło energii i dwa produkty widoczne w równaniu sumarycznym.
+
+**B. Przyczyna:** wyjaśnij, dlaczego stwierdzenie „roślina bierze większość masy z gleby” jest niepoprawne.
+
+**C. Porównanie:** podaj dwie różnice między fotosyntezą a oddychaniem komórkowym oraz jedną zależność między nimi.
+
+**D. Metoda naukowa:** uczeń zwiększył natężenie lampy, ale jednocześnie podgrzał wodę. Czy może jednoznacznie przypisać zmianę liczby pęcherzyków światłu? Wyjaśnij i zaproponuj poprawkę.
+
+**E. [ZAAWANSOWANY]:** dlaczego przy zwiększaniu natężenia światła tempo fotosyntezy nie musi rosnąć bez końca?
+
+## 14. Odpowiedzi i sposób oceniania
+A. Substraty: CO₂ i H₂O; źródło energii: światło; produkty w równaniu: związek organiczny (umownie glukoza) i O₂.
+B. Węgiel budujący większość materii organicznej rośliny jest wiązany z CO₂ z powietrza; gleba dostarcza m.in. wodę i sole mineralne.
+C. Np. fotosynteza wykorzystuje światło i syntetyzuje związki organiczne, a oddychanie uwalnia energię związków organicznych; oba procesy zachodzą w roślinach i są metabolicznie powiązane.
+D. Nie; temperatura jest czynnikiem zakłócającym. Należy utrzymać ją możliwie stałą, a zmieniać wyłącznie natężenie światła.
+E. Może zadziałać inny czynnik ograniczający, np. CO₂, temperatura lub zdolność aparatu fotosyntetycznego do wykorzystania światła.
+
+**Ocenianie:** punkt za poprawny fakt, dodatkowy za związek przyczynowo-skutkowy, gdy zadanie wymaga wyjaśnienia. W zadaniach doświadczalnych oceniaj także poprawne zmienne i ograniczenia pomiaru.
+
+## 15. Test końcowy (3 + 2 + 2 + 1)
+1. Zapisz słownie, skąd fotosynteza czerpie węgiel i skąd energię. **(3 pkt)**
+2. Wyjaśnij rolę chlorofilu i chloroplastu, nie utożsamiając tych pojęć. **(2 pkt)**
+3. Podaj różnicę między fotosyntezą a oddychaniem komórkowym u roślin. **(2 pkt)**
+4. Czy roślina oddycha w nocy? Uzasadnij. **(1 pkt)**
+
+**Klucz:** 1. Węgiel przede wszystkim z CO₂; energia ze światła. 2. Chloroplast to organellum fotosyntezy, chlorofil to barwnik pochłaniający światło. 3. Fotosynteza syntetyzuje związki organiczne przy wykorzystaniu energii światła, oddychanie uwalnia energię związków organicznych i przekazuje jej część do ATP. 4. Tak, ponieważ komórki stale potrzebują ATP, a oddychanie nie wymaga światła.
+
+## 16. Checklista opanowania
+- [ ] Znam substraty i produkty równania sumarycznego fotosyntezy.
+- [ ] Odróżniam źródło węgla od źródła energii.
+- [ ] Wyjaśniam rolę chloroplastu, chlorofilu, liścia i aparatów szparkowych.
+- [ ] Wiem, że rośliny oddychają także w nocy.
+- [ ] Potrafię porównać fotosyntezę z oddychaniem komórkowym.
+- [ ] Umiejętnie wskazuję zmienną niezależną, zależną i czynniki kontrolowane.
+
+## 17. Mapa pojęć
+**Światło** → energia → reakcje fotosyntezy; **CO₂** → węgiel → związki organiczne; **woda** → substrat fotosyntezy tlenowej; **chloroplast** → miejsce procesu; **związki organiczne** → budowa, zapas lub oddychanie; **O₂** → produkt fotosyntezy tlenowej.
+
+## 18. Słownik
+- **Fotosynteza:** synteza związków organicznych z wykorzystaniem energii światła.
+- **Chloroplast:** organellum, w którym u roślin i glonów zachodzi fotosynteza.
+- **Chlorofil:** barwnik pochłaniający energię światła.
+- **Aparat szparkowy:** struktura epidermy liścia regulująca wymianę gazową i utratę wody.
+- **Substrat:** substancja wykorzystywana w procesie.
+- **Produkt:** substancja powstająca w procesie.
+- **Czynnik ograniczający:** czynnik, którego wartość ogranicza tempo procesu w danych warunkach.
+- **Cykl Calvina:** zespół reakcji wiążących CO₂ w związki organiczne przy wykorzystaniu produktów reakcji zależnych od światła.
+
+## 19. Dodatek zaawansowany — [ZAAWANSOWANY]
+W fotosyntezie tlenowej uwalniany tlen molekularny powstaje w związku z utlenianiem wody podczas reakcji zależnych od światła. To ważne rozróżnienie, ponieważ równanie sumaryczne nie pokazuje pochodzenia każdego atomu wprost.
+
+W badaniu fotosyntezy liczba pęcherzyków może zależeć od rozpuszczalności gazu, temperatury, kształtu rośliny i sposobu obserwacji. Dlatego wniosek powinien być proporcjonalny do jakości pomiaru. W doświadczeniu szkolnym mierzymy wskaźnik, a nie zawsze bezpośrednio cały proces.
+
+## 20. Jak się uczyć tej lekcji
+1. Z pamięci narysuj równanie sumaryczne i podpisz rolę każdego składnika.
+2. Wytłumacz komuś różnicę między źródłem węgla a źródłem energii.
+3. Zrób tabelę fotosynteza–oddychanie bez patrzenia na tekst.
+4. Rozwiąż zadania C–E i sprawdź, czy umiesz uzasadnić wnioski.
+5. Wróć do fiszek po 1, 3 i 7 dniach.
+
+## 21. Połączenia międzyprzedmiotowe
+- **Chemia:** wzory CO₂, H₂O i glukozy; atomy, reakcje i przemiany energii.
+- **Fizyka:** światło, pochłanianie promieniowania, energia i temperatura.
+- **Geografia:** obieg węgla, atmosfera i produkcja pierwotna ekosystemów.
+- **Matematyka:** tabele, wykresy i analiza wpływu jednego czynnika na wynik.
+- **Metoda naukowa:** hipoteza, zmienne, pomiar, kontrola i ograniczenia wniosku.
+
+## 22. Zastosowanie w życiu i ekologii
+Fotosynteza jest podstawą produkcji materii organicznej w większości ekosystemów. Energia światła zostaje uwięziona w wiązaniach chemicznych związków organicznych, z których korzystają roślinożercy i kolejne ogniwa sieci pokarmowych. Fotosynteza wpływa też na obieg węgla i stężenie tlenu w skali ekosystemów i planety.
+
+## AUDYT KOŃCOWY L006
+- **Poprawiono:** cele zapisane w niewłaściwej osobie; mylenie chlorofilu z chloroplastem; niejasność równania sumarycznego; zbyt ogólny opis doświadczenia; uproszczenia o masie rośliny i oddychaniu.
+- **Uzupełniono:** źródła węgla i energii, pobieranie CO₂ i wody, funkcje liścia, los produktów fotosyntezy, czynniki ograniczające, podstawy etapów fotosyntezy, zmienne i ograniczenia doświadczenia.
+- **Kontrola merytoryczna:** równanie opisano jako bilans sumaryczny; rozdzielono fotosyntezę i oddychanie; nie utożsamiono światła z materią; poprawnie wskazano wodę jako źródło uwalnianego tlenu w fotosyntezie tlenowej.
+- **Kontrola redakcyjna:** sekcje 0–22 kompletne; archiwum źródła oddzielone od bieżącej lekcji.
+- **Do dalszej kontroli:** niezależna recenzja nauczycielska i sprawdzenie renderowania HTML.
+
+---
+
+## ARCHIWUM MATERIAŁU ŹRÓDŁOWEGO — L006
+Poniżej zachowano oryginalny plik z paczki wejściowej, łącznie ze szkicem oraz wcześniejszą wersją kanoniczną. To archiwum nie jest drugą ścieżką nauki.
+
+# L006 — Fotosynteza: skąd roślina bierze materię organiczną?
+
+## KARTA LEKCJI L006
 
 - Numer: L006
 - Tytuł roboczy: Fotosynteza (szkic)
@@ -202,3 +407,6 @@ Fotosynteza stanowi podstawę większości łańcuchów pokarmowych: energia św
 - Treść sprawdzono roboczo pod kątem spójności pojęć, odpowiedzi do zadań i oznaczeń poziomu.
 - Każdy schemat tekstowy ma linię `@opis` opisującą zawartość i główny wniosek.
 - **Ograniczenie:** to redakcyjno-merytoryczna kontrola robocza, nie niezależna recenzja nauczyciela biologii. Dane liczbowe lub mechanizmy wykraczające poza E8 należy weryfikować osobno przed publikacją.
+
+
+<!-- END ARCHIWUM MATERIAŁU ŹRÓDŁOWEGO -->

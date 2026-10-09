@@ -58,6 +58,174 @@ Nie. Najpierw trzeba rozważyć jakość preparatu, powiększenie, ostrość, wy
 
 ---
 
+
+
+## 7. Budowa mikroskopu świetlnego — co robi każda część?
+
+| Element | Funkcja | Częsty błąd |
+|---|---|---|
+| Okular | część, przez którą patrzy obserwator; ma własne powiększenie | uznanie go za jedyny element powiększający |
+| Obiektyw | tworzy powiększony obraz preparatu | dotknięcie obiektywem szkiełka |
+| Rewolwer | pozwala zmieniać obiektywy | obracanie go za obiektyw zamiast za uchwyt |
+| Stolik i zaciski | podtrzymują szkiełko | przesuwanie preparatu bez kontroli |
+| Źródło światła/lusterko | kieruje światło przez preparat | zbyt silne lub zbyt słabe oświetlenie |
+| Kondensor i przysłona (jeśli występują) | pomagają kształtować oświetlenie | traktowanie ich jako elementów powiększających |
+| Śruba makrometryczna | wykonuje większą zmianę ostrości | używanie jej nieostrożnie przy dużym powiększeniu |
+| Śruba mikrometryczna | precyzyjnie dostraja ostrość | oczekiwanie, że naprawi źle przygotowany preparat |
+
+Konstrukcje mikroskopów różnią się. Uczeń powinien rozpoznawać elementy obecne w konkretnym urządzeniu i stosować instrukcję nauczyciela.
+
+## 8. Powiększenie całkowite — rachunek krok po kroku
+
+**Wzór:** powiększenie całkowite = powiększenie okularu × powiększenie obiektywu.
+
+Przykład: okular 10× i obiektyw 4× dają 40×; okular 10× i obiektyw 10× dają 100×; okular 10× i obiektyw 40× dają 400×. Znak „×” oznacza „razy”, a nie jednostkę długości.
+
+**Uwaga:** nie dodajemy powiększeń. Działanie 10× + 40× = 50× jest błędne. Wartość na obiektywie należy odczytać z jego oznaczenia, a nie zgadywać.
+
+## 9. Pole widzenia i orientacja obrazu
+
+Przy większym powiększeniu zwykle widzimy mniejszy obszar preparatu. Dlatego obiekt łatwiej odnaleźć przy małym powiększeniu, a dopiero potem obejrzeć jego fragment dokładniej. W typowym mikroskopie złożonym obraz może być odwrócony względem ruchu preparatu: gdy przesuwasz szkiełko w jedną stronę, obraz obiektu pozornie przesuwa się w przeciwną. Sprawdź to na bezpiecznym preparacie i nie zakładaj, że każdy typ urządzenia działa identycznie.
+
+## 10. Preparat mikroskopowy — od próbki do obrazu
+
+1. Przygotuj czyste szkiełko podstawowe i odpowiedni materiał.
+2. Jeśli wykonujesz preparat mokry, umieść małą kroplę wody i cienki fragment próbki.
+3. Opuszczaj szkiełko nakrywkowe pod kątem, aby ograniczyć pęcherzyki powietrza.
+4. Osusz nadmiar cieczy z zewnętrznej krawędzi, jeśli jest to potrzebne.
+5. Nie używaj nieznanych odczynników ani materiału biologicznego bez instrukcji nauczyciela.
+6. Po obserwacji zutylizuj preparat zgodnie z poleceniem i oczyść stanowisko.
+
+Nie każdy preparat powinien być mokry. Gotowe preparaty trwałe obserwuje się zgodnie z instrukcją.
+
+## 11. Powiększenie a rozdzielczość — różnica kluczowa
+
+Powiększenie zwiększa pozorny rozmiar obrazu. Zdolność rozdzielcza mówi, jak blisko mogą leżeć dwa punkty, aby nadal były widoczne jako dwa osobne szczegóły. Gdy obraz jest rozmyty, dalsze powiększanie może jedynie powiększyć rozmycie. Na jakość wpływają między innymi optyka, oświetlenie, czystość soczewek, preparat i technika obserwacji.
+
+**Analogia:** powiększenie rozciąga mapę na większy arkusz; nie dodaje automatycznie ulic, których nie naniesiono lub których nie da się rozróżnić.
+
+## 12. Jak wykonać rysunek biologiczny
+
+- Narysuj obiekt dostatecznie duży, aby dało się odczytać jego kształt.
+- Używaj prostych, wyraźnych linii; nie ozdabiaj i nie cieniuj, jeśli polecenie wymaga standardowego rysunku biologicznego.
+- Zachowuj proporcje widocznych części.
+- Podpisy prowadź czytelnie, najlepiej linijką, tak aby linie nie przecinały się niepotrzebnie.
+- Podpisuj tylko to, co rzeczywiście rozpoznajesz; nie dopisuj jądra czy chloroplastów wyłącznie dlatego, że „powinny być”.
+- Dodaj tytuł, powiększenie lub skalę, jeśli polecenie tego wymaga.
+
+Rysunek dokumentuje obserwację, a nie wyobrażenie o tym, jak preparat powinien wyglądać.
+
+## 13. Obserwacja, interpretacja i wniosek
+
+| Etap | Przykład |
+|---|---|
+| Obserwacja | „Widzę kilka komórek o wydłużonym kształcie; granice są wyraźne, wnętrze słabo widoczne”. |
+| Interpretacja | „Kształt może odpowiadać komórkom określonej tkanki, ale sam kształt nie wystarcza do pewnej identyfikacji”. |
+| Wniosek | „W tych warunkach można rozpoznać zarys komórek, ale nie wszystkie ich organella”. |
+
+Wniosek powinien wynikać z danych. Nie zapisuj jako obserwacji tego, co tylko przypuszczasz.
+
+## 14. Klinika błędów — rozszerzona
+
+| Błędne stwierdzenie | Poprawa | Uzasadnienie |
+|---|---|---|
+| „Nie widzę jądra, więc komórka go nie ma”. | Brak widoczności nie dowodzi braku struktury. | Liczą się typ komórki, preparat, ostrość i barwienie. |
+| „400× oznacza, że rozróżnię wszystko”. | Powiększenie nie jest tym samym co rozdzielczość. | Ograniczenia optyczne pozostają. |
+| „Na rysunku mogę dorysować typowe organella”. | Rysunek powinien przedstawiać to, co zaobserwowano. | Inaczej miesza się wiedzę z danymi. |
+| „Obiektyw 40× i okular 10× dają 50×”. | Dają 400×. | Powiększenia mnożymy. |
+| „Im większy obiekt na kartce, tym lepszy rysunek”. | Liczy się czytelność, proporcje i poprawne podpisy. | Sam rozmiar nie gwarantuje jakości. |
+
+## 15. Doświadczenie / ćwiczenie praktyczne
+
+**Pytanie:** Jak zmienia się pole widzenia przy zmianie obiektywu?
+
+**Sprzęt:** mikroskop, gotowy bezpieczny preparat lub preparat z podziałką, karta obserwacji.
+
+**Przebieg:** obejrzyj ten sam obszar przy najmniejszym powiększeniu; zapisz, ile charakterystycznych elementów mieści się w polu widzenia. Następnie zmień obiektyw zgodnie z instrukcją, ustaw ostrość i policz elementy ponownie. Nie dotykaj soczewek ani nie dopuszczaj do kontaktu obiektywu ze szkiełkiem.
+
+**Tabela:** obiektyw / powiększenie całkowite / liczba widocznych elementów / jakość obrazu.
+
+**Wniosek:** większe powiększenie zwykle pozwala oglądać szczegóły mniejszego fragmentu preparatu, ale obejmuje mniejszy obszar.
+
+**BHP:** przenoś mikroskop oburącz, nie używaj uszkodzonego przewodu ani urządzenia, nie obserwuj materiału nieznanego pochodzenia bez zgody nauczyciela.
+
+## 16. Zadania — od podstawy do transferu
+
+**A. Podstawa**
+1. Okular ma 10×, a obiektyw 20×. Oblicz powiększenie całkowite.
+2. Dlaczego obserwację zaczynamy zwykle od najmniejszego powiększenia?
+3. Wskaż różnicę między powiększeniem a rozdzielczością.
+
+**B. Zastosowanie**
+4. Przy 100× widzisz cały skupiony fragment preparatu, a przy 400× nie możesz odnaleźć komórki. Podaj dwa rozsądne kroki.
+5. Uczeń narysował jądro, którego nie potrafił dostrzec. Co powinien zmienić?
+
+**C. Analiza**
+6. Przy 400× obraz jest większy, ale nadal rozmyty. Wyjaśnij, dlaczego nie musi to oznaczać awarii powiększenia.
+7. Zapisz osobno obserwację i wniosek dla preparatu, w którym widoczne są granice komórek, ale wnętrze pozostaje niewyraźne.
+
+### Klucz odpowiedzi
+1. 10 × 20 = **200×**.
+2. Łatwiej znaleźć obiekt; pole widzenia jest większe i łatwiej ustawić obraz.
+3. Powiększenie zwiększa pozorny rozmiar; rozdzielczość określa zdolność rozróżniania bliskich szczegółów.
+4. Wrócić do mniejszego powiększenia, ponownie wycentrować obiekt, sprawdzić ostrość i oświetlenie, a potem ostrożnie zwiększyć powiększenie.
+5. Usunąć niepotwierdzony szczegół albo oznaczyć, że jest to schemat teoretyczny, jeśli polecenie dopuszcza schemat zamiast rysunku obserwacyjnego.
+6. Powiększenie nie usuwa ograniczeń rozdzielczości ani błędów ostrości, oświetlenia czy przygotowania próbki.
+7. Przykład obserwacji: „Widzę wyraźne granice kilku komórek, ale wnętrze jest rozmyte”. Wniosek: „Nie można na tej podstawie wiarygodnie opisać wszystkich organelli”.
+
+## 17. Fiszki
+
+- **Mikroskop świetlny:** urządzenie wykorzystujące światło i układ soczewek do obserwowania małych obiektów.
+- **Okular:** element, przez który patrzy obserwator.
+- **Obiektyw:** soczewka blisko preparatu, ważna dla tworzenia obrazu.
+- **Powiększenie całkowite:** iloczyn powiększenia okularu i obiektywu.
+- **Zdolność rozdzielcza:** możliwość rozróżniania blisko położonych szczegółów.
+- **Preparat:** próbka przygotowana do obserwacji.
+- **Obserwacja:** zapis tego, co rzeczywiście widać.
+- **Wniosek:** interpretacja wynikająca z obserwacji i wiedzy.
+
+## 18. Transfer — gdzie ta wiedza się przydaje?
+
+Podobne zasady stosuje się w diagnostyce laboratoryjnej, kontroli jakości żywności, badaniach materiałów i pracy terenowej. W każdym przypadku trzeba rozróżniać jakość obrazu od interpretacji oraz pamiętać, że narzędzie ma określone ograniczenia.
+
+## 19. Podsumowanie lekcji
+
+1. Zacznij zwykle od najmniejszego powiększenia.
+2. Powiększenie całkowite oblicz przez mnożenie.
+3. Większy obraz nie musi ujawniać nowych szczegółów.
+4. Przy większym powiększeniu pole widzenia zwykle maleje.
+5. Rysunek ma wiernie przedstawiać obserwację.
+6. Brak widoczności struktury nie jest sam w sobie dowodem jej nieobecności.
+
+## 20. Test końcowy
+
+1. Okular 15× i obiektyw 10× dają: A) 25× B) 150× C) 1500×.
+2. Zdolność rozdzielcza oznacza: A) wielkość obrazu B) zdolność rozróżniania bliskich szczegółów C) jasność lampy.
+3. Dlaczego należy wycentrować obiekt przed zwiększeniem powiększenia?
+4. Czy na rysunku obserwacyjnym wolno dopisać strukturę tylko dlatego, że występuje w typowej komórce? Uzasadnij.
+
+**Odpowiedzi:** 1. B; 2. B; 3. Pole widzenia maleje i obiekt łatwiej stracić z pola; 4. Nie, rysunek musi odpowiadać obserwacji, a przypuszczenia należy odróżnić od danych.
+
+## 21. Status opanowania
+
+| Umiejętność | Samoocena |
+|---|---|
+| Rozpoznaję podstawowe części mikroskopu | [ ] |
+| Obliczam powiększenie całkowite | [ ] |
+| Odróżniam powiększenie od rozdzielczości | [ ] |
+| Przygotowuję i obserwuję preparat zgodnie z instrukcją | [ ] |
+| Oddzielam obserwację od wniosku | [ ] |
+| Wykonuję czytelny rysunek biologiczny | [ ] |
+
+## 22. Audyt redakcyjno-merytoryczny L008
+
+- **Uzupełniono:** funkcje części mikroskopu, rachunek powiększenia, pole widzenia, przygotowanie preparatu, rysunek, obserwację i wniosek, doświadczenie z tabelą, zadania z kluczem, fiszki i test.
+- **Doprecyzowano:** większe powiększenie nie gwarantuje lepszej rozdzielczości; niewidoczność nie jest dowodem nieobecności; konstrukcje mikroskopów mogą się różnić.
+- **Kontrola spójności:** klucz odpowiada numerom zadań; powiększenia obliczane są przez mnożenie; praktyka uwzględnia BHP.
+- **Do sprawdzenia przy generowaniu HTML:** czy wzory, tabele, znaczniki warstw i pola samooceny są renderowane prawidłowo; czy grafika interaktywna odróżnia powiększenie od rozdzielczości.
+- **Ograniczenie:** ten audyt tekstowy nie zastępuje niezależnej recenzji nauczyciela ani testu na konkretnym modelu mikroskopu.
+
+
 <!-- ==================== END L008 ==================== -->
 
 

@@ -206,3 +206,39 @@ Różnice między osobnikami mają znaczenie w medycynie, hodowli i ochronie prz
 - Treść sprawdzono roboczo pod kątem spójności pojęć, odpowiedzi do zadań i oznaczeń poziomu.
 - Każdy schemat tekstowy ma linię `@opis` opisującą zawartość i główny wniosek.
 - **Ograniczenie:** to redakcyjno-merytoryczna kontrola robocza, nie niezależna recenzja nauczyciela biologii. Dane liczbowe lub mechanizmy wykraczające poza E8 należy weryfikować osobno przed publikacją.
+
+## AUDYT GENETYKI — pogłębienie: skąd bierze się różnorodność? (2026-10-09)
+
+### Trzy mechanizmy, których nie należy ze sobą mylić
+**Mutacja** zmienia sekwencję DNA i może wytworzyć nowy allel. **Rekombinacja** przestawia istniejące warianty w nowe kombinacje, m.in. podczas crossing-over i niezależnego rozchodzenia się chromosomów w mejozie. **Losowe zapłodnienie** łączy jedną z wielu możliwych gamet jednego rodzica z jedną z wielu możliwych gamet drugiego. Te procesy są powiązane, ale nie są synonimami.
+
+### Zmienność genetyczna a środowiskowa
+Fenotyp, czyli obserwowalne cechy organizmu, często zależy jednocześnie od genotypu i środowiska. Wzrost człowieka zależy m.in. od wielu genów, odżywiania, stanu zdrowia i warunków rozwoju. Nie da się więc na podstawie jednej obserwowanej cechy automatycznie ustalić genotypu. Z kolei zmiana wyglądu pod wpływem środowiska nie musi oznaczać zmiany sekwencji DNA.
+
+### Które mutacje mogą zostać przekazane potomstwu?
+U organizmów rozmnażających się płciowo mutacje w komórkach, z których powstają gamety, mogą zostać przekazane potomstwu. Mutacje powstałe w zwykłych komórkach ciała zazwyczaj nie są dziedziczone przez dzieci, choć mogą mieć znaczenie dla funkcjonowania danego organizmu. To rozróżnienie jest ważniejsze niż proste stwierdzenie, że „każda mutacja jest dziedziczna”.
+
+### Przykład krok po kroku
+Dwoje rodziców ma po dwa allele danego genu. W mejozie allele trafiają do gamet, a rekombinacja i niezależne rozchodzenie się chromosomów tworzą różne zestawy. Przy zapłodnieniu spotykają się konkretne dwie gamety. Potomstwo otrzymuje kombinację alleli, której nie musi mieć żadne z rodziców jako całość. Nie oznacza to, że każdy potomek musi różnić się od rodzeństwa pod każdą cechą ani że każda różnica jest genetyczna.
+
+### Zadania transferowe z odpowiedziami
+1. **Czy crossing-over samo w sobie tworzy nowy allel?** Zwykle nie; wymienia fragmenty między chromosomami homologicznymi i tworzy nowe kombinacje wariantów. Nowy wariant sekwencji może powstać wskutek mutacji.
+2. **Czy dwa organizmy o podobnym fenotypie muszą mieć identyczny genotyp?** Nie. Różne genotypy mogą prowadzić do podobnej cechy, a środowisko także wpływa na fenotyp.
+3. **Czy mutacja zawsze jest szkodliwa?** Nie. Jej skutek może być szkodliwy, obojętny albo w określonym środowisku korzystny; zależy od zmiany i kontekstu.
+4. **Czy zmiana opalenizny jest przykładem mutacji?** Nie. To odpowiedź organizmu na środowisko, a nie sama w sobie dziedziczna zmiana sekwencji DNA.
+5. **Dlaczego rodzeństwo zwykle nie jest genetycznie identyczne?** Otrzymuje różne kombinacje alleli wskutek mejozy i losowego łączenia gamet. Wyjątkiem o szczególnym znaczeniu są bliźnięta jednojajowe, które powstają z jednego zarodka i mają bardzo podobny genom, choć mogą z czasem różnić się wskutek zmian rozwojowych i środowiskowych.
+
+### Klinika błędów — wersja rozszerzona
+| Twierdzenie | Ocena | Poprawne rozumowanie |
+|---|---|---|
+| „Rekombinacja i mutacja to to samo” | Błędne | Mutacja zmienia DNA; rekombinacja tworzy nowe kombinacje alleli. |
+| „Każda różnica między rodzeństwem jest genetyczna” | Błędne | Różnice mogą wynikać z genów, środowiska lub ich współdziałania. |
+| „Mutacja zawsze powoduje chorobę” | Błędne | Skutki mutacji są różne i zależą od kontekstu. |
+| „Jeśli cecha jest dziedziczna, środowisko nie ma znaczenia” | Błędne | Wiele cech zależy od genów i warunków rozwoju. |
+
+### Audyt końcowy L016A
+- Rozdzielono pojęcia mutacji, rekombinacji i losowego zapłodnienia.
+- Dodano rozróżnienie mutacji w komórkach ciała i w linii prowadzącej do gamet.
+- Rozwinięto związek genotypu, fenotypu i środowiska bez deterministycznych uproszczeń.
+- Dodano zadania transferowe z kluczem i tabelę typowych błędów.
+

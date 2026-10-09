@@ -506,3 +506,46 @@ L011–L013 jeśli sypie się 46/DNA; L017 jeśli Punnett; L018–L019 jeśli p�
 - „UV uszkadza DNA” nie jest równoznaczne z „UV zawsze wywołuje mutację lub nowotwór”. Poprawna odpowiedź opisuje zwiększenie ryzyka oraz zależność od naprawy i dalszych zmian.
 - Przy ocenie genetyki punktuj tok rozumowania: zapis alleli, gamety, krzyżówka, wynik i interpretacja prawdopodobieństwa.
 - **Status:** dodano kryteria do sprawdzania klucza; nie zastępują one osobnego sprawdzenia wszystkich pozycji.
+
+## AUDYT KOŃCOWY BLOKU GENETYKI — mapa pojęć i procedura rozwiązywania zadań (2026-10-09)
+
+### Łańcuch pojęć, który trzeba rozumieć
+**DNA → gen → allel → ekspresja informacji → cecha (fenotyp)**. DNA przechowuje informację; gen jest odcinkiem DNA związanym z funkcjonalnym produktem; allele to wersje danego genu lub jego regionu; ekspresja oznacza wykorzystanie informacji, np. w wytwarzaniu RNA i białka; fenotyp to obserwowalne cechy powstające w wyniku współdziałania genotypu i środowiska. Ten łańcuch jest modelem edukacyjnym — nie każda cecha jest kontrolowana przez jeden gen ani każdy gen koduje białko.
+
+### Algorytm do krzyżówek genetycznych
+1. Zapisz, co oznaczają symbole alleli; nie zakładaj automatycznie, że duża litera zawsze oznacza allel „lepszy”.
+2. Ustal genotypy rodziców na podstawie danych. Jeśli dane nie wystarczają, wypisz możliwe genotypy zamiast zgadywać.
+3. Wypisz gamety: każda gameta otrzymuje po jednym allelu z każdej pary homologicznej.
+4. Połącz gamety w tabeli i policz wszystkie możliwe kombinacje.
+5. Podaj oddzielnie prawdopodobieństwo genotypu i fenotypu, jeśli nie są tym samym.
+6. Napisz, że prawdopodobieństwo dotyczy każdej ciąży/zdarzenia w modelu i nie gwarantuje konkretnej kolejności wyników.
+7. Na końcu sprawdź, czy zadanie dotyczy dominacji zupełnej, kodominacji, alleli wielokrotnych, cechy sprzężonej z płcią czy cechy wieloczynnikowej.
+
+### Najważniejsze rozróżnienia do samokontroli
+| Nie utożsamiaj | Rozróżnienie |
+|---|---|
+| gen i allel | gen to odcinek informacji; allel to jego wariant |
+| genotyp i fenotyp | zapis alleli ≠ obserwowana cecha |
+| replikacja i mitoza | kopiowanie DNA ≠ podział jądra/komórki |
+| mutacja i rekombinacja | zmiana DNA ≠ nowe połączenie istniejących alleli |
+| dominacja i „lepszość” | dominujący allel nie musi być korzystniejszy |
+| prawdopodobieństwo i pewność | szansa nie ustala kolejności zdarzeń |
+| grupa krwi i pełny genotyp | ten sam fenotyp może mieć różne genotypy |
+| cecha dziedziczna i wyłącznie genetyczna | środowisko może wpływać na fenotyp |
+
+### Mini-zestaw diagnostyczny z kluczem
+1. Osoba ma grupę krwi A. Czy jej genotyp musi być IᴬIᴬ? **Nie**, możliwe jest też Iᴬi.
+2. W krzyżówce wynik ma prawdopodobieństwo 25%. Czy przy czterech potomkach dokładnie jeden musi mieć tę cechę? **Nie**; prawdopodobieństwo nie gwarantuje wyniku w małej próbie.
+3. Czy crossing-over zawsze tworzy nowe allele? **Nie**, przede wszystkim tworzy nowe kombinacje alleli.
+4. Czy mutacja w komórce skóry zwykle jest przekazywana dzieciom? **Nie**, mutacje somatyczne zwykle nie są dziedziczone przez potomstwo.
+5. Dlaczego replikacja DNA jest konieczna przed mejozą I? **Aby skopiować DNA i utworzyć chromatydy siostrzane przed dwoma kolejnymi podziałami.**
+6. Czy dominujący allel musi być częstszy w populacji? **Nie**; dominacja opisuje sposób ujawniania się alleli w heterozygocie, a nie ich częstość.
+
+### Kryteria opanowania bloku
+Uczeń opanował materiał, gdy potrafi nie tylko podać definicję, ale też: (a) zastosować ją w nowym przykładzie, (b) uzasadnić każdy krok, (c) wskazać założenia modelu, (d) zauważyć, kiedy danych jest za mało, oraz (e) unikać wniosków medycznych lub rodzinnych, których zadanie nie uzasadnia.
+
+### Audyt końcowy L021
+- Dodano jeden spójny algorytm rozwiązywania krzyżówek.
+- Zebrano najczęstsze pary pojęć mylonych w całym bloku genetyki.
+- Dodano krótką diagnostykę z kluczem i kryteria rzeczywistego opanowania wiedzy.
+
