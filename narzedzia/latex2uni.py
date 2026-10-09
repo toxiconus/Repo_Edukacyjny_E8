@@ -15,7 +15,7 @@ def conv(s):
     for _ in range(3):
         s = re.sub(r"\\mathrm\{([^{}]*)\}", r"\1", s)
     s = s.replace("\\rightarrow", "→").replace("\\cdot", "·").replace("^\\circ", "°").replace("\\,", " ")
-    s = s.replace("\\rightleftharpoons", "⇌").replace("\\equiv", "≡").replace("\\approx", "≈").replace("\\eta", "η").replace("\\Delta", "Δ")
+    s = s.replace("\\rightleftharpoons", "⇌").replace("\\equiv", "≡").replace("\\approx", "≈").replace("\\eta", "η").replace("\\Delta", "Δ").replace("\\log", "log")
     s = re.sub(r"\\xrightarrow\{([^{}]*)\}", r"—(\1)→", s)
     for _ in range(3):
         s = re.sub(r"\\mathrm\{([^{}]*)\}", r"\1", s)

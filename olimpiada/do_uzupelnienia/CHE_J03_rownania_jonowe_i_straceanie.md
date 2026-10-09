@@ -152,3 +152,180 @@ Osad odfiltrować i przemyć.
 - DANE: wersja tabeli używana w szkole/na konkursie (zdjęcie lub lista)
 - DANE: doświadczenia z lekcji z obserwacjami
 - DANE: zadania rejonowe LKO + klucz; typowe zapisy wymagane w kluczu (strzałki ↓, ładunki)
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### J03 — Równania jonowe i strącanie
+
+#### Treść
+
+Reakcje jonowe zapisują przemiany zachodzące między jonami w roztworach wodnych. Najpierw należy zapisać poprawne równanie cząsteczkowe, następnie rozłożyć na jony tylko mocne elektrolity rozpuszczone w wodzie, a na końcu skrócić jony obserwatorowe.
+
+#### Procedura
+
+1. Zapisz wzory substratów i produktów.
+2. Zbilansuj równanie cząsteczkowe.
+3. Oznacz substancje rozpuszczone i osady.
+4. Rozpisz na jony mocne elektrolity w roztworze.
+5. Nie rozpisuj osadów, gazów, wody i słabych elektrolitów.
+6. Skróć identyczne jony po obu stronach.
+7. Sprawdź atomy i ładunki.
+
+#### Przykład
+
+ BaCl₂+Na₂SO₄→ BaSO₄↓+2NaCl
+
+Pełne równanie jonowe:
+
+ Ba²⁺+2Cl⁻+2Na⁺+SO₄²⁻→ BaSO₄↓+2Na⁺+2Cl⁻
+
+Skrócone:
+
+ Ba²⁺+SO₄²⁻→ BaSO₄↓
+
+#### Zadania
+
+1. Zapisz równanie jonowe skrócone dla reakcji AgNO₃ z NaCl.
+2. Zapisz równanie jonowe skrócone dla reakcji HCl z NaOH.
+3. Wyjaśnij, dlaczego Na⁺ i NO₃⁻ można skrócić w reakcji azotanu srebra z chlorkiem sodu.
+4. Sprawdź bilans ładunków w równaniu:
+
+ Ag⁺+Cl⁻→ AgCl
+
+#### Klucz
+
+1.
+
+ Ag⁺+Cl⁻→ AgCl↓
+
+2.
+
+ H⁺+OH⁻→ H₂O
+
+3. Są jonami obserwatorowymi i występują niezmienione po obu stronach równania.
+4. Po lewej stronie suma ładunków wynosi 0, po prawej osad jest obojętny.
+### Uzupełnienie — Dodatkowe uzupełnienie: równania jonowe
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md`.
+
+#### Dysocjacja a równanie jonowe
+
+Dysocjacja opisuje rozpad elektrolitu na jony w roztworze, na przykład:
+
+ NaCl→ Na⁺+Cl⁻
+
+Równanie jonowe opisuje reakcję zachodzącą między jonami, na przykład:
+
+ Ag⁺+Cl⁻→ AgCl↓
+
+Nie każda dysocjacja jest reakcją chemiczną prowadzącą do powstania nowych substancji.
+
+#### Elektrolity
+
+- mocne elektrolity zapisuje się zwykle jako całkowicie zdysocjowane;
+- słabe elektrolity zapisuje się strzałką równowagi;
+- woda jest słabym elektrolitem;
+- osadów, gazów i czystej wody nie rozpisuje się na jony w równaniu jonowym.
+
+##### Przykład neutralizacji
+
+Cząsteczkowo:
+
+ HCl+NaOH→ NaCl+H₂O
+
+Pełne jonowe:
+
+ H⁺+Cl⁻+Na⁺+OH⁻→ Na⁺+Cl⁻+H₂O
+
+Skrócone jonowe:
+
+ H⁺+OH⁻→ H₂O
+
+#### Typowe błędy
+
+- rozpisywanie osadu na jony;
+- pozostawianie jonów obserwatorowych w równaniu skróconym;
+- niezachowanie ładunku;
+- użycie H⁺ zamiast H₃O⁺ bez zaznaczenia, że jest to zapis szkolnie uproszczony;
+- zapisanie reakcji wymiany, mimo że nie powstaje osad, gaz ani słaby elektrolit;
+- pominięcie współczynnika przy jonie wieloatomowym.
+### Uzupełnienie — Równania jonowe — zadania dodatkowe
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_koncowe_2026-10-09.md`.
+
+> Uwaga przy scalaniu: Osad PbI₂ jest żółty — dopisać tę obserwację w zadaniu 2.
+
+##### Zadanie 1
+
+Zapisz równanie jonowe skrócone reakcji kwasu siarkowego(VI) z wodorotlenkiem potasu.
+
+##### Klucz
+
+ H⁺+OH⁻→ H₂O
+
+Jony K⁺ i SO₄²⁻ są jonami obserwatorowymi.
+
+##### Zadanie 2
+
+Zapisz równanie jonowe skrócone reakcji azotanu(V) ołowiu(II) z jodkiem potasu.
+
+##### Klucz
+
+Równanie cząsteczkowe:
+
+ Pb(NO₃)₂+2KI→ PbI₂↓+2KNO₃
+
+Równanie jonowe skrócone:
+
+ Pb²⁺+2I⁻→ PbI₂↓
+
+##### Zadanie 3
+
+Oceń, czy zachodzi reakcja po zmieszaniu roztworów NaNO₃ i KCl.
+
+##### Klucz
+
+Nie ma typowej reakcji netto. Potencjalne produkty, KNO₃ i NaCl, pozostają rozpuszczone, więc wszystkie jony są jonami obserwatorowymi.
+### Uzupełnienie — Doświadczenia — uzupełnienie
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_koncowe_2026-10-09.md`.
+
+##### Wykrywanie jonów chlorkowych
+
+**Odczynniki:** roztwór badany i roztwór azotanu(V) srebra.
+
+**Obserwacja:** powstanie białego osadu.
+
+**Równanie jonowe:**
+
+ Ag⁺+Cl⁻→ AgCl↓
+
+**Wniosek:** próbka zawiera jony chlorkowe, jeżeli wykluczono jony dające podobne osady i zastosowano odpowiednią kontrolę.
+
+##### Wykrywanie jonów siarczanowych(VI)
+
+**Odczynniki:** roztwór badany i rozpuszczalna sól baru w odpowiednio zakwaszonym środowisku.
+
+**Obserwacja:** powstanie białego osadu siarczanu(VI) baru.
+
+**Równanie jonowe:**
+
+ Ba²⁺+SO₄²⁻→ BaSO₄↓
+
+Zakwaszenie pomaga ograniczyć zakłócenia powodowane przez niektóre inne aniony.
+
+##### Wykrywanie jonów węglanowych
+
+**Odczynnik:** rozcieńczony kwas.
+
+**Obserwacja:** wydzielanie gazu.
+
+**Równanie jonowe:**
+
+ CO₃²⁻+2H⁺→ CO₂↑+H₂O
+
+Potwierdzenie gazu:
+
+ Ca(OH)₂+CO₂→ CaCO₃↓+H₂O

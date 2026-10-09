@@ -8,6 +8,7 @@ bloku w pakiecie MD (kanon) i tekstu wyciągniętego z najnowszego HTML.
 Chemia: lekcje N01–N05 (chemia/che/md) zastępują stare L002–L005 z pakietu.
 """
 import datetime
+import os
 import re
 from pathlib import Path
 
@@ -117,12 +118,16 @@ def build(nazwa, przedmiot, przedmiot_dop, kontekst, lessons, pomin, szkielety=(
     w1 = {}
     for ln in (ROOT / "WERYFIKACJA.md").read_text(encoding="utf-8").split("\n"):
         c = [x.strip() for x in ln.strip("|").split("|")]
-        if len(c) > 3 and re.match(r"\d{4}-", c[3]):
-            w1[(c[0], c[1])] = c[3]
-    def znak(k):
-        d = w1.get((przedmiot.split()[-1] if przedmiot.startswith("język") else przedmiot, k))
-        return f" **[W1 {d} — po weryfikacji treści]**" if d else ""
-    spis = "\n".join(f"- **{k}** — {t}  _(źródło: {z})_{znak(k)}" for k, t, _, z in lessons)
+        if len(c) > 3 and re.match(r"\d{4}-", c[3]) and "W1 nie dotyczy" not in ln:
+            w1.setdefault((c[0], c[1]), []).append((c[3], ln))
+    def znak(k, z):
+        rows = w1.get((przedmiot.split()[-1] if przedmiot.startswith("język") else przedmiot, k), [])
+        sciezka = z.split(" ")[-1].strip("()`")
+        for d, ln in rows:  # wiersz rejestru musi wskazywać ten plik (albo jego katalog)
+            if os.path.basename(sciezka) in ln or (os.path.dirname(sciezka) + "/`") in ln or (os.path.dirname(sciezka) + "/") in ln.split("(`")[-1]:
+                return f" **[W1 {d} — po weryfikacji treści]**"
+        return ""
+    spis = "\n".join(f"- **{k}** — {t}  _(źródło: {z})_{znak(k, z)}" for k, t, _, z in lessons)
     if szkielety:
         spis += "\n\nSzkielety na końcu pliku: " + "; ".join(f"{k} {t}" for k, t, _, _ in szkielety)
     if pomin:
@@ -187,7 +192,7 @@ def chemia():
     gk = {x[3].split("/")[-1].split("_")[0] for x in gotowe}  # F01, N01, REV01...
     # kanon (lekcje_md): bez tego, co już jest w gotowych; seria N kanonu = stara numeracja tlenki..sole (zastąpiona)
     kanon = []
-    for sub in ("00", "F", "R", "O"):
+    for sub in ("00", "F", "R", "O", "J", "X"):
         for x in md_dir(f"chemia/lekcje_md/{sub}", skip=("CHE.00.S00",)):
             kod = x[0]
             if kod in gk and kod != "R03":

@@ -170,6 +170,7 @@ Liczba masowa **A** jest liczbą całkowitą dla konkretnego **izotopu**. **Masa
 :::
 
 @model f05-izotopy-v01 | Izotop, jon czy inny pierwiastek? Konstruktor atomu | dodawaj i zabieraj p, n, e — model nazywa zmianę
+@opis Konstruktor atomu: jądro z protonami i neutronami oraz elektrony na powłokach; przy dodawaniu lub zabieraniu cząstek model nazywa zmianę — inna liczba neutronów to izotop, inna liczba elektronów to jon, inna liczba protonów to inny pierwiastek. Wniosek: o tożsamości pierwiastka decyduje wyłącznie liczba protonów.
 
 ## 3 | Układ okresowy [[basic:E8]] {#uklad}
 
@@ -198,6 +199,7 @@ Tabela to skrót dla najczęstszych pierwiastków. **Gdy nazwa związku podaje w
 :::
 
 @model periodic-54 | Układ okresowy 1–54 — okres, grupa, elektrony walencyjne, trendy | kliknij pierwiastek: adres → elektrony → przewidywanie
+@opis Interaktywny układ okresowy 1–54: po kliknięciu pierwiastka widać jego okres, grupę, liczbę elektronów walencyjnych i schemat powłok, a komórki można kolorować według trendów (promień, elektroujemność). Wniosek: z adresu w układzie okresowym odczytuje się budowę elektronową i przewiduje właściwości.
 
 ::: karta extra | Trendy w układzie okresowym (rozszerzenie)
 | Cecha | Jak się zmienia |
@@ -305,7 +307,9 @@ Jeśli występuje jon wieloatomowy (OH⁻, SO₄²⁻, NO₃⁻), traktuj go prz
 | Cr₂O₇ | dichromianowa(VI) | II / Cr₂O₇²⁻ | K₂Cr₂O₇ |
 
 @model n01-konstruktor-v01 | Konstruktor wzoru tlenku (W–K–S–K) | wybierz pierwiastek i wartościowość — model krzyżuje, skraca i sprawdza wzór
+@opis Konstruktor wzoru tlenku: wybierasz pierwiastek i jego wartościowość, a model zapisuje wartościowości nad symbolami, krzyżuje je jako indeksy, skraca i sprawdza wzór (metoda W–K–S–K). Wniosek: wzór wynika z wartościowości pierwiastków — nie zgaduje się go.
 @model n02-wzory-v01 | Wzór wodorotlenku: kation + OH⁻ | bilans ładunków, nawias, modele
+@opis Konstruktor wzoru wodorotlenku: kation metalu łączy się z tyloma anionami OH⁻, ile wynosi jego ładunek; model pokazuje zapis z nawiasem (np. Ca(OH)₂, Al(OH)₃) jako wzór, model kulkowy i jony. Wniosek: nawias obejmuje całą grupę OH, a indeks za nawiasem mówi, ile jest tych grup.
 
 ### Pięć rzeczy, których nie wolno mieszać {#piec-pojec}
 
@@ -379,6 +383,7 @@ W szkolnym modelu atomy tworzą wiązania, bo układ elektronów w związku jest
 **Wiązanie metaliczne:** dodatnie jony metalu zanurzone w „morzu elektronów”. Stąd przewodnictwo prądu i ciepła, kowalność i połysk metali.
 
 @model molecule3d-merged | Model 3D cząsteczek | obróć cząsteczkę, kliknij atom — wiązania, wolne pary, geometria
+@opis Trójwymiarowy model cząsteczki, który można obracać; po kliknięciu atomu widać jego wiązania, wolne pary elektronowe i kształt cząsteczki (np. kątowa H₂O, liniowa CO₂). Wniosek: wzór sumaryczny nie pokazuje kształtu — pokazuje go model przestrzenny.
 
 ::: karta extra | Elektroujemność i polaryzacja
 **Elektroujemność** — miara zdolności atomu do przyciągania elektronów w wiązaniu; ogólnie rośnie w prawo i w górę, największa — **fluor**. To trend, nie automat: duża różnica elektroujemności **zwykle sprzyja** wiązaniu o silnym charakterze jonowym, mała — kowalencyjnemu; to wskazówka, nie test rozstrzygający. W klasie 7/8 najpierw stosuj prostszą regułę (metal + niemetal → jonowe; niemetale → kowalencyjne).
@@ -452,6 +457,7 @@ Spalanie to szybka reakcja substancji z tlenem, której zwykle towarzyszy wydzie
 :::
 
 @model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności | kation × anion — rozpuszczalny, trudno rozpuszczalny, osad
+@opis Tabela rozpuszczalności: wiersze kationów, kolumny anionów, komórki oznaczone jako substancja rozpuszczalna, trudno rozpuszczalna lub praktycznie nierozpuszczalna (osad). Wniosek: z tabeli odczytuje się, czy w reakcji powstanie osad.
 
 ## 8 | Jak wybrać strategię? [[understand:ROZUMIENIE]] {#strategia}
 
@@ -590,6 +596,24 @@ Rozwiązuj zadania z różnych działów na zmianę — to uczy wybierać strate
 
 ::: odp | Pokaż odpowiedzi
 1. Na < H < Cl < O < F. 2. NaCl — większa różnica elektroujemności. 3. H₂O — większa różnica elektroujemności O–H niż S–H. 4. H–O–H; O=C=O; C z czterema wiązaniami C–H. 5. Cl:Cl (z wolnymi parami); H:Cl; H:O:H (dwie wolne pary na O). 6. C — 4 wiązania (dwa podwójne), O — 2 (jedno podwójne); C ma wartościowość IV. 7. 18 u; 44 u; 58,5 u (masa jednostki wzoru); 74 u (masa jednostki wzoru). 8. 44 : 18 ≈ 2,44 razy.
+:::
+
+::: karta understand | Pary pojęć, które najczęściej się mylą (W1)
+| Pojęcie A | Pojęcie B | Różnica jednym zdaniem |
+|---|---|---|
+| pierwiastek | atom | pierwiastek to rodzaj atomów (to samo Z), atom — pojedyncza cząstka |
+| związek chemiczny | mieszanina | związek ma stały skład i powstaje w reakcji; mieszanina — zmienny skład, rozdzielana fizycznie |
+| indeks | współczynnik | indeks to część wzoru (skład), współczynnik mówi, ile jest cząsteczek lub jednostek wzoru |
+| wartościowość | stopień utlenienia | wartościowość — liczba wiązań (bez znaku), stopień utlenienia — formalny ładunek ze znakiem |
+| masa atomowa | liczba masowa | masa atomowa — średnia ważona mas izotopów (u), liczba masowa A — liczba protonów i neutronów jednego nuklidu |
+| obserwacja | wniosek | obserwacja opisuje, co widać; wniosek wyjaśnia, co z tego wynika |
+| rozpuszczalność | szybkość rozpuszczania | rozpuszczalność — ile najwięcej się rozpuści, szybkość — jak prędko |
+
+**Zadanie diagnostyczne.** Uczeń dostał zapis CaOH₂ i „podczas bilansowania” zmienił go na Ca(OH)₂. Oceń postępowanie.
+
+::: odp | Pokaż odpowiedź
+Poprawka wzoru jest słuszna, ale to **nie** bilansowanie. Wzór Ca(OH)₂ wynika z ładunku Ca²⁺ i dwóch jonów OH⁻ — ustala się go przed bilansowaniem. Podczas bilansowania wolno zmieniać tylko współczynniki, nigdy indeksy.
+:::
 :::
 
 ## 12 | Obliczenia i doświadczenia konkursowe [[exam:KONKURS]] {#konkurs}

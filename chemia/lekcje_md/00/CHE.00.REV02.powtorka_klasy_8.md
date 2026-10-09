@@ -487,3 +487,236 @@ Mapa: atom → wzór → tlenek → wodorotlenek → kwas → sól → rachunki 
 - pH basenu ~7,2 — kompromis dezynfekcja vs skóra (hasło, nie receptura).
 
 <!-- ==================== END L012 ==================== -->
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### REV02 — Powtórka klasy 8
+
+#### Poprawki
+
+- Powtórka klasy 8 powinna łączyć rozpoznawanie substancji, równania i obliczenia.
+- Nie wystarczy znać definicję; uczeń powinien przejść od danych do modelu i odpowiedzi.
+- Każdy dział powinien mieć zadania:
+  - rozpoznawcze;
+  - rachunkowe;
+  - doświadczalne;
+  - z uzasadnieniem;
+  - transferowe.
+- Powtórka powinna uwzględniać zadania z błędnym rozwiązaniem do poprawy.
+- Należy wymagać jednostek w obliczeniach.
+- Należy wymagać sprawdzania bilansu atomów i ładunku.
+- Należy unikać zadań, w których uczeń może odgadnąć odpowiedź bez rozumowania.
+
+#### Uzupełnienia
+
+##### Zestaw przekrojowy
+
+1. Zapisz wzór tlenku glinu.
+2. Zapisz reakcję tlenku wapnia z wodą.
+3. Oblicz stężenie procentowe roztworu z 12 g soli i 108 g wody.
+4. Zapisz reakcję kwasu z węglanem.
+5. Wskaż reagent ograniczający.
+6. Zapisz spalanie całkowite propanu.
+7. Zapisz estryfikację kwasu etanowego.
+8. Wyjaśnij wynik próby z płynem Lugola.
+9. Opisz próbę biuretową.
+10. Wskaż błąd w rozwiązaniu.
+
+##### Klucz skrócony
+
+1. Al₂O₃.
+2.
+
+ CaO+H₂O→ Ca(OH)₂
+
+3.
+
+ mr=12+108=120 g
+
+ Cp=10%
+
+4. Przykład:
+
+ CaCO₃+2HCl→ CaCl₂+H₂O+CO₂
+
+5. Porównaj ilości moli podzielone przez współczynniki równania.
+6.
+
+ C₃H₈+5O₂→3CO₂+4H₂O
+
+7.
+
+ CH₃COOH+C₂H₅OH⇌ CH₃COOC₂H₅+H₂O
+
+8. Granatowe zabarwienie wskazuje na obecność skrobi w odpowiednich warunkach.
+9. Fioletowe zabarwienie w obecności odczynnika biuretowego wskazuje na wiązania peptydowe.
+10. Ocena zależy od przedstawionego rozwiązania; należy sprawdzić wzory, bilans, jednostki i końcową interpretację.
+### Uzupełnienie — Dodatkowe zadania integracyjne
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md`.
+
+#### Zadanie 1
+
+Uczeń zapisał:
+
+ Fe+CuSO₄→ FeSO₄+Cu
+
+Następnie stwierdził, że żelazo jest reduktorem. Oceń.
+
+##### Klucz
+
+Stwierdzenie jest poprawne. Żelazo oddaje elektrony:
+
+ Fe→ Fe²⁺+2e⁻
+
+i ulega utlenieniu. Substancja, która oddaje elektrony, jest reduktorem.
+
+#### Zadanie 2
+
+Uczeń zapisał:
+
+ Cu+2HCl→ CuCl₂+H₂
+
+Oceń równanie.
+
+##### Klucz
+
+W typowych warunkach reakcja nie zachodzi, ponieważ miedź znajduje się poniżej wodoru w szeregu aktywności i nie wypiera go z rozcieńczonego kwasu chlorowodorowego.
+
+#### Zadanie 3
+
+W roztworze znajdują się jony Ba²⁺, Na⁺, Cl⁻ i SO₄²⁻. Dodano roztwór zawierający dodatkowe jony Ba²⁺.
+
+##### Klucz
+
+Może powstać osad siarczanu baru:
+
+ Ba²⁺+SO₄²⁻→ BaSO₄↓
+
+Jony Na⁺ i Cl⁻ pozostają jonami obserwatorowymi.
+
+#### Zadanie 4
+
+Oblicz stężenie procentowe roztworu otrzymanego po zmieszaniu 50 g roztworu 20-procentowego z 150 g wody.
+
+##### Klucz
+
+Masa substancji:
+
+ ms=0,20·50=10 g
+
+Masa końcowego roztworu:
+
+ mr=50+150=200 g
+
+ Cp=10 / 200·100%=5%
+
+#### Zadanie 5
+
+W roztworze o objętości 250 mL znajduje się 0,05 mola NaOH. Oblicz stężenie molowe.
+
+##### Klucz
+
+ V=0,250 dm³
+
+ c=0,05 / 0,250=0,20 mol/dm³
+### Uzupełnienie — Kontrola końcowa bloku
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md`.
+
+#### Uczeń powinien umieć
+
+- rozróżnić mieszaninę, pierwiastek, związek i substancję prostą;
+- odczytać skład powietrza i właściwości jego głównych składników;
+- rozpoznać tlenki i zapisać ich wzory;
+- odróżnić wodorotlenek od zasady;
+- zapisać reakcje kwasów, zasad i soli;
+- korzystać z tabeli rozpuszczalności;
+- zapisać równanie jonowe skrócone;
+- obliczyć stężenie procentowe;
+- obliczyć stężenie molowe;
+- obliczyć liczbę moli i masę molową;
+- zastosować równanie reakcji w obliczeniach;
+- wskazać reagent ograniczający;
+- obliczyć wydajność;
+- rozpoznać alkany, alkeny i alkiny;
+- zapisać spalanie węglowodoru;
+- rozróżnić alkohol, kwas karboksylowy i ester;
+- opisać tłuszcze, cukry i białka;
+- przeprowadzić analizę doświadczenia;
+- odróżnić obserwację od wniosku;
+- wskazać i poprawić błąd w równaniu lub obliczeniu.
+### Uzupełnienie — Klinika błędów rachunkowych
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_koncowe_2026-10-09.md`.
+
+##### Błąd 1
+
+Uczeń obliczył:
+
+ Cp=20 / 180·100%
+
+dla 20 g soli i 180 g wody.
+
+##### Poprawka
+
+Masa roztworu:
+
+ mr=20+180=200 g
+
+ Cp=20 / 200·100%=10%
+
+##### Błąd 2
+
+Uczeń użył 500 mL bezpośrednio we wzorze:
+
+ c=n / V
+
+##### Poprawka
+
+ 500 mL=0,500 dm³
+
+Dopiero potem:
+
+ c=n / 0,500
+
+##### Błąd 3
+
+Uczeń uznał, że substrat o mniejszej masie jest reagentem ograniczającym.
+
+##### Poprawka
+
+Najpierw przelicz masy na mole, a następnie porównaj stosunek ilości moli ze współczynnikami równania.
+
+##### Błąd 4
+
+Uczeń obliczył masę produktu z niezbilansowanego równania.
+
+##### Poprawka
+
+Każde zadanie stechiometryczne zaczynaj od poprawnego i zbilansowanego równania reakcji.
+### Uzupełnienie — Klinika błędów pojęciowych
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_koncowe_2026-10-09.md`.
+
+##### Błąd: „Kwas zawiera wodór, więc każda substancja z wodorem jest kwasem”
+
+**Poprawka:** Kwas ma określoną budowę i w wodzie zwiększa stężenie jonów hydroniowych. Metan, etanol i glukoza zawierają wodór, ale nie są kwasami w tym ujęciu.
+
+##### Błąd: „Każdy wodorotlenek jest zasadą”
+
+**Poprawka:** W szkolnym ujęciu zasadami są wodorotlenki rozpuszczalne w wodzie. Wodorotlenek trudno rozpuszczalny może reagować z kwasem, ale nie tworzy typowego roztworu zasadowego.
+
+##### Błąd: „Sól zawsze ma smak słony”
+
+**Poprawka:** Sól kuchenna ma smak słony, ale różne sole mają różne właściwości i nie wolno ich rozpoznawać przez smak.
+
+##### Błąd: „Woda jest związkiem, więc nie może być rozpuszczalnikiem”
+
+**Poprawka:** Woda może być jednocześnie związkiem chemicznym i rozpuszczalnikiem.
+
+##### Błąd: „Reakcja zachodzi, gdy wymienimy jony miejscami”
+
+**Poprawka:** Wymiana jonów daje reakcję netto tylko wtedy, gdy powstaje między innymi osad, gaz albo słaby elektrolit.

@@ -1040,3 +1040,200 @@ Uwodornienie części wiązań podwójnych może zmieniać właściwości tłusz
 3. Mają inną budowę i polarność niż woda, dlatego tworzą odrębną fazę.
 4. Glicerol i sole kwasów tłuszczowych.
 5. Ułatwia rozproszenie jednej cieczy w drugiej i stabilizuje emulsję.
+
+> Kolejna partia audytu W1 — źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`.
+
+### O15–O17 — Cukry (w audycie: O08)
+
+> Uwaga przy scalaniu: Zapis Cu²⁺ → Cu₂O↓ (próba Trommera) to schemat, nie bilans — w lekcji podpisać „schemat”.
+
+#### Poprawki
+
+- Cukry, czyli sacharydy, są związkami organicznymi zawierającymi przede wszystkim węgiel, wodór i tlen.
+- Nie wszystkie cukry mają słodki smak.
+- Nie każdy słodki związek jest cukrem.
+- Glukoza i fruktoza mają ten sam wzór sumaryczny:
+
+ C₆H₁₂O₆
+
+ale inną budowę, dlatego są izomerami.
+- Sacharoza jest dwucukrem zbudowanym z glukozy i fruktozy.
+- Skrobia i celuloza są polisacharydami zbudowanymi z wielu jednostek glukozy, ale różnią się sposobem połączenia tych jednostek i właściwościami.
+- Człowiek trawi skrobię, natomiast celuloza pełni głównie funkcję błonnika pokarmowego.
+- Nie należy pisać, że celuloza jest całkowicie „niestrawna” w każdym znaczeniu; jej część może być fermentowana przez mikroorganizmy jelitowe.
+- Glukoza jest cukrem redukującym.
+- Sacharoza nie daje dodatniej próby Trommera lub Benedicta bez wcześniejszego rozkładu hydrolitycznego.
+- Próby charakterystyczne nie powinny być przedstawiane jako absolutne identyfikatory bez warunków i kontroli.
+
+#### Uzupełnienia
+
+##### Podział
+
+- monosacharydy: glukoza, fruktoza;
+- disacharydy: sacharoza, maltoza, laktoza;
+- polisacharydy: skrobia, celuloza, glikogen.
+
+##### Próba z jodem
+
+Skrobia w obecności płynu Lugola daje charakterystyczne granatowe lub ciemnoniebieskie zabarwienie.
+
+Nie jest to próba na wszystkie cukry. Glukoza i sacharoza nie dają tego samego efektu.
+
+##### Próba redukcyjna
+
+Glukoza może redukować jony miedzi(II) w odpowiednich warunkach, prowadząc do powstania ceglastoczerwonego osadu tlenku miedzi(I).
+
+Uproszczony zapis:
+
+ Cu²⁺→ Cu₂O↓
+
+Nie należy przedstawiać tego równania jako pełnego bilansu reakcji organicznej.
+
+##### Hydroliza sacharozy
+
+ C₁₂H₂₂O₁₁+H₂O→ C₆H₁₂O₆+C₆H₁₂O₆
+
+Powstają glukoza i fruktoza.
+
+##### Fermentacja alkoholowa glukozy
+
+ C₆H₁₂O₆→2C₂H₅OH+2CO₂
+
+Proces zachodzi z udziałem drożdży w odpowiednich warunkach.
+
+##### Zadania
+
+1. Podaj wzór glukozy.
+2. Wyjaśnij, dlaczego glukoza i fruktoza są izomerami.
+3. Wskaż polisacharydy.
+4. Podaj odczynnik wykrywający skrobię.
+5. Zapisz równanie fermentacji alkoholowej glukozy.
+6. Wyjaśnij różnicę między skrobią a celulozą.
+
+##### Klucz
+
+1. C₆H₁₂O₆.
+2. Mają ten sam wzór sumaryczny, ale inną budowę.
+3. Skrobia, celuloza i glikogen.
+4. Płyn Lugola.
+5.
+
+ C₆H₁₂O₆→2C₂H₅OH+2CO₂
+
+6. Są zbudowane z jednostek glukozy połączonych w różny sposób i mają różne właściwości oraz znaczenie biologiczne.
+
+### O18–O20 — Białka (w audycie: O09)
+
+#### Poprawki
+
+- Białka są wielkocząsteczkowymi związkami zbudowanymi z aminokwasów.
+- Aminokwasy białkowe zawierają co najmniej grupę aminową -NH₂ i karboksylową -COOH.
+- W organizmach białka zawierają przede wszystkim węgiel, wodór, tlen i azot; niektóre zawierają również siarkę.
+- Peptydy i białka nie są tym samym:
+  - peptydy są krótszymi łańcuchami aminokwasów;
+  - białka mają większy stopień organizacji i określoną strukturę.
+- Wiązanie peptydowe powstaje między grupą karboksylową jednego aminokwasu a grupą aminową drugiego.
+- Podczas tworzenia wiązania peptydowego wydziela się cząsteczka wody.
+- Denaturacja nie zawsze oznacza rozcięcie wszystkich wiązań peptydowych.
+- Podczas denaturacji zmienia się przestrzenna struktura białka, a pierwotna sekwencja aminokwasów może pozostać zachowana.
+- Nie każda denaturacja jest odwracalna.
+- Nie wszystkie białka są rozpuszczalne w wodzie.
+- Próba biuretowa wykrywa wiązania peptydowe w środowisku zasadowym w obecności jonów miedzi(II), a nie „dowolne białko jednym odczynnikiem”.
+
+#### Uzupełnienia
+
+##### Schemat aminokwasu
+
+ H₂N-CH(R)-COOH
+
+Grupa R decyduje o rodzaju aminokwasu.
+
+##### Powstawanie dipeptydu
+
+ aminokwas+aminokwas→ dipeptyd+H₂O
+
+Wiązanie peptydowe ma fragment:
+
+ -CO-NH-
+
+##### Próba biuretowa
+
+Wynik dodatni: fioletowe zabarwienie roztworu.
+
+Wymagane są:
+
+- środowisko zasadowe;
+- jony miedzi(II);
+- co najmniej dwa wiązania peptydowe w wykrywanej strukturze, zależnie od zastosowanej wersji próby.
+
+##### Denaturacja
+
+Czynniki denaturujące mogą obejmować:
+
+- wysoką temperaturę;
+- silne kwasy i zasady;
+- sole metali ciężkich;
+- alkohole i inne rozpuszczalniki;
+- promieniowanie w określonych warunkach.
+
+Przykład: ogrzewanie białka jaja powoduje jego ścinanie i zwykle nieodwracalne zmiany struktury.
+
+##### Zadania
+
+1. Jakie grupy funkcyjne zawiera aminokwas?
+2. Wyjaśnij, czym jest wiązanie peptydowe.
+3. Podaj odczynnik lub próbę wykrywającą białko.
+4. Wyjaśnij różnicę między denaturacją a hydrolizą białka.
+5. Podaj dwa czynniki powodujące denaturację.
+
+##### Klucz
+
+1. Grupę aminową i karboksylową.
+2. Jest to wiązanie -CO-NH- powstające między aminokwasami z wydzieleniem wody.
+3. Próba biuretowa.
+4. Denaturacja zmienia głównie strukturę przestrzenną, a hydroliza rozrywa wiązania peptydowe i prowadzi do krótszych peptydów lub aminokwasów.
+5. Wysoka temperatura, silny kwas, silna zasada, sole metali ciężkich lub alkohol.
+
+### O22–O23 — Chemia w organizmie (w audycie: O10)
+
+#### Poprawki
+
+- Woda pełni funkcję rozpuszczalnika, środowiska reakcji, regulatora temperatury i składnika organizmów.
+- Nie każda substancja polarna rozpuszcza się dobrze w wodzie; znaczenie ma również rozmiar i budowa cząsteczki.
+- Tłuszcze są ważnym źródłem energii, ale nie powinny być przedstawiane jako jedyne źródło energii.
+- Cukry pełnią funkcję energetyczną, zapasową i strukturalną.
+- Białka pełnią funkcje budulcowe, enzymatyczne, transportowe, odpornościowe i regulacyjne.
+- Enzym jest biologicznym katalizatorem, ale nie zmienia położenia równowagi chemicznej.
+- Enzym obniża energię aktywacji reakcji i przyspiesza jej osiągnięcie.
+- Enzym działa wybiórczo, ale określenie „jeden enzym zawsze działa tylko na jedną substancję” jest zbyt uproszczone.
+- Witaminy nie dostarczają organizmowi energii w taki sposób jak tłuszcze, cukry i białka.
+- Sole mineralne nie są wyłącznie „odpadami” ani wyłącznie składnikami kości; pełnią wiele funkcji fizjologicznych.
+
+#### Uzupełnienia
+
+##### Funkcje głównych grup związków
+
+| Grupa | Przykładowe funkcje |
+|---|---|
+| Woda | Transport, rozpuszczanie, termoregulacja |
+| Cukry | Energia, zapas, budowa |
+| Tłuszcze | Energia, zapas, błony komórkowe, ochrona |
+| Białka | Enzymy, budowa, transport, odporność |
+| Kwasy nukleinowe | Przechowywanie i przekazywanie informacji genetycznej |
+| Sole mineralne | Regulacja procesów, budowa, przewodnictwo jonowe |
+
+##### Zadania
+
+1. Podaj trzy funkcje wody w organizmie.
+2. Wyjaśnij, dlaczego enzymy są katalizatorami.
+3. Podaj różnicę między substancją energetyczną a regulacyjną.
+4. Wyjaśnij, dlaczego ogrzewanie może niszczyć działanie enzymu.
+5. Podaj funkcję białka inną niż budulcowa.
+
+##### Klucz
+
+1. Rozpuszczanie, transport, udział w reakcjach, regulacja temperatury.
+2. Przyspieszają reakcję przez obniżenie energii aktywacji i nie są zużywane w bilansie reakcji.
+3. Substancja energetyczna dostarcza energii, a regulacyjna wpływa na przebieg procesów organizmu.
+4. Może powodować denaturację białka enzymatycznego.
+5. Enzymatyczna, transportowa, odpornościowa lub regulacyjna.

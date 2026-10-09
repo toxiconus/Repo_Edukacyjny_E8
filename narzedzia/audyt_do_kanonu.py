@@ -51,14 +51,13 @@ def main(src, uwagi, pliki, kanon, pomin):
     for f, lst in cele.items():
         nowy = not os.path.exists(f)
         tekst = "" if nowy else open(f, encoding="utf-8").read()
-        if "## AUDYT W1" in tekst:
-            print("już jest:", os.path.relpath(f, REPO)); continue
+        dalszy = "## AUDYT W1" in tekst  # kolejna partia audytu do tego samego pliku — dopisz podsekcje
         if nowy:
             kk = "; ".join(kanon.get(k, k) for k, _, _ in lst)
             tekst = (f'---\nkod: "{kk}"\ntytul: "{" · ".join(t for _, t, _ in lst)}"\n'
                      f'opis: "Materiał wstępny z audytu W1 (Perplexity, {DZIS}) — w kanonie nie było treści tych lekcji; do weryfikacji przed budową lekcji."\n---\n'
                      f"# {' · '.join(t for _, t, _ in lst)} — materiał wstępny\n")
-        sekcja = f"\n\n## AUDYT W1 — Perplexity, {DZIS} (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)\n\n> Źródło: `{raw}`. Weryfikacja treści wysłanego zapisu, nie zakresu.\n"
+        sekcja = f"\n\n> Kolejna partia audytu W1 — źródło: `{raw}`.\n" if dalszy else f"\n\n## AUDYT W1 — Perplexity, {DZIS} (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)\n\n> Źródło: `{raw}`. Weryfikacja treści wysłanego zapisu, nie zakresu.\n"
         for k, t, body in lst:
             b = re.sub(r"^(#{1,4}) ", lambda x: "#" * (len(x.group(1)) + 2) + " ", body, flags=re.M)
             kk = kanon.get(k, k)

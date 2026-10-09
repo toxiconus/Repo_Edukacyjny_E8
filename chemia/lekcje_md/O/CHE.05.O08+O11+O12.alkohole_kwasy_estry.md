@@ -190,3 +190,102 @@ Ogólny zapis:
 3. Propanian metylu.
 4. Reakcja jest odwracalna i w układzie ustala się równowaga.
 5. Sól kwasu karboksylowego i alkohol.
+
+> Kolejna partia audytu W1 — źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`.
+
+### O24 (przekrojowa) — Łączenie treści organicznych (w audycie: O11)
+
+#### Poprawki
+
+- Węglowodory, alkohole, kwasy karboksylowe i estry należy przedstawiać jako powiązane grupy związków, a nie całkowicie odrębne działy.
+- Grupa funkcyjna wpływa na właściwości chemiczne związku.
+- Długość łańcucha węglowego wpływa między innymi na temperaturę wrzenia i rozpuszczalność.
+- Obecność grup polarnych może zwiększać oddziaływania z wodą, ale wraz ze wzrostem części węglowodorowej rozpuszczalność może maleć.
+- Reakcja spalania nie identyfikuje jednoznacznie konkretnej grupy związku organicznego, ponieważ wiele związków organicznych spala się do CO₂ i H₂O.
+- Próby charakterystyczne powinny być dobierane do konkretnej grupy funkcyjnej.
+
+#### Uzupełnienia
+
+##### Mapa przemian
+
+ alken→alkohol→aldehyd lub keton→kwas karboksylowy→ester
+
+Schemat ten nie opisuje wszystkich możliwych reakcji i wymaga określenia warunków.
+
+##### Zadania przekrojowe
+
+1. Zapisz wzór etenu, etanolu, kwasu etanowego i etanianu etylu.
+2. Wskaż grupę funkcyjną w etanolu, kwasie etanowym i estrze.
+3. Zapisz reakcję etanolu z tlenem przy całkowitym spalaniu.
+4. Zapisz reakcję kwasu etanowego z etanolem.
+5. Wyjaśnij, dlaczego nie wolno utożsamiać grupy -OH w etanolu z jonem OH⁻.
+
+##### Klucz
+
+1. CH₂=CH₂, C₂H₅OH, CH₃COOH, CH₃COOC₂H₅.
+2. Etanol — hydroksylowa; kwas etanowy — karboksylowa; ester — estrowa.
+3.
+
+ C₂H₅OH+3O₂→2CO₂+3H₂O
+
+4.
+
+ CH₃COOH+C₂H₅OH⇌ CH₃COOC₂H₅+H₂O
+
+5. -OH jest obojętną grupą w cząsteczce alkoholu, a OH⁻ jest osobnym jonem o ładunku ujemnym.
+### Uzupełnienie — Zadania organiczne
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_koncowe_2026-10-09.md`.
+
+##### Zadanie 1
+
+Zidentyfikuj grupę związków:
+
+- C₂H₆;
+- C₂H₄;
+- C₂H₂;
+- C₂H₅OH;
+- CH₃COOH.
+
+##### Klucz
+
+- C₂H₆ — alkan;
+- C₂H₄ — alken;
+- C₂H₂ — alkin;
+- C₂H₅OH — alkohol;
+- CH₃COOH — kwas karboksylowy.
+
+##### Zadanie 2
+
+Zapisz równania:
+
+1. spalania całkowitego etenu;
+2. addycji bromu do etenu;
+3. spalania etanolu;
+4. reakcji kwasu etanowego z etanolem.
+
+##### Klucz
+
+1.
+
+ C₂H₄+3O₂→2CO₂+2H₂O
+
+2.
+
+ CH₂=CH₂+Br₂→ CH₂Br-CH₂Br
+
+3.
+
+ C₂H₅OH+3O₂→2CO₂+3H₂O
+
+4.
+
+ CH₃COOH+C₂H₅OH⇌ CH₃COOC₂H₅+H₂O
+
+##### Zadanie 3
+
+Wyjaśnij, dlaczego etan nie odbarwia zwykle wody bromowej w warunkach, w których reaguje eten.
+
+##### Klucz
+
+Eten zawiera wiązanie podwójne, do którego może przyłączyć się brom. Etan ma wyłącznie wiązania pojedyncze i nie reaguje z bromem w taki sposób bez dodatkowych warunków.

@@ -163,3 +163,161 @@ Odczyn mieszaniny: **zasadowy** (nadmiar NaOH).
 ## Do uzupełnienia danymi (z pierwotnego szkieletu)
 - DANE: czy w szkole liczycie S i P jako S₈/P₄, czy jako S/P?
 - DANE: zadania z nadmiarem z arkuszy LKO + klucz (punktacja za metodę!)
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### R07 — Stechiometria z nadmiarem
+
+#### Treść
+
+W zadaniach z nadmiarem nie wystarczy użyć dowolnego substratu. Najpierw trzeba ustalić, który reagent ogranicza reakcję.
+
+#### Procedura
+
+1. Zbilansuj równanie.
+2. Przelicz wszystkie substraty na mole.
+3. Porównaj ilości moli z proporcją wynikającą ze współczynników.
+4. Wskaż reagent ograniczający.
+5. Oblicz ilość produktu.
+6. Oblicz ilość pozostałego reagenta.
+7. Jeżeli podano wydajność, zastosuj ją dopiero po obliczeniu wartości teoretycznej.
+
+#### Zadanie
+
+Zmieszano 10 g wodoru i 64 g tlenu:
+
+ 2H₂+O₂→2H₂O
+
+Oblicz:
+
+- reagent ograniczający;
+- masę powstałej wody;
+- masę reagenta pozostałego w nadmiarze.
+
+#### Klucz
+
+ n(H₂)=10 / 2=5 mol
+
+ n(O₂)=64 / 32=2 mol
+
+Do 2 moli O₂ potrzeba 4 moli H₂. Dostępnych jest 5 moli, więc tlen jest reagentem ograniczającym.
+
+Powstają 4 mole wody:
+
+ m(H₂O)=4·18=72 g
+
+Zużywa się 4 mole wodoru, czyli 8 g. Pozostaje:
+
+ 10-8=2 g H₂
+### Uzupełnienie — Dodatkowe uzupełnienie: stechiometria z nadmiarem
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md`.
+
+#### Zadanie 1
+
+Zmieszano 5,6 g żelaza i 6,4 g siarki:
+
+ Fe+S→ FeS
+
+##### Klucz
+
+ n(Fe)=5,6 / 56=0,10 mol
+
+ n(S)=6,4 / 32=0,20 mol
+
+Stosunek wymagany wynosi 1:1, więc żelazo jest reagentem ograniczającym.
+
+Powstaje:
+
+ n(FeS)=0,10 mol
+
+ M(FeS)=56+32=88 g/mol
+
+ m(FeS)=8,8 g
+
+Pozostaje:
+
+ 0,20-0,10=0,10 mol S
+
+czyli:
+
+ m(S)=3,2 g
+
+#### Zadanie 2
+
+Do reakcji:
+
+ CaCO₃+2HCl→ CaCl₂+H₂O+CO₂
+
+użyto 10 g CaCO₃ i 0,15 mola HCl.
+
+##### Klucz
+
+ n(CaCO₃)=10 / 100=0,10 mol
+
+Do całkowitego zużycia potrzeba:
+
+ 2·0,10=0,20 mol HCl
+
+Dostępne jest tylko 0,15 mola, więc kwas chlorowodorowy jest reagentem ograniczającym.
+
+ n(CaCO₃, zużyte)=0,15 / 2=0,075 mol
+
+ n(CO₂)=0,075 mol
+
+ m(CO₂)=0,075·44=3,3 g
+
+Pozostało:
+
+ 0,10-0,075=0,025 mol CaCO₃
+
+czyli:
+
+ m=2,5 g
+### Uzupełnienie — Stechiometria — zadania dodatkowe
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_koncowe_2026-10-09.md`.
+
+> Uwaga przy scalaniu: W zadaniu 1 zamiast „dwutlenek węgla” — „tlenek węgla(IV)”.
+
+##### Zadanie 1
+
+Oblicz masę dwutlenku węgla powstającego podczas całkowitego spalania 16 g metanu.
+
+ CH₄+2O₂→ CO₂+2H₂O
+
+##### Klucz
+
+ n(CH₄)=16 / 16=1 mol
+
+Stosunek molowy CH₄:CO₂ wynosi 1:1, dlatego:
+
+ n(CO₂)=1 mol
+
+ m(CO₂)=1·44=44 g
+
+##### Zadanie 2
+
+Do reakcji:
+
+ 2Al+6HCl→2AlCl₃+3H₂
+
+użyto 5,4 g glinu i 0,5 mola kwasu chlorowodorowego. Wskaż reagent ograniczający.
+
+##### Klucz
+
+ n(Al)=5,4 / 27=0,2 mol
+
+Do 0,2 mola glinu potrzeba:
+
+ 0,2·3=0,6 mol HCl
+
+Dostępne jest 0,5 mola, więc kwas chlorowodorowy jest reagentem ograniczającym.
+
+ n(Al, zużyte)=0,5 / 3=0,1667 mol
+
+Powstaje:
+
+ n(H₂)=0,5 / 2=0,25 mol

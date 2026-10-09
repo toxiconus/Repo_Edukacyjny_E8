@@ -186,3 +186,246 @@ Po pojawieniu się arkuszy LKO rejonowych dodać sekcję „Archiwalne zadania L
 - DANE: czy klasa robiła doświadczenie Zn/Mg/Cu + HCl? co zaobserwowano?
 - DANE: doświadczenia z obserwacjami (kolor roztworu, osad na metalu)
 - DANE: zadania z arkuszy rejonowych LKO (najlepiej 2024/25, 2025/26) + klucz
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### X04 — Szereg aktywności metali
+
+#### Poprawki
+
+- Szereg aktywności porządkuje metale według ich skłonności do oddawania elektronów i wypierania wodoru lub innych metali z niektórych związków.
+- Nie jest uniwersalną tabelą przewidującą każdą reakcję w każdych warunkach.
+- Położenie metalu w szeregu nie wystarcza do opisania pasywacji, wpływu środowiska, stężenia, temperatury i kinetyki.
+- Metal znajdujący się wyżej może wypierać metal znajdujący się niżej z jego soli, jeśli reakcja jest możliwa w danych warunkach.
+- Wodór w szeregu jest punktem odniesienia dla reakcji metali z kwasami.
+- Metale poniżej wodoru zwykle nie wypierają wodoru z rozcieńczonych kwasów nieutleniających.
+- Kwasy utleniające, takie jak stężony kwas azotowy(V), wymagają osobnych reguł.
+- Glin może być pozornie mniej reaktywny wskutek warstwy pasywnej, mimo wysokiej aktywności chemicznej samego metalu.
+
+#### Uzupełnienia
+
+##### Uproszczony szereg
+
+ K, Ca, Na, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au
+
+Kolejność należy traktować jako szkolne przybliżenie. W zależności od źródła i celu mogą występować różne rozszerzenia szeregu.
+
+##### Przykłady
+
+ Zn+2HCl→ ZnCl₂+H₂
+
+ Fe+CuSO₄→ FeSO₄+Cu
+
+ Cu+2AgNO₃→ Cu(NO₃)₂+2Ag
+
+Brak typowej reakcji:
+
+ Cu+HCl→ brak reakcji
+
+##### Zadania
+
+1. Czy cynk wypiera miedź z CuSO₄?
+2. Czy miedź wypiera wodór z rozcieńczonego HCl?
+3. Zapisz reakcję żelaza z siarczanem miedzi(II).
+4. Wyjaśnij, dlaczego aluminium może reagować słabiej niż wynikałoby z jego miejsca w szeregu.
+5. Podaj ograniczenie szeregu aktywności.
+
+##### Klucz
+
+1. Tak:
+
+ Zn+CuSO₄→ ZnSO₄+Cu
+
+2. Zwykle nie.
+3.
+
+ Fe+CuSO₄→ FeSO₄+Cu
+
+4. Chroni je warstwa tlenku, czyli pasywacja.
+5. Szereg nie uwzględnia wszystkich warunków, kinetyki, pasywacji i charakteru odczynnika.
+### Uzupełnienie — CHEX04. Szereg aktywności metali — uzupełnienie
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md`.
+
+#### Reguła wypierania
+
+Metal bardziej aktywny może wypierać metal mniej aktywny z roztworu jego soli, jeżeli:
+
+- oba metale pozostają w odpowiednich formach chemicznych;
+- powstający produkt jest możliwy w danych warunkach;
+- nie występuje pasywacja uniemożliwiająca kontakt;
+- reakcja nie jest hamowana kinetycznie.
+
+##### Przykład
+
+ Mg+CuSO₄→ MgSO₄+Cu
+
+Magnez znajduje się wyżej niż miedź, dlatego może oddać elektrony, a jony Cu²⁺ ulegają redukcji do miedzi.
+
+Równanie jonowe skrócone:
+
+ Mg+Cu²⁺→ Mg²⁺+Cu
+
+##### Brak reakcji
+
+ Cu+MgSO₄→ brak reakcji
+
+Miedź jest mniej aktywna niż magnez i nie wypiera go z jego soli.
+
+#### Metale i kwasy
+
+##### Metale powyżej wodoru
+
+Niektóre metale znajdujące się przed wodorem mogą reagować z rozcieńczonymi kwasami nieutleniającymi:
+
+ Fe+2HCl→ FeCl₂+H₂
+
+ Mg+H₂SO₄→ MgSO₄+H₂
+
+##### Metale poniżej wodoru
+
+Miedź, srebro, platyna i złoto nie wypierają zwykle wodoru z rozcieńczonego kwasu chlorowodorowego:
+
+ Cu+HCl→ brak typowej reakcji
+
+Nie wolno rozszerzać tej reguły na wszystkie kwasy. Kwas azotowy(V) i stężony kwas siarkowy(VI) mają właściwości utleniające i mogą reagować z metalami według innych schematów.
+
+#### Redoks w szeregu
+
+Metal bardziej aktywny:
+
+- oddaje elektrony;
+- ulega utlenieniu;
+- tworzy kation.
+
+Jon metalu mniej aktywnego:
+
+- przyjmuje elektrony;
+- ulega redukcji;
+- tworzy atom metalu.
+
+Dla reakcji:
+
+ Zn+Cu²⁺→ Zn²⁺+Cu
+
+- cynk: Zn⁰→ Zn²⁺+2e⁻;
+- miedź: Cu²⁺+2e⁻→ Cu⁰.
+
+#### Zadania uzupełniające
+
+1. Zapisz równanie reakcji magnezu z azotanem(V) srebra.
+2. Wskaż utleniacz i reduktor w reakcji cynku z jonami miedzi(II).
+3. Oceń, czy zachodzi reakcja żelaza z AgNO₃.
+4. Zapisz równanie reakcji glinu z kwasem chlorowodorowym, pomijając efekt pasywacji.
+5. Wyjaśnij, dlaczego po zanurzeniu żelaznego gwoździa w roztworze CuSO₄ może pojawić się miedź.
+
+#### Klucz
+
+1.
+
+ Mg+2AgNO₃→ Mg(NO₃)₂+2Ag
+
+2. Cynk jest reduktorem, a jony Cu²⁺ są utleniaczem.
+3. Tak:
+
+ Fe+2AgNO₃→ Fe(NO₃)₂+2Ag
+
+4.
+
+ 2Al+6HCl→2AlCl₃+3H₂
+
+5. Żelazo oddaje elektrony i przechodzi do roztworu jako Fe²⁺, a jony Cu²⁺ przyjmują elektrony i wydzielają miedź.
+### Uzupełnienie — Dodatkowe uzupełnienie: doświadczenia
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md`.
+
+#### Próba szeregu aktywności
+
+##### Problem
+
+Czy metal X wypiera metal Y z roztworu jego soli?
+
+##### Procedura
+
+1. Przygotuj porównywalne próbki metali.
+2. Umieść je w roztworach soli o znanym stężeniu.
+3. Zachowaj taki sam czas obserwacji i temperaturę.
+4. Nie mieszaj próbek między roztworami.
+5. Obserwuj zmianę powierzchni metalu, barwy roztworu i ewentualne wydzielanie nowej substancji.
+6. Zapisz równanie tylko wtedy, gdy obserwacje i dane potwierdzają zachodzenie reakcji.
+
+##### Obserwacje możliwe
+
+- osadzenie metalu na powierzchni próbki;
+- zmiana barwy roztworu;
+- zanikanie części metalu;
+- brak widocznych zmian.
+
+##### Wniosek
+
+Widoczny osad może wskazywać na redukcję jonów metalu z roztworu, ale należy wykluczyć zanieczyszczenie próbki i reakcje powierzchniowe niezwiązane z właściwą reakcją wypierania.
+
+#### BHP
+
+- używaj okularów i rękawic;
+- nie dotykaj odczynników gołymi rękami;
+- nie wylewaj roztworów metali ciężkich do zlewu;
+- odpady zbieraj do właściwego pojemnika;
+- doświadczenie wykonuj pod nadzorem.
+### Uzupełnienie — CHEX04. Zadania z szeregu aktywności
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_uzupelnienia_koncowe_2026-10-09.md`.
+
+##### Zadanie 1
+
+Do probówki z roztworem siarczanu(VI) miedzi(II) włożono:
+
+- blaszkę cynkową;
+- blaszkę srebrną;
+- blaszkę magnezową;
+- blaszkę żelazną.
+
+##### Klucz
+
+Cynk, magnez i żelazo mogą wypierać miedź z roztworu:
+
+ Zn+CuSO₄→ ZnSO₄+Cu
+
+ Mg+CuSO₄→ MgSO₄+Cu
+
+ Fe+CuSO₄→ FeSO₄+Cu
+
+Srebro nie wypiera miedzi:
+
+ Ag+CuSO₄→ brak typowej reakcji
+
+##### Zadanie 2
+
+Uszereguj metale według rosnącej aktywności:
+
+ Cu, Zn, Ag, Mg, Fe
+
+##### Klucz
+
+ Ag<Cu<Fe<Zn<Mg
+
+##### Zadanie 3
+
+Do roztworu AgNO₃ wprowadzono miedziany drut.
+
+##### Klucz
+
+Zachodzi reakcja:
+
+ Cu+2AgNO₃→ Cu(NO₃)₂+2Ag
+
+Równanie jonowe:
+
+ Cu+2Ag⁺→ Cu²⁺+2Ag
+
+Obserwacje:
+
+- na drucie może pojawić się srebrzysty osad;
+- roztwór może przyjąć niebieskie zabarwienie wskutek obecności jonów Cu²⁺.

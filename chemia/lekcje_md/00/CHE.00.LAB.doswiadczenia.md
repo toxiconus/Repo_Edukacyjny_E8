@@ -847,3 +847,81 @@ Kolejność odczynników bywa częścią BHP i wyniku. Próba kontrolna / ślepa
 - Nie zwracać nadmiaru do butelki — zanieczyszczasz zapas.
 
 <!-- ==================== END L011 ==================== -->
+
+## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+
+> Źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+
+### LAB — Doświadczenia (w audycie: LAB00)
+
+> Uwaga przy scalaniu: Zamiast „dwutlenek węgla” używać nazwy „tlenek węgla(IV)”.
+
+#### Poprawki
+
+- Każdy opis doświadczenia powinien zawierać cel, hipotezę, sprzęt, odczynniki, procedurę, obserwacje, wniosek i BHP.
+- Nie należy zastępować obserwacji interpretacją.
+- Przy doświadczeniach z gazami trzeba zaplanować wentylację i ograniczenie skali.
+- Nie wolno polecać uczniowi samodzielnego wykonywania doświadczeń z silnymi kwasami, zasadami, toksycznymi gazami, stężonym nadtlenkiem wodoru ani metalami reagującymi gwałtownie z wodą.
+- Płyn Lugola może barwić skórę i odzież; nie jest odczynnikiem spożywczym.
+- Próba spalania gazu wymaga małej ilości gazu, odpowiedniego sprzętu i nadzoru.
+- Nie wolno rozpoznawać substancji przez smak.
+- Nie wolno bezpośrednio wąchać odczynników; jeśli procedura jest dopuszczona, zapach ocenia się metodą wachlowania i wyłącznie po zgodzie prowadzącego.
+- Odpady chemiczne należy zbierać zgodnie z instrukcją, a nie wylewać automatycznie do zlewu.
+
+#### Uzupełnienia
+
+##### Doświadczenie 1. Skrobia
+
+**Problem:** Czy próbka zawiera skrobię?
+
+**Sprzęt:** płytka, pipeta, rękawiczki, okulary.
+
+**Odczynnik:** płyn Lugola.
+
+**Obserwacja:** pojawienie się granatowego zabarwienia.
+
+**Wniosek:** próbka zawiera skrobię lub substancję dającą reakcję charakterystyczną dla skrobi.
+
+**BHP:** nie spożywać próbek ani odczynnika; chronić odzież i oczy.
+
+##### Doświadczenie 2. Białko
+
+**Problem:** Czy próbka zawiera białko?
+
+**Odczynniki:** odczynnik biuretowy.
+
+**Obserwacja:** fioletowe zabarwienie.
+
+**Wniosek:** obecne są wiązania peptydowe wykrywalne w tej próbie.
+
+##### Doświadczenie 3. Dwutlenek węgla
+
+**Problem:** Czy gaz zawiera CO₂?
+
+**Odczynnik:** woda wapienna.
+
+**Obserwacja:** zmętnienie roztworu.
+
+ Ca(OH)₂+CO₂→ CaCO₃↓+H₂O
+
+**Uwaga:** nadmiar CO₂ może ponownie rozpuścić osad:
+
+ CaCO₃+CO₂+H₂O→ Ca(HCO₃)₂
+
+Dlatego czas trwania przepuszczania gazu i jego ilość wpływają na wynik.
+
+##### Doświadczenie 4. Reakcja kwasu z węglanem
+
+**Obserwacja:** wydzielają się pęcherzyki gazu.
+
+**Próba:** przepuszczenie gazu przez wodę wapienną.
+
+**Wniosek:** jeśli woda wapienna mętnieje, gaz zawiera CO₂.
+
+##### Doświadczenie 5. Rozdzielanie mieszaniny
+
+**Mieszanina:** piasek, sól i woda.
+
+1. filtracja oddziela piasek;
+2. odparowanie lub krystalizacja oddziela sól od wody;
+3. każda metoda wykorzystuje inną właściwość składnika.

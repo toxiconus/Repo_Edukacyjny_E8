@@ -3,14 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 56 KB)
+## .  (11 pl., 62 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 6 KB
 - `MAPA.md` 17 KB
 - `PRZEKAZANIE.md` 3 KB
 - `README.md` 0 KB
-- `WERYFIKACJA.md` 11 KB
+- `WERYFIKACJA.md` 17 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -298,7 +298,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 907 KB)
+## chemia/che-modular/lessons-md/gotowe  (15 pl., 911 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 51 KB
 - ⚠`N01_tlenki.md` 123 KB
@@ -306,7 +306,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`N03_kwasy.md` 134 KB
 - ⚠`N04_sole.md` 86 KB
 - ⚠`N05_wodorki.md` 53 KB
-- ⚠`REV01_powtorka_klasy_7.md` 59 KB
+- ⚠`REV01_powtorka_klasy_7.md` 62 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
 - `FIZ01.json` 1 KB
@@ -415,10 +415,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
 - `pack_lesson.py` 28 KB
 
-## chemia/lekcje_md/00  (6 pl., 229 KB)
-- `CHE.00.LAB.doswiadczenia.md` 26 KB
+## chemia/lekcje_md/00  (6 pl., 238 KB)
+- `CHE.00.LAB.doswiadczenia.md` 29 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.md` 124 KB
-- `CHE.00.REV02.powtorka_klasy_8.md` 14 KB
+- `CHE.00.REV02.powtorka_klasy_8.md` 20 KB
 - `CHE.00.REV06.zaawansowana.md` 40 KB
 - `CHE.00.S00.system_kursu.md` 18 KB
 - `CHE.00.W00.wstep.md` 6 KB
@@ -440,9 +440,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.02.N04.kwasy.md` 35 KB
 - `CHE.02.N05.sole.md` 37 KB
 
-## chemia/lekcje_md/O  (2 pl., 72 KB)
+## chemia/lekcje_md/O  (3 pl., 88 KB)
 - `CHE.05.O01-O07.weglowodory.md` 38 KB
-- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 35 KB
+- `CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` 9 KB
+- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 42 KB
 
 ## chemia/lekcje_md/R  (2 pl., 70 KB)
 - `CHE.03.R03+R05.stezenia.md` 32 KB
@@ -456,11 +457,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (4 pl., 71 KB)
+## chemia/plany/audyty  (6 pl., 101 KB)
 - `W1_perplexity_F01-F06_2026-10-09.md` 18 KB
 - `W1_perplexity_F07-F14_2026-10-09.md` 20 KB
 - `W1_perplexity_F15-F21_2026-10-09.md` 17 KB
 - `W1_perplexity_N01-N05_2026-10-09.md` 17 KB
+- `W1_perplexity_O01-O07_2026-10-09.md` 14 KB
+- `W1_perplexity_R03-R09_2026-10-09.md` 16 KB
 
 ## chemia/plany/narzedzia  (3 pl., 47 KB)
 - `kanon_dane.py` 37 KB
@@ -471,10 +474,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (3 pl., 20 KB)
+## eksport  (3 pl., 21 KB)
 - `.gitignore` 0 KB
 - `html2md.py` 4 KB
-- `zbierz_lekcje.py` 16 KB
+- `zbierz_lekcje.py` 17 KB
 
 ## narzedzia  (5 pl., 13 KB)
 - `audyt_do_kanonu.py` 5 KB
@@ -489,7 +492,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRIORYTETY.md` 9 KB
 - `PRZEKAZANIE.md` 6 KB
 
-## olimpiada/do_uzupelnienia  (11 pl., 47 KB)
+## olimpiada/do_uzupelnienia  (11 pl., 62 KB)
 - `BIO_B2_homeostaza.md` 5 KB
 - `BIO_B2a_skora_i_uklad_ruchu.md` 3 KB
 - `BIO_B2b_uklad_pokarmowy_i_odzywianie.md` 4 KB
@@ -497,9 +500,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_B2d_uklad_nerwowy_i_zmysly.md` 4 KB
 - `BIO_B2e_uklad_dokrewny.md` 4 KB
 - `BIO_B2f_rozmnazanie_i_rozwoj.md` 3 KB
-- `CHE_J03_rownania_jonowe_i_straceanie.md` 6 KB
-- `CHE_R07_stechiometria_z_nadmiarem.md` 5 KB
-- `CHE_X04_szereg_aktywnosci_metali.md` 8 KB
+- `CHE_J03_rownania_jonowe_i_straceanie.md` 11 KB
+- `CHE_R07_stechiometria_z_nadmiarem.md` 8 KB
+- `CHE_X04_szereg_aktywnosci_metali.md` 15 KB
 - `README.md` 1 KB
 
 ## olimpiada/narzedzia  (1 pl., 7 KB)
