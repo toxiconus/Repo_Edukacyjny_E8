@@ -39,3 +39,9 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 4. Dług `@opis` (42): N05, FIZ01, R03 itd., biologia L010/REV01.
 5. Otwarte decyzje użytkownika: korekta scalająca kursu polskiego (moduły wspólne + odsyłacze).
 
+### Stan na 2026-10-09 07:20 (po pracy równoległej sesji)
+- **Polski:** G01–G11 wypełnione w pełni (G04–G11 napisane przez Claude w osobnej sesji, commity f504cdf, c8c3dd4) — czekają na W1. **Do zrobienia:** G12–G17 (składnia) i S01–S06 (środki stylistyczne) — mają tylko zarys Groka (stan CZĘŚCIOWY). Tylko MD, bez HTML.
+- **Chemia:** sporadyczny FAIL `N01_powietrze_i_gazy` naprawiony w commicie 7353649 (osłona canvas `arc`) — punkt 3 planu wyżej jest nieaktualny; potwierdzić testem `python3 tools/che.py test`.
+- Pozostałe kroki planu bez zmian: md braków innych przedmiotów (angielski — moduły egzaminacyjne, chemia — weryfikacja J01–J06), dług `@opis`, decyzja o korekcie scalającej polskiego.
+- `WERYFIKACJA.md` nie ma jeszcze wierszy dla G04–G11 — dopisać przy następnym kroku.
+
