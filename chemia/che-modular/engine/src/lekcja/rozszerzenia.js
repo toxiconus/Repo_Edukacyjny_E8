@@ -565,3 +565,59 @@ C.VIEW.define('fiz02-obwod-v01',{title:'Obwód z dwiema żarówkami — szeregow
    seg(sm,[['sz','szeregowo'],['rw','równolegle']],mode,function(m){mode=m;draw()});seg(sd,[['umowny','prąd umowny'],['elektrony','elektrony']],dir,function(m){dir=m;draw()})}
   [us,r1,r2,sw].forEach(function(e){e.addEventListener('input',draw);e.addEventListener('change',draw)});draw()}});
 })();
+
+/* §P Probówka v2 — naczynie doświadczeń z pracowni (najczęstsza wizualizacja CHE: 99 reakcji GFX.rx, 65 użyć @zlewka w 11 lekcjach).
+   Dotąd każda karta doświadczenia rysowała zlewkę 250 mL ze skalą, choć opisy w lekcjach mówią „probówka”.
+   Teraz: domyślnie probówka (szklana, z wywiniętym brzegiem, napełniona do ok. 1/3), statyw-łapa; ogrzewanie → lampa spirytusowa;
+   duże doświadczenia (sód/potas z wodą, zwęglanie cukru, rozcieńczanie H₂SO₄) zostają w zlewce. Przycisk „zlewka/probówka” w rogu karty.
+   API: rx.mount(host,k,{vessel,heat,toggle:false,...}) — jak dotąd (ctl: play, reset, set, key, progress, api) + ctl.vessel. Reakcja może mieć sp.vessel / sp.heat. */
+(function(){
+var C=window.CHE,G=C&&C.LAB&&C.LAB.GFX,rx=G&&G.rx;
+if(!G||!rx||!G.vessels||!G.mount||C.EXT_PROBOWKA)return;C.EXT_PROBOWKA=1;
+var ZLEWKA={naH2o:1,kH2o:1,liH2o:1,h2so4Sugar:1,h2so4Dil:1};           // klasycznie w zlewce / krystalizatorze
+var GRZANIE={cuoh2Heat:1,mgH2oHot:1,cuoH2so4:1,cuso4Hydrate:1};       // ogrzewane nad płomieniem
+function rr(c,x,y,w,h,q){c.beginPath();c.moveTo(x+q,y);c.lineTo(x+w-q,y);c.quadraticCurveTo(x+w,y,x+w,y+q);c.lineTo(x+w,y+h-q);c.quadraticCurveTo(x+w,y+h,x+w-q,y+h);c.lineTo(x+q,y+h);c.quadraticCurveTo(x,y+h,x,y+h-q);c.lineTo(x,y+q);c.quadraticCurveTo(x,y,x+q,y);c.closePath()}
+var LIP=5;
+G.vessels.register('probowka',{
+ path:function(c,r){var w=r.w,x=r.x,y=r.y+LIP;c.beginPath();c.moveTo(x,y);c.lineTo(x,r.y+r.h-w/2);c.arc(x+w/2,r.y+r.h-w/2,w/2,Math.PI,0,true);c.lineTo(x+w,y)},
+ hmax:.86,pad:1,lw:2.5,rim:function(r){return[r.x,r.x+r.w,r.y+LIP]},
+ deco:function(c,r,T){var dk=T&&T.dark,x=r.x,w=r.w;
+  // wywinięty brzeg
+  c.lineWidth=2;c.strokeStyle=dk?'rgba(203,213,225,.85)':'rgba(71,85,105,.85)';c.fillStyle=dk?'rgba(148,163,184,.18)':'rgba(255,255,255,.7)';
+  rr(c,x-3,r.y,w+6,LIP+1,2.5);c.fill();c.stroke();
+  // pionowy refleks szkła (lewa i prawa krawędź)
+  var g=c.createLinearGradient(x,0,x+w,0);g.addColorStop(0,'rgba(255,255,255,0)');g.addColorStop(.18,dk?'rgba(255,255,255,.18)':'rgba(255,255,255,.75)');g.addColorStop(.3,'rgba(255,255,255,0)');g.addColorStop(.82,'rgba(255,255,255,0)');g.addColorStop(.9,dk?'rgba(255,255,255,.1)':'rgba(255,255,255,.45)');g.addColorStop(1,'rgba(255,255,255,0)');
+  c.fillStyle=g;c.fillRect(x+1,r.y+LIP+4,w-2,r.h-LIP-w*.6)}
+});
+// łapa statywu + cień pod probówką (rysowane jako nakładka)
+function overlay(geo,heat){return function(c,bw,H,S,t,T){var dk=T&&T.dark,tx=geo.x*bw,tw=geo.w*bw,ty=geo.y*H,th=geo.h*H,cy=ty+th*.16;
+ c.save();c.strokeStyle=dk?'#94a3b8':'#64748b';c.fillStyle=dk?'#475569':'#94a3b8';c.lineWidth=3;
+ c.beginPath();c.moveTo(tx+tw+5,cy);c.lineTo(Math.min(bw-8,tx+tw+tw*1.6+30),cy);c.stroke();               // ramię łapy
+ rr(c,tx-5,cy-6,tw+10,12,4);c.globalAlpha=.9;c.fill();c.globalAlpha=1;c.lineWidth=1.5;c.stroke();          // obejma
+ c.fillStyle=dk?'#334155':'#cbd5e1';c.fillRect(Math.min(bw-12,tx+tw+tw*1.6+30)-3,ty-4,6,H-ty-2);            // pręt statywu
+ if(!heat){c.fillStyle=dk?'rgba(0,0,0,.35)':'rgba(15,23,42,.12)';c.beginPath();c.ellipse(tx+tw/2,Math.min(H-6,ty+th+10),tw*.9,4,0,0,Math.PI*2);c.fill()}
+ c.restore()}}
+function wybierz(k,sp,o){if(o.vessel)return o.vessel;if(sp&&sp.vessel&&sp.vessel!=='testTube')return sp.vessel;return ZLEWKA[k]?'beaker':'probowka'}
+function grzane(k,sp,o){return o.heat!=null?!!o.heat:!!(sp&&(sp.heat||GRZANIE[k]))}
+var stary=rx.mount;
+rx.mount=function(host,k,o){o=Object.assign({},o||{});var key=k,t0=null,p=0,dur=o.dur||6,ves=wybierz(k,rx.get(k),o),api=null,box=null;
+ var ctl={get api(){return api},get key(){return key},get progress(){return p},get vessel(){return ves},
+  play:function(){t0=1;p=0;if(api){api.state.ended=0;api.reset()}},reset:function(){t0=null;p=0;if(api)api.reset()},
+  set:function(nk){key=nk;if(!o.vessel){var nv=wybierz(nk,rx.get(nk),o);if(nv!==ves){ves=nv;build()}}this.reset()},
+  setVessel:function(v){ves=v;build();this.play()}};
+ function stan(){var s=rx.state(key,p);if(!s)return s;if(ves==='probowka'){s.level=Math.min(.5,(s.level==null?.5:s.level)*.5);s.heat=0}return s}
+ function build(){if(api&&api.destroy)api.destroy();if(!box){box=document.createElement('div');box.style.position='relative';host.appendChild(box)}
+  var heat=grzane(key,rx.get(key),o),spec={height:o.height||260,state:{},get:stan,
+   tick:function(S,dt){if(t0!=null){p=Math.min(1,p+dt/dur);if(p>=1&&o.onEnd&&!S.ended){S.ended=1;o.onEnd(key)}}}};
+  if(ves==='probowka'){var geo=heat?{x:.43,y:.04,w:.14,h:.56}:{x:.42,y:.07,w:.16,h:.84};spec.aspect=1.4;
+   spec.parts=[{id:'probowka',x:geo.x,y:geo.y,w:geo.w,h:geo.h}];
+   if(heat)spec.parts.unshift({id:'spiritLamp',x:.35,y:.62,w:.3,h:.37,get:function(){return{lamp:{on:p>0?1:0,lv:.5}}}}); // lampa pod spodem: szkło przesłania płomień
+   spec.overlay=overlay(geo,heat)}else spec.vessel=ves;
+  api=G.mount(box,spec);if(t0!=null){api.state.ended=0}
+  if(o.toggle!==false&&!o.vessel&&!box._btn){var b=document.createElement('button');b.type='button';box._btn=b;
+   b.style.cssText='position:absolute;top:6px;right:6px;font:12px/1 system-ui,sans-serif;padding:4px 8px;border-radius:8px;border:1px solid var(--border,#cbd5e1);background:var(--surface,#fff);color:inherit;cursor:pointer;opacity:.85';
+   b.onclick=function(){ctl.setVessel(ves==='probowka'?'beaker':'probowka')};box.appendChild(b)}
+  if(box._btn){box._btn.textContent=ves==='probowka'?'⇄ zlewka':'⇄ probówka';box._btn.title='Pokaż doświadczenie w '+(ves==='probowka'?'zlewce':'probówce')}}
+ build();if(o.auto)ctl.play();return ctl};
+rx.mount.stary=stary;
+})();
