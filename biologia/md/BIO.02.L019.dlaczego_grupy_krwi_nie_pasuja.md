@@ -161,8 +161,9 @@ L017 (Punnett, dominacja pełna)
 ## 7. Poziom ambitny  · **[MASTER]**
 
 **Przetoczenia (uproszczenie szkolne):**
-- grupa **0** — dawca uniwersalny (brak antygenów A/B na krwinkach),
-- grupa **AB** — biorca uniwersalny (brak przeciwciał anty-A i anty-B w osoczu).  
+- grupa **0** — „dawca uniwersalny” **krwinek czerwonych** (brak antygenów A/B na krwinkach),
+- grupa **AB** — „biorca uniwersalny” krwinek czerwonych (brak przeciwciał anty-A i anty-B w osoczu).
+- To model szkolny: w szpitalu liczy się też Rh, inne antygeny i próba zgodności; dla osocza zależność jest odwrotna.  
 W praktyce medycznej decyzje są bardziej złożone — tu wystarczy idea zgodności antygen–przeciwciało.
 
 **Konflikt Rh (idea):** matka **Rh−**, płód **Rh+** → przy kontakcie krwi matka może wytworzyć przeciwciała; kolejne ciąże Rh+ zagrożone. Profilaktyka: immunoglobulin anty-D.
@@ -415,7 +416,7 @@ Grupy ABO mogą wykluczyć niektóre kombinacje rodzic–dziecko w prostym model
 
 ### Status
 - Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
-- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+- ✔ Sprawdzone w treści głównej (2026-10-09, Claude): punkty obecne w lekcji lub dopisane do ściągi/kliniki błędów.
 
 ## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
 

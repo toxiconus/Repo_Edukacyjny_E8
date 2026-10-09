@@ -272,6 +272,7 @@ EKOLOGIA
 | ODKRYJ | Kto jest producentem? |
 | POŁĄCZ | Połącz ekosystem z relacjami. |
 | ZAKWESTIONUJ | Czy ekosystem = organizmy? |
+| ZAKWESTIONUJ | „Energia krąży w ekosystemie jak materia” — popraw. (energia przepływa i rozprasza się jako ciepło; krąży materia) |
 
 ---
 

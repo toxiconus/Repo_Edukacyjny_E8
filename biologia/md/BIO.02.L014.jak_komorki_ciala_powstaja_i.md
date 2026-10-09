@@ -204,6 +204,8 @@ L012 (chromosom + chromatydy) → L013 (replikacja = faza S)
 | Mitoza daje gamety | mitoza → komórki ciała | gamety powstają w mejozie |
 | Po mitozie 23 chromosomy | u człowieka nadal 46 | brak redukcji |
 | Chromatydy rozchodzą się = redukcja | to nie redukcja liczby zestawów | każda komórka dostaje pełny zestaw |
+| Mitoza = cały podział komórki | mitoza = podział jądra, cytokineza = podział cytoplazmy | dwa etapy, zwykle po sobie |
+| Wszystkie komórki ciała stale się dzielą | tempo zależy od tkanki | naskórek i szpik często, większość neuronów prawie wcale |
 
 ### Klinika 2.0
 
@@ -1809,7 +1811,7 @@ Ucz się świadomie, nie na pamięć.
 
 ### Status
 - Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
-- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+- ✔ Sprawdzone w treści głównej (2026-10-09, Claude): punkty obecne w lekcji lub dopisane do ściągi/kliniki błędów.
 
 ## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
 

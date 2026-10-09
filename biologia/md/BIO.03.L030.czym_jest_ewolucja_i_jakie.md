@@ -201,6 +201,9 @@ L015 (zmienność) → L020 (mutacje) → L030 (ewolucja) → L031 (dobór)
 | Człowiek od małpy | wspólny przodek | nie „od", ale „razem z" |
 | Teoria bez dowodów | liczne dowody | nauka opiera się na danych |
 | Analogiczne = homologiczne | różne pochodzenie vs wspólny plan | różne kategorie |
+| Mutacja pojawia się, bo jest potrzebna | mutacje są losowe; dobór „wybiera” spośród istniejących | dobór nie tworzy cech na zamówienie |
+| Osobnik ewoluuje | ewoluuje **populacja** przez pokolenia | osobnik się nie zmienia genetycznie w ciągu życia |
+| Podobny kształt = pokrewieństwo | trzeba sprawdzić pochodzenie (homologia vs analogia) | samo podobieństwo to za mało |
 
 ### Klinika 2.0
 

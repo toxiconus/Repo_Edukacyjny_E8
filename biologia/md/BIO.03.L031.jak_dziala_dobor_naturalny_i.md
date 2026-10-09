@@ -198,6 +198,8 @@ L015 (zmienność) → L020 (mutacje) → L030 (ewolucja) → L031 (dobór)
 | Bakterie uczą się oporności | przeżywają już oporne | dobór nie tworzy cech |
 | Naturalny = sztuczny | różny czynnik | środowisko vs człowiek |
 | Najsilniejszy przeżywa | lepiej dostosowany | nie siła, ale dostosowanie |
+| Mutacja pojawia się, bo jest potrzebna | mutacje są losowe; dobór „wybiera” spośród istniejących | dobór nie tworzy cech na zamówienie |
+| Dobór zmienia osobnika | dobór zmienia częstość cech w **populacji** | liczy się sukces rozrodczy przez pokolenia |
 
 ### Klinika 2.0
 

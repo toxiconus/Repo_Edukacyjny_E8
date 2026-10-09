@@ -495,7 +495,7 @@ L011–L013 jeśli sypie się 46/DNA; L017 jeśli Punnett; L018–L019 jeśli p�
 
 ### Status
 - Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
-- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+- ✔ Sprawdzone w treści głównej (2026-10-09, Claude): punkty obecne w lekcji lub dopisane do ściągi/kliniki błędów.
 
 ## AUDYT W18 — klucz mieszany (2026-10-09, GPT-6)
 

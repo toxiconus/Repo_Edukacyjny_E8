@@ -265,6 +265,7 @@ EWOLUCJA
 | ODKRYJ | Jakie warunki doboru? |
 | POŁĄCZ | Połącz dobór z genetyką. |
 | ZAKWESTIONUJ | Czy ewolucja = postęp? |
+| ZAKWESTIONUJ | „Mutacja pojawiła się, bo była potrzebna” — co jest błędne? (mutacje losowe; dobór działa na istniejącą zmienność populacji) |
 
 ---
 

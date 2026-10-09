@@ -267,6 +267,8 @@ To **bardzo duża liczba**, ale **nie „nieskończona"** — możliwych kombina
 
 To jest **ważne rozróżnienie** — „mejoza daje cztery gamety" to uproszczenie: u kobiety funkcjonalna jest tylko jedna.
 
+- U **roślin** mejoza daje **zarodniki**, a gamety powstają później w gametoficie przez mitozę — model „mejoza → gamety” dotyczy zwierząt.
+
 :::
 
 ::: html
@@ -1367,7 +1369,7 @@ MD = HTML na plus (wykład v3.8 + warstwa v5.1/v5.2). Brak luk merytorycznych do
 
 ### Status
 - Schemat główny otrzymał opis `@opis` z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.
-- Wskazane punkty traktować jako warunki poprawnej interpretacji; przy kolejnej edycji wprowadzać je w odpowiednich sekcjach lekcji, nie tylko w audycie.
+- ✔ Sprawdzone w treści głównej (2026-10-09, Claude): punkty obecne w lekcji lub dopisane do ściągi/kliniki błędów.
 
 ## AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)
 
