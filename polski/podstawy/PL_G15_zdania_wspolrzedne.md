@@ -5,11 +5,11 @@ tytul: Zdanie złożone współrzędnie
 lead: Zdania równorzędne: łączne, rozłączne, przeciwstawne, wynikowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G09, G16
-stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
+stan: WSTĘPNY — Perplexity 2026-10-09, przegląd i poprawki: Claude 2026-10-09; braki: zob. sekcja „Do uzupełnienia”
 utworzono: 2026-10-09
 ---
 
-> Szkielet do wypełnienia przez LLM — instrukcja: `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (prompt) albo `narzedzia/szkielety_polski.py`.
+> Lekcja wstępna: treść Perplexity z poprawkami merytorycznymi Claude (surowa wersja: `polski/plany/wypelnienia/G12-G17_P01-P04_Perplexity_2026-10-09_surowe.md`). Przed W1 uzupełnić braki z ostatniej sekcji.
 
 **Musi się znaleźć w lekcji:**
 - cztery typy z pytaniem testowym i spójnikami
@@ -19,62 +19,87 @@ utworzono: 2026-10-09
 
 **Pułapki do kliniki błędów:** przecinek przed „i” w zdaniu łącznym; mylenie wynikowego z przyczynowym (więc / bo); brak przecinka w zdaniu bezspójnikowym.
 
-## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+## Cele lekcji (wersja Perplexity — wiążące są cele z nagłówka i kanonu)
+- **W1:** Uczeń rozpoznaje zdania złożone współrzędnie.
+- **W2:** Uczeń rozróżnia zdania składowe i wskazuje spójniki.
+- **W3:** Uczeń poprawnie stawia przecinki w zdaniach współrzędnych.
+
+## 1. Wprowadzenie
+**Zdanie złożone współrzędnie** składa się z dwóch lub więcej zdań składowych, które są równorzędne. Żadne nie zależy od drugiego.
+
+**Przykład:** **Padał deszcz, ale dzieci nadal grały w piłkę.**
+- Zdanie 1: *Padał deszcz.*
+- Zdanie 2: *dzieci nadal grały w piłkę.*
+- Spójnik: *ale*
+
+## 2. Rodzaje zdań współrzędnych
+
+| Rodzaj | Spójniki | Przykład |
+|---|---|---|
+| Łączne | i, oraz, a także, ani… ani | *Czytam książkę i słucham muzyki.* |
+| Rozłączne | lub, albo, bądź, czy, albo… albo | *Pójdziesz do kina lub zostaniesz w domu.* |
+| Przeciwstawne | ale, lecz, a, zaś, natomiast, jednak | *Chciałem wyjść, ale padał deszcz.* |
+| Wynikowe | więc, toteż, przeto, zatem | *Było późno, więc wróciliśmy do domu.* |
+
+## 3. Przecinek w zdaniach współrzędnych
+Przecinek stawiamy przed spójnikami:
+- *ale*, *lecz*, *a* w znaczeniu przeciwstawnym,
+- *więc*, *toteż*, *zatem*, *przeto*.
+
+Przykłady:
+- *Było zimno, więc założyłam kurtkę.*
+- *Mama gotowała, a ja zmywałam naczynia.*
+
+Przecinka **nie** stawiamy przed pojedynczym *i*, *oraz*, *lub*, *albo*, *bądź*, *ani* (chyba że kończy się wtrącenie albo spójnik jest powtórzony: *i…, i…*; *albo…, albo…* — pełna reguła → **P03**):
+- *Kupiłem chleb i mleko.*
+- *Pójdziesz do kina albo zostaniesz w domu.*
+
+## 4. Ćwiczenia
+
+### Ćwiczenie 1 — rozpoznawanie
+Ustal, czy zdanie jest złożone współrzędnie. Wskaż zdania składowe i spójnik.
+1. Nauczyciel tłumaczył materiał, a uczniowie robili notatki.
+2. Kiedy skończyła się lekcja, poszliśmy do domu.
+3. Możesz zostać w domu albo pójść na spacer.
+4. Byłem zmęczony, więc wcześniej poszedłem spać.
+5. Chciałem pomóc, ale nie wiedziałem, jak.
+
+### Ćwiczenie 2 — wstawianie przecinków
+Wstaw przecinki tam, gdzie są potrzebne.
+1. Chciałem kupić bilet ale nie miałem pieniędzy.
+2. Było późno więc wróciliśmy do domu.
+3. Ona śpiewa a on gra na gitarze.
+4. Możesz czytać książkę albo oglądać film.
+
+### Ćwiczenie 3 — tworzenie zdań
+Ułóż po jednym zdaniu złożonym współrzędnie: łącznym, rozłącznym, przeciwstawnym i wynikowym.
+
+## 5. Typowe błędy
+- Stawianie przecinka przed każdym *i*.
+- Mylenie zdania współrzędnego z podrzędnym.
+- Pomijanie przecinka przed *ale*, *więc*, *a*.
+- Uznawanie zdania podrzędnego za równorzędne.
+
+## 6. Mini-sprawdzenie
+Określ rodzaj zdania i uzasadnij oba przecinki:  
+**Chciałem pomóc, ale nie wiedziałem, jak to zrobić.**
+
+## 7. Odpowiedź
+Zdanie **wielokrotnie złożone**: *Chciałem pomóc* i *nie wiedziałem* łączy współrzędność przeciwstawna (przecinek przed *ale*); *jak to zrobić* to zdanie podrzędne dopełnieniowe (nie wiedziałem czego?) — przecinek przed *jak*.
+
+## Klucz do ćwiczeń (Claude)
+
+**Ćw. 1** [E8]: 1. współrzędne przeciwstawne (*a*); 2. podrzędne (nie współrzędne); 3. współrzędne rozłączne (*albo*); 4. współrzędne wynikowe (*więc*); 5. wielokrotnie złożone: przeciwstawne (*ale*) + podrzędne (*jak*).
+**Ćw. 2** [E8]: 1. *…bilet, ale…*; 2. *…późno, więc…*; 3. *…śpiewa, a on…*; 4. bez przecinka (pojedyncze *albo*).
+
+## Do uzupełnienia
+
+przykłady z lektur obowiązkowych; zadania w stylu CKE z punktacją; fiszki; warstwy `::: warstwa W2 [KONKURS]`; znaczniki przy wszystkich ćwiczeniach; wizualizacja (wykres zdania) z `@opis`.
+
+## Materiał wcześniejszy — zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
 
 **Cel:** Potrafię rozpoznać zdania współrzędne i postawić przecinek (lub nie).
 
 **Typy:** łączne (i, oraz), rozłączne (albo, lub), przeciwstawne (a, ale, lecz), wynikowe (więc, dlatego).
 
 **Interpunkcja:** przed „a”, „ale”, „lecz”, „więc” — przecinek; przed „i”, „oraz”, „lub” — zwykle bez.
-
-## 0 | Cel i kryterium gotowości [[basic:E8]]
-
-DO UZUPEŁNIENIA: 3–5 zdań „Potrafię…” (rozpoznać, odmienić, zastosować w zdaniu, poprawnie zapisać).
-
-## 1 | Definicja i pytania [[basic:E8]]
-
-DO UZUPEŁNIENIA: krótka definicja, pytania, na które odpowiada; tabela „cecha — przykład”.
-
-## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
-
-DO UZUPEŁNIENIA: 3–5 kroków rozpoznawania + przykłady trudnych przypadków.
-
-## 3 | Formy, odmiana lub rodzaje [[basic:E8]]
-
-DO UZUPEŁNIENIA: tabela wzorcowa (odmiana lub podział) z przykładami.
-
-## 4 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
-
-DO UZUPEŁNIENIA: jaką częścią zdania bywa; 3 przykłady z analizą.
-
-## 5 | Pisownia i interpunkcja [[basic:E8]]
-
-DO UZUPEŁNIENIA: zasady zapisu związane z tematem (zgodnie z zasadami od 2026), przykłady poprawne i błędne.
-
-## 6 | Przykłady z lektur [[basic:E8]]
-
-DO UZUPEŁNIENIA: 5–8 krótkich przykładów (własne parafrazy lub jedno zdanie cytatu) z lektur obowiązkowych, z rozpoznaniem.
-
-## 7 | Klinika błędów
-
-DO UZUPEŁNIENIA: tabela: Błąd | Poprawnie | Dlaczego? — min. 6 wierszy.
-
-## 8 | Ćwiczenia A — podstawa [[basic:E8]]
-
-DO UZUPEŁNIENIA: 6–8 zadań z kluczem.
-
-## 9 | Ćwiczenia B — trening i C — konkurs [[exam:KONKURS]]
-
-DO UZUPEŁNIENIA: 4–6 zadań trudniejszych z kluczem.
-
-## 10 | Zadania w stylu CKE
-
-DO UZUPEŁNIENIA: 3–4 zadania (zamknięte i otwarte) z kluczem, punktacją i uzasadnieniem.
-
-## 11 | Fiszki
-
-DO UZUPEŁNIENIA: 8–12 par „pytanie — odpowiedź”.
-
-## 12 | Wizualizacja
-
-DO UZUPEŁNIENIA: propozycja 1–2 grafik + obowiązkowa linia @opis pod każdą.

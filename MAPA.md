@@ -3,12 +3,12 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 77 KB)
+## .  (11 pl., 78 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
 - `MAPA.md` 19 KB
-- `PRZEKAZANIE.md` 7 KB
+- `PRZEKAZANIE.md` 8 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 25 KB
 - `edit_html.py` 3 KB
@@ -108,7 +108,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 100 KB)
+## chemia/che-modular  (13 pl., 101 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -491,9 +491,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (3 pl., 21 KB)
+## eksport  (4 pl., 25 KB)
 - `.gitignore` 0 KB
 - `html2md.py` 4 KB
+- `paczka_polski.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
 ## narzedzia  (7 pl., 46 KB)
@@ -599,12 +600,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PL_L010_srodki_stylistyczne.md` 4 KB
 - `PL_L011_elementy_utworu_moral_puenta.md` 5 KB
 
-## polski/lekcje  (17 pl., 24 KB)
+## polski/lekcje  (32 pl., 60 KB)
 - (zwinięte; `ls polski/lekcje`)
 
-## polski/plany  (2 pl., 56 KB)
+## polski/plany  (3 pl., 60 KB)
 - `POL_KATALOG.md` 16 KB
 - `POL_SPIS_TRESCI_v2.md` 40 KB
+- `PROMPT_PERPLEXITY_JEZYK.md` 5 KB
 
 ## polski/plany/audyty  (2 pl., 25 KB)
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
@@ -618,7 +620,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 153 KB)
+## polski/podstawy  (23 pl., 169 KB)
 - (zwinięte; `ls polski/podstawy`)
 
 ## wizualizacje-projekty  (3 pl., 72 KB)

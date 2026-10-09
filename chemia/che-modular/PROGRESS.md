@@ -43,3 +43,4 @@
 - 2026-10-09 04:20: polski G01–G03 (Grok) przejrzane i wstawione do polski/podstawy; przekazanie sesji w PRZEKAZANIE.md.
 - 2026-10-09 04:20: sesja zatrzymana na prośbę użytkownika; plan następnych kroków (tylko MD) w PRZEKAZANIE.md.
 - 2026-10-09 polski: kanon v2 (POL_SPIS_TRESCI_v2.md), katalog POL_KATALOG.md, narzedzia/spis_polski.py, 17 szkieletów priorytetu 1 w polski/lekcje/.
+- 2026-10-09 polski: G12–G17, P01–P04 wstępne (Perplexity + poprawki i klucze Claude).

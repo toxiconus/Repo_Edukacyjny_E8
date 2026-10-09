@@ -35,12 +35,12 @@ Generowany 2026-10-09: `python3 narzedzia/spis_polski.py` — nie edytować ręc
 | G09 | Spójnik | ISTNIEJE | `polski/podstawy/PL_G09_spojnik.md` | 10 | WYPEŁNIONY | — |
 | G10 | Partykuła | ISTNIEJE | `polski/podstawy/PL_G10_partykula.md` | 10 | WYPEŁNIONY | — |
 | G11 | Wykrzyknik | ISTNIEJE | `polski/podstawy/PL_G11_wykrzyknik.md` | 9 | WYPEŁNIONY | — |
-| G12 | Części zdania | ISTNIEJE | `polski/podstawy/PL_G12_czesci_zdania.md` | 3 | CZĘŚCIOWY | — |
-| G13 | Związki wyrazowe | ISTNIEJE | `polski/podstawy/PL_G13_zwiazki_wyrazowe.md` | 3 | CZĘŚCIOWY | — |
-| G14 | Zdanie pojedyncze | ISTNIEJE | `polski/podstawy/PL_G14_zdanie_pojedyncze.md` | 3 | CZĘŚCIOWY | — |
-| G15 | Zdanie złożone współrzędnie | ISTNIEJE | `polski/podstawy/PL_G15_zdania_wspolrzedne.md` | 2 | CZĘŚCIOWY | — |
-| G16 | Zdanie złożone podrzędnie | ISTNIEJE | `polski/podstawy/PL_G16_zdania_podrzedne.md` | 3 | CZĘŚCIOWY | — |
-| G17 | Mowa zależna | ISTNIEJE | `polski/podstawy/PL_G17_mowa_zalezna.md` | 3 | CZĘŚCIOWY | — |
+| G12 | Części zdania | ISTNIEJE | `polski/podstawy/PL_G12_czesci_zdania.md` | 7 | WSTĘPNY | — |
+| G13 | Związki wyrazowe | ISTNIEJE | `polski/podstawy/PL_G13_zwiazki_wyrazowe.md` | 5 | WSTĘPNY | — |
+| G14 | Zdanie pojedyncze | ISTNIEJE | `polski/podstawy/PL_G14_zdanie_pojedyncze.md` | 5 | WSTĘPNY | — |
+| G15 | Zdanie złożone współrzędnie | ISTNIEJE | `polski/podstawy/PL_G15_zdania_wspolrzedne.md` | 5 | WSTĘPNY | — |
+| G16 | Zdanie złożone podrzędnie | ISTNIEJE | `polski/podstawy/PL_G16_zdania_podrzedne.md` | 6 | WSTĘPNY | — |
+| G17 | Mowa zależna | ISTNIEJE | `polski/podstawy/PL_G17_mowa_zalezna.md` | 5 | WSTĘPNY | — |
 | G18 | Zdania wielokrotnie złożone i wykresy | NOWA (treść częściowo w L009 — wydzielić | `polski/lekcje/PL_G18_zdania_wielokrotnie_zlozone_i_wykresy.md` | 1 | PUSTY | — |
 | G19 | Fleksja w zadaniach testowych — typologia pułapek | NOWA | `polski/lekcje/PL_G19_fleksja_w_zadaniach_testowych_typologia_.md` | 1 | PUSTY | — |
 | G20 | Fonetyka: głoska, litera, sylaba, akcent | NOWA (materiał powtórkowy W0–W1) | `polski/lekcje/PL_G20_fonetyka_gloska_litera_sylaba_akcent.md` | 1 | PUSTY | — |
@@ -128,10 +128,10 @@ Generowany 2026-10-09: `python3 narzedzia/spis_polski.py` — nie edytować ręc
 
 | Kod | Lekcja | Status w kanonie | Plik | KB | Stan | Audyt |
 |---|---|---|---|---|---|---|
-| P01 | Pisownia „nie" z częściami mowy (zasady 2026) | NOWA — skonsolidować rozproszone fragmen | `polski/lekcje/PL_P01_pisownia_nie_z_czesciami_mowy_zasady_202.md` | 1 | PUSTY | — |
-| P02 | Nowe zasady RJP 2026 — kompendium zmian | NOWA — L001 już ma aktualizację dla imie | `polski/lekcje/PL_P02_nowe_zasady_rjp_2026_kompendium_zmian.md` | 1 | PUSTY | — |
-| P03 | Przecinek: zdanie złożone, imiesłowy, „który", wyliczenia | NOWA — skonsolidować G15–G17 + G06 + L00 | `polski/lekcje/PL_P03_przecinek_zdanie_zlozone_imieslowy_ktory.md` | 1 | PUSTY | — |
-| P04 | Znaki inne niż przecinek: dwukropek, średnik, cudzysłów, myślnik, wiel | NOWA | `polski/lekcje/PL_P04_znaki_inne_niz_przecinek_dwukropek_sredn.md` | 1 | PUSTY | — |
+| P01 | Pisownia „nie" z częściami mowy (zasady 2026) | NOWA — skonsolidować rozproszone fragmen | `polski/lekcje/PL_P01_pisownia_nie_z_czesciami_mowy_zasady_202.md` | 6 | WSTĘPNY | — |
+| P02 | Nowe zasady RJP 2026 — kompendium zmian | NOWA — L001 już ma aktualizację dla imie | `polski/lekcje/PL_P02_nowe_zasady_rjp_2026_kompendium_zmian.md` | 5 | WSTĘPNY | — |
+| P03 | Przecinek: zdanie złożone, imiesłowy, „który", wyliczenia | NOWA — skonsolidować G15–G17 + G06 + L00 | `polski/lekcje/PL_P03_przecinek_zdanie_zlozone_imieslowy_ktory.md` | 5 | WSTĘPNY | — |
+| P04 | Znaki inne niż przecinek: dwukropek, średnik, cudzysłów, myślnik, wiel | NOWA | `polski/lekcje/PL_P04_znaki_inne_niz_przecinek_dwukropek_sredn.md` | 4 | WSTĘPNY | — |
 
 ## POL.09 MOT — motywy, konteksty, porównania, interpretacja
 

@@ -5,11 +5,11 @@ tytul: Zdanie złożone podrzędnie
 lead: Zdanie nadrzędne i podrzędne: podmiotowe, orzecznikowe, przydawkowe, dopełnieniowe, okolicznikowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L003, G05, G09
-stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
+stan: WSTĘPNY — Perplexity 2026-10-09, przegląd i poprawki: Claude 2026-10-09; braki: zob. sekcja „Do uzupełnienia”
 utworzono: 2026-10-09
 ---
 
-> Szkielet do wypełnienia przez LLM — instrukcja: `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (prompt) albo `narzedzia/szkielety_polski.py`.
+> Lekcja wstępna: treść Perplexity z poprawkami merytorycznymi Claude (surowa wersja: `polski/plany/wypelnienia/G12-G17_P01-P04_Perplexity_2026-10-09_surowe.md`). Przed W1 uzupełnić braki z ostatniej sekcji.
 
 **Musi się znaleźć w lekcji:**
 - pytanie od zdania nadrzędnego do podrzędnego — sposób rozpoznawania typu
@@ -20,7 +20,91 @@ utworzono: 2026-10-09
 
 **Pułapki do kliniki błędów:** „brak przecinka przed który w zdaniu dopełnieniowym” — błędna reguła; przecinek w środku wyrażenia przyimkowego (o, którym); mylenie przydawkowego z dopełnieniowym.
 
-## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+## Cele lekcji (wersja Perplexity — wiążące są cele z nagłówka i kanonu)
+- **W1:** Uczeń rozpoznaje zdanie nadrzędne i podrzędne.
+- **W2:** Uczeń rozróżnia zdania podrzędne podmiotowe, orzecznikowe, dopełnieniowe, przydawkowe i okolicznikowe.
+- **W3:** Uczeń poprawnie stosuje przecinki i spójniki w zdaniach podrzędnych.
+
+## 1. Wprowadzenie
+W **zdaniu złożonym podrzędnie** jedno zdanie składowe zależy od drugiego. Zdanie zależne nazywamy **podrzędnym**, a zdanie, od którego ono zależy — **nadrzędnym**.
+
+**Przykład:** **Wiem, że jutro będzie deszcz.**
+- Zdanie nadrzędne: *Wiem*
+- Zdanie podrzędne: *że jutro będzie deszcz*
+- Rodzaj: dopełnieniowe — odpowiada na pytanie *co wiem?*
+
+## 2. Rodzaje zdań podrzędnych
+
+| Rodzaj | Pytanie | Przykład |
+|---|---|---|
+| Podmiotowe | kto? co? | *Kto pracuje, ten osiąga sukces.* |
+| Orzecznikowe | jaki jest? kim jest? czym jest? | *Problem jest taki, że nie mamy czasu.* |
+| Dopełnieniowe | kogo? co? o kim? o czym? | *Powiedziałem, że przyjdę.* |
+| Przydawkowe | jaki? która? czyj? | *Książka, którą czytam, jest fascynująca.* |
+| Okolicznikowe | gdzie? kiedy? jak? dlaczego? | *Przyszedłem, gdy skończyła się lekcja.* |
+
+## 3. Spójniki i zaimki
+Najczęstsze: *że, aby, żeby, gdy, kiedy, ponieważ, bo, jeśli, chociaż, który, gdzie, dokąd, jak, czy*.
+
+## 4. Przecinek
+Zdanie podrzędne **zawsze** oddzielamy przecinkiem od nadrzędnego; zdanie wtrącone — przecinkami z obu stron:
+
+- *Wiem, że masz rację.*
+- *Nie przyszedłem, ponieważ byłem chory.*
+- *Książka, którą poleciłaś, była bardzo ciekawa.*
+
+Gdy zdanie podrzędne stoi przed nadrzędnym, przecinek oddziela je od części dalszej:
+
+- *Kiedy skończyła się lekcja, uczniowie wyszli z klasy.*
+
+## 5. Ćwiczenia
+
+### Ćwiczenie 1 — rozpoznawanie
+Wskaż zdanie nadrzędne i podrzędne oraz określ rodzaj zdania podrzędnego.
+1. Myślę, że to dobry pomysł.
+2. Uczeń, który się przygotował, odpowiedział dobrze.
+3. Wrócimy, kiedy skończy się deszcz.
+4. Nie wiem, gdzie zostawiłem klucze.
+5. Problem polega na tym, że nie mamy czasu.
+
+### Ćwiczenie 2 — przecinki
+Wstaw przecinki.
+1. Powiedział że przyjdzie później.
+2. Kiedy skończyłem pracę poszedłem na spacer.
+3. Film który obejrzeliśmy był bardzo emocjonujący.
+4. Nie przyszedłem ponieważ byłem chory.
+
+### Ćwiczenie 3 — przekształcanie
+Połącz zdania w zdanie złożone podrzędnie, używając odpowiedniego spójnika.
+1. Nie przyszłeś. Byłem zaniepokojony.
+2. Spotkałem kolegę. Mieszka w Krakowie.
+3. Nie wiem. Gdzie on mieszka?
+4. Wrócimy. Skończy się deszcz.
+
+## 6. Typowe błędy
+- Pomijanie przecinka przed *że*, *który*, *ponieważ*, *gdy*.
+- Mylenie zdania podrzędnego dopełnieniowego z podmiotowym.
+- Nieodróżnianie zdania podrzędnego od współrzędnego.
+- Rozdzielanie przecinkiem wyrażeń *mimo że*, *chyba że*, *zwłaszcza że* — przecinek stawiamy **przed całym** wyrażeniem: *Poszedł, mimo że padało.*
+
+## 7. Mini-sprawdzenie
+Określ rodzaj zdania podrzędnego:  
+**Nie wiedziałem, czy zdążę na pociąg.**
+
+## 8. Odpowiedź
+Zdanie podrzędne dopełnieniowe — odpowiada na pytanie: *czego nie wiedziałem?*
+
+## Klucz do ćwiczeń (Claude)
+
+**Ćw. 1** [E8]: 1. *że to dobry pomysł* — dopełnieniowe (myślę co?); 2. *który się przygotował* — przydawkowe; 3. *kiedy skończy się deszcz* — okolicznikowe czasu; 4. *gdzie zostawiłem klucze* — dopełnieniowe (nie wiem czego?); 5. *że nie mamy czasu* — dopełnieniowe (polega na czym?).
+**Ćw. 2** [E8]: 1. *Powiedział, że…*; 2. *…pracę, poszedłem…*; 3. *Film, który obejrzeliśmy, był…*; 4. *…przyszedłem, ponieważ…*.
+**Ćw. 3** [SPRAWDZIAN]: 1. *Byłem zaniepokojony, ponieważ nie przyszedłeś.* 2. *Spotkałem kolegę, który mieszka w Krakowie.* 3. *Nie wiem, gdzie on mieszka.* 4. *Wrócimy, kiedy skończy się deszcz.*
+
+## Do uzupełnienia
+
+przykłady z lektur obowiązkowych; zadania w stylu CKE z punktacją; fiszki; warstwy `::: warstwa W2 [KONKURS]`; znaczniki przy wszystkich ćwiczeniach; wizualizacja (wykres zdania) z `@opis`.
+
+## Materiał wcześniejszy — zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
 
 **Cel:** Potrafię rozpoznać zdanie podrzędne, określić jego rodzaj i postawić przecinek.
 
@@ -32,55 +116,3 @@ utworzono: 2026-10-09
 
 **Ćwiczenia:** Wstaw przecinki + określ rodzaj zdania podrzędnego.  
 CKE: Popraw interpunkcję i nazwij zdanie podrzędne (0–2).
-
-## 0 | Cel i kryterium gotowości [[basic:E8]]
-
-DO UZUPEŁNIENIA: 3–5 zdań „Potrafię…” (rozpoznać, odmienić, zastosować w zdaniu, poprawnie zapisać).
-
-## 1 | Definicja i pytania [[basic:E8]]
-
-DO UZUPEŁNIENIA: krótka definicja, pytania, na które odpowiada; tabela „cecha — przykład”.
-
-## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
-
-DO UZUPEŁNIENIA: 3–5 kroków rozpoznawania + przykłady trudnych przypadków.
-
-## 3 | Formy, odmiana lub rodzaje [[basic:E8]]
-
-DO UZUPEŁNIENIA: tabela wzorcowa (odmiana lub podział) z przykładami.
-
-## 4 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
-
-DO UZUPEŁNIENIA: jaką częścią zdania bywa; 3 przykłady z analizą.
-
-## 5 | Pisownia i interpunkcja [[basic:E8]]
-
-DO UZUPEŁNIENIA: zasady zapisu związane z tematem (zgodnie z zasadami od 2026), przykłady poprawne i błędne.
-
-## 6 | Przykłady z lektur [[basic:E8]]
-
-DO UZUPEŁNIENIA: 5–8 krótkich przykładów (własne parafrazy lub jedno zdanie cytatu) z lektur obowiązkowych, z rozpoznaniem.
-
-## 7 | Klinika błędów
-
-DO UZUPEŁNIENIA: tabela: Błąd | Poprawnie | Dlaczego? — min. 6 wierszy.
-
-## 8 | Ćwiczenia A — podstawa [[basic:E8]]
-
-DO UZUPEŁNIENIA: 6–8 zadań z kluczem.
-
-## 9 | Ćwiczenia B — trening i C — konkurs [[exam:KONKURS]]
-
-DO UZUPEŁNIENIA: 4–6 zadań trudniejszych z kluczem.
-
-## 10 | Zadania w stylu CKE
-
-DO UZUPEŁNIENIA: 3–4 zadania (zamknięte i otwarte) z kluczem, punktacją i uzasadnieniem.
-
-## 11 | Fiszki
-
-DO UZUPEŁNIENIA: 8–12 par „pytanie — odpowiedź”.
-
-## 12 | Wizualizacja
-
-DO UZUPEŁNIENIA: propozycja 1–2 grafik + obowiązkowa linia @opis pod każdą.

@@ -5,11 +5,11 @@ tytul: Mowa zależna i niezależna
 lead: Przytaczanie cudzych słów: dialog, cytat, przekształcanie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G16
-stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
+stan: WSTĘPNY — Perplexity 2026-10-09, przegląd i poprawki: Claude 2026-10-09; braki: zob. sekcja „Do uzupełnienia”
 utworzono: 2026-10-09
 ---
 
-> Szkielet do wypełnienia przez LLM — instrukcja: `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (prompt) albo `narzedzia/szkielety_polski.py`.
+> Lekcja wstępna: treść Perplexity z poprawkami merytorycznymi Claude (surowa wersja: `polski/plany/wypelnienia/G12-G17_P01-P04_Perplexity_2026-10-09_surowe.md`). Przed W1 uzupełnić braki z ostatniej sekcji.
 
 **Musi się znaleźć w lekcji:**
 - mowa niezależna: dwukropek, cudzysłów, myślnik w dialogu
@@ -19,7 +19,84 @@ utworzono: 2026-10-09
 
 **Pułapki do kliniki błędów:** zostawienie 1. osoby w mowie zależnej; brak przecinka przed „że”; myślnik i cudzysłów naraz.
 
-## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+## Cele lekcji (wersja Perplexity — wiążące są cele z nagłówka i kanonu)
+- **W1:** Uczeń rozróżnia mowę zależną i niezależną.
+- **W2:** Uczeń przekształca zdanie z mowy niezależnej w zależną i odwrotnie.
+- **W3:** Uczeń poprawnie stosuje przecinki i zmiany zaimków oraz okoliczników.
+
+## 1. Wprowadzenie
+**Mowa niezależna** to dokładne przytoczenie czyichś słów, zwykle w cudzysłowie. **Mowa zależna** przekazuje treść wypowiedzi bez cudzysłowu, często ze zmianą zaimków i okoliczników.
+
+## 2. Zasada przekształcania
+1. Usuń cudzysłów.
+2. Wstaw spójnik *że* lub inny odpowiedni.
+3. Zmień osoby zaimków: *ja* → *on/ona*, *mój* → *jego/jej*.
+4. Dostosuj okoliczniki czasu i miejsca: *dziś* → *tego dnia*, *tutaj* → *tam*.
+5. Dodaj przecinek przed *że*.
+
+## 3. Przykłady
+
+| Mowa niezależna | Mowa zależna |
+|---|---|
+| Anna powiedziała: „Jutro idę do lekarza.” | Anna powiedziała, że następnego dnia idzie do lekarza. |
+| Marek zapytał: „Gdzie jest mój plecak?” | Marek zapytał, gdzie jest jego plecak. |
+| Nauczyciel powiedział: „Nie spóźniajcie się.” | Nauczyciel powiedział, żeby się nie spóźniali. |
+| Kasia powiedziała: „Kupiłam ten prezent wczoraj.” | Kasia powiedziała, że kupiła ten prezent poprzedniego dnia. |
+
+## 4. Pytania i polecenia
+- Pytanie o rozstrzygnięcie: *Czy przyjdziesz?* → *Zapytał, czy przyjdę.*
+- Pytanie o uzupełnienie: *Gdzie mieszkasz?* → *Zapytał, gdzie mieszkam.*
+- Rozkaz: *Zamknij okno.* → *Poprosił, żebym zamknął okno.*
+
+## 5. Ćwiczenia
+
+### Ćwiczenie 1 — przekształcanie
+Zapisz w mowie zależnej.
+1. Piotr powiedział: „Jutro wyjadę na wycieczkę.”
+2. Mama zapytała: „Czy odrobiłeś lekcje?”
+3. Nauczyciel powiedział: „Przynieście jutro zeszyty.”
+4. Ola powiedziała: „Nie widziałam tu wcześniej tego filmu.”
+5. Kolega powiedział: „Spotkam cię po lekcjach.”
+
+### Ćwiczenie 2 — mowa niezależna
+Zapisz w mowie niezależnej.
+1. Kolega powiedział, że spotka mnie po lekcjach.
+2. Dziewczynka zapytała, czy może usiąść.
+3. Tata poprosił, żebym wyłączył telewizor.
+4. Nauczyciel powiedział, że jutro będzie sprawdzian.
+
+### Ćwiczenie 3 — poprawianie błędów
+Popraw zdania.
+1. Ania powiedziała: „Jutro pójdę do kina”. → Ania powiedziała, że jutro pójdę do kina.
+2. Nauczyciel zapytał czy rozumiemy zadanie.
+3. Marek powiedział: że jest zmęczony.
+4. Ewa powiedziała, że wczoraj spotkała twojego brata.
+
+## 6. Typowe błędy
+- Zostawianie cudzysłowu w mowie zależnej.
+- Brak przecinka przed *że*, *czy*, *gdzie*.
+- Niezamiana zaimków: *ja* → *on/ona*, *mój* → *jego/jej*.
+- Niezamiana okoliczników czasu: *dziś* → *tego dnia*, *jutro* → *następnego dnia*.
+
+## 7. Mini-sprawdzenie
+Przekształć w mowę zależną:  
+**Ewa powiedziała: „Wczoraj spotkałam twojego brata w bibliotece.”**
+
+## 8. Odpowiedź
+Ewa powiedziała, że poprzedniego dnia spotkała mojego brata w bibliotece.
+
+## Klucz do ćwiczeń (Claude)
+
+**Ćw. 1** [E8]: 1. *Piotr powiedział, że następnego dnia wyjedzie na wycieczkę.* 2. *Mama zapytała, czy odrobiłem lekcje.* 3. *Nauczyciel powiedział, żebyśmy następnego dnia przynieśli zeszyty.* 4. *Ola powiedziała, że nie widziała tam wcześniej tego filmu.* 5. *Kolega powiedział, że spotka mnie po lekcjach.*
+**Ćw. 2** [E8]: 1. *Kolega powiedział: „Spotkam cię po lekcjach”.* 2. *Dziewczynka zapytała: „Czy mogę usiąść?”.* 3. *Tata poprosił: „Wyłącz telewizor”.* 4. *Nauczyciel powiedział: „Jutro będzie sprawdzian”.*
+**Ćw. 3** [SPRAWDZIAN]: 1. *…że następnego dnia pójdzie do kina.* 2. *…zapytał, czy rozumiemy zadanie.* 3. *Marek powiedział, że jest zmęczony.* 4. poprawne, jeśli Ewa mówiła do mnie o moim bracie: *…spotkała mojego brata* (zaimek zależy od tego, kto do kogo mówi).
+Interpunkcja cytatu z kropką: w kluczu kropka po cudzysłowie zamykającym — [DO WERYFIKACJI z „Zasadami” RJP].
+
+## Do uzupełnienia
+
+przykłady z lektur obowiązkowych; zadania w stylu CKE z punktacją; fiszki; warstwy `::: warstwa W2 [KONKURS]`; znaczniki przy wszystkich ćwiczeniach; wizualizacja (wykres zdania) z `@opis`.
+
+## Materiał wcześniejszy — zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
 
 **Cel:** Potrafię przekształcić mowę niezależną na zależną i odwrotnie.
 
@@ -38,55 +115,3 @@ utworzono: 2026-10-09
 # S01–S06 | Środki stylistyczne — wersje wypełnione
 **Poziom:** [[poziom:SP]] [[LKO]] [[exam:KONKURS]]  
 **Status:** WYPEŁNIONY — Grok, 2026-10-09
-
-## 0 | Cel i kryterium gotowości [[basic:E8]]
-
-DO UZUPEŁNIENIA: 3–5 zdań „Potrafię…” (rozpoznać, odmienić, zastosować w zdaniu, poprawnie zapisać).
-
-## 1 | Definicja i pytania [[basic:E8]]
-
-DO UZUPEŁNIENIA: krótka definicja, pytania, na które odpowiada; tabela „cecha — przykład”.
-
-## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
-
-DO UZUPEŁNIENIA: 3–5 kroków rozpoznawania + przykłady trudnych przypadków.
-
-## 3 | Formy, odmiana lub rodzaje [[basic:E8]]
-
-DO UZUPEŁNIENIA: tabela wzorcowa (odmiana lub podział) z przykładami.
-
-## 4 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
-
-DO UZUPEŁNIENIA: jaką częścią zdania bywa; 3 przykłady z analizą.
-
-## 5 | Pisownia i interpunkcja [[basic:E8]]
-
-DO UZUPEŁNIENIA: zasady zapisu związane z tematem (zgodnie z zasadami od 2026), przykłady poprawne i błędne.
-
-## 6 | Przykłady z lektur [[basic:E8]]
-
-DO UZUPEŁNIENIA: 5–8 krótkich przykładów (własne parafrazy lub jedno zdanie cytatu) z lektur obowiązkowych, z rozpoznaniem.
-
-## 7 | Klinika błędów
-
-DO UZUPEŁNIENIA: tabela: Błąd | Poprawnie | Dlaczego? — min. 6 wierszy.
-
-## 8 | Ćwiczenia A — podstawa [[basic:E8]]
-
-DO UZUPEŁNIENIA: 6–8 zadań z kluczem.
-
-## 9 | Ćwiczenia B — trening i C — konkurs [[exam:KONKURS]]
-
-DO UZUPEŁNIENIA: 4–6 zadań trudniejszych z kluczem.
-
-## 10 | Zadania w stylu CKE
-
-DO UZUPEŁNIENIA: 3–4 zadania (zamknięte i otwarte) z kluczem, punktacją i uzasadnieniem.
-
-## 11 | Fiszki
-
-DO UZUPEŁNIENIA: 8–12 par „pytanie — odpowiedź”.
-
-## 12 | Wizualizacja
-
-DO UZUPEŁNIENIA: propozycja 1–2 grafik + obowiązkowa linia @opis pod każdą.
