@@ -3,14 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 62 KB)
+## .  (11 pl., 66 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 6 KB
-- `MAPA.md` 17 KB
+- `MAPA.md` 18 KB
 - `PRZEKAZANIE.md` 3 KB
 - `README.md` 0 KB
-- `WERYFIKACJA.md` 17 KB
+- `WERYFIKACJA.md` 20 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -104,7 +104,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 99 KB)
+## chemia/che-modular  (13 pl., 100 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -434,6 +434,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE.01.F12.wzory_chemiczne.md` 124 KB
 - ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 63 KB
 
+## chemia/lekcje_md/J  (7 pl., 20 KB)
+- `CHE.04.J00.mapa_bloku_J.md` 3 KB
+- `CHE.04.J01.dysocjacja_elektrolityczna.md` 4 KB
+- `CHE.04.J02.odczyn_i_ph.md` 3 KB
+- `CHE.04.J03.reakcje_jonowe.md` 2 KB
+- `CHE.04.J04.stracanie_osadow.md` 2 KB
+- `CHE.04.J05.amfoterycznosc.md` 2 KB
+- `CHE.04.J06.rownowagi_kwasowo_zasadowe.md` 3 KB
+
 ## chemia/lekcje_md/N  (4 pl., 140 KB)
 - `CHE.02.N02.tlenki.md` 37 KB
 - `CHE.02.N03.wodorotlenki.md` 31 KB
@@ -457,13 +466,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (6 pl., 101 KB)
+## chemia/plany/audyty  (10 pl., 156 KB)
 - `W1_perplexity_F01-F06_2026-10-09.md` 18 KB
 - `W1_perplexity_F07-F14_2026-10-09.md` 20 KB
 - `W1_perplexity_F15-F21_2026-10-09.md` 17 KB
+- `W1_perplexity_J01-J00_2026-10-09.md` 19 KB
 - `W1_perplexity_N01-N05_2026-10-09.md` 17 KB
 - `W1_perplexity_O01-O07_2026-10-09.md` 14 KB
+- `W1_perplexity_O08-X04_2026-10-09.md` 20 KB
 - `W1_perplexity_R03-R09_2026-10-09.md` 16 KB
+- `W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md` 9 KB
+- `W1_perplexity_uzupelnienia_koncowe_2026-10-09.md` 8 KB
 
 ## chemia/plany/narzedzia  (3 pl., 47 KB)
 - `kanon_dane.py` 37 KB
@@ -567,8 +580,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy v2.html` 114 KB
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy.html` 152 KB
 - ⚠`L002_lekcja (3).html` 131 KB
-- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek v2.html` 133 KB
-- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 154 KB
+- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek v2.html` 134 KB
+- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 153 KB
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik v2.html` 90 KB
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 146 KB
 
