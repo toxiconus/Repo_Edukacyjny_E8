@@ -34,7 +34,7 @@ Porównano przed rozbudową:
 
 1. Materiał źródłowy sugerował, że `bardziej dobry` może być alternatywą dla `lepszy`; w standardowym ćwiczeniu należy użyć `lepszy`, a konstrukcję `bardziej lepszy` odrzucić jako podwójne stopniowanie.
 2. W materiale planistycznym pozostały błędy typu `niemily` oraz sprzeczne przykłady dotyczące stopniowania i przymiotników niestopniowalnych.
-3. Materiały HTML L004 zawierały nieprawdziwe twierdzenie, że CKE akceptuje w latach 2026–2030 zarówno `niemilszy`, jak i `nie milszy`. Nie znaleziono podstaw, by przypisywać CKE takie stanowisko. Zasada RJP obowiązująca od 1 stycznia 2026 r. przewiduje łączną pisownię `nie-` z przymiotnikami we wszystkich stopniach, np. `niemiły`, `niemilszy`, `nienajmilszy`.
+3. Materiały HTML L004 zawierały nieprawdziwe twierdzenie, że CKE akceptuje w latach 2026–2030 zarówno `niemilszy`, jak i `nie milszy`. Nie znaleziono podstaw, by przypisywać CKE takie stanowisko. Zasada RJP obowiązująca od 1 stycznia 2026 r. przewiduje łączną pisownię `nie-` z przymiotnikami we wszystkich stopniach, np. `niemiły`, `niemilszy`, `nienajmilszy`. **Korekta 2026-10-09 (Claude):** twierdzenie o okresie przejściowym CKE 2026–2030 ma potwierdzenie w prasie (komunikat CKE; se.pl, forsal.pl) — przywrócone w L004 i G03 jako informacja egzaminacyjna obok nowej normy RJP.
 4. W starym materiale użycie wielkiej litery w przykładach typu `Jagielloński` nie było odróżnione od sytuacji, w której wyraz stanowi element oficjalnej nazwy własnej.
 5. Jedno ćwiczenie porównywało dwa użycia słowa `pierwszy`, choć w obu przypadkach należało je analizować jako liczebnik porządkowy; zadanie nie sprawdzało deklarowanej różnicy między częściami mowy.
 

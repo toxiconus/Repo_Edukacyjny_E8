@@ -239,6 +239,8 @@ Od 1 stycznia 2026 r. zgodnie z zasadami Rady Języka Polskiego cząstkę **nie-
 
 W przykładach ze stopniem wyższym i najwyższym pamiętaj: poprawna forma od 2026 r. to **niemilszy**, **nienajmilszy**, **nielepszy**, **nienajlepszy** — pisownia łączna.
 
+> Egzamin: CKE w latach 2026–2030 (okres przejściowy) uznaje na egzaminach zarówno pisownię według nowych, jak i dawnych zasad. Uczymy nowej; dawna forma (*nie milszy*) nie będzie w tym okresie liczona jako błąd. [do weryfikacji w komunikacie CKE]
+
 ### 6.1. Co z przeciwstawieniem?
 
 Nowa reguła usuwa dawny wyjątek dotyczący rozdzielnej pisowni „nie” z przymiotnikami w stopniu wyższym i najwyższym. Nie należy więc uczyć się starej reguły „nie lepszy, nie najlepszy” jako aktualnej zasady ogólnej. W razie konstrukcji o szczególnym charakterze składniowym, cytatu lub przytoczenia dawnej pisowni należy rozróżnić normę współczesną od tekstu historycznego; w zwykłych ćwiczeniach stosuj zapis łączny.
