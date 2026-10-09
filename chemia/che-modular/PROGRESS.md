@@ -53,3 +53,4 @@
 - 2026-10-09 — BIO L018: zalecenia audytu W15/W18 przeniesione do treści (model XX/XY, 1/2 vs 1/4, nosicielka/inaktywacja X).
 - 2026-10-09 — CHE: decyzje noty kolizji (status w spisie, ponad E8 → extra w lekcji, RT00–RT10); spis_tresci.py naprawiony (ścieżki gotowych lekcji).
 - 2026-10-09 09:15 — przekazanie + PACZKA_BRAKI_2026-10-09.zip (87 plików: CHE 46 kodów do napisania, J00–J06, F18–F21, O08, RT; BIO 24 cienkie; ANG moduły; POL W2; OLI).
+- 2026-10-09 14:20 — Odchudzanie per lekcja: profile F02, F03, F05, N02, N03, N04 (1,09–1,21 MB z 1,55); wspolny + s086 (energia jonizacji dla periodic-54); wstrzymane, zostało 7 lekcji (N05 wznawialny). Też: J00–J06 przegląd W22, paczka W1 (eksport/w1_paczka.py), dług @opis = 0.
