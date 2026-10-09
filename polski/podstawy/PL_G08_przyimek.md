@@ -5,7 +5,7 @@ tytul: Przyimek
 lead: Nie występuje samodzielnie — łączy się z rzeczownikiem lub zaimkiem w wyrażenie przyimkowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G07
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -20,6 +20,20 @@ utworzono: 2026-10-09
 - przyimek a przysłówek: „blisko domu” vs „mieszka blisko”
 
 **Pułapki do kliniki błędów:** „w każdym bądź razie” zamiast „w każdym razie”; „ze” / „z” przed wyrazami na s-, z-; mylenie przyimka z przedrostkiem.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+> Uwaga z przeglądu: Wiersz kliniki był pusty/niezrozumiały — zastąpiony.
+
+**Cel:** Potrafię rozpoznać przyimek i wskazać wymagany przypadek.
+
+**Cechy:** nieodmienny, tworzy wyrażenie przyimkowe (pod stołem, do szkoły).
+
+**Przypadki:** do + D, z + N, o + Msc, mimo + D itd.
+
+**Klinika:** „w każdym bądź razie” → „w każdym razie”; „z” / „ze” przed wyrazami na s-, z- („ze szkoły”); mylenie przyimka z przedrostkiem.
+
+**Ćwiczenia:** Uzupełnij przyimek + forma rzeczownika.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

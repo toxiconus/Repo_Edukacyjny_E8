@@ -5,7 +5,7 @@ tytul: Zdanie złożone podrzędnie
 lead: Zdanie nadrzędne i podrzędne: podmiotowe, orzecznikowe, przydawkowe, dopełnieniowe, okolicznikowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L003, G05, G09
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,19 @@ utworzono: 2026-10-09
 - wykres zdania podrzędnie złożonego
 
 **Pułapki do kliniki błędów:** „brak przecinka przed który w zdaniu dopełnieniowym” — błędna reguła; przecinek w środku wyrażenia przyimkowego (o, którym); mylenie przydawkowego z dopełnieniowym.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać zdanie podrzędne, określić jego rodzaj i postawić przecinek.
+
+**Rodzaje:** podmiotowe, orzecznikowe, dopełnieniowe, przydawkowe, okolicznikowe (miejsca, czasu, sposobu, przyczyny, celu, warunku, przyzwolenia).
+
+**Interpunkcja (obowiązkowa):** przecinek przed **każdym** zdaniem podrzędnym, także gdy zaczyna się od „który”, „czy”, „gdzie”. Gdy podrzędne zaczyna się od przyimka — przecinek przed przyimkiem (*o którym*).
+
+**Klinika:** brak przecinka przed „że”, „który”.
+
+**Ćwiczenia:** Wstaw przecinki + określ rodzaj zdania podrzędnego.  
+CKE: Popraw interpunkcję i nazwij zdanie podrzędne (0–2).
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

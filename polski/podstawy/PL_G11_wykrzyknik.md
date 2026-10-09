@@ -5,7 +5,7 @@ tytul: Wykrzyknik
 lead: Wyraża uczucia, wołanie lub naśladuje dźwięki.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, S03
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -18,6 +18,14 @@ utworzono: 2026-10-09
 - wykrzyknik a wyrazy dźwiękonaśladowcze w tekście literackim (powiązanie z S03)
 
 **Pułapki do kliniki błędów:** brak przecinka po „ach”, „och”; mylenie „och” i „ach” z „oh” (pisownia); wykrzyknik a wykrzyknienie (środek stylistyczny).
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać wykrzyknik i odróżnić od wykrzyknienia (zdania).
+
+**Przykłady:** ach!, o!, hop!, miau!, bęc!
+
+**Funkcja:** emocja, dźwięk, wezwanie.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

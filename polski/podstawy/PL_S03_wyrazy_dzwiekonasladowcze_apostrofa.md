@@ -5,7 +5,7 @@ tytul: Wyrazy dźwiękonaśladowcze, apostrofa, pytanie retoryczne, wykrzyknieni
 lead: Środki brzmieniowe i retoryczne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010, G11
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,19 @@ utworzono: 2026-10-09
 - funkcje każdego środka
 
 **Pułapki do kliniki błędów:** apostrofa a zwykły zwrot do rozmówcy w dialogu; każde pytanie w wierszu to pytanie retoryczne; wykrzyknienie a wykrzyknik (część mowy).
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać środki brzmieniowe i retoryczne.
+
+- **Onomatopeja** — szum, stukot, miau  
+- **Apostrofa** — zwrot do kogoś/czegoś (*O ojczyzno!*)  
+- **Pytanie retoryczne** — nie oczekuje odpowiedzi  
+- **Wykrzyknienie** — zdanie wyrażające emocje
+
+**Klinika:** apostrofa ≠ zwykły zwrot w dialogu; każde pytanie w wierszu ≠ retoryczne.
+
+**Ćwiczenia:** Nazwij + funkcja (emocja, nacisk, rytm).
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

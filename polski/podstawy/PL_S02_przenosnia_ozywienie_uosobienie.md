@@ -5,7 +5,7 @@ tytul: Przenośnia, ożywienie i uosobienie
 lead: Metafora i nadawanie cech istot żywych przedmiotom i zjawiskom.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010, S06
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,22 @@ utworzono: 2026-10-09
 - funkcja w bajce, wierszu i prozie
 
 **Pułapki do kliniki błędów:** mylenie ożywienia z uosobieniem; uznanie każdego porównania za metaforę; uosobienie a bohater zwierzęcy w bajce (alegoria).
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię odróżnić metaforę, ożywienie i uosobienie.
+
+- **Przenośnia (metafora)** — nowe znaczenie przez połączenie wyrazów (*morze łez*).  
+- **Ożywienie (animizacja)** — cechy istot żywych (*wiatr wyje*, *gwiazdy mrugają*).  
+- **Uosobienie (personifikacja)** — cechy ludzkie: myślenie, mówienie, uczucia (*morze się gniewa*, *Śmierć zastanawia się*).
+
+**Pytanie testowe:** Czy ma cechy wyłącznie ludzkie (mowa, myśl)? → uosobienie.  
+Czy tylko cechy żywych? → ożywienie.
+
+**Klinika:** mylenie ożywienia z uosobieniem; alegoria w bajce (lis = chytrość) to nie uosobienie bohatera.
+
+**Ćwiczenia:** Nazwij środek + funkcja.  
+CKE: Odróżnij ożywienie od uosobienia (0–2).
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

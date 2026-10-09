@@ -5,7 +5,7 @@ tytul: Partykuła
 lead: Nadaje zabarwienie wypowiedzi: pytanie, przeczenie, wzmocnienie, życzenie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G09
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -18,6 +18,14 @@ utworzono: 2026-10-09
 - partykuła „no”, „tylko”, „jeszcze” w języku mówionym
 
 **Pułapki do kliniki błędów:** „chciał bym” osobno; uznanie „nie” zawsze za partykułę bez sprawdzenia pisowni; mylenie „czy” partykuły i spójnika.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać partykułę (nieodmienna, modyfikuje sens).
+
+**Przykłady:** niech, czy, nawet, -że, by, no, lada.
+
+**„By”** z czasownikiem łącznie (patrz G02).
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

@@ -151,7 +151,7 @@ PROMPT = """# PROMPT DLA LLM — wypełnienie szkieletów lekcji języka polskie
 6. Ćwiczenia: każde z **kluczem**; zadania w stylu CKE — z **kluczem i punktacją** (np. 0–1, 0–2) i krótkim uzasadnieniem.
 7. Sekcja „Wizualizacja”: zaproponuj 1–2 grafiki/schematy (tabela, mapa pojęć, oś, wykres zdania) i pod każdą obowiązkowo linię `@opis …` — słowny opis, co dokładnie widać i jaki wniosek uczeń ma wyciągnąć (lekcja musi być zrozumiała bez obrazka).
 8. Język: polski, jasny dla 14-latka; definicje krótkie, potem przykłady, potem pułapki. Informacje niepewne oznacz „(do weryfikacji)”.
-9. Na końcu zmień w nagłówku `stan: PUSTY` na `stan: WYPEŁNIONY — <nazwa modelu>, <data>`.
+9. Jeśli plik ma sekcję „Zarys od …”, wykorzystaj ją, ale **rozwiń każdą sekcję 0–12 w pełni** (konkretne zadania z treścią i kluczem, nie opisy typu „ćwiczenia z kluczem”). Zwięzła wersja nie wystarcza.\n10. Na końcu zmień w nagłówku `stan: PUSTY` / `stan: CZĘŚCIOWY…` na `stan: WYPEŁNIONY — <nazwa modelu>, <data>`.
 
 ---
 
@@ -211,8 +211,12 @@ def main():
     for dane, sek, rodzaj in ((GRAMATYKA, SEKCJE_G, "gramatyka — części mowy i składnia"), (STYL, SEKCJE_S, "środki stylistyczne")):
         for kod, nazwa, tytul, lead, zakres, pulapki, pow in dane:
             p = os.path.join(OUT, f"PL_{kod}_{nazwa}.md")
-            if os.path.exists(p) and "stan: PUSTY" not in open(p, encoding="utf-8").read():
-                pominiete.append(p); continue
+            if os.path.exists(p):
+                stan = open(p, encoding="utf-8").read()
+                if "stan: CZĘŚCIOWY" in stan:  # zarys już jest — nie nadpisuj, ale wyślij do rozwinięcia
+                    pliki.append((kod, tytul + " (jest zarys — rozwiń sekcje)", p)); continue
+                if "stan: PUSTY" not in stan:
+                    pominiete.append(p); continue
             open(p, "w", encoding="utf-8").write(szkielet(kod, nazwa, tytul, lead, zakres, pulapki, pow, sek, rodzaj))
             pliki.append((kod, tytul, p))
     spis = "\n".join(f"- **{k}** — {t}" for k, t, _ in pliki)

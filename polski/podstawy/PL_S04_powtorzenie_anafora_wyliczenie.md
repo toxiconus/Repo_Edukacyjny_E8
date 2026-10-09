@@ -5,7 +5,7 @@ tytul: Powtórzenie, anafora, wyliczenie, kontrast
 lead: Środki budujące rytm i podkreślające treść.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,19 @@ utworzono: 2026-10-09
 - funkcje: rytm, nacisk, budowanie napięcia
 
 **Pułapki do kliniki błędów:** mylenie anafory z rymem; wyliczenie a zwykła lista w tekście; kontrast bez wskazania przeciwstawnych elementów.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać środki budujące rytm i nacisk.
+
+- **Powtórzenie / anafora** (na początku wersów)  
+- **Wyliczenie (enumeracja)**  
+- **Kontrast (antyteza)**  
+- **Refren**
+
+**Funkcja:** rytm, podkreślenie, napięcie.
+
+**Klinika:** anafora ≠ rym; kontrast wymaga wskazania przeciwstawnych elementów.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

@@ -5,7 +5,7 @@ tytul: Zdanie złożone współrzędnie
 lead: Zdania równorzędne: łączne, rozłączne, przeciwstawne, wynikowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G09, G16
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -18,6 +18,14 @@ utworzono: 2026-10-09
 - wykres zdania współrzędnie złożonego
 
 **Pułapki do kliniki błędów:** przecinek przed „i” w zdaniu łącznym; mylenie wynikowego z przyczynowym (więc / bo); brak przecinka w zdaniu bezspójnikowym.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać zdania współrzędne i postawić przecinek (lub nie).
+
+**Typy:** łączne (i, oraz), rozłączne (albo, lub), przeciwstawne (a, ale, lecz), wynikowe (więc, dlatego).
+
+**Interpunkcja:** przed „a”, „ale”, „lecz”, „więc” — przecinek; przed „i”, „oraz”, „lub” — zwykle bez.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

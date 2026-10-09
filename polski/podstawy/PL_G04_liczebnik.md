@@ -5,7 +5,7 @@ tytul: Liczebnik
 lead: Ile? Który z kolei? — liczebniki główne, porządkowe, zbiorowe, ułamkowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L004
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,39 @@ utworzono: 2026-10-09
 - łączenie liczebnika z rzeczownikiem (pięciu chłopców przyszło)
 
 **Pułapki do kliniki błędów:** „dwoje chłopców”; „trzech dziewczyn”; brak kropki po cyfrze arabskiej oznaczającej liczebnik porządkowy.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać rodzaje liczebników, poprawnie odmienić „dwa/dwaj/dwóch/dwie”, użyć liczebników zbiorowych i zapisać porządkowe z kropką.
+
+**Definicja:** Liczebnik nazywa liczbę lub kolejność (pytania: ile? który z kolei?).
+
+**Rodzaje:**
+- główne: jeden, dwa, pięć
+- porządkowe: pierwszy, 3. klasa
+- zbiorowe: dwoje, troje, czworo (dzieci, drzwi, uczniów różnej płci)
+- ułamkowe: pół, ćwierć
+- nieokreślone: kilka, wiele, tyle
+
+**Odmiana „dwa”:** dwaj chłopcy (mian. męskoosobowy), dwóch chłopców (dop.), dwie dziewczynki.
+
+**Pisownia:** liczebnik porządkowy arabski + kropka (3. miejsce).
+
+**Klinika błędów:**
+| Błąd | Poprawnie | Dlaczego? |
+|------|-----------|-----------|
+| dwoje chłopców | dwaj chłopcy / dwóch chłopców | zbiorowy tylko przy mieszanej płci lub rzeczownikach typu dzieci |
+| trzech dziewczyn | trzy dziewczyny | z żeńskim – forma żeńska |
+| 3 klasa | 3. klasa | kropka po porządkowym |
+
+**Ćwiczenia (klucz):**  
+A1. Uzupełnij: ……… (2) chłopców, ……… (2) dziewczynki → dwóch, dwie.  
+A2. Popraw: dwoje uczniów (samych chłopców) → dwaj uczniowie.  
+CKE: Który zapis poprawny? A. 5 klasa B. 5. klasa → B (0–1).
+
+**Fiszki:** zbiorowy przykłady? → dwoje dzieci, troje drzwi.  
+**Wizualizacja:** tabela odmiany „dwa/dwaj/dwóch/dwie”.  
+@opis Kolumny rodzajów. Wniosek: forma zależy od rodzaju i żywotności.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

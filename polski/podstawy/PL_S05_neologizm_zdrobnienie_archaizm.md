@@ -5,7 +5,7 @@ tytul: Neologizm, zdrobnienie, zgrubienie, archaizm
 lead: Środki słowotwórcze i leksykalne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010, L006
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -18,6 +18,17 @@ utworzono: 2026-10-09
 - kolokwializm, regionalizm (dla ambitnych)
 
 **Pułapki do kliniki błędów:** każde zdrobnienie wyraża czułość; mylenie neologizmu z wyrazem obcym; archaizm a wyraz rzadki.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać środki słowotwórcze i leksykalne.
+
+- **Neologizm** — nowo utworzony wyraz  
+- **Zdrobnienie** — -ek, -ka, -usia (czułość lub ironia)  
+- **Zgrubienie** — -isko, -ucho (pogarda, humor)  
+- **Archaizm** — wyraz dawny (stylizacja)
+
+**Klinika:** każde zdrobnienie ≠ czułość; neologizm ≠ wyraz obcy.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

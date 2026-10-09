@@ -5,7 +5,7 @@ tytul: Epitet i porównanie
 lead: Określenia i zestawienia — jak autor buduje obraz.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -18,6 +18,23 @@ utworzono: 2026-10-09
 - funkcja: plastyczność opisu, emocje, ocena
 
 **Pułapki do kliniki błędów:** każdy przymiotnik to epitet; porównanie bez wyrazu porównującego (to już przenośnia); podanie nazwy środka bez funkcji.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać epitet i porównanie, nazwać je i podać funkcję.
+
+**Epitet** — określenie artystyczne rzeczownika (srebrzyste fale, złote włosy).  
+**Porównanie** — dwa człony + wyraz porównujący (jak, niby, niczym, jakby).
+
+**Funkcja:** plastyczność, emocje, ocena.
+
+**Klinika:** każdy przymiotnik ≠ epitet; porównanie bez „jak” to już przenośnia.
+
+**Ćwiczenia:** Wskaż epitet/porównanie + funkcja.  
+CKE: Nazwij środek i podaj funkcję (0–2).
+
+**Wizualizacja:** dwa prostokąty „epitet” i „porównanie” z przykładami.  
+@opis Uczeń widzi różnicę budowy. Wniosek: porównanie ma wyraz porównujący.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

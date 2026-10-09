@@ -5,7 +5,7 @@ tytul: Spójnik
 lead: Łączy wyrazy w zdaniu lub zdania w zdaniu złożonym.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G15, G16
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,19 @@ utworzono: 2026-10-09
 - pisownia „żeby”, „aby”, „gdyby” łącznie
 
 **Pułapki do kliniki błędów:** przecinek przed „i”; brak przecinka przed „że”; „ponieważ” na początku zdania bez przecinka między zdaniami.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+> Uwaga z przeglądu: „który” usunięty z listy spójników (to zaimek względny).
+
+**Cel:** Potrafię rozróżnić spójniki współrzędne i podrzędne oraz postawić przecinek.
+
+**Współrzędne:** i, oraz, a, ale, lecz, więc, dlatego.  
+**Podrzędne:** że, aby, ponieważ, gdy, jeśli, choć. („który” to nie spójnik, lecz zaimek względny — też wprowadza zdanie podrzędne.)
+
+**Interpunkcja:** przecinek przed każdym zdaniem podrzędnym (także „Nie wiem, który…”).
+
+**Klinika:** brak przecinka przed „że”, „który”.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

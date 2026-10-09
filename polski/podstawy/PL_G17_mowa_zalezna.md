@@ -5,7 +5,7 @@ tytul: Mowa zależna i niezależna
 lead: Przytaczanie cudzych słów: dialog, cytat, przekształcanie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G16
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -18,6 +18,26 @@ utworzono: 2026-10-09
 - zapis dialogu w opowiadaniu
 
 **Pułapki do kliniki błędów:** zostawienie 1. osoby w mowie zależnej; brak przecinka przed „że”; myślnik i cudzysłów naraz.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię przekształcić mowę niezależną na zależną i odwrotnie.
+
+**Niezależna:** „Przyjdę jutro” — powiedział.  
+**Zależna:** Powiedział, że przyjdzie jutro.
+
+**Zmiany:** osoba, czas, wskaźniki nawiązania (że, aby, czy).
+
+**Klinika:** zachowanie cudzysłowu w mowie zależnej (błąd); brak zmian osoby.
+
+**Ćwiczenia:** Przekształć 4–5 zdań w obie strony z kluczem.
+
+**Wizualizacja:** strzałka „niezależna ↔ zależna” z listą zmian.  
+@opis Uczeń widzi, co trzeba zmienić. Wniosek: mowa zależna to parafraza, nie cytat.
+
+# S01–S06 | Środki stylistyczne — wersje wypełnione
+**Poziom:** [[poziom:SP]] [[LKO]] [[exam:KONKURS]]  
+**Status:** WYPEŁNIONY — Grok, 2026-10-09
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

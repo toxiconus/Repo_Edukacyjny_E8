@@ -5,7 +5,7 @@ tytul: Części zdania
 lead: Podmiot, orzeczenie, przydawka, dopełnienie, okolicznik — od pytań do wykresu zdania.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L008, G13
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,27 @@ utworzono: 2026-10-09
 - jaka część mowy może pełnić jaką funkcję (tabela)
 
 **Pułapki do kliniki błędów:** mylenie dopełnienia z okolicznikiem miejsca; podmiot w dopełniaczu (Nie było Jacka); orzeczenie imienne rozbite na dwie części.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię wskazać podmiot, orzeczenie, przydawkę, dopełnienie, okolicznik.
+
+**Główne części:**
+- Podmiot — kto? co?
+- Orzeczenie — co robi? (czasownik)
+- Przydawka — jaki? który? czyj? (przy rzeczowniku)
+- Dopełnienie — kogo? czego? komu? czemu?…
+- Okolicznik — gdzie? kiedy? jak? dlaczego? po co?
+
+**Zasada:** ta sama część mowy może pełnić różne funkcje.
+
+**Klinika:** mylenie przydawki z orzecznikiem; okolicznik vs dopełnienie.
+
+**Ćwiczenia:** Rozbiór zdania + klucz.  
+CKE: Wskaż okolicznik czasu (0–1).
+
+**Wizualizacja:** schemat zdania z etykietami.  
+@opis Strzałki od pytań do części. Wniosek: pytanie rozstrzyga funkcję.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

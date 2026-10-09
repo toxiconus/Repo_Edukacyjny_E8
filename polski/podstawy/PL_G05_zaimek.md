@@ -5,7 +5,7 @@ tytul: Zaimek
 lead: Zastępuje rzeczownik, przymiotnik, liczebnik lub przysłówek.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L003, G16
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,22 @@ utworzono: 2026-10-09
 - zaimki względne wprowadzają zdania podrzędne — przecinek przed całym zdaniem podrzędnym
 
 **Pułapki do kliniki błędów:** „jego” zamiast „swój” (i odwrotnie); forma „mnie” na początku zdania vs „mi”; „się” na końcu zdania.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać zaimek, określić jego rodzaj i funkcję (zastępuje rzeczownik/przymiotnik/liczebnik/przysłówek).
+
+**Rodzaje główne:** osobowe (ja, ty, on), dzierżawcze (mój, twój), wskazujące (ten, tamten), pytające (kto, co, jaki), względne (który, jaki), nieokreślone (ktoś, coś), przeczące (nikt, nic), upowszechniające (każdy, wszelki).
+
+**Funkcja:** unika powtórzeń, łączy zdania (który).
+
+**Klinika:** mylenie zaimka względnego z pytającym; „swój” vs „jego”.
+
+**Ćwiczenia:** Wskaż zaimek i powiedz, co zastępuje.  
+CKE: W zdaniu „Książka, którą czytałem…” wyraz „którą” to zaimek względny (0–1).
+
+**Wizualizacja:** mapa „zaimek zastępuje →”.  
+@opis Strzałki do rzeczownika, przymiotnika itd. Wniosek: zaimek nie nazywa, tylko zastępuje.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

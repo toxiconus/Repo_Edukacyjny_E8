@@ -5,7 +5,7 @@ tytul: Związki wyrazowe
 lead: Związek główny, zgody, rządu, przynależności — wyraz nadrzędny i podrzędny.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G12
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,18 @@ utworzono: 2026-10-09
 - jak rozpoznać wyraz nadrzędny — pytanie od nadrzędnego do podrzędnego
 
 **Pułapki do kliniki błędów:** mylenie zgody z rządem przy liczebnikach; zadawanie pytania w złym kierunku; brak związku głównego w równoważniku.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+> Uwaga z przeglądu: Związek przynależności był źle zdefiniowany.
+
+**Cel:** Potrafię wskazać związek zgody, rządu i przynależności.
+
+- Zgoda: przymiotnik = rzeczownik (rodzaj, liczba, przypadek)
+- Rząd: czasownik / przyimek wymaga konkretnego przypadku
+- Przynależność: wyraz podrzędny jest nieodmienny (przysłówek, bezokolicznik, wyrażenie przyimkowe) — *biegnie szybko*, *chce czytać*
+
+**Ćwiczenia:** Określ rodzaj związku w parach wyrazów.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

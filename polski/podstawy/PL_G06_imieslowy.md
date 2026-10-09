@@ -5,7 +5,7 @@ tytul: Imiesłowy
 lead: Formy czasownika: przymiotnikowe (czynne, bierne) i przysłówkowe (współczesne, uprzednie).
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L001, G02
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,26 @@ utworzono: 2026-10-09
 - pisownia „nie”: z imiesłowami przymiotnikowymi łącznie (zawsze, od 2026), z przysłówkowymi rozdzielnie
 
 **Pułapki do kliniki błędów:** różny podmiot w równoważniku; mylenie imiesłowu przymiotnikowego z przymiotnikiem; „nie” rozdzielnie z imiesłowem przymiotnikowym (stara zasada).
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać cztery typy imiesłowów i użyć równoważnika imiesłowowego poprawnie.
+
+**Typy:**
+- przymiotnikowy czynny: -ący (śpiewający)
+- przymiotnikowy bierny: -ny/-ty (napisany, zbity)
+- przysłówkowy współczesny: -ąc (idąc)
+- przysłówkowy uprzedni: -wszy/-łszy (zjadłszy)
+
+**Zasada równoważnika:** ten sam wykonawca czynności co w zdaniu nadrzędnym.
+
+**Klinika:** „Idąc ulicą, spadł deszcz” (błędny wykonawca).
+
+**Ćwiczenia:** Przekształć zdanie złożone na równoważnik.  
+CKE: Popraw błąd równoważnika (0–2).
+
+**Wizualizacja:** drzewo czterech imiesłowów.  
+@opis Gałęzie z końcówkami. Wniosek: końcówka + funkcja rozstrzygają typ.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

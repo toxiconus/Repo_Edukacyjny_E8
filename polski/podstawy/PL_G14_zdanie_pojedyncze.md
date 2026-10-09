@@ -5,7 +5,7 @@ tytul: Zdanie pojedyncze i równoważnik zdania
 lead: Zdanie z jednym orzeczeniem, rozwinięte i nierozwinięte; wypowiedzenie bez orzeczenia.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G12, G15
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -18,6 +18,17 @@ utworzono: 2026-10-09
 - wypowiedzenia: oznajmujące, pytające, rozkazujące, wykrzyknikowe
 
 **Pułapki do kliniki błędów:** uznanie imiesłowu za orzeczenie; liczenie orzeczeń w zdaniu z bezokolicznikiem; równoważnik bez przecinka.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+> Uwaga z przeglądu: Zdanie może mieć też orzeczenie imienne.
+
+**Cel:** Potrafię odróżnić zdanie od równoważnika i poprawnie użyć równoważnika imiesłowowego.
+
+**Zdanie** ma orzeczenie (osobową formę czasownika — także w orzeczeniu imiennym: *Dom był duży*).  
+**Równoważnik** nie ma orzeczenia (*Cisza w klasie.*, *Uwaga!*).
+
+**Równoważnik imiesłowowy** — patrz G06 (ten sam wykonawca).
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

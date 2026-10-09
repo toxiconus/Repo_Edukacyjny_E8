@@ -86,6 +86,7 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 | polski | G01 | Rzeczownik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/PL_G01_rzeczownik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
 | polski | G02 | Czasownik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/PL_G02_czasownik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
 | polski | G03 | Przymiotnik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/PL_G03_przymiotnik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
+| polski | G04–G17, S01–S06 | Części mowy, składnia, środki stylistyczne | — | zarys od Grok wstawiony do szkieletów (`polski/podstawy/`, stan CZĘŚCIOWY); 4 poprawki z przeglądu (G08, G09, G13, G14) — W1 nie dotyczy; czeka na pełne wypełnienie | — | — |
 
 ## Wnioski przekrojowe z W1 (do wdrożenia w całym kursie chemii)
 

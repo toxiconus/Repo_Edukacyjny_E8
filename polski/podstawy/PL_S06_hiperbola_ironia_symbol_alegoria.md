@@ -5,7 +5,7 @@ tytul: Hiperbola, ironia, symbol, alegoria
 lead: Środki znaczeniowe trudniejsze — poziom E8+ i konkurs.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L011
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -19,6 +19,25 @@ utworzono: 2026-10-09
 - jak uzasadnić rozpoznanie ironii w zadaniu
 
 **Pułapki do kliniki błędów:** mylenie symbolu z alegorią; ironia a kłamstwo; hiperbola a zwykłe porównanie.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię rozpoznać środki znaczeniowe trudniejsze i uzasadnić rozpoznanie.
+
+- **Hiperbola** — wyolbrzymienie (*umieram z głodu*)  
+- **Ironia** — mówienie odwrotnie do zamierzonego znaczenia  
+- **Symbol** — wiele znaczeń, otwarty  
+- **Alegoria** — jedno, umowne znaczenie (lis = chytrość w bajce)
+
+**Morał** w bajce często wynika z alegorii.
+
+**Klinika:** symbol ≠ alegoria; ironia ≠ kłamstwo; hiperbola ≠ zwykłe porównanie.
+
+**Ćwiczenia:** Uzasadnij rozpoznanie ironii / alegorii.  
+CKE: Nazwij środek + funkcja w tekście (0–2).
+
+**Wizualizacja:** tabela „symbol vs alegoria”.  
+@opis Dwie kolumny: otwartość znaczeń vs jednoznaczność. Wniosek: w bajce najczęściej alegoria + morał.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

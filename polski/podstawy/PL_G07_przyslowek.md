@@ -5,7 +5,7 @@ tytul: Przysłówek
 lead: Jak? Gdzie? Kiedy? W jakim stopniu? — określa czasownik, przymiotnik lub inny przysłówek.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G12
-stan: PUSTY
+stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
 utworzono: 2026-10-09
 ---
 
@@ -20,6 +20,21 @@ utworzono: 2026-10-09
 - pisownia wyrażeń przyimkowych i przysłówków złożonych (na pewno, po polsku, naprzeciwko)
 
 **Pułapki do kliniki błędów:** mylenie przysłówka z przymiotnikiem (szybko / szybki); „po polsku” pisane łącznie; „nie” z przysłówkiem odprzymiotnikowym rozdzielnie.
+
+## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+
+**Cel:** Potrafię odróżnić przysłówek od przymiotnika i stopniować przysłówki jakościowe.
+
+**Pytania:** jak? gdzie? kiedy? skąd? dokąd?
+
+**Stopniowanie:** szybko – szybciej – najszybciej; dobrze – lepiej – najlepiej.
+
+**„Nie” z przysłówkami odprzymiotnikowymi – łącznie od 2026:** niedobrze, nienajlepiej.
+
+**Klinika:** mylenie z przymiotnikiem (*szybki* vs *szybko*).
+
+**Ćwiczenia:** Zamień przymiotnik na przysłówek.  
+CKE: Określ część mowy „lepiej” (0–1).
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

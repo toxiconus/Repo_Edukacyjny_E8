@@ -7,7 +7,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
-- `MAPA.md` 18 KB
+- `MAPA.md` 19 KB
 - `PRZEKAZANIE.md` 5 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 25 KB
@@ -496,7 +496,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `html2md.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (6 pl., 36 KB)
+## narzedzia  (6 pl., 37 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
@@ -536,8 +536,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `Zakresy_2025_2026_chemia_biologia_OCR.md` 16 KB
 - ⚠`Zakresy_wymagan_2025_2026.pdf` 2.7 MB
 
-## olimpiada/zrodla/pakiet_2026-10-09  (2 pl., 4 KB)
+## olimpiada/zrodla/pakiet_2026-10-09  (3 pl., 5 KB)
 - `00_OPIS_POZIOMOW_I_OZNACZEN.md` 2 KB
+- `00_README_PAKIET_JEDEN_ZIP.md` 2 KB
 - `README_PAKIET.md` 1 KB
 
 ## olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO  (3 pl., 23 KB)
@@ -601,7 +602,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
 - `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
 
-## polski/podstawy  (23 pl., 74 KB)
+## polski/plany/wypelnienia  (3 pl., 20 KB)
+- `G01_Rzeczownik_WYPELNIONY.md` 8 KB
+- `G02_Czasownik_WYPELNIONY.md` 6 KB
+- `G03_Przymiotnik_WYPELNIONY.md` 6 KB
+
+## polski/podstawy  (23 pl., 89 KB)
 - (zwinięte; `ls polski/podstawy`)
 
 ## wizualizacje-projekty  (3 pl., 71 KB)
