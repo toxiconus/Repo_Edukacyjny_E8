@@ -1,4 +1,4 @@
-# PRZEKAZANIE — całe repo · 2026-10-09 (stan 09:00)
+# PRZEKAZANIE — całe repo · 2026-10-09 (stan 09:15)
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
@@ -21,6 +21,14 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - Lekcje F tylko na polecenie, po jednej (ostatnio F06, 2026-10-08 17:36).
 - Dane niepewne oznaczać „do weryfikacji”.
 - (2026-10-09) Każda wizualizacja/obraz ma opis `@opis` w md → ukryty komentarz w HTML; build egzekwuje (`narzedzia/opis_wizualizacji.py`). Eksport do Perplexity: `python3 eksport/zbierz_lekcje.py`.
+
+## Sesja 2026-10-09 (08:25–09:15) — paczka W23, grafiki L001, audyty BIO, kolizje CHE — STAN AKTUALNY
+- **Paczka W23 (GPT-6) scalona trójstronnie** pod nazwy `PRZ.NN.KOD` (119 plików, 13 nowych audytów); raport i odrzucenia: `paczki/W23_2026-10-09/AUDYT_SCALENIA_Claude.md`. Zasada: paczek z zewnątrz nigdy nie kopiować na repo — scalać (`git merge-file` z bazą z historii), bo budowane są na starszym stanie.
+- **Pisownia „nie” (RJP od 1.01.2026):** z przymiotnikami, imiesłowami przymiotnikowymi i przysłówkami odprzymiotnikowymi zawsze łącznie, także przy przeciwstawieniu; CKE 2026–2030 uznaje też zapis dawny. Klucze w G06/G07 według tego.
+- **BIO:** grafiki `komorka-nakladki` i `mikroskop-model` (bio-viz, L001); zalecenia audytów W15/W16/W18 wprowadzone do treści L014–L044 (L018 najszerzej).
+- **CHE:** znaczniki „✔ wprowadzone” w kanonach → jedna notka na sekcję; decyzje noty kolizji: kolumna `status` w spisie (`spis_tresci.py` naprawiony), treść ponad E8 → `[[extra:ZAAWANSOWANY]]` w lekcji, powtórki tematyczne = RT00–RT10.
+- **Paczka braków dla LLM:** `PACZKA_BRAKI_2026-10-09.zip` (wysłana użytkownikowi; instrukcja `ZADANIA.md` w środku). Wyniki wgrywać scalaniem jak W23.
+- **Następne kroki:** (a) wgrać wyniki paczki braków; (b) modele silnika w kanonie chemii; (c) dług `@opis` (42); (d) korekta scalająca kursu polskiego (decyzja użytkownika).
 
 ## Sesja 2026-10-09 (rano, 07:20–09:00) — szablon wspólny, porządek, nazwy — STAN AKTUALNY
 - **Wspólny szablon HTML dla wszystkich przedmiotów:** `szablon/` (baza z CHE + `ulepszenia.css` + `motywy/che|bio|pol|ang|oli.css` + `lekcja.js`), opis `szablon/README.md`, podgląd `szablon/podglad/`. Pasek z postępem czytania, spis z aktywną sekcją (na telefonie zwinięty), tryb ciemny, druk; komponenty: mity, drzewo, cytat, dialog, słówka, klinika; przedmiotowe: `div.rownanie` (che), podkreślenia części zdania `z-pod/z-orz/z-prz/z-dop/z-oko` (pol), `wzor`/`en`/`ipa` (ang), `poz-2..4`/`zad-konk` (oli), grafiki `@viz` z bio-viz (bio).

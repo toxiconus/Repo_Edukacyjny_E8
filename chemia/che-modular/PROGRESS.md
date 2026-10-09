@@ -52,3 +52,4 @@
 - 2026-10-09 — BIO L001: nowe grafiki bio-viz „komorka-nakladki” (rdzeń + nakładki typów, rozpoznanie zestawu) i „mikroskop-model” (×400, barwienie vs model); zastąpiły puste SVG z dawnego HTML; katalog i @opis uzupełnione.
 - 2026-10-09 — BIO L018: zalecenia audytu W15/W18 przeniesione do treści (model XX/XY, 1/2 vs 1/4, nosicielka/inaktywacja X).
 - 2026-10-09 — CHE: decyzje noty kolizji (status w spisie, ponad E8 → extra w lekcji, RT00–RT10); spis_tresci.py naprawiony (ścieżki gotowych lekcji).
+- 2026-10-09 09:15 — przekazanie + PACZKA_BRAKI_2026-10-09.zip (87 plików: CHE 46 kodów do napisania, J00–J06, F18–F21, O08, RT; BIO 24 cienkie; ANG moduły; POL W2; OLI).
