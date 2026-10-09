@@ -35,6 +35,15 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Gałąź pracy (CHE, BIO, wizualizacje): `claude/che-lekcje` — zbiorcza, opis w `PRZEKAZANIE.md`. Push tylko na gałęzie `claude/...` (push na `main` kończy się 403).
 - Po każdym zamkniętym etapie: commit i push, krótki wpis w `chemia/che-modular/PROGRESS.md`.
 
+## Wizualizacje i obrazy — opis obowiązkowy (zawsze, każdy przedmiot)
+- Każda wizualizacja, model, zlewka, wykres, schemat SVG i obraz w lekcji ma **opis słowny w md**: co dokładnie widać (elementy, oznaczenia, kolory, liczby, co się zmienia) i jaki wniosek uczeń ma z tego wyciągnąć.
+- Opis jest jawny w md (linia `@opis …` zaraz pod `@model` / `@zlewka`; przy obrazie dodatkowo `alt`), a w HTML trafia jako ukryty komentarz `<!-- OPIS: … -->` (robi to `md2html.py`).
+- `md2html.py` wypisuje `UWAGA: N wizualizacji bez @opis` — przy nowych i edytowanych lekcjach ma być 0 dla tej lekcji.
+- Cel: treść czytelna bez grafiki (eksport do Perplexity/LLM, czytniki ekranu, druk).
+
+## Eksport do analizy (Perplexity)
+- `python3 eksport/zbierz_lekcje.py` → `eksport/out/PERPLEXITY_<PRZEDMIOT>.md` (prompt na początku + wszystkie lekcje, jedna najnowsza wersja każdej). Katalog `out/` jest poza gitem.
+
 ## Merytoryka
 - Język lekcji: polski, poziom E8 (podstawa programowa). Dane liczbowe oznaczaj do weryfikacji, jeśli nie są pewne.
 

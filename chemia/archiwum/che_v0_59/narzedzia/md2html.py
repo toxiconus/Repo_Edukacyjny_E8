@@ -5,6 +5,7 @@ Wspólne: szablon/lekcja.css, szablon/lekcja.js (wklejane do każdej lekcji), di
 import os, re, sys, json, html as H
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BRAK_OPISU = []  # @model/@zlewka bez linii @opis (zasada: każda wizualizacja ma opis)
 BLOCK_TAGS = set('div section article aside details summary figure figcaption table thead tbody tfoot tr td th ul ol li dl dt dd '
                  'p h1 h2 h3 h4 h5 h6 pre blockquote nav header footer main form fieldset hr svg canvas iframe video audio '
                  'style script template'.split())
@@ -106,7 +107,15 @@ def parse_blocks(lines, ctx):
         if m:
             t, at = split_trailing_attrs(m.group(2)); lv = len(m.group(1))
             out.append('<h%d%s>%s</h%d>' % (lv, attr_html(at), inline(t), lv)); i += 1; continue
-        # @model / @zlewka
+        # @opis — opis wizualizacji/obrazu: jawny w md, w HTML ukryty komentarz (dla czytników, eksportu, LLM)
+        if st.startswith('@opis '):
+            out.append('<!-- OPIS: %s -->' % st[6:].strip().replace('--', '–'))
+            i += 1; continue
+        # @model / @zlewka (zaraz po nich obowiązkowo linia @opis)
+        if st.startswith('@model ') or st.startswith('@zlewka '):
+            nxt = lines[i + 1].strip() if i + 1 < n else ''
+            if not nxt.startswith('@opis '):
+                BRAK_OPISU.append('%s: %s' % (ctx.meta.get('kod', '?'), st[:60]))
         if st.startswith('@model '):
             parts = [p.strip() for p in st[7:].split(' | ')]
             vid = parts[0]; t = parts[1] if len(parts) > 1 else vid; d = parts[2] if len(parts) > 2 else ''
@@ -127,7 +136,7 @@ def parse_blocks(lines, ctx):
             out.append('<div%s>%s</div>' % (attr_html(at), inline(t))); i += 1; continue
         # akapit / lista / tabela / surowy HTML — do pustej linii
         j = i
-        while j < n and lines[j].strip() and not lines[j].strip().startswith(':::') and not (j > i and re.match(r'(#{2,6} |@model |@zlewka |\$\$ )', lines[j].strip())):
+        while j < n and lines[j].strip() and not lines[j].strip().startswith(':::') and not (j > i and re.match(r'(#{2,6} |@model |@zlewka |@opis |\$\$ )', lines[j].strip())):
             j += 1
         blk = [x.rstrip() for x in lines[i:j]]; i = j
         out.append(leaf(blk, ctx))
@@ -390,3 +399,5 @@ if __name__ == '__main__':
         if f.endswith('.md'):
             allm.append((f[:-3], front(open(os.path.join(ROOT, 'md', f), encoding='utf-8').read())[0]))
     open(os.path.join(ROOT, 'dist', 'index.html'), 'w', encoding='utf-8').write(index(allm))
+    if BRAK_OPISU:
+        print('UWAGA: %d wizualizacji bez @opis (np. %s)' % (len(BRAK_OPISU), BRAK_OPISU[0]))

@@ -78,6 +78,7 @@ python3 narzedzia/md2html.py md/N06_systematyka.md    # jedna
 - Kanon md (CHE.core.md, 2 MB) jest w archiwum. Dla nowej lekcji szukać w nim tylko fragmentów z jej kodem (np. „N06”) — nie czytać całości.
 
 ## 7. Następne kroki
+0. (2026-10-09) Nowa zasada: każda wizualizacja ma linię `@opis` w md (→ ukryty komentarz w HTML). Brak opisu w 113 istniejących `@model/@zlewka` (N01–N05, FIZ01) — uzupełnić. Eksport dla Perplexity: `python3 eksport/zbierz_lekcje.py`.
 1. N06 Systematyka nieorganiczna (most N01–N05) albo fundamenty F00–F09.
 2. Testy N01–N03 → `::: test`; tryb Noc w `lekcja.css`.
 3. Kolejne zlewki i modele w `rozszerzenia.js` dla nowych lekcji.
