@@ -171,6 +171,9 @@ Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** �
 
 **Czynniki wpływające na intensywność fotosyntezy:** natężenie światła, stężenie CO₂, temperatura, dostęp do wody. Zbyt wysoka temperatura obniża intensywność procesu.
 
+@viz fotosynteza-oddychanie | Fotosynteza i oddychanie w jednej komórce liścia | przesuń suwak światła i obserwuj wymianę gazów
+@opis Owalna komórka liścia; w środku zielony chloroplast z tylakoidami i czerwonawe mitochondrium z pofałdowaną błoną. Z lewej słońce, którego jasność zmienia suwak. Strzałki: glukoza płynie z chloroplastu do mitochondrium, tlen z chloroplastu do mitochondrium; po prawej strzałki wymiany gazów z otoczeniem, których grubość zależy od bilansu. W ciemności i przy słabym świetle liść pobiera O₂ i oddaje CO₂, w punkcie równowagi wymiana wynosi około zera, przy silnym świetle liść pobiera CO₂ i oddaje O₂. Wniosek: oddychanie zachodzi stale, a fotosynteza tylko przy świetle — to, czy liść wydziela tlen, zależy od przewagi jednego procesu nad drugim.
+
 ## 7 | Oddychanie komórkowe i fermentacja [[basic:E8]] {#oddychanie}
 
 ::: regula
@@ -182,6 +185,9 @@ $$ C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP)
 **Fermentacja** — beztlenowy rozkład glukozy; uwalnia **znacznie mniej** energii niż oddychanie tlenowe.
 - **alkoholowa** (drożdże): glukoza → alkohol etylowy + dwutlenek węgla + energia — pieczenie chleba (CO₂ spulchnia ciasto), produkcja wina;
 - **mlekowa** (bakterie mlekowe, a także mięśnie człowieka przy wysiłku): glukoza → kwas mlekowy + energia — jogurt, kefir, kiszonki.
+
+@viz energia-glukozy | Ile energii z jednej cząsteczki glukozy? | oddychanie tlenowe a fermentacja
+@opis Trzy poziome słupki: oddychanie tlenowe (czerwony, długi — ok. 38 ATP), fermentacja alkoholowa (brązowy, krótki — ok. 2 ATP) i fermentacja mlekowa (niebieski, krótki — ok. 2 ATP); wartości szkolne, orientacyjne. Przyciski wybierają proces, a pod spodem pojawiają się warunki (z tlenem / bez tlenu), miejsce w komórce, produkty i przykłady organizmów. Wniosek: oddychanie tlenowe rozkłada glukozę do końca (CO₂ i H₂O) i daje wielokrotnie więcej energii niż fermentacja, w której część energii zostaje w alkoholu lub kwasie mlekowym.
 
 | Cecha | Fotosynteza | Oddychanie tlenowe |
 |---|---|---|
@@ -241,6 +247,9 @@ BHP: zwykłe zasady pracy ze szkłem; woda wapienna drażni oczy — okulary.
 - **Obserwacja** to opis tego, co widać („pęcherzyki gazu”, „woda wapienna mętnieje”); **wniosek** — co z tego wynika („wydziela się CO₂”).
 - Wynik jest wiarygodniejszy przy **powtórzeniach** i większej liczbie organizmów.
 :::
+
+@viz proba-kontrolna | Zaplanuj doświadczenie: próba badawcza i kontrolna | zmieniaj warunki w obu próbach
+@opis Tabela z dwiema kolumnami — próba badawcza i próba kontrolna — i wierszami czynników (dla moczarki: światło, temperatura wody, NaHCO₃, gałązka; dla drożdży: drożdże, cukier, temperatura, objętość). Kliknięcie przełącza wartość czynnika w danej próbie; wiersze, w których próby się różnią, są podświetlone na pomarańczowo. Pod tabelą ocena planu: próby identyczne, różnica w więcej niż jednym czynniku, różnica w złym czynniku albo dobry plan z nazwaną zmienną niezależną i zależną. Wniosek: próby muszą różnić się tylko badanym czynnikiem, a wszystkie inne warunki mają być jednakowe.
 
 ## 10 | Klinika błędów {#klinika}
 

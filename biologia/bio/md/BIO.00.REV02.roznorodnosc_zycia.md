@@ -398,6 +398,9 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 | Rozwój osobnika | prosty | **złożony** (kijanka) | prosty | prosty | prosty |
 | Opieka nad potomstwem | zwykle brak | zwykle brak | zwykle brak | **tak** | **tak** (karmienie mlekiem) |
 
+@viz klucz-kregowce | Klucz dwudzielny: do której gromady należy zwierzę? | odpowiadaj tak / nie
+@opis Klucz w postaci kolejnych pytań tak/nie: czy ma pióra (ptaki), czy ma sierść i karmi mlekiem (ssaki), czy przez całe życie oddycha skrzelami i ma płetwy (ryby), czy skóra jest naga i wilgotna (płazy), czy ma suche rogowe łuski (gady). Udzielone odpowiedzi tworzą numerowaną ścieżkę, a na końcu pojawia się nazwa gromady. Przycisk „rozpoznaj zwierzę” losuje przykład (np. delfin, nietoperz, pingwin, konik morski, żółw) i sprawdza wynik z wyjaśnieniem pułapki. Wniosek: gromadę kręgowców rozpoznajemy po cechach budowy (pokrycie ciała, sposób oddychania, karmienie młodych), a nie po wyglądzie czy środowisku życia.
+
 ::: karta understand | Wpływ człowieka na różnorodność kręgowców
 Osuszanie terenów podmokłych i zanieczyszczenie wód (płazy, ryby), przegradzanie rzek (ryby wędrowne), ruch drogowy (płazy w czasie wędrówek), wycinanie starych drzew i dziuplaków (ptaki, nietoperze), kłusownictwo i handel zwierzętami. Ochrona: rezerwaty, przejścia dla zwierząt, ochrona gatunkowa, budki lęgowe.
 :::

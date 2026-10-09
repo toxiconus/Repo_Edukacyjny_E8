@@ -553,3 +553,84 @@ mount:function(el){var id='bw'+(++UID),mode='info',sel=null,removed={},sg=H('div
    out.innerHTML=h;seg(sg,[['info','co je i kto go je'],['usun','usuń gatunek'],['reset','przywróć sieć']],mode,function(m){if(m==='reset'){removed={};sel=null}else{mode=m;sel=null}draw()})}
   draw()}});
 })();
+(function(){
+var BIO=window.BIO;if(!BIO||!BIO.define||BIO.REV_VIZ)return;BIO.REV_VIZ=1;
+var S=BIO.S,svg=BIO.svg,T=BIO.T,btn=BIO.btn;
+function H(t,c,h,k){var e=BIO.H(t,c,h,k);if(c==='bv-info'){var w=BIO.H('div');e.appendChild(w);Object.defineProperty(e,'innerHTML',{set:function(v){w.innerHTML=String(v).replace(/<(\/?)b(\s|>)/g,'<$1strong$2')},get:function(){return w.innerHTML}})}return e}  // tekst w środku jednego div — <b> nie łamie wiersza
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=btn(it[1],function(){cb(it[0])});if(it[0]===cur)b.classList.add('on');b.setAttribute('aria-pressed',String(it[0]===cur));box.appendChild(b)})}
+
+/* ---------------- REV01/REV02: fotosynteza ↔ oddychanie, energia z glukozy, próba kontrolna, klucz do kręgowców (2026-10-09) ---------------- */
+BIO.define('fotosynteza-oddychanie',{opis:'Komórka liścia: chloroplast (fotosynteza) i mitochondrium (oddychanie) z wymianą substancji; suwak światła → bilans gazów liścia (oddychanie stale, fotosynteza zależna od światła)',
+mount:function(el,o){var tools=H('div','bv-tools'),rng=document.createElement('input');rng.type='range';rng.min=0;rng.max=100;rng.value=o.swiatlo||70;rng.setAttribute('aria-label','Natężenie światła');rng.style.flex='1 1 160px';
+  tools.appendChild(H('span','bv-score','światło:'));tools.appendChild(rng);var lab=H('b',null,'');tools.appendChild(lab);
+  var pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  function strz(g,x1,y1,x2,y2,c,w){g.appendChild(S('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:c,'stroke-width':w||2,'stroke-linecap':'round','marker-end':'url(#fo-a'+c.replace('#','')+')'}))}
+  function draw(){var L=+rng.value,F=Math.min(1,L/60),R=.25,net=F-R;lab.textContent=L===0?'noc (ciemność)':L<20?'słabe':L<60?'średnie':'silne';
+   var s=svg(420,230,'Komórka liścia: chloroplast i mitochondrium, wymiana CO₂, O₂, wody i glukozy'),d=S('defs');
+   ['2e7d32','c0392b','1565c0','8d6e00','5d6b7a'].forEach(function(c){var m=S('marker',{id:'fo-a'+c,viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto'});m.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#'+c}));d.appendChild(m)});s.appendChild(d);
+   s.appendChild(S('rect',{x:70,y:30,width:280,height:170,rx:26,fill:'#eef7e9',stroke:'#7aa66a','stroke-width':3}));s.appendChild(T(210,20,'komórka liścia',{s:11,f:'var(--viz-mut)'}));
+   var sun=S('g',{opacity:.25+.75*L/100});sun.appendChild(S('circle',{cx:32,cy:40,r:16,fill:'#f6c343'}));for(var i=0;i<8;i++){var a=i*Math.PI/4;sun.appendChild(S('line',{x1:32+20*Math.cos(a),y1:40+20*Math.sin(a),x2:32+27*Math.cos(a),y2:40+27*Math.sin(a),stroke:'#f6c343','stroke-width':2.5}))}s.appendChild(sun);
+   var ch=S('g',{'data-k':'ch'});ch.appendChild(S('ellipse',{cx:150,cy:115,rx:52,ry:30,fill:'#5fae4e',stroke:'#2e7d32','stroke-width':2,opacity:.35+.65*F}));for(var j=0;j<4;j++)ch.appendChild(S('rect',{x:116+j*18,y:104,width:12,height:22,rx:3,fill:'#2e7d32',opacity:.8}));ch.appendChild(T(150,155,'chloroplast',{s:11}));s.appendChild(ch);
+   var mi=S('g',{'data-k':'mi'});mi.appendChild(S('ellipse',{cx:290,cy:115,rx:46,ry:26,fill:'#f2b8a0',stroke:'#c0392b','stroke-width':2}));mi.appendChild(S('path',{d:'M254 115 q8 -16 16 0 t16 0 t16 0 t16 0 t8 0',fill:'none',stroke:'#c0392b','stroke-width':1.6}));mi.appendChild(T(290,152,'mitochondrium',{s:11}));s.appendChild(mi);
+   if(L>0){strz(s,32,70,108,100,'#8d6e00',2);}
+   if(F>0){strz(s,200,105,240,105,'#8d6e00',2.5);s.appendChild(T(220,96,'glukoza',{s:9.5,f:'#8d6e00'}))}
+   if(F>0){strz(s,202,128,240,128,'#1565c0',1.6);s.appendChild(T(221,140,'O₂',{s:9.5,f:'#1565c0'}))}
+   
+   // wymiana z otoczeniem: wypadkowa
+   var gO=net>0?'O₂':'CO₂',gI=net>0?'CO₂':'O₂',k=Math.min(1,Math.abs(net)/(1-R)),w=1.5+4*k;
+   if(Math.abs(net)>.02){strz(s,395,60,355,90,net>0?'#5d6b7a':'#1565c0',w);s.appendChild(T(400,52,gI+' do liścia',{s:10,a:'end',f:'var(--viz-mut)'}));strz(s,355,150,395,180,net>0?'#1565c0':'#5d6b7a',w);s.appendChild(T(410,196,gO+' z liścia',{s:10,a:'end',f:'var(--viz-mut)'}))}
+   else s.appendChild(T(395,115,'bilans ≈ 0',{s:11,a:'end',f:'var(--viz-mut)'}));
+   s.appendChild(T(150,62,'fotosynteza: '+Math.round(F*100)+'%',{s:10,f:'#2e7d32'}));s.appendChild(T(290,72,'oddychanie: stałe',{s:10,f:'#c0392b'}));
+   clr(pic);pic.appendChild(s);
+   BIO.fx.info(pic,out,{ch:['Chloroplast — fotosynteza',' 6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂. Intensywność rośnie ze światłem (do pewnej granicy); w ciemności fotosynteza nie zachodzi.'],
+     mi:['Mitochondrium — oddychanie tlenowe',' C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP). Zachodzi stale, w dzień i w nocy.']});
+   out.innerHTML=L===0?'<b>Noc:</b> fotosynteza nie zachodzi, oddychanie trwa — liść <b>pobiera O₂ i oddaje CO₂</b>.':net<-.02?'<b>Przewaga oddychania:</b> fotosynteza słabsza niż oddychanie — liść nadal netto <b>oddaje CO₂</b>.':net<=.02?'<b>Punkt równowagi:</b> ile O₂ powstaje w fotosyntezie, tyle zużywa oddychanie — wymiana gazów z otoczeniem ≈ 0.':'<b>Przewaga fotosyntezy:</b> fotosynteza intensywniejsza niż oddychanie — liść netto <b>pobiera CO₂ i oddaje O₂</b>. Oddychanie nadal trwa (część O₂ zużywa mitochondrium).'}
+  rng.oninput=draw;draw()}});
+
+BIO.define('energia-glukozy',{opis:'Oddychanie tlenowe vs fermentacja alkoholowa vs mlekowa: warunki, miejsce, produkty i ilość ATP z jednej cząsteczki glukozy (słupki)',
+mount:function(el,o){var P=[['tl','oddychanie tlenowe','z tlenem','cytoplazma + mitochondria','CO₂ + H₂O',38,'#c0392b','prawie wszystkie organizmy'],
+   ['al','fermentacja alkoholowa','bez tlenu','cytoplazma','alkohol etylowy + CO₂',2,'#8d6e00','drożdże — chleb (CO₂ spulchnia ciasto), wino'],
+   ['ml','fermentacja mlekowa','bez tlenu','cytoplazma','kwas mlekowy',2,'#1565c0','bakterie mlekowe (jogurt, kiszonki); mięśnie przy intensywnym wysiłku']],cur=o.start||'tl';
+  var sg=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(pic);el.appendChild(out);
+  function draw(){seg(sg,P.map(function(p){return[p[0],p[1]]}),cur,function(k){cur=k;draw()});
+   var s=svg(420,170,'Ilość ATP z jednej cząsteczki glukozy w oddychaniu tlenowym i fermentacjach');
+   P.forEach(function(p,i){var y=26+i*48,w=p[5]/38*200,on=p[0]===cur;s.appendChild(T(6,y+12,p[1],{s:10.5,a:'start',w:on?800:600}));
+    s.appendChild(S('rect',{x:140,y:y,width:Math.max(6,w),height:24,rx:5,fill:p[6],opacity:on?1:.45}));s.appendChild(T(146+Math.max(6,w),y+12,'ok. '+p[5]+' ATP',{s:11,a:'start',f:p[6]}))});
+   s.appendChild(T(210,164,'ATP z 1 cząsteczki glukozy (wartości szkolne, orientacyjne)',{s:9.5,f:'var(--viz-mut)'}));clr(pic);pic.appendChild(s);
+   var p=P.filter(function(x){return x[0]===cur})[0];
+   out.innerHTML='<b>'+p[1][0].toUpperCase()+p[1].slice(1)+'</b> — '+p[2]+', '+p[3]+'.<br>Glukoza → <b>'+p[4]+'</b> + energia (ATP). Kto: '+p[7]+'.'+(cur==='tl'?'<br>Glukoza rozkładana do końca (do CO₂ i H₂O) — energii jest <b>wielokrotnie więcej</b> niż w fermentacji.':'<br>Glukoza rozkładana <b>niecałkowicie</b> — w produkcie (alkohol, kwas mlekowy) zostaje dużo energii, dlatego ATP jest niewiele.')}
+  draw()}});
+
+BIO.define('proba-kontrolna',{opis:'Planowanie doświadczenia: próba badawcza i kontrolna różnią się tylko jednym czynnikiem; przełączniki warunków, ocena planu (zmienna niezależna, zależna, stałe)',
+mount:function(el,o){var D={mocz:{n:'Moczarka a światło',bad:'światło',zal:'liczba pęcherzyków O₂ w 5 min',cz:[['swiatlo','światło',['silne','słabe'],'światło'],['temp','temperatura wody',['20 °C','30 °C']],['nahco3','NaHCO₃ w wodzie',['tak','nie']],['galaz','gałązka moczarki',['jednakowa','dłuższa']]]},
+   drozdze:{n:'Drożdże a CO₂',bad:'drożdże',zal:'zmętnienie wody wapiennej',cz:[['drozdze','drożdże',['są','brak'],'drożdże'],['cukier','roztwór cukru',['tak','nie']],['temp','temperatura',['ok. 35 °C','ok. 5 °C']],['objetosc','objętość roztworu',['200 cm³','100 cm³']]]}};
+  var cur=o.start||'mocz',A={},B={};function reset(){var d=D[cur];A={};B={};d.cz.forEach(function(c){A[c[0]]=0;B[c[0]]=c[3]?1:0})}reset();
+  var sg=H('div','bv-tools'),tab=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(tab);el.appendChild(out);
+  function draw(){var d=D[cur];seg(sg,Object.keys(D).map(function(k){return[k,D[k].n]}),cur,function(k){cur=k;reset();draw()});
+   var h='<table style="width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px"><tr><th align="left" style="padding:4px">czynnik</th><th style="padding:4px">próba badawcza</th><th style="padding:4px">próba kontrolna</th></tr>';
+   d.cz.forEach(function(c){var r=A[c[0]]!==B[c[0]];h+='<tr style="background:'+(r?'#fff4e5':'transparent')+'"><td style="padding:4px">'+c[1]+(c[3]?' <small>(badany)</small>':'')+'</td>'+['A','B'].map(function(s){var v=(s==='A'?A:B)[c[0]];return '<td align="center" style="padding:4px"><button type="button" class="bv-btn'+(r?' on':'')+'" data-s="'+s+'" data-c="'+c[0]+'">'+c[2][v]+'</button></td>'}).join('')+'</tr>'});
+   tab.innerHTML=h+'</table>';[].forEach.call(tab.querySelectorAll('button'),function(b){b.onclick=function(){var X=b.dataset.s==='A'?A:B;X[b.dataset.c]=1-X[b.dataset.c];draw()}});
+   var rozne=d.cz.filter(function(c){return A[c[0]]!==B[c[0]]}),badany=d.cz.filter(function(c){return c[3]})[0];
+   out.innerHTML=!rozne.length?'<b>Próby są identyczne</b> — nie da się niczego wykazać. Zmień w jednej próbie badany czynnik: <b>'+badany[1]+'</b>.':
+    rozne.length>1?'<b>Błąd planu:</b> próby różnią się '+rozne.length+' czynnikami ('+rozne.map(function(c){return c[1]}).join(', ')+'). Nie wiadomo, który spowodował wynik — zostaw różnicę tylko w czynniku <b>'+badany[1]+'</b>.':
+    rozne[0][3]?'<b>Dobry plan.</b> Zmienna niezależna (badana): <b>'+d.bad+'</b>. Zmienna zależna (mierzona): <b>'+d.zal+'</b>. Pozostałe warunki stałe — tylko wtedy wynik można przypisać badanemu czynnikowi. Wiarygodność zwiększą <b>powtórzenia</b>.':
+    '<b>Błąd planu:</b> próby różnią się czynnikiem „'+rozne[0][1]+'”, a badamy <b>'+badany[1]+'</b>. Zmieniaj tylko badany czynnik.'}
+  draw()}});
+
+BIO.define('klucz-kregowce',{opis:'Klucz dwudzielny do gromad kręgowców (ryby, płazy, gady, ptaki, ssaki): pytania tak/nie, ścieżka; tryb „rozpoznaj zwierzę” z przykładami',
+mount:function(el,o){var K={q1:['Czy ciało pokrywają pióra?','PTAKI','q2'],q2:['Czy ma sierść i karmi młode mlekiem?','SSAKI','q3'],q3:['Czy przez całe życie oddycha skrzelami i ma płetwy?','RYBY','q4'],q4:['Czy skóra jest naga, wilgotna, śluzowata?','PŁAZY','q5'],q5:['Czy skórę pokrywają suche, rogowe łuski lub tarczki?','GADY','?']};
+  var Z=[['wróbel','PTAKI',[1]],['pingwin','PTAKI',[1]],['nietoperz','SSAKI',[0,1]],['delfin','SSAKI',[0,1]],['wieloryb','SSAKI',[0,1]],['karp','RYBY',[0,0,1]],['konik morski','RYBY',[0,0,1]],['żaba','PŁAZY',[0,0,0,1]],['traszka','PŁAZY',[0,0,0,1]],['żółw','GADY',[0,0,0,0,1]],['jaszczurka','GADY',[0,0,0,0,1]],['wąż','GADY',[0,0,0,0,1]]];
+  var path=[],zw=null,sg=H('div','bv-tools'),box=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(box);el.appendChild(out);
+  function nowy(){zw=Z[Math.floor(Math.random()*Z.length)];path=[];draw()}
+  function draw(){clr(sg);sg.appendChild(btn('▶ rozpoznaj zwierzę',nowy));sg.appendChild(btn('od początku',function(){zw=null;path=[];draw()}));
+   var h='<div style="font-size:14px">'+(zw?'Zwierzę: <b style="font-size:17px">'+zw[0]+'</b>':'Przejdź klucz dla wybranego zwierzęcia albo kliknij „rozpoznaj zwierzę”.')+'</div><ol style="margin:8px 0;padding-left:22px">';
+   var k='q1',end=null;path.forEach(function(a,i){var q=K[k];h+='<li>'+q[0]+' — <b>'+(a?'tak':'nie')+'</b></li>';if(a){end=q[1]}else k=q[2]});
+   h+='</ol>';if(!end&&K[k]){h+='<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><b>'+(path.length+1)+'. '+K[k][0]+'</b></div>'}
+   box.innerHTML=h;if(!end&&K[k]){var r=H('div','bv-tools');r.appendChild(btn('tak',function(){path.push(1);draw()}));r.appendChild(btn('nie',function(){path.push(0);draw()}));box.appendChild(r)}
+   if(end){var good=!zw||zw[1]===end,wz=zw?zw[2]:null,ok=!wz||wz.join()===path.join();
+    out.innerHTML='Wynik klucza: <b>'+end+'</b>.'+(zw?(good&&ok?' <b style="color:#2e7d32">Dobrze!</b>':' <b style="color:#c0392b">Sprawdź jeszcze raz</b> — '+zw[0]+' to '+{PTAKI:'ptak',SSAKI:'ssak',RYBY:'ryba','PŁAZY':'płaz',GADY:'gad'}[zw[1]]+'.'):'')+
+     (zw&&/delfin|wieloryb/.test(zw[0])?' Delfin i wieloryb mają płetwy, ale oddychają <b>płucami</b> i karmią młode mlekiem — to ssaki.':zw&&zw[0]==='nietoperz'?' Nietoperz lata, ale ma sierść, nie pióra — to ssak.':zw&&zw[0]==='pingwin'?' Pingwin nie lata, ale ma pióra — to ptak.':zw&&zw[0]==='konik morski'?' Konik morski nie przypomina ryby, ale ma skrzela i płetwy — to ryba.':'')}
+   else out.innerHTML='Klucz dwudzielny: na każde pytanie odpowiadasz <b>tak</b> albo <b>nie</b>; kolejność pytań prowadzi od cech najbardziej wyróżniających (pióra, sierść).'}
+  draw()}});
+})();

@@ -208,6 +208,9 @@ Przykład: *woda z piaskiem* → mieszanina niejednorodna → dwie fazy, piasek 
 | O₂, O₃ | substancje proste | jeden pierwiastek; dwie różne substancje |
 | woda z lodem | substancja czysta | jedna substancja w dwóch fazach |
 
+@model f02-czastki-v01 | Model cząsteczkowy: substancja czysta czy mieszanina? | policz rodzaje drobin, atomów i fazy, potem sklasyfikuj
+@opis Prostokątne naczynie z kolorowymi kółkami — atomami (legenda pod spodem: O czerwony, H biały, N niebieski, Na fioletowy, Cl zielony, Fe szary, Ar pomarańczowy, He żółty, C ciemnoszary). Osiem próbek po kolei: żelazo (atomy Fe ułożone regularnie), tlen (pary O₂), woda (H₂O), woda z lodem (górna faza z uporządkowanymi H₂O, dolna z chaotycznymi), powietrze (N₂, O₂, Ar), roztwór soli (H₂O z jonami Na⁺ i Cl⁻), woda z olejem (dwie warstwy oddzielone przerywaną linią), hel z argonem. Uczeń wybiera: pierwiastek, związek, mieszanina jednorodna lub niejednorodna; odpowiedź jest oceniana z uzasadnieniem i licznikiem. Wniosek: o czystości decyduje liczba rodzajów drobin, o pierwiastku lub związku — liczba rodzajów atomów w drobinie, o jednorodności — liczba faz; woda z lodem to dwie fazy, ale substancja czysta.
+
 ## 6 | Symbol i wzór — pierwszy kontakt [[basic:E8]] {#symbol-wzor}
 
 **Symbol pierwiastka** to jedna lub dwie litery: pierwsza wielka, druga mała — H, He, C, Cl, Na, Fe, Au. **Wzór chemiczny** zapisuje skład substancji symbolami i indeksami.

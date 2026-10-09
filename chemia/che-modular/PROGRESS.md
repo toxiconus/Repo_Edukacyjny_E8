@@ -57,3 +57,4 @@
 - 2026-10-09 16:35 — Odchudzanie per lekcja zakończone: 15/15 profili (N05, R03, REV01, N01_powietrze, FIZ01, F06, N01_tlenki dziś po południu); lekcje 1,19–1,45 MB (było ~3 MB), test 15/15. F05 na atomBohr (powłoki + lupa), atomSVG usunięty.
 - 2026-10-09 17:30 wizualizacje: probówka/parownica w kartach doświadczeń, odparowanie-v01 (F03), R03 krzywe rozpuszczalności + stężenie procentowe, testTube z brzegiem; test 15/15 (1280, 390 px).
 - 2026-10-09 18:15 F04: trening f04-nuklid-v01 (p, n, e z zapisu nuklidu); kontrola molecule3d i tabel rozpuszczalności — bez błędów.
+- 2026-10-09 18:50 wizualizacje: F02 f02-czastki-v01; BIO REV01 fotosynteza-oddychanie, energia-glukozy, proba-kontrolna; REV02 klucz-kregowce.
