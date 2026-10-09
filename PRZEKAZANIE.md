@@ -1,4 +1,4 @@
-# PRZEKAZANIE — całe repo · 2026-10-09 (stan 12:30)
+# PRZEKAZANIE — całe repo · 2026-10-09 (stan 12:40)
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
@@ -22,7 +22,16 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - Dane niepewne oznaczać „do weryfikacji”.
 - (2026-10-09) Każda wizualizacja/obraz ma opis `@opis` w md → ukryty komentarz w HTML; build egzekwuje (`narzedzia/opis_wizualizacji.py`). Eksport do Perplexity: `python3 eksport/zbierz_lekcje.py`.
 
-## Sesja 2026-10-09 (08:25–09:15) — paczka W23, grafiki L001, audyty BIO, kolizje CHE — STAN AKTUALNY
+## Sesja 2026-10-09 (12:28–12:40) — wyniki paczki braków wgrane — STAN AKTUALNY
+- **Wgrane (commity f20b55d, 8ed4b0f):** 5 paczek BRAKI (L004, L005–L007, L008–L010, GENETYKA; L004 przyszła 3× identycznie) + 2 paczki Grok. Pliki bazowe paczek nie zmieniły się w repo od 504ac8d, więc kopia nowszej wersji = wynik scalenia trójstronnego. Pliki identyczne z repo pominięte (polski G/S, angielski, olimpiada, audyty Perplexity, F18–F21, O08+O11+O12, CHE_SPIS — paczki ich nie zmieniły, więc A3/B część/C/D/E z `ZADANIA.md` dalej otwarte).
+- **BIO:** L004–L010, L013, L016A, L018–L021 pogłębione (GPT-6, ostatnia paczka = nadzbiór poprzednich). L013: replikacja przed mitozą i przed mejozą I, nie między I i II. L004: zachowany stary blok „AUDYT W1”.
+- **CHE nowe (Grok W23/W24):** N07–N08, R01/R02/R06, J07–J12, O09/O10/O14/O21/O24/O25, E01–E06, K01–K11 (K01 W24 ~22 KB, reszta krótsze W23), A01. Wartości Ka/Ksp/E°/Vₘ u Groka oznaczone jako orientacyjne — **bez niezależnej recenzji (W1 do zrobienia)**.
+- **J00–J06 — kolizja:** Grok napisał od nowa i nie zachował materiału W1–W22 (wbrew swojemu RAPORT). Scalenie: lekcja Groka jako treść główna + sekcja „MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22)” bez skracania + notka „SCALENIE — Claude”. Do zrobienia: sprawdzić, czy uwagi W22 są w treści głównej, potem odchudzić.
+- **Spis CHE:** 113 kodów, ○○○ (brak materiału) 18 → 11: zostały A02–A06, P01–P06; RT00–RT10 (A4) też nie ruszone.
+- **Testy:** `narzedzia/sprawdz.js` z CLAUDE.md nie istnieje (jest tylko `chemia/archiwum/che_v0_59/narzedzia/sprawdz.js`) — poprawić odwołanie. BIO: `md2html_bio.py` + `sprawdz_bio.js` OK.
+- **Następne kroki:** (a) W1 nowych lekcji chemii Groka; (b) przegląd J00–J06 po scaleniu; (c) A02–A06, P01–P06, RT00–RT10; (d) angielski moduły, polski W2, olimpiada OLI.* (z `ZADANIA.md` — LLM ich nie zrobił); (e) dług `@opis` (42).
+
+## Sesja 2026-10-09 (08:25–09:15) — paczka W23, grafiki L001, audyty BIO, kolizje CHE
 - **Paczka W23 (GPT-6) scalona trójstronnie** pod nazwy `PRZ.NN.KOD` (119 plików, 13 nowych audytów); raport i odrzucenia: `paczki/W23_2026-10-09/AUDYT_SCALENIA_Claude.md`. Zasada: paczek z zewnątrz nigdy nie kopiować na repo — scalać (`git merge-file` z bazą z historii), bo budowane są na starszym stanie.
 - **Pisownia „nie” (RJP od 1.01.2026):** z przymiotnikami, imiesłowami przymiotnikowymi i przysłówkami odprzymiotnikowymi zawsze łącznie, także przy przeciwstawieniu; CKE 2026–2030 uznaje też zapis dawny. Klucze w G06/G07 według tego.
 - **BIO:** grafiki `komorka-nakladki` i `mikroskop-model` (bio-viz, L001); zalecenia audytów W15/W16/W18 wprowadzone do treści L014–L044 (L018 najszerzej).
