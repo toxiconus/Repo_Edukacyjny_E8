@@ -29,7 +29,7 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - **J00–J06 — kolizja:** Grok napisał od nowa i nie zachował materiału W1–W22 (wbrew swojemu RAPORT). Scalenie: lekcja Groka jako treść główna + sekcja „MATERIAŁ ŹRÓDŁOWY I HISTORIA AUDYTÓW (W1–W22)” bez skracania + notka „SCALENIE — Claude”. Do zrobienia: sprawdzić, czy uwagi W22 są w treści głównej, potem odchudzić.
 - **Spis CHE:** 113 kodów, ○○○ (brak materiału) 18 → 11: zostały A02–A06, P01–P06; RT00–RT10 (A4) też nie ruszone.
 - **Testy:** odwołanie w CLAUDE.md poprawione (testy: `che.py test`, `sprawdz_bio.js`); chemia 15/15 OK. BIO: `md2html_bio.py` + `sprawdz_bio.js` OK.
-- **Następne kroki:** (a) W1 nowych lekcji chemii Groka; (b) przegląd J00–J06 po scaleniu; (c) A02–A06, P01–P06, RT00–RT10; (d) angielski moduły, polski W2, olimpiada OLI.* (z `ZADANIA.md` — LLM ich nie zrobił); (e) dług `@opis` (42).
+- **Następne kroki:** (a) W1 nowych lekcji chemii Groka; (b) przegląd J00–J06 po scaleniu; (c) A02–A06, P01–P06, RT00–RT10; (d) angielski moduły, polski W2, olimpiada OLI.* (z `ZADANIA.md` — LLM ich nie zrobił); (e) ~~dług `@opis`~~ — wyzerowany 12:55 (BIO L010, REV01, CHE N05, FIZ01; `opis_dlug.json` pusty). Zrobione też: odwołania testów w CLAUDE.md, `stan:` „W1 nieprzeprowadzony” w 42 lekcjach Groka.
 
 ## Sesja 2026-10-09 (08:25–09:15) — paczka W23, grafiki L001, audyty BIO, kolizje CHE
 - **Paczka W23 (GPT-6) scalona trójstronnie** pod nazwy `PRZ.NN.KOD` (119 plików, 13 nowych audytów); raport i odrzucenia: `paczki/W23_2026-10-09/AUDYT_SCALENIA_Claude.md`. Zasada: paczek z zewnątrz nigdy nie kopiować na repo — scalać (`git merge-file` z bazą z historii), bo budowane są na starszym stanie.
