@@ -3,9 +3,9 @@ kod: PL.D04
 przedmiot: język polski
 blok: D
 numer: 4
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 wymaga: PL.D01–D03
 ---
 
@@ -163,3 +163,66 @@ Przeczytaj:
 
 Oceń swoją odpowiedź w czterech krokach: **trafność** (czy odpowiada na pytanie?), **kompletność** (czy uwzględnia wszystkie elementy?), **podstawa** (czy wynika z tekstu?), **forma** (czy spełnia ograniczenia polecenia?). Jeśli któryś krok wypada słabo, popraw tylko ten element, zamiast przepisywać wszystko od początku.
 
+
+
+## 13. Macierz polecenia — jak nie zgubić żadnego wymagania
+
+Zanim odpowiesz, przepisz polecenie na krótką listę obowiązków. Zaznacz:
+- **operację** — co zrobić (wskazać, wyjaśnić, porównać, ocenić);
+- **przedmiot** — czego dotyczy odpowiedź;
+- **liczbę** — ile informacji/przykładów podać;
+- **źródło** — z którego tekstu, akapitu, lektury lub tabeli skorzystać;
+- **formę** — cytat, własne słowa, jedno zdanie, tabela, określona liczba argumentów;
+- **uzasadnienie** — czy trzeba podać dowód i wyjaśnić jego związek z odpowiedzią.
+
+### Przykład rozbioru polecenia
+
+„Na podstawie drugiego akapitu podaj dwie przyczyny odroczenia decyzji i wyjaśnij, która z nich miała większe znaczenie”.
+
+Lista kontrolna: (1) korzystam wyłącznie z drugiego akapitu; (2) podaję dwie przyczyny; (3) wybieram jedną z nich; (4) wyjaśniam jej znaczenie; (5) nie zastępuję wyjaśnienia samym powtórzeniem przyczyny.
+
+## 14. Minimalna, pełna i nadmierna odpowiedź
+
+**Polecenie:** „Wyjaśnij, dlaczego organizatorzy przełożyli wydarzenie”. Tekst informuje, że prognozowano silne opady, a część atrakcji miała odbywać się na zewnątrz.
+
+- **Minimalna, ale niepełna:** „Z powodu pogody”. Nie wskazuje, dlaczego pogoda miała znaczenie.
+- **Pełna:** „Organizatorzy przełożyli wydarzenie, ponieważ prognozowano silne opady, które mogły utrudnić przeprowadzenie atrakcji zaplanowanych na zewnątrz”.
+- **Nadmierna i ryzykowna:** „Organizatorzy przełożyli wydarzenie, bo na pewno doszłoby do wypadków i wszyscy uczestnicy by zmokli”. Tekst nie potwierdza takich pewników.
+
+Pełna odpowiedź nie jest odpowiedzią najdłuższą. Jest odpowiedzią, w której każdy element wykonuje potrzebną pracę.
+
+## 15. Jak ocenić odpowiedź otwartą — treningowa lista kontrolna
+
+Każdy punkt oceniaj jako spełniony / częściowo spełniony / niespełniony:
+1. Odpowiedź jest bezpośrednia i dotyczy pytania.
+2. Wykorzystuje właściwy materiał źródłowy.
+3. Zawiera wymaganą liczbę elementów.
+4. Podaje dowód, gdy jest wymagany.
+5. Wyjaśnia związek między dowodem a wnioskiem.
+6. Nie dopisuje niepotwierdzonych faktów.
+7. Spełnia ograniczenia formy i długości.
+8. Jest zrozumiała językowo.
+
+To narzędzie samokontroli, a nie oficjalna rubryka CKE. W rzeczywistym zadaniu należy stosować kryteria wskazane w aktualnym informatorze i arkuszu.
+
+## 16. Zadanie wieloetapowe z kluczem
+
+Tekst:
+
+> Szkoła planowała zorganizować kiermasz na boisku. Według prognozy w dniu wydarzenia miały wystąpić intensywne opady. Organizatorzy przenieśli kiermasz do sali gimnastycznej, ale ograniczyli liczbę stoisk, ponieważ część wyposażenia nie mieściła się w nowym miejscu. Informację o zmianie opublikowano na stronie szkoły.
+
+**A. Wskaż przyczynę przeniesienia kiermaszu.**  
+**B. Podaj skutek zmiany miejsca.**  
+**C. Wyjaśnij, dlaczego nie wszystkie stoiska mogły zostać ustawione.**  
+**D. Zacytuj informację o sposobie powiadomienia uczestników.**  
+**E. Sformułuj wniosek, którego tekst nie uzasadnia.**
+
+**Klucz:** A. Prognozowane intensywne opady. B. Kiermasz przeniesiono do sali gimnastycznej. C. Część wyposażenia nie mieściła się w nowym miejscu. D. „Informację o zmianie opublikowano na stronie szkoły”. E. Np. „Wszyscy uczestnicy na pewno przeczytali komunikat” — tekst podaje publikację, ale nie potwierdza, że każdy się z nią zapoznał.
+
+## 17. Kontrola po drugim cyklu
+
+- [x] Dodano macierz rozbioru polecenia uwzględniającą operację, liczbę, źródło i formę.
+- [x] Pokazano różnicę między odpowiedzią niepełną, pełną i nadinterpretacją.
+- [x] Dodano treningową listę kryteriów bez podszywania się pod oficjalną punktację.
+- [x] Dodano zadanie wieloetapowe z jednoznacznym kluczem i pytaniem o granice wnioskowania.
+- [ ] Pozostaje niezależna recenzja polonistyczna i walidacja względem aktualnych wymagań egzaminacyjnych.

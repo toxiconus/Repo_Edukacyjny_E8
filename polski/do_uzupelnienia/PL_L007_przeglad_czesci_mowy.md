@@ -2,9 +2,9 @@
 kod: PL.L007
 przedmiot: język polski
 tytul: Przegląd części mowy — rozpoznawanie, odmiana i funkcja w zdaniu
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + trening konkursowy
-status: UZUPEŁNIONA LEKCJA — wymaga końcowego audytu W2 względem aktualnych wymagań
+status: UZUPEŁNIONA v3.0 — audyt kompletności W2 wykonany wewnętrznie; niezależna recenzja pozostaje otwarta
 czas: 2–3 jednostki lekcyjne + powtórka
 wymaga:
   - podstawowej znajomości rzeczownika, czasownika i przymiotnika
@@ -141,6 +141,8 @@ Samo wystąpienie „nie” nie zmienia automatycznie części mowy:
 - nieład — „nieład” jest rzeczownikiem.
 
 Pisownię „nie” rozstrzygaj według aktualnych zasad ortograficznych i konkretnego kontekstu, a nie na podstawie samej klasyfikacji wyrazu.
+
+**Ważna aktualizacja ortograficzna od 1.01.2026 r.:** z imiesłowami przymiotnikowymi (*czytający, napisany*) podstawowo piszemy „nie” łącznie: *nieczytający uczeń, nieprzeczytany tekst*. Zapis rozdzielny pozostaje możliwy w konstrukcji wyraźnego zaprzeczenia połączonego z przeciwstawieniem, np. *nie leżący, ale siedzący*. Z imiesłowami przysłówkowymi piszemy rozdzielnie: *nie idąc, nie przeczytawszy*. Z czasownikami zwykłe przeczenie także zapisujemy rozdzielnie: *nie czytam*. CKE poinformowała, że w latach 2026–2030 w ocenianiu egzaminacyjnym akceptowane będą zarówno dotychczasowe, jak i nowe zasady; ucz się aktualnej normy, a w przygotowaniu egzaminacyjnym uwzględniaj ten okres przejściowy.
 
 ---
 
@@ -648,6 +650,7 @@ Jeśli nie możesz zaznaczyć któregoś punktu, wróć do odpowiedniej sekcji, 
 
 - Treść i zadania w tej lekcji są opracowaniem autorskim, nie kopią arkusza egzaminacyjnego.
 - Przykłady mają wspierać rozumienie funkcji, a nie wymuszać jedną terminologię w przypadkach, w których szkolne klasyfikacje różnią się szczegółami.
-- Przed publikacją należy porównać terminologię z przyjętym podręcznikiem oraz aktualnymi wymaganiami E8 i sprawdzić szczegóły ortograficzne zgodnie z zasadami obowiązującymi w roku publikacji.
-- Lekcja syntetyzuje zagadnienia rozwijane w PL_G01–PL_G11 i PL_G06; nie powinna zastępować pełnych lekcji o każdej części mowy.
-- Następny plik w kolejności: **PL_L008_czesci_zdania.md**. Zachować jego istniejące materiały, przeprowadzić porównanie z PL_G12, a następnie uzupełnić tylko realne braki.
+- Lekcja syntetyzuje zagadnienia rozwijane w PL_G01–PL_G11 i PL_G06; nie zastępuje pełnych lekcji o każdej części mowy.
+- Wersja 3.0 zawiera aktualizację ortografii „nie” z imiesłowami i informację o okresie przejściowym CKE 2026–2030.
+- Niezależna recenzja polonistyczna i końcowa walidacja względem aktualnego informatora oraz arkuszy CKE pozostają otwarte.
+- Kolejne lekcje L008–L011 rozbudowano do wersji 4.0; szczegóły zapisano w ich osobnych audytach.

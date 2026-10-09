@@ -3,9 +3,9 @@ kod: PL.D06
 przedmiot: język polski
 blok: D
 numer: 6
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 wymaga: rozpoznawanie narratora, czasu, miejsca i następstwa wydarzeń
 ---
 
@@ -128,3 +128,90 @@ Po napisaniu odpowiedz: czy decyzja bohatera wynika z jego charakteru i sytuacji
 
 Przy ocenie treningowej sprawdź zgodność z poleceniem, logikę fabuły, spójność narracji, wykorzystanie opisu/dialogu, wiarygodność motywacji, kompozycję i poprawność językową. Nie oceniaj opowiadania wyłącznie według liczby wydarzeń lub długości dialogu. Rubryka jest autorska; wymagania konkretnego zadania mają pierwszeństwo.
 
+
+
+## 15. Pełna procedura planowania opowiadania
+
+Przed pisaniem nie musisz znać każdego zdania, ale powinieneś znać logikę historii. Zapisz w punktach:
+
+1. **Bohater:** czego chce, czego się obawia, co wie na początku?
+2. **Cel:** co bohater próbuje osiągnąć?
+3. **Przeszkoda:** co utrudnia osiągnięcie celu i dlaczego nie da się tego natychmiast ominąć?
+4. **Stawka:** co bohater może stracić lub zyskać?
+5. **Decyzje:** jakie działania podejmie i jakie przyniosą skutki?
+6. **Punkt zwrotny:** jaka informacja lub decyzja zmienia bieg wydarzeń?
+7. **Kulminacja:** w którym momencie konflikt osiąga najwyższe napięcie?
+8. **Rozwiązanie:** co kończy konflikt i jak wynika z wcześniejszych zdarzeń?
+9. **Zmiana:** czego bohater się dowiaduje lub czego się uczy?
+
+Jeśli nie umiesz odpowiedzieć na pytania 2–4, historia może nie mieć wyraźnego konfliktu. Jeśli rozwiązanie nie wynika z decyzji bohatera ani z wcześniej zapowiedzianych okoliczności, zakończenie może wyglądać na przypadkowe.
+
+## 16. Plan scen — prosty sposób kontroli przyczynowości
+
+Dla każdej sceny wypełnij cztery pola:
+
+| Pole | Pytanie |
+|---|---|
+| Cel sceny | Co bohater chce osiągnąć w tej scenie? |
+| Przeszkoda | Co mu to utrudnia? |
+| Zmiana | Co jest inne po zakończeniu sceny? |
+| Następstwo | Dlaczego kolejna scena wynika z tej? |
+
+Jeśli scena nie wnosi nowej informacji, nie zmienia relacji ani nie przesuwa akcji, skróć ją lub połącz z inną. Nie każda scena musi być dynamiczna; spokojny opis może budować nastrój, jeśli ma funkcję.
+
+## 17. Modelowe opowiadanie — przykład pełnego przebiegu
+
+**Temat treningowy:** „Napisz opowiadanie o sytuacji, w której bohater musiał zdecydować, czy powiedzieć prawdę”.
+
+### Ostatnia strona zeszytu
+
+Kiedy otworzyłam zeszyt, zauważyłam, że ktoś dopisał na ostatniej stronie krótką wiadomość: „Sprawdź pudełko pod mapą. Zanim będzie za późno”. Pismo było nierówne, jakby autor spieszył się albo pisał w niewygodnej pozycji. Przez chwilę pomyślałam, że to żart, ale przypomniałam sobie o zaginionym pendrivie z prezentacją naszej grupy.
+
+Prezentację mieliśmy pokazać następnego dnia. Od rana wszyscy szukali pliku, a Kuba — który odpowiadał za zapisanie końcowej wersji — powtarzał, że oddał pendrive nauczycielce. Nie byłam pewna, czy mówi prawdę. Poprzedniego dnia widziałam, jak chował coś do kieszeni, kiedy po lekcji zostaliśmy sami w sali. Wtedy nie zwróciłam na to uwagi.
+
+Po zajęciach wróciłam do klasy. Pod ścienną mapą stało kartonowe pudełko z materiałami do geografii. W środku leżały kredki, stare karty i pendrive. Obok znalazłam kartkę z krótkim zdaniem: „Przepraszam. Chciałem tylko poprawić jeden slajd, a potem bałem się przyznać, że zabrałem go do domu”. Rozpoznałam pismo Kuby.
+
+Mogłam zabrać pendrive i udawać, że sprawa sama się rozwiązała. Wiedziałam jednak, że grupa spędziła pół dnia na poszukiwaniach, a Kuba nadal nie powiedział prawdy. Z drugiej strony bałam się, że jeśli zgłoszę sprawę, stracimy do siebie zaufanie. W końcu schowałam pendrive do kieszeni i poszłam do biblioteki, gdzie czekał na mnie Kuba.
+
+— Znalazłam go — powiedziałam, kładąc urządzenie na stole. — Ale musimy powiedzieć grupie, co się stało.
+
+Kuba spuścił wzrok. Przez chwilę milczał, a potem przyznał, że zabrał pendrive, żeby poprawić prezentację, i zapomniał go oddać. Nie próbowałam go usprawiedliwiać, ale zaproponowałam, żeby sam wyjaśnił to pozostałym. Zgodził się, choć wiedział, że będą źli.
+
+Następnego dnia prezentacja odbyła się bez problemów. Kuba przeprosił grupę i od razu zaproponował, że po wystąpieniu prześle wszystkim kopię pliku. Nie wszyscy od razu mu wybaczyli, ale przynajmniej nie musieli już zgadywać, co się stało. Zrozumiałam, że powiedzenie prawdy nie zawsze usuwa konsekwencje. Czasem jednak pozwala przestać je powiększać.
+
+### Analiza modelu
+- **Sytuacja początkowa:** pojawia się tajemnicza wiadomość i problem z pendrivem.
+- **Cel bohaterki:** odnaleźć przedmiot i zdecydować, co zrobić z prawdą.
+- **Przeszkoda:** obawa przed konfliktem i niepewność co do roli Kuby.
+- **Punkt zwrotny:** odnalezienie pendrive’a i przyznanie się w wiadomości.
+- **Kulminacja:** decyzja bohaterki, by porozmawiać z Kubą i ujawnić sytuację grupie.
+- **Rozwiązanie:** Kuba przyznaje się i przeprasza; relacja nie zostaje magicznie naprawiona, lecz problem przestaje być ukrywany.
+- **Narracja:** pierwszoosobowa, ograniczona do wiedzy narratorki; nie opisuje ona bezpośrednio myśli Kuby, dopóki ten ich nie ujawnia.
+- **Zakończenie:** wynika z decyzji postaci i podsumowuje doświadczenie.
+
+## 18. Jak rozwijać scenę, a nie streszczać wydarzenia
+
+Streszczenie: „Poszłam do klasy, znalazłam pendrive, porozmawiałam z Kubą i wszystko się wyjaśniło”.
+
+Scena: pokazuje miejsce, konkretną czynność, przeszkodę, reakcję bohatera i decyzję. Nie oznacza to, że każde wydarzenie należy opisywać szczegółowo. Najważniejsze sceny — punkt zwrotny, decyzja i kulminacja — zwykle zasługują na większe rozwinięcie niż przejścia między miejscami.
+
+**Ćwiczenie:** wybierz jedno zdanie streszczenia ze swojego opowiadania i rozwiń je w 5–8 zdaniach. Dodaj tylko te szczegóły, które budują napięcie, ujawniają charakter lub zmieniają sytuację.
+
+## 19. Pułapki kompozycyjne i językowe
+
+- **Nadmierny wstęp:** kilka akapitów o pogodzie, zanim pojawi się problem. Rozpocznij od szczegółu, który ma znaczenie.
+- **Bohater bez celu:** wydarzenia przydarzają się postaci, ale nie wiadomo, czego chce.
+- **Przypadkowy ratunek:** nieznana postać lub przedmiot rozwiązuje konflikt bez wcześniejszego przygotowania.
+- **Niewiarygodna zmiana:** bohater podejmuje skrajnie inną decyzję bez pokazania przyczyny.
+- **Zmiana narratora:** tekst zaczyna się od „ja”, a następnie bez uzasadnienia opisuje myśli wszystkich postaci.
+- **Dialog informacyjny:** postacie wyjaśniają sobie oczywistości tylko po to, by czytelnik poznał tło.
+- **Nagłe zakończenie:** konflikt zostaje zamknięty, ale nie widać skutków decyzji.
+- **Nadużywanie przysłówków i przymiotników:** emocje są nazywane, ale nie pokazuje się zachowania, które je ujawnia.
+
+## 20. Kontrola po drugim cyklu
+
+- [x] Dodano planowanie celu, przeszkody, stawki, decyzji, kulminacji i zmiany bohatera.
+- [x] Dodano pełne opowiadanie modelowe oraz analizę narratora i przyczynowości.
+- [x] Zakończenie nie usuwa konsekwencji i wynika z decyzji postaci.
+- [x] Dodano narzędzie do sprawdzania funkcji każdej sceny.
+- [ ] Pozostaje niezależna recenzja polonistyczna i sprawdzenie wymagań aktualnego egzaminu.

@@ -3,9 +3,9 @@ kod: PL.D07
 przedmiot: język polski
 blok: D
 numer: 7
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 ---
 
 # D07. Przemówienie — cel, odbiorca i perswazja
@@ -109,3 +109,83 @@ Po napisaniu przeczytaj tekst na głos. Sprawdź, czy zdania są zrozumiałe prz
 
 Przepisz swoje przemówienie tak, aby było krótsze o jedną trzecią, ale zachowało cel, dwa argumenty i apel. Następnie przeczytaj obie wersje na głos i oceń, która jest bardziej zrozumiała dla słuchacza.
 
+
+
+## 14. Przemówienie jako wypowiedź mówiona — co zmienia odbiorca?
+
+Słuchacz zwykle słyszy tekst tylko raz. Dlatego przemówienie powinno mieć wyraźne punkty orientacyjne: zapowiedź problemu, rozpoznawalne argumenty, powroty do głównej myśli i konkretny apel. Długie zdania z wieloma wtrąceniami trudniej zrozumieć ze słuchu niż z kartki.
+
+Przed pisaniem ustal:
+1. **Sytuację:** uroczystość, zebranie, apel, spotkanie samorządu czy konkurs?
+2. **Odbiorców:** co już wiedzą, czego potrzebują, co mogą zrobić?
+3. **Cel:** przekonać, zachęcić, podziękować, upamiętnić czy wyjaśnić?
+4. **Jedną główną myśl:** co słuchacz ma zapamiętać?
+5. **Działanie końcowe:** co konkretnie odbiorca ma zrobić lub rozważyć?
+
+## 15. Pełny model przemówienia
+
+**Polecenie treningowe:** przemów do społeczności szkolnej i przekonaj ją do uruchomienia wymiany książek.
+
+**Szanowna Dyrekcjo, Drodzy Nauczyciele, Koleżanki i Koledzy!**
+
+Chciałabym zaproponować uruchomienie w naszej szkole półki wymiany książek. Każdy z nas ma czasem książkę, do której raczej już nie wróci, a która mogłaby zainteresować kogoś innego. Zamiast pozwolić, by przez lata stała na półce, możemy dać jej drugie życie.
+
+Po pierwsze, taka wymiana ułatwi dostęp do czytania. Nie każdy może kupować wszystkie książki, które chciałby poznać. Wymieniając się tytułami, możemy korzystać z większego wyboru bez ponoszenia kolejnych kosztów. Po drugie, polecanie książek może pomóc nam odkrywać zainteresowania innych osób. Krótka rekomendacja koleżanki lub kolegi nieraz zachęca do lektury skuteczniej niż przypadkowy opis w internecie.
+
+Oczywiście, żeby półka działała, potrzebne są jasne zasady. Proponuję, aby przynosić książki w dobrym stanie, oznaczać je kartą z tytułem i krótką rekomendacją oraz korzystać z regału w wyznaczonym miejscu. Wolontariusze mogliby raz w tygodniu sprawdzać porządek, a po miesiącu wspólnie ocenilibyśmy, czy pomysł się sprawdza.
+
+Czy nie warto dać przeczytanym książkom szansy na kolejnego czytelnika? Nie musimy od razu tworzyć wielkiego projektu. Wystarczy pilotaż, kilka prostych zasad i osoby gotowe do pomocy. Zachęcam Was, by zgłosić się do samorządu i wspólnie uruchomić półkę wymiany. **Podzielmy się książkami — i odkryjmy, ile dobrych historii może krążyć po naszej szkole!**
+
+### Analiza modelu
+- Zwrot do odbiorców jest adekwatny do zebrania społeczności szkolnej.
+- Cel zostaje nazwany w pierwszym akapicie.
+- Dwa argumenty są różne: dostęp do książek oraz wymiana rekomendacji.
+- Przykłady są wiarygodne, nie opierają się na zmyślonych statystykach.
+- Pojawia się zastrzeżenie organizacyjne i propozycja pilotażu.
+- Pytanie retoryczne i powtórzenie wspierają apel, ale nie zastępują argumentów.
+- Zakończenie zawiera konkretne działanie.
+
+## 16. Dopasowanie tonu do sytuacji
+
+Ten sam cel można wyrazić w różnych rejestrach:
+
+- **Do rówieśników:** „Przynieście książkę, którą chcecie polecić, i pomóżcie nam uruchomić półkę”.
+- **Do dyrekcji:** „Proszę o zgodę na miesięczny pilotaż oraz wyznaczenie miejsca, za którego porządek odpowiadałby zespół wolontariuszy”.
+- **Podczas uroczystości:** „Niech ta inicjatywa stanie się okazją do dzielenia się nie tylko książkami, lecz także zainteresowaniami i doświadczeniem”.
+
+Ton formalny nie musi być sztuczny, a ton bezpośredni nie powinien być lekceważący. Unikaj pustych pochlebstw, gróźb, zawstydzania odbiorców i apeli, które nie mówią, co konkretnie zrobić.
+
+## 17. Perswazja a manipulacja
+
+Perswazja przedstawia racje i zachęca do decyzji. Manipulacja może ukrywać istotne informacje, wywoływać nieuzasadnione poczucie winy lub fałszywie sugerować, że „wszyscy” już popierają pomysł.
+
+Porównaj:
+- **Rzeczowo:** „Jeśli uruchomimy pilotaż, po miesiącu sprawdzimy liczbę wymienionych książek i opinie uczestników”.
+- **Manipulacyjnie:** „Kto nie poprze pomysłu, ten nie lubi czytać i nie dba o innych”.
+
+Drugie zdanie atakuje odbiorców zamiast uzasadniać propozycję. Dobre przemówienie może być emocjonalne, ale powinno pozostawać uczciwe i konkretne.
+
+## 18. Zadanie z autokorektą
+
+Napisz przemówienie zachęcające do ograniczenia marnowania papieru. W pierwszej wersji zapisz pełny tekst. Następnie zaznacz:
+- **Z** — zwrot do odbiorców;
+- **C** — cel;
+- **A1/A2** — dwa argumenty;
+- **D** — dane lub przykład;
+- **P** — konkretna propozycja;
+- **Ap** — apel końcowy.
+
+Przeprowadź trzy kontrole:
+1. Czy argumenty są rzeczywiście różne?
+2. Czy podałeś tylko takie liczby i fakty, które potrafisz uzasadnić?
+3. Czy słuchacz wie, co ma zrobić po wystąpieniu?
+
+Na końcu skróć tekst o około jedną trzecią. Usuń powtórzenia, ale zachowaj cel, argumenty i apel. Przeczytaj obie wersje na głos i sprawdź, która jest zrozumiała przy jednokrotnym wysłuchaniu.
+
+## 19. Kontrola po drugim cyklu
+
+- [x] Dodano pełne przemówienie modelowe z analizą jego elementów.
+- [x] Uwzględniono różnicę między rejestrem do rówieśników, dyrekcji i uczestników uroczystości.
+- [x] Rozróżniono perswazję od manipulacji.
+- [x] Apel modelowy zawiera wykonalne działanie i nie wykorzystuje zmyślonych danych.
+- [ ] Pozostaje niezależna recenzja polonistyczna i walidacja względem aktualnych wymagań egzaminacyjnych.

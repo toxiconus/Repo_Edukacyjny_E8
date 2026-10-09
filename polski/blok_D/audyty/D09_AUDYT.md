@@ -1,21 +1,16 @@
-# Audyt lekcji D09 — Krótkie formy użytkowe
+# Audyt D09 — krótkie formy użytkowe
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja zawierała definicje czterech form, listy elementów, ćwiczenia i przykłady, ale nie dawała pełnych wzorców każdej formy, przez co uczeń nie mógł łatwo porównać ich funkcji i rejestru.
 
-Wymieniono formy, ale nie zdefiniowano funkcji i elementów ogłoszenia, zaproszenia, podziękowania i życzeń.
+## Uzupełnienie
+Dodano pełne przykłady ogłoszenia, zaproszenia, podziękowania i życzeń, tabelę wyboru formy oraz ćwiczenie naprawcze z wyraźnym rozróżnieniem między twórczym wymyślaniem danych a pracą na źródle.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Każdy model realizuje inny cel komunikacyjny.
+- Dane fikcyjne są oznaczone jako treningowe i nie mogą być przedstawiane jako rzeczywiste.
+- Wskazano, że „w piątek” nie spełnia wymogu dokładnej daty, jeśli polecenie jej żąda.
+- Krótka forma pozostaje zwięzła, a kompletność jest podporządkowana poleceniu.
 
-Każda forma ma osobne kryteria i ćwiczenia; dodano zadanie diagnozujące braki. Dane w ćwiczeniach uczniowskich mają być spójne i kompletne.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D09 v3.0 po drugim wewnętrznym cyklu; niezależna recenzja i kontrola aktualnych wymagań nadal wymagane.

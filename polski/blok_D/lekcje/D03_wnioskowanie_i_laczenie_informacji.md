@@ -3,9 +3,9 @@ kod: PL.D03
 przedmiot: język polski
 blok: D
 numer: 3
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 wymaga: PL.D01, PL.D02
 ---
 
@@ -163,3 +163,50 @@ Jeśli liczba uczestników wzrosła z 20 do 30, oblicz wzrost bezwzględny (10 o
 
 Unikaj słów „zawsze”, „wszyscy”, „nikt”, „na pewno”, „udowadnia”, gdy dane są ograniczone. Często trafniejsze są formuły: „tekst wskazuje”, „można przypuszczać”, „wynik sugeruje”, „na podstawie podanych danych nie da się ustalić”. Nie osłabiaj jednak bez potrzeby informacji, która jest podana wprost — jeśli tekst jednoznacznie podaje liczbę, nie pisz „być może było 24 uczestników”. Ostrożność ma odpowiadać rzeczywistemu poziomowi niepewności.
 
+
+
+## 13. Procedura wnioskowania z dwóch źródeł — kontrola porównywalności
+
+Zanim połączysz dwa źródła, sprawdź pięć wymiarów:
+
+1. **Kogo badano?** Ta sama grupa, różne grupy czy brak informacji?
+2. **Kiedy zebrano dane?** Ten sam okres czy różne terminy?
+3. **Co mierzono?** Deklarację, zachowanie, wynik testu, liczbę zdarzeń czy opinię?
+4. **Jak mierzono?** Ankietą, obserwacją, rejestrem, testem czy oceną eksperta?
+5. **Jaki jest zakres danych?** Cała populacja, próba, pojedynczy przypadek czy przykład ilustracyjny?
+
+Jeżeli choć jeden z tych wymiarów jest inny, wyniki nadal można zestawić, ale trzeba nazwać różnicę. Nie nazywaj ich sprzecznymi bez sprawdzenia, czy naprawdę odpowiadają na to samo pytanie.
+
+## 14. Zadanie: odczyt danych i ostrożny wniosek
+
+| Okres | Liczba wypożyczeń | Liczba dni otwarcia |
+|---|---:|---:|
+| Marzec | 180 | 20 |
+| Kwiecień | 198 | 22 |
+
+**Polecenia:**
+1. O ile wzrosła łączna liczba wypożyczeń?
+2. Czy sama różnica 18 wypożyczeń dowodzi, że uczniowie częściej korzystali z biblioteki w każdym dniu?
+3. Oblicz średnią liczbę wypożyczeń na dzień dla obu miesięcy.
+4. Sformułuj wniosek zgodny z danymi.
+5. Wymień jedną informację, której tabela nie pokazuje.
+
+**Klucz:** 1. O 18. 2. Nie, bo kwiecień miał więcej dni otwarcia. 3. Marzec: 180 ÷ 20 = 9 dziennie; kwiecień: 198 ÷ 22 = 9 dziennie. 4. Łączna liczba wypożyczeń była wyższa w kwietniu, ale średnia dzienna pozostała taka sama. 5. Na przykład liczba unikalnych użytkowników, rozkład wypożyczeń między uczniów, tytuły lub przyczyny zmian.
+
+**Wniosek metodologiczny:** zanim uznasz wzrost sumy za wzrost intensywności zjawiska, sprawdź mianownik, okres i wielkość grupy.
+
+## 15. Ćwiczenie: sprzeczność czy różnica perspektyw?
+
+Źródło A: „W ankiecie 70% respondentów zadeklarowało, że lubi pracę w grupie”.
+
+Źródło B: „Podczas jednego zadania obserwator zanotował, że dwie z pięciu grup miały trudności z podziałem obowiązków”.
+
+Czy źródła sobie przeczą? **Nie muszą.** A dotyczy deklarowanej preferencji respondentów, a B — zachowania zespołów w konkretnej sytuacji. Można lubić pracę grupową i jednocześnie mieć trudności z organizacją pojedynczego zadania. Aby porównać wyniki mocniej, należałoby znać dobór uczestników, warunki obserwacji i treść ankiety.
+
+## 16. Kontrola po drugim cyklu
+
+- [x] Dodano procedurę porównywania populacji, okresu, mierzonego zjawiska, metody i zakresu danych.
+- [x] Dodano zadanie, w którym surowa liczba rośnie, ale średnia dzienna się nie zmienia.
+- [x] Dodano przykład pozornej sprzeczności między deklaracją a obserwacją.
+- [x] Klucz nie wyciąga wniosków przyczynowych z samego następstwa.
+- [ ] Niezależna recenzja ekspercka pozostaje osobnym etapem.

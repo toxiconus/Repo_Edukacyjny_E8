@@ -1,21 +1,15 @@
-# Audyt lekcji D11 — Lektura jako dowód
+# Audyt D11 — lektura jako dowód
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja wyjaśniała, że tytuł nie wystarcza i że trzeba wskazać konkretną sytuację, ale brakowało szczegółowej procedury wyboru lektury po analizie tematu oraz kompletnego modelowego akapitu z rzeczywistym przykładem.
 
-Wskazano przywoływanie przykładu, ale brakowało rozróżnienia faktu fabularnego i interpretacji oraz kryteriów trafności.
+## Uzupełnienie
+Dodano procedurę doboru utworu, modelowy argument na podstawie *Opowieści wigilijnej*, tabelę wyboru przykładu i wskazówki na wypadek niepewnej pamięci fabuły.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Przykład Scrooge’a opisuje ogólny, dobrze ugruntowany przebieg przemiany bez dodawania fikcyjnego cytatu.
+- Wniosek jest ograniczony do tego, co pokazuje przykład; nie uogólnia na wszystkich ludzi.
+- Wyraźnie odróżniono streszczenie, fakt fabularny i interpretację.
 
-Dodano schemat argumentowania lekturą, pytania kontrolne, ćwiczenia i kryteria. Konkretne przykłady lekturowe trzeba każdorazowo sprawdzać z tekstem utworu.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D11 v3.0 po drugim wewnętrznym cyklu; niezależna recenzja i aktualna walidacja egzaminacyjna nadal wymagane.

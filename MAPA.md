@@ -578,22 +578,22 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/zrodla/pakiet_2026-10-09/research  (1 pl., 5 KB)
 - `RESEARCH_OLIMPIADY_I_KONKURSY_2026-10-09.md` 5 KB
 
-## polski  (4 pl., 274 KB)
+## polski  (4 pl., 287 KB)
 - `L001-L006-PL-Wszystkie-lekcje.md` 47 KB
-- `MAPA_POLSKI.md` 9 KB
+- `MAPA_POLSKI.md` 14 KB
 - ⚠`POLSKI_PODSTAWA_PLUS_v7.11.md` 209 KB
-- `POSTEP_UZUPELNIANIA.md` 8 KB
+- `POSTEP_UZUPELNIANIA.md` 17 KB
 
 ## polski/archiwum  (1 pl., 0 KB)
 - `README.md` 0 KB
 
-## polski/archiwum/html  (6 pl., 850 KB)
+## polski/archiwum/html  (6 pl., 854 KB)
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy v2.html` 114 KB
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy.html` 152 KB
-- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 153 KB
-- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 146 KB
-- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 139 KB
-- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 145 KB
+- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 154 KB
+- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 147 KB
+- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 140 KB
+- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 147 KB
 
 ## polski/archiwum/master  (4 pl., 736 KB)
 - ⚠`POLSKI_PODSTAWA_PLUS_v7 (10).md` 200 KB
@@ -614,7 +614,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## polski/blok_D/audyty  (13 pl., 13 KB)
 - (zwinięte; `ls polski/blok_D/audyty`)
 
-## polski/blok_D/lekcje  (13 pl., 122 KB)
+## polski/blok_D/lekcje  (13 pl., 183 KB)
 - (zwinięte; `ls polski/blok_D/lekcje`)
 
 ## polski/blok_G  (1 pl., 7 KB)
@@ -634,28 +634,28 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `S05_AUDYT.md` 2 KB
 - `S06_AUDYT.md` 2 KB
 
-## polski/do_uzupelnienia  (5 pl., 56 KB)
-- `PL_L007_przeglad_czesci_mowy.md` 31 KB
-- `PL_L008_czesci_zdania.md` 6 KB
-- `PL_L009_zdania_zlozone.md` 5 KB
-- `PL_L010_srodki_stylistyczne.md` 6 KB
-- `PL_L011_elementy_utworu_moral_puenta.md` 7 KB
+## polski/do_uzupelnienia  (5 pl., 122 KB)
+- `PL_L007_przeglad_czesci_mowy.md` 32 KB
+- `PL_L008_czesci_zdania.md` 26 KB
+- `PL_L009_zdania_zlozone.md` 21 KB
+- `PL_L010_srodki_stylistyczne.md` 23 KB
+- `PL_L011_elementy_utworu_moral_puenta.md` 21 KB
 
-## polski/lekcje_html  (6 pl., 716 KB)
-- ⚠`L001-PL-Lektury-klas-IV-VI-imieslow.html` 174 KB
-- ⚠`L002-PL-Hobbit-nieodmienne-czesci-mowy.html` 131 KB
+## polski/lekcje_html  (6 pl., 723 KB)
+- ⚠`L001-PL-Lektury-klas-IV-VI-imieslow.html` 175 KB
+- ⚠`L002-PL-Hobbit-nieodmienne-czesci-mowy.html` 132 KB
 - ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 134 KB
-- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 90 KB
-- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 84 KB
-- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 102 KB
+- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 91 KB
+- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 86 KB
+- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 104 KB
 
-## polski/plany/audyty  (8 pl., 30 KB)
-- `AUDYT_ZBIORCZY_POLSKI_2026-10-09.md` 1 KB
-- `L007_AUDYT_2026-10-09.md` 1 KB
-- `L008_AUDYT_2026-10-09.md` 1 KB
-- `L009_AUDYT_2026-10-09.md` 1 KB
-- `L010_AUDYT_2026-10-09.md` 1 KB
-- `L011_AUDYT_2026-10-09.md` 1 KB
+## polski/plany/audyty  (8 pl., 37 KB)
+- `AUDYT_ZBIORCZY_POLSKI_2026-10-09.md` 4 KB
+- `L007_AUDYT_2026-10-09.md` 2 KB
+- `L008_AUDYT_2026-10-09.md` 2 KB
+- `L009_AUDYT_2026-10-09.md` 2 KB
+- `L010_AUDYT_2026-10-09.md` 2 KB
+- `L011_AUDYT_2026-10-09.md` 2 KB
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
 - `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
 

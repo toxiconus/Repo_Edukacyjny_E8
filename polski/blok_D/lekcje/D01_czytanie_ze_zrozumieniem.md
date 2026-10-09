@@ -3,9 +3,9 @@ kod: PL.D01
 przedmiot: język polski
 blok: D
 numer: 1
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 wymaga: czytanie ze zrozumieniem, podstawowe pojęcia tekstu
 zalecane: PL.D02, PL.D03, PL.D04
 ---
@@ -500,3 +500,46 @@ Jeśli najtrudniejsze są wnioski, wróć do rozdziału 5 i ćwiczeń 2 oraz 8. 
 ## Źródło odniesienia do wymagań egzaminacyjnych
 
 Centralna Komisja Egzaminacyjna, *Informator o egzaminie ósmoklasisty z języka polskiego od roku szkolnego 2024/2025*: https://bip.cke.gov.pl/attachments/download/9824. Materiał treningowy jest autorskim opracowaniem i nie zastępuje informatora ani arkuszy egzaminacyjnych.
+
+
+## 22. Dodatkowy warsztat: tabela, odsetek i granice porównania
+
+W zadaniach egzaminacyjnych tekst może łączyć się z tabelą lub wykresem. Najpierw ustal, **co dokładnie mierzy dana liczba**: liczbę osób, odsetek, średnią, liczbę zdarzeń czy deklarację ankietowanych. Dopiero potem porównuj wyniki.
+
+| Miesiąc | Liczba wypożyczeń | Liczba uczniów zapisanych do biblioteki |
+|---|---:|---:|
+| Wrzesień | 120 | 60 |
+| Październik | 150 | 100 |
+
+**Pytania:**
+1. O ile wzrosła liczba wypożyczeń?
+2. O ile procent wzrosła liczba wypożyczeń względem września?
+3. Czy z tabeli wynika, że każdy zapisany uczeń wypożyczył więcej książek?
+4. Podaj dwa możliwe wyjaśnienia wzrostu liczby wypożyczeń, których tabela nie rozstrzyga.
+
+**Klucz:** 1. O 30. 2. O 25% (30 ÷ 120 × 100%). 3. Nie. Tabela podaje łączną liczbę wypożyczeń i liczbę zapisanych uczniów, ale nie pokazuje, jak wypożyczenia rozkładają się między osoby. 4. Na przykład wzrost liczby zapisanych uczniów, większa liczba dostępnych tytułów, akcja czytelnicza lub różna długość okresu aktywności — hipotezy trzeba oznaczyć jako możliwe, a nie potwierdzone.
+
+**Pułapka:** liczba wypożyczeń wzrosła o 25%, a liczba zapisanych uczniów wzrosła o 66,7% (z 60 do 100). Nie można zatem na podstawie samych sum twierdzić, że przeciętny uczeń wypożyczał więcej książek. W przybliżeniu liczba wypożyczeń na jednego zapisanego ucznia spadła z 2 do 1,5, ale i ten wskaźnik nie mówi, czy każdy uczeń zachował się podobnie.
+
+## 23. Kontrola odpowiedzi w zadaniach wieloźródłowych
+
+Gdy polecenie odwołuje się do tekstu i grafiki, odpowiedz osobno na trzy pytania:
+1. Co wynika z tekstu?
+2. Co rzeczywiście pokazuje grafika?
+3. Jaka relacja zachodzi między materiałami: uzupełniają się, potwierdzają, pokazują różne aspekty czy są sprzeczne?
+
+Nie zakładaj sprzeczności tylko dlatego, że liczby są różne — materiały mogą obejmować inne okresy, grupy lub definicje. Nie zakładaj zgodności tylko dlatego, że oba dotyczą tego samego tematu.
+
+### Zadanie kontrolne
+
+Tekst informuje, że „większość ankietowanych uczniów popiera wydłużenie przerwy”. Wykres pokazuje, że w ankiecie wzięło udział 40 osób, z których 22 poparły zmianę, 12 było przeciw, a 6 nie miało zdania.
+
+**Czy materiały są zgodne?** Tak, jeśli „większość” oznacza więcej niż połowę badanych: 22 z 40 osób to 55%. **Czy oznacza to, że większość wszystkich uczniów szkoły popiera zmianę?** Nie, ponieważ wykres opisuje wyłącznie uczestników ankiety; nie wiadomo, czy próba odzwierciedla całą społeczność.
+
+## 24. Audyt po drugim cyklu — co sprawdzono
+
+- Rozdzielono deklarację, obserwację i wynik liczbowy.
+- Dodano zadanie, w którym liczebność próby zmienia się między okresami.
+- Sprawdzono, czy klucz nie wyciąga wniosków o jednostkach na podstawie samych danych zbiorczych.
+- Doprecyzowano pracę z materiałami tekstowymi i graficznymi.
+- Zachowano wcześniejsze ćwiczenia i klucz; dodatek rozszerza lekcję, a nie zastępuje jej.

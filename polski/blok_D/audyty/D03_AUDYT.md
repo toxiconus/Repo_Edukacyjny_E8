@@ -1,21 +1,16 @@
-# Audyt lekcji D03 — Wnioskowanie i łączenie informacji
+# Audyt D03 — wnioskowanie i łączenie informacji
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja zawierała poziomy pewności, korelację i przyczynowość, łączenie dwóch tekstów, ćwiczenia oraz klucze. Brakowało systematycznej procedury kontroli porównywalności źródeł i zadania, w którym surowa suma rośnie wyłącznie z powodu dłuższego okresu obserwacji.
 
-Brakowało stopni pewności, rozróżnienia następstwa i przyczynowości, pracy z dwoma tekstami oraz z ograniczeniami danych.
+## Uzupełnienie
+Dodano pięć wymiarów porównania źródeł: badana grupa, czas, mierzone zjawisko, metoda i zakres. Dodano tabelę miesięcznych wypożyczeń i dni otwarcia oraz przykład różnicy między deklaracją a obserwowanym zachowaniem.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Marzec: 180/20 = 9 wypożyczeń dziennie; kwiecień: 198/22 = 9 dziennie.
+- Wniosek oddziela wzrost sumy od braku wzrostu średniej dziennej.
+- Przykład ankiety i obserwacji nie jest automatycznie nazywany sprzecznością, ponieważ źródła mierzą różne rzeczy.
+- Zachowano zasadę, że brak informacji nie dowodzi nieistnienia zjawiska.
 
-Dodano cztery poziomy pewności, korelację/przyczynowość, zadania z dwóch źródeł, kontrargument i propozycję lepszego badania. Końcowa kontrola nie zastępuje jeszcze testu na arkuszach.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D03 v3.0 po drugim wewnętrznym cyklu. Pozostaje niezależna recenzja oraz walidacja zakresu z aktualnym informatorem i arkuszami.

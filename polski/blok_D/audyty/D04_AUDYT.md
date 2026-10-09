@@ -1,21 +1,16 @@
-# Audyt lekcji D04 — Odpowiedź pełnym zdaniem i uzasadnienie
+# Audyt D04 — pełna odpowiedź i uzasadnienie
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja omawiała czasowniki operacyjne, cytat i parafrazę oraz typowe błędy. Brakowało jednej procedury, która systematycznie rozkłada polecenie na wszystkie obowiązki, oraz jasnej listy kryteriów do autokorekty.
 
-Lista czasowników była poprawna, lecz za krótka; brakowało rozpisywania poleceń wieloczęściowych, różnicy cytatu i parafrazy oraz ćwiczeń naprawczych.
+## Uzupełnienie
+Dodano macierz polecenia (operacja, przedmiot, liczba, źródło, forma, uzasadnienie), porównanie odpowiedzi niepełnej i pełnej, treningową listę kontroli oraz wieloetapowe zadanie z kluczem.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Klucz do zadania o kiermaszu odpowiada na wszystkie pięć części.
+- W przykładzie o komunikacie rozróżniono publikację informacji od wiedzy każdego odbiorcy.
+- Lista kryteriów jest jawnie opisana jako narzędzie treningowe, nie oficjalna rubryka.
+- Dodatki uzupełniają dotychczasowe przykłady bez ich usuwania.
 
-Dodano modele odpowiedzi, checklistę części polecenia, przykłady słabe/niepełne/dobre i klucz. Spójne z D01–D03.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D04 v3.0 po drugim wewnętrznym cyklu; niezależna recenzja i porównanie z aktualnym informatorem nadal wymagane.

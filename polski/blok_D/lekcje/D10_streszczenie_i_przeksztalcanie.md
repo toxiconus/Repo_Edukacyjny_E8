@@ -3,9 +3,9 @@ kod: PL.D10
 przedmiot: język polski
 blok: D
 numer: 10
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 ---
 
 # D10. Streszczenie i przekształcanie tekstu
@@ -134,3 +134,87 @@ Wybierz tekst o długości 150–250 słów. Zrób streszczenie w 3–4 zdaniach
 
 Porównaj oryginał i wersję po zmianie. Zadaj pytania: czy zmienił się nadawca? Czy zachowano warunek lub zastrzeżenie? Czy nie zniknęła przyczyna? Czy nie zamieniono możliwości w pewność? Czy zaimki nadal wskazują te same osoby? Ta kontrola jest szczególnie ważna przy skracaniu tekstów argumentacyjnych i przekształcaniu mowy zależnej.
 
+
+
+## 15. Metoda akapitów: co zachować, co usunąć?
+
+Dla każdego akapitu zapisz roboczo jedno zdanie odpowiadające na pytanie: „Co nowego wnosi ten fragment do całości?”. Następnie oznacz elementy:
+- **G** — myśl główna lub informacja konieczna do zrozumienia całości;
+- **U** — uzasadnienie, przyczyna, skutek lub ważne zastrzeżenie;
+- **P** — przykład, ilustracja lub szczegół;
+- **D** — dygresja, powtórzenie lub ozdobnik, który można usunąć.
+
+Nie usuwaj automatycznie każdego przykładu. Jeśli bez niego nie wiadomo, na czym polega argument albo czego dotyczy wniosek, przykład może być istotny. Nie usuwaj też zastrzeżeń typu „jednak”, „nie wiadomo, czy”, „pod warunkiem że” — mogą zmieniać sens całego tekstu.
+
+## 16. Pełny tekst treningowy i streszczenie
+
+**Tekst źródłowy:**
+
+> W bibliotece szkolnej rozpoczęto projekt „Książka w podróży”. Uczniowie mogą zostawić na specjalnej półce książkę, którą już przeczytali, i zabrać inny egzemplarz. Każdy tytuł otrzymuje kartę, na której czytelnik może napisać krótką rekomendację, ale nie ma obowiązku ujawniania swojego nazwiska. W pierwszych dwóch tygodniach wymieniono 38 książek. Opiekunka biblioteki zauważyła, że część uczniów rozmawia o polecanych tytułach, jednak nie przeprowadzono ankiety, która pokazałaby, czy projekt zachęcił do czytania osoby wcześniej rzadko odwiedzające bibliotekę. Po miesiącu organizatorzy zamierzają ocenić liczbę wymienionych książek i zebrać opinie uczestników.
+
+### Streszczenie modelowe
+
+W bibliotece szkolnej uruchomiono wymianę przeczytanych książek, do których można dołączać anonimowe rekomendacje. W pierwszych dwóch tygodniach wymieniono 38 egzemplarzy i zaobserwowano rozmowy uczniów o tytułach, ale nie ustalono, czy projekt zachęcił do czytania nowych osób. Po miesiącu organizatorzy planują ocenić liczbę wymian i zebrać opinie uczestników.
+
+### Co zachowano?
+- cel i mechanizm projektu;
+- wynik liczbowy z określonym okresem;
+- obserwację rozmów;
+- ważne ograniczenie wiedzy;
+- plan dalszej oceny.
+
+### Co pominięto?
+Szczegół o braku obowiązku podawania nazwiska można pominąć w bardzo krótkim streszczeniu, jeśli nie jest ważny dla pytania. Jeśli polecenie dotyczy zasad anonimowości, trzeba go zachować. Zakres streszczenia zależy od celu i limitu.
+
+## 17. Trzy długości — zachowanie sensu pod limitem
+
+**Wersja 1 — dwa zdania:** „W bibliotece szkolnej uruchomiono wymianę przeczytanych książek z możliwością dodawania rekomendacji. Po dwóch tygodniach wymieniono 38 egzemplarzy, lecz nie sprawdzono jeszcze, czy projekt zachęcił do czytania nowych osób; ocenę zaplanowano po miesiącu”.
+
+**Wersja 2 — jedno zdanie:** „Szkolna wymiana książek przyniosła 38 wymian w dwa tygodnie, ale jej wpływ na zainteresowanie czytaniem nie został jeszcze zbadany”.
+
+**Wersja 3 — bardzo krótka notatka:** „Wymiana książek działa; po dwóch tygodniach nie oceniono jeszcze jej wpływu na czytelnictwo”.
+
+Wersja trzecia jest użyteczna jako notatka robocza, ale pomija konkretną liczbę. Nie będzie najlepsza, jeśli polecenie wymaga podania wyniku liczbowego.
+
+## 18. Przekształcenia bez zmiany sensu
+
+### Mowa niezależna → zależna
+Oryginał: Marta powiedziała: „Jutro przyniosę książkę tutaj”.
+
+Przekształcenie w relacji wypowiadanej później z innego miejsca: Marta powiedziała, że następnego dnia przyniesie książkę tam.
+
+Zmiana „jutro” na „następnego dnia” i „tutaj” na „tam” zależy od sytuacji, z której relacjonujemy wypowiedź. Nie zmieniaj ich mechanicznie, jeśli kontekst pozostaje ten sam.
+
+### Styl potoczny → oficjalny
+Oryginał: „Nie da się znaleźć książek, bo oznaczenia są bez sensu”.
+
+Przekształcenie: „Czytelne oznaczenia działów mogłyby ułatwić samodzielne odnajdywanie książek w bibliotece”.
+
+To nie jest wyłącznie zamiana słów na bardziej formalne. Zmieniono również oskarżycielski ton na opis problemu i propozycję rozwiązania. W zadaniu wymagającym zachowania dokładnego sensu nie wolno jednak usuwać ważnej informacji o emocjach lub ocenie nadawcy.
+
+## 19. Ćwiczenia z kluczem
+
+### A. Co jest konieczne?
+Z tekstu źródłowego z rozdziału 16 wybierz trzy informacje, które muszą znaleźć się w streszczeniu, jeśli pytanie brzmi: „Jakie są dotychczasowe wyniki projektu i czego jeszcze nie wiadomo?”.
+
+**Klucz:** 38 wymienionych książek w pierwszych dwóch tygodniach; zaobserwowane rozmowy o tytułach można podać jako obserwację uzupełniającą; nie wiadomo, czy projekt zachęcił do czytania osoby rzadko odwiedzające bibliotekę. Sam plan oceny po miesiącu jest dodatkową informacją, jeśli odpowiedź ma objąć dalsze działania.
+
+### B. Wykryj zmianę sensu
+Źródło: „Nie sprawdzono, czy warsztaty wpłynęły na wyniki”.
+- Wersja 1: „Wpływ warsztatów na wyniki nie został sprawdzony”.
+- Wersja 2: „Warsztaty nie wpłynęły na wyniki”.
+
+**Klucz:** Wersja 1 zachowuje sens; wersja 2 zmienia brak wiedzy w twierdzenie o braku wpływu.
+
+### C. Zachowaj zastrzeżenie
+Źródło: „Projekt może poprawić dostęp do książek, jeśli półka będzie regularnie uzupełniana”.
+
+Niepoprawne skrócenie: „Projekt poprawi dostęp do książek”. Zniknął warunek. Poprawnie: „Projekt może poprawić dostęp do książek pod warunkiem regularnego uzupełniania półki”.
+
+## 20. Kontrola po drugim cyklu
+
+- [x] Dodano pełny tekst źródłowy i streszczenia o różnej długości.
+- [x] Pokazano, że wybór informacji zależy od celu i limitu polecenia.
+- [x] Dodano przekształcenia mowy zależnej i rejestru z kontrolą kontekstu.
+- [x] Wyraźnie odróżniono brak danych od dowodu braku efektu.
+- [ ] Pozostaje niezależna recenzja i porównanie z aktualnymi wymaganiami egzaminacyjnymi.

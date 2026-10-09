@@ -3,9 +3,9 @@ kod: PL.D08
 przedmiot: język polski
 blok: D
 numer: 8
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 ---
 
 # D08. List oficjalny — cel, układ i formalny rejestr
@@ -92,3 +92,66 @@ Przed pisaniem zaznacz: adresat, cel, argumenty, propozycja, formalny ton, zako�
 
 Odpowiedź jest kompletna, jeśli zawiera cel, uzasadnienie, propozycję i stosowny ton. Dokładny układ dopasuj do polecenia.
 
+
+
+## 13. Pełny model listu oficjalnego
+
+**Polecenie treningowe:** napisz do dyrekcji szkoły list z prośbą o uruchomienie półki wymiany książek. Uzasadnij propozycję i wskaż, jak można zorganizować inicjatywę.
+
+**Kraków, 9 października 2026 r.**
+
+**Szanowna Pani Dyrektor,**
+
+zwracam się z prośbą o rozważenie uruchomienia w naszej szkole półki wymiany książek. Uczniowie mogliby przynosić przeczytane już tytuły w dobrym stanie i wybierać spośród nich inne książki.
+
+Takie rozwiązanie ułatwiłoby dostęp do lektur i książek rozwijających zainteresowania bez konieczności kupowania każdego egzemplarza. Mogłoby również zachęcić uczniów do polecania sobie tytułów i rozmów o przeczytanych historiach. Warto byłoby rozpocząć od miesięcznego pilotażu, aby sprawdzić, czy uczniowie korzystają z półki i czy zasady są dla nich zrozumiałe.
+
+Proponuję ustawić regał w pobliżu biblioteki, a przy każdej książce umieszczać kartę z tytułem i krótką rekomendacją. Wolontariusze mogliby raz w tygodniu sprawdzać stan książek i porządek. Chętnie pomogę w przygotowaniu regulaminu oraz informacji dla uczniów.
+
+Uprzejmie proszę o rozważenie tej propozycji. Dziękuję za poświęcenie czasu na zapoznanie się z moim pomysłem.
+
+**Z poważaniem**  
+Anna Kowalska  
+uczennica klasy VIII
+
+*Dane osobowe, miejscowość i data w modelu są przykładowe. W realnym zadaniu należy zastosować dane i formę wymagane poleceniem; nie wpisuj fikcyjnych danych jako rzeczywistych.*
+
+### Analiza modelu
+- **Cel:** prośba o rozważenie półki wymiany książek.
+- **Uzasadnienie:** łatwiejszy dostęp do książek i wymiana rekomendacji.
+- **Propozycja:** miejsce, karty rekomendacji, wolontariusze, pilotaż.
+- **Rejestr:** uprzejmy, formalny, ale prosty.
+- **Zakończenie:** ponowienie prośby i stosowny zwrot pożegnalny.
+
+## 14. Najczęstsze błędy w piśmie oficjalnym
+
+1. **Niejasny cel:** autor długo opisuje problem, ale nie mówi, czego oczekuje.
+2. **Rozkaz zamiast prośby:** „Macie natychmiast ustawić regał”.
+3. **Nieuzasadniona generalizacja:** „Nikt nie ma dostępu do książek”.
+4. **Oskarżenie bez dowodu:** przypisywanie złej woli adresatowi.
+5. **Propozycja niewykonalna lub niekonkretna:** „Proszę zrobić coś, żeby było lepiej”.
+6. **Niedopasowany rejestr:** slang, emotikony lub poufałe zwroty w piśmie do instytucji.
+7. **Nadmierny patos:** formalność nie wymaga sztucznych, skomplikowanych zdań.
+8. **Pominięcie wymagania z polecenia:** np. brak argumentu albo konkretnego rozwiązania.
+
+## 15. Przekształcenie nieformalnej prośby
+
+Wersja wyjściowa: „Zróbcie w bibliotece jakieś lepsze znaki, bo niczego nie da się znaleźć i wszyscy się denerwują”.
+
+Wersja poprawiona: „Zwracam się z prośbą o rozważenie poprawy oznaczeń działów w bibliotece. Czytelniejsze etykiety oraz spis działów przy wejściu mogłyby ułatwić uczniom samodzielne odnajdywanie książek”.
+
+**Dlaczego lepiej?** Problem jest opisany konkretnie, propozycja jest wykonalna, a twierdzenia o wszystkich użytkownikach i ich emocjach nie są przedstawiane jako fakty bez podstaw.
+
+## 16. Zadanie samodzielne z kluczem kryterialnym
+
+Napisz list do organizatora lokalnego wydarzenia z prośbą o umożliwienie uczniom zaprezentowania projektów. List powinien zawierać: adresata, cel, dwa uzasadnienia, jedną propozycję organizacyjną, deklarację gotowości do pomocy i uprzejme zakończenie.
+
+**Kontrola odpowiedzi:** nie istnieje jeden obowiązkowy tekst. Sprawdź, czy wszystkie sześć elementów jest obecnych, argumenty różnią się od siebie, propozycja zawiera konkretny sposób organizacji, a język pozostaje uprzejmy i rzeczowy. Jeśli polecenie narzuca inną formę lub limit, ma ono pierwszeństwo przed tym modelem.
+
+## 17. Kontrola po drugim cyklu
+
+- [x] Dodano pełny list modelowy i opis funkcji jego części.
+- [x] Doprecyzowano, że układ należy dostosować do polecenia, a dane przykładowe nie są rzeczywiste.
+- [x] Dodano klinikę błędów i transformację stylu potocznego na formalny.
+- [x] Dodano zadanie z kryteriami kompletności.
+- [ ] Pozostaje niezależna recenzja polonistyczna i kontrola względem aktualnego informatora.

@@ -3,9 +3,9 @@ kod: PL.D11
 przedmiot: język polski
 blok: D
 numer: 11
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 wymaga: znajomość omawianych lektur; PL.D05
 ---
 
@@ -110,3 +110,66 @@ Temat: „Czy człowiek powinien ponosić odpowiedzialność za swoje decyzje?�
 
 Jeśli temat wymaga kilku przykładów, wybierz takie, które pokazują różne aspekty problemu, a nie dwa niemal identyczne epizody. Krótkie, precyzyjnie objaśnione przykłady są często skuteczniejsze niż długie streszczenia. Upewnij się, że każdy przykład wnosi coś nowego do argumentacji.
 
+
+
+## 15. Jak wybierać lekturę pod temat, a nie temat pod lekturę
+
+Najpierw ustal, co dokładnie trzeba udowodnić. Dopiero potem wybierz utwór. Jeśli zaczynasz od ulubionej lektury, możesz próbować dopasować ją do problemu na siłę i streszczać wydarzenia, które niewiele wnoszą.
+
+**Krok 1 — nazwij ideę:** np. odpowiedzialność, przyjaźń, odwaga, samotność, przemiana, konsekwencje decyzji.
+
+**Krok 2 — doprecyzuj relację:** czy temat dotyczy przyczyny, skutku, konfliktu wartości, ceny decyzji czy zmiany postaci?
+
+**Krok 3 — wybierz konkretny epizod:** decyzję, rozmowę, próbę, odmowę, poświęcenie, błąd lub konsekwencję.
+
+**Krok 4 — sprawdź fakty:** imiona, kolejność wydarzeń, motywacje i skutki. Jeśli nie pamiętasz, sprawdź utwór.
+
+**Krok 5 — wyjaśnij znaczenie:** co dokładnie epizod pokazuje i dlaczego wspiera argument?
+
+## 16. Model z lektury — od faktu do argumentu
+
+**Temat:** „Czy człowiek powinien ponosić odpowiedzialność za swoje decyzje?”
+
+**Przykład z *Opowieści wigilijnej* Charlesa Dickensa:** przemiana Ebenezera Scrooge’a wiąże się z konfrontacją z własnym postępowaniem i możliwymi konsekwencjami dalszego życia. Bohater dostrzega, że jego skąpstwo i obojętność wpływają na relacje z innymi. Po tej konfrontacji zaczyna postępować inaczej i podejmuje działania na rzecz ludzi, których wcześniej traktował z dystansem.
+
+**Akapit argumentacyjny:** „Człowiek powinien brać odpowiedzialność za swoje decyzje, ponieważ ich skutki dotykają nie tylko jego samego. W *Opowieści wigilijnej* Scrooge dostrzega, do czego prowadzi jego obojętność wobec innych, i postanawia zmienić zachowanie. Jego przemiana pokazuje, że uznanie konsekwencji własnych wyborów może być początkiem naprawy relacji. Nie oznacza to, że każdą szkodę można łatwo cofnąć, lecz że odpowiedzialność wymaga działania, a nie tylko żalu”.
+
+**Dlaczego przykład jest użyteczny?** Wskazuje konkretną postawę, zmianę i związek z tematem. Nie streszcza całej fabuły i nie twierdzi, że Scrooge naprawił każdy skutek swoich wcześniejszych decyzji.
+
+## 17. Trzy częste sposoby nadużywania lektury
+
+1. **Tytuł zamiast dowodu:** „Widać to w *Opowieści wigilijnej*”. Brakuje wydarzenia i wyjaśnienia.
+2. **Streszczenie zamiast argumentu:** uczeń opowiada kilka rozdziałów, ale nie mówi, co z nich wynika dla tematu.
+3. **Nadmierne uogólnienie:** „Scrooge się zmienił, więc każdy człowiek zmieni się po trudnym doświadczeniu”. Jedna postać nie dowodzi reguły dotyczącej wszystkich ludzi.
+
+## 18. Ćwiczenie: wybierz i obroń przykład
+
+Temat: „Przyjaźń wymaga odpowiedzialności”. Przygotuj dwa możliwe przykłady z lektur, które znasz. Dla każdego uzupełnij tabelę:
+
+| Pytanie | Odpowiedź |
+|---|---|
+| Jakie wydarzenie przywołuję? | konkretna sytuacja |
+| Jakie działanie lub decyzja jest ważna? | czyn bohatera, nie tylko cecha |
+| Co pokazuje to działanie? | interpretacja oparta na utworze |
+| Jak łączy się z tematem? | wyjaśnienie związku |
+| Jakie jest ograniczenie przykładu? | czego nie dowodzi |
+
+Wybierz przykład, który najłatwiej objaśnić i który bezpośrednio dotyczy odpowiedzialności. Nie wybieraj automatycznie postaci „najbardziej znanej”.
+
+## 19. Jak pracować, gdy nie pamiętasz szczegółu?
+
+Nie wymyślaj dialogu, cytatu ani zdarzenia. Możesz:
+- przywołać ogólną sytuację, której jesteś pewien;
+- pominąć szczegół, którego nie pamiętasz;
+- sprawdzić tekst lub wiarygodne opracowanie przed napisaniem pracy;
+- zamiast cytatu użyć poprawnej parafrazy, jeśli polecenie nie wymaga cytowania.
+
+Jeżeli zadanie wymaga konkretnego przykładu z określonej lektury obowiązkowej, nie zastępuj go dowolnym filmem lub własnym doświadczeniem. Najpierw sprawdź wymaganie polecenia.
+
+## 20. Kontrola po drugim cyklu
+
+- [x] Dodano procedurę wyboru lektury po analizie tematu.
+- [x] Dodano konkretny model argumentu z *Opowieści wigilijnej*.
+- [x] Rozdzielono fakt fabularny, interpretację i zakres wniosku.
+- [x] Dodano tabelę porównywania kandydatów na przykład.
+- [ ] Pozostaje niezależna recenzja polonistyczna i kontrola wymagań aktualnego egzaminu.

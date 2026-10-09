@@ -1,21 +1,16 @@
-# Audyt lekcji D05 — Rozprawka
+# Audyt D05 — rozprawka
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja zawierała definicje, plan, argumentacyjny akapit, przykłady, ćwiczenia i listę samokontroli, ale była zbyt szkicowa jak na pełną lekcję: brakowało procedury rozkodowania tematu, kompletnej pracy modelowej i rozpisania mechanizmu argumentacji na przykładzie.
 
-Był tylko ogólny schemat; brakowało różnicy tezy i hipotezy, modelu akapitu, doboru przykładu z lektury, kontroli argumentacji i ćwiczeń redakcyjnych.
+## Uzupełnienie
+Dodano procedurę od analizy słów ograniczających temat po weryfikację przykładu. Dodano modelowy akapit oraz pełną rozprawkę na temat samopoznania w trudnych sytuacjach, wraz z komentarzem do funkcji akapitów. Dodano zadania naprawcze oraz rozszerzoną listę samokontroli.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Przykład Scrooge’a jest zgodny z ogólnym przebiegiem *Opowieści wigilijnej*; nie przypisano mu nieuzasadnionych szczegółowych zdarzeń.
+- Wniosek został ograniczony: trudności mogą wspierać samopoznanie, ale nie gwarantują przemiany.
+- Przykład z życia jest wyraźnie przedstawiony jako ilustracja, nie dowód uniwersalnej reguły.
+- Sprawdzono, że modelowa praca ma stanowisko, dwa argumenty, wyjaśnienia i zakończenie.
 
-Dodano pełną procedurę planowania, argumentacyjny akapit, przykładowy temat, ćwiczenia oraz rubrykę treningową wyraźnie oznaczoną jako autorską.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D05 v3.0 po drugim wewnętrznym cyklu. Potrzebna niezależna recenzja polonistyczna i kontrola względem aktualnego informatora CKE.

@@ -1,21 +1,16 @@
-# Audyt lekcji D12 — Kontrola języka, ortografii i interpunkcji
+# Audyt D12 — kontrola języka i zapisu
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja miała listę kontroli, cztery przejścia korekty i przykłady, ale brakowało priorytetyzacji poprawek oraz rozróżnienia błędu językowego od błędu logicznego. Potrzebny był też zestaw z kluczem, który wyjaśnia reguły.
 
-Lista kontrolna była ogólna; brakowało kolejności korekty, ćwiczenia z kluczem i zastrzeżenia o aktualności reguł normatywnych.
+## Uzupełnienie
+Dodano hierarchię korekty, przykłady interpunkcyjne, logiczne, referencyjne i stylistyczne, dziennik własnych błędów oraz test korektorski z omówieniem.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Klucz do testu zawiera przecinki w miejscach wprowadzających zdania podrzędne.
+- Przykład błędu logicznego poprawia wnioskowanie, nie tylko zapis.
+- W przykładzie z niejasnym zaimkiem zaznaczono, że wybór wersji zależy od zamierzonego sensu.
+- Nie przedstawiono pojedynczej procedury jako zastępującej aktualne źródła normatywne.
 
-Dodano korektę w czterech przejściach, przykładową poprawę, ćwiczenia i checklistę. Reguły normatywne należy w razie szczegółowych porad sprawdzać w aktualnych źródłach.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D12 v3.0 po drugim wewnętrznym cyklu; niezależna recenzja i kontrola aktualnych wymagań nadal wymagane.

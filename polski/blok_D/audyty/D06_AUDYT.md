@@ -1,21 +1,16 @@
-# Audyt lekcji D06 — Opowiadanie twórcze
+# Audyt D06 — opowiadanie twórcze
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja omawiała elementy fabuły, narratora, dialog, napięcie i listę kontroli, ale brakowało kompletnego modelu opowiadania oraz szczegółowego wyjaśnienia, jak kontrolować przyczynowość scen.
 
-Brakowało kontroli punktu widzenia, logiki motywacji, roli dialogu/opisu i spójnego zakończenia.
+## Uzupełnienie
+Dodano procedurę planowania bohatera, celu, przeszkody, stawki, decyzji, punktu zwrotnego, kulminacji i zmiany. Dodano tabelę planowania scen, pełne opowiadanie modelowe i analizę jego kompozycji, narracji oraz zakończenia.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Narracja pierwszoosobowa pozostaje ograniczona do wiedzy narratorki; myśli Kuby nie są przedstawiane jako bezpośrednio znane.
+- Konflikt i rozwiązanie są powiązane przyczynowo.
+- Zakończenie zachowuje konsekwencje społeczne i nie sugeruje natychmiastowego wybaczenia.
+- Model spełnia temat decyzji o powiedzeniu prawdy.
 
-Dodano konstrukcję opowiadania, narratora, czas, dialog, ćwiczenia i listę kontroli. W dalszym audycie porównać elementy z aktualnymi wymaganiami konkretnego polecenia egzaminacyjnego.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D06 v3.0 po drugim wewnętrznym cyklu; niezależna recenzja i porównanie z aktualnymi wymaganiami nadal wymagane.

@@ -1,21 +1,16 @@
-# Audyt lekcji D07 — Przemówienie
+# Audyt D07 — przemówienie
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja przedstawiała strukturę przemówienia, odbiorcę, środki perswazji i plan, ale nie zawierała pełnego modelu wypowiedzi, który pozwalałby sprawdzić realizację wszystkich elementów.
 
-Schemat nie wyjaśniał różnicy między przemówieniem a rozprawką ani dopasowania do odbiorcy.
+## Uzupełnienie
+Dodano procedurę przygotowania wystąpienia, pełne przemówienie z analizą, warianty rejestru dla różnych odbiorców oraz rozróżnienie perswazji i manipulacji. Rozszerzono zadanie autokorekty.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Model ma zwrot, cel, dwa różne argumenty, propozycję organizacyjną i konkretny apel.
+- Nie wykorzystuje nieudokumentowanych statystyk.
+- Środki retoryczne są funkcjonalne i nie zastępują argumentacji.
+- Różnice rejestru są adekwatne do odbiorcy.
 
-Dodano strukturę, rejestr, środki perswazji, model planu i ćwiczenia. Do arkusza zawsze dopasować wymagane elementy wskazane w poleceniu.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D07 v3.0 po drugim wewnętrznym cyklu; niezależna recenzja i aktualna walidacja egzaminacyjna nadal wymagane.

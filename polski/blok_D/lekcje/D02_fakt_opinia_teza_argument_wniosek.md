@@ -3,9 +3,9 @@ kod: PL.D02
 przedmiot: język polski
 blok: D
 numer: 2
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 wymaga: PL.D01
 ---
 
@@ -175,3 +175,46 @@ Wypowiedź: „Warto wprowadzić więcej zajęć terenowych, bo uczniowie lubią
 
 **Zadanie:** popraw wypowiedź tak, aby była ostrożniejsza i lepiej uzasadniona. Możliwa wersja: „Warto rozważyć częstsze zajęcia terenowe, ponieważ pozwalają obserwować zjawiska w naturalnym środowisku. Podczas wycieczki do lasu uczniowie mogli rozpoznawać drzewa na podstawie ich cech. Taki przykład pokazuje, że zajęcia terenowe mogą uzupełniać naukę w sali, choć ich skuteczność zależy od celu lekcji i sposobu organizacji”.
 
+
+
+## 13. Doprecyzowanie: sprawdzalność nie oznacza automatycznie prawdziwości
+
+W szkolnych zadaniach słowo **fakt** bywa używane skrótowo. Precyzyjniej należy odróżniać:
+
+- **twierdzenie sprawdzalne** — można wskazać sposób ustalenia, czy jest prawdziwe;
+- **twierdzenie potwierdzone** — dostępne wiarygodne dane wspierają jego prawdziwość;
+- **opinię lub ocenę** — wyraża wartościowanie, preferencję albo interpretację;
+- **twierdzenie niezweryfikowane** — może być sprawdzalne, ale materiał nie daje podstaw, by uznać je za potwierdzone.
+
+Zdanie „W konkursie wzięło udział 48 osób” ma postać informacji sprawdzalnej. Jeśli jednak autor nie podaje źródła, a zadanie pyta o wiarygodność tekstu, nie należy mylić samego brzmienia zdania z niezależnym potwierdzeniem liczby. W odpowiedziach szkolnych kieruj się zakresem polecenia: rozpoznanie rodzaju wypowiedzi to co innego niż ocena rzetelności źródła.
+
+## 14. Warsztat: twierdzenie — racja — dowód — wyjaśnienie
+
+Użyj czterech elementów, by ocenić argumentację:
+
+1. **Twierdzenie:** co autor chce, by odbiorca uznał?
+2. **Racja:** dlaczego to twierdzenie miałoby być słuszne?
+3. **Dowód lub przykład:** na czym opiera się racja?
+4. **Wyjaśnienie związku:** dlaczego dowód wspiera właśnie to twierdzenie?
+
+Jeśli brakuje racji, autor jedynie ogłasza stanowisko. Jeśli brakuje dowodu, racja może być wiarygodna, ale nieudokumentowana. Jeśli brakuje wyjaśnienia związku, przykład może być ciekawy, lecz nie wiadomo, jak wspiera tezę.
+
+### Zadanie
+
+> Szkoła powinna utworzyć miejsce do spokojnego czytania, ponieważ uczniowie potrzebują odpoczynku od hałasu. W ankiecie 32 z 50 respondentów wskazało, że w czasie przerw trudno im skupić się w zatłoczonym korytarzu. Wynik ten sugeruje, że warto sprawdzić, czy osobna przestrzeń odpowie na zgłaszaną potrzebę.
+
+1. Wskaż twierdzenie.
+2. Wskaż rację.
+3. Wskaż dowód liczbowy.
+4. Dlaczego końcowy wniosek jest ostrożniejszy niż kategoryczne „miejsce rozwiąże problem”?
+5. Jakiej informacji brakuje, aby ocenić, czy ankieta opisuje całą szkołę?
+
+**Klucz:** 1. Szkoła powinna utworzyć miejsce do spokojnego czytania. 2. Uczniowie potrzebują odpoczynku od hałasu. 3. 32 z 50 respondentów zgłosiło trudność z koncentracją w zatłoczonym korytarzu. 4. Ankieta wskazuje potrzebę, ale nie dowodzi, że proponowane rozwiązanie będzie skuteczne. 5. Między innymi informacji o sposobie doboru respondentów, liczbie wszystkich uczniów i odsetku odpowiedzi.
+
+## 15. Ponowna kontrola po uzupełnieniu
+
+- [x] Rozróżniono typ wypowiedzi od jej prawdziwości i wiarygodności.
+- [x] Dodano schemat kontroli argumentu, który nie sprowadza się do zapamiętania definicji.
+- [x] Klucz uwzględnia ograniczenia danych i nie ogłasza hipotezy faktem.
+- [x] Zachowano ćwiczenia z poprzedniej wersji.
+- [ ] Pozostaje niezależna recenzja polonistyczna oraz porównanie całego bloku z aktualnym informatorem i arkuszami.

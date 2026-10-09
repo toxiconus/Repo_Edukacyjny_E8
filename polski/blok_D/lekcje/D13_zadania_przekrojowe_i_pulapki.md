@@ -3,9 +3,9 @@ kod: PL.D13
 przedmiot: język polski
 blok: D
 numer: 13
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 wymaga: PL.D01–D12
 ---
 
@@ -149,3 +149,84 @@ Po sprawdzianie nie zapisuj tylko wyniku. Przyporządkuj każdy błąd do umiej�
 - Jeśli skracasz tekst, zmieniając sens — wróć do D10.
 - Jeśli praca zawiera błędy zapisu — użyj procedury D12.
 
+
+
+## 16. Pełny zestaw przekrojowy — praca na tekście, danych i decyzji
+
+### Materiał 1 — tekst informacyjny
+
+> W ramach projektu „Szkoła bliżej książek” uruchomiono w bibliotece półkę rekomendacji. Uczniowie mogą zapisać na kartach tytuły, które polecają innym, i dodać jednozdaniowe uzasadnienie. W pierwszym miesiącu pojawiło się 46 rekomendacji. Bibliotekarka zauważyła, że część uczniów wybierała książki na podstawie kart, lecz nie rejestrowano, ile osób zrobiło to po raz pierwszy. Równolegle rozpoczęto konkurs na recenzję, dlatego nie można przypisać całego wzrostu zainteresowania wyłącznie półce rekomendacji.
+
+### Materiał 2 — dane
+
+| Wskaźnik | Przed projektem | W pierwszym miesiącu |
+|---|---:|---:|
+| Karty rekomendacji | 0 | 46 |
+| Wypożyczenia książek z wybranej półki | 28 | 39 |
+| Uczestnicy konkursu recenzenckiego | 0 | 18 |
+
+### Polecenia
+1. Podaj temat i główną myśl Materiału 1.
+2. Wskaż dwie informacje jawne.
+3. O ile wzrosła liczba wypożyczeń książek z wybranej półki?
+4. Czy tabela dowodzi, że wzrost spowodowała wyłącznie półka rekomendacji? Uzasadnij.
+5. Wskaż ograniczenie danych dotyczących osób, które wcześniej nie korzystały z półki.
+6. Sformułuj jeden ostrożny wniosek i jeden wniosek nieuprawniony.
+7. Napisz dwuzdaniowe streszczenie Materiału 1.
+8. Zaproponuj jeden sposób zebrania lepszych danych.
+
+### Klucz
+1. Temat: szkolna półka rekomendacji i jej dotychczasowe wykorzystanie. Główna myśl: pojawiły się rekomendacje i wzrosły wypożyczenia z wybranej półki, ale równoległy konkurs i brak danych o nowych użytkownikach ograniczają wnioski o skuteczności.
+2. Np. w pierwszym miesiącu powstało 46 kart; równolegle rozpoczął się konkurs recenzencki.
+3. O 11 wypożyczeń.
+4. Nie. W tym samym czasie rozpoczął się konkurs, a tabela nie pozwala oddzielić wpływu poszczególnych działań.
+5. Nie rejestrowano, ilu uczniów korzystało z półki po raz pierwszy.
+6. Ostrożny: w pierwszym miesiącu wzrosła liczba wypożyczeń z wybranej półki. Nieuprawniony: półka sama spowodowała cały wzrost i każdy uczeń zaczął czytać więcej.
+7. Przykład: „W bibliotece uruchomiono półkę rekomendacji, na której w pierwszym miesiącu pojawiło się 46 kart, a wypożyczenia książek z tej półki wzrosły z 28 do 39. Ponieważ równolegle rozpoczął się konkurs recenzencki i nie sprawdzano, ilu użytkowników było nowych, nie można przypisać całego efektu wyłącznie rekomendacjom”.
+8. Np. zapisać anonimowo, czy użytkownik korzystał wcześniej z półki, oraz obserwować dane przez dłuższy okres; opisać metodę i zachować prywatność.
+
+## 17. Praca pisemna — wybierz formę zgodnie z celem
+
+Na podstawie materiałów z rozdziału 16 wybierz jedno zadanie:
+
+**A. Krótka odpowiedź:** wyjaśnij, dlaczego nie można przypisać całego wzrostu jednej inicjatywie. Wymagaj twierdzenia i dwóch przesłanek.
+
+**B. Ogłoszenie:** poinformuj o dalszym zbieraniu rekomendacji. W zadaniu twórczym wymyśl spójny termin i miejsce; jeśli pracujesz wyłącznie na źródle, nie dodawaj niepodanych szczegółów.
+
+**C. Mini-rozprawka:** „Czy rekomendacje innych osób pomagają wybierać książki?”. Zajmij stanowisko, podaj dwa argumenty i wyjaśnij ograniczenie danych z tabeli.
+
+**D. Streszczenie:** streść oba materiały w maksymalnie trzech zdaniach, zachowując informację o równoległym konkursie i ograniczeniach wnioskowania.
+
+## 18. Procedura rozwiązywania trudnego zadania
+
+1. **Rozdziel źródła:** wypisz, co podaje tekst, co tabela, a co polecenie.
+2. **Ustal jednostkę i okres:** nie porównuj liczb, jeśli nie wiesz, czego dotyczą.
+3. **Oznacz status informacji:** jawna, wniosek, hipoteza, brak podstaw.
+4. **Zaznacz ograniczenia:** mała próba, brak pomiaru przed zmianą, równoległe działania, nieznana metoda.
+5. **Dobierz formę odpowiedzi:** jedno zdanie, lista, streszczenie, forma użytkowa czy dłuższa wypowiedź.
+6. **Sprawdź kompletność:** policz wszystkie obowiązki z polecenia.
+7. **Przeprowadź korektę D12:** najpierw logika, potem język i zapis.
+
+## 19. Diagnoza błędów po teście
+
+Nie zapisuj wyłącznie liczby punktów. Przyporządkuj każdy błąd do kategorii:
+- odczytanie informacji jawnej;
+- temat a główna myśl;
+- wnioskowanie i granice danych;
+- porównywanie źródeł;
+- argument i dowód;
+- lektura jako przykład;
+- forma użytkowa;
+- streszczenie i parafraza;
+- kompletność odpowiedzi;
+- poprawność językowa.
+
+Wybierz dwie najsłabsze kategorie i wróć do właściwych lekcji. Dopiero po poprawie rozwiąż nowe zadanie — nie ucz się samego klucza na pamięć.
+
+## 20. Kontrola po drugim cyklu
+
+- [x] Dodano zadanie integrujące tekst informacyjny i tabelę.
+- [x] Klucz sprawdza obliczenia oraz ograniczenia wnioskowania.
+- [x] Dodano warianty pracy pisemnej dopasowane do różnych form.
+- [x] Dodano system diagnozy błędów po teście.
+- [ ] Pozostaje niezależna recenzja polonistyczna i porównanie z aktualnymi arkuszami.

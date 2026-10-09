@@ -1,21 +1,17 @@
-# Audyt lekcji D01 — Czytanie ze zrozumieniem tekstu nieliterackiego
+# Audyt D01 — czytanie ze zrozumieniem
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Pierwotna wersja rozdzielała temat i główną myśl, informację jawną i wniosek oraz zawierała procedurę pracy z dowodem, ćwiczenia i test. Brakowało jednak praktycznego zadania z tabelą liczbową, kontroli zmieniającego się mianownika oraz jawnego zadania łączącego tekst z wykresem.
 
-Temat i główna myśl były zbyt blisko siebie; brakowało pełnej procedury pracy z dowodem, granic wnioskowania, analizy stanowiska cytowanego, danych/wykresów, znaczenia z kontekstu, ćwiczeń z kluczem i testu końcowego.
+## Uzupełnienie
+Dodano warsztat interpretacji danych: liczba wypożyczeń, liczba zapisanych uczniów, zmiana procentowa, średnia na osobę i ograniczenia danych zbiorczych. Dodano ćwiczenie łączące twierdzenie tekstowe z wynikami ankiety oraz sprawdzające, czy „większość” ma potwierdzenie w liczbach.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Obliczenie 30/120 = 25% jest poprawne.
+- Zmiana liczby zapisanych z 60 do 100 to wzrost o 66,7%; podano to jako przybliżenie.
+- Wniosek o średniej liczbie wypożyczeń na osobę jest wyraźnie ograniczony do ilorazu sumy i liczby zapisanych; tekst ostrzega, że nie opisuje on zachowania każdej osoby.
+- 22/40 = 55%, zatem „większość badanych” jest zgodne z tabelą, ale nie można uogólniać na wszystkich uczniów.
+- Zachowano rozróżnienie obserwacji, deklaracji i dowodu przyczynowego.
 
-Rozdzielono temat, problem, główną myśl, informację jawną, wniosek, hipotezę i nadinterpretację; dodano algorytm, dwa teksty modelowe, zadania wielopoziomowe, klucz, test 20 pkt, fiszki i samoocenę. Ograniczenia: przed finalnym uznaniem za kanon porównać zadania z pełnym informatorem CKE i arkuszami.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D01 v3.0 po drugim wewnętrznym cyklu. Nie jest to niezależna recenzja ekspercka ani certyfikacja CKE. Pozostaje porównanie z aktualnym informatorem i arkuszami oraz niezależna korekta polonistyczna.

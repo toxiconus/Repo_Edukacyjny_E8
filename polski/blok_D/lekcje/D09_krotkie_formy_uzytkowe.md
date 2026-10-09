@@ -3,9 +3,9 @@ kod: PL.D09
 przedmiot: język polski
 blok: D
 numer: 9
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 ---
 
 # D09. Krótkie formy użytkowe: ogłoszenie, zaproszenie, podziękowanie i życzenia
@@ -122,3 +122,76 @@ Po każdym tekście wypisz, jakie elementy polecenia zostały spełnione. Popro�
 
 Sprawdź zgodność z formą, kompletność danych, dopasowanie stylu, zwięzłość i poprawność zapisu. Nie dodawaj informacji niepotrzebnych tylko po to, by tekst był dłuższy. Jeżeli polecenie wymaga konkretnego elementu, musi on być czytelny, a nie ukryty w domyśle.
 
+
+
+## 16. Wzorce kompletnych form — cztery różne cele
+
+Poniższe przykłady używają fikcyjnych danych treningowych. W zadaniu opartym na materiale źródłowym należy zachować informacje z polecenia i nie wymyślać sprzecznych szczegółów.
+
+### A. Ogłoszenie
+
+**SZKOLNA ZBIÓRKA KSIĄŻEK**
+
+Samorząd uczniowski organizuje zbiórkę książek w dobrym stanie na potrzeby półki wymiany. Książki można przynosić od poniedziałku do środy do biblioteki szkolnej, przed pierwszą lekcją lub podczas długiej przerwy. Prosimy, aby egzemplarze były kompletne i czyste. Szczegółowych informacji udziela opiekun samorządu.
+
+**Dlaczego działa?** Nagłówek wskazuje sprawę, treść podaje organizatora, cel, termin, miejsce, zasady i kontakt. Nie ukrywa najważniejszych informacji w ozdobnym wstępie.
+
+### B. Zaproszenie
+
+**Zaproszenie**
+
+Samorząd uczniowski serdecznie zaprasza uczniów klas VII–VIII na szkolne spotkanie wymiany książek, które odbędzie się w piątek o godz. 12.00 w bibliotece. Zachęcamy do przyniesienia jednej książki w dobrym stanie oraz krótkiej rekomendacji dla kolejnego czytelnika. Będzie to okazja do poznania nowych tytułów i podzielenia się własnymi zainteresowaniami.
+
+**Dlaczego działa?** Jasno wskazuje, kto zaprasza, kogo, na co, kiedy i gdzie. Jeśli polecenie wymaga dokładnej daty, nie wystarczy „w piątek” — trzeba podać datę.
+
+### C. Podziękowanie
+
+Dziękujemy wolontariuszom za przygotowanie regału, uporządkowanie książek i pomoc uczestnikom podczas pierwszego dnia wymiany. Dzięki Waszej pracy wydarzenie przebiegło sprawnie, a uczniowie mogli szybko znaleźć interesujące ich tytuły. Doceniamy poświęcony czas i gotowość do współpracy.
+
+**Dlaczego działa?** Podziękowanie wskazuje odbiorców, konkretne działania i ich znaczenie. Nie ogranicza się do ogólnego „dziękujemy za wszystko”.
+
+### D. Życzenia
+
+Z okazji zakończenia roku życzę Ci satysfakcji z osiągnięć, odwagi w podejmowaniu nowych wyzwań i wielu ciekawych okazji do rozwijania pasji. Niech wakacje przyniosą Ci odpoczynek, dobre spotkania i energię do kolejnych planów!
+
+**Dlaczego działa?** Życzenia pasują do okazji, są pozytywne i nie obiecują rzeczy, na które nadawca nie ma wpływu.
+
+## 17. Różnice między formami — test wyboru
+
+| Sytuacja | Najlepsza forma | Główne zadanie |
+|---|---|---|
+| Informujesz uczniów o zmianie miejsca spotkania | Ogłoszenie/komunikat | Szybko i jasno przekazać dane |
+| Chcesz, by określona osoba przybyła na wydarzenie | Zaproszenie | Zachęcić do udziału i podać szczegóły |
+| Chcesz wyrazić wdzięczność za konkretną pomoc | Podziękowanie | Nazwać pomoc i jej znaczenie |
+| Chcesz uczcić czyjś sukces lub okazję | Życzenia | Dopasować treść do osoby i sytuacji |
+
+W praktyce formy mogą się częściowo pokrywać, ale polecenie decyduje o tym, jak nazwać i zbudować wypowiedź. Nie dopisuj długiej argumentacji do ogłoszenia, jeśli nie jest potrzebna.
+
+## 18. Ćwiczenie naprawcze z kluczem
+
+**Tekst:** „Zapraszamy na spotkanie. Przyjdźcie, będzie fajnie”.
+
+**Zadanie:** popraw tekst, aby odbiorca mógł rzeczywiście wziąć udział. Uzupełnij organizatora, adresatów, nazwę wydarzenia, dokładny termin, miejsce i ewentualne zasady udziału. Jeśli tych danych nie podano, oznacz je jako brakujące zamiast wymyślać je w zadaniu, które wymaga pracy wyłącznie na źródle.
+
+**Przykładowa poprawa w zadaniu twórczym:** „Samorząd uczniowski zaprasza uczniów klas VII–VIII na spotkanie wymiany książek w piątek 16 października o godz. 12.00 w bibliotece szkolnej. Można przynieść jedną książkę w dobrym stanie. Do zobaczenia!”. Data jest przykładowa i wymaga dostosowania do realnego polecenia.
+
+## 19. Spójność danych i ekonomia formy
+
+W krótkiej formie sprawdzaj przede wszystkim:
+- czy termin jest jednoznaczny (data i godzina, jeśli wymagane);
+- czy miejsce można odnaleźć;
+- czy odbiorca wie, kto organizuje wydarzenie;
+- czy warunki uczestnictwa nie są sprzeczne;
+- czy podziękowanie odnosi się do realnej czynności;
+- czy życzenia pasują do relacji i okazji;
+- czy nie ma informacji, które odwracają uwagę od celu.
+
+Nie należy jednak stosować mechanicznej listy, jeśli polecenie wymaga tylko jednej krótkiej formy i wyraźnie ogranicza treść. Wykonaj wymagania, a potem usuń zbędne zdania.
+
+## 20. Kontrola po drugim cyklu
+
+- [x] Dodano kompletne modele czterech form.
+- [x] Wskazano funkcję każdego modelu i najważniejsze elementy.
+- [x] Rozróżniono zadanie twórcze od zadania opartego na źródle.
+- [x] Podkreślono, że dane fikcyjne są tylko treningowe.
+- [ ] Pozostaje niezależna recenzja polonistyczna i walidacja względem aktualnego informatora.

@@ -3,9 +3,9 @@ kod: PL.D05
 przedmiot: język polski
 blok: D
 numer: 5
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 wymaga: PL.D01–D04; umiejętność przywoływania lektur
 ---
 
@@ -163,3 +163,98 @@ To model logiki, a nie jedyna poprawna odpowiedź. Uczeń może zająć inne sta
 
 Napisz rozprawkę do powyższego tematu. Po napisaniu oznacz w tekście: T — tezę, A1/A2 — argumenty, P — przykłady, W — wyjaśnienia i Z — zakończenie. Jeśli akapit zawiera przykład bez wyjaśnienia, dopisz zdanie łączące go z argumentem. Jeśli oba argumenty mówią w istocie to samo, zmień jeden z nich.
 
+
+
+## 17. Od tematu do planu — procedura przed pisaniem
+
+### Krok 1. Rozkoduj temat
+Zaznacz słowa ograniczające problem: „zawsze”, „czy”, „w jakim stopniu”, „w życiu człowieka”, „na podstawie lektury”. Nie pomijaj negacji ani warunku. Temat „Czy warto zawsze mówić prawdę?” nie jest tym samym co „Czy warto mówić prawdę?”. Pierwszy wymaga rozważenia sytuacji granicznych.
+
+### Krok 2. Wybierz stanowisko, które potrafisz obronić
+Nie wybieraj tezy tylko dlatego, że brzmi efektownie. Wybierz taką, do której potrafisz dobrać co najmniej dwa różne argumenty i konkretne przykłady.
+
+### Krok 3. Sprawdź różnorodność argumentów
+Jeśli oba argumenty oznaczają „to jest dobre”, nie są wystarczająco różne. Można rozważyć odrębnie skutek dla jednostki, wpływ na relacje, konsekwencje dla wspólnoty, rozwój umiejętności lub koszt zaniechania — o ile rzeczywiście odpowiadają tematowi.
+
+### Krok 4. Zabezpiecz poprawność przykładu
+Przed wykorzystaniem lektury sprawdź: kto działa, co robi, z jakiego powodu (jeśli wynika to z utworu), jakie są konsekwencje i jak wydarzenie łączy się z argumentem. Nie przypisuj postaci motywacji, której utwór nie potwierdza.
+
+### Krok 5. Zapisz wyjaśnienie przed akapitem
+Dokończ zdanie: „Ten przykład potwierdza argument, ponieważ…”. Jeśli nie potrafisz tego zrobić, przykład może być nietrafny albo argument jest zbyt ogólny.
+
+## 18. Modelowy akapit z komentarzem
+
+**Temat:** „Czy trudności mogą pomóc człowiekowi lepiej poznać samego siebie?”
+
+**Akapit modelowy:** „Trudna sytuacja może ujawnić cechy, których człowiek wcześniej u siebie nie dostrzegał. W *Opowieści wigilijnej* Charlesa Dickensa Ebenezer Scrooge konfrontuje się z obrazami własnej przeszłości, teraźniejszości i możliwej przyszłości. Widzi, jak jego zachowanie wpływało na innych i do czego może doprowadzić dalsze życie skupione wyłącznie na pieniądzach. To doświadczenie skłania go do zmiany postępowania. Przykład pokazuje, że bolesne rozpoznanie konsekwencji własnych decyzji może stać się początkiem samowiedzy, choć sama trudność nie gwarantuje przemiany — potrzebna jest także gotowość do przyjęcia odpowiedzialności”.
+
+**Rozbiór:** zdanie 1 — argument; zdania 2–4 — konkretny przykład i jego rozwinięcie; zdanie 5 — wyjaśnienie związku z tematem oraz zastrzeżenie ograniczające zbyt szeroki wniosek.
+
+## 19. Modelowa rozprawka — analiza struktury
+
+**Temat:** „Czy trudności mogą pomóc człowiekowi lepiej poznać samego siebie?”
+
+**Przykładowa praca treningowa:**
+
+Trudności zwykle wiążą się z niepewnością i wysiłkiem, dlatego człowiek często chciałby ich uniknąć. Mogą jednak ujawnić jego słabości, wartości oraz gotowość do zmiany. Uważam, że trudne doświadczenia mogą pomóc człowiekowi lepiej poznać samego siebie, jeśli potrafi on uczciwie przyjrzeć się swoim decyzjom i wyciągnąć z nich wnioski.
+
+Po pierwsze, trudna sytuacja może uświadomić człowiekowi skutki jego wcześniejszego postępowania. W *Opowieści wigilijnej* Charlesa Dickensa Ebenezer Scrooge zostaje skonfrontowany z obrazami przeszłości, teraźniejszości i możliwej przyszłości. Dzięki temu dostrzega samotność, do której prowadzi jego egoizm, oraz cierpienie ludzi, którym odmawiał pomocy. Przeżycie to nie tylko budzi w nim strach, ale skłania go do oceny własnego życia i zmiany zachowania. Historia Scrooge’a pokazuje, że rozpoznanie konsekwencji własnych wyborów może stać się początkiem przemiany.
+
+Po drugie, niepowodzenie może ujawnić, nad czym trzeba pracować. Osoba, która nie przygotowała się odpowiednio do ważnego zadania, może odkryć, że przeceniała swoje umiejętności planowania. Jeśli zamiast obwiniać innych przeanalizuje przyczyny porażki, może nauczyć się rozkładać pracę na etapy i wcześniej prosić o pomoc. Taki przykład z życia codziennego nie dowodzi, że każda porażka rozwija człowieka, ale pokazuje, że refleksja nad błędem może prowadzić do lepszego poznania własnych ograniczeń.
+
+Podsumowując, trudności mogą pomóc człowiekowi lepiej zrozumieć siebie, ponieważ ujawniają skutki jego decyzji i obszary wymagające pracy. Nie dzieje się to automatycznie: potrzebne są szczerość wobec siebie, refleksja i gotowość do zmiany.
+
+### Dlaczego ta praca działa?
+- Wstęp odpowiada na problem i formułuje stanowisko z warunkiem.
+- Każdy akapit rozwinięcia wnosi inną rację.
+- Przykład literacki jest związany z argumentem, a nie służy streszczeniu całej fabuły.
+- Przykład z życia jest przedstawiony jako ilustracja, nie dowód powszechnej reguły.
+- Zakończenie podsumowuje argumenty i nie wprowadza nowego wątku.
+- Stanowisko jest niuansowane: trudności mogą pomagać, ale nie gwarantują samopoznania.
+
+## 20. Zadania naprawcze z kluczem
+
+### A. Znajdź lukę w argumentacji
+„Warto podejmować wyzwania. Scrooge zmienił się po niezwykłych doświadczeniach. Dlatego każdy człowiek po trudnej sytuacji staje się lepszy”.
+
+**Co jest nie tak?** Wniosek jest zbyt szeroki; przykład literacki nie dowodzi, że każdy reaguje tak samo. Brakuje wyjaśnienia i uwzględnienia warunków przemiany.
+
+**Możliwa poprawa:** „Trudne doświadczenia mogą skłonić człowieka do zmiany, jeśli prowadzą do refleksji. Przykład Scrooge’a pokazuje, że rozpoznanie skutków własnego postępowania może rozpocząć przemianę, ale nie dowodzi, że każda osoba zareaguje w ten sam sposób”.
+
+### B. Rozdziel dwa argumenty
+Temat: „Czy warto działać na rzecz innych?”
+
+1. „Pomoc może zmniejszyć czyjąś trudność”.
+2. „Pomaganie daje człowiekowi satysfakcję”.
+
+To dwa różne argumenty: pierwszy dotyczy osoby otrzymującej pomoc, drugi osoby pomagającej. Do każdego dopasuj osobny przykład i wyjaśnij jego związek z argumentem.
+
+### C. Sprawdź zgodność z tematem
+Temat: „Czy odwaga zawsze wymaga działania?”
+
+Plan: „Odwaga jest ważna; bohater uratował kolegę; warto być dobrym”.
+
+**Problem:** plan nie odpowiada na słowo „zawsze” i nie rozważa, czy odwaga może polegać również na powstrzymaniu się od działania, przyznaniu do błędu albo poproszeniu o pomoc. Należy wybrać stanowisko odnoszące się do zakresu tematu, a nie tylko do ogólnej wartości odwagi.
+
+## 21. Rozszerzona rubryka samokontroli
+
+Przed oddaniem pracy sprawdź każdy obszar:
+1. **Zgodność z tematem:** odpowiadam na dokładnie zadane pytanie, w tym na ograniczenia typu „zawsze”.
+2. **Stanowisko:** jest czytelne i nie zmienia się bez wyjaśnienia.
+3. **Argumenty:** są różne, trafne i odnoszą się do stanowiska.
+4. **Przykłady:** są konkretne i zgodne z lekturą lub opisanym doświadczeniem.
+5. **Wyjaśnienie:** pokazuje, dlaczego przykład wspiera argument.
+6. **Kompozycja:** akapity mają wyraźne funkcje, a zakończenie wynika z rozwinięcia.
+7. **Spójność:** łączniki oddają rzeczywiste relacje, nie zastępują argumentacji.
+8. **Język:** zdania są zrozumiałe, a powtórzenia i błędy zostały skorygowane.
+9. **Samodzielność wniosku:** praca nie opiera się na gotowych formułach bez analizy.
+
+Punktacja w poprzedniej rubryce pozostaje treningowa. Wymagania formalne, długość pracy i kryteria oceny należy każdorazowo sprawdzać w aktualnym poleceniu oraz informatorze.
+
+## 22. Kontrola po drugim cyklu
+
+- [x] Dodano pełną procedurę od rozkodowania tematu do kontroli przykładu.
+- [x] Dodano modelowy akapit oraz całą przykładową rozprawkę z komentarzem strukturalnym.
+- [x] Sprawdzono, że wniosek nie rozszerza przykładu Scrooge’a na wszystkich ludzi.
+- [x] Dodano ćwiczenia naprawcze dotyczące uogólnienia, różnorodności argumentów i słowa „zawsze”.
+- [ ] Pozostaje niezależna recenzja polonistyczna oraz sprawdzenie wymagań aktualnego egzaminu.

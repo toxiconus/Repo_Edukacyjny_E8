@@ -1,6 +1,6 @@
 ---
 kod: PL-MAPA
-wersja: 1.0
+wersja: 2.0
 data: 2026-10-09
 status: indeks zbiorczy; materiały historyczne zachowane
 ---
@@ -83,7 +83,7 @@ Kolejność i status są prowadzone w `blok_G/README.md`. Lekcje kanoniczne pozo
 - G01 — rzeczownik: rozbudowana v3.0; audyt wewnętrzny wykonany, niezależna kontrola nadal potrzebna.
 - G02 — czasownik: rozbudowana v2.0; audyt `blok_G/audyty/G02_AUDYT.md` wykonany, niezależna kontrola nadal potrzebna.
 - G03 — przymiotnik: rozbudowana v3.0; audyt `blok_G/audyty/G03_AUDYT.md`; poprawiono też sprzeczne informacje ortograficzne w obu wersjach HTML L004. Niezależna kontrola polonistyczna nadal wymagana.
-- G04–G17: kolejne pozycje do analizy i rozbudowy, po jednej lekcji na iterację.
+- G04–G17: opracowane w kanonicznych plikach `podstawy/`, z audytami w `blok_G/audyty/`; niezależna recenzja polonistyczna pozostaje otwarta.
 
 ## 5. Lekcje literacko-gramatyczne L001–L006
 
@@ -144,3 +144,77 @@ W repozytorium istnieje kilka kopii `POLSKI_PODSTAWA_PLUS` o różnych nazwach i
 - Blok S — `blok_S/README.md`, 6 lekcji środków stylistycznych.
 - Szkielety źródłowe — `archiwum/szkielety/`; wcześniejsze wersje — `archiwum/wersje_wejsciowe/`.
 - Audyty L007–L011 — `plany/audyty/`; audyty bloków D/G/S w katalogach poszczególnych bloków.
+
+
+## Aktualizacja statusu — 2026-10-09 (drugi cykl bloku D)
+
+- Blok D: lekcje D01–D13 rozbudowano do wersji 3.0 po drugim wewnętrznym cyklu diagnozy braków, uzupełnienia i ponownej kontroli. Szczegóły w `blok_D/audyty/` oraz `POSTEP_UZUPELNIANIA.md`.
+- Mapa bloku D poprawiona tak, aby odsyłacze prowadziły do rzeczywistych nazw plików lekcji.
+- Nie oznaczono materiałów jako niezależnie zatwierdzonych: recenzja polonistyczna i porównanie z aktualnymi materiałami CKE pozostają do wykonania.
+
+
+## L001 — status po audycie 2026-10-09
+
+Główna wersja robocza do dalszej kontroli: `lekcje_html/L001-PL-Lektury-klas-IV-VI-imieslow.html` (metadane w pliku: wersja 19). Starsze warianty `L001-PL-Lektury...html` pozostają zachowane jako źródła porównawcze. Audyt: `plany/audyty/L001_AUDYT_2026-10-09.md`. Weryfikacja potwierdziła brak zduplikowanych ID i poprawność składni JavaScriptu; niezależna recenzja merytoryczna pozostaje otwarta.
+
+
+## L002 — status po audycie 2026-10-09
+
+Główna wersja robocza: `lekcje_html/L002-PL-Hobbit-nieodmienne-czesci-mowy.html` (metadane w pliku: wersja 7.9). Dodano mikroćwiczenie rozpoznawania „czy” jako partykuły lub spójnika. Audyt: `plany/audyty/L002_AUDYT_2026-10-09.md`. Starsze warianty zachowano.
+
+
+## L003–L004 — status po audycie 2026-10-09
+
+- L003: doprecyzowano terminologię zaimków względnych/przysłownych w `lekcje_html/L003-PL-Opowiesci-z-Narnii-zaimek.html`; audyt `plany/audyty/L003_AUDYT_2026-10-09.md`.
+- L004: poprawiono oba zachowane warianty HTML, aby reguła „nie” z przymiotnikami w 2026 r. nie sugerowała dowolnej pisowni rozdzielnej; audyt `plany/audyty/L004_AUDYT_2026-10-09.md`.
+
+
+## L005–L006 — status po audycie 2026-10-09
+
+- L005: dodano ćwiczenie kontrastujące rzeczowniki z „nie” i zaprzeczenie/przeciwstawienie; audyt `plany/audyty/L005_AUDYT_2026-10-09.md`.
+- L006: poprawiono zbyt szeroką heurystykę pisowni „nie” z czasownikami i dodano ćwiczenie reguła podstawowa/wyjątki; audyt `plany/audyty/L006_AUDYT_2026-10-09.md`.
+
+
+## Aktualizacja odniesień CKE w L003–L006 — 2026-10-09
+
+W głównych wariantach L003–L006 doprecyzowano, że informacja o ograniczeniu do fragmentu w sesjach 2024/2025–2025/2026 nie jest samodzielnym potwierdzeniem zakresu na 2026/2027. Przed przygotowaniem do egzaminu należy sprawdzić aktualny informator, komunikaty i arkusz. Audyty indywidualne zawierają ten zapis.
+
+
+## Ortografia 2026 — ważne rozróżnienie egzaminacyjne
+
+W L001 i obu wariantach L004 dodano informację, że CKE akceptuje w latach 2026–2030 zarówno dotychczasowe, jak i nowe zasady ortograficzne w ocenie prac egzaminacyjnych. Materiały uczą normy obowiązującej od 1.01.2026 r. i osobno wyjaśniają wyjątki konstrukcyjne. Źródło CKE: https://bip.cke.gov.pl/attachments/download/10293.
+
+
+## L008 — status 2026-10-09
+
+`do_uzupelnienia/PL_L008_czesci_zdania.md` rozbudowano do v4.0 jako pełną lekcję; audyt diagnozy → uzupełnienia → ponownej kontroli: `plany/audyty/L008_AUDYT_2026-10-09.md`.
+
+
+## L009 — status 2026-10-09
+
+`do_uzupelnienia/PL_L009_zdania_zlozone.md` rozbudowano do v4.0 po porównaniu z G14–G16. Audyt: `plany/audyty/L009_AUDYT_2026-10-09.md`.
+
+
+## L010 — status 2026-10-09
+
+`do_uzupelnienia/PL_L010_srodki_stylistyczne.md` rozbudowano do v4.0 po porównaniu z S01–S06. Audyt: `plany/audyty/L010_AUDYT_2026-10-09.md`.
+
+
+## L011 — status 2026-10-09
+
+`do_uzupelnienia/PL_L011_elementy_utworu_moral_puenta.md` rozbudowano do v4.0; audyt: `plany/audyty/L011_AUDYT_2026-10-09.md`.
+
+
+## L007 — status 2026-10-09
+
+`do_uzupelnienia/PL_L007_przeglad_czesci_mowy.md` zaktualizowano do v3.0 po audycie W2; dopisano zasady „nie” z imiesłowami od 1.01.2026 r. i okres przejściowy CKE. Audyt: `plany/audyty/L007_AUDYT_2026-10-09.md`.
+
+
+## Stan całości — 2026-10-09
+
+- D01–D13: v3.0 po drugim cyklu wewnętrznym; `blok_D/AUDYT_ZBIORCZY_D_v3.md`.
+- G01–G17 i S01–S06: lekcje kanoniczne w `podstawy/`, audyty odpowiednio w `blok_G/audyty/` i `blok_S/audyty/`.
+- L001–L006: główne wersje HTML i starsze warianty zachowane; szczegółowe audyty w `plany/audyty/`.
+- L007 v3.0, L008–L011 v4.0: kompletne lekcje integrujące z osobnymi audytami.
+- Pełny indeks klikalny: `SPIS_TRESCI_POLSKI.md`.
+- Audyt techniczny i lista otwartych walidacji: `plany/audyty/AUDYT_ZBIORCZY_POLSKI_2026-10-09.md`.

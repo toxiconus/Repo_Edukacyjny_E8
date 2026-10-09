@@ -3,9 +3,9 @@ kod: PL.D12
 przedmiot: język polski
 blok: D
 numer: 12
-wersja: 2.0
+wersja: 3.0
 poziom: E8 + rozszerzenie konkursowe
-status: opracowana po audycie luki i kontroli końcowej
+status: wersja 3.0 po drugim cyklu analizy braków, uzupełnienia i kontroli
 ---
 
 # D12. Kontrola języka, ortografii i interpunkcji
@@ -108,3 +108,76 @@ To procedura awaryjna, nie zastępstwo pełnej korekty. W pracy domowej lub tren
 
 Po każdej pracy zapisz 1–3 najważniejsze błędy, ich poprawne formy i krótką zasadę. Przed kolejnym tekstem przeczytaj notatkę. Nie twórz listy dziesiątek błędów, której nigdy nie używasz — wybieraj te, które najczęściej obniżają jakość Twoich prac.
 
+
+
+## 16. Korekta według hierarchii — od treści do znaków
+
+Nie poprawiaj najpierw przecinków w akapicie, który trzeba będzie przepisać, bo nie odpowiada na temat. Stosuj kolejność:
+
+1. **Zgodność z poleceniem:** forma, temat, wymagane elementy i źródła.
+2. **Logika:** stanowisko, argumenty, wnioski i związki przyczynowo-skutkowe.
+3. **Kompozycja:** kolejność, akapity, powtórzenia, przejścia między myślami.
+4. **Składnia i fleksja:** zgoda podmiotu z orzeczeniem, przypadki, zaimki, konstrukcje zdań.
+5. **Ortografia i interpunkcja:** pisownia, wielkie litery, przecinki, cudzysłowy i zapis dialogu.
+6. **Czytelność:** czy zdania da się zrozumieć przy pierwszym czytaniu i czy słownictwo pasuje do formy.
+
+Jeśli masz mało czasu, sprawdź najpierw elementy, których brak powoduje, że odpowiedź nie wykonuje polecenia, a potem najczęstsze własne błędy.
+
+## 17. Klinika korektorska — zdania do naprawy
+
+### A. Interpunkcja i składnia
+
+Tekst: „Uczniowie którzy przynieśli książki mogli wybrać inne tytuły ponieważ regał był już uporządkowany”.
+
+Korekta: „Uczniowie, którzy przynieśli książki, mogli wybrać inne tytuły, ponieważ regał był już uporządkowany”.
+
+Wyjaśnienie: zdanie podrzędne względne „którzy przynieśli książki” należy oddzielić przecinkami; przed „ponieważ” rozpoczynającym zdanie podrzędne stawiamy przecinek.
+
+### B. Niezgodność logiczna
+
+Tekst: „Nie przeprowadzono ankiety, więc wszyscy uczniowie byli zadowoleni”.
+
+Korekta sensu: „Nie przeprowadzono ankiety, dlatego nie wiadomo, jak inicjatywę oceniali uczniowie”.
+
+To nie jest błąd samej interpunkcji. Trzeba poprawić rozumowanie: brak danych nie potwierdza pozytywnej oceny.
+
+### C. Niejasny zaimek
+
+Tekst: „Marta przekazała Oli notatkę, kiedy wróciła do klasy. Była zadowolona”.
+
+Możliwa korekta: „Kiedy Marta wróciła do klasy, przekazała Oli notatkę. Marta była zadowolona”. Jeśli zadowolona była Ola, należy napisać to wprost. Wybór zależy od zamierzonego sensu.
+
+### D. Styl nieadekwatny do formy
+
+Tekst listu oficjalnego: „Hej, zróbcie coś z tym bałaganem, bo to jest mega słabe”.
+
+Korekta: „Zwracam się z prośbą o rozważenie zmian w organizacji przestrzeni, ponieważ obecny układ utrudnia korzystanie z niej”. Jeśli to zadanie wymaga wskazania konkretnego problemu, trzeba go nazwać precyzyjniej, zamiast ukrywać za ogólnikiem.
+
+## 18. Rejestr własnych błędów
+
+Prowadź tabelę, którą aktualizujesz po każdej pracy:
+
+| Data/praca | Mój błąd | Poprawna wersja | Reguła lub sposób sprawdzenia | Co sprawdzę następnym razem? |
+|---|---|---|---|---|
+| przykładowa | „napewno” | „na pewno” | utrwalony zapis rozdzielny | pisownię wyrażeń przyimkowych |
+| przykładowa | brak przecinka | przecinek przed zdaniem podrzędnym | rozpoznaję granice zdań składowych | zdania z „ponieważ”, „który”, „gdy” |
+
+Nie kopiuj przykładów bez związku z własnymi błędami. Celem jest stworzenie krótkiej listy, którą naprawdę sprawdzisz przed oddaniem kolejnej pracy.
+
+## 19. Test korektorski z kluczem
+
+Popraw tekst i uzasadnij przynajmniej trzy zmiany:
+
+> Uważam że warto organizować spotkania czytelnicze. Uczniowie którzy biorą w nich udział mogą polecać książki innym, jednak nie wiadomo czy każdy uczestnik zaczyna czytać częściej. To ważne ponieważ sama obecność na spotkaniu nie oznacza jeszcze zmiany nawyków.
+
+**Korekta:** „Uważam, że warto organizować spotkania czytelnicze. Uczniowie, którzy biorą w nich udział, mogą polecać książki innym, jednak nie wiadomo, czy każdy uczestnik zaczyna czytać częściej. To ważne, ponieważ sama obecność na spotkaniu nie oznacza jeszcze zmiany nawyków”.
+
+**Uzasadnienie:** przecinek po „uważam” oddziela zdanie nadrzędne od podrzędnego; zdanie względne „którzy biorą w nich udział” oddzielamy przecinkami; przecinek przed „czy” wprowadza zdanie podrzędne; przecinek przed „ponieważ” wprowadza przyczynę. Nie zmieniono ostrożnego sensu wypowiedzi.
+
+## 20. Kontrola po drugim cyklu
+
+- [x] Uporządkowano kolejność korekty: najpierw treść i logika, potem zapis.
+- [x] Dodano przykłady błędów logicznych, składniowych, interpunkcyjnych i stylistycznych.
+- [x] Dodano szablon dziennika błędów i test z uzasadnieniem poprawek.
+- [x] Zachowano zastrzeżenie, by reguły zmienne normatywnie sprawdzać w aktualnych źródłach.
+- [ ] Pozostaje niezależna korekta polonistyczna i kontrola aktualnych wymagań.

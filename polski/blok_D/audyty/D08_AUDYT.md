@@ -1,21 +1,15 @@
-# Audyt lekcji D08 — List oficjalny
+# Audyt D08 — list oficjalny
 
-## 1. Diagnoza przed uzupełnieniem
+## Cykl 1 — diagnoza
+Lekcja omawiała cel, styl i układ listu, ale nie zawierała pełnego modelu pokazującego, jak połączyć prośbę, argumenty i wykonalną propozycję organizacyjną.
 
-Brakowało praktycznej listy elementów i wskazówek, jak formułować prośbę oraz utrzymać formalny, ale naturalny język.
+## Uzupełnienie
+Dodano pełny list modelowy, analizę jego elementów, katalog typowych błędów oraz przekształcenie wypowiedzi potocznej w formalną. Dodano zadanie samodzielne z kryteriami kontroli.
 
-## 2. Uzupełnienia wykonane
+## Cykl 2 — kontrola po zmianie
+- Model zawiera jasny cel, uzasadnienie, konkretny plan, deklarację pomocy i zakończenie.
+- Dane osobowe i miejsce zostały jawnie oznaczone jako przykładowe.
+- Nie przedstawiono elementów nagłówka jako bezwzględnie obowiązkowych w każdym zadaniu; pierwszeństwo ma polecenie.
 
-Dodano cel listu, układ zależny od polecenia, formalny rejestr, model planu i listę kontroli. Układ nie jest przedstawiony jako sztywny niezależnie od zadania.
-
-## 3. Kontrola techniczna
-
-- [x] Plik lekcji istnieje i zawiera metadane.
-- [x] Lekcja zawiera teorię oraz ćwiczenia.
-- [x] Dodano wskazówki do samokontroli; klucz podano tam, gdzie ćwiczenia mają jednoznaczne odpowiedzi.
-- [x] Nie przedstawiono autorskich rubryk jako oficjalnej punktacji CKE.
-- [ ] Zbiorczy audyt całego bloku z arkuszami i informatorem CKE po ukończeniu wszystkich modułów.
-
-## 4. Status
-
-Lekcja opracowana w wersji 2.0. Audyt kompletności w ramach obecnego repozytorium wykonany; walidacja zewnętrzna i finalny audyt całego bloku pozostają osobnym etapem.
+## Status
+D08 v3.0 po drugim wewnętrznym cyklu; niezależna recenzja i walidacja egzaminacyjna nadal wymagane.
