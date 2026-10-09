@@ -3,21 +3,21 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 66 KB)
+## .  (11 pl., 70 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 6 KB
 - `MAPA.md` 18 KB
 - `PRZEKAZANIE.md` 3 KB
 - `README.md` 0 KB
-- `WERYFIKACJA.md` 20 KB
+- `WERYFIKACJA.md` 24 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
 - `replace_gereb_card.ps1` 5 KB
 
 ## angielski  (9 pl., 1.8 MB)
-- ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` 473 KB
+- ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` 474 KB
 - `L000-EN-Fiszki.txt` 11 KB
 - ⚠`L001-EN-Wszystkie-lekcje.md` 470 KB
 - ⚠`L002-EN-Operatory-i-czasowniki-posilkowe.html` 256 KB
@@ -26,6 +26,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L005-EN-Present-Perfect.html` 141 KB
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
 - ⚠`L012-EN-Future-Simple.html` 121 KB
+
+## angielski/plany/audyty  (1 pl., 21 KB)
+- `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
 
 ## biologia  (11 pl., 2.2 MB)
 - ⚠`BIO.all.v01.00.md` 711 KB
@@ -591,6 +594,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PL_L009_zdania_zlozone.md` 4 KB
 - `PL_L010_srodki_stylistyczne.md` 4 KB
 - `PL_L011_elementy_utworu_moral_puenta.md` 5 KB
+
+## polski/plany/audyty  (2 pl., 25 KB)
+- `W1_POLSKI_ocena_2026-10-09.md` 4 KB
+- `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
 
 ## wizualizacje-projekty  (3 pl., 71 KB)
 - `PROJEKT.md` 9 KB
