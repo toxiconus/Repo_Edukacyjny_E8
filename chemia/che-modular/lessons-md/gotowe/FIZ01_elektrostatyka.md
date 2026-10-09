@@ -101,6 +101,7 @@ $$ q = n · e
 :::
 
 @model kw-dysocjacja-v01 | Chemia: jony w roztworze — przeniesienie protonu H⁺ | Lekcja Kwasy · ten sam silnik
+@opis Model z lekcji o kwasach: cząsteczki kwasu w wodzie przekazują proton H⁺ cząsteczkom wody — powstają jony H₃O⁺ i aniony reszty kwasowej, oznaczone znakami ładunku. Wniosek: ładunki elektryczne w chemii to te same ładunki co w elektrostatyce — jony powstają przez przeniesienie cząstek naładowanych.
 
 ## 2 | Elektryzowanie przez tarcie {#s2}
 
@@ -125,6 +126,7 @@ Materiał stojący **wcześniej** oddaje elektrony materiałowi stojącemu **dal
 :::
 
 @model fiz-elektryzowanie-v01 | Pocieraj i sprawdź: kto oddaje elektrony + wahadełko elektrostatyczne | Szereg tryboelektryczny z silnika · animacja przepływu elektronów
+@opis Para materiałów do pocierania wybierana z szeregu tryboelektrycznego; animacja pokazuje przepływ elektronów (−) z materiału, który łatwiej je oddaje, do drugiego, po czym jedno ciało ma nadmiar elektronów (−), a drugie niedobór (+); obok wahadełko z lekką kulką reaguje na naelektryzowane ciało. Wniosek: przy tarciu przenoszone są tylko elektrony, a który materiał naelektryzuje się ujemnie, zależy od ich miejsca w szeregu.
 
 ## 3 | Oddziaływanie ładunków {#s3}
 
@@ -145,6 +147,7 @@ Materiał stojący **wcześniej** oddaje elektrony materiałowi stojącemu **dal
 :::
 
 @model fiz-elektryzowanie-v01 | Wahadełko: przyciąganie obojętnej kulki, dotyk, odpychanie | Silnik CHE · fizyka · otwiera się w oknie
+@opis Wahadełko z obojętną kulką zbliżane do naelektryzowanej pałeczki: kulka najpierw jest przyciągana (polaryzacja), po dotknięciu przejmuje część ładunku i zostaje odepchnięta. Wniosek: ciało naelektryzowane przyciąga też ciała obojętne, a po zetknięciu ciała o ładunkach tego samego znaku się odpychają.
 
 ## 4 | Przewodniki i izolatory {#s4}
 
@@ -165,8 +168,10 @@ Materiał stojący **wcześniej** oddaje elektrony materiałowi stojącemu **dal
 :::
 
 @model fiz-przewodniki-v01 | Przewodnik czy izolator? Rozpływ ładunku w pręcie | ρ z silnika · czas rozpływu ładunku
+@opis Pręt z wybieranego materiału z ładunkiem dostarczonym na jednym końcu; animacja pokazuje, jak ładunek rozpływa się wzdłuż pręta — w metalu prawie natychmiast, w izolatorze zostaje w miejscu; czas rozpływu liczony z oporu właściwego ρ. Wniosek: przewodnik rozprowadza ładunek po całej powierzchni, izolator zatrzymuje go tam, gdzie powstał.
 
 @model gfx-scene-conductivity | Chemia: przewodzenie prądu przez roztwory (elektrolity) | Lekcja Kwasy · tester przewodnictwa
+@opis Model z lekcji o kwasach: tester przewodnictwa (bateria, żarówka, dwie elektrody) zanurzany w różnych roztworach — żarówka świeci w roztworach elektrolitów, a w wodzie destylowanej czy roztworze cukru nie. Wniosek: w roztworach ładunek przenoszą jony, więc przewodzą tylko roztwory, w których są jony.
 
 ## 5 | Elektryzowanie przez dotyk. Zasada zachowania ładunku {#s5}
 
@@ -186,6 +191,7 @@ $$ q′ = (q₁ + q₂) / 2
 Przykład: +6 nC i −2 nC → po zetknięciu każda ma +2 nC (suma +4 nC przed i po).
 
 @model fiz-ladunek-v01 | Kule: dotyk, uziemienie, zasada zachowania, liczba elektronów | CHE.PHYS.electro.share · n = q/e
+@opis Dwie metalowe kule z ładunkami: dotknięcie wyrównuje ładunek między nimi, uziemienie zeruje ładunek kuli; licznik pokazuje sumę ładunków przed i po oraz liczbę elektronów n = q/e. Wniosek: ładunek nie znika ani nie powstaje, tylko się przemieszcza, a każdy ładunek to całkowita wielokrotność ładunku elementarnego.
 :::
 
 ::: karta extra | Uziemienie
@@ -286,6 +292,7 @@ Procedura: 1) zapisz ładunki ze znakiem, 2) dodaj je (suma), 3) podziel sumę p
 :::
 
 @model fiz-ladunek-v01 | Bilans ładunku: dotyk, uziemienie, zapis „przed → po”, kafelki + i −, liczba elektronów | CHE.PHYS.electro.contact · ground · transfer · jednostki C, mC, µC, nC, e
+@opis Ten sam model kul w trybie bilansu: kafelki + i − pokazują ładunki, zapis „przed → po” dla dotyku, uziemienia i przeniesienia elektronów, przełączane jednostki C, mC, µC, nC i e. Wniosek: suma ładunków układu izolowanego jest stała — to podstawa rozwiązywania zadań z dotykaniem kul.
 :::
 
 ::: karta extra | Uziemienie — gdzie znika ładunek?
@@ -355,6 +362,7 @@ Ziemia ma promień ok. 6400 km, więc przy „zetknięciu” z małym ciałem pr
 :::
 
 @model fiz-elektroskop-v01 | Elektroskop: dotyk, indukcja, uziemienie (scenariusz krok po kroku) | Model rozkładu ładunku z silnika
+@opis Elektroskop (kulka, pręt, dwie listki) z rozkładem ładunku pokazanym znakami + i −; scenariusz krok po kroku: dotknięcie naelektryzowaną pałeczką, zbliżenie bez dotyku (indukcja), uziemienie. Listki rozchylają się, gdy mają ładunek tego samego znaku. Wniosek: rozchylenie listków świadczy o ładunku, a indukcja rozdziela ładunki w przewodniku bez ich przenoszenia z pałeczki.
 
 ## 7 | Indukcja elektrostatyczna (elektryzowanie przez wpływ) {#s7}
 
@@ -376,6 +384,7 @@ Po **zbliżeniu** (bez dotykania) naładowanego ciała do przewodnika elektrony 
 :::
 
 @model fiz-elektroskop-v01 | Scenariusz: elektryzowanie przez indukcję w 5 krokach | Silnik CHE · fizyka · otwiera się w oknie
+@opis Elektroskop w pięciu krokach: zbliżenie pałeczki (ładunki się rozdzielają, listki się rozchylają), uziemienie (część elektronów odpływa lub dopływa), odłączenie uziemienia, odsunięcie pałeczki, rozchylone listki na końcu. Wniosek: przez indukcję elektroskop zyskuje ładunek przeciwnego znaku niż pałeczka, choć jej nie dotknął.
 
 ## 8 | Prawo Coulomba [[extra:E8+ / LO]] {#s8}
 
@@ -402,6 +411,7 @@ W ośrodku o przenikalności względnej ε<sub>r</sub> siła maleje ε<sub>r</su
 :::
 
 @model fiz-coulomb-v01 | Prawo Coulomba: siły, linie pola, ośrodek, wykres F(r) | k i εr z silnika
+@opis Dwa ładunki punktowe z regulowaną wartością, znakiem i odległością r: strzałki sił (równe, przeciwnie skierowane), linie pola, wybór ośrodka (εr) i wykres F(r). Wniosek: siła rośnie z iloczynem ładunków, maleje z kwadratem odległości (dwa razy dalej — cztery razy słabiej) i jest mniejsza w ośrodku niż w próżni.
 
 ::: adv | Elektryczność kontra grawitacja | poziom akademicki · poza maturą rozszerzoną
 Dla protonu i elektronu stosunek siły elektrycznej do grawitacyjnej F<sub>e</sub>/F<sub>g</sub> = k·e² / (G·m<sub>e</sub>·m<sub>p</sub>) ≈ 2,3·10³⁹ — niezależnie od odległości (obie siły ∝ 1/r²). W atomie wodoru (r ≈ 5,3·10⁻¹¹ m) F<sub>e</sub> ≈ 8,2·10⁻⁸ N. Grawitacja dominuje w kosmosie tylko dlatego, że ciała są prawie idealnie obojętne.
@@ -428,6 +438,7 @@ Dla ładunku punktowego: E = k·Q / r². **Linie pola** zaczynają się na ładu
 :::
 
 @model fiz-coulomb-v01 | Linie pola dwóch ładunków (włącz/wyłącz) | Silnik CHE · fizyka · otwiera się w oknie
+@opis Linie pola dwóch ładunków, włączane przyciskiem: dla ładunków różnoimiennych biegną od + do −, dla jednoimiennych rozchodzą się, a między ładunkami jest obszar bez linii. Wniosek: linie pola pokazują kierunek siły działającej na dodatni ładunek próbny.
 
 ::: adv | Potencjał, napięcie, kondensator, elektronowolt | poziom akademicki · poza maturą rozszerzoną
 **Potencjał** V = k·Q/r [V = J/C]; **napięcie** U = V<sub>A</sub> − V<sub>B</sub> = W/q. **Kondensator**: C = Q/U [F]; płaski: C = ε₀ε<sub>r</sub>S/d, energia W = ½CU². **Elektronowolt**: 1 eV = 1,602·10⁻¹⁹ J — energia elektronu przyspieszonego napięciem 1 V. Prawo Gaussa: strumień E przez powierzchnię zamkniętą = Q<sub>wewn</sub>/ε₀.
@@ -436,8 +447,10 @@ Dla ładunku punktowego: E = k·Q / r². **Linie pola** zaczynają się na ładu
 ## 10 | Doświadczenia {#s10}
 
 @model fiz-elektryzowanie-v01 | Pracownia: tarcie i wahadełko | Silnik CHE · fizyka · otwiera się w oknie
+@opis Pracownia otwierana w oknie: wybór materiałów do pocierania z animacją przepływu elektronów i wahadełko pokazujące przyciąganie i odpychanie. Wniosek: do samodzielnego sprawdzenia, który materiał oddaje elektrony i jak naelektryzowane ciało działa na kulkę.
 
 @model fiz-elektroskop-v01 | Pracownia: elektroskop | Silnik CHE · fizyka · otwiera się w oknie
+@opis Pracownia otwierana w oknie: elektroskop z dotykiem, indukcją i uziemieniem, z ładunkami pokazanymi znakami + i − oraz rozchyleniem listków. Wniosek: do samodzielnego przećwiczenia elektryzowania przez dotyk i przez indukcję.
 
 ::: dosw | Doświadczenie 1 — Balon i skrawki papieru
 Problem: Czy naelektryzowany balon przyciąga lekkie ciała?
@@ -549,8 +562,10 @@ Sprawdzenie znaku: Zbliż ponownie ten sam pręt — listki opadają, więc ład
 :::
 
 @model fiz-ladunek-v01 | Sprawdź przykład 2 na modelu kul | Silnik CHE · fizyka · otwiera się w oknie
+@opis Model kul ustawiony do przykładu 2: dwie kule o danych ładunkach dotykają się i przyjmują ładunek równy połowie sumy; licznik pokazuje bilans i liczbę przeniesionych elektronów. Wniosek: wynik z modelu ma się zgadzać z rachunkiem z zasady zachowania ładunku.
 
 @model fiz-coulomb-v01 | Sprawdź przykłady 3–5 w modelu Coulomba | Silnik CHE · fizyka · otwiera się w oknie
+@opis Model Coulomba do przykładów 3–5: ustawiając ładunki i odległość z treści, odczytuje się siłę i sprawdza wpływ zmiany r i ośrodka na wykresie F(r). Wniosek: rachunek z prawa Coulomba i odczyt z modelu mają dać ten sam wynik.
 
 ## 12 | Ćwiczenia {#s12}
 
