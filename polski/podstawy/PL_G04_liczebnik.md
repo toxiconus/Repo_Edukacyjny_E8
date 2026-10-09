@@ -5,8 +5,9 @@ tytul: Liczebnik
 lead: Ile? Który z kolei? — liczebniki główne, porządkowe, zbiorowe, ułamkowe i nieokreślone; „dwaj / dwóch / dwie / dwoje”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L004, G01, G13
-stan: WYPEŁNIONY — Claude, 2026-10-09 (na podstawie zarysu Grok); czeka na W1
+stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
 utworzono: 2026-10-09
+wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -209,3 +210,177 @@ Napisz dwa zdania o „Hobbicie”: jedno z liczebnikiem porządkowym, drugie z 
 
 **Grafika 2:** Schemat „liczebnik → rzeczownik → orzeczenie”: trzy tory (2–4 / 5+ / zbiorowe) ze strzałkami do formy rzeczownika i czasownika.  
 @opis Trzy poziome ścieżki: „2–4 → mianownik → przyszły”, „5 i więcej → dopełniacz → przyszło”, „dwoje, troje → dopełniacz → przyszło”; przy każdej przykład zdania. Wniosek: od liczebnika zależy przypadek rzeczownika i forma orzeczenia.
+
+## 13 | Uzupełnienie po audycie braków — wersja 2.0
+
+### 13.1. Ważne rozróżnienie: liczebnik a inne części mowy
+
+Nie każdy wyraz związany z liczbą jest liczebnikiem. O klasyfikacji decyduje znaczenie i funkcja w zdaniu.
+
+| Wyraz | Przykład | Klasyfikacja i uzasadnienie |
+|---|---|---|
+| trzy | Mam trzy zeszyty. | liczebnik główny — podaje dokładną liczbę |
+| trzeci | To trzeci zeszyt. | liczebnik porządkowy — wskazuje kolejność |
+| trójka | Dostałem trójkę. | rzeczownik — nazywa ocenę; można odmieniać: trójki, trójce |
+| potrójny | Potrójna porcja. | przymiotnik o znaczeniu mnożnym; w szkolnych opracowaniach bywa omawiany przy liczebnikach |
+| kilkakrotnie | Powtórzył kilkakrotnie. | przysłówek — określa, ile razy wykonano czynność |
+| pojedynczy | Pojedynczy błąd. | przymiotnik, nie liczebnik główny |
+| obaj | Obaj zawodnicy wygrali. | liczebnik/pronominalna forma liczebnikowa; w analizie szkolnej traktuj jako określenie ilościowe i uzasadnij funkcję |
+
+**Procedura rozstrzygania:** (1) ustal, co wyraz wnosi do zdania; (2) sprawdź, czy odpowiada na pytanie o liczbę/kolejność; (3) sprawdź odmianę i składnię; (4) nie opieraj klasyfikacji wyłącznie na końcówce.
+
+### 13.2. „Oba”, „obie”, „obaj”, „oboje”
+
+- **obaj** chłopcy / **obaj** uczniowie — grupa męskoosobowa;
+- **obie** dziewczynki — grupa żeńska;
+- **oba** okna / **oba** koty — rodzaj nijaki lub niemęskoosobowy;
+- **oboje** rodzice — tradycyjnie para rodziców ujmowana łącznie; forma ma własne ograniczenia użycia i nie jest zamiennikiem każdego „dwa”.
+
+W zdaniu: *Obaj chłopcy wrócili* — orzeczenie ma liczbę mnogą i formę męskoosobową. *Oboje dzieci wróciło* jest konstrukcją spotykaną, ale w standardowej szkolnej polszczyźnie bezpieczniej budować przykłady z typowym liczebnikiem zbiorowym: *Dwoje dzieci wróciło*. Nie mechanizuj odmiany bez sprawdzenia konkretnego rzeczownika.
+
+### 13.3. Liczebniki w datach, godzinach, ułamkach i miarach
+
+- Data: *1 maja*, *3 października 2026 roku* — po cyfrze oznaczającej dzień miesiąca nie stawia się kropki, ponieważ nazwę miesiąca podano słownie.
+- Zapis porządkowy bez nazwy: *Zajęła 3. miejsce*. Kropka oznacza „trzecie”, a nie zakończenie zdania.
+- Godzina: *o godzinie 17.00*, *o siedemnastej*, *o wpół do szóstej*. W tekstach użytkowych trzymaj się jednego systemu zapisu.
+- Ułamki: *jedna druga*, *dwie trzecie*, *trzy czwarte*, *pół kilograma*. Przy liczebnikach ułamkowych pilnuj rodzaju i przypadka: *półtora dnia*, ale *półtorej godziny*.
+- Miary: *2,5 litra* czyta się „dwa i pół litra”; w tekście naukowym zapis liczbowy jest praktyczny, a w wypracowaniu można zapisać liczbę słownie, jeśli nie utrudnia to czytelności.
+
+### 13.4. Zgoda składniowa przy liczebnikach — nie stosuj jednej reguły do wszystkich zdań
+
+W polszczyźnie konstrukcje z liczebnikami mają różne wzorce. Porównaj:
+
+1. *Trzy dziewczyny przyszły.* — rzeczownik w mianowniku liczby mnogiej; orzeczenie w liczbie mnogiej.
+2. *Pięć dziewczyn przyszło.* — rzeczownik w dopełniaczu liczby mnogiej; orzeczenie w liczbie pojedynczej, rodzaju nijakiego.
+3. *Dwaj chłopcy przyszli.* — mianownik męskoosobowy i orzeczenie męskoosobowe.
+4. *Dwóch chłopców przyszło.* — konstrukcja z dopełniaczem i orzeczeniem w liczbie pojedynczej.
+5. *Kilku uczniów rozwiązało zadanie* — typowa konstrukcja z liczebnikiem nieokreślonym i orzeczeniem w liczbie pojedynczej.
+6. *Wszyscy trzej uczniowie przyszli* — gdy liczebnik jest częścią grupy z wyrazem *wszyscy*, zgoda podmiotu i orzeczenia jest męskoosobowa.
+
+Reguła praktyczna do zadań szkolnych: najpierw ustal formę całego podmiotu, a dopiero potem dobieraj orzeczenie. Samo „5+” nie wyjaśnia wszystkich możliwych konstrukcji; znaczenie mają typ liczebnika, przypadek i budowa podmiotu.
+
+### 13.5. Ćwiczenia uzupełniające — z kluczem
+
+**D1.** Nazwij rodzaj liczebnika: *czwarty, siedmioro, kilkanaście, pół, obie, dwa tysiące*.  
+**Klucz:** czwarty — porządkowy; siedmioro — zbiorowy; kilkanaście — nieokreślony; pół — ułamkowy; obie — forma ilościowa związana z liczebnikiem dwa; dwa tysiące — liczebnik główny złożony.
+
+**D2.** Popraw zdania: (a) *Dwie uczniów spóźniły się.* (b) *Pięć dziewczyny weszły.* (c) *Dwaj chłopców czekało.* (d) *Spotkamy się 4-go czerwca.*  
+**Klucz:** (a) *Dwóch uczniów spóźniło się* lub *Dwaj uczniowie spóźnili się*; (b) *Pięć dziewczyn weszło* albo *Pięć dziewcząt weszło*; (c) *Dwaj chłopcy czekali* albo *Dwóch chłopców czekało*; (d) *Spotkamy się 4 czerwca*.
+
+**D3.** Uzupełnij formę: (a) z ___ (dwa) siostrami; (b) z ___ (dwa) kolegami; (c) przy ___ (trzy) oknach; (d) o ___ (pięć) uczniach.  
+**Klucz:** dwiema; dwoma; trzech; pięciu.
+
+**D4.** Wyjaśnij różnicę znaczeniową: *nie jeden uczeń* / *niejeden uczeń*.  
+**Klucz:** *nie jeden, lecz dwóch* — zaprzeczenie konkretnej liczby, zapis rozdzielny; *niejeden uczeń* — wielu uczniów, znaczenie „więcej niż jeden”, zapis łączny.
+
+**D5.** Zapisz poprawnie: *dwudziesty pierwszy wiek; piąta klasa; 3 maja; miejsce numer trzy; w roku 2026*.  
+**Klucz:** XXI wiek; 5. klasa (lub „piąta klasa”); 3 maja; miejsce numer 3 / trzecie miejsce; w roku 2026 (słownie: w roku dwa tysiące dwudziestym szóstym).
+
+**D6.** Ułóż po jednym zdaniu z liczebnikiem głównym, porządkowym, zbiorowym i ułamkowym. Podkreśl liczebniki i nazwij ich funkcję.  
+**Klucz:** odpowiedzi własne; ocenia się poprawną formę, zgodę składniową i trafną klasyfikację.
+
+### 13.6. Checklista przed oddaniem zadania
+
+- Czy rozpoznaję typ liczebnika na podstawie znaczenia, a nie tylko wyglądu?
+- Czy dobrałem/dobrałam formę rzeczownika i przypadek?
+- Czy sprawdziłem/sprawdziłam zgodę orzeczenia z całym podmiotem?
+- Czy odróżniam *dwaj chłopcy* od *dwóch chłopców*?
+- Czy poprawnie zapisuję datę, liczebnik porządkowy i wyrażenia *półtora/półtorej*?
+- Czy uzasadnienie wyjaśnia regułę, a nie tylko podaje poprawną odpowiedź?
+
+## 14 | Audyt po uzupełnieniu
+
+Wersja 2.0 uzupełnia materiał o rozróżnienie wyrazów liczbowych od innych części mowy, formy *obaj/obie/oba/oboje*, daty, godziny, ułamki i miary, więcej kontrastów zgody składniowej oraz dodatkowe zadania z kluczem. Zachowano dotychczasową treść, przykłady lekturowe i ćwiczenia.
+
+**Ograniczenia do niezależnej kontroli:** część klasyfikacji liczebników (zwłaszcza formy typu *obaj/oboje* i nazwy mnożne) zależy od przyjętego opisu gramatycznego; w odpowiedziach konkursowych należy stosować terminologię wymaganą przez polecenie lub podręcznik. Przykłady odnoszące się do szczegółów lektur trzeba sprawdzić z wydaniem tekstu, a punktację traktować jako autorską.
+
+## 14 | Drugi cykl opracowania: analiza trudnych przypadków i uzupełnienia v3.0
+
+### 14.1. Rozpoznawanie w kontekście — nie samą końcówką
+
+Liczebnik może występować samodzielnie albo z rzeczownikiem. Nie każdy wyraz kojarzący się z liczbą jest liczebnikiem: **dwójka** w zdaniu „Dostałem dwójkę” jest rzeczownikiem (nazwą oceny), a **dwoje** w „Przyszło dwoje dzieci” jest liczebnikiem zbiorowym. **Pierwszy** zwykle jest liczebnikiem porządkowym, lecz w zdaniu „Był pierwszy” może samodzielnie pełnić funkcję orzecznika lub określenia osoby. Rozpoznanie części mowy łączymy z pytaniem, znaczeniem i funkcją w konkretnym zdaniu.
+
+Porównaj:
+- „Przeczytałem **trzy** rozdziały” — liczebnik główny, pytanie *ile?*;
+- „Przeczytałem **trzeci** rozdział” — liczebnik porządkowy, pytanie *który z kolei?*;
+- „Przeczytałem **troje** drzwi” — niepoprawne w typowym znaczeniu; mówimy *troje drzwi*, gdy liczymy komplet drzwi, bo *drzwi* występuje tylko w liczbie mnogiej;
+- „To była **trójka**” — rzeczownik, nie liczebnik.
+
+### 14.2. „Obaj”, „obydwaj”, „oboje”, „obie”, „oba”
+
+Formy te nie są wymienne w każdym kontekście:
+- **obaj / obydwaj** — dwie osoby rodzaju męskoosobowego: *obaj uczniowie przyszli*;
+- **obie / obydwie** — dwie osoby lub rzeczy rodzaju żeńskiego: *obie siostry zdały egzamin*;
+- **oba / obydwa** — dwa rzeczowniki rodzaju nijakiego lub odpowiednie rzeczowniki niemęskoosobowe: *oba okna były otwarte*;
+- **oboje** — para osób, zwłaszcza różnej płci, albo określone połączenia: *oboje rodzice*, *oboje małżonkowie*; formę dobiera się do znaczenia i normy danego połączenia.
+
+Warto odróżnić mianownik od przypadków zależnych: *obaj bracia*, ale *nie było obu braci*; *obie uczennice*, ale *przyglądałem się obu uczennicom*. W trudnych zdaniach sprawdź, czy liczebnik zgadza się z rzeczownikiem oraz z formą orzeczenia.
+
+### 14.3. Zgoda orzeczenia: procedura zamiast zgadywania
+
+1. Znajdź całe wyrażenie liczebnikowe, które jest podmiotem.
+2. Sprawdź, czy rzeczownik występuje w mianowniku liczby mnogiej (*trzy uczennice*) czy w dopełniaczu (*pięć uczennic*).
+3. Przy 2–4 zwykle występuje rzeczownik w mianowniku liczby mnogiej i orzeczenie w liczbie mnogiej: *Trzy uczennice przyszły*.
+4. Przy liczebnikach 5 i wyższych z rzeczownikiem w dopełniaczu częsta konstrukcja ma orzeczenie w liczbie pojedynczej rodzaju nijakiego: *Pięć uczennic przyszło*. Nie przenoś mechanicznie tej reguły na każdy szyk i każdą konstrukcję — w zdaniach z określeniami, szeregiem podmiotów lub innym typem liczebnika sprawdź pełną składnię.
+5. Zwróć uwagę na znaczenie: *Dwaj zawodnicy wygrali* i *Dwóch zawodników wygrało* są poprawnymi, ale inaczej zbudowanymi konstrukcjami.
+
+### 14.4. Daty, godziny, ułamki i zapis liczbowy
+
+- Daty: *1 maja*, *3 maja 1791 roku*, *w latach 2025–2026*. W zapisie słownym odmienia się liczebnik zgodnie ze składnią: *trzeciego maja*, *pierwszego września*.
+- Godziny: *o godzinie piętnastej*, *o piętnastej*, *za piętnaście szesnasta*. W pracach szkolnych wybieraj formę jednoznaczną i zgodną z kontekstem.
+- Liczebniki porządkowe cyframi arabskimi zapisujemy z kropką, gdy kropka oznacza kolejność: *8. klasa, 12. rozdział*. Zapis *8 klasa* może zostać odczytany jako niepełny lub błędny zapis.
+- Ułamki: *pół jabłka*, *ćwierć litra*, *dwie trzecie klasy*. W liczebnikach ułamkowych pilnuj przypadku rzeczownika i zgody składniowej.
+- Procenty: w zapisie *5% uczniów* sposób uzgodnienia orzeczenia zależy od konstrukcji liczebnikowej; w zdaniu szkolnym najbezpieczniej umieścić pełne, naturalne wyrażenie i sprawdzić, czy podmiotem jest *pięć procent* czy rzeczownik *uczniowie* w innej konstrukcji.
+
+### 14.5. Typowe pułapki — wyjaśnienie
+
+| Forma problematyczna | Korekta | Uzasadnienie |
+|---|---|---|
+| *dwie chłopców* | *dwaj chłopcy* albo *dwóch chłopców* | Rodzaj i przypadek muszą pasować do rzeczownika. |
+| *pięć uczniowie przyszli* | *pięciu uczniów przyszło* albo *pięciu uczniów przyszło do sali* | Po *pięciu* rzeczownik ma formę dopełniacza liczby mnogiej. |
+| *trzecia maja* (w dacie) | *trzeciego maja* | Nazwa dnia w dacie tworzy konstrukcję z liczebnikiem porządkowym w dopełniaczu. |
+| *4-ty rozdział* | *4. rozdział* lub *czwarty rozdział* | Nie dopisujemy końcówki do cyfry. |
+| *nie jeden uczeń* użyte w znaczeniu „wielu” | *niejeden uczeń* | Zapis łączny zmienia znaczenie na „więcej niż jeden”. |
+
+### 14.6. Ćwiczenia po uzupełnieniu
+
+**A. Rozpoznaj rodzaj liczebnika i uzasadnij:**
+1. *Zajęła drugie miejsce.*
+2. *Na podwórku bawiło się kilkanaścioro dzieci.*
+3. *Wypiłem pół szklanki wody.*
+4. *Kilku zawodników zostało po treningu.*
+5. *Dostałem piątkę z dyktanda.*
+
+**Klucz:** 1. porządkowy; 2. zbiorowy; 3. ułamkowy; 4. nieokreślony; 5. *piątkę* to rzeczownik — nazwa oceny.
+
+**B. Uzupełnij formy:**
+1. Przyglądałem się ___ (dwie) dziewczynkom.
+2. Rozmawiałem z ___ (trzy) kolegami.
+3. ___ (pięć) uczniów nie oddało pracy.
+4. Spotkamy się ___ (pierwszy) września.
+5. W konkursie wystąpiło ___ (oboje / obaj) rodzeństwo — wybierz formę stosowną do znaczenia i wyjaśnij.
+
+**Klucz:** 1. dwóm; 2. trzema; 3. pięciu; 4. pierwszego; 5. *oboje rodzeństwo* — gdy mówimy o dwojgu rodzeństwa jako parze; dopuszczalne sformułowanie zależy od sensu zdania.
+
+**C. Popraw i nazwij błąd:**
+1. *W 8 klasa czytaliśmy lekturę.*
+2. *Trzech dziewczyn weszły do sali.*
+3. *Dwoje chłopców czekało przed szkołą* (chodzi o dwóch chłopców).
+4. *Niejeden, lecz dwóch uczniów zgłosiło się do odpowiedzi.*
+
+**Klucz:** 1. *W 8. klasie…* albo *W ósmej klasie…*; 2. *Trzy dziewczyny weszły do sali*; 3. *Dwaj chłopcy czekali…* albo *Dwóch chłopców czekało…*; 4. *Nie jeden, lecz dwóch uczniów…* — przeciwstawienie liczby wymaga pisowni rozdzielnej.
+
+### 14.7. Zadanie przekrojowe z objaśnionym rozwiązaniem
+
+Przeanalizuj zdanie: „W trzecim etapie konkursu wystąpiło pięcioro uczniów, a dwoje z nich zdobyło po dwa punkty”.
+
+- *trzecim* — liczebnik porządkowy, określa *etapie*;
+- *pięcioro* — liczebnik zbiorowy, wskazuje grupę; *wystąpiło* — orzeczenie w liczbie pojedynczej, rodzaju nijakiego;
+- *dwoje* — liczebnik zbiorowy, jest głównym składnikiem podmiotu w drugiej części zdania;
+- *dwa* — liczebnik główny, określa liczbę punktów.
+
+Wniosek: w jednym zdaniu może wystąpić kilka rodzajów liczebników, a ich formę i funkcję określamy oddzielnie.
+
+### 14.8. Samokontrola po drugim cyklu
+
+Zaznacz: **umiem samodzielnie / umiem z pomocą / muszę powtórzyć**: rozróżniam rodzaje liczebników; dobieram formę do rodzaju i przypadku rzeczownika; uzgadniam orzeczenie; zapisuję daty i liczebniki porządkowe; odróżniam liczebnik od rzeczownika o znaczeniu liczbowym. Jeśli któryś punkt pozostaje niepewny, wróć do odpowiedniej tabeli i wykonaj ponownie ćwiczenia B–C.

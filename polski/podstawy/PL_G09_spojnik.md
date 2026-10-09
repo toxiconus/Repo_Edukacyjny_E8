@@ -5,8 +5,9 @@ tytul: Spójnik
 lead: Łączy wyrazy i zdania: i, ale, więc, że, bo, gdy — i decyduje o przecinku.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G15, G16
-stan: WYPEŁNIONY — Claude, 2026-10-09 (na podstawie zarysu Grok); czeka na W1
+stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
 utworzono: 2026-10-09
+wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -172,3 +173,152 @@ Przekształć dwa zdania w zdanie złożone podrzędnie i nazwij użyty spójnik
 
 **Grafika 2:** Dwa schematy zdań: współrzędne (dwa prostokąty na jednym poziomie połączone spójnikiem) i podrzędne (prostokąt niżej, strzałka z pytaniem od nadrzędnego).  
 @opis Lewy schemat: dwa prostokąty obok siebie, pomiędzy nimi „więc”. Prawy: prostokąt górny „Zostaliśmy”, dolny „bo padało”, strzałka w dół z pytaniem „dlaczego?”. Wniosek: spójnik współrzędny łączy równorzędne zdania, podrzędny wprowadza zdanie odpowiadające na pytanie.
+
+## 13 | Uzupełnienie po audycie braków — wersja 2.0
+
+### 13.1. Spójnik łączy, ale nie każdy wyraz łączący jest spójnikiem
+
+Spójnik jest nieodmienny i łączy wyrazy lub zdania. Nie pełni samodzielnie funkcji części zdania. O tym, jaką relację tworzy, decyduje znaczenie oraz budowa całej wypowiedzi.
+
+- *Kupiłem zeszyt **i** długopis.* — łączy równorzędne składniki zdania.
+- *Chciałem wyjść, **ale** zaczął padać deszcz.* — relacja przeciwstawna między zdaniami składowymi.
+- *Zostałem w domu, **ponieważ** źle się czułem.* — spójnik podrzędny wprowadza zdanie przyczyny.
+- *Nie wiem, **czy** zdążę.* — *czy* wprowadza zdanie zależne; nie jest tu tylko alternatywą „albo”.
+
+Odróżnij spójnik od zaimka względnego: *Wiem, **że** przyjdziesz* — *że* jest spójnikiem; *Uczeń, **który** wygrał, otrzyma nagrodę* — *który* jest zaimkiem względnym.
+
+### 13.2. Spójniki współrzędne — relacje znaczeniowe
+
+| Relacja | Typowe spójniki | Przykład |
+|---|---|---|
+| łączna | i, oraz, ani, ni | *Przeczytał tekst i rozwiązał zadania.* |
+| rozłączna | albo, lub, bądź | *Pojedziemy autobusem albo pociągiem.* |
+| przeciwstawna | ale, lecz, jednak, natomiast | *Chciał pomóc, ale nie zdążył.* |
+| wynikowa | więc, zatem, toteż | *Było późno, więc wróciliśmy.* |
+
+Podział jest narzędziem do analizy znaczenia, nie tylko zapamiętaniem listy. Niektóre wyrazy mogą pełnić różne funkcje w zależności od kontekstu; *jednak* może być spójnikiem lub partykułą w zależności od budowy i intonacji.
+
+### 13.3. Spójniki podrzędne i granica zdania
+
+Spójniki takie jak *że, żeby, ponieważ, gdy, kiedy, jeśli, chociaż, zanim, aby, jak* mogą wprowadzać zdanie podrzędne. Granicę zdania składowego zaznaczamy przecinkiem:
+- *Wiem, że masz rację.*
+- *Zadzwonię, kiedy wrócę.*
+- *Jeśli skończysz pracę, możesz wyjść.*
+- *Został w domu, ponieważ padał deszcz.*
+
+Przecinek stawiamy na granicy zdań, nie „przed każdym spójnikiem” mechanicznie. Jeśli spójnik łączy pojedyncze wyrazy lub równorzędne składniki, przecinek zwykle nie jest potrzebny: *jabłka i gruszki*, *mądry albo odważny*. Z kolei przed *ale, lecz, więc* w typowych zdaniach współrzędnych stawiamy przecinek: *Chciał iść, ale został*; *Było późno, więc wróciliśmy*.
+
+### 13.4. Przecinek przy powtórzonych spójnikach i konstrukcjach złożonych
+
+- Pojedyncze *i, oraz, lub, albo* zwykle nie wymagają przecinka między równorzędnymi składnikami: *Kupił jabłka i gruszki*.
+- Powtórzenie może zmieniać interpunkcję: *I padał deszcz, i wiał wiatr* — przecinek może oddzielać człony powtórzonej konstrukcji, zależnie od budowy zdania.
+- Przed spójnikiem rozpoczynającym zdanie podrzędne przecinek jest konieczny: *Przeczytałem książkę, którą poleciłeś*.
+- Gdy zdanie podrzędne jest wtrącone, wydzielamy je z obu stron: *Książka, którą mi dałeś, była ciekawa.*
+- W zdaniu złożonym wielokrotnie analizuj granice wszystkich zdań składowych, a nie tylko pierwszy widoczny spójnik.
+
+### 13.5. „Żeby”, „aby”, „gdyby” i cząstka „by”
+
+Spójniki *żeby, aby, gdyby* piszemy łącznie. Inaczej zachowuje się ruchoma cząstka trybu przypuszczającego w połączeniach typu *zrobiłbym, zrobił by, kto by przyszedł* — zapis zależy od tego, do jakiej formy przyłącza się *by* i jak zbudowane jest zdanie.
+
+- *Chcę, żebyś przyszedł.* — spójnik *żeby* + forma czasownika.
+- *Gdyby padało, zostałbym w domu.* — spójnik *gdyby*.
+- *Kto by pomyślał!* — cząstka *by* występuje oddzielnie po zaimku.
+- *Zrobiłbym to jutro.* — cząstka przyłączona do osobowej formy czasownika.
+
+Nie rozstrzygaj pisowni na podstawie samego dźwięku; rozpoznaj konstrukcję gramatyczną.
+
+### 13.6. Ćwiczenia dodatkowe z kluczem
+
+**D1.** Określ relację: (a) *Chciał pomóc, ale nie miał czasu.* (b) *Było zimno, więc zamknęliśmy okno.* (c) *Weź zeszyt albo kartkę.*  
+**Klucz:** przeciwstawna; wynikowa; rozłączna.
+
+**D2.** Wstaw przecinki: (a) *Wiem że wrócisz kiedy skończysz pracę.* (b) *Kupiłem jabłka i gruszki ale zapomniałem o chlebie.* (c) *Jeśli będzie padać zostaniemy w domu.*  
+**Klucz:** (a) *Wiem, że wrócisz, kiedy skończysz pracę.* (b) *Kupiłem jabłka i gruszki, ale zapomniałem o chlebie.* (c) *Jeśli będzie padać, zostaniemy w domu.*
+
+**D3.** Spójnik czy zaimek? (a) *Powiedział, że przyjdzie.* (b) *Człowiek, który przyszedł, czeka.* (c) *Nie wiem, czy przyjdzie.*  
+**Klucz:** (a) *że* — spójnik; (b) *który* — zaimek względny; (c) *czy* — spójnik wprowadzający zdanie zależne.
+
+**D4.** Popraw zapis, jeśli jest błędny: *gdy bym wiedział; żebyś; kto by przyszedł; zrobił bym*.  
+**Klucz:** *gdybym wiedział*; *żebyś*; *kto by przyszedł*; *zrobiłbym*.
+
+**D5.** Ułóż zdanie ze spójnikiem przeciwstawnym i zdanie ze spójnikiem podrzędnym. Zaznacz granicę zdań składowych.  
+**Klucz:** odpowiedzi własne; wymagane właściwe znaczenie i interpunkcja.
+
+### 13.7. Checklista
+
+- Czy spójnik łączy wyrazy czy całe zdania?
+- Czy rozpoznaję relację łączną, rozłączną, przeciwstawną lub wynikową?
+- Czy przecinek wynika z granicy zdań, a nie z samej obecności spójnika?
+- Czy odróżniam spójnik od zaimka względnego?
+- Czy poprawnie zapisuję *żeby, aby, gdyby* oraz konstrukcje z cząstką *by*?
+
+## 14 | Audyt po uzupełnieniu
+
+Wersja 2.0 dodaje analizę relacji znaczeniowych, spójników podrzędnych, granic zdań składowych, konstrukcji z powtórzeniami oraz rozróżnienie *że/czy* i zaimków względnych. Dodano zadania z kluczem i checklistę.
+
+**Do kontroli niezależnej:** interpunkcja przy konstrukcjach powtórzonych, wtrąceniach i zdaniach wielokrotnie złożonych wymaga analizy pełnej składni. Materiał ma charakter dydaktyczny, nie zastępuje słownika interpunkcyjnego.
+
+## 14 | Drugi cykl opracowania: spójnik, relacje i przecinki v3.0
+
+### 14.1. Spójnik łączy elementy, a nie zastępuje całej analizy
+
+Spójnik to nieodmienna część mowy łącząca wyrazy, grupy wyrazów lub zdania. Może wyrażać m.in. łączność (*i, oraz*), przeciwstawienie (*ale, lecz, jednak*), rozłączność (*albo, lub*), wynik (*więc, zatem*), przyczynę (*bo, ponieważ*), warunek (*jeśli, jeżeli*), przyzwolenie (*chociaż, choć*) lub wybór. W szkolnych opracowaniach część tych wyrazów bywa opisywana jako spójniki podrzędne albo wyrazy wprowadzające zdanie podrzędne; przy analizie nazwij relację i sprawdź budowę zdania.
+
+### 14.2. Współrzędność i podrzędność
+
+Spójniki współrzędne łączą elementy równorzędne: *Otworzył zeszyt i zapisał temat.* Spójniki podrzędne wprowadzają zdanie zależne: *Został w domu, ponieważ był chory.* W drugim zdaniu część *ponieważ był chory* odpowiada na pytanie o przyczynę i jest zależna od zdania nadrzędnego. Sam spójnik nie wystarczy, by rozstrzygnąć wszystkie kwestie interpunkcyjne — trzeba znaleźć granice zdań składowych.
+
+### 14.3. Przecinki przy spójnikach — zasady praktyczne
+
+- Przed *ale, lecz, jednak, natomiast, zaś* zazwyczaj stawiamy przecinek, gdy łączą przeciwstawione człony lub zdania: *Chciał pomóc, ale nie miał czasu*.
+- Przed *i, oraz, lub, albo, ani* zwykle nie stawiamy przecinka przy zwykłym łączeniu równorzędnych elementów: *Kupiła jabłka i gruszki*. Przecinek może się pojawić z innych powodów, np. przy wtrąceniu lub granicy zdań o bardziej złożonej strukturze.
+- Przed spójnikami wprowadzającymi zdania podrzędne (*że, ponieważ, gdy, kiedy, jeśli, choć, aby*) stawiamy przecinek na granicy zdań: *Wiem, że wrócisz*; *Zostaniemy w domu, jeśli będzie padać*.
+- Jeśli zdanie podrzędne znajduje się przed nadrzędnym, przecinek stawiamy po nim: *Jeśli będzie padać, zostaniemy w domu*.
+- Gdy zdanie podrzędne jest w środku zdania, oddzielamy je z obu stron: *Wiem, że wrócisz, kiedy skończysz pracę*.
+
+### 14.4. „I”, „ani”, „lub”, „albo” — powtórzenia i układ zdania
+
+Powtórzony spójnik może zmienić rytm i zakres łączenia: *Ani nie zadzwonił, ani nie napisał*; *I śpiewał, i tańczył*. W konstrukcjach powtórzonych przecinki zależą od budowy i normy interpunkcyjnej; nie stosuj zasady „przed każdym i przecinek”. Z kolei *albo* i *lub* mogą łączyć możliwości: *Weź zeszyt albo kartkę*. Jeśli w zdaniu występuje więcej niż jedno zdanie składowe, przecinek rozpatruj na granicy zdań, nie tylko przy spójniku.
+
+### 14.5. Spójnik a podobne wyrazy
+
+- *że* w *Wiem, że przyjdzie* — spójnik wprowadzający zdanie podrzędne;
+- *który* w *Uczeń, który przyszedł, czeka* — zaimek względny, pełni funkcję w zdaniu podrzędnym;
+- *czy* w pytaniu bezpośrednim *Czy przyjdziesz?* bywa klasyfikowane jako partykuła pytająca, a w *Nie wiem, czy przyjdziesz* — jako spójnik/wyraz wprowadzający pytanie zależne w szkolnej analizie;
+- *więc* — spójnik wynikowy; *więcej* — przysłówek lub zaimek/liczebnik nieokreślony zależnie od użycia.
+
+### 14.6. Ćwiczenia po uzupełnieniu
+
+**A. Nazwij relację:**
+1. *Padało, więc wróciliśmy do domu.*
+2. *Chciał iść na spacer, ale zabrakło czasu.*
+3. *Zabierz parasol, jeśli zapowiadają deszcz.*
+4. *Nie tylko przeczytał tekst, lecz także sporządził notatkę.*
+
+**Klucz:** 1. wynikowa; 2. przeciwstawna; 3. warunkowa; 4. konstrukcja wzmacniająca/uzupełniająca z przeciwstawiającym *lecz także*.
+
+**B. Wstaw przecinki:**
+1. *Wiem że przyjdziesz jeśli skończysz pracę.*
+2. *Jeżeli zdążymy odwiedzimy bibliotekę ale nie zostaniemy długo.*
+3. *Kupiłem zeszyty i długopisy oraz teczkę.*
+4. *Ola która przygotowała plakat i Kuba który napisał tekst otrzymali nagrodę.*
+
+**Klucz:** 1. *Wiem, że przyjdziesz, jeśli skończysz pracę.* 2. *Jeżeli zdążymy, odwiedzimy bibliotekę, ale nie zostaniemy długo.* 3. Bez przecinków przy zwykłym szeregu: *Kupiłem zeszyty i długopisy oraz teczkę.* 4. *Ola, która przygotowała plakat, i Kuba, który napisał tekst, otrzymali nagrodę.* — przecinki wyznaczają zdania względne wtrącone w konstrukcję podmiotu.
+
+**C. Określ część mowy wyróżnionego wyrazu:**
+1. *Powiedział, że wróci.*
+2. *Człowiek, który wrócił, czeka.*
+3. *Czy znasz odpowiedź?*
+4. *Nie wiem, czy znasz odpowiedź.*
+
+**Klucz:** 1. spójnik; 2. zaimek względny; 3. partykuła pytająca (w szkolnej klasyfikacji); 4. spójnik/wyraz wprowadzający pytanie zależne.
+
+### 14.7. Zadanie przekrojowe
+
+Popraw interpunkcję i opisz relacje: „Kiedy skończyłem czytać książkę odłożyłem ją na półkę ale ponieważ była pożyczona zapisałem nazwisko właściciela”.
+
+**Klucz:** „Kiedy skończyłem czytać książkę, odłożyłem ją na półkę, ale ponieważ była pożyczona, zapisałem nazwisko właściciela.” Zdanie zaczyna się od zdania podrzędnego czasu (*kiedy skończyłem czytać książkę*), następnie występuje zdanie główne; *ale* wprowadza przeciwstawienie, a *ponieważ była pożyczona* — przyczynę. W praktyce interpunkcję sprawdzamy, odnajdując granice wszystkich zdań składowych.
+
+### 14.8. Samokontrola
+
+Umiem wskazać spójnik, nazwać relację znaczeniową, odróżnić współrzędność od podrzędności, stawiać przecinki na granicach zdań składowych, rozpoznać powtórzone spójniki oraz odróżnić *że/czy* od zaimka względnego *który*.

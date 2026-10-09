@@ -5,81 +5,78 @@ tytul: Przenośnia, ożywienie i uosobienie
 lead: Metafora i nadawanie cech istot żywych przedmiotom i zjawiskom.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010, S06
-stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
+stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
 utworzono: 2026-10-09
+wersja: 2.0
 ---
 
-> Szkielet do wypełnienia przez LLM — instrukcja: `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (prompt) albo `narzedzia/szkielety_polski.py`.
+# S02 | Przenośnia, ożywienie i uosobienie — pełna lekcja v2.0
 
-**Musi się znaleźć w lekcji:**
-- przenośnia (metafora) — połączenie wyrazów dające nowe znaczenie
-- ożywienie (animizacja): cechy istot żywych (wiatr wyje, gwiazdy mrugają)
-- uosobienie (personifikacja): cechy ludzkie — myślenie, mówienie, uczucia (morze się gniewa, Śmierć zastanawia się)
-- jak odróżnić ożywienie od uosobienia — pytanie testowe
-- funkcja w bajce, wierszu i prozie
+## 0. Cele
+Rozpoznaję metaforę, animizację i personifikację, potrafię wyjaśnić znaczenie przenośne oraz uzasadnić funkcję środka. Odróżniam nadanie cech istoty żywej od nadania cech typowo ludzkich.
 
-**Pułapki do kliniki błędów:** mylenie ożywienia z uosobieniem; uznanie każdego porównania za metaforę; uosobienie a bohater zwierzęcy w bajce (alegoria).
+## 1. Przenośnia (metafora)
+**Przenośnia/metafora** polega na użyciu wyrazu lub połączenia wyrazów w znaczeniu innym niż dosłowne, dzięki zestawieniu znaczeń i utworzeniu nowego obrazu: *morze świateł, lawina pytań, kamienne serce, czas ucieka*. Metafora nie musi zawierać wyrazu *jak*. W porównaniu zestawiamy dwa elementy jawnie (*serce twarde jak kamień*), w metaforze przenosimy cechę lub znaczenie (*kamienne serce*).
 
-## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+Aby wyjaśnić metaforę, nie wystarczy przepisać ją innymi słowami. Trzeba wskazać sens dosłowny, sens przenośny i efekt. *Lawina pytań* oznacza bardzo dużą liczbę pytań pojawiających się szybko; obraz lawiny podkreśla gwałtowność i przytłoczenie.
 
-**Cel:** Potrafię odróżnić metaforę, ożywienie i uosobienie.
+## 2. Ożywienie (animizacja)
+**Ożywienie** przypisuje przedmiotom, zjawiskom lub zjawiskom przyrody cechy istot żywych, ale niekoniecznie ludzkie: *wiatr wyje, rzeka biegnie, gwiazdy mrugają, liście tańczą*. Środek ułatwia przedstawienie przyrody jako dynamicznej i aktywnej. Czasownik związany z ruchem nie zawsze jest animizacją — *rzeka płynie* jest dosłownym opisem; *rzeka pędzi przez dolinę* może być obrazowe w kontekście.
 
-- **Przenośnia (metafora)** — nowe znaczenie przez połączenie wyrazów (*morze łez*).  
-- **Ożywienie (animizacja)** — cechy istot żywych (*wiatr wyje*, *gwiazdy mrugają*).  
-- **Uosobienie (personifikacja)** — cechy ludzkie: myślenie, mówienie, uczucia (*morze się gniewa*, *Śmierć zastanawia się*).
+## 3. Uosobienie (personifikacja)
+**Uosobienie** nadaje rzeczom, pojęciom abstrakcyjnym, zjawiskom lub zwierzętom cechy typowo ludzkie: mówienie, myślenie, podejmowanie decyzji, intencje i ludzkie emocje. Przykłady autorskie: *Nadzieja zapukała do drzwi; Śmierć zaprosiła go do tańca; Miasto nie chciało zasnąć.*
 
-**Pytanie testowe:** Czy ma cechy wyłącznie ludzkie (mowa, myśl)? → uosobienie.  
-Czy tylko cechy żywych? → ożywienie.
+**Test rozróżnienia:** zapytaj, czy przedstawiony obiekt zachowuje się jak żywa istota ogólnie (ożywienie), czy otrzymuje cechę człowieka (uosobienie). Granica może być płynna: *wiatr śpiewa* bywa analizowany jako ożywienie, a w mocno ludzkim kontekście — jako personifikacja. W odpowiedzi uzasadnij wybór.
 
-**Klinika:** mylenie ożywienia z uosobieniem; alegoria w bajce (lis = chytrość) to nie uosobienie bohatera.
+## 4. Zwierzę w bajce a alegoria
+Zwierzę, które mówi i myśli jak człowiek, może być uosobione. Jeśli jednak postać zwierzęca konsekwentnie reprezentuje utrwaloną cechę lub typ społeczny (np. lis jako symbol sprytu w określonej tradycji bajkowej), może pełnić funkcję **alegorii**. Nie każde mówiące zwierzę automatycznie jest alegorią; znaczenie musi być utrwalone w konwencji utworu i służyć interpretacji.
 
-**Ćwiczenia:** Nazwij środek + funkcja.  
-CKE: Odróżnij ożywienie od uosobienia (0–2).
+## 5. Funkcje
+Metafora skraca opis i tworzy nowe skojarzenie; animizacja ożywia przestrzeń; personifikacja pozwala przedstawić abstrakcyjne pojęcie jak bohatera; wszystkie mogą budować nastrój, emocje i ocenę. W analizie unikaj ogólnika „tekst jest ciekawszy”. Napisz, jaki obraz powstaje i co czytelnik dzięki niemu rozumie.
 
-## 0 | Cel i kryterium gotowości [[basic:E8]]
+## 6. Klinika błędów
+| Błąd | Poprawnie | Dlaczego? |
+|---|---|---|
+| każde porównanie to metafora | porównanie ma jawne zestawienie | Środki są powiązane, ale różne. |
+| *rzeka płynie* — na pewno ożywienie | zwykle opis dosłowny | To naturalna czynność rzeki. |
+| *Śmierć przemówiła* — tylko ożywienie | personifikacja | Mówienie to cecha ludzka. |
+| każde mówiące zwierzę to alegoria | sprawdź konwencję i sens | Może być jedynie bohaterem fantastycznym. |
+| nazwa bez interpretacji | wyjaśnij sens przenośny | Sama etykieta nie pokazuje rozumienia. |
 
-DO UZUPEŁNIENIA: 3–5 zdań „Potrafię…” (rozpoznać środek, nazwać go, określić funkcję w tekście).
+## 7. Ćwiczenia
+**A.** Nazwij środek: 1. *miasto obudziło się*; 2. *potok śpiewał wśród kamieni*; 3. *góra problemów*; 4. *serce jak lód*.  
+**Klucz:** 1. personifikacja; 2. animizacja, ewentualnie personifikacja zależnie od interpretacji; 3. metafora; 4. porównanie.
 
-## 1 | Definicja i budowa [[basic:E8]]
+**B.** Wyjaśnij *„Nadzieja podała mu rękę”*.  
+**Klucz przykładowy:** abstrakcyjne pojęcie nadziei przedstawiono jak osobę, która pomaga; personifikacja sugeruje, że bohater odzyskał wsparcie i motywację.
 
-DO UZUPEŁNIENIA: krótka definicja każdego środka, z czego się składa, wyrazy-sygnały.
+**C.** Wyjaśnij, dlaczego *„wiatr wyje”* może być uznane za animizację, a *„wiatr poprosił o ciszę”* za personifikację.  
+**Klucz:** wycie to dźwięk kojarzony z istotą żywą, natomiast proszenie jest aktem komunikacyjnym typowo ludzkim.
 
-## 2 | Jak rozpoznać — procedura [[basic:E8]]
+## 8. Zadanie egzaminacyjne (0–2 pkt)
+W wyrażeniu *„Miasto po ciężkim dniu zasnęło”* nazwij środek i wyjaśnij jego funkcję. **Klucz:** personifikacja; miasto przedstawiono jak człowieka, co podkreśla uspokojenie, wyciszenie i koniec aktywności.
 
-DO UZUPEŁNIENIA: kroki rozpoznawania + pytanie testowe odróżniające podobne środki.
+## 9. Fiszki i wizualizacja
+Metafora — znaczenie przenośne; animizacja — cechy istoty żywej; personifikacja — cechy ludzkie; alegoria — utrwalone znaczenie konwencjonalne. @opis Diagram rozdziela trzy pojęcia na osi: przeniesienie znaczenia → cecha żywa → cecha ludzka; przykłady pokazują, że kategorie mogą się nakładać.
 
-## 3 | Przykłady z lektur i wierszy [[basic:E8]]
+## 10. Samokontrola
+Potrafię podać fragment, nazwać środek, wyjaśnić jego sens przenośny i wskazać efekt w konkretnym kontekście.
 
-DO UZUPEŁNIENIA: 6–10 krótkich przykładów (jedno zdanie/wers cytatu albo parafraza) z lektur obowiązkowych, z nazwą środka.
+## 11. Trening dodatkowy — rozstrzyganie przypadków granicznych
 
-## 4 | Funkcja — po co autor go używa [[understand:ROZUMIENIE]]
+**1.** Nazwij środek w wyrażeniu *„czas ucieka”*.  
+**Klucz:** metaforyczne przedstawienie czasu jako czegoś poruszającego się/uciekającego; funkcja zależy od kontekstu, często podkreśla szybkość przemijania.
 
-DO UZUPEŁNIENIA: tabela: środek | typowe funkcje | wzór odpowiedzi egzaminacyjnej (np. „Ożywienie sprawia, że…”).
+**2.** Czy *„pies szczeka”* jest uosobieniem?  
+**Klucz:** nie — to opis dosłowny naturalnego zachowania psa.
 
-## 5 | Odróżnij od podobnych [[understand:ROZUMIENIE]]
+**3.** Czy *„pies obraził się na swojego pana”* jest uosobieniem?  
+**Klucz:** może być, jeśli autor przypisuje psu ludzką reakcję i świadomą intencję; w opowieści o zwierzętach zależy od konwencji.
 
-DO UZUPEŁNIENIA: pary środków łatwych do pomylenia, z rozstrzygającym pytaniem.
+**4.** Wyjaśnij różnicę między *„gwiazdy mrugają”* i *„gwiazdy obiecały, że wskażą drogę”*.  
+**Klucz:** pierwsze to typowa animizacja; drugie przypisuje gwiazdom ludzką czynność mówienia i obietnicy, więc personifikacja.
 
-## 6 | Klinika błędów
+**5.** Napisz jedno zdanie z metaforą i jedno z porównaniem na temat strachu.  
+**Kryteria:** metafora nie ma jawnego łącznika porównawczego; porównanie jawnie zestawia dwa elementy; uczeń wyjaśnia efekt.
 
-DO UZUPEŁNIENIA: tabela: Błąd | Poprawnie | Dlaczego? — min. 6 wierszy.
-
-## 7 | Ćwiczenia A — podstawa [[basic:E8]]
-
-DO UZUPEŁNIENIA: 6–8 zadań z kluczem (rozpoznaj, nazwij, podaj funkcję).
-
-## 8 | Ćwiczenia B — tworzenie i C — konkurs [[exam:KONKURS]]
-
-DO UZUPEŁNIENIA: zadania: ułóż własny przykład, przekształć tekst, analiza fragmentu — z kluczem.
-
-## 9 | Zadania w stylu CKE
-
-DO UZUPEŁNIENIA: 3–4 zadania z kluczem, punktacją i uzasadnieniem (rozpoznanie + funkcja w tekście).
-
-## 10 | Fiszki
-
-DO UZUPEŁNIENIA: 8–12 par „pytanie — odpowiedź”.
-
-## 11 | Wizualizacja
-
-DO UZUPEŁNIENIA: propozycja 1–2 grafik + obowiązkowa linia @opis pod każdą.
+**Zastosowanie do lektury:** jeśli w bajce zwierzęta mówią, rozdziel trzy kwestie: (1) personifikacja w zachowaniu postaci, (2) funkcja fabularna, (3) ewentualna alegoria wynikająca z utrwalonej tradycji. Nie zakładaj alegorii bez uzasadnienia.

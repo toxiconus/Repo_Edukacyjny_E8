@@ -5,8 +5,9 @@ tytul: Zaimek
 lead: Zamiast nazwy — wskazuje: ja, ten, który, ktoś, nikt; „swój” czy „jego”, „mi” czy „mnie”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L003, G16
-stan: WYPEŁNIONY — Claude, 2026-10-09 (na podstawie zarysu Grok); czeka na W1
+stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
 utworzono: 2026-10-09
+wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -199,3 +200,174 @@ Wyjaśnij, dlaczego w zdaniu *Nikt nic nie widział.* są trzy przeczenia i czy 
 
 **Grafika 2:** Dwa obrazki ze strzałkami: *Łucja pokazała **swój** płaszcz* (strzałka do Łucji) i *Łucja pokazała **jej** płaszcz* (strzałka do innej postaci).  
 @opis Lewy obrazek: strzałka od słowa „swój” wraca do podmiotu „Łucja”. Prawy: strzałka od „jej” biegnie do drugiej dziewczyny poza zdaniem. Wniosek: „swój” wskazuje podmiot zdania, „jego/jej” — kogoś innego.
+
+## 13 | Uzupełnienie po audycie braków — wersja 2.0
+
+### 13.1. Zaimek nie ma jednego typu odmiany
+
+Zaimek to część mowy wskazująca lub zastępująca nazwę, cechę, liczbę albo okoliczność. Jego forma zależy od tego, co zastępuje i jaką funkcję pełni w zdaniu. Dlatego nie należy pytać wyłącznie „jakiego rodzaju jest zaimek?”, lecz ustalić jednocześnie: (1) typ znaczeniowy, (2) co zastępuje lub wskazuje, (3) przypadek/liczbę/rodzaj, jeśli podlega tym kategoriom, (4) funkcję składniową.
+
+| Typ | Przykłady | Co trzeba sprawdzić |
+|---|---|---|
+| osobowy | ja, ty, on, ona, my, wy, oni, one | przypadek i formę akcentowaną/nieakcentowaną: mnie/mi, ciebie/cię, jego/go |
+| zwrotny | siebie, się, sobie | odnosi się do podmiotu; nie ma mianownika |
+| dzierżawczy | mój, twój, nasz, wasz, swój, jego, jej, ich | do kogo należy rzecz; zgodność z rzeczownikiem określanym |
+| wskazujący | ten, tamten, taki, tyle | wskazanie osoby, rzeczy, cechy lub ilości |
+| pytający | kto? co? jaki? który? czyj? ile? | wprowadza pytanie bezpośrednie |
+| względny | kto, co, jaki, który, czyj, ile | łączy zdanie podrzędne z nadrzędnym; zwykle wymaga przecinka przed zdaniem podrzędnym |
+| nieokreślony | ktoś, coś, jakiś, ktokolwiek, niejaki | brak dokładnego wskazania |
+| przeczący | nikt, nic, żaden, niczyj | przeczenie; pilnuj zgodności z innymi elementami przeczącymi |
+| upowszechniający | każdy, wszyscy, wszystko, wszelki | obejmuje cały zbiór lub każdą jednostkę |
+| pytajno-względny w użyciu | który, jaki, ile | klasyfikacja zależy od funkcji w zdaniu, nie od samego kształtu |
+
+### 13.2. Ten sam wyraz może pełnić różne role
+
+- *Który zeszyt wybierasz?* — *który* jest zaimkiem pytającym.
+- *Wybierz zeszyt, który leży na stole.* — *który* jest zaimkiem względnym, wprowadza zdanie podrzędne.
+- *Nie wiem, ile czasu zostało.* — *ile* występuje w zdaniu podrzędnym zależnym, nie jest pytaniem bezpośrednim.
+- *Taki pomysł już znam.* — *taki* wskazuje cechę; określa rzeczownik.
+- *Zrobił to tak, jak go nauczono.* — *tak* pełni funkcję przysłówkową, a *jak* może wprowadzać zdanie podrzędne; nie klasyfikuj mechanicznie bez kontekstu.
+
+### 13.3. Formy krótkie i długie zaimków osobowych
+
+W neutralnym zdaniu zwykle używa się form krótkich, nieakcentowanych: *Daj mi książkę. Widziałem go. Powiedział ci prawdę.* Formy dłuższe są potrzebne m.in. na początku zdania, dla kontrastu lub nacisku: *Mnie daj książkę, nie jemu. Ciebie pytałem.* Po przyimku stosujemy formy z nagłosowym *n-* tam, gdzie przewiduje to norma: *do niego, dla niej, z nimi, o nas*. Nie mówimy w starannej polszczyźnie *do niego* jako wyjątku od „jego” — po przyimku forma z *n-* jest standardowa.
+
+W konstrukcjach typu *daj mi* / *daj mnie* wybór może zmieniać nacisk, a nie tylko poprawność. W zadaniu szkolnym trzeba odczytać kontekst: forma długa bywa poprawna, lecz mocniej akcentowana.
+
+### 13.4. „Swój” czy „jego/jej/ich”?
+
+Zaimka *swój* używamy, gdy posiadacz jest tożsamy z podmiotem zdania:
+- *Kasia odrobiła swoje zadanie* — zadanie Kasi.
+- *Piotr wziął swój plecak* — plecak Piotra.
+
+Formy *jego, jej, ich* wskazują zwykle na innego posiadacza albo wyraźnie odróżniają go od podmiotu:
+- *Piotr wziął jego plecak* — plecak kogoś innego niż Piotr.
+- *Kasia spotkała Olę i oddała jej książkę* — książka Oli, jeśli tak wynika z kontekstu.
+
+Nie wolno rozstrzygać tylko na podstawie płci osoby. W zdaniu *Ania powiedziała Basi, że jej brat przyjedzie* zaimek *jej* może być niejednoznaczny: chodzić może o brata Ani lub Basi. Dobra redakcja usuwa dwuznaczność: *Ania powiedziała Basi, że brat Basi przyjedzie*.
+
+### 13.5. Zaimek przeczący i podwójne przeczenie
+
+W języku polskim połączenia typu *nikt nie przyszedł*, *niczego nie znalazłem*, *nigdzie nikogo nie było* są poprawne. To nie błąd logiczny, lecz typowa konstrukcja gramatyczna z uzgodnionym przeczeniem. W zdaniu standardowym nie zastępujemy jej angielskim wzorcem pojedynczego przeczenia.
+
+- *Nikt nie znał odpowiedzi.* — poprawnie.
+- *Nie widziałem nikogo.* — poprawnie.
+- *Żaden uczeń nie oddał pracy.* — poprawnie.
+
+Zwróć uwagę na przypadek: *nie ma nikogo* (dopełniacz), *nie powiedziałem niczego* (dopełniacz), *nie pomogłem nikomu* (celownik).
+
+### 13.6. Zaimek względny, zdanie podrzędne i przecinek
+
+Jeśli zaimek względny wprowadza zdanie podrzędne, oddzielamy zdanie przecinkiem:
+- *Przeczytałem książkę, którą mi poleciłaś.*
+- *Osoba, której szukasz, już wyszła.*
+- *Nie wiem, kto przyszedł.*
+
+Nie stawiamy przecinka automatycznie przed każdym wyrazem *który*; rozpoznaj granicę zdań. W zdaniu *Który zeszyt wybierasz?* zaimek pytający nie wprowadza zdania podrzędnego, więc nie ma powodu do przecinka.
+
+### 13.7. Ćwiczenia uzupełniające — z kluczem
+
+**D1.** Określ funkcję wyrazu *który*: (a) *Który film oglądasz?* (b) *Film, który oglądasz, jest ciekawy.*  
+**Klucz:** (a) zaimek pytający; (b) względny, wprowadza zdanie podrzędne.
+
+**D2.** Uzupełnij *swój / jego*: (a) Marek wziął ___ plecak. (b) Marek wziął plecak Pawła, bo ___ plecak był mokry.  
+**Klucz:** (a) swój, jeśli chodzi o plecak Marka; (b) jego, jeśli chodzi o plecak Pawła. Kontekst musi jasno wskazywać posiadacza.
+
+**D3.** Popraw zdania, jeśli trzeba: (a) *Do go nie było.* (b) *Nikt nie widział nikogo.* (c) *To jest mój własny zeszyt.* (d) *Osoba która wygrała, otrzyma nagrodę.*  
+**Klucz:** (a) *Jego nie było* albo *Nie było go*; po przyimku: *do niego*; (b) poprawne; (c) poprawne, choć *mój własny* może być stylistycznie nadmiarowe; (d) *Osoba, która wygrała, otrzyma nagrodę.*
+
+**D4.** Zastąp powtórzenia zaimkami, zachowując jednoznaczność: *Ola podała Ewie książkę Oli.*  
+**Klucz:** *Ola podała Ewie swoją książkę.* (jeśli właścicielką jest Ola). Jeśli książka należy do Ewy, zdanie trzeba ułożyć inaczej: *Ola podała Ewie jej książkę* — jednak zaimek *jej* może być dwuznaczny bez kontekstu.
+
+**D5.** Wskaż zaimki i nazwij ich typ: *Każdy, kto przyniósł swój zeszyt, może wybrać dowolne zadanie.*  
+**Klucz:** każdy — upowszechniający; kto — względny; swój — dzierżawczy zwrotny; dowolne — wskazujący/nieokreślony w zależności od przyjętej klasyfikacji szkolnej (należy uwzględnić terminologię podręcznika).
+
+**D6.** Ułóż dwa zdania z *ile*: jedno pytające bezpośrednie i jedno z zależnym pytaniem.  
+**Klucz:** np. *Ile masz czasu?* oraz *Nie wiem, ile mam czasu.*
+
+### 13.8. Checklista
+
+- Czy klasyfikuję zaimek w kontekście zdania?
+- Czy odróżniam zaimek pytający od względnego?
+- Czy wiem, do kogo odnosi się *swój / jego / jej / ich*?
+- Czy po przyimku stosuję właściwą formę zaimka?
+- Czy rozumiem polskie uzgodnienie przeczenia: *nikt nie*, *niczego nie*?
+- Czy przecinek oddziela całe zdanie podrzędne, a nie sam wyraz?
+
+## 14 | Audyt po uzupełnieniu
+
+Wersja 2.0 dodaje analizę kontekstową zaimków pytających i względnych, form krótkich i długich, użycia *swój*, dwuznaczności dzierżawczej, uzgodnionego przeczenia, interpunkcji oraz zadania diagnostyczne. Zachowano wcześniejsze zestawienia i ćwiczenia.
+
+**Ograniczenia do niezależnej kontroli:** szkolne klasyfikacje niektórych form (np. *dowolny, obaj, taki, tyle*) różnią się między opracowaniami; przy ocenianiu należy respektować terminologię przyjętą w danym podręczniku i poleceniu. Nie wszystkie formy krótkie i długie różnią się poprawnością — często różnią się akcentem i funkcją pragmatyczną.
+
+## 14 | Drugi cykl opracowania: zaimek w kontekście v3.0
+
+### 14.1. Zaimek nie jest jedną, jednolitą grupą
+
+Zaimek zastępuje inny wyraz lub wskazuje osobę, rzecz, cechę, ilość, miejsce albo relację bez nazywania jej wprost. Rodzaj zaimka ustalamy po jego znaczeniu i funkcji: *ja, ty, oni* — osobowe; *mój, nasz, swój* — dzierżawcze; *ten, tamten, taki* — wskazujące; *kto, co, jaki, który, czyj* — pytajne; *ktoś, coś, jakiś* — nieokreślone; *nikt, nic, żaden* — przeczące; *który, jaki, kto* w odpowiedniej funkcji — względne; *sam, każdy, wszyscy, inny* — w wielu szkolnych klasyfikacjach zaliczane do zaimków określonych lub upowszechniających. Podział może się różnić w zależności od przyjętej gramatyki, dlatego na sprawdzianie stosuj klasyfikację z podręcznika, a w analizie uzasadnij funkcję.
+
+### 14.2. Odmiana i formy krótkie
+
+Zaimek odmienia się zgodnie z kategoriami właściwymi danemu typowi. Warto utrwalić formy przypadków zależnych:
+- ja — mnie/mi, mnie, mną, o mnie;
+- ty — ciebie/cię, tobie/ci, tobą, o tobie;
+- on — jego/go, jemu/mu, nim, o nim;
+- ona — jej, niej, o niej;
+- oni/one — ich/nich, im/nim, nimi, o nich.
+
+Formy krótkie (*mi, ci, mu, go*) zwykle nie stoją po przyimku i często zajmują pozycję nieakcentowaną: *daj mi zeszyt*, ale *do mnie*; *widzę go*, ale *bez niego*. Formy dłuższe bywają potrzebne dla kontrastu lub nacisku: *To właśnie tobie chciałem podziękować*. Nie traktuj każdej formy krótkiej jako błędnej — decydują składnia, pozycja i akcent.
+
+### 14.3. „Swój” czy „jego/jej/ich”?
+
+Zaimka **swój** używamy zwykle wtedy, gdy posiadacz jest podmiotem zdania: *Marta wzięła swój plecak* — plecak Marty. Jeśli posiadaczem jest ktoś inny, używamy formy wskazującej na tę osobę: *Marta wzięła plecak Kasi, bo jej plecak był mokry*. Gdy możliwe są dwa odczytania, przepisz zdanie, aby usunąć dwuznaczność: *Marta wzięła plecak należący do Kasi, ponieważ plecak Marty był mokry.*
+
+Porównaj: *Piotr powiedział Pawłowi, że jego praca jest dobra.* Zaimek *jego* może odnosić się do Piotra albo Pawła. To nie zawsze błąd gramatyczny, lecz niejasność komunikacyjna. W tekstach argumentacyjnych i opowiadaniach dbaj o jednoznaczne odniesienie zaimków.
+
+### 14.4. Zaimek względny i przecinek
+
+Zaimek względny łączy zdanie podrzędne z nadrzędnym i odsyła do wcześniej wymienionego elementu: *Przeczytałem książkę, **którą** mi poleciłaś.* Zdanie względne oddzielamy przecinkiem zgodnie z regułami zdań podrzędnych: *Uczeń, który wygrał konkurs, otrzymał nagrodę.* Gdy zdanie podrzędne jest w środku zdania, przecinek zamyka je również z prawej strony. Nie stawiamy przecinka automatycznie po samym zaimku; stawiamy go na granicy zdań.
+
+Odróżnij:
+- *Który zeszyt jest twój?* — *który* jest zaimkiem pytajnym;
+- *Zeszyt, który leży na stole, jest mój.* — *który* jest zaimkiem względnym;
+- *Który z kolei?* — pytanie o kolejność, ale *który* nie jest tu liczebnikiem.
+
+### 14.5. Przeczenie i podwójne przeczenie
+
+W polszczyźnie standardowej kilka wyrazów przeczących może wystąpić w jednym zdaniu: *Nikt niczego nie widział*; *Nie powiedziałem nikomu nic*. To nie jest błąd logiczny — elementy przeczące współtworzą konstrukcję przeczącą. Błędem byłoby mechaniczne usunięcie *nie* z czasownika w takich zdaniach. Pamiętaj też o poprawnej odmianie: *nie ma nikogo*, *nie rozmawiał z nikim*, *nie ufał żadnemu świadkowi*.
+
+### 14.6. Ćwiczenia po uzupełnieniu
+
+**A. Określ rodzaj i funkcję zaimka:**
+1. *Tamta książka należy do mnie.*
+2. *Kto zostawił tutaj swój telefon?*
+3. *Nie widziałem nikogo, kto mógłby pomóc.*
+4. *Każdy powinien sprawdzić własną odpowiedź.*
+5. *Nie wiem, czyj to plecak.*
+
+**Klucz:** 1. *tamta* — wskazujący, określa rzeczownik; *mnie* — osobowy w przypadku zależnym; 2. *kto* — pytajny; *swój* — dzierżawczy; 3. *nikogo* — przeczący; *kto* — względny; 4. *każdy* — upowszechniający/określony według przyjętej klasyfikacji; *własną* — określa rzeczownik; 5. *czyj* — pytajny w zdaniu zależnym.
+
+**B. Uzupełnij właściwą formą:**
+1. Nie było ___ (ja) w domu.
+2. Podejdź do ___ (on), proszę.
+3. Oddaj ___ (ja) ten długopis.
+4. Rozmawiałem z ___ (ona) o konkursie.
+5. To jest zadanie, ___ nie rozumiem.
+
+**Klucz:** 1. mnie; 2. niego; 3. mi (neutralnie) / mnie (z naciskiem); 4. nią; 5. którego.
+
+**C. Usuń dwuznaczność:**
+1. *Ania powiedziała Oli, że jej wynik jest najlepszy.*
+2. *Kuba spotkał Tomka po jego treningu.*
+
+**Przykładowe odpowiedzi:** 1. *Ania powiedziała Oli: „Twój wynik jest najlepszy”* (jeśli chodzi o wynik Oli) albo *Ania powiedziała Oli, że wynik Ani jest najlepszy.* 2. *Kuba spotkał Tomka po treningu Tomka* albo *…po własnym treningu Kuby* — zależnie od zamierzonego sensu.
+
+### 14.7. Analiza błędu w dłuższym zdaniu
+
+„Osoba która nie powiedziała nikomu nic o swoim planie, sama zdecydowała, że odda jej notatki.”
+
+Popraw interpunkcję: **„Osoba, która nie powiedziała nikomu nic o swoim planie, sama zdecydowała, że odda jej notatki.”** Następnie ustal, do kogo odnosi się *jej*. Bez kontekstu zaimek jest niejednoznaczny; należy podać imię lub powtórzyć rzeczownik. *Która* jest zaimkiem względnym; *nikomu* i *nic* — przeczącymi; *swoim* — dzierżawczym odnoszącym się do podmiotu; *sama* — wzmacnia samodzielność podmiotu; *że* wprowadza zdanie podrzędne i w typowej szkolnej analizie jest spójnikiem, nie zaimkiem.
+
+### 14.8. Samokontrola
+
+Sprawdź, czy potrafisz: nazwać rodzaj zaimka; odmienić zaimki osobowe; odróżnić *mi/mnie*, *go/jego*, *nim/o nim*; właściwie użyć *swój*; rozpoznać zaimek względny i postawić przecinki; poprawnie budować zdania z kilkoma przeczącymi wyrazami; usuwać dwuznaczność odniesienia. Jeśli nie — wróć do sekcji 14.2–14.5.

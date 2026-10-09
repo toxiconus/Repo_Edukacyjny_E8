@@ -5,8 +5,9 @@ tytul: Wykrzyknik
 lead: Ach! Hej! Bęc! — wyraz emocji, wołania i dźwięku; wykrzyknik (część mowy) a wykrzyknienie (zdanie).
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, S03, G14
-stan: WYPEŁNIONY — Claude, 2026-10-09 (na podstawie zarysu Grok); czeka na W1
+stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
 utworzono: 2026-10-09
+wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -150,3 +151,127 @@ Wyjaśnij różnicę w zapisie: *O Boże!* i *O, Bogusia!*
 
 **Grafika 2:** Dwa zdania z „o”: *O ojczyzno!* (strzałka do wołacza, brak przecinka) i *O, to ty!* (przecinek zaznaczony na czerwono, dopisek „zdziwienie”).  
 @opis Dwa wiersze: w pierwszym „o” połączone łukiem z wołaczem „ojczyzno” i znak „bez przecinka”; w drugim po „O” duży czerwony przecinek i etykieta „wykrzyknik zdziwienia”. Wniosek: „o” przed wołaczem piszemy bez przecinka, „o” wyrażające emocję — z przecinkiem.
+
+## 13 | Uzupełnienie po audycie braków — wersja 2.0
+
+### 13.1. Wykrzyknik jako część mowy i jako znak interpunkcyjny
+
+Należy odróżnić **wykrzyknik — część mowy** od **wykrzyknika — znaku interpunkcyjnego „!”**. To nie to samo. Wykrzyknikiem jako częścią mowy jest np. *ach!, och!, hej!, halo!, bęc!, hop!, au!*; znak „!” może natomiast kończyć zdanie rozkazujące lub emocjonalne, nawet jeśli nie ma w nim wykrzyknika jako części mowy: *Natychmiast wróć!*.
+
+Wykrzykniki mogą wyrażać:
+- emocje i reakcje: *ach!, och!, uff!, au!*;
+- przywołanie lub kontakt: *hej!, halo!, ej!*;
+- naśladowanie dźwięków: *miau!, bum!, stuk!, chlup!*;
+- zachętę, polecenie lub sygnał: *hop!, jazda!, baczność!*.
+
+Nie każda forma dźwiękonaśladowcza musi być klasyfikowana identycznie w każdym podręczniku; w zadaniu ważna jest funkcja wyrazu w zdaniu.
+
+### 13.2. Wykrzyknik a czasownik, rzeczownik i partykuła
+
+- *Bęc! Książka spadła na podłogę.* — samodzielny wykrzyknik/dźwiękonaśladowcza reakcja.
+- *Dziecko powiedziało „miau”.* — cytowany dźwięk pełni rolę przytoczenia; w analizie zdania może być traktowany jako wyraz cytowany.
+- *Hej, poczekaj!* — wykrzyknik przywołujący adresata.
+- *Hej, ty!* — wykrzyknik oraz zaimek osobowy.
+- *Niech żyje król!* — *niech* to partykuła, nie wykrzyknik.
+- *Cisza!* — rzeczownik użyty jako samodzielny komunikat, nie wykrzyknik w sensie części mowy.
+
+W analizie zaznacz, czy wyraz naśladuje dźwięk, wyraża emocję, przywołuje osobę, czy jest inną częścią mowy używaną ekspresywnie.
+
+### 13.3. Interpunkcja i zapis dialogu
+
+Wykrzyknik jako znak kończy zdanie o silnym nacechowaniu emocjonalnym albo rozkazującym: *Uważaj!*; *Jak tu pięknie!*; *Pomocy!* Nie należy jednak stawiać go wszędzie, gdzie wypowiedź ma być „mocna” — nadmiar wykrzykników osłabia styl.
+
+W dialogu znak interpunkcyjny zależy od budowy wypowiedzi i zapisu dialogowego:
+- — Uważaj! — zawołała Ania.
+- — Ach, rozumiem — powiedział spokojnie.
+- — Hej! — krzyknął ktoś z końca korytarza.
+
+Wykrzyknik nie zastępuje automatycznie przecinka w zdaniu złożonym. Interpunkcję dialogu trzeba rozpatrywać łącznie z mową niezależną i czasownikiem mówienia.
+
+### 13.4. Ekspresja, styl i odpowiedzialne użycie
+
+Wykrzykniki są przydatne w dialogach, komiksie, opowiadaniu i tekstach użytkowych, ale w rozprawce, opisie rzeczowym czy odpowiedzi egzaminacyjnej należy stosować je oszczędnie. Nie zastępują argumentu ani uzasadnienia. W tekstach formalnych lepiej napisać *Proszę o pilną odpowiedź* niż wzmacniać komunikat wieloma znakami „!”.
+
+### 13.5. Ćwiczenia dodatkowe z kluczem
+
+**D1.** Wskaż wykrzyknik jako część mowy: (a) *Ach, ale boli!* (b) *Natychmiast wyjdź!* (c) *Bum! Drzwi zatrzasnęły się.*  
+**Klucz:** (a) *Ach*; (b) w zdaniu nie ma wykrzyknika jako części mowy, jest rozkaz i znak „!”; (c) *Bum*.
+
+**D2.** Określ funkcję: *halo, bęc, uff, hej*.  
+**Klucz:** halo — nawiązanie kontaktu; bęc — dźwiękonaśladowczy/reakcyjny; uff — ulga lub zmęczenie; hej — przywołanie albo powitanie, zależnie od kontekstu.
+
+**D3.** Popraw nadmiernie ekspresyjny komunikat do nauczyciela: *Proszę natychmiast odpisać!!!*  
+**Klucz:** np. *Proszę o odpowiedź, gdy będzie to możliwe. Zależy mi na pilnym wyjaśnieniu sprawy.*
+
+**D4.** W zdaniu *Hej, chodź tutaj!* wskaż wykrzyknik i czasownik.  
+**Klucz:** *Hej* — wykrzyknik; *chodź* — czasownik w trybie rozkazującym.
+
+**D5.** Napisz dwa zdania: jedno z wykrzyknikiem jako częścią mowy, drugie zakończone znakiem „!”, ale bez wykrzyknika jako części mowy.  
+**Klucz:** np. *Och, zapomniałem kluczy!* oraz *Zamknij drzwi!*.
+
+### 13.6. Checklista
+
+- Czy odróżniam część mowy od znaku interpunkcyjnego?
+- Czy potrafię nazwać funkcję wykrzyknika w konkretnym kontekście?
+- Czy nie mylę wykrzyknika z partykułą, rzeczownikiem ani czasownikiem?
+- Czy używam znaków emocjonalnych adekwatnie do stylu wypowiedzi?
+- Czy umiem poprawnie zapisać dialog z wykrzyknikiem?
+
+## 14 | Audyt po uzupełnieniu
+
+Wersja 2.0 wyraźnie rozdziela wykrzyknik jako część mowy i znak interpunkcyjny, uzupełnia funkcje, kontrasty gramatyczne, zapis dialogu oraz stylistykę. Dodano ćwiczenia z kluczem i checklistę.
+
+**Do kontroli niezależnej:** granice między wykrzyknikami, wyrazami dźwiękonaśladowczymi i cytowanymi formami mogą być opisywane różnie. Ocenę należy oprzeć na funkcji w zdaniu i terminologii przyjętej w podręczniku.
+
+## 14 | Drugi cykl opracowania: wykrzyknik w zdaniu i dialogu v3.0
+
+### 14.1. Wykrzyknik jako część mowy
+
+Wykrzyknik jest nieodmienną częścią mowy, która może wyrażać emocję, reakcję, wolę, przywołanie albo naśladować dźwięk: *ach!, och!, uff!, hej!, halo!, bęc!, stuk!, miau!* Wypowiedź może składać się z samego wykrzyknika: *Au!*; może też wprowadzać lub komentować zdanie: *Ach, teraz rozumiem.* Nie każdy wyraz zapisany obok znaku wykrzyknika jest wykrzyknikiem jako częścią mowy.
+
+### 14.2. Część mowy a znak interpunkcyjny
+
+Wykrzyknik **(!)** jest znakiem interpunkcyjnym, który może kończyć zdanie rozkazujące, emocjonalne, okrzyk albo hasło: *Zatrzymaj się!* W zdaniu „Zatrzymaj się!” nie ma automatycznie wykrzyknika jako części mowy — występuje czasownik w trybie rozkazującym oraz znak interpunkcyjny. W zdaniu „Uff, zdążyliśmy!” słowo *uff* jest wykrzyknikiem, a znak na końcu zdania jest znakiem interpunkcyjnym.
+
+### 14.3. Rodzaje funkcji
+
+- emocjonalne: *ach, och, ojej, uff*;
+- przywołujące/nawiązujące kontakt: *hej, halo*;
+- dźwiękonaśladowcze: *bum, stuk, kap, miau*;
+- wolicjonalne/reakcyjne: *precz!, basta!* — w zależności od klasyfikacji mogą być opisywane także jako wyrazy o funkcji wykrzyknikowej;
+- konwencjonalne powitania i pożegnania: *cześć, pa* — ich klasyfikacja może zależeć od użycia i przyjętej gramatyki.
+
+Znaczenie wykrzyknika zależy od sytuacji i intonacji. *Hej!* może być serdecznym powitaniem, przywołaniem albo ostrzeżeniem. *No!* może wyrażać ponaglenie, zgodę, zniecierpliwienie albo być partykułą — analizuj kontekst, nie sam zapis.
+
+### 14.4. Interpunkcja i styl
+
+W dialogu wykrzyknik może stać na początku wypowiedzi, po wykrzykniku lub na końcu zdania: *— Uff! — westchnął Tomek.* Jeśli wykrzyknik kończy wypowiedź bohatera, zapis narracji zależy od konstrukcji dialogowej. Nie mnoż znaków bez potrzeby: *To pilne!* jest zwykle wystarczające; *To pilne!!!!* w oficjalnym tekście wygląda nieprofesjonalnie. Wielokropek, pytajnik i wykrzyknik mają różne funkcje — nie stosuj ich jako ozdobników.
+
+### 14.5. Ćwiczenia po uzupełnieniu
+
+**A. Wskaż wykrzykniki jako części mowy, a osobno znaki interpunkcyjne:**
+1. *Ach, ale piękny widok!* 
+2. *Natychmiast wyjdź!* 
+3. *Bum! Drzwi zatrzasnęły się z hukiem.*
+4. *Halo, czy mnie słyszysz?*
+
+**Klucz:** 1. *Ach* — wykrzyknik; końcowy *!* — znak interpunkcyjny. 2. brak wykrzyknika jako części mowy; *!* jest znakiem. 3. *Bum* — wykrzyknik dźwiękonaśladowczy; *!* — znak. 4. *Halo* — wykrzyknik nawiązujący kontakt; pytajnik kończy zdanie.
+
+**B. Dopasuj funkcję:** *uff, hej, kap, ojej, halo.*
+
+**Klucz:** ulga/zmęczenie; powitanie lub przywołanie; dźwiękonaśladowczy; zaskoczenie/niepokój; nawiązanie kontaktu. Dopuszczalne są inne odczytania uzasadnione kontekstem.
+
+**C. Popraw styl wypowiedzi:**
+1. *ODPISZ MI NATYCHMIAST!!!*
+2. *Ojej!!! Nie wierzę!!!*
+3. *Hej nauczycielu, daj mi ocenę.*
+
+**Przykładowy klucz:** 1. *Proszę o pilną odpowiedź, gdy będzie to możliwe.* 2. W narracji neutralnej: *Ojej, trudno mi w to uwierzyć!* 3. *Dzień dobry, czy mogę prosić o informację o ocenie?* — dobieramy rejestr do odbiorcy i sytuacji.
+
+### 14.6. Zadanie interpretacyjne
+
+Przeczytaj: „— Hej! — zawołała Lena. — Uff, zdążyliśmy! Nagle rozległo się: bum! i światło zgasło.” Wskaż wykrzykniki jako części mowy i objaśnij funkcję znaków interpunkcyjnych. **Klucz:** *Hej* — przywołanie/powitanie; *Uff* — ulga; *bum* — naśladowanie dźwięku. Wykrzykniki i przecinki organizują zapis wypowiedzi, a wykrzykniki na końcu zdań sygnalizują ekspresję; dwukropek zapowiada przytoczenie dźwięku.
+
+### 14.7. Samokontrola
+
+Umiem odróżnić wykrzyknik jako część mowy od znaku „!”, nazwać funkcje emocjonalne, przywołujące i dźwiękonaśladowcze, analizować kontekst, poprawnie zapisać dialog i dostosować ekspresję do sytuacji komunikacyjnej.

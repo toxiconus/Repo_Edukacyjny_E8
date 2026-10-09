@@ -5,8 +5,9 @@ tytul: Imiesłowy
 lead: Czasownik w przebraniu: czytający, przeczytany, czytając, przeczytawszy — i imiesłowowy równoważnik zdania.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L001, G02, G03, G14
-stan: WYPEŁNIONY — Claude, 2026-10-09 (na podstawie zarysu Grok); czeka na W1
+stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
 utworzono: 2026-10-09
+wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -175,3 +176,169 @@ Przekształć zdanie złożone w zdanie pojedyncze z imiesłowowym równoważnik
 
 **Grafika 2:** Test równoważnika: dwie strzałki od imiesłowu do podmiotu — zielona, gdy wykonawca się zgadza (*Idąc przez park, zobaczyłem wiewiórkę*), czerwona, gdy nie (*Idąc przez park, padał deszcz*).  
 @opis Dwa zdania jedno pod drugim; od słowa „Idąc” strzałka do podmiotu. W pierwszym trafia w „ja” (zielony znak), w drugim w „deszcz” (czerwony krzyżyk i dopisek „deszcz nie idzie”). Wniosek: wykonawca imiesłowu musi być podmiotem zdania nadrzędnego.
+
+## 13 | Uzupełnienie po audycie braków — wersja 2.0
+
+### 13.1. Cztery podstawowe typy imiesłowów
+
+Imiesłowy są nieosobowymi formami czasownika. Zachowują część znaczenia czasownikowego, ale w zdaniu mogą działać jak określenie rzeczownika albo okolicznik. W polskiej gramatyce szkolnej rozróżnia się cztery podstawowe typy:
+
+| Typ | Przykład | Od czego tworzymy | Odmiana | Znaczenie |
+|---|---|---|---|---|
+| przymiotnikowy czynny | czytający, pisząca | zasadniczo od czasowników niedokonanych | odmienia się przez przypadki, liczby i rodzaje | wykonawca jest w trakcie czynności lub ma z nią związek |
+| przymiotnikowy bierny | czytany, napisany, zrobiony | od czasowników przechodnich; formy zależą od aspektu i tematu | odmienia się jak przymiotnik | ktoś/coś podlega czynności albo czynność została wykonana |
+| przysłówkowy współczesny | czytając, idąc | od czasowników niedokonanych | nie odmienia się | czynność towarzysząca, równoczesna z czynnością orzeczenia |
+| przysłówkowy uprzedni | przeczytawszy, zrobiwszy, wziąwszy | zasadniczo od czasowników dokonanych | nie odmienia się | czynność wcześniejsza od czynności orzeczenia |
+
+Nie każdy czasownik pozwala utworzyć każdy imiesłów. Szczególnie imiesłów przymiotnikowy bierny tworzy się od czasowników przechodnich, czyli takich, które mogą łączyć się z dopełnieniem bliższym: *czytać książkę → książka czytana/przeczytana*. Nie tworzymy go mechanicznie od każdego czasownika.
+
+### 13.2. Imiesłów a zwykły przymiotnik i rzeczownik odczasownikowy
+
+- *zmęczony uczeń* — może być imiesłowem biernym o znaczeniu wyniku czynności albo przymiotnikiem oznaczającym stan; klasyfikacja zależy od kontekstu i przyjętej analizy.
+- *zamknięte drzwi* — forma pochodząca od czasownika *zamknąć*, zachowuje związek z czynnością.
+- *dobry uczeń* — zwykły przymiotnik, nie imiesłów.
+- *czytanie książki* — rzeczownik odczasownikowy, nie imiesłów.
+- *czytający uczeń* — imiesłów przymiotnikowy czynny.
+
+Rozpoznawaj budowę i funkcję, a nie tylko końcówkę. W trudnym przykładzie podaj uzasadnienie: od jakiego czasownika pochodzi forma, jakie znaczenie zachowuje i jaką rolę pełni w zdaniu.
+
+### 13.3. Imiesłowowy równoważnik zdania — najważniejsza zasada wykonawcy
+
+Konstrukcja z imiesłowem przysłówkowym odnosi się do wykonawcy czynności wyrażonej w orzeczeniu zdania głównego. W standardowej polszczyźnie podmiot obu czynności musi być ten sam.
+
+**Poprawnie:** *Wracając ze szkoły, spotkałam koleżankę.* — ja wracałam i ja spotkałam.  
+**Błędnie:** *Wracając ze szkoły, zaczął padać deszcz.* — zdanie sugeruje, że deszcz wracał ze szkoły.  
+**Poprawa:** *Kiedy wracałam ze szkoły, zaczął padać deszcz.* albo *Wracając ze szkoły, zauważyłam, że zaczyna padać deszcz.*
+
+**Poprawnie:** *Przeczytawszy polecenie, uczniowie rozpoczęli pracę.* — uczniowie przeczytali i rozpoczęli.  
+**Błędnie:** *Przeczytawszy polecenie, rozpoczęła się praca.* — gramatyczny podmiot czynności jest inny.
+
+Imiesłowowy równoważnik zdania oddzielamy przecinkiem. Na początku zdania przecinek stawiamy po konstrukcji: *Czytając uważnie, łatwiej zauważysz szczegół.* W środku zdania konstrukcję wydzielamy z obu stron, jeśli wymaga tego składnia: *Uczeń, przeczytawszy polecenie, podkreślił dane.*
+
+### 13.4. Aspekt i tworzenie imiesłowów
+
+- Czasownik niedokonany wskazuje czynność trwającą, powtarzalną lub nieujętą jako zakończona: *czytać, pisać, iść*. Typowo tworzy imiesłów przysłówkowy współczesny: *czytając, pisząc, idąc*.
+- Czasownik dokonany ujmuje czynność jako zakończoną: *przeczytać, napisać, zrobić*. Typowo tworzy imiesłów przysłówkowy uprzedni: *przeczytawszy, napisawszy, zrobiwszy*.
+- Imiesłów przymiotnikowy czynny: *czytający, piszący, idący*.
+- Imiesłów przymiotnikowy bierny: *czytany, napisany, zrobiony*, ale formy zależą od czasownika i jego przechodniości.
+
+Warto pamiętać, że pary aspektowe nie zawsze tworzą regularne formy, a część imiesłowów uprzednich brzmi dziś książkowo. Nie używaj konstrukcji tylko po to, by zdanie brzmiało „bardziej naukowo”; czasem naturalniejsze i czytelniejsze jest zdanie złożone z *gdy, kiedy, ponieważ*.
+
+### 13.5. Pisownia „nie” z imiesłowami
+
+W szkolnej normie ortograficznej przyjmujemy:
+- **łącznie** z imiesłowami przymiotnikowymi: *nieprzeczytana książka, niezamknięte okno, nieznający odpowiedzi uczeń*;
+- **rozdzielnie** z imiesłowami przysłówkowymi: *nie czytając, nie przeczytawszy, nie wiedząc*.
+
+Uwaga: imiesłów przymiotnikowy może w kontekście nabierać wyraźnego znaczenia przeciwstawienia lub zestawienia. W zadaniu szkolnym stosuj aktualną regułę ortograficzną i dokładnie odczytaj konstrukcję; nie przenoś zasady dla imiesłowów przysłówkowych na przymiotnikowe.
+
+### 13.6. Imiesłów a przecinki — nie myl dwóch reguł
+
+1. Imiesłowowy równoważnik zdania z imiesłowem przysłówkowym oddzielamy przecinkiem: *Idąc do domu, słuchałem muzyki.*
+2. Imiesłów przymiotnikowy może być określeniem rzeczownika: *Uczeń czytający książkę siedział przy oknie.* Tu nie oddzielamy określenia przecinkiem tylko dlatego, że jest imiesłowem.
+3. Jeśli imiesłowowe określenie jest dopowiedzeniem lub ma charakter wtrącony, interpunkcja może być inna: *Uczeń, zmęczony po długiej podróży, zasnął.* Przecinki wynikają z wydzielenia dopowiedzenia, a nie z samego faktu, że forma jest imiesłowem.
+
+### 13.7. Ćwiczenia uzupełniające — z kluczem
+
+**D1.** Nazwij imiesłowy: *śpiewająca, przeczytany, biegnąc, usłyszawszy*.  
+**Klucz:** śpiewająca — przymiotnikowy czynny; przeczytany — przymiotnikowy bierny; biegnąc — przysłówkowy współczesny; usłyszawszy — przysłówkowy uprzedni.
+
+**D2.** Wskaż zdanie z błędnym wykonawcą i popraw je: (a) *Idąc przez park, zobaczyłem lisa.* (b) *Idąc przez park, liście szeleściły pod nogami.*  
+**Klucz:** (b) jest wadliwe, bo liście nie idą przez park; np. *Idąc przez park, słyszałem szelest liści pod nogami.*
+
+**D3.** Przekształć zdanie, używając imiesłowu przysłówkowego współczesnego: *Kiedy wracała do domu, rozmawiała przez telefon.*  
+**Klucz:** *Wracając do domu, rozmawiała przez telefon.* Wykonawca obu czynności jest ten sam.
+
+**D4.** Popraw pisownię: (a) nie przeczytana lektura; (b) nie wiedząc odpowiedzi; (c) nie zamknięte okno; (d) nie przeczytawszy polecenia.  
+**Klucz:** (a) nieprzeczytana lektura; (b) nie wiedząc odpowiedzi; (c) niezamknięte okno; (d) nie przeczytawszy polecenia.
+
+**D5.** Wstaw przecinki: *Uczeń przeczytawszy tekst odpowiedział na pytania. Czytając polecenie łatwo pominąć wyjątek. Książka leżąca na biurku należy do Ani.*  
+**Klucz:** *Uczeń, przeczytawszy tekst, odpowiedział na pytania. Czytając polecenie, łatwo pominąć wyjątek. Książka leżąca na biurku należy do Ani.*
+
+**D6.** Wyjaśnij, dlaczego zdanie *Otworzywszy drzwi, powitał mnie pies* jest semantycznie niejasne lub wadliwe w zwykłym odczytaniu, i zaproponuj poprawę.  
+**Klucz:** gramatycznym wykonawcą czynności „otworzyć” i „powitać” jest podmiot zdania głównego — pies. Jeśli drzwi otworzył człowiek, trzeba napisać np. *Otworzywszy drzwi, zobaczyłem psa, który mnie powitał* albo *Kiedy otworzyłem drzwi, pies mnie powitał*.
+
+### 13.8. Checklista
+
+- Czy umiem odróżnić cztery typy imiesłowów?
+- Czy sprawdziłem/sprawdziłam aspekt i możliwość utworzenia danej formy?
+- Czy wykonawca imiesłowu przysłówkowego jest taki sam jak wykonawca orzeczenia?
+- Czy postawiłem/postawiłam przecinek przy równoważniku?
+- Czy odróżniam imiesłów przymiotnikowy od określenia wydzielonego przecinkami?
+- Czy stosuję odrębną pisownię „nie” dla form przymiotnikowych i przysłówkowych?
+
+## 14 | Audyt po uzupełnieniu
+
+Wersja 2.0 poszerza materiał o tabelę czterech typów, przechodniość, różnicę między imiesłowem a przymiotnikiem/rzeczownikiem odczasownikowym, zgodność wykonawcy, aspekt, interpunkcję i pisownię „nie”. Dodano sześć zadań z objaśnionym kluczem.
+
+**Ograniczenia do niezależnej kontroli:** tworzenie imiesłowów bywa nieregularne i zależne od czasownika; w przypadkach granicznych między przymiotnikiem a imiesłowem liczy się kontekst. Wersję przeznaczoną do publikacji należy sprawdzić pod kątem aktualnych zasad ortograficznych oraz terminologii konkretnego podręcznika.
+
+## 14 | Drugi cykl opracowania: imiesłowy bez skrótów v3.0
+
+### 14.1. Cztery formy — tabela decyzyjna
+
+| Typ | Pytanie/podpowiedź | Znaczenie | Przykład | Przecinek |
+|---|---|---|---|---|
+| przymiotnikowy czynny | jaki? wykonujący czynność | wykonawca aktywny | *śpiewający ptak* | jak przy określeniu przymiotnikowym; zależy od budowy zdania |
+| przymiotnikowy bierny | jaki? poddany czynności | obiekt czynności | *napisany list* | zależy od funkcji i szyku |
+| przysłówkowy współczesny | co robiąc? | czynność równoczesna | *Idąc, rozmawiał* | oddzielamy przecinkiem |
+| przysłówkowy uprzedni | co zrobiwszy? | czynność wcześniejsza | *Przeczytawszy, odpowiedział* | oddzielamy przecinkiem |
+
+Imiesłów przymiotnikowy odmienia się przez przypadki, liczby i rodzaje, bo zachowuje właściwości przymiotnika: *czytający uczeń, czytająca uczennica, czytające dziecko*. Imiesłów przysłówkowy jest nieodmienny: *czytając, czytawszy*.
+
+### 14.2. Aspekt i budowa
+
+Imiesłów przysłówkowy współczesny tworzy się zasadniczo od czasowników niedokonanych: *czytać → czytając, robić → robiąc*. Imiesłów przysłówkowy uprzedni tworzy się od czasowników dokonanych: *przeczytać → przeczytawszy, zrobić → zrobiwszy*. W praktyce nie twórz form na siłę: sprawdź, czy są poprawne i naturalne w danym kontekście. Imiesłowy przymiotnikowe czynne tworzy się typowo od czasowników niedokonanych (*czytający*), a bierne od czasowników przechodnich (*napisany, malowany*); ograniczenia zależą od znaczenia czasownika.
+
+### 14.3. Wspólny wykonawca — warunek kluczowy
+
+Imiesłowowy równoważnik zdania musi odnosić się do wykonawcy czynności zdania głównego. Poprawnie: *Wracając ze szkoły, **zobaczyłam** psa* — to ja wracałam i zobaczyłam. Niepoprawnie: *Wracając ze szkoły, **zaczął padać** deszcz* — deszcz nie wracał. Popraw: *Kiedy wracałem ze szkoły, zaczął padać deszcz* albo *Wracając ze szkoły, zauważyłem, że pada deszcz*.
+
+Procedura kontroli:
+1. Podkreśl imiesłów przysłówkowy.
+2. Zapytaj: kto wykonuje tę czynność?
+3. Znajdź podmiot lub domyślnego wykonawcę w zdaniu głównym.
+4. Jeśli wykonawcy są różni albo zdanie jest niejasne, przebuduj zdanie na zdanie podrzędne lub dodaj wyraźny podmiot.
+
+### 14.4. Pisownia „nie” — rozróżnienie typów
+
+Z imiesłowami przymiotnikowymi (*nieprzeczytany, niezamknięte, nieznany*) obowiązuje pisownia łączna w typowym użyciu; przy wyraźnym przeciwstawieniu możliwa jest pisownia rozdzielna: *nie przeczytany, lecz jedynie przejrzany* — stosuj regułę zgodną z aktualną normą i kontekstem, nie automatyczny zakaz rozdzielnej pisowni. Z imiesłowami przysłówkowymi (*nie wiedząc, nie przeczytawszy*) piszemy **nie** rozdzielnie. Rozróżnij imiesłów od formy czasownikowej: *nie zrobiwszy* — imiesłów przysłówkowy uprzedni; *nie zrobiono* — forma nieosobowa czasownika.
+
+### 14.5. Przecinki i imiesłowy przymiotnikowe
+
+Imiesłowowy równoważnik zdania z imiesłowem przysłówkowym oddzielamy przecinkiem: *Skończywszy zadanie, oddała kartkę.* Imiesłów przymiotnikowy nie otrzymuje przecinka automatycznie: *Uczeń siedzący przy oknie czytał* — określenie ściśle związane z rzeczownikiem; *Uczeń, zmęczony po długim biegu, usiadł* — dopowiedzenie/wtrącone określenie, oddzielone przecinkami. O interpunkcji decyduje składnia i znaczenie, nie sama końcówka imiesłowu.
+
+### 14.6. Ćwiczenia po uzupełnieniu
+
+**A. Nazwij typ imiesłowu:** *płynąca rzeka; zamknięte drzwi; śmiejąc się; wykonawszy doświadczenie; czytany tekst; biegnący zawodnik.*
+
+**Klucz:** przymiotnikowy czynny; przymiotnikowy bierny; przysłówkowy współczesny; przysłówkowy uprzedni; przymiotnikowy bierny; przymiotnikowy czynny.
+
+**B. Popraw zdania z wadliwym wykonawcą:**
+1. *Idąc do szkoły, zgubił mi się klucz.*
+2. *Otworzywszy zeszyt, zadanie wydało mi się łatwe.*
+3. *Czytając książkę, zadzwonił telefon.*
+
+**Przykładowy klucz:** 1. *Idąc do szkoły, zgubiłem klucz* albo *Kiedy szedłem do szkoły, zgubił mi się klucz.* 2. *Otworzywszy zeszyt, uznałem zadanie za łatwe.* 3. *Czytając książkę, usłyszałem dzwonek telefonu* albo *Kiedy czytałem książkę, zadzwonił telefon.*
+
+**C. Uzupełnij formę:**
+1. (czytać, imiesłów przymiotnikowy czynny) ___ uczeń;
+2. (napisać, imiesłów przymiotnikowy bierny) ___ list;
+3. (wracać, imiesłów przysłówkowy współczesny) ___ do domu;
+4. (zrobić, imiesłów przysłówkowy uprzedni) ___ doświadczenie.
+
+**Klucz:** czytający; napisany; wracając; zrobiwszy.
+
+**D. Pisownia:** popraw: *nie wiedząc; nieprzygotowany uczeń; nie wykonawszy zadania; nie zrobiona, lecz tylko rozpoczęta praca.*
+
+**Klucz:** *nie wiedząc*; *nieprzygotowany uczeń*; *nie wykonawszy zadania*; przy przeciwstawieniu: *nie zrobiona, lecz tylko rozpoczęta praca* (w zależności od akcentu i przyjętej normy szkolnej uzasadnij rozdzielenie).
+
+### 14.7. Zadanie przekrojowe
+
+Popraw i uzasadnij: „Przeczytawszy polecenie, rozwiązanie stało się proste, a nie wiedząc odpowiedzi, zadanie zostało pominięte”.
+
+**Przykład:** „Przeczytawszy polecenie, uznałem, że rozwiązanie jest proste, a nie znając odpowiedzi, pominąłem zadanie”. Imiesłowy *przeczytawszy* i *nie znając* odnoszą się do tej samej osoby co czasowniki *uznałem* i *pominąłem*. Przecinek oddziela oba równoważniki. *Nie znając* zapisujemy rozdzielnie.
+
+### 14.8. Samokontrola
+
+Potrafię rozpoznać cztery typy imiesłowów, utworzyć poprawne formy, sprawdzić aspekt i przechodniość, wskazać wykonawcę czynności, uzasadnić przecinki oraz rozstrzygnąć pisownię „nie” z imiesłowem przymiotnikowym i przysłówkowym.

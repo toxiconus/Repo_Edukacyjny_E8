@@ -5,12 +5,14 @@ tytul: Przymiotnik
 lead: Jaki? Który? Czyj? — cechy, odmiana i stopniowanie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L004, G12
-stan: WYPEŁNIONY — Grok, 2026-10-09
+stan: MATERIAŁ HISTORYCZNY — nie traktować jako wersji kanonicznej; sprawdzić z PL_G03_przymiotnik.md v3.0
 utworzono: 2026-10-09
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
-# G03 | Przymiotnik
+# G03 | Przymiotnik — materiał historyczny do porównania
+
+> **Uwaga redakcyjna 2026-10-09:** ten plik zachowano jako źródło historyczne. Zawierał błędne lub nieaktualne przykłady (m.in. „bardziej dobry” oraz wcześniejsze warianty pisowni „nie” w stopniu wyższym i najwyższym). Kanoniczna, poprawiona lekcja znajduje się w `polski/podstawy/PL_G03_przymiotnik.md` v3.0. Nie kopiować automatycznie starych kluczy.
 
 ## 0 | Cel i kryterium gotowości [[basic:E8]]
 

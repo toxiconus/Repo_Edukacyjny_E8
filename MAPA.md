@@ -7,7 +7,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
-- `MAPA.md` 19 KB
+- `MAPA.md` 18 KB
 - `PRZEKAZANIE.md` 7 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 28 KB
@@ -582,12 +582,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik v2.html` 90 KB
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 146 KB
 
-## polski/do_uzupelnienia  (5 pl., 25 KB)
-- `PL_L007_przeglad_czesci_mowy.md` 7 KB
-- `PL_L008_czesci_zdania.md` 4 KB
-- `PL_L009_zdania_zlozone.md` 4 KB
-- `PL_L010_srodki_stylistyczne.md` 4 KB
-- `PL_L011_elementy_utworu_moral_puenta.md` 5 KB
+## polski/do_uzupelnienia  (5 pl., 56 KB)
+- `PL_L007_przeglad_czesci_mowy.md` 31 KB
+- `PL_L008_czesci_zdania.md` 6 KB
+- `PL_L009_zdania_zlozone.md` 5 KB
+- `PL_L010_srodki_stylistyczne.md` 6 KB
+- `PL_L011_elementy_utworu_moral_puenta.md` 7 KB
 
 ## polski/plany/audyty  (2 pl., 25 KB)
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
@@ -601,7 +601,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 153 KB)
+## polski/podstawy  (23 pl., 373 KB)
 - (zwinięte; `ls polski/podstawy`)
 
 ## wizualizacje-projekty  (3 pl., 72 KB)

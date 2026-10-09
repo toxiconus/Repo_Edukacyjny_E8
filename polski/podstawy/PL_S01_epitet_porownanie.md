@@ -5,81 +5,91 @@ tytul: Epitet i porównanie
 lead: Określenia i zestawienia — jak autor buduje obraz.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010
-stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
+stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
 utworzono: 2026-10-09
+wersja: 2.0
 ---
 
-> Szkielet do wypełnienia przez LLM — instrukcja: `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (prompt) albo `narzedzia/szkielety_polski.py`.
+# S01 | Epitet i porównanie — pełna lekcja v2.0
 
-**Musi się znaleźć w lekcji:**
-- epitet (określenie rzeczownika) — zwykły, metaforyczny, stały
-- porównanie: dwa człony + wyraz porównujący (jak, niby, niczym, jakby)
-- porównanie homeryckie (rozbudowane) — dla ambitnych
-- funkcja: plastyczność opisu, emocje, ocena
+## 0. Cele
+Potrafię rozpoznać epitet i porównanie, odróżnić określenie dosłowne od metaforycznego, wskazać człony porównania i wyjaśnić funkcję środka w konkretnym fragmencie. Nie poprzestaję na samej nazwie — uzasadniam wpływ na obraz, nastrój lub ocenę.
 
-**Pułapki do kliniki błędów:** każdy przymiotnik to epitet; porównanie bez wyrazu porównującego (to już przenośnia); podanie nazwy środka bez funkcji.
+## 1. Epitet
+**Epitet** to określenie rzeczownika, które podkreśla cechę, wygląd, ocenę lub sposób postrzegania osoby, przedmiotu czy zjawiska. Często jest przymiotnikiem (*ciemny las, spokojne morze*), ale może mieć inną postać: *uśmiech dziecka, dom z kamienia, dzień pełen nadziei*. Epitet nie zawsze jest ozdobny — może być zwykłą informacją (*drewniany stół*) albo wywoływać obraz i emocje (*złowroga cisza*).
 
-## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+- **epitet zwykły/dosłowny:** *zimna woda* — cecha rzeczywista;
+- **epitet metaforyczny:** *złote serce* — określenie przenośne;
+- **epitet oceniający:** *wspaniały plan, podły czyn*;
+- **epitet stały/tradycyjny:** utrwalone określenie powracające w danej tradycji, np. w epice lub pieśni. Nie każdy często używany przymiotnik automatycznie jest epitetem stałym.
 
-**Cel:** Potrafię rozpoznać epitet i porównanie, nazwać je i podać funkcję.
+Nie każdy przymiotnik pełni funkcję artystyczną. W zdaniu informacyjnym *czerwony długopis leży na stole* określenie może być czysto praktyczne. W analizie literackiej uzasadnij, po co autor go użył.
 
-**Epitet** — określenie artystyczne rzeczownika (srebrzyste fale, złote włosy).  
-**Porównanie** — dwa człony + wyraz porównujący (jak, niby, niczym, jakby).
+## 2. Porównanie
+**Porównanie** zestawia dwa zjawiska na podstawie wspólnej cechy. Typowo ma człon porównywany, człon porównujący i wyraz wprowadzający, np. *jak, jakby, niby, niczym, podobnie jak*: *Jej głos był czysty jak dzwonek.* Człon porównywany: głos; człon porównujący: dzwonek; cecha wspólna: czystość/dźwięczność.
 
-**Funkcja:** plastyczność, emocje, ocena.
+Porównanie może służyć plastyczności obrazu, uwydatnieniu cechy, ocenie lub budowaniu nastroju. *Biegł jak wiatr* podkreśla szybkość; *milczał jak kamień* sugeruje brak reakcji lub nieustępliwość — dokładny sens zależy od kontekstu.
 
-**Klinika:** każdy przymiotnik ≠ epitet; porównanie bez „jak” to już przenośnia.
+**Porównanie homeryckie** jest rozbudowane: obraz porównujący rozwija się w kilku elementach, nie tylko w krótkim zestawieniu. To pojęcie dodatkowe; w podstawowym zadaniu wystarczy wskazać porównanie i wyjaśnić jego funkcję.
 
-**Ćwiczenia:** Wskaż epitet/porównanie + funkcja.  
-CKE: Nazwij środek i podaj funkcję (0–2).
+## 3. Epitet czy porównanie?
+- *srebrny głos* — epitet metaforyczny;
+- *głos jak srebro* — porównanie;
+- *srebrzysty głos rozbrzmiewał jak dzwonek* — epitet i porównanie w jednym zdaniu;
+- *był szybki* — przymiotnik/orzecznik, ale niekoniecznie epitet literacki;
+- *szybki jak błyskawica* — porównanie.
 
-**Wizualizacja:** dwa prostokąty „epitet” i „porównanie” z przykładami.  
-@opis Uczeń widzi różnicę budowy. Wniosek: porównanie ma wyraz porównujący.
+Porównanie zwykle zawiera wyraźne zestawienie, ale sam wyraz *jak* nie gwarantuje środka stylistycznego: *Zrób to tak, jak pokazałem* może wprowadzać sposób wykonania, a nie obrazowe porównanie. Analizuj sens.
 
-## 0 | Cel i kryterium gotowości [[basic:E8]]
+## 4. Jak opisać funkcję?
+Użyj schematu: **nazwa → cytowany fragment → cecha/relacja → efekt**. Przykład: „Epitet *złowroga cisza* nadaje przestrzeni niepokojący charakter i zapowiada zagrożenie”. Nie pisz tylko „epitet ubarwia tekst” — to zbyt ogólne. Wyjaśnij, co dokładnie zostaje podkreślone.
 
-DO UZUPEŁNIENIA: 3–5 zdań „Potrafię…” (rozpoznać środek, nazwać go, określić funkcję w tekście).
+## 5. Klinika błędów
+| Błąd | Korekta | Uzasadnienie |
+|---|---|---|
+| każdy przymiotnik to epitet artystyczny | oceń funkcję określenia | Może to być zwykła informacja. |
+| *złote serce* to porównanie | epitet metaforyczny | Nie ma zestawienia z drugim członem. |
+| *silny jak dąb* to metafora | porównanie | Występuje wyraz porównujący *jak*. |
+| sama nazwa środka wystarczy | podaj funkcję w kontekście | Zadanie wymaga interpretacji. |
+| każdy wyraz „jak” wprowadza porównanie stylistyczne | sprawdź znaczenie | Może wprowadzać instrukcję lub sposób. |
 
-## 1 | Definicja i budowa [[basic:E8]]
+## 6. Ćwiczenia z kluczem
+**A.** Rozpoznaj środek: 1. *lodowate spojrzenie*; 2. *odważny jak lew*; 3. *morze gniewu*; 4. *dom z cegły*.  
+**Klucz:** 1. epitet metaforyczny; 2. porównanie; 3. metafora, nie epitet w ścisłym sensie określenia rzeczownika; 4. określenie materiału, niekoniecznie środek artystyczny.
 
-DO UZUPEŁNIENIA: krótka definicja każdego środka, z czego się składa, wyrazy-sygnały.
+**B.** Wskaż człony i funkcję: *„Jej śmiech zabrzmiał jak srebrny dzwoneczek”.*  
+**Klucz:** porównywany — śmiech; porównujący — dzwoneczek; *jak* wprowadza porównanie; *srebrny* — epitet, który podkreśla jasny, przyjemny dźwięk.
 
-## 2 | Jak rozpoznać — procedura [[basic:E8]]
+**C.** Napisz dwuzdaniową analizę wyrażenia *„ciężka cisza”*.  
+**Przykładowa odpowiedź:** Epitet *ciężka* przenosi na ciszę cechę kojarzoną z ciężarem. Sugeruje napięcie, przytłoczenie lub nieprzyjemne oczekiwanie.
 
-DO UZUPEŁNIENIA: kroki rozpoznawania + pytanie testowe odróżniające podobne środki.
+## 7. Zadanie egzaminacyjne (0–2 pkt)
+W zdaniu *„Wspinał się po stromych skałach, twardych jak stal”* wskaż porównanie i wyjaśnij jego funkcję. **Klucz:** *twardych jak stal*; podkreśla twardość skał, wzmacnia wrażenie trudności i surowości drogi (1 pkt za wskazanie, 1 pkt za funkcję).
 
-## 3 | Przykłady z lektur i wierszy [[basic:E8]]
+## 8. Fiszki
+Epitet — określenie rzeczownika; epitet metaforyczny — przenośna cecha; porównanie — zestawienie dwóch zjawisk; człony porównania — porównywany i porównujący; funkcja — efekt obrazu, nastroju lub oceny.
 
-DO UZUPEŁNIENIA: 6–10 krótkich przykładów (jedno zdanie/wers cytatu albo parafraza) z lektur obowiązkowych, z nazwą środka.
+## 9. Wizualizacja
+@opis Dwie kolumny: epitet (rzeczownik + określenie) i porównanie (zjawisko A + „jak/niby/niczym” + zjawisko B). Pod każdym przykładem uczeń dopisuje wspólną cechę i efekt.
 
-## 4 | Funkcja — po co autor go używa [[understand:ROZUMIENIE]]
+## 10. Samokontrola
+Przy każdym środku umiem wskazać dokładny fragment, nazwać cechę, wyjaśnić efekt i odróżnić funkcję artystyczną od zwykłej informacji.
 
-DO UZUPEŁNIENIA: tabela: środek | typowe funkcje | wzór odpowiedzi egzaminacyjnej (np. „Ożywienie sprawia, że…”).
+## 11. Trening dodatkowy — od rozpoznania do interpretacji
 
-## 5 | Odróżnij od podobnych [[understand:ROZUMIENIE]]
+**1.** Wskaż epitet: *„Pod oknem stał stary stół, a na nim leżał list”.* Czy epitet ma tu funkcję artystyczną?  
+**Klucz:** *stary* jest określeniem rzeczownika, ale w tym zdaniu może pełnić funkcję informacyjną; bez dalszego kontekstu nie należy automatycznie przypisywać mu silnego efektu literackiego.
 
-DO UZUPEŁNIENIA: pary środków łatwych do pomylenia, z rozstrzygającym pytaniem.
+**2.** Porównaj *„lodowaty głos”* i *„głos zimny jak lód”*.  
+**Klucz:** pierwsze to epitet metaforyczny; drugie — porównanie. Oba mogą sugerować chłód emocjonalny, dystans lub nieprzyjemne brzmienie.
 
-## 6 | Klinika błędów
+**3.** Uzupełnij: „Porównanie składa się z …”.  
+**Klucz:** członu porównywanego, członu porównującego i łącznika/wyrazu porównującego, np. *jak*.
 
-DO UZUPEŁNIENIA: tabela: Błąd | Poprawnie | Dlaczego? — min. 6 wierszy.
+**4.** Wyjaśnij funkcję określenia *„cicha, srebrna noc”*.  
+**Przykładowa odpowiedź:** *cicha* buduje nastrój spokoju, a *srebrna* może metaforycznie opisywać światło księżyca i nadaje scenie poetycki charakter.
 
-## 7 | Ćwiczenia A — podstawa [[basic:E8]]
+**5.** Napisz własne porównanie i wyjaśnij wspólną cechę.  
+**Kryteria:** poprawne zestawienie dwóch elementów (1 pkt), nazwanie wspólnej cechy (1 pkt), wskazanie efektu (1 pkt).
 
-DO UZUPEŁNIENIA: 6–8 zadań z kluczem (rozpoznaj, nazwij, podaj funkcję).
-
-## 8 | Ćwiczenia B — tworzenie i C — konkurs [[exam:KONKURS]]
-
-DO UZUPEŁNIENIA: zadania: ułóż własny przykład, przekształć tekst, analiza fragmentu — z kluczem.
-
-## 9 | Zadania w stylu CKE
-
-DO UZUPEŁNIENIA: 3–4 zadania z kluczem, punktacją i uzasadnieniem (rozpoznanie + funkcja w tekście).
-
-## 10 | Fiszki
-
-DO UZUPEŁNIENIA: 8–12 par „pytanie — odpowiedź”.
-
-## 11 | Wizualizacja
-
-DO UZUPEŁNIENIA: propozycja 1–2 grafik + obowiązkowa linia @opis pod każdą.
+**Zastosowanie do lektury:** w opisie przyrody w dowolnej lekturze zaznacz jeden epitet i jedno porównanie. Zacytuj krótki fragment zgodnie z tekstem, a następnie wyjaśnij, jak autor tworzy obraz miejsca lub nastroju. Nie przypisuj funkcji bez dowodu w tekście.

@@ -5,8 +5,9 @@ tytul: Partykuła
 lead: Mały wyraz, który zmienia ton zdania: czy, nie, niech, nawet, -by, -że — i pisownia „nie” w jednym zestawieniu.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G02, G09
-stan: WYPEŁNIONY — Claude, 2026-10-09 (na podstawie zarysu Grok); czeka na W1
+stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
 utworzono: 2026-10-09
+wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -178,3 +179,145 @@ Wyjaśnij, czym różni się *czy* w zdaniach: *Czy idziesz?* i *Zapytał, czy i
 
 **Grafika 2:** Tabela pisowni „nie” w ośmiu wierszach (sekcja 5) z kolorami: zielony = łącznie, niebieski = rozdzielnie.  
 @opis Osiem wierszy części mowy; kolumna „pisownia” zabarwiona na zielono (rzeczownik, przymiotnik, imiesłów przymiotnikowy, przysłówek odprzymiotnikowy) lub niebiesko (czasownik, imiesłów przysłówkowy, liczebnik, zaimek, inne przysłówki), obok przykłady i wyjątki. Wniosek: pisownia „nie” zależy od części mowy, a od 2026 wszystkie „przymiotnikowe” formy piszemy łącznie.
+
+## 13 | Uzupełnienie po audycie braków — wersja 2.0
+
+### 13.1. Co partykuła wnosi do wypowiedzi?
+
+Partykuła jest nieodmienną częścią mowy, która nie nazywa osoby, rzeczy ani czynności, lecz modyfikuje sens wypowiedzi: wzmacnia, ogranicza, zaprzecza, wyraża przypuszczenie, pytanie, życzenie albo stosunek mówiącego. Jej funkcję najlepiej rozpoznawać w całym zdaniu.
+
+| Funkcja | Przykłady | Przykład użycia |
+|---|---|---|
+| przecząca | nie | *Nie znam odpowiedzi.* |
+| pytająca | czy | *Czy przyjdziesz?* |
+| przypuszczenia | chyba, bodaj, może | *Chyba będzie padać.* |
+| wzmacniająca | właśnie, nawet, przecież, -że/-ż | *To właśnie o to chodzi.* |
+| ograniczająca | tylko, jedynie, zaledwie | *Mam tylko pięć minut.* |
+| życząca/rozkazująca | niech, oby | *Oby się udało!* |
+| modyfikująca ocenę | aż, nawet, dopiero | *Dopiero teraz rozumiem.* |
+
+Granice klasyfikacji mogą zależeć od podręcznika. Niektóre wyrazy (np. *czy, nie, nawet, tylko*) w konkretnym zdaniu mogą być analizowane inaczej w zależności od funkcji. W odpowiedzi podaj przykład i wyjaśnij, co wyraz zmienia w znaczeniu.
+
+### 13.2. Partykuła a spójnik, przysłówek i zaimek
+
+- *Czy przyjdziesz?* — *czy* wprowadza pytanie; w szkolnej analizie może być opisywane jako partykuła pytająca.
+- *Nie wiem, czy przyjdziesz.* — *czy* łączy zdanie podrzędne z nadrzędnym, więc bywa klasyfikowane jako spójnik.
+- *Tylko ty to zauważyłeś.* — *tylko* ogranicza zakres wskazania.
+- *Został tylko jeden bilet.* — *tylko* ogranicza liczbę.
+- *Zrobił to dokładnie.* — *dokładnie* jest przysłówkiem sposobu, nie partykułą.
+- *Może jutro przyjdę.* — *może* wyraża przypuszczenie.
+- *On może pływać.* — *może* jest formą czasownika *móc*.
+
+Test: usuń wyraz i sprawdź, co się zmienia. Jeśli zmienia się nastawienie, zakres, pewność lub nacisk, może to wskazywać na funkcję partykuły; jeśli wyraz nazywa sposób/czas/miejsce czynności, może być przysłówkiem. Sam test usuwania nie wystarcza — uwzględnij składnię.
+
+### 13.3. Partykuły w pytaniach i przeczeniach
+
+Pytanie może być oznaczone szykiem, intonacją albo partykułą: *Przyjdziesz?* / *Czy przyjdziesz?* / *Naprawdę przyjdziesz?* Partykuła nie musi zmieniać podstawowej informacji, ale może nadać jej odcień emocjonalny lub pragmatyczny.
+
+Polskie przeczenie często wymaga zgodnych form w całym zdaniu: *Nikt nie przyszedł; niczego nie znalazłem*. Nie utożsamiaj partykuły *nie* z rzeczownikiem *nie* użytym jako nazwa odpowiedzi, np. *Usłyszałem stanowcze „nie”*. W tym drugim przykładzie wyraz jest cytowany i pełni funkcję rzeczownika/cytatu.
+
+### 13.4. Pisownia cząstek i wyrażeń
+
+- *-że/-ż* dołączamy do wyrazu: *chodźże, cóż, któż*; w praktyce forma i styl mogą być nacechowane.
+- *bym, byś, by, byśmy, byście* zapisujemy zgodnie z tym, do jakiej części zdania się przyłączają: *zrobiłbym*, ale *kto by pomyślał*.
+- *nie* z czasownikiem piszemy rozdzielnie: *nie wiem, nie przyjdzie*; z wieloma rzeczownikami i przymiotnikami reguły są inne.
+- *chyba że* — rozdzielnie; *na pewno* — rozdzielnie; *doprawdy* — łącznie.
+
+### 13.5. Ćwiczenia dodatkowe z kluczem
+
+**D1.** Określ funkcję wyróżnionego wyrazu: (a) *Czy* masz zeszyt? (b) *Chyba* się spóźnię. (c) To *właśnie* ten film. (d) On *może* pływać.  
+**Klucz:** (a) partykuła pytająca; (b) przypuszczenie; (c) wzmocnienie/wskazanie; (d) czasownik, nie partykuła.
+
+**D2.** Wyjaśnij różnicę: *Tylko Ania rozwiązała zadanie* / *Ania rozwiązała tylko zadanie*.  
+**Klucz:** w pierwszym zdaniu ograniczenie dotyczy wykonawcy (nikt poza Anią); w drugim — przedmiotu czynności (rozwiązała zadanie, a nie np. dodatkowe ćwiczenie). Zakres partykuły zależy od miejsca i akcentu.
+
+**D3.** Rozróżnij użycie *czy*: (a) *Czy idziesz?* (b) *Nie wiem, czy idziesz.*  
+**Klucz:** (a) partykuła pytająca w pytaniu bezpośrednim; (b) element wprowadzający zdanie zależne, zwykle klasyfikowany jako spójnik.
+
+**D4.** Ułóż zdanie, w którym *może* jest partykułą, i zdanie, w którym jest czasownikiem.  
+**Klucz:** np. *Może jutro będzie cieplej* — partykuła; *Ona może wejść* — czasownik.
+
+**D5.** Wskaż, co ogranicza partykuła *tylko*: *Tylko dziś możemy wejść*; *Możemy wejść tylko do sali A*.  
+**Klucz:** w pierwszym — czas; w drugim — miejsce/zakres dozwolonego wejścia.
+
+### 13.6. Checklista
+
+- Czy analizuję partykułę w kontekście, nie na podstawie samego wyrazu?
+- Czy odróżniam modyfikator znaczenia od części mowy nazywającej czynność lub cechę?
+- Czy potrafię wskazać zakres partykuły w zdaniu?
+- Czy rozpoznaję różne funkcje *czy, może, tylko, nie*?
+- Czy poprawnie zapisuję cząstki *-że* i *by*?
+
+## 14 | Audyt po uzupełnieniu
+
+Wersja 2.0 rozszerza lekcję o funkcje partykuł, analizę zakresu, różnice kontekstowe dla *czy/może/tylko*, pisownię cząstek oraz zadania z kluczem.
+
+**Do kontroli niezależnej:** status części wyrazów (zwłaszcza *czy, nie, tylko, nawet*) zależy od kontekstu i systemu gramatycznego. W ocenianiu szkolnym należy podawać pełne zdanie i przyjętą klasyfikację.
+
+## 14 | Drugi cykl opracowania: partykuła i zakres znaczenia v3.0
+
+### 14.1. Partykuła modyfikuje wypowiedź
+
+Partykuła jest nieodmienną częścią mowy, która wzmacnia, ogranicza, zaprzecza, pyta, wyraża przypuszczenie, życzenie lub stosunek mówiącego do treści. Jej funkcję najlepiej rozpoznawać w kontekście, bo część wyrazów może należeć do różnych części mowy: *może* w „Może jutro przyjdzie” wyraża przypuszczenie, ale w „On może pływać” jest formą czasownika *móc*; *tylko* ogranicza zakres, *nawet* wzmacnia, *chyba* wyraża niepewność, *niech* może wprowadzać życzenie lub rozkaz.
+
+### 14.2. Zakres partykuły — co dokładnie ogranicza?
+
+Porównaj:
+- *Tylko **Ania** rozwiązała zadanie* — ograniczenie dotyczy osoby: nikt poza Anią;
+- *Ania rozwiązała **tylko zadanie*** — ograniczenie dotyczy tego, co rozwiązała;
+- *Ania **nawet** rozwiązała zadanie* — mówiący przedstawia czynność jako zaskakującą;
+- *Ania **chyba** rozwiązała zadanie* — mówiący nie jest całkowicie pewny.
+
+Położenie partykuły i akcent wpływają na interpretację. W wypowiedzi ustnej akcent może przesunąć zakres, dlatego w tekście warto umieszczać partykułę możliwie blisko elementu, który ogranicza lub wzmacnia.
+
+### 14.3. „Nie”, „niby”, „właśnie”, „dopiero”, „już”
+
+- *nie* — zaprzeczenie; jego pisownia z czasownikami jest rozdzielna (*nie wiem*), a z innymi częściami mowy zależy od reguły i kontekstu;
+- *niby* — pozorne podobieństwo lub dystans: *Niby się uczył, a nic nie umiał*;
+- *właśnie* — wskazanie, podkreślenie, doprecyzowanie: *Właśnie o to mi chodzi*;
+- *dopiero* — wskazuje późny moment lub ograniczoną liczbę: *Dopiero teraz rozumiem*;
+- *już* — wskazuje, że coś nastąpiło lub zmienił się stan: *Już skończyłem*.
+
+Nie wszystkie tradycje gramatyczne przypisują każdemu z tych wyrazów dokładnie tę samą etykietę. W szkolnej analizie najważniejsze jest stosowanie przyjętego podziału oraz umiejętność objaśnienia funkcji w zdaniu.
+
+### 14.4. Partykuła a spójnik, przysłówek i czasownik
+
+- *Czy przyjdziesz?* — *czy* w pytaniu bezpośrednim jest zwykle partykułą pytającą;
+- *Nie wiem, czy przyjdziesz* — *czy* wprowadza pytanie zależne, często klasyfikowane jako spójnik;
+- *Może przyjdzie* — *może* wyraża przypuszczenie;
+- *Może to zrobić* — *może* jest czasownikiem, orzeczeniem;
+- *Właśnie wrócił* — *właśnie* może wskazywać moment czynności;
+- *Zrobił to dokładnie* — *dokładnie* jest przysłówkiem określającym sposób wykonania czynności.
+
+### 14.5. Ćwiczenia po uzupełnieniu
+
+**A. Określ funkcję i część mowy:**
+1. *Chyba jutro będzie cieplej.*
+2. *Ona może rozwiązać równanie.*
+3. *Czy masz chwilę?*
+4. *Nie wiem, czy masz chwilę.*
+5. *Dopiero po południu dostałem wiadomość.*
+
+**Klucz:** 1. *chyba* — partykuła przypuszczenia; 2. *może* — czasownik; 3. *czy* — partykuła pytająca; 4. *czy* — element wprowadzający pytanie zależne/spójnik; 5. *dopiero* — partykuła ograniczająca czas.
+
+**B. Wyjaśnij różnicę zakresu:**
+1. *Tylko nauczyciel przeczytał odpowiedź.*
+2. *Nauczyciel przeczytał tylko odpowiedź.*
+3. *Nauczyciel tylko przeczytał odpowiedź.*
+
+**Klucz:** 1. nikt inny jej nie przeczytał; 2. przeczytał odpowiedź, ale nie wykonał innych czynności; 3. jedynie ją przeczytał, nie np. skomentował lub ocenił — dokładny sens zależy od kontekstu i akcentu.
+
+**C. Popraw i uzasadnij:**
+1. *Może odrobić lekcję* (zamierzone znaczenie: być może odrobi).
+2. *Nie wiem czy przyjdzie.*
+3. *Czy jutro padać będzie?* (oceń gramatykę i naturalność).
+
+**Klucz:** 1. *Może odrobi lekcję* — jeśli *może* oznacza przypuszczenie; *może odrobić lekcję* zwykle znaczy, że ma możliwość ją odrobić. 2. *Nie wiem, czy przyjdzie.* 3. Zdanie jest zrozumiałe, ale naturalniejszy szyk to *Czy jutro będzie padać?*
+
+### 14.6. Analiza wypowiedzi
+
+„Niestety, chyba tylko Marta naprawdę zrozumiała polecenie, a pozostali być może dopiero teraz zauważyli błąd”. Wskaż partykuły i ich zakres. **Klucz przykładowy:** *chyba* — niepewność; *tylko* — ogranicza wykonawcę do Marty; *naprawdę* — wzmacnia pewność/intensywność rozumienia; *być może* — przypuszczenie; *dopiero* — późny moment zauważenia. *Niestety* komentuje całą treść i w wielu klasyfikacjach jest wyrazem modalnym/partykułą. Przy klasyfikacji szkolnej uwzględnij nazewnictwo przyjęte w podręczniku.
+
+### 14.7. Samokontrola
+
+Potrafię objaśnić, jak partykuła zmienia sens wypowiedzi; wskazać jej zakres; odróżnić *może* czasownikowe od modalnego; odróżnić pytanie bezpośrednie od zależnego; poprawnie stosować przecinki w zdaniach z *czy* oraz rozpoznawać zależność klasyfikacji od przyjętej gramatyki.

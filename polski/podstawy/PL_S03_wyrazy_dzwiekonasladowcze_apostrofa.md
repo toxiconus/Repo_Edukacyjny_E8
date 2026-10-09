@@ -5,78 +5,76 @@ tytul: Wyrazy dźwiękonaśladowcze, apostrofa, pytanie retoryczne, wykrzyknieni
 lead: Środki brzmieniowe i retoryczne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: środki stylistyczne; powiązania: L010, G11
-stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
+stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
 utworzono: 2026-10-09
+wersja: 2.0
 ---
 
-> Szkielet do wypełnienia przez LLM — instrukcja: `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (prompt) albo `narzedzia/szkielety_polski.py`.
+# S03 | Dźwiękonaśladownictwo, apostrofa i pytanie retoryczne — pełna lekcja v2.0
 
-**Musi się znaleźć w lekcji:**
-- wyrazy dźwiękonaśladowcze (onomatopeje) i instrumentacja głoskowa
-- apostrofa — bezpośredni zwrot do osoby, przedmiotu, idei (często z „o”)
-- pytanie retoryczne — nie oczekuje odpowiedzi
-- wykrzyknienie — zdanie wykrzyknikowe wyrażające emocje
-- funkcje każdego środka
+## 0. Cele
+Rozpoznaję onomatopeję, apostrofę, pytanie retoryczne i wykrzyknienie, odróżniam nazwę środka od znaku interpunkcyjnego oraz wyjaśniam funkcję w tekście.
 
-**Pułapki do kliniki błędów:** apostrofa a zwykły zwrot do rozmówcy w dialogu; każde pytanie w wierszu to pytanie retoryczne; wykrzyknienie a wykrzyknik (część mowy).
+## 1. Wyrazy dźwiękonaśladowcze (onomatopeje)
+Onomatopeja naśladuje dźwięk lub jego rytm: *kap-kap, brzdęk, szum, trzask, miau, kuku*. Może oddawać dźwięk natury, przedmiotu, zwierzęcia lub działania. W poezji instrumentacja głoskowa — nagromadzenie podobnych głosek — również może sugerować dźwięk albo rytm, choć nie każdy powtarzający się dźwięk jest samodzielną onomatopeją.
 
-## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+Przykład: *„Kap, kap — deszcz stukał w parapet”.* Wyraz *kap* naśladuje odgłos kropli. Powtórzenie może budować rytm i wrażenie regularnego kapania. W odpowiedzi nazwij dźwięk i efekt, a nie tylko napisz „naśladuje dźwięk”.
 
-**Cel:** Potrafię rozpoznać środki brzmieniowe i retoryczne.
+## 2. Apostrofa
+**Apostrofa** to bezpośredni, zwykle uroczysty lub emocjonalny zwrot do adresata: osoby, bóstwa, ojczyzny, idei, zjawiska czy przedmiotu. Często zaczyna się od *O*, np. autorskie przykłady: *O przyrodo, daj mi spokój!*; *Ojczyzno, pamiętam o tobie*. Apostrofa może otwierać utwór lub ważny fragment i ujawniać emocjonalny stosunek mówiącego.
 
-- **Onomatopeja** — szum, stukot, miau  
-- **Apostrofa** — zwrot do kogoś/czegoś (*O ojczyzno!*)  
-- **Pytanie retoryczne** — nie oczekuje odpowiedzi  
-- **Wykrzyknienie** — zdanie wyrażające emocje
+Nie każdy zwrot do rozmówcy jest apostrofą. W zwykłym dialogu *Aniu, podaj zeszyt* to po prostu zwrot do osoby; w utworze poetyckim bezpośredni zwrot może być apostrofą, jeśli pełni funkcję retoryczną lub artystyczną. Liczy się kontekst, ton i budowa wypowiedzi.
 
-**Klinika:** apostrofa ≠ zwykły zwrot w dialogu; każde pytanie w wierszu ≠ retoryczne.
+## 3. Pytanie retoryczne
+**Pytanie retoryczne** nie służy przede wszystkim uzyskaniu informacji. Ma skłonić do refleksji, wyrazić emocję, podkreślić oczywisty wniosek lub przekonać odbiorcę: *Kto nie chciałby być bezpieczny?*; *Czy naprawdę możemy pozostać obojętni?* Często odpowiedź jest oczywista albo nie oczekuje się jej wcale.
 
-**Ćwiczenia:** Nazwij + funkcja (emocja, nacisk, rytm).
+Nie każde pytanie w wierszu jest retoryczne. Jeśli podmiot liryczny rzeczywiście poszukuje odpowiedzi lub nie zna rozwiązania, pytanie może być zwykłym pytaniem. Uzasadnij funkcję na podstawie treści.
 
-## 0 | Cel i kryterium gotowości [[basic:E8]]
+## 4. Wykrzyknienie a wykrzyknik
+**Wykrzyknienie** to wypowiedź o silnym zabarwieniu emocjonalnym lub ekspresywnym. **Wykrzyknik (!)** jest znakiem interpunkcyjnym. W zdaniu *„Jak pięknie!”* mamy wykrzyknienie i znak „!”; w zdaniu *„Zamknij drzwi!”* znak wykrzyknika kończy polecenie, ale nie oznacza, że w zdaniu występuje wykrzyknik jako część mowy.
 
-DO UZUPEŁNIENIA: 3–5 zdań „Potrafię…” (rozpoznać środek, nazwać go, określić funkcję w tekście).
+## 5. Funkcje w utworze
+Onomatopeja — słuchowy obraz i rytm; apostrofa — bezpośredniość, emocjonalność, podniosłość lub błaganie; pytanie retoryczne — refleksja, perswazja, podkreślenie; wykrzyknienie — intensywna emocja, zaskoczenie, zachwyt, strach lub gniew. Funkcję dobieraj do konkretnego fragmentu.
 
-## 1 | Definicja i budowa [[basic:E8]]
+## 6. Klinika błędów
+| Błąd | Poprawnie | Dlaczego? |
+|---|---|---|
+| każde pytanie jest retoryczne | sprawdź, czy oczekuje odpowiedzi | Decyduje funkcja pytania. |
+| każdy zwrot do osoby to apostrofa | oceń styl i kontekst | Zwykły dialog nie musi być środkiem stylistycznym. |
+| wykrzyknik jako część mowy = znak „!” | rozdziel dwa pojęcia | Jedno jest częścią mowy, drugie znakiem. |
+| każdy szum opisany słowem jest onomatopeją | sprawdź naśladowanie dźwięku | Niektóre słowa tylko nazywają zjawisko. |
 
-DO UZUPEŁNIENIA: krótka definicja każdego środka, z czego się składa, wyrazy-sygnały.
+## 7. Ćwiczenia
+**A.** Rozpoznaj: 1. *„Bęc! Książka spadła na podłogę”.* 2. *„O młodości, nie odchodź!”* 3. *„Czy można zapomnieć o takim dniu?”* — w tekście, w którym odpowiedź jest oczywista. 4. *„Gdzie położyłeś klucze?”*  
+**Klucz:** 1. onomatopeja; 2. apostrofa; 3. pytanie retoryczne; 4. zwykłe pytanie, jeśli mówiący chce uzyskać informację.
 
-## 2 | Jak rozpoznać — procedura [[basic:E8]]
+**B.** Wyjaśnij funkcję *„Szum, szelest, trzask — las nie milkł ani na chwilę”*.  
+**Przykładowy klucz:** nagromadzenie wyrazów nazywających lub naśladujących dźwięki tworzy słuchowy obraz lasu i podkreśla jego intensywną aktywność.
 
-DO UZUPEŁNIENIA: kroki rozpoznawania + pytanie testowe odróżniające podobne środki.
+## 8. Zadanie egzaminacyjne (0–2 pkt)
+W zdaniu *„O wolności, jak długo jeszcze będziemy na ciebie czekać?”* wskaż apostrofę i pytanie retoryczne oraz wyjaśnij ich efekt. **Klucz:** apostrofa *O wolności* — bezpośredni zwrot do abstrakcyjnej wartości; pytanie może wyrażać tęsknotę i niecierpliwość, niekoniecznie oczekuje odpowiedzi.
 
-## 3 | Przykłady z lektur i wierszy [[basic:E8]]
+## 9. Fiszki i wizualizacja
+Onomatopeja — naśladowanie dźwięku; apostrofa — bezpośredni zwrot; pytanie retoryczne — pytanie dla efektu; wykrzyknienie — ekspresywna wypowiedź. @opis Cztery kafle z definicją, przykładem, pytaniem diagnostycznym i funkcją.
 
-DO UZUPEŁNIENIA: 6–10 krótkich przykładów (jedno zdanie/wers cytatu albo parafraza) z lektur obowiązkowych, z nazwą środka.
+## 10. Samokontrola
+Umiem odróżnić środki po funkcji, a nie po samym znaku interpunkcyjnym, i zawsze wyjaśniam ich wpływ na odbiorcę.
 
-## 4 | Funkcja — po co autor go używa [[understand:ROZUMIENIE]]
+## 11. Trening dodatkowy
 
-DO UZUPEŁNIENIA: tabela: środek | typowe funkcje | wzór odpowiedzi egzaminacyjnej (np. „Ożywienie sprawia, że…”).
+**1.** Które wyrażenie najpewniej jest onomatopeją: *szum morza*, *szszsz*, *fala morska*?  
+**Klucz:** *szszsz* bezpośrednio naśladuje dźwięk; *szum morza* nazywa zjawisko i może być elementem opisu, ale nie jest samo w sobie tak wyraźną onomatopeją.
 
-## 5 | Odróżnij od podobnych [[understand:ROZUMIENIE]]
+**2.** Czy zdanie *„Olu, podaj mi zeszyt”* zawsze zawiera apostrofę?  
+**Klucz:** nie. W zwykłej rozmowie jest to zwrot do adresata; o apostrofie jako środku literackim decyduje retoryczny/emocjonalny kontekst.
 
-DO UZUPEŁNIENIA: pary środków łatwych do pomylenia, z rozstrzygającym pytaniem.
+**3.** Wyjaśnij funkcję pytania *„Czy tak powinno wyglądać nasze miasto?”* w przemówieniu krytykującym zaniedbania.  
+**Klucz:** pytanie retoryczne skłania odbiorców do oceny sytuacji i wzmacnia krytykę, zamiast prosić o dosłowną odpowiedź.
 
-## 6 | Klinika błędów
+**4.** Napisz dwa przykłady: jeden pytania informacyjnego i jeden retorycznego. Wyjaśnij różnicę.  
+**Kryteria:** informacyjne oczekuje konkretnej odpowiedzi; retoryczne służy refleksji, naciskowi lub emocji.
 
-DO UZUPEŁNIENIA: tabela: Błąd | Poprawnie | Dlaczego? — min. 6 wierszy.
+**5.** Wyjaśnij, co wnosi powtórzenie *„stuk, stuk, stuk”* zamiast pojedynczego *„stuk”*.  
+**Klucz:** może oddawać rytm, regularność i trwanie dźwięku, budować napięcie lub atmosferę oczekiwania.
 
-## 7 | Ćwiczenia A — podstawa [[basic:E8]]
-
-DO UZUPEŁNIENIA: 6–8 zadań z kluczem (rozpoznaj, nazwij, podaj funkcję).
-
-## 8 | Ćwiczenia B — tworzenie i C — konkurs [[exam:KONKURS]]
-
-DO UZUPEŁNIENIA: zadania: ułóż własny przykład, przekształć tekst, analiza fragmentu — z kluczem.
-
-## 9 | Zadania w stylu CKE
-
-DO UZUPEŁNIENIA: 3–4 zadania z kluczem, punktacją i uzasadnieniem (rozpoznanie + funkcja w tekście).
-
-## 10 | Fiszki
-
-DO UZUPEŁNIENIA: 8–12 par „pytanie — odpowiedź”.
-
-## 11 | Wizualizacja
-
-DO UZUPEŁNIENIA: propozycja 1–2 grafik + obowiązkowa linia @opis pod każdą.
+**Zastosowanie do lektury:** w wierszu lub przemówieniu sprawdź, do kogo skierowany jest zwrot, czy pytanie wymaga odpowiedzi i jakie emocje ujawnia. Cytat powinien być krótki i wierny źródłu.

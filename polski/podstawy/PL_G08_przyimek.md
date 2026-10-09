@@ -5,8 +5,9 @@ tytul: Przyimek
 lead: Mały wyraz, wielka władza: w, na, do, spod, zza — przyimek rządzi przypadkiem i tworzy wyrażenie przyimkowe.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G01, G12, G13
-stan: WYPEŁNIONY — Claude, 2026-10-09 (na podstawie zarysu Grok); czeka na W1
+stan: ROZBUDOWANY v3.0 — audyt wewnętrzny: diagnoza → uzupełnienie → ponowna kontrola; niezależna kontrola W1 nadal wymagana
 utworzono: 2026-10-09
+wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -177,3 +178,147 @@ Napisz zdanie z wyrażeniem przyimkowym w funkcji przydawki i nazwij przypadek r
 
 **Grafika 2:** Tabela „przyimek → przypadek” w pięciu kolorowych kolumnach (D., C., B., N., Ms.) z przyimkami dwuprzypadkowymi w dwóch kolumnach naraz.  
 @opis Pięć kolumn przypadków; przyimki takie jak *na, w, za, pod, o, z* pojawiają się w dwóch kolumnach z dopiskiem pytania (dokąd? / gdzie?, skąd? / z kim?). Wniosek: o przypadku decyduje przyimek i znaczenie całego wyrażenia.
+
+## 13 | Uzupełnienie po audycie braków — wersja 2.0
+
+### 13.1. Przyimek działa razem z wyrazem, który określa
+
+Przyimek jest nieodmienny, ale zwykle wymaga odpowiedniej formy rzeczownika, zaimka lub liczebnika. Przyimek i wyraz zależny tworzą **wyrażenie przyimkowe**: *w domu, do szkoły, z koleżanką, bez niego, przed trzema dniami*.
+
+Przyimek sam nie jest częścią zdania w takim sensie jak podmiot czy dopełnienie; funkcję składniową pełni całe wyrażenie przyimkowe. W zdaniu *Po lekcjach wróciliśmy do domu* wyrażenie *po lekcjach* może pełnić funkcję okolicznika czasu, a *do domu* — okolicznika kierunku/miejsca. Nie rozdzielaj ich przy analizie składniowej bez uzasadnienia.
+
+### 13.2. Przypadek zależy od konkretnego przyimka i znaczenia
+
+| Przypadek | Typowe przyimki | Przykłady |
+|---|---|---|
+| dopełniacz | bez, dla, od, do, z/ze (oddalenie lub pochodzenie), spod, zza, sprzed, obok | bez zeszytu, do szkoły, spod stołu |
+| celownik | ku, przeciw (w określonych połączeniach) | ku morzu, przeciw komuś |
+| biernik | przez, na (kierunek), w (kierunek), za (kierunek/czas), po (w niektórych znaczeniach) | przez most, na stół, w las, za godzinę |
+| narzędnik | z/ze (towarzyszenie), nad, pod, przed, za, między (w określonych znaczeniach) | z kolegą, nad rzeką, przed domem |
+| miejscownik | o, w (miejsce), na (miejsce), po (miejsce), przy | o książce, w domu, na stole, przy oknie |
+
+To zestaw typowych przykładów, nie automat bez wyjątków. Przyimki takie jak *na, w, pod, nad, za, przed, między, po* mogą łączyć się z różnymi przypadkami, a zmiana przypadku często zmienia znaczenie: *na stół* (kierunek, biernik) — *na stole* (miejsce, miejscownik); *pod stół* — *pod stołem*.
+
+### 13.3. Zmiana przypadku często oznacza zmianę relacji
+
+- *Idę **do szkoły*** — kierunek, dopełniacz.
+- *Jestem **w szkole*** — miejsce, miejscownik.
+- *Kładę książkę **na biurko*** — ruch/kierunek, biernik.
+- *Książka leży **na biurku*** — położenie, miejscownik.
+- *Kot wszedł **pod łóżko*** — kierunek, biernik.
+- *Kot śpi **pod łóżkiem*** — miejsce, narzędnik.
+- *Przed lekcją* (kiedy?) — dopełniacz; *przed nauczycielem* (przed kim? w przestrzeni) — narzędnik.
+
+### 13.4. Warianty fonetyczne i pisownia
+
+Formy *we, ze, nade, pode, przede, ode* występują m.in. dla ułatwienia wymowy lub w utrwalonych połączeniach: *we Wrocławiu, we wtorek, ze szkoły, ze mną, nade mną, przede wszystkim, ode mnie*. Nie wstawiaj wariantu dłuższego mechanicznie przed każdy wyraz — kieruj się normą i naturalnością wymowy.
+
+Przyimki złożone piszemy łącznie: *spod, zza, znad, sponad, spoza, sprzed*. Odróżnij je od połączeń dwóch osobnych przyimków, np. *z powodu, na skutek, w związku z*. Stałe wyrażenia zapamiętuj jako całość: *na pewno, na razie, z powrotem* — rozdzielnie.
+
+### 13.5. Przyimek a przedrostek i przysłówek
+
+- *pod stołem* — *pod* jest przyimkiem, bo łączy się z rzeczownikiem w narzędniku.
+- *podskoczył* — *pod-* jest przedrostkiem w budowie czasownika, nie osobnym przyimkiem.
+- *Wyszedł na zewnątrz* — *na* jest przyimkiem w wyrażeniu *na zewnątrz*.
+- *Zewnątrz było zimno* — *zewnątrz* może działać jako przysłówek w określonym kontekście.
+
+Pytanie kontrolne: czy wyraz jest samodzielny i łączy się z innym wyrazem, tworząc wyrażenie przyimkowe, czy stanowi część innego wyrazu?
+
+### 13.6. Ćwiczenia dodatkowe z kluczem
+
+**D1.** Uzupełnij przypadek i formę: (a) na ___ (stół — kierunek); (b) na ___ (stół — miejsce); (c) pod ___ (łóżko — kierunek); (d) pod ___ (łóżko — miejsce).  
+**Klucz:** na stół — biernik; na stole — miejscownik; pod łóżko — biernik; pod łóżkiem — narzędnik.
+
+**D2.** Wskaż wyrażenia przyimkowe: *Wczoraj wróciliśmy późno, ale dziś przed lekcją spotkamy się przed szkołą.*  
+**Klucz:** *przed lekcją*, *przed szkołą*; oba są wyrażeniami przyimkowymi, lecz pełnią różne funkcje znaczeniowe.
+
+**D3.** Popraw pisownię: *z poza domu, z pod łóżka, na pewno, zpowrotem, przedewszystkim*.  
+**Klucz:** *spoza domu, spod łóżka, na pewno, z powrotem, przede wszystkim*.
+
+**D4.** Wyjaśnij różnicę: *z kolegą* / *z miasta*.  
+**Klucz:** *z kolegą* — towarzyszenie, narzędnik; *z miasta* — pochodzenie/oddalenie, dopełniacz.
+
+**D5.** Ułóż po jednym zdaniu z *w* wymagającym biernika i miejscownika, a następnie nazwij różnicę znaczenia.  
+**Klucz:** np. *Wszedł w las* — kierunek, biernik; *Spacerował w lesie* — miejsce, miejscownik.
+
+### 13.7. Checklista
+
+- Czy rozpoznaję całe wyrażenie przyimkowe?
+- Czy dobrałem/dobrałam przypadek zgodnie z przyimkiem i znaczeniem?
+- Czy odróżniam kierunek od miejsca?
+- Czy pamiętam przyimki złożone i pisownię stałych wyrażeń?
+- Czy nie mylę przyimka z przedrostkiem?
+
+## 14 | Audyt po uzupełnieniu
+
+Wersja 2.0 dodaje tabelę przypadków, kontrasty miejsca i kierunku, warianty fonetyczne, pisownię przyimków złożonych oraz odróżnienie przyimka od przedrostka. Rozszerzono ćwiczenia i klucze.
+
+**Do kontroli niezależnej:** rząd przypadków w niektórych połączeniach zależy od znaczenia i utrwalonej konstrukcji; tabela zawiera przykłady typowe, a nie kompletny słownik rekcji. Wątpliwe przykłady należy sprawdzać w słowniku poprawnej polszczyzny.
+
+## 14 | Drugi cykl opracowania: przyimek i przypadek v3.0
+
+### 14.1. Przyimek działa w połączeniu
+
+Przyimek to nieodmienna część mowy, która łączy się z rzeczownikiem, zaimkiem lub innym wyrazem w odpowiednim przypadku, tworząc wyrażenie przyimkowe: *na stole, do domu, bez niego, przed lekcją*. Sam przyimek zwykle nie pełni samodzielnie funkcji składniowej — funkcję pełni całe wyrażenie, np. okolicznik miejsca (*na stole*), czasu (*przed lekcją*) albo dopełnienie (*czekał na kolegę*).
+
+### 14.2. Ten sam przyimek — różne przypadki i znaczenia
+
+| Połączenie | Przypadek | Znaczenie |
+|---|---|---|
+| na stół | biernik | kierunek/ruch |
+| na stole | miejscownik | położenie |
+| pod łóżko | biernik | ruch do miejsca |
+| pod łóżkiem | narzędnik | położenie |
+| nad rzekę | biernik | kierunek |
+| nad rzeką | narzędnik | miejsce |
+| o książce | miejscownik | temat rozmowy |
+| o książkę | biernik | np. troszczyć się o coś / zabiegać o coś |
+
+Reguła „biernik = ruch, miejscownik/narzędnik = miejsce” jest użyteczną wskazówką, ale nie obejmuje wszystkich znaczeń: *włożyć do szuflady* (kierunek), *być w szufladzie* (miejsce), *iść po zakupy* (cel), *stać po drugiej stronie* (miejsce). Zawsze analizuj całe połączenie i wymagany przypadek.
+
+### 14.3. Przyimek a rekcja
+
+Niektóre czasowniki wymagają określonego przyimka i przypadku: *czekać na kogoś/coś* (biernik), *rozmawiać o czymś* (miejscownik), *przyglądać się czemuś* (celownik, bez przyimka), *zależeć od czegoś* (dopełniacz). Nie zastępuj przyimka wyłącznie na podstawie podobieństwa znaczeń. Poprawność sprawdzaj w całym połączeniu: *wziąć udział w konkursie*, *mieć wpływ na wynik*, *być przekonanym o czymś*.
+
+### 14.4. Pisownia przyimków złożonych i wyrażeń
+
+- **spod, spoza, sprzed, znad** — pisane łącznie: *spod stołu, spoza miasta, sprzed domu, znad morza*;
+- **z powrotem, na pewno, po trochu, przede wszystkim** — wyrażenia pisane rozdzielnie;
+- przyimki złożone typu **ponad, pomiędzy, poprzez, wskutek, zamiast** zapisujemy jako pojedyncze wyrazy;
+- **naprzeciw** zwykle piszemy łącznie (*stanął naprzeciw domu*), ale konstrukcje typu *naprzeciwko szkoły* również są poprawne;
+- nie myl *przedtem* (przysłówek) z *przed tym* (przyimek + zaimek): *Przedtem było ciszej* / *Przed tym wydarzeniem ostrzegano nas*.
+
+### 14.5. Wyrażenie przyimkowe — funkcja składniowa
+
+W zdaniu *Przed lekcją spotkaliśmy się przed szkołą* występują dwa wyrażenia przyimkowe. *Przed lekcją* określa czas, *przed szkołą* — miejsce. Ten sam przyimek *przed* łączy się tu z narzędnikiem, ale znaczenie wynika z całego połączenia. W zdaniu *Czekam na autobus* wyrażenie *na autobus* jest dopełnieniem wymaganym przez czasownik, a nie okolicznikiem miejsca.
+
+### 14.6. Ćwiczenia po uzupełnieniu
+
+**A. Uzupełnij właściwy przypadek i wyjaśnij znaczenie:**
+1. Położyłem zeszyt na ___ (biurko).
+2. Zeszyt leży na ___ (biurko).
+3. Wyszedł spod ___ (drzewo).
+4. Stanął przed ___ (klasa — grupa uczniów).
+5. Rozmawialiśmy o ___ (film).
+
+**Klucz:** 1. biurko — biernik; 2. biurku — miejscownik; 3. drzewa — dopełniacz; 4. klasą — narzędnik; 5. filmie — miejscownik.
+
+**B. Popraw pisownię:** *z poza domu; z pod łóżka; na pewno; zpowrotem; przedewszystkim; przed tym poszedłem spać* (zamierzone znaczenie: wcześniej).
+
+**Klucz:** *spoza domu; spod łóżka; na pewno; z powrotem; przede wszystkim; przedtem poszedłem spać* — jeśli chodzi o znaczenie „wcześniej”.
+
+**C. Określ funkcję całego wyrażenia:**
+1. *Czekam na kolegę.*
+2. *Wrócimy po obiedzie.*
+3. *Kot schował się pod stołem.*
+4. *Myślę o wakacjach.*
+
+**Klucz:** 1. dopełnienie; 2. okolicznik czasu; 3. okolicznik miejsca; 4. dopełnienie / określenie tematu myślenia — analiza szkolna może zależeć od przyjętej klasyfikacji.
+
+### 14.7. Zadanie przekrojowe
+
+„Po powrocie z wycieczki usiedliśmy przy stole, a potem rozmawialiśmy o drodze przez las”. Wskaż wyrażenia przyimkowe, przypadki i funkcje. **Klucz:** *z wycieczki* — dopełniacz; *przy stole* — miejscownik; *o drodze* — miejscownik; *przez las* — biernik. Całe wyrażenia pełnią funkcje zależne od kontekstu: *po powrocie z wycieczki* określa czas, *przy stole* miejsce, *o drodze przez las* jest dopełnieniem czasownika *rozmawialiśmy* z określeniem *przez las*.
+
+### 14.8. Samokontrola
+
+Potrafię znaleźć wyrażenie przyimkowe, wskazać przypadek, odróżnić ruch od położenia bez mechanicznego stosowania reguły, rozpoznać rekcję czasownika, nazwać funkcję całego wyrażenia i poprawnie zapisać częste połączenia.

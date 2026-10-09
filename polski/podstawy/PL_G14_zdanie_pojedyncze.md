@@ -5,79 +5,112 @@ tytul: Zdanie pojedyncze i równoważnik zdania
 lead: Zdanie z jednym orzeczeniem, rozwinięte i nierozwinięte; wypowiedzenie bez orzeczenia.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: G12, G15
-stan: CZĘŚCIOWY — zarys Grok 2026-10-09 (przejrzany przez Claude); sekcje 0–12 do rozwinięcia
+stan: ROZBUDOWANY v2.0 — pełna lekcja po analizie braków i kontroli wewnętrznej
 utworzono: 2026-10-09
+wersja: 2.1
 ---
 
-> Szkielet do wypełnienia przez LLM — instrukcja: `eksport/out/DO_WYPELNIENIA_PL_podstawy.md` (prompt) albo `narzedzia/szkielety_polski.py`.
+# G14 | Zdanie pojedyncze i równoważnik zdania — pełna lekcja v2.1
 
-**Musi się znaleźć w lekcji:**
-- zdanie pojedyncze rozwinięte i nierozwinięte
-- równoważnik zdania (bez osobowej formy czasownika) i imiesłowowy równoważnik
-- przekształcanie równoważnika w zdanie i odwrotnie
-- wypowiedzenia: oznajmujące, pytające, rozkazujące, wykrzyknikowe
+## 0. Cele
+Potrafię odróżnić zdanie od równoważnika, policzyć orzeczenia, rozpoznać zdanie pojedyncze nierozwinięte i rozwinięte, odróżnić formę osobową od bezokolicznika i imiesłowu oraz przekształcić równoważnik w zdanie.
 
-**Pułapki do kliniki błędów:** uznanie imiesłowu za orzeczenie; liczenie orzeczeń w zdaniu z bezokolicznikiem; równoważnik bez przecinka.
+## 1. Zdanie, wypowiedzenie, równoważnik
+**Wypowiedzenie** to komunikat stanowiący całość znaczeniową. **Zdanie** zawiera orzeczenie, zwykle wyrażone osobową formą czasownika; orzeczenie może być czasownikowe (*Uczeń czyta*) lub imienne (*Uczeń jest spokojny*). **Równoważnik zdania** nie ma orzeczenia, ale przekazuje komunikat: *Cisza!*; *Dzień dobry*; *Po lekcjach do domu*.
 
-## Zarys od Grok (wersja zwarta, 2026-10-09) — materiał do rozwinięcia w sekcjach poniżej
+Nie wystarczy znaleźć dowolną formę czasownika. Bezokolicznik (*chcę czytać*) sam nie jest orzeczeniem osobowym, ale w zdaniu może występować obok orzeczenia *chcę*. Imiesłów przysłówkowy (*idąc, przeczytawszy*) także nie jest samodzielnym orzeczeniem osobowym. Zdanie *Chcę przeczytać książkę* ma jedno orzeczenie osobowe: *chcę*.
 
-> Uwaga z przeglądu: Zdanie może mieć też orzeczenie imienne.
+## 2. Zdanie pojedyncze rozwinięte i nierozwinięte
+Zdanie pojedyncze ma jedno orzeczenie (także imienne). **Nierozwinięte** składa się zasadniczo z podmiotu i orzeczenia: *Ptak śpiewa*. **Rozwinięte** zawiera dodatkowe określenia: *Mały ptak śpiewa głośno na drzewie*. Zdanie może być też bezpodmiotowe: *Świta*. Kryterium „pojedynczości” dotyczy liczby orzeczeń, a nie długości zdania.
 
-**Cel:** Potrafię odróżnić zdanie od równoważnika i poprawnie użyć równoważnika imiesłowowego.
+## 3. Rodzaje wypowiedzeń ze względu na cel i emocję
+- oznajmujące: *Jutro mamy sprawdzian.*
+- pytające: *Czy jutro mamy sprawdzian?*
+- rozkazujące: *Przygotuj zeszyt.*
+- wykrzyknikowe: *Ale piękny widok!* — wykrzyknikowość może łączyć się z innym celem wypowiedzi i nie jest tym samym co obecność znaku „!”.
 
-**Zdanie** ma orzeczenie (osobową formę czasownika — także w orzeczeniu imiennym: *Dom był duży*).  
-**Równoważnik** nie ma orzeczenia (*Cisza w klasie.*, *Uwaga!*).
+## 4. Równoważniki i ich przekształcanie
+- *Po zakończeniu lekcji wróciliśmy do domu.* → *Kiedy lekcja się zakończyła, wróciliśmy do domu.*
+- *Uwaga na schodach!* → *Uważaj na schodach!*
+- *Zakaz wstępu.* → *Nie wolno wchodzić.*
 
-**Równoważnik imiesłowowy** — patrz G06 (ten sam wykonawca).
+Nie każdy równoważnik trzeba rozwijać do jednego jedynego zdania. Dobór zależy od kontekstu, stylu i intencji. Nagłówki, znaki, notatki i komunikaty często celowo wykorzystują równoważniki.
 
-## 0 | Cel i kryterium gotowości [[basic:E8]]
+## 5. Imiesłowowy równoważnik zdania
+Konstrukcja z imiesłowem przysłówkowym, np. *Wracając do domu, spotkałem kolegę*, pełni funkcję równoważnika zdania i oddziela się ją przecinkiem. Wykonawca czynności musi być ten sam: niepoprawne *Wracając do domu, zaczął padać deszcz* — deszcz nie wracał. Popraw: *Wracając do domu, zauważyłem, że zaczyna padać deszcz.* Szczegóły tworzenia imiesłowów: G06.
 
-DO UZUPEŁNIENIA: 3–5 zdań „Potrafię…” (rozpoznać, odmienić, zastosować w zdaniu, poprawnie zapisać).
+## 6. Procedura rozpoznawania
+1. Znajdź wszystkie osobowe formy czasownika i formy tworzące orzeczenie imienne.
+2. Ustal, ile jest orzeczeń — nie licz automatycznie bezokoliczników i imiesłowów jako kolejnych orzeczeń.
+3. Jedno orzeczenie oznacza zwykle zdanie pojedyncze; dwa lub więcej — złożone, z uwzględnieniem konstrukcji szczególnych.
+4. Jeśli brak orzeczenia, sprawdź, czy wypowiedź jest równoważnikiem.
+5. Określ, czy zdanie jest rozwinięte, czy nierozwinięte.
 
-## 1 | Definicja i pytania [[basic:E8]]
+## 7. Klinika błędów
+| Błąd | Poprawnie | Dlaczego? |
+|---|---|---|
+| *Chcę czytać* ma dwa orzeczenia | jedno: *chcę* | *czytać* jest bezokolicznikiem. |
+| *Był zmęczony* ma tylko czasownik *był* jako orzeczenie | *był zmęczony* — orzeczenie imienne | Orzecznik należy do orzeczenia. |
+| *Uwaga!* to zdanie z orzeczeniem | równoważnik | Nie ma orzeczenia. |
+| Każde długie zdanie jest złożone | liczymy orzeczenia | Długość nie przesądza o typie. |
+| *Idąc do szkoły, spóźniłem się* bez przecinka | przecinek jest wymagany | Imiesłowowy równoważnik oddzielamy przecinkiem. |
 
-DO UZUPEŁNIENIA: krótka definicja, pytania, na które odpowiada; tabela „cecha — przykład”.
+## 8. Ćwiczenia A
+Określ: zdanie pojedyncze/ złożone/ równoważnik; rozwinięte/nierozwinięte.
+1. *Ptak śpiewa.*
+2. *Mały ptak śpiewa na dachu.*
+3. *Po długiej podróży.*
+4. *Chcę napisać list.*
+5. *Kiedy wrócił, odrobił lekcje.*
 
-## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
+**Klucz:** 1. pojedyncze nierozwinięte; 2. pojedyncze rozwinięte; 3. równoważnik; 4. pojedyncze (jedno orzeczenie osobowe *chcę*); 5. złożone podrzędnie.
 
-DO UZUPEŁNIENIA: 3–5 kroków rozpoznawania + przykłady trudnych przypadków.
+## 9. Ćwiczenia B
+Przekształć: *Po zamknięciu drzwi wszyscy zamilkli.* **Przykład:** *Kiedy drzwi zostały zamknięte, wszyscy zamilkli.* Wskaż imiesłowowy równoważnik: *Przeczytawszy instrukcję, uczennica rozpoczęła doświadczenie.* **Klucz:** *Przeczytawszy instrukcję*; wykonawcą obu czynności jest uczennica.
 
-## 3 | Formy, odmiana lub rodzaje [[basic:E8]]
+## 10. Zadania egzaminacyjne
+**1 (0–1 pkt).** W którym wypowiedzeniu nie ma orzeczenia? A *Jutro wyjeżdżamy.* B *Cisza na korytarzu.* C *Ona była gotowa.* **Klucz: B.**
 
-DO UZUPEŁNIENIA: tabela wzorcowa (odmiana lub podział) z przykładami.
+**2 (0–2 pkt).** Uzasadnij, dlaczego *Zamierzam przeczytać lekturę* jest zdaniem pojedynczym. **Klucz:** zawiera jedno orzeczenie osobowe *zamierzam*; *przeczytać* jest bezokolicznikiem.
 
-## 4 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
+## 11. Fiszki
+Zdanie — wypowiedzenie z orzeczeniem; równoważnik — wypowiedzenie bez orzeczenia; zdanie pojedyncze — jedno orzeczenie; rozwinięte — zawiera określenia; imiesłowowy równoważnik — konstrukcja z imiesłowem przysłówkowym i przecinkiem.
 
-DO UZUPEŁNIENIA: jaką częścią zdania bywa; 3 przykłady z analizą.
+## 12. Wizualizacja
+@opis Schemat: wypowiedzenie → sprawdź orzeczenie → brak orzeczenia: równoważnik; jedno orzeczenie: zdanie pojedyncze; co najmniej dwa: zdanie złożone. Bezokolicznik i imiesłów oznaczone jako formy nieosobowe.
 
-## 5 | Pisownia i interpunkcja [[basic:E8]]
+## 13. Zadanie przekrojowe
+„Znużony wędrowiec usiadł pod drzewem, aby odpocząć”. Wypowiedzenie ma dwa orzeczenia? **Klucz:** *usiadł* jest orzeczeniem osobowym; *aby odpocząć* tworzy zdanie podrzędne celu z bezokolicznikiem w orzeczeniu nieosobowym w konstrukcji zależnej — w szkolnej analizie klasyfikuje się je jako zdanie złożone podrzędnie, nie jako zwykłe pojedyncze.
 
-DO UZUPEŁNIENIA: zasady zapisu związane z tematem (zgodnie z zasadami od 2026), przykłady poprawne i błędne.
+## 14. Samokontrola
+Przed klasyfikacją policz orzeczenia, rozpoznaj formy nieosobowe i dopiero wtedy zdecyduj o typie wypowiedzenia.
 
-## 6 | Przykłady z lektur [[basic:E8]]
+## 14. Rozszerzenie — liczba orzeczeń i konstrukcje graniczne
 
-DO UZUPEŁNIENIA: 5–8 krótkich przykładów (własne parafrazy lub jedno zdanie cytatu) z lektur obowiązkowych, z rozpoznaniem.
+### 14.1. Osobowa forma czasownika nie zawsze jest jedynym elementem orzeczenia
+W zdaniu *Ona była bardzo zadowolona* orzeczenie imienne obejmuje łącznik *była* i orzecznik *zadowolona*. W zdaniu *Zadanie zostało rozwiązane* konstrukcja bierna może być analizowana jako orzeczenie złożone. Przy liczeniu zdań składowych nie dziel orzeczenia na części tylko dlatego, że składa się z dwóch wyrazów.
 
-## 7 | Klinika błędów
+### 14.2. Bezokolicznik w zdaniu
+W zdaniu *Chcę odpocząć* jest jedno orzeczenie osobowe *chcę*, a *odpocząć* jest bezokolicznikiem dopełniającym znaczenie czasownika. W konstrukcjach z wyrazami typu *aby, żeby* trzeba jednak rozpoznać budowę całego wypowiedzenia: *Przyszedłem, żeby pomóc* ma podrzędną relację celu, mimo że druga część zawiera bezokolicznik. Szkolne sposoby liczenia orzeczeń mogą w tym miejscu wymagać uwzględnienia konstrukcji bezokolicznikowych — kieruj się definicją używaną w danym podręczniku i nie stosuj hasła „każdy bezokolicznik nigdy nie tworzy części zdania złożonego” bez sprawdzenia konstrukcji.
 
-DO UZUPEŁNIENIA: tabela: Błąd | Poprawnie | Dlaczego? — min. 6 wierszy.
+### 14.3. Równoważniki w praktyce
+Równoważniki są naturalne w nagłówkach, planach, ogłoszeniach i dialogu: *Spotkanie o 16.00; Zakaz wstępu; Do zobaczenia jutro; Ciszej!* Nie trzeba ich zawsze przekształcać w pełne zdania. W ćwiczeniu przekształcania zachowaj sens i styl: *Zakaz fotografowania* → *Nie wolno fotografować*; *Po wejściu do sali zajmij miejsce* → *Kiedy wejdziesz do sali, zajmij miejsce*.
 
-## 8 | Ćwiczenia A — podstawa [[basic:E8]]
+### 14.4. Ćwiczenia rozszerzające
+**1.** Ustal, czy wypowiedzenie jest pojedyncze, złożone czy równoważnikowe: *Nie dotykać eksponatów*; *Nie dotykaj eksponatów*; *Gdy wszedł, wszyscy umilkli*; *Mógłby już przestać hałasować.*  
+**Klucz:** 1. równoważnik (bez osobowej formy); 2. zdanie pojedyncze rozkazujące; 3. złożone podrzędnie; 4. jedno orzeczenie osobowe *mógłby*, z bezokolicznikiem *przestać* i *hałasować* w konstrukcji zależnej.
 
-DO UZUPEŁNIENIA: 6–8 zadań z kluczem.
+**2.** Przekształć równoważnik *Po zakończeniu przedstawienia do wyjścia* w pełne zdanie.  
+**Przykład:** *Po zakończeniu przedstawienia wszyscy skierowali się do wyjścia.* Inne odpowiedzi są poprawne, jeśli uzupełniają brakującą informację.
 
-## 9 | Ćwiczenia B — trening i C — konkurs [[exam:KONKURS]]
+**3.** Wyjaśnij różnicę między *Było ciemno* a *Ciemno!*  
+**Klucz:** pierwsze jest zdaniem z orzeczeniem *było* (konstrukcja bezpodmiotowa); drugie jest równoważnikiem, jeśli występuje jako samodzielna reakcja bez orzeczenia.
 
-DO UZUPEŁNIENIA: 4–6 zadań trudniejszych z kluczem.
+## 15. Mini-test końcowy
+1. Zdefiniuj zdanie i równoważnik (2 pkt).
+2. Podaj przykład zdania pojedynczego rozwiniętego (1 pkt).
+3. Wyjaśnij, dlaczego *Chcę przeczytać książkę* nie musi być zdaniem złożonym (2 pkt).
+4. Przekształć *Po odrobieniu pracy domowej* w zdanie (1 pkt).
+5. Wskaż orzeczenie imienne w *Mój brat jest świetnym pływakiem* (2 pkt).
 
-## 10 | Zadania w stylu CKE
-
-DO UZUPEŁNIENIA: 3–4 zadania (zamknięte i otwarte) z kluczem, punktacją i uzasadnieniem.
-
-## 11 | Fiszki
-
-DO UZUPEŁNIENIA: 8–12 par „pytanie — odpowiedź”.
-
-## 12 | Wizualizacja
-
-DO UZUPEŁNIENIA: propozycja 1–2 grafik + obowiązkowa linia @opis pod każdą.
+**Klucz:** 1. Zdanie ma orzeczenie, równoważnik go nie ma; 2. dowolny przykład z określeniami; 3. jedno orzeczenie osobowe *chcę*, a *przeczytać* jest bezokolicznikiem; 4. np. *Po odrobieniu pracy domowej poszedłem na spacer*; 5. *jest świetnym pływakiem*.
