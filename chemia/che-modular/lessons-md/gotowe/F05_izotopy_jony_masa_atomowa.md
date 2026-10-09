@@ -155,7 +155,7 @@ Izotop, jon i atom innego pierwiastka odpowiadają na **różne pytania**. Nie w
 :::
 
 @model f05-izotopy-v01 | Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa | dodawaj i zabieraj p, n, e — model nazywa zmianę; niżej średnia ważona izotopów
-@opis Konstruktor atomu: jądro z protonami i neutronami oraz elektrony na powłokach. Gdy dodajesz lub zabierasz cząstki, model nazywa zmianę: inna liczba neutronów — izotop, inna liczba elektronów — jon, inna liczba protonów — inny pierwiastek. Niżej obliczenie masy atomowej jako średniej ważonej mas izotopów. Wniosek: o tym, jaki to pierwiastek, decyduje wyłącznie liczba protonów.
+@opis Konstruktor atomu (ten sam rysunek co w atlasie): w środku jądro z czerwonych protonów i szarych neutronów — neutron ponad najczęstszy izotop ma pomarańczową obwódkę; wokół jeden okrąg z pomarańczowymi elektronami i podpisem „e⁻ · liczba” (powłoki pojawiają się dopiero w F07); przyciski + i − przy protonach, neutronach i elektronach. Gdy dodajesz lub zabierasz cząstki, model nazywa zmianę: inna liczba neutronów — izotop, inna liczba elektronów — jon, inna liczba protonów — inny pierwiastek. Niżej obliczenie masy atomowej jako średniej ważonej mas izotopów. Wniosek: o tym, jaki to pierwiastek, decyduje wyłącznie liczba protonów.
 
 > W modelu zmień najpierw tylko neutrony, potem tylko elektrony, na końcu protony. Za każdym razem przeczytaj: co się zmieniło, a co zostało?
 
