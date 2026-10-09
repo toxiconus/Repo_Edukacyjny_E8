@@ -33,6 +33,11 @@ J07 Ka/Kb/Kw → J08 Hydroliza → J09 Bufory → J10 Ksp → J11 Identyfikacja 
 - **Amfoteryczność** Al/Zn (J05)
 - **Równowaga dynamiczna**, pary sprzężone (J06)
 
+**Pułapki przekrojowe (z kontroli W22):**
+- pH = 7 oznacza odczyn obojętny w modelu dla ok. 25 °C; w innej temperaturze obojętne pH ma inną wartość.
+- Zobojętnianie nie zawsze daje pH = 7 — zależy od mocy kwasu i zasady (dokładniej: hydroliza, J08).
+- Skrót `H⁺ + OH⁻ → H₂O` jest szkolnym zapisem; w wodzie dokładniej `H₃O⁺ + OH⁻ → 2H₂O`.
+
 ## Test przekrojowy bloku (przykład)
 
 1. Zapisz dysocjację Al₂(SO₄)₃ i wskaż, czy to mocny elektrolit.  
@@ -195,4 +200,4 @@ Cytaty:
 **Status:** UZUPEŁNIONE (mapa).
 
 ## SCALENIE — Claude, 2026-10-09
-- Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przy budowie lekcji: sprawdzić, czy uwagi W22 są uwzględnione w części głównej.
+- Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przegląd 2026-10-09 13:05: uwagi W22 są w części głównej (brakujące dopisane w J00, J01, J03); materiał źródłowy zostaje jako historia — można go usunąć na decyzję użytkownika.

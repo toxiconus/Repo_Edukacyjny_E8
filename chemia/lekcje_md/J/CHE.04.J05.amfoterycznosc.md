@@ -219,4 +219,4 @@ Al(OH)₃ zawiera grupy OH, ale jest trudno rozpuszczalny w wodzie i nie jest ty
 **Status:** UZUPEŁNIONE.
 
 ## SCALENIE — Claude, 2026-10-09
-- Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przy budowie lekcji: sprawdzić, czy uwagi W22 są uwzględnione w części głównej.
+- Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przegląd 2026-10-09 13:05: uwagi W22 są w części głównej (brakujące dopisane w J00, J01, J03); materiał źródłowy zostaje jako historia — można go usunąć na decyzję użytkownika.

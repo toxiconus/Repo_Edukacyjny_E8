@@ -69,7 +69,8 @@ Skrócone: H⁺(aq) + OH⁻(aq) → H₂O(l)
 (dokładniej: H₃O⁺ + OH⁻ → 2H₂O)
 
 **Gaz (węglan + kwas)**  
-CO₃²⁻ + 2H⁺ → CO₂(g)↑ + H₂O(l)
+CO₃²⁻ + 2H⁺ → CO₂(g)↑ + H₂O(l)  
+Uwaga: pęcherzyki to obserwacja — sam fakt wydzielania gazu nie mówi, jaki to gaz. CO₂ potwierdza próba z wodą wapienną (mętnienie).
 
 **Brak reakcji**  
 NaCl(aq) + KNO₃(aq) → brak osadu/gazu/słabego elektrolitu → brak reakcji netto.
@@ -268,4 +269,4 @@ Samo „zamienienie partnerów” w zapisie nie dowodzi reakcji netto.
 **Status:** UZUPEŁNIONE.
 
 ## SCALENIE — Claude, 2026-10-09
-- Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przy budowie lekcji: sprawdzić, czy uwagi W22 są uwzględnione w części głównej.
+- Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przegląd 2026-10-09 13:05: uwagi W22 są w części głównej (brakujące dopisane w J00, J01, J03); materiał źródłowy zostaje jako historia — można go usunąć na decyzję użytkownika.

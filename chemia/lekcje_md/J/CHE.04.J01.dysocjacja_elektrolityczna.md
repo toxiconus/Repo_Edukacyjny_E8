@@ -134,6 +134,11 @@ I etap (praktycznie całkowity): H₂SO₄ + H₂O → H₃O⁺ + HSO₄⁻
 II etap (równowagowy): HSO₄⁻ + H₂O ⇌ H₃O⁺ + SO₄²⁻  
 Zapis sumaryczny szkolny (uproszczenie): H₂SO₄ → 2H⁺ + SO₄²⁻
 
+**Przykład 5a — H₂S (słaby kwas, oba etapy równowagowe)**  
+I etap: H₂S ⇌ H⁺ + HS⁻ (jon wodorosiarczkowy)  
+II etap: HS⁻ ⇌ H⁺ + S²⁻ (w jeszcze mniejszym stopniu)  
+Uwaga: jon to HS⁻ (ładunek −1), nie „HS²⁻”; w obu etapach strzałka ⇌, bo H₂S to słaby elektrolit.
+
 **Przykład 6 — nieelektrolit**  
 C₁₂H₂₂O₁₁(s) → C₁₂H₂₂O₁₁(aq)  (brak jonów)
 
@@ -520,4 +525,4 @@ Kryształ rozpada się na ruchliwe jony.
 **Status:** UZUPEŁNIONE → gotowe do dalszej warstwy HTML / recenzji.
 
 ## SCALENIE — Claude, 2026-10-09
-- Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przy budowie lekcji: sprawdzić, czy uwagi W22 są uwzględnione w części głównej.
+- Treść główna: lekcja W23 (Grok). Dotychczasowy materiał W1–W22 dołączony powyżej bez skracania (Grok go nie zachował, wbrew deklaracji w RAPORT). Przegląd 2026-10-09 13:05: uwagi W22 są w części głównej (brakujące dopisane w J00, J01, J03); materiał źródłowy zostaje jako historia — można go usunąć na decyzję użytkownika.
