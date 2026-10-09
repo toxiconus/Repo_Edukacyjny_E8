@@ -472,6 +472,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRIORYTETY.md` 9 KB
 - `PRZEKAZANIE.md` 4 KB
 
+## olimpiada/do_uzupelnienia  (5 pl., 5 KB)
+- `BIO_B2_homeostaza.md` 1 KB
+- `CHE_J03_rownania_jonowe_i_straceanie.md` 1 KB
+- `CHE_R07_stechiometria_z_nadmiarem.md` 1 KB
+- `CHE_X04_szereg_aktywnosci_metali.md` 1 KB
+- `README.md` 1 KB
+
 ## olimpiada/narzedzia  (1 pl., 7 KB)
 - `mapa_chemia.py` 7 KB
 
