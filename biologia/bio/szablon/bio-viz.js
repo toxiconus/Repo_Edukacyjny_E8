@@ -348,3 +348,137 @@ if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-r
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
   var mA=BIO.mountAll;BIO.mountAll=function(root){mA(root);(root||document).querySelectorAll('.bio-fig:not(.rv)').forEach(function(f){f.classList.add('rv');io.observe(f)})}}
 })();
+
+/* ---------- Wzorcownia → biblioteka (2026-10-09): kod genetyczny, Punnett, transport przez błonę, sieć troficzna ----------
+   Prototypy z wizualizacje-projekty/wzorcownia.html. Rysują się w swoim elemencie (bez globalnych id). */
+(function(){
+var BIO=window.BIO;if(!BIO||!BIO.define||BIO.WZOR)return;BIO.WZOR=1;
+var NS='http://www.w3.org/2000/svg',UID=0;
+var css=document.createElement('style');css.textContent=
+'.bw-seg{display:flex;flex-wrap:wrap;gap:4px}.bw-out{display:grid;gap:4px}.bw-tbl{overflow-x:auto;margin-top:8px}.bw-tbl table{border-collapse:collapse;width:100%;font-size:13px}.bw-tbl th,.bw-tbl td{padding:4px 6px;border-bottom:1px solid var(--border,#dde4e8);text-align:left;vertical-align:top}'+
+'.bw-mono{font-family:ui-monospace,Consolas,monospace}.bw-svg{width:100%;max-width:520px;display:block;background:var(--surface,#fff);border:1px solid var(--border,#dde4e8);border-radius:8px}'+
+'.bw-codons{display:flex;flex-wrap:wrap;gap:6px}.bw-cod{border:1px solid var(--border,#dde4e8);border-radius:7px;padding:4px;display:grid;gap:2px;font:14px ui-monospace,Consolas,monospace;text-align:center;min-width:76px}'+
+'.bw-cod .r{display:flex;justify-content:center;gap:1px}.bw-cod .r span{width:22px;display:inline-block}.bw-cod .r.k span{cursor:pointer;border-radius:4px;background:var(--surface-soft,#eef3f1)}.bw-cod .r.k span.mut{background:#b8860b;color:#fff}'+
+'.bw-cod .r.m{color:var(--accent,#3f7a28);font-weight:700}.bw-cod .aa{font-weight:700;border-top:1px solid var(--border,#dde4e8);padding-top:2px}.bw-cod.chg{border-color:#b8860b}.bw-cod.stop .aa{color:#b23b2a}.bw-cod.off{opacity:.45}'+
+'.bw-key{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;font-size:12.5px;margin-bottom:6px}.bw-key b{font-family:ui-monospace,monospace}'+
+'.bw-pun table{max-width:420px}.bw-pun td,.bw-pun th{text-align:center!important;border:1px solid var(--border,#dde4e8)}.bw-pun td{font:600 14px ui-monospace,monospace;padding:8px 4px}.bw-pun td small{display:block;font:400 11.5px Inter,system-ui;opacity:.8}'+
+'.bw-bars{display:grid;gap:4px}.bw-bar{display:grid;grid-template-columns:minmax(0,9.5em) 1fr 3.2em;gap:8px;align-items:center;font-size:13px}.bw-bar .t{height:12px;background:var(--surface-soft,#eef3f1);border-radius:3px;overflow:hidden}.bw-bar .t i{display:block;height:100%;background:var(--accent,#3f7a28)}.bw-bar .v{text-align:right;font-variant-numeric:tabular-nums}'+
+'.bw-svg text{font-family:system-ui,sans-serif}.bw-sel{font:600 12.5px Inter,system-ui;border:1px solid var(--border-strong,#c7d0d6);border-radius:7px;padding:5px 8px;background:var(--surface,#fff);color:inherit}';
+document.head.appendChild(css);
+function S(t,a,x){var e=document.createElementNS(NS,t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e}
+function H(t,a,h){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else e.setAttribute(k,a[k])}if(h!=null)e.innerHTML=h;return e}
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=H('button',{type:'button','class':'bv-btn'+(it[0]===cur?' on':''),'aria-pressed':String(it[0]===cur)});b.textContent=it[1];b.onclick=function(){cb(it[0])};box.appendChild(b)})}
+function info(){return H('div',{'class':'bv-info bw-out','aria-live':'polite'})}
+function key(el,fn){el.setAttribute('role','button');el.setAttribute('tabindex','0');el.onclick=fn;el.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fn()}}}
+
+/* ---- kod genetyczny: DNA → mRNA → białko, mutacje punktowe ---- */
+var TT='FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG',IX={T:0,C:1,A:2,G:3};
+var AA3={F:'Phe',L:'Leu',S:'Ser',Y:'Tyr',C:'Cys',W:'Trp',P:'Pro',H:'His',Q:'Gln',R:'Arg',I:'Ile',M:'Met',T:'Thr',N:'Asn',K:'Lys',V:'Val',A:'Ala',D:'Asp',E:'Glu',G:'Gly','*':'STOP'};
+var PLN={Phe:'fenyloalanina',Leu:'leucyna',Ser:'seryna',Tyr:'tyrozyna',Cys:'cysteina',Trp:'tryptofan',Pro:'prolina',His:'histydyna',Gln:'glutamina',Arg:'arginina',Ile:'izoleucyna',Met:'metionina (START)',Thr:'treonina',Asn:'asparagina',Lys:'lizyna',Val:'walina',Ala:'alanina',Asp:'kwas asparaginowy',Glu:'kwas glutaminowy',Gly:'glicyna',STOP:'koniec translacji'};
+var COMP={A:'T',T:'A',G:'C',C:'G'},NEXT={A:'C',C:'G',G:'T',T:'A'};
+function trc(c){return TT[16*IX[c[0]]+4*IX[c[1]]+IX[c[2]]]}
+function prot(s){var o=[],on=true;for(var i=0;i+2<s.length;i+=3){var a=AA3[trc(s.slice(i,i+3))];o.push({a:a,on:on});if(a==='STOP')on=false}return o}
+BIO.define('kod-genetyczny',{opis:'DNA (nić kodująca i matrycowa) → mRNA → aminokwasy; klik w zasadę = mutacja punktowa (cicha, zmiany sensu, nonsensowna, utrata START); opcja seq="ATG…" (wielokrotność 3)',
+mount:function(el,o){var ORIG=String(o.seq||'ATGTTTGGCTGGAAATGCTAA').toUpperCase().replace(/[^ACGT]/g,'');ORIG=ORIG.slice(0,ORIG.length-ORIG.length%3)||'ATGTAA';var seq=ORIG.split('');
+  var kb=H('div',{'class':'bw-key'},'<b>1</b><span>nić kodująca DNA 5′→3′ (kliknij zasadę)</span><b>2</b><span>nić matrycowa DNA 3′→5′</span><b>3</b><span>mRNA 5′→3′ (U zamiast T)</span><b>4</b><span>aminokwas</span>'),
+   box=H('div',{'class':'bw-codons'}),tools=H('div',{'class':'bv-tools'}),out=info();[kb,box,tools,out].forEach(function(e){el.appendChild(e)});
+  var rb=H('button',{type:'button','class':'bv-btn'},'Przywróć sekwencję');rb.onclick=function(){seq=ORIG.split('');draw()};tools.appendChild(rb);
+  function chain(P){var r=[];for(var k=0;k<P.length;k++){if(P[k].a==='STOP')break;r.push(P[k].a)}return r.join('–')}
+  function draw(){clr(box);var P0=prot(ORIG),P1=prot(seq.join('')),lost=seq.slice(0,3).join('')!=='ATG';
+   for(var i=0;i<seq.length;i+=3){var ci=i/3,c=H('div'),r1=H('div',{'class':'r k'}),r2=H('div',{'class':'r'}),r3=H('div',{'class':'r m'});
+    for(var j=0;j<3;j++)(function(p){var s=H('span',{text:seq[p],'aria-label':'zasada '+(p+1)+': '+seq[p]});if(seq[p]!==ORIG[p])s.className='mut';key(s,function(){seq[p]=NEXT[seq[p]];draw()});r1.appendChild(s);r2.appendChild(H('span',{text:COMP[seq[p]]}));r3.appendChild(H('span',{text:seq[p]==='T'?'U':seq[p]}))})(i+j);
+    var a=P1[ci],cl='bw-cod';if(a.a!==P0[ci].a)cl+=' chg';if(a.a==='STOP')cl+=' stop';if(!a.on||lost)cl+=' off';c.className=cl;[r1,r2,r3].forEach(function(r){c.appendChild(r)});c.appendChild(H('div',{'class':'aa',text:a.a,title:PLN[a.a]}));box.appendChild(c)}
+   var mu=[];seq.forEach(function(b,p){if(b!==ORIG[p])mu.push(p)});var h;
+   if(!mu.length)h='<b>Sekwencja wyjściowa</b><span>Białko: '+chain(P0)+' (potem STOP). Kliknij literę w górnym wierszu.</span>';
+   else if(lost)h='<b>Utracony kodon START</b><span>Pierwszy kodon nie jest już AUG: w tym modelu translacja nie rusza i białko nie powstaje.</span>';
+   else{var ks=[],seen={};mu.forEach(function(p){var ci=Math.floor(p/3);if(seen[ci])return;seen[ci]=1;var a0=P0[ci].a,a1=P1[ci].a;
+     ks.push(a0===a1?'cicha (kodon '+(ci+1)+': nadal '+a0+')':a1==='STOP'?'nonsensowna (kodon '+(ci+1)+': '+a0+' → STOP, białko skrócone)':a0==='STOP'?'utrata kodonu STOP (białko wydłużone)':'zmiany sensu (kodon '+(ci+1)+': '+a0+' → '+a1+')')});
+    h='<b>Mutacja '+ks.join('; ')+'</b><span>Było: '+chain(P0)+'</span><span>Jest: '+(chain(P1)||'brak aminokwasów')+'</span>'}
+   out.innerHTML=h}
+  draw()}});
+
+/* ---- krzyżówka genetyczna (szachownica Punnetta) ---- */
+var MODES={
+ A:{n:'jedna cecha (A/a)',rank:{A:0,a:1},m:[['A','A'],['A','a'],['a','a']],f:[['A','A'],['A','a'],['a','a']],dm:1,df:1,ph:function(g){return g.indexOf('A')>=0?'kwiat purpurowy':'kwiat biały'},
+  note:'Przykład Mendla: groch, allel A — barwa purpurowa (dominujący), a — biała (recesywny). Aa × Aa daje 3 : 1 w fenotypach i 1 : 2 : 1 w genotypach.'},
+ K:{n:'grupy krwi AB0',rank:{'Iᴬ':0,'Iᴮ':1,'i':2},m:[['Iᴬ','Iᴬ'],['Iᴬ','i'],['Iᴮ','Iᴮ'],['Iᴮ','i'],['Iᴬ','Iᴮ'],['i','i']],f:[['Iᴬ','Iᴬ'],['Iᴬ','i'],['Iᴮ','Iᴮ'],['Iᴮ','i'],['Iᴬ','Iᴮ'],['i','i']],dm:1,df:3,
+  ph:function(g){var a=g.indexOf('Iᴬ')>=0,b=g.indexOf('Iᴮ')>=0;return a&&b?'grupa AB':a?'grupa A':b?'grupa B':'grupa 0'},
+  note:'Allele Iᴬ i Iᴮ są kodominujące (oba się ujawniają: grupa AB), allel i jest recesywny. Rodzice z grupami A i B mogą mieć dziecko z każdą z czterech grup.'},
+ X:{n:'sprzężona z płcią (hemofilia)',rank:{'Xᴴ':0,'Xʰ':1,'Y':2},m:[['Xᴴ','Xᴴ'],['Xᴴ','Xʰ'],['Xʰ','Xʰ']],f:[['Xᴴ','Y'],['Xʰ','Y']],dm:1,df:0,
+  ph:function(g){var y=g.indexOf('Y')>=0,h=g.filter(function(x){return x==='Xʰ'}).length;if(y)return h?'syn chory':'syn zdrowy';return h===2?'córka chora':h===1?'córka nosicielka':'córka zdrowa'},
+  note:'Gen leży na chromosomie X. Syn dostaje X od matki, a Y od ojca, więc chorobę dziedziczy po matce. Córka nosicielka jest zdrowa, ale może przekazać allel h.'}};
+BIO.define('punnett',{opis:'Krzyżówka genetyczna: jedna cecha A/a, grupy krwi AB0, cecha sprzężona z płcią (hemofilia); fenotypy i genotypy w %; opcja tryb="A|K|X"',
+mount:function(el,o){var mode=MODES[o.tryb]?o.tryb:'A',sg=H('div',{'class':'bw-seg bv-tools'}),tl=H('div',{'class':'bv-tools'}),sm=H('select',{'class':'bw-sel','aria-label':'Genotyp matki'}),sf=H('select',{'class':'bw-sel','aria-label':'Genotyp ojca'}),
+   tw=H('div',{'class':'bw-tbl bw-pun'}),t=H('table'),out=info(),nt=H('p',{style:'font-size:12.5px;margin:6px 0 0'});
+  tl.appendChild(H('span',{'class':'bv-score'},'matka'));tl.appendChild(sm);tl.appendChild(H('span',{'class':'bv-score'},'ojciec'));tl.appendChild(sf);tw.appendChild(t);[sg,tl,tw,out,nt].forEach(function(e){el.appendChild(e)});
+  function gs(g,r){return g.slice().sort(function(a,b){return r[a]-r[b]}).join('')}
+  function fill(s,list,def,r){clr(s);list.forEach(function(g,i){var op=H('option',{value:i});op.textContent=gs(g,r);s.appendChild(op)});s.value=def}
+  function setMode(m){mode=m;var M=MODES[m];fill(sm,M.m,M.dm,M.rank);fill(sf,M.f,M.df,M.rank);draw()}
+  function bars(ob){return '<div class="bw-bars">'+Object.keys(ob).map(function(k){var v=ob[k]/4*100;return '<div class="bw-bar"><span>'+k+'</span><span class="t"><i style="width:'+v+'%"></i></span><span class="v">'+v+'%</span></div>'}).join('')+'</div>'}
+  function draw(){var M=MODES[mode],gm=M.m[+sm.value],gf=M.f[+sf.value];clr(t);var hr=H('tr');hr.appendChild(H('th',{'class':'bw-mono'},'♀ \\ ♂'));gf.forEach(function(a){hr.appendChild(H('th',{'class':'bw-mono',text:a}))});t.appendChild(hr);var G={},F={};
+   gm.forEach(function(am){var tr=H('tr');tr.appendChild(H('th',{'class':'bw-mono',text:am}));gf.forEach(function(af){var g=[am,af],s=gs(g,M.rank),p=M.ph(g);G[s]=(G[s]||0)+1;F[p]=(F[p]||0)+1;tr.appendChild(H('td',null,s+'<small>'+p+'</small>'))});t.appendChild(tr)});
+   out.innerHTML='<b>Fenotypy potomstwa</b>'+bars(F)+'<b>Genotypy</b>'+bars(G)+'<span style="font-size:12.5px">To prawdopodobieństwo dla każdego dziecka, a nie dokładna liczba dzieci.</span>';nt.textContent=M.note;
+   seg(sg,Object.keys(MODES).map(function(k){return [k,MODES[k].n]}),mode,setMode)}
+  sm.onchange=draw;sf.onchange=draw;setMode(mode)}});
+
+/* ---- transport przez błonę ---- */
+var TZ=[
+ {k:'dp',n:'Dyfuzja prosta',co:'małe, niepolarne: O₂, CO₂',bialko:'nie',atp:'nie',kier:'zgodnie z gradientem',opis:'Cząsteczki przechodzą wprost przez warstwę lipidów, z miejsca o wyższym stężeniu do niższego.'},
+ {k:'du',n:'Dyfuzja ułatwiona',co:'glukoza, jony',bialko:'tak (kanał, nośnik)',atp:'nie',kier:'zgodnie z gradientem',opis:'Białko kanałowe lub nośnikowe przepuszcza cząsteczki, które nie przejdą przez lipidy. Energia nie jest potrzebna.'},
+ {k:'ta',n:'Transport aktywny',co:'jony, np. Na⁺, K⁺',bialko:'tak (pompa)',atp:'tak',kier:'wbrew gradientowi',opis:'Pompa białkowa przenosi cząsteczki tam, gdzie jest ich już więcej. Zużywa energię z rozkładu ATP.'},
+ {k:'os',n:'Osmoza',co:'woda',bialko:'często (akwaporyny)',atp:'nie',kier:'do roztworu o wyższym stężeniu substancji rozpuszczonej',opis:'Woda przechodzi przez błonę półprzepuszczalną w stronę, gdzie jest więcej substancji rozpuszczonej (mniej „wolnej” wody).'}];
+function rnd(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}}
+function dots(g,x0,y0,w,h,n,sh,col,seed){var r=rnd(seed);for(var i=0;i<n;i++){var x=x0+6+r()*(w-12),y=y0+6+r()*(h-12);
+ if(sh==='hex'){var p='';for(var k=0;k<6;k++){var a=k*Math.PI/3;p+=(k?'L':'M')+(x+5*Math.cos(a)).toFixed(1)+','+(y+5*Math.sin(a)).toFixed(1)}g.appendChild(S('path',{d:p+'z',fill:col,stroke:'#1a2528','stroke-width':'.6'}))}
+ else if(sh==='big')g.appendChild(S('circle',{cx:x,cy:y,r:5.5,fill:col,stroke:'#1a2528','stroke-width':'.6'}));else g.appendChild(S('circle',{cx:x,cy:y,r:3,fill:col}))}}
+BIO.define('transport-blona',{opis:'Przekrój błony: dyfuzja prosta, ułatwiona, transport aktywny (ATP), osmoza; kropki = stężenie; klik = opis + tabela porównawcza; opcja start="dp|du|ta|os"',
+mount:function(el,o){var id='bw'+(++UID),cur=TZ.some(function(z){return z.k===o.start})?o.start:'dp',svg=S('svg',{viewBox:'0 0 360 270',role:'img','aria-label':'Przekrój błony komórkowej z czterema sposobami transportu','class':'bw-svg'}),out=info(),tw=H('div',{'class':'bw-tbl'}),t=H('table');tw.appendChild(t);[svg,out,tw].forEach(function(e){el.appendChild(e)});
+  function draw(){clr(svg);var d=S('defs'),mk=S('marker',{id:id+'a',viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#1a2528'}));d.appendChild(mk);svg.appendChild(d);
+   svg.appendChild(S('text',{x:6,y:14,'font-size':'10',fill:'#5a6a6d'},'zewnątrz komórki'));svg.appendChild(S('text',{x:6,y:264,'font-size':'10',fill:'#5a6a6d'},'wnętrze komórki'));
+   TZ.forEach(function(z,i){var x0=i*90,g=S('g',{'aria-label':z.n,style:'cursor:pointer'}),cx=x0+45,AR=function(y1,y2){g.appendChild(S('line',{x1:cx,y1:y1,x2:cx,y2:y2,stroke:'#1a2528','stroke-width':'1.8','marker-end':'url(#'+id+'a)'}))};
+    g.appendChild(S('rect',{x:x0+1,y:20,width:88,height:232,rx:6,fill:z.k===cur?'#e7f1e1':'#ffffff',stroke:z.k===cur?'#3f7a28':'#e8efed'}));
+    for(var x=x0+5;x<x0+88;x+=9)[118,152].forEach(function(y,j){g.appendChild(S('line',{x1:x,y1:y+(j?-5:5),x2:x,y2:y+(j?-16:16),stroke:'#d6b04a','stroke-width':'1.4'}));g.appendChild(S('circle',{cx:x,cy:y,r:4,fill:'#e4a83a'}))});
+    if(z.k==='dp'){dots(g,x0,24,88,88,14,'o','#2a62b5',11);dots(g,x0,158,88,88,3,'o','#2a62b5',12);AR(96,178)}
+    if(z.k==='du'){g.appendChild(S('rect',{x:cx-14,y:104,width:10,height:62,rx:4,fill:'#7aa66a'}));g.appendChild(S('rect',{x:cx+4,y:104,width:10,height:62,rx:4,fill:'#7aa66a'}));dots(g,x0,24,88,80,8,'hex','#f2c14e',21);dots(g,x0,166,88,80,2,'hex','#f2c14e',22);AR(90,182)}
+    if(z.k==='ta'){g.appendChild(S('rect',{x:cx-16,y:102,width:32,height:66,rx:10,fill:'#5b8bc9'}));g.appendChild(S('text',{x:cx,y:140,'text-anchor':'middle','font-size':'9',fill:'#fff','font-weight':'700'},'pompa'));dots(g,x0,24,88,80,3,'big','#c03d2c',31);dots(g,x0,170,88,76,10,'big','#c03d2c',32);AR(92,184);g.appendChild(S('text',{x:cx+18,y:200,'font-size':'10','font-weight':'700',fill:'#b07610'},'ATP'));g.appendChild(S('text',{x:cx+18,y:212,'font-size':'9',fill:'#b07610'},'→ ADP'))}
+    if(z.k==='os'){g.appendChild(S('rect',{x:cx-5,y:104,width:10,height:62,rx:4,fill:'#8fc1d6'}));dots(g,x0,24,88,80,10,'o','#4aa3c9',41);dots(g,x0,24,88,80,2,'big','#a07cc5',42);dots(g,x0,170,88,76,6,'o','#4aa3c9',43);dots(g,x0,170,88,76,7,'big','#a07cc5',44);AR(92,184)}
+    var w=z.n.split(' ');g.appendChild(S('text',{x:cx,y:36,'text-anchor':'middle','font-size':'9.5','font-weight':'700',fill:'#1a2528'},w[0]));g.appendChild(S('text',{x:cx,y:47,'text-anchor':'middle','font-size':'9.5','font-weight':'700',fill:'#1a2528'},w[1]||''));
+    key(g,function(){cur=z.k;draw()});svg.appendChild(g)});
+   var z=TZ.filter(function(q){return q.k===cur})[0];out.innerHTML='<b>'+z.n+'</b><span>'+z.opis+'</span><span style="font-size:12.5px">Kropki: więcej kropek po jednej stronie = wyższe stężenie.</span>'}
+  var hr=H('tr');['Sposób','Co przechodzi','Białko','ATP','Kierunek'].forEach(function(x){hr.appendChild(H('th',{text:x}))});t.appendChild(hr);
+  TZ.forEach(function(z){var tr=H('tr');[z.n,z.co,z.bialko,z.atp,z.kier].forEach(function(x){tr.appendChild(H('td',{text:x}))});t.appendChild(tr)});draw()}});
+
+/* ---- sieć troficzna lasu: poziomy, łańcuchy, usuwanie gatunku ---- */
+var SN={trawa:[60,300,'trawa'],dab:[270,300,'dąb'],zajac:[34,215,'zając'],mysz:[118,215,'mysz'],sarna:[204,215,'sarna'],gasienica:[312,215,'gąsienica'],lis:[80,128,'lis'],wilk:[190,128,'wilk'],sikora:[300,128,'sikora'],puszczyk:[220,48,'puszczyk']};
+var SE=[['trawa','zajac'],['trawa','mysz'],['trawa','sarna'],['dab','mysz'],['dab','sarna'],['dab','gasienica'],['gasienica','sikora'],['mysz','lis'],['zajac','lis'],['sarna','wilk'],['mysz','puszczyk'],['sikora','puszczyk']];
+var LV=['producent','konsument I rzędu','konsument II rzędu','konsument III rzędu'];
+BIO.define('siec-troficzna',{opis:'Sieć troficzna lasu (10 gatunków + destruenci): kliknij gatunek — co je, kto go je, poziomy i łańcuchy; tryb „usuń gatunek” pokazuje, kto zostaje bez pokarmu',
+mount:function(el){var id='bw'+(++UID),mode='info',sel=null,removed={},sg=H('div',{'class':'bw-seg bv-tools'}),svg=S('svg',{viewBox:'0 0 360 350',role:'img','aria-label':'Sieć troficzna lasu','class':'bw-svg'}),out=info();[sg,svg,out].forEach(function(e){el.appendChild(e)});
+  function eats(n){return SE.filter(function(e){return e[1]===n&&!removed[e[0]]}).map(function(e){return e[0]})}
+  function eaten(n){return SE.filter(function(e){return e[0]===n&&!removed[e[1]]}).map(function(e){return e[1]})}
+  function isProd(n){return !SE.some(function(e){return e[1]===n})}
+  function chains(){var r=[];function go(n,p){var nx=eaten(n);if(!nx.length){r.push(p);return}nx.forEach(function(m){go(m,p.concat(m))})}Object.keys(SN).filter(function(n){return isProd(n)&&!removed[n]}).forEach(function(p){go(p,[p])});return r}
+  function starving(){var st={},ch=true;while(ch){ch=false;Object.keys(SN).forEach(function(n){if(removed[n]||st[n]||isProd(n))return;var f=SE.filter(function(e){return e[1]===n}).map(function(e){return e[0]}).filter(function(x){return !removed[x]&&!st[x]});if(!f.length){st[n]=1;ch=true}})}return st}
+  var ALL=chains().length;
+  function click(n){if(mode==='usun')removed[n]=!removed[n];else sel=sel===n?null:n;draw()}
+  function draw(){clr(svg);var d=S('defs');['#9aa8a6','#3f7a28','#c0602c'].forEach(function(c,i){var mk=S('marker',{id:id+'a'+i,viewBox:'0 0 10 10',refX:'9',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:c}));d.appendChild(mk)});svg.appendChild(d);
+   [['producenci',300],['roślinożercy',215],['drapieżniki',128],['drapieżnik szczytowy',48]].forEach(function(r){svg.appendChild(S('text',{x:356,y:r[1]-26,'text-anchor':'end','font-size':'9',fill:'#7f8d8b'},r[0]))});
+   svg.appendChild(S('rect',{x:6,y:326,width:348,height:20,rx:5,fill:'#efe9de'}));svg.appendChild(S('text',{x:180,y:340,'text-anchor':'middle','font-size':'10',fill:'#6b5a3c'},'destruenci: grzyby, bakterie — rozkładają szczątki wszystkich'));
+   var st=starving();
+   SE.forEach(function(e){if(removed[e[0]]||removed[e[1]])return;var a=SN[e[0]],b=SN[e[1]],dx=b[0]-a[0],dy=b[1]-a[1],l=Math.hypot(dx,dy),k=0,c='#9aa8a6',w=1.3;
+    if(sel&&mode==='info'){if(e[1]===sel){k=1;c='#3f7a28';w=2.6}else if(e[0]===sel){k=2;c='#c0602c';w=2.6}}
+    svg.appendChild(S('line',{x1:a[0]+dx/l*22,y1:a[1]+dy/l*22,x2:b[0]-dx/l*23,y2:b[1]-dy/l*23,stroke:c,'stroke-width':w,'marker-end':'url(#'+id+'a'+k+')'}))});
+   Object.keys(SN).forEach(function(n){var p=SN[n],g=S('g',{'aria-label':p[2],style:'cursor:pointer'}),fl=isProd(n)?'#dcefd2':'#ffffff',sk='#1a2528',da='';
+    if(removed[n]){fl='#f2f2f2';sk='#bbb';da='4 3'}else if(st[n]){fl='#f6dfda';sk='#b23b2a';da='4 3'}else if(n===sel)fl='#3f7a28';
+    g.appendChild(S('circle',{cx:p[0],cy:p[1],r:21,fill:fl,stroke:sk,'stroke-width':n===sel?'2.4':'1.3','stroke-dasharray':da}));
+    g.appendChild(S('text',{x:p[0],y:p[1]+4,'text-anchor':'middle','font-size':p[2].length>7?'8.5':'10','font-weight':'700',fill:n===sel&&!removed[n]?'#fff':removed[n]?'#aaa':'#1a2528'},p[2]));key(g,function(){click(n)});svg.appendChild(g)});
+   var h;
+   if(mode==='usun'){var rm=Object.keys(removed).filter(function(n){return removed[n]}).map(function(n){return SN[n][2]}),sv=Object.keys(st).map(function(n){return SN[n][2]});
+    h=rm.length?'<b>Usunięto: '+rm.join(', ')+'</b><span>'+(sv.length?'Bez pokarmu zostają: '+sv.join(', ')+' (czerwone, przerywane).':'Każdy gatunek ma jeszcze inny pokarm — sieć jest odporniejsza niż pojedynczy łańcuch.')+'</span><span>Łańcuchów w sieci: '+chains().length+' (było '+ALL+').</span>':'<b>Tryb usuwania</b><span>Kliknij gatunek, aby go usunąć z sieci.</span>'}
+   else if(sel){var ch=chains().filter(function(c){return c.indexOf(sel)>=0}),lv={};ch.forEach(function(c){lv[c.indexOf(sel)]=1});var lvs=Object.keys(lv).map(Number).sort(),a=eats(sel).map(function(n){return SN[n][2]}),b=eaten(sel).map(function(n){return SN[n][2]});
+    h='<b>'+SN[sel][2]+': '+lvs.map(function(i){return LV[i]}).join(' i ')+'</b><span>Je: '+(a.length?a.join(', '):'— (wytwarza materię w fotosyntezie)')+' · zjadany przez: '+(b.length?b.join(', '):'nikogo w tej sieci')+'</span><span>Łańcuchy przez ten gatunek ('+ch.length+'): '+ch.map(function(c){return c.map(function(n){return SN[n][2]}).join(' → ')}).join('; ')+'</span>'}
+   else h='<b>Kliknij gatunek</b><span>Strzałka biegnie od zjadanego do zjadającego (kierunek przepływu materii i energii). Zielone: co je; pomarańczowe: kto go zjada. W sieci jest '+ALL+' łańcuchów pokarmowych.</span>';
+   out.innerHTML=h;seg(sg,[['info','co je i kto go je'],['usun','usuń gatunek'],['reset','przywróć sieć']],mode,function(m){if(m==='reset'){removed={};sel=null}else{mode=m;sel=null}draw()})}
+  draw()}});
+})();
