@@ -63,7 +63,13 @@
   "che-legacy-engine-bridge-v003",
   "che-hydroxides-v001",
   "che-oxides-v001",
-  "che-zoom-engine-v001"
+  "che-zoom-engine-v001",
+  "che-ionic-v001",
+  "che-lesson-context-v001",
+  "che-v038-views",
+  "che-fiz-elektro-v001",
+  "che-stoich-v001",
+  "che-mol3d-oxides-v001"
  ],
  "drop_sections": [
   "anon001/rdzen/s063.js",
@@ -287,7 +293,17 @@
   "anon001/organiczna/s051.js",
   "anon001/organiczna/s056.js",
   "anon001/organiczna/s068.js",
-  "anon001/organiczna/s254.js"
+  "anon001/organiczna/s254.js",
+  "anon001/rdzen/s015.js",
+  "anon001/rdzen/s021.js",
+  "anon001/rdzen/s028.js",
+  "anon001/gfx-ui/s031.js",
+  "anon001/rdzen/s046.js",
+  "anon001/rdzen/s047.js",
+  "anon001/gfx-ui/s040.js",
+  "anon001/rdzen/s041.js",
+  "anon001/rdzen/s050.js",
+  "anon001/rdzen/s060.js"
  ],
  "drop_gfx": {
   "widoki": [
@@ -301,7 +317,15 @@
   "start z profilu wspolny",
   "mod che-hydroxides-v001: -1 → 1.54 MB",
   "mod che-oxides-v001: -1 → 1.52 MB",
-  "mod che-zoom-engine-v001: -1 → 1.51 MB"
+  "mod che-zoom-engine-v001: -1 → 1.51 MB",
+  "mod che-ionic-v001: -1 → 1.50 MB",
+  "mod che-lesson-context-v001: -1 → 1.49 MB",
+  "mod che-v038-views: -1 → 1.48 MB",
+  "mod che-fiz-elektro-v001: -1 → 1.48 MB",
+  "mod che-stoich-v001: -1 → 1.48 MB",
+  "mod che-mol3d-oxides-v001: -1 → 1.48 MB",
+  "anon misc: -6 → 1.46 MB",
+  "anon editor: -4 → 1.43 MB"
  ],
  "lekcje": [
   "N05_wodorki"
