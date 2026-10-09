@@ -1,4 +1,4 @@
-# PRZEKAZANIE — całe repo · 2026-10-09 (stan 09:15)
+# PRZEKAZANIE — całe repo · 2026-10-09 (stan 12:30)
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
@@ -28,6 +28,7 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 - **BIO:** grafiki `komorka-nakladki` i `mikroskop-model` (bio-viz, L001); zalecenia audytów W15/W16/W18 wprowadzone do treści L014–L044 (L018 najszerzej).
 - **CHE:** znaczniki „✔ wprowadzone” w kanonach → jedna notka na sekcję; decyzje noty kolizji: kolumna `status` w spisie (`spis_tresci.py` naprawiony), treść ponad E8 → `[[extra:ZAAWANSOWANY]]` w lekcji, powtórki tematyczne = RT00–RT10.
 - **Paczka braków dla LLM:** `PACZKA_BRAKI_2026-10-09.zip` (wysłana użytkownikowi; instrukcja `ZADANIA.md` w środku). Wyniki wgrywać scalaniem jak W23.
+- **Spis wszystkich przedmiotów:** `SPIS_WSZYSTKICH.md` (kod, tytuł, notka o treści, plik) — generator `python3 narzedzia/spis_wszystkich.py`; uruchamiać po zmianach lekcji. Spis chemii z kolumną status: `cd chemia && python3 plany/narzedzia/spis_tresci.py`.
 - **Następne kroki:** (a) wgrać wyniki paczki braków; (b) modele silnika w kanonie chemii; (c) dług `@opis` (42); (d) korekta scalająca kursu polskiego (decyzja użytkownika).
 
 ## Sesja 2026-10-09 (rano, 07:20–09:00) — szablon wspólny, porządek, nazwy — STAN AKTUALNY
