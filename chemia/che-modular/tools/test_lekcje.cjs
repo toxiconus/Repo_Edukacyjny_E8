@@ -1,5 +1,5 @@
 /* test_lekcje.cjs — test renderu lekcji w Chromium 390 px (lekcje równolegle).
-   Użycie: node tools/test_lekcje.cjs [--cicho] [plik.html ...]   (domyślnie dist/jeden_plik/*.html)
+   Użycie: node tools/test_lekcje.cjs [--cicho] [--css=pokrycie.json] [--szer=1280] [plik.html ...]   (domyślnie dist/jeden_plik/*.html)
    Sprawdza: treść lekcji, błędy konsoli (bez sieci), ostrzeżenia CHE.CONSISTENCY, ekran startowy,
    przewijanie w bok, modele (@model) zarejestrowane i zamontowane, pracownie (@zlewka) zarejestrowane
    i każda otwiera się bez błędu; w każdym modelu klik w 3 przyciski i zmiana selecta. Jedna linia na lekcję; kod wyjścia 1 = FAIL. --cicho: tylko FAIL. --klucze=plik.json: zapis odczytów CHE.DATA per lekcja. */
@@ -15,6 +15,9 @@ const WZ = wzorzec && fs.existsSync(wzorzec) ? JSON.parse(fs.readFileSync(wzorze
 const ZR = {};
 // --klucze=plik.json: które klucze CHE.DATA lekcja czyta (Proxy od początku strony; liczy się odczyt istniejącego klucza)
 const klucze = (args.find(a => a.startsWith('--klucze=')) || '').slice(9), KL = {};
+// --css=plik.json: pokrycie reguł CSS (CDP) — które reguły choć raz zadziałały w czasie testu; --szer=N: szerokość okna (domyślnie 390)
+const cssOut = (args.find(a => a.startsWith('--css=')) || '').slice(6), CSSU = {};
+const szer = +((args.find(a => a.startsWith('--szer=')) || '').slice(7) || 390);
 const SONDA = `(function(){var R=window.__CHE_KL={},t={};function z(k){if(typeof k==='string'&&Object.prototype.hasOwnProperty.call(t,k))R[k]=(R[k]||0)+1}
  var P=new Proxy(t,{get:function(o,k,r){z(k);return Reflect.get(o,k,r)},has:function(o,k){z(k);return Reflect.has(o,k)},
   getOwnPropertyDescriptor:function(o,k){z(k);return Reflect.getOwnPropertyDescriptor(o,k)}});
@@ -35,7 +38,9 @@ function porownaj(name, odc) {
 }
 
 async function one(b, f) {
-  const p = await b.newPage({ viewport: { width: 390, height: 800 } }); const errs = [];
+  const p = await b.newPage({ viewport: { width: szer, height: 800 } }); const errs = [];
+  let cdp = null; const arkusze = [];
+  if (cssOut) { cdp = await p.context().newCDPSession(p); cdp.on('CSS.styleSheetAdded', e => arkusze.push(e.header.styleSheetId)); await cdp.send('DOM.enable'); await cdp.send('CSS.enable'); await cdp.send('CSS.startRuleUsageTracking'); }
   p.on('pageerror', e => errs.push(e.message));
   p.on('console', m => {
     const t = m.text();
@@ -106,6 +111,13 @@ async function one(b, f) {
   if (r.vizPuste.length) bl.push('model pusty: ' + r.vizPuste.join(','));
   if (r.pracBrak.length) bl.push('pracownia niezarejestrowana: ' + r.pracBrak.join(','));
   if (klucze) KL[path.basename(f)] = await p.evaluate(() => window.__CHE_KL || {});
+  if (cdp) {   // reguła → tekst; used=true, jeśli choć raz pasowała
+    const { ruleUsage } = await cdp.send('CSS.stopRuleUsageTracking'); const txt = {};
+    for (const id of new Set([...arkusze, ...ruleUsage.map(u => u.styleSheetId)])) { try { txt[id] = (await cdp.send('CSS.getStyleSheetText', { styleSheetId: id })).text; } catch (e) {} }
+    // arkusz (po treści) → zbiór użytych zakresów; Chromium zwraca tylko reguły użyte
+    for (const [id, t] of Object.entries(txt)) { const k = t.length + ':' + t.slice(0, 80); CSSU[k] = CSSU[k] || { n: t.length, txt: t, u: {} }; }
+    for (const u of ruleUsage) { const t = txt[u.styleSheetId]; if (!t || !u.used) continue; const k = t.length + ':' + t.slice(0, 80); CSSU[k].u[u.startOffset + '-' + u.endOffset] = 1; }
+  }
   await p.close();
   bl.push(...porownaj(path.basename(f), odcisk));
   const kb = Math.round(fs.statSync(f).size / 1024);
@@ -129,6 +141,7 @@ async function one(b, f) {
   }
   if (zrzut) fs.writeFileSync(zrzut, JSON.stringify(ZR));
   if (klucze) fs.writeFileSync(klucze, JSON.stringify(KL, null, 1));
+  if (cssOut) { let u = 0, n = 0; for (const v of Object.values(CSSU)) { n += v.n; for (const r of Object.keys(v.u)) { const [a, b] = r.split('-'); u += b - a; } } fs.writeFileSync(cssOut, JSON.stringify(CSSU)); console.log(`CSS: arkuszy ${Object.keys(CSSU).length}, użyte reguły ${Math.round(u / 1024)} KB z ${Math.round(n / 1024)} KB tekstu arkuszy`); }
   console.log(fail ? fail + ' FAIL' : 'OK ' + files.length + ' lekcji');
   b.close().catch(() => {}); setTimeout(() => process.exit(fail ? 1 : 0), 500);
 })();
