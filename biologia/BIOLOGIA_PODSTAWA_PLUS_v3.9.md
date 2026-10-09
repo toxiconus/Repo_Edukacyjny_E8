@@ -11568,7 +11568,7 @@ Matematyka (2²³ kombinacji) · Biologia (rozmnażanie) · Etyka (dziedziczenie
 
 ## L015 — warstwa v5.1/v5.2 (HTML + korekta; nic z v3.8 nie skreślono)
 
-HTML: `BIOLOGIA_L015_MEJOZA.html` (bez paska postępu i checkboxów TOC).
+HTML: `lekcje_html/BIOLOGIA_L015_MEJOZA.html` (bez paska postępu i checkboxów TOC).
 
 **Tytuł precyzyjny:** komórki haploidalne i różnorodność — u zwierząt z nich gamety, u roślin spory.
 

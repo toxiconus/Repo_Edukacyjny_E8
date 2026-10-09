@@ -11,7 +11,7 @@ Zasada: **MD = kanon wykładu**, HTML = warstwa do czytania. Bez paska postępu 
 | Biologia | `BIOLOGIA_PODSTAWA_PLUS_v3.9_working.md` | 529987 | 25 |
 | Chemia | `CHEMIA_PODSTAWA_PLUS_v1.1.md` | 504167 | 13 |
 | Polski | `POLSKI_PODSTAWA_PLUS_v7.11 (3).md` | 213975 | 6 |
-| Angielski | `ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` | 484434 | 12 |
+| Angielski | `ANGIELSKI_PODSTAWA_PLUS_v1.0.md` | 484434 | 12 |
 
 ## Tabela lekcji
 
@@ -25,7 +25,7 @@ Zasada: **MD = kanon wykładu**, HTML = warstwa do czytania. Bez paska postępu 
 | Biologia | L012 | L012 — Jak DNA jest upakowane w chromosomach? (v3.8 — wzmocniona warstwa merytoryczna) | 12988 | nie | — | robocza | dopiąć jak L001/L017 |
 | Biologia | L013 | L013 — Jak komórka kopiuje DNA? (v3.8 — wzmocniona warstwa merytoryczna) | 11751 | nie | — | robocza | dopiąć jak L001/L017 |
 | Biologia | L014 | L014 — Jak komórki ciała powstają i się odnawiają? (v3.8 — wzmocniona warstwa merytoryczna | 12440 | nie | — | robocza | dopiąć jak L001/L017 |
-| Biologia | L015 | WYKŁAD Z HTML L015 | 52204 | tak | BIOLOGIA_L015_MEJOZA.html | rozbudowana | spójna para MD+HTML |
+| Biologia | L015 | WYKŁAD Z HTML L015 | 52204 | tak | lekcje_html/BIOLOGIA_L015_MEJOZA.html | rozbudowana | spójna para MD+HTML |
 | Biologia | L016 | L016 — Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli? (v3.8 — wzmocnion | 11887 | nie | — | robocza | dopiąć jak L001/L017 |
 | Biologia | L017 | L017 — Jak przewidywać dziedziczenie jednej cechy? (v5.0 — przebudowa „od podstaw do zaawa | 37691 | tak | BIOLOGIA_L017_PUNNETT.html | rozbudowana | spójna para MD+HTML |
 | Biologia | L018 | L018 — Jak dziedziczy się płeć i cechy sprzężone z chromosomem X? (v3.8 — wzmocniona warst | 11046 | nie | — | robocza | dopiąć jak L001/L017 |
@@ -144,7 +144,7 @@ Razem Chemia: **14045 linii** w blokach lekcji.
 
 Razem Polski: **3903 linii** w blokach lekcji.
 
-### Angielski — `ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md`
+### Angielski — `ANGIELSKI_PODSTAWA_PLUS_v1.0.md`
 
 - **L01** — LEKCJA 1 – CZASOWNIKI MODALNE I HAVE TO — **1962 linii**
 - **L02** — LEKCJA 2 – OPERATORY I CZASOWNIKI POSIŁKOWE BE I DO — **1813 linii**

@@ -466,7 +466,7 @@ Szkielet 1–22 zostaje. Doklejono kartę, porównanie z L015, klinikę, słowni
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
 - Poprzednia: L014 · Następna: L016
 - Status treści: jest wykład MD; audyt przy edycji
-- Status HTML: BIOLOGIA_L015_MEJOZA.html
+- Status HTML: lekcje_html/BIOLOGIA_L015_MEJOZA.html
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
 - Zasada: nic nie wycinać; treść dopisywać poniżej karty
 

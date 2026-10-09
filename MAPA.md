@@ -3,21 +3,23 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (7 pl., 65 KB)
+## .  (7 pl., 67 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
-- `MAPA.md` 19 KB
+- `MAPA.md` 20 KB
 - `PRZEKAZANIE.md` 7 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 28 KB
 
-## angielski  (9 pl., 1.8 MB)
-- ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` 474 KB
+## angielski  (3 pl., 956 KB)
+- ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 474 KB
 - `L000-EN-Fiszki.txt` 11 KB
 - ⚠`L001-EN-Wszystkie-lekcje.md` 470 KB
+
+## angielski/lekcje_html  (6 pl., 902 KB)
 - ⚠`L002-EN-Operatory-i-czasowniki-posilkowe.html` 256 KB
-- ⚠`L003-EN-Tryb-rozkaza zujacy-czasowniki-stanow-phrasal-verbs.html` 145 KB
+- ⚠`L003-EN-Tryb-rozkazujacy-czasowniki-stanow-phrasal-verbs.html` 145 KB
 - ⚠`L004-EN-Czasy-terazniejsze-i-przeszle.html` 109 KB
 - ⚠`L005-EN-Present-Perfect.html` 141 KB
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
@@ -27,17 +29,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
 - `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
 
-## biologia  (11 pl., 2.2 MB)
+## biologia  (3 pl., 1.3 MB)
 - ⚠`BIO.all.v01.00.md` 711 KB
-- ⚠`BIOLOGIA_L001_KOMORKA v4.html` 161 KB
-- ⚠`BIOLOGIA_L002_CZLOWIEK_v4.html` 145 KB
-- ⚠`BIOLOGIA_L003_DIAGNOZA_v4.html` 142 KB
-- ⚠`BIOLOGIA_L011_DNA (1).html` 85 KB
-- ⚠`BIOLOGIA_L012_Chromosom v2.html` 230 KB
-- ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
-- ⚠`BIOLOGIA_L017_PUNNETT (2).html` 88 KB
-- ⚠`BIOLOGIA_PODSTAWA_PLUS_v3.9_working (5).md` 578 KB
-- ⚠`L000-INDEKS-ROKU_MASTER_v1.0 (8) (1).html` 54 KB
+- ⚠`BIOLOGIA_PODSTAWA_PLUS_v3.9.md` 578 KB
 - `STAN_LEKCJI_PODSTAWA_PLUS.md` 15 KB
 
 ## biologia/bio  (2 pl., 5 KB)
@@ -59,6 +53,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `bio-warstwa.css` 10 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
+
+## biologia/lekcje_html  (8 pl., 990 KB)
+- ⚠`BIOLOGIA_L001_KOMORKA.html` 161 KB
+- ⚠`BIOLOGIA_L002_CZLOWIEK.html` 145 KB
+- ⚠`BIOLOGIA_L003_DIAGNOZA.html` 142 KB
+- ⚠`BIOLOGIA_L011_DNA.html` 85 KB
+- ⚠`BIOLOGIA_L012_CHROMOSOM.html` 230 KB
+- ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
+- ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
+- ⚠`L000-INDEKS-ROKU.html` 54 KB
 
 ## biologia/md  (37 pl., 711 KB)
 - (zwinięte; `ls biologia/md`) — duże:
@@ -491,7 +495,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `opis_wizualizacji.py` 3 KB
 - `szkielety_polski.py` 24 KB
 
-## narzedzia/jednorazowe  (4 pl., 14 KB)
+## narzedzia/jednorazowe  (5 pl., 14 KB)
+- `README.md` 0 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -578,6 +583,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAPA_POLSKI.md` 9 KB
 - ⚠`POLSKI_PODSTAWA_PLUS_v7.11.md` 209 KB
 - `POSTEP_UZUPELNIANIA.md` 8 KB
+
+## polski/archiwum  (1 pl., 0 KB)
+- `README.md` 0 KB
 
 ## polski/archiwum/html  (6 pl., 850 KB)
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy v2.html` 114 KB

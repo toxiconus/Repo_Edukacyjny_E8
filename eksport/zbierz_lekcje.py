@@ -238,20 +238,20 @@ def polski():
 
 
 def angielski():
-    pak = split_md(ROOT / "angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md",
+    pak = split_md(ROOT / "angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0.md",
                    r"^# LEKCJA (\d+|DODATKOWA \d) – (.*)$", stop_re=r"^# (Część|LEKCJE DODATKOWE)")
     pak2 = {}
     for k, v in pak.items():
         pak2[("D" + k.split()[-1]) if k.startswith("DODATKOWA") else f"L{int(k):03d}"] = v
     # sekcja „LEKCJE DODATKOWE” (dodatek 1: phrasal verbs, false friends itd.)
-    dod = split_md(ROOT / "angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md", r"^# (LEKCJE DODATKOWE)()$",
+    dod = split_md(ROOT / "angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0.md", r"^# (LEKCJE DODATKOWE)()$",
                    stop_re=r"^# LEKCJA DODATKOWA 2")
     if dod:
         pak2["D1"] = ("Lekcje dodatkowe (phrasal verbs, false friends, ciekawostki)", dod["LEKCJE DODATKOWE"][1])
-    html = {"L002": "angielski/L002-EN-Operatory-i-czasowniki-posilkowe.html",
-            "L003": "angielski/L003-EN-Tryb-rozkaza zujacy-czasowniki-stanow-phrasal-verbs.html",
-            "L004": "angielski/L004-EN-Czasy-terazniejsze-i-przeszle.html", "L005": "angielski/L005-EN-Present-Perfect.html",
-            "L006": "angielski/L006-EN-Past-Simple-Continuous.html", "L012": "angielski/L012-EN-Future-Simple.html"}
+    html = {"L002": "angielski/lekcje_html/L002-EN-Operatory-i-czasowniki-posilkowe.html",
+            "L003": "angielski/lekcje_html/L003-EN-Tryb-rozkazujacy-czasowniki-stanow-phrasal-verbs.html",
+            "L004": "angielski/lekcje_html/L004-EN-Czasy-terazniejsze-i-przeszle.html", "L005": "angielski/lekcje_html/L005-EN-Present-Perfect.html",
+            "L006": "angielski/lekcje_html/L006-EN-Past-Simple-Continuous.html", "L012": "angielski/lekcje_html/L012-EN-Future-Simple.html"}
     les = [(c, *pick(c, pak2.get(c), html.get(c))) for c in sorted(set(pak2) | set(html))]
     kont = ("Kurs gramatyki angielskiej z objaśnieniami po polsku (poziom A2+/B1, egzamin ósmoklasisty z angielskiego). "
             "Sprawdź poprawność przykładów angielskich i reguł. Oceń, czego brakuje względem egzaminu: "

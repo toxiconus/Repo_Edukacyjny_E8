@@ -1,6 +1,6 @@
 # Ocena audytu W1 (Perplexity) — język angielski, 2026-10-09
 
-Surowa odpowiedź: `W1_perplexity_ANGIELSKI_2026-10-09.md`. Każdą uwagę sprawdzono w źródle (`angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md`).
+Surowa odpowiedź: `W1_perplexity_ANGIELSKI_2026-10-09.md`. Każdą uwagę sprawdzono w źródle (`angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0.md`).
 
 ## Wprowadzone (błędy potwierdzone)
 | Lekcja | Zmiana |
