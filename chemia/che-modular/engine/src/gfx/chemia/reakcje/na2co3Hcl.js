@@ -1,0 +1,1 @@
+P('na2co3Hcl',{n:'Na₂CO₃ + HCl',out:['gaz'],gas:'CO2',bubN:1.4,foam:1,why:'Roztwór sody musuje — wydziela się CO₂ (wykrywanie jonów węglanowych; gaz mętni wodę wapienną).'});

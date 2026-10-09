@@ -1,0 +1,273 @@
+{
+  "version": "1.0",
+  "description": "Naczynia i sprzęt GFX. Grupy pozwalają lekcji/domenie deklarować vesselGroups zamiast listy 40 id.",
+  "groups": {
+    "chem.glassware": {
+      "title": "Szkło laboratoryjne",
+      "subjects": [
+        "chemia"
+      ],
+      "items": [
+        "beaker",
+        "testTube",
+        "flask",
+        "roundFlask",
+        "volFlask",
+        "cylinder",
+        "funnel",
+        "petri",
+        "evapDish",
+        "crucible",
+        "watchGlass",
+        "dropFunnel"
+      ]
+    },
+    "chem.heat": {
+      "title": "Ogrzewanie",
+      "subjects": [
+        "chemia"
+      ],
+      "items": [
+        "burner",
+        "spiritLamp",
+        "hotplate",
+        "tripod",
+        "stand",
+        "cooler"
+      ]
+    },
+    "chem.measure": {
+      "title": "Pomiar (chem)",
+      "subjects": [
+        "chemia"
+      ],
+      "items": [
+        "burette",
+        "pipette",
+        "dropper",
+        "thermometer",
+        "pHscale",
+        "pHmeter",
+        "balance",
+        "conductivity"
+      ]
+    },
+    "chem.setup": {
+      "title": "Stanowisko / stelaż",
+      "subjects": [
+        "chemia"
+      ],
+      "items": [
+        "stage",
+        "anchor",
+        "tubeRack",
+        "gasCollect",
+        "clamp"
+      ]
+    },
+    "phys.electro": {
+      "title": "Elektrostatyka — modele",
+      "subjects": [
+        "fizyka"
+      ],
+      "items": [
+        "electroscope",
+        "chargedRod",
+        "pendulum",
+        "fieldMap",
+        "chargeBar",
+        "paper"
+      ]
+    },
+    "common.stage": {
+      "title": "Scena wspólna",
+      "subjects": [
+        "chemia",
+        "fizyka",
+        "biologia"
+      ],
+      "items": [
+        "stage",
+        "anchor"
+      ]
+    }
+  },
+  "items": {
+    "beaker": {
+      "title": "Zlewka",
+      "aliases": [
+        "zlewka"
+      ],
+      "draw": "beaker",
+      "design": "Zlewka — roztwory, strącanie, mieszanie."
+    },
+    "testTube": {
+      "title": "Próbówka",
+      "aliases": [
+        "probowka",
+        "tube"
+      ],
+      "design": "Próbówka — małe objętości, serie prób, ogrzewanie."
+    },
+    "flask": {
+      "title": "Kolba stożkowa",
+      "aliases": [
+        "kolba"
+      ],
+      "design": "Kolba stożkowa — miareczkowanie, mieszanie."
+    },
+    "roundFlask": {
+      "title": "Kolba okrągłodenna",
+      "design": "Kolba okrągłodenna — ogrzewanie."
+    },
+    "volFlask": {
+      "title": "Kolba miarowa",
+      "design": "Kolba miarowa — rozcieńczanie do kreski."
+    },
+    "cylinder": {
+      "title": "Cylinder miarowy",
+      "design": "Cylinder miarowy — objętość."
+    },
+    "burner": {
+      "title": "Palnik",
+      "design": "Palnik."
+    },
+    "spiritLamp": {
+      "title": "Lampa spirytusowa",
+      "design": "Lampa spirytusowa."
+    },
+    "tubeRack": {
+      "title": "Statyw na próbówki",
+      "design": "Statyw na próbówki."
+    },
+    "electroscope": {
+      "title": "Elektroskop",
+      "subjects": [
+        "fizyka"
+      ],
+      "design": "Elektroskop."
+    },
+    "chargedRod": {
+      "title": "Pręt naelektryzowany",
+      "subjects": [
+        "fizyka"
+      ],
+      "design": "Pręt naelektryzowany."
+    },
+    "pendulum": {
+      "title": "Wahadełko elektrostatyczne",
+      "subjects": [
+        "fizyka"
+      ],
+      "design": "Wahadełko elektrostatyczne."
+    },
+    "fieldMap": {
+      "title": "Mapa pola",
+      "subjects": [
+        "fizyka"
+      ],
+      "design": "Mapa linii pola."
+    },
+    "chargeBar": {
+      "title": "Pręt ładunku",
+      "subjects": [
+        "fizyka"
+      ],
+      "design": "Wizualizacja ładunku ±."
+    },
+    "burette": {
+      "title": "Biureta",
+      "design": "Biureta."
+    },
+    "pHmeter": {
+      "title": "pH-metr",
+      "design": "pH-metr."
+    },
+    "conductivity": {
+      "title": "Czujnik przewodnictwa",
+      "design": "Czujnik przewodnictwa."
+    },
+    "gasCollect": {
+      "title": "Zbieranie gazu",
+      "design": "Zbieranie gazu."
+    },
+    "stage": {
+      "title": "Scena bazowa",
+      "core": true,
+      "design": "Baza sceny (layout)."
+    },
+    "anchor": {
+      "title": "Kotwica layoutu",
+      "core": true,
+      "design": "Kotwica pozycji."
+    },
+    "funnel": {
+      "title": "funnel",
+      "design": "Lejek."
+    },
+    "petri": {
+      "title": "petri",
+      "design": "Szalka Petriego."
+    },
+    "evapDish": {
+      "title": "evapDish",
+      "design": "Parownica."
+    },
+    "crucible": {
+      "title": "crucible",
+      "design": "Tygiel — prażenie, termit."
+    },
+    "watchGlass": {
+      "title": "watchGlass",
+      "design": "Szkiełko zegarkowe."
+    },
+    "dropFunnel": {
+      "title": "dropFunnel",
+      "design": "Rozdzielacz / kroplownik."
+    },
+    "cooler": {
+      "title": "cooler",
+      "design": "Chłodnica (symbol)."
+    },
+    "stand": {
+      "title": "stand",
+      "design": "Statyw."
+    },
+    "tripod": {
+      "title": "tripod",
+      "design": "Trójnóg."
+    },
+    "hotplate": {
+      "title": "hotplate",
+      "design": "Płyta grzejna."
+    },
+    "dropper": {
+      "title": "dropper",
+      "design": "Kroplomierz."
+    },
+    "pHscale": {
+      "title": "pHscale",
+      "design": "Skala pH (graficzna)."
+    },
+    "thermometer": {
+      "title": "thermometer",
+      "design": "Termometr."
+    },
+    "pipette": {
+      "title": "pipette",
+      "design": "Pipeta."
+    },
+    "balance": {
+      "title": "balance",
+      "design": "Waga."
+    },
+    "paper": {
+      "title": "paper",
+      "design": "Skrawki papieru (fizyka)."
+    },
+    "molTank": {
+      "title": "molTank",
+      "design": "Zbiornik cząsteczek (model)."
+    }
+  }
+}

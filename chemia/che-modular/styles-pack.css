@@ -1,0 +1,12 @@
+/* CHE lesson pack base */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#eef2f6;--panel:#ffffff;--panel-2:#f1f5f8;--bar:#e2e9ef;--line:#d5dee6;--line-2:#b8c5d1;
+  --tx:#17212b;--mut:#53616e;--dim:#7a8794;--v:#b85f00;--c:#2f8a55;--r:#b0467a;--p:#d6452b;
+  --sans:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+html{background:var(--ink)}
+body{background:var(--ink);color:var(--tx);font:15px/1.55 var(--sans);min-height:100vh;-webkit-font-smoothing:antialiased}
+button{font-family:var(--sans);cursor:pointer}
+button:focus-visible{outline:2px solid var(--c);outline-offset:2px}

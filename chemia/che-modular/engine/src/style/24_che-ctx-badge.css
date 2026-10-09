@@ -1,0 +1,12 @@
+
+.che-ctx-badge{
+  margin:0 0 10px;padding:8px 12px;border-radius:10px;
+  border:1px solid var(--line,#d5dee6);background:var(--panel-2,#f1f5f8);
+  font:12.5px/1.4 system-ui,sans-serif;color:var(--mut,#53616e);
+}
+.che-ctx-badge b{color:var(--ui,#1f5fa8);font-weight:700}
+.che-ctx-badge small{
+  display:inline-block;margin-right:6px;font:800 10px ui-monospace,monospace;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--ui,#1f5fa8);
+}
+html[data-che-lesson="N03"] .che-ctx-badge{border-color:rgba(31,95,168,.35)}

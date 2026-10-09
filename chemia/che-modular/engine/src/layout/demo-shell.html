@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Demo · Lesson Shell TOC</title>
+<link rel="stylesheet" href="lesson-shell.css"/>
+<style>
+  body { margin: 0; background: #f1f5f9; }
+  .demo-note { background: #ecfdf5; border: 1px solid #99f6e4; padding: 12px 14px; border-radius: 10px; margin-bottom: 1em; font-size: 14px; }
+</style>
+</head>
+<body>
+<main class="che-lesson-main">
+  <p class="demo-note">Demo wspólnego layoutu: <b>hamburger</b> w lewym górnym rogu → spis treści. Scroll → aktywna sekcja.</p>
+
+  <section id="cele" data-toc="1. Cele">
+    <h2>1. Cele</h2>
+    <p>Lekcja ma wspólny header i pływający spis — te same cegiełki dla chemii i fizyki.</p>
+  </section>
+  <section id="teoria" data-toc="2. Teoria">
+    <h2>2. Teoria</h2>
+    <p>Wariant przedmiotu ustawia kolor akcentu (<code>data-lesson-subject</code>).</p>
+    <p style="height:40vh"></p>
+  </section>
+  <section id="doswiadczenie" data-toc="3. Doświadczenie">
+    <h2>3. Doświadczenie</h2>
+    <p>Tu wpięty będzie slot GFX z silnika.</p>
+    <p style="height:40vh"></p>
+  </section>
+  <section id="podsumowanie" data-toc="4. Podsumowanie">
+    <h2>4. Podsumowanie</h2>
+    <p>Masowa zmiana layoutu = edycja lesson-shell.css / .js.</p>
+    <p style="height:30vh"></p>
+  </section>
+</main>
+<script src="lesson-shell.js"></script>
+<script>
+  CHE.LessonShell.mount({
+    code: 'DEMO',
+    title: 'Wspólny layout lekcji',
+    subject: 'chemia',
+    variant: 'chemia',
+    toc: 'float-hamburger'
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+{
+  "version": "1.0",
+  "description": "Gotowe sceny pracowni (GFX.scenes). Domena/lekcja wskazuje scenes[] lub dziedziczy z domains.gfx.scenes.",
+  "scenes": {
+    "acidMetal": {
+      "title": "Metal + kwas",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "acids",
+        "oxides"
+      ],
+      "vessels": [
+        "testTube",
+        "beaker"
+      ],
+      "effects": [
+        "bubbles",
+        "liquid",
+        "heatGlow"
+      ],
+      "design": "Próbówka/zlewka: metal + kwas → pęcherzyki H₂, ewentualnie ciepło."
+    },
+    "indicator": {
+      "title": "Wskaźnik w roztworze",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "acids",
+        "hydroxides",
+        "salts"
+      ],
+      "vessels": [
+        "beaker",
+        "testTube"
+      ],
+      "effects": [
+        "liquid",
+        "dropMix"
+      ],
+      "design": "Roztwór + wskaźnik — zmiana barwy cieczy."
+    },
+    "indicatorRack": {
+      "title": "Zestaw wskaźników",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "acids"
+      ],
+      "vessels": [
+        "testTube",
+        "tubeRack"
+      ],
+      "effects": [
+        "liquid",
+        "label"
+      ],
+      "design": "Szereg probówek z różnymi wskaźnikami / pH."
+    },
+    "titration": {
+      "title": "Miareczkowanie",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "acids"
+      ],
+      "vessels": [
+        "burette",
+        "flask",
+        "stand"
+      ],
+      "effects": [
+        "liquid",
+        "meniscus",
+        "dropMix",
+        "tap"
+      ],
+      "design": "Biureta nad kolbą — krople, menisk, zmiana barwy punktu końcowego."
+    },
+    "dilution": {
+      "title": "Rozcieńczanie",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "acids"
+      ],
+      "vessels": [
+        "volFlask",
+        "beaker",
+        "pipette"
+      ],
+      "effects": [
+        "liquid",
+        "meniscus"
+      ],
+      "design": "Przenoszenie roztworu do kolby miarowej, dopełnienie wodą."
+    },
+    "conductivity": {
+      "title": "Przewodnictwo",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "salts",
+        "acids"
+      ],
+      "vessels": [
+        "beaker",
+        "conductivity"
+      ],
+      "effects": [
+        "liquid",
+        "label"
+      ],
+      "design": "Elektrody w roztworze — żarówka / wskaźnik przewodnictwa."
+    },
+    "gasCollection": {
+      "title": "Zbieranie gazu",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "oxides",
+        "acids"
+      ],
+      "vessels": [
+        "testTube",
+        "gasCollect"
+      ],
+      "effects": [
+        "bubbles",
+        "liquid"
+      ],
+      "design": "Gaz zbierany nad wodą lub w cylindrze."
+    },
+    "carbonate": {
+      "title": "Węglan + kwas / CO₂",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "oxides",
+        "salts"
+      ],
+      "vessels": [
+        "testTube",
+        "beaker"
+      ],
+      "effects": [
+        "bubbles",
+        "liquid",
+        "turbidity"
+      ],
+      "design": "Węglan + kwas → burzliwe CO₂, ewentualnie mętnienie wody wapiennej."
+    },
+    "heating": {
+      "title": "Ogrzewanie",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "oxides",
+        "hydroxides",
+        "salts"
+      ],
+      "vessels": [
+        "testTube",
+        "burner",
+        "stand"
+      ],
+      "effects": [
+        "flame",
+        "heatGlow",
+        "steam"
+      ],
+      "design": "Naczynie nad płomieniem — para, poświata, ewentualna zmiana barwy osadu."
+    }
+  }
+}

@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L010 — Podstawy DNA od zera (wersja scalona v3.0)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F1EDDF;
+    --bg-panel:#FAF8F0;
+    --bg-sunken:#E7E0C8;
+    --ink:#1E2A22;
+    --ink-soft:#51604F;
+    --ink-faint:#7C8871;
+    --line:#CFC5A2;
+    --line-strong:#A99F7C;
+    --teal:#2C6455;
+    --teal-deep:#1B4136;
+    --amber:#AE5F1E;
+    --amber-bg:#F4E3CB;
+    --violet:#5A4C8C;
+    --violet-bg:#E7E2F3;
+    --rose:#9C3B3B;
+    --rose-bg:#F3DEDA;
+    --hero-bg:#122620;
+    --hero-ink:#EFE9D4;
+    --hero-line:#2E4A3E;
+    --green:#2D8F5E;
+    --green-bg:#E6F6EC;
+    --orange:#E67E22;
+    --orange-bg:#FDF1E1;
+    --blue:#2B6CB0;
+    --blue-bg:#E5EFFA;
+    --purple:#7C3AED;
+    --purple-bg:#F2ECFA;
+    --red:#DC3545;
+    --red-bg:#FEF2F2;
+    --radius-s:6px;
+    --radius-m:12px;
+    --serif:"Newsreader",ui-serif,Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;color:var(--ink);margin:0 0 .5em;letter-spacing:-0.01em;}
+  h2{font-size:26px;}
+  h3{font-size:19px;margin-top:1.4em;}
+  h4{font-size:16.5px;margin-top:1.2em;}
+  p{margin:0 0 1em;}
+  a{color:var(--teal-deep);}
+  img,svg{max-width:100%;}
+  code{background:var(--bg-sunken);color:var(--ink);padding:1px 6px;border-radius:4px;font-family:var(--mono);font-size:.88em;}
+  pre.flow{background:var(--hero-bg);color:var(--hero-ink);padding:14px 18px;border-radius:var(--radius-s);font-family:var(--mono);font-size:.88rem;line-height:1.6;margin:10px 0;overflow-x:auto;white-space:pre;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
+  ::selection{background:var(--amber-bg);}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:920px;margin:0 auto;padding:10px 24px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  }
+  .brand{font-family:var(--mono);font-size:12.5px;letter-spacing:.03em;color:var(--ink-soft);white-space:nowrap;}
+  .brand b{color:var(--ink);}
+  .toc-toggle{
+    margin-left:auto;font-family:var(--sans);font-size:13.5px;font-weight:600;
+    background:var(--bg-panel);border:1px solid var(--line-strong);color:var(--ink);
+    padding:6px 12px;border-radius:999px;cursor:pointer;
+  }
+  .toc-toggle:hover{border-color:var(--teal);}
+  .toc-panel{
+    max-width:920px;margin:0 auto;padding:0 24px;max-height:0;overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .toc-panel.open{max-height:520px;padding-bottom:14px;}
+  .toc-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:4px 18px;
+    font-size:14px;padding-top:10px;border-top:1px solid var(--line);
+  }
+  .toc-grid a{display:block;color:var(--ink-soft);text-decoration:none;padding:3px 0;}
+  .toc-grid a:hover{color:var(--teal-deep);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse 700px 420px at 82% -10%, var(--hero-line) 0%, transparent 60%),
+      var(--hero-bg);
+    color:var(--hero-ink);
+    padding:56px 0 44px;
+    border-bottom:1px solid var(--hero-line);
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;}
+  .kicker{
+    font-family:var(--mono);font-size:12.5px;color:#9FD8C2;
+    display:flex;gap:10px;align-items:center;margin-bottom:18px;
+  }
+  .kicker .dot{width:5px;height:5px;border-radius:50%;background:#9FD8C2;opacity:.6;}
+  h1.title{
+    font-size:clamp(30px,4.4vw,44px);line-height:1.08;font-style:italic;font-weight:500;
+    color:#F6F2E1;margin-bottom:14px;
+  }
+  .hero .lede{color:#C9D2C4;font-size:16.5px;max-width:46ch;margin-bottom:22px;}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 10px;font-size:12.5px;}
+  .pill{
+    border:1px solid var(--hero-line);border-radius:999px;padding:4px 11px;color:#B9C4B4;
+    font-family:var(--mono);
+  }
+  .hero-art{display:flex;justify-content:center;}
+  .hero-art svg{width:100%;height:auto;max-width:340px;}
+
+  /* ---------- layer filter ---------- */
+  .filterbar{
+    background:var(--bg-panel);border-bottom:1px solid var(--line);
+    padding:14px 0;
+    position:sticky;top:44px;z-index:40;
+  }
+  .filterbar .wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .filter-label{font-size:13px;color:var(--ink-faint);margin-right:2px;}
+  .chip{
+    font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer;
+    border:1px solid var(--line-strong);border-radius:999px;padding:6px 13px 6px 11px;
+    background:var(--bg);color:var(--ink-soft);
+    display:inline-flex;align-items:center;gap:7px;
+    transition:background .15s, color .15s, border-color .15s;
+    user-select:none;
+  }
+  .chip .sw{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  .chip.active{background:var(--ink);color:var(--bg-panel);border-color:var(--ink);}
+  .chip.active .sw{background:var(--bg-panel) !important;}
+  .chip-reset{
+    margin-left:auto;font-size:12.5px;color:var(--ink-faint);background:none;border:none;
+    cursor:pointer;text-decoration:underline;text-underline-offset:2px;
+  }
+
+  [data-layer]{transition:opacity .15s;}
+  body.hide-przypomnienie [data-layer~="przypomnienie"],
+  body.hide-podstawa [data-layer~="podstawa"],
+  body.hide-trening [data-layer~="trening"],
+  body.hide-master [data-layer~="master"],
+  body.hide-zaawansowany [data-layer~="zaawansowany"],
+  body.hide-powtorka [data-layer~="powtorka"]{
+    display:none !important;
+  }
+
+  /* ---------- sections ---------- */
+  section{padding:52px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;color:var(--ink-faint);
+    display:flex;align-items:center;gap:8px;margin-bottom:10px;
+  }
+  .eyebrow .n{
+    width:22px;height:22px;border-radius:50%;border:1px solid var(--line-strong);
+    display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--ink-soft);
+  }
+  .sub{color:var(--ink-soft);font-size:15px;margin-bottom:26px;max-width:60ch;}
+
+  .layer-tag{
+    display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.02em;
+    padding:2px 8px;border-radius:5px;margin-bottom:14px;
+  }
+  .layer-tag.przypomnienie{background:var(--bg-sunken);color:var(--ink-soft);}
+  .layer-tag.podstawa{background:var(--violet-bg);color:var(--violet);}
+  .layer-tag.trening{background:var(--amber-bg);color:var(--amber);}
+  .layer-tag.master{background:#DCE7DE;color:var(--teal-deep);}
+  .layer-tag.zaawansowany{background:var(--rose-bg);color:var(--rose);}
+  .layer-tag.powtorka{background:var(--bg-sunken);color:var(--ink-soft);}
+
+  blockquote.callout{
+    margin:0 0 20px;padding:16px 18px;background:var(--amber-bg);border-left:3px solid var(--amber);
+    border-radius:0 var(--radius-s) var(--radius-s) 0;font-size:15px;color:var(--ink);
+  }
+  blockquote.callout b{color:var(--amber);}
+  .callout p:last-child{margin-bottom:0;}
+
+  .panel{background:var(--bg-panel);border:1px solid var(--line);border-radius:var(--radius-m);padding:22px 24px;margin-bottom:20px;}
+  .panel.rose{background:var(--rose-bg);border-color:#D9B5B0;}
+  .panel.teal{background:#DCEBD8;border-color:#A8C7A3;}
+  .panel.sunken{background:var(--bg-sunken);border-color:var(--line-strong);}
+
+  .analogy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 22px;}
+  .analogy-card{background:var(--bg-panel);border:1px solid var(--line);border-radius:var(--radius-m);padding:16px;text-align:center;}
+  .analogy-card .ico{font-size:26px;margin-bottom:8px;}
+  .analogy-card .t{font-weight:700;font-size:14px;margin-bottom:4px;}
+  .analogy-card .d{font-size:12.5px;color:var(--ink-soft);}
+
+  table{width:100%;border-collapse:collapse;margin:0 0 22px;font-size:14.5px;}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);font-weight:600;}
+  tr:last-child td{border-bottom:none;}
+  tr.error-row td{background:var(--rose-bg);}
+  tr.correct-row td{background:var(--green-bg);}
+
+  .diagram-frame{
+    background:var(--bg-panel);border:1px solid var(--line);border-radius:var(--radius-m);
+    padding:22px;margin:8px 0 24px;overflow-x:auto;
+  }
+  .diagram-cap{font-size:12.5px;color:var(--ink-faint);margin-top:12px;text-align:center;}
+
+  ul.tick, ol.steps{margin:0 0 20px;padding-left:0;list-style:none;}
+  ul.tick li{position:relative;padding-left:26px;margin-bottom:8px;font-size:15px;}
+  ul.tick li::before{content:"—";position:absolute;left:0;color:var(--teal);font-weight:700;}
+  ol.steps{counter-reset:step;}
+  ol.steps li{position:relative;padding-left:34px;margin-bottom:10px;font-size:15px;counter-increment:step;}
+  ol.steps li::before{
+    content:counter(step);position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;
+    background:var(--teal);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;
+  }
+
+  /* misconception cards */
+  .miscon-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:8px;}
+  .miscon-card{background:var(--bg-panel);border:1px solid var(--line);border-radius:var(--radius-m);padding:16px 18px;}
+  .miscon-card .wrong{font-size:14px;color:var(--rose);display:flex;gap:8px;margin-bottom:8px;}
+  .miscon-card .right{font-size:14px;color:var(--teal-deep);display:flex;gap:8px;}
+  .miscon-card .wrong span:first-child,.miscon-card .right span:first-child{flex:none;font-weight:700;}
+
+  /* clinic */
+  .clinic-card{border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;margin-bottom:16px;background:var(--bg-panel);}
+  .clinic-head{padding:14px 18px;background:var(--rose-bg);color:var(--rose);font-weight:700;font-size:14.5px;}
+  .clinic-body{padding:16px 18px;font-size:14.5px;}
+  .clinic-body dt{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:10px;}
+  .clinic-body dt:first-child{margin-top:0;}
+  .clinic-body dd{margin:2px 0 0;color:var(--ink);}
+
+  /* details / exercises */
+  details.reveal{
+    border:1px solid var(--line);border-radius:var(--radius-m);margin-bottom:12px;background:var(--bg-panel);
+    overflow:hidden;
+  }
+  details.reveal summary{
+    list-style:none;cursor:pointer;padding:14px 18px;font-weight:600;font-size:14.5px;
+    display:flex;justify-content:space-between;align-items:center;gap:10px;
+  }
+  details.reveal summary::-webkit-details-marker{display:none;}
+  details.reveal summary::after{content:"pokaż odpowiedź";font-family:var(--mono);font-weight:400;font-size:11.5px;color:var(--ink-faint);}
+  details.reveal[open] summary::after{content:"ukryj";}
+  details.reveal .a{padding:14px 18px 16px;font-size:14.5px;color:var(--ink-soft);border-top:1px solid var(--line);}
+  details.reveal .a b{color:var(--ink);}
+
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
+  .tab-btn{
+    font-family:var(--sans);font-size:13.5px;font-weight:600;cursor:pointer;
+    padding:7px 14px;border-radius:999px;border:1px solid var(--line-strong);background:var(--bg);color:var(--ink-soft);
+  }
+  .tab-btn.active{background:var(--teal);border-color:var(--teal);color:#fff;}
+  .tab-pane{display:none;}
+  .tab-pane.active{display:block;}
+
+  /* flashcards */
+  .flash-wrap{max-width:480px;margin:0 auto;}
+  .flash-card{
+    background:var(--bg-panel);border:1px solid var(--line-strong);border-radius:var(--radius-m);
+    min-height:190px;padding:28px;display:flex;align-items:center;justify-content:center;text-align:center;
+    cursor:pointer;font-size:17px;position:relative;box-shadow:0 1px 0 var(--line);
+  }
+  .flash-card .flash-face{display:none;}
+  .flash-card .flash-face.show{display:block;}
+  .flash-card .q{font-family:var(--serif);font-style:italic;font-size:19px;}
+  .flash-card .a{color:var(--teal-deep);font-weight:600;}
+  .flash-tag{position:absolute;top:10px;right:14px;font-family:var(--mono);font-size:10px;color:var(--ink-faint);text-transform:uppercase;}
+  .flash-hint{position:absolute;bottom:10px;right:14px;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);}
+  .flash-controls{display:flex;align-items:center;justify-content:space-between;margin-top:14px;}
+  .flash-btn{
+    font-family:var(--sans);font-weight:600;font-size:13.5px;padding:8px 16px;border-radius:999px;
+    border:1px solid var(--line-strong);background:var(--bg-panel);cursor:pointer;color:var(--ink);
+  }
+  .flash-btn:hover{border-color:var(--teal);}
+  .flash-progress{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);}
+
+  /* nucleotide / pair cards */
+  .pair-cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin:18px 0;}
+  .pair-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:16px 22px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.04);min-width:220px;}
+  .pair-card .pair-title{font-size:12px;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink-faint);font-weight:600;margin-bottom:8px;}
+  .pair-card svg{display:block;margin:0 auto;}
+
+  /* trainer */
+  .trainer{background:var(--bg-panel);border:2px solid var(--teal);border-radius:14px;padding:18px 20px;margin:14px 0;}
+  .trainer .tr-title{font-weight:700;color:var(--teal-deep);font-size:1.05rem;margin-bottom:8px;}
+  .trainer .tr-line{font-family:var(--mono);font-size:1.1rem;letter-spacing:0.15em;padding:10px 14px;background:var(--bg-sunken);border-radius:8px;margin:10px 0;min-height:44px;display:flex;flex-wrap:wrap;align-items:center;color:var(--ink);}
+  .trainer .tr-line .cell{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin:2px 4px;border-radius:6px;font-weight:700;font-size:1.05rem;}
+  .trainer .tr-line .cell-A{background:var(--green-bg);color:var(--green);border:2px solid var(--green);}
+  .trainer .tr-line .cell-T{background:var(--orange-bg);color:var(--orange);border:2px solid var(--orange);}
+  .trainer .tr-line .cell-C{background:var(--blue-bg);color:var(--blue);border:2px solid var(--blue);}
+  .trainer .tr-line .cell-G{background:var(--purple-bg);color:var(--purple);border:2px solid var(--purple);}
+  .trainer .tr-line .cell-U{background:#FCE7F3;color:#BE185D;border:2px solid #BE185D;}
+  .trainer .tr-line .cell-q{background:#fff;color:var(--red);border:2px dashed var(--red);cursor:pointer;}
+  .trainer .tr-line .cell-empty{background:transparent;border:2px dashed #cbd5e1;color:transparent;}
+  .trainer .tr-buttons{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;}
+  .trainer .tr-buttons button{font-family:var(--mono);font-size:1.05rem;font-weight:700;padding:6px 16px;border-radius:8px;border:2px solid var(--line);background:#fff;cursor:pointer;transition:all 0.15s;color:var(--ink);}
+  .trainer .tr-buttons button:hover{border-color:var(--teal);background:#E7EFEA;}
+  .trainer .tr-buttons button.b-A{border-color:var(--green);color:var(--green);}
+  .trainer .tr-buttons button.b-T{border-color:var(--orange);color:var(--orange);}
+  .trainer .tr-buttons button.b-C{border-color:var(--blue);color:var(--blue);}
+  .trainer .tr-buttons button.b-G{border-color:var(--purple);color:var(--purple);}
+  .trainer .tr-buttons button.b-U{border-color:#BE185D;color:#BE185D;}
+  .trainer .tr-info{font-size:0.85rem;color:var(--ink-faint);margin-top:6px;font-style:italic;}
+  .trainer .tr-result{margin-top:10px;padding:10px 14px;border-radius:8px;font-weight:600;display:none;}
+  .trainer .tr-result.ok{background:var(--green-bg);color:#14532d;display:block;}
+  .trainer .tr-result.warn{background:var(--amber-bg);color:#78350f;display:block;}
+  .trainer .tr-bond-row{display:flex;flex-wrap:wrap;align-items:center;padding:2px 14px;gap:0;min-height:14px;}
+  .trainer .tr-bond-cell{width:34px;height:14px;margin:0 4px;display:inline-flex;align-items:center;justify-content:center;}
+
+  /* comparison sequences */
+  .seq-compare{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin:16px 0;align-items:center;}
+  .seq-row{display:flex;align-items:center;gap:6px;}
+  .seq-label{font-size:0.8rem;color:var(--ink-soft);font-weight:600;margin-right:8px;min-width:90px;text-align:right;}
+  .seq-cell{width:34px;height:34px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-family:var(--mono);font-size:1rem;border:2px solid;}
+  .seq-cell.diff{border-width:3px;transform:scale(1.12);box-shadow:0 0 0 3px rgba(220,53,69,0.2);}
+  .seq-arrow{color:var(--red);font-weight:700;font-size:1.05rem;text-align:center;margin-top:8px;}
+
+  /* map frame */
+  .map-frame{background:var(--bg-panel);border:1px solid var(--line);border-radius:var(--radius-m);padding:24px;overflow-x:auto;}
+
+  /* glossary */
+  .gloss dt{font-weight:700;font-family:var(--serif);font-style:italic;font-size:16.5px;margin-top:16px;}
+  .gloss dt:first-child{margin-top:0;}
+  .gloss dd{margin:3px 0 0;color:var(--ink-soft);font-size:14.5px;}
+
+  footer{
+    background:var(--hero-bg);color:#B9C4B4;padding:40px 0 50px;
+  }
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-end;}
+  footer .next-label{font-family:var(--mono);font-size:12px;color:#7E9587;margin-bottom:4px;}
+  footer .next-title{font-family:var(--serif);font-style:italic;color:#F6F2E1;font-size:22px;}
+  footer .small{font-size:12.5px;color:#7E9587;margin-top:20px;}
+
+  @media (max-width:760px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero-art{order:-1;}
+    .analogy-grid{grid-template-columns:1fr;}
+    .miscon-grid{grid-template-columns:1fr;}
+    section{padding:38px 0;}
+    .filterbar{top:44px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">BIOLOGIA · <b>L010</b> · v3.0 scalona</span>
+    <button class="toc-toggle" id="tocToggle" type="button">Spis treści ▾</button>
+  </div>
+  <div class="toc-panel" id="tocPanel">
+    <div class="toc-grid">
+      <a href="#wprowadzenie">0 · Wprowadzenie</a>
+      <a href="#minuta">0A · DNA w jednej minucie</a>
+      <a href="#pytanie">1 · Pytanie przewodnie</a>
+      <a href="#cele">2 · Cele + 80/20</a>
+      <a href="#kompas">3 · Kompas</a>
+      <a href="#problem">4 · Zacznij od problemu</a>
+      <a href="#sciaga">5 · Ściąga</a>
+      <a href="#informacja">5.5 · Informacja genetyczna</a>
+      <a href="#hierarchia">5.6 · DNA / gen / chromosom</a>
+      <a href="#wyjasnienie">6 · Wyjaśnienie</a>
+      <a href="#master">7 · Poziom MASTER</a>
+      <a href="#nie-oznacza">8 · Czego DNA NIE oznacza</a>
+      <a href="#zaawansowany">9 · Poziom ZAAWANSOWANY</a>
+      <a href="#klinika">10 · Klinika błędów</a>
+      <a href="#budowa">11 · Nukleotyd · Pary · Helisa</a>
+      <a href="#trener">11.5 · Trener komplementarności</a>
+      <a href="#cwiczenia">12 · Ćwiczenia</a>
+      <a href="#fiszki">13 · Fiszki</a>
+      <a href="#test">14 · Test końcowy</a>
+      <a href="#checklista">15 · Checklista</a>
+      <a href="#mapa">16 · Mapa pojęć</a>
+      <a href="#dalej">17 · Co dalej + jak się uczyć</a>
+      <a href="#slownik">18 · Słownik</a>
+      <a href="#zycie">19 · Z życia + międzyprzedmiotowe</a>
+      <a href="#status">20 · Status lekcji</a>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">GENETYKA · WPROWADZENIE <span class="dot"></span> L010 — PODSTAWY DNA OD ZERA</div>
+      <h1 class="title">Podstawy DNA od zera</h1>
+      <p class="lede">Czym jest genetyka, skąd podobieństwa i różnice, czym jest DNA jako nośnik informacji — i jak cztery litery A, T, C, G mogą zapisać całą instrukcję organizmu.</p>
+      <div class="hero-meta">
+        <span class="pill">wersja scalona v3.0</span>
+        <span class="pill">poziomy: podstawa · trening · master · zaawansowany</span>
+        <span class="pill">poprzednia: L002 · L003 opcjonalnie</span>
+        <span class="pill">następna: L011</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Od komórki do genu">
+        <circle cx="170" cy="170" r="158" fill="none" stroke="#2E4A3E" stroke-width="1.5"/>
+        <circle cx="170" cy="170" r="118" fill="none" stroke="#3C5A4C" stroke-width="1.5"/>
+        <circle cx="170" cy="170" r="80" fill="none" stroke="#4E7362" stroke-width="1.5"/>
+        <circle cx="170" cy="170" r="44" fill="none" stroke="#6F9C86" stroke-width="1.5"/>
+        <text x="170" y="24" text-anchor="middle" fill="#9FD8C2" font-family="IBM Plex Mono" font-size="10.5">KOMÓRKA</text>
+        <text x="170" y="64" text-anchor="middle" fill="#9FD8C2" font-family="IBM Plex Mono" font-size="10.5">JĄDRO</text>
+        <text x="170" y="102" text-anchor="middle" fill="#C9D2C4" font-family="IBM Plex Mono" font-size="10.5">CHROMOSOM</text>
+        <text x="170" y="151" text-anchor="middle" fill="#EAD9B8" font-family="IBM Plex Mono" font-size="10.5">DNA</text>
+        <circle cx="170" cy="170" r="16" fill="#B5651D" opacity="0.85"/>
+        <text x="170" y="174" text-anchor="middle" fill="#12241F" font-family="IBM Plex Mono" font-weight="600" font-size="9.5">GEN</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="filterbar">
+  <div class="wrap">
+    <span class="filter-label">Pokaż warstwy:</span>
+    <button class="chip active" data-layer-toggle="przypomnienie"><span class="sw" style="background:var(--ink-faint)"></span>Przypomnienie</button>
+    <button class="chip active" data-layer-toggle="podstawa"><span class="sw" style="background:var(--violet)"></span>Podstawa E8</button>
+    <button class="chip active" data-layer-toggle="trening"><span class="sw" style="background:var(--amber)"></span>Trening</button>
+    <button class="chip active" data-layer-toggle="master"><span class="sw" style="background:var(--teal)"></span>Master</button>
+    <button class="chip active" data-layer-toggle="zaawansowany"><span class="sw" style="background:var(--rose)"></span>Zaawansowany</button>
+    <button class="chip-reset" id="resetFilters" type="button">tylko must-know</button>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ 0. WPROWADZENIE ============ -->
+<section id="wprowadzenie" data-layer="przypomnienie podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">0</span>Wprowadzenie</div>
+    <h2>O co tu właściwie chodzi?</h2>
+    <p class="sub">Wyobraź sobie, że masz <b>książkę kucharską</b>. Każdy przepis mówi, jak zrobić konkretną potrawę. W każdej komórce twojego ciała jest <b>taka książka kucharska</b> — zapisana czterema symbolami: A, T, C, G. Ta książka nazywa się <b>DNA</b>.</p>
+
+    <blockquote class="callout">
+      <p><b>Uwaga na ważne uproszczenie.</b> DNA <b>nie jest</b> gotowym „projektem całego człowieka", który działa samodzielnie. Cecha powstaje w wyniku <b>współdziałania wielu genów, środowiska oraz rozwoju organizmu</b>. Metafora „plan" albo „instrukcja" pomaga zrozumieć sens, ale nie jest dosłownym opisem.</p>
+    </blockquote>
+
+    <p>Ta lekcja to pełne wprowadzenie do genetyki. Zawiera:</p>
+    <ul class="tick">
+      <li><b>czym jest genetyka</b> i jak odróżnić cechy dziedziczne, nabyte i wieloczynnikowe,</li>
+      <li><b>czym jest DNA</b>, gdzie się znajduje i po co organizmowi,</li>
+      <li><b>podstawy budowy DNA</b>: nukleotyd, cztery zasady, pary A–T, C–G, komplementarność, helisa w zarysie.</li>
+    </ul>
+    <p>W kolejnych lekcjach (L011) rozbudujemy chemię parowania zasad i geometrię helisy: dlaczego A–T, a nie A–C; dlaczego dwie nici; dlaczego antyrównoległe. Tutaj uczymy się tego, co najważniejsze i obowiązkowe.</p>
+  </div>
+</section>
+
+<!-- ============ 0A. DNA W JEDNEJ MINUCIE ============ -->
+<section id="minuta" data-layer="przypomnienie podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">0A</span>DNA w jednej minucie</div>
+    <span class="layer-tag przypomnienie">START</span>
+    <h2>Jeżeli wszystko jest nowe — zacznij tutaj</h2>
+    <p><b>DNA jest cząsteczką.</b> Nie organem, nie komórką i nie gotową cechą.</p>
+    <p>Ta cząsteczka przechowuje informację genetyczną. Informacja jest zapisana w uporządkowanej kolejności czterech podstawowych zasad: <b>A, T, C i G</b>.</p>
+    <pre class="flow">DNA  →  kolejność A, T, C, G  →  informacja  →  działanie komórki</pre>
+    <p>Fragment DNA może być <b>genem</b>. Bardzo długa cząsteczka DNA wraz z białkami tworzy uporządkowaną strukturę zwaną <b>chromosomem</b>.</p>
+    <div class="panel sunken">
+      <div style="font-weight:700;margin-bottom:8px;">Trzy zdania, które mają zostać w głowie</div>
+      <ol class="steps">
+        <li><b>DNA przechowuje informację genetyczną.</b></li>
+        <li><b>Gen jest określonym odcinkiem DNA.</b></li>
+        <li><b>Chromosom jest uporządkowaną strukturą DNA związanego z białkami.</b></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 1. PYTANIE ============ -->
+<section id="pytanie" data-layer="przypomnienie podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">1</span>Pytanie przewodnie</div>
+    <h2>Skąd biorą się podobieństwa i różnice między organizmami?</h2>
+    <blockquote class="callout" style="font-size:1.05rem;font-weight:600;">
+      <p style="margin-bottom:0;">Skąd biorą się podobieństwa i różnice między organizmami — i co sprawia, że organizm „wie", jaki ma być?</p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ 2. CELE ============ -->
+<section id="cele" data-layer="przypomnienie podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">2</span>Cele lekcji + 80/20</div>
+    <span class="layer-tag podstawa">PODSTAWA E8</span>
+    <h2>Co po tej lekcji umiesz</h2>
+
+    <div class="panel teal">
+      <ul class="tick" style="margin-bottom:0;">
+        <li><b>definiujesz</b> genetykę, dziedziczenie i zmienność,</li>
+        <li><b>odróżniasz</b> cechy dziedziczne, nabyte i wieloczynnikowe,</li>
+        <li><b>wyjaśniasz</b>, że fenotyp = geny + środowisko + rozwój,</li>
+        <li><b>wyjaśniasz</b>, czym jest DNA i dlaczego nazywamy je nośnikiem informacji,</li>
+        <li><b>wskazujesz</b>, gdzie w komórce znajduje się DNA,</li>
+        <li><b>wymieniasz</b> składniki nukleotydu,</li>
+        <li><b>rozpoznajesz</b> zasady A, T, C, G i <b>stosujesz</b> komplementarność,</li>
+        <li><b>uzupełniasz</b> nić komplementarną,</li>
+        <li><b>rozróżniasz</b> DNA, gen i chromosom <span style="color:var(--teal-deep);">(MASTER)</span>,</li>
+        <li><b>rozumiesz</b>, że nie każdy fragment DNA to gen <span style="color:var(--teal-deep);">(MASTER)</span>,</li>
+        <li><b>wiesz</b>, że regulacja ekspresji i mtDNA to warstwa zaawansowana <span style="color:var(--rose);">(ZAAW.)</span>.</li>
+      </ul>
+    </div>
+
+    <h3>Zasada 80/20 — co daje 80% efektu</h3>
+    <table>
+      <thead><tr><th>20% = 80% efektu</th><th>DLACZEGO to jest kluczowe</th></tr></thead>
+      <tbody>
+        <tr><td><b>Genetyka = dziedziczenie + zmienność</b></td><td>Definicja działu — od tego zaczyna się cała reszta.</td></tr>
+        <tr><td><b>Cecha dziedziczna vs nabyta vs wieloczynnikowa</b></td><td>Najczęstszy błąd w zadaniach.</td></tr>
+        <tr><td><b>Fenotyp = geny + środowisko + rozwój</b></td><td>Klucz do zrozumienia, że „geny to nie wszystko".</td></tr>
+        <tr><td><b>DNA = nośnik informacji</b></td><td>Fundament lokalizacji — od tego zaczyna się L011.</td></tr>
+        <tr><td><b>A–T, C–G</b></td><td>Jak tabliczka mnożenia w genetyce.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 3. KOMPAS ============ -->
+<section id="kompas" data-layer="przypomnienie">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">3</span>Kompas</div>
+    <span class="layer-tag przypomnienie">PRZYPOMNIENIE</span>
+    <h2>Co trzeba wiedzieć wcześniej</h2>
+    <div class="panel">
+      <ul class="tick">
+        <li><b>L001 (komórka):</b> komórka ma jądro komórkowe; jądro zawiera materiał genetyczny.</li>
+        <li><b>L003 (diagnoza):</b> sprawdziłeś, co już wiesz o DNA, chromosomach i dziedziczeniu.</li>
+        <li><b>Z życia:</b> każdy słyszał o „genach po rodzicach", „badaniach DNA", „testach ojcostwa".</li>
+      </ul>
+      <p style="font-size:0.9rem;margin-top:8px;margin-bottom:0;">Nie musisz nic więcej umieć. Ta lekcja zakłada, że zaczynasz od zera albo po diagnozie.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. PROBLEM ============ -->
+<section id="problem" data-layer="przypomnienie podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">4</span>Zacznij od problemu</div>
+    <h2>Trzy pytania na start</h2>
+    <div class="panel sunken">
+      <ol class="steps">
+        <li>Skąd dziecko ma cechy podobne do rodziców — skoro rodzice nie przekazują mu swojego ciała?</li>
+        <li>Skąd komórka „wie", że ma zbudować akurat takie białko, jakie jest potrzebne?</li>
+        <li>Dlaczego jedno jajko i jeden plemnik wystarczą, żeby powstał cały człowiek?</li>
+      </ol>
+      <p><b>Hipoteza ucznia:</b> ....................................</p>
+      <p style="margin-bottom:0;"><b>Podpowiedź:</b> Coś musi być <b>przekazywane</b> z rodziców na dziecko — coś, co <b>zawiera informację</b>. Ale to nie może być ciało ani narządy. Musi to być <b>cząsteczka</b>. Ta cząsteczka to <b>DNA</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. ŚCIĄGA ============ -->
+<section id="sciaga" data-layer="podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">5</span>Ściąga</div>
+    <span class="layer-tag podstawa">PODSTAWA E8</span>
+    <h2>Definicje podstawowe</h2>
+
+    <h3>5.1. Genetyka, dziedziczenie i zmienność</h3>
+    <div class="panel">
+      <p><b>Genetyka</b> — nauka o <b>dziedziczeniu</b> i <b>zmienności</b>.</p>
+      <ul class="tick" style="margin-bottom:0;">
+        <li><b>Dziedziczenie</b> — przekazywanie z rodziców na potomstwo informacji genetycznej, która wpływa na rozwój określonych cech.</li>
+        <li><b>Zmienność</b> — występowanie różnic między osobnikami tego samego gatunku.</li>
+      </ul>
+    </div>
+
+    <h3>5.2. Typy cech — trzy szuflady</h3>
+    <table>
+      <thead><tr><th>Typ cechy</th><th>Co to</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td><b>Głównie genetyczna</b></td><td>silnie zależna od odziedziczonych wariantów genów</td><td>grupa krwi ABO</td></tr>
+        <tr><td><b>Nabyta</b></td><td>powstaje w ciągu życia pod wpływem środowiska, doświadczeń lub urazów</td><td>blizna, znajomość języka, opalenizna</td></tr>
+        <tr><td><b>Wieloczynnikowa</b></td><td>współdziałanie wielu genów, środowiska i rozwoju</td><td>wzrost, wiele cech wyglądu</td></tr>
+      </tbody>
+    </table>
+    <blockquote class="callout">
+      <p style="margin-bottom:0;"><b>Doprecyzowanie:</b> „Gen decyduje o cesze" to <b>uproszczenie</b>. Gen zawiera informację o produkcie (RNA/białku); fenotyp wynika ze współdziałania genów, środowiska i rozwoju.</p>
+    </blockquote>
+
+    <h3>5.3. Czym jest DNA?</h3>
+    <div class="panel">
+      <p><b>DNA</b> = <b>kwas deoksyrybonukleinowy</b>. To <b>cząsteczka chemiczna</b>, która <b>przechowuje informację genetyczną</b> — czyli informację potrzebną do budowy i funkcjonowania organizmu.</p>
+      <p><b>Najprościej:</b> DNA to <b>nośnik informacji biologicznej</b>. Nie „gotowy organizm", nie „plan w sensie rysunku" — tylko <b>cząsteczka chemiczna</b>, która zawiera instrukcję w zakodowanej formie.</p>
+    </div>
+
+    <blockquote class="callout">
+      <p style="margin-bottom:0;"><b>„DNA to plan" albo „DNA to instrukcja" to metafora.</b> Pomaga zrozumieć sens, ale nie jest dosłownym opisem. DNA nie jest kartką z narysowanym domem ani instrukcją obsługi z ponumerowanymi krokami. To cząsteczka chemiczna, w której <b>kolejność elementów</b> niesie informację biologiczną.</p>
+    </blockquote>
+
+    <h3>5.4. Gdzie DNA się znajduje?</h3>
+    <table>
+      <thead><tr><th>Organizm</th><th>Gdzie jest DNA?</th></tr></thead>
+      <tbody>
+        <tr><td><b>Zwierzęta i rośliny (eukarionty)</b></td><td><b>Głównie w jądrze komórkowym</b>; niewielka ilość w mitochondriach</td></tr>
+        <tr><td><b>Rośliny i glony</b></td><td>Jądro + mitochondria + <b>chloroplasty</b></td></tr>
+        <tr><td><b>Bakterie (prokarionty)</b></td><td><b>Bez jądra</b> — DNA leży bezpośrednio w cytoplazmie, w obszarze zwanym <b>nukleoidem</b></td></tr>
+      </tbody>
+    </table>
+    <div class="panel rose" data-layer="trening">
+      <p style="margin-bottom:0;"><b>Wyjątek:</b> <b>dojrzały erytrocyt człowieka</b> (czerwona krwinka) <b>nie ma jądra ani mitochondriów</b> — dlatego nie zawiera DNA. Krew nadal może służyć do badania DNA — materiał pochodzi wtedy z leukocytów (białych krwinek), które jądro mają.</p>
+    </div>
+
+    <h3 id="informacja">5.5. Co właściwie znaczy „informacja genetyczna"?</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px;">
+      <div class="panel rose" style="margin-bottom:0;">
+        <div style="font-weight:700;color:var(--rose);margin-bottom:10px;">DNA NIE zawiera:</div>
+        <ul class="tick" style="margin-bottom:0;">
+          <li>miniaturowego człowieka — nie ma w nim narysowanego ciała,</li>
+          <li>listy gotowych cech typu „kolor oczu: brązowy",</li>
+          <li>instrukcji, która „działa sama" bez komórki.</li>
+        </ul>
+      </div>
+      <div class="panel teal" style="margin-bottom:0;">
+        <div style="font-weight:700;color:var(--teal-deep);margin-bottom:10px;">Informacja genetyczna JEST:</div>
+        <ul class="tick" style="margin-bottom:0;">
+          <li>zakodowana w kolejności elementów DNA,</li>
+          <li>odczytywana fragmentami, zależnie od komórki,</li>
+          <li>współkształtowana przez warunki środowiska.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>5.6. DNA / gen / chromosom — trzy poziomy</h3>
+    <table>
+      <thead><tr><th>Poziom</th><th>Co to</th><th>Analogia</th></tr></thead>
+      <tbody>
+        <tr><td><b>DNA</b></td><td>cała cząsteczka — „książka kucharska"</td><td>cała książka</td></tr>
+        <tr><td><b>Gen</b></td><td>odcinek DNA — „przepis na jedną potrawę"</td><td>jeden przepis</td></tr>
+        <tr><td><b>Chromosom</b></td><td>struktura z DNA i białek — „tom książki"</td><td>jeden tom</td></tr>
+      </tbody>
+    </table>
+    <div class="panel rose" data-layer="trening">
+      <p style="color:var(--rose);font-weight:700;font-size:14px;margin-bottom:6px;">✕ Sformułowanie dydaktycznie zdradliwe</p>
+      <p>„Gen jest częścią DNA, a DNA jest częścią chromosomu." — sugeruje, że DNA „wchodzi do chromosomu jak do pudełka". To jest za krótkie i prowadzi do nieporozumień.</p>
+      <p style="color:var(--teal-deep);font-weight:700;font-size:14px;margin-bottom:6px;">✓ Poprawne sformułowanie</p>
+      <p style="margin-bottom:0;"><b>Chromosom to struktura zbudowana z długiej cząsteczki DNA związanej z białkami (histonami).</b> Gen to odcinek DNA — fragment cząsteczki, nie oddzielny „element", który można włożyć do chromosomu.</p>
+    </div>
+
+    <h3>5.7. DNA jako nośnik — trzy analogie</h3>
+    <div class="analogy-grid">
+      <div class="analogy-card"><div class="ico">📖</div><div class="t">Książka</div><div class="d">przechowuje treść, ale sama nie jest treścią</div></div>
+      <div class="analogy-card"><div class="ico">💾</div><div class="t">Pendrive</div><div class="d">przechowuje plik, ale sam nie jest plikiem</div></div>
+      <div class="analogy-card"><div class="ico">🧬</div><div class="t">DNA</div><div class="d">przechowuje informację biologiczną, ale samo nie jest „żywym organizmem"</div></div>
+    </div>
+
+    <h3>5.8. DNA w 6 zdaniach (bezpieczny punkt powrotu)</h3>
+    <ol class="steps">
+      <li>DNA to kwas nukleinowy, który przechowuje informację genetyczną.</li>
+      <li>Jest zbudowany z nukleotydów: deoksyrybozy, reszty fosforanowej i zasady azotowej.</li>
+      <li>W DNA występują cztery zasady: A, T, C i G.</li>
+      <li>W dwuniciowym DNA A łączy się z T, a C z G.</li>
+      <li>Informacja zależy przede wszystkim od kolejności zasad (sekwencji).</li>
+      <li>Gen jest odcinkiem DNA; jego informacja może prowadzić do powstania RNA lub białka.</li>
+    </ol>
+
+    <h3>5.9. Mnemotechniki</h3>
+    <table>
+      <thead><tr><th>#</th><th>Mnemotechnika</th><th>Znaczenie</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><b>Dziedziczne = z DNA</b></td><td>przekazywane</td></tr>
+        <tr><td>2</td><td><b>Nabyte = z życia</b></td><td>środowisko</td></tr>
+        <tr><td>3</td><td><b>Wieloczynnikowe = DNA + świat</b></td><td>geny + środowisko</td></tr>
+        <tr><td>4</td><td><b>Genotyp w genach, fenotyp w „fenie"</b></td><td>genotyp ≠ fenotyp</td></tr>
+        <tr><td>5</td><td><b>DNA = nośnik informacji</b></td><td>nie „gotowy organizm"</td></tr>
+        <tr><td>6</td><td><b>Jądro = biblioteka</b></td><td>główne miejsce DNA</td></tr>
+        <tr><td>7</td><td><b>A–T, C–G</b></td><td>pary zasad</td></tr>
+        <tr><td>8</td><td><b>Puryna + pirymidyna</b></td><td>stała szerokość helisy</td></tr>
+        <tr><td>9</td><td><b>Deoksyryboza = DNA</b></td><td>cukier (deoksy- = bez tlenu)</td></tr>
+        <tr><td>10</td><td><b>T w DNA, U w RNA</b></td><td>nie mylić</td></tr>
+      </tbody>
+    </table>
+
+    <h3>5.10. DNA vs RNA — tabela zbiorcza</h3>
+    <table>
+      <thead><tr><th>Cecha</th><th>DNA</th><th>RNA</th></tr></thead>
+      <tbody>
+        <tr><td>Pełna nazwa</td><td>kwas deoksyrybonukleinowy</td><td>kwas rybonukleinowy</td></tr>
+        <tr><td>Cukier</td><td>deoksyryboza</td><td>ryboza</td></tr>
+        <tr><td>Zasady</td><td>A, T, C, G</td><td>A, U, C, G</td></tr>
+        <tr><td>Struktura</td><td>dwie nici (helisa)</td><td>zwykle jedna nić</td></tr>
+        <tr><td>Rola główna</td><td>przechowywanie informacji</td><td>odczyt / przekazywanie</td></tr>
+        <tr><td>Lokalizacja</td><td>jądro (głównie)</td><td>jądro i cytoplazma</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 6. WYJAŚNIENIE ============ -->
+<section id="wyjasnienie" data-layer="podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">6</span>Wyjaśnienie od podstaw</div>
+    <span class="layer-tag podstawa">PODSTAWA E8</span>
+    <h2>Jak to działa?</h2>
+
+    <h3>6.1. Od genu do cechy</h3>
+    <div class="panel">
+      <pre class="flow">DNA (gen) → RNA / białko → funkcja w komórce → udział w cesze
+                                            (+ środowisko i rozwój)</pre>
+      <p>To jest <b>model podstawowy</b>. W rzeczywistości:</p>
+      <ul class="tick" style="margin-bottom:0;">
+        <li>nie każdy fragment DNA koduje białko,</li>
+        <li>nie każda cecha zależy od jednego genu,</li>
+        <li>środowisko współtworzy fenotyp.</li>
+      </ul>
+    </div>
+
+    <h3>6.2. Po co w ogóle helisa?</h3>
+    <div class="panel">
+      <p>Wyobraź sobie <b>zamek błyskawiczny</b>. Ma dwie części, które do siebie pasują — jeśli rozsuniesz zamek, każda część może posłużyć jako „wzór" do odtworzenia drugiej.</p>
+      <p style="margin-bottom:0;"><b>DNA działa podobnie:</b> ma dwie komplementarne nici, każda może być <b>matrycą</b> dla drugiej. Dzięki temu kopiowanie (replikacja) jest wierne. To jest <b>cała logika</b> podwójnej helisy: <b>struktura umożliwia funkcję</b>.</p>
+    </div>
+
+    <h3>6.3. Dlaczego większość DNA eukariontów znajduje się w jądrze?</h3>
+    <div class="panel teal">
+      <p>Jądro to <b>oddzielony przedział</b> — otoczony błoną jądrową. Pomaga organizować materiał genetyczny i kontrolować jego odczytywanie. Nie oznacza to jednak, że DNA jest całkowicie chronione przed uszkodzeniami.</p>
+      <p>U eukariontów większość DNA znajduje się w jądrze, ale DNA występuje także w mitochondriach, a u roślin i glonów również w chloroplastach. Bakterie nie mają jądra.</p>
+      <p>Dzięki temu:</p>
+      <ul class="tick" style="margin-bottom:0;">
+        <li>DNA jest <b>chronione</b> przed uszkodzeniami mechanicznymi,</li>
+        <li><b>odczyt</b> DNA może być <b>kontrolowany</b> (komórka decyduje, które fragmenty są aktywne),</li>
+        <li>przed podziałem DNA może być <b>upakowane</b> i <b>równozdzielone</b>.</li>
+      </ul>
+    </div>
+
+    <h3>6A. Dlaczego?</h3>
+    <div class="panel sunken">
+      <ol class="steps" style="margin-bottom:0;">
+        <li><b>Dlaczego cechy dziedziczne się przekazują?</b> Bo są w DNA przekazywanym w gametach.</li>
+        <li><b>Dlaczego cechy nabyte się nie dziedziczą?</b> Bo nie zmieniają DNA w gametach.</li>
+        <li><b>Dlaczego fenotyp to nie tylko geny?</b> Bo środowisko wpływa na ujawnianie genów.</li>
+        <li><b>Dlaczego A łączy się z T, a nie z C?</b> Stała szerokość helisy (puryna + pirymidyna) + chemiczny układ miejsc wiązania.</li>
+        <li><b>Dlaczego komplementarność kluczowa?</b> Umożliwia wierne kopiowanie i odczyt.</li>
+        <li><b>Dlaczego informacja w kolejności?</b> Bo kolejność zasad określa kolejność aminokwasów w białku.</li>
+        <li><b>Dlaczego dwie nici?</b> Stabilizacja, naprawa, wierne kopiowanie.</li>
+      </ol>
+    </div>
+
+    <h3>6B. Krok po kroku — uzupełnianie nici</h3>
+    <ol class="steps">
+      <li><b>Weź sekwencję</b> (np. A–G–T–C).</li>
+      <li><b>Dopisz partnera:</b> A → T, T → A, G → C, C → G.</li>
+      <li><b>Wynik:</b> T–C–A–G.</li>
+      <li><b>Sprawdź:</b> każda para to puryna + pirymidyna? (tak).</li>
+    </ol>
+    <p><b>Uwaga:</b> W DNA nie ma U. Jeśli widzisz U, to RNA.</p>
+
+    <h3>6C. Przykład prowadzony</h3>
+    <div class="panel">
+      <p><b>Matryca:</b> <code>5'– A T G C C A –3'</code><br>
+      <b>Nić komplementarna:</b> <code>3'– T A C G G T –5'</code></p>
+      <p style="margin-bottom:0;">Wszystkie pary poprawne. Po replikacji: 2 cząsteczki, każda = stara + nowa nić (semikonserwatywność).</p>
+    </div>
+
+    <h3>6D. Powiązanie z innymi lekcjami</h3>
+    <div class="panel sunken">
+      <pre class="flow" style="background:transparent;color:var(--ink);border:1px solid var(--line);">L001 (komórka: jądro)
+  → L003 (diagnoza)
+  → L010 (ta lekcja: cechy + DNA jako nośnik)
+  → L011 (DNA: chemia parowania i geometria helisy)
+  → L012 (chromosom)
+  → L013 (replikacja)
+  → L015 (mejoza)
+  → L017 (dziedziczenie)
+  → L020 (mutacje)</pre>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. MASTER ============ -->
+<section id="master" data-layer="master">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">7</span>Poziom MASTER</div>
+    <span class="layer-tag master">MASTER</span>
+    <h2>DNA, gen, chromosom — trzy poziomy organizacji</h2>
+    <p class="sub">To najczęstsze źródło pomyłek. Zapamiętaj różnicę między trzema poziomami.</p>
+
+    <table>
+      <thead><tr><th>Poziom</th><th>Co to</th><th>Analogia</th></tr></thead>
+      <tbody>
+        <tr><td><b>DNA</b></td><td>cała cząsteczka — „książka kucharska"</td><td>cała książka</td></tr>
+        <tr><td><b>Gen</b></td><td>odcinek DNA — „przepis na jedną potrawę"</td><td>jeden przepis</td></tr>
+        <tr><td><b>Chromosom</b></td><td>struktura z DNA i białek — „tom książki"</td><td>jeden tom</td></tr>
+      </tbody>
+    </table>
+
+    <h3>7.1. Nie każdy fragment DNA to gen</h3>
+    <div class="panel">
+      <p>DNA zawiera:</p>
+      <ul class="tick" style="margin-bottom:0;">
+        <li><b>geny</b> — fragmenty z informacją o produkcie,</li>
+        <li><b>regiony niekodujące</b> — nie zawierają przepisu na białko, ale mogą pełnić funkcje regulacyjne,</li>
+        <li><b>regiony regulatorowe</b> — decydują, kiedy i gdzie gen zostanie odczytany,</li>
+        <li><b>sekwencje powtarzalne</b> — powtarzające się fragmenty o różnych funkcjach.</li>
+      </ul>
+      <p style="margin-bottom:0;margin-top:10px;"><b>Wniosek:</b> „DNA = zbiór genów" to uproszczenie. Geny to tylko <b>część</b> DNA.</p>
+    </div>
+
+    <h3>7.2. „Mam gen" ≠ „będę miał cechę"</h3>
+    <div class="panel">
+      <ul class="tick" style="margin-bottom:0;">
+        <li>Gen może być <b>nieaktywny</b> w danej komórce (regulacja ekspresji).</li>
+        <li>Gen może występować w wersji, która się <b>nie ujawnia</b> (allel recesywny).</li>
+        <li>Efekt genu może zależeć od <b>innych genów</b> (epistaza, cechy wielogenowe).</li>
+        <li>Środowisko może <b>modyfikować</b> efekt genu.</li>
+      </ul>
+    </div>
+    <p><b>Wniosek:</b> posiadanie genu to <b>potencjał</b>, nie wyrok.</p>
+  </div>
+</section>
+
+<!-- ============ 8. CZEGO DNA NIE OZNACZA ============ -->
+<section id="nie-oznacza" data-layer="podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">8</span>Moduł kluczowy</div>
+    <span class="layer-tag podstawa">PODSTAWA E8</span>
+    <h2>Czego DNA NIE oznacza</h2>
+    <p class="sub">Chroni przed najczęstszymi błędami potocznymi. Jeśli w rozmowie o DNA pojawi się któreś z tych zdań — to sygnał do sprawdzenia.</p>
+
+    <div class="miscon-grid">
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„DNA to gotowy organizm."</span></div><div class="right"><span>✓</span><span>DNA to nośnik informacji — sam nie tworzy organizmu.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„Gen to cały chromosom."</span></div><div class="right"><span>✓</span><span>Gen to fragment DNA; chromosom to struktura z DNA i białkami.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„Jedno DNA = jedna cecha."</span></div><div class="right"><span>✓</span><span>Wiele cech zależy od wielu genów i środowiska.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„Mam gen na X, więc na pewno będę miał X."</span></div><div class="right"><span>✓</span><span>Gen to predyspozycja, nie gwarancja.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„Informacja genetyczna to los raz na zawsze."</span></div><div class="right"><span>✓</span><span>Mutacje ją zmieniają, a regulacja wpływa na to, jak działa.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„Mutacja = choroba."</span></div><div class="right"><span>✓</span><span>Mutacja może być neutralna, szkodliwa lub korzystna.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„DNA jest tylko w jądrze."</span></div><div class="right"><span>✓</span><span>Jest też w mitochondriach; u roślin — w chloroplastach.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„Każda komórka ma DNA w jądrze."</span></div><div class="right"><span>✓</span><span>Dojrzały erytrocyt nie ma jądra ani mitochondriów.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„DNA działa samo."</span></div><div class="right"><span>✓</span><span>Musi być odczytane przez komórkę.</span></div></div>
+      <div class="miscon-card"><div class="wrong"><span>✕</span><span>„DNA to instrukcja obsługi."</span></div><div class="right"><span>✓</span><span>To metafora — nie ma tam ponumerowanych kroków.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. ZAAWANSOWANY ============ -->
+<section id="zaawansowany" data-layer="zaawansowany">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">9</span>Dla chętnych</div>
+    <span class="layer-tag zaawansowany">ZAAWANSOWANY</span>
+    <h2>Regulacja, mtDNA i wyjątki</h2>
+    <p class="sub">Ta sekcja nie jest wymagana na E8. Możesz ją pominąć przy pierwszym czytaniu.</p>
+
+    <h3>9.1. Regulacja ekspresji i epigenetyka</h3>
+    <p>To, <b>które geny są odczytywane</b> i <b>jak intensywnie</b>, zależy od:</p>
+    <ul class="tick">
+      <li><b>regulacji ekspresji</b> — białka regulatorowe decydują, które geny są aktywne,</li>
+      <li><b>modyfikacji epigenetycznych</b> — drobne zmiany chemiczne (np. metylacja DNA) wpływają na aktywność genów bez zmiany sekwencji.</li>
+    </ul>
+    <p>Dlatego <b>ta sama informacja genetyczna może dawać różne efekty</b> w różnych komórkach i warunkach.</p>
+
+    <h3>9.2. mtDNA — materiał genetyczny poza jądrem</h3>
+    <p><b>mtDNA</b> (mitochondrialny DNA) to osobny materiał genetyczny znajdujący się w mitochondriach.</p>
+    <ul class="tick">
+      <li>Ma <b>kolisty kształt</b>.</li>
+      <li>Dziedziczy się u człowieka <b>prawie zawsze po matce</b>.</li>
+      <li>Koduje <b>część</b> białek mitochondrialnych.</li>
+    </ul>
+    <p><b>Konsekwencja:</b> niektóre choroby dziedziczą się „po matce" — bo dotyczą właśnie mtDNA.</p>
+
+    <h3>9.3. Wyjątki od prostych reguł</h3>
+    <ul class="tick">
+      <li><b>Nie każdy gen → jedno białko.</b> Niektóre geny kodują funkcjonalne RNA.</li>
+      <li><b>Nie każda cecha → jeden gen.</b> Wiele cech jest wielogenowych.</li>
+      <li><b>Nie każda mutacja → zmiana fenotypu.</b> Wiele mutacji jest cichych (L020).</li>
+      <li><b>Nie każda informacja dziedziczna → DNA jądrowy.</b> mtDNA dziedziczy się inaczej.</li>
+    </ul>
+    <p style="margin-bottom:0;">Biologia jest bardziej złożona niż podstawowe modele. Modele są użyteczne, ale nie są pełnym opisem.</p>
+  </div>
+</section>
+
+<!-- ============ 10. KLINIKA ============ -->
+<section id="klinika" data-layer="trening podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">10</span>Praktyka rozpoznawania</div>
+    <span class="layer-tag trening">TRENING</span>
+    <h2>Klinika błędów</h2>
+
+    <h3>10.1. Tabela błędów</h3>
+    <table>
+      <thead><tr><th>Błąd</th><th>Poprawa</th><th>Dlaczego?</th></tr></thead>
+      <tbody>
+        <tr class="error-row"><td>„DNA to gotowy organizm"</td><td>DNA to nośnik informacji</td><td>sam nie tworzy organizmu</td></tr>
+        <tr class="error-row"><td>„DNA = instrukcja obsługi"</td><td>DNA to nośnik zakodowanej informacji</td><td>to metafora, nie dosłowny opis</td></tr>
+        <tr class="error-row"><td>„Gen = chromosom"</td><td>gen = fragment DNA; chromosom = struktura</td><td>różne poziomy</td></tr>
+        <tr class="error-row"><td>„DNA jest tylko w jądrze"</td><td>+ mitochondria, + chloroplasty u roślin</td><td>mtDNA i cpDNA</td></tr>
+        <tr class="error-row"><td>„Każda komórka ma jądro"</td><td>wyjątek: dojrzały erytrocyt</td><td>brak jądra i mitochondriów</td></tr>
+        <tr class="error-row"><td>„Mam gen na X → na pewno będę miał X"</td><td>gen to predyspozycja</td><td>allele, inne geny, środowisko</td></tr>
+        <tr class="error-row"><td>„Mutacja = choroba"</td><td>mutacja może być neutralna, szkodliwa lub korzystna</td><td>kontekst i miejsce zmiany</td></tr>
+        <tr class="error-row"><td>„Wszystko jest w genach"</td><td>geny + środowisko</td><td>cechy wieloczynnikowe</td></tr>
+        <tr class="error-row"><td>„Blizna dziedziczy się"</td><td>cecha nabyta</td><td>nie wszystko po rodzicach</td></tr>
+        <tr class="error-row"><td>„Cechy dominujące są częstsze"</td><td>zależy od populacji</td><td>dominacja ≠ częstość</td></tr>
+        <tr class="error-row"><td>„Tymina łączy się z guaniną"</td><td>tymina z adeniną</td><td>A–T, C–G</td></tr>
+        <tr class="error-row"><td>„Nukleotyd = zasada"</td><td>cukier + fosforan + zasada</td><td>trzy składniki</td></tr>
+        <tr class="error-row"><td>„DNA to jedna nić"</td><td>dwie nici</td><td>komplementarność i stabilność</td></tr>
+        <tr class="error-row"><td>„Kolejność zasad nie ma znaczenia"</td><td>kolejność = informacja</td><td><code>ATGCC</code> ≠ <code>ATGGC</code></td></tr>
+        <tr class="error-row"><td>„W DNA jest U"</td><td>w DNA jest T; U w RNA</td><td>różnica DNA/RNA</td></tr>
+        <tr class="error-row"><td>„A łączy się z C, bo obie mają odpowiednią szerokość"</td><td>A–T, C–G</td><td>szerokość to nie wszystko — liczy się chemia grup</td></tr>
+      </tbody>
+    </table>
+
+    <h3>10.2. Klinika 2.0 — pięć pełnych przykładów</h3>
+
+    <div class="clinic-card">
+      <div class="clinic-head">Przykład 1 — „DNA to plan organizmu"</div>
+      <div class="clinic-body">
+        <dl>
+          <dt>Błąd</dt><dd>„DNA to plan organizmu, jak rysunek architekta."</dd>
+          <dt>Znajdź</dt><dd>Potoczne uproszczenie metafory.</dd>
+          <dt>Popraw</dt><dd>DNA to <b>cząsteczka chemiczna</b>, która <b>przechowuje zakodowaną informację</b>. Metafora „plan" pomaga zrozumieć sens, ale nie jest dosłownym opisem.</dd>
+          <dt>Reguła</dt><dd>DNA = nośnik; nie „gotowy plan".</dd>
+          <dt>Pułapka</dt><dd>Potoczne „plan" sugeruje gotowy rysunek — tak nie jest.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="clinic-card">
+      <div class="clinic-head">Przykład 2 — „Każda komórka ma taki sam DNA, więc tak samo działa"</div>
+      <div class="clinic-body">
+        <dl>
+          <dt>Błąd</dt><dd>„Skoro każda komórka ma ten sam DNA, to wszystkie działają tak samo."</dd>
+          <dt>Znajdź</dt><dd>Pominięcie regulacji ekspresji.</dd>
+          <dt>Popraw</dt><dd>Każda komórka ma ten sam <b>zestaw</b> DNA, ale <b>odczytuje inne fragmenty</b> — dlatego neuron i komórka mięśniowa są różne.</dd>
+          <dt>Reguła</dt><dd>ta sama informacja, różne wykorzystanie.</dd>
+          <dt>Pułapka</dt><dd>„Ten sam DNA = ta sama funkcja" — nie.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="clinic-card">
+      <div class="clinic-head">Przykład 3 — „Skoro mam gen, to na pewno…"</div>
+      <div class="clinic-body">
+        <dl>
+          <dt>Błąd</dt><dd>„Mam wariant genu związany ze wzrostem, więc na pewno będę wysoki."</dd>
+          <dt>Znajdź</dt><dd>Pomylenie potencjału z gwarancją.</dd>
+          <dt>Popraw</dt><dd>Gen to <b>predyspozycja</b>. Wzrost zależy od wielu genów i środowiska (odżywianie, sen, choroby).</dd>
+          <dt>Reguła</dt><dd>gen ≠ gwarancja.</dd>
+          <dt>Pułapka</dt><dd>„Gen = wyrok" — nie.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="clinic-card">
+      <div class="clinic-head">Przykład 4 — „Środowisko działa niezależnie od DNA"</div>
+      <div class="clinic-body">
+        <dl>
+          <dt>Błąd</dt><dd>„Środowisko działa niezależnie od DNA."</dd>
+          <dt>Znajdź</dt><dd>Uproszczenie.</dd>
+          <dt>Popraw</dt><dd>Środowisko <b>współdziała</b> z genami — może wpływać na aktywność części genów, a geny wpływają na to, jak organizm reaguje na warunki.</dd>
+          <dt>Reguła</dt><dd>geny + środowisko = współdziałanie.</dd>
+          <dt>Pułapka</dt><dd>„Albo geny, albo środowisko" — nie.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="clinic-card">
+      <div class="clinic-head">Przykład 5 — „A łączy się z C, bo obie mają odpowiednią szerokość"</div>
+      <div class="clinic-body">
+        <dl>
+          <dt>Błąd</dt><dd>„A łączy się z C, bo obie mają odpowiednią szerokość."</dd>
+          <dt>Znajdź</dt><dd>Pominięcie chemii grup.</dd>
+          <dt>Popraw</dt><dd>A–C ma odpowiednią szerokość, ale <b>złe grupy chemiczne</b> — nie tworzy wiązań wodorowych w prawidłowy sposób.</dd>
+          <dt>Reguła</dt><dd>Para musi mieć <b>szerokość + chemię</b>.</dd>
+          <dt>Pułapka</dt><dd>„Szerokość wystarczy" — nie.</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. BUDOWA DNA ============ -->
+<section id="budowa" data-layer="trening master">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">11</span>Budowa DNA</div>
+    <span class="layer-tag trening">TRENING</span>
+    <h2>Nukleotyd, pary zasad, helisa</h2>
+    <p class="sub">To jest warstwa treningowa. Na poziomie podstawy wystarczy wiedzieć, że DNA ma cztery zasady A, T, C, G i że A–T, C–G. Reszta to rozszerzenie.</p>
+
+    <h3>11.1. Nukleotyd — cegiełka DNA</h3>
+    <div class="diagram-frame">
+      <svg viewBox="0 0 340 320" width="340" height="320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Budowa nukleotydu" style="max-width:340px;display:block;margin:0 auto;">
+        <rect x="70" y="20" width="200" height="60" rx="10" fill="#F2ECFA" stroke="#7C3AED" stroke-width="2.5"/>
+        <text x="170" y="42" text-anchor="middle" font-family="Segoe UI" font-size="11" font-weight="700" fill="#5b21b6">ZASADA AZOTOWA</text>
+        <text x="120" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2D8F5E">A</text>
+        <text x="153" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#E67E22">T</text>
+        <text x="186" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2B6CB0">C</text>
+        <text x="219" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#7C3AED">G</text>
+        <line x1="170" y1="80" x2="170" y2="115" stroke="#334155" stroke-width="2.5"/>
+        <polygon points="170,115 220,150 220,205 170,240 120,205 120,150" fill="#F1F5F9" stroke="#94a3b8" stroke-width="2.5"/>
+        <text x="170" y="168" text-anchor="middle" font-family="Segoe UI" font-size="11" font-weight="700" fill="#475569">CUKIER</text>
+        <text x="170" y="185" text-anchor="middle" font-family="Segoe UI" font-size="11" font-weight="700" fill="#475569">deoksyryboza</text>
+        <line x1="170" y1="240" x2="170" y2="270" stroke="#334155" stroke-width="2.5"/>
+        <circle cx="170" cy="290" r="22" fill="#FEF3C7" stroke="#FACC15" stroke-width="2.5"/>
+        <text x="170" y="296" text-anchor="middle" font-family="Segoe UI" font-size="16" font-weight="700" fill="#92400E">P</text>
+      </svg>
+      <div class="diagram-cap">Nukleotyd = zasada azotowa + deoksyryboza + fosforan</div>
+    </div>
+    <p><b>Ważne:</b> nukleotyd to <b>nie sama litera</b> A, T, C lub G. Litera oznacza tylko <b>zasadę azotową</b>. Cała cegiełka DNA zawiera jeszcze cukier — deoksyrybozę — oraz resztę fosforanową.</p>
+
+    <table>
+      <thead><tr><th>Składnik</th><th>Co to</th><th>Rola</th></tr></thead>
+      <tbody>
+        <tr><td><b>Cukier deoksyryboza</b></td><td>Pięciowęglowy cukier</td><td>Szkielet</td></tr>
+        <tr><td><b>Reszta fosforanowa</b></td><td>Grupa –PO₄</td><td>Łączy nukleotydy w łańcuch</td></tr>
+        <tr><td><b>Zasada azotowa</b></td><td>A, T, C lub G</td><td>Nosi informację</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead><tr><th>Symbol</th><th>Nazwa</th><th>Typ</th><th>Wielkość</th></tr></thead>
+      <tbody>
+        <tr><td><b>A</b></td><td>adenina</td><td>puryna</td><td>duża</td></tr>
+        <tr><td><b>G</b></td><td>guanina</td><td>puryna</td><td>duża</td></tr>
+        <tr><td><b>T</b></td><td>tymina</td><td>pirymidyna</td><td>mała</td></tr>
+        <tr><td><b>C</b></td><td>cytozyna</td><td>pirymidyna</td><td>mała</td></tr>
+      </tbody>
+    </table>
+
+    <h3>11.2. Pary komplementarne — A–T, C–G</h3>
+    <div class="pair-cards">
+      <div class="pair-card" style="border-color:#2D8F5E;">
+        <div class="pair-title">Para A–T · 2 wiązania</div>
+        <svg viewBox="0 0 200 80" width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="20" width="50" height="40" rx="8" fill="#E6F6EC" stroke="#2D8F5E" stroke-width="2.5"/>
+          <text x="35" y="48" text-anchor="middle" font-family="Courier New" font-size="22" font-weight="700" fill="#2D8F5E">A</text>
+          <line x1="64" y1="32" x2="136" y2="32" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <line x1="64" y1="48" x2="136" y2="48" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <rect x="140" y="20" width="50" height="40" rx="8" fill="#FDF1E1" stroke="#E67E22" stroke-width="2.5"/>
+          <text x="165" y="48" text-anchor="middle" font-family="Courier New" font-size="22" font-weight="700" fill="#E67E22">T</text>
+        </svg>
+      </div>
+      <div class="pair-card" style="border-color:#2B6CB0;">
+        <div class="pair-title">Para C–G · 3 wiązania</div>
+        <svg viewBox="0 0 200 80" width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="20" width="50" height="40" rx="8" fill="#E5EFFA" stroke="#2B6CB0" stroke-width="2.5"/>
+          <text x="35" y="48" text-anchor="middle" font-family="Courier New" font-size="22" font-weight="700" fill="#2B6CB0">C</text>
+          <line x1="64" y1="28" x2="136" y2="28" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <line x1="64" y1="40" x2="136" y2="40" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <line x1="64" y1="52" x2="136" y2="52" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <rect x="140" y="20" width="50" height="40" rx="8" fill="#F2ECFA" stroke="#7C3AED" stroke-width="2.5"/>
+          <text x="165" y="48" text-anchor="middle" font-family="Courier New" font-size="22" font-weight="700" fill="#7C3AED">G</text>
+        </svg>
+      </div>
+    </div>
+    <p><b>Reguła:</b> A–T (2 wiązania wodorowe) · C–G (3 wiązania wodorowe).</p>
+    <p><b>Dlaczego właśnie tak?</b></p>
+    <ol class="steps" style="margin-bottom:0;">
+      <li><b>Wielkość zasad:</b> A i G to puryny (większe), T i C to pirymidyny (mniejsze). Para „duża + mała" zachowuje stałą szerokość helisy.</li>
+      <li><b>Układ miejsc wiązania:</b> nie każda duża pasuje do każdej małej. Adenina pasuje do tyminy, cytozyna do guaniny.</li>
+      <li><b>Wynik:</b> A–T tworzy 2 wiązania wodorowe, C–G tworzy 3.</li>
+    </ol>
+
+    <h3>11.3. Drabina DNA — struktura podwójnej nici</h3>
+    <div class="diagram-frame">
+      <svg viewBox="0 0 460 280" width="460" height="280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Drabina DNA" style="max-width:460px;display:block;margin:0 auto;">
+        <line x1="60" y1="30" x2="60" y2="250" stroke="#334155" stroke-width="5"/>
+        <line x1="400" y1="30" x2="400" y2="250" stroke="#334155" stroke-width="5"/>
+        <text x="42" y="22" font-family="Courier New" font-size="13" font-weight="700" fill="#334155">5'</text>
+        <text x="400" y="22" font-family="Courier New" font-size="13" font-weight="700" fill="#334155">3'</text>
+        <text x="42" y="272" font-family="Courier New" font-size="13" font-weight="700" fill="#334155">3'</text>
+        <text x="400" y="272" font-family="Courier New" font-size="13" font-weight="700" fill="#334155">5'</text>
+
+        <rect x="80" y="42" width="40" height="34" rx="6" fill="#E6F6EC" stroke="#2D8F5E" stroke-width="2"/>
+        <text x="100" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2D8F5E">A</text>
+        <line x1="124" y1="53" x2="336" y2="53" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="65" x2="336" y2="65" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <rect x="340" y="42" width="40" height="34" rx="6" fill="#FDF1E1" stroke="#E67E22" stroke-width="2"/>
+        <text x="360" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#E67E22">T</text>
+
+        <rect x="80" y="94" width="40" height="34" rx="6" fill="#E5EFFA" stroke="#2B6CB0" stroke-width="2"/>
+        <text x="100" y="118" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2B6CB0">C</text>
+        <line x1="124" y1="101" x2="336" y2="101" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="111" x2="336" y2="111" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="121" x2="336" y2="121" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <rect x="340" y="94" width="40" height="34" rx="6" fill="#F2ECFA" stroke="#7C3AED" stroke-width="2"/>
+        <text x="360" y="118" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#7C3AED">G</text>
+
+        <rect x="80" y="146" width="40" height="34" rx="6" fill="#F2ECFA" stroke="#7C3AED" stroke-width="2"/>
+        <text x="100" y="170" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#7C3AED">G</text>
+        <line x1="124" y1="153" x2="336" y2="153" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="163" x2="336" y2="163" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="173" x2="336" y2="173" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <rect x="340" y="146" width="40" height="34" rx="6" fill="#E5EFFA" stroke="#2B6CB0" stroke-width="2"/>
+        <text x="360" y="170" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2B6CB0">C</text>
+
+        <rect x="80" y="198" width="40" height="34" rx="6" fill="#FDF1E1" stroke="#E67E22" stroke-width="2"/>
+        <text x="100" y="222" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#E67E22">T</text>
+        <line x1="124" y1="209" x2="336" y2="209" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="221" x2="336" y2="221" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <rect x="340" y="198" width="40" height="34" rx="6" fill="#E6F6EC" stroke="#2D8F5E" stroke-width="2"/>
+        <text x="360" y="222" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2D8F5E">A</text>
+      </svg>
+      <div class="diagram-cap">Boki = szkielet cukrowo-fosforanowy · szczeble = pary zasad · przerywane linie = wiązania wodorowe</div>
+    </div>
+    <p>Boki drabiny = <b>szkielet cukrowo-fosforanowy</b>. Szczeble = <b>pary zasad</b> (A–T, C–G). Wiązania wodorowe = <b>przerywane linie</b>. Informacja jest w <b>kolejności szczebli</b>.</p>
+
+    <h3>11.4. Gdzie jest informacja?</h3>
+    <div class="panel">
+      <p><b>Informacja jest w KOLEJNOŚCI zasad</b>, nie w pojedynczej literze ani nie w „kształcie helisy".</p>
+      <div class="seq-compare">
+        <div>
+          <div class="seq-row">
+            <div class="seq-label">Sekwencja 1:</div>
+            <div class="seq-cell" style="background:#E6F6EC;color:#2D8F5E;border-color:#2D8F5E;">A</div>
+            <div class="seq-cell" style="background:#FDF1E1;color:#E67E22;border-color:#E67E22;">T</div>
+            <div class="seq-cell" style="background:#F2ECFA;color:#7C3AED;border-color:#7C3AED;">G</div>
+            <div class="seq-cell diff" style="background:#E5EFFA;color:#2B6CB0;border-color:#DC3545;">C</div>
+            <div class="seq-cell" style="background:#E5EFFA;color:#2B6CB0;border-color:#2B6CB0;">C</div>
+          </div>
+          <div class="seq-row" style="margin-top:10px;">
+            <div class="seq-label">Sekwencja 2:</div>
+            <div class="seq-cell" style="background:#E6F6EC;color:#2D8F5E;border-color:#2D8F5E;">A</div>
+            <div class="seq-cell" style="background:#FDF1E1;color:#E67E22;border-color:#E67E22;">T</div>
+            <div class="seq-cell" style="background:#F2ECFA;color:#7C3AED;border-color:#7C3AED;">G</div>
+            <div class="seq-cell diff" style="background:#F2ECFA;color:#7C3AED;border-color:#DC3545;">G</div>
+            <div class="seq-cell" style="background:#E5EFFA;color:#2B6CB0;border-color:#2B6CB0;">C</div>
+          </div>
+          <div class="seq-arrow">↑ zmieniła się jedna pozycja</div>
+        </div>
+      </div>
+      <p>Obie sekwencje mają tyle samo liter i prawie identyczny zapis. Mimo to <b>różnią się informacją</b>, ponieważ na czwartej pozycji występuje inna zasada. W biologii taka zmiana w sekwencji <b>może, ale nie zawsze musi</b>, wpłynąć na produkt genu i cechę.</p>
+      <p style="margin-bottom:0;"><b>Analogia:</b> „kot" ≠ „tok" — te same litery, inna kolejność, inne słowo.</p>
+    </div>
+
+    <h3>11.5. Helisa — skręcenie w zarysie</h3>
+    <div class="diagram-frame">
+      <svg viewBox="0 0 400 320" width="400" height="320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Podwójna helisa DNA" style="max-width:400px;display:block;margin:0 auto;">
+        <path d="M 80 20 Q 200 80 320 140 Q 200 200 80 260 Q 200 320 320 380" fill="none" stroke="#2B6CB0" stroke-width="4"/>
+        <path d="M 320 20 Q 200 80 80 140 Q 200 200 320 260 Q 200 320 80 380" fill="none" stroke="#7C3AED" stroke-width="4"/>
+        <line x1="160" y1="80" x2="240" y2="80" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="160" y1="90" x2="240" y2="90" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="120" y1="150" x2="280" y2="150" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="120" y1="160" x2="280" y2="160" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="120" y1="170" x2="280" y2="170" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="160" y1="220" x2="240" y2="220" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="160" y1="230" x2="240" y2="230" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <text x="60" y="24" font-family="Courier New" font-size="12" font-weight="700" fill="#2B6CB0">5'</text>
+        <text x="330" y="24" font-family="Courier New" font-size="12" font-weight="700" fill="#7C3AED">3'</text>
+        <text x="60" y="316" font-family="Courier New" font-size="12" font-weight="700" fill="#2B6CB0">3'</text>
+        <text x="330" y="316" font-family="Courier New" font-size="12" font-weight="700" fill="#7C3AED">5'</text>
+      </svg>
+      <div class="diagram-cap">Dwie nici owinięte wokół wspólnej osi · zasady wewnątrz, szkielet na zewnątrz</div>
+    </div>
+    <ul class="tick">
+      <li><b>Dwie nici</b> owinięte wokół wspólnej osi (jak skręcona drabina).</li>
+      <li>Nici są <b>antyrównoległe</b>: jedna biegnie 5'→3', druga 3'→5'. <span style="color:var(--rose);font-size:0.85em;">(ZAAW.)</span></li>
+      <li><b>Szkielet cukrowo-fosforanowy</b> na zewnątrz, <b>zasady wewnątrz</b>.</li>
+      <li><b>Średnica helisy</b> ≈ 2 nm. <span style="color:var(--rose);font-size:0.85em;">(ZAAW.)</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 11.5 TRENER ============ -->
+<section id="trener" data-layer="trening">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">11.5</span>Trener komplementarności</div>
+    <span class="layer-tag trening">TRENING</span>
+    <h2>Ułóż drugą nić DNA</h2>
+    <p class="sub">Kliknij literę, która pasuje do zasady z górnej nici. Między parami pojawią się widoczne wiązania wodorowe.</p>
+
+    <div class="trainer">
+      <div class="tr-title">Ułóż drugą nić DNA</div>
+      <p class="tr-info">Tryb DNA→DNA: A–T, C–G. Tryb DNA→RNA: A–U, T–A, C–G, G–C.</p>
+      <div class="tr-line" id="tr-top"></div>
+      <div class="tr-bond-row" id="tr-bonds"></div>
+      <div class="tr-line" id="tr-bottom"></div>
+      <div class="tr-buttons" id="tr-buttons">
+        <button class="b-A" onclick="trainerAnswer('A')">A</button>
+        <button class="b-T" onclick="trainerAnswer('T')">T</button>
+        <button class="b-C" onclick="trainerAnswer('C')">C</button>
+        <button class="b-G" onclick="trainerAnswer('G')">G</button>
+        <button class="b-U" onclick="trainerAnswer('U')">U</button>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;">
+        <button class="flash-btn" onclick="trainerNew()">Nowa sekwencja</button>
+        <button class="flash-btn" onclick="trainerToggleRNA()" id="tr-mode-btn">Tryb: DNA→DNA</button>
+      </div>
+      <div class="tr-result" id="tr-result"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. ĆWICZENIA ============ -->
+<section id="cwiczenia" data-layer="trening">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">12</span>Sprawdź się</div>
+    <span class="layer-tag trening">TRENING</span>
+    <h2>Ćwiczenia</h2>
+
+    <h3>12A. Mini-check (5 pytań)</h3>
+    <div class="panel">
+      <ol>
+        <li>Czym zajmuje się genetyka?</li>
+        <li>Podaj 2 cechy dziedziczne i 2 nabyte.</li>
+        <li>Co to cecha wieloczynnikowa?</li>
+        <li>Co to DNA?</li>
+        <li>Gdzie znajduje się większość DNA w komórce zwierzęcej?</li>
+      </ol>
+      <details class="reveal"><summary>Pokaż odpowiedzi</summary><div class="a">
+        <ol>
+          <li>Nauka o dziedziczeniu i zmienności.</li>
+          <li>Dziedziczne: kolor oczu, grupa krwi; nabyte: blizna, język.</li>
+          <li>Cecha zależna i od genów, i od środowiska (np. wzrost).</li>
+          <li>Kwas deoksyrybonukleinowy — nośnik informacji genetycznej.</li>
+          <li>W jądrze komórkowym (dodatkowo niewielka ilość w mitochondriach).</li>
+        </ol>
+      </div></details>
+    </div>
+
+    <h3>12B. Ćwiczenie prowadzone — klasyfikacja cech</h3>
+    <div class="panel">
+      <p><b>Dane:</b> Kolor oczu, blizna, wzrost, grupa krwi, opalenizna, hemofilia.</p>
+      <details class="reveal"><summary>Pokaż odpowiedź</summary><div class="a">
+        <ul>
+          <li><b>Głównie genetyczne:</b> grupa krwi ABO; w szkolnym modelu także niektóre cechy jednogenowe.</li>
+          <li><b>Nabyte:</b> blizna, opalenizna.</li>
+          <li><b>Wieloczynnikowa:</b> wzrost.</li>
+        </ul>
+      </div></details>
+    </div>
+
+    <h3>12C. Ćwiczenia samodzielne</h3>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="A">Podstawa</button>
+      <button class="tab-btn" data-tab="B">Trening</button>
+      <button class="tab-btn" data-tab="C">Ambitne</button>
+      <button class="tab-btn" data-tab="D">Zaawansowane</button>
+    </div>
+
+    <div class="tab-pane active" data-pane="A">
+      <details class="reveal"><summary>1. Co to genetyka?</summary><div class="a">Nauka o dziedziczeniu i zmienności.</div></details>
+      <details class="reveal"><summary>2. Podaj 2 cechy dziedziczne i 2 nabyte.</summary><div class="a">Dziedziczne: kolor oczu, grupa krwi. Nabyte: blizna, język.</div></details>
+      <details class="reveal"><summary>3. Co to zmienność?</summary><div class="a">Różnice między organizmami.</div></details>
+      <details class="reveal"><summary>4. Co to DNA?</summary><div class="a">Kwas deoksyrybonukleinowy — nośnik informacji.</div></details>
+      <details class="reveal"><summary>5. Gdzie jest DNA?</summary><div class="a">Głównie w jądrze; dodatkowo w mitochondriach (i chloroplastach u roślin).</div></details>
+    </div>
+
+    <div class="tab-pane" data-pane="B">
+      <details class="reveal"><summary>6. Dlaczego rodzeństwo może się różnić?</summary><div class="a">Różne kombinacje odziedziczonych wariantów genów, rekombinacja i losowy dobór gamet; szczegóły w L015–L017.</div></details>
+      <details class="reveal"><summary>7. Popraw: „Blizna dziedziczy się".</summary><div class="a">Blizna jest nabyta, nie dziedziczna.</div></details>
+      <details class="reveal"><summary>8. Co to cecha wieloczynnikowa? Podaj przykład.</summary><div class="a">Cecha zależna i od genów, i od środowiska; np. wzrost.</div></details>
+      <details class="reveal"><summary>9. Popraw: „DNA to gotowy organizm".</summary><div class="a">DNA to <b>nośnik informacji</b>, nie gotowy organizm.</div></details>
+    </div>
+
+    <div class="tab-pane" data-pane="C">
+      <details class="reveal"><summary>10. Czym różni się DNA od genu?</summary><div class="a">DNA to cała cząsteczka; gen to jej fragment (odcinek).</div></details>
+      <details class="reveal"><summary>11. Czym różni się gen od chromosomu? Wyjaśnij, dlaczego „gen jest częścią chromosomu" to uproszczenie.</summary><div class="a">Gen to fragment DNA. Chromosom to <b>struktura</b> z długą cząsteczką DNA z białkami. Powiedzenie „gen jest częścią chromosomu" sugeruje, że chromosom to pudełko, do którego wkłada się geny — a to nieprawda.</div></details>
+      <details class="reveal"><summary>12. Czy całe DNA to geny? Uzasadnij.</summary><div class="a">Nie — istnieją regiony niekodujące, regulatorowe i powtarzalne.</div></details>
+      <details class="reveal"><summary>13. Ktoś mówi: „Mam gen na wysoki wzrost, więc na pewno będę wysoki". Oceń.</summary><div class="a">Zdanie jest <b>zbyt mocne</b>. Gen to predyspozycja. Wzrost zależy od wielu genów, środowiska i przebiegu rozwoju.</div></details>
+    </div>
+
+    <div class="tab-pane" data-pane="D">
+      <details class="reveal"><summary>14. Co to mtDNA i dlaczego ma znaczenie w dziedziczeniu?</summary><div class="a">Mitochondrialny DNA — osobny materiał genetyczny w mitochondriach. U człowieka dziedziczony prawie zawsze po matce.</div></details>
+      <details class="reveal"><summary>15. Co to regulacja ekspresji?</summary><div class="a">Mechanizmy decydujące, które geny są odczytywane. Ten sam zestaw DNA może być różnie wykorzystany.</div></details>
+      <details class="reveal"><summary>16. Co to mutacja i dlaczego nie każda prowadzi do zmiany fenotypu?</summary><div class="a">Mutacja to trwała zmiana w DNA. Jeśli nie zmienia funkcji białka (mutacja cicha, miejsce niekodujące), nie widać jej w fenotypie (L020).</div></details>
+      <details class="reveal"><summary>17. Uzupełnij nić: A–G–T–C → ?</summary><div class="a">T–C–A–G.</div></details>
+    </div>
+
+    <h3>12D. Problem / THINK</h3>
+    <div class="panel">
+      <ol>
+        <li>Jedna nić <code>ATGCC</code> — druga? Starsza?</li>
+        <li>Czy <code>ATGCC</code> i <code>ATGGC</code> niosą tę samą informację?</li>
+        <li>Czy DNA z trzema zasadami wystarczyłoby?</li>
+      </ol>
+      <details class="reveal"><summary>Pokaż odpowiedzi</summary><div class="a">
+        <ol>
+          <li><code>TACGG</code> — obie nici są równoważne (obie mogą być matrycą).</li>
+          <li>Nie.</li>
+          <li>Tak, ale ok. 17× mniej kombinacji (3¹⁰ vs 4¹⁰).</li>
+        </ol>
+      </div></details>
+    </div>
+
+    <h3>12E. Drabinka trudności</h3>
+    <table>
+      <thead><tr><th>Poziom</th><th>Zadanie</th></tr></thead>
+      <tbody>
+        <tr><td>ODTWÓRZ</td><td>Co to genetyka?</td></tr>
+        <tr><td>ZASTOSUJ</td><td>Sklasyfikuj cechę.</td></tr>
+        <tr><td>WYJAŚNIJ</td><td>Dlaczego „gen decyduje" to uproszczenie?</td></tr>
+        <tr><td>ODKRYJ</td><td>Jaki typ cechy ma wzrost?</td></tr>
+        <tr><td>POŁĄCZ</td><td>Połącz cechy z DNA.</td></tr>
+        <tr><td>ZAKWESTIONUJ</td><td>Czy bliźniaki jednojajowe są identyczne?</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 13. FISZKI ============ -->
+<section id="fiszki" data-layer="powtorka trening">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">13</span>Powtórka</div>
+    <span class="layer-tag powtorka">POWTÓRKA</span>
+    <h2>Fiszki</h2>
+    <p class="sub">Kliknij kartę, żeby zobaczyć odpowiedź. Strzałki przechodzą do kolejnej fiszki.</p>
+
+    <div class="flash-wrap">
+      <div class="flash-card" id="flashCard">
+        <span class="flash-tag" id="flashTag"></span>
+        <div class="flash-face show q" id="flashQ"></div>
+        <div class="flash-face a" id="flashA"></div>
+        <span class="flash-hint">kliknij, aby odwrócić</span>
+      </div>
+      <div class="flash-controls">
+        <button class="flash-btn" id="flashPrev" type="button">← poprzednia</button>
+        <span class="flash-progress" id="flashProgress">1 / 26</span>
+        <button class="flash-btn" id="flashNext" type="button">następna →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14. TEST ============ -->
+<section id="test" data-layer="trening">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">14</span>Podsumowanie</div>
+    <span class="layer-tag trening">TRENING</span>
+    <h2>Test końcowy (3+2+2+1+2)</h2>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab2="P">Podstawa (3)</button>
+      <button class="tab-btn" data-tab2="T">Trening (2)</button>
+      <button class="tab-btn" data-tab2="Am">Ambitny (2)</button>
+      <button class="tab-btn" data-tab2="Z">Zaawansowany (1)</button>
+      <button class="tab-btn" data-tab2="S">Synteza (2)</button>
+    </div>
+
+    <div class="tab-pane active" data-pane2="P">
+      <details class="reveal"><summary>1. Co to DNA?</summary><div class="a">Kwas deoksyrybonukleinowy — nośnik informacji genetycznej.</div></details>
+      <details class="reveal"><summary>2. Gdzie znajduje się większość DNA w komórce zwierzęcej?</summary><div class="a">W jądrze komórkowym (dodatkowo w mitochondriach).</div></details>
+      <details class="reveal"><summary>3. Czym różni się DNA od genu?</summary><div class="a">DNA to cała cząsteczka; gen to jej fragment z informacją o produkcie.</div></details>
+    </div>
+    <div class="tab-pane" data-pane2="T">
+      <details class="reveal"><summary>4. Uzupełnij: DNA → ___ → ___ → cecha.</summary><div class="a">DNA → <b>RNA</b> → <b>białko</b> → cecha.</div></details>
+      <details class="reveal"><summary>5. Popraw: „DNA to gotowy organizm".</summary><div class="a">DNA to nośnik informacji, nie gotowy organizm.</div></details>
+    </div>
+    <div class="tab-pane" data-pane2="Am">
+      <details class="reveal"><summary>6. Wyjaśnij, dlaczego „gen jest częścią chromosomu" to uproszczenie.</summary><div class="a">Chromosom to struktura z długą cząsteczką DNA z białkami — a nie pudełko, do którego wkłada się geny. Gen jest fragmentem tej cząsteczki.</div></details>
+      <details class="reveal"><summary>7. „Mam gen na wysokie IQ, więc na pewno będę bardzo inteligentny" — oceń.</summary><div class="a">Zdanie zbyt mocne. Inteligencja to cecha wielogenowa i wieloczynnikowa — zależy od wielu genów, środowiska, edukacji, zdrowia. Pojedynczy gen to tylko jeden z wielu czynników.</div></details>
+    </div>
+    <div class="tab-pane" data-pane2="Z">
+      <details class="reveal"><summary>8. Wyjaśnij, dlaczego każda komórka ma ten sam DNA, ale działa inaczej.</summary><div class="a">Bo komórki odczytują różne fragmenty DNA — decyduje o tym regulacja ekspresji. Ten sam zestaw genów może być różnie wykorzystany.</div></details>
+    </div>
+    <div class="tab-pane" data-pane2="S">
+      <details class="reveal"><summary>9. Ułóż drugą nić: A–G–T–C. Która jest „starsza"?</summary><div class="a"><b>T–C–A–G.</b> Obie nici są równoważne — nie ma „starszej".</div></details>
+      <details class="reveal"><summary>10. Który zapis to prawidłowy fragment dwuniciowego DNA? A. A–U i C–G · B. A–T i C–G · C. A–C i G–T · D. A–G i T–C</summary><div class="a"><b>B</b> — A–T i C–G.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. CHECKLISTA ============ -->
+<section id="checklista" data-layer="podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">15</span>Zanim przejdziesz dalej</div>
+    <h2>Checklista</h2>
+    <div class="panel teal">
+      <ul class="tick" style="margin-bottom:0;">
+        <li>Znam definicję genetyki, dziedziczenia, zmienności.</li>
+        <li>Odróżniam cechy dziedziczne, nabyte, wieloczynnikowe.</li>
+        <li>Rozumiem: fenotyp = geny + środowisko + rozwój.</li>
+        <li>Wiem, że „gen decyduje" to uproszczenie.</li>
+        <li>Wiem, czym jest DNA i po co organizmowi.</li>
+        <li>Wiem, gdzie znajduje się DNA (jądro, mitochondria, chloroplasty; u bakterii — nukleoid).</li>
+        <li>Rozumiem, że DNA to <b>nośnik informacji</b> — nie gotowy organizm.</li>
+        <li>Odróżniam DNA, gen i chromosom.</li>
+        <li>Znam model: DNA → RNA → białko → cecha.</li>
+        <li>Wiem, że <b>nie całe DNA to geny</b>.</li>
+        <li>Wiem, że „mam gen" ≠ „na pewno będę miał cechę".</li>
+        <li>Znam pary zasad A–T, C–G.</li>
+        <li>Umiem uzupełnić nić komplementarną.</li>
+        <li>Wiem, że dojrzały erytrocyt nie zawiera DNA (wyjątek).</li>
+        <li>Rozumiem, dlaczego każda komórka ma ten sam DNA, ale działa inaczej.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 16. MAPA POJĘĆ ============ -->
+<section id="mapa" data-layer="przypomnienie podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">16</span>Synteza</div>
+    <h2>Mapa pojęć</h2>
+    <div class="map-frame">
+      <svg viewBox="0 0 720 460" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Sans" style="min-width:640px;width:100%;height:auto;">
+        <rect x="290" y="10" width="160" height="42" rx="8" fill="#1E2A22"/>
+        <text x="370" y="36" text-anchor="middle" font-size="13" font-weight="700" fill="#FAF8F0">GENETYKA</text>
+
+        <line x1="370" y1="52" x2="130" y2="100" stroke="#A99F7C" stroke-width="1.5"/>
+        <line x1="370" y1="52" x2="370" y2="100" stroke="#A99F7C" stroke-width="1.5"/>
+        <line x1="370" y1="52" x2="610" y2="100" stroke="#A99F7C" stroke-width="1.5"/>
+
+        <rect x="40" y="100" width="180" height="38" rx="7" fill="#E7E2F3" stroke="#5A4C8C"/>
+        <text x="130" y="124" text-anchor="middle" font-size="12" fill="#5A4C8C">DZIEDZICZENIE</text>
+
+        <rect x="280" y="100" width="180" height="38" rx="7" fill="#F4E3CB" stroke="#AE5F1E"/>
+        <text x="370" y="124" text-anchor="middle" font-size="12" fill="#AE5F1E">ZMIENNOŚĆ</text>
+
+        <rect x="520" y="100" width="180" height="38" rx="7" fill="#DCE7DE" stroke="#2C6455"/>
+        <text x="610" y="124" text-anchor="middle" font-size="12" fill="#1B4136">CECHY</text>
+
+        <text x="130" y="160" text-anchor="middle" font-size="10.5" fill="#51604F">przekazywanie z pokolenia</text>
+        <text x="130" y="176" text-anchor="middle" font-size="10.5" fill="#51604F">na pokolenie</text>
+
+        <text x="370" y="160" text-anchor="middle" font-size="10.5" fill="#51604F">rekombinacyjna / mutacyjna</text>
+
+        <text x="610" y="160" text-anchor="middle" font-size="10.5" fill="#51604F">dziedziczna / nabyta</text>
+        <text x="610" y="176" text-anchor="middle" font-size="10.5" fill="#51604F">wieloczynnikowa</text>
+
+        <line x1="370" y1="52" x2="370" y2="220" stroke="#A99F7C" stroke-width="1.5"/>
+
+        <rect x="270" y="220" width="200" height="42" rx="8" fill="#1E2A22"/>
+        <text x="370" y="246" text-anchor="middle" font-size="13" font-weight="700" fill="#FAF8F0">DNA — nośnik informacji</text>
+
+        <line x1="370" y1="262" x2="120" y2="310" stroke="#A99F7C" stroke-width="1.5"/>
+        <line x1="370" y1="262" x2="370" y2="310" stroke="#A99F7C" stroke-width="1.5"/>
+        <line x1="370" y1="262" x2="620" y2="310" stroke="#A99F7C" stroke-width="1.5"/>
+
+        <rect x="20" y="310" width="200" height="38" rx="7" fill="#E5EFFA" stroke="#2B6CB0"/>
+        <text x="120" y="334" text-anchor="middle" font-size="11.5" fill="#2B6CB0">GDZIE JEST</text>
+        <text x="120" y="366" text-anchor="middle" font-size="10.5" fill="#51604F">jądro · mitochondria</text>
+        <text x="120" y="382" text-anchor="middle" font-size="10.5" fill="#51604F">chloroplasty · nukleoid</text>
+
+        <rect x="270" y="310" width="200" height="38" rx="7" fill="#E7E2F3" stroke="#5A4C8C"/>
+        <text x="370" y="334" text-anchor="middle" font-size="11.5" fill="#5A4C8C">POZIOMY ORGANIZACJI</text>
+        <text x="370" y="366" text-anchor="middle" font-size="10.5" fill="#51604F">DNA → gen → chromosom</text>
+
+        <rect x="520" y="310" width="200" height="38" rx="7" fill="#F4E3CB" stroke="#AE5F1E"/>
+        <text x="620" y="334" text-anchor="middle" font-size="11.5" fill="#AE5F1E">BUDOWA</text>
+        <text x="620" y="366" text-anchor="middle" font-size="10.5" fill="#51604F">nukleotyd · A–T, C–G</text>
+        <text x="620" y="382" text-anchor="middle" font-size="10.5" fill="#51604F">podwójna helisa</text>
+
+        <rect x="270" y="410" width="200" height="38" rx="7" fill="#F3DEDA" stroke="#9C3B3B"/>
+        <text x="370" y="434" text-anchor="middle" font-size="11.5" fill="#9C3B3B">CZEGO NIE OZNACZA</text>
+        <text x="370" y="458" text-anchor="middle" font-size="10" fill="#51604F">DNA ≠ organizm · gen ≠ chromosom</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 17. CO DALEJ + JAK SIĘ UCZYĆ ============ -->
+<section id="dalej" data-layer="przypomnienie podstawa">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">17</span>Co dalej i jak się uczyć</div>
+    <h2>Plan nauki</h2>
+
+    <div class="panel">
+      <div style="font-weight:700;margin-bottom:8px;">Następna lekcja:</div>
+      <p><b>L011 — Jak DNA przechowuje informację?</b></p>
+      <p>Skoro DNA przechowuje informację — to jak można ją zapisać w cząsteczce? Poznasz nukleotyd, cztery zasady (A, T, C, G), kolejność zasad, pary komplementarne i podwójną helisę.</p>
+    </div>
+
+    <h3>Plan nauki krok po kroku</h3>
+    <ol class="steps">
+      <li><b>Ściąga</b> (sekcja 5) — 8–10 min.</li>
+      <li><b>Przykład prowadzony</b> (6C) + uzupełnianie nici — 5 min.</li>
+      <li><b>Mini-check</b> (12A) — 5 min.</li>
+      <li><b>Ćwiczenia A i B</b> (12C) — 10 min.</li>
+      <li><b>Trener komplementarności</b> (11.5) — 5 min.</li>
+      <li><b>Fiszki</b> (13) — 10 min.</li>
+      <li><b>Test końcowy</b> (14) — 12 min.</li>
+      <li><b>Powtórka</b> za 1 dzień, 3 dni, tydzień.</li>
+    </ol>
+
+    <h3>Powtórki rozłożone w czasie</h3>
+    <table>
+      <thead><tr><th>Kiedy</th><th>Co</th><th>Czas</th></tr></thead>
+      <tbody>
+        <tr><td>Po lekcji</td><td>ściąga + 5 fiszek</td><td>15–20 min</td></tr>
+        <tr><td>+1 dzień</td><td>fiszki bloku</td><td>10 min</td></tr>
+        <tr><td>+3 dni</td><td>klinika + 3 zadania treningowe</td><td>15 min</td></tr>
+        <tr><td>+1 tydzień</td><td>mini-test bloku</td><td>20 min</td></tr>
+        <tr><td>+1 miesiąc</td><td>mapa pojęć + pułapki</td><td>15 min</td></tr>
+      </tbody>
+    </table>
+    <p><b>Zasada 3 pytań po powtórce:</b> Co umiem? Co mylę? Co zaskoczyło?</p>
+  </div>
+</section>
+
+<!-- ============ 18. SŁOWNIK ============ -->
+<section id="slownik">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">18</span>Pojęcia</div>
+    <h2>Słownik</h2>
+    <dl class="gloss">
+      <dt>Genetyka</dt><dd>Nauka o dziedziczeniu i zmienności.</dd>
+      <dt>Dziedziczenie</dt><dd>Przekazywanie z rodziców na potomstwo informacji genetycznej.</dd>
+      <dt>Zmienność</dt><dd>Różnice między organizmami.</dd>
+      <dt>Cecha głównie genetyczna</dt><dd>Jej rozwój silnie zależy od odziedziczonych wariantów genów.</dd>
+      <dt>Cecha nabyta</dt><dd>Powstaje w ciągu życia i sama w sobie nie jest przekazywana potomstwu.</dd>
+      <dt>Cecha wieloczynnikowa</dt><dd>Współdziałanie wielu genów, środowiska i rozwoju.</dd>
+      <dt>Fenotyp</dt><dd>Zespół obserwowalnych cech organizmu.</dd>
+      <dt>DNA</dt><dd>Kwas deoksyrybonukleinowy — cząsteczka przechowująca informację genetyczną.</dd>
+      <dt>Informacja genetyczna</dt><dd>Informacja zapisana w materiale genetycznym i wykorzystywana przez komórki.</dd>
+      <dt>Gen</dt><dd>Fragment DNA zawierający informację o produkcie (białku lub RNA).</dd>
+      <dt>Chromosom</dt><dd>Struktura zbudowana z długiej cząsteczki DNA związanej z białkami.</dd>
+      <dt>Jądro komórkowe</dt><dd>Główne miejsce DNA u eukariontów.</dd>
+      <dt>Mitochondrium</dt><dd>Organellum zawierające własny DNA (mtDNA).</dd>
+      <dt>Chloroplast</dt><dd>Organellum roślin i glonów zawierające własny DNA (cpDNA).</dd>
+      <dt>Nukleoid</dt><dd>Obszar z DNA u bakterii (bez jądra).</dd>
+      <dt>mtDNA</dt><dd>DNA w mitochondriach; u człowieka dziedziczone prawie zawsze po matce.</dd>
+      <dt>Nukleotyd</dt><dd>Cukier + fosforan + zasada azotowa.</dd>
+      <dt>Puryna</dt><dd>Duża zasada (A, G).</dd>
+      <dt>Pirymidyna</dt><dd>Mała zasada (T, C, U).</dd>
+      <dt>Komplementarność</dt><dd>Reguła parowania zasad (A–T, C–G).</dd>
+      <dt>Podwójna helisa</dt><dd>Dwie komplementarne nici owinięte wokół siebie.</dd>
+      <dt>Regulacja ekspresji</dt><dd>Mechanizmy decydujące, które geny są odczytywane.</dd>
+      <dt>Erytrocyt</dt><dd>Czerwona krwinka — dojrzała nie ma jądra ani mitochondriów, więc nie zawiera DNA.</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 19. Z ŻYCIA + MIĘDZYPRZEDMIOTOWE ============ -->
+<section id="zycie" data-layer="podstawa trening">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">19</span>Z życia i między przedmiotami</div>
+    <h2>Zadania z życia codziennego</h2>
+
+    <details class="reveal"><summary>1. Dlaczego lekarz pyta o choroby w rodzinie?</summary><div class="a">
+      Część chorób ma <b>składnik dziedziczny</b>. Wywiad rodzinny to <b>mapa ryzyka</b>, nie wyrok — pomaga zdecydować, czy warto zrobić badania genetyczne.
+    </div></details>
+    <details class="reveal"><summary>2. Dlaczego rodzeństwo może mieć różne grupy krwi?</summary><div class="a">
+      Bo każde dziecko dostaje inną kombinację alleli. Rodzice heterozygotyczni (np. Iᴬi × Iᴮi) mogą mieć dzieci z grupą A, B, AB lub 0.
+    </div></details>
+    <details class="reveal"><summary>3. Dlaczego DNA z krwi nadaje się do badania?</summary><div class="a">
+      Leukocyty (białe krwinki) mają jądra z pełnym DNA. Dojrzałe erytrocyty jądra nie mają — materiał pochodzi więc z leukocytów.
+    </div></details>
+    <details class="reveal"><summary>4. Czy talent muzyczny jest dziedziczny?</summary><div class="a">
+      Talent to <b>cecha wieloczynnikowa</b> — zależy od genów, ale też od treningu, środowiska, motywacji. Nie dziedziczy się „jak grupa krwi".
+    </div></details>
+    <details class="reveal"><summary>5. Dlaczego bliźniaki jednojajowe mogą się różnić?</summary><div class="a">
+      Mają <b>niemal identyczny genom jądrowy</b>, ale środowisko, mutacje somatyczne i zmiany epigenetyczne mogą z czasem różnicować ich fenotyp.
+    </div></details>
+
+    <h2 style="margin-top:36px;">Połączenia międzyprzedmiotowe</h2>
+    <table>
+      <thead><tr><th>Przedmiot</th><th>Połączenie</th></tr></thead>
+      <tbody>
+        <tr><td><b>Chemia</b></td><td>kwasy nukleinowe, wiązania wodorowe, struktura cząsteczek</td></tr>
+        <tr><td><b>Matematyka</b></td><td>kombinatoryka (4ⁿ), prawdopodobieństwo</td></tr>
+        <tr><td><b>Informatyka</b></td><td>kod binarny vs kod czteroliterowy, kompresja informacji</td></tr>
+        <tr><td><b>Historia</b></td><td>odkrycie DNA — Watson, Crick, Franklin</td></tr>
+        <tr><td><b>Medycyna</b></td><td>diagnostyka genetyczna, testy DNA</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 20. STATUS ============ -->
+<section id="status">
+  <div class="wrap">
+    <div class="eyebrow"><span class="n">20</span>Metadane</div>
+    <h2>Status lekcji</h2>
+    <details class="reveal">
+      <summary>Wersja 3.0 — lekcja scalona (2026-09-15)</summary>
+      <div class="a">
+        <p><b>Ta lekcja łączy trzy źródła:</b></p>
+        <ul>
+          <li><b>l010_5_dna.html</b> — styl wizualny (Newsreader/IBM Plex), hero SVG, filtry warstw, sekcja „Co znaczy informacja genetyczna", analogie nośnika, mapa pojęć SVG, Klinika 2.0 z mutacjami somatycznymi.</li>
+          <li><b>BIO_L010_PODSTAWY_DNA_OD_ZERA_v2.0.html</b> — nukleotyd, pary A–T/C–G, drabina DNA, helisa, trener komplementarności, fiszki, test końcowy 3+2+2+1, tabela błędów 16 wierszy, Klinika 2.0 z 5 przykładami, mnemotechniki, DNA vs RNA.</li>
+          <li><b>BIOLOGIA_PODSTAWA_PLUS_v4.2 (MD L010)</b> — definicja genetyki (dziedziczenie + zmienność), trzy szuflady cech, fenotyp = geny + środowisko + rozwój, zmienność rekombinacyjna vs mutacyjna, cechy ciągłe vs nieciągłe, drabinka trudności, „Jak się uczyć", połączenia międzyprzedmiotowe, zadania z życia, uzupełnienie audytowe v4.2.</li>
+        </ul>
+        <p><b>Zasada scalenia:</b> nic istotnego nie usunięto. Każda warstwa (E8 / Trening / Master / Zaawansowany) jest jawnie oznaczona i można ją ukryć filtrem.</p>
+        <p><b>Kluczowa decyzja:</b> L010 zawiera nukleotyd/pary/helisę w warstwie [TRENING] (nie w [PODSTAWA E8]), bo to zapowiada L011 bez dublowania pełnej lekcji chemii parowania.</p>
+        <p style="margin-bottom:0;"><b>Zawiera:</b> hero SVG, filtry warstw, ściągę, wyjaśnienie 6A–6D, MASTER (trzy poziomy), „Czego DNA NIE oznacza", ZAAWANSOWANY (regulacja, mtDNA), Klinikę błędów (16 + 5 + 4), nukleotyd, pary, drabinę, helisę, trener interaktywny (DNA→DNA i DNA→RNA), 17 ćwiczeń w 4 poziomach + drabinka, 26 fiszek, test 10 pytań, checklistę, mapę pojęć SVG, plan nauki, słownik, zadania z życia, połączenia międzyprzedmiotowe.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="next-label">Następna lekcja</div>
+      <div class="next-title">L011 — Jak DNA przechowuje informację?</div>
+      <p class="small" style="max-width:60ch;">Chemia parowania zasad, puryny vs pirymidyny, antyrównoległość, rowki helisy, ekspresja genu, kod genetyczny.</p>
+    </div>
+    <div class="small">BIOLOGIA L010 v3.0 · lekcja scalona · 2026<br>Ucz się świadomie, nie na pamięć.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // TOC toggle
+  var tocToggle = document.getElementById('tocToggle');
+  var tocPanel = document.getElementById('tocPanel');
+  tocToggle.addEventListener('click', function(){ tocPanel.classList.toggle('open'); });
+  tocPanel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ tocPanel.classList.remove('open'); });
+  });
+
+  // Layer filter chips
+  var chips = document.querySelectorAll('[data-layer-toggle]');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var layer = chip.getAttribute('data-layer-toggle');
+      chip.classList.toggle('active');
+      document.body.classList.toggle('hide-' + layer);
+    });
+  });
+  document.getElementById('resetFilters').addEventListener('click', function(){
+    var keep = ['przypomnienie','podstawa'];
+    chips.forEach(function(chip){
+      var layer = chip.getAttribute('data-layer-toggle');
+      var show = keep.indexOf(layer) !== -1;
+      chip.classList.toggle('active', show);
+      document.body.classList.toggle('hide-' + layer, !show);
+    });
+  });
+
+  // Tabs
+  function wireTabs(btnSelector, attr, paneAttr){
+    var btns = document.querySelectorAll(btnSelector);
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var group = btn.parentElement;
+        group.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        var key = btn.getAttribute(attr);
+        var panes = group.parentElement.querySelectorAll('[' + paneAttr + ']');
+        panes.forEach(function(p){
+          p.classList.toggle('active', p.getAttribute(paneAttr) === key);
+        });
+      });
+    });
+  }
+  wireTabs('[data-tab]','data-tab','data-pane');
+  wireTabs('[data-tab2]','data-tab2','data-pane2');
+
+  // Flashcards
+  var fiszki = [
+    ["Co to DNA?","Kwas deoksyrybonukleinowy — nośnik informacji genetycznej","podstawa"],
+    ["Gdzie znajduje się większość DNA?","W jądrze komórkowym (u eukariontów)","podstawa"],
+    ["Gdzie jeszcze jest DNA?","W mitochondriach (mtDNA) i u roślin w chloroplastach (cpDNA)","podstawa"],
+    ["Co to gen?","Fragment DNA zawierający informację o produkcie (białku lub RNA)","podstawa"],
+    ["Co to chromosom?","Struktura z długą cząsteczką DNA związaną z białkami","podstawa"],
+    ["Czy całe DNA to geny?","Nie — są też regiony niekodujące i regulatorowe","ambitny"],
+    ["Łańcuch: DNA → ?","DNA → RNA → białko → cecha (model podstawowy)","ambitny"],
+    ["Czy DNA to gotowy organizm?","Nie — to nośnik informacji","pułapka"],
+    ["Czy „DNA to instrukcja obsługi" to dosłowny opis?","Nie — to metafora","pułapka"],
+    ["Genetyka = ?","Nauka o dziedziczeniu i zmienności","podstawa"],
+    ["Cecha dziedziczna = ?","Zapisana w DNA, przekazywana","podstawa"],
+    ["Cecha nabyta = ?","Wynik środowiska (blizna, język, opalenizna)","podstawa"],
+    ["Cecha wieloczynnikowa = ?","Geny + środowisko (np. wzrost)","podstawa"],
+    ["Fenotyp = ?","Geny + środowisko + rozwój","podstawa"],
+    ["Czy „gen decyduje" to precyzyjne?","Nie — to uproszczenie; gen współtworzy cechę","pułapka"],
+    ["Pary zasad w DNA","A–T, C–G","podstawa"],
+    ["Ile wiązań ma A–T?","2","podstawa"],
+    ["Ile wiązań ma C–G?","3","podstawa"],
+    ["Co to nukleotyd?","Cukier + fosforan + zasada azotowa","podstawa"],
+    ["Czy w DNA jest U?","Nie — w DNA jest T; U w RNA","pułapka"],
+    ["Wyjątek od „komórka ma DNA w jądrze"?","Dojrzały erytrocyt człowieka (brak jądra i mitochondriów)","pułapka"],
+    ["Gdzie jest DNA u bakterii?","W nukleoidzie — bez jądra","podstawa"],
+    ["Dlaczego każda komórka ma ten sam DNA, ale działa inaczej?","Bo odczytuje inne fragmenty — regulacja ekspresji","ambitny"],
+    ["Zmienność rekombinacyjna vs mutacyjna","Rekombinacyjna = nowe kombinacje (mejoza); mutacyjna = zmiany w DNA","ambitny"],
+    ["Czy „mam gen" = „będę miał cechę"?","Nie — gen to predyspozycja, nie gwarancja","pułapka"],
+    ["Mutacja = choroba?","Nie — może być neutralna, szkodliwa lub korzystna","pułapka"]
+  ];
+  var idx = 0, showingA = false;
+  var qEl = document.getElementById('flashQ');
+  var aEl = document.getElementById('flashA');
+  var card = document.getElementById('flashCard');
+  var progress = document.getElementById('flashProgress');
+  var tagEl = document.getElementById('flashTag');
+
+  function render(){
+    qEl.textContent = fiszki[idx][0];
+    aEl.textContent = fiszki[idx][1];
+    tagEl.textContent = fiszki[idx][2] || '';
+    qEl.classList.toggle('show', !showingA);
+    aEl.classList.toggle('show', showingA);
+    progress.textContent = (idx+1) + ' / ' + fiszki.length;
+  }
+  card.addEventListener('click', function(){ showingA = !showingA; render(); });
+  document.getElementById('flashNext').addEventListener('click', function(){
+    idx = (idx+1) % fiszki.length; showingA = false; render();
+  });
+  document.getElementById('flashPrev').addEventListener('click', function(){
+    idx = (idx-1+fiszki.length) % fiszki.length; showingA = false; render();
+  });
+  render();
+
+  // Trainer
+  var TRAINER = {
+    seq: [], idx: 0, rnaMode: false,
+    bases: ['A','T','C','G'],
+    partnerDNA: {A:'T', T:'A', C:'G', G:'C'},
+    partnerRNA: {A:'U', T:'A', C:'G', G:'C'},
+    bondsDNA: {A:2, T:2, C:3, G:3}
+  };
+  window.trainerNew = function(){
+    var len = 5 + Math.floor(Math.random()*5);
+    TRAINER.seq = [];
+    for(var i=0;i<len;i++){
+      TRAINER.seq.push(TRAINER.bases[Math.floor(Math.random()*4)]);
+    }
+    TRAINER.idx = 0;
+    var res = document.getElementById('tr-result');
+    res.className = 'tr-result';
+    res.style.display = 'none';
+    trainerRender();
+  };
+  function trainerRender(){
+    var top = document.getElementById('tr-top');
+    var bonds = document.getElementById('tr-bonds');
+    var bot = document.getElementById('tr-bottom');
+    var topHtml = '<span style="color:var(--ink-faint);font-size:0.8rem;font-family:IBM Plex Mono;margin-right:6px;">5\'</span>';
+    var botHtml = '<span style="color:var(--ink-faint);font-size:0.8rem;font-family:IBM Plex Mono;margin-right:6px;">3\'</span>';
+    var bondsHtml = '<span style="width:30px;display:inline-block;"></span>';
+
+    TRAINER.seq.forEach(function(b,i){
+      topHtml += '<span class="cell cell-'+b+'">'+b+'</span>';
+      if(i < TRAINER.idx){
+        var p = TRAINER.rnaMode ? TRAINER.partnerRNA[b] : TRAINER.partnerDNA[b];
+        botHtml += '<span class="cell cell-'+p+'">'+p+'</span>';
+        var n = TRAINER.rnaMode ? (b==='C'||b==='G' ? 3 : 2) : TRAINER.bondsDNA[b];
+        var bondSvg = '';
+        for(var k=0;k<n;k++){
+          var yOffset = 4 + k*3;
+          bondSvg += '<line x1="4" y1="'+yOffset+'" x2="30" y2="'+yOffset+'" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="3 2"/>';
+        }
+        bondsHtml += '<span class="tr-bond-cell"><svg width="34" height="14" viewBox="0 0 34 14">'+bondSvg+'</svg></span>';
+      } else if(i === TRAINER.idx){
+        botHtml += '<span class="cell cell-q" onclick="trainerHint()">?</span>';
+        bondsHtml += '<span class="tr-bond-cell"></span>';
+      } else {
+        botHtml += '<span class="cell cell-empty">·</span>';
+        bondsHtml += '<span class="tr-bond-cell"></span>';
+      }
+    });
+    topHtml += '<span style="color:var(--ink-faint);font-size:0.8rem;font-family:IBM Plex Mono;margin-left:6px;">3\'</span>';
+    botHtml += '<span style="color:var(--ink-faint);font-size:0.8rem;font-family:IBM Plex Mono;margin-left:6px;">5\'</span>';
+    top.innerHTML = topHtml;
+    bonds.innerHTML = bondsHtml;
+    bot.innerHTML = botHtml;
+  }
+  window.trainerAnswer = function(b){
+    if(TRAINER.idx >= TRAINER.seq.length) return;
+    var current = TRAINER.seq[TRAINER.idx];
+    var correct = TRAINER.rnaMode ? TRAINER.partnerRNA[current] : TRAINER.partnerDNA[current];
+    var res = document.getElementById('tr-result');
+    res.style.display = 'block';
+    if(b === correct){
+      TRAINER.idx++;
+      res.className = 'tr-result ok';
+      if(TRAINER.rnaMode){
+        res.textContent = 'Dobrze. ' + current + ' → ' + correct + ' (w RNA zamiast T jest U).';
+      } else {
+        var n = TRAINER.bondsDNA[current];
+        res.textContent = 'Dobrze. ' + current + ' łączy się z ' + correct + ' (' + n + ' wiązania wodorowe).';
+      }
+      trainerRender();
+      if(TRAINER.idx >= TRAINER.seq.length){
+        res.textContent = 'Sekwencja ukończona. Czy potrafisz wyjaśnić wynik bez patrzenia do tabeli?';
+      }
+    } else {
+      res.className = 'tr-result warn';
+      res.textContent = 'Nie. Do zasady ' + current + ' pasuje ' + correct + '. Reguła: ' +
+        (TRAINER.rnaMode ? 'A→U, T→A, C→G, G→C.' : 'A–T, C–G.');
+    }
+  };
+  window.trainerHint = function(){
+    var current = TRAINER.seq[TRAINER.idx];
+    var correct = TRAINER.rnaMode ? TRAINER.partnerRNA[current] : TRAINER.partnerDNA[current];
+    var res = document.getElementById('tr-result');
+    res.style.display = 'block';
+    res.className = 'tr-result warn';
+    res.textContent = 'Do ' + current + ' pasuje ' + correct + '. Kliknij odpowiednią literę.';
+  };
+  window.trainerToggleRNA = function(){
+    TRAINER.rnaMode = !TRAINER.rnaMode;
+    document.getElementById('tr-mode-btn').textContent = 'Tryb: ' + (TRAINER.rnaMode ? 'DNA→RNA' : 'DNA→DNA');
+    TRAINER.idx = 0;
+    var res = document.getElementById('tr-result');
+    res.className = 'tr-result';
+    res.style.display = 'none';
+    trainerRender();
+  };
+  trainerNew();
+})();
+</script>
+</body>
+</html>
+<!-- KEEP-ALIVE 2026-09-23 11:52 UTC -->

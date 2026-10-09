@@ -1,0 +1,1 @@
+vessel('roundFlask',{path:(c,r)=>{const cx=r.x+r.w/2,n=Math.min(r.w*.12,22),R=Math.max(n*2,Math.min(r.w*.46,r.h*.36)),cy=r.y+r.h-R-2,h=Math.sqrt(R*R-n*n),d=Math.atan2(h,n);c.beginPath();c.moveTo(cx-n,r.y);c.lineTo(cx-n,cy-h);c.arc(cx,cy,R,Math.PI+d,-d,true);c.lineTo(cx+n,r.y)},hmax:.62,pad:2});

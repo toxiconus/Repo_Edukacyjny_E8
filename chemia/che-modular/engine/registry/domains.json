@@ -1,0 +1,111 @@
+{
+  "version": "1.0",
+  "description": "Domeny wiedzy = pakiety danych + logiki. Lekcja deklaruje domains[]; packer ładuje tylko te pakiety.",
+  "domains": {
+    "atom": {
+      "title": "Budowa atomu / układ okresowy",
+      "subjects": ["chemia", "fizyka"],
+      "data": ["ELEMENTS", "electronConfig", "isotopes"],
+      "tables": ["periodic-basic", "ionization-energy"],
+      "modules": ["data-elements", "atom"],
+      "views": ["periodic-54", "molecule3d-merged"]
+    },
+    "oxides": {
+      "title": "Tlenki",
+      "subjects": ["chemia"],
+      "data": ["OXIDES", "OXIDE_STATES", "REACTIONS:oxide"],
+      "tables": ["oxide-types", "oxide-colors"],
+      "modules": ["data-oxides", "data-reactions", "che-oxides-v001"],
+      "viewsPrefix": ["n01-"],
+      "gfx": { "scenes": ["carbonate", "heating", "gasCollection", "acidMetal"] }
+    },
+    "hydroxides": {
+      "title": "Wodorotlenki i zasady",
+      "subjects": ["chemia"],
+      "data": ["HYDROXIDES", "SOLUBILITY_TABLE:OH", "REACTIONS:hydroxide"],
+      "tables": ["hydroxide-solubility", "solheat"],
+      "modules": ["data-hydroxides", "data-salts", "che-hydroxides-v001"],
+      "viewsPrefix": ["n02-"],
+      "gfx": { "scenes": ["indicator", "acidMetal", "heating"] }
+    },
+    "acids": {
+      "title": "Kwasy",
+      "subjects": ["chemia"],
+      "data": ["ACID_SYSTEMS", "INDICATORS", "METAL_SERIES", "REACTIONS:acid"],
+      "tables": ["acid-strength", "indicators-ph", "metal-activity"],
+      "modules": ["data-acids", "data-reactions", "stoich"],
+      "viewsPrefix": ["kw-"],
+      "gfx": { "scenes": ["indicator", "indicatorRack", "titration", "dilution", "acidMetal"] }
+    },
+    "salts": {
+      "title": "Sole",
+      "subjects": ["chemia"],
+      "data": ["SOLUBILITY_TABLE", "IONIC", "REACTIONS:salt"],
+      "tables": ["solubility-full", "hydrolysis"],
+      "modules": ["data-salts", "data-acids", "che-ionic-v001"],
+      "viewsPrefix": ["sole-", "rownania-", "tabela-rozpuszczalnosci", "ion-map"],
+      "gfx": { "scenes": ["conductivity", "indicator", "heating", "carbonate"] }
+    },
+    "stoich": {
+      "title": "Stechiometria",
+      "subjects": ["chemia"],
+      "data": ["MolarMass", "REACTIONS"],
+      "tables": ["molar-masses"],
+      "modules": ["stoich", "che-stoich-v001"],
+      "views": ["stech-kalkulator-v01"]
+    },
+    "reactions": {
+      "title": "Silnik równań / bilans",
+      "subjects": ["chemia"],
+      "data": ["REACTIONS"],
+      "modules": ["data-reactions"],
+      "views": ["chain-scn"]
+    },
+    "colors": {
+      "title": "Barwy jonów i osadów",
+      "subjects": ["chemia"],
+      "data": ["COLORS"],
+      "tables": ["ion-colors", "precipitate-colors"],
+      "modules": ["che-colors-v001"]
+    },
+    "lab-chem": {
+      "title": "Pracownia chemiczna (GFX chem)",
+      "subjects": ["chemia"],
+      "modules": ["che-lab-engine-v001", "che-lab-bridge-v102"],
+      "gfx": {
+        "vesselGroups": ["chem.glassware", "chem.heat", "chem.measure"],
+        "effectGroups": ["chem.phase", "chem.reaction", "common.ui"]
+      }
+    },
+    "electrostatics": {
+      "title": "Elektrostatyka",
+      "subjects": ["fizyka"],
+      "data": ["FIZ.ELEKTRO.CONST", "FIZ.ELEKTRO.RHO", "PHYS.electro"],
+      "tables": ["triboelectric", "resistivity", "permittivity"],
+      "modules": ["phys", "che-fiz-elektro-v001"],
+      "viewsPrefix": ["fiz-"],
+      "gfx": {
+        "vesselGroups": ["phys.electro"],
+        "effectGroups": ["phys.electro", "common.ui"]
+      }
+    },
+    "thermo-phys": {
+      "title": "Termodynamika (fiz)",
+      "subjects": ["fizyka"],
+      "status": "planned",
+      "modules": ["thermo"]
+    },
+    "mechanics": {
+      "title": "Mechanika",
+      "subjects": ["fizyka"],
+      "status": "planned",
+      "modules": []
+    },
+    "waves": {
+      "title": "Fale i optyka",
+      "subjects": ["fizyka"],
+      "status": "planned",
+      "modules": []
+    }
+  }
+}

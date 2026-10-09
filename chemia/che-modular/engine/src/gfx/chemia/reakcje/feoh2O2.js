@@ -1,0 +1,1 @@
+P('feoh2O2',{n:'Fe(OH)₂ na powietrzu',solid:{col:'ppt-fe-oh-2',col2:'ppt-fe-oh-3',eq:4,end:1,t:'powder',shape:'powder'},out:['barwa'],why:'Zielonkawy osad brunatnieje od powierzchni — tlen utlenia Fe(II) do Fe(III).'});

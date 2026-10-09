@@ -1,0 +1,1 @@
+P('k2oH2o',{n:'K₂O + H₂O (+ fenoloftaleina)',solid:{col:ox,eq:4,end:0,t:'powder',shape:'powder'},l0:php,l1:pink,out:['barwa'],heat:1.3,T:48,why:'Tlenek znika, roztwór malinowy — powstaje KOH.'});

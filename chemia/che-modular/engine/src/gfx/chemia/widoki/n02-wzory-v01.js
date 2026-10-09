@@ -1,0 +1,20 @@
+V.define('n02-wzory-v01',{title:'Wzór wodorotlenku: kation + OH⁻ — bilans ładunków, nawias, modele',tag:'E8',
+ hint:'Wybierz kation i dokładaj grupy OH⁻, aż suma ładunków wyniesie zero. Przełączaj model: szkolny (A), przestrzenny (B) lub jony. Wpisz wzór — silnik sprawdzi, czy nawias i liczba grup są poprawne.',
+ foot:'Model: CHE.HYDROXIDES.build / check (zapis składu M(OH)n — to nie wzór strukturalny cząsteczki; w krysztale jest sieć jonów).',
+ build:function(host){host.innerHTML='';var H=HY(),cats=H.cations(),st={r:H.get('Ca(OH)2'),n:1,mode:'A'};
+  var bar=el('div','r','<b>Kation:</b> ');host.appendChild(bar);var cb=[];cats.forEach(function(c){var b=btn(bar,c.ion,function(){st.r=H.get(c.f);st.n=1;cb.forEach(function(q){q.classList.toggle('on',q===b)});draw()});if(c.f===st.r.f)b.classList.add('on');cb.push(b)});
+  var b2=el('div','r');host.appendChild(b2);btn(b2,'− OH⁻',function(){if(st.n>1){st.n--;draw()}});btn(b2,'+ OH⁻',function(){if(st.n<6){st.n++;draw()}});btn(b2,'dobierz automatycznie',function(){st.n=st.r.q;draw()});
+  var sp=el('span',null,' <b style="margin-left:12px">Model:</b> ');b2.appendChild(sp);seg(b2,[['A','A — szkolny'],['B','B — przestrzenny'],['ions','jony']],'A',function(m){st.mode=m;draw()});
+  var g=grid(host,300),L=el('div'),R=el('div');g.append(L,R);
+  var inp=el('div','r','<b>Sprawdź swój wzór:</b> ');var ii=el('input');ii.placeholder='np. CaOH2 albo Ca(OH)2';ii.style.cssText='font:600 15px ui-monospace,Consolas,monospace;padding:5px 8px;border-radius:8px;border:1px solid var(--border,#cbd5e1);min-width:160px';inp.appendChild(ii);var out=el('div');
+  btn(inp,'Sprawdź',function(){var c=H.check(ii.value,st.r.metal,st.r.q);out.innerHTML=card(c.ok?'✓ Dobrze':'✗ Popraw',c.msg,c.ok?'#16a34a':'#dc2626')});host.append(inp,out);
+  var br=el('div');host.appendChild(br);
+  function bracketDemo(){var b=H.build(st.r.metal,st.r.q);if(!b.bracket){br.innerHTML=card('Nawias','Jedna grupa OH⁻ → bez nawiasu: <b>'+b.pretty+'</b>.','#64748b');return}
+   var wrong=st.r.metal+'OH'+st.r.q,wa=H.atoms(wrong),ra=H.atoms(b.f),f=function(a){return Object.keys(a).map(function(k){return a[k]+' '+k}).join(', ')};
+   br.innerHTML=card('Dlaczego nawias? (4 kroki)','<ol style="margin:4px 0 0 18px"><li>Błędny zapis: <b style="color:#dc2626">'+H.pretty(wrong)+'</b> — indeks '+st.r.q+' stoi tylko przy H.</li><li>Skład zapisu błędnego: '+f(wa)+' → tylko 1 grupa OH i nadmiar H.</li><li>Poprawnie: <b style="color:#16a34a">'+b.pretty+'</b> — nawias = „pudełko” na grupę.</li><li>Skład: '+f(ra)+' → '+st.r.q+' całe grupy OH⁻, ładunki: '+b.charge+'.</li></ol>','#d97706')}
+  function draw(){var r=st.r,n=st.n,ok=n===r.q,f=r.metal+(n>1?'(OH)'+n:'OH');
+   var bars='<div style="display:flex;gap:4px;flex-wrap:wrap;margin:6px 0">'+Array(r.q+1).join('<span style="width:26px;height:26px;border-radius:6px;background:#dc2626;color:#fff;font:800 16px system-ui;display:inline-flex;align-items:center;justify-content:center">+</span>')+'<span style="width:14px"></span>'+Array(n+1).join('<span style="width:26px;height:26px;border-radius:6px;background:#2563eb;color:#fff;font:800 16px system-ui;display:inline-flex;align-items:center;justify-content:center">−</span>')+'</div>';
+   L.innerHTML=modelSVG(r,n,st.mode)+'<div style="text-align:center;font:800 28px ui-monospace,Consolas,monospace;margin-top:4px;color:'+(ok?'#16a34a':'#dc2626')+'">'+H.pretty(f)+'</div>';
+   var b=H.build(r.metal,r.q);R.innerHTML=card('Bilans ładunków',bars+'(+'+r.q+') + '+n+'·(−1) = <b>'+(r.q-n>0?'+':'')+(r.q-n)+'</b> '+(ok?'✓ związek obojętny':r.q>n?'→ dołóż OH⁻':'→ za dużo OH⁻'),ok?'#16a34a':'#dc2626')
+    +(ok?card(b.pretty+' — '+b.name,'<ol style="margin:4px 0 0 18px">'+b.steps.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ol>'):card('Wskazówka','Kation '+r.cation+' potrzebuje tylu grup OH⁻, ile wynosi wartość jego ładunku.','#64748b'));bracketDemo()}
+  draw()}});

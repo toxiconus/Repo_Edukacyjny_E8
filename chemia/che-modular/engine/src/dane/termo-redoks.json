@@ -1,0 +1,173 @@
+{
+ "THERMOCHEM": {
+  "H2O": {
+   "dHf": -285.8,
+   "S": 69.9,
+   "Cp": 75.3
+  },
+  "HCl": {
+   "dHf": -92.3,
+   "S": 186.9,
+   "Cp": 29.1
+  },
+  "NaOH": {
+   "dHf": -425.9,
+   "S": 64.5,
+   "Cp": 59.5
+  },
+  "NaCl": {
+   "dHf": -411.2,
+   "S": 72.1,
+   "Cp": 50.5
+  },
+  "CO2": {
+   "dHf": -393.5,
+   "S": 213.8,
+   "Cp": 37.1
+  },
+  "NH3": {
+   "dHf": -46.1,
+   "S": 192.8,
+   "Cp": 35.1
+  },
+  "CH4": {
+   "dHf": -74.8,
+   "S": 186.3,
+   "Cp": 35.7
+  },
+  "Zn": {
+   "dHf": 0,
+   "S": 60,
+   "Cp": 25.4
+  },
+  "Fe": {
+   "dHf": 0,
+   "S": 27.3,
+   "Cp": 25.1
+  },
+  "Mg": {
+   "dHf": 0,
+   "S": 32.7,
+   "Cp": 24.9
+  },
+  "CaCO3": {
+   "dHf": -1206.9,
+   "S": 92.9,
+   "Cp": 81.9
+  },
+  "CaCl2": {
+   "dHf": -795.8,
+   "S": 104.6,
+   "Cp": 72.6
+  },
+  "ZnCl2": {
+   "dHf": -415.1,
+   "S": 111.5,
+   "Cp": 71.9
+  },
+  "MgCl2": {
+   "dHf": -641.3,
+   "S": 89.6,
+   "Cp": 71.4
+  },
+  "H2": {
+   "dHf": 0,
+   "S": 130.7,
+   "Cp": 28.8
+  },
+  "H2SO4": {
+   "dHf": -814,
+   "S": 156.9,
+   "Cp": 98.6
+  }
+ },
+ "REDOX_POTENTIALS": {
+  "Li+/Li": -3.04,
+  "K+/K": -2.93,
+  "Na+/Na": -2.71,
+  "Mg2+/Mg": -2.37,
+  "Al3+/Al": -1.66,
+  "Zn2+/Zn": -0.76,
+  "Fe2+/Fe": -0.44,
+  "2H+/H2": 0,
+  "Cu2+/Cu": 0.34,
+  "Ag+/Ag": 0.8,
+  "Au3+/Au": 1.5,
+  "F2/F-": 2.87,
+  "Cl2/Cl-": 1.36,
+  "Br2/Br-": 1.07,
+  "I2/I-": 0.54,
+  "MnO4-/Mn2+": 1.51,
+  "Cr2O7^2-/Cr3+": 1.33,
+  "Ni2+/Ni": -0.26,
+  "Pb2+/Pb": -0.13,
+  "Sn2+/Sn": -0.14,
+  "Hg2+/Hg": 0.85,
+  "Cs+/Cs": -3.03,
+  "Rb+/Rb": -2.98,
+  "Ba2+/Ba": -2.91,
+  "Sr2+/Sr": -2.89,
+  "Ca2+/Ca": -2.87,
+  "Mn2+/Mn": -1.18,
+  "Cr3+/Cr": -0.74,
+  "Cd2+/Cd": -0.4,
+  "Co2+/Co": -0.28,
+  "Fe3+/Fe2+": 0.77,
+  "Pt2+/Pt": 1.18,
+  "H2O2/H2O": 1.776
+ },
+ "KINETICS": {
+  "hclNaOH": {
+   "k": null,
+   "Ea": null,
+   "order": [
+    1,
+    1
+   ],
+   "source": "brak danych eksperymentalnych"
+  }
+ },
+ "THERMO_CONTEXT": {
+  "H2O": {
+   "phase": "liquid",
+   "T_K": 298.15,
+   "source": "NIST SRD 69"
+  },
+  "HCl": {
+   "phase": "gas",
+   "T_K": 298.15,
+   "source": "NIST SRD 69"
+  },
+  "CO2": {
+   "phase": "gas",
+   "T_K": 298.15,
+   "source": "NIST SRD 69"
+  },
+  "NH3": {
+   "phase": "gas",
+   "T_K": 298.15,
+   "source": "NIST SRD 69"
+  },
+  "CH4": {
+   "phase": "gas",
+   "T_K": 298.15,
+   "source": "NIST SRD 69"
+  },
+  "H2": {
+   "phase": "gas",
+   "T_K": 298.15,
+   "source": "NIST SRD 69"
+  },
+  "H2SO4": {
+   "phase": "liquid",
+   "T_K": 298.15,
+   "source": "NIST/thermochemical reference; verify record before reference-grade use"
+  }
+ },
+ "REDOX_CONTEXT": {
+  "referenceTemperatureK": 298.15,
+  "medium": "aqueous",
+  "type": "standard reduction potential",
+  "caveat": "E° zależy od zdefiniowanej półreakcji i warunków; klucz jest skrótem półogniwa."
+ }
+}

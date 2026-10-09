@@ -1,0 +1,6065 @@
+{
+ "REACTIONS": {
+  "hclNaOH": {
+   "reactants": [
+    {
+     "formula": "HCl",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaCl",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "znHcl": {
+   "reactants": [
+    {
+     "formula": "Zn",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "ZnCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "mgHcl": {
+   "reactants": [
+    {
+     "formula": "Mg",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "MgCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "feHcl": {
+   "reactants": [
+    {
+     "formula": "Fe",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "FeCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "caco3Hcl": {
+   "reactants": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ]
+  },
+  "h2so4Naoh": {
+   "reactants": [
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2SO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "cuoH2so4": {
+   "reactants": [
+    {
+     "formula": "CuO",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CuSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "cuoHcl": {
+   "reactants": [
+    {
+     "formula": "CuO",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "CuCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "agno3Hcl": {
+   "reactants": [
+    {
+     "formula": "AgNO3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "AgCl",
+     "coef": 1
+    },
+    {
+     "formula": "HNO3",
+     "coef": 1
+    }
+   ]
+  },
+  "cuHno3": {
+   "reactants": [
+    {
+     "formula": "Cu",
+     "coef": 1
+    },
+    {
+     "formula": "HNO3",
+     "coef": 4
+    }
+   ],
+   "products": [
+    {
+     "formula": "Cu(NO3)2",
+     "coef": 1
+    },
+    {
+     "formula": "NO2",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "so3H2o": {
+   "reactants": [
+    {
+     "formula": "SO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ]
+  },
+  "naclH2so4": {
+   "reactants": [
+    {
+     "formula": "NaCl",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaHSO4",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 1
+    }
+   ]
+  },
+  "naclH2SO4": {
+   "reactants": [
+    {
+     "formula": "NaCl",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaHSO4",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 1
+    }
+   ],
+   "aliasOf": "naclH2so4"
+  },
+  "h2Cl2": {
+   "reactants": [
+    {
+     "formula": "H2",
+     "coef": 1
+    },
+    {
+     "formula": "Cl2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ]
+  },
+  "alHcl": {
+   "reactants": [
+    {
+     "formula": "Al",
+     "coef": 2
+    },
+    {
+     "formula": "HCl",
+     "coef": 6
+    }
+   ],
+   "products": [
+    {
+     "formula": "AlCl3",
+     "coef": 2
+    },
+    {
+     "formula": "H2",
+     "coef": 3
+    }
+   ]
+  },
+  "znH2so4": {
+   "reactants": [
+    {
+     "formula": "Zn",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "ZnSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "mgH2so4": {
+   "reactants": [
+    {
+     "formula": "Mg",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "MgSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "caoHcl": {
+   "reactants": [
+    {
+     "formula": "CaO",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "mgoHcl": {
+   "reactants": [
+    {
+     "formula": "MgO",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "MgCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "fe2o3Hcl": {
+   "reactants": [
+    {
+     "formula": "Fe2O3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 6
+    }
+   ],
+   "products": [
+    {
+     "formula": "FeCl3",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ]
+  },
+  "na2oHno3": {
+   "reactants": [
+    {
+     "formula": "Na2O",
+     "coef": 1
+    },
+    {
+     "formula": "HNO3",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaNO3",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "znoHcl": {
+   "reactants": [
+    {
+     "formula": "ZnO",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "ZnCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "h2so4Koh": {
+   "reactants": [
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    },
+    {
+     "formula": "KOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "K2SO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "caoh2Hno3": {
+   "reactants": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "HNO3",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ca(NO3)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "aloh3Hcl": {
+   "reactants": [
+    {
+     "formula": "Al(OH)3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "AlCl3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ]
+  },
+  "h3po4Caoh2": {
+   "reactants": [
+    {
+     "formula": "H3PO4",
+     "coef": 2
+    },
+    {
+     "formula": "Ca(OH)2",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ca3(PO4)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 6
+    }
+   ]
+  },
+  "mgoh2Hcl": {
+   "reactants": [
+    {
+     "formula": "Mg(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "MgCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "nahco3Hcl": {
+   "reactants": [
+    {
+     "formula": "NaHCO3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaCl",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ]
+  },
+  "na2co3Hcl": {
+   "reactants": [
+    {
+     "formula": "Na2CO3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaCl",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ]
+  },
+  "bacl2H2so4": {
+   "reactants": [
+    {
+     "formula": "BaCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "BaSO4",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ]
+  },
+  "na2sHcl": {
+   "reactants": [
+    {
+     "formula": "Na2S",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaCl",
+     "coef": 2
+    },
+    {
+     "formula": "H2S",
+     "coef": 1
+    }
+   ]
+  },
+  "na2so3Hcl": {
+   "reactants": [
+    {
+     "formula": "Na2SO3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaCl",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    },
+    {
+     "formula": "SO2",
+     "coef": 1
+    }
+   ]
+  },
+  "na2sio3Hcl": {
+   "reactants": [
+    {
+     "formula": "Na2SiO3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2SiO3",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 2
+    }
+   ]
+  },
+  "hclNh3": {
+   "reactants": [
+    {
+     "formula": "HCl",
+     "coef": 1
+    },
+    {
+     "formula": "NH3",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NH4Cl",
+     "coef": 1
+    }
+   ]
+  },
+  "cuHno3Dil": {
+   "reactants": [
+    {
+     "formula": "Cu",
+     "coef": 3
+    },
+    {
+     "formula": "HNO3",
+     "coef": 8
+    }
+   ],
+   "products": [
+    {
+     "formula": "Cu(NO3)2",
+     "coef": 3
+    },
+    {
+     "formula": "NO",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 4
+    }
+   ]
+  },
+  "cuH2so4Conc": {
+   "reactants": [
+    {
+     "formula": "Cu",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "CuSO4",
+     "coef": 1
+    },
+    {
+     "formula": "SO2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "auAquaRegia": {
+   "reactants": [
+    {
+     "formula": "Au",
+     "coef": 1
+    },
+    {
+     "formula": "HNO3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 4
+    }
+   ],
+   "products": [
+    {
+     "formula": "HAuCl4",
+     "coef": 1
+    },
+    {
+     "formula": "NO",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "so2H2o": {
+   "reactants": [
+    {
+     "formula": "SO2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2SO3",
+     "coef": 1
+    }
+   ]
+  },
+  "co2H2o": {
+   "reactants": [
+    {
+     "formula": "CO2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2CO3",
+     "coef": 1
+    }
+   ]
+  },
+  "p4o10H2o": {
+   "reactants": [
+    {
+     "formula": "P4O10",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 6
+    }
+   ],
+   "products": [
+    {
+     "formula": "H3PO4",
+     "coef": 4
+    }
+   ]
+  },
+  "n2o5H2o": {
+   "reactants": [
+    {
+     "formula": "N2O5",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "HNO3",
+     "coef": 2
+    }
+   ]
+  },
+  "n2o3H2o": {
+   "reactants": [
+    {
+     "formula": "N2O3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "HNO2",
+     "coef": 2
+    }
+   ]
+  },
+  "h2Br2": {
+   "reactants": [
+    {
+     "formula": "H2",
+     "coef": 1
+    },
+    {
+     "formula": "Br2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "HBr",
+     "coef": 2
+    }
+   ]
+  },
+  "h2I2": {
+   "reactants": [
+    {
+     "formula": "H2",
+     "coef": 1
+    },
+    {
+     "formula": "I2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "HI",
+     "coef": 2
+    }
+   ]
+  },
+  "h2S": {
+   "reactants": [
+    {
+     "formula": "H2",
+     "coef": 1
+    },
+    {
+     "formula": "S",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2S",
+     "coef": 1
+    }
+   ]
+  },
+  "sO2": {
+   "reactants": [
+    {
+     "formula": "S",
+     "coef": 1
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "SO2",
+     "coef": 1
+    }
+   ]
+  },
+  "so2O2": {
+   "reactants": [
+    {
+     "formula": "SO2",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "SO3",
+     "coef": 2
+    }
+   ]
+  },
+  "n2O2": {
+   "reactants": [
+    {
+     "formula": "N2",
+     "coef": 1
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NO",
+     "coef": 2
+    }
+   ]
+  },
+  "noO2": {
+   "reactants": [
+    {
+     "formula": "NO",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NO2",
+     "coef": 2
+    }
+   ]
+  },
+  "no2H2o": {
+   "reactants": [
+    {
+     "formula": "NO2",
+     "coef": 3
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "HNO3",
+     "coef": 2
+    },
+    {
+     "formula": "NO",
+     "coef": 1
+    }
+   ]
+  },
+  "no2O2H2o": {
+   "reactants": [
+    {
+     "formula": "NO2",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "HNO3",
+     "coef": 4
+    }
+   ]
+  },
+  "caco3H2so4": {
+   "reactants": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ]
+  },
+  "hno3Decomp": {
+   "reactants": [
+    {
+     "formula": "HNO3",
+     "coef": 4
+    }
+   ],
+   "products": [
+    {
+     "formula": "NO2",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "sugarH2so4": {
+   "reactants": [
+    {
+     "formula": "C12H22O11",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "C",
+     "coef": 12
+    },
+    {
+     "formula": "H2O",
+     "coef": 11
+    }
+   ]
+  },
+  "sio2Hf": {
+   "reactants": [
+    {
+     "formula": "SiO2",
+     "coef": 1
+    },
+    {
+     "formula": "HF",
+     "coef": 4
+    }
+   ],
+   "products": [
+    {
+     "formula": "SiF4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "naH2o": {
+   "reactants": [
+    {
+     "formula": "Na",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaOH",
+     "coef": 2
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "caoh2Co2": {
+   "reactants": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "na2Cl2": {
+   "reactants": [
+    {
+     "formula": "Na",
+     "coef": 2
+    },
+    {
+     "formula": "Cl2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaCl",
+     "coef": 2
+    }
+   ]
+  },
+  "feS": {
+   "reactants": [
+    {
+     "formula": "Fe",
+     "coef": 1
+    },
+    {
+     "formula": "S",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "FeS",
+     "coef": 1
+    }
+   ]
+  },
+  "caoCo2": {
+   "reactants": [
+    {
+     "formula": "CaO",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    }
+   ]
+  },
+  "naohCo2": {
+   "reactants": [
+    {
+     "formula": "NaOH",
+     "coef": 2
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2CO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "cuso4Naoh": {
+   "reactants": [
+    {
+     "formula": "CuSO4",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Cu(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "Na2SO4",
+     "coef": 1
+    }
+   ]
+  },
+  "fecl3Naoh": {
+   "reactants": [
+    {
+     "formula": "FeCl3",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe(OH)3",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 3
+    }
+   ]
+  },
+  "agno3Nacl": {
+   "reactants": [
+    {
+     "formula": "AgNO3",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "AgCl",
+     "coef": 1
+    },
+    {
+     "formula": "NaNO3",
+     "coef": 1
+    }
+   ]
+  },
+  "bacl2Na2so4": {
+   "reactants": [
+    {
+     "formula": "BaCl2",
+     "coef": 1
+    },
+    {
+     "formula": "Na2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "BaSO4",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 2
+    }
+   ]
+  },
+  "cacl2Na2co3": {
+   "reactants": [
+    {
+     "formula": "CaCl2",
+     "coef": 1
+    },
+    {
+     "formula": "Na2CO3",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 2
+    }
+   ]
+  },
+  "pbno32Ki": {
+   "reactants": [
+    {
+     "formula": "Pb(NO3)2",
+     "coef": 1
+    },
+    {
+     "formula": "KI",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "PbI2",
+     "coef": 1
+    },
+    {
+     "formula": "KNO3",
+     "coef": 2
+    }
+   ]
+  },
+  "znCuso4": {
+   "reactants": [
+    {
+     "formula": "Zn",
+     "coef": 1
+    },
+    {
+     "formula": "CuSO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "ZnSO4",
+     "coef": 1
+    },
+    {
+     "formula": "Cu",
+     "coef": 1
+    }
+   ]
+  },
+  "feCuso4": {
+   "reactants": [
+    {
+     "formula": "Fe",
+     "coef": 1
+    },
+    {
+     "formula": "CuSO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "FeSO4",
+     "coef": 1
+    },
+    {
+     "formula": "Cu",
+     "coef": 1
+    }
+   ]
+  },
+  "cuAgno3": {
+   "reactants": [
+    {
+     "formula": "Cu",
+     "coef": 1
+    },
+    {
+     "formula": "AgNO3",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Cu(NO3)2",
+     "coef": 1
+    },
+    {
+     "formula": "Ag",
+     "coef": 2
+    }
+   ]
+  },
+  "caco3Decomp": {
+   "reactants": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaO",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ]
+  },
+  "caoH2o": {
+   "reactants": [
+    {
+     "formula": "CaO",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    }
+   ]
+  },
+  "caoh2Co2Mortar": {
+   "reactants": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "caco3Co2H2o": {
+   "reactants": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ca(HCO3)2",
+     "coef": 1
+    }
+   ]
+  },
+  "cahco32Decomp": {
+   "reactants": [
+    {
+     "formula": "Ca(HCO3)2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ]
+  },
+  "cuso4Hydrate": {
+   "reactants": [
+    {
+     "formula": "CuSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 5
+    }
+   ],
+   "products": [
+    {
+     "formula": "CuSO4·5H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "elHcl": {
+   "reactants": [
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2",
+     "coef": 1
+    },
+    {
+     "formula": "Cl2",
+     "coef": 1
+    }
+   ]
+  },
+  "elH2o": {
+   "reactants": [
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ]
+  },
+  "elNacl": {
+   "reactants": [
+    {
+     "formula": "NaCl",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaOH",
+     "coef": 2
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    },
+    {
+     "formula": "Cl2",
+     "coef": 1
+    }
+   ]
+  },
+  "ch3coohNaoh": {
+   "reactants": [
+    {
+     "formula": "CH3COOH",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CH3COONa",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "mgO2": {
+   "reactants": [
+    {
+     "formula": "Mg",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "MgO",
+     "coef": 2
+    }
+   ]
+  },
+  "cO2": {
+   "reactants": [
+    {
+     "formula": "C",
+     "coef": 1
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ]
+  },
+  "cO2Inc": {
+   "reactants": [
+    {
+     "formula": "C",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CO",
+     "coef": 2
+    }
+   ]
+  },
+  "coO2": {
+   "reactants": [
+    {
+     "formula": "CO",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CO2",
+     "coef": 2
+    }
+   ]
+  },
+  "pO2": {
+   "reactants": [
+    {
+     "formula": "P",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 5
+    }
+   ],
+   "products": [
+    {
+     "formula": "P2O5",
+     "coef": 2
+    }
+   ]
+  },
+  "p4O2": {
+   "reactants": [
+    {
+     "formula": "P4",
+     "coef": 1
+    },
+    {
+     "formula": "O2",
+     "coef": 5
+    }
+   ],
+   "products": [
+    {
+     "formula": "P4O10",
+     "coef": 1
+    }
+   ]
+  },
+  "feO2": {
+   "reactants": [
+    {
+     "formula": "Fe",
+     "coef": 3
+    },
+    {
+     "formula": "O2",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe3O4",
+     "coef": 1
+    }
+   ]
+  },
+  "naO2": {
+   "reactants": [
+    {
+     "formula": "Na",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2O",
+     "coef": 2
+    }
+   ]
+  },
+  "naO2Per": {
+   "reactants": [
+    {
+     "formula": "Na",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2O2",
+     "coef": 1
+    }
+   ]
+  },
+  "caO2": {
+   "reactants": [
+    {
+     "formula": "Ca",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaO",
+     "coef": 2
+    }
+   ]
+  },
+  "cuO2": {
+   "reactants": [
+    {
+     "formula": "Cu",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CuO",
+     "coef": 2
+    }
+   ]
+  },
+  "alO2": {
+   "reactants": [
+    {
+     "formula": "Al",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Al2O3",
+     "coef": 2
+    }
+   ]
+  },
+  "znO2": {
+   "reactants": [
+    {
+     "formula": "Zn",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "ZnO",
+     "coef": 2
+    }
+   ]
+  },
+  "h2O2": {
+   "reactants": [
+    {
+     "formula": "H2",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "ch4O2": {
+   "reactants": [
+    {
+     "formula": "CH4",
+     "coef": 1
+    },
+    {
+     "formula": "O2",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "CO2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "ch4O2Inc": {
+   "reactants": [
+    {
+     "formula": "CH4",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "CO",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 4
+    }
+   ]
+  },
+  "ch4O2Soot": {
+   "reactants": [
+    {
+     "formula": "CH4",
+     "coef": 1
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "C",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "c3h8O2": {
+   "reactants": [
+    {
+     "formula": "C3H8",
+     "coef": 1
+    },
+    {
+     "formula": "O2",
+     "coef": 5
+    }
+   ],
+   "products": [
+    {
+     "formula": "CO2",
+     "coef": 3
+    },
+    {
+     "formula": "H2O",
+     "coef": 4
+    }
+   ]
+  },
+  "c3h8O2Inc": {
+   "reactants": [
+    {
+     "formula": "C3H8",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 7
+    }
+   ],
+   "products": [
+    {
+     "formula": "CO",
+     "coef": 6
+    },
+    {
+     "formula": "H2O",
+     "coef": 8
+    }
+   ]
+  },
+  "c8h18O2": {
+   "reactants": [
+    {
+     "formula": "C8H18",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 25
+    }
+   ],
+   "products": [
+    {
+     "formula": "CO2",
+     "coef": 16
+    },
+    {
+     "formula": "H2O",
+     "coef": 18
+    }
+   ]
+  },
+  "na2oH2o": {
+   "reactants": [
+    {
+     "formula": "Na2O",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ]
+  },
+  "k2oH2o": {
+   "reactants": [
+    {
+     "formula": "K2O",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "KOH",
+     "coef": 2
+    }
+   ]
+  },
+  "li2oH2o": {
+   "reactants": [
+    {
+     "formula": "Li2O",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "LiOH",
+     "coef": 2
+    }
+   ]
+  },
+  "mgoH2o": {
+   "reactants": [
+    {
+     "formula": "MgO",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Mg(OH)2",
+     "coef": 1
+    }
+   ]
+  },
+  "p2o5H2o": {
+   "reactants": [
+    {
+     "formula": "P2O5",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "H3PO4",
+     "coef": 2
+    }
+   ]
+  },
+  "mn2o7H2o": {
+   "reactants": [
+    {
+     "formula": "Mn2O7",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "HMnO4",
+     "coef": 2
+    }
+   ]
+  },
+  "cro3H2o": {
+   "reactants": [
+    {
+     "formula": "CrO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2CrO4",
+     "coef": 1
+    }
+   ]
+  },
+  "cl2o7H2o": {
+   "reactants": [
+    {
+     "formula": "Cl2O7",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "HClO4",
+     "coef": 2
+    }
+   ]
+  },
+  "al2o3Hcl": {
+   "reactants": [
+    {
+     "formula": "Al2O3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 6
+    }
+   ],
+   "products": [
+    {
+     "formula": "AlCl3",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ]
+  },
+  "fe2o3H2so4": {
+   "reactants": [
+    {
+     "formula": "Fe2O3",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe2(SO4)3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ]
+  },
+  "co2Koh": {
+   "reactants": [
+    {
+     "formula": "CO2",
+     "coef": 1
+    },
+    {
+     "formula": "KOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "K2CO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "co2NaohExc": {
+   "reactants": [
+    {
+     "formula": "CO2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaHCO3",
+     "coef": 1
+    }
+   ]
+  },
+  "na2co3Co2": {
+   "reactants": [
+    {
+     "formula": "Na2CO3",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaHCO3",
+     "coef": 2
+    }
+   ]
+  },
+  "so2Naoh": {
+   "reactants": [
+    {
+     "formula": "SO2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2SO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "so3Naoh": {
+   "reactants": [
+    {
+     "formula": "SO3",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2SO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "sio2Naoh": {
+   "reactants": [
+    {
+     "formula": "SiO2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2SiO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "al2o3NaohMelt": {
+   "reactants": [
+    {
+     "formula": "Al2O3",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaAlO2",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "al2o3NaohAq": {
+   "reactants": [
+    {
+     "formula": "Al2O3",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaAl(OH)4",
+     "coef": 2
+    }
+   ]
+  },
+  "znoNaoh": {
+   "reactants": [
+    {
+     "formula": "ZnO",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2ZnO2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "znoNaohAq": {
+   "reactants": [
+    {
+     "formula": "ZnO",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2Zn(OH)4",
+     "coef": 1
+    }
+   ]
+  },
+  "na2oCo2": {
+   "reactants": [
+    {
+     "formula": "Na2O",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2CO3",
+     "coef": 1
+    }
+   ]
+  },
+  "caoSio2": {
+   "reactants": [
+    {
+     "formula": "CaO",
+     "coef": 1
+    },
+    {
+     "formula": "SiO2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaSiO3",
+     "coef": 1
+    }
+   ]
+  },
+  "cuoH2": {
+   "reactants": [
+    {
+     "formula": "CuO",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Cu",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "cuoC": {
+   "reactants": [
+    {
+     "formula": "CuO",
+     "coef": 2
+    },
+    {
+     "formula": "C",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Cu",
+     "coef": 2
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ]
+  },
+  "fe2o3Co": {
+   "reactants": [
+    {
+     "formula": "Fe2O3",
+     "coef": 1
+    },
+    {
+     "formula": "CO",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe",
+     "coef": 2
+    },
+    {
+     "formula": "CO2",
+     "coef": 3
+    }
+   ]
+  },
+  "fe2o3C": {
+   "reactants": [
+    {
+     "formula": "Fe2O3",
+     "coef": 1
+    },
+    {
+     "formula": "C",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe",
+     "coef": 2
+    },
+    {
+     "formula": "CO",
+     "coef": 3
+    }
+   ]
+  },
+  "termit": {
+   "reactants": [
+    {
+     "formula": "Fe2O3",
+     "coef": 1
+    },
+    {
+     "formula": "Al",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe",
+     "coef": 2
+    },
+    {
+     "formula": "Al2O3",
+     "coef": 1
+    }
+   ]
+  },
+  "feH2oSteam": {
+   "reactants": [
+    {
+     "formula": "Fe",
+     "coef": 3
+    },
+    {
+     "formula": "H2O",
+     "coef": 4
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe3O4",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 4
+    }
+   ]
+  },
+  "mgCo2": {
+   "reactants": [
+    {
+     "formula": "Mg",
+     "coef": 2
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "MgO",
+     "coef": 2
+    },
+    {
+     "formula": "C",
+     "coef": 1
+    }
+   ]
+  },
+  "hgoDecomp": {
+   "reactants": [
+    {
+     "formula": "HgO",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Hg",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ]
+  },
+  "pbo2Decomp": {
+   "reactants": [
+    {
+     "formula": "PbO2",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "PbO",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ]
+  },
+  "ag2oDecomp": {
+   "reactants": [
+    {
+     "formula": "Ag2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ag",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ]
+  },
+  "h2o2Decomp": {
+   "reactants": [
+    {
+     "formula": "H2O2",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "H2O",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ]
+  },
+  "kclo3Decomp": {
+   "reactants": [
+    {
+     "formula": "KClO3",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "KCl",
+     "coef": 2
+    },
+    {
+     "formula": "O2",
+     "coef": 3
+    }
+   ]
+  },
+  "na2o2H2o": {
+   "reactants": [
+    {
+     "formula": "Na2O2",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaOH",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    }
+   ]
+  },
+  "feO2Rust": {
+   "reactants": [
+    {
+     "formula": "Fe",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe2O3",
+     "coef": 2
+    }
+   ]
+  },
+  "liH2o": {
+   "reactants": [
+    {
+     "formula": "Li",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "LiOH",
+     "coef": 2
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "kH2o": {
+   "reactants": [
+    {
+     "formula": "K",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "KOH",
+     "coef": 2
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "caH2o": {
+   "reactants": [
+    {
+     "formula": "Ca",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "baH2o": {
+   "reactants": [
+    {
+     "formula": "Ba",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ba(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "mgH2oHot": {
+   "reactants": [
+    {
+     "formula": "Mg",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Mg(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2",
+     "coef": 1
+    }
+   ]
+  },
+  "baoH2o": {
+   "reactants": [
+    {
+     "formula": "BaO",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ba(OH)2",
+     "coef": 1
+    }
+   ]
+  },
+  "mgcl2Naoh": {
+   "reactants": [
+    {
+     "formula": "MgCl2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Mg(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 2
+    }
+   ]
+  },
+  "alcl3Naoh": {
+   "reactants": [
+    {
+     "formula": "AlCl3",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Al(OH)3",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 3
+    }
+   ]
+  },
+  "znso4Naoh": {
+   "reactants": [
+    {
+     "formula": "ZnSO4",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Zn(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "Na2SO4",
+     "coef": 1
+    }
+   ]
+  },
+  "feso4Naoh": {
+   "reactants": [
+    {
+     "formula": "FeSO4",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "Na2SO4",
+     "coef": 1
+    }
+   ]
+  },
+  "cucl2Naoh": {
+   "reactants": [
+    {
+     "formula": "CuCl2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Cu(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 2
+    }
+   ]
+  },
+  "niso4Naoh": {
+   "reactants": [
+    {
+     "formula": "NiSO4",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ni(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "Na2SO4",
+     "coef": 1
+    }
+   ]
+  },
+  "mnso4Naoh": {
+   "reactants": [
+    {
+     "formula": "MnSO4",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Mn(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "Na2SO4",
+     "coef": 1
+    }
+   ]
+  },
+  "pbno32Naoh": {
+   "reactants": [
+    {
+     "formula": "Pb(NO3)2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Pb(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "NaNO3",
+     "coef": 2
+    }
+   ]
+  },
+  "cacl2Naoh": {
+   "reactants": [
+    {
+     "formula": "CaCl2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "NaCl",
+     "coef": 2
+    }
+   ]
+  },
+  "agno3Naoh": {
+   "reactants": [
+    {
+     "formula": "AgNO3",
+     "coef": 2
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ag2O",
+     "coef": 1
+    },
+    {
+     "formula": "NaNO3",
+     "coef": 2
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "alcl3Nh3": {
+   "reactants": [
+    {
+     "formula": "AlCl3",
+     "coef": 1
+    },
+    {
+     "formula": "NH3",
+     "coef": 3
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Al(OH)3",
+     "coef": 1
+    },
+    {
+     "formula": "NH4Cl",
+     "coef": 3
+    }
+   ]
+  },
+  "kohHno3": {
+   "reactants": [
+    {
+     "formula": "KOH",
+     "coef": 1
+    },
+    {
+     "formula": "HNO3",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "KNO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "naohHno3": {
+   "reactants": [
+    {
+     "formula": "NaOH",
+     "coef": 1
+    },
+    {
+     "formula": "HNO3",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaNO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "kohHcl": {
+   "reactants": [
+    {
+     "formula": "KOH",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "KCl",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "caoh2Hcl": {
+   "reactants": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "caoh2H2so4": {
+   "reactants": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "baoh2H2so4": {
+   "reactants": [
+    {
+     "formula": "Ba(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "BaSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "baoh2Hcl": {
+   "reactants": [
+    {
+     "formula": "Ba(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "BaCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "cuoh2H2so4": {
+   "reactants": [
+    {
+     "formula": "Cu(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CuSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "cuoh2Hcl": {
+   "reactants": [
+    {
+     "formula": "Cu(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "CuCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "feoh3Hcl": {
+   "reactants": [
+    {
+     "formula": "Fe(OH)3",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "FeCl3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ]
+  },
+  "znoh2Hcl": {
+   "reactants": [
+    {
+     "formula": "Zn(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "HCl",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "ZnCl2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "aloh3H2so4": {
+   "reactants": [
+    {
+     "formula": "Al(OH)3",
+     "coef": 2
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 3
+    }
+   ],
+   "products": [
+    {
+     "formula": "Al2(SO4)3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 6
+    }
+   ]
+  },
+  "mgoh2H2so4": {
+   "reactants": [
+    {
+     "formula": "Mg(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "H2SO4",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "MgSO4",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ]
+  },
+  "aloh3Naoh": {
+   "reactants": [
+    {
+     "formula": "Al(OH)3",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaAl(OH)4",
+     "coef": 1
+    }
+   ]
+  },
+  "znoh2Naoh": {
+   "reactants": [
+    {
+     "formula": "Zn(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2Zn(OH)4",
+     "coef": 1
+    }
+   ]
+  },
+  "pboh2Naoh": {
+   "reactants": [
+    {
+     "formula": "Pb(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Na2Pb(OH)4",
+     "coef": 1
+    }
+   ]
+  },
+  "baoh2Co2": {
+   "reactants": [
+    {
+     "formula": "Ba(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "CO2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "BaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "caoh2Na2co3": {
+   "reactants": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    },
+    {
+     "formula": "Na2CO3",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaCO3",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 2
+    }
+   ]
+  },
+  "nh4clNaoh": {
+   "reactants": [
+    {
+     "formula": "NH4Cl",
+     "coef": 1
+    },
+    {
+     "formula": "NaOH",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "NaCl",
+     "coef": 1
+    },
+    {
+     "formula": "NH3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "cuoh2Heat": {
+   "reactants": [
+    {
+     "formula": "Cu(OH)2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CuO",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "feoh3Heat": {
+   "reactants": [
+    {
+     "formula": "Fe(OH)3",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe2O3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ]
+  },
+  "aloh3Heat": {
+   "reactants": [
+    {
+     "formula": "Al(OH)3",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Al2O3",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 3
+    }
+   ]
+  },
+  "mgoh2Heat": {
+   "reactants": [
+    {
+     "formula": "Mg(OH)2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "MgO",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "znoh2Heat": {
+   "reactants": [
+    {
+     "formula": "Zn(OH)2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "ZnO",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "caoh2Heat": {
+   "reactants": [
+    {
+     "formula": "Ca(OH)2",
+     "coef": 1
+    }
+   ],
+   "products": [
+    {
+     "formula": "CaO",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "agohDec": {
+   "reactants": [
+    {
+     "formula": "AgOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Ag2O",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "cuohDec": {
+   "reactants": [
+    {
+     "formula": "CuOH",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Cu2O",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 1
+    }
+   ]
+  },
+  "feoh2O2": {
+   "reactants": [
+    {
+     "formula": "Fe(OH)2",
+     "coef": 4
+    },
+    {
+     "formula": "O2",
+     "coef": 1
+    },
+    {
+     "formula": "H2O",
+     "coef": 2
+    }
+   ],
+   "products": [
+    {
+     "formula": "Fe(OH)3",
+     "coef": 4
+    }
+   ]
+  }
+ },
+ "REACTION_DATA": {
+  "hclNaOH": {
+   "type": "neutralization",
+   "conditions": "roztwór wodny",
+   "observation": "brak gazu i osadu; reakcja zobojętniania",
+   "products": [
+    "NaCl",
+    "H2O"
+   ],
+   "safety": [
+    "NaOH jest żrący"
+   ]
+  },
+  "znHcl": {
+   "type": "metal+acid",
+   "conditions": "kwas nieutleniający, roztwór wodny",
+   "observation": "wydziela się H₂; cynk się rozpuszcza",
+   "products": [
+    "ZnCl2",
+    "H2"
+   ],
+   "safety": [
+    "H₂ jest palny"
+   ]
+  },
+  "mgHcl": {
+   "type": "metal+acid",
+   "conditions": "kwas nieutleniający",
+   "observation": "wydziela się H₂; magnez szybko się rozpuszcza",
+   "products": [
+    "MgCl2",
+    "H2"
+   ],
+   "safety": [
+    "H₂ palny; reakcja gwałtowna"
+   ]
+  },
+  "feHcl": {
+   "type": "metal+acid",
+   "conditions": "roztwór wodny",
+   "observation": "wydziela się H₂; powstaje FeCl₂",
+   "products": [
+    "FeCl2",
+    "H2"
+   ],
+   "safety": [
+    "H₂ palny"
+   ]
+  },
+  "caco3Hcl": {
+   "type": "carbonate+acid",
+   "conditions": "roztwór wodny",
+   "observation": "musowanie i wydzielanie CO₂",
+   "products": [
+    "CaCl2",
+    "H2O",
+    "CO2"
+   ],
+   "safety": [
+    "gaz w zamkniętym układzie — ryzyko"
+   ]
+  },
+  "h2so4Naoh": {
+   "type": "neutralization",
+   "conditions": "roztwór wodny",
+   "observation": "zobojętnianie",
+   "products": [
+    "Na2SO4",
+    "H2O"
+   ],
+   "safety": [
+    "kwas i zasada żrące"
+   ]
+  },
+  "cuoH2so4": {
+   "type": "acid+basic-oxide",
+   "conditions": "roztwór wodny",
+   "observation": "czarny CuO znika; roztwór soli",
+   "products": [
+    "CuSO4",
+    "H2O"
+   ],
+   "safety": [
+    "kwas żrący"
+   ]
+  },
+  "cuoHcl": {
+   "type": "acid+basic-oxide",
+   "conditions": "roztwór wodny",
+   "observation": "CuO znika; roztwór chlorku miedzi(II)",
+   "products": [
+    "CuCl2",
+    "H2O"
+   ],
+   "safety": [
+    "kwas żrący"
+   ]
+  },
+  "agno3Hcl": {
+   "type": "precipitation",
+   "conditions": "roztwór wodny",
+   "observation": "biały serowaty osad AgCl",
+   "products": [
+    "AgCl",
+    "HNO3"
+   ],
+   "safety": [
+    "AgNO₃ żrący i plami skórę"
+   ]
+  },
+  "cuHno3": {
+   "type": "redox",
+   "conditions": "stężony HNO₃; wyciąg",
+   "observation": "roztwór niebieski; brunatny NO₂",
+   "products": [
+    "Cu(NO3)2",
+    "NO2",
+    "H2O"
+   ],
+   "safety": [
+    "NO₂ toksyczny"
+   ]
+  },
+  "so3H2o": {
+   "type": "synteza kwasu",
+   "conditions": "kontakt SO₃ z wodą",
+   "observation": "powstaje H₂SO₄",
+   "products": [
+    "H2SO4"
+   ],
+   "safety": [
+    "SO₃ żrący, gwałtowny z wodą"
+   ]
+  },
+  "naclH2so4": {
+   "type": "otrzymywanie kwasu",
+   "conditions": "ogrzewanie mieszaniny",
+   "observation": "wydziela się HCl(g)",
+   "products": [
+    "NaHSO4",
+    "HCl"
+   ],
+   "safety": [
+    "HCl żrący; wentylacja"
+   ]
+  },
+  "h2Cl2": {
+   "type": "synteza",
+   "conditions": "światło lub inicjacja energetyczna",
+   "observation": "HCl; reakcja egzotermiczna",
+   "products": [
+    "HCl"
+   ],
+   "safety": [
+    "mieszanina H₂/Cl₂ wybuchowa"
+   ]
+  },
+  "alHcl": {
+   "products": [
+    "AlCl3",
+    "H2"
+   ],
+   "type": "metal+acid",
+   "conditions": "roztwór wodny; początkowo wolno (warstwa Al₂O₃)",
+   "observation": "po chwili intensywne wydzielanie H₂; glin się roztwarza",
+   "safety": [
+    "H₂ palny"
+   ]
+  },
+  "znH2so4": {
+   "products": [
+    "ZnSO4",
+    "H2"
+   ],
+   "type": "metal+acid",
+   "conditions": "rozcieńczony H₂SO₄",
+   "observation": "pęcherzyki H₂ na powierzchni cynku",
+   "safety": [
+    "H₂ palny"
+   ]
+  },
+  "mgH2so4": {
+   "products": [
+    "MgSO4",
+    "H2"
+   ],
+   "type": "metal+acid",
+   "conditions": "rozcieńczony H₂SO₄",
+   "observation": "gwałtowne wydzielanie H₂, roztwór się ogrzewa",
+   "safety": [
+    "H₂ palny"
+   ]
+  },
+  "caoHcl": {
+   "products": [
+    "CaCl2",
+    "H2O"
+   ],
+   "type": "acid+basic-oxide",
+   "conditions": "roztwór wodny",
+   "observation": "biały proszek roztwarza się, roztwór się ogrzewa",
+   "safety": [
+    "CaO i HCl żrące"
+   ]
+  },
+  "mgoHcl": {
+   "products": [
+    "MgCl2",
+    "H2O"
+   ],
+   "type": "acid+basic-oxide",
+   "conditions": "roztwór wodny",
+   "observation": "biały proszek znika, roztwór bezbarwny",
+   "safety": [
+    "kwas żrący"
+   ]
+  },
+  "fe2o3Hcl": {
+   "products": [
+    "FeCl3",
+    "H2O"
+   ],
+   "type": "acid+basic-oxide",
+   "conditions": "roztwór wodny, ogrzewanie przyspiesza",
+   "observation": "rdzawy tlenek znika, roztwór żółtobrunatny (Fe³⁺)",
+   "safety": [
+    "kwas żrący"
+   ]
+  },
+  "na2oHno3": {
+   "products": [
+    "NaNO3",
+    "H2O"
+   ],
+   "type": "acid+basic-oxide",
+   "conditions": "roztwór wodny",
+   "observation": "tlenek roztwarza się, roztwór bezbarwny",
+   "safety": [
+    "Na₂O i HNO₃ żrące"
+   ]
+  },
+  "znoHcl": {
+   "products": [
+    "ZnCl2",
+    "H2O"
+   ],
+   "type": "acid+amphoteric-oxide",
+   "conditions": "roztwór wodny",
+   "observation": "biały tlenek roztwarza się (ZnO amfoteryczny — reaguje też z NaOH)",
+   "safety": [
+    "kwas żrący"
+   ]
+  },
+  "h2so4Koh": {
+   "products": [
+    "K2SO4",
+    "H2O"
+   ],
+   "type": "neutralization",
+   "conditions": "roztwór wodny",
+   "observation": "zobojętnianie, roztwór się ogrzewa",
+   "safety": [
+    "kwas i zasada żrące"
+   ]
+  },
+  "caoh2Hno3": {
+   "products": [
+    "Ca(NO3)2",
+    "H2O"
+   ],
+   "type": "neutralization",
+   "conditions": "roztwór wodny",
+   "observation": "mętne mleko wapienne staje się klarowne",
+   "safety": [
+    "kwas i zasada żrące"
+   ]
+  },
+  "aloh3Hcl": {
+   "products": [
+    "AlCl3",
+    "H2O"
+   ],
+   "type": "neutralization",
+   "conditions": "roztwór wodny",
+   "observation": "galaretowaty osad Al(OH)₃ roztwarza się",
+   "safety": [
+    "kwas żrący"
+   ]
+  },
+  "h3po4Caoh2": {
+   "products": [
+    "Ca3(PO4)2",
+    "H2O"
+   ],
+   "type": "neutralization",
+   "conditions": "roztwór wodny",
+   "observation": "wytrąca się biały osad Ca₃(PO₄)₂",
+   "safety": [
+    "kwas i zasada żrące"
+   ]
+  },
+  "mgoh2Hcl": {
+   "products": [
+    "MgCl2",
+    "H2O"
+   ],
+   "type": "neutralization",
+   "conditions": "sok żołądkowy — lek zobojętniający",
+   "observation": "zawiesina roztwarza się",
+   "safety": []
+  },
+  "nahco3Hcl": {
+   "products": [
+    "NaCl",
+    "H2O",
+    "CO2"
+   ],
+   "type": "carbonate+acid",
+   "conditions": "roztwór wodny",
+   "observation": "musowanie — wydziela się CO₂",
+   "safety": []
+  },
+  "na2co3Hcl": {
+   "products": [
+    "NaCl",
+    "H2O",
+    "CO2"
+   ],
+   "type": "carbonate+acid",
+   "conditions": "roztwór wodny",
+   "observation": "burzenie — wydziela się CO₂ (mętni wodę wapienną)",
+   "safety": [
+    "kwas żrący"
+   ]
+  },
+  "bacl2H2so4": {
+   "products": [
+    "BaSO4",
+    "HCl"
+   ],
+   "type": "precipitation",
+   "conditions": "roztwór wodny",
+   "observation": "biały, drobnokrystaliczny osad BaSO₄ (nie roztwarza się w kwasach)",
+   "safety": [
+    "rozpuszczalne sole baru trujące"
+   ]
+  },
+  "na2sHcl": {
+   "products": [
+    "NaCl",
+    "H2S"
+   ],
+   "type": "salt+acid",
+   "conditions": "roztwór wodny; dygestorium",
+   "observation": "zapach zgniłych jaj — wydziela się H₂S",
+   "safety": [
+    "H₂S silnie trujący"
+   ]
+  },
+  "na2so3Hcl": {
+   "products": [
+    "NaCl",
+    "H2O",
+    "SO2"
+   ],
+   "type": "salt+acid",
+   "conditions": "roztwór wodny; dygestorium",
+   "observation": "ostry zapach SO₂ (H₂SO₃ rozkłada się)",
+   "safety": [
+    "SO₂ toksyczny"
+   ]
+  },
+  "na2sio3Hcl": {
+   "products": [
+    "H2SiO3",
+    "NaCl"
+   ],
+   "type": "salt+acid",
+   "conditions": "roztwór wodny",
+   "observation": "galaretowaty, biały osad kwasu krzemowego",
+   "safety": [
+    "kwas żrący"
+   ]
+  },
+  "hclNh3": {
+   "products": [
+    "NH4Cl"
+   ],
+   "type": "acid+base (Brønsted)",
+   "conditions": "gazy nad stężonymi roztworami",
+   "observation": "biały „dym” NH₄Cl",
+   "safety": [
+    "HCl i NH₃ drażniące"
+   ]
+  },
+  "cuHno3Dil": {
+   "products": [
+    "Cu(NO3)2",
+    "NO",
+    "H2O"
+   ],
+   "type": "redox",
+   "conditions": "rozcieńczony HNO₃; wyciąg",
+   "observation": "roztwór niebieski; bezbarwny NO brunatnieje u wylotu (2 NO + O₂ → 2 NO₂)",
+   "safety": [
+    "NO i NO₂ toksyczne — pokaz nauczyciela"
+   ]
+  },
+  "cuH2so4Conc": {
+   "products": [
+    "CuSO4",
+    "SO2",
+    "H2O"
+   ],
+   "type": "redox",
+   "conditions": "stężony, gorący H₂SO₄; dygestorium",
+   "observation": "wydziela się SO₂; po rozcieńczeniu roztwór niebieski",
+   "safety": [
+    "stężony H₂SO₄ i SO₂ — pokaz nauczyciela"
+   ]
+  },
+  "auAquaRegia": {
+   "products": [
+    "HAuCl4",
+    "NO",
+    "H2O"
+   ],
+   "type": "redox (kompleksowanie)",
+   "conditions": "woda królewska: stęż. HNO₃ + stęż. HCl (1:3)",
+   "observation": "złoto roztwarza się, roztwór żółty",
+   "safety": [
+    "bardzo żrące, toksyczne gazy"
+   ]
+  },
+  "so2H2o": {
+   "products": [
+    "H2SO3"
+   ],
+   "type": "synteza kwasu",
+   "conditions": "roztwór wodny (równowaga)",
+   "observation": "roztwór kwaśny; wskaźnik czerwienieje",
+   "safety": [
+    "SO₂ toksyczny"
+   ]
+  },
+  "co2H2o": {
+   "products": [
+    "H2CO3"
+   ],
+   "type": "synteza kwasu",
+   "conditions": "roztwór wodny (równowaga, mało H₂CO₃)",
+   "observation": "woda gazowana ma pH ≈ 4–5",
+   "safety": []
+  },
+  "p4o10H2o": {
+   "products": [
+    "H3PO4"
+   ],
+   "type": "synteza kwasu",
+   "conditions": "gwałtowna reakcja z wodą",
+   "observation": "biały proszek rozpuszcza się z sykiem",
+   "safety": [
+    "P₄O₁₀ silnie higroskopijny, żrący"
+   ]
+  },
+  "n2o5H2o": {
+   "products": [
+    "HNO3"
+   ],
+   "type": "synteza kwasu",
+   "conditions": "roztwór wodny",
+   "observation": "powstaje HNO₃",
+   "safety": [
+    "żrący"
+   ]
+  },
+  "n2o3H2o": {
+   "products": [
+    "HNO2"
+   ],
+   "type": "synteza kwasu",
+   "conditions": "zimna woda",
+   "observation": "niebieski roztwór HNO₂ (nietrwały)",
+   "safety": [
+    "toksyczny"
+   ]
+  },
+  "h2Br2": {
+   "products": [
+    "HBr"
+   ],
+   "type": "synteza",
+   "conditions": "ogrzewanie (lub kat. Pt)",
+   "observation": "brunatna barwa Br₂ zanika",
+   "safety": [
+    "Br₂ żrący, toksyczny"
+   ]
+  },
+  "h2I2": {
+   "products": [
+    "HI"
+   ],
+   "type": "synteza (równowagowa)",
+   "conditions": "ogrzewanie; reakcja odwracalna",
+   "observation": "fioletowe pary I₂ częściowo zanikają",
+   "safety": [
+    "I₂ drażniący"
+   ]
+  },
+  "h2S": {
+   "products": [
+    "H2S"
+   ],
+   "type": "synteza",
+   "conditions": "ogrzewanie (wodór nad stopioną siarką)",
+   "observation": "zapach zgniłych jaj",
+   "safety": [
+    "H₂S silnie trujący"
+   ]
+  },
+  "sO2": {
+   "products": [
+    "SO2"
+   ],
+   "type": "spalanie",
+   "conditions": "zapalenie siarki",
+   "observation": "niebieski płomień, ostry zapach SO₂",
+   "safety": [
+    "SO₂ toksyczny"
+   ]
+  },
+  "so2O2": {
+   "products": [
+    "SO3"
+   ],
+   "type": "utlenianie",
+   "conditions": "kat. V₂O₅ (przemysł) / atmosfera",
+   "observation": "—",
+   "safety": [
+    "SO₃ żrący"
+   ]
+  },
+  "n2O2": {
+   "products": [
+    "NO"
+   ],
+   "type": "synteza",
+   "conditions": "bardzo wysoka temperatura (silniki, wyładowania)",
+   "observation": "—",
+   "safety": []
+  },
+  "noO2": {
+   "products": [
+    "NO2"
+   ],
+   "type": "utlenianie",
+   "conditions": "powietrze, temperatura pokojowa",
+   "observation": "bezbarwny gaz brunatnieje",
+   "safety": [
+    "NO₂ toksyczny"
+   ]
+  },
+  "no2H2o": {
+   "products": [
+    "HNO3",
+    "NO"
+   ],
+   "type": "dysproporcjonowanie",
+   "conditions": "woda (kwaśne deszcze)",
+   "observation": "brunatny gaz zanika, roztwór kwaśny",
+   "safety": [
+    "NO₂ toksyczny"
+   ]
+  },
+  "no2O2H2o": {
+   "products": [
+    "HNO3"
+   ],
+   "type": "synteza kwasu",
+   "conditions": "woda + tlen (przemysł, atmosfera)",
+   "observation": "—",
+   "safety": [
+    "NO₂ toksyczny"
+   ]
+  },
+  "caco3H2so4": {
+   "products": [
+    "CaSO4",
+    "H2O",
+    "CO2"
+   ],
+   "type": "carbonate+acid",
+   "conditions": "kwaśne deszcze — niszczenie marmuru i wapienia",
+   "observation": "musowanie, powierzchnia się kruszy (CaSO₄ słabo rozpuszczalny)",
+   "safety": []
+  },
+  "hno3Decomp": {
+   "products": [
+    "NO2",
+    "O2",
+    "H2O"
+   ],
+   "type": "rozkład",
+   "conditions": "światło lub ogrzewanie",
+   "observation": "kwas żółknie (rozpuszczony NO₂)",
+   "safety": [
+    "przechowywać w ciemnych butelkach"
+   ]
+  },
+  "sugarH2so4": {
+   "products": [
+    "C",
+    "H2O"
+   ],
+   "type": "odwodnienie",
+   "conditions": "stężony H₂SO₄ (czynnik odwadniający); dygestorium",
+   "observation": "cukier czernieje, porowata masa węgla rośnie, wydziela się para i SO₂",
+   "safety": [
+    "tylko pokaz nauczyciela"
+   ]
+  },
+  "sio2Hf": {
+   "products": [
+    "SiF4",
+    "H2O"
+   ],
+   "type": "acid+oxide",
+   "conditions": "HF(aq); naczynia z tworzywa",
+   "observation": "szkło matowieje (trawienie)",
+   "safety": [
+    "HF silnie toksyczny"
+   ]
+  },
+  "naH2o": {
+   "products": [
+    "NaOH",
+    "H2"
+   ],
+   "type": "metal+water",
+   "conditions": "mały kawałek Na w krystalizatorze z wodą; tylko pokaz nauczyciela",
+   "observation": "Na topi się w kulkę i biega po powierzchni; wydziela się H₂; z fenoloftaleiną roztwór malinowy",
+   "safety": [
+    "reakcja gwałtowna — osłona, okulary, mały kawałek"
+   ]
+  },
+  "caoh2Co2": {
+   "products": [
+    "CaCO3",
+    "H2O"
+   ],
+   "type": "precipitation (wykrywanie CO₂)",
+   "conditions": "CO₂ wprowadzany do wody wapiennej",
+   "observation": "klarowna woda wapienna mętnieje — biały osad CaCO₃",
+   "safety": [
+    "nie wciągać wody wapiennej do ust"
+   ]
+  },
+  "na2Cl2": {
+   "products": [
+    "NaCl"
+   ],
+   "type": "synteza",
+   "conditions": "ogrzany sód w chlorze (pokaz)",
+   "observation": "jasny żółty płomień, biały dym NaCl",
+   "safety": [
+    "Cl₂ trujący, Na żrący — tylko pokaz"
+   ]
+  },
+  "feS": {
+   "products": [
+    "FeS"
+   ],
+   "type": "synteza",
+   "conditions": "ogrzewanie mieszaniny opiłków Fe i siarki",
+   "observation": "mieszanina żarzy się; powstaje czarna, niemagnetyczna masa FeS",
+   "safety": [
+    "możliwy SO₂ — wentylacja"
+   ]
+  },
+  "caoCo2": {
+   "products": [
+    "CaCO3"
+   ],
+   "type": "synteza",
+   "conditions": "tlenek zasadowy + tlenek kwasowy (twardnienie wapna)",
+   "observation": "—",
+   "safety": []
+  },
+  "naohCo2": {
+   "products": [
+    "Na2CO3",
+    "H2O"
+   ],
+   "type": "zasada + tlenek kwasowy",
+   "conditions": "roztwór wodny",
+   "observation": "brak widocznych zmian (pochłanianie CO₂)",
+   "safety": [
+    "NaOH żrący"
+   ]
+  },
+  "cuso4Naoh": {
+   "products": [
+    "Cu(OH)2",
+    "Na2SO4"
+   ],
+   "type": "precipitation",
+   "conditions": "roztwór wodny",
+   "observation": "niebieski, galaretowaty osad Cu(OH)₂",
+   "safety": [
+    "NaOH żrący"
+   ]
+  },
+  "fecl3Naoh": {
+   "products": [
+    "Fe(OH)3",
+    "NaCl"
+   ],
+   "type": "precipitation",
+   "conditions": "roztwór wodny",
+   "observation": "rdzawobrunatny, kłaczkowaty osad Fe(OH)₃",
+   "safety": [
+    "NaOH żrący"
+   ]
+  },
+  "agno3Nacl": {
+   "products": [
+    "AgCl",
+    "NaNO3"
+   ],
+   "type": "precipitation",
+   "conditions": "roztwór wodny",
+   "observation": "biały, serowaty osad AgCl (ciemnieje na świetle)",
+   "safety": [
+    "AgNO₃ żrący, plami skórę"
+   ]
+  },
+  "bacl2Na2so4": {
+   "products": [
+    "BaSO4",
+    "NaCl"
+   ],
+   "type": "precipitation",
+   "conditions": "roztwór wodny",
+   "observation": "biały, drobnokrystaliczny osad BaSO₄",
+   "safety": [
+    "rozpuszczalne sole baru trujące"
+   ]
+  },
+  "cacl2Na2co3": {
+   "products": [
+    "CaCO3",
+    "NaCl"
+   ],
+   "type": "precipitation",
+   "conditions": "roztwór wodny",
+   "observation": "biały osad CaCO₃ (musuje po dodaniu kwasu)",
+   "safety": []
+  },
+  "pbno32Ki": {
+   "products": [
+    "PbI2",
+    "KNO3"
+   ],
+   "type": "precipitation",
+   "conditions": "roztwór wodny",
+   "observation": "jaskrawożółty osad PbI₂ („złoty deszcz” po przekrystalizowaniu)",
+   "safety": [
+    "związki ołowiu toksyczne"
+   ]
+  },
+  "znCuso4": {
+   "products": [
+    "ZnSO4",
+    "Cu"
+   ],
+   "type": "displacement",
+   "conditions": "roztwór wodny",
+   "observation": "niebieski roztwór odbarwia się, na cynku osadza się czerwonobrunatna miedź",
+   "safety": []
+  },
+  "feCuso4": {
+   "products": [
+    "FeSO4",
+    "Cu"
+   ],
+   "type": "displacement",
+   "conditions": "roztwór wodny (gwóźdź w CuSO₄)",
+   "observation": "gwóźdź pokrywa się miedzią, roztwór blednie i zielenieje",
+   "safety": []
+  },
+  "cuAgno3": {
+   "products": [
+    "Cu(NO3)2",
+    "Ag"
+   ],
+   "type": "displacement",
+   "conditions": "roztwór wodny (drut Cu w AgNO₃)",
+   "observation": "na drucie wyrastają srebrzyste kryształy Ag, roztwór niebieszczeje",
+   "safety": [
+    "AgNO₃ plami skórę"
+   ]
+  },
+  "caco3Decomp": {
+   "products": [
+    "CaO",
+    "CO2"
+   ],
+   "type": "rozkład termiczny",
+   "conditions": "prażenie ok. 900 °C (wapno palone)",
+   "observation": "wapień traci masę; gaz mętni wodę wapienną",
+   "safety": [
+    "wysoka temperatura"
+   ]
+  },
+  "caoH2o": {
+   "products": [
+    "Ca(OH)2"
+   ],
+   "type": "synteza",
+   "conditions": "gaszenie wapna",
+   "observation": "silne ogrzanie, syczenie; powstaje wapno gaszone",
+   "safety": [
+    "CaO i Ca(OH)₂ żrące — okulary"
+   ]
+  },
+  "caoh2Co2Mortar": {
+   "products": [
+    "CaCO3",
+    "H2O"
+   ],
+   "type": "twardnienie zaprawy",
+   "conditions": "zaprawa wapienna na powietrzu (tygodnie)",
+   "observation": "zaprawa twardnieje",
+   "safety": []
+  },
+  "caco3Co2H2o": {
+   "products": [
+    "Ca(HCO3)2"
+   ],
+   "type": "synteza (kras)",
+   "conditions": "woda z CO₂ przesiąka przez wapień",
+   "observation": "wapień się rozpuszcza — jaskinie krasowe",
+   "safety": []
+  },
+  "cahco32Decomp": {
+   "products": [
+    "CaCO3",
+    "H2O",
+    "CO2"
+   ],
+   "type": "rozkład termiczny",
+   "conditions": "gotowanie wody twardej",
+   "observation": "kamień kotłowy (biały osad CaCO₃); w jaskiniach — stalaktyty",
+   "safety": []
+  },
+  "cuso4Hydrate": {
+   "products": [
+    "CuSO4·5H2O"
+   ],
+   "type": "hydratacja",
+   "conditions": "bezwodny CuSO₄ + woda",
+   "observation": "biały proszek niebieszczeje (wykrywanie wody)",
+   "safety": []
+  },
+  "elHcl": {
+   "products": [
+    "H2",
+    "Cl2"
+   ],
+   "type": "elektroliza",
+   "conditions": "prąd stały, elektrody grafitowe; HCl(aq)",
+   "observation": "katoda (−): pęcherzyki H₂; anoda (+): Cl₂ (zapach chloru, częściowo rozpuszcza się)",
+   "safety": [
+    "Cl₂ toksyczny — krótko, wentylacja"
+   ]
+  },
+  "elH2o": {
+   "products": [
+    "H2",
+    "O2"
+   ],
+   "type": "elektroliza",
+   "conditions": "prąd stały; roztwór H₂SO₄, NaOH lub innego elektrolitu (sam elektrolit się nie zużywa)",
+   "observation": "katoda (−): H₂, anoda (+): O₂ — objętości 2 : 1",
+   "safety": [
+    "mieszanina H₂ + O₂ wybuchowa"
+   ]
+  },
+  "elNacl": {
+   "products": [
+    "NaOH",
+    "H2",
+    "Cl2"
+   ],
+   "type": "elektroliza",
+   "conditions": "prąd stały; stężony roztwór NaCl",
+   "observation": "katoda (−): H₂ (roztwór zasadowy — fenoloftaleina malinowa), anoda (+): Cl₂",
+   "safety": [
+    "Cl₂ toksyczny"
+   ]
+  },
+  "ch3coohNaoh": {
+   "products": [
+    "CH3COONa",
+    "H2O"
+   ],
+   "type": "neutralization",
+   "conditions": "roztwór wodny",
+   "observation": "zobojętnianie; w PR pH > 7 (hydroliza octanu)",
+   "safety": [
+    "NaOH żrący"
+   ]
+  },
+  "naclH2SO4": {
+   "aliasOf": "naclH2so4",
+   "type": "otrzymywanie kwasu",
+   "conditions": "ogrzewanie mieszaniny",
+   "observation": "wydziela się HCl(g)",
+   "products": [
+    "NaHSO4",
+    "HCl"
+   ],
+   "safety": [
+    "HCl żrący; wentylacja"
+   ]
+  },
+  "mgO2": {
+   "products": [
+    "MgO"
+   ],
+   "type": "spalanie",
+   "conditions": "zapalenie w płomieniu palnika",
+   "observation": "oślepiająco białe światło; biały proszek MgO",
+   "safety": [
+    "nie patrz w płomień; szczypce, okulary"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "cO2": {
+   "products": [
+    "CO2"
+   ],
+   "type": "spalanie",
+   "conditions": "nadmiar tlenu",
+   "observation": "żarzenie; gaz mętniący wodę wapienną",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "cO2Inc": {
+   "products": [
+    "CO"
+   ],
+   "type": "spalanie",
+   "conditions": "niedobór tlenu",
+   "observation": "—",
+   "safety": [
+    "CO — czad, trujący, bezbarwny i bezwonny"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "coO2": {
+   "products": [
+    "CO2"
+   ],
+   "type": "spalanie",
+   "conditions": "zapalenie",
+   "observation": "niebieski płomień",
+   "safety": [
+    "CO trujący"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "pO2": {
+   "products": [
+    "P2O5"
+   ],
+   "type": "spalanie",
+   "conditions": "zapis szkolny (empiryczny)",
+   "observation": "biały dym tlenku fosforu(V)",
+   "safety": [
+    "fosfor biały samozapalny i trujący"
+   ],
+   "level": "E8",
+   "lesson": "N01",
+   "note": "dokładniej: P₄ + 5 O₂ → P₄O₁₀"
+  },
+  "p4O2": {
+   "products": [
+    "P4O10"
+   ],
+   "type": "spalanie",
+   "conditions": "zapis cząsteczkowy",
+   "observation": "biały dym",
+   "safety": [
+    "fosfor biały samozapalny i trujący"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "feO2": {
+   "products": [
+    "Fe3O4"
+   ],
+   "type": "spalanie",
+   "conditions": "wata/drut żelazny w czystym tlenie",
+   "observation": "snop iskier; czarny Fe₃O₄",
+   "safety": [
+    "okulary; piasek na dnie naczynia"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "naO2": {
+   "products": [
+    "Na2O"
+   ],
+   "type": "utlenianie",
+   "conditions": "powolne utlenianie na powietrzu (model szkolny)",
+   "observation": "metaliczny połysk szybko matowieje",
+   "safety": [
+    "sód — tylko pod naftą"
+   ],
+   "level": "E8",
+   "lesson": "N01",
+   "note": "przy spalaniu w nadmiarze tlenu powstaje głównie nadtlenek Na₂O₂"
+  },
+  "naO2Per": {
+   "products": [
+    "Na2O2"
+   ],
+   "type": "spalanie",
+   "conditions": "spalanie w nadmiarze tlenu",
+   "observation": "żółty płomień; jasnożółty nadtlenek",
+   "safety": [
+    "sód reaguje gwałtownie"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "caO2": {
+   "products": [
+    "CaO"
+   ],
+   "type": "spalanie",
+   "conditions": "ogrzewanie",
+   "observation": "ceglastoczerwony płomień; biały CaO",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "cuO2": {
+   "products": [
+    "CuO"
+   ],
+   "type": "utlenianie",
+   "conditions": "ogrzewanie blaszki w płomieniu",
+   "observation": "miedź czernieje (warstwa CuO)",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "alO2": {
+   "products": [
+    "Al2O3"
+   ],
+   "type": "utlenianie",
+   "conditions": "pył Al spala się; blacha pasywuje się w temperaturze pokojowej",
+   "observation": "cienka, szczelna warstwa Al₂O₃ (pasywacja)",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "znO2": {
+   "products": [
+    "ZnO"
+   ],
+   "type": "spalanie",
+   "conditions": "ogrzewanie",
+   "observation": "biały ZnO (na gorąco żółty)",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "h2O2": {
+   "products": [
+    "H2O"
+   ],
+   "type": "spalanie",
+   "conditions": "zapalenie",
+   "observation": "„pyk” — test na wodór; para wodna",
+   "safety": [
+    "mieszanina H₂ + O₂ wybuchowa"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "ch4O2": {
+   "products": [
+    "CO2",
+    "H2O"
+   ],
+   "type": "spalanie",
+   "conditions": "nadmiar tlenu (całkowite)",
+   "observation": "niebieski płomień",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "ch4O2Inc": {
+   "products": [
+    "CO",
+    "H2O"
+   ],
+   "type": "spalanie",
+   "conditions": "niedobór tlenu (niecałkowite)",
+   "observation": "żółty, kopcący płomień",
+   "safety": [
+    "CO — czad"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "ch4O2Soot": {
+   "products": [
+    "C",
+    "H2O"
+   ],
+   "type": "spalanie",
+   "conditions": "duży niedobór tlenu",
+   "observation": "sadza (kopcenie)",
+   "safety": [
+    "CO i sadza"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "c3h8O2": {
+   "products": [
+    "CO2",
+    "H2O"
+   ],
+   "type": "spalanie",
+   "conditions": "nadmiar tlenu",
+   "observation": "",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "c3h8O2Inc": {
+   "products": [
+    "CO",
+    "H2O"
+   ],
+   "type": "spalanie",
+   "conditions": "niedobór tlenu",
+   "observation": "",
+   "safety": [
+    "CO — czad"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "c8h18O2": {
+   "products": [
+    "CO2",
+    "H2O"
+   ],
+   "type": "spalanie",
+   "conditions": "silnik benzynowy (model)",
+   "observation": "",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "na2oH2o": {
+   "products": [
+    "NaOH"
+   ],
+   "type": "tlenek zasadowy + woda",
+   "conditions": "",
+   "observation": "roztwór barwi fenoloftaleinę na malinowo",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "k2oH2o": {
+   "products": [
+    "KOH"
+   ],
+   "type": "tlenek zasadowy + woda",
+   "conditions": "",
+   "observation": "fenoloftaleina malinowa",
+   "safety": [
+    "KOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "li2oH2o": {
+   "products": [
+    "LiOH"
+   ],
+   "type": "tlenek zasadowy + woda",
+   "conditions": "",
+   "observation": "fenoloftaleina malinowa",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "mgoH2o": {
+   "products": [
+    "Mg(OH)2"
+   ],
+   "type": "tlenek zasadowy + woda",
+   "conditions": "bardzo powoli, w niewielkim stopniu (szkolnie: praktycznie nie)",
+   "observation": "fenoloftaleina słabo różowa",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "p2o5H2o": {
+   "products": [
+    "H3PO4"
+   ],
+   "type": "tlenek kwasowy + woda",
+   "conditions": "zapis empiryczny",
+   "observation": "reakcja gwałtowna, egzotermiczna",
+   "safety": [
+    "P₂O₅ żrący"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "mn2o7H2o": {
+   "products": [
+    "HMnO4"
+   ],
+   "type": "tlenek kwasowy + woda",
+   "conditions": "metal na +VII → tlenek kwasowy",
+   "observation": "fioletowy roztwór",
+   "safety": [
+    "Mn₂O₇ wybuchowy"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "cro3H2o": {
+   "products": [
+    "H2CrO4"
+   ],
+   "type": "tlenek kwasowy + woda",
+   "conditions": "metal na +VI → tlenek kwasowy",
+   "observation": "pomarańczowo-żółty roztwór",
+   "safety": [
+    "związki Cr(VI) rakotwórcze"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "cl2o7H2o": {
+   "products": [
+    "HClO4"
+   ],
+   "type": "tlenek kwasowy + woda",
+   "conditions": "",
+   "observation": "",
+   "safety": [
+    "Cl₂O₇ wybuchowy"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "al2o3Hcl": {
+   "products": [
+    "AlCl3",
+    "H2O"
+   ],
+   "type": "tlenek amfoteryczny + kwas",
+   "conditions": "",
+   "observation": "biały proszek roztwarza się (wolno)",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "fe2o3H2so4": {
+   "products": [
+    "Fe2(SO4)3",
+    "H2O"
+   ],
+   "type": "tlenek zasadowy + kwas",
+   "conditions": "",
+   "observation": "roztwór żółtobrunatny (jony Fe³⁺)",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "co2Koh": {
+   "products": [
+    "K2CO3",
+    "H2O"
+   ],
+   "type": "zasada + tlenek kwasowy",
+   "conditions": "przewaga zasady",
+   "observation": "",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "co2NaohExc": {
+   "products": [
+    "NaHCO3"
+   ],
+   "type": "zasada + tlenek kwasowy",
+   "conditions": "nadmiar CO₂ (stosunek 1 : 1)",
+   "observation": "",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "na2co3Co2": {
+   "products": [
+    "NaHCO3"
+   ],
+   "type": "synteza",
+   "conditions": "dalsze wprowadzanie CO₂",
+   "observation": "",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "so2Naoh": {
+   "products": [
+    "Na2SO3",
+    "H2O"
+   ],
+   "type": "zasada + tlenek kwasowy",
+   "conditions": "przewaga zasady",
+   "observation": "",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "so3Naoh": {
+   "products": [
+    "Na2SO4",
+    "H2O"
+   ],
+   "type": "zasada + tlenek kwasowy",
+   "conditions": "",
+   "observation": "",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "sio2Naoh": {
+   "products": [
+    "Na2SiO3",
+    "H2O"
+   ],
+   "type": "zasada + tlenek kwasowy",
+   "conditions": "ogrzewanie lub stopiony NaOH (Δ) — nie szybko w zimnym roztworze",
+   "observation": "",
+   "safety": [
+    "NaOH żrący, stopiony — bardzo niebezpieczny"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "al2o3NaohMelt": {
+   "products": [
+    "NaAlO2",
+    "H2O"
+   ],
+   "type": "tlenek amfoteryczny + zasada",
+   "conditions": "stapianie (zapis zależny od warunków)",
+   "observation": "",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "al2o3NaohAq": {
+   "products": [
+    "NaAl(OH)4"
+   ],
+   "type": "tlenek amfoteryczny + zasada",
+   "conditions": "roztwór wodny (jonowo: Al₂O₃ + 2 OH⁻ + 3 H₂O → 2 [Al(OH)₄]⁻)",
+   "observation": "",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "znoNaoh": {
+   "products": [
+    "Na2ZnO2",
+    "H2O"
+   ],
+   "type": "tlenek amfoteryczny + zasada",
+   "conditions": "zapis uproszczony (stapianie)",
+   "observation": "",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "znoNaohAq": {
+   "products": [
+    "Na2Zn(OH)4"
+   ],
+   "type": "tlenek amfoteryczny + zasada",
+   "conditions": "roztwór wodny (kompleks hydroksocynkanowy)",
+   "observation": "",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "na2oCo2": {
+   "products": [
+    "Na2CO3"
+   ],
+   "type": "synteza",
+   "conditions": "tlenek zasadowy + tlenek kwasowy",
+   "observation": "",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "caoSio2": {
+   "products": [
+    "CaSiO3"
+   ],
+   "type": "synteza",
+   "conditions": "wysoka temperatura (żużel w wielkim piecu)",
+   "observation": "",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "cuoH2": {
+   "products": [
+    "Cu",
+    "H2O"
+   ],
+   "type": "redoks",
+   "conditions": "ogrzewanie (Δ)",
+   "observation": "czarny CuO → czerwonobrunatna miedź; kropelki wody",
+   "safety": [
+    "H₂ palny"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "cuoC": {
+   "products": [
+    "Cu",
+    "CO2"
+   ],
+   "type": "redoks",
+   "conditions": "silne ogrzewanie (Δ)",
+   "observation": "czerwonawa miedź; gaz mętniący wodę wapienną",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "fe2o3Co": {
+   "products": [
+    "Fe",
+    "CO2"
+   ],
+   "type": "redoks",
+   "conditions": "wielki piec (Δ) — główny przykład przemysłowy",
+   "observation": "",
+   "safety": [
+    "CO trujący"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "fe2o3C": {
+   "products": [
+    "Fe",
+    "CO"
+   ],
+   "type": "redoks",
+   "conditions": "model uproszczony (Δ)",
+   "observation": "",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01",
+   "note": "w wielkim piecu głównym reduktorem jest CO"
+  },
+  "termit": {
+   "products": [
+    "Fe",
+    "Al2O3"
+   ],
+   "type": "redoks",
+   "conditions": "zapłon; lokalnie ok. 2500 °C (zależnie od warunków)",
+   "observation": "oślepiające światło, płynne żelazo",
+   "safety": [
+    "wyłącznie analiza równania — nie do wykonania samodzielnie"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "feH2oSteam": {
+   "products": [
+    "Fe3O4",
+    "H2"
+   ],
+   "type": "redoks",
+   "conditions": "para wodna H₂O(g), wysoka temperatura — nie zimna woda",
+   "observation": "",
+   "safety": [
+    "wodór palny; tylko laboratorium profesjonalne"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "mgCo2": {
+   "products": [
+    "MgO",
+    "C"
+   ],
+   "type": "redoks",
+   "conditions": "zapalony magnez w CO₂",
+   "observation": "magnez pali się dalej; czarne drobiny węgla",
+   "safety": [
+    "nie gaś palącego się magnezu CO₂!"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "hgoDecomp": {
+   "products": [
+    "Hg",
+    "O2"
+   ],
+   "type": "rozkład termiczny",
+   "conditions": "ogrzewanie (Δ) — doświadczenie historyczne (Priestley)",
+   "observation": "",
+   "safety": [
+    "HgO i pary rtęci toksyczne — nie wykonywać"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "pbo2Decomp": {
+   "products": [
+    "PbO",
+    "O2"
+   ],
+   "type": "rozkład termiczny",
+   "conditions": "ogrzewanie (Δ)",
+   "observation": "",
+   "safety": [
+    "związki ołowiu toksyczne"
+   ],
+   "level": "ZA",
+   "lesson": "N01"
+  },
+  "ag2oDecomp": {
+   "products": [
+    "Ag",
+    "O2"
+   ],
+   "type": "rozkład termiczny",
+   "conditions": "ogrzewanie (Δ)",
+   "observation": "",
+   "safety": [],
+   "level": "ZA",
+   "lesson": "N01"
+  },
+  "h2o2Decomp": {
+   "products": [
+    "H2O",
+    "O2"
+   ],
+   "type": "rozkład",
+   "conditions": "katalizator MnO₂",
+   "observation": "intensywne pienienie; tlący się łuczek zapala się",
+   "safety": [
+    "stężony H₂O₂ żrący"
+   ],
+   "level": "E8",
+   "lesson": "N01"
+  },
+  "kclo3Decomp": {
+   "products": [
+    "KCl",
+    "O2"
+   ],
+   "type": "rozkład termiczny",
+   "conditions": "ogrzewanie, katalizator MnO₂",
+   "observation": "",
+   "safety": [
+    "silny utleniacz"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "na2o2H2o": {
+   "products": [
+    "NaOH",
+    "O2"
+   ],
+   "type": "rozkład",
+   "conditions": "nadtlenek + woda",
+   "observation": "wydziela się tlen",
+   "safety": [
+    "żrący"
+   ],
+   "level": "AMB",
+   "lesson": "N01"
+  },
+  "feO2Rust": {
+   "products": [
+    "Fe2O3"
+   ],
+   "type": "utlenianie",
+   "conditions": "model przybliżony korozji — rdza to mieszanina uwodnionych tlenków i wodorotlenków żelaza",
+   "observation": "",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N01",
+   "note": "dokładniej: 4 Fe + 3 O₂ + n H₂O → 2 Fe₂O₃·nH₂O (też przybliżenie)"
+  },
+  "liH2o": {
+   "products": [
+    "LiOH",
+    "H2"
+   ],
+   "type": "metal + woda",
+   "conditions": "temperatura pokojowa",
+   "observation": "lit pływa, powoli wydziela się gaz; roztwór zasadowy (fenoloftaleina malinowa)",
+   "safety": [
+    "pokaz nauczyciela; okulary, osłona"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "kH2o": {
+   "products": [
+    "KOH",
+    "H2"
+   ],
+   "type": "metal + woda",
+   "conditions": "temperatura pokojowa, bardzo mała grudka",
+   "observation": "potas „biega” po wodzie, wodór zapala się fioletowym płomieniem; roztwór zasadowy",
+   "safety": [
+    "wyłącznie pokaz nauczyciela; osłona, okulary"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "caH2o": {
+   "products": [
+    "Ca(OH)2",
+    "H2"
+   ],
+   "type": "metal + woda",
+   "conditions": "temperatura pokojowa",
+   "observation": "równomierne wydzielanie gazu, mętnienie (słabo rozpuszczalny Ca(OH)₂); fenoloftaleina malinowa",
+   "safety": [
+    "okulary"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "baH2o": {
+   "products": [
+    "Ba(OH)2",
+    "H2"
+   ],
+   "type": "metal + woda",
+   "conditions": "temperatura pokojowa",
+   "observation": "wydziela się wodór; roztwór zasadowy",
+   "safety": [
+    "związki baru trujące — tylko pokaz"
+   ],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "mgH2oHot": {
+   "products": [
+    "Mg(OH)2",
+    "H2"
+   ],
+   "type": "metal + woda",
+   "conditions": "gorąca woda (z zimną reakcja praktycznie nie zachodzi)",
+   "observation": "powolne wydzielanie pęcherzyków; fenoloftaleina słabo różowa",
+   "safety": [
+    "okulary; ogrzewanie"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "baoH2o": {
+   "products": [
+    "Ba(OH)2"
+   ],
+   "type": "tlenek zasadowy + woda",
+   "conditions": "temperatura pokojowa",
+   "observation": "układ się ogrzewa; roztwór zasadowy",
+   "safety": [
+    "związki baru trujące"
+   ],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "mgcl2Naoh": {
+   "products": [
+    "Mg(OH)2",
+    "NaCl"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "roztwory wodne",
+   "observation": "biały, galaretowaty osad",
+   "safety": [
+    "NaOH żrący — okulary, rękawice"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "alcl3Naoh": {
+   "products": [
+    "Al(OH)3",
+    "NaCl"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "NaOH dodawany kroplami, bez nadmiaru",
+   "observation": "biały, galaretowaty osad; w nadmiarze NaOH osad się roztwarza (amfoteryczność)",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "znso4Naoh": {
+   "products": [
+    "Zn(OH)2",
+    "Na2SO4"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "NaOH kroplami, bez nadmiaru",
+   "observation": "biały osad; w nadmiarze NaOH znika",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "feso4Naoh": {
+   "products": [
+    "Fe(OH)2",
+    "Na2SO4"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "świeży roztwór FeSO₄",
+   "observation": "zielonkawy osad, na powietrzu brunatnieje (utlenianie do Fe(OH)₃)",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "cucl2Naoh": {
+   "products": [
+    "Cu(OH)2",
+    "NaCl"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "roztwory wodne",
+   "observation": "niebieski, galaretowaty osad",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "niso4Naoh": {
+   "products": [
+    "Ni(OH)2",
+    "Na2SO4"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "roztwory wodne",
+   "observation": "jasnozielony osad",
+   "safety": [
+    "NaOH żrący; sole niklu uczulają"
+   ],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "mnso4Naoh": {
+   "products": [
+    "Mn(OH)2",
+    "Na2SO4"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "roztwory wodne",
+   "observation": "biały (beżowy) osad, brunatnieje na powietrzu",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "pbno32Naoh": {
+   "products": [
+    "Pb(OH)2",
+    "NaNO3"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "NaOH kroplami",
+   "observation": "biały osad; w nadmiarze NaOH znika",
+   "safety": [
+    "związki ołowiu trujące — tylko pokaz"
+   ],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "cacl2Naoh": {
+   "products": [
+    "Ca(OH)2",
+    "NaCl"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "tylko roztwory stężone (Ca(OH)₂ trudno, ale nie praktycznie nierozpuszczalny)",
+   "observation": "białe zmętnienie",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "agno3Naoh": {
+   "products": [
+    "Ag2O",
+    "NaNO3",
+    "H2O"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "roztwory wodne",
+   "observation": "brunatny osad Ag₂O (AgOH nietrwały)",
+   "safety": [
+    "AgNO₃ plami skórę; NaOH żrący"
+   ],
+   "level": "AMB",
+   "lesson": "N02",
+   "note": "AgOH powstaje przejściowo i od razu przechodzi w Ag₂O"
+  },
+  "alcl3Nh3": {
+   "products": [
+    "Al(OH)3",
+    "NH4Cl"
+   ],
+   "type": "strącanie wodorotlenku",
+   "conditions": "woda amoniakalna — nadmiar nie roztwarza osadu",
+   "observation": "biały, galaretowaty osad",
+   "safety": [
+    "NH₃ drażniący — dygestorium"
+   ],
+   "level": "LO",
+   "lesson": "N02"
+  },
+  "kohHno3": {
+   "products": [
+    "KNO3",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "roztwory wodne",
+   "observation": "brak widocznych zmian; z fenoloftaleiną zanik barwy malinowej",
+   "safety": [
+    "roztwory żrące"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "naohHno3": {
+   "products": [
+    "NaNO3",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "roztwory wodne",
+   "observation": "brak widocznych zmian; lekkie ogrzanie",
+   "safety": [
+    "roztwory żrące"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "kohHcl": {
+   "products": [
+    "KCl",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "roztwory wodne",
+   "observation": "brak widocznych zmian; lekkie ogrzanie",
+   "safety": [
+    "roztwory żrące"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "caoh2Hcl": {
+   "products": [
+    "CaCl2",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "woda wapienna lub mleko wapienne",
+   "observation": "zawiesina klaruje się; zanik barwy fenoloftaleiny",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "caoh2H2so4": {
+   "products": [
+    "CaSO4",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "roztwory",
+   "observation": "możliwe białe zmętnienie (CaSO₄ trudno rozpuszczalny)",
+   "safety": [
+    "H₂SO₄ żrący"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "baoh2H2so4": {
+   "products": [
+    "BaSO4",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "roztwory",
+   "observation": "biały osad BaSO₄ + zanik barwy fenoloftaleiny (zobojętnianie i strącanie jednocześnie)",
+   "safety": [
+    "związki baru trujące"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "baoh2Hcl": {
+   "products": [
+    "BaCl2",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "roztwory",
+   "observation": "brak widocznych zmian; zanik barwy fenoloftaleiny",
+   "safety": [
+    "związki baru trujące"
+   ],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "cuoh2H2so4": {
+   "products": [
+    "CuSO4",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "osad + rozcieńczony kwas",
+   "observation": "niebieski osad znika, roztwór niebieski",
+   "safety": [
+    "H₂SO₄ żrący"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "cuoh2Hcl": {
+   "products": [
+    "CuCl2",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "osad + kwas",
+   "observation": "osad znika, roztwór zielononiebieski",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "feoh3Hcl": {
+   "products": [
+    "FeCl3",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "osad + kwas",
+   "observation": "brunatny osad znika, roztwór żółtobrunatny",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "znoh2Hcl": {
+   "products": [
+    "ZnCl2",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "osad + kwas",
+   "observation": "biały osad znika, roztwór bezbarwny",
+   "safety": [],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "aloh3H2so4": {
+   "products": [
+    "Al2(SO4)3",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "osad + kwas",
+   "observation": "biały osad znika",
+   "safety": [
+    "H₂SO₄ żrący"
+   ],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "mgoh2H2so4": {
+   "products": [
+    "MgSO4",
+    "H2O"
+   ],
+   "type": "zobojętnianie",
+   "conditions": "zawiesina + kwas",
+   "observation": "zawiesina klaruje się",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "aloh3Naoh": {
+   "products": [
+    "NaAl(OH)4"
+   ],
+   "type": "wodorotlenek amfoteryczny + zasada",
+   "conditions": "nadmiar stężonego NaOH",
+   "observation": "biały osad roztwarza się — roztwór klarowny",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "LO",
+   "lesson": "N02",
+   "note": "zapis kompleksowy: Na[Al(OH)₄]; na E8 wystarczy „reaguje z mocną zasadą”"
+  },
+  "znoh2Naoh": {
+   "products": [
+    "Na2Zn(OH)4"
+   ],
+   "type": "wodorotlenek amfoteryczny + zasada",
+   "conditions": "nadmiar NaOH",
+   "observation": "biały osad roztwarza się",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "LO",
+   "lesson": "N02",
+   "note": "zapis kompleksowy: Na₂[Zn(OH)₄]"
+  },
+  "pboh2Naoh": {
+   "products": [
+    "Na2Pb(OH)4"
+   ],
+   "type": "wodorotlenek amfoteryczny + zasada",
+   "conditions": "nadmiar NaOH",
+   "observation": "osad roztwarza się",
+   "safety": [
+    "związki ołowiu trujące"
+   ],
+   "level": "LO",
+   "lesson": "N02",
+   "note": "zapis kompleksowy: Na₂[Pb(OH)₄]"
+  },
+  "baoh2Co2": {
+   "products": [
+    "BaCO3",
+    "H2O"
+   ],
+   "type": "zasada + tlenek kwasowy",
+   "conditions": "wdmuchiwanie CO₂",
+   "observation": "białe zmętnienie BaCO₃",
+   "safety": [
+    "związki baru trujące"
+   ],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "caoh2Na2co3": {
+   "products": [
+    "CaCO3",
+    "NaOH"
+   ],
+   "type": "zasada + sól",
+   "conditions": "mleko wapienne + roztwór sody",
+   "observation": "biały osad CaCO₃; roztwór silnie zasadowy (NaOH)",
+   "safety": [
+    "NaOH żrący"
+   ],
+   "level": "LO",
+   "lesson": "N02",
+   "note": "kaustyfikacja — dawna metoda otrzymywania NaOH"
+  },
+  "nh4clNaoh": {
+   "products": [
+    "NaCl",
+    "NH3",
+    "H2O"
+   ],
+   "type": "zasada + sól",
+   "conditions": "ogrzewanie",
+   "observation": "charakterystyczny zapach amoniaku; zwilżony papierek uniwersalny nad probówką niebieszczeje",
+   "safety": [
+    "NH₃ drażniący — wąchać „wachlując”"
+   ],
+   "level": "AMB",
+   "lesson": "N02",
+   "note": "wykrywanie jonów NH₄⁺"
+  },
+  "cuoh2Heat": {
+   "products": [
+    "CuO",
+    "H2O"
+   ],
+   "type": "rozkład termiczny wodorotlenku",
+   "conditions": "ogrzewanie osadu (już ok. 80 °C w wodzie)",
+   "observation": "niebieski osad czernieje (CuO)",
+   "safety": [
+    "gorące naczynie"
+   ],
+   "level": "E8",
+   "lesson": "N02"
+  },
+  "feoh3Heat": {
+   "products": [
+    "Fe2O3",
+    "H2O"
+   ],
+   "type": "rozkład termiczny wodorotlenku",
+   "conditions": "prażenie",
+   "observation": "brunatny osad → czerwonobrunatny proszek",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "aloh3Heat": {
+   "products": [
+    "Al2O3",
+    "H2O"
+   ],
+   "type": "rozkład termiczny wodorotlenku",
+   "conditions": "prażenie",
+   "observation": "biały proszek Al₂O₃",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "mgoh2Heat": {
+   "products": [
+    "MgO",
+    "H2O"
+   ],
+   "type": "rozkład termiczny wodorotlenku",
+   "conditions": "prażenie (ok. 350 °C)",
+   "observation": "biały proszek MgO; para wodna",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "znoh2Heat": {
+   "products": [
+    "ZnO",
+    "H2O"
+   ],
+   "type": "rozkład termiczny wodorotlenku",
+   "conditions": "ogrzewanie",
+   "observation": "biały proszek ZnO (na gorąco żółty)",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "caoh2Heat": {
+   "products": [
+    "CaO",
+    "H2O"
+   ],
+   "type": "rozkład termiczny wodorotlenku",
+   "conditions": "prażenie (ok. 500 °C)",
+   "observation": "biały proszek CaO; para wodna",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "agohDec": {
+   "products": [
+    "Ag2O",
+    "H2O"
+   ],
+   "type": "rozkład nietrwałego wodorotlenku",
+   "conditions": "temperatura pokojowa",
+   "observation": "brunatny osad Ag₂O",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N02"
+  },
+  "cuohDec": {
+   "products": [
+    "Cu2O",
+    "H2O"
+   ],
+   "type": "rozkład nietrwałego wodorotlenku",
+   "conditions": "temperatura pokojowa",
+   "observation": "czerwonobrunatny Cu₂O",
+   "safety": [],
+   "level": "LO",
+   "lesson": "N02"
+  },
+  "feoh2O2": {
+   "products": [
+    "Fe(OH)3"
+   ],
+   "type": "utlenianie wodorotlenku",
+   "conditions": "kontakt z powietrzem",
+   "observation": "zielonkawy osad brunatnieje od góry",
+   "safety": [],
+   "level": "AMB",
+   "lesson": "N02"
+  }
+ },
+ "REACTION_TYPE_NAMES": {
+  "metal+acid": "metal + kwas (redoks)",
+  "metal+water": "metal + woda (redoks)",
+  "neutralization": "zobojętnianie",
+  "precipitation": "strącanie osadu",
+  "precipitation (wykrywanie CO₂)": "strącanie (wykrywanie CO₂)",
+  "carbonate+acid": "węglan + kwas",
+  "acid+basic-oxide": "tlenek zasadowy + kwas",
+  "acid+amphoteric-oxide": "tlenek amfoteryczny + kwas",
+  "acid+oxide": "tlenek + kwas",
+  "salt+acid": "sól + kwas",
+  "redox": "redoks",
+  "redox (kompleksowanie)": "redoks z kompleksowaniem",
+  "acid+base (Brønsted)": "kwas + zasada (Brønsted)",
+  "synteza": "synteza",
+  "synteza kwasu": "synteza kwasu",
+  "synteza (równowagowa)": "synteza (równowagowa)",
+  "spalanie": "spalanie",
+  "utlenianie": "utlenianie",
+  "dysproporcjonowanie": "dysproporcjonowanie",
+  "rozkład": "rozkład",
+  "odwodnienie": "odwodnienie",
+  "otrzymywanie kwasu": "otrzymywanie kwasu",
+  "displacement": "wypieranie metalu (redoks)",
+  "rozkład termiczny": "rozkład termiczny",
+  "zasada + tlenek kwasowy": "zasada + tlenek kwasowy",
+  "twardnienie zaprawy": "twardnienie zaprawy wapiennej",
+  "synteza (kras)": "synteza (zjawiska krasowe)",
+  "hydratacja": "hydratacja (powstawanie hydratu)",
+  "tlenek zasadowy + woda": "tlenek zasadowy + woda",
+  "tlenek kwasowy + woda": "tlenek kwasowy + woda",
+  "tlenek amfoteryczny + kwas": "tlenek amfoteryczny + kwas",
+  "tlenek zasadowy + kwas": "tlenek zasadowy + kwas",
+  "tlenek amfoteryczny + zasada": "tlenek amfoteryczny + zasada",
+  "metal + woda": "metal + woda",
+  "rozkład nietrwałego wodorotlenku": "rozkład nietrwałego wodorotlenku",
+  "rozkład termiczny wodorotlenku": "rozkład termiczny wodorotlenku",
+  "strącanie wodorotlenku": "strącanie wodorotlenku",
+  "utlenianie wodorotlenku": "utlenianie wodorotlenku",
+  "wodorotlenek amfoteryczny + zasada": "wodorotlenek amfoteryczny + zasada",
+  "zasada + sól": "zasada + sól",
+  "zobojętnianie": "zobojętnianie"
+ }
+}

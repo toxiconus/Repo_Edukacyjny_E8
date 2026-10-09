@@ -1,0 +1,14 @@
+effect('flame',{free:true,layer:'front',label:'Płomień',defaults:{power:1,phi:1,soot:0,temp:1200,color:null,size:1,flicker:1,glow:1,fuel:'CH4',salt:'',diffusion:false},schema:{fuel:{t:'select',opts:['CH4','C3H8','C4H10','C2H5OH','H2','CO','C2H2','C25H52'],l:'Paliwo (CHE.PHYS)'},power:{t:'range',min:0,max:1,step:.05,l:'Moc'},phi:{t:'range',min:.4,max:2,step:.05,l:'φ mieszanki (1/λ)'},salt:{t:'select',opts:['','Li','Na','K','Ca','Sr','Ba','Cu','B'],l:'Sól w płomieniu (próba płomieniowa)'},soot:{t:'range',min:0,max:1,step:.05,l:'Kopcenie (min.)'},size:{t:'range',min:.4,max:2,step:.05,l:'Rozmiar'},flicker:{t:'range',min:0,max:3,step:.1,l:'Migotanie'},glow:{t:'range',min:0,max:3,step:.1,l:'Poświata'},color:{t:'color',l:'Barwa wymuszona'}},
+ 
+draw:e=>{const c=e.c,o=e.o,t=e.t,cx=e.anchor.x,top=e.anchor.y,P=Math.max(0,Math.min(1,o.power));if(P<.03)return;
+const PH=C.PHYS,F=PH?PH.flame({fuel:o.fuel||'CH4',phi:o.phi,power:P,soot:o.soot,salt:o.salt||null,diffusion:o.diffusion}):null;e.pool.flameInfo=F;
+const phi=F?F.phi:o.phi,soot=F?F.soot:o.soot,hk=F?F.h:P*(.55+.45*Math.min(1,o.temp/1800)),H=(60+125*Math.min(1.6,hk))*o.size,W=(10+28*P*(phi>1.15?1.25:1))*o.size,hz=F?F.flickerHz:8,
+ fl=(Math.sin(t/1000*6.283*hz*.5)*W*.08+Math.sin(t/1000*6.283*hz*1.3)*W*.04)*o.flicker,col=o.color,al=F?F.alpha:1;
+const rich=soot>.3,outer=col?[col.map(Math.round).join(','),col.map(v=>v*.75|0).join(',')]:F?[F.outer.join(','),F.outer.map(v=>v*.8|0).join(',')]:rich?['255,200,70','255,150,35']:['190,225,255','95,160,255'],
+ core=col?[lg(col,.7).join(','),lg(col,.35).join(',')]:F?[F.core.join(','),lg(F.core,.35).join(',')]:rich?['255,235,150','255,190,60']:['40,90,230','110,170,255'];
+const gl=c.createRadialGradient(cx,top-H*.4,2,cx,top-H*.4,H*1.1);gl.addColorStop(0,'rgba('+outer[1]+','+Math.min(1,.22*P*o.glow*(rich?1.5:1)*al)+')');gl.addColorStop(1,'rgba('+outer[1]+',0)');c.fillStyle=gl;c.fillRect(cx-H*1.2,top-H*1.6,H*2.4,H*2.2);
+const body=(k,cl,a,wk)=>{const w=W*(wk||k),h=H*k;c.beginPath();c.moveTo(cx-w,top);c.bezierCurveTo(cx-w*1.15,top-h*.4,cx-w*.45+fl,top-h*.8,cx+fl*1.6,top-h);c.bezierCurveTo(cx+w*.45+fl,top-h*.8,cx+w*1.15,top-h*.4,cx+w,top);c.closePath();const g=c.createLinearGradient(0,top,0,top-h);g.addColorStop(0,'rgba('+cl[0]+','+a+')');g.addColorStop(1,'rgba('+cl[1]+','+(a*.35)+')');c.fillStyle=g;c.fill()};
+c.save();c.shadowColor='rgba('+outer[1]+','+(.85*al)+')';c.shadowBlur=18;body(1,outer,.78*al);c.restore();
+ 
+const cone=F?(F.cone>0?.25+F.cone*.55:.45):.52;body(cone,core,.9*Math.max(.35,al),F&&F.cone>0?.62:cone);
+if(soot>.45){c.fillStyle='rgba(40,40,40,'+(.12+.2*soot)+')';for(let i=0;i<7;i++){const u=((t/1600)+i*.14)%1;c.beginPath();c.arc(cx+(i-3)*9+Math.sin(t/300+i)*5,top-H*.9-u*60,3+i%2+u*3,0,7);c.fill()}}}});

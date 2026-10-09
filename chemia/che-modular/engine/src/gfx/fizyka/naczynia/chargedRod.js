@@ -1,0 +1,1 @@
+vessel('chargedRod',{custom:(c,r,st,env)=>{const q=st.q==null?-6:st.q;ELX.rod(c,r.x+10,r.y+r.h*.5,r.x+r.w-10,r.y+r.h*.5,{q,col:st.col||(q<0?'#1f2937':'#bae6fd'),th:env.th})}});

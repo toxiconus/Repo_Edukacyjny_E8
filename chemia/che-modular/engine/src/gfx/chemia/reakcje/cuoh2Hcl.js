@@ -1,0 +1,1 @@
+P('cuoh2Hcl',{n:'Cu(OH)₂ + HCl',solid:{col:'ppt-cu-oh-2',eq:4,end:0,t:'powder',shape:'powder'},l1:[94,196,201],out:['barwa'],why:'Osad znika, roztwór zielononiebieski.'});

@@ -1,0 +1,1 @@
+P('znoNaohAq',{n:'ZnO + NaOH (roztwór)',solid:pw(wh),out:['nic'],why:'ZnO roztwarza się w mocnej zasadzie — amfoteryczność.'});

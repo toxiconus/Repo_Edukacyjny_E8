@@ -1,26 +1,14 @@
-# CHE · lekcje — praca „najpierw lekcje” (od v0_58, 2026-10-07)
+# Przeniesione → `chemia/che-modular/`
 
-**Otwórz:** `dist/index.html` (wszystkie pliki z `dist/` muszą leżeć w jednym folderze).
+Od 2026-10-08 praca CHE idzie **tylko na gałęzi `claude/che-lekcje`**, w folderze `chemia/che-modular/`.
+Start: `CLAUDE.md` (korzeń repo) → `chemia/che-modular/PLAN_PRACY.md` → `tail PROGRESS.md`.
 
-| folder / plik | co to |
+| było (`chemia/che/`) | jest |
 |---|---|
-| `md/` | **źródło lekcji** — tu piszemy i poprawiamy treść (N01–N05, FIZ01) |
-| `SZABLON_LEKCJI.md` | format md (sekcje, karty, doświadczenia, modele, fiszki, test…) |
-| `STANDARD_LEKCJI.md` | kolejność części i zasady treści |
-| `KATALOG_MODELI.md` | modele silnika do `@model` i klucze do `@zlewka` |
-| `szablon/` | wspólny wygląd `lekcja.css`, zachowanie `lekcja.js`, nowe modele i zlewki `rozszerzenia.js`, spis `index.html` |
-| `dist/jeden_plik/` | każda lekcja w jednym pliku (telefon, e-mail) |
-| `narzedzia/md2html.py` | md → `dist/*.html` |
-| `dist/che-viz.js` | silnik, dane, GFX, modele z CHE_lab v0_57 — **zamrożony** |
-
-## Praca
-```
-python3 narzedzia/md2html.py                 # wszystkie lekcje
-python3 narzedzia/md2html.py md/N05_wodorki.md   # jedna
-```
-Nowa lekcja = nowy plik `md/<KOD>_<nazwa>.md` (nagłówek jak w SZABLON_LEKCJI.md) → pojawia się w spisie sama.
-
-## Historia
-- Archiwum silnika, atlasu, wzorcowni, kanonu md i starych builderów: gałąź `claude/che-lab-archiwum-v0_57`.
-- Migracja v0_57 → md: `narzedzia/html2md.py`, `styl_wlasny.py`, `przebuduj_z_html.sh` (jednorazowe; treść po migracji = oryginał, sprawdzone `porownaj.py`).
-- `che-viz.js` odtwarzasz z archiwum: `python3 build.py && python3 tools/split_viz.py`.
+| `md/*.md` (lekcje) | `che-modular/lessons-md/gotowe/` |
+| `szablon/` (lekcja.css/js, rozszerzenia.js) | `che-modular/engine/src/lekcja/` |
+| `narzedzia/md2html.py`, `sprawdz.js` | `che-modular/tools/md2html.py`, `test_lekcje.cjs` (`python3 tools/che.py lekcje / test`) |
+| `dist/che-viz.js` (zamrożony) | składany z modułów: `tools/silnik.py` (identyczny bajt w bajt) |
+| `KATALOG_MODELI.md`, `STANDARD_LEKCJI.md` | `che-modular/` |
+| `narzedzia/spis_tresci.py`, `kanon_dane.py` | `chemia/plany/narzedzia/` |
+| stary system v0_59 | `chemia/archiwum/che_v0_59/` (tylko do odczytu) |

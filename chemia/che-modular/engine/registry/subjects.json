@@ -1,0 +1,53 @@
+{
+  "$schema": "../schemas/registry-meta.json",
+  "version": "1.0",
+  "description": "Przedmioty szkolne obsługiwane przez silnik. Nowa lekcja zawsze należy do subject + opcjonalnie cross-links.",
+  "subjects": [
+    {
+      "id": "chemia",
+      "name": "Chemia",
+      "short": "CHE",
+      "color": "#0f766e",
+      "lessonPrefix": ["N", "L", "CHE"],
+      "domains": ["atom", "oxides", "hydroxides", "acids", "salts", "stoich", "reactions", "colors", "lab-chem"],
+      "sharedAssets": ["vessels.chem", "effects.chem", "effects.common"]
+    },
+    {
+      "id": "fizyka",
+      "name": "Fizyka",
+      "short": "FIZ",
+      "color": "#7c3aed",
+      "lessonPrefix": ["F", "FIZ"],
+      "domains": ["electrostatics", "mechanics", "waves", "thermo-phys"],
+      "sharedAssets": ["vessels.phys", "effects.phys", "effects.common"]
+    },
+    {
+      "id": "biologia",
+      "name": "Biologia",
+      "short": "BIO",
+      "color": "#15803d",
+      "lessonPrefix": ["B", "BIO"],
+      "domains": [],
+      "sharedAssets": ["effects.common"],
+      "status": "planned"
+    },
+    {
+      "id": "matematyka",
+      "name": "Matematyka",
+      "short": "MAT",
+      "color": "#1d4ed8",
+      "lessonPrefix": ["M", "MAT"],
+      "domains": [],
+      "status": "planned"
+    },
+    {
+      "id": "geografia",
+      "name": "Geografia",
+      "short": "GEO",
+      "color": "#b45309",
+      "lessonPrefix": ["G", "GEO"],
+      "domains": [],
+      "status": "planned"
+    }
+  ]
+}

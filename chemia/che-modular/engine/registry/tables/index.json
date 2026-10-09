@@ -1,0 +1,125 @@
+{
+  "version": "1.0",
+  "description": "Tablice i zależności fizykochemiczne — metadane. Treść może żyć w DATA silnika; tu jest kontrakt (id, przedmiot, domena, klucze).",
+  "tables": {
+    "periodic-basic": {
+      "title": "Układ okresowy (podstawowy)",
+      "subjects": ["chemia", "fizyka"],
+      "domains": ["atom"],
+      "keys": ["Z", "symbol", "name", "mass", "group", "period", "block"],
+      "source": "CHE.DATA.ELEMENTS"
+    },
+    "ionization-energy": {
+      "title": "Energie jonizacji",
+      "subjects": ["chemia", "fizyka"],
+      "domains": ["atom"],
+      "keys": ["Z", "IE1", "IE2"],
+      "status": "partial"
+    },
+    "oxide-types": {
+      "title": "Typy tlenków (kwasowe / zasadowe / amfoteryczne / obojętne)",
+      "subjects": ["chemia"],
+      "domains": ["oxides"],
+      "keys": ["formula", "type", "oxideState"],
+      "source": "CHE.OXIDES / CHE.DATA.OXIDES"
+    },
+    "oxide-colors": {
+      "title": "Barwy tlenków",
+      "subjects": ["chemia"],
+      "domains": ["oxides", "colors"],
+      "keys": ["formula", "color", "hex"],
+      "source": "CHE.DATA.OXIDES"
+    },
+    "hydroxide-solubility": {
+      "title": "Rozpuszczalność wodorotlenków (R/T/N)",
+      "subjects": ["chemia"],
+      "domains": ["hydroxides"],
+      "keys": ["formula", "sol"],
+      "source": "CHE.HYDROXIDES + SOLUBILITY_TABLE"
+    },
+    "solheat": {
+      "title": "ΔH rozpuszczania wodorotlenków",
+      "subjects": ["chemia"],
+      "domains": ["hydroxides"],
+      "keys": ["formula", "dH"],
+      "source": "CHE.HYDROXIDES.SOLHEAT"
+    },
+    "acid-strength": {
+      "title": "Moc kwasów (Ka, pKa, strong)",
+      "subjects": ["chemia"],
+      "domains": ["acids"],
+      "keys": ["formula", "Ka", "pKa", "strong"],
+      "source": "CHE.DATA.ACID_SYSTEMS"
+    },
+    "indicators-ph": {
+      "title": "Zakresy pH wskaźników",
+      "subjects": ["chemia"],
+      "domains": ["acids"],
+      "keys": ["name", "lo", "hi", "colorAcid", "colorBase"],
+      "source": "CHE.DATA.INDICATORS"
+    },
+    "metal-activity": {
+      "title": "Szereg aktywności metali",
+      "subjects": ["chemia"],
+      "domains": ["acids", "reactions"],
+      "keys": ["order"],
+      "source": "CHE.DATA.METAL_SERIES"
+    },
+    "solubility-full": {
+      "title": "Tabela rozpuszczalności soli",
+      "subjects": ["chemia"],
+      "domains": ["salts", "hydroxides"],
+      "keys": ["cation", "anion", "sol"],
+      "source": "CHE.DATA.SOLUBILITY_TABLE"
+    },
+    "hydrolysis": {
+      "title": "Hydroliza soli — odczyn",
+      "subjects": ["chemia"],
+      "domains": ["salts"],
+      "keys": ["salt", "odczyn", "equation"],
+      "source": "CHE.IONIC.saltReaction"
+    },
+    "ion-colors": {
+      "title": "Barwy jonów w roztworze",
+      "subjects": ["chemia"],
+      "domains": ["colors", "salts"],
+      "keys": ["ion", "hex", "state"],
+      "source": "CHE.COLORS"
+    },
+    "precipitate-colors": {
+      "title": "Barwy osadów",
+      "subjects": ["chemia"],
+      "domains": ["colors", "salts"],
+      "keys": ["formula", "hex", "name"],
+      "source": "CHE.COLORS"
+    },
+    "molar-masses": {
+      "title": "Masy molowe (pochodne z ELEMENTS)",
+      "subjects": ["chemia"],
+      "domains": ["stoich", "atom"],
+      "keys": ["formula", "M"],
+      "source": "derived"
+    },
+    "triboelectric": {
+      "title": "Szereg tryboelektryczny",
+      "subjects": ["fizyka"],
+      "domains": ["electrostatics"],
+      "keys": ["materialA", "materialB", "sign"],
+      "source": "CHE.FIZ.ELEKTRO.rub"
+    },
+    "resistivity": {
+      "title": "Rezystywność materiałów",
+      "subjects": ["fizyka"],
+      "domains": ["electrostatics"],
+      "keys": ["material", "rho"],
+      "source": "CHE.FIZ.ELEKTRO.RHO"
+    },
+    "permittivity": {
+      "title": "Przenikalność elektryczna",
+      "subjects": ["fizyka"],
+      "domains": ["electrostatics"],
+      "keys": ["medium", "epsr"],
+      "source": "CHE.FIZ.ELEKTRO.EPSR"
+    }
+  }
+}

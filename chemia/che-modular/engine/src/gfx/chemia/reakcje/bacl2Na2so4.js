@@ -1,0 +1,1 @@
+P('bacl2Na2so4',{n:'BaCl₂ + Na₂SO₄',ppt:'ppt-baso4',out:['osad'],why:'Biały osad BaSO₄ — nie roztwarza się w kwasach; tak wykrywamy jony SO₄²⁻.'});

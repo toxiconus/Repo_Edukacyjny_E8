@@ -8838,7 +8838,7 @@ Używamy *the*, gdy:
 <summary><strong>Odpowiedzi z komentarzem</strong></summary>
 
 1. I play the piano every day.
-2. She is at the school now. (lub She is at school – również poprawne dla nauczycielki)
+2. She is at the school now. (= w konkretnym budynku, np. przyszła na zebranie) · She is at school. (= jest w szkole jako uczennica / na lekcjach — szkoła w swojej funkcji)
 3. I like chocolate very much.
 4. He is an honest man.
 5. (poprawne – go to bed)
@@ -9960,7 +9960,7 @@ FORMA: przymiotnik + -ly
 - quick → quickly / beautiful → beautifully
 
 POZYCJA: zazwyczaj po czasowniku
-- She runs quickly (nie: She quickly runs)
+- She runs quickly (najczęstszy szyk; She quickly runs też jest poprawne, ale rzadsze — przysłówki sposobu stoją zwykle po czasowniku lub po dopełnieniu, a przysłówki częstotliwości przed czasownikiem głównym i po „be”)
 
 WYJĄTKI: good→well, fast→fast, hard→hard
 - She speaks well (nie: she speaks good)
@@ -12574,14 +12574,14 @@ Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapis
 | sympathetic | sympatyczny | współczujący | She is very sympathetic. (współczująca) |
 | actually | aktualnie | właściwie, tak naprawdę | Actually, I don't like it. |
 | eventually | ewentualnie | ostatecznie, w końcu | We eventually arrived. |
-| library | libretto | biblioteka | I borrowed a book from the library. |
+| library | księgarnia (pułapka: to nie „księgarnia”, tylko biblioteka; księgarnia = bookshop) | biblioteka | I borrowed a book from the library. |
 | fabric | fabryka | materiał, tkanina | This fabric is soft. |
-| chef | szef | kucharz, szef kuchni | The chef prepared a great meal. |
+| chef | szef | szef kuchni, zawodowy kucharz; kucharz = cook; szef = boss | The chef prepared a great meal. |
 | pension | pensja | emerytura | My grandma gets a pension. |
 | sensible | sensowny | rozsądny, praktyczny | She is a sensible person. |
 | sensitive | sensytywny | wrażliwy | He is very sensitive. |
 | lecture | lektura | wykład (na uczelni) | I have a lecture at 10 a.m. |
-| data | data (dzień) | dane | The data shows... |
+| data | data (dzień) | dane; data w kalendarzu = date | The data shows... |
 | date | – | data (dzień) | What's the date today? |
 | recipe | recepta (lekarska) | przepis kulinarny | This is my grandma's recipe. |
 | prescription | – | recepta lekarska | The doctor gave me a prescription. |
@@ -12593,9 +12593,9 @@ Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapis
 | real | – | prawdziwy | Is this real gold? |
 | valuable | – | wartościowy | This is a valuable lesson. |
 | various | – | różny, rozmaity | We have various options. |
-| resume | – | streszczenie / CV | Please send your resume. |
+| résumé (AmE) | rezume / streszczenie | CV (w BrE: CV); streszczenie = summary | Please send your resume. |
 | character | charakter | cecha, postać | He has a strong character. |
-| conductor | konduktor | dyrygent, przewodnik | The conductor led the orchestra. |
+| conductor | konduktor (pułapka częściowa) | dyrygent; w brytyjskim angielskim także konduktor w autobusie/pociągu; przewodnik = guide | The conductor led the orchestra. |
 
 <!-- UI: AUDIO --> *She is very sympathetic. / Actually, I don't like it. / We eventually arrived.*
 
@@ -12606,7 +12606,7 @@ Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapis
 | sympatyczny | sympathetic (współczujący) | nice, likeable, friendly |
 | aktualnie | actually (właściwie) | currently, at the moment |
 | ewentualnie | eventually (ostatecznie) | possibly, maybe |
-| libretto | library (biblioteka) | libretto (to samo) |
+| libretto | (brak pułapki) | libretto = tekst opery (to samo znaczenie); nie myl z library = biblioteka |
 | fabryka | fabric (tkanina) | factory |
 | szef | chef (kucharz) | boss, manager, chief |
 | pensja | pension (emerytura) | salary, wages |
@@ -12965,7 +12965,7 @@ Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapis
 2. Actually – właściwie (nie: aktualnie)
 3. eventually – ostatecznie (nie: ewentualnie)
 4. library – biblioteka (nie: libretto)
-5. chef – kucharz (nie: szef)
+5. chef – szef kuchni / kucharz zawodowy (nie: szef = boss)
 6. pension – emerytura (nie: pensja)
 7. fabric – tkanina (nie: fabryka)
 8. prescription – recepta lekarska (nie: przepis kulinarny)
@@ -13456,17 +13456,17 @@ Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapis
 
 | Kryterium | Informacja |
 |-----------|------------|
-| Formy | e-mail, list prywatny, pocztówka, wpis na blogu |
-| Długość | 50–120 słów |
-| Punkty | maksymalnie 10 punktów |
+| Formy | na egzaminie (od 2025): e-mail, wiadomość, notatka, ogłoszenie, zaproszenie, wpis na blogu; list prywatny i pocztówka — formy ćwiczeniowe |
+| Długość | 50–120 wyrazów (40 wyrazów lub mniej — oceniana jest tylko treść) |
+| Punkty | maksymalnie 10 punktów — za treść, spójność i logikę, zakres środków językowych oraz poprawność środków językowych |
 | Poziom | A2/A2+ |
 | Styl | nieformalny, ale poprawny |
-| Podpunkty | zawsze 3 podpunkty do rozwinięcia |
+| Podpunkty | polecenie zawiera 3 elementy — do każdego trzeba się odnieść i go rozwinąć |
 
 ### 2.2. Zasady ogólne
 
 1. **Przeczytaj uważnie polecenie** – musisz odnieść się do wszystkich 3 podpunktów.
-2. **Rozwiń każdy podpunkt** – każde polecenie to osobne zdanie lub akapit.
+2. **Rozwiń każdy podpunkt** – w jednym lub kilku logicznie połączonych zdaniach; osobny akapit na każdy punkt nie jest obowiązkowy.
 3. **Zachowaj limit słów** – 50–120 słów. Zbyt krótki tekst = utrata punktów.
 4. **Używaj nieformalnego stylu** – skróty (*I'm, don't, can't*), zwroty potoczne.
 5. **Podpisz się jako XYZ** – nie wpisuj swojego prawdziwego imienia.
@@ -13576,7 +13576,7 @@ XYZ
 
 ### 5.1. Struktura pocztówki
 
-Pocztówka jest najkrótszą formą wypowiedzi. Zwykle ma 50–80 słów.
+Pocztówka jest najkrótszą formą wypowiedzi. W ćwiczeniach ma zwykle 50–80 wyrazów (to format ćwiczeniowy — na egzaminie obowiązuje limit z polecenia: 50–120 wyrazów).
 
 | Element | Przykład |
 |---------|----------|
@@ -13990,7 +13990,7 @@ XYZ
 | Rozwinięcie | 3 podpunkty | 3 podpunkty | 3 podpunkty |
 | Zakończenie | Write back soon! | I'm looking forward... | See you soon! |
 | Podpis | XYZ | Yours, XYZ | XYZ |
-| Długość | 50–120 słów | 50–120 słów | 50–80 słów |
+| Długość | 50–120 wyrazów | 50–120 wyrazów | ćwiczeniowo 50–80 wyrazów (egzamin: limit z polecenia) |
 
 ---
 
@@ -14087,7 +14087,7 @@ XYZ
    Tak. W arkuszu pojawi się jedno zadanie – zwykle e-mail, ale może to być też list lub pocztówka.
 
 2. **Czy muszę znać różnicę między e-mailem a listem?**  
-   Tak. Struktura jest podobna, ale list ma datę i miejsce, a e-mail zaczyna się od *Hi / Hello*.
+   Tak. Struktura jest podobna, ale list może mieć miejscowość i datę, a e-mail ich nie wymaga; oba zaczynają się zwrotem do adresata (*Hi / Hello / Dear …*).
 
 3. **Ile słów muszę napisać?**  
    50–120 słów. Zbyt krótki tekst = utrata punktów.
@@ -14111,7 +14111,7 @@ XYZ
    Nie. Słowniki nie są dozwolone na egzaminie ósmoklasisty.
 
 10. **Ile czasu mam na napisanie wypowiedzi?**  
-    To zależy od arkusza, ale zwykle na całą część pisemną masz około 20–30 minut.
+    To zależy od arkusza, ale czasem gospodarujesz sam w ramach całego egzaminu — orientacyjnie warto przeznaczyć na wypowiedź pisemną 15–25 minut (to nie jest oficjalny limit).
 
 11. **Czy na egzaminie akceptowane są brytyjskie i amerykańskie formy?**  
     Tak. Obie wersje są akceptowane (np. *colour/color, flat/apartment*).

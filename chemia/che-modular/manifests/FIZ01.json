@@ -1,0 +1,35 @@
+{
+  "code": "FIZ01",
+  "source": "fiz-elektro-src",
+  "visuals": [
+    "fiz-coulomb-v01",
+    "fiz-elektroskop-v01",
+    "fiz-elektryzowanie-v01",
+    "fiz-ladunek-v01",
+    "fiz-przewodniki-v01",
+    "gfx-scene-conductivity",
+    "kw-dysocjacja-v01",
+    "molecule3d-merged",
+    "periodic-54"
+  ],
+  "reactions": [],
+  "oxides": [],
+  "hydroxides": [],
+  "scanned": {
+    "reactions": [],
+    "oxides": [],
+    "hydroxides": [],
+    "visuals": [
+      "fiz-coulomb-v01",
+      "fiz-elektroskop-v01",
+      "fiz-elektryzowanie-v01",
+      "fiz-ladunek-v01",
+      "fiz-przewodniki-v01",
+      "gfx-scene-conductivity",
+      "kw-dysocjacja-v01"
+    ],
+    "compounds": [],
+    "salts": [],
+    "ppts": []
+  }
+}

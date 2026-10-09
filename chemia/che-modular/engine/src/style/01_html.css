@@ -1,0 +1,7 @@
+
+html{background:#eef2f6}
+html[data-theme="dark"]{background:#0f1419;filter:invert(.93) hue-rotate(180deg)}
+
+html:not([data-che-ui="ready"]) body>*:not(#che-landing):not(script):not(style):not(link){display:none!important}
+#che-project-shell{display:none!important}
+#che-landing{padding-top:36px!important}

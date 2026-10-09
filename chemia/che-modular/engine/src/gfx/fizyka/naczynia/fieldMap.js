@@ -1,0 +1,1 @@
+vessel('fieldMap',{custom:(c,r,st,env)=>{const Q=(st.charges||[{x:.3,y:.5,q:2e-6},{x:.7,y:.5,q:-2e-6}]).map(u=>({x:r.x+u.x*r.w,y:r.y+u.y*r.h,q:u.q}));c.save();c.beginPath();c.rect(r.x,r.y,r.w,r.h);c.clip();ELX.fieldLines(c,r.x+r.w,r.y+r.h,Q,{th:env.th});Q.forEach(u=>ELX.pointCharge(c,u.x,u.y,u.q,null,{th:env.th}));c.restore()}});

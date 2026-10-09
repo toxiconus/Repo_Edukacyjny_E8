@@ -1,0 +1,1 @@
+effect('meniscus',{label:'Menisk',draw:e=>{if(e.top>=e.bot-1)return;const c=e.c,r=e.r;c.beginPath();for(let x=0;x<=r.w;x+=4){const y=e.surf(r.x+x);x?c.lineTo(r.x+x,y):c.moveTo(r.x,y)}c.strokeStyle='rgba(255,255,255,.6)';c.lineWidth=1.6;c.stroke();c.globalAlpha=.35;c.translate(0,3);c.stroke();c.translate(0,-3);c.globalAlpha=1}});

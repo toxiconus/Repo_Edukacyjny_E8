@@ -1,0 +1,3050 @@
+[
+ {
+  "num": 0,
+  "file": "anon001/rdzen/s000.js",
+  "bytes": 1018,
+  "tags": [
+   "core"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 1,
+  "file": "anon001/audyt/s001.js",
+  "bytes": 5186,
+  "tags": [
+   "audit",
+   "data-salts",
+   "education",
+   "organic",
+   "stoich",
+   "viz-ui"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 2,
+  "file": "anon001/dane-jadrowe/s002.js",
+  "bytes": 13626,
+  "tags": [
+   "atom",
+   "core"
+  ],
+  "modul": "dane-jadrowe"
+ },
+ {
+  "num": 3,
+  "file": "anon001/dane-substancje/s003.js",
+  "bytes": 6594,
+  "tags": [
+   "core",
+   "data-oxides",
+   "geometry"
+  ],
+  "modul": "dane-substancje"
+ },
+ {
+  "num": 4,
+  "file": "anon001/dane-reakcje/s004.js",
+  "bytes": 47884,
+  "tags": [
+   "core",
+   "data-hydroxides",
+   "data-oxides",
+   "data-reactions",
+   "data-salts"
+  ],
+  "modul": "dane-reakcje"
+ },
+ {
+  "num": 5,
+  "file": "anon001/dane-kwasy-zasady/s005.js",
+  "bytes": 40961,
+  "tags": [
+   "core",
+   "data-acids",
+   "data-hydroxides"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 6,
+  "file": "anon001/dane-kwasy-zasady/s006.js",
+  "bytes": 6388,
+  "tags": [
+   "atom",
+   "core",
+   "data-acids",
+   "data-hydroxides",
+   "data-oxides",
+   "data-reactions"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 7,
+  "file": "anon001/dane-pierwiastki/s007.js",
+  "bytes": 12199,
+  "tags": [
+   "core"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 8,
+  "file": "anon001/dane-pierwiastki/s008.js",
+  "bytes": 28007,
+  "tags": [
+   "core",
+   "data-elements",
+   "education",
+   "nuclear"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 9,
+  "file": "anon001/dane-pierwiastki/s009.js",
+  "bytes": 2721,
+  "tags": [
+   "core"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 10,
+  "file": "anon001/rdzen/s010.js",
+  "bytes": 5889,
+  "tags": [
+   "data-acids"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 11,
+  "file": "anon001/rdzen/s011.js",
+  "bytes": 10175,
+  "tags": [
+   "atom",
+   "data-elements",
+   "geometry"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 12,
+  "file": "anon001/rdzen/s012.js",
+  "bytes": 2234,
+  "tags": [
+   "audit"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 13,
+  "file": "anon001/rdzen/s013.js",
+  "bytes": 3151,
+  "tags": [
+   "data-acids",
+   "stoich"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 14,
+  "file": "anon001/rdzen/s014.js",
+  "bytes": 2150,
+  "tags": [
+   "stoich"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 15,
+  "file": "anon001/rdzen/s015.js",
+  "bytes": 1170,
+  "tags": [
+   "misc"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 16,
+  "file": "anon001/rdzen/s016.js",
+  "bytes": 2619,
+  "tags": [
+   "thermo"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 17,
+  "file": "anon001/rdzen/s017.js",
+  "bytes": 1096,
+  "tags": [
+   "electrochem"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 18,
+  "file": "anon001/rdzen/s018.js",
+  "bytes": 11930,
+  "tags": [
+   "atom",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 19,
+  "file": "anon001/dane-jadrowe/s019.js",
+  "bytes": 4478,
+  "tags": [
+   "nuclear",
+   "phys"
+  ],
+  "modul": "dane-jadrowe"
+ },
+ {
+  "num": 20,
+  "file": "anon001/rdzen/s020.js",
+  "bytes": 3244,
+  "tags": [
+   "data-acids",
+   "data-reactions"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 21,
+  "file": "anon001/rdzen/s021.js",
+  "bytes": 2615,
+  "tags": [
+   "misc"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 22,
+  "file": "anon001/rdzen/s022.js",
+  "bytes": 1408,
+  "tags": [
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 23,
+  "file": "anon001/organiczna/s023.js",
+  "bytes": 1889,
+  "tags": [
+   "misc"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 24,
+  "file": "anon001/dane-jadrowe/s024.js",
+  "bytes": 1903,
+  "tags": [
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "dane-jadrowe"
+ },
+ {
+  "num": 25,
+  "file": "anon001/gfx-ui/s025.js",
+  "bytes": 2625,
+  "tags": [
+   "misc"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 26,
+  "file": "anon001/gfx-ui/s026.js",
+  "bytes": 2277,
+  "tags": [
+   "misc"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 27,
+  "file": "anon001/audyt/s027.js",
+  "bytes": 1518,
+  "tags": [
+   "misc"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 28,
+  "file": "anon001/rdzen/s028.js",
+  "bytes": 1256,
+  "tags": [
+   "misc"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 29,
+  "file": "anon001/gfx-ui/s029.js",
+  "bytes": 1945,
+  "tags": [
+   "data-elements",
+   "viz-ui"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 30,
+  "file": "anon001/gfx-ui/s030.js",
+  "bytes": 18048,
+  "tags": [
+   "viz-ui"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 31,
+  "file": "anon001/gfx-ui/s031.js",
+  "bytes": 5673,
+  "tags": [
+   "misc"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 32,
+  "file": "anon001/gfx-ui/s032.js",
+  "bytes": 8318,
+  "tags": [
+   "atom",
+   "data-elements",
+   "geometry",
+   "viz-ui"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 33,
+  "file": "anon001/edukacja/s033.js",
+  "bytes": 3113,
+  "tags": [
+   "atom"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 34,
+  "file": "anon001/organiczna/s034.js",
+  "bytes": 4490,
+  "tags": [
+   "nuclear",
+   "organic"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 35,
+  "file": "anon001/rdzen/s035.js",
+  "bytes": 4857,
+  "tags": [
+   "atom",
+   "education",
+   "geometry"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 36,
+  "file": "anon001/gfx-ui/s036.js",
+  "bytes": 2872,
+  "tags": [
+   "atom",
+   "education",
+   "geometry",
+   "organic"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 37,
+  "file": "anon001/dane-substancje/s037.js",
+  "bytes": 2916,
+  "tags": [
+   "core"
+  ],
+  "modul": "dane-substancje"
+ },
+ {
+  "num": 38,
+  "file": "anon001/rdzen/s038.js",
+  "bytes": 10992,
+  "tags": [
+   "education",
+   "geometry",
+   "nuclear",
+   "organic"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 39,
+  "file": "anon001/rdzen/s039.js",
+  "bytes": 8581,
+  "tags": [
+   "data-elements"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 40,
+  "file": "anon001/gfx-ui/s040.js",
+  "bytes": 6746,
+  "tags": [
+   "editor"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 41,
+  "file": "anon001/rdzen/s041.js",
+  "bytes": 7370,
+  "tags": [
+   "editor"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 42,
+  "file": "anon001/rdzen/s042.js",
+  "bytes": 5637,
+  "tags": [
+   "data-elements",
+   "editor"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 43,
+  "file": "anon001/organiczna/s043.js",
+  "bytes": 4203,
+  "tags": [
+   "editor",
+   "geometry",
+   "organic"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 44,
+  "file": "anon001/gfx-ui/s044.js",
+  "bytes": 5595,
+  "tags": [
+   "atom",
+   "education"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 45,
+  "file": "anon001/audyt/s045.js",
+  "bytes": 2011,
+  "tags": [
+   "education",
+   "geometry"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 46,
+  "file": "anon001/rdzen/s046.js",
+  "bytes": 1242,
+  "tags": [
+   "misc"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 47,
+  "file": "anon001/rdzen/s047.js",
+  "bytes": 1217,
+  "tags": [
+   "misc"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 48,
+  "file": "anon001/nauka-referencje/s048.js",
+  "bytes": 1179,
+  "tags": [
+   "education",
+   "geometry"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 49,
+  "file": "anon001/audyt/s049.js",
+  "bytes": 3825,
+  "tags": [
+   "atom",
+   "audit",
+   "education",
+   "geometry",
+   "organic"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 50,
+  "file": "anon001/rdzen/s050.js",
+  "bytes": 4792,
+  "tags": [
+   "editor"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 51,
+  "file": "anon001/organiczna/s051.js",
+  "bytes": 5223,
+  "tags": [
+   "nuclear"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 52,
+  "file": "anon001/inne/s052.js",
+  "bytes": 4256,
+  "tags": [
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 53,
+  "file": "anon001/rdzen/s053.js",
+  "bytes": 4344,
+  "tags": [
+   "data-elements"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 54,
+  "file": "anon001/audyt/s054.js",
+  "bytes": 1780,
+  "tags": [
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 55,
+  "file": "anon001/rdzen/s055.js",
+  "bytes": 1309,
+  "tags": [
+   "atom"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 56,
+  "file": "anon001/organiczna/s056.js",
+  "bytes": 1964,
+  "tags": [
+   "misc"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 57,
+  "file": "anon001/audyt/s057.js",
+  "bytes": 1292,
+  "tags": [
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 58,
+  "file": "anon001/audyt/s058.js",
+  "bytes": 2448,
+  "tags": [
+   "core",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 59,
+  "file": "anon001/audyt/s059.js",
+  "bytes": 1845,
+  "tags": [
+   "core",
+   "organic"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 60,
+  "file": "anon001/rdzen/s060.js",
+  "bytes": 9230,
+  "tags": [
+   "atom",
+   "audit",
+   "core",
+   "editor",
+   "electrochem",
+   "geometry",
+   "nuclear",
+   "organic",
+   "stoich",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 61,
+  "file": "anon001/rdzen/s061.js",
+  "bytes": 4000,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 62,
+  "file": "anon001/rdzen/s062.js",
+  "bytes": 29762,
+  "tags": [
+   "atom",
+   "audit",
+   "core",
+   "data-acids",
+   "editor",
+   "education",
+   "electrochem",
+   "geometry",
+   "nuclear",
+   "stoich",
+   "thermo",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 63,
+  "file": "anon001/rdzen/s063.js",
+  "bytes": 5818,
+  "tags": [
+   "audit",
+   "core",
+   "editor",
+   "nuclear"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 64,
+  "file": "anon001/rdzen/s064.js",
+  "bytes": 8995,
+  "tags": [
+   "atom",
+   "audit",
+   "core",
+   "editor",
+   "education",
+   "geometry"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 65,
+  "file": "anon001/audyt/s065.js",
+  "bytes": 8647,
+  "tags": [
+   "audit",
+   "core",
+   "editor",
+   "education",
+   "geometry",
+   "organic"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 66,
+  "file": "anon001/audyt/s066.js",
+  "bytes": 3109,
+  "tags": [
+   "core",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 67,
+  "file": "anon001/audyt/s067.js",
+  "bytes": 3531,
+  "tags": [
+   "core",
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 68,
+  "file": "anon001/organiczna/s068.js",
+  "bytes": 2213,
+  "tags": [
+   "core"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 69,
+  "file": "anon001/audyt/s069.js",
+  "bytes": 1769,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 70,
+  "file": "anon001/audyt/s070.js",
+  "bytes": 2322,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids",
+   "education",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 71,
+  "file": "anon001/inne/s071.js",
+  "bytes": 3359,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 72,
+  "file": "anon001/gfx-ui/s072.js",
+  "bytes": 10020,
+  "tags": [
+   "core"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 73,
+  "file": "anon001/gfx-ui/s073.js",
+  "bytes": 6701,
+  "tags": [
+   "atom"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 74,
+  "file": "anon001/gfx-ui/s074.js",
+  "bytes": 27323,
+  "tags": [
+   "atom",
+   "editor",
+   "geometry",
+   "nuclear",
+   "organic",
+   "viz-ui"
+  ],
+  "modul": "gfx-ui"
+ },
+ {
+  "num": 75,
+  "file": "anon001/rdzen/s075.js",
+  "bytes": 6503,
+  "tags": [
+   "atom",
+   "audit",
+   "core",
+   "data-elements",
+   "editor",
+   "geometry",
+   "nuclear",
+   "organic",
+   "stoich",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 76,
+  "file": "anon001/audyt/s076.js",
+  "bytes": 18850,
+  "tags": [
+   "atom",
+   "audit",
+   "core",
+   "data-elements",
+   "electrochem",
+   "nuclear",
+   "viz-ui"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 77,
+  "file": "anon001/audyt/s077.js",
+  "bytes": 789,
+  "tags": [
+   "audit",
+   "nuclear",
+   "viz-ui"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 78,
+  "file": "anon001/audyt/s078.js",
+  "bytes": 4092,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 79,
+  "file": "anon001/dane-pierwiastki/s079.js",
+  "bytes": 5021,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 80,
+  "file": "anon001/dane-pierwiastki/s080.js",
+  "bytes": 2727,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 81,
+  "file": "anon001/audyt/s081.js",
+  "bytes": 2829,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 82,
+  "file": "anon001/inne/s082.js",
+  "bytes": 776,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 83,
+  "file": "anon001/dane-pierwiastki/s083.js",
+  "bytes": 6440,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 84,
+  "file": "anon001/inne/s084.js",
+  "bytes": 2886,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 85,
+  "file": "anon001/inne/s085.js",
+  "bytes": 836,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 86,
+  "file": "anon001/dane-pierwiastki/s086.js",
+  "bytes": 6706,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 87,
+  "file": "anon001/inne/s087.js",
+  "bytes": 2911,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 88,
+  "file": "anon001/inne/s088.js",
+  "bytes": 875,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 89,
+  "file": "anon001/dane-pierwiastki/s089.js",
+  "bytes": 9269,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "education",
+   "nuclear"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 90,
+  "file": "anon001/dane-termo-redoks/s090.js",
+  "bytes": 1223,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 91,
+  "file": "anon001/dane-termo-redoks/s091.js",
+  "bytes": 2196,
+  "tags": [
+   "audit",
+   "core",
+   "electrochem"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 92,
+  "file": "anon001/audyt/s092.js",
+  "bytes": 4314,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 93,
+  "file": "anon001/inne/s093.js",
+  "bytes": 1404,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 94,
+  "file": "anon001/dane-pierwiastki/s094.js",
+  "bytes": 3656,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 95,
+  "file": "anon001/audyt/s095.js",
+  "bytes": 1087,
+  "tags": [
+   "audit",
+   "data-elements"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 96,
+  "file": "anon001/inne/s096.js",
+  "bytes": 1560,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 97,
+  "file": "anon001/inne/s097.js",
+  "bytes": 965,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 98,
+  "file": "anon001/nauka-referencje/s098.js",
+  "bytes": 1791,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "electrochem"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 99,
+  "file": "anon001/rdzen/s099.js",
+  "bytes": 1244,
+  "tags": [
+   "core"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 100,
+  "file": "anon001/audyt/s100.js",
+  "bytes": 1385,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 101,
+  "file": "anon001/audyt/s101.js",
+  "bytes": 982,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 102,
+  "file": "anon001/inne/s102.js",
+  "bytes": 951,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 103,
+  "file": "anon001/audyt/s103.js",
+  "bytes": 2118,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 104,
+  "file": "anon001/nauka-referencje/s104.js",
+  "bytes": 1505,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 105,
+  "file": "anon001/audyt/s105.js",
+  "bytes": 1318,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 106,
+  "file": "anon001/dane-pierwiastki/s106.js",
+  "bytes": 3801,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 107,
+  "file": "anon001/nauka-referencje/s107.js",
+  "bytes": 908,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 108,
+  "file": "anon001/audyt/s108.js",
+  "bytes": 1332,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 109,
+  "file": "anon001/audyt/s109.js",
+  "bytes": 2119,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 110,
+  "file": "anon001/audyt/s110.js",
+  "bytes": 1522,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 111,
+  "file": "anon001/audyt/s111.js",
+  "bytes": 1401,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 112,
+  "file": "anon001/audyt/s112.js",
+  "bytes": 5386,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids",
+   "data-elements",
+   "nuclear",
+   "thermo"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 113,
+  "file": "anon001/inne/s113.js",
+  "bytes": 701,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 114,
+  "file": "anon001/audyt/s114.js",
+  "bytes": 4239,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 115,
+  "file": "anon001/audyt/s115.js",
+  "bytes": 1659,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 116,
+  "file": "anon001/inne/s116.js",
+  "bytes": 940,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 117,
+  "file": "anon001/dane-termo-redoks/s117.js",
+  "bytes": 2767,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 118,
+  "file": "anon001/audyt/s118.js",
+  "bytes": 958,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 119,
+  "file": "anon001/nauka-referencje/s119.js",
+  "bytes": 1622,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 120,
+  "file": "anon001/dane-termo-redoks/s120.js",
+  "bytes": 1600,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 121,
+  "file": "anon001/audyt/s121.js",
+  "bytes": 1685,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 122,
+  "file": "anon001/audyt/s122.js",
+  "bytes": 1932,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 123,
+  "file": "anon001/audyt/s123.js",
+  "bytes": 861,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 124,
+  "file": "anon001/inne/s124.js",
+  "bytes": 674,
+  "tags": [
+   "core"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 125,
+  "file": "anon001/audyt/s125.js",
+  "bytes": 1749,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 126,
+  "file": "anon001/audyt/s126.js",
+  "bytes": 1564,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 127,
+  "file": "anon001/rdzen/s127.js",
+  "bytes": 1751,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 128,
+  "file": "anon001/audyt/s128.js",
+  "bytes": 1129,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 129,
+  "file": "anon001/inne/s129.js",
+  "bytes": 1811,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 130,
+  "file": "anon001/audyt/s130.js",
+  "bytes": 747,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 131,
+  "file": "anon001/edukacja/s131.js",
+  "bytes": 31943,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids",
+   "data-hydroxides",
+   "data-oxides",
+   "electrochem"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 132,
+  "file": "anon001/audyt/s132.js",
+  "bytes": 1849,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 133,
+  "file": "anon001/inne/s133.js",
+  "bytes": 1457,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 134,
+  "file": "anon001/audyt/s134.js",
+  "bytes": 821,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 135,
+  "file": "anon001/audyt/s135.js",
+  "bytes": 3515,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 136,
+  "file": "anon001/inne/s136.js",
+  "bytes": 1347,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 137,
+  "file": "anon001/audyt/s137.js",
+  "bytes": 662,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 138,
+  "file": "anon001/inne/s138.js",
+  "bytes": 5551,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 139,
+  "file": "anon001/audyt/s139.js",
+  "bytes": 2676,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 140,
+  "file": "anon001/audyt/s140.js",
+  "bytes": 1032,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 141,
+  "file": "anon001/audyt/s141.js",
+  "bytes": 2660,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 142,
+  "file": "anon001/inne/s142.js",
+  "bytes": 2244,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 143,
+  "file": "anon001/audyt/s143.js",
+  "bytes": 996,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 144,
+  "file": "anon001/inne/s144.js",
+  "bytes": 2543,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 145,
+  "file": "anon001/audyt/s145.js",
+  "bytes": 836,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 146,
+  "file": "anon001/dane-kwasy-zasady/s146.js",
+  "bytes": 3294,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids",
+   "data-elements",
+   "education",
+   "nuclear"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 147,
+  "file": "anon001/audyt/s147.js",
+  "bytes": 2229,
+  "tags": [
+   "atom",
+   "audit",
+   "core",
+   "geometry"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 148,
+  "file": "anon001/audyt/s148.js",
+  "bytes": 1161,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 149,
+  "file": "anon001/dane-termo-redoks/s149.js",
+  "bytes": 6906,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 150,
+  "file": "anon001/audyt/s150.js",
+  "bytes": 1437,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 151,
+  "file": "anon001/audyt/s151.js",
+  "bytes": 1291,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 152,
+  "file": "anon001/nauka-referencje/s152.js",
+  "bytes": 2568,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 153,
+  "file": "anon001/audyt/s153.js",
+  "bytes": 1676,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 154,
+  "file": "anon001/audyt/s154.js",
+  "bytes": 1728,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 155,
+  "file": "anon001/dane-kwasy-zasady/s155.js",
+  "bytes": 2077,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "nuclear"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 156,
+  "file": "anon001/audyt/s156.js",
+  "bytes": 1194,
+  "tags": [
+   "audit",
+   "core",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 157,
+  "file": "anon001/dane-pierwiastki/s157.js",
+  "bytes": 3788,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "data-reactions"
+  ],
+  "modul": "dane-pierwiastki"
+ },
+ {
+  "num": 158,
+  "file": "anon001/audyt/s158.js",
+  "bytes": 643,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 159,
+  "file": "anon001/dane-kwasy-zasady/s159.js",
+  "bytes": 3438,
+  "tags": [
+   "audit",
+   "data-elements"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 160,
+  "file": "anon001/dane-kwasy-zasady/s160.js",
+  "bytes": 2224,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 161,
+  "file": "anon001/rdzen/s161.js",
+  "bytes": 411,
+  "tags": [
+   "audit",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 162,
+  "file": "anon001/nauka-referencje/s162.js",
+  "bytes": 5770,
+  "tags": [
+   "audit",
+   "core",
+   "data-elements",
+   "education",
+   "nuclear"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 163,
+  "file": "anon001/audyt/s163.js",
+  "bytes": 642,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 164,
+  "file": "anon001/nauka-referencje/s164.js",
+  "bytes": 4183,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 165,
+  "file": "anon001/nauka-referencje/s165.js",
+  "bytes": 3004,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 166,
+  "file": "anon001/audyt/s166.js",
+  "bytes": 749,
+  "tags": [
+   "audit",
+   "core"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 167,
+  "file": "anon001/nauka-referencje/s167.js",
+  "bytes": 2569,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 168,
+  "file": "anon001/audyt/s168.js",
+  "bytes": 793,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 169,
+  "file": "anon001/nauka-referencje/s169.js",
+  "bytes": 3730,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 170,
+  "file": "anon001/audyt/s170.js",
+  "bytes": 887,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 171,
+  "file": "anon001/nauka-referencje/s171.js",
+  "bytes": 2671,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 172,
+  "file": "anon001/audyt/s172.js",
+  "bytes": 813,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 173,
+  "file": "anon001/nauka-referencje/s173.js",
+  "bytes": 2974,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 174,
+  "file": "anon001/audyt/s174.js",
+  "bytes": 944,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 175,
+  "file": "anon001/nauka-referencje/s175.js",
+  "bytes": 1998,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 176,
+  "file": "anon001/audyt/s176.js",
+  "bytes": 896,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 177,
+  "file": "anon001/nauka-referencje/s177.js",
+  "bytes": 4582,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 178,
+  "file": "anon001/audyt/s178.js",
+  "bytes": 1132,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 179,
+  "file": "anon001/nauka-referencje/s179.js",
+  "bytes": 3202,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 180,
+  "file": "anon001/nauka-referencje/s180.js",
+  "bytes": 2786,
+  "tags": [
+   "core",
+   "thermo"
+  ],
+  "modul": "nauka-referencje"
+ },
+ {
+  "num": 181,
+  "file": "anon001/rdzen/s181.js",
+  "bytes": 634,
+  "tags": [
+   "core"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 182,
+  "file": "anon001/dane-termo-redoks/s182.js",
+  "bytes": 3747,
+  "tags": [
+   "core"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 183,
+  "file": "anon001/rdzen/s183.js",
+  "bytes": 766,
+  "tags": [
+   "core",
+   "data-acids"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 184,
+  "file": "anon001/dane-termo-redoks/s184.js",
+  "bytes": 2380,
+  "tags": [
+   "core",
+   "education"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 185,
+  "file": "anon001/dane-termo-redoks/s185.js",
+  "bytes": 1988,
+  "tags": [
+   "core"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 186,
+  "file": "anon001/dane-termo-redoks/s186.js",
+  "bytes": 3664,
+  "tags": [
+   "core"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 187,
+  "file": "anon001/edukacja/s187.js",
+  "bytes": 3511,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "electrochem",
+   "geometry",
+   "nuclear",
+   "organic",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 188,
+  "file": "anon001/dane-kwasy-zasady/s188.js",
+  "bytes": 3593,
+  "tags": [
+   "core",
+   "data-acids",
+   "education"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 189,
+  "file": "anon001/edukacja/s189.js",
+  "bytes": 9010,
+  "tags": [
+   "core",
+   "data-acids",
+   "data-hydroxides",
+   "data-oxides",
+   "data-reactions",
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 190,
+  "file": "anon001/edukacja/s190.js",
+  "bytes": 3375,
+  "tags": [
+   "core",
+   "data-hydroxides",
+   "data-oxides",
+   "education"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 191,
+  "file": "anon001/edukacja/s191.js",
+  "bytes": 7382,
+  "tags": [
+   "core",
+   "data-acids",
+   "data-elements",
+   "data-hydroxides",
+   "data-reactions",
+   "education",
+   "organic",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 192,
+  "file": "anon001/edukacja/s192.js",
+  "bytes": 12730,
+  "tags": [
+   "data-elements",
+   "data-hydroxides",
+   "data-oxides",
+   "data-reactions",
+   "education",
+   "organic",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 193,
+  "file": "anon001/edukacja/s193.js",
+  "bytes": 5342,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 194,
+  "file": "anon001/edukacja/s194.js",
+  "bytes": 7480,
+  "tags": [
+   "audit",
+   "core",
+   "data-oxides",
+   "education",
+   "nuclear",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 195,
+  "file": "anon001/edukacja/s195.js",
+  "bytes": 9338,
+  "tags": [
+   "audit",
+   "core",
+   "data-hydroxides",
+   "education",
+   "electrochem",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 196,
+  "file": "anon001/edukacja/s196.js",
+  "bytes": 8005,
+  "tags": [
+   "data-acids",
+   "data-oxides",
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 197,
+  "file": "anon001/edukacja/s197.js",
+  "bytes": 5929,
+  "tags": [
+   "core",
+   "data-acids",
+   "education",
+   "organic",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 198,
+  "file": "anon001/edukacja/s198.js",
+  "bytes": 7818,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids",
+   "data-hydroxides",
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 199,
+  "file": "anon001/edukacja/s199.js",
+  "bytes": 6440,
+  "tags": [
+   "audit",
+   "data-acids",
+   "data-hydroxides",
+   "data-oxides",
+   "data-salts",
+   "education",
+   "organic",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 200,
+  "file": "anon001/edukacja/s200.js",
+  "bytes": 34794,
+  "tags": [
+   "audit",
+   "data-acids",
+   "data-hydroxides",
+   "education",
+   "organic"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 201,
+  "file": "anon001/edukacja/s201.js",
+  "bytes": 22609,
+  "tags": [
+   "audit",
+   "data-elements",
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 202,
+  "file": "anon001/rdzen/s202.js",
+  "bytes": 4844,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 203,
+  "file": "anon001/rdzen/s203.js",
+  "bytes": 3452,
+  "tags": [
+   "education",
+   "stoich"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 204,
+  "file": "anon001/edukacja/s204.js",
+  "bytes": 6789,
+  "tags": [
+   "core",
+   "data-elements",
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 205,
+  "file": "anon001/edukacja/s205.js",
+  "bytes": 4893,
+  "tags": [
+   "education"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 206,
+  "file": "anon001/edukacja/s206.js",
+  "bytes": 3919,
+  "tags": [
+   "audit",
+   "education"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 207,
+  "file": "anon001/edukacja/s207.js",
+  "bytes": 4016,
+  "tags": [
+   "audit",
+   "data-elements",
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 208,
+  "file": "anon001/edukacja/s208.js",
+  "bytes": 1681,
+  "tags": [
+   "audit",
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 209,
+  "file": "anon001/edukacja/s209.js",
+  "bytes": 3955,
+  "tags": [
+   "audit",
+   "core",
+   "education",
+   "viz-ui"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 210,
+  "file": "anon001/edukacja/s210.js",
+  "bytes": 2559,
+  "tags": [
+   "education",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 211,
+  "file": "anon001/edukacja/s211.js",
+  "bytes": 5418,
+  "tags": [
+   "data-elements",
+   "education",
+   "geometry"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 212,
+  "file": "anon001/edukacja/s212.js",
+  "bytes": 2192,
+  "tags": [
+   "audit",
+   "education",
+   "geometry",
+   "viz-ui"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 213,
+  "file": "anon001/edukacja/s213.js",
+  "bytes": 4472,
+  "tags": [
+   "atom",
+   "audit",
+   "data-elements",
+   "education",
+   "geometry"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 214,
+  "file": "anon001/rdzen/s214.js",
+  "bytes": 5000,
+  "tags": [
+   "education",
+   "geometry",
+   "stoich"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 215,
+  "file": "anon001/audyt/s215.js",
+  "bytes": 2276,
+  "tags": [
+   "atom",
+   "audit",
+   "stoich"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 216,
+  "file": "anon001/rdzen/s216.js",
+  "bytes": 7008,
+  "tags": [
+   "atom",
+   "audit",
+   "education",
+   "geometry",
+   "nuclear",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 217,
+  "file": "anon001/rdzen/s217.js",
+  "bytes": 3339,
+  "tags": [
+   "atom",
+   "audit",
+   "education",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 218,
+  "file": "anon001/audyt/s218.js",
+  "bytes": 7508,
+  "tags": [
+   "atom",
+   "audit",
+   "data-acids",
+   "data-hydroxides",
+   "data-oxides",
+   "education",
+   "organic",
+   "stoich"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 219,
+  "file": "anon001/audyt/s219.js",
+  "bytes": 4044,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "organic",
+   "stoich"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 220,
+  "file": "anon001/rdzen/s220.js",
+  "bytes": 7065,
+  "tags": [
+   "audit",
+   "core",
+   "education",
+   "nuclear",
+   "stoich",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 221,
+  "file": "anon001/rdzen/s221.js",
+  "bytes": 5868,
+  "tags": [
+   "audit",
+   "core",
+   "education",
+   "nuclear",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 222,
+  "file": "anon001/rdzen/s222.js",
+  "bytes": 5162,
+  "tags": [
+   "audit",
+   "education",
+   "nuclear",
+   "organic",
+   "stoich"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 223,
+  "file": "anon001/rdzen/s223.js",
+  "bytes": 4541,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 224,
+  "file": "anon001/inne/s224.js",
+  "bytes": 309,
+  "tags": [
+   "education"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 225,
+  "file": "anon001/rdzen/s225.js",
+  "bytes": 8413,
+  "tags": [
+   "audit",
+   "data-elements",
+   "education",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 226,
+  "file": "anon001/rdzen/s226.js",
+  "bytes": 6180,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "stoich",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 227,
+  "file": "anon001/rdzen/s227.js",
+  "bytes": 1100,
+  "tags": [
+   "audit",
+   "education"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 228,
+  "file": "anon001/rdzen/s228.js",
+  "bytes": 1662,
+  "tags": [
+   "education"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 229,
+  "file": "anon001/rdzen/s229.js",
+  "bytes": 6331,
+  "tags": [
+   "data-acids",
+   "education"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 230,
+  "file": "anon001/rdzen/s230.js",
+  "bytes": 2830,
+  "tags": [
+   "education"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 231,
+  "file": "anon001/edukacja/s231.js",
+  "bytes": 3691,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "organic",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 232,
+  "file": "anon001/edukacja/s232.js",
+  "bytes": 3381,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "organic",
+   "stoich"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 233,
+  "file": "anon001/dane-substancje/s233.js",
+  "bytes": 2793,
+  "tags": [
+   "audit"
+  ],
+  "modul": "dane-substancje"
+ },
+ {
+  "num": 234,
+  "file": "anon001/rdzen/s234.js",
+  "bytes": 5403,
+  "tags": [
+   "education"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 235,
+  "file": "anon001/audyt/s235.js",
+  "bytes": 2591,
+  "tags": [
+   "audit",
+   "data-acids",
+   "data-hydroxides",
+   "data-oxides"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 236,
+  "file": "anon001/audyt/s236.js",
+  "bytes": 1688,
+  "tags": [
+   "data-acids",
+   "data-hydroxides",
+   "data-oxides"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 237,
+  "file": "anon001/audyt/s237.js",
+  "bytes": 935,
+  "tags": [
+   "misc"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 238,
+  "file": "anon001/audyt/s238.js",
+  "bytes": 849,
+  "tags": [
+   "organic"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 239,
+  "file": "anon001/rdzen/s239.js",
+  "bytes": 731,
+  "tags": [
+   "audit"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 240,
+  "file": "anon001/audyt/s240.js",
+  "bytes": 687,
+  "tags": [
+   "viz-ui"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 241,
+  "file": "anon001/rdzen/s241.js",
+  "bytes": 755,
+  "tags": [
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 242,
+  "file": "anon001/audyt/s242.js",
+  "bytes": 7793,
+  "tags": [
+   "atom",
+   "data-acids",
+   "data-hydroxides",
+   "data-oxides",
+   "data-salts",
+   "organic",
+   "stoich"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 243,
+  "file": "anon001/rdzen/s243.js",
+  "bytes": 4510,
+  "tags": [
+   "audit",
+   "data-acids",
+   "data-oxides",
+   "electrochem",
+   "nuclear",
+   "organic",
+   "stoich",
+   "thermo"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 244,
+  "file": "anon001/audyt/s244.js",
+  "bytes": 1474,
+  "tags": [
+   "atom",
+   "audit",
+   "education",
+   "geometry"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 245,
+  "file": "anon001/audyt/s245.js",
+  "bytes": 1432,
+  "tags": [
+   "audit",
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 246,
+  "file": "anon001/audyt/s246.js",
+  "bytes": 2016,
+  "tags": [
+   "audit",
+   "education",
+   "thermo"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 247,
+  "file": "anon001/audyt/s247.js",
+  "bytes": 2334,
+  "tags": [
+   "audit",
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 248,
+  "file": "anon001/audyt/s248.js",
+  "bytes": 1212,
+  "tags": [
+   "audit",
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 249,
+  "file": "anon001/audyt/s249.js",
+  "bytes": 1617,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 250,
+  "file": "anon001/audyt/s250.js",
+  "bytes": 1548,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "stoich"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 251,
+  "file": "anon001/audyt/s251.js",
+  "bytes": 1350,
+  "tags": [
+   "audit",
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 252,
+  "file": "anon001/audyt/s252.js",
+  "bytes": 1467,
+  "tags": [
+   "audit"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 253,
+  "file": "anon001/audyt/s253.js",
+  "bytes": 1254,
+  "tags": [
+   "audit",
+   "electrochem"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 254,
+  "file": "anon001/organiczna/s254.js",
+  "bytes": 1209,
+  "tags": [
+   "audit",
+   "data-hydroxides",
+   "data-oxides"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 255,
+  "file": "anon001/audyt/s255.js",
+  "bytes": 1406,
+  "tags": [
+   "audit",
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 256,
+  "file": "anon001/organiczna/s256.js",
+  "bytes": 1455,
+  "tags": [
+   "audit",
+   "organic"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 257,
+  "file": "anon001/organiczna/s257.js",
+  "bytes": 1621,
+  "tags": [
+   "audit",
+   "education",
+   "organic"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 258,
+  "file": "anon001/organiczna/s258.js",
+  "bytes": 1759,
+  "tags": [
+   "audit"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 259,
+  "file": "anon001/organiczna/s259.js",
+  "bytes": 1395,
+  "tags": [
+   "audit"
+  ],
+  "modul": "organiczna"
+ },
+ {
+  "num": 260,
+  "file": "anon001/audyt/s260.js",
+  "bytes": 1244,
+  "tags": [
+   "audit"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 261,
+  "file": "anon001/audyt/s261.js",
+  "bytes": 1233,
+  "tags": [
+   "audit",
+   "education"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 262,
+  "file": "anon001/audyt/s262.js",
+  "bytes": 1195,
+  "tags": [
+   "audit",
+   "organic",
+   "stoich"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 263,
+  "file": "anon001/rdzen/s263.js",
+  "bytes": 1616,
+  "tags": [
+   "audit",
+   "data-acids"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 264,
+  "file": "anon001/audyt/s264.js",
+  "bytes": 6348,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "electrochem"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 265,
+  "file": "anon001/rdzen/s265.js",
+  "bytes": 3033,
+  "tags": [
+   "stoich"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 266,
+  "file": "anon001/audyt/s266.js",
+  "bytes": 5743,
+  "tags": [
+   "audit",
+   "data-acids",
+   "education",
+   "geometry",
+   "organic",
+   "viz-ui"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 267,
+  "file": "anon001/dane-termo-redoks/s267.js",
+  "bytes": 3159,
+  "tags": [
+   "audit",
+   "electrochem"
+  ],
+  "modul": "dane-termo-redoks"
+ },
+ {
+  "num": 268,
+  "file": "anon001/dane-kwasy-zasady/s268.js",
+  "bytes": 1927,
+  "tags": [
+   "audit"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 269,
+  "file": "anon001/dane-kwasy-zasady/s269.js",
+  "bytes": 4209,
+  "tags": [
+   "audit"
+  ],
+  "modul": "dane-kwasy-zasady"
+ },
+ {
+  "num": 270,
+  "file": "anon001/rdzen/s270.js",
+  "bytes": 18949,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids",
+   "data-hydroxides",
+   "education",
+   "electrochem",
+   "nuclear",
+   "stoich",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 271,
+  "file": "anon001/audyt/s271.js",
+  "bytes": 3698,
+  "tags": [
+   "audit",
+   "core",
+   "education",
+   "nuclear"
+  ],
+  "modul": "audyt"
+ },
+ {
+  "num": 272,
+  "file": "anon001/rdzen/s272.js",
+  "bytes": 1753,
+  "tags": [
+   "audit",
+   "core",
+   "editor",
+   "nuclear",
+   "viz-ui"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 273,
+  "file": "anon001/rdzen/s273.js",
+  "bytes": 428,
+  "tags": [
+   "core"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 274,
+  "file": "anon001/edukacja/s274.js",
+  "bytes": 9712,
+  "tags": [
+   "audit",
+   "core",
+   "data-acids",
+   "data-elements",
+   "data-hydroxides",
+   "data-oxides",
+   "education",
+   "stoich",
+   "viz-ui"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 275,
+  "file": "anon001/inne/s275.js",
+  "bytes": 369,
+  "tags": [
+   "core"
+  ],
+  "modul": "inne"
+ },
+ {
+  "num": 276,
+  "file": "anon001/rdzen/s276.js",
+  "bytes": 1804,
+  "tags": [
+   "core"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 277,
+  "file": "anon001/rdzen/s277.js",
+  "bytes": 3248,
+  "tags": [
+   "core"
+  ],
+  "modul": "rdzen"
+ },
+ {
+  "num": 278,
+  "file": "anon001/edukacja/s278.js",
+  "bytes": 7175,
+  "tags": [
+   "data-acids",
+   "education"
+  ],
+  "modul": "edukacja"
+ },
+ {
+  "num": 279,
+  "file": "anon001/edukacja/s279.js",
+  "bytes": 678,
+  "tags": [
+   "data-acids"
+  ],
+  "modul": "edukacja"
+ }
+]

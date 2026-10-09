@@ -1,0 +1,1 @@
+{"name":"che-tools","private":true,"type":"module","dependencies":{"acorn":"^8.12.0","acorn-walk":"^8.3.0"}}

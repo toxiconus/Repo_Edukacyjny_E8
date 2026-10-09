@@ -1,0 +1,1 @@
+P('feoh3Hcl',{n:'Fe(OH)₃ + HCl',solid:{col:'ppt-fe-oh-3',eq:4,end:0,t:'powder',shape:'powder'},l1:'ion-fe3',out:['barwa'],why:'Brunatny osad znika, roztwór żółtobrunatny (Fe³⁺).'});

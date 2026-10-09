@@ -1,0 +1,2 @@
+(function(){var n=document.documentElement.getAttribute('data-theme')==='dark';
+document.querySelectorAll('#che-landing [data-theme-opt]').forEach(function(b){b.classList.toggle('on',b.dataset.themeOpt===(n?'night':'day'))});})();

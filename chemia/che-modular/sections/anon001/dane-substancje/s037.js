@@ -1,0 +1,43 @@
+
+
+try {
+
+(function(g){
+'use strict';
+const C = g.CHE = g.CHE || {};
+const D = C.DATA = C.DATA || {};
+
+D.BOND_TYPES = {
+  single:{ order:1, kind:'covalent', electronPairCount:1, label:'pojedyncze' },
+  double:{ order:2, kind:'covalent', electronPairCount:2, label:'podwójne' },
+  triple:{ order:3, kind:'covalent', electronPairCount:3, label:'potrójne' },
+  aromatic:{ order:1.5, kind:'covalent', electronPairCount:null, label:'aromatyczne' },
+  coordinate:{ order:1, kind:'coordinate', electronPairCount:1, label:'koordynacyjne' }
+};
+
+D.FUNCTIONAL_GROUPS = {
+  hydroxyl:{type:'hydroxyl', name:{pl:'grupa hydroksylowa',en:'hydroxyl group'}, pattern:'R-O-H', atomsPerMatch:3, tags:['alcohol','phenol']},
+  carbonyl:{type:'carbonyl', name:{pl:'grupa karbonylowa',en:'carbonyl group'}, pattern:'C=O', atomsPerMatch:2, tags:['aldehyde','ketone']},
+  aldehyde:{type:'aldehyde', name:{pl:'grupa aldehydowa',en:'aldehyde group'}, pattern:'R-C(=O)-H', atomsPerMatch:3, tags:['carbonyl']},
+  ketone:{type:'ketone', name:{pl:'grupa ketonowa',en:'ketone group'}, pattern:'R-C(=O)-R', atomsPerMatch:3, tags:['carbonyl']},
+  carboxyl:{type:'carboxyl', name:{pl:'grupa karboksylowa',en:'carboxyl group'}, pattern:'C(=O)-O-H', atomsPerMatch:4, tags:['acid','carbonyl','hydroxyl']},
+  ester:{type:'ester', name:{pl:'grupa estrowa',en:'ester group'}, pattern:'C(=O)-O-R', atomsPerMatch:4, tags:['carbonyl']},
+  ether:{type:'ether', name:{pl:'grupa eterowa',en:'ether group'}, pattern:'R-O-R', atomsPerMatch:3, tags:[]},
+  amine:{type:'amine', name:{pl:'grupa aminowa',en:'amine group'}, pattern:'R-NH2/R2NH/R3N', atomsPerMatch:null, tags:['basic']},
+  amide:{type:'amide', name:{pl:'grupa amidowa',en:'amide group'}, pattern:'C(=O)-N', atomsPerMatch:3, tags:['carbonyl','nitrogen']},
+  nitro:{type:'nitro', name:{pl:'grupa nitrowa',en:'nitro group'}, pattern:'N(=O)-O', atomsPerMatch:3, tags:['nitrogen','oxygen']},
+  halogen:{type:'halogen', name:{pl:'atom/grupa halogenowa',en:'halo group'}, pattern:'R-X', atomsPerMatch:2, tags:['substituent']},
+  sulfhydryl:{type:'sulfhydryl', name:{pl:'grupa sulfhydrylowa',en:'sulfhydryl group'}, pattern:'R-S-H', atomsPerMatch:3, tags:['thiol']},
+  phosphate:{type:'phosphate', name:{pl:'grupa fosforanowa',en:'phosphate group'}, pattern:'P(=O)(O)-O', atomsPerMatch:null, tags:['phosphorus','acid']},
+  alkene:{type:'alkene', name:{pl:'grupa alkenowa',en:'alkene'}, pattern:'C=C', atomsPerMatch:2, tags:['unsaturated']},
+  alkyne:{type:'alkyne', name:{pl:'grupa alkinowa',en:'alkyne'}, pattern:'C≡C', atomsPerMatch:2, tags:['unsaturated']},
+  aromatic:{type:'aromatic', name:{pl:'układ aromatyczny',en:'aromatic system'}, pattern:'aromatic ring/system', atomsPerMatch:null, tags:['aromatic']}
+};
+
+C.deepFreeze?.(D.BOND_TYPES);
+C.deepFreeze?.(D.FUNCTIONAL_GROUPS);
+})(window);
+
+} catch (err) {
+  try { console.warn('[CHE module 37]', err && err.message ? err.message : err); } catch(_){}
+}

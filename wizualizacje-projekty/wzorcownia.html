@@ -1,0 +1,664 @@
+<meta charset="utf-8">
+<title>Wzorcownia wizualizacji E8</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Układ: jedna kolumna kart-przyrządów, pasek przedmiotów u góry; kolor przedmiotu oznacza kartę. Tylko motyw dzienny (użytkownik nie używa trybu nocnego). */
+:root{
+  color-scheme:light;
+  --paper:#f3f6f5; --card:#ffffff; --ink:#1a2528; --muted:#5a6a6d; --line:#d3dddb; --soft:#e8efed;
+  --che:#0d6b70; --bio:#3f7a28; --fiz:#3b4ea0;
+  --pos:#2a62b5; --neg:#c03d2c; --ok:#2b7a4b; --bad:#b23b2a; --warn:#b07610; --glow:#f5c542;
+  --f-disp:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:15px/1.5 var(--f-body);margin:0}
+.wrap{max-width:780px;margin:0 auto;padding-inline:16px;padding-block:8px 48px}
+h1,h2,h3{font-family:var(--f-disp);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:1.75rem;font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.3rem;font-weight:700}
+h3{font-size:1.08rem;font-weight:700}
+p{margin:0}
+.lead{color:var(--muted);max-width:62ch}
+header.top{display:grid;gap:8px;padding-block:20px 12px}
+nav.subj{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);display:flex;gap:8px;flex-wrap:wrap;padding-block:8px;border-bottom:1px solid var(--line)}
+nav.subj a{font:600 .82rem var(--f-mono);text-decoration:none;color:var(--ink);padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
+nav.subj a[data-s=che]{border-color:var(--che);color:var(--che)}
+nav.subj a[data-s=bio]{border-color:var(--bio);color:var(--bio)}
+nav.subj a[data-s=fiz]{border-color:var(--fiz);color:var(--fiz)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;color:var(--muted)}
+section.subject{display:grid;gap:18px;padding-block:24px 4px}
+section.subject>h2{display:flex;align-items:baseline;gap:10px}
+section.subject>h2 small{font:500 .8rem var(--f-mono);color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:12px;min-width:0;border-top:4px solid var(--c,var(--che))}
+.card.che{--c:var(--che)} .card.bio{--c:var(--bio)} .card.fiz{--c:var(--fiz)}
+.card-head{display:grid;gap:4px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.code{font:600 .78rem var(--f-mono);color:#fff;background:var(--c);padding:2px 7px;border-radius:4px}
+.tag{font:500 .75rem var(--f-mono);color:var(--c);border:1px solid var(--c);padding:1px 6px;border-radius:4px}
+.card-head p{color:var(--muted);font-size:.92rem}
+svg.viz{width:100%;height:auto;display:block;background:#fbfcfc;border:1px solid var(--soft);border-radius:8px}
+svg text{font-family:var(--f-body)}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg button,.btn{font:600 .85rem var(--f-body);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 11px;border-radius:7px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--c);border-color:var(--c);color:#fff}
+.btn:hover,.seg button:hover{border-color:var(--c)}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--c,var(--che));outline-offset:2px}
+label.chk{display:inline-flex;gap:5px;align-items:center;font-size:.88rem}
+select,input[type=range]{font:inherit;accent-color:var(--c)}
+select{border:1px solid var(--line);border-radius:7px;padding:5px 8px;background:var(--card);color:var(--ink)}
+.out{background:var(--soft);border-radius:8px;padding:10px 12px;font-size:.93rem;display:grid;gap:4px}
+.out b{font-family:var(--f-disp)}
+details{border-top:1px dashed var(--line);padding-top:8px}
+summary{cursor:pointer;font-weight:700;color:var(--c);font-size:.9rem}
+details>div{padding-top:6px;color:var(--ink);font-size:.92rem;display:grid;gap:6px;max-width:68ch}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:tabular-nums}
+th,td{border-bottom:1px solid var(--line);padding:6px 6px;text-align:left;vertical-align:top}
+th{font-weight:700;font-size:.82rem;color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+.okc{color:var(--ok);font-weight:700} .badc{color:var(--bad);font-weight:700}
+.chip{display:inline-block;font:600 .8rem var(--f-mono);padding:2px 8px;border-radius:999px}
+.chip.ok{background:#dcefe3;color:var(--ok)} .chip.bad{background:#f6dfda;color:var(--bad)} .chip.warn{background:#f6ecd5;color:var(--warn)}
+/* F09 */
+.f09 th button{all:unset;cursor:pointer;color:var(--che);font-weight:700;border-bottom:1px dotted var(--che)}
+.f09 th button[aria-pressed=true]{color:#fff;background:var(--che);border-radius:4px;padding:0 4px;border-bottom:0}
+.f09 td.hl,.f09 th.hl{background:#e3f1f1}
+/* F17 */
+.eq{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-family:var(--f-mono);font-size:1rem}
+.sp{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--line);border-radius:8px;padding:3px 4px;background:#fbfcfc}
+.sp button{all:unset;cursor:pointer;width:24px;height:24px;text-align:center;border-radius:5px;background:var(--soft);font-weight:700}
+.sp .k{min-width:16px;text-align:center;font-weight:700;color:var(--che)}
+.sp .f{padding-inline:3px}
+.tally{display:flex;flex-wrap:wrap;gap:2px;max-width:150px}
+.tally i{width:9px;height:9px;border-radius:2px;display:inline-block}
+/* BIO kod */
+.codons{display:flex;flex-wrap:wrap;gap:6px}
+.cod{border:1px solid var(--line);border-radius:7px;padding:4px;display:grid;gap:2px;font-family:var(--f-mono);font-size:.9rem;text-align:center;min-width:76px}
+.cod .row{display:flex;justify-content:center;gap:1px}
+.cod .row span{width:22px;display:inline-block}
+.cod .row.k span{cursor:pointer;border-radius:4px;background:var(--soft)}
+.cod .row.k span.mut{background:var(--warn);color:#fff}
+.cod .row.m{color:var(--bio);font-weight:600}
+.cod .aa{font-weight:700;border-top:1px solid var(--line);padding-top:2px}
+.cod.chg{border-color:var(--warn)} .cod.stop .aa{color:var(--bad)} .cod.off{opacity:.45}
+.rowkey{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;font-size:.82rem;color:var(--muted)}
+.rowkey b{font-family:var(--f-mono);color:var(--ink)}
+/* Punnett */
+.pun table{max-width:420px}
+.pun td,.pun th{text-align:center;border:1px solid var(--line)}
+.pun td{font-family:var(--f-mono);font-weight:600;padding:8px 4px}
+.pun td small{display:block;font-family:var(--f-body);font-weight:400;font-size:.75rem;color:var(--muted)}
+.bars{display:grid;gap:4px}
+.bar{display:grid;grid-template-columns:minmax(0,9.5em) 1fr 3.2em;gap:8px;align-items:center;font-size:.86rem}
+.bar .t{height:12px;background:var(--soft);border-radius:3px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--bio)}
+.bar .v{font-variant-numeric:tabular-nums;text-align:right}
+footer{color:var(--muted);font-size:.85rem;padding-block:24px 0}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <h1>Wzorcownia wizualizacji</h1>
+  <p class="lead">Prototypy dla lekcji, które nie mają jeszcze grafik: chemia F09–F17, biologia L005–L041, fizyka FIZ-02. Każdy rysunek jest statyczny i reaguje na kliknięcie; wyjaśnienie merytoryczne jest pod przyciskiem „Jak czytać”. Plan wszystkich lekcji jest w <span class="mono">wizualizacje-projekty/PROJEKT.md</span>.</p>
+  <div class="legend"><span><b>NOWY</b> — komponent do wpięcia w silnik</span><span><b>dane</b> — liczby podręcznikowe, do weryfikacji</span></div>
+</header>
+<nav class="subj" aria-label="Przedmioty">
+  <a data-s="che" href="#chemia">Chemia · 4</a>
+  <a data-s="bio" href="#biologia">Biologia · 4</a>
+  <a data-s="fiz" href="#fizyka">Fizyka · 1</a>
+</nav>
+
+<section class="subject" id="chemia">
+  <h2>Chemia <small>blok F · fundamenty</small></h2>
+
+  <article class="card che" id="f09">
+    <div class="card-head">
+      <div class="meta"><span class="code">F09</span><span class="tag">NOWY · V008</span></div>
+      <h3>Ładunek, wartościowość, stopień utlenienia</h3>
+      <p>Ta sama drobina, trzy różne pytania. Wybierz drobinę, kliknij nagłówek kolumny.</p>
+    </div>
+    <div class="controls"><div class="seg" id="f09-sel" role="group" aria-label="Drobina"></div></div>
+    <div class="tbl f09"><table id="f09-tab"></table></div>
+    <div class="out" id="f09-out"></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Trzy liczby czasem wyglądają podobnie (NaCl, H₂O), ale odpowiadają na różne pytania. Najlepiej to widać na O₂, H₂O₂ i CH₄.</p>
+      <p>Ładunek ma jon (drobina), wartościowość mówi o liczbie wiązań atomu, stopień utlenienia jest umownym ładunkiem przy założeniu, że wszystkie wiązania są jonowe.</p>
+    </div></details>
+  </article>
+
+  <article class="card che" id="f10">
+    <div class="card-head">
+      <div class="meta"><span class="code">F10</span><span class="tag">NOWY · V009</span></div>
+      <h3>Energia dwóch atomów wodoru</h3>
+      <p>Przesuń atomy suwakiem. Kropka na wykresie pokazuje energię układu.</p>
+    </div>
+    <svg class="viz" id="f10-svg" viewBox="0 0 360 300" role="img" aria-label="Dwa atomy wodoru i wykres energii od odległości"></svg>
+    <div class="controls"><label for="f10-r" class="chk">Odległość jąder</label><input type="range" id="f10-r" min="30" max="300" value="160" style="flex:1;min-width:140px"></div>
+    <div class="out" id="f10-out"></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Wykres jest schematyczny (krzywa Morse’a dla H₂). Dla innych wiązań minimum leży w innym miejscu i na innej głębokości.</p>
+      <p>Głębokość minimum to energia wiązania: aby rozerwać wiązania w 1 molu H₂, trzeba dostarczyć ok. 436 kJ. Położenie minimum to długość wiązania, ok. 74 pm (dane do weryfikacji).</p>
+    </div></details>
+  </article>
+
+  <article class="card che" id="f15">
+    <div class="card-head">
+      <div class="meta"><span class="code">F15</span><span class="tag">NOWY · V012</span></div>
+      <h3>Wektory dipola i polarność cząsteczki</h3>
+      <p>Polarność wiązań to jedno, polarność cząsteczki to suma wektorów. Włączaj warstwy po kolei.</p>
+    </div>
+    <div class="controls"><div class="seg" id="f15-sel" role="group" aria-label="Cząsteczka"></div></div>
+    <div class="controls" id="f15-lay"></div>
+    <svg class="viz" id="f15-svg" viewBox="0 0 360 250" role="img" aria-label="Cząsteczka z wektorami dipola"></svg>
+    <div class="out" id="f15-out"></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Strzałka z kreską na początku biegnie od atomu δ+ do atomu δ− (bardziej elektroujemnego). Długość strzałki rośnie z różnicą elektroujemności ΔEN.</p>
+      <p>Geometria pochodzi z F14 (VSEPR); tu jest tylko rysowana. Elektroujemność wg Paulinga: H 2,20; C 2,55; N 3,04; Cl 3,16; O 3,44 (dane do weryfikacji). Wolne pary pokazano kropkami.</p>
+      <p>W fizyce moment dipolowy rysuje się od ładunku ujemnego do dodatniego. W chemii szkolnej przyjęto strzałkę wskazującą δ−.</p>
+    </div></details>
+  </article>
+
+  <article class="card che" id="f17">
+    <div class="card-head">
+      <div class="meta"><span class="code">F17</span><span class="tag">NOWY · V015</span></div>
+      <h3>Bilans równania reakcji</h3>
+      <p>Zmieniasz tylko współczynniki. Wzory są stałe — zmiana indeksu to inna substancja.</p>
+    </div>
+    <div class="controls"><select id="f17-sel" aria-label="Równanie"></select><label class="chk"><input type="checkbox" id="f17-exp"> tryb ekspercki</label></div>
+    <div class="eq" id="f17-eq"></div>
+    <div class="tbl"><table id="f17-tab"></table></div>
+    <div class="out" id="f17-out"></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Równanie jest poprawne, gdy po obu stronach jest tyle samo atomów każdego pierwiastka i taki sam łączny ładunek. Równanie z jonami (Cu + Ag⁺) potrafi mieć zgodne atomy, a niezgodny ładunek.</p>
+      <p>Do obliczeń stechiometrycznych bierzemy najmniejsze całkowite współczynniki: stosunek współczynników to stosunek liczby moli.</p>
+    </div></details>
+  </article>
+</section>
+
+<section class="subject" id="biologia">
+  <h2>Biologia <small>genetyka · komórka · ekologia</small></h2>
+
+  <article class="card bio" id="kod">
+    <div class="card-head">
+      <div class="meta"><span class="code">L011 · L020</span><span class="tag">NOWY · kod-genetyczny</span></div>
+      <h3>Od DNA do białka</h3>
+      <p>Kliknij zasadę w nici kodującej, aby wprowadzić mutację punktową.</p>
+    </div>
+    <div class="rowkey"><b>1</b><span>nić kodująca DNA 5′→3′ (klikalna)</span><b>2</b><span>nić matrycowa DNA 3′→5′</span><b>3</b><span>mRNA 5′→3′</span><b>4</b><span>aminokwas</span></div>
+    <div class="codons" id="kod-box"></div>
+    <div class="controls"><button class="btn" id="kod-reset" type="button">Przywróć sekwencję</button></div>
+    <div class="out" id="kod-out"></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Transkrypcja odczytuje nić matrycową, więc mRNA ma tę samą kolejność co nić kodująca, tylko z U zamiast T. Rybosom czyta mRNA trójkami (kodonami) od kodonu START AUG do kodonu STOP.</p>
+      <p>Mutacja cicha nie zmienia aminokwasu (kod jest zdegenerowany), mutacja zmiany sensu daje inny aminokwas, mutacja nonsensowna tworzy przedwczesny STOP.</p>
+    </div></details>
+  </article>
+
+  <article class="card bio pun" id="pun">
+    <div class="card-head">
+      <div class="meta"><span class="code">L017 · L018 · L019</span><span class="tag">NOWY · punnett</span></div>
+      <h3>Krzyżówka genetyczna</h3>
+      <p>Wybierz rodzaj cechy i genotypy rodziców.</p>
+    </div>
+    <div class="controls"><div class="seg" id="pun-mode" role="group" aria-label="Rodzaj cechy"></div></div>
+    <div class="controls"><label class="chk" for="pun-m">matka</label><select id="pun-m"></select><label class="chk" for="pun-f">ojciec</label><select id="pun-f"></select></div>
+    <div class="tbl"><table id="pun-tab"></table></div>
+    <div class="out" id="pun-out"></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Każdy rodzic przekazuje jeden allel z pary (gameta). Krzyżówka pokazuje prawdopodobieństwo, a nie dokładną liczbę dzieci: przy czworgu dzieci proporcje mogą wyjść inaczej.</p>
+      <p id="pun-note"></p>
+    </div></details>
+  </article>
+
+  <article class="card bio" id="tra">
+    <div class="card-head">
+      <div class="meta"><span class="code">L005</span><span class="tag">NOWY · transport-blona</span></div>
+      <h3>Jak substancje przechodzą przez błonę</h3>
+      <p>Kliknij jeden z czterech odcinków błony.</p>
+    </div>
+    <svg class="viz" id="tra-svg" viewBox="0 0 360 270" role="img" aria-label="Przekrój błony komórkowej z czterema sposobami transportu"></svg>
+    <div class="out" id="tra-out"></div>
+    <div class="tbl"><table id="tra-tab"></table></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Kropki pokazują stężenie: więcej kropek po jednej stronie to wyższe stężenie. Dyfuzja i osmoza zachodzą samorzutnie zgodnie z gradientem; transport aktywny przenosi cząsteczki wbrew gradientowi i zużywa energię z ATP.</p>
+    </div></details>
+  </article>
+
+  <article class="card bio" id="sie">
+    <div class="card-head">
+      <div class="meta"><span class="code">L041 · L042</span><span class="tag">NOWY · siec-troficzna</span></div>
+      <h3>Sieć troficzna lasu</h3>
+      <p>Kliknij gatunek. W trybie „usuń gatunek” zobaczysz skutki jego zniknięcia.</p>
+    </div>
+    <div class="controls"><div class="seg" id="sie-mode" role="group" aria-label="Tryb"></div><button class="btn" id="sie-reset" type="button">Przywróć sieć</button></div>
+    <svg class="viz" id="sie-svg" viewBox="0 0 360 350" role="img" aria-label="Sieć troficzna lasu"></svg>
+    <div class="out" id="sie-out"></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Strzałka biegnie od zjadanego do zjadającego, czyli w kierunku przepływu materii i energii. Jeden gatunek może być na kilku poziomach troficznych naraz (puszczyk je mysz i sikorę).</p>
+      <p>Destruenci (grzyby, bakterie) rozkładają szczątki wszystkich organizmów; dla czytelności nie rysujemy do nich strzałek.</p>
+    </div></details>
+  </article>
+</section>
+
+<section class="subject" id="fizyka">
+  <h2>Fizyka <small>propozycja FIZ-02 · prąd elektryczny</small></h2>
+  <article class="card fiz" id="obw">
+    <div class="card-head">
+      <div class="meta"><span class="code">FIZ-02</span><span class="tag">NOWY · obwod</span></div>
+      <h3>Obwód z dwiema żarówkami</h3>
+      <p>Połącz żarówki szeregowo albo równolegle, zmień napięcie i opory, otwórz wyłącznik.</p>
+    </div>
+    <div class="controls"><div class="seg" id="obw-mode" role="group" aria-label="Połączenie"></div><div class="seg" id="obw-dir" role="group" aria-label="Strzałki"></div></div>
+    <svg class="viz" id="obw-svg" viewBox="0 0 360 230" role="img" aria-label="Schemat obwodu elektrycznego"></svg>
+    <div class="controls">
+      <label class="chk" for="obw-u">U</label><select id="obw-u"></select>
+      <label class="chk" for="obw-r1">R₁</label><input type="range" id="obw-r1" min="2" max="20" value="6" style="width:110px">
+      <label class="chk" for="obw-r2">R₂</label><input type="range" id="obw-r2" min="2" max="20" value="12" style="width:110px">
+      <label class="chk"><input type="checkbox" id="obw-sw" checked> wyłącznik zamknięty</label>
+    </div>
+    <div class="tbl"><table id="obw-tab"></table></div>
+    <details><summary>Jak czytać</summary><div>
+      <p>Szeregowo: przez obie żarówki płynie ten sam prąd, napięcia się sumują. Równolegle: na obu żarówkach jest to samo napięcie, prądy się sumują.</p>
+      <p>Kierunek umowny prądu: od bieguna + do −. Elektrony w przewodzie płyną odwrotnie. Żarówki traktujemy jak stałe opory; prawdziwa żarówka ma większy opór, gdy jest gorąca.</p>
+    </div></details>
+  </article>
+</section>
+
+<footer>Prototypy na własnych danych. Przy wpinaniu do silnika CHE i bio-viz dane pochodzą z danych silnika; liczby do weryfikacji.</footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+var NS="http://www.w3.org/2000/svg";
+function $(s){return document.querySelector(s);}
+function S(tag,a,txt){var e=document.createElementNS(NS,tag);if(a)for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;return e;}
+function H(tag,a,html){var e=document.createElement(tag);if(a)for(var k in a){if(k==="text")e.textContent=a[k];else e.setAttribute(k,a[k]);}if(html!=null)e.innerHTML=html;return e;}
+function clear(e){while(e.firstChild)e.removeChild(e.firstChild);}
+function pl(x,d){return x.toLocaleString("pl-PL",{minimumFractionDigits:d,maximumFractionDigits:d});}
+function seg(box,items,cur,cb){clear(box);items.forEach(function(it){var b=H("button",{type:"button","aria-pressed":String(it[0]===cur)});b.textContent=it[1];b.onclick=function(){cb(it[0]);};box.appendChild(b);});}
+var ROM=["0","I","II","III","IV","V","VI","VII","VIII"];
+function stTxt(v){return v===0?"0":(v>0?"+":"−")+ROM[Math.abs(v)];}
+var MINUS="−";
+
+/* ============ F09 ============ */
+var F09={
+ H2O:{n:"H₂O",ion:false,q:0,at:[["H",2,null,1,1],["O",1,null,2,-2]],u:"Wartościowość i stopień utlenienia mają tu tę samą cyfrę, ale stopień utlenienia ma znak. Ładunku nie ma żaden atom: cząsteczka jest obojętna."},
+ O2:{n:"O₂",ion:false,q:0,at:[["O",2,null,2,0]],u:"Pierwiastek: stopień utlenienia 0, choć każdy atom tlenu tworzy dwa wiązania (wartościowość II)."},
+ H2O2:{n:"H₂O₂",ion:false,q:0,at:[["H",2,null,1,1],["O",2,null,2,-1]],u:"Nadtlenek: tlen ma wartościowość II (H–O–O–H), ale stopień utlenienia −I."},
+ CH4:{n:"CH₄",ion:false,q:0,at:[["C",1,null,4,-4],["H",4,null,1,1]],u:"Węgiel: wartościowość IV i stopień utlenienia −IV. Ta sama cyfra, przeciwne znaczenie."},
+ CO2:{n:"CO₂",ion:false,q:0,at:[["C",1,null,4,4],["O",2,null,2,-2]],u:"Węgiel +IV: elektrony wiązań liczymy przy bardziej elektroujemnym tlenie."},
+ NaCl:{n:"NaCl",ion:true,q:0,at:[["Na",1,1,1,1],["Cl",1,-1,1,-1]],u:"Związek jonowy: ładunek jonu, wartościowość i stopień utlenienia pokrywają się liczbowo."},
+ Fe2O3:{n:"Fe₂O₃",ion:true,q:0,at:[["Fe",2,3,3,3],["O",3,-2,2,-2]],u:"Kationy Fe³⁺ i aniony O²⁻: suma ładunków 2·(3+) + 3·(2−) = 0."},
+ SO4:{n:"SO₄²⁻",ion:false,q:-2,at:[["S",1,null,6,6],["O",4,null,2,-2]],u:"Jon wieloatomowy: ładunek 2− ma cały jon, nie pojedynczy atom. Suma stopni utlenienia równa się ładunkowi jonu."}
+};
+var F09D={
+ lad:["Ładunek","Ile ładunków elementarnych ma drobina (jon). Liczymy go z protonów i elektronów: ładunek = p − e. Atom w obojętnej cząsteczce nie ma ładunku.",["Czy drobina jest jonem?","Jon prosty: ładunek z położenia w układzie (gr. 1 → 1+, gr. 2 → 2+, gr. 16 → 2−, gr. 17 → 1−).","Jon złożony: ładunek ma cały jon."]],
+ wart:["Wartościowość","Liczba wiązań, które tworzy atom (w związku jonowym: liczba oddanych lub przyjętych elektronów). Bez znaku, cyfrą rzymską.",["Narysuj wzór kreskowy.","Policz kreski wychodzące z atomu (wiązanie podwójne = 2).","Zapisz cyfrą rzymską."]],
+ st:["Stopień utlenienia","Umowny ładunek atomu, gdyby wszystkie wiązania były jonowe: elektrony wiązania oddajemy atomowi bardziej elektroujemnemu.",["Pierwiastek wolny → 0.","F zawsze −I; O zwykle −II (w nadtlenkach −I); H zwykle +I (w wodorkach metali −I).","Suma stopni utlenienia = ładunek drobiny; policz niewiadomą."]]
+};
+var f09={k:"H2O",col:"st"};
+function f09draw(){
+ var d=F09[f09.k],t=$("#f09-tab");clear(t);
+ var hr=H("tr");hr.appendChild(H("th",{text:"Atom"}));
+ [["lad","Ładunek"],["wart","Wartościowość"],["st","Stopień utlenienia"]].forEach(function(c){var th=H("th");if(c[0]===f09.col)th.className="hl";var b=H("button",{type:"button","aria-pressed":String(c[0]===f09.col)});b.textContent=c[1];b.onclick=function(){f09.col=c[0];f09draw();};th.appendChild(b);hr.appendChild(th);});
+ t.appendChild(hr);
+ d.at.forEach(function(a){var tr=H("tr");
+   tr.appendChild(H("td",{"class":"mono",text:a[0]+(a[1]>1?" (×"+a[1]+")":"")}));
+   var lad=a[2]!=null?(Math.abs(a[2])+(a[2]>0?"+":MINUS)):(d.q!==0?"— (cały jon: "+Math.abs(d.q)+MINUS+")":"brak");
+   var cells=[["lad",lad],["wart",ROM[a[3]]],["st",stTxt(a[4])]];
+   cells.forEach(function(c){var td=H("td",{"class":"mono"+(c[0]===f09.col?" hl":""),text:c[1]});tr.appendChild(td);});
+   t.appendChild(tr);});
+ var sum=0,parts=[];d.at.forEach(function(a){sum+=a[1]*a[4];parts.push(a[1]+"·("+stTxt(a[4])+")");});
+ var D=F09D[f09.col];
+ $("#f09-out").innerHTML="<b>"+D[0]+"</b><span>"+D[1]+"</span><span>Algorytm: "+D[2].map(function(x,i){return (i+1)+". "+x;}).join(" ")+"</span>"+
+  "<span>Kontrola: "+parts.join(" + ")+" = "+(sum===0?"0":(sum>0?"+":MINUS)+Math.abs(sum))+" = ładunek drobiny "+(sum===d.q?'<span class="okc">✓</span>':'<span class="badc">✗</span>')+"</span>"+
+  "<span><b>"+d.n+":</b> "+d.u+"</span>";
+ seg($("#f09-sel"),Object.keys(F09).map(function(k){return [k,F09[k].n];}),f09.k,function(k){f09.k=k;f09draw();});
+}
+f09draw();
+
+/* ============ F10 ============ */
+(function(){
+ var svg=$("#f10-svg"),De=436,re=74,a=0.0194;
+ function E(r){var x=1-Math.exp(-a*(r-re));return De*x*x-De;}
+ var X0=46,X1=345,Y0=112,Y1=282,EMAX=300,EMIN=-500;
+ function px(r){return X0+(r-30)/(300-30)*(X1-X0);}
+ function py(e){return Y0+(EMAX-e)/(EMAX-EMIN)*(Y1-Y0);}
+ var defs=S("defs");
+ var g=S("radialGradient",{id:"f10c"});g.appendChild(S("stop",{offset:"0","stop-color":"#5aa6ad","stop-opacity":".55"}));g.appendChild(S("stop",{offset:"1","stop-color":"#5aa6ad","stop-opacity":"0"}));defs.appendChild(g);
+ var cp=S("clipPath",{id:"f10clip"});cp.appendChild(S("rect",{x:X0,y:Y0,width:X1-X0,height:Y1-Y0}));defs.appendChild(cp);
+ var mk=S("marker",{id:"f10ar",viewBox:"0 0 10 10",refX:"8",refY:"5",markerWidth:"6",markerHeight:"6",orient:"auto-start-reverse"});mk.appendChild(S("path",{d:"M0,0L10,5L0,10z",fill:"#1a2528"}));defs.appendChild(mk);
+ svg.appendChild(defs);
+ svg.appendChild(S("text",{x:12,y:18,"font-size":"11",fill:"#5a6a6d"},"model: dwa atomy H"));
+ svg.appendChild(S("line",{x1:10,y1:96,x2:350,y2:96,stroke:"#d3dddb"}));
+ // axes
+ for(var e=-400;e<=200;e+=200){svg.appendChild(S("line",{x1:X0,x2:X1,y1:py(e),y2:py(e),stroke:e===0?"#9fb0ad":"#e8efed"}));svg.appendChild(S("text",{x:X0-4,y:py(e)+4,"text-anchor":"end","font-size":"10",fill:"#5a6a6d"},e===0?"0":(e<0?MINUS+(-e):e)));}
+ for(var r=50;r<=300;r+=50){svg.appendChild(S("line",{x1:px(r),x2:px(r),y1:Y1,y2:Y1+4,stroke:"#5a6a6d"}));svg.appendChild(S("text",{x:px(r),y:Y1+15,"text-anchor":"middle","font-size":"10",fill:"#5a6a6d"},r));}
+ svg.appendChild(S("line",{x1:X0,x2:X1,y1:Y1,y2:Y1,stroke:"#5a6a6d"}));
+ svg.appendChild(S("text",{x:X1,y:Y1-4,"text-anchor":"end","font-size":"10",fill:"#5a6a6d"},"r / pm"));
+ svg.appendChild(S("text",{x:X0+4,y:Y0+10,"font-size":"10",fill:"#5a6a6d"},"E / kJ·mol⁻¹"));
+ var dpath="";for(var rr=30;rr<=300;rr+=2){dpath+=(rr===30?"M":"L")+px(rr).toFixed(1)+","+py(Math.min(E(rr),EMAX+40)).toFixed(1);}
+ svg.appendChild(S("path",{d:dpath,fill:"none",stroke:"#0d6b70","stroke-width":"2.4","clip-path":"url(#f10clip)"}));
+ svg.appendChild(S("line",{x1:px(re),x2:px(re),y1:py(-De),y2:Y1,stroke:"#0d6b70","stroke-dasharray":"3 3"}));
+ svg.appendChild(S("line",{x1:X0,x2:px(re),y1:py(-De),y2:py(-De),stroke:"#0d6b70","stroke-dasharray":"3 3"}));
+ svg.appendChild(S("text",{x:px(re)+6,y:py(-De)+4,"font-size":"10",fill:"#0d6b70","font-weight":"700"},"minimum: 74 pm, "+MINUS+"436"));
+ var dyn=S("g");svg.appendChild(dyn);
+ function draw(){
+  var r=+$("#f10-r").value,en=E(r);clear(dyn);
+  var sep=r*0.55,cx=180,y=56,x1=cx-sep/2,x2=cx+sep/2;
+  [x1,x2].forEach(function(x){dyn.appendChild(S("circle",{cx:x,cy:y,r:30,fill:"url(#f10c)"}));dyn.appendChild(S("circle",{cx:x,cy:y,r:4,fill:"#c03d2c"}));});
+  dyn.appendChild(S("text",{x:x1,y:y+44,"text-anchor":"middle","font-size":"10",fill:"#5a6a6d"},"p⁺"));
+  dyn.appendChild(S("text",{x:x2,y:y+44,"text-anchor":"middle","font-size":"10",fill:"#5a6a6d"},"p⁺"));
+  var zone;
+  if(r>220)zone=["Daleko","Atomy prawie się nie oddziałują, energia układu ≈ 0."];
+  else if(r>=85)zone=["Przyciąganie","Elektron każdego atomu przyciąga też drugie jądro: energia spada, atomy zbliżają się."];
+  else if(r>=63)zone=["Minimum energii","Najtrwalszy układ. Ta odległość to długość wiązania H–H (ok. 74 pm)."];
+  else zone=["Za blisko","Dwa dodatnie jądra silnie się odpychają: energia gwałtownie rośnie."];
+  if(r>=85&&r<=220){dyn.appendChild(S("line",{x1:x1-38,y1:y,x2:x1-14,y2:y,stroke:"#1a2528","stroke-width":"1.6","marker-end":"url(#f10ar)"}));dyn.appendChild(S("line",{x1:x2+38,y1:y,x2:x2+14,y2:y,stroke:"#1a2528","stroke-width":"1.6","marker-end":"url(#f10ar)"}));}
+  if(r<63){dyn.appendChild(S("line",{x1:x1-8,y1:y,x2:x1-34,y2:y,stroke:"#c03d2c","stroke-width":"1.8","marker-end":"url(#f10ar)"}));dyn.appendChild(S("line",{x1:x2+8,y1:y,x2:x2+34,y2:y,stroke:"#c03d2c","stroke-width":"1.8","marker-end":"url(#f10ar)"}));}
+  var ey=Math.min(en,EMAX);dyn.appendChild(S("circle",{cx:px(r),cy:py(ey),r:6,fill:"#f5c542",stroke:"#1a2528","stroke-width":"1.5"}));
+  $("#f10-out").innerHTML="<b>"+zone[0]+"</b><span>"+zone[1]+"</span><span class='mono'>r = "+r+" pm · E ≈ "+(en>=EMAX?"&gt; 300":(Math.round(en)<0?MINUS+Math.abs(Math.round(en)):Math.round(en)))+" kJ/mol</span>";
+ }
+ $("#f10-r").addEventListener("input",draw);draw();
+})();
+
+/* ============ F15 ============ */
+(function(){
+ var EN={H:2.20,C:2.55,N:3.04,O:3.44,Cl:3.16},COL={H:"#ffffff",C:"#3d4447",N:"#3459c9",O:"#d0402e",Cl:"#3d9a3d"};
+ var c68=0.372,s68=Math.sqrt(1-c68*c68),ct=1/3,st=Math.sqrt(1-ct*ct);
+ function ring(n,cos,sin,len,off){var o=[];for(var i=0;i<n;i++){var f=(off+i*120)*Math.PI/180;o.push([len*sin*Math.cos(f),-len*cos,len*sin*Math.sin(f)]);}return o;}
+ var M={
+  CO2:{n:"CO₂",c:"C",L:[["O",[1.16,0,0]],["O",[-1.16,0,0]]],lp:[],v:"Wiązania C=O są polarne (ΔEN = 0,89), ale cząsteczka jest liniowa: dwa wektory mają przeciwne zwroty i znoszą się. Cząsteczka niepolarna."},
+  H2O:{n:"H₂O",c:"O",L:[["H",[0.96*Math.sin(0.912),-0.96*Math.cos(0.912),0]],["H",[-0.96*Math.sin(0.912),-0.96*Math.cos(0.912),0]]],lp:[[0.32,0.42,0.2],[-0.32,0.42,-0.2]],v:"Wiązania O–H polarne (ΔEN = 1,24). Kształt kątowy (104,5°): wektory nie znoszą się, suma wskazuje tlen. Cząsteczka polarna."},
+  NH3:{n:"NH₃",c:"N",L:ring(3,c68,s68,1.01,90).map(function(p){return["H",p];}),lp:[[0,0.55,0]],v:"Wiązania N–H polarne (ΔEN = 0,84). Piramida trygonalna (107°): suma wektorów wskazuje azot, po stronie wolnej pary. Cząsteczka polarna."},
+  CH4:{n:"CH₄",c:"C",L:[["H",[0,1.09,0]]].concat(ring(3,ct,st,1.09,90).map(function(p){return["H",p];})),lp:[],v:"Wiązania C–H słabo polarne (ΔEN = 0,35). Tetraedr: cztery jednakowe wektory dają sumę zero. Cząsteczka niepolarna."},
+  HCl:{n:"HCl",c:"Cl",L:[["H",[-1.27,0,0]]],lp:[[0.45,0.3,0],[0.45,-0.3,0],[0.55,0,0.3]],v:"Jedno wiązanie H–Cl, polarne (ΔEN = 0,96). Nie ma drugiego wektora, który mógłby je znieść. Cząsteczka polarna."}
+ };
+ var lay={en:true,d:true,w:true,s:true},cur="H2O",svg=$("#f15-svg");
+ var A=25*Math.PI/180,B=14*Math.PI/180,SC=78,CX=180,CY=120;
+ function P(p){var x=p[0]*Math.cos(A)+p[2]*Math.sin(A),z=-p[0]*Math.sin(A)+p[2]*Math.cos(A),y=p[1]*Math.cos(B)-z*Math.sin(B);return [CX+x*SC,CY-y*SC,z];}
+ function norm(v){var l=Math.hypot(v[0],v[1],v[2]);return [v[0]/l,v[1]/l,v[2]/l];}
+ var defs=S("defs");
+ ["#c03d2c","#1a2528"].forEach(function(c,i){var mk=S("marker",{id:"f15a"+i,viewBox:"0 0 10 10",refX:"8",refY:"5",markerWidth:i?"5":"6",markerHeight:i?"5":"6",orient:"auto"});mk.appendChild(S("path",{d:"M0,0L10,5L0,10z",fill:c}));defs.appendChild(mk);});
+ function arrow(g,x1,y1,x2,y2,col,w,m){g.appendChild(S("line",{x1:x1,y1:y1,x2:x2,y2:y2,stroke:col,"stroke-width":w,"marker-end":"url(#f15a"+m+")","stroke-linecap":"round"}));var dx=x2-x1,dy=y2-y1,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l,tx=x1+dx/l*7,ty=y1+dy/l*7;g.appendChild(S("line",{x1:tx+nx*5,y1:ty+ny*5,x2:tx-nx*5,y2:ty-ny*5,stroke:col,"stroke-width":w}));}
+ function draw(){
+  var m=M[cur];clear(svg);svg.appendChild(defs);
+  var c=[0,0,0],pc=P(c),items=[],sum=[0,0,0];
+  m.L.forEach(function(L){var pl=P(L[1]);items.push({z:pl[2],f:function(g){g.appendChild(S("line",{x1:pc[0],y1:pc[1],x2:pl[0],y2:pl[1],stroke:"#9aa8a6","stroke-width":"5","stroke-linecap":"round"}));}});});
+  var all=[[m.c,c]].concat(m.L);
+  var g=S("g");svg.appendChild(g);
+  items.forEach(function(i){i.f(g);});
+  m.lp.forEach(function(lp){var p=P(lp);g.appendChild(S("circle",{cx:p[0]-4,cy:p[1],r:2.6,fill:"#1a2528"}));g.appendChild(S("circle",{cx:p[0]+4,cy:p[1],r:2.6,fill:"#1a2528"}));});
+  // atoms sorted by depth
+  all.map(function(a){return {s:a[0],p:P(a[1]),c:a===all[0]};}).sort(function(a,b){return a.p[2]-b.p[2];}).forEach(function(a){
+   var rad=a.s==="H"?13:19;g.appendChild(S("circle",{cx:a.p[0],cy:a.p[1],r:rad,fill:COL[a.s],stroke:"#1a2528","stroke-width":"1.2"}));
+   g.appendChild(S("text",{x:a.p[0],y:a.p[1]+4,"text-anchor":"middle","font-size":a.s==="H"?"11":"13","font-weight":"700",fill:a.s==="H"?"#1a2528":"#ffffff"},a.s));
+   if(lay.en)g.appendChild(S("text",{x:a.p[0],y:a.p[1]+rad+12,"text-anchor":"middle","font-size":"10",fill:"#5a6a6d"},pl(EN[a.s],2)));
+   if(lay.d){var other=a.c?m.L[0][0]:m.c,neg=EN[a.s]>EN[other];g.appendChild(S("text",{x:a.p[0]+rad*0.75,y:a.p[1]-rad*0.75,"font-size":"12","font-weight":"700",fill:neg?"#c03d2c":"#2a62b5"},neg?"δ−":"δ+"));}
+  });
+  // bond vectors
+  m.L.forEach(function(L){var d=norm(L[1]),dEN=EN[m.c]-EN[L[0]],v=[d[0]*-dEN,d[1]*-dEN,d[2]*-dEN];sum=[sum[0]+v[0],sum[1]+v[1],sum[2]+v[2]];
+   if(!lay.w)return;var pl=P(L[1]),mx=(pc[0]+pl[0])/2,my=(pc[1]+pl[1])/2,dx=pl[0]-pc[0],dy=pl[1]-pc[1],l=Math.hypot(dx,dy),ux=dx/l,uy=dy/l,nx=-uy,ny=ux,len=14+34*Math.abs(dEN),s=dEN>0?-1:1;
+   var x1=mx-ux*len/2*s+nx*12,y1=my-uy*len/2*s+ny*12,x2=mx+ux*len/2*s+nx*12,y2=my+uy*len/2*s+ny*12;arrow(svg,x1,y1,x2,y2,"#1a2528",1.8,1);});
+  var mag=Math.hypot(sum[0],sum[1],sum[2]);
+  if(lay.s){
+   if(mag>0.05){var tip=P([sum[0]*0.6,sum[1]*0.6,sum[2]*0.6]),base=P([-sum[0]*0.25,-sum[1]*0.25,-sum[2]*0.25]);var bx=base[0]+70,tx=tip[0]+70;arrow(svg,bx,base[1],tx,tip[1],"#c03d2c",3.2,0);svg.appendChild(S("text",{x:tx+6,y:tip[1]+4,"font-size":"13","font-weight":"700",fill:"#c03d2c"},"μ"));svg.appendChild(S("text",{x:bx+6,y:base[1]+14,"font-size":"10",fill:"#c03d2c"},"suma"));}
+   else{svg.appendChild(S("text",{x:300,y:40,"font-size":"13","font-weight":"700",fill:"#2b7a4b","text-anchor":"middle"},"μ = 0"));}
+  }
+  var polar=mag>0.05;
+  $("#f15-out").innerHTML="<b>"+m.n+": cząsteczka "+(polar?"polarna":"niepolarna")+"</b><span>"+m.v+"</span><span class='mono'>długość wektora sumy (umowna): "+pl(mag,2)+"</span>";
+  seg($("#f15-sel"),Object.keys(M).map(function(k){return[k,M[k].n];}),cur,function(k){cur=k;draw();});
+ }
+ var lb=$("#f15-lay");[["en","1 · EN"],["d","2 · δ"],["w","3 · wektory wiązań"],["s","4 · suma μ"]].forEach(function(x){var l=H("label",{"class":"chk"}),i=H("input",{type:"checkbox",id:"f15-"+x[0]});i.checked=true;i.onchange=function(){lay[x[0]]=i.checked;draw();};l.appendChild(i);l.appendChild(document.createTextNode(x[1]));lb.appendChild(l);});
+ draw();
+})();
+
+/* ============ F17 ============ */
+(function(){
+ var SUBN="₀₁₂₃₄₅₆₇₈₉",SUP={"+":"⁺","-":"⁻",1:"",2:"²",3:"³"};
+ function parse(f){var st=[{}],re=/([A-Z][a-z]?|\(|\)|\d+)/g,m,last=null;
+  while((m=re.exec(f))){var t=m[1];
+   if(t==="("){st.push({});last=null;}
+   else if(t===")"){last=st.pop();var top=st[st.length-1];for(var k in last)top[k]=(top[k]||0)+last[k];last={grp:last};}
+   else if(/\d/.test(t)){var n=+t,top2=st[st.length-1];if(last&&last.grp){for(var k2 in last.grp)top2[k2]+=last.grp[k2]*(n-1);}else if(last){top2[last.el]+=n-1;}last=null;}
+   else{var tp=st[st.length-1];tp[t]=(tp[t]||0)+1;last={el:t};}}
+  return st[0];}
+ function disp(f,q){var s=f.replace(/\d/g,function(d){return SUBN[+d];});if(q){var a=Math.abs(q);s+=(a>1?SUP[a]:"")+(q>0?"⁺":"⁻");}return s;}
+ var EQ=[
+  {n:"wodór + tlen → woda",L:[["H2",0],["O2",0]],R:[["H2O",0]],k:[2,1,2]},
+  {n:"spalanie metanu",L:[["CH4",0],["O2",0]],R:[["CO2",0],["H2O",0]],k:[1,2,1,2]},
+  {n:"spalanie propanu",L:[["C3H8",0],["O2",0]],R:[["CO2",0],["H2O",0]],k:[1,5,3,4]},
+  {n:"glin + kwas solny",L:[["Al",0],["HCl",0]],R:[["AlCl3",0],["H2",0]],k:[2,6,2,3]},
+  {n:"żelazo + tlen → tlenek żelaza(III)",L:[["Fe",0],["O2",0]],R:[["Fe2O3",0]],k:[4,3,2]},
+  {n:"miedź + jony srebra (ładunek!)",L:[["Cu",0],["Ag",1]],R:[["Cu",2],["Ag",0]],k:[1,2,1,2]},
+  {n:"strącanie wodorotlenku żelaza(III)",L:[["Fe",3],["OH",-1]],R:[["Fe(OH)3",0]],k:[1,3,1]},
+  {n:"siarczan(VI) glinu + wodorotlenek sodu",L:[["Al2(SO4)3",0],["NaOH",0]],R:[["Al(OH)3",0],["Na2SO4",0]],k:[1,6,2,3]}
+ ];
+ var ECOL={H:"#8fa3a6",O:"#d0402e",C:"#3d4447",N:"#3459c9",Al:"#a07cc5",Cl:"#3d9a3d",Fe:"#b5651d",Cu:"#c47a3a",Ag:"#9aa0a6",S:"#d6b21e",Na:"#7a5bd6"};
+ var sel=$("#f17-sel");EQ.forEach(function(e,i){var o=H("option",{value:i});o.textContent=e.n;sel.appendChild(o);});
+ var cur=0,co=[];
+ function reset(){co=EQ[cur].L.concat(EQ[cur].R).map(function(){return 1;});}
+ function gcd(a,b){return b?gcd(b,a%b):a;}
+ function draw(){
+  var e=EQ[cur],sp=e.L.concat(e.R),nL=e.L.length,box=$("#f17-eq");clear(box);
+  sp.forEach(function(s,i){
+   if(i===nL)box.appendChild(H("span",{text:"→"}));else if(i>0)box.appendChild(H("span",{text:"+"}));
+   var w=H("span",{"class":"sp"}),m=H("button",{type:"button","aria-label":"zmniejsz współczynnik"},MINUS),k=H("span",{"class":"k",text:String(co[i])}),p=H("button",{type:"button","aria-label":"zwiększ współczynnik"},"+");
+   m.onclick=function(){if(co[i]>1){co[i]--;draw();}};p.onclick=function(){if(co[i]<12){co[i]++;draw();}};
+   w.appendChild(m);w.appendChild(k);w.appendChild(H("span",{"class":"f",text:disp(s[0],s[1])}));w.appendChild(p);box.appendChild(w);});
+  var Lc={},Rc={},qL=0,qR=0,els=[];
+  sp.forEach(function(s,i){var a=parse(s[0]),tgt=i<nL?Lc:Rc;for(var k in a){tgt[k]=(tgt[k]||0)+a[k]*co[i];if(els.indexOf(k)<0)els.push(k);}if(i<nL)qL+=s[1]*co[i];else qR+=s[1]*co[i];});
+  var t=$("#f17-tab");clear(t);var hr=H("tr");["Pierwiastek","Lewa","","Prawa","",""].forEach(function(x){hr.appendChild(H("th",{text:x}));});t.appendChild(hr);
+  var allOk=true;
+  function tally(n,c){var d=H("div",{"class":"tally"});for(var j=0;j<Math.min(n,30);j++){var i=H("i");i.style.background=c;d.appendChild(i);}return d;}
+  els.forEach(function(el){var l=Lc[el]||0,r=Rc[el]||0,ok=l===r;allOk=allOk&&ok;var tr=H("tr");
+   tr.appendChild(H("td",{"class":"mono",text:el}));tr.appendChild(H("td",{"class":"mono",text:String(l)}));var td1=H("td");td1.appendChild(tally(l,ECOL[el]||"#888"));tr.appendChild(td1);
+   tr.appendChild(H("td",{"class":"mono",text:String(r)}));var td2=H("td");td2.appendChild(tally(r,ECOL[el]||"#888"));tr.appendChild(td2);
+   tr.appendChild(H("td",null,ok?'<span class="chip ok">OK</span>':'<span class="chip bad">nie</span>'));t.appendChild(tr);});
+  var qok=qL===qR,tr=H("tr");function qs(q){return q===0?"0":(q>0?"+":MINUS)+Math.abs(q);}
+  tr.appendChild(H("td",{text:"ładunek"}));tr.appendChild(H("td",{"class":"mono",text:qs(qL)}));tr.appendChild(H("td"));tr.appendChild(H("td",{"class":"mono",text:qs(qR)}));tr.appendChild(H("td"));tr.appendChild(H("td",null,qok?'<span class="chip ok">OK</span>':'<span class="chip bad">nie</span>'));t.appendChild(tr);
+  var g=co.reduce(gcd),txt=sp.map(function(s,i){return (co[i]>1?co[i]+" ":"")+disp(s[0],s[1]);}),eqs=txt.slice(0,nL).join(" + ")+" → "+txt.slice(nL).join(" + ");
+  var html;
+  if(allOk&&qok){html="<b>Równanie uzgodnione</b><span class='mono'>"+eqs+"</span>";
+   if($("#f17-exp").checked){html+=g>1?"<span><span class='chip warn'>uwaga</span> Współczynniki można podzielić przez "+g+". Do obliczeń weź najmniejsze: "+co.map(function(x){return x/g;}).join(" : ")+".</span>":"<span>Stosunek molowy "+co.join(" : ")+" — równanie nadaje się do obliczeń stechiometrycznych (w silniku: przejście do kalkulatora).</span>";}}
+  else html="<b>Jeszcze nie</b><span>"+(!allOk?"Liczba atomów się nie zgadza. ":"")+(!qok?"Łączny ładunek po obu stronach jest różny — sam bilans atomów nie wystarcza. ":"")+"</span><span class='mono'>"+eqs+"</span>";
+  $("#f17-out").innerHTML=html;
+ }
+ sel.onchange=function(){cur=+sel.value;reset();draw();};$("#f17-exp").onchange=draw;reset();draw();
+})();
+
+/* ============ BIO: kod genetyczny ============ */
+(function(){
+ var T="FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG",IDX={T:0,C:1,A:2,G:3};
+ var AA3={F:"Phe",L:"Leu",S:"Ser",Y:"Tyr",C:"Cys",W:"Trp",P:"Pro",H:"His",Q:"Gln",R:"Arg",I:"Ile",M:"Met",T:"Thr",N:"Asn",K:"Lys",V:"Val",A:"Ala",D:"Asp",E:"Glu",G:"Gly","*":"STOP"};
+ var PLN={Phe:"fenyloalanina",Leu:"leucyna",Ser:"seryna",Tyr:"tyrozyna",Cys:"cysteina",Trp:"tryptofan",Pro:"prolina",His:"histydyna",Gln:"glutamina",Arg:"arginina",Ile:"izoleucyna",Met:"metionina (START)",Thr:"treonina",Asn:"asparagina",Lys:"lizyna",Val:"walina",Ala:"alanina",Asp:"kwas asparaginowy",Glu:"kwas glutaminowy",Gly:"glicyna",STOP:"koniec translacji"};
+ var COMP={A:"T",T:"A",G:"C",C:"G"},NEXT={A:"C",C:"G",G:"T",T:"A"};
+ var ORIG="ATGTTTGGCTGGAAATGCTAA",seq=ORIG.split("");
+ function tr(c){return T[16*IDX[c[0]]+4*IDX[c[1]]+IDX[c[2]]];}
+ function protein(s){var out=[],on=true;for(var i=0;i<s.length;i+=3){var a=AA3[tr(s.slice(i,i+3))];out.push({a:a,on:on});if(a==="STOP")on=false;}return out;}
+ function draw(){
+  var box=$("#kod-box");clear(box);var P0=protein(ORIG.split("")),P1=protein(seq),startLost=seq.slice(0,3).join("")!=="ATG";
+  for(var i=0;i<seq.length;i+=3){
+   var ci=i/3,c=H("div",{"class":"cod"}),r1=H("div",{"class":"row k"}),r2=H("div",{"class":"row"}),r3=H("div",{"class":"row m"});
+   for(var j=0;j<3;j++){(function(p){var s=H("span",{text:seq[p],role:"button",tabindex:"0","aria-label":"zasada "+(p+1)+": "+seq[p]});if(seq[p]!==ORIG[p])s.className="mut";s.onclick=function(){seq[p]=NEXT[seq[p]];draw();};s.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();s.onclick();}};r1.appendChild(s);r2.appendChild(H("span",{text:COMP[seq[p]]}));r3.appendChild(H("span",{text:seq[p]==="T"?"U":seq[p]}));})(i+j);}
+   var a=P1[ci],cls="cod";if(a.a!==P0[ci].a)cls+=" chg";if(a.a==="STOP")cls+=" stop";if(!a.on||startLost)cls+=" off";c.className=cls;
+   c.appendChild(r1);c.appendChild(r2);c.appendChild(r3);var aa=H("div",{"class":"aa",text:a.a,title:PLN[a.a]});c.appendChild(aa);box.appendChild(c);}
+  var muts=[];seq.forEach(function(b,p){if(b!==ORIG[p])muts.push(p);});
+  var chain=function(P){var o=[];for(var k=0;k<P.length;k++){if(P[k].a==="STOP")break;o.push(P[k].a);}return o.join("–");};
+  var html;
+  if(!muts.length)html="<b>Sekwencja wyjściowa</b><span>Białko: "+chain(P0)+" (potem STOP). Kliknij literę w górnym wierszu.</span>";
+  else if(startLost)html="<b>Utracony kodon START</b><span>Pierwszy kodon nie jest już AUG: w tym modelu translacja nie rusza i białko nie powstaje.</span>";
+  else{var kinds=[];var seen={};muts.forEach(function(p){var ci=Math.floor(p/3);if(seen[ci])return;seen[ci]=1;var a0=P0[ci].a,a1=P1[ci].a,k;
+    if(a0===a1)k="cicha (kodon "+(ci+1)+": nadal "+a0+")";else if(a1==="STOP")k="nonsensowna (kodon "+(ci+1)+": "+a0+" → STOP, białko skrócone)";else if(a0==="STOP")k="utrata kodonu STOP (białko wydłużone)";else k="zmiany sensu (kodon "+(ci+1)+": "+a0+" → "+a1+")";kinds.push(k);});
+   html="<b>Mutacja "+kinds.join("; ")+"</b><span>Było: "+chain(P0)+"</span><span>Jest: "+(chain(P1)||"brak aminokwasów")+"</span>";}
+  $("#kod-out").innerHTML=html;
+ }
+ $("#kod-reset").onclick=function(){seq=ORIG.split("");draw();};draw();
+})();
+
+/* ============ BIO: Punnett ============ */
+(function(){
+ var MODES={
+  A:{n:"jedna cecha (A/a)",rank:{A:0,a:1},m:[["A","A"],["A","a"],["a","a"]],f:[["A","A"],["A","a"],["a","a"]],dm:1,df:1,
+     ph:function(g){return g.indexOf("A")>=0?"kwiat purpurowy":"kwiat biały";},
+     note:"Przykład Mendla: groch, allel A — barwa purpurowa (dominujący), a — biała (recesywny). Aa × Aa daje 3 : 1 w fenotypach i 1 : 2 : 1 w genotypach."},
+  K:{n:"grupy krwi AB0",rank:{"Iᴬ":0,"Iᴮ":1,"i":2},m:[["Iᴬ","Iᴬ"],["Iᴬ","i"],["Iᴮ","Iᴮ"],["Iᴮ","i"],["Iᴬ","Iᴮ"],["i","i"]],f:[["Iᴬ","Iᴬ"],["Iᴬ","i"],["Iᴮ","Iᴮ"],["Iᴮ","i"],["Iᴬ","Iᴮ"],["i","i"]],dm:1,df:3,
+     ph:function(g){var a=g.indexOf("Iᴬ")>=0,b=g.indexOf("Iᴮ")>=0;return a&&b?"grupa AB":a?"grupa A":b?"grupa B":"grupa 0";},
+     note:"Allele Iᴬ i Iᴮ są kodominujące (oba się ujawniają: grupa AB), allel i jest recesywny. Rodzice z grupami A i B mogą mieć dziecko z każdą z czterech grup."},
+  X:{n:"sprzężona z płcią (hemofilia)",rank:{"Xᴴ":0,"Xʰ":1,"Y":2},m:[["Xᴴ","Xᴴ"],["Xᴴ","Xʰ"],["Xʰ","Xʰ"]],f:[["Xᴴ","Y"],["Xʰ","Y"]],dm:1,df:0,
+     ph:function(g){var y=g.indexOf("Y")>=0,h=g.filter(function(x){return x==="Xʰ";}).length;if(y)return h?"syn chory":"syn zdrowy";return h===2?"córka chora":h===1?"córka nosicielka":"córka zdrowa";},
+     note:"Gen leży na chromosomie X. Syn dostaje X od matki, a Y od ojca, więc chorobę dziedziczy po matce. Córka nosicielka jest zdrowa, ale może przekazać allel h."}
+ };
+ var mode="A";
+ function gs(g,r){return g.slice().sort(function(a,b){return r[a]-r[b];}).join("");}
+ function fill(id,list,def,r){var s=$(id);clear(s);list.forEach(function(g,i){var o=H("option",{value:i});o.textContent=gs(g,r);s.appendChild(o);});s.value=def;}
+ function setMode(m){mode=m;var M=MODES[m];fill("#pun-m",M.m,M.dm,M.rank);fill("#pun-f",M.f,M.df,M.rank);draw();}
+ function draw(){
+  var M=MODES[mode],gm=M.m[+$("#pun-m").value],gf=M.f[+$("#pun-f").value],t=$("#pun-tab");clear(t);
+  var hr=H("tr");hr.appendChild(H("th",null,"<span class='mono'>♀ \\ ♂</span>"));gf.forEach(function(a){hr.appendChild(H("th",{"class":"mono",text:a}));});t.appendChild(hr);
+  var G={},F={};
+  gm.forEach(function(am){var tr=H("tr");tr.appendChild(H("th",{"class":"mono",text:am}));gf.forEach(function(af){var g=[am,af],s=gs(g,M.rank),p=M.ph(g);G[s]=(G[s]||0)+1;F[p]=(F[p]||0)+1;tr.appendChild(H("td",null,s+"<small>"+p+"</small>"));});t.appendChild(tr);});
+  function bars(o){return "<div class='bars'>"+Object.keys(o).map(function(k){var v=o[k]/4*100;return "<div class='bar'><span>"+k+"</span><span class='t'><i style='width:"+v+"%'></i></span><span class='v'>"+v+"%</span></div>";}).join("")+"</div>";}
+  $("#pun-out").innerHTML="<b>Fenotypy potomstwa</b>"+bars(F)+"<b>Genotypy</b>"+bars(G);
+  $("#pun-note").textContent=M.note;
+  seg($("#pun-mode"),Object.keys(MODES).map(function(k){return[k,MODES[k].n];}),mode,setMode);
+ }
+ $("#pun-m").onchange=draw;$("#pun-f").onchange=draw;setMode("A");
+})();
+
+/* ============ BIO: transport ============ */
+(function(){
+ var Z=[
+  {k:"dp",n:"Dyfuzja prosta",co:"małe, niepolarne: O₂, CO₂",bialko:"nie",atp:"nie",kier:"zgodnie z gradientem",opis:"Cząsteczki przechodzą wprost przez warstwę lipidów, z miejsca o wyższym stężeniu do niższego."},
+  {k:"du",n:"Dyfuzja ułatwiona",co:"glukoza, jony",bialko:"tak (kanał, nośnik)",atp:"nie",kier:"zgodnie z gradientem",opis:"Białko kanałowe lub nośnikowe przepuszcza cząsteczki, które nie przejdą przez lipidy. Energia nie jest potrzebna."},
+  {k:"ta",n:"Transport aktywny",co:"jony, np. Na⁺, K⁺",bialko:"tak (pompa)",atp:"tak",kier:"wbrew gradientowi",opis:"Pompa białkowa przenosi cząsteczki tam, gdzie jest ich już więcej. Zużywa energię z rozkładu ATP."},
+  {k:"os",n:"Osmoza",co:"woda",bialko:"często (akwaporyny)",atp:"nie",kier:"do roztworu o wyższym stężeniu substancji rozpuszczonej",opis:"Woda przechodzi przez błonę półprzepuszczalną w stronę, gdzie jest więcej substancji rozpuszczonej (mniej „wolnej” wody)."}
+ ];
+ var cur="dp",svg=$("#tra-svg");
+ function rnd(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};}
+ function dots(g,x0,y0,w,h,n,shape,col,seed){var r=rnd(seed);for(var i=0;i<n;i++){var x=x0+6+r()*(w-12),y=y0+6+r()*(h-12);
+  if(shape==="hex"){var p="";for(var k=0;k<6;k++){var a=k*Math.PI/3;p+=(k?"L":"M")+(x+5*Math.cos(a)).toFixed(1)+","+(y+5*Math.sin(a)).toFixed(1);}g.appendChild(S("path",{d:p+"z",fill:col,stroke:"#1a2528","stroke-width":".6"}));}
+  else if(shape==="big")g.appendChild(S("circle",{cx:x,cy:y,r:5.5,fill:col,stroke:"#1a2528","stroke-width":".6"}));
+  else g.appendChild(S("circle",{cx:x,cy:y,r:3,fill:col}));}}
+ function draw(){
+  clear(svg);var mk=S("marker",{id:"traA",viewBox:"0 0 10 10",refX:"8",refY:"5",markerWidth:"6",markerHeight:"6",orient:"auto"});mk.appendChild(S("path",{d:"M0,0L10,5L0,10z",fill:"#1a2528"}));var d=S("defs");d.appendChild(mk);svg.appendChild(d);
+  svg.appendChild(S("text",{x:6,y:14,"font-size":"10",fill:"#5a6a6d"},"zewnątrz komórki"));
+  svg.appendChild(S("text",{x:6,y:264,"font-size":"10",fill:"#5a6a6d"},"wnętrze komórki"));
+  Z.forEach(function(z,i){var x0=i*90,g=S("g",{role:"button",tabindex:"0","aria-label":z.n,style:"cursor:pointer"});
+   g.appendChild(S("rect",{x:x0+1,y:20,width:88,height:232,rx:6,fill:z.k===cur?"#e7f1e1":"#ffffff",stroke:z.k===cur?"#3f7a28":"#e8efed"}));
+   // membrane
+   for(var x=x0+5;x<x0+88;x+=9){[118,152].forEach(function(y,j){g.appendChild(S("line",{x1:x,y1:y+(j?-5:5),x2:x,y2:y+(j?-16:16),stroke:"#d6b04a","stroke-width":"1.4"}));g.appendChild(S("circle",{cx:x,cy:y,r:4,fill:"#e4a83a"}));});}
+   var cx=x0+45;
+   if(z.k==="dp"){dots(g,x0,24,88,88,14,"o","#2a62b5",11);dots(g,x0,158,88,88,3,"o","#2a62b5",12);g.appendChild(S("line",{x1:cx,y1:96,x2:cx,y2:178,stroke:"#1a2528","stroke-width":"1.8","marker-end":"url(#traA)"}));}
+   if(z.k==="du"){g.appendChild(S("rect",{x:cx-14,y:104,width:10,height:62,rx:4,fill:"#7aa66a"}));g.appendChild(S("rect",{x:cx+4,y:104,width:10,height:62,rx:4,fill:"#7aa66a"}));dots(g,x0,24,88,80,8,"hex","#f2c14e",21);dots(g,x0,166,88,80,2,"hex","#f2c14e",22);g.appendChild(S("line",{x1:cx,y1:90,x2:cx,y2:182,stroke:"#1a2528","stroke-width":"1.8","marker-end":"url(#traA)"}));}
+   if(z.k==="ta"){g.appendChild(S("rect",{x:cx-16,y:102,width:32,height:66,rx:10,fill:"#5b8bc9"}));g.appendChild(S("text",{x:cx,y:140,"text-anchor":"middle","font-size":"9",fill:"#fff","font-weight":"700"},"pompa"));dots(g,x0,24,88,80,3,"big","#c03d2c",31);dots(g,x0,170,88,76,10,"big","#c03d2c",32);g.appendChild(S("line",{x1:cx,y1:92,x2:cx,y2:184,stroke:"#1a2528","stroke-width":"1.8","marker-end":"url(#traA)"}));g.appendChild(S("text",{x:cx+18,y:200,"font-size":"10","font-weight":"700",fill:"#b07610"},"ATP"));g.appendChild(S("text",{x:cx+18,y:212,"font-size":"9",fill:"#b07610"},"→ ADP"));}
+   if(z.k==="os"){g.appendChild(S("rect",{x:cx-5,y:104,width:10,height:62,rx:4,fill:"#8fc1d6"}));dots(g,x0,24,88,80,10,"o","#4aa3c9",41);dots(g,x0,24,88,80,2,"big","#a07cc5",42);dots(g,x0,170,88,76,6,"o","#4aa3c9",43);dots(g,x0,170,88,76,7,"big","#a07cc5",44);g.appendChild(S("line",{x1:cx,y1:92,x2:cx,y2:184,stroke:"#1a2528","stroke-width":"1.8","marker-end":"url(#traA)"}));}
+   g.appendChild(S("text",{x:cx,y:36,"text-anchor":"middle","font-size":"9.5","font-weight":"700",fill:"#1a2528"},z.n.split(" ")[0]));
+   g.appendChild(S("text",{x:cx,y:47,"text-anchor":"middle","font-size":"9.5","font-weight":"700",fill:"#1a2528"},z.n.split(" ")[1]||""));
+   g.onclick=function(){cur=z.k;draw();};g.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();cur=z.k;draw();}};
+   svg.appendChild(g);});
+  var z=Z.filter(function(q){return q.k===cur;})[0];
+  $("#tra-out").innerHTML="<b>"+z.n+"</b><span>"+z.opis+"</span>";
+ }
+ var t=$("#tra-tab");var hr=H("tr");["Sposób","Co przechodzi","Białko","ATP","Kierunek"].forEach(function(x){hr.appendChild(H("th",{text:x}));});t.appendChild(hr);
+ Z.forEach(function(z){var tr=H("tr");[z.n,z.co,z.bialko,z.atp,z.kier].forEach(function(x){tr.appendChild(H("td",{text:x}));});t.appendChild(tr);});
+ draw();
+})();
+
+/* ============ BIO: sieć troficzna ============ */
+(function(){
+ var N={trawa:[60,300,"trawa"],dab:[270,300,"dąb"],zajac:[34,215,"zając"],mysz:[118,215,"mysz"],sarna:[204,215,"sarna"],gasienica:[312,215,"gąsienica"],lis:[80,128,"lis"],wilk:[190,128,"wilk"],sikora:[300,128,"sikora"],puszczyk:[220,48,"puszczyk"]};
+ var E=[["trawa","zajac"],["trawa","mysz"],["trawa","sarna"],["dab","mysz"],["dab","sarna"],["dab","gasienica"],["gasienica","sikora"],["mysz","lis"],["zajac","lis"],["sarna","wilk"],["mysz","puszczyk"],["sikora","puszczyk"]];
+ var mode="info",sel=null,removed={},svg=$("#sie-svg");
+ function eats(n){return E.filter(function(e){return e[1]===n&&!removed[e[0]];}).map(function(e){return e[0];});}
+ function eaten(n){return E.filter(function(e){return e[0]===n&&!removed[e[1]];}).map(function(e){return e[1];});}
+ function isProd(n){return !E.some(function(e){return e[1]===n;});}
+ function chains(){var out=[];function go(n,path){var nx=eaten(n);if(!nx.length){out.push(path);return;}nx.forEach(function(m){go(m,path.concat(m));});}
+  Object.keys(N).filter(function(n){return isProd(n)&&!removed[n];}).forEach(function(p){go(p,[p]);});return out;}
+ function starving(){var st={},changed=true;while(changed){changed=false;Object.keys(N).forEach(function(n){if(removed[n]||st[n]||isProd(n))return;var food=E.filter(function(e){return e[1]===n;}).map(function(e){return e[0];}).filter(function(f){return !removed[f]&&!st[f];});if(!food.length){st[n]=1;changed=true;}});}return st;}
+ var LV=["producent","konsument I rzędu","konsument II rzędu","konsument III rzędu"];
+ function draw(){
+  clear(svg);var d=S("defs");["#9aa8a6","#3f7a28","#c0602c"].forEach(function(c,i){var mk=S("marker",{id:"sieA"+i,viewBox:"0 0 10 10",refX:"9",refY:"5",markerWidth:"6",markerHeight:"6",orient:"auto"});mk.appendChild(S("path",{d:"M0,0L10,5L0,10z",fill:c}));d.appendChild(mk);});svg.appendChild(d);
+  [["producenci",300],["roślinożercy",215],["drapieżniki",128],["drapieżnik szczytowy",48]].forEach(function(r){svg.appendChild(S("text",{x:356,y:r[1]-26,"text-anchor":"end","font-size":"9",fill:"#9aa8a6"},r[0]));});
+  svg.appendChild(S("rect",{x:6,y:326,width:348,height:20,rx:5,fill:"#efe9de"}));svg.appendChild(S("text",{x:180,y:340,"text-anchor":"middle","font-size":"10",fill:"#6b5a3c"},"destruenci: grzyby, bakterie — rozkładają szczątki wszystkich"));
+  var st=starving();
+  E.forEach(function(e){if(removed[e[0]]||removed[e[1]])return;var a=N[e[0]],b=N[e[1]],dx=b[0]-a[0],dy=b[1]-a[1],l=Math.hypot(dx,dy),k=0,c="#9aa8a6",w=1.3;
+   if(sel&&mode==="info"){if(e[1]===sel){k=1;c="#3f7a28";w=2.6;}else if(e[0]===sel){k=2;c="#c0602c";w=2.6;}}
+   svg.appendChild(S("line",{x1:a[0]+dx/l*22,y1:a[1]+dy/l*22,x2:b[0]-dx/l*23,y2:b[1]-dy/l*23,stroke:c,"stroke-width":w,"marker-end":"url(#sieA"+k+")"}));});
+  Object.keys(N).forEach(function(n){var p=N[n],g=S("g",{role:"button",tabindex:"0","aria-label":p[2],style:"cursor:pointer"}),fill=isProd(n)?"#dcefd2":"#ffffff",stroke="#1a2528",dash="";
+   if(removed[n]){fill="#f2f2f2";stroke="#bbb";dash="4 3";}else if(st[n]){fill="#f6dfda";stroke="#b23b2a";dash="4 3";}else if(n===sel){fill="#3f7a28";}
+   g.appendChild(S("circle",{cx:p[0],cy:p[1],r:21,fill:fill,stroke:stroke,"stroke-width":n===sel?"2.4":"1.3","stroke-dasharray":dash}));
+   g.appendChild(S("text",{x:p[0],y:p[1]+4,"text-anchor":"middle","font-size":p[2].length>7?"8.5":"10","font-weight":"700",fill:n===sel&&!removed[n]?"#fff":removed[n]?"#aaa":"#1a2528"},p[2]));
+   g.onclick=function(){click(n);};g.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();click(n);}};svg.appendChild(g);});
+  var out="";
+  if(mode==="usun"){var rm=Object.keys(removed).map(function(n){return N[n][2];}),sv=Object.keys(st).map(function(n){return N[n][2];});
+   out=rm.length?"<b>Usunięto: "+rm.join(", ")+"</b><span>"+(sv.length?"Bez pokarmu zostają: "+sv.join(", ")+" (zaznaczone na czerwono).":"Każdy gatunek ma jeszcze inny pokarm — sieć jest odporniejsza niż pojedynczy łańcuch.")+"</span><span>Łańcuchów w sieci: "+chains().length+" (było 9).</span>":"<b>Tryb usuwania</b><span>Kliknij gatunek, aby go usunąć z sieci.</span>";}
+  else if(sel){var ch=chains().filter(function(c){return c.indexOf(sel)>=0;}),lv={};ch.forEach(function(c){lv[c.indexOf(sel)]=1;});
+   var lvs=Object.keys(lv).map(Number).sort();var a=eats(sel).map(function(n){return N[n][2];}),b=eaten(sel).map(function(n){return N[n][2];});
+   out="<b>"+N[sel][2]+": "+lvs.map(function(i){return LV[i];}).join(" i ")+"</b><span>Je: "+(a.length?a.join(", "):"— (wytwarza materię w fotosyntezie)")+" · zjadany przez: "+(b.length?b.join(", "):"nikogo w tej sieci")+"</span><span>Łańcuchy przez ten gatunek ("+ch.length+"): "+ch.map(function(c){return c.map(function(n){return N[n][2];}).join(" → ");}).join("; ")+"</span>";}
+  else out="<b>Kliknij gatunek</b><span>Zielone strzałki: co je; pomarańczowe: kto go zjada. W sieci jest "+chains().length+" łańcuchów pokarmowych.</span>";
+  $("#sie-out").innerHTML=out;
+  seg($("#sie-mode"),[["info","co je i kto go je"],["usun","usuń gatunek"]],mode,function(m){mode=m;sel=null;draw();});
+ }
+ function click(n){if(mode==="usun"){removed[n]=!removed[n];}else{sel=sel===n?null:n;}draw();}
+ $("#sie-reset").onclick=function(){removed={};sel=null;draw();};
+ draw();
+})();
+
+/* ============ FIZ: obwód ============ */
+(function(){
+ var mode="sz",dir="umowny",svg=$("#obw-svg"),us=$("#obw-u");
+ [1.5,3,4.5,6,9,12].forEach(function(u){var o=H("option",{value:u});o.textContent=pl(u,1)+" V";us.appendChild(o);});us.value="6";
+ function bulb(g,x,y,P,on,lab){var b=on?Math.min(1,P/8):0;
+  g.appendChild(S("circle",{cx:x,cy:y,r:26,fill:"url(#obwG)",opacity:b.toFixed(2)}));
+  g.appendChild(S("circle",{cx:x,cy:y,r:12,fill:b>0.05?"#fff6d3":"#ffffff",stroke:"#1a2528","stroke-width":"1.6"}));
+  g.appendChild(S("path",{d:"M"+(x-8.5)+","+(y-8.5)+"L"+(x+8.5)+","+(y+8.5)+"M"+(x+8.5)+","+(y-8.5)+"L"+(x-8.5)+","+(y+8.5),stroke:"#1a2528","stroke-width":"1.4"}));
+  g.appendChild(S("text",{x:x,y:y-17,"text-anchor":"middle","font-size":"10","font-weight":"700",fill:"#3b4ea0"},lab));}
+ function chev(g,x,y,ang){g.appendChild(S("path",{d:"M-4,-4L2,0L-4,4",fill:"none",stroke:dir==="umowny"?"#c03d2c":"#2a62b5","stroke-width":"2",transform:"translate("+x+","+y+") rotate("+ang+")"}));}
+ function draw(){
+  var U=+us.value,R1=+$("#obw-r1").value,R2=+$("#obw-r2").value,on=$("#obw-sw").checked,I,I1,I2,U1,U2,Rz;
+  if(mode==="sz"){Rz=R1+R2;I=on?U/Rz:0;I1=I2=I;U1=I*R1;U2=I*R2;}else{Rz=R1*R2/(R1+R2);I1=on?U/R1:0;I2=on?U/R2:0;I=I1+I2;U1=U2=on?U:0;}
+  var P1=I1*I1*R1,P2=I2*I2*R2;
+  clear(svg);var d=S("defs"),gr=S("radialGradient",{id:"obwG"});gr.appendChild(S("stop",{offset:"0","stop-color":"#f5c542","stop-opacity":".95"}));gr.appendChild(S("stop",{offset:"1","stop-color":"#f5c542","stop-opacity":"0"}));d.appendChild(gr);svg.appendChild(d);
+  var g=S("g",{fill:"none",stroke:"#1a2528","stroke-width":"2"});svg.appendChild(g);
+  function L(p){g.appendChild(S("path",{d:p}));}
+  L("M40,100V40");L("M40,118V190");
+  if(mode==="sz"){L("M40,40H320V190");}else{L("M40,40H320V190");L("M180,40V120H320");}
+  // bottom wire with switch
+  L("M40,190H150");L("M210,190H320");
+  g.appendChild(S("circle",{cx:150,cy:190,r:3,fill:"#1a2528"}));g.appendChild(S("circle",{cx:210,cy:190,r:3,fill:"#1a2528"}));
+  g.appendChild(S("line",{x1:150,y1:190,x2:on?210:202,y2:on?190:162}));
+  // battery
+  svg.appendChild(S("line",{x1:22,y1:100,x2:58,y2:100,stroke:"#1a2528","stroke-width":"2.4"}));
+  svg.appendChild(S("line",{x1:31,y1:118,x2:49,y2:118,stroke:"#1a2528","stroke-width":"5"}));
+  svg.appendChild(S("text",{x:64,y:104,"font-size":"12","font-weight":"700",fill:"#c03d2c"},"+"));
+  svg.appendChild(S("text",{x:56,y:126,"font-size":"13","font-weight":"700",fill:"#2a62b5"},MINUS));
+  svg.appendChild(S("text",{x:8,y:150,"font-size":"10",fill:"#5a6a6d"},pl(U,1)+" V"));
+  svg.appendChild(S("text",{x:180,y:214,"font-size":"10",fill:"#5a6a6d","text-anchor":"middle"},on?"wyłącznik zamknięty":"wyłącznik otwarty"));
+  // ammeter
+  var ax=mode==="sz"?320:110,ay=mode==="sz"?150:40;
+  svg.appendChild(S("circle",{cx:ax,cy:ay,r:12,fill:"#ffffff",stroke:"#1a2528","stroke-width":"1.8"}));
+  svg.appendChild(S("text",{x:ax,y:ay+4,"text-anchor":"middle","font-size":"11","font-weight":"700",fill:"#1a2528"},"A"));
+  svg.appendChild(S("text",{x:mode==="sz"?ax-16:ax,y:mode==="sz"?ay+4:ay+26,"text-anchor":mode==="sz"?"end":"middle","font-size":"10",fill:"#3b4ea0","font-weight":"700"},pl(I,2)+" A"));
+  var bg=S("g");svg.appendChild(bg);
+  if(mode==="sz"){bulb(bg,140,40,P1,on,"Ż₁");bulb(bg,240,40,P2,on,"Ż₂");}else{bulb(bg,250,40,P1,on,"Ż₁");bulb(bg,250,120,P2,on,"Ż₂");}
+  if(on){var cg=S("g");svg.appendChild(cg);var f=dir==="umowny"?1:-1;
+   // umowny: + (top) → up left wire → right along top → down right wire → left along bottom → into −
+   chev(cg,40,70,f>0?-90:90);chev(cg,90,40,f>0?0:180);chev(cg,320,100,f>0?90:-90);chev(cg,260,190,f>0?180:0);chev(cg,90,190,f>0?180:0);
+   cg.appendChild(S("text",{x:180,y:168,"text-anchor":"middle","font-size":"10","font-weight":"700",fill:dir==="umowny"?"#c03d2c":"#2a62b5"},dir==="umowny"?"kierunek umowny prądu: + → −":"ruch elektronów: − → +"));}
+  var t=$("#obw-tab");clear(t);var hr=H("tr");["Wielkość","Ż₁","Ż₂","Cały obwód"].forEach(function(x){hr.appendChild(H("th",{text:x}));});t.appendChild(hr);
+  [["Opór R",pl(R1,0)+" Ω",pl(R2,0)+" Ω",pl(Rz,2)+" Ω"],["Natężenie I",pl(I1,2)+" A",pl(I2,2)+" A",pl(I,2)+" A"],["Napięcie U",pl(U1,2)+" V",pl(U2,2)+" V",pl(on?U:0,1)+" V"],["Moc P = U·I",pl(P1,2)+" W",pl(P2,2)+" W",pl(P1+P2,2)+" W"]].forEach(function(r){var tr=H("tr");r.forEach(function(x,i){tr.appendChild(H(i?"td":"th",{"class":i?"mono":"",text:x}));});t.appendChild(tr);});
+  seg($("#obw-mode"),[["sz","szeregowo"],["rw","równolegle"]],mode,function(m){mode=m;draw();});
+  seg($("#obw-dir"),[["umowny","prąd umowny"],["elektrony","elektrony"]],dir,function(m){dir=m;draw();});
+ }
+ ["#obw-u","#obw-r1","#obw-r2","#obw-sw"].forEach(function(s){$(s).addEventListener("input",draw);$(s).addEventListener("change",draw);});
+ draw();
+})();
+})();
+</script>

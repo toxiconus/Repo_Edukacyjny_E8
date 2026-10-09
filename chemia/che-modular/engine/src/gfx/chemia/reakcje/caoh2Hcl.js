@@ -1,0 +1,1 @@
+P('caoh2Hcl',{n:'Ca(OH)₂ + HCl (+ fenoloftaleina)',l0:pink,l1:php,out:['barwa'],heat:.3,T:28,why:'Zanik barwy malinowej — zobojętnianie.'});

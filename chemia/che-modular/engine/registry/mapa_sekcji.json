@@ -1,0 +1,2347 @@
+{
+"anon001/rdzen/s000.js": {
+"data": [],
+"che": [
+"ENGINE",
+"OK",
+"ERROR",
+"FAIL",
+"deepFreeze"
+],
+"bytes": 1018
+},
+"anon001/audyt/s001.js": {
+"data": [],
+"che": [
+"DATA",
+"CHEMISTRY_REPAIR_V408",
+"EDUCATION_MAX_V315_REPAIRED",
+"CHEMISTRY_EXECUTION_ROADMAP_V408",
+"P0_REGRESSION_V408"
+],
+"bytes": 5186
+},
+"anon001/dane-jadrowe/s002.js": {
+"data": [
+"ELEMENTS_118",
+"ELEMENTS_54",
+"ATOMIC_MASS",
+"ATOM_META",
+"ELEM",
+"PHYSICAL_PROPS",
+"THERMOCHEM",
+"REDOX_POTENTIALS",
+"KINETICS",
+"SOLUBILITY",
+"QUANTUM_RULES",
+"NUCLEAR_DATA"
+],
+"che": [
+"DATA"
+],
+"bytes": 13626
+},
+"anon001/dane-substancje/s003.js": {
+"data": [
+"MOL3D",
+"MOL2D",
+"MOLECULES"
+],
+"che": [
+"DATA"
+],
+"bytes": 6594
+},
+"anon001/dane-reakcje/s004.js": {
+"data": [
+"REACTIONS",
+"REACTION_DATA",
+"REACTION_TYPE_NAMES"
+],
+"che": [
+"DATA"
+],
+"bytes": 47884
+},
+"anon001/dane-kwasy-zasady/s005.js": {
+"data": [
+"SUBSTANCES",
+"ACID_SYSTEMS",
+"ACIDS"
+],
+"che": [
+"DATA"
+],
+"bytes": 40961
+},
+"anon001/dane-kwasy-zasady/s006.js": {
+"data": [
+"INDICATORS",
+"INDICATOR_RANGES",
+"METAL_SERIES",
+"METAL_ACTIVE",
+"ACID_STRENGTH",
+"CONCEPTS",
+"TIMELINE",
+"COMPOUNDS",
+"MODEL_LIMITS"
+],
+"che": [
+"DATA"
+],
+"bytes": 6388
+},
+"anon001/dane-pierwiastki/s007.js": {
+"data": [
+"ATOMIC_PROPS"
+],
+"che": [
+"DATA"
+],
+"bytes": 12199
+},
+"anon001/dane-pierwiastki/s008.js": {
+"data": [
+"ISOTOPES"
+],
+"che": [
+"DATA"
+],
+"bytes": 28007
+},
+"anon001/dane-pierwiastki/s009.js": {
+"data": [
+"ATOMIC_SPECTRA"
+],
+"che": [
+"DATA"
+],
+"bytes": 2721
+},
+"anon001/rdzen/s010.js": {
+"data": [],
+"che": [
+"CHEM"
+],
+"bytes": 5889
+},
+"anon001/rdzen/s011.js": {
+"data": [],
+"che": [
+"MOLECULE"
+],
+"bytes": 10175
+},
+"anon001/rdzen/s012.js": {
+"data": [],
+"che": [
+"REACTION"
+],
+"bytes": 2234
+},
+"anon001/rdzen/s013.js": {
+"data": [],
+"che": [
+"EQUILIBRIUM"
+],
+"bytes": 3151
+},
+"anon001/rdzen/s014.js": {
+"data": [],
+"che": [
+"STOICH"
+],
+"bytes": 2150
+},
+"anon001/rdzen/s015.js": {
+"data": [],
+"che": [
+"UNITS"
+],
+"bytes": 1170
+},
+"anon001/rdzen/s016.js": {
+"data": [],
+"che": [
+"THERMO"
+],
+"bytes": 2619
+},
+"anon001/rdzen/s017.js": {
+"data": [],
+"che": [
+"ELECTRO"
+],
+"bytes": 1096
+},
+"anon001/rdzen/s018.js": {
+"data": [],
+"che": [
+"ATOM"
+],
+"bytes": 11930
+},
+"anon001/dane-jadrowe/s019.js": {
+"data": [],
+"che": [
+"NUCLEUS"
+],
+"bytes": 4478
+},
+"anon001/rdzen/s020.js": {
+"data": [],
+"che": [
+"PROFILE"
+],
+"bytes": 3244
+},
+"anon001/rdzen/s021.js": {
+"data": [],
+"che": [
+"ION"
+],
+"bytes": 2615
+},
+"anon001/rdzen/s022.js": {
+"data": [],
+"che": [
+"ISOTOPE"
+],
+"bytes": 1408
+},
+"anon001/organiczna/s023.js": {
+"data": [],
+"che": [
+"SPECTRA"
+],
+"bytes": 1889
+},
+"anon001/dane-jadrowe/s024.js": {
+"data": [],
+"che": [
+"NUCLEAR"
+],
+"bytes": 1903
+},
+"anon001/gfx-ui/s025.js": {
+"data": [],
+"che": [
+"STATE"
+],
+"bytes": 2625
+},
+"anon001/gfx-ui/s026.js": {
+"data": [],
+"che": [
+"OBSERVER"
+],
+"bytes": 2277
+},
+"anon001/audyt/s027.js": {
+"data": [],
+"che": [
+"PROGRESS"
+],
+"bytes": 1518
+},
+"anon001/rdzen/s028.js": {
+"data": [],
+"che": [
+"DERIVED"
+],
+"bytes": 1256
+},
+"anon001/gfx-ui/s029.js": {
+"data": [],
+"che": [
+"DOM"
+],
+"bytes": 1945
+},
+"anon001/gfx-ui/s030.js": {
+"data": [],
+"che": [
+"VIZ"
+],
+"bytes": 18048
+},
+"anon001/gfx-ui/s031.js": {
+"data": [],
+"che": [
+"MOTION"
+],
+"bytes": 5673
+},
+"anon001/gfx-ui/s032.js": {
+"data": [],
+"che": [
+"VIEW"
+],
+"bytes": 8318
+},
+"anon001/edukacja/s033.js": {
+"data": [],
+"che": [
+"EXPLAIN"
+],
+"bytes": 3113
+},
+"anon001/organiczna/s034.js": {
+"data": [],
+"che": [
+"ORGANIC"
+],
+"bytes": 4490
+},
+"anon001/rdzen/s035.js": {
+"data": [],
+"che": [
+"GEOMETRY"
+],
+"bytes": 4857
+},
+"anon001/gfx-ui/s036.js": {
+"data": [],
+"che": [
+"VISUAL"
+],
+"bytes": 2872
+},
+"anon001/dane-substancje/s037.js": {
+"data": [
+"BOND_TYPES",
+"FUNCTIONAL_GROUPS"
+],
+"che": [
+"DATA"
+],
+"bytes": 2916
+},
+"anon001/rdzen/s038.js": {
+"data": [],
+"che": [
+"STRUCTURE"
+],
+"bytes": 10992
+},
+"anon001/rdzen/s039.js": {
+"data": [],
+"che": [
+"TRANSFORM"
+],
+"bytes": 8581
+},
+"anon001/gfx-ui/s040.js": {
+"data": [],
+"che": [
+"EDITOR"
+],
+"bytes": 6746
+},
+"anon001/rdzen/s041.js": {
+"data": [],
+"che": [
+"RECONSTRUCT"
+],
+"bytes": 7370
+},
+"anon001/rdzen/s042.js": {
+"data": [],
+"che": [
+"REACTIONSET"
+],
+"bytes": 5637
+},
+"anon001/organiczna/s043.js": {
+"data": [],
+"che": [
+"ORGANIC"
+],
+"bytes": 4203
+},
+"anon001/gfx-ui/s044.js": {
+"data": [],
+"che": [
+"REPRESENTATION"
+],
+"bytes": 5595
+},
+"anon001/audyt/s045.js": {
+"data": [],
+"che": [
+"GEOMETRY_CONTRACT"
+],
+"bytes": 2011
+},
+"anon001/rdzen/s046.js": {
+"data": [],
+"che": [
+"MAPPING"
+],
+"bytes": 1242
+},
+"anon001/rdzen/s047.js": {
+"data": [],
+"che": [
+"NOMENCLATURE"
+],
+"bytes": 1217
+},
+"anon001/nauka-referencje/s048.js": {
+"data": [],
+"che": [
+"SCIENCE"
+],
+"bytes": 1179
+},
+"anon001/audyt/s049.js": {
+"data": [],
+"che": [
+"STRUCTURE_AUDIT"
+],
+"bytes": 3825
+},
+"anon001/rdzen/s050.js": {
+"data": [],
+"che": [
+"VALIDATOR"
+],
+"bytes": 4792
+},
+"anon001/organiczna/s051.js": {
+"data": [],
+"che": [
+"ISOMORPHISM"
+],
+"bytes": 5223
+},
+"anon001/inne/s052.js": {
+"data": [],
+"che": [],
+"bytes": 4256
+},
+"anon001/rdzen/s053.js": {
+"data": [],
+"che": [
+"REACTION_VALIDATOR"
+],
+"bytes": 4344
+},
+"anon001/audyt/s054.js": {
+"data": [],
+"che": [
+"SPECTRA_CONTRACT"
+],
+"bytes": 1780
+},
+"anon001/rdzen/s055.js": {
+"data": [],
+"che": [
+"ELECTRONIC_MODEL"
+],
+"bytes": 1309
+},
+"anon001/organiczna/s056.js": {
+"data": [],
+"che": [
+"MECHANISM_GRAPH"
+],
+"bytes": 1964
+},
+"anon001/audyt/s057.js": {
+"data": [],
+"che": [
+"PROVENANCE"
+],
+"bytes": 1292
+},
+"anon001/audyt/s058.js": {
+"data": [],
+"che": [
+"DATA_INTEGRITY"
+],
+"bytes": 2448
+},
+"anon001/audyt/s059.js": {
+"data": [],
+"che": [
+"STEREO_CONTRACT"
+],
+"bytes": 1845
+},
+"anon001/rdzen/s060.js": {
+"data": [],
+"che": [
+"ENGINE"
+],
+"bytes": 9230
+},
+"anon001/rdzen/s061.js": {
+"data": [],
+"che": [
+"ENGINE"
+],
+"bytes": 4000
+},
+"anon001/rdzen/s062.js": {
+"data": [],
+"che": [
+"ENGINE"
+],
+"bytes": 29762
+},
+"anon001/rdzen/s063.js": {
+"data": [],
+"che": [
+"ENGINE"
+],
+"bytes": 5818
+},
+"anon001/rdzen/s064.js": {
+"data": [],
+"che": [
+"UI_BRIDGE",
+"CV",
+"EDUCATIONAL_VIEWS",
+"LEGACY_AUDIT"
+],
+"bytes": 8995
+},
+"anon001/audyt/s065.js": {
+"data": [],
+"che": [
+"API_CONTRACT",
+"RUNTIME",
+"REGRESSION"
+],
+"bytes": 8647
+},
+"anon001/audyt/s066.js": {
+"data": [],
+"che": [
+"DATA_LINEAGE"
+],
+"bytes": 3109
+},
+"anon001/audyt/s067.js": {
+"data": [],
+"che": [
+"SPECTRA_CONTRACT"
+],
+"bytes": 3531
+},
+"anon001/organiczna/s068.js": {
+"data": [],
+"che": [
+"MECHANISM_GRAPH"
+],
+"bytes": 2213
+},
+"anon001/audyt/s069.js": {
+"data": [],
+"che": [
+"ELECTRONIC_REGRESSION"
+],
+"bytes": 1769
+},
+"anon001/audyt/s070.js": {
+"data": [],
+"che": [
+"SCIENCE_AUDIT"
+],
+"bytes": 2322
+},
+"anon001/inne/s071.js": {
+"data": [],
+"che": [],
+"bytes": 3359
+},
+"anon001/gfx-ui/s072.js": {
+"data": [],
+"che": [
+"RENDER2D"
+],
+"bytes": 10020
+},
+"anon001/gfx-ui/s073.js": {
+"data": [],
+"che": [
+"UI"
+],
+"bytes": 6701
+},
+"anon001/gfx-ui/s074.js": {
+"data": [],
+"che": [
+"UI"
+],
+"bytes": 27323
+},
+"anon001/rdzen/s075.js": {
+"data": [],
+"che": [
+"ENGINE"
+],
+"bytes": 6503
+},
+"anon001/audyt/s076.js": {
+"data": [],
+"che": [
+"STRUCTURE_AUDIT_RESULT"
+],
+"bytes": 18850
+},
+"anon001/audyt/s077.js": {
+"data": [],
+"che": [
+"RUNTIME_UI_CONTRACT"
+],
+"bytes": 789
+},
+"anon001/audyt/s078.js": {
+"data": [],
+"che": [
+"MAPPING_REGRESSION_252"
+],
+"bytes": 4092
+},
+"anon001/dane-pierwiastki/s079.js": {
+"data": [
+"ATOMIC_PROP_META",
+"THERMO_CONTEXT",
+"REDOX_CONTEXT"
+],
+"che": [
+"DATA",
+"SCIENCE_INTEGRITY"
+],
+"bytes": 5021
+},
+"anon001/dane-pierwiastki/s080.js": {
+"data": [
+"ATOMIC_PROFILES",
+"ATOMIC_DATA_REQUIREMENTS"
+],
+"che": [
+"DATA",
+"DATA_COVERAGE"
+],
+"bytes": 2727
+},
+"anon001/audyt/s081.js": {
+"data": [],
+"che": [
+"SCIENCE_INTEGRITY"
+],
+"bytes": 2829
+},
+"anon001/inne/s082.js": {
+"data": [],
+"che": [],
+"bytes": 776
+},
+"anon001/dane-pierwiastki/s083.js": {
+"data": [
+"ATOMIC_WEIGHT_REFERENCE"
+],
+"che": [
+"DATA",
+"ATOMIC_WEIGHT_REFERENCE"
+],
+"bytes": 6440
+},
+"anon001/inne/s084.js": {
+"data": [],
+"che": [],
+"bytes": 2886
+},
+"anon001/inne/s085.js": {
+"data": [],
+"che": [],
+"bytes": 836
+},
+"anon001/dane-pierwiastki/s086.js": {
+"data": [
+"FIRST_IONIZATION_ENERGY"
+],
+"che": [
+"DATA",
+"FIRST_IONIZATION_ENERGY"
+],
+"bytes": 6706
+},
+"anon001/inne/s087.js": {
+"data": [],
+"che": [],
+"bytes": 2911
+},
+"anon001/inne/s088.js": {
+"data": [],
+"che": [],
+"bytes": 875
+},
+"anon001/dane-pierwiastki/s089.js": {
+"data": [
+"ISOTOPES_REFERENCE",
+"ISOTOPE_VERIFIED_CANDIDATES"
+],
+"che": [
+"DATA",
+"REFERENCE_PROMOTION_LEDGER",
+"ISOTOPE_REFERENCE",
+"ISOTOPE_VERIFIED_CANDIDATES"
+],
+"bytes": 9269
+},
+"anon001/dane-termo-redoks/s090.js": {
+"data": [
+"THERMO_REFERENCE"
+],
+"che": [
+"DATA",
+"THERMO_REFERENCE"
+],
+"bytes": 1223
+},
+"anon001/dane-termo-redoks/s091.js": {
+"data": [
+"REDOX_POTENTIALS",
+"ELECTRO_REFERENCE"
+],
+"che": [
+"DATA",
+"ELECTRO_REFERENCE"
+],
+"bytes": 2196
+},
+"anon001/audyt/s092.js": {
+"data": [],
+"che": [
+"REACTION_SCIENCE_AUDIT"
+],
+"bytes": 4314
+},
+"anon001/inne/s093.js": {
+"data": [],
+"che": [],
+"bytes": 1404
+},
+"anon001/dane-pierwiastki/s094.js": {
+"data": [
+"ISOTOPE_SCIENCE_CONTRACT"
+],
+"che": [
+"DATA",
+"ISOTOPE_SCIENCE_AUDIT"
+],
+"bytes": 3656
+},
+"anon001/audyt/s095.js": {
+"data": [],
+"che": [
+"ATOMIC_PROPS_AUDIT"
+],
+"bytes": 1087
+},
+"anon001/inne/s096.js": {
+"data": [],
+"che": [],
+"bytes": 1560
+},
+"anon001/inne/s097.js": {
+"data": [],
+"che": [],
+"bytes": 965
+},
+"anon001/nauka-referencje/s098.js": {
+"data": [
+"SOURCE_REGISTRY"
+],
+"che": [
+"DATA",
+"SOURCE_REGISTRY"
+],
+"bytes": 1791
+},
+"anon001/rdzen/s099.js": {
+"data": [],
+"che": [
+"ATOMIC_PROPERTY_SEMANTICS"
+],
+"bytes": 1244
+},
+"anon001/audyt/s100.js": {
+"data": [],
+"che": [
+"REFERENCE_AUDIT_V266"
+],
+"bytes": 1385
+},
+"anon001/audyt/s101.js": {
+"data": [],
+"che": [
+"SCIENCE_INTEGRITY"
+],
+"bytes": 982
+},
+"anon001/inne/s102.js": {
+"data": [],
+"che": [],
+"bytes": 951
+},
+"anon001/audyt/s103.js": {
+"data": [],
+"che": [
+"ATOMIC_PROVENANCE"
+],
+"bytes": 2118
+},
+"anon001/nauka-referencje/s104.js": {
+"data": [],
+"che": [
+"EQUILIBRIA_REFERENCE"
+],
+"bytes": 1505
+},
+"anon001/audyt/s105.js": {
+"data": [],
+"che": [
+"SCIENCE_INTEGRITY_V267"
+],
+"bytes": 1318
+},
+"anon001/dane-pierwiastki/s106.js": {
+"data": [
+"CIAAW_ATOMIC_WEIGHTS_2024",
+"CIAAW_ATOMIC_WEIGHTS_AUDIT"
+],
+"che": [
+"DATA"
+],
+"bytes": 3801
+},
+"anon001/nauka-referencje/s107.js": {
+"data": [],
+"che": [
+"SCIENCE_REFERENCE_BRIDGE"
+],
+"bytes": 908
+},
+"anon001/audyt/s108.js": {
+"data": [],
+"che": [
+"SCIENCE_INTEGRITY_V268"
+],
+"bytes": 1332
+},
+"anon001/audyt/s109.js": {
+"data": [],
+"che": [
+"REFERENCE_READINESS_MATRIX"
+],
+"bytes": 2119
+},
+"anon001/audyt/s110.js": {
+"data": [],
+"che": [
+"NIST_IE_AUDIT"
+],
+"bytes": 1522
+},
+"anon001/audyt/s111.js": {
+"data": [],
+"che": [
+"SCIENCE_INTEGRITY_V269"
+],
+"bytes": 1401
+},
+"anon001/audyt/s112.js": {
+"data": [],
+"che": [
+"SCIENCE_INTEGRITY",
+"SCIENCE_INTEGRITY_V269",
+"ATOMIC_WEIGHT_REFERENCE_AUDIT_V270",
+"REFERENCE_DATA_PACKAGE_AUDIT"
+],
+"bytes": 5386
+},
+"anon001/inne/s113.js": {
+"data": [],
+"che": [],
+"bytes": 701
+},
+"anon001/audyt/s114.js": {
+"data": [],
+"che": [
+"SCIENCE_RECORD_READINESS"
+],
+"bytes": 4239
+},
+"anon001/audyt/s115.js": {
+"data": [],
+"che": [
+"RUNTIME_SCIENCE_SELFTEST"
+],
+"bytes": 1659
+},
+"anon001/inne/s116.js": {
+"data": [],
+"che": [],
+"bytes": 940
+},
+"anon001/dane-termo-redoks/s117.js": {
+"data": [
+"REFERENCE_THERMO_V273",
+"REFERENCE_EQUILIBRIA_V273"
+],
+"che": [
+"DATA",
+"REFERENCE_EXPANSION_V273"
+],
+"bytes": 2767
+},
+"anon001/audyt/s118.js": {
+"data": [],
+"che": [
+"SOURCE_REGISTRY_EXTENDED"
+],
+"bytes": 958
+},
+"anon001/nauka-referencje/s119.js": {
+"data": [],
+"che": [
+"REFERENCE_MERGE_API"
+],
+"bytes": 1622
+},
+"anon001/dane-termo-redoks/s120.js": {
+"data": [
+"EQUILIBRIA_VERIFIED_2026"
+],
+"che": [
+"DATA",
+"EQUILIBRIA_VERIFIED_2026"
+],
+"bytes": 1600
+},
+"anon001/audyt/s121.js": {
+"data": [],
+"che": [
+"REACTION_AUDIT_V273"
+],
+"bytes": 1685
+},
+"anon001/audyt/s122.js": {
+"data": [],
+"che": [
+"SCIENCE_INTEGRITY"
+],
+"bytes": 1932
+},
+"anon001/audyt/s123.js": {
+"data": [],
+"che": [
+"FULL_SCIENCE_REGRESSION"
+],
+"bytes": 861
+},
+"anon001/inne/s124.js": {
+"data": [],
+"che": [],
+"bytes": 674
+},
+"anon001/audyt/s125.js": {
+"data": [],
+"che": [
+"ATOMIC_FIELD_AUDIT"
+],
+"bytes": 1749
+},
+"anon001/audyt/s126.js": {
+"data": [],
+"che": [
+"NUCLIDE_REFERENCE_CONTRACT"
+],
+"bytes": 1564
+},
+"anon001/rdzen/s127.js": {
+"data": [],
+"che": [
+"EQUILIBRIA_SEMANTICS"
+],
+"bytes": 1751
+},
+"anon001/audyt/s128.js": {
+"data": [],
+"che": [
+"REACTION_SCIENCE_CONTRACT_V274"
+],
+"bytes": 1129
+},
+"anon001/inne/s129.js": {
+"data": [],
+"che": [],
+"bytes": 1811
+},
+"anon001/audyt/s130.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V274"
+],
+"bytes": 747
+},
+"anon001/edukacja/s131.js": {
+"data": [],
+"che": [
+"LESSON_REACTION_CATALOG"
+],
+"bytes": 31943
+},
+"anon001/audyt/s132.js": {
+"data": [],
+"che": [
+"ATOMIC_FIELD_READINESS_INDEX"
+],
+"bytes": 1849
+},
+"anon001/inne/s133.js": {
+"data": [],
+"che": [],
+"bytes": 1457
+},
+"anon001/audyt/s134.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V275"
+],
+"bytes": 821
+},
+"anon001/audyt/s135.js": {
+"data": [],
+"che": [
+"REACTION_LESSON_RECONCILIATION"
+],
+"bytes": 3515
+},
+"anon001/inne/s136.js": {
+"data": [],
+"che": [],
+"bytes": 1347
+},
+"anon001/audyt/s137.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V276"
+],
+"bytes": 662
+},
+"anon001/inne/s138.js": {
+"data": [],
+"che": [],
+"bytes": 5551
+},
+"anon001/audyt/s139.js": {
+"data": [],
+"che": [
+"SCIENCE_DATA_GAP_AUDIT"
+],
+"bytes": 2676
+},
+"anon001/audyt/s140.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V277"
+],
+"bytes": 1032
+},
+"anon001/audyt/s141.js": {
+"data": [],
+"che": [
+"REACTION_EXPANSION_QUEUE"
+],
+"bytes": 2660
+},
+"anon001/inne/s142.js": {
+"data": [],
+"che": [],
+"bytes": 2244
+},
+"anon001/audyt/s143.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V278"
+],
+"bytes": 996
+},
+"anon001/inne/s144.js": {
+"data": [],
+"che": [],
+"bytes": 2543
+},
+"anon001/audyt/s145.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V279"
+],
+"bytes": 836
+},
+"anon001/dane-kwasy-zasady/s146.js": {
+"data": [
+"PROJECT_KNOWLEDGE_BASE"
+],
+"che": [
+"DATA",
+"PROJECT_KNOWLEDGE_BASE"
+],
+"bytes": 3294
+},
+"anon001/audyt/s147.js": {
+"data": [],
+"che": [
+"REACTION_LESSON_CLASSIFIER"
+],
+"bytes": 2229
+},
+"anon001/audyt/s148.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V280"
+],
+"bytes": 1161
+},
+"anon001/dane-termo-redoks/s149.js": {
+"data": [
+"THERMO_VERIFIED_REFERENCE",
+"EQUILIBRIA_VERIFIED_REFERENCE"
+],
+"che": [
+"DATA",
+"REFERENCE_VERIFIED_V281"
+],
+"bytes": 6906
+},
+"anon001/audyt/s150.js": {
+"data": [],
+"che": [
+"ELECTRO_REFERENCE_CONTRACT_V281"
+],
+"bytes": 1437
+},
+"anon001/audyt/s151.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V281"
+],
+"bytes": 1291
+},
+"anon001/nauka-referencje/s152.js": {
+"data": [],
+"che": [
+"ISOTOPE_SCIENCE_PACKAGE_V282"
+],
+"bytes": 2568
+},
+"anon001/audyt/s153.js": {
+"data": [],
+"che": [
+"REACTION_VERIFICATION_QUEUE_V282"
+],
+"bytes": 1676
+},
+"anon001/audyt/s154.js": {
+"data": [],
+"che": [
+"COMMON_DATA_AUDIT_V282"
+],
+"bytes": 1728
+},
+"anon001/dane-kwasy-zasady/s155.js": {
+"data": [
+"PROJECT_KNOWLEDGE_BASE"
+],
+"che": [],
+"bytes": 2077
+},
+"anon001/audyt/s156.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V282"
+],
+"bytes": 1194
+},
+"anon001/dane-pierwiastki/s157.js": {
+"data": [
+"ELEMENT_INDEX_V283",
+"SUBSTANCE_INDEX_V283",
+"MOLECULE_INDEX_V283",
+"REACTION_INDEX_V283"
+],
+"che": [
+"DATA",
+"SIMPLE_BASES_V283"
+],
+"bytes": 3788
+},
+"anon001/audyt/s158.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V283"
+],
+"bytes": 643
+},
+"anon001/dane-kwasy-zasady/s159.js": {
+"data": [
+"SIMPLE_BASE_FINAL_V284"
+],
+"che": [
+"DATA",
+"SIMPLE_BASES_FINAL_V284"
+],
+"bytes": 3438
+},
+"anon001/dane-kwasy-zasady/s160.js": {
+"data": [
+"SCIENCE_SMALL_BASES_V286"
+],
+"che": [
+"DATA",
+"SCIENCE",
+"version",
+"dataVersion",
+"contractVersion",
+"schemaVersion"
+],
+"bytes": 2224
+},
+"anon001/rdzen/s161.js": {
+"data": [],
+"che": [
+"RUNTIME"
+],
+"bytes": 411
+},
+"anon001/nauka-referencje/s162.js": {
+"data": [
+"SCIENCE_REFERENCE_CORE_V287"
+],
+"che": [
+"DATA",
+"SCIENCE"
+],
+"bytes": 5770
+},
+"anon001/audyt/s163.js": {
+"data": [],
+"che": [
+"FULL_REGRESSION_V287"
+],
+"bytes": 642
+},
+"anon001/nauka-referencje/s164.js": {
+"data": [
+"SCIENCE_CORE_V288"
+],
+"che": [
+"DATA"
+],
+"bytes": 4183
+},
+"anon001/nauka-referencje/s165.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289"
+],
+"che": [
+"DATA",
+"SCIENCE_VERIFICATION_LEDGER_V289"
+],
+"bytes": 3004
+},
+"anon001/audyt/s166.js": {
+"data": [],
+"che": [
+"SCIENCE_CORE_REGRESSION_V288"
+],
+"bytes": 749
+},
+"anon001/nauka-referencje/s167.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"NEW_REFERENCE_DATA_V290"
+],
+"che": [
+"DATA"
+],
+"bytes": 2569
+},
+"anon001/audyt/s168.js": {
+"data": [],
+"che": [
+"NEW_REFERENCE_REGRESSION_V290"
+],
+"bytes": 793
+},
+"anon001/nauka-referencje/s169.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_BATCH_REFERENCE_V291"
+],
+"che": [
+"DATA"
+],
+"bytes": 3730
+},
+"anon001/audyt/s170.js": {
+"data": [],
+"che": [
+"SCIENCE_BATCH_REFERENCE_REGRESSION_V291"
+],
+"bytes": 887
+},
+"anon001/nauka-referencje/s171.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_BATCH_REFERENCE_V292"
+],
+"che": [
+"DATA"
+],
+"bytes": 2671
+},
+"anon001/audyt/s172.js": {
+"data": [],
+"che": [
+"SCIENCE_BATCH_REFERENCE_REGRESSION_V292"
+],
+"bytes": 813
+},
+"anon001/nauka-referencje/s173.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_BATCH_REFERENCE_V293"
+],
+"che": [
+"DATA"
+],
+"bytes": 2974
+},
+"anon001/audyt/s174.js": {
+"data": [],
+"che": [
+"SCIENCE_BATCH_REFERENCE_REGRESSION_V293"
+],
+"bytes": 944
+},
+"anon001/nauka-referencje/s175.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_BATCH_REFERENCE_V294"
+],
+"che": [
+"DATA"
+],
+"bytes": 1998
+},
+"anon001/audyt/s176.js": {
+"data": [],
+"che": [
+"SCIENCE_BATCH_REFERENCE_REGRESSION_V294"
+],
+"bytes": 896
+},
+"anon001/nauka-referencje/s177.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_BATCH_REFERENCE_V295"
+],
+"che": [
+"DATA"
+],
+"bytes": 4582
+},
+"anon001/audyt/s178.js": {
+"data": [],
+"che": [
+"SCIENCE_BATCH_REFERENCE_REGRESSION_V295"
+],
+"bytes": 1132
+},
+"anon001/nauka-referencje/s179.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_BATCH_REFERENCE_V296"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 3202
+},
+"anon001/nauka-referencje/s180.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_BATCH_REFERENCE_V297"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 2786
+},
+"anon001/rdzen/s181.js": {
+"data": [],
+"che": [
+"ENGINE"
+],
+"bytes": 634
+},
+"anon001/dane-termo-redoks/s182.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_EQUILIBRIA_REFERENCE_V298"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 3747
+},
+"anon001/rdzen/s183.js": {
+"data": [],
+"che": [
+"ENGINE"
+],
+"bytes": 766
+},
+"anon001/dane-termo-redoks/s184.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_EQUILIBRIA_REFERENCE_V299"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 2380
+},
+"anon001/dane-termo-redoks/s185.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_HENRY_REFERENCE_V301"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 1988
+},
+"anon001/dane-termo-redoks/s186.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_HENRY_REFERENCE_V302"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 3664
+},
+"anon001/edukacja/s187.js": {
+"data": [],
+"che": [
+"EDUCATION_PRIORITY_V303"
+],
+"bytes": 3511
+},
+"anon001/dane-kwasy-zasady/s188.js": {
+"data": [
+"SCIENCE_VERIFICATION_LEDGER_V289",
+"SCIENCE_PKA_REFERENCE_V300"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 3593
+},
+"anon001/edukacja/s189.js": {
+"data": [
+"EDUCATION_CORE_V304"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 9010
+},
+"anon001/edukacja/s190.js": {
+"data": [
+"EDUCATION_P0_V305"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 3375
+},
+"anon001/edukacja/s191.js": {
+"data": [
+"EDUCATION_MASS_V306"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 7382
+},
+"anon001/edukacja/s192.js": {
+"data": [
+"EDUCATION_MASS_V307"
+],
+"che": [
+"DATA",
+"EDUCATION_PRIORITY_V303",
+"EDUCATION_MASS_AUDIT_V307",
+"modules",
+"registry"
+],
+"bytes": 12730
+},
+"anon001/edukacja/s193.js": {
+"data": [
+"EDUCATION_MASS_V308"
+],
+"che": [
+"DATA",
+"modules",
+"registry",
+"EDUCATION_VERIFICATION_LEDGER_V308",
+"EDUCATION_MASS_AUDIT_V308"
+],
+"bytes": 5342
+},
+"anon001/edukacja/s194.js": {
+"data": [
+"EDUCATION_MASS_V309"
+],
+"che": [
+"ENGINE",
+"DATA"
+],
+"bytes": 7480
+},
+"anon001/edukacja/s195.js": {
+"data": [
+"EDUCATION_MASS_V310"
+],
+"che": [
+"ENGINE",
+"DATA",
+"EDU"
+],
+"bytes": 9338
+},
+"anon001/edukacja/s196.js": {
+"data": [
+"EDUCATION_MASS_V311"
+],
+"che": [
+"DATA",
+"EDUCATION"
+],
+"bytes": 8005
+},
+"anon001/edukacja/s197.js": {
+"data": [
+"EDUCATION_CLOSURE_V313"
+],
+"che": [
+"DATA",
+"EDUCATION",
+"EDUCATION_CLOSURE_LEDGER_V313"
+],
+"bytes": 5929
+},
+"anon001/edukacja/s198.js": {
+"data": [
+"EDUCATION_MAX_V314"
+],
+"che": [
+"DATA",
+"EDUCATION",
+"EDUCATION_MAX_LEDGER_V314"
+],
+"bytes": 7818
+},
+"anon001/edukacja/s199.js": {
+"data": [
+"EDUCATION_MAX_V315"
+],
+"che": [
+"DATA",
+"EDUCATION"
+],
+"bytes": 6440
+},
+"anon001/edukacja/s200.js": {
+"data": [],
+"che": [
+"EDUCATION"
+],
+"bytes": 34794
+},
+"anon001/edukacja/s201.js": {
+"data": [],
+"che": [
+"EDUCATION"
+],
+"bytes": 22609
+},
+"anon001/rdzen/s202.js": {
+"data": [],
+"che": [
+"REACTION_LESSON_RECONCILIATION",
+"EDUCATION",
+"SOURCE_BRIDGE_V318",
+"KNOWLEDGE"
+],
+"bytes": 4844
+},
+"anon001/rdzen/s203.js": {
+"data": [],
+"che": [
+"EDUCATION",
+"KNOWLEDGE"
+],
+"bytes": 3452
+},
+"anon001/edukacja/s204.js": {
+"data": [],
+"che": [
+"EDUCATION",
+"EDUCATION_ENGINE"
+],
+"bytes": 6789
+},
+"anon001/edukacja/s205.js": {
+"data": [],
+"che": [
+"EDUCATION_ENGINE_V322",
+"EDUCATION_MAX_BATCH_V322"
+],
+"bytes": 4893
+},
+"anon001/edukacja/s206.js": {
+"data": [],
+"che": [
+"EDUCATION",
+"EDUCATION_ENGINE_V322"
+],
+"bytes": 3919
+},
+"anon001/edukacja/s207.js": {
+"data": [],
+"che": [
+"EDUCATION",
+"EDUCATION_ENGINE_V322"
+],
+"bytes": 4016
+},
+"anon001/edukacja/s208.js": {
+"data": [],
+"che": [
+"EDUCATION",
+"EDUCATION_ENGINE_V322"
+],
+"bytes": 1681
+},
+"anon001/edukacja/s209.js": {
+"data": [],
+"che": [
+"EDUCATION"
+],
+"bytes": 3955
+},
+"anon001/edukacja/s210.js": {
+"data": [],
+"che": [
+"EDUCATION"
+],
+"bytes": 2559
+},
+"anon001/edukacja/s211.js": {
+"data": [],
+"che": [
+"EDUCATION"
+],
+"bytes": 5418
+},
+"anon001/edukacja/s212.js": {
+"data": [],
+"che": [
+"EDUCATION"
+],
+"bytes": 2192
+},
+"anon001/edukacja/s213.js": {
+"data": [],
+"che": [
+"EDUCATION"
+],
+"bytes": 4472
+},
+"anon001/rdzen/s214.js": {
+"data": [],
+"che": [
+"STRUCTURE",
+"ELECTRONIC_MODEL",
+"RUNTIME",
+"REGRESSION",
+"EDUCATION",
+"PROJECT_POLICY"
+],
+"bytes": 5000
+},
+"anon001/audyt/s215.js": {
+"data": [],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331"
+],
+"bytes": 2276
+},
+"anon001/rdzen/s216.js": {
+"data": [],
+"che": [
+"STRUCTURE",
+"RUNTIME",
+"EDUCATION",
+"ATOM_MODEL_V332"
+],
+"bytes": 7008
+},
+"anon001/rdzen/s217.js": {
+"data": [],
+"che": [
+"STRUCTURE",
+"RUNTIME",
+"ATOM_MODEL_V333"
+],
+"bytes": 3339
+},
+"anon001/audyt/s218.js": {
+"data": [],
+"che": [
+"CURRICULUM_REQUIREMENTS_LOCK_V334"
+],
+"bytes": 7508
+},
+"anon001/audyt/s219.js": {
+"data": [],
+"che": [
+"MASTER_EXECUTION_ROADMAP_V335"
+],
+"bytes": 4044
+},
+"anon001/rdzen/s220.js": {
+"data": [],
+"che": [
+"RUNTIME",
+"EDUCATION",
+"CURRICULUM_EXECUTION_EVIDENCE_V336"
+],
+"bytes": 7065
+},
+"anon001/rdzen/s221.js": {
+"data": [],
+"che": [
+"REACTION",
+"STRUCTURE",
+"RUNTIME",
+"MAX_VERIFY_V337",
+"gapAuditV337"
+],
+"bytes": 5868
+},
+"anon001/rdzen/s222.js": {
+"data": [],
+"che": [
+"REACTION",
+"RUNTIME",
+"CURRICULUM",
+"CALC",
+"MAX_REGRESSION"
+],
+"bytes": 5162
+},
+"anon001/rdzen/s223.js": {
+"data": [],
+"che": [
+"EDUCATION",
+"MAX_V339",
+"REDOX",
+"SOLUTIONS",
+"INDICATORS",
+"VIS"
+],
+"bytes": 4541
+},
+"anon001/inne/s224.js": {
+"data": [],
+"che": [],
+"bytes": 309
+},
+"anon001/rdzen/s225.js": {
+"data": [],
+"che": [
+"RUNTIME",
+"EDUCATION",
+"VIS",
+"MAX_V340_TESTS",
+"MAX_V340"
+],
+"bytes": 8413
+},
+"anon001/rdzen/s226.js": {
+"data": [],
+"che": [
+"RUNTIME",
+"EDUCATION",
+"MAX_V341_TESTS",
+"MAX_V341"
+],
+"bytes": 6180
+},
+"anon001/rdzen/s227.js": {
+"data": [],
+"che": [
+"EDUCATION",
+"MAX_REGRESSION_V342"
+],
+"bytes": 1100
+},
+"anon001/rdzen/s228.js": {
+"data": [],
+"che": [
+"EXPERIMENT_OBSERVATION_ENGINE_V344",
+"P0_REGRESSION_V344"
+],
+"bytes": 1662
+},
+"anon001/rdzen/s229.js": {
+"data": [],
+"che": [
+"RUNTIME",
+"EDUCATION_ENGINE",
+"EXPERIMENT_P0_V345",
+"P0_REGRESSION_V345"
+],
+"bytes": 6331
+},
+"anon001/rdzen/s230.js": {
+"data": [],
+"che": [
+"RUNTIME",
+"EDUCATION_ENGINE",
+"EXPERIMENT_EVIDENCE_ENGINE_V347",
+"P0_REGRESSION_V347"
+],
+"bytes": 2830
+},
+"anon001/edukacja/s231.js": {
+"data": [
+"LO_CHEM_MAX381_388"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"CALC",
+"MAX381_388_TEST"
+],
+"bytes": 3691
+},
+"anon001/edukacja/s232.js": {
+"data": [
+"LO_CHEM_MAX389_396"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"CALC",
+"REACTION_GRAPH",
+"DATA_AUDIT_V396",
+"MAX389_396_TEST"
+],
+"bytes": 3381
+},
+"anon001/dane-substancje/s233.js": {
+"data": [
+"BIOMOLECULE_CHEMISTRY_V404"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"CALC",
+"EXPERIMENT_DATA",
+"CURRICULUM_AUDIT_V404",
+"MAX397_404_TEST"
+],
+"bytes": 2793
+},
+"anon001/rdzen/s234.js": {
+"data": [],
+"che": [
+"RUNTIME",
+"EDUCATION_ENGINE",
+"EXPERIMENT_EVIDENCE_ENGINE_V346",
+"P0_REGRESSION_V346"
+],
+"bytes": 5403
+},
+"anon001/audyt/s235.js": {
+"data": [],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"SP78",
+"P0_REGRESSION_V348"
+],
+"bytes": 2591
+},
+"anon001/audyt/s236.js": {
+"data": [],
+"che": [
+"SP78",
+"P0_REGRESSION_V349"
+],
+"bytes": 1688
+},
+"anon001/audyt/s237.js": {
+"data": [],
+"che": [
+"SP78",
+"P0_REGRESSION_V350"
+],
+"bytes": 935
+},
+"anon001/audyt/s238.js": {
+"data": [],
+"che": [
+"SP78",
+"P0_REGRESSION_V351"
+],
+"bytes": 849
+},
+"anon001/rdzen/s239.js": {
+"data": [],
+"che": [
+"RUNTIME",
+"SP78"
+],
+"bytes": 731
+},
+"anon001/audyt/s240.js": {
+"data": [],
+"che": [
+"SP78",
+"P0_REGRESSION_V354"
+],
+"bytes": 687
+},
+"anon001/rdzen/s241.js": {
+"data": [],
+"che": [
+"RUNTIME",
+"SP78"
+],
+"bytes": 755
+},
+"anon001/audyt/s242.js": {
+"data": [],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"CURRICULUM",
+"P0_REGRESSION_V357"
+],
+"bytes": 7793
+},
+"anon001/rdzen/s243.js": {
+"data": [],
+"che": [
+"CURRICULUM",
+"P0_REGRESSION_V359"
+],
+"bytes": 4510
+},
+"anon001/audyt/s244.js": {
+"data": [],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"CHEMISTRY_LO_MAX_02_V361",
+"P0_REGRESSION_V361"
+],
+"bytes": 1474
+},
+"anon001/audyt/s245.js": {
+"data": [],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"GAS_SOLUTION_ENGINE_V362",
+"P0_REGRESSION_V362"
+],
+"bytes": 1432
+},
+"anon001/audyt/s246.js": {
+"data": [
+"thermoKinetics"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"THERMOKINETICS_ENGINE_V363",
+"P0_REGRESSION_V363"
+],
+"bytes": 2016
+},
+"anon001/audyt/s247.js": {
+"data": [
+"equilibrium"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"EQUILIBRIUM_ENGINE_V364",
+"P0_REGRESSION_V364"
+],
+"bytes": 2334
+},
+"anon001/audyt/s248.js": {
+"data": [
+"thermoEquilibrium"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"THERMO_EQUILIBRIUM_ENGINE_V365",
+"P0_REGRESSION_V365"
+],
+"bytes": 1212
+},
+"anon001/audyt/s249.js": {
+"data": [
+"acidBase"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"ACID_BASE_ENGINE_V366",
+"P0_REGRESSION_V366"
+],
+"bytes": 1617
+},
+"anon001/audyt/s250.js": {
+"data": [
+"buffers",
+"titration"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"BUFFER_TITRATION_ENGINE_V367",
+"P0_REGRESSION_V367"
+],
+"bytes": 1548
+},
+"anon001/audyt/s251.js": {
+"data": [
+"solubility"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"SOLUBILITY_ENGINE_V368",
+"P0_REGRESSION_V368"
+],
+"bytes": 1350
+},
+"anon001/audyt/s252.js": {
+"data": [
+"redox"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"REDOX_ENGINE_V369",
+"P0_REGRESSION_V369"
+],
+"bytes": 1467
+},
+"anon001/audyt/s253.js": {
+"data": [
+"electrochemistry"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"ELECTROCHEM_ENGINE_V370",
+"P0_REGRESSION_V370"
+],
+"bytes": 1254
+},
+"anon001/organiczna/s254.js": {
+"data": [
+"inorganic"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"INORGANIC_ENGINE_V371",
+"P0_REGRESSION_V371"
+],
+"bytes": 1209
+},
+"anon001/audyt/s255.js": {
+"data": [
+"metals"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"METAL_ENGINE_V372",
+"P0_REGRESSION_V372"
+],
+"bytes": 1406
+},
+"anon001/organiczna/s256.js": {
+"data": [
+"organic"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"ORGANIC_HC_ENGINE_V373",
+"P0_REGRESSION_V373"
+],
+"bytes": 1455
+},
+"anon001/organiczna/s257.js": {
+"data": [
+"organic"
+],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"ORGANIC_FUNCTIONAL_ENGINE_V374",
+"P0_REGRESSION_V374"
+],
+"bytes": 1621
+},
+"anon001/organiczna/s258.js": {
+"data": [
+"biochemistry"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"BIOCHEM_ENGINE_V375",
+"P0_REGRESSION_V375"
+],
+"bytes": 1759
+},
+"anon001/organiczna/s259.js": {
+"data": [
+"biochemistry"
+],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"NUCLEIC_ACID_ENGINE_V376",
+"P0_REGRESSION_V376"
+],
+"bytes": 1395
+},
+"anon001/audyt/s260.js": {
+"data": [
+"methodology"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"LAB_METHOD_ENGINE_V377",
+"P0_REGRESSION_V377"
+],
+"bytes": 1244
+},
+"anon001/audyt/s261.js": {
+"data": [
+"quality"
+],
+"che": [
+"DATA",
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"DATA_QUALITY_ENGINE_V378",
+"P0_REGRESSION_V378"
+],
+"bytes": 1233
+},
+"anon001/audyt/s262.js": {
+"data": [],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"CURRICULUM",
+"P0_REGRESSION_V379"
+],
+"bytes": 1195
+},
+"anon001/rdzen/s263.js": {
+"data": [],
+"che": [
+"PROJECT_REQUIREMENTS_LOCK_V331",
+"LO_FINAL"
+],
+"bytes": 1616
+},
+"anon001/audyt/s264.js": {
+"data": [],
+"che": [
+"SCIENCE_PROVENANCE_CROSSWALK_V382",
+"P0_REGRESSION_V382"
+],
+"bytes": 6348
+},
+"anon001/rdzen/s265.js": {
+"data": [],
+"che": [
+"FORMULA_REACTION_VALIDATOR_V385",
+"P0_REGRESSION_V385"
+],
+"bytes": 3033
+},
+"anon001/audyt/s266.js": {
+"data": [],
+"che": [
+"CHEMISTRY_LO_AUDIT_V386",
+"P0_REGRESSION_V386"
+],
+"bytes": 5743
+},
+"anon001/dane-termo-redoks/s267.js": {
+"data": [
+"ELECTROCHEM_REFERENCE_ROWS_V387"
+],
+"che": [
+"DATA",
+"P0_REGRESSION_V387"
+],
+"bytes": 3159
+},
+"anon001/dane-kwasy-zasady/s268.js": {
+"data": [
+"AGCL_SOLUBILITY_PROVENANCE_V406"
+],
+"che": [
+"DATA",
+"P0_REGRESSION_V406"
+],
+"bytes": 1927
+},
+"anon001/dane-kwasy-zasady/s269.js": {
+"data": [
+"ACID_BASE_REFERENCE_NORMALIZATION_V407"
+],
+"che": [
+"DATA",
+"P0_REGRESSION_V407"
+],
+"bytes": 4209
+},
+"anon001/rdzen/s270.js": {
+"data": [],
+"che": [
+"CHEMISTRY_EXECUTION_ROADMAP_V408",
+"PARSER_ENGINE_V410",
+"STOICH_ENGINE_V410",
+"THERMO_KINETICS_V410",
+"REDOX_ELECTRO_V410",
+"SYSTEMATICS_V410",
+"LAB_METHOD_V410",
+"LO_MAPPING_V410",
+"RUNTIME_GATE_V410",
+"CHEMISTRY_EXECUTION_ROADMAP_V410",
+"CHEMISTRY_EXECUTION_ROADMAP_V409",
+"P0_REGRESSION_V410"
+],
+"bytes": 18949
+},
+"anon001/audyt/s271.js": {
+"data": [],
+"che": [
+"REGISTRY_CLOSURE_V411",
+"E8_COMPLETION_V409",
+"P0_REGRESSION_V411"
+],
+"bytes": 3698
+},
+"anon001/rdzen/s272.js": {
+"data": [],
+"che": [
+"ENGINE",
+"P0_REGRESSION_V412"
+],
+"bytes": 1753
+},
+"anon001/rdzen/s273.js": {
+"data": [],
+"che": [
+"ENGINE"
+],
+"bytes": 428
+},
+"anon001/edukacja/s274.js": {
+"data": [
+"E8"
+],
+"che": [
+"DATA",
+"EDUCATION",
+"E8_COMPLETION_V409",
+"LEVELS",
+"P0_REGRESSION_V413"
+],
+"bytes": 9712
+},
+"anon001/inne/s275.js": {
+"data": [],
+"che": [],
+"bytes": 369
+},
+"anon001/rdzen/s276.js": {
+"data": [],
+"che": [
+"VALENCE"
+],
+"bytes": 1804
+},
+"anon001/rdzen/s277.js": {
+"data": [],
+"che": [
+"ENGINE",
+"selfTest",
+"READY",
+"whenReady"
+],
+"bytes": 3248
+},
+"anon001/edukacja/s278.js": {
+"data": [
+"SCHOOL_PACK"
+],
+"che": [
+"DATA",
+"SCHOOL_PACK_V421"
+],
+"bytes": 7175
+},
+"anon001/edukacja/s279.js": {
+"data": [],
+"che": [
+"SCHOOL_REACT_V421"
+],
+"bytes": 678
+}
+}

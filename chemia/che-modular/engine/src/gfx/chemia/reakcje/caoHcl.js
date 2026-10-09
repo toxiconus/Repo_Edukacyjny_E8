@@ -1,0 +1,1 @@
+P('caoHcl',{n:'CaO + HCl',solid:pw(wh),out:['nic'],heat:.8,T:38,why:'Biały proszek znika, roztwór bezbarwny i ciepły (CaCl₂ + H₂O).'});

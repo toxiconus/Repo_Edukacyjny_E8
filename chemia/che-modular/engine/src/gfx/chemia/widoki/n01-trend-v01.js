@@ -1,0 +1,17 @@
+V.define('n01-trend-v01',{title:'Trend charakteru tlenków: w okresie i wg stopnia utlenienia',tag:'AMB',
+ hint:'Okres 2 i 3: tlenki na najwyższym stopniu utlenienia — od zasadowych przez amfoteryczne do kwasowych; linia = elektroujemność pierwiastka. Zakładka „ten sam metal”: Cr i Mn — im wyższy stopień utlenienia, tym bardziej kwasowy tlenek.',
+ foot:'CHE.OXIDES.trend · elektroujemność: CHE.DATA.ELEMENTS_118 · to trend (model), nie algorytm bez wyjątków.',
+ build:function(host){host.innerHTML='';var A=OXA(),OX=D().OXIDES,st={m:3};var bar=el('div','r');host.appendChild(bar);var bs=[];
+  [['okres 2',2],['okres 3',3],['ten sam metal: Cr',"Cr"],['ten sam metal: Mn',"Mn"]].forEach(function(x){var b=btn(bar,x[0],function(){st.m=x[1];bs.forEach(function(q){q.classList.toggle('on',q===b)});draw()});bs.push(b);if(x[1]===3)b.classList.add('on')});
+  var cv=el('canvas');cv.style.cssText='width:100%;height:300px;display:block;border-radius:12px;background:var(--surface-soft,#f1f5f9)';host.appendChild(cv);var note=el('div','note');host.appendChild(note);
+  function items(){if(typeof st.m==='number')return A.trend(st.m);var L=st.m==='Cr'?['CrO','Cr2O3','CrO3']:['MnO','MnO2','Mn2O7'];return L.map(function(f){var o=OX[f];return{f:f,el:o.el,ox:o.ox,char:o.char,water:o.water.text}})}
+  function draw(){var d=Math.min(2,window.devicePixelRatio||1),w=cv.clientWidth||600,h=cv.clientHeight||300;cv.width=w*d;cv.height=h*d;var x=cv.getContext('2d');x.setTransform(d,0,0,d,0,0);var T=G().theme(),I=items(),n=I.length,L=40,R=w-20,B=h-60,Tp=20,bw=(R-L)/n;
+   x.strokeStyle=T.mut;x.beginPath();x.moveTo(L,Tp);x.lineTo(L,B);x.lineTo(R,B);x.stroke();var byOx=typeof st.m!=='number';
+   I.forEach(function(it,i){var v=byOx?it.ox/7:(it.ox||0)/7,hh=(B-Tp)*v,xx=L+i*bw+bw*.18,ww=bw*.64;x.fillStyle=CC(it.char);x.globalAlpha=.85;x.fillRect(xx,B-hh,ww,hh);x.globalAlpha=1;
+    x.fillStyle=T.text;x.textAlign='center';x.font='800 15px system-ui';x.fillText(A.pretty(it.f),xx+ww/2,B+18);x.font='600 11px system-ui';x.fillStyle=CC(it.char);x.fillText(it.char,xx+ww/2,B+34);x.fillStyle=T.mut;x.fillText('+'+['','I','II','III','IV','V','VI','VII'][it.ox]||it.ox,xx+ww/2,B-hh-8)});
+   if(!byOx){var en=I.map(function(it){return it.en||0}),mx=4;x.strokeStyle='#0f172a';x.lineWidth=2;x.setLineDash([5,4]);x.beginPath();I.forEach(function(it,i){var px=L+i*bw+bw/2,py=B-(B-Tp)*(it.en||0)/mx;i?x.lineTo(px,py):x.moveTo(px,py)});x.stroke();x.setLineDash([]);
+    I.forEach(function(it,i){var px=L+i*bw+bw/2,py=B-(B-Tp)*(it.en||0)/mx;x.fillStyle='#0f172a';x.beginPath();x.arc(px,py,4,0,7);x.fill();x.font='600 10px system-ui';x.fillText('EN '+String(it.en).replace('.',','),px,py-10)})}
+   x.fillStyle=T.mut;x.font='600 11px system-ui';x.textAlign='left';x.fillText(byOx?'wysokość słupka = stopień utlenienia metalu':'słupek = stopień utlenienia (najwyższy) · linia = elektroujemność',L+4,12);
+   note.innerHTML=byOx?'<b>'+st.m+'</b>: '+I.map(function(it){return A.pretty(it.f)+' (+'+it.ox+') — <b style="color:'+CC(it.char)+'">'+it.char+'</b>'}).join(' → ')+'. Ten sam pierwiastek może tworzyć tlenki o różnym charakterze — decyduje stopień utlenienia (im wyższy, tym bardziej kwasowy). Dlatego reguła „metal = zasadowy” jest tylko przybliżeniem.':
+    'W okresie rośnie elektroujemność i stopień utlenienia pierwiastka w najwyższym tlenku → charakter przesuwa się od zasadowego, przez amfoteryczny, do kwasowego. '+(st.m===2?'Fluor pomijamy: OF₂ to fluorek tlenu, nie tlenek.':'SiO₂ — kwasowy, ale z wodą praktycznie nie reaguje (sieć kowalencyjna).')}
+  draw()}});

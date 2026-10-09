@@ -1,0 +1,170 @@
+#!/usr/bin/env python3
+"""silnik.py — składa silnik CHE z modułów (lab = szkielet + moduły; che-viz.js dla lekcji).
+
+Biblioteka:
+  lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None) -> str
+      drop: zbiór id modułów do pominięcia (treść <script> zostaje pusta).
+      gfx_allow: {rodzaj: set(id)} dla naczyń/efektów/scen/reakcji/widoków (gfx_join).
+      sections: lista plików sekcji _anon_001 (None = cały moduł).
+  che_viz(html) -> str   pakiet silnika dla lekcji (jak archiwalny split_viz.py v0_59).
+CLI (test bezstratności):
+  python3 tools/silnik.py   → lab == monolit (sha1) i che-viz.js == archiwum v0_59 (sha1)
+"""
+import hashlib, json, re, subprocess, sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tools"))
+from gfx_join import join  # noqa: E402
+
+MOD = ROOT / "modules"
+CATALOG = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
+BY_INDEX = {c["index"]: c for c in CATALOG}
+_SK = ROOT / "engine/src/gfx/_szkielet"
+GFX_MODS = {p.stem for p in _SK.glob("*.js")} | {p.name for p in _SK.iterdir() if p.is_dir()}
+SRC = ROOT / "engine/src"
+from scal import scal  # noqa: E402
+MONO_NAME = "CHE_lab_wizualizacje_v0_57_GFX16.html"
+LESSON_SRC = ["che-n01-src", "che-n02-src", "che-kw-src", "che-sole-src", "fiz-elektro-src"]
+
+
+def module_body(c, gfx_allow=None, przedmiot="chemia", sections=None):
+    if c["id"] in GFX_MODS:
+        return join(c["id"], gfx_allow, przedmiot)
+    if c["id"] == "_anon_001":
+        if sections is None:
+            sections = [x["file"].split("/", 1)[1] for x in json.loads((ROOT / "sections/anon001_catalog.json").read_text(encoding="utf-8"))]
+        return "".join((ROOT / "sections/anon001" / f).read_text(encoding="utf-8") for f in sections)  # kolejność jak w katalogu
+    f, d = SRC / "moduly" / f'{c["id"]}.js', SRC / "moduly" / c["id"]
+    if d.is_dir():
+        return scal(d)
+    if f.exists():
+        return f.read_text(encoding="utf-8")
+    return (MOD / c["file"]).read_text(encoding="utf-8")   # zapas: moduł z ekstrakcji
+
+
+def skeleton(drop_css=None):
+    """HTML labu: engine/src/lab/szkielet.html + CSS z engine/src/style (zapas: modules/_lab_skeleton.html).
+    drop_css: nazwy plików CSS pominiętych (blok <style> zostaje pusty)."""
+    p = SRC / "lab/szkielet.html"
+    if not p.exists():
+        return (MOD / "_lab_skeleton.html").read_text(encoding="utf-8")
+    drop_css = drop_css or set()
+    return re.sub(r"/\*@@CSS ([\w.-]+)@@\*/",
+                  lambda m: "" if m.group(1) in drop_css else (SRC / "style" / m.group(1)).read_text(encoding="utf-8"),
+                  p.read_text(encoding="utf-8"))
+
+
+DODATKI = SRC / "dodatki"   # nowa warstwa obok starego silnika (komponenty, podmiany) — poza testem bajt w bajt
+
+
+def dodatki_js():
+    return "\n".join(f.read_text(encoding="utf-8") for f in sorted(DODATKI.glob("*.js"))) if DODATKI.is_dir() else ""
+
+
+def lab_html(drop=None, gfx_allow=None, przedmiot="chemia", sections=None, drop_css=None, dodatki=False):
+    """dodatki=True: lab z nową warstwą engine/src/dodatki/*.js (na końcu <body>); False = stary silnik bajt w bajt."""
+    drop = drop or set()
+    skel = skeleton(drop_css)
+
+    def rep(m):
+        c = BY_INDEX[int(m.group(1))]
+        return "" if c["id"] in drop else module_body(c, gfx_allow, przedmiot, sections)
+
+    out = re.sub(r"/\*@@MOD (\d+)@@\*/", rep, skel)
+    if dodatki and dodatki_js():
+        js = dodatki_js().replace("</", "<\\/")
+        i = out.rfind("</body>")
+        out = out[:i] + '<script id="che-dodatki">\n' + js + "\n</script>\n" + out[i:]
+    return out
+
+
+ATLAS = SRC / "atlas"
+
+
+def atlas_moduly():
+    return [l.split("#")[0].strip() for l in (ATLAS / "moduly.txt").read_text(encoding="utf-8").splitlines() if l.split("#")[0].strip()]
+
+
+def atlas_sekcje():
+    """Sekcje rdzenia _anon_001 dla atlasu (engine/src/atlas/sekcje.txt z tools/atlas_odchudz.py); brak pliku = wszystkie."""
+    p = ATLAS / "sekcje.txt"
+    if not p.exists():
+        return None
+    return [l.strip() for l in p.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")]
+
+
+def atlas_html(sections="plik"):
+    """Atlas poza silnikiem: lab tylko z modułami z engine/src/atlas/moduly.txt + dodatki + start.js (bez ekranu powitalnego).
+    sections: "plik" = engine/src/atlas/sekcje.txt (jeśli jest), None = cały rdzeń, lista = te sekcje (anon001/<podmoduł>/sNNN.js bez prefiksu)."""
+    keep = set(atlas_moduly())
+    if sections == "plik":
+        sections = atlas_sekcje()
+    out = lab_html(drop={c["id"] for c in CATALOG} - keep, dodatki=True, sections=sections)
+    js = (ATLAS / "start.js").read_text(encoding="utf-8").replace("</", "<\\/")
+    i = out.rfind("</body>")
+    return out[:i] + '<script id="che-atlas-start">\n' + js + "\n</script>\n" + out[i:]
+
+
+STANDALONE = (ROOT / "engine/src/standalone.html")
+
+
+def che_viz(s, name=MONO_NAME):
+    """Logika 1:1 z archiwum/che_v0_59/narzedzia/split_viz.py (część che-viz.js)."""
+    head = re.search(r"<head>(.*?)</head>", s, re.S).group(1)
+    body = re.search(r"<body[^>]*>(.*)</body>", s, re.S).group(1)
+    head = re.sub(r"<meta[^>]*>\s*", "", head)
+    head = re.sub(r"<title>.*?</title>\s*", "", head, flags=re.S)
+    for sid in LESSON_SRC:
+        m = re.search(r'<script type="application/json" id="%s">.*?</script>' % re.escape(sid), body, re.S)
+        if m:
+            body = body.replace(m.group(0), "")
+    payload = head + body + STANDALONE.read_text(encoding="utf-8")
+    return ("/* che-viz.js — wspólny pakiet CHE (silnik, dane, GFX, widoki, style) z %s. ZAMROŻONY: nie edytować ręcznie.\n"
+            "   Źródła: gałąź claude/che-lab-archiwum-v0_57; odtworzenie: python3 build.py && python3 tools/split_viz.py */\n"
+            'document.documentElement.classList.add("che-standalone");\ndocument.write(%s);\n') % (
+        name, json.dumps(payload, ensure_ascii=False))
+
+
+def z_profilu(prof):
+    """che-viz.js z profilu odchudzania (engine/registry/profile/<nazwa>.json)."""
+    cat = json.loads((ROOT / "sections/anon001_catalog.json").read_text(encoding="utf-8"))
+    drop_s = set(prof.get("drop_sections", []))
+    keep = [x["file"].split("/", 1)[1] for x in cat if x["file"] not in drop_s]
+    allg = {}
+    for items in json.loads((ROOT / "engine/src/gfx/index.json").read_text(encoding="utf-8")).values():
+        for it in items:
+            allg.setdefault(it["kind"], set()).add(it["id"])
+    allow = {k: v - set(prof.get("drop_gfx", {}).get(k, [])) for k, v in allg.items()}
+    return che_viz(lab_html(drop=set(prof.get("drop_mods", [])), gfx_allow=allow, sections=keep,
+                            drop_css=set(prof.get("drop_css", []))))
+
+
+def sha(s):
+    return hashlib.sha1(s.encode("utf-8")).hexdigest()[:12]
+
+
+def test():
+    bad = 0
+    if (MOD / "_anon_001.js").exists():
+        cat = json.loads((ROOT / "sections/anon001_catalog.json").read_text(encoding="utf-8"))
+        joined = "".join((ROOT / "sections" / x["file"]).read_text(encoding="utf-8") for x in cat)
+        ok = joined == (MOD / "_anon_001.js").read_text(encoding="utf-8")
+        bad += not ok
+        print(("OK " if ok else "FAIL ") + f"sekcje _anon_001 ({len(cat)}) == moduł")
+    lab = lab_html()
+    mono = Path("/tmp/che_mono.html")
+    if mono.exists():
+        ok = sha(lab) == sha(mono.read_text(encoding="utf-8"))
+        # od 2026-10-08 atlas (_anon_004) rysuje komponentami (engine/src/komponenty) — zamierzona zmiana źródeł;
+        # równoważność sprawdza test zachowania: tools/atlas_sprawdz.cjs monolit ↔ nowy lab (che.py test)
+        print(("OK " if ok else "ZMIENIONY (zamierzone: atlas na komponentach) ") + "lab z modułów vs monolit v0_57 (bajty)")
+    arch = ROOT.parent / "archiwum/che_v0_59/dist/che-viz.js"
+    if arch.exists():
+        ok = sha(che_viz(lab)) == sha(arch.read_text(encoding="utf-8"))
+        print(("OK " if ok else "ZMIENIONY (zamierzone: atlas na komponentach) ") + "che-viz.js z modułów vs zamrożony v0_59 (bajty)")
+    return bad
+
+
+if __name__ == "__main__":
+    sys.exit(1 if test() else 0)

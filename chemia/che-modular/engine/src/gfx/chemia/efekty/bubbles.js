@@ -1,0 +1,12 @@
+effect('bubbles',{label:'Bąbelki',defaults:{size:1,rate:1},schema:{size:{t:'range',min:.4,max:3,step:.1,l:'Wielkość'},rate:{t:'range',min:.2,max:4,step:.1,l:'Natężenie'}},draw:e=>{const c=e.c,r=e.r,b=e.pool.bub=e.pool.bub||[],pp=e.pool.pops=e.pool.pops||[],g=e.st.gas||0,sz=(e.st.bubSize||1)*e.o.size,nn=(e.st.bubN||1)*e.o.rate,sol=e.pool.solPos||[],fromSol=e.st.bubFrom!=='bottom'&&sol.length>0;
+ if(g>0&&e.top<e.bot-6){const n=Math.floor(g*nn*e.dt*22+Math.random());for(let i=0;i<n&&b.length<180;i++){let x,y;if(fromSol&&Math.random()<.8){const s=sol[(Math.random()*sol.length)|0];x=s.x+Math.random()*s.w;y=s.y+Math.random()*s.h}else{const k=(Math.random()*7)|0;x=r.x+14+rnd(k+50)*(r.w-28)+(Math.random()-.5)*6;y=e.bot-6-(e.ph||0)}
+  if(y>e.top+4)b.push({x,y,r:(1.3+Math.random()*2.6)*sz,v:10,p:Math.random()*6})}}
+  
+ const PHb=C.PHYS,bo=PHb&&e.st.T!=null?PHb.boil(e.st.T,{sub:e.st.solvent,p:e.st.p}):null;e.pool.boil=bo;
+ if(bo&&bo.bubbles>.01&&e.top<e.bot-6){const n=Math.floor(bo.bubbles*e.o.rate*e.dt*34+Math.random());for(let i=0;i<n&&b.length<220;i++){const k=(Math.random()*6)|0,x=r.x+12+rnd(k+90)*(r.w-24)+(Math.random()-.5)*4,y=e.bot-4-(e.ph||0);if(y>e.top+4){const rr0=(1.6+Math.random()*(1.5+3*bo.bubbles))*sz;b.push({x,y,r:rr0,r0:rr0,v:6,p:Math.random()*6,vap:bo.collapse})}}}
+  
+ const pxcm=Math.max(6,(e.r.h||200)/9),slow=e.st.timeScale==null?.25:e.st.timeScale,dpx=Math.max(.05,10/pxcm);
+ for(let i=b.length-1;i>=0;i--){const q=b[i],vt=PHb?PHb.bubbleRise(q.r*2*dpx)*pxcm*slow:60;q.v+=(vt-q.v)*Math.min(1,e.dt*6);q.y-=q.v*e.dt;q.x+=Math.sin(e.t/200+q.p)*.4*(q.r>3?1.6:1);
+  if(q.vap){q.r-=e.dt*q.r0*q.vap*1.4;if(q.r<.5){b.splice(i,1);continue}}
+  if(q.y<e.surf(q.x)+1){pp.push({x:q.x,r:q.r,a:1});b.splice(i,1);continue}const k=1+.4*(e.bot-q.y)/Math.max(1,e.bot-e.top),rb=q.r*k;c.beginPath();c.arc(q.x,q.y,rb,0,7);c.fillStyle='rgba(255,255,255,.42)';c.fill();c.strokeStyle='rgba(80,100,120,.5)';c.lineWidth=1;c.stroke();c.beginPath();c.arc(q.x-rb*.3,q.y-rb*.3,Math.max(.6,rb*.25),0,7);c.fillStyle='rgba(255,255,255,.9)';c.fill()}
+ for(let i=pp.length-1;i>=0;i--){const q=pp[i];q.a-=e.dt*4;if(q.a<=0){pp.splice(i,1);continue}c.strokeStyle='rgba(255,255,255,'+q.a*.7+')';c.lineWidth=1;c.beginPath();c.ellipse(q.x,e.surf(q.x)+1,q.r*(2.2-q.a),q.r*.6*(2.2-q.a),0,0,7);c.stroke()}}});

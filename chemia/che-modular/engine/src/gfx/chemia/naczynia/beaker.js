@@ -1,0 +1,1 @@
+vessel('beaker',{path:(c,r)=>{c.beginPath();c.moveTo(r.x-7,r.y-3);c.quadraticCurveTo(r.x,r.y-1,r.x,r.y+9);c.lineTo(r.x,r.y+r.h-16);c.quadraticCurveTo(r.x,r.y+r.h,r.x+16,r.y+r.h);c.lineTo(r.x+r.w-16,r.y+r.h);c.quadraticCurveTo(r.x+r.w,r.y+r.h,r.x+r.w,r.y+r.h-16);c.lineTo(r.x+r.w,r.y)},hmax:1,rim:r=>[r.x,r.x+r.w,r.y,1],shadow:1,scale:{max:250,step:50,minor:25,x:.68}});

@@ -1,0 +1,22 @@
+V.define('n01-tlenki-v01',{title:'Tlenek — trzy pytania: charakter, woda, kwas / zasada',tag:'CHE',
+ hint:'Kliknij tlenek. Odpowiedzi na trzy pytania pochodzą z silnika (CHE.OXIDES): jaki charakter, czy reaguje z wodą, czy reaguje z kwasem / zasadą. Wybrany tlenek od razu trafia do zlewki z wodą i wskaźnikiem uniwersalnym („Powtórz” — jeszcze raz).',
+ foot:'Dane: CHE.DATA.OXIDES · równania: CHE.REACTION · barwa wskaźnika: CHE.COLORS (ind-uniwersalny) · pH po reakcji z wodą — wartości orientacyjne.',
+ build:function(host){host.innerHTML='';var A=OXA(),OX=D().OXIDES,st={f:'CaO',lv:1,inW:0};
+  var bar=el('div','r');host.appendChild(bar);var lvB=[];[['E8',1],['+ ambitne',2],['+ zaawansowane',3]].forEach(function(x){var b=btn(bar,x[0],function(){st.lv=x[1];lvB.forEach(function(q){q.classList.toggle('on',q===b)});chips()});lvB.push(b);if(x[1]===1)b.classList.add('on')});
+  var leg=el('span',null,'');leg.style.cssText='margin-left:auto;font:600 12px system-ui';leg.innerHTML=['zasadowy','kwasowy','amfoteryczny','obojętny','mieszany'].map(function(c){return'<span style="white-space:nowrap;margin-left:10px"><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:'+CC(c)+'"></span> '+c+'</span>'}).join('');bar.appendChild(leg);
+  var cg=el('div');cg.style.cssText='display:flex;flex-wrap:wrap;gap:6px;margin:8px 0';host.appendChild(cg);
+  var row=el('div');row.style.cssText='display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:12px;align-items:start';host.appendChild(row);
+  var left=el('div'),right=el('div');row.append(left,right);
+  var b2=el('div','r');left.appendChild(b2);var bw=btn(b2,'Powtórz',function(){st.inW=1;t0=performance.now()},'on');var t0=performance.now();st.inW=1;
+  var m=G().mount(left,{height:250,parts:[{id:'beaker',x:.05,y:.05,w:.9,h:.92,get:function(){var o=OX[st.f]||{},k=st.inW?Math.min(1,(performance.now()-t0)/1500):0,p=7+(phAfter(st.f)-7)*k,dis=st.inW&&o.water&&o.water.rx&&st.f!=='MgO';
+     var sol=o.state==='s'?[{col:rgb(o.color||'#f1f5f9'),eq:st.inW?(dis?3*(1-k):2.4):0,shape:'powder'}]:[];
+     return{liquid:st.inW?uni(p):[226,236,244],level:.55,T:st.inW&&(st.f==='CaO'||st.f==='Na2O'||st.f==='SO3'||st.f==='P2O5')?25+40*k:25,heat:st.inW&&st.f==='CaO'?k*2:0,gas:st.inW&&o.state==='g'?.6*(1-k*.5):0,solids:sol,label:st.inW?'pH ≈ '+String(Math.round(p*10)/10).replace('.',','):'woda + wskaźnik'}}}]});
+  var card=el('div');right.appendChild(card);
+  function chips(){cg.innerHTML='';Object.keys(OX).forEach(function(f){var o=OX[f];if((LV[o.level]||1)>st.lv)return;var b=el('button',null,'<b>'+A.pretty(f)+'</b>');b.type='button';b.style.cssText='border:2px solid '+CC(o.char)+';border-radius:10px;padding:5px 9px;background:'+(f===st.f?CC(o.char):'var(--panel,#fff)')+';color:'+(f===st.f?'#fff':'inherit')+';cursor:pointer;font:600 14px system-ui';b.onclick=function(){st.f=f;st.inW=1;t0=performance.now();chips();show()};cg.appendChild(b)})}
+  function show(){var o=OX[st.f];if(!o)return;var q=A.threeQuestions(st.f)||[];
+   card.innerHTML='<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span style="font:800 26px Inter,system-ui">'+A.pretty(st.f)+'</span><span style="font:600 15px system-ui">'+o.name+'</span><span style="background:'+CC(o.char)+';color:#fff;border-radius:999px;padding:3px 10px;font:700 12px system-ui">'+o.char+'</span><span style="display:inline-flex;align-items:center;gap:5px;font:12px system-ui;opacity:.8"><span style="width:16px;height:16px;border-radius:4px;border:1px solid #94a3b8;background:'+(o.color||'transparent')+'"></span>'+(o.colorName||'')+'</span></div>'+
+    '<div style="font:12px system-ui;opacity:.75;margin:4px 0 8px">wiązanie / budowa: '+o.bond+' · stan: '+({s:'stały',l:'ciekły',g:'gaz'}[o.state]||o.state)+' · poziom: '+o.level+'</div>'+
+    q.map(function(x,i){return'<div style="border:1px solid var(--line,#d5dee6);border-radius:10px;padding:8px 10px;margin:6px 0"><b>'+(i+1)+'. '+x.q+'</b> <span style="margin-left:6px">'+x.a+'</span>'+eqHtml(x.eq)+'</div>'}).join('')+
+    ((o.notes||[]).length?'<div class="note">'+o.notes.join('<br>')+'</div>':'')+
+    '<div class="note" style="opacity:.85">Charakter sprawdzamy reakcją z <b>kwasem</b> (zasadowy) lub z <b>zasadą</b> (kwasowy). Reakcja z wodą to osobne pytanie: CuO jest zasadowy, a z wodą nie reaguje; SiO₂ jest kwasowy, a z wodą praktycznie nie reaguje.</div>'}
+  chips();show()}});

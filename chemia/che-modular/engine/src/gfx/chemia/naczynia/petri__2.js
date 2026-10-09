@@ -1,0 +1,1 @@
+vessel('petri',{path:(c,r)=>{const y0=r.y+r.h*.7;rc(c,r.x+r.w*.04,y0,r.w*.92,r.y+r.h-y0-2,8)},hmax:.26,pad:2});

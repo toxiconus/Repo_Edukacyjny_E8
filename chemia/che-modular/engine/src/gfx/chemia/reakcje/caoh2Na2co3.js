@@ -1,0 +1,1 @@
+P('caoh2Na2co3',{n:'Ca(OH)₂ + Na₂CO₃',ppt:'ppt-caco3',out:['osad'],why:'Biały osad CaCO₃; w roztworze zostaje NaOH (kaustyfikacja).'});

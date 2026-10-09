@@ -2896,7 +2896,7 @@ Miejscownik dwóch pięciu
 
 · z nazwami dzieci i młodych istot: dwoje dzieci, troje piskląt;
 · z rzeczownikami niemającymi liczby pojedynczej: dwoje drzwi;
-· z grupami osób różnej płci: dwoje uczniów (ostrożnie).
+· z grupami osób różnej płci: dwoje uczniów (= chłopiec i dziewczynka); o samych chłopcach mówimy: dwaj uczniowie / dwóch uczniów, nie „dwoje”.
 
 Nie mówimy w każdej sytuacji dwoje chłopców zamiast dwóch chłopców.
 
@@ -3383,7 +3383,7 @@ Rzeczownik — ściąga
 · Żywotność: kategoria językowa; decyduje o formie w bierniku.
 · Liczba podwójna: oczy, ręce, uszy — ślady historyczne.
 · Odczasownikowe: latanie, myślenie — rzeczowniki, nie czasowniki.
-· „nie” z rzeczownikami: ŁĄCZNIE (niepogoda), chyba że przeczymy w zdaniu.
+· „nie” z rzeczownikami: ŁĄCZNIE, gdy tworzy nową nazwę (niepogoda, nieprzyjaciel); ROZDZIELNIE, gdy to zwykłe zaprzeczenie lub przeciwstawienie (To nie przyjaciel, lecz wróg).
 
 Pułapki PODSTAWA
 
@@ -3792,7 +3792,7 @@ Po tej lekcji powinieneś umieć:
 **Haczyki gramatyczne:**
 · Rzeczownik **żywotny** (osoby, zwierzęta) w bierniku lm. ma formę jak dopełniacz (*widzę Kajków*, *widzę chłopców*).
 · Rzeczownik **nieżywotny** w bierniku lm. = mianownik (*widzę miecze*, *widzę grody*).
-· „nie” z rzeczownikami: **łącznie** (*niepogoda*, *nieporządek*), chyba że przeczymy w zdaniu (*To nie pogoda na spacer*).
+· „nie” z rzeczownikami: **łącznie** (*niepogoda*, *nieporządek*), chyba że to zwykłe zaprzeczenie lub przeciwstawienie — wtedy rozdzielnie (*To nie pogoda na spacer*, *To nie przyjaciel, lecz wróg*).
 · Ślady liczby podwójnej: *oczy*, *uszy*, *ręce* (dawne formy).
 
 **Komiks na E8 — co zapamiętać**

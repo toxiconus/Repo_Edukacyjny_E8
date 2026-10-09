@@ -1,0 +1,1 @@
+P('cuoh2Heat',{n:'Cu(OH)₂ — ogrzewanie',vessel:'testTube',solid:{col:'ppt-cu-oh-2',col2:'solid-cuo',eq:4,end:1,t:'powder',shape:'powder'},out:['barwa'],heat:2,T:85,why:'Niebieski osad czernieje — powstaje CuO i woda.'});

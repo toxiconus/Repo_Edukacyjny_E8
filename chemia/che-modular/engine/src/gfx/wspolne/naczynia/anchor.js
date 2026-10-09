@@ -1,0 +1,1 @@
+vessel('anchor',{custom:(c,r)=>({x:r.x+r.w/2,y:r.y+r.h/2})});
