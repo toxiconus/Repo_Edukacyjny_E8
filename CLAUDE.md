@@ -47,6 +47,7 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - `python3 eksport/zbierz_lekcje.py` → `eksport/out/PERPLEXITY_<PRZEDMIOT>.md` (prompt na początku + wszystkie lekcje, jedna najnowsza wersja każdej). Katalog `out/` jest poza gitem.
 
 ## Polski — lekcje podstawowe (priorytet)
+- **Grafiki w polskim to wyjątek** (decyzja użytkownika): tylko w niektórych lekcjach, gdy pomagają zrozumieć (np. wykres zdania); bez ozdób. Biblioteka `polski/szablon/pol-viz.js`, katalog `polski/szablon/POL_KATALOG_GRAFIK.md`.
 - Szkielety G01–G17 (części mowy, składnia) i S01–S06 (środki stylistyczne) w `polski/podstawy/`, generator `python3 narzedzia/szkielety_polski.py` (nie nadpisuje wypełnionych), paczka dla LLM `eksport/out/DO_WYPELNIENIA_PL_podstawy.md`. Pliki: `POL.02.G01.rzeczownik.md` itd. Wypełniony plik: zmienić `stan: PUSTY` → `stan: WYPEŁNIONY — model, data`, potem W1.
 
 ## Nazwy plików lekcji

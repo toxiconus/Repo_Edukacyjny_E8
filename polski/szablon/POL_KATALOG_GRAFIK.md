@@ -1,7 +1,7 @@
 # Katalog grafik — język polski (`polski/szablon/pol-viz.js`)
 
 Użycie w md: `@viz <id> {opcja="wartość"} | Tytuł | podpis` + obowiązkowa linia `@opis`. Build: `python3 narzedzia/lekcja_html.py -p pol <plik.md>`.
-**Zasada:** grafikę dodajemy tylko wtedy, gdy uczy czegoś, czego tekst nie pokaże (ćwiczenie, zależności, krok po kroku) — bez grafik-ozdób.
+**Zasada (decyzja użytkownika 2026-10-10):** w polskim grafiki to **wyjątek** — tylko w niektórych lekcjach i tylko dla rozumienia (zależności, krok po kroku), nigdy jako ozdoba. Domyślnie lekcja = tekst, tabele, ćwiczenia.
 
 | id | Co robi | Opcje | Lekcje |
 |---|---|---|---|

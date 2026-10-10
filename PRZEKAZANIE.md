@@ -4,7 +4,7 @@ Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów 
 
 ## Polski — lekcje wzorcowe (2026-10-10, wątek „wizualizacje/polski”)
 - **G12 Części zdania v3.0** (`polski/podstawy/POL.02.G12.czesci_zdania.md` → `polski/html/`): pełny dialekt (minimum E8, warstwy, rdzeń, diagnoza, procedura, 5 części zdania z tabelami, klinika, ćwiczenia A/B/C z kluczami, zadania E8 z punktacją, test, fiszki, słownik, ściąga). Zachowane treści v2.1 po W1. Nowa biblioteka `polski/szablon/pol-viz.js` (katalog `POL_KATALOG_GRAFIK.md`), podpięta w `narzedzia/lekcja_html.py` (VIZ['pol']): `rozbior-zdania`, `wykres-zdania`.
-- **Decyzja użytkownika:** grafiki w polskim tylko gdy konieczne (ćwiczenie, zależności) — nie ozdoby.
+- **Decyzja użytkownika (2026-10-10):** w polskim grafiki to **wyjątek** — tylko w niektórych lekcjach, gdy pomagają zrozumieć (np. zależności w zdaniu, wykres); bez ozdób. Domyślnie lekcja polskiego = sam tekst, tabele, ćwiczenia.
 - **Uwaga:** gałąź `claude/polski-spis` (kanon v2, `narzedzia/spis_polski.py`, wstępne G12–G20, P01–P04, J01–J06 z Perplexity) **nie jest scalona** z tą gałęzią — tu jest inna organizacja plików (POL.NN.KOD). Do scalenia: kanon v2 + P/J jako nowe pliki w nowym nazewnictwie.
 - **Następne:** G13–G17 tym samym wzorem (G13 i G14 mogą użyć `wykres-zdania`).
 
