@@ -157,6 +157,9 @@ Dlaczego kończyna człowieka, wieloryba i nietoperza ma ten sam plan budowy?
 2. Czy mają **tę samą funkcję**, ale różne pochodzenie? → analogiczne.
 3. Czy istnieje wspólny przodek? → homologiczne.
 
+@viz konczyny-homologiczne | Kończyny przednie ssaków: homologia i analogia | kliknij kość albo zwierzę; drugi przycisk porównuje skrzydło nietoperza ze skrzydłem owada
+@opis Tryb „homologia”: obok siebie schematy kończyn przednich człowieka, kreta, wieloryba i nietoperza. W każdej te same grupy kości w tych samych kolorach: kość ramienna (pomarańczowa), łokciowa i promieniowa (niebieskie), kości nadgarstka (zielone kółka), śródręcze i paliczki (fioletowe). Różnią się długością i grubością: u kreta krótkie i masywne, u wieloryba wydłużone palce w płetwie, u nietoperza bardzo długie palce rozpinające szarą błonę lotną. Tryb „analogia”: skrzydło nietoperza (z kośćmi) obok skrzydła owada — płaskiej błony z żyłkami bez kości. Kliknięcie pokazuje opis. Wniosek: ten sam plan budowy przy różnych funkcjach to narządy homologiczne (dowód wspólnego przodka); ta sama funkcja przy innej budowie to narządy analogiczne (konwergencja, nie dowód pokrewieństwa).
+
 ### 6C. Przykład prowadzony
 
 **Dane:** Ćma krępak brzozowy — dwa warianty (jasny, ciemny).

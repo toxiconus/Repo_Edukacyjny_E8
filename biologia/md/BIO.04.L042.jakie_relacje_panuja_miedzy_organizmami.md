@@ -135,6 +135,11 @@ Organizmy w ekosystemie wchodzą w różne relacje:
 
 6. **Symbioza** — ścisłe współżycie organizmów (szersza kategoria; może obejmować mutualizm i pasożytnictwo).
 
+7. **Roślinożerność** — roślinożerca zjada część rośliny (liście, pędy, nasiona), a roślina zwykle przeżywa i odrasta (+/−).
+
+@viz relacje-ekologiczne | Relacje między gatunkami: znaki wpływu | kliknij kartę albo przejdź do trybu „rozpoznaj relację”
+@opis Sześć kart: konkurencja (−/−), drapieżnictwo (+/−), roślinożerność (+/−), pasożytnictwo (+/−), mutualizm (+/+) i komensalizm (+/0); przy każdej dwa kółka ze znakiem wpływu na gatunek A i gatunek B (zielony plus — korzyść, czerwony minus — strata, szare 0 — brak wpływu). Kliknięcie karty pokazuje opis i przykłady (np. porost, kleszcz i sarna, podnawka i rekin). Tryb „rozpoznaj relację” podaje 12 opisów sytuacji w losowej kolejności, uczeń wybiera nazwę relacji i dostaje wyjaśnienie oraz wynik. Wniosek: relację rozpoznaje się po skutku dla obu gatunków, a przy +/− rozstrzyga, czy ofiara ginie (drapieżnictwo), traci część ciała (roślinożerność), czy żyje dalej jako żywiciel (pasożytnictwo).
+
 ### 6A. Dlaczego?
 
 1. **Dlaczego pasożyt nie zabija żywiciela?** Bo żyje z niego — śmierć żywiciela = śmierć pasożyta (lub konieczność szukania nowego).

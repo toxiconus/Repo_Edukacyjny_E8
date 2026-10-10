@@ -142,6 +142,9 @@ Co decyduje o tym, jakie organizmy mogą żyć w danym miejscu?
 - **Konsumenci** — zjadają innych: konsumenci I rzędu (roślinożercy), II rzędu (drapieżnicy), III rzędu.
 - **Destruenci** — rozkładają martwą materię organiczną na nieorganiczną: bakterie, grzyby.
 
+@viz energia-materia | Przepływ energii i obieg materii w ekosystemie | przełącz: energia / materia / oba naraz; kliknij poziom
+@opis Schemat: Słońce, producenci (rośliny, glony), konsumenci I rzędu (roślinożercy), konsumenci II rzędu (drapieżniki), destruenci (bakterie, grzyby) i związki mineralne (CO₂, woda, sole). Pomarańczowe strzałki energii biegną w jedną stronę: Słońce → producenci → konsumenci I → konsumenci II oraz do destruentów; z każdego poziomu czerwona falka „ciepło” wychodzi poza układ; pod poziomami liczby 10 000 kJ → ok. 1000 kJ → ok. 100 kJ (ok. 10% przechodzi dalej, orientacyjnie). Zielone strzałki materii tworzą pętlę: producenci → konsumenci → destruenci → związki mineralne → producenci. Przyciski przyciemniają jedną z warstw; kliknięcie poziomu pokazuje opis. Wniosek: energia przepływa i jest tracona jako ciepło, a materia krąży dzięki destruentom.
+
 ### 6A. Dlaczego?
 
 1. **Dlaczego producenci są ważni?** Bo wprowadzają energię do ekosystemu.

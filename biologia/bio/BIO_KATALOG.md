@@ -33,6 +33,10 @@ Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko
 | przeobrazenie-owadow | przeobrażenie zupełne (motyl, z poczwarką) i niezupełne (konik polny, bez poczwarki); klik = opis etapu | — | REV02 |
 | podzial-komorki | mitoza i mejoza krok po kroku (model 2n = 4, homologi czerwone/niebieskie, chromatydy, crossing-over, wrzeciono); liczby chromosomów i chromatyd w każdej fazie (model i człowiek) | start="mitoza\|mejoza" | L009, L014, L015 |
 | dobor-naturalny | symulacja doboru: ćmy jasne/ciemne na korze (przełącznik tła) albo bakterie wrażliwe/oporne + antybiotyk; pokolenia, wykres udziału cechy | start="cmy\|bakterie" | L031 |
+| relacje-ekologiczne | zależności międzygatunkowe jako znaki wpływu (+/−/0): konkurencja, drapieżnictwo, roślinożerność, pasożytnictwo, mutualizm, komensalizm; tryb „rozpoznaj relację” (12 przykładów, wynik) | start="quiz" | L042 |
+| konczyny-homologiczne | kończyny przednie człowieka, kreta, wieloryba, nietoperza — te same grupy kości w kolorach (homologia); tryb analogii: skrzydło nietoperza vs owada | start="analogia" | L030 |
+| energia-materia | ekosystem: przepływ energii (Słońce → poziomy, ciepło, ok. 10%) i obieg materii (pętla przez destruentów i związki mineralne); przełącznik warstw | start="materia\|oba" | L040 |
+| zrodla-zmiennosci | losowanie gamet (3 pary chromosomów, 8 gamet, 64 kombinacje), zapłodnienie, crossing-over wł./wył., licznik różnych dzieci; człowiek 2²³ i ok. 70 bln | — | L016A |
 Prymitywy (`BIO.g`): `ring` (puryna 6+5 / pirymidyna 6), `hbonds`, `sugar`, `phos`, `miniHelix`, `squiggle` (chromatyna), `chromosome`. Ikony: `BIO.ICO` (organizm, komorka, jadro, chromosom, dna, rna, bialko, funkcja, gen). Efekty: `BIO.fx.info`, `fx.toggle`, odsłanianie figur przy przewijaniu.
 
 Kontenery md tylko w BIO: `::: mity` (linie `mit || poprawka`), `::: drzewo` (mapa pojęć z wcięć).

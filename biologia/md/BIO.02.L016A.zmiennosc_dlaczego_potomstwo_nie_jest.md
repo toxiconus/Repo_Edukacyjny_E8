@@ -133,6 +133,9 @@ Zmienność dziedziczna może być przekazywana potomstwu, jeśli dotyczy materi
 
 @opis Diagram pokazuje, że cecha powstaje w wyniku współdziałania informacji genetycznej i warunków środowiska; strzałki oznaczają wpływ, a nie prostą relację jeden gen–jedna cecha.
 
+@viz zrodla-zmiennosci | Skąd się bierze różnorodność rodzeństwa? | losuj dzieci, potem włącz crossing-over
+@opis U góry komórki matki i ojca, każda z trzema parami chromosomów różnej długości (u matki ciemno- i jasnoczerwone, u ojca ciemno- i jasnoniebieskie — od dziadków). Przycisk „losuj dziecko” losuje gametę matki i gametę ojca (z każdej pary jeden chromosom, 2³ = 8 rodzajów gamet) i łączy je w zygotę na dole (para: chromosom czerwony + niebieski). Licznik pokazuje, ile różnych dzieci już wylosowano z 64 możliwych. Po włączeniu crossing-over chromosomy w gametach mają odcinki w drugim odcieniu (wymiana fragmentów), a liczba możliwych kombinacji rośnie praktycznie bez ograniczeń. Kliknięcie gamety lub zygoty pokazuje opis; dla człowieka: 2²³ ≈ 8,4 mln rodzajów gamet jednego rodzica i ok. 70 bilionów kombinacji dla pary. Wniosek: rodzeństwo różni się dzięki niezależnej segregacji chromosomów w mejozie, crossing-over i losowemu połączeniu gamet; mutacje dokładają nowe allele, a środowisko — zmienność niedziedziczną.
+
 **Zasada pracy z modelem:** model upraszcza rzeczywistość. Należy sprawdzić, co pokazuje, co pomija i jakiego wniosku nie wolno z niego wyciągać.
 
 ## 11. Ćwiczenia (11A–11D) — [TRENING]
