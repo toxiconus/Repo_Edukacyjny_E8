@@ -8,7 +8,7 @@ lead: Pierwsza część zakresu etapu szkolnego: jak zbudowane są organizmy i s
 lead: Komórka jako mapa (jądro = DNA, mitochondrium = ATP, chloroplast = fotosynteza), fotosynteza i oddychanie jako dwa różne procesy oraz dwa obowiązkowe doświadczenia — ze światłem i z drożdżami.
 plakietki: [[basic:E8]][[understand:TRENING]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres wg konkursu biologicznego LKO 2025/26 (etap I, pkt I podstawy programowej). Druga część zakresu — REV02 Różnorodność życia. Rozwinięcie komórki i DNA — L010.
-stopka: **BIOLOGIA REV01 v1.0** · Organizacja i chemizm życia · 2026
+stopka: **BIOLOGIA REV01 v1.1** · Organizacja i chemizm życia · 2026
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Poziomy organizacji:** komórka → tkanka → narząd → układ narządów → organizm. Nie każdy organizm ma tkanki (bakteria — jedna komórka).
@@ -17,8 +17,8 @@ stopka: **BIOLOGIA REV01 v1.0** · Organizacja i chemizm życia · 2026
 4. **Roślinna** = ściana z celulozy + chloroplasty + duża wakuola; **zwierzęca** = bez ściany i chloroplastów; **grzyba** = ściana z chityny, bez chloroplastów; **bakterii** = bez jądra (nukleoid), bez mitochondriów i chloroplastów.
 5. **Mikroskop:** zaczynamy od najmniejszego powiększenia; powiększenie = okular × obiektyw.
 6. **Fotosynteza:** w uproszczonym równaniu sumarycznym: **6CO₂ + 6H₂O —(energia światła)→ C₆H₁₂O₆ + 6O₂**; u roślin zachodzi w chloroplastach. Równanie pokazuje bilans sumaryczny, nie wszystkie etapy procesu.
-7. **Oddychanie tlenowe:** glukoza + tlen → dwutlenek węgla + woda + energia (ATP); u eukariontów głównie w mitochondriach; **zachodzi stale**, także u roślin i w dzień.
-8. **Fermentacja** — beztlenowy rozkład glukozy; drożdże: glukoza → alkohol etylowy + dwutlenek węgla + energia (mniej niż w oddychaniu tlenowym).
+7. **Oddychanie tlenowe:** glukoza + tlen → dwutlenek węgla + woda + energia (ATP); u eukariontów pierwszy etap (glikoliza) zachodzi w cytoplazmie, a dalsze etapy — w mitochondriach; **zachodzi stale**, także u roślin i w dzień.
+8. **Fermentacja** — uzyskiwanie energii z glukozy bez udziału tlenu, z niepełnym rozkładem substratu; drożdże: glukoza → alkohol etylowy + dwutlenek węgla + energia (mniej niż w oddychaniu tlenowym).
 9. **Czynności życiowe:** odżywianie, oddychanie, wydalanie, ruch, reagowanie na bodźce, wzrost i rozwój, rozmnażanie.
 10. **Doświadczenie:** próba kontrolna różni się od badawczej tylko badanym czynnikiem; obserwacja ≠ wniosek.
 :::
@@ -65,7 +65,7 @@ stopka: **BIOLOGIA REV01 v1.0** · Organizacja i chemizm życia · 2026
 @viz lancuch {kroki="komórka|podstawowa jednostka > tkanka|komórki o podobnej budowie i funkcji > narząd|kilka tkanek, wspólna funkcja > układ narządów|narządy współpracujące > organizm|całość"} | Od komórki do organizmu | kliknij poziom
 @opis Łańcuch pięciu poziomów połączonych strzałkami: komórka (podstawowa jednostka) → tkanka (komórki o podobnej budowie i funkcji) → narząd (kilka tkanek, wspólna funkcja) → układ narządów (narządy współpracujące) → organizm (całość); kliknięcie poziomu pokazuje objaśnienie. Wniosek: każdy wyższy poziom składa się z elementów niższego, a organizm działa dzięki ich współpracy.
 
-Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narządy**, narządy współtworzą **układy narządów**. Atomy i cząsteczki to materia, z której zbudowane są struktury biologiczne, a nie poziomy organizacji organizmu w tym samym sensie. **Nie każdy organizm ma wszystkie poziomy:** bakteria jest jedną komórką, a mchy nie mają tkanek takich jak rośliny nasienne.
+Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narządy**, narządy współtworzą **układy narządów**. Atomy i cząsteczki to materia, z której zbudowane są struktury biologiczne, a nie poziomy organizacji organizmu w tym samym sensie. **Nie każdy organizm ma wszystkie poziomy:** bakteria jest jedną komórką, a mchy nie mają typowych tkanek przewodzących roślin naczyniowych.
 
 | Komórka wyspecjalizowana | Przystosowanie | Funkcja |
 |---|---|---|
@@ -80,7 +80,7 @@ Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narz�
 ::: karta core | Procedura obserwacji
 1. Przygotuj preparat (np. skórka cebuli w kropli wody pod szkiełkiem nakrywkowym).
 2. Umieść go na stoliku, oświetl.
-3. **Zacznij od najmniejszego powiększenia**, ustaw ostrość śrubą makrometryczną.
+3. **Zacznij od najmniejszego powiększenia**, ustaw ostrość śrubą makrometryczną — używaj jej **tylko przy małym powiększeniu**, żeby nie zgnieść preparatu obiektywem.
 4. Dopiero potem zwiększ powiększenie i popraw ostrość śrubą mikrometryczną.
 5. Wykonaj **rysunek biologiczny**: czytelny, uproszczony, z podpisami tylko tych struktur, które naprawdę widzisz.
 6. Zapisz obserwację i wniosek osobno.
@@ -99,7 +99,7 @@ Brak widoczności struktury pod mikroskopem **nie oznacza**, że jej nie ma — 
 | wymaz z policzka | komórki bez wyraźnej ściany, z jądrem | komórki zwierzęce |
 
 @viz mikroskop-model | Obraz z mikroskopu a model szkolny | ta sama komórka liścia moczarki
-@opis Okrągłe pole widzenia mikroskopu świetlnego (ok. ×400, bez barwienia): jedna prostokątna komórka liścia moczarki z grubą ścianą komórkową, zielone owalne chloroplasty rozmieszczone przy ścianach, jasny pusty środek — wakuola; jądro słabo widoczne. Przyciski: „model szkolny” pokazuje tę samą komórkę jako uproszczony schemat z podpisami (ściana, błona, cytoplazma, jądro, chloroplasty, wakuola), „zabarw preparat” — jądro po barwieniu płynem Lugola staje się ciemniejszą plamką. Panel pod obrazem mówi, czego w mikroskopie świetlnym nie widać (rybosomy, szczegóły mitochondriów, błona obok ściany). Wniosek: w mikroskopie świetlnym widać tylko część struktur (ściana, chloroplasty, czasem jądro); model szkolny jest uproszczeniem, a nie zdjęciem — nie wszystko, co jest na modelu, zobaczysz w preparacie.
+@opis Okrągłe pole widzenia mikroskopu świetlnego (ok. ×400, bez barwienia): jedna prostokątna komórka liścia moczarki z grubą ścianą komórkową, zielone owalne chloroplasty rozmieszczone przy ścianach, jasny pusty środek — wakuola; jądro słabo widoczne (to obraz przykładowy — widoczność jądra zależy od preparatu, barwienia i płaszczyzny ostrości). Przyciski: „model szkolny” pokazuje tę samą komórkę jako uproszczony schemat z podpisami (ściana, błona, cytoplazma, jądro, chloroplasty, wakuola), „zabarw preparat” — jądro po barwieniu (w szkole często płynem Lugola; procedury barwienia bywają różne) staje się ciemniejszą plamką. Panel pod obrazem mówi, czego w mikroskopie świetlnym nie widać (rybosomy, szczegóły mitochondriów, błona obok ściany). Wniosek: w mikroskopie świetlnym widać tylko część struktur (ściana, chloroplasty, czasem jądro); model szkolny jest uproszczeniem, a nie zdjęciem — nie wszystko, co jest na modelu, zobaczysz w preparacie.
 
 ## 3 | Budowa komórki — organelle [[basic:E8]] {#organelle}
 
@@ -109,9 +109,9 @@ Brak widoczności struktury pod mikroskopem **nie oznacza**, że jej nie ma — 
 | **mitochondrium** | oddychanie komórkowe — wytwarzanie **ATP** | prawie wszystkie eukarionty (także rośliny!) |
 | **chloroplast** | **fotosynteza** (zawiera chlorofil) | rośliny, glony |
 | **błona komórkowa** | granica komórki, kontrola transportu | wszystkie komórki |
-| **ściana komórkowa** | ochrona, kształt, sztywność | rośliny (celuloza), grzyby (chityna), bakterie (mureina) |
-| **wakuola** | magazyn wody i substancji, **turgor** | rośliny (duża), zwierzęta (małe lub brak) |
-| **rybosomy** | synteza białek | wszystkie komórki (nie mają błony) |
+| **ściana komórkowa** | ochrona, kształt, sztywność | rośliny (celuloza), grzyby (chityna), bakterie (peptydoglikan, zwany mureiną) |
+| **wakuola** | magazyn wody i substancji, **turgor** | rośliny (duża, centralna), zwierzęta (drobne pęcherzyki i małe wakuole albo brak) |
+| **rybosomy** | synteza białek | wszystkie komórki (nie mają błony); [[extra:AMBITNE]] także w mitochondriach i chloroplastach |
 | **cytoplazma** | środowisko przemian, w niej organelle | wszystkie komórki |
 
 **Skojarzenia:** jądro = biblioteka (DNA) · mitochondrium = elektrownia (ATP) · chloroplast = zielony (fotosynteza) · błona = płot z bramą · rybosom = robi białka · ściana ≠ zawsze roślina.
@@ -128,7 +128,7 @@ Mitochondria i chloroplasty mają **własne DNA** (mtDNA, cpDNA) i rybosomy podo
 | ściana komórkowa | jest (mureina) | jest (**celuloza**) | **brak** | jest (**chityna**) |
 | chloroplasty | brak | są (w zielonych częściach) | brak | brak |
 | mitochondria | brak | są | są | są |
-| wakuola | brak | duża | małe lub brak | są |
+| wakuola | brak typowej wakuoli eukariotycznej | duża | małe lub brak | są |
 | rybosomy | są | są | są | są |
 
 ::: karta core | Typ komórki w 10 sekund
@@ -138,7 +138,7 @@ Mitochondria i chloroplasty mają **własne DNA** (mtDNA, cpDNA) i rybosomy podo
 4. Brak ściany i chloroplastu, jest jądro → **zwierzę**.
 :::
 
-**Prokarionty** (bakterie, sinice) — bez jądra i bez organelli błonowych. **Eukarionty** (protisty, grzyby, rośliny, zwierzęta) — z jądrem. Sinice prowadzą fotosyntezę, choć nie mają chloroplastów.
+**Prokarionty** (bakterie, sinice) — bez jądra i (w ujęciu szkolnym) bez organelli błonowych. **Eukarionty** (protisty, grzyby, rośliny, zwierzęta) — z jądrem. Sinice prowadzą fotosyntezę, choć nie mają chloroplastów.
 
 @viz komorka-nakladki {start="roslinna"} | Typy komórek: wspólny rdzeń i nakładki | przełączaj typ komórki i warstwy
 @opis Jedna komórka zbudowana z warstw. Wspólny rdzeń każdej komórki: błona komórkowa, cytoplazma, rybosomy. Przyciski dodają nakładki typowe dla danego typu: bakteria (ściana, nukleoid, plazmid, bez jądra), komórka zwierzęca (jądro, mitochondria, bez ściany), roślinna (jądro, mitochondria, chloroplasty, duża wakuola, ściana z celulozy), grzyba (jądro, mitochondria, ściana z chityny, bez chloroplastów). Wniosek: typ komórki rozpoznajemy po obecności lub braku jądra, ściany (i jej budulca), chloroplastów i dużej wakuoli — rdzeń jest wspólny dla wszystkich.
@@ -149,12 +149,12 @@ Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest **selekty
 
 | Proces | Co to jest | Przykład |
 |---|---|---|
-| **dyfuzja** | samorzutny ruch cząsteczek z miejsca o większym stężeniu do miejsca o mniejszym | tlen z płuc do krwi |
-| **osmoza** | ruch **wody** przez błonę selektywnie przepuszczalną w stronę roztworu bardziej stężonego | jędrne komórki roślin (turgor); więdnięcie przy braku wody |
+| **dyfuzja** | samorzutny ruch **netto** cząsteczek z miejsca o większym stężeniu do miejsca o mniejszym | tlen z płuc do krwi |
+| **osmoza** | ruch netto **wody** przez błonę selektywnie przepuszczalną — w uproszczeniu szkolnym w stronę roztworu bardziej stężonego | jędrne komórki roślin (turgor); więdnięcie przy braku wody |
 | transport z udziałem energii | przenoszenie substancji wbrew różnicy stężeń, przez białka błonowe, z użyciem ATP | pobieranie soli przez korzeń |
 
 @viz transport-blona | Przekrój błony: cztery sposoby transportu | kliknij sposób transportu
-@opis Cztery wąskie panele przekroju błony (dwie warstwy fosfolipidów: żółte główki i ogonki), u góry zewnątrz komórki, na dole wnętrze; kropki oznaczają cząsteczki, ich zagęszczenie — stężenie. Dyfuzja prosta: małe cząsteczki przechodzą przez błonę z miejsca o większym stężeniu do mniejszego. Dyfuzja ułatwiona: cząsteczki glukozy przechodzą przez białkowy kanał, też zgodnie ze stężeniem. Transport aktywny: niebieska pompa białkowa przenosi jony wbrew stężeniu, zużywając ATP. Osmoza: przez błonę przechodzi woda w stronę roztworu bardziej stężonego. Kliknięcie panelu pokazuje opis i tabelę porównawczą. Wniosek: tylko transport aktywny wymaga energii; dyfuzja i osmoza zachodzą samorzutnie zgodnie z różnicą stężeń.
+@opis Cztery wąskie panele przekroju błony (dwie warstwy fosfolipidów: żółte główki i ogonki), u góry zewnątrz komórki, na dole wnętrze; kropki oznaczają cząsteczki, ich zagęszczenie — stężenie. Dyfuzja prosta: małe cząsteczki przechodzą przez błonę z miejsca o większym stężeniu do mniejszego. Dyfuzja ułatwiona: cząsteczki glukozy przechodzą przez białkowy kanał, też zgodnie ze stężeniem. Transport aktywny: niebieska pompa białkowa przenosi jony wbrew stężeniu, zużywając ATP. Osmoza: przez błonę przechodzi woda w stronę roztworu bardziej stężonego. Kliknięcie panelu pokazuje opis i tabelę porównawczą. Wniosek: spośród pokazanych mechanizmów tylko transport aktywny wymaga energii (energii wymaga też niepokazany transport pęcherzykowy); dyfuzja i osmoza zachodzą samorzutnie zgodnie z różnicą stężeń.
 
 ::: nie-myl
 **Błona ≠ ściana.** Błona jest selektywnie przepuszczalna i ma ją każda komórka; ściana daje ochronę i sztywność, a mają ją tylko rośliny, grzyby i bakterie. **Dyfuzja ≠ osmoza:** osmoza dotyczy tylko ruchu wody przez błonę.
@@ -163,7 +163,7 @@ Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest **selekty
 ## 6 | Fotosynteza [[basic:E8]] {#fotosynteza}
 
 ::: regula
-**Fotosynteza tlenowa u roślin** — proces, w którym z CO₂ i wody powstają związki organiczne dzięki energii światła. W szkolnym równaniu sumarycznym zapisujemy: **6CO₂ + 6H₂O —(światło)→ C₆H₁₂O₆ + 6O₂**. U roślin zachodzi w chloroplastach. W bardziej zaawansowanym ujęciu tlen wydzielany w fotosyntezie pochodzi z wody; organizmy fotosyntetyzujące nie wszystkie wykorzystują ten sam mechanizm.
+**Fotosynteza tlenowa u roślin** — proces, w którym z CO₂ i wody powstają związki organiczne dzięki energii światła. W szkolnym równaniu sumarycznym zapisujemy: **6CO₂ + 6H₂O —(światło)→ C₆H₁₂O₆ + 6O₂**. U roślin zachodzi w chloroplastach. [[exam:KONKURS]] W bardziej zaawansowanym ujęciu tlen wydzielany w fotosyntezie pochodzi z wody (nie wynika to z uproszczonego równania); organizmy fotosyntetyzujące nie wszystkie wykorzystują ten sam mechanizm.
 :::
 
 $$ 6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂
@@ -175,13 +175,13 @@ Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** �
 | CO₂ | z powietrza przez **aparaty szparkowe** liścia |
 | H₂O | z gleby przez korzenie (włośniki), drewnem do liści |
 | światło | energia; pochłania ją chlorofil |
-| glukoza | budulec (celuloza ściany), materiał zapasowy (skrobia), „paliwo” do oddychania; rozprowadzana łykiem |
+| glukoza | budulec (celuloza ściany), materiał zapasowy (skrobia), „paliwo” do oddychania — może być przekształcana i magazynowana, nie tylko od razu zużywana; cukry są rozprowadzane łykiem **głównie jako sacharoza** |
 | O₂ | uwalniany do atmosfery przez aparaty szparkowe; częściowo zużywany w oddychaniu |
 
 **Czynniki wpływające na intensywność fotosyntezy:** natężenie światła, stężenie CO₂, temperatura, dostęp do wody. Zbyt wysoka temperatura obniża intensywność procesu.
 
 @viz fotosynteza-oddychanie | Fotosynteza i oddychanie w jednej komórce liścia | przesuń suwak światła i obserwuj wymianę gazów
-@opis Owalna komórka liścia; w środku zielony chloroplast z tylakoidami i czerwonawe mitochondrium z pofałdowaną błoną. Z lewej słońce, którego jasność zmienia suwak. Strzałki: glukoza płynie z chloroplastu do mitochondrium, tlen z chloroplastu do mitochondrium; po prawej strzałki wymiany gazów z otoczeniem, których grubość zależy od bilansu. W ciemności i przy słabym świetle liść pobiera O₂ i oddaje CO₂, w punkcie równowagi wymiana wynosi około zera, przy silnym świetle liść pobiera CO₂ i oddaje O₂. Wniosek: oddychanie zachodzi stale, a fotosynteza tylko przy świetle — to, czy liść wydziela tlen, zależy od przewagi jednego procesu nad drugim.
+@opis Owalna komórka liścia; w środku zielony chloroplast z tylakoidami i czerwonawe mitochondrium z pofałdowaną błoną. Z lewej słońce, którego jasność zmienia suwak. Strzałki: glukoza płynie z chloroplastu do mitochondrium, tlen z chloroplastu do mitochondrium; po prawej strzałki wymiany gazów z otoczeniem, których grubość zależy od bilansu. W ciemności i przy świetle poniżej punktu kompensacyjnego liść netto pobiera O₂ i oddaje CO₂, w punkcie kompensacyjnym (równowagi) wymiana wynosi około zera, przy silnym świetle liść pobiera CO₂ i oddaje O₂. Wniosek: oddychanie zachodzi stale, a fotosynteza tylko przy świetle — to, czy liść wydziela tlen, zależy od przewagi jednego procesu nad drugim.
 
 ## 7 | Oddychanie komórkowe i fermentacja [[basic:E8]] {#oddychanie}
 
@@ -193,10 +193,10 @@ $$ C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP)
 
 **Fermentacja** — beztlenowy rozkład glukozy; uwalnia **znacznie mniej** energii niż oddychanie tlenowe.
 - **alkoholowa** (drożdże): glukoza → alkohol etylowy + dwutlenek węgla + energia — pieczenie chleba (CO₂ spulchnia ciasto), produkcja wina;
-- **mlekowa** (bakterie mlekowe, a także mięśnie człowieka przy wysiłku): glukoza → kwas mlekowy + energia — jogurt, kefir, kiszonki.
+- **mlekowa** (bakterie mlekowe, a także — krótkotrwale, przy niedoborze tlenu podczas intensywnego wysiłku — mięśnie człowieka): glukoza → kwas mlekowy + energia — jogurt, kefir, kiszonki.
 
 @viz energia-glukozy | Ile energii z jednej cząsteczki glukozy? | oddychanie tlenowe a fermentacja
-@opis Trzy poziome słupki: oddychanie tlenowe (czerwony, długi — ok. 38 ATP), fermentacja alkoholowa (brązowy, krótki — ok. 2 ATP) i fermentacja mlekowa (niebieski, krótki — ok. 2 ATP); wartości szkolne, orientacyjne. Przyciski wybierają proces, a pod spodem pojawiają się warunki (z tlenem / bez tlenu), miejsce w komórce, produkty i przykłady organizmów. Wniosek: oddychanie tlenowe rozkłada glukozę do końca (CO₂ i H₂O) i daje wielokrotnie więcej energii niż fermentacja, w której część energii zostaje w alkoholu lub kwasie mlekowym.
+@opis Trzy poziome słupki: oddychanie tlenowe (czerwony, długi — ok. 30–32 ATP; starsze podręczniki podają 38 — to historyczna wartość teoretyczna), fermentacja alkoholowa (brązowy, krótki — ok. 2 ATP) i fermentacja mlekowa (niebieski, krótki — ok. 2 ATP); wartości szkolne, orientacyjne. Przyciski wybierają proces, a pod spodem pojawiają się warunki (z tlenem / bez tlenu), miejsce w komórce, produkty i przykłady organizmów. Wniosek: oddychanie tlenowe rozkłada glukozę do końca (CO₂ i H₂O) i daje wielokrotnie więcej energii niż fermentacja, w której część energii zostaje w alkoholu lub kwasie mlekowym.
 
 | Cecha | Fotosynteza | Oddychanie tlenowe |
 |---|---|---|
@@ -234,9 +234,9 @@ Najważniejsze pierwiastki: **C, H, O, N** (oraz P, S). Związki: **woda** (najw
 Problem: Czy natężenie światła wpływa na intensywność fotosyntezy moczarki kanadyjskiej?
 Hipoteza: Im silniejsze oświetlenie, tym intensywniej zachodzi fotosynteza (wydziela się więcej pęcherzyków tlenu).
 Sprzęt: dwie jednakowe zlewki z wodą (najlepiej z dodatkiem wodorowęglanu sodu jako źródła CO₂), dwie jednakowe gałązki moczarki, lampa, zegarek.
-Przebieg: Zlewkę A (próba kontrolna) ustawiamy blisko lampy, zlewkę B (próba badawcza) — w zacienionym miejscu; temperatura wody w obu jednakowa. Po kilku minutach liczymy pęcherzyki gazu wydzielane z przeciętej łodyżki w ciągu 1 minuty (kilka powtórzeń).
+Przebieg: Zlewkę A (próba kontrolna) ustawiamy blisko lampy, zlewkę B (próba badawcza) — w zacienionym miejscu. Lampa grzeje, więc temperaturę wody w obu zlewkach **mierzymy termometrem i utrzymujemy jednakową** (np. przegroda z wodą między lampą a zlewką albo lampa LED). Po kilku minutach liczymy pęcherzyki gazu wydzielane z przeciętej łodyżki w ciągu 1 minuty (kilka powtórzeń).
 Obserwacja: Z moczarki silnie oświetlonej wydobywa się znacznie więcej pęcherzyków gazu niż z zacienionej.
-Wniosek: Natężenie światła wpływa na intensywność fotosyntezy — przy silniejszym świetle fotosynteza zachodzi intensywniej. (Gaz to głównie tlen — można go wykazać tlącym się łuczywem, które się zapala.)
+Wniosek: Natężenie światła wpływa na intensywność fotosyntezy — przy silniejszym świetle fotosynteza zachodzi intensywniej. Liczba pęcherzyków jest wskaźnikiem **orientacyjnym** (pęcherzyki mają różną wielkość). (Gaz to głównie tlen — można go wykazać tlącym się łuczywem, które się zapala.)
 BHP: ostrożnie z lampą (nagrzewa się) i wodą przy urządzeniach elektrycznych.
 :::
 
@@ -244,9 +244,9 @@ BHP: ostrożnie z lampą (nagrzewa się) i wodą przy urządzeniach elektrycznyc
 Problem: Czy drożdże podczas fermentacji wydzielają dwutlenek węgla?
 Hipoteza: Drożdże w roztworze cukru wydzielają CO₂.
 Sprzęt: dwie kolby, roztwór glukozy (cukru), drożdże, korki z rurkami, dwie probówki z wodą wapienną, ciepła woda.
-Przebieg: Do kolby A (próba badawcza) wlewamy roztwór cukru z drożdżami, do kolby B (próba kontrolna) — sam roztwór cukru bez drożdży. Gaz z każdej kolby odprowadzamy do osobnej probówki z wodą wapienną. Kolby stoją w ciepłym miejscu.
+Przebieg: Do kolby A (próba badawcza) wlewamy roztwór cukru z drożdżami, do kolby B (próba kontrolna) — sam roztwór cukru bez drożdży. Kolby zamykamy **szczelnie** korkami z rurkami, a gaz z każdej kolby odprowadzamy do osobnej probówki z wodą wapienną. Kolby stoją w tej samej, ciepłej temperaturze.
 Obserwacja: W kolbie A pojawia się piana i pęcherzyki gazu, woda wapienna połączona z kolbą A mętnieje; w zestawie B zmian nie ma.
-Wniosek: Drożdże w procesie fermentacji alkoholowej wydzielają dwutlenek węgla.
+Wniosek: Drożdże w procesie fermentacji alkoholowej wydzielają dwutlenek węgla. Dowodem jest zmętnienie wody wapiennej — sama piana nie dowodzi obecności CO₂.
 BHP: zwykłe zasady pracy ze szkłem; woda wapienna drażni oczy — okulary.
 :::
 
@@ -285,7 +285,7 @@ BHP: zwykłe zasady pracy ze szkłem; woda wapienna drażni oczy — okulary.
 4. Wyjaśnij, dlaczego roślina więdnie, gdy długo nie jest podlewana (poziom komórkowy).
 
 ::: odp | Pokaż odpowiedzi
-1. Zwierzęca. 2. Grzyba (ściana z chityny) albo niezielonej tkanki rośliny (np. korzenia, skórki cebuli — ściana z celulozy). 3. 40×, 100×, 400×. 4. Komórki tracą wodę (osmoza), zmniejsza się turgor — tkanki tracą jędrność.
+1. Zwierzęca. 2. Grzyba (ściana z chityny) albo niezielonej tkanki rośliny (np. korzenia, skórki cebuli — ściana z celulozy). 3. 40×, 100×, 400×. 4. Woda opuszcza komórki na drodze osmozy, spada turgor — komórki wiotczeją, a tkanki tracą jędrność.
 :::
 
 ### B. Fotosynteza i oddychanie {#cw-b}
@@ -296,7 +296,7 @@ BHP: zwykłe zasady pracy ze szkłem; woda wapienna drażni oczy — okulary.
 8. W szczelnie zamkniętym słoju umieszczono roślinę na świetle, a w drugim — w ciemności. W którym słoju po kilku godzinach będzie więcej tlenu? Uzasadnij.
 
 ::: odp | Pokaż odpowiedzi
-5. Glukoza i tlen; w oddychaniu wykorzystuje oba — glukozę jako źródło energii i tlen. 6. Drożdże fermentują cukier i wydzielają CO₂, który spulchnia ciasto; ciepło przyspiesza ich procesy życiowe. 7. Glukoza i tlen; CO₂, woda, energia (ATP); mitochondria (pierwszy etap — cytoplazma). 8. Na świetle — fotosynteza wydziela więcej tlenu, niż roślina zużywa w oddychaniu; w ciemności roślina tylko oddycha i zużywa tlen.
+5. Glukoza i tlen; w oddychaniu wykorzystuje oba — glukozę jako źródło energii i tlen. 6. Drożdże fermentują cukier i wydzielają CO₂, który spulchnia ciasto; ciepło przyspiesza ich procesy życiowe. 7. Glukoza i tlen; CO₂, woda, energia (ATP); mitochondria (pierwszy etap — cytoplazma). 8. Na świetle (przy dostatecznym świetle i typowych warunkach) — fotosynteza wydziela więcej tlenu, niż roślina zużywa w oddychaniu; w ciemności roślina tylko oddycha i zużywa tlen.
 :::
 
 ### C. Doświadczenie i wykres [[exam:KONKURS]] {#cw-c}
@@ -304,7 +304,7 @@ BHP: zwykłe zasady pracy ze szkłem; woda wapienna drażni oczy — okulary.
 9. Liczba pęcherzyków tlenu wydzielanych przez moczarkę w ciągu minuty przy różnej odległości od lampy: 10 cm — 42; 20 cm — 25; 40 cm — 9; 80 cm — 2. a) Jaki czynnik badano? b) Sformułuj wniosek. c) Podaj dwa warunki, które powinny być jednakowe. d) Dlaczego warto powtórzyć pomiar kilka razy?
 
 ::: odp | Pokaż odpowiedzi
-a) Natężenie światła (odległość od źródła światła). b) Im większa odległość od lampy (słabsze światło), tym mniej pęcherzyków tlenu — intensywność fotosyntezy maleje wraz ze spadkiem natężenia światła. c) Np. temperatura wody, ten sam gatunek i wielkość gałązki, ta sama zawartość CO₂ w wodzie, czas pomiaru. d) Żeby zmniejszyć wpływ przypadkowych błędów i uzyskać wiarygodną średnią.
+a) Natężenie światła (odległość od źródła światła). b) Im większa odległość od lampy (słabsze światło), tym mniej pęcherzyków tlenu — intensywność fotosyntezy maleje wraz ze spadkiem natężenia światła (wniosek jakościowy — nie wyliczamy dokładnej zależności od odległości). c) Np. temperatura wody, ten sam gatunek i wielkość gałązki, ta sama zawartość CO₂ w wodzie, czas pomiaru. d) Żeby zmniejszyć wpływ przypadkowych błędów i uzyskać wiarygodną średnią.
 :::
 
 ## 12 | Test końcowy {#test}
@@ -371,7 +371,7 @@ a) Natężenie światła (odległość od źródła światła). b) Im większa o
 + wody przez błonę selektywnie przepuszczalną
 - substancji wbrew różnicy stężeń z użyciem ATP
 - jonów przez ścianę komórkową
-! Dyfuzja dotyczy dowolnych cząsteczek; osmoza — wody przez błonę.
+! Dyfuzja dotyczy dowolnych cząsteczek; osmoza — ruchu netto wody przez błonę.
 
 ? W doświadczeniu z drożdżami próbą kontrolną jest kolba:
 - z drożdżami w roztworze cukru
@@ -395,7 +395,7 @@ Wakuola | magazyn, turgor (duża u roślin) | basic:komorka
 Rybosomy | synteza białek; we wszystkich komórkach | basic:komorka
 Prokariont | komórka bez jądra (bakterie, sinice) | basic:komorka
 Powiększenie mikroskopu | okular × obiektyw | basic:mikroskop
-Dyfuzja | ruch cząsteczek zgodnie z różnicą stężeń | understand:trening
+Dyfuzja | ruch netto cząsteczek zgodnie z różnicą stężeń | understand:trening
 Osmoza | ruch wody przez błonę selektywnie przepuszczalną | understand:trening
 Turgor | napięcie komórek roślinnych wypełnionych wodą | understand:trening
 Fotosynteza — substraty | CO₂ i H₂O (+ światło) | basic:procesy
@@ -403,7 +403,7 @@ Fotosynteza — produkty | glukoza i O₂ | basic:procesy
 Chlorofil | zielony barwnik pochłaniający światło | basic:procesy
 Oddychanie tlenowe | glukoza + O₂ → CO₂ + H₂O + energia (ATP) | basic:procesy
 Fermentacja alkoholowa | glukoza → alkohol etylowy + CO₂ + energia (drożdże) | basic:procesy
-Fermentacja mlekowa | glukoza → kwas mlekowy + energia (bakterie mlekowe, mięśnie) | basic:procesy
+Fermentacja mlekowa | beztlenowa przemiana glukozy: glukoza → kwas mlekowy (mleczan) + energia (bakterie mlekowe; mięśnie — krótkotrwale przy niedoborze tlenu) | basic:procesy
 Kiedy roślina oddycha? | stale, w dzień i w nocy | basic:procesy
 Wykrywanie CO₂ | woda wapienna mętnieje | exam:konkurs
 Wykrywanie O₂ | tlące się łuczywo zapala się | exam:konkurs
@@ -449,3 +449,8 @@ Cudzożywność :: pobieranie gotowych związków organicznych z otoczenia
 - Wprowadzono zbilansowane równanie sumaryczne fotosyntezy tlenowej: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. W kluczu należy akceptować równoważny zapis słowny, jeśli pytanie nie wymaga wzorów.
 - Zaznaczono, że jest to bilans sumaryczny, a nie opis wszystkich etapów reakcji.
 - **Status:** poprawiono konkretny zapis w treści głównej; pozostałe klucze nie zostały w tej partii sprawdzone jeden po drugim.
+
+## AUDYT W1 — Perplexity (2026-10-10), wersja 1.1
+
+- Wprowadzone: glikoliza w cytoplazmie (minimum), definicja fermentacji, mchy (tkanki przewodzące), śruba makrometryczna tylko przy małym powiększeniu, barwienie jądra (Lugol jako przykład), mureina = peptydoglikan, wakuola u zwierząt i bakterii, rybosomy w organellach (ambitne), „ruch netto” w dyfuzji i osmozie, transport pęcherzykowy, sacharoza w łyku, punkt kompensacyjny w opisie grafiki, ATP ok. 30–32 (38 — wartość historyczna; także w grafice), fermentacja mlekowa w mięśniach — krótkotrwale, kontrola temperatury i szczelność w doświadczeniach, pęcherzyki jako wskaźnik orientacyjny, klucze 4, 8, 9c.
+- Nieprzyjęte: zapis wzoru `$$` to składnia bloku wzoru w dialekcie lekcji (w HTML bez LaTeX-a), nie LaTeX; uwagi „bez zmian/klucz poprawny” (§10 zad. 3, §11 A zad. 5, §12 chityna, §15 równanie).

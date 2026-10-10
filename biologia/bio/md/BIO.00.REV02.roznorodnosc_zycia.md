@@ -11,13 +11,13 @@ uwaga: Zakres wg konkursu biologicznego LKO 2025/26 (etap I: pkt I i II podstawy
 stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 ---
 ::: minimum | Muszę umieć — 12 punktów
-1. **Kolejność rang:** królestwo → typ → gromada → rząd → rodzina → rodzaj → **gatunek**. Nazwa gatunku jest **dwuczłonowa** (rodzaj + epitet), np. *Canis lupus*.
+1. **Kolejność rang (model szkolny; współczesne systemy dodają m.in. domenę):** królestwo → typ → gromada → rząd → rodzina → rodzaj → **gatunek**. Nazwa gatunku jest **dwuczłonowa** (rodzaj + epitet), np. *Canis lupus* — piszemy kursywą, pierwszy człon wielką literą, drugi małą.
 2. **Wirusy nie mają budowy komórkowej** i namnażają się tylko w komórkach gospodarza; nie prowadzą samodzielnie pełnej przemiany materii. W szkolnych ujęciach zwykle odróżnia się je od organizmów komórkowych; ich status na granicy życia i materii nieożywionej opisuje się ostrożnie. **Antybiotyki nie działają na wirusy** — działają na określone bakterie.
-3. **Bakterie** to organizmy jednokomórkowe **bez jądra** (prokarionty); rozmnażają się przez podział komórki; są samożywne lub cudzożywne.
-4. Choroby wirusowe: grypa, ospa wietrzna, różyczka, świnka, odra, AIDS; bakteryjne: gruźlica, borelioza, tężec, salmonelloza — **droga zakażenia + profilaktyka**.
-5. **Tkanki roślinne:** twórcza, okrywająca, miękiszowa, wzmacniająca, przewodząca (drewno — woda w górę, łyko — produkty fotosyntezy).
-6. **Mchy i paprociowe** rozmnażają się przez **zarodniki** i potrzebują **wody do zapłodnienia**; mchy nie mają korzeni (chwytniki), paprocie mają kłącze i liście z kupkami zarodni.
-7. **Nagonasienne** (sosna): nasiona leżą odkryte na łuskach szyszek; **okrytonasienne**: nasiona w **owocu** powstałym z zalążni słupka.
+3. **Bakterie** to organizmy jednokomórkowe **bez jądra** (prokarionty); rozmnażają się przez podział komórki (mogą też wymieniać geny, ale to nie jest rozmnażanie); są samożywne lub cudzożywne.
+4. Choroby wirusowe: grypa, ospa wietrzna, różyczka, świnka, odra, zakażenie HIV (może prowadzić do AIDS — zespołu nabytego niedoboru odporności); bakteryjne: gruźlica, borelioza, tężec, salmonelloza — **droga zakażenia + profilaktyka**.
+5. **Tkanki roślinne:** twórcza, okrywająca, miękiszowa, wzmacniająca, przewodząca (drewno — woda w górę, łyko — produkty fotosyntezy, głównie sacharozę).
+6. **Mchy i paprociowe** rozmnażają się przez **zarodniki** i potrzebują **wody do zapłodnienia** (plemniki przemieszczają się w wodzie do rodni); mchy nie mają korzeni (chwytniki), paprocie mają kłącze i liście z kupkami zarodni.
+7. **Nagonasienne** (sosna): zalążki (a potem nasiona) leżą odkryte na łuskach nasiennych szyszek, niezabezpieczone zalążnią; **okrytonasienne**: zalążki zamknięte w zalążni, nasiona rozwijają się w **owocu** powstałym z zalążni słupka.
 8. **Organy rośliny okrytonasiennej:** korzeń, łodyga, liść, kwiat, owoc — i ich funkcje; budowa kwiatu (działki, płatki, pręciki, słupek).
 9. **Grzyby:** cudzożywne, bez chlorofilu, ściana komórkowa z **chityny**, ciało ze **strzępek** (grzybnia) lub jednokomórkowe (drożdże); rozmnażają się przez zarodniki.
 10. **Tkanki zwierzęce:** nabłonkowa, mięśniowa, łączna, nerwowa.
@@ -710,3 +710,7 @@ Próba kontrolna :: próba do porównania — różni się od badawczej tylko ba
 - Zastąpiono bezwarunkowe zdanie „wirusy nie są organizmami” precyzyjniejszym opisem: wirusy nie mają budowy komórkowej i nie namnażają się samodzielnie; ich status w klasyfikacji życia zależy od przyjętego ujęcia.
 - Zachowano szkolny wniosek praktyczny: antybiotyki nie leczą infekcji wirusowych; nie oznacza to, że antybiotyki są nieskuteczne wobec wszystkich bakterii — skuteczność zależy od drobnoustroju i leku.
 - **Status:** poprawiono treść główną; nie przeprowadzono pełnej walidacji wszystkich kluczy i przykładów chorób.
+
+## AUDYT W1 — Perplexity (2026-10-10), część 1
+
+- Odpowiedź urwana po punkcie 9 minimum; wprowadzone poprawki pkt 1–7 (model szkolny rang, zapis nazwy gatunkowej, wymiana genów u bakterii, HIV/AIDS, sacharoza w łyku, woda do zapłodnienia, zalążki nagonasiennych i okrytonasiennych). Reszta lekcji — ponowne W1.
