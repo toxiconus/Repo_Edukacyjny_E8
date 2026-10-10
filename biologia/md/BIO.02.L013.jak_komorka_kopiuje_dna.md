@@ -261,6 +261,15 @@ BHP: brak.
 Matryca `A–G–T–C` → nowa nić `T–C–A–G` (komplementarna; przy zapisie z końcami: 5'–AGTC–3' → 3'–TCAG–5' — nici są antyrównoległe).  
 Wynik: 2 cząsteczki, każda = stara (matrycowa) nić + nowo zsyntetyzowana nić.
 
+| Pojęcie | Co to |
+|---|---|
+| nić matrycowa | stara nić, według której budowana jest nowa |
+| nić nowo zsyntetyzowana | nić dobudowana przez polimerazę, komplementarna do matrycy |
+| cząsteczka DNA | dwie nici razem (po replikacji: stara + nowa) |
+| chromatyda | jedna cząsteczka DNA z białkami — połowa zreplikowanego chromosomu |
+
+**Zadanie:** uzupełnij nić z zapisem kierunków: matryca 5′–G A T T C A–3′. **Odpowiedź:** 3′–C T A A G T–5′.
+
 ### 11C. Ćwiczenia samodzielne
 
 **A. Podstawa**  
@@ -520,3 +529,4 @@ Dana nić: 5′–A G T C–3′. Nić komplementarna, zapisana antyrównolegle,
 ## AUDYT W1 — Perplexity (2026-10-10, odpowiedź urwana w §10)
 
 - Wprowadzone: chromatydy a cząsteczki DNA, faza S przed mitozą i mejozą I, błąd replikacji a mutacja, starter, nici antyrównoległe z przykładem 5'/3', nić wiodąca i opóźniona, ligaza, typy mutacji, replikacja u prokariontów, klucz 2/11/13, klucz testu końcowego i zadanie Meselsona–Stahla po dwóch rundach; poprawiono też opis modelu rozproszonego (wykluczony dopiero po drugiej rundzie).
+- Uzupełnienie zaległych uwag W1 (2026-10-10): tabela: nić matrycowa / nowa / cząsteczka DNA / chromatyda, zadanie z kierunkami 5′/3′. Część lekcji po §10 nie została jeszcze oceniona (odpowiedź urwana) — do ponownego W1.

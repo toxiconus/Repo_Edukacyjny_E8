@@ -52,7 +52,7 @@ stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 
 ::: karta understand | Odpowiedz najpierw sam
 1. Ułóż od największej: gatunek, królestwo, rodzina, gromada, rodzaj, rząd, typ.
-2. Podaj dwa powody, dla których wirusy nie są organizmami.
+2. Podaj dwa powody, dla których wirusów zwykle nie zalicza się do organizmów.
 3. Czym różni się komórka bakterii od komórki rośliny?
 4. Która tkanka roślinna przewodzi wodę z solami mineralnymi?
 5. Dlaczego mchy i paprocie rosną głównie w miejscach wilgotnych?
@@ -61,7 +61,7 @@ stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 8. Czym różni się próba kontrolna od badawczej?
 
 ::: odp | Pokaż klucz
-1. Królestwo → typ → gromada → rząd → rodzina → rodzaj → gatunek. 2. Nie mają budowy komórkowej; nie prowadzą przemiany materii; namnażają się tylko w komórce gospodarza. 3. Bakteria nie ma jądra (DNA w nukleoidzie), mitochondriów ani chloroplastów; roślina ma jądro i organelle. 4. Drewno. 5. Do zapłodnienia potrzebują wody (plemniki pływają). 6. Owady: 3 pary odnóży, czułki, zwykle skrzydła, ciało z głowy, tułowia i odwłoka; pajęczaki: 4 pary odnóży, brak czułków i skrzydeł, głowotułów i odwłok. 7. Ptaki i ssaki. 8. Próba kontrolna ma wszystkie warunki jak badawcza **oprócz badanego czynnika** — służy do porównania.
+1. Królestwo → typ → gromada → rząd → rodzina → rodzaj → gatunek. 2. Nie mają budowy komórkowej; nie prowadzą samodzielnie przemiany materii; namnażają się tylko w komórce gospodarza (ich status zależy od przyjętego ujęcia). 3. Bakteria nie ma jądra (DNA w nukleoidzie), mitochondriów ani chloroplastów; roślina ma jądro i organelle. 4. Drewno. 5. Do zapłodnienia potrzebują wody (plemniki pływają). 6. Owady: 3 pary odnóży, czułki, zwykle skrzydła, ciało z głowy, tułowia i odwłoka; pajęczaki: 4 pary odnóży, brak czułków i skrzydeł, głowotułów i odwłok. 7. Ptaki i ssaki. 8. Próba kontrolna ma wszystkie warunki jak badawcza **oprócz badanego czynnika** — służy do porównania.
 
 **Interpretacja:** 7–8/8 — przejdź do [§10](#klinika) i [§11](#cwiczenia); mniej — całą lekcję po kolei.
 :::
@@ -69,7 +69,7 @@ stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 
 ## 1 | Klasyfikacja organizmów [[basic:E8]] {#klasyfikacja}
 
-Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) według podobieństwa budowy i pokrewieństwa. Im niższa ranga, tym organizmy w grupie są do siebie bardziej podobne.
+Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) według podobieństwa budowy i pokrewieństwa. Im niższa ranga, tym organizmy w grupie są do siebie bardziej podobne. W podręcznikach spotkasz też rangi dodatkowe, np. **klasa** (u roślin zamiast gromady), **podtyp**, **odmiana** — nie są potrzebne w podstawowym szeregu.
 
 ::: drzewo
 - KRÓLESTWO (np. zwierzęta)
@@ -227,7 +227,7 @@ Do paprociowych należą **paprocie**, **skrzypy** i **widłaki**.
 - **okwiat:** działki kielicha (ochrona pąka) i płatki korony (wabienie zapylaczy);
 - **pręcik:** nitka + **pylnik** (wytwarza **pyłek**);
 - **słupek:** **znamię** (przyjmuje pyłek), szyjka, **zalążnia** z zalążkami.
-**Zapylenie** = przeniesienie pyłku na znamię słupka (przez owady, wiatr, rzadziej wodę). Po **zapłodnieniu**: **zalążek → nasiono**, **zalążnia → owoc**. Nasiono: łupina + zarodek + materiał zapasowy.
+**Zapylenie** = przeniesienie pyłku na znamię słupka (przez owady, wiatr, rzadziej wodę). Po **zapłodnieniu**: **zalążek → nasiono**, **zalążnia → owoc** (to uproszczenie dla owocu właściwego — w niektórych owocach, np. truskawce czy jabłku, biorą udział też inne części kwiatu). Nasiono: łupina + zarodek + materiał zapasowy.
 :::
 
 ::: karta understand | Kiełkowanie i rozsiewanie
@@ -436,7 +436,7 @@ Osuszanie terenów podmokłych i zanieczyszczenie wód (płazy, ryby), przegradz
 ::: dosw | Doświadczenie — wpływ wody na kiełkowanie nasion fasoli
 Problem: Czy woda jest niezbędna do kiełkowania nasion fasoli?
 Hipoteza: Nasiona fasoli kiełkują tylko wtedy, gdy mają dostęp do wody.
-Sprzęt: dwie jednakowe szalki lub pojemniki, wata, po 10 nasion fasoli tej samej odmiany, woda.
+Sprzęt: dwie jednakowe szalki lub pojemniki, wata, po 10 nasion fasoli tej samej odmiany i z tej samej partii (podobnej wielkości i jakości), woda.
 Przebieg: W pojemniku A (próba kontrolna) układamy nasiona na wilgotnej wacie, w pojemniku B (próba badawcza) — na suchej. Oba stoją obok siebie w tej samej temperaturze przez 5–7 dni; w A dbamy, by wata była stale wilgotna.
 Obserwacja: W pojemniku A większość nasion pęcznieje i wypuszcza korzeń zarodkowy; w pojemniku B nasiona pozostają suche i nie kiełkują.
 Wniosek: Woda jest niezbędna do kiełkowania nasion fasoli — hipoteza potwierdzona.
@@ -523,7 +523,7 @@ a) Czy temperatura wpływa na kiełkowanie nasion rzeżuchy? b) A — 20°C (war
 - typ, królestwo, gromada, rodzina, rząd, rodzaj, gatunek
 ! Od najogólniejszej (królestwo) do najbardziej szczegółowej (gatunek).
 
-? Wirusy nie są organizmami, ponieważ:
+? Wirusów zwykle nie zalicza się do organizmów, ponieważ:
 - są mniejsze od bakterii
 + nie mają budowy komórkowej i namnażają się tylko w żywych komórkach
 - wywołują choroby
@@ -718,3 +718,4 @@ Próba kontrolna :: próba do porównania — różni się od badawczej tylko ba
 ## AUDYT W1 — Perplexity (2026-10-10), część 1
 
 - Odpowiedź urwana po punkcie 9 minimum; wprowadzone poprawki pkt 1–7 (model szkolny rang, zapis nazwy gatunkowej, wymiana genów u bakterii, HIV/AIDS, sacharoza w łyku, woda do zapłodnienia, zalążki nagonasiennych i okrytonasiennych). Reszta lekcji — ponowne W1.
+- Uzupełnienie zaległych uwag W1 (2026-10-10): pytanie diagnostyczne 2 i pytanie testowe o wirusy (ostrożniejsze ujęcie), rangi dodatkowe (klasa, podtyp, odmiana), owoc właściwy a inne części kwiatu, nasiona z tej samej partii.

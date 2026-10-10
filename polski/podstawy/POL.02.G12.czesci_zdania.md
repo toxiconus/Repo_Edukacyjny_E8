@@ -465,3 +465,4 @@ Wyraz nadrzędny :: wyraz, od którego zależy inny wyraz i od którego zadajemy
 - Test „zastąp przysłówkiem” oznaczony jako pomocniczy; wykres — „w przedstawionej konwencji”; podkreślenia — umowne; ściąga — pełne pytania o orzeczenie.
 - Druga odpowiedź Perplexity: dodano rozróżnienie zdanie bezpodmiotowe / równoważnik zdania (§4). Uwaga o „w” w trenerze dotyczyła zapisu eksportu — w trenerze „w zimnym kantorze” jest jedną grupą.
 - Nieprzyjęte: uwaga do §12 A zad. 2 (klucz był już pełny).
+- Sprawdzenie zaległych uwag (2026-10-10): „zakres E8 — oznaczyć konsekwentnie” — wykres zdania pojedynczego zostaje w warstwie E8/rozumienie (jest w wymaganiach egzaminu ósmoklasisty); konkursowe są oznaczone: dopełnienie bliższe/dalsze, okoliczniki warunku i przyzwolenia, przypadki sporne. Czasownik modalny — konwencja „orzeczenie czasownikowe złożone” już w §3.

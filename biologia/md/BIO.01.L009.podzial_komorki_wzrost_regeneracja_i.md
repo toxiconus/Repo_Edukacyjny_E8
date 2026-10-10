@@ -192,8 +192,9 @@ Narysuj dwa tory od komórki diploidalnej: jeden dla mitozy, drugi dla mejozy. O
 4. Dlaczego nie należy opisywać oogenezy u człowieka jako powstawania czterech równoważnych komórek jajowych?
 5. Komórka człowieka po replikacji DNA ma: A) 92 chromosomy B) 46 chromosomów i 92 chromatydy C) 23 chromosomy i 46 chromatyd.
 6. W mejozie I rozdzielają się: A) chromatydy siostrzane B) chromosomy homologiczne C) nukleotydy.
+7. Wyjaśnij, dlaczego między mejozą I i II nie zachodzi ponowna replikacja DNA.
 
-**Odpowiedzi:** 1. B; 2. A; 3. Np. mitoza obejmuje jeden podział i zwykle zachowuje liczbę chromosomów, a mejoza dwa podziały i redukuje liczbę zestawów; 4. Podział cytoplazmy jest nierówny i zwykle powstaje jedna duża komórka jajowa oraz małe ciałka kierunkowe; 5. B; 6. B.
+**Odpowiedzi:** 1. B; 2. A; 3. Np. mitoza obejmuje jeden podział i zwykle zachowuje liczbę chromosomów, a mejoza dwa podziały i redukuje liczbę zestawów; 4. Podział cytoplazmy jest nierówny i zwykle powstaje jedna duża komórka jajowa oraz małe ciałka kierunkowe; 5. B; 6. B; 7. Ponowna replikacja podwoiłaby ilość DNA i zniweczyła redukcję liczby chromosomów — komórki potomne nie byłyby haploidalne.
 
 ## 21. Słownik i status opanowania
 
@@ -354,3 +355,4 @@ W gojeniu rany komórki dzielą się mitotycznie, by zastąpić uszkodzone lub u
 
 - Wprowadzone: redukcja w mejozie I, tabela mitoza/mejoza (replikacja, co się rozdziela), definicja chromosomu i homologów, cytokineza roślin/zwierząt, crossing-over między niesiostrzanymi chromatydami, losowe łączenie gamet = zapłodnienie, brak replikacji między mejozą I i II, spermatogeneza, nondysjunkcja (zaawansowany), tabela chromosomów i chromatyd, zadania 7–9 i test 5–6, klucz 4, „u człowieka” + przykłady liczby chromosomów.
 - Nieprzyjęte: prometafaza (ponad poziom kursu).
+- Uzupełnienie zaległych uwag W1 (2026-10-10): pytanie testowe 7 (brak replikacji między mejozą I i II).

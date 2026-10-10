@@ -439,7 +439,7 @@ Cudzożywność :: pobieranie gotowych związków organicznych z otoczenia
 - Jądro = DNA · mitochondrium = ATP · chloroplast = fotosynteza · błona = granica · ściana: celuloza / chityna / mureina.
 - Bakteria: bez jądra; roślina: ściana + chloroplast + duża wakuola; zwierzę: bez ściany; grzyb: chityna, bez chloroplastu.
 - Mikroskop: od najmniejszego powiększenia; okular × obiektyw.
-- Fotosynteza: CO₂ + H₂O → glukoza + O₂ (światło, chlorofil, chloroplast). Oddychanie: glukoza + O₂ → CO₂ + H₂O + ATP (stale, mitochondria). Fermentacja drożdży → alkohol + CO₂.
+- Fotosynteza (zapis sumaryczny): CO₂ + H₂O → glukoza + O₂ (światło, chlorofil, chloroplast). Oddychanie: glukoza + O₂ → CO₂ + H₂O + ATP (stale, mitochondria). Fermentacja drożdży → alkohol + CO₂.
 - CO₂ — woda wapienna mętnieje; O₂ — tlące się łuczywo się zapala.
 :::
 
@@ -459,3 +459,4 @@ Cudzożywność :: pobieranie gotowych związków organicznych z otoczenia
 - Wprowadzone: glikoliza w cytoplazmie (minimum), definicja fermentacji, mchy (tkanki przewodzące), śruba makrometryczna tylko przy małym powiększeniu, barwienie jądra (Lugol jako przykład), mureina = peptydoglikan, wakuola u zwierząt i bakterii, rybosomy w organellach (ambitne), „ruch netto” w dyfuzji i osmozie, transport pęcherzykowy, sacharoza w łyku, punkt kompensacyjny w opisie grafiki, ATP ok. 30–32 (38 — wartość historyczna; także w grafice), fermentacja mlekowa w mięśniach — krótkotrwale, kontrola temperatury i szczelność w doświadczeniach, pęcherzyki jako wskaźnik orientacyjny, klucze 4, 8, 9c.
 - Druga odpowiedź Perplexity (ta sama paczka): ATP jako nośnik energii, NAD⁺ w fermentacji (ambitne), karta bilansu ATP, łuczywo ostrożniej, klucz B5.
 - Nieprzyjęte: zapis wzoru `$$` to składnia bloku wzoru w dialekcie lekcji (w HTML bez LaTeX-a), nie LaTeX; uwagi „bez zmian/klucz poprawny” (§10 zad. 3, §11 A zad. 5, §12 chityna, §15 równanie).
+- Uzupełnienie zaległych uwag W1 (2026-10-10): kwalifikator „sumaryczny” w ściądze.

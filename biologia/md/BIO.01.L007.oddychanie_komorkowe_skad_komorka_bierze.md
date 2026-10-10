@@ -68,6 +68,14 @@ Te pojęcia opisują różne poziomy organizacji.
 
 Oddychanie komórkowe może zachodzić tylko wtedy, gdy komórka ma odpowiednie substraty i warunki. Samo wdychanie powietrza nie jest tym samym procesem co reakcje zachodzące w komórkach.
 
+**Mnemotechnika: „Płuca dostarczają, komórka przetwarza.”**
+
+| Pytanie | Wymiana gazowa | Oddychanie komórkowe |
+|---|---|---|
+| Gdzie zachodzi? | między organizmem a środowiskiem lub między płynami a tkankami | w komórkach |
+| Co się dzieje? | pobieranie O₂ i usuwanie CO₂ | przekształcanie energii związków organicznych |
+| Czy wymaga mitochondriów? | nie | u eukariontów dalsze etapy oddychania tlenowego — tak |
+
 ## 7. Oddychanie tlenowe a fermentacja — [MASTER]
 Gdy tlen nie jest dostępny w odpowiednich warunkach, niektóre komórki mogą uzyskiwać ATP dzięki procesom beztlenowym. W fermentacji glikoliza dostarcza niewielką ilość ATP, a przemiany produktów glikolizy pozwalają odtworzyć NAD⁺, potrzebny do dalszego przebiegu glikolizy.
 
@@ -434,3 +442,4 @@ Podczas wysiłku mięśnie zużywają więcej ATP, więc rośnie zapotrzebowanie
 ## AUDYT W1 + ulepszenia — Perplexity (2026-10-10)
 
 - Wprowadzone: analogia banknot/monety, ATP powstaje etapami i nie jest magazynem, schemat etapów z miejscami, bakterie — błona komórkowa, rola tlenu (akceptor elektronów → woda), inne substraty (tłuszcze, aminokwasy), oddychanie beztlenowe (konkurs), mleczan nie jest tylko odpadem, tabela oddychanie/fermentacja, ATP 30–32 (38 historycznie) w opisie grafiki, punkt kompensacyjny, zadanie G z próbą kontrolną, test 5, słownik (NADH/FADH₂, łańcuch, punkt kompensacyjny), bilans elektronów.
+- Uzupełnienie zaległych uwag W1 (2026-10-10): mnemotechnika i tabela wymiana gazowa / oddychanie komórkowe (pakiet dodatkowy).

@@ -947,6 +947,15 @@ Obie mają <strong>identyczną</strong> sekwencję informacyjną.</p>
 <h3>11B. Ćwiczenie prowadzone</h3>
 <p>Matryca <code>A–G–T–C</code> → nowa nić <code>T–C–A–G</code> (komplementarna; przy zapisie z końcami: 5'–AGTC–3' → 3'–TCAG–5' — nici są antyrównoległe).
 Wynik: 2 cząsteczki, każda = stara (matrycowa) nić + nowo zsyntetyzowana nić.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Pojęcie</th><th>Co to</th></tr></thead>
+<tbody>
+<tr><td>nić matrycowa</td><td>stara nić, według której budowana jest nowa</td></tr>
+<tr><td>nić nowo zsyntetyzowana</td><td>nić dobudowana przez polimerazę, komplementarna do matrycy</td></tr>
+<tr><td>cząsteczka DNA</td><td>dwie nici razem (po replikacji: stara + nowa)</td></tr>
+<tr><td>chromatyda</td><td>jedna cząsteczka DNA z białkami — połowa zreplikowanego chromosomu</td></tr>
+</tbody></table></div>
+<p><strong>Zadanie:</strong> uzupełnij nić z zapisem kierunków: matryca 5′–G A T T C A–3′. <strong>Odpowiedź:</strong> 3′–C T A A G T–5′.</p>
 <h3>11C. Ćwiczenia samodzielne</h3>
 <p><strong>A. Podstawa</strong>
 1. Co to replikacja?
@@ -1203,6 +1212,7 @@ Na E8 nie trzeba procedury; warto wiedzieć, że semikonserwatywność jest <str
 <div class="part-heading">AUDYT W1 — Perplexity (2026-10-10, odpowiedź urwana w §10)</div>
 <ul>
 <li>Wprowadzone: chromatydy a cząsteczki DNA, faza S przed mitozą i mejozą I, błąd replikacji a mutacja, starter, nici antyrównoległe z przykładem 5'/3', nić wiodąca i opóźniona, ligaza, typy mutacji, replikacja u prokariontów, klucz 2/11/13, klucz testu końcowego i zadanie Meselsona–Stahla po dwóch rundach; poprawiono też opis modelu rozproszonego (wykluczony dopiero po drugiej rundzie).</li>
+<li>Uzupełnienie zaległych uwag W1 (2026-10-10): tabela: nić matrycowa / nowa / cząsteczka DNA / chromatyda, zadanie z kierunkami 5′/3′. Część lekcji po §10 nie została jeszcze oceniona (odpowiedź urwana) — do ponownego W1.</li>
 </ul>
 </section>
 
@@ -1623,7 +1633,7 @@ mount:function(el,o){var uid='bm'+Math.random().toString(36).slice(2,7),widok=(o
     else{[[356,34,350,34,'ściana'],[356,52,345,52,'błona'],[356,104,325,104,'chloroplast'],[356,130,300,130,'wakuola'],[356,168,245,168,'mitochondrium'],[64,60,92,60,'jądro'],[64,110,98,110,'rybosom']].forEach(function(l){var L=l[0]<l[2];s.appendChild(S('line',{x1:L?l[0]+3:l[0]-3,y1:l[1],x2:l[2],y2:l[3],stroke:'var(--viz-mut)','stroke-width':1}));s.appendChild(T(l[0],l[1],l[4],{s:10.5,a:L?'end':'start'}))})}
     return s}
   function opis(){if(widok==='model')return'<b>Model szkolny</b><span>Narysowane i podpisane są wszystkie struktury: ściana, błona, jądro, wakuola, chloroplasty, mitochondria, rybosomy. To uproszczenie — kształty i proporcje są umowne, a zwykle nie da się zobaczyć ich wszystkich jednocześnie.</span>';
-    return'<b>Mikroskop świetlny (ok. ×400)</b><span>Wyraźnie widać: ścianę komórkową (granice komórek) i zielone chloroplasty; wakuolę rozpoznajemy po pustym, jasnym środku. '+(barw?'Po barwieniu (np. płynem Lugola) jądro staje się widoczne jako ciemniejsza plamka.':'Jądro jest słabo widoczne — trzeba zabarwić preparat.')+'</span><span>Nie widać: rybosomów (ok. 25 nm) ani szczegółów mitochondriów — są mniejsze niż zdolność rozdzielcza mikroskopu świetlnego (ok. 0,2 µm). Błony komórkowej nie odróżnisz od ściany.</span>'}
+    return'<b>Mikroskop świetlny (ok. ×400)</b><span>Wyraźnie widać: ścianę komórkową (granice komórek) i zielone chloroplasty; wakuolę rozpoznajemy po pustym, jasnym środku. '+(barw?'Po barwieniu (np. błękitem metylenowym; barwnik zależy od preparatu) jądro staje się widoczne jako ciemniejsza plamka.':'Jądro jest słabo widoczne — trzeba zabarwić preparat.')+'</span><span>Nie widać: rybosomów (ok. 25 nm) ani szczegółów mitochondriów — są mniejsze niż zdolność rozdzielcza mikroskopu świetlnego (ok. 0,2 µm). Błony komórkowej nie odróżnisz od ściany.</span>'}
   function draw(){hold.innerHTML='';hold.appendChild(rys());box.innerHTML=opis();tools.innerHTML='';
     [['mikroskop','widok w mikroskopie'],['model','model szkolny']].forEach(function(v){var b=btn(v[1],function(){widok=v[0];draw()});if(widok===v[0])b.className+=' on';b.setAttribute('aria-pressed',String(widok===v[0]));tools.appendChild(b)});
     if(widok==='mikroskop'){var b=btn(barw?'usuń barwienie':'zabarw preparat',function(){barw=!barw;draw()});if(barw)b.className+=' on';tools.appendChild(b)}}
