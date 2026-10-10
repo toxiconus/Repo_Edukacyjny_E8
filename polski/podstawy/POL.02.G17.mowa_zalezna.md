@@ -2,145 +2,204 @@
 kod: G17
 przedmiot: polski
 tytul: Mowa zależna i niezależna
-lead: Przytaczanie cudzych słów: dialog, cytat, przekształcanie.
+lead: Jak przekazać cudze słowa — dosłownie (cytat, dialog) albo własnymi słowami (mowa zależna) — nie zmieniając sensu, intencji ani faktów.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
-zakres: gramatyka — części mowy i składnia; powiązania: G16
-stan: W1 — GPT-6, 2026-10-09; kontrola przekształceń i interpunkcji
+zakres: gramatyka — składnia i interpunkcja; powiązania: G16 (zdania podrzędne), G05 (zaimek), G02 (czasownik)
+stan: W1 FULL — Perplexity, 2026-10-10 (v3.0, Claude; wykład, mini-wykład, ciekawostki)
 utworzono: 2026-10-09
-wersja: 2.1
+wersja: 3.0
 ---
 
-# G17 | Mowa niezależna i zależna — pełna lekcja v2.1
+# G17 | Mowa niezależna i zależna — lekcja v3.0
 
-## 0. Cele
-Potrafię odróżnić dosłowne przytoczenie od relacji z cudzej wypowiedzi, zapisać dialog, przekształcić mowę niezależną w zależną i odwrotnie, zmienić osobę, zaimki oraz określenia czasu i miejsca, a także zachować sens oryginalnej wypowiedzi.
+## 0. Potrafię… (kryteria sukcesu)
+- odróżnić dosłowne przytoczenie od relacji z cudzej wypowiedzi;
+- zapisać dialog i cytat w zdaniu narratora;
+- przekształcić mowę niezależną w zależną i odwrotnie — zmieniając osobę, zaimki, czas i miejsce **tylko wtedy, gdy wymaga tego perspektywa**;
+- dobrać czasownik relacjonujący do intencji (zapytał, poprosił, ostrzegł…);
+- zachować sens — nie dopisywać i nie zmieniać informacji.
+
+::: karta understand | Przypomnij sobie (G16)
+Mowa zależna to zwykle **zdanie złożone podrzędnie**: *Powiedział, **że wróci**.* — przed *że, czy, żeby, kiedy, gdzie* stawiamy **przecinek**.
+:::
 
 ## 1. Mowa niezależna
-Mowa niezależna przytacza wypowiedź w jej bezpośredniej formie: **Marta powiedziała: „Wrócę jutro”.** Zachowujemy słowa mówiącego, zwykle ujmując je w cudzysłów lub zapisując jako dialog od nowej linii z myślnikiem. Dwukropek wprowadza przytoczenie w konstrukcji typu *Powiedział: „Nie wiem”*. W dialogu zapis: *— Nie wiem — odpowiedział Kuba.* Nie łącz automatycznie cudzysłowu i myślnika w jednej konstrukcji, jeśli reguła zapisu dialogu tego nie wymaga.
+Przytacza wypowiedź **dosłownie**: *Marta powiedziała: „Wrócę jutro”.* Zachowujemy słowa mówiącego — w cudzysłowie (po dwukropku) albo jako dialog od nowego wiersza z myślnikiem: *— Nie wiem — odpowiedział Kuba.* Nie łącz w jednej wypowiedzi cudzysłowu i myślnika dialogowego.
 
 ## 2. Mowa zależna
-Mowa zależna przekazuje treść wypowiedzi bez przytaczania jej dosłownie: **Marta powiedziała, że wróci następnego dnia.** Często używamy zdań podrzędnych wprowadzonych przez *że, czy, aby/żeby*. Nie stawiamy cudzysłowu wokół parafrazy. Zwykle pojawia się przecinek przed zdaniem podrzędnym.
+Przekazuje **treść** wypowiedzi bez dosłownego przytoczenia: *Marta powiedziała, że wróci następnego dnia.* Używamy zdań podrzędnych z *że, czy, żeby* (oraz *kiedy, gdzie, dlaczego…*). Bez cudzysłowu; przed zdaniem podrzędnym — przecinek.
 
-## 3. Co trzeba zmienić?
-Zmiany zależą od sytuacji mówiącego, czasu relacjonowania i kontekstu. Najczęściej zmieniamy:
-- osobę: *Powiedział: „Jestem gotowy”* → *Powiedział, że jest gotowy*;
-- zaimki dzierżawcze: *„To mój zeszyt”* → *Powiedziała, że to jej zeszyt* (jeśli mówiła dziewczyna o swoim zeszycie);
-- określenia czasu: *dziś* → *tego dnia*, *jutro* → *następnego dnia*, *wczoraj* → *poprzedniego dnia* — gdy zmienił się punkt odniesienia;
-- określenia miejsca: *tutaj* → *tam* — gdy miejsce relacjonowania jest inne;
-- tryb i formę pytania/prośby: *„Czy przyjdziesz?”* → *Zapytała, czy przyjdę*; *„Zamknij okno”* → *Poprosił, żebym zamknął okno*.
+## 3. Wykład — jak opowiedzieć cudze słowa
+Wyobraź sobie, że kolega powiedział: *„Jutro pójdziemy na mecz”.* Możesz przekazać to dalej na dwa sposoby.
 
-Nie wykonuj zmian mechanicznie. Jeśli relacjonujący nadal jest w tym samym miejscu i czasie, *jutro* może pozostać *jutro*. Kluczowa jest perspektywa, nie sama lista zamian.
+**Pierwszy — mowa niezależna:** powtarzasz dokładnie to, co usłyszałeś: *Kolega powiedział: „Jutro pójdziemy na mecz”.* Cudzysłów działa jak nagranie — nic nie zmieniasz.
 
-## 4. Przekształcanie krok po kroku
+**Drugi — mowa zależna:** opowiadasz treść **swoimi słowami, ze swojej perspektywy**: *Kolega powiedział, że następnego dnia pójdziemy na mecz.* Znikają cudzysłowy, pojawia się *że* i przecinek. To jak opowiadanie znajomemu, co powiedziała inna osoba — nie musisz powtarzać każdego słowa, ale musisz zachować **sens, intencję i fakty**.
+
+Co się zmienia — i dlaczego? Bo **zmienia się, kto mówi i kiedy**. Słowa *ja, tu, dziś, jutro* zawsze wskazują na mówiącego i jego chwilę. Jeśli Tomek powiedział w poniedziałek *„Jutro przyjdę”*, a ty relacjonujesz to we wtorek, *jutro* Tomka to twoje *dziś*: *Tomek powiedział, że dziś przyjdzie.* Jeśli relacjonujesz jeszcze w poniedziałek — *jutro* zostaje.
+
+**Najważniejsze: nie zmieniaj sensu.** *„Może przyjdę”* to przypuszczenie — nie pisz, że *obiecał przyjść*. Pytanie zostaje pytaniem (*zapytał, czy…*), prośba — prośbą (*poprosił, żeby…*), zakaz — zakazem (*zabronił / ostrzegł, żeby nie…*).
+
+::: karta core | W skrócie — pięć pytań przed przekształceniem
+**Kto mówił? Do kogo? Kto teraz relacjonuje? Kiedy? Gdzie?** Dopiero po odpowiedzi zmieniaj osobę, zaimki, określenia czasu i miejsca.
+:::
+
+## 4. Co trzeba zmienić?
+- **osobę:** *„Jestem gotowy”* → *Powiedział, że jest gotowy*;
+- **zaimki osobowe i dzierżawcze:** *„To mój zeszyt”* → *Powiedziała, że to jej zeszyt*;
+- **zaimki wskazujące:** *ten → tamten*, *tu/tutaj → tam*, *teraz → wtedy* — gdy relacjonujesz z innego miejsca lub czasu;
+- **określenia czasu:** *dziś → tego dnia*, *jutro → następnego dnia*, *wczoraj → poprzedniego dnia* — gdy zmienił się punkt odniesienia;
+- **formę pytania i prośby:** *„Czy przyjdziesz?”* → *Zapytała, czy przyjdę*; *„Zamknij okno”* → *Poprosił, żebym zamknął okno*.
+
+::: karta warning | Nie zmieniaj mechanicznie
+Relacjonujesz **tego samego dnia i w tym samym miejscu** → *jutro* i *tutaj* mogą zostać. Relacjonujesz **później lub gdzie indziej** → zwykle *następnego dnia*, *tam*. Kluczowa jest perspektywa, nie lista zamian.
+:::
+
+## 5. Przekształcanie krok po kroku
 1. Ustal, kto mówi i do kogo.
-2. Zdecyduj, kto relacjonuje wypowiedź.
-3. Zmień osobę czasownika i zaimki zgodnie z nową perspektywą.
-4. Zdecyduj, czy trzeba zmienić określenia czasu i miejsca.
-5. Wprowadź zdanie zależne (*że, czy, żeby*) i postaw przecinek.
-6. Usuń cudzysłów, jeśli treść nie jest już cytatem dosłownym.
-7. Sprawdź, czy zachowano sens, intencję i istotne informacje.
+2. Ustal, kto relacjonuje — i kiedy oraz gdzie.
+3. Zmień osobę czasownika i zaimki.
+4. Zdecyduj, czy zmienić określenia czasu i miejsca.
+5. Wprowadź *że / czy / żeby* (albo zaimek pytający) i postaw przecinek.
+6. Usuń cudzysłów.
+7. Przeczytaj całość: czy sens, intencja i fakty są te same?
 
-## 5. Pytania, rozkazy i prośby
-- pytanie rozstrzygające: *„Czy odrobiłeś lekcję?”* → *Zapytała, czy odrobiłem lekcję.*
-- pytanie szczegółowe: *„Kiedy wrócisz?”* → *Zapytał, kiedy wrócę.*
-- prośba: *„Podaj mi książkę”* → *Poprosiła, żebym podał jej książkę.*
-- zakaz: *„Nie dotykaj eksponatów”* → *Przewodnik ostrzegł, żeby nie dotykać eksponatów.*
+**Szybki test przed zapisaniem:** czy osoba czasownika pasuje do relacjonującego? czy zaimki wskazują właściwe osoby? czy czas i miejsce zgadzają się z momentem relacji? czy zachowałem intencję? czy przed *że, czy, żeby* jest przecinek?
+
+## 6. Pytania, prośby, zakazy — i czasownik relacjonujący
+- pytanie rozstrzygające (tak/nie) → **czy**: *„Czy odrobiłeś lekcję?”* → *Zapytała, czy odrobiłem lekcję.* (zdanie podrzędne dopełnieniowe);
+- pytanie szczegółowe → **ten sam zaimek pytający**: *„Kiedy wrócisz?”* → *Zapytał, kiedy wrócę.*;
+- prośba, polecenie → **żeby**: *„Podaj mi książkę”* → *Poprosiła, żebym podał jej książkę.*;
+- zakaz: *„Nie dotykaj eksponatów”* → *Przewodnik ostrzegł, żeby nie dotykać eksponatów.*;
 - życzenie: *„Obyś wygrał!”* → *Życzył mi, żebym wygrał.*
 
-## 6. Zapis dialogu
-Każdą nową wypowiedź innej osoby zwykle rozpoczynamy od nowego wiersza i myślnika. Sposób wprowadzenia narracji zależy od szyku:
-- *— Wrócę jutro — powiedziała Ania.*
-- *Ania powiedziała: — Wrócę jutro.* — możliwe w niektórych układach, ale w szkolnym zapisie dialogu najczytelniejszy jest pierwszy wariant.
-- *Ania powiedziała: „Wrócę jutro”.* — cytat w zdaniu narratora.
-
-W tekście szkolnym konsekwentnie stosuj jeden system zapisu dialogu. Myślnik dialogowy to nie zwykły łącznik; nie dodawaj cudzysłowu do każdej wypowiedzi dialogowej.
-
-## 7. Klinika błędów
-| Błąd | Poprawnie | Dlaczego? |
+| Intencja mówiącego | Czasownik relacjonujący | Przykład |
 |---|---|---|
-| *Powiedział, że „przyjdę jutro”.* | *Powiedział, że przyjdzie następnego dnia* — przy zmianie perspektywy | Zachowano by formę cytatu w konstrukcji zależnej. |
-| *Zapytała czy wrócę.* | *Zapytała, czy wrócę.* | Przecinek oddziela zdanie podrzędne. |
-| *Powiedział: „Jestem gotowy”, że…* | wybierz cytat albo mowę zależną | Nie mieszaj dwóch konstrukcji. |
-| *Ola powiedziała, że jutro przyjdzie* bez sprawdzenia kontekstu | zależnie od punktu odniesienia: *jutro/następnego dnia* | Określenie czasu zmienia się tylko, gdy wymaga tego perspektywa. |
-| w dialogu każdy wiersz ma cudzysłów i myślnik | konsekwentny zapis dialogowy | Nadmiar znaków utrudnia odczyt. |
+| informacja | powiedział, poinformował, wyjaśnił | *Wyjaśnił, że autobus się spóźni.* |
+| pytanie | zapytał, dopytywał | *Zapytał, czy zdążę.* |
+| prośba | poprosił, błagał | *Poprosił, żebym pomógł.* |
+| polecenie, zakaz | kazał, polecił, zabronił, ostrzegł | *Kazał mi wyjść.* / *Ostrzegł, żebym nie wchodził.* |
+| zapowiedź, obietnica | zapowiedział, obiecał | *Obiecał, że przyjdzie.* |
+| przypuszczenie | przypuszczał, sądził, powiedział, że może… | *Powiedział, że może przyjdzie.* |
 
-## 8. Ćwiczenia A
-Przekształć na mowę zależną:
-1. Ania powiedziała: „Lubię tę książkę”.
-2. Kuba zapytał: „Czy idziesz ze mną?”.
-3. Mama poprosiła: „Zamknij okno”.
-4. Tomek powiedział: „Przyjdę jutro tutaj”.
+Czasownik relacjonujący **nie może zmieniać sensu**: *obiecał* ≠ *powiedział, że może*. *Kazać* łączy się zwykle z bezokolicznikiem (*kazał mi pójść*); forma *kazał, żebym poszedł* też jest poprawna.
 
-**Przykładowy klucz:** 1. Ania powiedziała, że lubi tę książkę. (Jeśli mówi o książce znajdującej się przy relacjonującym, *tę* może pozostać; kontekst może wymagać *tam­tą*.) 2. Kuba zapytał, czy pójdę z nim. 3. Mama poprosiła, żebym zamknął/zamknęła okno. 4. Tomek powiedział, że przyjdzie następnego dnia tam — jeśli zmieniły się punkt odniesienia i miejsce; w tym samym kontekście *jutro tutaj* może pozostać.
+## 7. Zapis dialogu
+Każda nowa wypowiedź innej osoby — od nowego wiersza, z myślnikiem.
+- *— Wrócę jutro — powiedziała Ania.* — wtrącenie narratora małą literą, między myślnikami.
+- *— Wrócę jutro. — Ania zamknęła zeszyt.* — po wypowiedzi kropka (należy do słów bohaterki), a osobne zdanie narratora o innej czynności zaczyna się wielką literą.
+- *Ania powiedziała: „Wrócę jutro”.* — cytat w zdaniu narratora; kropka po cudzysłowie.
 
-## 9. Ćwiczenia B
-Przekształć na mowę niezależną:
-1. Nauczyciel powiedział, że mamy otworzyć podręczniki.
-2. Ola zapytała, kiedy wrócę.
-3. Tata poprosił mnie, żebym wyniósł śmieci.
+Stosuj jeden system konsekwentnie. Myślnik dialogowy (—) to nie łącznik (-).
 
-**Przykładowy klucz:** 1. Nauczyciel powiedział: „Otwórzcie podręczniki”. 2. Ola zapytała: „Kiedy wrócisz?”. 3. Tata poprosił: „Wynieś śmieci”. Możliwe są inne wersje, jeśli zachowują sens i relację między osobami.
+## 8. Klinika błędów
+| Błąd | Poprawnie | Dlaczego? / jak się sprawdzić |
+|---|---|---|
+| *Powiedział, że „przyjdę jutro”.* | *Powiedział, że przyjdzie następnego dnia.* | W mowie zależnej nie zostawiamy cytatu — zmieniamy osobę i (gdy trzeba) czas. |
+| *Zapytała czy wrócę.* | *Zapytała, czy wrócę.* | Przecinek przed zdaniem podrzędnym. |
+| *Zapytała, że przyjdę.* | *Zapytała, czy przyjdę.* | Pytanie rozstrzygające — *czy*, nie *że*. |
+| *Powiedział: „Jestem gotowy”, że…* | cytat **albo** mowa zależna | Nie mieszaj konstrukcji. |
+| *Adam obiecał, że przyjdzie* (oryginał: „Może przyjdę”) | *Adam powiedział, że może przyjdzie.* | Przypuszczenie to nie obietnica. |
+| każda wypowiedź w dialogu w cudzysłowie i z myślnikiem | konsekwentny zapis dialogowy | Nadmiar znaków utrudnia czytanie. |
 
-## 10. Zadania egzaminacyjne
-**1 (0–1 pkt).** Wskaż mowę zależną: A *„Wrócę jutro” — powiedział.* B *Powiedział, że wróci następnego dnia.* **Klucz: B.**
+## 9. Ćwiczenia A — na mowę zależną [E8]
+1. *Ania powiedziała: „Lubię tę książkę”.* 2. *Kuba zapytał: „Czy idziesz ze mną?”.* 3. *Mama poprosiła: „Zamknij okno”.* 4. *Tomek powiedział: „Przyjdę jutro tutaj”.* 5. *„Nie znam tej ulicy” — powiedział Piotr.* 6. *„Nie biegaj po korytarzu!” — powiedział nauczyciel.* 7. *„Gdzie położyłeś klucze?” — zapytała mama.*
 
-**2 (0–2 pkt).** Przekształć: „Nie wiem, gdzie zostawiłem klucze” — powiedziała Marta. **Przykład:** Marta powiedziała, że nie wie, gdzie zostawiła klucze. Zmieniono osobę czasownika, zachowano zdanie podrzędne i poprawną interpunkcję.
+::: odp | Przykładowy klucz
+Formę (rodzaj, osoba) dobierz do tego, **kto relacjonuje**.
+1. *Ania powiedziała, że lubi tę książkę.* (gdy książka nie jest przy relacjonującym — *tamtą*). 2. *Kuba zapytał, czy pójdę z nim.* 3. *Mama poprosiła, żebym zamknął/zamknęła okno.* 4. *Tomek powiedział, że przyjdzie następnego dnia tam* — jeśli zmienił się czas i miejsce; w tym samym kontekście *jutro tutaj* może zostać. 5. *Piotr powiedział, że nie zna tej ulicy.* 6. *Nauczyciel powiedział (zabronił), żebym nie biegał/nie biegała po korytarzu.* 7. *Mama zapytała, gdzie położyłem/położyłam klucze.*
+:::
 
-## 11. Fiszki
-Mowa niezależna — dosłowne przytoczenie; mowa zależna — relacja z wypowiedzi; dwukropek — wprowadza cytat; *że* — często wprowadza treść wypowiedzi; *czy* — wprowadza pytanie zależne; zmiana perspektywy — może wymagać zmiany osoby, zaimków, czasu i miejsca.
+## 10. Ćwiczenia B — na mowę niezależną
+1. *Nauczyciel powiedział, że mamy otworzyć podręczniki.* 2. *Ola zapytała, kiedy wrócę.* 3. *Tata poprosił mnie, żebym wyniósł śmieci.* 4. *Kuba powiedział, że nie chce iść na spacer.* 5. *Babcia poprosiła, żebym pomógł jej nieść zakupy.*
 
-## 12. Wizualizacja
-@opis Strzałka „mowa niezależna → mowa zależna” z polami: osoba, zaimek, czas/miejsce, spójnik, przecinek, usunięcie cudzysłowu. Strzałka powrotna podkreśla, że z mowy zależnej można odtworzyć wiele równoważnych cytatów, nie zawsze jeden jedyny.
+::: odp | Przykładowy klucz
+1. *Nauczyciel powiedział: „Otwórzcie podręczniki”.* (gdy zwraca się do uczniów; możliwe też *„Otwórzmy podręczniki”*). 2. *Ola zapytała: „Kiedy wrócisz?”.* 3. *Tata poprosił: „Wynieś śmieci”.* 4. *Kuba powiedział: „Nie chcę iść na spacer”.* 5. *Babcia poprosiła: „Pomóż mi nieść zakupy”.* Inne wersje są poprawne, jeśli zachowują sens i relację między osobami.
+:::
 
-## 13. Zadanie przekrojowe
-Przekształć dialog: — Czy przyjdziesz jutro? — zapytała Ewa. — Przyjdę, jeśli skończę pracę — odpowiedział Adam.
+## 11. Znajdź błąd i oceń sens [ambitny]
+1. *Ewa powiedziała, że „nie pójdę jutro do szkoły”, bo jest chora.*
+2. Oryginał: *„Może przyjdę na spotkanie” — powiedział Adam.* Relacja: *Adam obiecał, że przyjdzie na spotkanie.*
+3. *Marek poprosił Zofię, czy mogłaby mu pożyczyć słownik.*
 
-**Przykładowy klucz:** Ewa zapytała Adama, czy przyjdzie następnego dnia. Adam odpowiedział, że przyjdzie, jeśli skończy pracę. Zmiana *jutro → następnego dnia* zależy od czasu relacjonowania; zachowano warunek i zmieniono osobę czasownika.
+::: odp | Klucz
+1. *Ewa powiedziała, że nie pójdzie następnego dnia do szkoły, bo jest chora.* — bez cudzysłowu, zmiana osoby (i czasu, jeśli relacja jest później).
+2. Sens zmieniony — *może* to przypuszczenie, *obiecał* to deklaracja. Poprawnie: *Adam powiedział, że może przyjdzie na spotkanie.*
+3. *Poprosić* nie łączy się z *czy*. Poprawnie: *Marek zapytał Zofię, czy mogłaby mu pożyczyć słownik.* albo *Marek poprosił Zofię o pożyczenie słownika.*
+:::
 
-## 14. Samokontrola
-Sprawdź osoby, zaimki, określenia czasu i miejsca, spójniki, przecinki i sens wypowiedzi. Mowa zależna to nie mechaniczna zamiana słów, lecz wierne przekazanie treści z nowej perspektywy.
+## 12. Zadania w stylu egzaminu
+**1 (0–1 pkt).** Wskaż mowę zależną: A *„Wrócę jutro” — powiedział.* B *Powiedział, że wróci następnego dnia.*
+**2 (0–2 pkt).** Przekształć: *„Nie wiem, gdzie zostawiłam klucze” — powiedziała Marta.*
+**3 (0–2 pkt).** Przekształć dialog, zachowując intencje: *— Czy mógłbyś mi pożyczyć słownik? — zapytał Marek. — Oczywiście, ale oddaj mi go jutro — odpowiedziała Zofia.*
 
-## 14. Rozszerzenie — mowa zależna w opowiadaniu
+::: odp | Klucz i ocenianie
+1. B.
+2. *Marta powiedziała, że nie wie, gdzie zostawiła klucze.* — 1 pkt za zmianę osoby, 1 pkt za poprawną interpunkcję i zachowanie zdania podrzędnego.
+3. *Marek zapytał Zofię, czy mogłaby mu pożyczyć słownik. Zofia zgodziła się, ale zastrzegła, żeby oddał go następnego dnia.* — 1 pkt za pytanie (*zapytał, czy*), 1 pkt za zgodę z warunkiem i dostosowanie czasu.
+:::
 
-### 14.1. Nie zmieniaj sensu wypowiedzi
-Przekształcenie nie może dopisywać informacji, których nie było w oryginale. *„Może przyjdę”* nie powinno automatycznie zmienić się w *„obiecał, że przyjdzie”*, ponieważ przypuszczenie nie jest obietnicą. *„Czy mógłbyś mi pomóc?”* można przekazać jako *zapytał, czy mógłbym mu pomóc* albo *poprosił mnie o pomoc* — druga wersja streszcza intencję, ale nie zachowuje dosłownej formy pytania. W zadaniu egzaminacyjnym wybierz transformację zgodną z poleceniem.
+## 13. Rozszerzenie [[exam:KONKURS]]
+**Czasy bez automatu:** ktoś mówi w poniedziałek *„Jutro oddam pracę”*. We wtorek, w dniu oddania: *Powiedział, że dziś odda pracę.* Później, gdy termin minął: *Powiedział, że miał oddać pracę we wtorek.* Zależy od tego, czy relacjonujesz plan, czy miniony termin.
 
-### 14.2. Czasy i określenia czasu — nie ma automatycznej tabeli zamian
-Jeśli ktoś mówi w poniedziałek: *„Jutro oddam pracę”*, a relacjonujemy to we wtorek, naturalne jest: *Powiedział, że dziś odda pracę* albo *Powiedział, że miał oddać pracę* — zależnie od tego, czy relacjonujemy plan, czy już miniony termin. Nie zmieniaj *jutro* na *następnego dnia* bez sprawdzenia, kiedy odbywa się relacja. Podobnie *tutaj/tam* zależy od miejsca mówiącego i relacjonującego.
+**Ten sam fakt — różne relacje:** *„To mój zeszyt” — powiedział Kuba.* → *Kuba powiedział, że to jego zeszyt.* (neutralnie) / *Kuba podkreślił, że zeszyt należy właśnie do niego.* (z naciskiem). Czasownik relacjonujący dodaje odcień — wybieraj go świadomie.
 
-### 14.3. Mowa niezależna w dialogu — interpunkcja
-- *— Przyjdę jutro — powiedziała Ania.* — wypowiedź bohatera i wtrącenie narratora.
-- *— Przyjdę jutro. — Ania zamknęła zeszyt.* — gdy po wypowiedzi następuje odrębne zdanie opisujące czynność, nie jest ono częścią wypowiedzi i rozpoczyna się wielką literą.
-- *Ania powiedziała: „Przyjdę jutro”.* — cytat w zdaniu narratora; kropka i cudzysłów podlegają regułom polskiej interpunkcji i składu.
+**Mowa pozornie zależna** (w literaturze): narrator oddaje myśli lub słowa bohatera w trzeciej osobie, ale bez *że* i z emocjonalną składnią bohatera: *Zamknął zeszyt. Nie, dziś już niczego się nie nauczy! Jutro, wszystko jutro.* Brzmi jak głos bohatera, choć mówi narrator. Na E8 wystarczy ją rozpoznać i nie mylić z błędem.
 
-W praktyce szkolnej najważniejsza jest czytelność: każda zmiana mówiącego od nowego wiersza, myślnik dialogowy, konsekwentny zapis wtrąceń narracyjnych. Jeśli cytujesz dosłowne słowa, nie przerabiaj ich po cichu.
+**Ćwiczenia rozszerzające:**
+1. *„Nie jestem pewien, czy jutro zdążę” — powiedział Paweł.* → mowa zależna.
+2. *„Nie otwieraj drzwi!” — ostrzegła babcia.* → mowa zależna.
+3. *„Jutro pójdziemy do muzeum” — zapowiedziała pani.* → mowa zależna z perspektywy ucznia z klasy, relacjonującego następnego dnia rano.
 
-### 14.4. Ćwiczenia rozszerzające
-**1.** Przekształć na mowę zależną: *„Nie jestem pewien, czy jutro zdążę” — powiedział Paweł.*  
-**Przykładowy klucz:** Paweł powiedział, że nie jest pewien, czy następnego dnia zdąży. Jeśli relacja odbywa się tego samego dnia, *jutro* może pozostać *jutro*.
+::: odp | Klucz
+1. *Paweł powiedział, że nie jest pewien, czy następnego dnia zdąży.* (tego samego dnia — *jutro* może zostać). 2. *Babcia ostrzegła, żebym nie otwierał/nie otwierała drzwi.* 3. *Pani zapowiedziała, że dziś pójdziemy do muzeum.* (to „jutro” pani jest dzisiejszym dniem relacji).
+:::
 
-**2.** Przekształć: *„Nie otwieraj drzwi!” — ostrzegła babcia.*  
-**Przykładowy klucz:** Babcia ostrzegła, żebym nie otwierał/nie otwierała drzwi.
+## 14. Poszerzenie horyzontu
+::: karta extra | Ciekawostki i mosty
+- **Dziennikarstwo:** w wiadomościach cytat w cudzysłowie oznacza dokładne słowa, a mowa zależna — streszczenie dziennikarza. Uczciwa relacja nie dopisuje intencji: *zagroził* zamiast *powiedział* to już ocena.
+- **Historia:** relacje świadków i kroniki przekazują cudze słowa w mowie zależnej — historyk musi odróżnić cytat ze źródła od parafrazy autora.
+- **Literatura:** w narracji pierwszoosobowej bohater-narrator relacjonuje słowa innych — warto zapytać, czy robi to wiernie.
+- **Język potoczny:** w rozmowie coraz częściej słychać *„i on na to, że…”*, *„a ona: nie ma mowy”* — to skrócona mowa zależna i niezależna; w wypracowaniu zamień je na pełne formy.
+- **Pochodzenie:** cudzysłów to dosłownie „cudze słowa” — znak, że tekst należy do kogoś innego.
+:::
 
-**3.** Wyjaśnij, co jest nie tak: *Ola powiedziała, że „nie pójdę tam”, ponieważ jest chora.*  
-**Klucz:** w mowie zależnej trzeba dostosować osobę do relacji: *Ola powiedziała, że tam nie pójdzie, ponieważ jest chora* (czas i miejsce zależą od kontekstu). Cudzysłów nie jest potrzebny, chyba że świadomie cytujemy dosłowne słowa jako cytat wpleciony.
+## 15. Fiszki
+- Mowa niezależna — dosłowne przytoczenie (cudzysłów, dialog).
+- Mowa zależna — relacja z wypowiedzi (*że, czy, żeby*) + przecinek, bez cudzysłowu.
+- Pytanie tak/nie → *czy*; pytanie szczegółowe → ten sam zaimek pytający.
+- Prośba, polecenie → *żeby*.
+- Perspektywa — zmień osobę, zaimki, czas i miejsce tylko gdy trzeba.
+- Czasownik relacjonujący — nie zmienia sensu (*może przyjdę* ≠ *obiecał*).
+- Mowa pozornie zależna — głos bohatera w narracji, bez *że*.
 
-**4.** Ułóż dwa warianty relacji słów *„To mój zeszyt” — powiedział Kuba*: jeden neutralny, drugi z naciskiem na właściciela.  
-**Przykładowy klucz:** *Kuba powiedział, że to jego zeszyt.* / *Kuba podkreślił, że zeszyt należy właśnie do niego.*
+## 16. Samoocena
+| Potrafię… | umiem i wyjaśnię | rozumiem, potrzebuję przykładów | potrzebuję ćwiczeń |
+|---|---|---|---|
+| odróżnić cytat od relacji | [ ] | [ ] | [ ] |
+| zmienić osobę i zaimki | [ ] | [ ] | [ ] |
+| dostosować czas i miejsce do perspektywy | [ ] | [ ] | [ ] |
+| dobrać czasownik relacjonujący | [ ] | [ ] | [ ] |
+| zapisać dialog | [ ] | [ ] | [ ] |
+| zachować sens wypowiedzi | [ ] | [ ] | [ ] |
 
-## 15. Mini-test końcowy
+## 17. Mini-test końcowy (9 pkt)
 1. Wyjaśnij różnicę między mową niezależną a zależną (2 pkt).
-2. Przekształć pytanie *„Gdzie położyłeś klucze?” — zapytała mama* (2 pkt).
-3. Wymień trzy elementy, które mogą zmienić się przy przekształceniu (2 pkt).
-4. Wyjaśnij, dlaczego *„Może przyjdę”* nie powinno być automatycznie relacjonowane jako obietnica (1 pkt).
+2. Przekształć: *„Gdzie położyłeś klucze?” — zapytała mama* (2 pkt).
+3. Wymień trzy elementy, które mogą się zmienić przy przekształceniu (2 pkt).
+4. Dlaczego *„Może przyjdę”* nie powinno być relacjonowane jako obietnica? (1 pkt)
+5. Popraw: *Zapytała, że przyjdę jutro.* (2 pkt)
 
-**Klucz:** 1. mowa niezależna przytacza wypowiedź bezpośrednio, a zależna relacjonuje jej treść; 2. *Mama zapytała, gdzie położyłem/położyłam klucze* — forma zależy od osoby relacjonującej; 3. mogą zmienić się osoba, zaimki, określenia czasu i miejsca oraz szyk/interpunkcja; 4. *Może przyjdę* wyraża możliwość, więc nie należy zmieniać go w pewną obietnicę.
+::: odp | Klucz
+1. Niezależna przytacza dosłownie, zależna relacjonuje treść z perspektywy relacjonującego. 2. *Mama zapytała, gdzie położyłem/położyłam klucze.* 3. Osoba, zaimki, określenia czasu i miejsca, forma pytania/prośby, interpunkcja. 4. *Może* wyraża możliwość, nie pewność. 5. *Zapytała, czy przyjdę jutro (następnego dnia).* — pytanie tak/nie wprowadza *czy*.
+:::
 
+## Status kontroli
 
-## AUDYT W1 — wynik
+### AUDYT W1 — wynik (wersja 2.1, 2026-10-09, GPT-6)
+- Definicje, zmiana osoby, sens wypowiedzi: ✔.
 
-- Mowa niezależna/zależna: ✔ sprawdzono definicje i kierunek przekształceń.
-- Zmiana osoby i zaimków: ✔ klucz dopuszcza wariant zależny od osoby relacjonującej.
-- Sens wypowiedzi: ✔ doprecyzowano, że przypuszczenia nie wolno zmieniać w pewną obietnicę.
-
-**Zakres kontroli:** kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.
+### AUDYT W1 FULL — Perplexity (2026-10-10), wersja 3.0
+- Wprowadzone: poprawiony wiersz kliniki (niegramatyczne objaśnienie), *tam­tą* → *tamtą*, klucze A3 i B1 z zależnością od relacjonującego, doprecyzowanie przykładu *dziś odda pracę*, kropka w dialogu przy zdaniu narratora, pytanie → zdanie dopełnieniowe, czasowniki relacjonujące (tabela), poprawianie błędnej mowy zależnej, zaimki wskazujące, przypomnienie przecinka (G16), pytanie szczegółowe w ćwiczeniach i teście, szybki test, karta samokontroli, własne przykłady (A5–A7, B4–B5, §11, zadanie 3), poszerzenie horyzontu, mnemotechnika „pięć pytań”, pełny wykład i mini-wykład (§3).
+- Poprawione względem propozycji: *Marek poprosił Zofię, czy mogłaby…* (*poprosić* nie łączy się z *czy*) — przeniesione do „znajdź błąd” z poprawną wersją; *Kazał, żebym poszedł* oznaczone przez Perplexity jako błąd — to forma poprawna (obok *kazał mi pójść*); „mowa półzależna” → właściwy termin **mowa pozornie zależna** z poprawną definicją; literówka „zostawia” w kluczu 10.2 — w lekcji jej nie było; klucz *Pani zapowiedziała, że następnego dnia pójdą* — doprecyzowany perspektywą ucznia.
+- Wizualizacja: dotychczasowa linia @opis bez grafiki usunięta — procedura opisana słownie (grafika niepotrzebna).
