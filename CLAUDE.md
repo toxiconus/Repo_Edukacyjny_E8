@@ -63,6 +63,7 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 
 ## Merytoryka
 - Język lekcji: polski, poziom E8 (podstawa programowa). Dane liczbowe oznaczaj do weryfikacji, jeśli nie są pewne.
+- Kurs do samodzielnej nauki we własnym tempie (decyzja użytkownika): w lekcjach **bez znaczników czasu** („(5 min)”, „ok. 45 min”), planów dziennych i limitów.
 
 ## GFX i modele
 - Najpierw istniejące animacje, modele i zlewki (`chemia/che-modular/engine/src/gfx/KATALOG.md` — silnik, `chemia/che-modular/KATALOG_MODELI.md` — modele i pracownie z rozszerzeń) — rozszerzamy je i ulepszamy. Brakujący element (naczynie, przyrząd, przedmiot, efekt) budujemy od podstaw jako komponent wielokrotnego użytku (`engine/src/lekcja/rozszerzenia.js` albo plik w `engine/src/gfx/<przedmiot>/<rodzaj>/`) + wpis w katalogu, nie jednorazowo w lekcji.

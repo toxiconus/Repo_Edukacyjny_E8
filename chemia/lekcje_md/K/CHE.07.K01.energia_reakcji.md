@@ -427,7 +427,7 @@ c) Jak zmieni się profil po wprowadzeniu katalizatora działającego tylko na e
 
 1. Narysuj oba wykresy (egzo/endo) z podpisami — bez patrzenia.  
 2. Do każdego wykresu dopisz jedną obserwację z życia.  
-3. Rozwiąż test końcowy na czas (8–10 min).  
+3. Rozwiąż test końcowy na czas.  
 4. W klinice błędów zakryj kolumnę „Popraw” i sam popraw zdania.  
 5. (LO) Wyjaśnij komuś różnicę ΔE vs E_a na przykładzie H₂+O₂.
 

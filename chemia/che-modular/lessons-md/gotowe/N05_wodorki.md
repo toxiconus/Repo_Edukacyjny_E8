@@ -29,7 +29,7 @@ stopka: **CHEMIA N05 v1.0 MASTER LAB** · Wodorki · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§1](#definicja)–[§3](#nazwy)** — czym jest wodorek, jak ułożyć wzór z wartościowości i jak go nazwać.
 2. **[§4](#budowa)** — trzy typy wodorków: dlaczego w NaH wodór jest „ujemny”, a w HCl „dodatni”.
 3. **[§6](#woda)** — co się dzieje, gdy wodorek trafi do wody (kwas, zasada, wodór albo nic).

@@ -29,7 +29,7 @@ stopka: **CHEMIA N03 v1.9 MASTER LAB** · Kwasy · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§1](#definicja)–[§3](#reszty)** — definicja, nazwy i wzory kwasów, reszty kwasowe i ich ładunek.
 2. **[§5](#dysocjacja)** — równania dysocjacji, przewodzenie prądu; **[§6](#moc)** (6.1–6.2) — kwasy mocne i słabe.
 3. **[§7](#ph)** (7.1, 7.3) — skala pH i wskaźniki.

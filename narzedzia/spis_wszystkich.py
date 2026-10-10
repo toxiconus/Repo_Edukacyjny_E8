@@ -74,6 +74,8 @@ def weryf(d, body, prz=None, kod=None):
     m = re.search(r'\b(W\d+)\b', st_)
     lab = m.group(1) if m else ('PUSTY' if 'PUSTY' in st_ else 'konwersja' if 'KONWERSJA' in st_ else 'brak W1')
     if 'nieprzeprowadzon' in st_: lab = 'brak W1'
+    if re.search(r'\bW1 FULL\b', st_): lab = 'W1 FULL' + (' częściowo' if 'częściowo' in st_ else '')
+    elif (prz, kod) in REJ and 'FULL' in REJ[(prz, kod)]: lab = 'W1 FULL (rejestr)'
     mo = re.search(r'(GPT-\d+|Grok|Claude|Perplexity)', st_)
     a = len(re.findall(r'^#{2,3} .*AUDYT', body, re.M))
     if lab in ('brak W1', 'konwersja') and (prz, kod) in REJ: lab = 'W1 (rejestr ' + REJ[(prz, kod)] + ')'

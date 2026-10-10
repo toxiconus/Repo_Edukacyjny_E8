@@ -28,7 +28,7 @@ stopka: **CHEMIA N04 v1.1 MASTER LAB** · Sole · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§1](#definicja)–[§3](#nazewnictwo)** — czym jest sól, jak z ładunków jonów ułożyć wzór i jak go nazwać.
 2. **[§4](#dysocjacja)–[§5](#rozpuszczalnosc)** — dysocjacja i tabela rozpuszczalności (R / T / N).
 3. **[§6](#otrzymywanie)** — 10 metod otrzymywania soli.

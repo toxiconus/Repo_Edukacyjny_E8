@@ -31,7 +31,7 @@ stopka: **CHEMIA F03 v1.0 MASTER** · Właściwości i rozdzielanie mieszanin ·
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 35 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#wlasciwosci)–[§3](#zjawisko-reakcja)** — właściwości, stany skupienia, zjawisko a reakcja.
 3. **[§5](#metody)–[§6](#dobor)** — metody rozdzielania i procedura doboru metody.

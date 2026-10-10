@@ -1,6 +1,6 @@
 # Spis treści — wszystkie przedmioty
 
-_Wygenerowano 2026-10-09 z plików repo (`python3 narzedzia/spis_wszystkich.py`). Nie edytować ręcznie._
+_Wygenerowano 2026-10-10 z plików repo (`python3 narzedzia/spis_wszystkich.py`). Nie edytować ręcznie._
 
 Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: lekcje kanonu z celem i statusem; szczegóły w `chemia/plany/CHE_SPIS_TRESCI.md`.
 
@@ -8,9 +8,9 @@ Notka „o czym” pochodzi z lekcji (opis, cel lub pierwszy akapit). Chemia: le
 
 | przedmiot | tematy w planie | pliki lekcji | rozmiar | po weryfikacji (W1+) | tylko audyt w pliku | brak |
 |---|---|---|---|---|---|---|
-| Chemia | 113 (kanon) · 45 OLI | 74 | 1972 KB | 39 | 35 | 0 |
-| Biologia | kanon v5.2 · 46 OLI | 36 | 1177 KB | 0 | 33 | 3 |
-| Polski | 39 (mapa OLI, brak planu kursu) | 47 | 986 KB | 47 | 0 | 0 |
+| Chemia | 113 (kanon) · 45 OLI | 74 | 1977 KB | 39 | 35 | 0 |
+| Biologia | kanon v5.2 · 46 OLI | 36 | 1233 KB | 9 | 24 | 3 |
+| Polski | 39 (mapa OLI, brak planu kursu) | 47 | 1125 KB | 47 | 0 | 0 |
 | Angielski | 13 (master) + 13 modułów | 6 | 211 KB | 6 | 0 | 0 |
 | Olimpiada | OLI 10 · MAT 36 | 10 | 71 KB | 10 | 0 | 0 |
 
@@ -23,9 +23,9 @@ _Chemia: pliki materiału kanonu i lekcji gotowych (plik z kilkoma kodami liczon
 | kod | lekcja | o czym | poziom | status | rozmiar | weryfikacja |
 |---|---|---|---|---|---|---|
 | F01 | Jak myśli chemik | Uczeń odróżnia obserwację od wniosku, model od rzeczywistości, zna cztery poziomy opisu i pięć pytań chemika. | E8 | GOTOWE HTML | 47 KB | W1 (rejestr 2026-10-09) |
-| F02 | Materia i substancje | Uczeń klasyfikuje próbkę: substancja czysta (pierwiastek, związek) czy mieszanina (jednorodna, niejednorodna) i uzasadnia. | E8 | GOTOWE HTML | 35 KB | W1 (rejestr 2026-10-09) |
+| F02 | Materia i substancje | Uczeń klasyfikuje próbkę: substancja czysta (pierwiastek, związek) czy mieszanina (jednorodna, niejednorodna) i uzasadnia. | E8 | GOTOWE HTML | 37 KB | W1 (rejestr 2026-10-09) |
 | F03 | Właściwości i rozdzielanie mieszanin | Uczeń rozróżnia właściwości fizyczne i chemiczne, zjawisko i reakcję oraz dobiera metodę rozdzielania do różnicy właściwości. | E8 | GOTOWE HTML | 37 KB | W1 (rejestr 2026-10-09) |
-| F04 | Atom | Uczeń oblicza liczbę protonów, neutronów i elektronów w atomie i jonie oraz rozróżnia Z i A. | E8 | GOTOWE HTML | 25 KB | W1 (rejestr 2026-10-09) |
+| F04 | Atom | Uczeń oblicza liczbę protonów, neutronów i elektronów w atomie i jonie oraz rozróżnia Z i A. | E8 | GOTOWE HTML | 26 KB | W1 (rejestr 2026-10-09) |
 | F05 | Izotopy, jony i masa atomowa | Uczeń rozróżnia izotop, jon i inny pierwiastek oraz liczy masę atomową jako średnią ważoną. | E8+LO | GOTOWE HTML | 28 KB | W1 (rejestr 2026-10-09) |
 | F06 | Układ okresowy | Uczeń czyta położenie pierwiastka, określa elektrony walencyjne i przewiduje trendy. | E8+LO | GOTOWE HTML | 49 KB | W1 (rejestr 2026-10-09) |
 | F07 | Konfiguracja elektronowa | E8: rozmieszczenie elektronów na powłokach. LO: konfiguracja podpowłokowa z regułami. | E8+LO | UZUPEŁNIONE | 55 KB | W1 · GPT-6 · audyty 1 |
@@ -63,7 +63,7 @@ _Chemia: pliki materiału kanonu i lekcji gotowych (plik z kilkoma kodami liczon
 |---|---|---|---|---|---|---|
 | R01 | Woda i roztwory | Uczeń opisuje wodę jako rozpuszczalnik i rozróżnia roztwór, zawiesinę i koloid. | E8 | POPRAWIONE | 5 KB | audyt w pliku (Grok) · Grok · audyty 1 |
 | R02 | Rozpuszczalność | Uczeń odczytuje krzywe rozpuszczalności i rozróżnia roztwór nasycony i nienasycony. | E8 | POPRAWIONE | 4 KB | audyt w pliku (Grok) · Grok · audyty 1 |
-| R03 | Stężenie procentowe | Uczeń oblicza stężenie procentowe, rozcieńcza, zatęża i miesza roztwory. | E8+LO | GOTOWE HTML | 25 KB | W1 (rejestr 2026-10-09) |
+| R03 | Stężenie procentowe | Uczeń oblicza stężenie procentowe, rozcieńcza, zatęża i miesza roztwory. | E8+LO | GOTOWE HTML | 27 KB | W1 (rejestr 2026-10-09) |
 | R04 | Mol i masa molowa | Uczeń przelicza masę, liczbę moli i liczbę cząstek. | LO | UZUPEŁNIONE | 42 KB | W23 · GPT-6 · audyty 1 |
 | R05 | Stężenie molowe | Uczeń oblicza stężenie molowe i przelicza Cp ↔ Cm. | LO | UZUPEŁNIONE | 35 KB | W23 · GPT-6 · audyty 1 |
 | R06 | Gazy: objętość molowa | Uczeń stosuje objętość molową i równanie Clapeyrona. | LO | POPRAWIONE | 4 KB | audyt w pliku (Grok) · Grok · audyty 1 |
@@ -210,9 +210,9 @@ _Chemia: pliki materiału kanonu i lekcji gotowych (plik z kilkoma kodami liczon
 
 | kod | lekcja | o czym | rozmiar | weryfikacja | plik |
 |---|---|---|---|---|---|
-| REV01 | Organizacja i chemizm życia — powtórka do konkursu | poziomy organizacji · mikroskop · budowa komórki i organelle · komórka bakterii, roślinna, zwierzęca, grzyba · błona i transport · fotosynteza · oddychanie i fermentacja… | 29 KB | audyt w pliku (GPT-6) · audyty 1 | `biologia/bio/md/BIO.00.REV01.organizacja_i_chemizm_zycia.md` |
-| REV02 | Różnorodność życia — powtórka do konkursu | klasyfikacja · wirusy · bakterie · tkanki i grupy roślin (mchy, paprociowe, nagonasienne, okrytonasienne) · grzyby i porosty · tkanki zwierzęce · bezkręgowce · kręgowce… | 49 KB | audyt w pliku (GPT-6) · audyty 1 | `biologia/bio/md/BIO.00.REV02.roznorodnosc_zycia.md` |
-| L010 | Genetyka i DNA od zera | cechy dziedziczne, nabyte i wieloczynnikowe; czym jest DNA, gdzie leży, nukleotyd, pary A–T i C–G | 54 KB | audyt w pliku (GPT-6) · audyty 1 | `biologia/bio/md/BIO.02.L010.dna_od_zera.md` |
+| REV01 | Organizacja i chemizm życia — powtórka do konkursu | poziomy organizacji · mikroskop · budowa komórki i organelle · komórka bakterii, roślinna, zwierzęca, grzyba · błona i transport · fotosynteza · oddychanie i fermentacja… | 37 KB | W1 (rejestr 2026-10-10) · audyty 2 | `biologia/bio/md/BIO.00.REV01.organizacja_i_chemizm_zycia.md` |
+| REV02 | Różnorodność życia — powtórka do konkursu | klasyfikacja · wirusy · bakterie · tkanki i grupy roślin (mchy, paprociowe, nagonasienne, okrytonasienne) · grzyby i porosty · tkanki zwierzęce · bezkręgowce · kręgowce… | 55 KB | W1 (rejestr 2026-10-10) · audyty 2 | `biologia/bio/md/BIO.00.REV02.roznorodnosc_zycia.md` |
+| L010 | Genetyka i DNA od zera | cechy dziedziczne, nabyte i wieloczynnikowe; czym jest DNA, gdzie leży, nukleotyd, pary A–T i C–G | 60 KB | W1 FULL (rejestr) · audyty 2 | `biologia/bio/md/BIO.02.L010.dna_od_zera.md` |
 
 ### BIO.01 — komórka
 
@@ -224,21 +224,21 @@ _Chemia: pliki materiału kanonu i lekcji gotowych (plik z kilkoma kodami liczon
 | L003 | Diagnoza startowa genetyki | Trzy etapy: diagnoza właściwa · strefa podglądu · powrót po bloku genetyki | 78 KB | konwersja | `biologia/md/BIO.01.L003.diagnoza.md` |
 | L004 | Organizacja budowy organizmu: od komórki do organizmu | Jak z pojedynczej komórki może powstać złożony organizm? | 36 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.01.L004.organizacja_budowy_organizmu_od_komorki.md` |
 | L005 | Błona komórkowa i transport substancji | Jak komórka kontroluje, co do niej wnika i co ją opuszcza? | 30 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.01.L005.blona_komorkowa_i_transport_substancji.md` |
-| L006 | Fotosynteza: skąd roślina bierze materię organiczną? | Skoro roślina nie „je” liści, to skąd bierze materiał do budowy swojego organizmu? | 30 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.01.L006.fotosynteza_skad_roslina_bierze_materie.md` |
-| L007 | Oddychanie komórkowe: skąd komórka bierze użyteczną energię? | Dlaczego komórka potrzebuje pokarmu i tlenu, nawet gdy nie wykonuje widocznego ruchu? | 27 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze.md` |
-| L008 | Mikroskop: jak obserwować komórkę, a nie tylko na nią patrzeć? | Jak uzyskać wiarygodny obraz bardzo małego obiektu? | 22 KB | audyt w pliku (GPT-6) · audyty 1 | `biologia/md/BIO.01.L008.mikroskop_jak_obserwowac_komorke_a.md` |
-| L009 | Podział komórki: wzrost, regeneracja i powstawanie gamet | Jak organizm zwiększa liczbę komórek, a jednocześnie utrzymuje liczbę chromosomów? | 21 KB | audyt w pliku (GPT-6) · audyty 1 | `biologia/md/BIO.01.L009.podzial_komorki_wzrost_regeneracja_i.md` |
+| L006 | Fotosynteza: skąd roślina bierze materię organiczną? | Skoro roślina nie „je” liści, to skąd bierze materiał do budowy swojego organizmu? | 31 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.01.L006.fotosynteza_skad_roslina_bierze_materie.md` |
+| L007 | Oddychanie komórkowe: skąd komórka bierze użyteczną energię? | Dlaczego komórka potrzebuje pokarmu i tlenu, nawet gdy nie wykonuje widocznego ruchu? | 36 KB | W1 FULL (rejestr) · audyty 3 | `biologia/md/BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze.md` |
+| L008 | Mikroskop: jak obserwować komórkę, a nie tylko na nią patrzeć? | Jak uzyskać wiarygodny obraz bardzo małego obiektu? | 29 KB | W1 FULL (rejestr) · audyty 2 | `biologia/md/BIO.01.L008.mikroskop_jak_obserwowac_komorke_a.md` |
+| L009 | Podział komórki: wzrost, regeneracja i powstawanie gamet | Jak organizm zwiększa liczbę komórek, a jednocześnie utrzymuje liczbę chromosomów? | 27 KB | W1 FULL (rejestr) · audyty 2 | `biologia/md/BIO.01.L009.podzial_komorki_wzrost_regeneracja_i.md` |
 
 ### BIO.02 — genetyka
 
 | kod | lekcja | o czym | rozmiar | weryfikacja | plik |
 |---|---|---|---|---|---|
-| L010 | Genetyka i DNA od zera (cechy + czym jest DNA) | Skąd biorą się podobieństwa i różnice między organizmami? | 24 KB | audyt w pliku (GPT-6) · audyty 1 | `biologia/md/BIO.02.L010.genetyka_i_dna_od_zera.md` |
+| L010 | Genetyka i DNA od zera (cechy + czym jest DNA) | Skąd biorą się podobieństwa i różnice między organizmami? | 24 KB | W1 FULL (rejestr) · audyty 1 | `biologia/md/BIO.02.L010.genetyka_i_dna_od_zera.md` |
 | L011 | Jak DNA przechowuje informację? | Jak jedna cząsteczka może przechowywać informacje potrzebne do budowy i funkcjonowania organizmu? | 42 KB | audyt w pliku (GPT-6) · audyty 1 | `biologia/md/BIO.02.L011.jak_dna_przechowuje_informacje.md` |
 | L012 | Jak DNA jest upakowane w chromosomach? | Jak bardzo długa cząsteczka DNA mieści się w małym jądrze i jak jest zorganizowana podczas podziału? | 56 KB | audyt w pliku (GPT-6) · audyty 1 | `biologia/md/BIO.02.L012.jak_dna_jest_upakowane_w.md` |
-| L013 | Jak komórka kopiuje DNA? | Jak komórka kopiuje DNA tak, by obie komórki potomne dostały pełną, poprawną informację? | 21 KB | audyt w pliku (GPT-6) · audyty 3 | `biologia/md/BIO.02.L013.jak_komorka_kopiuje_dna.md` |
-| L014 | Jak komórki ciała powstają i się odnawiają? | Jak z jednej komórki ciała powstają dwie komórki z tą samą liczbą zestawów chromosomów? | 61 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.02.L014.jak_komorki_ciala_powstaja_i.md` |
-| L015 | Jak powstają komórki haploidalne i skąd bierze się różnorodność? | Genetyka · mejoza · 2n → n · rekombinacja chromosomowa · nondysjunkcja · oogeneza vs spermatogeneza | 59 KB | konwersja · audyty 2 | `biologia/md/BIO.02.L015.mejoza.md` |
+| L013 | Jak komórka kopiuje DNA? | Jak komórka kopiuje DNA tak, by obie komórki potomne dostały pełną, poprawną informację? | 25 KB | W1 FULL (rejestr) · audyty 4 | `biologia/md/BIO.02.L013.jak_komorka_kopiuje_dna.md` |
+| L014 | Jak komórki ciała powstają i się odnawiają? | Jak z jednej komórki ciała powstają dwie komórki z tą samą liczbą zestawów chromosomów? | 62 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.02.L014.jak_komorki_ciala_powstaja_i.md` |
+| L015 | Jak powstają komórki haploidalne i skąd bierze się różnorodność? | Genetyka · mejoza · 2n → n · rekombinacja chromosomowa · nondysjunkcja · oogeneza vs spermatogeneza | 60 KB | konwersja · audyty 2 | `biologia/md/BIO.02.L015.mejoza.md` |
 | L016 | Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli? | Co się dzieje, gdy podziały komórkowe wymykają się spod kontroli? | 17 KB | audyt w pliku (GPT-6) · audyty 3 | `biologia/md/BIO.02.L016.co_sie_dzieje_gdy_podzialy.md` |
 | L016A | Zmienność: dlaczego potomstwo nie jest kopią rodziców? | Dlaczego rodzeństwo może mieć tych samych rodziców, a mimo to różnić się wieloma cechami? | 16 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest.md` |
 | L017 | Jak przewidywać dziedziczenie jednej cechy? | Jak przewidywać dziedziczenie jednej cechy na podstawie alleli rodziców? | 43 KB | audyt w pliku (GPT-6) · audyty 2 | `biologia/md/BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy.md` |
@@ -252,7 +252,7 @@ _Chemia: pliki materiału kanonu i lekcji gotowych (plik z kilkoma kodami liczon
 | kod | lekcja | o czym | rozmiar | weryfikacja | plik |
 |---|---|---|---|---|---|
 | L030 | Czym jest ewolucja i jakie mamy na nią dowody? | Czym jest ewolucja i skąd wiemy, że zachodzi? | 19 KB | audyt w pliku · audyty 2 | `biologia/md/BIO.03.L030.czym_jest_ewolucja_i_jakie.md` |
-| L031 | Jak działa dobór naturalny i czym różni się od sztucznego? | Jak działa dobór naturalny i czym różni się od sztucznego? | 18 KB | audyt w pliku · audyty 2 | `biologia/md/BIO.03.L031.jak_dziala_dobor_naturalny_i.md` |
+| L031 | Jak działa dobór naturalny i czym różni się od sztucznego? | Jak działa dobór naturalny i czym różni się od sztucznego? | 25 KB | W1 FULL (rejestr) · audyty 3 | `biologia/md/BIO.03.L031.jak_dziala_dobor_naturalny_i.md` |
 | L032 | Powtórka ewolucji | Co już wiem o ewolucji i jak to połączyć z genetyką? | 14 KB | audyt w pliku · audyty 1 | `biologia/md/BIO.03.L032.powtorka_ewolucji.md` |
 
 ### BIO.04 — ekologia
@@ -308,25 +308,25 @@ _Chemia: pliki materiału kanonu i lekcji gotowych (plik z kilkoma kodami liczon
 | G07 | Przysłówek | Jak? Gdzie? Kiedy? W jakim stopniu? — nieodmienny, ale stopniowany; szybki czy szybko, „po polsku” czy „popolsku”. | 22 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G07.przyslowek.md` |
 | G08 | Przyimek | Mały wyraz, wielka władza: w, na, do, spod, zza — przyimek rządzi przypadkiem i tworzy wyrażenie przyimkowe. | 22 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G08.przyimek.md` |
 | G09 | Spójnik | Łączy wyrazy i zdania: i, ale, więc, że, bo, gdy — i decyduje o przecinku. | 24 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G09.spojnik.md` |
-| G10 | Partykuła | Mały wyraz, który zmienia ton zdania: czy, nie, niech, nawet, -by, -że — i pisownia „nie” w jednym zestawieniu. | 22 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G10.partykula.md` |
-| G11 | Wykrzyknik | Ach! Hej! Bęc! — wyraz emocji, wołania i dźwięku; wykrzyknik (część mowy) a wykrzyknienie (zdanie). | 18 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G11.wykrzyknik.md` |
-| G12 | Części zdania | Podmiot, orzeczenie, przydawka, dopełnienie, okolicznik — od pytań do wykresu zdania. | 11 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G12.czesci_zdania.md` |
-| G13 | Związki wyrazowe | Związek główny, zgody, rządu, przynależności — wyraz nadrzędny i podrzędny. | 10 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G13.zwiazki_wyrazowe.md` |
-| G14 | Zdanie pojedyncze i równoważnik zdania | Zdanie z jednym orzeczeniem, rozwinięte i nierozwinięte; wypowiedzenie bez orzeczenia. | 10 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G14.zdanie_pojedyncze.md` |
-| G15 | Zdanie złożone współrzędnie | Zdania równorzędne: łączne, rozłączne, przeciwstawne, wynikowe. | 9 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G15.zdania_wspolrzedne.md` |
-| G16 | Zdanie złożone podrzędnie | Zdanie nadrzędne i podrzędne: podmiotowe, orzecznikowe, przydawkowe, dopełnieniowe, okolicznikowe. | 11 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G16.zdania_podrzedne.md` |
-| G17 | Mowa zależna i niezależna | Przytaczanie cudzych słów: dialog, cytat, przekształcanie. | 11 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.02.G17.mowa_zalezna.md` |
+| G10 | Partykuła | Mały wyraz, który zmienia ton zdania: czy, nie, niech, nawet, -by, -że — i pisownia „nie” w jednym zestawieniu. | 33 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.02.G10.partykula.md` |
+| G11 | Wykrzyknik | Ach! Hej! Bęc! — wyraz emocji, wołania i dźwięku; wykrzyknik (część mowy) a wykrzyknienie (zdanie). | 26 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.02.G11.wykrzyknik.md` |
+| G12 | Części zdania | Podmiot, orzeczenie, przydawka, dopełnienie i okolicznik — jak je rozpoznać bez zgadywania, jak zadawać pytania od właściwego wyrazu i jak narysować wykres zdania.… | 40 KB | W1 · Perplexity · audyty 2 | `polski/podstawy/POL.02.G12.czesci_zdania.md` |
+| G13 | Związki wyrazowe | Wyraz nadrzędny i podrzędny, związek główny i związki poboczne — zgoda, rząd, przynależność. Trzy proste testy zamiast zgadywania. | 22 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.02.G13.zwiazki_wyrazowe.md` |
+| G14 | Zdanie pojedyncze i równoważnik zdania | Ile jest orzeczeń? Zdanie pojedyncze rozwinięte i nierozwinięte, zdanie bezpodmiotowe, równoważnik i imiesłowowy równoważnik zdania — z testem orzeczenia. | 19 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.02.G14.zdanie_pojedyncze.md` |
+| G15 | Zdanie złożone współrzędnie | Zdania równorzędne — łączne, rozłączne, przeciwstawne, wynikowe i bezspójnikowe. Test współrzędności, przecinki, zdania mieszane i karta szybkiej analizy całego cyklu… | 24 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.02.G15.zdania_wspolrzedne.md` |
+| G16 | Zdanie złożone podrzędnie | Zdanie nadrzędne i podrzędne — pytanie zamiast zgadywania po spójniku. Podmiotowe, orzecznikowe, przydawkowe, dopełnieniowe, okolicznikowe; przecinek na granicy zdań… | 18 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.02.G16.zdania_podrzedne.md` |
+| G17 | Mowa zależna i niezależna | Jak przekazać cudze słowa — dosłownie (cytat, dialog) albo własnymi słowami (mowa zależna) — nie zmieniając sensu, intencji ani faktów. | 17 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.02.G17.mowa_zalezna.md` |
 
 ### POL.03 — środki stylistyczne (S01–S06)
 
 | kod | lekcja | o czym | rozmiar | weryfikacja | plik |
 |---|---|---|---|---|---|
-| S01 | Epitet i porównanie | Określenia i zestawienia — jak autor buduje obraz. | 7 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.03.S01.epitet_porownanie.md` |
-| S02 | Przenośnia, ożywienie i uosobienie | Metafora i nadawanie cech istot żywych przedmiotom i zjawiskom. | 7 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.03.S02.przenosnia_ozywienie_uosobienie.md` |
-| S03 | Wyrazy dźwiękonaśladowcze, apostrofa, pytanie retoryczne, wykrzyknienie | Środki brzmieniowe i retoryczne. | 7 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.03.S03.wyrazy_dzwiekonasladowcze_apostrofa.md` |
-| S04 | Powtórzenie, anafora, wyliczenie, kontrast | Środki budujące rytm i podkreślające treść. | 6 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.03.S04.powtorzenie_anafora_wyliczenie.md` |
-| S05 | Neologizm, zdrobnienie, zgrubienie, archaizm | Środki słowotwórcze i leksykalne. | 7 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.03.S05.neologizm_zdrobnienie_archaizm.md` |
-| S06 | Hiperbola, ironia, symbol, alegoria | Środki znaczeniowe trudniejsze — poziom E8+ i konkurs. | 7 KB | W1 · GPT-6 · audyty 1 | `polski/podstawy/POL.03.S06.hiperbola_ironia_symbol_alegoria.md` |
+| S01 | Epitet i porównanie | Jak jedno słowo maluje obraz, a porównanie buduje most między dwoma światami — rozpoznanie, człony, funkcja i gotowy wzór analizy. | 14 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.03.S01.epitet_porownanie.md` |
+| S02 | Przenośnia, ożywienie i uosobienie | Jak mówić o tym, czego nie widać — metafora, ożywienie (animizacja) i uosobienie (personifikacja); testy rozróżniania i przypadki graniczne. | 14 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.03.S02.przenosnia_ozywienie_uosobienie.md` |
+| S03 | Wyrazy dźwiękonaśladowcze, apostrofa, pytanie retoryczne, wykrzyknienie | Jak tekst działa na słuch i emocje — onomatopeja, apostrofa, pytanie retoryczne i wykrzyknienie; środek stylistyczny a znak interpunkcyjny. | 13 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.03.S03.wyrazy_dzwiekonasladowcze_apostrofa.md` |
+| S04 | Powtórzenie, anafora, wyliczenie, kontrast | Jak powtarzanie i przeciwstawianie budują znaczenie — powtórzenie, anafora, epifora, wyliczenie, stopniowanie, refren, kontrast i antyteza. | 12 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.03.S04.powtorzenie_anafora_wyliczenie.md` |
+| S05 | Neologizm, zdrobnienie, zgrubienie, archaizm | Jak język pokazuje czas i uczucia — neologizm, zapożyczenie, zdrobnienie, zgrubienie, archaizm, kolokwializm, regionalizm; budowa wyrazu a jego funkcja. | 13 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.03.S05.neologizm_zdrobnienie_archaizm.md` |
+| S06 | Hiperbola, ironia, symbol, alegoria | Jak czytać znaczenia ukryte w tekście — przesada, udawanie, sugestia i opowieść, która znaczy więcej. Cztery testy, schemat interpretacji i przypadki graniczne. | 17 KB | W1 FULL · Perplexity · audyty 2 | `polski/podstawy/POL.03.S06.hiperbola_ironia_symbol_alegoria.md` |
 
 ### POL.04 — kompetencje egzaminacyjne (D01–D13)
 

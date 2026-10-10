@@ -25,7 +25,7 @@ stopka: **CHEMIA N01 v6.2 MASTER LAB** · Tlenki · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „treści akademickie” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **Sekcje [§4](#definicja)–[§7](#oxide-decision-model)** — definicja, nazewnictwo, wzory, charakter, trzy pytania o tlenek.
 2. **Konstruktor wzorów tlenków** ([§5](#builder)) — zbuduj Fe₂O₃, Al₂O₃, N₂O₅.
 3. **Detektor charakteru** ([§6](#charakter)) — sprawdź Na₂O, SO₂, CO, Al₂O₃.
@@ -1262,7 +1262,7 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 
 ## 23 | Ćwiczenia {#cwiczenia}
 
-::: details.answer.interleaving | Trening mieszany (3 min) — tlenki + fundamenty
+::: details.answer.interleaving | Trening mieszany — tlenki + fundamenty
 1. Ile elektronów walencyjnych ma O? *(F01–F09 (fundamenty))*
 2. Jaki charakter ma zwykle SO₂? *(N01)*
 3. Zapisz wzór tlenku glinu (W–K–S–K). *(N01)*

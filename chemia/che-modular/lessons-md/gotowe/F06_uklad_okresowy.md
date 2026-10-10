@@ -29,7 +29,7 @@ stopka: **CHEMIA F06 v1.0 MASTER** · Układ okresowy · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 35 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#mapa)–[§3](#walencyjne)** — układ jako mapa, okres i grupa, elektrony walencyjne.
 3. **[§4](#metale)–[§5](#rodziny)** — metale, niemetale, półmetale i rodziny.

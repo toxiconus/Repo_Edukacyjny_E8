@@ -292,7 +292,7 @@ Koniec IX   → Powtórka #1
 
 - Znać zasady BHP i podstawowy sprzęt.
 - Wiedzieć, jak pracować z materiałami kursu (poziomy, fiszki, klinika).
-- Zdiagnozować luki z klasy 7 (5–10 min).
+- Zdiagnozować luki z klasy 7.
 
 ### BHP (basic) — ściąga
 
@@ -318,7 +318,7 @@ Probówka, zlewka, kolba, lejek, bagietka, statyw, palnik (lub płyta), moździe
 3. Fiszki i powtórki w odstępach.  
 4. Błąd w klinice = nauka, nie wstyd.
 
-### Diagnoza startowa (5–8 min)
+### Diagnoza startowa
 
 1. Z = ? A = ? w atomie.  
 2. Jon Al³⁺: ile e⁻ przy Z=13?  

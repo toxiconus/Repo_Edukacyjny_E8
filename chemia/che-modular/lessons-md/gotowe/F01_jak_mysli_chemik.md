@@ -34,7 +34,7 @@ stopka: **CHEMIA F01 v1.1 MASTER** · Jak myśli chemik · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: spróbuj odpowiedzieć, zanim zaczniesz czytać.
 2. **[§1](#chemia)–[§3](#obserwacja)** — czym zajmuje się chemia; obserwacja, wniosek i hipoteza.
 3. **[§4](#piec-pytan)–[§5](#przyklady)** — pięć pytań chemika i trzy przykłady „obserwacja → model”.

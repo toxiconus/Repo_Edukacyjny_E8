@@ -1682,7 +1682,7 @@ HTML może zapamiętywać ostatni punkt, wynik testu i błędne zagadnienia. Mar
 
 > Materiał przeniesiony z warstwy migracyjnej do kanonicznej lekcji. Treść zachowana; usunięto wyłącznie powtórzenia wykazane w audycie.
 
-#### Diagnoza startowa (5–8 min)
+#### Diagnoza startowa
 
 1. Z = ? A = ? w atomie. 
 2. Jon Al³⁺: ile e⁻ przy Z=13? 
@@ -1692,7 +1692,7 @@ HTML może zapamiętywać ostatni punkt, wynik testu i błędne zagadnienia. Mar
 
 **Interpretacja:** 4–5/5 → L001 szybko jako powtórka. 2–3 → L001 uważnie. 0–1 → L001 od zera + fiszki.
 
-<!-- źródłowy fragment: ### Diagnoza startowa (5–8 min); dopasowanie: :2, :2, REV00:1, J09:1 -->
+<!-- źródłowy fragment: ### Diagnoza startowa; dopasowanie: :2, :2, REV00:1, J09:1 -->
 
 #### 80/20 września z L001
 
@@ -2755,9 +2755,9 @@ Każdy moduł F01–F09 ma trzy funkcje jednocześnie:
 
 ### ZINTEGROWANE FRAGMENTY CHE.ALL — v12.0
 
-#### Diagnoza startowa (5–8 min)
+#### Diagnoza startowa
 
-<!-- źródłowy fragment: ### Diagnoza startowa (5–8 min); dopasowanie: F09:2, F05:2, REV00:1, J09:1 -->
+<!-- źródłowy fragment: ### Diagnoza startowa; dopasowanie: F09:2, F05:2, REV00:1, J09:1 -->
 
 #### 80/20 września z L001
 

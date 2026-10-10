@@ -29,7 +29,7 @@ stopka: **CHEMIA F05 v1.0 MASTER** · Izotopy, jony i masa atomowa · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#izotopy)–[§2](#jony)** — izotopy i jony: liczenie p, n, e.
 3. **[§3](#trzy-zmiany)** — izotop, jon czy inny pierwiastek? Sprawdź w modelu.

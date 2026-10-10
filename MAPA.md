@@ -3,15 +3,15 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 143 KB)
+## .  (8 pl., 157 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
-- `CLAUDE.md` 8 KB
+- `CLAUDE.md` 12 KB
 - `MAPA.md` 26 KB
-- `PRZEKAZANIE.md` 21 KB
+- `PRZEKAZANIE.md` 24 KB
 - `README.md` 0 KB
-- ⚠`SPIS_WSZYSTKICH.md` 55 KB
-- `WERYFIKACJA.md` 28 KB
+- ⚠`SPIS_WSZYSTKICH.md` 56 KB
+- `WERYFIKACJA.md` 34 KB
 
 ## angielski  (3 pl., 959 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -64,35 +64,35 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
 ## biologia/bio  (2 pl., 7 KB)
-- `BIO_KATALOG.md` 4 KB
+- `BIO_KATALOG.md` 5 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (3 pl., 137 KB)
-- `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 33 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 51 KB
-- ⚠`BIO.02.L010.dna_od_zera.md` 53 KB
+## biologia/bio/md  (3 pl., 150 KB)
+- `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 37 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 54 KB
+- ⚠`BIO.02.L010.dna_od_zera.md` 59 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 151 KB)
+## biologia/bio/szablon  (5 pl., 168 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 93 KB
+- ⚠`bio-viz.js` 110 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
-## biologia/html  (37 pl., 6.7 MB)
+## biologia/html  (37 pl., 8.1 MB)
 - (zwinięte; `ls biologia/html`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 190 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 220 KB
-- ⚠`BIO.01.L001.komorka.html` 252 KB
-- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 197 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 233 KB
-- ⚠`BIO.01.L003.diagnoza.html` 249 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 186 KB
-- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 180 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 237 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 264 KB
+- ⚠`BIO.01.L001.komorka.html` 290 KB
+- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 235 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 271 KB
+- ⚠`BIO.01.L003.diagnoza.html` 287 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 224 KB
+- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 218 KB
 
 ## biologia/md  (37 pl., 1.1 MB)
 - (zwinięte; `ls biologia/md`) — duże:
@@ -100,8 +100,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 75 KB
 - ⚠`BIO.01.L003.diagnoza.md` 77 KB
 - ⚠`BIO.02.L012.jak_dna_jest_upakowane_w.md` 55 KB
-- ⚠`BIO.02.L014.jak_komorki_ciala_powstaja_i.md` 60 KB
-- ⚠`BIO.02.L015.mejoza.md` 58 KB
+- ⚠`BIO.02.L014.jak_komorki_ciala_powstaja_i.md` 61 KB
+- ⚠`BIO.02.L015.mejoza.md` 60 KB
 - ⚠`BIO.99.X01.szablon_lekcji.md` 61 KB
 
 ## biologia/md/archiwum  (3 pl., 46 KB)
@@ -109,11 +109,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (4 pl., 9 KB)
+## biologia/plany/audyty  (8 pl., 109 KB)
 - `W15_BIOLOGIA_L014-L021_2026-10-09.md` 2 KB
 - `W16_BIOLOGIA_L030-L050_L090_2026-10-09.md` 4 KB
 - `W18_BIOLOGIA_KLUCZE_L014-L021_2026-10-09.md` 2 KB
 - `W19_BIOLOGIA_REV01_REV02_L010_2026-10-09.md` 1 KB
+- `W1_perplexity_G12_REV01_REV02_2026-10-10.md` 21 KB
+- `W1_perplexity_G12_REV01_REV02_2026-10-10_odp2.md` 14 KB
+- `W1_perplexity_L008_L007_L010_2026-10-10.md` 43 KB
+- `W1_perplexity_L009_L031_L013_2026-10-10.md` 21 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB
@@ -152,7 +156,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 105 KB)
+## chemia/che-modular  (13 pl., 106 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -296,11 +300,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 125 KB)
+## chemia/che-modular/engine/src/lekcja  (4 pl., 129 KB)
 - `index.html` 1 KB
 - `lekcja.css` 4 KB
 - `lekcja.js` 2 KB
-- ⚠`rozszerzenia.js` 118 KB
+- ⚠`rozszerzenia.js` 123 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/engine/src/moduly`) — duże:
@@ -344,7 +348,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 926 KB)
+## chemia/che-modular/lessons-md/gotowe  (15 pl., 927 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 55 KB
 - ⚠`N01_tlenki.md` 123 KB
@@ -565,13 +569,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (4 pl., 25 KB)
+## eksport  (6 pl., 34 KB)
 - `.gitignore` 0 KB
+- `W1_PROMPT.md` 7 KB
 - `html2md.py` 4 KB
+- `w1_lekcje.py` 2 KB
 - `w1_paczka.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (11 pl., 97 KB)
+## narzedzia  (12 pl., 98 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `html_do_md.py` 22 KB
 - `latex2uni.py` 2 KB
@@ -581,6 +587,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `opis_wizualizacji.py` 3 KB
 - `polski_paczka.py` 7 KB
 - `spis_wszystkich.py` 14 KB
+- `sprawdz_wyklady.py` 1 KB
 - `szkielety_polski.py` 24 KB
 - `zbuduj_wszystkie.py` 3 KB
 
@@ -763,16 +770,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L010.srodki_stylistyczne.md` 23 KB
 - `POL.01.L011.elementy_utworu_moral_puenta.md` 22 KB
 
-## polski/html  (48 pl., 4.3 MB)
+## polski/html  (48 pl., 5.4 MB)
 - (zwinięte; `ls polski/html`) — duże:
-- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 166 KB
-- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 135 KB
-- ⚠`POL.01.L003.narnia_zaimek.html` 117 KB
-- ⚠`POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.html` 104 KB
-- ⚠`POL.01.L005.kajko_i_kokosz_rzeczownik.html` 99 KB
-- ⚠`POL.01.L006.akademia_pana_kleksa_czasownik.html` 110 KB
-- ⚠`POL.01.L007.przeglad_czesci_mowy.html` 103 KB
-- ⚠`POL.01.L008.czesci_zdania.html` 100 KB
+- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 187 KB
+- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 156 KB
+- ⚠`POL.01.L003.narnia_zaimek.html` 139 KB
+- ⚠`POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.html` 126 KB
+- ⚠`POL.01.L005.kajko_i_kokosz_rzeczownik.html` 121 KB
+- ⚠`POL.01.L006.akademia_pana_kleksa_czasownik.html` 132 KB
+- ⚠`POL.01.L007.przeglad_czesci_mowy.html` 125 KB
+- ⚠`POL.01.L008.czesci_zdania.html` 122 KB
 
 ## polski/lekcje_md  (6 pl., 251 KB)
 - ⚠`POL.01.L001.lektury_iv_vi_imieslowy.md` 80 KB
@@ -782,8 +789,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L005.kajko_i_kokosz_rzeczownik.md` 23 KB
 - `POL.01.L006.akademia_pana_kleksa_czasownik.md` 30 KB
 
-## polski/plany/audyty  (15 pl., 55 KB)
-- (zwinięte; `ls polski/plany/audyty`)
+## polski/plany/audyty  (19 pl., 250 KB)
+- (zwinięte; `ls polski/plany/audyty`) — duże:
+- ⚠`W1_perplexity_G13_G15_2026-10-10.md` 54 KB
+- ⚠`W1_perplexity_G16_G17_S01-S06_G10_G11_2026-10-10.md` 106 KB
 
 ## polski/plany/wypelnienia  (6 pl., 32 KB)
 - `G01_Rzeczownik_WYPELNIONY.md` 8 KB
@@ -793,8 +802,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 415 KB)
+## polski/podstawy  (23 pl., 529 KB)
 - (zwinięte; `ls polski/podstawy`)
+
+## polski/szablon  (2 pl., 23 KB)
+- `POL_KATALOG_GRAFIK.md` 1 KB
+- `pol-viz.js` 22 KB
 
 ## szablon  (4 pl., 65 KB)
 - `README.md` 4 KB

@@ -26,7 +26,7 @@ stopka: **CHEMIA N02 v9.0** · Wodorotlenki · 2026
 - contest | <b>Konkurs / liceum:</b> moc zasad, AgOH, CuOH, teorie kwasów i zasad
 :::
 
-::: rdzen {#rdzen-lekcji} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen-lekcji} | Rdzeń lekcji — najpierw to
 1. **[§5](#budowa)** — grupa OH⁻, wzór ogólny, nawias, nazwy.
 2. **Model „Wzór wodorotlenku”** ([§5.2](#wzor-ogolny)) — zbuduj wzory dla Na, Ca, Al, Fe(III).
 3. **Rozpuszczalność, zasada i odczyn** ([§6](#wlasciwosci)) — tabela rozpuszczalności, dysocjacja, wskaźniki.

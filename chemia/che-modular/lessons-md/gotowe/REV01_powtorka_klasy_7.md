@@ -29,7 +29,7 @@ stopka: **CHEMIA REV01 v1.0** · Powtórka fundamentów z klasy 7 · 2026
 - extra | <b>Dla ambitnych:</b> trendy okresowe, elektroujemność i polaryzacja, rozpuszczalność, zapis jonowy, podpowłoki, izobary, P₄O₁₀, wyjątki od oktetu, alotropia
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 45 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§2](#atom)–[§3](#uklad)** — atom, jon, układ okresowy.
 3. **[§4](#wartosciowosc)–[§5](#wzory)** — wartościowość i wzory (kluczowy temat).
