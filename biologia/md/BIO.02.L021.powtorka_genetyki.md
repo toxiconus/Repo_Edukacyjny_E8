@@ -91,6 +91,12 @@ GENETYKA
 └── MUTACJE (L020) — typy, mutageny
 ```
 
+@viz punnett {tryb="K"} | Powtórka: krzyżówka grup krwi | zmień genotypy rodziców i sprawdź proporcje potomstwa
+@opis Szachownica Punnetta w trybie grup krwi (AB0): u góry wybór genotypów matki i ojca (np. Iᴬi, Iᴮi), w kratkach genotypy potomstwa z kolorami fenotypów, obok procent każdej grupy krwi. Przełączniki pozwalają przejść też do jednej cechy (A/a) i do dziedziczenia sprzężonego z płcią (X). Wniosek do powtórki: proporcje potomstwa wynikają z kombinacji gamet rodziców; przy allelach Iᴬ i Iᴮ działa kodominacja (grupa AB), a i jest recesywny.
+
+@viz kod-genetyczny | Powtórka: od DNA do białka i mutacje | kliknij zasadę, aby wprowadzić mutację
+@opis Nić kodująca i matrycowa DNA, pod nimi mRNA podzielone na kodony i odpowiadające im aminokwasy. Kliknięcie zasady zmienia ją (mutacja punktowa) i panel nazywa skutek: mutacja cicha (ten sam aminokwas), zmiany sensu (inny aminokwas), nonsensowna (kodon STOP — białko skrócone) albo utrata kodonu START. Wniosek do powtórki: kolejność zasad w DNA wyznacza kolejność aminokwasów w białku, a skutek mutacji zależy od tego, czy zmienia kodon na inny aminokwas lub STOP.
+
 ---
 
 ## 5. Interleaving — zestawy mieszane

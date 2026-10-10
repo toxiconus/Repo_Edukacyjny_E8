@@ -110,6 +110,12 @@ EKOLOGIA
     └── dobór naturalny
 ```
 
+@viz relacje-ekologiczne {start="quiz"} | Powtórka: rozpoznaj relację | 12 sytuacji w losowej kolejności, wynik na końcu
+@opis Tryb quizu: opis sytuacji (np. kleszcz i sarna, porost, lis i myszołów) i sześć przycisków relacji: konkurencja, drapieżnictwo, roślinożerność, pasożytnictwo, mutualizm, komensalizm. Po wyborze panel pokazuje poprawną relację ze znakami wpływu (+/−/0) i wyjaśnieniem, na końcu wynik. Wniosek do powtórki: relację rozpoznaje się po skutku dla obu gatunków.
+
+@viz energia-materia {start="oba"} | Powtórka: energia płynie, materia krąży | przełącz warstwy, kliknij poziom
+@opis Schemat ekosystemu z obiema warstwami naraz: pomarańczowe strzałki energii (Słońce → producenci → konsumenci, ciepło z każdego poziomu, ok. 10% przechodzi dalej) i zielona pętla materii (producenci → konsumenci → destruenci → związki mineralne → producenci). Wniosek do powtórki: energia przepływa jednokierunkowo i jest tracona jako ciepło, materia krąży dzięki destruentom.
+
 ---
 
 ## 5. Interleaving — zestawy mieszane

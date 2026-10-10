@@ -95,6 +95,12 @@ ROK
     └── powtórka (L044)
 ```
 
+@viz podzial-komorki {start="mejoza"} | Powtórka roczna: mejoza krok po kroku | przyciski wstecz / dalej, porównaj z mitozą
+@opis Model komórki 2n = 4 z dwiema parami homologów (matczyne czerwone, ojcowskie niebieskie), fazy mejozy po kolei z crossing-over i liczbą chromosomów i chromatyd; przełącznik na mitozę. Wniosek do powtórki: mitoza daje dwie komórki 2n identyczne genetycznie, mejoza — cztery komórki n zróżnicowane genetycznie.
+
+@viz siec-troficzna | Powtórka roczna: sieć troficzna lasu | kliknij gatunek; tryb „usuń gatunek”
+@opis Sieć troficzna lasu z 10 gatunkami i destruentami, strzałki od zjadanego do zjadającego; kliknięcie gatunku pokazuje, co je i kto go zjada, oraz jego poziom troficzny; tryb „usuń gatunek” pokazuje, kto traci pokarm. Wniosek do powtórki: w sieci troficznej gatunki są powiązane wieloma łańcuchami, więc zniknięcie jednego wpływa na wiele innych.
+
 ---
 
 ## 5. Interleaving — zestawy mieszane

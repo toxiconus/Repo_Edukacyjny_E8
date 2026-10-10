@@ -103,6 +103,12 @@ EWOLUCJA
     └── dziedziczenie → przekazywanie cech
 ```
 
+@viz dobor-naturalny | Powtórka: dobór naturalny w pokoleniach | ćmy na korze albo bakterie i antybiotyk
+@opis Populacja 40 osobników: ćmy jasne i ciemne na korze o przełączanej barwie albo bakterie wrażliwe i oporne na antybiotyk; przyciski kolejnych pokoleń i wykres udziału cechy w procentach. Wniosek do powtórki: dobór naturalny zwiększa udział cech, które już istnieją i dają przewagę w danym środowisku; zmiana środowiska odwraca kierunek doboru.
+
+@viz konczyny-homologiczne {start="analogia"} | Powtórka: homologia czy analogia? | zacznij od analogii, potem przełącz na cztery kończyny
+@opis Na starcie skrzydło nietoperza (kości w kolorach: ramienna pomarańczowa, łokciowa i promieniowa niebieskie, nadgarstek zielony, palce fioletowe) obok skrzydła owada bez kości; przycisk przełącza na kończyny człowieka, kreta, wieloryba i nietoperza z tymi samymi grupami kości. Wniosek do powtórki: ten sam plan budowy przy różnych funkcjach = narządy homologiczne (dowód wspólnego pochodzenia); ta sama funkcja przy różnej budowie = narządy analogiczne.
+
 ---
 
 ## 5. Interleaving — zestawy mieszane

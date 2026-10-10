@@ -1665,7 +1665,7 @@ mount:function(el,o){var id='bw'+(++UID),cur=TZ.some(function(z){return z.k===o.
   TZ.forEach(function(z){var tr=H('tr');[z.n,z.co,z.bialko,z.atp,z.kier].forEach(function(x){tr.appendChild(H('td',{text:x}))});t.appendChild(tr)});draw()}});
 
 /* ---- sieć troficzna lasu: poziomy, łańcuchy, usuwanie gatunku ---- */
-var SN={trawa:[60,300,'trawa'],dab:[270,300,'dąb'],zajac:[34,215,'zając'],mysz:[118,215,'mysz'],sarna:[204,215,'sarna'],gasienica:[312,215,'gąsienica'],lis:[80,128,'lis'],wilk:[190,128,'wilk'],sikora:[300,128,'sikora'],puszczyk:[220,48,'puszczyk']};
+var SN={trawa:[60,300,'trawa'],dab:[270,300,'dąb'],zajac:[34,215,'zając'],mysz:[118,215,'mysz'],sarna:[204,215,'sarna'],gasienica:[312,215,'gąsienica'],lis:[80,128,'lis'],wilk:[190,128,'wilk'],sikora:[300,128,'sikora'],puszczyk:[150,48,'puszczyk']};
 var SE=[['trawa','zajac'],['trawa','mysz'],['trawa','sarna'],['dab','mysz'],['dab','sarna'],['dab','gasienica'],['gasienica','sikora'],['mysz','lis'],['zajac','lis'],['sarna','wilk'],['mysz','puszczyk'],['sikora','puszczyk']];
 var LV=['producent','konsument I rzędu','konsument II rzędu','konsument III rzędu'];
 BIO.define('siec-troficzna',{opis:'Sieć troficzna lasu (10 gatunków + destruenci): kliknij gatunek — co je, kto go je, poziomy i łańcuchy; tryb „usuń gatunek” pokazuje, kto zostaje bez pokarmu',
@@ -1678,16 +1678,16 @@ mount:function(el){var id='bw'+(++UID),mode='info',sel=null,removed={},sg=H('div
   var ALL=chains().length;
   function click(n){if(mode==='usun')removed[n]=!removed[n];else sel=sel===n?null:n;draw()}
   function draw(){clr(svg);var d=S('defs');['#9aa8a6','#3f7a28','#c0602c'].forEach(function(c,i){var mk=S('marker',{id:id+'a'+i,viewBox:'0 0 10 10',refX:'9',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:c}));d.appendChild(mk)});svg.appendChild(d);
-   [['producenci',300],['roślinożercy',215],['drapieżniki',128],['drapieżnik szczytowy',48]].forEach(function(r){svg.appendChild(S('text',{x:356,y:r[1]-26,'text-anchor':'end','font-size':'9',fill:'#7f8d8b'},r[0]))});
+   [['producenci',300],['roślinożercy',215],['drapieżniki',128],['drapieżnik szczytowy',48]].forEach(function(r){svg.appendChild(S('text',{x:356,y:r[1]-26,'text-anchor':'end','font-size':'10',fill:'#7f8d8b'},r[0]))});
    svg.appendChild(S('rect',{x:6,y:326,width:348,height:20,rx:5,fill:'#efe9de'}));svg.appendChild(S('text',{x:180,y:340,'text-anchor':'middle','font-size':'10',fill:'#6b5a3c'},'destruenci: grzyby, bakterie — rozkładają szczątki wszystkich'));
    var st=starving();
    SE.forEach(function(e){if(removed[e[0]]||removed[e[1]])return;var a=SN[e[0]],b=SN[e[1]],dx=b[0]-a[0],dy=b[1]-a[1],l=Math.hypot(dx,dy),k=0,c='#9aa8a6',w=1.3;
     if(sel&&mode==='info'){if(e[1]===sel){k=1;c='#3f7a28';w=2.6}else if(e[0]===sel){k=2;c='#c0602c';w=2.6}}
-    svg.appendChild(S('line',{x1:a[0]+dx/l*22,y1:a[1]+dy/l*22,x2:b[0]-dx/l*23,y2:b[1]-dy/l*23,stroke:c,'stroke-width':w,'marker-end':'url(#'+id+'a'+k+')'}))});
+    svg.appendChild(S('line',{x1:a[0]+dx/l*26,y1:a[1]+dy/l*26,x2:b[0]-dx/l*27,y2:b[1]-dy/l*27,stroke:c,'stroke-width':w,'marker-end':'url(#'+id+'a'+k+')'}))});
    Object.keys(SN).forEach(function(n){var p=SN[n],g=S('g',{'aria-label':p[2],style:'cursor:pointer'}),fl=isProd(n)?'#dcefd2':'#ffffff',sk='#1a2528',da='';
     if(removed[n]){fl='#f2f2f2';sk='#bbb';da='4 3'}else if(st[n]){fl='#f6dfda';sk='#b23b2a';da='4 3'}else if(n===sel)fl='#3f7a28';
-    g.appendChild(S('circle',{cx:p[0],cy:p[1],r:21,fill:fl,stroke:sk,'stroke-width':n===sel?'2.4':'1.3','stroke-dasharray':da}));
-    g.appendChild(S('text',{x:p[0],y:p[1]+4,'text-anchor':'middle','font-size':p[2].length>7?'8.5':'10','font-weight':'700',fill:n===sel&&!removed[n]?'#fff':removed[n]?'#aaa':'#1a2528'},p[2]));key(g,function(){click(n)});svg.appendChild(g)});
+    g.appendChild(S('circle',{cx:p[0],cy:p[1],r:25,fill:fl,stroke:sk,'stroke-width':n===sel?'2.4':'1.3','stroke-dasharray':da}));
+    g.appendChild(S('text',{x:p[0],y:p[1]+4,'text-anchor':'middle','font-size':p[2].length>7?'10':'11.5','font-weight':'700',fill:n===sel&&!removed[n]?'#fff':removed[n]?'#aaa':'#1a2528'},p[2]));key(g,function(){click(n)});svg.appendChild(g)});
    var h;
    if(mode==='usun'){var rm=Object.keys(removed).filter(function(n){return removed[n]}).map(function(n){return SN[n][2]}),sv=Object.keys(st).map(function(n){return SN[n][2]});
     h=rm.length?'<b>Usunięto: '+rm.join(', ')+'</b><span>'+(sv.length?'Bez pokarmu zostają: '+sv.join(', ')+' (czerwone, przerywane).':'Każdy gatunek ma jeszcze inny pokarm — sieć jest odporniejsza niż pojedynczy łańcuch.')+'</span><span>Łańcuchów w sieci: '+chains().length+' (było '+ALL+').</span>':'<b>Tryb usuwania</b><span>Kliknij gatunek, aby go usunąć z sieci.</span>'}
@@ -1699,7 +1699,7 @@ mount:function(el){var id='bw'+(++UID),mode='info',sel=null,removed={},sg=H('div
 })();
 (function(){
 var BIO=window.BIO;if(!BIO||!BIO.define||BIO.REV_VIZ)return;BIO.REV_VIZ=1;
-var S=BIO.S,svg=BIO.svg,T=BIO.T,btn=BIO.btn;
+var S=BIO.S,svg=BIO.svg,T=BIO.T,btn=BIO.btn,fmt=function(n){return n.toLocaleString('pl-PL')};
 function H(t,c,h,k){var e=BIO.H(t,c,h,k);if(c==='bv-info'){var w=BIO.H('div');e.appendChild(w);Object.defineProperty(e,'innerHTML',{set:function(v){w.innerHTML=String(v).replace(/^<b>([\s\S]*?)<\/b>/,'<strong style="display:block;margin-bottom:2px">$1</strong>').replace(/<(\/?)b(\s|>)/g,'<$1strong$2').replace(/<span>/g,'<span style="display:block;margin-top:3px">')},get:function(){return w.innerHTML}})}return e}  // tekst w środku jednego div — <b> nie łamie wiersza
 function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
 function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=btn(it[1],function(){cb(it[0])});if(it[0]===cur)b.classList.add('on');b.setAttribute('aria-pressed',String(it[0]===cur));box.appendChild(b)})}
@@ -1933,6 +1933,282 @@ mount:function(el,o){var sc=o.start==='bakterie'?'bakterie':'cmy',tlo='ciemne',N
     (tlo==='ciemne'?'Na ciemnej korze jasne ćmy są dobrze widoczne i częściej zjadane przez ptaki; ciemne częściej przeżywają i mają potomstwo — ich udział rośnie.':'Na jasnej korze lepiej widoczne są ciemne ćmy — dobór działa w drugą stronę i ich udział maleje. Zmień korę, aby to zobaczyć.'))+
     '</span><span>Warunki doboru: <strong>zmienność</strong> w populacji (już na starcie) → <strong>różna przeżywalność</strong> w danym środowisku → <strong>dziedziczenie</strong> cechy → zmiana populacji po wielu pokoleniach. Wynik jest losowy — powtórz symulację.</span>'}
   reset()}});
+BIO.define('relacje-ekologiczne',{opis:'Zależności międzygatunkowe jako znaki wpływu na oba gatunki (+ korzyść, − strata, 0 bez wpływu): konkurencja, drapieżnictwo, roślinożerność, pasożytnictwo, mutualizm, komensalizm; tryb „rozpoznaj relację” na 12 przykładach',
+mount:function(el,o){
+  var R=[
+   ['konkurencja','−','−','Oba gatunki <strong>tracą</strong>, bo korzystają z tych samych, ograniczonych zasobów (pokarm, światło, woda, miejsce). Bywa wewnątrzgatunkowa (osobniki jednego gatunku) i międzygatunkowa.','siewki sosny w gęstym młodniku; lis i myszołów polujące na te same nornice'],
+   ['drapieżnictwo','+','−','Drapieżnik <strong>zabija i zjada</strong> ofiarę. Liczebność ofiar i drapieżników zmienia się falami: więcej ofiar → więcej drapieżników → mniej ofiar → mniej drapieżników.','sowa i mysz; biedronka i mszyce; rosiczka i mucha'],
+   ['roślinożerność','+','−','Roślinożerca zjada <strong>część rośliny</strong> (liście, pędy, nasiona); roślina zwykle przeżywa i odrasta. Rośliny bronią się kolcami, twardymi liśćmi i trującymi substancjami.','sarna zgryzająca pędy młodych drzew; gąsienice na liściach kapusty'],
+   ['pasożytnictwo','+','−','Pasożyt żyje <strong>na</strong> żywicielu albo <strong>w</strong> nim i korzysta jego kosztem, zwykle go nie zabijając — martwy żywiciel to koniec jego „domu i stołówki”.','kleszcz i sarna; tasiemiec w jelicie człowieka; jemioła na drzewie (półpasożyt)'],
+   ['mutualizm','+','+','<strong>Oba</strong> gatunki zyskują. Czasem tak ściśle, że nie mogą żyć osobno (porost: grzyb + glon).','porost; koniczyna i bakterie brodawkowe; pszczoła i kwiat; mikoryza (grzyb + korzenie drzewa)'],
+   ['komensalizm','+','0','Jeden gatunek <strong>korzysta</strong> (resztki pokarmu, schronienie, podpora), dla drugiego to obojętne.','podnawka na rekinie zjadająca resztki; storczyki rosnące na gałęziach drzew tropikalnych (nie pobierają z nich soków)']];
+  var Q=[['Kleszcz pije krew sarny.',3],['Grzyb i glon razem tworzą porost.',4],['Lis i myszołów polują na te same nornice.',0],['Sowa łapie mysz.',1],['Sarna zgryza pędy młodych dębów.',2],['Podnawka przyczepia się do rekina i zjada resztki jego posiłków.',5],
+   ['Bakterie w brodawkach korzeni koniczyny wiążą azot, a roślina daje im cukry.',4],['Tasiemiec żyje w jelicie człowieka.',3],['Siewki sosny w gęstym młodniku zacieniają się nawzajem.',0],['Biedronka zjada mszyce.',1],['Pszczoła pije nektar i przenosi pyłek z kwiatu na kwiat.',4],['Storczyk rośnie na gałęzi drzewa w lesie tropikalnym, nie pobierając z niego wody.',5]];
+  var tools=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  var bA=btn('poznaj relacje',function(){poznaj()}),bB=btn('rozpoznaj relację',function(){quiz()});tools.appendChild(bA);tools.appendChild(bB);
+  function znak(z){var c=z==='+'?'var(--c-basic)':z==='−'?'var(--c-error)':'#8c959f';return'<span style="flex:0 0 26px;display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font:800 16px Inter,system-ui;color:#fff;background:'+c+'">'+z+'</span>'}
+  function poznaj(){BIO.fx.toggle([bA,bB],0);pic.innerHTML='';var gr=H('div','bv-grid c2');pic.appendChild(gr);
+    R.forEach(function(r){var t=H('div','bv-tile','<h6>'+r[0]+'</h6><div style="display:flex;gap:6px;align-items:center;font:700 12.5px Inter,system-ui">A '+znak(r[1])+'<span style="margin-left:8px">B</span> '+znak(r[2])+'</div>');t.setAttribute('data-k',r[0]);gr.appendChild(t)});
+    var m={};R.forEach(function(r){m[r[0]]=[r[0][0].toUpperCase()+r[0].slice(1)+' ('+r[1]+'/'+r[2]+')',' '+r[3]+' <em>Przykłady:</em> '+r[4]+'.']});
+    BIO.fx.info(pic,out,m);out.className='bv-info';out.innerHTML='<b>Patrz na skutek, nie na nazwę</b>Najpierw zapytaj: co zyskuje lub traci <strong>każdy</strong> z dwóch gatunków? Para znaków wskazuje relację: −/− konkurencja; +/− drapieżnictwo, roślinożerność lub pasożytnictwo (rozstrzyga, czy ofiara ginie, traci część ciała, czy żyje dalej jako żywiciel); +/+ mutualizm; +/0 komensalizm. Kliknij kartę.'}
+  var kol,ok,n;
+  function quiz(){BIO.fx.toggle([bA,bB],1);kol=Q.map(function(_,i){return i}).sort(function(){return Math.random()-.5});ok=0;n=0;next()}
+  function next(){pic.innerHTML='';if(n>=kol.length){out.className='bv-info ok';out.innerHTML='<b>Wynik: '+ok+' / '+kol.length+'</b>Kliknij „rozpoznaj relację”, aby zacząć od nowa (kolejność się zmieni).';return}
+    var q=Q[kol[n]];pic.appendChild(H('p','',(n+1)+'/'+kol.length+'. <strong>'+q[0]+'</strong>'));var row=H('div','bv-tools');pic.appendChild(row);
+    R.forEach(function(r,i){row.appendChild(btn(r[0],function(){var dobrze=i===q[1];if(dobrze)ok++;n++;out.className='bv-info '+(dobrze?'ok':'bad');
+      out.innerHTML='<b>'+(dobrze?'Dobrze':'Nie — to '+R[q[1]][0])+' ('+R[q[1]][1]+'/'+R[q[1]][2]+')</b>'+R[q[1]][3];next()}))});
+    if(!n){out.className='bv-info';out.innerHTML='<b>Rozpoznaj relację</b>Ustal znaki wpływu dla obu gatunków, potem wybierz nazwę.'}}
+  if(o.start==='quiz')quiz();else poznaj()}});
+
+BIO.define('konczyny-homologiczne',{opis:'Kończyny przednie człowieka, kreta, wieloryba i nietoperza: te same grupy kości (ramienna, łokciowa i promieniowa, nadgarstek, śródręcze i paliczki) w tych samych kolorach, różne funkcje → narządy homologiczne; tryb „analogia”: skrzydło nietoperza obok skrzydła owada (ta sama funkcja, inna budowa)',
+mount:function(el,o){
+  var KOL={ram:'#e0a458',prz:'#6aa0d8',nad:'#8fbf6e',pal:'#b884c8'};
+  var tools=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  var bA=btn('homologia: 4 kończyny',function(){rysuj(0)}),bB=btn('analogia: nietoperz i owad',function(){rysuj(1)});tools.appendChild(bA);tools.appendChild(bB);
+  function limb(s,cx,p,k){var y=34,gr=S('g',{});s.appendChild(gr);
+    var tips=[],y3=y+p.h1+p.h2+10;
+    for(var i=0;i<5;i++){var a=(i-2)*p.sp*Math.PI/180,L=p.d[i];tips.push([cx+Math.sin(a)*L,y3+6+Math.cos(a)*L])}
+    if(p.blona)gr.appendChild(S('path',{d:'M'+(cx-3)+' '+(y+4)+' L'+tips.slice(1).map(function(t){return t[0].toFixed(1)+' '+t[1].toFixed(1)}).join(' L')+' L'+(cx+46)+' '+(y+p.h1+12)+'z',fill:'#c9ccd3',opacity:.45,stroke:'#8c959f'}));
+    if(p.pletwa)gr.appendChild(S('path',{d:'M'+(cx-p.hw)+' '+(y+p.h1)+' Q'+(cx-34)+' '+(y3+60)+' '+tips[1][0]+' '+(tips[1][1]+8)+' Q'+cx+' '+(y3+110)+' '+(tips[3][0]+4)+' '+(tips[3][1]+4)+' Q'+(cx+30)+' '+(y3+30)+' '+(cx+p.hw)+' '+(y+p.h1)+'z',fill:'#bcd4e6',opacity:.5,stroke:'#6a8fae'}));
+    var g1=S('g',{'data-k':'ram'});g1.appendChild(S('rect',{x:cx-p.hw/2,y:y,width:p.hw,height:p.h1,rx:p.hw/2,fill:KOL.ram,stroke:'#8a5a1c'}));gr.appendChild(g1);
+    var g2=S('g',{'data-k':'prz'});[-1,1].forEach(function(z){g2.appendChild(S('rect',{x:cx+z*p.fw-2.6,y:y+p.h1+2,width:5.2*(z<0&&p.lok?.6:1),height:p.h2*(z<0&&p.lok?.45:1),rx:2.6,fill:KOL.prz,stroke:'#2f5f8e'}))});gr.appendChild(g2);
+    var g3=S('g',{'data-k':'nad'});[[-5,0],[0,-1],[5,0],[-2.5,5],[2.5,5]].forEach(function(q){g3.appendChild(S('circle',{cx:cx+q[0]*p.nw,cy:y+p.h1+p.h2+6+q[1],r:3.2,fill:KOL.nad,stroke:'#4c7a33'}))});gr.appendChild(g3);
+    var g4=S('g',{'data-k':'pal'});
+    tips.forEach(function(t,i){var x0=cx+(i-2)*p.nw*2.2,y0=y3+4,seg=i===0?3:4,dx=(t[0]-x0)/seg,dy=(t[1]-y0)/seg;
+      for(var j=0;j<seg;j++)g4.appendChild(S('line',{x1:x0+dx*j+dx*.08,y1:y0+dy*j+dy*.08,x2:x0+dx*(j+1)-dx*.08,y2:y0+dy*(j+1)-dy*.08,stroke:KOL.pal,'stroke-width':p.pw,'stroke-linecap':'round'}))});
+    gr.appendChild(g4);return gr}
+  var P={czlowiek:{h1:66,hw:9,h2:58,fw:5,sp:11,d:[30,46,50,46,36],nw:1,pw:4},
+    kret:{h1:30,hw:13,h2:30,fw:7,sp:20,d:[24,30,32,30,24],nw:1.5,pw:6},
+    wieloryb:{h1:24,hw:15,h2:28,fw:7,sp:6,d:[26,74,86,66,36],nw:1.4,pw:5,pletwa:1},
+    nietoperz:{h1:46,hw:6,h2:70,fw:3,sp:15,d:[14,104,112,100,90],nw:.8,pw:2.6,blona:1,lok:1}};
+  var NAZ={czlowiek:['Człowiek — chwytanie',' Długie kości ramienia i przedramienia, ruchoma dłoń z przeciwstawnym kciukiem.'],kret:['Kret — kopanie',' Krótkie, bardzo grube kości i szeroka „łopata” dłoni — duża siła przy małym zasięgu.'],
+    wieloryb:['Wieloryb — pływanie',' Krótkie kości ramienia i przedramienia, wydłużone palce z dodatkowymi paliczkami, całość schowana w sztywnej płetwie.'],nietoperz:['Nietoperz — lot',' Bardzo długa kość promieniowa i palce II–V rozpinają błonę lotną; kciuk krótki, z pazurem.'],
+    owad:['Skrzydło owada — lot',' Cienki, płaski wyrostek oskórka (chityna) wzmocniony żyłkami. Nie ma w nim kości ani mięśni, wyrasta z grzbietu tułowia, a nie z kończyny. Ta sama funkcja co skrzydło nietoperza, zupełnie inna budowa i pochodzenie → <strong>narządy analogiczne</strong> (podobieństwo powstało niezależnie — konwergencja).'],
+    ram:['Kość ramienna',' Jedna kość w ramieniu — w każdej z tych kończyn, w tym samym miejscu, tylko o innej długości i grubości.'],
+    prz:['Kość łokciowa i promieniowa',' Dwie kości przedramienia. U kreta krótkie i masywne, u nietoperza promieniowa bardzo długa, a łokciowa szczątkowa.'],
+    nad:['Kości nadgarstka',' Grupa drobnych kości między przedramieniem a dłonią — ten sam „zestaw klocków” w każdej kończynie.'],
+    pal:['Kości śródręcza i paliczki',' Pięć promieni palców. Ich długość i liczba paliczków zmieniły się zależnie od funkcji: chwytanie, kopanie, pływanie, lot.']};
+  function rysuj(tr){BIO.fx.toggle([bA,bB],tr);pic.innerHTML='';var s;
+    if(!tr){s=svg(440,300,'Kończyny przednie człowieka, kreta, wieloryba i nietoperza z kośćmi w tych samych kolorach');
+      [['czlowiek',52,'człowiek'],['kret',142,'kret'],['wieloryb',236,'wieloryb'],['nietoperz',362,'nietoperz']].forEach(function(z){limb(s,z[1],P[z[0]],z[0]);var et=S('g',{'data-k':z[0]});et.appendChild(T(z[1],14,z[2],{s:13,w:800}));s.appendChild(et)})}
+    else{s=svg(440,300,'Skrzydło nietoperza z kośćmi obok skrzydła owada bez kości');limb(s,110,P.nietoperz,'nietoperz');var et=S('g',{'data-k':'nietoperz'});et.appendChild(T(110,14,'nietoperz (skrzydło = kończyna)',{s:12,w:800}));s.appendChild(et);
+      var w=S('g',{'data-k':'owad'});w.appendChild(S('path',{d:'M250 70 Q330 40 420 64 Q428 92 400 112 Q330 138 250 84z',fill:'#e6eef7',stroke:'#6a7f99','stroke-width':1.6}));
+      ['M252 76 Q330 52 416 66','M254 80 Q330 74 404 104','M256 82 Q320 94 360 122','M300 62 L306 100','M350 56 L356 116','M390 60 L396 108'].forEach(function(d){w.appendChild(S('path',{d:d,fill:'none',stroke:'#6a7f99','stroke-width':1}))});
+      w.appendChild(S('ellipse',{cx:250,cy:92,rx:10,ry:20,fill:'#7d8a96'}));s.appendChild(w);s.appendChild(T(334,14,'owad (skrzydło = wyrostek oskórka)',{s:12,w:800}));
+      s.appendChild(T(334,170,'brak kości,',{s:12,f:'#c0392b'}));s.appendChild(T(334,186,'chitynowa błona z żyłkami',{s:12,f:'#c0392b'}))}
+    pic.appendChild(s);
+    var lg=H('div','bv-tools');[['ram','kość ramienna'],['prz','łokciowa i promieniowa'],['nad','nadgarstek'],['pal','śródręcze i paliczki']].forEach(function(z){var c=H('span','bv-btn','<span style="display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;background:'+KOL[z[0]]+'"></span>'+z[1]);c.setAttribute('data-k',z[0]);lg.appendChild(c)});pic.appendChild(lg);
+    BIO.fx.info(pic,out,NAZ);out.className='bv-info';
+    out.innerHTML=tr?'<b>Ta sama funkcja ≠ wspólne pochodzenie</b>Oba skrzydła służą do lotu, ale skrzydło nietoperza to przekształcona kończyna z kośćmi, a skrzydło owada — wyrostek pancerza bez kości. To narządy <strong>analogiczne</strong>: nie dowodzą bliskiego pokrewieństwa. Kliknij element.'
+      :'<b>Ten sam plan budowy, różne funkcje</b>W każdej kończynie są te same grupy kości w tej samej kolejności (kolory). To narządy <strong>homologiczne</strong> — dowód, że ssaki mają wspólnego przodka, a kości zmieniały się z funkcją. Kliknij kość albo zwierzę.'}
+  rysuj(o.start==='analogia'?1:0)}});
+
+BIO.define('energia-materia',{opis:'Ekosystem: przepływ energii (jednokierunkowy, od Słońca przez producentów i konsumentów, z ciepłem traconym na każdym poziomie, ok. 10% przechodzi dalej) i obieg materii (zamknięty: producenci → konsumenci → destruenci → związki mineralne → producenci); przełącznik energia / materia',
+mount:function(el,o){
+  var tools=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  var b=[btn('przepływ energii',function(){tryb(0)}),btn('obieg materii',function(){tryb(1)}),btn('oba naraz',function(){tryb(2)})];b.forEach(function(x){tools.appendChild(x)});
+  var s=svg(440,300,'Przepływ energii i obieg materii w ekosystemie');pic.appendChild(s);
+  var E='#e08a1e',M='#2e8b57',warstwy={e:[],m:[]};
+  function strz(x1,y1,x2,y2,c,k,przes){var dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),ux=dx/L,uy=dy/L,nx=-uy*(przes||0),ny=ux*(przes||0);x1+=nx;x2+=nx;y1+=ny;y2+=ny;
+    var gg=S('g',{});gg.appendChild(S('line',{x1:x1,y1:y1,x2:x2-ux*7,y2:y2-uy*7,stroke:c,'stroke-width':3}));
+    gg.appendChild(S('path',{d:'M'+x2+' '+y2+' L'+(x2-ux*10-uy*5)+' '+(y2-uy*10+ux*5)+' L'+(x2-ux*10+uy*5)+' '+(y2-uy*10-ux*5)+'z',fill:c}));s.appendChild(gg);warstwy[k].push(gg);return gg}
+  function wezel(x,y,w,t1,t2,k,kol){var gg=S('g',{'data-k':k});gg.appendChild(S('rect',{x:x-w/2,y:y-22,width:w,height:44,rx:9,fill:kol,stroke:'#5b6672'}));gg.appendChild(T(x,y-8,t1,{s:11.5,w:800}));gg.appendChild(T(x,y+9,t2,{s:10.5,w:600}));return gg}
+  var N={slonce:[40,40],P:[70,134],K1:[220,134],K2:[370,134],D:[300,250],Mn:[96,250]};
+  // strzałki (pod węzłami)
+  strz(58,60,70,110,E,'e');
+  strz(127,134,159,134,E,'e',-5);strz(281,134,309,134,E,'e',-5);
+  strz(127,134,159,134,M,'m',5);strz(281,134,309,134,M,'m',5);
+  [[N.P,-5],[N.K1,0],[N.K2,5]].forEach(function(q){strz(q[0][0],156,N.D[0]+q[1]*6-4,228,E,'e',-4);strz(q[0][0],156,N.D[0]+q[1]*6+4,228,M,'m',4)});
+  strz(248,250,153,250,M,'m');strz(84,228,72,157,M,'m');
+  var cieplo=[];[N.P,N.K1,N.K2,[N.D[0]+40,N.D[1]]].forEach(function(q){var gg=S('g',{});gg.appendChild(S('path',{d:'M'+(q[0]+40)+' '+(q[1]-22)+' q6 -8 0 -16 q-6 -8 0 -16',fill:'none',stroke:'#c0392b','stroke-width':2}));gg.appendChild(T(q[0]+40,q[1]-62,'ciepło',{s:10.5,f:'#c0392b'}));s.appendChild(gg);warstwy.e.push(gg)});
+  var sl=S('g',{'data-k':'slonce'});sl.appendChild(S('circle',{cx:40,cy:40,r:18,fill:'#ffd34d',stroke:'#e0a400'}));for(var i=0;i<8;i++){var a=i*Math.PI/4;sl.appendChild(S('line',{x1:40+Math.cos(a)*22,y1:40+Math.sin(a)*22,x2:40+Math.cos(a)*28,y2:40+Math.sin(a)*28,stroke:'#e0a400','stroke-width':2}))}s.appendChild(sl);
+  [wezel(70,134,112,'producenci','rośliny, glony','P','#e3f1dc'),wezel(220,134,120,'konsumenci I rz.','roślinożercy','K1','#f3ead6'),wezel(370,134,120,'konsumenci II rz.','drapieżniki','K2','#f6dfd9'),
+   wezel(300,250,104,'destruenci','bakterie, grzyby','D','#e9e3f2'),wezel(96,250,114,'związki mineralne','CO₂, woda, sole','Mn','#dfeef5')].forEach(function(x){s.appendChild(x)});
+  var liczby=[];[['10 000 kJ',70],['ok. 1000 kJ',220],['ok. 100 kJ',370]].forEach(function(z){var t=T(z[1]-(z[1]===70?52:56),100,z[0],{s:11,w:800,f:E,a:'start'});s.appendChild(t);liczby.push(t);warstwy.e.push(t)});
+  var leg=S('g',{});leg.appendChild(S('rect',{x:150,y:22,width:12,height:5,fill:E}));leg.appendChild(T(168,25,'energia',{s:11,a:'start'}));leg.appendChild(S('rect',{x:150,y:40,width:12,height:5,fill:M}));leg.appendChild(T(168,43,'materia (pierwiastki)',{s:11,a:'start'}));s.appendChild(leg);
+  BIO.fx.info(pic,out,{slonce:['Słońce',' Jedyne źródło energii dla większości ekosystemów. Producenci zamieniają energię światła na energię chemiczną związków organicznych (fotosynteza).'],
+    P:['Producenci',' Z CO₂, wody i soli mineralnych wytwarzają związki organiczne — „wpuszczają” energię i materię do łańcucha pokarmowego.'],
+    K1:['Konsumenci I rzędu',' Zjadają producentów. Większość zjedzonej energii zużywają na oddychanie i ruch — ucieka jako ciepło; do ich ciała trafia tylko mała część (ok. 10%).'],
+    K2:['Konsumenci II rzędu',' Zjadają roślinożerców. Dostaje się do nich znów tylko ok. 10% energii poprzedniego poziomu — dlatego drapieżników jest mało, a łańcuchy rzadko mają więcej niż 4–5 ogniw.'],
+    D:['Destruenci',' Rozkładają martwe szczątki i odchody na związki mineralne (mineralizacja). Sami też oddychają i oddają ciepło. Bez nich materia nie wracałaby do obiegu.'],
+    Mn:['Związki mineralne',' CO₂, woda, azotany, fosforany… Te same atomy węgla, azotu czy fosforu krążą w kółko: pobiera je producent, przechodzą przez konsumentów i destruentów i wracają do gleby, wody i powietrza.']});
+  function tryb(k){BIO.fx.toggle(b,k);warstwy.e.forEach(function(x){x.style.opacity=k===1?.12:1});warstwy.m.forEach(function(x){x.style.opacity=k===0?.12:1});
+    out.className='bv-info';out.innerHTML=[
+     '<b>Energia płynie w jedną stronę</b>Słońce → producenci → konsumenci; na każdym poziomie większość energii ucieka jako <strong>ciepło</strong> (oddychanie, ruch), dalej przechodzi tylko ok. 10% (orientacyjnie; zwykle 5–20%). Energia <strong>nie wraca</strong> do producentów — ekosystem potrzebuje stałego dopływu światła.',
+     '<b>Materia krąży</b>Producenci → konsumenci → destruenci → związki mineralne → znów producenci. Atomy węgla czy azotu są używane wielokrotnie — obieg jest <strong>zamknięty</strong>, a kluczowi są destruenci.',
+     '<b>Porównaj</b>Pomarańczowe strzałki (energia) kończą się ciepłem — to <strong>przepływ</strong>. Zielone (materia) tworzą pętlę — to <strong>obieg</strong>. Zdanie „energia krąży w ekosystemie” jest błędne.'][k]}
+  tryb(o.start==='materia'?1:o.start==='oba'?2:0)}});
+
+BIO.define('zrodla-zmiennosci',{opis:'Źródła zmienności rekombinacyjnej na modelu 3 par chromosomów: losowanie gamet matki i ojca (niezależna segregacja, 2³ = 8 rodzajów gamet), losowe zapłodnienie (64 kombinacje), opcjonalny crossing-over (mieszane odcinki); licznik różnych dzieci; dla człowieka 2²³ ≈ 8,4 mln gamet i ok. 70 bln kombinacji',
+mount:function(el,o){
+  var tools=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  var co=false,widz={},ile=0,dz=null;
+  var bL=btn('losuj dziecko',function(){losuj(1)}),b10=btn('+10 dzieci',function(){losuj(10)}),bC=btn('crossing-over: wył.',function(){co=!co;bC.textContent='crossing-over: '+(co?'wł.':'wył.');bC.classList.toggle('on',co);widz={};ile=0;losuj(1)}),bR=btn('od nowa',function(){widz={};ile=0;dz=null;rys()});
+  [bL,b10,bC,bR].forEach(function(x){tools.appendChild(x)});
+  var LEN=[40,30,20],KM=['#9e1f1f','#f08a8a'],KO=['#1f4f9e','#8ab0f0'];
+  function chrom(s,x,y,c,L){var kol=c.kol,gg=S('g',{});gg.appendChild(S('rect',{x:x-4,y:y,width:8,height:L,rx:4,fill:kol[c.b]}));if(c.f)gg.appendChild(S('rect',{x:x-4,y:y+L*(1-c.f),width:8,height:L*c.f,rx:4,fill:kol[1-c.b]}));s.appendChild(gg)}
+  function gameta(kol){return LEN.map(function(L,i){var b=Math.random()<.5?0:1,f=co&&Math.random()<.7?+(0.25+Math.random()*.45).toFixed(2):0;return{b:b,f:f,kol:kol}})}
+  function komorka(s,x,y,w,h,t,par){s.appendChild(S('rect',{x:x,y:y,width:w,height:h,rx:16,fill:'#f4f8f1',stroke:'#7aa66a','stroke-width':2}));s.appendChild(T(x+w/2,y-9,t,{s:12,w:800}));
+    par.forEach(function(p,i){var cx=x+w*(i+1)/4;p.forEach(function(c,j){chrom(s,cx+(j?7:-7),y+12,c,LEN[i])})})}
+  function rys(){pic.innerHTML='';var s=svg(440,320,'Losowanie gamet z trzema parami chromosomów i dziecko');pic.appendChild(s);
+    var mama=LEN.map(function(){return[{b:0,f:0,kol:KM},{b:1,f:0,kol:KM}]}),tata=LEN.map(function(){return[{b:0,f:0,kol:KO},{b:1,f:0,kol:KO}]});
+    komorka(s,12,26,130,62,'matka (2n = 6)',mama);komorka(s,298,26,130,62,'ojciec (2n = 6)',tata);
+    if(dz){var gm=S('g',{'data-k':'gm'}),go=S('g',{'data-k':'go'});s.appendChild(gm);s.appendChild(go);
+      gm.appendChild(S('circle',{cx:110,cy:150,r:34,fill:'#fdf0f0',stroke:'#c06a6a'}));dz.m.forEach(function(c,i){chrom(gm,92+i*18,132,c,LEN[i])});s.appendChild(T(110,196,'jajo (n = 3)',{s:11}));
+      go.appendChild(S('circle',{cx:330,cy:150,r:34,fill:'#eef3fd',stroke:'#6a86c0'}));dz.o.forEach(function(c,i){chrom(go,312+i*18,132,c,LEN[i])});s.appendChild(T(330,196,'plemnik (n = 3)',{s:11}));
+      s.appendChild(T(220,150,'+',{s:26,w:800,f:'#6b7480'}));s.appendChild(T(220,214,'↓ zapłodnienie',{s:11,f:'#6b7480'}));
+      var gd=S('g',{'data-k':'dz'});s.appendChild(gd);komorka(gd,145,250,150,60,'',dz.m.map(function(c,i){return[c,dz.o[i]]}));s.appendChild(T(220,238,'zygota → dziecko (2n = 6)',{s:12,w:800}))}
+    else s.appendChild(T(220,170,'Kliknij „losuj dziecko”',{s:14,f:'var(--text-soft)'}));
+    [[150,'start'],[290,'end']].forEach(function(z){s.appendChild(T(z[0],106,'↓ mejoza',{s:11,f:'#6b7480',a:z[1]}))});
+    BIO.fx.info(pic,out,{gm:['Gameta matki',' Z każdej pary trafia do niej <strong>jeden</strong> chromosom — który, decyduje przypadek w mejozie (niezależna segregacja). Przy 3 parach: 2³ = 8 rodzajów gamet.'],
+      go:['Gameta ojca',' To samo losowanie u ojca: znów 8 możliwości (bez crossing-over).'],
+      dz:['Zygota',' Połączenie dwóch losowych gamet: 8 × 8 = 64 różne zestawy chromosomów. U człowieka (23 pary) każdy rodzic ma 2²³ ≈ 8,4 mln rodzajów gamet, a para — ok. 70 bilionów (2⁴⁶) kombinacji, zanim policzymy crossing-over.']});
+    var r=Object.keys(widz).length;out.className='bv-info';
+    out.innerHTML='<b>Różnych dzieci: '+r+(co?'':' z 64 możliwych')+' (wylosowano '+ile+')</b>'+(co?'Crossing-over wymienia odcinki między chromosomami jednej pary (mieszane kolory), więc liczba możliwych gamet rośnie praktycznie bez końca — prawie każde dziecko jest inne.':'Bez crossing-over chromosomy przechodzą w całości. Losuj dalej: ile prób trzeba, by zobaczyć wszystkie 64 zestawy? Potem włącz crossing-over.')+' <em>Mutacje dokładają nowe allele, a środowisko — zmienność niedziedziczną.</em>'}
+  function losuj(n){for(var i=0;i<n;i++){dz={m:gameta(KM),o:gameta(KO)};ile++;widz[JSON.stringify([dz.m,dz.o].map(function(g){return g.map(function(c){return c.b+'/'+c.f})}))]=1}rys()}
+  rys()}});
+
+BIO.define('kontrola-podzialow',{opis:'Model tkanki (70 komórek): dawki UV uszkadzają DNA, „hamulce” naprawa DNA i apoptoza (wł./wył.) usuwają skutki; komórka z 3 mutacjami w genach kontroli dzieli się bez ograniczeń i zajmuje sąsiednie miejsca (guz); liczniki komórek zdrowych, zmutowanych i nowotworowych',
+mount:function(el,o){
+  var C=10,Rw=7,cel=[],nap=true,apo=true,dawki=0,cykle=0;
+  var tools=H('div','bv-tools'),t2=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');[tools,t2,pic,out].forEach(function(x){el.appendChild(x)});
+  var bUV=btn('☀ dawka UV',function(){uv()}),bT=btn('⏱ cykl podziałów',function(){cykl(1)}),b5=btn('+5 cykli',function(){cykl(5)}),bR=btn('od nowa',function(){start()});
+  var bN=btn('naprawa DNA: wł.',function(){nap=!nap;bN.textContent='naprawa DNA: '+(nap?'wł.':'wył.');bN.classList.toggle('on',nap);opis()}),
+      bA=btn('apoptoza: wł.',function(){apo=!apo;bA.textContent='apoptoza: '+(apo?'wł.':'wył.');bA.classList.toggle('on',apo);opis()});
+  bN.classList.add('on');bA.classList.add('on');[bUV,bT,b5,bR].forEach(function(x){tools.appendChild(x)});[bN,bA].forEach(function(x){t2.appendChild(x)});
+  var KOL=['#8fc97a','#f2c14e','#e8913a','#c0392b'],s=svg(440,262,'Model tkanki: komórki zdrowe, zmutowane i nowotworowe');pic.appendChild(s);var kola=[];
+  for(var i=0;i<C*Rw;i++){var x=22+(i%C)*41+(Math.floor(i/C)%2?20:0),y=22+Math.floor(i/C)*34,c=S('circle',{cx:x,cy:y,r:15,stroke:'#5b6672','stroke-width':1.2});s.appendChild(c);kola.push(c)}
+  var leg=[['zdrowa',0],['1–2 mutacje',2],['nowotworowa (3)',3],['puste (apoptoza)',-1]];
+  var lg=H('div','bv-tools');leg.forEach(function(z){lg.appendChild(H('span','bv-score','<span style="display:inline-block;width:11px;height:11px;border-radius:50%;margin:0 5px 0 8px;background:'+(z[1]<0?'#eceff3':KOL[z[1]])+';border:1px solid #5b6672"></span>'+z[0]))});pic.appendChild(lg);
+  function sasiedzi(i){var r=Math.floor(i/C),k=i%C,d=r%2?[[0,-1],[0,1],[-1,0],[-1,1],[1,0],[1,1]]:[[0,-1],[0,1],[-1,-1],[-1,0],[1,-1],[1,0]],w=[];
+    d.forEach(function(q){var rr=r+q[0],kk=k+q[1];if(rr>=0&&rr<Rw&&kk>=0&&kk<C)w.push(rr*C+kk)});return w}
+  function rys(){kola.forEach(function(c,i){var m=cel[i];c.style.fill=m<0?'#eceff3':KOL[m];c.setAttribute('stroke-dasharray',m<0?'3 3':'')});opis()}
+  function licz(){var z=0,mu=0,n=0,p=0;cel.forEach(function(m){if(m<0)p++;else if(m===0)z++;else if(m<3)mu++;else n++});return[z,mu,n,p]}
+  function opis(){var l=licz();out.className='bv-info'+(l[2]>8?' bad':'');
+    out.innerHTML='<b>Dawki UV: '+dawki+' · cykle: '+cykle+' — zdrowe '+l[0]+', zmutowane '+l[1]+', nowotworowe '+l[2]+'</b>'+
+     (l[2]?'Komórka z mutacjami w <strong>trzech</strong> genach kontroli nie słucha sygnałów „stop” — dzieli się w każdym cyklu i wypiera sąsiadów. Tak rośnie guz.':
+      (!nap||!apo?'Wyłączony hamulec: '+(!nap?'bez naprawy DNA każde uszkodzenie zostaje jako mutacja. ':'')+(!apo?'Bez apoptozy komórki z błędami nie są usuwane. ':'')+'Dawkuj UV i puszczaj cykle — guz pojawi się znacznie szybciej.':
+      'Jedna dawka UV prawie nigdy nie tworzy komórki nowotworowej: większość uszkodzeń naprawia się od razu, a komórki z błędami często giną (apoptoza). Potrzeba <strong>wielu</strong> uszkodzeń w <strong>jednej</strong> komórce.'))}
+  function uv(){dawki++;var zyw=[];cel.forEach(function(m,i){if(m>=0)zyw.push(i)});
+    for(var k=0;k<6&&zyw.length;k++){var i=zyw.splice(Math.floor(Math.random()*zyw.length),1)[0];if(nap&&Math.random()<.8)continue;if(cel[i]<3)cel[i]++}rys()}
+  function cykl(n){for(var t=0;t<n;t++){cykle++;var nowe=cel.slice();
+    cel.forEach(function(m,i){if(m>=1&&m<3&&apo&&Math.random()<.5)nowe[i]=-1});
+    cel.forEach(function(m,i){if(m===3){var s2=sasiedzi(i).filter(function(j){return nowe[j]!==3});if(s2.length)nowe[s2[Math.floor(Math.random()*s2.length)]]=3}});
+    nowe.forEach(function(m,i){if(m<0){var z=sasiedzi(i).filter(function(j){return nowe[j]===0});if(z.length&&Math.random()<.6)nowe[i]=0}});
+    cel=nowe}rys()}
+  function start(){cel=[];for(var i=0;i<C*Rw;i++)cel.push(0);dawki=0;cykle=0;rys()}
+  start()}});
+
+BIO.define('eutrofizacja',{opis:'Eutrofizacja jeziora w 5 etapach (suwak): czysta woda → spływ nawozów (azotany, fosforany) → zakwit glonów → rozkład martwych glonów przez bakterie zużywające tlen → przyducha i śnięcie ryb; wskaźnik tlenu i przejrzystości wody na każdym etapie',
+mount:function(el,o){
+  var tools=H('div','bv-tools'),rng=document.createElement('input');rng.type='range';rng.min=0;rng.max=4;rng.value=o.etap||0;rng.setAttribute('aria-label','Etap eutrofizacji');rng.style.flex='1 1 160px';
+  var lab=H('span','bv-score','');tools.appendChild(rng);tools.appendChild(lab);var pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  var E=[
+   ['1. Czyste jezioro','Woda przejrzysta, światło dociera głęboko, rośliny podwodne produkują tlen. Biogenów (azotu, fosforu) jest mało — to one ograniczają wzrost glonów.',90,90,'#7fb3d5',2,4],
+   ['2. Spływ biogenów','Deszcz spłukuje z pól nawozy (azotany, fosforany), do wody trafiają też ścieki i detergenty z fosforanami. Woda wygląda jeszcze dobrze, ale „karma” dla glonów już jest.',85,80,'#7fb3d5',6,4],
+   ['3. Zakwit glonów','Glony i sinice rozmnażają się masowo: woda zielona i mętna, światło nie dociera w głąb, rośliny przy dnie obumierają. Na powierzchni w dzień tlenu bywa sporo, w głębi — coraz mniej.',60,25,'#5f9e5a',40,3],
+   ['4. Rozkład martwych glonów','Krótko żyjące glony opadają na dno. Bakterie (destruenci) rozkładają tę masę i <strong>zużywają tlen</strong> przy oddychaniu — w głębi tlenu ubywa szybko.',25,20,'#6f8f4a',30,2],
+   ['5. Przyducha','Brak tlenu przy dnie: ryby i inne zwierzęta giną (śnięcie ryb), bakterie beztlenowe wytwarzają cuchnący siarkowodór. Jezioro zarasta i wypłyca się szybciej niż naturalnie.',5,15,'#5c6b3a',20,0]];
+  function rys(){var k=+rng.value,e=E[k];lab.textContent=e[0];pic.innerHTML='';var s=svg(440,250,'Jezioro: etap '+e[0]);pic.appendChild(s);
+    s.appendChild(S('rect',{x:0,y:0,width:440,height:60,fill:'#eef6fb'}));
+    s.appendChild(S('path',{d:'M0 60 L120 60 L130 54 L160 50 L180 60 L440 60 L440 250 L0 250z',fill:'#c8b48a'}));
+    s.appendChild(S('path',{d:'M40 60 Q60 210 220 214 Q380 210 400 60z',fill:e[4],opacity:.85}));
+    s.appendChild(S('path',{d:'M0 44 L36 40 L100 36 L130 38 L130 54 L0 60z',fill:'#b5cf7a'}));s.appendChild(T(64,30,'pole',{s:11}));
+    if(k>=1){for(var i=0;i<9;i++){s.appendChild(S('circle',{cx:70+i*10,cy:44+(i%3)*4,r:2.6,fill:i%2?'#3b6fd6':'#c0392b'}))}s.appendChild(S('path',{d:'M110 52 Q130 60 150 72',fill:'none',stroke:'#3b6fd6','stroke-width':2,'stroke-dasharray':'4 3'}));s.appendChild(T(118,90,'N, P',{s:11,w:800,f:'#3b6fd6'}))}
+    for(var j=0;j<e[5];j++){var gx=70+((j*53)%300),gy=66+((j*29)%(k===2?40:120));s.appendChild(S('circle',{cx:gx,cy:gy,r:k===2?4:3,fill:k>=3?'#7a8a4a':'#2f8f3a',opacity:.9}))}
+    if(k>=3){for(var m=0;m<10;m++)s.appendChild(S('ellipse',{cx:150+m*14,cy:206-(m%2)*3,rx:7,ry:3,fill:'#5a5a3a'}));s.appendChild(T(220,232,'martwe glony + bakterie (zużywają O₂)',{s:11,f:'#fff',w:700}))}
+    if(k<=1){[0,1,2].forEach(function(r){var px=120+r*70;s.appendChild(S('path',{d:'M'+px+' 205 q-4 -30 2 -60 M'+(px+8)+' 205 q4 -24 -2 -48',fill:'none',stroke:'#2f7d32','stroke-width':2}))})}
+    for(var f=0;f<e[6];f++){var fx2=130+f*48,fy=120+(f%2)*24;s.appendChild(S('path',{d:'M'+fx2+' '+fy+' q14 -9 28 0 q-14 9 -28 0z M'+(fx2+28)+' '+fy+' l8 -6 l0 12z',fill:'#e8913a',stroke:'#9a4c12'}))}
+    if(k===4){[0,1,2].forEach(function(f){var fx3=160+f*60;s.appendChild(S('path',{d:'M'+fx3+' 66 q14 -9 28 0 q-14 9 -28 0z',fill:'#bbb',stroke:'#777',transform:'rotate(180 '+(fx3+14)+' 66)'}))});s.appendChild(T(250,52,'śnięte ryby',{s:11,f:'#c0392b',w:800}))}
+    function pasek(y,t,v,kol){s.appendChild(T(330,y,t,{s:11,a:'start',w:700}));s.appendChild(S('rect',{x:330,y:y+6,width:100,height:9,rx:4,fill:'#e3e7ec'}));s.appendChild(S('rect',{x:330,y:y+6,width:v,height:9,rx:4,fill:kol}))}
+    s.appendChild(S('rect',{x:322,y:2,width:116,height:58,rx:8,fill:'#fff',opacity:.85}));pasek(12,'tlen w głębi',e[2],e[2]<30?'#c0392b':'#2e8b57');pasek(36,'przejrzystość',e[3],'#3b6fd6');
+    out.className='bv-info'+(k===4?' bad':'');out.innerHTML='<b>'+e[0]+'</b>'+e[1]+(k===4?' <em>Zapobieganie: mniej nawozów i w odpowiednim czasie, pasy zieleni wzdłuż brzegów, oczyszczalnie ścieków usuwające fosfor, detergenty bez fosforanów.</em>':'')}
+  rng.addEventListener('input',rys);rys()}});
+
+BIO.define('homeostaza',{opis:'Homeostaza i ujemne sprzężenie zwrotne: poziom glukozy we krwi (posiłek → insulina, głód/wysiłek → glukagon, tryb cukrzycy typu 1) albo temperatura ciała (upał → pocenie i rozszerzenie naczyń, zimno → dreszcze i zwężenie naczyń); wykres w czasie z pasem normy i schemat pętli regulacji',
+mount:function(el,o){
+  var M={glu:{n:'glukoza we krwi',j:'mg/dl',b:90,lo:60,hi:200,pas:[70,140],
+      z:[['🍞 posiłek',60,'Po posiłku glukoza z jelita trafia do krwi. <strong>Trzustka</strong> wykrywa wzrost i wydziela <strong>insulinę</strong> → komórki (mięśnie, wątroba) pobierają glukozę, wątroba magazynuje ją jako glikogen → poziom wraca do normy.'],
+         ['🏃 głód / wysiłek',-28,'Glukoza jest zużywana, poziom spada. <strong>Trzustka</strong> wydziela <strong>glukagon</strong> → wątroba rozkłada glikogen do glukozy i oddaje ją do krwi → poziom wraca do normy.']]},
+    tem:{n:'temperatura ciała',j:'°C',b:36.6,lo:35.4,hi:38.2,pas:[36,37],
+      z:[['☀ upał / wysiłek',.9,'Ciało się nagrzewa. Czujniki w skórze i krwi → <strong>podwzgórze</strong> (ośrodek termoregulacji) → <strong>pocenie</strong> (parowanie potu chłodzi) i <strong>rozszerzenie naczyń skóry</strong> (skóra czerwienieje, oddaje ciepło) → temperatura spada do normy.'],
+         ['❄ zimno',-.7,'Ciało traci ciepło. <strong>Podwzgórze</strong> uruchamia <strong>dreszcze</strong> (skurcze mięśni wytwarzają ciepło), <strong>zwężenie naczyń skóry</strong> (blada skóra, mniej ciepła ucieka) i „gęsią skórkę” → temperatura rośnie do normy.']]}};
+  var tryb=o.start==='temperatura'?'tem':'glu',cuk=false,H1=[],tools=H('div','bv-tools'),t2=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');[tools,t2,pic,out].forEach(function(x){el.appendChild(x)});
+  var bG=btn('glukoza',function(){ustaw('glu')}),bT=btn('temperatura',function(){ustaw('tem')}),bC=btn('cukrzyca typu 1: nie',function(){cuk=!cuk;bC.textContent='cukrzyca typu 1: '+(cuk?'tak':'nie');bC.classList.toggle('on',cuk);ustaw('glu')});
+  tools.appendChild(bG);tools.appendChild(bT);tools.appendChild(bC);
+  function ustaw(t){tryb=t;BIO.fx.toggle([bG,bT],t==='glu'?0:1);bC.style.display=t==='glu'?'':'none';var m=M[t];H1=[];for(var i=0;i<6;i++)H1.push(cuk&&t==='glu'?160:m.b);
+    t2.innerHTML='';m.z.forEach(function(z){t2.appendChild(btn(z[0],function(){zdarz(z)}))});rys(null)}
+  function zdarz(z){var m=M[tryb],v=H1[H1.length-1],cel=m.b;
+    for(var i=1;i<=3;i++)H1.push(v+z[1]*i/3);v=H1[H1.length-1];
+    var k=(tryb==='glu'&&cuk)?(z[1]>0?.97:.6):.62,dol=(tryb==='glu'&&cuk)?(z[1]>0?170:110):cel;
+    for(var j=0;j<10;j++){v=dol+(v-dol)*k;H1.push(v)}while(H1.length>40)H1.shift();rys(z)}
+  function rys(z){var m=M[tryb];pic.innerHTML='';var s=svg(440,190,'Wykres: '+m.n+' w czasie');pic.appendChild(s);
+    var X0=46,X1=430,Y0=20,Y1=170,y=function(v){return Y1-(Math.max(m.lo,Math.min(m.hi,v))-m.lo)/(m.hi-m.lo)*(Y1-Y0)},x=function(i){return X0+i*(X1-X0)/39};
+    s.appendChild(S('rect',{x:X0,y:y(m.pas[1]),width:X1-X0,height:y(m.pas[0])-y(m.pas[1]),fill:'#dff1e3'}));s.appendChild(T(X1-4,y(m.pas[1])+11,'norma (orientacyjnie)',{s:10,a:'end',f:'#2e7d4f'}));
+    s.appendChild(S('line',{x1:X0,y1:Y1,x2:X1,y2:Y1,stroke:'#8c959f'}));s.appendChild(S('line',{x1:X0,y1:Y0,x2:X0,y2:Y1,stroke:'#8c959f'}));
+    [m.lo,m.pas[0],m.pas[1],m.hi].forEach(function(v){s.appendChild(T(X0-5,y(v),tryb==='tem'?v.toFixed(1).replace('.',','):v,{s:10,a:'end',w:600}))});
+    s.appendChild(T(X0,Y0-9,m.n+' ['+m.j+']',{s:11,a:'start'}));s.appendChild(T(X1,Y1+14,'czas →',{s:10,a:'end'}));
+    var d=H1.map(function(v,i){return(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)}).join(' ');s.appendChild(S('path',{d:d,fill:'none',stroke:'#c0392b','stroke-width':2.5}));
+    var kroki=tryb==='glu'?['bodziec','trzustka (czujnik + ośrodek)',z&&z[1]<0?'glukagon → wątroba':'insulina → komórki, wątroba','poziom wraca']:['bodziec','czujniki → podwzgórze',z&&z[1]<0?'dreszcze, zwężenie naczyń':'pot, rozszerzenie naczyń','temperatura wraca'];
+    var rz=H('div','',null);rz.style.cssText='display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-top:6px;font:700 12px/1.35 Inter,system-ui,sans-serif';
+    kroki.forEach(function(t,i){var k=H('span','',t);k.style.cssText='flex:1 1 90px;padding:6px 8px;border:1px solid #8c959f;border-radius:8px;text-align:center;background:'+(z?'#eef3fb':'#f3f4f6')+';color:#1a2332';rz.appendChild(k);
+      if(i<3){var st=H('span','','→');st.style.cssText='color:#8c959f';rz.appendChild(st)}});
+    var pw=H('span','','↺ ujemne sprzężenie zwrotne: skutek wyłącza bodziec');pw.style.cssText='flex:1 1 100%;color:#2e7d4f;font-weight:600;text-align:center';rz.appendChild(pw);pic.appendChild(rz);
+    out.className='bv-info'+(cuk&&tryb==='glu'&&H1[H1.length-1]>140?' bad':'');
+    out.innerHTML=z?'<b>'+z[0].replace(/^\S+ /,'')+'</b>'+(cuk&&tryb==='glu'?(z[1]>0?'Przy cukrzycy typu 1 trzustka nie wytwarza insuliny — glukoza po posiłku zostaje we krwi (hiperglikemia). Dlatego chorzy podają sobie insulinę.':'Glukagon nadal działa, ale bez insuliny poziom i tak zostaje wysoki.'):z[2])+' <em>To ujemne sprzężenie zwrotne: skutek działania hamuje jego przyczynę.</em>'
+      :'<b>Homeostaza = utrzymywanie stałych warunków</b>Wybierz zdarzenie i obserwuj wykres: odchylenie od normy uruchamia pętlę regulacji (schemat pod wykresem), która przywraca wartość do pasa normy. Kliknięcie kolejnego zdarzenia dopisuje dalszy ciąg wykresu.'}
+  ustaw(tryb)}});
+
+BIO.define('endosymbioza',{opis:'Teoria endosymbiozy w 4 krokach (wstecz/dalej): komórka-gospodarz pochłania bakterię tlenową (i sinicę) → bakteria żyje w pęcherzyku (dwie błony) → staje się mitochondrium (chloroplastem) z własnym kolistym DNA i rybosomami jak u bakterii; karty argumentów (cecha → obserwacja → wniosek)',
+mount:function(el,o){
+  var k=0,tools=H('div','bv-tools'),pic=H('div'),arg=H('div','bv-grid c2'),out=H('div','bv-info');[tools,pic,out,arg].forEach(function(x){el.appendChild(x)});arg.style.marginTop='10px';
+  var prev=btn('◀ wstecz',function(){if(k>0){k--;rys()}}),next=btn('dalej ▶',function(){if(k<3){k++;rys()}}),lab=H('span','bv-score','');[prev,next,lab].forEach(function(x){tools.appendChild(x)});
+  var KR=[['1. Dawna komórka-gospodarz','Duża komórka z jądrem (lub jej przodek) żyje obok drobnych bakterii: tlenowych (umieją wydajnie oddychać tlenem) i sinic (prowadzą fotosyntezę).'],
+   ['2. Pochłonięcie','Gospodarz pochłania bakterię jak pokarm — błona komórkowa gospodarza otacza ją i tworzy pęcherzyk. Bakteria <strong>nie zostaje strawiona</strong>.'],
+   ['3. Wspólne życie','Bakteria żyje w środku: daje gospodarzowi dużo energii (ATP), dostaje schronienie i pokarm. Ma teraz <strong>dwie błony</strong>: własną (wewnętrzną) i z pęcherzyka gospodarza (zewnętrzną).'],
+   ['4. Organellum','Przez pokolenia bakteria traci samodzielność (część jej genów przechodzi do jądra) i staje się <strong>mitochondrium</strong>. W ten sam sposób z sinicy powstał <strong>chloroplast</strong> u przodków roślin.']];
+  function bakt(s,x,y,c,dna,blona2,rybo){var g=S('g',{});if(blona2)g.appendChild(S('ellipse',{cx:x,cy:y,rx:31,ry:19,fill:'none',stroke:'#7aa66a','stroke-width':2,'stroke-dasharray':'5 3'}));
+    g.appendChild(S('ellipse',{cx:x,cy:y,rx:25,ry:14,fill:c[0],stroke:c[1],'stroke-width':2}));if(dna)g.appendChild(S('circle',{cx:x-6,cy:y,r:6,fill:'none',stroke:'#c0392b','stroke-width':1.6}));
+    if(rybo)[[8,-4],[12,4],[4,6]].forEach(function(q){g.appendChild(S('circle',{cx:x+q[0],cy:y+q[1],r:1.8,fill:'#1a2332'}))});s.appendChild(g);return g}
+  var MI=['#f7d9b8','#c0602c'],SI=['#cfe8c0','#3f7a28'];
+  function rys(){lab.textContent='krok '+(k+1)+' / 4';var s=svg(440,210,KR[k][0]);pic.innerHTML='';pic.appendChild(s);
+    s.appendChild(S('ellipse',{cx:200,cy:108,rx:150,ry:90,fill:'#f4f8f1',stroke:'#7aa66a','stroke-width':2.5}));s.appendChild(S('ellipse',{cx:150,cy:100,rx:38,ry:30,fill:'#ece4f6',stroke:'#9a7fc0','stroke-width':1.6}));s.appendChild(T(150,100,'jądro',{s:11}));
+    s.appendChild(T(200,12,'komórka-gospodarz',{s:12,w:800}));
+    if(k===0){bakt(s,400,70,MI,1,0,1);s.appendChild(T(400,100,'bakteria tlenowa',{s:10.5}));bakt(s,400,160,SI,1,0,1);s.appendChild(T(400,190,'sinica',{s:10.5}))}
+    if(k===1){s.appendChild(S('path',{d:'M350 108 q-10 -40 -50 -42 q-20 2 -26 30',fill:'none',stroke:'#7aa66a','stroke-width':2.5}));s.appendChild(S('path',{d:'M350 108 q-10 40 -50 42 q-20 -2 -26 -30',fill:'none',stroke:'#7aa66a','stroke-width':2.5}));bakt(s,310,108,MI,1,0,1);s.appendChild(T(395,108,'„połknięcie”',{s:11,w:700}))}
+    if(k>=2){var m=bakt(s,270,72,MI,1,1,1);m.setAttribute('data-k','mito');var c=bakt(s,270,150,k===3?SI:SI,1,1,1);c.setAttribute('data-k','chloro');
+      s.appendChild(T(270,104,k===3?'mitochondrium':'bakteria w pęcherzyku',{s:10.5,w:700}));s.appendChild(T(270,182,k===3?'chloroplast (u roślin)':'sinica w pęcherzyku',{s:10.5,w:700}));
+      s.appendChild(T(330,60,'2 błony',{s:10,a:'start',f:'#3d6b2c',w:700}));s.appendChild(T(240,60,'DNA',{s:10,a:'end',f:'#c0392b',w:700}))}
+    if(k===3){s.appendChild(S('path',{d:'M248 82 q-40 10 -66 16',fill:'none',stroke:'#9a7fc0','stroke-width':1.5,'stroke-dasharray':'3 3'}));s.appendChild(T(208,120,'część genów → jądro',{s:10,f:'#6b4fa0'}))}
+    out.className='bv-info';out.innerHTML='<b>'+KR[k][0]+'</b>'+KR[k][1];prev.disabled=k===0;next.disabled=k===3;
+    BIO.fx.info(pic,out,{mito:['Mitochondrium',' Ma dwie błony, własne koliste DNA (mtDNA) i rybosomy podobne do bakteryjnych; powstaje tylko z innego mitochondrium przez podział.'],chloro:['Chloroplast',' Też dwie błony, koliste DNA (cpDNA), rybosomy jak u bakterii; jego przodkiem była sinica.']})}
+  [['Dwie błony','Zewnętrzna przypomina błonę gospodarza, wewnętrzna — błonę bakterii.','ślad pochłonięcia w pęcherzyku'],
+   ['Własne DNA','Koliste, bez histonów — jak u bakterii, nie jak w jądrze.','dawny samodzielny organizm'],
+   ['Własne rybosomy','Mniejsze, podobne do bakteryjnych (70S); niektóre antybiotyki działają na nie jak na bakterie.','pokrewieństwo z bakteriami'],
+   ['Podział jak bakteria','Nowe mitochondria i chloroplasty powstają tylko z istniejących, przez podział; komórka nie umie ich zrobić od zera.','zachowana samodzielność rozmnażania'],
+   ['Rozmiar','Wielkość zbliżona do bakterii (ok. 1–10 µm).','pasuje do pochodzenia od bakterii']].forEach(function(a){
+    arg.appendChild(H('div','bv-tile','<h6>'+a[0]+'</h6><p><strong>Obserwacja:</strong> '+a[1]+'</p><p><strong>Wniosek:</strong> '+a[2]+'.</p>'))});
+  var u=H('p','bv-score','Argumenty wspierają teorię (dziś powszechnie przyjętą), ale to wnioskowanie z wielu obserwacji, a nie „bezpośrednie nagranie” sprzed ok. 1,5–2 mld lat (orientacyjnie).');u.style.fontWeight='600';el.appendChild(u);
+  rys()}});
+
+BIO.define('hardy-weinberg',{opis:'Prawo Hardy’ego–Weinberga: suwak częstości allelu recesywnego q (albo częstości chorych q²), obliczenia p = 1 − q, p², 2pq, q² krok po kroku, słupki genotypów AA, Aa, aa w populacji 10 000 osób; przykład choroby recesywnej (np. 1 chory na 2500 → ok. 1 nosiciel na 25)',
+mount:function(el,o){
+  var tryb='q',tools=H('div','bv-tools'),t2=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');[tools,t2,pic,out].forEach(function(x){el.appendChild(x)});
+  var bQ=btn('znam q (allel a)',function(){tryb='q';ust()}),bC=btn('znam częstość chorych (aa)',function(){tryb='c';ust()});tools.appendChild(bQ);tools.appendChild(bC);
+  var rng=document.createElement('input');rng.type='range';rng.style.flex='1 1 180px';var lab=H('span','bv-score','');t2.appendChild(rng);t2.appendChild(lab);
+  var CH=[[1,4],[9,100],[1,25],[1,100],[1,400],[1,2500],[1,10000]];
+  function ust(){BIO.fx.toggle([bQ,bC],tryb==='q'?0:1);if(tryb==='q'){rng.min=0;rng.max=100;rng.value=30;rng.setAttribute('aria-label','Częstość allelu a (q)')}else{rng.min=0;rng.max=CH.length-1;rng.value=5;rng.setAttribute('aria-label','Częstość chorych aa')}rys()}
+  function f(x,d){return x.toFixed(d).replace('.',',')}
+  function rys(){var q,kroki;if(tryb==='q'){q=rng.value/100;lab.textContent='q = '+f(q,2);kroki='q = '+f(q,2)+' → p = 1 − q = '+f(1-q,2)}
+    else{var c=CH[+rng.value],q2=c[0]/c[1];q=Math.sqrt(q2);lab.textContent='chorych (aa): '+c[0]+' na '+fmt(c[1]);kroki='q² = '+c[0]+'/'+fmt(c[1])+' = '+String(+q2.toFixed(4)).replace('.',',')+' → q = √q² = '+f(q,3)+' → p = 1 − q = '+f(1-q,3)}
+    var p=1-q,G=[['AA (p²)',p*p,'#3f7a28'],['Aa (2pq) — nosiciele',2*p*q,'#e09b3d'],['aa (q²)',q*q,'#c0392b']];
+    pic.innerHTML='';var s=svg(360,150,'Częstości genotypów w populacji');pic.appendChild(s);
+    G.forEach(function(g,i){var y=14+i*44,w=Math.max(1,g[1]*190);s.appendChild(T(4,y+10,g[0],{s:12.5,a:'start',w:700}));s.appendChild(S('rect',{x:4,y:y+18,width:190,height:16,rx:4,fill:'#e3e7ec'}));s.appendChild(S('rect',{x:4,y:y+18,width:w,height:16,rx:4,fill:g[2]}));
+      s.appendChild(T(202,y+26,f(g[1]*100,g[1]<.01?2:1)+'% · ok. '+fmt(Math.round(g[1]*10000))+' os.',{s:12,a:'start'}))});
+    var nos=2*p*q;out.className='bv-info';out.innerHTML='<b>'+kroki+'</b>p² + 2pq + q² = '+f(p*p,3)+' + '+f(nos,3)+' + '+f(q*q,q*q<.001?4:3)+' = 1. W populacji 10 000 osób: nosicieli (Aa) ok. '+fmt(Math.round(nos*10000))+(nos>0&&q*q>0?' — to <strong>'+(nos/(q*q)>=1.5?'ok. '+fmt(Math.round(nos/(q*q)))+' razy więcej':'mniej więcej tyle samo')+'</strong> niż chorych; '+(nos>0?'nosicielem jest średnio 1 osoba na '+fmt(Math.round(1/nos)):'')+'.':'.')+
+      ' <em>Model działa przy dużej populacji, bez doboru, mutacji i migracji oraz przy losowym kojarzeniu.</em>'}
+  rng.addEventListener('input',rys);ust()}});
+
 })();
 
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,

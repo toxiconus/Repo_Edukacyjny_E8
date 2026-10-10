@@ -98,6 +98,9 @@ DNA → (transkrypcja) → mRNA → (translacja) → białko
 
 **Zadanie:** Sekwencja DNA: TAC GCA TGG. Jaka sekwencja mRNA? (Odp.: AUG CGU ACC.)
 
+@viz kod-genetyczny | Kod genetyczny: DNA → mRNA → białko i skutki mutacji | kliknij zasadę w nici kodującej
+@opis Nić kodująca i matrycowa DNA, pod nimi mRNA w kodonach i aminokwasy (Met, Phe, Gly, Trp, Lys, Cys, STOP). Kliknięcie zasady zmienia ją i panel nazywa skutek: mutacja cicha (ten sam aminokwas — degeneracja kodu), zmiany sensu (inny aminokwas), nonsensowna (przedwczesny STOP, białko skrócone) albo utrata START; przycisk przywraca sekwencję. Wniosek: kod jest trójkowy, jednoznaczny i zdegenerowany, a skutek mutacji punktowej zależy od tego, w który kodon i w którą pozycję trafi.
+
 ### 4.3. Prawa Mendla formalnie
 
 **I prawo (rozszczepienia):** allele rozchodzą się do gamet.
@@ -140,6 +143,9 @@ p² + 2pq + q² = 1
 **Zadanie:** q² = 0,09 → q = 0,3 → p = 0,7. Ile Aa? (Odp.: 2pq = 2·0,7·0,3 = 0,42.)
 
 **Kiedy model nie działa:** mała populacja, dobór, dryf, migracja.
+
+@viz hardy-weinberg | Hardy–Weinberg: od chorych do nosicieli | tryb „znam q” albo „znam częstość chorych”; przesuń suwak
+@opis Dwa tryby z suwakiem. „Znam q”: częstość allelu a od 0 do 1. „Znam częstość chorych”: q² do wyboru suwakiem (1 na 4, 9 na 100, 1 na 25, 1 na 100, 1 na 400, 1 na 2500, 1 na 10 000). Panel pokazuje obliczenia krok po kroku (q² → q = √q² → p = 1 − q) i sprawdzenie p² + 2pq + q² = 1. Trzy poziome słupki: AA (zielony, p²), Aa — nosiciele (pomarańczowy, 2pq), aa (czerwony, q²) z procentem i liczbą osób w populacji 10 000. Dla 1 chorego na 2500 wychodzi q = 0,02, nosicieli ok. 3,9% (1 osoba na 26) — ok. 98 razy więcej niż chorych. Wniosek: przy rzadkiej chorobie recesywnej nosicieli jest wielokrotnie więcej niż chorych; obliczenia zakładają dużą populację bez doboru, mutacji i migracji oraz losowe kojarzenie.
 
 ### 4.6. Mapowanie genów
 

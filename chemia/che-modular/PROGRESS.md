@@ -71,3 +71,4 @@
 - 2026-10-10 13:30 Silnik: przycinanie martwych reguł CSS w profilach (tools/css_martwe.py) + odcisk wyglądu tools/styl_odcisk.cjs (390/1280 px identyczny); dist/jeden_plik 20,96 → 20,31 MB; test lekcji OK 15.
 - 2026-10-10 15:30 BIO: 4 nowe grafiki w bio-viz.js (relacje-ekologiczne L042 + roślinożerność w treści, konczyny-homologiczne L030, energia-materia L040, zrodla-zmiennosci L016A) z @opis; test w przeglądarce 390/900 px bez błędów.
 - 2026-10-10 16:20 BIO: grafiki kontrola-podzialow (L016), eutrofizacja (L043), homeostaza (L002) z @opis; test przeglądarki 390/900 bez błędów.
+- 2026-10-10 17:00 BIO: grafiki endosymbioza (L001A), hardy-weinberg (L090); istniejące grafiki w powtórkach L021, L032, L044, L050 i kod-genetyczny w L090; ulepszona siec-troficzna (puszczyk bez mylącej strzałki przez wilka, większe węzły i napisy); przebudowane wszystkie lekcje BIO, 0 błędów w przeglądarce.

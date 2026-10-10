@@ -21,6 +21,9 @@
 ## Zakres
 Do tego dodatku przenosimy trudniejsze treści obecne już w materiale: mtDNA, cpDNA, podwójne błony, własne rybosomy, podobieństwa do bakterii i argumenty za teorią endosymbiozy.
 
+@viz endosymbioza | Teoria endosymbiozy: skąd w komórce mitochondria i chloroplasty | przyciski wstecz / dalej; pod grafiką karty argumentów
+@opis Cztery kroki na jednej komórce-gospodarzu z fioletowym jądrem. 1 — obok komórki pomarańczowa bakteria tlenowa i zielona sinica (każda z czerwonym kolistym DNA i kropkami rybosomów). 2 — błona gospodarza otacza bakterię („połknięcie”). 3 — bakteria i sinica wewnątrz, każda otoczona drugą, przerywaną błoną z pęcherzyka (podpisy „2 błony”, „DNA”). 4 — stają się mitochondrium i chloroplastem, przerywana strzałka „część genów → jądro”. Pod grafiką pięć kart w układzie obserwacja → wniosek: dwie błony, własne koliste DNA, rybosomy podobne do bakteryjnych, podział jak u bakterii, rozmiar bakterii; uwaga, że to wnioskowanie z wielu obserwacji (zdarzenie sprzed ok. 1,5–2 mld lat, orientacyjnie). Wniosek: mitochondria i chloroplasty pochodzą od dawnych bakterii żyjących wewnątrz komórki gospodarza.
+
 ### Zasada
 To jest **poziom ambitny/MASTER**, a nie wiedza konieczna do pierwszego opanowania budowy komórki.
 
