@@ -158,6 +158,9 @@ Przykłady: powietrze (mieszanina gazów), woda z piaskiem, herbata, mleko, woda
 | właściwości składników | zachowane | nowe, inne niż pierwiastków |
 | rozdzielanie | metody fizyczne | tylko reakcja chemiczna |
 | przykład z Fe i S | szary proszek z żółtymi drobinkami; magnes wyciąga Fe | FeS — czarna masa, magnes nie przyciąga |
+
+@model f02-magnes-fes-v01 | Magnes: mieszanina Fe + S czy związek FeS? | zbliż magnes do obu próbek
+@opis Dwa szkiełka zegarkowe obok siebie. Po lewej mieszanina: szare podłużne opiłki żelaza i żółte kuleczki siarki, widoczne osobno. Po prawej siarczek żelaza(II): jednolite czarne grudki. Nad każdym szkiełkiem czerwony magnes w woreczku; przycisk „Zbliż magnes” opuszcza magnesy — z mieszaniny opiłki żelaza odrywają się i przyczepiają do magnesu, a żółta siarka zostaje na szkiełku; z FeS nic się nie unosi. Panel pod rysunkiem podsumowuje wynik. Wniosek: w mieszaninie składniki zachowują swoje właściwości i można je rozdzielić metodą fizyczną (magnesem), a w związku chemicznym powstaje nowa substancja o innych właściwościach.
 :::
 
 ## 4 | Jednorodna i niejednorodna. Faza [[basic:E8]] {#jednorodnosc}
