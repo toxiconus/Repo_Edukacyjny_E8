@@ -93,6 +93,9 @@ Jeżeli masz zapamiętać tylko najważniejszy rdzeń przed dalszą nauką:
 
 ---
 
+@viz poziomy-dna | Chromosom → DNA → gen | kliknij elementy
+@opis Trzy powiększenia w kolejności: chromosom z zaznaczonym przerywaną ramką fragmentem → nić DNA nawinięta na kuliste histony → odcinek DNA podzielony na gen, region regulatorowy i fragment niekodujący; kliknięcie elementu pokazuje opis. Wniosek: chromosom to DNA upakowane na białkach, a gen zajmuje tylko część długości DNA.
+
 ## 1. Pytanie przewodnie
 
 **Jak bardzo długa cząsteczka DNA mieści się w małym jądrze i jak jest zorganizowana podczas podziału?**

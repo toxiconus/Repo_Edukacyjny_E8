@@ -32,6 +32,9 @@ Organizm wielokomórkowy jest zbudowany z komórek, które mogą się specjalizo
 
 **Uwaga:** atom i cząsteczka nie są poziomami organizacji biologicznej w takim samym sensie jak komórka, tkanka czy narząd; są elementami materii, z których zbudowane są struktury biologiczne.
 
+@viz lancuch {kroki="komórka|podstawowa jednostka > tkanka|komórki o podobnej budowie i funkcji > narząd|kilka tkanek, wspólna funkcja > układ narządów|narządy współpracujące > organizm|całość"} | Od komórki do organizmu | kliknij poziom
+@opis Łańcuch pięciu poziomów połączonych strzałkami: komórka (podstawowa jednostka) → tkanka (komórki o podobnej budowie i funkcji) → narząd (kilka tkanek, wspólna funkcja) → układ narządów (narządy współpracujące) → organizm (całość); kliknięcie poziomu pokazuje objaśnienie. Wniosek: każdy wyższy poziom składa się z elementów niższego, a organizm działa dzięki ich współpracy.
+
 ## 3. Specjalizacja komórek
 | Komórka | Przystosowanie | Główna funkcja |
 |---|---|---|

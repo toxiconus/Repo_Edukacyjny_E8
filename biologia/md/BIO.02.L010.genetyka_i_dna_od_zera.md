@@ -101,6 +101,9 @@ Dwaj bracia mają ten sam kolor oczu, ale różny wzrost. Dlaczego?
 
 ---
 
+@viz od-organizmu-do-genu | Od organizmu do genu | kliknij krok, aby zobaczyć wyjaśnienie
+@opis Łańcuch sześciu kroków z ikonami, od największego do najmniejszego: organizm (człowiek, roślina) → komórka (ok. 10–100 µm) → jądro (główne miejsce DNA) → chromosom (DNA + białka) → DNA (cząsteczka) → gen (odcinek DNA, wyróżniony); kliknięcie kroku pokazuje wyjaśnienie w ramce pod spodem. Wniosek: gen to mały odcinek DNA ukryty w chromosomie w jądrze każdej komórki.
+
 ## 6. Jak to działa?
 
 ### 6.1. Od genu do cechy

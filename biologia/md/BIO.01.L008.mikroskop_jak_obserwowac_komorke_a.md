@@ -40,6 +40,9 @@ Duże powiększenie nie gwarantuje dużej ilości nowych szczegółów.
 
 Może być zbyt mała, niewidoczna w danym preparacie, poza płaszczyzną ostrości albo niewybarwiona.
 
+@viz mikroskop-model | Obraz z mikroskopu a model szkolny | ta sama komórka liścia moczarki
+@opis Okrągłe pole widzenia mikroskopu świetlnego (ok. ×400, bez barwienia): jedna prostokątna komórka liścia moczarki z grubą ścianą komórkową, zielone owalne chloroplasty rozmieszczone przy ścianach, jasny pusty środek — wakuola; jądro słabo widoczne. Przyciski: „model szkolny” pokazuje tę samą komórkę jako uproszczony schemat z podpisami (ściana, błona, cytoplazma, jądro, chloroplasty, wakuola), „zabarw preparat” — jądro po barwieniu płynem Lugola staje się ciemniejszą plamką. Panel pod obrazem mówi, czego w mikroskopie świetlnym nie widać (rybosomy, szczegóły mitochondriów, błona obok ściany). Wniosek: w mikroskopie świetlnym widać tylko część struktur (ściana, chloroplasty, czasem jądro); model szkolny jest uproszczeniem, a nie zdjęciem — nie wszystko, co jest na modelu, zobaczysz w preparacie.
+
 ## 4. Rysunek biologiczny
 Dobry rysunek biologiczny powinien być czytelny, uproszczony, proporcjonalny i opatrzony podpisami. Nie jest artystycznym portretem preparatu.
 

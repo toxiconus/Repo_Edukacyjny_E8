@@ -81,6 +81,9 @@ Związki organiczne są później wykorzystywane w wielu reakcjach. Energia chem
 
 Roślina oddycha komórkowo zarówno w dzień, jak i w nocy. W świetle fotosynteza i oddychanie mogą zachodzić równocześnie. Nie należy mówić, że roślina „w dzień fotosyntetyzuje zamiast oddychać”.
 
+@viz fotosynteza-oddychanie | Fotosynteza i oddychanie w jednej komórce liścia | przesuń suwak światła i obserwuj wymianę gazów
+@opis Owalna komórka liścia; w środku zielony chloroplast z tylakoidami i czerwonawe mitochondrium z pofałdowaną błoną. Z lewej słońce, którego jasność zmienia suwak. Strzałki: glukoza płynie z chloroplastu do mitochondrium, tlen z chloroplastu do mitochondrium; po prawej strzałki wymiany gazów z otoczeniem, których grubość zależy od bilansu. W ciemności i przy słabym świetle liść pobiera O₂ i oddaje CO₂, w punkcie równowagi wymiana wynosi około zera, przy silnym świetle liść pobiera CO₂ i oddaje O₂. Wniosek: oddychanie zachodzi stale, a fotosynteza tylko przy świetle — to, czy liść wydziela tlen, zależy od przewagi jednego procesu nad drugim.
+
 ## 9. Czynniki wpływające na tempo fotosyntezy
 Tempo fotosyntezy może zależeć od natężenia i jakości światła, stężenia CO₂, temperatury, dostępności wody, stanu liścia i innych warunków. Jeśli jeden czynnik staje się ograniczający, zwiększenie innego nie musi już podnosić tempa procesu.
 

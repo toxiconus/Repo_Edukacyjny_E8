@@ -69,6 +69,9 @@ Przykłady:
 
 Fermentacja nie jest tym samym co oddychanie tlenowe i zwykle daje znacznie mniej ATP z jednej cząsteczki glukozy. Nie wszystkie organizmy ani komórki korzystają z tych samych szlaków.
 
+@viz energia-glukozy | Ile energii z jednej cząsteczki glukozy? | oddychanie tlenowe a fermentacja
+@opis Trzy poziome słupki: oddychanie tlenowe (czerwony, długi — ok. 38 ATP), fermentacja alkoholowa (brązowy, krótki — ok. 2 ATP) i fermentacja mlekowa (niebieski, krótki — ok. 2 ATP); wartości szkolne, orientacyjne. Przyciski wybierają proces, a pod spodem pojawiają się warunki (z tlenem / bez tlenu), miejsce w komórce, produkty i przykłady organizmów. Wniosek: oddychanie tlenowe rozkłada glukozę do końca (CO₂ i H₂O) i daje wielokrotnie więcej energii niż fermentacja, w której część energii zostaje w alkoholu lub kwasie mlekowym.
+
 ## 8. Fotosynteza a oddychanie komórkowe
 | Cecha | Fotosynteza tlenowa | Oddychanie tlenowe |
 |---|---|---|
@@ -84,6 +87,9 @@ Nie są to procesy będące po prostu „odwróceniem” jeden drugiego w każdy
 Rośliny potrzebują ATP do transportu substancji, wzrostu, syntezy związków i utrzymywania komórek. Dlatego oddychają komórkowo w dzień i w nocy. W świetle fotosynteza i oddychanie mogą zachodzić jednocześnie.
 
 Fotosynteza nie jest odpowiednikiem „oddychania rośliny”. Fotosynteza wykorzystuje energię światła do syntezy związków organicznych, a oddychanie udostępnia energię z tych związków. Część związków powstałych w fotosyntezie może później zostać wykorzystana w oddychaniu.
+
+@viz fotosynteza-oddychanie | Fotosynteza i oddychanie w jednej komórce liścia | przesuń suwak światła i obserwuj wymianę gazów
+@opis Owalna komórka liścia; w środku zielony chloroplast z tylakoidami i czerwonawe mitochondrium z pofałdowaną błoną. Z lewej słońce, którego jasność zmienia suwak. Strzałki: glukoza płynie z chloroplastu do mitochondrium, tlen z chloroplastu do mitochondrium; po prawej strzałki wymiany gazów z otoczeniem, których grubość zależy od bilansu. W ciemności i przy słabym świetle liść pobiera O₂ i oddaje CO₂, w punkcie równowagi wymiana wynosi około zera, przy silnym świetle liść pobiera CO₂ i oddaje O₂. Wniosek: oddychanie zachodzi stale, a fotosynteza tylko przy świetle — to, czy liść wydziela tlen, zależy od przewagi jednego procesu nad drugim.
 
 ## 10. Klinika błędów
 | Błędne stwierdzenie | Poprawka i uzasadnienie |

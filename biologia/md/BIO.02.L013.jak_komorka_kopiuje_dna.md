@@ -140,6 +140,9 @@ Po fazie S:    1 chromosom = 2 cząsteczki DNA = 2 chromatydy (połączone centr
 
 Replikacja **podwaja** DNA i chromatydy, ale **nie** liczbę chromosomów (L012).
 
+@viz trener-nici {seq="AGTCCA"} | Trener: ułóż drugą nić | tryb DNA→DNA: A–T, C–G; tryb DNA→RNA: A–U, T–A, C–G, G–C
+@opis Trener z sekwencją AGTCCA: uczeń wybiera litery drugiej nici pod każdą zasadą, a program od razu ocenia odpowiedź; przełącznik trybu DNA→DNA (A–T, C–G) albo DNA→RNA (A–U, T–A, C–G, G–C). Wniosek: przy przepisywaniu na RNA zamiast T pojawia się U.
+
 ### 6A. Dlaczego?
 
 1. **Dlaczego przed podziałem?**  
