@@ -35,13 +35,15 @@
 
 Duże powiększenie nie gwarantuje dużej ilości nowych szczegółów.
 
+**Przykład:** dwa bardzo blisko leżące punkty po powiększeniu mogą nadal wyglądać jak jedna, tylko większa plamka. Obraz jest większy, ale szczegółów nie przybyło — potrzebna jest lepsza rozdzielczość, a nie samo większe powiększenie.
+
 ## 3. Zasada interpretacji
 > **Brak widoczności struktury pod mikroskopem nie oznacza, że struktura nie istnieje.**
 
 Może być zbyt mała, niewidoczna w danym preparacie, poza płaszczyzną ostrości albo niewybarwiona.
 
 @viz mikroskop-model | Obraz z mikroskopu a model szkolny | ta sama komórka liścia moczarki
-@opis Okrągłe pole widzenia mikroskopu świetlnego (ok. ×400, bez barwienia): jedna prostokątna komórka liścia moczarki z grubą ścianą komórkową, zielone owalne chloroplasty rozmieszczone przy ścianach, jasny pusty środek — wakuola; jądro słabo widoczne. Przyciski: „model szkolny” pokazuje tę samą komórkę jako uproszczony schemat z podpisami (ściana, błona, cytoplazma, jądro, chloroplasty, wakuola), „zabarw preparat” — jądro po barwieniu płynem Lugola staje się ciemniejszą plamką. Panel pod obrazem mówi, czego w mikroskopie świetlnym nie widać (rybosomy, szczegóły mitochondriów, błona obok ściany). Wniosek: w mikroskopie świetlnym widać tylko część struktur (ściana, chloroplasty, czasem jądro); model szkolny jest uproszczeniem, a nie zdjęciem — nie wszystko, co jest na modelu, zobaczysz w preparacie.
+@opis Okrągłe pole widzenia mikroskopu świetlnego (ok. ×400, bez barwienia): jedna prostokątna komórka liścia moczarki z grubą ścianą komórkową, zielone owalne chloroplasty rozmieszczone przy ścianach, jasny pusty środek — wakuola; jądro słabo widoczne. Przyciski: „model szkolny” pokazuje tę samą komórkę jako uproszczony schemat z podpisami (ściana, błona, cytoplazma, jądro, chloroplasty, wakuola), „zabarw preparat” — jądro po barwieniu (np. błękitem metylenowym; dobór barwnika zależy od preparatu) staje się ciemniejszą plamką. Panel pod obrazem mówi, czego w mikroskopie świetlnym nie widać (rybosomy, szczegóły mitochondriów, błona obok ściany). Wniosek: w mikroskopie świetlnym widać tylko część struktur (ściana, chloroplasty, czasem jądro); model szkolny jest uproszczeniem, a nie zdjęciem — nie wszystko, co jest na modelu, zobaczysz w preparacie.
 
 ## 4. Rysunek biologiczny
 Dobry rysunek biologiczny powinien być czytelny, uproszczony, proporcjonalny i opatrzony podpisami. Nie jest artystycznym portretem preparatu.
@@ -68,15 +70,18 @@ Nie. Najpierw trzeba rozważyć jakość preparatu, powiększenie, ostrość, wy
 | Element | Funkcja | Częsty błąd |
 |---|---|---|
 | Okular | część, przez którą patrzy obserwator; ma własne powiększenie | uznanie go za jedyny element powiększający |
-| Obiektyw | tworzy powiększony obraz preparatu | dotknięcie obiektywem szkiełka |
+| Obiektyw | tworzy pierwszy powiększony obraz preparatu; okular powiększa go dalej dla oka | dotknięcie obiektywem szkiełka |
 | Rewolwer | pozwala zmieniać obiektywy | obracanie go za obiektyw zamiast za uchwyt |
 | Stolik i zaciski | podtrzymują szkiełko | przesuwanie preparatu bez kontroli |
 | Źródło światła/lusterko | kieruje światło przez preparat | zbyt silne lub zbyt słabe oświetlenie |
 | Kondensor i przysłona (jeśli występują) | pomagają kształtować oświetlenie | traktowanie ich jako elementów powiększających |
 | Śruba makrometryczna | wykonuje większą zmianę ostrości | używanie jej nieostrożnie przy dużym powiększeniu |
 | Śruba mikrometryczna | precyzyjnie dostraja ostrość | oczekiwanie, że naprawi źle przygotowany preparat |
+| Statyw | stabilnie podtrzymuje cały mikroskop | przenoszenie mikroskopu jedną ręką lub za część optyczną |
 
 Konstrukcje mikroskopów różnią się. Uczeń powinien rozpoznawać elementy obecne w konkretnym urządzeniu i stosować instrukcję nauczyciela.
+
+**Mikroskop świetlny a elektronowy.** Szkolny mikroskop świetlny pozwala oglądać żywe komórki, ich granice, chloroplasty, czasem jądro. **Mikroskop elektronowy** zamiast światła używa wiązki elektronów — pokazuje dużo mniejsze struktury (rybosomy, budowę mitochondriów, wirusy), ale preparaty są specjalnie utrwalane, więc nie obserwuje się w nim żywych komórek.
 
 ## 8. Powiększenie całkowite — rachunek krok po kroku
 
@@ -88,7 +93,9 @@ Przykład: okular 10× i obiektyw 4× dają 40×; okular 10× i obiektyw 10× da
 
 ## 9. Pole widzenia i orientacja obrazu
 
-Przy większym powiększeniu zwykle widzimy mniejszy obszar preparatu. Dlatego obiekt łatwiej odnaleźć przy małym powiększeniu, a dopiero potem obejrzeć jego fragment dokładniej. W typowym mikroskopie złożonym obraz może być odwrócony względem ruchu preparatu: gdy przesuwasz szkiełko w jedną stronę, obraz obiektu pozornie przesuwa się w przeciwną. Sprawdź to na bezpiecznym preparacie i nie zakładaj, że każdy typ urządzenia działa identycznie.
+Przy większym powiększeniu zwykle widzimy mniejszy obszar preparatu. Dlatego obiekt łatwiej odnaleźć przy małym powiększeniu, a dopiero potem obejrzeć jego fragment dokładniej. W typowym mikroskopie złożonym obraz jest **odwrócony**: gdy przesuwasz szkiełko w prawo, obiekt na obrazie przesuwa się w lewo; gdy przesuwasz je ku sobie — obiekt idzie w przeciwną stronę. Żeby doprowadzić obiekt do środka pola widzenia, przesuwaj preparat w stronę, w której obiekt widzisz (przeciwnie do jego pozornego ruchu). Niektóre mikroskopy mają układ prostujący obraz — sprawdź na bezpiecznym preparacie.
+
+**Szacowanie rzeczywistej wielkości:** jeśli znasz średnicę pola widzenia (np. 0,5 mm przy 100×), a komórka zajmuje jego część, mnożysz: komórka na ¼ średnicy → ok. 0,125 mm = 125 µm (wartość szacunkowa).
 
 ## 10. Preparat mikroskopowy — od próbki do obrazu
 
@@ -98,6 +105,10 @@ Przy większym powiększeniu zwykle widzimy mniejszy obszar preparatu. Dlatego o
 4. Osusz nadmiar cieczy z zewnętrznej krawędzi, jeśli jest to potrzebne.
 5. Nie używaj nieznanych odczynników ani materiału biologicznego bez instrukcji nauczyciela.
 6. Po obserwacji zutylizuj preparat zgodnie z poleceniem i oczyść stanowisko.
+
+**Preparat świeży (mokry)** robisz na lekcji tuż przed obserwacją (kropla wody, szkiełko nakrywkowe). **Preparat trwały** jest przygotowany wcześniej, zwykle fabrycznie, często wybarwiony i zabezpieczony do wielokrotnego użytku. **Barwienie** zwiększa kontrast, ale może zmienić wygląd struktur i zabić komórki — nie zawsze jest potrzebne.
+
+**Uwaga na artefakty.** Pęcherzyk powietrza ma zwykle okrągły kształt i wyraźną, ciemną obwódkę — nie jest komórką ani organellum. Kurz, porysowane szkiełko albo nierówna kropla wody też mogą udawać strukturę biologiczną. Jeśli podejrzewasz artefakt: zmień ostrość, przesuń preparat i porównaj z innymi polami widzenia.
 
 Nie każdy preparat powinien być mokry. Gotowe preparaty trwałe obserwuje się zgodnie z instrukcją.
 
@@ -150,6 +161,8 @@ Wniosek powinien wynikać z danych. Nie zapisuj jako obserwacji tego, co tylko p
 
 **Wniosek:** większe powiększenie zwykle pozwala oglądać szczegóły mniejszego fragmentu preparatu, ale obejmuje mniejszy obszar.
 
+**Zmienne:** badana — powiększenie obiektywu; kontrolowane — ten sam preparat, oświetlenie, sposób liczenia i miejsce obserwacji. **Porównanie:** ten sam obszar przy najmniejszym, a potem większym powiększeniu. **Ograniczenie:** liczba elementów zależy też od ich rozmieszczenia — wynik orientacyjny.
+
 **BHP:** przenoś mikroskop oburącz, nie używaj uszkodzonego przewodu ani urządzenia, nie obserwuj materiału nieznanego pochodzenia bez zgody nauczyciela.
 
 ## 16. Zadania — od podstawy do transferu
@@ -166,15 +179,19 @@ Wniosek powinien wynikać z danych. Nie zapisuj jako obserwacji tego, co tylko p
 **C. Analiza**
 6. Przy 400× obraz jest większy, ale nadal rozmyty. Wyjaśnij, dlaczego nie musi to oznaczać awarii powiększenia.
 7. Zapisz osobno obserwację i wniosek dla preparatu, w którym widoczne są granice komórek, ale wnętrze pozostaje niewyraźne.
+8. Średnica pola widzenia przy 100× wynosi 0,5 mm. Komórka zajmuje ok. ¼ średnicy pola. Oszacuj jej rzeczywistą długość.
+9. Uczeń widzi okrągły obiekt z ciemną obwódką i twierdzi, że odkrył nowe organellum. Podaj dwie przyczyny, dla których może to być artefakt, i sposób sprawdzenia.
 
 ### Klucz odpowiedzi
 1. 10 × 20 = **200×**.
 2. Łatwiej znaleźć obiekt; pole widzenia jest większe i łatwiej ustawić obraz.
 3. Powiększenie zwiększa pozorny rozmiar; rozdzielczość określa zdolność rozróżniania bliskich szczegółów.
 4. Wrócić do mniejszego powiększenia, ponownie wycentrować obiekt, sprawdzić ostrość i oświetlenie, a potem ostrożnie zwiększyć powiększenie.
-5. Usunąć niepotwierdzony szczegół albo oznaczyć, że jest to schemat teoretyczny, jeśli polecenie dopuszcza schemat zamiast rysunku obserwacyjnego.
+5. Usunąć niepotwierdzony szczegół z rysunku (rysunku obserwacyjnego nie uzupełnia się wiedzą z podręcznika); przypuszczenie można zapisać osobno, np. „Podejrzewam jądro, ale nie rozpoznałem go pewnie”.
 6. Powiększenie nie usuwa ograniczeń rozdzielczości ani błędów ostrości, oświetlenia czy przygotowania próbki.
 7. Przykład obserwacji: „Widzę wyraźne granice kilku komórek, ale wnętrze jest rozmyte”. Wniosek: „Nie można na tej podstawie wiarygodnie opisać wszystkich organelli”.
+8. ¼ × 0,5 mm ≈ 0,125 mm, czyli ok. 125 µm (szacunek — komórka może mieć nieregularny kształt).
+9. Pęcherzyk powietrza, zanieczyszczenie, rysa na szkiełku; zmienić ostrość, przesunąć preparat, obejrzeć inne pola widzenia i porównać z wyglądem pęcherzyka.
 
 ## 17. Fiszki
 
@@ -186,6 +203,9 @@ Wniosek powinien wynikać z danych. Nie zapisuj jako obserwacji tego, co tylko p
 - **Preparat:** próbka przygotowana do obserwacji.
 - **Obserwacja:** zapis tego, co rzeczywiście widać.
 - **Wniosek:** interpretacja wynikająca z obserwacji i wiedzy.
+- **Artefakt:** coś widocznego w preparacie, co nie pochodzi od badanego obiektu (pęcherzyk powietrza, zanieczyszczenie).
+- **Preparat świeży / trwały:** robiony tuż przed obserwacją / przygotowany wcześniej do wielokrotnego użytku.
+- **Barwienie:** zwiększa kontrast struktur, ale może zmienić wygląd komórki.
 
 ## 18. Transfer — gdzie ta wiedza się przydaje?
 
@@ -199,12 +219,15 @@ Podobne zasady stosuje się w diagnostyce laboratoryjnej, kontroli jakości żyw
 4. Przy większym powiększeniu pole widzenia zwykle maleje.
 5. Rysunek ma wiernie przedstawiać obserwację.
 6. Brak widoczności struktury nie jest sam w sobie dowodem jej nieobecności.
+7. W typowym mikroskopie złożonym obraz jest odwrócony względem ruchu preparatu.
+8. Pęcherzyk powietrza lub zanieczyszczenie może udawać strukturę biologiczną.
+9. Przy znanej średnicy pola widzenia można oszacować rzeczywisty rozmiar obiektu.
 
 ## 20. Test końcowy
 
 1. Okular 15× i obiektyw 10× dają: A) 25× B) 150× C) 1500×.
 2. Zdolność rozdzielcza oznacza: A) wielkość obrazu B) zdolność rozróżniania bliskich szczegółów C) jasność lampy.
-3. Dlaczego należy wycentrować obiekt przed zwiększeniem powiększenia?
+3. Dlaczego należy wycentrować obiekt przed zwiększeniem powiększenia? (1 pkt)
 4. Czy na rysunku obserwacyjnym wolno dopisać strukturę tylko dlatego, że występuje w typowej komórce? Uzasadnij.
 
 **Odpowiedzi:** 1. B; 2. B; 3. Pole widzenia maleje i obiekt łatwiej stracić z pola; 4. Nie, rysunek musi odpowiadać obserwacji, a przypuszczenia należy odróżnić od danych.
@@ -360,3 +383,7 @@ Mikroskop wymaga krytycznej interpretacji: artefakt preparatu, zabrudzenie lub p
 - Treść sprawdzono roboczo pod kątem spójności pojęć, odpowiedzi do zadań i oznaczeń poziomu.
 - Każdy schemat tekstowy ma linię `@opis` opisującą zawartość i główny wniosek.
 - **Ograniczenie:** to redakcyjno-merytoryczna kontrola robocza, nie niezależna recenzja nauczyciela biologii. Dane liczbowe lub mechanizmy wykraczające poza E8 należy weryfikować osobno przed publikacją.
+
+## AUDYT W1 + ulepszenia — Perplexity (2026-10-10)
+
+- Wprowadzone: barwnik jądra (np. błękit metylenowy, nie Lugol jako standard), rola obiektywu i okularu, statyw, mikroskop świetlny a elektronowy, obraz odwrócony (fakt, nie „może”), szacowanie wielkości z pola widzenia, preparat świeży i trwały, barwienie, artefakty, zmienne w ćwiczeniu, zadania 8–9 z kluczem, klucz 5, fiszki, podsumowanie 7–9.
