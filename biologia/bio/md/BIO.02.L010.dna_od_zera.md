@@ -39,7 +39,7 @@ stopka: **BIOLOGIA L010 v4.0** · Genetyka i DNA od zera · 2026
 :::
 
 ## 1 | Wprowadzenie — o co tu chodzi? {#wprowadzenie}
-Wyobraź sobie **książkę kucharską**. Każdy przepis mówi, jak zrobić konkretną potrawę. W każdej komórce twojego ciała jest taka „książka” — zapisana czterema symbolami: **A, T, C, G**. Ta książka nazywa się **DNA**.
+Wyobraź sobie **książkę kucharską**. Każdy przepis mówi, jak zrobić konkretną potrawę. W prawie każdej komórce twojego ciała jest taka „książka” (wyjątek: dojrzały erytrocyt — nie ma jądra ani mitochondriów) — zapisana czterema symbolami: **A, T, C, G**. Ta książka nazywa się **DNA**.
 
 ::: karta warning | Ważne uproszczenie
 DNA nie jest gotowym „projektem całego człowieka”, który działa samodzielnie. Cecha powstaje w wyniku **współdziałania wielu genów, środowiska oraz rozwoju organizmu**. Metafora „plan” albo „instrukcja” pomaga zrozumieć sens, ale nie jest dosłownym opisem.
@@ -66,6 +66,10 @@ Fragment DNA może być **genem**. Bardzo długa cząsteczka DNA wraz z białkam
 1. DNA przechowuje informację genetyczną.
 2. Gen jest określonym odcinkiem DNA.
 3. Chromosom jest uporządkowaną strukturą DNA związanego z białkami.
+:::
+
+::: karta extra | Ciekawostka — 2 metry w kilku mikrometrach
+DNA z jednej ludzkiej komórki, rozwinięte i ułożone w linii, miałoby ok. **2 m** długości — a mieści się w jądrze o średnicy kilku mikrometrów, bo jest ciasno nawinięte na białka (L012). To ok. **6 miliardów par zasad**; zapisane literami dałyby tekst rzędu kilku tysięcy grubych książek. DNA ze wszystkich komórek ciała razem to dziesiątki miliardów kilometrów (szacunek).
 :::
 
 ## 2 | Pytanie przewodnie i cele [[basic:E8]] {#cele}
@@ -125,9 +129,9 @@ Bracia: kolor oczu zależy głównie od odziedziczonych genów, a wzrost jest ce
 ### 5.2. Trzy szuflady cech
 | Rodzaj cechy | Co to | Przykład | Czy przechodzi na potomstwo? |
 |---|---|---|---|
-| **Dziedziczna** (głównie genetyczna) | silnie zależna od odziedziczonych wariantów genów (alleli) | grupa krwi ABO, daltonizm (L018/L019) | tak — przez geny |
+| **Dziedziczna** (głównie genetyczna) | silnie zależna od odziedziczonych wariantów genów (alleli) | grupa krwi ABO, daltonizm (L018/L019); kolor oczu — głównie genetyczny, ale zależy od kilku genów | tak — przez geny |
 | **Nabyta** | powstaje w ciągu życia pod wpływem środowiska, doświadczeń lub urazów | blizna, opalenizna, znajomość języka, styl życia | **nie** |
-| **Wieloczynnikowa** | współdziałanie wielu genów, środowiska i rozwoju | wzrost, masa ciała, ciśnienie, kolor skóry | geny tak, ale wynik zależy też od środowiska |
+| **Wieloczynnikowa** | współdziałanie wielu genów, środowiska i rozwoju | wzrost, masa ciała, ciśnienie, kolor skóry | przekazywane są geny wpływające na cechę, ale **nie gotowy wynik** — np. wzrost dziecka zależy też od warunków rozwoju |
 
 @viz szuflady-cech | Posortuj cechy | wybierz szufladę dla każdej cechy
 @opis Lista cech organizmu; przy każdej trzy przyciski-szuflady: dziedziczna, nabyta, wieloczynnikowa (geny + środowisko). Po wyborze przycisk się zaznacza, pojawia się ocena i krótkie wyjaśnienie, a licznik pokazuje liczbę trafień. Wniosek: nie każda cecha zależy tylko od genów — wiele powstaje z udziałem środowiska.
@@ -162,6 +166,18 @@ Bracia: kolor oczu zależy głównie od odziedziczonych genów, a wzrost jest ce
 | 8 | **Puryna + pirymidyna** | stała szerokość helisy |
 | 9 | **Deoksyryboza = DNA** | cukier (deoksy- = bez jednego tlenu) |
 | 10 | **T w DNA, U w RNA** | nie mylić |
+| 11 | **G-Ś-R: Geny, Środowisko, Rozwój** | z czego powstaje fenotyp |
+| 12 | **Gen → RNA → białko → funkcja → cecha** | od genu do cechy |
+| 13 | **J-M-C-N: Jądro, Mitochondria, Chloroplasty, Nukleoid** | gdzie jest DNA |
+| 14 | **Rekombinacja tasuje karty, mutacja zmienia literę** | dwa źródła zmienności |
+
+**Prosty test typu cechy:** gotowa „w genach” przed urodzeniem → **dziedziczna** (grupa krwi); powstała przez zdarzenie w życiu (uraz, nauka) → **nabyta** (blizna); zależy od genów, ale wynik zmienia środowisko → **wieloczynnikowa** (wzrost).
+
+**Szybki quiz:** 1. blizna po skaleczeniu, 2. grupa krwi, 3. wzrost, 4. znajomość języka obcego.
+
+::: odp | Odpowiedzi
+1. nabyta, 2. dziedziczna, 3. wieloczynnikowa, 4. nabyta.
+:::
 
 ## 6 | Od genu do cechy [[basic:E8]] {#gen-cecha}
 ### 6.1. Model podstawowy
@@ -189,7 +205,11 @@ To jest **model podstawowy**. W rzeczywistości:
 2. Środowisko (odżywianie, sen, aktywność, choroby) mogło być różne.
 3. Wzrost to cecha **wieloczynnikowa** → różnica jest możliwa mimo tych samych rodziców.
 
-**Klasyfikacja:** kolor oczu → dziedziczna; blizna → nabyta; wzrost → wieloczynnikowa; grupa krwi → dziedziczna.
+**Ciekawostka — bliźnięta jednojajowe** zaczynają życie z niemal takim samym DNA, ale z czasem różnią się niektórymi cechami: inne doświadczenia, styl życia, choroby, mutacje w komórkach ciała i zmiany w odczytywaniu genów. „Identyczne DNA” nie oznacza identycznego organizmu przez całe życie.
+
+**Zdanie-klucz:** gen nie jest cechą. Gen zawiera informację, która może wpłynąć na powstanie RNA lub białka, a cecha zależy też od innych genów, środowiska i rozwoju.
+
+**Klasyfikacja:** kolor oczu → głównie dziedziczna (wielogenowa); blizna → nabyta; wzrost → wieloczynnikowa; grupa krwi → dziedziczna.
 
 ## 7 | Czym jest DNA? [[basic:E8]] {#dna}
 **DNA = kwas deoksyrybonukleinowy.** To **cząsteczka chemiczna**, która przechowuje **informację genetyczną** — informację potrzebną do budowy i funkcjonowania organizmu. Najprościej: DNA to **nośnik informacji biologicznej**.
@@ -244,7 +264,11 @@ Przechowuje informację biologiczną, ale samo nie jest „żywym organizmem”.
 @opis Dwa schematy obok siebie i elementy do klikania: komórka zwierzęca (jądro, mitochondria), komórka roślinna (ściana, jądro, mitochondria, chloroplast), bakteria (nukleoid, plazmid) oraz krew (erytrocyt bez jądra, leukocyt z jądrem). Kliknięcie elementu mówi, czy jest w nim DNA. Wniosek: DNA jest głównie w jądrze, ale także w mitochondriach i chloroplastach, u bakterii w nukleoidzie i plazmidach; dojrzały erytrocyt człowieka nie ma DNA.
 
 ::: karta exam | Wyjątek — często na egzaminie
-**Dojrzały erytrocyt** człowieka (czerwona krwinka) nie ma jądra ani mitochondriów — dlatego **nie zawiera DNA**. Krew nadal może służyć do badania DNA: materiał pochodzi wtedy z **leukocytów** (białych krwinek), które mają jądro.
+**Dojrzały erytrocyt** człowieka (czerwona krwinka) nie ma jądra ani mitochondriów — dlatego **nie zawiera DNA**. Krew nadal może służyć do badania DNA: materiał pochodzi wtedy z **leukocytów** (białych krwinek), które mają jądro; w osoczu bywają też śladowe ilości wolnego DNA z innych komórek.
+:::
+
+::: karta extra | Ciekawostka — skąd mitochondria mają DNA
+Mitochondria prawdopodobnie pochodzą od dawnych bakterii wchłoniętych przez inne komórki (endosymbioza). Śladem tej historii jest ich własne, małe DNA, które u człowieka dziedziczy się niemal wyłącznie po matce — dlatego badania mtDNA pozwalają prześledzić linię matczyną: córka → matka → babka → prababka.
 :::
 
 ### 8.1. Dlaczego większość DNA eukariontów jest w jądrze?
@@ -263,6 +287,9 @@ To najczęstsze źródło pomyłek.
 | **DNA** | cała cząsteczka (cały materiał genetyczny) | cała książka kucharska |
 | **Gen** | odcinek DNA z informacją o produkcie (białku lub RNA) | jeden przepis |
 | **Chromosom** | struktura z długiej cząsteczki DNA i białek | jeden tom książki |
+| **Allel** | jedna z wersji danego genu (np. allel grupy krwi A albo B) | dwie wersje tego samego przepisu |
+
+**Kolejność do zapamiętania:** chromosom zawiera DNA, a w DNA są geny — nie odwrotnie. [[extra:AMBITNE]] Gen zajmuje w chromosomie stałe miejsce zwane **locus**. Człowiek ma w komórkach ciała **46 chromosomów (23 pary)** — ich uporządkowany obraz to **kariotyp**.
 
 @viz poziomy-dna | Chromosom → DNA → gen | kliknij elementy
 @opis Trzy powiększenia w kolejności: chromosom z zaznaczonym przerywaną ramką fragmentem → nić DNA nawinięta na kuliste histony → odcinek DNA podzielony na gen, region regulatorowy i fragment niekodujący; kliknięcie elementu pokazuje opis. Wniosek: chromosom to DNA upakowane na białkach, a gen zajmuje tylko część długości DNA.
@@ -284,6 +311,8 @@ DNA zawiera:
 - **sekwencje powtarzalne** — powtarzające się fragmenty o różnych funkcjach.
 
 **Wniosek:** „DNA = zbiór genów” to uproszczenie. Geny to tylko część DNA.
+
+**Ciekawostka:** człowiek ma ok. **20 000 genów kodujących białka** — znacznie mniej, niż sądzono przed odczytaniem genomu (zakładano nawet 100 000). Część genów koduje nie białka, ale funkcjonalne RNA, np. **rRNA** (buduje rybosomy) i **tRNA** (przynosi aminokwasy).
 
 ### 9.2. „Mam gen” ≠ „będę miał cechę” [[extra:AMBITNE]]
 - Gen może być nieaktywny w danej komórce (regulacja ekspresji).
@@ -321,8 +350,8 @@ DNA zawiera:
 
 **Reguła:** A–T (2 wiązania wodorowe) · C–G (3 wiązania wodorowe).
 1. **Wielkość zasad:** A i G to puryny (większe), T i C to pirymidyny (mniejsze). Para „duża + mała” zachowuje stałą szerokość helisy.
-2. **Układ miejsc wiązania:** nie każda duża pasuje do każdej małej. A–C ma dobrą szerokość, ale złe grupy chemiczne — nie tworzy prawidłowych wiązań wodorowych.
-3. **Wynik:** A–T tworzy 2 wiązania wodorowe, C–G — 3.
+2. **Układ miejsc wiązania:** nie każda duża pasuje do każdej małej. A–C ma dobrą szerokość, ale niewłaściwe rozmieszczenie grup chemicznych — nie tworzy stabilnych wiązań wodorowych; regularne takie pary zaburzałyby strukturę DNA.
+3. **Wynik:** A–T tworzy 2 wiązania wodorowe, C–G — 3. **Ciekawostka:** dlatego fragmenty DNA bogate w C i G trudniej rozdzielić (np. podgrzewaniem) niż bogate w A i T — wykorzystuje się to w laboratoriach przy kopiowaniu DNA.
 
 ### 10.3. Drabina DNA
 @viz drabina {seq="ATGCCA"} | Model drabiny | boki = szkielet cukrowo-fosforanowy, szczeble = pary zasad
@@ -348,7 +377,7 @@ Informacja jest w **kolejności zasad**, nie w pojedynczej literze ani w „kszt
 - Nici są antyrównoległe: 5′→3′ i 3′→5′. [[contest:ZAAW.]]
 - Średnica helisy ≈ 2 nm; jeden skręt ≈ 3,4 nm ≈ 10 par zasad. [[contest:ZAAW.]]
 
-**Po co helisa?** Jak **zamek błyskawiczny**: ma dwie pasujące części; po rozsunięciu każda może posłużyć jako wzór do odtworzenia drugiej. DNA ma dwie komplementarne nici — każda może być **matrycą** dla drugiej, dzięki czemu kopiowanie (replikacja, L013) jest wierne. **Struktura umożliwia funkcję.**
+**Po co helisa?** Jak **zamek błyskawiczny**: ma dwie pasujące części; po rozsunięciu każda może posłużyć jako wzór do odtworzenia drugiej. DNA ma dwie komplementarne nici — każda może być **matrycą** dla drugiej, dzięki czemu kopiowanie (replikacja, L013) i naprawa uszkodzeń są wierne. **Struktura umożliwia funkcję.**
 
 ### 10.6. Dlaczego? (budowa)
 1. **Dlaczego A łączy się z T, a nie z C?** Stała szerokość (puryna + pirymidyna) **i** chemiczny układ miejsc wiązania.
@@ -364,7 +393,7 @@ Informacja jest w **kolejności zasad**, nie w pojedynczej literze ani w „kszt
 
 > W DNA **nie ma U**. Jeśli widzisz U, to RNA.
 
-**Przykład prowadzony.** Matryca: `5′– A T G C C A –3′` → nić komplementarna: `3′– T A C G G T –5′`. Wszystkie pary poprawne. Po replikacji powstają 2 cząsteczki, każda = stara + nowa nić (semikonserwatywność, L013).
+**Przykład prowadzony.** Matryca: `5′– A T G C C A –3′` → nić komplementarna: `3′– T A C G G T –5′`. Wszystkie pary poprawne. **Zasada egzaminacyjna:** jeśli zadanie podaje końce 5′/3′, najpierw zapisz kierunki — nić komplementarna biegnie w przeciwną stronę (nie przepisuj jej „od tyłu”); jeśli kierunków nie ma, wystarczą poprawne pary A–T i C–G. Po replikacji powstają 2 cząsteczki, każda = stara + nowa nić (semikonserwatywność, L013).
 
 @viz trener-nici {seq="AGTCCA"} | Trener: ułóż drugą nić | tryb DNA→DNA: A–T, C–G; tryb DNA→RNA: A–U, T–A, C–G, G–C
 @opis Trener z sekwencją AGTCCA: uczeń wybiera litery drugiej nici pod każdą zasadą, a program od razu ocenia odpowiedź; przełącznik trybu DNA→DNA (A–T, C–G) albo DNA→RNA (A–U, T–A, C–G, G–C). Wniosek: przy przepisywaniu na RNA zamiast T pojawia się U.
@@ -393,6 +422,8 @@ Ten moduł chroni przed najczęstszymi błędami potocznymi. Jeśli w rozmowie o
 „Każda komórka ma DNA w jądrze.” || Dojrzały erytrocyt nie ma jądra ani mitochondriów; bakterie nie mają jądra.
 „DNA działa samo.” || Musi być odczytane przez maszynerię komórki (np. polimerazy, rybosomy).
 „DNA to dosłowna instrukcja obsługi.” || To metafora — nie ma tam ponumerowanych kroków; nie opisuje regulacji ani środowiska.
+„Wszystkie komórki mają ten sam DNA, więc są identyczne.” || Większość komórek ciała ma ten sam DNA, ale odczytuje różne jego fragmenty — dlatego neuron, komórka mięśniowa i nabłonkowa różnią się budową i funkcją (jak czytelnicy jednej biblioteki, którzy biorą różne książki).
+„Skoro mam DNA rodzica, jestem jego kopią.” || Od każdego rodzica dziecko dostaje połowę materiału genetycznego, a na fenotyp wpływa też środowisko i rozwój.
 :::
 
 ## 12 | Poziom ambitny [[extra:AMBITNE]] {#ambitny}
@@ -400,8 +431,8 @@ Ten moduł chroni przed najczęstszymi błędami potocznymi. Jeśli w rozmowie o
 Medycyna (diagnostyka chorób genetycznych), kryminalistyka (ślady DNA), testy pokrewieństwa, rolnictwo i hodowla, biotechnologia. Hodowca wybiera cechy **dziedziczne**, nie nabyte.
 
 ### 12.2. Zmienność — dwie szkolne szuflady
-- **Rekombinacyjna** — nowe układy alleli: mejoza, crossing-over, losowe łączenie gamet (L015).
-- **Mutacyjna** — zmiana w DNA (L020).
+- **Rekombinacyjna** — nowe **kombinacje istniejących** alleli (nie nowe allele): mejoza, crossing-over, losowe łączenie gamet (L015).
+- **Mutacyjna** — zmiana w DNA, która może dać nową wersję genu (L020). Mutacja w komórce ciała (**somatyczna**) nie przechodzi na potomstwo; w komórce, z której powstają gamety — może być dziedziczona.
 
 > Nie mieszaj: „mutacja” to nie każde „inne niż rodzic”.
 
@@ -425,7 +456,7 @@ Dlatego ta sama informacja genetyczna może dawać różne efekty w różnych ko
 ### 13.2. mtDNA — materiał genetyczny poza jądrem
 **mtDNA** (mitochondrialny DNA) to osobny materiał genetyczny w mitochondriach.
 - Ma kolisty kształt.
-- U człowieka dziedziczy się prawie zawsze po matce.
+- U człowieka dziedziczy się prawie zawsze po matce (bardzo rzadkie wyjątki — niepotrzebne na E8).
 - Koduje część białek mitochondrialnych.
 
 Konsekwencja: niektóre choroby dziedziczą się „po matce” — bo dotyczą właśnie mtDNA.
@@ -481,7 +512,7 @@ BHP: brak.
 ### 15.2. Klinika 2.0 — sześć pełnych przykładów
 ::: karta error | Przykład 1 — „DNA to plan organizmu, jak rysunek architekta”
 - **Znajdź:** potoczne uproszczenie metafory.
-- **Popraw:** DNA to cząsteczka chemiczna, która przechowuje zakodowaną informację.
+- **Popraw:** DNA to cząsteczka chemiczna, w której informacja jest zapisana w kolejności nukleotydów.
 - **Reguła:** DNA = nośnik, nie „gotowy plan”.
 - **Pułapka:** „plan” sugeruje gotowy rysunek — tak nie jest.
 :::
@@ -502,7 +533,7 @@ BHP: brak.
 :::
 ::: karta error | Przykład 5 — „A łączy się z C, bo obie mają odpowiednią szerokość”
 - **Znajdź:** pominięcie chemii grup.
-- **Popraw:** A–C ma odpowiednią szerokość, ale złe grupy chemiczne — nie tworzy prawidłowych wiązań wodorowych.
+- **Popraw:** A–C ma odpowiednią szerokość, ale niewłaściwe rozmieszczenie grup chemicznych — nie tworzy stabilnych wiązań wodorowych.
 - **Reguła:** para musi mieć szerokość **i** pasującą chemię.
 :::
 ::: karta error | Przykład 6 — „Skoro rodzice są wysocy, dziecko na pewno będzie wysokie”
@@ -519,14 +550,20 @@ BHP: brak.
 4. Co to DNA?
 5. Gdzie znajduje się większość DNA w komórce zwierzęcej?
 6. Czy zdanie „gen decyduje o cesze” jest precyzyjne?
+7. Uczeń zapisał: „Mam gen na wysoki wzrost, więc będę wysoki”. Dlaczego to nieprecyzyjne?
+8. Uzupełnij nić komplementarną: 5′–T A G C G A–3′ oraz 5′–G C A T T A–3′.
+9. Czy z krwi nie da się zbadać DNA, skoro erytrocyty go nie mają?
 
 ::: odp | Pokaż odpowiedzi
 1. Nauka o dziedziczeniu i zmienności.
-2. Dziedziczne: kolor oczu, grupa krwi; nabyte: blizna, znajomość języka.
+2. Dziedziczne: grupa krwi, kolor oczu (wielogenowy); nabyte: blizna, znajomość języka.
 3. Cecha zależna i od genów, i od środowiska (np. wzrost).
 4. Kwas deoksyrybonukleinowy — nośnik informacji genetycznej.
 5. W jądrze komórkowym (dodatkowo niewielka ilość w mitochondriach).
 6. Nie — gen współtworzy cechę razem z innymi genami, środowiskiem i rozwojem.
+7. Gen daje predyspozycję, nie gwarancję: wzrost zależy od wielu genów, odżywiania, snu, aktywności i rozwoju. Lepiej: „mam wariant genu, który może wpływać na wzrost”.
+8. 3′–A T C G C T–5′; 3′–C G T A A T–5′.
+9. Da się — DNA mają leukocyty (i śladowo osocze).
 :::
 
 ### 16B. Ćwiczenie prowadzone — klasyfikacja cech
@@ -571,7 +608,7 @@ Dane: kolor oczu, blizna, wzrost, grupa krwi, opalenizna, hemofilia.
 
 ::: odp | Pokaż odpowiedzi A–B
 1. Nauka o dziedziczeniu i zmienności.
-2. Dziedziczne: kolor oczu, grupa krwi. Nabyte: blizna, język.
+2. Dziedziczne: grupa krwi, kolor oczu (wielogenowy). Nabyte: blizna, język.
 3. Różnice między organizmami (osobnikami tego samego gatunku).
 4. Kwas deoksyrybonukleinowy — nośnik informacji.
 5. Głównie w jądrze; dodatkowo w mitochondriach (i chloroplastach u roślin); u bakterii w nukleoidzie.
@@ -652,7 +689,7 @@ Podstawa (3) · Trening (2) · Ambitny (2) · Zaawansowany (1) · Synteza (2)
 ::: odp | Pokaż odpowiedzi
 1. Kwas deoksyrybonukleinowy — nośnik informacji genetycznej.
 2. W jądrze komórkowym (dodatkowo w mitochondriach).
-3. Różnice między osobnikami; dziedziczne: grupa krwi, kolor oczu; nabyte: blizna, język.
+3. Różnice między osobnikami; dziedziczne: grupa krwi, kolor oczu (wielogenowy); nabyte: blizna, język.
 4. DNA → RNA → białko → cecha.
 5. DNA to nośnik informacji, nie gotowy organizm; blizna jest nabyta.
 6. Chromosom to struktura z długiej cząsteczki DNA z białkami — nie pudełko, do którego wkłada się geny. Gen jest fragmentem tej cząsteczki.
@@ -872,3 +909,9 @@ Erytrocyt :: czerwona krwinka; dojrzała nie ma jądra ani mitochondriów, więc
 - Zdanie o dojrzałym erytrocycie człowieka dotyczy typowej dojrzałej krwinki czerwonej: nie ma jądra i mitochondriów, dlatego nie zawiera własnego jądrowego DNA; próbka krwi zawiera DNA m.in. z leukocytów.
 - Model „DNA → RNA → białko → cecha” jest schematem pomocniczym, nie każda cząsteczka RNA jest tłumaczona na białko, a fenotyp zależy także od regulacji, środowiska i rozwoju.
 - **Status:** audyt celowany; pełna kontrola wszystkich ćwiczeń i kluczy pozostaje otwarta.
+
+## AUDYT W1 + ulepszenia — Perplexity (2026-10-10)
+
+- Wprowadzone: „prawie każda komórka” (erytrocyt), kolor oczu jako cecha wielogenowa, cechy wieloczynnikowe — dziedziczą się geny, nie wynik, wolne DNA w osoczu, A–C (stabilność), helisa ułatwia naprawę, zasada egzaminacyjna 5′/3′, rekombinacja = nowe kombinacje, mutacje somatyczne i w komórkach płciowych, allel, locus, kariotyp, rRNA/tRNA, Klinika 2.0 — kolejność nukleotydów, mity (te same DNA w komórkach, „kopia rodzica”), mnemotechniki G-Ś-R, gen→cecha, J-M-C-N, rekombinacja/mutacja, prosty test i quiz typów cech, ciekawostki (2 m DNA, liczba genów, wiązania C–G, bliźnięta, mtDNA i linia matczyna), mini-check 7–9.
+- Poprawione względem propozycji: łączna długość DNA człowieka to dziesiątki miliardów km, nie „biliony km”; 6 mld par zasad to tysiące książek, nie „kilkadziesiąt tomów encyklopedii”.
+- Nieprzyjęte: mnemotechnika „DNA = Dane Nie Autostrada” i „proste litery / haczyki” (mylące).

@@ -26,6 +26,8 @@ Komórka musi budować swoje składniki, transportować substancje, naprawiać s
 
 **Analogia:** glukoza jest jak banknot o dużym nominale, a ATP — jak drobne monety, którymi komórka płaci w wielu codziennych reakcjach. Komórka nie „wydaje” całej glukozy naraz: rozmienia jej energię na małe, łatwo dostępne porcje.
 
+**Mnemotechnika:** „Pokarm daje paliwo, tlen pozwala go wykorzystać sprawnie, ATP płaci za pracę.” **Zdanie do zapamiętania:** oddychanie nie „wytwarza energii z niczego” — przekształca energię chemiczną związków organicznych tak, żeby komórka mogła jej użyć.
+
 Uproszczone równanie sumaryczne oddychania tlenowego:
 
 `C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (część przekazana do ATP)`
@@ -44,17 +46,17 @@ ATP jest wykorzystywane m.in. do:
 
 ATP nie jest jedyną cząsteczką uczestniczącą w przekazywaniu energii i elektronów, ale jest kluczowym nośnikiem energii w wielu procesach komórkowych.
 
-**Ważne:** ATP nie jest paliwem ani magazynem energii organizmu — jest szybko zużywane i szybko odtwarzane (człowiek „przerabia” w ciągu doby masę ATP porównywalną z masą własnego ciała, a w danej chwili ma go tylko kilkadziesiąt gramów — wartości orientacyjne). Długoterminowe magazyny energii to m.in. tłuszcze i glikogen.
+**Ważne:** ATP nie jest paliwem ani magazynem energii organizmu — jest szybko zużywane i szybko odtwarzane (ciekawostka: człowiek „przerabia” w ciągu doby masę ATP porównywalną z masą własnego ciała, a w danej chwili ma go tylko kilkadziesiąt gramów — wartości orientacyjne; ATP jest jak waluta w stałym obiegu, nie jak skarbonka). Długoterminowe magazyny energii to m.in. tłuszcze i glikogen.
 
 ## 4. Gdzie zachodzi oddychanie?
 U organizmów eukariotycznych **glikoliza** — pierwszy etap rozkładu glukozy — zachodzi w cytozolu. Dalsze główne etapy oddychania tlenowego są związane z mitochondriami: w macierzy mitochondrialnej zachodzą m.in. reakcje utleniania pirogronianu i cykl kwasu cytrynowego, a w wewnętrznej błonie mitochondrialnej działa łańcuch transportu elektronów i syntaza ATP.
 
-**Uproszczona kolejność etapów u eukariontów:** glukoza → **glikoliza** (cytozol) → pirogronian → **utlenianie pirogronianu i cykl kwasu cytrynowego** (macierz mitochondrium) → **łańcuch transportu elektronów** (wewnętrzna błona mitochondrium) → większość ATP. To model uproszczony — bez cząsteczek pośrednich, enzymów i regulacji.
+**Mnemotechnika: „Cytoplazma zaczyna, mitochondrium dokańcza.”** **Uproszczona kolejność etapów u eukariontów:** glukoza → **glikoliza** (cytozol) → pirogronian → **utlenianie pirogronianu i cykl kwasu cytrynowego** (macierz mitochondrium) → **łańcuch transportu elektronów** (wewnętrzna błona mitochondrium) → większość ATP. To model uproszczony — bez cząsteczek pośrednich, enzymów i regulacji.
 
 Bakterie nie mają mitochondriów, ale wiele z nich prowadzi oddychanie z udziałem **błony komórkowej**, w której działają elementy łańcucha transportu elektronów. Dlatego nie wolno definiować oddychania komórkowego jako procesu, który zawsze zachodzi w mitochondriach.
 
 ## 5. Co robi tlen?
-W oddychaniu tlenowym tlen jest końcowym akceptorem elektronów w łańcuchu transportu elektronów. Umożliwia działanie tego układu i wydajne uzyskiwanie ATP. Glukoza dostarcza elektronów i energii chemicznej, a tlen **przyjmuje elektrony na końcu łańcucha** (łącząc się z nimi i z protonami w wodę). Dzięki temu łańcuch działa sprawnie i komórka wytwarza dużo więcej ATP. Tlen jest więc niezbędny, ale nie jest „spalany” jak drewno w ognisku.
+W oddychaniu tlenowym tlen jest końcowym akceptorem elektronów w łańcuchu transportu elektronów. Umożliwia działanie tego układu i wydajne uzyskiwanie ATP. Glukoza dostarcza elektronów i energii chemicznej, a tlen **przyjmuje elektrony na końcu łańcucha** (łącząc się z nimi i z protonami w wodę). Dzięki temu łańcuch działa sprawnie i komórka wytwarza dużo więcej ATP. Tlen jest więc niezbędny, ale nie jest „spalany” jak drewno w ognisku. **Ciekawostka:** tlen w atmosferze pochodzi z fotosyntezy — w dużej części organizmów wodnych (sinic, glonów, fitoplanktonu), a nie tylko lasów.
 
 Komórki mogą „spalać” nie tylko glukozę — także tłuszcze i częściowo aminokwasy; glukoza to najprostszy przykład szkolny. Brak tlenu może ograniczać oddychanie tlenowe, ale skutki zależą od organizmu, rodzaju komórki i warunków. [KONKURS] Niektóre bakterie prowadzą **oddychanie beztlenowe**: końcowym akceptorem elektronów jest inna substancja niż tlen (np. azotany, siarczany) — to nie jest fermentacja. Nie każda komórka ma te same możliwości uzyskiwania ATP bez tlenu.
 
@@ -79,6 +81,8 @@ Przykłady:
 | ATP z jednej cząsteczki glukozy | znacznie więcej (ok. 30–32; starsze podręczniki: 38) | ok. 2 |
 | Produkty końcowe | CO₂ i H₂O | mleczan albo etanol i CO₂ |
 | Przykład | większość komórek człowieka przy dostępie tlenu | drożdże, bakterie mlekowe |
+
+**Pytanie kontrolne:** dlaczego ciasto drożdżowe rośnie, choć drożdże nie mają chloroplastów? — Drożdże prowadzą fermentację alkoholową i wydzielają CO₂, który tworzy pęcherzyki w cieście; nie potrzebują światła, bo nie fotosyntetyzują. Alkohol w większości odparowuje podczas pieczenia.
 - **Fermentacja alkoholowa:** zachodzi m.in. u drożdży; wytwarzany jest etanol i CO₂.
 
 Fermentacja nie jest tym samym co oddychanie tlenowe i zwykle daje znacznie mniej ATP z jednej cząsteczki glukozy. Nie wszystkie organizmy ani komórki korzystają z tych samych szlaków.
@@ -94,6 +98,8 @@ Fermentacja nie jest tym samym co oddychanie tlenowe i zwykle daje znacznie mnie
 | Produkty w równaniu sumarycznym | związki organiczne i O₂ | CO₂, H₂O i energia przekazana m.in. do ATP |
 | Miejsce u roślin | chloroplasty | cytozol oraz mitochondria |
 | Zależność od światła | bezpośrednio wymaga energii światła | nie wymaga światła, ale zachodzi też w świetle |
+
+**Mnemotechnika: „Światło buduje, komórka zużywa.”** Fotosynteza buduje związki organiczne dzięki światłu, oddychanie uwalnia z nich energię.
 
 Nie są to procesy będące po prostu „odwróceniem” jeden drugiego w każdym szczególe. Mają różne mechanizmy, enzymy i etapy, choć ich bilanse sumaryczne wykazują powiązanie substratów i produktów.
 
@@ -136,6 +142,8 @@ Model przedstawia ogólny bilans oddychania tlenowego. Pomija pośrednie związk
 
 **F. Analiza modelu:** wskaż dwa uproszczenia równania sumarycznego oddychania tlenowego.
 
+**H. Ocena zdania:** „Skoro roślina w nocy pobiera tlen, to w nocy oddycha, a w dzień tylko fotosyntetyzuje.” Oceń i popraw.
+
 **G. Doświadczenie:** uczennica umieściła kiełkujące nasiona w zamkniętym słoiku z wodą wapienną. Po kilku godzinach woda zmętniała. Wyjaśnij wynik i podaj, jaka powinna być próba kontrolna.
 
 ## 13. Odpowiedzi i sposób oceniania
@@ -145,6 +153,7 @@ C. Tlen jest końcowym akceptorem elektronów w łańcuchu transportu elektronó
 D. Komórki stale potrzebują ATP, a oddychanie komórkowe nie wymaga energii światła.
 E. Bakterie nie mają mitochondriów, ale mogą wykorzystywać błony komórkowe i inne elementy swojej komórki do etapów oddychania.
 F. Równanie pomija etapy pośrednie, enzymy i nośniki elektronów (NADH, FADH₂); nie pokazuje też, że tylko część energii zostaje przekazana do ATP.
+H. Częściowo błędne: roślina oddycha i w dzień, i w nocy; w dzień dodatkowo fotosyntetyzuje i zwykle netto pobiera CO₂ i wydziela O₂. (Rośliny w sypialni nie są groźne — zużywają w nocy niewiele tlenu.)
 G. Kiełkujące nasiona oddychają i wydzielają CO₂, który mętnieje wodę wapienną. Próba kontrolna: taki sam słoik z wodą wapienną i nasionami ugotowanymi (martwymi) albo bez nasion — wykazuje, że zmętnienie nie pochodzi z powietrza w słoiku.
 
 **Ocenianie:** za odpowiedź przyczynową przyznawaj punkt za fakt i punkt za wyjaśnienie mechanizmu, jeśli polecenie zawiera „wyjaśnij” lub „uzasadnij”.

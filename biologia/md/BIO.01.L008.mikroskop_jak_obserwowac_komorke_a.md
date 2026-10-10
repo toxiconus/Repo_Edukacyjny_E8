@@ -29,6 +29,8 @@
 8. Podpisz tylko struktury, które rzeczywiście rozpoznajesz.
 9. Zapisz obserwację i wniosek osobno.
 
+**Mnemotechnika: „Najpierw małe, potem większe”** — od najmniejszego powiększenia łatwiej znaleźć obiekt, wycentrować go i nie uszkodzić preparatu.
+
 ## 2. Powiększenie a rozdzielczość
 **Powiększenie** mówi, jak duży wydaje się obraz.
 **Rozdzielczość** określa zdolność rozróżniania dwóch blisko położonych szczegółów.
@@ -36,6 +38,8 @@
 Duże powiększenie nie gwarantuje dużej ilości nowych szczegółów.
 
 **Przykład:** dwa bardzo blisko leżące punkty po powiększeniu mogą nadal wyglądać jak jedna, tylko większa plamka. Obraz jest większy, ale szczegółów nie przybyło — potrzebna jest lepsza rozdzielczość, a nie samo większe powiększenie.
+
+**Ciekawostka:** najlepsze mikroskopy świetlne rozróżniają szczegóły od ok. **0,2 µm**. Większość wirusów jest mniejsza — do ich obserwacji trzeba mikroskopu elektronowego. Czasem nie pomaga większe powiększenie, tylko inna metoda obrazowania.
 
 ## 3. Zasada interpretacji
 > **Brak widoczności struktury pod mikroskopem nie oznacza, że struktura nie istnieje.**
@@ -53,6 +57,12 @@ Uczeń obserwuje preparat i nie widzi jądra. Czy może od razu stwierdzić, że
 
 ### Odpowiedź
 Nie. Najpierw trzeba rozważyć jakość preparatu, powiększenie, ostrość, wybarwienie i rodzaj obserwowanej komórki.
+
+**Prawda czy fałsz?** 1. Przy większym powiększeniu zawsze widzimy więcej szczegółów. 2. Obraz w typowym mikroskopie złożonym jest odwrócony. 3. Na rysunku można dorysować chloroplasty, skoro wiemy, że moczarka je ma. 4. Po zmianie obiektywu z 10× na 40× komórka zniknęła — mikroskop jest zepsuty.
+
+::: odp | Odpowiedzi
+1. Fałsz — liczy się też rozdzielczość i jakość preparatu. 2. Prawda. 3. Fałsz — rysujemy tylko to, co zaobserwowano. 4. Fałsz — obiekt najpewniej wyszedł z mniejszego pola widzenia: wróć do mniejszego powiększenia, wycentruj, ustaw ostrość i dopiero zwiększ.
+:::
 
 ## 6. MINI-CHECK
 1. Od jakiego powiększenia rozpoczynamy obserwację?
@@ -83,7 +93,11 @@ Konstrukcje mikroskopów różnią się. Uczeń powinien rozpoznawać elementy o
 
 **Mikroskop świetlny a elektronowy.** Szkolny mikroskop świetlny pozwala oglądać żywe komórki, ich granice, chloroplasty, czasem jądro. **Mikroskop elektronowy** zamiast światła używa wiązki elektronów — pokazuje dużo mniejsze struktury (rybosomy, budowę mitochondriów, wirusy), ale preparaty są specjalnie utrwalane, więc nie obserwuje się w nim żywych komórek.
 
+**Mnemotechnika: „Okular patrzy, obiektyw pracuje”** — okular: przez niego patrzysz; obiektyw: przy preparacie, tworzy pierwszy obraz; rewolwer: zmienia obiektywy; stolik: trzyma preparat; śruby: ustawiają ostrość.
+
 ## 8. Powiększenie całkowite — rachunek krok po kroku
+
+**Mnemotechnika: „Okular RAZY obiektyw”** — nie dodawaj, mnóż: 10× i 40× → 400×.
 
 **Wzór:** powiększenie całkowite = powiększenie okularu × powiększenie obiektywu.
 
@@ -94,6 +108,8 @@ Przykład: okular 10× i obiektyw 4× dają 40×; okular 10× i obiektyw 10× da
 ## 9. Pole widzenia i orientacja obrazu
 
 Przy większym powiększeniu zwykle widzimy mniejszy obszar preparatu. Dlatego obiekt łatwiej odnaleźć przy małym powiększeniu, a dopiero potem obejrzeć jego fragment dokładniej. W typowym mikroskopie złożonym obraz jest **odwrócony**: gdy przesuwasz szkiełko w prawo, obiekt na obrazie przesuwa się w lewo; gdy przesuwasz je ku sobie — obiekt idzie w przeciwną stronę. Żeby doprowadzić obiekt do środka pola widzenia, przesuwaj preparat w stronę, w której obiekt widzisz (przeciwnie do jego pozornego ruchu). Niektóre mikroskopy mają układ prostujący obraz — sprawdź na bezpiecznym preparacie.
+
+**Ciekawostka:** gdy zwiększasz powiększenie 4 razy (100× → 400×), średnica pola widzenia maleje ok. 4 razy, a jego powierzchnia — ok. **16 razy**. Dlatego przy dużym powiększeniu tak łatwo „zgubić” obiekt.
 
 **Szacowanie rzeczywistej wielkości:** jeśli znasz średnicę pola widzenia (np. 0,5 mm przy 100×), a komórka zajmuje jego część, mnożysz: komórka na ¼ średnicy → ok. 0,125 mm = 125 µm (wartość szacunkowa).
 
@@ -108,6 +124,8 @@ Przy większym powiększeniu zwykle widzimy mniejszy obszar preparatu. Dlatego o
 
 **Preparat świeży (mokry)** robisz na lekcji tuż przed obserwacją (kropla wody, szkiełko nakrywkowe). **Preparat trwały** jest przygotowany wcześniej, zwykle fabrycznie, często wybarwiony i zabezpieczony do wielokrotnego użytku. **Barwienie** zwiększa kontrast, ale może zmienić wygląd struktur i zabić komórki — nie zawsze jest potrzebne.
 
+**Ciekawostka — kropla jak soczewka.** Zbyt gruba kropla wody pod szkiełkiem nakrywkowym sama działa jak soczewka i zaburza obraz — preparat ma być cienki, żeby światło przeszło przez próbkę.
+
 **Ciekawostka — płyn Lugola.** To brunatny roztwór **jodu w jodku potasu** (nazwa od francuskiego lekarza J. Lugola, XIX w.). Z **skrobią** daje granatowe, prawie czarne zabarwienie — to klasyczna **próba na skrobię** (kropla na przekrojony ziemniak). W preparacie skórki cebuli lekko podbarwia komórki na żółtobrązowo i zwiększa kontrast, ale nie jest typowym barwnikiem jądra; do jądra częściej używa się np. błękitu metylenowego. Lugol plami skórę i ubrania i nie wolno go połykać — pracuj w rękawiczkach, zgodnie z poleceniem nauczyciela.
 
 **Uwaga na artefakty.** Pęcherzyk powietrza ma zwykle okrągły kształt i wyraźną, ciemną obwódkę — nie jest komórką ani organellum. Kurz, porysowane szkiełko albo nierówna kropla wody też mogą udawać strukturę biologiczną. Jeśli podejrzewasz artefakt: zmień ostrość, przesuń preparat i porównaj z innymi polami widzenia.
@@ -121,6 +139,8 @@ Powiększenie zwiększa pozorny rozmiar obrazu. Zdolność rozdzielcza mówi, ja
 **Analogia:** powiększenie rozciąga mapę na większy arkusz; nie dodaje automatycznie ulic, których nie naniesiono lub których nie da się rozróżnić.
 
 ## 12. Jak wykonać rysunek biologiczny
+
+**Mnemotechnika: „Rysuję to, co widzę, nie to, co wiem”** — rysunek dokumentuje obserwację; wiedzę z podręcznika wykorzystujesz do interpretacji, ale nie dorysowujesz jej do preparatu.
 
 - Narysuj obiekt dostatecznie duży, aby dało się odczytać jego kształt.
 - Używaj prostych, wyraźnych linii; nie ozdabiaj i nie cieniuj, jeśli polecenie wymaga standardowego rysunku biologicznego.
@@ -222,7 +242,7 @@ Podobne zasady stosuje się w diagnostyce laboratoryjnej, kontroli jakości żyw
 5. Rysunek ma wiernie przedstawiać obserwację.
 6. Brak widoczności struktury nie jest sam w sobie dowodem jej nieobecności.
 7. W typowym mikroskopie złożonym obraz jest odwrócony względem ruchu preparatu.
-8. Pęcherzyk powietrza lub zanieczyszczenie może udawać strukturę biologiczną.
+8. Pęcherzyk powietrza lub zanieczyszczenie może udawać strukturę biologiczną. Profesjonalny diagnosta też nie ocenia preparatu po jednym polu widzenia — ogląda kilka miejsc, zanim wyciągnie wniosek.
 9. Przy znanej średnicy pola widzenia można oszacować rzeczywisty rozmiar obiektu.
 
 ## 20. Test końcowy
