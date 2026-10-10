@@ -2,6 +2,12 @@
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
+## ⚑ PRZEKAZANIE DLA NOWEGO WĄTKU (2026-10-10 06:45, wątek „grafiki + polski G12”)
+- **Wszystko na `claude/che-lekcje`** (ostatni commit przed tym wpisem: 7398123). Przed pracą: `git pull --rebase --autostash`.
+- **Zasady użytkownika:** grafiki tylko gdy pomagają zrozumieć (proces, zależność, ćwiczenie) — w polskim wyjątkowo; każda z `@opis`; oszczędzanie tokenów, krótki czat po polsku.
+- **Gdzie co jest:** chemia — `chemia/che-modular/engine/src/lekcja/rozszerzenia.js` (§P probówka/parownica, §R R03, §A F04, §M F02, §G magnes), build `python3 tools/che.py lekcje <md>`, test `node tools/test_lekcje.cjs [--szer=1280]`; biologia — `biologia/bio/szablon/bio-viz.js` (blok REV na końcu), katalog `biologia/bio/BIO_KATALOG.md`, build `python3 narzedzia/lekcja_html.py -p bio <md>` lub `biologia/bio/narzedzia/md2html_bio.py`; polski — `polski/szablon/pol-viz.js`, G12 v3.0 wzorcowa.
+- **Kolejka:** (1) polski G13–G17 wzorem G12 (G14 może użyć `wykres-zdania`); (2) BIO L040 piramida/przepływ energii, L016, L030; (3) scalić gałąź `claude/polski-spis` (kanon v2, `narzedzia/spis_polski.py`, wstępne P01–P04, J01–J06) do nowego nazewnictwa POL.NN.KOD; (4) W1 dla G12 v3.0 i nowych grafik BIO (ATP ok. 38 — orientacyjne).
+
 ## Grafiki BIO/CHE — stan 2026-10-10 rano
 - **Zasada:** grafika tylko gdy pomaga zrozumieć (proces, zależność, ćwiczenie) — przed nową sprawdź, czy istniejąca z katalogu nie wystarczy.
 - **Nowe:** CHE F02 `f02-magnes-fes-v01` (mieszanina Fe+S vs FeS); BIO `przeobrazenie-owadow` (REV02), `podzial-komorki` (mitoza/mejoza, L009, L014, L015), `dobor-naturalny` (L031).
