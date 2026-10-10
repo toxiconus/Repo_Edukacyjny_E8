@@ -8,7 +8,7 @@ Przedmioty (-p): che, bio, pol, ang, oli — motyw w szablon/motywy/<p>.css. Dom
 Wynik: jeden samodzielny plik HTML (style, skrypt i grafiki przedmiotu w środku) — działa offline i na telefonie.
 
 Parser: wspólny z chemią (chemia/che-modular/tools/md2html.py — dialekt SZABLON_LEKCJI). Dodatki ponad chemię:
-  @viz <id> {k="v"} | Tytuł | podpis   grafika z biblioteki przedmiotu (bio: bio-viz.js)
+  @viz <id> {k="v"} | Tytuł | podpis   grafika z biblioteki przedmiotu (bio: bio-viz.js, pol: polski/szablon/pol-viz.js)
   @opis tekst                          OBOWIĄZKOWO pod każdą grafiką: co widać + wniosek (HTML: <!-- OPIS -->)
   ::: mity | nagłówek                  linie:  mit || poprawnie
   ::: drzewo                           mapa pojęć z listy wcięć (2 spacje = poziom)
@@ -34,7 +34,8 @@ def _leaf_wciecie(blk, ctx):   # lista zaczynająca się od wcięcia (np. po aka
 m.leaf = _leaf_wciecie
 
 PRZEDMIOTY = {'che': 'Chemia', 'bio': 'Biologia', 'pol': 'Język polski', 'ang': 'Język angielski', 'oli': 'Olimpiada'}
-VIZ = {'bio': os.path.join(REPO, 'biologia', 'bio', 'szablon', 'bio-viz.js')}   # biblioteki grafik przedmiotów
+VIZ = {'bio': os.path.join(REPO, 'biologia', 'bio', 'szablon', 'bio-viz.js'),
+       'pol': os.path.join(REPO, 'polski', 'szablon', 'pol-viz.js')}   # biblioteki grafik przedmiotów
 
 def rd(p): return open(p, encoding='utf-8').read()
 

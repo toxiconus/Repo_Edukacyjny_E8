@@ -3,12 +3,12 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 137 KB)
+## .  (8 pl., 143 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 8 KB
 - `MAPA.md` 26 KB
-- `PRZEKAZANIE.md` 15 KB
+- `PRZEKAZANIE.md` 21 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 55 KB
 - `WERYFIKACJA.md` 28 KB
@@ -63,23 +63,23 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
-## biologia/bio  (2 pl., 6 KB)
-- `BIO_KATALOG.md` 3 KB
+## biologia/bio  (2 pl., 7 KB)
+- `BIO_KATALOG.md` 4 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (3 pl., 130 KB)
-- `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 28 KB
-- `BIO.00.REV02.roznorodnosc_zycia.md` 48 KB
+## biologia/bio/md  (3 pl., 137 KB)
+- `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 33 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 51 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 53 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 130 KB)
+## biologia/bio/szablon  (5 pl., 151 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 72 KB
-- `bio-warstwa.css` 10 KB
+- ⚠`bio-viz.js` 93 KB
+- `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
@@ -152,7 +152,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 104 KB)
+## chemia/che-modular  (13 pl., 105 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -185,17 +185,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/registry/layout  (1 pl., 1 KB)
 - `shell.json` 1 KB
 
-## chemia/che-modular/engine/registry/profile  (10 pl., 106 KB)
-- `F01_jak_mysli_chemik.json` 9 KB
-- `F02_materia_i_substancje.json` 11 KB
-- `F03_wlasciwosci_i_rozdzielanie.json` 11 KB
-- `F04_atom.json` 11 KB
-- `F05_izotopy_jony_masa_atomowa.json` 11 KB
-- `N02_wodorotlenki.json` 11 KB
-- `N03_kwasy.json` 11 KB
-- `N04_sole.json` 11 KB
-- `N05_wodorki.json` 8 KB
-- `wspolny.json` 13 KB
+## chemia/che-modular/engine/registry/profile  (16 pl., 176 KB)
+- (zwinięte; `ls chemia/che-modular/engine/registry/profile`)
 
 ## chemia/che-modular/engine/registry/tables  (1 pl., 4 KB)
 - `index.json` 4 KB
@@ -305,11 +296,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 92 KB)
+## chemia/che-modular/engine/src/lekcja  (4 pl., 125 KB)
 - `index.html` 1 KB
 - `lekcja.css` 4 KB
 - `lekcja.js` 2 KB
-- ⚠`rozszerzenia.js` 86 KB
+- ⚠`rozszerzenia.js` 118 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/engine/src/moduly`) — duże:
@@ -353,7 +344,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 922 KB)
+## chemia/che-modular/lessons-md/gotowe  (15 pl., 926 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 55 KB
 - ⚠`N01_tlenki.md` 123 KB
@@ -772,7 +763,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L010.srodki_stylistyczne.md` 23 KB
 - `POL.01.L011.elementy_utworu_moral_puenta.md` 22 KB
 
-## polski/html  (48 pl., 4.2 MB)
+## polski/html  (48 pl., 4.3 MB)
 - (zwinięte; `ls polski/html`) — duże:
 - ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 166 KB
 - ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 135 KB
@@ -802,7 +793,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 393 KB)
+## polski/podstawy  (23 pl., 415 KB)
 - (zwinięte; `ls polski/podstawy`)
 
 ## szablon  (4 pl., 65 KB)

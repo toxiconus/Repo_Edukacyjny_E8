@@ -2,6 +2,12 @@
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
+## Polski — lekcje wzorcowe (2026-10-10, wątek „wizualizacje/polski”)
+- **G12 Części zdania v3.0** (`polski/podstawy/POL.02.G12.czesci_zdania.md` → `polski/html/`): pełny dialekt (minimum E8, warstwy, rdzeń, diagnoza, procedura, 5 części zdania z tabelami, klinika, ćwiczenia A/B/C z kluczami, zadania E8 z punktacją, test, fiszki, słownik, ściąga). Zachowane treści v2.1 po W1. Nowa biblioteka `polski/szablon/pol-viz.js` (katalog `POL_KATALOG_GRAFIK.md`), podpięta w `narzedzia/lekcja_html.py` (VIZ['pol']): `rozbior-zdania`, `wykres-zdania`.
+- **Decyzja użytkownika:** grafiki w polskim tylko gdy konieczne (ćwiczenie, zależności) — nie ozdoby.
+- **Uwaga:** gałąź `claude/polski-spis` (kanon v2, `narzedzia/spis_polski.py`, wstępne G12–G20, P01–P04, J01–J06 z Perplexity) **nie jest scalona** z tą gałęzią — tu jest inna organizacja plików (POL.NN.KOD). Do scalenia: kanon v2 + P/J jako nowe pliki w nowym nazewnictwie.
+- **Następne:** G13–G17 tym samym wzorem (G13 i G14 mogą użyć `wykres-zdania`).
+
 ## Wizualizacje CHE — plan i stan (2026-10-09 17:30, wątek „wizualizacje”)
 - **Ranking użycia:** karty doświadczeń GFX.rx (122 reakcje, 65 wstawek @zlewka w 11 lekcjach) ≫ tabela rozpuszczalności, układ okresowy (po 4) ≫ wskaźniki, równania jonowe, cząsteczki 3D, przewodnictwo (po 3). Luki: R03 (stężenia, rozpuszczalność) — 0 modeli; F02, F04, F05 — po 1.
 - **Zrobione** (`engine/src/lekcja/rozszerzenia.js` §P i §R, silnik che-viz.js nietknięty): (1) karty doświadczeń w probówce w łapie statywu (`stand`), ogrzewanie — probówka ~45° w uchwycie nad palnikiem (`burner`), parownica na trójnogu z siatką (`burner`+`tripod`+`evapDish`), duże doświadczenia w zlewce, przełącznik zlewka/probówka; aliasy `testTube/tube/evapDish`; (2) pracownia `odparowanie-v01` (NaCl, CuSO₄) → F03; (3) R03: `r03-krzywe-v01` (krzywe rozpuszczalności, nasycenie, krystalizacja) i `r03-stezenie-v01` (zlewka 500 mL + pasek mas, rozcieńczanie/zatężanie, nadmiar); (4) stara `testTube` silnika z brzegiem i refleksem (spójny wygląd scen). Test 15/15 przy 1280 i 390 px.
