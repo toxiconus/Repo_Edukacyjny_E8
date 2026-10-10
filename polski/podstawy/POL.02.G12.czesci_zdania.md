@@ -155,6 +155,10 @@ W wielu podręcznikach połączenia typu *musisz odpocząć, chcę czytać, moż
 :::
 
 ::: nie-myl
+**Zdanie bezpodmiotowe ≠ równoważnik zdania.** Zdanie ma **orzeczenie** (*Uczniowie czytają. Zmierzcha.*). **Równoważnik zdania** nie ma osobowej formy czasownika, a przekazuje podobną treść: *Cisza na korytarzu! Do domu! Zakaz palenia.* *Zmierzcha* ma orzeczenie, więc to zdanie bezpodmiotowe, nie równoważnik. Więcej — G14.
+:::
+
+::: nie-myl
 **Podmiot logiczny ≠ dopełnienie.** *Nie było **gości*** — *gości* wskazuje, **kogo nie było**; zdanie twierdzące brzmiałoby *Goście byli*, a tam *goście* są podmiotem. Ale *Nie widziałem **gości*** — tu *gości* to dopełnienie (nie widziałem kogo?), bo podmiotem jest domyślne *ja*. Nazwa „podmiot logiczny” pochodzi z tradycyjnej analizy szkolnej; część współczesnych opisów uznaje takie zdania za bezpodmiotowe, a wyraz w dopełniaczu za dopełnienie. Na egzaminie trzymaj się terminów z polecenia i zapisz przyjętą konwencję.
 :::
 
@@ -459,4 +463,5 @@ Wyraz nadrzędny :: wyraz, od którego zależy inny wyraz i od którego zadajemy
 - Konwencje sporne oznaczone wprost: podmiot logiczny (także w teście, kliniki, kluczu C2 i trenerze), *przybyło gości* (usunięte z tabeli jako przypadek sporny), *ważył dwa kilogramy*, bezokolicznik celu, *po burzy*.
 - Definicje: orzeczenie czasownikowe — także konstrukcje złożone; dopełnienie — także przy przymiotniku/przysłówku, decyduje zależność; przydawka przy orzeczniku; dopowiedzenie; *się* jako zaimek.
 - Test „zastąp przysłówkiem” oznaczony jako pomocniczy; wykres — „w przedstawionej konwencji”; podkreślenia — umowne; ściąga — pełne pytania o orzeczenie.
+- Druga odpowiedź Perplexity: dodano rozróżnienie zdanie bezpodmiotowe / równoważnik zdania (§4). Uwaga o „w” w trenerze dotyczyła zapisu eksportu — w trenerze „w zimnym kantorze” jest jedną grupą.
 - Nieprzyjęte: uwaga do §12 A zad. 2 (klucz był już pełny).

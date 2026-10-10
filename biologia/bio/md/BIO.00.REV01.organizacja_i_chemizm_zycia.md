@@ -186,17 +186,21 @@ Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** �
 ## 7 | Oddychanie komórkowe i fermentacja [[basic:E8]] {#oddychanie}
 
 ::: regula
-**Oddychanie komórkowe** — rozkład związków organicznych (głównie glukozy) w komórkach, w którym uwalnia się energia magazynowana w **ATP**. **Oddychanie tlenowe** zachodzi z udziałem tlenu, u eukariontów głównie w **mitochondriach** (pierwszy etap — glikoliza — w cytoplazmie).
+**Oddychanie komórkowe** — rozkład związków organicznych (głównie glukozy) w komórkach, w którym energia jest uwalniana i częściowo magazynowana w **ATP** — bezpośrednim nośniku energii używanej przez komórkę (nie długoterminowym magazynie). **Oddychanie tlenowe** zachodzi z udziałem tlenu, u eukariontów głównie w **mitochondriach** (pierwszy etap — glikoliza — w cytoplazmie).
 :::
 
 $$ C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP)
 
-**Fermentacja** — beztlenowy rozkład glukozy; uwalnia **znacznie mniej** energii niż oddychanie tlenowe.
+**Fermentacja** — beztlenowy rozkład glukozy; uwalnia **znacznie mniej** energii niż oddychanie tlenowe. [[extra:AMBITNE]] Fermentacja odtwarza NAD⁺ potrzebny do dalszego przebiegu glikolizy — dzięki temu komórka może uzyskiwać ATP bez tlenu.
 - **alkoholowa** (drożdże): glukoza → alkohol etylowy + dwutlenek węgla + energia — pieczenie chleba (CO₂ spulchnia ciasto), produkcja wina;
 - **mlekowa** (bakterie mlekowe, a także — krótkotrwale, przy niedoborze tlenu podczas intensywnego wysiłku — mięśnie człowieka): glukoza → kwas mlekowy + energia — jogurt, kefir, kiszonki.
 
 @viz energia-glukozy | Ile energii z jednej cząsteczki glukozy? | oddychanie tlenowe a fermentacja
 @opis Trzy poziome słupki: oddychanie tlenowe (czerwony, długi — ok. 30–32 ATP; starsze podręczniki podają 38 — to historyczna wartość teoretyczna), fermentacja alkoholowa (brązowy, krótki — ok. 2 ATP) i fermentacja mlekowa (niebieski, krótki — ok. 2 ATP); wartości szkolne, orientacyjne. Przyciski wybierają proces, a pod spodem pojawiają się warunki (z tlenem / bez tlenu), miejsce w komórce, produkty i przykłady organizmów. Wniosek: oddychanie tlenowe rozkłada glukozę do końca (CO₂ i H₂O) i daje wielokrotnie więcej energii niż fermentacja, w której część energii zostaje w alkoholu lub kwasie mlekowym.
+
+::: karta understand | Bilans energetyczny oddychania
+Starsze podręczniki podają ok. **38 ATP** z jednej cząsteczki glukozy; współczesne obliczenia dla komórek eukariotycznych — ok. **30–32 ATP** (wynik zależy od organizmu i sposobu przenoszenia produktów glikolizy do mitochondrium). Na E8 wystarczy wiedzieć, że oddychanie tlenowe daje **wielokrotnie więcej** ATP niż fermentacja (ok. 2 ATP).
+:::
 
 | Cecha | Fotosynteza | Oddychanie tlenowe |
 |---|---|---|
@@ -236,7 +240,7 @@ Hipoteza: Im silniejsze oświetlenie, tym intensywniej zachodzi fotosynteza (wyd
 Sprzęt: dwie jednakowe zlewki z wodą (najlepiej z dodatkiem wodorowęglanu sodu jako źródła CO₂), dwie jednakowe gałązki moczarki, lampa, zegarek.
 Przebieg: Zlewkę A (próba kontrolna) ustawiamy blisko lampy, zlewkę B (próba badawcza) — w zacienionym miejscu. Lampa grzeje, więc temperaturę wody w obu zlewkach **mierzymy termometrem i utrzymujemy jednakową** (np. przegroda z wodą między lampą a zlewką albo lampa LED). Po kilku minutach liczymy pęcherzyki gazu wydzielane z przeciętej łodyżki w ciągu 1 minuty (kilka powtórzeń).
 Obserwacja: Z moczarki silnie oświetlonej wydobywa się znacznie więcej pęcherzyków gazu niż z zacienionej.
-Wniosek: Natężenie światła wpływa na intensywność fotosyntezy — przy silniejszym świetle fotosynteza zachodzi intensywniej. Liczba pęcherzyków jest wskaźnikiem **orientacyjnym** (pęcherzyki mają różną wielkość). (Gaz to głównie tlen — można go wykazać tlącym się łuczywem, które się zapala.)
+Wniosek: Natężenie światła wpływa na intensywność fotosyntezy — przy silniejszym świetle fotosynteza zachodzi intensywniej. Liczba pęcherzyków jest wskaźnikiem **orientacyjnym** (pęcherzyki mają różną wielkość). (Gaz to głównie tlen — tlen podtrzymuje spalanie, więc tlące się łuczywo może ponownie się zapalić; przy małej ilości gazu wynik bywa niepewny.)
 BHP: ostrożnie z lampą (nagrzewa się) i wodą przy urządzeniach elektrycznych.
 :::
 
@@ -296,7 +300,7 @@ BHP: zwykłe zasady pracy ze szkłem; woda wapienna drażni oczy — okulary.
 8. W szczelnie zamkniętym słoju umieszczono roślinę na świetle, a w drugim — w ciemności. W którym słoju po kilku godzinach będzie więcej tlenu? Uzasadnij.
 
 ::: odp | Pokaż odpowiedzi
-5. Glukoza i tlen; w oddychaniu wykorzystuje oba — glukozę jako źródło energii i tlen. 6. Drożdże fermentują cukier i wydzielają CO₂, który spulchnia ciasto; ciepło przyspiesza ich procesy życiowe. 7. Glukoza i tlen; CO₂, woda, energia (ATP); mitochondria (pierwszy etap — cytoplazma). 8. Na świetle (przy dostatecznym świetle i typowych warunkach) — fotosynteza wydziela więcej tlenu, niż roślina zużywa w oddychaniu; w ciemności roślina tylko oddycha i zużywa tlen.
+5. Glukoza i tlen; w oddychaniu tlenowym potrzebne są oba — glukoza jest substratem (źródłem energii), a tlen jest niezbędny do jej pełnego rozkładu. 6. Drożdże fermentują cukier i wydzielają CO₂, który spulchnia ciasto; ciepło przyspiesza ich procesy życiowe. 7. Glukoza i tlen; CO₂, woda, energia (ATP); mitochondria (pierwszy etap — cytoplazma). 8. Na świetle (przy dostatecznym świetle i typowych warunkach) — fotosynteza wydziela więcej tlenu, niż roślina zużywa w oddychaniu; w ciemności roślina tylko oddycha i zużywa tlen.
 :::
 
 ### C. Doświadczenie i wykres [[exam:KONKURS]] {#cw-c}
@@ -453,4 +457,5 @@ Cudzożywność :: pobieranie gotowych związków organicznych z otoczenia
 ## AUDYT W1 — Perplexity (2026-10-10), wersja 1.1
 
 - Wprowadzone: glikoliza w cytoplazmie (minimum), definicja fermentacji, mchy (tkanki przewodzące), śruba makrometryczna tylko przy małym powiększeniu, barwienie jądra (Lugol jako przykład), mureina = peptydoglikan, wakuola u zwierząt i bakterii, rybosomy w organellach (ambitne), „ruch netto” w dyfuzji i osmozie, transport pęcherzykowy, sacharoza w łyku, punkt kompensacyjny w opisie grafiki, ATP ok. 30–32 (38 — wartość historyczna; także w grafice), fermentacja mlekowa w mięśniach — krótkotrwale, kontrola temperatury i szczelność w doświadczeniach, pęcherzyki jako wskaźnik orientacyjny, klucze 4, 8, 9c.
+- Druga odpowiedź Perplexity (ta sama paczka): ATP jako nośnik energii, NAD⁺ w fermentacji (ambitne), karta bilansu ATP, łuczywo ostrożniej, klucz B5.
 - Nieprzyjęte: zapis wzoru `$$` to składnia bloku wzoru w dialekcie lekcji (w HTML bez LaTeX-a), nie LaTeX; uwagi „bez zmian/klucz poprawny” (§10 zad. 3, §11 A zad. 5, §12 chityna, §15 równanie).

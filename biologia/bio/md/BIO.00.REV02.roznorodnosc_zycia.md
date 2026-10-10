@@ -19,7 +19,7 @@ stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 6. **Mchy i paprociowe** rozmnażają się przez **zarodniki** i potrzebują **wody do zapłodnienia** (plemniki przemieszczają się w wodzie do rodni); mchy nie mają korzeni (chwytniki), paprocie mają kłącze i liście z kupkami zarodni.
 7. **Nagonasienne** (sosna): zalążki (a potem nasiona) leżą odkryte na łuskach nasiennych szyszek, niezabezpieczone zalążnią; **okrytonasienne**: zalążki zamknięte w zalążni, nasiona rozwijają się w **owocu** powstałym z zalążni słupka.
 8. **Organy rośliny okrytonasiennej:** korzeń, łodyga, liść, kwiat, owoc — i ich funkcje; budowa kwiatu (działki, płatki, pręciki, słupek).
-9. **Grzyby:** cudzożywne, bez chlorofilu, ściana komórkowa z **chityny**, ciało ze **strzępek** (grzybnia) lub jednokomórkowe (drożdże); rozmnażają się przez zarodniki.
+9. **Grzyby:** cudzożywne, bez chlorofilu, ściana komórkowa z **chityny**, ciało ze **strzępek** (grzybnia) lub jednokomórkowe (drożdże); rozmnażają się przez zarodniki, a drożdże głównie przez pączkowanie.
 10. **Tkanki zwierzęce:** nabłonkowa, mięśniowa, łączna, nerwowa.
 11. **Bezkręgowce:** płazińce, nicienie, pierścienice, stawonogi, mięczaki — cecha rozpoznawcza każdej grupy; pasożyty (tasiemce, owsik) i profilaktyka.
 12. **Kręgowce:** ryby, płazy, gady (zmiennocieplne) oraz ptaki i ssaki (stałocieplne) — pokrycie ciała, oddychanie, rozmnażanie, rozwój.
@@ -82,7 +82,7 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 :::
 
 ::: regula
-**Gatunek** — grupa organizmów podobnych do siebie, które w naturze krzyżują się ze sobą i wydają **płodne potomstwo**. **Nazwa gatunku jest dwuczłonowa** (nazewnictwo binominalne, Karol Linneusz): pierwszy człon to nazwa rodzaju (wielką literą), drugi — epitet gatunkowy (małą literą). Pies i wilk należą do tego samego rodzaju *Canis*, ale lis rudy — do rodzaju *Vulpes*.
+**Gatunek** — grupa organizmów podobnych do siebie, które w naturze krzyżują się ze sobą i wydają **płodne potomstwo** (to kryterium nie ma pełnego zastosowania do organizmów rozmnażających się wyłącznie bezpłciowo). **Nazwa gatunku jest dwuczłonowa** (nazewnictwo binominalne, Karol Linneusz): pierwszy człon to nazwa rodzaju (wielką literą), drugi — epitet gatunkowy (małą literą). Pies i wilk należą do tego samego rodzaju *Canis*, ale lis rudy — do rodzaju *Vulpes*.
 :::
 
 **Pięć królestw (model szkolny):** bakterie · protisty · grzyby · rośliny · zwierzęta. **Wirusy** nie należą do żadnego królestwa.
@@ -108,7 +108,7 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 
 **Budowa:** materiał genetyczny (**DNA albo RNA**) zamknięty w **białkowym płaszczu (kapsydzie)**; niektóre mają dodatkową osłonkę. Wirus nie ma cytoplazmy, rybosomów ani własnej przemiany materii.
 
-::: karta core | Dlaczego wirusy nie są organizmami
+::: karta core | Dlaczego wirusów zwykle nie zalicza się do organizmów
 - nie mają **budowy komórkowej**,
 - poza komórką **nie przeprowadzają żadnych czynności życiowych** (nie odżywiają się, nie oddychają, nie rosną),
 - **namnażają się tylko w żywej komórce gospodarza**, wykorzystując jej „maszynerię”.
@@ -117,11 +117,11 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 | Choroba wirusowa | Jak się szerzy | Profilaktyka |
 |---|---|---|
 | grypa | drogą kropelkową | szczepienie sezonowe, higiena rąk, unikanie skupisk w sezonie |
-| ospa wietrzna | kropelkowo i przez kontakt z wykwitami | szczepienie, izolacja chorego |
+| ospa wietrzna | drogą powietrzno-kropelkową i przez kontakt z wykwitami | szczepienie, izolacja chorego |
 | różyczka | drogą kropelkową; groźna dla płodu (zakażenie kobiety w ciąży) | szczepienie |
 | świnka (nagminne zapalenie przyusznic) | drogą kropelkową | szczepienie |
 | odra | drogą kropelkową, bardzo zaraźliwa | szczepienie |
-| AIDS (wirus HIV) | przez krew, kontakty płciowe, z matki na dziecko | nieużywanie cudzych igieł i przyborów z krwią, zabezpieczenie, badanie krwi |
+| zakażenie HIV (może prowadzić do AIDS) | przez krew, kontakty płciowe, z matki na dziecko | nieużywanie cudzych igieł i przyborów z krwią, zabezpieczenie, badanie krwi |
 
 ::: karta warning | Antybiotyki a wirusy
 Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się antybiotykiem — przed chorobami wirusowymi chronią przede wszystkim **szczepienia** i higiena.
@@ -140,7 +140,7 @@ Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się anty
 |---|---|
 | Odżywianie | **samożywne** (np. sinice — fotosynteza) lub **cudzożywne**: saprotrofy (rozkładają martwą materię), pasożyty, symbionty |
 | Oddychanie | tlenowe albo beztlenowe (fermentacja) |
-| Rozmnażanie | **podział komórki** — w dobrych warunkach bardzo szybko |
+| Rozmnażanie | **podział komórki** — w dobrych warunkach bardzo szybko (tempo zależy od gatunku, temperatury, wody i pokarmu) |
 | Niekorzystne warunki | niektóre tworzą **przetrwalniki** odporne na wysuszenie i temperaturę |
 
 | Choroba bakteryjna | Jak się szerzy | Profilaktyka |
@@ -165,13 +165,13 @@ Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się anty
 | **okrywająca** | skórka liścia i łodygi, skórka korzenia z **włośnikami**, korek | ochrona; w skórce liścia **aparaty szparkowe** (wymiana gazowa, transpiracja); włośniki pobierają wodę |
 | **miękiszowa** | wnętrze liści, łodyg, korzeni, owoców | **asymilacyjny** — fotosynteza; **spichrzowy** — magazyn (skrobia w bulwie ziemniaka); powietrzny, wodny |
 | **wzmacniająca** | łodygi, ogonki liściowe | utrzymanie kształtu i sztywności |
-| **przewodząca** | wiązki przewodzące | **drewno** — woda z solami mineralnymi z korzeni **w górę** (martwe komórki); **łyko** — produkty fotosyntezy do wszystkich części rośliny (żywe komórki) |
+| **przewodząca** | wiązki przewodzące | **drewno** — woda z solami mineralnymi z korzeni **w górę** (martwe komórki); **łyko** — produkty fotosyntezy (głównie sacharozę) od miejsc wytwarzania do miejsc zużycia lub magazynowania, w górę i w dół (żywe komórki) |
 
 ### 4.2 Mchy {#mchy}
 
 ::: karta core | Mchy — cechy
 - **Środowisko:** miejsca wilgotne i zacienione (lasy, torfowiska, kamienie, pnie).
-- **Budowa:** niewielkie; **chwytniki** zamiast korzeni (tylko przytwierdzają), łodyżka, listki (zwykle jedna warstwa komórek); brak tkanek przewodzących typowych dla roślin naczyniowych.
+- **Budowa:** niewielkie; **chwytniki** zamiast korzeni (tylko przytwierdzają), łodyżka, listki (zwykle jedna warstwa komórek); brak tkanek przewodzących typowych dla roślin naczyniowych (mają tylko proste komórki przewodzące, nie drewno i łyko).
 - **Rozmnażanie:** z zapłodnionej komórki jajowej wyrasta osadzona na roślinie **puszka z zarodnikami** na wydłużonej secie; z zarodników rozwijają się nowe mchy. **Do zapłodnienia potrzebna jest woda.**
 - **Przykłady:** płonnik, torfowiec, bielistka.
 :::
@@ -185,7 +185,7 @@ Do paprociowych należą **paprocie**, **skrzypy** i **widłaki**.
 ::: karta core | Paprotniki — cechy
 - **Środowisko:** głównie wilgotne lasy (runo), brzegi wód.
 - **Budowa paproci:** podziemna łodyga — **kłącze**, korzenie przybyszowe, duże liście (często pierzaste; młode zwinięte jak **pastorał**); na spodniej stronie liści skupienia zarodni — **kupki zarodni**.
-- **Skrzyp:** pęd z okółkami gałązek; skrzyp polny wytwarza wiosną osobny, brązowy pęd z **kłosem zarodnionośnym**.
+- **Skrzyp:** pęd z okółkami gałązek; skrzyp polny wytwarza wiosną brązowy pęd zarodnionośny z **kłosem zarodnionośnym**, a później zielone pędy asymilacyjne.
 - **Rozmnażanie:** zarodniki; **do zapłodnienia potrzebna woda**. Mają tkanki przewodzące, dlatego mogą być większe niż mchy.
 - **Przykłady:** nerecznica samcza, orlica pospolita, skrzyp polny, widłak goździsty (chroniony).
 :::
@@ -322,7 +322,7 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 
 **Cechy wspólne:** ciało wydłużone, **podzielone na pierścienie (segmenty)**; worek skórno-mięśniowy.
 
-- **Skąposzczety — dżdżownica:** ciało z niewielką liczbą szczecinek (ruch w glebie), **oddycha całą wilgotną powierzchnią ciała** (wychodzi po deszczu, gdy gleba zalana wodą), obojnak. **Znaczenie:** spulchnia i napowietrza glebę, miesza ją i tworzy próchnicę.
+- **Skąposzczety — dżdżownica:** ciało z niewielką liczbą szczecinek (ruch w glebie), **oddycha całą wilgotną powierzchnią ciała** (wychodzi po deszczu — w zalanej glebie brakuje tlenu, a mokra powierzchnia ułatwia poruszanie się), obojnak. **Znaczenie:** spulchnia i napowietrza glebę, miesza ją i tworzy próchnicę.
 - **Pijawki — pijawka lekarska:** dwie **przyssawki**, brak szczecinek; pasożyt zewnętrzny wysysający krew; w ślinie **hirudyna** hamująca krzepnięcie krwi (wykorzystywana w medycynie).
 
 ### 7.4 Stawonogi {#stawonogi}
@@ -332,7 +332,7 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 | | Skorupiaki | Owady | Pajęczaki |
 |---|---|---|---|
 | Podział ciała | głowotułów + odwłok | **głowa + tułów + odwłok** | głowotułów + odwłok |
-| Odnóża krocznie | zwykle 5 par (rak) | **3 pary** | **4 pary** |
+| Odnóża krocznie | u dziesięcionogów (rak) 5 par; u innych skorupiaków różnie | **3 pary** | **4 pary** |
 | Czułki | **2 pary** | **1 para** | **brak** |
 | Skrzydła | brak | zwykle 2 pary (lub 1, lub brak) | brak |
 | Oddychanie | skrzela | tchawki | płucotchawki lub tchawki |
@@ -355,7 +355,7 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 | | Ślimaki | Małże | Głowonogi |
 |---|---|---|---|
 | Muszla | jednolita, skręcona (lub brak — ślinik) | **dwie skorupki** | zredukowana lub wewnętrzna |
-| Głowa | jest (czułki, oczy) | **brak** | duża, z ramionami z przyssawkami |
+| Głowa | jest (czułki, oczy) | **brak** | duża, z ramionami (u większości z przyssawkami) |
 | Odżywianie | tarka (zeskrobywanie) | **filtrowanie** wody | drapieżniki |
 | Środowisko | ląd i woda | woda | morza |
 | Przykład | ślimak winniczek | szczeżuja, omułek | ośmiornica, kałamarnica |
@@ -377,7 +377,7 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 **Kręgowce** mają szkielet wewnętrzny z **kręgosłupem**. Ryby, płazy i gady są **zmiennocieplne** (temperatura ciała zależy od otoczenia), ptaki i ssaki — **stałocieplne**.
 
 ### 8.1 Ryby {#ryby}
-Środowisko wodne. **Przystosowania:** opływowy kształt, **łuski** pokryte śluzem, **płetwy** (parzyste — sterowanie, nieparzyste — napęd i stabilizacja), **skrzela** (pobieranie tlenu rozpuszczonego w wodzie), **pęcherz pławny** (unoszenie się na różnej głębokości), **linia boczna** (wyczuwanie ruchów wody). **Rozmnażanie:** zwykle **zapłodnienie zewnętrzne** w wodzie, jaja — **ikra**, rozwój prosty (narybek). **Znaczenie:** pokarm człowieka i zwierząt, ogniwo łańcuchów pokarmowych.
+Środowisko wodne. **Przystosowania:** opływowy kształt, **łuski** pokryte śluzem, **płetwy** (parzyste — sterowanie, nieparzyste — napęd i stabilizacja), **skrzela** (pobieranie tlenu rozpuszczonego w wodzie), **pęcherz pławny** (unoszenie się na różnej głębokości; nie mają go ryby chrzęstnoszkieletowe, np. rekiny i płaszczki), **linia boczna** (wyczuwanie ruchów wody). **Rozmnażanie:** zwykle **zapłodnienie zewnętrzne** w wodzie, jaja — **ikra**, rozwój prosty (narybek). **Znaczenie:** pokarm człowieka i zwierząt, ogniwo łańcuchów pokarmowych.
 
 ### 8.2 Płazy {#plazy}
 **Bezogonowe** (żaba, ropucha, rzekotka) i **ogoniaste** (traszka, salamandra). Żyją w wodzie i na lądzie. **Skóra** cienka, wilgotna, z gruczołami śluzowymi — **oddychanie skórą** i **płucami** (kijanki — skrzelami). Kończyny — u żaby tylne skoczne z błoną pływną. **Rozmnażanie:** u bezogonowych **zapłodnienie zewnętrzne** w wodzie, jaja w osłonkach (**skrzek**); **rozwój złożony z przeobrażeniem**: kijanka (skrzela, ogon, życie w wodzie) → młoda żaba. Zimują w odrętwieniu. **W Polsce wszystkie płazy są chronione.** **Znaczenie:** zjadają owady (także szkodniki), są pokarmem innych zwierząt, świadczą o czystości środowiska.
@@ -391,7 +391,11 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 ### 8.4 Ptaki {#ptaki}
 **Przystosowania do lotu:** **pióra** (lot, ochrona przed utratą ciepła), kończyny przednie przekształcone w **skrzydła**, lekkie **kości pneumatyczne** (wypełnione powietrzem), **mostek z grzebieniem** (przyczep silnych mięśni lotnych), **worki powietrzne** wspomagające wydajne oddychanie płucami, dziób bez zębów. **Stałocieplne.** **Rozmnażanie:** zapłodnienie wewnętrzne, **jaja z wapienną skorupką** wysiadywane w gniazdach, opieka nad potomstwem. **Zagniazdowniki** — pisklęta nagie i ślepe, długo w gnieździe (wróbel, sikora); **gniazdowniki** — pisklęta opierzone, szybko samodzielne (kura, kaczka). Kształt dzioba i nóg zależy od pokarmu i środowiska. **Znaczenie:** zjadają owady i gryzonie, rozsiewają nasiona, drób.
 
+[[extra:AMBITNE]] **Gniazdowniki** (wróbel, sikora) wykluwają się nagie lub słabo opierzone i ślepe, długo zostają w gnieździe; **zagniazdowniki** (kura, kaczka) — w puchu, widzące, szybko opuszczają gniazdo.
+
 ### 8.5 Ssaki łożyskowe {#ssaki}
+[[extra:AMBITNE]] Oprócz łożyskowców istnieją torbacze (kangur) i stekowce (dziobak, składa jaja).
+
 **Cechy wspólne:** **sierść** (włosy), gruczoły skórne — potowe, łojowe i **mlekowe** (karmienie młodych **mlekiem**), **zróżnicowane zęby** (siekacze, kły, przedtrzonowe, trzonowe — dostosowane do pokarmu), płuca i **przepona**, dobrze rozwinięty mózg, **stałocieplność**. **Rozmnażanie:** zapłodnienie wewnętrzne, zarodek rozwija się w **macicy**, odżywiany przez **łożysko**; **żyworodne**; opieka nad potomstwem. **Różnorodność:** ląd (sarna), woda (delfin, foka), powietrze (nietoperz), gleba (kret). **Znaczenie:** pokarm, praca, odzież, towarzysze człowieka; rozsiewanie nasion; niektóre wyrządzają szkody (gryzonie w uprawach).
 
 ### 8.6 Porównanie kręgowców {#porownanie}
@@ -448,7 +452,7 @@ BHP: brak szczególnych zagrożeń; po doświadczeniu umyć ręce.
 ## 10 | Klinika błędów {#klinika}
 
 ::: mity
-„Wirusy to najmniejsze bakterie.” || Wirusy nie mają budowy komórkowej i nie są organizmami; bakterie są komórkami.
+„Wirusy to najmniejsze bakterie.” || Wirusy nie mają budowy komórkowej i nie namnażają się samodzielnie (zwykle nie zalicza się ich do organizmów); bakterie są komórkami.
 „Grypę leczy się antybiotykiem.” || Antybiotyki działają na bakterie, nie na wirusy.
 „Wszystkie bakterie są chorobotwórcze.” || Większość jest pożyteczna lub obojętna: rozkład, wiązanie azotu, fermentacja mlekowa, bakterie jelitowe.
 „Mchy mają korzenie.” || Mają chwytniki, które tylko przytwierdzają roślinę.
@@ -603,7 +607,7 @@ a) Czy temperatura wpływa na kiełkowanie nasion rzeżuchy? b) A — 20°C (war
 - płazy i ssaki
 ! Temperatura ciała ptaków i ssaków nie zależy od temperatury otoczenia.
 
-? W doświadczeniu badającym wpływ światła na kiełkowanie próba kontrolna to:
+? W doświadczeniu badającym wpływ światła na kiełkowanie próba badawcza stoi w ciemności. Próba kontrolna to:
 - nasiona bez wody w ciemności
 + nasiona w tych samych warunkach co badawcze, ale na świetle
 - nasiona innego gatunku na świetle
@@ -620,7 +624,7 @@ Nazwa dwuczłonowa | rodzaj (wielką literą) + epitet gatunkowy, np. *Canis lup
 Pięć królestw | bakterie, protisty, grzyby, rośliny, zwierzęta | basic:klasyfikacja
 Budowa wirusa | DNA lub RNA w białkowym płaszczu (kapsydzie) | basic:wirusy
 Dlaczego wirus nie jest organizmem? | brak komórki i przemiany materii; namnaża się tylko w komórce | basic:wirusy
-Choroby wirusowe | grypa, ospa wietrzna, różyczka, świnka, odra, AIDS | basic:wirusy
+Choroby wirusowe | grypa, ospa wietrzna, różyczka, świnka, odra, zakażenie HIV (→ AIDS) | basic:wirusy
 Choroby bakteryjne | gruźlica, borelioza, tężec, salmonelloza | basic:bakterie
 Czego nie ma komórka bakterii? | jądra (DNA w nukleoidzie), mitochondriów, chloroplastów | basic:bakterie
 Jak rozmnażają się bakterie? | przez podział komórki | basic:bakterie
@@ -659,7 +663,7 @@ Pęcherz pławny | narząd ryby — unoszenie się w wodzie | basic:zwierzeta
 Linia boczna | narząd ryby wyczuwający ruchy wody | basic:zwierzeta
 Skrzek | jaja płazów w galaretowatej osłonce | basic:zwierzeta
 Kości pneumatyczne | lekkie kości ptaków wypełnione powietrzem | basic:zwierzeta
-Gniazdownik / zagniazdownik | pisklęta samodzielne (kura) / nagie i ślepe (wróbel) | extra:ambitne
+Gniazdownik / zagniazdownik | gniazdownik: pisklęta nagie lub słabo opierzone, ślepe, długo w gnieździe (wróbel) / zagniazdownik: pisklęta w puchu, widzące, szybko opuszczają gniazdo (kura, kaczka) | extra:ambitne
 Cechy ssaków | sierść, gruczoły mlekowe, zróżnicowane zęby, łożysko, przepona | basic:zwierzeta
 Próba kontrolna | wszystkie warunki jak w badawczej, bez zmiany badanego czynnika | exam:konkurs
 Zmienna niezależna / zależna | to, co zmieniamy / to, co mierzymy | exam:konkurs
