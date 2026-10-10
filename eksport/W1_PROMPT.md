@@ -9,7 +9,7 @@
 2. Dane liczbowe — poprawna wartość i źródło; czy wartość jest orientacyjna.
 3. **Klucze** do ćwiczeń, zadań, testów i fiszek — numer i poprawna odpowiedź, jeśli klucz jest błędny lub niepełny.
 4. **Opisy grafik** (linie `@opis` pod `@viz`) — czy to, co pokazuje grafika, jest poprawne.
-5. Doświadczenia — próba kontrolna, zmienne, wnioski, bezpieczeństwo.
+5. Doświadczenia (jeśli są) — próba kontrolna, zmienne, wnioski, bezpieczeństwo. W języku polskim zamiast tego: przykłady zdań i z lektur, zgodność z normą językową i kluczami CKE.
 
 **Część 2 — Zakres:** czy lekcja obejmuje **pełny zakres** podstawy programowej (i wymagań egzaminu/konkursu) dla tego tematu? Wypisz brakujące zagadnienia, pojęcia, typowe zadania egzaminacyjne i ważne dane (liczby, przykłady, wyjątki).
 

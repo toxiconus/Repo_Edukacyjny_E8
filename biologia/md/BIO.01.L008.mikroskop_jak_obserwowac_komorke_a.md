@@ -108,6 +108,8 @@ Przy większym powiększeniu zwykle widzimy mniejszy obszar preparatu. Dlatego o
 
 **Preparat świeży (mokry)** robisz na lekcji tuż przed obserwacją (kropla wody, szkiełko nakrywkowe). **Preparat trwały** jest przygotowany wcześniej, zwykle fabrycznie, często wybarwiony i zabezpieczony do wielokrotnego użytku. **Barwienie** zwiększa kontrast, ale może zmienić wygląd struktur i zabić komórki — nie zawsze jest potrzebne.
 
+**Ciekawostka — płyn Lugola.** To brunatny roztwór **jodu w jodku potasu** (nazwa od francuskiego lekarza J. Lugola, XIX w.). Z **skrobią** daje granatowe, prawie czarne zabarwienie — to klasyczna **próba na skrobię** (kropla na przekrojony ziemniak). W preparacie skórki cebuli lekko podbarwia komórki na żółtobrązowo i zwiększa kontrast, ale nie jest typowym barwnikiem jądra; do jądra częściej używa się np. błękitu metylenowego. Lugol plami skórę i ubrania i nie wolno go połykać — pracuj w rękawiczkach, zgodnie z poleceniem nauczyciela.
+
 **Uwaga na artefakty.** Pęcherzyk powietrza ma zwykle okrągły kształt i wyraźną, ciemną obwódkę — nie jest komórką ani organellum. Kurz, porysowane szkiełko albo nierówna kropla wody też mogą udawać strukturę biologiczną. Jeśli podejrzewasz artefakt: zmień ostrość, przesuń preparat i porównaj z innymi polami widzenia.
 
 Nie każdy preparat powinien być mokry. Gotowe preparaty trwałe obserwuje się zgodnie z instrukcją.
