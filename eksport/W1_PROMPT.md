@@ -31,8 +31,14 @@
 
 **Część 4 — Ulepszenia dydaktyczne:** lepsza kolejność wyjaśnień, intuicyjne analogie, przykłady krok po kroku, pytania sprawdzające zrozumienie po definicjach, „znajdź błąd”, zadania na przekształcanie i z uzasadnieniem, karta samokontroli. Podawaj **gotowy tekst do wklejenia** (po polsku, poziom ucznia klasy 8) i wskaż, w której sekcji go umieścić. Nie przepisuj całych lekcji — tylko konkretne fragmenty.
 
-**Część 5 — Własne ambitne przykłady (obowiązkowo, bez dopytywania):** rozwiń treść o **własne** przykłady i zadania — także trudniejsze, z lektur, z życia, z tekstów użytkowych, przypadki graniczne i „pułapki” — z kluczem. Nie ograniczaj się do poprawiania istniejących; dopisz co najmniej **3–5 nowych** na lekcję (oznacz poziom: E8 / ambitny / konkursowy).
+**Część 5 — Wykład, mini-wykłady i ciekawostki (obowiązkowo, bez dopytywania):** do każdej lekcji napisz:
+- **pełny wykład** „od zera” (ok. 250–500 słów) — spójne wyjaśnienie tematu językiem ucznia, z analogią, przykładami krok po kroku i najczęstszą pułapką; tak, żeby uczeń zrozumiał temat sam, bez nauczyciela;
+- **2–3 mini-wykłady** (po 60–120 słów) do miejsc, które w lekcji są suche lub zbyt skrótowe — z odpowiedzią na pytanie „po co to?” i „jak to sprawdzić?”;
+- **3–5 ciekawostek** (pochodzenie pojęcia, historia, zaskakujące fakty, przykłady z literatury, nauki lub codzienności) — krótko i z poprawnymi danymi.
+Podaj, w której sekcji wkleić każdy fragment.
+
+**Część 6 — Własne ambitne przykłady (obowiązkowo, bez dopytywania):** rozwiń treść o **własne** przykłady i zadania — także trudniejsze, z lektur, z życia, z tekstów użytkowych, przypadki graniczne i „pułapki” — z kluczem. Nie ograniczaj się do poprawiania istniejących; dopisz co najmniej **3–5 nowych** na lekcję (oznacz poziom: E8 / ambitny / konkursowy).
 
 **Charakter kursu:** uczeń uczy się **sam, we własnym tempie, kiedy może**. Nie proponuj planów powtórek według dni ani limitów czasu, notatek dla nauczyciela, zadań domowych ani pytań „do rozmowy na lekcji”. Samoocena, karty powtórki i pytania „do siebie” — tak. Grafiki proponuj tylko, gdy naprawdę pomagają zrozumieć (proces, zależność, schemat) — w języku polskim wyjątkowo.
 
-**Format odpowiedzi:** dla każdej lekcji nagłówek `# KOD. Tytuł`, potem podsekcje: `## Błędy` (lista `[sekcja/numer] — błąd — poprawka — źródło`), `## Braki w zakresie i luki w podstawie`, `## Poszerzenie horyzontu`, `## Ulepszenia` (sekcja → gotowy tekst), `## Własne przykłady` (gotowe do wklejenia, z kluczem). Na końcu lekcji „Bez uwag:”. Pomijaj uwagi typu „poprawne, bez zmian”. Bez LaTeX-a (wzory w Unicode). Nie dodawaj linków-przypisów w tekście do wklejenia.
+**Format odpowiedzi:** dla każdej lekcji nagłówek `# KOD. Tytuł`, potem podsekcje: `## Błędy` (lista `[sekcja/numer] — błąd — poprawka — źródło`), `## Braki w zakresie i luki w podstawie`, `## Poszerzenie horyzontu`, `## Ulepszenia` (sekcja → gotowy tekst), `## Wykład i mini-wykłady`, `## Ciekawostki`, `## Własne przykłady` (gotowe do wklejenia, z kluczem). Na końcu lekcji „Bez uwag:”. Pomijaj uwagi typu „poprawne, bez zmian”. Bez LaTeX-a (wzory w Unicode). Nie dodawaj linków-przypisów w tekście do wklejenia.
