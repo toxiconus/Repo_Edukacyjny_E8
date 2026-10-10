@@ -45,6 +45,22 @@ Wszystko dobrze — przejdź do §3 (test orzeczenia). Kłopot z pytaniem 1 — 
 Ma jedno orzeczenie — osobową formę *chcę*; *odpocząć* to bezokolicznik, który uzupełnia jej znaczenie, a nie drugie orzeczenie.
 :::
 
+## 1a. Wykład — ile jest „silników” w wypowiedzeniu?
+Pomyśl o zdaniu jak o pojeździe. **Orzeczenie to silnik** — dzięki niemu wypowiedź „jedzie”: coś się dzieje, ktoś coś robi, coś jest jakieś. *Pies szczeka.* — jeden silnik, jedno zdanie pojedyncze. *Pies szczeka i kot ucieka.* — dwa silniki, zdanie złożone.
+
+A co z wypowiedziami bez silnika? *Cisza!*, *Zakaz wstępu.*, *Do domu!* — wszyscy je rozumieją, choć nie ma w nich orzeczenia. To **równoważniki zdania**: „pojazdy” pchane siłą sytuacji. W ogłoszeniu, nagłówku czy w dialogu nie potrzebują silnika, bo kontekst dopowiada resztę.
+
+Najtrudniejsze jest **liczenie silników**. Nie każda forma czasownika nim jest:
+- *Chcę **czytać*** — silnik to *chcę*; *czytać* (bezokolicznik) tylko dopowiada, czego chcę;
+- *Wracając do domu, spotkałem kolegę* — silnik to *spotkałem*; *wracając* (imiesłów) to doczepiony wagonik;
+- *Zadanie **zostało rozwiązane*** — to jeden silnik złożony z dwóch części.
+
+Dlatego szukasz **osobowych form czasownika** (i orzeczeń imiennych typu *jest wesoły*), a nie „wszystkiego, co wygląda jak czasownik”.
+
+**Długość nie ma znaczenia.** *Bardzo zdolna uczennica starannie rozwiązała trudne zadanie z matematyki* to wciąż jedno orzeczenie — zdanie pojedyncze, tylko bogato rozwinięte. A *Świta.* to pełne zdanie z jednego słowa.
+
+**Najczęstsza pułapka:** imiesłowowy równoważnik z innym wykonawcą niż orzeczenie — *Wracając do domu, zaczął padać deszcz* (deszcz nie wracał!). Zawsze pytaj: kto wraca, a kto „pada”?
+
 ## 2. Formy, które nie są samodzielnym orzeczeniem
 - **Bezokolicznik** (*czytać, odpocząć*): w *Chcę czytać* orzeczeniem jest *chcę*. Bezokolicznik wchodzi w skład orzeczenia przy wyrazach typu *trzeba, można, warto* (*Trzeba pracować.* — orzeczenie: *trzeba pracować*) albo tworzy wypowiedzenie bezokolicznikowe (*Nie palić!*), które na egzaminie ósmoklasisty traktujemy jak równoważnik zdania (brak formy osobowej).
 - **Imiesłów przysłówkowy** (*idąc, przeczytawszy*) — tworzy imiesłowowy równoważnik zdania (§6), nie orzeczenie.
@@ -96,6 +112,10 @@ Wykonawca czynności z imiesłowu i wykonawca czynności z orzeczenia **muszą b
 :::
 
 Szczegóły tworzenia imiesłowów: G06.
+
+::: karta understand | W skrócie — po co równoważniki?
+Równoważnik to nie „zdanie gorszego sortu”. W ogłoszeniach (*Zakaz palenia*), nagłówkach (*Pożar w centrum miasta*), instrukcjach (*Nie dotykać!*) i dialogach (*— Kawa? — Chętnie.*) jest **lepszy** od pełnego zdania: krótszy, szybszy, bardziej wyrazisty. Jak sprawdzić, czy masz równoważnik? Poszukaj osobowej formy czasownika — jeśli jej nie ma (i nie ma orzeczenia imiennego), to równoważnik.
+:::
 
 ## 7. Rodzaje wypowiedzeń według celu
 - oznajmujące: *Jutro mamy sprawdzian.*
@@ -169,6 +189,13 @@ Określ: zdanie pojedyncze (rozwinięte / nierozwinięte / bezpodmiotowe), zdani
 
 ::: odp | Klucz
 Jedno orzeczenie: *usiadł* → **zdanie pojedyncze rozwinięte**. *Aby odpocząć* to okolicznik celu (usiadł po co?) wyrażony spójnikiem *aby* z bezokolicznikiem — nie ma tu drugiej formy osobowej. Porównaj: *Przyszedłem, żeby pomóc* (pojedyncze) i *Przyszedłem, żebyś mi pomógł* (złożone — *pomógł* to forma osobowa, zdanie podrzędne celu).
+:::
+
+## 13a. Poszerzenie horyzontu
+::: karta extra | Ciekawostki
+- **Najkrótsze zdanie** po polsku może mieć jedno słowo: *Pada.*, *Świta.*, *Czytam.* — bo polski czasownik „zawiera” w końcówce osobę. Po angielsku trzeba dodać podmiot: *It rains.*, *I read.*
+- **Język nagłówków:** dziennikarze uwielbiają równoważniki (*Rekordowe upały w Polsce*, *Koniec sezonu*) — są krótkie i przyciągają wzrok. Zauważ, ile ich jest na pierwszej stronie dowolnego portalu.
+- [[exam:KONKURS]] **Imiesłowowy równoważnik** to konstrukcja „pożyczająca” wykonawcę od orzeczenia — dlatego błąd *Siedząc przy oknie, zrobiło mi się zimno* jest tak częsty: zdanie z *zrobiło się* nie ma wykonawcy, którego imiesłów mógłby „pożyczyć”.
 :::
 
 ## 14. Fiszki

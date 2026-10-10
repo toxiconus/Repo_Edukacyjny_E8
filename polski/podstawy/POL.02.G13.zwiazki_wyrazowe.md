@@ -55,6 +55,20 @@ Nie każde sąsiedztwo wyrazów tworzy związek nadrzędno-podrzędny. W *jabłk
 Od *szybki* (szybki jak bardzo?) — *szybki* jest nadrzędny, *bardzo* podrzędny.
 :::
 
+## 1a. Wykład — jak wyrazy trzymają się razem
+Wyobraź sobie zdanie jako **zespół ludzi trzymających się za ręce**. Nikt nie stoi sam: każdy wyraz jest z kimś połączony. Związki wyrazowe to właśnie te „uściski dłoni” — pary, w których jeden wyraz jest ważniejszy (**nadrzędny**), a drugi coś mu dopowiada (**podrzędny**).
+
+Skąd wiadomo, który jest nadrzędny? Spróbuj zadać pytanie. Od *książki* możesz zapytać *jaka?* — *ciekawa*. Odwrotnie się nie da: *ciekawa co?* brzmi bez sensu. Pytanie zawsze płynie **od nadrzędnego do podrzędnego**, jak woda z góry na dół.
+
+W polszczyźnie wyrazy łączą się na trzy sposoby, a poznasz je po tym, **co dzieje się z końcówkami**:
+- **zgoda** — wyrazy zmieniają się razem, jak partnerzy w tańcu: *ciekawa książka → ciekawej książki → ciekawą książkę*;
+- **rząd** — wyraz nadrzędny „wydaje polecenie”: *słucham* zawsze wymaga dopełniacza (*muzyki*), cokolwiek zrobisz z czasownikiem (*słuchałem muzyki, słuchaj muzyki*);
+- **przynależność** — wyraz podrzędny w ogóle się nie odmienia, tylko „przykleja się” do nadrzędnego: *biegnie szybko, bardzo szybki*.
+
+Nad tym wszystkim stoi **związek główny** — podmiot z orzeczeniem. To kręgosłup zdania; reszta to „żebra”, które do niego dochodzą.
+
+**Najczęstsza pułapka:** sam przypadek nie wystarczy. W *ciekawej książki* oba wyrazy są w dopełniaczu — ale to zgoda, nie rząd, bo zmieniają się **razem**. Rząd jest wtedy, gdy przypadek wynika z **wymagania** wyrazu nadrzędnego. Dlatego zawsze rób test odmiany, zamiast patrzeć tylko na końcówkę.
+
 ## 2. Związek główny i związki poboczne
 W każdym zdaniu z podmiotem najważniejsza relacja łączy **podmiot z orzeczeniem** — to **związek główny**. Wszystkie pozostałe połączenia to **związki poboczne**: zgoda, rząd i przynależność.
 
@@ -115,6 +129,10 @@ Zestawienie ułatwia analizę, ale **nie jest regułą absolutną** — zawsze s
 - *historii — Katowic* — rząd (przydawka dopełniaczowa: historii czego? — Katowic).
 
 **Przykład z lektury (parafraza, „Stary człowiek i morze”):** *Stary człowiek patrzył na morze.* — *człowiek — patrzył* — związek główny; *stary — człowiek* — zgoda; *patrzył — na morze* — rząd (*patrzeć na* + biernik: patrzył na co?).
+
+::: karta understand | W skrócie — po co uczyć się związków?
+Związki wyrazowe to fundament całej składni: gdy wiesz, który wyraz od którego zależy, umiesz zadać pytanie o część zdania (G12), narysować wykres i poprawnie postawić przecinek. Przydają się też w pisaniu: błędy typu *słucham muzykę* czy *ciekawy książki* to właśnie zepsute związki rządu i zgody. Jak to sprawdzić? Odmień parę przez przypadki — test odmiany rozstrzyga w kilka sekund.
+:::
 
 ## 6. Pułapki
 - *czytam ciekawą książkę*: *ciekawą — książkę* to zgoda; *czytam — książkę* to rząd. Jeden wyraz może być w dwóch związkach naraz.
@@ -189,6 +207,13 @@ Określ rodzaj związku: 1. *zielony ogród*; 2. *pisze starannie*; 3. *unika ha
 
 ::: karta understand | Jak oceniam swoją odpowiedź otwartą (0–3 pkt)
 1 pkt — poprawna odpowiedź · 1 pkt — poprawnie wskazany wyraz nadrzędny i podrzędny · 1 pkt — uzasadnienie gramatyczne („czasownik wymaga dopełniacza”, „przymiotnik uzgadnia formę z rzeczownikiem”, „wyraz jest nieodmienny”).
+:::
+
+## 12a. Poszerzenie horyzontu
+::: karta extra | Ciekawostki
+- **Skąd nazwa „rząd”?** To tłumaczenie łacińskiego terminu *rectio* („kierowanie”) — wyraz nadrzędny „kieruje” formą podrzędnego. W gramatyce mówi się też o **rekcji** czasownika: *słuchać* ma rekcję dopełniaczową.
+- **Polski ↔ angielski:** w angielskim przymiotnik się nie odmienia (*a big house — big houses — in a big house*), więc związek zgody jest prawie niewidoczny. W polskim, z siedmioma przypadkami, zgoda „słychać” w każdej końcówce.
+- **Błędy rekcji w mediach:** *bać się o coś* i *obawiać się czegoś* mają różną rekcję — pomylenie ich (*obawiam się o porażkę*) to częsty błąd w wypowiedziach publicznych.
 :::
 
 ## 13. Fiszki

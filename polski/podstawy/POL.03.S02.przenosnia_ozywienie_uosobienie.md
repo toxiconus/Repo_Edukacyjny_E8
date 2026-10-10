@@ -73,6 +73,10 @@ Granica bywa płynna: *wiatr śpiewa* — zwykle ożywienie (śpiewają też pta
 
 *Śmierć zaprosiła go do tańca* — uosobienie (zapraszanie to ludzka intencja); w tradycji literackiej i malarskiej (taniec śmierci, łac. *danse macabre*) to także utrwalony **symbol** — interpretacja zależy od utworu (S06).
 
+::: karta understand | W skrócie — dlaczego język lubi ożywiać świat?
+Mówimy *czas ucieka*, *nadzieja wraca*, *miasto zasypia*, choć czas, nadzieja i miasto nie są ludźmi. Takie obrazy pomagają mówić o tym, czego nie widać: emocjach, przemijaniu, samotności. Zanim nazwiesz środek, sprawdź, **co robi wyraz**: czynność istoty żywej → ożywienie; myślenie, mowa, decyzja, uczucie → uosobienie; znaczenie inne niż dosłowne, bez *jak* → metafora.
+:::
+
 ## 5. Zwierzę w bajce a alegoria
 Zwierzę mówiące i myślące jak człowiek jest uosobione. Ale w bajce mówiące zwierzę może być po prostu **bohaterem świata przedstawionego** (taka konwencja). Gdy postać konsekwentnie reprezentuje utrwaloną cechę lub typ ludzki (lis — spryt, osioł — głupota), pełni funkcję **alegorii** (S06). Nie zakładaj alegorii bez uzasadnienia.
 

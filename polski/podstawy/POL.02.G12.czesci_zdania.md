@@ -84,6 +84,21 @@ W zdaniu **Wczoraj mój starszy brat kupił nowy rower.**
 **Część mowy ≠ część zdania.** Część mowy mówi, *jaki to wyraz* (i nie zmienia się w różnych zdaniach), część zdania — *jaką rolę pełni w tym zdaniu*. Rzeczownik *książka* bywa podmiotem (**Książka** leży.), dopełnieniem (Czytam **książkę**.), a nawet orzecznikiem (To jest **książka**.). Przymiotnik bywa przydawką (**zielony** zeszyt) albo orzecznikiem (Zeszyt jest **zielony**.).
 :::
 
+## 1a | Wykład — kto, co robi i w jakich okolicznościach [[basic:E8]] {#wyklad}
+
+Każde zdanie opowiada małą historię. Żeby ją zrozumieć, zadajesz pięć pytań — i każda odpowiedź to jedna **część zdania**.
+
+**Co się dzieje?** — to **orzeczenie**, serce zdania: *Bilbo **wyruszył** w podróż.* Bez orzeczenia nie ma zdania. **Kto to robi?** — to **podmiot**: ***Bilbo** wyruszył.* Razem tworzą **związek główny** — szkielet, na którym wisi cała reszta.
+
+Pozostałe części to **określenia** — dopowiadają szczegóły:
+- **przydawka** opisuje rzeczownik: jaki? czyj? który? — *mały hobbit, plecak **Bilba***;
+- **dopełnienie** uzupełnia czasownik: kogo? co? czym? o czym? — *zabrał **mapę***;
+- **okolicznik** podaje okoliczności: gdzie? kiedy? jak? dlaczego? — *wyruszył **rano**, **z niechęcią***.
+
+Kluczowa umiejętność to **pytanie od właściwego wyrazu**. Pytanie *jaki?* zadajesz od rzeczownika, *kogo? co?* i *gdzie?* — od czasownika. Ten sam wyraz może być różną częścią zdania: *książka* bywa podmiotem (***Książka** leży*), dopełnieniem (*Czytam **książkę***) albo częścią orzeczenia (*To jest **książka***). Część mowy mówi, *czym* wyraz jest; część zdania — *co robi w tym zdaniu*.
+
+**Najczęstsza pułapka:** wyrażenie przyimkowe nie zawsze jest okolicznikiem. *Czekam **na przystanku*** — gdzie? (okolicznik). *Czekam **na autobus*** — na co? Czasownik *czekać* tego **wymaga** — to dopełnienie. Test: czy czasownik bez tego dopowiedzenia jest „niepełny”?
+
 ## 2 | Procedura: rozbiór zdania w 4 krokach [[basic:E8]] {#procedura}
 
 ::: karta core | 4 kroki — zawsze w tej kolejności
@@ -251,6 +266,10 @@ Wybierz część zdania (przycisk z podkreśleniem), a potem kliknij wyrazy. „
 Konwencje rysowania różnią się między podręcznikami — oceniana jest poprawność zależności, nie wygląd.
 :::
 
+::: karta understand | W skrócie — po co rozbiór zdania?
+Rozbiór to nie sztuka dla sztuki. Kto umie znaleźć podmiot i orzeczenie, ten nie zrobi błędu w zgodzie (*Grupa uczniów **przyszła***, nie *przyszli*), poprawnie postawi przecinki (granice zdań wyznaczają orzeczenia) i szybciej zrozumie trudne zdanie z lektury czy polecenia egzaminacyjnego. Jak sprawdzić rozbiór? Każdą część zdania potwierdź **pytaniem od wyrazu nadrzędnego** — jeśli pytanie brzmi naturalnie, odpowiedź jest dobra.
+:::
+
 ## 10 | Przykłady z lektur [[basic:E8]] {#lektury}
 
 Wszystkie zdania w tabeli to **parafrazy** sytuacji z lektur, nie cytaty — ułożone tak, by ćwiczyć konstrukcję składniową.
@@ -403,6 +422,14 @@ Wyjaśnij, dlaczego w zdaniu *Czekałem na przyjaciela przed kinem* wyrażenia *
 - przyczyny
 + przyzwolenia
 - warunku
+:::
+
+## 14a | Poszerzenie horyzontu {#horyzont}
+
+::: karta extra | Ciekawostki
+- **Skąd te nazwy?** *Podmiot* i *orzeczenie* to kalki z łaciny: *subiectum* („to, co podłożone” — o czym mówimy) i *praedicatum* („to, co orzeczone” — co o tym mówimy).
+- **Polski ↔ angielski:** po angielsku podmiot musi być w zdaniu (*It is raining*, *I am reading*). Po polsku wystarczy *Pada.* i *Czytam.* — końcówka czasownika „zdradza” osobę, dlatego mamy **podmiot domyślny** i zdania bezpodmiotowe.
+- **Wykres zdania** to szkolny wynalazek, ale ten sam pomysł — drzewo zależności między wyrazami — wykorzystują programy tłumaczące teksty i asystenci głosowi, żeby „zrozumieć”, kto co komu zrobił.
 :::
 
 ## 15 | Fiszki {#fiszki}

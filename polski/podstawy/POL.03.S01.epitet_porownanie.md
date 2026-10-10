@@ -50,6 +50,10 @@ Porównanie mówi wprost: „to jest **jak** tamto”. **Metafora** skraca drog�
 Nie — zwykle to informacja. W *zielonej ciszy lasu* *zielona* przenosi barwę na ciszę i buduje nastrój — tu działa artystycznie.
 :::
 
+::: karta understand | W skrócie — pędzel i most
+Dwa opisy tego samego miejsca: *W lesie było ciemno* i *W ciemnym lesie drzewa stały jak straże*. Pierwsze informuje, drugie tworzy obraz i nastrój. **Epitet działa jak pędzel** — nakłada na rzeczownik cechę. **Porównanie działa jak most** — łączy dwa światy przez wspólną cechę. Analizując, nie zatrzymuj się na nazwie: co autor porównuje, jaką cechę podkreśla, jaki nastrój buduje?
+:::
+
 ## 3. Porównanie — budowa
 ::: karta core | Schemat porównania
 **co porównujemy** + **wyraz porównujący** + **z czym porównujemy** + **wspólna cecha**

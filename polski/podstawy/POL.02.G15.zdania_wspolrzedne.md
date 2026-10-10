@@ -49,6 +49,21 @@ W *Wróciliśmy do domu, ponieważ zrobiło się ciemno* część *ponieważ zro
 *Bo chorowałem* odpowiada na pytanie zadane od pierwszego zdania (zostałem dlaczego?) — to zdanie podrzędne przyczyny.
 :::
 
+## 1a. Wykład — zdania, które stoją obok siebie
+Zdanie złożone współrzędnie to **kilka zdań idących ramię w ramię**. Żadne nie jest szefem drugiego, żadne nie odpowiada na pytanie zadane przez drugie. Możesz je rozdzielić kropką i każde nadal będzie miało sens: *Zrobiło się ciemno. Wróciliśmy do domu.*
+
+Po co więc je łączyć? Bo **spójnik mówi, jak się do siebie mają**:
+- **i** — dodaje: to i jeszcze to (*Otworzył zeszyt i zapisał temat*);
+- **albo** — każe wybrać (*Pójdziemy do kina albo zostaniemy w domu*);
+- **ale** — przeciwstawia: miało być tak, a wyszło inaczej (*Chciał pomóc, ale nie zdążył*);
+- **więc** — pokazuje skutek (*Padało, więc wróciliśmy*).
+
+Ta sama para zdań zmienia sens zależnie od spójnika: *Wróciłem i było zimno* — dwa fakty; *Wróciłem, ale było zimno* — rozczarowanie; *Było zimno, więc wróciłem* — przyczyna i skutek. Dlatego relację nazywasz po **sensie**, a spójnik traktujesz jak podpowiedź.
+
+Czasem spójnika nie ma wcale: *Słońce zaszło, ulice opustoszały.* Wtedy wstaw w myślach próbny spójnik (*i? więc?*) i wybierz ten, który najlepiej pasuje.
+
+**Najczęstsza pułapka:** *bo* i *ponieważ* wyglądają podobnie do *więc*, ale wprowadzają zdanie **podrzędne** — odpowiadają na pytanie *dlaczego?*. Test: czy da się zadać pytanie od jednego zdania do drugiego? Tak → podrzędność (G16). Nie → współrzędność.
+
 ## 2. Cztery typy współrzędności
 | Typ | Co robi drugie zdanie z treścią pierwszego? | Częste spójniki | Przykład |
 |---|---|---|---|
@@ -96,6 +111,10 @@ Nie każde zdanie złożone jest tylko współrzędne. *Nie odrobiłem pracy, po
 - *ale przygotowałem się do odpowiedzi* — zdanie **współrzędne przeciwstawne** wobec *nie odrobiłem pracy*.
 
 Najpierw wyznacz granice po orzeczeniach, potem nazwij **każdą** relację osobno.
+
+::: karta understand | W skrócie — przecinek nie decyduje o sensie
+Przecinek pokazuje **granicę** między zdaniami składowymi, ale nie mówi, jaka jest między nimi relacja — to robi spójnik albo sens. Dlatego najpierw podkreśl orzeczenia, postaw pionowe kreski na granicach zdań, nazwij relacje, a przecinki wstaw na końcu: przed *ale, więc, a, lecz* — tak; przed pojedynczym *i, albo* — zwykle nie.
+:::
 
 ## 7. Przekształcanie zdań
 Zdanie bezspójnikowe → spójnikowe (zachowaj sens):
@@ -185,6 +204,13 @@ Wstaw przecinki, zaznacz granice zdań składowych i nazwij relacje:
 2. Interpunkcja poprawna; relacja łączna między pierwszymi zdaniami brzmi niezgrabnie — lepiej: *Wyszedłem na dwór, ale było zimno, więc wróciłem.* (zmiana spójnika zmienia sens).
 3. Pierwsze — współrzędne wynikowe (kurtka to skutek zimna); drugie — *dlatego że* wprowadza przyczynę, więc zdanie podrzędne. Treść ta sama, inna budowa.
 4. Np. *Zadzwoniłem do babci, ale nie odebrała, więc napisałem list.*
+:::
+
+## 13a. Poszerzenie horyzontu
+::: karta extra | Ciekawostki
+- **„Przybyłem, zobaczyłem, zwyciężyłem”** (łac. *Veni, vidi, vici*) — słynne słowa Juliusza Cezara to zdanie złożone współrzędnie, bezspójnikowe, z trzech zdań składowych po jednym słowie. Krótko i rytmicznie — dlatego zapamiętane na 2000 lat.
+- **Polski ↔ angielski:** angielskie *and* obejmuje i nasze *i*, i *a*; polszczyzna rozróżnia dodawanie (*Ja czytam i brat czyta*) od zestawienia różnic (*Ja czytam, a brat rysuje*) — i stawia przecinek tylko przed *a*.
+- **Styl:** długie łańcuchy zdań połączonych samymi *i… i… i…* brzmią jak opowiadanie małego dziecka. Pisarze urozmaicają je spójnikami, zdaniami bezspójnikowymi i podrzędnymi — zobacz, jak robi to autor dowolnej lektury.
 :::
 
 ## 14. Fiszki

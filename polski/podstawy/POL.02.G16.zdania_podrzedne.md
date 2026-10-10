@@ -85,6 +85,10 @@ W obu jest *który*, ale inna zależność: przydawkowe określa **rzeczownik**,
 *Został w domu, ponieważ był chory.* — **podrzędne przyczyny** (został dlaczego?).
 Ta sama treść, inna budowa. Sprawdzian: czy jedna część odpowiada na pytanie od drugiej?
 
+::: karta understand | W skrócie — po co nam zdania złożone?
+Gdy mówimy tylko prostymi zdaniami, wypowiedź brzmi jak lista: *Padał deszcz. Zostaliśmy w domu.* Zdanie złożone pokazuje **zależność**: *Ponieważ padał deszcz, zostaliśmy w domu.* Zdanie podrzędne nie zawsze jest „mniej ważne” — często doprecyzowuje, kiedy, gdzie, dlaczego lub pod jakim warunkiem coś się wydarzyło. Najpierw znajdź orzeczenia, potem zapytaj od części głównej do pozostałej (*co? kiedy? dlaczego? jaki?*).
+:::
+
 ## 6. Interpunkcja — przecinek na granicy zdań
 W typowych zdaniach złożonych podrzędnie stawiamy przecinek **na granicy zdań** — niezależnie od tego, czy podrzędne zaczyna się od *że, który, gdzie, czy, kiedy, ponieważ, aby*. (Wyjątki dotyczą utrwalonych konstrukcji, np. *Zrobił to tak jak należy* bywa pisane bez przecinka — nie są przedmiotem podstawowych zadań.)
 - *Wiem, że przyjdziesz.*
