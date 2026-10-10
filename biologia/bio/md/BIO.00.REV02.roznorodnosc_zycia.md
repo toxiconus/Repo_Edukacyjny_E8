@@ -343,6 +343,9 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 **Zupełne:** jajo → larwa → **poczwarka** → owad dorosły (motyl, chrząszcz, mucha, pszczoła). **Niezupełne:** jajo → larwa podobna do dorosłego → owad dorosły, **bez poczwarki** (konik polny, ważka, pluskwiak).
 :::
 
+@viz przeobrazenie-owadow | Przeobrażenie zupełne i niezupełne owadów | kliknij etap rozwoju
+@opis Dwa rzędy etapów połączonych strzałkami. Górny — przeobrażenie zupełne motyla: kilka żółtawych jaj, zielona gąsienica z segmentów (larwa), brązowa poczwarka zawieszona na nitce (wyróżniona pomarańczowym podpisem), pomarańczowy motyl ze skrzydłami. Dolny — przeobrażenie niezupełne konika polnego: wydłużone jaja, mały zielony konik bez skrzydeł (larwa podobna do dorosłego), duży konik ze skrzydłami; w miejscu poczwarki czerwona przerywana ramka z napisem „brak poczwarki”. Kliknięcie etapu pokazuje jego opis (wygląd, pokarm, co się dzieje). Wniosek: o rodzaju przeobrażenia decyduje obecność poczwarki — w zupełnym larwa jest zupełnie niepodobna do dorosłego i przebudowuje się w poczwarce, w niezupełnym larwa przypomina dorosłego i stopniowo do niego upodabnia się przez linienia.
+
 **Przystosowania do różnych środowisk:** skrzydła (lot), pancerz ograniczający utratę wody (ląd), tchawki, różnorodne aparaty gębowe (gryzący, ssący, kłująco-ssący, liżący). **Znaczenie:** zapylanie roślin, miód i wosk, jedwab, pokarm zwierząt i ludzi; szkodniki upraw (stonka), przenoszenie chorób (kleszcze — borelioza, kleszczowe zapalenie mózgu; komary).
 
 ### 7.5 Mięczaki {#mieczaki}
