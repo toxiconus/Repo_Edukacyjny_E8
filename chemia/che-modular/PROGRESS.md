@@ -68,3 +68,4 @@
 - 2026-10-10 08:00 W1 FULL: G13–G15 przebudowane do v3.0 (+ grafika wykres-zlozonego), prompt W1: własne ambitne przykłady + samodzielna nauka; oznaczenie W1 FULL; usunięte znaczniki czasu (N min) z lekcji POL i BIO; paczka W1 POL G16, G17, S01–S03.
 - 2026-10-10 11:30 W1 FULL: G16, G17, S01–S06, G10 (poprawka pisowni nie + przeciwstawienie, zweryfikowana), G11; wykłady/mini-wykłady/ciekawostki dopisane też w G12–G15; prompt W1 z zachętą i listą kontrolną; narzedzia/sprawdz_wyklady.py. Następne: G01–G09 w 3 paczkach.
 - 2026-10-10 12:05 Tanie porządki: spis SPIS_WSZYSTKICH pokazuje „W1 FULL”, odświeżone MAPA.md i SPIS_LEKCJI_POLSKI.md, usunięte znaczniki czasu z lekcji chemii (26), zasada w CLAUDE.md; testy CHE OK (15 lekcji).
+- 2026-10-10 13:30 Silnik: przycinanie martwych reguł CSS w profilach (tools/css_martwe.py) + odcisk wyglądu tools/styl_odcisk.cjs (390/1280 px identyczny); dist/jeden_plik 20,96 → 20,31 MB; test lekcji OK 15.

@@ -10,7 +10,7 @@ Biblioteka:
 CLI (test bezstratności):
   python3 tools/silnik.py   → lab == monolit (sha1) i che-viz.js == archiwum v0_59 (sha1)
 """
-import hashlib, json, re, subprocess, sys
+import os, hashlib, json, re, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -136,8 +136,12 @@ def z_profilu(prof):
         for it in items:
             allg.setdefault(it["kind"], set()).add(it["id"])
     allow = {k: v - set(prof.get("drop_gfx", {}).get(k, [])) for k, v in allg.items()}
-    return che_viz(lab_html(drop=set(prof.get("drop_mods", [])), gfx_allow=allow, sections=keep,
-                            drop_css=set(prof.get("drop_css", []))))
+    lab = lab_html(drop=set(prof.get("drop_mods", [])), gfx_allow=allow, sections=keep,
+                   drop_css=set(prof.get("drop_css", [])))
+    if prof.get("css_martwe", True) and os.environ.get("CHE_CSS_MARTWE") != "0":   # martwe reguły CSS (klasa/id nieobecne w tym silniku) — tools/css_martwe.py
+        import css_martwe
+        lab = css_martwe.przytnij_html(lab)
+    return che_viz(lab)
 
 
 def sha(s):

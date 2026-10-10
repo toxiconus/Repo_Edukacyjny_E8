@@ -156,7 +156,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 106 KB)
+## chemia/che-modular  (13 pl., 108 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -476,7 +476,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE.01.F00.wspolne_bloku_F.html` 207 KB
 - ⚠`CHE.01.F01.jak_mysli_chemik.html` 158 KB
 
-## chemia/lekcje_md/00  (6 pl., 238 KB)
+## chemia/lekcje_md/00  (6 pl., 237 KB)
 - `CHE.00.LAB.doswiadczenia.md` 29 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.md` 124 KB
 - `CHE.00.REV02.powtorka_klasy_8.md` 20 KB
@@ -696,12 +696,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `UZUPELNIENIA_Z_WATKU.md` 2 KB
 - `ZADANIA.md` 19 KB
 
-## polski  (6 pl., 313 KB)
+## polski  (6 pl., 314 KB)
 - `L001-L006-PL-Wszystkie-lekcje.md` 47 KB
 - `MAPA_POLSKI.md` 14 KB
 - ⚠`POLSKI_PODSTAWA_PLUS_v7.11.md` 209 KB
 - `POSTEP_UZUPELNIANIA.md` 17 KB
-- `SPIS_LEKCJI_POLSKI.md` 16 KB
+- `SPIS_LEKCJI_POLSKI.md` 17 KB
 - `SPIS_TRESCI_POLSKI.md` 9 KB
 
 ## polski/archiwum  (1 pl., 0 KB)
