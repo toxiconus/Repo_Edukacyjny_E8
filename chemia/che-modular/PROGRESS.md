@@ -64,3 +64,4 @@
 - 2026-10-10 grafiki: F02 magnes Fe+S; BIO przeobrażenie owadów, mitoza/mejoza, dobór naturalny; 7 lekcji BIO z istniejącymi grafikami.
 - 2026-10-10 06:45 przekazanie wątku „grafiki + polski G12” (PRZEKAZANIE.md).
 - 2026-10-10 07:10 W1 Perplexity: G12 v3.1, REV01 v1.1 (ATP 30–32 także w grafice), REV02 minimum pkt 1–7 (odp. 2: REV02 pełne, G12 równoważnik, REV01 bilans ATP); paczka W1 dla BIO L009, L031, L013, L008, L007; następne: REV02 (pełne) + L010.
+- 2026-10-10 07:40 W1+ulepszenia Perplexity: L009, L031, L013 (BIO); następne paczki po 2 lekcje (odpowiedź z ulepszeniami ucina się po ~3 lekcjach): L008+L007, potem L010.

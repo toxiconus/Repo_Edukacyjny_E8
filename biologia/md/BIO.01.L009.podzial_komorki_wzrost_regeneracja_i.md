@@ -6,7 +6,7 @@
 - Tytuł roboczy: Podział komórki — zapowiedź (szkic)
 - Dział: Podziały
 - Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
-- Poprzednia: L008 · Następna: L014 / L010
+- Poprzednia: L008 · Następna: L010 (genetyka); rozwinięcie podziałów — L014 (mitoza), L015 (mejoza)
 - Status treści: rozwinięta wersja robocza — wymaga niezależnej recenzji merytorycznej
 - Status HTML: brak HTML
 - Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
@@ -25,15 +25,17 @@ Podziały komórkowe umożliwiają m.in. wzrost organizmu, wymianę zużytych ko
 W uproszczeniu: jedna komórka dzieli się tak, aby powstały dwie komórki potomne o takiej samej liczbie chromosomów jak komórka wyjściowa.
 
 ## 3. Mejoza — fundament
-Mejoza obejmuje dwa podziały i prowadzi do powstania komórek o liczbie chromosomów zmniejszonej o połowę względem komórki wyjściowej diploidalnej. U człowieka wiąże się z powstawaniem komórek rozrodczych.
+Mejoza zaczyna się od komórki diploidalnej (2n) i obejmuje dwa podziały, a jej produkty są haploidalne (n) — mają o połowę mniej chromosomów niż komórka wyjściowa. Redukcja następuje już w mejozie I (rozdzielają się chromosomy homologiczne); w mejozie II rozdzielają się chromatydy siostrzane. U człowieka mejoza prowadzi do powstania komórek, z których rozwijają się gamety.
 
 ## 4. Tabela
 | Cecha | Mitoza | Mejoza |
 |---|---|---|
-| liczba podziałów | 1 | 2 |
-| liczba komórek potomnych | zwykle 2 | zwykle 4 |
-| liczba chromosomów | zachowana | zmniejszona o połowę |
-| główne znaczenie | wzrost, regeneracja, wymiana komórek | powstawanie gamet i różnorodność |
+| replikacja DNA | 1 (przed podziałem) | 1 (przed mejozą I; między I i II — brak) |
+| liczba podziałów jądra | 1 | 2 |
+| co rozdziela się w pierwszym podziale | chromatydy siostrzane | chromosomy homologiczne |
+| liczba komórek potomnych | zwykle 2 | zwykle 4 (u człowieka w oogenezie — 1 komórka jajowa + ciałka kierunkowe) |
+| liczba zestawów chromosomów | zachowana (2n → 2n) | zmniejszona o połowę (2n → n) |
+| główne znaczenie | wzrost, regeneracja, wymiana komórek | powstawanie komórek haploidalnych i różnorodność genetyczna |
 
 ## 5. Nie myl
 **Mitoza ≠ rozmnażanie płciowe.**
@@ -54,7 +56,7 @@ Gamety muszą mieć po 23 chromosomy, aby po połączeniu dwóch gamet powstała
 
 ## 8. Fiszki
 - **Mitoza:** podział umożliwiający powstanie dwóch komórek potomnych o zachowanej liczbie chromosomów.
-- **Mejoza:** dwa kolejne podziały prowadzące do powstania komórek haploidalnych.
+- **Mejoza:** dwa kolejne podziały (po jednej replikacji) prowadzące do powstania komórek haploidalnych; u człowieka z nich rozwijają się gamety.
 - **Gameta:** komórka rozrodcza, u człowieka zawierająca 23 chromosomy.
 
 ---
@@ -63,7 +65,7 @@ Gamety muszą mieć po 23 chromosomy, aby po połączeniu dwóch gamet powstała
 
 ## 9. Najpierw rozróżnij DNA, chromosom i chromatydę
 
-DNA jest cząsteczką zawierającą informację genetyczną. Chromosom to uporządkowana struktura z DNA i białek. Po replikacji chromosom składa się z dwóch chromatyd siostrzanych połączonych w okolicy centromeru. **Replikacja DNA nie jest podziałem komórki** i sama nie zwiększa liczby zestawów chromosomów.
+DNA jest cząsteczką zawierającą informację genetyczną. **Chromosom** to jedna cząsteczka DNA związana z białkami. Po replikacji chromosom składa się z dwóch **chromatyd siostrzanych** (każda zawiera jedną cząsteczkę DNA), połączonych w okolicy centromeru; gdy chromatydy się rozdzielą, każda staje się samodzielnym chromosomem. **Chromosomy homologiczne** to para chromosomów o tych samych genach w tych samych miejscach — jeden od matki, drugi od ojca (nie są swoimi kopiami). **Replikacja DNA nie jest podziałem komórki** i sama nie zwiększa liczby zestawów chromosomów.
 
 Przy liczeniu chromosomów nie liczymy każdej chromatydy jako osobnego chromosomu przed rozdzieleniem chromatyd. Na poziomie rozszerzonym często przyjmuje się liczenie według centromerów; dlatego trzeba zawsze określić etap procesu.
 
@@ -82,21 +84,23 @@ Cykl komórkowy obejmuje wzrost i przygotowanie komórki, replikację DNA oraz p
 5. Odtwarzają się jądra potomne, a chromosomy ulegają dekondensacji.
 6. Cytokineza rozdziela cytoplazmę i zwykle prowadzi do powstania dwóch komórek potomnych.
 
-Nazwy faz mitozy (profaza, metafaza, anafaza, telofaza) pomagają uporządkować obraz, ale najważniejsze jest rozumienie tego, co się dzieje z chromosomami. Szczegóły przebiegu i cytokinezy różnią się między komórkami roślinnymi i zwierzęcymi.
+Nazwy faz mitozy (profaza, metafaza, anafaza, telofaza) pomagają uporządkować obraz, ale najważniejsze jest rozumienie tego, co się dzieje z chromosomami. Szczegóły przebiegu i cytokinezy różnią się między komórkami: u zwierząt cytoplazmę przewęża **bruzda podziałowa**, u roślin (mają sztywną ścianę) między jądrami powstaje **przegroda (płytka komórkowa)**, z której tworzy się nowa ściana.
 
 ## 12. Mejoza krok po kroku
 
-Mejoza obejmuje jedną replikację DNA, po której następują dwa podziały.
+Mejoza obejmuje **jedną** replikację DNA (w fazie S przed mejozą I), po której następują dwa podziały; między mejozą I i II DNA nie kopiuje się ponownie.
 
 - **Mejoza I:** rozdzielają się chromosomy homologiczne; liczba zestawów chromosomów zostaje zredukowana.
 - **Mejoza II:** rozdzielają się chromatydy siostrzane, podobnie pod pewnymi względami do mitozy.
 
-W profazie I chromosomy homologiczne mogą wymieniać odpowiadające sobie odcinki DNA (crossing-over). Wraz z niezależnym rozchodzeniem się par homologicznych i losowym łączeniem gamet przyczynia się to do różnorodności genetycznej.
+W profazie I chromosomy homologiczne łączą się w pary, a ich **niesiostrzane chromatydy** mogą wymieniać odpowiadające sobie odcinki DNA (**crossing-over**) — powstają nowe kombinacje alleli. Drugim źródłem różnorodności w mejozie jest niezależne rozchodzenie się par homologicznych w mejozie I. Losowe łączenie gamet **nie jest częścią mejozy** — zachodzi podczas zapłodnienia i dodatkowo zwiększa różnorodność potomstwa.
 
-**Ważne doprecyzowanie:** u człowieka mejoza uczestniczy w powstawaniu gamet, lecz proces tworzenia plemników i komórek jajowych nie daje identycznych wyników liczbowych. W oogenezie zwykle powstaje jedna duża komórka jajowa i małe ciałka kierunkowe, a nie cztery równoważne komórki jajowe.
+**Ważne doprecyzowanie:** u człowieka mejoza uczestniczy w powstawaniu gamet, lecz proces tworzenia plemników i komórek jajowych nie daje identycznych wyników liczbowych. W oogenezie zwykle powstaje jedna duża komórka jajowa i małe ciałka kierunkowe, a nie cztery równoważne komórki jajowe. W spermatogenezie z jednej komórki powstają cztery plemniki.
+
+**[ZAAWANSOWANY] Błąd rozdziału — nondysjunkcja.** Jeśli chromosomy homologiczne (w mejozie I) albo chromatydy (w mejozie II) nie rozejdą się prawidłowo, powstają gamety z chromosomem nadmiarowym albo brakującym. Po zapłodnieniu zygota ma nieprawidłową liczbę chromosomów (**aneuploidia**) — np. trzy chromosomy 21 w zespole Downa.
 
 @viz podzial-komorki | Mitoza i mejoza krok po kroku | przełącz rodzaj podziału i przechodź przez fazy
-@opis Komórka (jasnozielona elipsa) z modelem 2n = 4: dwie pary chromosomów homologicznych — długie i krótkie, czerwone od matki, niebieskie od ojca; chromosom po replikacji rysowany jest jako dwie chromatydy (dwa pręciki) połączone czarnym centromerem. Przełącznik mitoza / mejoza i przyciski „wstecz/dalej” prowadzą przez fazy. Mitoza: interfaza (jedna chromatyda), replikacja (dwie chromatydy), profaza (zanika otoczka jądra), metafaza (chromosomy pojedynczo w płaszczyźnie środkowej, linie wrzeciona), anafaza (chromatydy siostrzane do biegunów), telofaza (dwie komórki 2n z identycznym zestawem). Mejoza: profaza I (homologi w parach, crossing-over widoczny jako zamienione kolorowe końcówki), metafaza I (pary w płaszczyźnie środkowej), anafaza I (do biegunów idą całe chromosomy), telofaza I (dwie komórki n, chromosomy wciąż z dwiema chromatydami), metafaza II i anafaza II (rozdział chromatyd), telofaza II (cztery komórki n, każda z innym zestawem). Panel pod rysunkiem podaje liczbę chromosomów i chromatyd w komórce oraz ploidię w modelu i u człowieka (46 / 92 / 23). Wniosek: mitoza daje dwie komórki identyczne z macierzystą (2n), a mejoza — przez rozdział par w pierwszym podziale i chromatyd w drugim — cztery różne komórki haploidalne (n).
+@opis Komórka (jasnozielona elipsa) z modelem 2n = 4: dwie pary chromosomów homologicznych — długie i krótkie, czerwone od matki, niebieskie od ojca; chromosom po replikacji rysowany jest jako dwie chromatydy (dwa pręciki) połączone czarnym centromerem. Przełącznik mitoza / mejoza i przyciski „wstecz/dalej” prowadzą przez fazy. Mitoza: interfaza (jedna chromatyda), replikacja (dwie chromatydy), profaza (zanika otoczka jądra), metafaza (chromosomy pojedynczo w płaszczyźnie środkowej, linie wrzeciona), anafaza (chromatydy siostrzane do biegunów), telofaza (dwie komórki 2n z identycznym zestawem). Mejoza: profaza I (homologi w parach, crossing-over widoczny jako zamienione kolorowe końcówki), metafaza I (pary w płaszczyźnie środkowej), anafaza I (do biegunów idą całe chromosomy), telofaza I (dwie komórki n, chromosomy wciąż z dwiema chromatydami), metafaza II i anafaza II (rozdział chromatyd), telofaza II (cztery komórki n, zwykle genetycznie różne). Panel pod rysunkiem podaje liczbę chromosomów i chromatyd w komórce oraz ploidię w modelu i u człowieka (46 / 92 / 23). Wniosek: mitoza daje dwie komórki identyczne z macierzystą (2n), a mejoza — przez rozdział par w pierwszym podziale i chromatyd w drugim — cztery zwykle różne genetycznie komórki haploidalne (n).
 
 ## 13. Mitoza i mejoza — porównanie bez skrótów myślowych
 
@@ -113,7 +117,7 @@ W profazie I chromosomy homologiczne mogą wymieniać odpowiadające sobie odcin
 
 - **Diploidalna (2n):** komórka ma dwa zestawy chromosomów, zwykle po jednym zestawie odziedziczonym od każdego z rodziców u organizmów rozmnażających się płciowo.
 - **Haploidalna (n):** komórka ma jeden zestaw chromosomów.
-- U człowieka typowa komórka somatyczna ma 46 chromosomów (23 pary), a gameta — 23.
+- U człowieka typowa komórka somatyczna ma 46 chromosomów (23 pary), a gameta — 23. Liczba chromosomów jest cechą gatunku (np. pies 78, groch 14).
 - Nie każda komórka człowieka ma 46 chromosomów: przykładem są dojrzałe erytrocyty, które nie mają jądra, oraz gamety z 23 chromosomami.
 
 Po zapłodnieniu dwa haploidalne zestawy łączą się, przywracając diploidalną liczbę chromosomów zygoty.
@@ -141,7 +145,15 @@ Nie wszystkie tkanki regenerują się tak samo. Zdolność do podziałów zależ
 
 Przed replikacją typowa diploidalna komórka somatyczna ma 46 chromosomów. Po replikacji nadal opisujemy ją jako mającą 46 chromosomów, ale każdy składa się z dwóch chromatyd siostrzanych. Po prawidłowej mitozie każda z dwóch komórek potomnych otrzymuje zwykle 46 chromosomów. W mejozie liczba zestawów redukuje się, a produkty haploidalne mają po 23 chromosomy.
 
-To model dla typowej sytuacji. Rzeczywiste komórki mogą wykazywać odstępstwa, a liczba DNA i liczba chromosomów nie są pojęciami zamiennymi.
+| Etap (człowiek) | Chromosomy w komórce | Chromatydy w komórce |
+|---|---:|---:|
+| przed replikacją | 46 | 46 |
+| po replikacji | 46 | 92 |
+| po mejozie I | 23 | 46 |
+| po mejozie II | 23 | 23 |
+| po mitozie | 46 | 46 |
+
+Chromosomy liczymy po **centromerach**, chromatydy — po liczbie cząsteczek DNA. To model dla typowej sytuacji. Rzeczywiste komórki mogą wykazywać odstępstwa, a liczba DNA i liczba chromosomów nie są pojęciami zamiennymi.
 
 ## 18. Ćwiczenie: narysuj tory podziału
 
@@ -157,14 +169,20 @@ Narysuj dwa tory od komórki diploidalnej: jeden dla mitozy, drugi dla mejozy. O
 4. Dlaczego gamety człowieka mają 23 chromosomy?
 5. Uczeń twierdzi: „Mitoza zawsze służy wzrostowi”. Podaj poprawkę.
 6. Wyjaśnij, jak crossing-over wpływa na różnorodność.
+7. Komórka ma 2n = 6. Ile chromosomów i chromatyd ma po replikacji DNA?
+8. Ta sama komórka zakończyła mejozę I. Ile chromosomów ma każda komórka potomna i ile chromatyd ma każdy chromosom?
+9. W komórce widać chromosomy ustawione **parami** w płaszczyźnie środkowej. Który to podział i która faza? A jeśli ustawione są **pojedynczo**?
 
 **Klucz:**
 1. Aby po rozdziale każda komórka potomna otrzymała komplet informacji genetycznej.
 2. Każdy chromosom składa się po replikacji z dwóch chromatyd; liczba chromosomów nie jest tym samym co ilość DNA.
 3. Chromosomy homologiczne; chromatydy siostrzane.
-4. Po połączeniu dwóch gamet powstaje zygota z typową liczbą 46 chromosomów.
+4. Gameta człowieka ma 23 chromosomy (jeden zestaw, n); połączenie dwóch gamet przywraca w zygocie 46 chromosomów (2n). Gdyby gamety miały po 46, liczba podwajałaby się w każdym pokoleniu.
 5. Mitoza umożliwia też wymianę komórek, naprawę tkanek i u niektórych organizmów rozmnażanie bezpłciowe.
-6. Wymiana odcinków między chromosomami homologicznymi tworzy nowe kombinacje alleli.
+6. Wymiana odcinków między niesiostrzanymi chromatydami chromosomów homologicznych tworzy nowe kombinacje alleli.
+7. 6 chromosomów, 12 chromatyd.
+8. 3 chromosomy; każdy ma 2 chromatydy.
+9. Parami — metafaza I mejozy; pojedynczo — metafaza mitozy (albo metafaza II mejozy, wtedy chromosomów jest o połowę mniej).
 
 ## 20. Test końcowy
 
@@ -172,8 +190,10 @@ Narysuj dwa tory od komórki diploidalnej: jeden dla mitozy, drugi dla mejozy. O
 2. Po replikacji DNA typowy chromosom składa się z: A) dwóch chromatyd siostrzanych B) dwóch jąder C) dwóch komórek.
 3. Wyjaśnij jedną różnicę między mitozą a mejozą.
 4. Dlaczego nie należy opisywać oogenezy u człowieka jako powstawania czterech równoważnych komórek jajowych?
+5. Komórka człowieka po replikacji DNA ma: A) 92 chromosomy B) 46 chromosomów i 92 chromatydy C) 23 chromosomy i 46 chromatyd.
+6. W mejozie I rozdzielają się: A) chromatydy siostrzane B) chromosomy homologiczne C) nukleotydy.
 
-**Odpowiedzi:** 1. B; 2. A; 3. Np. mitoza obejmuje jeden podział i zwykle zachowuje liczbę chromosomów, a mejoza dwa podziały i redukuje liczbę zestawów; 4. Podział cytoplazmy jest nierówny i zwykle powstaje jedna duża komórka jajowa oraz małe ciałka kierunkowe.
+**Odpowiedzi:** 1. B; 2. A; 3. Np. mitoza obejmuje jeden podział i zwykle zachowuje liczbę chromosomów, a mejoza dwa podziały i redukuje liczbę zestawów; 4. Podział cytoplazmy jest nierówny i zwykle powstaje jedna duża komórka jajowa oraz małe ciałka kierunkowe; 5. B; 6. B.
 
 ## 21. Słownik i status opanowania
 
@@ -322,10 +342,15 @@ Jeśli zadanie wymaga danych liczbowych lub warunków doświadczenia, podaj je j
 - **Język polski:** precyzyjne wyjaśnienie, odróżnianie obserwacji od wniosku.
 
 ## 22. Zadania z życia codziennego
-W gojeniu rany komórki dzielą się mitotycznie, by zastąpić uszkodzone lub utracone komórki. Gamety powstają inną drogą, bo po zapłodnieniu liczba chromosomów ma wrócić do typowej liczby dla gatunku.
+W gojeniu rany komórki dzielą się mitotycznie, by zastąpić uszkodzone lub utracone komórki. Gamety powstają inną drogą, bo gamety muszą być haploidalne: po zapłodnieniu łączą się dwa haploidalne zestawy i powstaje diploidalna zygota.
 
 ## AUDYT W1 — wynik (2026-10-09, GPT-6)
 - Szkic zachowano w pliku jako materiał archiwalny; dopisano pełną strukturę lekcji 1–22.
 - Treść sprawdzono roboczo pod kątem spójności pojęć, odpowiedzi do zadań i oznaczeń poziomu.
 - Każdy schemat tekstowy ma linię `@opis` opisującą zawartość i główny wniosek.
 - **Ograniczenie:** to redakcyjno-merytoryczna kontrola robocza, nie niezależna recenzja nauczyciela biologii. Dane liczbowe lub mechanizmy wykraczające poza E8 należy weryfikować osobno przed publikacją.
+
+## AUDYT W1 — Perplexity (2026-10-10)
+
+- Wprowadzone: redukcja w mejozie I, tabela mitoza/mejoza (replikacja, co się rozdziela), definicja chromosomu i homologów, cytokineza roślin/zwierząt, crossing-over między niesiostrzanymi chromatydami, losowe łączenie gamet = zapłodnienie, brak replikacji między mejozą I i II, spermatogeneza, nondysjunkcja (zaawansowany), tabela chromosomów i chromatyd, zadania 7–9 i test 5–6, klucz 4, „u człowieka” + przykłady liczby chromosomów.
+- Nieprzyjęte: prometafaza (ponad poziom kursu).

@@ -102,9 +102,9 @@ Jak skopiować DNA wiernie — tak, by błędy były jak najrzadsze?
 
 **Semikonserwatywna:** każda nowa cząsteczka DNA = **1 nić stara + 1 nić nowa**.
 
-**Wynik:** 2 identyczne cząsteczki DNA → 2 chromatydy siostrzane (L012).
+**Wynik:** 2 cząsteczki DNA o tej samej sekwencji (przy prawidłowej replikacji) → to dwie chromatydy siostrzane jednego zreplikowanego chromosomu (L012); każda chromatyda zawiera jedną cząsteczkę DNA.
 
-**Kiedy:** w fazie S przed podziałem. Przed mejozą DNA kopiuje się raz, przed mejozą I; pomiędzy mejozą I i II nie zachodzi kolejna faza S i DNA nie jest ponownie replikowane.
+**Kiedy:** w fazie S cyklu komórkowego, przed podziałem. Przed mitozą i przed mejozą I DNA kopiuje się jeden raz; pomiędzy mejozą I i II nie zachodzi kolejna faza S i DNA nie jest ponownie replikowane.
 
 ### Mnemotechniki
 | # | Mnemotechnika | Znaczenie |
@@ -152,7 +152,7 @@ Replikacja **podwaja** DNA i chromatydy, ale **nie** liczbę chromosomów (L012)
    Stara nić służy jako matryca → nowa nić jest budowana „według szablonu” → wysoka wierność.
 
 3. **Dlaczego komplementarność kluczowa?**  
-   Tylko A–T i C–G dają jednoznaczną, wierną kopię. Zła para = błąd (mutacja).
+   Tylko A–T i C–G dają jednoznaczną, wierną kopię. Zła para to błąd replikacji — zwykle zostaje naprawiony; **mutacją** staje się dopiero wtedy, gdy zmiana utrwali się w DNA.
 
 4. **Dlaczego błędy się zdarzają?**  
    Polimeraza nie jest doskonała, ale ma mechanizm korekcji. Nieskorygowany błąd → mutacja (L020).
@@ -196,9 +196,11 @@ L011 (DNA + komplementarność) → L012 (chromosom + chromatydy)
 ## 8. Poziom zaawansowany  · **[ZAAWANSOWANY]**
 
 - **Helikaza** — rozplata podwójną helisę.
-- **Polimeraza DNA** — dobudowuje nukleotydy i koryguje błędy (proofreading).
-- Nici **antyrównoległe**; synteza w kierunku 5'→3'.
-- Widełki replikacyjne, startery (idea).
+- **Polimeraza DNA** — dobudowuje nukleotydy do nici matrycowej w kierunku 5'→3'; nie zaczyna sama — potrzebuje krótkiego **startera** (RNA). W ujęciu szkolnym przypisujemy jej też korektę błędów (proofreading), ale naprawa DNA obejmuje także inne mechanizmy.
+- Nici **antyrównoległe**: jedna biegnie 5'→3', druga 3'→5'. Przykład: matryca 5'–A T G C C A–3' → nowa nić 3'–T A C G G T–5'.
+- Na **nici wiodącej** synteza jest ciągła, na **opóźnionej** — odcinkami (**fragmenty Okazaki**), które łączy **ligaza DNA**.
+- Widełki replikacyjne; replikacja zachodzi przed podziałem zarówno u eukariontów, jak i u prokariontów (u bakterii — w jednym kolistym chromosomie).
+- Typy mutacji: **substytucja** (zamiana zasady), **insercja** (wstawienie), **delecja** (utrata). Mutacja nie musi zmienić fenotypu.
 - Nawet z korekcją błędy się zdarzają → źródło zmienności i chorób.
 
 ---
@@ -256,8 +258,8 @@ BHP: brak.
 5. Ile cząsteczek DNA powstaje z jednej?
 
 ### 11B. Ćwiczenie prowadzone
-Matryca `A–G–T–C` → nowa nić `T–C–A–G`.  
-Wynik: 2 cząsteczki, każda = stara + nowa.
+Matryca `A–G–T–C` → nowa nić `T–C–A–G` (komplementarna; przy zapisie z końcami: 5'–AGTC–3' → 3'–TCAG–5' — nici są antyrównoległe).  
+Wynik: 2 cząsteczki, każda = stara (matrycowa) nić + nowo zsyntetyzowana nić.
 
 ### 11C. Ćwiczenia samodzielne
 
@@ -301,7 +303,7 @@ Wynik: 2 cząsteczki, każda = stara + nowa.
 
 ## 12. Odpowiedzi
 1. Kopiowanie DNA przed podziałem.  
-2. Przed mitozą i mejozą (faza S).  
+2. W fazie S przed mitozą i przed mejozą I; między mejozą I i II replikacja nie zachodzi.  
 3. A–T, C–G.  
 4. Każda nowa cząsteczka = 1 nić stara + 1 nić nowa.  
 5. T–C–A–G.  
@@ -310,9 +312,9 @@ Wynik: 2 cząsteczki, każda = stara + nowa.
 8. Stara nić = matryca → nowa nić budowana według szablonu.  
 9. Może powstać mutacja (jeśli błąd nie zostanie skorygowany).  
 10. Faza S → 2 chromatydy siostrzane (L012).  
-11. Helikaza rozplata helisę; polimeraza dobudowuje nukleotydy i koryguje.  
+11. Helikaza rozplata helisę; polimeraza dobudowuje nukleotydy (potrzebuje startera) i w ujęciu szkolnym koryguje błędy.  
 12. Z ATGC → TACG (i odwrotnie); 2 hybrydy.  
-13. Kod zdegenerowany / naprawa / mutacja w miejscu nieistotnym.
+13. Błąd może zostać naprawiony; mutacja może nie zmienić białka (kod zdegenerowany), wystąpić w odcinku niekodującym albo zostać zamaskowana przez prawidłowy allel.
 
 **Sposób oceniania:** Podstawa 1; Trening 1+1; Ambitne 2; Zaawansowane 3.
 
@@ -342,6 +344,9 @@ Wynik: 2 cząsteczki, każda = stara + nowa.
 6. (A) Dlaczego semikonserwatywność pomaga zachować informację, ale nie gwarantuje bezbłędności?  
 7. (A) Jak replikacja łączy się z chromatydami?  
 8. (Z) Matryca ATGC — wynik po replikacji. Czy model konserwatywny byłby równie dobry?
+9. (Z) Meselson i Stahl: ile DNA ciężkiego, pośredniego i lekkiego będzie po **dwóch** rundach replikacji w ¹⁴N?
+
+**Klucz:** 1. Kopiowanie DNA przed podziałem komórki. 2. A–T, C–G. 3. Każda potomna cząsteczka = 1 nić stara + 1 nowa. 4. C–T–A–G. 5. Replikacja kopiuje DNA, mitoza dzieli jądro komórki. 6. Stara nić jest matrycą, a pary zasad są jednoznaczne — ale mogą zdarzyć się błędy, nie zawsze naprawione. 7. Dwie cząsteczki DNA po replikacji tworzą dwie chromatydy siostrzane. 8. Dwie cząsteczki, każda z nicią ATGC lub TACG i nicią komplementarną; model konserwatywny też dawałby kopię, ale doświadczenie Meselsona–Stahla go wykluczyło. 9. Ciężkiego — 0; pośredniego — połowa; lekkiego — połowa.
 
 ## 15. Checklista
 - [ ] Wiem, czym jest replikacja i kiedy zachodzi.
@@ -440,9 +445,8 @@ Po rozdzieleniu nici każda z nich staje się matrycą.
 
 Matthew Meselson i Franklin Stahl hodowali bakterie na izotopach azotu: <sup>15</sup>N („ciężki”) i <sup>14</sup>N („lekki”). DNA wirowało w ultrawirówce według gęstości.
 
-Po **jednej** rundzie replikacji **całe DNA miało gęstość pośrednią**. To wyklucza:
-- model **konserwatywny** (jedna cząsteczka cała stara + jedna cała nowa — byłby pasek ciężki i pasek lekki),
-- model **rozproszony** (mieszanina fragmentów w obu niciach — inny rozkład gęstości).
+Bakterie hodowane długo na ¹⁵N przeniesiono na ¹⁴N. Po **jednej** rundzie replikacji **całe DNA w populacji miało gęstość pośrednią** — każda cząsteczka: jedna nić ciężka + jedna lekka. To wyklucza model **konserwatywny** (byłby pasek ciężki i pasek lekki).
+Po **dwóch** rundach: połowa DNA pośrednia, połowa lekka (ciężkiego brak). To wyklucza model **rozproszony** (wtedy całe DNA byłoby jednym pasmem, coraz lżejszym).
 
 Zostaje model **semikonserwatywny**: każda cząsteczka = 1 nić stara + 1 nić nowa.  
 Na E8 nie trzeba procedury; warto wiedzieć, że semikonserwatywność jest **faktem doświadczalnym**.
@@ -512,3 +516,7 @@ Dana nić: 5′–A G T C–3′. Nić komplementarna, zapisana antyrównolegle,
 - Doprecyzowano moment replikacji przed mejozą: nie zachodzi ona ponownie między mejozą I i II.
 - Dodano algorytm pracy z sekwencją i przykład z kierunkami 5′/3′.
 - Zachowano wcześniejszą treść; dopisek nie zastępuje niezależnej recenzji biologicznej ani testu renderowania HTML.
+
+## AUDYT W1 — Perplexity (2026-10-10, odpowiedź urwana w §10)
+
+- Wprowadzone: chromatydy a cząsteczki DNA, faza S przed mitozą i mejozą I, błąd replikacji a mutacja, starter, nici antyrównoległe z przykładem 5'/3', nić wiodąca i opóźniona, ligaza, typy mutacji, replikacja u prokariontów, klucz 2/11/13, klucz testu końcowego i zadanie Meselsona–Stahla po dwóch rundach; poprawiono też opis modelu rozproszonego (wykluczony dopiero po drugiej rundzie).

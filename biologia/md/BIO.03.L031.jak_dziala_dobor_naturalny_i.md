@@ -95,7 +95,7 @@ Dlaczego ludzie hodują rasy psów o różnych cechach?
 
 ## 5. Ściąga — poziom podstawowy  · **[PODSTAWA E8]**
 
-**Dobór naturalny** — mechanizm, w którym lepiej dostosowane osobniki mają większą szansę przeżycia i rozrodu.
+**Dobór naturalny** — proces, w którym osobniki różniące się **dziedzicznymi** cechami mają w danym środowisku różny **sukces rozrodczy**: te, których cechy zwiększają szansę przeżycia lub rozmnażania, zostawiają przeciętnie więcej potomstwa. Środowisko **nie wybiera świadomie** i nie tworzy potrzebnych cech — stwarza warunki, w których jedne cechy są korzystniejsze od innych.
 
 **Warunki doboru:**
 1. Zmienność w populacji.
@@ -107,16 +107,17 @@ Dlaczego ludzie hodują rasy psów o różnych cechach?
 
 | | Naturalny | Sztuczny |
 |---|-----------|----------|
-| Kto wybiera | środowisko | człowiek |
-| Cel | dostosowanie | cecha użytkowa |
-| Przykład | antybiotykooporność | rasy psów |
-| Tempo | wolne | szybkie |
+| Co decyduje o rozmnażaniu? | warunki środowiska | człowiek |
+| Czy świadomie? | nie — nie ma celu; dostosowanie jest **skutkiem** | tak — człowiek wybiera cechę użytkową |
+| Co decyduje o sukcesie? | przeżycie i rozmnażanie w danym środowisku | cecha wybrana przez człowieka |
+| Przykład | antybiotykooporność bakterii | rasy psów, odmiany zbóż |
+| Tempo | zależy od organizmu i siły presji — u bakterii nawet kilka dni | zależy od intensywności hodowli |
 
 ### Mnemotechniki dla tej lekcji
 
 | # | Mnemotechnika | Znaczenie |
 |---|---------------|-----------|
-| 1 | **Środowisko wybiera** | dobór naturalny |
+| 1 | **Środowisko „sprzyja” (nieświadomie)** | dobór naturalny |
 | 2 | **Człowiek wybiera** | dobór sztuczny |
 | 3 | **Zmienność + dziedziczenie + zasoby + rozród** | warunki |
 
@@ -140,13 +141,13 @@ Dlaczego ludzie hodują rasy psów o różnych cechach?
 
 2. **Dlaczego bez dziedziczenia nie ma ewolucji?** Bo cechy nie przechodzą na potomstwo.
 
-3. **Dlaczego bakterie przeżywają antybiotyk?** Bo niektóre już mają oporność (mutacja).
+3. **Dlaczego bakterie przeżywają antybiotyk?** Bo niektóre już mają oporność — z wcześniejszej mutacji albo z genu oporności przejętego od innej bakterii.
 
 4. **Dlaczego „najsilniejszy" to złe określenie?** Bo liczy się **dostosowanie**, nie siła.
 
 ### 6B. Krok po kroku — jak działa dobór naturalny
 
-1. W populacji istnieje zmienność (mutacje, rekombinacja).
+1. W populacji istnieje zmienność: mutacje (powstają losowo — nie „na zamówienie” organizmu) i rekombinacja (nowe kombinacje alleli).
 2. Środowisko faworyzuje niektóre cechy.
 3. Osobniki z korzystnymi cechami mają więcej potomstwa.
 4. Cechy rozprzestrzeniają się w populacji.
@@ -161,7 +162,7 @@ Dlaczego ludzie hodują rasy psów o różnych cechach?
 
 **Obserwacja:** Większość bakterii ginie, ale niektóre przeżywają.
 
-**Wniosek:** Przeżywają te, które miały oporność (już przed antybiotykiem). Antybiotyk nie tworzy oporności — wybiera już istniejącą.
+**Wniosek:** Przeżywają te, które miały oporność (już przed antybiotykiem). Antybiotyk nie uczy bakterii oporności — jest **czynnikiem selekcyjnym**: wrażliwe giną częściej, oporne częściej przeżywają i się rozmnażają, więc w kolejnym pokoleniu jest ich więcej. W rzeczywistości bakterie mogą też przejmować geny oporności od innych bakterii (poziomy transfer genów).
 
 **Ważne:** Bakterie **nie uczą się** oporności — przeżywają te, które już ją miały.
 
@@ -186,9 +187,14 @@ L015 (zmienność) → L020 (mutacje) → L030 (ewolucja) → L031 (dobór)
 
 > **Zaawansowane.**
 
-- **Typy doboru:** kierunkowy, stabilizujący, rozrywający.
-- **Dryf genetyczny** — losowa zmiana częstości alleli w małej populacji.
-- **Efekt wąskiego gardła** — drastyczne zmniejszenie populacji → utrata zmienności.
+- **Typy doboru:**
+  - **kierunkowy** — sprzyja jednej skrajnej wersji cechy (rosnąca oporność bakterii);
+  - **stabilizujący** — sprzyja wartościom pośrednim, eliminuje skrajne (masa urodzeniowa człowieka — najwięcej przeżywa dzieci o średniej masie);
+  - **rozrywający** — sprzyja obu skrajnościom, a nie pośredniej (ptaki o małych i dużych dziobach przy dwóch rodzajach nasion).
+- Dobór działa na **fenotyp** (to, co widać), a skutkiem jest zmiana **częstości alleli** w populacji. Ewoluuje populacja, nie pojedynczy osobnik.
+- **Sukces rozrodczy** to liczba potomstwa, które przeżywa i się rozmnaża — cecha może nie zwiększać przeżycia, a mimo to się rozprzestrzeniać (ogon pawia — dobór płciowy).
+- **Dryf genetyczny** — losowa zmiana częstości alleli, najsilniejsza w małej populacji. Różnica: w doborze o przeżyciu decyduje cecha, w dryfie — przypadek.
+- **Efekt wąskiego gardła** — drastyczne zmniejszenie populacji → utrata zmienności. **Efekt założyciela** — nową populację zakłada kilka osobników, więc ma tylko część zmienności populacji wyjściowej.
 - **Dobór płciowy** — preferencje partnerów wpływają na cechy.
 
 ---
@@ -249,12 +255,14 @@ L015 (zmienność) → L020 (mutacje) → L030 (ewolucja) → L031 (dobór)
 **Typ:** symulacja / model.
 
 ```text
-Problem: Jak dobór działa na populację?
-Hipoteza: Osobniki lepiej widoczne są szybciej eliminowane.
-Materiał: koraliki w różnych kolorach + różne tła.
-Obserwacja: Na tle zielonym zielone koraliki trudniej zauważyć.
-Wniosek: Osobniki lepiej dopasowane do tła mają większą szansę przeżycia.
-Ograniczenia: model nie pokazuje dziedziczenia.
+Problem: Czy widoczność osobników wpływa na ich przeżycie?
+Hipoteza: Osobniki lepiej widoczne są częściej eliminowane.
+Materiał: koraliki w różnych kolorach + tło zielone i tło białe.
+Zmienna niezależna: kolor tła. Zmienna zależna: liczba (odsetek) znalezionych koralików każdego koloru.
+Warunki stałe: liczba i wielkość koralików, czas szukania, ta sama osoba szukająca.
+Obserwacja: Na tle zielonym zielonych koralików znajduje się mniej niż czerwonych.
+Wniosek: Osobniki bardziej widoczne mogą być częściej eliminowane.
+Ograniczenia: model nie pokazuje dziedziczenia — sam nie dowodzi zmiany cechy w kolejnych pokoleniach (to pokazuje symulacja w §6B).
 BHP: brak.
 ```
 
@@ -280,7 +288,7 @@ BHP: brak.
 
 **A. Podstawa**
 1. Zdefiniuj dobór.
-2. 3 warunki.
+2. Podaj trzy z czterech warunków doboru.
 3. Sztuczny?
 4. Po 1 przykładzie.
 
@@ -318,19 +326,19 @@ Dlaczego antybiotykooporność to przykład doboru naturalnego? Uzasadnij mechan
 
 ## 12. Odpowiedzi i sposób oceniania
 
-1. Lepiej dostosowani mają większą szansę przeżycia i rozrodu.
-2. Zmienność, dziedziczenie, zasoby, rozród.
-3. Człowiek wybiera.
-4. Antybiotykooporność.
-5. Rasy psów.
-6. Antybiotyk eliminuje wrażliwe.
-7. Nie uczą się — przeżywają oporne.
-8. Środowisko vs człowiek.
-9. Liczy się dostosowanie, nie siła.
-10. Cecha korzystna gdzie indziej szkodliwa.
-11. Bo dobór wybiera z istniejącej zmienności.
-12. Opis w dodatku.
-13. Losowa zmiana alleli w małej populacji.
+1. Różny sukces przeżycia i rozmnażania osobników o różnych dziedzicznych cechach w danym środowisku.
+2. Dowolne trzy z: zmienność, dziedziczenie, ograniczone zasoby (konkurencja), różny sukces rozrodczy.
+3. Człowiek świadomie wybiera osobniki do rozmnażania, by uzyskać pożądane cechy.
+4. Naturalny: oporność bakterii na antybiotyk, ubarwienie ćmy; sztuczny: rasy psów, odmiany zbóż.
+5. W populacji są bakterie wrażliwe i oporne; antybiotyk zabija głównie wrażliwe, oporne przeżywają, rozmnażają się i przekazują oporność — jest ich coraz więcej.
+6. Bakterie nie uczą się oporności — oporne warianty już istniały (albo przejęły geny), a antybiotyk zwiększył ich udział.
+7. Naturalny — nieświadomy, zależy od warunków środowiska; sztuczny — człowiek świadomie wybiera cechę.
+8. Dostosowanie to nie siła: liczy się przeżycie i liczba potomstwa w danych warunkach.
+9. Tak, np. ciemne ubarwienie ćmy chroni na ciemnej korze, a na jasnej zdradza; cecha korzystna w jednym środowisku bywa szkodliwa w innym.
+10. Dobór nie tworzy cech — działa na istniejącą zmienność (nowe warianty powstają przez mutacje i rekombinację).
+11. Kierunkowy, stabilizujący, rozrywający (z przykładem — §8).
+12. Dryf genetyczny — losowe zmiany częstości alleli w populacji, niezależne od korzyści z cechy.
+13. W małej populacji każdy przypadkowo utracony lub rozmnożony osobnik to duża część całości, więc zmiany częstości alleli są większe.
 
 **Sposób oceniania:** Podstawa 1; Trening 1+1; Ambitne 2; Zaawansowane 3.
 
@@ -340,7 +348,7 @@ Dlaczego antybiotykooporność to przykład doboru naturalnego? Uzasadnij mechan
 
 | Pytanie | Odpowiedź |
 |---------|-----------|
-| Dobór naturalny | Środowisko wybiera |
+| Dobór naturalny | Warunki środowiska sprzyjają cechom zwiększającym sukces rozrodczy (bez celu) |
 | Dobór sztuczny | Człowiek wybiera |
 | Warunki | Zmienność, dziedziczenie, zasoby, rozród |
 | Antybiotykooporność | Przeżywają już oporne |
@@ -358,6 +366,8 @@ Dlaczego antybiotykooporność to przykład doboru naturalnego? Uzasadnij mechan
 6. (A) Dlaczego „najsilniejszy" to złe?
 7. (A) Cecha korzystna gdzie indziej szkodliwa?
 8. (Z) Typy doboru.
+
+**Klucz:** 1. Różny sukces rozrodczy osobników z dziedzicznymi różnicami w danym środowisku. 2. Trzy z: zmienność, dziedziczenie, ograniczone zasoby, różny sukces rozrodczy. 3. Człowiek wybiera osobniki do rozmnażania. 4. Antybiotyk zabija wrażliwe; oporne przeżywają i rozmnażają się. 5. Bakterie się nie uczą — przeżywają oporne. 6. Liczy się dostosowanie i sukces rozrodczy, nie siła. 7. Tak — dostosowanie zależy od środowiska. 8. Kierunkowy, stabilizujący, rozrywający.
 
 ---
 
@@ -427,6 +437,8 @@ Biologia (genetyka, ekologia) · Medycyna (antybiotykooporność) · Rolnictwo (
 2. Dlaczego rasy psów tak się różnią?
 3. Czy człowiek ewoluuje?
 
+**Odpowiedzi:** 1. W populacji bakterii są warianty oporne; leczenie je selekcjonuje, a nieprawidłowe stosowanie (przerwana kuracja, antybiotyk na wirusa) przyspiesza ten proces. 2. Przez wiele pokoleń człowiek wybierał do rozmnażania psy o różnych cechach (dobór sztuczny). 3. Tak — jeśli częstość dziedzicznych cech (alleli) w populacjach ludzkich zmienia się z pokolenia na pokolenie.
+
 ---
 
 ## 23. STATUS LEKCJI
@@ -471,7 +483,7 @@ Stabilizujący / kierunkowy / rozrywający — tylko hasła extra, jeśli są w 
 4. Dlaczego cecha korzystna na pustyni może być zbędna w lesie?  
 5. Most do L020: skąd się bierze nowa zmienność?
 
-Szkic: 2 sztuczny. 3 część komórek już odporna przeżywa. 4 środowisko ustala „korzystne”. 5 mutacje + rekombinacja (mejoza L015).
+**Klucz:** 1. Trzy z: zmienność, dziedziczenie, ograniczone zasoby, różny sukces rozrodczy. 2. Dobór sztuczny — człowiek wybiera do rozmnażania owce o pożądanych cechach (wełna, mleczność). 3. W populacji są bakterie wrażliwe i oporne; antybiotyk (presja) zabija głównie wrażliwe, oporne przeżywają i się rozmnażają. 4. O korzyści z cechy decyduje środowisko — np. gruba warstwa tłuszczu czy kolor maskujący piasek nie pomagają w lesie. 5. Z mutacji i rekombinacji (crossing-over i niezależne rozchodzenie się chromosomów w mejozie — L015).
 
 ### Status doklejki
 2026-09-12 · wcześniejsze sekcje bez zmian.
@@ -532,3 +544,7 @@ Cecha korzystna w jednym środowisku może być mniej korzystna w innym. Dostoso
 ### Ograniczenie audytu
 
 Wprowadzono doprecyzowania pojęciowe i opisy wizualne, lecz nie sprawdzono niezależnie każdego zadania, klucza odpowiedzi ani zgodności zakresu z aktualnym regulaminem konkursu. Liczby, przykłady lokalne i wymagania konkretnego etapu należy walidować osobno.
+
+## AUDYT W1 — Perplexity (2026-10-10)
+
+- Wprowadzone: definicja (dziedziczne cechy, sukces rozrodczy, brak celu i świadomości), tabela naturalny/sztuczny bez „tempa wolne/szybkie”, oporność także przez poziomy transfer genów, losowość mutacji, typy doboru z przykładami, fenotyp a allele, dobór płciowy, dryf a dobór, efekt założyciela, opis modelu z koralikami (zmienne), pełny klucz §12 (był przesunięty), klucz testu §14, odpowiedzi §22.
