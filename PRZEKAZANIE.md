@@ -2,6 +2,12 @@
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
+## Grafiki BIO/CHE — stan 2026-10-10 rano
+- **Zasada:** grafika tylko gdy pomaga zrozumieć (proces, zależność, ćwiczenie) — przed nową sprawdź, czy istniejąca z katalogu nie wystarczy.
+- **Nowe:** CHE F02 `f02-magnes-fes-v01` (mieszanina Fe+S vs FeS); BIO `przeobrazenie-owadow` (REV02), `podzial-komorki` (mitoza/mejoza, L009, L014, L015), `dobor-naturalny` (L031).
+- **Wstawione istniejące:** L004 (lancuch), L006 i L007 (fotosynteza-oddychanie, energia-glukozy), L008 (mikroskop-model), L010 genetyka (od-organizmu-do-genu), L012 (poziomy-dna), L013 (trener-nici).
+- **Bez grafik i w porządku (tabela wystarcza):** porównanie roślin REV02, relacje L042. **Do rozważenia:** L040 ekosystem (obieg materii, przepływ energii — piramida), L016 (zaburzenia podziałów), L030 (dowody ewolucji), chemia — kanon 45 lekcji `chemia/lekcje_md` (modele przy budowie lekcji gotowych).
+
 ## Polski — lekcje wzorcowe (2026-10-10, wątek „wizualizacje/polski”)
 - **G12 Części zdania v3.0** (`polski/podstawy/POL.02.G12.czesci_zdania.md` → `polski/html/`): pełny dialekt (minimum E8, warstwy, rdzeń, diagnoza, procedura, 5 części zdania z tabelami, klinika, ćwiczenia A/B/C z kluczami, zadania E8 z punktacją, test, fiszki, słownik, ściąga). Zachowane treści v2.1 po W1. Nowa biblioteka `polski/szablon/pol-viz.js` (katalog `POL_KATALOG_GRAFIK.md`), podpięta w `narzedzia/lekcja_html.py` (VIZ['pol']): `rozbior-zdania`, `wykres-zdania`.
 - **Decyzja użytkownika (2026-10-10):** w polskim grafiki to **wyjątek** — tylko w niektórych lekcjach, gdy pomagają zrozumieć (np. zależności w zdaniu, wykres); bez ozdób. Domyślnie lekcja polskiego = sam tekst, tabele, ćwiczenia.

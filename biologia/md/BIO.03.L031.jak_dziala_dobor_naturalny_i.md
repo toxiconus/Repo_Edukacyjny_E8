@@ -152,6 +152,9 @@ Dlaczego ludzie hodują rasy psów o różnych cechach?
 4. Cechy rozprzestrzeniają się w populacji.
 5. Po wielu pokoleniach populacja się zmienia.
 
+@viz dobor-naturalny | Symulacja: dobór naturalny w kolejnych pokoleniach | ćmy na korze drzew albo bakterie i antybiotyk
+@opis Po lewej kwadrat z populacją 40 osobników: w trybie „ćmy” jasne i ciemne ćmy na korze, której barwę przełącza przycisk (ciemna — zanieczyszczenia, jasna — porosty); w trybie „bakterie” zielone bakterie wrażliwe i czerwone oporne na antybiotyk. Na starcie cecha rzadka (ciemne ćmy, oporne bakterie) to ok. 10% populacji. Przyciski „następne pokolenie” i „+5 pokoleń” losują przeżycie (lepiej widoczne ćmy i bakterie wrażliwe giną częściej) i rozmnażanie ocalałych z dziedziczeniem cechy; po prawej wykres liniowy udziału cechy w procentach w kolejnych pokoleniach. Panel opisuje wynik i warunki doboru. Wniosek: dobór naturalny nie tworzy nowych cech, tylko zwiększa udział tych, które już istniały i dają większą szansę przeżycia i rozmnażania w danym środowisku; zmiana środowiska odwraca kierunek doboru.
+
 ### 6C. Przykład prowadzony
 
 **Dane:** Bakterie + antybiotyk.
