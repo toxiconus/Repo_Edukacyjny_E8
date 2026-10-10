@@ -924,4 +924,95 @@ mount:function(el,o){
   function losuj(n){for(var i=0;i<n;i++){dz={m:gameta(KM),o:gameta(KO)};ile++;widz[JSON.stringify([dz.m,dz.o].map(function(g){return g.map(function(c){return c.b+'/'+c.f})}))]=1}rys()}
   rys()}});
 
+BIO.define('kontrola-podzialow',{opis:'Model tkanki (70 komórek): dawki UV uszkadzają DNA, „hamulce” naprawa DNA i apoptoza (wł./wył.) usuwają skutki; komórka z 3 mutacjami w genach kontroli dzieli się bez ograniczeń i zajmuje sąsiednie miejsca (guz); liczniki komórek zdrowych, zmutowanych i nowotworowych',
+mount:function(el,o){
+  var C=10,Rw=7,cel=[],nap=true,apo=true,dawki=0,cykle=0;
+  var tools=H('div','bv-tools'),t2=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');[tools,t2,pic,out].forEach(function(x){el.appendChild(x)});
+  var bUV=btn('☀ dawka UV',function(){uv()}),bT=btn('⏱ cykl podziałów',function(){cykl(1)}),b5=btn('+5 cykli',function(){cykl(5)}),bR=btn('od nowa',function(){start()});
+  var bN=btn('naprawa DNA: wł.',function(){nap=!nap;bN.textContent='naprawa DNA: '+(nap?'wł.':'wył.');bN.classList.toggle('on',nap);opis()}),
+      bA=btn('apoptoza: wł.',function(){apo=!apo;bA.textContent='apoptoza: '+(apo?'wł.':'wył.');bA.classList.toggle('on',apo);opis()});
+  bN.classList.add('on');bA.classList.add('on');[bUV,bT,b5,bR].forEach(function(x){tools.appendChild(x)});[bN,bA].forEach(function(x){t2.appendChild(x)});
+  var KOL=['#8fc97a','#f2c14e','#e8913a','#c0392b'],s=svg(440,262,'Model tkanki: komórki zdrowe, zmutowane i nowotworowe');pic.appendChild(s);var kola=[];
+  for(var i=0;i<C*Rw;i++){var x=22+(i%C)*41+(Math.floor(i/C)%2?20:0),y=22+Math.floor(i/C)*34,c=S('circle',{cx:x,cy:y,r:15,stroke:'#5b6672','stroke-width':1.2});s.appendChild(c);kola.push(c)}
+  var leg=[['zdrowa',0],['1–2 mutacje',2],['nowotworowa (3)',3],['puste (apoptoza)',-1]];
+  var lg=H('div','bv-tools');leg.forEach(function(z){lg.appendChild(H('span','bv-score','<span style="display:inline-block;width:11px;height:11px;border-radius:50%;margin:0 5px 0 8px;background:'+(z[1]<0?'#eceff3':KOL[z[1]])+';border:1px solid #5b6672"></span>'+z[0]))});pic.appendChild(lg);
+  function sasiedzi(i){var r=Math.floor(i/C),k=i%C,d=r%2?[[0,-1],[0,1],[-1,0],[-1,1],[1,0],[1,1]]:[[0,-1],[0,1],[-1,-1],[-1,0],[1,-1],[1,0]],w=[];
+    d.forEach(function(q){var rr=r+q[0],kk=k+q[1];if(rr>=0&&rr<Rw&&kk>=0&&kk<C)w.push(rr*C+kk)});return w}
+  function rys(){kola.forEach(function(c,i){var m=cel[i];c.style.fill=m<0?'#eceff3':KOL[m];c.setAttribute('stroke-dasharray',m<0?'3 3':'')});opis()}
+  function licz(){var z=0,mu=0,n=0,p=0;cel.forEach(function(m){if(m<0)p++;else if(m===0)z++;else if(m<3)mu++;else n++});return[z,mu,n,p]}
+  function opis(){var l=licz();out.className='bv-info'+(l[2]>8?' bad':'');
+    out.innerHTML='<b>Dawki UV: '+dawki+' · cykle: '+cykle+' — zdrowe '+l[0]+', zmutowane '+l[1]+', nowotworowe '+l[2]+'</b>'+
+     (l[2]?'Komórka z mutacjami w <strong>trzech</strong> genach kontroli nie słucha sygnałów „stop” — dzieli się w każdym cyklu i wypiera sąsiadów. Tak rośnie guz.':
+      (!nap||!apo?'Wyłączony hamulec: '+(!nap?'bez naprawy DNA każde uszkodzenie zostaje jako mutacja. ':'')+(!apo?'Bez apoptozy komórki z błędami nie są usuwane. ':'')+'Dawkuj UV i puszczaj cykle — guz pojawi się znacznie szybciej.':
+      'Jedna dawka UV prawie nigdy nie tworzy komórki nowotworowej: większość uszkodzeń naprawia się od razu, a komórki z błędami często giną (apoptoza). Potrzeba <strong>wielu</strong> uszkodzeń w <strong>jednej</strong> komórce.'))}
+  function uv(){dawki++;var zyw=[];cel.forEach(function(m,i){if(m>=0)zyw.push(i)});
+    for(var k=0;k<6&&zyw.length;k++){var i=zyw.splice(Math.floor(Math.random()*zyw.length),1)[0];if(nap&&Math.random()<.8)continue;if(cel[i]<3)cel[i]++}rys()}
+  function cykl(n){for(var t=0;t<n;t++){cykle++;var nowe=cel.slice();
+    cel.forEach(function(m,i){if(m>=1&&m<3&&apo&&Math.random()<.5)nowe[i]=-1});
+    cel.forEach(function(m,i){if(m===3){var s2=sasiedzi(i).filter(function(j){return nowe[j]!==3});if(s2.length)nowe[s2[Math.floor(Math.random()*s2.length)]]=3}});
+    nowe.forEach(function(m,i){if(m<0){var z=sasiedzi(i).filter(function(j){return nowe[j]===0});if(z.length&&Math.random()<.6)nowe[i]=0}});
+    cel=nowe}rys()}
+  function start(){cel=[];for(var i=0;i<C*Rw;i++)cel.push(0);dawki=0;cykle=0;rys()}
+  start()}});
+
+BIO.define('eutrofizacja',{opis:'Eutrofizacja jeziora w 5 etapach (suwak): czysta woda → spływ nawozów (azotany, fosforany) → zakwit glonów → rozkład martwych glonów przez bakterie zużywające tlen → przyducha i śnięcie ryb; wskaźnik tlenu i przejrzystości wody na każdym etapie',
+mount:function(el,o){
+  var tools=H('div','bv-tools'),rng=document.createElement('input');rng.type='range';rng.min=0;rng.max=4;rng.value=o.etap||0;rng.setAttribute('aria-label','Etap eutrofizacji');rng.style.flex='1 1 160px';
+  var lab=H('span','bv-score','');tools.appendChild(rng);tools.appendChild(lab);var pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  var E=[
+   ['1. Czyste jezioro','Woda przejrzysta, światło dociera głęboko, rośliny podwodne produkują tlen. Biogenów (azotu, fosforu) jest mało — to one ograniczają wzrost glonów.',90,90,'#7fb3d5',2,4],
+   ['2. Spływ biogenów','Deszcz spłukuje z pól nawozy (azotany, fosforany), do wody trafiają też ścieki i detergenty z fosforanami. Woda wygląda jeszcze dobrze, ale „karma” dla glonów już jest.',85,80,'#7fb3d5',6,4],
+   ['3. Zakwit glonów','Glony i sinice rozmnażają się masowo: woda zielona i mętna, światło nie dociera w głąb, rośliny przy dnie obumierają. Na powierzchni w dzień tlenu bywa sporo, w głębi — coraz mniej.',60,25,'#5f9e5a',40,3],
+   ['4. Rozkład martwych glonów','Krótko żyjące glony opadają na dno. Bakterie (destruenci) rozkładają tę masę i <strong>zużywają tlen</strong> przy oddychaniu — w głębi tlenu ubywa szybko.',25,20,'#6f8f4a',30,2],
+   ['5. Przyducha','Brak tlenu przy dnie: ryby i inne zwierzęta giną (śnięcie ryb), bakterie beztlenowe wytwarzają cuchnący siarkowodór. Jezioro zarasta i wypłyca się szybciej niż naturalnie.',5,15,'#5c6b3a',20,0]];
+  function rys(){var k=+rng.value,e=E[k];lab.textContent=e[0];pic.innerHTML='';var s=svg(440,250,'Jezioro: etap '+e[0]);pic.appendChild(s);
+    s.appendChild(S('rect',{x:0,y:0,width:440,height:60,fill:'#eef6fb'}));
+    s.appendChild(S('path',{d:'M0 60 L120 60 L130 54 L160 50 L180 60 L440 60 L440 250 L0 250z',fill:'#c8b48a'}));
+    s.appendChild(S('path',{d:'M40 60 Q60 210 220 214 Q380 210 400 60z',fill:e[4],opacity:.85}));
+    s.appendChild(S('path',{d:'M0 44 L36 40 L100 36 L130 38 L130 54 L0 60z',fill:'#b5cf7a'}));s.appendChild(T(64,30,'pole',{s:11}));
+    if(k>=1){for(var i=0;i<9;i++){s.appendChild(S('circle',{cx:70+i*10,cy:44+(i%3)*4,r:2.6,fill:i%2?'#3b6fd6':'#c0392b'}))}s.appendChild(S('path',{d:'M110 52 Q130 60 150 72',fill:'none',stroke:'#3b6fd6','stroke-width':2,'stroke-dasharray':'4 3'}));s.appendChild(T(118,90,'N, P',{s:11,w:800,f:'#3b6fd6'}))}
+    for(var j=0;j<e[5];j++){var gx=70+((j*53)%300),gy=66+((j*29)%(k===2?40:120));s.appendChild(S('circle',{cx:gx,cy:gy,r:k===2?4:3,fill:k>=3?'#7a8a4a':'#2f8f3a',opacity:.9}))}
+    if(k>=3){for(var m=0;m<10;m++)s.appendChild(S('ellipse',{cx:150+m*14,cy:206-(m%2)*3,rx:7,ry:3,fill:'#5a5a3a'}));s.appendChild(T(220,232,'martwe glony + bakterie (zużywają O₂)',{s:11,f:'#fff',w:700}))}
+    if(k<=1){[0,1,2].forEach(function(r){var px=120+r*70;s.appendChild(S('path',{d:'M'+px+' 205 q-4 -30 2 -60 M'+(px+8)+' 205 q4 -24 -2 -48',fill:'none',stroke:'#2f7d32','stroke-width':2}))})}
+    for(var f=0;f<e[6];f++){var fx2=130+f*48,fy=120+(f%2)*24;s.appendChild(S('path',{d:'M'+fx2+' '+fy+' q14 -9 28 0 q-14 9 -28 0z M'+(fx2+28)+' '+fy+' l8 -6 l0 12z',fill:'#e8913a',stroke:'#9a4c12'}))}
+    if(k===4){[0,1,2].forEach(function(f){var fx3=160+f*60;s.appendChild(S('path',{d:'M'+fx3+' 66 q14 -9 28 0 q-14 9 -28 0z',fill:'#bbb',stroke:'#777',transform:'rotate(180 '+(fx3+14)+' 66)'}))});s.appendChild(T(250,52,'śnięte ryby',{s:11,f:'#c0392b',w:800}))}
+    function pasek(y,t,v,kol){s.appendChild(T(330,y,t,{s:11,a:'start',w:700}));s.appendChild(S('rect',{x:330,y:y+6,width:100,height:9,rx:4,fill:'#e3e7ec'}));s.appendChild(S('rect',{x:330,y:y+6,width:v,height:9,rx:4,fill:kol}))}
+    s.appendChild(S('rect',{x:322,y:2,width:116,height:58,rx:8,fill:'#fff',opacity:.85}));pasek(12,'tlen w głębi',e[2],e[2]<30?'#c0392b':'#2e8b57');pasek(36,'przejrzystość',e[3],'#3b6fd6');
+    out.className='bv-info'+(k===4?' bad':'');out.innerHTML='<b>'+e[0]+'</b>'+e[1]+(k===4?' <em>Zapobieganie: mniej nawozów i w odpowiednim czasie, pasy zieleni wzdłuż brzegów, oczyszczalnie ścieków usuwające fosfor, detergenty bez fosforanów.</em>':'')}
+  rng.addEventListener('input',rys);rys()}});
+
+BIO.define('homeostaza',{opis:'Homeostaza i ujemne sprzężenie zwrotne: poziom glukozy we krwi (posiłek → insulina, głód/wysiłek → glukagon, tryb cukrzycy typu 1) albo temperatura ciała (upał → pocenie i rozszerzenie naczyń, zimno → dreszcze i zwężenie naczyń); wykres w czasie z pasem normy i schemat pętli regulacji',
+mount:function(el,o){
+  var M={glu:{n:'glukoza we krwi',j:'mg/dl',b:90,lo:60,hi:200,pas:[70,140],
+      z:[['🍞 posiłek',60,'Po posiłku glukoza z jelita trafia do krwi. <strong>Trzustka</strong> wykrywa wzrost i wydziela <strong>insulinę</strong> → komórki (mięśnie, wątroba) pobierają glukozę, wątroba magazynuje ją jako glikogen → poziom wraca do normy.'],
+         ['🏃 głód / wysiłek',-28,'Glukoza jest zużywana, poziom spada. <strong>Trzustka</strong> wydziela <strong>glukagon</strong> → wątroba rozkłada glikogen do glukozy i oddaje ją do krwi → poziom wraca do normy.']]},
+    tem:{n:'temperatura ciała',j:'°C',b:36.6,lo:35.4,hi:38.2,pas:[36,37],
+      z:[['☀ upał / wysiłek',.9,'Ciało się nagrzewa. Czujniki w skórze i krwi → <strong>podwzgórze</strong> (ośrodek termoregulacji) → <strong>pocenie</strong> (parowanie potu chłodzi) i <strong>rozszerzenie naczyń skóry</strong> (skóra czerwienieje, oddaje ciepło) → temperatura spada do normy.'],
+         ['❄ zimno',-.7,'Ciało traci ciepło. <strong>Podwzgórze</strong> uruchamia <strong>dreszcze</strong> (skurcze mięśni wytwarzają ciepło), <strong>zwężenie naczyń skóry</strong> (blada skóra, mniej ciepła ucieka) i „gęsią skórkę” → temperatura rośnie do normy.']]}};
+  var tryb=o.start==='temperatura'?'tem':'glu',cuk=false,H1=[],tools=H('div','bv-tools'),t2=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');[tools,t2,pic,out].forEach(function(x){el.appendChild(x)});
+  var bG=btn('glukoza',function(){ustaw('glu')}),bT=btn('temperatura',function(){ustaw('tem')}),bC=btn('cukrzyca typu 1: nie',function(){cuk=!cuk;bC.textContent='cukrzyca typu 1: '+(cuk?'tak':'nie');bC.classList.toggle('on',cuk);ustaw('glu')});
+  tools.appendChild(bG);tools.appendChild(bT);tools.appendChild(bC);
+  function ustaw(t){tryb=t;BIO.fx.toggle([bG,bT],t==='glu'?0:1);bC.style.display=t==='glu'?'':'none';var m=M[t];H1=[];for(var i=0;i<6;i++)H1.push(cuk&&t==='glu'?160:m.b);
+    t2.innerHTML='';m.z.forEach(function(z){t2.appendChild(btn(z[0],function(){zdarz(z)}))});rys(null)}
+  function zdarz(z){var m=M[tryb],v=H1[H1.length-1],cel=m.b;
+    for(var i=1;i<=3;i++)H1.push(v+z[1]*i/3);v=H1[H1.length-1];
+    var k=(tryb==='glu'&&cuk)?(z[1]>0?.97:.6):.62,dol=(tryb==='glu'&&cuk)?(z[1]>0?170:110):cel;
+    for(var j=0;j<10;j++){v=dol+(v-dol)*k;H1.push(v)}while(H1.length>40)H1.shift();rys(z)}
+  function rys(z){var m=M[tryb];pic.innerHTML='';var s=svg(440,190,'Wykres: '+m.n+' w czasie');pic.appendChild(s);
+    var X0=46,X1=430,Y0=20,Y1=170,y=function(v){return Y1-(Math.max(m.lo,Math.min(m.hi,v))-m.lo)/(m.hi-m.lo)*(Y1-Y0)},x=function(i){return X0+i*(X1-X0)/39};
+    s.appendChild(S('rect',{x:X0,y:y(m.pas[1]),width:X1-X0,height:y(m.pas[0])-y(m.pas[1]),fill:'#dff1e3'}));s.appendChild(T(X1-4,y(m.pas[1])+11,'norma (orientacyjnie)',{s:10,a:'end',f:'#2e7d4f'}));
+    s.appendChild(S('line',{x1:X0,y1:Y1,x2:X1,y2:Y1,stroke:'#8c959f'}));s.appendChild(S('line',{x1:X0,y1:Y0,x2:X0,y2:Y1,stroke:'#8c959f'}));
+    [m.lo,m.pas[0],m.pas[1],m.hi].forEach(function(v){s.appendChild(T(X0-5,y(v),tryb==='tem'?v.toFixed(1).replace('.',','):v,{s:10,a:'end',w:600}))});
+    s.appendChild(T(X0,Y0-9,m.n+' ['+m.j+']',{s:11,a:'start'}));s.appendChild(T(X1,Y1+14,'czas →',{s:10,a:'end'}));
+    var d=H1.map(function(v,i){return(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)}).join(' ');s.appendChild(S('path',{d:d,fill:'none',stroke:'#c0392b','stroke-width':2.5}));
+    var kroki=tryb==='glu'?['bodziec','trzustka (czujnik + ośrodek)',z&&z[1]<0?'glukagon → wątroba':'insulina → komórki, wątroba','poziom wraca']:['bodziec','czujniki → podwzgórze',z&&z[1]<0?'dreszcze, zwężenie naczyń':'pot, rozszerzenie naczyń','temperatura wraca'];
+    var rz=H('div','',null);rz.style.cssText='display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-top:6px;font:700 12px/1.35 Inter,system-ui,sans-serif';
+    kroki.forEach(function(t,i){var k=H('span','',t);k.style.cssText='flex:1 1 90px;padding:6px 8px;border:1px solid #8c959f;border-radius:8px;text-align:center;background:'+(z?'#eef3fb':'#f3f4f6')+';color:#1a2332';rz.appendChild(k);
+      if(i<3){var st=H('span','','→');st.style.cssText='color:#8c959f';rz.appendChild(st)}});
+    var pw=H('span','','↺ ujemne sprzężenie zwrotne: skutek wyłącza bodziec');pw.style.cssText='flex:1 1 100%;color:#2e7d4f;font-weight:600;text-align:center';rz.appendChild(pw);pic.appendChild(rz);
+    out.className='bv-info'+(cuk&&tryb==='glu'&&H1[H1.length-1]>140?' bad':'');
+    out.innerHTML=z?'<b>'+z[0].replace(/^\S+ /,'')+'</b>'+(cuk&&tryb==='glu'?(z[1]>0?'Przy cukrzycy typu 1 trzustka nie wytwarza insuliny — glukoza po posiłku zostaje we krwi (hiperglikemia). Dlatego chorzy podają sobie insulinę.':'Glukagon nadal działa, ale bez insuliny poziom i tak zostaje wysoki.'):z[2])+' <em>To ujemne sprzężenie zwrotne: skutek działania hamuje jego przyczynę.</em>'
+      :'<b>Homeostaza = utrzymywanie stałych warunków</b>Wybierz zdarzenie i obserwuj wykres: odchylenie od normy uruchamia pętlę regulacji (schemat pod wykresem), która przywraca wartość do pasa normy. Kliknięcie kolejnego zdarzenia dopisuje dalszy ciąg wykresu.'}
+  ustaw(tryb)}});
+
 })();

@@ -129,6 +129,9 @@ niekontrolowane podziały  →  możliwy nowotwór
 
 **Kluczowa reguła:** **mutacja ≠ nowotwór**. Jedna zmiana w DNA prawie nigdy nie wystarcza; nowotwór to zwykle **nagromadzenie** kilku–kilkunastu zmian w genach kontroli.
 
+@viz kontrola-podzialow | Model tkanki: mutagen, hamulce i guz | dawkuj UV, puszczaj cykle podziałów, wyłączaj hamulce
+@opis Siatka 70 kółek-komórek tkanki. Kolory: zielona — zdrowa, żółta i pomarańczowa — 1–2 mutacje w genach kontroli, czerwona — komórka nowotworowa (3 mutacje), szare kółko z przerywanym brzegiem — puste miejsce po apoptozie. Przycisk „dawka UV” uszkadza DNA 6 losowych komórek; przy włączonej naprawie DNA ok. 80% uszkodzeń znika. Przycisk „cykl podziałów”: komórki z błędami przy włączonej apoptozie giną w połowie przypadków, puste miejsca zajmują zdrowi sąsiedzi, a komórka czerwona dzieli się w każdym cyklu i zajmuje sąsiednie miejsca (rośnie guz). Przełączniki wyłączają naprawę DNA i apoptozę; licznik podaje dawki, cykle i liczbę komórek każdego rodzaju. Wniosek: pojedyncze uszkodzenie DNA prawie nigdy nie daje nowotworu — potrzeba nagromadzenia kilku mutacji w jednej komórce, a naprawa DNA i apoptoza to hamulce, których wyłączenie przyspiesza powstanie guza (model uproszczony, liczby umowne).
+
 ### 6A. Dlaczego?
 
 1. **Dlaczego UV i dym zwiększają ryzyko?** To **mutageny** — podnoszą liczbę uszkodzeń DNA → więcej szans na mutacje w genach kontroli.

@@ -112,6 +112,9 @@ Cechy organizmu wynikają z komórek, a komórki działają według informacji z
 
 3. **Nerwowy i hormonalny** — regulują pracę organizmu; ich działanie zależy od białek, a więc pośrednio od genów.
 
+@viz homeostaza | Homeostaza: jak organizm wraca do normy | wybierz glukozę albo temperaturę, potem zdarzenie
+@opis Wykres liniowy (czerwona linia) wartości w czasie z zielonym pasem normy (orientacyjnie: glukoza ok. 70–140 mg/dl, temperatura 36–37 °C). Tryb „glukoza”: przyciski „posiłek” (poziom rośnie, trzustka wydziela insulinę, linia wraca do pasa) i „głód / wysiłek” (poziom spada, glukagon uwalnia glukozę z glikogenu wątroby); przełącznik „cukrzyca typu 1” — po posiłku poziom zostaje wysoko nad pasem. Tryb „temperatura”: „upał / wysiłek” (pocenie, rozszerzenie naczyń skóry) i „zimno” (dreszcze, zwężenie naczyń). Pod wykresem cztery kafelki pętli: bodziec → czujnik i ośrodek (trzustka lub podwzgórze) → efektor (hormon lub reakcja skóry i mięśni) → powrót wartości, z przerywaną strzałką zamykającą pętlę. Wniosek: homeostaza działa na zasadzie ujemnego sprzężenia zwrotnego — odchylenie od normy uruchamia działanie przeciwne; przy braku insuliny regulacja glukozy zawodzi.
+
 4. **Odpornościowy** — rozpoznaje „swoje” i „obce”; istotny przy przeszczepach i konflikcie Rh.
 
 ### 6A. Dlaczego?

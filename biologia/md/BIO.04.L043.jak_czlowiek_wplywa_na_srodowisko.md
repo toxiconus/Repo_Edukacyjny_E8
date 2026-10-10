@@ -140,6 +140,9 @@ Człowiek zmienia środowisko szybciej niż natura. Skutki:
 - odnawialne źródła energii,
 - ochrona gatunków i siedlisk.
 
+@viz eutrofizacja | Eutrofizacja jeziora krok po kroku | przesuń suwak przez 5 etapów
+@opis Przekrój jeziora z polem na brzegu i suwakiem pięciu etapów. 1 — czysta, niebieska woda, rośliny przy dnie, ryby. 2 — z pola spływają kropki nawozów (azotany i fosforany, napis „N, P”). 3 — woda zielona i mętna od masy glonów, rośliny przy dnie znikają. 4 — martwe glony leżą na dnie, bakterie rozkładające je zużywają tlen. 5 — przyducha: brak ryb pływających, u góry śnięte ryby brzuchem do góry. W rogu dwa paski: tlen w głębi (od ok. 90% do ok. 5%, czerwony przy niskim) i przejrzystość wody (spada przy zakwicie). Panel opisuje każdy etap, na ostatnim — sposoby zapobiegania. Wniosek: tlen w jeziorze zabija nie sam nawóz, lecz łańcuch skutków: biogeny → zakwit → rozkład przez bakterie → brak tlenu.
+
 ### 6A. Dlaczego?
 
 1. **Dlaczego efekt cieplarniany jest potrzebny?** Bez niego Ziemia byłaby zbyt zimna dla życia.
