@@ -327,12 +327,12 @@ L011 — jak DNA przechowuje informację.
 
 ## 20. Jak się uczyć tej lekcji?
 
-1. Ściąga (5 min).
-2. Przykład prowadzony (5 min).
-3. Mini-check (5 min).
-4. Ćwiczenia A i B (10 min).
-5. Fiszki (5 min).
-6. Test (10 min).
+1. Ściąga.
+2. Przykład prowadzony.
+3. Mini-check.
+4. Ćwiczenia A i B.
+5. Fiszki.
+6. Test.
 
 ---
 

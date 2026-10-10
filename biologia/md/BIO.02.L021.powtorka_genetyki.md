@@ -275,12 +275,12 @@ GENETYKA
 
 ## 10. Jak się uczyć — powtórka genetyki
 
-1. **Mapa (5 min):** narysuj mapę wszystkich lekcji L011–L020.
-2. **Fiszki (10 min):** interleaving z 10 lekcji.
-3. **Mini-check (5 min):** sekcja 5A.
-4. **Ćwiczenia (15 min):** sekcja 5B/C.
-5. **Test przekrojowy (20 min):** sekcja 6.
-6. **Powtórka błędów (10 min):** wróć do lekcji, których dotyczą błędy.
+1. **Mapa:** narysuj mapę wszystkich lekcji L011–L020.
+2. **Fiszki:** interleaving z 10 lekcji.
+3. **Mini-check:** sekcja 5A.
+4. **Ćwiczenia:** sekcja 5B/C.
+5. **Test przekrojowy:** sekcja 6.
+6. **Powtórka błędów:** wróć do lekcji, których dotyczą błędy.
 
 **Zasada 3 pytań po powtórce:**
 1. Co już umiem?

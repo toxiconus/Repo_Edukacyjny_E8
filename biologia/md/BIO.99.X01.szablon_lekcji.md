@@ -1735,17 +1735,17 @@ Potem **L003** (diagnoza) → **L010** (cechy) → **L011 (DNA)** — najważnie
 **Plan nauki:**
     
       
-- Ściąga (5 min).
+- Ściąga.
       
-- Narysuj schemat komórki roślinnej i zwierzęcej (10 min).
+- Narysuj schemat komórki roślinnej i zwierzęcej.
       
-- Mini-check (5 min).
+- Mini-check.
       
-- Ćwiczenia A i B (10 min).
+- Ćwiczenia A i B.
       
-- Fiszki (10 min).
+- Fiszki.
       
-- Test końcowy (10 min).
+- Test końcowy.
       
 - Powtórka za 1 dzień, 3 dni, tydzień.
     

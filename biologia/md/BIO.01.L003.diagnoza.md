@@ -1306,7 +1306,7 @@ START GENETYKI
 
 ---
 
-#### 2. PYTANIA DIAGNOSTYCZNE (5–8 min)
+#### 2. PYTANIA DIAGNOSTYCZNE
 
 1. Co to DNA i gdzie jest w komórce zwierzęcej?
 2. Ile chromosomów ma komórka ciała człowieka?

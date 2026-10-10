@@ -15,4 +15,8 @@
 
 **Część 3 — Ulepszenia:** możesz i powinieneś lekcję ulepszać — celem jest **lepsza podstawa** niż obecna wersja. Inspiruj się najlepszymi materiałami edukacyjnymi (np. Khan Academy, Crash Course, dobre podręczniki i repetytoria, materiały CKE): lepsza kolejność wyjaśnień, intuicyjne analogie, przykłady z życia, typowe błędy uczniów, pytania sprawdzające zrozumienie, zadania krok po kroku. Podawaj **gotowy tekst do wklejenia** (po polsku, poziom ucznia klasy 8) i wskaż, w której sekcji go umieścić. Nie przepisuj całych lekcji — tylko konkretne fragmenty.
 
-**Format odpowiedzi:** dla każdej lekcji nagłówek `# KOD. Tytuł`, potem trzy podsekcje: `## Błędy` (lista `[sekcja/numer] — błąd — poprawka — źródło`), `## Braki w zakresie`, `## Ulepszenia` (sekcja → gotowy tekst). Na końcu lekcji „Bez uwag:”. Pomijaj uwagi typu „poprawne, bez zmian”. Bez LaTeX-a (wzory w Unicode).
+**Część 4 — Własne ambitne przykłady (obowiązkowo, bez dopytywania):** rozwiń treść o **własne** przykłady — także trudniejsze, z lektur, z życia, z tekstów użytkowych, przypadki graniczne i „pułapki” — z kluczem. Nie ograniczaj się do poprawiania istniejących; dopisz co najmniej 3–5 nowych przykładów lub zadań na lekcję (oznacz poziom: E8 / ambitny / konkursowy).
+
+**Charakter kursu:** uczeń uczy się **sam, we własnym tempie, kiedy może**. Nie proponuj planów powtórek według dni ani limitów czasu, notatek dla nauczyciela, zadań domowych ani pytań „do rozmowy na lekcji”. Samoocena, karty powtórki i pytania „do siebie” — tak.
+
+**Format odpowiedzi:** dla każdej lekcji nagłówek `# KOD. Tytuł`, potem cztery podsekcje: `## Błędy` (lista `[sekcja/numer] — błąd — poprawka — źródło`), `## Braki w zakresie`, `## Ulepszenia` (sekcja → gotowy tekst), `## Własne przykłady` (gotowe do wklejenia, z kluczem). Na końcu lekcji „Bez uwag:”. Pomijaj uwagi typu „poprawne, bez zmian”. Bez LaTeX-a (wzory w Unicode).

@@ -613,7 +613,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <a class="skip-link" href="#main">Przejdź do treści</a>
 <header class="lk-bar"><span class="lk-subj"><i></i>Język polski</span><span class="lk-title">G12 Części zdania</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
-<section class="hero card"><div class="hero-kicker">G12 · GRAMATYKA — SKŁADNIA · MASTER v3.0</div><h1>Części zdania</h1><p class="lead">Podmiot, orzeczenie, przydawka, dopełnienie i okolicznik — jak je rozpoznać bez zgadywania, jak zadawać pytania od właściwego wyrazu i jak narysować wykres zdania. Najpierw rdzeń na egzamin ósmoklasisty, potem pułapki i poziom konkursowy.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span></div><div class="lk-meta"><span><b>Zakres:</b> gramatyka — składnia zdania pojedynczego; powiązania: G13 (związki wyrazowe), G14 (zdanie pojedyncze), G01–G11 (części mowy), L008 (synteza)</span><span><b>Czas:</b> 2 × 45 min</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<section class="hero card"><div class="hero-kicker">G12 · GRAMATYKA — SKŁADNIA · MASTER v3.0</div><h1>Części zdania</h1><p class="lead">Podmiot, orzeczenie, przydawka, dopełnienie i okolicznik — jak je rozpoznać bez zgadywania, jak zadawać pytania od właściwego wyrazu i jak narysować wykres zdania. Najpierw rdzeń na egzamin ósmoklasisty, potem pułapki i poziom konkursowy.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span></div><div class="lk-meta"><span><b>Zakres:</b> gramatyka — składnia zdania pojedynczego; powiązania: G13 (związki wyrazowe), G14 (zdanie pojedyncze), G01–G11 (części mowy), L008 (synteza)</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
 <details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza startowa</a><a class="toc-link" href="#co-to">1. Co to jest część zdania?</a><a class="toc-link" href="#procedura">2. Procedura: rozbiór zdania w 4 krokach</a><a class="toc-link" href="#orzeczenie">3. Orzeczenie</a><a class="toc-link" href="#podmiot">4. Podmiot</a><a class="toc-link" href="#przydawka">5. Przydawka</a><a class="toc-link" href="#dopelnienie">6. Dopełnienie</a><a class="toc-link" href="#okolicznik">7. Okolicznik</a><a class="toc-link" href="#trener">8. Trener rozbioru</a><a class="toc-link" href="#wykres">9. Wykres zdania</a><a class="toc-link" href="#lektury">10. Przykłady z lektur</a><a class="toc-link" href="#klinika">11. Klinika błędów</a><a class="toc-link" href="#cwiczenia">12. Ćwiczenia</a><a class="toc-link" href="#e8">13. Zadania w stylu egzaminu ósmoklasisty</a><a class="toc-link" href="#test">14. Test</a><a class="toc-link" href="#fiszki">15. Fiszki</a><a class="toc-link" href="#slownik">16. Słownik</a><a class="toc-link" href="#sciaga">17. Ściąga</a><a class="toc-link" href="#kontrola">Status kontroli</a></nav></details>
 <section id="minimum" class="minimum-card"><h3>Muszę umieć na E8 — 12 punktów</h3>
 <ol>
@@ -637,7 +637,7 @@ html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.activ
 <div class="layer-row"><span class="dot exam"></span><span><b>Konkurs:</b> rodzaje okoliczników, przydawki dopełniaczowe i przyimkowe, wykres zdania rozwiniętego, przypadki sporne i zapis przyjętej analizy</span></div>
 </div>
 <div id="rdzen" class="core-path">
-<div class="cp-title">Rdzeń lekcji — najpierw to (ok. 45 min)</div>
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
 <ol>
 <li><strong><a href="#diagnoza">§0.2</a></strong> — diagnoza: odpowiedz, zanim zaczniesz czytać.</li>
 <li><strong><a href="#co-to">§1</a>–<a href="#procedura">§2</a></strong> — co to jest część zdania i procedura 4 kroków.</li>
@@ -1115,6 +1115,34 @@ mount:function(el,o){el.classList.add('pv');var nr=+(o.start||0)%ZD.length,krok=
   out.innerHTML=koniec?('<b>Gotowe.</b> '+(z.u||'')+(T.P?'':' <br><b>Brak podmiotu na wykresie</b> — zobacz uwagę wyżej (podmiot domyślny albo zdanie bezpodmiotowe).')):
    (widac.length===1?'<b>Krok 1. Orzeczenie:</b> „'+n.t+'” — mówi, co się dzieje. Od niego zaczynamy.':n===T.P?'<b>Krok 2. Podmiot:</b> pytamy od orzeczenia <i>'+(n.g.q||'kto? co?')+'</i> → „'+n.t+'”. Podmiot i orzeczenie tworzą <b>związek główny</b> (dwie kreski).':'<b>Krok '+widac.length+'.</b> Od wyrazu „'+(n.g.h||'')+'” pytamy <i>'+(n.g.q||'')+'</i> → „'+n.t+'” — '+R[n.g.r].n+'.')}
  krok=o.krok==='caly'?99:1;rys()}});
+
+/* ---------- 3. schemat zdania złożonego: współrzędne obok siebie, podrzędne pod spodem ---------- */
+POL.define('wykres-zlozonego',{opis:'Schemat blokowy zdania złożonego: zdania współrzędne w jednym rzędzie ze strzałkami relacji, zdanie podrzędne pod nadrzędnym ze strzałką-pytaniem; warianty do przełączania',
+mount:function(el,o){
+ var W=[
+  {n:'współrzędne (3 zdania)',z:'Zadzwoniłem do kolegi, ale on nie odebrał, więc wysłałem wiadomość.',
+   r:[['Zadzwoniłem do kolegi'],['on nie odebrał','ale','przeciwstawne'],['wysłałem wiadomość','więc','wynikowe']],
+   i:'Trzy zdania składowe stoją <b>obok siebie</b> — każde można wypowiedzieć osobno. Strzałki są poziome: <i>ale</i> — przeciwstawienie, <i>więc</i> — skutek.'},
+  {n:'bezspójnikowe',z:'Słońce zaszło, ulice opustoszały.',
+   r:[['Słońce zaszło'],['ulice opustoszały',',','łączne / wynikowe?']],
+   i:'Brak spójnika — relację ustalasz <b>próbnym spójnikiem</b>: „i” (łączne) albo „więc” (wynikowe). Przecinek tylko oddziela zdania.'},
+  {n:'mieszane',z:'Nie odrobiłem pracy, ponieważ zabrakło czasu, ale przygotowałem się do odpowiedzi.',
+   r:[['Nie odrobiłem pracy'],['przygotowałem się do odpowiedzi','ale','przeciwstawne']],
+   d:['zabrakło czasu','ponieważ','dlaczego?'],
+   i:'Zdanie <i>ponieważ zabrakło czasu</i> odpowiada na pytanie <b>dlaczego?</b> zadane od pierwszego — stoi <b>pod</b> nim (podrzędność). Zdanie z <i>ale</i> stoi obok (współrzędność).'}];
+ var H=POL.H,cur=+(o.start||0),bar=H('div','pv-bar'),box=H('div'),zd=H('div','pv-info'),info=H('div','pv-info');
+ bar.appendChild(H('b',null,'Wariant:'));
+ var bs=W.map(function(w,k){var b=POL.btn(w.n,function(){cur=k;draw()});bar.appendChild(b);return b});
+ var st='display:inline-block;padding:8px 10px;border:2px solid var(--accent,#7a2848);border-radius:10px;background:var(--surface,#fff);font:500 15px/1.3 Georgia,serif;max-width:220px;text-align:center';
+ function draw(){var w=W[cur];bs.forEach(function(b,k){b.classList.toggle('on',k===cur)});
+  zd.innerHTML='<b>Zdanie:</b> '+w.z;
+  var h='<div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px">';
+  w.r.forEach(function(x,k){if(k)h+='<span style="display:inline-flex;flex-direction:column;align-items:center;font:600 12px/1.2 Inter,sans-serif;color:var(--text-soft,#57606a);padding:0 2px"><span>'+x[1]+'</span><span style="font-size:20px;line-height:1">⟷</span><span>'+x[2]+'</span></span>';
+   h+='<span style="'+st+'"><small style="display:block;font:600 11px Inter,sans-serif;color:var(--text-soft,#57606a)">zdanie '+(k+1)+'</small>'+x[0]+'</span>'});
+  h+='</div>';
+  if(w.d)h+='<div style="margin:2px 0 0 30px;font:600 12px/1.3 Inter,sans-serif;color:var(--text-soft,#57606a)"><span style="font-size:20px">↓</span> '+w.d[2]+' ('+w.d[1]+')</div><div style="margin-left:14px"><span style="'+st+';border-style:dashed"><small style="display:block;font:600 11px Inter,sans-serif;color:var(--text-soft,#57606a)">zdanie podrzędne</small>'+w.d[0]+'</span></div>';
+  box.innerHTML=h;info.innerHTML=w.i}
+ el.appendChild(bar);el.appendChild(zd);el.appendChild(box);el.appendChild(info);draw()}});
 
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mountAll);else mountAll();
 function mountAll(){document.querySelectorAll('figure[data-viz]').forEach(function(f){if(f.dataset.on)return;f.dataset.on=1;var id=f.getAttribute('data-viz'),d=REG[id],body=f.querySelector('.lk-fig-body')||f,o={};

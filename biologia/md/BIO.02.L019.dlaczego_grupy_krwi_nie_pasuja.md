@@ -302,7 +302,7 @@ Kodominacja · Iᴬ/Iᴮ/i · Rh · Konflikt serologiczny.
 Konflikt Rh, anty-D · inne układy.
 
 ## 20. Jak się uczyć?
-Ściąga (5 min) → krzyżówka ABO (5 min) → mini-check (5 min) → ćwiczenia (10 min) → fiszki (5 min) → test (10 min).
+Ściąga → krzyżówka ABO → mini-check → ćwiczenia → fiszki → test.
 
 ## 21. Połączenia międzyprzedmiotowe
 Medycyna (transfuzje, konflikt Rh) · Matematyka (P) · Etyka (ojcostwo).

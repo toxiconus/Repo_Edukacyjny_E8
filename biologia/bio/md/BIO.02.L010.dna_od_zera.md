@@ -29,7 +29,7 @@ stopka: **BIOLOGIA L010 v4.0** · Genetyka i DNA od zera · 2026
 - contest | <b>Zaawansowane:</b> regulacja ekspresji, epigenetyka, mtDNA, wyjątki od prostych reguł
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§5](#cechy) Trzy szuflady cech** — posortuj cechy w grafice.
 2. **[§6](#gen-cecha) Od genu do cechy** — fenotyp = geny + środowisko + rozwój.
 3. **[§7](#dna)–[§9](#poziomy)** — czym jest DNA, gdzie leży, DNA / gen / chromosom.

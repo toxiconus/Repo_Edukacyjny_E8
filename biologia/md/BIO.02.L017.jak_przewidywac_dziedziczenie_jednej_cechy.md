@@ -879,12 +879,12 @@ DZIEDZICZENIE 1 GENU
 
 ### Plan nauki
 
-1. Ściąga (5 min).
-2. Przerysuj Punnett dla 4 krzyżówek (10 min).
-3. Mini-check (5 min).
-4. Ćwiczenia A i B (15 min).
-5. Fiszki (10 min).
-6. Test (15 min).
+1. Ściąga.
+2. Przerysuj Punnett dla 4 krzyżówek.
+3. Mini-check.
+4. Ćwiczenia A i B.
+5. Fiszki.
+6. Test.
 7. Powtórka za 1 dzień, 3 dni, tydzień.
 
 ### System powtórek (spaced)

@@ -1092,7 +1092,7 @@ Dlaczego ludzie hodują rasy psów o różnych cechach?</p>
 </section>
 <section id="s22">
 <div class="part-heading"><span class="part-num">20</span> Jak się uczyć?</div>
-<p>Ściąga (5 min) → przykład (5 min) → mini-check (5 min) → ćwiczenia (10 min) → fiszki (5 min) → test (10 min).</p>
+<p>Ściąga → przykład → mini-check → ćwiczenia → fiszki → test.</p>
 <hr class="lk-hr"/>
 </section>
 <section id="s23">
@@ -1618,7 +1618,7 @@ mount:function(el,o){var uid='bm'+Math.random().toString(36).slice(2,7),widok=(o
     else{[[356,34,350,34,'ściana'],[356,52,345,52,'błona'],[356,104,325,104,'chloroplast'],[356,130,300,130,'wakuola'],[356,168,245,168,'mitochondrium'],[64,60,92,60,'jądro'],[64,110,98,110,'rybosom']].forEach(function(l){var L=l[0]<l[2];s.appendChild(S('line',{x1:L?l[0]+3:l[0]-3,y1:l[1],x2:l[2],y2:l[3],stroke:'var(--viz-mut)','stroke-width':1}));s.appendChild(T(l[0],l[1],l[4],{s:10.5,a:L?'end':'start'}))})}
     return s}
   function opis(){if(widok==='model')return'<b>Model szkolny</b><span>Narysowane i podpisane są wszystkie struktury: ściana, błona, jądro, wakuola, chloroplasty, mitochondria, rybosomy. To uproszczenie — kształty i proporcje są umowne, a zwykle nie da się zobaczyć ich wszystkich jednocześnie.</span>';
-    return'<b>Mikroskop świetlny (ok. ×400)</b><span>Wyraźnie widać: ścianę komórkową (granice komórek) i zielone chloroplasty; wakuolę rozpoznajemy po pustym, jasnym środku. '+(barw?'Po barwieniu (np. płynem Lugola) jądro staje się widoczne jako ciemniejsza plamka.':'Jądro jest słabo widoczne — trzeba zabarwić preparat.')+'</span><span>Nie widać: rybosomów (ok. 25 nm) ani szczegółów mitochondriów — są mniejsze niż zdolność rozdzielcza mikroskopu świetlnego (ok. 0,2 µm). Błony komórkowej nie odróżnisz od ściany.</span>'}
+    return'<b>Mikroskop świetlny (ok. ×400)</b><span>Wyraźnie widać: ścianę komórkową (granice komórek) i zielone chloroplasty; wakuolę rozpoznajemy po pustym, jasnym środku. '+(barw?'Po barwieniu (np. błękitem metylenowym; barwnik zależy od preparatu) jądro staje się widoczne jako ciemniejsza plamka.':'Jądro jest słabo widoczne — trzeba zabarwić preparat.')+'</span><span>Nie widać: rybosomów (ok. 25 nm) ani szczegółów mitochondriów — są mniejsze niż zdolność rozdzielcza mikroskopu świetlnego (ok. 0,2 µm). Błony komórkowej nie odróżnisz od ściany.</span>'}
   function draw(){hold.innerHTML='';hold.appendChild(rys());box.innerHTML=opis();tools.innerHTML='';
     [['mikroskop','widok w mikroskopie'],['model','model szkolny']].forEach(function(v){var b=btn(v[1],function(){widok=v[0];draw()});if(widok===v[0])b.className+=' on';b.setAttribute('aria-pressed',String(widok===v[0]));tools.appendChild(b)});
     if(widok==='mikroskop'){var b=btn(barw?'usuń barwienie':'zabarw preparat',function(){barw=!barw;draw()});if(barw)b.className+=' on';tools.appendChild(b)}}

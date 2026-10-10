@@ -842,12 +842,12 @@ DNA
 
 ### Plan nauki
 
-1. Ściąga (5 min).
-2. Przykład prowadzony + uzupełnianie nici (5–7 min).
-3. Mini-check (3 min).
-4. Ćwiczenia A–B, potem C–D (10–15 min).
-5. Fiszki (5 min).
-6. Test końcowy (8–10 min).
+1. Ściąga.
+2. Przykład prowadzony + uzupełnianie nici.
+3. Mini-check.
+4. Ćwiczenia A–B, potem C–D.
+5. Fiszki.
+6. Test końcowy.
 7. Wróć do Kliniki błędów przy pomyłkach.
 
 ### System powtórek (spaced)

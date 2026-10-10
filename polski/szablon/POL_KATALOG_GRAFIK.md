@@ -9,3 +9,4 @@ Użycie w md: `@viz <id> {opcja="wartość"} | Tytuł | podpis` + obowiązkowa l
 | wykres-zdania | wykres zdania pojedynczego (związek główny, określenia pod wyrazem nadrzędnym, pytania na liniach), odsłanianie krok po kroku; te same 12 zdań | start, krok="caly" | G12 |
 
 Bank zdań: `POL.ZDANIA` w `pol-viz.js` (format: [wyraz, rola P/O/Prz/D/Ok, wyraz nadrzędny, pytanie, grupa]; `n:1` — zdanie zaczyna się nazwą własną).
+| wykres-zlozonego | schemat blokowy zdania złożonego: współrzędne obok siebie ze strzałkami relacji (ale/więc/bezspójnikowe), podrzędne pod nadrzędnym ze strzałką-pytaniem; warianty: współrzędne, bezspójnikowe, mieszane | start (0–2) | G15 |

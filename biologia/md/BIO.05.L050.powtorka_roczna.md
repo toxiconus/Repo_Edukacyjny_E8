@@ -261,11 +261,11 @@ ROK
 
 ## 10. Jak się uczyć — powtórka roczna
 
-1. **Mapa (10 min):** narysuj mapę wszystkich bloków.
-2. **Fiszki z 4 bloków (15 min):** interleaving (genetyka + ewolucja + ekologia).
-3. **Test przekrojowy (30 min):** sekcja 6.
-4. **Powtórka błędów (15 min):** wróć do lekcji, których dotyczą błędy.
-5. **Mapa pojęć (10 min):** uzupełnij mapę o to, co pomyliłeś.
+1. **Mapa:** narysuj mapę wszystkich bloków.
+2. **Fiszki z 4 bloków:** interleaving (genetyka + ewolucja + ekologia).
+3. **Test przekrojowy:** sekcja 6.
+4. **Powtórka błędów:** wróć do lekcji, których dotyczą błędy.
+5. **Mapa pojęć:** uzupełnij mapę o to, co pomyliłeś.
 
 **Zasada 3 pytań po powtórce:**
 1. Co już umiem?

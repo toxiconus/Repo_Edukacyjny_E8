@@ -7,7 +7,6 @@ kicker: G12 · GRAMATYKA — SKŁADNIA · MASTER v3.0
 lead: Podmiot, orzeczenie, przydawka, dopełnienie i okolicznik — jak je rozpoznać bez zgadywania, jak zadawać pytania od właściwego wyrazu i jak narysować wykres zdania. Najpierw rdzeń na egzamin ósmoklasisty, potem pułapki i poziom konkursowy.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — składnia zdania pojedynczego; powiązania: G13 (związki wyrazowe), G14 (zdanie pojedyncze), G01–G11 (części mowy), L008 (synteza)
-czas: 2 × 45 min
 stan: PO W1 v3.1 — Perplexity, 2026-10-10; poprawki: konwencje sporne (podmiot logiczny, miara, bezokolicznik), definicje orzeczenia czasownikowego i dopełnienia, klucze
 utworzono: 2026-10-09
 wersja: 3.1
@@ -35,7 +34,7 @@ stopka: **JĘZYK POLSKI G12 v3.0 MASTER** · Części zdania · 2026
 - exam | <b>Konkurs:</b> rodzaje okoliczników, przydawki dopełniaczowe i przyimkowe, wykres zdania rozwiniętego, przypadki sporne i zapis przyjętej analizy
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 45 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.2](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#co-to)–[§2](#procedura)** — co to jest część zdania i procedura 4 kroków.
 3. **[§3](#orzeczenie)–[§7](#okolicznik)** — pięć części zdania po kolei.

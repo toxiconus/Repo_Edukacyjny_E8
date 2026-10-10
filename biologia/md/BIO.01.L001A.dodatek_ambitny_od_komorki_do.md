@@ -1488,17 +1488,17 @@ Format 3+2+2+1: 3 zadania podstawowe, 2 treningowe, 2 ambitne, 1 zaawansowane.
 **Plan nauki:**
     
       
-- Ściąga (5 min) — zwłaszcza cztery liczby i układ krwionośny.
+- Ściąga — zwłaszcza cztery liczby i układ krwionośny.
       
-- Przykład prowadzony (5 min) — matka 0 / ojciec A.
+- Przykład prowadzony — matka 0 / ojciec A.
       
-- Mini-check (5 min).
+- Mini-check.
       
-- Ćwiczenia A i B (10 min).
+- Ćwiczenia A i B.
       
-- Fiszki (10 min).
+- Fiszki.
       
-- Test końcowy (10 min).
+- Test końcowy.
       
 - Powtórka za 1 dzień, 3 dni, tydzień.
     

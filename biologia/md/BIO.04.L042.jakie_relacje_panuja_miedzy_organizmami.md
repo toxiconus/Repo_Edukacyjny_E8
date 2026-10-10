@@ -410,7 +410,7 @@ Nisza ekologiczna · zasada Gause'a · koewolucja.
 
 ## 20. Jak się uczyć?
 
-Ściąga (5 min) → przykłady (5 min) → mini-check (5 min) → ćwiczenia (10 min) → fiszki (5 min) → test (10 min).
+Ściąga → przykłady → mini-check → ćwiczenia → fiszki → test.
 
 ---
 

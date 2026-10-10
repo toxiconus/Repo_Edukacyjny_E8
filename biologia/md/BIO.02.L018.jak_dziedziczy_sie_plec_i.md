@@ -321,7 +321,7 @@ XX/XY · Cecha sprzężona z X · Nosicielka · Inaktywacja X.
 Rodowody X-linked · inaktywacja X · mtDNA.
 
 ## 20. Jak się uczyć?
-Ściąga (5 min) → krzyżówka X-linked (5 min) → mini-check (5 min) → ćwiczenia (10 min) → fiszki (5 min) → test (10 min).
+Ściąga → krzyżówka X-linked → mini-check → ćwiczenia → fiszki → test.
 
 ## 21. Połączenia międzyprzedmiotowe
 Matematyka (P) · Medycyna (hemofilia, daltonizm) · Etyka (poradnictwo).

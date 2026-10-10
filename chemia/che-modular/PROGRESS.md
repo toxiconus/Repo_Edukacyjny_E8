@@ -65,3 +65,4 @@
 - 2026-10-10 06:45 przekazanie wątku „grafiki + polski G12” (PRZEKAZANIE.md).
 - 2026-10-10 07:10 W1 Perplexity: G12 v3.1, REV01 v1.1 (ATP 30–32 także w grafice), REV02 minimum pkt 1–7 (odp. 2: REV02 pełne, G12 równoważnik, REV01 bilans ATP); paczka W1 dla BIO L009, L031, L013, L008, L007; następne: REV02 (pełne) + L010.
 - 2026-10-10 07:40 W1+ulepszenia Perplexity: L009, L031, L013 (BIO); paczki po 3 lekcje, odpowiedź w turach (lekcja na turę): L008+L007+L010.
+- 2026-10-10 08:00 W1 FULL: G13–G15 przebudowane do v3.0 (+ grafika wykres-zlozonego), prompt W1: własne ambitne przykłady + samodzielna nauka; oznaczenie W1 FULL; usunięte znaczniki czasu (N min) z lekcji POL i BIO; paczka W1 POL G16, G17, S01–S03.

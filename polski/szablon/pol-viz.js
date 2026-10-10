@@ -110,6 +110,34 @@ mount:function(el,o){el.classList.add('pv');var nr=+(o.start||0)%ZD.length,krok=
    (widac.length===1?'<b>Krok 1. Orzeczenie:</b> „'+n.t+'” — mówi, co się dzieje. Od niego zaczynamy.':n===T.P?'<b>Krok 2. Podmiot:</b> pytamy od orzeczenia <i>'+(n.g.q||'kto? co?')+'</i> → „'+n.t+'”. Podmiot i orzeczenie tworzą <b>związek główny</b> (dwie kreski).':'<b>Krok '+widac.length+'.</b> Od wyrazu „'+(n.g.h||'')+'” pytamy <i>'+(n.g.q||'')+'</i> → „'+n.t+'” — '+R[n.g.r].n+'.')}
  krok=o.krok==='caly'?99:1;rys()}});
 
+/* ---------- 3. schemat zdania złożonego: współrzędne obok siebie, podrzędne pod spodem ---------- */
+POL.define('wykres-zlozonego',{opis:'Schemat blokowy zdania złożonego: zdania współrzędne w jednym rzędzie ze strzałkami relacji, zdanie podrzędne pod nadrzędnym ze strzałką-pytaniem; warianty do przełączania',
+mount:function(el,o){
+ var W=[
+  {n:'współrzędne (3 zdania)',z:'Zadzwoniłem do kolegi, ale on nie odebrał, więc wysłałem wiadomość.',
+   r:[['Zadzwoniłem do kolegi'],['on nie odebrał','ale','przeciwstawne'],['wysłałem wiadomość','więc','wynikowe']],
+   i:'Trzy zdania składowe stoją <b>obok siebie</b> — każde można wypowiedzieć osobno. Strzałki są poziome: <i>ale</i> — przeciwstawienie, <i>więc</i> — skutek.'},
+  {n:'bezspójnikowe',z:'Słońce zaszło, ulice opustoszały.',
+   r:[['Słońce zaszło'],['ulice opustoszały',',','łączne / wynikowe?']],
+   i:'Brak spójnika — relację ustalasz <b>próbnym spójnikiem</b>: „i” (łączne) albo „więc” (wynikowe). Przecinek tylko oddziela zdania.'},
+  {n:'mieszane',z:'Nie odrobiłem pracy, ponieważ zabrakło czasu, ale przygotowałem się do odpowiedzi.',
+   r:[['Nie odrobiłem pracy'],['przygotowałem się do odpowiedzi','ale','przeciwstawne']],
+   d:['zabrakło czasu','ponieważ','dlaczego?'],
+   i:'Zdanie <i>ponieważ zabrakło czasu</i> odpowiada na pytanie <b>dlaczego?</b> zadane od pierwszego — stoi <b>pod</b> nim (podrzędność). Zdanie z <i>ale</i> stoi obok (współrzędność).'}];
+ var H=POL.H,cur=+(o.start||0),bar=H('div','pv-bar'),box=H('div'),zd=H('div','pv-info'),info=H('div','pv-info');
+ bar.appendChild(H('b',null,'Wariant:'));
+ var bs=W.map(function(w,k){var b=POL.btn(w.n,function(){cur=k;draw()});bar.appendChild(b);return b});
+ var st='display:inline-block;padding:8px 10px;border:2px solid var(--accent,#7a2848);border-radius:10px;background:var(--surface,#fff);font:500 15px/1.3 Georgia,serif;max-width:220px;text-align:center';
+ function draw(){var w=W[cur];bs.forEach(function(b,k){b.classList.toggle('on',k===cur)});
+  zd.innerHTML='<b>Zdanie:</b> '+w.z;
+  var h='<div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px">';
+  w.r.forEach(function(x,k){if(k)h+='<span style="display:inline-flex;flex-direction:column;align-items:center;font:600 12px/1.2 Inter,sans-serif;color:var(--text-soft,#57606a);padding:0 2px"><span>'+x[1]+'</span><span style="font-size:20px;line-height:1">⟷</span><span>'+x[2]+'</span></span>';
+   h+='<span style="'+st+'"><small style="display:block;font:600 11px Inter,sans-serif;color:var(--text-soft,#57606a)">zdanie '+(k+1)+'</small>'+x[0]+'</span>'});
+  h+='</div>';
+  if(w.d)h+='<div style="margin:2px 0 0 30px;font:600 12px/1.3 Inter,sans-serif;color:var(--text-soft,#57606a)"><span style="font-size:20px">↓</span> '+w.d[2]+' ('+w.d[1]+')</div><div style="margin-left:14px"><span style="'+st+';border-style:dashed"><small style="display:block;font:600 11px Inter,sans-serif;color:var(--text-soft,#57606a)">zdanie podrzędne</small>'+w.d[0]+'</span></div>';
+  box.innerHTML=h;info.innerHTML=w.i}
+ el.appendChild(bar);el.appendChild(zd);el.appendChild(box);el.appendChild(info);draw()}});
+
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mountAll);else mountAll();
 function mountAll(){document.querySelectorAll('figure[data-viz]').forEach(function(f){if(f.dataset.on)return;f.dataset.on=1;var id=f.getAttribute('data-viz'),d=REG[id],body=f.querySelector('.lk-fig-body')||f,o={};
  try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}if(!d){body.textContent='Brak grafiki „'+id+'” w pol-viz.js';return}body.style.padding='12px';d.mount(body,o)})}

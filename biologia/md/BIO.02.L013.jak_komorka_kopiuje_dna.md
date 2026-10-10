@@ -387,12 +387,12 @@ Replikacja · Matryca · Semikonserwatywna · Faza S · Helikaza · Polimeraza D
 Helikaza, polimeraza, proofreading · kierunek 5'→3' · widełki replikacyjne · most do mutacji.
 
 ## 20. Jak się uczyć?
-1. Ściąga + semikonserwatywność (5 min).  
-2. Przykład prowadzony + uzupełnianie nici (5–7 min).  
+1. Ściąga + semikonserwatywność.  
+2. Przykład prowadzony + uzupełnianie nici.  
 3. Most do L012 (chromatydy) — 3 min.  
-4. Mini-check + ćwiczenia A–B (8 min).  
-5. Fiszki (5 min).  
-6. Test (8 min).  
+4. Mini-check + ćwiczenia A–B.  
+5. Fiszki.  
+6. Test.  
 7. Przy błędach — Klinika 2.0.
 
 ## 21. Połączenia międzyprzedmiotowe

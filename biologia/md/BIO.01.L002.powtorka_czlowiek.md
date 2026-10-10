@@ -372,10 +372,10 @@ Potem L010 → L011…
 
 ## 20. Jak się uczyć tej lekcji?
 
-1. Przypomnij sobie układy człowieka (5 min).
-2. Połącz każdy układ z genetyką (5 min).
-3. Zrób notatkę-mapę (5 min).
-4. Powtórz fiszki (5 min).
+1. Przypomnij sobie układy człowieka.
+2. Połącz każdy układ z genetyką.
+3. Zrób notatkę-mapę.
+4. Powtórz fiszki.
 
 ---
 

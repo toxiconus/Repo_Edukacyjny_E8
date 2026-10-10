@@ -812,12 +812,12 @@ Mapa pojęć L015 — od mejozy przez 3 źródła zmienności do unikalności ge
 
 **Plan nauki:**
 
-1. Ściąga + tabela mitoza/mejoza (7 min).
-2. Schemat mejozy I i II (7 min).
-3. Mini-check (5 min).
-4. Ćwiczenia A i B (10 min).
-5. Fiszki (10 min).
-6. Test końcowy (10 min).
+1. Ściąga + tabela mitoza/mejoza.
+2. Schemat mejozy I i II.
+3. Mini-check.
+4. Ćwiczenia A i B.
+5. Fiszki.
+6. Test końcowy.
 7. Powtórka za 1 dzień, 3 dni, tydzień.
 
 :::
@@ -1303,7 +1303,7 @@ Mejoza · Gameta · Crossing-over · Nondysjunkcja · Aneuploidia · Oogeneza ·
 Oogeneza vs spermatogeneza · nondysjunkcja I vs II · mapowanie genów.
 
 #### 20. Jak się uczyć?
-Ściąga (5 min) → schemat mejozy (5 min) → mini-check (5 min) → ćwiczenia (10 min) → fiszki (5 min) → test (10 min).
+Ściąga → schemat mejozy → mini-check → ćwiczenia → fiszki → test.
 
 #### 21. Połączenia międzyprzedmiotowe
 Matematyka (2²³ kombinacji) · Biologia (rozmnażanie) · Etyka (dziedziczenie).

@@ -1384,12 +1384,12 @@ animation:bio-drift 60s linear infinite}
 <p><strong>Most wstecz:</strong> L014 (mitoza) vs L015 (mejoza) — tabela w sekcji 5.2.</p>
 <p><strong>Plan nauki:</strong></p>
 <ol>
-<li>Ściąga + tabela mitoza/mejoza (7 min).</li>
-<li>Schemat mejozy I i II (7 min).</li>
-<li>Mini-check (5 min).</li>
-<li>Ćwiczenia A i B (10 min).</li>
-<li>Fiszki (10 min).</li>
-<li>Test końcowy (10 min).</li>
+<li>Ściąga + tabela mitoza/mejoza.</li>
+<li>Schemat mejozy I i II.</li>
+<li>Mini-check.</li>
+<li>Ćwiczenia A i B.</li>
+<li>Fiszki.</li>
+<li>Test końcowy.</li>
 <li>Powtórka za 1 dzień, 3 dni, tydzień.</li>
 </ol>
 </div>
@@ -1762,7 +1762,7 @@ U kobiety (oogeneza): <strong>1</strong> komórka jajowa + ciałka kierunkowe (c
 <h4>19. Dodatek zaawansowany  · <strong>[ZAAWANSOWANY]</strong></h4>
 <p>Oogeneza vs spermatogeneza · nondysjunkcja I vs II · mapowanie genów.</p>
 <h4>20. Jak się uczyć?</h4>
-<p>Ściąga (5 min) → schemat mejozy (5 min) → mini-check (5 min) → ćwiczenia (10 min) → fiszki (5 min) → test (10 min).</p>
+<p>Ściąga → schemat mejozy → mini-check → ćwiczenia → fiszki → test.</p>
 <h4>21. Połączenia międzyprzedmiotowe</h4>
 <p>Matematyka (2²³ kombinacji) · Biologia (rozmnażanie) · Etyka (dziedziczenie).</p>
 <h4>22. Zadania z życia codziennego</h4>
@@ -2256,7 +2256,7 @@ mount:function(el,o){var uid='bm'+Math.random().toString(36).slice(2,7),widok=(o
     else{[[356,34,350,34,'ściana'],[356,52,345,52,'błona'],[356,104,325,104,'chloroplast'],[356,130,300,130,'wakuola'],[356,168,245,168,'mitochondrium'],[64,60,92,60,'jądro'],[64,110,98,110,'rybosom']].forEach(function(l){var L=l[0]<l[2];s.appendChild(S('line',{x1:L?l[0]+3:l[0]-3,y1:l[1],x2:l[2],y2:l[3],stroke:'var(--viz-mut)','stroke-width':1}));s.appendChild(T(l[0],l[1],l[4],{s:10.5,a:L?'end':'start'}))})}
     return s}
   function opis(){if(widok==='model')return'<b>Model szkolny</b><span>Narysowane i podpisane są wszystkie struktury: ściana, błona, jądro, wakuola, chloroplasty, mitochondria, rybosomy. To uproszczenie — kształty i proporcje są umowne, a zwykle nie da się zobaczyć ich wszystkich jednocześnie.</span>';
-    return'<b>Mikroskop świetlny (ok. ×400)</b><span>Wyraźnie widać: ścianę komórkową (granice komórek) i zielone chloroplasty; wakuolę rozpoznajemy po pustym, jasnym środku. '+(barw?'Po barwieniu (np. płynem Lugola) jądro staje się widoczne jako ciemniejsza plamka.':'Jądro jest słabo widoczne — trzeba zabarwić preparat.')+'</span><span>Nie widać: rybosomów (ok. 25 nm) ani szczegółów mitochondriów — są mniejsze niż zdolność rozdzielcza mikroskopu świetlnego (ok. 0,2 µm). Błony komórkowej nie odróżnisz od ściany.</span>'}
+    return'<b>Mikroskop świetlny (ok. ×400)</b><span>Wyraźnie widać: ścianę komórkową (granice komórek) i zielone chloroplasty; wakuolę rozpoznajemy po pustym, jasnym środku. '+(barw?'Po barwieniu (np. błękitem metylenowym; barwnik zależy od preparatu) jądro staje się widoczne jako ciemniejsza plamka.':'Jądro jest słabo widoczne — trzeba zabarwić preparat.')+'</span><span>Nie widać: rybosomów (ok. 25 nm) ani szczegółów mitochondriów — są mniejsze niż zdolność rozdzielcza mikroskopu świetlnego (ok. 0,2 µm). Błony komórkowej nie odróżnisz od ściany.</span>'}
   function draw(){hold.innerHTML='';hold.appendChild(rys());box.innerHTML=opis();tools.innerHTML='';
     [['mikroskop','widok w mikroskopie'],['model','model szkolny']].forEach(function(v){var b=btn(v[1],function(){widok=v[0];draw()});if(widok===v[0])b.className+=' on';b.setAttribute('aria-pressed',String(widok===v[0]));tools.appendChild(b)});
     if(widok==='mikroskop'){var b=btn(barw?'usuń barwienie':'zabarw preparat',function(){barw=!barw;draw()});if(barw)b.className+=' on';tools.appendChild(b)}}
@@ -2428,19 +2428,19 @@ mount:function(el,o){var tools=H('div','bv-tools'),rng=document.createElement('i
    clr(pic);pic.appendChild(s);
    BIO.fx.info(pic,out,{ch:['Chloroplast — fotosynteza',' 6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂. Intensywność rośnie ze światłem (do pewnej granicy); w ciemności fotosynteza nie zachodzi.'],
      mi:['Mitochondrium — oddychanie tlenowe',' C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP). Zachodzi stale, w dzień i w nocy.']});
-   out.innerHTML=L===0?'<b>Noc:</b> fotosynteza nie zachodzi, oddychanie trwa — liść <b>pobiera O₂ i oddaje CO₂</b>.':net<-.02?'<b>Przewaga oddychania:</b> fotosynteza słabsza niż oddychanie — liść nadal netto <b>oddaje CO₂</b>.':net<=.02?'<b>Punkt równowagi:</b> ile O₂ powstaje w fotosyntezie, tyle zużywa oddychanie — wymiana gazów z otoczeniem ≈ 0.':'<b>Przewaga fotosyntezy:</b> fotosynteza intensywniejsza niż oddychanie — liść netto <b>pobiera CO₂ i oddaje O₂</b>. Oddychanie nadal trwa (część O₂ zużywa mitochondrium).'}
+   out.innerHTML=L===0?'<b>Noc:</b> fotosynteza nie zachodzi, oddychanie trwa — liść <b>pobiera O₂ i oddaje CO₂</b>.':net<-.02?'<b>Przewaga oddychania:</b> fotosynteza słabsza niż oddychanie — liść nadal netto <b>oddaje CO₂</b>.':net<=.02?'<b>Punkt kompensacyjny:</b> ile O₂ powstaje w fotosyntezie, tyle zużywa oddychanie — wymiana gazów z otoczeniem ≈ 0.':'<b>Przewaga fotosyntezy:</b> fotosynteza intensywniejsza niż oddychanie — liść netto <b>pobiera CO₂ i oddaje O₂</b>. Oddychanie nadal trwa (część O₂ zużywa mitochondrium).'}
   rng.oninput=draw;draw()}});
 
 BIO.define('energia-glukozy',{opis:'Oddychanie tlenowe vs fermentacja alkoholowa vs mlekowa: warunki, miejsce, produkty i ilość ATP z jednej cząsteczki glukozy (słupki)',
-mount:function(el,o){var P=[['tl','oddychanie tlenowe','z tlenem','cytoplazma + mitochondria','CO₂ + H₂O',38,'#c0392b','prawie wszystkie organizmy'],
+mount:function(el,o){var P=[['tl','oddychanie tlenowe','z tlenem','cytoplazma + mitochondria','CO₂ + H₂O',31,'#c0392b','prawie wszystkie organizmy'],
    ['al','fermentacja alkoholowa','bez tlenu','cytoplazma','alkohol etylowy + CO₂',2,'#8d6e00','drożdże — chleb (CO₂ spulchnia ciasto), wino'],
    ['ml','fermentacja mlekowa','bez tlenu','cytoplazma','kwas mlekowy',2,'#1565c0','bakterie mlekowe (jogurt, kiszonki); mięśnie przy intensywnym wysiłku']],cur=o.start||'tl';
   var sg=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(pic);el.appendChild(out);
   function draw(){seg(sg,P.map(function(p){return[p[0],p[1]]}),cur,function(k){cur=k;draw()});
    var s=svg(340,214,'Ilość ATP z jednej cząsteczki glukozy w oddychaniu tlenowym i fermentacjach');
    P.forEach(function(p,i){var y=8+i*62,w=p[5]/38*230,on=p[0]===cur;s.appendChild(T(6,y+9,p[1],{s:13,a:'start',w:on?800:600}));
-    s.appendChild(S('rect',{x:6,y:y+20,width:Math.max(8,w),height:24,rx:6,fill:p[6],opacity:on?1:.45}));s.appendChild(T(14+Math.max(8,w),y+32,'ok. '+p[5]+' ATP',{s:13,a:'start',w:700,f:p[6]}))});
-   s.appendChild(T(170,206,'ATP z 1 cząsteczki glukozy (wartości szkolne, orientacyjne)',{s:10.5,f:'var(--viz-mut)'}));clr(pic);pic.appendChild(s);
+    s.appendChild(S('rect',{x:6,y:y+20,width:Math.max(8,w),height:24,rx:6,fill:p[6],opacity:on?1:.45}));s.appendChild(T(14+Math.max(8,w),y+32,'ok. '+(p[5]===31?'30–32':p[5])+' ATP',{s:13,a:'start',w:700,f:p[6]}))});
+   s.appendChild(T(170,206,'ATP z 1 cząsteczki glukozy (orientacyjnie; starsze podręczniki: 38)',{s:10.5,f:'var(--viz-mut)'}));clr(pic);pic.appendChild(s);
    var p=P.filter(function(x){return x[0]===cur})[0];
    out.innerHTML='<b>'+p[1][0].toUpperCase()+p[1].slice(1)+'</b> — '+p[2]+', '+p[3]+'.<br>Glukoza → <b>'+p[4]+'</b> + energia (ATP). Kto: '+p[7]+'.'+(cur==='tl'?'<br>Glukoza rozkładana do końca (do CO₂ i H₂O) — energii jest <b>wielokrotnie więcej</b> niż w fermentacji.':'<br>Glukoza rozkładana <b>niecałkowicie</b> — w produkcie (alkohol, kwas mlekowy) zostaje dużo energii, dlatego ATP jest niewiele.')}
   draw()}});
@@ -2601,6 +2601,37 @@ mount:function(el,o){var tryb=o.start==='mejoza'?'mejoza':'mitoza',k=0,M='#d6454
    var cz=function(n){return n===4?46:n===8?92:n===2?23:n};
    out.innerHTML='<b>'+e[0]+'</b><span>'+e[1]+'</span><span>W jednej komórce: <strong>'+e[2]+'</strong> chromosomy, <strong>'+e[3]+'</strong> chromatyd · ploidia: <strong>'+e[4]+'</strong>. U człowieka: '+cz(e[2])+' chromosomów, '+cz(e[3])+' chromatyd.</span>'}
   draw()}});
+
+BIO.define('dobor-naturalny',{opis:'Symulacja doboru naturalnego: ćmy jasne i ciemne na jasnej lub ciemnej korze (drapieżnik zjada lepiej widoczne) albo bakterie wrażliwe i oporne + antybiotyk; pokolenia, wykres udziału cechy',
+mount:function(el,o){var sc=o.start==='bakterie'?'bakterie':'cmy',tlo='ciemne',N=40,pop=[],hist=[],gen=0,seed=7;
+  function R(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}
+  var sg=H('div','bv-tools'),t2=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(t2);el.appendChild(pic);el.appendChild(out);
+  function reset(){seed=7;gen=0;pop=[];for(var i=0;i<N;i++)pop.push(i<4?1:0);hist=[udz()];draw()}   // 1 = cecha „rzadka na starcie” (ciemna ćma / oporna bakteria): 10%
+  function udz(){return pop.filter(function(x){return x}).length/pop.length}
+  function pokolenie(){var korzystna=sc==='bakterie'?1:(tlo==='ciemne'?1:0),zyje=pop.filter(function(x){var p=x===korzystna?.85:(sc==='bakterie'?.12:.45);return R()<p});
+   if(!zyje.length)zyje=[korzystna];var nowa=[];while(nowa.length<N){var r=zyje[Math.floor(R()*zyje.length)];if(R()<.02)r=1-r;nowa.push(r)}pop=nowa;gen++;hist.push(udz())}
+  function draw(){seg(sg,[['cmy','ćmy na korze drzew'],['bakterie','bakterie i antybiotyk']],sc,function(m){sc=m;reset()});
+   clr(t2);t2.appendChild(btn('następne pokolenie ▶',function(){pokolenie();draw()}));t2.appendChild(btn('+5 pokoleń',function(){for(var i=0;i<5;i++)pokolenie();draw()}));t2.appendChild(btn('od nowa',reset));
+   if(sc==='cmy'){var bt=btn(tlo==='ciemne'?'kora: ciemna (zanieczyszczenia)':'kora: jasna (porosty)',function(){tlo=tlo==='ciemne'?'jasne':'ciemne';draw()});t2.appendChild(bt)}
+   var s=svg(440,210,'Populacja i wykres udziału cechy w kolejnych pokoleniach'),bg=sc==='bakterie'?'#f3f6fb':(tlo==='ciemne'?'#4a4038':'#d9d4c4');
+   s.appendChild(S('rect',{x:4,y:4,width:200,height:200,rx:10,fill:bg,stroke:'#c9d2cf'}));
+   if(sc==='bakterie')s.appendChild(S('rect',{x:4,y:4,width:200,height:200,rx:10,fill:'#e6f0ff',opacity:.6}));
+   var r2=(function(){var q=gen*31+3;return function(){q=(q*16807)%2147483647;return(q-1)/2147483646}})();
+   pop.forEach(function(x,i){var cx=18+(i%8)*24+r2()*6,cy=22+Math.floor(i/8)*38+r2()*8;
+    if(sc==='cmy'){var c=x?'#2b2622':'#efeadf';s.appendChild(S('path',{d:'M'+cx+' '+cy+' q-12 -8 -12 4 q0 8 12 2 q12 6 12 -2 q0 -12 -12 -4z',fill:c,stroke:x?'#000':'#b7ad97','stroke-width':.8}));s.appendChild(S('rect',{x:cx-1.2,y:cy-6,width:2.4,height:11,rx:1.2,fill:'#3a3028'}))}
+    else s.appendChild(S('rect',{x:cx-9,y:cy-4,width:18,height:9,rx:4.5,fill:x?'#c0392b':'#7fb069',stroke:x?'#7b1f17':'#3d6b2c'}))});
+   // wykres
+   var gx=226,gy=16,gw=200,gh=160;s.appendChild(S('rect',{x:gx,y:gy,width:gw,height:gh,fill:'#fff',stroke:'#c9d2cf'}));
+   [0,50,100].forEach(function(v){var y=gy+gh-v/100*gh;s.appendChild(S('line',{x1:gx,y1:y,x2:gx+gw,y2:y,stroke:'#eef1f0'}));s.appendChild(T(gx-4,y,v+'%',{s:10,a:'end',f:'var(--viz-mut)'}))});
+   var maxg=Math.max(10,hist.length-1),pts=hist.map(function(v,i){return(gx+i/maxg*gw).toFixed(1)+','+(gy+gh-v*gh).toFixed(1)}).join(' ');
+   s.appendChild(S('polyline',{points:pts,fill:'none',stroke:sc==='bakterie'?'#c0392b':'#2b2622','stroke-width':2.5}));
+   s.appendChild(T(gx+gw/2,gy+gh+16,'pokolenie (0–'+maxg+')',{s:10.5,f:'var(--viz-mut)'}));s.appendChild(T(gx+gw/2,10,sc==='bakterie'?'udział bakterii opornych':'udział ciemnych ciem',{s:10.5,w:700}));
+   clr(pic);pic.appendChild(s);var u=Math.round(udz()*100);
+   out.innerHTML='<b>Pokolenie '+gen+': '+(sc==='bakterie'?'oporne':'ciemne')+' — '+u+'%</b><span>'+(sc==='bakterie'?
+    'Antybiotyk zabija większość bakterii wrażliwych (zielone); przeżywają głównie <strong>oporne</strong> (czerwone), które miały tę cechę <strong>już wcześniej</strong>. Ich potomstwo dziedziczy oporność — z każdym pokoleniem jest ich więcej. Antybiotyk nie tworzy oporności, tylko ją <strong>wybiera</strong>.':
+    (tlo==='ciemne'?'Na ciemnej korze jasne ćmy są dobrze widoczne i częściej zjadane przez ptaki; ciemne częściej przeżywają i mają potomstwo — ich udział rośnie.':'Na jasnej korze lepiej widoczne są ciemne ćmy — dobór działa w drugą stronę i ich udział maleje. Zmień korę, aby to zobaczyć.'))+
+    '</span><span>Warunki doboru: <strong>zmienność</strong> w populacji (już na starcie) → <strong>różna przeżywalność</strong> w danym środowisku → <strong>dziedziczenie</strong> cechy → zmiana populacji po wielu pokoleniach. Wynik jest losowy — powtórz symulację.</span>'}
+  reset()}});
 })();
 
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,

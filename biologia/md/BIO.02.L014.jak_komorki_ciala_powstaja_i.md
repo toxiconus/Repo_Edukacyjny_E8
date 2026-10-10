@@ -367,11 +367,11 @@ Mitoza · Cykl komórkowy · Cytokineza · Checkpoint · Interfaza · Anafaza.
 Fazy mitozy szczegółowo · checkpointy → L016 · różnice cytokinezy roślin/zwierząt.
 
 ## 20. Jak się uczyć?
-1. Ściąga + kolejność S → mitoza (5 min).  
-2. Schemat faz + przykład z 46/92 (5–7 min).  
-3. Mini-check + ćwiczenia A–B (8 min).  
-4. Fiszki (5 min).  
-5. Test (8 min).  
+1. Ściąga + kolejność S → mitoza.  
+2. Schemat faz + przykład z 46/92.  
+3. Mini-check + ćwiczenia A–B.  
+4. Fiszki.  
+5. Test.  
 6. Przy błędach — Klinika 2.0 (mitoza ≠ mejoza, mitoza ≠ replikacja).
 
 ## 21. Połączenia międzyprzedmiotowe
@@ -1609,17 +1609,17 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 **Plan nauki:**
 
 
-- Ściąga + tabela mitoza/mejoza (7 min).
+- Ściąga + tabela mitoza/mejoza.
 
-- Schemat mejozy I i II (7 min).
+- Schemat mejozy I i II.
 
-- Mini-check (5 min).
+- Mini-check.
 
-- Ćwiczenia A i B (10 min).
+- Ćwiczenia A i B.
 
-- Fiszki (10 min).
+- Fiszki.
 
-- Test końcowy (10 min).
+- Test końcowy.
 
 - Powtórka za 1 dzień, 3 dni, tydzień.
 

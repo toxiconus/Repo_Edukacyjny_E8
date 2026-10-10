@@ -421,7 +421,7 @@ Typy doboru · dryf · efekt wąskiego gardła · dobór płciowy.
 
 ## 20. Jak się uczyć?
 
-Ściąga (5 min) → przykład (5 min) → mini-check (5 min) → ćwiczenia (10 min) → fiszki (5 min) → test (10 min).
+Ściąga → przykład → mini-check → ćwiczenia → fiszki → test.
 
 ---
 
