@@ -95,6 +95,9 @@ W profazie I chromosomy homologiczne mogą wymieniać odpowiadające sobie odcin
 
 **Ważne doprecyzowanie:** u człowieka mejoza uczestniczy w powstawaniu gamet, lecz proces tworzenia plemników i komórek jajowych nie daje identycznych wyników liczbowych. W oogenezie zwykle powstaje jedna duża komórka jajowa i małe ciałka kierunkowe, a nie cztery równoważne komórki jajowe.
 
+@viz podzial-komorki | Mitoza i mejoza krok po kroku | przełącz rodzaj podziału i przechodź przez fazy
+@opis Komórka (jasnozielona elipsa) z modelem 2n = 4: dwie pary chromosomów homologicznych — długie i krótkie, czerwone od matki, niebieskie od ojca; chromosom po replikacji rysowany jest jako dwie chromatydy (dwa pręciki) połączone czarnym centromerem. Przełącznik mitoza / mejoza i przyciski „wstecz/dalej” prowadzą przez fazy. Mitoza: interfaza (jedna chromatyda), replikacja (dwie chromatydy), profaza (zanika otoczka jądra), metafaza (chromosomy pojedynczo w płaszczyźnie środkowej, linie wrzeciona), anafaza (chromatydy siostrzane do biegunów), telofaza (dwie komórki 2n z identycznym zestawem). Mejoza: profaza I (homologi w parach, crossing-over widoczny jako zamienione kolorowe końcówki), metafaza I (pary w płaszczyźnie środkowej), anafaza I (do biegunów idą całe chromosomy), telofaza I (dwie komórki n, chromosomy wciąż z dwiema chromatydami), metafaza II i anafaza II (rozdział chromatyd), telofaza II (cztery komórki n, każda z innym zestawem). Panel pod rysunkiem podaje liczbę chromosomów i chromatyd w komórce oraz ploidię w modelu i u człowieka (46 / 92 / 23). Wniosek: mitoza daje dwie komórki identyczne z macierzystą (2n), a mejoza — przez rozdział par w pierwszym podziale i chromatyd w drugim — cztery różne komórki haploidalne (n).
+
 ## 13. Mitoza i mejoza — porównanie bez skrótów myślowych
 
 | Cecha | Mitoza | Mejoza |

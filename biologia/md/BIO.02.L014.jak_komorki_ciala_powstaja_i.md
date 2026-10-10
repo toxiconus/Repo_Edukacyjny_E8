@@ -156,6 +156,9 @@ komórka (46) → faza S (46 chromosomów, 92 chromatydy) → mitoza → 2 × ko
 5. **Telofaza:** tworzą się dwa jądra, chromosomy się rozluźniają.
 6. **Cytokineza:** podział cytoplazmy → dwie komórki.
 
+@viz podzial-komorki | Mitoza krok po kroku | przechodź przez fazy przyciskami
+@opis Komórka (jasnozielona elipsa) z modelem 2n = 4: dwie pary chromosomów homologicznych — długie i krótkie, czerwone od matki, niebieskie od ojca; chromosom po replikacji rysowany jest jako dwie chromatydy (dwa pręciki) połączone czarnym centromerem. Przełącznik mitoza / mejoza i przyciski „wstecz/dalej” prowadzą przez fazy. Mitoza: interfaza (jedna chromatyda), replikacja (dwie chromatydy), profaza (zanika otoczka jądra), metafaza (chromosomy pojedynczo w płaszczyźnie środkowej, linie wrzeciona), anafaza (chromatydy siostrzane do biegunów), telofaza (dwie komórki 2n z identycznym zestawem). Mejoza: profaza I (homologi w parach, crossing-over widoczny jako zamienione kolorowe końcówki), metafaza I (pary w płaszczyźnie środkowej), anafaza I (do biegunów idą całe chromosomy), telofaza I (dwie komórki n, chromosomy wciąż z dwiema chromatydami), metafaza II i anafaza II (rozdział chromatyd), telofaza II (cztery komórki n, każda z innym zestawem). Panel pod rysunkiem podaje liczbę chromosomów i chromatyd w komórce oraz ploidię w modelu i u człowieka (46 / 92 / 23). Wniosek: mitoza daje dwie komórki identyczne z macierzystą (2n), a mejoza — przez rozdział par w pierwszym podziale i chromatyd w drugim — cztery różne komórki haploidalne (n).
+
 ### 6C. Przykład prowadzony
 
 **Dane:** Komórka somatyczna człowieka (2n = 46) w metafazie.

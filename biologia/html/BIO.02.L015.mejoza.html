@@ -980,6 +980,8 @@ animation:bio-drift 60s linear infinite}
 </ol>
 <p><strong>Kluczowe:</strong> Mejoza II jest <strong>podobna do mitozy</strong> — ale zachodzi w komórce haploidalnej.</p>
 </div>
+<figure class="lk-fig bio-fig" data-bio-viz="podzial-komorki" data-opt="{&quot;start&quot;: &quot;mejoza&quot;}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Mejoza krok po kroku</b> <span>przechodź przez fazy; porównaj z mitozą</span></figcaption></figure>
+<!-- OPIS: Komórka (jasnozielona elipsa) z modelem 2n = 4: dwie pary chromosomów homologicznych — długie i krótkie, czerwone od matki, niebieskie od ojca; chromosom po replikacji rysowany jest jako dwie chromatydy (dwa pręciki) połączone czarnym centromerem. Przełącznik mitoza / mejoza i przyciski „wstecz/dalej” prowadzą przez fazy. Mitoza: interfaza (jedna chromatyda), replikacja (dwie chromatydy), profaza (zanika otoczka jądra), metafaza (chromosomy pojedynczo w płaszczyźnie środkowej, linie wrzeciona), anafaza (chromatydy siostrzane do biegunów), telofaza (dwie komórki 2n z identycznym zestawem). Mejoza: profaza I (homologi w parach, crossing-over widoczny jako zamienione kolorowe końcówki), metafaza I (pary w płaszczyźnie środkowej), anafaza I (do biegunów idą całe chromosomy), telofaza I (dwie komórki n, chromosomy wciąż z dwiema chromatydami), metafaza II i anafaza II (rozdział chromatyd), telofaza II (cztery komórki n, każda z innym zestawem). Panel pod rysunkiem podaje liczbę chromosomów i chromatyd w komórce oraz ploidię w modelu i u człowieka (46 / 92 / 23). Wniosek: mitoza daje dwie komórki identyczne z macierzystą (2n), a mejoza — przez rozdział par w pierwszym podziale i chromatyd w drugim — cztery różne komórki haploidalne (n). -->
 <h3>6.5. 6A. Dlaczego?</h3>
 <div class="card card-understand">
 <ol>
@@ -2353,7 +2355,7 @@ mount:function(el,o){var id='bw'+(++UID),cur=TZ.some(function(z){return z.k===o.
     for(var x=x0+5;x<x0+88;x+=9)[118,152].forEach(function(y,j){g.appendChild(S('line',{x1:x,y1:y+(j?-5:5),x2:x,y2:y+(j?-16:16),stroke:'#d6b04a','stroke-width':'1.4'}));g.appendChild(S('circle',{cx:x,cy:y,r:4,fill:'#e4a83a'}))});
     if(z.k==='dp'){dots(g,x0,24,88,88,14,'o','#2a62b5',11);dots(g,x0,158,88,88,3,'o','#2a62b5',12);AR(96,178)}
     if(z.k==='du'){g.appendChild(S('rect',{x:cx-14,y:104,width:10,height:62,rx:4,fill:'#7aa66a'}));g.appendChild(S('rect',{x:cx+4,y:104,width:10,height:62,rx:4,fill:'#7aa66a'}));dots(g,x0,24,88,80,8,'hex','#f2c14e',21);dots(g,x0,166,88,80,2,'hex','#f2c14e',22);AR(90,182)}
-    if(z.k==='ta'){g.appendChild(S('rect',{x:cx-16,y:102,width:32,height:66,rx:10,fill:'#5b8bc9'}));g.appendChild(S('text',{x:cx,y:140,'text-anchor':'middle','font-size':'9',fill:'#fff','font-weight':'700'},'pompa'));dots(g,x0,24,88,80,3,'big','#c03d2c',31);dots(g,x0,170,88,76,10,'big','#c03d2c',32);AR(92,184);g.appendChild(S('text',{x:cx+18,y:200,'font-size':'10','font-weight':'700',fill:'#b07610'},'ATP'));g.appendChild(S('text',{x:cx+18,y:212,'font-size':'9',fill:'#b07610'},'→ ADP'))}
+    if(z.k==='ta'){g.appendChild(S('rect',{x:cx-16,y:102,width:32,height:66,rx:10,fill:'#5b8bc9'}));g.appendChild(S('text',{x:cx,y:140,'text-anchor':'middle','font-size':'9',fill:'#fff','font-weight':'700'},'pompa'));dots(g,x0,24,88,80,3,'big','#c03d2c',31);dots(g,x0,170,88,76,10,'big','#c03d2c',32);AR(92,184);g.appendChild(S('text',{x:cx+16,y:192,'font-size':'10','font-weight':'700',fill:'#b07610'},'ATP'));g.appendChild(S('text',{x:cx+16,y:203,'font-size':'9',fill:'#b07610'},'→ADP'))}
     if(z.k==='os'){g.appendChild(S('rect',{x:cx-5,y:104,width:10,height:62,rx:4,fill:'#8fc1d6'}));dots(g,x0,24,88,80,10,'o','#4aa3c9',41);dots(g,x0,24,88,80,2,'big','#a07cc5',42);dots(g,x0,170,88,76,6,'o','#4aa3c9',43);dots(g,x0,170,88,76,7,'big','#a07cc5',44);AR(92,184)}
     var w=z.n.split(' ');g.appendChild(S('text',{x:cx,y:36,'text-anchor':'middle','font-size':'9.5','font-weight':'700',fill:'#1a2528'},w[0]));g.appendChild(S('text',{x:cx,y:47,'text-anchor':'middle','font-size':'9.5','font-weight':'700',fill:'#1a2528'},w[1]||''));
     key(g,function(){cur=z.k;draw()});svg.appendChild(g)});
@@ -2392,6 +2394,212 @@ mount:function(el){var id='bw'+(++UID),mode='info',sel=null,removed={},sg=H('div
     h='<b>'+SN[sel][2]+': '+lvs.map(function(i){return LV[i]}).join(' i ')+'</b><span>Je: '+(a.length?a.join(', '):'— (wytwarza materię w fotosyntezie)')+' · zjadany przez: '+(b.length?b.join(', '):'nikogo w tej sieci')+'</span><span>Łańcuchy przez ten gatunek ('+ch.length+'): '+ch.map(function(c){return c.map(function(n){return SN[n][2]}).join(' → ')}).join('; ')+'</span>'}
    else h='<b>Kliknij gatunek</b><span>Strzałka biegnie od zjadanego do zjadającego (kierunek przepływu materii i energii). Zielone: co je; pomarańczowe: kto go zjada. W sieci jest '+ALL+' łańcuchów pokarmowych.</span>';
    out.innerHTML=h;seg(sg,[['info','co je i kto go je'],['usun','usuń gatunek'],['reset','przywróć sieć']],mode,function(m){if(m==='reset'){removed={};sel=null}else{mode=m;sel=null}draw()})}
+  draw()}});
+})();
+(function(){
+var BIO=window.BIO;if(!BIO||!BIO.define||BIO.REV_VIZ)return;BIO.REV_VIZ=1;
+var S=BIO.S,svg=BIO.svg,T=BIO.T,btn=BIO.btn;
+function H(t,c,h,k){var e=BIO.H(t,c,h,k);if(c==='bv-info'){var w=BIO.H('div');e.appendChild(w);Object.defineProperty(e,'innerHTML',{set:function(v){w.innerHTML=String(v).replace(/^<b>([\s\S]*?)<\/b>/,'<strong style="display:block;margin-bottom:2px">$1</strong>').replace(/<(\/?)b(\s|>)/g,'<$1strong$2').replace(/<span>/g,'<span style="display:block;margin-top:3px">')},get:function(){return w.innerHTML}})}return e}  // tekst w środku jednego div — <b> nie łamie wiersza
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=btn(it[1],function(){cb(it[0])});if(it[0]===cur)b.classList.add('on');b.setAttribute('aria-pressed',String(it[0]===cur));box.appendChild(b)})}
+
+/* ---------------- REV01/REV02: fotosynteza ↔ oddychanie, energia z glukozy, próba kontrolna, klucz do kręgowców (2026-10-09) ---------------- */
+BIO.define('fotosynteza-oddychanie',{opis:'Komórka liścia: chloroplast (fotosynteza) i mitochondrium (oddychanie) z wymianą substancji; suwak światła → bilans gazów liścia (oddychanie stale, fotosynteza zależna od światła)',
+mount:function(el,o){var tools=H('div','bv-tools'),rng=document.createElement('input');rng.type='range';rng.min=0;rng.max=100;rng.value=o.swiatlo||70;rng.setAttribute('aria-label','Natężenie światła');rng.style.flex='1 1 160px';
+  tools.appendChild(H('span','bv-score','światło:'));tools.appendChild(rng);var lab=H('b',null,'');tools.appendChild(lab);
+  var pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  function strz(g,x1,y1,x2,y2,c,w){g.appendChild(S('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:c,'stroke-width':w||2,'stroke-linecap':'round','marker-end':'url(#fo-a'+c.replace('#','')+')'}))}
+  function draw(){var L=+rng.value,F=Math.min(1,L/60),R=.25,net=F-R;lab.textContent=L===0?'noc (ciemność)':L<20?'słabe':L<60?'średnie':'silne';
+   var s=svg(420,230,'Komórka liścia: chloroplast i mitochondrium, wymiana CO₂, O₂, wody i glukozy'),d=S('defs');
+   ['2e7d32','c0392b','1565c0','8d6e00','5d6b7a'].forEach(function(c){var m=S('marker',{id:'fo-a'+c,viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto'});m.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#'+c}));d.appendChild(m)});s.appendChild(d);
+   s.appendChild(S('rect',{x:70,y:30,width:280,height:170,rx:26,fill:'#eef7e9',stroke:'#7aa66a','stroke-width':3}));s.appendChild(T(210,20,'komórka liścia',{s:13,f:'var(--viz-mut)'}));
+   var sun=S('g',{opacity:.25+.75*L/100});sun.appendChild(S('circle',{cx:32,cy:40,r:16,fill:'#f6c343'}));for(var i=0;i<8;i++){var a=i*Math.PI/4;sun.appendChild(S('line',{x1:32+20*Math.cos(a),y1:40+20*Math.sin(a),x2:32+27*Math.cos(a),y2:40+27*Math.sin(a),stroke:'#f6c343','stroke-width':2.5}))}s.appendChild(sun);
+   var ch=S('g',{'data-k':'ch'});ch.appendChild(S('ellipse',{cx:150,cy:115,rx:52,ry:30,fill:'#5fae4e',stroke:'#2e7d32','stroke-width':2,opacity:.35+.65*F}));for(var j=0;j<4;j++)ch.appendChild(S('rect',{x:116+j*18,y:104,width:12,height:22,rx:3,fill:'#2e7d32',opacity:.8}));ch.appendChild(T(150,155,'chloroplast',{s:13}));s.appendChild(ch);
+   var mi=S('g',{'data-k':'mi'});mi.appendChild(S('ellipse',{cx:290,cy:115,rx:46,ry:26,fill:'#f2b8a0',stroke:'#c0392b','stroke-width':2}));mi.appendChild(S('path',{d:'M254 115 q8 -16 16 0 t16 0 t16 0 t16 0 t8 0',fill:'none',stroke:'#c0392b','stroke-width':1.6}));mi.appendChild(T(290,152,'mitochondrium',{s:13}));s.appendChild(mi);
+   if(L>0){strz(s,32,70,108,100,'#8d6e00',2);}
+   if(F>0){strz(s,200,105,240,105,'#8d6e00',2.5);s.appendChild(T(220,96,'glukoza',{s:12,f:'#8d6e00'}))}
+   if(F>0){strz(s,202,128,240,128,'#1565c0',1.6);s.appendChild(T(221,140,'O₂',{s:12,f:'#1565c0'}))}
+   
+   // wymiana z otoczeniem: wypadkowa
+   var gO=net>0?'O₂':'CO₂',gI=net>0?'CO₂':'O₂',k=Math.min(1,Math.abs(net)/(1-R)),w=1.5+4*k;
+   if(Math.abs(net)>.02){strz(s,395,60,355,90,net>0?'#5d6b7a':'#1565c0',w);s.appendChild(T(400,52,gI+' do liścia',{s:12,a:'end',f:'var(--viz-mut)'}));strz(s,355,150,395,180,net>0?'#1565c0':'#5d6b7a',w);s.appendChild(T(410,196,gO+' z liścia',{s:12,a:'end',f:'var(--viz-mut)'}))}
+   else s.appendChild(T(395,115,'bilans ≈ 0',{s:13,a:'end',f:'var(--viz-mut)'}));
+   s.appendChild(T(150,62,'fotosynteza: '+Math.round(F*100)+'%',{s:12,f:'#2e7d32'}));s.appendChild(T(290,72,'oddychanie: stałe',{s:12,f:'#c0392b'}));
+   clr(pic);pic.appendChild(s);
+   BIO.fx.info(pic,out,{ch:['Chloroplast — fotosynteza',' 6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂. Intensywność rośnie ze światłem (do pewnej granicy); w ciemności fotosynteza nie zachodzi.'],
+     mi:['Mitochondrium — oddychanie tlenowe',' C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP). Zachodzi stale, w dzień i w nocy.']});
+   out.innerHTML=L===0?'<b>Noc:</b> fotosynteza nie zachodzi, oddychanie trwa — liść <b>pobiera O₂ i oddaje CO₂</b>.':net<-.02?'<b>Przewaga oddychania:</b> fotosynteza słabsza niż oddychanie — liść nadal netto <b>oddaje CO₂</b>.':net<=.02?'<b>Punkt równowagi:</b> ile O₂ powstaje w fotosyntezie, tyle zużywa oddychanie — wymiana gazów z otoczeniem ≈ 0.':'<b>Przewaga fotosyntezy:</b> fotosynteza intensywniejsza niż oddychanie — liść netto <b>pobiera CO₂ i oddaje O₂</b>. Oddychanie nadal trwa (część O₂ zużywa mitochondrium).'}
+  rng.oninput=draw;draw()}});
+
+BIO.define('energia-glukozy',{opis:'Oddychanie tlenowe vs fermentacja alkoholowa vs mlekowa: warunki, miejsce, produkty i ilość ATP z jednej cząsteczki glukozy (słupki)',
+mount:function(el,o){var P=[['tl','oddychanie tlenowe','z tlenem','cytoplazma + mitochondria','CO₂ + H₂O',38,'#c0392b','prawie wszystkie organizmy'],
+   ['al','fermentacja alkoholowa','bez tlenu','cytoplazma','alkohol etylowy + CO₂',2,'#8d6e00','drożdże — chleb (CO₂ spulchnia ciasto), wino'],
+   ['ml','fermentacja mlekowa','bez tlenu','cytoplazma','kwas mlekowy',2,'#1565c0','bakterie mlekowe (jogurt, kiszonki); mięśnie przy intensywnym wysiłku']],cur=o.start||'tl';
+  var sg=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(pic);el.appendChild(out);
+  function draw(){seg(sg,P.map(function(p){return[p[0],p[1]]}),cur,function(k){cur=k;draw()});
+   var s=svg(340,214,'Ilość ATP z jednej cząsteczki glukozy w oddychaniu tlenowym i fermentacjach');
+   P.forEach(function(p,i){var y=8+i*62,w=p[5]/38*230,on=p[0]===cur;s.appendChild(T(6,y+9,p[1],{s:13,a:'start',w:on?800:600}));
+    s.appendChild(S('rect',{x:6,y:y+20,width:Math.max(8,w),height:24,rx:6,fill:p[6],opacity:on?1:.45}));s.appendChild(T(14+Math.max(8,w),y+32,'ok. '+p[5]+' ATP',{s:13,a:'start',w:700,f:p[6]}))});
+   s.appendChild(T(170,206,'ATP z 1 cząsteczki glukozy (wartości szkolne, orientacyjne)',{s:10.5,f:'var(--viz-mut)'}));clr(pic);pic.appendChild(s);
+   var p=P.filter(function(x){return x[0]===cur})[0];
+   out.innerHTML='<b>'+p[1][0].toUpperCase()+p[1].slice(1)+'</b> — '+p[2]+', '+p[3]+'.<br>Glukoza → <b>'+p[4]+'</b> + energia (ATP). Kto: '+p[7]+'.'+(cur==='tl'?'<br>Glukoza rozkładana do końca (do CO₂ i H₂O) — energii jest <b>wielokrotnie więcej</b> niż w fermentacji.':'<br>Glukoza rozkładana <b>niecałkowicie</b> — w produkcie (alkohol, kwas mlekowy) zostaje dużo energii, dlatego ATP jest niewiele.')}
+  draw()}});
+
+BIO.define('proba-kontrolna',{opis:'Planowanie doświadczenia: próba badawcza i kontrolna różnią się tylko jednym czynnikiem; przełączniki warunków, ocena planu (zmienna niezależna, zależna, stałe)',
+mount:function(el,o){var D={mocz:{n:'Moczarka a światło',bad:'światło',zal:'liczba pęcherzyków O₂ w 5 min',cz:[['swiatlo','światło',['silne','słabe'],'światło'],['temp','temperatura wody',['20 °C','30 °C']],['nahco3','NaHCO₃ w wodzie',['tak','nie']],['galaz','gałązka moczarki',['jednakowa','dłuższa']]]},
+   drozdze:{n:'Drożdże a CO₂',bad:'drożdże',zal:'zmętnienie wody wapiennej',cz:[['drozdze','drożdże',['są','brak'],'drożdże'],['cukier','roztwór cukru',['tak','nie']],['temp','temperatura',['ok. 35 °C','ok. 5 °C']],['objetosc','objętość roztworu',['200 cm³','100 cm³']]]}};
+  var cur=o.start||'mocz',A={},B={};function reset(){var d=D[cur];A={};B={};d.cz.forEach(function(c){A[c[0]]=0;B[c[0]]=c[3]?1:0})}reset();
+  var sg=H('div','bv-tools'),tab=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(tab);el.appendChild(out);
+  function draw(){var d=D[cur];seg(sg,Object.keys(D).map(function(k){return[k,D[k].n]}),cur,function(k){cur=k;reset();draw()});
+   var h='<table style="width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px"><tr><th align="left" style="padding:4px">czynnik</th><th style="padding:4px">próba badawcza</th><th style="padding:4px">próba kontrolna</th></tr>';
+   d.cz.forEach(function(c){var r=A[c[0]]!==B[c[0]];h+='<tr style="background:'+(r?'#fff4e5':'transparent')+'"><td style="padding:4px">'+c[1]+(c[3]?' <small>(badany)</small>':'')+'</td>'+['A','B'].map(function(s){var v=(s==='A'?A:B)[c[0]];return '<td align="center" style="padding:4px"><button type="button" class="bv-btn'+(r?' on':'')+'" data-s="'+s+'" data-c="'+c[0]+'">'+c[2][v]+'</button></td>'}).join('')+'</tr>'});
+   tab.innerHTML=h+'</table>';[].forEach.call(tab.querySelectorAll('button'),function(b){b.onclick=function(){var X=b.dataset.s==='A'?A:B;X[b.dataset.c]=1-X[b.dataset.c];draw()}});
+   var rozne=d.cz.filter(function(c){return A[c[0]]!==B[c[0]]}),badany=d.cz.filter(function(c){return c[3]})[0];
+   out.innerHTML=!rozne.length?'<b>Próby są identyczne</b> — nie da się niczego wykazać. Zmień w jednej próbie badany czynnik: <b>'+badany[1]+'</b>.':
+    rozne.length>1?'<b>Błąd planu:</b> próby różnią się '+rozne.length+' czynnikami ('+rozne.map(function(c){return c[1]}).join(', ')+'). Nie wiadomo, który spowodował wynik — zostaw różnicę tylko w czynniku <b>'+badany[1]+'</b>.':
+    rozne[0][3]?'<b>Dobry plan.</b> Zmienna niezależna (badana): <b>'+d.bad+'</b>. Zmienna zależna (mierzona): <b>'+d.zal+'</b>. Pozostałe warunki stałe — tylko wtedy wynik można przypisać badanemu czynnikowi. Wiarygodność zwiększą <b>powtórzenia</b>.':
+    '<b>Błąd planu:</b> próby różnią się czynnikiem „'+rozne[0][1]+'”, a badamy <b>'+badany[1]+'</b>. Zmieniaj tylko badany czynnik.'}
+  draw()}});
+
+BIO.define('klucz-kregowce',{opis:'Klucz dwudzielny do gromad kręgowców (ryby, płazy, gady, ptaki, ssaki): pytania tak/nie, ścieżka; tryb „rozpoznaj zwierzę” z przykładami',
+mount:function(el,o){var K={q1:['Czy ciało pokrywają pióra?','PTAKI','q2'],q2:['Czy ma sierść i karmi młode mlekiem?','SSAKI','q3'],q3:['Czy przez całe życie oddycha skrzelami i ma płetwy?','RYBY','q4'],q4:['Czy skóra jest naga, wilgotna, śluzowata?','PŁAZY','q5'],q5:['Czy skórę pokrywają suche, rogowe łuski lub tarczki?','GADY','?']};
+  var Z=[['wróbel','PTAKI',[1]],['pingwin','PTAKI',[1]],['nietoperz','SSAKI',[0,1]],['delfin','SSAKI',[0,1]],['wieloryb','SSAKI',[0,1]],['karp','RYBY',[0,0,1]],['konik morski','RYBY',[0,0,1]],['żaba','PŁAZY',[0,0,0,1]],['traszka','PŁAZY',[0,0,0,1]],['żółw','GADY',[0,0,0,0,1]],['jaszczurka','GADY',[0,0,0,0,1]],['wąż','GADY',[0,0,0,0,1]]];
+  var path=[],zw=null,sg=H('div','bv-tools'),box=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(box);el.appendChild(out);
+  function nowy(){zw=Z[Math.floor(Math.random()*Z.length)];path=[];draw()}
+  function draw(){clr(sg);sg.appendChild(btn('▶ rozpoznaj zwierzę',nowy));sg.appendChild(btn('od początku',function(){zw=null;path=[];draw()}));
+   var h='<div style="font-size:14px">'+(zw?'Zwierzę: <b style="font-size:17px">'+zw[0]+'</b>':'Przejdź klucz dla wybranego zwierzęcia albo kliknij „rozpoznaj zwierzę”.')+'</div><ol style="margin:8px 0;padding-left:22px">';
+   var k='q1',end=null;path.forEach(function(a,i){var q=K[k];h+='<li>'+q[0]+' — <b>'+(a?'tak':'nie')+'</b></li>';if(a){end=q[1]}else k=q[2]});
+   h+='</ol>';if(!end&&K[k]){h+='<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><b>'+(path.length+1)+'. '+K[k][0]+'</b></div>'}
+   box.innerHTML=h;if(!end&&K[k]){var r=H('div','bv-tools');r.appendChild(btn('tak',function(){path.push(1);draw()}));r.appendChild(btn('nie',function(){path.push(0);draw()}));box.appendChild(r)}
+   if(end){var good=!zw||zw[1]===end,wz=zw?zw[2]:null,ok=!wz||wz.join()===path.join();
+    out.innerHTML='Wynik klucza: <b>'+end+'</b>.'+(zw?(good&&ok?' <b style="color:#2e7d32">Dobrze!</b>':' <b style="color:#c0392b">Sprawdź jeszcze raz</b> — '+zw[0]+' to '+{PTAKI:'ptak',SSAKI:'ssak',RYBY:'ryba','PŁAZY':'płaz',GADY:'gad'}[zw[1]]+'.'):'')+
+     (zw&&/delfin|wieloryb/.test(zw[0])?' Delfin i wieloryb mają płetwy, ale oddychają <b>płucami</b> i karmią młode mlekiem — to ssaki.':zw&&zw[0]==='nietoperz'?' Nietoperz lata, ale ma sierść, nie pióra — to ssak.':zw&&zw[0]==='pingwin'?' Pingwin nie lata, ale ma pióra — to ptak.':zw&&zw[0]==='konik morski'?' Konik morski nie przypomina ryby, ale ma skrzela i płetwy — to ryba.':'')}
+   else out.innerHTML='Klucz dwudzielny: na każde pytanie odpowiadasz <b>tak</b> albo <b>nie</b>; kolejność pytań prowadzi od cech najbardziej wyróżniających (pióra, sierść).'}
+  draw()}});
+
+BIO.define('wirus-bakteria',{opis:'Wirus (kapsyd + DNA/RNA, ew. osłonka) obok komórki bakterii (ściana, błona, cytoplazma, rybosomy, nukleoid, plazmid, rzęska) w różnej skali; klik = opis; panel porównania (komórka? metabolizm? antybiotyk?)',
+mount:function(el,o){var pic=H('div'),out=H('div','bv-info');el.appendChild(pic);el.appendChild(out);
+  var s=svg(420,230,'Porównanie budowy wirusa i komórki bakterii');
+  function g(k,kids){var e=S('g',{'data-k':k});kids.forEach(function(c){e.appendChild(c)});s.appendChild(e);return e}
+  // bakteria (pałeczka) — duża
+  g('sciana',[S('rect',{x:150,y:40,width:250,height:130,rx:65,fill:'#e9f1dc',stroke:'#6b8f3a','stroke-width':7})]);
+  g('blona',[S('rect',{x:158,y:48,width:234,height:114,rx:57,fill:'#f4f8ec',stroke:'#c7a73a','stroke-width':2.5})]);
+  var ryb=[];for(var i=0;i<26;i++){var x=180+(i*53)%195,y=62+(i*37)%88;ryb.push(S('circle',{cx:x,cy:y,r:2.6,fill:'#5d6b7a'}))}g('rybosomy',ryb);
+  g('nukleoid',[S('path',{d:'M235 92 q12 -22 26 0 t26 0 t26 0 q-6 22 -22 14 t-28 8 t-26 -4 t-2 -18z',fill:'none',stroke:'#7b3fa0','stroke-width':2.4})]);
+  g('plazmid',[S('circle',{cx:350,cy:130,r:9,fill:'none',stroke:'#c0392b','stroke-width':2.2})]);
+  g('rzeska',[S('path',{d:'M400 105 q14 -16 10 -2 t12 0 t10 -6',fill:'none',stroke:'#6b8f3a','stroke-width':2.4})]);
+  s.appendChild(T(275,190,'bakteria (pałeczka) ≈ 2 µm',{s:12}));
+  // wirus — mały
+  var vx=62,vy=110,hex=[];for(var k=0;k<6;k++){var a=Math.PI/3*k-Math.PI/6;hex.push((vx+24*Math.cos(a)).toFixed(1)+','+(vy+24*Math.sin(a)).toFixed(1))}
+  g('oslonka',[S('circle',{cx:vx,cy:vy,r:33,fill:'none',stroke:'#c7a73a','stroke-width':2,'stroke-dasharray':'3 3'})]);
+  g('kapsyd',[S('polygon',{points:hex.join(' '),fill:'#dbe8f6',stroke:'#2a62b5','stroke-width':2.5})]);
+  g('kwas',[S('path',{d:'M'+(vx-11)+' '+vy+' q5 -10 10 0 t10 0',fill:'none',stroke:'#7b3fa0','stroke-width':2.2})]);
+  s.appendChild(T(vx,160,'wirus ≈ 0,1 µm',{s:12}));s.appendChild(T(vx,176,'(powiększony bardziej!)',{s:10,f:'var(--viz-mut)'}));
+  s.appendChild(T(210,214,'Skale nie są równe — bakteria jest ok. 10–100 razy większa od wirusa.',{s:11,f:'var(--viz-mut)'}));
+  pic.appendChild(s);
+  BIO.fx.info(pic,out,{sciana:['Ściana komórkowa',' Sztywna osłona bakterii (u bakterii z mureiny — nie z celulozy). Na nią działa część antybiotyków.'],
+   blona:['Błona komórkowa',' Oddziela wnętrze od otoczenia, selektywnie przepuszczalna — jak u każdej komórki.'],
+   rybosomy:['Rybosomy',' Wytwarzają białka. Wirus nie ma rybosomów — używa rybosomów gospodarza.'],
+   nukleoid:['Nukleoid',' Kolista cząsteczka DNA leżąca w cytoplazmie, bez otoczki jądrowej — bakteria nie ma jądra (prokariont).'],
+   plazmid:['Plazmid',' Mała kolista cząsteczka DNA; może nieść np. geny oporności na antybiotyki.'],
+   rzeska:['Rzęska',' Służy do ruchu (nie wszystkie bakterie ją mają).'],
+   kapsyd:['Kapsyd',' Białkowy płaszcz wirusa, chroni materiał genetyczny.'],
+   kwas:['Materiał genetyczny wirusa',' DNA albo RNA (nigdy oba). To jedyna „instrukcja”, jaką wirus wnosi do komórki.'],
+   oslonka:['Osłonka (nie u wszystkich wirusów)',' Błoniasta warstwa pochodząca z komórki gospodarza — ma ją np. wirus grypy i HIV.']});
+  out.innerHTML='<b>Wirus a bakteria</b><span>Bakteria to <strong>komórka</strong>: ma własną przemianę materii, rybosomy, rozmnaża się przez podział — antybiotyki mogą ją zniszczyć. Wirus to <strong>cząstka bez budowy komórkowej</strong>: kapsyd + DNA lub RNA; namnaża się tylko w żywej komórce — <strong>antybiotyki na wirusy nie działają</strong>.</span>'}});
+
+BIO.define('przeobrazenie-plaza',{opis:'Rozwój złożony żaby: skrzek → kijanka (skrzela zewnętrzne) → kijanka z kończynami → młoda żaba (zanik ogona) → żaba; suwak etapów, oddychanie i środowisko na każdym etapie',
+mount:function(el,o){var E=[['skrzek','jaja w galaretowatej osłonce, w wodzie','—','woda'],['kijanka','ogon, skrzela zewnętrzne, odżywia się roślinami (glonami)','skrzela','woda'],['kijanka z kończynami','najpierw tylne, potem przednie kończyny; skrzela wewnętrzne, rozwijają się płuca','skrzela → płuca','woda'],['młoda żaba','zanika ogon, cztery kończyny, wychodzi na ląd','płuca + skóra','woda i ląd'],['żaba (dorosła)','drapieżnik (owady); rozmnaża się w wodzie — zapłodnienie zewnętrzne','płuca + skóra','ląd i woda']];
+  var tools=H('div','bv-tools'),rng=document.createElement('input');rng.type='range';rng.min=0;rng.max=4;rng.value=o.etap||1;rng.setAttribute('aria-label','Etap rozwoju');rng.style.flex='1 1 160px';
+  tools.appendChild(H('span','bv-score','etap:'));tools.appendChild(rng);var pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  function zaba(e,x,y,k){var G=S('g'),c='#4f8a3c',d='#2f5e22';
+   if(e===0){for(var i=0;i<9;i++){var a=i*0.7,r=8+i*2.2;G.appendChild(S('circle',{cx:x+r*Math.cos(a),cy:y+r*Math.sin(a),r:7,fill:'#e7f1f7',stroke:'#9bb7c7'}));G.appendChild(S('circle',{cx:x+r*Math.cos(a),cy:y+r*Math.sin(a),r:2.6,fill:'#1a2332'}))}return G}
+   var ogon=e<=2?1:e===3?.4:0,body=e>=3?[26,18]:[16,12];
+   if(ogon)G.appendChild(S('path',{d:'M'+(x-body[0]+4)+' '+y+' q-'+(30*ogon)+' -14 -'+(46*ogon)+' 0 q'+(16*ogon)+' 14 '+(46*ogon)+' 0z',fill:c,opacity:.85}));
+   if(e>=2){G.appendChild(S('path',{d:'M'+(x-8)+' '+(y+10)+' l-12 14 l-8 0',fill:'none',stroke:d,'stroke-width':3,'stroke-linecap':'round'}))}
+   if(e>=3){G.appendChild(S('path',{d:'M'+(x+12)+' '+(y+10)+' l6 12 l6 0',fill:'none',stroke:d,'stroke-width':3,'stroke-linecap':'round'}))}
+   G.appendChild(S('ellipse',{cx:x,cy:y,rx:body[0],ry:body[1],fill:c}));
+   G.appendChild(S('circle',{cx:x+body[0]*.5,cy:y-body[1]*.55,r:3.4,fill:'#fff',stroke:d}));G.appendChild(S('circle',{cx:x+body[0]*.5,cy:y-body[1]*.55,r:1.6,fill:'#1a2332'}));
+   if(e===1){[-1,1].forEach(function(z){G.appendChild(S('path',{d:'M'+(x+2)+' '+(y+z*10)+' q4 '+(z*8)+' 10 '+(z*6),fill:'none',stroke:'#c0392b','stroke-width':2}))})}
+   return G}
+  function draw(){var e=+rng.value,s=svg(420,200,'Przeobrażenie żaby, etap: '+E[e][0]);
+   s.appendChild(S('rect',{x:0,y:0,width:420,height:200,fill:'#f1f7fb'}));
+   s.appendChild(S('path',{d:'M0 60 Q105 52 210 60 T420 60 L420 200 L0 200z',fill:'#d6ebf6'}));
+   s.appendChild(S('path',{d:'M0 60 Q105 52 210 60 T420 60',fill:'none',stroke:'#7fb6d6','stroke-width':2}));if(e>=3)s.appendChild(S('path',{d:'M0 200 L0 78 Q50 52 120 56 Q185 60 215 92 Q238 130 246 200z',fill:'#cfe3b8',stroke:'#8fb36a','stroke-width':2}));s.appendChild(T(410,48,'powierzchnia wody',{s:10,a:'end',f:'#4b86a8'}));
+   E.forEach(function(q,i){var cx=44+i*83,on=i===e;s.appendChild(S('circle',{cx:cx,cy:182,r:on?9:6,fill:on?'var(--accent)':'#c9d6dd'}));if(i<4)s.appendChild(S('line',{x1:cx+10,y1:182,x2:cx+73,y2:182,stroke:'#c9d6dd','stroke-width':2}))});
+   s.appendChild(zaba(e,e>=3?112:210,e>=3?34:118,1));
+   s.appendChild(T(e>=3?330:210,24,E[e][0],{s:16,w:800}));clr(pic);pic.appendChild(s);
+   out.innerHTML='<b>'+(e+1)+'. '+E[e][0]+'</b><span>'+E[e][1]+'.</span><span>Oddychanie: <strong>'+E[e][2]+'</strong> · środowisko: <strong>'+E[e][3]+'</strong></span>'+(e===4?'<span>To <strong>rozwój złożony (z przeobrażeniem)</strong>: larwa (kijanka) różni się od dorosłej żaby budową, oddychaniem, pokarmem i środowiskiem.</span>':'')}
+  rng.oninput=draw;draw()}});
+
+BIO.define('przeobrazenie-owadow',{opis:'Przeobrażenie zupełne (motyl: jajo → gąsienica → poczwarka → motyl) i niezupełne (konik polny: jajo → larwa podobna do dorosłego → owad dorosły); klik = opis etapu; różnica: poczwarka',
+mount:function(el,o){var pic=H('div'),out=H('div','bv-info');el.appendChild(pic);el.appendChild(out);
+  var s=svg(440,262,'Przeobrażenie zupełne motyla i niezupełne konika polnego');
+  function arrow(x1,y,x2){s.appendChild(S('line',{x1:x1,y1:y,x2:x2-6,y2:y,stroke:'#8c959f','stroke-width':2}));s.appendChild(S('path',{d:'M'+(x2-8)+' '+(y-4)+' L'+x2+' '+y+' L'+(x2-8)+' '+(y+4)+'z',fill:'#8c959f'}))}
+  function g(k){var e=S('g',{'data-k':k});s.appendChild(e);return e}
+  s.appendChild(T(8,16,'przeobrażenie zupełne (motyl)',{s:14,a:'start',w:800}));s.appendChild(T(8,146,'przeobrażenie niezupełne (konik polny)',{s:14,a:'start',w:800}));
+  var y1=70,y2=200;
+  // zupełne
+  var a=g('jajo1');[[0,0],[9,3],[4,9]].forEach(function(p){a.appendChild(S('ellipse',{cx:46+p[0],cy:y1+p[1],rx:5,ry:6.5,fill:'#f6e7b0',stroke:'#c9a94a'}))});a.appendChild(T(50,y1+38,'jajo',{s:13}));
+  arrow(72,y1,104);
+  var b=g('gasienica');for(var i=0;i<7;i++)b.appendChild(S('circle',{cx:118+i*9,cy:y1+(i%2?2:-2),r:6.5,fill:'#6aa84f',stroke:'#3d6b2c'}));b.appendChild(S('circle',{cx:118+6*9+3,cy:y1-4,r:2,fill:'#1a2332'}));b.appendChild(T(146,y1+38,'larwa',{s:13}));
+  arrow(184,y1,214);
+  var c=g('poczwarka');c.appendChild(S('line',{x1:240,y1:y1-30,x2:240,y2:y1-20,stroke:'#8c959f'}));c.appendChild(S('path',{d:'M240 '+(y1-20)+' q14 10 8 32 q-8 14 -16 0 q-6 -22 8 -32z',fill:'#b7a36a',stroke:'#7a6a3a'}));c.appendChild(S('rect',{x:204,y:y1+28,width:74,height:20,rx:10,fill:'#fff4e5',stroke:'#e09b3d'}));c.appendChild(T(241,y1+38,'poczwarka',{s:11,w:800,f:'#b45f06'}));
+  arrow(276,y1,306);
+  var d=g('motyl');[[-1,1],[1,1]].forEach(function(q){d.appendChild(S('path',{d:'M352 '+y1+' q'+(q[0]*34)+' -34 '+(q[0]*36)+' -6 q'+(q[0]*-6)+' 14 '+(q[0]*-36)+' 6z',fill:'#e8833a',stroke:'#9a4c12'}));d.appendChild(S('path',{d:'M352 '+(y1+2)+' q'+(q[0]*26)+' 8 '+(q[0]*22)+' 24 q'+(q[0]*-12)+' 2 '+(q[0]*-22)+' -20z',fill:'#f2b46d',stroke:'#9a4c12'}))});d.appendChild(S('rect',{x:349,y:y1-14,width:6,height:34,rx:3,fill:'#3a2a1a'}));d.appendChild(T(352,y1+38,'owad dorosły',{s:13}));
+  // niezupełne
+  var e=g('jajo2');[[0,0],[8,2],[3,8],[11,9]].forEach(function(p){e.appendChild(S('ellipse',{cx:46+p[0],cy:y2-8+p[1],rx:3.5,ry:6,fill:'#e4d3a8',stroke:'#a88d4b'}))});e.appendChild(T(50,y2+30,'jajo',{s:13}));
+  arrow(72,y2,128);
+  function konik(gr,x,sk){gr.appendChild(S('ellipse',{cx:x,cy:y2,rx:26*sk,ry:8*sk,fill:'#7fb069',stroke:'#3d6b2c'}));gr.appendChild(S('circle',{cx:x+26*sk,cy:y2-3*sk,r:6*sk,fill:'#7fb069',stroke:'#3d6b2c'}));gr.appendChild(S('path',{d:'M'+(x-4*sk)+' '+(y2+2*sk)+' l-14 '+(-18*sk)+' l-10 '+(22*sk),fill:'none',stroke:'#3d6b2c','stroke-width':2.4}));gr.appendChild(S('line',{x1:x+28*sk,y1:y2-8*sk,x2:x+44*sk,y2:y2-22*sk,stroke:'#3d6b2c','stroke-width':1.4}))}
+  var f=g('nimfa');konik(f,160,.7);f.appendChild(T(150,y2+30,'larwa',{s:13}));
+  arrow(204,y2,268);
+  var h=g('konik');konik(h,326,1);h.appendChild(S('path',{d:'M304 '+(y2-6)+' q20 -10 42 -2 q-20 6 -42 2z',fill:'#a8cf8e',stroke:'#3d6b2c',opacity:.9}));h.appendChild(T(330,y2+30,'owad dorosły',{s:13}));
+  s.appendChild(S('rect',{x:198,y:y2+8,width:84,height:36,rx:7,fill:'#fff',stroke:'#c0392b','stroke-dasharray':'4 3'}));s.appendChild(T(240,y2+20,'brak',{s:12,f:'#c0392b'}));s.appendChild(T(240,y2+34,'poczwarki',{s:12,f:'#c0392b'}));
+  pic.appendChild(s);
+  BIO.fx.info(pic,out,{jajo1:['Jajo (motyl)',' Samica składa jaja na roślinie, którą będzie jadła larwa.'],
+   gasienica:['Larwa — gąsienica',' Zupełnie niepodobna do dorosłego: nie ma skrzydeł, ma gryzący aparat gębowy, je liście i szybko rośnie, kilka razy linieje.'],
+   poczwarka:['Poczwarka',' Etap spoczynku — nie je i prawie się nie rusza, ale w środku zachodzi całkowita przebudowa ciała larwy w owada dorosłego. Poczwarka występuje <strong>tylko</strong> w przeobrażeniu zupełnym (motyle, chrząszcze, muchy, pszczoły).'],
+   motyl:['Owad dorosły (imago)',' Ma skrzydła i ssący aparat gębowy (pije nektar) — inny pokarm niż larwa, więc larwy i dorosłe nie konkurują o pokarm.'],
+   jajo2:['Jajo (konik polny)',' Jaja składane do gleby.'],
+   nimfa:['Larwa podobna do dorosłego',' Wygląda jak mały owad dorosły, ale nie ma skrzydeł (są tylko zawiązki); rośnie i linieje, z każdym linieniem coraz bardziej przypomina dorosłego. Nie ma poczwarki.'],
+   konik:['Owad dorosły',' Ma w pełni rozwinięte skrzydła i jest zdolny do rozmnażania. Przeobrażenie niezupełne: konik polny, ważka, pluskwiaki.']});
+  out.innerHTML='<b>Zupełne czy niezupełne?</b><span>Rozstrzyga <strong>poczwarka</strong>: jajo → larwa → <strong>poczwarka</strong> → owad dorosły to przeobrażenie zupełne; jajo → larwa podobna do dorosłego → owad dorosły (bez poczwarki) — niezupełne. Kliknij etap, aby zobaczyć opis.</span>'}});
+
+BIO.define('podzial-komorki',{opis:'Mitoza i mejoza krok po kroku na modelu 2n = 4 (dwie pary homologów: matczyne czerwone, ojcowskie niebieskie, długie i krótkie); chromatydy, crossing-over, liczby chromosomów i chromatyd w każdej fazie (model i człowiek)',
+mount:function(el,o){var tryb=o.start==='mejoza'?'mejoza':'mitoza',k=0,M='#d64545',Oj='#3b6fd6';
+  var sg=H('div','bv-tools'),tools=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  var prev=btn('◀ wstecz',function(){if(k>0){k--;draw()}}),next=btn('dalej ▶',function(){if(k<ST[tryb].length-1){k++;draw()}}),lab=H('span','bv-score','');tools.appendChild(prev);tools.appendChild(next);tools.appendChild(lab);
+  // chromatydy: [kolor, kolor końcówki (crossing-over) | null, długość]
+  var A1=[M,null,34],A2=[M,Oj,34],A3=[Oj,M,34],A4=[Oj,null,34],B1=[M,null,22],B2=[M,null,22],B3=[Oj,null,22],B4=[Oj,null,22];
+  var Am=[A1,A1],Ao=[A4,A4],Bm=[B1,B1],Bo=[B3,B3],AmX=[A1,A2],AoX=[A3,A4];
+  function rod(g,x,y,c){var L=c[2],w=6;g.appendChild(S('rect',{x:x-w/2,y:y-L/2,width:w,height:L,rx:3,fill:c[0]}));if(c[1])g.appendChild(S('rect',{x:x-w/2,y:y-L/2,width:w,height:L*.36,rx:3,fill:c[1]}))}
+  function X(g,x,y,ch){rod(g,x-3.6,y,ch[0]);rod(g,x+3.6,y,ch[1]);g.appendChild(S('circle',{cx:x,cy:y,r:3,fill:'#1a2332'}))}
+  function kom(g,cx,cy,rx,ry,jadro){g.appendChild(S('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'#f4f8f1',stroke:'#7aa66a','stroke-width':2.5}));if(jadro)g.appendChild(S('ellipse',{cx:cx,cy:cy,rx:rx*.55,ry:ry*.62,fill:jadro==='z'?'none':'#ece4f6',stroke:'#9a7fc0','stroke-width':1.6,'stroke-dasharray':jadro==='z'?'5 4':null}))}
+  function polow(g,cx,cy,rx,L,P){L.forEach(function(p){g.appendChild(S('line',{x1:cx-rx+12,y1:cy,x2:p[0],y2:p[1],stroke:'#b9c4bd','stroke-width':1}))});P.forEach(function(p){g.appendChild(S('line',{x1:cx+rx-12,y1:cy,x2:p[0],y2:p[1],stroke:'#b9c4bd','stroke-width':1}))})}
+  function wrz(g,cx,cy,rx,pts){pts.forEach(function(p){[cx-rx+12,cx+rx-12].forEach(function(px){g.appendChild(S('line',{x1:px,y1:cy,x2:p[0],y2:p[1],stroke:'#b9c4bd','stroke-width':1}))})})}
+  var ST={mitoza:[
+   ['Interfaza (G1)','Chromosomy są rozluźnione w jądrze; każdy ma <strong>jedną chromatydę</strong>.',4,4,'2n',function(g){kom(g,220,130,150,100,1);rod(g,180,110,A1);rod(g,262,100,A4);rod(g,200,160,B1);rod(g,248,158,B3)}],
+   ['Interfaza — po replikacji DNA','DNA zostało skopiowane: każdy chromosom ma teraz <strong>dwie chromatydy siostrzane</strong> połączone centromerem. Liczba chromosomów się <strong>nie zmieniła</strong>.',4,8,'2n',function(g){kom(g,220,130,150,100,1);X(g,180,110,Am);X(g,262,100,Ao);X(g,200,160,Bm);X(g,248,158,Bo)}],
+   ['Profaza','Chromosomy kondensują się (stają się widoczne), otoczka jądrowa zanika, tworzy się wrzeciono podziałowe.',4,8,'2n',function(g){kom(g,220,130,150,100,'z');X(g,185,105,Am);X(g,255,100,Ao);X(g,200,165,Bm);X(g,245,160,Bo)}],
+   ['Metafaza','Chromosomy ustawiają się <strong>pojedynczo</strong> w płaszczyźnie środkowej komórki; włókna wrzeciona łączą się z centromerami.',4,8,'2n',function(g){kom(g,220,130,150,100);var P=[[220,62],[220,104],[220,150],[220,190]];wrz(g,220,130,150,P);X(g,220,62,Am);X(g,220,104,Ao);X(g,220,150,Bm);X(g,220,190,Bo)}],
+   ['Anafaza','<strong>Chromatydy siostrzane</strong> rozdzielają się i wędrują do przeciwnych biegunów — od tej chwili każda jest osobnym chromosomem.',8,8,'2n + 2n',function(g){kom(g,220,130,150,100);var Y=[62,104,150,190],C=[A1,A4,B1,B3];polow(g,220,130,150,Y.map(function(y){return[140,y]}),Y.map(function(y){return[300,y]}));Y.forEach(function(y,i){rod(g,140,y,C[i]);rod(g,300,y,C[i])})}],
+   ['Telofaza i cytokineza','Odtwarzają się jądra, cytoplazma dzieli się: powstają <strong>2 komórki potomne</strong>, każda z takim samym zestawem chromosomów jak komórka macierzysta (2n).',4,4,'2n i 2n',function(g){[110,330].forEach(function(cx){kom(g,cx,130,96,90,1);rod(g,cx-22,110,A1);rod(g,cx+22,104,A4);rod(g,cx-12,158,B1);rod(g,cx+14,156,B3)})}]],
+  mejoza:[
+   ['Interfaza (G1)','Komórka diploidalna (2n): dwie pary chromosomów homologicznych — w każdej parze jeden od matki (czerwony) i jeden od ojca (niebieski).',4,4,'2n',function(g){kom(g,220,130,150,100,1);rod(g,180,110,A1);rod(g,262,100,A4);rod(g,200,160,B1);rod(g,248,158,B3)}],
+   ['Interfaza — po replikacji DNA','Jedna replikacja przed mejozą: każdy chromosom ma dwie chromatydy.',4,8,'2n',function(g){kom(g,220,130,150,100,1);X(g,180,110,Am);X(g,262,100,Ao);X(g,200,160,Bm);X(g,248,158,Bo)}],
+   ['Profaza I — pary i crossing-over','Chromosomy <strong>homologiczne łączą się w pary</strong>. Może zajść <strong>crossing-over</strong>: wymiana odcinków między chromatydami homologów (kolorowe końcówki).',4,8,'2n',function(g){kom(g,220,130,150,100,'z');X(g,196,100,AmX);X(g,214,100,AoX);X(g,226,165,Bm);X(g,244,165,Bo);g.appendChild(T(300,72,'crossing-over',{s:11,w:700,f:'#7b3fa0'}));g.appendChild(S('line',{x1:262,y1:76,x2:222,y2:92,stroke:'#7b3fa0','stroke-width':1.2}))}],
+   ['Metafaza I','<strong>Pary</strong> homologów ustawiają się w płaszczyźnie środkowej. Ustawienie każdej pary jest losowe (tu: para długich — czerwony po lewej, para krótkich — niebieski po lewej).',4,8,'2n',function(g){kom(g,220,130,150,100);wrz(g,220,130,150,[[206,90],[234,90],[206,168],[234,168]]);X(g,206,90,AmX);X(g,234,90,AoX);X(g,206,168,Bo);X(g,234,168,Bm)}],
+   ['Anafaza I','Do biegunów wędrują <strong>całe chromosomy</strong> (z dwiema chromatydami) — homologi się rozdzielają. To zmniejsza liczbę zestawów z 2n do n.',4,8,'n + n',function(g){kom(g,220,130,150,100);polow(g,220,130,150,[[128,92],[128,168]],[[312,92],[312,168]]);X(g,128,92,AmX);X(g,128,168,Bo);X(g,312,92,AoX);X(g,312,168,Bm)}],
+   ['Telofaza I','Powstają <strong>2 komórki haploidalne</strong> (n): po jednym chromosomie z każdej pary, ale chromosomy nadal mają po 2 chromatydy.',2,4,'n i n',function(g){kom(g,115,130,96,92,1);kom(g,325,130,96,92,1);X(g,98,108,AmX);X(g,134,156,Bo);X(g,308,108,AoX);X(g,344,156,Bm)}],
+   ['Metafaza II','W każdej komórce chromosomy ustawiają się <strong>pojedynczo</strong> w płaszczyźnie środkowej — jak w mitozie.',2,4,'n i n',function(g){[[115,AmX,Bo],[325,AoX,Bm]].forEach(function(q){kom(g,q[0],130,96,92);wrz(g,q[0],130,96,[[q[0],96],[q[0],166]]);X(g,q[0],96,q[1]);X(g,q[0],166,q[2])})}],
+   ['Anafaza II','Rozdzielają się <strong>chromatydy siostrzane</strong>. Przez crossing-over chromatydy jednego chromosomu nie są już identyczne.',4,4,'n + n (w każdej komórce)',function(g){[[115,AmX,Bo],[325,AoX,Bm]].forEach(function(q){kom(g,q[0],130,96,92);polow(g,q[0],130,96,[[q[0]-42,96],[q[0]-42,166]],[[q[0]+42,96],[q[0]+42,166]]);rod(g,q[0]-42,96,q[1][0]);rod(g,q[0]+42,96,q[1][1]);rod(g,q[0]-42,166,q[2][0]);rod(g,q[0]+42,166,q[2][1])})}],
+   ['Telofaza II','Powstają <strong>4 komórki haploidalne</strong> (n) — każda z innym zestawem chromosomów. U człowieka mejoza prowadzi do powstania gamet.',2,2,'4 × n',function(g){[[56,A1,B3],[164,A2,B3],[276,A3,B1],[384,A4,B1]].forEach(function(q){kom(g,q[0],130,50,70,1);rod(g,q[0]-11,112,q[1]);rod(g,q[0]+11,150,q[2])})}]]};
+  function draw(){seg(sg,[['mitoza','mitoza'],['mejoza','mejoza']],tryb,function(m){tryb=m;k=0;draw()});
+   var L=ST[tryb],e=L[k],s=svg(440,262,'Podział komórki ('+tryb+'), faza: '+e[0]);var g=S('g');s.appendChild(g);e[5](g);
+   s.appendChild(T(220,252,'model: 2n = 4 · czerwone — od matki, niebieskie — od ojca',{s:11,f:'var(--viz-mut)'}));clr(pic);pic.appendChild(s);
+   lab.innerHTML='krok '+(k+1)+' / '+L.length;prev.disabled=k===0;next.disabled=k===L.length-1;
+   var cz=function(n){return n===4?46:n===8?92:n===2?23:n};
+   out.innerHTML='<b>'+e[0]+'</b><span>'+e[1]+'</span><span>W jednej komórce: <strong>'+e[2]+'</strong> chromosomy, <strong>'+e[3]+'</strong> chromatyd · ploidia: <strong>'+e[4]+'</strong>. U człowieka: '+cz(e[2])+' chromosomów, '+cz(e[3])+' chromatyd.</span>'}
   draw()}});
 })();
 
