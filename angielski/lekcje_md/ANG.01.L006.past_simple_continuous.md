@@ -3,29 +3,47 @@ kod: L006
 przedmiot: angielski
 tytul: Past Simple i Past Continuous
 lead: Egzamin ósmoklasisty · kompleksowe przygotowanie — Lekcja 6 – zakończone wydarzenia i czynności w toku
-stopka: Lekcja 6 – Past Simple i Past Continuous • Wersja 1.2 (poprawki redakcyjne) • 2026-08-24
-zrodlo: L006-EN-Past-Simple-Continuous.html (konwersja html_do_md.py, 2026-10-09)
-stan: KONWERSJA Z HTML — sprawdzić odpowiedzi „DO UZUPEŁNIENIA” i grafiki GFX
+stopka: Lekcja 6 – Past Simple i Past Continuous • Wersja 2.0 (ULEPSZONA) • 2026-10-11
+zrodlo: L006-EN-Past-Simple-Continuous.html (konwersja html_do_md.py, 2026-10-09; ulepszenie i warstwa olimpijska: model AI, 2026-10-11)
+stan: W1 FULL — model AI (paczka ULEPSZ --olimpiada ANG_OLI1), 2026-10-11; scalenie i sprawdzenie Claude
 ---
-Lekcja 6 · orientacja
 
-**1. Rozpoznaj sytuację** Czy to wydarzenie zakończone, czy czynność w toku?
+**Lekcja 6 · orientacja**
 
-**2. Wybierz czas** Past Simple (punkt) czy Past Continuous (linia)?
+**1. Rozpoznaj sytuację** — Czy to wydarzenie zakończone, czy czynność w toku?
 
-**3. Sprawdź formę** did + forma podstawowa · was/were + -ing
+**2. Wybierz czas** — Past Simple (punkt) czy Past Continuous (linia)?
 
-Zasada pracy
+**3. Sprawdź formę** — did + forma podstawowa · was/were + -ing
 
-**Najpierw zobacz sytuację w głowie.** Wyobraź sobie film – czy akcja jest punktem (wydarzenie), czy trwa (tło)? Dopiero potem wybierz czas.
+::: karta core | Zasada pracy
+Najpierw zobacz sytuację w głowie. Wyobraź sobie film – czy akcja jest punktem (wydarzenie), czy trwa (tło)? Dopiero potem wybierz czas.
+:::
 
-## Spis treści
+## Spis treści {#spis-tresci}
 
-Słowa-klucze: yesterday · last week · at 5 p.m. · while · when · suddenly · all evening Otwórz słowniczek
+Słowa-klucze: yesterday · last week · at 5 p.m. · while · when · suddenly · all evening (Słownik — sekcja 19)
+
+W tej lekcji: 1 Wprowadzenie, cel i test wstępny · 2 Wykład — punkt czy linia? · 3 Past Simple – budowa i użycie · 4 Czasowniki nieregularne · 5 Ćwiczenia – Past Simple · 6 Past Continuous – budowa i użycie · 7 Ćwiczenia – Past Continuous · 8 When i While · 9 Ćwiczenia – when i while · 10 Porównanie obok siebie · 11 Pułapki egzaminacyjne i klinika błędów · 12 Słownictwo · 13 Ćwiczenia egzaminacyjne (A–E) · 14 Test końcowy – MISJA · 15 Podsumowanie — 7 zasad i ściąga · 16 Warstwa olimpijska · 17 Test — pytania zamknięte · 18 Fiszki · 19 Słownik · 20 Ciekawostki
+
+## 1 | Wprowadzenie, cel i test wstępny {#wprowadzenie}
+
+**Ta lekcja to szczegółowe omówienie Past Simple i Past Continuous.** Jeśli dopiero poznajesz czasy, zacznij od przeglądu w Lekcji 4, a potem wróć tutaj, aby pogłębić wiedzę.
+
+### Cel lekcji
+
+Po tej lekcji będziesz potrafić:
+
+- **rozpoznać**, czy czynność była zakończona (Past Simple) czy trwała w tle (Past Continuous),
+- **budować** twierdzenia, przeczenia i pytania w obu czasach,
+- **łączyć** oba czasy z *when* i *while*,
+- **unikać** typowych błędów egzaminacyjnych.
+
+### Sprawdź się przed nauką — 3 szybkie decyzje
 
 ::: karta understand | Sprawdź się przed nauką — 3 szybkie decyzje
 1. I ______ home when it ______ to rain. → jakie czasy?
-2. Popraw: I didn't went. → co jest źle?
+2. Popraw: *I didn't went.* → co jest źle?
 3. ______ I was reading, the phone rang. → when czy while?
 
 ::: odp | Odpowiedzi
@@ -33,92 +51,87 @@ Słowa-klucze: yesterday · last week · at 5 p.m. · while · when · suddenly 
 2. didn't go — po didn't forma podstawowa
 3. while — wprowadza czynność trwającą
 :::
+
 To nie test na ocenę – ma pokazać, co już działa automatycznie.
 :::
 
-## 1 | Wprowadzenie
-
-**🔹 Ta lekcja to szczegółowe omówienie Past Simple i Past Continuous.** Jeśli dopiero poznajesz czasy, zacznij od przeglądu w Lekcji 4, a potem wróć tutaj, aby pogłębić wiedzę.
-
-## Cel lekcji
-
-Po tej lekcji będziesz potrafić:
-
-- **rozpoznać**, czy czynność była zakończona (Past Simple) czy trwała w tle (Past Continuous),
-- **budować** twierdzenia, przeczenia i pytania w obu czasach,
-- **łączyć** oba czasy z <em>when</em> i <em>while</em>,
-- **unikać** typowych błędów egzaminacyjnych.
-
-## 1. Zanim zaczniesz – szybki test
+### Zanim zaczniesz – szybki test
 
 1. I ______ home when it ______ to rain. (walk / start)
 2. She ______ dinner while he ______ TV. (cook / watch)
 3. They ______ to school yesterday. (not go)
-4. Popraw: <span class="error-text">I didn't went there.</span>
-5. Popraw: <span class="error-text">She was cook dinner.</span>
+4. Popraw: *I didn't went there.*
+5. Popraw: *She was cook dinner.*
 6. Wybierz: ______ I was walking, I saw an accident. (when / while)
-7. Uzupełnij: <em>Did you ______ football yesterday?</em> (play / played)
-8. Uzupełnij: <em>What ______ you ______ at 7 p.m. yesterday?</em> (do)
+7. Uzupełnij: *Did you ______ football yesterday?* (play / played)
+8. Uzupełnij: *What ______ you ______ at 7 p.m. yesterday?* (do)
 
 ::: odp | Odpowiedź
 1. **was walking** / **started** (czynność w toku + wydarzenie)
 2. **was cooking** / **was watching** (obie czynności trwały)
 3. **didn't go** (po didn't forma podstawowa)
-4. <span class="correct-text">I didn't go there.</span>
-5. <span class="correct-text">She was cooking dinner.</span>
+4. **I didn't go there.**
+5. **She was cooking dinner.**
 6. **While** (wprowadza czynność trwającą)
 7. **play** (po did forma podstawowa)
 8. **were ... doing** (Past Continuous w pytaniu)
-
 :::
 
 Rozwiąż test samodzielnie, potem sprawdź odpowiedzi. Wróć do tych pytań po lekcji, aby zobaczyć postęp.
 
-## 2. Najważniejsza idea: punkt czy linia?
+### Lista kontrolna
 
-::: karta basic | Wyobraź sobie film
-**Past Simple** = **punkt** – coś się wydarzyło i skończyło.<br> **Past Continuous** = **linia** – czynność trwała, była w tle.
-
-─────── ●───────
-
-Past Simple — wydarzenie
-
-—
-
-─── ████████────
-
-Past Continuous — czynność w toku
-
-wydarzenie (Past Simple)  czynność trwająca (Past Continuous)
-
+::: checklista
+- [ ] Rozpoznaję, czy czynność to punkt (wydarzenie), czy linia (tło).
+- [ ] Buduję twierdzenia, przeczenia i pytania w Past Simple.
+- [ ] Buduję twierdzenia, przeczenia i pytania w Past Continuous.
+- [ ] Łączę oba czasy z when i while.
+- [ ] Znam kluczowe czasowniki nieregularne (II i III forma).
+- [ ] Unikam błędów: didn't went, was cook, While I walked.
 :::
 
-::: div.przyklad
-&#8203;<span class="tag">punkt vs linia</span> <span class="eng">I was walking home when it started to rain.</span> <span class="pl">Szedłem do domu, kiedy zaczęło padać.</span>
-:::
+## 2 | Wykład — punkt czy linia? {#wyklad-punkt-linia}
 
-::: karta warning | Złota zasada tej lekcji
+Wyobraź sobie, że oglądasz film z wczorajszego dnia. Każda opowieść o przeszłości składa się z dwóch rodzajów elementów: **długich scen, które trwały** (szedłem do szkoły, padało, mama gotowała) oraz **krótkich zdarzeń, które się wydarzyły** (telefon zadzwonił, zobaczyłem psa, zgasiło się światło). Angielski rozdziela te dwie role między dwa różne czasy — i właśnie dlatego masz w tej lekcji nie jeden czas przeszły, ale dwa.
+
+**Past Simple to ZDARZENIE — punkt na osi czasu.** Zaczęło się i skończyło; wiemy (albo mocno sugerujemy) kiedy: *I watched TV last night.* Patrzymy na całość jak na gotowy kadr: od początku do końca. **Past Continuous to SCENA W TOKU — odcinek.** W danym momencie coś trwało, a my jesteśmy „w środku" tej sceny: *I was watching TV at 9 p.m.* Nie wiemy, kiedy czynność się zaczęła i skończyła — wiemy tylko, że o 21. była w toku.
+
+Spójrz teraz na maszynerię. W pytaniach i przeczeniach Past Simple pracuje **did**: „kradnie" on informację o przeszłości z czasownika, który wraca do formy podstawowej — *Did you go? / I didn't go.* Po polsku kusi, żeby powiedzieć „Did you went?", bo u nas przeszłość siedzi w czasowniku. Po angielsku przeszłość przeniosła się do did, więc czasownik może spokojnie stać w formie podstawowej. Past Continuous działa odwrotnie: **was/were** niosą osobę i przeszłość, a **-ing** pokazuje trwanie — *I was reading, they were playing.* Zawsze dwa elementy; samo „I reading" to nie czas, tylko szkic.
+
+Siła tej pary ujawnia się, gdy czasy połączymy: **tło + wydarzenie**. Kamera nagrała długą scenę (Past Continuous), a w jej środku błysnął kadr (Past Simple): *I was walking home when it started to rain.* (Szedłem do domu, kiedy zaczęło padać.) Krótkie wydarzenie przerywa długą czynność. Do składania takich zdań służą dwa spójniki: **while** wprowadza tło (linię), **when** wprowadza wydarzenie (punkt) — choć zaraz zobaczysz, że ostatecznie decyduje znaczenie, nie samo słowo.
+
+Na koniec drogowskazy, które czytasz PRZED wyborem formy. *yesterday, last week, two days ago, in 2020, then, suddenly* → Past Simple. *at 5 p.m. yesterday, all evening, at that moment, while* → Past Continuous. Egzaminator zostawia je w zdaniu specjalnie: kto najpierw znajdzie określenie czasu, ten wybór robi niemal mechanicznie.
+
+I pułapka Polaka, najczęstsza ze wszystkich. Po polsku mówimy: „odrobiem lekcje, kiedy mama wróciła" — jeden czas, zero decyzji. Angielski wymaga, żebyś najpierw **zobaczył sytuację w głowie** (co było punktem, a co linią?) i dopiero potem wybrał formę: *I was doing my homework when mum came home.* To jest cała ta lekcja w jednym zdaniu.
+
+::: karta core | Złota zasada tej lekcji
 **Najpierw zdecyduj, czy opisujesz wydarzenie (punkt), czy czynność w toku (linia). Dopiero potem wybierz formę.**
-
 :::
 
-## 2 | Past Simple – zakończone wydarzenia
+::: karta understand | Geometria — jak to widzieć
 
-## 3. Past Simple – budowa i użycie
+| Czas | Kształt na osi czasu | Przykład |
+|---|---|---|
+| **Past Simple** | punkt ● — zdarzenie skończone | *The phone rang.* |
+| **Past Continuous** | odcinek ▬▬▬ — czynność w toku | *I was reading.* |
+| **Continuous + Simple** | odcinek z punktem w środku — tło przerwane wydarzeniem | *I was reading when the phone rang.* |
+
+Zdanie *I was walking home when it started to rain* narysujesz tak: długi odcinek „was walking", a na jego środku kropka „started to rain".
+:::
+
+## 3 | Past Simple – budowa i użycie {#past-simple-budowa}
 
 Używamy do opisania **zakończonych wydarzeń** w przeszłości – wiemy **kiedy** się wydarzyły.
 
 |   | Twierdzenie | Przeczenie | Pytanie |
 |---|---|---|---|
-| **wszystkie osoby** | I played / went | <span class="hl-operator">I didn't</span> <span class="hl-main-verb">play</span> / <span class="hl-main-verb">go</span> | <span class="hl-operator">Did</span> you <span class="hl-main-verb">play</span> / <span class="hl-main-verb">go</span>? |
+| **wszystkie osoby** | I played / went | I **didn't** play / go | **Did** you play / go? |
 
 ::: karta warning | Bardzo ważne!
 Po **did / didn't** używamy **formy podstawowej** czasownika, **nie** formy przeszłej.
 
-::: div.przyklad
-&#8203;<span class="eng"><span class="correct-text">✓ I didn't go.</span> <span class="error-text">✗ I didn't went.</span></span> <span class="eng"><span class="correct-text">✓ Did she play?</span> <span class="error-text">✗ Did she played?</span></span>
-:::
-
+- ✓ *I didn't go.* — ✗ *I didn't went.*
+- ✓ *Did she play?* — ✗ *Did she played?*
 :::
 
 ### Określenia czasu dla Past Simple
@@ -132,95 +145,86 @@ then || potem / wtedy || We ate and then we left.
 when I was a child || kiedy byłem dzieckiem || I lived in a small town.
 :::
 
-## 4. Czasowniki nieregularne – najważniejsze
+## 4 | Czasowniki nieregularne – najważniejsze {#nieregularne}
 
-Nie dodajemy <em>-ed</em> – trzeba znać **drugą formę** (Past Simple).
+Nie dodajemy *-ed* – trzeba znać **drugą formę** (V2). Trzecia forma (V3) przydaje się w Present Perfect (lekcja 5).
 
-| Bezokolicznik | Past Simple | Znaczenie | Przykład | Audio |
+| Bezokolicznik (V1) | Past Simple (V2) | III forma (V3) | Znaczenie | Przykład |
 |---|---|---|---|---|
-| **go** | went | iść / jechać | <em>She went home.</em> |   |
-| **see** | saw | widzieć | <em>I saw him.</em> |   |
-| **eat** | ate | jeść | <em>We ate pizza.</em> |   |
-| **break** | broke | złamać | <em>He broke his leg.</em> |   |
-| **fall** | fell | upaść | <em>She fell down.</em> |   |
-| **hear** | heard | słyszeć | <em>I heard a noise.</em> |   |
-| **meet** | met | spotkać | <em>I met my friend.</em> |   |
-| **run** | ran | biec | <em>She ran home.</em> |   |
-| **ring** | rang | dzwonić | <em>The phone rang.</em> |   |
-| **write** | wrote | pisać | <em>She wrote a letter.</em> |   |
-| **take** | took | brać | <em>He took the bus.</em> |   |
-| **come** | came | przychodzić | <em>She came late.</em> |   |
-| **leave** | left | wyjechać | <em>We left early.</em> |   |
-| **get** | got | dostać / wstawać | <em>I got up late.</em> |   |
-| **give** | gave | dać | <em>She gave me a book.</em> |   |
-| **find** | found | znaleźć | <em>I found my keys.</em> |   |
-| **think** | thought | myśleć | <em>I thought about it.</em> |   |
-| **bring** | brought | przynieść | <em>He brought a cake.</em> |   |
-| **buy** | bought | kupić | <em>We bought a car.</em> |   |
-| **teach** | taught | uczyć | <em>She taught English.</em> |   |
-| **catch** | caught | złapać | <em>He caught the ball.</em> |   |
-| **begin** | began | zaczynać | <em>The film began at 8.</em> |   |
-| **drink** | drank | pić | <em>They drank coffee.</em> |   |
-| **swim** | swam | pływać | <em>She swam in the lake.</em> |   |
-| **sing** | sang | śpiewać | <em>He sang a song.</em> |   |
-| **speak** | spoke | mówić | <em>She spoke to me.</em> |   |
-| **drive** | drove | prowadzić | <em>He drove carefully.</em> |   |
-| **ride** | rode | jeździć (rower) | <em>She rode a bike.</em> |   |
-| **know** | knew | wiedzieć / znać | <em>I knew the answer.</em> |   |
-| **tell** | told | powiedzieć | <em>She told me a story.</em> |   |
-| **say** | said | mówić | <em>He said hello.</em> |   |
-| **make** | made | robić | <em>I made a cake.</em> |   |
-| **do** | did | robić | <em>We did our homework.</em> |   |
-| **have** | had | mieć | <em>She had a dog.</em> |   |
-| **be** | was / were | być | <em>I was happy.</em> |   |
+| **go** | went | gone | iść / jechać | *She went home.* |
+| **see** | saw | seen | widzieć | *I saw him.* |
+| **eat** | ate | eaten | jeść | *We ate pizza.* |
+| **break** | broke | broken | złamać | *He broke his leg.* |
+| **fall** | fell | fallen | upaść | *She fell down.* |
+| **hear** | heard | heard | słyszeć | *I heard a noise.* |
+| **meet** | met | met | spotkać | *I met my friend.* |
+| **run** | ran | run | biec | *She ran home.* |
+| **ring** | rang | rung | dzwonić | *The phone rang.* |
+| **write** | wrote | written | pisać | *She wrote a letter.* |
+| **take** | took | taken | brać | *He took the bus.* |
+| **come** | came | come | przychodzić | *She came late.* |
+| **leave** | left | left | wyjechać | *We left early.* |
+| **get** | got | got | dostać / wstawać | *I got up late.* |
+| **give** | gave | given | dać | *She gave me a book.* |
+| **find** | found | found | znaleźć | *I found my keys.* |
+| **think** | thought | thought | myśleć | *I thought about it.* |
+| **bring** | brought | brought | przynieść | *He brought a cake.* |
+| **buy** | bought | bought | kupić | *We bought a car.* |
+| **teach** | taught | taught | uczyć | *She taught English.* |
+| **catch** | caught | caught | złapać | *He caught the ball.* |
+| **begin** | began | begun | zaczynać | *The film began at 8.* |
+| **drink** | drank | drunk | pić | *They drank coffee.* |
+| **swim** | swam | swum | pływać | *She swam in the lake.* |
+| **sing** | sang | sung | śpiewać | *He sang a song.* |
+| **speak** | spoke | spoken | mówić | *She spoke to me.* |
+| **drive** | drove | driven | prowadzić | *He drove carefully.* |
+| **ride** | rode | ridden | jeździć (rower) | *She rode a bike.* |
+| **know** | knew | known | wiedzieć / znać | *I knew the answer.* |
+| **tell** | told | told | powiedzieć | *She told me a story.* |
+| **say** | said | said | mówić | *He said hello.* |
+| **make** | made | made | robić | *I made a cake.* |
+| **do** | did | done | robić | *We did our homework.* |
+| **have** | had | had | mieć | *She had a dog.* |
+| **be** | was / were | been | być | *I was happy.* |
 
 ::: karta basic | Wskazówka
 Ucz się nieregularnych w **grupach** (np. ring–rang–rung, sing–sang–sung) – łatwiej zapamiętać.
-
 :::
 
-## 5. Ćwiczenia – Past Simple
+::: karta understand | W skrócie — pięć grup, które uczą się same
+Zamiast uczyć się 35 form po kolei, złap rymy. **Grupa i-a-u:** begin–began–begun, drink–drank–drunk, sing–sang–sung, swim–swam–swum, ring–rang–rung — zawsze ten sam schemat samogłosek. **Grupa -ought/-aught:** bring, buy, think, teach, catch — wszystkie na -ought albo -aught, bez wyjątków. **Grupa „bez zmian w V2 i V3":** have–had–had, make–made–made, say–said–said, find–found–found, tell–told–told, leave–left–left. **Grupa -en w V3:** eat, fall, break, take, give, see, write, speak, drive, ride, know. Zostaje garstka „solistów" (go, do, be). Pięć grup zamiast długiej listy — to różnica między nauką na pamięć a rozumieniem.
+:::
 
-**Uzupełnij Past Simple [[basic:PODSTAWA]]**
+## 5 | Ćwiczenia – Past Simple {#cwiczenia-ps}
 
+::: karta exam | Zadanie 1 (5 pkt) — Uzupełnij Past Simple [[basic:PODSTAWA]]
 1. I ______ (watch) a film last night.
 2. She ______ (not / go) to school yesterday.
 3. ______ you ______ (see) the accident?
 4. We ______ (eat) dinner and then ______ (leave).
 5. He ______ (break) his arm while he ______ (play). (Uwaga: dwa czasy!)
 
-::: odp | Podpowiedzi
-1. Sprawdź, czy czasownik jest regularny czy nieregularny. 2. Po <em>did / didn't</em> użyj formy podstawowej. 3. W ostatnim zdaniu: jedna czynność trwała (Past Continuous), druga ją przerwała (Past Simple).
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. Sprawdź, czy czasownik jest regularny czy nieregularny. 2. Po *did / didn't* użyj formy podstawowej. 3. W ostatnim zdaniu: jedna czynność trwała (Past Continuous), druga ją przerwała (Past Simple).
 
+Klucz (1 pkt za zdanie): 1. **watched** 2. **didn't go** 3. **Did ... see** 4. **ate ... left** 5. **broke ... was playing**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **watched**
-2. **didn't go**
-3. **Did ... see**
-4. **ate ... left**
-5. **broke ... was playing**
-
-:::
-
-## 3 | Past Continuous – czynności w toku
-
-## 6. Past Continuous – budowa i użycie
+## 6 | Past Continuous – budowa i użycie {#past-continuous-budowa}
 
 Używamy do opisania czynności, które **trwały** w określonym momencie przeszłości lub były **tłem** dla innego wydarzenia.
 
 |   | Twierdzenie | Przeczenie | Pytanie |
 |---|---|---|---|
-| **I / he / she / it** | I was walking | <span class="hl-operator">I wasn't</span> <span class="hl-main-verb">walking</span> | <span class="hl-operator">Was</span> I <span class="hl-main-verb">walking</span>? |
-| **you / we / they** | They were walking | <span class="hl-operator">They weren't</span> <span class="hl-main-verb">walking</span> | <span class="hl-operator">Were</span> they <span class="hl-main-verb">walking</span>? |
+| **I / he / she / it** | I was walking | I **wasn't** walking | **Was** I walking? |
+| **you / we / they** | They were walking | They **weren't** walking | **Were** they walking? |
 
 ::: karta warning | Zawsze dwa elementy!
 Past Continuous = **was / were** + **czasownik z -ing**. Nie może być tylko jednego.
 
-::: div.przyklad
-&#8203;<span class="eng"><span class="correct-text">✓ I was reading.</span> <span class="error-text">✗ I reading.</span></span> <span class="eng"><span class="correct-text">✓ They were playing.</span> <span class="error-text">✗ They playing.</span></span>
-:::
-
+- ✓ *I was reading.* — ✗ *I reading.*
+- ✓ *They were playing.* — ✗ *They playing.*
 :::
 
 ### Określenia czasu dla Past Continuous
@@ -233,33 +237,23 @@ while || podczas gdy || While I was reading, the phone rang.
 when || kiedy (z Continuous) || I was reading when the phone rang.
 :::
 
-## 7. Ćwiczenia – Past Continuous
+## 7 | Ćwiczenia – Past Continuous {#cwiczenia-pc}
 
-**Uzupełnij Past Continuous [[basic:PODSTAWA]]**
-
+::: karta exam | Zadanie 2 (5 pkt) — Uzupełnij Past Continuous [[basic:PODSTAWA]]
 1. I ______ (read) a book at 8 p.m. yesterday.
 2. She ______ (not / listen) to the teacher.
 3. ______ they ______ (play) football at that moment?
 4. We ______ (wait) for the bus when it started to rain.
 5. He ______ (cook) dinner while she ______ (wash) the dishes.
 
-::: odp | Podpowiedzi
-1. Użyj <em>was</em> dla I / he / she / it, <em>were</em> dla you / we / they. 2. Dodaj <em>-ing</em> do czasownika. 3. W przeczeniu: was/were + not + -ing.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. Użyj *was* dla I / he / she / it, *were* dla you / we / they. 2. Dodaj *-ing* do czasownika. 3. W przeczeniu: was/were + not + -ing.
 
+Klucz (1 pkt za zdanie): 1. **was reading** 2. **wasn't listening** 3. **Were ... playing** 4. **were waiting** 5. **was cooking ... was washing**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **was reading**
-2. **wasn't listening**
-3. **Were ... playing**
-4. **were waiting**
-5. **was cooking ... was washing**
-
-:::
-
-## 4 | When i While – łączenie czasów
-
-## 8. Różnica między <em>when</em> a <em>while</em>
+## 8 | When i While – łączenie czasów {#when-while}
 
 | Słowo | Rola | Przykład |
 |---|---|---|
@@ -267,57 +261,42 @@ when || kiedy (z Continuous) || I was reading when the phone rang.
 | **when** | wprowadza **wydarzenie** (Past Simple) lub określony moment | I was walking when it started to rain. |
 
 ::: karta basic | Nie ucz się sztywno!
-**while** = często Past Continuous (tło)<br> **when** = często Past Simple (wydarzenie)
+**while** = często Past Continuous (tło); **when** = często Past Simple (wydarzenie).
 
 Ale to **znaczenie** decyduje, nie samo słowo. Można powiedzieć:
 
-::: div.przyklad
-&#8203;<span class="eng">While I was cooking, she was washing the dishes.</span> <span class="pl">Obie czynności trwały → Past Continuous + Past Continuous</span>
+- **While I was cooking, she was washing the dishes.** — Obie czynności trwały → Past Continuous + Past Continuous.
+- **I was cooking when she called.** — Czynność w toku + wydarzenie przerywające.
+
+Ta sama zasada obowiązuje we fiszkach i na egzaminie – **nie** traktuj *when* jako automatycznego Past Simple.
 :::
 
-::: div.przyklad
-&#8203;<span class="eng">I was cooking when she called.</span> <span class="pl">Czynność w toku + wydarzenie przerywające</span>
+::: karta understand | W skrócie — szyk i przecinek
+Oba spójniki możesz postawić na początku albo w środku zdania — zmienia się tylko przecinek. **While I was walking, it started to rain.** = **It started to rain while I was walking.** **When I saw her, I smiled.** = **I smiled when I saw her.** Reguła: jeśli klauzula z when/while stoi na początku — po niej stawiasz przecinek; jeśli w środku — przecinek zwykle zbędny. A na oś czasu: czynność trwającą rysuj jako długi odcinek, a wydarzenie jako kropkę na nim (lub obok). Taki rysunek rozwiązuje za ciebie pół zadania.
 :::
 
-Ta sama zasada obowiązuje w fiszce – **nie** traktuj <em>when</em> jako automatycznego Past Simple.
+### Oś czasu — jak to narysować
 
-:::
+Narysuj poziomą linię (czas od wczoraj do teraz). Czynność trwającą zaznacz **długim odcinkiem**, a wydarzenie **kropką** na środku odcinka. Przykład: odcinek „was walking", kropka na nim „started to rain". Pod zdaniem zapisz obie wersje: *While I was walking, it started to rain.* / *I was walking when it started to rain.*
 
-### Oś czasu – wizualizacja
+## 9 | Ćwiczenia – when i while {#cwiczenia-when-while}
 
-Czynność w toku (linia) + wydarzenie (punkt)
-
-──── ████████████████── ●────
-
-was walking started to rain
-
-While I was walking, it started to rain. <br> I was walking when it started to rain.
-
-## 9. Ćwiczenia – when / while
-
-**Wybierz <em>when</em> lub <em>while</em> [[understand:TRENING]]**
-
+::: karta exam | Zadanie 3 (5 pkt) — Wybierz when lub while [[understand:TRENING]]
 1. ______ I was walking, I saw a car accident.
 2. She was watching TV ______ her mum came in.
 3. ______ they were playing, it started to rain.
 4. I was doing my homework ______ the lights went out.
 5. ______ he was driving, he listened to music.
 
-::: odp | Podpowiedzi
-1. <em>While</em> + czynność trwająca (Past Continuous). 2. <em>When</em> + wydarzenie (Past Simple) lub określony moment. 3. Sprawdź, który czasownik opisuje tło, a który wydarzenie.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. *While* + czynność trwająca (Past Continuous). 2. *When* + wydarzenie (Past Simple) lub określony moment. 3. Sprawdź, który czasownik opisuje tło, a który wydarzenie.
 
+Klucz (1 pkt za zdanie): 1. **While** 2. **when** 3. **While** 4. **when** 5. **While**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **While**
-2. **when**
-3. **While**
-4. **when**
-5. **While**
-
-:::
-
-**Uzupełnij – połącz czasy [[understand:TRENING]]**
+::: karta exam | Zadanie 4 (10 pkt) — Uzupełnij – połącz czasy [[understand:TRENING]]
+1 pkt za każdą lukę.
 
 1. I ______ (walk) home when I ______ (see) a dog.
 2. She ______ (cook) dinner while he ______ (play) computer games.
@@ -325,23 +304,14 @@ While I was walking, it started to rain. <br> I was walking when it started to r
 4. What ______ you ______ (do) when I ______ (call) you?
 5. While we ______ (have) breakfast, the postman ______ (arrive).
 
-::: odp | Podpowiedzi
-1. Czynność trwająca → Past Continuous. 2. Wydarzenie → Past Simple. 3. Po <em>while</em> często Past Continuous, po <em>when</em> często Past Simple.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. Czynność trwająca → Past Continuous. 2. Wydarzenie → Past Simple (II forma lub -ed). 3. Po *while* często Past Continuous, po *when* często Past Simple.
 
+Klucz: 1. **was walking ... saw** 2. **was cooking ... was playing** (obie czynności trwały) 3. **weren't listening ... explained** 4. **were ... doing ... called** 5. **were having ... arrived**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **was walking ... saw**
-2. **was cooking ... was playing** (obie czynności trwały)
-3. **weren't listening ... explained**
-4. **were ... doing ... called**
-5. **were having ... arrived**
-
-:::
-
-## 5 | Porównanie i pułapki
-
-## 10. Past Simple vs Past Continuous – obok siebie
+## 10 | Porównanie obok siebie {#porownanie}
 
 | Sytuacja | Past Simple | Past Continuous |
 |---|---|---|
@@ -350,57 +320,60 @@ While I was walking, it started to rain. <br> I was walking when it started to r
 | **Kolejność vs jednoczesność** | We ate dinner and then left. | While we were eating, the phone rang. |
 | **Konkretny moment** | I arrived at 5 p.m. | I was waiting at 5 p.m. |
 
-## 11. Najczęstsze pułapki egzaminacyjne
+## 11 | Pułapki egzaminacyjne i klinika błędów {#pulapki-klinika}
 
 ::: karta warning | Pułapka #1: did + forma przeszła
-&#8203;<span class="error-text">I didn't went.</span> → <span class="correct-text">I didn't go.</span>
+✗ *I didn't went.* → ✓ *I didn't go.*
 
-&#8203;<span class="error-text">Did she played?</span> → <span class="correct-text">Did she play?</span>
+✗ *Did she played?* → ✓ *Did she play?*
 
-**Zasada:** po <em>did / didn't</em> zawsze **forma podstawowa**.
-
+**Zasada:** po *did / didn't* zawsze **forma podstawowa**.
 :::
 
 ::: karta warning | Pułapka #2: brak -ing w Past Continuous
-&#8203;<span class="error-text">She was cook dinner.</span> → <span class="correct-text">She was cooking dinner.</span>
+✗ *She was cook dinner.* → ✓ *She was cooking dinner.*
 
-&#8203;<span class="error-text">They were watch TV.</span> → <span class="correct-text">They were watching TV.</span>
+✗ *They were watch TV.* → ✓ *They were watching TV.*
 
-**Zasada:** Past Continuous = <em>was / were + -ing</em>.
-
+**Zasada:** Past Continuous = *was / were + -ing*.
 :::
 
 ::: karta warning | Pułapka #3: when / while – odwrócona rola
-&#8203;<span class="error-text">While the phone rang, I was cooking.</span> → <span class="correct-text">While I was cooking, the phone rang.</span>
+✗ *While the phone rang, I was cooking.* → ✓ *While I was cooking, the phone rang.*
 
-&#8203;<span class="error-text">When I was cooking, the phone was ringing.</span> (gdy obie trwają, lepiej użyć <em>while</em>)
+✗ *When I was cooking, the phone was ringing.* (gdy obie czynności trwały, lepiej użyć *while*)
 
-**Zasada:** <em>while</em> = tło (Continuous), <em>when</em> = wydarzenie (Simple) – ale patrz na znaczenie!
-
+**Zasada:** *while* = tło (Continuous), *when* = wydarzenie (Simple) – ale patrz na znaczenie!
 :::
 
 ::: karta warning | Pułapka #4: mylenie z Present Perfect
-&#8203;<span class="error-text">I have seen him yesterday.</span> → <span class="correct-text">I saw him yesterday.</span>
+✗ *I have seen him yesterday.* → ✓ *I saw him yesterday.*
 
-**Zasada:** <em>yesterday</em> = konkretny moment → Past Simple, nie Present Perfect.
-
+**Zasada:** *yesterday* = konkretny moment → Past Simple, nie Present Perfect. Więcej o tej konkurencji: lekcja 5.
 :::
 
-## 12. Najczęstsze błędy Polaków
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| I didn't went. | I didn't go. | Po *didn't* forma podstawowa. |
+| She was cook. | She was cooking. | Past Continuous wymaga *-ing*. |
+| Did you saw him? | Did you see him? | Po *did* forma podstawowa. |
+| While I walked, I saw... | While I was walking, I saw... | *While* wprowadza czynność trwającą. |
+| I was read a book. | I was reading a book. | Brak *-ing* po *was*. |
+| She didn't went to school. | She didn't go to school. | Po *didn't* forma podstawowa. |
+| They were watch TV. | They were watching TV. | Brak *-ing* po *were*. |
+| They playing football all afternoon. | They were playing football all afternoon. | Past Continuous potrzebuje was/were — sam -ing to nie czas przeszły. |
+| When the phone was ringing, I was sleeping. | When the phone rang, I was sleeping. | Krótkie wydarzenie (telefon zadzwonił) → Past Simple. |
+| While she cooked, I was setting the table. | While she was cooking, I was setting the table. | Po *while* czynność w tle → Past Continuous (konwencja szkolna). |
+:::
 
-| Błąd | Poprawnie | Dlaczego? |
-|---|---|---|
-| <span class="error-text">I didn't went.</span> | <span class="correct-text">I didn't go.</span> | Po <em>didn't</em> forma podstawowa |
-| <span class="error-text">She was cook.</span> | <span class="correct-text">She was cooking.</span> | Past Continuous wymaga <em>-ing</em> |
-| <span class="error-text">Did you saw him?</span> | <span class="correct-text">Did you see him?</span> | Po <em>did</em> forma podstawowa |
-| <span class="error-text">While I walked, I saw...</span> | <span class="correct-text">While I was walking, I saw...</span> | <em>While</em> wprowadza czynność trwającą |
-| <span class="error-text">I was read a book.</span> | <span class="correct-text">I was reading a book.</span> | Brak <em>-ing</em> po <em>was</em> |
-| <span class="error-text">She didn't went to school.</span> | <span class="correct-text">She didn't go to school.</span> | Po <em>didn't</em> forma podstawowa |
-| <span class="error-text">They were watch TV.</span> | <span class="correct-text">They were watching TV.</span> | Brak <em>-ing</em> po <em>were</em> |
+::: mity
+„Past Continuous to czas dla długich wydarzeń zakończonych" || Nie — to czas czynności W TOKU; to, że trwała, nie znaczy, że wiemy, kiedy się skończyła.
+„Po did czasownik zostaje w przeszłości" || Po did/didn't zawsze forma podstawowa: Did you see? I didn't go.
+„while zawsze wymaga Past Continuous, when zawsze Past Simple" | Najczęściej tak, ale decyduje znaczenie: While I was cooking, she was washing the dishes (PC + PC) też jest poprawne.
+„suddenly pasuje do Past Continuous, bo coś trwało" || Odwrotnie: suddenly zapowiada krótkie wydarzenie → Past Simple (Suddenly, the phone rang).
+„I have seen him yesterday to tylko inna wersja tego samego" || To błąd: yesterday = zakończony moment → I saw him yesterday.
+:::
 
-## 6 | Słownictwo
-
-## 13. Słowniczek – wydarzenia, czynności, czas
+## 12 | Słownictwo – opowiadanie o wydarzeniach {#slownictwo}
 
 ::: slowka | Wyraz | Znaczenie | Przykład
 suddenly || nagle || Suddenly, the lights went out.
@@ -413,7 +386,7 @@ drive || prowadzić (auto) || My dad was driving when he saw the accident.
 ride a bike || jeździć na rowerze || She was riding a bike when she fell.
 slip || poślizgnąć się || She slipped on the wet floor.
 trip over || potknąć się o || He tripped over a stone.
-shout / scream || krzyczeć / piszczeć || Someone shouted for help.
+shout / scream || krzyczeć / wrzeszczeć || Someone shouted for help.
 rescue / save || uratować || Firefighters rescued the cat.
 call an ambulance || wezwać karetkę || We called an ambulance immediately.
 storm / lightning || burza / błyskawica || A storm started while we were hiking.
@@ -428,30 +401,26 @@ injury / bandage || uraz / bandaż || He had a leg injury after the match.
 first-aid kit || apteczka || We keep a first-aid kit in the car.
 :::
 
-## 7 | Ćwiczenia egzaminacyjne
-
-## 14. Poziom A – wybierz czas
-
-**Wybierz poprawną formę [[basic:PODSTAWA]]**
-
-1. I ______ (watch) TV when she ______ (come) in.<br> A. watched / came B. was watching / came C. was watching / was coming
-2. At 6 p.m. yesterday we ______ (have) dinner.<br> A. had B. were having C. have had
-3. He ______ (not / go) to school last week.<br> A. didn't go B. didn't went C. wasn't going
-4. What ______ you ______ (do) at 9 a.m. yesterday?<br> A. were ... doing B. did ... do C. have ... done
-5. She ______ (break) her leg while she ______ (ski).<br> A. broke / was skiing B. was breaking / skied C. broke / skied
-
-::: odp | Odpowiedź
-1. **B** – was watching / came
-2. **B** – were having
-3. **A** – didn't go
-4. **A** – were ... doing
-5. **A** – broke / was skiing
-
+::: karta understand | W skrócie — szkielet opowiadania
+Dobre opowiadanie na egzamin ma szkielet z trzech warstw. **Sceneria** (Past Continuous): *The sun was shining. I was walking home.* **Wydarzenia w kolejności** (Past Simple + łączniki): *Suddenly, I saw a dog. Then it started to rain, so I ran to a bus stop. After that, I took the bus.* **Zakończenie** (Past Simple): *In the end, I got home and had dinner.* Słówka-łączniki (suddenly, then, after that, in the end) robią z poprawnych zdań historię — egzaminator ocenia je w kryterium spójności.
 :::
 
-## 15. Poziom B – uzupełnij luki
+## 13 | Ćwiczenia egzaminacyjne – poziomy A–E {#poziomy}
 
-**Uzupełnij Past Simple lub Past Continuous [[understand:TRENING]]**
+::: karta exam | Zadanie 5 (5 pkt) — Poziom A: wybierz czas [[basic:PODSTAWA]]
+1. I ______ (watch) TV when she ______ (come) in. — A. watched / came · B. was watching / came · C. was watching / was coming
+2. At 6 p.m. yesterday we ______ (have) dinner. — A. had · B. were having · C. have had
+3. He ______ (not / go) to school last week. — A. didn't go · B. didn't went · C. wasn't going
+4. What ______ you ______ (do) at 9 a.m. yesterday? — A. were ... doing · B. did ... do · C. have ... done
+5. She ______ (break) her leg while she ______ (ski). — A. broke / was skiing · B. was breaking / skied · C. broke / skied
+
+::: odp | Pokaż klucz
+1. **B** – was watching / came (tło + wydarzenie); 2. **B** – were having (konkretna godzina → czynność w toku); 3. **A** – didn't go (po didn't forma podstawowa); 4. **A** – were ... doing (pytanie o czynność w toku); 5. **A** – broke / was skiing (wydarzenie przerwało tło).
+:::
+:::
+
+::: karta exam | Zadanie 6 (10 pkt) — Poziom B: uzupełnij luki [[understand:TRENING]]
+Uzupełnij Past Simple lub Past Continuous (1 pkt za lukę).
 
 1. I ______ (walk) home when it ______ (start) to rain.
 2. She ______ (cook) dinner while he ______ (watch) TV.
@@ -464,102 +433,68 @@ first-aid kit || apteczka || We keep a first-aid kit in the car.
 9. They ______ (have) dinner when the guests ______ (arrive).
 10. While I ______ (have) breakfast, the postman ______ (come).
 
-::: odp | Podpowiedzi
-1. Czynność w toku = Past Continuous (was/were + -ing). 2. Wydarzenie = Past Simple (II forma lub -ed). 3. Po <em>didn't</em> forma podstawowa.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. Czynność w toku = Past Continuous (was/were + -ing). 2. Wydarzenie = Past Simple (II forma lub -ed). 3. Po *didn't* forma podstawowa.
 
+Klucz: 1. **was walking / started** 2. **was cooking / was watching** 3. **didn't go** 4. **were ... doing** 5. **broke / was playing** 6. **were sleeping / rang** 7. **was reading / called** 8. **wasn't listening / was talking** 9. **were having / arrived** 10. **was having / came**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **was walking / started**
-2. **was cooking / was watching**
-3. **didn't go**
-4. **were ... doing**
-5. **broke / was playing**
-6. **were sleeping / rang**
-7. **was reading / called**
-8. **wasn't listening / was talking**
-9. **were having / arrived**
-10. **was having / came**
+::: karta exam | Zadanie 7 (8 pkt) — Poziom C: znajdź i popraw błąd [[exam:EGZAMIN]]
+Popraw błędne zdania (1 pkt za zdanie).
 
+1. *I didn't went to the party.* → ___________________
+2. *She was cook dinner.* → ___________________
+3. *Did he played football yesterday?* → ___________________
+4. *While I walked, I saw an accident.* → ___________________
+5. *They were watch TV when I came in.* → ___________________
+6. *I have seen him yesterday.* → ___________________
+7. *She didn't went to school.* → ___________________
+8. *I was read a book when he called.* → ___________________
+
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. Sprawdź, czy po *did/didn't* jest forma podstawowa. 2. Sprawdź, czy Past Continuous ma *was/were + -ing*. 3. Sprawdź, czy *while* wprowadza czynność trwającą.
+
+Klucz: 1. **I didn't go to the party.** 2. **She was cooking dinner.** 3. **Did he play football yesterday?** 4. **While I was walking, I saw an accident.** 5. **They were watching TV when I came in.** 6. **I saw him yesterday.** 7. **She didn't go to school.** 8. **I was reading a book when he called.**
+:::
 :::
 
-## 16. Poziom C – znajdź i popraw błąd
+::: karta exam | Zadanie 8 (10 pkt) — Poziom D: mini-opowiadanie PISANIE
+Uzupełnij opowiadanie (1 pkt za lukę).
 
-**Popraw błędne zdania [[exam:EGZAMIN]]**
+*Last Saturday I ______ (get) up late. While I ______ (have) breakfast, my phone ______ (ring). It ______ (be) my friend Anna. She ______ (say) that she ______ (come) to visit me later. At 3 p.m., I ______ (wait) for her when I ______ (see) a car that ______ (look) like hers. She ______ (arrive) five minutes later.*
 
-1. <span class="error-text">I didn't went to the party.</span> → ___________________
-2. <span class="error-text">She was cook dinner.</span> → ___________________
-3. <span class="error-text">Did he played football yesterday?</span> → ___________________
-4. <span class="error-text">While I walked, I saw an accident.</span> → ___________________
-5. <span class="error-text">They were watch TV when I came in.</span> → ___________________
-6. <span class="error-text">I have seen him yesterday.</span> → ___________________
-7. <span class="error-text">She didn't went to school.</span> → ___________________
-8. <span class="error-text">I was read a book when he called.</span> → ___________________
+Uwaga: *She said that she was coming* to tzw. **future-in-the-past** – forma zaawansowana, ale poprawna. Alternatywy: *She said she would come* lub *She said she was going to come*.
 
-::: odp | Podpowiedzi
-1. Sprawdź, czy po <em>did/didn't</em> jest forma podstawowa. 2. Sprawdź, czy Past Continuous ma <em>was/were + -ing</em>. 3. Sprawdź, czy <em>while</em> wprowadza czynność trwającą.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. Wydarzenia zakończone → Past Simple. 2. Czynności w toku → Past Continuous. 3. Zwróć uwagę na *while* i *when*.
 
+Klucz: **got**, **was having**, **rang**, **was**, **said**, **was coming**, **was waiting**, **saw**, **looked**, **arrived**.
+:::
 :::
 
-::: odp | Odpowiedź
-1. <span class="correct-text">I didn't go to the party.</span>
-2. <span class="correct-text">She was cooking dinner.</span>
-3. <span class="correct-text">Did he play football yesterday?</span>
-4. <span class="correct-text">While I was walking, I saw an accident.</span>
-5. <span class="correct-text">They were watching TV when I came in.</span>
-6. <span class="correct-text">I saw him yesterday.</span>
-7. <span class="correct-text">She didn't go to school.</span>
-8. <span class="correct-text">I was reading a book when he called.</span>
-
-:::
-
-## 17. Poziom D – mini-opowiadanie
-
-**Uzupełnij opowiadanie PISANIE**
-
-&#8203;<em>Last Saturday I ______ (get) up late. While I ______ (have) breakfast, my phone ______ (ring). It ______ (be) my friend Anna. She ______ (say) that she ______ (come) to visit me later. At 3 p.m., I ______ (wait) for her when I ______ (see) a car that ______ (look) like hers. She ______ (arrive) five minutes later.</em>
-
-⚡ Zdanie <em>„She said that she was coming”</em> to tzw. **future-in-the-past** – forma zaawansowana, ale poprawna. Alternatywna wersja: <em>She said she would come</em> lub <em>She said she was going to come</em>.
-
-::: odp | Podpowiedzi
-1. Wydarzenia zakończone → Past Simple. 2. Czynności w toku → Past Continuous. 3. Zwróć uwagę na <em>while</em> i <em>when</em>.
-
-:::
-
-::: odp | Odpowiedź
-&#8203;<em>Last Saturday I **got** up late. While I **was having** breakfast, my phone **rang**. It **was** my friend Anna. She **said** that she **was coming** to visit me later. At 3 p.m., I **was waiting** for her when I **saw** a car that **looked** like hers. She **arrived** five minutes later.</em>
-
-:::
-
-## 18. Poziom E – napisz samodzielnie
-
-**Napisz 4–5 zdań o wydarzeniu z przeszłości PISANIE**
-
-Użyj:
+::: karta exam | Zadanie 9 (5 pkt) — Poziom E: napisz samodzielnie PISANIE
+Napisz 4–5 zdań o wydarzeniu z przeszłości. Użyj:
 
 - minimum 2 × Past Simple
 - minimum 2 × Past Continuous
-- <em>when</em> i <em>while</em>
+- *when* i *while*
 
-**Początek:** <em>Last weekend I...</em>
+**Początek:** *Last weekend I...*
 
-::: odp | Odpowiedź
-&#8203;<em>Last weekend I was walking in the park when I met my old friend. While we were talking, it started to rain. We ran to a café and had a coffee. After that, we went for a walk because it stopped raining.</em>
+::: odp | Odpowiedź i punktacja
+Punktacja: 3 pkt – wszystkie wymagane elementy gramatyczne; 2 pkt – poprawność językowa.
 
-Zauważ: <em>it stopped raining</em> brzmi bardziej naturalnie niż <em>the rain stopped</em>.
+Przykład: *Last weekend I was walking in the park when I met my old friend. While we were talking, it started to rain. We ran to a café and had a coffee. After that, we went for a walk because it stopped raining.*
 
+Zauważ: *it stopped raining* brzmi bardziej naturalnie niż *the rain stopped*.
+:::
 :::
 
-## 8 | Misja końcowa
+## 14 | Test końcowy – MISJA {#misja}
 
-## 19. Test końcowy – MISJA
-
-::: karta basic | Misja końcowa
-Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.
-
-:::
-
-**Uzupełnij poprawną formą czasownika [[exam:EGZAMIN]]**
+::: karta exam | Misja końcowa (12 pkt) — uzupełnij bez zaglądania do zasad
+1 pkt za zdanie (wszystkie luki poprawne). Sprawdź swój wynik.
 
 1. I ______ (walk) home when it ______ (start) to rain.
 2. She ______ (cook) dinner while he ______ (watch) TV.
@@ -575,35 +510,21 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.
 12. I ______ (not / go) to the party because I ______ (study).
 
 ::: odp | Odpowiedzi
-1. **was walking / started**
-2. **was cooking / was watching**
-3. **didn't go**
-4. **were / doing**
-5. **broke / was playing**
-6. **was reading / called**
-7. **wasn't listening / was talking**
-8. **was having / arrived**
-9. **Did / see**
-10. **were waiting / started**
-11. **fell / was running**
-12. **didn't go / was studying**
+1. **was walking / started** 2. **was cooking / was watching** 3. **didn't go** 4. **were / doing** 5. **broke / was playing** 6. **was reading / called** 7. **wasn't listening / was talking** 8. **was having / arrived** 9. **Did / see** 10. **were waiting / started** 11. **fell / was running** 12. **didn't go / was studying**
+:::
 :::
 
-## Podsumowanie | 7 zasad + fiszka
-
-## 20. 7 kluczowych zasad
+## 15 | Podsumowanie — 7 kluczowych zasad i ściąga {#podsumowanie}
 
 1. **Past Simple** = zakończone wydarzenie, konkretny czas.
 2. **Past Continuous** = czynność w toku, tło.
 3. **Po did / didn't** zawsze forma podstawowa czasownika.
-4. **Past Continuous** = was/were + czasownik z <em>-ing</em>.
+4. **Past Continuous** = was/were + czasownik z *-ing*.
 5. **while** wprowadza czynność trwającą (Past Continuous).
 6. **when** wprowadza wydarzenie (Past Simple) lub określony moment – **ale to znaczenie decyduje, nie samo słowo**.
 7. **Decyduje znaczenie**, nie tylko słowo-klucz – zobacz sytuację w głowie.
 
-## 21. Fiszka – ściąga egzaminacyjna
-
-### Past Simple i Past Continuous
+### Past Simple i Past Continuous – ściąga egzaminacyjna
 
 #### Past Simple
 
@@ -623,31 +544,284 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.
 
 #### When / While
 
-- **while** + Past Continuous (tło)<br><em>While I was reading…</em>
-- **when** + Past Simple (wydarzenie) **lub** Past Continuous (gdy obie trwają)<br><em>…the phone rang.</em> / <em>When I was walking home, it started to rain.</em>
+- **while** + Past Continuous (tło) — *While I was reading…*
+- **when** + Past Simple (wydarzenie) **lub** Past Continuous (gdy obie trwają) — *…the phone rang.* / *When I was walking home, it started to rain.*
 - **Kluczowa zasada:** decyduje **znaczenie**, nie tylko słowo.
-- **Przykład:**<br><em>I was walking home when it started to rain.</em>
+- **Przykład:** *I was walking home when it started to rain.*
 
-**Pamiętaj!** <br> <span class="correct-text">✓ I didn't go.</span> <span class="error-text">✗ I didn't went.</span> <br> <span class="correct-text">✓ She was cooking.</span> <span class="error-text">✗ She was cook.</span>
+**Pamiętaj!** ✓ *I didn't go.* — ✗ *I didn't went.* ✓ *She was cooking.* — ✗ *She was cook.*
 
-## Lista tematów głównych
+## 16 | Warstwa olimpijska — dla olimpijczyka {#olimpijska}
 
-Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu; w paczce nie ma dokumentu wymagań.)*
 
-1. Cel lekcji
-2. Szybki test
-3. Punkt czy linia?
-4. Past Simple – budowa
-5. Czasowniki nieregularne
+::: karta understand | Dla olimpijczyka — konstrukcje, o których podręcznik milczy
+**always / constantly + Past Continuous = irytacja.** *He was always losing his keys.* — nie opisuje rutyny (to zrobiłby Past Simple: *He always lost his keys*), tylko wyraża zniecierpliwienie mówiącego. Pułapka w zadaniach „wyjaśnij różnicę".
+
+**when przy tle i przy wydarzeniu.** *When I was walking home, it started to rain* — poprawne: when może wprowadzić także czynność w toku (tło), a wydarzenie stoi w zdaniu głównym. W zdaniu *I was leaving when the phone rang* when wprowadza nagłe wydarzenie — znaczy tyle co „i wtedy nagle".
+
+**while + Past Simple** — konwencja szkolna każe łączyć while z Past Continuous, ale gramatyki akademickie i korpusy dopuszczają też *While I waited, I read a paper* (gdy obie czynności traktujemy jako całość). Na egzaminie szkolnym trzymaj się Continuous; w uzasadnieniach konkursowych zaznacz, że to kwestia konwencji, nie błąd. (źródło: M. Swan, Practical English Usage)
+
+**was/were being = zachowanie chwilowe.** *He was being polite* = „zachowywał się uprzejmie" (zachowanie, mogło się skończyć); *He was polite* = „był uprzejmy" (cecha). Działa też w teraźniejszości: *You are being silly!*
+
+**Future-in-the-past.** Z perspektywy przeszłości plan to *was/were going to + bezokolicznik* (*I was going to call you, but I fell asleep*), a w mowie zależnej *would* lub *was going to* (*She said she would come*). Już spotkałeś to w Zadaniu 8 (Poziom D).
+
+**Dwa równoległe odcinki.** *While I was cooking, he was laying the table.* — dwie czynności trwające jednocześnie; while spina dwa Past Continuous.
+:::
+
+::: nie-myl
+**Past Simple vs Present Perfect** — test rozstrzygający: czy w zdaniu jest zakończony moment (yesterday, last week, two days ago, in 2020)? TAK → Past Simple. NIE, a liczy się skutek albo doświadczenie → Present Perfect. ✗ *I have seen him yesterday* → ✓ *I saw him yesterday.* (szczegóły: lekcja 5)
+:::
+
+::: nie-myl
+**when vs while** — test rozstrzygający: czy po spójniku stoi czynność w toku (linia)? TAK → while. Czy wydarzenie (punkt)? TAK → when. Zdanie z **dwoma** liniami → while spina oba: *While I was cooking, he was laying the table.* Zdanie z linią i punktem → when może stanąć przy punkcie: *I was cooking when she called.*
+:::
+
+::: nie-myl
+**He was polite vs He was being polite** — test rozstrzygający: czy mówisz o cesze (stałej właściwości), czy o zachowaniu w konkretnej sytuacji? Cecha → was + przymiotnik. Chwilowe zachowanie → was being + przymiotnik. Nie działa z przymiotnikami stanu typu tall, blue: ✗ *He was being tall.*
+:::
+
+::: adv | Zadanie O1 (4 pkt) — Połącz zdania (przekształcanie) | poziom ambitny
+Połącz dwa zdania w jedno tak, aby czynność trwająca była tłem. Podaj **obie** możliwe wersje (z when i z while).
+
+1. I was walking to school. I met my teacher.
+2. She was cooking. The phone rang.
+3. They were playing football. It started to rain.
+4. We were having dinner. The doorbell rang.
+
+::: odp | Pokaż klucz
+1. **I was walking to school when I met my teacher.** / **While I was walking to school, I met my teacher.** 2. **She was cooking when the phone rang.** / **While she was cooking, the phone rang.** 3. **They were playing football when it started to rain.** / **While they were playing football, it started to rain.** 4. **We were having dinner when the doorbell rang.** / **While we were having dinner, the doorbell rang.** — 1 pkt za parę; uzasadnienie (wspólne): tło w Past Continuous, wydarzenie w Past Simple; when staje przy wydarzeniu, while przy tle; szyk klauzuli dowolny (przecinek przy klauzuli na początku).
+:::
+:::
+
+::: adv | Zadanie O2 (5 pkt) — Znajdź błąd: tekst z pułapkami | poziom ambitny
+W tekście ukryto **5 błędów czasowych**. Znajdź je, popraw i uzasadnij (1 pkt za błąd z uzasadnieniem). Uwaga: niektóre formy wyglądają podejrzanie, ale są POPRAWNE — nie „naprawiaj" ich.
+
+*Last Saturday it was raining all morning, so I was staying at home. While I was watching TV, suddenly my phone was ringing. It was my cousin Max. He was telling me that he was in town, so I got dressed quickly and was leaving the house. While I was waiting at the bus stop, I was seeing my old teacher. We talked for ten minutes and I missed the bus. When the next bus was coming, I got on and went home.*
+
+::: odp | Pokaż klucz
+1. **was ringing → rang** — suddenly zapowiada krótkie wydarzenie → Past Simple; 2. **was telling → told** — jednorazowa informacja w narracji → Past Simple; 3. **was leaving → left** — sekwencja zdarzeń (got dressed and left) → Past Simple; 4. **was seeing → saw** — spotkanie to zdarzenie; see w znaczeniu „widzieć/spotkać" nie tworzy form Continuous; 5. **was coming → came** — wsiadłem, kiedy autobus przyjechał (wydarzenie) → Past Simple. Formy POPRAWNE (pułapki): *it was raining all morning* (tło trwające), *I was staying at home* (sytuacja tymczasowa), *While I was waiting* (tło po while), *We talked for ten minutes* (zakończony odcinek w sekwencji — for nie wymusza Continuous), *He was in town* (stan).
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — Wyjaśnij różnicę (uzasadnianie) | poziom ambitny
+Wyjaśnij, czym różnią się zdania w każdej parze (1 pkt za parę z poprawnym uzasadnieniem).
+
+1. „When the phone rang, I was having a bath." vs „When I was having a bath, the phone rang."
+2. „I read a book last night." vs „I was reading a book last night."
+3. „He was always borrowing my things." vs „He always borrowed my things."
+4. „It was raining when we left." vs „It rained when we left."
+
+::: odp | Pokaż klucz
+1. Obie wersje poprawne; pierwsza: kładzie nacisk na tło (kąpiel trwała, telefon przerwał); druga: when wprowadza tło, a wydarzenie (telefon) jest w głównej części — sens ten sam, inny akcent. 2. Past Simple: traktuję czytanie jako całość (możliwe, że skończyłem); Past Continuous: byłem w trakcie — nie wiadomo, czy skończyłem. 3. Pierwsze: irytacja mówiącego (always + Past Continuous); drugie: neutralna obserwacja o rutynie. 4. Pierwsze: naturalne — deszcz był tłem w momencie wyjścia; drugie: rzadkie i dziwne — sugeruje, że deszcz zaczął się „na sygnał" wyjścia albo powtarzał się za każdym razem.
+:::
+:::
+
+::: adv | Zadanie O4 (3 pkt) — Plan, który się nie ziścił (future-in-the-past) | poziom ambitny
+Uzupełnij i nazwij konstrukcję (1 pkt za lukę z poprawną formą).
+
+1. I ____________ (visit) my grandma on Saturday, but I fell ill.
+2. She said she ____________ (call) me later.
+3. They ____________ (move) to Gdańsk, but they changed their minds.
+
+::: odp | Pokaż klucz
+1. **was going to visit** — plan z przeszłości, który się nie spełnił (was/were going to); 2. **would call** (także: *was going to call* / *was calling*) — mowa zależna, future-in-the-past; 3. **were going to move** — jak w 1. Nazwa konstrukcji: **future-in-the-past** (przyszłość z perspektywy przeszłości).
+:::
+:::
+
+::: adv | Zadanie O5 (4 pkt) — Granice: stany, zachowania, myślenie | poziom ambitny
+Zdecyduj, czy zdanie jest poprawne; jeśli nie — popraw je i uzasadnij. Jeśli poprawne — wyjaśnij znaczenie (1 pkt za punkt).
+
+1. I was knowing the answer.
+2. He was being very polite at the meeting.
+3. I was thinking about your offer all evening.
+
+::: odp | Pokaż klucz
+1. **Błędne → I knew the answer.** — know to czasownik stanowy, nie tworzy form Continuous. 2. **Poprawne** — was being = „zachowywał się" (chwilowe zachowanie, nie cecha); por. He was polite = miał cechę uprzejmości. 3. **Poprawne** — think w znaczeniu „rozważać, myśleć nad czymś" to czynność umysłowa w toku → Past Continuous; „I thought about your offer" znaczyłoby: zamknąłem temat, skończyłem rozważać.
+:::
+:::
+
+::: adv | Zadanie O6 (4 pkt) — Przetłumacz fragmenty (przekształcanie) | poziom ambitny
+Przetłumacz fragmenty podane w nawiasach (1 pkt za fragment).
+
+1. ______________ (Kiedy wyszedłem z domu), it started to rain.
+2. I ______________ (czytałem książkę) when the lights went out.
+3. ______________ (Padało cały wieczór).
+4. She ______________ (ciągle gubiła — irytacja) her keys.
+
+::: odp | Pokaż klucz
+1. **When I left the house** (wydarzenie → Past Simple); 2. **was reading a book** (tło przerwane wydarzeniem → Past Continuous); 3. **It was raining all evening** (czynność trwająca przez okres → Past Continuous); 4. **was always losing** (always + Past Continuous = irytacja; neutralnie: always lost).
+:::
+:::
+
+## 17 | Test — pytania zamknięte {#test}
+
+::: test
+? I ______ TV when she ______ in.
++ was watching / came
+- watched / was coming
+- was watching / was coming
+- watched / came
+! Tło (Past Continuous) przerwane krótkim wydarzeniem (Past Simple).
+
+? At 8 p.m. yesterday we ______ dinner.
++ were having
+- had
+- have had
+- are having
+! Konkretny moment w przeszłości + czynność w toku → Past Continuous.
+
+? She ______ to school yesterday because she was ill.
++ didn't go
+- didn't went
+- wasn't going
+- doesn't go
+! yesterday + pojedyncze wydarzenie → Past Simple; po didn't forma podstawowa.
+
+? What ______ at 6 o'clock this morning?
++ were you doing
+- did you do
+- have you done
+- do you do
+! Pytanie o czynność w toku o określonej godzinie → Past Continuous.
+
+? My dad ______ his car when he ______ the news.
++ was washing / heard
+- washed / was hearing
+- was washing / was hearing
+- washed / heard
+! Tło (was washing) + wydarzenie (heard); hear w tym znaczeniu to zdarzenie → Past Simple.
+
+? The phone ______ while she ______ a shower.
++ rang / was having
+- was ringing / had
+- rang / had
+- was ringing / was having
+! Wydarzenie (rang) wchodzi w tło (was having); while wprowadza czynność trwającą.
+
+? They ______ football when it started to rain.
++ were playing
+- played
+- are playing
+- play
+! Tło przerwane wydarzeniem (started) → Past Continuous.
+
+? (konkurs) She ______ her keys all the time — it drove me crazy!
++ was always losing
+- always lost
+- has always lost
+- is always losing
+! always + Past Continuous = irytacja przy powtarzalnej czynności (neutralnie: always lost).
+
+? (konkurs) I ______ to call you, but I fell asleep.
++ was going
+- went
+- have gone
+- am going
+! was going to + bezokolicznik = plan z przeszłości, który się nie spełnił (future-in-the-past).
+
+? We ______ for the bus when the accident ______ .
++ were waiting / happened
+- waited / was happening
+- were waiting / was happening
+- waited / happened
+! Czynność w tle (were waiting) + krótkie wydarzenie (happened).
+:::
+
+## 18 | Fiszki {#fiszki}
+
+::: fiszki
+Past Simple — użycie | zakończone wydarzenia z konkretnym czasem (yesterday, ago, in 2020) | basic:czasy-przeszle
+Past Simple — przeczenie | didn't + forma podstawowa (I didn't go) | basic:czasy-przeszle
+Past Simple — pytanie | Did + podmiot + forma podstawowa? | basic:czasy-przeszle
+Past Continuous — budowa | was/were + czasownik-ing | basic:czasy-przeszle
+Past Continuous — użycie | czynność w toku / tło (at 5 p.m., all evening) | basic:czasy-przeszle
+while | wprowadza czynność trwającą (Past Continuous) | basic:czasy-przeszle
+when | wprowadza wydarzenie (Past Simple) | basic:czasy-przeszle
+suddenly | nagle — sygnał wydarzenia → Past Simple | basic:czasy-przeszle
+go – went – gone | II forma went | basic:czasy-przeszle
+break – broke – broken | złamać | basic:czasy-przeszle
+fall – fell – fallen | upaść | basic:czasy-przeszle
+wake up – woke up | obudzić się | basic:czasy-przeszle
+grupa i-a-u | begin-began-begun, drink, sing, swim, ring — jeden schemat samogłosek | basic:czasy-przeszle
+decyzja przed formą | najpierw punkt czy linia, potem wybór czasu | basic:czasy-przeszle
+was being polite | zachowywał się uprzejmie — chwilowe zachowanie (nie cecha) | olimpijski:czasy-przeszle
+was going to call | plan z przeszłości, który się nie ziścił (future-in-the-past) | olimpijski:czasy-przeszle
+He was always losing his keys | always + Past Continuous = irytacja | olimpijski:czasy-przeszle
+While I waited / While I was waiting | obie poprawne; szkoła preferuje Continuous | olimpijski:czasy-przeszle
+while = although | formalne „choć": While I understand, I disagree | olimpijski:czasy-przeszle
+when = „and suddenly" | I was leaving when the phone rang — when wprowadza nagłe wydarzenie | olimpijski:czasy-przeszle
+:::
+
+## 19 | Słownik {#slownik}
+
+::: slownik
+punkt na osi czasu :: zdarzenie skończone — rysowane jako kropka; Past Simple.
+linia :: czynność w toku — rysowana jako odcinek; Past Continuous.
+tło :: sytuacja trwająca, na której tle działo się coś krótszego (Past Continuous).
+wydarzenie przerywające :: krótkie zdarzenie, które przerwało czynność w toku (Past Simple po when).
+forma podstawowa (V1) :: bezokolicznik bez „to" — po did/didn't.
+II forma (V2) :: forma przeszła czasownika (went, saw) — twierdzenia w Past Simple.
+III forma (V3) :: trzecia forma czasownika (gone, seen) — potrzebna w Present Perfect (lekcja 5).
+narracja :: opowiadanie zdarzeń po kolei — Past Simple ze łącznikami then, after that, in the end.
+sekwencja zdarzeń :: kolejne kroki opowieści następujące jeden po drugim — Past Simple.
+sytuacja tymczasowa :: coś, co trwało pewien czas, ale nie na stałe (I was staying at my grandma's).
+future-in-the-past :: przyszłość z perspektywy przeszłości: was/were going to, would (konkurs).
+konwencja :: przyjęty zwyczaj językowy; szkoła preferuje while + Past Continuous, gramatyki akademickie dopuszczają też while + Past Simple.
+określenie czasu :: sygnał wskazujący czas gramatyczny (yesterday → PS; all evening → PC).
+:::
+
+## 20 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Najbardziej uprzejme zdanie w angielskim
+*I was wondering if you could help me…* — dosłownie „zastanawiałem się (w trakcie), czy…". Past Continuous w zdaniach grzecznościowych robi prośbę delikatniejszą niż *I wonder* — sugeruje niedokończoną, niemal wahającą się myśl zamiast żądania. Standard formalnych e-maili i rozmów o pracę. (źródło: Cambridge Dictionary)
+:::
+
+::: karta extra | Opowiadanie w czasie teraźniejszym
+W żywej mowie Anglosasi często opowiadają wczorajsze historie... w czasie teraźniejszym: *So yesterday I'm walking down the street and this guy comes up to me…* To tzw. historical present — dodaje dramatyzmu, jakby akcja toczyła się na oczach słuchacza. Na egzaminie opowiadaj w czasach przeszłych, ale rozpoznaj tę konwencję w filmach i serialach. (źródło: M. Swan, Practical English Usage) (konkurs)
+:::
+
+::: karta extra | while, które nie znaczy „podczas gdy"
+W formalnym angielskim *while* bywa spójnikiem przeciwstawnym: *While I understand your point, I disagree.* — „Choć rozumiem twój argument, nie zgadzam się." Żadnej linii na osi czasu, żadnego tła — tylko „z drugiej strony". Dwa oblicza jednego słowa; kontekst (dwie pełne klauzule sprzeczne ze sobą) zdradza znaczenie. (źródło: Cambridge Dictionary) (konkurs)
+:::
+
+::: karta extra | used to i would — kuzyni Past Simple
+Do dawnych nawyków oprócz Past Simple służą *used to* (*I used to play chess*) i — w opowiadaniach — *would* (*Every summer we would go to the lake*). Subtelna granica: *would* działa tylko przy czynnościach, nie łączy się ze stanami — ✗ *I would have long hair*, ale ✓ *I used to have long hair*. (źródło: M. Swan, Practical English Usage) (konkurs)
+:::
+
+## 21 | Lista tematów głównych {#spis-tematow}
+
+1. Cel lekcji i test wstępny
+2. Wykład — punkt czy linia?
+3. Past Simple – budowa
+4. Czasowniki nieregularne
+5. Ćwiczenia – Past Simple
 6. Past Continuous – budowa
-7. When i While
-8. Porównanie czasów
-9. Pułapki egzaminacyjne
-10. Słownictwo
-11. Ćwiczenia A–E
-12. Misja końcowa
-13. 7 zasad
-14. Fiszka
+7. Ćwiczenia – Past Continuous
+8. When i While
+9. Ćwiczenia – when i while
+10. Porównanie czasów
+11. Pułapki egzaminacyjne i klinika błędów
+12. Słownictwo
+13. Ćwiczenia egzaminacyjne (A–E)
+14. Test końcowy – MISJA
+15. Podsumowanie: 7 zasad i ściąga
+16. Warstwa olimpijska
+17. Test — pytania zamknięte
+18. Fiszki
+19. Słownik
+20. Ciekawostki
 
-<p class="mini-note">Ucz się świadomie, nie na pamięć.</p>
-<p class="mini-note">Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.</p>
+*Ucz się świadomie, nie na pamięć.*
+
+*Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.*
+
+## AUDYT W1 — ULEPSZ z warstwą olimpijską (2026-10-11) {#audyt}
+Surowa odpowiedź: `angielski/plany/audyty/ULEPSZ_OLI_L006_2026-10-11.md` (trzecia tura paczki `AI_ULEPSZ_ANG_OLI1_czasy_L004_L005_L006`; model widział L006 w całości).
+
+**Przyjęte:** wykład „punkt czy linia?”, 3 mini-wykłady, warstwa olimpijska (§16: always + Past Continuous, when przy tle, while + Past Simple jako konwencja, was being, future-in-the-past, dwa równoległe odcinki; zadania O1–O6), test (10 pytań), 20 fiszek, słownik (13 haseł), 4 ciekawostki (I was wondering, historical present, while = although, used to / would), klinika (7 + 3 nowe błędy), numeracja zadań 1–10 z punktacją; scalenie 11 zdublowanych nagłówków z konwersji (33 → 22 sekcje), resztki HTML zamienione na składnię kursu, rysunki ASCII (punkt/linia, oś czasu) zamienione na opisy i tabelę, usunięta pusta kolumna „Audio”, dodana kolumna III formy w tabeli nieregularnych. Treść i klucze sprawdzone skryptem (frazy oryginału obecne w nowej wersji).
+
+**Poprawione względem propozycji:** akapit „when = i nagle” był wewnętrznie sprzeczny (when łączące dwie czynności w toku) — przepisany; „dopuszczają also” i „zwłaszcza BrE” przy while + Past Simple — to nie kwestia odmiany brytyjskiej, poprawiono też fiszkę; polszczyzna: „zawsze zgubiła” → „ciągle gubiła”, „akcja działa się” → „toczyła się”, „się nie zgadzam” → „nie zgadzam się”, „stanów nie przeskoczy”; przywrócone polskie tłumaczenie *Szedłem do domu, kiedy zaczęło padać*.
+
+**Nieprzyjęte:** — (propozycje grafik: oś czasu punkt/linia, kadr filmowy, szkielet opowiadania — zapisane jako pomysły do biblioteki grafik angielskiego).
+
