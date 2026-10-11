@@ -64,7 +64,7 @@ def main():
                     cur.append(r); kb += r[2]
                 if cur: paczki.append(cur)
                 for i, pk in enumerate(paczki, 1):
-                    L.append(f'\n- zestaw {i} ({sum(r[2] for r in pk)//1024} KB): `python3 eksport/paczka_ai.py ulepsz {prz.upper()}_{i} ' + ' '.join(str(r[1].relative_to(ROOT)) for r in pk) + '`')
+                    L.append(f'\n- zestaw {i} ({sum(r[2] for r in pk)//1024} KB): `python3 eksport/paczka_ai.py ulepsz {prz[:3].upper()}_{'_'.join(r[0] for r in pk)} ' + ' '.join(str(r[1].relative_to(ROOT)) for r in pk) + '`')
         L.append('')
     out = ROOT / 'eksport' / 'KOLEJKA_AI.md'
     out.write_text('\n'.join(L) + '\n')
