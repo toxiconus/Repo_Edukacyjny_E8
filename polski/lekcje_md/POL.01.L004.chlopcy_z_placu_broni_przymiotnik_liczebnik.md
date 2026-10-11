@@ -5,7 +5,7 @@ tytul: „Chłopcy z Placu Broni” + przymiotnik i liczebnik
 lead: Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie — Lekcja 4 – „Chłopcy z Placu Broni” oraz przymiotnik (stopniowanie, odmiana, „nie”) i liczebnik (rodzaje, odmiana, zapis)
 stopka: Lekcja 4 – „Chłopcy z Placu Broni” + przymiotnik i liczebnik • Wersja FINALNA – pełna treść, uzupełniona o MASTER, KONKURS, OLIMPIADA i słownik • 2026-09-07
 zrodlo: L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html (konwersja html_do_md.py, 2026-10-09)
-stan: ULEPSZONA — Claude, 2026-10-11 (2 wykłady, mini-wykłady, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione klucze i błędy); W1 starym promptem — do recenzji W1 FULL
+stan: ULEPSZONA — Claude, 2026-10-11 (2 wykłady, mini-wykłady, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione klucze i błędy); W1 starym promptem — do zewnętrznej recenzji W1 (pełny prompt)
 ---
 ::: karta understand | Sprawdź się przed nauką — 3 szybkie pytania
 1. Kto jest symbolem odwagi i lojalności na Placu Broni?

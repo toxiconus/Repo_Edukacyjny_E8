@@ -32,19 +32,23 @@
 
 - zestaw 3 (34 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R03A chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
 
-**niski priorytet (W1 starym promptem) — 12 lekcji, 774 KB:** F01 (45 KB) · F02 (35 KB) · F03 (35 KB) · F04 (24 KB) · F05 (27 KB) · F06 (48 KB) · N01 (122 KB) · N02 (128 KB) · N03 (133 KB) · N04 (85 KB) · R03 (25 KB) · REV01 (61 KB)
+**niski priorytet (W1 starym promptem) — 12 lekcji, 790 KB:** F01 (45 KB) · F02 (35 KB) · F03 (35 KB) · F04 (32 KB) · F05 (35 KB) · F06 (48 KB) · N01 (122 KB) · N02 (128 KB) · N03 (133 KB) · N04 (85 KB) · R03 (25 KB) · REV01 (61 KB)
 
 **NIE wysyłać (W1 FULL) — 1 lekcji, 55 KB:** F17 (55 KB)
 
 ## polski
 
-**WYSŁAĆ (bez W1) — 1 lekcji, 47 KB:** PL.G01 (47 KB)
+**WYSŁAĆ (bez W1) — 4 lekcji, 171 KB:** G02 (44 KB) · G05 (44 KB) · G06 (45 KB) · G09 (38 KB)
 
-- zestaw 1 (47 KB): `python3 eksport/paczka_ai.py ulepsz POL_PL.G01 polski/podstawy/POL.02.G01.rzeczownik.md`
+- zestaw 1 (44 KB): `python3 eksport/paczka_ai.py ulepsz POL_G02 polski/podstawy/POL.02.G02.czasownik.md`
 
-**niski priorytet (W1 starym promptem) — 3 lekcji, 119 KB:** L002 (53 KB) · L003 (36 KB) · L006 (29 KB)
+- zestaw 2 (44 KB): `python3 eksport/paczka_ai.py ulepsz POL_G05 polski/podstawy/POL.02.G05.zaimek.md`
 
-**NIE wysyłać (W1 FULL) — 25 lekcji, 866 KB:** L001 (101 KB) · L004 (40 KB) · L005 (45 KB) · G02 (44 KB) · G03 (60 KB) · G04 (69 KB) · G05 (44 KB) · G06 (45 KB) · G07 (48 KB) · G08 (35 KB) · G09 (38 KB) · G10 (31 KB) · G11 (25 KB) · G12 (58 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
+- zestaw 3 (83 KB): `python3 eksport/paczka_ai.py ulepsz POL_G06_G09 polski/podstawy/POL.02.G06.imieslowy.md polski/podstawy/POL.02.G09.spojnik.md`
+
+**niski priorytet (W1 starym promptem) — 5 lekcji, 287 KB:** L001 (101 KB) · L002 (53 KB) · L003 (48 KB) · L004 (40 KB) · L006 (42 KB)
+
+**NIE wysyłać (W1 FULL) — 20 lekcji, 600 KB:** L005 (45 KB) · PL.G01 (47 KB) · G03 (60 KB) · G04 (69 KB) · G07 (48 KB) · G08 (35 KB) · G10 (31 KB) · G11 (25 KB) · G12 (58 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
 
 ## angielski
 

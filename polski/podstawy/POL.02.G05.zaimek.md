@@ -5,7 +5,7 @@ tytul: Zaimek
 lead: Zamiast nazwy — wskazuje: ja, ten, który, ktoś, nikt; „swój” czy „jego”, „mi” czy „mnie”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L003, G16
-stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykłady, nie-myl, klinika, ciekawostki, warstwa olimpijska, test, słownik, fiszki); wcześniej W1 — GPT-6, 2026-10-09; do recenzji W1 FULL
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykłady, nie-myl, klinika, ciekawostki, warstwa olimpijska, test, słownik, fiszki); wcześniej W1 — GPT-6, 2026-10-09; do zewnętrznej recenzji W1 (pełny prompt)
 utworzono: 2026-10-09
 wersja: 3.1
 poziom: [[poziom:SP]] [[LKO]]

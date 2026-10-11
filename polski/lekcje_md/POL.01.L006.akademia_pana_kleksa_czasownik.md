@@ -5,7 +5,7 @@ tytul: „Akademia Pana Kleksa” + czasownik
 lead: Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie — Lekcja 6 – „Akademia Pana Kleksa” oraz czasownik (formy, czasy, tryby, aspekt, strona, „nie”)
 stopka: Lekcja 6 – „Akademia Pana Kleksa” + czasownik • Wersja FINALNA – pełna treść, uzupełniona o MASTER, KONKURS, OLIMPIADA i słownik • 2026-09-07
 zrodlo: L006-PL-Akademia-Pana-Kleksa-czasownik.html (konwersja html_do_md.py, 2026-10-09)
-stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykład, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione błędy); W1 starym promptem — do recenzji W1 FULL
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykład, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione błędy); W1 starym promptem — do zewnętrznej recenzji W1 (pełny prompt)
 ---
 ::: karta understand | Sprawdź się przed nauką — 3 szybkie pytania
 1. Kto opowiada historię w „Akademii Pana Kleksa”?

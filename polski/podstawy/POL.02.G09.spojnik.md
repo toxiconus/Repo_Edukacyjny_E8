@@ -5,7 +5,7 @@ tytul: Spójnik
 lead: Łączy wyrazy i zdania: i, ale, więc, że, bo, gdy — i decyduje o przecinku.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G15, G16
-stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykłady, nie-myl, klinika, ciekawostki, warstwa olimpijska, test, słownik, fiszki); wcześniej W1 — GPT-6, 2026-10-09; do recenzji W1 FULL
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykłady, nie-myl, klinika, ciekawostki, warstwa olimpijska, test, słownik, fiszki); wcześniej W1 — GPT-6, 2026-10-09; do zewnętrznej recenzji W1 (pełny prompt)
 utworzono: 2026-10-09
 wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]

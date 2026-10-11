@@ -4,7 +4,7 @@ przedmiot: język polski
 blok: G — gramatyka i składnia
 tytul: Rzeczownik — znaczenie, kategorie gramatyczne, odmiana i funkcje
 wersja: 3.1
-status: W1 FULL — Perplexity (ULEPSZ --olimpiada), 2026-10-11; wcześniej W1 GPT-6, 2026-10-09; scalenie i sprawdzenie Claude
+stan: W1 FULL — Perplexity (ULEPSZ --olimpiada), 2026-10-11; wcześniej W1 GPT-6, 2026-10-09; scalenie i sprawdzenie Claude
 poziom: szkoła podstawowa, klasy 7–8; rozszerzenie konkursowe oznaczone osobno
 powiazania: G02 czasownik; G03 przymiotnik; G04 liczebnik; G05 zaimek; G06 imiesłowy; G12 części zdania; G13 związki wyrazowe; G14 zdanie pojedyncze; L005 Kajko i Kokosz
 ---

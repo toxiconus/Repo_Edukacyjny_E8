@@ -5,7 +5,7 @@ tytul: „Opowieści z Narnii” + zaimek
 lead: Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie — Lekcja 3 – „Opowieści z Narnii: Lew, czarownica i stara szafa” oraz zaimek (osobowe, zwrotne, dzierżawcze, wskazujące, pytające, względne, przeczące)
 stopka: Lekcja 3 – „Opowieści z Narnii” + zaimek • Wersja v2 – optymalizacja + pełna treść (MASTER · KONKURS · OLIMPIADA) • 2026-09-07
 zrodlo: L003-PL-Opowiesci-z-Narnii-zaimek.html (konwersja html_do_md.py, 2026-10-09)
-stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykład, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione błędy); W1 starym promptem — do recenzji W1 FULL
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykład, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione błędy); W1 starym promptem — do zewnętrznej recenzji W1 (pełny prompt)
 ---
 Lekcja 3 · orientacja
 

@@ -4,7 +4,7 @@ przedmiot: polski
 tytul: L001 – Lektury z klas IV–VI i imiesłowy · Polski: Podstawa Plus
 stopka: L001 — Lektury z klas IV–VI i imiesłowy · Polski: Podstawa Plus · v19 · 2026-09-11
 zrodlo: L001-PL-Lektury-klas-IV-VI-imieslow.html (konwersja html_do_md.py, 2026-10-09)
-stan: W1 FULL częściowo (do §8.1 + nowe §19–24) — Perplexity (paczka ULEPSZ POL_L001_cala), 2026-10-11; scalenie Claude; część odpowiedzi (nowe §9–14, Zadania 1–6) brak; oryginalne §9–18 bez oceny
+stan: W1 częściowo (do §8.1 + nowe §19–24) — Perplexity (paczka ULEPSZ POL_L001_cala), 2026-10-11; scalenie Claude; część odpowiedzi (nowe §9–14, Zadania 1–6) brak; oryginalne §9–18 bez oceny
 ---
 Polski: Podstawa Plus · Lekcja 1
 
