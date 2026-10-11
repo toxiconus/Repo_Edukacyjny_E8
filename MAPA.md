@@ -578,27 +578,18 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (6 pl., 34 KB)
+## eksport  (8 pl., 50 KB)
 - `.gitignore` 0 KB
-- `W1_PROMPT.md` 7 KB
+- `ULEPSZ_PROMPT.md` 11 KB
+- `W1_PROMPT.md` 8 KB
 - `html2md.py` 4 KB
+- `paczka_ai.py` 3 KB
 - `w1_lekcje.py` 2 KB
 - `w1_paczka.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (12 pl., 98 KB)
-- `audyt_do_kanonu.py` 5 KB
-- `html_do_md.py` 22 KB
-- `latex2uni.py` 2 KB
-- `lekcja_html.py` 14 KB
-- `mapa.py` 2 KB
-- `opis_dlug.json` 0 KB
-- `opis_wizualizacji.py` 3 KB
-- `polski_paczka.py` 7 KB
-- `spis_wszystkich.py` 14 KB
-- `sprawdz_wyklady.py` 1 KB
-- `szkielety_polski.py` 24 KB
-- `zbuduj_wszystkie.py` 3 KB
+## narzedzia  (13 pl., 103 KB)
+- (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
 - `README.md` 0 KB
