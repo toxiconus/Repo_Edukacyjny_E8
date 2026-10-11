@@ -15,6 +15,7 @@
 | REV01 | `BIO.00.REV01.organizacja_i_chemizm_zycia.md` | v1.0 (2026-10-08) — powtórka do konkursu LKO, etap szkolny pkt I: poziomy, mikroskop, organelle, typy komórek, transport, fotosynteza, oddychanie, fermentacja, czynności życiowe, 2 doświadczenia; źródło L001, L004–L008; test OK |
 | REV02 | `BIO.00.REV02.roznorodnosc_zycia.md` | v1.0 (2026-10-08) — powtórka do konkursu LKO, etap szkolny pkt II (kl. 5–6); treść nowa (podstawa 2024 + zakres LKO 2025/26), bez nowych grafik; test OK |
 | U04 | `BIO.07.U04.krazenie_krew_odpornosc.md` | v1.0 (2026-10-11) — etap rejonowy LKO pkt III.4–5; z dwóch odpowiedzi Perplexity, sprawdzone i rozbudowane; nowe grafiki `krazenie-obiegi`, `transfuzja` (kolory krwi w `szablon/motywy/bio.css`); test OK; do W1 |
+| H01 | `BIO.07.H01.homeostaza.md` | v1.0 (2026-10-11) — etap rejonowy pkt IV; Perplexity + szkielet OLI B2 (GPT-6) + Claude; grafiki `sprzezenie-zwrotne`, `glukoza-wykres`; test OK; do W1 |
 
 ## Stan 2026-10-11 (grafiki)
 - Lekcje `biologia/md` budowane `python3 narzedzia/lekcja_html.py -p bio <md>` → `biologia/html/`; wszystkie mają grafiki z `bio-viz.js` (poza L003). Nowe grafiki 2026-10-10: relacje-ekologiczne, konczyny-homologiczne, energia-materia, zrodla-zmiennosci, kontrola-podzialow, eutrofizacja, homeostaza, endosymbioza, hardy-weinberg (katalog `BIO_KATALOG.md`).

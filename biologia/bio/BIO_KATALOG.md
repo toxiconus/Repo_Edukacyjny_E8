@@ -30,6 +30,8 @@ Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko
 | klucz-kregowce | klucz dwudzielny tak/nie do 5 gromad kręgowców + tryb „rozpoznaj zwierzę” (delfin, nietoperz, pingwin…) | — | REV02 |
 | krazenie-obiegi | serce od przodu (4 jamy, zastawki trójdzielna i dwudzielna), obieg mały i duży, krew odtlenowana / utlenowana; „krok” prowadzi drogą krwi (12 miejsc), przyciski podświetlają jeden obieg | start="maly\|duzy" | U04 |
 | transfuzja | zgodność dawca → biorca (ABO + Rh): antygeny na krwinkach, przeciwciała w osoczu, aglutynacja, uczulenie Rh−; tabela 4 × 4 | dawca="A", biorca="B" | U04 |
+| sprzezenie-zwrotne | pętla bodziec → receptor → ośrodek → efektor → odpowiedź; 7 sytuacji (temperatura ↑↓, glukoza ↑↓, woda za mało/za dużo, poród — dodatnie); „krok”, wskaźnik parametru wobec normy | start="tg\|td\|gg\|gd\|wd\|wg\|po" | H01 |
+| glukoza-wykres | stężenie glukozy po posiłku: osoba zdrowa vs z cukrzycą (dane przykładowe), zakres na czczo, klik w punkt = opis | — | H01 |
 | wirus-bakteria | wirus (kapsyd, DNA/RNA, osłonka) obok bakterii (ściana, błona, rybosomy, nukleoid, plazmid, rzęska); klik = opis; antybiotyki | — | REV02 |
 | przeobrazenie-plaza | rozwój złożony żaby: skrzek → kijanka → kijanka z kończynami → młoda żaba → żaba; suwak, oddychanie i środowisko | etap="0–4" | REV02 |
 | przeobrazenie-owadow | przeobrażenie zupełne (motyl, z poczwarką) i niezupełne (konik polny, bez poczwarki); klik = opis etapu | — | REV02 |

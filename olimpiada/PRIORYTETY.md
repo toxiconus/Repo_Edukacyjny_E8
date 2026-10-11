@@ -50,6 +50,7 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 | B1b | genetyka bieżąca (L010 gotowa → L011…) | oceny w kl. 8; konkurs dopiero etap III | L010 gotowa |
 | B2 | człowiek + homeostaza (kl. 7) | etap rejonowy | [ ] |
 | B2-U04 | **Krążenie, krew i odporność** (pkt III.4–5) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U04.krazenie_krew_odpornosc.md` (do W1); pozostałe układy: szkielety `olimpiada/do_uzupelnienia/OLI.BIO.B2*.md` |
+| B2-H01 | **Homeostaza** (pkt IV) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.H01.homeostaza.md` (do W1) |
 
 ## 3. Kolejka — później (oceny bieżące, kolejność szkolna kl. 8)
 - Chemia: (etap szkolny nie obejmuje organicznej) po solach → **węglowodory** (O01–O07, materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md`) → pochodne węglowodorów (O08–O13) → substancje o znaczeniu biologicznym (O15–O20).

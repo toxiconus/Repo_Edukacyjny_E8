@@ -1147,4 +1147,63 @@ mount:function(el,o){
    tb.innerHTML=h+'</table><small>Tabela ABO (bez Rh): ✔ — zgodna w modelu szkolnym. Grupa 0 „pasuje” do wszystkich, AB przyjmuje od wszystkich — tylko w tym uproszczeniu.</small>'}
   rys()}});
 
+
+/* ---- homeostaza: pętla sprzężenia zwrotnego (2026-10-11, lekcja BIO.07.H01) ---- */
+BIO.define('sprzezenie-zwrotne',{opis:'Pętla regulacji: bodziec → receptor → ośrodek → efektor → odpowiedź; scenariusze temperatury, glukozy, wody (ujemne) i porodu (dodatnie); „krok” przechodzi pętlę, wskaźnik pokazuje parametr wobec normy',
+mount:function(el,o){
+  var SC={
+   tg:{n:'temperatura ↑',p:'temperatura ciała',u:-1,k:['wysiłek, upał → temperatura ciała rośnie','termoreceptory w skórze i we krwi płynącej przez podwzgórze','ośrodek termoregulacji w podwzgórzu','naczynia skóry (rozszerzają się), gruczoły potowe (pot)','więcej ciepła oddane, pot paruje → temperatura spada do normy']},
+   td:{n:'temperatura ↓',p:'temperatura ciała',u:-1,k:['zimno → temperatura ciała spada','termoreceptory w skórze i podwzgórzu','ośrodek termoregulacji w podwzgórzu','naczynia skóry (zwężają się), mięśnie szkieletowe (dreszcze), mięśnie przywłosowe („gęsia skórka”)','mniej ciepła ucieka, dreszcze wytwarzają ciepło → temperatura rośnie do normy']},
+   gg:{n:'glukoza ↑',p:'stężenie glukozy we krwi',u:-1,k:['posiłek → glukoza we krwi rośnie','komórki trzustki wyczuwające glukozę','trzustka (komórki β wysp trzustkowych)','insulina → komórki ciała, wątroba i mięśnie','komórki pobierają glukozę, wątroba i mięśnie robią z niej glikogen → glukoza spada do normy']},
+   gd:{n:'glukoza ↓',p:'stężenie glukozy we krwi',u:-1,k:['głód, długi wysiłek → glukoza we krwi spada','komórki trzustki wyczuwające glukozę','trzustka (komórki α wysp trzustkowych)','glukagon → wątroba','wątroba rozkłada glikogen i uwalnia glukozę → glukoza rośnie do normy']},
+   wd:{n:'wody za mało',p:'stężenie substancji w osoczu',u:-1,k:['pocenie, brak picia → osocze bardziej stężone','osmoreceptory w podwzgórzu','podwzgórze (wytwarza ADH; ośrodek pragnienia)','ADH z tylnego płata przysadki → nerki; pragnienie → picie','nerki zwracają więcej wody do krwi, mało zagęszczonego moczu → stężenie osocza wraca do normy']},
+   wg:{n:'wody za dużo',p:'stężenie substancji w osoczu',u:-1,k:['dużo wypitej wody → osocze rozcieńczone','osmoreceptory w podwzgórzu','podwzgórze','mniej ADH → nerki','nerki zwracają mniej wody, dużo rozcieńczonego moczu → stężenie osocza wraca do normy']},
+   po:{n:'poród (dodatnie)',p:'siła skurczów macicy',u:1,k:['główka dziecka naciska na szyjkę macicy','receptory nacisku w szyjce macicy','podwzgórze i przysadka','oksytocyna → mięśnie macicy','silniejsze skurcze → większy nacisk → jeszcze więcej oksytocyny… aż do narodzin dziecka (koniec pętli)']}};
+  var N=['bodziec','receptor','ośrodek','efektor','odpowiedź'],cur=o.start&&SC[o.start]?o.start:'tg',step=-1;
+  var sg=H('div','bv-tools'),tl=H('div','bv-tools'),box=H('div'),info=H('div','bv-info');el.appendChild(sg);el.appendChild(tl);el.appendChild(box);el.appendChild(info);
+  var P=[[120,20],[520,20],[540,140],[320,196],[100,140]];
+  function draw(){var s=SC[cur];seg(sg,Object.keys(SC).map(function(k){return[k,SC[k].n]}),cur,function(k){cur=k;step=-1;draw()});
+   clr(tl);tl.appendChild(btn('▶ krok',function(){step=(step+1)%6;draw()}));tl.appendChild(btn('od początku',function(){step=-1;draw()}));
+   var ujem=s.u<0,col=ujem?'var(--c-basic)':'var(--c-error)';
+   var sv=svg(640,330,'Pętla sprzężenia zwrotnego',[S('defs',{},[S('marker',{id:'sz-a',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:14,markerHeight:14,markerUnits:'userSpaceOnUse',orient:'auto'},[S('path',{d:'M0 0L10 5L0 10z',fill:'var(--viz-line)'})])])]);
+   for(var i=0;i<5;i++){var a=P[i],b=P[(i+1)%5],on=step>=0&&(i<step||step===5);
+    var dx=b[0]-a[0],dy=b[1]-a[1],Lh=Math.hypot(dx,dy),sx=a[0]+dx*0.28,sy=a[1]+22+dy*0.28,ex=a[0]+dx*0.72,ey=a[1]+22+dy*0.72;sv.appendChild(S('line',{x1:sx,y1:sy,x2:ex,y2:ey,stroke:i===4?col:'var(--viz-line)','stroke-width':i===4?5:3,'stroke-dasharray':i===4?'8 6':null,'marker-end':'url(#sz-a)',opacity:on||step<0?1:.35}))}
+   sv.appendChild(T(320,108,ujem?'−  ujemne: odpowiedź przeciwdziała zmianie':'+  dodatnie: odpowiedź nasila zmianę',{s:15,w:800,f:col}));
+   N.forEach(function(n,i){var a=P[i],act=step===i||(step===5),past=step>i;var g=S('g',{opacity:step<0||act||past?1:.4},[S('rect',{x:a[0]-92,y:a[1],width:184,height:44,rx:14,fill:act?'var(--accent-soft)':'var(--viz-bg2)',stroke:act?'var(--accent)':'var(--viz-line)','stroke-width':act?3:1.5}),T(a[0],a[1]+23,(i+1)+'. '+n,{s:16,w:800})]);sv.appendChild(g)});
+   // wskaźnik parametru
+   var v=step<0?0.8:step<4?0.8:step===4?0.25:0.05;if(!ujem)v=step<0?0.3:Math.min(1,0.3+0.15*(step+1));
+   sv.appendChild(S('rect',{x:120,y:262,width:400,height:14,rx:7,fill:'var(--viz-bg2)',stroke:'var(--viz-line)'}));
+   sv.appendChild(S('line',{x1:320,y1:254,x2:320,y2:284,stroke:'var(--viz-ink)','stroke-width':2,'stroke-dasharray':'3 3'}));
+   sv.appendChild(T(320,300,ujem?'norma':'',{s:13,w:700}));
+   sv.appendChild(S('circle',{cx:320+v*190*(ujem?1:1),cy:269,r:10,fill:col}));
+   sv.appendChild(T(320,322,s.p,{s:14,w:700,f:'var(--viz-mut)'}));
+   clr(box);box.appendChild(sv);
+   info.className='bv-info';
+   info.innerHTML=step<0?'<b>'+s.n+' — '+(ujem?'ujemne sprzężenie zwrotne':'dodatnie sprzężenie zwrotne')+'</b>Kliknij „krok”, aby przejść pętlę: '+N.join(' → ')+'.':
+    step<5?'<b>'+(step+1)+'. '+N[step]+'</b>'+s.k[step]:'<b>Cała pętla</b>'+s.k.map(function(t,i){return '<strong>'+N[i]+':</strong> '+t}).join('<br>')+(ujem?'<br>Odpowiedź <strong>zmniejsza</strong> odchylenie — parametr wraca do normy.':'<br>Odpowiedź <strong>wzmacnia</strong> zmianę, aż proces się zakończy.')}
+  draw()}});
+
+/* ---- glukoza po posiłku: osoba zdrowa a osoba z cukrzycą (dane przykładowe) ---- */
+BIO.define('glukoza-wykres',{opis:'Wykres stężenia glukozy we krwi po posiłku (dane przykładowe): osoba zdrowa vs osoba z cukrzycą; przełączniki serii, punkty z wartościami, zakres prawidłowy na czczo',
+mount:function(el,o){
+  var T0=[0,30,60,90,120,180],Z=[85,135,112,98,90,86],C=[130,215,240,225,200,165],pok={z:1,c:1};
+  var tl=H('div','bv-tools'),box=H('div'),info=BIO.fx.infoBox('Odczytaj: kiedy glukoza jest najwyższa, jak szybko wraca do normy i czym różnią się krzywe.');el.appendChild(tl);el.appendChild(box);el.appendChild(info);
+  function draw(){clr(tl);[['z','osoba zdrowa'],['c','osoba z cukrzycą']].forEach(function(x){var b=btn((pok[x[0]]?'✔ ':'')+x[1],function(){pok[x[0]]=1-pok[x[0]];draw()});if(pok[x[0]])b.classList.add('on');tl.appendChild(b)});
+   var W=640,Hh=360,L=64,R=20,Tp=20,B=52,X=function(t){return L+t/180*(W-L-R)},Y=function(g){return Hh-B-(g-40)/(260-40)*(Hh-B-Tp)};
+   var sv=svg(W,Hh,'Wykres glukozy we krwi po posiłku',[]);
+   sv.appendChild(S('rect',{x:L,y:Y(99),width:W-L-R,height:Y(70)-Y(99),fill:'var(--c-basic-bg)'}));
+   sv.appendChild(T(W-R-6,Y(99)-8,'zakres na czczo (orientacyjnie 70–99)',{s:12,w:700,a:'end',f:'var(--viz-mut)'}));
+   [40,100,160,220].forEach(function(g){sv.appendChild(S('line',{x1:L,y1:Y(g),x2:W-R,y2:Y(g),stroke:'var(--viz-line)','stroke-opacity':.5}));sv.appendChild(T(L-8,Y(g),String(g),{s:13,a:'end'}))});
+   T0.forEach(function(t){sv.appendChild(T(X(t),Hh-B+20,String(t),{s:13}))});
+   sv.appendChild(T((L+W)/2,Hh-8,'czas po posiłku [min]',{s:14,w:700}));
+   sv.appendChild(S('text',{x:16,y:(Tp+Hh-B)/2,transform:'rotate(-90 16 '+((Tp+Hh-B)/2)+')','text-anchor':'middle','font-size':14,'font-weight':700,fill:'var(--viz-ink)'},['glukoza [mg/dl]']));
+   [['z',Z,'var(--c-basic)'],['c',C,'var(--c-error)']].forEach(function(sr){if(!pok[sr[0]])return;var d=sr[1].map(function(g,i){return (i?'L':'M')+X(T0[i])+' '+Y(g)}).join(' ');
+    sv.appendChild(S('path',{d:d,fill:'none',stroke:sr[2],'stroke-width':4,'stroke-linejoin':'round'}));
+    sr[1].forEach(function(g,i){var c=S('g',{'data-k':sr[0]+i},[S('circle',{cx:X(T0[i]),cy:Y(g),r:8,fill:sr[2],stroke:'#fff','stroke-width':2})]);sv.appendChild(c)})});
+   clr(box);box.appendChild(sv);
+   var M={};T0.forEach(function(t,i){M['z'+i]=['Osoba zdrowa, '+t+' min: '+Z[i]+' mg/dl',i===1?'Szczyt — glukoza wchłonięta z jelita; trzustka wydziela już insulinę.':i>1?'Insulina działa: komórki pobierają glukozę, wątroba magazynuje glikogen — stężenie spada.':'Na czczo — w zakresie prawidłowym.'];
+    M['c'+i]=['Osoba z cukrzycą, '+t+' min: '+C[i]+' mg/dl',i===0?'Już na czczo powyżej zakresu prawidłowego.':i===2?'Szczyt później i wyżej — brak insuliny lub komórki słabo na nią reagują.':'Stężenie spada powoli i długo nie wraca do normy.']});
+   BIO.fx.info(sv,info,M)}
+  draw()}});
+
 })();

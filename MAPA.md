@@ -7,7 +7,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 12 KB
-- `MAPA.md` 26 KB
+- `MAPA.md` 27 KB
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
@@ -63,7 +63,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
-## biologia/bio  (2 pl., 10 KB)
+## biologia/bio  (2 pl., 11 KB)
 - `BIO_KATALOG.md` 7 KB
 - `PRZEKAZANIE.md` 4 KB
 
@@ -77,9 +77,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 224 KB)
+## biologia/bio/szablon  (5 pl., 233 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 166 KB
+- ⚠`bio-viz.js` 175 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
@@ -158,7 +158,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 111 KB)
+## chemia/che-modular  (13 pl., 112 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -302,11 +302,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 135 KB)
+## chemia/che-modular/engine/src/lekcja  (6 pl., 150 KB)
 - `index.html` 1 KB
 - `lekcja.css` 4 KB
 - `lekcja.js` 2 KB
+- `nawigacja.css` 7 KB
+- `nawigacja.js` 7 KB
 - ⚠`rozszerzenia.js` 129 KB
+
+## chemia/che-modular/engine/src/lite  (1 pl., 1 KB)
+- `che-lite.js` 1 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/engine/src/moduly`) — duże:
@@ -462,7 +467,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (26 pl., 144 KB)
+## chemia/che-modular/tools  (27 pl., 148 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
