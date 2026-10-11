@@ -1065,4 +1065,86 @@ mount:function(el,o){
       ' <em>Model działa przy dużej populacji, bez doboru, mutacji i migracji oraz przy losowym kojarzeniu.</em>'}
   rng.addEventListener('input',rys);ust()}});
 
+
+/* ---- krążenie: serce, obieg mały i duży (2026-10-11, lekcja BIO.07.U04) ---- */
+BIO.define('krazenie-obiegi',{opis:'Serce (4 jamy, zastawki) + obieg mały i duży: krew odtlenowana (niebieska) i utlenowana (czerwona); kliknij element, „krok” prowadzi drogą krwi, przyciski podświetlają jeden obieg',
+mount:function(el,o){
+  var O2='var(--blood-o2)',CO='var(--blood-co2)',O2b='var(--blood-o2-bg)',COb='var(--blood-co2-bg)';
+  var M={RA:['Prawy przedsionek','Przyjmuje krew <strong>odtlenowaną</strong> z całego ciała (żyłami głównymi: górną i dolną). Ścianę ma cienką — tylko przepycha krew do komory tuż obok.'],
+   zt:['Zastawka trójdzielna','Między prawym przedsionkiem a prawą komorą. Otwiera się w stronę komory; przy skurczu komory zamyka się i krew nie cofa się do przedsionka.'],
+   RV:['Prawa komora','Pompuje krew odtlenowaną do <strong>płuc</strong> przez pień płucny (tętnice płucne) — to początek <strong>obiegu małego</strong>. Ściana grubsza niż przedsionka, ale cieńsza niż lewej komory, bo płuca są blisko.'],
+   tp:['Tętnice płucne (pień płucny)','Tętnica, choć niesie krew <strong>odtlenowaną</strong>! Nazwa „tętnica” mówi o kierunku: <strong>od serca</strong>. U wyjścia z komory — zastawka półksiężycowata.'],
+   pl:['Płuca — naczynia włosowate','Wymiana gazowa w pęcherzykach płucnych: krew <strong>oddaje CO₂</strong> i <strong>pobiera O₂</strong>. Odtąd krew jest utlenowana (czerwona).'],
+   zp:['Żyły płucne','Żyły, choć niosą krew <strong>utlenowaną</strong>! Nazwa „żyła” = <strong>do serca</strong>. Wpadają do lewego przedsionka — koniec obiegu małego.'],
+   LA:['Lewy przedsionek','Przyjmuje krew <strong>utlenowaną</strong> z płuc i przepycha ją do lewej komory.'],
+   zd:['Zastawka dwudzielna (mitralna)','Między lewym przedsionkiem a lewą komorą; zapobiega cofaniu się krwi przy skurczu komory.'],
+   LV:['Lewa komora','Pompuje krew utlenowaną do <strong>całego ciała</strong> przez aortę — początek <strong>obiegu dużego</strong>. Ma <strong>najgrubszą ścianę</strong> serca: musi wytworzyć ciśnienie, które przepchnie krew aż do palców stóp.'],
+   ao:['Aorta','Największa tętnica ciała. Rozgałęzia się na tętnice prowadzące krew do wszystkich narządów. U wyjścia z komory — zastawka półksiężycowata.'],
+   ci:['Narządy ciała — naczynia włosowate','W tkankach krew oddaje <strong>O₂</strong> i składniki odżywcze, a zabiera <strong>CO₂</strong> i zbędne produkty przemiany materii. Krew staje się odtlenowana (niebieska).'],
+   zg:['Żyły główne (górna i dolna)','Zbierają krew odtlenowaną z całego ciała i wprowadzają ją do prawego przedsionka — koniec obiegu dużego. Krew wraca pod niskim ciśnieniem; w żyłach kończyn pomagają zastawki żylne i praca mięśni.'],
+   ws:['Widok od przodu','Serce rysujemy tak, jakbyśmy patrzyli na człowieka stojącego przodem do nas: <strong>prawa</strong> połowa serca jest <strong>po lewej stronie rysunku</strong>. To częsta pułapka w zadaniach ze schematem!']};
+  var SEQ=['RA','zt','RV','tp','pl','zp','LA','zd','LV','ao','ci','zg'],MALY=['RV','tp','pl','zp','LA'],DUZY=['LV','ao','ci','zg','RA'];
+  var tools=H('div','bv-tools'),box=H('div','bio-svgbox'),info=BIO.fx.infoBox('Kliknij element schematu albo przejdź drogę krwi przyciskiem „krok”.');
+  el.appendChild(tools);el.appendChild(box);el.appendChild(info);
+  var defs=S('defs',{},[S('marker',{id:'kr-a-r',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:16,markerHeight:16,markerUnits:'userSpaceOnUse',orient:'auto'},[S('path',{d:'M0 0L10 5L0 10z',fill:O2})]),
+    S('marker',{id:'kr-a-b',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:16,markerHeight:16,markerUnits:'userSpaceOnUse',orient:'auto'},[S('path',{d:'M0 0L10 5L0 10z',fill:CO})])]);
+  function G(k,kids){var g=S('g',{'data-k':k,'class':'kr-el'},kids);return g}
+  function vessel(k,d,c,lab,lx,ly){var L=lab.split('|');return G(k,[S('path',{d:d,fill:'none',stroke:'transparent','stroke-width':22}),S('path',{d:d,fill:'none',stroke:c,'class':'kr-v','stroke-width':9,'stroke-linecap':'round','stroke-linejoin':'round','marker-end':'url(#kr-a-'+(c===O2?'r':'b')+')'})].concat(L.map(function(t,j){return T(lx,ly+j*22,t,{s:19,w:800,f:c})})))}
+  function room(k,x,y,w,h,c,bgc,l1,l2){return G(k,[S('rect',{x:x,y:y,width:w,height:h,rx:18,fill:bgc,stroke:c,'stroke-width':3}),T(x+w/2,y+h/2-11,l1,{s:19,w:800,f:c}),T(x+w/2,y+h/2+13,l2,{s:16,w:700,f:c})])}
+  function valve(k,x,y,c){return G(k,[S('path',{d:'M'+(x-16)+' '+(y-6)+'L'+x+' '+(y+8)+'L'+(x+16)+' '+(y-6),fill:'none',stroke:c,'stroke-width':4,'stroke-linejoin':'round'}),S('rect',{x:x-22,y:y-10,width:44,height:22,fill:'transparent'})])}
+  function alv(cx,cy){var g=S('g',{});for(var i=0;i<7;i++)g.appendChild(S('circle',{cx:cx-60+i*20,cy:cy+(i%2?6:-6),r:8,fill:'none',stroke:'var(--viz-line)','stroke-width':1.5}));return g}
+  var sv=svg(640,470,'Schemat serca i dwóch obiegów krwi',[defs,
+    G('pl',[S('rect',{x:200,y:16,width:240,height:74,rx:16,fill:'var(--viz-bg2)',stroke:'var(--viz-line)','stroke-width':2}),T(320,36,'PŁUCA',{s:20,w:800}),T(320,60,'oddaje CO₂, bierze O₂',{s:16,w:700}),alv(320,74)]),
+    G('ci',[S('rect',{x:200,y:390,width:240,height:68,rx:16,fill:'var(--viz-bg2)',stroke:'var(--viz-line)','stroke-width':2}),T(320,412,'NARZĄDY CIAŁA',{s:20,w:800}),T(320,438,'oddaje O₂, bierze CO₂',{s:16,w:700})]),
+    vessel('tp','M190 300 H112 V58 H192',CO,'tętnice|płucne',56,166),
+    vessel('zp','M448 58 H528 V205 H498',O2,'żyły|płucne',588,118),
+    vessel('ao','M498 300 H560 V424 H448',O2,'aorta',604,362),
+    vessel('zg','M192 424 H70 V205 H142',CO,'żyły główne',124,452),
+    room('RA',150,168,160,74,CO,COb,'PRAWY','PRZEDSIONEK'),room('RV',150,256,160,92,CO,COb,'PRAWA','KOMORA'),
+    room('LA',330,168,160,74,O2,O2b,'LEWY','PRZEDSIONEK'),S('g',{},[]),room('LV',330,256,168,96,O2,O2b,'LEWA KOMORA','(najgrubsza ściana)'),
+    valve('zt',230,249,CO),valve('zd',410,249,O2),
+    G('ws',[S('rect',{x:140,y:130,width:360,height:30,rx:15,fill:'var(--surface-soft)',stroke:'var(--viz-line)'}),T(320,145,'widok od przodu: prawa połowa serca po lewej',{s:15,w:800})])]);
+  box.appendChild(sv);
+  var show=BIO.fx.info(sv,info,M),i=-1,mode=null;
+  function dim(set){[].forEach.call(sv.querySelectorAll('.kr-el'),function(g){var k=g.getAttribute('data-k');g.style.opacity=!set||set.indexOf(k)>=0||k==='ws'?1:.22})}
+  function krok(){mode=null;dim(null);i=(i+1)%SEQ.length;var k=SEQ[i];show(k,sv.querySelector('[data-k="'+k+'"]'));info.innerHTML='<b>Krok '+(i+1)+' z '+SEQ.length+': '+M[k][0]+'</b>'+M[k][1]}
+  function obieg(set,t,d){i=-1;mode=set;dim(set);info.className='bv-info';info.innerHTML='<b>'+t+'</b>'+d}
+  tools.appendChild(btn('▶ krok',krok));
+  tools.appendChild(btn('obieg mały (płucny)',function(){obieg(MALY,'Obieg mały (płucny)','prawa komora → tętnice płucne → naczynia włosowate płuc → żyły płucne → lewy przedsionek. Cel: <strong>wymiana gazowa</strong> — krew pozbywa się CO₂ i zabiera O₂.')}));
+  tools.appendChild(btn('obieg duży (ustrojowy)',function(){obieg(DUZY,'Obieg duży (ustrojowy)','lewa komora → aorta → tętnice → naczynia włosowate narządów → żyły → żyły główne → prawy przedsionek. Cel: <strong>zaopatrzenie tkanek</strong> w O₂ i składniki odżywcze, odbiór CO₂ i zbędnych produktów.')}));
+  tools.appendChild(btn('od początku',function(){i=-1;dim(null);info.className='bv-info';info.textContent='Kliknij element schematu albo przejdź drogę krwi przyciskiem „krok”.'}));
+  if(o.start==='maly')tools.children[1].click();else if(o.start==='duzy')tools.children[2].click()}});
+
+/* ---- grupy krwi: zgodność dawca → biorca (ABO + Rh), aglutynacja (2026-10-11) ---- */
+BIO.define('transfuzja',{opis:'Zgodność krwi w modelu szkolnym: wybierz grupę dawcy i biorcy (ABO, Rh); antygeny na krwinkach dawcy vs przeciwciała w osoczu biorcy → zgodna / aglutynacja; tabela wszystkich par',
+mount:function(el,o){
+  var GR=['0','A','B','AB'],AG={'0':[],A:['A'],B:['B'],AB:['A','B']},AB={'0':['A','B'],A:['B'],B:['A'],AB:[]};
+  var d={g:o.dawca||'A',rh:'+'},b={g:o.biorca||'B',rh:'+'};
+  var t1=H('div','bv-tools'),t2=H('div','bv-tools'),box=H('div','bio-svgbox'),out=H('div','bv-info'),tb=H('div');
+  el.appendChild(t1);el.appendChild(t2);el.appendChild(box);el.appendChild(out);el.appendChild(tb);
+  function wybor(row,lab,X){clr(row);row.appendChild(H('b',null,lab));GR.forEach(function(g){var x=btn(g,function(){X.g=g;rys()});if(X.g===g)x.classList.add('on');row.appendChild(x)});
+   ['+','−'].forEach(function(r){var x=btn('Rh'+r,function(){X.rh=r;rys()});if(X.rh===r)x.classList.add('on');row.appendChild(x)})}
+  function agMark(a,x,y){return a==='A'?S('path',{d:'M'+x+' '+(y-7)+'L'+(x+7)+' '+(y+5)+'L'+(x-7)+' '+(y+5)+'z',fill:'var(--ag-a)'}):a==='B'?S('rect',{x:x-6,y:y-6,width:12,height:12,fill:'var(--ag-b)'}):S('circle',{cx:x,cy:y,r:6,fill:'var(--ag-d)'})}
+  function cell(cx,cy,ags,lump){var g=S('g',{transform:lump?'translate('+lump+')':''},[S('ellipse',{cx:cx,cy:cy,rx:30,ry:24,fill:'var(--blood-o2-bg)',stroke:'var(--blood-o2)','stroke-width':2.5}),S('ellipse',{cx:cx,cy:cy,rx:13,ry:9,fill:'none',stroke:'var(--blood-o2)','stroke-opacity':.4})]);
+   var AN=[-2.2,-1.1,0,1.1];ags.forEach(function(a,i){g.appendChild(agMark(a,cx+31*Math.cos(AN[i]),cy+25*Math.sin(AN[i])))});return g}
+  function przeciw(x,y,a){var c=a==='A'?'var(--ag-a)':a==='B'?'var(--ag-b)':'var(--ag-d)';return S('g',{},[S('path',{d:'M'+x+' '+(y+12)+'V'+y+'L'+(x-7)+' '+(y-9)+'M'+x+' '+y+'L'+(x+7)+' '+(y-9),fill:'none',stroke:c,'stroke-width':3,'stroke-linecap':'round'}),T(x,y+26,'anty-'+a,{s:13,w:800,f:c})])}
+  function zgodna(D,B){var bad=AG[D.g].filter(function(a){return AB[B.g].indexOf(a)>=0}),rh=D.rh==='+'&&B.rh==='−';return {ok:!bad.length&&!rh,bad:bad,rh:rh}}
+  function rys(){wybor(t1,'Dawca:',d);wybor(t2,'Biorca:',b);clr(box);var z=zgodna(d,b),ags=AG[d.g].concat(d.rh==='+'?['D']:[]),abs=AB[b.g];
+   var s=svg(640,200,'Krwinki dawcy w osoczu biorcy',[S('rect',{x:10,y:10,width:620,height:180,rx:16,fill:'var(--viz-bg2)',stroke:'var(--viz-line)'}),T(165,30,'krwinki dawcy '+d.g+' Rh'+d.rh,{s:15,w:800}),T(480,30,'osocze biorcy '+b.g+' Rh'+b.rh,{s:15,w:800})]);
+   var off=z.ok?[[80,100],[170,125],[255,95],[115,155],[230,152]]:[[150,108],[178,118],[162,140],[134,134],[190,146]];
+   off.forEach(function(p){s.appendChild(cell(p[0],p[1],ags))});
+   if(!abs.length&&b.rh==='+')s.appendChild(T(480,105,'brak anty-A i anty-B',{s:14,w:700,f:'var(--viz-mut)'}));
+   abs.forEach(function(a,i){s.appendChild(przeciw(430+i*80,95,a))});if(b.rh==='−')s.appendChild(przeciw(430+abs.length*80,95,'D'));
+   if(b.rh==='−')s.appendChild(T(480,150,'anty-D — dopiero po uczuleniu',{s:13,w:700,f:'var(--viz-mut)'}));
+   s.appendChild(T(165,56,'▲ A   ■ B   ● D (Rh)',{s:16,w:800,f:'var(--viz-mut)'}));s.appendChild(T(400,182,z.ok?'krwinki pływają swobodnie':'krwinki zlepiają się (aglutynacja)',{s:15,w:800,f:z.ok?'var(--c-basic)':'var(--c-error)'}));
+   box.appendChild(s);
+   out.className='bv-info '+(z.ok?'ok':'bad');
+   out.innerHTML=z.ok?'<b>Zgodna (model szkolny)</b>Na krwinkach dawcy nie ma antygenu, na który biorca ma przeciwciała'+(d.rh==='−'||b.rh==='+'?'; czynnik Rh nie przeszkadza.':'.')+' W szpitalu i tak przetacza się krew tej samej grupy i wykonuje próbę krzyżową.':
+    '<b>Niezgodna</b>'+(z.bad.length?'Przeciwciała <strong>anty-'+z.bad.join(' i anty-')+'</strong> w osoczu biorcy rozpoznają antygeny '+z.bad.join(' i ')+' na krwinkach dawcy → <strong>aglutynacja</strong> (zlepianie) i rozpad krwinek. ':'')+
+    (z.rh?'Biorca Rh− nie ma antygenu D; krew Rh+ <strong>uczula</strong> go — powstają przeciwciała anty-D, a kolejne przetoczenie (lub ciąża z płodem Rh+) grozi reakcją. ':'');
+   var h='<table class="bv-tab" style="width:100%;border-collapse:collapse;margin-top:8px;font-size:13px"><tr><th style="padding:4px">dawca ↓ / biorca →</th>'+GR.map(function(g){return '<th style="padding:4px">'+g+'</th>'}).join('')+'</tr>';
+   GR.forEach(function(x){h+='<tr><th style="padding:4px">'+x+'</th>'+GR.map(function(y){var ok=zgodna({g:x,rh:'−'},{g:y,rh:'−'}).ok;return '<td align="center" style="padding:4px;'+(x===d.g&&y===b.g?'outline:2px solid var(--accent);':'')+'">'+(ok?'✔':'✘')+'</td>'}).join('')+'</tr>'});
+   tb.innerHTML=h+'</table><small>Tabela ABO (bez Rh): ✔ — zgodna w modelu szkolnym. Grupa 0 „pasuje” do wszystkich, AB przyjmuje od wszystkich — tylko w tym uproszczeniu.</small>'}
+  rys()}});
+
 })();

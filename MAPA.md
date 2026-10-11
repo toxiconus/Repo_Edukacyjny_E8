@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 160 KB)
+## .  (8 pl., 161 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 12 KB
@@ -64,8 +64,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
 ## biologia/bio  (2 pl., 10 KB)
-- `BIO_KATALOG.md` 6 KB
-- `PRZEKAZANIE.md` 3 KB
+- `BIO_KATALOG.md` 7 KB
+- `PRZEKAZANIE.md` 4 KB
 
 ## biologia/bio/md  (3 pl., 150 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 37 KB
@@ -76,9 +76,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 212 KB)
+## biologia/bio/szablon  (5 pl., 224 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 154 KB
+- ⚠`bio-viz.js` 166 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
@@ -156,7 +156,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 109 KB)
+## chemia/che-modular  (13 pl., 110 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -300,10 +300,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 135 KB)
+## chemia/che-modular/engine/src/lekcja  (4 pl., 149 KB)
 - `index.html` 1 KB
-- `lekcja.css` 4 KB
-- `lekcja.js` 2 KB
+- `lekcja.css` 10 KB
+- `lekcja.js` 9 KB
 - ⚠`rozszerzenia.js` 129 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
@@ -348,7 +348,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (16 pl., 984 KB)
+## chemia/che-modular/lessons-md/gotowe  (17 pl., 1020 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`F17_rownania_reakcji_i_obliczenia.md` 57 KB
 - ⚠`FIZ01_elektrostatyka.md` 55 KB
@@ -558,7 +558,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 66 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (23 pl., 301 KB)
+## chemia/plany/audyty  (24 pl., 316 KB)
 - (zwinięte; `ls chemia/plany/audyty`)
 
 ## chemia/plany/narzedzia  (3 pl., 50 KB)
@@ -818,7 +818,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## szablon/motywy  (5 pl., 20 KB)
 - `ang.css` 2 KB
-- `bio.css` 11 KB
+- `bio.css` 12 KB
 - `che.css` 2 KB
 - `oli.css` 3 KB
 - `pol.css` 2 KB

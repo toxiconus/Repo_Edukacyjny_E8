@@ -119,3 +119,9 @@ animation:bio-drift 60s linear infinite}
 
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#6fcf9f;--accent-dark:#a8e6c6;--accent-soft:#16281f;--accent-line:#2c5541;--accent-glow:rgba(111,207,159,.2);--hl-key:#86d9ad;--hl-key-bg:#1a3226;--hl-formula:#a8e6c6;--hl-formula-bg:#16281f;--viz-ink:#e6ebf0;--viz-mut:#9aa6b2;--viz-line:#34404c;--viz-bg:#19212a;--viz-bg2:#1f2832;}}
 :root[data-theme=dark]{--accent:#6fcf9f;--accent-dark:#a8e6c6;--accent-soft:#16281f;--accent-line:#2c5541;--accent-glow:rgba(111,207,159,.2);--hl-key:#86d9ad;--hl-key-bg:#1a3226;--hl-formula:#a8e6c6;--hl-formula-bg:#16281f;--viz-ink:#e6ebf0;--viz-mut:#9aa6b2;--viz-line:#34404c;--viz-bg:#19212a;--viz-bg2:#1f2832;}
+
+/* krew i grupy krwi (krazenie-obiegi, transfuzja) */
+:root{--blood-o2:#c62828;--blood-o2-bg:#fde8e8;--blood-co2:#1f5fae;--blood-co2-bg:#e7effb;--ag-a:#c2410c;--ag-b:#7c3aed;--ag-d:#0f766e}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}}
+:root[data-theme=dark]{--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}
+.kr-el.sel .kr-v{stroke-width:14}.kr-el{transition:opacity .25s}
