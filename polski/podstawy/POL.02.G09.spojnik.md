@@ -5,7 +5,7 @@ tytul: Spójnik
 lead: Łączy wyrazy i zdania: i, ale, więc, że, bo, gdy — i decyduje o przecinku.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G15, G16
-stan: W1 — GPT-6, 2026-10-09; kontrola zewnętrzna treści i kluczy; wersja 3.1
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykłady, nie-myl, klinika, ciekawostki, warstwa olimpijska, test, słownik, fiszki); wcześniej W1 — GPT-6, 2026-10-09; do recenzji W1 FULL
 utworzono: 2026-10-09
 wersja: 3.0
 poziom: [[poziom:SP]] [[LKO]]
@@ -32,6 +32,20 @@ Potrafię rozpoznać, jaki związek między zdaniami tworzy spójnik.
 | współrzędny przeciwstawny | kontrast | a, ale, lecz, jednak, natomiast, zaś, tylko | *Chciał iść, ale padało.* |
 | współrzędny wynikowy | skutek | więc, zatem, dlatego, toteż, przeto | *Padało, więc został.* |
 | podrzędny | zależność | że, żeby, aby, bo, ponieważ, gdyż, jeśli, jeżeli, gdyby, gdy, kiedy, choć, chociaż, mimo że, zanim | *Wiem, że przyjdzie.* |
+
+## Wykład — spójnik od zera {#wyklad}
+
+::: karta understand | Wykład — spójnik, czyli klej zdań
+Spójnik to najmniejszy, ale jeden z najważniejszych wyrazów w tekście. Niczego nie nazywa, nie odpowiada na żadne pytanie i się nie odmienia — **łączy**. Raz łączy wyrazy (*Kajko **i** Kokosz*), raz całe zdania (*Padało, **więc** zostaliśmy*). A przy okazji mówi, **jaki związek** zachodzi między połączonymi elementami: dodanie (*i*), wybór (*albo*), przeciwieństwo (*ale*), skutek (*więc*), przyczynę (*bo*), warunek (*jeśli*), cel (*żeby*), przyzwolenie (*chociaż*).
+
+Najważniejszy podział to **współrzędne** i **podrzędne**. Spójnik współrzędny łączy elementy równorzędne — każde ze zdań może stać samo: *Padało. Zostaliśmy.* → *Padało, więc zostaliśmy.* Spójnik podrzędny wprowadza zdanie zależne, które odpowiada na pytanie zadane od drugiego: *Zostaliśmy (dlaczego?), bo padało.* Wśród współrzędnych rozróżniamy cztery grupy: **łączne** (*i, oraz, ani*), **rozłączne** (*lub, albo, czy, bądź*), **przeciwstawne** (*a, ale, lecz, jednak, natomiast*) i **wynikowe** (*więc, zatem, dlatego, toteż*).
+
+Dlaczego spójnik jest tak ważny na egzaminie? Bo **decyduje o przecinku**. Przecinek stawiamy przed spójnikami przeciwstawnymi i wynikowymi, przed każdym spójnikiem podrzędnym i przed powtórzonym spójnikiem (*ani…, ani…*). Nie stawiamy go przed pojedynczym *i, oraz, lub, albo, ani, czy* — chyba że przecinek „należy” do czegoś innego, np. zamyka wtrącenie: *Łucja weszła do szafy, która stała w pokoju, i znalazła Narnię*. Przy spójnikach złożonych (*mimo że, chyba że, podczas gdy*) przecinek idzie przed całość: *Poszedł, mimo że padało.*
+
+Uwaga na sobowtóry. *Który, jaki, kto, co, gdzie* też łączą zdania, ale to **zaimki względne** — zastępują wyraz i są częścią zdania podrzędnego. *Że, bo, gdy* niczego nie zastępują — to spójniki. *Czy* bywa partykułą (*Czy przyjdziesz?*) albo spójnikiem (*Nie wiem, czy przyjdzie*). Spójniki z cząstką *-by* (*żeby, aby, gdyby, jakby*) piszemy łącznie.
+
+Dobór spójnika to także sprawa stylu: w wypracowaniu spójniki budują logikę argumentu — *ponieważ* (przyczyna), *dlatego* (wniosek), *jednak* (kontrargument), *ponadto* (kolejny argument). Kto zna spójniki, ten pisze spójnie — stąd zresztą ich nazwa.
+:::
 
 ## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
 
@@ -71,6 +85,10 @@ Wyjątek: przecinek przed *i* zamyka **wtrącenie** albo zdanie podrzędne: *Wsz
 **Spójnik na początku zdania złożonego:** przecinek między zdaniami: *Ponieważ padało, zostaliśmy.* *Gdy wrócił, było ciemno.*
 
 **Pisownia i rozpoznawanie form:** zapisujemy łącznie spójniki *żeby, aby, ażeby, gdyby, jakby, choćby* oraz partykułę w wyrazach typu *czyżby*. Nie należy jednak przenosić tej reguły na każde połączenie spójnika z cząstką *by*: w konstrukcji *Zastanawiam się, czy by nie wyjechać* zapis jest rozdzielny. Od 2026 r. rozdzielnie zapisuje się cząstki *-bym, -byś, -by, -byśmy, -byście* występujące po spójnikach, np. *czy by*, *że by* w konstrukcji, w której *że* jest spójnikiem, a *by* odrębną cząstką.
+
+::: karta understand | W skrócie — przecinek w trzech pytaniach
+Przed spójnikiem zapytaj: **1)** Czy to spójnik przeciwstawny, wynikowy albo wyjaśniający (*ale, lecz, a, więc, zatem, czyli*)? → przecinek. **2)** Czy zaczyna się tu zdanie podrzędne (*że, bo, gdy, jeśli, żeby, choć*)? → przecinek przed spójnikiem (a jeśli podrzędne stoi na początku — po nim). **3)** Czy to pojedyncze *i, oraz, lub, albo, ani, czy* łączące równorzędne elementy? → bez przecinka — chyba że spójnik się powtarza (*i…, i…*) albo przecinek zamyka wtrącenie. Ten sam wyraz *a* zawsze dostaje przecinek, nawet gdy znaczy „i”: *Ja czytam, a on pisze.*
+:::
 
 ## 6 | Przykłady z lektur [[basic:E8]]
 
@@ -116,6 +134,10 @@ Wyjątek: przecinek przed *i* zamyka **wtrącenie** albo zdanie podrzędne: *Wsz
 
 **A6.** Zapisz poprawnie: *(że by) zdążyć, (gdy by) padało*.  
 **Klucz:** żeby, gdyby.
+
+::: karta understand | W skrócie — spójnik czy zaimek względny?
+Zrób test zastąpienia: zaimek względny da się zamienić na rzeczownik, do którego się odnosi, i pełni w zdaniu podrzędnym jakąś funkcję. *Szafa, **którą** odkryła Łucja…* → *Łucja odkryła **szafę*** — *którą* jest dopełnieniem, więc to zaimek. *Wiem, **że** przyjdzie* → *że* niczego nie zastępuje i nie jest żadną częścią zdania — spójnik. Podobnie *gdzie, kiedy, jak* bywają zaimkami (okolicznik w zdaniu podrzędnym: *Wiem, gdzie mieszka*), a *gdy, jeśli, bo* — zawsze spójnikami.
+:::
 
 ## 9 | Ćwiczenia B — trening i C — konkurs [[exam:KONKURS]]
 
@@ -324,6 +346,215 @@ Popraw interpunkcję i opisz relacje: „Kiedy skończyłem czytać książkę o
 Umiem wskazać spójnik, nazwać relację znaczeniową, odróżnić współrzędność od podrzędności, stawiać przecinki na granicach zdań składowych, rozpoznać powtórzone spójniki oraz odróżnić *że/czy* od zaimka względnego *który*.
 
 
+## 15 | Nie myl! {#nie-myl}
+
+::: nie-myl | Spójnik czy coś innego?
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| *że* / *który* | oba wprowadzają zdanie podrzędne | *który* zastępuje rzeczownik i jest częścią zdania — zaimek; *że* — spójnik |
+| *Czy przyjdziesz?* / *Nie wiem, czy przyjdziesz.* | ten sam wyraz | pytanie bezpośrednie — partykuła; zdanie zależne — spójnik |
+| *a* (*ja i ty*) / *a* (*ja, a ty nie*) | *a* ma dwa znaczenia | łączne i przeciwstawne — **oba z przecinkiem** przy łączeniu zdań |
+| *biały jak śnieg* / *Zrobił tak, jak chciał.* | ten sam *jak* | porównanie bez czasownika — bez przecinka; wprowadza zdanie — przecinek |
+| *żeby* / *że by* | brzmią tak samo | spójnik celu/życzenia — łącznie (*Chcę, żebyś przyszedł*); *że* + cząstka trybu — sprawdź konstrukcję |
+| *więc* / *więcej* | podobny wygląd | *więc* — spójnik wynikowy; *więcej* — stopień wyższy od *dużo* |
+:::
+
+## 16 | Klinika — dodatkowe błędy {#klinika-plus}
+
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| Lubię zarówno kino jak i teatr. | Lubię zarówno kino, jak i teatr. | Przed drugim członem *zarówno…, jak i…* stawiamy przecinek. |
+| Ja czytam a on pisze. | Ja czytam, a on pisze. | Przed *a* łączącym zdania — przecinek. |
+| Był silny, jak lew. | Był silny jak lew. | Porównanie bez czasownika — bez przecinka. |
+| Wolę iść niż czekać. | Wolę iść, niż czekać. | *Niż* przed bezokolicznikiem tworzy człon zdaniowy — przecinek (por. *wyższy niż ja* — bez). |
+| Przyjdę chyba, że zachoruję. | Przyjdę, chyba że zachoruję. | Spójnik złożony *chyba że* — przecinek przed całością. |
+| Zostań aż wrócę. | Zostań, aż wrócę. | *Aż* wprowadza zdanie podrzędne czasu. |
+:::
+
+## 17 | Ciekawostki {#ciekawostki}
+
+::: karta extra | „Iż” — urzędowy brat „że”
+*Iż* znaczy to samo co *że*, ale brzmi oficjalnie i książkowo: *Oświadczam, iż…*. Bywa używany, by uniknąć powtórzenia: *Myślę, że wiesz, iż…* Dawniej był bardzo częsty; dziś trzyma się głównie w języku urzędowym i prawniczym.
+:::
+
+::: karta extra | & — spójnik, który stał się znakiem
+Znak **&** (ampersand) to dawna ligatura liter łacińskiego spójnika *et* („i”) — skrybowie zapisywali je jednym pociągnięciem pióra. Dziś & spotkasz w nazwach firm i tytułach, ale w polskim tekście szkolnym zastępujemy go zwykłym *i*.
+:::
+
+::: karta extra | Czy można zacząć zdanie od „bo”?
+Gramatycznie tak — w dialogu i mowie potocznej to zupełnie naturalne (*— Czemu płaczesz? — Bo się przewróciłem.*). W wypracowaniu zdanie zaczynające się od *Bo…* brzmi jednak potocznie, bo zdanie podrzędne zostaje bez nadrzędnego. Bezpieczniej: *Ponieważ…, …* albo połączyć je z poprzednim zdaniem.
+:::
+
+::: karta extra | Ni, ani, i — przeczenie w spójniku
+Dawne *ni* (*ni to, ni owo*) przetrwało w utartych zwrotach; dziś w tej roli występuje *ani*, które łączy elementy w zdaniu przeczącym: *Nie lubię ani mleka, ani kawy*. Przed pojedynczym *ani* przecinka nie stawiamy (*Nie jadł ani nie pił*), przed powtórzonym — tak.
+:::
+
+## 18 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — trudne przecinki przy spójnikach
+**Zarówno…, jak i…** — przecinek przed *jak i*: *zarówno uczniowie, jak i nauczyciele*. **Nie tylko…, lecz/ale także…** — przecinek przed drugim członem. **Jak** i **niż** — bez przecinka, gdy porównują części zdania bez czasownika (*szybki jak wiatr, starszy niż ja*); z przecinkiem, gdy wprowadzają zdanie lub bezokolicznik (*Zrobiłem tak, jak prosiłeś; Wolę zginąć, niż się poddać* — przy *niż* + bezokolicznik sprawdź regułę w słowniku interpunkcyjnym PWN). **Spójniki złożone** (*mimo że, chyba że, zwłaszcza że, podczas gdy, dlatego że*) — przecinek przed całością; rozdzielenie *dlatego, że* tylko przy akcencie na *dlatego*. **I to, a więc, czyli** — wprowadzają dopowiedzenie i dostają przecinek: *Przyszedł, i to wcześnie.* **Spójnik po wtrąceniu** — przecinek przed *i* bywa przecinkiem zamykającym wtrącenie, nie „przecinkiem przed i”.
+:::
+
+::: adv | Zadanie O1 (5 pkt) — przecinki | poziom ambitny (konkurs)
+Wstaw przecinki tam, gdzie są potrzebne.
+
+1. Lubię zarówno Narnię jak i Śródziemie.
+2. Był odważny jak lew.
+3. Wolał milczeć niż kłamać.
+4. Przyjdę chyba że będzie padać.
+5. Wrócił późno i to bardzo zmęczony.
+
+::: odp | Pokaż klucz
+1. *Narnię, jak i Śródziemie* 2. bez przecinka 3. *milczeć, niż kłamać* 4. *Przyjdę, chyba że* 5. *późno, i to bardzo zmęczony*. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — jaka relacja? | poziom ambitny (konkurs)
+Nazwij relację, którą tworzy spójnik.
+
+1. Zostanę, jeśli mnie poprosisz.
+2. Choć był zmęczony, pomógł nam.
+3. Uczył się, żeby zdać egzamin.
+4. On czyta, podczas gdy ja sprzątam.
+
+::: odp | Pokaż klucz
+1. warunek 2. przyzwolenie 3. cel 4. przeciwstawienie / równoczesność (spójnik złożony *podczas gdy*). Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — spójnik, zaimek czy partykuła? | poziom ambitny (konkurs)
+Określ część mowy wyróżnionego wyrazu.
+
+1. Nie wiem, **gdzie** mieszka.
+2. Zadzwoń, **gdy** wrócisz.
+3. **Czy** to prawda?
+4. Zapytał, **czy** to prawda.
+
+::: odp | Pokaż klucz
+1. zaimek względny (okolicznik miejsca w zdaniu podrzędnym) 2. spójnik 3. partykuła 4. spójnik. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O4 (4 pkt) — połącz zdania | poziom ambitny (konkurs)
+Połącz zdania *Bilbo bał się smoka. Wszedł do jaskini.* tak, by wyrazić kolejno: przeciwstawienie, przyzwolenie, wynik (zmień treść, jeśli trzeba), przyczynę (zmień treść, jeśli trzeba).
+
+::: odp | Pokaż klucz
+np. *Bilbo bał się smoka, ale wszedł do jaskini.* / *Choć Bilbo bał się smoka, wszedł do jaskini.* / *Bilbo bał się smoka, więc długo czekał przed jaskinią.* / *Bilbo wszedł do jaskini, bo chciał pomóc krasnoludom.* Po 1 pkt za poprawny spójnik i przecinek.
+:::
+:::
+
+::: adv | Zadanie O5 (4 pkt) — znajdź błędy | poziom ambitny (konkurs)
+*Nie lubię ani zupy ani kaszy, a mimo, że jestem głodny nic nie zjem. Chcę że by wszyscy wiedzieli.*
+
+::: odp | Pokaż klucz
+*ani zupy, ani kaszy* (1) · *mimo że* bez przecinka w środku (1) · *…głodny, nic nie zjem* — zamknięcie zdania podrzędnego (1) · *Chcę, żeby wszyscy wiedzieli* — przecinek i pisownia łączna (1).
+:::
+:::
+
+## 19 | Test sprawdzający {#test}
+
+::: test
+? Który wyraz jest spójnikiem przeciwstawnym?
++ lecz
+- lub
+- więc
+- oraz
+! *Lecz* wyraża kontrast; *lub* — wybór, *więc* — wynik, *oraz* — dodanie.
+? W którym zdaniu przecinek jest błędny?
++ Kupiłem chleb, i masło.
+- Chciałem przyjść, ale zaspałem.
+- Wiem, że przyjdzie.
+- Ponieważ padało, zostaliśmy.
+! Przed pojedynczym *i* łączącym wyrazy nie stawiamy przecinka.
+? „Wiem, że przyjdzie” — wyraz „że” to:
++ spójnik podrzędny
+- zaimek względny
+- partykuła
+- spójnik współrzędny
+! Wprowadza zdanie zależne i niczego nie zastępuje.
+? Gdzie postawisz przecinek w zdaniu „Poszedł mimo że padało”?
++ przed „mimo”
+- po „mimo”
+- przed „padało”
+- nigdzie
+! Przecinek przed całym spójnikiem złożonym.
+? Która pisownia jest poprawna?
++ żebyś
+- że byś
+- żeb yś
+- żeby byś
+! Spójnik *żeby* z końcówką osobową piszemy łącznie.
+? Spójnik „albo” wyraża:
++ wybór (rozłączny)
+- dodanie (łączny)
+- kontrast (przeciwstawny)
+- skutek (wynikowy)
+! *Herbata albo kawa* — jedno z dwojga.
+? Które zdanie jest złożone podrzędnie?
++ Zostaliśmy, bo padało.
+- Padało, więc zostaliśmy.
+- Padało i zostaliśmy.
+- Padało, ale wyszliśmy.
+! *Bo padało* odpowiada na pytanie *dlaczego?* — zależy od zdania nadrzędnego.
+? Gdzie przecinek? „Nie lubił ani mleka ani kawy.”
++ przed drugim „ani”
+- przed pierwszym „ani”
+- przed oboma „ani”
+- nigdzie
+! Przy powtórzonym spójniku przecinek stoi przed drugim członem.
+? Które zdanie jest poprawne? (poziom ambitny)
++ Lubię zarówno kino, jak i teatr.
+- Lubię zarówno kino jak i teatr.
+- Lubię, zarówno kino jak i teatr.
+- Lubię zarówno, kino jak i teatr.
+! W konstrukcji *zarówno…, jak i…* przecinek przed *jak i*.
+? Gdzie NIE stawiamy przecinka przed „jak”? (poziom ambitny)
++ Był biały jak śnieg.
+- Zrobił tak, jak chciał.
+- Opowiedział, jak było.
+- Pokaż, jak to działa.
+! Porównanie bez czasownika — bez przecinka.
+:::
+
+## 20 | Słownik pojęć {#slownik}
+
+::: slownik
+spójnik :: nieodmienna część mowy łącząca wyrazy lub zdania; nie jest częścią zdania.
+spójnik współrzędny :: łączy elementy równorzędne: łączny, rozłączny, przeciwstawny, wynikowy.
+spójnik podrzędny :: wprowadza zdanie zależne: że, bo, gdy, jeśli, żeby, choć, ponieważ.
+spójnik łączny :: dodanie: i, oraz, ani.
+spójnik rozłączny :: wybór: lub, albo, czy, bądź.
+spójnik przeciwstawny :: kontrast: a, ale, lecz, jednak, natomiast.
+spójnik wynikowy :: skutek: więc, zatem, dlatego, toteż.
+spójnik złożony :: kilkuwyrazowy: mimo że, chyba że, podczas gdy — przecinek przed całością.
+spójnik powtarzany :: i…, i…; ani…, ani…; zarówno…, jak i… — przecinek przed drugim członem.
+zaimek względny :: łączy zdania jak spójnik, ale zastępuje wyraz i jest częścią zdania podrzędnego (który, jaki).
+:::
+
+## 21 | Fiszki interaktywne {#fiszki}
+
+::: fiszki
+Czy spójnik jest częścią zdania? | nie | basic:spojnik
+Cztery rodzaje współrzędnych | łączne, rozłączne, przeciwstawne, wynikowe | basic:spojnik
+Przecinek przed *i*? | nie (chyba że zamyka wtrącenie lub *i* jest powtórzone) | basic:spojnik
+Przecinek przed *ale, lecz, więc*? | tak | basic:spojnik
+Przecinek przed *że, bo, gdy*? | tak | basic:spojnik
+*mimo że* — gdzie przecinek? | przed *mimo* | basic:spojnik
+*który* — spójnik? | nie, zaimek względny | basic:spojnik
+*czy* w pytaniu? | partykuła | basic:spojnik
+*żeby* — pisownia? | łącznie | basic:spojnik
+*ani…, ani…* — przecinek? | przed drugim *ani* | basic:spojnik
+Spójnik podrzędny na początku zdania — przecinek? | między zdaniami | basic:spojnik
+Przykład spójnika wynikowego | więc, dlatego, zatem | basic:spojnik
+*zarówno…, jak i…* | przecinek przed *jak i* | olimpijski:spojnik
+*biały jak śnieg* | bez przecinka — porównanie bez czasownika | olimpijski:spojnik
+*Wolę iść, niż czekać* | przecinek — *niż* przed bezokolicznikiem | olimpijski:spojnik
+*chyba że* | przecinek przed całością: *Przyjdę, chyba że…* | olimpijski:spojnik
+*i to* | dopowiedzenie — przecinek: *Przyszedł, i to wcześnie* | olimpijski:spojnik
+*iż* | urzędowy odpowiednik *że* | olimpijski:spojnik
+:::
+
 ## AUDYT W1 — wynik (GPT-6, 2026-10-09)
 
 - Usunięto nadmierne uogólnienie, jakoby każda sekwencja „że by/gdy by” była błędną pisownią spójnika; odróżniono spójniki *żeby, gdyby* od konstrukcji składniowych z rozdzielnym *by*.
@@ -331,3 +562,9 @@ Umiem wskazać spójnik, nazwać relację znaczeniową, odróżnić współrzęd
 - Sprawdzono klucze interpunkcyjne, w tym przecinki przy zdaniach podrzędnych i wtrąceniach.
 
 **Źródła normatywne:** Rada Języka Polskiego PAN, „Zasady pisowni i interpunkcji polskiej” (https://rjp.pan.pl/zasady-pisowni-i-interpunkcji-polskiej-2/); CKE, informacja z 20.08.2025 r. — w latach 2026–2030 na egzaminach akceptowane są zasady dotychczasowe i nowe (https://bip.cke.gov.pl/attachments/download/10293).
+
+## ULEPSZENIE — Claude, 2026-10-11
+
+- Dodano: wykład „od zera” (po §1), 2 mini-wykłady „W skrócie” (przecinek w trzech pytaniach przed §6, spójnik czy zaimek przed §9), §15 nie-myl, §16 klinika (6 wierszy), §17 ciekawostki (4), §18 warstwa olimpijska (Dla olimpijczyka + O1–O5 z kluczami), §19 test (10), §20 słownik (10), §21 fiszki interaktywne (12 dotychczasowych + 6 olimpijskich). Nic nie usunięto.
+- Do weryfikacji: przecinek przed *niż* + bezokolicznik (słownik interpunkcyjny PWN); zapis cząstki *by* po spójnikach od 2026 r. (§5 — wg źródła RJP podanego w audycie).
+
