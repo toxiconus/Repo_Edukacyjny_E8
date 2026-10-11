@@ -15,6 +15,11 @@
 | REV01 | `BIO.00.REV01.organizacja_i_chemizm_zycia.md` | v1.0 (2026-10-08) — powtórka do konkursu LKO, etap szkolny pkt I: poziomy, mikroskop, organelle, typy komórek, transport, fotosynteza, oddychanie, fermentacja, czynności życiowe, 2 doświadczenia; źródło L001, L004–L008; test OK |
 | REV02 | `BIO.00.REV02.roznorodnosc_zycia.md` | v1.0 (2026-10-08) — powtórka do konkursu LKO, etap szkolny pkt II (kl. 5–6); treść nowa (podstawa 2024 + zakres LKO 2025/26), bez nowych grafik; test OK |
 
+## Stan 2026-10-11 (grafiki)
+- Lekcje `biologia/md` budowane `python3 narzedzia/lekcja_html.py -p bio <md>` → `biologia/html/`; wszystkie mają grafiki z `bio-viz.js` (poza L003). Nowe grafiki 2026-10-10: relacje-ekologiczne, konczyny-homologiczne, energia-materia, zrodla-zmiennosci, kontrola-podzialow, eutrofizacja, homeostaza, endosymbioza, hardy-weinberg (katalog `BIO_KATALOG.md`).
+- Test w przeglądarce: każda grafika 390/900 px bez błędów (skrypt jednorazowy w playwright; wzór: zrzut figury `[data-bio-viz]`, klik przycisków `.bv-btn`, `pageerror`).
+- Braki: wykład / mini-wykłady / ciekawostki (`python3 narzedzia/sprawdz_wyklady.py biologia/md`) → do napisania lub W1.
+
 ## Następne kroki
 0. **Priorytet konkursowy** (`olimpiada/PRIORYTETY.md`): zakres etapu szkolnego pokryty (REV01 + REV02). Dalej: etap rejonowy — organizm człowieka i homeostaza (źródło `biologia/md/BIO.01.L002.powtorka_czlowiek.md`). Builder: parser chemii brany z `chemia/archiwum/che_v0_59/narzedzia/md2html.py` (po reorganizacji chemii).
 1. L011 (DNA: chemia par, ekspresja) — źródło `biologia/md/L011_*.md` + `biologia/wizualizacje/BIO.011w…` (tylko treść); nowe grafiki: kodon/transkrypcja.

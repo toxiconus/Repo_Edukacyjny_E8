@@ -72,3 +72,4 @@
 - 2026-10-10 15:30 BIO: 4 nowe grafiki w bio-viz.js (relacje-ekologiczne L042 + roślinożerność w treści, konczyny-homologiczne L030, energia-materia L040, zrodla-zmiennosci L016A) z @opis; test w przeglądarce 390/900 px bez błędów.
 - 2026-10-10 16:20 BIO: grafiki kontrola-podzialow (L016), eutrofizacja (L043), homeostaza (L002) z @opis; test przeglądarki 390/900 bez błędów.
 - 2026-10-10 17:00 BIO: grafiki endosymbioza (L001A), hardy-weinberg (L090); istniejące grafiki w powtórkach L021, L032, L044, L050 i kod-genetyczny w L090; ulepszona siec-troficzna (puszczyk bez mylącej strzałki przez wilka, większe węzły i napisy); przebudowane wszystkie lekcje BIO, 0 błędów w przeglądarce.
+- 2026-10-11 06:30 Przekazanie: PRZEKAZANIE.md (repo) i biologia/bio/PRZEKAZANIE.md — stan po 2026-10-10 i kolejka.

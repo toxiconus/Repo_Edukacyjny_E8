@@ -1,6 +1,15 @@
-# PRZEKAZANIE — całe repo · 2026-10-09 (stan 12:40)
+# PRZEKAZANIE — całe repo · 2026-10-11 (stan 06:30)
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
+
+## ⚑ PRZEKAZANIE DLA NOWEGO WĄTKU (2026-10-11 06:30, wątek „W1 polski + grafiki BIO + silnik”) — AKTUALNE
+- **Gałąź `claude/che-lekcje`** (ostatni commit przed wpisem: 4b73b76). Start: `git pull --rebase --autostash`.
+- **Zrobione 2026-10-10:**
+  - W1 FULL polski: G10–G17, S01–S06 (wykłady, mini-wykłady, ciekawostki); BIO W1: L007–L010, L013 (FULL częściowo do §10), L031, REV01/REV02. Prompt `eksport/W1_PROMPT.md` pełny (zakres, horyzont, Khan i inne, wykład + mini + ciekawostki + własne przykłady, tryb tur), paczki do ~100 KB. Kontrola: `python3 narzedzia/sprawdz_wyklady.py <katalogi>`.
+  - Silnik CHE: martwe reguły CSS przycinane przy budowie profilu (`tools/css_martwe.py`), kontrola wyglądu `node tools/styl_odcisk.cjs --zapisz=/--porownaj=` (identyczny 390/1280); lekcje 20,96 → 20,31 MB. Dalej tylko ręcznie (arkusz 02_box-sizing ~47 KB/lekcję, użyte ~4 KB; bank widżetów 46 KB).
+  - BIO grafiki (bio-viz.js, katalog `biologia/bio/BIO_KATALOG.md`): relacje-ekologiczne (L042, quiz w L044), konczyny-homologiczne (L030, L032), energia-materia (L040, L044), zrodla-zmiennosci (L016A), kontrola-podzialow (L016), eutrofizacja (L043), homeostaza (L002), endosymbioza (L001A), hardy-weinberg (L090); istniejące w powtórkach L021, L032, L044, L050, L090; poprawiona siec-troficzna. Każda lekcja BIO w `biologia/md` ma grafikę (poza L003 diagnoza). Nowe grafiki w 3. IIFE bio-viz.js — używać `BIO.fx`, helpery S/H/T/svg/btn/fmt.
+- **Czeka na użytkownika:** odpowiedzi Perplexity do paczek `eksport/out/W1_POL_G01_G02_G03.md`, `…G04_G05_G06.md`, `…G07_G08_G09.md` (wysłane 2026-10-10 18:20; odtworzenie: `python3 eksport/w1_lekcje.py POL_G01_G02_G03 polski/podstawy/POL.02.G01*.md …`). Po odpowiedzi: wszystkie uwagi + wykład/mini/ciekawostki, odrzucone z powodem w „AUDYT W1”, surowa odpowiedź do `polski/plany/audyty/`, W1 FULL w `stan:` i `WERYFIKACJA.md`.
+- **Kolejka (propozycja z 2026-10-10):** (1) wprowadzić W1 G01–G09; (2) BIO: wykład/mini/ciekawostki — `sprawdz_wyklady.py biologia/md` zgłasza braki w 33 lekcjach; najpierw te z nowymi grafikami (L002, L016, L016A, L030, L040, L042, L043, L090) → paczki W1; (3) L013 W1 od §10, REV01/REV02/L010 wykłady; (4) olimpiada etap rejonowy: człowiek i homeostaza (grafiki: nefron, krążenie, odruch); (5) grafiki CHE/POL tylko gdy potrzebne; (6) scalić `claude/polski-spis`; (7) silnik CHE ręcznie (CSS 02_box-sizing, bank widżetów) z `styl_odcisk.cjs`.
 
 ## ⚑ PRZEKAZANIE DLA NOWEGO WĄTKU (2026-10-10 06:45, wątek „grafiki + polski G12”)
 - **Wszystko na `claude/che-lekcje`** (ostatni commit przed tym wpisem: 7398123). Przed pracą: `git pull --rebase --autostash`.
