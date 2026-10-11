@@ -16,9 +16,9 @@
 
 - zestaw 5 (62 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U10 biologia/bio/md/BIO.07.U10.uklad_dokrewny.md`
 
-**niski priorytet (W1 starym promptem) — 2 lekcji, 88 KB:** REV01 (35 KB) · REV02 (53 KB)
+**niski priorytet (W1 starym promptem) — 2 lekcji, 103 KB:** REV01 (43 KB) · REV02 (59 KB)
 
-**NIE wysyłać (W1 FULL) — 3 lekcji, 226 KB:** L010 (58 KB) · H01 (78 KB) · U04 (88 KB)
+**NIE wysyłać (W1 FULL) — 3 lekcji, 229 KB:** L010 (61 KB) · H01 (78 KB) · U04 (88 KB)
 
 ## chemia
 
@@ -30,7 +30,7 @@
 
 - zestaw 3 (34 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R03A chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
 
-**niski priorytet (W1 starym promptem) — 12 lekcji, 790 KB:** F01 (45 KB) · F02 (35 KB) · F03 (35 KB) · F04 (32 KB) · F05 (35 KB) · F06 (48 KB) · N01 (122 KB) · N02 (128 KB) · N03 (133 KB) · N04 (85 KB) · R03 (25 KB) · REV01 (61 KB)
+**niski priorytet (W1 starym promptem) — 12 lekcji, 827 KB:** F01 (52 KB) · F02 (43 KB) · F03 (43 KB) · F04 (32 KB) · F05 (35 KB) · F06 (55 KB) · N01 (122 KB) · N02 (128 KB) · N03 (133 KB) · N04 (85 KB) · R03 (33 KB) · REV01 (61 KB)
 
 **NIE wysyłać (W1 FULL) — 1 lekcji, 55 KB:** F17 (55 KB)
 
@@ -44,7 +44,7 @@
 
 - zestaw 3 (83 KB): `python3 eksport/paczka_ai.py ulepsz POL_G06_G09 polski/podstawy/POL.02.G06.imieslowy.md polski/podstawy/POL.02.G09.spojnik.md`
 
-**niski priorytet (W1 starym promptem) — 4 lekcji, 185 KB:** L002 (53 KB) · L003 (48 KB) · L004 (40 KB) · L006 (42 KB)
+**niski priorytet (W1 starym promptem) — 4 lekcji, 199 KB:** L002 (67 KB) · L003 (48 KB) · L004 (40 KB) · L006 (42 KB)
 
 **NIE wysyłać (W1 FULL) — 21 lekcji, 711 KB:** L001 (111 KB) · L005 (45 KB) · PL.G01 (47 KB) · G03 (60 KB) · G04 (69 KB) · G07 (48 KB) · G08 (35 KB) · G10 (31 KB) · G11 (25 KB) · G12 (58 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
 

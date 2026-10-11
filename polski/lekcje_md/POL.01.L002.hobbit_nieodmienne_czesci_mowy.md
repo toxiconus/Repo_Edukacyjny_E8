@@ -4,7 +4,7 @@ przedmiot: polski
 tytul: L002 – „Hobbit” i nieodmienne części mowy · Polski: Podstawa Plus
 stopka: L002 — „Hobbit” i nieodmienne części mowy · Polski: Podstawa Plus · v7.9 · 2026-09-11
 zrodlo: L002-PL-Hobbit-nieodmienne-czesci-mowy.html (konwersja html_do_md.py, 2026-10-09)
-stan: KONWERSJA Z HTML — sprawdzić odpowiedzi „DO UZUPEŁNIENIA” i grafiki GFX
+stan: ULEPSZONA — Claude, 2026-10-11 (2 wykłady, mini-wykład, nie-myl, ciekawostki, warstwa olimpijska, test, fiszki, słownik w blokach); W1 starym promptem — do zewnętrznej recenzji W1 (pełny prompt)
 ---
 Polski: Podstawa Plus · Lekcja 2
 
@@ -117,6 +117,18 @@ Lista lektur i zasady korzystania z fragmentów bywają aktualizowane. Informato
 
 **Wskazówka:** nie ucz się streszczenia na pamięć. Ucz się <em>scen i motywów</em> — one przydają się w każdej rozprawce. Zawsze odróżniaj fakt fabularny od interpretacji.
 
+:::
+
+## 0.5 | Wykład — „Hobbit” od zera {#wyklad-lektura}
+
+::: karta understand | Wykład — tam i z powrotem: podróż, która zmienia
+J.R.R. Tolkien (1892–1973) był profesorem języka staroangielskiego w Oksfordzie i autorem wymyślonych języków. „Hobbita, czyli tam i z powrotem” wydał w 1937 r. — wyrósł z bajki opowiadanej własnym dzieciom. Bohaterem jest **Bilbo Baggins**, hobbit z Shire: mały, wygodny, przywiązany do fajki, herbatki i spokoju. Pewnego dnia czarodziej **Gandalf** i trzynastu krasnoludów pod wodzą **Thorina Dębowej Tarczy** wciągają go w wyprawę do **Samotnej Góry**, gdzie smok **Smaug** strzeże skarbu odebranego krasnoludom.
+
+Wyprawa to łańcuch prób: trolle, gobliny w Górach Mglistych, gdzie Bilbo w ciemności spotyka **Golluma** i znajduje **pierścień** (czyni niewidzialnym — to Jedyny Pierścień z „Władcy Pierścieni”), pająki w **Mrocznej Puszczy**, niewola u elfów, z której Bilbo uwalnia krasnoludy w beczkach. W Górze Bilbo rozmawia ze Smaugiem i dostrzega **odsłonięte miejsce na jego piersi**; tę wiadomość przenosi drozd do **Barda**, który zabija smoka **Czarną Strzałą**. Potem zaczyna się spór o skarb: Thorin, ogarnięty „smoczą chorobą” (chciwością), nie chce się dzielić; Bilbo oddaje oblegającym **Arcyklejnot**, by doprowadzić do zgody. Konflikt kończy **Bitwa Pięciu Armii**; umierający Thorin prosi Bilba o przebaczenie.
+
+Tytuł „tam i z powrotem” jest kluczem: Bilbo wraca do domu, ale jako ktoś inny. To klasyczny **bohater dynamiczny** — z kogoś, kto boi się wyjść z domu, staje się odważnym i rozsądnym człowiekiem (hobbitem!), który potrafi zrezygnować ze skarbu dla pokoju. Drugą przemianę przechodzi Thorin — późno, dopiero przed śmiercią.
+
+Do wypracowania „Hobbit” daje motywy: **podróż i dojrzewanie**, **odwaga mimo strachu**, **chciwość** (Smaug, Thorin), **przyjaźń i lojalność**, **spryt kontra siła** (zagadki z Gollumem, beczki). Na egzaminie pamiętaj o najczęstszej pułapce: **Bilbo nie zabił Smauga** — zrobił to Bard.
 :::
 
 ## 1. Treść lekturowa
@@ -526,6 +538,16 @@ Szybki przegląd motywów i ich powiązań w lekturze.
 - Bilbo vs Gollum
 - Bilbo vs Smaug
 
+## 4.9 | Wykład — nieodmienne części mowy od zera {#wyklad-czesci}
+
+::: karta understand | Wykład — małe słowa, które spinają zdanie
+W zdaniu „Bilbo **szybko** wszedł **do** jaskini, **ale** **nie** zobaczył smoka. **Ach!**” wyróżnione wyrazy nie zmieniają formy — nie odmieniają się przez przypadki, liczby ani osoby. To **nieodmienne części mowy**. Jest ich pięć i każda ma inne zadanie.
+
+**Przysłówek** (*szybko, tutaj, jutro, bardzo*) określa czasownik, przymiotnik lub inny przysłówek i odpowiada na pytania *jak? gdzie? kiedy? w jakim stopniu?*. Wiele przysłówków się stopniuje (*szybko — szybciej — najszybciej*), ale nie odmienia. W zdaniu jest zwykle **okolicznikiem**. **Przyimek** (*do, w, na, z, przed, spod*) sam nic nie znaczy — łączy się z rzeczownikiem lub zaimkiem i rządzi jego przypadkiem: *do jaskini* (dopełniacz), *w jaskini* (miejscownik). Tworzy **wyrażenie przyimkowe**. **Spójnik** (*i, ale, bo, że, więc*) łączy wyrazy lub zdania i decyduje o przecinku: przed *ale, bo, że* stawiamy przecinek, przed pojedynczym *i* — nie. **Partykuła** (*nie, czy, -by, niech, tylko, nawet*) zmienia znaczenie wypowiedzi: przeczy, pyta, wzmacnia, wyraża życzenie. **Wykrzyknik** (*ach, och, hej, brr*) wyraża emocje lub wezwania i często tworzy osobne wypowiedzenie, oddzielone przecinkiem lub wykrzyknikiem.
+
+Dwa miejsca sprawiają najwięcej kłopotów. **„Czy”** bywa partykułą (*Czy smok śpi?* — pytanie bezpośrednie) albo spójnikiem (*Nie wiem, czy smok śpi* — łączy zdania). **„Nie”** z czasownikami piszemy rozdzielnie (*nie wiedział, nie zobaczył*), poza czasownikami, które bez „nie” nie istnieją (*nienawidzić, niepokoić*). Kto rozpozna funkcję wyrazu w zdaniu, a nie tylko jego wygląd, rozwiąże te zadania bez wahania.
+:::
+
 ## 5. Nieodmienne części mowy — teoria
 
 ::: karta - | Czym są nieodmienne części mowy?
@@ -578,6 +600,10 @@ Wykrzyknik wyraża emocje · **ach, hej, hurra**
 - **Partykuła:** <em>Czy Thorin odzyska skarb?</em>
 - **Wykrzyknik:** <em>Ach, jaki ogromny skarb!</em>
 
+:::
+
+::: karta understand | W skrócie — jak rozpoznać nieodmienną część mowy w trzech pytaniach
+**1) Czy wyraz stoi przy rzeczowniku i rządzi jego przypadkiem?** (*do jaskini, przed bitwą*) → przyimek. **2) Czy łączy dwa wyrazy albo dwa zdania?** (*Bilbo i Thorin; bał się, ale wszedł*) → spójnik. **3) Czy odpowiada na pytanie jak? gdzie? kiedy?** (*cicho, tam, wtedy*) → przysłówek. Jeśli żadne — sprawdź, czy wyraz zmienia sens całej wypowiedzi (*nie, czy, nawet, niech* — partykuła), czy wyraża emocję lub wezwanie (*och, hej* — wykrzyknik). Pułapka: *blisko* bywa przysłówkiem (*mieszka blisko*) albo przyimkiem (*blisko jaskini*) — rozstrzyga, czy stoi przy nim rzeczownik w przypadku.
 :::
 
 ### Rozróżnienie „czy” — partykuła czy spójnik?
@@ -1188,6 +1214,172 @@ Egzaminacyjne „pułapki” przy „Hobbicie”
 
 **Schemat pracy z każdym błędem:** znajdź błąd → popraw → nazwij regułę → wyjaśnij dlaczego.
 
+## 18.1 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pary, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| Bilbo / Bard | obaj przy śmierci Smauga | Bilbo dostrzega słaby punkt; Bard zabija smoka Czarną Strzałą |
+| Thorin / Bilbo | obaj się zmieniają | Bilbo dojrzewa stopniowo przez całą wyprawę; Thorin zmienia się późno, przed śmiercią |
+| *czy* partykuła / spójnik | ten sam wyraz | pytanie bezpośrednie — partykuła; łączy zdania — spójnik |
+| przysłówek / przyimek (*blisko*) | ten sam wyraz | sam — przysłówek; z rzeczownikiem w przypadku — przyimek |
+| przysłówek / przymiotnik | *szybko* / *szybki* | przysłówek określa czasownik (*jak?*) i się nie odmienia; przymiotnik — rzeczownik (*jaki?*), odmienny |
+| *nie* z czasownikiem / *nienawidzić* | oba z „nie” | zwykłe przeczenie — rozdzielnie; czasownik bez „nie” nie istnieje — łącznie |
+:::
+
+## 18.2 | Ciekawostki — karty {#ciekawostki-karty}
+
+::: karta extra | „Hobbit” zaczął się od jednego zdania
+Tolkien opowiadał, że sprawdzając prace studentów, napisał na pustej kartce: „W pewnej norze ziemnej mieszkał sobie hobbit”. Dopiero potem zastanowił się, kim jest hobbit — i tak powstała cała powieść.
+:::
+
+::: karta extra | Smaug i staroangielski
+Tolkien był filologiem. Imię smoka wywiódł żartobliwie od germańskiego czasownika *smugan* — „przeciskać się przez szczelinę”; sceny zagadek przypominają dawne poematy staroangielskie i skandynawskie. (orientacyjnie)
+:::
+
+::: karta extra | Mapa w książce
+Do pierwszego wydania „Hobbita” Tolkien sam narysował mapy i ilustracje. Mapa Throra z „tajnymi runami” należała do najważniejszych pomysłów — runy księżycowe można przeczytać tylko w określonym świetle.
+:::
+
+::: karta extra | Przyimek, który „mieszka” w czasowniku
+Wiele czasowników wymaga konkretnego przyimka: *zależeć od*, *myśleć o*, *bać się kogo* (bez przyimka). To **rekcja**. Bilbo *bał się smoka*, ale *myślał o skarbie* — zamiana przyimka to częsty błąd językowy.
+:::
+
+## 18.3 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — lektura i nieodmienne części mowy głębiej
+**Narrator „Hobbita”** jest trzecioosobowy, ale często zwraca się do czytelnika jak gawędziarz („jak zaraz zobaczycie”) — to ślad opowieści dla dzieci. **Struktura „tam i z powrotem”** — kołowa kompozycja podróży (dom → próby → dom) jest typowa dla baśni i mitów o wędrówce bohatera. **Przyimki złożone** (*spod, zza, sprzed, ponad*) piszemy łącznie: *wyszedł spod góry*. **Partykuła *-by*** po spójnikach od 2026 r. zapisujemy rozdzielnie (*czy by nie odpocząć*), ale *żeby, gdyby, aby* to spójniki — łącznie. **Wykrzyknik a partykuła**: *och* to wykrzyknik (emocja), *niech* to partykuła (życzenie, polecenie).
+:::
+
+::: adv | Zadanie O1 (4 pkt) — części mowy w zdaniu | poziom ambitny (konkurs)
+Określ część mowy wyróżnionych wyrazów: *Bilbo **cicho** zakradł się **pod** smoka, **lecz** smok **nie** spał. **Och**, jakie to było straszne!*
+
+::: odp | Pokaż klucz
+*cicho* — przysłówek; *pod* — przyimek; *lecz* — spójnik; *nie* — partykuła; *och* — wykrzyknik. (4 pkt za komplet; 1 pkt odjęty za każdy błąd)
+:::
+:::
+
+::: adv | Zadanie O2 (3 pkt) — „czy” i przecinek | poziom ambitny (konkurs)
+Wstaw przecinki i określ funkcję „czy”: 1) *Czy Bilbo wróci do Shire?* 2) *Gandalf nie wiedział czy Bilbo wróci.* 3) *Herbata czy kawa?*
+
+::: odp | Pokaż klucz
+1) bez przecinka — partykuła pytajna; 2) *nie wiedział, czy Bilbo wróci* — spójnik; 3) bez przecinka — spójnik łączący wyrazy (alternatywa). Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — argument do rozprawki | poziom ambitny (konkurs)
+Teza: *Prawdziwa odwaga to działanie mimo strachu.* Zbuduj argument z odwołaniem do jednej sceny z „Hobbita” (3–4 zdania).
+
+::: odp | Pokaż klucz
+Np.: *Bilbo boi się smoka, a mimo to sam schodzi tunelem do Smauga. Nie ma siły ani broni, która mogłaby go obronić, ale idzie, bo czuje odpowiedzialność za krasnoludy. Ta decyzja pokazuje, że odwaga nie polega na braku lęku, tylko na pokonaniu go. Tolkien czyni z małego hobbita bohatera właśnie dlatego, że działa wbrew strachowi.* — 1 pkt teza, 2 pkt scena i wyjaśnienie, 1 pkt wniosek.
+:::
+:::
+
+## 18.4 | Test sprawdzający {#test-blok}
+
+::: test
+? Kto zabił Smauga?
++ Bard
+- Bilbo
+- Thorin
+- Gandalf
+! Bard trafił Czarną Strzałą w odsłonięte miejsce na piersi smoka.
+? Kto zauważył słaby punkt Smauga?
++ Bilbo
+- Bard
+- drozd
+- Beorn
+! Bilbo podczas rozmowy ze smokiem — drozd przekazał tę wiadomość Bardowi.
+? Co Bilbo oddaje oblegającym, by doprowadzić do zgody?
++ Arcyklejnot
+- pierścień
+- miecz Żądło
+- mapę Throra
+! Arcyklejnot był najcenniejszym skarbem Thorina — Bilbo oddaje go jako kartę przetargową.
+? Jaką częścią mowy jest „szybko” w zdaniu „Bilbo szybko uciekł”?
++ przysłówek
+- przymiotnik
+- przyimek
+- partykuła
+! Odpowiada na pytanie *jak?* i określa czasownik.
+? W zdaniu „Nie wiem, czy smok śpi” wyraz „czy” to:
++ spójnik
+- partykuła
+- przyimek
+- przysłówek
+! Łączy zdanie nadrzędne z podrzędnym.
+? Który zapis jest poprawny?
++ nie zobaczył
+- niezobaczył
+- nie-zobaczył
+- niezobaczył się
+! „Nie” z czasownikiem piszemy rozdzielnie.
+? Które słowo jest przyimkiem?
++ spod
+- szybko
+- ale
+- och
+! *Spod* łączy się z rzeczownikiem w dopełniaczu: *spod góry*.
+? Bilbo jest bohaterem:
++ dynamicznym
+- statycznym
+- epizodycznym
+- negatywnym
+! Przechodzi wewnętrzną przemianę: od wygodnego hobbita do odważnego i rozsądnego bohatera.
+? Która część mowy wyraża emocje? (poziom ambitny)
++ wykrzyknik
+- partykuła
+- spójnik
+- przysłówek
+! *Och, ach, brr* — wykrzykniki.
+? „Blisko jaskini” — wyraz „blisko” to: (poziom ambitny)
++ przyimek
+- przysłówek
+- przymiotnik
+- spójnik
+! Stoi przy rzeczowniku w dopełniaczu i wskazuje relację — pełni funkcję przyimka.
+:::
+
+## 18.5 | Fiszki interaktywne {#fiszki-blok}
+
+::: fiszki
+Kto zabił Smauga? | Bard — Czarną Strzałą | basic:lektura
+Kto zauważył słaby punkt Smauga? | Bilbo — odsłonięte miejsce na piersi | basic:lektura
+Thorin Dębowa Tarcza | przywódca krasnoludów; ulega chciwości, przed śmiercią żałuje | basic:lektura
+Bilbo — typ bohatera | dynamiczny — dojrzewa w czasie wyprawy | basic:lektura
+Arcyklejnot | klejnot rodu Thorina; Bilbo oddaje go, by doprowadzić do zgody | basic:lektura
+Beorn | zmiennokształtny (niedźwiedź); sojusznik w Bitwie Pięciu Armii | basic:lektura
+Smocza choroba | metafora chciwości | basic:lektura
+Przysłówek | jak? gdzie? kiedy? — szybko, tutaj, jutro | basic:czesci-mowy
+Przyimek | łączy się z rzeczownikiem i rządzi przypadkiem — do, w, spod | basic:czesci-mowy
+Spójnik | łączy wyrazy lub zdania — i, ale, że, bo | basic:czesci-mowy
+Partykuła | zmienia znaczenie wypowiedzi — nie, czy, niech, nawet | basic:czesci-mowy
+Wykrzyknik | wyraża emocje lub wezwania — och, hej | basic:czesci-mowy
+„czy” w pytaniu | partykuła | basic:czesci-mowy
+„czy” w zdaniu złożonym | spójnik | basic:czesci-mowy
+„nie” z czasownikiem | rozdzielnie (wyjątki: nienawidzić, niepokoić) | basic:czesci-mowy
+„tam i z powrotem” | kompozycja kołowa — dom → próby → dom | olimpijski:lektura
+*blisko* — przysłówek czy przyimek? | z rzeczownikiem w przypadku — przyimek | olimpijski:czesci-mowy
+przyimki złożone | łącznie: spod, zza, sprzed, ponad | olimpijski:czesci-mowy
+:::
+
+## 18.6 | Słownik pojęć {#slownik-blok}
+
+::: slownik
+bohater dynamiczny :: postać zmieniająca się wewnętrznie w toku akcji (Bilbo, Thorin).
+motyw wędrówki :: podróż jako droga dojrzewania bohatera.
+kompozycja kołowa :: utwór kończy się w miejscu, w którym się zaczął (Shire).
+przysłówek :: nieodmienna część mowy określająca czasownik, przymiotnik lub przysłówek (jak? gdzie? kiedy?).
+przyimek :: nieodmienna część mowy łącząca się z rzeczownikiem i rządząca jego przypadkiem.
+wyrażenie przyimkowe :: przyimek + rzeczownik (zaimek) w przypadku: do jaskini, spod góry.
+spójnik :: nieodmienna część mowy łącząca wyrazy lub zdania.
+partykuła :: nieodmienna część mowy zmieniająca znaczenie wypowiedzi (nie, czy, niech).
+wykrzyknik :: nieodmienna część mowy wyrażająca emocje lub wezwania (och, hej).
+rekcja :: wymaganie przez czasownik określonego przypadku lub przyimka (myśleć o czym).
+:::
+
 ## 19. Źródła
 
 ::: karta -
@@ -1199,4 +1391,12 @@ Egzaminacyjne „pułapki” przy „Hobbicie”
 
 :::
 
-<p class="mini-note">Materiał dydaktyczny (wyrównany do L001: pełny opis lektury, ściąga skrócona) — nieodmienne części mowy, „czy” jako partykuła/spójnik, „nie” z czasownikami, trójkroki przemiany Bilba i Thorina, fakt vs interpretacja. Nie zastępuje pełnego informatora CKE.</p>
+::: karta basic | O materiale
+Materiał dydaktyczny (wyrównany do L001: pełny opis lektury, ściąga skrócona) — nieodmienne części mowy, „czy” jako partykuła/spójnik, „nie” z czasownikami, trójkroki przemiany Bilba i Thorina, fakt vs interpretacja. Nie zastępuje pełnego informatora CKE.
+:::
+
+## Ulepszenie — Claude, 2026-10-11
+
+- Dodano: §0.5 wykład o lekturze, §4.9 wykład o nieodmiennych częściach mowy, mini-wykład „W skrócie — trzy pytania”, §18.1 nie-myl, §18.2 ciekawostki (4 karty), §18.3 warstwa olimpijska (Dla olimpijczyka + O1–O3 z kluczami), §18.4 test (10, w bloku `::: test`), §18.5 fiszki (18, w bloku `::: fiszki`), §18.6 słownik (10). Nic nie usunięto; resztka HTML `mini-note` → karta.
+- Uwaga: dawne „Fiszki — 20 fiszek” (§12) po konwersji z HTML straciły przednie strony (zostały same odpowiedzi) — zostawiono je, a pełne fiszki dodano w §18.5. Do decyzji: przy W1 (pełny prompt) można §12 scalić z §18.5.
+
