@@ -5,7 +5,7 @@ tytul: „Akademia Pana Kleksa” + czasownik
 lead: Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie — Lekcja 6 – „Akademia Pana Kleksa” oraz czasownik (formy, czasy, tryby, aspekt, strona, „nie”)
 stopka: Lekcja 6 – „Akademia Pana Kleksa” + czasownik • Wersja FINALNA – pełna treść, uzupełniona o MASTER, KONKURS, OLIMPIADA i słownik • 2026-09-07
 zrodlo: L006-PL-Akademia-Pana-Kleksa-czasownik.html (konwersja html_do_md.py, 2026-10-09)
-stan: KONWERSJA Z HTML — sprawdzić odpowiedzi „DO UZUPEŁNIENIA” i grafiki GFX
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykład, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione błędy); W1 starym promptem — do recenzji W1 FULL
 ---
 ::: karta understand | Sprawdź się przed nauką — 3 szybkie pytania
 1. Kto opowiada historię w „Akademii Pana Kleksa”?
@@ -34,7 +34,7 @@ To nie jest test na ocenę – pokazuje, co już wiesz.
 ## 1. Podstawowe informacje
 
 ::: karta basic | Lektura w pigułce
-- **Autor:** Jan Brzechwa (właściwie Jan Wiktor Brzechwa-Chmielewski, 1898–1966).
+- **Autor:** Jan Brzechwa (właściwie Jan Wiktor Lesman, 1898–1966).
 - **Pełny tytuł:** „Akademia Pana Kleksa”.
 - **Cykl:** Trylogia o Panu Kleksie:
   1. „Akademia Pana Kleksa” (1946)
@@ -44,6 +44,18 @@ To nie jest test na ocenę – pokazuje, co już wiesz.
 - **Konwencja:** baśń współczesna, literatura fantastyczna.
 - **Czas i miejsce akcji:** nieokreślone, „dawno temu”; Akademia w nieznanym mieście.
 
+:::
+
+## Wykład — „Akademia Pana Kleksa” od zera {#wyklad-lektura}
+
+::: karta understand | Wykład — szkoła, w której uczy wyobraźnia
+Jan Brzechwa (właśc. Jan Wiktor Lesman, 1898–1966) — poeta, autor wierszy dla dzieci i prawnik — wydał „Akademię Pana Kleksa” w 1946 r., tuż po wojnie. To powieść fantastyczna z elementami baśni: wszystko, co niezwykłe, dzieje się w szkole, a nie w dalekim królestwie. Dlatego czyta się ją jak marzenie o idealnej szkole — takiej, w której nie ma nudy, a lekcje są przygodą.
+
+Historię opowiada **Adaś Niezgódka**, uczeń Akademii, w **narracji pierwszoosobowej** i wspomnieniowej: dorosły Adaś wraca pamięcią do czasów nauki. Akademia mieści się w parku za murem, a przyjmuje tylko chłopców, których imiona zaczynają się na literę **A**. Dyrektor, **Pan Ambroży Kleks**, ma czarną jak smoła, zwichrzoną brodę, kieszenie pełne dziwnych przedmiotów i metody, których nie znajdziesz w żadnym podręczniku: uczy **kleksografii** (odczytywania obrazów z atramentowych plam), przędzenia liter, a sny chłopców ogląda w lusterkach. Jego pomocnikiem jest mówiący szpak **Mateusz** — zaczarowany królewicz, który mówi tylko końcówkami wyrazów.
+
+Konflikt wprowadza golarz **Filip**, wróg Akademii, i jego dzieło — **Alojzy Bąbel**, sztuczny chłopiec, lalka udająca człowieka. Alojzy niszczy porządek Akademii, a jego obecność zapowiada jej koniec. Utwór kończy się smutno: Akademia przestaje istnieć, a Pan Kleks znika. Brzechwa zostawia czytelnika z pytaniem, czy wyobraźnia może przetrwać, gdy nie ma już miejsca, które ją chroni.
+
+Do wypracowania lektura daje motywy: **szkoła marzeń** i **niekonwencjonalny nauczyciel** (Pan Kleks jako mistrz, który rozbudza ciekawość), **siła wyobraźni**, **przemiana bohatera** (Adaś dojrzewa), a także **zło udające dobro** (Alojzy — sztuczny, ale z pozoru zwyczajny). W zadaniach do fragmentu najczęściej trzeba rozpoznać narratora, elementy fantastyczne i cechy bohaterów.
 :::
 
 ## 2. Narrator – 1. osoba
@@ -77,9 +89,9 @@ CKE często sprawdza:
 | **Szpak Mateusz** | Przyjaciel Pana Kleksa, ptak, który mówi i zachowuje się jak człowiek. **Były książę**, który został zamieniony w ptaka. | Towarzysz, doradca, łączy świat ludzi i zwierząt. |
 | **Filip Golarz** | Antagonista, który chce zniszczyć Akademię. Tworzy **Alojzego** – sztucznego chłopca. | Uosobienie zła i zniszczenia, wróg Pana Kleksa. |
 | **Alojzy** | Sztuczny chłopiec / lalka stworzona przez Filipa Golarza. Uosobienie zła, zniszczenia i zazdrości. | Antagonista, źródło konfliktów, uosobienie zawiści i zła. |
-| **Pani Doktor Puchalska** | Lekarka, przyjaciółka Akademii. | Leczy chorych, pomaga w trudnych sytuacjach. |
-| **Piekarz Węgiełek** | Przyjaciel Akademii. | Dostarcza chleb, pomaga w potrzebie. |
-| **Błękitny Podróżnik** | Tajemnicza postać, podróżnik. | Przynosi wiadomości z dalekich krajów. |
+| **Pani Doktor Puchalska** *(do weryfikacji — postaci brak w opracowaniach lektury; nie używaj bez sprawdzenia w tekście)* | Lekarka, przyjaciółka Akademii. | Leczy chorych, pomaga w trudnych sytuacjach. |
+| **Piekarz Węgiełek** *(do weryfikacji — jw.)* | Przyjaciel Akademii. | Dostarcza chleb, pomaga w potrzebie. |
+| **Błękitny Podróżnik** *(do weryfikacji — jw.)* | Tajemnicza postać, podróżnik. | Przynosi wiadomości z dalekich krajów. |
 
 ::: karta understand | Ważne cechy bohaterów do zapamiętania
 - **Pan Kleks:** mądrość, dobroć, magia, niekonwencjonalne metody nauczania.
@@ -108,7 +120,7 @@ Adaś trafia do niezwykłej szkoły. Poznajemy zasady działania Akademii. Pierw
 :::
 
 ::: karta basic | 2. Nauka w Akademii
-Zajęcia z **kleksografii** (sztuka tworzenia obrazków z kleksów). Nauka przez zabawę i eksperymenty. Niezwykłe przedmioty: łóżko-łódź, budzik-zwierzę.
+Zajęcia z **kleksografii** (sztuka tworzenia obrazków z kleksów). Nauka przez zabawę i eksperymenty. Sny uczniów odbijają się w lusterkach. Niezwykłe przedmioty: łóżko-łódź, budzik-zwierzę *(do weryfikacji w tekście)*.
 
 **Motywy:** nauka jako przygoda, wyobraźnia, kreatywność.
 
@@ -121,7 +133,7 @@ Filip Golarz tworzy Alojzego – sztucznego chłopca, który ma zniszczyć Akade
 
 :::
 
-::: karta basic | 4. Podróż do Krainy Cieni
+::: karta basic | 4. Podróż do Krainy Cieni (do weryfikacji — epizodu brak w opracowaniach; sprawdź w tekście)
 Adaś i przyjaciele trafiają do tajemniczej krainy. Spotkania z niezwykłymi postaciami. Powrót do Akademii.
 
 **Motywy:** podróż, przygoda, odwaga, przyjaźń.
@@ -156,7 +168,7 @@ Akademia to szkoła marzeń – nauka przez zabawę, brak nudnych lekcji, nauczy
 :::
 
 ::: karta basic | 3. Przyjaźń i lojalność
-Adaś i jego przyjaciele (szpak Mateusz, golarz Filip) wspierają się nawzajem w trudnych sytuacjach.
+Adaś, jego koledzy z Akademii i szpak Mateusz wspierają się nawzajem w trudnych sytuacjach (golarz Filip jest wrogiem Akademii, nie przyjacielem).
 
 **Wniosek:** Prawdziwa przyjaźń polega na wzajemnym wsparciu i lojalności.
 
@@ -330,7 +342,7 @@ Czasowniki osobowe odmieniają się przez:
 ::: karta basic | 3 tryby w języku polskim
 :::
 
-### A. Tryb orzekający (fakty, rzeczywistość)
+### A. Tryb oznajmujący (dawniej: orzekający) — fakty, rzeczywistość
 
 ::: karta basic | Tryb orzekający
 Opisuje czynności, które **rzeczywiście się dzieją** lub **działy**.
@@ -357,7 +369,7 @@ Opisuje czynności **hipotetyczne**, **możliwe**, ale **niepewne**.
 ::: karta basic | Tryb rozkazujący
 Wyraża **rozkaz**, **prośbę**, **życzenie**, **radę**.
 
-- Występuje tylko w **2. i 3. osobie** (liczba pojedyncza i mnoga).
+- Formy właściwe: **2. os. lp.** (*czytaj!*), **1. os. lm.** (*czytajmy!*), **2. os. lm.** (*czytajcie!*); 3. osobę tworzymy opisowo z *niech* (*niech czyta*). Brak 1. os. lp.
 - <em>czytaj! (2. os. lp.)</em>
 - <em>niech czyta! (3. os. lp.)</em>
 - <em>czytajcie! (2. os. lm.)</em>
@@ -407,7 +419,7 @@ Opisuje czynność **zakończoną**, z **rezultatem**.
 | czytać | przeczytać |
 | pisać | napisać |
 | robić | zrobić |
-| biegać | pobiec |
+| biec (biegać — wielokierunkowe) | pobiec |
 | mówić | powiedzieć |
 | kupować | kupić |
 | otwierać | otworzyć |
@@ -416,7 +428,7 @@ Opisuje czynność **zakończoną**, z **rezultatem**.
 Nie wszystkie czasowniki mają pary aspektowe. Niektóre występują tylko w jednym aspekcie:
 
 - **Tylko niedokonane:** <em>spać, leżeć, stać, wiedzieć, móc</em>
-- **Tylko dokonane:** <em>zginąć, umrzeć, narodzić się</em>
+- **Uwaga:** <em>zginąć, umrzeć, narodzić się</em> mają pary niedokonane (<em>ginąć, umierać, rodzić się</em>); prawdziwie „tylko dokonane” są nieliczne, np. <em>runąć</em>.
 
 :::
 
@@ -443,7 +455,7 @@ Najczęstsza forma w języku polskim.
 ::: karta basic | Strona bierna
 Podmiot jest **odbiorcą** czynności.
 
-- Tworzenie: forma czasownika „być” + imiesłów przymiotnikowy bierny.
+- Tworzenie: forma czasownika „być” lub „zostać” + imiesłów przymiotnikowy bierny.
 - **Przykład:** <em>Książka **jest czytana** przez Adasia.</em> (książka jest poddawana czynności czytania)
 - **Przykład:** <em>List **został napisany** przez Adasia.</em>
 
@@ -512,8 +524,8 @@ Zwykłe przeczenie zapisujemy rozdzielnie. Łączna pisownia dotyczy utrwalonych
 | <em>czyta</em> | niedokonany | teraźniejszy | orzekający | czynna |
 | <em>przeczytał</em> | dokonany | przeszły | orzekający | czynna |
 | <em>będzie czytał</em> | niedokonany | przyszły | orzekający | czynna |
-| <em>gdyby czytał</em> | niedokonany | przeszły | przypuszczający | czynna |
-| <em>czytaj!</em> | niedokonany | teraźniejszy | rozkazujący | czynna |
+| <em>gdyby czytał</em> | niedokonany | — (w trybie przypuszczającym czasu nie określamy) | przypuszczający | czynna |
+| <em>czytaj!</em> | niedokonany | — (tryb rozkazujący nie ma czasu) | rozkazujący | czynna |
 | <em>jest czytana</em> | niedokonany | teraźniejszy | orzekający | bierna |
 
 :::
@@ -530,7 +542,7 @@ Zwykłe przeczenie zapisujemy rozdzielnie. Łączna pisownia dotyczy utrwalonych
 
 **Odpowiedzi MASTER:**
 
-1. pisać (niedokonany) → napisać; biegać → pobiec; mówić → powiedzieć.
+1. pisać (niedokonany) → napisać; biegać → pobiegać (a *biec* → *pobiec*); mówić → powiedzieć.
 2. <em>Drzwi zostały otwarte przez Pana Kleksa.</em>
 3. czytałbyś; czytaj!
 4. <em>nienawidzi</em> – łącznie (wyjątek – czasownik nie istnieje bez „nie”); <em>nie lubi</em> – rozdzielnie (zwykły czasownik).
@@ -549,7 +561,7 @@ Zwykłe przeczenie zapisujemy rozdzielnie. Łączna pisownia dotyczy utrwalonych
 **Rozwiązanie (MASTER):**
 
 1. <em>przeczytał</em> – tryb przypuszczający (warunkowy), aspekt dokonany; <em>opowiedziałby</em> – tryb przypuszczający, aspekt dokonany.
-2. <em>Gdyby książka została przeczytana przez Adasia, zostałaby opowiedziana koledze.</em> – strona bierna w trybie przypuszczającym.
+2. <em>Gdyby książka została przeczytana przez Adasia, …</em> — pierwsze zdanie da się przekształcić; drugiego (<em>opowiedziałby o niej</em>) nie, bo nie ma dopełnienia w bierniku. Przy innym dopełnieniu: <em>Opowiedziałby koledze historię</em> → <em>Historia zostałaby opowiedziana koledze</em>.
 3. Tryb rozkazujący: <em>Przeczytaj książkę i opowiedz o niej koledze!</em> – zmiana trybu wymaga przeformułowania.
 
 :::
@@ -728,7 +740,7 @@ Pamiętaj o najważniejszych poprawkach: **narrator – 1. osoba (Adaś)**, **Ad
 | Wyjątki od „nie” | <span class="error-text">nienawidzić rozdzielnie</span> | <span class="correct-text">nienawidzić łącznie (wyjątek)</span> |
 | Aspekt – „czytać” | <span class="error-text">czytać – dokonany</span> | <span class="correct-text">czytać – niedokonany</span> |
 | Aspekt – „przeczytać” | <span class="error-text">przeczytać – niedokonany</span> | <span class="correct-text">przeczytać – dokonany</span> |
-| Czas przyszły – niedokonany | <span class="error-text">będę czytać</span> | <span class="correct-text">będę czytał (lub przeczytam dla dokonanego)</span> |
+| Czas przyszły – niedokonany | <span class="error-text">będę przeczytać</span> | <span class="correct-text">będę czytać / będę czytał (lub przeczytam dla dokonanego)</span> |
 | Tryb rozkazujący | <span class="error-text">czytajmy – orzekający</span> | <span class="correct-text">czytajmy – rozkazujący</span> |
 | Strona bierna | <span class="error-text">książka czyta</span> | <span class="correct-text">książka jest czytana</span> |
 | Egzamin a treść lektury | <span class="error-text">Egzamin sprawdza całą treść książki.</span> | <span class="correct-text">W części I egzamin sprawdza tylko fragment z arkusza.</span> |
@@ -751,5 +763,185 @@ Wskaż zapis poprawny i uzasadnij, czy masz do czynienia ze zwykłym przeczeniem
 
 :::
 
-<p class="mini-note">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
-<p class="mini-note">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+::: karta understand | W skrócie — narrator, autor, bohater
+Na egzaminie często pada pytanie „kto opowiada?”. W „Akademii Pana Kleksa” opowiada **Adaś** — postać, która mówi „ja” i była uczestnikiem zdarzeń. To nie to samo co **autor** (Jan Brzechwa), który wymyślił całą historię. Narracja pierwszoosobowa daje bliskość i subiektywność: wiemy to, co wie i czuje Adaś, a jego oceny mogą być dziecięce lub zmienione przez czas. Gdy polecenie pyta o wpływ narratora na odbiór, wskaż: bliskość emocji, ograniczoną wiedzę, wspomnieniowy dystans.
+:::
+
+## 25. Nie myl! {#nie-myl}
+
+::: nie-myl | Pary, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| narrator / autor | Adaś mówi „ja” | autorem jest Jan Brzechwa; narratorem — postać Adaś Niezgódka |
+| tryb oznajmujący / „orzekający” | dwie nazwy | to ten sam tryb; współczesna nazwa szkolna: oznajmujący |
+| *będę czytać* / *będę czytał* | dwie formy przyszłości | obie poprawne (czas przyszły złożony); błędne jest *będę przeczytać* |
+| *biec* / *biegać* | oba „run” | *biec* — teraz, w jednym kierunku (para: *pobiec*); *biegać* — wielokierunkowo, zwyczajowo |
+| *nienawidzić* / *nie lubić* | oba wyrażają niechęć | *nienawidzić* — łącznie (brak *nawidzić*); *nie lubić* — rozdzielnie |
+| strona bierna / forma na *-no* | oba bez wykonawcy | *Drzwi zostały otwarte* — bierna; *Otwarto drzwi* — forma nieosobowa |
+:::
+
+## 26. Ciekawostki {#ciekawostki}
+
+::: karta extra | Tylko na literę A
+Do Akademii przyjmowani są wyłącznie chłopcy o imionach na **A** — Adaś, Anatol, Alfred, Aleksander… Pan Kleks tłumaczy to po swojemu, a czytelnik dostaje sygnał: to szkoła rządząca się własną, baśniową logiką.
+:::
+
+::: karta extra | Brzechwa to pseudonim
+Jan Brzechwa naprawdę nazywał się **Jan Wiktor Lesman**; „brzechwa” to dawna nazwa lotki strzały. Był kuzynem Bolesława Leśmiana — innego wielkiego poety, który też przyjął pseudonim.
+:::
+
+::: karta extra | Szpak, który mówi końcówkami
+Szpak Mateusz mówi tylko końcówki wyrazów, np. zamiast „telefon” — „fon”. To dawny królewicz, który zamienił się w ptaka i nie zdołał wrócić do ludzkiej postaci. Jego mowa to świetny materiał do ćwiczeń: zgadnij, jaki wyraz ma na myśli.
+:::
+
+::: karta extra | Kleks w kinie
+„Akademię Pana Kleksa” sfilmował w 1983 r. Krzysztof Gradowski (w roli Kleksa — Piotr Fronczewski); w 2024 r. powstała nowa ekranizacja. Uwaga: film zmienia wiele szczegółów — na egzaminie odwołuj się do książki.
+:::
+
+## 27. Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — lektura i czasownik głębiej
+**Narracja wspomnieniowa** — dorosły Adaś opowiada o dzieciństwie: dystans czasowy pozwala mu oceniać zdarzenia („wtedy jeszcze nie wiedziałem…”). **Fantastyka w realiach** — świat Akademii łączy zwyczajne przedmioty (kieszenie, lusterka, kleksy) z magią; to typowy zabieg baśni współczesnej. **Zakończenie** — rozpad Akademii i zniknięcie Pana Kleksa można interpretować jako koniec dzieciństwa. **Czasownik w opisie fantastycznym** — Brzechwa często używa czasowników ruchu i przemiany (*rosnąć, kurczyć się, zamieniać się*); aspekt dokonany podkreśla nagłość przemiany (*zamienił się*), niedokonany — jej przebieg (*zmniejszał się*).
+:::
+
+::: adv | Zadanie O1 (4 pkt) — narrator i perspektywa | poziom ambitny (konkurs)
+Wyjaśnij, czym różni się narrator „Akademii Pana Kleksa” od narratora „Chłopców z Placu Broni”, i podaj jedną konsekwencję tej różnicy dla czytelnika.
+
+::: odp | Pokaż klucz
+„Akademia” — narrator pierwszoosobowy, uczestnik (Adaś), relacja subiektywna i wspomnieniowa (2 pkt); „Chłopcy z Placu Broni” — narrator trzecioosobowy, wszechwiedzący (1 pkt); konsekwencja: w „Akademii” widzimy świat oczami dziecka i wiemy tylko to, co Adaś (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — aspekt w opisie przemiany | poziom ambitny (konkurs)
+Wybierz właściwy aspekt i uzasadnij: *Pan Kleks z każdym dniem (zmniejszał się / zmniejszył się), aż w końcu (znikał / zniknął).*
+
+::: odp | Pokaż klucz
+*zmniejszał się* — niedokonany, proces stopniowy (2 pkt); *zniknął* — dokonany, jednorazowy rezultat (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — strona bierna i jej granice | poziom ambitny (konkurs)
+Przekształć na stronę bierną, jeśli to możliwe; jeśli nie — wyjaśnij.
+
+1. *Filip stworzył Alojzego.*
+2. *Adaś opowiedział o Akademii.*
+3. *Pan Kleks wysłał oko na Księżyc.*
+4. *Mateusz fruwał po parku.*
+
+::: odp | Pokaż klucz
+1. *Alojzy został stworzony przez Filipa.* 2. niemożliwe — brak dopełnienia w bierniku (*o Akademii* to wyrażenie przyimkowe) 3. *Oko zostało wysłane na Księżyc przez Pana Kleksa.* 4. niemożliwe — *fruwać* jest nieprzechodni. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O4 (4 pkt) — trudne formy rozkazujące | poziom ambitny (konkurs)
+Utwórz 2. os. lp. trybu rozkazującego: *wziąć, pomóc, wyjąć, jeść*.
+
+::: odp | Pokaż klucz
+*weź, pomóż, wyjmij, jedz*. Po 1 pkt (uwaga: *jedz* ≠ *jedź*).
+:::
+:::
+
+## 28. Test sprawdzający {#test}
+
+::: test
+? Kto jest narratorem „Akademii Pana Kleksa”?
++ Adaś Niezgódka
+- Pan Kleks
+- szpak Mateusz
+- narrator wszechwiedzący
+! Adaś opowiada w 1. osobie, wspominając pobyt w Akademii.
+? Kim jest Alojzy Bąbel?
++ sztucznym chłopcem stworzonym przez Filipa
+- najlepszym przyjacielem Adasia
+- zaczarowanym królewiczem
+- nauczycielem kleksografii
+! Alojzy to lalka udająca chłopca — dzieło golarza Filipa.
+? Czym jest kleksografia?
++ odczytywaniem obrazów z atramentowych plam
+- nauką pisania bez kleksów
+- sztuką gotowania
+- nauką latania
+! Na kartce robi się kleksy, składa ją i odczytuje powstałe kształty.
+? Który czasownik ma aspekt dokonany?
++ przeczytać
+- czytać
+- biegać
+- spać
+! *Przeczytać* — czynność zakończona, z rezultatem.
+? Tryb w zdaniu „Gdybym miał czas, czytałbym więcej” to:
++ przypuszczający
+- oznajmujący
+- rozkazujący
+- bierny
+! Forma z *-by* wyraża warunek i możliwość.
+? Która forma czasu przyszłego jest BŁĘDNA?
++ będę przeczytać
+- będę czytać
+- będę czytał
+- przeczytam
+! Dokonany tworzy czas przyszły prosty (*przeczytam*), nie złożony.
+? „Drzwi zostały otwarte przez Pana Kleksa” — strona:
++ bierna
+- czynna
+- zwrotna
+- nieosobowa
+! *Zostać* + imiesłów bierny — strona bierna.
+? Jak zapisujemy: „On ___ (nie + nawidzić) kłamstwa”?
++ nienawidzi
+- nie nawidzi
+- nie-nawidzi
+- nienawidź
+! Czasownik *nienawidzić* nie istnieje bez *nie* — pisownia łączna.
+? Prawdziwe nazwisko Jana Brzechwy to: (poziom ambitny)
++ Lesman
+- Chmielewski
+- Leśmian
+- Kleks
+! Jan Wiktor Lesman; Bolesław Leśmian był jego kuzynem.
+? Od którego czasownika NIE utworzysz strony biernej? (poziom ambitny)
++ fruwać
+- stworzyć
+- otworzyć
+- wysłać
+! *Fruwać* jest nieprzechodni — nie ma dopełnienia w bierniku.
+:::
+
+## 29. Słownik pojęć {#slownik}
+
+::: slownik
+narrator pierwszoosobowy :: opowiadający jest postacią utworu i mówi „ja” (Adaś Niezgódka).
+narracja wspomnieniowa :: opowieść o przeszłości z perspektywy późniejszej, dorosłej.
+baśń współczesna :: utwór łączący świat realny z fantastycznym, osadzony bliżej czasów autora.
+kleksografia :: w powieści — sztuka odczytywania obrazów z atramentowych plam.
+bohater dynamiczny :: postać, która zmienia się w toku akcji (Adaś).
+tryb oznajmujący :: forma przedstawiająca fakt (dawniej: orzekający).
+aspekt :: dokonany (czynność zakończona) lub niedokonany (trwająca, powtarzana).
+strona bierna :: podmiot doznaje czynności: być/zostać + imiesłów bierny.
+czasownik przechodni :: łączy się z dopełnieniem w bierniku; tylko on tworzy stronę bierną.
+:::
+
+## 30. Fiszki — poziom ambitny {#fiszki-olimp}
+
+::: fiszki
+Prawdziwe nazwisko Brzechwy | Jan Wiktor Lesman | olimpijski:lektura
+Kogo przyjmuje Akademia? | chłopców o imionach na A | olimpijski:lektura
+Szpak Mateusz — kim był? | zaczarowanym królewiczem | olimpijski:lektura
+Broda Pana Kleksa | czarna jak smoła, zwichrzona | olimpijski:lektura
+Zakończenie Akademii | Akademia przestaje istnieć, Pan Kleks znika | olimpijski:lektura
+*biec* czy *biegać*? | biec — jednokierunkowo (para: pobiec); biegać — wielokierunkowo | olimpijski:czasownik
+*Adaś opowiedział o Akademii* → strona bierna? | niemożliwa — brak dopełnienia w bierniku | olimpijski:czasownik
+Tryb orzekający | dawna nazwa trybu oznajmującego | olimpijski:czasownik
+:::
+
+::: karta basic | Jak pracować z tą lekcją
+Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych. Zadania treningowe wzorowane na formule E8 z języka polskiego.
+:::
+
+## ULEPSZENIE — Claude, 2026-10-11
+
+- Dodano: wykład o lekturze (przed §2), mini-wykład „W skrócie — narrator, autor, bohater”, §25 nie-myl, §26 ciekawostki (4), §27 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami), §28 test (10), §29 słownik (9), §30 fiszki olimpijskie (8). Nic nie usunięto.
+- Poprawione: prawdziwe nazwisko autora (Lesman, nie „Brzechwa-Chmielewski”); Filip nie jest przyjacielem Adasia; „tryb orzekający” → oznajmujący (dawna nazwa); formy trybu rozkazującego (jest 1. os. lm.); para *biec — pobiec* (nie *biegać*); *zginąć, umrzeć, narodzić się* mają pary niedokonane; w trybie rozkazującym i przypuszczającym nie określamy czasu; „będę czytać” nie jest błędem; klucz KONKURS 2 (strona bierna niemożliwa bez dopełnienia w bierniku); strona bierna także z *zostać*. Broda Pana Kleksa czarna — potwierdzone (materiał UJ „Profesjonalny polonista”).
+- Do weryfikacji w tekście książki: postaci Doktor Puchalska, piekarz Węgiełek, Błękitny Podróżnik, epizod „Kraina Cieni”, przedmioty „łóżko-łódź, budzik-zwierzę” — brak ich w dostępnych opracowaniach (prawdopodobnie błąd wcześniejszej wersji); oznaczono w lekcji.
+
