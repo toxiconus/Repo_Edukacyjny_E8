@@ -5,7 +5,7 @@ tytul: Imiesłowy
 lead: Czasownik w przebraniu: czytający, przeczytany, czytając, przeczytawszy — i imiesłowowy równoważnik zdania.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L001, G02, G03, G14
-stan: W1 — GPT-6, 2026-10-09; kontrola treści wykonana, W2 źródeł normatywnych nadal wymagana
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykłady, nie-myl, klinika, ciekawostki, warstwa olimpijska, test, słownik, fiszki); wcześniej W1 — GPT-6, 2026-10-09; do recenzji W1 FULL
 utworzono: 2026-10-09
 wersja: 3.1
 poziom: [[poziom:SP]] [[LKO]]
@@ -32,13 +32,27 @@ Potrafię zapisać „nie” z imiesłowami: z przymiotnikowymi łącznie, z prz
 | przysłówkowy współczesny | jak? kiedy? | -ąc | czytając, idąc | niedokonany |
 | przysłówkowy uprzedni | kiedy? po czym? | -wszy, -łszy | przeczytawszy, zjadłszy | dokonany |
 
+## Wykład — imiesłowy od zera {#wyklad}
+
+::: karta understand | Wykład — imiesłów, czyli czasownik w przebraniu
+Imiesłów to forma czasownika, która „przebrała się” za inną część mowy. Zachowuje to, co w czasowniku najważniejsze — znaczenie czynności i aspekt — ale w zdaniu zachowuje się jak **przymiotnik** albo jak **przysłówek**. *Śpiewający ptak* — *śpiewający* odpowiada na pytanie *jaki?* i odmienia się (*śpiewającego, śpiewającym*), ale wciąż mówi o czynności śpiewania. *Śpiewając, szedł przez las* — *śpiewając* odpowiada na pytanie *jak?, kiedy?* i się nie odmienia, jak przysłówek.
+
+Są cztery imiesłowy i każdy rozpoznasz po zakończeniu. **Przymiotnikowe** (odmienne): czynny na **-ący** (*czytający* — ten, kto czyta) i bierny na **-ny, -ony, -ty** (*czytany, przyniesiony, zbity* — ten, na kim lub na czym czynność jest wykonywana). **Przysłówkowe** (nieodmienne): współczesny na **-ąc** (*czytając* — w tym samym czasie) i uprzedni na **-wszy, -łszy** (*przeczytawszy, zjadłszy* — wcześniej). Tworzenie jest proste: czynny i współczesny powstają od 3. osoby liczby mnogiej czasu teraźniejszego (*czytają → czytający, czytając*), bierny i uprzedni — od tematu czasu przeszłego (*przeczytał → przeczytany, przeczytawszy*).
+
+O tym, który imiesłów można utworzyć, decyduje **aspekt** i **przechodniość**. Czas teraźniejszy mają tylko czasowniki niedokonane, więc *-ący* i *-ąc* tworzymy od niedokonanych (*czytać*). Czynność „wcześniej zakończona” wymaga dokonanego — stąd *-wszy* od *przeczytać*. Imiesłów bierny opisuje coś, na co skierowana jest czynność, więc powstaje tylko od czasowników przechodnich (*czytać książkę → czytana książka*); od *przyjść* czy *spać* go nie utworzysz.
+
+Najważniejsza zasada na egzaminie dotyczy **imiesłowowego równoważnika zdania** — imiesłowu przysłówkowego z określeniami, który zastępuje zdanie podrzędne: *Gdy wracałem ze szkoły, spotkałem Tomka* → *Wracając ze szkoły, spotkałem Tomka.* Warunek: **wykonawca czynności imiesłowu = podmiot zdania nadrzędnego**. *Wracając ze szkoły, zaczął padać deszcz* to błąd — wychodzi na to, że deszcz wracał ze szkoły. Równoważnik zawsze oddzielamy przecinkiem.
+
+Pisownia: od 1 stycznia 2026 r. *nie* z imiesłowami przymiotnikowymi piszemy **zawsze łącznie** (*nieprzeczytany, niepalący*, także *nieprzeczytana, lecz przejrzana*), a z przysłówkowymi — **rozdzielnie** (*nie wiedząc, nie zjadłszy*). Imiesłowy pojawiają się na E8 w zadaniach na przekształcanie zdań, interpunkcję i poprawność — a dobrze użyty równoważnik skraca i ożywia wypracowanie.
+:::
+
 ## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
 
 1. Sprawdź zakończenie: -ący, -ny/-ony/-ty, -ąc, -wszy/-łszy.  
 2. Sprawdź, czy wyraz **pochodzi od czasownika** i zachowuje znaczenie czynności: *śpiewający* ← *śpiewać*.  
 3. Odmienia się (jak przymiotnik)? → **przymiotnikowy**. Nieodmienny? → **przysłówkowy**.  
 4. Przysłówkowy: czynność **równoczesna** z orzeczeniem (*idąc, śpiewał*) → współczesny; czynność **wcześniejsza** (*zjadłszy, wyszedł*) → uprzedni.  
-5. Trudne przypadki: *gorący, kipiący* — *gorący* to przymiotnik (nie ma czasownika „gorać”); *zmęczony, zakochany* mogą być imiesłowami albo przymiotnikami — decyduje znaczenie (czynność czy stała cecha); *idący* (imiesłów) ≠ *idący* w znaczeniu „aktualny” — rzadkie.
+5. Trudne przypadki: *gorący, kipiący* — *gorący* to dziś przymiotnik (dawny imiesłów od *gorzeć* — płonąć; oznacza cechę, nie czynność); *zmęczony, zakochany* mogą być imiesłowami albo przymiotnikami — decyduje znaczenie (czynność czy stała cecha); *bieżący* (= aktualny: *bieżący rok*) — dawny imiesłów, dziś przymiotnik.
 
 ## 3 | Formy, odmiana lub rodzaje [[basic:E8]]
 
@@ -55,6 +69,10 @@ Potrafię zapisać „nie” z imiesłowami: z przymiotnikowymi łącznie, z prz
 - Imiesłowy przymiotnikowe odmieniają się jak przymiotniki (przypadek, liczba, rodzaj): *czytający chłopiec, czytającej dziewczyny, czytającym dzieciom*.  
 - Imiesłowy przysłówkowe są **nieodmienne**.  
 - Imiesłowy bierne tworzą **stronę bierną**: *List został **napisany**.* *Smok był **pokonany**.*
+
+::: karta understand | W skrócie — dwie bazy, cztery imiesłowy
+Zapamiętaj tylko dwie formy wyjściowe. **Baza teraźniejsza** — 3. osoba liczby mnogiej czasu teraźniejszego (*czytają, idą, piszą*): dodaj *-cy* → imiesłów czynny (*czytający, idący, piszący*), dodaj *-c* → współczesny (*czytając, idąc, pisząc*). **Baza przeszła** — temat czasu przeszłego (*przeczytał, przyniósł, zbił*): dodaj *-ny/-ony/-ty* → bierny (*przeczytany, przyniesiony, zbity*), dodaj *-wszy* po samogłosce lub *-łszy* po spółgłosce → uprzedni (*przeczytawszy, przyniósłszy*). Jeśli czasownik nie ma czasu teraźniejszego (dokonany), nie utworzysz od niego *-ący* ani *-ąc*; jeśli nie jest przechodni — nie utworzysz biernego.
+:::
 
 ## 4 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
 
@@ -75,6 +93,10 @@ Potrafię zapisać „nie” z imiesłowami: z przymiotnikowymi łącznie, z prz
 *Wracając ze szkoły, spotkałem Tomka.* / *Tomek, zobaczywszy mnie, pomachał.*
 
 **Pisownia zakończeń:** *-ąc* (nie *-onc*, *-ąć*): *idąc, mówiąc*; *-wszy* (nie *-fszy*): *zrobiwszy*.
+
+::: karta understand | W skrócie — test wykonawcy w trzech krokach
+Zanim wstawisz imiesłowowy równoważnik, sprawdź: **1)** kto wykonuje czynność imiesłowu (*idąc* — kto idzie?), **2)** kto jest podmiotem zdania nadrzędnego, **3)** czy to ta sama osoba. Jeśli tak — możesz pisać *Idąc przez park, zobaczyłem wiewiórkę*. Jeśli nie (*Idąc przez park, zaczął padać deszcz*) — zamień równoważnik na zdanie podrzędne: *Gdy szedłem przez park, zaczął padać deszcz*. Wyjątek dopuszczany przez normę: zdania bezosobowe z bezokolicznikiem i ogólnym wykonawcą — *Wychodząc z domu, trzeba zamknąć drzwi* (każdy, kto wychodzi, ma zamknąć).
+:::
 
 ## 6 | Przykłady z lektur [[basic:E8]]
 
@@ -302,7 +324,7 @@ Procedura kontroli:
 
 ### 14.4. Pisownia „nie” — rozróżnienie typów
 
-Z imiesłowami przymiotnikowymi (*nieprzeczytany, niezamknięte, nieznany*) obowiązuje pisownia łączna w typowym użyciu; przy wyraźnym przeciwstawieniu możliwa jest pisownia rozdzielna: *nie przeczytany, lecz jedynie przejrzany* — stosuj regułę zgodną z aktualną normą i kontekstem, nie automatyczny zakaz rozdzielnej pisowni. Z imiesłowami przysłówkowymi (*nie wiedząc, nie przeczytawszy*) piszemy **nie** rozdzielnie. Rozróżnij imiesłów od formy czasownikowej: *nie zrobiwszy* — imiesłów przysłówkowy uprzedni; *nie zrobiono* — forma nieosobowa czasownika.
+Z imiesłowami przymiotnikowymi (*nieprzeczytany, niezamknięte, nieznany*) od 1.01.2026 obowiązuje pisownia łączna **zawsze**, także przy przeciwstawieniu: *nieprzeczytany, lecz jedynie przejrzany* (dawny zapis rozdzielny był dopuszczalny tylko według zasad sprzed 2026 r.). Z imiesłowami przysłówkowymi (*nie wiedząc, nie przeczytawszy*) piszemy **nie** rozdzielnie. Rozróżnij imiesłów od formy czasownikowej: *nie zrobiwszy* — imiesłów przysłówkowy uprzedni; *nie zrobiono* — forma nieosobowa czasownika.
 
 ### 14.5. Przecinki i imiesłowy przymiotnikowe
 
@@ -343,6 +365,217 @@ Popraw i uzasadnij: „Przeczytawszy polecenie, rozwiązanie stało się proste,
 
 Potrafię rozpoznać cztery typy imiesłowów, utworzyć poprawne formy, sprawdzić aspekt i przechodniość, wskazać wykonawcę czynności, uzasadnić przecinki oraz rozstrzygnąć pisownię „nie” z imiesłowem przymiotnikowym i przysłówkowym.
 
+## 15 | Nie myl! {#nie-myl}
+
+::: nie-myl | Imiesłów czy coś podobnego?
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| *czytający* / *czytając* | ta sama baza *czytają* | *-ący* odmienia się (*czytającego*) — przymiotnikowy; *-ąc* nie — przysłówkowy |
+| *czytając* / *przeczytawszy* | oba przysłówkowe | *-ąc* — czynność równoczesna; *-wszy* — czynność wcześniejsza |
+| *gorący* / *płonący* | oba na *-ący* | *płonący* ← *płonąć* (czynność); *gorący* — dziś przymiotnik (cecha) |
+| *zmęczony uczeń* / *zmęczony przez bieg uczeń* | ta sama forma | gdy widać czynność i wykonawcę (*przez bieg*) — imiesłów; gdy stały stan — bywa traktowany jako przymiotnik |
+| *czytanie* / *czytany* | oba od *czytać* | *czytanie* — rzeczownik odczasownikowy (*co?*); *czytany* — imiesłów bierny (*jaki?*) |
+| *nieprzeczytany* / *nie przeczytawszy* | oba z *nie* | przymiotnikowy — łącznie; przysłówkowy — rozdzielnie |
+:::
+
+## 16 | Klinika — dodatkowe błędy {#klinika-plus}
+
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| Przyszedszy do domu, zjadł obiad. | Przyszedłszy do domu, zjadł obiad. | Po spółgłosce *-łszy*: *przyszedł → przyszedłszy*. |
+| Wziąźwszy plecak, wyszła. | Wziąwszy plecak, wyszła. | *wziął → wziąwszy* (po samogłosce *-wszy*). |
+| Będąc małym, babcia czytała mi bajki. | Gdy byłem mały, babcia czytała mi bajki. | Małe było dziecko, nie babcia — różni wykonawcy. |
+| Czytając lekturę, zrobiło mi się smutno. | Czytając lekturę, posmutniałem. | Zdanie z celownikiem (*mi*) nie ma podmiotu-wykonawcy. |
+| Przyjdący gość zadzwonił. | Przychodzący gość zadzwonił. | *-ący* tylko od niedokonanego: *przychodzić → przychodzący*. |
+| Zaśpiewawszy zjedli kolację. | Zaśpiewawszy, zjedli kolację. | Równoważnik oddzielamy przecinkiem. |
+| Nie przeczytana książka leżała na stole. | Nieprzeczytana książka leżała na stole. | Od 2026 r. z przymiotnikowymi zawsze łącznie. |
+:::
+
+## 17 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Przyszły i były — imiesłowy, które zapomniały o czasowniku
+Dawna polszczyzna miała jeszcze piąty imiesłów — **przymiotnikowy czynny przeszły**, zakończony na *-ły*. Przetrwał w wyrazach, które dziś są zwykłymi przymiotnikami: *przyszły* (od *przyjść* — „ten, który przyjdzie”), *były* (od *być*), *zbiegły, zgniły, dojrzały, przybyły*. Gdy mówisz *były prezydent*, używasz skamieniałego imiesłowu.
+:::
+
+::: karta extra | Bieżący rok, gorąca herbata
+Niektóre imiesłowy czynne „uciekły” od czasowników i stały się przymiotnikami: *bieżący* (dawniej „biegnący”; dziś „aktualny”), *gorący* (od dawnego *gorzeć* — płonąć), *wrzący*, *śpiący*. Test: jeśli wyraz oznacza stałą cechę, a nie trwającą czynność, w szkolnej analizie traktuj go jak przymiotnik.
+:::
+
+::: karta extra | Błąd, który ma nazwę po angielsku
+Źle użyty imiesłów przysłówkowy to błąd znany w wielu językach. Po angielsku nazywa się **dangling participle** („wiszący imiesłów”): *Walking down the street, the trees looked beautiful* — wychodzi, że drzewa spacerowały. Polska wersja: *Idąc ulicą, drzewa wyglądały pięknie.* Zasada jest ta sama: wykonawca imiesłowu = podmiot.
+:::
+
+::: karta extra | Imiesłów w języku urzędowym
+Formy na *-wszy* brzmią dziś książkowo i w mowie potocznej prawie znikły — za to trzymają się w języku prawnym i urzędowym: *zważywszy na okoliczności, wziąwszy pod uwagę*. *Zważywszy* stało się wręcz wyrażeniem przyimkowym („biorąc pod uwagę”).
+:::
+
+## 18 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — granice reguł o imiesłowach
+**Równoważnik przy zdaniu bezosobowym.** Norma dopuszcza imiesłowowy równoważnik, gdy zdanie nadrzędne ma ogólnego wykonawcę i bezokolicznik po *trzeba, należy, można, warto*: *Jadąc samochodem, należy zapiąć pasy.* Błędne pozostają zdania z innym podmiotem lub z celownikiem doznającego: *Czytając, zrobiło mi się smutno.* **Imiesłowy zleksykalizowane** — dawne imiesłowy, dziś przymiotniki (*bieżący, przyszły, były, zmarły*) — nie podlegają testowi „czynności”. **Imiesłów bierny a strona bierna.** *Drzwi są zamknięte* (stan — imiesłów jako orzecznik) vs *Drzwi zostały zamknięte przez woźnego* (strona bierna — czynność). **Imiesłów od czasownika zwrotnego** zachowuje *się*: *śmiejąc się, bojący się, nie kończący się → niekończący się* (od 2026 r. łącznie). **Formy rzadkie:** *będąc* (od *być*) — współczesny; *zostawszy* — uprzedni; *czytawszy* od niedokonanego — archaiczne.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — utwórz imiesłowy | poziom ambitny (konkurs)
+Utwórz wskazane imiesłowy albo napisz, że nie da się ich utworzyć, i uzasadnij.
+
+1. *przynieść* — przysłówkowy uprzedni
+2. *spać* — przymiotnikowy bierny
+3. *przeczytać* — przysłówkowy współczesny
+4. *nieść* — przymiotnikowy czynny
+
+::: odp | Pokaż klucz
+1. *przyniósłszy* 2. nie da się — *spać* jest nieprzechodni 3. nie da się — dokonany nie ma czasu teraźniejszego (współczesny tworzymy od niedokonanego: *czytając*) 4. *niosący*. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — poprawny czy wadliwy równoważnik? | poziom ambitny (konkurs)
+Oceń zdanie (poprawne / błędne) i uzasadnij.
+
+1. *Wchodząc do muzeum, należy zostawić plecak w szatni.*
+2. *Będąc dzieckiem, mama zabierała mnie nad morze.*
+3. *Przeczytawszy list, Ania się rozpłakała.*
+4. *Patrząc na to zdjęcie, robi mi się smutno.*
+
+::: odp | Pokaż klucz
+1. poprawne — zdanie bezosobowe z *należy* i ogólnym wykonawcą 2. błędne — dzieckiem był „ja”, a podmiotem jest *mama* 3. poprawne — Ania przeczytała i Ania się rozpłakała 4. błędne — brak podmiotu-wykonawcy, *mi* to celownik. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — imiesłów czy przymiotnik? | poziom ambitny (konkurs)
+Rozstrzygnij i uzasadnij: *bieżący miesiąc*, *biegnący chłopiec*, *były dyrektor*.
+
+::: odp | Pokaż klucz
+*bieżący* — przymiotnik (= aktualny, nie oznacza biegu); *biegnący* — imiesłów przymiotnikowy czynny (czynność biegu); *były* — przymiotnik, dawny imiesłów czynny przeszły od *być*. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O4 (4 pkt) — stan czy czynność? | poziom ambitny (konkurs)
+Określ, czy zdanie opisuje stan (imiesłów jako orzecznik), czy jest w stronie biernej.
+
+1. *Sklep jest zamknięty.*
+2. *Sklep został zamknięty przez sanepid.*
+3. *List był pisany przez kilka dni.*
+4. *Okno jest otwarte od rana.*
+
+::: odp | Pokaż klucz
+1. stan 2. strona bierna (czynność, wykonawca *przez sanepid*) 3. strona bierna (czynność w toku) 4. stan. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O5 (5 pkt) — przekształcenia | poziom ambitny (konkurs)
+Zastąp zdania podrzędne równoważnikami, jeśli to możliwe; jeśli nie — wyjaśnij.
+
+1. *Gdy Bilbo wyszedł z jaskini, odetchnął z ulgą.*
+2. *Kiedy szliśmy przez las, zaczęło padać.*
+3. *Ponieważ nie wiedział, co robić, Edmund milczał.*
+
+::: odp | Pokaż klucz
+1. *Wyszedłszy z jaskini, Bilbo odetchnął z ulgą.* (2 pkt — imiesłów uprzedni, przecinek) 2. nie da się — w zdaniu nadrzędnym brak podmiotu wykonawcy (*zaczęło padać*) (1 pkt) 3. *Nie wiedząc, co robić, Edmund milczał.* (2 pkt — *nie* rozdzielnie, przecinki)
+:::
+:::
+
+## 19 | Test sprawdzający {#test}
+
+::: test
+? Który wyraz jest imiesłowem przysłówkowym uprzednim?
++ zjadłszy
+- jedząc
+- jedzący
+- zjedzony
+! Zakończenie *-łszy*, czynność wcześniejsza.
+? Od którego czasownika NIE utworzysz imiesłowu biernego?
++ iść
+- czytać
+- budować
+- malować
+! *Iść* jest nieprzechodni — nie łączy się z dopełnieniem w bierniku.
+? Które zdanie jest poprawne?
++ Idąc przez park, zobaczyłem wiewiórkę.
+- Idąc przez park, zaczął padać śnieg.
+- Idąc przez park, zrobiło się ciemno.
+- Idąc przez park, wiewiórka uciekła.
+! Tylko tu wykonawca imiesłowu (ja) jest podmiotem zdania nadrzędnego.
+? Wskaż poprawny zapis.
++ niezapięty pas, nie patrząc
+- nie zapięty pas, nie patrząc
+- niezapięty pas, niepatrząc
+- nie zapięty pas, niepatrząc
+! Przymiotnikowe — łącznie, przysłówkowe — rozdzielnie.
+? Imiesłów „czytający” utworzono od:
++ 3. osoby liczby mnogiej czasu teraźniejszego
+- bezokolicznika
+- tematu czasu przeszłego
+- 1. osoby liczby pojedynczej
+! *czytają + -cy* → *czytający*.
+? Funkcja imiesłowu w zdaniu „Śpiący kot leżał na kanapie”:
++ przydawka
+- okolicznik
+- orzeczenie
+- dopełnienie
+! *Jaki kot?* — śpiący: imiesłów przymiotnikowy pełni funkcję przydawki.
+? Gdzie postawisz przecinek? „Usłyszawszy hałas Bilbo schował się.”
++ po „hałas”
+- po „Usłyszawszy”
+- po „Bilbo”
+- nigdzie
+! Równoważnik *Usłyszawszy hałas* oddzielamy od zdania.
+? Która forma jest poprawna?
++ przyszedłszy
+- przyszedszy
+- przyszłszy
+- przyszedłwszy
+! Temat *przyszedł* kończy się spółgłoską *ł* → dodajemy *-szy*: *przyszedłszy* (tak jak *zjadł → zjadłszy*).
+? „Bieżący rok” — wyraz „bieżący” to:
++ przymiotnik (dawny imiesłów)
+- imiesłów przymiotnikowy czynny
+- imiesłów przysłówkowy
+- przysłówek
+! Oznacza cechę „aktualny”, nie czynność biegu. (poziom ambitny)
+? Które zdanie z równoważnikiem norma dopuszcza?
++ Jadąc rowerem, trzeba nosić kask.
+- Jadąc rowerem, spadł mi łańcuch.
+- Jadąc rowerem, zaczęło padać.
+- Jadąc rowerem, było mi zimno.
+! Zdanie bezosobowe z *trzeba* + bezokolicznik i ogólnym wykonawcą. (poziom ambitny)
+:::
+
+## 20 | Słownik pojęć {#slownik}
+
+::: slownik
+imiesłów :: forma czasownika zachowująca znaczenie czynności i aspekt, a w zdaniu działająca jak przymiotnik lub przysłówek.
+imiesłów przymiotnikowy czynny :: forma na -ący (czytający) — odmienna; od czasowników niedokonanych.
+imiesłów przymiotnikowy bierny :: forma na -ny, -ony, -ty (czytany, przyniesiony, zbity) — odmienna; od czasowników przechodnich.
+imiesłów przysłówkowy współczesny :: forma na -ąc (czytając) — nieodmienna; czynność równoczesna; od niedokonanych.
+imiesłów przysłówkowy uprzedni :: forma na -wszy, -łszy (przeczytawszy, zjadłszy) — nieodmienna; czynność wcześniejsza; od dokonanych.
+imiesłowowy równoważnik zdania :: imiesłów przysłówkowy z określeniami zastępujący zdanie podrzędne; wymaga wspólnego wykonawcy i przecinka.
+czasownik przechodni :: czasownik łączący się z dopełnieniem w bierniku — tylko od niego tworzymy imiesłów bierny.
+imiesłów zleksykalizowany :: dawny imiesłów, który stał się przymiotnikiem (bieżący, przyszły, były).
+:::
+
+## 21 | Fiszki interaktywne {#fiszki}
+
+::: fiszki
+Cztery imiesłowy | przymiotnikowy czynny, bierny; przysłówkowy współczesny, uprzedni | basic:imieslowy
+Zakończenie czynnego | -ący | basic:imieslowy
+Zakończenia biernego | -ny, -ony, -ty | basic:imieslowy
+Współczesny — zakończenie i aspekt | -ąc, niedokonany | basic:imieslowy
+Uprzedni — zakończenie i aspekt | -wszy / -łszy, dokonany | basic:imieslowy
+Które imiesłowy się odmieniają? | przymiotnikowe | basic:imieslowy
+Zasada równoważnika | ten sam wykonawca co podmiot zdania nadrzędnego | basic:imieslowy
+Przecinek przy równoważniku? | tak (wtrącony — z obu stron) | basic:imieslowy
+„nie” z imiesłowem przymiotnikowym | łącznie (zawsze, od 2026) | basic:imieslowy
+„nie” z imiesłowem przysłówkowym | rozdzielnie | basic:imieslowy
+Imiesłów bierny — od jakich czasowników? | przechodnich | basic:imieslowy
+Funkcja imiesłowu przymiotnikowego | przydawka | basic:imieslowy
+*Jadąc autem, należy zapiąć pasy* | poprawne — zdanie bezosobowe z ogólnym wykonawcą | olimpijski:imieslowy
+*przyszły, były, bieżący* | dawne imiesłowy, dziś przymiotniki | olimpijski:imieslowy
+*Drzwi są zamknięte* vs *zostały zamknięte* | stan vs strona bierna | olimpijski:imieslowy
+*przyjść* → uprzedni | przyszedłszy | olimpijski:imieslowy
+*przeczytać* → współczesny? | nie da się — dokonany | olimpijski:imieslowy
+dangling participle | angielska nazwa błędu „wiszący imiesłów” | olimpijski:imieslowy
+:::
+
 ## AUDYT W1 — wynik (2026-10-09, GPT-6)
 
 ### Zakres kontroli
@@ -360,3 +593,10 @@ Zalecany klucz: *nie wiedząc; nieprzygotowany uczeń; nie wykonawszy zadania; n
 
 ### Status
 Lekcja jest rozbudowana i zasadniczo spójna. Najważniejsze ryzyko dotyczy zbyt kategorycznego klucza pisowni w przeciwstawieniu oraz uproszczenia reguły tworzenia imiesłowu biernego. Kontrola W2 aktualnego źródła RJP/CKE pozostaje wymagana.
+
+## ULEPSZENIE — Claude, 2026-10-11
+
+- Dodano: wykład „od zera” (po §1), 2 mini-wykłady „W skrócie” (dwie bazy tworzenia przed §4, test wykonawcy przed §6), §15 nie-myl, §16 klinika (7 wierszy), §17 ciekawostki (4), §18 warstwa olimpijska (Dla olimpijczyka + O1–O5 z kluczami), §19 test (10), §20 słownik (8), §21 fiszki interaktywne (12 dotychczasowych + 6 olimpijskich). Nic nie usunięto.
+- Poprawione: §2 — *gorący* (dawny imiesłów od *gorzeć*, nie „brak czasownika”), usunięto błędne „*idący* = aktualny” (chodzi o *bieżący*); §14.4 — dostosowano do zasady z 2026 r. (zawsze łącznie z przymiotnikowymi).
+- Częściowa odpowiedź Perplexity bez wglądu w lekcję (`polski/plany/audyty/ULEPSZ_PPLX_G06_czesc1_2026-10-11.md`) — nie wprowadzano (powiela zakres).
+
