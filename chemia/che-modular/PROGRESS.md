@@ -98,3 +98,4 @@
 - 2026-10-11: POL G12 części zdania — ULEPSZ --olimpiada scalone (v4.0, 58 KB, przydawka rozbudowana, W1 FULL).
 - 2026-10-11: ANG L004 (W1 FULL) i L005 (FULL do §8) — warstwa olimpijska z odpowiedzi AI; model czyta ~50 KB → paczki po 1 lekcji ≤ 50 KB, nowe narzędzie eksport/podziel_lekcje.py; 15 nowych paczek.
 - 2026-10-11: ANG L006 Past Simple/Continuous — ULEPSZ --olimpiada scalone (W1 FULL, 47 KB).
+- 2026-10-11: ANG L005 część 2 scalona — lekcja W1 FULL (60 KB).

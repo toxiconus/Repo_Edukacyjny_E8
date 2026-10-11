@@ -5,7 +5,7 @@ tytul: Present Perfect
 lead: Egzamin ósmoklasisty · kompleksowe przygotowanie — Lekcja 5 – doświadczenia, niedawne wydarzenia, since/for
 stopka: Lekcja 5 – Present Perfect • Wersja 2.0 (ULEPSZONA) • 2026-10-11
 zrodlo: L005-EN-Present-Perfect.html (konwersja html_do_md.py, 2026-10-09; ulepszenie i warstwa olimpijska: model AI, 2026-10-11)
-stan: W1 FULL częściowo (model widział do §8) — model AI (paczka ULEPSZ --olimpiada ANG_OLI1), 2026-10-11; dalsza część oryginału zachowana bez oceny modelu — do ponownego W1 od „Present Perfect vs Past Simple”; scalenie i sprawdzenie Claude
+stan: W1 FULL — model AI (paczki ULEPSZ --olimpiada ANG_OLI1 + ANG_L005_reszta), 2026-10-11; scalenie i sprawdzenie Claude
 ---
 [← Poprzednia lekcja](lekcja 04.html) [Spis wszystkich lekcji](index.html) [Następna lekcja →](lekcja 06.html)
 
@@ -249,93 +249,84 @@ Czy odpowiadasz „od kiedy?" → **since**; czy „jak długo?" → **for**.
 Stoisz przed since i for? Zadaj dwa pytania. **1)** Czy mogę wskazać palcem punkt na osi czasu — godzinę, dzień, rok, moment „od kiedy"? (*since Monday, since my birthday, since 2020*) → **since**. **2)** Czy to miara długości — ile trwało? (*for two hours, for a week, for a long time*) → **for**. Pułapka: *since I was a child* też jest since, bo „kiedy byłem dzieckiem" to punkt startu — nawet jeśli to całe zdanie, nie jedno słowo.
 :::
 
-## 4 | Present Perfect vs Past Simple
+## 9 | Present Perfect vs Past Simple {#pp-vs-ps}
 
-## 9. Porównanie
+### Porównanie
 
 | Present Perfect | Past Simple |
 |---|---|
 | doświadczenie | zakończone wydarzenie |
 | skutek ważny teraz | fakt z przeszłości |
 | czas nieokreślony | określony moment |
-| <em>ever / never</em> | <em>yesterday</em> |
-| <em>just / already / yet</em> | <em>last week</em> |
-| <em>since / for</em> | <em>in 2020</em> |
-| <em>so far</em> | <em>two days ago</em> |
+| *ever / never* | *yesterday* |
+| *just / already / yet* | *last week* |
+| *since / for* | *in 2020* |
+| *so far* | *two days ago* |
 
-::: karta basic | Najważniejszy test decyzyjny
-**KROK 1:** Czy zdanie podaje konkretny, zakończony moment (<em>yesterday, last week, in 2020, two days ago, last summer</em>)?
+::: karta core | Najważniejszy test decyzyjny
+**KROK 1:** Czy zdanie podaje konkretny, zakończony moment (*yesterday, last week, in 2020, two days ago, last summer*)?
 
 TAK → **Past Simple**
 
-NIE → przejdź do kroku 2
+NIE → przejdź do kroku 2.
 
 **KROK 2:** Czy mówimy o doświadczeniu, czymś niedawnym, skutku ważnym teraz lub sytuacji trwającej do teraz?
 
 TAK → **Present Perfect**
-
 :::
 
-::: karta warning | Kluczowe porównania
-::: div.przyklad
-&#8203;<span class="tag">doświadczenie</span> <span class="eng">I have visited Paris.</span> <span class="pl">Byłem w Paryżu. (doświadczenie)</span>
+::: karta basic | Kluczowe porównania
+- *doświadczenie* — **I have visited Paris.** — Byłem w Paryżu. (doświadczenie)
+- *konkretny moment* — **I visited Paris in 2022.** — Byłem w Paryżu w 2022. (konkretny moment)
+- *skutek teraz* — **I have lost my keys.** — Zgubiłem klucze. (i teraz ich nie mam)
+- *konkretny moment* — **I lost my keys yesterday.** — Zgubiłem klucze wczoraj. (konkretny moment)
 :::
 
-::: div.przyklad
-&#8203;<span class="tag">konkretny moment</span> <span class="eng">I visited Paris in 2022.</span> <span class="pl">Byłem w Paryżu w 2022. (konkretny moment)</span>
-:::
-
-::: div.przyklad
-&#8203;<span class="tag">skutek teraz</span> <span class="eng">I have lost my keys.</span> <span class="pl">Zgubiłem klucze. (i teraz ich nie mam)</span>
-:::
-
-::: div.przyklad
-&#8203;<span class="tag">konkretny moment</span> <span class="eng">I lost my keys yesterday.</span> <span class="pl">Zgubiłem klucze wczoraj. (konkretny moment)</span>
-:::
-
-:::
-
-## 10. Czego nie łączymy z Present Perfect
+### Czego nie łączymy z Present Perfect
 
 ::: karta warning | Z Present Perfect nie łączymy zakończonych określeń czasu!
-- <em>yesterday</em>
-- <em>last week</em>
-- <em>last year</em>
-- <em>two days ago</em>
-- <em>in 2020</em>
+- *yesterday*
+- *last week*
+- *last year*
+- *two days ago*
+- *in 2020*
 
-::: div.przyklad
-&#8203;<span class="error-text">✗ I have seen him yesterday.</span> <span class="correct-text">✓ I saw him yesterday.</span>
+✗ *I have seen him yesterday.* — ✓ *I saw him yesterday.*
 :::
 
-:::
-
-## 11. Been vs Gone – ważna pułapka egzaminacyjna
+### Been vs Gone – ważna pułapka egzaminacyjna
 
 ::: karta warning | been to = był i wrócił
-::: div.przyklad
-&#8203;<span class="eng">I have <span class="hl-main-verb">been</span> to Paris.</span> <span class="pl">Byłem w Paryżu i wróciłem.</span>
-:::
-
+**I have been to Paris.** — Byłem w Paryżu i wróciłem.
 :::
 
 ::: karta warning | gone to = poszedł/pojechał i jeszcze nie wrócił
-::: div.przyklad
-&#8203;<span class="eng">She has <span class="hl-main-verb">gone</span> to the shops.</span> <span class="pl">Poszła do sklepu i prawdopodobnie jeszcze jej nie ma.</span>
-:::
-
+**She has gone to the shops.** — Poszła do sklepu i prawdopodobnie jeszcze jej nie ma.
 :::
 
 ::: karta basic | Zapamiętaj!
 **been** = był i wrócił (doświadczenie)
 
 **gone** = pojechał i został (nie wrócił)
-
 :::
 
-## 5 | Słownictwo
+::: karta understand | W skrócie — rodzina określeń „do teraz"
+Oprócz *ever, never, just, already, yet* i pary *since/for* istnieje cała rodzina określeń patrzących na okres „aż do teraz": **so far** (dotychczas), **up to now** (do tej pory), **recently** i **lately** (ostatnio), **in recent years** (w ostatnich latach), **for ages** (bardzo długo). Wszystkie łączą się z Present Perfect, bo liczą wynik od przeszłości do momentu mówienia: *I have read three books so far*, *Have you seen him lately?* Druga rodzina — *yesterday, last week, two days ago, in 2020* — zamyka okres i wymusza Past Simple. Test na konkurs: jeśli określenie da się zastąpić „do tej pory" → Present Perfect; jeśli „tego konkretnego dnia" → Past Simple.
+:::
 
-## 12. Słowniczek – doświadczenia, osiągnięcia, podróże
+::: adv | Zadanie O7 (4 pkt) — been, gone czy been in? | poziom ambitny
+Uzupełnij i uzasadnij wybór (1 pkt za zdanie z uzasadnieniem).
+
+1. „Where's Tom?" — „He's ______ to the dentist's."
+2. I ______ to Cracow many times — it's my favourite city.
+3. She ______ in Madrid since March.
+
+::: odp | Pokaż klucz
+1. **gone** — Tom go nie ma (pytanie „Where's Tom?"), pojechał i jeszcze nie wrócił; 2. **have been** — doświadczenie: wiele wizyt i powrotów; 3. **has been (in)** — konstrukcja *been in* = przebywać: trwanie od punktu *since March* (konkurs).
+:::
+:::
+
+## 10 | Słownictwo – doświadczenia, osiągnięcia, podróże {#slownictwo}
 
 ### Doświadczenia i osiągnięcia
 
@@ -368,9 +359,9 @@ recently / lately || ostatnio || I have recently started a new hobby.
 so far / up to now || do tej pory || So far, we have seen three museums.
 in my life || w moim życiu || I have never lied to my parents.
 take part in || brać udział w || I have taken part in many school events.
-take up || zacząć hobby || She has taken up painting recently.
+take up || zacząć (hobby) || She has taken up painting recently.
 carry on || kontynuować || They have carried on despite problems.
-give up || podać się || He has never given up on his dream.
+give up || poddać się (rzucić, zrezygnować) || He has never given up on his dream.
 set a goal || wyznaczyć cel || We have set a new goal this month.
 reach a goal || osiągnąć cel || She has reached her goal at last.
 improvement || poprawa || There has been a big improvement.
@@ -387,95 +378,99 @@ make a decision || podjąć decyzję || We have made an important decision.
 keep trying || próbować dalej || I have kept trying and finally succeeded.
 :::
 
-## 6 | Synonimy i przeciwieństwa
+::: karta understand | W skrócie — opowiadanie o osiągnięciach
+Słownictwo tej sekcji układa się w scenariusz, który często pojawia się w wypowiedziach pisemnych: **set a goal** (wyznaczasz cel) → **keep trying** (próbujesz dalej) → **succeed** albo **fail** (udaje się lub nie) → **reach a goal** (osiągasz cel) → **be proud of** (jesteś dumny). Wyniki opisujesz w Present Perfect, bo wpisują się do twojego „licznika do teraz": *I have made good progress*, *I have reached my goal at last*. Uważaj na parę **take up** (zacząć nowe hobby) i **give up** (poddać się, rzucić): *She has taken up painting*, *He has never given up on his dream*. To jedne z najczęściej sprawdzanych czasowników frazowych na konkursach.
+:::
 
-≈ **have** ≈ **has** (różne osoby) ≈ **ever** ≈ **never** (przeciwstawne) ≈ **just** ≈ **already** (niedawne) ≈ **since** ≈ **for** (czas trwania) ≠ **Present Perfect** ≠ **Past Simple** ≠ **been** ≠ **gone**
+::: adv | Zadanie O8 (4 pkt) — Przekształcanie: słownictwo osiągnięć | poziom ambitny
+Przekształć zdania, zachowując znaczenie. Użyj nie więcej niż cztery słowa (1 pkt za zdanie).
 
-## Tip tygodnia | Sprawdź, czy jest konkretna data
+1. He began playing chess five years ago and still plays. → He ______ ______ chess for five years.
+2. She recently started painting as a hobby. → She has ______ ______ painting.
+3. I met her a very long time ago. → I have known her ______ ______.
+4. He never stopped trying. → He has never ______ ______.
+
+::: odp | Pokaż klucz
+1. **has played** — „and still plays" = trwa do teraz + *for* → Present Perfect; 2. **taken up** — *recently* → Present Perfect; *take up* = zacząć hobby; 3. **for ages** — „a very long time ago" → długi okres trwający do teraz: *for ages*; 4. **given up** — *never* + doświadczenie do teraz → Present Perfect; *give up* = poddać się.
+:::
+:::
+
+## 11 | Synonimy i przeciwieństwa {#synonimy}
+
+| Para | Relacja | Komentarz |
+|---|---|---|
+| **have ≈ has** | ta sama forma, różne osoby | I / you / we / they → have; he / she / it → has |
+| **ever ≈ never** | przeciwstawne | kiedykolwiek (pytanie) / nigdy (twierdzenie o znaczeniu przeczącym) |
+| **just ≈ already** | bliskoznaczne (niedawność) | just = „właśnie"; already = „już" (twierdzenie) |
+| **since ≈ for** | oba o czasie trwania | since = punkt startu; for = długość okresu |
+| **Present Perfect ≠ Past Simple** | kluczowa opozycja lekcji | brak momentu + związek z teraz vs zakończony moment |
+| **been ≠ gone** | opozycja | był i wrócił / pojechał i nie wrócił |
+
+## 12 | Tip tygodnia — sprawdź, czy jest konkretna data {#tip-tygodnia}
 
 ::: karta warning | Najpierw sprawdź, czy podano zakończony moment
-Jeśli w zdaniu jest **zakończony moment** (<em>yesterday, in 2024, last summer, two days ago</em>) → wybierz **Past Simple**.
+Jeśli w zdaniu jest **zakończony moment** (*yesterday, in 2024, last summer, two days ago*) → wybierz **Past Simple**.
 
 Jeśli chodzi o **doświadczenie życiowe** albo **skutek ważny teraz** → **Present Perfect**.
 
 Przykłady do zapamiętania:
 
-- <em>I went to Paris in 2022.</em> – Past Simple (konkretny rok)
-- <em>I have been to Paris.</em> – Present Perfect (doświadczenie)
-- <em>She bought a new phone yesterday.</em> – Past Simple (konkretny dzień)
-- <em>She has just bought a new phone.</em> – Present Perfect (niedawno, skutek – ma nowy telefon)
+- *I went to Paris in 2022.* – Past Simple (konkretny rok)
+- *I have been to Paris.* – Present Perfect (doświadczenie)
+- *She bought a new phone yesterday.* – Past Simple (konkretny dzień)
+- *She has just bought a new phone.* – Present Perfect (niedawno, skutek – ma nowy telefon)
 
 **Twoje zadanie:** Napisz po 3 zdania o swoich doświadczeniach życiowych (Present Perfect) i 3 zdania o zakończonych wydarzeniach z konkretnymi datami (Past Simple).
-
 :::
 
-## 8 | Ćwiczenia egzaminacyjne
+::: karta understand | W skrócie — polskie „już" a angielskie already i yet
+Polskie „już" kryje dwa różne angielskie słówka — i tu Polacy gubią punkty. W twierdzeniach „już" = **already** przed III formą: *I have already finished.* Ale w pytaniach i przeczeniach „już" (albo „jeszcze") = **yet** na końcu zdania: *Have you finished yet? / I haven't finished yet.* Test: zdanie twierdzące → already; pytanie lub przeczenie → yet. I nigdy razem: ✗ *I have already finished yet.* Podobnie „kiedykolwiek" w pytaniu to **ever**, a odpowiedź przecząca to **never** — bez podwójnego przeczenia.
+:::
 
-**Zadanie 1. Uzupełnij have/has + 3. formą [[basic:PODSTAWA]]**
+## 13 | Ćwiczenia egzaminacyjne {#cwiczenia-egzaminacyjne}
 
+::: karta exam | Zadanie 1 (5 pkt) — Uzupełnij have/has + III formą [[basic:PODSTAWA]]
 1. I ______ (never / be) to Spain.
 2. She ______ (just / finish) her project.
 3. ______ you ______ (ever / try) sushi?
 4. They ______ (live) here for ten years.
 5. He ______ (not / see) this film yet.
 
-::: odp | Podpowiedzi
-1. ever/never → doświadczenie → Present Perfect. 2. just → niedawne wydarzenie → Present Perfect. 3. yet → w przeczeniu → Present Perfect.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. ever/never → doświadczenie → Present Perfect. 2. just → niedawne wydarzenie → Present Perfect. 3. yet → w przeczeniu → Present Perfect.
 
+Klucz (1 pkt za zdanie): 1. **have never been** 2. **has just finished** 3. **Have you ever tried** 4. **have lived** 5. **hasn't seen**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **have never been**
-2. **has just finished**
-3. **Have you ever tried**
-4. **have lived**
-5. **hasn't seen**
-
-:::
-
-**Zadanie 2. Present Perfect czy Past Simple? [[basic:PODSTAWA]]**
-
+::: karta exam | Zadanie 2 (4 pkt) — Present Perfect czy Past Simple? [[basic:PODSTAWA]]
 1. I ______ (visit) London in 2022.
 2. She ______ (never / eat) octopus.
 3. We ______ (go) to the cinema yesterday.
 4. He ______ (just / arrive).
 
-::: odp | Podpowiedzi
-1. in 2022 → konkretny moment → Past Simple. 2. never → doświadczenie → Present Perfect. 3. yesterday → konkretny moment → Past Simple.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. in 2022 → konkretny moment → Past Simple. 2. never → doświadczenie → Present Perfect. 3. yesterday → konkretny moment → Past Simple.
 
+Klucz (1 pkt za zdanie): 1. **visited** 2. **has never eaten** 3. **went** 4. **has just arrived**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **visited**
-2. **has never eaten**
-3. **went**
-4. **has just arrived**
-
-:::
-
-**Zadanie 3. Since czy for? [[understand:TRENING]]**
-
+::: karta exam | Zadanie 3 (4 pkt) — Since czy for? [[understand:TRENING]]
 1. I have known her ______ 2018.
 2. They have lived here ______ five years.
 3. She has been ill ______ Monday.
 4. We have waited ______ two hours.
 
-::: odp | Podpowiedzi
-1. since = punkt (moment), for = okres. 2. 2018, Monday → punkty → since. 3. five years, two hours → okresy → for.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: since = punkt (moment), for = okres. 2018, Monday → punkty → since. five years, two hours → okresy → for.
 
+Klucz (1 pkt za zdanie): 1. **since** 2. **for** 3. **since** 4. **for**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **since**
-2. **for**
-3. **since**
-4. **for**
-
-:::
-
-**Zadanie 4. Uzupełnij – wstaw właściwe określenie [[exam:EGZAMIN]]**
-
-(just, already, yet, ever, never)
+::: karta exam | Zadanie 4 (5 pkt) — Wstaw właściwe określenie [[exam:EGZAMIN]]
+(just, already, yet, ever, never — każde użyte raz)
 
 1. I have ______ eaten sushi. It was delicious.
 2. Have you ______ been to a concert?
@@ -483,163 +478,88 @@ Przykłady do zapamiętania:
 4. He has ______ arrived. He is here now.
 5. I have ______ seen such a beautiful view.
 
-::: odp | Podpowiedzi
-1. already → twierdzenie, już. 2. ever → pytanie, kiedykolwiek. 3. yet → przeczenie, na końcu. 4. just → właśnie, niedawno. 5. never → nigdy, twierdzenie o znaczeniu przeczącym.
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: already → twierdzenie, już. ever → pytanie, kiedykolwiek. yet → przeczenie, na końcu. just → właśnie, niedawno. never → nigdy, twierdzenie o znaczeniu przeczącym.
 
+Klucz (1 pkt za zdanie): 1. **already** 2. **ever** 3. **yet** 4. **just** 5. **never**
+:::
 :::
 
-::: odp | Odpowiedź
-1. **already**
-2. **ever**
-3. **yet**
-4. **just**
-5. **never**
+::: karta exam | Zadanie 5 (5 pkt) — Popraw błędy [[exam:EGZAMIN]]
+1. *I have went to London.* → ___________________
+2. *She has seen him yesterday.* → ___________________
+3. *I have lived here since five years.* → ___________________
+4. *He has already finished yet.* → ___________________
+5. *They hasn't done their homework.* → ___________________
 
+::: odp | Podpowiedzi i klucz
+Podpowiedzi: 1. Sprawdź, czy to III forma (gone/been). 2. yesterday → Past Simple. 3. five years → okres → for. 4. already i yet nie występują razem w twierdzeniu. 5. they → have, nie has.
+
+Klucz (1 pkt za zdanie): 1. **I have gone to London.** albo **I have been to London.** (po have III forma: gone = wyjechał i nie wrócił, been = był i wrócił — wybór zależy od znaczenia) 2. **She saw him yesterday.** 3. **I have lived here for five years.** 4. **He has already finished.** (yet tylko w pytaniach i przeczeniach) 5. **They haven't done their homework.**
+:::
 :::
 
-**Zadanie 5. Popraw błędy [[exam:EGZAMIN]]**
+::: karta exam | Zadanie 6 (4 pkt) — Mini-wypowiedź pisemna PISANIE
+Napisz 3–4 zdania o swoich doświadczeniach życiowych, używając Present Perfect (*have/has been, have/has never…*).
 
-1. <span class="error-text">I have went to London.</span> → ___________________
-2. <span class="error-text">She has seen him yesterday.</span> → ___________________
-3. <span class="error-text">I have lived here since five years.</span> → ___________________
-4. <span class="error-text">He has already finished yet.</span> → ___________________
-5. <span class="error-text">They hasn't done their homework.</span> → ___________________
+::: odp | Przykład i punktacja
+Punktacja: 2 pkt – poprawne formy Present Perfect w każdym zdaniu; 2 pkt – poprawność i spójność.
 
-::: odp | Podpowiedzi
-1. Sprawdź, czy to III forma (gone/been). 2. yesterday → Past Simple. 3. five years → okres → for. 4. already i yet nie występują razem w twierdzeniu. 5. they → have, nie has.
-
+Przykład: *I have never been to Spain, but I have visited Germany twice. I have already tried sushi and I loved it. I have also taken part in a school competition.*
+:::
 :::
 
-::: odp | Odpowiedź
-1. <span class="correct-text">I have gone / been to London.</span> (went to forma przeszła – w PP używamy III formy)
-2. <span class="correct-text">She saw him yesterday.</span> (yesterday → Past Simple)
-3. <span class="correct-text">I have lived here for five years.</span> (five years = okres → for)
-4. <span class="correct-text">He has already finished.</span> (yet w przeczeniach i pytaniach, already w twierdzeniach)
-5. <span class="correct-text">They haven't done their homework.</span> (they → have)
-
-:::
-
-**Zadanie 6. Mini-wypowiedź pisemna PISANIE**
-
-Napisz 3–4 zdania o swoich doświadczeniach życiowych, używając Present Perfect (<em>have/has been, have/has never...</em>).
-
-::: odp | Odpowiedź
-&#8203;<em>I have never been to Spain, but I have visited Germany twice. I have already tried sushi and I loved it. I have also taken part in a school competition.</em>
-
-:::
-
-**Mini-powtórka – Present Simple/Continuous vs Present Perfect [[exam:EGZAMIN]]**
-
+::: karta exam | Zadanie 7 (5 pkt) — Mini-powtórka: Present Simple/Continuous vs Present Perfect [[exam:EGZAMIN]]
 1. I usually ______ (go) to school by bus.
 2. I ______ just ______ (finish) my homework.
 3. She ______ (is watching / has watched) TV right now.
-4. Popraw: <span class="error-text">I have seen him yesterday.</span>
+4. Popraw: *I have seen him yesterday.*
 5. They ______ (live) here since 2020.
 
-::: odp | Odpowiedź
-1. **go** (rutyna → Present Simple)
-2. **have ... finished** (just → Present Perfect)
-3. **is watching** (right now → Present Continuous)
-4. <span class="correct-text">I saw him yesterday.</span>
-5. **have lived** (since 2020 → Present Perfect)
-
+::: odp | Klucz
+1. **go** (rutyna → Present Simple) 2. **have ... finished** (just → Present Perfect) 3. **is watching** (right now → Present Continuous) 4. **I saw him yesterday.** (yesterday → Past Simple) 5. **have lived** (since 2020 → Present Perfect)
+:::
 :::
 
-## 9 | Ważne! – 6 kluczowych zasad
+::: adv | Zadanie O9 (4 pkt) — Znajdź błąd: blog „Mój rok" | poziom ambitny
+W tekście ukryto **4 błędy**. Znajdź je, popraw i uzasadnij (1 pkt za błąd z uzasadnieniem). Uwaga: niektóre formy wyglądają podejrzanie, ale są POPRAWNE — nie „naprawiaj" ich.
 
-1 **have/has + III forma**
+*This year has been amazing. I have took up photography in January — I have already taken part in two competitions! Last weekend I have won my first medal. I have never felt so proud before. My results have improved a lot so far, and yesterday I have set a new goal: a trip to London. I have been to the UK twice, so I know the airport well. My cousin has gone to London three times, and she always tells me what to visit there.*
 
-She has written a letter.
+::: odp | Pokaż klucz
+1. **have took → have taken** — po have/has zawsze III forma; 2. **Last weekend I have won → I won** — last weekend = zakończony moment → Past Simple; 3. **yesterday I have set → I set** — yesterday → Past Simple; 4. **My cousin has gone to London three times → has been** — three times = doświadczenie (wracała); gone znaczyłoby, że jej nie ma. Formy POPRAWNE (pułapki): *I have already taken part* (already → PP), *I have never felt so proud before* (before → PP), *My results have improved a lot so far* (so far → PP), *I have been to the UK twice* (doświadczenie).
+:::
+:::
 
-2 **since = moment, for = okres**
+::: adv | Zadanie O10 (5 pkt) — Analiza tekstu: wpis na forum podróżniczym | poziom ambitny
+Uzupełnij tekst poprawnymi formami czasowników i uzasadnij każdy wybór (1 pkt za lukę z uzasadnieniem).
 
-since 2020 / for two years
+*Hi! I (1) ______ (just / come) back from Norway. I (2) ______ (go) there with my family last month, and we visited six fjords in one week. It was my dad's idea — he (3) ______ (always / dream) about seeing the northern lights, and he finally (4) ______ (see) them on our last evening. (5) ______ you ______ (ever / travel) above the Arctic Circle? You should!*
 
-3 **Nie łącz z yesterday, last week, ago, in 2020**
+::: odp | Pokaż klucz
+1. **have just come** — just → Present Perfect; 2. **went** — last month = zakończony moment → Past Simple; 3. **had always dreamed** — marzenie trwało aż do chwili, gdy je spełnił (*finally saw*) — Past Perfect, poziom konkursowy; na poziomie E8 uznaj też *has always dreamed* tylko wtedy, gdy marzenie wciąż trwa; 4. **saw** — on our last evening = zamknięty moment → Past Simple; 5. **Have … ever travelled** — ever (doświadczenie życiowe) → Present Perfect.
+:::
+:::
 
-To Past Simple!
+## 14 | Ważne! – 6 kluczowych zasad {#6-zasad}
 
-4 **just / already / yet / ever / never**
+1. **have/has + III forma** — *She has written a letter.*
+2. **since = moment, for = okres** — *since 2020 / for two years*
+3. **Nie łącz z yesterday, last week, ago, in 2020** — to Past Simple!
+4. **just / already / yet / ever / never** — typowe określenia Present Perfect
+5. **been vs gone** — been = był i wrócił; gone = pojechał i nie wrócił
+6. **Have you ever…?** — „Czy kiedykolwiek…?" – typowe dla doświadczeń
 
-Typowe określenia Present Perfect
-
-5 **been vs gone**
-
-been = był i wrócił; gone = pojechał i nie wrócił
-
-6 **Have you ever…?**
-
-Czy kiedykolwiek…? – typowe dla doświadczeń
-
-::: karta error | Zapamiętaj na egzamin!
+::: karta core | Zapamiętaj na egzamin!
 - **Present Perfect** = doświadczenia, niedawne wydarzenia, skutek teraz, sytuacje trwające (since/for).
 - **Past Simple** = zakończone wydarzenia z konkretnym momentem w przeszłości.
 - Uważaj na **trzecie formy** czasowników nieregularnych.
-
 :::
 
-## 10 | Najczęstsze błędy
+## 15 | Misja końcowa {#misja}
 
-::: karta error | Błąd #1: Zła forma czasownika
-✗ I have went to school.
-
-✓ I have gone to school. / I went to school yesterday.
-
-:::
-
-::: karta error | Błąd #2: Present Perfect + yesterday
-✗ I have seen him yesterday.
-
-✓ I saw him yesterday.
-
-:::
-
-::: karta error | Błąd #3: since / for – pomyłka
-✗ I have lived here since five years.
-
-✓ I have lived here for five years.
-
-:::
-
-::: karta error | Błąd #4: yet w twierdzeniu
-✗ I have finished yet.
-
-✓ I have already finished. / I haven't finished yet.
-
-:::
-
-::: karta error | Błąd #5: has zamiast have (lub odwrotnie)
-✗ They has done it.
-
-✓ They have done it.
-
-✗ She have gone.
-
-✓ She has gone.
-
-:::
-
-::: karta error | Błąd #6: been vs gone
-✗ She has gone to London. (ale wróciła)
-
-✓ She has been to London. (była i wróciła)
-
-✗ He has been to the shops. (ale jeszcze nie wrócił)
-
-✓ He has gone to the shops. (poszedł i nie wrócił)
-
-:::
-
-## 11 | Misja końcowa
-
-## 13. Test końcowy – MISJA
-
-::: karta basic | Misja końcowa
-Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.
-
-:::
-
-**Uzupełnij poprawną formą czasownika [[exam:EGZAMIN]]**
+::: karta exam | Misja końcowa (12 pkt) — uzupełnij bez zaglądania do zasad
+1 pkt za zdanie. Sprawdź swój wynik.
 
 1. I ______ (never / be) to Spain.
 2. She ______ (just / finish) her homework.
@@ -655,23 +575,13 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.
 12. We ______ (buy) a new car last week.
 
 ::: odp | Odpowiedzi
-1. **have never been**
-2. **has just finished**
-3. **Have / been**
-4. **has lived**
-5. **haven't finished**
-6. **visited**
-7. **has lost**
-8. **has just arrived**
-9. **have lived**
-10. **have gone**
-11. **hasn't seen**
-12. **bought**
+1. **have never been** 2. **has just finished** 3. **Have / been** 4. **has lived** 5. **haven't finished** 6. **visited** 7. **has lost** (skutek teraz — nie może ich znaleźć) 8. **has just arrived** 9. **have lived** 10. **have gone** (they're not here → jeszcze nie wrócili) 11. **hasn't seen** 12. **bought** (last week → Past Simple)
+:::
 :::
 
-## Podsumowanie | 7 zasad + fiszka
+## 16 | Podsumowanie — 7 zasad i ściąga {#podsumowanie}
 
-## 14. 7 kluczowych zasad
+### 7 kluczowych zasad
 
 1. **Present Perfect** = have/has + III forma.
 2. **I/you/we/they → have**; **he/she/it → has**.
@@ -681,9 +591,7 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.
 6. **Zakończony konkretny moment → Past Simple**, nie Present Perfect.
 7. **been** = był i wrócił; **gone** = poszedł/pojechał i nie wrócił.
 
-## 15. Fiszka – ściąga egzaminacyjna
-
-### Present Perfect
+### Fiszka – ściąga egzaminacyjna
 
 #### Budowa
 
@@ -701,8 +609,8 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.
 
 #### Porównanie z Past Simple
 
-- Present Perfect → <em>I have seen this film.</em> (doświadczenie)
-- Past Simple → <em>I saw this film last week.</em> (konkretny czas)
+- Present Perfect → *I have seen this film.* (doświadczenie)
+- Past Simple → *I saw this film last week.* (konkretny czas)
 - **Zapamiętaj:** zakończony moment → Past Simple
 
 #### Since / For
@@ -715,9 +623,9 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.
 - **been** – był i wrócił
 - **gone** – pojechał i nie wrócił
 
-**Pamiętaj!** <br> Jeśli podano konkretną datę (yesterday, in 2020) → Past Simple. <br> Jeśli chodzi o doświadczenie lub skutek teraz → Present Perfect.
+**Pamiętaj!** Jeśli podano konkretną datę (yesterday, in 2020) → Past Simple. Jeśli chodzi o doświadczenie lub skutek teraz → Present Perfect.
 
-## 16 | Skutek widoczny teraz — wiadomość i szczegóły {#skutek}
+## 17 | Skutek widoczny teraz — wiadomość i szczegóły {#skutek}
 
 Present Perfect często donosi o **wyniku, który widać w TERAZ** — moment nie ma znaczenia:
 
@@ -731,7 +639,7 @@ Porównaj: **I lost my keys yesterday, but luckily I found them.** — wydarzeni
 W języku codziennym Present Perfect otwiera **wiadomość**, a Past Simple opowiada **szczegóły**. *I've had an accident!* — co się stało?! — *I fell off my bike.* Pierwsze zdanie: skutek ważny teraz, bez momentu. Drugie: narracja o zakończonych zdarzeniach. Ta sekwencja (PP → PS) zdarza się w zadaniach na rozumienie tekstu — ucz się ją zauważać.
 :::
 
-## 17 | Ćwiczenia dodatkowe {#cwiczenia-dodatkowe}
+## 18 | Ćwiczenia dodatkowe {#cwiczenia-dodatkowe}
 
 ::: karta exam | Zadanie 1 (6 pkt) — Uzupełnij formy (1 pkt za zdanie)
 1. I __________ (just / eat) breakfast.
@@ -830,7 +738,7 @@ Wymagane elementy: have just finished · have been to · have never been · Have
 :::
 :::
 
-## 18 | Klinika błędów — zestawienie {#klinika}
+## 19 | Klinika błędów — zestawienie {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
 | She has saw this film. | She has seen this film. | Po have/has zawsze III forma (seen), nie V2. |
@@ -841,6 +749,12 @@ Wymagane elementy: have just finished · have been to · have never been · Have
 | I have finished it an hour ago. | I finished it an hour ago. | ago = zakończony moment → Past Simple. |
 | She has gone to Italy twice. | She has been to Italy twice. | Doświadczenie (wróciła) → been; gone znaczyłoby, że jej nie ma. |
 | How long do you know him? | How long have you known him? | Okres trwający do teraz (how long) → Present Perfect. |
+| I have went to school. | I have gone to school. / I went to school yesterday. | Po have/has zawsze III forma (gone), nie forma przeszła (went). |
+| I have lived here since five years. | I have lived here for five years. | five years = okres → for (since tylko z punktem w czasie). |
+| I have finished yet. | I have already finished. / I haven't finished yet. | yet nie występuje w twierdzeniu: already (twierdzenie) albo yet (pytanie/przeczenie, na końcu). |
+| They has done their homework. | They have done their homework. | they → have; has tylko po he/she/it. |
+| She have gone. | She has gone. | he/she/it → has. |
+| She has gone to London three times. (a wróciła) | She has been to London three times. | Doświadczenie (wróciła) → been; gone znaczyłoby, że jej nie ma. |
 :::
 
 ::: mity
@@ -851,7 +765,7 @@ Wymagane elementy: have just finished · have been to · have never been · Have
 „gone zawsze znaczy „poszedł"" || Po have/has *has gone* znaczy „poszedł i jeszcze nie wrócił" — a *has been* „był i wrócił".
 :::
 
-## 19 | FAQ {#faq}
+## 20 | FAQ {#faq}
 
 ::: karta understand | FAQ – najczęstsze wątpliwości
 **1. Kiedy Present Perfect, a kiedy Past Simple?** Jeśli jest zakończony moment (yesterday, in 2020, two days ago) → Past Simple. Jeśli liczy się skutek teraz, doświadczenie albo sytuacja trwająca od punktu do dziś → Present Perfect.
@@ -867,7 +781,7 @@ Wymagane elementy: have just finished · have been to · have never been · Have
 **6. (konkurs) Czym różni się „I've been in Rome" od „I've been to Rome"?** *been to* = odwiedziłem i wróciłem; *been in* = przebywam tam (trwanie): *I've been in Rome for a week.*
 :::
 
-## 20 | Test — pytania zamknięte {#test}
+## 21 | Test — pytania zamknięte {#test}
 
 ::: test
 ? I ______ my homework. Can I watch TV now?
@@ -939,9 +853,23 @@ Wymagane elementy: have just finished · have been to · have never been · Have
 - are you having
 - did you have
 ! Okres trwający do teraz (how long) + have w znaczeniu „posiadać" (stan) → Present Perfect: have you had.
+
+? I have known her ______ .
++ for ages
+- since ages
+- for 2019
+- since a long time
+! for ages = długi okres → for; since łączy się tylko z punktem w czasie.
+
+? My results have improved a lot ______ .
++ so far
+- yesterday
+- last month
+- two days ago
+! so far (dotychczas) = okres do teraz → Present Perfect; pozostałe to zakończone momenty → Past Simple.
 :::
 
-## 21 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+## 22 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
 
 *(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu; w paczce nie ma dokumentu wymagań.)*
 
@@ -1025,7 +953,7 @@ Uzupełnij i uzasadnij (1 pkt za zdanie z uzasadnieniem).
 :::
 :::
 
-## 22 | Fiszki {#fiszki}
+## 23 | Fiszki {#fiszki}
 
 ::: fiszki
 Present Perfect — budowa | have/has + III forma czasownika | basic:present-perfect
@@ -1046,9 +974,14 @@ yesterday, ago, in 2020, last week | zakończone momenty → Past Simple, nigdy 
 This is the first time + … | Present Perfect (This is the first time I have eaten sushi) | olimpijski:present-perfect
 have been in vs have been to | been in = przebywać (trwanie); been to = odwiedzić i wrócić | olimpijski:present-perfect
 „Did you eat yet?" | amerykańska konwencja: just/yet z Past Simple — nie na egzaminie | olimpijski:present-perfect
+so far / up to now | dotychczas — okres „do teraz" → Present Perfect | olimpijski:present-perfect
+recently / lately | ostatnio — zwykle z Present Perfect | olimpijski:present-perfect
+for ages | bardzo długo — okres → for (nie since) | olimpijski:present-perfect
+take up / give up | zacząć (hobby) / poddać się, rzucić | olimpijski:present-perfect
+It's the best film I have ever seen | superlatyw + ever → Present Perfect | olimpijski:present-perfect
 :::
 
-## 23 | Słowniczek {#slownik}
+## 24 | Słowniczek {#slownik}
 
 ::: slownik
 operator :: czasownik pomagający zbudować czas, pytanie i przeczenie — w Present Perfect to have/has.
@@ -1066,7 +999,7 @@ wiadomość (news) :: pierwsza informacja w Present Perfect, szczegóły w Past 
 konwencja brytyjska / amerykańska :: różnice użycia między wariantami języka (np. just i yet z Past Simple w AmE).
 :::
 
-## 24 | Ciekawostki {#ciekawostki}
+## 25 | Ciekawostki {#ciekawostki}
 
 ::: karta extra | Dlaczego „present", skoro mowa o przeszłości?
 Nazwa nie jest przypadkiem: gramatycznie Present Perfect „siedzi" w teraźniejszości — operator have jest formą czasu teraźniejszego (mamy have/has, nie had), a zmianie podlega tylko III forma. Stąd też wynika, czemu nie łączy się z yesterday: cały czas stoi w TERAZ i patrzy wstecz. (źródło: Huddleston & Pullum, The Cambridge Grammar of the English Language)
@@ -1117,4 +1050,13 @@ Surowa odpowiedź: `angielski/plany/audyty/ULEPSZ_OLI_L005_2026-10-11.md` (druga
 **Poprawione względem propozycji:** model nie widział przykładu *She has known him since 2020* i zastąpił go wymyślonym *I have known her since 2019* — przywrócono oryginał i kartę „Pytanie pomocnicze”; O3 — *didn't never feel* poprawione na *never felt* (narracja o zeszłorocznej podróży → Past Simple), model podał *has never felt*; „nogą w gipsie” → „noga jest w gipsie”; „jeszcze working nad tym”, „go nie ma” (w wyjaśnieniu testu) → poprawny polski; klinika *Did you finished yet?* — dopisano, że chodzi o wariant brytyjski; usunięto mylący przykład *he's seen here yesterday*; „między obiema brzegami” → „oboma”; spis treści z numerami modelu zastąpiony spisem bez numerów.
 
 **Nieprzyjęte:** zrekonstruowane przez model sekcje „been czy gone?”, „Present Perfect vs Past Simple”, „7 zasad” i „Misja” — oryginał ma własne (§9–11, 14, 13), zostają oryginalne; usunięcie linków do starych HTML — do przebudowy nawigacji; propozycje grafik (trzy mosty, been/gone, karta wyników vs zdjęcie) — pomysły do biblioteki grafik.
+
+### AUDYT W1 — część 2 (ULEPSZ, paczka ANG_L005_reszta, 2026-10-11)
+Surowa odpowiedź: `angielski/plany/audyty/ULEPSZ_OLI_L005_cz2_2026-10-11.md`. Model przerobił oryginalne sekcje od „Present Perfect vs Past Simple” do „Fiszki — ściągi” (teraz §9–16).
+
+**Przyjęte:** scalenie 16 nagłówków z konwersji w 8 sekcji (podsekcje jako ###), słownictwo w tabelach `slowka` (36 haseł zachowanych), tabela synonimów i przeciwieństw, numeracja i punktacja zadań 1–7 i misji, uzasadnienia w kluczach, 3 mini-wykłady (określenia „do teraz”, opowiadanie o osiągnięciach, polskie „już” a already/yet), zadania O7–O10, 5 fiszek i 2 pytania testu (dopisane do istniejących bloków), wiersze kliniki bez powtórzeń dopisane do istniejącej kliniki; *give up* — „podać się” → „poddać się”; klucz zad. 5.1 (gone / been zależnie od znaczenia).
+
+**Poprawione względem propozycji:** O10 (3) — model dał *has always dreamed* jako odpowiedź główną, choć marzenie się spełniło (*finally saw them*) — kluczem jest *had always dreamed* (Past Perfect, konkurs).
+
+**Nieprzyjęte:** osobna sekcja „Klinika błędów — najczęstsze błędy” (wiersze przeniesione do istniejącej kliniki, zgodnie z instrukcją modelu); propozycje grafik „Dwa pionki na osi czasu”, „Licznik osiągnięć” — pomysły do biblioteki grafik.
 
