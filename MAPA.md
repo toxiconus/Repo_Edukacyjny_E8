@@ -26,28 +26,29 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
 - ⚠`L012-EN-Future-Simple.html` 121 KB
 
-## angielski/html  (7 pl., 822 KB)
+## angielski/html  (7 pl., 856 KB)
 - ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.html` 169 KB
 - ⚠`ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.html` 112 KB
 - ⚠`ANG.01.L004.czasy_terazniejsze_i_przeszle.html` 139 KB
 - ⚠`ANG.01.L005.present_perfect.html` 156 KB
 - ⚠`ANG.01.L006.past_simple_continuous.html` 139 KB
-- ⚠`ANG.01.L012.future_simple.html` 106 KB
+- ⚠`ANG.01.L012.future_simple.html` 140 KB
 - `index.html` 2 KB
 
-## angielski/lekcje_md  (6 pl., 287 KB)
+## angielski/lekcje_md  (6 pl., 308 KB)
 - ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.md` 70 KB
 - `ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.md` 30 KB
 - `ANG.01.L004.czasy_terazniejsze_i_przeszle.md` 49 KB
 - ⚠`ANG.01.L005.present_perfect.md` 60 KB
 - `ANG.01.L006.past_simple_continuous.md` 49 KB
-- `ANG.01.L012.future_simple.md` 28 KB
+- `ANG.01.L012.future_simple.md` 50 KB
 
-## angielski/plany/audyty  (7 pl., 211 KB)
+## angielski/plany/audyty  (8 pl., 231 KB)
 - ⚠`ULEPSZ_OLI_L004_2026-10-11.md` 55 KB
 - `ULEPSZ_OLI_L005_2026-10-11.md` 46 KB
 - `ULEPSZ_OLI_L005_cz2_2026-10-11.md` 31 KB
 - ⚠`ULEPSZ_OLI_L006_2026-10-11.md` 55 KB
+- `ULEPSZ_OLI_L012_czesc1_2026-10-11.md` 21 KB
 - `W17_WDROZENIE_W1_ANGIELSKI_2026-10-09.md` 1 KB
 - `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
 - `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
@@ -790,7 +791,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L005.kajko_i_kokosz_rzeczownik.md` 23 KB
 - `POL.01.L006.akademia_pana_kleksa_czasownik.md` 30 KB
 
-## polski/plany/audyty  (21 pl., 363 KB)
+## polski/plany/audyty  (28 pl., 523 KB)
 - (zwinięte; `ls polski/plany/audyty`) — duże:
 - ⚠`ULEPSZ_OLI_G07_G12_2026-10-11.md` 52 KB
 - ⚠`ULEPSZ_OLI_G12_2026-10-11.md` 61 KB
