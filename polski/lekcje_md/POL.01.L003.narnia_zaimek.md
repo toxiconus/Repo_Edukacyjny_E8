@@ -5,7 +5,7 @@ tytul: „Opowieści z Narnii” + zaimek
 lead: Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie — Lekcja 3 – „Opowieści z Narnii: Lew, czarownica i stara szafa” oraz zaimek (osobowe, zwrotne, dzierżawcze, wskazujące, pytające, względne, przeczące)
 stopka: Lekcja 3 – „Opowieści z Narnii” + zaimek • Wersja v2 – optymalizacja + pełna treść (MASTER · KONKURS · OLIMPIADA) • 2026-09-07
 zrodlo: L003-PL-Opowiesci-z-Narnii-zaimek.html (konwersja html_do_md.py, 2026-10-09)
-stan: KONWERSJA Z HTML — sprawdzić odpowiedzi „DO UZUPEŁNIENIA” i grafiki GFX
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykład, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione błędy); W1 starym promptem — do recenzji W1 FULL
 ---
 Lekcja 3 · orientacja
 
@@ -100,6 +100,18 @@ Nie warto ograniczać gatunku do samej „powieści fantasy”. W utworze wystę
 
 :::
 
+## Wykład — „Opowieści z Narnii” od zera {#wyklad-lektura}
+
+::: karta understand | Wykład — szafa, za którą zaczyna się inny świat
+Clive Staples Lewis (1898–1963) — irlandzki pisarz urodzony w Belfaście, profesor literatury w Oksfordzie i Cambridge — wydał „Lwa, czarownicę i starą szafę” w 1950 r. To pierwsza wydana z siedmiu części „Opowieści z Narnii”. Akcja zaczyna się w Anglii podczas II wojny światowej: czworo rodzeństwa Pevensie — Piotr, Zuzanna, Edmund i Łucja — zostaje wysłanych z bombardowanego Londynu do domu starego profesora na wsi. Tam najmłodsza, Łucja, odkrywa, że tylna ściana szafy prowadzi do zaśnieżonej krainy.
+
+Narnia jest uwięziona w **wiecznej zimie, ale bez Bożego Narodzenia** — tak rządzi nią Biała Czarownica. Przepowiednia mówi, że jej władza skończy się, gdy na czterech tronach w Ker-Paravel zasiądą dwaj Synowie Adama i dwie Córki Ewy. Dlatego Czarownica kusi **Edmunda** słodyczami i obietnicą władzy — a on zdradza rodzeństwo. Według „Głębokiej Magii” zdrajca należy do Czarownicy. Wtedy **Aslan**, lew i prawowity władca Narnii, oddaje za niego życie na Kamiennym Stole. Nie wie o tym nikt poza Zuzanną i Łucją, które widzą jego śmierć. Rano Aslan powraca do życia — działa „głębsza magia”: gdy niewinny oddaje się za winnego, śmierć się cofa.
+
+Powieść czyta się na dwóch poziomach. Pierwszy to **baśń i przygoda**: magiczne przejście, gadające zwierzęta, bitwa dobra ze złem, koronacja czworga dzieci. Drugi to **warstwa symboliczna**: historia Aslana przypomina ewangeliczną opowieść o ofierze i zmartwychwstaniu, a droga Edmunda — o winie, skrusze i przebaczeniu. Na egzaminie bezpiecznie pisać o **symbolu dobra i poświęcenia** oraz o **nawiązaniach religijnych**, bez utożsamiania Aslana z Bogiem.
+
+Najważniejsze argumenty do wypracowania to: **przemiana Edmunda** (zdrada → skrucha → naprawa czynem — bohater dynamiczny), **poświęcenie Aslana** (bohater statyczny, symbol), **wiarygodność Łucji** (prawda, której inni nie chcą przyjąć) oraz **rodzina**, która w obliczu zła potrafi się zjednoczyć.
+:::
+
 ## 2. Bohaterowie
 
 ### Rodzeństwo Pevensie
@@ -162,7 +174,7 @@ Symbolizuje: **zło, przemoc, kłamstwo, egoizm, bezwzględną władzę i zniewo
 ### Zdrada Edmunda
 
 ::: karta basic | Pokusa i zdrada
-Edmund spotyka Białą Czarownicę, która częstuje go **magicznym przysmakiem (ptasim mleczkiem / Turkish Delight)** i obiecuje mu władzę. Chłopiec, kierowany zazdrością i chciwością, zdradza rodzeństwo.
+Edmund spotyka Białą Czarownicę, która częstuje go **magicznym przysmakiem (ptasim mleczkiem lub rachatłukum — zależnie od przekładu; ang. Turkish Delight)** i obiecuje mu władzę. Chłopiec, kierowany zazdrością i chciwością, zdradza rodzeństwo.
 
 **Motywy:** pokusa, zdrada, zazdrość, słabość człowieka, wina, odpowiedzialność.
 
@@ -408,7 +420,7 @@ Wskazują, że czynność wraca do wykonawcy.
 ::: karta warning | Ważne
 Zaimek **się** nie ma formy mianownika i nie występuje samodzielnie jako podmiot.
 
-Nie myl „się” (zaimek zwrotny) z partykułą – „się” zawsze jest zaimkiem zwrotnym.
+W szkolnej klasyfikacji „się” nazywamy zaimkiem zwrotnym, ale nie zawsze pełni on funkcję zwrotną: w *myje się* = myje siebie, a w *boi się* jest częścią czasownika (nie ma „bać kogoś”).
 
 :::
 
@@ -460,7 +472,7 @@ Zaimek zwrotny dzierżawczy „swój” wskazuje, że posiadaczem jest podmiot z
 ::: karta basic | Zaimki wskazujące
 Wskazują osoby, przedmioty, miejsca lub cechy.
 
-**Przykłady:** <em>ten, ta, to, ci, tamten, taki, owy</em>
+**Przykłady:** <em>ten, ta, to, ci, tamten, taki, ów (owa, owo)</em>
 
 **Przykłady w zdaniach:**
 
@@ -719,12 +731,12 @@ Zaimek – definicja | Część mowy zastępująca najczęściej rzeczownik, prz
 Zaimek osobowy | <em>ja, ty, on, ona, ono, my, wy, oni, one</em><br>Przykład: <em>Łucja odkryła Narnię. **Ona** była pierwsza.</em>
 Zaimek zwrotny | <em>się, siebie, sobie, sobą</em><br>Przykład: <em>Edmund wstydził **się** swojej zdrady.</em>
 Zaimek dzierżawczy | <em>mój, twój, jego, jej, nasz, wasz, ich, swój</em><br>Przykład: <em>**Nasza** rodzina trafiła do Narnii.</em>
-Zaimek wskazujący | <em>ten, ta, to, ci, tamten, taki, owy</em><br>Przykład: <em>**Ten** bohater przeszedł przemianę.</em>
+Zaimek wskazujący | <em>ten, ta, to, ci, tamten, taki, ów (owa, owo)</em><br>Przykład: <em>**Ten** bohater przeszedł przemianę.</em>
 Zaimek pytający | <em>kto?, co?, jaki?, który?, czyj?, ile?, jak?, gdzie?, kiedy?</em><br>Przykład: <em>**Kto** odkrył Narnię?</em>
 Zaimek względny | <em>który, jaka, jakie, kto, co, gdzie, kiedy, jaki, czyj</em><br>Przykład: <em>Edmund, **który** wcześniej zdradził...</em>
 Zaimek przeczący | <em>nikt, nic, nigdy, nigdzie, żaden, niczyj</em><br>Przykład: <em>**Nikt** nie znał planu Czarownicy.</em>
 Zasada „swój” (PUŁAPKA!) | Zaimek **swój** odnosi się do **podmiotu zdania**.<br>Przykład: <em>Edmund bronił **swojego** rodzeństwa.</em>
-Przecinek przed „który” (PUŁAPKA!) | Gdy **„który”** wprowadza zdanie podrzędne przydawkowe – stawiamy przecinek.<br>Przykład: <em>Edmund, **który** wcześniej zdradził...</em>
+Przecinek przed „który” (PUŁAPKA!) | Gdy **„który”** wprowadza zdanie podrzędne (każdego rodzaju) – stawiamy przecinek.<br>Przykład: <em>Edmund, **który** wcześniej zdradził...</em>
 Aslan – symbol | **Nie jest bohaterem dynamicznym**.<br>Jest symbolem **dobra, miłości, poświęcenia i odkupienia**.
 Edmund – trójkrok przemiany | **1. Zdrada** → **2. Skrucha** → **3. Naprawa czynem**<br>Przykład bohatera dynamicznego.
 Biała Czarownica (Jadis) | Symbol **zła, przemocy, kłamstwa i bezwzględnej władzy**.<br>Władczyni Narnii w wiecznej zimie.
@@ -739,7 +751,7 @@ Zaimek osobowy vs zwrotny | **Osobowy:** zastępuje osobę, może być podmiotem
 ::: karta basic | Zadanie
 Bez zaglądania do notatek – uzupełnij wszystkie zdania. Sprawdź swój wynik.
 
-Pamiętaj o najważniejszych poprawkach: **Aslan nie jest bohaterem dynamicznym**, **Edmund przechodzi przemianę** (zdrada → skrucha → naprawa czynem), **„swój” odnosi się do podmiotu**, **przecinek przed „który”** w zdaniach przydawkowych.
+Pamiętaj o najważniejszych poprawkach: **Aslan nie jest bohaterem dynamicznym**, **Edmund przechodzi przemianę** (zdrada → skrucha → naprawa czynem), **„swój” odnosi się do podmiotu**, **przecinek przed „który”**, gdy wprowadza zdanie podrzędne.
 
 :::
 
@@ -788,7 +800,7 @@ Pamiętaj o najważniejszych poprawkach: **Aslan nie jest bohaterem dynamicznym*
 - <span class="correct-text">Znam motywy: walka dobra ze złem, rodzina, dorastanie, pokusa, poświęcenie, przebaczenie.</span>
 - <span class="correct-text">Rozróżniam siedem rodzajów zaimków: osobowe, zwrotne, dzierżawcze, wskazujące, pytające, względne, przeczące.</span>
 - <span class="correct-text">Znam zasadę „swój” – odnosi się do podmiotu zdania.</span>
-- <span class="correct-text">Wiem, kiedy stawiamy przecinek przed „który” (zdania przydawkowe).</span>
+- <span class="correct-text">Wiem, kiedy stawiamy przecinek przed „który” (zdanie podrzędne; przy przyimku — przed przyimkiem).</span>
 - <span class="correct-text">Rozróżniam zaimek osobowy (może być podmiotem) od zwrotnego („się” nie jest podmiotem).</span>
 - <span class="correct-text">Mam gotowe zdania do wykorzystania w rozprawce.</span>
 - <span class="correct-text">Wiem, jak „Narnia” jest traktowana na egzaminie (fragment w części I, dowolne wykorzystanie w wypracowaniu).</span>
@@ -803,8 +815,8 @@ Pamiętaj o najważniejszych poprawkach: **Aslan nie jest bohaterem dynamicznym*
 | 2 | Ofiara Aslana | <span class="error-text">Aslan został zabity przypadkowo.</span> | <span class="correct-text">Aslan dobrowolnie oddał życie za Edmunda.</span> |
 | 3 | Powrót Aslana | <span class="error-text">Aslan wrócił zza Kamiennego Stołu.</span> | <span class="correct-text">Aslan powrócił do życia po śmierci na Kamiennym Stole (zmartwychwstał).</span> |
 | 4 | „Swój” – zasada | <span class="error-text">„Swój” oznacza dowolną przynależność.</span> | <span class="correct-text">„Swój” odnosi się do podmiotu zdania.</span> |
-| 5 | „Który” – przecinek | <span class="error-text">„Który” zawsze wymaga przecinka.</span> | <span class="correct-text">Przecinek zależy od tego, czy „który” wprowadza zdanie podrzędne przydawkowe.</span> |
-| 6 | Mylenie „się” | <span class="error-text">„Się” to partykuła.</span> | <span class="correct-text">„Się” to zaimek zwrotny.</span> |
+| 5 | „Który” – przecinek | <span class="error-text">„Który” zawsze wymaga przecinka.</span> | <span class="correct-text">Przecinek stawiamy, gdy „który” wprowadza zdanie podrzędne (każdego rodzaju); w pytaniu bezpośrednim (*Który bohater…?*) — bez przecinka.</span> |
+| 6 | Mylenie „się” | <span class="error-text">„Się” to partykuła.</span> | <span class="correct-text">„Się” to w szkolnej klasyfikacji zaimek zwrotny (czasem część czasownika: *boi się*).</span> |
 | 7 | Edmund – charakter | <span class="error-text">Edmund od początku był zły.</span> | <span class="correct-text">Edmund popełnił zły czyn, ale później przeszedł przemianę.</span> |
 | 8 | Zaimki w wypracowaniu | <span class="error-text">Zaimki zawsze poprawiają styl.</span> | <span class="correct-text">Zaimki pomagają uniknąć powtórzeń, ale ich nadmiar może powodować niejasność.</span> |
 | 9 | Zaimek osobowy vs zwrotny | <span class="error-text">„On” i „się” to ten sam rodzaj zaimka.</span> | <span class="correct-text">„On” – osobowy (może być podmiotem), „się” – zwrotny (nie jest podmiotem).</span> |
@@ -871,5 +883,186 @@ Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.
 24. Pułapki TOP 10
 25. Słownik terminów
 
-<p class="mini-note">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
-<p class="mini-note">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+::: karta understand | W skrócie — dlaczego Aslan jest statyczny, a Edmund dynamiczny
+O tym, czy bohater jest dynamiczny, decyduje **przemiana wewnętrzna**: zmiana poglądów, wartości, postawy wobec innych. Edmund ją przechodzi — od zazdrości i zdrady do lojalności i odwagi (niszczy różdżkę Czarownicy). Aslan przeżywa największe zdarzenie powieści — śmierć i powrót do życia — ale jego charakter się nie zmienia: od początku do końca jest dobry, sprawiedliwy i gotów do ofiary. Zmiana **losu** to nie zmiana **charakteru**. W wypracowaniu zawsze podawaj dowód: scenę przed i scenę po przemianie.
+:::
+
+## 28. Nie myl! {#nie-myl}
+
+::: nie-myl | Pary, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| Aslan / Edmund | obaj „przechodzą” przez śmierć i odrodzenie (dosłownie lub moralnie) | Aslan — statyczny symbol; Edmund — dynamiczny, zmienia się wewnętrznie |
+| Głęboka Magia / głębsza magia | podobne nazwy | Głęboka — zdrajca należy do Czarownicy; głębsza — niewinna ofiara cofa śmierć |
+| *który* pytający / względny | ten sam wyraz | pytanie bezpośrednie — pytający, bez przecinka; zdanie podrzędne — względny, z przecinkiem |
+| *swój* / *jego* | oba dzierżawcze | *swój* — posiadaczem jest podmiot; *jego* — ktoś inny |
+| *się* w *myje się* / *boi się* | ten sam wyraz | *myje się* = myje siebie (zwrotny); *boi się* — *się* jest częścią czasownika |
+| symbol / alegoria | oba „coś znaczą” | symbol (Aslan) ma wiele znaczeń; alegoria to cała opowieść, którą da się konsekwentnie przełożyć na inną |
+:::
+
+## 29. Ciekawostki {#ciekawostki}
+
+::: karta extra | Lewis i Tolkien przy jednym stole
+C.S. Lewis przyjaźnił się z J.R.R. Tolkienem, autorem „Hobbita”. Obaj należeli do oksfordzkiego klubu literackiego **Inklingowie**, w którym czytali sobie fragmenty swoich książek. Tolkien podobno nie przepadał za Narnią — uważał ją za zbyt pospiesznie zbudowany świat. (orientacyjnie)
+:::
+
+::: karta extra | Dzieci z bombardowanego Londynu
+Podróż rodzeństwa na wieś to echo prawdziwej historii: w czasie wojny z Londynu ewakuowano tysiące dzieci. Lewis sam przyjął kilka ewakuowanych dziewczynek do swojego domu pod Oksfordem.
+:::
+
+::: karta extra | Ptasie mleczko czy rachatłukum?
+W angielskim oryginale Edmund je *Turkish Delight* — orientalne słodycze. W polskich przekładach spotkasz **ptasie mleczko** lub **rachatłukum** — zależnie od tłumaczenia. W wypracowaniu każda z tych nazw jest poprawna.
+:::
+
+::: karta extra | Pierwsza wydana, nie pierwsza w kolejności
+„Lew, czarownica i stara szafa” ukazała się jako pierwsza (1950), ale w późniejszych wydaniach cyklu bywa drugim tomem — przed nią umieszcza się „Siostrzeńca czarodzieja”, opowiadającego o powstaniu Narnii.
+:::
+
+## 30. Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — lektura i zaimek głębiej
+**Dwa światy, dwa czasy.** Lata spędzone w Narnii trwają w Anglii kilka chwil — rodzeństwo wraca przez szafę jako dzieci, choć w Narnii dorosło. Ten zabieg pozwala mówić o dorastaniu bez utraty dzieciństwa. **Symbol a alegoria.** Lewis sprzeciwiał się nazywaniu Narnii alegorią; wolał mówić o „przypuszczeniu”: jak wyglądałaby historia zbawienia w innym świecie. **Zaimek i spójność tekstu.** W wypracowaniu zaimki łączą zdania (*Edmund… On… Jego…*), ale za dużo zaimków powoduje dwuznaczność: *Piotr rozmawiał z Edmundem o jego winie* — czyjej? **„Swój” w zdaniu złożonym** — liczy się podmiot zdania składowego: *Aslan powiedział Edmundowi, że ten musi naprawić swoje błędy* (*swoje* = Edmunda, podmiot zdania podrzędnego *ten*).
+:::
+
+::: adv | Zadanie O1 (4 pkt) — dwuznaczność zaimka | poziom ambitny (konkurs)
+Wyjaśnij dwuznaczność i popraw zdanie tak, by było jednoznaczne.
+
+1. *Piotr rozmawiał z Edmundem o jego winie.*
+2. *Łucja powiedziała Zuzannie, że jej opowieść jest prawdziwa.*
+
+::: odp | Pokaż klucz
+1. *jego* — wina Piotra albo Edmunda; np. *…o winie Edmunda* (2 pkt). 2. *jej* — opowieść Łucji albo Zuzanny; np. *Łucja powiedziała Zuzannie: „Moja opowieść jest prawdziwa”* (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — „swój” w zdaniu złożonym | poziom ambitny (konkurs)
+Wstaw *swój* lub *jego* (w odpowiedniej formie) i uzasadnij.
+
+1. Aslan powiedział, że Edmund musi naprawić ___ błędy. (błędy Edmunda)
+2. Piotr pochwalił Edmunda za ___ odwagę. (odwagę Edmunda)
+
+::: odp | Pokaż klucz
+1. *swoje* — w zdaniu podrzędnym podmiotem jest Edmund (2 pkt). 2. *jego* — podmiotem jest Piotr, a odwaga należy do Edmunda (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — symbol czy alegoria? | poziom ambitny (konkurs)
+Wyjaśnij różnicę między symbolem a alegorią i oceń, czy Aslana lepiej nazwać symbolem, czy postacią alegoryczną (3–4 zdania).
+
+::: odp | Pokaż klucz
+Symbol ma znaczenie wieloznaczne, otwarte (1 pkt); alegoria ma jedno, ustalone znaczenie, które da się „przetłumaczyć” (1 pkt). Aslana można nazwać symbolem dobra, ofiary i odkupienia; jego historia nawiązuje do Ewangelii, ale sam Lewis nie chciał, by czytać ją jako dosłowną alegorię (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O4 (4 pkt) — przecinki i zaimki względne | poziom ambitny (konkurs)
+Wstaw przecinki: *Kamienny Stół na którym zginął Aslan pękł o świcie. Nie wiem który z braci był starszy. Który z braci był starszy?*
+
+::: odp | Pokaż klucz
+*Kamienny Stół, na którym zginął Aslan, pękł o świcie.* (2 pkt — przecinek przed przyimkiem i po zdaniu wtrąconym) · *Nie wiem, który z braci był starszy.* (1 pkt) · pytanie bezpośrednie — bez przecinka (1 pkt).
+:::
+:::
+
+## 31. Test sprawdzający {#test}
+
+::: test
+? Kto pierwszy odkrywa Narnię?
++ Łucja
+- Edmund
+- Piotr
+- Zuzanna
+! Łucja przechodzi przez szafę jako pierwsza.
+? Dlaczego Aslan oddaje życie?
++ za zdradę Edmunda, by go uratować
+- bo przegrał bitwę
+- bo został zaskoczony przez Czarownicę
+- za grzechy Białej Czarownicy
+! Według Głębokiej Magii zdrajca należy do Czarownicy — Aslan dobrowolnie zajmuje miejsce Edmunda.
+? Edmund jest bohaterem:
++ dynamicznym
+- statycznym
+- epizodycznym
+- symbolicznym
+! Przechodzi drogę: zdrada → skrucha → naprawa czynem.
+? Jaki przydomek otrzymuje Łucja?
++ Mężna
+- Łagodna
+- Wspaniała
+- Sprawiedliwa
+! Piotr Wspaniały, Zuzanna Łagodna, Edmund Sprawiedliwy, Łucja Mężna.
+? W zdaniu „Edmund wstydził się swojej zdrady” zaimek „swojej” to zaimek:
++ dzierżawczy
+- zwrotny
+- osobowy
+- względny
+! *Swój* wskazuje posiadacza — podmiot zdania.
+? W którym zdaniu „który” jest zaimkiem względnym?
++ Edmund, który zdradził, później się zmienił.
+- Który bohater odkrył Narnię?
+- Który to już raz?
+- Który z was to zrobił?
+! Wprowadza zdanie podrzędne i odnosi się do Edmunda.
+? Wybierz poprawne zdanie:
++ Piotr podniósł swój miecz.
+- Piotr podniósł jego miecz (o własnym).
+- Piotr podniósł jej miecz (o własnym).
+- Piotr podniósł ich miecz (o własnym).
+! Posiadaczem jest podmiot — *swój*.
+? „Nikt nic nie wiedział” — to zdanie jest:
++ poprawne
+- błędne — podwójne przeczenie
+- poprawne tylko w poezji
+- błędne — brak podmiotu
+! W polszczyźnie przeczenie wielokrotne jest normą.
+? Który zaimek jest wskazujący? (poziom ambitny)
++ ów
+- swój
+- czyj
+- nikt
+! *Ów, owa, owo* — książkowy zaimek wskazujący („ten wspomniany”).
+? „Aslan powiedział, że Edmund musi naprawić ___ błędy.” (błędy Edmunda) (poziom ambitny)
++ swoje
+- jego
+- jej
+- ich
+! W zdaniu podrzędnym podmiotem jest Edmund — *swoje*.
+:::
+
+## 32. Słownik pojęć {#slownik}
+
+::: slownik
+bohater dynamiczny :: postać zmieniająca się w toku akcji (Edmund).
+bohater statyczny :: postać, która nie zmienia charakteru (Aslan).
+symbol :: znak o wielu znaczeniach (Aslan — dobro, ofiara, odkupienie).
+alegoria :: utwór lub obraz, którego znaczenie da się konsekwentnie „przetłumaczyć” na inne.
+Głęboka Magia :: w powieści prawo, wedle którego zdrajca należy do Czarownicy.
+zaimek osobowy :: ja, ty, on, ona, ono, my, wy, oni, one — może być podmiotem.
+zaimek zwrotny :: się, siebie, sobie, sobą — wskazuje na wykonawcę czynności.
+zaimek dzierżawczy :: mój, twój, swój, nasz, wasz, jego, jej, ich — wskazuje posiadacza.
+zaimek względny :: który, jaki, kto, co — wprowadza zdanie podrzędne i jest jego częścią.
+zaimek przeczący :: nikt, nic, żaden, nigdy — łączy się z partykułą „nie”.
+:::
+
+## 33. Fiszki — poziom ambitny {#fiszki-olimp}
+
+::: fiszki
+Głęboka Magia | zdrajca należy do Czarownicy | olimpijski:lektura
+głębsza magia | niewinna ofiara za winnego cofa śmierć | olimpijski:lektura
+Inklingowie | oksfordzki klub literacki Lewisa i Tolkiena | olimpijski:lektura
+Rok wydania „Lwa, czarownicy i starej szafy” | 1950 | olimpijski:lektura
+Symbol czy alegoria — Aslan? | symbol (Lewis nie chciał dosłownej alegorii) | olimpijski:lektura
+*Piotr rozmawiał z Edmundem o jego winie* | dwuznaczne — czyja wina? | olimpijski:zaimek
+*ów, owa, owo* | książkowy zaimek wskazujący | olimpijski:zaimek
+„swój” w zdaniu podrzędnym | odnosi się do podmiotu tego zdania składowego | olimpijski:zaimek
+:::
+
+::: karta basic | Jak pracować z tą lekcją
+Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych. Zadania treningowe wzorowane na formule E8 z języka polskiego.
+:::
+
+## ULEPSZENIE — Claude, 2026-10-11
+
+- Dodano: wykład o lekturze (przed §2), mini-wykład „W skrócie — Aslan statyczny, Edmund dynamiczny”, §28 nie-myl, §29 ciekawostki (4), §30 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami), §31 test (10), §32 słownik (10), §33 fiszki olimpijskie (8). Nic nie usunięto.
+- Poprawione: zaimek wskazujący „owy” → *ów (owa, owo)*; reguła przecinka przed „który” — przed każdym zdaniem podrzędnym, nie tylko przydawkowym (pułapka 5, fiszka, misja, checklista — zgodnie z §17 lekcji); „się zawsze jest zaimkiem zwrotnym” → doprecyzowano (*boi się*); nazwa słodyczy zależy od przekładu (ptasie mleczko / rachatłukum).
+
