@@ -32,6 +32,8 @@ Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko
 | transfuzja | zgodność dawca → biorca (ABO + Rh): antygeny na krwinkach, przeciwciała w osoczu, aglutynacja, uczulenie Rh−; tabela 4 × 4 | dawca="A", biorca="B" | U04 |
 | sprzezenie-zwrotne | pętla bodziec → receptor → ośrodek → efektor → odpowiedź; 7 sytuacji (temperatura ↑↓, glukoza ↑↓, woda za mało/za dużo, poród — dodatnie); „krok”, wskaźnik parametru wobec normy | start="tg\|td\|gg\|gd\|wd\|wg\|po" | H01 |
 | glukoza-wykres | stężenie glukozy po posiłku: osoba zdrowa vs z cukrzycą (dane przykładowe), zakres na czczo, klik w punkt = opis | — | H01 |
+| skora-przekroj | przekrój skóry: naskórek (rogowa, melanina), skóra właściwa (naczynia, receptory, gruczoł potowy i łojowy, mieszek, włos, mięsień przywłosowy), tkanka podskórna; klik = opis | — | U01 |
+| staw-antagonizm | staw łokciowy: suwak kąta, biceps (zginacz) i triceps (prostownik) grubieją/cienieją przy skurczu, przyczepy, opis ruchu | kat="60" | U01 |
 | wirus-bakteria | wirus (kapsyd, DNA/RNA, osłonka) obok bakterii (ściana, błona, rybosomy, nukleoid, plazmid, rzęska); klik = opis; antybiotyki | — | REV02 |
 | przeobrazenie-plaza | rozwój złożony żaby: skrzek → kijanka → kijanka z kończynami → młoda żaba → żaba; suwak, oddychanie i środowisko | etap="0–4" | REV02 |
 | przeobrazenie-owadow | przeobrażenie zupełne (motyl, z poczwarką) i niezupełne (konik polny, bez poczwarki); klik = opis etapu | — | REV02 |

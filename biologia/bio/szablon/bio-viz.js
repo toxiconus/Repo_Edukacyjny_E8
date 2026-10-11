@@ -1206,4 +1206,64 @@ mount:function(el,o){
    BIO.fx.info(sv,info,M)}
   draw()}});
 
+
+/* ---- skóra: przekrój z warstwami i strukturami (2026-10-11, lekcja BIO.07.U01) ---- */
+BIO.define('skora-przekroj',{opis:'Przekrój skóry: naskórek (warstwa rogowa, melanina), skóra właściwa (naczynia, receptory, gruczoł potowy i łojowy, mieszek włosowy, mięsień przywłosowy), tkanka podskórna (tłuszcz); kliknij element',
+mount:function(el,o){var W=640,Hh=400,sv=svg(W,Hh,'Przekrój skóry człowieka',[]),info=BIO.fx.infoBox('Kliknij warstwę albo strukturę skóry.');el.appendChild(sv);el.appendChild(info);
+ function G(k,kids){return S('g',{'data-k':k},kids)}
+ var y1=70,y2=110,y3=270,y4=380;
+ sv.appendChild(G('nask',[S('path',{d:'M20 '+y1+' Q120 '+(y1-10)+' 220 '+y1+' T420 '+y1+' T620 '+y1+' L620 '+y2+' L20 '+y2+' Z',fill:'#f3d9c4',stroke:'#b9876a','stroke-width':2}),
+  S('path',{d:'M20 '+y1+' Q120 '+(y1-10)+' 220 '+y1+' T420 '+y1+' T620 '+y1+' L620 '+(y1+10)+' Q520 '+y1+' 420 '+(y1+10)+' T220 '+(y1+10)+' T20 '+(y1+10)+' Z',fill:'#e8c2a4'}),T(530,y2-12,'naskórek',{s:16,w:800,f:'#7a4a30'})]));
+ for(var i=0;i<9;i++)sv.appendChild(S('circle',{cx:60+i*65,cy:y2-6,r:4,fill:'#7a4a30',opacity:.8}));
+ sv.appendChild(G('wlas',[S('rect',{x:20,y:y2,width:600,height:y3-y2,fill:'#f7e3e0',stroke:'#c99a96','stroke-width':1.5}),T(560,y3-14,'skóra właściwa',{s:16,w:800,f:'#8a4b46'})]));
+ sv.appendChild(G('pod',[S('rect',{x:20,y:y3,width:600,height:y4-y3,fill:'#fff6d6',stroke:'#d8c27a','stroke-width':1.5})].concat([0,1,2,3,4,5,6,7].map(function(i){return S('ellipse',{cx:60+i*72,cy:y3+55,rx:30,ry:22,fill:'#ffe9a8',stroke:'#d8c27a'})})).concat([T(540,y4-12,'tkanka podskórna',{s:16,w:800,f:'#8a7420'})])));
+ // naczynia
+ sv.appendChild(G('nacz',[S('path',{d:'M20 230 C150 200 250 250 360 225 S560 210 620 232',fill:'none',stroke:'#d2463c','stroke-width':6}),S('path',{d:'M20 245 C160 220 260 268 370 242 S560 228 620 248',fill:'none',stroke:'#3b6cc4','stroke-width':6}),T(110,215,'naczynia',{s:14,w:700,f:'#a33'})]));
+ // włos + mieszek + gruczoł łojowy + mięsień
+ sv.appendChild(G('wlos',[S('path',{d:'M150 20 L160 '+y1+' L170 200',fill:'none',stroke:'#3a2a1a','stroke-width':5}),S('ellipse',{cx:170,cy:205,rx:14,ry:10,fill:'#c78b5a'}),T(120,30,'włos',{s:14,w:700})]));
+ sv.appendChild(G('mieszek',[S('path',{d:'M150 '+y2+' L158 205 Q170 222 182 205 L176 '+y2,fill:'none',stroke:'#8a5a3a','stroke-width':2.5,'stroke-dasharray':'4 3'})]));
+ sv.appendChild(G('loj',[S('ellipse',{cx:195,cy:140,rx:20,ry:13,fill:'#f2c94c',stroke:'#b8901f','stroke-width':2}),T(220,166,'gruczoł łojowy',{s:13,w:700,a:'start'})]));
+ sv.appendChild(G('przyw',[S('path',{d:'M180 170 L240 '+(y2+8),stroke:'#a0524d','stroke-width':5,'stroke-linecap':'round'}),T(250,y2+16,'mięsień przywłosowy',{s:13,w:700,a:'start'})]));
+ // gruczoł potowy
+ sv.appendChild(G('pot',[S('path',{d:'M430 '+(y1-4)+' C426 120 440 160 430 200 C420 240 470 260 450 280 C430 300 470 300 460 280',fill:'none',stroke:'#2f7fa8','stroke-width':3.5}),S('circle',{cx:455,cy:283,r:13,fill:'none',stroke:'#2f7fa8','stroke-width':3}),T(475,175,'gruczoł potowy',{s:13,w:700,a:'start'})]));
+ // receptory
+ sv.appendChild(G('rec',[S('circle',{cx:320,cy:125,r:9,fill:'#7e57c2'}),S('path',{d:'M320 134 C318 170 330 200 322 250',fill:'none',stroke:'#7e57c2','stroke-width':2.5}),S('ellipse',{cx:560,cy:195,rx:10,ry:16,fill:'none',stroke:'#7e57c2','stroke-width':3}),T(332,150,'receptory i nerwy',{s:13,w:700,a:'start'})]));
+ BIO.fx.info(sv,info,{nask:['Naskórek','Wielowarstwowy nabłonek <strong>bez naczyń krwionośnych</strong>. Komórki zewnętrzne rogowacieją (<strong>keratyna</strong>) i złuszczają się, od spodu stale powstają nowe. Brązowe kropki to <strong>melanina</strong> — barwnik pochłaniający część promieniowania UV.'],
+  wlas:['Skóra właściwa','Tkanka łączna z włóknami (sprężystość), <strong>naczyniami</strong>, <strong>receptorami</strong>, gruczołami potowymi i łojowymi, mieszkami włosowymi i mięśniami przywłosowymi. Odżywia naskórek, odbiera bodźce, uczestniczy w termoregulacji.'],
+  pod:['Tkanka podskórna','Głównie <strong>tkanka tłuszczowa</strong>: izoluje (mniej ucieka ciepła), amortyzuje uderzenia, magazynuje energię; łączy skórę z mięśniami.'],
+  nacz:['Naczynia krwionośne','Rozszerzają się, gdy jest za ciepło (skóra czerwienieje, więcej ciepła oddane), zwężają się w zimnie (skóra blednie). Czerwone — krew utlenowana, niebieskie — odtlenowana.'],
+  wlos:['Włos','Wytwór naskórka zbudowany z keratyny; łodyga wystaje ponad skórę, korzeń tkwi w mieszku, a u nasady jest cebulka. Ogranicza utratę ciepła, chroni, ma funkcję czuciową.'],
+  mieszek:['Mieszek włosowy','Zagłębienie naskórka w skórze właściwej, w którym rośnie włos.'],
+  loj:['Gruczoł łojowy','Uchodzi do mieszka włosowego; łój natłuszcza skórę i włosy, chroni przed wysychaniem i częściowo przed drobnoustrojami.'],
+  przyw:['Mięsień przywłosowy','Mięsień gładki: w zimnie (lub ze strachu) kurczy się i stawia włos — powstaje „gęsia skórka”.'],
+  pot:['Gruczoł potowy','Kłębek w skórze właściwej, przewód wyprowadzający uchodzi na powierzchni naskórka. Pot (woda, sole, trochę mocznika) chłodzi ciało, parując, i usuwa część zbędnych substancji.'],
+  rec:['Receptory skóry','Zakończenia nerwowe i ciałka czuciowe odbierają dotyk, ucisk, ból, ciepło, zimno i wibracje; impulsy biegną nerwami do mózgu.']})}});
+
+/* ---- staw łokciowy: zginacz i prostownik (antagonizm), dźwignia ---- */
+BIO.define('staw-antagonizm',{opis:'Ramię z kością ramienną, łokciem i przedramieniem: suwak kąta w stawie; biceps (zginacz) i triceps (prostownik) grubieją przy skurczu i cienieją przy rozkurczu; ścięgna, przyczepy; opis, który mięsień pracuje',
+mount:function(el,o){var kat=+(o.kat||60),tl=H('div','bv-tools'),box=H('div'),info=H('div','bv-info');el.appendChild(tl);el.appendChild(box);el.appendChild(info);
+ var lab=H('label',null,'kąt w łokciu: '),r=document.createElement('input');r.type='range';r.min=30;r.max=175;r.value=kat;r.setAttribute('aria-label','Kąt w stawie łokciowym');var ov=H('b');lab.appendChild(r);lab.appendChild(ov);tl.appendChild(lab);
+ var prev=kat,ruch=0;
+ function draw(){ov.textContent=kat+'°';var W=640,Hh=420,sx=250,sy=40,ex=250,ey=250,L=220,f=(180-kat)*Math.PI/180,dx=Math.sin(f),dy=Math.cos(f);
+  var hx=ex+L*dx,hy=ey+L*dy,bA=[ex+55*dx,ey+55*dy],ol=[ex-22*Math.cos(f),ey+22*Math.sin(f)];
+  var zgin=ruch<0,prost=ruch>0,bw=12+20*(1-(kat-30)/145),tw=12+14*((kat-30)/145);
+  var sv=svg(W,Hh,'Staw łokciowy i mięśnie antagonistyczne',[]);
+  sv.appendChild(S('line',{x1:sx,y1:sy,x2:ex,y2:ey,stroke:'#d9d0b8','stroke-width':22,'stroke-linecap':'round'}));
+  sv.appendChild(S('line',{x1:ex,y1:ey,x2:hx,y2:hy,stroke:'#d9d0b8','stroke-width':18,'stroke-linecap':'round'}));
+  sv.appendChild(S('circle',{cx:ex,cy:ey,r:20,fill:'#cfe3f5',stroke:'#5a8bb8','stroke-width':3}));
+  var mx=(sx+16+bA[0])/2+38+bw,my=(sy+20+bA[1])/2;
+  sv.appendChild(S('path',{d:'M'+(sx+14)+' '+(sy+18)+' Q'+mx+' '+my+' '+bA[0]+' '+bA[1],fill:'none',stroke:zgin?'#c0392b':'#e07a6e','stroke-width':bw,'stroke-linecap':'round',opacity:.92}));
+  var qx=(sx-14+ol[0])/2-30-tw,qy=(sy+24+ol[1])/2;
+  sv.appendChild(S('path',{d:'M'+(sx-14)+' '+(sy+24)+' Q'+qx+' '+qy+' '+ol[0]+' '+ol[1],fill:'none',stroke:prost?'#1f5fae':'#7aa7e0','stroke-width':tw,'stroke-linecap':'round',opacity:.92}));
+  sv.appendChild(S('circle',{cx:bA[0],cy:bA[1],r:6,fill:'#555'}));sv.appendChild(S('circle',{cx:ol[0],cy:ol[1],r:6,fill:'#555'}));
+  sv.appendChild(T(mx+16,my-30,'biceps',{s:17,w:800,f:'#a93226',a:'start'}));sv.appendChild(T(mx+16,my-10,'zginacz',{s:13,w:700,f:'#a93226',a:'start'}));
+  sv.appendChild(T(qx-16,qy-10,'triceps',{s:17,w:800,f:'#1f5fae',a:'end'}));sv.appendChild(T(qx-16,qy+10,'prostownik',{s:13,w:700,f:'#1f5fae',a:'end'}));
+  sv.appendChild(T(sx+20,sy-14,'bark · kość ramienna',{s:13,w:700,a:'start'}));sv.appendChild(T(ex-28,ey+6,'staw łokciowy',{s:13,w:700,a:'end'}));
+  sv.appendChild(T(hx+(dx>0.3?14:0),hy+(dy>0?22:-14),'przedramię',{s:13,w:700,a:dx>0.3?'start':'middle'}));
+  clr(box);box.appendChild(sv);
+  info.className='bv-info';info.innerHTML=ruch<0?'<b>Zginanie przedramienia</b><strong>Biceps kurczy się</strong> (skraca się i grubieje), ścięgnem pociąga przedramię w górę; <strong>triceps rozluźnia się</strong> i daje się rozciągnąć.':
+   ruch>0?'<b>Prostowanie przedramienia</b><strong>Triceps kurczy się</strong> i pociąga wyrostek łokciowy; <strong>biceps rozluźnia się</strong>. Mięsień umie tylko ciągnąć — dlatego do ruchu w przeciwną stronę potrzebny jest drugi mięsień.':
+   '<b>Przesuń suwak</b>Zginaj i prostuj łokieć: obserwuj, który mięsień się skraca (ciemniejszy kolor), a który rozluźnia. Kości to dźwignie, staw — punkt podparcia, mięśnie — siła.'}
+ r.oninput=function(){var v=+r.value;ruch=v<prev?-1:v>prev?1:0;prev=v;kat=v;draw()};draw()}});
+
 })();

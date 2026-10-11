@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 161 KB)
+## .  (8 pl., 162 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 12 KB
@@ -11,7 +11,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
-- `WERYFIKACJA.md` 35 KB
+- `WERYFIKACJA.md` 36 KB
 
 ## angielski  (3 pl., 959 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -63,8 +63,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
-## biologia/bio  (2 pl., 11 KB)
-- `BIO_KATALOG.md` 7 KB
+## biologia/bio  (2 pl., 12 KB)
+- `BIO_KATALOG.md` 8 KB
 - `PRZEKAZANIE.md` 4 KB
 
 ## biologia/bio/md  (5 pl., 276 KB)
@@ -78,9 +78,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 233 KB)
+## biologia/bio/szablon  (5 pl., 242 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 175 KB
+- ⚠`bio-viz.js` 183 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
@@ -312,8 +312,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `nawigacja.js` 7 KB
 - ⚠`rozszerzenia.js` 129 KB
 
-## chemia/che-modular/engine/src/lite  (1 pl., 1 KB)
+## chemia/che-modular/engine/src/lite  (4 pl., 37 KB)
 - `che-lite.js` 1 KB
+- `lab-dane.json` 15 KB
+- `rx-lite.js` 13 KB
+- `stech-lite.js` 8 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/engine/src/moduly`) — duże:
@@ -469,7 +472,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (27 pl., 150 KB)
+## chemia/che-modular/tools  (28 pl., 152 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
@@ -608,7 +611,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `fix_encoding_v2.ps1` 5 KB
 - `replace_gereb_card.ps1` 5 KB
 
-## olimpiada  (4 pl., 116 KB)
+## olimpiada  (4 pl., 117 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
 - `PRIORYTETY.md` 10 KB
