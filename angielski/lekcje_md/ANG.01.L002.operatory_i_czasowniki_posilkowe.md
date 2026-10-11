@@ -5,7 +5,7 @@ tytul: Czasowniki / Operatory posiłkowe BE i DO
 lead: Egzamin ósmoklasisty · kompleksowe przygotowanie — Lekcja 2 – twierdzenia, przeczenia, pytania i krótkie odpowiedzi
 stopka: Lekcja 2 – BE i DO • Wersja 7.0 (uproszczona, czystsza) • 2026-08-21
 zrodlo: L002-EN-Operatory-i-czasowniki-posilkowe.html (konwersja html_do_md.py, 2026-10-09)
-stan: W1 FULL częściowo (część 1/3, §1–25) — model AI (paczka ULEPSZ --olimpiada ANG_L002_cz1), 2026-10-11; części 2–3 czekają; scalenie Claude
+stan: W1 FULL częściowo (części 1–2/3, §1–50) — model AI (paczka ULEPSZ --olimpiada ANG_L002), 2026-10-11; część 3 czeka; scalenie Claude
 ---
 Lekcja 2 · orientacja
 
@@ -625,80 +625,113 @@ Zadaj pytanie: „Czy *who* wykonuje czynność?”. Jeśli tak, *who* jest podm
 
 ### What time
 
-- <em>What time do you get up?</em>
-- <em>What time are we meeting?</em>
+- *What time do you get up?*
+- *What time are we meeting?*
 
 ### How often TRUDNE DLA WIELU
 
-- <em>How often do you play football?</em>
-- <em>How often does she go swimming?</em>
+- *How often do you play football?*
+- *How often does she go swimming?*
 
-**Wzór:** <em>How often + do/does/did + podmiot + czasownik podstawowy?</em>
+**Wzór:** *How often + do/does/did + podmiot + czasownik w formie podstawowej?*
+
+::: karta understand | W skrócie — pytania o czas, częstotliwość i ilość
+Najpierw ustal, o jaką informację pytasz. *What time* oznacza „o której godzinie”, *how often* — „jak często”, a *how much* i *how many* — „ile”. W pytaniu o cenę zwykle używamy *how much*, np. *How much is it?* Przy rzeczownikach niepoliczalnych mówimy *How much water…?*, a przy policzalnych w liczbie mnogiej — *How many students…?* Dobór operatora zależy od zdania: porównaj *How much is it?* z *How much water do you drink?*
+
+:::
 
 ### How much
 
-- <em>How much is it?</em> (cena)
-- <em>How much water do you drink?</em> (niepoliczalne)
+- *How much is it?* (cena)
+- *How much water do you drink?* (rzeczownik niepoliczalny)
 
 ### How many
 
-- <em>How many brothers do you have?</em> (policzalne)
-- <em>How many students are there?</em>
+- *How many brothers do you have?* (rzeczownik policzalny w liczbie mnogiej)
+- *How many students are there?*
+
+::: karta adv | Granica zastosowania how much i how many | poziom ambitny
+*How much* może pytać o cenę, ilość substancji lub stopień, np. *How much does it cost?*, *How much milk is there?*, *How much do you know?* *How many* łączy się z rzeczownikiem policzalnym w liczbie mnogiej: *How many books do you own?* Pułapka: w pytaniu o cenę rzeczownik nie musi wystąpić — *How much are these shoes?* Odpowiedź może podać cenę, np. *They’re £40.*
+:::
 
 ## 27. There is / There are
 
-Konstrukcja używa **BE**.
+Konstrukcja *there is / there are* służy do mówienia, że coś gdzieś istnieje albo się znajduje. W pytaniu operator *be* przechodzi przed *there*.
 
-- <em>There is a computer in the room.</em>
-- <em>There are twenty students in the classroom.</em>
-- <em>Is there a computer?</em> / <em>Are there any students?</em>
-- <em>There isn't a computer.</em> / <em>There aren't any students.</em>
+- *There is a computer in the room.*
+- *There are twenty students in the classroom.*
+- *Is there a computer?* / *Are there any students?*
+- *There isn't a computer.* / *There aren't any students.*
 
-&#8203;<span class="error-text">Does there is a computer?</span>
+&#8203;<span class="error-text">Does there is a computer?</span> → <span class="correct-text">Is there a computer?</span>
+
+::: karta understand | W skrócie — there is / there are
+Wybierz *is* dla rzeczownika w liczbie pojedynczej albo rzeczownika niepoliczalnego: *There is a chair.* / *There is some water.* Wybierz *are* dla rzeczownika w liczbie mnogiej: *There are two chairs.* W pytaniu *is* lub *are* przesuwa się przed *there*: *Is there a chair?*, *Are there two chairs?* Nie dodawaj do tej konstrukcji operatora *do*.
+:::
 
 ## 28. Krótkie odpowiedzi – zasady
 
-- Operator odpowiedzi = operator pytania.
-- Nie powtarzamy całego czasownika głównego.
+- W krótkiej odpowiedzi powtarzamy operator użyty w pytaniu.
+- Zwykle nie powtarzamy całego czasownika głównego.
+- W przeczącej krótkiej odpowiedzi często używamy formy skróconej: *isn't, don't, didn't*.
 
-**BE** → <em>Yes, I am.</em> / <em>No, she isn't.</em><br> **DO** → <em>Yes, I do.</em> / <em>No, she doesn't.</em><br> **DID** → <em>Yes, they did.</em> / <em>No, they didn't.</em>
+**BE** → *Yes, I am.* / *No, she isn't.*  
+**DO** → *Yes, I do.* / *No, she doesn't.*  
+**DID** → *Yes, they did.* / *No, they didn't.*
+
+::: karta understand | W skrócie — operator w krótkiej odpowiedzi
+Spójrz na początek pytania: to on podpowiada operator odpowiedzi. Na *Are you ready?* odpowiadamy *Yes, I am* lub *No, I'm not*; na *Does she play?* — *Yes, she does* lub *No, she doesn't*; na *Did they leave?* — *Yes, they did* lub *No, they didn't*. Zwróć uwagę na zmianę zaimka: pytanie *Are you…?* kierowane do rozmówcy może otrzymać odpowiedź *Yes, I am*.
+:::
 
 ## 29. DO w zdaniu twierdzącym – podkreślenie
 
-- <em>I like this book.</em> = Lubię tę książkę.
-- <em>I do like this book!</em> = Naprawdę lubię tę książkę!
-- <em>She does understand you.</em> = Ona naprawdę cię rozumie.
+- *I like this book.* = Lubię tę książkę.
+- *I do like this book!* = Naprawdę lubię tę książkę!
+- *She does understand you.* = Ona naprawdę cię rozumie.
+
+W twierdzeniu *do/does* może służyć do podkreślenia wypowiedzi. Wtedy czasownik główny pozostaje w formie podstawowej: *does understand*, nie *does understands*.
 
 ## 30. Jak zbudować pytanie krok po kroku?
 
-1. Znajdź czasownik i określ czas zdania.
-2. Sprawdź, czy zdanie ma BE albo inny operator, np. <em>can, must, will, have</em>.
-3. Jeśli operator już jest, przesuń go przed podmiot. Nie dodawaj DO.
-4. Jeśli operatora nie ma, wybierz <em>do / does / did</em>.
-5. Po <em>does / did</em> czasownik wraca do formy podstawowej.
-6. Jeśli pytasz o szczegół, dodaj właściwy WH-word na początku.
+1. Ustal, o co pytasz, i znajdź czasownik.
+2. Sprawdź, czy zdanie zawiera operator, np. *be, can, must, will* albo operator czasu, np. *have* w *Have you finished?*
+3. Jeśli operator już jest, przesuń go przed podmiot. Nie dodawaj *do*.
+4. Jeśli operatora nie ma, a pytanie dotyczy zwykłego czasownika w Present Simple lub Past Simple, użyj *do / does / did*.
+5. Po *does* lub *did* czasownik główny wraca do formy podstawowej.
+6. Jeśli pytasz o szczegół, dodaj właściwe słowo pytające. Ustal, czy jest ono podmiotem: *Who called?* — bez *do*; *Who did you call?* — z *did*.
+
+::: karta understand | W skrócie — sprawdź, kto wykonuje czynność
+W pytaniu o osobę wykonującą czynność, *who* jest podmiotem: *Who lives here?* Nie dodajemy wtedy *do/does/did*, a czasownik dopasowuje się do *who* tak, jak do trzeciej osoby liczby pojedynczej. W pytaniu o osobę, na którą skierowana jest czynność, podmiot występuje po operatorze: *Who do you like?* Tu potrzebne jest *do*. Podobnie działa *what*: *What happened?*, ale *What did you see?* Uwaga: *who* jako podmiot łączy się z czasownikiem w 3. osobie l.p. (*Who lives here?*), ale gdy podmiotem jest inny wyraz, forma zależy od niego: *Who are they?* (podmiot *they*), *Who are your friends?*
+:::
 
 ## 31. Szybki algorytm egzaminacyjny
 
-1. Znajdź czasownik i czas zdania.
-2. BE lub inny operator już jest → przesuń go przed podmiot.
-3. Brak operatora + zwykły czasownik w Simple → wybierz <em>do / does / did</em>.
-4. Po <em>does / did</em> użyj formy podstawowej.
-5. WH-word dodaj na początku gotowego pytania.
+1. Znajdź czasownik i określ czas zdania.
+2. Sprawdź, czy zdanie ma już operator. Jeśli tak, zwykle przesuń go przed podmiot.
+3. Jeśli operatora nie ma, a pytanie dotyczy zwykłego czasownika w Simple, dobierz *do / does / did*.
+4. Po *does / did* użyj formy podstawowej czasownika.
+5. Dodaj słowo pytające na początku, chyba że samo jest podmiotem — wtedy zwykle nie dodajesz *do*.
+6. Sprawdź, czy operator pasuje do podmiotu i czasu.
 
 **Ułóż pytanie do odpowiedzi [[exam:EGZAMIN]]**
 
-1. Odpowiedź: <em>I live in Kraków.</em><br>Pytanie: ______________________________
-2. Odpowiedź: <em>She likes pop music.</em><br>Pytanie: ______________________________
-3. Odpowiedź: <em>They went to the cinema.</em><br>Pytanie: ______________________________
-4. Odpowiedź: <em>She is tired because she worked hard.</em><br>Pytanie: ______________________________
+1. Odpowiedź: *I live in Kraków.*  
+Pytanie: ______________________________
+2. Odpowiedź: *She likes pop music.*  
+Pytanie: ______________________________
+3. Odpowiedź: *They went to the cinema.*  
+Pytanie: ______________________________
+4. Odpowiedź: *She is tired because she worked hard.*  
+Pytanie: ______________________________
 
 ::: odp | Odpowiedź
+Przykładowe pytania:
 1. **Where do you live?**
 2. **What kind of music does she like?**
 3. **Where did they go?**
 4. **Why is she tired?**
 
+Możliwe są inne pytania, jeśli pasują do podanej odpowiedzi.
 :::
 
 ## 6 | Bank konstrukcji
@@ -706,14 +739,13 @@ Konstrukcja używa **BE**.
 ## 32. Bank konstrukcji – ucz się konstrukcji, nie pojedynczych słów
 
 ::: karta basic | Zasada
-Nie ucz się: <span class="error-text">are = jesteś</span><br> Ucz się: <span class="correct-text">Are you...?</span>
+Nie ucz się wyłącznie: <span class="error-text">are = jesteś</span><br>Ucz się całej konstrukcji: <span class="correct-text">Are you...?</span>
 
-Nie ucz się: <span class="error-text">do = robić</span><br> Ucz się: <span class="correct-text">Do you...?</span>
+Nie ucz się wyłącznie: <span class="error-text">do = robić</span><br>Ucz się całej konstrukcji: <span class="correct-text">Do you...?</span>
 
-Nie ucz się: <span class="error-text">does = robi</span><br> Ucz się: <span class="correct-text">Does she...?</span>
+Nie ucz się wyłącznie: <span class="error-text">does = robi</span><br>Ucz się całej konstrukcji: <span class="correct-text">Does she...?</span>
 
-Nie ucz się: <span class="error-text">how = jak</span><br> Ucz się: <span class="correct-text">How often do you...?</span>
-
+Nie ucz się wyłącznie: <span class="error-text">how = jak</span><br>Ucz się całej konstrukcji: <span class="correct-text">How often do you...?</span>
 :::
 
 ::: karta - | Konstrukcje egzaminacyjne
@@ -750,34 +782,33 @@ Where do you...? Gdzie...?
 How often do you...? Jak często...?
 
 ::: div.przyklad
-&#8203;<span class="eng">How often do you play?</span> <span class="pl">Jak często grasz?</span>
+&#8203;<span class="eng">How often do you play?</span> <span class="pl">Jak często grasz?
 :::
 
 Who likes...? Kto lubi...?
 
 ::: div.przyklad
-&#8203;<span class="eng">Who likes football?</span> <span class="pl">Kto lubi piłkę?</span>
+&#8203;<span class="eng">Who likes football?</span> <span class="pl">Kto lubi piłkę?
 :::
 
 Who do you...? Kogo...?
 
 ::: div.przyklad
-&#8203;<span class="eng">Who do you like?</span> <span class="pl">Kogo lubisz?</span>
+&#8203;<span class="eng">Who do you like?</span> <span class="pl">Kogo lubisz?
 :::
-
 :::
 
 ## Fiszki – najważniejsze konstrukcje
 
 ::: fiszki
-Do you like...? | Czy lubisz...?<br><small>DO + you + forma podstawowa</small>
-Are you ready? | Czy jesteś gotowy?<br><small>BE przed podmiotem</small>
-Does she play...? | Czy ona gra...?<br><small>Po DOES: play, nie plays</small>
-Did they go...? | Czy oni poszli...?<br><small>Po DID: go, nie went</small>
-Who likes...? | Kto lubi...?<br><small>WHO jest podmiotem: bez DO</small>
-Who do you like? | Kogo lubisz?<br><small>WHO jest dopełnieniem: użyj DO</small>
-Are there any...? | Czy są jakieś...?<br><small>THERE ARE w pytaniu</small>
-Have you got...? | Czy masz...?<br><small>Nie dodawaj DO do HAVE GOT</small>
+Do you like...? | Czy lubisz...?<br><small>DO + you + forma podstawowa</small> | podstawa:operatory
+Are you ready? | Czy jesteś gotowy?<br><small>BE przed podmiotem</small> | podstawa:operatory
+Does she play...? | Czy ona gra...?<br><small>Po DOES: play, nie plays</small> | podstawa:operatory
+Did they go...? | Czy oni poszli...?<br><small>Po DID: go, nie went</small> | podstawa:operatory
+Who likes...? | Kto lubi...?<br><small>WHO jest podmiotem: bez DO</small> | podstawa:operatory
+Who do you like? | Kogo lubisz?<br><small>WHO jest dopełnieniem: użyj DO</small> | podstawa:operatory
+Are there any...? | Czy są jakieś...?<br><small>THERE ARE w pytaniu</small> | podstawa:operatory
+Have you got...? | Czy masz...?<br><small>Nie dodawaj DO do HAVE GOT</small> | podstawa:operatory
 :::
 
 ## 7 | Ćwiczenia
@@ -785,13 +816,17 @@ Have you got...? | Czy masz...?<br><small>Nie dodawaj DO do HAVE GOT</small>
 ## 33. Tip tygodnia – cztery formy jednego czasownika
 
 ::: karta warning | LIKE
-Twierdzenie: <em>She likes music.</em><br> Przeczenie: <em>She doesn't like music.</em><br> Pytanie: <em>Does she like music?</em><br> Krótka odpowiedź: <em>Yes, she does.</em> / <em>No, she doesn't.</em>
+Twierdzenie: *She likes music.*  
+Przeczenie: *She doesn't like music.*  
+Pytanie: *Does she like music?*  
+Krótka odpowiedź: *Yes, she does.* / *No, she doesn't.*
 
+W Present Simple końcówka *-s* pojawia się w twierdzeniu przy *he, she, it*. Gdy użyjemy *does/doesn't*, końcówkę przejmuje operator i czasownik główny ma formę podstawową.
 :::
 
 **Twoja kolej – PLAY [[basic:PODSTAWA]]**
 
-Użyj: <em>he + play + football</em>
+Użyj: *he + play + football*
 
 - Twierdzenie: _______________________________
 - Przeczenie: _______________________________
@@ -799,34 +834,35 @@ Użyj: <em>he + play + football</em>
 - Krótka odpowiedź: _______________________________
 
 ::: odp | Podpowiedzi
-1. Pamiętaj: w 3. osobie l.poj. dodajemy -s w twierdzeniu. 2. W pytaniu i przeczeniu używamy <em>does</em> + forma podstawowa. 3. Krótka odpowiedź powtarza operator: <em>Yes, he does.</em> / <em>No, he doesn't.</em>
-
+1. W twierdzeniu w 3. osobie liczby pojedynczej dodajemy do czasownika *-s* lub *-es*.
+2. W pytaniu i przeczeniu używamy *does* + formy podstawowej.
+3. Krótka odpowiedź powtarza operator: *Yes, he does.* / *No, he doesn't.*
 :::
 
 ::: odp | Odpowiedź
-- He plays football.
-- He doesn't play football.
-- Does he play football?
-- Yes, he does. / No, he doesn't.
-
+- *He plays football.*
+- *He doesn't play football.*
+- *Does he play football?*
+- *Yes, he does.* / *No, he doesn't.*
 :::
 
 ## 34. Poziom A – Rozpoznaj operator
 
 **Wybierz poprawny operator. [[basic:PODSTAWA]]**
 
-1. _____ you tired? (Are / Do)
-2. _____ she like music? (Is / Does)
-3. _____ they at school? (Are / Do)
-4. _____ he play tennis? (Is / Does)
-5. _____ you have a brother? (Are / Do)
-6. _____ she your sister? (Is / Does)
-7. _____ they go to school yesterday? (Did / Were)
-8. _____ they at school yesterday? (Did / Were)
+1. _____ you tired? (*Are / Do*)
+2. _____ she like music? (*Is / Does*)
+3. _____ they at school? (*Are / Do*)
+4. _____ he play tennis? (*Is / Does*)
+5. _____ you have a brother? (*Are / Do*)
+6. _____ she your sister? (*Is / Does*)
+7. _____ they go to school yesterday? (*Did / Were*)
+8. _____ they at school yesterday? (*Did / Were*)
 
 ::: odp | Podpowiedzi
-1. Sprawdź, czy czasownik to BE (am/is/are/was/were). 2. Jeśli nie – użyj DO/DOES/DID. 3. Pamiętaj o czasie: teraźniejszość → do/does, przeszłość → did.
-
+1. Sprawdź, czy czasownik to *be* (*am/is/are/was/were*).
+2. Jeśli czasownik jest zwykły, użyj *do/does/did*.
+3. Pamiętaj o czasie: teraźniejszość → *do/does*; przeszłość → *did* lub forma przeszła *be*.
 :::
 
 ::: odp | Odpowiedź
@@ -838,7 +874,6 @@ Użyj: <em>he + play + football</em>
 6. Is
 7. Did
 8. Were
-
 :::
 
 ## 35. Poziom B – Uzupełnij
@@ -857,8 +892,9 @@ Użyj: <em>he + play + football</em>
 10. He _____ not understand the question.
 
 ::: odp | Podpowiedzi
-1. Zidentyfikuj czasownik: czy to BE, czy zwykły czasownik? 2. Jeśli zwykły – użyj do/does/did. 3. Sprawdź osobę i czas.
-
+1. Zidentyfikuj czasownik: czy to *be*, czy zwykły czasownik?
+2. Jeśli czasownik jest zwykły, użyj *do/does/did*.
+3. Sprawdź osobę i czas.
 :::
 
 ::: odp | Odpowiedź
@@ -872,29 +908,37 @@ Użyj: <em>he + play + football</em>
 8. are
 9. Is
 10. does
-
 :::
 
 ## 36. Poziom C – Zamień na pytanie i przeczenie
 
 **Przekształć zdanie na pytanie i przeczenie. [[understand:TRENING]]**
 
-1. <em>She likes music.</em><br>Pytanie: ___________________<br>Przeczenie: ___________________
-2. <em>They are at home.</em><br>Pytanie: ___________________<br>Przeczenie: ___________________
-3. <em>He went to school.</em><br>Pytanie: ___________________<br>Przeczenie: ___________________
-4. <em>She has a dog.</em><br>Pytanie: ___________________<br>Przeczenie: ___________________
+1. *She likes music.*  
+Pytanie: ___________________  
+Przeczenie: ___________________
+2. *They are at home.*  
+Pytanie: ___________________  
+Przeczenie: ___________________
+3. *He went to school.*  
+Pytanie: ___________________  
+Przeczenie: ___________________
+4. *She has a dog.*  
+Pytanie: ___________________  
+Przeczenie: ___________________
 
 ::: odp | Podpowiedzi
-1. Pytanie: operator przed podmiot. 2. Przeczenie: operator + not (lub skrót). 3. Po <em>does</em> i <em>did</em> czasownik wraca do formy podstawowej.
-
+1. Pytanie: operator przed podmiotem.
+2. Przeczenie: operator + *not* (lub forma skrócona).
+3. Po *does* i *did* czasownik wraca do formy podstawowej.
+4. Przy *have* w znaczeniu „mieć” stosuj poznaną konstrukcję: *Does she have…?* / *She doesn't have…*; w brytyjskim *have got* pytanie tworzy się inaczej: *Has she got…?*
 :::
 
 ::: odp | Odpowiedź
-1. Does she like music? / She doesn't like music.
-2. Are they at home? / They aren't at home.
-3. Did he go to school? / He didn't go to school.
-4. Does she have a dog? / She doesn't have a dog.
-
+1. *Does she like music?* / *She doesn't like music.*
+2. *Are they at home?* / *They aren't at home.*
+3. *Did he go to school?* / *He didn't go to school.*
+4. *Does she have a dog?* / *She doesn't have a dog.*
 :::
 
 ## 37. Poziom D – Znajdź i popraw błąd
@@ -911,25 +955,19 @@ Użyj: <em>he + play + football</em>
 8. <span class="error-text">Did she was tired?</span> → <span class="correct-text">Was she tired?</span>
 
 ::: odp | Podpowiedzi
-1. Szukaj łączenia DO z BE – to zawsze błąd. 2. Po <em>does/did</em> czasownik musi być w formie podstawowej. 3. W pytaniach WH + zwykły czasownik potrzebujesz DO.
-
+1. Nie używaj *do* jako operatora do tworzenia pytania z *be*.
+2. Po *does/did* czasownik główny ma formę podstawową.
+3. W pytaniu WH ze zwykłym czasownikiem potrzebujesz operatora, np. *Where do you live?*
 :::
 
-**1.** Do + are = błąd — BE samo tworzy pytanie.
-
-**2.** Po doesn't używamy formy podstawowej: <span class="error-text">likes</span> → <span class="correct-text">like</span>
-
-**3.** Po did używamy formy podstawowej: <span class="error-text">went</span> → <span class="correct-text">go</span>
-
-**4.** Po does używamy formy podstawowej: <span class="error-text">has</span> → <span class="correct-text">have</span>
-
-**5.** W pytaniu WH + zwykły czasownik potrzebujemy DO: <span class="error-text">Where you live?</span> → <span class="correct-text">Where do you live?</span>
-
-**6.** Like to zwykły czasownik → DO, nie BE.
-
-**7.** Po does forma podstawowa: <span class="error-text">plays</span> → <span class="correct-text">play</span>
-
-**8.** BE samo tworzy pytanie: <span class="error-text">Did she was?</span> → <span class="correct-text">Was she?</span>
+1. *Do + are* jest tu błędne — *be* samo tworzy pytanie: *Are you happy?*
+2. Po *doesn't* używamy formy podstawowej: <span class="error-text">likes</span> → <span class="correct-text">like</span>.
+3. Po *did* używamy formy podstawowej: <span class="error-text">went</span> → <span class="correct-text">go</span>.
+4. Po *does* używamy formy podstawowej: <span class="error-text">has</span> → <span class="correct-text">have</span>.
+5. W pytaniu WH ze zwykłym czasownikiem potrzebujemy operatora: <span class="error-text">Where you live?</span> → <span class="correct-text">Where do you live?</span>.
+6. *Like* to zwykły czasownik, więc używamy *do*, nie *be*.
+7. Po *does* używamy formy podstawowej: <span class="error-text">plays</span> → <span class="correct-text">play</span>.
+8. *Be* samo tworzy pytanie: <span class="error-text">Did she was?</span> → <span class="correct-text">Was she?</span>.
 
 ## 38. Poziom E – Krótkie odpowiedzi
 
@@ -943,8 +981,9 @@ Użyj: <em>he + play + football</em>
 6. Were they at home? – Yes, __________.
 
 ::: odp | Podpowiedzi
-1. Krótka odpowiedź powtarza operator z pytania. 2. Dla <em>do</em> → <em>do/don't</em>; dla <em>does</em> → <em>does/doesn't</em>; dla <em>did</em> → <em>did/didn't</em>. 3. Dla <em>are</em> → <em>am/aren't</em>; dla <em>is</em> → <em>is/isn't</em>; dla <em>were</em> → <em>were/weren't</em>.
-
+1. Krótka odpowiedź powtarza operator z pytania.
+2. Dla *do* → *do/don't*; dla *does* → *does/doesn't*; dla *did* → *did/didn't*.
+3. Dla *are* → *am/aren't*; dla *is* → *is/isn't*; dla *were* → *were/weren't*.
 :::
 
 ::: odp | Odpowiedź
@@ -954,7 +993,6 @@ Użyj: <em>he + play + football</em>
 4. I'm not
 5. he doesn't
 6. they were
-
 :::
 
 ## 39. Poziom F – WH-questions
@@ -971,8 +1009,9 @@ Użyj: <em>he + play + football</em>
 8. Where _____ your brother work?
 
 ::: odp | Podpowiedzi
-1. WH-word + operator + podmiot + reszta? 2. Operator zależy od czasownika: BE lub DO. 3. Pamiętaj o czasie i osobie.
-
+1. WH-word + operator + podmiot + reszta?
+2. Operator zależy od czasownika: *be* czy zwykły czasownik.
+3. Pamiętaj o czasie i osobie. W zdaniu 5 domyślnie pytamy, gdzie ona była wczoraj.
 :::
 
 ::: odp | Odpowiedź
@@ -985,51 +1024,70 @@ Użyj: <em>he + play + football</em>
 7. are
 8. does
 
+Przykładowe pełne pytania:
+1. *Where do you live?*
+2. *What does she like?*
+3. *Why is he tired?*
+4. *When did they arrive?*
+5. *Where was she yesterday?*
+6. *What do you do at weekends?*
+7. *Why are they at home?*
+8. *Where does your brother work?*
 :::
 
 ## 40. Poziom G – Main verb czy auxiliary? [[extra:DLA AMBITNYCH]]
 
-**Określ, czy podkreślone słowo to czasownik główny (main) czy posiłkowy (aux).**
+**Określ, czy podkreślone słowo jest czasownikiem głównym (*main*) czy posiłkowym (*aux*). W zdaniach z *be* odróżnij czasownik łączący od operatora czasu ciągłego.**
 
-1. <em>I <u>do</u> my homework every day.</em> → __________
-2. <em><u>Do</u> you like coffee?</em> → __________
-3. <em>She <u>has</u> a brother.</em> → __________
-4. <em>She <u>has</u> finished her work.</em> → __________
-5. <em>They <u>are</u> playing football now.</em> → __________
-6. <em>They <u>are</u> at home.</em> → __________
-7. <em>What <u>do</u> you <u>do</u> in your free time?</em> → __________ / __________
-8. <em><u>Have</u> you ever <u>had</u> a pet?</em> → __________ / __________
+1. *I <u>do</u> my homework every day.* → __________
+2. *<u>Do</u> you like coffee?* → __________
+3. *She <u>has</u> a brother.* → __________
+4. *She <u>has</u> finished her work.* → __________
+5. *They <u>are</u> playing football now.* → __________
+6. *They <u>are</u> at home.* → __________
+7. *What <u>do</u> you <u>do</u> in your free time?* → __________ / __________
+8. *<u>Have</u> you ever <u>had</u> a pet?* → __________ / __________
 
 ::: odp | Odpowiedź
-1. main
-2. aux
-3. main
-4. aux
-5. aux
-6. main
-7. pierwsze: aux, drugie: main
-8. Have: aux, had: main
-
+1. *do* — czasownik główny.
+2. *do* — operator posiłkowy.
+3. *has* — czasownik główny, „mieć”.
+4. *has* — operator posiłkowy tworzący Present Perfect.
+5. *are* — operator posiłkowy tworzący Present Continuous.
+6. *are* — czasownik łączący/główny w szkolnym podziale; nie tworzy tu czasu ciągłego.
+7. pierwsze *do* — operator posiłkowy; drugie *do* — czasownik główny.
+8. *Have* — operator posiłkowy; *had* — czasownik główny.
 :::
 
 ## 41. Ćwiczenie specjalne – WHO
 
 **Wybierz poprawne pytanie. PUŁAPKA E8**
 
-1. Kto lubi piłkę nożną?<br>A. <span class="error-text">Who does like football?</span> B. <span class="correct-text">Who likes football?</span>
-2. Kogo lubisz?<br>A. <span class="correct-text">Who do you like?</span> B. <span class="error-text">Who you like?</span>
-3. Kto mieszka tutaj?<br>A. <span class="error-text">Who does live here?</span> B. <span class="correct-text">Who lives here?</span>
+1. Kto lubi piłkę nożną?  
+A. <span class="error-text">Who does like football?</span>  
+B. <span class="correct-text">Who likes football?</span>
+
+2. Kogo lubisz?  
+A. <span class="correct-text">Who do you like?</span>  
+B. <span class="error-text">Who you like?</span>
+
+3. Kto mieszka tutaj?  
+A. <span class="error-text">Who does live here?</span>  
+B. <span class="correct-text">Who lives here?</span>
 
 ::: odp | Podpowiedzi
-1. Who = podmiot → nie używamy DO: <span class="error-text">Who does like?</span> → <span class="correct-text">Who likes?</span> 2. Who = dopełnienie → potrzebujemy DO: <span class="error-text">Who you like?</span> → <span class="correct-text">Who do you like?</span> 3. Sprawdź, czy <em>who</em> jest podmiotem (kto wykonuje czynność) czy dopełnieniem (kogo).
-
+1. Jeśli *who* jest podmiotem, nie dodajemy *do*: *Who likes…?*
+2. Jeśli *who* jest dopełnieniem, podmiot występuje po operatorze: *Who do you like?*
+3. Sprawdź, czy *who* oznacza osobę wykonującą czynność („kto”), czy osobę, na którą czynność jest skierowana („kogo”).
 :::
 
-**1.** Who = podmiot → nie używamy DO: <span class="error-text">Who does like?</span> → <span class="correct-text">Who likes?</span>
+1. *Who* jest podmiotem — nie używamy *do*: <span class="error-text">Who does like?</span> → <span class="correct-text">Who likes?</span>.
+2. *Who* jest dopełnieniem — potrzebujemy *do*: <span class="error-text">Who you like?</span> → <span class="correct-text">Who do you like?</span>.
+3. *Who* jest podmiotem: <span class="error-text">Who does live?</span> → <span class="correct-text">Who lives?</span>.
 
-**2.** Who = dopełnienie → potrzebujemy DO: <span class="error-text">Who you like?</span> → <span class="correct-text">Who do you like?</span>
-
-**3.** Who = podmiot → <span class="error-text">Who does live?</span> → <span class="correct-text">Who lives?</span>
+::: karta adv | Kiedy who może wystąpić z do? | poziom ambitny
+Porównaj pytanie o podmiot i o dopełnienie: *Who called you?* („Kto do ciebie zadzwonił?”) — *who* wykonuje czynność, więc operatora *do* nie ma. *Who did you call?* („Do kogo zadzwoniłeś?”) — podmiotem jest *you*, a *who* jest dopełnieniem, więc używamy *did*. Rozstrzygnięcie: znajdź wykonawcę czynności, zanim wybierzesz operator.
+:::
 
 ## 42. There is / There are
 
@@ -1042,8 +1100,9 @@ Użyj: <em>he + play + football</em>
 5. There _____ not a shop near my house.
 
 ::: odp | Podpowiedzi
-1. There is/are używa BE. 2. <em>Is</em> dla liczby pojedynczej, <em>are</em> dla mnogiej. 3. W pytaniu BE przesuwa się przed <em>there</em>.
-
+1. *There is/are* używa formy *be*.
+2. Użyj *is* dla liczby pojedynczej, a *are* dla mnogiej.
+3. W pytaniu operator *be* przesuwa się przed *there*.
 :::
 
 ::: odp | Odpowiedź
@@ -1052,176 +1111,232 @@ Użyj: <em>he + play + football</em>
 3. is
 4. are
 5. is
-
 :::
 
 ## 43. Zadanie w formule E8 – Present Continuous
 
-PUŁAPKA E8 Present Continuous + szyk pytania
+**Pułapka E8: Present Continuous i szyk pytania**
 
-**Sytuacja:** Rozmówca pyta o czynność, która dzieje się teraz.
+**Sytuacja:** Pytasz rozmówcę o czynność wykonywaną teraz.
 
-**Zadanie:** <em>Why ______ you waiting here?</em>
+**Zadanie:** *Why ______ you waiting here?*
 
 ✓ **Poprawna odpowiedź:** <span class="correct-text">Why are you waiting here?</span>
 
 ✗ **Typowy błąd:** <span class="error-text">Why do you waiting here?</span>
 
-**Dlaczego?** <em>waiting</em> = czynność wykonywana teraz → używamy **BE + -ing**.<br> Dlatego: <span class="correct-text">are + you + waiting</span>, a nie <span class="error-text">do + you + waiting</span>.
+**Dlaczego?** W Present Continuous używamy formy *be* + czasownika z końcówką *-ing*. Ponieważ pytanie jest skierowane do *you*, właściwa forma to *are*: *Why are you waiting here?* Nie używamy w tym pytaniu *do*.
 
-Typowa trudność: rozpoznanie, że końcówka <em>-ing</em> wymaga odpowiedniej formy BE.
-
-**Co zapamiętać?** <br> <span class="correct-text">-ing → sprawdź BE</span>
+**Co zapamiętać:** *-ing* w Present Continuous → sprawdź formę *be*.
 
 ## 44. Zadanie w formule E8 – How often
 
-TRUDNE DLA WIELU How often...?
+**TRUDNE DLA WIELU: How often...?**
 
 **Kontekst:** Mark pyta, jak często ktoś gra w tenisa.
 
-**Zadanie:** <em>Mark, ______ do you play tennis?</em>
+**Zadanie:** *Mark, ______ do you play tennis?*
 
 ✓ **Poprawna odpowiedź:** <span class="correct-text">How often do you play tennis?</span>
 
 ✗ **Typowy błąd:** <span class="error-text">How much do you play tennis?</span>
 
-**Dlaczego?** <em>How often</em> = **jak często**.<br> Odpowiedź: <em>Twice a week.</em> (dwa razy w tygodniu).<br> <span class="error-text">How much</span> pyta o ilość, nie o częstotliwość.
+**Dlaczego?** *How often* znaczy „jak często”. Pasującą odpowiedzią może być *Twice a week* („dwa razy w tygodniu”). *How much* pyta o ilość, stopień lub cenę, a nie o częstotliwość.
 
-Typowa trudność: odróżnienie pytania o częstotliwość od pytania o ilość.
+**Wniosek:** *How often + do/does/did + podmiot + czasownik w formie podstawowej?*
 
-**Wniosek:** <br> <span class="correct-text">How often + DO + podmiot + czasownik?</span>
+## 45. Co może sprawiać trudność?
 
-## 45. Co było trudne dla ósmoklasistów?
-
-- Samodzielne budowanie pytania
-- Szyk pytania (<span class="error-text">You are waiting?</span> zamiast <span class="correct-text">Are you waiting?</span>)
-- Wybór operatora (<span class="error-text">do</span> zamiast <span class="correct-text">are</span> przy <em>-ing</em>)
-- WH-question + DO (<span class="error-text">Where you live?</span> zamiast <span class="correct-text">Where do you live?</span>)
-- <em>How often</em>
+- Samodzielne zbudowanie pytania z szykiem operator + podmiot.
+- Odróżnienie pytań z *be* od pytań ze zwykłym czasownikiem: *Are you waiting?* / *Do you wait?*
+- Wybór *be* w Present Continuous zamiast *do*: <span class="error-text">Do you waiting?</span> → <span class="correct-text">Are you waiting?</span>.
+- Dodanie operatora *do* w pytaniu WH: <span class="error-text">Where you live?</span> → <span class="correct-text">Where do you live?</span>.
+- Odróżnianie *how often* („jak często”) od *how much* („ile”, „jak bardzo”, „ile kosztuje”).
+- Rozpoznanie, czy *who* jest podmiotem: *Who lives here?*, czy dopełnieniem: *Who do you know?*
 
 ## 46. Zadania treningowe wzorowane na E8
 
 **Uzupełnij pytania. [[exam:EGZAMIN]]**
 
-1. **Cena – how much**<br><em>(much) __________ are these shoes?</em> (odpowiedź: £40.)
-2. **Czynność trwająca – waiting**<br><em>Why (waiting) __________ you here?</em> (czynność odbywa się teraz)
-3. **Częstotliwość – how often**<br><em>Mark, (how) __________ do you play tennis?</em> (odpowiedź: Twice a week.)
-4. **Godzina – what time**<br><em>What (time) __________ the film start?</em> (odpowiedź: At 7 p.m.)
-5. **Trzecia osoba – does**<br><em>What __________ she do after school?</em>
-6. **Pytanie o miejsce – do**<br><em>Where __________ you live?</em>
+1. **Cena – how much**  
+*__________ are these shoes?* (odpowiedź: £40.)
+2. **Czynność trwająca – waiting**  
+*Why (waiting) __________ you here?* (czynność odbywa się teraz)
+3. **Częstotliwość – how often**  
+*Mark, (how) __________ do you play tennis?* (odpowiedź: Twice a week.)
+4. **Godzina – what time**  
+*What (time) __________ the film start?* (odpowiedź: At 7 p.m.)
+5. **Trzecia osoba – does**  
+*What __________ she do after school?*
+6. **Pytanie o miejsce – do**  
+*Where __________ you live?*
 
 ::: odp | Podpowiedzi
-1. Znajdź słowo kluczowe w nawiasie – to podpowiedź, czego użyć. 2. Sprawdź, czy pytanie dotyczy stanu (BE) czy czynności (DO). 3. Pamiętaj o szyku: WH-word + operator + podmiot + reszta.
-
+1. W pytaniu o cenę zacznij od *How much*.
+2. Dla czynności odbywającej się teraz użyj *be + -ing*.
+3. Słowo *how* w nawiasie wskazuje pytanie o częstotliwość.
+4. Po *what time* zastosuj operator odpowiedni do podmiotu *the film* i czasu teraźniejszego.
+5. W Present Simple dla *she* użyj *does*, a po nim formy podstawowej.
+6. W Present Simple z *you* użyj *do*.
 :::
 
 ::: odp | Odpowiedź
-1. How much are these shoes?
-2. Why are you waiting here?
-3. How often do you play tennis?
-4. What time does the film start?
-5. What does she do after school?
-6. Where do you live?
-
+1. *How much are these shoes?*
+2. *Why are you waiting here?*
+3. *How often do you play tennis?*
+4. *What time does the film start?*
+5. *What does she do after school?*
+6. *Where do you live?*
 :::
 
 ## 47. Dodatkowe ćwiczenie – Present Continuous w pytaniach
 
-**Przekształć twierdzenia na pytania (użyj BE + -ing). [[exam:EGZAMIN]]**
+**Przekształć twierdzenia na pytania (użyj *be + -ing*). [[exam:EGZAMIN]]**
 
-1. <em>She is reading a book.</em> → ___________________
-2. <em>They are playing football.</em> → ___________________
-3. <em>You are waiting for the bus.</em> → ___________________
-4. <em>He is sleeping.</em> → ___________________
+1. *She is reading a book.* → ___________________
+2. *They are playing football.* → ___________________
+3. *You are waiting for the bus.* → ___________________
+4. *He is sleeping.* → ___________________
 
 ::: odp | Podpowiedzi
-1. BE + -ing = Present Continuous. 2. W pytaniu BE przesuwa się przed podmiot. 3. Zachowaj formę <em>-ing</em> czasownika.
-
+1. Present Continuous tworzymy z *be + -ing*.
+2. W pytaniu forma *be* przesuwa się przed podmiot.
+3. Zachowaj formę *-ing* czasownika.
 :::
 
 ::: odp | Odpowiedź
-1. Is she reading a book?
-2. Are they playing football?
-3. Are you waiting for the bus?
-4. Is he sleeping?
-
+1. *Is she reading a book?*
+2. *Are they playing football?*
+3. *Are you waiting for the bus?*
+4. *Is he sleeping?*
 :::
 
 ## 48. Mini-dialogi – ćwiczenia mówione
 
 **Uzupełnij luki w dialogach. [[understand:TRENING]]**
 
-**Dialog 1**<br> A: _____ you tired?<br> B: Yes, I _____. I _____ sleep well last night.<br> A: _____ you go to bed late?<br> B: No, I _____.
+**Dialog 1**  
+A: _____ you tired?  
+B: Yes, I _____. I _____ sleep well last night.  
+A: _____ you go to bed late?  
+B: No, I _____.
 
-**Dialog 2**<br> A: _____ your sister like music?<br> B: Yes, she _____. She _____ listen to pop songs every day.<br> A: _____ she play an instrument?<br> B: No, she _____.
+**Dialog 2**  
+A: _____ your sister like music?  
+B: Yes, she _____. She _____ listen to pop songs every day.  
+A: _____ she play an instrument?  
+B: No, she _____.
 
-**Dialog 3**<br> A: Where _____ you live?<br> B: I _____ in Kraków.<br> A: _____ your parents live there too?<br> B: Yes, they _____.
+**Dialog 3**  
+A: Where _____ you live?  
+B: I _____ in Kraków.  
+A: _____ your parents live there too?  
+B: Yes, they _____.
 
-**Dialog 4**<br> A: _____ there a cinema near your house?<br> B: No, there _____. But there _____ a nice park.<br> A: _____ you go there often?<br> B: Yes, I _____.
+**Dialog 4**  
+A: _____ there a cinema near your house?  
+B: No, there _____. But there _____ a nice park.  
+A: _____ you go there often?  
+B: Yes, I _____.
 
-**Dialog 5 – przeszłość**<br> A: _____ you at the concert last night?<br> B: No, I _____. I _____ at home.<br> A: _____ you watch the game on TV?<br> B: Yes, I _____. It _____ really exciting!
+**Dialog 5 – przeszłość**  
+A: _____ you at the concert last night?  
+B: No, I _____. I _____ at home.  
+A: _____ you watch the game on TV?  
+B: Yes, I _____. It _____ really exciting!
 
 ::: odp | Podpowiedzi
-1. Czytaj dialog po kolei – kontekst podpowiada operator. 2. Zwróć uwagę na czas: teraźniejszość czy przeszłość. 3. Krótkie odpowiedzi powtarzają operator.
-
+1. Czytaj dialog po kolei — kontekst wskazuje właściwy operator.
+2. Zwróć uwagę na czas: teraźniejszość czy przeszłość.
+3. Krótkie odpowiedzi powtarzają operator pytania.
+4. W twierdzeniu w Present Simple dla *he/she/it* czasownik zwykle otrzymuje końcówkę *-s* lub *-es*.
 :::
 
 ::: odp | Odpowiedź
-**Dialog 1**<br> A: Are you tired?<br>B: Yes, I am. I didn't sleep well last night.<br>A: Did you go to bed late?<br>B: No, I didn't.
+**Dialog 1**  
+A: *Are you tired?*  
+B: *Yes, I am. I didn't sleep well last night.*  
+A: *Did you go to bed late?*  
+B: *No, I didn't.*
 
-**Dialog 2**<br> A: Does your sister like music?<br>B: Yes, she does. She listens to pop songs every day.<br>A: Does she play an instrument?<br>B: No, she doesn't.
+**Dialog 2**  
+A: *Does your sister like music?*  
+B: *Yes, she does. She listens to pop songs every day.*  
+A: *Does she play an instrument?*  
+B: *No, she doesn't.*
 
-**Dialog 3**<br> A: Where do you live?<br>B: I live in Kraków.<br>A: Do your parents live there too?<br>B: Yes, they do.
+**Dialog 3**  
+A: *Where do you live?*  
+B: *I live in Kraków.*  
+A: *Do your parents live there too?*  
+B: *Yes, they do.*
 
-**Dialog 4**<br> A: Is there a cinema near your house?<br>B: No, there isn't. But there is a nice park.<br>A: Do you go there often?<br>B: Yes, I do.
+**Dialog 4**  
+A: *Is there a cinema near your house?*  
+B: *No, there isn't. But there is a nice park.*  
+A: *Do you go there often?*  
+B: *Yes, I do.*
 
-**Dialog 5 – przeszłość**<br> A: Were you at the concert last night?<br>B: No, I wasn't. I was at home.<br>A: Did you watch the game on TV?<br>B: Yes, I did. It was really exciting!
-
+**Dialog 5 – przeszłość**  
+A: *Were you at the concert last night?*  
+B: *No, I wasn't. I was at home.*  
+A: *Did you watch the game on TV?*  
+B: *Yes, I did. It was really exciting!*
 :::
 
 ## 49. Mini-wypowiedź
 
 **Napisz 4–5 zdań o sobie. PISANIE**
 
-Użyj: przynajmniej jednego zdania z BE, jednego z DO, jednego przeczenia, jednego pytania.
+Użyj: co najmniej jednego zdania z *be*, jednego zdania ze zwykłym czasownikiem w Present Simple, jednego przeczenia i jednego pytania.
 
 ::: odp | Odpowiedź
-&#8203;<em>I am thirteen years old. I live in Warsaw with my family. I don't have any brothers or sisters. My parents work in an office. Do you have any pets?</em>
+Przykładowa odpowiedź:
 
+*I am thirteen years old. I live in Warsaw with my family. I don't have any brothers or sisters. My parents work in an office. Do you have any pets?*
+
+Odpowiedź może być inna, jeśli spełnia warunki zadania.
 :::
 
 ## 50. Zadanie mistrzowskie
 
 **Znajdź wszystkie błędy. PUŁAPKA E8**
 
-&#8203;<em>My sister are 14 years old. She don't like maths. Does she likes English? Yes, she do. Yesterday she were tired and didn't went to school.</em>
+*My sister are 14 years old. She don't like maths. Does she likes English? Yes, she do. Yesterday she were tired and didn't went to school.*
 
 ::: odp | Podpowiedzi
-1. Sprawdź BE (am/is/are/was/were) – dopasuj do osoby. 2. Sprawdź DO (do/does/did) – po <em>does/did</em> forma podstawowa. 3. Sprawdź krótkie odpowiedzi – operator musi się zgadzać.
-
+1. Sprawdź formę *be* — dopasuj ją do osoby.
+2. Sprawdź *do/does/did* — po *does/did* użyj formy podstawowej.
+3. W krótkiej odpowiedzi użyj operatora zgodnego z pytaniem.
 :::
 
 ::: odp | Odpowiedź
-**Poprawna wersja:**<br> <span class="correct-text">My sister is 14 years old. She doesn't like maths. Does she like English? Yes, she does. Yesterday she was tired and didn't go to school.</span>
+**Poprawna wersja:**  
+<span class="correct-text">My sister is 14 years old. She doesn't like maths. Does she like English? Yes, she does. Yesterday she was tired and didn't go to school.</span>
 
-**Wyjaśnienie błędów:**<br> 1. <span class="error-text">sister are</span> → <span class="correct-text">is</span> (sister = she)<br> 2. <span class="error-text">She don't</span> → <span class="correct-text">doesn't</span><br> 3. <span class="error-text">Does she likes</span> → <span class="correct-text">like</span> (po does forma podstawowa)<br> 4. <span class="error-text">Yes, she do</span> → <span class="correct-text">does</span><br> 5. <span class="error-text">she were</span> → <span class="correct-text">was</span><br> 6. <span class="error-text">didn't went</span> → <span class="correct-text">go</span>
-
+**Wyjaśnienie błędów:**  
+1. <span class="error-text">sister are</span> → <span class="correct-text">is</span> (*sister* to liczba pojedyncza).
+2. <span class="error-text">She don't</span> → <span class="correct-text">doesn't</span> (3. osoba liczby pojedynczej).
+3. <span class="error-text">Does she likes</span> → <span class="correct-text">Does she like</span> (po *does* czasownik ma formę podstawową).
+4. <span class="error-text">Yes, she do</span> → <span class="correct-text">Yes, she does</span> (odpowiedź powtarza operator pytania).
+5. <span class="error-text">she were</span> → <span class="correct-text">she was</span> (*she* łączy się z *was*).
+6. <span class="error-text">didn't went</span> → <span class="correct-text">didn't go</span> (po *didn't* używamy formy podstawowej).
 :::
 
 **Zadanie mistrzowskie – wersja dodatkowa [[extra:DLA AMBITNYCH]]**
 
-&#8203;<em>My parents is very kind. They doesn't like when I am late. Do they worries about me? Yes, they do. Yesterday my mother were angry and didn't said anything.</em>
+*My parents is very kind. They doesn't like when I am late. Do they worries about me? Yes, they do. Yesterday my mother were angry and didn't said anything.*
 
 ::: odp | Podpowiedzi
-1. <em>Parents</em> to liczba mnoga, czyli <em>they</em>. 2. Po <em>do / does / did</em> używamy formy podstawowej. 3. Sprawdź osobę i czas każdej formy BE.
-
+1. *Parents* oznacza liczbę mnogą: użyj *are* i *they*.
+2. Po *do/does/did* używamy formy podstawowej.
+3. Dopasuj formę *be* do podmiotu i czasu.
 :::
 
 ::: odp | Odpowiedź
-&#8203;<span class="correct-text">My parents **are** very kind. They **don't** like when I am late. **Do** they **worry** about me? Yes, they do. Yesterday my mother **was** angry and didn't **say** anything.</span>
+<span class="correct-text">My parents **are** very kind. They **don't** like when I am late. **Do** they **worry** about me? Yes, they do. Yesterday my mother **was** angry and didn't **say** anything.</span>
 
-**Poprawione formy:** <em>parents are</em>, <em>they don't</em>, <em>do they worry</em>, <em>mother was</em>, <em>didn't say</em>.
-
+**Poprawione formy:** *parents are*, *they don't*, *do they worry*, *mother was*, *didn't say*.
 :::
 
 ## Tabele odmiany | BE, LIKE, GO, HAVE
@@ -1245,36 +1360,34 @@ Użyj: przynajmniej jednego zdania z BE, jednego z DO, jednego przeczenia, jedne
 | wszystkie – przeszłość | They liked music. | Did they like music? | They didn't like music. |
 
 ::: karta basic | Najważniejsza reguła
-Końcówka **-s** występuje tylko w zdaniu twierdzącym przy **he, she, it**. Po **does** i **doesn't** znika.
-
+Końcówka *-s* występuje w zdaniu twierdzącym w Present Simple przy *he, she, it*. Po *does* i *doesn't* czasownik główny ma formę podstawową.
 :::
 
 ## GO – iść / jechać
 
 | Forma | Przykład | Tłumaczenie | Audio |
 |---|---|---|---|
-| go | I go to school. | Chodzę do szkoły. |   |
-| goes | She goes to school. | Ona chodzi do szkoły. |   |
-| went | He went home. | On poszedł do domu. |   |
-| do ... go | Do they go home? | Czy oni idą do domu? |   |
-| does ... go | Does she go swimming? | Czy ona pływa? |   |
-| did ... go | Did he go home? | Czy on poszedł do domu? |   |
+| go | I go to school. | Chodzę do szkoły. | |
+| goes | She goes to school. | Ona chodzi do szkoły. | |
+| went | He went home. | On poszedł do domu. | |
+| do ... go | Do they go home? | Czy oni idą do domu? | |
+| does ... go | Does she go swimming? | Czy ona pływa? | |
+| did ... go | Did he go home? | Czy on poszedł do domu? | |
 
 ## HAVE – mieć
 
 | Osoba / czas | Forma | Przykład | Audio |
 |---|---|---|---|
-| I / you / we / they | have | They have a dog. |   |
-| he / she / it | has | She has a brother. |   |
-| pytanie z DO | does ... have | Does she have a brother? |   |
-| przeszłość | had | They had a test. |   |
-| pytanie z DID | did ... have | Did they have a test? |   |
+| I / you / we / they | have | They have a dog. | |
+| he / she / it | has | She has a brother. | |
+| pytanie z DO | does ... have | Does she have a brother? | |
+| przeszłość | had | They had a test. | |
+| pytanie z DID | did ... have | Did they have a test? | |
 
 ::: karta warning | Pułapka
-&#8203;<span class="error-text"> Does she has a dog?</span><br> <span class="correct-text"> Does she have a dog?</span>
+&#8203;<span class="error-text">Does she has a dog?</span><br><span class="correct-text">Does she have a dog?</span>
 
-Po **does** czasownik <em>have</em> wraca do formy podstawowej.
-
+Po *does* czasownik główny *have* wraca do formy podstawowej. W konstrukcji *have got* pytanie wygląda inaczej: *Has she got a dog?*
 :::
 
 ## Słowniczek | 50 słówek z przykładami i wymową
@@ -1687,4 +1800,7 @@ Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.
 ## AUDYT W1 (ULEPSZ --olimpiada, 2026-10-11)
 
 - Część 1/3 (§1–25) wprowadzona z odpowiedzi AI (surowo: `angielski/plany/audyty/ULEPSZ_OLI_L002_cz1a/cz1b_2026-10-11.md`). Nieprzyjęte: tylko elementy interaktywne bez odpowiednika w dialekcie MD.
-- Części 2–3 (od §26) czekają na ocenę.
+- Część 2/3 (§26–50, tabele) wprowadzona (surowo: `angielski/plany/audyty/ULEPSZ_OLI_L002_cz2_2026-10-11.md`): 4 mini-wykłady, karty ambitne (how much/many, who + do), poprawki §36/40/43/45/46.
+- Poprawione względem propozycji: fiszki dostały pole `podstawa:operatory` (model zostawił stary format); dopisano, że po *who* forma zależy od podmiotu (*Who lives here?*, ale *Who are they?*) — uwaga modelu z kolejnej tury.
+- Nieprzyjęte: nic. Mini-wykłady krótsze niż 60–120 słów — zostawione, uzupełnienie przy części 3.
+- Część 3/3 (od Słowniczka) czeka na ocenę.
