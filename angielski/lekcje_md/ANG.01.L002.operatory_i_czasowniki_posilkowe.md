@@ -1683,3 +1683,8 @@ Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.
 
 <p class="mini-note">Ucz się świadomie, nie na pamięć.</p>
 <p class="mini-note">Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.</p>
+
+## AUDYT W1 (ULEPSZ --olimpiada, 2026-10-11)
+
+- Część 1/3 (§1–25) wprowadzona z odpowiedzi AI (surowo: `angielski/plany/audyty/ULEPSZ_OLI_L002_cz1a/cz1b_2026-10-11.md`). Nieprzyjęte: tylko elementy interaktywne bez odpowiednika w dialekcie MD.
+- Części 2–3 (od §26) czekają na ocenę.
