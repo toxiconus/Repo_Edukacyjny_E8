@@ -38,13 +38,13 @@
 
 ## polski
 
-**WYSŁAĆ (bez W1) — 2 lekcji, 69 KB:** PL.G01 (47 KB) · G08 (21 KB)
+**WYSŁAĆ (bez W1) — 1 lekcji, 47 KB:** PL.G01 (47 KB)
 
-- zestaw 1 (69 KB): `python3 eksport/paczka_ai.py ulepsz POL_PL.G01_G08 polski/podstawy/POL.02.G01.rzeczownik.md polski/podstawy/POL.02.G08.przyimek.md`
+- zestaw 1 (47 KB): `python3 eksport/paczka_ai.py ulepsz POL_PL.G01 polski/podstawy/POL.02.G01.rzeczownik.md`
 
 **niski priorytet (W1 starym promptem) — 3 lekcji, 119 KB:** L002 (53 KB) · L003 (36 KB) · L006 (29 KB)
 
-**NIE wysyłać (W1 FULL) — 24 lekcji, 830 KB:** L001 (101 KB) · L004 (40 KB) · L005 (45 KB) · G02 (44 KB) · G03 (60 KB) · G04 (69 KB) · G05 (44 KB) · G06 (45 KB) · G07 (48 KB) · G09 (38 KB) · G10 (31 KB) · G11 (25 KB) · G12 (58 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
+**NIE wysyłać (W1 FULL) — 25 lekcji, 866 KB:** L001 (101 KB) · L004 (40 KB) · L005 (45 KB) · G02 (44 KB) · G03 (60 KB) · G04 (69 KB) · G05 (44 KB) · G06 (45 KB) · G07 (48 KB) · G08 (35 KB) · G09 (38 KB) · G10 (31 KB) · G11 (25 KB) · G12 (58 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
 
 ## angielski
 
