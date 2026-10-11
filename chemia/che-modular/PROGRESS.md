@@ -105,3 +105,4 @@
 - 2026-10-11: POL G03 przymiotnik — pełna wersja PPLX (4 części) scalona, W1 FULL, 61 KB; odrzucone przepisanie §6 na dawną regułę „nie” (model zaprzeczył reformie 2026).
 - 2026-10-11: kolejka AI obejmuje polski/lekcje_md (L001–L006 lektury, W1 starym promptem); paczki ≤50 KB (L001, L002 w częściach).
 - 2026-10-11: POL G01 rzeczownik — PPLX ULEPSZ scalone (W1 FULL, 47 KB).
+- 2026-10-11: ANG L003 — ULEPSZ (GLM, 4 części) scalone, W1 FULL, 52 KB; poprawione phrasal rozdzielne/nierozdzielne, O2, O6; przywrócony słowniczek.

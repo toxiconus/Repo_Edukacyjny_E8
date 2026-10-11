@@ -38,7 +38,7 @@
 
 ## polski
 
-**WYSŁAĆ (bez W1) — 6 lekcji, 172 KB:** PL.G01 (47 KB) · G02 (24 KB) · G05 (27 KB) · G06 (28 KB) · G08 (21 KB) · G09 (23 KB)
+**WYSŁAĆ (bez W1) — 6 lekcji, 173 KB:** PL.G01 (47 KB) · G02 (24 KB) · G05 (27 KB) · G06 (28 KB) · G08 (21 KB) · G09 (23 KB)
 
 - zestaw 1 (72 KB): `python3 eksport/paczka_ai.py ulepsz POL_PL.G01_G02 polski/podstawy/POL.02.G01.rzeczownik.md polski/podstawy/POL.02.G02.czasownik.md`
 
@@ -52,7 +52,7 @@
 
 ## angielski
 
-**niski priorytet (W1 starym promptem) — 2 lekcji, 98 KB:** L002 (69 KB) · L003 (29 KB)
+**niski priorytet (W1 starym promptem) — 1 lekcji, 69 KB:** L002 (69 KB)
 
-**NIE wysyłać (W1 FULL) — 4 lekcji, 206 KB:** L004 (48 KB) · L005 (59 KB) · L006 (48 KB) · L012 (49 KB)
+**NIE wysyłać (W1 FULL) — 5 lekcji, 261 KB:** L003 (55 KB) · L004 (48 KB) · L005 (59 KB) · L006 (48 KB) · L012 (49 KB)
 
