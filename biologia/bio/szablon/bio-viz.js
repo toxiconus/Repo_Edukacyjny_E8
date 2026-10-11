@@ -1266,4 +1266,137 @@ mount:function(el,o){var kat=+(o.kat||60),tl=H('div','bv-tools'),box=H('div'),in
    '<b>Przesuń suwak</b>Zginaj i prostuj łokieć: obserwuj, który mięsień się skraca (ciemniejszy kolor), a który rozluźnia. Kości to dźwignie, staw — punkt podparcia, mięśnie — siła.'}
  r.oninput=function(){var v=+r.value;ruch=v<prev?-1:v>prev?1:0;prev=v;kat=v;draw()};draw()}});
 
+/* ---- układ pokarmowy: narządy, droga pokarmu, gdzie trawione są składniki (2026-10-11, lekcja BIO.07.U03) ---- */
+BIO.define('droga-pokarmu',{opis:'Schemat układu pokarmowego: przewód pokarmowy (jama ustna, gardło, przełyk, żołądek, dwunastnica, jelito cienkie, jelito grube z wyrostkiem, odbytnica, odbyt) i gruczoły (ślinianki, wątroba z pęcherzykiem żółciowym, trzustka); kliknij narząd, „krok” prowadzi kęs drogą pokarmu, wybór składnika podświetla narządy, w których jest trawiony i wchłaniany',
+mount:function(el,o){
+ var tl=H('div','bv-tools'),tl2=H('div','bv-tools'),box=H('div','pk'),info=BIO.fx.infoBox('Kliknij narząd, przejdź drogę pokarmu przyciskiem „krok” albo wybierz składnik pokarmowy.');
+ el.appendChild(tl);el.appendChild(tl2);el.appendChild(box);el.appendChild(info);
+ var W=640,Hh=612,sv=svg(W,Hh,'Schemat układu pokarmowego człowieka',[]);sv.setAttribute('viewBox','30 0 580 612');
+ function G(k,kids,cls){var g=S('g',{'data-k':k},kids);if(cls)g.setAttribute('class',cls);return g}
+ function tube(k,d,col,w,extra){var c=S('path',{d:d,fill:'none',stroke:'#7a4a3a','stroke-width':w+5,'stroke-linecap':'round','stroke-linejoin':'round'});c.style.setProperty('--w',(w+6)+'px');
+  return G(k,[c,S('path',{d:d,fill:'none',stroke:col,'stroke-width':w,'stroke-linecap':'round','stroke-linejoin':'round'})].concat(extra||[]),'pk-tube')}
+ sv.appendChild(S('ellipse',{cx:320,cy:62,rx:56,ry:58,fill:'var(--surface-soft)',stroke:'var(--viz-line)','stroke-width':1.5}));
+ sv.appendChild(S('path',{d:'M282 116 L358 116 L366 150 C462 156 512 182 516 232 L520 606 L120 606 L124 232 C128 182 178 156 274 150 Z',fill:'var(--surface-soft)',stroke:'var(--viz-line)','stroke-width':1.5}));
+ sv.appendChild(G('watroba',[S('path',{d:'M140 205 C190 175 300 178 335 205 C330 245 280 272 215 278 C165 282 132 255 140 205 Z',fill:'#9c4a3c',stroke:'#6a2a20','stroke-width':2}),T(222,228,'wątroba',{s:19,w:800,f:'#fff'})]));
+ sv.appendChild(G('pecherzyk',[S('ellipse',{cx:268,cy:284,rx:15,ry:10,fill:'#5fae5a',stroke:'#2f6a2a','stroke-width':2}),S('path',{d:'M278 291 C292 312 300 330 312 346',fill:'none',stroke:'#2f6a2a','stroke-width':3}),T(250,300,'pęcherzyk żółciowy',{s:16,w:700,a:'end'})]));
+ sv.appendChild(G('trzustka',[S('path',{d:'M318 352 C350 340 420 338 455 330 C472 327 478 345 462 351 C420 361 360 369 325 369 Z',fill:'#f2d27a',stroke:'#a8892a','stroke-width':2}),T(432,368,'trzustka',{s:16,w:800,f:'#7a5f10'})]));
+ sv.appendChild(G('zoladek',[S('path',{d:'M345 225 C400 195 488 225 474 295 C462 352 398 368 346 340 C334 332 340 314 354 312 C404 316 424 284 410 258 C398 240 370 240 350 248 Z',fill:'#f0a868',stroke:'#9a5a2a','stroke-width':2}),T(474,203,'żołądek',{s:19,w:800})]));
+ sv.appendChild(tube('przelyk','M320 128 L322 200 L346 234','#e8a0a0',11,[T(300,172,'przełyk',{s:17,w:700,a:'end'})]));
+ sv.appendChild(tube('gardlo','M320 92 L320 128','#e8a0a0',12,[T(338,118,'gardło',{s:17,w:700,a:'start'})]));
+ sv.appendChild(G('usta',[S('ellipse',{cx:320,cy:80,rx:26,ry:12,fill:'#e8939a',stroke:'#9a4a50','stroke-width':2}),S('line',{x1:300,y1:76,x2:340,y2:76,stroke:'#fff','stroke-width':3,'stroke-dasharray':'4 2'}),T(320,46,'jama ustna',{s:18,w:800})]));
+ sv.appendChild(G('slinianki',[S('circle',{cx:278,cy:96,r:9,fill:'#f4c27a',stroke:'#a8782a','stroke-width':2}),S('circle',{cx:362,cy:96,r:9,fill:'#f4c27a',stroke:'#a8782a'}),T(262,112,'ślinianki',{s:16,w:700,a:'end'})]));
+ sv.appendChild(tube('dwunastnica','M346 340 C305 338 292 378 318 392 C340 402 372 396 388 388','#e6b0a0',13,[T(290,358,'dwunastnica',{s:16,w:700,a:'end'})]));
+ sv.appendChild(tube('jelito_grube','M205 540 L205 415 C205 405 210 402 222 402 L440 402 C452 402 456 408 456 418 L456 520 C456 548 420 560 380 556 L345 556','#c99a6a',22,
+  [S('path',{d:'M205 545 C200 565 214 575 224 570',fill:'none',stroke:'#c99a6a','stroke-width':6,'stroke-linecap':'round'}),T(300,403,'jelito grube',{s:16,w:800,f:'#4a2a10'}),T(190,588,'wyrostek robaczkowy',{s:15,w:700,a:'end'})]));
+ sv.appendChild(tube('cienkie','M388 388 C420 395 425 420 400 428 L250 428 C228 428 228 452 250 452 L410 452 C432 452 432 476 410 476 L250 476 C228 476 228 500 250 500 L410 500 C432 500 432 524 410 524 L240 524 C222 524 214 532 210 538','#f2b8b0',14,[T(330,477,'jelito cienkie',{s:16,w:800,f:'#5a2a1a'})]));
+ sv.appendChild(tube('odbytnica','M345 556 L330 562 L326 586','#b8865a',15,[T(350,572,'odbytnica',{s:16,w:700,a:'start'})]));
+ sv.appendChild(G('odbyt',[S('circle',{cx:326,cy:597,r:6,fill:'#4a2a1a'}),T(340,600,'odbyt',{s:16,w:700,a:'start'})]));
+ var kes=S('circle',{cx:0,cy:0,r:9,fill:'#5a3a1a',stroke:'#fff','stroke-width':2.5,opacity:0});kes.style.transition='transform .7s ease, opacity .3s';kes.style.pointerEvents='none';sv.appendChild(kes);
+ box.appendChild(sv);
+ var M={usta:['Jama ustna','<strong>Trawienie mechaniczne</strong>: zęby odgryzają (siekacze), rozrywają (kły) i rozcierają (przedtrzonowe i trzonowe) pokarm; język miesza go ze śliną i formuje kęs. <strong>Trawienie chemiczne</strong>: amylaza ślinowa zaczyna rozkład skrobi do krótszych cukrów (m.in. maltozy).'],
+  slinianki:['Ślinianki','Trzy pary gruczołów wydzielają ślinę (ok. 1–1,5 l na dobę, orientacyjnie): woda i śluz zwilżają i sklejają kęs, <strong>amylaza ślinowa</strong> trawi skrobię, lizozym ogranicza rozwój bakterii.'],
+  gardlo:['Gardło','Wspólny odcinek dróg pokarmowych i oddechowych. Przy połykaniu podniebienie miękkie zamyka jamę nosową, a <strong>nagłośnia</strong> — wejście do krtani, więc kęs trafia do przełyku, nie do tchawicy.'],
+  przelyk:['Przełyk','Rura mięśniowa (ok. 25 cm) — tylko <strong>transport</strong>, bez trawienia i wchłaniania. Kęs przesuwają <strong>ruchy perystaltyczne</strong> — fala skurczów mięśni, dlatego połykać można nawet do góry nogami.'],
+  zoladek:['Żołądek','Magazynuje i miesza pokarm. Sok żołądkowy: <strong>kwas solny</strong> (pH ok. 1,5–2: zabija wiele drobnoustrojów, aktywuje pepsynę, rozluźnia białka), <strong>pepsyna</strong> (rozkłada białka do krótszych łańcuchów — peptydów) i <strong>śluz</strong> chroniący ścianę. Amylaza ślinowa w kwaśnym środowisku przestaje działać. Wchłania się tu niewiele (np. trochę wody, alkohol).'],
+  watroba:['Wątroba','Największy gruczoł ciała. Wytwarza <strong>żółć</strong> (nie jest enzymem — emulguje tłuszcze), magazynuje <strong>glikogen</strong>, żelazo i witaminy (A, D, B₁₂), unieszkodliwia wiele szkodliwych substancji (np. alkohol, amoniak → mocznik), wytwarza białka osocza. Krew z jelit płynie do niej najpierw <strong>żyłą wrotną</strong>.'],
+  pecherzyk:['Pęcherzyk żółciowy','<strong>Magazynuje i zagęszcza żółć</strong> wytworzoną przez wątrobę; po tłustym posiłku kurczy się i wypuszcza żółć przewodem do dwunastnicy. Żółci <strong>nie wytwarza</strong>.'],
+  trzustka:['Trzustka','<strong>Gruczoł o dwóch funkcjach.</strong> Zewnątrzwydzielniczo: sok trzustkowy do dwunastnicy — <strong>amylaza</strong> (skrobia), <strong>lipaza</strong> (tłuszcze), <strong>trypsyna</strong> i inne proteazy (białka) oraz wodorowęglany zobojętniające kwaśną treść z żołądka. Wewnątrzwydzielniczo: <strong>insulina i glukagon</strong> do krwi (regulacja glukozy).'],
+  dwunastnica:['Dwunastnica','Pierwszy odcinek jelita cienkiego (ok. 25–30 cm). Uchodzą do niej przewody <strong>żółciowy i trzustkowy</strong>; kwaśna treść żołądka zostaje zobojętniona, a enzymy trzustki zaczynają <strong>zasadnicze trawienie</strong> cukrów, białek i tłuszczów.'],
+  cienkie:['Jelito cienkie','Najdłuższy odcinek przewodu (kilka metrów: dwunastnica, jelito czcze, jelito kręte). <strong>Kończy się tu trawienie</strong> (enzymy trzustki i enzymy nabłonka jelita, np. maltaza, peptydazy) i zachodzi <strong>prawie całe wchłanianie</strong>: fałdy, kosmki i mikrokosmki dają powierzchnię rzędu kilkudziesięciu m². Glukoza i aminokwasy → krew, produkty trawienia tłuszczów → głównie limfa.'],
+  jelito_grube:['Jelito grube','Kątnica z <strong>wyrostkiem robaczkowym</strong>, okrężnica, odbytnica. Brak kosmków i enzymów trawiennych. <strong>Wchłania wodę</strong> i część soli, formuje kał. <strong>Bakterie jelitowe</strong> rozkładają część błonnika, wytwarzają m.in. witaminę K i niektóre witaminy z grupy B, konkurują z chorobotwórczymi drobnoustrojami.'],
+  odbytnica:['Odbytnica','Końcowy odcinek jelita grubego — <strong>gromadzi kał</strong> przed wydaleniem; jej rozciągnięcie wywołuje parcie.'],
+  odbyt:['Odbyt','Ujście przewodu pokarmowego, zamykane zwieraczami; przez nie usuwane są <strong>niestrawione resztki</strong> (defekacja) — to nie jest wydalanie w sensie fizjologicznym.']};
+ var show=BIO.fx.info(sv,info,M);
+ var POS={usta:[320,80],gardlo:[320,110],przelyk:[322,182],zoladek:[440,292],dwunastnica:[304,372],cienkie:[330,452],jelito_grube:[456,470],odbytnica:[328,574],odbyt:[326,597]};
+ var DROGA=['usta','gardlo','przelyk','zoladek','dwunastnica','cienkie','jelito_grube','odbytnica','odbyt'],krok=-1;
+ var SKL={skrobia:['Skrobia (cukier złożony)',['usta','slinianki','trzustka','dwunastnica','cienkie'],'<strong>Jama ustna:</strong> amylaza ślinowa → krótsze cukry (maltoza). <strong>Żołądek:</strong> kwaśne pH zatrzymuje amylazę. <strong>Dwunastnica i jelito cienkie:</strong> amylaza trzustkowa → maltoza, enzymy nabłonka (maltaza) → <strong>glukoza</strong>. <strong>Wchłanianie:</strong> glukoza do krwi kosmków → żyła wrotna → wątroba.'],
+  bialka:['Białka',['zoladek','trzustka','dwunastnica','cienkie'],'<strong>Żołądek:</strong> kwas solny rozluźnia białka, pepsyna tnie je na krótsze łańcuchy (peptydy). <strong>Jelito cienkie:</strong> trypsyna i inne proteazy trzustki, peptydazy jelitowe → <strong>aminokwasy</strong>. <strong>Wchłanianie:</strong> aminokwasy do krwi. W jamie ustnej białek się nie trawi.'],
+  tluszcze:['Tłuszcze',['watroba','pecherzyk','trzustka','dwunastnica','cienkie'],'Trawione prawie wyłącznie w <strong>jelicie cienkim</strong>. <strong>Żółć</strong> (wątroba → pęcherzyk → dwunastnica) emulguje tłuszcz na drobne kropelki — to trawienie <strong>mechaniczne</strong>. <strong>Lipaza trzustkowa</strong> rozkłada je do <strong>glicerolu i kwasów tłuszczowych</strong>. <strong>Wchłanianie:</strong> w komórkach nabłonka składane z powrotem w tłuszcz i pakowane w kuleczki białkowo-tłuszczowe → <strong>naczynie chłonne kosmka (limfa)</strong> → potem krew.'],
+  woda:['Woda i sole mineralne',['zoladek','cienkie','jelito_grube'],'Nie wymagają trawienia. Najwięcej wody wchłania <strong>jelito cienkie</strong>, resztę — <strong>jelito grube</strong>, które zagęszcza treść w kał (dlatego przy biegunce szybko tracimy wodę i sole). Żołądek wchłania niewiele.'],
+  blonnik:['Błonnik',['usta','cienkie','jelito_grube'],'Ludzkie enzymy <strong>go nie trawią</strong>. Rozdrabniany w jamie ustnej, przechodzi przez jelito cienkie, wiąże wodę, zwiększa objętość treści i pobudza <strong>perystaltykę</strong>; w jelicie grubym częściowo rozkładają go <strong>bakterie</strong>. Chroni przed zaparciami.']};
+ var cur=null;
+ function podswietl(lista){sv.querySelectorAll('[data-k]').forEach(function(g){g.style.transition='opacity .25s';g.style.opacity=!lista||lista.indexOf(g.getAttribute('data-k'))>=0?1:.22})}
+ function rysujSkl(){seg(tl2,[['skrobia','skrobia'],['bialka','białka'],['tluszcze','tłuszcze'],['woda','woda i sole'],['blonnik','błonnik'],['_','wszystko']],cur||'_',function(k){cur=k==='_'?null:k;rysujSkl();
+   if(!cur){podswietl(null);info.className='bv-info';info.innerHTML='<b>Wszystkie narządy</b>Wybierz składnik, aby zobaczyć, gdzie jest trawiony i wchłaniany.';return}
+   var s=SKL[cur];kes.style.opacity=0;krok=-1;podswietl(s[1]);info.className='bv-info';info.innerHTML='<b>'+s[0]+'</b>'+s[2]})}
+ var bk=btn('krok ▶ droga pokarmu',function(){cur=null;rysujSkl();podswietl(null);krok=(krok+1)%DROGA.length;var k=DROGA[krok],p=POS[k];
+   kes.style.opacity=1;kes.style.transform='translate('+p[0]+'px,'+p[1]+'px)';show(k,sv.querySelector('[data-k="'+k+'"]'));info.querySelector('b').textContent=(krok+1)+'/'+DROGA.length+' · '+M[k][0]});
+ var br=btn('od początku',function(){krok=-1;kes.style.opacity=0;podswietl(null);cur=null;rysujSkl();info.className='bv-info';info.textContent='Kliknij „krok”, aby poprowadzić kęs od jamy ustnej do odbytu.'});
+ tl.appendChild(bk);tl.appendChild(br);rysujSkl()}});
+
+/* ---- kosmek jelitowy: budowa i droga wchłanianych substancji do krwi lub limfy ---- */
+BIO.define('kosmek-jelitowy',{opis:'Kosmek jelitowy w przekroju podłużnym: nabłonek jednowarstwowy z mikrokosmkami, sieć naczyń włosowatych (krew dopływająca i odpływająca do żyły wrotnej), centralne naczynie chłonne; wybór substancji (glukoza, aminokwasy, produkty trawienia tłuszczów, woda) pokazuje animowaną drogę do krwi albo limfy',
+mount:function(el,o){
+ var tl=H('div','bv-tools'),box=H('div'),info=BIO.fx.infoBox('Kliknij element kosmka albo wybierz substancję, aby zobaczyć, dokąd trafia po wchłonięciu.');el.appendChild(tl);el.appendChild(box);el.appendChild(info);
+ var W=720,Hh=450,sv=svg(W,Hh,'Kosmek jelitowy — budowa i wchłanianie',[]);
+ function G(k,kids){return S('g',{'data-k':k},kids)}
+ var red='var(--blood-o2,#d2463c)',blue='var(--blood-co2,#3b6cc4)';
+ sv.appendChild(G('swiatlo',[S('rect',{x:10,y:10,width:400,height:390,rx:12,fill:'#fbf3dc',stroke:'#e2cf96','stroke-width':1.5}),T(70,34,'światło jelita',{s:18,w:800,f:'#8a6a10'})]));
+ var out='M120 400 L120 120 C120 50 340 50 340 120 L340 400',inn='M140 400 L140 124 C140 74 320 74 320 124 L320 400';
+ sv.appendChild(G('nablonek',[S('path',{d:out,fill:'none',stroke:'none'}),S('path',{d:out,fill:'#f6cfc0',stroke:'#b9786a','stroke-width':2}),S('path',{d:inn,fill:'#fde9e2',stroke:'#c99a8a','stroke-width':1.5})]));
+ var mk=[];for(var i=0;i<=24;i++){var a=Math.PI*i/24,x=230-110*Math.cos(a),y=120-62*Math.sin(a);mk.push(S('line',{x1:x,y1:y,x2:x-7*Math.cos(a),y2:y-7*Math.sin(a),stroke:'#b9786a','stroke-width':2}))}
+ for(var j=0;j<10;j++){var yy=140+j*26;mk.push(S('line',{x1:120,y1:yy,x2:113,y2:yy,stroke:'#b9786a','stroke-width':2}));mk.push(S('line',{x1:340,y1:yy,x2:347,y2:yy,stroke:'#b9786a','stroke-width':2}))}
+ sv.appendChild(G('mikro',[S('rect',{x:104,y:50,width:252,height:20,fill:'transparent'})].concat(mk)));
+ sv.appendChild(G('krew',[S('path',{d:'M168 410 L168 140 C168 100 292 100 292 140 L292 410',fill:'none',stroke:'url(#kmGrad)','stroke-width':7}),
+  S('path',{d:'M168 200 L292 200 M168 260 L292 260 M168 320 L292 320',fill:'none',stroke:'#9a5aa0','stroke-width':3,opacity:.7}),T(168,426,'krew dopływa',{s:16,w:700,f:'#a33'}),T(292,426,'→ żyła wrotna',{s:16,w:700,f:'#2a4a9a'})]));
+ var df=S('defs',{},[S('linearGradient',{id:'kmGrad',x1:0,y1:0,x2:1,y2:0},[S('stop',{offset:'0','stop-color':'#d2463c'}),S('stop',{offset:'1','stop-color':'#3b6cc4'})])]);sv.insertBefore(df,sv.firstChild);
+ sv.appendChild(G('chlonne',[S('path',{d:'M230 410 L230 150',fill:'none',stroke:'#c8b830','stroke-width':20,'stroke-linecap':'round'}),S('path',{d:'M230 410 L230 150',fill:'none',stroke:'#f3ecb0','stroke-width':14,'stroke-linecap':'round'}),T(230,442,'→ limfa',{s:16,w:700,f:'#7a6a10'})]));
+ [['nabłonek z mikrokosmkami',96,'nablonek'],['naczynia włosowate',190,'krew'],['naczynie chłonne',250,'chlonne']].forEach(function(l){sv.appendChild(S('line',{x1:l[2]==='nablonek'?336:l[2]==='krew'?292:236,y1:l[1],x2:430,y2:l[1],stroke:'var(--viz-mut)','stroke-width':1.2,'stroke-dasharray':'3 3'}));sv.appendChild(T(436,l[1],l[0],{s:17,w:700,a:'start'}))});
+ sv.appendChild(T(436,320,'cała ściana kosmka:',{s:16,w:600,a:'start',f:'var(--viz-mut)'}));sv.appendChild(T(436,338,'1 warstwa komórek',{s:16,w:600,a:'start',f:'var(--viz-mut)'}));
+ var R={glukoza:['Glukoza','#e08a1e','M40 190 L130 190 L168 190 L168 140 C168 100 292 100 292 140 L292 410','krew','Po trawieniu skrobi glukoza przechodzi przez nabłonek (w dużej części <strong>transportem aktywnym</strong> — z nakładem energii) do <strong>naczyń włosowatych</strong>, a dalej <strong>żyłą wrotną do wątroby</strong>, która część zmagazynuje jako glikogen.'],
+  amino:['Aminokwasy','#3a9a4a','M40 280 L130 280 L168 280 L168 140 C168 100 292 100 292 140 L292 410','krew','Produkty trawienia białek — <strong>aminokwasy</strong> — są pobierane przez komórki nabłonka (głównie transportem aktywnym) i trafiają do <strong>krwi</strong>, potem żyłą wrotną do wątroby. Komórki ciała budują z nich własne białka.'],
+  tluszcz:['Produkty trawienia tłuszczów','#c8a400','M40 240 L130 240 L230 240 L230 410','limfa','<strong>Glicerol i kwasy tłuszczowe</strong> wnikają do komórek nabłonka, gdzie znów powstaje z nich tłuszcz, pakowany w kuleczki z białkiem (chylomikrony — poziom ambitny). Są za duże dla naczyń włosowatych, więc trafiają do <strong>naczynia chłonnego (limfy)</strong>, a z limfą — do krwi w pobliżu serca, z pominięciem wątroby.'],
+  woda:['Woda i sole mineralne','#3b8fd0','M40 330 L130 330 L168 330 L168 140 C168 100 292 100 292 140 L292 410','krew','Woda przechodzi biernie (osmoza) za wchłanianymi substancjami, jony — biernie i aktywnie. Trafiają do <strong>krwi</strong>. Witaminy rozpuszczalne w wodzie też idą do krwi, a <strong>A, D, E, K</strong> — razem z tłuszczami do limfy.']};
+ var dot=S('circle',{r:10,fill:'#e08a1e',stroke:'#fff','stroke-width':2.5,opacity:0}),trasa=S('path',{d:'M0 0',fill:'none',stroke:'none'});dot.style.pointerEvents='none';sv.appendChild(trasa);sv.appendChild(dot);
+ box.appendChild(sv);
+ var show=BIO.fx.info(sv,info,{swiatlo:['Światło jelita','Wnętrze jelita z treścią pokarmową: tu kończy się trawienie, a produkty — glukoza, aminokwasy, glicerol i kwasy tłuszczowe, woda, sole, witaminy — czekają na wchłonięcie.'],
+  nablonek:['Nabłonek kosmka','<strong>Jedna warstwa komórek</strong> — krótka droga do naczyń. Komórki pobierają substancje dyfuzją i <strong>transportem aktywnym</strong> (wymaga energii, działa nawet wbrew różnicy stężeń). Powierzchnię zwiększają trzy „piętra”: fałdy okrężne → kosmki (ok. 1 mm) → <strong>mikrokosmki</strong> na każdej komórce.'],
+  mikro:['Mikrokosmki','Mikroskopijne wypustki błony komórek nabłonka („rąbek szczoteczkowy”). Wielokrotnie zwiększają powierzchnię; w ich błonie siedzą też enzymy kończące trawienie (np. maltaza, laktaza, peptydazy).'],
+  krew:['Naczynia włosowate','Sieć kapilar w każdym kosmku: krew dopływa tętniczką, odbiera <strong>glukozę, aminokwasy, wodę, sole i witaminy rozpuszczalne w wodzie</strong> i odpływa do <strong>żyły wrotnej → wątroby</strong>.'],
+  chlonne:['Naczynie chłonne (limfatyczne)','Ślepo zakończone naczynie w środku kosmka. Odbiera <strong>produkty trawienia tłuszczów</strong> (i witaminy A, D, E, K). Limfa z jelit płynie do przewodu piersiowego i uchodzi do krwi w żyle podobojczykowej.']});
+ var anim=0,red_m=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,cur=null;
+ function jedz(k){var r=R[k];cur=k;seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),k,jedz);cancelAnimationFrame(anim);trasa.setAttribute('d',r[2]);dot.setAttribute('fill',r[1]);dot.setAttribute('opacity',1);
+  info.className='bv-info';info.innerHTML='<b>'+r[0]+' → '+r[3]+'</b>'+r[4];var L=trasa.getTotalLength(),t0=null,D=2600;
+  function f(ts){if(t0===null)t0=ts;var q=Math.min(1,(ts-t0)/D),p=trasa.getPointAtLength(L*q);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y);if(q<1)anim=requestAnimationFrame(f)}
+  if(red_m){var p=trasa.getPointAtLength(L);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y)}else anim=requestAnimationFrame(f)}
+ seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),null,jedz)}});
+
+/* ---- enzymy: aktywność a temperatura i pH; probówka z płynem Lugola (doświadczenie z amylazą) ---- */
+BIO.define('enzym-warunki',{opis:'Wykres aktywności enzymów (model szkolny, dane orientacyjne): tryb temperatury (amylaza ślinowa, 0–80 °C, optimum ok. 37 °C, denaturacja powyżej ok. 50 °C) i tryb pH (pepsyna ok. 2, amylaza ślinowa ok. 7, trypsyna ok. 8); suwak, odczyt aktywności i barwa próby z płynem Lugola po inkubacji skrobi z amylazą',
+mount:function(el,o){
+ var tryb=o.tryb||'T',v={T:37,pH:7},tl=H('div','bv-tools'),tl2=H('div','bv-tools'),box=H('div'),info=H('div','bv-info');el.appendChild(tl);el.appendChild(tl2);el.appendChild(box);el.appendChild(info);
+ function aT(t){return t<=37?0.04+0.96*Math.pow(t/37,1.8):Math.max(0,1-Math.pow((t-37)/23,2))}
+ function g(p,m,w){return Math.exp(-Math.pow((p-m)/w,2))}
+ var EZ=[['pepsyna (żołądek)',function(p){return g(p,2,1.3)},'#c0392b'],['amylaza ślinowa',function(p){return g(p,6.8,1.6)},'#e08a1e'],['trypsyna (jelito)',function(p){return g(p,8,1.5)},'#2f7fa8']];
+ function mix(a){var c0=[31,42,107],c1=[201,138,42];return 'rgb('+c0.map(function(x,i){return Math.round(x+(c1[i]-x)*a)}).join(',')+')'}
+ var lab=H('label'),r=document.createElement('input');r.type='range';var ov=H('strong');
+ function narz(){seg(tl,[['T','temperatura'],['pH','pH']],tryb,function(k){tryb=k;narz();draw()});clr(tl2);
+  r.min=tryb==='T'?0:1;r.max=tryb==='T'?80:11;r.step=tryb==='T'?1:0.5;r.value=v[tryb];r.setAttribute('aria-label',tryb==='T'?'Temperatura':'pH');
+  clr(lab);lab.appendChild(document.createTextNode(tryb==='T'?'temperatura: ':'pH: '));lab.appendChild(r);lab.appendChild(ov);tl2.appendChild(lab)}
+ function draw(){var x0=tryb==='T'?0:1,x1=tryb==='T'?80:11,val=v[tryb];ov.textContent=' '+(tryb==='T'?val+' °C':String(val).replace('.',','));
+  var W=640,Hh=360,L=58,Rr=170,Tp=20,B=50,X=function(x){return L+(x-x0)/(x1-x0)*(W-L-Rr)},Y=function(a){return Hh-B-a*(Hh-B-Tp)};
+  var sv=svg(W,Hh,tryb==='T'?'Aktywność amylazy a temperatura':'Aktywność enzymów a pH',[]);
+  [0,.25,.5,.75,1].forEach(function(a){sv.appendChild(S('line',{x1:L,y1:Y(a),x2:W-Rr,y2:Y(a),stroke:'var(--viz-line)','stroke-opacity':.45}));sv.appendChild(T(L-8,Y(a),Math.round(a*100)+'%',{s:16,a:'end'}))});
+  (tryb==='T'?[0,10,20,30,40,50,60,70,80]:[1,2,3,4,5,6,7,8,9,10,11]).forEach(function(x){sv.appendChild(T(X(x),Hh-B+18,String(x),{s:16}))});
+  sv.appendChild(T((L+W-Rr)/2,Hh-10,tryb==='T'?'temperatura [°C]':'pH',{s:18,w:700}));
+  sv.appendChild(S('text',{x:16,y:(Tp+Hh-B)/2,transform:'rotate(-90 16 '+((Tp+Hh-B)/2)+')','text-anchor':'middle','font-size':16,'font-weight':700,fill:'var(--viz-ink)'},['aktywność enzymu']));
+  var ser=tryb==='T'?[['amylaza ślinowa',aT,'#e08a1e']]:EZ,odczyt=[];
+  ser.forEach(function(s){var d='';for(var x=x0;x<=x1+1e-9;x+=(x1-x0)/160)d+=(d?'L':'M')+X(x).toFixed(1)+' '+Y(s[1](x)).toFixed(1);
+   sv.appendChild(S('path',{d:d,fill:'none',stroke:s[2],'stroke-width':4,'stroke-linejoin':'round'}));var a=s[1](val);odczyt.push([s[0],a,s[2]]);
+   sv.appendChild(S('circle',{cx:X(val),cy:Y(a),r:7,fill:s[2],stroke:'#fff','stroke-width':2}))});
+  sv.appendChild(S('line',{x1:X(val),y1:Tp,x2:X(val),y2:Hh-B,stroke:'var(--viz-ink)','stroke-width':1.5,'stroke-dasharray':'5 4'}));
+  if(tryb==='pH')EZ.forEach(function(s,i){sv.appendChild(S('rect',{x:L+8,y:Tp+4+i*20,width:14,height:6,fill:s[2]}));sv.appendChild(T(L+28,Tp+8+i*20,s[0],{s:16,w:700,a:'start'}))});
+  var am=tryb==='T'?aT(val):EZ[1][1](val),tx=W-Rr+60;
+  sv.appendChild(T(tx+30,Tp+6,'próba z Lugolem',{s:16,w:800}));sv.appendChild(T(tx+30,Tp+22,'po 15 min',{s:15,f:'var(--viz-mut)'}));
+  sv.appendChild(S('path',{d:'M'+tx+' '+(Tp+40)+' L'+tx+' '+(Tp+210)+' A30 30 0 0 0 '+(tx+60)+' '+(Tp+210)+' L'+(tx+60)+' '+(Tp+40),fill:'none',stroke:'var(--viz-ink)','stroke-width':2.5}));
+  sv.appendChild(S('path',{d:'M'+(tx+3)+' '+(Tp+90)+' L'+(tx+3)+' '+(Tp+210)+' A27 27 0 0 0 '+(tx+57)+' '+(Tp+210)+' L'+(tx+57)+' '+(Tp+90)+' Z',fill:mix(am),opacity:.92}));
+  var opis=am>0.65?['żółtobrązowa','skrobia strawiona']:am>0.3?['fioletowobrązowa','część skrobi została']:['granatowa','skrobia nie strawiona'];
+  sv.appendChild(T(tx+30,Tp+262,opis[0],{s:16,w:800}));sv.appendChild(T(tx+30,Tp+278,opis[1],{s:15,f:'var(--viz-mut)'}));
+  clr(box);box.appendChild(sv);
+  var t='<b>'+odczyt.map(function(o){return o[0]+': '+Math.round(o[1]*100)+'%'}).join(' · ')+'</b>';
+  if(tryb==='T')t+=val<15?'Zimno <strong>spowalnia</strong> enzym, ale go nie niszczy — po ogrzaniu do 37 °C amylaza znów działa.':val<=42?'Okolice <strong>temperatury ciała</strong> — optimum dla enzymów człowieka (model szkolny).':val<55?'Powyżej optimum enzym zaczyna się <strong>denaturować</strong> — białko traci kształt, aktywność gwałtownie spada.':'Enzym <strong>zdenaturowany</strong> (jak ugotowana ślina w doświadczeniu) — po ochłodzeniu <strong>nie wraca</strong> do działania. Skrobia zostaje → Lugol granatowy.';
+  else t+=val<4?'Środowisko jak w <strong>żołądku</strong>: pepsyna działa najlepiej, amylaza ślinowa prawie stoi — dlatego trawienie skrobi zatrzymuje się po połknięciu kęsa (aż do wymieszania kęsa z kwasem).':val<7.6?'Okolice pH obojętnego — jak w <strong>jamie ustnej</strong>: optimum amylazy ślinowej.':'Lekko zasadowe — jak w <strong>jelicie cienkim</strong> po zobojętnieniu treści przez wodorowęglany z trzustki: optimum trypsyny; pepsyna nie działa.';
+  info.className='bv-info';info.innerHTML=t+'<br><small>Kształty krzywych są orientacyjne — każdy enzym ma swoje optimum.</small>'}
+ r.oninput=function(){v[tryb]=+r.value;draw()};narz();draw()}});
+
 })();

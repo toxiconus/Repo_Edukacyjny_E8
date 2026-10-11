@@ -34,6 +34,9 @@ Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko
 | glukoza-wykres | stężenie glukozy po posiłku: osoba zdrowa vs z cukrzycą (dane przykładowe), zakres na czczo, klik w punkt = opis | — | H01 |
 | skora-przekroj | przekrój skóry: naskórek (rogowa, melanina), skóra właściwa (naczynia, receptory, gruczoł potowy i łojowy, mieszek, włos, mięsień przywłosowy), tkanka podskórna; klik = opis | — | U01 |
 | staw-antagonizm | staw łokciowy: suwak kąta, biceps (zginacz) i triceps (prostownik) grubieją/cienieją przy skurczu, przyczepy, opis ruchu | kat="60" | U01 |
+| droga-pokarmu | schemat układu pokarmowego: narządy przewodu i gruczoły (klik = funkcje), „krok” prowadzi kęs 9 odcinkami, wybór składnika (skrobia, białka, tłuszcze, woda i sole, błonnik) podświetla stacje trawienia i wchłaniania | — | U03 |
+| kosmek-jelitowy | kosmek: nabłonek z mikrokosmkami, kapilary (→ żyła wrotna), naczynie chłonne; animacja drogi glukozy, aminokwasów, tłuszczów, wody do krwi lub limfy | — | U03 |
+| enzym-warunki | aktywność enzymu: tryb temperatury (amylaza, denaturacja) i pH (pepsyna, amylaza, trypsyna), suwak, probówka z Lugolem | tryb="T"\|"pH" | U03 |
 | wirus-bakteria | wirus (kapsyd, DNA/RNA, osłonka) obok bakterii (ściana, błona, rybosomy, nukleoid, plazmid, rzęska); klik = opis; antybiotyki | — | REV02 |
 | przeobrazenie-plaza | rozwój złożony żaby: skrzek → kijanka → kijanka z kończynami → młoda żaba → żaba; suwak, oddychanie i środowisko | etap="0–4" | REV02 |
 | przeobrazenie-owadow | przeobrażenie zupełne (motyl, z poczwarką) i niezupełne (konik polny, bez poczwarki); klik = opis etapu | — | REV02 |

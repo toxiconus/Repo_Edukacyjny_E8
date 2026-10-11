@@ -17,6 +17,7 @@
 | U04 | `BIO.07.U04.krazenie_krew_odpornosc.md` | v1.0 (2026-10-11) — etap rejonowy LKO pkt III.4–5; z dwóch odpowiedzi Perplexity, sprawdzone i rozbudowane; nowe grafiki `krazenie-obiegi`, `transfuzja` (kolory krwi w `szablon/motywy/bio.css`); test OK; do W1 |
 | H01 | `BIO.07.H01.homeostaza.md` | v1.0 (2026-10-11) — etap rejonowy pkt IV; Perplexity + szkielet OLI B2 (GPT-6) + Claude; grafiki `sprzezenie-zwrotne`, `glukoza-wykres`; test OK; do W1 |
 | U01 | `BIO.07.U01.skora_i_uklad_ruchu.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.1–2; Perplexity + szkielet OLI B2a + Claude; grafiki `skora-przekroj`, `staw-antagonizm`; test OK; do W1 |
+| U03 | `BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.3; Perplexity + szkielet OLI B2b + Claude; grafiki `droga-pokarmu`, `kosmek-jelitowy`, `enzym-warunki`; test OK; do W1 |
 
 ## Stan 2026-10-11 (grafiki)
 - Lekcje `biologia/md` budowane `python3 narzedzia/lekcja_html.py -p bio <md>` → `biologia/html/`; wszystkie mają grafiki z `bio-viz.js` (poza L003). Nowe grafiki 2026-10-10: relacje-ekologiczne, konczyny-homologiczne, energia-materia, zrodla-zmiennosci, kontrola-podzialow, eutrofizacja, homeostaza, endosymbioza, hardy-weinberg (katalog `BIO_KATALOG.md`).

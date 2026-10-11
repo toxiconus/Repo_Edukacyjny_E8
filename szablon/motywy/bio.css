@@ -125,3 +125,4 @@ animation:bio-drift 60s linear infinite}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}}
 :root[data-theme=dark]{--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}
 .kr-el.sel .kr-v{stroke-width:14}.kr-el{transition:opacity .25s}
+.pk .pk-tube.sel>*:first-child{stroke-width:var(--w)!important}.pk svg [data-k]{transition:opacity .25s}
