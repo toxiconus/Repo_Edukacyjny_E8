@@ -48,3 +48,34 @@ function init(){var root=document.querySelector('.che-lfs-lesson')||document.que
  paint();var z=get();if(z){var n=document.createElement('div');n.className='che-zakl-toast';n.innerHTML='Masz zakładkę: <b></b> <button type="button">Wróć</button><button type="button" aria-label="Zamknij">×</button>';n.querySelector('b').textContent=z.s||'początek lekcji';
   var bs=n.querySelectorAll('button');bs[0].onclick=function(){n.remove();go()};bs[1].onclick=function(){n.remove()};document.body.appendChild(n);setTimeout(function(){if(n.parentNode)n.remove()},9000)}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();setTimeout(init,700);setTimeout(init,2100)})();
+/* === autoodtwarzanie modeli (2026-10-11, decyzja użytkownika; odpowiednik BIO.fx.auto) ===
+   CHE.AUTO(el, krok, ms, {now}) — działa tylko, gdy model jest widoczny i karta aktywna; kliknięcie w model zatrzymuje,
+   przycisk „▶ odtwarzaj automatycznie” wznawia; przy prefers-reduced-motion domyślnie wyłączone.
+   Skaner podpina modele samoczynnie po przyciskach: „▶ krok” → do przodu i od początku (co 2,2 s),
+   „▶ powtórz / odtwórz / wykonaj” → powtarzanie doświadczenia (co 8 s; kilka zlewek w modelu — po kolei co 4,5 s). Kalkulatory i tabele — bez autoodtwarzania. */
+(function(){var C=window.CHE=window.CHE||{};if(C.AUTO)return;
+ C.AUTO=function(el,step,ms,o){o=o||{};var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,on=!rm,vis=false,tm=null;
+  var bar=document.createElement('div'),b=document.createElement('button');bar.className='che-auto';b.type='button';b.className='che-auto-btn';
+  function lab(){b.textContent=on?'⏸ zatrzymaj animację':'▶ odtwarzaj automatycznie';b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('on',on)}
+  function halt(){if(tm){clearInterval(tm);tm=null}}
+  function run(){if(tm||!on||!vis||document.hidden)return;if(o.now)step();tm=setInterval(function(){if(document.hidden||!vis){halt();return}step()},ms)}
+  b.onclick=function(){on=!on;lab();if(on)run();else halt()};bar.appendChild(b);el.insertBefore(bar,el.firstChild);lab();
+  function user(e){if(bar.contains(e.target)||!on)return;on=false;halt();lab()}
+  el.addEventListener('pointerdown',user,true);el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')user(e)},true);
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(e){vis=e.isIntersecting;if(vis)run();else halt()})},{threshold:.35}).observe(el);else{vis=true;run()}
+  document.addEventListener('visibilitychange',function(){if(document.hidden)halt();else run()});
+  return {stop:function(){on=false;halt();lab()}}};
+ if(!document.getElementById('che-auto-css')){var st=document.createElement('style');st.id='che-auto-css';
+  st.textContent='.che-auto{display:flex;margin:4px 0 8px}.che-auto-btn{font:600 13px/1.2 Inter,system-ui,sans-serif;padding:6px 12px;border-radius:999px;border:1px solid rgba(13,104,104,.45);background:transparent;color:inherit;cursor:pointer}.che-auto-btn.on{background:#0d6868;color:#fff;border-color:#0d6868}@media print{.che-auto{display:none}}';
+  document.head.appendChild(st)}
+ function vis(b){return b&&b.offsetParent!==null}
+ function skan(){document.querySelectorAll('.che-lesson-viz-slot,[data-che-viz],[data-che-zlewka]').forEach(function(el){if(el._cheAuto||el.closest('[data-che-auto-ok]'))return;
+   var bs=[].slice.call(el.querySelectorAll('button'));if(!bs.length)return;
+   var krok=bs.filter(function(b){return /^\s*▶\s*krok/i.test(b.textContent)})[0],
+       rep=bs.filter(function(b){return /▶\s*(powtórz|odtwórz|wykonaj|start)/i.test(b.textContent)});
+   if(!krok&&!rep.length)return;el._cheAuto=1;el.setAttribute('data-che-auto-ok','');
+   if(krok)C.AUTO(el,function(){var k=[].slice.call(el.querySelectorAll('button')).filter(function(b){return /^\s*▶\s*krok/i.test(b.textContent)&&vis(b)})[0];if(!k)return;
+     if(k.disabled){var r=[].slice.call(el.querySelectorAll('button')).filter(function(b){return /od nowa|od początku|reset|↺/i.test(b.textContent)&&vis(b)})[0];if(r)r.click()}else k.click()},2200);
+   else{var ri=-1;C.AUTO(el,function(){var r=[].slice.call(el.querySelectorAll('button')).filter(function(b){return /▶\s*(powtórz|odtwórz|wykonaj|start)/i.test(b.textContent)&&vis(b)});if(!r.length)return;ri=(ri+1)%r.length;r[ri].click()},rep.length>1?4500:8000)}})}
+ function start(){skan();setInterval(skan,2500)}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start()})();

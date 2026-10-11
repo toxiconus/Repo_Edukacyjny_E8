@@ -66,7 +66,7 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Kurs do samodzielnej nauki we własnym tempie (decyzja użytkownika): w lekcjach **bez znaczników czasu** („(5 min)”, „ok. 45 min”), planów dziennych i limitów.
 
 ## GFX i modele
-- **Autoodtwarzanie animacji (decyzja użytkownika):** animowane grafiki startują same, gdy są widoczne, i lecą w pętli — „do przodu i od początku” albo „tam i z powrotem”, zależnie od logiki procesu (oddech tak, jedzenie nie); kliknięcie w grafikę zatrzymuje, przycisk wznawia. BIO: `BIO.fx.auto` (opis w `biologia/bio/BIO_KATALOG.md`).
+- **Autoodtwarzanie animacji (decyzja użytkownika):** animowane grafiki startują same, gdy są widoczne, i lecą w pętli — „do przodu i od początku” albo „tam i z powrotem”, zależnie od logiki procesu (oddech tak, jedzenie nie); kliknięcie w grafikę zatrzymuje, przycisk wznawia. BIO: `BIO.fx.auto` (opis w `biologia/bio/BIO_KATALOG.md`). CHE: `CHE.AUTO` w `chemia/che-modular/engine/src/lekcja/nawigacja.js` — skaner sam podpina modele z „▶ krok” (do przodu) i „▶ powtórz” (powtarzanie doświadczeń, kilka zlewek po kolei); kalkulatory i tabele bez autoodtwarzania.
 - Najpierw istniejące animacje, modele i zlewki (`chemia/che-modular/engine/src/gfx/KATALOG.md` — silnik, `chemia/che-modular/KATALOG_MODELI.md` — modele i pracownie z rozszerzeń) — rozszerzamy je i ulepszamy. Brakujący element (naczynie, przyrząd, przedmiot, efekt) budujemy od podstaw jako komponent wielokrotnego użytku (`engine/src/lekcja/rozszerzenia.js` albo plik w `engine/src/gfx/<przedmiot>/<rodzaj>/`) + wpis w katalogu, nie jednorazowo w lekcji.
 
 ## Plany kursu
