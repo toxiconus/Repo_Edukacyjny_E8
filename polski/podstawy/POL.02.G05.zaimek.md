@@ -5,7 +5,7 @@ tytul: Zaimek
 lead: Zamiast nazwy — wskazuje: ja, ten, który, ktoś, nikt; „swój” czy „jego”, „mi” czy „mnie”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L003, G16
-stan: W1 — GPT-6, 2026-10-09; kontrola treści wykonana, W2 źródeł normatywnych nadal wymagana
+stan: ULEPSZONA — Claude, 2026-10-11 (wykład, mini-wykłady, nie-myl, klinika, ciekawostki, warstwa olimpijska, test, słownik, fiszki); wcześniej W1 — GPT-6, 2026-10-09; do recenzji W1 FULL
 utworzono: 2026-10-09
 wersja: 3.1
 poziom: [[poziom:SP]] [[LKO]]
@@ -33,6 +33,18 @@ Potrafię postawić przecinek przed zdaniem podrzędnym wprowadzonym przez zaime
 | przymiotnik | przymiotny | jaki? który? czyj? | mój, twój, swój, ten, taki, jaki, który, czyj, żaden, każdy |
 | liczebnik | liczebny | ile? | ile, tyle, ileś, ilekolwiek |
 | przysłówek | przysłowny | gdzie? kiedy? jak? | tu, tam, wtedy, gdzie, kiedy, jak, tak, gdzieś, nigdy, wszędzie |
+
+## Wykład — zaimek od zera {#wyklad}
+
+::: karta understand | Wykład — zaimek, czyli wskaźnik zamiast nazwy
+Przeczytaj: „Bilbo znalazł pierścień. Bilbo schował pierścień do kieszeni, bo Bilbo bał się, że Gollum zobaczy pierścień”. Męczące, prawda? Wystarczy kilka zaimków: „Bilbo znalazł pierścień. **Schował go** do kieszeni, bo bał **się**, że Gollum **go** zobaczy”. Zaimek **niczego nie nazywa** — nie mówi, czym jest rzecz, tylko na nią **wskazuje** albo zastępuje jej nazwę. Dlatego jego znaczenie zawsze zależy od kontekstu: *on* może znaczyć Bilba, smoka albo pierścień.
+
+Zaimki dzielimy na dwa sposoby i warto trzymać je osobno. **Po pierwsze — co zastępują:** rzeczownik (*ja, kto, nikt* — zaimki rzeczowne), przymiotnik (*mój, ten, który* — przymiotne), liczebnik (*ile, tyle* — liczebne) albo przysłówek (*tu, wtedy, jak* — przysłowne). Ten podział mówi, jak zaimek się odmienia i jaką funkcję pełni w zdaniu: rzeczowny bywa podmiotem lub dopełnieniem, przymiotny — przydawką, przysłowny — okolicznikiem. **Po drugie — co znaczą:** osobowe, zwrotny, dzierżawcze, wskazujące, pytające, względne, nieokreślone, przeczące, upowszechniające.
+
+Trzy miejsca sprawiają najwięcej kłopotów. **Formy krótkie i długie** (*mi — mnie, go — jego, ci — tobie*): długa stoi na początku zdania, po przyimku i przy nacisku (*Mnie to nie dotyczy, do niego, dla ciebie*), krótka — w środku zdania bez nacisku (*Daj mi*). Po przyimku zaimek *on* zyskuje *n-*: *do niego, z nią, o nich*. **Swój czy jego:** *swój* zawsze wskazuje na podmiot zdania (*Edmund zdradził swoje rodzeństwo* — rodzeństwo Edmunda), *jego, jej, ich* — na kogoś innego. **Zaimek względny** (*który, jaki, kto, co*) pełni podwójną rolę: łączy zdanie podrzędne z nadrzędnym i jednocześnie jest częścią zdania podrzędnego — dlatego przed nim stawiamy przecinek, a gdy stoi po przyimku, przecinek idzie przed przyimek (*, o którym*).
+
+Polszczyzna ma jeszcze jedną cechę, która dziwi uczących się angielskiego: **przeczenie wielokrotne**. *Nikt nigdy nic nie powiedział* to zdanie poprawne — zaimki przeczące wzmacniają przeczenie, a nie je znoszą. Na egzaminie zaimki pojawiają się w zadaniach na poprawność (*do niego, swój*), interpunkcję (przecinek przed *który*) i w spójności tekstu — dobrze dobrany zaimek pozwala uniknąć powtórzeń, a źle dobrany tworzy dwuznaczność (*Ania powiedziała Oli, że jej wynik…* — czyj?).
+:::
 
 ## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
 
@@ -70,6 +82,10 @@ Potrafię postawić przecinek przed zdaniem podrzędnym wprowadzonym przez zaime
 - **Krótka** — w środku zdania, bez nacisku: *Podoba mi się to.* *Dam mu książkę.*  
 - **Po przyimku** — forma z *n-*: *do niego, z nią, u nich, dla niej*.
 
+::: karta understand | W skrócie — krótka czy długa forma?
+Formy krótkie (*mi, ci, go, mu*) są nieakcentowane — „opierają się” o sąsiedni wyraz, więc nie mogą rozpoczynać starannego zdania ani stać po przyimku. Formy długie (*mnie, tobie, jego, jemu*) niosą akcent: wybieramy je na początku zdania (*Mnie się podoba*), w przeciwstawieniu (*Jemu dam, nie tobie*) i po przyimku (*dla mnie, do ciebie*). Zaimek *on* po przyimku dostaje dodatkowe *n-*: *do niego, przy niej, z nimi*. Wyjątek pozorny: *do jego domu* — tu *jego* nie zastępuje osoby, tylko odpowiada na pytanie *czyj?* (zaimek dzierżawczy), więc *n-* się nie dodaje.
+:::
+
 ## 4 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
 
 Zaimek pełni tę funkcję, którą pełniłaby zastępowana część mowy:
@@ -94,6 +110,10 @@ Zaimek pełni tę funkcję, którą pełniłaby zastępowana część mowy:
 **Zaimki grzecznościowe** w listach i wiadomościach można pisać wielką literą: *Dziękuję Ci za list. Pozdrawiam Was serdecznie.* (zwyczaj, nie obowiązek).
 
 **Szyk „się”:** unikamy *się* na końcu zdania, gdy można je przesunąć wcześniej: *Jak to się robi?* (zamiast *Jak to robi się?*). Na końcu krótkich zdań *się* jest poprawne: *Nie bój się.*
+
+::: karta understand | W skrócie — test „swój” w jednym kroku
+Znajdź podmiot zdania (lub zdania składowego) i zapytaj: *czy właścicielem jest właśnie on?* Tak → **swój**. Nie → **jego / jej / ich**. *Kajko wziął swój miecz* — miecz Kajka; *Kajko wziął jego miecz* — miecz kogoś innego (np. Kokosza). W zdaniu złożonym sprawdzasz podmiot tego zdania składowego, w którym stoi zaimek: *Lubawa prosiła Mirmiła, żeby schował swoje skrzydła* — *swoje* odnosi się do Mirmiła (to on chowa). W 1. i 2. osobie wolno użyć obu form: *Wziąłem swój / mój zeszyt*.
+:::
 
 ## 6 | Przykłady z lektur [[basic:E8]]
 
@@ -230,7 +250,7 @@ Zaimek to część mowy wskazująca lub zastępująca nazwę, cechę, liczbę al
 
 ### 13.3. Formy krótkie i długie zaimków osobowych
 
-W neutralnym zdaniu zwykle używa się form krótkich, nieakcentowanych: *Daj mi książkę. Widziałem go. Powiedział ci prawdę.* Formy dłuższe są potrzebne m.in. na początku zdania, dla kontrastu lub nacisku: *Mnie daj książkę, nie jemu. Ciebie pytałem.* Po przyimku stosujemy formy z nagłosowym *n-* tam, gdzie przewiduje to norma: *do niego, dla niej, z nimi, o nas*. Nie mówimy w starannej polszczyźnie *do niego* jako wyjątku od „jego” — po przyimku forma z *n-* jest standardowa.
+W neutralnym zdaniu zwykle używa się form krótkich, nieakcentowanych: *Daj mi książkę. Widziałem go. Powiedział ci prawdę.* Formy dłuższe są potrzebne m.in. na początku zdania, dla kontrastu lub nacisku: *Mnie daj książkę, nie jemu. Ciebie pytałem.* Po przyimku stosujemy formy z nagłosowym *n-* tam, gdzie przewiduje to norma: *do niego, dla niej, z nimi, o nas*. Forma *do niego* nie jest wyjątkiem — po przyimku forma z *n-* jest regułą.
 
 W konstrukcjach typu *daj mi* / *daj mnie* wybór może zmieniać nacisk, a nie tylko poprawność. W zadaniu szkolnym trzeba odczytać kontekst: forma długa bywa poprawna, lecz mocniej akcentowana.
 
@@ -372,6 +392,233 @@ Popraw interpunkcję: **„Osoba, która nie powiedziała nikomu nic o swoim pla
 
 Sprawdź, czy potrafisz: nazwać rodzaj zaimka; odmienić zaimki osobowe; odróżnić *mi/mnie*, *go/jego*, *nim/o nim*; właściwie użyć *swój*; rozpoznać zaimek względny i postawić przecinki; poprawnie budować zdania z kilkoma przeczącymi wyrazami; usuwać dwuznaczność odniesienia. Jeśli nie — wróć do sekcji 14.2–14.5.
 
+## 15 | Nie myl! {#nie-myl}
+
+::: nie-myl | Zaimek czy inna część mowy?
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| *Wiem, kto przyszedł.* / *Wiem, że przyszedł.* | oba łączą zdania | *kto* jest też częścią zdania podrzędnego (podmiot) — zaimek względny; *że* tylko łączy — spójnik |
+| *Kto przyszedł?* / *Nie wiem, kto przyszedł.* | ten sam wyraz | pytanie bezpośrednie — pytający; zdanie podrzędne — względny |
+| *do niego* / *do jego domu* | ta sama osoba | zastępuje osobę → *niego*; odpowiada na *czyj?* → *jego* |
+| *mi* / *mnie* | oba celownik od *ja* | bez nacisku w środku zdania → *mi*; na początku, z naciskiem, po przyimku → *mnie* |
+| *się* (*myje się*) / *się* (*boi się*) | ten sam wyraz | *myje się* = myje siebie (zaimek zwrotny); *boi się* — *się* jest częścią czasownika (nie ma *bać kogoś*) |
+| *nic* / *nie* | oba przeczą | *nic* odmienia się (*niczego*) i zastępuje rzeczownik — zaimek; *nie* — partykuła |
+:::
+
+## 16 | Klinika — dodatkowe błędy {#klinika-plus}
+
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| Każdy z uczniów przynieśli swój zeszyt. | Każdy z uczniów przyniósł swój zeszyt. | *Każdy* wymaga liczby pojedynczej orzeczenia. |
+| Żaden z uczniów nie przyszli. | Żaden z uczniów nie przyszedł. | *Żaden* wymaga liczby pojedynczej orzeczenia. |
+| Dom w którym mieszkam jest stary. | Dom, w którym mieszkam, jest stary. | Przecinek przed przyimkiem i po zdaniu wtrąconym. |
+| Spotkałem Ankę i Kasię i dałem jej książkę. | …i dałem Kasi książkę. | *Jej* jest dwuznaczne — powtórz imię. |
+| Przyszedł, nie wiadomo skąd. | Przyszedł nie wiadomo skąd. | Wyrażenia typu *nie wiadomo skąd, Bóg wie gdzie* — bez przecinka. |
+| To jest ta pani co mieszka obok. | To jest ta pani, która mieszka obok. | W starannej polszczyźnie *który* zamiast potocznego *co*; przecinek. |
+| Dla ci to zrobię. | Dla ciebie to zrobię. | Po przyimku forma długa. |
+:::
+
+## 17 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Pięć przeczeń w jednym zdaniu
+*Nikt nigdy nikomu niczego nie obiecał* — pięć wyrazów przeczących i zdanie jest bez zarzutu. Po angielsku byłby to błąd (*Nobody never…*), bo tam jedno przeczenie wystarcza. Polszczyzna, podobnie jak inne języki słowiańskie, przeczenie „uzgadnia” — każdy element zdania musi być przeczący.
+:::
+
+::: karta extra | „Swój”, którego zazdroszczą Anglicy
+Angielskie *He took his bag* nie mówi, czy to jego własna torba, czy kogoś innego. Polskie *swój* rozstrzyga to jednym słowem: *Wziął swoją torbę* (własną) — *Wziął jego torbę* (czyjąś). Podobny zaimek mają m.in. czeski (*svůj*) i rosyjski (*свой*).
+:::
+
+::: karta extra | Doń, nań, zań — zaimki w skrócie
+W dawnej i podniosłej polszczyźnie przyimek łączył się z zaimkiem w jedno słowo: *doń* (= do niego), *nań* (= na niego), *zań* (= za niego), *przezeń* (= przez niego). Spotkasz je w poezji i w starszej prozie, np. *Spojrzał nań z uśmiechem*. Dziś to archaizmy — używaj ich tylko świadomie, dla stylizacji.
+:::
+
+::: karta extra | „Pan” — grzeczność w trzeciej osobie
+W wielu językach grzecznie zwracamy się do kogoś formą 2. osoby liczby mnogiej (fr. *vous*, dawne polskie *Wy*). Polszczyzna wybrała rzeczownik *pan/pani* i 3. osobę czasownika: *Czy pan wie…?* Dlatego w zdaniu *Proszę pana* wyraz *pan* jest rzeczownikiem, nie zaimkiem — choć pełni rolę zaimka grzecznościowego.
+:::
+
+::: karta extra | „Się” — mały, a wszędzie
+Wyraz *się* należy do najczęściej używanych słów polszczyzny. Bywa zaimkiem zwrotnym (*myje się*), częścią czasownika (*boi się, śmieje się*), wykładnikiem konstrukcji bezosobowej (*mówi się, tańczy się*) i formą wzajemności (*kłócą się*). Jeden wyraz — cztery zadania.
+:::
+
+## 18 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — zaimek w trudnych konstrukcjach
+**„Swój” przy bezokoliczniku.** W zdaniu *Kazałem mu zabrać swój plecak* zaimek *swój* może wskazywać na wykonawcę bezokolicznika (*on zabiera*) albo na podmiot zdania (*ja kazałem*) — to klasyczna dwuznaczność; w starannym tekście lepiej: *Kazałem mu zabrać jego plecak* / *…mój plecak*. **Zaimek a spójnik.** Zaimek względny jest częścią zdania podrzędnego (podmiot, dopełnienie, okolicznik), spójnik — nie: *Wiem, gdzie mieszka* (*gdzie* — okolicznik) vs *Wiem, że mieszka* (*że* — spójnik). **Funkcje „się”.** Zwrotne (*czesze się*), wzajemne (*całują się*), składnik czasownika (*boi się*), bezosobowe (*mówi się*). **Zgoda przy „każdy”, „żaden”.** Liczba pojedyncza orzeczenia i zaimka: *Każdy z nas wziął swój zeszyt*. **Wyrażenia nieprzecinkowe.** *nie wiadomo kto, Bóg wie gdzie, byle jak* — tworzą całość i nie oddzielamy ich przecinkiem.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — zaimek czy spójnik? | poziom ambitny (konkurs)
+Określ, czy podkreślony wyraz to zaimek względny czy spójnik; dla zaimka podaj funkcję w zdaniu podrzędnym.
+
+1. Nie wiem, **gdzie** schował klucze.
+2. Wiem, **że** schował klucze.
+3. To jest chłopiec, **którego** spotkałem.
+4. Zapytał, **czy** przyjdę.
+
+::: odp | Pokaż klucz
+1. zaimek względny — okolicznik miejsca 2. spójnik 3. zaimek względny — dopełnienie (spotkałem kogo?) 4. spójnik (wprowadza pytanie zależne, nie jest częścią zdania podrzędnego) — po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — role „się” | poziom ambitny (konkurs)
+Nazwij rolę wyrazu *się*.
+
+1. Ola czesze się przed lustrem.
+2. Bracia często się kłócą.
+3. Boję się burzy.
+4. W tej szkole dużo się czyta.
+
+::: odp | Pokaż klucz
+1. zaimek zwrotny (czesze siebie) 2. wzajemność (jeden drugiego) 3. składnik czasownika *bać się* 4. konstrukcja bezosobowa. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — dwuznaczność odniesienia | poziom ambitny (konkurs)
+Wyjaśnij dwuznaczność i zaproponuj jednoznaczną wersję.
+
+1. *Mama kazała Tomkowi posprzątać swój pokój.*
+2. *Piotr spotkał Pawła i jego siostrę.*
+
+::: odp | Pokaż klucz
+1. *swój* — pokój mamy albo Tomka; np. *Mama kazała Tomkowi posprzątać jego pokój* / *…pokój mamy* (2 pkt). 2. *jego* — siostra Pawła (najbliższe odczytanie) albo innej osoby; w tym zdaniu siostra Piotra wymagałaby *swoją*: *Piotr spotkał Pawła i swoją siostrę* (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O4 (4 pkt) — interpunkcja | poziom ambitny (konkurs)
+Wstaw przecinki, jeśli są potrzebne.
+
+1. Książka o której mówiłeś leży na stole.
+2. Wrócił nie wiadomo kiedy.
+3. Wiem kto wygrał.
+4. Szukał jej Bóg wie gdzie.
+
+::: odp | Pokaż klucz
+1. *Książka, o której mówiłeś, leży na stole.* 2. bez przecinka (wyrażenie *nie wiadomo kiedy*) 3. *Wiem, kto wygrał.* 4. bez przecinka (*Bóg wie gdzie*). Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O5 (3 pkt) — archaiczne formy | poziom ambitny (konkurs)
+Zastąp formą współczesną: *Spojrzał nań. Podszedł doń. Oddał życie zań.*
+
+::: odp | Pokaż klucz
+*na niego, do niego, za niego* — po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O6 (4 pkt) — popraw zdania | poziom ambitny (konkurs)
+*Mi się wydaje, że żaden z chłopców nie zrobili zadania. Każdy z nas przyniósł swoje książkę. Poszłam do jego, żeby mu oddać zeszyt.*
+
+::: odp | Pokaż klucz
+*Mnie się wydaje* (1), *żaden… nie zrobił* (1), *swoją książkę* (1), *do niego* (1).
+:::
+:::
+
+## 19 | Test sprawdzający {#test}
+
+::: test
+? W zdaniu „Wiem, kto to zrobił” wyraz „kto” to zaimek:
++ względny
+- pytający
+- nieokreślony
+- przeczący
+! Wprowadza zdanie podrzędne i jest w nim podmiotem.
+? Wybierz poprawną formę: „Poszedłem do ____.”
++ niego
+- jego
+- go
+- niej go
+! Po przyimku zaimek *on* ma formę z *n-*.
+? Kasia pokazała ____ rysunek (własny).
++ swój
+- jej
+- jego
+- ich
+! Właścicielem jest podmiot zdania → *swój*.
+? Które zdanie jest poprawne?
++ Mnie się wydaje, że masz rację.
+- Mi się wydaje, że masz rację.
+- Mnie się wydaje że masz rację.
+- Mi się wydaje że masz rację.
+! Na początku zdania forma długa (norma wzorcowa); przecinek przed *że*.
+? Do jakiej grupy należy zaimek „tyle”?
++ liczebne
+- rzeczowne
+- przymiotne
+- przysłowne
+! Zastępuje liczebnik (ile? — tyle).
+? Gdzie postawisz przecinki? „Dom w którym mieszkam jest stary.”
++ przed „w” i po „mieszkam”
+- przed „którym” i po „mieszkam”
+- tylko przed „w”
+- nigdzie
+! Przy przyimku przecinek stoi przed przyimkiem; zdanie wtrącone zamykamy przecinkiem.
+? Zdanie „Nikt nic nie widział” jest:
++ poprawne — przeczenie wielokrotne
+- błędne — za dużo przeczeń
+- poprawne tylko w mowie potocznej
+- błędne — powinno być „Nikt nic widział”
+! W polszczyźnie przeczenia się uzgadniają.
+? W którym zdaniu „się” jest zaimkiem zwrotnym?
++ Ola myje się.
+- Boję się.
+- Tu mówi się po polsku.
+- Śmieje się.
+! *Myje się* = myje siebie; w pozostałych *się* należy do czasownika lub konstrukcji bezosobowej.
+? Który wyraz jest zaimkiem przysłownym?
++ wtedy
+- ten
+- ktoś
+- ile
+! Zastępuje przysłówek (kiedy? — wtedy), w zdaniu jest okolicznikiem.
+? „Wrócił nie wiadomo skąd” — przecinek przed „nie wiadomo”: (poziom ambitny)
++ nie stawiamy
+- stawiamy zawsze
+- stawiamy tylko w piśmie
+- stawiamy po „wiadomo”
+! *Nie wiadomo skąd* to stałe wyrażenie — bez przecinka.
+:::
+
+## 20 | Słownik pojęć {#slownik}
+
+::: slownik
+zaimek :: część mowy, która nie nazywa, tylko wskazuje lub zastępuje nazwę osoby, rzeczy, cechy, liczby albo okoliczności.
+zaimek rzeczowny :: zastępuje rzeczownik: ja, ty, kto, co, nikt, ktoś.
+zaimek przymiotny :: zastępuje przymiotnik: mój, ten, taki, który, czyj.
+zaimek liczebny :: zastępuje liczebnik: ile, tyle, ileś.
+zaimek przysłowny :: zastępuje przysłówek: tu, tam, wtedy, jak, gdzieś, nigdy.
+zaimek zwrotny :: siebie, sobie, sobą, się — wskazuje na podmiot zdania.
+zaimek dzierżawczy :: wskazuje posiadacza: mój, twój, swój, nasz, jego, jej, ich.
+zaimek względny :: wprowadza zdanie podrzędne i jest jego częścią: który, jaki, kto, co, gdzie.
+zaimek przeczący :: nikt, nic, żaden, nigdy, nigdzie — łączy się z partykułą „nie”.
+forma krótka (nieakcentowana) :: mi, ci, go, mu — w środku zdania, bez nacisku.
+forma długa (akcentowana) :: mnie, tobie, jego, jemu — na początku zdania, z naciskiem, po przyimku.
+przeczenie wielokrotne :: kilka wyrazów przeczących w jednym zdaniu — w polszczyźnie poprawne.
+:::
+
+## 21 | Fiszki interaktywne {#fiszki}
+
+::: fiszki
+Zaimek a rzeczownik | zaimek wskazuje, nie nazywa | basic:zaimek
+Cztery grupy wg zastępowanej części mowy | rzeczowne, przymiotne, liczebne, przysłowne | basic:zaimek
+*swój* odnosi się do… | podmiotu tego samego zdania | basic:zaimek
+Na początku zdania: *mi* czy *mnie*? | mnie | basic:zaimek
+*do jego* czy *do niego*? | do niego (ale: do jego domu) | basic:zaimek
+*który* — spójnik czy zaimek? | zaimek względny | basic:zaimek
+Przecinek przed *który*? | tak — przed całym zdaniem podrzędnym | basic:zaimek
+Przyimek przed *którym* — gdzie przecinek? | przed przyimkiem: *, o którym* | basic:zaimek
+-ś, -kolwiek — pisownia? | łącznie: ktoś, cokolwiek | basic:zaimek
+„nie” z zaimkami | rozdzielnie (wyjątki: niejaki, nieco, niekiedy, nieraz) | basic:zaimek
+Zaimek przysłowny | tam, wtedy — okolicznik | basic:zaimek
+*Nikt nic nie wie* — poprawne? | tak — przeczenie wielokrotne | basic:zaimek
+*Kazałem mu zabrać swój plecak* | dwuznaczne: czyj plecak? | olimpijski:zaimek
+*gdzie* vs *że* w zdaniu podrzędnym | *gdzie* — zaimek (część zdania), *że* — spójnik | olimpijski:zaimek
+*boi się* — rola *się* | składnik czasownika | olimpijski:zaimek
+*mówi się* — rola *się* | konstrukcja bezosobowa | olimpijski:zaimek
+*nań, doń, zań* | archaiczne: na niego, do niego, za niego | olimpijski:zaimek
+*nie wiadomo skąd* | bez przecinka — stałe wyrażenie | olimpijski:zaimek
+*Każdy z nas wziął ___ zeszyt* | swój — liczba pojedyncza | olimpijski:zaimek
+:::
+
 ## AUDYT W1 — wynik (2026-10-09, GPT-6)
 
 ### Zakres kontroli
@@ -386,3 +633,9 @@ Sprawdzono definicję, podział zaimków, formy przypadków, użycie *swój*, fu
 
 ### Status
 Nie znaleziono oczywistego błędu w podanych kluczach końcowych. Najważniejsze pole do poprawy to konsekwencja terminologii i rozróżnianie funkcji zaimka zależnie od kontekstu. Niezależna kontrola W2 źródeł normatywnych pozostaje do wykonania.
+
+## ULEPSZENIE — Claude, 2026-10-11
+
+- Dodano: wykład „od zera” (po §1), 2 mini-wykłady „W skrócie” (formy krótkie/długie przed §4, test „swój” przed §6), §15 nie-myl, §16 klinika (7 wierszy), §17 ciekawostki (5), §18 warstwa olimpijska (Dla olimpijczyka + O1–O6 z kluczami), §19 test (10), §20 słownik (12), §21 fiszki interaktywne (12 dotychczasowych + 7 olimpijskich). Poprawiono niejasne zdanie w §13.3. Nic nie usunięto.
+- Częściowa odpowiedź Perplexity pisana bez wglądu w lekcję (`polski/plany/audyty/ULEPSZ_PPLX_G05_czesc1_2026-10-11.md`) — powiela istniejący zakres; nie wprowadzano.
+
