@@ -9,7 +9,7 @@ lead: Najważniejsza umiejętność tego działu: prześledzić drogę krwi na s
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.4 układ krwionośny i limfatyczny, III.5 układ odpornościowy. Genetyka grup krwi — lekcja L019. Liczby fizjologiczne (tętno, liczba krwinek, objętość krwi) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U04 v1.0** · Krążenie, krew i odporność · 2026
-stan: WYPEŁNIONY — Perplexity + Claude, 2026-10-11; do W1
+stan: W1 FULL częściowo (część 1/2, §0.1–12) — Perplexity (paczka ULEPSZ BIO_U04_cz1), 2026-10-11; część 2 czeka; scalenie Claude
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Układ krwionośny** = serce + naczynia + krew. Człowiek ma **dwa obiegi**: **mały (płucny)** i **duży (ustrojowy)**.
@@ -47,6 +47,13 @@ stan: WYPEŁNIONY — Perplexity + Claude, 2026-10-11; do W1
 - **Odporność ucz się parami przeciwieństw:** wrodzona–nabyta, czynna–bierna, naturalna–sztuczna, szczepionka–surowica.
 :::
 
+::: wskazowki
+- **„Prawa do płuc, lewa do życia”** — prawa połowa serca wysyła krew do płuc, lewa do całego ciała.
+- **„Tętnica — start, żyła — powrót”** — tętnice prowadzą krew od serca, żyły do serca.
+- **„ABO: co jest na krwince, tego nie ma w osoczu”** — osoba z antygenem A nie ma przeciwciała anty-A.
+- **„Szczepionka uczy, surowica ratuje”** — szczepionka wywołuje własną odpowiedź, surowica daje gotowe przeciwciała.
+:::
+
 ## 0.2 | Diagnoza {#diagnoza}
 
 ::: karta understand | Odpowiedz najpierw sam
@@ -80,6 +87,14 @@ Krew to nie tylko „czerwony płyn”. Ponad połowę jej objętości stanowi �
 
 I tu zaczyna się drugi temat lekcji: **odporność**. Organizm jest stale atakowany przez bakterie, wirusy, grzyby i pasożyty. Pierwsza linia obrony to mury — **skóra i błony śluzowe**. Gdy intruz je przekroczy, do akcji ruszają komórki żerne, które pochłaniają wszystko, co obce — to **odporność wrodzona**, szybka, ale „ogólna”. Jeśli to nie wystarczy, po kilku dniach włącza się **odporność nabyta**: limfocyty rozpoznają **dokładnie ten** drobnoustrój (jego **antygeny**), produkują przeciwko niemu **przeciwciała** i — co najważniejsze — **zapamiętują** go. Przy następnym spotkaniu reagują tak szybko, że zwykle nawet nie zachorujesz. Na tej pamięci opiera się **szczepienie**: podajemy bezpieczną „podobiznę” drobnoustroju, a organizm uczy się go rozpoznawać bez przechodzenia choroby.
 
+::: karta extra | Serce pracuje bez przerwy
+Serce dorosłego człowieka w spoczynku przetacza około 5 litrów krwi na minutę (orientacyjnie). W ciągu doby daje to około 7000–8000 litrów krwi — czyli mniej więcej objętość kilku dużych wanien. Serce nie odpoczywa tak jak mięśnie szkieletowe: jego rozkurcz jest fazą napełniania się krwią, a nie całkowitym „wyłączeniem”.
+:::
+
+::: karta extra | Krew krąży przez dwa obiegi
+W układzie krwionośnym człowieka ta sama porcja krwi podczas jednego pełnego okrążenia przechodzi przez serce dwa razy: najpierw przez prawą połowę, potem przez lewą. Dzięki temu krew bogata w tlen jest oddzielana od krwi bogatej w dwutlenek węgla, a lewa komora może utrzymywać wysokie ciśnienie potrzebne do zaopatrzenia całego ciała.
+:::
+
 ## 2 | Serce — budowa i praca [[basic:E8]] {#serce}
 
 Serce to narząd zbudowany z **mięśnia sercowego** (tkanka mięśniowa poprzecznie prążkowana serca), wielkości mniej więcej zaciśniętej pięści, ułożony w klatce piersiowej między płucami, nieco na lewo od środka. Otacza je worek — **osierdzie**. Mięsień serca odżywiają własne naczynia — **tętnice wieńcowe**.
@@ -99,10 +114,14 @@ Serce to narząd zbudowany z **mięśnia sercowego** (tkanka mięśniowa poprzec
 Zastawki działają jak drzwi otwierane tylko w jedną stronę. Gdy przedsionek się kurczy, zastawka przedsionkowo-komorowa otwiera się w stronę komory. Gdy kurczy się komora, ciśnienie krwi **zatrzaskuje** tę zastawkę (krew nie cofa się do przedsionka) i otwiera zastawkę półksiężycowatą do tętnicy. Kiedy komora się rozkurcza, zastawka półksiężycowata zamyka się i krew nie spływa z tętnicy z powrotem. Dźwięki zamykających się zastawek to właśnie **tony serca**, które lekarz słyszy przez stetoskop.
 :::
 
-**Cykl pracy serca:** (1) skurcz przedsionków — krew przechodzi do komór; (2) skurcz komór — krew wypływa do tętnic; (3) rozkurcz — serce napełnia się krwią. W spoczynku serce dorosłego kurczy się ok. 60–80 razy na minutę (dane orientacyjne) i przy każdym skurczu wypycha porcję krwi do aorty — łącznie ok. 5 litrów na minutę.
+**Cykl pracy serca:** (1) skurcz przedsionków — krew przechodzi do komór; (2) skurcz komór — krew wypływa do tętnic; (3) rozkurcz — serce napełnia się krwią. W spoczynku serce dorosłego kurczy się ok. 60–80 razy na minutę (dane orientacyjne) i przy każdym skurczu wypycha porcję krwi do aorty — łącznie ok. 5 litrów na minutę (orientacyjnie).
 
 ::: adv | Automatyzm serca — rozrusznik w mięśniu | poziom ambitny
 Serce bije nawet wtedy, gdy nerwy nie wysyłają do niego sygnałów — ma **automatyzm**. W ścianie prawego przedsionka leży **węzeł zatokowo-przedsionkowy**, „naturalny rozrusznik”, który rytmicznie wytwarza impulsy elektryczne. Impuls rozchodzi się po przedsionkach (kurczą się), przechodzi przez węzeł przedsionkowo-komorowy (krótkie opóźnienie — komory zdążą się napełnić) i układem przewodzącym dociera do komór. Układ nerwowy i hormony (np. adrenalina) tylko **przyspieszają lub zwalniają** ten rytm. Zapis tych impulsów to **EKG**. Gdy węzeł zatokowy źle działa, wszczepia się sztuczny rozrusznik.
+:::
+
+::: karta extra | Dlaczego słyszymy „tum-tum”?
+Ton pierwszy serca powstaje głównie przy zamknięciu zastawek przedsionkowo-komorowych na początku skurczu komór, a ton drugi — przy zamknięciu zastawek półksiężycowatych na początku rozkurczu. Lekarz może po charakterze tych dźwięków wychwycić niektóre nieprawidłowości pracy zastawek.
 :::
 
 ## 3 | Dwa obiegi krwi [[basic:E8]] {#obiegi}
@@ -125,6 +144,20 @@ Na rysunkach w podręcznikach i arkuszach serce jest pokazane tak, jakbyś patrz
 
 ::: karta understand | W skrócie — krew przez serce przechodzi dwa razy
 Prześledź jedną krwinkę: wyrusza z lewej komory aortą, w nodze oddaje tlen, żyłami wraca do prawego przedsionka, przechodzi do prawej komory, płynie do płuc, ładuje tlen, wraca do lewego przedsionka i lewej komory. W czasie jednego okrążenia była w sercu **dwa razy** — raz w prawej, raz w lewej połowie. U ryb serce ma tylko jeden przedsionek i jedną komorę, a krew przez serce przepływa raz na okrążenie (jeden obieg). Podział na dwa obiegi pozwala ssakom i ptakom utrzymywać wysokie ciśnienie w obiegu dużym i intensywną przemianę materii.
+:::
+
+::: karta exam | Zadanie 1 (3 pkt) — droga krwi po schemacie
+Na schemacie serca widocznym od przodu strzałka prowadzi z jamy oznaczonej po **lewej stronie rysunku, u dołu**, do naczynia płucnego.
+
+1. Nazwij tę jamę serca. **(1 pkt)**
+2. Podaj, jaką krew — utlenowaną czy odtlenowaną — transportuje wskazane naczynie. **(1 pkt)**
+3. Wyjaśnij, dlaczego naczynie to jest tętnicą, mimo że nie prowadzi krwi utlenowanej. **(1 pkt)**
+
+::: odp | Pokaż klucz
+1. Prawa komora. **(1 pkt)**  
+2. Krew odtlenowaną. **(1 pkt)**  
+3. Tętnica prowadzi krew **od serca**; nazwa naczynia zależy od kierunku przepływu, a nie od zawartości tlenu. **(1 pkt)**
+:::
 :::
 
 ## 4 | Naczynia krwionośne, ciśnienie i tętno [[basic:E8]] {#naczynia}
@@ -170,6 +203,24 @@ BHP: osoby z chorobami serca lub po urazach nie wykonują wysiłku; przy zawrota
 **Zmienna niezależna** (to, co zmieniamy): wysiłek. **Zmienna zależna** (to, co mierzymy): liczba uderzeń tętna na minutę. **Stałe warunki:** ta sama osoba, ten sam sposób pomiaru, ta sama pozycja ciała. **Próba kontrolna:** tętno w spoczynku. Powtórzenia i kilka osób zwiększają wiarygodność wyniku.
 :::
 
+::: karta extra | Tętno maksymalne — orientacyjnie
+Orientacyjną maksymalną częstość tętna podczas wysiłku u młodej osoby można oszacować, odejmując wiek od liczby 220. To tylko przybliżenie: rzeczywista wartość zależy m.in. od wydolności, stanu zdrowia i rodzaju wysiłku. Dlatego nie należy traktować tego wzoru jako diagnozy.
+:::
+
+::: karta exam | Zadanie 2 (4 pkt) — tętno przed i po wysiłku
+Uczennica zmierzyła tętno w spoczynku: 72 uderzenia na minutę. Zaraz po 20 przysiadach wynosiło ono 132 uderzenia na minutę, a po 5 minutach odpoczynku — 78 uderzeń na minutę.
+
+1. Wskaż zmienną niezależną i zmienną zależną w tym doświadczeniu. **(2 pkt)**
+2. Opisz obserwację — bez wyjaśniania mechanizmu. **(1 pkt)**
+3. Sformułuj wniosek poprawny biologicznie. **(1 pkt)**
+
+::: odp | Pokaż klucz
+1. Zmienna niezależna: wysiłek fizyczny; zmienna zależna: tętno (liczba uderzeń na minutę). **(2 pkt)**  
+2. Po wysiłku tętno wzrosło z 72 do 132 uderzeń na minutę, a po odpoczynku zmniejszyło się do 78 uderzeń na minutę. **(1 pkt)**  
+3. Wysiłek fizyczny zwiększa częstość pracy serca, a po odpoczynku tętno wraca do wartości zbliżonej do spoczynkowej. **(1 pkt)**
+:::
+:::
+
 ## 5 | Krew — skład i funkcje [[basic:E8]] {#krew}
 
 Krew to **tkanka łączna płynna**. Dorosły człowiek ma jej ok. 5 litrów (ok. 7–8% masy ciała; dane orientacyjne).
@@ -185,6 +236,10 @@ Krew to **tkanka łączna płynna**. Dorosły człowiek ma jej ok. 5 litrów (ok
 Dojrzały erytrocyt pozbywa się jądra i większości organelli, żeby zmieścić jak najwięcej hemoglobiny — jest „workiem na tlen”. Dwuwklęsły kształt zwiększa powierzchnię wymiany gazowej i pozwala krwince wyginać się w najwęższych naczyniach włosowatych. Cena: bez jądra komórka nie może się naprawiać ani dzielić, więc żyje tylko ok. 120 dni, a potem jest rozkładana w śledzionie i wątrobie (żelazo zostaje odzyskane). Dlatego szpik musi produkować miliony nowych erytrocytów co sekundę.
 :::
 
+::: adv | Jak krew transportuje dwutlenek węgla? | poziom ambitny
+Większość dwutlenku węgla powstającego w komórkach jest transportowana w osoczu w postaci **jonów wodorowęglanowych**. Część CO₂ wiąże się z hemoglobiną, a niewielka część pozostaje rozpuszczona w osoczu. W płucach CO₂ jest uwalniany i wydychany. Hemoglobina więc przede wszystkim transportuje tlen, ale uczestniczy także w transporcie dwutlenku węgla.
+:::
+
 **Krzepnięcie krwi** — obrona przed wykrwawieniem. Po skaleczeniu naczynie się obkurcza, **płytki krwi** przyklejają się do miejsca uszkodzenia i tworzą czop. Jednocześnie białka osocza (czynniki krzepnięcia) uruchamiają łańcuch reakcji, w którym rozpuszczalny **fibrynogen** zmienia się w nierozpuszczalną **fibrynę** — sieć włókien, w którą wplątują się krwinki: powstaje **skrzep**. Do krzepnięcia potrzebne są m.in. jony **wapnia** i **witamina K**. **Hemofilia** to dziedziczna choroba, w której brakuje jednego z czynników krzepnięcia (genetyka — lekcja L018).
 
 **Zakrzep i zator.** Krzepnięcie ratuje życie przy skaleczeniu, ale bywa groźne, gdy zachodzi **wewnątrz** naczynia — powstaje **zakrzep** (np. w żyłach nóg przy długim unieruchomieniu). Gdy fragment zakrzepu oderwie się i z prądem krwi zatka inne naczynie, powstaje **zator** (np. w płucach albo w mózgu). Dlatego po operacjach chorych szybko się uruchamia, a w długiej podróży warto co jakiś czas wstać i poruszać nogami. Leki **przeciwkrzepliwe** zmniejszają ryzyko zakrzepów, ale osoba, która je przyjmuje, dłużej krwawi przy urazach.
@@ -196,6 +251,14 @@ Dojrzały erytrocyt pozbywa się jądra i większości organelli, żeby zmieści
 „Krew to narząd.” || Krew to tkanka (łączna płynna).
 „Erytrocyty bronią organizmu przed bakteriami.” || To zadanie leukocytów; erytrocyty transportują gazy.
 „Płytki krwi wytwarzają przeciwciała.” || Przeciwciała wytwarzają limfocyty B (w formie komórek plazmatycznych); płytki biorą udział w krzepnięciu.
+:::
+
+::: karta extra | Hemoglobina i żelazo
+W jednej cząsteczce hemoglobiny znajdują się atomy żelaza, do których może się przyłączać tlen. Dlatego niedobór żelaza w diecie może prowadzić do niedokrwistości: jest wtedy za mało sprawnie działającej hemoglobiny, a tkanki otrzymują zbyt mało tlenu. Objawami bywają zmęczenie, osłabienie i bladość.
+:::
+
+::: karta extra | Krew można rozdzielić w wirówce
+Po wirowaniu krew rozdziela się na warstwy: u góry pozostaje jasne osocze, niżej cienka warstwa leukocytów i płytek, a na dnie osadzają się erytrocyty. Ten podział pokazuje, że krew nie jest jednorodnym płynem, lecz tkanką złożoną z płynnego osocza i elementów morfotycznych.
 :::
 
 ## 6 | Grupy krwi i transfuzja [[basic:E8]] {#grupy}
@@ -225,6 +288,10 @@ W zadaniach szkolnych grupa **0 Rh−** bywa nazywana „uniwersalnym dawcą”,
 **Pułapka:** konflikt dotyczy w zadaniach szkolnych układu **Rh**, nie ABO, i **nie jest pewny**, gdy matka jest Rh−, a ojciec Rh+ — dziecko może odziedziczyć Rh− (genetyka — L019).
 :::
 
+::: karta extra | Grupa krwi nie zmienia się w ciągu życia
+Grupa ABO i czynnik Rh są ustalone przez geny i zwykle nie zmieniają się w ciągu życia. (Wyjątek: po przeszczepie szpiku od dawcy innej grupy biorca stopniowo „przejmuje” grupę dawcy.) Dlatego zapis grupy krwi jest ważny nie tylko przy transfuzji, lecz także w medycynie transplantacyjnej i przy niektórych badaniach laboratoryjnych.
+:::
+
 ## 7 | Układ limfatyczny [[basic:E8]] {#limfa}
 
 Z naczyń włosowatych do tkanek stale przesącza się trochę osocza — powstaje **płyn tkankowy**, który obmywa komórki. Większość wraca do krwi, ale nadmiar zbierają cienkie **naczynia limfatyczne** — płyn nazywa się wtedy **limfą (chłonką)**. Naczynia limfatyczne uchodzą do dużych żył w okolicy serca, więc limfa wraca do krwi.
@@ -244,6 +311,10 @@ Z naczyń włosowatych do tkanek stale przesącza się trochę osocza — powsta
 | komórki obronne | są | są (dużo limfocytów) |
 | „filtr” | m.in. śledziona | węzły chłonne |
 
+::: karta understand | W skrócie — limfa wraca do krwi
+Limfa nie krąży w osobnym, zamkniętym obiegu jak krew. Naczynia limfatyczne zbierają nadmiar płynu tkankowego z tkanek, przepuszczają go przez węzły chłonne, a następnie oddają do żył w okolicy serca. Dzięki temu płyn nie gromadzi się w tkankach, a limfocyty mogą spotykać antygeny wędrujące z limfą.
+:::
+
 ## 8 | Odporność [[basic:E8]] {#odpornosc}
 
 | Cecha | Odporność wrodzona (nieswoista) | Odporność nabyta (swoista) |
@@ -259,13 +330,13 @@ Z naczyń włosowatych do tkanek stale przesącza się trochę osocza — powsta
 | Rodzaj | Co robi | Odporność |
 |---|---|---|
 | **fagocyty** (komórki żerne, np. makrofagi) | pochłaniają i trawią drobnoustroje oraz martwe komórki (**fagocytoza**) | wrodzona |
-| **limfocyty B** | przekształcają się w komórki wytwarzające **przeciwciała**; tworzą komórki pamięci | nabyta (humoralna — „przez płyny ustroju”) |
+| **limfocyty B** | po aktywacji przekształcają się w komórki plazmatyczne wytwarzające **przeciwciała**; tworzą komórki pamięci | nabyta (humoralna — „przez płyny ustroju”) |
 | **limfocyty T** | rozpoznają i niszczą komórki zakażone lub zmienione nowotworowo; kierują pracą innych komórek odpornościowych; tworzą komórki pamięci | nabyta (komórkowa) |
 
 | | Odporność **humoralna** | Odporność **komórkowa** |
 |---|---|---|
 | na czym polega | na **przeciwciałach** w płynach ustroju (osocze, limfa) | na bezpośrednim działaniu **komórek** — limfocytów T |
-| droga | antygen → aktywacja limfocytu B → komórki wytwarzające przeciwciała → przeciwciało wiąże antygen → drobnoustrój unieszkodliwiony lub oznaczony do zniszczenia, toksyna zneutralizowana | limfocyt T rozpoznaje zakażoną komórkę → niszczy ją → wirus traci miejsce namnażania |
+| droga | antygen → aktywacja limfocytu B → komórki plazmatyczne wytwarzające przeciwciała → przeciwciało wiąże antygen → drobnoustrój unieszkodliwiony lub oznaczony do zniszczenia, toksyna zneutralizowana | limfocyt T rozpoznaje zakażoną komórkę → niszczy ją → wirus traci miejsce namnażania |
 | najważniejsza wobec | bakterii i toksyn krążących w płynach | wirusów ukrytych **wewnątrz** komórek, komórek nowotworowych |
 
 **Fagocytoza krok po kroku:** fagocyt rozpoznaje drobnoustrój → otacza go wypustkami błony komórkowej → zamyka w pęcherzyku wewnątrz komórki → trawi enzymami → usuwa resztki.
@@ -280,6 +351,10 @@ Zadrapanie robi się czerwone, ciepłe, obrzęknięte i boli. To nie „zakażen
 
 ::: karta core | Gdy odporność działa za mocno albo za słabo
 **Za mocno lub „w złą stronę”:** alergia (na zewnętrzny alergen), choroba autoimmunizacyjna (na własne tkanki), odrzucenie przeszczepu. **Za słabo:** wrodzone niedobory odporności, niektóre choroby zakaźne (np. HIV), osłabienie innymi chorobami, leki immunosupresyjne. **Nie myl:** **immunizacja** — wywołanie odporności (np. szczepienie, uczulenie matki Rh−); **immunosupresja** — celowe osłabienie odpowiedzi lekami (po przeszczepie). Odporności po przeszczepie nie wyłącza się całkowicie, bo biorca zostałby bez obrony przed drobnoustrojami — ogranicza się ją tylko na tyle, by nie atakowała przeszczepu.
+:::
+
+::: karta extra | Gorączka może pomagać zwalczać infekcję
+Podwyższenie temperatury ciała podczas infekcji jest częścią odpowiedzi odpornościowej. Wyższa temperatura może utrudniać namnażanie niektórych drobnoustrojów i wspierać pracę układu odpornościowego. Nie każda gorączka wymaga jednak natychmiastowego leczenia — o postępowaniu decyduje jej wysokość, czas trwania i ogólny stan osoby chorej.
 :::
 
 ## 9 | Szczepionka i surowica [[basic:E8]] {#szczepienia}
@@ -320,6 +395,10 @@ Gdy zaszczepiona jest duża część społeczeństwa, drobnoustrój nie ma jak s
 **Żywe, osłabione (atenuowane)** — drobnoustrój nie wywołuje choroby, ale się namnaża (np. przeciw odrze, śwince, różyczce); **inaktywowane** — zabite drobnoustroje; **podjednostkowe** — tylko wybrane białka drobnoustroju; **anatoksyny** — unieszkodliwione toksyny (tężec, błonica); **mRNA** — „przepis”, według którego komórki szczepionego przez krótki czas wytwarzają jedno białko wirusa, a układ odpornościowy uczy się je rozpoznawać. We wszystkich przypadkach cel jest ten sam: antygen bez choroby → pamięć immunologiczna.
 :::
 
+::: karta extra | Pierwsze szczepienie
+Pierwsze naukowo opisane szczepienie przeprowadził Edward Jenner w 1796 roku, stosując materiał z choroby krowiej (krowianki) w celu ochrony przed ospą prawdziwą. Dzięki szczepieniom ospa prawdziwa została eradykowana — Światowa Organizacja Zdrowia ogłosiła jej eliminację w 1980 roku. (źródło: who.int)
+:::
+
 ## 10 | Gdy układ krążenia i odporności zawodzi {#choroby}
 
 | Choroba | Na czym polega | Profilaktyka / postępowanie |
@@ -332,7 +411,7 @@ Gdy zaszczepiona jest duża część społeczeństwa, drobnoustrój nie ma jak s
 | **białaczka** | nowotwór krwi: nadmiar niedojrzałych leukocytów | leczenie onkologiczne, przeszczep szpiku |
 | **alergia** | nadmierna reakcja odpornościowa na nieszkodliwe antygeny (pyłki, sierść, pokarmy) | unikanie alergenu, leki przeciwhistaminowe; przy wstrząsie anafilaktycznym — adrenalina i 112 |
 | **choroba autoimmunizacyjna** (np. cukrzyca typu 1) | układ odpornościowy błędnie atakuje **własne** komórki lub tkanki | leczenie objawowe i leki regulujące odporność; w cukrzycy typu 1 — insulina |
-| **AIDS** (wywołuje wirus **HIV**) | wirus niszczy limfocyty T pomocnicze → osłabienie odporności | unikanie kontaktu z cudzą krwią, prezerwatywy, leczenie przeciwwirusowe |
+| **AIDS** (wywołuje wirus **HIV**) | zakażenie HIV prowadzi do stopniowego niszczenia limfocytów T pomocniczych → osłabienie odporności; AIDS to zaawansowane stadium tej infekcji | unikanie kontaktu z cudzą krwią, prezerwatywy, leczenie przeciwwirusowe |
 
 **Czynniki ryzyka chorób serca i naczyń:** palenie tytoniu, brak ruchu, dieta bogata w sól i tłuszcze nasycone (zwierzęce), otyłość, przewlekły stres, nieleczone nadciśnienie, podwyższony cholesterol, cukrzyca. **Profilaktyka:** regularna aktywność fizyczna, urozmaicona dieta z warzywami i owocami, mniej soli, niepalenie, prawidłowa masa ciała oraz **badania okresowe** — pomiar ciśnienia, poziomu glukozy i cholesterolu (wiele z tych chorób długo nie daje objawów).
 
@@ -346,12 +425,20 @@ Komórki każdego człowieka mają na powierzchni własny zestaw antygenów zgod
 
 **Krwiodawstwo:** krew może honorowo oddawać zdrowa osoba pełnoletnia (w Polsce od 18 lat). Krwi nie da się wyprodukować sztucznie — jedynym źródłem są dawcy.
 
+::: karta extra | Jedna dawka krwi może pomóc kilku pacjentom
+Oddana krew jest często rozdzielana na składniki: koncentrat erytrocytów, osocze i koncentrat płytek krwi. Dzięki temu jedna dawka może wspierać leczenie różnych pacjentów — na przykład osoby po dużej utracie krwi, z zaburzeniami krzepnięcia albo podczas leczenia onkologicznego.
+:::
+
 ## 11 | Krążenie a homeostaza {#homeostaza}
 
 Układ krwionośny łączy wszystkie układy: z **oddechowym** (wymiana gazowa), **pokarmowym** (wchłonięte składniki odżywcze płyną do wątroby, a potem do ciała), **moczowym** (nerki oczyszczają krew), **dokrewnym** (krew roznosi hormony), **odpornościowym** (transport leukocytów i przeciwciał), ze **skórą** (termoregulacja).
 
 ::: karta core | Przykład — termoregulacja przez krążenie
 Gdy temperatura ciała rośnie (upał, wysiłek): naczynia skóry się **rozszerzają** → więcej krwi płynie przy powierzchni → ciało oddaje więcej ciepła (skóra czerwienieje), dodatkowo pocimy się. Gdy marzniemy: naczynia skóry się **zwężają** → krew zostaje głębiej, ciało traci mniej ciepła (skóra blednie). Reakcja przeciwdziała zmianie — to **ujemne sprzężenie zwrotne**, podstawowy mechanizm homeostazy (lekcja o homeostazie — B2).
+:::
+
+::: karta understand | W skrócie — krew jako „autostrada hormonów”
+Hormony wydzielane przez gruczoły dokrewne dostają się bezpośrednio do krwi. Krew roznosi je po całym organizmie, ale działają tylko na komórki mające odpowiednie receptory — dlatego np. adrenalina przyspiesza pracę serca, a insulina wpływa głównie na pobieranie glukozy przez tkanki. To przykład tego, że transport substancji we krwi jest precyzyjnie powiązany z rozpoznawaniem sygnałów przez komórki.
 :::
 
 ## 12 | Doświadczenia i analiza danych [[exam:KONKURS]] {#badania}
@@ -883,3 +970,10 @@ Krążenie, krew i odporność
 **Poprawione w odpowiedziach 3–5:** „mała średnica włośniczek spowalnia przepływ” — przepływ we włośniczkach jest wolny głównie dlatego, że ich **łączny przekrój** jest ogromny; mała średnica sprawia, że krwinki przeciskają się pojedynczo przy ścianie. Dane z tabel krzepnięcia i ciśnienia oznaczone jako przykładowe.
 
 **Nieprzyjęte:** nazwa pliku „B2” z propozycji — w projekcie B2 to homeostaza; lekcja dostała kod U04 (organizm człowieka, pkt III.4–5) w nowej grupie BIO.07.
+
+### AUDYT W1 (ULEPSZ, Perplexity, 2026-10-11) — część 1/2
+
+- Część 1 (§0.1–12) wprowadzona w całości (surowo: `biologia/plany/audyty/ULEPSZ_PPLX_U04_cz1a–c_2026-10-11.md`): doprecyzowania P1–P6 (rzut serca, transport CO₂, anty-D po uczuleniu, komórki plazmatyczne, HIV/AIDS), 10 kart „ciekawostki”, 2 mini-wykłady, Zadania 1–2 (droga krwi, tętno), regula „jak czytać schemat”, pomiar ciśnienia, powrót krwi żylnej, zakrzep i zator, skrzep a strup.
+- Poprawione względem propozycji: Jenner — „pierwsze naukowo opisane”, nie „masowe” szczepienie; usunięty wtręt językowy („thanks to”); dopisany wyjątek grupy krwi po przeszczepie szpiku.
+- Część 2/2 (§13–23) czeka na ocenę.
+
