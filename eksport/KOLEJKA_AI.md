@@ -46,6 +46,8 @@
 
 - zestaw 3 (23 KB): `python3 eksport/paczka_ai.py ulepsz POL_G09 polski/podstawy/POL.02.G09.spojnik.md`
 
+**niski priorytet (W1 starym promptem) — 6 lekcji, 247 KB:** L001 (79 KB) · L002 (53 KB) · L003 (36 KB) · L004 (25 KB) · L005 (22 KB) · L006 (29 KB)
+
 **NIE wysyłać (W1 FULL) — 17 lekcji, 471 KB:** G03 (60 KB) · G04 (69 KB) · G07 (48 KB) · G10 (31 KB) · G11 (25 KB) · G12 (58 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
 
 ## angielski
