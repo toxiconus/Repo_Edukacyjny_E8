@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 165 KB)
+## .  (8 pl., 166 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 14 KB
@@ -11,7 +11,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
-- `WERYFIKACJA.md` 37 KB
+- `WERYFIKACJA.md` 38 KB
 
 ## angielski  (3 pl., 959 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -26,20 +26,20 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
 - ⚠`L012-EN-Future-Simple.html` 121 KB
 
-## angielski/html  (7 pl., 703 KB)
+## angielski/html  (7 pl., 779 KB)
 - ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.html` 169 KB
 - ⚠`ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.html` 112 KB
-- ⚠`ANG.01.L004.czasy_terazniejsze_i_przeszle.html` 102 KB
-- ⚠`ANG.01.L005.present_perfect.html` 106 KB
+- ⚠`ANG.01.L004.czasy_terazniejsze_i_przeszle.html` 139 KB
+- ⚠`ANG.01.L005.present_perfect.html` 146 KB
 - ⚠`ANG.01.L006.past_simple_continuous.html` 107 KB
 - ⚠`ANG.01.L012.future_simple.html` 106 KB
 - `index.html` 2 KB
 
-## angielski/lekcje_md  (6 pl., 206 KB)
+## angielski/lekcje_md  (6 pl., 257 KB)
 - ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.md` 70 KB
 - `ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.md` 30 KB
-- `ANG.01.L004.czasy_terazniejsze_i_przeszle.md` 24 KB
-- `ANG.01.L005.present_perfect.md` 27 KB
+- `ANG.01.L004.czasy_terazniejsze_i_przeszle.md` 49 KB
+- ⚠`ANG.01.L005.present_perfect.md` 53 KB
 - `ANG.01.L006.past_simple_continuous.md` 27 KB
 - `ANG.01.L012.future_simple.md` 28 KB
 
@@ -582,9 +582,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (12 pl., 63 KB)
+## eksport  (12 pl., 64 KB)
 - `.gitignore` 0 KB
-- `JAK_WYSYLAC.md` 3 KB
+- `JAK_WYSYLAC.md` 4 KB
 - `KOLEJKA_AI.md` 3 KB
 - `OCENA_MODELI.md` 3 KB
 - `OLIMPIADA_DODATEK.md` 2 KB
@@ -797,9 +797,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L005.kajko_i_kokosz_rzeczownik.md` 23 KB
 - `POL.01.L006.akademia_pana_kleksa_czasownik.md` 30 KB
 
-## polski/plany/audyty  (20 pl., 301 KB)
+## polski/plany/audyty  (21 pl., 363 KB)
 - (zwinięte; `ls polski/plany/audyty`) — duże:
 - ⚠`ULEPSZ_OLI_G07_G12_2026-10-11.md` 52 KB
+- ⚠`ULEPSZ_OLI_G12_2026-10-11.md` 61 KB
 - ⚠`W1_perplexity_G13_G15_2026-10-10.md` 54 KB
 - ⚠`W1_perplexity_G16_G17_S01-S06_G10_G11_2026-10-10.md` 106 KB
 

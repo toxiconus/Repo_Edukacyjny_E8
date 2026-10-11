@@ -52,5 +52,7 @@
 
 ## angielski
 
-**niski priorytet (W1 starym promptem) — 6 lekcji, 203 KB:** L002 (69 KB) · L003 (29 KB) · L004 (23 KB) · L005 (26 KB) · L006 (26 KB) · L012 (27 KB)
+**niski priorytet (W1 starym promptem) — 4 lekcji, 153 KB:** L002 (69 KB) · L003 (29 KB) · L006 (26 KB) · L012 (27 KB)
+
+**NIE wysyłać (W1 FULL) — 2 lekcji, 100 KB:** L004 (48 KB) · L005 (52 KB)
 

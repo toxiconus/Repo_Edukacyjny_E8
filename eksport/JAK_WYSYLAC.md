@@ -37,3 +37,9 @@ Ranking z próby B2e (2026-10-11, szczegóły w `eksport/OCENA_MODELI.md`, autom
 - Lekcje z **W1 FULL** — nie wysyłać ponownie (lista w `KOLEJKA_AI.md`).
 - Odpowiedzi zapisuję surowo w `<przedmiot>/plany/audyty/` (bez linków-cytatów), a w lekcji w sekcji „Pochodzenie i sprawdzenie treści”: co przyjęte, co poprawione, co odrzucone i dlaczego.
 - Ocena automatyczna (`ocen_odpowiedzi.py`) mierzy **formę i kompletność**, nie prawdziwość — merytorykę zawsze sprawdzam przy scalaniu.
+
+## Rozmiar paczki (ustalenie 2026-10-11)
+- Część modeli (np. ten z Multi-AI Chat, który odpowiadał w paczkach G07/G12 i L004/L005) czyta **tylko ok. 50 KB załącznika** — reszta przepada, a model pisze „plik urywa się w §…”. Perplexity czyta ok. 100 KB.
+- Bezpiecznie dla wszystkich: **jedna lekcja na paczkę, paczka ≤ 50 KB** (polecenie ULEPSZ ma ok. 15 KB z dodatkiem olimpijskim, więc lekcja ≤ ok. 33 KB).
+- Dłuższą lekcję dzielę: `python3 eksport/podziel_lekcje.py plik.md [--max 25] [--od "nagłówek"] [--do "nagłówek"]` → `eksport/out/czesci/`, potem `paczka_ai.py ulepsz NAZWA część.md --olimpiada --uwaga "To CZĘŚĆ k…"`. Przy scalaniu odpowiedzi wstawiam część w miejsce tych samych sekcji.
+- Odpowiedź, w której model pisze, że nie widział części pliku: przyjmuję tylko to, co widział; jego „rekonstrukcję” niewidzianych sekcji traktuję jako nowe propozycje i porównuję z oryginałem (oryginał zostaje).
