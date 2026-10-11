@@ -5,7 +5,7 @@ tytul: Czasowniki / Operatory posiłkowe BE i DO
 lead: Egzamin ósmoklasisty · kompleksowe przygotowanie — Lekcja 2 – twierdzenia, przeczenia, pytania i krótkie odpowiedzi
 stopka: Lekcja 2 – BE i DO • Wersja 7.0 (uproszczona, czystsza) • 2026-08-21
 zrodlo: L002-EN-Operatory-i-czasowniki-posilkowe.html (konwersja html_do_md.py, 2026-10-09)
-stan: W1 FULL częściowo (części 1–2/3, §1–50) — model AI (paczka ULEPSZ --olimpiada ANG_L002), 2026-10-11; część 3 czeka; scalenie Claude
+stan: W1 FULL — model AI (paczka ULEPSZ --olimpiada ANG_L002 cz. 1–2) + Claude (cz. 3: wykład, nie-myl, ciekawostki, warstwa olimpijska, test, słownik), 2026-10-11
 ---
 Lekcja 2 · orientacja
 
@@ -20,6 +20,8 @@ Zasada pracy
 **Nie zgaduj całego zdania naraz.** Najpierw znajdź czasownik i zdecyduj, jaka konstrukcja nim rządzi. Dopiero potem wybierz formę operatora.
 
 ## Spis treści
+
+W tej lekcji: test wstępny · wykład od zera · BE · DO · złota zasada · HAVE · pytania WH i WHO · bank konstrukcji · ćwiczenia A–G · zadania E8 · tabele odmiany · słowniczek · podsumowanie · nie myl · ciekawostki · warstwa olimpijska · test · słownik pojęć · fiszki
 
 Słownictwo: szkoła · rodzina · zainteresowania · czas wolny Otwórz słowniczek
 
@@ -216,6 +218,20 @@ Wybierz poprawny operator dla każdego zdania.
 6. **Is** — BE
 7. **Did** — DO
 8. **Were** — BE
+:::
+
+## Wykład — operatory BE i DO od zera {#wyklad}
+
+::: karta understand | Wykład — dlaczego angielski potrzebuje operatorów
+Po polsku pytanie robisz jednym słowem albo samą intonacją: *Lubisz pizzę?* — *Czy lubisz pizzę?* Szyk się nie zmienia. Angielski działa inaczej: pytanie i przeczenie buduje się **przestawiając albo dokładając mały wyraz pomocniczy — operator**. Operator to „pomocnik" czasownika głównego: sam nie niesie treści (nie mówi, *co* się dzieje), ale niesie **informację gramatyczną** — czas, osobę, przeczenie, pytanie.
+
+Najprostszy przypadek to **BE** (*am, is, are, was, were*). BE jest jednocześnie czasownikiem i operatorem, więc radzi sobie samo: w pytaniu przechodzi przed podmiot (*You are tired.* → ***Are** you tired?*), w przeczeniu dostaje *not* (*You **aren't** tired.*). Tak samo zachowują się inne operatory, które już są w zdaniu: *can, must, will*, a także *have/has* w czasach Perfect (*Have you finished?*).
+
+Gorzej, gdy w zdaniu jest **zwykły czasownik** (*like, play, go, live*) w Present Simple lub Past Simple. Taki czasownik nie umie stanąć przed podmiotem — *Like you pizza?* brzmi dziś jak Szekspir. Wtedy angielski „wypożycza" operator **DO**: *do / does* w teraźniejszości, *did* w przeszłości. DO przejmuje całą informację gramatyczną — dlatego czasownik główny wraca do **formy podstawowej**: *She likes* → *Does she **like**?*, *He went* → *Did he **go**?* Końcówka *-s* i forma przeszła „przeskakują" na operator; nigdy nie ma ich dwa razy.
+
+Krótka odpowiedź powtarza ten operator, który był w pytaniu: *Are you…? — Yes, I am. Does she…? — No, she doesn't. Did they…? — Yes, they did.* Pytania z WH-words (*where, what, why…*) to te same pytania z dodanym słowem na początku: *Where **do** you live?* Wyjątek: gdy *who* lub *what* jest **podmiotem** (pyta o wykonawcę), DO znika — *Who **likes** football?*, ale *Who **do** you like?*
+
+Całą lekcję można więc streścić jednym pytaniem kontrolnym: **czy w zdaniu jest już operator?** Jeśli tak — przestaw go. Jeśli nie — weź DO/DOES/DID i oddaj mu końcówkę. Ta jedna decyzja rozstrzyga większość zadań gramatycznych na E8: od pytań do odpowiedzi, przez krótkie odpowiedzi, po wyszukiwanie błędów.
 :::
 
 ## 2 | Operator BE
@@ -801,14 +817,14 @@ Who do you...? Kogo...?
 ## Fiszki – najważniejsze konstrukcje
 
 ::: fiszki
-Do you like...? | Czy lubisz...?<br><small>DO + you + forma podstawowa</small> | podstawa:operatory
-Are you ready? | Czy jesteś gotowy?<br><small>BE przed podmiotem</small> | podstawa:operatory
-Does she play...? | Czy ona gra...?<br><small>Po DOES: play, nie plays</small> | podstawa:operatory
-Did they go...? | Czy oni poszli...?<br><small>Po DID: go, nie went</small> | podstawa:operatory
-Who likes...? | Kto lubi...?<br><small>WHO jest podmiotem: bez DO</small> | podstawa:operatory
-Who do you like? | Kogo lubisz?<br><small>WHO jest dopełnieniem: użyj DO</small> | podstawa:operatory
-Are there any...? | Czy są jakieś...?<br><small>THERE ARE w pytaniu</small> | podstawa:operatory
-Have you got...? | Czy masz...?<br><small>Nie dodawaj DO do HAVE GOT</small> | podstawa:operatory
+Do you like...? | Czy lubisz...?<br><small>DO + you + forma podstawowa</small> | basic:operatory
+Are you ready? | Czy jesteś gotowy?<br><small>BE przed podmiotem</small> | basic:operatory
+Does she play...? | Czy ona gra...?<br><small>Po DOES: play, nie plays</small> | basic:operatory
+Did they go...? | Czy oni poszli...?<br><small>Po DID: go, nie went</small> | basic:operatory
+Who likes...? | Kto lubi...?<br><small>WHO jest podmiotem: bez DO</small> | basic:operatory
+Who do you like? | Kogo lubisz?<br><small>WHO jest dopełnieniem: użyj DO</small> | basic:operatory
+Are there any...? | Czy są jakieś...?<br><small>THERE ARE w pytaniu</small> | basic:operatory
+Have you got...? | Czy masz...?<br><small>Nie dodawaj DO do HAVE GOT</small> | basic:operatory
 :::
 
 ## 7 | Ćwiczenia
@@ -1482,8 +1498,8 @@ Po *does* czasownik główny *have* wraca do formy podstawowej. W konstrukcji *h
 | <span class="error-text">Does she works?</span> | <span class="correct-text">Does she work?</span> | po does forma podstawowa |
 | <span class="error-text">She have visited.</span> | <span class="correct-text">She has visited.</span> | 3. os. l.poj. → has |
 | <span class="error-text">I have working here.</span> | <span class="correct-text">I have been working here.</span> | Present Perfect Continuous |
-| <span class="error-text">You are waiting?</span> | <span class="correct-text">Are you waiting?</span> | W pytaniu BE + -ing operator BE jest na początku (E8 2023) |
-| <span class="error-text">How much do you play?</span> | <span class="correct-text">How often do you play?</span> | Pytanie o częstotliwość, nie o ilość (E8 2024) |
+| <span class="error-text">You are waiting?</span> | <span class="correct-text">Are you waiting?</span> | W pytaniu BE + -ing operator BE jest na początku (E8 2023 — do weryfikacji) |
+| <span class="error-text">How much do you play?</span> | <span class="correct-text">How often do you play?</span> | Pytanie o częstotliwość, nie o ilość (E8 2024 — do weryfikacji) |
 
 ## 52. Pułapki egzaminacyjne (lista)
 
@@ -1764,6 +1780,233 @@ To właśnie konstrukcje pozwalają szybciej rozwiązywać zadania egzaminacyjne
 
 :::
 
+## 62. Nie myl! — pary, które najczęściej się mieszają {#nie-myl}
+
+::: nie-myl | Operator czy coś innego?
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| *Does she work?* / *Is she working?* | oba pytają „czy ona pracuje?" | zwykły czasownik bez *-ing* → *does*; forma *-ing* → *is* (Present Continuous) |
+| *Who likes you?* / *Who do you like?* | po polsku „kto" i „kogo" brzmią podobnie | *who* = wykonawca → bez DO; *who* = osoba, której coś dotyczy → DO |
+| *How much…?* / *How many…?* | oba znaczą „ile" | niepoliczalne i cena → *much*; policzalne w l. mn. → *many* |
+| *What do you do?* | dwa razy *do* | pierwsze = operator, drugie = czasownik główny „robić" |
+| *Do you have…?* / *Have you got…?* | oba znaczą „czy masz" | albo DO + *have*, albo *have* + *got* — nigdy *Do you have got* |
+| *She has finished.* / *She has a dog.* | to samo *has* | po *has* jest III forma → operator (Perfect); po *has* jest rzeczownik → czasownik główny „mieć" |
+:::
+
+::: karta understand | W skrócie — pytanie kontrolne zamiast 11 reguł
+Jeśli w chwili stresu na egzaminie nie pamiętasz listy zasad, zadaj sobie jedno pytanie: **„czy w tym zdaniu jest już operator?"** Operatorem jest każda forma *be* (także przed *-ing*), *can, must, will, should* i *have/has* przed III formą. Jest — przestawiasz go przed podmiot i niczego nie dokładasz. Nie ma — dokładasz *do/does/did* i oddajesz mu końcówkę *-s* albo czas przeszły, a czasownik główny zostawiasz w formie podstawowej. Na końcu sprawdzasz tylko, czy *who/what* nie jest podmiotem — wtedy DO znika.
+:::
+
+## 63. Ciekawostki {#ciekawostki}
+
+::: karta extra | Jak pytał Szekspir?
+Jeszcze ok. 400 lat temu pytania bez DO były w angielskim zupełnie normalne: u Szekspira znajdziesz *What say you?* („Co mówisz?") czy *Know you not…?* obok form z DO, takich jak *What do you read, my lord?* („Hamlet"). Konstrukcja z DO (tzw. *do-support*) ustaliła się jako jedyna poprawna dopiero w następnych stuleciach — dziś pytanie *Like you pizza?* brzmi archaicznie albo po prostu błędnie.
+:::
+
+::: karta extra | Polskie „czy" — nasz operator
+Polskie *czy* na początku pytania działa podobnie jak operator: sygnalizuje „to jest pytanie tak/nie", ale samo nic nie znaczy. Różnica: *czy* możemy pominąć (*Lubisz pizzę?*), a angielskiego operatora — nie. Dlatego Polakom tak łatwo wymyka się *You like pizza?* — po polsku takie pytanie jest w pełni poprawne.
+:::
+
+::: karta extra | „Aren't I?" — dziwny wyjątek
+Pytanie dopowiadające (*question tag*) do *I am* nie brzmi *amn't I?*, tylko ***aren't I?***: *I'm late, aren't I?* To jedyne miejsce, gdzie *I* łączy się z *are*. Forma *amn't* przetrwała tylko w niektórych dialektach (np. szkockim i irlandzkim).
+:::
+
+::: karta extra | Brytyjskie *have got*, amerykańskie *do you have*
+W brytyjskiej angielszczyźnie potocznej częściej usłyszysz *Have you got a pet?*, w amerykańskiej — *Do you have a pet?* Obie formy są poprawne i obie akceptuje egzamin; ważne, by ich nie mieszać (*Do you have got…?* jest błędem).
+:::
+
+::: karta extra | Grzeczne DO
+DO w twierdzeniu nie tylko podkreśla (*I do like it!*), ale też czyni zaproszenie cieplejszym: Brytyjczyk powie *Do sit down!* albo *Do come in!* — „Ależ proszę, siadaj!". To ten sam operator, tylko w trybie rozkazującym.
+:::
+
+## 64. Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — gdzie jeszcze pracują operatory
+**Question tags** — pytanie dopowiadające powtarza operator zdania w odwrotnej formie: *You like pizza, **don't you**? She isn't here, **is she**?* **So / Neither** — zgoda z rozmówcą też idzie przez operator: *I like jazz. — **So do I.** I'm not hungry. — **Neither am I.*** **Pytania przeczące** — *Don't you like coffee?* Odpowiadamy według faktów, nie według pytania: lubię → *Yes, I do*, nie lubię → *No, I don't* (po polsku odwrotnie: „Nie, lubię!"). **Pytania pośrednie** — po *Do you know…? / Can you tell me…?* operator znika z dalszej części: *Do you know where she **lives**?* (nie *where does she live*). **Pytania o podmiot** — działają też z *what, which, whose*: *What happened? Which team won? Whose dog bit you?*
+:::
+
+::: adv | Zadanie O1 (5 pkt) — question tags | poziom ambitny (konkurs)
+Dopisz pytanie dopowiadające.
+
+1. You like pizza, ______?
+2. She is tired, ______?
+3. They went home, ______?
+4. He can't swim, ______?
+5. I'm late, ______?
+
+::: odp | Pokaż klucz
+1. don't you 2. isn't she 3. didn't they 4. can he 5. aren't I — zdanie twierdzące → tag przeczący i odwrotnie; operator ten sam co w zdaniu (przy zwykłym czasowniku: *do/does/did*).
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — pytania przeczące | poziom ambitny (konkurs)
+Odpowiedz krótko zgodnie z informacją w nawiasie.
+
+1. Don't you like coffee? (lubisz) — ______
+2. Isn't she your sister? (nie jest) — ______
+3. Didn't they come? (przyszli) — ______
+4. Aren't you hungry? (nie jesteś) — ______
+
+::: odp | Pokaż klucz
+1. Yes, I do. 2. No, she isn't. 3. Yes, they did. 4. No, I'm not. — po angielsku *yes/no* zgadza się z faktem, a operator — z pytaniem.
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — so / neither | poziom ambitny (konkurs)
+Zgódź się z rozmówcą (Ty też).
+
+1. I love football. — ______
+2. I'm not ready. — ______
+3. She went to London. — ______
+4. I don't eat meat. — ______
+
+::: odp | Pokaż klucz
+1. So do I. 2. Neither am I. 3. So did I. 4. Neither do I. — *so* po twierdzeniu, *neither* po przeczeniu; operator dobrany do czasownika i czasu (zdanie 3: Past Simple → *did*).
+:::
+:::
+
+::: adv | Zadanie O4 (4 pkt) — pytania pośrednie | poziom ambitny (konkurs)
+Zamień na pytanie pośrednie.
+
+1. Where does she live? → Do you know ______?
+2. What time is it? → Can you tell me ______?
+3. Did he pass the test? → Do you know ______?
+4. Why are they angry? → I wonder ______.
+
+::: odp | Pokaż klucz
+1. where she lives 2. what time it is 3. if/whether he passed the test 4. why they are angry — w pytaniu pośrednim szyk jak w zdaniu oznajmującym, bez *do/does/did*; pytanie tak/nie wprowadza *if/whether*.
+:::
+:::
+
+::: adv | Zadanie O5 (4 pkt) — pytanie o podmiot czy o dopełnienie? | poziom ambitny (konkurs)
+Ułóż pytanie o wyróżnioną część zdania.
+
+1. **Tom** broke the window. → ______
+2. Tom broke **the window**. → ______
+3. **Something strange** happened. → ______
+4. **My team** won the match. (Which…?) → ______
+
+::: odp | Pokaż klucz
+1. Who broke the window? 2. What did Tom break? 3. What happened? 4. Which team won the match? — pytamy o podmiot → bez DO, czasownik w formie jak w zdaniu; o dopełnienie → *did* + forma podstawowa.
+:::
+:::
+
+::: adv | Zadanie O6 (3 pkt) — DO emfatyczne | poziom ambitny (konkurs)
+Podkreśl wypowiedź, używając *do/does/did*.
+
+1. I told you! → ______
+2. She looks tired. → ______
+3. They like you. → ______
+
+::: odp | Pokaż klucz
+1. I did tell you! 2. She does look tired. 3. They do like you. — po operatorze emfatycznym forma podstawowa (*tell, look, like*); w mowie akcent pada na *do/does/did*.
+:::
+:::
+
+::: adv | Zadanie O7 (5 pkt) — znajdź wszystkie błędy | poziom ambitny (konkurs)
+*Do you know where does she live? — No. Neither I do. She likes tea, isn't she? Who did break the window? Don't you like it? — No, I like it!*
+
+::: odp | Pokaż klucz
+1. where **she lives** (pytanie pośrednie, bez *does*) 2. **Neither do I** (operator przed podmiotem) 3. **doesn't she** (tag z operatora *does*) 4. **Who broke** the window? (pytanie o podmiot, bez *did*) 5. **Yes, I do** / *Yes, I like it* (lubię → *yes*).
+:::
+:::
+
+## 65. Test sprawdzający {#test}
+
+::: test
+? Wybierz poprawne pytanie: „Czy ona gra w tenisa?"
++ Does she play tennis?
+- Does she plays tennis?
+- Is she play tennis?
+- Do she play tennis?
+! Zwykły czasownik w Present Simple, 3. os. l.poj. → *does* + forma podstawowa *play*.
+? Która krótka odpowiedź pasuje do pytania „Were they at home?"
++ Yes, they were.
+- Yes, they did.
+- Yes, they are.
+- Yes, they was.
+! Krótka odpowiedź powtarza operator z pytania — tu *were*.
+? Które pytanie jest poprawne?
++ Who lives here?
+- Who does live here?
+- Who do live here?
+- Who live here?
+! *Who* jest podmiotem — bez DO, czasownik jak dla 3. os. l.poj.
+? Uzupełnij: „____ you waiting for the bus?"
++ Are
+- Do
+- Does
+- Have
+! Forma *-ing* (Present Continuous) → operator *be*: *Are you waiting?*
+? Uzupełnij: „How ____ brothers do you have?"
++ many
+- much
+- often
+- long
+! *Brothers* to rzeczownik policzalny w liczbie mnogiej → *how many*.
+? W zdaniu „What do you do after school?" drugie *do* to:
++ czasownik główny
+- operator
+- błąd — powinno być jedno do
+- czasownik modalny
+! Pierwsze *do* tworzy pytanie (operator), drugie znaczy „robić" (czasownik główny).
+? Które zdanie jest BŁĘDNE?
++ Do you have got a pet?
+- Do you have a pet?
+- Have you got a pet?
+- Does she have a pet?
+! Nie łączymy DO z konstrukcją *have got*.
+? Uzupełnij: „She ____ finished her homework."
++ has
+- does
+- is
+- have
+! *Has* + III forma (*finished*) = Present Perfect; *has* jest tu operatorem.
+? Pytanie do odpowiedzi „They went to the cinema." brzmi:
++ Where did they go?
+- Where did they went?
+- Where they went?
+- Where were they go?
+! Past Simple zwykłego czasownika → *did* + forma podstawowa *go*.
+? Uzupełnij pytanie dopowiadające: „You like pizza, ____?" (poziom ambitny)
++ don't you
+- do you
+- aren't you
+- didn't you
+! Zdanie twierdzące → tag przeczący z tym samym operatorem: *do* → *don't you*.
+:::
+
+## 66. Słownik pojęć {#slownik}
+
+::: slownik
+operator (czasownik posiłkowy) :: wyraz pomocniczy, który niesie czas, osobę, pytanie i przeczenie: be, do/does/did, have/has (Perfect), can, must, will.
+czasownik główny :: czasownik niosący treść — mówi, co się dzieje (like, play, go).
+forma podstawowa :: bezokolicznik bez *to* (play, go, have) — używana po do/does/did i po modalnych.
+krótka odpowiedź :: Yes/No + zaimek + operator z pytania: Yes, she does. / No, I'm not.
+pytanie o podmiot :: pytanie, w którym who/what jest wykonawcą czynności — bez DO: Who called?
+pytanie o dopełnienie :: pytanie o osobę lub rzecz, której dotyczy czynność — z DO: Who did you call?
+Present Simple :: czas teraźniejszy prosty — zwyczaje, fakty; operator do/does.
+Past Simple :: czas przeszły prosty — zakończone zdarzenia; operator did.
+Present Continuous :: czas teraźniejszy ciągły (be + -ing) — czynność trwająca teraz; operator be.
+question tag :: krótkie pytanie dopowiadające na końcu zdania: …, don't you? / …, isn't she?
+DO emfatyczne :: do/does/did w zdaniu twierdzącym dla podkreślenia: I do like it!
+:::
+
+## 67. Fiszki — poziom ambitny {#fiszki-olimp}
+
+::: fiszki
+You like pizza, ___? | don't you — tag przeczący z operatorem *do* | olimpijski:operatory
+I'm late, ___? | aren't I — wyjątkowy tag do *I am* | olimpijski:operatory
+I like jazz. — Ty też? | So do I. | olimpijski:operatory
+I'm not hungry. — Ty też nie? | Neither am I. | olimpijski:operatory
+Don't you like coffee? (lubię) | Yes, I do. — yes zgadza się z faktem | olimpijski:operatory
+Do you know where…? (ona mieszka) | …where she lives — bez does w pytaniu pośrednim | olimpijski:operatory
+Kto stłukł okno? | Who broke the window? — pytanie o podmiot, bez did | olimpijski:operatory
+I told you! (z naciskiem) | I did tell you! — DO emfatyczne | olimpijski:operatory
+:::
+
 ## Lista tematów głównych
 
 Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.
@@ -1793,9 +2036,15 @@ Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.
 23. Słownictwo kontekstowe
 24. Tabele odmiany BE, LIKE, GO i HAVE
 25. Czasowniki nieregularne
+26. Wykład — operatory od zera
+27. Nie myl! — pary pułapek
+28. Ciekawostki
+29. Warstwa olimpijska (tags, so/neither, pytania pośrednie)
+30. Test i słownik pojęć
 
-<p class="mini-note">Ucz się świadomie, nie na pamięć.</p>
-<p class="mini-note">Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.</p>
+::: karta basic | Jak pracować z tą lekcją
+Ucz się świadomie, nie na pamięć. Zadania treningowe są wzorowane na formule E8; oficjalne arkusze i nagrania: CKE.
+:::
 
 ## AUDYT W1 (ULEPSZ --olimpiada, 2026-10-11)
 
@@ -1803,4 +2052,4 @@ Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.
 - Część 2/3 (§26–50, tabele) wprowadzona (surowo: `angielski/plany/audyty/ULEPSZ_OLI_L002_cz2_2026-10-11.md`): 4 mini-wykłady, karty ambitne (how much/many, who + do), poprawki §36/40/43/45/46.
 - Poprawione względem propozycji: fiszki dostały pole `podstawa:operatory` (model zostawił stary format); dopisano, że po *who* forma zależy od podmiotu (*Who lives here?*, ale *Who are they?*) — uwaga modelu z kolejnej tury.
 - Nieprzyjęte: nic. Mini-wykłady krótsze niż 60–120 słów — zostawione, uzupełnienie przy części 3.
-- Część 3/3 (od Słowniczka) czeka na ocenę.
+- Część 3/3 (Słowniczek–koniec) opracował Claude (model zewnętrzny nie dostał tej części): dodano wykład „od zera” (przed §6), §62 nie-myl + mini-wykład, §63 ciekawostki (5), §64 warstwa olimpijska (Dla olimpijczyka + O1–O7 z kluczami), §65 test (10 pytań), §66 słownik pojęć (11), §67 fiszki olimpijskie (8); resztki HTML `mini-note` → karta; odwołania „(E8 2023/2024)” oznaczone do weryfikacji. Nic nie usunięto.
