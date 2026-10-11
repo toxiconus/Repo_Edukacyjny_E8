@@ -3067,6 +3067,8 @@ mount:function(el,o){
    tg:{n:'temperatura ↑',p:'temperatura ciała',u:-1,k:['wysiłek, upał → temperatura ciała rośnie','termoreceptory w skórze i we krwi płynącej przez podwzgórze','ośrodek termoregulacji w podwzgórzu','naczynia skóry (rozszerzają się), gruczoły potowe (pot)','więcej ciepła oddane, pot paruje → temperatura spada do normy']},
    td:{n:'temperatura ↓',p:'temperatura ciała',u:-1,k:['zimno → temperatura ciała spada','termoreceptory w skórze i podwzgórzu','ośrodek termoregulacji w podwzgórzu','naczynia skóry (zwężają się), mięśnie szkieletowe (dreszcze), mięśnie przywłosowe („gęsia skórka”)','mniej ciepła ucieka, dreszcze wytwarzają ciepło → temperatura rośnie do normy']},
    gg:{n:'glukoza ↑',p:'stężenie glukozy we krwi',u:-1,k:['posiłek → glukoza we krwi rośnie','komórki trzustki wyczuwające glukozę','trzustka (komórki β wysp trzustkowych)','insulina → komórki ciała, wątroba i mięśnie','komórki pobierają glukozę, wątroba i mięśnie robią z niej glikogen → glukoza spada do normy']},
+   ty:{n:'tyroksyna ↓ (oś tarczycy)',p:'stężenie tyroksyny we krwi',u:-1,k:['mało tyroksyny we krwi (np. zimno, szybsze zużycie)','neurony podwzgórza i komórki przysadki wyczuwające tyroksynę','podwzgórze (hormon uwalniający) → przysadka','TSH → tarczyca','tarczyca wydziela więcej tyroksyny; gdy jej stężenie wróci do normy, sama hamuje podwzgórze i przysadkę → mniej TSH']},
+   ca:{n:'wapń ↓',p:'stężenie wapnia we krwi',u:-1,k:['mało wapnia we krwi','komórki przytarczyc wyczuwające wapń','przytarczyce','parathormon → kości, nerki (i jelito przez witaminę D)','wapń uwalniany z kości i zatrzymywany przez nerki → stężenie rośnie do normy (przy nadmiarze działa kalcytonina z tarczycy)']},
    gd:{n:'glukoza ↓',p:'stężenie glukozy we krwi',u:-1,k:['głód, długi wysiłek → glukoza we krwi spada','komórki trzustki wyczuwające glukozę','trzustka (komórki α wysp trzustkowych)','glukagon → wątroba','wątroba rozkłada glikogen i uwalnia glukozę → glukoza rośnie do normy']},
    wd:{n:'wody za mało',p:'stężenie substancji w osoczu',u:-1,k:['pocenie, brak picia → osocze bardziej stężone','osmoreceptory w podwzgórzu','podwzgórze (wytwarza ADH; ośrodek pragnienia)','ADH z tylnego płata przysadki → nerki; pragnienie → picie','nerki zwracają więcej wody do krwi, mało zagęszczonego moczu → stężenie osocza wraca do normy']},
    wg:{n:'wody za dużo',p:'stężenie substancji w osoczu',u:-1,k:['dużo wypitej wody → osocze rozcieńczone','osmoreceptory w podwzgórzu','podwzgórze','mniej ADH → nerki','nerki zwracają mniej wody, dużo rozcieńczonego moczu → stężenie osocza wraca do normy']},
@@ -3087,7 +3089,7 @@ mount:function(el,o){
    sv.appendChild(S('rect',{x:120,y:262,width:400,height:14,rx:7,fill:'var(--viz-bg2)',stroke:'var(--viz-line)'}));
    sv.appendChild(S('line',{x1:320,y1:254,x2:320,y2:284,stroke:'var(--viz-ink)','stroke-width':2,'stroke-dasharray':'3 3'}));
    sv.appendChild(T(320,300,ujem?'norma':'',{s:13,w:700}));
-   sv.appendChild(S('circle',{cx:320+v*190*(ujem?1:1),cy:269,r:10,fill:col}));
+   var sgn=ujem&&/↓|za dużo/.test(s.n)?-1:1;sv.appendChild(S('circle',{cx:320+sgn*v*190,cy:269,r:10,fill:col}));
    sv.appendChild(T(320,322,s.p,{s:14,w:700,f:'var(--viz-mut)'}));
    clr(box);box.appendChild(sv);
    info.className='bv-info';
@@ -3544,6 +3546,38 @@ mount:function(el,o){
  tl.appendChild(btn('krok ▶ droga dźwięku',function(){kr=(kr+1)%DR.length;var k=DR[kr],p=POS[k];show(k,sv.querySelector('[data-k="'+k+'"]'));info.querySelector('b').textContent=(kr+1)+'/'+DR.length+' · '+M[k][0];
   clr(fala);[0,1,2].forEach(function(i){fala.appendChild(S('path',{d:'M'+(p[0]-14-i*9)+' '+(p[1]-16-i*4)+' Q'+(p[0]-4-i*9)+' '+p[1]+' '+(p[0]-14-i*9)+' '+(p[1]+16+i*4),fill:'none',stroke:'#e67e22','stroke-width':3,opacity:1-i*.25}))})}));
  tl.appendChild(btn('od początku',function(){kr=-1;clr(fala);info.className='bv-info';info.textContent='Kliknij „krok”, aby prześledzić drogę dźwięku.'}));BIO.fx.auto(el,function(){tl.firstChild.click()},1800,{now:1})}});
+
+/* ---- układ dokrewny: mapa gruczołów i hormonów (2026-10-11, lekcja BIO.07.U10) ---- */
+BIO.define('gruczoly-mapa',{opis:'Sylwetka człowieka z gruczołami dokrewnymi: podwzgórze, przysadka, szyszynka, tarczyca, przytarczyce, grasica, nadnercza, trzustka, jajniki albo jądra (przełącznik); kliknij gruczoł albo podpis — hormony, działanie, skutki niedoboru i nadmiaru; autoprzegląd gruczołów',
+mount:function(el,o){var plec=o.plec||'k',tl=H('div','bv-tools'),box=H('div'),info=BIO.fx.infoBox('Kliknij gruczoł albo jego nazwę.');el.appendChild(tl);el.appendChild(box);el.appendChild(info);
+ var M={podw:['Podwzgórze','Część <strong>międzymózgowia</strong> — łącznik układu nerwowego i dokrewnego. Wydziela hormony uwalniające i hamujące, które sterują <strong>przysadką</strong>; wytwarza też <strong>ADH</strong> (zatrzymywanie wody w nerkach) i <strong>oksytocynę</strong> (skurcze macicy, wypływ mleka), uwalniane przez tylny płat przysadki.'],
+  przys:['Przysadka mózgowa','Gruczoł wielkości ziarna grochu pod mózgiem, „dyrygent” innych gruczołów. Płat przedni: <strong>hormon wzrostu</strong> (niedobór u dziecka — karłowatość przysadkowa, nadmiar — gigantyzm, u dorosłego — akromegalia), prolaktyna i <strong>hormony tropowe</strong>: TSH (→ tarczyca), ACTH (→ kora nadnerczy), FSH i LH (→ jajniki, jądra). Płat tylny uwalnia ADH i oksytocynę.'],
+  szysz:['Szyszynka','W głębi mózgu. Wydziela <strong>melatoninę</strong> — w ciemności więcej, w świetle mniej; reguluje rytm snu i czuwania. Światło ekranu wieczorem hamuje jej wydzielanie.'],
+  tarcz:['Tarczyca','Na szyi, przed tchawicą. <strong>Tyroksyna</strong> (zawiera <strong>jod</strong>) przyspiesza przemianę materii, u dzieci jest niezbędna do wzrostu i rozwoju mózgu. Niedoczynność: spowolnienie, senność, marznięcie, tycie; nadczynność: chudnięcie, nerwowość, kołatanie serca, wytrzeszcz. Niedobór jodu → <strong>wole</strong>. <strong>Kalcytonina</strong> (konkurs) obniża wapń we krwi.'],
+  przyt:['Przytarczyce (konkurs)','Cztery małe gruczoły na tylnej powierzchni tarczycy. <strong>Parathormon</strong> podwyższa wapń we krwi (uwalnia go z kości) — antagonista kalcytoniny. Niedobór → <strong>tężyczka</strong> (bolesne skurcze mięśni).'],
+  gras:['Grasica','Za mostkiem, duża u dzieci, po okresie dojrzewania zanika. Hormony grasicy (np. tymozyna) i jej środowisko pozwalają <strong>dojrzewać limfocytom T</strong> — łączy układ dokrewny z odpornościowym.'],
+  nadn:['Nadnercza','„Czapeczki” na nerkach. <strong>Rdzeń</strong> — <strong>adrenalina</strong>: reakcja „walcz lub uciekaj” w kilka sekund (serce szybciej, oskrzela i źrenice szersze, więcej glukozy we krwi). <strong>Kora</strong> (konkurs) — <strong>kortyzol</strong> (stres długotrwały, podnosi glukozę, hamuje stany zapalne) i aldosteron (sód, woda, ciśnienie).'],
+  trzus:['Trzustka (część dokrewna)','Gruczoł <strong>mieszany</strong>: sok trzustkowy płynie przewodem do dwunastnicy, a <strong>wyspy trzustkowe</strong> wydzielają do krwi <strong>insulinę</strong> (komórki β — obniża glukozę) i <strong>glukagon</strong> (komórki α — podwyższa glukozę). Brak insuliny lub słaba reakcja na nią → <strong>cukrzyca</strong>.'],
+  jaj:['Jajniki','W miednicy. <strong>Estrogeny</strong> — rozwój żeńskich cech płciowych, cykl miesiączkowy; <strong>progesteron</strong> — przygotowanie błony śluzowej macicy i utrzymanie ciąży. Pracą jajników sterują FSH i LH z przysadki. Gruczoł mieszany — wytwarza też komórki jajowe.'],
+  jad:['Jądra','W mosznie. <strong>Testosteron</strong> — rozwój męskich cech płciowych (głos, owłosienie, mięśnie), dojrzewanie plemników. Pracą jąder sterują FSH i LH z przysadki. Gruczoł mieszany — wytwarza też plemniki.']};
+ var P={podw:[210,58],przys:[210,74],szysz:[226,48],tarcz:[210,136],przyt:[222,140],gras:[210,182],nadn:[178,262],trzus:[220,290],jaj:[186,372],jad:[198,452]},
+  L={podw:[52,'podwzgórze'],przys:[88,'przysadka'],szysz:[24,'szyszynka'],tarcz:[124,'tarczyca'],przyt:[160,'przytarczyce'],gras:[196,'grasica'],nadn:[250,'nadnercza'],trzus:[296,'trzustka'],jaj:[372,'jajniki'],jad:[452,'jądra']};
+ var kol={podw:'#7e57c2',przys:'#7e57c2',szysz:'#5a6abf',tarcz:'#e08a1e',przyt:'#c0392b',gras:'#2f9a9a',nadn:'#d35400',trzus:'#e6b800',jaj:'#d6456f',jad:'#3b6cc4'};
+ var cur=null,keys;
+ function draw(){seg(tl,[['k','ciało kobiety'],['m','ciało mężczyzny']],plec,function(k){plec=k;draw()});keys=Object.keys(P).filter(function(k){return plec==='k'?k!=='jad':k!=='jaj'});
+  var W=640,Hh=560,sv=svg(W,Hh,'Rozmieszczenie gruczołów dokrewnych',[]);
+  sv.appendChild(S('path',{d:'M210 10 C250 10 256 52 252 74 C248 98 232 108 226 112 L228 124 C262 130 292 140 298 170 L304 330 C306 380 290 400 272 410 L264 540 L226 540 L214 420 L206 420 L194 540 L156 540 L148 410 C130 400 114 380 116 330 L122 170 C128 140 158 130 192 124 L194 112 C188 108 172 98 168 74 C164 52 170 10 210 10 Z',fill:'var(--surface-soft)',stroke:'var(--viz-line)','stroke-width':2}));
+  sv.appendChild(S('ellipse',{cx:182,cy:282,rx:12,ry:20,fill:'none',stroke:'var(--viz-line)','stroke-dasharray':'4 3'}));sv.appendChild(S('ellipse',{cx:240,cy:282,rx:12,ry:20,fill:'none',stroke:'var(--viz-line)','stroke-dasharray':'4 3'}));
+  keys.forEach(function(k){var p=P[k],l=L[k],g=S('g',{'data-k':k});var r=k==='przyt'?5:k==='szysz'||k==='przys'||k==='podw'?7:10;
+   var shp=k==='trzus'?S('ellipse',{cx:p[0],cy:p[1],rx:30,ry:9,fill:kol[k],stroke:'#fff','stroke-width':2,transform:'rotate(-12 '+p[0]+' '+p[1]+')'}):S('circle',{cx:p[0],cy:p[1],r:r,fill:kol[k],stroke:'#fff','stroke-width':2});
+   g.appendChild(shp);if(k==='nadn')g.appendChild(S('circle',{cx:242,cy:262,r:10,fill:kol[k],stroke:'#fff','stroke-width':2}));
+   if(k==='tarcz')g.appendChild(S('circle',{cx:196,cy:138,r:8,fill:kol[k],stroke:'#fff','stroke-width':2}));
+   if(k==='jaj')g.appendChild(S('circle',{cx:234,cy:372,r:10,fill:kol[k],stroke:'#fff','stroke-width':2}));
+   if(k==='jad')g.appendChild(S('circle',{cx:222,cy:452,r:10,fill:kol[k],stroke:'#fff','stroke-width':2}));
+   g.appendChild(S('line',{x1:p[0]+(k==='trzus'?30:r),y1:p[1],x2:372,y2:l[0],stroke:kol[k],'stroke-width':1.5,'stroke-dasharray':'3 3'}));
+   g.appendChild(T(380,l[0],l[1],{s:17,w:800,a:'start',f:kol[k]}));sv.appendChild(g)});
+  clr(box);box.appendChild(sv);BIO.fx.info(sv,info,M,cur&&keys.indexOf(cur)>=0?cur:null)}
+ draw();var ai=-1;BIO.fx.auto(el,function(){ai=(ai+1)%keys.length;cur=keys[ai];var g=el.querySelector('[data-k="'+cur+'"]');if(g)g.dispatchEvent(new MouseEvent('click',{bubbles:true}))},2600,{now:1})}});
 
 })();
 

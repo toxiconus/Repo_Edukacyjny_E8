@@ -4,25 +4,23 @@
 
 ## biologia
 
-**WYSŁAĆ (bez W1) — 7 lekcji, 463 KB:** H01 (44 KB) · U01 (48 KB) · U03 (85 KB) · U04 (78 KB) · U06 (68 KB) · U08 (75 KB) · U10 (62 KB)
+**WYSŁAĆ (bez W1) — 6 lekcji, 419 KB:** U01 (48 KB) · U03 (85 KB) · U04 (78 KB) · U06 (68 KB) · U08 (75 KB) · U10 (62 KB)
 
-- zestaw 1 (44 KB): `python3 eksport/paczka_ai.py ulepsz BIO_H01 biologia/bio/md/BIO.07.H01.homeostaza.md`
+- zestaw 1 (48 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U01 biologia/bio/md/BIO.07.U01.skora_i_uklad_ruchu.md`
 
-- zestaw 2 (48 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U01 biologia/bio/md/BIO.07.U01.skora_i_uklad_ruchu.md`
+- zestaw 2 (85 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U03 biologia/bio/md/BIO.07.U03.uklad_pokarmowy_i_odzywianie.md`
 
-- zestaw 3 (85 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U03 biologia/bio/md/BIO.07.U03.uklad_pokarmowy_i_odzywianie.md`
+- zestaw 3 (78 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U04 biologia/bio/md/BIO.07.U04.krazenie_krew_odpornosc.md`
 
-- zestaw 4 (78 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U04 biologia/bio/md/BIO.07.U04.krazenie_krew_odpornosc.md`
+- zestaw 4 (68 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U06 biologia/bio/md/BIO.07.U06.oddychanie_i_wydalanie.md`
 
-- zestaw 5 (68 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U06 biologia/bio/md/BIO.07.U06.oddychanie_i_wydalanie.md`
+- zestaw 5 (75 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U08 biologia/bio/md/BIO.07.U08.uklad_nerwowy_i_zmysly.md`
 
-- zestaw 6 (75 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U08 biologia/bio/md/BIO.07.U08.uklad_nerwowy_i_zmysly.md`
-
-- zestaw 7 (62 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U10 biologia/bio/md/BIO.07.U10.uklad_dokrewny.md`
+- zestaw 6 (62 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U10 biologia/bio/md/BIO.07.U10.uklad_dokrewny.md`
 
 **niski priorytet (W1 starym promptem) — 2 lekcji, 88 KB:** REV01 (35 KB) · REV02 (53 KB)
 
-**NIE wysyłać (W1 FULL) — 1 lekcji, 58 KB:** L010 (58 KB)
+**NIE wysyłać (W1 FULL) — 2 lekcji, 131 KB:** L010 (58 KB) · H01 (72 KB)
 
 ## chemia
 
