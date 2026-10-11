@@ -5,7 +5,7 @@ tytul: „Chłopcy z Placu Broni” + przymiotnik i liczebnik
 lead: Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie — Lekcja 4 – „Chłopcy z Placu Broni” oraz przymiotnik (stopniowanie, odmiana, „nie”) i liczebnik (rodzaje, odmiana, zapis)
 stopka: Lekcja 4 – „Chłopcy z Placu Broni” + przymiotnik i liczebnik • Wersja FINALNA – pełna treść, uzupełniona o MASTER, KONKURS, OLIMPIADA i słownik • 2026-09-07
 zrodlo: L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html (konwersja html_do_md.py, 2026-10-09)
-stan: KONWERSJA Z HTML — sprawdzić odpowiedzi „DO UZUPEŁNIENIA” i grafiki GFX
+stan: ULEPSZONA — Claude, 2026-10-11 (2 wykłady, mini-wykłady, nie-myl, ciekawostki, warstwa olimpijska, test, słownik, fiszki; poprawione klucze i błędy); W1 starym promptem — do recenzji W1 FULL
 ---
 ::: karta understand | Sprawdź się przed nauką — 3 szybkie pytania
 1. Kto jest symbolem odwagi i lojalności na Placu Broni?
@@ -27,8 +27,8 @@ To nie jest test na ocenę – pokazuje, co już wiesz.
 
 - W informacjach dotyczących sesji 2024/2025–2025/2026 wskazywano, że zadania w **części I arkusza** dotyczące lektur z klas IV–VI odnoszą się **do fragmentu** zamieszczonego w arkuszu. Dla egzaminu 2026/2027 nie traktuj tego historycznego zapisu jako samodzielnego potwierdzenia aktualnego zakresu: przed nauką sprawdź aktualny informator, komunikaty i arkusz CKE. Niezależnie od zakresu lektury zawsze wykonuj polecenie na podstawie materiału podanego w zadaniu.
 - Lektura może być swobodnie wykorzystywana w **wypracowaniu** (część II) i zadaniach otwartych.
-- **W maju 2025 r.** fragment tej lektury pojawił się jako tekst literacki w arkuszu E8 (tematyka przyjaźni, postawa Nemeczka).
-- Lista lektur obowiązkowych znajduje się na **początku arkusza egzaminacyjnego**.
+- **W maju 2025 r.** fragment tej lektury miał się pojawić jako tekst literacki w arkuszu E8 (tematyka przyjaźni, postawa Nemeczka) — *informacja do weryfikacji w arkuszu CKE*.
+- Lista lektur obowiązkowych znajduje się na **początku arkusza egzaminacyjnego** (do weryfikacji w aktualnym arkuszu).
 
 :::
 
@@ -50,6 +50,18 @@ Plac Broni to nie tylko miejsce zabaw. To dla chłopców **„mała ojczyzna”*
 
 :::
 
+## Wykład — „Chłopcy z Placu Broni” od zera {#wyklad-lektura}
+
+::: karta understand | Wykład — powieść o wielkiej sprawie na małym placu
+Budapeszt, rok 1889. Między kamienicami a tartakiem leży pusty plac — dla dorosłych nic niewart skrawek ziemi, dla grupki uczniów cały świat. Chłopcy mają tu swoją „armię” ze stopniami (generał, porucznicy, kapitanowie) i jednego szeregowca — najmniejszego **Nemeczka**. Ferenc Molnár, węgierski pisarz i dramaturg, opublikował tę powieść w 1906 r. (orientacyjnie, wydanie książkowe 1907) i od ponad stu lat czytają ją kolejne pokolenia, także w Polsce.
+
+Fabuła rozwija się wokół konfliktu z **Czerwonymi Koszulami** — bandą z Ogrodu Botanicznego, którą dowodzi **Feri Acz**. Czerwoni chcą zająć plac, bo potrzebują miejsca do gry w palanta. Chłopcy z Placu Broni, kierowani przez rozważnego **Bokę**, przygotowują obronę. W tle toczy się drugi wątek: **Gereb**, zazdrosny o przywództwo Boki, zdradza kolegów i przechodzi do wrogów. A Nemeczek — wyśmiewany przez **Związek Kitowców** i zapisany w ich księdze małymi literami — udowadnia odwagę: zakrada się do Ogrodu Botanicznego, kilkakrotnie ląduje w lodowatej wodzie i mimo gorączki staje do bitwy.
+
+Powieść kończy się podwójnie gorzko. Chłopcy wygrywają bitwę, ale Nemeczek umiera na zapalenie płuc; Kitowcy przed jego śmiercią wpisują jego nazwisko wielkimi literami. A Boka dowiaduje się, że na placu stanie kamienica — plac, o który walczyli, i tak zniknie. Molnár pokazuje więc, że wartość walki nie leży w jej „zysku”, tylko w postawie: lojalności, honorze, odpowiedzialności za innych.
+
+Do wypracowania ta lektura daje gotowe argumenty: **Nemeczek** — bohaterstwo bez siły i bez nagrody (bohater statyczny, wzór), **Gereb** — zdrada i skrucha (bohater dynamiczny), **Boka** — odpowiedzialny przywódca, który dojrzewa przez cierpienie, **Feri Acz** — przeciwnik, który potrafi uszanować odwagę wroga. Plac to **mała ojczyzna**: miejsce, które kochamy nie dlatego, że jest piękne, ale dlatego, że jest nasze.
+:::
+
 ## 2. Najważniejsi bohaterowie
 
 | Bohater | Charakterystyka | Rola w lekturze |
@@ -62,6 +74,10 @@ Plac Broni to nie tylko miejsce zabaw. To dla chłopców **„mała ojczyzna”*
 ::: karta understand | Uwaga!
 **Nemeczek** to bohater statyczny – nie przechodzi wewnętrznej przemiany, ale jego postawa (odwaga, lojalność) jest wzorem dla innych. **Gereb** jest bohaterem dynamicznym, ale jego przemiana jest **niepełna** – nie staje się przywódcą, nie poświęca się jak Nemeczek, ale okazuje skruchę i wraca do grupy.
 
+:::
+
+::: karta understand | W skrócie — jak charakteryzować bohatera tej powieści
+Każdą postać opisz w trzech krokach: **rola** (Boka — przywódca, Gereb — zdrajca, który żałuje, Nemeczek — szeregowiec i bohater), **cecha + dowód z tekstu** (Nemeczek jest odważny: mimo gorączki przychodzi na bitwę i powala Feriego Acza), **typ postaci** (statyczna czy dynamiczna). Pułapka: „statyczny” nie znaczy „nudny” ani „mało ważny” — Nemeczek nie zmienia się, bo od początku ma te cechy, które inni dopiero odkrywają. Gereb zmienia się, ale jego przemiana jest niepełna: wraca, lecz nie odzyskuje dawnej pozycji.
 :::
 
 ## 3. Najważniejsze wydarzenia
@@ -155,11 +171,23 @@ Nemeczek jest najmniejszy i najsłabszy, ale wykazuje się największą odwagą.
   - zdradzie i przebaczeniu,
   - odpowiedzialności przywódcy,
   - niesprawiedliwości.
-- W 2025 roku fragment tej lektury pojawił się w arkuszu E8 – temat dotyczył przyjaźni i postawy Nemeczka.
+- W 2025 roku fragment tej lektury miał się pojawić w arkuszu E8 – temat dotyczył przyjaźni i postawy Nemeczka (do weryfikacji).
 
 :::
 
 ## 2 | Przymiotnik
+
+## Wykład — przymiotnik i liczebnik od zera {#wyklad-gramatyka}
+
+::: karta understand | Wykład — jak opisać świat cechą i liczbą
+Gdy opisujesz Nemeczka, nie wystarczy rzeczownik — potrzebujesz **cech**: *mały, chudy, odważny, lojalny*. To przymiotniki. Odpowiadają na pytania **jaki? który? czyj?** i zawsze „dopasowują się” do rzeczownika: przyjmują jego przypadek, liczbę i rodzaj (*odważny chłopiec, odważnej dziewczynce, odważnych chłopców*). W zdaniu są najczęściej **przydawką** (*mały Nemeczek*) albo częścią orzeczenia imiennego (*Nemeczek był mały*).
+
+Wiele przymiotników się **stopniuje**: równy — wyższy — najwyższy. Regularnie przez *-szy, -ejszy* i *naj-* (*odważny — odważniejszy — najodważniejszy*), opisowo przez *bardziej, najbardziej* (*bardziej lojalny*), a kilka — nieregularnie: *dobry — lepszy, zły — gorszy, duży — większy, mały — mniejszy*. Nie stopniujemy przymiotników oznaczających cechy „zero-jedynkowe”: materiał (*drewniany*), pochodzenie (*węgierski*).
+
+**Liczebnik** mówi **ile?** (*trzech* chłopców — główny), **który z kolei?** (*pierwszy* dzień — porządkowy), ile w grupie mieszanej lub niedorosłej (*troje* dzieci — zbiorowy) i jaka część (*pół, ćwierć* — ułamkowy). Liczebnik jest trudny, bo rządzi rzeczownikiem: po *pięć* rzeczownik stoi w dopełniaczu (*pięć kul*), a męskoosobowe mają osobne formy (*dwaj / dwóch chłopców*, nie *dwa chłopcy*). Liczebniki porządkowe odmieniają się jak przymiotniki.
+
+Na egzaminie przydadzą się trzy umiejętności: poprawna pisownia *nie* z przymiotnikami (od 2026 r. łącznie także w stopniu wyższym i najwyższym: *niemilszy, nienajlepszy*), poprawne formy liczebników przy rzeczownikach męskoosobowych i zapis liczebników słownie w tekście ciągłym.
+:::
 
 ## 7. Czym jest przymiotnik?
 
@@ -219,7 +247,7 @@ Przymiotnik dodaje informację o rzeczowniku – bez niego opisy byłyby nudne i
 Nie wszystkie przymiotniki można stopniować! **Przymiotniki niestopniowalne** to te, które oznaczają cechy, które nie mogą być większe lub mniejsze:
 
 - <em>drewniany, szklany, metalowy</em> (materiał)
-- <em>martwy, żywy</em> (stan)
+- <em>martwy, żywy</em> (stan; uwaga: *żywy* w znaczeniu „intensywny” bywa stopniowany: *żywszy kolor*)
 - <em>okrągły, kwadratowy</em> (kształt)
 
 :::
@@ -289,7 +317,7 @@ Określają liczbę osób, zwierząt lub rzeczy.
 ::: karta warning | 📌 Uwaga – odmiana męskoosobowa
 Liczebniki główne z rzeczownikami męskoosobowymi mają **specjalne formy**:
 
-&#8203;<em>dwóch chłopców, trzech chłopców, pięciu chłopców</em> (nie: <em>dwa chłopcy</em>).
+&#8203;<em>dwóch chłopców, trzech chłopców, pięciu chłopców</em>; w mianowniku także <em>dwaj chłopcy, trzej chłopcy</em> (nie: <em>dwa chłopcy</em>).
 
 Na egzaminie często sprawdzana jest poprawna forma przypadkowa!
 
@@ -335,6 +363,10 @@ Określają część całości.
 
 :::
 
+::: karta understand | W skrócie — liczebnik rządzi rzeczownikiem
+Po liczebnikach *dwa, trzy, cztery* rzeczownik stoi w mianowniku liczby mnogiej (*dwa kamienie, trzy kule*), a po *pięć* i wyżej — w dopełniaczu (*pięć kamieni, dziesięć kul*). Przy rzeczownikach męskoosobowych używamy form męskoosobowych: *dwaj / dwóch chłopców, trzej / trzech chłopców, pięciu chłopców*. Zmienia się wtedy także orzeczenie: *Dwaj chłopcy przyszli*, ale *Pięciu chłopców przyszło*. Liczebniki porządkowe (*pierwszy, piąty*) odmieniają się jak przymiotniki i zgadzają się z rzeczownikiem: *piątego dnia, piątej klasy*.
+:::
+
 ## 12. Zapis liczebników słownie
 
 ::: karta warning | ZASADA: liczebniki na egzaminie zapisuj SŁOWNIE
@@ -352,7 +384,7 @@ Na egzaminie ósmoklasisty liczebniki (w zadaniach gramatycznych i stylistycznyc
 
 ::: karta basic | Zasady pisowni liczebników złożonych
 - **Liczebniki złożone (np. 23):** piszemy **rozdzielnie** – <em>dwadzieścia trzy</em>
-- **Liczebniki z przyrostkiem „-ście” (np. 300):** piszemy **łącznie** – <em>trzysta</em>
+- **Liczebniki na „-naście” (11–19) i setki (np. 300):** piszemy **łącznie** – <em>piętnaście, trzysta, pięćset</em>
 - **Liczebniki porządkowe złożone:** piszemy **rozdzielnie** – <em>dwudziesty trzeci</em>
 
 :::
@@ -415,7 +447,7 @@ Na egzaminie często sprawdzana jest poprawna forma liczebników w przypadkach �
 
 **Przykładowa odpowiedź:**
 
-Liczebniki zbiorowe wywodzą się z dawnych form liczby podwójnej i pierwotnie odnosiły się do par lub grup naturalnie ze sobą związanych (np. <em>dwoje dzieci</em>, <em>troje drzwi</em>). Z czasem ich użycie się zawęziło – dziś łączymy je głównie z rzeczownikami, które nie mają liczby pojedynczej (<em>drzwi, nożyce</em>) lub z osobami różnej płci. To relikt dawnego systemu gramatycznego.
+Liczebniki zbiorowe to dawne liczebniki oznaczające grupę jako całość (orientacyjnie: dziedzictwo prasłowiańskie, nie liczby podwójnej) i pierwotnie odnosiły się do grup naturalnie ze sobą związanych (np. <em>dwoje dzieci</em>, <em>troje drzwi</em>). Z czasem ich użycie się zawęziło – dziś łączymy je głównie z rzeczownikami, które nie mają liczby pojedynczej (<em>drzwi, nożyce</em>) z osobami różnej płci oraz z dziećmi i młodymi zwierzętami (*troje dzieci, pięcioro kociąt*). To relikt dawnego systemu gramatycznego.
 
 :::
 
@@ -431,10 +463,10 @@ Liczebniki zbiorowe wywodzą się z dawnych form liczby podwójnej i pierwotnie 
 4. mały →
 
 ::: odp | Odpowiedzi
-1. stopIcon1
-2. stopIcon2
-3. stopIcon3
-4. stopIcon4
+1. odważniejszy – najodważniejszy
+2. silniejszy – najsilniejszy
+3. lepszy – najlepszy
+4. mniejszy – najmniejszy
 :::
 
 ## 17. Ćwiczenie – „nie” z przymiotnikami
@@ -447,7 +479,7 @@ Liczebniki zbiorowe wywodzą się z dawnych form liczby podwójnej i pierwotnie 
 4. Gereb _____ (nie + był + lojalny), ale później żałował.
 
 ::: odp | Odpowiedzi
-1. nietrudne
+1. niełatwe
 2. nie był odważny
 3. niemądry
 4. nie był lojalny
@@ -495,7 +527,7 @@ Liczebniki główne | Określają liczbę.<br>Przykład: <em>jeden, dwa, trzy, s
 Liczebniki porządkowe | Określają kolejność.<br>Przykład: <em>pierwszy, drugi, trzeci</em><br>Pytanie: <em>który z kolei?</em>
 Liczebniki zbiorowe | Określają liczbę jako grupę.<br>Przykład: <em>dwoje, troje, czworo</em><br>Pytanie: <em>ile (jako grupa)?</em>
 Liczebniki ułamkowe | Określają część całości.<br>Przykład: <em>pół, ćwierć, jedna trzecia</em><br>Pytanie: <em>jaka część?</em>
-Zapis liczebników | **Słownie** (wyjątki: daty, godziny, ceny, tabele)<br>Przykład: <em>dwadzieścia trzy</em> (rozdzielnie)<br><em>trzysta</em> (łącznie z -ście)
+Zapis liczebników | **Słownie** (wyjątki: daty, godziny, ceny, tabele)<br>Przykład: <em>dwadzieścia trzy</em> (rozdzielnie)<br><em>trzysta, piętnaście</em> (łącznie)
 Nemeczek | **Bohater statyczny**<br>Symbol odwagi i lojalności.<br>Niesłusznie oskarżony o zdradę.<br>Poświęca zdrowie i życie za Plac Broni.
 Gereb | **Bohater dynamiczny**<br>Przemiana: zdrada → skrucha → powrót do grupy.<br>Nie staje się przywódcą ani nie poświęca się jak Nemeczek.
 Mała ojczyzna | Plac Broni – symbol przynależności, wspólnoty i wartości, które chłopcy są gotowi bronić.
@@ -573,12 +605,194 @@ Pamiętaj o najważniejszych poprawkach: **Gereb nie staje się przywódcą**, *
 | Nemeczek – bohater | <span class="error-text">Nemeczek przeszedł przemianę.</span> | <span class="correct-text">Nemeczek jest bohaterem statycznym – nie zmienia się, ale jest wzorem.</span> |
 | Stopniowanie nieregularne | <span class="error-text">dobry – dobrzejszy – najdobrzejszy</span> | <span class="correct-text">dobry – lepszy – najlepszy</span> |
 | „nie” z przymiotnikiem – stopień równy | <span class="error-text">nie mądry</span> | <span class="correct-text">niemądry (łącznie)</span> |
-| „nie” z przymiotnikiem – stopień wyższy (od 2026) | <span class="error-text">tylko niemilszy jest poprawny</span> | <span class="correct-text">od 2026 r. poprawnie: niemilszy</span> |
+| „nie” z przymiotnikiem – stopień wyższy (od 2026) | <span class="error-text">nie milszy</span> | <span class="correct-text">niemilszy (łącznie od 2026 r.)</span> |
 | Liczebnik – zapis | <span class="error-text">23 chłopców</span> | <span class="correct-text">dwudziestu trzech chłopców</span> |
 | Liczebnik – forma przypadkowa (męskoosobowa) | <span class="error-text">widziałem dwa chłopców</span> | <span class="correct-text">widziałem dwóch chłopców</span> |
 | Przymiotniki niestopniowalne | <span class="error-text">bardziej drewniany</span> | <span class="correct-text">drewniany (nie stopniujemy)</span> |
 | Niesprawiedliwość w lekturze | <span class="error-text">Nemeczek rzeczywiście zdradził</span> | <span class="correct-text">Nemeczek był niesłusznie oskarżony</span> |
 | Egzamin a treść lektury | <span class="error-text">Egzamin sprawdza całą treść książki.</span> | <span class="correct-text">W części I egzamin sprawdza tylko fragment z arkusza.</span> |
 
-<p class="mini-note">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
-<p class="mini-note">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+## 24. Nie myl! {#nie-myl}
+
+::: nie-myl | Pary, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| Nemeczek / Gereb | obaj „ważni dla fabuły” | Nemeczek — bohater statyczny (wzór, nie zmienia się); Gereb — dynamiczny (zdrada → skrucha) |
+| Boka / Feri Acz | obaj przywódcy | Boka — Chłopcy z Placu Broni; Feri Acz — Czerwone Koszule |
+| *dwaj chłopcy* / *dwóch chłopców* | dwie formy mianownika | obie poprawne (męskoosobowe); błędne jest *dwa chłopcy* |
+| *pięciu uczniów* / *pięcioro uczniów* | oba liczebniki | *pięciu* — sami chłopcy; *pięcioro* — grupa mieszana (chłopcy i dziewczęta) |
+| *pierwszy* / *jeden* | oba „1” | *pierwszy* — kolejność (porządkowy); *jeden* — liczba (główny) |
+| *niemiły* / *nie był miły* | „nie” przy przymiotniku | z przymiotnikiem — łącznie; gdy *nie* przeczy czasownikowi — rozdzielnie |
+:::
+
+## 25. Ciekawostki {#ciekawostki}
+
+::: karta extra | Ulica Pála, nie Plac Broni
+Węgierski tytuł powieści to *A Pál utcai fiúk* — dosłownie „Chłopcy z ulicy Pála”. Polski tłumacz nadał jej tytuł „Chłopcy z Placu Broni”, który na dobre przyjął się w Polsce.
+:::
+
+::: karta extra | Chłopcy z brązu
+W Budapeszcie, w dzielnicy, gdzie toczy się akcja, stoi rzeźba przedstawiająca bohaterów powieści grających w kulki (odsłonięta w 2007 r. — orientacyjnie). Turyści z Polski często szukają jej właśnie dzięki lekturze.
+:::
+
+::: karta extra | Dlaczego „Kitowcy”?
+Członkowie Związku Kitowców zbierali **kit** — miękką masę do uszczelniania szyb — i musieli go codziennie żuć, żeby nie stwardniał. Śmieszny obowiązek, a jednak dla chłopców bardzo poważny — Molnár z czułością pokazuje, jak dzieci budują własne „instytucje”.
+:::
+
+::: karta extra | Dwa-na-ście
+Liczebniki *jedenaście* – *dziewiętnaście* powstały z połączenia „jeden na dziesięć”, „dwa na dziesięć” itd. — *-naście* to dawne „na dziesięć”. Stąd pisownia łączna: *dwanaście, piętnaście*.
+:::
+
+## 26. Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — lektura i liczebnik głębiej
+**Ironia zakończenia.** Plac, o który toczy się walka, ma zostać zabudowany — Molnár podważa sens „zwycięstwa”, a podkreśla wartość postawy. To dobry argument w rozprawce o tym, czy warto walczyć o przegraną sprawę. **Narrator** — trzecioosobowy, wszechwiedzący, z wyraźnym współczuciem dla Nemeczka; dorosłość pokazana jest z perspektywy dziecka (Boka „dorasta” w ostatnim rozdziale). **Liczebnik a orzeczenie.** *Dwaj chłopcy przyszli* (orzeczenie w liczbie mnogiej), ale *Pięciu chłopców przyszło* (orzeczenie w 3. os. lp. rodzaju nijakiego). **Liczebniki zbiorowe** łączą się z: grupą mieszaną (*czworo uczniów*), dziećmi i młodymi (*troje dzieci, pięcioro kociąt*), rzeczownikami tylko mnogimi (*dwoje drzwi, troje sań*). **Oba / obaj / oboje / obie** — *obaj chłopcy, obie dziewczyny, oboje rodzice* (para mieszana).
+:::
+
+::: adv | Zadanie O1 (4 pkt) — liczebnik i orzeczenie | poziom ambitny (konkurs)
+Uzupełnij formę orzeczenia (czas przeszły).
+
+1. Dwaj chłopcy (stanąć) ___ na straży.
+2. Pięciu chłopców (stanąć) ___ na straży.
+3. Troje dzieci (bawić się) ___ na placu.
+4. Obie dziewczyny (przyjść) ___ wcześniej.
+
+::: odp | Pokaż klucz
+1. stanęli 2. stanęło 3. bawiło się 4. przyszły. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — liczebnik zbiorowy czy główny? | poziom ambitny (konkurs)
+Wybierz poprawną formę i uzasadnij.
+
+1. W klasie jest (pięciu / pięcioro) uczniów: trzech chłopców i dwie dziewczynki.
+2. Na placu bawiło się (dwóch / dwoje) kociąt.
+3. Do domu prowadzą (dwa / dwoje) drzwi.
+4. (Obaj / Oboje) rodzice przyszli na zebranie.
+
+::: odp | Pokaż klucz
+1. pięcioro — grupa mieszana 2. dwoje — młode zwierzęta 3. dwoje — rzeczownik tylko w liczbie mnogiej 4. oboje — para mieszana (matka i ojciec). Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — argument do rozprawki | poziom ambitny (konkurs)
+Teza: *Prawdziwe zwycięstwo nie zawsze przynosi korzyść.* Zbuduj argument z odwołaniem do zakończenia „Chłopców z Placu Broni” (3–4 zdania).
+
+::: odp | Pokaż klucz
+Np.: *Chłopcy z Placu Broni wygrali bitwę z Czerwonymi Koszulami, a jednak stracili i Nemeczka, i plac, na którym stanie kamienica. Ich zwycięstwo nie przyniosło więc żadnej korzyści materialnej. Zostało jednak coś ważniejszego: lojalność, odwaga i pamięć o przyjacielu. Molnár pokazuje, że wartość walki mierzy się postawą, nie zyskiem.* — 1 pkt teza w argumencie, 2 pkt trafne odwołanie do fabuły, 1 pkt wniosek.
+:::
+:::
+
+::: adv | Zadanie O4 (4 pkt) — popraw formy | poziom ambitny (konkurs)
+*Na placu stało dwa chłopcy. Nemeczek był najbardziej najmniejszy z nich, ale najodważniejszy. Przyszło dwudziestu trzy uczniów.*
+
+::: odp | Pokaż klucz
+*stali dwaj chłopcy / stało dwóch chłopców* (2) · *najmniejszy* — bez podwójnego stopniowania (1) · *dwudziestu trzech uczniów* (1).
+:::
+:::
+
+## 27. Test sprawdzający {#test}
+
+::: test
+? Kto jest bohaterem statycznym?
++ Nemeczek
+- Gereb
+- Boka
+- Feri Acz
+! Nemeczek nie przechodzi przemiany wewnętrznej — jest wzorem od początku do końca.
+? Kto dowodzi Czerwonymi Koszulami?
++ Feri Acz
+- Boka
+- Gereb
+- Czonakosz
+! Feri Acz — przywódca przeciwników.
+? Jak kończy się powieść dla placu?
++ ma na nim stanąć kamienica
+- zostaje boiskiem szkolnym
+- przejmują go Czerwone Koszule
+- staje się parkiem
+! Ironiczne zakończenie: plac i tak zniknie.
+? Stopień wyższy przymiotnika „zły” to:
++ gorszy
+- złejszy
+- bardziej zły
+- najgorszy
+! Stopniowanie nieregularne: zły — gorszy — najgorszy.
+? Który przymiotnik jest niestopniowalny?
++ drewniany
+- odważny
+- mały
+- miły
+! Materiał nie może być „bardziej” — przymiotnik niestopniowalny.
+? Wybierz poprawną formę:
++ Widziałem dwóch chłopców.
+- Widziałem dwa chłopców.
+- Widziałem dwa chłopcy.
+- Widziałem dwaj chłopców.
+! Rzeczownik męskoosobowy — forma *dwóch*.
+? „Troje dzieci” — liczebnik:
++ zbiorowy
+- główny
+- porządkowy
+- ułamkowy
+! *Troje* — liczebnik zbiorowy.
+? Poprawny zapis od 2026 r.:
++ niemilszy
+- nie milszy
+- nie-milszy
+- niemiły-szy
+! *Nie* z przymiotnikami łącznie także w stopniu wyższym.
+? „Pięciu chłopców ____ na plac.” (poziom ambitny)
++ przyszło
+- przyszli
+- przyszła
+- przyszły
+! Po liczebniku *pięciu* orzeczenie w 3. os. lp. rodzaju nijakiego.
+? „____ rodzice przyszli.” (poziom ambitny)
++ Oboje
+- Obaj
+- Obie
+- Oba
+! Para mieszana (matka i ojciec) — *oboje*.
+:::
+
+## 28. Słownik pojęć {#slownik}
+
+::: slownik
+bohater statyczny :: postać, która nie zmienia się wewnętrznie w toku akcji (Nemeczek).
+bohater dynamiczny :: postać przechodząca przemianę (Gereb: zdrada → skrucha).
+mała ojczyzna :: bliskie miejsce, z którym człowiek się utożsamia i które jest gotów bronić (Plac Broni).
+Związek Kitowców :: dziecięce stowarzyszenie w powieści; Nemeczek zostaje w nim niesłusznie upokorzony.
+przymiotnik :: odmienna część mowy określająca cechę rzeczownika; pytania: jaki? który? czyj?
+stopniowanie :: tworzenie stopnia wyższego i najwyższego: regularne, opisowe, nieregularne.
+liczebnik główny :: określa liczbę: dwa, pięć, sto.
+liczebnik porządkowy :: określa kolejność: pierwszy, setny.
+liczebnik zbiorowy :: określa grupę mieszaną, dzieci, młode lub rzeczowniki tylko mnogie: dwoje, troje.
+forma męskoosobowa :: forma liczebnika przy rzeczownikach oznaczających mężczyzn: dwaj / dwóch, pięciu.
+:::
+
+## 29. Fiszki — poziom ambitny {#fiszki-olimp}
+
+::: fiszki
+Zakończenie powieści — plac | ma na nim stanąć kamienica | olimpijski:lektura
+Narrator powieści | trzecioosobowy, wszechwiedzący | olimpijski:lektura
+Kitowcy — Nemeczek | zapisany małymi literami, przed śmiercią — wielkimi | olimpijski:lektura
+Pięciu chłopców ___ | przyszło (3. os. lp. nijaki) | olimpijski:liczebnik
+Dwaj chłopcy ___ | przyszli | olimpijski:liczebnik
+pięcioro uczniów | grupa mieszana | olimpijski:liczebnik
+oboje rodzice | para mieszana | olimpijski:liczebnik
+dwanaście — pochodzenie | „dwa na dziesięć” | olimpijski:liczebnik
+:::
+
+::: karta basic | Jak pracować z tą lekcją
+Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych. Zadania treningowe wzorowane na formule E8 z języka polskiego.
+:::
+
+## ULEPSZENIE — Claude, 2026-10-11
+
+- Dodano: wykład o lekturze (przed §2) i wykład o przymiotniku i liczebniku (przed §7), 2 mini-wykłady „W skrócie” (charakterystyka bohatera, liczebnik a rzeczownik), §24 nie-myl, §25 ciekawostki (4), §26 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami), §27 test (10), §28 słownik (10), §29 fiszki olimpijskie (8). Nic nie usunięto.
+- Poprawione: klucz §16 (był pusty — „stopIcon1–4”), klucz §17.1 (*nietrudne* → *niełatwe*), zasada „-ście” (→ *-naście* i setki), wiersz pułapek o „nie” w stopniu wyższym, uzupełniono *dwaj/trzej chłopcy*, *żywszy kolor*, pochodzenie liczebników zbiorowych (nie od liczby podwójnej — orientacyjnie); resztki HTML `mini-note` → karta. Informacje o arkuszu E8 2025 i liście lektur w arkuszu oznaczono do weryfikacji.
+- Pozostawiono: rozdzielne *nie* przy rzeczywistym przeciwstawieniu z przymiotnikiem (§9) — uchwała RJP znosi „świadomą pisownię rozdzielną” wprost dla imiesłowów; dla przymiotników w przeciwstawieniu do weryfikacji w tekście zasad RJP.
+
