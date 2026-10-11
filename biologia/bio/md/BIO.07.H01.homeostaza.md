@@ -9,7 +9,7 @@ lead: Jeden schemat wyjaśnia wszystkie przykłady: bodziec → receptor → oś
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt IV Homeostaza. Łączy lekcje o układach: krążenia (U04), dokrewnym, nerwowym, wydalniczym i skórze. Wartości prawidłowe (temperatura, glukoza, ciśnienie, pH) są orientacyjne — zależą od metody pomiaru i laboratorium. Warstwa konkursowa (sekcje z [[exam:KONKURS]] i ::: adv) do zweryfikowania z wymaganiami LKO — w paczce nie ma dokumentu wymagań.
 stopka: **BIOLOGIA H01 v1.1** · Homeostaza · 2026
-stan: W1 FULL — 4 modele AI w trybie ULEPSZ (model B — pełna wersja, GPT-6 — pełna wersja, model D — poprawki, model A — poprawki) + Claude (scalenie i sprawdzenie), 2026-10-11
+stan: W1 FULL — 5 modeli AI w trybie ULEPSZ (model B — pełna wersja, GPT-6 — pełna wersja, model D — poprawki, model E — dodatki, model A — poprawki) + Claude (scalenie i sprawdzenie), 2026-10-11
 ---
 ::: minimum | Muszę umieć — 12 punktów
 1. **Homeostaza** — utrzymywanie względnie stałych warunków wewnętrznych (temperatura, glukoza, woda, sole, pH, ciśnienie, CO₂) mimo zmian w otoczeniu. To **równowaga dynamiczna** — stale poprawiana.
@@ -658,6 +658,12 @@ Ciśnienie krwi | ~120/80 mmHg; baroreceptory → rdzeń przedłużony → serce
 pH krwi | 7,35–7,45; regulacja oddechowa (szybka) i nerkowa (wolna) | basic:cisnienie
 Baroreceptory | czujniki rozciągnięcia ścian tętnic (ciśnienie) | exam:konkurs
 Adrenalina | hormon nadnerczy; podwyższa glukozę, przyspiesza serce — „walcz lub uciekaj” | contest:hormony
+Chemoreceptory | czujniki CO₂ i pH krwi; sterują oddechem | contest:homeostaza
+Aldosteron | kora nadnerczy; więcej Na⁺ wraca w nerkach (konkurs) | contest:woda
+Diureza | ilość moczu wydalanego w jednostce czasu | basic:woda
+Termoreceptory | receptory temperatury (skóra, podwzgórze) | basic:temperatura
+Granice homeostazy | regulacja nie nadąża: udar cieplny, hipotermia, odwodnienie | basic:homeostaza
+Erytropoetyna (EPO) | hormon nerek; więcej krwinek czerwonych na wysokości | contest:homeostaza
 Wartość nastawiona | „ustawienie termostatu” — norma, do której wraca regulowany parametr | understand:homeostaza
 :::
 
@@ -680,6 +686,10 @@ ADH (wazopresyna) :: hormon zwiększający zwrotne wchłanianie wody w nerkach
 Podwzgórze :: część mózgu z ośrodkami termoregulacji, pragnienia i gospodarki wodnej
 Baroreceptory :: czujniki ciśnienia krwi w ścianach tętnic
 Ciśnienie krwi :: siła, z jaką krew naciska na ściany tętnic (mmHg)
+Chemoreceptory :: receptory stężenia CO₂ i jonów H⁺ we krwi, sterujące częstością i głębokością oddechu
+Stałocieplność :: utrzymywanie stałej temperatury ciała niezależnie od temperatury otoczenia
+Aldosteron :: hormon kory nadnerczy zwiększający zwrotne wchłanianie jonów sodu w nerkach (warstwa konkursowa)
+Diureza :: wydalanie moczu; objętość moczu wydalona w jednostce czasu
 pH krwi :: miara kwasowości krwi; prawidłowo 7,35–7,45
 :::
 
@@ -841,6 +851,10 @@ Regulacja nerwowa to SMS: działa w ułamkach sekundy, krótko, do konkretnego n
 
 ## 23 | Dodatkowe ciekawostki i połączenia {#ciekawostki-dodatkowe}
 
+::: karta extra | Ciało w górach — aklimatyzacja
+Wysoko w górach ciśnienie powietrza jest niższe, więc z każdym wdechem do krwi trafia mniej tlenu. Już w pierwszych godzinach serce bije szybciej, a oddech przyspiesza. Po kilku dniach nerki wydzielają więcej **erytropoetyny (EPO)** — hormonu, który pobudza szpik kostny do wytwarzania krwinek czerwonych; więcej krwinek przenosi więcej tlenu. Dlatego sportowcy trenują na wysokości, a podawanie sobie EPO jest w sporcie zakazanym dopingiem.
+:::
+
 ::: karta extra | Skóra nie jest tylko osłoną
 Skóra uczestniczy w termoregulacji dzięki gruczołom potowym, naczyniom krwionośnym i receptorom czucia. Rozszerzenie naczyń skóry zwiększa przepływ krwi przy powierzchni i ułatwia oddawanie ciepła; zwężenie ogranicza tę drogę utraty. Nie oznacza to, że skóra zawsze skutecznie ochroni przed skrajnym upałem lub mrozem.
 :::
@@ -886,7 +900,44 @@ B (2 pkt za wskazanie i poprawne uzasadnienie; 1 pkt za samo wskazanie). Mniejsz
 :::
 :::
 
-## 25 | Co dalej? {#dalej}
+## 25 | Oddech, sól i woda — więcej regulacji w działaniu [[exam:KONKURS]] {#oddech-sol-woda}
+
+::: karta understand | W skrócie — oddech jako regulacja stężenia CO₂
+Wysiłek → mięśnie wytwarzają więcej CO₂ → we krwi rośnie stężenie CO₂ i spada pH → **chemoreceptory** (w rdzeniu przedłużonym oraz w kłębkach szyjnych i aortalnych) wysyłają sygnał → **ośrodek oddechowy** w rdzeniu przedłużonym → **mięśnie oddechowe** (przepona, mięśnie międzyżebrowe) kurczą się częściej i mocniej → oddech szybszy i głębszy → więcej CO₂ usuwają płuca → pH wraca do normy. W zadaniu „wskaż efektor” wpisz mięśnie oddechowe, a nie samo „oddychanie” — oddychanie to odpowiedź, nie narząd.
+:::
+
+::: regula | Pięć kratek — dwa kolejne przykłady
+| Przykład | Bodziec | Receptor | Ośrodek | Efektor | Odpowiedź |
+|---|---|---|---|---|---|
+| spadek ciśnienia krwi | za niskie ciśnienie | baroreceptory (łuk aorty, zatoka tętnicy szyjnej) | rdzeń przedłużony | serce, mięśnie ścian naczyń | serce bije szybciej, naczynia się zwężają — ciśnienie rośnie |
+| wzrost CO₂ we krwi | więcej CO₂, niższe pH | chemoreceptory | ośrodek oddechowy (rdzeń przedłużony) | mięśnie oddechowe | szybszy, głębszy oddech — CO₂ spada |
+:::
+
+::: karta exam | Zadanie 23 (3 pkt) — mocz biegacza
+Zmierzono dobowe wydalanie moczu u biegacza w dniu odpoczynku i w dniu długiego treningu w upale. Dzień odpoczynku — 1,4 l moczu, jasnosłomkowy; dzień treningu — 0,6 l, ciemny. a) Jak zmieniło się wydzielanie ADH? b) Wyjaśnij różnicę w objętości moczu. c) Podaj drugą drogę, którą organizm tracił wodę w dniu treningu.
+
+::: odp | Pokaż klucz
+a) W dniu treningu wydzielanie ADH było większe (1 pkt). b) Duża utrata wody z potem zagęściła osocze → osmoreceptory podwzgórza → więcej ADH → nerki zwrotnie wchłaniają więcej wody, moczu jest mniej i jest bardziej zagęszczony (1 pkt). c) Pot (skóra) albo para wodna w wydychanym powietrzu (płuca) (1 pkt).
+:::
+:::
+
+::: karta exam | Zadanie 24 (3 pkt) — bardzo słony posiłek
+Osoba zjadła bardzo słony posiłek. Przewidź, jak w ciągu następnych godzin zmienią się: a) stężenie osocza; b) pragnienie i ilość wypijanej wody; c) ilość moczu. Uzasadnij każdą odpowiedź.
+
+::: odp | Pokaż klucz
+a) Wzrośnie — sól wchłania się z jelita do krwi (1 pkt). b) Wzrośnie — osmoreceptory w podwzgórzu pobudzają ośrodek pragnienia, osoba pije więcej (1 pkt). c) Najpierw zmaleje (więcej ADH, nerki oszczędzają wodę), później wzrośnie — gdy wypita woda rozcieńczy osocze, wydzielanie ADH spadnie, a nadmiar soli i wody zostanie wydalony (1 pkt). Uznaj poprawne przewidywanie obu faz albo jednej fazy z poprawnym uzasadnieniem.
+:::
+:::
+
+::: karta exam | Zadanie 25 (4 pkt) — maraton w upale
+Biegacz startuje w maratonie w upalny, wilgotny i bezwietrzny dzień. Po dwóch godzinach jego temperatura wewnętrzna wzrosła z 36,8 °C do 38,9 °C, choć bardzo się poci. a) Rozpisz pięć elementów regulacji (bodziec, receptor, ośrodek, efektory, odpowiedź). b) Wyjaśnij, dlaczego mimo pocenia temperatura nadal rośnie. c) Podaj dwa warunki tego dnia, które nasilają przegrzanie, i jedno działanie organizatora, które je ogranicza.
+
+::: odp | Pokaż klucz
+a) Bodziec: wzrost temperatury ciała; receptory: termoreceptory skóry i podwzgórza; ośrodek: podwzgórze; efektory: naczynia krwionośne skóry, gruczoły potowe; odpowiedź: rozszerzenie naczyń i pocenie → oddawanie ciepła (2 pkt za komplet, 1 pkt za trzy–cztery poprawne elementy). b) Mięśnie wytwarzają ciepło szybciej, niż organizm je oddaje — w wilgotnym powietrzu bez wiatru pot słabo paruje, więc ujemne sprzężenie zwrotne nie nadąża (1 pkt). c) Np. wysoka wilgotność i brak wiatru (albo wysoka temperatura powietrza); działanie: wcześniejsza godzina startu, punkty z wodą, trasa w cieniu, kurtyny wodne (1 pkt).
+:::
+:::
+
+## 26 | Co dalej? {#dalej}
 
 - Krążenie jako transport ciepła, glukozy i hormonów — lekcja U04.
 - Układ dokrewny (hormony, przysadka, trzustka) — B2e; wydalanie i nerka — B2c; skóra — B2a; układ nerwowy i podwzgórze — B2d.
@@ -909,7 +960,7 @@ B (2 pkt za wskazanie i poprawne uzasadnienie; 1 pkt za samo wskazanie). Mniejsz
 
 **Nieprzyjęte:** kod „B2” z propozycji — lekcja dostała kod H01 w grupie BIO.07 (pkt IV podstawy: homeostaza); szkielet OLI B2 pozostaje jako materiał źródłowy.
 
-### AUDYT W1 — ULEPSZ, 4 modele AI (2026-10-11)
+### AUDYT W1 — ULEPSZ, 5 modeli AI (2026-10-11)
 
 Zapisy surowe: `biologia/plany/audyty/ULEPSZ_H01_<model>_2026-10-11.md`. Ranking automatyczny (`ocen_odpowiedzi.py`): model B 88,6 · GPT-6 87,7 · model A 28,0 · model D 20,4 (forma i kompletność). Bazą jest pełna wersja modelu B (zachowała wszystkie elementy, `porownaj_lekcje.py`: OK), uzupełniona o resztę.
 
@@ -918,3 +969,5 @@ Zapisy surowe: `biologia/plany/audyty/ULEPSZ_H01_<model>_2026-10-11.md`. Ranking
 **Poprawione względem propozycji:** „set point” → „wartość nastawiona” (polski termin); „powyżej 42 °C enzymy się denaturują” (model A) — nie przyjęto jako twardej granicy, w zadaniu 22 „znacznie powyżej ok. 40 °C (orientacyjnie)”; model D: P2 („po za dużej dawce”) i P3 („autoimmunizacyjna”) — w wersji bazowej już poprawione; data „2026-10-12” w stan — ujednolicona.
 
 **Nieprzyjęte:** odpowiedź modelu A odwoływała się do sekcji i liczników, których w lekcji nie ma („20 sekcji, 17 grafik, 53 KB”, „## 1 | Co to jest homeostaza {#co-to}”) — nie widziała pliku albo go nie przeczytała; przyjęto tylko treści sprawdzone i pasujące do lekcji. Propozycje nowych grafik (termostat, wykres utraty ciepła, pętla ADH, bilans wodny na wadze) — zapisane jako pomysły; wykres glukozy i pętla ADH są już w grafikach `glukoza-wykres` i `nefron` (U06). Uwaga GPT-6 „Informator CKE nie obejmuje egzaminu ósmoklasisty z biologii” — przyjęta jako wyjaśnienie: „E8” oznacza w kursie poziom klasy 7–8, nie osobny egzamin z biologii (do weryfikacji przy zmianach w egzaminie).
+
+**Model E (piąta odpowiedź, dosłana później):** przyjęto mini-wykład o regulacji oddechu i tabelę „pięć kratek” (§25), zadania 23–25 (mocz biegacza, słony posiłek, maraton w upale), 6 fiszek, 4 hasła słownika, ciekawostkę o aklimatyzacji i EPO (§23). **Poprawione względem propozycji:** „efektorem jest praca płuc, nie mięsień oddechowy” — odwrotnie: efektory to mięśnie oddechowe (przepona, międzyżebrowe), oddychanie to odpowiedź; chemoreceptory obwodowe nazwane (kłębki szyjne i aortalne); literówka „przewizja”; w zadaniu o maratonie dodano punktację częściową. **Nieprzyjęte:** karta o baroreceptorach — treść już w §20; dopisek o aldosteronie w §7 — już jest; fiszka „komórki α i β” — informacja już w fiszkach insuliny i glukagonu; fiszka „stałocieplny” — jest w słowniku; propozycje grafik `baroreceptor-petla` i `cieplo-drogi` — zapisane jako pomysły (pętla sprzężenia jest w `sprzezenie-zwrotne`).
