@@ -95,3 +95,4 @@
 - 2026-10-11: H01 homeostaza — scalone 4 odpowiedzi ULEPSZ (baza B, +GPT-6 §21–24, łatki D, z A tylko sprawdzone); W1 FULL; porownaj OK.
 - 2026-10-11: priorytet POL (przysłówek, przydawka, podstawy) i ANG (czasy); paczki --olimpiada (8 szt.), kolejka obejmuje angielski.
 - 2026-10-11: POL G07 przysłówek — odpowiedź ULEPSZ --olimpiada scalona (v4.0, 48 KB, W1 FULL); G12 urwane w §5 → nowa paczka POL_OLI1b_G12.
+- 2026-10-11: POL G12 części zdania — ULEPSZ --olimpiada scalone (v4.0, 58 KB, przydawka rozbudowana, W1 FULL).

@@ -582,7 +582,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (12 pl., 64 KB)
+## eksport  (12 pl., 63 KB)
 - `.gitignore` 0 KB
 - `JAK_WYSYLAC.md` 3 KB
 - `KOLEJKA_AI.md` 3 KB
@@ -797,8 +797,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L005.kajko_i_kokosz_rzeczownik.md` 23 KB
 - `POL.01.L006.akademia_pana_kleksa_czasownik.md` 30 KB
 
-## polski/plany/audyty  (19 pl., 250 KB)
+## polski/plany/audyty  (20 pl., 301 KB)
 - (zwinięte; `ls polski/plany/audyty`) — duże:
+- ⚠`ULEPSZ_OLI_G07_G12_2026-10-11.md` 52 KB
 - ⚠`W1_perplexity_G13_G15_2026-10-10.md` 54 KB
 - ⚠`W1_perplexity_G16_G17_S01-S06_G10_G11_2026-10-10.md` 106 KB
 
@@ -810,8 +811,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 555 KB)
-- (zwinięte; `ls polski/podstawy`)
+## polski/podstawy  (23 pl., 575 KB)
+- (zwinięte; `ls polski/podstawy`) — duże:
+- ⚠`POL.02.G12.czesci_zdania.md` 59 KB
 
 ## polski/szablon  (2 pl., 23 KB)
 - `POL_KATALOG_GRAFIK.md` 1 KB

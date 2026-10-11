@@ -3,14 +3,14 @@ kod: G12
 uid: POL.02.G12.czesci_zdania
 przedmiot: polski
 tytul: Części zdania
-kicker: G12 · GRAMATYKA — SKŁADNIA · MASTER v3.0
+kicker: G12 · GRAMATYKA — SKŁADNIA · MASTER v4.0
 lead: Podmiot, orzeczenie, przydawka, dopełnienie i okolicznik — jak je rozpoznać bez zgadywania, jak zadawać pytania od właściwego wyrazu i jak narysować wykres zdania. Najpierw rdzeń na egzamin ósmoklasisty, potem pułapki i poziom konkursowy.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — składnia zdania pojedynczego; powiązania: G13 (związki wyrazowe), G14 (zdanie pojedyncze), G01–G11 (części mowy), L008 (synteza)
-stan: PO W1 v3.1 — Perplexity, 2026-10-10; poprawki: konwencje sporne (podmiot logiczny, miara, bezokolicznik), definicje orzeczenia czasownikowego i dopełnienia, klucze
+stan: W1 FULL — model AI (paczka ULEPSZ --olimpiada POL_OLI1b), 2026-10-11; wcześniej W1 Perplexity 2026-10-10 (v3.1); scalenie i sprawdzenie Claude
 utworzono: 2026-10-09
-wersja: 3.1
-stopka: **JĘZYK POLSKI G12 v3.0 MASTER** · Części zdania · 2026
+wersja: 4.0
+stopka: **JĘZYK POLSKI G12 v4.0 MASTER** · Części zdania · 2026
 ---
 
 ::: minimum | Muszę umieć na E8 — 12 punktów
@@ -31,7 +31,7 @@ stopka: **JĘZYK POLSKI G12 v3.0 MASTER** · Części zdania · 2026
 ::: warstwy
 - e8 | <b>E8:</b> podmiot i orzeczenie, orzeczenie imienne, przydawka, dopełnienie, okolicznik; podmiot domyślny i zdanie bezpodmiotowe; rozbiór i wykres zdania pojedynczego
 - understand | <b>Rozumienie:</b> część mowy a część zdania; dopełnienie a okolicznik (wymaganie czasownika); przydawka w orzeczeniu imiennym; podmiot logiczny
-- exam | <b>Konkurs:</b> rodzaje okoliczników, przydawki dopełniaczowe i przyimkowe, wykres zdania rozwiniętego, przypadki sporne i zapis przyjętej analizy
+- exam | <b>Konkurs:</b> rodzaje okoliczników, przydawki dopełniaczowe i przyimkowe, przydawka wyrażona zdaniem, wykres zdania rozwiniętego, przypadki sporne i zapis przyjętej analizy
 :::
 
 ::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
@@ -40,6 +40,7 @@ stopka: **JĘZYK POLSKI G12 v3.0 MASTER** · Części zdania · 2026
 3. **[§3](#orzeczenie)–[§7](#okolicznik)** — pięć części zdania po kolei.
 4. **[§8](#trener)** — trener rozbioru: przećwicz na 12 zdaniach.
 5. **[§11](#klinika)** — klinika błędów, potem **[§12](#cwiczenia)** ćwiczenia A i B.
+6. **[§18](#olimpijska)** — warstwa olimpijska: zadania trudniejsze i konwencje sporne.
 :::
 
 ## 0.1 | Jak pracować z lekcją {#jak-pracowac}
@@ -179,21 +180,64 @@ W wielu podręcznikach połączenia typu *musisz odpocząć, chcę czytać, moż
 ## 5 | Przydawka [[basic:E8]] {#przydawka}
 
 ::: regula
-**Przydawka** określa **rzeczownik** (albo wyraz w funkcji rzeczownika). Pytania: **jaki? który? czyj? ile? z czego?** Może określać rzeczownik w każdej funkcji: podmiot, dopełnienie, okolicznik, orzecznik. Gdy określa orzecznik (*był **odważnym** harcerzem*), całe *był harcerzem* nadal rozpoznajemy osobno jako orzeczenie imienne.
+**Przydawka** określa **rzeczownik** (albo wyraz w funkcji rzeczownika). Pytania: **jaki? który? czyj? ile? z czego?** Może określać rzeczownik w każdej funkcji: podmiot, dopełnienie, okolicznik, orzecznik. Gdy określa orzecznik (*był **odważnym** harcerzem*), całe *był harcerzem* nadal rozpoznajemy osobno jako orzeczenie imienne. Przydawka jednowyrazowa to przydawka **nierozwinięta**, wielowyrazowa — **rozwinięta**.
 :::
 
-| Rodzaj przydawki | Czym wyrażona | Przykład |
-|---|---|---|
-| **przymiotna** | przymiotnik, imiesłów przymiotnikowy, zaimek przymiotny | **odważny** harcerz, **śpiący** pies, **mój** plecak |
-| **liczebna** | liczebnik | **trzy** zeszyty, **pierwszy** dzień |
-| **dopełniaczowa** (rzeczowna) | rzeczownik w dopełniaczu | opowieść **lisa**, dom **dziadka** |
-| **przyimkowa** | wyrażenie przyimkowe | sukienka **w kropki**, kubek **z porcelany**, droga **do szkoły** |
-| **rzeczowna w tym samym przypadku** — w wielu podręcznikach osobno jako **dopowiedzenie** | rzeczownik zgodny w przypadku z określanym (nazwa własna, tytuł) | rzeka **Wisła**, pies **Burek** |
+| Rodzaj przydawki | Czym wyrażona | Pytanie | Przykład |
+|---|---|---|---|
+| **przymiotna** | przymiotnik, imiesłów przymiotnikowy | jaki? która? które? | **odważny** harcerz, **śpiący** pies, **zimna** noc |
+| **zaimkowa** | zaimek przymiotny | czyj? jaki? | **mój** plecak, **ta** książka, **każdy** dzień |
+| **liczebna** | liczebnik główny lub porządkowy | ile? który z kolei? | **trzy** zeszyty, **pierwszy** dzień |
+| **rzeczowna dopełniaczowa** | rzeczownik w dopełniaczu | czyj? | opowieść **lisa**, dom **dziadka**, piętro **budynku** |
+| **rzeczowna — dopowiedzenie** | rzeczownik zgodny w przypadku z określanym (nazwa własna, tytuł) | jaki dokładnie? kto dokładnie? | rzeka **Wisła**, pies **Burek**, powieść **„Krzyżacy”** |
+| **rzeczowna przyimkowa** | wyrażenie przyimkowe | jaki? z czego? o czym? | sukienka **w kropki**, kubek **z porcelany**, droga **do szkoły**, album **o wulkanach** |
+| **wyrażona zdaniem** (konkurs) | zdanie podrzędne przydawcze | jaki? który? | czytelnik, **który kocha mapy**; dom, **który stał na wzgórzu** |
+
+::: karta basic | Konwencje w podręcznikach
+Podziały rodzajów przydawki różnią się między seriami podręczników. Układ A: dwie wielkie klasy — **przymiotna** i **rzeczowna** (z podtypami: dopełniaczowa, przyimkowa, dopowiedzenie). Układ B: lista równorzędnych rodzajów (przymiotna, zaimkowa, liczebna, dopełniaczowa, przyimkowa, dopowiedzenie…); część podręczników wlicza zaimek przymiotny do przydawki przymiotnej. W zadaniu **stosuj podział z podręcznika lub polecenia** i nazwij go. [DO WERYFIKACJI w podręczniku szkoły]
+:::
 
 ::: karta understand | Ta sama forma — inna funkcja
 *Kubek **z porcelany** stoi na półce.* → kubek z czego? → **przydawka** (określa rzeczownik *kubek*).
 *Zrobiono go **z porcelany**.* → zrobiono z czego? → **dopełnienie** (uzupełnia czasownik).
 Rozstrzyga **wyraz nadrzędny**: rzeczownik → przydawka, czasownik → dopełnienie albo okolicznik.
+:::
+
+::: nie-myl
+**Przydawka ≠ dopełnienie.** *Portret **matki*** — czyj portret? → przydawka dopełniaczowa (określa rzeczownik *portret*). *Zawołałem **matkę*** — kogo? → dopełnienie (uzupełnia czasownik). Pułapka: *szukam **matki*** — szukać kogo? czego? → **dopełnienie** w dopełniaczu, choć forma brzmi tak jak przy przydawce. Test rozstrzygający: znajdź wyraz nadrzędny — rzeczownik → przydawka; czasownik (przymiotnik, przysłówek) → dopełnienie.
+:::
+
+::: nie-myl
+**Przydawka ≠ orzecznik.** ***Dumna** Ola wróciła.* — *dumna* to przydawka (Ola jaka?). *Ola **jest dumna**.* — *dumna* to orzecznik, część orzeczenia imiennego *jest dumna*. Test: czy przed wyrazem stoi łącznik (*jest, zostało, stał się*)? Jeśli tak — orzecznik; jeśli wyraz stoi bezpośrednio przy rzeczowniku — przydawka.
+:::
+
+::: karta understand | Jak szukać przydawki — 3 kroki
+1. Znajdź wszystkie **rzeczowniki** w zdaniu (podmiot, dopełnienia, okoliczniki, orzeczniki).
+2. Od każdego zapytaj ***jaki? która? czyj? ile? z czego?*** — odpowiedź to przydawka.
+3. Zabezpiecz się przed pomyłką: jeśli wyraz odpowiada raczej na pytanie od czasownika (*kogo? co? gdzie? kiedy?*), to nie przydawka — to dopełnienie albo okolicznik.
+Uwaga na **łańcuchy**: przydawka może mieć swoją przydawkę — *dziadka **z Podhala*** (z Podhala — czyj dziadek?) oraz *książkę **o wulkanach*** (o wulkanach — jaką książkę?).
+:::
+
+::: karta understand | W skrócie — przydawka w orzeczeniu imiennym
+Gdy rzeczownik jest orzecznikiem, jego przydawka bywa „ukryta” przy orzeczeniu: *Został **uczciwym** sędzią.* Orzeczeniem imiennym jest *został sędzią*, a *uczciwym* — przydawka określająca orzecznik (sędzią jakim?). Test: zapytaj od orzecznika — *sędzią jakim?* → *uczciwym*; pytanie idzie od rzeczownika, więc to przydawka, a nie druga część orzeczenia. Na wykresie orzecznik stoi w kratce orzeczenia, a jego przydawka wisi na kresce z pytaniem *jakim?* (konwencja z §9–§10).
+:::
+
+::: karta exam | Zadanie P1 (2 pkt) — Rodzaje przydawki
+Nazwij rodzaj przydawki: *a)* **trzeci** dzwonek, *b)* ulubieniec **klasy**, *c)* opaska **w grochy**, *d)* **nasz** trener.
+::: odp | Pokaż klucz
+a) liczebna; b) dopełniaczowa; c) przyimkowa; d) zaimkowa (po 0,5 pkt).
+:::
+:::
+
+::: karta exam | Zadanie P2 (3 pkt) — Ten sam wyraz, dwie funkcje
+Wyjaśnij, dlaczego wyraz *matki* ma inną funkcję w zdaniach: *a) Na ścianie wisi portret matki.* *b) Nie widziałem matki od tygodnia.* Wskaż wyraz nadrzędny i pytanie.
+::: odp | Pokaż klucz
+a) przydawka dopełniaczowa — określa rzeczownik *portret* (portret czyj?); b) dopełnienie — uzupełnia czasownik *nie widziałem* (nie widziałem kogo?; biernik przechodzi w dopełniacz po zaprzeczeniu); po 1 pkt za funkcje, 1 pkt za wskazanie wyrazu nadrzędnego i pytania w obu zdaniach.
+:::
+:::
+
+::: karta extra | Przydawki mają kolejność — po angielsku
+Po polsku kolejność przydawek jest swobodniejsza, ale też ma naturalny porządek: cechy oceniające i opisowe stoją dalej, a przydawki „gatunkujące” (nazywające rodzaj rzeczy) — tuż przy rzeczowniku, często po nim: *nowa szkoła podstawowa*, nie *podstawowa nowa szkoła*; *kwas siarkowy*, *biały niedźwiedź polarny*. Po angielsku porządek jest twardy: opinia – wielkość – wiek – kształt – kolor – pochodzenie – materiał – przeznaczenie (*a lovely little old round red Italian wooden serving table*); złamanie tej kolejności brzmi jak błąd. Językoznawcy tłumaczą to „przyklejaniem” cech bardziej obiektywnych bliżej rzeczownika. (Źródło: Cambridge Dictionary, hasło „Adjectives: order”; akronim skrócony bywa podawany w drobnych wariantach — orientacyjnie.)
 :::
 
 ## 6 | Dopełnienie [[basic:E8]] {#dopelnienie}
@@ -234,13 +278,17 @@ W zdaniu *Dałem **siostrze** (komu?) **prezent** (co?)* są dwa dopełnienia. W
 | **czasu** | kiedy? od kiedy? do kiedy? jak długo? jak często? | **Wieczorem** zapalił latarnię. Czekał **dwie godziny**. |
 | **sposobu** | jak? w jaki sposób? | Mały Książę słuchał **uważnie**. |
 | **przyczyny** | dlaczego? z jakiego powodu? | Płakała **ze wzruszenia**. Spóźnił się **przez korki**. |
-| **celu** | po co? w jakim celu? | Poszedł **po chleb**. Przyjechał **zwiedzać** (bezokolicznik — w przyjętej konwencji). |
+| **celu** | po co? w jakim celu? | Poszedł **po chleb**. Przyjechał **zwiedzać** (bezokolicznik; część podręczników analizuje takie połączenie jako orzeczenie złożone — zapisz przyjętą konwencję, por. §12 C3). |
 | **stopnia i miary** | w jakim stopniu? ile? | Bilbo **bardzo** się bał. Ważył **dwa kilogramy** (przypadek sporny: część podręczników — dopełnienie). |
 | **warunku** [[exam:KONKURS]] | pod jakim warunkiem? | **W razie deszczu** zostaniemy w domu. |
 | **przyzwolenia** [[exam:KONKURS]] | mimo czego? | **Mimo zmęczenia** dokończył pracę. |
 
 ::: karta warning | Okolicznik nie musi być przysłówkiem
 Okolicznikiem bywa przysłówek (*szybko*), wyrażenie przyimkowe (*w lesie*), rzeczownik w narzędniku lub bierniku (*wieczorem, całą noc*), a nawet bezokolicznik (*poszedł spać*). Zawsze pytaj od orzeczenia.
+:::
+
+::: karta understand | W skrócie — jak nazwać okolicznik bez wahania
+Rodzaj okolicznika czytasz z pytania, które mu zadałeś: *gdzie? dokąd? skąd?* → miejsca; *kiedy? jak długo? jak często?* → czasu; *jak?* → sposobu; *dlaczego? z jakiego powodu?* → przyczyny; *po co? w jakim celu?* → celu; *w jakim stopniu? ile?* → stopnia i miary; *pod jakim warunkiem?* → warunku; *mimo czego?* → przyzwolenia. Jeśli wahasz się między przyczyną a przyzwoleniem, zerknij na wyraz-podpowiedź: *z powodu, przez* → przyczyna; *mimo, pomimo* → przyzwolenie.
 :::
 
 ## 8 | Trener rozbioru [[basic:E8]] {#trener}
@@ -281,7 +329,7 @@ Wszystkie zdania w tabeli to **parafrazy** sytuacji z lektur, nie cytaty — uł
 | *Nie było Nemeczka na Placu Broni.* („Chłopcy z Placu Broni”) | *nie było* — orzeczenie; *Nemeczka* — podmiot logiczny (tradycyjna analiza szkolna); *na Placu Broni* — okolicznik miejsca |
 | *Bilbo bardzo bał się smoka.* („Hobbit”) | *bał się* — orzeczenie; *Bilbo* — podmiot; *bardzo* — okolicznik stopnia; *smoka* — dopełnienie |
 | *Hrabia rozmawiał z Telimeną o sztuce.* („Pan Tadeusz”) | *rozmawiał* — orzeczenie; *Hrabia* — podmiot; *z Telimeną*, *o sztuce* — dopełnienia |
-| *Rudy był odważnym harcerzem.* („Kamienie na szaniec”) | *był harcerzem* — orzeczenie imienne; *Rudy* — podmiot; *odważnym* — przydawka |
+| *Rudy był odważnym harcerzem.* („Kamienie na szaniec”) | *był harcerzem* — orzeczenie imienne; *Rudy* — podmiot; *odważnym* — przydawka (do orzecznika *harcerzem*) |
 | *Nad Soplicowem zmierzchało.* („Pan Tadeusz”) | *zmierzchało* — orzeczenie; zdanie bezpodmiotowe; *nad Soplicowem* — okolicznik miejsca |
 
 ## 11 | Klinika błędów {#klinika}
@@ -295,6 +343,9 @@ Wszystkie zdania w tabeli to **parafrazy** sytuacji z lektur, nie cytaty — uł
 | „*Książkę* to podmiot, bo to rzeczownik.” | *książkę* — dopełnienie (czytam co?). | Podmiot jest zwykle w mianowniku; o funkcji decyduje pytanie, nie część mowy. |
 | „*Dom dziadka* — *dziadka* to dopełnienie (kogo?).” | przydawka dopełniaczowa (dom czyj?). | Określa rzeczownik *dom*, a nie czasownik. |
 | „*Marek jest w domu* — orzeczenie imienne *jest w domu*.” | *jest* — orzeczenie czasownikowe; *w domu* — okolicznik miejsca. | *Być* znaczy tu „przebywać”; pytamy *gdzie?*, a nie *jaki jest?* |
+| „*Sukienka w kropki* — *w kropki* to okolicznik.” | przydawka przyimkowa (sukienka jaka?). | Określa rzeczownik *sukienka*, a nie czasownik; wyrażenia przyimkowe bywają przydawkami. |
+| „*Czytam książkę o smoku* — *o smoku* to dopełnienie (czytam o czym?).” | przydawka przyimkowa (książkę o czym?). | Wyraz nadrzędny grupy *o smoku* to *książkę*, nie *czytam*; pytanie od czasownika prowadzi tu na manowce — sprawdź, czego dotyczy wyrażenie. |
+| „*Bilbo został mądrym przywódcą* — orzecznikiem jest *mądrym przywódcą*.” | orzecznikiem jest *przywódcą*; *mądrym* — przydawka do orzecznika. | Orzecznik nazywa tożsamość podmiotu (kim został?); przymiotnik określa orzecznik, ale w przyjętej konwencji nie wchodzi do orzeczenia (por. §10, wiersz o Rudym). |
 :::
 
 ## 12 | Ćwiczenia {#cwiczenia}
@@ -336,12 +387,14 @@ Wszystkie zdania w tabeli to **parafrazy** sytuacji z lektur, nie cytaty — uł
 2. Czy w zdaniu *Marii zabrakło czasu* wyraz *Marii* jest podmiotem? Uzasadnij.
 3. Określ funkcję bezokolicznika: *a)* Poszedł **spać**. *b)* **Palić** szkodzi. *c)* Lubię **czytać**.
 4. Podaj przykład zdania, w którym rzeczownik w narzędniku jest *a)* dopełnieniem, *b)* okolicznikiem, *c)* częścią orzeczenia imiennego.
+5. W zdaniu *List od babci z Warszawy leżał na biurku* wyznacz przydawki, podaj ich rodzaje i rozstrzygnij, od którego rzeczownika zależy *z Warszawy*.
 
 ::: odp | Pokaż odpowiedzi
 1. *szli* — orzeczenie; *harcerze* — podmiot; *z drużyny* — przydawka (harcerze z jakiej drużyny?); *Rudego* — przydawka dopełniaczowa (drużyny czyjej?); *mimo zmęczenia* — okolicznik przyzwolenia; *całą noc* — okolicznik czasu (jak długo?); *całą* — przydawka; *przez las* — okolicznik miejsca (którędy?).
 2. Nie. W tradycyjnej analizie szkolnej podmiotem logicznym jest *czasu* — por. *Czas się skończył*; *Marii* — dopełnienie w celowniku (zabrakło komu?). W części opisów zdanie jest bezpodmiotowe, a *czasu* — dopełnieniem; w odpowiedzi podaj przyjętą konwencję.
 3. *a)* okolicznik celu (po co?); *b)* podmiot (co szkodzi?); *c)* dopełnienie (lubię co?) — albo część orzeczenia złożonego, zależnie od przyjętej konwencji (zob. §3). Przy *a)* i *c)* wymagaj od ucznia nazwania konwencji.
 4. *a)* Interesuję się **muzyką**. *b)* Szedł **lasem**. / Wrócił **wieczorem**. *c)* Został **lekarzem**.
+5. *od babci* — przydawka przyimkowa (list od kogo?); *z Warszawy* — przydawka przyimkowa określająca *babci* (babci z jakiego miejsca? skąd?), nie *list*; *na biurku* — okolicznik miejsca (leżał gdzie?); łańcuch przydawek: każda określa wyraz przed sobą (1 pkt za rodzaje, 1 pkt za rozstrzygnięcie łańcucha).
 :::
 :::
 
@@ -364,6 +417,13 @@ Wyjaśnij, dlaczego w zdaniu *Czekałem na przyjaciela przed kinem* wyrażenia *
 **Zad. 1:** C. — 1 pkt.
 **Zad. 2:** *została laureatką* — orzeczenie imienne (1 pkt za wypisanie całego orzeczenia i nazwę rodzaju); *siostra* — podmiot (1 pkt). Wypisanie samego *została* — 0 pkt za orzeczenie. Wyraz *konkursu* (przydawka do *laureatką*) nie jest wymagany.
 **Zad. 3:** 2 pkt — *na przyjaciela* to dopełnienie, bo czasownik *czekać* wymaga dopełnienia (*na kogo?*), a *przed kinem* to okolicznik miejsca (*gdzie?*), określa okoliczność. 1 pkt — poprawne nazwy bez uzasadnienia albo uzasadnienie tylko jednego wyrażenia.
+:::
+
+::: karta exam | Zadanie 4 (0–2) — Przydawki w zdaniu
+W zdaniu *Młodszy brat koleżanki z klasy kupił album o wulkanach* wskaż dwie przydawki, nazwij ich rodzaj i podaj, który rzeczownik każda określa.
+::: odp | Pokaż klucz
+Dostępne przydawki: *młodszy* → *brat* (przymiotna); *koleżanki* → *brat* (dopełniaczowa); *z klasy* → *koleżanki* (przyimkowa); *o wulkanach* → *album* (przyimkowa). 2 pkt — dwie poprawne przydawki z rodzajem i rzeczownikiem; 1 pkt — jedna poprawna lub dwie bez rodzajów.
+:::
 :::
 
 ## 14 | Test {#test}
@@ -422,6 +482,34 @@ Wyjaśnij, dlaczego w zdaniu *Czekałem na przyjaciela przed kinem* wyrażenia *
 - przyczyny
 + przyzwolenia
 - warunku
+
+? (konkurs) W wyrażeniu „czytelnik, który kocha mapy” ciąg „który kocha mapy” to:
++ przydawka wyrażona zdaniem (zdanie podrzędne przydawcze)
+- okolicznik
+- orzeczenie
+- dopełnienie
+! Odpowiada na pytanie „czytelnik jaki?” i zastępuje zwykłą przydawkę — czytelnik **mapolubny**.
+
+? (konkurs) W wyrażeniu „dom naprzeciwko szkoły” ciąg „naprzeciwko szkoły” to:
++ przydawka przyimkowa (dom jaki? który?)
+- okolicznik miejsca
+- dopełnienie
+- orzecznik
+! Określa rzeczownik „dom”, nie czasownik — pytanie pada od rzeczownika.
+
+? (konkurs) Które wyrażenie zawiera przydawkę dopełniaczową?
++ dom ojca
+- dom w górach
+- trzy domy
+- dom rodzinny
+! „Dom ojca” — dom czyj? (ojca kogo? czego?); „w górach” — przyimkowa, „trzy” — liczebna, „rodzinny” — przymiotna.
+
+? (konkurs) W zdaniu „Bilbo został mądrym przywódcą” orzecznikiem jest:
++ przywódcą
+- mądrym przywódcą
+- mądrym
+- został mądrym
+! Orzecznik nazywa tożsamość podmiotu (kim został?); „mądrym” — przydawka do orzecznika, a całe „został mądrym przywódcą” — orzeczenie imienne.
 :::
 
 ## 14a | Poszerzenie horyzontu {#horyzont}
@@ -430,6 +518,10 @@ Wyjaśnij, dlaczego w zdaniu *Czekałem na przyjaciela przed kinem* wyrażenia *
 - **Skąd te nazwy?** *Podmiot* i *orzeczenie* to kalki z łaciny: *subiectum* („to, co podłożone” — o czym mówimy) i *praedicatum* („to, co orzeczone” — co o tym mówimy).
 - **Polski ↔ angielski:** po angielsku podmiot musi być w zdaniu (*It is raining*, *I am reading*). Po polsku wystarczy *Pada.* i *Czytam.* — końcówka czasownika „zdradza” osobę, dlatego mamy **podmiot domyślny** i zdania bezpodmiotowe.
 - **Wykres zdania** to szkolny wynalazek, ale ten sam pomysł — drzewo zależności między wyrazami — wykorzystują programy tłumaczące teksty i asystenci głosowi, żeby „zrozumieć”, kto co komu zrobił.
+:::
+
+::: karta extra | Skąd „okolicznik”?
+Słowa *okoliczność* i *okolicznik* to kalka łacińskiego *circumstantia* — złożenia *circum* („dokoła”) i *stare* („stać”): okoliczności czynności dosłownie „stoją wokół” czasownika. Ta sama metafora działa dziś w informatyce — kontekst (czyli „okolice”) wyrazu decyduje o jego znaczeniu w tłumaczeniu maszynowym. (Źródło: W. Boryś, „Słownik etymologiczny języka polskiego”; szczegóły drogi zapożyczenia — orientacyjnie.)
 :::
 
 ## 15 | Fiszki {#fiszki}
@@ -448,6 +540,12 @@ Podkreślenia (umowne, mogą się różnić w podręcznikach) | podmiot — jedn
 Czekam na autobus | „na autobus” — dopełnienie (czekać tego wymaga) | understand:rozumienie
 Podmiot logiczny | tradycyjna analiza szkolna: dopełniacz przy zaprzeczonym „być”: Nie było Jacka | understand:rozumienie
 Okolicznik przyzwolenia | mimo czego? — Mimo zmęczenia… | extra:konkurs
+Przydawka wyrażona zdaniem | zdanie podrzędne przydawcze: czytelnik, który kocha mapy | olimpijski:skladnia
+Dopowiedzenie | przydawka rzeczowna w tym samym przypadku: rzeka Wisła, pies Burek | olimpijski:skladnia
+Przydawka do orzecznika | określa orzecznik w orzeczeniu imiennym: został uczciwym sędzią | olimpijski:skladnia
+Dopełnienie bliższe | w bierniku: czytam książkę | olimpijski:skladnia
+Dopełnienie dalsze | w innym przypadku zależnym: dałem siostrze prezent | olimpijski:skladnia
+Okolicznik warunku | pod jakim warunkiem? — W razie deszczu zostaniemy w domu | olimpijski:skladnia
 :::
 
 ## 16 | Słownik {#slownik}
@@ -463,15 +561,95 @@ Przydawka :: określenie rzeczownika
 Dopełnienie :: określenie czasownika uzupełniające jego znaczenie, w przypadku zależnym
 Okolicznik :: określenie wskazujące okoliczności czynności lub stanu
 Wyraz nadrzędny :: wyraz, od którego zależy inny wyraz i od którego zadajemy pytanie
+Przydawka przymiotna :: przydawka wyrażona przymiotnikiem lub imiesłowem przymiotnikowym (odważny harcerz, śpiący pies)
+Przydawka dopełniaczowa :: przydawka rzeczowna wyrażona rzeczownikiem w dopełniaczu (dom dziadka)
+Dopowiedzenie :: przydawka rzeczowna w tym samym przypadku co określany wyraz, zwykle nazwa własna lub tytuł (rzeka Wisła)
+Okolicznik przyczyny :: okolicznik odpowiadający na pytania dlaczego? z jakiego powodu? (płakała ze wzruszenia)
+Zdanie podrzędne przydawcze :: zdanie zależne pełniące funkcję przydawki (dom, który stał na wzgórzu) — poziom konkursowy
 :::
 
 ## 17 | Ściąga {#sciaga}
 
 ::: karta core | Na jednej karteczce
 **Kolejność:** orzeczenie → podmiot → określenia orzeczenia → określenia rzeczowników.
-**Pytania:** podmiot *kto? co?* · orzeczenie *co robi? co się z nim dzieje? jaki jest? kim jest?* · przydawka *jaki? czyj? ile?* · dopełnienie *kogo? czego? komu? o czym?* · okolicznik *gdzie? kiedy? jak? dlaczego? po co?*
-**Pułapki:** orzeczenie imienne = łącznik + orzecznik · *czekam na autobus* = dopełnienie · *dom dziadka* = przydawka · *Idę.* = podmiot domyślny · *Grzmi.* = zdanie bezpodmiotowe.
+**Pytania:** podmiot *kto? co?* · orzeczenie *co robi? co się z nim dzieje? jaki jest? kim jest?* · przydawka *jaki? który? czyj? ile? z czego?* · dopełnienie — pytania przypadków zależnych (*kogo? czego? komu? czemu? kim? czym? o kim? o czym?*) · okolicznik *gdzie? kiedy? jak? dlaczego? po co? w jakim stopniu? mimo czego? pod jakim warunkiem?*
+**Pułapki:** *na autobus* — dopełnienie (wymóg czasownika) · *nie było Jacka* — podmiot logiczny w tradycyjnej analizie szkolnej · *jest czarny* — orzecznik, nie przydawka · przydawka do orzecznika (*został uczciwym sędzią*) pozostaje przydawką · orzeczenie imienne = łącznik + orzecznik · *dom dziadka* = przydawka · *Idę.* = podmiot domyślny · *Grzmi.* = zdanie bezpodmiotowe.
+**Podkreślenia:** podmiot — jedna linia · orzeczenie — dwie linie · przydawka — falista · dopełnienie — przerywana · okolicznik — kreska i kropka.
 **Dalej:** G13 — związki wyrazowe · G14 — zdanie pojedyncze i równoważnik zdania.
+:::
+
+## 18 | Warstwa olimpijska — składnia na konkurs {#olimpijska} [[exam:KONKURS]]
+
+::: karta understand | Dla olimpijczyka — granice kategorii składniowych
+Na konkursach sprawdza się trzy rzeczy, których nie ma w podręczniku E8. **Po pierwsze, łańcuchy określeń:** przydawka może zależeć od innej przydawki (*kufr **dziadka** **z Podhala*** — *z Podhala* określa *dziadka*, nie *kufr*), a dopełnienie może mieć przydawkę mającą swoją przydawkę. **Po drugie, konwencje sporne:** orzeczenie z bezokolicznikiem (*musisz uczyć się*), podmiot logiczny, okolicznik miary (*ważył dwa kilogramy*) i bezokolicznik po czasowniku ruchu (*poszedł spać*) bywają klasyfikowane różnie — w rozwiązaniu zawsze **zapisz przyjętą konwencję** i uzasadnij ją funkcją wyrazu. **Po trzecie, przydawka wyrażona zdaniem:** zdanie podrzędne przydawcze (*dom, który stał na wzgórzu*) pełni funkcję przydawki; łatwo je przekształcić w przydawkę zwykłą (*dom na wzgórzu*) — i odwrotnie. Pytanie od właściwego wyrazu nadrzędnego rozstrzyga niemal każdą wątpliwość. (Źródła: gramatyki akademickie, m.in. Saloni–Świdziński, „Składnia współczesnego języka polskiego”; Grzegorczykowa i in.; szczegóły klasyfikacji spornych — do weryfikacji z wymaganiami konkursu.)
+:::
+
+::: adv | Zadanie K1 (3 pkt) — Przekształcanie | poziom ambitny
+Przekształć zdanie tak, aby zamiast zdania podrzędnego przydawczego stanęła przydawka zwykła: *Dom, który stał na wzgórzu, był stary.* Nazwij rodzaj nowej przydawki i uzasadnij pytaniem.
+::: odp | Pokaż klucz
+Np. *Dom na wzgórzu był stary.* (1 pkt); *na wzgórzu* — przydawka przyimkowa (1 pkt); uzasadnienie pytaniem od rzeczownika: dom jaki?/który? (1 pkt).
+:::
+:::
+
+::: adv | Zadanie K2 (3 pkt) — Rozstrzygnięcie funkcji | poziom ambitny
+Określ funkcję wyrazu *matki* w zdaniach: *a) Na ścianie wisi obraz matki.* *b) Zabrakło matki na zebraniu.* Podaj wyraz nadrzędny i pytanie; jeśli rozbieżność wynika z konwencji — nazwij ją.
+::: odp | Pokaż klucz
+a) przydawka dopełniaczowa — obraz czyj? (wyraz nadrzędny *obraz*); b) w tradycyjnej analizie szkolnej *matki* przy *zabrakło* bywa traktowane różnie: część opisów widzi tu dopełnienie (zabrakło kogo?), część — konstrukcję z podmiotem logicznym *matki* (por. *Matka zabrakła* — bezpodmiotowe nie jest) i dopełnieniem *na zebraniu*… — w przyjętym u nas rozbiorniku: *matki* — podmiot logiczny (tradycja szkolna) albo dopełnienie (opisy współczesne), *na zebraniu* — okolicznik miejsca; po 1 pkt za funkcje w obu zdaniach, 1 pkt za nazwanie konwencji. [DO WERYFIKACJI z konwencją szkoły]
+:::
+:::
+
+::: adv | Zadanie K3 (2 pkt) — Znajdź błąd w rozbiorze | poziom ambitny
+Uczeń zanalizował zdanie: *Stary latarnik o miedzianych guzikach czytał książkę o Morzu Południowym.* — i wskazał *o Morzu Południowym* jako dopełnienie („czytał o czym?”). Popraw błąd i uzasadnij.
+::: odp | Pokaż klucz
+*o Morzu Południowym* — przydawka przyimkowa określająca rzeczownik *książkę* (książkę o czym?); dopełnieniem jest *książkę* (czytał co?) (1 pkt za poprawę, 1 pkt za uzasadnienie wyrazem nadrzędnym). Pułapka: pytanie „czytał o Morzu?” brzmi naturalnie, ale grupa *o Morzu Południowym* należy do grupy rzeczownika *książkę* — dlatego pytanie zadajemy do całości grupy od jej wyrazu głównego.
+:::
+:::
+
+::: adv | Zadanie K4 (4 pkt) — Analiza tekstu z łańcuchem przydawek | poziom ambitny
+Przeanalizuj zdanie: *W starym kufrze dziadka z Podhala znalazłem mapę szlaków górskich.* Wskaż wszystkie części zdania i nazwij rodzaje przydawek; rozstrzygnij, od którego rzeczownika zależy *z Podhala*.
+::: odp | Pokaż klucz
+*znalazłem* — orzeczenie; podmiot domyślny *ja* (1 pkt); *w kufrze* — okolicznik miejsca; *starym* — przydawka przymiotna (do *kufrze*); *dziadka* — przydawka dopełniaczowa (do *kufrze*); *z Podhala* — przydawka przyimkowa (do *dziadka*, nie do *kufr*); *mapę* — dopełnienie; *szlaków* — przydawka dopełniaczowa (do *mapę*); *górskich* — przydawka przymiotna (do *szlaków*) (3 pkt za pozostałe części i rodzaje — po 0,5 pkt; przy błędzie w łańcuchu odejmij 0,5 pkt).
+:::
+:::
+
+::: adv | Zadanie K5 (2 pkt) — Zadanie z pułapką: podmiot | poziom ambitny
+Który wyraz jest podmiotem w zdaniu *Powrót z wakacji zadowolił rodziców*? Uzasadnij i nazwij funkcje pozostałych określeń.
+::: odp | Pokaż klucz
+*Powrót* — podmiot (co zadowoliło?; orzeczenie *zadowolił* zgadza się z mianownikiem *powrót*) (1 pkt); *z wakacji* — przydawka przyimkowa do *powrót* (powrót z czego?); *rodziców* — dopełnienie (zadowolił kogo?) (1 pkt). Pułapka: uczniowie wskazują *wakacji* lub *rodziców*, bo są bliżej czasownika.
+:::
+:::
+
+::: adv | Zadanie K6 (3 pkt) — Konwencja: orzeczenie z bezokolicznikiem | poziom ambitny
+Wyznacz orzeczenie w zdaniu *Musisz uczyć się składni* i zapisz, którą konwencję przyjmujesz. Wyjaśnij, co zmienia wybór konwencji w dalszym rozbiorze.
+::: odp | Pokaż klucz
+Konwencja A (częstsza w podręcznikach): orzeczenie czasownikowe złożone *musisz uczyć się* — wtedy *składni* to dopełnienie (uczyć się czego?). Konwencja B (część opracowań): *musisz* — orzeczenie, a *uczyć się* — dopełnienie przy modalnym, wtedy *składni* bywa dopełnieniem drugiego stopnia zależności; przy *B* rozbór grupy jest głębszy. 2 pkt za poprawne wyznaczenie w przyjętej konwencji, 1 pkt za nazwanie konwencji i skutek dla rozbioru (por. §3). [DO WERYFIKACJI z podręcznikiem szkoły]
+:::
+:::
+
+## 19 | Mnemotechniki {#mnemo}
+
+::: wskazowki
+Kolejność analizy: „Orzeczenie Pierwsze, Reszta Potem” — nigdy nie zaczynaj od rzeczownika.
+Podkreślenia: „1-2-FALA-KRESKA DZIAWOWANA-KRESKA Z KROPKĄ” — podmiot ma jedną linię, orzeczenie dwie (bo najważniejsze), przydawka „faluje” przy rzeczowniku, dopełnienie jest przerywane jak pytania przypadków, okolicznik — kreska z kropką, jak ślad kroku w okolicznościach.
+Pytania a rodzaje przydawek: JAKI → przymiotna; CZYJ → dopełniaczowa; ILE → liczebna; Z CZEGO / O CZYM / W CZYM → przyimkowa; KTO DOKŁADNIE po rzeczowniku → dopowiedzenie.
+Test wymagania: „czasownik głodny” — jeśli bez dopowiedzenia zdanie jest niepełne (*czekam… na co?*), czasownik jest głodny — dokarm go dopełnieniem; okoliczność to tylko przekąska (*na przystanku* — można pominąć).
+Przydawka czy okolicznik: „RZECZOWNIK — FALA, CZASOWNIK — KRESKA” — pytanie od rzeczownika daje przydawkę, od czasownika okolicznik lub dopełnienie.
+Podmiot logiczny: „odwróć i sprawdź” — *Nie było Jacka* = *Jacek nie był*; w zdaniu twierdzącym podmiot wraca do mianownika.
+Orzeczenie imienne: „łącznik + odpowiedź o podmiocie” — jeśli po *jest/został/stał się* stoi odpowiedź na *jaki? kim?*, całość to jedno orzeczenie.
+Dopowiedzenie: „dwa imiona jednej rzeczy” — *rzeka Wisła*.
+:::
+
+## 20 | Samokontrola {#samokontrola}
+
+::: checklista
+- [ ] Zaczynam rozbiór od orzeczenia i zadaję pytania od wyrazu nadrzędnego.
+- [ ] Odróżniam orzeczenie czasownikowe od imiennego (łącznik + orzecznik).
+- [ ] Rozpoznaję podmiot domyślny, zdanie bezpodmiotowe i podmiot logiczny (z konwencją).
+- [ ] Wymieniam rodzaje przydawki i wskazuję przydawkę do orzecznika.
+- [ ] Rozstrzygam dopełnienie i okolicznik testem wymagania czasownika.
+- [ ] Nazywam wszystkie rodzaje okoliczników, także warunku i przyzwolenia.
+- [ ] Rysuję wykres zdania rozwiniętego z pytaniami na kreskach.
+- [ ] W przypadkach spornych zapisuję przyjętą konwencję (poziom olimpijski).
 :::
 
 ## Status kontroli {#kontrola}
@@ -492,3 +670,13 @@ Wyraz nadrzędny :: wyraz, od którego zależy inny wyraz i od którego zadajemy
 - Druga odpowiedź Perplexity: dodano rozróżnienie zdanie bezpodmiotowe / równoważnik zdania (§4). Uwaga o „w” w trenerze dotyczyła zapisu eksportu — w trenerze „w zimnym kantorze” jest jedną grupą.
 - Nieprzyjęte: uwaga do §12 A zad. 2 (klucz był już pełny).
 - Sprawdzenie zaległych uwag (2026-10-10): „zakres E8 — oznaczyć konsekwentnie” — wykres zdania pojedynczego zostaje w warstwie E8/rozumienie (jest w wymaganiach egzaminu ósmoklasisty); konkursowe są oznaczone: dopełnienie bliższe/dalsze, okoliczniki warunku i przyzwolenia, przypadki sporne. Czasownik modalny — konwencja „orzeczenie czasownikowe złożone” już w §3.
+
+### AUDYT W1 — ULEPSZ z warstwą olimpijską (v3.1 → 4.0, 2026-10-11)
+Surowa odpowiedź: `polski/plany/audyty/ULEPSZ_OLI_G12_2026-10-11.md` (paczka `AI_ULEPSZ_POL_OLI1b_G12`; pierwsza paczka POL_OLI1 urwała się w §5). Model widział plik do połowy §17 — sekcji „Status kontroli” nie oceniał (to tylko rejestr audytów).
+
+**Przyjęte:** mocna rozbudowa §5 Przydawka (rodzaje: przymiotna, zaimkowa, liczebna, rzeczowna, dopełniaczowa, przyimkowa, wyrażona zdaniem; przydawka rozwinięta/nierozwinięta; przydawka a orzecznik i dopełnienie), dopisek o konwencji bezokolicznika celu (§7), 3 nowe błędy w klinice, ćwiczenie C5, zadanie 4 w stylu E8, 4 pytania konkursowe w teście, karta extra, 6 fiszek, 5 haseł słownika, nowe sekcje 18 (warstwa olimpijska, zadania z kluczem), 19 (mnemotechniki), 20 (samokontrola), propozycje grafik „Ekspres przydawek” i „Gniazdo czasownika” (w raporcie odpowiedzi — do zbudowania).
+
+**Poprawione względem propozycji:** literówka „zaimek przymotny” → „przymiotny”; test przydawki przy orzeczniku przeformułowany (pytanie od orzecznika *sędzią jakim?*); ciekawostka o kolejności przydawek — model twierdził, że po polsku kolejność jest swobodna i „zmienia się tylko rytm”, poprawiono: polski też ma naturalny porządek (przydawki gatunkujące przy rzeczowniku, np. *szkoła podstawowa*); §17 Ściąga — model zrekonstruował urwaną kartę; przyjęto jego pełniejsze pytania i pułapki, a przywrócono pominięte pozycje oryginału (orzeczenie imienne, *dom dziadka*, *Idę.*, *Grzmi.*, linia „Dalej”). Linia `stan:` z odpowiedzi zastąpiona.
+
+**Nieprzyjęte:** scalenie §1 z §17 — zasada „nic nie usuwamy” (obie zostają).
+
