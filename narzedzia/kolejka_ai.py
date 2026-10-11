@@ -8,7 +8,8 @@ import re
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 KATALOGI = {'biologia': ['biologia/bio/md'], 'chemia': ['chemia/che-modular/lessons-md/gotowe'],
-            'polski': ['polski/podstawy', 'polski/blok_G', 'polski/blok_S', 'polski/blok_D']}
+            'polski': ['polski/podstawy', 'polski/blok_G', 'polski/blok_S', 'polski/blok_D'],
+            'angielski': ['angielski/lekcje_md']}
 PROMPT_KB = len((ROOT / 'eksport' / 'ULEPSZ_PROMPT.md').read_bytes())
 LIMIT = 100 * 1024 - PROMPT_KB - 3 * 1024  # paczka = prompt + lekcje + nagłówki ≤ ok. 100 KB
 

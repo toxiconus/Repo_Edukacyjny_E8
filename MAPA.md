@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 164 KB)
+## .  (8 pl., 165 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 14 KB
@@ -67,11 +67,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 10 KB
 - `PRZEKAZANIE.md` 5 KB
 
-## biologia/bio/md  (10 pl., 624 KB)
+## biologia/bio/md  (10 pl., 653 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 37 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 54 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 59 KB
-- `BIO.07.H01.homeostaza.md` 45 KB
+- ⚠`BIO.07.H01.homeostaza.md` 74 KB
 - `BIO.07.U01.skora_i_uklad_ruchu.md` 50 KB
 - ⚠`BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` 87 KB
 - ⚠`BIO.07.U04.krazenie_krew_odpornosc.md` 80 KB
@@ -90,16 +90,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
-## biologia/html  (43 pl., 15.7 MB)
+## biologia/html  (44 pl., 16.5 MB)
 - (zwinięte; `ls biologia/html`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 385 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 412 KB
-- ⚠`BIO.01.L001.komorka.html` 437 KB
-- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 384 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 419 KB
-- ⚠`BIO.01.L003.diagnoza.html` 434 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 372 KB
-- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 365 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 392 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 419 KB
+- ⚠`BIO.01.L001.komorka.html` 445 KB
+- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 391 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 427 KB
+- ⚠`BIO.01.L003.diagnoza.html` 442 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 379 KB
+- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 372 KB
 
 ## biologia/md  (37 pl., 1.1 MB)
 - (zwinięte; `ls biologia/md`) — duże:
@@ -116,8 +116,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (18 pl., 391 KB)
+## biologia/plany/audyty  (22 pl., 531 KB)
 - (zwinięte; `ls biologia/plany/audyty`) — duże:
+- ⚠`ULEPSZ_H01_gpt-6_2026-10-11.md` 52 KB
+- ⚠`ULEPSZ_H01_model_B_2026-10-11.md` 61 KB
 - ⚠`W1_perplexity_U04_krazenie_2026-10-11.md` 78 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
@@ -579,8 +581,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (10 pl., 58 KB)
+## eksport  (11 pl., 62 KB)
 - `.gitignore` 0 KB
+- `JAK_WYSYLAC.md` 3 KB
 - `KOLEJKA_AI.md` 3 KB
 - `OCENA_MODELI.md` 3 KB
 - `ULEPSZ_PROMPT.md` 12 KB
@@ -591,7 +594,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `w1_paczka.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (14 pl., 107 KB)
+## narzedzia  (15 pl., 111 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
@@ -601,10 +604,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `fix_encoding_v2.ps1` 5 KB
 - `replace_gereb_card.ps1` 5 KB
 
-## olimpiada  (4 pl., 117 KB)
+## olimpiada  (4 pl., 118 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
-- `PRIORYTETY.md` 11 KB
+- `PRIORYTETY.md` 12 KB
 - `PRZEKAZANIE.md` 6 KB
 
 ## olimpiada/do_uzupelnienia  (12 pl., 73 KB)

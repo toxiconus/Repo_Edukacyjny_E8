@@ -93,3 +93,4 @@
 - 2026-10-11: BIO U10 „Układ dokrewny — hormony” (III.10) — scalone 4 odpowiedzi AI (GLM, Gemini, Grok, model A) + szkielet OLI, z poprawkami błędów; nowa grafika `gruczoly-mapa`, scenariusze tyroksyna/wapń w `sprzezenie-zwrotne` (+ poprawiony kierunek wskaźnika dla spadków); `narzedzia/kolejka_ai.py` → `eksport/KOLEJKA_AI.md`. Test BIO OK (10 lekcji).
 - 2026-10-11: obieg pracy z wieloma AI: `eksport/JAK_WYSYLAC.md` (role modeli, wariant równoległy i sztafeta), tryb RECENZJA w `ULEPSZ_PROMPT.md` i `paczka_ai.py`, automatyczny ranking odpowiedzi `narzedzia/ocen_odpowiedzi.py` (na B2e: GLM 45 pkt, Grok 18, A 9, Gemini 6 — forma).
 - 2026-10-11: H01 homeostaza — scalone 4 odpowiedzi ULEPSZ (baza B, +GPT-6 §21–24, łatki D, z A tylko sprawdzone); W1 FULL; porownaj OK.
+- 2026-10-11: priorytet POL (przysłówek, przydawka, podstawy) i ANG (czasy); paczki --olimpiada (8 szt.), kolejka obejmuje angielski.

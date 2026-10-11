@@ -29,6 +29,11 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 
 **Do zrobienia przez użytkownika:** (zakresy 2025/26 i arkusz rejonowy chemii 2025/26 — już w `zrodla/LKO/`) pobrać z kuratorium.lublin.pl (strona blokuje pobieranie automatyczne) arkusze **etapu szkolnego chemii i biologii 2024/25** z kluczami (publikacja id=13802), PDF zakresów 2025/26 i — gdy wyjdzie — pakiet 2026/27; wrzucić do rozmowy → trafią do `olimpiada/zrodla/` i banku zadań.
 
+## 1a. PRIORYTET polski i angielski (decyzja użytkownika 2026-10-11)
+- **Polski:** najpierw przysłówek (G07) i przydawka (G12 części zdania), potem pozostałe podstawy: przymiotnik, rzeczownik, czasownik, liczebnik, zaimek, imiesłowy, przyimek, spójnik, związki wyrazowe.
+- **Angielski:** czasy — L004 (teraźniejsze i przeszłe), L005 (Present Perfect), L006 (Past Simple/Continuous), L012 (przyszłość), dalej L003 (stative) i L002 (operatory).
+- Paczki z warstwą olimpijską (`paczka_ai.py … --olimpiada`, dodatek `eksport/OLIMPIADA_DODATEK.md`), kolejność wysyłki: `POL_OLI1_G07_G12` → `ANG_OLI1_czasy_L004_L005_L006` → `POL_OLI2_G03_G01` → `ANG_OLI2_czasy_L012_L003` → `POL_OLI3…5` → `ANG_OLI3_operatory_L002` (wszystkie w `eksport/out/`, 67–94 KB).
+
 ## 2. Kolejka lekcji — teraz (do etapów szkolnych)
 ### Chemia (do 23.10)
 | # | lekcja | dlaczego | materiał źródłowy | stan |

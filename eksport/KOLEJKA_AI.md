@@ -52,3 +52,7 @@
 
 **NIE wysyłać (W1 FULL) — 13 lekcji, 234 KB:** G10 (31 KB) · G11 (25 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
 
+## angielski
+
+**niski priorytet (W1 starym promptem) — 6 lekcji, 203 KB:** L002 (69 KB) · L003 (29 KB) · L004 (23 KB) · L005 (26 KB) · L006 (26 KB) · L012 (27 KB)
+

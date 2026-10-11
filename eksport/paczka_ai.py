@@ -55,6 +55,11 @@ def main():
     if len(sys.argv) < 4:
         print(__doc__); sys.exit(2)
     tryb, nazwa, reszta = sys.argv[1].lower(), sys.argv[2], sys.argv[3:]
+    dod = ''
+    if '--olimpiada' in reszta:
+        reszta.remove('--olimpiada'); dod += (ROOT / 'eksport' / 'OLIMPIADA_DODATEK.md').read_text()
+    while '--uwaga' in reszta:
+        i = reszta.index('--uwaga'); dod += f"\n\n**Uwaga do tej paczki:** {reszta[i+1]}\n"; del reszta[i:i+2]
     if tryb not in ('ulepsz', 'check', 'badanie', 'recenzja'):
         print('TRYB: ulepsz | check | badanie | recenzja'); sys.exit(2)
     if tryb == 'recenzja':
@@ -85,7 +90,7 @@ def main():
         czesci.append(naglowek(f, t) + tresc)
     head = (f"# PACZKA AI — TRYB: {tryb.upper()} — {', '.join(kody) or sys.argv[3]}\n\n"
             "> Skopiuj polecenie poniżej do okna czatu, a cały plik dołącz jako załącznik. Tryb pracy: **" + tryb.upper() + "**.\n\n")
-    s = head + (ROOT / 'eksport' / 'ULEPSZ_PROMPT.md').read_text() + ''.join(czesci)
+    s = head + (ROOT / 'eksport' / 'ULEPSZ_PROMPT.md').read_text() + dod + ''.join(czesci)
     out = ROOT / 'eksport' / 'out' / f'AI_{tryb.upper()}_{nazwa}.md'
     out.parent.mkdir(exist_ok=True)
     out.write_text(s)
