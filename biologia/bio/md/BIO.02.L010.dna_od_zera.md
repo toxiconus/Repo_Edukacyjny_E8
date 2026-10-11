@@ -120,6 +120,20 @@ Coś musi być przekazywane z rodziców na dziecko — coś, co zawiera **inform
 Bracia: kolor oczu zależy głównie od odziedziczonych genów, a wzrost jest cechą **wieloczynnikową** — zależy od wielu genów i od środowiska (odżywianie, sen, aktywność). Bracia nie mają też identycznych genów (mejoza, L015). Wróć do hipotezy po lekcji.
 :::
 
+## 4.5 | Wykład — DNA od zera {#wyklad}
+
+::: karta understand | Wykład — instrukcja, którą dostajesz od rodziców
+Każdy z nas zaczyna się od jednej komórki — zapłodnionej komórki jajowej, mniejszej niż ziarenko piasku. Z niej powstaje cały człowiek: kości, oczy, mózg, odcisk palca. Skąd ta jedna komórka „wie”, co zbudować? Odpowiedź brzmi: ma **instrukcję**. Tą instrukcją jest **DNA** — kwas deoksyrybonukleinowy — długa cząsteczka, w której zapisana jest informacja dziedziczna. Połowę instrukcji dostajesz od matki (z komórką jajową), połowę od ojca (z plemnikiem).
+
+DNA działa jak przepis zapisany alfabetem z zaledwie **czterech liter**: A, T, G i C — to cztery rodzaje **zasad azotowych** w nukleotydach. Tak jak z 32 liter alfabetu da się ułożyć każdą polską książkę, tak z czterech „liter” DNA zapisana jest informacja o wszystkich białkach organizmu. Fragment DNA, który zawiera przepis na jedno białko (albo inny produkt), nazywamy **genem**. Białka z kolei budują komórki i kierują ich pracą — od nich zależą cechy: kolor oczu, grupa krwi, to, czy trawisz mleko.
+
+Cząsteczka DNA ma kształt **podwójnej helisy** — skręconej drabiny. Boki drabiny tworzą cukry i reszty fosforanowe, a szczeble — pary zasad połączone według stałej reguły: **A zawsze z T, G zawsze z C** (zasada komplementarności). Dzięki tej regule każda nić jest „negatywem” drugiej, więc przy podziale komórki DNA można dokładnie skopiować: nici się rozchodzą, a do każdej dobudowuje się nowa, pasująca.
+
+U człowieka DNA znajduje się głównie w **jądrze komórkowym**, gdzie jest nawinięte na białka i upakowane w **chromosomy** (w komórce ciała — 46, czyli 23 pary). Niewielka ilość DNA jest też w mitochondriach. Zapamiętaj trzy poziomy: **DNA** (cząsteczka) → **gen** (fragment DNA z informacją) → **chromosom** (DNA upakowane z białkami). To porządek, który będzie wracał w całej genetyce.
+
+Na koniec ważne zastrzeżenie: DNA to nie „wyrok”. Wiele cech — wzrost, masa ciała, zdolności — zależy od wielu genów **i** od środowiska. Geny dają możliwości, a styl życia, odżywianie i nauka decydują, jak je wykorzystamy.
+:::
+
 ## 5 | Genetyka i trzy szuflady cech [[basic:E8]] {#cechy}
 ### 5.1. Genetyka, dziedziczenie i zmienność
 **Genetyka** — nauka o **dziedziczeniu** i **zmienności**.
@@ -252,6 +266,10 @@ Przechowuje informację biologiczną, ale samo nie jest „żywym organizmem”.
 4. W dwuniciowym DNA A łączy się z T, a C z G.
 5. Informacja zależy przede wszystkim od kolejności zasad (sekwencji).
 6. Gen jest odcinkiem DNA; jego informacja może prowadzić do powstania RNA lub białka.
+
+::: karta understand | W skrócie — DNA, gen, białko, cecha
+Łańcuch, który warto umieć powiedzieć jednym tchem: **DNA** przechowuje informację → **gen** to fragment DNA z przepisem na białko → **białko** pełni funkcję w komórce (np. enzym, barwnik, hormon) → z pracy białek wynika **cecha**. Przykład: gen dla enzymu tworzącego barwnik melaninę → ilość melaniny → kolor skóry i oczu. Jeśli zmieni się zapis genu (mutacja), białko może działać inaczej i cecha się zmienia. Ale uwaga: na wiele cech wpływa jednocześnie wiele genów i środowisko — łańcuch rzadko jest tak prosty jak w przykładzie.
+:::
 
 ## 8 | Gdzie jest DNA? [[basic:E8]] {#gdzie}
 | Organizm | Gdzie jest DNA? |
@@ -407,6 +425,10 @@ Informacja jest w **kolejności zasad**, nie w pojedynczej literze ani w „kszt
 | Struktura | dwie nici (helisa) | zwykle jedna nić |
 | Rola (szkolnie) | przechowywanie informacji („magazyn”) | odczyt i przekazywanie („kopia robocza / narzędzie”) |
 | Lokalizacja | jądro (głównie) | jądro i cytoplazma |
+
+::: karta understand | W skrócie — reguła par zasad w praktyce
+Komplementarność (A–T, G–C) to najprostszy rachunek w genetyce. Gdy znasz jedną nić, drugą zapisujesz automatycznie: ATG CCG → TAC GGC. Gdy wiesz, że w DNA jest 30% adeniny, od razu wiesz, że tyminy też jest 30% (A = T), a na G i C zostaje razem 40% — po 20% każdej. Dlaczego? Bo każda adenina ma swoją tyminę na drugiej nici. Ta sama reguła pozwala komórce kopiować DNA przed podziałem: każda stara nić staje się matrycą dla nowej.
+:::
 
 ## 11 | Czego DNA NIE oznacza [[basic:E8]] {#mity}
 Ten moduł chroni przed najczęstszymi błędami potocznymi. Jeśli w rozmowie o DNA pojawi się któreś z tych zdań — to sygnał do sprawdzenia.
@@ -822,21 +844,15 @@ Erytrocyt :: czerwona krwinka; dojrzała nie ma jądra ani mitochondriów, więc
 :::
 
 ## 22 | Jak się uczyć tej lekcji? {#plan}
-1. Minimum E8 i §5–§9 — 10–15 min.
-2. Szuflady cech (grafika w §5) i przykład prowadzony (§6.4) — 5 min.
-3. Mini-check (16A) — 5 min.
-4. Ćwiczenia A i B (16C) — 10 min.
-5. Trener nici (§10.7) — 5 min.
-6. Fiszki — 10 min.
-7. Test końcowy — 12 min.
+1. Minimum E8 i §5–§9.
+2. Szuflady cech (grafika w §5) i przykład prowadzony (§6.4).
+3. Mini-check (16A).
+4. Ćwiczenia A i B (16C).
+5. Trener nici (§10.7).
+6. Fiszki.
+7. Test końcowy.
 
-| Kiedy | Co | Czas |
-|---|---|---|
-| Po lekcji | Minimum E8 + 5 fiszek | 15–20 min |
-| +1 dzień | fiszki bloku | 10 min |
-| +3 dni | klinika + 3 zadania treningowe | 15 min |
-| +1 tydzień | mini-test bloku | 20 min |
-| +1 miesiąc | mapa pojęć + pułapki | 15 min |
+Kolejność powtórki (we własnym tempie): Minimum E8 + 5 fiszek → fiszki bloku → klinika + 3 zadania treningowe → mini-test bloku → mapa pojęć + pułapki.
 
 > Zasada 3 pytań po powtórce: Co umiem? Co mylę? Co mnie zaskoczyło?
 
@@ -915,3 +931,9 @@ Erytrocyt :: czerwona krwinka; dojrzała nie ma jądra ani mitochondriów, więc
 - Wprowadzone: „prawie każda komórka” (erytrocyt), kolor oczu jako cecha wielogenowa, cechy wieloczynnikowe — dziedziczą się geny, nie wynik, wolne DNA w osoczu, A–C (stabilność), helisa ułatwia naprawę, zasada egzaminacyjna 5′/3′, rekombinacja = nowe kombinacje, mutacje somatyczne i w komórkach płciowych, allel, locus, kariotyp, rRNA/tRNA, Klinika 2.0 — kolejność nukleotydów, mity (te same DNA w komórkach, „kopia rodzica”), mnemotechniki G-Ś-R, gen→cecha, J-M-C-N, rekombinacja/mutacja, prosty test i quiz typów cech, ciekawostki (2 m DNA, liczba genów, wiązania C–G, bliźnięta, mtDNA i linia matczyna), mini-check 7–9.
 - Poprawione względem propozycji: łączna długość DNA człowieka to dziesiątki miliardów km, nie „biliony km”; 6 mld par zasad to tysiące książek, nie „kilkadziesiąt tomów encyklopedii”.
 - Nieprzyjęte: mnemotechnika „DNA = Dane Nie Autostrada” i „proste litery / haczyki” (mylące).
+
+## Ulepszenie — Claude, 2026-10-11
+
+- Dodano: §4.5 wykład „od zera”, 2 mini-wykłady „W skrócie” (DNA → gen → białko → cecha; reguła par zasad w praktyce). Nic nie usunięto.
+- Poprawione: §22 — usunięto minuty i odstępy dni (kurs we własnym tempie); została kolejność nauki i powtórki.
+
