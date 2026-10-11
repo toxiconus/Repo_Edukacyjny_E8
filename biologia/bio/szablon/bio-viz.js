@@ -1399,4 +1399,115 @@ mount:function(el,o){
   info.className='bv-info';info.innerHTML=t+'<br><small>Kształty krzywych są orientacyjne — każdy enzym ma swoje optimum.</small>'}
  r.oninput=function(){v[tryb]=+r.value;draw()};narz();draw()}});
 
+/* ---- wentylacja płuc: wdech i wydech, przepona i żebra (2026-10-11, lekcja BIO.07.U06) ---- */
+BIO.define('wdech-wydech',{opis:'Klatka piersiowa od przodu: tchawica, oskrzela, dwa płuca, żebra i kopuła przepony; przyciski wdech / wydech / oddychaj animują obniżanie i spłaszczanie przepony, unoszenie żeber, powiększanie płuc i kierunek przepływu powietrza; wskaźnik objętości klatki i ciśnienia w płucach względem atmosferycznego',
+mount:function(el,o){
+ var tl=H('div','bv-tools'),box=H('div'),info=H('div','bv-info');el.appendChild(tl);el.appendChild(box);el.appendChild(info);
+ var t=0,cel=0,kier=0,auto=false,raf=0,red=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var W=640,Hh=440;
+ function yD(x,A){var Y0=360,u=(x-320)/175;return Y0-(Y0-A)*(1-u*u)}
+ function draw(){var A=262+40*t,sv=svg(W,Hh,'Mechanizm wdechu i wydechu',[]);
+  sv.appendChild(S('path',{d:'M150 '+(120-6*t)+' C140 220 140 300 148 362 L492 362 C500 300 500 220 490 '+(120-6*t)+' C430 96 210 96 150 '+(120-6*t)+' Z',fill:'var(--surface-soft)',stroke:'var(--viz-line)','stroke-width':2}));
+  [['L',248],['P',392]].forEach(function(p){var cx=p[1],rx=70+14*t,bot=yD(cx,A)-6,top=128-4*t,ry=(bot-top)/2,cy=top+ry;
+   sv.appendChild(S('ellipse',{cx:cx+(p[0]==='L'?-6*t:6*t),cy:cy,rx:rx,ry:ry,fill:'#f4b6b6',stroke:'#b85a5a','stroke-width':2.5,opacity:.95}))});
+  sv.appendChild(S('path',{d:'M320 20 L320 150 M320 150 L270 185 M320 150 L370 185',fill:'none',stroke:'#d9a0a0','stroke-width':12,'stroke-linecap':'round'}));
+  for(var i=0;i<6;i++){var y=118+i*38;[-1,1].forEach(function(s){var xe=320+s*(158+8*t),ye=y+34-18*t;sv.appendChild(S('path',{d:'M'+(320+s*14)+' '+y+' Q'+(320+s*120)+' '+(y-8)+' '+xe+' '+ye,fill:'none',stroke:'#cfc4a8','stroke-width':7,'stroke-linecap':'round',opacity:.85}))})}
+  sv.appendChild(S('rect',{x:312,y:112,width:16,height:200,rx:6,fill:'#e2d9c0',stroke:'#b8ab88'}));
+  var d='';for(var x=145;x<=495;x+=5)d+=(d?'L':'M')+x+' '+yD(x,A).toFixed(1);
+  sv.appendChild(S('path',{d:d,fill:'none',stroke:kier>0?'#c0392b':'#b85a5a','stroke-width':kier>0?9:6,'stroke-linecap':'round'}));
+  sv.appendChild(T(320,A+30,'przepona',{s:17,w:800,f:'#8a2a2a'}));
+  sv.appendChild(T(560,150,'żebra',{s:16,w:700}));sv.appendChild(T(560,170,kier>0?'unoszą się':kier<0?'opadają':'',{s:14,f:'var(--viz-mut)'}));
+  sv.appendChild(T(560,250,'mięśnie',{s:16,w:700}));sv.appendChild(T(560,270,'międzyżebrowe',{s:16,w:700}));sv.appendChild(T(560,290,kier>0?'kurczą się':kier<0?'rozluźniają się':'',{s:14,f:'var(--viz-mut)'}));
+  sv.appendChild(T(248,250,'płuco',{s:16,w:800,f:'#7a2a2a'}));sv.appendChild(T(392,250,'płuco',{s:16,w:800,f:'#7a2a2a'}));sv.appendChild(T(352,40,'tchawica',{s:15,w:700,a:'start'}));
+  if(kier){var up=kier<0;sv.appendChild(S('path',{d:up?'M290 70 L290 26 M280 38 L290 24 L300 38':'M290 24 L290 70 M280 58 L290 72 L300 58',fill:'none',stroke:'#2f7fa8','stroke-width':4,'stroke-linecap':'round'}));
+   sv.appendChild(T(282,90,up?'powietrze wypływa':'powietrze wpływa',{s:15,w:800,f:'#2f7fa8',a:'end'}))}
+  var bx=30,by=400;sv.appendChild(T(bx,by-16,'objętość klatki',{s:14,w:700,a:'start'}));sv.appendChild(S('rect',{x:bx,y:by,width:200,height:14,rx:7,fill:'var(--viz-line)',opacity:.35}));sv.appendChild(S('rect',{x:bx,y:by,width:90+110*t,height:14,rx:7,fill:'#2f7fa8'}));
+  var pw=kier>0?'niższe od atmosferycznego':kier<0?'wyższe od atmosferycznego':'równe atmosferycznemu';
+  sv.appendChild(T(W-30,by-16,'ciśnienie w płucach:',{s:14,w:700,a:'end'}));sv.appendChild(T(W-30,by+8,pw,{s:15,w:800,a:'end',f:kier>0?'#1f6a3a':kier<0?'#a33':'var(--viz-ink)'}));
+  clr(box);box.appendChild(sv);
+  info.className='bv-info';info.innerHTML=kier>0?'<b>Wdech — proces czynny</b>1. <strong>Przepona kurczy się</strong>, spłaszcza i obniża. 2. <strong>Mięśnie międzyżebrowe zewnętrzne kurczą się</strong> i unoszą żebra. 3. <strong>Objętość klatki piersiowej rośnie</strong>, płuca rozciągają się razem z nią. 4. Ciśnienie w płucach spada poniżej atmosferycznego. 5. Powietrze wpływa.':
+   kier<0?'<b>Wydech spokojny — proces bierny</b>1. <strong>Przepona rozluźnia się</strong> i unosi (wraca do kształtu kopuły). 2. Mięśnie międzyżebrowe rozluźniają się, żebra opadają. 3. Objętość klatki maleje, sprężyste płuca kurczą się. 4. Ciśnienie w płucach rośnie powyżej atmosferycznego. 5. Powietrze wypływa. Przy wydechu <strong>nasilonym</strong> (kaszel, wysiłek) pracują dodatkowo mięśnie brzucha i międzyżebrowe wewnętrzne.':
+   '<b>Kliknij „wdech” albo „oddychaj”</b>Płuca nie mają mięśni, którymi mogłyby „zasysać” powietrze — rozszerzają się razem z klatką piersiową, bo przylegają do niej przez opłucną.'}
+ function krok(ts){var v=0.018;if(t<cel){t=Math.min(cel,t+v)}else if(t>cel){t=Math.max(cel,t-v)}draw();
+  if(t!==cel)raf=requestAnimationFrame(krok);else if(auto){setTimeout(function(){if(!auto)return;cel=cel?0:1;kier=cel?1:-1;raf=requestAnimationFrame(krok)},500)}}
+ function idz(c){cancelAnimationFrame(raf);cel=c;kier=c>t?1:c<t?-1:0;if(red){t=c;draw();return}raf=requestAnimationFrame(krok)}
+ var b1=btn('wdech',function(){auto=false;b3.classList.remove('on');idz(1)}),b2=btn('wydech',function(){auto=false;b3.classList.remove('on');idz(0)}),b3=btn('▶ oddychaj',function(){auto=!auto;b3.classList.toggle('on',auto);if(auto)idz(t>0.5?0:1)});
+ [b1,b2,b3].forEach(function(b){tl.appendChild(b)});draw()}});
+
+/* ---- wymiana gazowa w płucach i w tkankach (dyfuzja zgodnie z różnicą stężeń) ---- */
+BIO.define('wymiana-gazowa',{opis:'Wymiana gazowa: tryb „w płucach” — pęcherzyk płucny nad naczyniem włosowatym, krew dopływa odtlenowana i odpływa utlenowana, tlen dyfunduje do krwi, CO₂ do pęcherzyka; tryb „w tkankach” — komórki nad naczyniem, kierunki odwrotne; słupki porównują ilość O₂ i CO₂ po obu stronach bariery; płynące erytrocyty',
+mount:function(el,o){
+ var tryb=o.tryb||'pl',tl=H('div','bv-tools'),box=H('div'),info=BIO.fx.infoBox('Kliknij element albo przełącz miejsce wymiany.');el.appendChild(tl);el.appendChild(box);el.appendChild(info);
+ var raf=0,off=0,red=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function draw(){cancelAnimationFrame(raf);seg(tl,[['pl','w płucach'],['tk','w tkankach']],tryb,function(k){tryb=k;draw()});
+  var pl=tryb==='pl',W=700,Hh=400,sv=svg(W,Hh,pl?'Wymiana gazowa w pęcherzyku płucnym':'Wymiana gazowa w tkankach',[]);
+  var c0=pl?'#3b6cc4':'#d2463c',c1=pl?'#d2463c':'#3b6cc4';
+  sv.appendChild(S('defs',{},[S('linearGradient',{id:'wgGrad',x1:0,y1:0,x2:1,y2:0},[S('stop',{offset:'0','stop-color':c0}),S('stop',{offset:'1','stop-color':c1})])]));
+  function G(k,kids){return S('g',{'data-k':k},kids)}
+  if(pl)sv.appendChild(G('pech',[S('path',{d:'M60 268 C40 120 120 30 220 30 C320 30 400 120 380 268 Z',fill:'#dcefff',stroke:'#5a8bb8','stroke-width':3}),T(220,90,'pęcherzyk płucny',{s:18,w:800,f:'#2a5a8a'}),T(220,116,'powietrze: dużo O₂, mało CO₂',{s:15,w:700,f:'#2a5a8a'})]));
+  else sv.appendChild(G('kom',[0,1,2].map(function(i){return S('rect',{x:50+i*112,y:60,width:104,height:206,rx:22,fill:'#f7d9e3',stroke:'#b0607a','stroke-width':2.5})}).concat([0,1,2].map(function(i){return S('ellipse',{cx:102+i*112,cy:150,rx:20,ry:9,fill:'#e89a5a',stroke:'#a85a2a'})}),[T(220,40,'komórki tkanki: mało O₂, dużo CO₂',{s:15,w:800,f:'#8a3050'}),T(220,200,'mitochondria',{s:14,w:700,f:'#8a4a20'})])));
+  sv.appendChild(G('bariera',[S('rect',{x:40,y:268,width:360,height:10,fill:'#c9a0a0'}),T(410,273,'cienka bariera',{s:14,w:700,a:'start'})]));
+  sv.appendChild(G('kap',[S('rect',{x:20,y:278,width:400,height:56,rx:28,fill:'url(#wgGrad)',opacity:.9}),T(30,362,pl?'krew dopływa odtlenowana':'krew dopływa utlenowana',{s:14,w:700,a:'start',f:c0}),T(410,362,pl?'odpływa utlenowana →':'odpływa odtlenowana →',{s:14,w:700,a:'end',f:c1})]));
+  var ery=S('g',{});sv.appendChild(ery);
+  var o2=pl?'M170 180 L170 300':'M150 300 L150 180',co2=pl?'M270 300 L270 180':'M290 180 L290 300';
+  sv.appendChild(G('o2',[S('path',{d:o2,fill:'none',stroke:'#c0392b','stroke-width':6}),S('path',{d:pl?'M158 286 L170 304 L182 286':'M138 194 L150 176 L162 194',fill:'none',stroke:'#c0392b','stroke-width':6,'stroke-linejoin':'round'}),T(pl?148:128,pl?222:238,'O₂',{s:20,w:800,f:'#c0392b',a:'end'})]));
+  sv.appendChild(G('co2',[S('path',{d:co2,fill:'none',stroke:'#555','stroke-width':6}),S('path',{d:pl?'M258 194 L270 176 L282 194':'M278 286 L290 304 L302 286',fill:'none',stroke:'#555','stroke-width':6,'stroke-linejoin':'round'}),T(pl?292:312,pl?222:238,'CO₂',{s:20,w:800,f:'#444',a:'start'})]));
+  var bx=520,lab=pl?[['pęcherzyk',[1,.15]],['krew dopł.',[.4,.6]],['krew odpł.',[1,.15]]]:[['krew dopł.',[1,.15]],['komórki',[.2,.8]],['krew odpł.',[.4,.6]]];
+  sv.appendChild(T(bx+80,24,'ile gazu (szkic)',{s:14,w:800}));
+  lab.forEach(function(l,i){var y=60+i*100;sv.appendChild(T(bx,y,l[0],{s:14,w:700,a:'start'}));
+   [['O₂','#c0392b',0],['CO₂','#666',1]].forEach(function(g){var yy=y+16+g[2]*24;sv.appendChild(T(bx,yy+8,g[0],{s:13,w:700,a:'start',f:g[1]}));sv.appendChild(S('rect',{x:bx+40,y:yy,width:130*l[1][g[2]],height:16,rx:5,fill:g[1],opacity:.85}))})});
+  clr(box);box.appendChild(sv);
+  BIO.fx.info(sv,info,{pech:['Pęcherzyk płucny','Kulisty, cienkościenny woreczek na końcu oskrzelika (w płucach jest ich kilkaset milionów — orientacyjnie). Powietrze w nim jest stale odnawiane przez wentylację, więc tlenu jest tu więcej, a CO₂ mniej niż we krwi dopływającej.'],
+   kom:['Komórki tkanki','Komórki zużywają tlen w <strong>oddychaniu komórkowym</strong> (mitochondria) i wytwarzają CO₂ — dlatego tlenu jest w nich mniej, a CO₂ więcej niż we krwi tętniczej.'],
+   bariera:['Bariera dyfuzyjna','Ściana pęcherzyka + ściana naczynia włosowatego: dwie warstwy płaskich komórek, łącznie ułamek mikrometra (orientacyjnie) — bardzo krótka droga dyfuzji. Powierzchnia pęcherzyków jest wilgotna — gazy najpierw rozpuszczają się w cienkiej warstwie płynu.'],
+   kap:['Naczynie włosowate','Krwinki czerwone przeciskają się pojedynczo. W płucach krew <strong>przychodzi tętnicą płucną odtlenowana</strong> i odpływa żyłami płucnymi utlenowana; w tkankach — odwrotnie. Tlen wiąże głównie <strong>hemoglobina</strong> w erytrocytach; CO₂ jest przenoszony głównie w osoczu (w postaci jonów wodorowęglanowych), częściowo przez hemoglobinę.'],
+   o2:['Tlen','Przechodzi <strong>dyfuzją</strong> z miejsca, gdzie jest go więcej, tam, gdzie jest go mniej: '+(pl?'z pęcherzyka do krwi.':'z krwi do komórek.')+' Komórka nie „wciąga” tlenu — wystarczy różnica stężeń, którą utrzymuje wentylacja i ciągłe zużycie tlenu w komórkach.'],
+   co2:['Dwutlenek węgla','Też dyfunduje zgodnie z różnicą stężeń: '+(pl?'z krwi do pęcherzyka, a potem z wydychanym powietrzem na zewnątrz — płuca są więc także narządem wydalniczym.':'z komórek (gdzie powstaje) do krwi, która zaniesie go do płuc.')]},null);
+  function film(){off=(off+1.2)%60;clr(ery);for(var x=-60+off;x<420;x+=60){ery.appendChild(S('ellipse',{cx:x,cy:306,rx:14,ry:9,fill:'#a8231c',opacity:.75}))}if(!red)raf=requestAnimationFrame(film)}film()}
+ draw()}});
+
+/* ---- nefron: filtracja, wchłanianie zwrotne, mocz; ADH ---- */
+BIO.define('nefron',{opis:'Schemat nefronu: tętniczka doprowadzająca, kłębuszek w torebce Bowmana, kanalik nerkowy (kręty, pętla nefronu), przewód zbiorczy, naczynia włosowate oplatające kanalik; wybór substancji (glukoza, aminokwasy, białka i krwinki, mocznik, sole, woda) animuje jej drogę — przefiltrowana czy nie, odzyskana do krwi czy w moczu; przełącznik ADH zmienia ilość i barwę moczu',
+mount:function(el,o){
+ var tl=H('div','bv-tools'),tl2=H('div','bv-tools'),box=H('div'),info=BIO.fx.infoBox('Wybierz substancję, aby zobaczyć jej drogę w nefronie, albo kliknij element.');el.appendChild(tl);el.appendChild(tl2);el.appendChild(box);el.appendChild(info);
+ var adh=1,cur=null,raf=0,red=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var W=700,Hh=480,sv=svg(W,Hh,'Schemat nefronu',[]);
+ function G(k,kids){return S('g',{'data-k':k},kids)}
+ var KAN='M160 108 C180 80 200 136 220 108 C240 80 260 136 280 108 L300 108 L310 390 C315 415 345 415 350 390 L360 132 C380 104 400 160 420 132 C440 104 460 160 480 132 L540 132';
+ sv.appendChild(G('kap',[S('path',{d:'M150 136 C165 178 200 182 240 182 L500 182 L500 440',fill:'none',stroke:'#b0508a','stroke-width':7,opacity:.75}),T(492,458,'do żyły nerkowej',{s:14,w:700,a:'end',f:'#7a2a5a'}),T(440,200,'naczynia włosowate',{s:14,w:700,f:'#7a2a5a'})]));
+ sv.appendChild(G('tetn',[S('path',{d:'M14 146 L108 126',fill:'none',stroke:'#d2463c','stroke-width':8,'stroke-linecap':'round'}),T(14,170,'krew z tętnicy',{s:14,w:700,a:'start',f:'#a33'})]));
+ sv.appendChild(G('torebka',[S('path',{d:'M160 96 C150 64 96 60 88 108 C82 156 140 168 162 128',fill:'none',stroke:'#8a7a40','stroke-width':6}),T(110,44,'torebka Bowmana',{s:14,w:700})]));
+ sv.appendChild(G('klebek',[S('circle',{cx:126,cy:112,r:26,fill:'none',stroke:'transparent'})].concat([[118,104],[134,100],[140,116],[124,122],[112,116],[128,112]].map(function(p){return S('circle',{cx:p[0],cy:p[1],r:9,fill:'#d2463c',stroke:'#8a1a14','stroke-width':1.5})})).concat([T(20,96,'kłębuszek',{s:13,w:800,f:'#8a1a14',a:'start'})])));
+ sv.appendChild(G('kanalik',[S('path',{d:KAN,fill:'none',stroke:'#a8892a','stroke-width':16,'stroke-linecap':'round','stroke-linejoin':'round'}),S('path',{d:KAN,fill:'none',stroke:'#f6e7a8','stroke-width':11,'stroke-linecap':'round','stroke-linejoin':'round'}),T(230,70,'kanalik nerkowy',{s:15,w:800,f:'#7a5f10'}),T(372,404,'pętla nefronu',{s:14,w:700,a:'start',f:'#7a5f10'})]));
+ sv.appendChild(G('zbiorczy',[S('path',{d:'M540 70 L540 455',fill:'none',stroke:'#a8892a','stroke-width':20,'stroke-linecap':'round'}),S('path',{d:'M540 70 L540 455',fill:'none',stroke:'#f6e7a8','stroke-width':15,'stroke-linecap':'round'}),T(560,62,'przewód zbiorczy',{s:14,w:700,a:'start'}),T(560,470,'→ miedniczka',{s:14,w:700,a:'start'})]));
+ var str=S('g',{});sv.appendChild(str);
+ var mocz=S('g',{});sv.appendChild(mocz);
+ var trasa=S('path',{d:'M0 0',fill:'none',stroke:'none'}),dot=S('circle',{r:10,stroke:'#fff','stroke-width':2.5,opacity:0});dot.style.pointerEvents='none';sv.appendChild(trasa);sv.appendChild(dot);
+ box.appendChild(sv);
+ var DO_KRWI_P='M14 146 L118 122 L160 108 L200 104 L230 108 L230 182 L500 182 L500 440',DO_MOCZU='M14 146 L118 122 L'+KAN.slice(1)+' L540 455';
+ var R={glukoza:['Glukoza','#e08a1e',DO_KRWI_P,'<strong>Filtracja:</strong> mała cząsteczka — przechodzi z kłębuszka do torebki (jest w moczu pierwotnym). <strong>Wchłanianie zwrotne:</strong> w początkowym odcinku kanalika prawie cała wraca do krwi (transport aktywny). U zdrowej osoby w moczu ostatecznym glukozy nie ma; pojawia się, gdy jej stężenie we krwi jest tak wysokie, że kanaliki nie nadążają (np. cukrzyca).'],
+  amino:['Aminokwasy','#3a9a4a',DO_KRWI_P,'Przefiltrowane do moczu pierwotnego i prawie całkowicie <strong>odzyskane</strong> w kanaliku — wracają do krwi.'],
+  bialka:['Białka osocza i krwinki','#8a1a14','M14 146 L118 122 L148 134 L170 172 L240 182 L500 182 L500 440','<strong>Nie są filtrowane</strong> — są za duże, by przejść przez ścianę kłębuszka do torebki; odpływają z krwią. Białko lub krwinki w moczu to sygnał, że bariera filtracyjna jest uszkodzona (choroba nerek) — wymaga badania.'],
+  mocznik:['Mocznik','#7e57c2',DO_MOCZU,'Produkt przemiany białek (powstaje w wątrobie z amoniaku). Przefiltrowany, tylko częściowo odzyskiwany — <strong>główny składnik moczu ostatecznego</strong> obok wody. W moczu jest go wielokrotnie więcej niż w osoczu: nerka go zagęszcza, odzyskując wodę.'],
+  sole:['Sole mineralne (jony)','#2f9a9a','M14 146 L118 122 L160 108 L300 108 L310 390 C315 415 345 415 350 390 L360 132 L420 132 L420 182 L500 182 L500 440','Przefiltrowane i w większości <strong>odzyskane</strong> w różnych odcinkach kanalika; nerka odzyskuje ich tyle, ile organizm potrzebuje, a <strong>nadmiar</strong> zostaje w moczu — tak reguluje skład krwi.'],
+  woda:['Woda','#3b8fd0',DO_MOCZU,'Filtruje się jej bardzo dużo (moczu pierwotnego ok. 150–180 l na dobę — orientacyjnie), a ok. <strong>99%</strong> wraca do krwi w kanaliku i przewodzie zbiorczym. Ile wróci w przewodzie zbiorczym, decyduje <strong>ADH</strong> — patrz przełącznik.']};
+ function strzalki(){clr(str);[[200,118],[260,118],[318,250],[352,250],[440,142]].forEach(function(p){str.appendChild(S('path',{d:'M'+p[0]+' '+p[1]+' L'+p[0]+' 172 M'+(p[0]-6)+' 164 L'+p[0]+' 174 L'+(p[0]+6)+' 164',fill:'none',stroke:'#3b8fd0','stroke-width':3,opacity:p[1]===250?0:.9}))});
+  [240,310,380].forEach(function(y){str.appendChild(S('path',{d:'M528 '+y+' L506 '+y+' M514 '+(y-6)+' L504 '+y+' L514 '+(y+6),fill:'none',stroke:'#3b8fd0','stroke-width':adh?4:1.5,opacity:adh?.95:.3}))});
+  str.appendChild(T(196,240,'wchłanianie zwrotne',{s:14,w:700,f:'#2f6aa0'}));
+  clr(mocz);var h=adh?40:150,col=adh?'#d39a1a':'#f3ea9c';mocz.appendChild(T(640,232,'mocz',{s:15,w:800}));mocz.appendChild(S('rect',{x:610,y:250,width:60,height:160,rx:8,fill:'none',stroke:'var(--viz-ink)','stroke-width':2}));
+  mocz.appendChild(S('rect',{x:612,y:408-h,width:56,height:h,rx:6,fill:col}));mocz.appendChild(T(640,428,adh?'mało, ciemny':'dużo, jasny',{s:13,w:700}))}
+ function rysujAdh(){seg(tl2,[[1,'dużo ADH (mało wody w organizmie)'],[0,'mało ADH (nadmiar wody)']],adh,function(k){adh=k;rysujAdh();strzalki();
+   info.className='bv-info';info.innerHTML=adh?'<b>Dużo ADH</b>Przy odwodnieniu (upał, wysiłek, mało picia) przysadka wydziela więcej <strong>ADH</strong>. Przewody zbiorcze stają się przepuszczalne dla wody, więcej jej <strong>wraca do krwi</strong> → mocz <strong>mały i zagęszczony</strong> (ciemny).':'<b>Mało ADH</b>Gdy wypijesz dużo wody (albo po alkoholu, który hamuje ADH), wydzielanie ADH spada, ścianka przewodu zbiorczego słabo przepuszcza wodę → <strong>dużo rozcieńczonego</strong>, jasnego moczu.'})}
+ function jedz(k){var r=R[k];cur=k;seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),k,jedz);cancelAnimationFrame(raf);trasa.setAttribute('d',r[2]);dot.setAttribute('fill',r[1]);dot.setAttribute('opacity',1);
+  info.className='bv-info';info.innerHTML='<b>'+r[0]+'</b>'+r[3];var L=trasa.getTotalLength(),t0=null,D=3200;
+  function f(ts){if(t0===null)t0=ts;var q=Math.min(1,(ts-t0)/D),p=trasa.getPointAtLength(L*q);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y);if(q<1)raf=requestAnimationFrame(f)}
+  if(red){var p=trasa.getPointAtLength(L);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y)}else raf=requestAnimationFrame(f)}
+ seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),null,jedz);rysujAdh();strzalki();
+ BIO.fx.info(sv,info,{tetn:['Tętniczka doprowadzająca','Krew z tętnicy nerkowej wpływa do kłębuszka pod dość wysokim ciśnieniem — to ono „wyciska” płyn do torebki. Przez nerki przepływa ok. 1 litra krwi na minutę (orientacyjnie).'],
+  klebek:['Kłębuszek nerkowy','Kłębek naczyń włosowatych — tu zachodzi <strong>filtracja</strong>: woda i małe cząsteczki (glukoza, aminokwasy, sole, mocznik) przechodzą do torebki, a krwinki i duże białka zostają we krwi.'],
+  torebka:['Torebka Bowmana','Dwuwarstwowa „czasza” obejmująca kłębuszek; zbiera przesącz — <strong>mocz pierwotny</strong>. Kłębuszek z torebką to <strong>ciałko nerkowe</strong> (w korze nerki).'],
+  kanalik:['Kanalik nerkowy','Tu zachodzi <strong>wchłanianie zwrotne</strong> (glukoza, aminokwasy, większość wody i soli wracają do krwi) i <strong>wydzielanie kanalikowe</strong> (np. część leków, nadmiar jonów przechodzi z krwi do kanalika). Pętla nefronu (pętla Henlego) schodzi w rdzeń nerki i pomaga zagęszczać mocz.'],
+  zbiorczy:['Przewód zbiorczy','Zbiera mocz z wielu nefronów i prowadzi go do miedniczki nerkowej. Tu działa <strong>ADH</strong>: decyduje, ile wody jeszcze wróci do krwi — powstaje <strong>mocz ostateczny</strong>.'],
+  kap:['Naczynia włosowate wokół kanalika','Odbierają substancje odzyskane w wchłanianiu zwrotnym; oczyszczona krew odpływa żyłą nerkową.']})}});
+
 })();

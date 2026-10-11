@@ -37,6 +37,9 @@ Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko
 | droga-pokarmu | schemat układu pokarmowego: narządy przewodu i gruczoły (klik = funkcje), „krok” prowadzi kęs 9 odcinkami, wybór składnika (skrobia, białka, tłuszcze, woda i sole, błonnik) podświetla stacje trawienia i wchłaniania | — | U03 |
 | kosmek-jelitowy | kosmek: nabłonek z mikrokosmkami, kapilary (→ żyła wrotna), naczynie chłonne; animacja drogi glukozy, aminokwasów, tłuszczów, wody do krwi lub limfy | — | U03 |
 | enzym-warunki | aktywność enzymu: tryb temperatury (amylaza, denaturacja) i pH (pepsyna, amylaza, trypsyna), suwak, probówka z Lugolem | tryb="T"\|"pH" | U03 |
+| wdech-wydech | klatka piersiowa: przepona, żebra, płuca; animacja wdechu i wydechu, objętość klatki i ciśnienie w płucach, kroki obu faz | — | U06 |
+| wymiana-gazowa | dyfuzja O₂ i CO₂: tryb pęcherzyk–krew i krew–komórki, płynące erytrocyty, słupki ilości gazów, klik = opis (hemoglobina, transport CO₂) | tryb="pl"\|"tk" | U06 |
+| nefron | nefron: kłębuszek, torebka, kanalik, pętla, przewód zbiorczy, kapilary; animacja drogi 6 substancji (filtracja / wchłanianie zwrotne / mocz), przełącznik ADH z ilością i barwą moczu | — | U06 |
 | wirus-bakteria | wirus (kapsyd, DNA/RNA, osłonka) obok bakterii (ściana, błona, rybosomy, nukleoid, plazmid, rzęska); klik = opis; antybiotyki | — | REV02 |
 | przeobrazenie-plaza | rozwój złożony żaby: skrzek → kijanka → kijanka z kończynami → młoda żaba → żaba; suwak, oddychanie i środowisko | etap="0–4" | REV02 |
 | przeobrazenie-owadow | przeobrażenie zupełne (motyl, z poczwarką) i niezupełne (konik polny, bez poczwarki); klik = opis etapu | — | REV02 |
