@@ -45,3 +45,10 @@
 .che-lfs-bar{padding-left:60px!important}
 .che-toc-fab{top:4px}
 .lk-bar{padding-left:60px!important}
+/* dopracowanie czytelności (2026-10-11, jak w szablonie wspólnym) */
+section[id],h2[id]{scroll-margin-top:72px}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid #0d6868;outline-offset:3px}
+.table-wrap tbody tr:nth-child(even) td{background:rgba(127,127,127,.06)}
+.table-wrap tbody tr:hover td{background:rgba(13,104,104,.08)}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
