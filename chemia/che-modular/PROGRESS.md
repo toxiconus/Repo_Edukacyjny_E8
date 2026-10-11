@@ -94,3 +94,4 @@
 - 2026-10-11: obieg pracy z wieloma AI: `eksport/JAK_WYSYLAC.md` (role modeli, wariant równoległy i sztafeta), tryb RECENZJA w `ULEPSZ_PROMPT.md` i `paczka_ai.py`, automatyczny ranking odpowiedzi `narzedzia/ocen_odpowiedzi.py` (na B2e: GLM 45 pkt, Grok 18, A 9, Gemini 6 — forma).
 - 2026-10-11: H01 homeostaza — scalone 4 odpowiedzi ULEPSZ (baza B, +GPT-6 §21–24, łatki D, z A tylko sprawdzone); W1 FULL; porownaj OK.
 - 2026-10-11: priorytet POL (przysłówek, przydawka, podstawy) i ANG (czasy); paczki --olimpiada (8 szt.), kolejka obejmuje angielski.
+- 2026-10-11: POL G07 przysłówek — odpowiedź ULEPSZ --olimpiada scalona (v4.0, 48 KB, W1 FULL); G12 urwane w §5 → nowa paczka POL_OLI1b_G12.

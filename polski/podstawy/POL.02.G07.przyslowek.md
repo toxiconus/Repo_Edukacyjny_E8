@@ -1,3 +1,4 @@
+
 ---
 kod: G07
 przedmiot: polski
@@ -5,9 +6,9 @@ tytul: Przysłówek
 lead: Jak? Gdzie? Kiedy? W jakim stopniu? — nieodmienny, ale stopniowany; szybki czy szybko, „po polsku” czy „popolsku”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]]
 zakres: gramatyka — części mowy i składnia; powiązania: L002, G03, G12
-stan: W1 — GPT-6, 2026-10-09; kontrola zewnętrzna treści i kluczy; wersja 3.1
+stan: W1 FULL — model AI (paczka ULEPSZ --olimpiada POL_OLI1), 2026-10-11; wcześniej W1 GPT-6, 2026-10-09; scalenie i sprawdzenie Claude
 utworzono: 2026-10-09
-wersja: 3.0
+wersja: 4.0
 poziom: [[poziom:SP]] [[LKO]]
 ---
 
@@ -20,6 +21,8 @@ Potrafię nazwać rodzaj znaczeniowy przysłówka (sposobu, miejsca, czasu, stop
 Potrafię stopniować przysłówki regularnie, nieregularnie i opisowo.  
 Potrafię zapisać „nie” z przysłówkiem i poprawnie zapisać wyrażenia typu *po polsku, na pewno, naprzeciwko*.  
 Potrafię wskazać przysłówek jako okolicznik.
+
+Poziom ambitny: rozstrzygam przypadki graniczne (przysłówek a przymiotnik-orzecznik, partykuła, przyimek, liczebnik nieokreślony), uzasadniam decyzję funkcją wyrazu w zdaniu i poprawnie zapisuję „nie” w stopniu wyższym i najwyższym według zasad od 1.01.2026.
 
 ## 1 | Definicja i pytania [[basic:E8]]
 
@@ -34,7 +37,50 @@ Potrafię wskazać przysłówek jako okolicznik.
 | czasu | kiedy? jak długo? | dziś, wczoraj, wcześnie, zawsze, długo, wkrótce |
 | stopnia i miary | jak bardzo? ile? w jakim stopniu? | bardzo, trochę, zbyt, dużo, mało, całkiem |
 
-## 2 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
+::: karta basic | Uwaga na konwencję
+Podział na cztery rodzaje to konwencja szkolna. Opisy akademickie i część słowników wyróżniają też inne klasy (np. przysłówki przyczyny i celu: *dlatego, celowo*) — patrz sekcje 12 i 18.2. W zadaniu stosuj terminologię z polecenia.
+:::
+
+## 2 | Wykład — przysłówek od zera [[basic:E8]]
+
+::: karta understand | Wykład — najzwiniejsza część mowy
+Wyobraź sobie, że opisujesz wyścig. Mówisz: *Bilbo biegł*. To za mało — słuchacz nie wie, czy to spokojny trening, czy ucieczka przed smokiem. Dodajesz: *Bilbo biegł **szybko***. Właśnie pracuje przysłówek: wyraz, który dochodzi do czasownika i mówi, **jak** czynność przebiega. Przysłówek jest etykietą czynności — tak jak przymiotnik jest etykietą rzeczy: *szybki bieg* → *biegł szybko*.
+
+Trzy cechy definiują przysłówek. Po pierwsze, **nie odmienia się**: forma *szybko* jest ta sama, czy biegł jeden chłopiec, czy cały tłum. Po drugie, **stopniuje się** — i tu jest zaskoczenie: jak to, nieodmienny, a ma formy *szybciej, najszybciej*? Stopniowanie nie jest odmianą: nie zmienia przypadków, liczby ani osoby, tylko tworzy formy o innym natężeniu cechy — jak na osi liczbowej nie zmieniasz jednostki, tylko odczytujesz większą wartość. Po trzecie, przysłówek zwykle **kończy się na -o lub -e**, bo większość z nich pochodzi od przymiotników: *dobry → dobrze, cichy → cicho, ostatni → ostatnio*. To „most” między dwiema częściami mowy — i najczęstsza pułapka egzaminacyjna.
+
+W zdaniu przysłówek pełni trzy role. Najczęściej jest **okolicznikiem** przy czasowniku (*szedł cicho, przyjdzie jutro*). Może **wzmacniać** przymiotnik albo inny przysłówek (*bardzo odważny, zbyt późno*). Wreszcie — w zdaniu bez podmiotu — bywa **orzecznikiem**: *Było zimno. Zrobiło się ciemno.*
+
+Najwięcej punktów ginie w ortografii. „Nie” z przysłówkiem odprzymiotnikowym piszemy łącznie (*niedobrze, nieładnie*), a od 1.01.2026 także w stopniu wyższym i najwyższym (*nielepiej, nienajlepiej*); z innymi przysłówkami — rozdzielnie (*nie dziś, nie zawsze*). Do tego utrwalone zapisy-pary: *po polsku* (osobno) obok *naprawdę* (razem), *na pewno* (osobno) obok *naprzeciwko* (razem). Te pary trzeba wykuć — dlatego w lekcji jest klinika błędów, fiszki i test.
+
+Zadania egzaminacyjne i konkursowe najczęściej proszą o: rozpoznanie przysłówka w tekście, nazwanie rodzaju, stopniowanie (zwłaszcza nieregularne), poprawny zapis z „nie” oraz funkcję w zdaniu. Metoda jest zawsze ta sama: **zadaj pytanie od wyrazu określanego** i sprawdź, czy wyraz się odmienia. Jeśli wyraz nie odmienia się i mówi jak/gdzie/kiedy/jak bardzo — masz przysłówek. Ten sam mechanizm działa w innych językach: angielskie tempo opisują przysłówki (*quickly*), a w fizyce „coraz szybciej” to po prostu rosnące prędkość i przyspieszenie na wykresie.
+:::
+
+::: drzewo
+Przysłówek
+  Czym jest
+    część mowy nieodmienna
+    etykieta czynności (przymiotnik to etykieta rzeczy)
+  Rodzaje znaczeniowe
+    sposobu (jak?)
+    miejsca (gdzie? dokąd? skąd?)
+    czasu (kiedy? jak długo?)
+    stopnia i miary (jak bardzo? ile?)
+  Stopniowanie
+    regularne (szybko — szybciej)
+    nieregularne (dobrze — lepiej)
+    opisowe (bardziej interesująco)
+    brak stopniowania (dziś, tu, wczoraj)
+  Funkcje w zdaniu
+    okolicznik
+    określenie przymiotnika lub przysłówka
+    orzecznik w zdaniu bezpodmiotowym
+  Pisownia
+    „nie” łącznie lub rozdzielnie
+    wyrażenia przyimkowe rozdzielnie
+    przysłówki złożone łącznie
+:::
+
+## 3 | Jak rozpoznać — procedura krok po kroku [[basic:E8]]
 
 1. Zadaj pytanie **jak? gdzie? kiedy? jak bardzo?** — przysłówek zwykle odpowiada na nie przy czasowniku.  
 2. Sprawdź, czy wyraz się **nie odmienia** (*szybko* zawsze tak samo) — przymiotnik się odmienia (*szybki, szybkiego*).  
@@ -42,9 +88,9 @@ Potrafię wskazać przysłówek jako okolicznik.
 4. Przysłówki odprzymiotnikowe kończą się zwykle na **-o** lub **-e**: *szybko, ładnie, dobrze*.  
 5. Trudne przypadki: *tu, tam, wtedy, gdzie* — to przysłówki zaimkowe (zaimki przysłowne, G05); *blisko domu* — tu *blisko* pełni funkcję przyimka (z dopełniaczem), *mieszka blisko* — przysłówek (G08); *jest zimno* — przysłówek w orzeczeniu zdania bezpodmiotowego.
 
-## 3 | Formy, odmiana lub rodzaje [[basic:E8]]
+## 4 | Formy i stopniowanie [[basic:E8]]
 
-Przysłówek **nie odmienia się** przez przypadki, liczby, rodzaje ani osoby. Część przysłówków (odprzymiotnikowe) **stopniuje się**:
+Przysłówek **nie odmienia się** przez przypadki, liczby, rodzaje ani osoby. Część przysłówków (odprzymiotnikowych) **stopniuje się**:
 
 | Stopniowanie | Równy | Wyższy | Najwyższy |
 |--------------|-------|--------|-----------|
@@ -57,7 +103,21 @@ Przysłówek **nie odmienia się** przez przypadki, liczby, rodzaje ani osoby. C
 | opisowe | interesująco | bardziej interesująco | najbardziej interesująco |
 | niestopniowalne | dziś, tu, pieszo, wczoraj | — | — |
 
-## 4 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
+::: karta understand | W skrócie — trzy drogi stopniowania
+Przysłówek stopniujesz jak przymiotnik, od którego pochodzi: formą prostą z końcówką *-ej* (*szybko → szybciej*) albo opisowo (*bardziej / najbardziej*), gdy forma prosta brzmi nienaturalnie (*bardziej skomplikowanie*). Cztery pary trzeba znać na pamięć, bo łamią regułę: *dobrze→lepiej, źle→gorzej, dużo→więcej, mało→mniej*. Wyrazy wskazujące czas i miejsce (*dziś, tu, wczoraj, zawsze*) stopni nie mają — nie da się być „bardziej wczoraj”. Pamiętaj: stopniowanie to nie odmiana, tylko skala natężenia.
+:::
+
+::: karta extra | „Dobrze” znaczy „lepiej” — na całym świecie
+Formy typu *dobrze — lepiej — najlepiej* to tzw. supletywizm: stopnie pochodzą od różnych rdzeni, a nie przez dodanie końcówki. Identyczne zjawisko istnieje w angielskim (*well — better — best*) i niemieckim (*gut — besser — am besten*). Języki niezależnie od siebie „pożyczyły” formy porównawcze z innych słów, bo trzeba było ich częściej niż zwykłych przymiotników. (Źródło: słowniki etymologiczne; szczegóły dziejów form — orientacyjnie.)
+:::
+
+::: karta extra | Angielski: fast i hard
+W polskim przysłówek niemal zawsze różni się formą od przymiotnika (*szybki — szybko*). W angielskim bywa inaczej: *a fast car* (przymiotnik) i *drive fast* (przysłówek) — ta sama forma, rozstrzyga miejsce w zdaniu. Z kolei *hard* (mocno) i *hardly* (ledwo) to pary o zupełnie różnych znaczeniach. Polski uczeń ma więc podwójnie: musi zapamiętać formę i sprawdzić kontekst. (Źródło: Cambridge Dictionary, hasła „fast”, „hard/hardly”.)
+:::
+
+Uwaga (konkurs): *dużo* i *mało* bywają też liczebnikami nieokreślonymi — rozstrzyga funkcja w zdaniu (patrz sekcja 12).
+
+## 5 | Funkcja w zdaniu [[understand:ROZUMIENIE]]
 
 - Najczęściej **okolicznik**:  
   *Bilbo szedł **cicho**.* (jak? — okolicznik sposobu)  
@@ -66,12 +126,24 @@ Przysłówek **nie odmienia się** przez przypadki, liczby, rodzaje ani osoby. C
 - **Określenie przymiotnika lub przysłówka** (w związku przynależności, G13): *bardzo odważny*, *zbyt późno*.  
 - **Orzecznik** w zdaniu bezpodmiotowym: *Było **zimno**.* *W lesie zrobiło się **ciemno**.*
 
-## 5 | Pisownia i interpunkcja [[basic:E8]]
+::: nie-myl
+**Przymiotnik-orzecznik ≠ przysłówek-orzecznik.** *Jest smutny.* — przymiotnik jako orzecznik przy podmiocie (kim? czym? jaki jest?). *Jest mu smutno.* — przysłówek w zdaniu bezpodmiotowym (wykonawcy nie da się dodać). Test rozstrzygający: spróbuj dopisać podmiot w mianowniku — jeśli zdanie zachowa sens (*Chłopiec jest smutny*), to przymiotnik-orzecznik; jeśli nie (*Jest mu smutno*), to przysłówek.
+:::
+
+::: karta understand | W skrócie — trzy stanowiska przysłówka
+Przysłówek pracuje na trzech stanowiskach: okolicznik przy czasowniku (*szedł cicho*), wzmacniacz przy przymiotniku lub przysłówku (*bardzo odważny, zbyt późno*) i orzecznik w zdaniu bezpodmiotowym (*było zimno*). Test: od którego wyrazu pada pytanie? Od czasownika → okolicznik; od przymiotnika/przysłówka → określenie; od „być/zrobić się” bez podmiotu → orzecznik.
+:::
+
+::: karta extra | Allegro, adagio, presto
+Oznaczenia tempa w nutach — *allegro* (wesoło, żywo), *adagio* (powoli), *presto* (bardzo szybko) — to włoskie przysłówki i przymiotniki. Kompozytorzy od stuleci „stopniują” emocje utworu pojedynczym słowem nad pięciolinią: od *largo* (szeroko, wolno) do *prestissimo* (najprędcej) — jakby tworzyli skalę stopniowania. Beethoven przy jednym z allegro dopisał kiedyś wyjaśnienie słowne, gdy sam odruch czasowy grających mógł zawodzić. (Źródło: Britannica, hasło „tempo”; liczby i anegdoty — orientacyjnie.)
+:::
+
+## 6 | Pisownia i interpunkcja [[basic:E8]]
 
 **„Nie” z przysłówkami:**
 - z przysłówkami **odprzymiotnikowymi** — **łącznie we wszystkich stopniach** (zasady od 1.01.2026): *niedobrze, nieładnie, nielepiej, nienajlepiej, niewyraźnie*;  
 - z pozostałymi przysłówkami — **rozdzielnie**: *nie tu, nie teraz, nie dziś, nie bardzo, nie zawsze, nie całkiem*;  
-- łącznie także wyrazy, które bez „nie-” nie istnieją lub zmieniają znaczenie: *niebawem, niechcący, nieco, niekiedy, nieraz* (= często).
+- łącznie także wyrazy, które bez „nie-” nie istnieją lub zmieniają znaczenie: *niebawem, niechcący, nieco, niekiedy, nieraz* (= wiele razy, niejednokrotnie).
 
 **Wyrażenia przyimkowe pisane rozdzielnie** (to nie są jednolite przysłówki): *po polsku, po angielsku, po cichu, po trochu, na pewno, na razie, na zewnątrz, w ogóle, w końcu, z powrotem, do widzenia, bez przerwy*.
 
@@ -79,22 +151,39 @@ Przysłówek **nie odmienia się** przez przypadki, liczby, rodzaje ani osoby. C
 
 Przecinek: przysłówek nie wymaga przecinka; przecinek stawiamy przy wyliczeniu przysłówków bez spójnika (*szedł powoli, ostrożnie, cicho*) i przed *a, ale, lecz* (*szedł powoli, ale pewnie*).
 
-## 6 | Przykłady z lektur [[basic:E8]]
+::: mity
+„„Nie” z przysłówkiem zawsze piszemy rozdzielnie.” || Przysłówki odprzymiotnikowe (na -o/-e) piszemy z „nie” łącznie, od 1.01.2026 także w stopniu wyższym i najwyższym: *niedobrze, nielepiej, nienajlepiej*.
+„„Bynajmniej” znaczy to samo co „przynajmniej”.” || *Bynajmniej* znaczy „wcale nie” (*bynajmniej nie wiem* = wcale nie wiem); *przynajmniej* znaczy „co najmniej”.
+„Każdy wyraz zakończony na -o to przysłówek.” || *Dużo, mało* mogą być liczebnikami nieokreślonymi — rozstrzyga funkcja w zdaniu.
+:::
+
+::: nie-myl
+**Bynajmniej ≠ przynajmniej.** *To bynajmniej nie prawda* = „wcale nie prawda”; *przynajmniej trzy osoby* = „co najmniej trzy osoby”. Test: wstaw „wcale nie” — jeśli zdanie brzmi sensownie, potrzebny jest *bynajmniej*; jeśli chodzi o minimum ilości — *przynajmniej*.
+:::
+
+::: karta understand | W skrócie — „nie” z przysłówkiem w trzech krokach
+Krok 1: czy przysłówek pochodzi od przymiotnika i kończy się na -o/-e? Tak → pisz z „nie” razem, we wszystkich stopniach (*niedobrze, nielepiej, nienajlepiej*). Krok 2: inny przysłówek (*dziś, zawsze, bardzo*)? → osobno (*nie dziś, nie zawsze*). Krok 3: wyjątki — wyrazy, które bez „nie-” nie istnieją (*niebawem, niechcący*), zawsze razem; przy przeciwstawieniu ze spójnikiem *lecz/ale* → rozdzielnie (*nie dobrze, lecz znakomicie*).
+:::
+
+::: karta extra | Ortografia 2026 — pierwsza taka zmiana od dziesięcioleci
+Od 1.01.2026 obowiązuje pakiet nowych zasad ortograficznych ustalonych przez Radę Języka Polskiego — m.in. „nie” z przymiotnikami i przysłówkami w stopniu wyższym i najwyższym piszemy łącznie (*nielepszy, nienajlepszy, niegorzej, nienajgorzej*). Komentatorzy nazywali to największą zmianą ortograficzną od czasu międzywojennego regulaminu z 1936 roku (orientacyjnie; źródło: komunikaty Rady Języka Polskiego). Dlatego w arkuszach i podręcznikach z różnych lat te same wyrazy mogą wyglądać inaczej — sprawdź, której wersji wymaga polecenie.
+:::
+
+## 7 | Przykłady z lektur [[basic:E8]]
 
 1. Bilbo zakradł się ***cicho*** do jaskini Smauga. („Hobbit”) → przysłówek sposobu, okolicznik.  
 2. Łucja ***natychmiast*** opowiedziała rodzeństwu o Narnii. → przysłówek czasu (pisany łącznie).  
 3. Nemeczek przyszedł na plac, choć czuł się ***źle***. („Chłopcy z Placu Broni”) → przysłówek nieodmienny, stopniowany nieregularnie (źle — gorzej — najgorzej).  
 4. Mały Książę mówił, że ***dobrze*** widzi się tylko sercem. → przysłówek sposobu (parafraza).  
-5. Scrooge ***nigdy*** nie dawał jałmużny — aż do Wigilii. („Opowieść wigilijna”) → przysłówek zaimkowy czasu.  
+5. Scrooge ***nigdy*** nie dawał jałmużny — aż do Wigilii. („Opowieść wigilijna”) → przysłówek zaimkowy czasu (zaimek przysłowny).  
 6. Staś i Nel szli ***coraz wolniej*** przez rozgrzaną pustynię. („W pustyni i w puszczy”) → przysłówek w stopniu wyższym.  
 7. Rudy czuł się ***bardzo*** słabo po śledztwie. („Kamienie na szaniec”) → przysłówek stopnia określa inny przysłówek.
 
 (Parafrazy treści lektur.)
 
-## 7 | Klinika błędów
+## 8 | Klinika błędów
 
-| Błąd | Poprawnie | Dlaczego? |
-|------|-----------|-----------|
+::: klinika | Błąd | Poprawnie | Dlaczego?
 | Biega szybki. | Biega szybko. | czasownik określa przysłówek |
 | Czuję się dobry. | Czuję się dobrze. | jak się czuję? — przysłówek |
 | popolsku, napewno, wogóle | po polsku, na pewno, w ogóle | wyrażenia przyimkowe — rozdzielnie |
@@ -103,77 +192,280 @@ Przecinek: przysłówek nie wymaga przecinka; przecinek stawiamy przy wyliczeniu
 | nieteraz, niezawsze | nie teraz, nie zawsze | nieodprzymiotnikowe — rozdzielnie |
 | bardziej lepiej | lepiej | podwójne stopniowanie |
 | najbardziej najszybciej | najszybciej | j.w. |
+| bynajmniej trzy osoby | przynajmniej trzy osoby | „bynajmniej” znaczy „wcale nie”, nie „co najmniej” |
+| niedobrze, lecz znakomicie | nie dobrze, lecz znakomicie | przy przeciwstawieniu ze spójnikiem „lecz/ale” piszemy rozdzielnie |
+:::
 
-## 8 | Ćwiczenia A — podstawa [[basic:E8]]
+## 9 | Ćwiczenia A — podstawa [[basic:E8]]
 
-**A1.** Podkreśl przysłówki: *Wczoraj Ania bardzo długo czytała w domu.*  
-**Klucz:** Wczoraj, bardzo, długo. (*w domu* — wyrażenie przyimkowe)
+::: karta exam | Zadanie A1 (3 pkt) — Podkreśl przysłówki
+Podkreśl przysłówki: *Wczoraj Ania bardzo długo czytała w domu.*
+::: odp | Pokaż klucz
+*Wczoraj, bardzo, długo* (po 1 pkt). (*w domu* — wyrażenie przyimkowe, nie przysłówek).
+:::
+:::
 
-**A2.** Utwórz przysłówki od przymiotników: *cichy, dobry, wesoły, zły*.  
-**Klucz:** cicho, dobrze, wesoło, źle.
+::: karta exam | Zadanie A2 (2 pkt) — Utwórz przysłówki
+Utwórz przysłówki od przymiotników: *cichy, dobry, wesoły, zły*.
+::: odp | Pokaż klucz
+cicho, dobrze, wesoło, źle (2 pkt za wszystkie; 1 pkt za dwa poprawne).
+:::
+:::
 
-**A3.** Stopniuj: *wysoko, dobrze, dużo, interesująco*.  
-**Klucz:** wyżej–najwyżej; lepiej–najlepiej; więcej–najwięcej; bardziej/najbardziej interesująco.
+::: karta exam | Zadanie A3 (2 pkt) — Stopniuj
+Stopniuj: *wysoko, dobrze, dużo, interesująco*.
+::: odp | Pokaż klucz
+wyżej–najwyżej; lepiej–najlepiej; więcej–najwięcej; bardziej/najbardziej interesująco (po 0,5 pkt za parę).
+:::
+:::
 
-**A4.** Przymiotnik czy przysłówek? *(Głośny / Głośno) chłopiec śpiewał (głośny / głośno).*  
-**Klucz:** Głośny (określa rzeczownik), głośno (określa czasownik).
+::: karta exam | Zadanie A4 (2 pkt) — Przymiotnik czy przysłówek?
+*(Głośny / Głośno) chłopiec śpiewał (głośny / głośno).*
+::: odp | Pokaż klucz
+Głośny (określa rzeczownik), głośno (określa czasownik) — po 1 pkt.
+:::
+:::
 
-**A5.** Zapisz poprawnie: *(nie)dobrze, (nie)dziś, (na)pewno, (po)cichu, (na)przeciwko*.  
-**Klucz:** niedobrze, nie dziś, na pewno, po cichu, naprzeciwko.
+::: karta exam | Zadanie A5 (2 pkt) — Zapisz poprawnie
+Zapisz poprawnie: *(nie)dobrze, (nie)dziś, (na)pewno, (po)cichu, (na)przeciwko*.
+::: odp | Pokaż klucz
+niedobrze, nie dziś, na pewno, po cichu, naprzeciwko (po 0,5 pkt za formę z uzasadnieniem łączna/rozdzielna).
+:::
+:::
 
-**A6.** Nazwij rodzaj przysłówka: *pieszo, wszędzie, wkrótce, trochę*.  
-**Klucz:** sposobu, miejsca, czasu, stopnia i miary.
+::: karta exam | Zadanie A6 (2 pkt) — Rodzaje znaczeniowe
+Nazwij rodzaj przysłówka: *pieszo, wszędzie, wkrótce, trochę*.
+::: odp | Pokaż klucz
+sposobu, miejsca, czasu, stopnia i miary (po 0,5 pkt).
+:::
+:::
 
-## 9 | Ćwiczenia B — trening i C — konkurs [[exam:KONKURS]]
+## 10 | Ćwiczenia B i C [[basic:E8]]
 
-**B1.** Wyjaśnij, dlaczego przysłówek jest nieodmienny, choć ma formy *szybciej, najszybciej*.  
-**Klucz:** stopniowanie nie jest odmianą (przez przypadki, liczby, osoby) — to zmiana natężenia cechy.
+::: karta exam | Zadanie B1 (2 pkt) — Dlaczego „stopniowanie to nie odmiana”?
+Wyjaśnij, dlaczego przysłówek jest nieodmienny, choć ma formy *szybciej, najszybciej*.
+::: odp | Pokaż klucz
+Stopniowanie nie jest odmianą (przez przypadki, liczby, osoby) — to zmiana natężenia cechy. 1 pkt za wskazanie, 1 pkt za podanie, przez co się odmienia (przypadki, liczby, osoby).
+:::
+:::
 
-**B2.** Ustal funkcję wyrazu *blisko* w zdaniach: *Mieszkam blisko.* / *Mieszkam blisko szkoły.*  
-**Klucz:** 1) przysłówek, okolicznik miejsca; 2) *blisko szkoły* — wyrażenie przyimkowe (*blisko* + dopełniacz), okolicznik miejsca.
+::: karta exam | Zadanie B2 (2 pkt) — Jedno słowo, dwie funkcje
+Ustal funkcję wyrazu *blisko* w zdaniach: *Mieszkam blisko.* / *Mieszkam blisko szkoły.*
+::: odp | Pokaż klucz
+1) przysłówek, okolicznik miejsca; 2) *blisko szkoły* — wyrażenie przyimkowe (*blisko* + dopełniacz), okolicznik miejsca (po 1 pkt).
+:::
+:::
 
-**B3.** Zapisz poprawnie i uzasadnij: *Czuł się nie najlepiej.*  
-**Klucz:** *nienajlepiej* — przysłówek odprzymiotnikowy w stopniu najwyższym, od 2026 łącznie.
+::: karta exam | Zadanie B3 (2 pkt) — „Nie” w stopniu najwyższym
+Zapisz poprawnie i uzasadnij: *Czuł się nie najlepiej.*
+::: odp | Pokaż klucz
+*nienajlepiej* — przysłówek odprzymiotnikowy w stopniu najwyższym, od 2026 łącznie (1 pkt zapis, 1 pkt uzasadnienie).
+:::
+:::
 
-**C1.** W zdaniu *Było już późno, więc krasnoludy szły coraz ostrożniej.* wskaż przysłówki i określ funkcję każdego.  
-**Klucz:** *już* — partykuła (nie przysłówek!); *późno* — orzecznik w zdaniu bezpodmiotowym (*było późno*); *coraz* — przysłówek stopnia, określa *ostrożniej*; *ostrożniej* — przysłówek sposobu w stopniu wyższym, okolicznik.
+::: karta exam | Zadanie C1 (4 pkt) — Analiza zdania
+W zdaniu *Było już późno, więc krasnoludy szły coraz ostrożniej.* wskaż przysłówki i określ funkcję każdego.
+::: odp | Pokaż klucz
+*już* — partykuła (nie przysłówek!); *coraz* — partykuła stopniująca (tak nowe słowniki, m.in. WSJP; część podręczników szkolnych zalicza ją do przysłówków stopnia — w odpowiedzi zapisz przyjętą konwencję); *późno* — orzecznik w zdaniu bezpodmiotowym (*było późno*); *ostrożniej* — przysłówek sposobu w stopniu wyższym, okolicznik (po 1 pkt za wyraz z funkcją).
+:::
+:::
 
-## 10 | Zadania w stylu CKE
+## 11 | Zadania w stylu CKE [[basic:E8]]
 
-**Zadanie 1. (0–1)**  
+::: karta exam | Zadanie 1 (0–1) — Rozpoznanie
 Wyraz *lepiej* to:  
-A. przymiotnik w stopniu wyższym  B. przysłówek w stopniu wyższym  C. czasownik  D. partykuła  
-**Klucz:** B (dobrze — lepiej — najlepiej).
+A. przymiotnik w stopniu wyższym  B. przysłówek w stopniu wyższym  C. czasownik  D. partykuła
+::: odp | Pokaż klucz
+B (dobrze — lepiej — najlepiej).
+:::
+:::
 
-**Zadanie 2. (0–2)**  
-Popraw dwa błędy ortograficzne: *Wogóle nie znał drogi napamięć.*  
-**Klucz:** W ogóle; na pamięć (po 1 pkt).
+::: karta exam | Zadanie 2 (0–2) — Ortografia w zdaniu
+Popraw dwa błędy ortograficzne: *Wogóle nie znał drogi napamięć.*
+::: odp | Pokaż klucz
+W ogóle; na pamięć (po 1 pkt).
+:::
+:::
 
-**Zadanie 3. (0–1)**  
+::: karta exam | Zadanie 3 (0–1) — Zasady od 2026
 Który zapis jest poprawny według zasad obowiązujących od 2026 roku?  
-A. nie najgorzej  B. nienajgorzej  
-**Klucz:** B.
+A. nie najgorzej  B. nienajgorzej
+::: odp | Pokaż klucz
+B.
+:::
+:::
 
-**Zadanie 4. (0–2)**  
-Uzupełnij zdanie dwoma przysłówkami różnych rodzajów i nazwij ich rodzaje: *Bilbo ……… szedł ……… .*  
-**Klucz:** np. *Bilbo ostrożnie szedł naprzód.* — sposobu, miejsca (po 1 pkt za poprawny przysłówek z nazwą).
+::: karta exam | Zadanie 4 (0–2) — Tworzenie i klasyfikacja
+Uzupełnij zdanie dwoma przysłówkami różnych rodzajów i nazwij ich rodzaje: *Bilbo ……… szedł ……….*
+::: odp | Pokaż klucz
+np. *Bilbo ostrożnie szedł naprzód.* — sposobu, miejsca (po 1 pkt za poprawny przysłówek z nazwą).
+:::
+:::
 
-## 11 | Fiszki
+## 12 | Warstwa olimpijska — przysłówek na granicach {#olimpijska} [[exam:KONKURS]]
 
-1. Pytania przysłówka? → jak? gdzie? kiedy? jak bardzo?  
-2. Czy przysłówek się odmienia? → nie (ale część się stopniuje)  
-3. Stopień wyższy od *dobrze*? → lepiej  
-4. Najczęstsza funkcja? → okolicznik  
-5. *szybki* czy *szybko* przy czasowniku? → szybko  
-6. „Nie” z przysłówkiem odprzymiotnikowym? → łącznie we wszystkich stopniach  
-7. *nie teraz* — łącznie czy rozdzielnie? → rozdzielnie  
-8. *po polsku* — pisownia? → rozdzielnie  
-9. *naprawdę* — pisownia? → łącznie  
-10. Cztery rodzaje znaczeniowe? → sposobu, miejsca, czasu, stopnia i miary  
-11. *Było zimno* — funkcja *zimno*? → orzecznik w zdaniu bezpodmiotowym  
-12. *w ogóle* — pisownia? → rozdzielnie
+::: karta understand | Dla olimpijczyka — gdzie kończy się przysłówek
+Przysłówek to klasa podzielona na dwie warstwy: **otwartą** (odprzymiotnikowe, produktywne: od każdego przymiotnika utworzysz przysłówek) i **zamkniętą** (przysłówki zaimkowe: *gdzie, kiedy, stąd, tędy*). Na granicach klasy stoją trzy grupy wyrazów. Po pierwsze, **homonimia z przyimkami**: *blisko, naprzeciwko, dokoła* — same są przysłówkami, ale z rzeczownikiem w dopełniaczu tworzą wyrażenie przyimkowe (*mieszkam blisko* / *blisko dworca*). Po drugie, **partykuły stopniujące**: *coraz, jeszcze* współtworzą formę stopnia wyższego (*coraz ciszej, jeszcze lepiej*), lecz same nie odpowiadają na pytania o okoliczność — nowe słowniki kwalifikują je jako partykuły (m.in. WSJP). Po trzecie, **dużo / wiele / mało**: z rzeczownikiem w dopełniaczu zachowują się jak liczebniki nieokreślone (*dużo ludzi przyszło*), przy czasowniku są przysłówkami (*dużo pracował*). W zadaniach konkursowych nie zgaduj klasy — **zapisz funkcję w konkretnym zdaniu i nazwij przyjętą konwencję**. (Źródła: WSJP, gramatyki akademickie, np. Grzegorczykowa i in.; szczegóły kwalifikacji „niestety”, „coraz” — do weryfikacji.)
+:::
 
-## 12 | Wizualizacja
+::: nie-myl
+**Przysłówek ≠ partykuła.** *już, coraz, jeszcze, niestety* — partykuły (i inne wyrazy funkcyjne): nie pełnią samodzielnej funkcji składniowej, nie podkreślamy ich jako osobnej części zdania. *bardzo, zbyt, całkiem* — przysłówki stopnia: mogą być okolicznikami lub określać przymiotnik. Test: usuń wyraz — jeśli zdanie pozostaje pełne gramatycznie i tylko traci odcień (*On już przyszedł → On przyszedł*), to partykuła.
+:::
+
+::: nie-myl
+**Przysłówek ≠ przyimek (wyrażenie przyimkowe).** *Mieszkam blisko.* — przysłówek; *mieszkam blisko szkoły* — przyimek z dopełniaczem. *Szedł naprzeciwko.* — przysłówek; *stanął naprzeciwko bramy* — przyimek. Test: jeśli za wyrazem stoi rzeczownik w dopełniaczu, a razem nazywają okoliczność — to wyrażenie przyimkowe.
+:::
+
+::: nie-myl
+**Przysłówek ≠ liczebnik nieokreślony.** *dużo wody, mało czasu* — liczebnik nieokreślony z dopełniaczem; *dużo wiedział, mało mówił* — przysłówek przy czasowniku. Test: czy po wyrazie stoi rzeczownik w dopełniaczu.
+:::
+
+::: adv | Zadanie K1 (2 pkt) — Pułapka: „dużo” | poziom ambitny
+Określ część mowy i funkcję składniową wyrazu *dużo* w zdaniach: *Dużo uczniów przyszło wcześniej.* / *Dużo ćwiczyli wcześniej.*
+::: odp | Pokaż klucz
+1) liczebnik nieokreślony (razem z rzeczownikiem w dopełniaczu tworzy podmiot; orzeczenie w lp. nijakiej: *przyszło*); 2) przysłówek, okolicznik przy czasowniku (po 1 pkt). Uwaga: niektóre opracowania w obu użyciach widzą przysłówek ilościowy — w odpowiedzi zapisz przyjętą konwencję (+uzasadnienie funkcją).
+:::
+:::
+
+::: adv | Zadanie K2 (3 pkt) — Przekształcenie | poziom ambitny
+Przekształć zdanie tak, aby przymiotnik stał się przysłówkiem: *Jego odpowiedź była dokładna.* Podaj funkcje składniowe wyrazów *dokładna* i *dokładnie* oraz nazwij zmianę.
+::: odp | Pokaż klucz
+np. *Odpowiedział dokładnie.* — przymiotnik jako orzecznik (orzeczenie imienne) → przysłówek jako okolicznik (po 1 pkt za funkcje, 1 pkt za przekształcenie). Zmiana: część zdania okolicznik zamiast orzecznika przy tej samej części mowy-zdrodle... — sformułowanie kontrolne: zmienia się funkcja składniowa, nie „znaczenie”.
+:::
+:::
+
+::: adv | Zadanie K3 (3 pkt) — Uzasadnij klasyfikację | poziom ambitny
+W zdaniu *Coraz ciszej robiło się w lesie.* wyjaśnij, dlaczego *coraz* nie jest zwykłym przysłówkiem sposobu, mimo że stoi przy przysłówku.
+::: odp | Pokaż klucz
+*coraz* — partykuła stopniująca: współtworzy z *ciszej* formę stopnia wyższego, sama nie odpowiada na pytanie o okoliczność i nie pełni samodzielnej funkcji składniowej (kwalifikacja wg WSJP; część podręczników szkolnych zalicza ją do przysłówków — powołaj konwencję). 2 pkt za argumenty, 1 pkt za wskazanie konwencji.
+:::
+:::
+
+::: adv | Zadanie K4 (3 pkt) — Znajdź trzy błędy | poziom ambitny
+W zdaniu: *„Spóźnię się tylko pięć minut — bynajmniej nie dłużej. Napewno zdążę, bo nieteraz jadę szybciej.”* znajdź i popraw trzy błędy, wyjaśniając każdy.
+::: odp | Pokaż klucz
+*bynajmniej* → *przynajmniej* (bynajmniej = „wcale nie” — wypowiedź przeczyła by „wcale nie dłużej”, a mowa o pięciu minutach); *Napewno* → *Na pewno* (wyrażenie przyimkowe — rozdzielnie); *nieteraz* → *nie teraz* (przysłówek nieodprzymiotnikowy — rozdzielnie). Po 1 pkt za błąd z poprawką i uzasadnieniem.
+:::
+:::
+
+::: adv | Zadanie K5 (4 pkt) — Analiza tekstu | poziom ambitny
+(parafraza) *Nel, wyczerpana, szła coraz ciszej. — Jest mi wesoło, choć jest już późno — powiedziała cicho.* Wskaż przysłówki, nazwij ich rodzaj i stopień, określ funkcję w zdaniu; rozstrzygnij, dlaczego *wesoło* jest tu inną częścią zdania niż w *Dzieci śpiewają wesoło*.
+::: odp | Pokaż klucz
+*ciszej* — przysłówek sposobu w stopniu wyższym, okolicznik (1 pkt); *wesoło* — orzecznik w zdaniu bezpodmiotowym (*jest mi wesoło*), a w *śpiewają wesoło* — okolicznik (1 pkt); *późno* — orzecznik w zdaniu bezpodmiotowym (1 pkt); *cicho* — przysłówek sposobu, okolicznik (1 pkt). *już* i *coraz* — partykuły (nie podkreślamy ich jako części zdania); konwencje szkolne mogą różnie kwalifikować *coraz* — zapisz przyjętą.
+:::
+:::
+
+::: adv | Zadanie K6 (2 pkt) — Pułapka: stare i nowe zasady | poziom ambitny
+Ustal pisownię: *Jego praca wypadła (nie)gorzej niż twoja, ale (nie)najgorzej w całej klasie.* — według zasad obowiązujących od 1.01.2026 i według zasad wcześniejszych.
+::: odp | Pokaż klucz
+Od 2026: *niegorzej, nienajgorzej* (łącznie we wszystkich stopniach); przed 2026: *nie gorzej, nie najgorzej* (rozdzielnie w stopniu wyższym i najwyższym). Po 1 pkt za wersję; pokazuje, dlaczego przy arkuszach z różnych lat trzeba sprawdzać rok zasad.
+:::
+:::
+
+## 13 | Fiszki [[basic:E8]]
+
+::: fiszki
+Pytania przysłówka? | jak? gdzie? kiedy? jak bardzo? | basic:przyslowek
+Czy przysłówek się odmienia? | nie (ale część się stopniuje) | basic:przyslowek
+Stopień wyższy od „dobrze”? | lepiej | basic:przyslowek
+Najczęstsza funkcja przysłówka w zdaniu? | okolicznik | basic:przyslowek
+„Szybki” czy „szybko” przy czasowniku? | szybko | basic:przyslowek
+„Nie” z przysłówkiem odprzymiotnikowym? | łącznie we wszystkich stopniach | basic:przyslowek
+„Nie teraz” — łącznie czy rozdzielnie? | rozdzielnie | basic:przyslowek
+„Po polsku” — pisownia? | rozdzielnie | basic:przyslowek
+„Naprawdę” — pisownia? | łącznie | basic:przyslowek
+Cztery rodzaje znaczeniowe przysłówków? | sposobu, miejsca, czasu, stopnia i miary | basic:przyslowek
+„Było zimno” — funkcja wyrazu „zimno”? | orzecznik w zdaniu bezpodmiotowym | basic:przyslowek
+„W ogóle” — pisownia? | rozdzielnie | basic:przyslowek
+„Dużo” w „dużo wiem” i w „dużo ludzi” | przysłówek / liczebnik nieokreślony — rozstrzyga funkcja | olimpijski:przyslowek
+„Bynajmniej” znaczy | wcale nie | olimpijski:przyslowek
+„Coraz” — część mowy wg nowych słowników (WSJP) | partykuła stopniująca | olimpijski:przyslowek
+„Jeszcze lepiej” — czym jest „jeszcze”? | partykułą wzmacniającą stopień wyższy | olimpijski:przyslowek
+„Blisko” — przysłówek czy przyimek? | sam — przysłówek; z rzeczownikiem w dopełniaczu — przyimek | olimpijski:przyslowek
+:::
+
+## 14 | Test sprawdzający [[basic:E8]]
+
+::: test
+? Który wyraz w zdaniu *Kot biega szybko.* jest przysłówkiem?
++ szybko
+- kot
+- biega
+- szybki
+! *Szybko* odpowiada na pytanie *jak biega?* i nie odmienia się; *kot* — podmiot (rzeczownik), *biega* — orzeczenie (czasownik).
+? Stopień najwyższy przysłówka *źle* to:
++ najgorzej
+- najźle
+- najbardziej źle
+- najlepiej
+! *Źle* stopniuje się nieregularnie: źle — gorzej — najgorzej.
+? Który zapis jest poprawny?
++ po cichu
+- pocichu
+- pocichem
+- po cichem
+! Wyrażenia przyimkowe z *po* piszemy rozdzielnie: po cichu, po polsku, po trochu.
+? Uzupełnij: *Czuł się ______ po chorobie.*
++ dobrze
+- dobry
+- dobra
+- dobrym
+! Pytanie *jak się czuł?* wymaga przysłówka; przymiotnik określałby rzeczownik.
+? Funkcja wyrazu *późno* w zdaniu *Było późno.* to:
++ orzecznik w zdaniu bezpodmiotowym
+- okolicznik czasu
+- przydawka
+- podmiot logiczny
+! Zdanie nie ma podmiotu, którego dałoby się dodać; *późno* nazywa stan — to orzecznik.
+? (konkurs) Wyraz *dużo* w zdaniu *Dużo uczniów przyszło.* to:
++ liczebnik nieokreślony
+- przysłówek
+- zaimek nieokreślony
+- partykuła
+! Łączy się z rzeczownikiem w dopełniaczu i tworzy podmiot — liczebnik nieokreślony; w *dużo pracował* byłby przysłówkiem. Konwencje szkolne bywają różne — w uzasadnieniu podaj funkcję.
+? (konkurs) Zdanie *Bynajmniej się nie spóźnię.* znaczy:
++ wcale się nie spóźnię
+- przynajmniej się nie spóźnię
+- prawie się nie spóźnię
+- często się nie spóźnię
+! *Bynajmniej* = „wcale nie” — częsta pułapka znaczeniowa.
+? (konkurs) Którego zapisu wymagają zasady obowiązujące od 1.01.2026?
++ nienajgorzej
+- nie najgorzej
+- najniegorzej
+- niegorzej
+! Od 1.01.2026 „nie” z przysłówkiem odprzymiotnikowym w stopniu najwyższym piszemy łącznie (wcześniej: rozdzielnie).
+:::
+
+## 15 | Słownik
+
+::: slownik
+przysłówek :: nieodmienna część mowy określająca czasownik, przymiotnik lub inny przysłówek; nazywa sposób, miejsce, czas, stopień lub miarę
+stopniowanie :: tworzenie form oznaczających natężenie cechy (stopień wyższy, najwyższy); nie jest odmianą
+przysłówek odprzymiotnikowy :: przysłówek utworzony od przymiotnika, zwykle zakończony na -o lub -e (dobrze, ładnie)
+przysłówek zaimkowy (zaimek przysłowny) :: przysłówek o charakterze zaimkowym (tu, tam, gdzie, kiedy, wtedy)
+wyrażenie przyimkowe :: połączenie przyimka z innym wyrazem (po polsku, na pewno), pisane rozdzielnie; nie jest jednolitym przysłówkiem
+okolicznik :: część zdania podająca okoliczności czynności (miejsce, czas, sposób, przyczynę, cel, stopień, miarę)
+orzecznik :: część orzeczenia imiennego nazywająca cechę lub tożsamość podmiotu (*jest wesoły*); także w zdaniu bezpodmiotowym (*było zimno*)
+zdanie bezpodmiotowe :: zdanie bez wykonawcy czynności, którego nie da się dodać (*Grzmi. Zrobiło się zimno.*)
+partykuła :: nieodmienny wyraz funkcyjny modyfikujący znaczenie (*już, coraz, czy, niech*); nie pełni samodzielnej funkcji składniowej
+bynajmniej :: wyraz znaczący „wcale nie” — nie mylić z „przynajmniej” (= co najmniej)
+:::
+
+## 16 | Mnemotechniki
+
+::: wskazowki
+Rzeczownik czy czasownik? — „GŁOŚNY śmiech (jaki? przy rzeczowniku) — śmieje się GŁOŚNO (jak? przy czasowniku)”.
+Nieregularne na zdanie-rym: „LEPIEJ ci, gdy uczysz się DOBRZE; GORZEJ, gdy robisz to ŹLE; WIĘCEJ wiesz, gdy ćwiczysz DUŻO; MNIEJ, gdy ćwiczysz MAŁO”.
+„Nie”: odprzymiotnikowe na -o/-e — „NIE” naklejone do słowa (*niedobrze*); pozostałe — „NIE” idzie osobno (*nie dziś*).
+„Bynajmniej nie = wcale nie”: zapamiętaj zdanie *To bynajmniej nie prawda* = *To wcale nie prawda*.
+Język z „po” idzie osobno, jak przez tłumacza: *po polsku, po angielsku* — zawsze rozdzielnie.
+Cztery drzwi przysłówka: J–G–K–B: Jak? Gdzie? Kiedy? jak Bardzo?
+:::
+
+## 17 | Wizualizacja
+
+Grafiki są na razie propozycjami (bez kodów `@viz`); opisy zostają, by treść była czytelna bez grafiki.
 
 **Grafika 1:** Para „przymiotnik ↔ przysłówek”: lewa kolumna *szybki chłopiec* (strzałka do rzeczownika), prawa *biegnie szybko* (strzałka do czasownika), pod spodem tabela stopniowania.  
 @opis Dwie karty obok siebie: po lewej przymiotnik ze strzałką do rzeczownika i odmianą (szybki, szybkiego, szybkiemu), po prawej przysłówek ze strzałką do czasownika i jedną niezmienną formą. Pod nimi wiersze stopniowania: szybko–szybciej–najszybciej, dobrze–lepiej–najlepiej. Wniosek: przymiotnik określa rzeczownik i się odmienia, przysłówek określa czasownik i się nie odmienia.
@@ -181,9 +473,15 @@ Uzupełnij zdanie dwoma przysłówkami różnych rodzajów i nazwij ich rodzaje:
 **Grafika 2:** Tabela pisowni „łącznie / rozdzielnie”: dwie kolumny wyrazów (*naprawdę, naprzeciwko, wkrótce* | *po polsku, na pewno, w ogóle, z powrotem*).  
 @opis Dwie kolumny z nagłówkami „łącznie” (zielone) i „rozdzielnie” (niebieskie), po 6–8 przykładów w każdej, pod spodem pasek „nie + przysłówek odprzymiotnikowy = łącznie (od 2026)”. Wniosek: wyrażenia przyimkowe piszemy osobno, przysłówki złożone — razem.
 
-## 13 | Uzupełnienie po audycie braków — wersja 2.0
+**Grafika 3 (propozycja):** „Oś stopniowania” — trzy punkty: stopień równy → wyższy → najwyższy i cztery ścieżki: regularna (*cicho – ciszej – najciszej*), nieregularna (*dobrze – lepiej – najlepiej*), opisowa (*interesująco – bardziej interesująco – najbardziej interesująco*) oraz „ślepa uliczka” dla przysłówków niestopniowalnych (*wczoraj, tu*).
+@opis Pozioma oś z trzema punktami podpisanymi „równy”, „wyższy”, „najwyższy”; nad nią cztery tory w różnych kolorach z przykładami form, czwarty tor (wczoraj, tu) urywa się po pierwszym punkcie znakiem stopu. Wniosek: stopniowanie to skala natężenia cechy, a nie odmiana — i nie każdy przysłówek ją ma.
 
-### 13.1. Rozpoznawanie przysłówka przez funkcję
+**Grafika 4 (propozycja):** „Mapa «nie»” — rozgałęzienie decyzji o pisowni *nie* z przysłówkiem.
+@opis Schemat drzewka: start „nie + przysłówek”; gałąź 1 „odprzymiotnikowy na -o/-e” → „łącznie, także w stopniu wyższym i najwyższym (od 2026)”, np. niedobrze, nienajlepiej; gałąź 2 „przeciwstawienie z lecz/ale” → „rozdzielnie”, np. nie szybko, lecz wolno; gałąź 3 „wyraz bez nie- nie istnieje lub zmienia znaczenie” → „łącznie”, np. niechcący, nieraz; gałąź 4 „pozostałe przysłówki” → „rozdzielnie”, np. nie dziś, nie tu. Wniosek: najpierw ustal, od czego pochodzi przysłówek, potem sprawdź przeciwstawienie.
+
+## 18 | Uzupełnienie po audycie braków — wersja 2.0
+
+### 18.1. Rozpoznawanie przysłówka przez funkcję
 
 Przysłówek jest nieodmienny i najczęściej określa czasownik, przymiotnik albo inny przysłówek. Samo pytanie „jak?” nie wystarcza: pytanie trzeba zadać do konkretnego wyrazu w zdaniu.
 
@@ -195,7 +493,7 @@ Przysłówek jest nieodmienny i najczęściej określa czasownik, przymiotnik al
 
 Porównaj: *szybki samochód* (przymiotnik, określa rzeczownik) — *samochód jedzie szybko* (przysłówek, określa czasownik). Nie twórz klasyfikacji wyłącznie z końcówki: istnieją przysłówki o formach podobnych do innych części mowy, np. *dobrze, źle, dużo, mało*.
 
-### 13.2. Rodzaje znaczeniowe i pytania pomocnicze
+### 18.2. Rodzaje znaczeniowe i pytania pomocnicze
 
 | Rodzaj | Pytania | Przykłady |
 |---|---|---|
@@ -207,7 +505,7 @@ Porównaj: *szybki samochód* (przymiotnik, określa rzeczownik) — *samochód 
 
 Nie każda klasyfikacja szkolna wyróżnia dokładnie ten sam zestaw rodzajów. W zadaniu należy korzystać z terminologii podanej w poleceniu i zawsze uzasadniać odpowiedź funkcją wyrazu.
 
-### 13.3. Stopniowanie — regularne, nieregularne i opisowe
+### 18.3. Stopniowanie — regularne, nieregularne i opisowe
 
 Stopniowanie proste:
 - równy: *szybko, cicho, wysoko*;
@@ -225,7 +523,7 @@ Stopniowanie opisowe tworzymy za pomocą *bardziej / mniej* i *najbardziej / naj
 
 **Uwaga na znaczenie:** stopień wyższy nie zawsze oznacza większą jakość; porównanie musi mieć punkt odniesienia: *Dzisiaj pracował staranniej niż wczoraj.*
 
-### 13.4. Pisownia i częste pułapki
+### 18.4. Pisownia i częste pułapki
 
 - Przysłówki odprzymiotnikowe zakończone na *-o, -e* często piszemy z *nie* łącznie, gdy tworzą zwykłe zaprzeczenie cechy: *niedobrze, nieładnie, niestarannie*. Przy wyraźnym przeciwstawieniu: *nie dobrze, lecz znakomicie* — rozdzielnie.
 - *Po polsku, po cichu, po prostu* — zapis rozdzielny.
@@ -236,48 +534,72 @@ Stopniowanie opisowe tworzymy za pomocą *bardziej / mniej* i *najbardziej / naj
 
 Nie stosuj jednej reguły do wszystkich wyrażeń zaczynających się od *na, po, z*. Pisownię utrwalaj na konkretnych połączeniach i w razie wątpliwości sprawdzaj w aktualnym słowniku ortograficznym.
 
-### 13.5. Ćwiczenia dodatkowe z kluczem
+### 18.5. Ćwiczenia dodatkowe z kluczem
 
-**D1.** Wskaż przysłówki i napisz, co określają: *Bardzo uważnie przeczytała wyjątkowo trudny tekst.*  
-**Klucz:** *uważnie* — czasownik *przeczytała*; *bardzo* — przysłówek *uważnie*; *wyjątkowo* — przymiotnik *trudny*.
+::: karta exam | Zadanie D1 (3 pkt) — Co określa przysłówek?
+Wskaż przysłówki i napisz, co określają: *Bardzo uważnie przeczytała wyjątkowo trudny tekst.*
+::: odp | Pokaż klucz
+*uważnie* — czasownik *przeczytała*; *bardzo* — przysłówek *uważnie*; *wyjątkowo* — przymiotnik *trudny* (po 1 pkt).
+:::
+:::
 
-**D2.** Utwórz stopień wyższy i najwyższy: *dobrze, cicho, dużo, starannie*.  
-**Klucz:** lepiej/najlepiej; ciszej/najciszej; więcej/najwięcej; staranniej/najstaranniej (możliwe też stopniowanie opisowe zależnie od kontekstu).
+::: karta exam | Zadanie D2 (2 pkt) — Stopnie wyższy i najwyższy
+Utwórz stopień wyższy i najwyższy: *dobrze, cicho, dużo, starannie*.
+::: odp | Pokaż klucz
+lepiej/najlepiej; ciszej/najciszej; więcej/najwięcej; staranniej/najstaranniej (możliwe też stopniowanie opisowe zależnie od kontekstu).
+:::
+:::
 
-**D3.** Popraw zapis: *na prawdę, po polsku, nie dobrze mi poszło, bynajmniej trzy osoby*.  
-**Klucz:** *naprawdę*; *po polsku*; *niedobrze mi poszło* (jeśli brak przeciwstawienia); *przynajmniej trzy osoby* (jeśli chodzi o minimum). *Bynajmniej* nie znaczy „co najmniej”.
+::: karta exam | Zadanie D3 (2 pkt) — Popraw zapis
+Popraw zapis: *na prawdę, po polsku, nie dobrze mi poszło, bynajmniej trzy osoby*.
+::: odp | Pokaż klucz
+*naprawdę*; *po polsku*; *niedobrze mi poszło* (jeśli brak przeciwstawienia); *przynajmniej trzy osoby* (jeśli chodzi o minimum). *Bynajmniej* nie znaczy „co najmniej”.
+:::
+:::
 
-**D4.** Czy można stopniować wyrazy *jutro, zawsze, daleko, źle*? Uzasadnij.  
-**Klucz:** *jutro* i *zawsze* — nie w typowym znaczeniu; *daleko* — tak (*dalej, najdalej*); *źle* — nieregularnie (*gorzej, najgorzej*).
+::: karta exam | Zadanie D4 (2 pkt) — Czy każdy przysłówek się stopniuje?
+Czy można stopniować wyrazy *jutro, zawsze, daleko, źle*? Uzasadnij.
+::: odp | Pokaż klucz
+*jutro* i *zawsze* — nie w typowym znaczeniu; *daleko* — tak (*dalej, najdalej*); *źle* — nieregularnie (*gorzej, najgorzej*).
+:::
+:::
 
-**D5.** Ułóż dwa zdania, w których ten sam wyraz będzie miał różne funkcje lub klasyfikację.  
-**Klucz:** odpowiedź własna; uczeń musi wskazać kontekst i uzasadnić funkcję, np. *Blisko mieszkam* / *Blisko szkoły stoi sklep* — drugie zawiera połączenie z dopełniaczem.
+::: karta exam | Zadanie D5 (2 pkt) — Ten sam wyraz, dwie funkcje
+Ułóż dwa zdania, w których ten sam wyraz będzie miał różne funkcje lub klasyfikację.
+::: odp | Pokaż klucz
+Odpowiedź własna; uczeń wskazuje kontekst i uzasadnia funkcję, np. *Blisko mieszkam.* / *Blisko szkoły stoi sklep.* — drugie zawiera połączenie z dopełniaczem.
+:::
+:::
 
-### 13.6. Checklista
+### 18.6. Checklista
 
-- Czy wiem, jaki wyraz przysłówek określa?
-- Czy odróżniam przysłówek od przymiotnika?
-- Czy potrafię utworzyć stopnie regularne i nieregularne?
-- Czy rozpoznaję przysłówki, których się nie stopniuje?
-- Czy sprawdziłem/sprawdziłam pisownię stałych wyrażeń i znaczenie *bynajmniej*?
+::: checklista
+- [ ] Wiem, jaki wyraz przysłówek określa.
+- [ ] Odróżniam przysłówek od przymiotnika.
+- [ ] Umiem utworzyć stopnie regularne i nieregularne.
+- [ ] Rozpoznaję przysłówki, których się nie stopniuje.
+- [ ] Sprawdziłem/sprawdziłam pisownię stałych wyrażeń i znaczenie *bynajmniej*.
+:::
 
-## 14 | Audyt po uzupełnieniu
+## 19 | Audyt po uzupełnieniu
 
 Wersja 2.0 dodaje rozpoznawanie przez funkcję, tabelę rodzajów, stopniowanie nieregularne i opisowe, pułapki pisowni oraz zadania z kluczem. Zachowano treść bazową.
 
-**Do kontroli niezależnej:** granice kategorii znaczeniowych przysłówków oraz klasyfikacja wyrazów typu *blisko, dlatego, celowo* mogą różnić się w opisach szkolnych. Odpowiedź powinna być oceniana według funkcji w konkretnym zdaniu.
+Wersja 4.0 (ULEPSZONA) dodaje ponadto wykład, trzy mini-wykłady „W skrócie”, warstwę olimpijską z sześcioma zadaniami, test, słownik, mnemotechniki i ciekawostki; poprawiono znaczenie *nieraz*, kwalifikację *coraz* i *niestety* oraz duplikat numeracji sekcji.
 
-## 14 | Drugi cykl opracowania: przysłówek w analizie zdania v3.0
+**Do kontroli niezależnej:** granice kategorii znaczeniowych przysłówków oraz klasyfikacja wyrazów typu *blisko, dlatego, celowo, coraz, niestety* mogą różnić się w opisach szkolnych. Odpowiedź powinna być oceniana według funkcji w konkretnym zdaniu.
 
-### 14.1. Co przysłówek określa?
+## 20 | Drugi cykl opracowania: przysłówek w analizie zdania v3.0
 
-Przysłówek jest najczęściej nieodmienną częścią mowy określającą czasownik (*biegnie szybko*), przymiotnik (*bardzo miły*), inny przysłówek (*wyjątkowo cicho*) albo całe zdanie (*Niestety, nie zdążyliśmy*). Odpowiada m.in. na pytania: jak? gdzie? dokąd? skąd? kiedy? odkąd? jak długo? w jakim stopniu? Nie każdy wyraz odpowiadający na „jak?” jest przysłówkiem: *ładnie* w „ładnie śpiewa” to przysłówek, ale *ładna* w „ładna piosenka” to przymiotnik.
+### 20.1. Co przysłówek określa?
 
-### 14.2. Przysłówek a przymiotnik
+Przysłówek jest najczęściej nieodmienną częścią mowy określającą czasownik (*biegnie szybko*), przymiotnik (*bardzo miły*) lub inny przysłówek (*wyjątkowo cicho*). Odpowiada m.in. na pytania: jak? gdzie? dokąd? skąd? kiedy? odkąd? jak długo? w jakim stopniu? Nie każdy wyraz odpowiadający na „jak?” jest przysłówkiem: *ładnie* w „ładnie śpiewa” to przysłówek, ale *ładna* w „ładna piosenka” to przymiotnik. Niektóre wyrazy komentują całe zdanie (np. *niestety*), ale nie są przysłówkami — to wtrącenia wyrażane wyrazami modalnymi (patrz 20.5).
 
-Przymiotnik określa rzeczownik i odmienia się: *uważny uczeń, uważna uczennica, uważne dziecko*. Przysłówek określa przede wszystkim czynność lub cechę: *uczeń czyta uważnie; wyjątkowo uważnie czyta*. Przysłówki odprzymiotnikowe często kończą się na *-e* lub *-o*: *dobry → dobrze, szybki → szybko, cichy → cicho*. Są jednak formy nieregularne i leksykalizowane, dlatego nie należy tworzyć ich mechanicznie.
+### 20.2. Przysłówek a przymiotnik
 
-### 14.3. Stopniowanie — regularne i nieregularne
+Przymiotnik określa rzeczownik i odmienia się: *uważny uczeń, uważna uczennica, uważne dziecko*. Przysłówek określa przede wszystkim czynność lub cechę: *uczeń czyta uważnie; wyjątkowo uważnie czyta*. Przysłówki odprzymiotnikowe często kończą się na *-e* lub *-o*: *dobry → dobrze, szybki → szybko, cichy → cicho*. Są jednak formy nieregularne i utrwalone, dlatego nie należy tworzyć ich mechanicznie.
+
+### 20.3. Stopniowanie — regularne i nieregularne
 
 - regularne: *szybko — szybciej — najszybciej*; *cicho — ciszej — najciszej*;
 - opisowe: *bardziej elegancko — najbardziej elegancko*;
@@ -285,7 +607,7 @@ Przymiotnik określa rzeczownik i odmienia się: *uważny uczeń, uważna uczenn
 
 Stopień wyższy nie zawsze oznacza rzeczywisty pomiar: *zachował się lepiej* jest oceną zależną od kontekstu. Stopień najwyższy często tworzymy przez dodanie *naj-* do stopnia wyższego, ale form nieregularnych trzeba się nauczyć. Nie wszystkie przysłówki mają stopień wyższy: przysłówki oznaczające relację lub czas (*wczoraj, tutaj, wszędzie*) zwykle nie stopniują się.
 
-### 14.4. Pisownia i wyrażenia łatwe do pomylenia
+### 20.4. Pisownia i wyrażenia łatwe do pomylenia
 
 - **naprawdę** — łącznie: *Naprawdę nie wiedziałem*;
 - **na pewno** — rozdzielnie;
@@ -293,7 +615,7 @@ Stopień wyższy nie zawsze oznacza rzeczywisty pomiar: *zachował się lepiej* 
 - **niedobrze** — łącznie, gdy znaczy „źle”; rozdzielnie przy wyraźnym przeciwstawieniu: *nie dobrze, lecz znakomicie*;
 - **bynajmniej** nie znaczy „przynajmniej”: *bynajmniej nie twierdzę* = „wcale nie twierdzę”; *przynajmniej trzy osoby* = „co najmniej trzy osoby”.
 
-### 14.5. Funkcja w zdaniu i stopień zależności
+### 20.5. Funkcja w zdaniu i stopień zależności
 
 W zdaniu *Bardzo uważnie przeczytała wyjątkowo trudny tekst*:
 - *przeczytała* — czasownik;
@@ -301,37 +623,54 @@ W zdaniu *Bardzo uważnie przeczytała wyjątkowo trudny tekst*:
 - *bardzo* — przysłówek określający *uważnie*;
 - *wyjątkowo* — przysłówek określający przymiotnik *trudny*.
 
-Przysłówek może też określać całe zdanie: *Niestety, pociąg odjechał*. W takim użyciu komentuje treść wypowiedzi, a nie tylko pojedynczy wyraz. Nie myl funkcji części mowy z funkcją składniową: „przysłówek” to część mowy, „okolicznik” to funkcja składniowa, często realizowana przez przysłówek, ale nie wyłącznie.
+Wyrazy typu *niestety* komentują całe zdanie, ale nie są przysłówkami — to wtrącenia; w słownikach kwalifikowane różnie (np. jako partykuła lub wykrzyknik; do weryfikacji). Nie myl też funkcji części mowy z funkcją składniową: „przysłówek” to część mowy, „okolicznik” to funkcja składniowa, często realizowana przez przysłówek, ale nie wyłącznie.
 
-### 14.6. Ćwiczenia po uzupełnieniu
+### 20.6. Ćwiczenia po uzupełnieniu
 
-**A. Wskaż przysłówki i wyjaśnij, co określają:**
-1. *Bardzo dokładnie przepisała wyjątkowo długi tekst.*
-2. *Wczoraj spotkaliśmy się tutaj.*
+::: karta exam | Ćwiczenie A (3 pkt) — Wskaż przysłówki i wyjaśnij, co określają
+1. *Bardzo dokładnie przepisała wyjątkowo długi tekst.*  
+2. *Wczoraj spotkaliśmy się tutaj.*  
 3. *Niestety, autobus przyjechał późno.*
+::: odp | Pokaż klucz
+1. *dokładnie* określa *przepisała*; *bardzo* określa *dokładnie*; *wyjątkowo* określa *długi*; 2. *wczoraj* — czas; *tutaj* — miejsce; 3. *niestety* — wtrącenie komentujące całe zdanie (wyraz modalny, nie przysłówek), *późno* określa *przyjechał*.
+:::
+:::
 
-**Klucz:** 1. *dokładnie* określa *przepisała*; *bardzo* określa *dokładnie*; *wyjątkowo* określa *długi*; 2. *wczoraj* — czas; *tutaj* — miejsce; 3. *niestety* komentuje całe zdanie, *późno* określa *przyjechał*.
+::: karta exam | Ćwiczenie B (2 pkt) — Utwórz stopnie
+Utwórz stopnie: *starannie, źle, dużo, daleko, interesująco.*
+::: odp | Pokaż klucz
+*staranniej — najstaranniej*; *gorzej — najgorzej*; *więcej — najwięcej*; *dalej — najdalej*; *bardziej interesująco — najbardziej interesująco*. Uwaga: forma *dalej* bywa także przysłówkiem czasu („czytaj dalej”) — wtedy nie jest stopniem *daleko*; forma *dalejże* nie jest stopniowaniem (to *dalej* z wtrąconą partykułą *-że*).
+:::
+:::
 
-**B. Utwórz stopnie:** *starannie, źle, dużo, daleko, interesująco.*
-
-**Klucz:** *staranniej — najstaranniej*; *gorzej — najgorzej*; *więcej — najwięcej*; *dalej — najdalej*; *bardziej interesująco — najbardziej interesująco*. Forma *dalejże* nie jest stopniem przysłówka w tym zestawieniu.
-
-**C. Popraw zapis i wyjaśnij:**
-1. *na prawdę*;
-2. *napewno*;
-3. *by najmniej trzy osoby* (znaczenie: co najmniej);
+::: karta exam | Ćwiczenie C (2 pkt) — Popraw zapis i wyjaśnij
+1. *na prawdę*;  
+2. *napewno*;  
+3. *by najmniej trzy osoby* (znaczenie: co najmniej);  
 4. *nie dobrze, lecz źle*.
+::: odp | Pokaż klucz
+*naprawdę*; *na pewno*; *przynajmniej trzy osoby*; w punkcie 4 przeciwstawienie jest poprawne ortograficznie (rozdzielnie ze spójnikiem *lecz*), ale zestawienie znaczeniowo nienaturalne — lepiej: *nie dobrze, lecz znakomicie*.
+:::
+:::
 
-**Klucz:** *naprawdę*; *na pewno*; *przynajmniej trzy osoby*; *niedobrze, lecz źle* — w ostatnim przykładzie przeciwstawienie nie jest naturalne semantycznie; lepiej: *nie dobrze, lecz znakomicie*.
+### 20.7. Zadanie analityczne
 
-### 14.7. Zadanie analityczne
+::: karta exam | Zadanie analityczne (4 pkt) — Analiza zdania złożonego współrzędnie
+Przeanalizuj: „Niezwykle starannie i naprawdę szybko wykonała doświadczenie, ale niestety zbyt późno zapisała wynik”. Wskaż przysłówki, określane wyrazy, stopniowanie oraz funkcję spójnika *ale*.
+::: odp | Pokaż klucz
+*niezwykle* określa *starannie* (1 pkt); *starannie* i *szybko* określają *wykonała* (1 pkt); *naprawdę* wzmacnia *szybko* (0,5 pkt); *zbyt* określa *późno*, *późno* określa *zapisała* (1 pkt); *ale* — spójnik przeciwstawnym łączący człony (0,5 pkt). *Niestety* — wtrącenie komentujące drugą część (wyraz modalny, nie przysłówek).
+:::
+:::
 
-Przeanalizuj: „Niezwykle starannie i naprawdę szybko wykonała doświadczenie, ale niestety zbyt późno zapisała wynik”. Wskaż przysłówki, określane wyrazy, stopniowanie oraz funkcję spójnika *ale*. **Klucz:** *niezwykle* określa *starannie*; *starannie* i *szybko* określają *wykonała*; *naprawdę* wzmacnia *szybko*; *niestety* komentuje drugą część; *zbyt* określa *późno*; *późno* określa *zapisała*. *Ale* jest spójnikiem przeciwstawnym.
+### 20.8. Samokontrola
 
-### 14.8. Samokontrola
-
-Umiem odróżnić przysłówek od przymiotnika, rozpoznać wyraz określany, stopniować formy regularne i nieregularne, wskazać formy niestopniowalne oraz poprawnie zapisać *naprawdę, na pewno, po polsku, niedobrze, bynajmniej/przynajmniej*.
-
+::: checklista
+- [ ] Umiem odróżnić przysłówek od przymiotnika.
+- [ ] Umiem rozpoznać wyraz określany przez przysłówek.
+- [ ] Umiem stopniować formy regularne i nieregularne.
+- [ ] Umiem wskazać formy niestopniowalne.
+- [ ] Poprawnie zapisuję *naprawdę, na pewno, po polsku, niedobrze* i odróżniam *bynajmniej* od *przynajmniej*.
+:::
 
 ## AUDYT W1 — wynik (GPT-6, 2026-10-09)
 
@@ -341,3 +680,13 @@ Umiem odróżnić przysłówek od przymiotnika, rozpoznać wyraz określany, sto
 - Klucze ćwiczeń i pozostałe przykłady: kontrola wykonana; zadania autorskie pozostają materiałem autorskim.
 
 **Źródła normatywne:** Rada Języka Polskiego PAN, „Zasady pisowni i interpunkcji polskiej” (https://rjp.pan.pl/zasady-pisowni-i-interpunkcji-polskiej-2/); CKE, informacja z 20.08.2025 r. — w latach 2026–2030 na egzaminach akceptowane są zasady dotychczasowe i nowe (https://bip.cke.gov.pl/attachments/download/10293).
+
+### AUDYT W1 — ULEPSZ z warstwą olimpijską (2026-10-11)
+Surowa odpowiedź: `polski/plany/audyty/ULEPSZ_OLI_G07_G12_2026-10-11.md` (model AI z paczki `AI_ULEPSZ_POL_OLI1_G07_G12`; odpowiedź objęła G07 w całości, G12 tylko do §5 — model nie przeczytał dalszej części pliku).
+
+**Przyjęte:** wykład „przysłówek od zera”, trzy mini-wykłady „W skrócie”, warstwa olimpijska (§12, zadania K1–K6, „Dla olimpijczyka”), test (8 pytań), słownik (10 haseł), mnemotechniki, 4 ciekawostki, 2 nowe błędy w klinice, 5 fiszek olimpijskich; zamiana fiszek, kliniki, ćwiczeń i checklist na bloki składni kursu (treść i klucze zachowane — sprawdzone skryptem); renumeracja zdublowanej sekcji 14 → 20; kwalifikacja *niestety* jako wyrazu modalnego (wtrącenie), nie przysłówka; *coraz* jako partykuła stopniująca z zaznaczeniem konwencji szkolnej (przysłówek stopnia); doprecyzowanie *dalej/dalejże*; propozycje grafik 3–4 (oś stopniowania, mapa „nie”) — z opisami.
+
+**Poprawione względem propozycji:** *nieraz* — model zmienił „(= często)” na „(= niekiedy, czasami)”; słowniki podają przede wszystkim „wiele razy, niejednokrotnie”, więc zapisano to znaczenie (pierwotne „często” było bliskie, „niekiedy” — mylące). Opisy grafik 1–2 przywrócone jako linie `@opis` (model zamienił je na zwykły tekst „Opis:”).
+
+**Nieprzyjęte:** scalenie §18.4 z §20.4 (pułapki pisowni) — zasada „nic nie usuwamy”; zostaje do decyzji przy przebudowie. Linia `stan:` z odpowiedzi („ULEPSZONA — Claude, 2026-10-10”) — nieprawdziwa, zastąpiona.
+

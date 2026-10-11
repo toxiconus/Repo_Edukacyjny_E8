@@ -7,7 +7,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 14 KB
-- `MAPA.md` 26 KB
+- `MAPA.md` 27 KB
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
@@ -67,11 +67,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 10 KB
 - `PRZEKAZANIE.md` 5 KB
 
-## biologia/bio/md  (10 pl., 653 KB)
+## biologia/bio/md  (10 pl., 660 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 37 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 54 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 59 KB
-- ⚠`BIO.07.H01.homeostaza.md` 74 KB
+- ⚠`BIO.07.H01.homeostaza.md` 81 KB
 - `BIO.07.U01.skora_i_uklad_ruchu.md` 50 KB
 - ⚠`BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` 87 KB
 - ⚠`BIO.07.U04.krazenie_krew_odpornosc.md` 80 KB
@@ -116,10 +116,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (22 pl., 531 KB)
+## biologia/plany/audyty  (23 pl., 586 KB)
 - (zwinięte; `ls biologia/plany/audyty`) — duże:
 - ⚠`ULEPSZ_H01_gpt-6_2026-10-11.md` 52 KB
 - ⚠`ULEPSZ_H01_model_B_2026-10-11.md` 61 KB
+- ⚠`ULEPSZ_H01_model_E_2026-10-11.md` 55 KB
 - ⚠`W1_perplexity_U04_krazenie_2026-10-11.md` 78 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
@@ -581,11 +582,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (11 pl., 62 KB)
+## eksport  (12 pl., 64 KB)
 - `.gitignore` 0 KB
 - `JAK_WYSYLAC.md` 3 KB
 - `KOLEJKA_AI.md` 3 KB
 - `OCENA_MODELI.md` 3 KB
+- `OLIMPIADA_DODATEK.md` 2 KB
 - `ULEPSZ_PROMPT.md` 12 KB
 - `W1_PROMPT.md` 8 KB
 - `html2md.py` 4 KB
@@ -808,7 +810,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 529 KB)
+## polski/podstawy  (23 pl., 555 KB)
 - (zwinięte; `ls polski/podstawy`)
 
 ## polski/szablon  (2 pl., 23 KB)

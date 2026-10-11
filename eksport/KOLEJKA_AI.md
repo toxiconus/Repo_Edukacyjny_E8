@@ -20,7 +20,7 @@
 
 **niski priorytet (W1 starym promptem) — 2 lekcji, 88 KB:** REV01 (35 KB) · REV02 (53 KB)
 
-**NIE wysyłać (W1 FULL) — 2 lekcji, 131 KB:** L010 (58 KB) · H01 (72 KB)
+**NIE wysyłać (W1 FULL) — 2 lekcji, 137 KB:** L010 (58 KB) · H01 (78 KB)
 
 ## chemia
 
@@ -38,19 +38,19 @@
 
 ## polski
 
-**WYSŁAĆ (bez W1) — 9 lekcji, 243 KB:** PL.G01 (32 KB) · G02 (24 KB) · G03 (35 KB) · G04 (29 KB) · G05 (27 KB) · G06 (28 KB) · G07 (21 KB) · G08 (21 KB) · G09 (23 KB)
+**WYSŁAĆ (bez W1) — 8 lekcji, 222 KB:** PL.G01 (32 KB) · G02 (24 KB) · G03 (35 KB) · G04 (29 KB) · G05 (27 KB) · G06 (28 KB) · G08 (21 KB) · G09 (23 KB)
 
 - zestaw 1 (57 KB): `python3 eksport/paczka_ai.py ulepsz POL_PL.G01_G02 polski/podstawy/POL.02.G01.rzeczownik.md polski/podstawy/POL.02.G02.czasownik.md`
 
 - zestaw 2 (64 KB): `python3 eksport/paczka_ai.py ulepsz POL_G03_G04 polski/podstawy/POL.02.G03.przymiotnik.md polski/podstawy/POL.02.G04.liczebnik.md`
 
-- zestaw 3 (77 KB): `python3 eksport/paczka_ai.py ulepsz POL_G05_G06_G07 polski/podstawy/POL.02.G05.zaimek.md polski/podstawy/POL.02.G06.imieslowy.md polski/podstawy/POL.02.G07.przyslowek.md`
+- zestaw 3 (77 KB): `python3 eksport/paczka_ai.py ulepsz POL_G05_G06_G08 polski/podstawy/POL.02.G05.zaimek.md polski/podstawy/POL.02.G06.imieslowy.md polski/podstawy/POL.02.G08.przyimek.md`
 
-- zestaw 4 (44 KB): `python3 eksport/paczka_ai.py ulepsz POL_G08_G09 polski/podstawy/POL.02.G08.przyimek.md polski/podstawy/POL.02.G09.spojnik.md`
+- zestaw 4 (23 KB): `python3 eksport/paczka_ai.py ulepsz POL_G09 polski/podstawy/POL.02.G09.spojnik.md`
 
 **niski priorytet (W1 starym promptem) — 1 lekcji, 38 KB:** G12 (38 KB)
 
-**NIE wysyłać (W1 FULL) — 13 lekcji, 234 KB:** G10 (31 KB) · G11 (25 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
+**NIE wysyłać (W1 FULL) — 14 lekcji, 282 KB:** G07 (48 KB) · G10 (31 KB) · G11 (25 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
 
 ## angielski
 
