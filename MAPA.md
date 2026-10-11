@@ -6,7 +6,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## .  (8 pl., 164 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
-- `CLAUDE.md` 13 KB
+- `CLAUDE.md` 14 KB
 - `MAPA.md` 26 KB
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
@@ -67,7 +67,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 10 KB
 - `PRZEKAZANIE.md` 5 KB
 
-## biologia/bio/md  (9 pl., 560 KB)
+## biologia/bio/md  (10 pl., 624 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 37 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 54 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 59 KB
@@ -77,6 +77,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.07.U04.krazenie_krew_odpornosc.md` 80 KB
 - ⚠`BIO.07.U06.oddychanie_i_wydalanie.md` 71 KB
 - ⚠`BIO.07.U08.uklad_nerwowy_i_zmysly.md` 77 KB
+- ⚠`BIO.07.U10.uklad_dokrewny.md` 64 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
@@ -578,18 +579,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (9 pl., 52 KB)
+## eksport  (10 pl., 58 KB)
 - `.gitignore` 0 KB
+- `KOLEJKA_AI.md` 3 KB
 - `OCENA_MODELI.md` 3 KB
-- `ULEPSZ_PROMPT.md` 11 KB
+- `ULEPSZ_PROMPT.md` 12 KB
 - `W1_PROMPT.md` 8 KB
 - `html2md.py` 4 KB
-- `paczka_ai.py` 3 KB
+- `paczka_ai.py` 5 KB
 - `w1_lekcje.py` 2 KB
 - `w1_paczka.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (13 pl., 103 KB)
+## narzedzia  (14 pl., 107 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)

@@ -4,6 +4,7 @@ Użycie:
   python3 eksport/paczka_ai.py ulepsz NAZWA plik1.md plik2.md ...   # pełne lekcje → model oddaje nowe wersje
   python3 eksport/paczka_ai.py check  NAZWA plik1.md plik2.md ...   # tylko szkielety (nagłówki, minimum, liczniki)
   python3 eksport/paczka_ai.py badanie NAZWA "temat" [plik.md]      # materiał do tematu (+ opcjonalnie istniejąca lekcja)
+  python3 eksport/paczka_ai.py recenzja NAZWA odpowiedz.md [stara.md] # druga runda: inny model sprawdza wersję pierwszego (+ raport porównania)
 Wynik: eksport/out/AI_<TRYB>_<NAZWA>.md (poza gitem). Prompt: eksport/ULEPSZ_PROMPT.md.
 Po odpowiedzi modelu: zapisz nową wersję obok i uruchom
   python3 narzedzia/porownaj_lekcje.py stara.md nowa.md
@@ -54,8 +55,23 @@ def main():
     if len(sys.argv) < 4:
         print(__doc__); sys.exit(2)
     tryb, nazwa, reszta = sys.argv[1].lower(), sys.argv[2], sys.argv[3:]
-    if tryb not in ('ulepsz', 'check', 'badanie'):
-        print('TRYB: ulepsz | check | badanie'); sys.exit(2)
+    if tryb not in ('ulepsz', 'check', 'badanie', 'recenzja'):
+        print('TRYB: ulepsz | check | badanie | recenzja'); sys.exit(2)
+    if tryb == 'recenzja':
+        import io, contextlib
+        from porownaj_lekcje import porownaj
+        nowa = Path(reszta[0]); t = nowa.read_text()
+        cz = f"\n\n---\n\n# WERSJA DO RECENZJI: {nowa.name}\n\n> Przygotował inny model AI. Rozmiar: {len(t.encode())//1024} KB.\n\n" + t
+        if len(reszta) > 1:
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                porownaj(Path(reszta[1]).read_text(), t)
+            cz = f"\n\n---\n\n# RAPORT AUTOMATYCZNEGO PORÓWNANIA (poprzednia wersja → wersja do recenzji)\n\n" + buf.getvalue() + cz
+        s = (f"# PACZKA AI — TRYB: RECENZJA — {nowa.stem}\n\n> Skopiuj polecenie poniżej do okna czatu, a cały plik dołącz jako załącznik. Tryb pracy: **RECENZJA**.\n\n"
+             + (ROOT / 'eksport' / 'ULEPSZ_PROMPT.md').read_text() + cz)
+        out = ROOT / 'eksport' / 'out' / f'AI_RECENZJA_{nazwa}.md'; out.parent.mkdir(exist_ok=True); out.write_text(s)
+        kb = len(s.encode()) / 1024
+        print(f'{out.relative_to(ROOT)}: {kb:.0f} KB' + ('  ⚠ ponad 100 KB — wyślij bez raportu albo podziel' if kb > 100 else '')); return
     czesci, kody = [], []
     if tryb == 'badanie':
         temat, pliki = reszta[0], reszta[1:]

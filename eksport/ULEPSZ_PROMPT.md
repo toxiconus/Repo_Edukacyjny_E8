@@ -90,6 +90,18 @@ Paczka zawiera **spis tematów i szkielety lekcji** (nagłówki, liczniki, minim
 
 Dla podanego tematu zbierz i opracuj: wymagania podstawy i CKE, typowe zadania egzaminacyjne i konkursowe (z przykładami i kluczami), typowe błędy uczniów, dane liczbowe ze źródłami, najlepsze sposoby wyjaśniania (z inspiracji powyżej), ciekawostki, mnemotechniki, propozycje grafik. Oddaj to jako **materiał do wklejenia** w składni lekcji (Zasada nr 3): najpierw poprawki P1, P2… do istniejących sekcji, potem nowe sekcje z kolejnymi numerami; na końcu lista źródeł. Jeśli w paczce jest istniejąca lekcja, wskaż, czego w niej brakuje — i stosuj Zasadę nr 1.
 
+## TRYB: RECENZJA (sprawdzasz pracę innego modelu AI)
+
+Paczka zawiera **wersję lekcji przygotowaną przez inny model** (a czasem raport automatycznego porównania z wersją poprzednią). Nie piszesz lekcji od nowa — jesteś **drugim recenzentem**. Oddaj:
+
+1. **Błędy merytoryczne** w tej wersji (fakty, liczby, daty, klucze zadań i testu, punktacja, mechanizmy) — każdy jako: cytat → poprawka → uzasadnienie (źródło).
+2. **Błędy składni** według Zasady nr 3 i naruszenia Zasady nr 4 (bloki kodu, ASCII, cytowania, harmonogramy, nowe kody `@viz`, nagłówki `#`) — z miejscem i poprawną wersją.
+3. **Utrata danych:** jeśli w paczce jest raport porównania, odnieś się do każdej pozycji ⚠ — czy treść zginęła (podaj tekst do przywrócenia), czy tylko zmieniono sformułowanie.
+4. **Braki:** czego nadal brakuje względem podstawy programowej, CKE i wymagań konkursu — gotowy tekst do wklejenia (poprawki P1, P2… albo nowe sekcje).
+5. **Ocena końcowa:** 3 najmocniejsze strony wersji i 3 najważniejsze rzeczy do poprawy; czy wersja nadaje się do przyjęcia (TAK / TAK po poprawkach / NIE).
+
+Nie powtarzaj całej lekcji — tylko poprawki i dopiski.
+
 ---
 
 **Lista kontrolna na koniec każdej tury (odpowiedz TAK/NIE przy każdym punkcie):** raport przed/po jest na początku · żaden licznik nie zmalał bez wyjaśnienia · nic nie zostało usunięte bez pozycji „Proponuję usunąć” · składnia według Zasady nr 3 (test `? + - !`, fiszki `|`, słownik `::`, zadania z `::: odp`) · brak bloków kodu, rysunków ASCII i znaczników cytowań · brak nowych kodów `@viz` (tylko „Propozycje grafiki”) · jest wykład, mini-wykłady i ciekawostki · klucze i punktacja sprawdzone · terminy bez literówek · liczby niepewne oznaczone · warstwa ponad E8 oznaczona „(konkurs)” · brak harmonogramów powtórek, planów i limitów czasu.
