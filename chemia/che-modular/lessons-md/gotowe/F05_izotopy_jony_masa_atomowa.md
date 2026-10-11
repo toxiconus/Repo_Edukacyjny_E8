@@ -3,7 +3,7 @@ kod: F05
 uid: CHE.01.F05.izotopy_jony_i_masa_atomowa
 tytul: Izotopy, jony i masa atomowa
 opis: Nuklid i izotopy · jony proste i wieloatomowe · izotop ≠ jon ≠ inny pierwiastek · masa atomowa jako średnia ważona · A ≠ Ar
-kicker: F05 · FUNDAMENTY · MASTER v1.0
+kicker: F05 · FUNDAMENTY · MASTER v1.1
 lead: Druga lekcja fazy B. W F04 nauczyłeś się liczyć protony, neutrony i elektrony. Teraz porządkujemy trzy różne „odmiany” atomu —
 lead: izotop, jon i atom innego pierwiastka — i wyjaśniamy, dlaczego masa atomowa chloru w układzie okresowym to 35,45, a nie 35 albo 37.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
@@ -84,6 +84,18 @@ Co może się zmienić w atomie, a co **definiuje** pierwiastek? I skoro każdy 
 
 **Interpretacja:** 0–2/6 — rdzeń krok po kroku; 3–4/6 — rdzeń, szczególnie punkty z błędami; 5–6/6 — przejdź do [§3](#trzy-zmiany), [§6](#ambitne) i zadań transferowych.
 :::
+:::
+
+## 0.5 | Wykład — izotopy, jony i masa atomowa od zera {#wyklad}
+
+::: karta understand | Wykład — trzy sposoby, by atom „zmienił się”, i jedna średnia
+W F04 poznałeś trzy cegiełki atomu: protony, neutrony i elektrony. Teraz zadajmy pytanie: co się stanie, jeśli zmienimy liczbę jednej z nich? Odpowiedź porządkuje pół chemii. **Zmiana protonów** to zmiana tożsamości — atom staje się innym pierwiastkiem (chlor z 18 protonami to już argon). **Zmiana neutronów** daje **izotop** — ten sam pierwiastek, tylko o innej masie jądra (³⁵Cl i ³⁷Cl). **Zmiana elektronów** daje **jon** — ten sam pierwiastek z ładunkiem (Cl⁻). Te trzy zmiany są niezależne: ³⁷Cl⁻ jest jednocześnie izotopem i jonem.
+
+Dlaczego izotopy jednego pierwiastka reagują prawie tak samo? Bo reakcje chemiczne to sprawa **elektronów**, a izotopy mają ich tyle samo. Różnią się masą — dlatego ciężka woda D₂O wrze w nieco wyższej temperaturze niż zwykła, ale chemicznie wciąż jest wodą.
+
+Skoro chlor w przyrodzie to mieszanina atomów o masie ok. 35 u i ok. 37 u, to jaką masę wpisać do układu okresowego? **Średnią — ale ważoną.** Atomów ³⁵Cl jest mniej więcej trzy razy więcej niż ³⁷Cl, więc średnia „ciągnie” w stronę 35: wychodzi 35,45 u. Działa to jak średnia ocen, w której sprawdzian liczy się bardziej niż kartkówka: każdą masę mnożymy przez jej udział (w ułamku) i sumujemy. Wynik zawsze leży **między** masami izotopów i **bliżej** częstszego. Ważne: żaden pojedynczy atom chloru nie ma masy 35,45 u — to właściwość ogromnej liczby atomów, a nie jednego.
+
+Stąd najważniejsze rozróżnienie lekcji: **liczba masowa A** to liczba całkowita opisująca jedno jądro (³⁵Cl → 35), a **masa atomowa** to średnia dla pierwiastka (Cl → 35,45 u). Na E8 w zadaniach z izotopami zwykle przybliżamy masy izotopów liczbami masowymi i liczymy średnią ważoną; w zadaniach z jonami — elektrony ze wzoru e = Z − q. Obie umiejętności wrócą w obliczeniach masy cząsteczkowej i w stechiometrii.
 :::
 
 ## 1 | Nuklid i izotopy [[basic:E8]] {#izotopy}
@@ -262,6 +274,23 @@ BHP: brak szczególnych zagrożeń; drobne elementy trzymać z dala od małych d
 | „Masa cząsteczkowa NaCl.” | Dla związków jonowych poprawnie: masa jednostki wzoru (masa formalna). | NaCl nie tworzy cząsteczek. |
 :::
 
+## 7.5 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pojęcia, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| izotop / jon | oba „ten sam pierwiastek, coś inne” | izotop — inna liczba neutronów; jon — inna liczba elektronów |
+| izotopy / izobary | podobne nazwy | izotopy — to samo Z; izobary — to samo A (różne pierwiastki) |
+| liczba masowa / masa atomowa | obie „o masie” | A — całkowita, jeden nuklid; masa atomowa — średnia ważona pierwiastka |
+| średnia zwykła / ważona | oba „średnia” | ważona uwzględnia udziały: 0,76 · 35 + 0,24 · 37, a nie (35 + 37) : 2 |
+| ¹²C / węgiel | ten sam symbol | ¹²C ma dokładnie 12 u; węgiel naturalny — ok. 12,011 u |
+| masa cząsteczkowa / masa jednostki wzoru | obie sumują masy atomowe | cząsteczkowa — dla cząsteczek (H₂O); jednostki wzoru — dla związków jonowych (NaCl) |
+:::
+
+::: karta understand | W skrócie — średnia ważona bez wzoru
+Wyobraź sobie torebkę kulek: 3/4 z nich waży po 35 g, a 1/4 — po 37 g. Średnia masa kulki nie wyniesie 36 g, bo lżejszych jest trzy razy więcej. Wynik spadnie bliżej 35 — dokładnie na 35,5 g. Tak samo liczysz masę atomową: **wartość × udział**, dodaj wszystkie wkłady. Kontrola zawsze jest prosta: wynik musi wylądować między skrajnymi masami, po stronie częstszego izotopu. Jeśli wyszło 36,8 przy przewadze ³⁵Cl — zamieniłeś udziały.
+:::
+
 ## 8 | Ćwiczenia {#cwiczenia}
 
 ::: karta basic | A. Podstawa
@@ -317,6 +346,64 @@ BHP: brak szczególnych zagrożeń; drobne elementy trzymać z dala od małych d
 3. Ta sama liczba protonów (17), ³⁷Cl ma o dwa neutrony więcej (20 zamiast 18).
 4. 24 · 0,75 + 26 · 0,25 = 18 + 6,5 = 24,5 u (model zadania — rzeczywisty magnez ma trzy izotopy, Aᵣ ≈ 24,3).
 5. 10 · 0,20 + 11 · 0,80 = 2 + 8,8 = 10,8 u → bor (B).
+:::
+:::
+
+## 8.5 | Ciekawostki {#ciekawostki}
+
+::: karta extra | „To samo miejsce”
+Słowo **izotop** wymyślił w 1913 r. Frederick Soddy (z pomocą lekarki Margaret Todd): po grecku *isos topos* znaczy „to samo miejsce”. Chodzi o to samo miejsce w układzie okresowym — izotopy jednego pierwiastka zajmują jedno pole.
+:::
+
+::: karta extra | Zegar z węgla-14
+Promieniotwórczy ¹⁴C rozpada się powoli: po ok. 5730 latach zostaje połowa jego atomów. Żywe organizmy stale go pobierają, a po śmierci jego ilość maleje. Mierząc, ile ¹⁴C zostało, naukowcy określają wiek kości, drewna czy tkanin — metodę opracował Willard Libby (Nobel 1960).
+:::
+
+::: karta extra | Ciężka woda i wojna
+Ciężka woda D₂O była potrzebna w badaniach nad energią jądrową. W czasie II wojny światowej alianci kilkakrotnie atakowali zakład w norweskim Vemork, który ją produkował, by nie trafiła do nazistowskich Niemiec.
+:::
+
+::: karta extra | Masa atomowa „od–do”
+Skład izotopowy niektórych pierwiastków (np. wodoru, węgla, tlenu) trochę zależy od miejsca pochodzenia próbki. Dlatego IUPAC podaje dla nich masę atomową jako **przedział**, a w szkolnych tablicach — wartość umowną. (orientacyjnie)
+:::
+
+## 8.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — izotopy w rachunkach i w cząsteczkach
+**Trzy izotopy** — średnia ważona działa tak samo: Mg (²⁴, ²⁵, ²⁶) → suma trzech wkładów. **Zadanie odwrotne z dwiema niewiadomymi** — gdy znasz masę atomową i masy dwóch izotopów: x · m₁ + (1 − x) · m₂ = Ar. **Izotopy w cząsteczce** — cząsteczka Cl₂ może mieć masę 70, 72 lub 74 u (³⁵Cl–³⁵Cl, ³⁵Cl–³⁷Cl, ³⁷Cl–³⁵Cl i ³⁷Cl–³⁷Cl); prawdopodobieństwa liczymy z udziałów: 0,76² ≈ 0,58; 2 · 0,76 · 0,24 ≈ 0,36; 0,24² ≈ 0,06 — stosunek ok. 9 : 6 : 1. Tak wygląda widmo masowe chloru. **Masa jonu** — elektron ma masę ok. 1/1836 u, więc masa Na⁺ i Na różni się tylko na trzecim–czwartym miejscu po przecinku; w zadaniach szkolnych ją pomijamy.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — cząsteczki Cl₂ | poziom ambitny (konkurs)
+Chlor to ok. 76% ³⁵Cl i 24% ³⁷Cl. Podaj możliwe masy cząsteczek Cl₂ (masy ≈ A) i oszacuj, która jest najczęstsza.
+
+::: odp | Pokaż klucz
+70 u (³⁵Cl₂), 72 u (³⁵Cl³⁷Cl), 74 u (³⁷Cl₂) — 2 pkt; najczęstsza 70 u (ok. 58%), potem 72 u (ok. 36%), najrzadsza 74 u (ok. 6%) — 2 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — zadanie odwrotne | poziom ambitny (konkurs)
+Gal ma dwa trwałe izotopy: ⁶⁹Ga i ⁷¹Ga; masa atomowa galu wynosi 69,72 u. Oblicz udziały izotopów (masy ≈ A).
+
+::: odp | Pokaż klucz
+69x + 71(1 − x) = 69,72 → 71 − 2x = 69,72 → x = 0,64 → ok. 64% ⁶⁹Ga i 36% ⁷¹Ga (2 pkt za równanie, 2 pkt za wynik). (tablice: ok. 60,1% i 39,9% — przybliżenie mas zawyża wynik)
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — atom czy jon? | poziom ambitny (konkurs)
+Drobina ma 16 protonów, 18 neutronów i 18 elektronów. Podaj zapis nuklidu z ładunkiem i nazwij drobinę.
+
+::: odp | Pokaż klucz
+Z = 16 → siarka; A = 16 + 18 = 34; ładunek 16 − 18 = −2 → ³⁴₁₆S²⁻, anion siarczkowy (izotop ³⁴S). Po 1 pkt za pierwiastek, A i ładunek.
+:::
+:::
+
+::: adv | Zadanie O4 (3 pkt) — która masa atomowa „zdradza” mieszaninę? | poziom ambitny (konkurs)
+Masy atomowe: F 19,00; Cl 35,45; Na 22,99; Cu 63,55. Które pierwiastki mają w przyrodzie praktycznie jeden izotop, a które — mieszaninę o porównywalnych udziałach? Uzasadnij.
+
+::: odp | Pokaż klucz
+F i Na — praktycznie jeden izotop (masa bliska liczbie całkowitej) (1 pkt); Cl i Cu — mieszaniny (wartości daleko od całkowitych) (1 pkt); uzasadnienie: średnia ważona daje wynik całkowity tylko, gdy dominuje jeden izotop (1 pkt).
 :::
 :::
 
@@ -414,6 +501,11 @@ Jak sprawdzić średnią? | wynik między masami izotopów, bliżej najczęstsze
 Izobary | ten sam A, różne Z (⁴⁰Ar, ⁴⁰Ca) | extra:ambitne
 Deuter | ²H: 1 p⁺, 1 n⁰ | extra:ambitne
 ¹⁴C | promieniotwórczy izotop węgla — datowanie | extra:ambitne
+Masy cząsteczek Cl₂ | 70, 72, 74 u — w stosunku ok. 9 : 6 : 1 | olimpijski:izotopy
+Skąd nazwa „izotop”? | gr. isos topos — „to samo miejsce” w układzie okresowym (Soddy, 1913) | olimpijski:izotopy
+Okres połowicznego rozpadu ¹⁴C | ok. 5730 lat | olimpijski:izotopy
+Masa atomowa jako przedział | IUPAC — dla pierwiastków o zmiennym składzie izotopowym (H, C, O) | olimpijski:izotopy
+Masa Na⁺ a masa Na | różnica = masa elektronu, w zadaniach pomijana | olimpijski:izotopy
 :::
 
 ## 12 | Słownik {#slownik}
@@ -444,13 +536,13 @@ Izotop promieniotwórczy :: izotop o nietrwałym jądrze, które samorzutnie si�
 
 ## 14 | System powtórek {#powtorki}
 
-| Kiedy | Ile | Co |
-|---|---|---|
-| po lekcji | 20 min | karta z [§10](#powtorka) i ćwiczenia A |
-| po 1 dniu | 10 min | fiszki |
-| po 3 dniach | 15 min | ćwiczenia B (średnia ważona) |
-| po tygodniu | 20 min | test z [§9](#test) |
-| po F06 | 25 min | F04 + F05 + F06 razem — zestaw przekrojowy z F21 |
+Kolejność powtórki (we własnym tempie):
+
+1. karta z [§10](#powtorka) i ćwiczenia A,
+2. fiszki,
+3. ćwiczenia B (średnia ważona),
+4. test z [§9](#test),
+5. po F06 — F04 + F05 + F06 razem: zestaw przekrojowy z F21.
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 
@@ -470,3 +562,9 @@ Izotop promieniotwórczy :: izotop o nietrwałym jądrze, które samorzutnie si�
 | [§3](#trzy-zmiany) | `f05-izotopy-v01` | konstruktor atomu: zmiana p / n / e → inny pierwiastek / izotop / jon; masa atomowa jako średnia ważona (start: H, C, O, Na, Mg, Cl, Ca; dane z `CHE.DATA.ISOTOPES`) |
 
 > Dane izotopów model bierze z silnika (`CHE.DATA.ISOTOPES`, masy i udziały wg IUPAC/CIAAW) — bez lokalnej kopii. Model wielokrotnego użytku: można go użyć w F04 (jony), F06 (masa atomowa w układzie) i A01.
+
+## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+
+- Dodano: §0.5 wykład „od zera”, §7.5 nie-myl + mini-wykład „W skrócie — średnia ważona bez wzoru”, §8.5 ciekawostki (4), §8.6 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami: Cl₂ 70/72/74, gal, ³⁴S²⁻, masy bliskie całkowitym), 5 fiszek olimpijskich. Nic nie usunięto.
+- Poprawione: „System powtórek” — bez minut i odstępów dni (kurs we własnym tempie), zostawiono kolejność.
+
