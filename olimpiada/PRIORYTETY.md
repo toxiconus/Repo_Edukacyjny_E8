@@ -38,6 +38,7 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 | C1c | (etap rejonowy) szereg aktywności, jonowe równania, stechiometria z nadmiarem, konfiguracje do Z = 36 | etap II | kanon X04, J03, R07–R08 (część bez mola), F07 | [ ] |
 | C2 | R03 Woda, roztwory i stężenie procentowe (R01–R03 w jednej lekcji) | obliczenia rozdzielają uczestników | `chemia/lekcje_md/R/CHE.03.R03+R05.stezenia.md` | **[V] gotowa 2026-10-08** — `lessons-md/gotowe/R03_woda_roztwory_stezenie_procentowe.md` (brak GFX krzywej rozpuszczalności) |
 | C3 | F17 Równania reakcji + obliczenia z równań (masowe, prawo zachowania masy, proporcje — bez mola) | typowe zadanie konkursowe | `lekcje_md/F/CHE.01.F17…`, `R/…stechiometria.md` (część masowa) | **[V] gotowa 2026-10-11, W1 FULL** — `lessons-md/gotowe/F17_rownania_reakcji_i_obliczenia.md` |
+| C2b | R03A Mieszanie roztworów i reguła krzyżowa | częsty temat olimpijski | materiał Perplexity 2026-10-11 | **[V] gotowa 2026-10-11** — `lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md` (do W1) |
 | C4 | Doświadczenia: obserwacja → wniosek → równanie (zbiorczo) | typowe zadanie konkursowe | `lekcje_md/00/CHE.00.LAB.doswiadczenia.md` | [ ] |
 | — | gotowe: F01–F06, tlenki, wodorotlenki, kwasy, sole, wodorki | | `che-modular/lessons-md/gotowe/` | [~] |
 

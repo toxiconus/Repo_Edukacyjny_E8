@@ -300,11 +300,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 129 KB)
+## chemia/che-modular/engine/src/lekcja  (4 pl., 135 KB)
 - `index.html` 1 KB
 - `lekcja.css` 4 KB
 - `lekcja.js` 2 KB
-- ⚠`rozszerzenia.js` 123 KB
+- ⚠`rozszerzenia.js` 129 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/engine/src/moduly`) — duże:
@@ -348,8 +348,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 927 KB)
+## chemia/che-modular/lessons-md/gotowe  (16 pl., 984 KB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
+- ⚠`F17_rownania_reakcji_i_obliczenia.md` 57 KB
 - ⚠`FIZ01_elektrostatyka.md` 55 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 129 KB
@@ -557,7 +558,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 66 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (22 pl., 263 KB)
+## chemia/plany/audyty  (23 pl., 301 KB)
 - (zwinięte; `ls chemia/plany/audyty`)
 
 ## chemia/plany/narzedzia  (3 pl., 50 KB)
@@ -601,7 +602,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada  (4 pl., 116 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
-- `PRIORYTETY.md` 9 KB
+- `PRIORYTETY.md` 10 KB
 - `PRZEKAZANIE.md` 6 KB
 
 ## olimpiada/do_uzupelnienia  (12 pl., 73 KB)

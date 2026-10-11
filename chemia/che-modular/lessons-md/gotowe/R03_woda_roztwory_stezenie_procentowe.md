@@ -200,6 +200,8 @@ Roztwór 10% to 10 g substancji w 100 g **roztworu** (czyli 10 g substancji i 90
 
 ::: karta understand | Szybki test sensu
 Po zmieszaniu roztworu 10% z roztworem 20% stężenie **musi** wyjść **między 10% a 20%** — bliżej tego roztworu, którego jest więcej. Wynik spoza przedziału = błąd w obliczeniach.
+
+Pełny wykład o mieszaniu, reguła krzyżowa, hydraty i zadania konkursowe — lekcja **R03A Mieszanie roztworów i reguła krzyżowa**.
 :::
 
 ## 7 | Zadania konkursowe z rozpuszczalnością [[exam:KONKURS]] {#konkurs}

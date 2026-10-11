@@ -75,3 +75,4 @@
 - 2026-10-11 06:30 Przekazanie: PRZEKAZANIE.md (repo) i biologia/bio/PRZEKAZANIE.md — stan po 2026-10-10 i kolejka.
 
 - 2026-10-11: F17 (C3) „Równania reakcji i obliczenia z równań” — lekcja gotowa z kanonu F17 + R07–R08 (masowo) + W1 Perplexity (3 tury) i uwagi W1 z 09.10; wykład, 9 mini-wykładów, 5 ciekawostek, 10 zadań konkursowych z punktacją, ćwiczenia A/B/C, warstwa ambitna (mol, gazy, wydajność, jony); 110 równań sprawdzonych skryptem; build OK, test 1280/390 OK.
+- 2026-10-11: R03A „Mieszanie roztworów i reguła krzyżowa” (olimpiada: częsty temat) — lekcja gotowa z materiału Perplexity, sprawdzona i rozbudowana (hydraty, Na₂O + H₂O, gęstość, trzy roztwory); nowy model `r03-krzyz-v01` (rozszerzenia.js §14: krzyż + huśtawka + kontrola bilansem); test 1280/390 OK.
