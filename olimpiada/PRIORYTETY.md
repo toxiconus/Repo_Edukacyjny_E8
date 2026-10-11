@@ -55,6 +55,7 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 | B2-U03 | **Układ pokarmowy i odżywianie** (pkt III.3) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` (do W1) |
 | B2-U06 | **Oddychanie i wydalanie** (pkt III.6–7) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U06.oddychanie_i_wydalanie.md` (do W1) |
 | B2-U08 | **Układ nerwowy i zmysły** (pkt III.8–9) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U08.uklad_nerwowy_i_zmysly.md` (do W1) |
+| B2-U10 | **Układ dokrewny** (pkt III.10) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U10.uklad_dokrewny.md` (do W1) |
 
 ## 3. Kolejka — później (oceny bieżące, kolejność szkolna kl. 8)
 - Chemia: (etap szkolny nie obejmuje organicznej) po solach → **węglowodory** (O01–O07, materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md`) → pochodne węglowodorów (O08–O13) → substancje o znaczeniu biologicznym (O15–O20).

@@ -7,7 +7,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 13 KB
-- `MAPA.md` 27 KB
+- `MAPA.md` 26 KB
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
@@ -82,9 +82,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 313 KB)
+## biologia/bio/szablon  (5 pl., 320 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 255 KB
+- ⚠`bio-viz.js` 262 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
@@ -115,7 +115,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (14 pl., 282 KB)
+## biologia/plany/audyty  (18 pl., 391 KB)
 - (zwinięte; `ls biologia/plany/audyty`) — duże:
 - ⚠`W1_perplexity_U04_krazenie_2026-10-11.md` 78 KB
 
@@ -156,7 +156,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 116 KB)
+## chemia/che-modular  (13 pl., 117 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -578,8 +578,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (8 pl., 50 KB)
+## eksport  (9 pl., 52 KB)
 - `.gitignore` 0 KB
+- `OCENA_MODELI.md` 3 KB
 - `ULEPSZ_PROMPT.md` 11 KB
 - `W1_PROMPT.md` 8 KB
 - `html2md.py` 4 KB

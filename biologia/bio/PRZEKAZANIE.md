@@ -20,6 +20,7 @@
 | U03 | `BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.3; Perplexity + szkielet OLI B2b + Claude; grafiki `droga-pokarmu`, `kosmek-jelitowy`, `enzym-warunki`; test OK; do W1 |
 | U06 | `BIO.07.U06.oddychanie_i_wydalanie.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.6–7; Perplexity + szkielet OLI B2c + Claude; grafiki `wdech-wydech`, `wymiana-gazowa`, `nefron`; test OK; do W1 |
 | U08 | `BIO.07.U08.uklad_nerwowy_i_zmysly.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.8–9; Perplexity + szkielet OLI B2d + Claude; grafiki `luk-odruchowy`, `oko-akomodacja`, `ucho-droga`; test OK; do W1 |
+| U10 | `BIO.07.U10.uklad_dokrewny.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.10; scalone 4 odpowiedzi AI (BADANIE) + szkielet OLI B2e + Claude; grafiki `gruczoly-mapa` (nowa), `sprzezenie-zwrotne` (scenariusze tyroksyna, wapń), `glukoza-wykres`; test OK; do W1 |
 
 ## Stan 2026-10-11 (grafiki)
 - Lekcje `biologia/md` budowane `python3 narzedzia/lekcja_html.py -p bio <md>` → `biologia/html/`; wszystkie mają grafiki z `bio-viz.js` (poza L003). Nowe grafiki 2026-10-10: relacje-ekologiczne, konczyny-homologiczne, energia-materia, zrodla-zmiennosci, kontrola-podzialow, eutrofizacja, homeostaza, endosymbioza, hardy-weinberg (katalog `BIO_KATALOG.md`).
