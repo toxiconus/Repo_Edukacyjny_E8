@@ -67,6 +67,18 @@ stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 :::
 :::
 
+## 0.3 | Wykład — mapa różnorodności życia {#wyklad}
+
+::: karta understand | Wykład — jak uporządkować miliony gatunków
+Na Ziemi opisano ponad 1,5 miliona gatunków organizmów, a szacuje się, że żyje ich wielokrotnie więcej (orientacyjnie). Żeby się w tym nie pogubić, biolodzy **klasyfikują** organizmy — łączą je w grupy według wspólnych cech i pokrewieństwa. Podstawową jednostką jest **gatunek** — organizmy podobne do siebie, które w naturze krzyżują się i mają płodne potomstwo. Gatunki łączymy w rodzaje, rodzaje w rodziny, dalej rzędy, gromady, typy i królestwa. Każdy gatunek ma dwuczłonową nazwę łacińską (np. *Homo sapiens*) — to pomysł Karola Linneusza.
+
+W szkole najczęściej używamy podziału na **pięć królestw**: **bakterie** (komórki bez jądra), **protisty** (głównie jednokomórkowe eukarionty, np. pantofelek, glony), **grzyby** (cudzożywne, ze ścianą z chityny), **rośliny** (samożywne, z chloroplastami i ścianą z celulozy) i **zwierzęta** (cudzożywne, bez ściany komórkowej). Osobno stoją **wirusy** — nie mają budowy komórkowej, nie przeprowadzają przemiany materii i namnażają się tylko wewnątrz cudzych komórek. Dlatego nie zalicza się ich do żadnego królestwa.
+
+Każda grupa ma swoje „wizytówki”. Rośliny przeszły drogę od mszaków (bez tkanek przewodzących) przez paprotniki (z tkankami przewodzącymi, rozmnażanie przez zarodniki) do roślin nasiennych — nagonasiennych (nasiona „nagie” na łuskach szyszek) i okrytonasiennych (nasiona w owocu, kwiaty). Zwierzęta dzielimy na **bezkręgowce** (np. parzydełkowce, płazińce, nicienie, pierścienice, stawonogi, mięczaki) i **kręgowce** (ryby, płazy, gady, ptaki, ssaki) — tych drugich łączy szkielet wewnętrzny z kręgosłupem.
+
+Na egzaminie z tej lekcji liczy się umiejętność **porównywania**: kto jest samożywny, a kto cudzożywny; kto oddycha skrzelami, a kto płucami; kto ma stałą temperaturę ciała; jak przystosowanie wiąże się ze środowiskiem (np. ptaki — pióra i lekkie kości, ryby — opływowy kształt i linia boczna). Ucz się tabel porównawczych, a nie pojedynczych faktów.
+:::
+
 ## 1 | Klasyfikacja organizmów [[basic:E8]] {#klasyfikacja}
 
 Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) według podobieństwa budowy i pokrewieństwa. Im niższa ranga, tym organizmy w grupie są do siebie bardziej podobne. W podręcznikach spotkasz też rangi dodatkowe, np. **klasa** (u roślin zamiast gromady), **podtyp**, **odmiana** — nie są potrzebne w podstawowym szeregu.
@@ -125,6 +137,10 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 
 ::: karta warning | Antybiotyki a wirusy
 Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się antybiotykiem — przed chorobami wirusowymi chronią przede wszystkim **szczepienia** i higiena.
+:::
+
+::: karta understand | W skrócie — wirus to nie bakteria
+**Bakteria** to żywa komórka: ma błonę, cytoplazmę, rybosomy i DNA (bez jądra), sama się odżywia i dzieli. **Wirus** to tylko materiał genetyczny (DNA albo RNA) w białkowej otoczce — poza komórką gospodarza jest „uśpiony”, a namnaża się, zmuszając komórkę do produkcji nowych wirusów. Konsekwencja praktyczna: **antybiotyki** działają na bakterie (niszczą ich ściany lub rybosomy), ale **nie działają na wirusy**. Przeciw wielu chorobom wirusowym chronią szczepionki.
 :::
 
 ## 3 | Bakterie — organizmy jednokomórkowe [[basic:E8]] {#bakterie}
@@ -418,6 +434,10 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 Osuszanie terenów podmokłych i zanieczyszczenie wód (płazy, ryby), przegradzanie rzek (ryby wędrowne), ruch drogowy (płazy w czasie wędrówek), wycinanie starych drzew i dziuplaków (ptaki, nietoperze), kłusownictwo i handel zwierzętami. Ochrona: rezerwaty, przejścia dla zwierząt, ochrona gatunkowa, budki lęgowe.
 :::
 
+::: karta understand | W skrócie — kręgowce w jednej tabeli w głowie
+Zadawaj zawsze te same pytania: **czym oddycha?** (ryby — skrzela; płazy — skrzela w larwie, potem płuca i skóra; gady, ptaki, ssaki — płuca), **czym pokryte jest ciało?** (łuski, naga śluzowata skóra, rogowe łuski, pióra, sierść), **jak się rozmnaża?** (ryby i płazy — zapłodnienie zwykle zewnętrzne, jaja w wodzie; gady i ptaki — jaja z osłonkami na lądzie; ssaki — większość rodzi młode i karmi mlekiem), **czy ma stałą temperaturę ciała?** (tylko ptaki i ssaki). Kto zna te cztery odpowiedzi, rozwiąże większość zadań z porównania kręgowców.
+:::
+
 ## 9 | Doświadczenia biologiczne — jak je planować [[exam:KONKURS]] {#doswiadczenia}
 
 ::: karta core | Schemat doświadczenia
@@ -447,6 +467,60 @@ BHP: brak szczególnych zagrożeń; po doświadczeniu umyć ręce.
 - Próba kontrolna **nie** jest „próbą bez niczego” — to próba z badanym czynnikiem w warunkach naturalnych / optymalnych.
 - W dwóch próbach może różnić się **tylko jeden** czynnik.
 - Wniosek musi dotyczyć **badanego** czynnika i badanego organizmu — nie uogólniaj na „wszystkie rośliny”.
+:::
+
+## 9.5 | Ciekawostki {#ciekawostki-plus}
+
+::: karta extra | Linneusz i nazwy, których używamy do dziś
+Szwedzki przyrodnik Karol Linneusz w XVIII w. wprowadził dwuczłonowe nazwy gatunków — nazwę rodzaju i gatunku. Dzięki temu *Canis lupus* (wilk) znaczy to samo dla biologa w Polsce i w Japonii.
+:::
+
+::: karta extra | Niesporczaki — twardziele mikroświata
+Niesporczaki — zwierzęta zwykle mniejsze niż 1 mm — potrafią przetrwać wysuszenie, mróz, a nawet pobyt w przestrzeni kosmicznej, przechodząc w stan „uśpienia” (anabiozy). (orientacyjnie)
+:::
+
+::: karta extra | Największy organizm to grzyb
+Za jeden z największych organizmów na Ziemi uważa się grzybnię opieńki w Oregonie (USA), zajmującą kilka kilometrów kwadratowych pod ziemią. (orientacyjnie)
+:::
+
+## 9.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — gdzie klasyfikacja zastawia pułapki
+**Sinice** to bakterie (bez jądra), choć prowadzą fotosyntezę — nie są roślinami ani glonami eukariotycznymi. **Grzyby** są bliżej spokrewnione ze zwierzętami niż z roślinami (cudzożywność, chityna, glikogen jako materiał zapasowy). **Nietoperz** to ssak, **pingwin** to ptak, **wieloryb** to ssak — o przynależności decyduje zestaw cech, nie środowisko ani sposób poruszania się. **Porosty** to związek grzyba i glonu lub sinicy (symbioza), nie osobna grupa roślin.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — do której grupy? | poziom ambitny (konkurs)
+Przyporządkuj i uzasadnij jedną cechą: sinica, drożdże, delfin, pingwin.
+
+::: odp | Pokaż klucz
+sinica — bakterie (brak jądra); drożdże — grzyby (cudzożywne, jednokomórkowe grzyby); delfin — ssaki (karmi młode mlekiem, oddycha płucami); pingwin — ptaki (pióra, jaja z wapienną skorupką). Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (3 pkt) — wirus a antybiotyk | poziom ambitny (konkurs)
+Wyjaśnij, dlaczego lekarz nie przepisuje antybiotyku na grypę, ale może go przepisać na anginę bakteryjną. Dodaj, czym grozi nadużywanie antybiotyków.
+
+::: odp | Pokaż klucz
+Grypę wywołuje wirus — antybiotyk działa na struktury bakterii, których wirus nie ma (1 pkt); angina bakteryjna — antybiotyk niszczy bakterie (1 pkt); nadużywanie sprzyja powstawaniu bakterii opornych na antybiotyki (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (4 pkt) — przystosowania | poziom ambitny (konkurs)
+Podaj po jednym przystosowaniu do środowiska: ryby do życia w wodzie, ptaka do lotu, rośliny okrytonasiennej do zapylania przez owady, kaktusa do suszy.
+
+::: odp | Pokaż klucz
+np. ryba — opływowy kształt / skrzela / linia boczna; ptak — pióra / puste kości / mostek z grzebieniem; okrytonasienna — barwne płatki, nektar, zapach; kaktus — liście przekształcone w ciernie, gruba skórka, magazynowanie wody w łodydze. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O4 (3 pkt) — klucz do oznaczania | poziom ambitny (konkurs)
+Ułóż prosty dwudzielny klucz (3 kroki) pozwalający rozróżnić: mech, paproć, sosnę, różę.
+
+::: odp | Pokaż klucz
+1a. brak tkanek przewodzących → mech; 1b. są tkanki przewodzące → 2. 2a. rozmnaża się przez zarodniki → paproć; 2b. wytwarza nasiona → 3. 3a. nasiona na łuskach szyszek → sosna; 3b. nasiona w owocu, kwiaty → róża. Po 1 pkt za każdy poprawny krok.
+:::
 :::
 
 ## 10 | Klinika błędów {#klinika}
@@ -719,3 +793,8 @@ Próba kontrolna :: próba do porównania — różni się od badawczej tylko ba
 
 - Odpowiedź urwana po punkcie 9 minimum; wprowadzone poprawki pkt 1–7 (model szkolny rang, zapis nazwy gatunkowej, wymiana genów u bakterii, HIV/AIDS, sacharoza w łyku, woda do zapłodnienia, zalążki nagonasiennych i okrytonasiennych). Reszta lekcji — ponowne W1.
 - Uzupełnienie zaległych uwag W1 (2026-10-10): pytanie diagnostyczne 2 i pytanie testowe o wirusy (ostrożniejsze ujęcie), rangi dodatkowe (klasa, podtyp, odmiana), owoc właściwy a inne części kwiatu, nasiona z tej samej partii.
+
+## Ulepszenie — Claude, 2026-10-11
+
+- Dodano: §0.3 wykład „od zera”, 2 mini-wykłady „W skrócie”, §9.5 ciekawostki (3), §9.6 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami). Nic nie usunięto.
+

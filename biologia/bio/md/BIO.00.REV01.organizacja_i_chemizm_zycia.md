@@ -60,6 +60,18 @@ stopka: **BIOLOGIA REV01 v1.1** · Organizacja i chemizm życia · 2026
 :::
 :::
 
+## 0.3 | Wykład — od cząsteczki do organizmu {#wyklad}
+
+::: karta understand | Wykład — jak zbudowane jest życie i skąd bierze energię
+Wszystko, co żyje, zbudowane jest z **komórek** — od jednokomórkowej bakterii po wieloryba. Komórka to najmniejsza jednostka, która sama potrafi wykonywać wszystkie czynności życiowe: odżywiać się, oddychać, wydalać, rozmnażać i reagować na bodźce. W organizmach wielokomórkowych komórki łączą się w coraz wyższe **poziomy organizacji**: komórki tworzą **tkanki**, tkanki — **narządy**, narządy — **układy narządów**, a układy — **organizm**. Każdy poziom ma właściwości, których nie ma poziom niższy: pojedyncza komórka mięśniowa się kurczy, ale dopiero serce pompuje krew.
+
+Wnętrze komórki to fabryka z wyspecjalizowanymi działami — **organellami**. **Jądro** przechowuje DNA i kieruje pracą komórki. **Mitochondria** to elektrownie: w nich zachodzi **oddychanie komórkowe**, które z glukozy i tlenu uwalnia energię (zmagazynowaną w ATP). Komórki roślin mają dodatkowo **chloroplasty**, w których zachodzi **fotosynteza**: z dwutlenku węgla i wody, dzięki energii światła, powstaje glukoza i tlen. Roślinę od zwierzęcia odróżnia też **ściana komórkowa** z celulozy i duża **wakuola**. Całą komórkę otacza **błona komórkowa**, która decyduje, co wchodzi, a co wychodzi.
+
+Fotosynteza i oddychanie to dwie strony jednego obiegu. Rośliny wiążą energię Słońca w glukozie i wydzielają tlen; wszystkie organizmy (także rośliny!) rozkładają glukozę w oddychaniu i oddają dwutlenek węgla. Gdy tlenu brakuje, niektóre komórki prowadzą **fermentację** — uzyskują mniej energii, a produktem jest np. kwas mlekowy (mięśnie, bakterie jogurtu) albo alkohol i CO₂ (drożdże).
+
+Żeby to wszystko zobaczyć, biolog sięga po **mikroskop**: przygotowuje preparat, ustawia najmniejsze powiększenie, ostrość reguluje śrubą, a powiększenie oblicza, mnożąc powiększenie okularu i obiektywu. Na egzaminie z tej lekcji najczęściej wracają: porównanie komórek, równania fotosyntezy i oddychania, planowanie doświadczeń (próba kontrolna!) i czytanie wyników z tabel.
+:::
+
 ## 1 | Poziomy organizacji organizmów [[basic:E8]] {#poziomy}
 
 @viz lancuch {kroki="komórka|podstawowa jednostka > tkanka|komórki o podobnej budowie i funkcji > narząd|kilka tkanek, wspólna funkcja > układ narządów|narządy współpracujące > organizm|całość"} | Od komórki do organizmu | kliknij poziom
@@ -160,6 +172,10 @@ Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest **selekty
 **Błona ≠ ściana.** Błona jest selektywnie przepuszczalna i ma ją każda komórka; ściana daje ochronę i sztywność, a mają ją tylko rośliny, grzyby i bakterie. **Dyfuzja ≠ osmoza:** osmoza dotyczy tylko ruchu wody przez błonę.
 :::
 
+::: karta understand | W skrócie — jak substancje przechodzą przez błonę
+**Dyfuzja** — cząsteczki przemieszczają się samorzutnie z miejsca, gdzie jest ich więcej, tam, gdzie jest ich mniej (np. tlen do komórki). **Osmoza** — szczególny przypadek: przez błonę półprzepuszczalną przechodzi **woda**, z roztworu rozcieńczonego do stężonego. Dlatego komórka roślinna w stężonej solance traci wodę (plazmoliza), a erytrocyt w czystej wodzie pęcznieje i może pęknąć. **Transport aktywny** pozwala przenosić substancje „pod prąd” — wbrew różnicy stężeń, ale kosztem energii z ATP.
+:::
+
 ## 6 | Fotosynteza [[basic:E8]] {#fotosynteza}
 
 ::: regula
@@ -182,6 +198,10 @@ Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** �
 
 @viz fotosynteza-oddychanie | Fotosynteza i oddychanie w jednej komórce liścia | przesuń suwak światła i obserwuj wymianę gazów
 @opis Owalna komórka liścia; w środku zielony chloroplast z tylakoidami i czerwonawe mitochondrium z pofałdowaną błoną. Z lewej słońce, którego jasność zmienia suwak. Strzałki: glukoza płynie z chloroplastu do mitochondrium, tlen z chloroplastu do mitochondrium; po prawej strzałki wymiany gazów z otoczeniem, których grubość zależy od bilansu. W ciemności i przy świetle poniżej punktu kompensacyjnego liść netto pobiera O₂ i oddaje CO₂, w punkcie kompensacyjnym (równowagi) wymiana wynosi około zera, przy silnym świetle liść pobiera CO₂ i oddaje O₂. Wniosek: oddychanie zachodzi stale, a fotosynteza tylko przy świetle — to, czy liść wydziela tlen, zależy od przewagi jednego procesu nad drugim.
+
+::: karta understand | W skrócie — fotosynteza i oddychanie jako lustrzane odbicia
+Zapisz oba równania słownie, jedno pod drugim. **Fotosynteza:** dwutlenek węgla + woda → (światło, chlorofil) → glukoza + tlen. **Oddychanie tlenowe:** glukoza + tlen → dwutlenek węgla + woda + energia. Substraty jednego są produktami drugiego. Różnice, o które pyta egzamin: fotosynteza zachodzi tylko w komórkach z chloroplastami i tylko w świetle, energię **pobiera**; oddychanie zachodzi we wszystkich żywych komórkach, w dzień i w nocy, energię **uwalnia**. Pułapka: „rośliny oddychają tylko w nocy” — nie, oddychają cały czas, tylko w dzień przeważa fotosynteza.
+:::
 
 ## 7 | Oddychanie komórkowe i fermentacja [[basic:E8]] {#oddychanie}
 
@@ -263,6 +283,60 @@ BHP: zwykłe zasady pracy ze szkłem; woda wapienna drażni oczy — okulary.
 
 @viz proba-kontrolna | Zaplanuj doświadczenie: próba badawcza i kontrolna | zmieniaj warunki w obu próbach
 @opis Tabela z dwiema kolumnami — próba badawcza i próba kontrolna — i wierszami czynników (dla moczarki: światło, temperatura wody, NaHCO₃, gałązka; dla drożdży: drożdże, cukier, temperatura, objętość). Kliknięcie przełącza wartość czynnika w danej próbie; wiersze, w których próby się różnią, są podświetlone na pomarańczowo. Pod tabelą ocena planu: próby identyczne, różnica w więcej niż jednym czynniku, różnica w złym czynniku albo dobry plan z nazwaną zmienną niezależną i zależną. Wniosek: próby muszą różnić się tylko badanym czynnikiem, a wszystkie inne warunki mają być jednakowe.
+
+## 9.5 | Ciekawostki {#ciekawostki-plus}
+
+::: karta extra | Komórkę „zobaczył” Hooke w korku
+Słowo **komórka** (*cell*) wprowadził w 1665 r. Robert Hooke, oglądając pod prymitywnym mikroskopem cienki plasterek korka — puste przestrzenie skojarzyły mu się z celami w klasztorze. W rzeczywistości widział tylko ściany martwych komórek.
+:::
+
+::: karta extra | Mitochondria mają własne DNA
+Mitochondria i chloroplasty mają własne DNA i rybosomy, podobne do bakteryjnych. To jeden z dowodów, że powstały z bakterii, które dawno temu zamieszkały wewnątrz większej komórki (teoria endosymbiozy).
+:::
+
+::: karta extra | Tlen z oceanów
+Mniej więcej połowa tlenu wytwarzanego na Ziemi w fotosyntezie pochodzi nie z lasów, lecz z mikroskopijnych glonów i sinic w oceanach (fitoplanktonu). (orientacyjnie)
+:::
+
+## 9.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — powtórka z haczykiem
+**Bilans gazów rośliny** zależy od natężenia światła: w ciemności roślina tylko oddycha (pobiera O₂, wydziela CO₂), przy słabym świetle oba procesy mogą się równoważyć (**punkt kompensacyjny**), przy silnym przeważa fotosynteza. **Powiększenie mikroskopu** to iloczyn powiększeń okularu i obiektywu (10× · 40× = 400×). **Fermentacja a oddychanie** — fermentacja nie wymaga tlenu i daje znacznie mniej energii z jednej cząsteczki glukozy. **Komórki bez jądra** — dojrzałe erytrocyty ssaków i komórki rurek sitowych roślin.
+:::
+
+::: adv | Zadanie O1 (3 pkt) — powiększenie | poziom ambitny (konkurs)
+Okular ma powiększenie 10×, a obiektywy: 4×, 10×, 40×. a) Podaj wszystkie możliwe powiększenia. b) Przy którym zobaczysz najmniejszy fragment preparatu? c) Od którego obiektywu zaczynasz obserwację i dlaczego?
+
+::: odp | Pokaż klucz
+a) 40×, 100×, 400× (1 pkt); b) przy 400× — największe powiększenie, najmniejsze pole widzenia (1 pkt); c) od najmniejszego (4×) — łatwiej odnaleźć obiekt i ustawić ostrość (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — doświadczenie z moczarką | poziom ambitny (konkurs)
+Moczarkę kanadyjską umieszczono w wodzie i liczono pęcherzyki gazu wydzielane w ciągu minuty przy lampie ustawionej w odległości 10, 20 i 40 cm. Otrzymano: 30, 15, 6 pęcherzyków. a) Podaj zmienną niezależną i zależną. b) Jaki gaz tworzy pęcherzyki? c) Sformułuj wniosek. d) Zaproponuj próbę kontrolną.
+
+::: odp | Pokaż klucz
+a) niezależna: odległość lampy (natężenie światła); zależna: liczba pęcherzyków na minutę (1 pkt); b) tlen (1 pkt); c) im silniejsze oświetlenie (bliżej lampy), tym intensywniejsza fotosynteza (1 pkt); d) np. zestaw w ciemności albo z ugotowaną (martwą) moczarką (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — osmoza | poziom ambitny (konkurs)
+Plasterki ziemniaka włożono do: A — wody destylowanej, B — 0,9% roztworu soli, C — 10% roztworu soli. Po godzinie zważono je. Przewidź zmianę masy w każdej próbie i wyjaśnij.
+
+::: odp | Pokaż klucz
+A — masa wzrośnie (woda wnika do komórek, roztwór zewnętrzny bardziej rozcieńczony); B — niewielka zmiana (stężenie zbliżone do wnętrza komórek — orientacyjnie); C — masa zmaleje (woda wypływa z komórek do roztworu stężonego). Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O4 (3 pkt) — fermentacja | poziom ambitny (konkurs)
+Do dwóch kolb z roztworem cukru dodano drożdże; kolbę I zamknięto balonikiem, kolbę II pozostawiono z samym roztworem cukru (bez drożdży). Po kilku godzinach balonik na kolbie I się napełnił. a) Jaki gaz go napełnił? b) Która kolba to próba kontrolna? c) Jaki drugi produkt powstał w kolbie I?
+
+::: odp | Pokaż klucz
+a) dwutlenek węgla (1 pkt); b) kolba II (1 pkt); c) alkohol etylowy (etanol) (1 pkt).
+:::
+:::
 
 ## 10 | Klinika błędów {#klinika}
 
@@ -460,3 +534,8 @@ Cudzożywność :: pobieranie gotowych związków organicznych z otoczenia
 - Druga odpowiedź Perplexity (ta sama paczka): ATP jako nośnik energii, NAD⁺ w fermentacji (ambitne), karta bilansu ATP, łuczywo ostrożniej, klucz B5.
 - Nieprzyjęte: zapis wzoru `$$` to składnia bloku wzoru w dialekcie lekcji (w HTML bez LaTeX-a), nie LaTeX; uwagi „bez zmian/klucz poprawny” (§10 zad. 3, §11 A zad. 5, §12 chityna, §15 równanie).
 - Uzupełnienie zaległych uwag W1 (2026-10-10): kwalifikator „sumaryczny” w ściądze.
+
+## Ulepszenie — Claude, 2026-10-11
+
+- Dodano: §0.3 wykład „od zera”, 2 mini-wykłady „W skrócie”, §9.5 ciekawostki (3), §9.6 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami). Nic nie usunięto.
+
