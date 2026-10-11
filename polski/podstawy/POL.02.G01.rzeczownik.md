@@ -328,18 +328,16 @@ W zadaniach konkursowych pytaj nie tylko „czy to rzeczownik?”, lecz także �
 ## 17 | Klinika błędów
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
-| Błędna forma lub wniosek | Poprawa / wyjaśnienie |
-|---|---|
-| „Czytanie” to czasownik, bo oznacza czynność. | *Czytanie* jest rzeczownikiem odczasownikowym; *czyta* jest czasownikiem. |
-| Każdy rzeczownik oznacza przedmiot. | Rzeczowniki nazywają też uczucia, cechy, zjawiska, czynności i pojęcia. |
-| Rodzaj gramatyczny to zawsze płeć. | *Mężczyzna* jest rodzaju męskiego; *dziecko* — nijakiego. Rodzaj to kategoria gramatyczna. |
-| Każda końcówka jednoznacznie wskazuje przypadek. | Formę ustala się na podstawie zdania, składni, pytania i odmiany. |
-| „Drzwi jest otwarte”. | *Drzwi są otwarte* — rzeczownik używany tylko w liczbie mnogiej łączy się z formą mnogą orzeczenia. |
-| „Widzę pies”. | *Widzę psa* — typowy biernik rzeczownika męskiego żywotnego ma formę jak dopełniacz. |
-| „Widzę miecza” (w znaczeniu zwykłego przedmiotu). | *Widzę miecz* — typowy biernik rzeczownika męskiego nieżywotnego ma formę jak mianownik. |
-| „To nieprzyjaciel, lecz kolega” — bez rozpoznania znaczenia. | Jeśli chodzi o zaprzeczenie i przeciwstawienie: *To nie przyjaciel, lecz kolega*. |
-| Każdy wyraz po przyimku jest dopełnieniem. | Przyimek wpływa na przypadek, ale funkcję składniową ustala się w całej konstrukcji. |
-| Rzeczownik zawsze pełni funkcję podmiotu. | Może być m.in. dopełnieniem, przydawką lub orzecznikiem. |
+| „Czytanie” to czasownik, bo oznacza czynność. | *Czytanie* — rzeczownik odczasownikowy | odmienia się przez przypadki (*czytania, czytaniu*); czasownikiem jest *czyta*. |
+| Każdy rzeczownik oznacza przedmiot. | rzeczownik nazywa też niematerialne byty | Rzeczowniki nazywają też uczucia, cechy, zjawiska, czynności i pojęcia. |
+| Rodzaj gramatyczny to zawsze płeć. | rodzaj to kategoria gramatyczna | *dziecko* jest rodzaju nijakiego niezależnie od płci, *osoba* — żeńskiego. |
+| Każda końcówka jednoznacznie wskazuje przypadek. | przypadek ustala się w kontekście | Formę ustala się na podstawie zdania, składni, pytania i odmiany. |
+| „Drzwi jest otwarte”. | *Drzwi są otwarte* | rzeczownik używany tylko w liczbie mnogiej łączy się z formą mnogą orzeczenia. |
+| „Widzę pies”. | *Widzę psa* | typowy biernik rzeczownika męskiego żywotnego ma formę jak dopełniacz. |
+| „Widzę miecza” (w znaczeniu zwykłego przedmiotu). | *Widzę miecz* | typowy biernik rzeczownika męskiego nieżywotnego ma formę jak mianownik. |
+| „To nieprzyjaciel, lecz kolega” — bez rozpoznania znaczenia. | *To nie przyjaciel, lecz kolega.* | przy zaprzeczeniu z przeciwstawieniem *nie* z rzeczownikiem piszemy rozdzielnie. |
+| Każdy wyraz po przyimku jest dopełnieniem. | funkcję ustala się w całej konstrukcji | Przyimek wpływa na przypadek, ale funkcję składniową ustala się w całej konstrukcji. |
+| Rzeczownik zawsze pełni funkcję podmiotu. | może być też dopełnieniem, przydawką lub orzecznikiem | funkcja zależy od zdania, nie od części mowy. |
 :::
 
 ## 18 | Ćwiczenia — poziom podstawowy
