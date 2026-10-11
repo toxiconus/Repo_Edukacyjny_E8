@@ -4,7 +4,7 @@ przedmiot: polski
 tytul: L001 – Lektury z klas IV–VI i imiesłowy · Polski: Podstawa Plus
 stopka: L001 — Lektury z klas IV–VI i imiesłowy · Polski: Podstawa Plus · v19 · 2026-09-11
 zrodlo: L001-PL-Lektury-klas-IV-VI-imieslow.html (konwersja html_do_md.py, 2026-10-09)
-stan: KONWERSJA Z HTML — sprawdzić odpowiedzi „DO UZUPEŁNIENIA” i grafiki GFX
+stan: W1 FULL częściowo (do §8.1 + nowe §19–24) — Perplexity (paczka ULEPSZ POL_L001_cala), 2026-10-11; scalenie Claude; część odpowiedzi (nowe §9–14, Zadania 1–6) brak; oryginalne §9–18 bez oceny
 ---
 Polski: Podstawa Plus · Lekcja 1
 
@@ -47,7 +47,7 @@ Bez oceny. Odpowiedz samodzielnie, potem rozwiń odpowiedzi.
 4. **Nie.** W szkolnym ujęciu Aslan jest postacią statyczną: nie zmienia wartości ani celu, choć zmienia się jego sytuacja (śmierć i zmartwychwstanie). Pełni funkcję symboliczną.
 5. **czytający** — końcówka -ący, odpowiada na pytanie „jaki?”, odmienia się przez przypadki.
 6. **przeczytawszy** — końcówka -wszy, czynność wcześniejsza wobec czynności głównej.
-7. **łącznie** — np. nieczytający. Przy wyraźnym przeciwstawieniu: nie czytający, lecz słuchający (inna konstrukcja).
+7. **łącznie** — np. nieczytający; od 2026 r. także przy przeciwstawieniu: nieczytający, lecz słuchający.
 8. **-ąc** — np. czytając; czynność równoczesna, imiesłów nieodmienny.
 9. **-wszy / -łszy** — np. przeczytawszy, znalazłszy; czynność wcześniejsza.
 10. **Idąc do szkoły, spotkałem kolegę.** — imiesłowowy równoważnik zdania wydzielamy przecinkiem.
@@ -123,6 +123,20 @@ Lista lektur i zasady korzystania z fragmentów bywają aktualizowane. Informato
 
 **Wskazówka:** nie ucz się streszczenia na pamięć. Ucz się <em>scen i motywów</em> — one przydają się w każdej rozprawce. Zawsze odróżniaj fakt fabularny od interpretacji.
 
+:::
+
+::: karta understand | Co notować podczas czytania
+1. **Bohaterowie:** kto jest kim, jakie ma cechy, czy się zmienia.
+2. **Miejsca:** gdzie dzieje się akcja — Narnia, Shire, Samotna Góra, Plac Broni, Mirmiłowo.
+3. **Konflikt:** kto z kim i o co się spiera.
+4. **Kluczowe sceny:** 3–5 scen, które zapamiętasz i wykorzystasz w argumencie.
+5. **Motywy:** poświęcenie, zdrada, odwaga, chciwość, mała ojczyzna.
+6. **Cytaty:** 2–3 krótkie cytaty, które możesz przywołać.
+7. **Fakt vs interpretacja:** fakt = „Bard zabija Smauga”; interpretacja = „Plac Broni jako mała ojczyzna”, bo chłopcy czują więź z miejscem, bronią go wspólnie i traktują jego utratę jak utratę części własnego świata.
+:::
+
+::: karta understand | W skrócie — bohater dynamiczny
+Bohater dynamiczny zmienia się **od środka**: zmienia poglądy, wartości, sposób traktowania innych albo rozumienie samego siebie. Nie wystarczy, że przeżywa przygody albo zmienia się jego sytuacja. Edmund przestaje być zdrajcą, Bilbo — wygodnym hobbitem, a Thorin na końcu rozpoznaje własną chciwość. Aslan natomiast działa i umiera, ale nie zmienia charakteru, dlatego w szkolnym ujęciu jest statyczny.
 :::
 
 ## 1. Treść lekturowa
@@ -724,6 +738,27 @@ W szkolnej analizie Aslana najczęściej uznaje się za bohatera **statycznego**
 
 :::
 
+::: karta understand | Kryteria — jak rozpoznać przemianę
+- **Stan początkowy** — kim bohater jest na początku? Jakie ma cechy, przekonania i postawy?
+- **Wydarzenie lub bodziec** — jakie doświadczenie zmusza go do zmiany?
+- **Stan końcowy** — co się w nim zmieniło na końcu?
+- **Dowód** — konkretna scena, czyn albo cytat potwierdzający zmianę.
+
+**Pułapka:** zmiana sytuacji zewnętrznej, np. śmierć i zmartwychwstanie Aslana, to nie przemiana wewnętrzna. Aslan jest w ujęciu szkolnym statyczny — działa, ale nie zmienia charakteru.
+:::
+
+::: karta understand | Nazwiska — „Chłopcy z Placu Broni”
+W tej lekcji stosujemy szkolne, spolszczone formy: **Janosz Boka**, **Ernest Nemeczek**, **Deżo Gereb** — krótko Gereb — oraz **Feri Acz**. W odpowiedzi egzaminacyjnej najważniejsza jest konsekwencja oraz poprawne wskazanie postaci i zdarzenia. Nie mieszaj wariantów imion w jednej pracy, ponieważ w różnych przekładach mogą występować odmienne zapisy.
+:::
+
+::: karta understand | Dlaczego uczniowie mylą Aslana z bohaterem dynamicznym
+- Aslan umiera i zmartwychwstaje — to **zmiana sytuacji**, nie charakteru.
+- Aslan pozostaje taki sam: tak samo dobry, sprawiedliwy i odważny na początku oraz na końcu.
+- Przemiana wewnętrzna oznacza zmianę wartości, postaw albo sposobu myślenia. Aslan tego nie przechodzi.
+
+**Wniosek:** zmiana losu nie równa się zmianie charakteru.
+:::
+
 ## 2. Sceny i motywy przekrojowe
 
 | Motyw | „Narnia” | „Hobbit” | „Chłopcy z Placu Broni” |
@@ -782,6 +817,40 @@ Wyjaśnienie Molnár pokazuje, że prawdziwa odwaga to wierność wartościom, a
 
 Wniosek Lojalność może kosztować życie, ale jest miarą prawdziwego charakteru.
 
+::: karta understand | Model 1 — Narnia, motyw poświęcenia
+**Teza:** Poświęcenie może przybrać formę dobrowolnej ofiary złożonej za kogoś, kto na nią nie zasługuje.
+
+**Przykład:** W „Opowieściach z Narnii” Aslan dobrowolnie oddaje życie za Edmunda, który wcześniej zdradził rodzeństwo.
+
+**Wyjaśnienie:** Aslan nie działa z przymusu. Wie, że Edmund zawinił, a mimo to wybiera śmierć w jego miejsce. To dowód, że poświęcenie nie jest nagrodą, lecz bezinteresownym darem.
+
+**Wniosek:** Lewis pokazuje, że prawdziwe poświęcenie wymaga odwagi i bezinteresowności, a nie kalkulacji.
+:::
+
+::: karta understand | Model 2 — Hobbit, motyw chciwości
+**Teza:** Chciwość może zniszczyć nawet szlachetnego człowieka.
+
+**Przykład:** W „Hobbicie” Thorin po zdobyciu skarbu odmawia podziału łupów, oskarża Bilba o zdradę i jest gotów wywołać wojnę.
+
+**Wyjaśnienie:** Tolkien nazywa ten stan „smoczą chorobą”. Żądza posiadania przejmuje kontrolę nad rozumem bohatera i niszczy jego relacje z przyjaciółmi.
+
+**Wniosek:** Dopiero przed śmiercią Thorin odzyskuje zdolność oceny i żałuje swojego postępowania, co pokazuje, jak destrukcyjna jest chciwość.
+:::
+
+::: karta understand | Model 3 — Plac Broni, motyw lojalności
+**Teza:** Lojalność i odwaga nie zależą od siły fizycznej.
+
+**Przykład:** W „Chłopcach z Placu Broni” Nemeczek, najmniejszy i najsłabszy chłopiec, zostaje schwytany i wrzucony do stawu przez Czerwone Koszule, a mimo to pozostaje wierny grupie.
+
+**Wyjaśnienie:** Molnár pokazuje, że prawdziwa odwaga polega na wierności wartościom, a nie na sile mięśni. Nemeczek umiera, ale jego postawa inspiruje innych.
+
+**Wniosek:** Lojalność może kosztować życie, ale jest miarą prawdziwego charakteru.
+:::
+
+::: karta understand | W skrócie — jak pisać akapit argumentacyjny
+Zacznij od tezy, czyli jednego zdania odpowiadającego na temat. Potem podaj konkretny przykład z lektury: bohatera, wydarzenie i sytuację. Następnie wyjaśnij, dlaczego ten przykład potwierdza tezę. Zakończ wnioskiem, który łączy przykład z problemem z tematu. Nie opowiadaj fabuły — wybierz tylko te szczegóły, które dowodzą Twojej tezy.
+:::
+
 ## 3. Ciekawostki i mniej pamiętane fakty
 
 ::: karta -
@@ -823,6 +892,10 @@ Wniosek Lojalność może kosztować życie, ale jest miarą prawdziwego charakt
 | Mała ojczyzna | Plac Broni + Shire (Hobbit) | Plac = wspólnota; Shire = dom; oba są wartością, za którą warto walczyć |
 | Mentor | Gandalf (Hobbit) + Pan Kleks (Akademia) | obaj prowadzą bohatera ku dojrzałości; różne metody |
 
+:::
+
+::: karta understand | Jak porównywać lektury
+Wybierz jeden motyw, a nie całe utwory. Następnie wskaż po jednym przykładzie z każdej lektury i powiedz wprost, na czym polega podobieństwo, a na czym różnica. Nie musisz znać wszystkich szczegółów fabuły — wystarczą dobrze dobrane sceny i poprawne wnioski.
 :::
 
 ## 4.1. Mapa motywów
@@ -1013,6 +1086,33 @@ Zwróć uwagę na końcówkę: „-wszy” i „-łszy” zawsze oznaczają czyn
 3. **zniszczona** — imiesłów przymiotnikowy bierny od czasownika **„zniszczyć”**.
 :::
 
+## 5.0. Wykład — imiesłowy od zera {#wyklad-imieslowy}
+
+::: karta understand | Wykład — czym są imiesłowy i jak je rozpoznawać
+Imiesłów to nieosobowa forma czasownika. Oznacza to, że nie wskazuje osoby, np. „ja czytam”, „ty czytasz”, lecz opisuje czynność. Imiesłów łączy cechy czasownika z cechami przymiotnika albo przysłówka.
+
+W polszczyźnie wyróżniamy cztery rodzaje imiesłowów. Dwa z nich są przymiotnikowe, a dwa przysłówkowe.
+
+**Imiesłów przymiotnikowy czynny** kończy się zwykle na **-ący** i odpowiada na pytanie „jaki?”. Opisuje wykonawcę czynności: *czytający uczeń* to uczeń, który czyta. Taki imiesłów odmienia się jak przymiotnik: *czytający uczeń, czytającego ucznia, czytającemu uczniowi*.
+
+**Imiesłów przymiotnikowy bierny** tworzy się najczęściej przez końcówki **-ny**, **-ty** lub **-ony**. Również odpowiada na pytanie „jaki?”, ale opisuje osobę lub rzecz, na którą działa ktoś inny: *przeczytany list* to list, który ktoś przeczytał. Ten imiesłów też się odmienia: *przeczytany list, przeczytanego listu, przeczytanemu listowi*.
+
+**Imiesłów przysłówkowy współczesny** kończy się na **-ąc** i jest nieodmienny. Wprowadza dodatkową czynność wykonywaną w tym samym czasie co czynność główna: *Czytając książkę, Zuzia robiła notatki* oznacza, że Zuzia czytała i jednocześnie robiła notatki.
+
+**Imiesłów przysłówkowy uprzedni** kończy się na **-wszy** albo **-łszy** i również jest nieodmienny. Wskazuje czynność wcześniejszą: *Przeczytawszy książkę, Zuzia napisała wypracowanie* oznacza, że najpierw przeczytała książkę, a potem napisała wypracowanie.
+
+Najważniejsza zasada brzmi: końcówka pomaga, ale nie wystarczy. Najpierw zadaj pytanie — „jaki?” wskazuje imiesłów przymiotnikowy, a „jak?” albo „kiedy?” imiesłów przysłówkowy. Potem sprawdź, czy forma się odmienia: przymiotnikowe odmieniają się, przysłówkowe nie. Na końcu ustal funkcję w zdaniu: imiesłów przymiotnikowy najczęściej jest przydawką, a przysłówkowy tworzy imiesłowowy równoważnik zdania.
+:::
+
+::: karta understand | Przykłady z lektur — imiesłowy w akcji
+- **Przymiotnikowy czynny:** „stojący na skale hobbit” — Bilbo obserwujący Smauga.
+- **Przymiotnikowy bierny:** „zniszczona różdżka Czarownicy” — różdżka zniszczona przez Edmunda w bitwie.
+- **Przysłówkowy współczesny:** „Wracając do Shire, Bilbo rozmyślał o wyprawie.”
+- **Przysłówkowy uprzedni:** „Przeczytawszy lekturę o Narnii, uczeń zrozumiał motyw poświęcenia.”
+
+Te przykłady łączą gramatykę z treścią lektur — używaj ich w ćwiczeniach i rozprawce.
+:::
+
 ## 5.1. Pisownia „nie” z imiesłowami (aktualne zasady od 1.01.2026)
 
 ::: karta warning | Zapamiętaj
@@ -1020,18 +1120,18 @@ Zwróć uwagę na końcówkę: „-wszy” i „-łszy” zawsze oznaczają czyn
 | Rodzaj / konstrukcja | Pisownia | Przykład |
 |---|---|---|
 | Przymiotnikowe (bez przeciwstawienia) | **ŁĄCZNIE** | nieczytający, nieprzeczytany, nieleżący |
-| Przymiotnikowe w przeciwstawieniu | **ROZDZIELNIE** | nie czytający, lecz słuchający |
+| Przymiotnikowe w przeciwstawieniu | **ŁĄCZNIE** (od 2026 r. bez wyjątków) | nieczytający, lecz słuchający |
 | Przysłówkowe (współczesne i uprzednie) | **ROZDZIELNIE** | nie czytając, nie przeczytawszy |
 
 ::: karta warning | Objaśnienie RJP 2026
-Od 1 stycznia 2026 r. „nie” z imiesłowami **przymiotnikowymi** czynnymi i biernymi piszemy **łącznie**, niezależnie od tego, czy mają znaczenie bardziej czasownikowe, czy przymiotnikowe. Zniesiony został dawny wyjątek „świadomej pisowni rozdzielnej”. **Rozdzielnie** — tylko gdy „nie” tworzy wyraźne zaprzeczenie połączone z przeciwstawieniem (np. <em>nie leżący, ale siedzący</em>). Imiesłowy przysłówkowe zawsze rozdzielnie. Na egzaminie stosuj zasady obowiązujące w dniu egzaminu.
+Od 1 stycznia 2026 r. „nie” z imiesłowami **przymiotnikowymi** czynnymi i biernymi piszemy **łącznie**, niezależnie od tego, czy mają znaczenie bardziej czasownikowe, czy przymiotnikowe. Zniesiony został dawny wyjątek „świadomej pisowni rozdzielnej”. Komunikat RJP mówi o **bezwyjątkowej** pisowni łącznej — także przy przeciwstawieniu (np. <em>nieleżący, ale siedzący</em>). Imiesłowy przysłówkowe zawsze rozdzielnie. Na egzaminie stosuj zasady obowiązujące w dniu egzaminu.
 
-**Uwaga egzaminacyjna:** CKE poinformowała, że w latach 2026–2030 w ocenianiu poprawności ortograficznej akceptowane będą zarówno dotychczasowe, jak i nowe zasady. W nauce poznawaj normę obowiązującą od 1.01.2026 r.; nie myl jednak okresu przejściowego w ocenianiu z samą regułą ortograficzną. W rzeczywistym przeciwstawieniu nadal możliwy jest zapis rozdzielny, np. „nie leżący, ale siedzący”.
+**Uwaga egzaminacyjna:** CKE poinformowała, że w latach 2026–2030 w ocenianiu poprawności ortograficznej akceptowane będą zarówno dotychczasowe, jak i nowe zasady. W nauce poznawaj normę obowiązującą od 1.01.2026 r.; nie myl jednak okresu przejściowego w ocenianiu z samą regułą ortograficzną. Dawny zapis rozdzielny w przeciwstawieniu (*nie leżący, ale siedzący*) jest uznawany na egzaminie tylko w okresie przejściowym — według nowej normy piszemy łącznie.
 
 **Dwie różne konstrukcje (nie mylić!):**
 
 - <em>nieczytający uczeń</em> — imiesłów przymiotnikowy, zapis **łączny**;
-- <em>nie czytający, lecz słuchający uczeń</em> — zaprzeczenie + wyraźne przeciwstawienie, zapis **rozdzielny**.
+- <em>nieczytający, lecz słuchający uczeń</em> — przeciwstawienie; od 2026 r. także zapis **łączny** (dawniej rozdzielny).
 
 Źródło: Komunikat Rady Języka Polskiego przy Prezydium PAN (zmiany ortografii od 1 stycznia 2026 r.).
 
@@ -1039,7 +1139,7 @@ Od 1 stycznia 2026 r. „nie” z imiesłowami **przymiotnikowymi** czynnymi i b
 
 Dlaczego to ważne na egzaminie
 
-Reforma RJP zniosła dawną „świadomą pisownię rozdzielną”, a nie każdą konstrukcję z „nie”. Przy zwykłym zaprzeczeniu: <em>nieczytający</em>, <em>nieprzeczytany</em>. Przy zaprzeczeniu + przeciwstawieniu dwóch cech/czynności: <em>nie leżący, ale siedzący</em>. Nie wystarczy samo słowo „ale” lub „lecz” — musi być realne przeciwstawienie.
+Reforma RJP wprowadziła bezwyjątkową pisownię łączną *nie* z imiesłowami odmiennymi i zniosła dawną „świadomą pisownię rozdzielną”. Piszemy więc *nieczytający*, *nieprzeczytany*, a także *nieleżący, ale siedzący*. Rozdzielnie zostaje tylko przy imiesłowach przysłówkowych (*nie czytając*).
 
 :::
 
@@ -1051,8 +1151,12 @@ Reforma RJP zniosła dawną „świadomą pisownię rozdzielną”, a nie każd�
 | <span class="error-text">nie przeczytana książka</span> | <span class="correct-text">nieprzeczytana książka</span> | przymiotnikowy → łącznie |
 | <span class="error-text">nieczytając książki</span> | <span class="correct-text">nie czytając książki</span> | przysłówkowy → rozdzielnie |
 | <span class="error-text">nieprzeczytawszy lektury</span> | <span class="correct-text">nie przeczytawszy lektury</span> | przysłówkowy → rozdzielnie |
-| <span class="error-text">nieleżący, ale siedzący</span> | <span class="correct-text">nie leżący, ale siedzący</span> | przeciwstawienie → rozdzielnie |
-| <span class="error-text">nieczytający, lecz słuchający</span> | <span class="correct-text">nie czytający, lecz słuchający</span> | przeciwstawienie → rozdzielnie |
+| <span class="error-text">nie leżący, ale siedzący</span> (nowa norma) | <span class="correct-text">nieleżący, ale siedzący</span> | od 2026 r. łącznie także w przeciwstawieniu (dawny zapis — tylko w okresie przejściowym) |
+| <span class="error-text">nie czytający, lecz słuchający</span> (nowa norma) | <span class="correct-text">nieczytający, lecz słuchający</span> | od 2026 r. łącznie także w przeciwstawieniu |
+
+::: karta understand | W skrócie — „nie” z imiesłowami
+Najpierw ustal rodzaj imiesłowu. Jeśli odpowiada na pytanie „jaki?”, jest przymiotnikowy — piszemy łącznie: **nieczytający**, **nieprzeczytany**. Jeśli odpowiada na pytanie „jak?” albo „kiedy?”, jest przysłówkowy — piszemy zawsze rozdzielnie: **nie czytając**, **nie przeczytawszy**. Od 2026 r. łącznie także przy przeciwstawieniu: *nieleżący, ale siedzący*.
+:::
 
 ## 5.2. Interpunkcja przy imiesłowach
 
@@ -1072,6 +1176,17 @@ Jeżeli imiesłów przysłówkowy tworzy **imiesłowowy równoważnik zdania**, 
 
 **Zasada szkolna (zalecana na E8):** imiesłowowy równoważnik zdania wydzielamy przecinkiem lub przecinkami, zależnie od miejsca w zdaniu: <em>Idąc do szkoły, spotkałem kolegę</em>; <em>Spotkałem kolegę, idąc do szkoły</em>; <em>Bilbo, stojąc na skale, obserwował Smauga</em>.
 
+:::
+
+::: karta understand | Kiedy przecinek nie jest potrzebny?
+- Gdy imiesłów pełni funkcję **przymiotnikową**, czyli jest przydawką: *stojący na skale hobbit* — bez przecinka.
+- Nie każdy wyraz zakończony na „-ąc” automatycznie tworzy imiesłowowy równoważnik zdania — zawsze sprawdź funkcję w zdaniu.
+
+**Zasada szkolna zalecana na E8:** imiesłowowy równoważnik zdania wydzielamy przecinkiem lub przecinkami, zależnie od jego miejsca w zdaniu: *Idąc do szkoły, spotkałem kolegę*; *Spotkałem kolegę, idąc do szkoły*; *Bilbo, stojąc na skale, obserwował Smauga*.
+:::
+
+::: karta understand | W skrócie — przecinek a imiesłów
+Imiesłów przysłówkowy można zamienić na zdanie podrzędne: *Idąc do szkoły, spotkałem kolegę* = *Kiedy szedłem do szkoły, spotkałem kolegę*. Skoro konstrukcja zastępuje zdanie, wydzielamy ją przecinkiem. Natomiast *stojący na skale hobbit* odpowiada na pytanie „jaki hobbit?” i jest przydawką, więc przecinka nie stawiamy.
 :::
 
 ## 5.3. Zgodność podmiotu
@@ -1104,6 +1219,10 @@ W zdaniu „Czytając książkę, zapaliła się lampa” imiesłów sugeruje, �
 3. **Kiedy weszli do Narnii, zrobiło się zimno.** (lub: **Wchodząc do Narnii, dzieci poczuły zimno.**)
 :::
 
+::: karta understand | Dlaczego to błąd?
+W zdaniu „Czytając książkę, zapaliła się lampa” imiesłów sugeruje, że to lampa czytała książkę. To nielogiczne. Można naprawić zdanie na dwa sposoby: dodać wspólny podmiot do imiesłowu i orzeczenia albo zastąpić imiesłów zdaniem podrzędnym.
+:::
+
 ## 6. Pułapki egzaminacyjne
 
 | Mylenie | Błąd | Poprawnie |
@@ -1127,6 +1246,24 @@ W zdaniu „Czytając książkę, zapaliła się lampa” imiesłów sugeruje, �
 - **Brak przecinka?** Uczniowie nie rozpoznają imiesłowowego równoważnika zdania.
 - **Zgodność podmiotu?** Uczniowie skupiają się na treści, nie na podmiocie czynności.
 
+:::
+
+::: karta understand | Najczęstsze przyczyny błędów
+- **Aslan dynamiczny?** Uczniowie utożsamiają zmianę losu — śmierć i zmartwychwstanie — ze zmianą charakteru. To nie to samo.
+- **Bilbo zabił Smauga?** Bilbo jest głównym bohaterem, więc uczniowie przypisują mu wszystkie ważne czyny. Tolkien jednak celowo rozdziela role: Bilbo zauważa słaby punkt, a Bard zabija smoka.
+- **Gereb poświęcił życie?** To mylenie z Nemeczkiem. Obaj są ważni, ale tylko Nemeczek umiera.
+- **„Nie” z imiesłowem przymiotnikowym łącznie?** Uczniowie przenoszą zasadę z czasowników: *nie czytać* piszemy rozdzielnie, ale *nieczytający* — łącznie.
+- **Brak przecinka?** Uczniowie nie rozpoznają imiesłowowego równoważnika zdania.
+- **Błąd zgodności podmiotu?** Uczniowie skupiają się na treści zdania, a nie na tym, kto wykonuje obie czynności.
+:::
+
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| *Aslan przeszedł przemianę.* | *Aslan jest bohaterem statycznym.* | Zmieniła się jego sytuacja, nie charakter ani wartości. |
+| *Bilbo zabił Smauga.* | *Bilbo zauważył słaby punkt, a Bard zabił Smauga.* | Tolkien rozdziela rolę odkrywcy i wykonawcy czynu. |
+| *Nie czytający uczeń.* | *Nieczytający uczeń.* | Imiesłów przymiotnikowy piszemy z „nie” łącznie. |
+| *Nieczytając książki.* | *Nie czytając książki.* | Imiesłów przysłówkowy z „nie” piszemy zawsze rozdzielnie. |
+| *Idąc do szkoły spotkałem kolegę.* | *Idąc do szkoły, spotkałem kolegę.* | Imiesłowowy równoważnik zdania wydzielamy przecinkiem. |
+| *Czytając książkę, zapaliła się lampa.* | *Kiedy czytał książkę, zapaliła się lampa.* | Imiesłów i orzeczenie muszą mieć wspólnego wykonawcę. |
 :::
 
 ## 7. Ćwiczenia interaktywne
@@ -1167,15 +1304,15 @@ Sprawdź końcówkę i pytanie (jaki? / jak? kiedy?).
 5. (nie) leżący chłopiec (bez przeciwstawienia) (łącznie / rozdzielnie)
 
 ::: odp | Odpowiedzi
-1. pc
-2. pb
-3. pw
-4. pu
-5. pc
+1. łącznie — nieczytający
+2. łącznie — nieprzeczytana
+3. rozdzielnie — nie czytając
+4. rozdzielnie — nie przeczytawszy
+5. łącznie — nieleżący
 :::
 
 ::: odp | Odpowiedź
-Przymiotnikowe łącznie (chyba że przeciwstawienie). Przysłówkowe zawsze rozdzielnie.
+Przymiotnikowe zawsze łącznie (od 2026 r. także w przeciwstawieniu). Przysłówkowe zawsze rozdzielnie.
 
 :::
 
@@ -1206,8 +1343,8 @@ Znajdź imiesłów przysłówkowy (-ąc, -wszy, -łszy). Jeśli tworzy konstrukc
 2. (Kiedy czytał książkę, zapaliła się lampa. / Czytając książkę, zapaliła się lampa.)
 
 ::: odp | Odpowiedzi
-1. toggleLayer(
-2. )
+1. **Idąc do szkoły, spotkałem kolegę.** — poprawne: ja idę i ja spotykam. Drugie zdanie błędne (deszcz nie idzie).
+2. **Kiedy czytał książkę, zapaliła się lampa.** — poprawne; *Czytając książkę, zapaliła się lampa* sugeruje, że czytała lampa.
 :::
 
 **5. Podaj scenę i wyjaśnij (1–2 zdania)**
@@ -1242,6 +1379,16 @@ Napisz 2–3 zdania uzasadnienia.
 | DLA AMBITNYCH | Czytając lekturę, uczeń napisał wypracowanie. | **zmiana znaczenia** |
 
 **Dlaczego „Czytając” zmienia znaczenie?** Imiesłów uprzedni („przeczytawszy”) wskazuje czynność wcześniejszą — najpierw przeczytał, potem napisał. Imiesłów współczesny („czytając”) wskazuje czynność równoczesną — czytał i pisał jednocześnie.
+
+:::
+
+::: karta understand | Więcej transformacji do przećwiczenia
+
+| Oryginał | Transformacja równoważna |
+|---|---|
+| Idąc do szkoły, spotkałem kolegę. | Kiedy szedłem do szkoły, spotkałem kolegę. |
+| Zniszczywszy różdżkę, Edmund pomógł w bitwie. | Po zniszczeniu różdżki Edmund pomógł w bitwie. |
+| Wracając do Shire, Bilbo rozmyślał o wyprawie. | Gdy wracał do Shire, Bilbo rozmyślał o wyprawie. |
 
 :::
 
@@ -1441,9 +1588,9 @@ Kliknij pytanie, aby rozwinąć definicję, przykład i pułapkę.
 
 **Pułapka:** Nie myl z przysłówkowym współczesnym — uprzedni wskazuje czynność wcześniejszą.
 
-**Reguła:** Łącznie. Przy wyraźnym przeciwstawieniu (inna konstrukcja) → rozdzielnie.
+**Reguła:** Łącznie — od 2026 r. bez wyjątków, także w przeciwstawieniu.
 
-**Przykład:** nieczytający uczeń; ale: nie czytający, lecz słuchający.
+**Przykład:** nieczytający uczeń; nieczytający, lecz słuchający.
 
 **Pułapka:** Nie przenoś zasady z czasowników („nie czytać” — rozdzielnie).
 
@@ -1532,9 +1679,9 @@ Kliknij pytanie, aby rozwinąć definicję, przykład i pułapkę.
 3. **czytający** — „Czytający” — imiesłów przymiotnikowy czynny, odmienny, pytanie „jaki?”.
 4. **przeczytawszy** — „Przeczytawszy” — czynność wcześniejsza wobec czynności głównej.
 5. **Bilbo** — Bilbo zauważył jaśniejszą plamę na piersi smoka. To nie on zabił Smauga — zrobił to Bard.
-6. **łącznie** — Od 1.01.2026 imiesłowy przymiotnikowe z „nie” zapisujemy łącznie w typowym użyciu. RJP przewiduje zapis rozdzielny, gdy „nie” sygnalizuje jednocześnie zaprzeczenie i przeciwstawienie, np. „nie leżący, ale siedzący”.
+6. **łącznie** — Od 1.01.2026 imiesłowy przymiotnikowe z „nie” zapisujemy łącznie w typowym użyciu. Komunikat RJP mówi o bezwyjątkowej pisowni łącznej — także przy przeciwstawieniu (*nieleżący, ale siedzący*).
 7. **nie** — Aslan nie zmienia wartości ani celu — jest statyczny i symboliczny.
-8. **Nieczytający uczeń** — „Nieczytający uczeń” — pisownia łączna. Gdyby było przeciwstawienie: „nie czytający, lecz słuchający”.
+8. **Nieczytający uczeń** — „Nieczytający uczeń” — pisownia łączna. Także przy przeciwstawieniu: „nieczytający, lecz słuchający”.
 9. **-ąc** — -ąc — np. czytając, idąc. Imiesłów nieodmienny.
 10. **-wszy** — -wszy / -łszy — np. przeczytawszy, znalazłszy. Czynność wcześniejsza.
 11. **Bard** — Bard zabił Smauga Czarną Strzałą. Bilbo zauważył słaby punkt, drozd przekazał informację.
@@ -1598,8 +1745,8 @@ Te pytania wymagają krótkiego uzasadnienia. Najpierw spróbuj sam, potem poró
 
 ### Pisownia „nie” (RJP 2026)
 
-- **Przymiotnikowe** — ŁĄCZNIE (<em>nieczytający</em>) — bez przeciwstawienia.
-- **Przym. w przeciwstawieniu** — ROZDZIELNIE (<em>nie czytający, lecz słuchający</em>).
+- **Przymiotnikowe** — ŁĄCZNIE (<em>nieczytający</em>).
+- **Przym. w przeciwstawieniu** — od 2026 r. też ŁĄCZNIE (<em>nieczytający, lecz słuchający</em>).
 - **Przysłówkowe** — ROZDZIELNIE (<em>nie czytając</em>, <em>nie przeczytawszy</em>).
 
 ### Interpunkcja i składnia
@@ -1725,7 +1872,153 @@ Wniosek Lewis pokazuje, że prawdziwe poświęcenie wymaga odwagi i bezinteresow
 | „tą książką” | „tę książkę” (B.) | przypadek |
 | „wziąść” | „wziąć” | forma poprawna |
 
-## 19. Źródła
+## 19 | Mity i nieporozumienia {#mity}
+
+::: mity
+„Bohater dynamiczny to zawsze główny bohater.” || Nie. Główny bohater może być statyczny, a postać drugoplanowa — dynamiczna. Liczy się przemiana wewnętrzna, nie ilość scen.
+„Aslan jest dynamiczny, bo umiera i zmartwychwstaje.” || Nie. To zmiana jego sytuacji fabularnej, a nie zmiana charakteru, wartości ani celu działania.
+„Bilbo zabił Smauga, bo to główny bohater.” || Nie. Bilbo zauważa słaby punkt smoka, drozd przekazuje informację, a Bard zabija Smauga Czarną Strzałą.
+„Imiesłów przymiotnikowy zawsze kończy się na -ny.” || Nie. Imiesłów przymiotnikowy czynny kończy się na -ący, a bierny może mieć końcówki -ny, -ty lub -ony.
+„Każdy wyraz na -ny to imiesłów.” || Nie. „Drewniany”, „czerwony” i „zielony” to zwykłe przymiotniki, ponieważ nie pochodzą od czasowników.
+„„Nie” z imiesłowem przysłówkowym można czasem napisać łącznie.” || Nie. Imiesłowy przysłówkowe współczesne i uprzednie piszemy z „nie” zawsze rozdzielnie.
+„Przecinek przy imiesłowie jest zawsze potrzebny.” || Nie. Przecinek wydzielamy imiesłowowy równoważnik zdania, ale nie przydawki, np. „stojący na skale hobbit”.
+„Skrucha całkowicie wymazuje skutki zdrady.” || Nie. Skrucha może prowadzić do przemiany i naprawy relacji, ale nie cofa już dokonanych szkód.
+:::
+
+## 20 | Nie myl {#nie-myl}
+
+::: nie-myl | Pary pojęć z lekcji
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| bohater dynamiczny / statyczny | obaj mogą dużo działać | dynamiczny zmienia poglądy, wartości lub postawę; statyczny działa, ale nie zmienia charakteru |
+| imiesłów przymiotnikowy / przysłówkowy | oba od czasownika | przymiotnikowy — *jaki?*, odmienny; przysłówkowy — *jak? kiedy?*, nieodmienny |
+| współczesny / uprzedni | oba przysłówkowe | *-ąc* — czynność równoczesna; *-wszy/-łszy* — wcześniejsza |
+| „nie” z przymiotnikowym / z przysłówkowym | oba imiesłowy | przymiotnikowy — łącznie (*nieczytający*); przysłówkowy — rozdzielnie (*nie czytając*) |
+| Bilbo / Bard | obaj przy śmierci Smauga | Bilbo zauważa słaby punkt; Bard zabija smoka Czarną Strzałą |
+| Gereb / Nemeczek | obaj z Placu Broni | Gereb zdradza i wraca po skrusze; Nemeczek pozostaje lojalny i umiera |
+:::
+
+## 21 | Mnemotechniki i wskazówki {#mnemotechniki}
+
+::: wskazowki
+**Cztery imiesłowy — „CA-BI-WU-UP”**  
+**C**zynny: -ący, **B**ierny: -ny/-ty/-ony, **W**spółczesny: -ąc, **UP**rzedni: -wszy/-łszy.
+
+**Przymiotnikowy czy przysłówkowy?**  
+Zadaj pytanie: **jaki?** — przymiotnikowy; **jak? / kiedy?** — przysłówkowy.
+
+**Równoczesny czy uprzedni?**  
+„-ąc” = **w trakcie**, np. *czytając*. „-wszy / -łszy” = **po tym, jak**, np. *przeczytawszy*.
+
+**„Nie” z imiesłowami**  
+Przymiotnikowy — zawsze **razem**: *nieczytający*. Przysłówkowy — zawsze **osobno**: *nie czytając*.
+
+**Zgodność podmiotu**  
+Zapytaj: **kto czyta?** i **kto robi to, co mówi orzeczenie?** Jeśli to dwie różne osoby lub rzeczy, zdanie jest błędne.
+
+**Akapit argumentacyjny — „TEZA-PRZYKŁAD-WYJAŚNIENIE-WNIOSEK”**  
+Najpierw twierdzenie, potem scena z lektury, następnie wyjaśnienie jej znaczenia, na końcu wniosek związany z tematem.
+:::
+
+## 22 | Mapa pojęć — imiesłowy {#mapa-imieslowow}
+
+::: drzewo
+IMIESŁOWY
+  PRZYMIOTNIKOWE — odmienne, pytanie: jaki?
+    CZYNNY
+      końcówka -ący
+      przykład: czytający uczeń
+      znaczenie: wykonawca czynności
+    BIERNY
+      końcówki -ny, -ty, -ony
+      przykład: przeczytany list
+      znaczenie: obiekt czynności
+  PRZYSŁÓWKOWE — nieodmienne, dodatkowa czynność
+    WSPÓŁCZESNY
+      końcówka -ąc
+      przykład: czytając książkę
+      znaczenie: czynność równoczesna
+    UPRZEDNI
+      końcówki -wszy, -łszy
+      przykład: przeczytawszy lekturę
+      znaczenie: czynność wcześniejsza
+:::
+
+## 23 | Modelowa wypowiedź argumentacyjna {#modelowa-rozprawka}
+
+::: karta understand | Temat: „Literatura uczy odpowiedzialności za innych ludzi.”
+**Wstęp:**  
+Literatura często pokazuje, że odpowiedzialność za innych wymaga odwagi, empatii i gotowości do poświęcenia. Bohaterowie lektur szkolnych uczą, że prawdziwa wartość człowieka ujawnia się wtedy, gdy musi wybrać między własnym interesem a dobrem wspólnoty.
+
+**Akapit 1 — Narnia:**  
+W „Opowieściach z Narnii” Aslan dobrowolnie oddaje życie za Edmunda, który wcześniej zdradził rodzeństwo. Jego decyzja pokazuje, że odpowiedzialność może przybrać formę bezinteresownej ofiary. Aslan nie działa z przymusu — świadomie wybiera dobro drugiego, mimo że Edmund zawinił. Dlatego jego postawa uczy, że odpowiedzialność nie polega na karaniu, lecz na gotowości do niesienia pomocy nawet temu, kto jej nie zasłużył.
+
+**Akapit 2 — Chłopcy z Placu Broni:**  
+Podobny wniosek wynika z „Chłopców z Placu Broni”. Nemeczek, choć najmniejszy i najsłabszy członek grupy, pozostaje wierny kolegom mimo zagrożenia. Jego lojalność kosztuje go zdrowie, a ostatecznie życie. Molnár pokazuje, że odpowiedzialność za wspólnotę nie zależy od siły fizycznej — ważne jest, by człowiek nie opuścił innych w trudnej sytuacji.
+
+**Zakończenie:**  
+Oba utwory pokazują, że odpowiedzialność za innych wymaga odwagi i bezinteresowności. Aslan uczy poświęcenia, a Nemeczek — wierności wartościom mimo słabości. Literatura przypomina więc, że dojrzałość przejawia się nie w trosce wyłącznie o siebie, lecz w gotowości do działania dla innych.
+:::
+
+## 24 | Zadania utrwalające — dodatkowe {#zadania-utrwalejace}
+
+::: karta exam | Zadanie 7 (4 pkt) — przekształcanie zdań
+Przekształć zdania, zachowując sens. Użyj zdania podrzędnego zaczynającego się od „kiedy” albo „gdy”.
+
+1. *Idąc do szkoły, spotkałem kolegę.*  
+2. *Przeczytawszy lekturę, uczeń napisał notatkę.*  
+3. *Wracając do Shire, Bilbo rozmyślał o wyprawie.*  
+4. *Zniszczywszy różdżkę, Edmund pomógł w bitwie.*
+
+::: odp | Pokaż klucz
+1. **Kiedy szedłem do szkoły, spotkałem kolegę.** — 1 pkt  
+2. **Kiedy uczeń przeczytał lekturę, napisał notatkę.** — 1 pkt  
+3. **Gdy Bilbo wracał do Shire, rozmyślał o wyprawie.** — 1 pkt  
+4. **Kiedy Edmund zniszczył różdżkę, pomógł w bitwie.** — 1 pkt  
+
+Razem: 4 pkt.
+:::
+:::
+
+::: karta exam | Zadanie 8 (4 pkt) — poprawianie błędów
+Znajdź i popraw błąd w każdym zdaniu.
+
+1. *Nie czytający uczeń nie zdał sprawdzianu.*  
+2. *Nieczytając książki, Zuzia poszła spać.*  
+3. *Idąc do szkoły spotkałem kolegę.*  
+4. *Wchodząc do Narnii, zrobiło się zimno.*
+
+::: odp | Pokaż klucz
+1. **Nieczytający uczeń nie zdał sprawdzianu.** — imiesłów przymiotnikowy piszemy z „nie” łącznie — 1 pkt  
+2. **Nie czytając książki, Zuzia poszła spać.** — imiesłów przysłówkowy z „nie” piszemy rozdzielnie — 1 pkt  
+3. **Idąc do szkoły, spotkałem kolegę.** — imiesłowowy równoważnik zdania wydzielamy przecinkiem — 1 pkt  
+4. **Kiedy dzieci weszły do Narnii, zrobiło się zimno.** — przywrócono zgodność podmiotu — 1 pkt  
+
+Razem: 4 pkt.
+:::
+:::
+
+::: karta exam | Zadanie 9 (5 pkt) — interpretacja sceny
+Przeczytaj polecenie: **„Na przykładzie jednej sceny wykaż, że odwaga nie zawsze oznacza siłę fizyczną.”**
+
+Wybierz Nemeczka, Bilba albo Łucję. Napisz akapit argumentacyjny, w którym wskażesz scenę, wyjaśnisz jej znaczenie i sformułujesz wniosek.
+
+::: odp | Pokaż klucz
+Przykładowa odpowiedź — Nemeczek:  
+„Odwaga nie zawsze oznacza siłę fizyczną, co pokazuje postawa Nemeczka z „Chłopców z Placu Broni”. Nemeczek jest najmniejszym i najsłabszym członkiem grupy, a mimo to pozostaje wierny kolegom, gdy zostaje schwytany i wrzucony do stawu przez Czerwone Koszule. Jego cierpienie i lojalność pokazują, że prawdziwa odwaga polega na wierności wartościom, nawet gdy człowiek nie może stawić oporu siłą. Molnár uczy więc, że wartość bohatera mierzy się charakterem, a nie mięśniami.”  
+
+Punktacja:  
+- teza zgodna z tematem — 1 pkt  
+- poprawny bohater i lektura — 1 pkt  
+- konkretna scena — 1 pkt  
+- wyjaśnienie znaczenia sceny — 1 pkt  
+- wniosek — 1 pkt  
+
+Razem: 5 pkt.
+:::
+:::
+
+## 25. Źródła
 
 ::: karta -
 - Komunikat Rady Języka Polskiego przy Prezydium PAN — zmiany zasad ortografii obowiązujące od 1 stycznia 2026 r. (w tym pisownia „nie” z imiesłowami przymiotnikowymi łącznie, zniesienie wyjątku świadomej pisowni rozdzielnej).
@@ -1737,4 +2030,15 @@ Wniosek Lewis pokazuje, że prawdziwe poświęcenie wymaga odwagi i bezinteresow
 
 :::
 
-<p class="mini-note">Materiał dydaktyczny — ujednolicona reguła „nie” (RJP 2026), zgodność podmiotu, fakt vs interpretacja, statyczny ≠ bierny. Nie zastępuje pełnego informatora CKE.</p>
+::: karta basic | O materiale
+Materiał dydaktyczny — ujednolicona reguła „nie” (RJP 2026), zgodność podmiotu, fakt vs interpretacja, statyczny ≠ bierny. Nie zastępuje pełnego informatora CKE.
+:::
+
+## AUDYT W1 (ULEPSZ, Perplexity, 2026-10-11)
+
+- Perplexity widziała plik tylko do „## 9. Rozszerzenie opcja” (paczka 93 KB) i przepisała §0–8.1 (surowo: `polski/plany/audyty/ULEPSZ_PPLX_L001_cz1–6_2026-10-11.md`). Przepisanej wersji nie podstawiono w całości (zmieniała ~280 linii, ryzyko utraty treści); wprowadzono nowe karty: co notować, W skrócie — bohater dynamiczny, kryteria przemiany, nazwiska, Aslan, 3 modelowe akapity + W skrócie, jak porównywać, wykład o imiesłowach (§5.0) + przykłady z lektur, W skrócie „nie” i przecinek, dlaczego błąd zgodności, przyczyny błędów, klinika (6), więcej transformacji; oraz nowe §19–24 (mity, nie-myl, mnemotechniki, mapa pojęć, modelowa rozprawka, Zadania 7–9).
+- Naprawione klucze: §7.2 „pc/pb/pw/pu” (resztki konwersji) i §7.4 „toggleLayer(” — pełne odpowiedzi.
+- Poprawione względem lekcji i propozycji: zasada „nie” z imiesłowami przymiotnikowymi — według komunikatu RJP (pkt 4: „bezwyjątkowa pisownia łączna nie- z imiesłowami odmiennymi”, zniesienie „świadomej pisowni rozdzielnej”) piszemy łącznie także w przeciwstawieniu (*nieleżący, ale siedzący*); poprawiono wszystkie miejsca w lekcji (§0, §5.1, §7, §12, §13, §14) i w blokach z odpowiedzi. Blok nie-myl przepisany do formatu tabeli.
+- Nieprzyjęte: przepisane wersje ciekawostek z §3 (powielały istniejące punkty), „Haczyk — kto zabił Smauga” i „Aslan — bohater statyczny” (treść już w lekcji); „Poprawki do wklejenia” P1–P3 dotyczą Zadań 1–3 z części odpowiedzi, której brak.
+- Do zrobienia: brakująca część odpowiedzi (nowe §9–14 z Zadaniami 1–6) oraz ocena oryginalnych §9–18 — paczka `AI_ULEPSZ_POL_L001_cz2` (od „## 9. Rozszerzenie opcja”).
+

@@ -43,3 +43,5 @@ Ranking z próby B2e (2026-10-11, szczegóły w `eksport/OCENA_MODELI.md`, autom
 - Bezpiecznie dla wszystkich: **jedna lekcja na paczkę, paczka ≤ 50 KB** (polecenie ULEPSZ ma ok. 15 KB z dodatkiem olimpijskim, więc lekcja ≤ ok. 33 KB).
 - Dłuższą lekcję dzielę: `python3 eksport/podziel_lekcje.py plik.md [--max 25] [--od "nagłówek"] [--do "nagłówek"]` → `eksport/out/czesci/`, potem `paczka_ai.py ulepsz NAZWA część.md --olimpiada --uwaga "To CZĘŚĆ k…"`. Przy scalaniu odpowiedzi wstawiam część w miejsce tych samych sekcji.
 - Odpowiedź, w której model pisze, że nie widział części pliku: przyjmuję tylko to, co widział; jego „rekonstrukcję” niewidzianych sekcji traktuję jako nowe propozycje i porównuję z oryginałem (oryginał zostaje).
+
+- 2026-10-11: Perplexity przy paczce 93 KB (L001) widziała plik tylko do ok. 70 KB (prompt + ~57 KB lekcji). Paczki dla Perplexity: **≤ 60 KB** (lekcja dzielona `podziel_lekcje.py --max 45`).
