@@ -38,9 +38,9 @@
 
 ## polski
 
-**WYSŁAĆ (bez W1) — 6 lekcji, 157 KB:** PL.G01 (32 KB) · G02 (24 KB) · G05 (27 KB) · G06 (28 KB) · G08 (21 KB) · G09 (23 KB)
+**WYSŁAĆ (bez W1) — 6 lekcji, 172 KB:** PL.G01 (47 KB) · G02 (24 KB) · G05 (27 KB) · G06 (28 KB) · G08 (21 KB) · G09 (23 KB)
 
-- zestaw 1 (57 KB): `python3 eksport/paczka_ai.py ulepsz POL_PL.G01_G02 polski/podstawy/POL.02.G01.rzeczownik.md polski/podstawy/POL.02.G02.czasownik.md`
+- zestaw 1 (72 KB): `python3 eksport/paczka_ai.py ulepsz POL_PL.G01_G02 polski/podstawy/POL.02.G01.rzeczownik.md polski/podstawy/POL.02.G02.czasownik.md`
 
 - zestaw 2 (77 KB): `python3 eksport/paczka_ai.py ulepsz POL_G05_G06_G08 polski/podstawy/POL.02.G05.zaimek.md polski/podstawy/POL.02.G06.imieslowy.md polski/podstawy/POL.02.G08.przyimek.md`
 

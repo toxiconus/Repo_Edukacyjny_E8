@@ -94,6 +94,7 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 | angielski | L012 | Future Simple | 2026-10-11 FULL (ULEPSZ --olimpiada; wcześniej W1 2026-10-09) | bez błędów potwierdzonych; uzupełnienia w planie (`angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0.md`); ocena: `angielski/plany/audyty/W1_ANGIELSKI_ocena_2026-10-09.md` | `angielski/plany/audyty/W1_perplexity_ANGIELSKI_2026-10-09.md` | — |
 | polski | G01 | Rzeczownik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/POL.02.G01.rzeczownik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
 | polski | G02 | Czasownik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/POL.02.G02.czasownik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
+| polski | G01 | Rzeczownik (v3.0 → 3.1, Perplexity) | 2026-10-11 FULL | wprowadzone do lekcji (`polski/podstawy/POL.02.G01.rzeczownik.md`); wcześniej W1 GPT-6 2026-10-09 | `polski/plany/audyty/ULEPSZ_PPLX_G01_2026-10-11.md` | — |
 | polski | G03 | Przymiotnik | — | wypełnione przez Grok, przegląd i poprawki Claude (`polski/podstawy/POL.02.G03.przymiotnik.md`, oryginał `polski/plany/wypelnienia/`) — W1 nie dotyczy; czeka na W1 | — | — |
 | polski | G04–G17, S01–S06 | Części mowy, składnia, środki stylistyczne | — | zarys od Grok wstawiony do szkieletów (`polski/podstawy/`, stan CZĘŚCIOWY); 4 poprawki z przeglądu (G08, G09, G13, G14) — W1 nie dotyczy; czeka na pełne wypełnienie | — | — |
 
