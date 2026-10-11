@@ -43,12 +43,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `ANG.01.L006.past_simple_continuous.md` 49 KB
 - `ANG.01.L012.future_simple.md` 50 KB
 
-## angielski/plany/audyty  (8 pl., 231 KB)
+## angielski/plany/audyty  (11 pl., 266 KB)
 - ⚠`ULEPSZ_OLI_L004_2026-10-11.md` 55 KB
 - `ULEPSZ_OLI_L005_2026-10-11.md` 46 KB
 - `ULEPSZ_OLI_L005_cz2_2026-10-11.md` 31 KB
 - ⚠`ULEPSZ_OLI_L006_2026-10-11.md` 55 KB
 - `ULEPSZ_OLI_L012_czesc1_2026-10-11.md` 21 KB
+- `ULEPSZ_OLI_L012_czesc2_2026-10-11.md` 13 KB
+- `ULEPSZ_OLI_L012_czesc3_2026-10-11.md` 11 KB
+- `ULEPSZ_OLI_L012_czesc4_2026-10-11.md` 10 KB
 - `W17_WDROZENIE_W1_ANGIELSKI_2026-10-09.md` 1 KB
 - `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
 - `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
@@ -806,8 +809,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 615 KB)
+## polski/podstawy  (23 pl., 641 KB)
 - (zwinięte; `ls polski/podstawy`) — duże:
+- ⚠`POL.02.G03.przymiotnik.md` 62 KB
 - ⚠`POL.02.G04.liczebnik.md` 70 KB
 - ⚠`POL.02.G12.czesci_zdania.md` 59 KB
 
