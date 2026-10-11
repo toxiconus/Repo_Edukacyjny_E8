@@ -18,7 +18,7 @@
 
 **niski priorytet (W1 starym promptem) — 2 lekcji, 88 KB:** REV01 (35 KB) · REV02 (53 KB)
 
-**NIE wysyłać (W1 FULL) — 3 lekcji, 224 KB:** L010 (58 KB) · H01 (78 KB) · U04 (86 KB)
+**NIE wysyłać (W1 FULL) — 3 lekcji, 226 KB:** L010 (58 KB) · H01 (78 KB) · U04 (88 KB)
 
 ## chemia
 
@@ -44,9 +44,9 @@
 
 - zestaw 3 (83 KB): `python3 eksport/paczka_ai.py ulepsz POL_G06_G09 polski/podstawy/POL.02.G06.imieslowy.md polski/podstawy/POL.02.G09.spojnik.md`
 
-**niski priorytet (W1 starym promptem) — 5 lekcji, 287 KB:** L001 (101 KB) · L002 (53 KB) · L003 (48 KB) · L004 (40 KB) · L006 (42 KB)
+**niski priorytet (W1 starym promptem) — 4 lekcji, 185 KB:** L002 (53 KB) · L003 (48 KB) · L004 (40 KB) · L006 (42 KB)
 
-**NIE wysyłać (W1 FULL) — 20 lekcji, 600 KB:** L005 (45 KB) · PL.G01 (47 KB) · G03 (60 KB) · G04 (69 KB) · G07 (48 KB) · G08 (35 KB) · G10 (31 KB) · G11 (25 KB) · G12 (58 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
+**NIE wysyłać (W1 FULL) — 21 lekcji, 711 KB:** L001 (111 KB) · L005 (45 KB) · PL.G01 (47 KB) · G03 (60 KB) · G04 (69 KB) · G07 (48 KB) · G08 (35 KB) · G10 (31 KB) · G11 (25 KB) · G12 (58 KB) · G13 (21 KB) · G14 (18 KB) · G15 (23 KB) · G16 (17 KB) · G17 (16 KB) · S01 (13 KB) · S02 (13 KB) · S03 (12 KB) · S04 (11 KB) · S05 (12 KB) · S06 (16 KB)
 
 ## angielski
 

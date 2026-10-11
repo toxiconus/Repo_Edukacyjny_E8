@@ -109,3 +109,4 @@
 - 2026-10-11: ANG L002 W1 FULL — cz. 1–2 z AI, cz. 3 (wykład, nie-myl, ciekawostki, O1–O7, test, słownik, fiszki) Claude; L005 polski: odpowiedź cz. 1–2/3 zapisana w audytach, scalenie po cz. 3.
 - 2026-10-11: POL L005 (Kajko i Kokosz) W1 FULL — Perplexity 3 części scalone; poprawione fakty (Hegemon = wódz zbójcerzy przebrany za kupca), klucze K3/K4, deprecjacja, liczba podwójna.
 - 2026-10-11: POL L001 — wprowadzono część odpowiedzi Perplexity (§0–8.1 karty + §19–24), naprawione klucze, reguła „nie” z imiesłowami wg RJP (bezwyjątkowo łącznie); POL G02/G05/G06/G09/L004 ulepszone przez Claude; paczki BIO/CHE podzielone ≤ 60 KB.
+- 2026-10-11: BIO U04 i POL L001 — W1 FULL (Perplexity, obie części scalone).

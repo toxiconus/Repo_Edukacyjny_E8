@@ -4,7 +4,7 @@ przedmiot: polski
 tytul: L001 – Lektury z klas IV–VI i imiesłowy · Polski: Podstawa Plus
 stopka: L001 — Lektury z klas IV–VI i imiesłowy · Polski: Podstawa Plus · v19 · 2026-09-11
 zrodlo: L001-PL-Lektury-klas-IV-VI-imieslow.html (konwersja html_do_md.py, 2026-10-09)
-stan: W1 częściowo (do §8.1 + nowe §19–24) — Perplexity (paczka ULEPSZ POL_L001_cala), 2026-10-11; scalenie Claude; część odpowiedzi (nowe §9–14, Zadania 1–6) brak; oryginalne §9–18 bez oceny
+stan: W1 FULL — Perplexity (paczki ULEPSZ POL_L001_cala + POL_L001_cz2), 2026-10-11; scalenie i poprawki Claude
 ---
 Polski: Podstawa Plus · Lekcja 1
 
@@ -1456,266 +1456,282 @@ Gereb
 
 Nemeczek
 
-## 9. Rozszerzenie opcja
+## 9 | Zadania — rozszerzenie {#zadania-rozszerzenie}
 
-::: karta -
-1. **Wyjaśnij, dlaczego Aslan NIE jest bohaterem dynamicznym.**<br>W szkolnej interpretacji jest postacią statyczną: nie zmienia wartości ani celu. Zmienia się jego sytuacja (śmierć, zmartwychwstanie), ale nie charakter.
-2. **Przekształć i wskaż zmianę znaczenia:** „Przeczytawszy książkę, uczeń napisał wypracowanie” → „Czytając książkę, uczeń napisał wypracowanie”. <em>To nie jest transformacja równoważna.</em> Pierwsza wersja: najpierw przeczytał, potem napisał. Druga: czytał i pisał równocześnie.
-3. **Popraw:** „Nie czytający uczeń nie zdał egzaminu.” → <em>Nieczytający uczeń nie zdał egzaminu.</em>
-4. **Wskaż różnicę:** „nie czytając” (przysłówkowy, rozdzielnie) vs „nieczytający” (przymiotnikowy, łącznie).
-5. **Dwa argumenty do rozprawki o przemianie: Edmund i Gereb.** Łączy ich: zdrada i skrucha. Różni: Edmund naprawia błąd czynem (niszczy różdżkę); Gereb okazuje skruchę i wraca (mniej wyraźna).
-6. **Porównaj Bilba i Thorina.** Bilbo dojrzewa stopniowo, Thorin najpierw moralnie upada pod wpływem chciwości, a dopiero przed śmiercią odzyskuje zdolność oceny.
-
+::: karta understand | W skrócie — rozpoznaj imiesłów w trzech pytaniach
+Trzy pytania i masz etykietę: **1) Czy odmienia się (jaki, jakiej…)?** Tak — imiesłów przymiotnikowy (-ący czynny albo -ny/-ty/-ony bierny). Nie — idź dalej. **2) Czy kończy się na -ąc?** Tak — przysłówkowy współczesny: czynność dzieje się W TRAKCIE czynności głównej. **3) Czy kończy się na -wszy/-łszy?** Tak — przysłówkowy uprzedni: czynność WCZEŚNIEJSZA. Na końcu zawsze sprawdź zgodność podmiotu: kto wykonuje czynność imiesłowu i kto czynność orzeczenia? Ta sama osoba — dobrze. Dwie różne — zdanie do poprawy.
 :::
 
-## 10. Dla ambitnych opcja
+::: karta exam | Zadanie 1 (3 pkt) — Czy Aslan jest bohaterem dynamicznym?
+Wyjaśnij, dlaczego Aslan NIE jest bohaterem dynamicznym. Odwołaj się do definicji przemiany wewnętrznej.
 
-::: karta -
-**Treść:** Przeanalizuj fragment: <em>„Bilbo, stojąc na skale, patrzył na smoka. Nie wiedząc, co robić, sięgnął po pierścień. Znalazłszy go, natychmiast się nim posłużył.”</em>
-
-1. Wypisz wszystkie imiesłowy i określ ich rodzaj.
-2. Popraw błędy interpunkcyjne (jeśli są).
-3. Przekształć pierwsze zdanie tak, aby użyć imiesłowu przymiotnikowego czynnego.
-4. Uzasadnij zgodność podmiotu.
-5. Dodaj drugą wersję pierwszego zdania, używając imiesłowu przysłówkowego uprzedniego.
-
-::: odp | Odpowiedź
-1. <em>stojąc</em> — przys. współczesny; <em>nie wiedząc</em> — przys. współczesny; <em>znalazłszy</em> — przys. uprzedni.
-2. Poprawne — przecinki już są.
-3. <em>Bilbo, stojący na skale, patrzył na smoka.</em>
-4. Podmiotem wszystkich czynności jest Bilbo — zachowana zgodność.
-5. <em>Stanąwszy na skale, Bilbo patrzył na smoka.</em> — imiesłów uprzedni wskazuje czynność wcześniejszą.
-
+::: odp | Pokaż klucz
+W szkolnej interpretacji jest postacią statyczną: nie zmienia wartości ani celu. Zmienia się jego sytuacja (śmierć i zmartwychwstanie), ale nie charakter. (1 pkt za tezę, 1 pkt za rozróżnienie zmiany sytuacji i zmiany charakteru, 1 pkt za odwołanie do definicji bohatera dynamicznego.)
+:::
 :::
 
+::: karta exam | Zadanie 2 (3 pkt) — Przekształcenie i zmiana znaczenia
+Przekształć i wskaż zmianę znaczenia: „Przeczytawszy książkę, uczeń napisał wypracowanie" → „Czytając książkę, uczeń napisał wypracowanie". Czy transformacja jest równoważna?
+
+::: odp | Pokaż klucz
+To nie jest transformacja równoważna. Pierwsza wersja (uprzedni): najpierw przeczytał, potem napisał. Druga (współczesny): czytał i pisał równocześnie. (1 pkt za obie przekształcone formy, 2 pkt za wskazanie zmiany stosunku czasowego.)
+:::
 :::
 
-## 11. Zaawansowany opcja
+::: karta exam | Zadanie 3 (4 pkt) — „nie" z imiesłowami
+a) Popraw: „Nie czytający uczeń nie zdał egzaminu." i uzasadnij regułę. b) Wskaż różnicę: „nie czytając" vs „nieczytający".
 
-::: karta -
-**Treść:** Czy reguła pisowni „nie” z imiesłowami przymiotnikowymi jest logiczna? Przedstaw argumenty za i przeciw.
-
-::: odp | Odpowiedź
-**Za:** Zmiana ujednolica regułę — imiesłów przymiotnikowy pełni funkcję podobną do przymiotnika. Upraszcza to naukę i eliminuje wątpliwości.
-
-**Przeciw:** Niektórzy językoznawcy uważają, że utrata rozróżnienia zmniejsza precyzję. W praktyce kontekst zdania i tak wyjaśnia znaczenie.
-
-**Wniosek:** Problem do samodzielnego rozważenia. Warto śledzić kolejne uchwały RJP.
-
+::: odp | Pokaż klucz
+a) Nieczytający uczeń nie zdał egzaminu. — imiesłów przymiotnikowy piszemy z „nie" łącznie (1 pkt); od 1.01.2026 komunikat RJP znosi wyjątek pisowni rozdzielnej — pisownia łączna także przy przeciwstawieniu (1 pkt). b) „nie czytając" — imiesłów przysłówkowy, zawsze rozdzielnie; „nieczytający" — przymiotnikowy, łącznie (2 pkt).
+:::
 :::
 
+## 10 | Zadania — dla ambitnych {#zadania-ambitne}
+
+::: adv | Zadanie 4 (5 pkt) — Dwa argumenty o przemianie: Edmund i Gereb | poziom ambitny
+Dwa argumenty do rozprawki o przemianie: Edmund i Gereb. Łączy ich: zdrada i skrucha. Różni: Edmund naprawia błąd czynem (niszczy różdżkę Czarownicy); Gereb okazuje skruchę i wraca do grupy (przemiana mniej wyraźna). Porównaj sposób przedstawienia obu przemian: która jest bardziej przekonująca i dlaczego?
+
+::: odp | Pokaż klucz
+Edmund: przemiana rozłożona na wiele scen — pokusa (ptasie mleczko), zdrada, rozmowa z Aslanem, czyn w bitwie (zniszczenie różdżki). Wyraźna i przekonująca. Gereb: czytelnik widzi głównie skutki (powrót do grupy, czuwanie przy łóżku Nemeczka) — brak sceny wewnętrznego przełomu, więc przemianę można uznać za mniej przekonującą. (2 pkt za trójkrok każdego bohatera, 1 pkt za kontrast, 1 pkt za ocenę z uzasadnieniem, 1 pkt za odwołanie do scen.)
+:::
 :::
 
-::: karta -
-**Zadanie dodatkowe:** Porównaj sposób przedstawienia przemiany Edmunda (Narnia) i Gereba (Plac Broni). Która jest bardziej przekonująca i dlaczego?
+::: adv | Zadanie 5 (4 pkt) — Bilbo i Thorin: dwa razy przemiana | poziom ambitny
+Porównaj Bilba i Thorina. Który przechodzi klasyczną, stopniową przemianę bohatera dynamicznego, a u którego zmiana jest późna i krótka?
 
-::: odp | Odpowiedź
-**Edmund:** przemiana rozłożona na wiele scen — pokusa, zdrada, rozmowa z Aslanem, czyn w bitwie. Wyraźna i przekonująca.
-
-**Gereb:** przemiana pokazana mniej wyraźnie — czytelnik widzi głównie skutki (powrót do grupy). Można argumentować, że jest mniej przekonująca, bo brakuje sceny wewnętrznego przełomu.
-
+::: odp | Pokaż klucz
+Bilbo dojrzewa stopniowo: odmowa wyprawy → pojedynek z Gollumem → rozmowa ze Smaugiem → rezygnacja z Arcyklejnotu → powrót do Shire wewnętrznie zmieniony. Thorin najpierw moralnie upada pod wpływem chciwości („smocza choroba"), a dopiero przed śmiercią odzyskuje zdolność oceny (prosi Bilba o przebaczenie). (2 pkt za prawidłowy opis każdej przemiany; przemiana Thorina jest późna i krótka — nie mylić jej z dojrzewaniem Bilba — 2 pkt za kontrast.)
+:::
 :::
 
+## 11 | Zadania olimpijskie {#zadania-olimpijskie}
+
+::: adv | Dla olimpijczyka — granice tworzenia imiesłowów | poziom ambitny
+Zasady słowotwórcze, których egzamin nie wymaga, a konkurs lubi: **przysłówkowy współczesny (-ąc) tworzy się tylko od czasowników niedokonanych** — czytać → czytając, ale forma *przeczytając nie istnieje. **Uprzedni (-wszy/-łszy) — od dokonanych**: przeczytać → przeczytawszy. **Przymiotnikowy czynny (-ący) — od niedokonanych** (czytający), a **bierny (-ny/-ty)** — podręcznikowo od dokonanych (przeczytany), choć od niedokonanych też bywa (czytany, lubiany) — tu różnią się konwencje szkolne i akademickie, więc w odpowiedzi konkursowej podaj przyjętą konwencję. Od niektórych czasowników nie ma kompletu form: „mieć" → mający (czynny), ale bierny *miany jest archaiczny (do weryfikacji w słowniku). Szczegóły słowotwórcze sprawdzaj w gramatyce akademickiej; wymagania konkretnego konkursu w paczce nie ma — warstwę oznaczam „do zweryfikowania z wymaganiami".
 :::
 
-## 12. Fiszki
-
-Kliknij pytanie, aby rozwinąć definicję, przykład i pułapkę.
-
-**Definicja:** Postać z wyraźną przemianą wewnętrzną: stan początkowy → wydarzenie → nowy stan.
-
-**Przykład:** Edmund (Narnia), Bilbo (Hobbit), Thorin (Hobbit), Gereb (Plac Broni).
-
-**Pułapka:** Zmiana sytuacji zewnętrznej (śmierć i zmartwychwstanie) to nie to samo co przemiana wewnętrzna.
-
-**Trójkrok:** zdrada → skrucha → naprawa czynem (zniszczenie różdżki Czarownicy).
-
-**Scena kluczowa:** rozmowa z Aslanem, potem walka w bitwie.
-
-**Pułapka:** Nie myl Edmunda z Aslanem — to Edmund przechodzi przemianę.
-
-**Definicja:** Nie (interpretacja szkolna). Postać statyczna + symboliczna.
-
-**Przykład:** Umiera i zmartwychwstaje, ale nie zmienia wartości ani celu.
-
-**Pułapka:** Uczniowie mylą zmianę losu ze zmianą charakteru.
-
-**Łańcuch:** Bilbo dostrzega odsłonięte miejsce na piersi Smauga i mówi o nim → drozd słyszy tę informację i przekazuje ją Bardowi → Bard zabija Czarną Strzałą.
-
-**Scena:** rozmowa Bilba ze Smaugiem w Samotnej Górze.
-
-**Pułapka:** Bilbo NIE zabił Smauga — to częsty błąd.
-
-**Trójkrok:** zdrada → skrucha → powrót do grupy.
-
-**Scena:** Gereb uznaje winę i wraca (m.in. czuwa przy łóżku Nemeczka); skrucha nie cofa skutków zdrady.
-
-**Pułapka:** Gereb nie poświęcił życia — to Nemeczek umiera.
-
-**Trójkrok:** chciwość („smocza choroba”) → rozpoznanie błędu przed śmiercią.
-
-**Scena:** Thorin przed śmiercią prosi Bilba o przebaczenie.
-
-**Pułapka:** Przemiana Thorina jest późna i krótka — nie myl jej z dojrzewaniem Bilba.
-
-**Definicja:** Nie przechodzi wyraźnej przemiany wewnętrznej; ciężko choruje i umiera (w opracowaniach: zapalenie płuc). Jego stałe cechy (lojalność, odwaga) są coraz mocniej ujawniane.
-
-**Cechy stałe:** lojalność, odwaga, wierność grupie.
-
-**Pułapka:** Uczniowie mylą Nemeczka z Gerebem — tylko Gereb jest dynamiczny.
-
-**Definicja:** -ący, jaki?, odmienny.
-
-**Przykład:** czytający, stojący, idący.
-
-**Pułapka:** Nie myl z przysłówkowym współczesnym (-ąc) — ten jest nieodmienny.
-
-**Definicja:** -ny/-ty/-ony, jaki?, odmienny.
-
-**Przykład:** przeczytany, ukryty, doceniony, zniszczony.
-
-**Pułapka:** Nie każda forma na -ny to imiesłów — „drewniany” to przymiotnik.
-
-**Definicja:** -ąc, czynność równoczesna, nieodmienny.
-
-**Przykład:** czytając, idąc, patrząc.
-
-**Pułapka:** Wymaga zgodności podmiotu — „Czytając książkę, zapaliła się lampa” to błąd.
-
-**Definicja:** -wszy/-łszy, czynność wcześniejsza, nieodmienny.
-
-**Przykład:** przeczytawszy, znalazłszy, zniszczywszy.
-
-**Pułapka:** Nie myl z przysłówkowym współczesnym — uprzedni wskazuje czynność wcześniejszą.
-
-**Reguła:** Łącznie — od 2026 r. bez wyjątków, także w przeciwstawieniu.
-
-**Przykład:** nieczytający uczeń; nieczytający, lecz słuchający.
-
-**Pułapka:** Nie przenoś zasady z czasowników („nie czytać” — rozdzielnie).
-
-**Reguła:** Zawsze rozdzielnie.
-
-**Przykład:** nie czytając, nie przeczytawszy.
-
-**Pułapka:** Uczniowie mylą z przymiotnikowymi i piszą łącznie.
-
-**Reguła:** Imiesłowowy równoważnik zdania wydzielamy przecinkiem.
-
-**Przykład:** Idąc do szkoły, spotkałem kolegę.
-
-**Pułapka:** Przecinek nie jest potrzebny, gdy imiesłów pełni funkcję przydawki.
-
-**Reguła:** Podmiot imiesłowu = podmiot orzeczenia.
-
-**Przykład:** Idąc do szkoły, spotkałem kolegę.
-
-**Pułapka:** „Czytając książkę, zapaliła się lampa” — błąd zgodności.
-
-**Definicja:** Plac Broni — symbol przynależności i wspólnoty.
-
-**Przykład:** Obrona placu przez chłopców; Shire dla Bilba; Narnia dla dzieci.
-
-**Pułapka:** To nie tylko miejsce — to wartość i tożsamość.
-
-**Definicja:** Niewinna ofiara za winnego → zwycięstwo nad śmiercią (Narnia).
-
-**Przykład:** Aslan oddaje życie za Edmunda.
-
-**Pułapka:** To nie jest magia „mechaniczna” — to prawo moralne.
-
-**Łańcuch:** Bilbo dostrzega odsłonięte miejsce → drozd słyszy i przekazuje Bardowi → Bard zabija Czarną Strzałą.
-
-**Przykład:** Każdy element jest konieczny — bez żadnego Smaug nie ginie.
-
-**Pułapka:** Bilbo nie zabija Smauga.
-
-**Definicja:** Faun z Narnii, pierwsza istota, którą spotyka Łucja.
-
-**Przykład:** Zaprasza Łucję do domu, potem zostaje aresztowany przez Czarownicę.
-
-**Pułapka:** Tumnus nie jest bohaterem dynamicznym — nie przechodzi przemiany.
-
-**Definicja:** Antagonista w „Kajku i Kokoszu”.
-
-**Przykład:** Wódz zbójców, intryguje przeciw Mirmiłowu.
-
-**Pułapka:** Hegemon to nie bohater dynamiczny — pozostaje taki sam.
-
-**Definicja:** Zabawa z „Akademii Pana Kleksa” — rozkładanie atramentowych plam i odczytywanie ukrytych obrazów.
-
-**Przykład:** Chłopcy uczą się widzieć w plamach historie.
-
-**Pułapka:** Kleksografia to nie tylko zabawa — to metafora wyobraźni i interpretacji.
-
-## 13. Test końcowy — 20 pytań egzamin
-
-**? Odpowiedz na pytania**
-
-1. Która postać w „Chłopcach z Placu Broni” zdradza i wraca po skrusze?
-2. Jaki motyw łączymy z ofiarą Aslana?
-3. Imiesłów przymiotnikowy czynny od „czytać”?
-4. Imiesłów przysłówkowy uprzedni od „przeczytać”?
-5. Kto odkrył słaby punkt Smauga?
-6. Jaki jest podstawowy zapis „nie” z imiesłowem przymiotnikowym bez wyraźnego przeciwstawienia?
-7. Czy Aslan jest bohaterem dynamicznym? (tak/nie)
-8. Popraw: „Nie czytający uczeń”
-9. Końcówka imiesłowu przysłówkowego współczesnego?
-10. Końcówka imiesłowu przysłówkowego uprzedniego?
-11. Kto zabił Smauga?
-12. Uzupełnij: „_____ książkę, poszedł spać.” (od przeczytać)
-13. Trójkrok Edmunda: zdrada → … → naprawa
-14. Różnica między faktem fabularnym a interpretacją?
-15. Czy Nemeczek jest typowym bohaterem dynamicznym? (tak/nie)
-16. Autor „Chłopców z Placu Broni”?
-17. Jaki motyw łączymy z Placem Broni?
-18. Jak nazywa się smok z „Hobbita”?
-19. Autor „Hobbita”?
-20. Czy Gereb jest bohaterem dynamicznym? (tak/nie)
-
-::: odp | Odpowiedzi
-1. **Gereb** — Gereb to bohater dynamiczny: zdrada → skrucha → powrót. Nemeczek jest statyczny.
-2. **poświęcenie** — Aslan umiera, żeby ocalić Edmunda. To najwyższa forma poświęcenia — dobrowolna ofiara za winnego.
-3. **czytający** — „Czytający” — imiesłów przymiotnikowy czynny, odmienny, pytanie „jaki?”.
-4. **przeczytawszy** — „Przeczytawszy” — czynność wcześniejsza wobec czynności głównej.
-5. **Bilbo** — Bilbo zauważył jaśniejszą plamę na piersi smoka. To nie on zabił Smauga — zrobił to Bard.
-6. **łącznie** — Od 1.01.2026 imiesłowy przymiotnikowe z „nie” zapisujemy łącznie w typowym użyciu. Komunikat RJP mówi o bezwyjątkowej pisowni łącznej — także przy przeciwstawieniu (*nieleżący, ale siedzący*).
-7. **nie** — Aslan nie zmienia wartości ani celu — jest statyczny i symboliczny.
-8. **Nieczytający uczeń** — „Nieczytający uczeń” — pisownia łączna. Także przy przeciwstawieniu: „nieczytający, lecz słuchający”.
-9. **-ąc** — -ąc — np. czytając, idąc. Imiesłów nieodmienny.
-10. **-wszy** — -wszy / -łszy — np. przeczytawszy, znalazłszy. Czynność wcześniejsza.
-11. **Bard** — Bard zabił Smauga Czarną Strzałą. Bilbo zauważył słaby punkt, drozd przekazał informację.
-12. **Przeczytawszy** — „Przeczytawszy książkę, poszedł spać.” — czynność wcześniejsza.
-13. **skrucha** — Edmund: zdrada → skrucha → naprawa czynem (zniszczenie różdżki Czarownicy).
-14. **fakt wynika z fabuły; interpretacja wymaga uzasadnienia** — Fakt fabularny sprawdzasz w utworze. Interpretacja to odczytanie (np. mała ojczyzna) — wymaga sceny i wyjaśnienia, dlaczego tak uważasz.
-15. **nie** — Nemeczek nie przechodzi wyraźnej przemiany. Jego cechy są stałe — dlatego jest statyczny.
-16. **Molnár** — Ferenc Molnár — węgierski pisarz i dziennikarz. Akcja rozgrywa się w Budapeszcie.
-17. **mała ojczyzna** — Plac Broni to mała ojczyzna — miejsce, o które warto walczyć.
-18. **Smaug** — Smaug — smok, który zajął Samotną Górę. Ginie od Czarnej Strzały Barda.
-19. **Tolkien** — J.R.R. Tolkien — autor „Hobbita” i „Władcy Pierścieni”.
-20. **tak** — Gereb jest bohaterem dynamicznym — zmienia postawę wobec grupy.
+::: adv | Zadanie 6 (5 pkt) — analiza fragmentu | poziom ambitny
+**Treść:** Przeanalizuj fragment: „Bilbo, stojąc na skale, patrzył na smoka. Nie wiedząc, co robić, sięgnął po pierścień. Znalazłszy go, natychmiast się nim posłużył."
+
+1. Wypisz wszystkie imiesłowy i określ ich rodzaj. (2 pkt)
+2. Popraw błędy interpunkcyjne (jeśli są). (0,5 pkt)
+3. Przekształć pierwsze zdanie tak, aby użyć imiesłowu przymiotnikowego czynnego. (1 pkt)
+4. Uzasadnij zgodność podmiotu. (0,5 pkt)
+5. Dodaj drugą wersję pierwszego zdania, używając imiesłowu przysłówkowego uprzedniego. (1 pkt)
+
+::: odp | Pokaż klucz
+1. stojąc — przys. współczesny; nie wiedząc — przys. współczesny; znalazłszy — przys. uprzedni (2 pkt). 2. Interpunkcja poprawna — przecinki już są (0,5 pkt). 3. Bilbo, stojący na skale, patrzył na smoka. (1 pkt) 4. Podmiotem wszystkich czynności jest Bilbo — zachowana zgodność (0,5 pkt). 5. Stanąwszy na skale, Bilbo patrzył na smoka. — imiesłów uprzedni wskazuje czynność wcześniejszą (1 pkt).
+:::
 :::
 
-**+ Pytania otwarte — uzasadnij (2–3 zdania)**
+::: adv | Zadanie 10 (3 pkt) — znajdź błąd | poziom ambitny
+a) Znajdź i popraw błąd: „Przeczytając lekturę, poszedł spać." b) Popraw: „Nieczytając notatek, pisał sprawdzian." c) Utwórz wszystkie możliwe imiesłowy od czasowników „pisać" i „przepisać"; brakujące formy uzasadnij.
 
+::: odp | Pokaż klucz
+a) Przeczytawszy lekturę, poszedł spać. — przysłówkowy współczesny tworzy się tylko od czasowników niedokonanych; od „przeczytać" istnieje tylko uprzedni (1 pkt). b) Nie czytając notatek… — imiesłów przysłówkowy z „nie" zawsze rozdzielnie (1 pkt). c) pisać: piszący (czynny), pisany (bierny), pisząc (współczesny); uprzedni od niedokonanego w praktyce nie powstaje (archaiczne *pisawszy*); przepisać: przepisany (bierny), przepisawszy (uprzedni); czynny i współczesny od dokonanego nie istnieją (1 pkt za komplet z uzasadnieniem).
+:::
+:::
+
+::: adv | Zadanie 11 (4 pkt) — przekształcenia z pułapką | poziom ambitny
+Przekształć zdania w zdania podrzędne z „kiedy" albo „gdy", zachowując sens; w jednym ukryta jest pułapka zgodności: a) Idąc do szkoły, spotkałem kolegę. b) Przeczytawszy lekturę, uczeń napisał notatkę. c) Czytając książkę, zapaliła się lampa.
+
+::: odp | Pokaż klucz
+a) Kiedy szedłem do szkoły, spotkałem kolegę. (1 pkt) b) Kiedy uczeń przeczytał lekturę, napisał notatkę. (1 pkt) c) Pułapka: błąd zgodności podmiotu — lampa nie czyta. Poprawnie np. Kiedy czytała książkę, zapaliła się lampa. albo Czytając książkę, poczuła zmęczenie. (1 pkt za wykrycie błędu, 1 pkt za poprawną wersję.)
+:::
+:::
+
+::: adv | Problem otwarty — czy reguła jest logiczna? | poziom ambitny
+**Treść:** Czy reguła pisowni „nie" z imiesłowami przymiotnikowymi jest logiczna? Przedstaw argumenty za i przeciw.
+
+::: odp | Przykładowa odpowiedź
+Za: zmiana ujednolica regułę — imiesłów przymiotnikowy pełni funkcję podobną do przymiotnika; upraszcza naukę i eliminuje wątpliwości. Przeciw: część językoznawców uważa, że utrata rozróżnienia zmniejsza precyzję; w praktyce kontekst zdania i tak wyjaśnia znaczenie. Wniosek: problem do samodzielnego rozważenia — warto śledzić kolejne uchwały RJP.
+:::
+:::
+
+## 12 | Fiszki {#fiszki}
+
+::: fiszki
+Bohater dynamiczny | Postać z wyraźną przemianą wewnętrzną: stan początkowy → wydarzenie → nowy stan; przykład: Edmund, Bilbo, Thorin, Gereb; pułapka: zmiana sytuacji zewnętrznej (śmierć i zmartwychwstanie) to nie to samo co przemiana wewnętrzna | basic:lektury
+Bohater statyczny | Nie przechodzi wyraźnej przemiany wewnętrznej; przykład: Aslan, Nemeczek, Gandalf; pułapka: statyczny ≠ bierny — może dużo działać | basic:lektury
+Edmund — trójkrok przemiany | zdrada → skrucha → naprawa czynem (zniszczenie różdżki Czarownicy); scena kluczowa: rozmowa z Aslanem, potem walka w bitwie; pułapka: nie myl Edmunda z Aslanem — to Edmund przechodzi przemianę | basic:lektury
+Aslan | W interpretacji szkolnej postać statyczna i symboliczna: umiera i zmartwychwstaje, ale nie zmienia wartości ani celu; pułapka: uczniowie mylą zmianę losu ze zmianą charakteru | basic:lektury
+Gereb | zdrada → skrucha → powrót do grupy; scena: uznaje winę i wraca (m.in. czuwa przy łóżku Nemeczka); pułapka: skrucha nie cofa skutków zdrady; Gereb nie poświęcił życia — to Nemeczek umiera | basic:lektury
+Thorin | chciwość („smocza choroba") → rozpoznanie błędu przed śmiercią; scena: prosi Bilba o przebaczenie; pułapka: przemiana późna i krótka — nie mylić z dojrzewaniem Bilba | basic:lektury
+Nemeczek | Nie przechodzi wyraźnej przemiany; ciężko choruje i umiera (w opracowaniach: zapalenie płuc); stałe cechy: lojalność, odwaga, wierność grupie; pułapka: uczniowie mylą Nemeczka z Gerebem — tylko Gereb jest dynamiczny | basic:lektury
+Tumnus | Faun z Narnii, pierwsza istota, którą spotyka Łucja; zaprasza ją do domu, potem zostaje aresztowany przez Czarownicę; pułapka: Tumnus nie jest bohaterem dynamicznym | basic:lektury
+Hegemon | Antagonista w „Kajku i Kokoszu"; wódz zbójców, intryguje przeciw Mirmiłowi; pułapka: Hegemon to nie bohater dynamiczny — pozostaje taki sam | basic:lektury
+Łańcuch śmierci Smauga | Bilbo dostrzega odsłonięte miejsce na piersi smoka (rozmowa w Samotnej Górze) → drozd słyszy i przekazuje Bardowi → Bard zabija Czarną Strzałą; każdy element konieczny — bez żadnego Smaug nie ginie; pułapka: Bilbo NIE zabił Smauga — częsty błąd | basic:lektury
+Poświęcenie Aslana | Niewinna ofiara za winnego → zwycięstwo nad śmiercią; Aslan oddaje życie za Edmunda; pułapka: to nie magia „mechaniczna" — to prawo moralne | basic:lektury
+Mała ojczyzna | Plac Broni — symbol przynależności i wspólnoty; przykład: obrona placu przez chłopców, Shire dla Bilba, Narnia dla dzieci; pułapka: to nie tylko miejsce — to wartość i tożsamość | basic:lektury
+Kleksografia | Zabawa z „Akademii Pana Kleksa": rozkładanie atramentowych plam i odczytywanie ukrytych obrazów; chłopcy uczą się widzieć w plamach historie; pułapka: to nie tylko zabawa — metafora wyobraźni i interpretacji | basic:lektury
+Imiesłów przymiotnikowy czynny | -ący, pytanie: jaki?, odmienny; przykład: czytający, stojący, idący; pułapka: nie myl z przysłówkowym współczesnym (-ąc) — ten jest nieodmienny | basic:imieslowy
+Imiesłów przymiotnikowy bierny | -ny/-ty/-ony, pytanie: jaki?, odmienny; przykład: przeczytany, ukryty, doceniony, zniszczony; pułapka: nie każda forma na -ny to imiesłów — „drewniany" to przymiotnik | basic:imieslowy
+Imiesłów przysłówkowy współczesny | -ąc, czynność równoczesna, nieodmienny; przykład: czytając, idąc, patrząc; pułapka: wymaga zgodności podmiotu — „Czytając książkę, zapaliła się lampa" to błąd | basic:imieslowy
+Imiesłów przysłówkowy uprzedni | -wszy/-łszy, czynność wcześniejsza, nieodmienny; przykład: przeczytawszy, znalazłszy, zniszczywszy; pułapka: nie myl ze współczesnym — uprzedni wskazuje czynność wcześniejszą | basic:imieslowy
+„nie" z imiesłowami przymiotnikowymi | Łącznie — od 2026 r. bez wyjątków, także przy przeciwstawieniu: nieczytający uczeń; nieczytający, lecz słuchający; pułapka: nie przenoś zasady z czasowników („nie czytać" — rozdzielnie) | basic:imieslowy
+„nie" z imiesłowami przysłówkowymi | Zawsze rozdzielnie: nie czytając, nie przeczytawszy; pułapka: uczniowie mylą z przymiotnikowymi i piszą łącznie | basic:imieslowy
+Interpunkcja imiesłowów | Imiesłowowy równoważnik zdania wydzielamy przecinkiem: Idąc do szkoły, spotkałem kolegę; pułapka: przecinek nie jest potrzebny, gdy imiesłów pełni funkcję przydawki (stojący na skale hobbit) | basic:imieslowy
+Zgodność podmiotu | Podmiot imiesłowu = podmiot orzeczenia: Idąc do szkoły, spotkałem kolegę; pułapka: „Czytając książkę, zapaliła się lampa" — błąd zgodności | basic:imieslowy
+Fakt fabularny a interpretacja | Fakt wynika bezpośrednio z fabuły (Bard zabija Smauga); interpretacja to odczytanie wymagające uzasadnienia sceną (Plac Broni jako mała ojczyzna) | olimpijski:lektury
+:::
+
+## 13 | Test końcowy — 22 pytania (2 olimpijskie) {#test}
+
+::: test
+? Która postać w „Chłopcach z Placu Broni" zdradza i wraca po skrusze?
++ Gereb
+- Nemeczek
+- Aslan
+- Bilbo
+! Gereb to bohater dynamiczny: zdrada → skrucha → powrót. Nemeczek jest statyczny.
+? Jaki motyw łączymy z ofiarą Aslana?
++ poświęcenie
+- chciwość
+- dojrzewanie
+- manipulacja
+! Aslan umiera, żeby ocalić Edmunda. To najwyższa forma poświęcenia — dobrowolna ofiara za winnego.
+? Imiesłów przymiotnikowy czynny od „czytać"?
++ czytający
+- czytając
+- przeczytany
+- przeczytawszy
+! „Czytający" — imiesłów przymiotnikowy czynny, odmienny, pytanie „jaki?".
+? Imiesłów przysłówkowy uprzedni od „przeczytać"?
++ przeczytawszy
+- przeczytany
+- czytając
+- przeczytający
+! „Przeczytawszy" — czynność wcześniejsza wobec czynności głównej.
+? Kto odkrył słaby punkt Smauga?
++ Bilbo
+- Bard
+- Thorin
+- Gandalf
+! Bilbo zauważył jaśniejszą plamę na piersi smoka. To nie on zabił Smauga — zrobił to Bard.
+? Jaki jest podstawowy zapis „nie" z imiesłowem przymiotnikowym bez wyraźnego przeciwstawienia?
++ łącznie
+- rozdzielnie
+- z łącznikiem
+- zależnie od znaczenia zdania
+! Od 1.01.2026 imiesłowy przymiotnikowe z „nie" zapisujemy łącznie w typowym użyciu. Komunikat RJP mówi o bezwyjątkowej pisowni łącznej — także przy przeciwstawieniu (nieczytający, lecz słuchający).
+? Czy Aslan jest bohaterem dynamicznym?
++ nie — nie zmienia wartości ani celu działania
+- tak — bo umiera i zmartwychwstaje
+- tak — bo wraca do życia
+- nie — bo ginie w bitwie
+! Aslan nie zmienia wartości ani celu — jest statyczny i symboliczny.
+? Popraw pisownię: „Nie czytający uczeń nie zdał egzaminu."
++ Nieczytający uczeń nie zdał egzaminu.
+- Nie czytający uczeń nie zdał egzaminu.
+- Nie-czytający uczeń nie zdał egzaminu.
+- Nieczytający, uczeń nie zdał egzaminu.
+! „Nieczytający uczeń" — pisownia łączna. Także przy przeciwstawieniu: „nieczytający, lecz słuchający".
+? Końcówka imiesłowu przysłówkowego współczesnego?
++ -ąc
+- -ący
+- -wszy
+- -ny
+! -ąc — np. czytając, idąc. Imiesłów nieodmienny.
+? Końcówka imiesłowu przysłówkowego uprzedniego?
++ -wszy / -łszy
+- -ąc
+- -ący
+- -ony
+! -wszy / -łszy — np. przeczytawszy, znalazłszy. Czynność wcześniejsza.
+? Kto zabił Smauga?
++ Bard
+- Bilbo
+- Thorin
+- Drozd
+! Bard zabił Smauga Czarną Strzałą. Bilbo zauważył słaby punkt, drozd przekazał informację.
+? Uzupełnij: „_____ książkę, poszedł spać." (od „przeczytać")
++ Przeczytawszy
+- Przeczytając
+- Przeczytany
+- Czytając
+! „Przeczytawszy książkę, poszedł spać." — czynność wcześniejsza; forma „przeczytając" nie istnieje.
+? Trójkrok Edmunda: zdrada → … → naprawa
++ skrucha
+- chciwość
+- ucieczka
+- pojedynek
+! Edmund: zdrada → skrucha → naprawa czynem (zniszczenie różdżki Czarownicy).
+? Które stwierdzenie o różnicy między faktem fabularnym a interpretacją jest poprawne?
++ Fakt wynika bezpośrednio z fabuły, a interpretacja wymaga uzasadnienia sceną.
+- Interpretacja to fakt potwierdzony w tekście.
+- Fakt to zawsze opinia narratora.
+- Interpretacja nie wymaga argumentów — wystarczy „moim zdaniem".
+! Fakt fabularny sprawdzasz w utworze. Interpretacja to odczytanie (np. mała ojczyzna) — wymaga sceny i wyjaśnienia, dlaczego tak uważasz.
+? Czy Nemeczek jest typowym bohaterem dynamicznym?
++ nie — jego cechy są stałe, zmienia się tylko sposób ich ujawniania
+- tak — bo umiera dla grupy
+- tak — bo staje się liderem placu
+- nie — bo nic nie robi w utworze
+! Nemeczek nie przechodzi wyraźnej przemiany. Jego cechy są stałe — dlatego jest statyczny (w szkolnej typologii).
+? Autor „Chłopców z Placu Broni"?
++ Ferenc Molnár
+- C.S. Lewis
+- J.R.R. Tolkien
+- Jan Brzechwa
+! Ferenc Molnár — węgierski pisarz i dziennikarz. Akcja rozgrywa się w Budapeszcie.
+? Jaki motyw łączymy z Placem Broni?
++ mała ojczyzna
+- chciwość
+- manipulacja
+- dojrzewanie
+! Plac Broni to mała ojczyzna — miejsce, o które warto walczyć.
+? Jak nazywa się smok z „Hobbita"?
++ Smaug
+- Sauron
+- Glorfindel
+- Tumnus
+! Smaug — smok, który zajął Samotną Górę. Ginie od Czarnej Strzały Barda.
+? Autor „Hobbita"?
++ J.R.R. Tolkien
+- C.S. Lewis
+- Ferenc Molnár
+- Janusz Christa
+! J.R.R. Tolkien — autor „Hobbita" i „Władcy Pierścieni".
+? Czy Gereb jest bohaterem dynamicznym?
++ tak — przechodzi zdradę, skruchę i powrót do grupy
+- nie — bo zdradził
+- nie — bo jest przywódcą
+- tak — bo jest najsilniejszy
+! Gereb jest bohaterem dynamicznym — zmienia postawę wobec grupy.
+? (olimpijski) Od którego czasownika NIE powstanie imiesłów przysłówkowy współczesny?
++ przeczytać
+- czytać
+- biegać
+- sypiać
+! Imiesłów współczesny (-ąc) tworzy się tylko od czasowników niedokonanych; od „przeczytać" istnieje tylko uprzedni (przeczytawszy). (konkurs)
+? (olimpijski) Które zdanie zawiera błąd zgodności podmiotu?
++ Czytając książkę, zapaliła się lampa.
+- Idąc do szkoły, spotkałem kolegę.
+- Stojąc na skale, Bilbo patrzył na smoka.
+- Przeczytawszy lekturę, uczeń napisał notatkę.
+! Podmiot czynności czytania nie jest lampą — naruszona zasada: podmiot imiesłowu = podmiot orzeczenia. (konkurs)
+:::
+
+::: karta exam | Zadanie 12 (6 pkt) — pytania otwarte — uzasadnij (2–3 zdania)
 1. Wyjaśnij, dlaczego Bilbo jest bohaterem dynamicznym. Podaj jedną scenę z początku i jedną z późniejszej części utworu.
 2. Czy Nemeczek jest bohaterem dynamicznym? Odpowiedz i uzasadnij, odwołując się do definicji przemiany wewnętrznej.
 3. Podaj przykład imiesłowu przymiotnikowego i przysłówkowego utworzonego od tego samego czasownika. Wyjaśnij różnicę.
 
-::: odp | Odpowiedzi
-1. Na początku Bilbo ceni spokój i bezpieczeństwo Shire — odmawia nawet Gandalfowi. W trakcie wyprawy samodzielnie podejmuje ryzykowne decyzje (pojedynek z Gollumem, rozmowa ze Smaugiem, rezygnacja z Arcyklejnotu). Wraca do Shire wewnętrznie zmieniony: bardziej odważny i odpowiedzialny, choć nadal pozostaje hobbitem.
-2. Nemeczek nie jest typowym bohaterem dynamicznym, ponieważ nie przechodzi wyraźnej przemiany wewnętrznej — jego wartości (lojalność, odwaga, wierność grupie) są stałe. Zmienia się raczej sposób, w jaki te cechy są ujawniane: od lekceważonego najmniejszego chłopca do moralnego bohatera wspólnoty. W szkolnej typologii bliżej mu do bohatera statycznego z mocno wyeksponowanymi cechami.
-3. Od „czytać”: <em>czytający</em> (przymiotnikowy czynny — „jaki?”, odmienny, np. czytający uczeń) oraz <em>czytając</em> (przysłówkowy współczesny — czynność równoczesna, nieodmienny, np. Czytając książkę, robił notatki). Różnica: pierwszy określa rzeczownik i się odmienia, drugi określa czasownik/czynność i nie odmienia się.
+::: odp | Pokaż klucz
+1. Na początku Bilbo ceni spokój i bezpieczeństwo Shire — odmawia nawet Gandalfowi. W trakcie wyprawy samodzielnie podejmuje ryzykowne decyzje (pojedynek z Gollumem, rozmowa ze Smaugiem, rezygnacja z Arcyklejnotu). Wraca do Shire wewnętrznie zmieniony: bardziej odważny i odpowiedzialny, choć nadal pozostaje hobbitem. (2 pkt)
+2. Nemeczek nie jest typowym bohaterem dynamicznym, ponieważ nie przechodzi wyraźnej przemiany wewnętrznej — jego wartości (lojalność, odwaga, wierność grupie) są stałe. Zmienia się raczej sposób, w jaki te cechy są ujawniane: od lekceważonego najmniejszego chłopca do moralnego bohatera wspólnoty. W szkolnej typologii bliżej mu do bohatera statycznego z mocno wyeksponowanymi cechami. (2 pkt)
+3. Od „czytać": czytający (przymiotnikowy czynny — „jaki?", odmienny, np. czytający uczeń) oraz czytając (przysłówkowy współczesny — czynność równoczesna, nieodmienny, np. Czytając książkę, robił notatki). Różnica: pierwszy określa rzeczownik i się odmienia, drugi określa czasownik/czynność i nie odmienia się. (2 pkt)
+:::
 :::
 
-Te pytania wymagają krótkiego uzasadnienia. Najpierw spróbuj sam, potem porównaj z modelem.
+::: karta understand | W skrócie — rozpoznaj: fakt fabularny czy interpretacja?
+Test dwukrokowy. **Krok 1:** czy da się to sprawdzić w tekście bez dyskusji? „Bard zabija Smauga" — tak, fakt. „Narnia to alegoria" — nie, interpretacja. **Krok 2 (interpretacja):** potrafię wskazać scenę i wyjaśnić, co ona pokazuje? Jeśli tak — argument gotowy; jeśli nie — to zdanie puste. Na egzaminie interpretację zawsze podpieraj sceną: jedna scena warta jest więcej niż trzy ogólniki.
+:::
 
-## 14. Ściąga podsumowująca
+## 14 | Ściąga podsumowująca {#sciaga}
 
-::: karta -
-Ściąga — L001
-
-### Bohaterowie — kluczowe informacje
+::: karta core | Ściąga — L001
+**Bohaterowie — kluczowe informacje**
 
 - **Edmund** (Narnia) — wyraźna przemiana moralna: zdrada → skrucha → naprawa czynem.
 - **Gereb** (Plac Broni) — przemiana: zdrada → skrucha → powrót do grupy.
@@ -1724,17 +1740,17 @@ Te pytania wymagają krótkiego uzasadnienia. Najpierw spróbuj sam, potem poró
 - **Aslan** — w ujęciu szkolnym postać statyczna; uosabia dobro, poświęcenie, odkupienie.
 - **Bard** — zabija Smauga Czarną Strzałą.
 - **Nemeczek** — nie jest typowym bohaterem dynamicznym (brak wyraźnej przemiany); ciężko choruje i umiera.
-- **Pan Kleks** — mentor w „Akademii Pana Kleksa”.
-- **Gandalf** — mentor w „Hobbicie”.
-- **Hegemon** — antagonista w „Kajku i Kokoszu” (władza, intryga).
+- **Pan Kleks** — mentor w „Akademii Pana Kleksa".
+- **Gandalf** — mentor w „Hobbicie".
+- **Hegemon** — antagonista w „Kajku i Kokoszu" (władza, intryga).
 
-### Fakt fabularny vs interpretacja
+**Fakt fabularny vs interpretacja**
 
-- **Fakt:** Bard zabija Smauga Czarną Strzałą. · Edmund niszczy różdżkę Czarownicy. · Nemeczek umiera.
-- **Interpretacja szkolna:** Plac Broni jako mała ojczyzna. · Aslan jako postać symboliczna. · Bilbo jako przykład dojrzewania.
+- **Fakt:** Bard zabija Smauga Czarną Strzałą. Edmund niszczy różdżkę Czarownicy. Nemeczek umiera.
+- **Interpretacja szkolna:** Plac Broni jako mała ojczyzna. Aslan jako postać symboliczna. Bilbo jako przykład dojrzewania.
 - **Zasada:** Fakt wynika bezpośrednio z wydarzeń. Interpretacja to sposób odczytania — wymaga uzasadnienia sceną.
 
-### Imiesłowy — cztery rodzaje
+**Imiesłowy — cztery rodzaje**
 
 | Rodzaj | Końcówka | Pytanie / znaczenie | Przykład | Odmiana |
 |---|---|---|---|---|
@@ -1743,46 +1759,45 @@ Te pytania wymagają krótkiego uzasadnienia. Najpierw spróbuj sam, potem poró
 | Przys. współczesny | -ąc | czynność równoczesna | czytając | nieodmienny |
 | Przys. uprzedni | -wszy / -łszy | czynność wcześniejsza | przeczytawszy | nieodmienny |
 
-### Pisownia „nie” (RJP 2026)
+**Pisownia „nie" (RJP 2026)**
 
-- **Przymiotnikowe** — ŁĄCZNIE (<em>nieczytający</em>).
-- **Przym. w przeciwstawieniu** — od 2026 r. też ŁĄCZNIE (<em>nieczytający, lecz słuchający</em>).
-- **Przysłówkowe** — ROZDZIELNIE (<em>nie czytając</em>, <em>nie przeczytawszy</em>).
+- **Przymiotnikowe** — ŁĄCZNIE (nieczytający).
+- **Przym. w przeciwstawieniu** — od 2026 r. też ŁĄCZNIE (nieczytający, lecz słuchający).
+- **Przysłówkowe** — ROZDZIELNIE (nie czytając, nie przeczytawszy).
 
-### Interpunkcja i składnia
+**Interpunkcja i składnia**
 
 - **Imiesłowowy równoważnik zdania** → przecinek.
 - **Zgodność podmiotu** — podmiot imiesłowu = podmiot orzeczenia.
 
-### Motywy — szybka mapa
+**Motywy — szybka mapa**
 
 - **Przemiana:** Edmund, Bilbo, Thorin, Gereb.
 - **Poświęcenie:** Aslan, Nemeczek, Bilbo.
 - **Zdrada i skrucha:** Edmund, Gereb.
-- **Chciwość:** Thorin, Smaug. · **Władza/manipulacja:** Biała Czarownica, Hegemon.
+- **Chciwość:** Thorin, Smaug. **Władza/manipulacja:** Biała Czarownica, Hegemon.
 - **Mała ojczyzna:** Plac Broni, Shire, Narnia, Mirmiłowo.
-
 :::
 
-## 15. Słownik terminów
+## 15 | Słownik terminów {#slownik}
 
-| Termin | Definicja | Przykład | Kontrprzykład / pułapka |
-|---|---|---|---|
-| Bohater dynamiczny | postać, która przechodzi wyraźną przemianę wewnętrzną | Edmund (Narnia), Bilbo (Hobbit) | Aslan — zmienia się jego sytuacja, nie charakter |
-| Bohater statyczny | postać, która nie przechodzi wyraźnej przemiany | Aslan, Nemeczek, Gandalf | Nemeczek ujawnia cechy, ale się nie zmienia |
-| Imiesłów | nieosobowa forma czasownika łącząca cechy czasownika z przymiotnikiem lub przysłówkiem | czytający, przeczytany, czytając | Nie każda forma na -ny to imiesłów (drewniany) |
-| Imiesłów przymiotnikowy czynny | -ący, jaki?, odmienny | czytający, stojący | Nie myl z przys. współczesnym (-ąc) |
-| Imiesłów przymiotnikowy bierny | -ny/-ty/-ony, jaki?, odmienny | przeczytany, ukryty | drewniany, czerwony — to przymiotniki |
-| Imiesłów przysłówkowy współczesny | -ąc, czynność równoczesna, nieodmienny | czytając, idąc | Wymaga zgodności podmiotu |
-| Imiesłów przysłówkowy uprzedni | -wszy/-łszy, czynność wcześniejsza, nieodmienny | przeczytawszy, znalazłszy | Nie myl z współczesnym (-ąc) |
-| Imiesłowowy równoważnik zdania | konstrukcja z imiesłowem przysłówkowym pełniąca funkcję zdania podrzędnego | Idąc do szkoły, spotkałem kolegę. | Wydzielamy przecinkiem |
-| Zgodność podmiotu | podmiot imiesłowu = podmiot orzeczenia | Idąc do szkoły, spotkałem kolegę. | Czytając książkę, zapaliła się lampa — błąd |
-| Motyw | powtarzający się element treści utworu | poświęcenie, zdrada, chciwość | Motyw to nie to samo co temat |
-| Symbol | element, który poza znaczeniem dosłownym ma znaczenie przenośne | szafa w Narnii, Plac Broni | Symbol nie zawsze jest jednoznaczny |
-| Mentor | postać, która prowadzi bohatera ku dojrzałości | Gandalf, Pan Kleks, Aslan | Mentor nie zawsze jest dynamiczny |
-| Alegoria | obraz lub przedstawienie o utrwalonym, zwykle jednoznacznym znaczeniu przenośnym | lis jako alegoria chytrości; w Narnii – symbolika / inspiracje chrześcijańskie | Nie każdy utwór z ukrytym znaczeniem jest alegorią; Narnia – interpretacja, nie fakt fabularny |
+::: slownik
+bohater dynamiczny :: postać, która przechodzi wyraźną przemianę wewnętrzną; przykład: Edmund (Narnia), Bilbo (Hobbit); pułapka: Aslan — zmienia się jego sytuacja, nie charakter
+bohater statyczny :: postać, która nie przechodzi wyraźnej przemiany; przykład: Aslan, Nemeczek, Gandalf; pułapka: Nemeczek ujawnia cechy, ale się nie zmienia
+imiesłów :: nieosobowa forma czasownika łącząca cechy czasownika z przymiotnikiem lub przysłówkiem; przykład: czytający, przeczytany, czytając; pułapka: nie każda forma na -ny to imiesłów (drewniany)
+imiesłów przymiotnikowy czynny :: -ący, pytanie jaki?, odmienny; przykład: czytający, stojący; pułapka: nie myl z przysłówkowym współczesnym (-ąc)
+imiesłów przymiotnikowy bierny :: -ny/-ty/-ony, pytanie jaki?, odmienny; przykład: przeczytany, ukryty; pułapka: drewniany, czerwony — to przymiotniki
+imiesłów przysłówkowy współczesny :: -ąc, czynność równoczesna, nieodmienny; przykład: czytając, idąc; pułapka: wymaga zgodności podmiotu
+imiesłów przysłówkowy uprzedni :: -wszy/-łszy, czynność wcześniejsza, nieodmienny; przykład: przeczytawszy, znalazłszy; pułapka: nie myl ze współczesnym (-ąc)
+imiesłowowy równoważnik zdania :: konstrukcja z imiesłowem przysłówkowym pełniąca funkcję zdania podrzędnego; przykład: Idąc do szkoły, spotkałem kolegę.; pułapka: wydzielamy go przecinkiem
+zgodność podmiotu :: podmiot imiesłowu = podmiot orzeczenia; przykład: Idąc do szkoły, spotkałem kolegę.; pułapka: Czytając książkę, zapaliła się lampa — błąd
+motyw :: powtarzający się element treści utworu; przykład: poświęcenie, zdrada, chciwość; pułapka: motyw to nie to samo co temat
+symbol :: element, który poza znaczeniem dosłownym ma znaczenie przenośne; przykład: szafa w Narnii, Plac Broni; pułapka: symbol nie zawsze jest jednoznaczny
+mentor :: postać, która prowadzi bohatera ku dojrzałości; przykład: Gandalf, Pan Kleks, Aslan; pułapka: mentor nie zawsze jest dynamiczny
+alegoria :: obraz lub przedstawienie o utrwalonym, zwykle jednoznacznym znaczeniu przenośnym; przykład: lis jako alegoria chytrości; w Narnii — symbolika i inspiracje chrześcijańskie; pułapka: nie każdy utwór z ukrytym znaczeniem jest alegorią; Narnia — interpretacja, nie fakt fabularny
+:::
 
-## 16. Progi opcja
+## 16 | Progi samokontroli {#progi}
 
 | Wynik | Następny krok |
 |---|---|
@@ -1791,9 +1806,9 @@ Te pytania wymagają krótkiego uzasadnienia. Najpierw spróbuj sam, potem poró
 | 80–89% | przejdź do ROZSZERZENIA |
 | 90–100% | odblokuj DLA AMBITNYCH |
 
-## 17. Jak to wykorzystać w wypracowaniu
+## 17 | Jak to wykorzystać w wypracowaniu {#wypracowanie}
 
-::: karta -
+::: karta basic | Lektury i motywy — gotowe argumenty
 
 | Lektura | Motyw | Argument |
 |---|---|---|
@@ -1801,7 +1816,7 @@ Te pytania wymagają krótkiego uzasadnienia. Najpierw spróbuj sam, potem poró
 | Narnia | przemiana | Edmund: zdrada → skrucha → naprawa czynem. |
 | Narnia | pokusa | Edmund ulega ptasiemu mleczku. |
 | Hobbit | odwaga | Bilbo działa mimo strachu. |
-| Hobbit | chciwość | Thorin ulega „smoczej chorobie”; przed śmiercią żałuje. |
+| Hobbit | chciwość | Thorin ulega „smoczej chorobie"; przed śmiercią żałuje. |
 | Hobbit | dojrzewanie | Bilbo wraca do Shire wewnętrznie zmieniony. |
 | Plac Broni | mała ojczyzna | Plac Broni — symbol przynależności. |
 | Plac Broni | poświęcenie | Nemeczek wierny grupie mimo choroby. |
@@ -1810,51 +1825,37 @@ Te pytania wymagają krótkiego uzasadnienia. Najpierw spróbuj sam, potem poró
 | Kajko i Kokosz | współpraca | Różne talenty (spryt + siła) dają sukces. |
 
 Schemat argumentu: Teza → przykład → wyjaśnienie → wniosek
-
 :::
 
-#### Pełny modelowy akapit — motyw poświęcenia
+::: karta understand | Modelowy akapit — motyw poświęcenia (wzór do naśladowania)
+**Teza:** Poświęcenie może przybrać formę dobrowolnej ofiary złożonej za kogoś, kto na nią nie zasługuje.
+**Przykład:** W „Opowieściach z Narnii" Aslan dobrowolnie oddaje życie za Edmunda, który wcześniej zdradził rodzeństwo.
+**Wyjaśnienie:** Aslan nie robi tego z przymusu — wie, że Edmund zawinił, a mimo to wybiera śmierć w jego miejsce. To dowód, że poświęcenie nie jest nagrodą, lecz darem.
+**Wniosek:** Lewis pokazuje, że prawdziwe poświęcenie wymaga odwagi i bezinteresowności, a nie kalkulacji.
+:::
 
-Wzór do naśladowania
-
-Teza Poświęcenie może przybrać formę dobrowolnej ofiary złożonej za kogoś, kto na nią nie zasługuje.
-
-Przykład W „Opowieściach z Narnii” Aslan dobrowolnie oddaje życie za Edmunda, który wcześniej zdradził rodzeństwo.
-
-Wyjaśnienie Aslan nie robi tego z przymusu — wie, że Edmund zawinił, a mimo to wybiera śmierć w jego miejsce. To dowód, że poświęcenie nie jest nagrodą, lecz darem.
-
-Wniosek Lewis pokazuje, że prawdziwe poświęcenie wymaga odwagi i bezinteresowności, a nie kalkulacji.
-
-#### Schemat budowy rozprawki
-
-::: karta understand
-1. **Wstęp** — wprowadzenie w temat, zarysowanie problemu. 2–3 zdania. Stanowisko (teza) jasno we wstępie.
+::: karta understand | W skrócie — schemat budowy rozprawki
+1. **Wstęp** — wprowadzenie w temat, zarysowanie problemu (2–3 zdania); stanowisko (teza) jasno we wstępie.
 2. **Argument 1** — przykład z lektury obowiązkowej + wyjaśnienie + wniosek cząstkowy.
 3. **Argument 2** — drugi przykład zgodny z wymaganiami polecenia (inna lektura, utwór wybrany samodzielnie lub inne wskazane źródło) + wyjaśnienie + wniosek. Nie wybieraj drugiej lektury tylko dlatego, że jest inna — musi potwierdzać tezę.
 4. **Argument 3 (opcjonalnie)** — jeśli polecenie i czas na to pozwalają.
 5. **Wniosek** — synteza argumentów (nie tylko powtórzenie tezy).
 
-**Przydatne zwroty:** „Moim zdaniem…”, „Świadczy o tym…”, „Warto zauważyć, że…”, „Podsumowując…”.
-
+**Przydatne zwroty:** „Moim zdaniem…", „Świadczy o tym…", „Warto zauważyć, że…", „Podsumowując…".
 **Rozróżnij:** argument (ogólna myśl) → przykład (scena/postać) → wyjaśnienie (co to pokazuje) → wniosek.
-
 :::
 
-## 17.1. Częste błędy w rozprawce
+## 17.1 | Częste błędy w rozprawce {#bledy-rozprawka}
 
-::: karta warning
-
-| Błąd | Dlaczego to błąd | Jak poprawić |
-|---|---|---|
-| Brak tezy / stanowiska | Czytelnik nie wie, co udowadniasz | Sformułuj stanowisko jasno we wstępie (może być na początku lub na końcu wprowadzenia) |
-| Przykład bez wyjaśnienia | Nie wiadomo, co przykład ma udowodnić | Dodaj zdanie „To pokazuje, że…” |
-| Przykład bez związku z tezą | Argument nie wspiera tezy | Sprawdź, czy przykład potwierdza tezę |
-| Brak wniosku | Rozprawka urywa się bez podsumowania | Dodaj akapit, który syntetyzuje argumenty (nie tylko powtarza tezę) |
-| Tylko jeden argument | Wypowiedź bywa zbyt wąska | W szkolnym schemacie warto zaplanować co najmniej dwa rozwinięte argumenty; zawsze sprawdź wymagania polecenia |
-| Streszczanie całej lektury | Rozprawka to nie streszczenie | Skup się na jednej scenie / motywie |
-| Kolokwializmy („fajny”, „super”) | Obniżają styl wypowiedzi | Używaj słownictwa literackiego |
-| „Moim zdaniem uważam, że…” | Pleonazm | „Uważam, że…” lub „Moim zdaniem…” |
-
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| Brak tezy / stanowiska | Sformułuj stanowisko jasno we wstępie (może być na początku lub na końcu wprowadzenia) | Czytelnik nie wie, co udowadniasz |
+| Przykład bez wyjaśnienia | Dodaj zdanie „To pokazuje, że…" | Nie wiadomo, co przykład ma udowodnić |
+| Przykład bez związku z tezą | Sprawdź, czy przykład potwierdza tezę | Argument nie wspiera tezy |
+| Brak wniosku | Dodaj akapit, który syntetyzuje argumenty (nie tylko powtarza tezę) | Rozprawka urywa się bez podsumowania |
+| Tylko jeden argument | W szkolnym schemacie zaplanuj co najmniej dwa rozwinięte argumenty; zawsze sprawdź wymagania polecenia | Wypowiedź bywa zbyt wąska |
+| Streszczanie całej lektury | Skup się na jednej scenie / motywie | Rozprawka to nie streszczenie |
+| Kolokwializmy („fajny", „super") | Używaj słownictwa literackiego | Obniżają styl wypowiedzi |
+| „Moim zdaniem uważam, że…" | „Uważam, że…" albo „Moim zdaniem…" | Pleonazm |
 :::
 
 ## 18. Poprawna polszczyzna
@@ -1872,52 +1873,66 @@ Wniosek Lewis pokazuje, że prawdziwe poświęcenie wymaga odwagi i bezinteresow
 | „tą książką” | „tę książkę” (B.) | przypadek |
 | „wziąść” | „wziąć” | forma poprawna |
 
+## 18.1 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Dwa światy dwóch przyjaciół
+J.R.R. Tolkien i C.S. Lewis byli przyjaciółmi i członkami oksfordzkiego koła „Inklingów", gdzie czytali sobie nawzajem niepublikowane manuskrypty — dzięki temu pierwsi słuchacze usłyszeli fragmenty „Hobbita" i późniejszych opowieści o Narnii. Z przyjaźni wyrastają dwie z najpopularniejszych baśni XX wieku. (źródło: biografie Tolkiena i Lewisa; orientacyjnie)
+:::
+
+::: karta extra | Ptasie mleczko — most między lekcjami
+Pokusa, którą Czarownica kusi Edmunda, to w oryginale Lewis „Turkish Delight" — rachatłukum, tradycyjny słodycz z galaretką. W polskich przekładach spotkasz „ptasie mleczko" albo „rachatłukum" — zależnie od tłumaczenia. Wyraz rachatłukum pojawia się też w lekcji G09 o spójnikach — Edmund myślał o rachatłukum (o czym? — miejscownik). (źródło: C.S. Lewis, „The Lion, the Witch and the Wardrobe", 1950)
+:::
+
+::: karta extra | Imiesłów — ten, który bierze udział
+Polska nazwa „imiesłów" to tłumaczenie łacińskiego participium — dosłownie „udział biorący": imiesłów uczestniczy w dwóch kategoriach naraz, bo łączy cechy czasownika (oznacza czynność) z cechami przymiotnika albo przysłówka. Nazwa sama wyjaśnia definicję. (źródło: gramatyki akademickie języka polskiego)
+:::
+
+::: karta extra | Molnár — od Placu Broni po emigrację
+Ferenc Molnár napisał „Chłopców z Placu Broni" (1906) o chłopcach z Budapesztu; powieść uważana jest za inspirowaną doświadczeniami z jego młodości (orientacyjnie). Pisarz zmarł na emigracji w Nowym Jorku w 1952 roku, po ucieczce z Europy przed II wojną światową. (źródło: encyklopedie literackie; orientacyjnie)
+:::
+
+::: karta extra | Filolog, który wymyślił Smauga
+Tolkien był zawodowym językoznawcą — profesorem języka staroangielskiego (anglosaskiego) w Oksfordzie — i sam tworzył języki dla swoich światów. Imię „Smaug" wywodzi od germańskiego czasownika oznaczającego „wciskać się przez szczelinę" — stąd smok pełzający do tuneli Samotnej Góry. (źródło: listy i opracowania Tolkiena; orientacyjnie) (konkurs)
+:::
+
 ## 19 | Mity i nieporozumienia {#mity}
 
 ::: mity
-„Bohater dynamiczny to zawsze główny bohater.” || Nie. Główny bohater może być statyczny, a postać drugoplanowa — dynamiczna. Liczy się przemiana wewnętrzna, nie ilość scen.
-„Aslan jest dynamiczny, bo umiera i zmartwychwstaje.” || Nie. To zmiana jego sytuacji fabularnej, a nie zmiana charakteru, wartości ani celu działania.
-„Bilbo zabił Smauga, bo to główny bohater.” || Nie. Bilbo zauważa słaby punkt smoka, drozd przekazuje informację, a Bard zabija Smauga Czarną Strzałą.
-„Imiesłów przymiotnikowy zawsze kończy się na -ny.” || Nie. Imiesłów przymiotnikowy czynny kończy się na -ący, a bierny może mieć końcówki -ny, -ty lub -ony.
-„Każdy wyraz na -ny to imiesłów.” || Nie. „Drewniany”, „czerwony” i „zielony” to zwykłe przymiotniki, ponieważ nie pochodzą od czasowników.
-„„Nie” z imiesłowem przysłówkowym można czasem napisać łącznie.” || Nie. Imiesłowy przysłówkowe współczesne i uprzednie piszemy z „nie” zawsze rozdzielnie.
-„Przecinek przy imiesłowie jest zawsze potrzebny.” || Nie. Przecinek wydzielamy imiesłowowy równoważnik zdania, ale nie przydawki, np. „stojący na skale hobbit”.
-„Skrucha całkowicie wymazuje skutki zdrady.” || Nie. Skrucha może prowadzić do przemiany i naprawy relacji, ale nie cofa już dokonanych szkód.
+„Bohater dynamiczny to zawsze główny bohater." || Nie. Główny bohater może być statyczny, a postać drugoplanowa — dynamiczna. Liczy się przemiana wewnętrzna, nie ilość scen.
+„Aslan jest dynamiczny, bo umiera i zmartwychwstaje." || Nie. To zmiana jego sytuacji fabularnej, a nie zmiana charakteru, wartości ani celu działania.
+„Bilbo zabił Smauga, bo to główny bohater." || Nie. Bilbo zauważa słaby punkt smoka, drozd przekazuje informację, a Bard zabija Smauga Czarną Strzałą.
+„Imiesłów przymiotnikowy zawsze kończy się na -ny." || Nie. Imiesłów przymiotnikowy czynny kończy się na -ący, a bierny może mieć końcówki -ny, -ty lub -ony.
+„Każdy wyraz na -ny to imiesłów." || Nie. „Drewniany", „czerwony" i „zielony" to zwykłe przymiotniki, ponieważ nie pochodzą od czasowników.
+„„Nie" z imiesłowem przysłówkowym można czasem napisać łącznie." || Nie. Imiesłowy przysłówkowe współczesne i uprzednie piszemy z „nie" zawsze rozdzielnie.
+„Przecinek przy imiesłowie jest zawsze potrzebny." || Nie. Przecinkiem wydzielamy imiesłowowy równoważnik zdania, ale nie przydawki, np. „stojący na skale hobbit".
+„Skrucha całkowicie wymazuje skutki zdrady." || Nie. Skrucha może prowadzić do przemiany i naprawy relacji, ale nie cofa już dokonanych szkód.
 :::
 
 ## 20 | Nie myl {#nie-myl}
 
-::: nie-myl | Pary pojęć z lekcji
-| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
-|---|---|---|
-| bohater dynamiczny / statyczny | obaj mogą dużo działać | dynamiczny zmienia poglądy, wartości lub postawę; statyczny działa, ale nie zmienia charakteru |
-| imiesłów przymiotnikowy / przysłówkowy | oba od czasownika | przymiotnikowy — *jaki?*, odmienny; przysłówkowy — *jak? kiedy?*, nieodmienny |
-| współczesny / uprzedni | oba przysłówkowe | *-ąc* — czynność równoczesna; *-wszy/-łszy* — wcześniejsza |
-| „nie” z przymiotnikowym / z przysłówkowym | oba imiesłowy | przymiotnikowy — łącznie (*nieczytający*); przysłówkowy — rozdzielnie (*nie czytając*) |
-| Bilbo / Bard | obaj przy śmierci Smauga | Bilbo zauważa słaby punkt; Bard zabija smoka Czarną Strzałą |
-| Gereb / Nemeczek | obaj z Placu Broni | Gereb zdradza i wraca po skrusze; Nemeczek pozostaje lojalny i umiera |
+::: nie-myl
+bohater dynamiczny || bohater statyczny — test: obaj mogą dużo działać; dynamiczny zmienia poglądy, wartości lub postawę, statyczny działa, ale nie zmienia charakteru.
+imiesłów przymiotnikowy || imiesłów przysłówkowy — test: oba od czasownika; przymiotnikowy — jaki?, odmienny; przysłówkowy — jak? kiedy?, nieodmienny.
+współczesny (-ąc) || uprzedni (-wszy/-łszy) — test: oba przysłówkowe; -ąc — czynność równoczesna, -wszy/-łszy — wcześniejsza.
+„nie" z przymiotnikowym || „nie" z przysłówkowym — test: oba imiesłowy; przymiotnikowy — łącznie (nieczytający), przysłówkowy — rozdzielnie (nie czytając).
+Bilbo || Bard — test: obaj przy śmierci Smauga; Bilbo zauważa słaby punkt, Bard zabija smoka Czarną Strzałą.
+Gereb || Nemeczek — test: obaj z Placu Broni; Gereb zdradza i wraca po skrusze, Nemeczek pozostaje lojalny i umiera.
 :::
 
 ## 21 | Mnemotechniki i wskazówki {#mnemotechniki}
 
 ::: wskazowki
-**Cztery imiesłowy — „CA-BI-WU-UP”**  
-**C**zynny: -ący, **B**ierny: -ny/-ty/-ony, **W**spółczesny: -ąc, **UP**rzedni: -wszy/-łszy.
+**Cztery imiesłowy — „CA-BI-WU-UP"**: **C**zynny: -ący, **B**ierny: -ny/-ty/-ony, **W**spółczesny: -ąc, **UP**rzedni: -wszy/-łszy.
 
-**Przymiotnikowy czy przysłówkowy?**  
-Zadaj pytanie: **jaki?** — przymiotnikowy; **jak? / kiedy?** — przysłówkowy.
+**Przymiotnikowy czy przysłówkowy?** Zadaj pytanie: **jaki?** — przymiotnikowy; **jak? / kiedy?** — przysłówkowy.
 
-**Równoczesny czy uprzedni?**  
-„-ąc” = **w trakcie**, np. *czytając*. „-wszy / -łszy” = **po tym, jak**, np. *przeczytawszy*.
+**Równoczesny czy uprzedni?** „-ąc" = **w trakcie** (czytając). „-wszy / -łszy" = **po tym, jak** (przeczytawszy).
 
-**„Nie” z imiesłowami**  
-Przymiotnikowy — zawsze **razem**: *nieczytający*. Przysłówkowy — zawsze **osobno**: *nie czytając*.
+**„Nie" z imiesłowami:** przymiotnikowy — zawsze **razem** (nieczytający); przysłówkowy — zawsze **osobno** (nie czytając).
 
-**Zgodność podmiotu**  
-Zapytaj: **kto czyta?** i **kto robi to, co mówi orzeczenie?** Jeśli to dwie różne osoby lub rzeczy, zdanie jest błędne.
+**Zgodność podmiotu:** zapytaj **kto czyta?** i **kto robi to, co mówi orzeczenie?** Jeśli to dwie różne osoby lub rzeczy — zdanie jest błędne.
 
-**Akapit argumentacyjny — „TEZA-PRZYKŁAD-WYJAŚNIENIE-WNIOSEK”**  
-Najpierw twierdzenie, potem scena z lektury, następnie wyjaśnienie jej znaczenia, na końcu wniosek związany z tematem.
+**Akapit argumentacyjny — „TEZA-PRZYKŁAD-WYJAŚNIENIE-WNIOSEK":** najpierw twierdzenie, potem scena z lektury, następnie wyjaśnienie jej znaczenia, na końcu wniosek związany z tematem.
 :::
 
 ## 22 | Mapa pojęć — imiesłowy {#mapa-imieslowow}
@@ -1946,36 +1961,35 @@ IMIESŁOWY
 
 ## 23 | Modelowa wypowiedź argumentacyjna {#modelowa-rozprawka}
 
-::: karta understand | Temat: „Literatura uczy odpowiedzialności za innych ludzi.”
-**Wstęp:**  
+::: karta understand | Temat: „Literatura uczy odpowiedzialności za innych ludzi."
+**Wstęp:**
 Literatura często pokazuje, że odpowiedzialność za innych wymaga odwagi, empatii i gotowości do poświęcenia. Bohaterowie lektur szkolnych uczą, że prawdziwa wartość człowieka ujawnia się wtedy, gdy musi wybrać między własnym interesem a dobrem wspólnoty.
 
-**Akapit 1 — Narnia:**  
-W „Opowieściach z Narnii” Aslan dobrowolnie oddaje życie za Edmunda, który wcześniej zdradził rodzeństwo. Jego decyzja pokazuje, że odpowiedzialność może przybrać formę bezinteresownej ofiary. Aslan nie działa z przymusu — świadomie wybiera dobro drugiego, mimo że Edmund zawinił. Dlatego jego postawa uczy, że odpowiedzialność nie polega na karaniu, lecz na gotowości do niesienia pomocy nawet temu, kto jej nie zasłużył.
+**Akapit 1 — Narnia:**
+W „Opowieściach z Narnii" Aslan dobrowolnie oddaje życie za Edmunda, który wcześniej zdradził rodzeństwo. Jego decyzja pokazuje, że odpowiedzialność może przybrać formę bezinteresownej ofiary. Aslan nie działa z przymusu — świadomie wybiera dobro drugiego, mimo że Edmund zawinił. Dlatego jego postawa uczy, że odpowiedzialność nie polega na karaniu, lecz na gotowości do niesienia pomocy nawet temu, kto jej nie zasłużył.
 
-**Akapit 2 — Chłopcy z Placu Broni:**  
-Podobny wniosek wynika z „Chłopców z Placu Broni”. Nemeczek, choć najmniejszy i najsłabszy członek grupy, pozostaje wierny kolegom mimo zagrożenia. Jego lojalność kosztuje go zdrowie, a ostatecznie życie. Molnár pokazuje, że odpowiedzialność za wspólnotę nie zależy od siły fizycznej — ważne jest, by człowiek nie opuścił innych w trudnej sytuacji.
+**Akapit 2 — Chłopcy z Placu Broni:**
+Podobny wniosek wynika z „Chłopców z Placu Broni". Nemeczek, choć najmniejszy i najsłabszy członek grupy, pozostaje wierny kolegom mimo zagrożenia. Jego lojalność kosztuje go zdrowie, a ostatecznie życie. Molnár pokazuje, że odpowiedzialność za wspólnotę nie zależy od siły fizycznej — ważne jest, by człowiek nie opuścił innych w trudnej sytuacji.
 
-**Zakończenie:**  
+**Zakończenie:**
 Oba utwory pokazują, że odpowiedzialność za innych wymaga odwagi i bezinteresowności. Aslan uczy poświęcenia, a Nemeczek — wierności wartościom mimo słabości. Literatura przypomina więc, że dojrzałość przejawia się nie w trosce wyłącznie o siebie, lecz w gotowości do działania dla innych.
 :::
 
-## 24 | Zadania utrwalające — dodatkowe {#zadania-utrwalejace}
+## 24 | Zadania utrwalające {#zadania-utrwalejace}
 
 ::: karta exam | Zadanie 7 (4 pkt) — przekształcanie zdań
-Przekształć zdania, zachowując sens. Użyj zdania podrzędnego zaczynającego się od „kiedy” albo „gdy”.
+Przekształć zdania, zachowując sens. Użyj zdania podrzędnego zaczynającego się od „kiedy" albo „gdy".
 
-1. *Idąc do szkoły, spotkałem kolegę.*  
-2. *Przeczytawszy lekturę, uczeń napisał notatkę.*  
-3. *Wracając do Shire, Bilbo rozmyślał o wyprawie.*  
+1. *Idąc do szkoły, spotkałem kolegę.*
+2. *Przeczytawszy lekturę, uczeń napisał notatkę.*
+3. *Wracając do Shire, Bilbo rozmyślał o wyprawie.*
 4. *Zniszczywszy różdżkę, Edmund pomógł w bitwie.*
 
 ::: odp | Pokaż klucz
-1. **Kiedy szedłem do szkoły, spotkałem kolegę.** — 1 pkt  
-2. **Kiedy uczeń przeczytał lekturę, napisał notatkę.** — 1 pkt  
-3. **Gdy Bilbo wracał do Shire, rozmyślał o wyprawie.** — 1 pkt  
-4. **Kiedy Edmund zniszczył różdżkę, pomógł w bitwie.** — 1 pkt  
-
+1. **Kiedy szedłem do szkoły, spotkałem kolegę.** — 1 pkt
+2. **Kiedy uczeń przeczytał lekturę, napisał notatkę.** — 1 pkt
+3. **Gdy Bilbo wracał do Shire, rozmyślał o wyprawie.** — 1 pkt
+4. **Kiedy Edmund zniszczył różdżkę, pomógł w bitwie.** — 1 pkt
 Razem: 4 pkt.
 :::
 :::
@@ -1983,55 +1997,44 @@ Razem: 4 pkt.
 ::: karta exam | Zadanie 8 (4 pkt) — poprawianie błędów
 Znajdź i popraw błąd w każdym zdaniu.
 
-1. *Nie czytający uczeń nie zdał sprawdzianu.*  
-2. *Nieczytając książki, Zuzia poszła spać.*  
-3. *Idąc do szkoły spotkałem kolegę.*  
+1. *Nie czytający uczeń nie zdał sprawdzianu.*
+2. *Nieczytając książki, Zuzia poszła spać.*
+3. *Idąc do szkoły spotkałem kolegę.*
 4. *Wchodząc do Narnii, zrobiło się zimno.*
 
 ::: odp | Pokaż klucz
-1. **Nieczytający uczeń nie zdał sprawdzianu.** — imiesłów przymiotnikowy piszemy z „nie” łącznie — 1 pkt  
-2. **Nie czytając książki, Zuzia poszła spać.** — imiesłów przysłówkowy z „nie” piszemy rozdzielnie — 1 pkt  
-3. **Idąc do szkoły, spotkałem kolegę.** — imiesłowowy równoważnik zdania wydzielamy przecinkiem — 1 pkt  
-4. **Kiedy dzieci weszły do Narnii, zrobiło się zimno.** — przywrócono zgodność podmiotu — 1 pkt  
-
+1. **Nieczytający uczeń nie zdał sprawdzianu.** — imiesłów przymiotnikowy piszemy z „nie" łącznie — 1 pkt
+2. **Nie czytając książki, Zuzia poszła spać.** — imiesłów przysłówkowy z „nie" piszemy rozdzielnie — 1 pkt
+3. **Idąc do szkoły, spotkałem kolegę.** — imiesłowowy równoważnik zdania wydzielamy przecinkiem — 1 pkt
+4. **Kiedy dzieci weszły do Narnii, zrobiło się zimno.** — przywrócono zgodność podmiotu — 1 pkt
 Razem: 4 pkt.
 :::
 :::
 
 ::: karta exam | Zadanie 9 (5 pkt) — interpretacja sceny
-Przeczytaj polecenie: **„Na przykładzie jednej sceny wykaż, że odwaga nie zawsze oznacza siłę fizyczną.”**
-
+Przeczytaj polecenie: **„Na przykładzie jednej sceny wykaż, że odwaga nie zawsze oznacza siłę fizyczną."**
 Wybierz Nemeczka, Bilba albo Łucję. Napisz akapit argumentacyjny, w którym wskażesz scenę, wyjaśnisz jej znaczenie i sformułujesz wniosek.
 
 ::: odp | Pokaż klucz
-Przykładowa odpowiedź — Nemeczek:  
-„Odwaga nie zawsze oznacza siłę fizyczną, co pokazuje postawa Nemeczka z „Chłopców z Placu Broni”. Nemeczek jest najmniejszym i najsłabszym członkiem grupy, a mimo to pozostaje wierny kolegom, gdy zostaje schwytany i wrzucony do stawu przez Czerwone Koszule. Jego cierpienie i lojalność pokazują, że prawdziwa odwaga polega na wierności wartościom, nawet gdy człowiek nie może stawić oporu siłą. Molnár uczy więc, że wartość bohatera mierzy się charakterem, a nie mięśniami.”  
-
-Punktacja:  
-- teza zgodna z tematem — 1 pkt  
-- poprawny bohater i lektura — 1 pkt  
-- konkretna scena — 1 pkt  
-- wyjaśnienie znaczenia sceny — 1 pkt  
-- wniosek — 1 pkt  
-
-Razem: 5 pkt.
+Przykładowa odpowiedź — Nemeczek:
+„Odwaga nie zawsze oznacza siłę fizyczną, co pokazuje postawa Nemeczka z „Chłopców z Placu Broni". Nemeczek jest najmniejszym i najsłabszym członkiem grupy, a mimo to pozostaje wierny kolegom, gdy zostaje schwytany i wrzucony do stawu przez Czerwone Koszule. Jego cierpienie i lojalność pokazują, że prawdziwa odwaga polega na wierności wartościom, nawet gdy człowiek nie może stawić oporu siłą. Molnár uczy więc, że wartość bohatera mierzy się charakterem, a nie mięśniami."
+Punktacja: teza zgodna z tematem — 1 pkt; poprawny bohater i lektura — 1 pkt; konkretna scena — 1 pkt; wyjaśnienie znaczenia sceny — 1 pkt; wniosek — 1 pkt. Razem: 5 pkt.
 :::
 :::
 
-## 25. Źródła
+## 25 | Źródła {#zrodla}
 
-::: karta -
-- Komunikat Rady Języka Polskiego przy Prezydium PAN — zmiany zasad ortografii obowiązujące od 1 stycznia 2026 r. (w tym pisownia „nie” z imiesłowami przymiotnikowymi łącznie, zniesienie wyjątku świadomej pisowni rozdzielnej).
+::: karta basic | Źródła
+- Komunikat Rady Języka Polskiego przy Prezydium PAN — zmiany zasad ortografii obowiązujące od 1 stycznia 2026 r. (w tym pisownia „nie" z imiesłowami przymiotnikowymi łącznie, zniesienie wyjątku świadomej pisowni rozdzielnej).
 - Informator CKE o egzaminie ósmoklasisty z języka polskiego — materiał wykorzystuje wybrane lektury z wykazu; nie zastępuje pełnego informatora.
 - Podstawa programowa kształcenia ogólnego dla szkoły podstawowej — język polski.
-- Wydania lektur: J.R.R. Tolkien, <em>Hobbit</em> (1937); C.S. Lewis, <em>Opowieści z Narnii. Lew, czarownica i stara szafa</em> (1950); Ferenc Molnár, <em>Chłopcy z Placu Broni</em> (1906); Janusz Christa, <em>Kajko i Kokosz. Szkoła latania</em> (1975); Jan Brzechwa, <em>Akademia Pana Kleksa</em> (1946).
-- Słowniki: <em>Wielki słownik ortograficzny PWN</em>.
+- Wydania lektur: J.R.R. Tolkien, *Hobbit* (1937); C.S. Lewis, *Opowieści z Narnii. Lew, czarownica i stara szafa* (1950); Ferenc Molnár, *Chłopcy z Placu Broni* (1906); Janusz Christa, *Kajko i Kokosz. Szkoła latania* (lata 70. XX w.); Jan Brzechwa, *Akademia Pana Kleksa* (1946).
+- Słowniki: *Wielki słownik ortograficzny PWN*.
 - Materiały pomocnicze: opracowania lektur, przewodniki metodyczne do nauczania języka polskiego w klasach IV–VI.
-
 :::
 
 ::: karta basic | O materiale
-Materiał dydaktyczny — ujednolicona reguła „nie” (RJP 2026), zgodność podmiotu, fakt vs interpretacja, statyczny ≠ bierny. Nie zastępuje pełnego informatora CKE.
+Materiał dydaktyczny — ujednolicona reguła „nie" (RJP 2026), zgodność podmiotu, fakt vs interpretacja, statyczny ≠ bierny. Nie zastępuje pełnego informatora CKE.
 :::
 
 ## AUDYT W1 (ULEPSZ, Perplexity, 2026-10-11)
@@ -2040,5 +2043,6 @@ Materiał dydaktyczny — ujednolicona reguła „nie” (RJP 2026), zgodność 
 - Naprawione klucze: §7.2 „pc/pb/pw/pu” (resztki konwersji) i §7.4 „toggleLayer(” — pełne odpowiedzi.
 - Poprawione względem lekcji i propozycji: zasada „nie” z imiesłowami przymiotnikowymi — według komunikatu RJP (pkt 4: „bezwyjątkowa pisownia łączna nie- z imiesłowami odmiennymi”, zniesienie „świadomej pisowni rozdzielnej”) piszemy łącznie także w przeciwstawieniu (*nieleżący, ale siedzący*); poprawiono wszystkie miejsca w lekcji (§0, §5.1, §7, §12, §13, §14) i w blokach z odpowiedzi. Blok nie-myl przepisany do formatu tabeli.
 - Nieprzyjęte: przepisane wersje ciekawostek z §3 (powielały istniejące punkty), „Haczyk — kto zabił Smauga” i „Aslan — bohater statyczny” (treść już w lekcji); „Poprawki do wklejenia” P1–P3 dotyczą Zadań 1–3 z części odpowiedzi, której brak.
-- Do zrobienia: brakująca część odpowiedzi (nowe §9–14 z Zadaniami 1–6) oraz ocena oryginalnych §9–18 — paczka `AI_ULEPSZ_POL_L001_cz2` (od „## 9. Rozszerzenie opcja”).
+- Część 2 (§9–25) z paczki `AI_ULEPSZ_POL_L001_cz2` wprowadzona w całości (surowo: `polski/plany/audyty/ULEPSZ_PPLX_L001_cz2a–d_2026-10-11.md`): Zadania 1–6 i 10–12, test 22 pytań w składni `? + - !`, fiszki (22), słownik (13), klinika rozprawki, 5 ciekawostek, 3 mini-wykłady, „Dla olimpijczyka”. Model nie widział poprzedniej rozmowy — sekcje 9–14 napisał od nowa na podstawie pliku (zgodnie z zasadą nic nie usunięto; zachowano oryginalną §18 „Poprawna polszczyzna”, której model nie przepisał).
+- Poprawione względem propozycji: przekład „ptasie mleczko / rachatłukum” (zależnie od tłumaczenia; odwołanie do G09, nie G08); literówki (anglosaskiego, germańskiego); data „Szkoły latania” → lata 70.; *pisawszy* — archaiczne.
 

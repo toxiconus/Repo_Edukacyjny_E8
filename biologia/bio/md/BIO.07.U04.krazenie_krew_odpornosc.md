@@ -9,7 +9,7 @@ lead: Najważniejsza umiejętność tego działu: prześledzić drogę krwi na s
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.4 układ krwionośny i limfatyczny, III.5 układ odpornościowy. Genetyka grup krwi — lekcja L019. Liczby fizjologiczne (tętno, liczba krwinek, objętość krwi) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U04 v1.0** · Krążenie, krew i odporność · 2026
-stan: W1 FULL częściowo (część 1/2, §0.1–12) — Perplexity (paczka ULEPSZ BIO_U04_cz1), 2026-10-11; część 2 czeka; scalenie Claude
+stan: W1 FULL — Perplexity (paczki ULEPSZ BIO_U04_cz1–2), 2026-10-11; scalenie Claude
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Układ krwionośny** = serce + naczynia + krew. Człowiek ma **dwa obiegi**: **mały (płucny)** i **duży (ustrojowy)**.
@@ -527,7 +527,7 @@ A–2, B–4, C–3, D–1. Po 1 pkt.
 Pacjent ma grupę krwi B Rh−. a) Jakie antygeny są na jego erytrocytach, a jakie przeciwciała w osoczu (układ ABO)? b) Czy w modelu szkolnym można mu przetoczyć krew A Rh−? c) A krew 0 Rh+? Uzasadnij.
 
 ::: odp | Pokaż rozwiązanie
-a) Antygen B; przeciwciała anty-A (1 pkt). b) Nie — jego anty-A zlepią krwinki z antygenem A (1 pkt). c) Nie — grupa 0 jest zgodna w ABO, ale krew Rh+ uczuli biorcę Rh− (powstaną przeciwciała anty-D) (1 pkt).
+a) Antygen B; przeciwciała anty-A (1 pkt). b) Nie — jego anty-A zlepią krwinki z antygenem A (1 pkt). c) Nie — grupa 0 jest zgodna w ABO, ale krew Rh+ może doprowadzić do uczulenia biorcy Rh− i wytworzenia przeciwciał anty-D (1 pkt).
 :::
 :::
 
@@ -535,7 +535,7 @@ a) Antygen B; przeciwciała anty-A (1 pkt). b) Nie — jego anty-A zlepią krwin
 Kobieta Rh− i mężczyzna Rh+ spodziewają się drugiego dziecka; pierwsze dziecko ma krew Rh+, a po porodzie nie podano matce immunoglobuliny anty-D. Wyjaśnij, na czym polega zagrożenie dla drugiego dziecka, jeśli również będzie Rh+.
 
 ::: odp | Pokaż rozwiązanie
-Przy pierwszym porodzie krwinki Rh+ dziecka dostały się do krwi matki, która wytworzyła przeciwciała anty-D i pamięć (1 pkt). W drugiej ciąży przeciwciała anty-D matki przechodzą przez łożysko do krwi płodu Rh+ (1 pkt) i niszczą jego erytrocyty — grozi to niedokrwistością i ciężką chorobą hemolityczną płodu (1 pkt).
+Przy pierwszym porodzie krwinki Rh+ dziecka dostały się do krwi matki, która wytworzyła przeciwciała anty-D i pamięć immunologiczną (1 pkt). W drugiej ciąży przeciwciała anty-D matki przechodzą przez łożysko do krwi płodu Rh+ (1 pkt) i niszczą jego erytrocyty — grozi to niedokrwistością i ciężką chorobą hemolityczną płodu (1 pkt).
 :::
 :::
 
@@ -667,6 +667,10 @@ Np.: aktywność fizyczna — poprawia wydolność układu krążenia i pomaga u
 :::
 :::
 
+::: karta understand | W skrócie — jak rozwiązywać zadania o odporności
+Najpierw ustal, **kto wytwarza przeciwciała**: organizm osoby (odporność czynna) czy otrzymała je gotowe (bierna). Potem ustal źródło antygenu: naturalny kontakt z drobnoustrojem (naturalna) czy preparat medyczny (sztuczna). Na końcu sprawdź, czy odporność jest swoista — jeśli tak, należy do nabytej; bariery, fagocytoza, stan zapalny i gorączka należą do wrodzonej.
+:::
+
 ## 14 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
@@ -723,6 +727,10 @@ Np.: aktywność fizyczna — poprawia wydolność układu krążenia i pomaga u
 :::
 :::
 
+::: karta understand | W skrócie — jak sprawdzać własny rysunek serca
+Najpierw sprawdź cztery jamy: po lewej stronie rysunku prawa połowa, po prawej — lewa. Potem odszukaj aortę: musi wychodzić z lewej komory. Następnie sprawdź tętnicę płucną: wychodzi z prawej komory i prowadzi krew odtlenowaną do płuc. Na końcu prześledź strzałki: żyły główne → prawy przedsionek → prawa komora → płuca → lewy przedsionek → lewa komora → aorta.
+:::
+
 ## 16 | Ciekawostki {#ciekawostki}
 
 ::: karta extra | Harvey i odkrycie krążenia
@@ -730,19 +738,23 @@ Do XVII wieku wierzono za Galenem, że krew powstaje stale w wątrobie i „zuż
 :::
 
 ::: karta extra | Landsteiner i grupy krwi
-Przez stulecia transfuzje często kończyły się śmiercią i nikt nie wiedział dlaczego. W 1901 r. Karl Landsteiner mieszał krwinki i surowicę kolegów z laboratorium i zauważył, że czasem krwinki się zlepiają, a czasem nie — tak odkrył grupy krwi układu AB0, za co dostał Nagrodę Nobla. Polski lekarz Ludwik Hirszfeld współtworzył nazewnictwo grup (A, B, 0) i badał ich dziedziczenie.
+Przez stulecia transfuzje często kończyły się śmiercią i nikt nie wiedział dlaczego. W 1901 r. Karl Landsteiner mieszał krwinki i surowicę kolegów z laboratorium i zauważył, że czasem krwinki się zlepiają, a czasem nie — tak odkrył grupy krwi układu ABO, za co dostał Nagrodę Nobla. Polski lekarz Ludwik Hirszfeld współtworzył nazewnictwo grup (A, B, 0) i badał ich dziedziczenie.
 :::
 
 ::: karta extra | 100 tysięcy uderzeń na dobę
-Serce bijące ok. 70 razy na minutę wykonuje około 100 tysięcy skurczów na dobę i ok. 2,5–3 miliardów w ciągu życia, pompując codziennie kilka tysięcy litrów krwi (dane orientacyjne). Gdyby połączyć wszystkie naczynia krwionośne dorosłego człowieka w jedną linię, ciągnęłyby się — według popularnych szacunków — przez dziesiątki tysięcy kilometrów, głównie dzięki naczyniom włosowatym.
+Serce bijące ok. 70 razy na minutę wykonuje około 100 tysięcy skurczów na dobę i ok. 2,5–3 miliardów w ciągu życia (orientacyjnie; wartość zależy od częstości pracy serca), pompując codziennie kilka tysięcy litrów krwi (orientacyjnie). Gdyby połączyć wszystkie naczynia krwionośne dorosłego człowieka w jedną linię, ciągnęłyby się — według popularnych szacunków — przez dziesiątki tysięcy kilometrów, głównie dzięki naczyniom włosowatym.
 :::
 
 ::: karta extra | Jenner, krowianka i słowo „szczepionka”
-W 1796 r. Edward Jenner zauważył, że dojarki, które przechorowały łagodną krowiankę, nie chorują na groźną ospę prawdziwą. Zaszczepił chłopca materiałem z krowianki — i chłopiec stał się odporny na ospę. Od łacińskiego *vacca* (krowa) pochodzi angielskie słowo *vaccine*. Dzięki szczepieniom ospa prawdziwa została całkowicie wytępiona — WHO ogłosiła to w 1980 r.
+W 1796 r. Edward Jenner zauważył, że dojarki, które przechorowały łagodną krowiankę, nie chorują na groźną ospę prawdziwą. Zaszczepił chłopca materiałem z krowianki — i chłopiec stał się odporny na ospę. Od łacińskiego *vacca* (krowa) pochodzi angielskie słowo *vaccine*. Dzięki szczepieniom ospa prawdziwa została całkowicie wytępiona — WHO ogłosiła to w 1980 r. (źródło: who.int)
 :::
 
 ::: karta extra | Antidotum z końskiej krwi
-Surowice przeciw jadowi węży tradycyjnie otrzymuje się, podając koniom niewielkie, bezpieczne dawki jadu — konie wytwarzają przeciwciała, które oczyszcza się z ich krwi. Dlatego surowica działa natychmiast: przeciwciała są już „gotowe”, ale obce białko organizm usuwa w ciągu kilku tygodni.
+Surowice przeciw jadowi węży tradycyjnie otrzymuje się, podając koniom niewielkie, bezpieczne dawki jadu — konie wytwarzają przeciwciała, które oczyszcza się z ich krwi. Dlatego surowica działa natychmiast: przeciwciała są już „gotowe”, ale są stopniowo rozkładane, więc ochrona trwa zwykle tylko kilka tygodni.
+:::
+
+::: karta extra | Krew jako materiał do badań
+Z niewielkiej próbki krwi można ocenić wiele parametrów: liczbę erytrocytów i leukocytów, poziom hemoglobiny, obecność stanu zapalnego, poziom glukozy czy cholesterolu. Dlatego badanie krwi jest jednym z najczęstszych badań diagnostycznych — ale sam wynik zawsze interpretuje się razem z objawami i innymi badaniami.
 :::
 
 ## 17 | Sposoby pamięciowe {#mnemotechniki}
@@ -810,7 +822,7 @@ Surowice przeciw jadowi węży tradycyjnie otrzymuje się, podając koniom niewi
 + anty-B
 - anty-A i anty-B
 - brak przeciwciał
-! Na erytrocytach ma antygen A, więc w osoczu nie może mieć anty-A.
+! Na erytrocytach ma antygen A, więc w osoczu nie może mieć przeciwciał anty-A — doszłoby do reakcji z własnymi krwinkami.
 
 ? Konflikt serologiczny może wystąpić, gdy:
 + matka jest Rh−, a płód Rh+
@@ -824,7 +836,7 @@ Surowice przeciw jadowi węży tradycyjnie otrzymuje się, podając koniom niewi
 - sztuczną bierną
 + sztuczną czynną
 - wrodzoną
-! Organizm sam wytwarza przeciwciała i pamięć.
+! Organizm sam wytwarza przeciwciała i pamięć immunologiczną.
 
 ? Do odporności wrodzonej należy:
 - wytwarzanie przeciwciał po szczepieniu
@@ -848,7 +860,7 @@ Ciśnienie 120/80 | skurczowe / rozkurczowe (mm Hg) | basic:krazenie
 Osocze | ok. 55% krwi; woda + białka, sole, glukoza, hormony | basic:krew
 Erytrocyty | bez jądra, hemoglobina, transport O₂, żyją ok. 120 dni | basic:krew
 Leukocyty | z jądrem; obrona organizmu | basic:krew
-Płytki krwi | krzepnięcie; fibrynogen → fibryna | basic:krew
+Płytki krwi | uczestniczą w krzepnięciu; w kaskadzie krzepnięcia fibrynogen → fibryna | basic:krew
 Grupa 0 | brak antygenów A i B; anty-A i anty-B w osoczu | basic:grupy
 Grupa AB | antygeny A i B; brak anty-A i anty-B | basic:grupy
 Rh− | brak antygenu D; anty-D dopiero po uczuleniu | basic:grupy
@@ -919,7 +931,8 @@ Krążenie, krew i odporność
 
 ::: karta core
 - **Serce:** prawa połowa — krew odtlenowana → płuca; lewa — utlenowana → ciało; lewa komora najgrubsza; zastawki — jeden kierunek.
-- **Obieg mały:** PK → tętnice płucne → płuca → żyły płucne → LP. **Obieg duży:** LK → aorta → narządy → żyły główne → PP.
+- **Obieg mały:** PK → tętnice płucne → płuca → żyły płucne → LP. **Obieg duży:** LK → aorta → narządy → żyły główne → PP.  
+  Skróty: PK — prawa komora, LP — lewy przedsionek, LK — lewa komora, PP — prawy przedsionek.
 - **Tętnice od serca, żyły do serca**; wymiana tylko w naczyniach włosowatych; zastawki w żyłach.
 - **Krew:** osocze (transport), erytrocyty (O₂, hemoglobina, bez jądra), leukocyty (obrona), płytki (krzepnięcie).
 - **ABO:** antygeny na krwinkach, przeciwciała w osoczu; **Rh−** — anty-D po uczuleniu; konflikt: matka Rh−, płód Rh+.
@@ -975,5 +988,5 @@ Krążenie, krew i odporność
 
 - Część 1 (§0.1–12) wprowadzona w całości (surowo: `biologia/plany/audyty/ULEPSZ_PPLX_U04_cz1a–c_2026-10-11.md`): doprecyzowania P1–P6 (rzut serca, transport CO₂, anty-D po uczuleniu, komórki plazmatyczne, HIV/AIDS), 10 kart „ciekawostki”, 2 mini-wykłady, Zadania 1–2 (droga krwi, tętno), regula „jak czytać schemat”, pomiar ciśnienia, powrót krwi żylnej, zakrzep i zator, skrzep a strup.
 - Poprawione względem propozycji: Jenner — „pierwsze naukowo opisane”, nie „masowe” szczepienie; usunięty wtręt językowy („thanks to”); dopisany wyjątek grupy krwi po przeszczepie szpiku.
-- Część 2/2 (§13–23) czeka na ocenę.
+- Część 2/2 (§13–23) wprowadzona (surowo: `biologia/plany/audyty/ULEPSZ_PPLX_U04_cz2a–e_2026-10-11.md`): doprecyzowania P1–P6 (surowica, ABO, liczba skurczów orientacyjnie, fiszka o płytkach, skróty w ściądze), 1 ciekawostka, 2 mini-wykłady. Poprawione: literówka „antyenu”, nadmiarowy zamykacz bloku.
 
