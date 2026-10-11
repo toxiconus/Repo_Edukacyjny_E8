@@ -5,7 +5,7 @@ tytul: Czasowniki / Operatory posiłkowe BE i DO
 lead: Egzamin ósmoklasisty · kompleksowe przygotowanie — Lekcja 2 – twierdzenia, przeczenia, pytania i krótkie odpowiedzi
 stopka: Lekcja 2 – BE i DO • Wersja 7.0 (uproszczona, czystsza) • 2026-08-21
 zrodlo: L002-EN-Operatory-i-czasowniki-posilkowe.html (konwersja html_do_md.py, 2026-10-09)
-stan: KONWERSJA Z HTML — sprawdzić odpowiedzi „DO UZUPEŁNIENIA” i grafiki GFX
+stan: W1 FULL częściowo (część 1/3, §1–25) — model AI (paczka ULEPSZ --olimpiada ANG_L002_cz1), 2026-10-11; części 2–3 czekają; scalenie Claude
 ---
 Lekcja 2 · orientacja
 
@@ -33,6 +33,7 @@ Słownictwo: szkoła · rodzina · zainteresowania · czas wolny Otwórz słowni
 2. Do you like music? — DO
 3. Who likes football? — WHO jako podmiot
 :::
+
 To nie jest test na ocenę. Ma pokazać, co już działa automatycznie.
 :::
 
@@ -45,24 +46,23 @@ Po tej lekcji będziesz potrafić szybko rozpoznać, czy potrzebujesz **BE**, cz
 ## 1. Zanim zaczniesz – szybki test
 
 1. _____ you interested in sport? (Are / Do)
-2. Popraw: <em>You like pizza do?</em>
-3. Popraw: <em>She doesn't likes pizza.</em>
+2. Popraw: *You like pizza do?*
+3. Popraw: *She doesn't likes pizza.*
 4. _____ your brother play football? (Is / Does)
-5. Uzupełnij: <em>Do you like music?</em> → <em>Yes, I _____.</em>
+5. Uzupełnij: *Do you like music?* → *Yes, I _____.*
 6. _____ she at home yesterday? (Did / Was)
-7. Popraw: <em>Did he went to school?</em>
-8. Przetłumacz: <em>Czy jesteś zmęczony?</em>
+7. Popraw: *Did he went to school?*
+8. Przetłumacz: *Czy jesteś zmęczony?*
 
 ::: odp | Odpowiedź
-1. **Are** you interested in sport? (<em>interested</em> opisuje stan)
+1. **Are** you interested in sport? (*interested* opisuje stan)
 2. **Do you like pizza?** (DO stawiamy przed podmiotem)
-3. **She doesn't like pizza.** (po <em>doesn't</em> używamy formy podstawowej)
-4. **Does** your brother play football? (<em>play</em> jest zwykłym czasownikiem)
+3. **She doesn't like pizza.** (po *doesn't* używamy formy podstawowej)
+4. **Does** your brother play football? (*play* jest zwykłym czasownikiem)
 5. Yes, I **do**.
 6. **Was** she at home yesterday? (czas przeszły czasownika BE)
-7. **Did he go to school?** (po <em>did</em> używamy formy podstawowej)
+7. **Did he go to school?** (po *did* używamy formy podstawowej)
 8. **Are you tired?**
-
 :::
 
 Najpierw rozwiąż test samodzielnie, a potem sprawdź odpowiedzi. Zapisz swój wynik i wróć do tych samych pytań po zakończeniu lekcji, aby zobaczyć postęp.
@@ -85,130 +85,117 @@ Najważniejsze operatory w tej lekcji to:
 
 ### Dlaczego to jest ważne?
 
-Po polsku możemy powiedzieć: **Lubisz muzykę?** Nie potrzebujemy osobnego słowa przed „lubisz”.<br> W angielskim standardowe pytanie brzmi: **Do you like music?**<br> A nie: <span class="error-text">You like music do?</span>
+Po polsku możemy powiedzieć: **Lubisz muzykę?** Nie potrzebujemy osobnego słowa przed „lubisz”. W angielsku standardowe pytanie brzmi: **Do you like music?**, a nie: **You like music do?**
 
 ::: karta basic | Dlaczego operator jest potrzebny?
-W czasach Present Simple i Past Simple zwykły czasownik nie tworzy sam pytania ani przeczenia. Potrzebuje operatora **do / does / did**. Czasownik **BE** zachowuje się inaczej: sam przechodzi przed podmiot i łączy się z <em>not</em>.
+W czasach Present Simple i Past Simple zwykły czasownik nie tworzy sam pytania ani przeczenia. Potrzebuje operatora **do / does / did**. Czasownik **BE** zachowuje się inaczej: sam przechodzi przed podmiot i łączy się z *not*.
 
 | Rodzaj zdania | Polski | Angielski | Rola operatora |
 |---|---|---|---|
-| **Pytanie** | <em>Lubisz muzykę?</em> | <span class="hl-operator">Do</span> you like music? | **do** sygnalizuje pytanie |
-| **Przeczenie** | <em>Nie lubię kawy.</em> | I <span class="hl-operator">don't</span> like coffee. | **don't** tworzy przeczenie |
-| **Krótka odpowiedź** | <em>Tak, lubię.</em> | Yes, I <span class="hl-operator">do</span>. | **do** zastępuje powtarzaną część zdania |
+| **Pytanie** | *Lubisz muzykę?* | **Do** you like music? | **do** sygnalizuje pytanie |
+| **Przeczenie** | *Nie lubię kawy.* | I **don't** like coffee. | **don't** tworzy przeczenie |
+| **Krótka odpowiedź** | *Tak, lubię.* | Yes, I **do**. | **do** zastępuje powtarzaną część zdania |
 
 W języku polskim często wystarcza intonacja albo słowo „nie”. W angielskim operator wskazuje rodzaj zdania i pomaga zachować właściwy szyk.
-
 :::
 
 Co dzieje się po dodaniu DO?
 
-**does / did**<br>pokazuje osobę lub czas → **czasownik główny**<br>wraca do formy podstawowej
+**does / did** pokazuje osobę lub czas → **czasownik główny** wraca do formy podstawowej.
 
-&#8203;<span class="correct-text">Does she like music?</span> | <span class="error-text">Does she likes music?</span>
+Poprawnie: *Does she like music?*  
+Błędnie: *Does she likes music?*
 
-**Ćwiczenie – znajdź operatora [[basic:PODSTAWA]]**
+**Ćwiczenie – znajdź operatora [basic:PODSTAWA]**
 
 Wskaż operator w każdym zdaniu. Jeśli go nie ma, napisz „brak”.
 
-1. <em>Are you ready?</em>
-2. <em>She doesn't like coffee.</em>
-3. <em>I am a student.</em>
-4. <em>Did they go home?</em>
-5. <em>We watch TV every day.</em>
+1. *Are you ready?*
+2. *She doesn't like coffee.*
+3. *I am a student.*
+4. *Did they go home?*
+5. *We watch TV every day.*
 
 ::: odp | Odpowiedź
 1. **Are**
-2. **doesn't** (<em>does + not</em>)
+2. **doesn't** (*does + not*)
 3. **am**
 4. **Did**
 5. **brak** – to zdanie twierdzące w Present Simple
+:::
 
+::: karta understand | W skrócie — operator to pomocnik zdania
+Operator nie zawsze tłumaczy się jako osobne słowo po polsku. Jego zadaniem jest pokazanie, że mamy pytanie, przeczenie albo krótką odpowiedź. W zdaniu *Do you like music?* słowo *do* nie znaczy „robić”; pomaga tylko zbudować pytanie. W zdaniu *I do my homework* słowo *do* już znaczy „robić” i jest czasownikiem głównym.
 :::
 
 ## 3. Czasownik główny vs czasownik posiłkowy
 
 ### Czasownik główny (main verb)
 
-- <em>I have a dog.</em> → **have** = mieć
-- <em>I do my homework.</em> → **do** = robić
-- <em>She is a teacher.</em> → **is** = być
+- *I have a dog.* → **have** = mieć
+- *I do my homework.* → **do** = robić
+- *She is a teacher.* → **is** = być
 
 ### Czasownik posiłkowy (operator)
 
-- <em>Do you like music?</em> → **do** nie oznacza „robić” – jest operatorem.
-- <em>She has finished.</em> → **has** pomaga utworzyć Present Perfect.
-- <em>They are working.</em> → **are** pomaga utworzyć Present Continuous.
+- *Do you like music?* → **do** nie oznacza „robić” – jest operatorem.
+- *She has finished.* → **has** pomaga utworzyć Present Perfect.
+- *They are working.* → **are** pomaga utworzyć Present Continuous.
 
 ::: karta basic | Zapamiętaj
 To samo słowo może być czasownikiem głównym **albo** operatorem. Decyduje o tym kontekst.
-
 :::
 
 ::: karta warning | To samo słowo – dwie różne funkcje
 
 | Słowo | Jako czasownik główny | Jako operator |
 |---|---|---|
-| **do** | <em>I <span class="hl-main-verb">do</span> my homework.</em> – robię | <em><span class="hl-operator">Do</span> you like music?</em> – tworzy pytanie |
-| **have** | <em>She <span class="hl-main-verb">has</span> a dog.</em> – ma | <em>She <span class="hl-operator">has</span> finished.</em> – tworzy Present Perfect |
-| **be** | <em>They <span class="hl-main-verb">are</span> happy.</em> – są | <em>They <span class="hl-operator">are</span> working.</em> – tworzy Present Continuous |
+| **do** | *I **do** my homework.* – robię | ***Do** you like music?* – tworzy pytanie |
+| **have** | *She **has** a dog.* – ma | *She **has** finished.* – tworzy Present Perfect |
+| **be** | *They **are** happy.* – są | *They **are** working.* – tworzy Present Continuous |
 
-**Jak rozpoznać funkcję?** Gdy <em>do / have / be</em> pomaga utworzyć formę innego czasownika, pełni funkcję posiłkową. Gdy samodzielnie przekazuje główne znaczenie, jest czasownikiem głównym.
-
+**Jak rozpoznać funkcję?** Gdy *do / have / be* pomaga utworzyć formę innego czasownika, pełni funkcję posiłkową. Gdy samodzielnie przekazuje główne znaczenie, jest czasownikiem głównym.
 :::
 
 ## 4. BE, DO i HAVE – większy obraz
 
 | Czasownik | Funkcja jako operator | Przykład |
 |---|---|---|
-| **BE** (am/is/are/was/were/been) | Czasy <em>continuous</em>, strona bierna | <em>She is working.</em> / <em>It was written.</em> |
-| **DO** (do/does/did) | Pytania i przeczenia w czasach <em>Simple</em>, emfaza | <em>Do you like it?</em> / <em>I do like it!</em> |
-| **HAVE** (have/has/had) | Czasy <em>Perfect</em> | <em>I have seen it.</em> / <em>She has finished.</em> |
+| **BE** (am/is/are/was/were/been) | Czasy *continuous*, strona bierna | *She is working.* / *It was written.* |
+| **DO** (do/does/did) | Pytania i przeczenia w czasach *Simple*, emfaza | *Do you like it?* / *I do like it!* |
+| **HAVE** (have/has/had) | Czasy *Perfect* | *I have seen it.* / *She has finished.* |
 
 ::: karta warning | Uwaga
-Te same słowa mogą być też **czasownikami głównymi** (np. <em>I have a car</em>, <em>I do my homework</em>, <em>She is tired</em>). Kontekst zdania decyduje.
-
+Te same słowa mogą być też **czasownikami głównymi** (np. *I have a car*, *I do my homework*, *She is tired*). Kontekst zdania decyduje.
 :::
 
 ## 5. Najważniejsza decyzja: BE czy DO?
 
 **Jeśli mamy BE** – BE samo tworzy pytanie i przeczenie.
 
-- <em>She is tired.</em>
-- <em>Is she tired?</em>
-- <em>She isn't tired.</em>
+- *She is tired.*
+- *Is she tired?*
+- *She isn't tired.*
 
 **Jeśli mamy zwykły czasownik** – używamy DO.
 
-- <em>She likes music.</em>
-- <em>Does she like music?</em>
-- <em>She doesn't like music.</em>
+- *She likes music.*
+- *Does she like music?*
+- *She doesn't like music.*
 
 ::: karta basic | Złota zasada
-**BE → BE**<br>**zwykły czasownik → DO**
+**BE → BE**  
+**zwykły czasownik → DO**
 
-&#8203;<em>Are you tired?</em> ale <em>Do you like music?</em>
-
+*Are you tired?*, ale *Do you like music?*
 :::
 
-Kliknij słowo, żeby przećwiczyć decyzję
+::: karta understand | W skrócie — najpierw czasownik, potem operator
+Zanim wybierzesz *be*, *do*, *does* albo *did*, znajdź czasownik główny. Jeśli jest nim forma BE — *am, is, are, was, were* — użyj BE. Jeśli jest to inny czasownik, np. *like, play, go, have* w znaczeniu „mieć”, użyj DO. Przykład: *She is happy* → *Is she happy?*, ale *She plays tennis* → *Does she play tennis?*
+:::
 
-1. Znajdź czasownik
+**Ćwiczenie – BE czy DO?**
 
-↓
-
-tired like working play happy
-
-↓
-
-2. Czy to BE?
-
-↓
-
-TAK → BE NIE → DO
-
-Wybierz słowo i operator, aby zobaczyć wynik.
-
-::: karta - | Ćwiczenie – BE czy DO?
 Wybierz poprawny operator dla każdego zdania.
 
 1. ___ you tired?
@@ -221,16 +208,14 @@ Wybierz poprawny operator dla każdego zdania.
 8. ___ they at school yesterday?
 
 ::: odp | Odpowiedzi
-1. **be**
-2. **do**
-3. **be**
-4. **do**
-5. **do**
-6. **be**
-7. **do**
-8. **be**
-:::
-
+1. **Are** — BE
+2. **Does** — DO
+3. **Are** — BE
+4. **Does** — DO
+5. **Do** — DO
+6. **Is** — BE
+7. **Did** — DO
+8. **Were** — BE
 :::
 
 ## 2 | Operator BE
@@ -249,29 +234,16 @@ Wybierz poprawny operator dla każdego zdania.
 
 **Schemat:** podmiot + BE + reszta
 
-::: div.przyklad
-&#8203;<span class="tag">twierdzenie</span> <span class="eng">I <span class="hl-operator">am</span> <span class="hl-main-verb">tired</span>.</span> <span class="pl">Jestem zmęczony.</span>
-:::
-
-::: div.przyklad
-&#8203;<span class="tag">twierdzenie</span> <span class="eng">She <span class="hl-operator">is</span> <span class="hl-main-verb">a student</span>.</span> <span class="pl">Ona jest uczennicą.</span>
-:::
-
-::: div.przyklad
-&#8203;<span class="tag">twierdzenie (przeszłość)</span> <span class="eng">They <span class="hl-operator">were</span> <span class="hl-main-verb">at school yesterday</span>.</span> <span class="pl">Oni byli w szkole wczoraj.</span>
-:::
+- *I **am** tired.* — Jestem zmęczony.
+- *She **is** a student.* — Ona jest uczennicą.
+- *They **were** at school yesterday.* — Oni byli w szkole wczoraj.
 
 ## 8. BE – przeczenie
 
 **Schemat:** podmiot + BE + not + reszta
 
-::: div.przyklad
-&#8203;<span class="tag">przeczenie</span> <span class="eng">I <span class="hl-operator">am</span> <span class="hl-main-verb">not</span> tired.</span> <span class="pl">Nie jestem zmęczony.</span>
-:::
-
-::: div.przyklad
-&#8203;<span class="tag">przeczenie (skrót)</span> <span class="eng">She <span class="hl-operator">isn't</span> <span class="hl-main-verb">tired</span>.</span> <span class="pl">Ona nie jest zmęczona.</span>
-:::
+- *I **am not** tired.* — Nie jestem zmęczony.
+- *She **isn't** tired.* — Ona nie jest zmęczona.
 
 | Pełna forma | Skrót |
 |---|---|
@@ -285,30 +257,23 @@ Formy **isn't, aren't, wasn't** i **weren't** są poprawne gramatycznie i można
 
 | Kontekst | Zalecenie | Przykład |
 |---|---|---|
-| **Limit wyrazów** | Forma z apostrofem jest liczona jako jeden wyraz. | <em>isn't</em> = 1 wyraz |
-| **Mowa** | Skróty brzmią naturalnie; pełna forma może służyć podkreśleniu. | <em>She isn't ready.</em> / <em>She is not ready.</em> |
-| **Styl nieformalny** | Skróty są naturalne w wiadomości, e-mailu lub wpisie. | <em>We weren't at home.</em> |
-| **Styl formalny** | Pełne formy są zwykle bezpieczniejszym wyborem. | <em>We were not informed.</em> |
+| **Limit wyrazów** | Forma z apostrofem jest liczona jako jeden wyraz. | *isn't* = 1 wyraz |
+| **Mowa** | Skróty brzmią naturalnie; pełna forma może służyć podkreśleniu. | *She isn't ready.* / *She is not ready.* |
+| **Styl nieformalny** | Skróty są naturalne w wiadomości, e-mailu lub wpisie. | *We weren't at home.* |
+| **Styl formalny** | Pełne formy są zwykle bezpieczniejszym wyborem. | *We were not informed.* |
 
 **Ważne:** najpierw przeczytaj polecenie. Jeśli zadanie narzuca liczbę wyrazów albo konkretną konstrukcję, odpowiedź musi spełniać te warunki.
-
 :::
 
 ## 9. BE – pytanie
 
-BE przechodzi przed podmiot.
+BE przechodzi przed podmiotem.
 
-::: div.przyklad
-&#8203;<span class="tag">pytanie</span> <span class="eng"><span class="hl-operator">Is</span> she <span class="hl-main-verb">tired</span>?</span> <span class="pl">Czy ona jest zmęczona?</span>
-:::
+- ***Is** she tired?* — Czy ona jest zmęczona?
+- ***Are** you ready?* — Czy jesteś gotowy? Nauczyciel pyta przed rozpoczęciem testu.
 
-::: div.przyklad
-&#8203;<span class="tag">pytanie</span> <span class="eng"><span class="hl-operator">Are</span> you <span class="hl-main-verb">ready</span>?</span> <span class="pl">Czy jesteś gotowy?</span> Nauczyciel pyta przed rozpoczęciem testu.
-:::
-
-::: karta - | Schemat
+::: karta basic | Schemat
 **BE + podmiot + reszta?**
-
 :::
 
 ## 10. BE – krótkie odpowiedzi
@@ -320,15 +285,14 @@ BE przechodzi przed podmiot.
 | Were they at home? | Yes, they were. | No, they weren't. |
 
 ::: karta warning | Uwaga!
-Nie odpowiadamy <em>Yes, I do.</em> na pytanie <em>Are you ready?</em>
+Nie odpowiadamy *Yes, I do.* na pytanie *Are you ready?*
 
-**Dlaczego?** Pytanie używa BE (<em>are</em>), więc odpowiedź również używa BE. Dla podmiotu <em>I</em> właściwą formą jest <em>am</em>: **Yes, I am.**
-
+**Dlaczego?** Pytanie używa BE (*are*), więc odpowiedź również używa BE. Dla podmiotu *I* właściwą formą jest *am*: **Yes, I am.**
 :::
 
 ## 11. Ćwiczenia z BE (tłumaczenie PL→EN)
 
-**Przetłumacz na angielski. Użyj BE. [[basic:PODSTAWA]]**
+**Przetłumacz na angielski. Użyj BE. [basic:PODSTAWA]**
 
 1. Czy jesteś zmęczony?
 2. Ona nie jest w domu.
@@ -337,8 +301,9 @@ Nie odpowiadamy <em>Yes, I do.</em> na pytanie <em>Are you ready?</em>
 5. Czy twoja siostra jest nauczycielką?
 
 ::: odp | Podpowiedzi
-1. W każdym zdaniu użyj odpowiedniej formy BE (am/is/are/was/were). 2. Sprawdź osobę podmiotu – dla I użyj <em>am</em>, dla you/we/they <em>are</em>, dla he/she/it <em>is</em>, dla przeszłości <em>was/were</em>. 3. Pytanie: BE przed podmiotem. Przeczenie: BE + not.
-
+1. W każdym zdaniu użyj odpowiedniej formy BE (am/is/are/was/were).  
+2. Sprawdź osobę podmiotu – dla *I* użyj *am*, dla *you/we/they* — *are*, dla *he/she/it* — *is*, dla przeszłości — *was/were*.  
+3. Pytanie: BE przed podmiotem. Przeczenie: BE + not.
 :::
 
 ::: odp | Odpowiedź
@@ -347,35 +312,38 @@ Nie odpowiadamy <em>Yes, I do.</em> na pytanie <em>Are you ready?</em>
 3. Were they at school?
 4. I am a student.
 5. Is your sister a teacher?
-
 :::
 
-**Uzupełnij dialog formami BE [[basic:PODSTAWA]]**
+**Uzupełnij dialog formami BE [basic:PODSTAWA]**
 
 **Rozmowa w kawiarni:**
 
-A: _____ you ready to order?<br> B: Yes, I _____. _____ the soup hot?<br> A: Yes, it _____. The sandwiches _____ fresh too.<br> B: Great. How much _____ the soup?
+A: _____ you ready to order?  
+B: Yes, I _____. _____ the soup hot?  
+A: Yes, it _____. The sandwiches _____ fresh too.  
+B: Great. How much _____ the soup?
 
 ::: odp | Odpowiedź
-A: **Are** you ready to order?<br> B: Yes, I **am**. **Is** the soup hot?<br> A: Yes, it **is**. The sandwiches **are** fresh too.<br> B: Great. How much **is** the soup?
-
+A: **Are** you ready to order?  
+B: Yes, I **am**. **Is** the soup hot?  
+A: Yes, it **is**. The sandwiches **are** fresh too.  
+B: Great. How much **is** the soup?
 :::
 
-**Wybierz właściwą formę BE [[understand:TRENING]]**
+**Wybierz właściwą formę BE [understand:TRENING]**
 
-1. I _____ at home yesterday. (<em>am / was</em>)
-2. They _____ in the garden now. (<em>are / were</em>)
-3. She _____ a teacher. (<em>is / was</em>) – to jej zawód.
-4. We _____ at the cinema last Friday. (<em>are / were</em>)
-5. _____ you hungry? (<em>Are / Were</em>) – pytam teraz.
+1. I _____ at home yesterday. (*am / was*)
+2. They _____ in the garden now. (*are / were*)
+3. She _____ a teacher. (*is / was*) – to jej zawód.
+4. We _____ at the cinema last Friday. (*are / were*)
+5. _____ you hungry? (*Are / Were*) – pytam teraz.
 
 ::: odp | Odpowiedź
-1. **was** – <em>yesterday</em> wskazuje przeszłość, a podmiotem jest <em>I</em>.
-2. **are** – <em>now</em> wskazuje teraźniejszość, a <em>they</em> wymaga formy <em>are</em>.
-3. **is** – zdanie opisuje obecny zawód osoby <em>she</em>.
-4. **were** – <em>last Friday</em> wskazuje przeszłość, a <em>we</em> łączy się z <em>were</em>.
-5. **Are** – pytamy o obecny stan osoby <em>you</em>.
-
+1. **was** – *yesterday* wskazuje przeszłość, a podmiotem jest *I*.
+2. **are** – *now* wskazuje teraźniejszość, a *they* wymaga formy *are*.
+3. **is** – zdanie opisuje obecny zawód osoby *she*.
+4. **were** – *last Friday* wskazuje przeszłość, a *we* łączy się z *were*.
+5. **Are** – pytamy o obecny stan osoby *you*.
 :::
 
 ## 3 | Operator DO
@@ -392,53 +360,39 @@ A: **Are** you ready to order?<br> B: Yes, I **am**. **Is** the soup hot?<br> A:
 
 ## 13. DO – twierdzenie
 
-W zwykłym zdaniu nie używamy operatora DO.
+W zwykłym zdaniu twierdzącym nie używamy operatora DO.
 
-::: div.przyklad
-&#8203;<span class="tag">twierdzenie</span> <span class="eng">I <span class="hl-main-verb">like</span> music.</span> <span class="pl">Lubię muzykę.</span>
-:::
-
-::: div.przyklad
-&#8203;<span class="tag">twierdzenie</span> <span class="eng">She <span class="hl-main-verb">likes</span> music.</span> <span class="pl">Ona lubi muzykę.</span>
-:::
+- *I **like** music.* — Lubię muzykę.
+- *She **likes** music.* — Ona lubi muzykę.
 
 ## 14. DO – pytanie
 
 **Schemat:** Do / Does / Did + podmiot + czasownik podstawowy + reszta?
 
-::: div.przyklad
-&#8203;<span class="tag">pytanie</span> <span class="eng"><span class="hl-operator">Do</span> you <span class="hl-main-verb">like</span> music?</span> <span class="pl">Czy lubisz muzykę?</span> Rozmowa o zainteresowaniach.
-:::
-
-::: div.przyklad
-&#8203;<span class="tag">pytanie</span> <span class="eng"><span class="hl-operator">Does</span> she <span class="hl-main-verb">like</span> music?</span> <span class="pl">Czy ona lubi muzykę?</span>
-:::
-
-::: div.przyklad
-&#8203;<span class="tag">pytanie (przeszłość)</span> <span class="eng"><span class="hl-operator">Did</span> they <span class="hl-main-verb">go</span> home?</span> <span class="pl">Czy oni poszli do domu?</span>
-:::
+- ***Do** you **like** music?* — Czy lubisz muzykę? Rozmowa o zainteresowaniach.
+- ***Does** she **like** music?* — Czy ona lubi muzykę?
+- ***Did** they **go** home?* — Czy oni poszli do domu?
 
 ## 15. DO – przeczenie
 
 **Schemat:** podmiot + don't / doesn't / didn't + czasownik podstawowy
 
-::: div.przyklad
-&#8203;<span class="tag">przeczenie</span> <span class="eng">I <span class="hl-operator">don't</span> <span class="hl-main-verb">like</span> coffee.</span> <span class="pl">Nie lubię kawy.</span> Ktoś mówi o swojej preferencji.
-:::
+- *I **don't like** coffee.* — Nie lubię kawy. Ktoś mówi o swojej preferencji.
+- *She **doesn't like** coffee.* — Ona nie lubi kawy.
 
-::: div.przyklad
-&#8203;<span class="tag">przeczenie</span> <span class="eng">She <span class="hl-operator">doesn't</span> <span class="hl-main-verb">like</span> coffee.</span> <span class="pl">Ona nie lubi kawy.</span>
+::: karta understand | W skrócie — DO przenosi informację z czasownika
+W twierdzeniu *She likes music* końcówka *-s* pokazuje trzecią osobę. Gdy tworzymy pytanie lub przeczenie, tę informację przejmuje operator: *Does she like music?* oraz *She doesn't like music*. Dlatego po *does* i *doesn't* czasownik wraca do formy podstawowej *like*. W przeszłości tę samą rolę pełni *did*: *Did they go home?* oraz *They didn't go home.*
 :::
 
 ## 16. DO – krótkie odpowiedzi
 
-- <em>Do you like football?</em> → <em>Yes, I do.</em> / <em>No, I don't.</em>
-- <em>Does she study English?</em> → <em>Yes, she does.</em> / <em>No, she doesn't.</em>
-- <em>Did they go home?</em> → <em>Yes, they did.</em> / <em>No, they didn't.</em>
+- *Do you like football?* → *Yes, I do.* / *No, I don't.*
+- *Does she study English?* → *Yes, she does.* / *No, she doesn't.*
+- *Did they go home?* → *Yes, they did.* / *No, they didn't.*
 
 ## 17. Ćwiczenia z DO (tłumaczenie PL→EN)
 
-**Przetłumacz na angielski. Użyj DO. [[basic:PODSTAWA]]**
+**Przetłumacz na angielski. Użyj DO. [basic:PODSTAWA]**
 
 1. Czy lubisz muzykę?
 2. Ona nie lubi kawy.
@@ -447,8 +401,9 @@ W zwykłym zdaniu nie używamy operatora DO.
 5. Nie odrabiam pracy domowej codziennie.
 
 ::: odp | Podpowiedzi
-1. Użyj do/does/did + forma podstawowa czasownika. 2. Sprawdź podmiot: I/you/we/they → <em>do</em>; he/she/it → <em>does</em>; przeszłość → <em>did</em>. 3. Po <em>does</em> i <em>did</em> czasownik wraca do formy podstawowej.
-
+1. Użyj do/does/did + forma podstawowa czasownika.  
+2. Sprawdź podmiot: *I/you/we/they* → *do*; *he/she/it* → *does*; przeszłość → *did*.  
+3. Po *does* i *did* czasownik wraca do formy podstawowej.
 :::
 
 ::: odp | Odpowiedź
@@ -457,10 +412,9 @@ W zwykłym zdaniu nie używamy operatora DO.
 3. Did they go home?
 4. Does your brother play football?
 5. I don't do my homework every day.
-
 :::
 
-**Wybierz DO, DOES lub DID [[understand:TRENING]]**
+**Wybierz DO, DOES lub DID [understand:TRENING]**
 
 1. _____ you like swimming?
 2. _____ she play the guitar?
@@ -476,7 +430,6 @@ W zwykłym zdaniu nie używamy operatora DO.
 4. **did**
 5. **do**
 6. **Does**
-
 :::
 
 ## 4 | Złota zasada i porównania
@@ -484,15 +437,19 @@ W zwykłym zdaniu nie używamy operatora DO.
 ## 18. Najważniejsza zasada: DOES / DID + FORMA PODSTAWOWA
 
 ::: karta warning | To jedna z najważniejszych zasad egzaminacyjnych.
+- *She likes music.* → *Does she like music?*  
+  Błędnie: *Does she likes music?*  
+  Poprawnie: *Does she like music?*
+- *He went home.* → *Did he go home?*  
+  Błędnie: *Did he went home?*  
+  Poprawnie: *Did he go home?*
+- *She has a brother.* → *Does she have a brother?*  
+  Błędnie: *Does she has a brother?*  
+  Poprawnie: *Does she have a brother?*
 :::
-
-- <span class="error-text">She likes music.</span> → <span class="correct-text">Does she like music?</span> ✗ <span class="error-text">Does she likes?</span> ✓ <span class="correct-text">Does she like?</span>
-- <span class="error-text">He went home.</span> → <span class="correct-text">Did he go home?</span> ✗ <span class="error-text">Did he went?</span> ✓ <span class="correct-text">Did he go?</span>
-- <span class="error-text">She has a brother.</span> → <span class="correct-text">Does she have a brother?</span> ✗ <span class="error-text">Does she has?</span> ✓ <span class="correct-text">Does she have?</span>
 
 ::: karta basic | Zasada
 Po **do / does / did** czasownik wraca do **formy podstawowej**.
-
 :::
 
 | Twierdzenie | Pytanie |
@@ -527,23 +484,23 @@ Po **do / does / did** czasownik wraca do **formy podstawowej**.
 
 ## 20. HAVE – szczególny przypadek
 
-&#8203;<em>Have</em> może być zwykłym czasownikiem.
+*Have* może być zwykłym czasownikiem.
 
-- <em>She has a brother.</em>
-- <span class="error-text">Does she has a brother?</span> → <span class="correct-text">Does she have a brother?</span>
+- *She has a brother.*
+- Błędnie: *Does she has a brother?*  
+  Poprawnie: *Does she have a brother?*
 
 ::: karta basic | HAVE – najważniejsza zasada
 
 | Forma | Przykład | Co się dzieje? |
 |---|---|---|
-| **Twierdzenie** | She <span class="hl-main-verb">has</span> a dog. | **has** odpowiada podmiotowi <em>she</em>. |
-| **Błąd** | <span class="error-text">Does she has a dog?</span> | Po **does** nie używamy formy <em>has</em>. |
-| **Poprawne pytanie** | <span class="hl-operator">Does</span> she <span class="hl-main-verb">have</span> a dog? | **does** wskazuje trzecią osobę, więc zostaje podstawowa forma **have**. |
-| **Przeczenie** | She <span class="hl-operator">doesn't</span> <span class="hl-main-verb">have</span> a dog. | Po **doesn't** również używamy formy **have**. |
-| **Przeszłość** | <span class="hl-operator">Did</span> she <span class="hl-main-verb">have</span> a dog? | **did** wskazuje czas przeszły, a **have** pozostaje w formie podstawowej. |
+| **Twierdzenie** | She **has** a dog. | **has** odpowiada podmiotowi *she*. |
+| **Błąd** | *Does she has a dog?* | Po **does** nie używamy formy *has*. |
+| **Poprawne pytanie** | **Does** she **have** a dog? | **does** wskazuje trzecią osobę, więc zostaje podstawowa forma **have**. |
+| **Przeczenie** | She **doesn't have** a dog. | Po **doesn't** również używamy formy **have**. |
+| **Przeszłość** | **Did** she **have** a dog? | **did** wskazuje czas przeszły, a **have** pozostaje w formie podstawowej. |
 
-**Zapamiętaj:** w twierdzeniu mówimy <em>she has</em>, ale po <em>does</em>, <em>doesn't</em> i <em>did</em> zawsze używamy <em>have</em>.
-
+**Zapamiętaj:** w twierdzeniu mówimy *she has*, ale po *does*, *doesn't* i *did* zawsze używamy *have*.
 :::
 
 ::: karta warning | HAVE a HAVE GOT
@@ -551,48 +508,49 @@ Obie konstrukcje mogą oznaczać posiadanie. **Have got** jest szczególnie czę
 
 | Konstrukcja | Twierdzenie | Pytanie | Przeczenie |
 |---|---|---|---|
-| **have** | <em>You have a dog.</em> | <em>Do you have a dog?</em> | <em>You don't have a dog.</em> |
-| **have got** | <em>You've got a dog.</em> | <em>Have you got a dog?</em> | <em>You haven't got a dog.</em> |
+| **have** | *You have a dog.* | *Do you have a dog?* | *You don't have a dog.* |
+| **have got** | *You've got a dog.* | *Have you got a dog?* | *You haven't got a dog.* |
 
-**Nie łącz obu schematów:** <span class="error-text">Do you have got a dog?</span>
+**Nie łącz obu schematów:** *Do you have got a dog?*
+:::
 
+::: karta extra | Dlaczego *have got* bywa mylące?
+W konstrukcji *have got* operatorami są *have / has / had*, a nie *do / does / did*. Dlatego pytanie brzmi *Have you got a dog?*, a nie *Do you have got a dog?* W amerykańskim angielskim częściej usłyszysz *Do you have a dog?* Obie wersje są poprawne, ale nie wolno mieszać ich schematów.
 :::
 
 ## 21. DO jako czasownik główny
 
-&#8203;<em>DO</em> również może być zwykłym czasownikiem.
+*DO* również może być zwykłym czasownikiem.
 
-- <em>I do my homework.</em> → <em>do</em> = robić / odrabiać
-- <em>Do you do your homework?</em> (pierwsze <em>do</em> = operator, drugie = czasownik główny)
+- *I do my homework.* → *do* = robić / odrabiać
+- *Do you do your homework?* — pierwsze *do* = operator, drugie = czasownik główny.
 
-## 22. Podwójne DO [[extra:DLA AMBITNYCH]]
+## 22. Podwójne DO [extra:DLA AMBITNYCH]
 
 ::: karta basic | DO jako operator i czasownik główny
 
 | Zdanie | Funkcja DO | Tłumaczenie |
 |---|---|---|
-| <span class="hl-operator">Do</span> you <span class="hl-main-verb">do</span> your homework? | Pierwsze **do** to operator, drugie to czasownik główny. | <em>Czy odrabiasz pracę domową?</em> |
-| <span class="hl-operator">Does</span> she <span class="hl-main-verb">do</span> the dishes? | **does** to operator, **do** to czasownik główny. | <em>Czy ona zmywa naczynia?</em> |
-| They <span class="hl-main-verb">do</span> their best. | **do** to czasownik główny; w twierdzeniu nie ma operatora. | <em>Oni robią, co mogą.</em> |
-| <span class="hl-operator">Did</span> you <span class="hl-main-verb">do</span> the shopping? | **did** to operator, **do** to czasownik główny. | <em>Czy zrobiłeś zakupy?</em> |
+| **Do** you **do** your homework? | Pierwsze **do** to operator, drugie to czasownik główny. | *Czy odrabiasz pracę domową?* |
+| **Does** she **do** the dishes? | **does** to operator, **do** to czasownik główny. | *Czy ona zmywa naczynia?* |
+| They **do** their best. | **do** to czasownik główny; w twierdzeniu nie ma operatora. | *Oni robią, co mogą.* |
+| **Did** you **do** the shopping? | **did** to operator, **do** to czasownik główny. | *Czy zrobiłeś zakupy?* |
 
-&#8203;<span class="hl-operator">Niebieski</span> oznacza operator, a <span class="hl-main-verb">złoty</span> czasownik główny.
-
+Pierwsze słowo w pytaniach oznacza operator, a drugie — czasownik główny.
 :::
 
-## 23. Podwójne HAVE [[extra:DLA AMBITNYCH]]
+## 23. Podwójne HAVE [extra:DLA AMBITNYCH]
 
 ::: karta extra | HAVE jako operator i czasownik główny
 
 | Zdanie | Funkcja HAVE | Tłumaczenie |
 |---|---|---|
-| <span class="hl-operator">Have</span> you ever <span class="hl-main-verb">had</span> a pet? | **have** to operator Present Perfect, a **had** to czasownik główny. | <em>Czy kiedykolwiek miałeś zwierzę?</em> |
-| She <span class="hl-operator">has</span> <span class="hl-main-verb">had</span> three jobs. | **has** to operator, a **had** to czasownik główny. | <em>Ona miała dotąd trzy prace.</em> |
-| I <span class="hl-operator">had</span> already <span class="hl-main-verb">had</span> lunch. | Pierwsze **had** to operator Past Perfect, a drugie to czasownik główny. | <em>Zjadłem już obiad.</em> |
-| <span class="hl-operator">Has</span> she <span class="hl-main-verb">had</span> breakfast yet? | **has** to operator, a **had** to czasownik główny. | <em>Czy ona jadła już śniadanie?</em> |
+| **Have** you ever **had** a pet? | **have** to operator Present Perfect, a **had** to czasownik główny. | *Czy kiedykolwiek miałeś zwierzę?* |
+| She **has had** three jobs. | **has** to operator, a **had** to czasownik główny. | *Ona miała dotąd trzy prace.* |
+| I **had already had** lunch. | Pierwsze **had** to operator Past Perfect, a drugie to czasownik główny. | *Zjadłem już obiad.* |
+| **Has** she **had** breakfast yet? | **has** to operator, a **had** to czasownik główny. | *Czy ona jadła już śniadanie?* |
 
-Na tym etapie wystarczy rozpoznawać, że pierwsza forma HAVE buduje czas Perfect, a druga niesie znaczenie „mieć” lub jest częścią wyrażenia <em>have a meal</em>.
-
+Na tym etapie wystarczy rozpoznawać, że pierwsza forma HAVE buduje czas Perfect, a druga niesie znaczenie „mieć” lub jest częścią wyrażenia *have a meal*.
 :::
 
 ## 5 | Pytania szczegółowe
@@ -602,63 +560,65 @@ Na tym etapie wystarczy rozpoznawać, że pierwsza forma HAVE buduje czas Perfec
 ::: karta basic | Zadania egzaminacyjne
 Arkusz z języka angielskiego sprawdza rozumienie ze słuchu, znajomość funkcji językowych, rozumienie tekstów pisanych, znajomość środków językowych oraz tworzenie wypowiedzi pisemnej.
 
-Konstrukcje z **BE** i **DO** są szczególnie ważne przy uzupełnianiu luk, przekształcaniu zdań, tłumaczeniu fragmentów oraz samodzielnym tworzeniu pytań i przeczeń.
-
-Na stronach poszczególnych roczników CKE publikuje arkusze, zasady oceniania, transkrypcje i nagrania do zadań ze słuchania.
-
+Konstrukcje z **BE** i **DO** są szczególnie ważne przy uzupełnianiu luk, przekształcaniu zdań, tłumaczeniu fragmentów oraz samodzielnym tworzeniu pytań i przeczeń. Na stronach poszczególnych roczników CKE publikuje arkusze, zasady oceniania, transkrypcje i nagrania do zadań ze słuchania.
 :::
 
 ::: karta warning | Jak pracować z nagraniem egzaminacyjnym?
-1. **Słuchanie i decyzja:** rozpoznaj, czy pytanie wykorzystuje BE, czy DO.
-2. **Słuchanie i analiza:** zapisz usłyszane pytanie, a następnie sprawdź szyk w transkrypcji.
-3. **Własna wypowiedź:** ułóż podobne pytanie, zmieniając osobę, czas lub temat.
+1. **Słuchanie i decyzja:** rozpoznaj, czy pytanie wykorzystuje BE, czy DO.  
+2. **Słuchanie i analiza:** zapisz usłyszane pytanie, a następnie sprawdź szyk w transkrypcji.  
+3. **Własna wypowiedź:** ułóż podobne pytanie, zmieniając osobę, czas lub temat.  
 
 Do systematycznego ćwiczenia jednej konstrukcji używaj krótkich nagrań w tej lekcji. Pełne nagrania CKE wykorzystuj do treningu rozumienia wypowiedzi w szerszym kontekście.
-
 :::
 
 ## 24. Pytania z WH-words
 
-Najważniejsze słowa pytające: what, where, when, why, who, which, whose, how
+Najważniejsze słowa pytające: *what, where, when, why, who, which, whose, how*.
 
 ### WH + BE
 
-- <em>Where are you?</em>
-- <em>Why is she tired?</em>
-- <em>When were they at school?</em>
-- <em>Which book is yours?</em>
-- <em>Whose bag is this?</em>
+- *Where are you?*
+- *Why is she tired?*
+- *When were they at school?*
+- *Which book is yours?*
+- *Whose bag is this?*
 
 ### WH + DO
 
-- <em>Where do you live?</em>
-- <em>What does she like?</em>
-- <em>Why did he leave?</em>
-- <em>Which one do you want?</em>
+- *Where do you live?*
+- *What does she like?*
+- *Why did he leave?*
+- *Which one do you want?*
 
 | WH-word | Przykład z BE | Przykład z DO |
 |---|---|---|
-| **what** | <em>What is your name?</em> | <em>What do you like?</em> |
-| **where** | <em>Where are you?</em> | <em>Where do you live?</em> |
-| **when** | <em>When is the party?</em> | <em>When do you leave?</em> |
-| **why** | <em>Why is she tired?</em> | <em>Why did he leave?</em> |
-| **who** | <em>Who is your teacher?</em> | <em>Who do you like?</em> |
-| **which** | <em>Which book is yours?</em> | <em>Which one do you want?</em> |
-| **whose** | <em>Whose bag is this?</em> | <em>Whose book do you want?</em> |
-| **how** | <em>How are you?</em> | <em>How do you do it?</em> |
+| **what** | *What is your name?* | *What do you like?* |
+| **where** | *Where are you?* | *Where do you live?* |
+| **when** | *When is the party?* | *When do you leave?* |
+| **why** | *Why is she tired?* | *Why did he leave?* |
+| **who** | *Who is your teacher?* | *Who do you like?* |
+| **which** | *Which book is yours?* | *Which one do you want?* |
+| **whose** | *Whose bag is this?* | *Whose book do you want?* |
+| **how** | *How are you?* | *How do you do it?* |
 
 Słowo pytające nie wybiera operatora. Najpierw sprawdź, czy w zdaniu potrzebujesz BE, czy zwykłego czasownika z DO.
 
 ## 25. WHO – najważniejsza pułapka
 
-**Kogo lubisz?** → <em>Who do you like?</em> (tu <em>you</em> = podmiot, potrzebujemy <em>do</em>)
+**Kogo lubisz?** → *Who do you like?*  
+Tu *you* jest podmiotem, więc potrzebujemy *do*.
 
-**Kto lubi muzykę?** → <em>Who likes music?</em> (tu <em>who</em> = podmiot, nie potrzebujemy DO) <span class="error-text">Who does like music?</span>
+**Kto lubi muzykę?** → *Who likes music?*  
+Tu *who* jest podmiotem, więc nie potrzebujemy DO.  
+Błędnie: *Who does like music?*
 
 ::: karta warning | Zapamiętaj
-- WHO = kto wykonuje czynność? → <em>Who plays football?</em>
-- WHO = kogo / co? → <em>Who do you like?</em>
+- WHO = kto wykonuje czynność? → *Who plays football?*
+- WHO = kogo / co? → *Who do you like?*
+:::
 
+::: karta understand | W skrócie — test dla WHO
+Zadaj pytanie: „Czy *who* wykonuje czynność?”. Jeśli tak, *who* jest podmiotem i nie używamy *do/does/did*: *Who broke the window?* Jeśli *who* oznacza obiekt czynności, a podmiotem jest ktoś inny, używamy operatora: *Who did you meet?* W tym drugim zdaniu podmiotem jest *you*, a *who* — dopełnieniem.
 :::
 
 ## 26. What time / How often / How much / How many
