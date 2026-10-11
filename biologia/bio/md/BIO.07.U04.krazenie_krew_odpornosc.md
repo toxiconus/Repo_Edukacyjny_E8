@@ -35,7 +35,7 @@ stan: WYPEŁNIONY — Perplexity + Claude, 2026-10-11; do W1
 1. **[§0.2](#diagnoza)** — diagnoza.
 2. **[§1](#wyklad)** — wykład, potem **[§2](#serce)–[§4](#naczynia)**: serce, obiegi, naczynia; schemat z grafiki przejdź krok po kroku.
 3. **[§5](#krew)–[§6](#grupy)** — krew i grupy krwi.
-4. **[§8](#odpornosc)–[§9](#szczepienia)** — odporność, szczepionka i surowica; potem **[§12](#zadania)** i **[§13](#klinika)**.
+4. **[§8](#odpornosc)–[§9](#szczepienia)** — odporność, szczepionka i surowica; potem **[§13](#zadania)** i **[§14](#klinika)**.
 :::
 
 ## 0.1 | Jak pracować z lekcją {#jak-pracowac}
@@ -60,7 +60,7 @@ stan: WYPEŁNIONY — Perplexity + Claude, 2026-10-11; do W1
 ::: odp | Pokaż klucz
 1. Cztery: prawy i lewy przedsionek, prawa i lewa komora. · 2. Do płuc (obieg mały). · 3. Odtlenowaną — tętnica prowadzi krew od serca. · 4. Erytrocyt (krwinka czerwona) — dzięki hemoglobinie. · 5. Szczepionka zawiera antygeny i uczy organizm wytwarzać przeciwciała; surowica zawiera gotowe przeciwciała. · 6. Anty-A i anty-B.
 
-**Interpretacja:** 0–2 — zacznij od [§1](#wyklad) i czytaj powoli; 3–4 — przejdź rdzeń, zwróć uwagę na pułapki; 5–6 — przejdź do [§12](#zadania) i warstwy ambitnej.
+**Interpretacja:** 0–2 — zacznij od [§1](#wyklad) i czytaj powoli; 3–4 — przejdź rdzeń, zwróć uwagę na pułapki; 5–6 — przejdź do [§13](#zadania) i warstwy ambitnej.
 :::
 :::
 
@@ -119,6 +119,10 @@ Serce bije nawet wtedy, gdy nerwy nie wysyłają do niego sygnałów — ma **au
 Na rysunkach w podręcznikach i arkuszach serce jest pokazane tak, jakbyś patrzył na człowieka stojącego twarzą do ciebie. **Prawa połowa serca jest wtedy po lewej stronie rysunku.** Zanim odpowiesz na pytanie ze schematem, znajdź **aortę** (największe naczynie, wychodzi z komory o grubej ścianie) — ona zawsze wychodzi z **lewej** komory.
 :::
 
+::: regula
+**Jak czytać schemat krążenia — 5 kroków:** (1) znajdź kierunek strzałek; (2) ustal, czy krew płynie **do** serca, czy **od** serca; (3) rozpoznaj, czy jest **przed**, czy **po** wymianie gazowej (w płucach albo w tkankach); (4) sprawdź, czy schemat pokazuje obieg mały, duży czy oba; (5) dopiero teraz nazwij naczynie lub jamę serca. Nie zaczynaj od koloru — kolory są umowne (zwykle niebieski = odtlenowana, czerwony = utlenowana).
+:::
+
 ::: karta understand | W skrócie — krew przez serce przechodzi dwa razy
 Prześledź jedną krwinkę: wyrusza z lewej komory aortą, w nodze oddaje tlen, żyłami wraca do prawego przedsionka, przechodzi do prawej komory, płynie do płuc, ładuje tlen, wraca do lewego przedsionka i lewej komory. W czasie jednego okrążenia była w sercu **dwa razy** — raz w prawej, raz w lewej połowie. U ryb serce ma tylko jeden przedsionek i jedną komorę, a krew przez serce przepływa raz na okrążenie (jeden obieg). Podział na dwa obiegi pozwala ssakom i ptakom utrzymywać wysokie ciśnienie w obiegu dużym i intensywną przemianę materii.
 :::
@@ -134,7 +138,8 @@ Prześledź jedną krwinkę: wyrusza z lewej komory aortą, w nodze oddaje tlen,
 | główna funkcja | szybki transport z serca | powrót krwi do serca | **wymiana substancji** z tkankami |
 
 ::: karta understand | W skrócie — dlaczego budowa naczyń jest taka, a nie inna
-**Tętnice** przyjmują krew wtłaczaną przez serce pod dużym ciśnieniem — gdyby były cienkie, pękałyby jak przepełniony balon. Sprężysta ściana rozciąga się przy skurczu i oddaje energię w rozkurczu, wyrównując przepływ. **Żyły** mają niskie ciśnienie, więc krew w nogach musi „wspinać się” pod górę wbrew grawitacji: pomagają jej **zastawki** (nie pozwalają cofać się krwi) i **mięśnie szkieletowe**, które przy ruchu ściskają żyły jak pompa. **Naczynia włosowate** mają ścianę cienką jak bibułka, bo przez nią muszą przeniknąć tlen, CO₂ i składniki odżywcze — im krótsza droga dyfuzji, tym szybsza wymiana.
+**Tętnice** przyjmują krew wtłaczaną przez serce pod dużym ciśnieniem — gdyby były cienkie, pękałyby jak przepełniony balon. Sprężysta ściana rozciąga się przy skurczu i oddaje energię w rozkurczu, wyrównując przepływ. **Żyły** mają niskie ciśnienie, więc krew w nogach musi „wspinać się” pod górę wbrew grawitacji: pomagają jej **zastawki** (nie pozwalają cofać się krwi) i **mięśnie szkieletowe**, które przy ruchu ściskają żyły jak pompa. **Naczynia włosowate** mają ścianę cienką jak bibułka, bo przez nią muszą przeniknąć tlen, CO₂ i składniki odżywcze — im krótsza droga dyfuzji, tym szybsza wymiana. Do tego **łączny przekrój** wszystkich włośniczek jest ogromny, więc krew płynie w nich bardzo **wolno** — ma czas na wymianę; a w tak wąskim naczyniu krwinki przeciskają się pojedynczo, tuż przy ścianie.
+**Powrót krwi żylnej** wspierają: zastawki żylne, skurcze mięśni szkieletowych uciskających żyły, ruchy oddechowe klatki piersiowej i różnica ciśnień między żyłami a prawym przedsionkiem. Dlatego przy długim staniu krew gromadzi się w nogach, a ruch nóg pomaga jej wracać.
 :::
 
 **Ciśnienie krwi** to nacisk krwi na ściany naczyń. Mierzy się je ciśnieniomierzem na ramieniu i podaje dwie liczby, np. **120/80 mm Hg**: pierwsza — ciśnienie **skurczowe** (w czasie skurczu komór), druga — **rozkurczowe**. Stale podwyższone ciśnienie to **nadciśnienie tętnicze** — groźne, bo latami uszkadza naczynia, serce i nerki, często bez żadnych objawów.
@@ -182,7 +187,9 @@ Dojrzały erytrocyt pozbywa się jądra i większości organelli, żeby zmieści
 
 **Krzepnięcie krwi** — obrona przed wykrwawieniem. Po skaleczeniu naczynie się obkurcza, **płytki krwi** przyklejają się do miejsca uszkodzenia i tworzą czop. Jednocześnie białka osocza (czynniki krzepnięcia) uruchamiają łańcuch reakcji, w którym rozpuszczalny **fibrynogen** zmienia się w nierozpuszczalną **fibrynę** — sieć włókien, w którą wplątują się krwinki: powstaje **skrzep**. Do krzepnięcia potrzebne są m.in. jony **wapnia** i **witamina K**. **Hemofilia** to dziedziczna choroba, w której brakuje jednego z czynników krzepnięcia (genetyka — lekcja L018).
 
-**Zakrzep i zator.** Krzepnięcie ratuje życie przy skaleczeniu, ale bywa groźne, gdy zachodzi **wewnątrz** naczynia — powstaje **zakrzep** (np. w żyłach nóg przy długim unieruchomieniu). Gdy fragment zakrzepu oderwie się i z prądem krwi zatka inne naczynie, powstaje **zator** (np. w płucach albo w mózgu). Dlatego po operacjach chorych szybko się uruchamia, a w długiej podróży warto co jakiś czas wstać i poruszać nogami.
+**Zakrzep i zator.** Krzepnięcie ratuje życie przy skaleczeniu, ale bywa groźne, gdy zachodzi **wewnątrz** naczynia — powstaje **zakrzep** (np. w żyłach nóg przy długim unieruchomieniu). Gdy fragment zakrzepu oderwie się i z prądem krwi zatka inne naczynie, powstaje **zator** (np. w płucach albo w mózgu). Dlatego po operacjach chorych szybko się uruchamia, a w długiej podróży warto co jakiś czas wstać i poruszać nogami. Leki **przeciwkrzepliwe** zmniejszają ryzyko zakrzepów, ale osoba, która je przyjmuje, dłużej krwawi przy urazach.
+
+**Skrzep a strup.** **Skrzep** to sieć fibryny z uwięzionymi krwinkami, zamykająca uszkodzone naczynie lub ranę. **Strup** to zaschnięty skrzep na powierzchni skóry — twarda warstwa, która chroni gojącą się ranę przed zakażeniem; pod nim odbudowuje się naskórek.
 
 ::: mity
 „Krew żylna jest niebieska.” || Krew zawsze jest czerwona — odtlenowana ciemnoczerwona, utlenowana jasnoczerwona. Żyły widziane przez skórę wydają się niebieskawe przez sposób, w jaki skóra rozprasza światło.
@@ -193,7 +200,7 @@ Dojrzały erytrocyt pozbywa się jądra i większości organelli, żeby zmieści
 
 ## 6 | Grupy krwi i transfuzja [[basic:E8]] {#grupy}
 
-**Antygen** to cząsteczka (zwykle białko lub cukier na powierzchni komórki), którą układ odpornościowy potrafi rozpoznać. **Przeciwciało** to białko, które swoiście łączy się z określonym antygenem — jak klucz z zamkiem.
+**Antygen** to cząsteczka (zwykle białko lub cukier na powierzchni komórki), którą układ odpornościowy potrafi rozpoznać. **Przeciwciało** to białko, które swoiście łączy się z określonym antygenem — jak klucz z zamkiem (antygen — zamek, przeciwciało — klucz). Antygenem może być fragment bakterii lub wirusa, cząsteczka na powierzchni erytrocytu (A, B, D), alergen albo cząsteczka z komórek przeszczepu. **Układ ABO i układ Rh to dwa odrębne układy grupowe** — zapis „AB Rh−” mówi: antygeny A i B są, antygenu D nie ma.
 
 | Grupa | Antygeny na erytrocytach | Przeciwciała w osoczu |
 |---|---|---|
@@ -230,6 +237,13 @@ Z naczyń włosowatych do tkanek stale przesącza się trochę osocza — powsta
 | grasica | dojrzewanie limfocytów T (aktywna głównie w dzieciństwie) |
 | migdałki | ochrona wejścia do gardła |
 
+| Cecha | Krew | Limfa |
+|---|---|---|
+| ruch | wymuszany pracą serca | dzięki skurczom mięśni szkieletowych i zastawkom naczyń limfatycznych |
+| co transportuje | gazy, składniki odżywcze, hormony, produkty przemiany materii | nadmiar płynu tkankowego, limfocyty, część tłuszczów z jelita |
+| komórki obronne | są | są (dużo limfocytów) |
+| „filtr” | m.in. śledziona | węzły chłonne |
+
 ## 8 | Odporność [[basic:E8]] {#odpornosc}
 
 | Cecha | Odporność wrodzona (nieswoista) | Odporność nabyta (swoista) |
@@ -248,6 +262,12 @@ Z naczyń włosowatych do tkanek stale przesącza się trochę osocza — powsta
 | **limfocyty B** | przekształcają się w komórki wytwarzające **przeciwciała**; tworzą komórki pamięci | nabyta (humoralna — „przez płyny ustroju”) |
 | **limfocyty T** | rozpoznają i niszczą komórki zakażone lub zmienione nowotworowo; kierują pracą innych komórek odpornościowych; tworzą komórki pamięci | nabyta (komórkowa) |
 
+| | Odporność **humoralna** | Odporność **komórkowa** |
+|---|---|---|
+| na czym polega | na **przeciwciałach** w płynach ustroju (osocze, limfa) | na bezpośrednim działaniu **komórek** — limfocytów T |
+| droga | antygen → aktywacja limfocytu B → komórki wytwarzające przeciwciała → przeciwciało wiąże antygen → drobnoustrój unieszkodliwiony lub oznaczony do zniszczenia, toksyna zneutralizowana | limfocyt T rozpoznaje zakażoną komórkę → niszczy ją → wirus traci miejsce namnażania |
+| najważniejsza wobec | bakterii i toksyn krążących w płynach | wirusów ukrytych **wewnątrz** komórek, komórek nowotworowych |
+
 **Fagocytoza krok po kroku:** fagocyt rozpoznaje drobnoustrój → otacza go wypustkami błony komórkowej → zamyka w pęcherzyku wewnątrz komórki → trawi enzymami → usuwa resztki.
 
 ::: karta understand | W skrócie — stan zapalny
@@ -256,6 +276,10 @@ Zadrapanie robi się czerwone, ciepłe, obrzęknięte i boli. To nie „zakażen
 
 ::: adv | Limfocyty B i T, pierwsza i druga odpowiedź | poziom ambitny
 **Limfocyty B** po rozpoznaniu antygenu przekształcają się w **komórki plazmatyczne**, które wytwarzają ogromne ilości przeciwciał. Przeciwciała oznaczają drobnoustroje do zniszczenia, zlepiają je i neutralizują toksyny. **Limfocyty T** rozpoznają i niszczą komórki zakażone wirusem lub nowotworowe (limfocyty T cytotoksyczne) albo koordynują całą odpowiedź (limfocyty T pomocnicze). Po walce zostają **komórki pamięci**. Przy pierwszym kontakcie z antygenem (odpowiedź pierwotna) przeciwciał przybywa powoli, po kilku dniach; przy drugim (odpowiedź wtórna) — szybciej i w znacznie większej ilości. Na wykresie „stężenie przeciwciał w czasie” druga krzywa rośnie wcześniej i wyżej — to częste zadanie konkursowe.
+:::
+
+::: karta core | Gdy odporność działa za mocno albo za słabo
+**Za mocno lub „w złą stronę”:** alergia (na zewnętrzny alergen), choroba autoimmunizacyjna (na własne tkanki), odrzucenie przeszczepu. **Za słabo:** wrodzone niedobory odporności, niektóre choroby zakaźne (np. HIV), osłabienie innymi chorobami, leki immunosupresyjne. **Nie myl:** **immunizacja** — wywołanie odporności (np. szczepienie, uczulenie matki Rh−); **immunosupresja** — celowe osłabienie odpowiedzi lekami (po przeszczepie). Odporności po przeszczepie nie wyłącza się całkowicie, bo biorca zostałby bez obrony przed drobnoustrojami — ogranicza się ją tylko na tyle, by nie atakowała przeszczepu.
 :::
 
 ## 9 | Szczepionka i surowica [[basic:E8]] {#szczepienia}
@@ -274,6 +298,19 @@ Zadrapanie robi się czerwone, ciepłe, obrzęknięte i boli. To nie „zakażen
 |---|---|---|
 | **naturalna** | po przechorowaniu | od matki: przez łożysko i z mlekiem (siarą) |
 | **sztuczna** | po szczepieniu | po podaniu surowicy lub immunoglobuliny |
+
+**Cztery drogi do odporności swoistej:**
+
+| Droga | Przebieg | Rodzaj |
+|---|---|---|
+| szczepionka | antygen → limfocyty rozpoznają go i namnażają się → przeciwciała → komórki pamięci | czynna, sztuczna |
+| przechorowanie | drobnoustrój wnika → odpowiedź odpornościowa → przeciwciała → pamięć | czynna, naturalna |
+| surowica | gotowe przeciwciała → szybkie związanie antygenu → ochrona na kilka tygodni | bierna, sztuczna |
+| przeciwciała matki | przez łożysko i z mlekiem → czasowa ochrona niemowlęcia | bierna, naturalna |
+
+::: karta warning | Antybiotyk to nie szczepionka
+**Antybiotyk** zabija bakterie albo hamuje ich namnażanie u osoby już chorej — **nie działa na wirusy** i nie daje pamięci immunologicznej. **Szczepionka** przygotowuje układ odpornościowy na przyszły kontakt z konkretnym drobnoustrojem. Przechorowanie jednej choroby nie chroni przed inną, bo odporność nabyta jest **swoista** — komórki pamięci rozpoznają tylko „swój” antygen.
+:::
 
 ::: karta understand | W skrócie — odporność zbiorowiskowa
 Gdy zaszczepiona jest duża część społeczeństwa, drobnoustrój nie ma jak się roznosić — każdy chory spotyka głównie osoby odporne. Chronieni są wtedy także ci, których nie można zaszczepić: niemowlęta, osoby z obniżoną odpornością, chorzy na nowotwory. To **odporność zbiorowiskowa (populacyjna)**. Gdy odsetek zaszczepionych spada, wracają choroby, które wydawały się zapomniane — tak bywało z odrą w wielu krajach.
@@ -317,7 +354,51 @@ Układ krwionośny łączy wszystkie układy: z **oddechowym** (wymiana gazowa),
 Gdy temperatura ciała rośnie (upał, wysiłek): naczynia skóry się **rozszerzają** → więcej krwi płynie przy powierzchni → ciało oddaje więcej ciepła (skóra czerwienieje), dodatkowo pocimy się. Gdy marzniemy: naczynia skóry się **zwężają** → krew zostaje głębiej, ciało traci mniej ciepła (skóra blednie). Reakcja przeciwdziała zmianie — to **ujemne sprzężenie zwrotne**, podstawowy mechanizm homeostazy (lekcja o homeostazie — B2).
 :::
 
-## 12 | Zadania konkursowe [[exam:KONKURS]] {#zadania}
+## 12 | Doświadczenia i analiza danych [[exam:KONKURS]] {#badania}
+
+Na etapie rejonowym nie wystarczy znać definicji — trzeba zaplanować doświadczenie, odczytać tabelę i wyciągnąć wniosek, który **nie wychodzi poza dane**.
+
+::: regula
+**P–H–P–Z–W:** **P**roblem badawczy (pytanie o wpływ czynnika: „Czy… wpływa na…?”) → **H**ipoteza (przewidywanie wyniku) → **P**róba kontrolna i badawcza → **Z**mienne (niezależna — zmieniam, zależna — mierzę, pozostałe stałe) → **W**niosek (odpowiedź na problem).
+:::
+
+| Element | Przykład (tętno) |
+|---|---|
+| **obserwacja** — co zmierzono, bez interpretacji | Po wysiłku tętno wzrosło z 72 do 130 uderzeń na minutę. |
+| **wniosek** — odpowiedź na problem | Wysiłek fizyczny zwiększa częstość pracy serca. |
+| **wyjaśnienie** — mechanizm biologiczny | Pracujące mięśnie potrzebują więcej O₂ i glukozy, więc serce kurczy się częściej. |
+
+::: karta understand | W skrócie — jak czytać tabelę i wykres
+**T–O–W:** **T**ytuł i temat → **O**sie i jednostki (oraz legenda) → **W**niosek z trendu (po opisaniu, jak zmienia się wielkość, i odczytaniu maksimum i minimum). Schemat zdania: „Wraz ze wzrostem … wartość … rośnie/maleje, co wskazuje, że …”. Dwie rzeczy, które często psują odpowiedź: (1) **wniosek poza danymi** — z tabeli od 0 do 10 minut nie wiesz na pewno, ile będzie po 15 minutach; (2) **współwystępowanie to nie przyczyna** — to, że tętno i częstość oddechów rosną razem, nie znaczy, że jedno wywołuje drugie; mechanizm trzeba wyjaśnić wiedzą biologiczną (obie zmiany wywołuje wysiłek).
+:::
+
+::: karta core | Przykład — temperatura a czas krzepnięcia krwi (dane przykładowe)
+| Temperatura | 5°C | 20°C | 37°C | 50°C |
+|---|---|---|---|---|
+| Czas krzepnięcia | 18 min | 10 min | 4,5 min | 6 min |
+
+**Problem:** jaki wpływ ma temperatura na czas krzepnięcia krwi? **Zmienna niezależna:** temperatura; **zależna:** czas krzepnięcia; **stałe:** objętość próbek, rodzaj naczynia, pochodzenie krwi. **Obserwacja:** najkrótszy czas w 37°C, dłuższy w niższych temperaturach i znów dłuższy w 50°C. **Poprawny wniosek:** *w badanym zakresie* najszybciej krew krzepła w ok. 37°C. **Błędny wniosek:** „im wyższa temperatura, tym szybsze krzepnięcie” — przeczy mu wynik dla 50°C. **Wyjaśnienie:** krzepnięcie to łańcuch reakcji z udziałem białek; zbyt niska temperatura je spowalnia, a zbyt wysoka uszkadza białka.
+:::
+
+::: karta core | Przykład — wysiłek a ciśnienie i tętno (dane przykładowe)
+| Sytuacja | Skurczowe [mm Hg] | Rozkurczowe [mm Hg] | Tętno [/min] |
+|---|---|---|---|
+| spoczynek | 116 | 74 | 70 |
+| zaraz po wysiłku | 138 | 78 | 132 |
+| po odpoczynku | 120 | 75 | 84 |
+
+Po wysiłku wzrosło przede wszystkim ciśnienie **skurczowe** i tętno, a po odpoczynku wartości wróciły blisko wyjściowych. Zapisuj zawsze trzy liczby osobno. To doświadczenie bada **zmianę** parametru — nie służy do stawiania diagnozy (nadciśnienia nie rozpoznaje się z jednego pomiaru).
+:::
+
+::: klinika | Błąd w planie | Poprawnie | Dlaczego?
+| Problem: „Czym jest tętno?” | „Czy wysiłek fizyczny wpływa na tętno?” | Problem badawczy pyta o wpływ czynnika, nie o definicję. |
+| Hipoteza: „Tętno mierzy się na nadgarstku.” | „Po wysiłku tętno wzrośnie.” | Hipoteza przewiduje wynik; fakt lub definicja nie są hipotezą. |
+| Jeden pomiar przed i jeden po wysiłku | kilka pomiarów, kilka osób, średnia | Pojedynczy pomiar może być przypadkowy. |
+| Próbki krwi o różnych objętościach w różnych temperaturach | ta sama objętość, zmienia się tylko temperatura | Gdy zmienia się kilka czynników naraz, nie wiadomo, który wpłynął na wynik. |
+| „Temperatura zawsze przyspiesza krzepnięcie.” | „W badanym zakresie najkrótszy czas wystąpił w 37°C.” | Wniosek nie może wychodzić poza zbadane warunki. |
+:::
+
+## 13 | Zadania konkursowe [[exam:KONKURS]] {#zadania}
 
 ::: karta exam | Zadanie 1 (2 pkt) — kolejność
 Uporządkuj drogę krwi w obiegu małym: lewy przedsionek, prawa komora, naczynia włosowate płuc, tętnice płucne, żyły płucne.
@@ -459,7 +540,47 @@ Np.: aktywność fizyczna — poprawia wydolność układu krążenia i pomaga u
 :::
 :::
 
-## 13 | Klinika błędów {#klinika}
+::: karta exam | Trening A — droga krwi
+1. Uzupełnij: żyły główne → A → B → tętnica płucna → C → żyły płucne → D. 2. Uzupełnij: lewa komora → A → tętnice → B → żyły → C → prawy przedsionek. Jaki to obieg? 3. Obieg płucny: A. zaczyna się w lewej komorze; B. zaczyna się w prawej komorze; C. kończy się w prawym przedsionku; D. prowadzi krew z płuc do ciała. 4. Znajdź błędy: „Krew z płuc wpływa żyłą płucną do prawego przedsionka, potem do prawej komory, która tłoczy ją przez aortę do całego ciała.” 5. Jak zmieniłby się przepływ krwi w modelu serca bez zastawek?
+
+::: odp | Pokaż klucz
+1. A — prawy przedsionek, B — prawa komora, C — naczynia włosowate płuc, D — lewy przedsionek. · 2. A — aorta, B — naczynia włosowate narządów, C — żyły główne; obieg duży (od lewej komory do prawego przedsionka). · 3. B. · 4. Żyły płucne prowadzą do **lewego** przedsionka, krew przechodzi do **lewej** komory, a ta tłoczy ją przez aortę. · 5. Krew cofałaby się przy skurczach — zastawki zapewniają przepływ w jednym kierunku.
+:::
+:::
+
+::: karta exam | Trening B — krew i krzepnięcie
+1. Dlaczego niedobór żelaza może prowadzić do niedokrwistości? 2. Osocze straciło dużo wody (np. przy odwodnieniu). Jakie mogą być skutki dla krążenia? 3. W próbce brakuje płytek krwi — jaki proces jest zaburzony? 4. Dlaczego osoba przyjmująca leki przeciwkrzepliwe powinna uważać na urazy? 5. Dlaczego w uproszczonym modelu ABO nie wolno przetoczyć krwi grupy B osobie z grupą A? 6. Osoba ma grupę AB Rh−: jakie ma antygeny ABO, jakiego antygenu nie ma i czy Rh ma związek z antygenami A i B?
+
+::: odp | Pokaż klucz
+1. Żelazo jest składnikiem hemoglobiny — mniej żelaza, mniej hemoglobiny, słabszy transport tlenu. · 2. Maleje objętość krwi, rośnie jej lepkość, serce trudniej utrzymuje przepływ — gorsze zaopatrzenie tkanek. · 3. Krzepnięcie (powstawanie czopu płytkowego i skrzepu). · 4. Krwawienie trwa dłużej, trudniej powstaje skrzep. · 5. Osocze biorcy ma anty-B, które zlepią krwinki z antygenem B. · 6. Antygeny A i B; nie ma antygenu D; nie — ABO i Rh to odrębne układy.
+:::
+:::
+
+::: karta exam | Trening C — odporność
+1. Przyporządkuj do odporności wrodzonej lub nabytej: skóra, przeciwciała po szczepieniu, fagocytoza, pamięć immunologiczna, kwas solny w żołądku, limfocyty rozpoznające określony antygen. 2. Czy antybiotyk zastępuje szczepionkę? 3. Dlaczego przechorowanie jednej choroby zakaźnej nie chroni przed inną? 4. Dlaczego surowicę można podać po ukąszeniu przez żmiję osobie nigdy nieszczepionej? 5. Wirus namnaża się wewnątrz komórek. Który typ odporności jest szczególnie ważny w jego zwalczaniu? 6. Dlaczego po przeszczepie nie wyłącza się odporności całkowicie? 7. Uzupełnij: fagocytoza należy głównie do odporności …; przeciwciała — do odporności …; niszczenie zakażonej komórki przez limfocyt — do odporności …
+
+::: odp | Pokaż klucz
+1. Wrodzona: skóra, fagocytoza, kwas solny; nabyta: przeciwciała po szczepieniu, pamięć, limfocyty rozpoznające antygen. · 2. Nie — antybiotyk działa na bakterie u chorego (nie na wirusy), szczepionka przygotowuje odporność na przyszłość. · 3. Odporność nabyta jest swoista — przeciwciała i komórki pamięci rozpoznają tylko konkretne antygeny. · 4. Surowica zawiera gotowe przeciwciała, które od razu wiążą toksyny jadu. · 5. Komórkowa — limfocyty T niszczą zakażone komórki. · 6. Biorca zostałby bez obrony przed drobnoustrojami; odporność ogranicza się tylko na tyle, by nie odrzucała przeszczepu. · 7. wrodzonej; humoralnej; komórkowej.
+:::
+:::
+
+::: karta exam | Trening D — wszystko połącz
+1. Po zakażeniu gardła powiększyły się węzły chłonne szyi. Dlaczego te właśnie węzły, jakie komórki się w nich aktywują, jaki rodzaj odporności działa i czy węzły wywołały chorobę? 2. Do rany po skaleczeniu dostały się bakterie. Opisz po kolei reakcję organizmu. 3. Osoba A została zaszczepiona przeciw drobnoustrojowi X, osoba B dostała surowicę przeciw X. Porównaj ich ochronę po miesiącu i po roku. 4. Liczba leukocytów u osoby A wzrosła z 6 tys./µl do 10 tys./µl w czasie infekcji, u osoby B pozostała 6 tys./µl. Czy sama tabela pozwala stwierdzić, kto jest chory? 5. Kobieta ma grupę A Rh−, jej partner AB Rh+. Jakie ma antygeny i przeciwciała ABO? Czy dziecko może być Rh+? Czy konflikt jest pewny i jak mu zapobiec? Czy dziecko musi mieć grupę AB?
+
+::: odp | Pokaż klucz
+1. Węzły szyi filtrują limfę z okolicy głowy i gardła; aktywują się i namnażają limfocyty (i inne komórki odpornościowe); działa głównie odporność nabyta, współpracując z wrodzoną; nie — powiększenie to skutek walki z zakażeniem. · 2. Uszkodzona bariera skóry → bakterie w tkankach → stan zapalny → napływ leukocytów → fagocytoza → (gdy trzeba) odpowiedź limfocytów i przeciwciała → komórki pamięci. · 3. A — własne przeciwciała i pamięć, ochrona długotrwała; B — ochrona tylko przez kilka tygodni, bez pamięci; po roku chroniona jest tylko osoba A. · 4. Nie — wzrost leukocytów sugeruje odpowiedź odpornościową, ale prawidłowa liczba nie wyklucza choroby; potrzebne są objawy i inne badania. · 5. Antygen A, przeciwciała anty-B; tak, dziecko może być Rh+; konflikt nie jest pewny — zależy od Rh dziecka i uczulenia matki; profilaktyka: immunoglobulina anty-D; nie — grupa dziecka zależy od genów obojga rodziców (L019).
+:::
+:::
+
+::: karta exam | Trening E — doświadczenia
+1. Tętno po wysiłku w czasie odpoczynku: 0 min — 150, 2 min — 122, 5 min — 92, 10 min — 76. Opisz zależność. Czy można stwierdzić, że po 15 minutach wyniesie 70? 2. Badano krzepnięcie: 10°C — 15 min, 20°C — 9 min, 37°C — 4 min, 60°C — 12 min. W jakiej temperaturze krzepnięcie było najszybsze? Czy prawdą jest „im cieplej, tym szybciej”? Co mogło wydłużyć czas w 60°C? 3. Która odpowiedź jest lepszym wnioskiem: A. „Krzepnięcie zachodzi najlepiej w 37°C.” B. „W badanym doświadczeniu najkrótszy czas krzepnięcia odnotowano w 37°C.”? 4. Uczniowie wykonali różną liczbę przysiadów, potem zmierzono tętno. Podaj zmienną niezależną, zależną, próbę kontrolną i przewidywany trend. 5. Jak utworzyć grupę kontrolną w badaniu wpływu szczepionki na wytwarzanie przeciwciał?
+
+::: odp | Pokaż klucz
+1. Wraz z wydłużaniem odpoczynku tętno maleje i zbliża się do spoczynkowego; nie — można przewidywać dalszy spadek, ale bez pomiaru nie znamy dokładnej wartości. · 2. W 37°C; nie, w 60°C czas znów wzrósł; zbyt wysoka temperatura mogła uszkodzić białka biorące udział w krzepnięciu. · 3. B — nie wychodzi poza dane. · 4. Niezależna: liczba przysiadów; zależna: tętno; kontrola: tętno po odpoczynku (przed wysiłkiem); trend: im więcej przysiadów, tym wyższe tętno. · 5. Osoby, które nie dostały badanej szczepionki, a poza tym są w podobnych warunkach i badane tak samo; w prawdziwych badaniach obowiązują ścisłe zasady etyczne.
+:::
+:::
+
+## 14 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
 | „Tętnice niosą krew utlenowaną, żyły — odtlenowaną.” | Tętnice — od serca, żyły — do serca. | Tętnica płucna niesie krew odtlenowaną, żyły płucne — utlenowaną. |
@@ -480,9 +601,13 @@ Np.: aktywność fizyczna — poprawia wydolność układu krążenia i pomaga u
 | „Powiększony węzeł chłonny to zawsze nowotwór.” | Najczęściej to oznaka walki z infekcją. | W węźle namnażają się limfocyty; długo utrzymujące się powiększenie wymaga lekarza. |
 | „Osoba Rh− jest słabsza lub ma «gorszą» krew.” | Rh− to tylko brak antygenu D. | Ma znaczenie przy transfuzji i w ciąży, nie dla zdrowia. |
 | „Alergen to trucizna.” | Alergen jest zwykle nieszkodliwy; szkodzi nadmierna reakcja organizmu. | Alergia to nadwrażliwość konkretnej osoby. |
+| „Alergia to brak odporności.” | Alergia to **nadmierna** reakcja odpornościowa. | Brak odporności to niedobór odporności. |
+| „Immunosupresja wzmacnia odporność po przeszczepie.” | Immunosupresja **osłabia** odpowiedź odpornościową. | Celem jest ochrona przeszczepu przed odrzuceniem. |
+| „Węzły chłonne pompują krew.” | Węzły filtrują **limfę** i są miejscem namnażania limfocytów. | Krew pompuje serce. |
+| „Antybiotyk leczy grypę.” | Antybiotyki nie działają na wirusy. | Grypę wywołuje wirus. |
 :::
 
-## 14 | Ćwiczenia {#cwiczenia}
+## 15 | Ćwiczenia {#cwiczenia}
 
 ::: karta basic | A1–A6
 1. Wymień trzy elementy budowy układu krwionośnego.
@@ -511,7 +636,7 @@ Np.: aktywność fizyczna — poprawia wydolność układu krążenia i pomaga u
 :::
 :::
 
-## 15 | Ciekawostki {#ciekawostki}
+## 16 | Ciekawostki {#ciekawostki}
 
 ::: karta extra | Harvey i odkrycie krążenia
 Do XVII wieku wierzono za Galenem, że krew powstaje stale w wątrobie i „zużywa się” w ciele. Angielski lekarz William Harvey w 1628 r. policzył, ile krwi serce wypompowuje w ciągu godziny — wyszło więcej, niż waży cały człowiek. Wniosek: krew musi **krążyć** w zamkniętym obiegu. Brakujące ogniwo — naczynia włosowate — zobaczył pod mikroskopem kilkadziesiąt lat później Marcello Malpighi.
@@ -533,7 +658,7 @@ W 1796 r. Edward Jenner zauważył, że dojarki, które przechorowały łagodną
 Surowice przeciw jadowi węży tradycyjnie otrzymuje się, podając koniom niewielkie, bezpieczne dawki jadu — konie wytwarzają przeciwciała, które oczyszcza się z ich krwi. Dlatego surowica działa natychmiast: przeciwciała są już „gotowe”, ale obce białko organizm usuwa w ciągu kilku tygodni.
 :::
 
-## 16 | Sposoby pamięciowe {#mnemotechniki}
+## 17 | Sposoby pamięciowe {#mnemotechniki}
 
 ::: wskazowki
 - **„TO-DO”: Tętnica — Od serca, żyła — DO serca.**
@@ -544,9 +669,11 @@ Surowice przeciw jadowi węży tradycyjnie otrzymuje się, podając koniom niewi
 - **„Szczepionka uczy, surowica wyręcza.”** Szczepionka — czynna, surowica — bierna.
 - **„Mama Rh−, dziecko Rh+, drugi raz — ryzyko”** — konflikt serologiczny.
 - **„Kolor zmienia się tylko we włośniczkach.”**
+- **„Czynna — ciało samo czyni przeciwciała; bierna — bierze gotowe.”** **„Naturalna — z życia; sztuczna — z gabinetu lekarskiego.”**
+- **P–H–P–Z–W** w doświadczeniu (problem, hipoteza, próby, zmienne, wniosek) i **T–O–W** przy wykresie (tytuł, osie, wniosek).
 :::
 
-## 17 | Test końcowy {#test}
+## 18 | Test końcowy {#test}
 
 ::: test
 ? Krew odtlenowana płynie w:
@@ -620,7 +747,7 @@ Surowice przeciw jadowi węży tradycyjnie otrzymuje się, podając koniom niewi
 ! Odporność wrodzona jest nieswoista i działa od urodzenia.
 :::
 
-## 18 | Fiszki {#fiszki}
+## 19 | Fiszki {#fiszki}
 
 ::: fiszki
 Obieg mały | prawa komora → tętnice płucne → płuca → żyły płucne → lewy przedsionek | basic:krazenie
@@ -646,9 +773,16 @@ Surowica | gotowe przeciwciała → odporność bierna sztuczna | basic:odpornos
 Węzły chłonne | filtrują limfę, namnażanie limfocytów | basic:limfa
 Węzeł zatokowo-przedsionkowy | naturalny rozrusznik serca | extra:ambitne
 HIV | niszczy limfocyty T pomocnicze → AIDS | extra:ambitne
+Antygen | cząsteczka rozpoznawana przez układ odpornościowy (zamek) | basic:odpornosc
+Przeciwciało | białko swoiście wiążące antygen (klucz) | basic:odpornosc
+Aglutynacja | zlepianie krwinek przez przeciwciała | basic:grupy
+Odporność humoralna / komórkowa | przeciwciała w płynach ustroju / limfocyty T niszczące zakażone komórki | exam:konkurs
+Immunosupresja | celowe osłabienie odporności lekami (po przeszczepie) | exam:konkurs
+Śledziona / grasica | filtruje krew, usuwa stare erytrocyty / dojrzewanie limfocytów T | basic:limfa
+Problem badawczy | pytanie o wpływ czynnika: „Czy… wpływa na…?” | basic:badania
 :::
 
-## 19 | Słownik {#slownik}
+## 20 | Słownik {#slownik}
 
 ::: slownik
 Aorta :: największa tętnica, wychodzi z lewej komory; początek obiegu dużego
@@ -668,7 +802,7 @@ Surowica :: preparat z gotowymi przeciwciałami, dający odporność bierną
 Konflikt serologiczny :: niszczenie erytrocytów płodu Rh+ przez przeciwciała anty-D matki Rh−
 :::
 
-## 20 | Mapa pojęć {#mapa}
+## 21 | Mapa pojęć {#mapa}
 
 ::: drzewo
 Krążenie, krew i odporność
@@ -694,7 +828,7 @@ Krążenie, krew i odporność
     zaburzenia: alergia, autoimmunizacja, AIDS; przeszczepy
 :::
 
-## 21 | Ściąga {#sciaga}
+## 22 | Ściąga {#sciaga}
 
 ::: karta core
 - **Serce:** prawa połowa — krew odtlenowana → płuca; lewa — utlenowana → ciało; lewa komora najgrubsza; zastawki — jeden kierunek.
@@ -716,10 +850,12 @@ Krążenie, krew i odporność
 - [ ] odróżniam odporność wrodzoną i nabytą, czynną i bierną, naturalną i sztuczną
 - [ ] porównuję szczepionkę i surowicę
 - [ ] planuję doświadczenie z tętnem (próba kontrolna, zmienne)
+- [ ] odróżniam obserwację, wniosek i wyjaśnienie; nie wyciągam wniosków poza dane z tabeli
+- [ ] odróżniam odporność humoralną i komórkową oraz immunizację od immunosupresji
 - [ ] (ambitne) opisuję automatyzm serca, krzepnięcie, limfocyty B i T, odpowiedź wtórną
 :::
 
-## 22 | Co dalej? {#dalej}
+## 23 | Co dalej? {#dalej}
 
 - Genetyka grup krwi i dziedziczenie Rh — lekcja L019.
 - Pozostałe układy do etapu rejonowego: oddechowy i wydalniczy (B2c), nerwowy (B2d), dokrewny (B2e), homeostaza (B2).
@@ -742,5 +878,8 @@ Krążenie, krew i odporność
 
 **Z ciągu dalszego (przyjęte):** prawidłowy pomiar ciśnienia, zakrzep i zator, czynniki ryzyka i badania okresowe, skupiska węzłów chłonnych, rodzaje leukocytów i fagocytoza krok po kroku, alergia a autoimmunizacja, pułapka „konflikt nie jest pewny”, zgoda na dawstwo i skutki immunosupresji, zadania A–C i E–J (→ zadania 11–17; zadanie D pokrywają §5 i zadanie 4), pułapki (→ klinika), mapa pojęć (→ §20). Cykl pracy serca i tętno były już w lekcji.
 **Poprawione w ciągu dalszym:** zadanie A, pyt. 3 — „najwięcej tlenu w lewej komorze”: tyle samo tlenu ma krew w lewym przedsionku i lewej komorze; poprawna odpowiedź to obie jamy lewej połowy serca.
+
+**Z odpowiedzi 3–5 (zadania etapowe, część zaawansowana, doświadczenia i analiza danych — przyjęte):** 5 kroków czytania schematu, powrót krwi żylnej, skrzep a strup, leki przeciwkrzepliwe, przykłady antygenów i odrębność ABO/Rh, krew a limfa, odporność humoralna i komórkowa, nadmierna i osłabiona odporność, immunizacja a immunosupresja, cztery drogi nabywania odporności, antybiotyk a szczepionka, nowa §12 „Doświadczenia i analiza danych” (P–H–P–Z–W, obserwacja–wniosek–wyjaśnienie, T–O–W, korelacja a przyczyna, krzepnięcie a temperatura, ciśnienie po wysiłku, błędy w planie), zadania jako „Trening A–E”, fiszki, mnemotechniki, klinika. Pominięte jako powtórzenia: zadania o grubości lewej komory, tabeli ABO, szczepionce i surowicy, wysiłku i termoregulacji, rodzajach odporności, sprawdzian końcowy (pokrywa go test i ściąga).
+**Poprawione w odpowiedziach 3–5:** „mała średnica włośniczek spowalnia przepływ” — przepływ we włośniczkach jest wolny głównie dlatego, że ich **łączny przekrój** jest ogromny; mała średnica sprawia, że krwinki przeciskają się pojedynczo przy ścianie. Dane z tabel krzepnięcia i ciśnienia oznaczone jako przykładowe.
 
 **Nieprzyjęte:** nazwa pliku „B2” z propozycji — w projekcie B2 to homeostaza; lekcja dostała kod U04 (organizm człowieka, pkt III.4–5) w nowej grupie BIO.07.
