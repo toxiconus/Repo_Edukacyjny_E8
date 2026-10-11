@@ -26,24 +26,28 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
 - ⚠`L012-EN-Future-Simple.html` 121 KB
 
-## angielski/html  (7 pl., 779 KB)
+## angielski/html  (7 pl., 822 KB)
 - ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.html` 169 KB
 - ⚠`ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.html` 112 KB
 - ⚠`ANG.01.L004.czasy_terazniejsze_i_przeszle.html` 139 KB
-- ⚠`ANG.01.L005.present_perfect.html` 146 KB
-- ⚠`ANG.01.L006.past_simple_continuous.html` 107 KB
+- ⚠`ANG.01.L005.present_perfect.html` 156 KB
+- ⚠`ANG.01.L006.past_simple_continuous.html` 139 KB
 - ⚠`ANG.01.L012.future_simple.html` 106 KB
 - `index.html` 2 KB
 
-## angielski/lekcje_md  (6 pl., 257 KB)
+## angielski/lekcje_md  (6 pl., 287 KB)
 - ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.md` 70 KB
 - `ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.md` 30 KB
 - `ANG.01.L004.czasy_terazniejsze_i_przeszle.md` 49 KB
-- ⚠`ANG.01.L005.present_perfect.md` 53 KB
-- `ANG.01.L006.past_simple_continuous.md` 27 KB
+- ⚠`ANG.01.L005.present_perfect.md` 60 KB
+- `ANG.01.L006.past_simple_continuous.md` 49 KB
 - `ANG.01.L012.future_simple.md` 28 KB
 
-## angielski/plany/audyty  (3 pl., 25 KB)
+## angielski/plany/audyty  (7 pl., 211 KB)
+- ⚠`ULEPSZ_OLI_L004_2026-10-11.md` 55 KB
+- `ULEPSZ_OLI_L005_2026-10-11.md` 46 KB
+- `ULEPSZ_OLI_L005_cz2_2026-10-11.md` 31 KB
+- ⚠`ULEPSZ_OLI_L006_2026-10-11.md` 55 KB
 - `W17_WDROZENIE_W1_ANGIELSKI_2026-10-09.md` 1 KB
 - `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
 - `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
@@ -160,7 +164,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 117 KB)
+## chemia/che-modular  (13 pl., 118 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -582,19 +586,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (12 pl., 64 KB)
-- `.gitignore` 0 KB
-- `JAK_WYSYLAC.md` 4 KB
-- `KOLEJKA_AI.md` 3 KB
-- `OCENA_MODELI.md` 3 KB
-- `OLIMPIADA_DODATEK.md` 2 KB
-- `ULEPSZ_PROMPT.md` 12 KB
-- `W1_PROMPT.md` 8 KB
-- `html2md.py` 4 KB
-- `paczka_ai.py` 5 KB
-- `w1_lekcje.py` 2 KB
-- `w1_paczka.py` 4 KB
-- `zbierz_lekcje.py` 17 KB
+## eksport  (13 pl., 67 KB)
+- (zwinięte; `ls eksport`)
 
 ## narzedzia  (15 pl., 111 KB)
 - (zwinięte; `ls narzedzia`)
@@ -778,7 +771,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L010.srodki_stylistyczne.md` 23 KB
 - `POL.01.L011.elementy_utworu_moral_puenta.md` 22 KB
 
-## polski/html  (48 pl., 5.5 MB)
+## polski/html  (48 pl., 5.6 MB)
 - (zwinięte; `ls polski/html`) — duże:
 - ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 189 KB
 - ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 158 KB
@@ -812,8 +805,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 575 KB)
+## polski/podstawy  (23 pl., 615 KB)
 - (zwinięte; `ls polski/podstawy`) — duże:
+- ⚠`POL.02.G04.liczebnik.md` 70 KB
 - ⚠`POL.02.G12.czesci_zdania.md` 59 KB
 
 ## polski/szablon  (2 pl., 23 KB)

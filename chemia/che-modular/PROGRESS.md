@@ -99,3 +99,4 @@
 - 2026-10-11: ANG L004 (W1 FULL) i L005 (FULL do §8) — warstwa olimpijska z odpowiedzi AI; model czyta ~50 KB → paczki po 1 lekcji ≤ 50 KB, nowe narzędzie eksport/podziel_lekcje.py; 15 nowych paczek.
 - 2026-10-11: ANG L006 Past Simple/Continuous — ULEPSZ --olimpiada scalone (W1 FULL, 47 KB).
 - 2026-10-11: ANG L005 część 2 scalona — lekcja W1 FULL (60 KB).
+- 2026-10-11: POL G04 liczebnik — sekcje 15–30 z Perplexity (napisane bez widoku lekcji), poprawki kluczy; W1 FULL, 69 KB. Pozostałe odpowiedzi PPLX (G01, G02, G03, G05) i L012 ucięte na ~21 KB — czekam na pełne.
