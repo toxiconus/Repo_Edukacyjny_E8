@@ -59,6 +59,20 @@ stopka: **CHEMIA R03 v1.0** · Woda, roztwory i stężenie procentowe · 2026
 :::
 :::
 
+## 0.5 | Wykład — woda, roztwory i stężenie od zera {#wyklad}
+
+::: karta understand | Wykład — woda, roztwory i stężenie od zera
+Woda to najzwyklejsza i zarazem najbardziej niezwykła substancja na Ziemi. Pokrywa ponad 70% powierzchni planety, stanowi ok. 60% masy ciała człowieka (orientacyjnie) i rozpuszcza tyle substancji, że nazywa się ją **uniwersalnym rozpuszczalnikiem**. Zawdzięcza to budowie cząsteczki: H₂O jest **polarna** — jeden jej koniec (tlen) jest lekko ujemny, drugi (wodory) — lekko dodatni. Dlatego woda „otacza” jony i cząsteczki polarne i odrywa je od siebie: sól i cukier się rozpuszczają, a olej (niepolarny) — nie.
+
+Gdy jedną substancję rozpuścimy w drugiej, powstaje **roztwór** — mieszanina jednorodna. Substancję, którą rozpuszczamy, nazywamy **substancją rozpuszczoną**, a tę, w której rozpuszczamy — **rozpuszczalnikiem**. Nie wszystko tworzy roztwór: piasek w wodzie da **zawiesinę** (opada), olej — **emulsję**, a mleko czy kisiel to **koloidy**. Rozpuszczanie przyspieszają: **mieszanie**, **rozdrobnienie** substancji i **podwyższenie temperatury** — wszystkie zwiększają kontakt cząstek z rozpuszczalnikiem.
+
+Ile substancji się rozpuści? Do pewnej granicy. **Rozpuszczalność** to maksymalna masa substancji, która w danej temperaturze rozpuszcza się w **100 g wody**. Roztwór, w którym więcej się już nie rozpuści, jest **nasycony**; jeśli można dodać więcej — **nienasycony**. Rozpuszczalność większości ciał stałych rośnie z temperaturą, a gazów — maleje (dlatego ciepła woda gazowana szybciej traci bąbelki, a ryby w ciepłej wodzie mają mniej tlenu). Wartości odczytujemy z **krzywych rozpuszczalności**.
+
+Najważniejsze obliczenia tej lekcji dotyczą **stężenia procentowego**: ile gramów substancji jest w 100 g roztworu. Wzór: Cp = mₛ / mᵣ · 100%, gdzie masa roztworu to masa substancji plus masa wody (mᵣ = mₛ + m_w). 20 g soli w 80 g wody to 100 g roztworu o stężeniu 20%. **Rozcieńczanie** (dolewanie wody) zmniejsza stężenie, ale **nie zmienia masy substancji**; **zatężanie** (odparowanie wody) — zwiększa stężenie. Ta jedna obserwacja — „masa substancji rozpuszczonej się nie zmienia” — rozwiązuje większość zadań z rozcieńczania.
+
+Na egzaminie liczy się porządek: wypisz dane, pilnuj, czy masz masę wody, czy roztworu, i na końcu sprawdź, czy wynik ma sens (stężenie po rozcieńczeniu musi być mniejsze).
+:::
+
 ## 1 | Woda — wyjątkowy rozpuszczalnik [[basic:E8]] {#woda}
 
 Cząsteczka wody H₂O jest **polarna** (kątowa, z biegunem ujemnym przy tlenie i dodatnim przy wodorach). Dlatego woda dobrze rozpuszcza **związki jonowe** (sole) i **substancje polarne** (cukier, alkohol), a słabo — niepolarne (olej, benzyna). Zasada: **podobne rozpuszcza podobne**.
@@ -229,6 +243,23 @@ Pełny wykład o mieszaniu, reguła krzyżowa, hydraty i zadania konkursowe — 
 **Stężenie molowe Cm** = liczba moli substancji w 1 dm³ roztworu: **Cm = n ÷ V**, gdzie n = m ÷ M. Przykład: 5,85 g NaCl (M = 58,5 g/mol) w 1 dm³ roztworu → n = 0,1 mol → **Cm = 0,1 mol/dm³**. Przy rozcieńczaniu: C₁ · V₁ = C₂ · V₂. Mol i masa molowa — lekcja R04.
 :::
 
+## 7.5 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pojęcia, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| masa roztworu / masa wody | obie „w gramach roztworu” | mᵣ = mₛ + m_w; we wzorze na Cp w mianowniku jest masa **roztworu** |
+| rozpuszczalność / stężenie | obie to „ile substancji” | rozpuszczalność — g na 100 g **wody**, maksimum w danej temperaturze; stężenie — g na 100 g **roztworu**, dowolny roztwór |
+| nasycony / stężony | brzmią podobnie | nasycony — więcej się nie rozpuści; stężony — dużo substancji (nasycony może być rozcieńczony, gdy rozpuszczalność jest mała) |
+| roztwór / zawiesina | obie to mieszaniny z wodą | roztwór — jednorodny, nie opada; zawiesina — niejednorodna, cząstki opadają |
+| rozpuszczanie / topnienie | „cukier znika”, „lód znika” | rozpuszczanie — w rozpuszczalniku; topnienie — przejście stały → ciecz pod wpływem ciepła |
+| rozcieńczanie / zatężanie | oba zmieniają stężenie | rozcieńczanie — dodajemy wody (Cp maleje); zatężanie — odparowujemy wodę (Cp rośnie); mₛ bez zmian |
+:::
+
+::: karta understand | W skrócie — jak to zastosować w zadaniu
+Zanim wstawisz liczby do wzoru, zrób tabelkę „przed — po” z trzema wierszami: **masa substancji**, **masa wody**, **masa roztworu**. Przy rozcieńczaniu i zatężaniu wiersz „masa substancji” jest taki sam przed i po — to twoja kotwica. Przykład: 200 g roztworu 10% rozcieńczamy 50 g wody. Przed: mₛ = 20 g, mᵣ = 200 g. Po: mₛ = 20 g (bez zmian!), mᵣ = 250 g → Cp = 20 : 250 · 100% = 8%. Kontrola sensu: dolaliśmy wody, więc stężenie spadło — zgadza się.
+:::
+
 ## 8 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
@@ -304,6 +335,52 @@ Pełny wykład o mieszaniu, reguła krzyżowa, hydraty i zadania konkursowe — 
 7. mr = 50 g / 0,20 = 250 g; mw = 250 − 50 = 200 g.
 8. ms = 10 g; mr = 200 g; Cp = 10 / 200 · 100% = 5%.
 9. ms = 0,20 · 300 = 60 g; mr = 300 − 50 = 250 g; Cp = 60 / 250 · 100% = 24%.
+:::
+:::
+
+## 9.5 | Ciekawostki {#ciekawostki-plus}
+
+::: karta extra | Lód pływa — i to ratuje życie
+Woda jako jedna z niewielu substancji ma w stanie stałym mniejszą gęstość niż w ciekłym, dlatego lód pływa. Zamarzające jeziora pokrywają się lodem od góry, a pod nim woda pozostaje ciekła — ryby mogą przetrwać zimę.
+:::
+
+::: karta extra | Morze Martwe
+W Morzu Martwym stężenie soli przekracza 30% (orientacyjnie) — prawie dziesięć razy więcej niż w oceanie. Gęstość wody jest tak duża, że człowiek unosi się na niej bez wysiłku.
+:::
+
+::: karta extra | Dlaczego cola „wybucha” w upale
+Rozpuszczalność gazów maleje z temperaturą. Ciepła butelka napoju gazowanego zawiera dwutlenek węgla, który „chce” uciec — po otwarciu wydziela się gwałtowniej niż z napoju schłodzonego.
+:::
+
+## 9.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — woda, roztwory i stężenie głębiej
+**Roztwór przesycony** — ostrożnie schłodzony roztwór nasycony może zawierać więcej substancji niż wynika z rozpuszczalności; wystarczy kryształek, by nadmiar gwałtownie wykrystalizował (np. ogrzewacze do rąk z octanem sodu). **Krystalizacja z ochłodzenia** — ile substancji wykrystalizuje po ochłodzeniu, liczymy z różnicy rozpuszczalności w dwóch temperaturach (przeliczonej na posiadaną masę wody). **Związek rozpuszczalności ze stężeniem nasyconego roztworu**: Cp = R / (100 + R) · 100%, gdzie R — rozpuszczalność w g/100 g wody. **Hydraty** — niektóre sole krystalizują z wodą (CuSO₄ · 5H₂O); przy liczeniu Cp trzeba uwzględnić wodę zawartą w krysztale.
+:::
+
+::: adv | Zadanie O1 (3 pkt) — stężenie roztworu nasyconego | poziom ambitny (konkurs)
+Rozpuszczalność soli w 20 °C wynosi 36 g/100 g wody. Oblicz stężenie procentowe roztworu nasyconego w tej temperaturze.
+
+::: odp | Pokaż klucz
+mᵣ = 36 + 100 = 136 g (1 pkt); Cp = 36 : 136 · 100% ≈ 26,5% (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — krystalizacja po ochłodzeniu | poziom ambitny (konkurs)
+Rozpuszczalność azotanu(V) potasu: 60 °C — 110 g/100 g wody, 20 °C — 32 g/100 g wody (orientacyjnie). Ile gramów soli wykrystalizuje, gdy ochłodzimy do 20 °C roztwór nasycony w 60 °C zawierający 200 g wody?
+
+::: odp | Pokaż klucz
+w 60 °C rozpuszczone 2 · 110 = 220 g (1 pkt); w 20 °C zostaje rozpuszczone 2 · 32 = 64 g (1 pkt); wykrystalizuje 220 − 64 = 156 g (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — zatężanie | poziom ambitny (konkurs)
+Z 300 g roztworu 5% odparowano 100 g wody. Oblicz nowe stężenie i wyjaśnij, czy wynik ma sens.
+
+::: odp | Pokaż klucz
+mₛ = 15 g (1 pkt); mᵣ po = 200 g → Cp = 7,5% (1 pkt); ma sens — po usunięciu wody stężenie wzrosło, masa soli bez zmian (1 pkt).
 :::
 :::
 
@@ -402,6 +479,10 @@ Krystalizacja | wydzielanie się kryształów z roztworu nasyconego | basic:rozt
 Woda — dlaczego dobry rozpuszczalnik? | cząsteczka polarna; rozpuszcza sole i substancje polarne | understand:rozumienie
 Sól fizjologiczna | 0,9% NaCl | basic:roztwory
 Stężenie molowe | Cm = n ÷ V [mol/dm³] — etap wojewódzki | extra:ambitne
+Cp roztworu nasyconego | R / (100 + R) · 100% | olimpijski:roztwory
+roztwór przesycony | zawiera więcej substancji niż wynika z rozpuszczalności; nietrwały | olimpijski:roztwory
+rozpuszczalność gazów a temperatura | maleje ze wzrostem temperatury | olimpijski:roztwory
+kotwica przy rozcieńczaniu | masa substancji rozpuszczonej się nie zmienia | olimpijski:roztwory
 :::
 
 ## 12 | Słownik {#slownik}
@@ -429,3 +510,9 @@ Efekt Tyndalla :: widoczna smuga światła przechodzącego przez koloid
 - Zawiesina — sączenie; roztwór właściwy — odparowanie lub destylacja; koloid — efekt Tyndalla.
 - Mieszanie, ciepło, rozdrobnienie → szybciej (nie więcej!).
 :::
+
+## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+
+- Dodano: §0.5 wykład „od zera”, nie-myl + mini-wykład „W skrócie”, ciekawostki (3), warstwa olimpijska (Dla olimpijczyka + 3 zadania z kluczami), 4 fiszki olimpijskie. Nic nie usunięto.
+- Poprawione: „System powtórek” — bez minut i odstępów dni (kurs we własnym tempie), jeśli występował.
+
