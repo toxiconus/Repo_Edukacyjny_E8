@@ -100,3 +100,4 @@
 - 2026-10-11: ANG L006 Past Simple/Continuous — ULEPSZ --olimpiada scalone (W1 FULL, 47 KB).
 - 2026-10-11: ANG L005 część 2 scalona — lekcja W1 FULL (60 KB).
 - 2026-10-11: POL G04 liczebnik — sekcje 15–30 z Perplexity (napisane bez widoku lekcji), poprawki kluczy; W1 FULL, 69 KB. Pozostałe odpowiedzi PPLX (G01, G02, G03, G05) i L012 ucięte na ~21 KB — czekam na pełne.
+- 2026-10-11: PPLX „pełne wykłady” G10/G11/G16/G17/S01–S06 — to skrócone kopie istniejących wykładów (nic nowego, nie wprowadzono); ucięte odpowiedzi G01/G02/G03/G05/G06/L012 zapisane w audytach jako części 1.
