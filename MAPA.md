@@ -67,10 +67,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 7 KB
 - `PRZEKAZANIE.md` 4 KB
 
-## biologia/bio/md  (3 pl., 150 KB)
+## biologia/bio/md  (4 pl., 230 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 37 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 54 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 59 KB
+- ⚠`BIO.07.U04.krazenie_krew_odpornosc.md` 80 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
@@ -109,7 +110,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (8 pl., 109 KB)
+## biologia/plany/audyty  (9 pl., 186 KB)
 - `W15_BIOLOGIA_L014-L021_2026-10-09.md` 2 KB
 - `W16_BIOLOGIA_L030-L050_L090_2026-10-09.md` 4 KB
 - `W18_BIOLOGIA_KLUCZE_L014-L021_2026-10-09.md` 2 KB
@@ -118,6 +119,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `W1_perplexity_G12_REV01_REV02_2026-10-10_odp2.md` 14 KB
 - `W1_perplexity_L008_L007_L010_2026-10-10.md` 43 KB
 - `W1_perplexity_L009_L031_L013_2026-10-10.md` 21 KB
+- ⚠`W1_perplexity_U04_krazenie_2026-10-11.md` 78 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB
@@ -156,7 +158,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 110 KB)
+## chemia/che-modular  (13 pl., 111 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -300,10 +302,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 149 KB)
+## chemia/che-modular/engine/src/lekcja  (4 pl., 135 KB)
 - `index.html` 1 KB
-- `lekcja.css` 10 KB
-- `lekcja.js` 9 KB
+- `lekcja.css` 4 KB
+- `lekcja.js` 2 KB
 - ⚠`rozszerzenia.js` 129 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
