@@ -3,15 +3,15 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 157 KB)
+## .  (8 pl., 160 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 12 KB
 - `MAPA.md` 26 KB
-- `PRZEKAZANIE.md` 24 KB
+- `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
-- `WERYFIKACJA.md` 34 KB
+- `WERYFIKACJA.md` 35 KB
 
 ## angielski  (3 pl., 959 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -63,8 +63,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
-## biologia/bio  (2 pl., 7 KB)
-- `BIO_KATALOG.md` 5 KB
+## biologia/bio  (2 pl., 10 KB)
+- `BIO_KATALOG.md` 6 KB
 - `PRZEKAZANIE.md` 3 KB
 
 ## biologia/bio/md  (3 pl., 150 KB)
@@ -76,28 +76,28 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 168 KB)
+## biologia/bio/szablon  (5 pl., 212 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 110 KB
+- ⚠`bio-viz.js` 154 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
-## biologia/html  (37 pl., 8.1 MB)
+## biologia/html  (37 pl., 9.5 MB)
 - (zwinięte; `ls biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 237 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 264 KB
-- ⚠`BIO.01.L001.komorka.html` 290 KB
-- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 235 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 271 KB
-- ⚠`BIO.01.L003.diagnoza.html` 287 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 224 KB
-- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 218 KB
+- ⚠`BIO.01.L001.komorka.html` 334 KB
+- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 280 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 316 KB
+- ⚠`BIO.01.L003.diagnoza.html` 331 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 268 KB
+- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 262 KB
 
 ## biologia/md  (37 pl., 1.1 MB)
 - (zwinięte; `ls biologia/md`) — duże:
 - ⚠`BIO.01.L001.komorka.md` 81 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.md` 75 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
 - ⚠`BIO.01.L003.diagnoza.md` 77 KB
 - ⚠`BIO.02.L012.jak_dna_jest_upakowane_w.md` 55 KB
 - ⚠`BIO.02.L014.jak_komorki_ciala_powstaja_i.md` 61 KB
@@ -156,7 +156,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 108 KB)
+## chemia/che-modular  (13 pl., 109 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -459,7 +459,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (24 pl., 135 KB)
+## chemia/che-modular/tools  (26 pl., 144 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)

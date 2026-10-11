@@ -73,3 +73,5 @@
 - 2026-10-10 16:20 BIO: grafiki kontrola-podzialow (L016), eutrofizacja (L043), homeostaza (L002) z @opis; test przeglądarki 390/900 bez błędów.
 - 2026-10-10 17:00 BIO: grafiki endosymbioza (L001A), hardy-weinberg (L090); istniejące grafiki w powtórkach L021, L032, L044, L050 i kod-genetyczny w L090; ulepszona siec-troficzna (puszczyk bez mylącej strzałki przez wilka, większe węzły i napisy); przebudowane wszystkie lekcje BIO, 0 błędów w przeglądarce.
 - 2026-10-11 06:30 Przekazanie: PRZEKAZANIE.md (repo) i biologia/bio/PRZEKAZANIE.md — stan po 2026-10-10 i kolejka.
+
+- 2026-10-11: F17 (C3) „Równania reakcji i obliczenia z równań” — lekcja gotowa z kanonu F17 + R07–R08 (masowo) + W1 Perplexity (3 tury) i uwagi W1 z 09.10; wykład, 9 mini-wykładów, 5 ciekawostek, 10 zadań konkursowych z punktacją, ćwiczenia A/B/C, warstwa ambitna (mol, gazy, wydajność, jony); 110 równań sprawdzonych skryptem; build OK, test 1280/390 OK.
