@@ -43,7 +43,7 @@ stan: WYPEŁNIONY — Perplexity + GPT-6 (szkielet OLI) + Claude, 2026-10-11; do
 ::: karta understand
 - **Dla każdego składnika ucz się pięciu pól:** gdzie zaczyna się trawienie → jakim enzymem → gdzie się kończy → co powstaje → dokąd idzie po wchłonięciu (krew czy limfa). To jest kręgosłup prawie każdego zadania konkursowego.
 - **Oddzielaj trzy słowa:** trawienie (rozkład), wchłanianie (przejście do krwi lub limfy), wydalanie (usuwanie produktów przemiany materii — to robią nerki i płuca, a nie odbyt).
-- **Sprawdzaj na sobie:** potrzymaj w ustach kawałek suchej bułki przez minutę — zrobi się słodkawa (amylaza wytwarza słodką maltozę); przełknij wodę, stojąc na rękach (z asekuracją!) — perystaltyka działa wbrew grawitacji.
+- **Sprawdzaj na sobie:** potrzymaj w ustach kawałek suchej bułki przez minutę — zrobi się słodkawa (amylaza wytwarza słodką maltozę); obserwuj zwykłe połykanie wody w pozycji siedzącej — perystaltyka przesuwa treść dzięki skurczom mięśni, a nie samej grawitacji.
 :::
 
 ## 0.2 | Diagnoza {#diagnoza}
@@ -76,6 +76,12 @@ Linia ma kilka **stacji**. W **jamie ustnej** zęby rozdrabniają pokarm, a śli
 Jelito cienkie ma do tego świetną budowę: jest długie, a jego wnętrze jest pofałdowane i pokryte milionami **kosmków**, z których każdy jest pokryty komórkami z **mikrokosmkami**. Trzy „piętra” fałdowania dają powierzchnię rzędu kilkudziesięciu metrów kwadratowych. Ściana kosmka to jedna warstwa komórek, a pod nią **naczynia włosowate** i **naczynie chłonne**. Glukoza, aminokwasy, woda i sole idą do **krwi** — i najpierw żyłą wrotną do **wątroby**, która część magazynuje i „sprawdza”, co przyszło. Produkty trawienia **tłuszczów** idą do **limfy**, a z nią do krwi. **Jelito grube** odzyskuje wodę, formuje kał i jest domem bilionów **bakterii**, które rozkładają część błonnika i wytwarzają m.in. witaminę K.
 
 A co z witaminami, solami i wodą? Ich cząsteczki są już małe — **nie wymagają trawienia**, są wchłaniane wprost. **Błonnik** z kolei nie jest trawiony przez nasze enzymy wcale, ale to nie wada: zwiększa objętość treści i pobudza perystaltykę. Z tego wszystkiego wynika praktyczny wniosek dla zdrowia: organizm potrzebuje **różnych** składników — białek do budowy, cukrów i tłuszczów jako paliwa i zapasu, witamin i soli do regulacji, wody jako środowiska reakcji i błonnika dla pracy jelit. Jeśli przez długi czas dostarczasz więcej energii, niż zużywasz, nadmiar odkłada się jako tłuszcz; jeśli brakuje jakiegoś składnika — pojawiają się choroby niedoborowe.
+
+::: karta core | Trzy rzeczy, których nie wolno utożsamiać
+- **Trawienie** zmienia skład chemiczny pokarmu: enzymy rozkładają duże cząsteczki na mniejsze.
+- **Emulgowanie tłuszczu** przez żółć rozbija go na drobne kropelki, zwiększając powierzchnię działania lipazy. Żółć nie jest enzymem i sama nie rozkłada tłuszczu chemicznie.
+- **Wchłanianie** przenosi produkty trawienia przez nabłonek jelita do krwi lub limfy. To inny proces niż samo trawienie.
+:::
 
 ## 2 | Odżywianie, trawienie, wchłanianie [[basic:E8]] {#trawienie}
 
@@ -257,7 +263,7 @@ $$ duża kropla tłuszczu —(żółć)→ wiele drobnych kropelek → większa 
 | glukoza (i inne cukry proste) | krew (naczynia włosowate kosmka) | żyła wrotna → wątroba |
 | aminokwasy | krew | żyła wrotna → wątroba |
 | woda, sole mineralne, witaminy rozpuszczalne w wodzie (C, B) | krew | żyła wrotna → wątroba |
-| glicerol i kwasy tłuszczowe (produkty trawienia tłuszczów) | **limfa** (naczynie chłonne kosmka) | z limfą do krwi w pobliżu serca |
+| glicerol i kwasy tłuszczowe (produkty trawienia tłuszczów) | **limfa** (naczynie chłonne kosmka) — w szkolnym uproszczeniu; dokładniej: długie kwasy tłuszczowe i monoglicerydy jako chylomikrony, a glicerol i krótkie kwasy tłuszczowe częściowo wprost do krwi | z limfą do krwi w pobliżu serca |
 | witaminy A, D, E, K | razem z tłuszczami — limfa | do krwi |
 
 **Sposoby transportu przez nabłonek:**
@@ -278,7 +284,7 @@ Krew z jelit nie wraca prosto do serca — zbiera się w **żyle wrotnej** i pł
 **Jelito grube** (ok. 1,5 m — orientacyjnie): **kątnica** z **wyrostkiem robaczkowym**, **okrężnica**, **odbytnica**. Nie ma kosmków i nie wydziela enzymów trawiennych.
 
 - **wchłania wodę** i część jonów (sód, potas) — zagęszcza treść;
-- **formuje kał** (resztki niestrawione, głównie błonnik, woda, bakterie, złuszczone komórki);
+- **formuje kał** (woda, bakterie, złuszczone komórki i niestrawione resztki, w tym błonnik);
 - jest siedliskiem **mikrobioty jelitowej** — bilionów bakterii, które:
   - rozkładają część **błonnika** (fermentacja — powstają m.in. gazy);
   - wytwarzają **witaminę K** i niektóre witaminy z grupy **B**;
@@ -355,9 +361,9 @@ Tłuszcze są potrzebne do budowy **błon komórkowych**, są skoncentrowanym ź
 
 **Zasady racjonalnego żywienia:**
 
-- jedz **regularnie** (4–5 posiłków dziennie, zależnie od trybu życia), nie objadaj się przed snem;
+- dobierz **regularny rytm posiłków** do wieku, potrzeb, aktywności i samopoczucia — nie ma jednej liczby posiłków odpowiedniej dla wszystkich;
 - jedz **różnorodnie** — żaden produkt nie zawiera wszystkich składników;
-- **warzywa i owoce** w każdym posiłku (połowa talerza; więcej warzyw niż owoców);
+- **często wybieraj warzywa i owoce**; pomocny model talerza zakłada około połowy talerza z warzywami i owocami, z przewagą warzyw;
 - wybieraj **produkty pełnoziarniste** — błonnik, witaminy B, magnez;
 - białko z różnych źródeł: nabiał, ryby, jaja, strączki, chude mięso; **ogranicz** czerwone i przetworzone mięso (wędliny);
 - **pij wodę** — to najlepszy napój; ogranicz słodzone napoje;
@@ -371,10 +377,10 @@ Zalecenia przedstawia się graficznie jako **piramidę zdrowego żywienia i akty
 | Składnik | Energia z 1 g |
 |---|---|
 | białka | ok. 4 kcal (17 kJ) |
-| cukry | ok. 4 kcal (17 kJ) |
+| węglowodany przyswajalne (w tym cukry) | ok. 4 kcal (17 kJ) |
 | tłuszcze | ok. 9 kcal (38 kJ) |
 
-Witaminy, sole, woda i błonnik praktycznie **nie dostarczają energii**. 1 kcal ≈ 4,2 kJ.
+Witaminy, sole mineralne i woda nie dostarczają energii. Błonnik nie jest trawiony przez ludzkie enzymy, choć część może być rozkładana przez bakterie jelitowe i dostarczać niewielkiej ilości energii. 1 kcal ≈ 4,2 kJ.
 
 **Przykład obliczenia.** Porcja jogurtu zawiera 5 g białka, 12 g cukrów i 3 g tłuszczu. Energia: 5·4 + 12·4 + 3·9 = 20 + 48 + 27 = **95 kcal**. Najwięcej energii dają tu cukry, choć na 1 g najwięcej daje tłuszcz.
 
@@ -415,11 +421,11 @@ Gdy ktoś się zakrztusił, ale **kaszle i mówi** — zachęcaj do kaszlu, nie 
 ::: dosw | Doświadczenie 1 — wpływ temperatury na trawienie skrobi przez amylazę ślinową
 Problem: Czy temperatura wpływa na działanie amylazy ślinowej?
 Hipoteza: Amylaza ślinowa trawi skrobię najszybciej w temperaturze ok. 37 °C; w temperaturze wrzenia przestaje działać.
-Sprzęt: 4 probówki, kleik skrobiowy (rozcieńczony), rozcieńczona ślina (każdy uczeń — własna, w czystym kubeczku), płyn Lugola, zlewka z lodem (ok. 0 °C), łaźnia wodna 37 °C, palnik lub czajnik (wrząca woda), pipety, statyw.
-Przebieg: Do probówek A, B, C wlewamy po tyle samo kleiku. Do A i B dodajemy tyle samo śliny; do C — ślinę wcześniej **zagotowaną** i ostudzoną; do D — kleik i tyle samo **wody** zamiast śliny (próba kontrolna). A stawiamy w lodzie, B, C i D — w łaźni 37 °C. Po ok. 15–20 min do każdej probówki dodajemy kroplę płynu Lugola.
-Obserwacja: B (37 °C, ślina) — brak granatowego zabarwienia, płyn żółtobrązowy (barwa Lugola). A (0 °C) — granatowe. C (ślina gotowana) — granatowe. D (woda) — granatowe.
+Sprzęt: 4 probówki, kleik skrobiowy (rozcieńczony), roztwór amylazy przygotowany zgodnie z instrukcją nauczyciela (preferowany zamiast śliny), płyn Lugola, zlewka z lodem (ok. 0 °C), łaźnia wodna 37 °C, palnik lub czajnik (wrząca woda), pipety, statyw.
+Przebieg: Do probówek A, B, C wlewamy po tyle samo kleiku. Do A i B dodajemy tyle samo roztworu amylazy; do C — porcję roztworu wcześniej ogrzaną do wysokiej temperatury zgodnie z instrukcją nauczyciela i ostudzoną; do D — kleik i tyle samo **wody** zamiast śliny (próba kontrolna). A stawiamy w lodzie, B, C i D — w łaźni 37 °C. Po ok. 15–20 min do każdej probówki dodajemy kroplę płynu Lugola.
+Obserwacja: B (37 °C, amylaza) — brak granatowego zabarwienia, płyn żółtobrązowy (barwa Lugola). A (0 °C) — granatowe. C (amylaza ogrzana do wysokiej temperatury) — granatowe. D (woda) — granatowe.
 Wniosek: Skrobia została strawiona tylko w B — amylaza działa najlepiej w temperaturze ciała. Niska temperatura **hamuje** enzym (po ogrzaniu A do 37 °C skrobia też zostanie strawiona), a wysoka **niszczy** go nieodwracalnie (denaturacja). Próba D dowodzi, że skrobia nie rozkłada się sama w wodzie — zmiana w B jest skutkiem działania śliny.
-BHP: każdy używa tylko własnej śliny, probówek nie wąchamy ani nie dotykamy ustami; uwaga na wrzącą wodę i palnik; płyn Lugola barwi skórę i ubrania — rękawiczki.
+BHP: roztwór amylazy przygotowuje nauczyciel (jeśli używa się śliny — tylko własnej, w czystym kubeczku); probówek nie wąchamy ani nie dotykamy ustami; uwaga na wrzącą wodę i palnik; płyn Lugola barwi skórę i ubrania — rękawiczki.
 :::
 
 ::: karta core | Jak dobrze zaplanować doświadczenie z enzymem
@@ -845,7 +851,7 @@ BMI | masa [kg] : wzrost² [m²]; u nastolatków — siatki centylowe | basic:zy
 ::: slownik
 Trawienie :: rozkład złożonych składników pokarmu na proste cząsteczki zdolne do wchłonięcia
 Wchłanianie :: przechodzenie produktów trawienia przez ścianę przewodu pokarmowego do krwi lub limfy
-Defekacja :: usuwanie kału (niestrawionych resztek) przez odbyt
+Defekacja :: usuwanie kału przez odbyt; kał zawiera m.in. wodę, bakterie, złuszczone komórki i niestrawione resztki, w tym błonnik
 Enzym :: białko przyspieszające określoną reakcję chemiczną, samo się nie zużywa
 Swoistość enzymu :: działanie tylko na określony substrat lub rodzaj wiązania
 Denaturacja :: nieodwracalna zmiana budowy białka pod wpływem np. wysokiej temperatury, silnego kwasu
@@ -957,5 +963,7 @@ Układ pokarmowy i odżywianie
 - Schematy w blokach kodu (```text) zastąpione tabelami, równaniami słownymi i grafikami.
 
 **Dodane:** wykład od zera (linia demontażu), mini-wykłady (po co trawić, denaturacja, dlaczego żołądek nie trawi sam siebie, trzy piętra powierzchni, biegunka i odwodnienie, „zero tłuszczu”), proenzymy, żyła wrotna i chylomikrony, enzymy rąbka szczoteczkowego, budowa zęba i uzębienie, tabele witamin i pierwiastków ze skutkami niedoborów, obliczanie energii i BMI (z zastrzeżeniem o siatkach centylowych), zatrucia pokarmowe, WZW A/B/C, rak jelita grubego, nietolerancja laktozy, celiakia, pierwsza pomoc przy zakrztuszeniu, doświadczenie z amylazą i temperaturą (podstawa programowa) z planowaniem, próba Trommera, zadania 17–18 i B1–B4, ciekawostki (Beaumont, Marshall i *H. pylori*, mikrobiota, powierzchnia jelita, szkliwo, laktaza), mity, mnemotechniki (urwane w materiale — napisane od nowa), grafiki `droga-pokarmu`, `kosmek-jelitowy`, `enzym-warunki`.
+
+**Poprawki użytkownika (wersja „ulepszona” HTML, 2026-10-11) — przyjęte:** bezpieczniejsze ćwiczenie z połykaniem, roztwór amylazy zamiast śliny w doświadczeniu, skład kału, elastyczny rytm posiłków i model talerza, „węglowodany przyswajalne”, energia z błonnika przez bakterie, monoglicerydy i chylomikrony w kosmku (krótkie kwasy tłuszczowe i glicerol bezpośrednio do krwi), karta „Trzy rzeczy, których nie wolno utożsamiać”, dopracowany wygląd (przeniesiony do motywu BIO), autoodtwarzanie grafik (wprowadzone dla wszystkich animacji jako `BIO.fx.auto`).
 
 **Nieprzyjęte:** kod „B2b” z propozycji — lekcja dostała kod U03 w grupie BIO.07 (pkt III.3); szkielet OLI pozostaje jako materiał źródłowy. Przypisy-cytaty Perplexity ([1]–[6]) pominięte. Zdanie „glikogen i celuloza jako cukry złożone człowieka” — celuloza zostawiona jako składnik błonnika (człowiek jej nie trawi).

@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 162 KB)
+## .  (8 pl., 163 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 12 KB
@@ -11,7 +11,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
-- `WERYFIKACJA.md` 36 KB
+- `WERYFIKACJA.md` 37 KB
 
 ## angielski  (3 pl., 959 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -63,26 +63,27 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
-## biologia/bio  (2 pl., 13 KB)
-- `BIO_KATALOG.md` 9 KB
-- `PRZEKAZANIE.md` 4 KB
+## biologia/bio  (2 pl., 15 KB)
+- `BIO_KATALOG.md` 10 KB
+- `PRZEKAZANIE.md` 5 KB
 
-## biologia/bio/md  (7 pl., 410 KB)
+## biologia/bio/md  (8 pl., 483 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 37 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 54 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 59 KB
 - `BIO.07.H01.homeostaza.md` 45 KB
 - `BIO.07.U01.skora_i_uklad_ruchu.md` 50 KB
-- ⚠`BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` 85 KB
+- ⚠`BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` 87 KB
 - ⚠`BIO.07.U04.krazenie_krew_odpornosc.md` 80 KB
+- ⚠`BIO.07.U06.oddychanie_i_wydalanie.md` 71 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 287 KB)
+## biologia/bio/szablon  (5 pl., 313 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 228 KB
+- ⚠`bio-viz.js` 255 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
@@ -154,7 +155,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 114 KB)
+## chemia/che-modular  (13 pl., 115 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -608,7 +609,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada  (4 pl., 117 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
-- `PRIORYTETY.md` 10 KB
+- `PRIORYTETY.md` 11 KB
 - `PRZEKAZANIE.md` 6 KB
 
 ## olimpiada/do_uzupelnienia  (12 pl., 73 KB)
@@ -822,9 +823,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lekcja.js` 4 KB
 - `ulepszenia.css` 12 KB
 
-## szablon/motywy  (5 pl., 20 KB)
+## szablon/motywy  (5 pl., 24 KB)
 - `ang.css` 2 KB
-- `bio.css` 12 KB
+- `bio.css` 15 KB
 - `che.css` 2 KB
 - `oli.css` 3 KB
 - `pol.css` 2 KB

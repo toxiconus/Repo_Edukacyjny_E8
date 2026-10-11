@@ -40,6 +40,11 @@ Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko
 | wdech-wydech | klatka piersiowa: przepona, żebra, płuca; animacja wdechu i wydechu, objętość klatki i ciśnienie w płucach, kroki obu faz | — | U06 |
 | wymiana-gazowa | dyfuzja O₂ i CO₂: tryb pęcherzyk–krew i krew–komórki, płynące erytrocyty, słupki ilości gazów, klik = opis (hemoglobina, transport CO₂) | tryb="pl"\|"tk" | U06 |
 | nefron | nefron: kłębuszek, torebka, kanalik, pętla, przewód zbiorczy, kapilary; animacja drogi 6 substancji (filtracja / wchłanianie zwrotne / mocz), przełącznik ADH z ilością i barwą moczu | — | U06 |
+| luk-odruchowy | łuk odruchowy cofnięcia ręki: receptor, neuron czuciowy (zwój), pośredniczący w istocie szarej, ruchowy, mięsień, droga do mózgu; „krok” z impulsem; przełącznik przerwania drogi czuciowej/ruchowej | — | U08 |
+| oko-akomodacja | przekrój oka (klik = opis), akomodacja blisko/daleko z promieniami, krótko- i dalekowzroczność z korekcją okularami | tryb="budowa"\|"akom"\|"wady" | U08 |
+| ucho-droga | ucho zewnętrzne, środkowe, wewnętrzne (klik = opis), „krok” prowadzi dźwięk od małżowiny do nerwu | — | U08 |
+
+**Autoodtwarzanie (`BIO.fx.auto(el, krok, ms, {now})`, od 2026-10-11, decyzja użytkownika):** animacje grafik procesowych odtwarzają się same, gdy grafika jest widoczna na ekranie (IntersectionObserver, karta przeglądarki aktywna); kliknięcie w grafikę zatrzymuje autoodtwarzanie, przycisk „▶ odtwarzaj automatycznie” wznawia; przy `prefers-reduced-motion` domyślnie wyłączone. Rodzaj ruchu dobierać do logiki procesu: **do przodu i od początku** (droga pokarmu, łuk, ucho, krążenie, sprzężenie, fazy podziału, endosymbioza, temperatura enzymu — denaturacja nieodwracalna) albo **tam i z powrotem** (oddech, zginanie łokcia, płuca ↔ tkanki). Każda nowa animowana grafika ma wołać `BIO.fx.auto`.
 | wirus-bakteria | wirus (kapsyd, DNA/RNA, osłonka) obok bakterii (ściana, błona, rybosomy, nukleoid, plazmid, rzęska); klik = opis; antybiotyki | — | REV02 |
 | przeobrazenie-plaza | rozwój złożony żaby: skrzek → kijanka → kijanka z kończynami → młoda żaba → żaba; suwak, oddychanie i środowisko | etap="0–4" | REV02 |
 | przeobrazenie-owadow | przeobrażenie zupełne (motyl, z poczwarką) i niezupełne (konik polny, bez poczwarki); klik = opis etapu | — | REV02 |

@@ -74,6 +74,18 @@ fx.info=function(root,box,map,first){
     el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(el.getAttribute('data-k'),el)}})});
   if(first)show(first,root.querySelector('[data-k="'+first+'"]'));return show};
 fx.infoBox=function(txt){return H('div','bv-info',txt||'Kliknij element grafiki, aby zobaczyć wyjaśnienie.')};
+/* autoodtwarzanie: działa tylko, gdy grafika jest widoczna; zatrzymuje się po kliknięciu w grafikę; przycisk wznawia (2026-10-11) */
+fx.auto=function(el,step,ms,o){o=o||{};var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,on=!rm,vis=false,tm=null;
+  var bar=H('div','bv-tools bv-auto'),b=H('button','bv-btn');b.type='button';
+  function lab(){b.textContent=on?'⏸ zatrzymaj animację':'▶ odtwarzaj automatycznie';b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('on',on)}
+  function halt(){if(tm){clearInterval(tm);tm=null}}
+  function run(){if(tm||!on||!vis||document.hidden)return;if(o.now)step();tm=setInterval(function(){if(document.hidden||!vis){halt();return}step()},ms)}
+  b.onclick=function(){on=!on;lab();if(on)run();else halt()};bar.appendChild(b);el.insertBefore(bar,el.firstChild);lab();
+  function user(e){if(bar.contains(e.target)||!on)return;on=false;halt();lab()}
+  el.addEventListener('pointerdown',user,true);el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')user(e)},true);
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(e){vis=e.isIntersecting;if(vis)run();else halt()})},{threshold:.35}).observe(el);else{vis=true;run()}
+  document.addEventListener('visibilitychange',function(){if(document.hidden)halt();else run()});
+  return {stop:function(){on=false;halt();lab()}}};
 /* przełącznik przycisków (jeden aktywny) */
 fx.toggle=function(btns,i){btns.forEach(function(b,j){b.classList.toggle('on',j===i);b.setAttribute('aria-pressed',j===i?'true':'false')})};
 
@@ -757,7 +769,7 @@ mount:function(el,o){var tryb=o.start==='mejoza'?'mejoza':'mitoza',k=0,M='#d6454
    lab.innerHTML='krok '+(k+1)+' / '+L.length;prev.disabled=k===0;next.disabled=k===L.length-1;
    var cz=function(n){return n===4?46:n===8?92:n===2?23:n};
    out.innerHTML='<b>'+e[0]+'</b><span>'+e[1]+'</span><span>W jednej komórce: <strong>'+e[2]+'</strong> chromosomy, <strong>'+e[3]+'</strong> chromatyd · ploidia: <strong>'+e[4]+'</strong>. U człowieka: '+cz(e[2])+' chromosomów, '+cz(e[3])+' chromatyd.</span>'}
-  draw()}});
+  BIO.fx.auto(el,function(){if(k>=ST[tryb].length-1)k=0;else k++;draw()},2800);draw()}});
 
 BIO.define('dobor-naturalny',{opis:'Symulacja doboru naturalnego: ćmy jasne i ciemne na jasnej lub ciemnej korze (drapieżnik zjada lepiej widoczne) albo bakterie wrażliwe i oporne + antybiotyk; pokolenia, wykres udziału cechy',
 mount:function(el,o){var sc=o.start==='bakterie'?'bakterie':'cmy',tlo='ciemne',N=40,pop=[],hist=[],gen=0,seed=7;
@@ -1045,7 +1057,7 @@ mount:function(el,o){
    ['Rozmiar','Wielkość zbliżona do bakterii (ok. 1–10 µm).','pasuje do pochodzenia od bakterii']].forEach(function(a){
     arg.appendChild(H('div','bv-tile','<h6>'+a[0]+'</h6><p><strong>Obserwacja:</strong> '+a[1]+'</p><p><strong>Wniosek:</strong> '+a[2]+'.</p>'))});
   var u=H('p','bv-score','Argumenty wspierają teorię (dziś powszechnie przyjętą), ale to wnioskowanie z wielu obserwacji, a nie „bezpośrednie nagranie” sprzed ok. 1,5–2 mld lat (orientacyjnie).');u.style.fontWeight='600';el.appendChild(u);
-  rys()}});
+  BIO.fx.auto(el,function(){k=(k+1)%4;rys()},3000);rys()}});
 
 BIO.define('hardy-weinberg',{opis:'Prawo Hardy’ego–Weinberga: suwak częstości allelu recesywnego q (albo częstości chorych q²), obliczenia p = 1 − q, p², 2pq, q² krok po kroku, słupki genotypów AA, Aa, aa w populacji 10 000 osób; przykład choroby recesywnej (np. 1 chory na 2500 → ok. 1 nosiciel na 25)',
 mount:function(el,o){
@@ -1113,7 +1125,7 @@ mount:function(el,o){
   tools.appendChild(btn('obieg mały (płucny)',function(){obieg(MALY,'Obieg mały (płucny)','prawa komora → tętnice płucne → naczynia włosowate płuc → żyły płucne → lewy przedsionek. Cel: <strong>wymiana gazowa</strong> — krew pozbywa się CO₂ i zabiera O₂.')}));
   tools.appendChild(btn('obieg duży (ustrojowy)',function(){obieg(DUZY,'Obieg duży (ustrojowy)','lewa komora → aorta → tętnice → naczynia włosowate narządów → żyły → żyły główne → prawy przedsionek. Cel: <strong>zaopatrzenie tkanek</strong> w O₂ i składniki odżywcze, odbiór CO₂ i zbędnych produktów.')}));
   tools.appendChild(btn('od początku',function(){i=-1;dim(null);info.className='bv-info';info.textContent='Kliknij element schematu albo przejdź drogę krwi przyciskiem „krok”.'}));
-  if(o.start==='maly')tools.children[1].click();else if(o.start==='duzy')tools.children[2].click()}});
+  if(o.start==='maly')tools.children[1].click();else if(o.start==='duzy')tools.children[2].click();BIO.fx.auto(el,krok,2000,{now:1})}});
 
 /* ---- grupy krwi: zgodność dawca → biorca (ABO + Rh), aglutynacja (2026-10-11) ---- */
 BIO.define('transfuzja',{opis:'Zgodność krwi w modelu szkolnym: wybierz grupę dawcy i biorcy (ABO, Rh); antygeny na krwinkach dawcy vs przeciwciała w osoczu biorcy → zgodna / aglutynacja; tabela wszystkich par',
@@ -1181,7 +1193,7 @@ mount:function(el,o){
    info.className='bv-info';
    info.innerHTML=step<0?'<b>'+s.n+' — '+(ujem?'ujemne sprzężenie zwrotne':'dodatnie sprzężenie zwrotne')+'</b>Kliknij „krok”, aby przejść pętlę: '+N.join(' → ')+'.':
     step<5?'<b>'+(step+1)+'. '+N[step]+'</b>'+s.k[step]:'<b>Cała pętla</b>'+s.k.map(function(t,i){return '<strong>'+N[i]+':</strong> '+t}).join('<br>')+(ujem?'<br>Odpowiedź <strong>zmniejsza</strong> odchylenie — parametr wraca do normy.':'<br>Odpowiedź <strong>wzmacnia</strong> zmianę, aż proces się zakończy.')}
-  draw()}});
+  BIO.fx.auto(el,function(){step=(step+1)%6;draw()},2200,{now:1});draw()}});
 
 /* ---- glukoza po posiłku: osoba zdrowa a osoba z cukrzycą (dane przykładowe) ---- */
 BIO.define('glukoza-wykres',{opis:'Wykres stężenia glukozy we krwi po posiłku (dane przykładowe): osoba zdrowa vs osoba z cukrzycą; przełączniki serii, punkty z wartościami, zakres prawidłowy na czczo',
@@ -1264,7 +1276,7 @@ mount:function(el,o){var kat=+(o.kat||60),tl=H('div','bv-tools'),box=H('div'),in
   info.className='bv-info';info.innerHTML=ruch<0?'<b>Zginanie przedramienia</b><strong>Biceps kurczy się</strong> (skraca się i grubieje), ścięgnem pociąga przedramię w górę; <strong>triceps rozluźnia się</strong> i daje się rozciągnąć.':
    ruch>0?'<b>Prostowanie przedramienia</b><strong>Triceps kurczy się</strong> i pociąga wyrostek łokciowy; <strong>biceps rozluźnia się</strong>. Mięsień umie tylko ciągnąć — dlatego do ruchu w przeciwną stronę potrzebny jest drugi mięsień.':
    '<b>Przesuń suwak</b>Zginaj i prostuj łokieć: obserwuj, który mięsień się skraca (ciemniejszy kolor), a który rozluźnia. Kości to dźwignie, staw — punkt podparcia, mięśnie — siła.'}
- r.oninput=function(){var v=+r.value;ruch=v<prev?-1:v>prev?1:0;prev=v;kat=v;draw()};draw()}});
+ r.oninput=function(){var v=+r.value;ruch=v<prev?-1:v>prev?1:0;prev=v;kat=v;draw()};var dir=-1;BIO.fx.auto(el,function(){var v=kat+dir*3;if(v<=30||v>=175){v=Math.max(30,Math.min(175,v));dir=-dir}ruch=dir;prev=v;kat=v;r.value=v;draw()},70);draw()}});
 
 /* ---- układ pokarmowy: narządy, droga pokarmu, gdzie trawione są składniki (2026-10-11, lekcja BIO.07.U03) ---- */
 BIO.define('droga-pokarmu',{opis:'Schemat układu pokarmowego: przewód pokarmowy (jama ustna, gardło, przełyk, żołądek, dwunastnica, jelito cienkie, jelito grube z wyrostkiem, odbytnica, odbyt) i gruczoły (ślinianki, wątroba z pęcherzykiem żółciowym, trzustka); kliknij narząd, „krok” prowadzi kęs drogą pokarmu, wybór składnika podświetla narządy, w których jest trawiony i wchłaniany',
@@ -1322,7 +1334,7 @@ mount:function(el,o){
  var bk=btn('krok ▶ droga pokarmu',function(){cur=null;rysujSkl();podswietl(null);krok=(krok+1)%DROGA.length;var k=DROGA[krok],p=POS[k];
    kes.style.opacity=1;kes.style.transform='translate('+p[0]+'px,'+p[1]+'px)';show(k,sv.querySelector('[data-k="'+k+'"]'));info.querySelector('b').textContent=(krok+1)+'/'+DROGA.length+' · '+M[k][0]});
  var br=btn('od początku',function(){krok=-1;kes.style.opacity=0;podswietl(null);cur=null;rysujSkl();info.className='bv-info';info.textContent='Kliknij „krok”, aby poprowadzić kęs od jamy ustnej do odbytu.'});
- tl.appendChild(bk);tl.appendChild(br);rysujSkl()}});
+ tl.appendChild(bk);tl.appendChild(br);rysujSkl();BIO.fx.auto(el,function(){bk.click()},1900,{now:1})}});
 
 /* ---- kosmek jelitowy: budowa i droga wchłanianych substancji do krwi lub limfy ---- */
 BIO.define('kosmek-jelitowy',{opis:'Kosmek jelitowy w przekroju podłużnym: nabłonek jednowarstwowy z mikrokosmkami, sieć naczyń włosowatych (krew dopływająca i odpływająca do żyły wrotnej), centralne naczynie chłonne; wybór substancji (glukoza, aminokwasy, produkty trawienia tłuszczów, woda) pokazuje animowaną drogę do krwi albo limfy',
@@ -1345,7 +1357,7 @@ mount:function(el,o){
  sv.appendChild(T(436,320,'cała ściana kosmka:',{s:16,w:600,a:'start',f:'var(--viz-mut)'}));sv.appendChild(T(436,338,'1 warstwa komórek',{s:16,w:600,a:'start',f:'var(--viz-mut)'}));
  var R={glukoza:['Glukoza','#e08a1e','M40 190 L130 190 L168 190 L168 140 C168 100 292 100 292 140 L292 410','krew','Po trawieniu skrobi glukoza przechodzi przez nabłonek (w dużej części <strong>transportem aktywnym</strong> — z nakładem energii) do <strong>naczyń włosowatych</strong>, a dalej <strong>żyłą wrotną do wątroby</strong>, która część zmagazynuje jako glikogen.'],
   amino:['Aminokwasy','#3a9a4a','M40 280 L130 280 L168 280 L168 140 C168 100 292 100 292 140 L292 410','krew','Produkty trawienia białek — <strong>aminokwasy</strong> — są pobierane przez komórki nabłonka (głównie transportem aktywnym) i trafiają do <strong>krwi</strong>, potem żyłą wrotną do wątroby. Komórki ciała budują z nich własne białka.'],
-  tluszcz:['Produkty trawienia tłuszczów','#c8a400','M40 240 L130 240 L230 240 L230 410','limfa','<strong>Glicerol i kwasy tłuszczowe</strong> wnikają do komórek nabłonka, gdzie znów powstaje z nich tłuszcz, pakowany w kuleczki z białkiem (chylomikrony — poziom ambitny). Są za duże dla naczyń włosowatych, więc trafiają do <strong>naczynia chłonnego (limfy)</strong>, a z limfą — do krwi w pobliżu serca, z pominięciem wątroby.'],
+  tluszcz:['Produkty trawienia tłuszczów','#c8a400','M40 240 L130 240 L230 240 L230 410','limfa','Długołańcuchowe kwasy tłuszczowe i monoglicerydy wnikają do komórek nabłonka, gdzie są składane ponownie w tłuszcze i pakowane z białkami w chylomikrony (poziom ambitny). Te cząstki trafiają najpierw do <strong>naczynia chłonnego (limfy)</strong>, a następnie do krwi. Część krótkich kwasów tłuszczowych i glicerol może przechodzić bezpośrednio do krwi.'],
   woda:['Woda i sole mineralne','#3b8fd0','M40 330 L130 330 L168 330 L168 140 C168 100 292 100 292 140 L292 410','krew','Woda przechodzi biernie (osmoza) za wchłanianymi substancjami, jony — biernie i aktywnie. Trafiają do <strong>krwi</strong>. Witaminy rozpuszczalne w wodzie też idą do krwi, a <strong>A, D, E, K</strong> — razem z tłuszczami do limfy.']};
  var dot=S('circle',{r:10,fill:'#e08a1e',stroke:'#fff','stroke-width':2.5,opacity:0}),trasa=S('path',{d:'M0 0',fill:'none',stroke:'none'});dot.style.pointerEvents='none';sv.appendChild(trasa);sv.appendChild(dot);
  box.appendChild(sv);
@@ -1353,13 +1365,13 @@ mount:function(el,o){
   nablonek:['Nabłonek kosmka','<strong>Jedna warstwa komórek</strong> — krótka droga do naczyń. Komórki pobierają substancje dyfuzją i <strong>transportem aktywnym</strong> (wymaga energii, działa nawet wbrew różnicy stężeń). Powierzchnię zwiększają trzy „piętra”: fałdy okrężne → kosmki (ok. 1 mm) → <strong>mikrokosmki</strong> na każdej komórce.'],
   mikro:['Mikrokosmki','Mikroskopijne wypustki błony komórek nabłonka („rąbek szczoteczkowy”). Wielokrotnie zwiększają powierzchnię; w ich błonie siedzą też enzymy kończące trawienie (np. maltaza, laktaza, peptydazy).'],
   krew:['Naczynia włosowate','Sieć kapilar w każdym kosmku: krew dopływa tętniczką, odbiera <strong>glukozę, aminokwasy, wodę, sole i witaminy rozpuszczalne w wodzie</strong> i odpływa do <strong>żyły wrotnej → wątroby</strong>.'],
-  chlonne:['Naczynie chłonne (limfatyczne)','Ślepo zakończone naczynie w środku kosmka. Odbiera <strong>produkty trawienia tłuszczów</strong> (i witaminy A, D, E, K). Limfa z jelit płynie do przewodu piersiowego i uchodzi do krwi w żyle podobojczykowej.']});
+  chlonne:['Naczynie chłonne (limfatyczne)','Ślepo zakończone naczynie w środku kosmka. Odbiera przede wszystkim <strong>chylomikrony</strong> zawierające tłuszcze długołańcuchowe oraz witaminy A, D, E, K. Limfa z jelit płynie do przewodu piersiowego i uchodzi do krwi w żyle podobojczykowej.']});
  var anim=0,red_m=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,cur=null;
  function jedz(k){var r=R[k];cur=k;seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),k,jedz);cancelAnimationFrame(anim);trasa.setAttribute('d',r[2]);dot.setAttribute('fill',r[1]);dot.setAttribute('opacity',1);
   info.className='bv-info';info.innerHTML='<b>'+r[0]+' → '+r[3]+'</b>'+r[4];var L=trasa.getTotalLength(),t0=null,D=2600;
   function f(ts){if(t0===null)t0=ts;var q=Math.min(1,(ts-t0)/D),p=trasa.getPointAtLength(L*q);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y);if(q<1)anim=requestAnimationFrame(f)}
   if(red_m){var p=trasa.getPointAtLength(L);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y)}else anim=requestAnimationFrame(f)}
- seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),null,jedz)}});
+ seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),null,jedz);var ak=Object.keys(R),ai=-1;BIO.fx.auto(el,function(){ai=(ai+1)%ak.length;jedz(ak[ai])},3600,{now:1})}});
 
 /* ---- enzymy: aktywność a temperatura i pH; probówka z płynem Lugola (doświadczenie z amylazą) ---- */
 BIO.define('enzym-warunki',{opis:'Wykres aktywności enzymów (model szkolny, dane orientacyjne): tryb temperatury (amylaza ślinowa, 0–80 °C, optimum ok. 37 °C, denaturacja powyżej ok. 50 °C) i tryb pH (pepsyna ok. 2, amylaza ślinowa ok. 7, trypsyna ok. 8); suwak, odczyt aktywności i barwa próby z płynem Lugola po inkubacji skrobi z amylazą',
@@ -1397,7 +1409,7 @@ mount:function(el,o){
   if(tryb==='T')t+=val<15?'Zimno <strong>spowalnia</strong> enzym, ale go nie niszczy — po ogrzaniu do 37 °C amylaza znów działa.':val<=42?'Okolice <strong>temperatury ciała</strong> — optimum dla enzymów człowieka (model szkolny).':val<55?'Powyżej optimum enzym zaczyna się <strong>denaturować</strong> — białko traci kształt, aktywność gwałtownie spada.':'Enzym <strong>zdenaturowany</strong> (jak ugotowana ślina w doświadczeniu) — po ochłodzeniu <strong>nie wraca</strong> do działania. Skrobia zostaje → Lugol granatowy.';
   else t+=val<4?'Środowisko jak w <strong>żołądku</strong>: pepsyna działa najlepiej, amylaza ślinowa prawie stoi — dlatego trawienie skrobi zatrzymuje się po połknięciu kęsa (aż do wymieszania kęsa z kwasem).':val<7.6?'Okolice pH obojętnego — jak w <strong>jamie ustnej</strong>: optimum amylazy ślinowej.':'Lekko zasadowe — jak w <strong>jelicie cienkim</strong> po zobojętnieniu treści przez wodorowęglany z trzustki: optimum trypsyny; pepsyna nie działa.';
   info.className='bv-info';info.innerHTML=t+'<br><small>Kształty krzywych są orientacyjne — każdy enzym ma swoje optimum.</small>'}
- r.oninput=function(){v[tryb]=+r.value;draw()};narz();draw()}});
+ r.oninput=function(){v[tryb]=+r.value;draw()};narz();draw();BIO.fx.auto(el,function(){var mx=tryb==='T'?80:11,mn=tryb==='T'?0:1,d=tryb==='T'?2:0.5;v[tryb]=v[tryb]+d>mx?mn:v[tryb]+d;r.value=v[tryb];draw()},tryb==='T'?160:500)}});
 
 /* ---- wentylacja płuc: wdech i wydech, przepona i żebra (2026-10-11, lekcja BIO.07.U06) ---- */
 BIO.define('wdech-wydech',{opis:'Klatka piersiowa od przodu: tchawica, oskrzela, dwa płuca, żebra i kopuła przepony; przyciski wdech / wydech / oddychaj animują obniżanie i spłaszczanie przepony, unoszenie żeber, powiększanie płuc i kierunek przepływu powietrza; wskaźnik objętości klatki i ciśnienia w płucach względem atmosferycznego',
@@ -1432,7 +1444,7 @@ mount:function(el,o){
   if(t!==cel)raf=requestAnimationFrame(krok);else if(auto){setTimeout(function(){if(!auto)return;cel=cel?0:1;kier=cel?1:-1;raf=requestAnimationFrame(krok)},500)}}
  function idz(c){cancelAnimationFrame(raf);cel=c;kier=c>t?1:c<t?-1:0;if(red){t=c;draw();return}raf=requestAnimationFrame(krok)}
  var b1=btn('wdech',function(){auto=false;b3.classList.remove('on');idz(1)}),b2=btn('wydech',function(){auto=false;b3.classList.remove('on');idz(0)}),b3=btn('▶ oddychaj',function(){auto=!auto;b3.classList.toggle('on',auto);if(auto)idz(t>0.5?0:1)});
- [b1,b2,b3].forEach(function(b){tl.appendChild(b)});draw()}});
+ [b1,b2].forEach(function(b){tl.appendChild(b)});draw();BIO.fx.auto(el,function(){idz(t>0.5?0:1)},2300,{now:1})}});
 
 /* ---- wymiana gazowa w płucach i w tkankach (dyfuzja zgodnie z różnicą stężeń) ---- */
 BIO.define('wymiana-gazowa',{opis:'Wymiana gazowa: tryb „w płucach” — pęcherzyk płucny nad naczyniem włosowatym, krew dopływa odtlenowana i odpływa utlenowana, tlen dyfunduje do krwi, CO₂ do pęcherzyka; tryb „w tkankach” — komórki nad naczyniem, kierunki odwrotne; słupki porównują ilość O₂ i CO₂ po obu stronach bariery; płynące erytrocyty',
@@ -1464,7 +1476,7 @@ mount:function(el,o){
    o2:['Tlen','Przechodzi <strong>dyfuzją</strong> z miejsca, gdzie jest go więcej, tam, gdzie jest go mniej: '+(pl?'z pęcherzyka do krwi.':'z krwi do komórek.')+' Komórka nie „wciąga” tlenu — wystarczy różnica stężeń, którą utrzymuje wentylacja i ciągłe zużycie tlenu w komórkach.'],
    co2:['Dwutlenek węgla','Też dyfunduje zgodnie z różnicą stężeń: '+(pl?'z krwi do pęcherzyka, a potem z wydychanym powietrzem na zewnątrz — płuca są więc także narządem wydalniczym.':'z komórek (gdzie powstaje) do krwi, która zaniesie go do płuc.')]},null);
   function film(){off=(off+1.2)%60;clr(ery);for(var x=-60+off;x<420;x+=60){ery.appendChild(S('ellipse',{cx:x,cy:306,rx:14,ry:9,fill:'#a8231c',opacity:.75}))}if(!red)raf=requestAnimationFrame(film)}film()}
- draw()}});
+ draw();BIO.fx.auto(el,function(){tryb=tryb==='pl'?'tk':'pl';draw()},6000)}});
 
 /* ---- nefron: filtracja, wchłanianie zwrotne, mocz; ADH ---- */
 BIO.define('nefron',{opis:'Schemat nefronu: tętniczka doprowadzająca, kłębuszek w torebce Bowmana, kanalik nerkowy (kręty, pętla nefronu), przewód zbiorczy, naczynia włosowate oplatające kanalik; wybór substancji (glukoza, aminokwasy, białka i krwinki, mocznik, sole, woda) animuje jej drogę — przefiltrowana czy nie, odzyskana do krwi czy w moczu; przełącznik ADH zmienia ilość i barwę moczu',
@@ -1502,12 +1514,135 @@ mount:function(el,o){
   info.className='bv-info';info.innerHTML='<b>'+r[0]+'</b>'+r[3];var L=trasa.getTotalLength(),t0=null,D=3200;
   function f(ts){if(t0===null)t0=ts;var q=Math.min(1,(ts-t0)/D),p=trasa.getPointAtLength(L*q);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y);if(q<1)raf=requestAnimationFrame(f)}
   if(red){var p=trasa.getPointAtLength(L);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y)}else raf=requestAnimationFrame(f)}
- seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),null,jedz);rysujAdh();strzalki();
+ seg(tl,Object.keys(R).map(function(x){return[x,R[x][0]]}),null,jedz);rysujAdh();strzalki();var ak=Object.keys(R),ai=-1;BIO.fx.auto(el,function(){ai=(ai+1)%ak.length;if(ai===0){adh=1-adh;rysujAdh();strzalki()}jedz(ak[ai])},4200,{now:1});
  BIO.fx.info(sv,info,{tetn:['Tętniczka doprowadzająca','Krew z tętnicy nerkowej wpływa do kłębuszka pod dość wysokim ciśnieniem — to ono „wyciska” płyn do torebki. Przez nerki przepływa ok. 1 litra krwi na minutę (orientacyjnie).'],
   klebek:['Kłębuszek nerkowy','Kłębek naczyń włosowatych — tu zachodzi <strong>filtracja</strong>: woda i małe cząsteczki (glukoza, aminokwasy, sole, mocznik) przechodzą do torebki, a krwinki i duże białka zostają we krwi.'],
   torebka:['Torebka Bowmana','Dwuwarstwowa „czasza” obejmująca kłębuszek; zbiera przesącz — <strong>mocz pierwotny</strong>. Kłębuszek z torebką to <strong>ciałko nerkowe</strong> (w korze nerki).'],
   kanalik:['Kanalik nerkowy','Tu zachodzi <strong>wchłanianie zwrotne</strong> (glukoza, aminokwasy, większość wody i soli wracają do krwi) i <strong>wydzielanie kanalikowe</strong> (np. część leków, nadmiar jonów przechodzi z krwi do kanalika). Pętla nefronu (pętla Henlego) schodzi w rdzeń nerki i pomaga zagęszczać mocz.'],
   zbiorczy:['Przewód zbiorczy','Zbiera mocz z wielu nefronów i prowadzi go do miedniczki nerkowej. Tu działa <strong>ADH</strong>: decyduje, ile wody jeszcze wróci do krwi — powstaje <strong>mocz ostateczny</strong>.'],
   kap:['Naczynia włosowate wokół kanalika','Odbierają substancje odzyskane w wchłanianiu zwrotnym; oczyszczona krew odpływa żyłą nerkową.']})}});
+
+/* ---- łuk odruchowy: odruch cofnięcia ręki, przerwanie drogi (2026-10-11, lekcja BIO.07.U08) ---- */
+BIO.define('luk-odruchowy',{opis:'Łuk odruchowy cofnięcia ręki od gorącego przedmiotu: receptor w skórze dłoni, neuron czuciowy (ciało w zwoju rdzeniowym), neuron pośredniczący w istocie szarej rdzenia, neuron ruchowy, efektor — mięsień ramienia; „krok” prowadzi impuls etapami, osobna droga do mózgu (czucie bólu); przełącznik uszkodzeń: przecięta droga ruchowa lub czuciowa',
+mount:function(el,o){
+ var tl=H('div','bv-tools'),tl2=H('div','bv-tools'),box=H('div'),info=BIO.fx.infoBox('Kliknij „krok”, aby poprowadzić impuls, albo kliknij element łuku.');el.appendChild(tl);el.appendChild(tl2);el.appendChild(box);el.appendChild(info);
+ var W=700,Hh=430,sv=svg(W,Hh,'Łuk odruchowy',[]),uraz='brak',krok=-1,raf=0,red=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function G(k,kids){return S('g',{'data-k':k},kids)}
+ var P={czuciowy:'M112 300 C200 300 300 120 448 118 C500 116 520 140 538 160',posredni:'M538 160 C550 185 556 200 566 222',ruchowy:'M566 222 C520 290 420 300 330 250 C300 232 270 214 250 204',mozg:'M538 160 C560 120 600 90 610 30'};
+ sv.appendChild(G('rdzen',[S('ellipse',{cx:565,cy:195,rx:100,ry:78,fill:'#f3f0fa',stroke:'#8a7ab8','stroke-width':2.5}),
+  S('path',{d:'M520 150 C540 160 548 180 556 190 C562 180 572 160 590 150 C600 170 590 190 578 200 C590 214 604 236 596 252 C580 244 570 224 565 214 C560 224 548 244 532 252 C524 236 538 214 550 200 C540 190 512 170 520 150 Z',fill:'#cdbbe6',stroke:'#8a7ab8','stroke-width':1.5}),
+  T(565,292,'rdzeń kręgowy (przekrój)',{s:15,w:800,f:'#5a4a8a'}),T(565,310,'istota szara — w środku, biała — na zewnątrz',{s:12,w:600,f:'var(--viz-mut)'})]));
+ sv.appendChild(G('skora',[S('rect',{x:30,y:262,width:110,height:76,rx:30,fill:'#f6dcc6',stroke:'#b9876a','stroke-width':2}),T(85,250,'skóra dłoni',{s:14,w:700}),S('path',{d:'M70 400 C60 380 80 372 76 356 C92 368 96 384 90 400 Z',fill:'#f39c12'}),S('path',{d:'M96 400 C90 388 104 380 102 368 C114 380 114 392 110 400 Z',fill:'#e74c3c'}),T(150,392,'gorący przedmiot',{s:13,w:700,a:'start',f:'#b9550a'})]));
+ sv.appendChild(G('receptor',[S('circle',{cx:110,cy:300,r:11,fill:'#2f7fa8',stroke:'#fff','stroke-width':2}),T(110,326,'receptor',{s:14,w:800,f:'#1f5f88'})]));
+ sv.appendChild(G('miesien',[S('ellipse',{cx:210,cy:190,rx:62,ry:30,fill:'#e08a80',stroke:'#a33','stroke-width':2.5,transform:'rotate(-14 210 190)'}),T(200,146,'mięsień (efektor)',{s:14,w:800,f:'#a33'})]));
+ sv.appendChild(G('czuciowy',[S('path',{d:P.czuciowy,fill:'none',stroke:'#2f7fa8','stroke-width':5}),S('circle',{cx:448,cy:118,r:13,fill:'#2f7fa8'}),T(448,92,'zwój rdzeniowy',{s:13,w:700,f:'#1f5f88'}),T(312,196,'neuron czuciowy',{s:14,w:800,f:'#1f5f88',a:'start'})]));
+ sv.appendChild(G('posredni',[S('path',{d:P.posredni,fill:'none',stroke:'#7e57c2','stroke-width':6}),T(648,100,'neuron',{s:13,w:700,f:'#5a3a9a'}),T(648,116,'pośredniczący',{s:13,w:700,f:'#5a3a9a'})]));
+ sv.appendChild(G('ruchowy',[S('path',{d:P.ruchowy,fill:'none',stroke:'#c0392b','stroke-width':5}),S('circle',{cx:566,cy:222,r:11,fill:'#c0392b'}),T(330,300,'neuron ruchowy',{s:14,w:800,f:'#a33'})]));
+ sv.appendChild(G('mozg',[S('path',{d:P.mozg,fill:'none',stroke:'#7e57c2','stroke-width':3,'stroke-dasharray':'6 5'}),T(620,30,'do mózgu → czucie bólu',{s:13,w:700,a:'end',f:'#5a3a9a'})]));
+ var X=S('g',{});sv.appendChild(X);
+ var tr=S('path',{d:'M0 0',fill:'none',stroke:'none'}),dot=S('circle',{r:9,fill:'#f1c40f',stroke:'#7a5a00','stroke-width':2,opacity:0});dot.style.pointerEvents='none';sv.appendChild(tr);sv.appendChild(dot);
+ box.appendChild(sv);
+ var M={skora:['Bodziec','Wysoka temperatura działa na skórę dłoni. Bodźcem jest zmiana w środowisku, którą wykrywa receptor.'],
+  receptor:['1. Receptor','Zakończenia nerwowe w skórze reagujące na ciepło i ból zamieniają bodziec w <strong>impuls nerwowy</strong>.'],
+  czuciowy:['2. Neuron czuciowy (droga dośrodkowa)','Przewodzi impuls <strong>od receptora do rdzenia kręgowego</strong>. Jego ciało leży w <strong>zwoju rdzeniowym</strong> przy rdzeniu; impuls wchodzi do rdzenia od strony grzbietowej (korzeń tylny).'],
+  posredni:['3. Ośrodek — neuron pośredniczący','W <strong>istocie szarej rdzenia</strong> impuls przechodzi przez <strong>synapsy</strong> na neuron pośredniczący, a ten — na neuron ruchowy. Ośrodkiem tego odruchu jest rdzeń kręgowy, nie mózg.'],
+  ruchowy:['4. Neuron ruchowy (droga odśrodkowa)','Ciało leży w istocie szarej rdzenia (róg przedni), akson wychodzi korzeniem przednim i biegnie w nerwie do mięśnia.'],
+  miesien:['5. Efektor','Mięsień zginacz ramienia kurczy się — ręka odskakuje od gorącego przedmiotu. Efektorem może być też gruczoł (np. ślinianka w odruchu wydzielania śliny).'],
+  mozg:['Droga do mózgu','Równocześnie impuls biegnie istotą białą rdzenia do mózgu — dopiero wtedy <strong>czujemy ból</strong> i wiemy, co się stało. Dlatego ręka często cofa się, <strong>zanim</strong> poczujemy oparzenie.'],
+  rdzen:['Rdzeń kręgowy','Na przekroju: w środku <strong>istota szara</strong> (ciała neuronów, kształt motyla), na zewnątrz <strong>istota biała</strong> (włókna nerwowe przewodzące impulsy do i z mózgu). Chroni go kanał kręgowy, opony i płyn mózgowo-rdzeniowy.']};
+ var show=BIO.fx.info(sv,info,M);
+ var KR=['receptor','czuciowy','posredni','ruchowy','miesien','mozg'];
+ function rysujX(){clr(X);if(uraz==='brak')return;var pe=sv.querySelector('[data-k="'+uraz+'"] path'),pt=pe.getPointAtLength(pe.getTotalLength()*(uraz==='ruchowy'?0.62:0.42)),pos=[pt.x,pt.y];
+  X.appendChild(S('path',{d:'M'+(pos[0]-14)+' '+(pos[1]-14)+' L'+(pos[0]+14)+' '+(pos[1]+14)+' M'+(pos[0]+14)+' '+(pos[1]-14)+' L'+(pos[0]-14)+' '+(pos[1]+14),stroke:'#111','stroke-width':6,'stroke-linecap':'round'}))}
+ function jedz(d,done){cancelAnimationFrame(raf);tr.setAttribute('d',d);dot.setAttribute('opacity',1);var L=tr.getTotalLength(),t0=null,D=900,stop=1;
+  if(uraz==='czuciowy'&&d===P.czuciowy)stop=0.42;if(uraz==='ruchowy'&&d===P.ruchowy)stop=0.62;if(uraz==='czuciowy'&&d===P.mozg)stop=0;
+  function f(ts){if(t0===null)t0=ts;var q=Math.min(stop,(ts-t0)/D),p=tr.getPointAtLength(L*q);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y);if(q<stop)raf=requestAnimationFrame(f);else if(done)done(stop<1)}
+  if(red){var p=tr.getPointAtLength(L*stop);dot.setAttribute('cx',p.x);dot.setAttribute('cy',p.y);if(done)done(stop<1)}else raf=requestAnimationFrame(f)}
+ var bk=btn('krok ▶ impuls',function(){krok=(krok+1)%KR.length;var k=KR[krok];show(k,sv.querySelector('[data-k="'+k+'"]'));info.querySelector('b').textContent=M[k][0];
+   if(P[k])jedz(P[k],function(br){if(br){info.className='bv-info bad';info.innerHTML='<b>Impuls zatrzymany</b>'+(uraz==='ruchowy'?'Droga ruchowa jest przerwana: impuls nie dotrze do mięśnia — <strong>ręka się nie cofnie</strong>, choć ból będzie odczuwany (droga do mózgu działa). Tak bywa przy urazach nerwów ruchowych.':'Droga czuciowa jest przerwana: impuls nie dotrze do rdzenia ani do mózgu — <strong>brak odruchu i brak czucia</strong> (ryzyko oparzenia bez bólu).');krok=KR.length-1}});
+   else{var c=sv.querySelector('[data-k="'+k+'"] circle, [data-k="'+k+'"] ellipse');if(c){dot.setAttribute('cx',c.getAttribute('cx'));dot.setAttribute('cy',c.getAttribute('cy'));dot.setAttribute('opacity',1)}}});
+ tl.appendChild(bk);tl.appendChild(btn('od początku',function(){krok=-1;cancelAnimationFrame(raf);dot.setAttribute('opacity',0);info.className='bv-info';info.textContent='Kliknij „krok”, aby poprowadzić impuls od receptora.'}));
+ function rysujUraz(){seg(tl2,[['brak','łuk sprawny'],['czuciowy','przerwana droga czuciowa'],['ruchowy','przerwana droga ruchowa']],uraz,function(k){uraz=k;krok=-1;cancelAnimationFrame(raf);dot.setAttribute('opacity',0);rysujUraz();rysujX();
+  info.className='bv-info';info.innerHTML=k==='brak'?'<b>Łuk sprawny</b>Wszystkie pięć elementów działa — odruch zachodzi.':'<b>Uszkodzenie: '+(k==='czuciowy'?'neuron czuciowy':'neuron ruchowy')+'</b>Kliknij „krok” i sprawdź, dokąd dotrze impuls.'})}
+ rysujUraz();BIO.fx.auto(el,function(){bk.click()},1700,{now:1})}});
+
+/* ---- oko: budowa, akomodacja, krótkowzroczność i dalekowzroczność z korekcją ---- */
+BIO.define('oko-akomodacja',{opis:'Przekrój gałki ocznej: rogówka, tęczówka ze źrenicą, soczewka z mięśniem rzęskowym, ciało szkliste, twardówka, naczyniówka, siatkówka z plamką żółtą i plamką ślepą, nerw wzrokowy; tryby: budowa (klik = opis), akomodacja (przedmiot blisko / daleko — soczewka grubieje lub się spłaszcza, promienie skupiają się na siatkówce), wady wzroku (krótkowzroczność — ognisko przed siatkówką, dalekowzroczność — za nią; włączenie okularów koryguje)',
+mount:function(el,o){
+ var tryb=o.tryb||'budowa',odl='daleko',wada='krotko',okul=false,tl=H('div','bv-tools'),tl2=H('div','bv-tools'),box=H('div'),info=BIO.fx.infoBox('Kliknij część oka albo wybierz tryb.');el.appendChild(tl);el.appendChild(tl2);el.appendChild(box);el.appendChild(info);
+ var M={rogowka:['Rogówka','Przezroczysta, wypukła przednia część ściany oka — <strong>najsilniej załamuje światło</strong> i chroni oko. Nie ma naczyń krwionośnych.'],
+  twardowka:['Twardówka','Biała, mocna zewnętrzna warstwa gałki ocznej („białko oka”) — chroni i nadaje kształt; z przodu przechodzi w rogówkę.'],
+  naczyniowka:['Naczyniówka','Środkowa warstwa z naczyniami krwionośnymi i ciemnym barwnikiem — odżywia oko i pochłania światło, ograniczając jego rozpraszanie (jak czarne wnętrze aparatu).'],
+  teczowka:['Tęczówka i źrenica','Tęczówka (barwna część oka) ma mięśnie, które zmieniają średnicę <strong>źrenicy</strong> — otworu wpuszczającego światło. W jasnym świetle źrenica się zwęża, w ciemności rozszerza (odruch źreniczny).'],
+  soczewka:['Soczewka','Przezroczysta, elastyczna, dwuwypukła — <strong>skupia promienie</strong> na siatkówce. Zmienia kształt przy <strong>akomodacji</strong>: bardziej wypukła do patrzenia z bliska, bardziej płaska — w dal.'],
+  rzeskowy:['Mięsień rzęskowy','Okrężny mięsień wokół soczewki połączony z nią włóknami. <strong>Skurcz</strong> → włókna się luzują → soczewka sama się uwypukla (patrzenie z bliska). <strong>Rozkurcz</strong> → włókna naciągają soczewkę → spłaszcza się (w dal).'],
+  szkliste:['Ciało szkliste','Przezroczysta galaretka wypełniająca wnętrze oka — utrzymuje kształt gałki i przepuszcza światło do siatkówki.'],
+  siatkowka:['Siatkówka','Wewnętrzna warstwa z <strong>fotoreceptorami</strong>: <strong>pręciki</strong> (czułe na słabe światło, widzenie czarno-białe, liczne na obwodzie) i <strong>czopki</strong> (barwy, ostrość, dobre oświetlenie). Tu powstaje obraz — <strong>rzeczywisty, pomniejszony i odwrócony</strong>.'],
+  plamka:['Plamka żółta','Miejsce <strong>najostrzejszego widzenia</strong> — najwięcej czopków; tam kierujemy obraz, gdy patrzymy prosto na przedmiot.'],
+  slepa:['Plamka ślepa','Miejsce, w którym nerw wzrokowy opuszcza oko — <strong>brak fotoreceptorów</strong>, obraz padający tutaj nie jest odbierany (mózg „domalowuje” lukę).'],
+  nerw:['Nerw wzrokowy','Przewodzi impulsy z siatkówki do <strong>ośrodka wzroku w płacie potylicznym kory mózgu</strong>, gdzie powstaje wrażenie widzenia i obraz jest „prostowany”.']};
+ function draw(){seg(tl,[['budowa','budowa oka'],['akom','akomodacja'],['wady','wady wzroku']],tryb,function(k){tryb=k;draw()});clr(tl2);
+  if(tryb==='akom')seg(tl2,[['blisko','przedmiot blisko'],['daleko','przedmiot daleko']],odl,function(k){odl=k;draw()});
+  if(tryb==='wady'){seg(tl2,[['krotko','krótkowzroczność'],['daleko','dalekowzroczność']],wada,function(k){wada=k;draw()});var b=btn((okul?'✔ ':'')+'okulary',function(){okul=!okul;draw()});if(okul)b.classList.add('on');tl2.appendChild(b)}
+  var W=700,Hh=380,cx=360,cy=190,R=140,sv=svg(W,Hh,'Przekrój oka',[]);function G(k,kids){return S('g',{'data-k':k},kids)}
+  var ret=cx+R-10;
+  sv.appendChild(G('twardowka',[S('path',{d:'M'+(cx-118)+' '+(cy-76)+' A'+R+' '+R+' 0 1 1 '+(cx-118)+' '+(cy+76),fill:'#f7f7f2',stroke:'#9aa0a6','stroke-width':8})]));
+  sv.appendChild(G('naczyniowka',[S('path',{d:'M'+(cx-108)+' '+(cy-80)+' A'+(R-8)+' '+(R-8)+' 0 1 1 '+(cx-108)+' '+(cy+80),fill:'none',stroke:'#7a2a2a','stroke-width':5})]));
+  sv.appendChild(G('siatkowka',[S('path',{d:'M'+(cx-96)+' '+(cy-88)+' A'+(R-13)+' '+(R-13)+' 0 1 1 '+(cx-96)+' '+(cy+88),fill:'none',stroke:'#e89a5a','stroke-width':5})]));
+  sv.appendChild(G('szkliste',[S('circle',{cx:cx+10,cy:cy,r:R-22,fill:'#eef6fb',opacity:.85}),T(cx+30,cy+60,'ciało szkliste',{s:14,w:700,f:'#4a7a9a'})]));
+  sv.appendChild(G('rogowka',[S('path',{d:'M'+(cx-118)+' '+(cy-76)+' C'+(cx-175)+' '+(cy-50)+' '+(cx-175)+' '+(cy+50)+' '+(cx-118)+' '+(cy+76),fill:'#e6f2fb',stroke:'#5a9bd0','stroke-width':4})]));
+  var gr=tryb==='akom'?(odl==='blisko'?22:10):tryb==='wady'?14:15;
+  sv.appendChild(G('teczowka',[S('rect',{x:cx-128,y:cy-72,width:9,height:44,rx:3,fill:'#5a7a3a'}),S('rect',{x:cx-128,y:cy+28,width:9,height:44,rx:3,fill:'#5a7a3a'})]));
+  sv.appendChild(G('rzeskowy',[S('ellipse',{cx:cx-104,cy:cy-62,rx:9,ry:6,fill:'#c0392b'}),S('ellipse',{cx:cx-104,cy:cy+62,rx:9,ry:6,fill:'#c0392b'}),S('line',{x1:cx-104,y1:cy-56,x2:cx-104,y2:cy-40,stroke:'#999','stroke-width':1.5}),S('line',{x1:cx-104,y1:cy+56,x2:cx-104,y2:cy+40,stroke:'#999','stroke-width':1.5})]));
+  sv.appendChild(G('soczewka',[S('ellipse',{cx:cx-104,cy:cy,rx:gr,ry:40,fill:'#cfe8f7',stroke:'#3a7ab0','stroke-width':2.5})]));
+  sv.appendChild(G('plamka',[S('circle',{cx:ret+2,cy:cy,r:7,fill:'#f1c40f',stroke:'#a8892a'})]));
+  sv.appendChild(G('slepa',[S('circle',{cx:ret-6,cy:cy+44,r:7,fill:'#333'})]));
+  sv.appendChild(G('nerw',[S('path',{d:'M'+(ret-4)+' '+(cy+44)+' C'+(ret+40)+' '+(cy+52)+' '+(ret+70)+' '+(cy+60)+' '+(W-20)+' '+(cy+70),fill:'none',stroke:'#e2c25a','stroke-width':16,'stroke-linecap':'round'}),T(W-24,cy+96,'nerw wzrokowy',{s:14,w:700,a:'end'})]));
+  if(tryb==='budowa'){[['rogówka',cx-170,cy-90,'end'],['tęczówka',cx-140,cy-104,'middle'],['soczewka',cx-100,cy-104,'start'],['siatkówka',cx+80,cy-132,'start'],['naczyniówka',cx+120,cy-110,'start'],['twardówka',cx+150,cy-88,'start'],['plamka żółta',ret+14,cy-10,'start'],['plamka ślepa',ret+10,cy+30,'start'],['mięsień rzęskowy',cx-96,cy+106,'start']].forEach(function(l){sv.appendChild(T(l[1],l[2],l[0],{s:14,w:700,a:l[3]}))});sv.appendChild(T(cx-150,cy+4,'źrenica',{s:12,w:700,a:'end',f:'var(--viz-mut)'}))}
+  else{var lx=cx-104,F,src,uw='';
+   if(tryb==='akom'){F=ret;src=odl==='blisko'?[60,cy]:null;uw=odl==='blisko'?'<b>Przedmiot blisko</b><strong>Mięsień rzęskowy kurczy się</strong>, soczewka uwypukla się i silniej załamuje światło — promienie z bliskiego przedmiotu (rozbieżne) skupiają się dokładnie na siatkówce.':'<b>Przedmiot daleko</b><strong>Mięsień rzęskowy rozluźnia się</strong>, soczewka spłaszcza się i słabiej załamuje — prawie równoległe promienie z daleka skupiają się na siatkówce. Patrzenie w dal męczy oczy najmniej.'}
+   else{if(wada==='krotko'){src=null;F=okul?ret:ret-70;uw=okul?'<b>Krótkowzroczność skorygowana</b>Soczewka <strong>rozpraszająca (wklęsła)</strong> przed okiem lekko rozprasza promienie — ognisko przesuwa się na siatkówkę. Obraz dalekiego przedmiotu jest ostry.':'<b>Krótkowzroczność</b>Gałka oczna jest zbyt długa (lub układ optyczny za silny): promienie z <strong>dalekiego</strong> przedmiotu skupiają się <strong>przed siatkówką</strong> — na siatkówce plama, obraz rozmyty. Z bliska widać dobrze. Korekcja: soczewki <strong>rozpraszające (wklęsłe)</strong>.'}
+    else{src=[60,cy];F=okul?ret:ret+70;uw=okul?'<b>Dalekowzroczność skorygowana</b>Soczewka <strong>skupiająca (wypukła)</strong> wstępnie zbiera promienie — ognisko przesuwa się na siatkówkę. Bliski przedmiot jest ostry.':'<b>Dalekowzroczność</b>Gałka oczna jest zbyt krótka (lub soczewka za słaba): promienie z <strong>bliskiego</strong> przedmiotu skupiałyby się <strong>za siatkówką</strong> — obraz rozmyty. Korekcja: soczewki <strong>skupiające (wypukłe)</strong>. Podobnie z wiekiem (starczowzroczność) soczewka traci elastyczność.'}
+    if(okul){var ox=118;sv.appendChild(S('path',{d:wada==='krotko'?'M'+(ox-12)+' '+(cy-60)+' L'+(ox+12)+' '+(cy-60)+' Q'+(ox+2)+' '+cy+' '+(ox+12)+' '+(cy+60)+' L'+(ox-12)+' '+(cy+60)+' Q'+(ox-2)+' '+cy+' '+(ox-12)+' '+(cy-60)+' Z':'M'+ox+' '+(cy-60)+' Q'+(ox+22)+' '+cy+' '+ox+' '+(cy+60)+' Q'+(ox-22)+' '+cy+' '+ox+' '+(cy-60)+' Z',fill:'#d8ecfa',stroke:'#3a7ab0','stroke-width':2.5}));sv.appendChild(T(ox,cy+80,'okulary',{s:13,w:700}))}}
+   [-30,0,30].forEach(function(dy){var y0=cy+dy,a=src?'M'+src[0]+' '+src[1]+' L'+lx+' '+y0:'M30 '+y0+' L'+lx+' '+y0,ex=ret,ey;
+    var k=(cy-y0)/(F-lx);ey=y0+k*(ex-lx);sv.appendChild(S('path',{d:a+' L'+ex+' '+ey,fill:'none',stroke:'#e67e22','stroke-width':2.5,opacity:.95}))});
+   if(src)sv.appendChild(S('circle',{cx:src[0],cy:src[1],r:7,fill:'#e67e22'}));else sv.appendChild(T(40,cy-50,'z daleka',{s:13,w:700,a:'start',f:'#b9550a'}));
+   sv.appendChild(S('circle',{cx:Math.min(F,ret+60),cy:cy,r:5,fill:F===ret?'#1f8a3a':'#c0392b'}));
+   var bl=Math.abs(F-ret)*30/(F-lx);sv.appendChild(S('ellipse',{cx:ret,cy:cy,rx:4,ry:Math.max(4,bl),fill:F===ret?'#1f8a3a':'#c0392b',opacity:.6}));
+   sv.appendChild(T(ret-30,cy-150,F===ret?'obraz ostry na siatkówce':'obraz nieostry',{s:15,w:800,a:'middle',f:F===ret?'#1f6a3a':'#a33'}))}
+  clr(box);box.appendChild(sv);BIO.fx.info(sv,info,M);if(tryb!=='budowa'){info.className='bv-info';info.innerHTML=uw}}
+ draw();var TOUR=[['akom','daleko',null,0],['akom','blisko',null,0],['wady',null,'krotko',0],['wady',null,'krotko',1],['wady',null,'daleko',0],['wady',null,'daleko',1]],ti=-1;
+ BIO.fx.auto(el,function(){ti=(ti+1)%TOUR.length;var q=TOUR[ti];tryb=q[0];if(q[1])odl=q[1];if(q[2])wada=q[2];okul=!!q[3];draw()},3200,{now:1})}});
+
+/* ---- ucho: budowa i droga dźwięku, równowaga ---- */
+BIO.define('ucho-droga',{opis:'Schemat ucha: zewnętrzne (małżowina, przewód słuchowy), środkowe (błona bębenkowa, młoteczek, kowadełko, strzemiączko, trąbka słuchowa), wewnętrzne (ślimak, kanały półkoliste, przedsionek), nerw przedsionkowo-ślimakowy; kliknij część, „krok” prowadzi dźwięk od małżowiny do mózgu',
+mount:function(el,o){
+ var tl=H('div','bv-tools'),box=H('div'),info=BIO.fx.infoBox('Kliknij część ucha albo „krok”, aby prześledzić drogę dźwięku.');el.appendChild(tl);el.appendChild(box);el.appendChild(info);
+ var W=700,Hh=380,sv=svg(W,Hh,'Budowa ucha',[]);function G(k,kids){return S('g',{'data-k':k},kids)}
+ [['ucho zewnętrzne',20,250,'#fdf2e0'],['ucho środkowe',270,140,'#eef6ea'],['ucho wewnętrzne',410,180,'#eef0fb']].forEach(function(z){sv.appendChild(S('rect',{x:z[1],y:40,width:z[2],height:300,fill:z[3]}));sv.appendChild(T(z[1]+z[2]/2,26,z[0],{s:15,w:800}))});
+ sv.appendChild(G('malzowina',[S('path',{d:'M90 70 C30 80 30 190 70 230 C90 252 110 240 112 220 C114 200 96 190 100 170 C104 150 130 130 120 100 C114 82 104 70 90 70 Z',fill:'#f3c9a8',stroke:'#b9876a','stroke-width':2.5}),T(64,262,'małżowina',{s:14,w:700})]));
+ sv.appendChild(G('przewod',[S('path',{d:'M110 175 L262 175',fill:'none',stroke:'#d9a888','stroke-width':30,'stroke-linecap':'round'}),T(190,214,'przewód słuchowy',{s:14,w:700})]));
+ sv.appendChild(G('blona',[S('ellipse',{cx:268,cy:175,rx:5,ry:30,fill:'#b0c4de',stroke:'#4a6a9a','stroke-width':2}),T(268,124,'błona bębenkowa',{s:13,w:700})]));
+ sv.appendChild(G('kosteczki',[S('path',{d:'M276 160 L298 152 L300 172',fill:'none',stroke:'#7a6a50','stroke-width':6,'stroke-linejoin':'round'}),S('path',{d:'M300 152 L322 160 L318 180',fill:'none',stroke:'#7a6a50','stroke-width':6}),S('path',{d:'M318 180 L340 176 M336 166 L342 188',fill:'none',stroke:'#7a6a50','stroke-width':6}),T(312,206,'kosteczki',{s:13,w:700}),T(312,222,'słuchowe',{s:13,w:700})]));
+ sv.appendChild(G('trabka',[S('path',{d:'M300 230 C310 270 320 300 360 336',fill:'none',stroke:'#b8a0c8','stroke-width':12,'stroke-linecap':'round'}),T(372,352,'trąbka słuchowa',{s:13,w:700,a:'start'}),T(372,368,'(do gardła)',{s:12,a:'start',f:'var(--viz-mut)'})]));
+ sv.appendChild(G('kanaly',[S('ellipse',{cx:450,cy:110,rx:28,ry:34,fill:'none',stroke:'#7e57c2','stroke-width':6}),S('ellipse',{cx:490,cy:100,rx:34,ry:22,fill:'none',stroke:'#7e57c2','stroke-width':6}),S('ellipse',{cx:478,cy:136,rx:20,ry:30,fill:'none',stroke:'#7e57c2','stroke-width':6,transform:'rotate(40 478 136)'}),T(540,70,'kanały półkoliste',{s:13,w:700,a:'start'})]));
+ sv.appendChild(G('przedsionek',[S('ellipse',{cx:400,cy:172,rx:28,ry:20,fill:'#d6c8f0',stroke:'#7e57c2','stroke-width':2.5}),T(392,206,'przedsionek',{s:12,w:700,a:'end'})]));
+ var sp='';for(var a=0;a<=Math.PI*5;a+=0.12){var r=48-a*2.8;sp+=(sp?'L':'M')+(470+r*Math.cos(a)).toFixed(1)+' '+(240+r*Math.sin(a)).toFixed(1)}
+ sv.appendChild(G('slimak',[S('path',{d:'M424 186 C430 210 430 230 422 240 '+sp.replace('M','L'),fill:'none',stroke:'#e67e22','stroke-width':9,'stroke-linecap':'round'}),T(528,296,'ślimak',{s:15,w:800,f:'#b9550a',a:'start'})]));
+ sv.appendChild(G('nerw',[S('path',{d:'M500 190 C560 190 600 200 680 200',fill:'none',stroke:'#e2c25a','stroke-width':12,'stroke-linecap':'round'}),T(680,226,'nerw → mózg',{s:13,w:700,a:'end'})]));
+ var fala=S('g',{});sv.appendChild(fala);box.appendChild(sv);
+ var M={malzowina:['Małżowina uszna','Chrząstka pokryta skórą — <strong>zbiera fale dźwiękowe</strong> i kieruje je do przewodu; pomaga ocenić, skąd dochodzi dźwięk.'],
+  przewod:['Przewód słuchowy zewnętrzny','Prowadzi fale do błony bębenkowej. Gruczoły wydzielają <strong>woskowinę</strong>, która zatrzymuje kurz i drobnoustroje (nie należy jej wydłubywać patyczkami głęboko w uchu).'],
+  blona:['Błona bębenkowa','Cienka błona oddzielająca ucho zewnętrzne od środkowego — <strong>drga</strong> pod wpływem fal dźwiękowych.'],
+  kosteczki:['Kosteczki słuchowe','<strong>Młoteczek, kowadełko, strzemiączko</strong> — najmniejsze kości ciała. Przenoszą drgania z błony bębenkowej na okienko owalne ślimaka i <strong>wzmacniają</strong> je.'],
+  trabka:['Trąbka słuchowa (Eustachiusza)','Łączy ucho środkowe z gardłem i <strong>wyrównuje ciśnienie</strong> po obu stronach błony bębenkowej (przełykanie w samolocie „odtyka” uszy). Tą drogą infekcje z gardła mogą przejść do ucha środkowego.'],
+  slimak:['Ślimak','Spiralny kanał z płynem; w nim <strong>narząd Cortiego</strong> z komórkami zmysłowymi (rzęsatymi). Drgania płynu poruszają rzęski — powstają <strong>impulsy nerwowe</strong>. Tu, a nie w uchu środkowym, drgania zamieniają się w sygnał nerwowy.'],
+  kanaly:['Kanały półkoliste','Trzy kanały w trzech prostopadłych płaszczyznach, wypełnione płynem — wykrywają <strong>ruchy obrotowe głowy</strong>. Część narządu równowagi (aparatu przedsionkowego).'],
+  przedsionek:['Przedsionek (łagiewka i woreczek)','Z <strong>kryształkami</strong> (otolitami) na galaretowatej błonie — odbierają <strong>położenie głowy</strong> i przyspieszenia liniowe (winda, hamowanie samochodu).'],
+  nerw:['Nerw przedsionkowo-ślimakowy','Przewodzi impulsy ze ślimaka (słuch) i aparatu przedsionkowego (równowaga) do mózgu. Wrażenie dźwięku powstaje w <strong>ośrodku słuchu w płacie skroniowym</strong> kory mózgu.']};
+ var show=BIO.fx.info(sv,info,M),DR=['malzowina','przewod','blona','kosteczki','slimak','nerw'],POS={malzowina:[80,150],przewod:[190,175],blona:[268,175],kosteczki:[310,168],slimak:[470,240],nerw:[600,196]},kr=-1;
+ tl.appendChild(btn('krok ▶ droga dźwięku',function(){kr=(kr+1)%DR.length;var k=DR[kr],p=POS[k];show(k,sv.querySelector('[data-k="'+k+'"]'));info.querySelector('b').textContent=(kr+1)+'/'+DR.length+' · '+M[k][0];
+  clr(fala);[0,1,2].forEach(function(i){fala.appendChild(S('path',{d:'M'+(p[0]-14-i*9)+' '+(p[1]-16-i*4)+' Q'+(p[0]-4-i*9)+' '+p[1]+' '+(p[0]-14-i*9)+' '+(p[1]+16+i*4),fill:'none',stroke:'#e67e22','stroke-width':3,opacity:1-i*.25}))})}));
+ tl.appendChild(btn('od początku',function(){kr=-1;clr(fala);info.className='bv-info';info.textContent='Kliknij „krok”, aby prześledzić drogę dźwięku.'}));BIO.fx.auto(el,function(){tl.firstChild.click()},1800,{now:1})}});
 
 })();
