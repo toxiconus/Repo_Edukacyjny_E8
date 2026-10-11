@@ -32,17 +32,49 @@ def lite(path):
             if b[0] not in uzyte: uzyte.append(b[0])
         else: brak.append(vid)
     ok = set(v for b in uzyte for v in re.findall(r"define\('([\w-]+)'", b))
+    # natywne modele lekkie (engine/src/lite/*-lite.js) i pracownie z lab-dane.json (silniczek rx-lite)
+    dane = json.load(open(os.path.join(SRC, 'lite', 'lab-dane.json'), encoding='utf-8'))
+    natyw = {}
+    for fn in sorted(os.listdir(os.path.join(SRC, 'lite'))):
+        if fn.endswith('-lite.js') and fn != 'rx-lite.js':
+            t = rd(os.path.join(SRC, 'lite', fn))
+            for v in re.findall(r"define\('([\w-]+)'", t): natyw[v] = t
+    zl = re.findall(r'<button class="che-prac-go" data-k="([^"]*)" data-prac="([\w-]+)"', doc)
+    prac = set(v for v in ids if v in dane['pracownie']) | set(p_ for _, p_ in zl if p_ in dane['pracownie'])
+    dod = []
+    for vid in list(brak):
+        if vid in natyw:
+            if natyw[vid] not in dod: dod.append(natyw[vid])
+            brak.remove(vid); ok.add(vid)
+        elif vid in dane['pracownie']:
+            brak.remove(vid); ok.add(vid)
+    klucze = set(k for k, _ in zl)
+    for pid in prac:
+        for g in dane['pracownie'][pid].get('groups', []): klucze |= set(g[1]) if pid in ids else set()
+    lab = {'specs': {k: v for k, v in dane['specs'].items() if k in klucze}, 'pracownie': {k: dane['pracownie'][k] for k in prac}, 'reakcje': {}}
+    uzyte += dod
     def fig(mm):
         vid, t, d = mm.group(1), mm.group(2), mm.group(3)
         if vid not in ok:
             return '<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>%s</b><span>%s — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>' % (t, d)
         return '<figure class="lk-fig che-fig" data-che-viz="%s"><div class="lk-fig-body"></div><figcaption><b>%s</b> <span>%s</span></figcaption></figure>' % (vid, t, d)
     doc = re.sub(r'<div class="che-lesson-viz-ref" data-che-lesson-viz="([\w-]+)">.*?<b>(.*?)</b><span>(.*?)</span></button></div>', fig, doc, flags=re.S)
-    nz = len(re.findall(r'class="che-prac-go"', doc))
-    doc = re.sub(r'<button class="che-prac-go"[^>]*>(.*?)</button>', r'<button class="che-prac-go lk-offline" type="button" disabled>\1 — w pełnej wersji lekcji</button>', doc, flags=re.S)
+    nz = 0
+    def zlew(mm):
+        nonlocal nz
+        k, pr, t = mm.group(1), mm.group(2), mm.group(3)
+        if k in lab['specs'] and pr in lab['pracownie']:
+            nz += 1
+            return '<figure class="lk-fig che-fig" data-che-zlewka="%s" data-prac="%s"><div class="lk-fig-body"></div><figcaption><b>%s</b></figcaption></figure>' % (k, pr, t)
+        return '<button class="che-prac-go lk-offline" type="button" disabled>%s — w pełnej wersji lekcji</button>' % t
+    doc = re.sub(r'<button class="che-prac-go" data-k="([^"]*)" data-prac="([\w-]+)"[^>]*>(.*?)</button>', zlew, doc, flags=re.S)
     css = rd(os.path.join(SRC, 'lekcja', 'nawigacja.css')) + '\n.lk-hint{font-size:13px;opacity:.75;margin:0 0 8px}.lk-err{color:#b91c1c}.lk-offline button,.lk-offline{opacity:.6;cursor:default}.che-lite-host{overflow-x:auto}\n'
     doc = doc.replace('</style>\n', '\n' + css + '</style>\n', 1)
-    js = rd(os.path.join(SRC, 'lite', 'che-lite.js')) + '\n' + '\n'.join(uzyte) + '\nCHE.LITE_MOUNT();\n' + rd(os.path.join(SRC, 'lekcja', 'nawigacja.js'))
+    lab_js = ''
+    if lab['specs'] or lab['pracownie']:
+        lab_js = rd(os.path.join(SRC, 'lite', 'rx-lite.js')) + '\nCHE.RXL.data(' + json.dumps(lab, ensure_ascii=False) + ');\n' + ''.join('CHE.RXL.pracownia(%s);\n' % json.dumps(p_) for p_ in lab['pracownie'] if p_ in ids)
+        lab_js += "[].forEach.call(document.querySelectorAll('[data-che-zlewka]'),function(f){CHE.RXL.zlewka(f.querySelector('.lk-fig-body'),f.getAttribute('data-prac'),f.getAttribute('data-che-zlewka'))});\n"
+    js = rd(os.path.join(SRC, 'lite', 'che-lite.js')) + '\n' + '\n'.join(uzyte) + '\n' + lab_js + 'CHE.LITE_MOUNT();\n' + rd(os.path.join(SRC, 'lekcja', 'nawigacja.js'))
     i = doc.rindex('</body>'); doc = doc[:i] + '<script>\n' + js + '\n</script>\n' + doc[i:]
     return doc, sorted(ok & set(ids)), brak, nz
 

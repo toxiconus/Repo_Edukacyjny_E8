@@ -70,3 +70,9 @@ node tools/test_lekcje.cjs --wzorzec=dist/_wz/wzorzec.json   # z porównaniem tr
 
 ## Zasada @opis (2026-10-09)
 - Każda wizualizacja w md ma linię `@opis` (build egzekwuje, `narzedzia/opis_wizualizacji.py`). Dług starych lekcji: `narzedzia/opis_dlug.json` — przy edycji lekcji dopisywać opisy.
+
+## Lekki tor lekcji (2026-10-11) — `tools/lite.py`
+- Lekcja przez wspólny szablon + tylko potrzebne modele, bez `che-viz.js`: ~120–240 KB zamiast ~3 MB; ładowanie ok. 0,1 s (pełna: ok. 1,6 s na komputerze, 6–7 s przy CPU telefonu — biały ekran, potem nakładka).
+- Silniczki: `engine/src/lite/che-lite.js` (rejestr `CHE.VIEW.define`), `rx-lite.js` (naczynia SVG: zlewka, probówka w statywie, tygiel na trójkącie i trójnogu, palnik; ciecz, wskaźniki z pH, osad, gaz, piana, dym, blask — czyta specyfikacje zlewek z rozszerzenia.js), `stech-lite.js` (kalkulator, ten sam id `stech-kalkulator-v01`: masy z równania, proporcja, reagent ograniczający, kontrola masy, mole i objętości w trybie ambitnym; 18 reakcji z bilansem sprawdzanym przy starcie).
+- Dane pracowni: `node tools/lab_dane.cjs` → `engine/src/lite/lab-dane.json` (uruchamia rozszerzenia.js w piaskownicy; `pracownia()` zapisuje swoje grupy i notatki do `CHE.PRACOWNIE`). Po zmianie zlewek w rozszerzenia.js — uruchomić ponownie.
+- Do przeniesienia (raport `lite.py`, kolejność wg liczby lekcji): `periodic-54` (F04, F06, REV01, N01), `molecule3d-merged`, `tabela-rozpuszczalnosci-v01`, `gfx-scene-*` (conductivity, carbonate, acidMetal, indicatorRack), `ph-indicators-v03`, `kw-*`, `n0x-*`, `fiz-*`, `f04/f05`, `r03-krzywe/stezenie` (zależą od GFX — przepisać na rx-lite/SVG), `chain-scn`, `rownania-jonowe-v01`.

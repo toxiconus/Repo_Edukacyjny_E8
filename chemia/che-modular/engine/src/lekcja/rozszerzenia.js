@@ -149,6 +149,7 @@ V.define('n05-trendy-v01',{title:'Temperatury wrzenia wodorków — wiązania wo
    Użycie: pracownia(id, tytuł, podpowiedź, [[grupa,[klucze]]...], {klucz:{war,wn,bhp,eq}}).
    Spec zlewki może mieć `vessel` (beaker, tube, flask, evapDish, crucible, cylinder) — przekazywane do rx.mount. */
 function pracownia(id,title,hint,groups,notes,foot){
+ (C.PRACOWNIE=C.PRACOWNIE||{})[id]={title:title,hint:hint,groups:groups,notes:notes};   // dane dla lekkiego toru (tools/lab_dane.cjs)
  V.define(id,{title:title,tag:'GFX',hint:hint,foot:foot||'GFX.rx · rozszerzenia.js',
   build:function(host){host.innerHTML='';host.classList.add('x5');var bars=el('div'),area=el('div');host.append(bars,area);var all=[];
    if(!rx){area.textContent='Brak GFX.rx';return}
