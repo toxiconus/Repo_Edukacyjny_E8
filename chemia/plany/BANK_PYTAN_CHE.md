@@ -402,3 +402,24 @@ Zasada: wpis trafia tu jako „potwierdzony", tylko gdy adres był w wynikach wy
 Uwagi:
 - Zestawienie 19c24a0c stwierdza, że tekstu zadań nie może przepisać w całości. W banku zapisuję tylko metadane, tematy zadań własnymi słowami i odpowiedzi z kluczy. Pełną treść zadań można dodać po otrzymaniu własnych kopii PDF.
 - Nie podawać jako potwierdzonych: liczby zadań i punktów z zestawień, które nie zgadzają się z plikami powyżej.
+
+---
+
+## Weryfikacja zestawienia 5e7b51fe (2026-10-12) – Kraków 2023/24, Łódź 2023/24, Kielce 2022/23, Bydgoszcz 2025/26
+
+| Źródło (z zestawienia) | Wynik weryfikacji | Co potwierdzono |
+|---|---|---|
+| Kraków – schemat etapu szkolnego 2023/24 (`etap-szkolny-schemat-oceniania-5.pdf`) | **Potwierdzony (klucz)** | 40 zadań (numerowane 1–40, część z podpunktami), 45 pkt (1 pkt za każdy punkt do zdobycia). Odpowiedzi zamknięte: 1C 2C 3C 4C 5A 6B 7D 8B 9B 10.1A 10.2A 11.1B 11.2A 12C 13.1B 13.2A 14B 15D 16A 17B 18C 19B 20.1B 20.2A 20.3A 21A 22C 23B 24A 25A 26D 27B 28C 29C 30B 31B 32B 33D 34C 35C 36A 37C 38D 39B 40D. Czas pracy: brak w pliku. |
+| Kraków – arkusz etapu szkolnego 2023/24 (`etap-szkolny-zadania-7.pdf`, 2023/06) | **Niepotwierdzony** | Adres nie wystąpił w wynikach. Zestawienie podaje 16.11.2023 i 90 min – niezweryfikowane. Liczba zadań (40) i punkty (45) zgodne z kluczem, ale to dane z klucza, nie z arkusza. Tabela tematów zadań w zestawieniu – niezweryfikowana. |
+| Kraków – schemat etapu rejonowego 2023/24 (`etap-rejonowy-schemat-oceniania-6.pdf`) | **Potwierdzony (klucz)** | 40 zadań (1–40, z podpunktami), **60 pkt** (zestawienie nie podawało). Odpowiedzi zamknięte: 1.1P 1.2P 1.3P 2A 3D 4.1B 4.2ACD 5.1B 5.2A 6BD 7D 8B 9A 10B 11B 12.1B 12.2B 13D 14A 15A 16C 17C 18D 19C 20A 21C 22A 23.1C 23.2CD 24.1ABC 24.2BC 24.3B 25ABD 26AD 27.1B 27.2A 28C 29ACD 30ABC 31D 32.1A 32.2A 32.3B 32.4B 32.5B 33CD 34C 35.1BC 35.2B 35.3C 36A 37.1F 37.2F 37.3P 37.4F 38A 39C 40.1B 40.2B 40.3D. Czas pracy: brak w pliku. |
+| Kraków – arkusz etapu rejonowego 2023/24 (`etap-rejonowy-zadania-7.pdf`) | **Niepotwierdzony** | Adres nie wystąpił w wynikach. Zestawienie podaje 14 stron – niezweryfikowane. |
+| Kraków – schemat etapu wojewódzkiego 2023/24 (`mkch_etap-wojewodzki_schemat-oceniania.pdf`) | **Adres w wynikach, nieotwierany** | Do otwarcia. |
+| Kraków – arkusz etapu wojewódzkiego 2023/24 (`mkch_etap-wojewodzki_zadania.pdf`) | **Potwierdzony (arkusz)** | 22 marca 2024; **16 zadań, 120 min, 60 pkt**; brak klucza w pliku (plik zawiera arkusz i brudnopis). Tematy: 1 kwas tlenowy o masie 47 u (2 pkt); 2 doświadczenie w probówkach (4); 3 stężenie KOH po wprowadzeniu K₂O do wody (2); 4 MgO z CaCO₃, wydajność 80% (2); 5 rozpuszczalność soli, nasycenie (5); 6 metale prawda/fałsz (2); 7 nadmiar reagenta NaOH/H₂SO₄ (2); 8 szereg aktywności metali (7); 9 cyna, reakcje redoks, heksahydroksocynian(IV) potasu (8); 10 alkany i gaz syntezowy (4); 11 reakcje węglowodoru A z HBr i wodą (8); 12 propyn (4); 13 spalanie alkanolu (2); 14 alkohol wielowodorotlenowy (2); 15 rozcieńczanie kwasu octowego (2); 16 ester C₅H₁₀O₂ (4). Zestawienie 5e7b51fe podawało „do sprawdzenia" – dane teraz potwierdzone. |
+| Łódź – schematy i testy 2023/24 (DOCX, strona `materialy-konkursowe-6`) | **Niepotwierdzony (DOCX nieczytelne)** | Schematy 2023/24 (`schemat-oceniania-etap-wojewodzki-chemia-2023-2024.docx` i `schemat-oceniania-etap-szkolny-...-2023-2024.docx`) wystąpiły w wynikach wyszukiwania, ale nie zostały otwarte. Pliki DOCX nie dają się otworzyć narzędziem (zwracają dane binarne). |
+| Kielce – strony 2022/23 (etap rejonowy `69026`, etap III `71069`) | **Niepotwierdzony** | Adresy nie wystąpiły w wynikach wyszukiwania; nie otwierane. Zestawienie podaje „IV Wojewódzki Konkurs z Chemii" – nieprzetestowane. |
+| Bydgoszcz – klucz etapu rejonowego 2025/26 (`2526_rejon_klucz_chemia.pdf`, data 21.01.2026) | **Niepotwierdzony** | Adres nie wystąpił w wynikach wyszukiwania; nie otwierany. Strona zbiorcza 2025-12-08 też nieotwarta (zob. poprzednia weryfikacja). |
+| Bydgoszcz – strona zbiorcza etapu szkolnego 2025/26 | **Niepotwierdzony** | Jak wyżej. |
+
+Uwagi:
+- Pozycja Kraków 2023/24 wojewódzki ma teraz kompletne dane z pliku (16 zadań, 120 min, 60 pkt, bez klucza). Klucz do tego etapu nie został znaleziony w wynikach wyszukiwania.
+- Łódź 2019/20–2022/23 i Kielce 2019/20–2021/22 oraz 2023/24–2024/25 nadal do zrobienia (zestawienie 5e7b51fe proponuje je jako następną partię).
