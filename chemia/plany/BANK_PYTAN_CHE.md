@@ -110,7 +110,7 @@ Poziom wszystkich: P (podstawa E8), chyba że zaznaczono inaczej. Działy przypi
 8. (0–1) Otwarte. Która z substancji z informacji nie nadaje się do kapsuły okładu SUPER ICE i dlaczego. Dział: F03, K02.
 9. (0–1) Otwarte. Tabela: masa 15,68 g (0 s), 15,49 g (20 s), 15,33 g (40 s), 15,22 g (60 s). Oprócz pary wodnej i HCl wskazać czynnik powodujący ubytek masy i produkt reakcji magnezu z HCl. Dział: F17.
 10. (0–2) 10.1: prawdziwość dwóch zdań o smogu (P/F). 10.2: dlaczego najwięcej smogu jest zimą. Dział: N01.
-11. (0–2) Otwarte, rachunek. Tlenek niemetalu, którego kwas ma stosunek mas H : E : O = 1 : 16 : 24 (pierwiastek E ma masę 16 względem H = 1). Podać wzór tlenku i równanie reakcji z wodą. Dział: F12, N02. Poziom L.
+11. (0–2) Otwarte, rachunek. Tlenek niemetalu, którego kwas ma stosunek mas H : E : O = 1 : 16 : 24 (stosunek mas H : S : O = 1 : 16 : 24 odpowiada kwasowi H₂SO₃, tlenek SO₂ — do weryfikacji przy zadaniu). Podać wzór tlenku i równanie reakcji z wodą. Dział: F12, N02. Poziom L.
 12. (0–2) Otwarte, rachunek. Ile gramów NaOH i kilogramów wody do 10 kg roztworu 3%. Dział: R03. Poziom L.
 13. (0–1) Uzupełnienie wyborami. Przyduchę akwariową tłumaczy woda o (A niskiej / B wysokiej) temperaturze, a rozpuszczalność O₂ w wodzie z rosnącą temperaturą (C maleje / D rośnie). Dział: R02.
 14. (0–1) Wykres. Narysować punktowy wykres rozpuszczalności KCl od temperatury: 28, 40, 51, 56 g na 100 g wody w 0, 40, 80, 100 °C; osie z poprawną skalą. Dział: R02.
