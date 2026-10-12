@@ -45,3 +45,8 @@ Ranking z próby B2e (2026-10-11, szczegóły w `eksport/OCENA_MODELI.md`, autom
 - Odpowiedź, w której model pisze, że nie widział części pliku: przyjmuję tylko to, co widział; jego „rekonstrukcję” niewidzianych sekcji traktuję jako nowe propozycje i porównuję z oryginałem (oryginał zostaje).
 
 - 2026-10-11: Perplexity przy paczce 93 KB (L001) widziała plik tylko do ok. 70 KB (prompt + ~57 KB lekcji). Paczki dla Perplexity: **≤ 60 KB** (lekcja dzielona `podziel_lekcje.py --max 45`).
+
+## Paczka „GOTOWE” (od 2026-10-12) — odpowiedź do wklejenia bez poprawiania
+- Prompt: `eksport/GOTOWE_PROMPT.md` (pełne sekcje między `<<<PLIK` i `PLIK>>>`, numeracja sekcji z literą, zadania od `NASTĘPNE ZADANIE`, grafiki tylko jako tabela rodzajów + gotowy `@opis`, odpowiedź w md).
+- Paczka: `python3 eksport/paczka_gotowa.py NAZWA lekcja.md [--max 40] [--olimpiada]` → `eksport/out/GOTOWE_NAZWA_czKzN.md` (≈ 50 KB na część).
+- Wczytanie: `python3 narzedzia/wczytaj_odpowiedz.py lekcja.md odp_tura1.md [odp_tura2.md …]` (podgląd + kontrole) → `--zapisz`.

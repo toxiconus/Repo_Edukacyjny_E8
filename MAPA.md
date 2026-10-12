@@ -67,6 +67,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 10 KB
 - `PRZEKAZANIE.md` 5 KB
 
+## biologia/bio/grafiki/propozycje  (3 pl., 30 KB)
+- `U08_droga_wzrokowa.svg` 10 KB
+- `U10_krzywe_glukozy.svg` 10 KB
+- `U10_os_tarczycowa.svg` 10 KB
+
 ## biologia/bio/md  (10 pl., 802 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 44 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 61 KB
@@ -116,7 +121,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (36 pl., 1014 KB)
+## biologia/plany/audyty  (40 pl., 1.1 MB)
 - (zwinięte; `ls biologia/plany/audyty`) — duże:
 - ⚠`ULEPSZ_GLM_U01_2026-10-11.md` 66 KB
 - ⚠`ULEPSZ_GLM_U03_2026-10-11.md` 124 KB
@@ -124,8 +129,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`ULEPSZ_H01_gpt-6_2026-10-11.md` 52 KB
 - ⚠`ULEPSZ_H01_model_B_2026-10-11.md` 61 KB
 - ⚠`ULEPSZ_H01_model_E_2026-10-11.md` 55 KB
-- ⚠`ULEPSZ_U08_cz1_2026-10-11.md` 58 KB
-- ⚠`W1_perplexity_U04_krazenie_2026-10-11.md` 78 KB
+- ⚠`ULEPSZ_SONNET_U08_reszta_2026-10-12.md` 54 KB
+- ⚠`ULEPSZ_SONNET_U10_reszta_2026-10-12.md` 60 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB
@@ -586,7 +591,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (13 pl., 66 KB)
+## eksport  (13 pl., 67 KB)
 - (zwinięte; `ls eksport`)
 
 ## narzedzia  (15 pl., 111 KB)
