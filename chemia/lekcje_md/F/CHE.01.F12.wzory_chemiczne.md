@@ -321,3 +321,5 @@ Analiza składu pozwala ustalić wzór empiryczny, nawet gdy nie wiadomo, jaka j
 **Niepotwierdzone:** definicje wzoru strukturalnego, Lewisa i empirycznego (ogólna wiedza chemiczna); ciekawostka o CuSO₄·5H₂O (do weryfikacji); „ta sama liczba atomów, inna temperatura wrzenia” — nie sprawdzone liczbowo.
 
 **Do W1 FULL:** recenzent sprawdza definicje wzorów i ciekawostki.
+
+**Co zniknęło przy przebudowie (cała poprzednia treść zachowana):** pełna wersja z trzech MASTER, ściąga wzorów (tabela przykładów), L001 — powtórka fundamentów z klasy 7, STANDARD ZAPISU, A5 mnemotechniki, UZUPEŁNIENIE KANONICZNE, dwie kopie wykładu, doświadczenia modelowe, diagnoza startowa i sprawdzenie diagnostyczne, checklista, system powtórek, mapa myśli, dodatki C/D/E, definicje jednym zdaniem, 10 zasad supernauki, szybka ściąga do wydruku, status lekcji, audyt W1 Perplexity z 2026-10-09 (poprawki z listą ✔), oraz dodatkowe zadania i pytania testowe. Kompletna poprzednia wersja: `chemia/plany/F12_materialy_robocze_v1.md` — z niej należy przywrócić to, co wartościowe, w kolejnej wersji.
