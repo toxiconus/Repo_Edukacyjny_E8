@@ -25,6 +25,8 @@ nazwa, pliki = a[0], [Path(x) for x in a[1:]]
 import json
 REJ = ROOT / 'eksport' / 'GOTOWE_cele.json'
 cele = json.loads(REJ.read_text()) if REJ.exists() else {}
+REJZ = ROOT / 'eksport' / 'GOTOWE_zrodla.json'
+zrodla = json.loads(REJZ.read_text()) if REJZ.exists() else {}
 def kod_z(c):
     m = re.match(r'[A-Z]{3}\.\d\d\.([A-Z0-9]+)\.', c.name) or re.match(r'([A-Z]+\d+[A-Z]?)_', c.name)
     return m.group(1) if m else c.stem
@@ -62,10 +64,12 @@ for z, c in napisz:
            '- WZÓR FRONTMATTERA (uzupełnij pola w < >):', ''] + ['    ' + x for x in wzor]
     if uwaga: nag.append(f'- UWAGA AUTORA: {uwaga}')
     cele[kod] = str(c.relative_to(ROOT) if c.is_absolute() else c)
+    zrodla[kod] = str(z.relative_to(ROOT) if z.is_absolute() else z)
     nag.append(f'- UWAGA: numery i kody wewnątrz materiału (np. „L006”, „L011”) są stare — w odpowiedzi używaj wyłącznie KOD {kod}.')
     t = re.sub(r'^#\s+LEKCJA\b', '### (materiał) lekcja', t, flags=re.M)
     kody.append(kod); czesci.append('\n'.join(nag) + '\n\n**MATERIAŁ ROBOCZY:**\n\n' + t.rstrip() + '\n')
 if napisz: REJ.write_text(json.dumps(cele, ensure_ascii=False, indent=1))
+if napisz: REJZ.write_text(json.dumps(zrodla, ensure_ascii=False, indent=1))
 spis = f'# PACZKA {nazwa} — lekcje: ' + ', '.join(kody) + f'\n\nOpracuj je po kolei, jedną na turę (po „dalej” następna). Odpowiedź: sama treść — tylko pliki między `<<<PLIK <KOD>` i `PLIK>>>`.'
 out = ROOT / 'eksport' / 'out'; out.mkdir(exist_ok=True)
 f = out / f'GOTOWE_{nazwa}.md'

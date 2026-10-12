@@ -89,6 +89,13 @@ for kod, czesci in lekcje.items():
     dup('haseł słownika', [x.split('::')[0].strip().lower() for x in P.slownik(B)] if isinstance(P.slownik(B), list) else [])
     dup('pytań testu', [l[2:].strip().lower() for l in L if l.startswith('? ')])
     dup('numerów zadań', re.findall(r'^::: (?:karta exam|adv) \| Zadanie (\d+)', wynik, re.M))
+    import json as _j
+    _rz = ROOT / 'eksport' / 'GOTOWE_zrodla.json'
+    if _rz.exists() and kod in _j.loads(_rz.read_text()) and (ROOT / _j.loads(_rz.read_text())[kod]).exists():
+        _src = (ROOT / _j.loads(_rz.read_text())[kod]).read_text()
+        _ids = lambda t: set(re.findall(r'^@(?:viz|model|zlewka)\s+([\w-]+)', t, re.M))
+        _brak = _ids(_src) - _ids(wynik)
+        if _brak: krit.append('zgubione grafiki z materiału: ' + ', '.join(sorted(_brak)) + ' — dopisz linie @viz/@opis z materiału')
     out = lek if (zapisz and not krit) else ROOT / 'eksport' / 'out' / (lek.stem + '.nowa.md')
     out.parent.mkdir(exist_ok=True); out.write_text(wynik)
     print(f'Sekcje z odpowiedzi: {len(sekN)} (zastąpiono {i1 - i0 + 1} oryginalnych), frontmatter: {"nowy" if fmN else "stary"}')
