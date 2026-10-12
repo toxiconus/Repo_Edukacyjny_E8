@@ -642,3 +642,22 @@ Nowe w wynikach, do otwarcia w kolejnej partii:
 - Treść pliku 42228ae8 jest identyczna z 338b4889 (Świętokrzyskie III etap 2022/23). Weryfikacja: zob. sekcja „Weryfikacja zestawienia 338b4889".
 - Wynik bez zmian: katalog `71069` i wszystkie osiem PDF-ów (arkusze i klucze biologii, chemii, angielskiego, polskiego) nie wystąpiły w wynikach wyszukiwania. Liczby (dni, punkty, czas, liczba zadań) i analizy zadań – niezweryfikowane.
 - Nie dopisywać tego samego zestawienia ponownie; przy kolejnych dublach odnotować tylko numer.
+
+---
+
+## Weryfikacja zestawienia z wiadomości (2026-10-12) – E8 2024, Kielce 2023/24 i 2022/23 (etap II)
+
+| Źródło | Wynik | Co potwierdzono |
+|---|---|---|
+| CKE – „oficjalny portal arkuszy" z filtrem roku i przedmiotu (E8 2024: polski, matematyka, angielski) | **Niepotwierdzony jako oficjalny portal** | Adresu portalu nie ma w wynikach. Wyniki to media (gazetaprawna.pl – „Egzamin ósmoklasisty 2024. Arkusze i odpowiedzi…"; otouczelnie.pl – „Arkusze egzamin ósmoklasisty CKE (2019–2026)") oraz OKE Kraków (`filemgmt/visit.php?lid=8170`, `lid=8184`). Te źródła nie są CKE – mogą służyć jako wskazówka, ale nie jako źródło główne. Nieotwierane. |
+| E8-POL-2024, E8-MAT-2024, E8-ANG-2024 (wpisy w zestawieniu) | **Niepotwierdzone** | Oparte na niepotwierdzonym portalu. Nie wpisywać jako potwierdzone do czasu otwarcia pliku CKE. |
+| Kielce – III etap 2023/24 (katalog, biologia/chemia/angielski/polski) | **Niepotwierdzony** | Strona nie wystąpiła w wynikach (jak wcześniej). |
+| Kielce – II etap 2022/23 (katalog: biologia, chemia, angielski) | **Niepotwierdzony** | Katalog nie wystąpił w wynikach. Wyniki: regulaminy ogólne WKP 2022/23 (zewnętrzne szkoły) – nieotwierane. |
+| Kielce – klucz polskiego III etapu 2023 (`vi-wojewodzki-konkurs-z-jezyka-polskiego-iii-etap-klucz-odpowiedzi.pdf`, katalog 2023/05) | **Potwierdzony (klucz)** | Nagłówek: VI Wojewódzki Konkurs z Języka Polskiego, etap III (wojewódzki), **20 marca 2023**, start 10:00. **21 zadań, 70 pkt**. Czas pracy: nie podano w pliku (zestawienie podaje 60 min – niepotwierdzone). Odpowiedzi zamknięte (odczyt z podsumowania, do ponownej kontroli przed użyciem): 1 ABCD; 2 ACD; 3 ABC; 4 AEH; 5 kurhan–D, burzan–F, jutrzenka–I, kędy–B, ostrów–A, nurza się–K; 6 A–F B–F C–F D–F E–F F–F G–F H–P; 7 AC; 8 BCD; 9 BC; 10 A–F B–P C–P D–P E–F F–P G–P H–F; 11 BCD; 12 BD; 13 BC; 14 D; 15 AC; 16 AC; 17 A–F B–P C–F D–P E–F F–F; 18 ABCD; 19 BC; 20 AB; 21 BC. |
+| Kielce – arkusz polskiego III etapu 2023 (`vi-...-arkusz-z-zadaniami.pdf`) | **Niepotwierdzony** | Adres nie wystąpił w wynikach. Liczba zadań i punktów z zestawienia (21/70) zgodne z kluczem. |
+| Kielce – arkusz i klucze pozostałych przedmiotów 2023 (biologia, chemia, angielski) | **Niepotwierdzone** | Adresy nie wystąpiły w wynikach. Zob. poprzednie weryfikacje (338b4889, 42228ae8). |
+| Analiza pułapek i metody (zadanie reakcji metalu z kwasem, przykład z „drożdżami", pytania klasyfikacyjne) | **Metoda, nie dane z arkusza** | Nie przypisywać do konkretnych zadań arkuszy bez ich odczytania. |
+
+Uwagi:
+- Klucz polskiego ma odpowiedzi z podsumowania, nie z przepisanego pliku. Przed wpisaniem do parafraz zweryfikować pozycje 5, 6, 10 i 17 (wiele podpunktów).
+- Źródła medialne (gazetaprawna, otouczelnie) nie są oficjalne. Wpisy z nich oznaczać jako „media, do sprawdzenia w CKE".
