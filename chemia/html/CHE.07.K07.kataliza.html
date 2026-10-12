@@ -638,83 +638,215 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;K07&quot; &quot;Kataliza&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "K07"</div><h1>"Kataliza"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele</a><a class="toc-link" href="#s3">3. Przykłady</a><a class="toc-link" href="#s4">4. Klinika błędów</a><a class="toc-link" href="#s5">5. Ćwiczenia + test (skrót)</a><a class="toc-link" href="#s6">6. Słownik</a><a class="toc-link" href="#s7">AUDYT Grok — 2026-10-09</a></nav></details>
-<p><strong>Dział:</strong> Energetyka, kinetyka i równowaga (blok K)
-<strong>Poziomy:</strong> E8 · LO
-<strong>Poprzednia:</strong> K05
-<strong>Następna:</strong> K08</p>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#s1">Przypomnienie z poprzednich lekcji</a><a class="toc-link" href="#wyklad">1. Wykład 1 — po co przyspieszać reakcję bez zużycia substancji</a><a class="toc-link" href="#rodzaje">2. Wykład 2 — dwa rodzaje katalizy</a><a class="toc-link" href="#enzymy">3. Wykład 3 — enzymy: katalizatory życia</a><a class="toc-link" href="#inhibitory">4. Wykład 4 — inhibitory: hamowanie reakcji</a><a class="toc-link" href="#rownowaga">5. Wykład 5 — katalizator a równowaga</a><a class="toc-link" href="#przyklady">6. Przykłady: katalizatory w przemyśle i samochodach</a><a class="toc-link" href="#autokataliza">7. Mechanizm i autokataliza</a><a class="toc-link" href="#klinika">8. Klinika błędów</a><a class="toc-link" href="#mnemotechniki">9. Mnemotechnika</a><a class="toc-link" href="#cwiczenia">10. Ćwiczenia</a><a class="toc-link" href="#test">11. Test</a><a class="toc-link" href="#slownik">12. Słownik</a><a class="toc-link" href="#fiszki">13. Fiszki</a><a class="toc-link" href="#mosty">14. Mosty</a><a class="toc-link" href="#ciekawostki">15. Ciekawostki</a><a class="toc-link" href="#s2">Źródła</a><a class="toc-link" href="#s3">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (wersja 2, wg skillu)</a></nav></details>
+<p>Ta lekcja pokazuje, jak przyspieszać reakcję bez zużywania substancji, która ją przyspiesza. Po jej przejściu umiesz wyjaśnić, co robi katalizator z energią aktywacji, odróżnić katalizę homo- i heterogeniczną, opisać rolę enzymów i inhibitorów oraz wyjaśnić, dlaczego katalizator nie zmienia położenia równowagi.</p>
 <section id="s1">
-<div class="part-heading">KARTA STARTOWA E8 — 10 rzeczy, które muszę umieć</div>
+<div class="part-heading">Przypomnienie z poprzednich lekcji</div>
+<p>Zanim przeczytasz dalej, odpowiedz na dwa pytania z K05 i K06 (bez zaglądania):</p>
 <ol>
-<li>Katalizator obniża E_a, przyspiesza reakcję, nie zużywa się netto.</li>
-<li>Kataliza homogeniczna: katalizator w tej samej fazie co reagenty.</li>
-<li>Kataliza heterogeniczna: inna faza (np. ciało stałe + gazy).</li>
-<li>Enzymy = biokatalizatory (białka); wysoce selektywne.</li>
-<li>Inhibitor spowalnia (czasem „truuje” katalizator).</li>
-<li>Katalizator nie przesuwa równowagi — przyspiesza osiągnięcie.</li>
-<li>Przemysł: synteza NH₃ (Fe), H₂SO₄ (V₂O₅), kraking.</li>
-<li>Samochody: katalizator trójdrożny (Pt, Pd, Rh) — CO, NOₓ, węglowodory → CO₂, N₂, H₂O.</li>
-<li>Autokataliza: produkt jest katalizatorem.</li>
-<li>BHP: pyły metali szlachetnych, warunki przemysłowe.</li>
+<li>Jak nazywa się najmniejsza energia, jaką cząsteczki muszą mieć, by reakcja mogła zajść po zderzeniu?</li>
+<li>Co dzieje się z szybkością reakcji, gdy podniesiesz temperaturę?</li>
 </ol>
-<h3>Diagnoza wejściowa</h3>
+<div class="card card-understand">
+<span class="card-label">Klucz do przypomnienia</span>
 <ol>
-<li>Co robi katalizator z E_a?</li>
-<li>Homogeniczna vs heterogeniczna?</li>
-<li>Co to enzym?</li>
-<li>Czy katalizator zmienia wydajność równowagową?</li>
-<li>Przykład w samochodzie?</li>
+<li>Energia aktywacji (E_a). Im niższa, tym więcej zderzeń kończy się reakcją.</li>
+<li>Szybkość rośnie, bo więcej zderzeń ma energię co najmniej E_a. Jeśli odpowiedź była inna, wróć do K06 przed dalszą lekcją.</li>
 </ol>
-<p><strong>Klucz:</strong> 1 obniża; 2 ta sama / inna faza; 3 biokatalizator; 4 nie; 5 katalizator spalin.</p>
-<p><strong>Pytanie przewodnie:</strong> Jak przyspieszyć reakcję „za darmo” (bez zużycia substancji)?</p>
+</div>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 6 punktów</h3>
+<ol>
+<li>Katalizator przyspiesza reakcję, obniżając energię aktywacji, i nie zużywa się netto.</li>
+<li>Kataliza homogeniczna: katalizator i reagenty są w tej samej fazie.</li>
+<li>Kataliza heterogeniczna: katalizator jest w innej fazie (zwykle ciało stałe, reagenty gazowe lub ciekłe).</li>
+<li>Enzymy to białkowe biokatalizatory, bardzo selektywne.</li>
+<li>Inhibitor zmniejsza szybkość albo wyłącza katalizator.</li>
+<li>Katalizator nie zmienia wydajności równowagowej, tylko przyspiesza osiąganie równowagi.</li>
+</ol>
+</section>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">1</span> Wykład 1 — po co przyspieszać reakcję bez zużycia substancji</div>
+<div class="card card-understand">
+<span class="card-label">Wykład od zera</span>
+<p>Zacznijmy od pytania: czy da się przyspieszyć reakcję, nie dokładając do niej żadnej substancji, która potem zniknie? Tak, i właśnie to robi katalizator. Katalizator to substancja, która przyspiesza reakcję chemiczną i po jej zakończeniu odzyskuje się ją w całości. Przyspieszanie reakcji przez katalizator nazywamy katalizą.</p>
+<p>Dlaczego katalizator działa? Wiemy już z K06, że reakcja wymaga, by cząsteczki zderzyły się z energią co najmniej równą energii aktywacji E_a. Katalizator tworzy z substratami zmodyfikowany kompleks aktywny, na którego powstanie potrzeba mniej energii. Dzięki temu więcej zderzeń kończy się reakcją, a szybkość rośnie. Ważne: katalizator obniża E_a zarówno dla reakcji w przód, jak i wstecz, więc przyspiesza obie.</p>
+<p>Katalizator nie jest reagentem w sensie bilansu: pojawia się w mechanizmie, ale na końcu wraca do stanu wyjściowego. Nie oznacza to, że nigdy się nie zmienia. Może się zużyć, zanieczyścić albo utracić powierzchnię, dlatego w przemyśle pilnuje się jego stanu.</p>
+</div>
+<h3>1.1 Mini-wykład: skąd wzięło się słowo „kataliza"</h3>
+<div class="card card-understand">
+<span class="card-label">W skrócie: rozluźnianie i przyspieszanie</span>
+<p>Słowo pochodzi od greckiego katalysis, czyli „rozluźnienie”. Termin wprowadził w 1835 roku Jöns Jacob Berzelius, który zauważył, że pewne substancje wpływają na reakcje, nie wchodząc w ich ostateczny bilans. To dobry przykład, że nazwy w nauce bywają starsze niż dzisiejsza teoria.</p>
+</div>
+</section>
+<section id="rodzaje">
+<div class="part-heading"><span class="part-num">2</span> Wykład 2 — dwa rodzaje katalizy</div>
+<h3>2.1 Kataliza homogeniczna</h3>
+<p>Katalizator i reagenty są w tej samej fazie, najczęściej w roztworze. Przykład: rozkład estrów w kwaśnym roztworze, w którym jony H⁺ działają jak katalizator. Zaleta: dobrze mieszają się z substratami. Wada: trudniej oddzielić katalizator od produktu.</p>
+<h3>2.2 Kataliza heterogeniczna</h3>
+<p>Katalizator jest w innej fazie niż reagenty, najczęściej jako ciało stałe, a reagenty są gazem lub cieczą. Reakcja zachodzi na powierzchni katalizatora: substraty adsorbują się na niej, reagują i produkty odchodzą. Dlatego ważna jest powierzchnia, a więc rozdrobnienie katalizatora.</p>
+<div class="card card-core">
+<span class="card-label">Jak działa kataliza heterogeniczna — krok po kroku</span>
+<ol>
+<li>Substraty docierają do powierzchni katalizatora i przyłączają się do niej (adsorpcja).</li>
+<li>Na powierzchni wiązania w substratach osłabiają się, a cząsteczki ustawiają się blisko siebie.</li>
+<li>Powstaje produkt, który odłącza się od powierzchni (desorpcja).</li>
+<li>Powierzchnia jest wolna i może przyjąć następne cząsteczki.
+Pytanie do przemyślenia: dlaczego katalizator w postaci proszku działa szybciej niż ten sam materiał w jednym grudzie?</li>
+</ol>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie: powierzchnia to pole do reakcji</span>
+<p>Im większa powierzchnia katalizatora, tym więcej miejsc, na których może zajść reakcja w tym samym czasie. Dlatego katalizatory przemysłowe mają postać siatek, granulek lub bardzo drobnego proszku naniesionego na nośnik.</p>
+</div>
+</section>
+<section id="enzymy">
+<div class="part-heading"><span class="part-num">3</span> Wykład 3 — enzymy: katalizatory życia</div>
+<h3>3.1 Czym są enzymy</h3>
+<p>Enzymy to białka, które przyspieszają reakcje biochemiczne. Są bardzo selektywne: każdy enzym zwykle przyspiesza jedną reakcję lub jeden typ przemian. Działają w łagodnych warunkach, w temperaturze ciała i przy odczynie zbliżonym do obojętnego, czego przemysł często nie potrafi odtworzyć.</p>
+<h3>3.2 Model działania</h3>
+<p>Enzym ma miejsce aktywne, w którym dopasowuje się substrat, podobnie jak klucz do zamka. Nowsze ujęcie, dopasowanie indukowane, mówi, że miejsce aktywne lekko zmienia kształt pod wpływem substratu. Efekt jest ten sam: obniżona E_a i przyspieszona reakcja.</p>
+<div class="card card-understand">
+<span class="card-label">Mini-wykład: dlaczego enzymy są tak selektywne</span>
+<p>Miejsce aktywne jest ukształtowane tak, by pasować tylko do określonych cząsteczek. Dlatego w komórce jeden enzym może przyspieszać przemianę cukru, a obok przemianę tłuszczu, bez mieszania się tych procesów. Selektywność to jedna z przyczyn, dla których organizm nie potrzebuje wysokich temperatur.</p>
+</div>
+</section>
+<section id="inhibitory">
+<div class="part-heading"><span class="part-num">4</span> Wykład 4 — inhibitory: hamowanie reakcji</div>
+<p>Inhibitor to substancja, która zmniejsza szybkość reakcji. Może działać na dwa sposoby. W hamowaniu kompetycyjnym inhibitor zajmuje miejsce aktywne i uniemożliwia wejście substratu. W hamowaniu niekompetycyjnym inhibitor przyłącza się w innym miejscu i zmienia kształt enzymu, przez co traci on aktywność.</p>
+<p>Inhibitory mają znaczenie praktyczne: leki często działają jak inhibitory enzymów, a niektóre trucizny blokują właśnie enzymy. Z drugiej strony w przemyśle inhibitory stosuje się, gdy reakcja jest zbyt gwałtowna albo prowadzi do niepożądanych produktów.</p>
+<div class="card card-warning">
+<span class="card-label">Pułapka: inhibitor to nie zawsze trucizna</span>
+<p>Inhibitor spowalnia reakcję, ale nie musi być szkodliwy dla organizmu. Wiele leków jest inhibitorami enzymów, które w chorobie działają zbyt intensywnie. Słowo „inhibitor” opisuje mechanizm, nie ocenę bezpieczeństwa.</p>
+</div>
+</section>
+<section id="rownowaga">
+<div class="part-heading"><span class="part-num">5</span> Wykład 5 — katalizator a równowaga</div>
+<p>Najczęstszy błąd przy katalizie: myślenie, że katalizator zmienia wynik reakcji. Katalizator obniża E_a w obu kierunkach, więc przyspiesza zarówno reakcję w przód, jak i wstecz, o tyle samo. Stała równowagi i wydajność równowagowa pozostają takie same. Katalizator tylko skraca czas, po którym układ osiąga równowagę.</p>
+<p>Pytanie: czy dodanie katalizatora może zwiększyć ilość produktu w stanie równowagi? Nie. Może sprawić, że układ osiągnie równowagę szybciej, ale nie przesunie jej. Zmianę położenia równowagi wywołują inne czynniki (np. stężenie, temperatura), o których będzie mowa w K08 i K10.</p>
+</section>
+<section id="przyklady">
+<div class="part-heading"><span class="part-num">6</span> Przykłady: katalizatory w przemyśle i samochodach</div>
+<h3>6.1 Synteza amoniaku</h3>
+<p>W procesie Habera–Boscha azot i wodór reagują na katalizatorze żelaznym w wysokiej temperaturze i pod wysokim ciśnieniem. Katalizator nie zmienia wydajności równowagowej, ale pozwala osiągnąć sensowną szybkość w rozsądnym czasie. Bez katalizatora reakcja byłaby zbyt wolna, by opłacało się ją prowadzić.</p>
+<h3>6.2 Rozkład nadtlenku wodoru</h3>
+<p>Nadtlenek wodoru rozkłada się powoli do wody i tlenu. Dodanie tlenku manganu(IV) przyspiesza rozkład: wydziela się tlen, a sam MnO₂ pozostaje nietknięty. To szkolny przykład katalizy heterogenicznej, który łatwo zaobserwować.</p>
+<h3>6.3 Katalizator trójdrożny w samochodzie</h3>
+<p>W spalinach samochodowych znajdują się tlenek węgla, tlenki azotu i węglowodory. Katalizator trójdrożny, zawierający platynę, pallad i rod, przyspiesza ich przemianę w mniej szkodliwe substancje: dwutlenek węgla, azot i wodę. Nazwa „trójdrożny” oznacza, że usuwa trzy rodzaje zanieczyszczeń jednocześnie.</p>
+<div class="card card-core">
+<span class="card-label">Zadanie w głowie: czy katalizator zmieni wynik?</span>
+<ol>
+<li>Określ, czy zmieniamy szybkość, czy wydajność równowagową.</li>
+<li>Jeśli szybkość: katalizator zadziała (obniża E_a).</li>
+<li>Jeśli wydajność równowagową: katalizator nic nie zmieni.
+Sprawdź na przykładzie: Haber–Bosch — katalizator pomaga szybkości, nie zmienia wydajności równowagowej.</li>
+</ol>
+</div>
+</section>
+<section id="autokataliza">
+<div class="part-heading"><span class="part-num">7</span> Mechanizm i autokataliza</div>
+<p>W niektórych reakcjach produkt sam jest katalizatorem. Taką reakcję nazywamy autokatalizą. Przykład: reakcja jonów manganianowych(VII) z kwasem szczawiowym w środowisku kwaśnym, w której powstające jony Mn²⁺ przyspieszają dalszy przebieg reakcji. Na początku przebieg jest powolny, potem nagle przyspiesza, a po zużyciu substratów zwalnia.</p>
+<p>Autokatalizę łatwo pomylić z zwykłą katalizą. Różnica: katalizatorem jest produkt, który pojawia się w trakcie reakcji, a nie substancja dodana na początku.</p>
+<div class="card card-understand">
+<span class="card-label">Mini-wykład: krzywa w kształcie litery S</span>
+<p>Na wykresie stężenia produktu w czasie autokataliza daje charakterystyczny kształt: początkowo wolno, potem szybciej, a na końcu wypłaszcza się. Ten sam kształt występuje w wielu procesach biologicznych i w rozprzestrzenianiu się informacji. Warto go zapamiętać jako wzorzec „najpierw powoli, potem szybko, na końcu nasycenie”.</p>
+</div>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">8</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">Katalizator zużywa się w reakcji</td><td class="col-ok" data-label="Poprawa">Katalizator odzyskuje się w całości (netto nie zużywa się)</td><td data-label="Dlaczego">Pojawia się w mechanizmie, ale na końcu wraca do stanu wyjściowego</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Katalizator przesuwa równowagę</td><td class="col-ok" data-label="Poprawa">Katalizator przyspiesza obie strony o tyle samo</td><td data-label="Dlaczego">Nie zmienia stałej równowagi ani wydajności równowagowej</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Katalizator zmienia ΔH reakcji</td><td class="col-ok" data-label="Poprawa">Katalizator zmienia tylko E_a</td><td data-label="Dlaczego">ΔH zależy od bilansu energii substratów i produktów</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Enzym działa na wszystkie substancje</td><td class="col-ok" data-label="Poprawa">Enzym jest selektywny</td><td data-label="Dlaczego">Miejsce aktywne pasuje tylko do określonych cząsteczek</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Więcej katalizatora zawsze daje więcej produktu</td><td class="col-ok" data-label="Poprawa">Ilość produktu w równowadze zależy od warunków, nie od katalizatora</td><td data-label="Dlaczego">Katalizator skraca czas, nie zmienia wyniku końcowego</td></tr></tbody></table>
+<div class="myth-grid"><div class="myth-head">Mity o katalizatorach</div><div class="myth"><p class="myth-x"><span>Mit</span>Katalizator zwiększa wydajność reakcji.</p><p class="myth-ok"><span>Poprawnie</span>Katalizator skraca czas dojścia do równowagi, nie zmienia jej położenia.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>Enzymy działają tylko w organizmach żywych.</p><p class="myth-ok"><span>Poprawnie</span>Enzymy działają tam, gdzie są niezbędne, ale ich zasada (obniżanie E_a) dotyczy też katalizy poza organizmem.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>Katalizator nie ma znaczenia, skoro się nie zużywa.</p><p class="myth-ok"><span>Poprawnie</span>Choć się nie zużywa netto, może stracić aktywność przez zanieczyszczenia lub zmiany powierzchni.</p></div></div>
+</section>
+<section id="mnemotechniki">
+<div class="part-heading"><span class="part-num">9</span> Mnemotechnika</div>
+<div class="card card-understand">
+<span class="card-label">Sposób pamięciowy</span>
+<p>Katalizator: „przyspiesza, ale nie zmienia wyniku”. Jeśli pytanie dotyczy szybkości, myśl o E_a. Jeśli dotyczy wydajności równowagowej, myśl o tym, że katalizator nic nie zmienia.</p>
+</div>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">10</span> Ćwiczenia</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (2 pkt) — typ katalizy</span>
+<p>W przemysłowej syntezie gazów katalizatorem jest stałe żelazo, a reagentami są gazowe azot i wodór. Określ typ katalizy i uzasadnij.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Kataliza heterogeniczna: katalizator jest w innej fazie niż reagenty (ciało stałe, gazy). (1 pkt za typ, 1 pkt za uzasadnienie fazami)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (2 pkt) — enzymy</span>
+<p>Wyjaśnij, dlaczego enzymy działają w temperaturze ciała, a wiele katalizatorów przemysłowych wymaga wysokiej temperatury.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Enzymy są białkami o określonym kształcie miejsca aktywnego i działają w łagodnych warunkach organizmu; katalizatory przemysłowe często są metalami lub tlenkami, które potrzebują wyższej temperatury, by osiągnąć dostateczną szybkość. (1 pkt za enzym jako białko, 1 pkt za porównanie warunków)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (2 pkt) — równowaga</span>
+<p>W reakcji dodano katalizator. Czy zmieni się stężenie produktu w stanie równowagi? Odpowiedź uzasadnij.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Nie. Katalizator obniża E_a w obu kierunkach o tyle samo, więc nie zmienia stałej równowagi ani położenia równowagi. Zmienia się tylko czas osiągnięcia równowagi. (1 pkt za odpowiedź, 1 pkt za uzasadnienie)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (3 pkt) — autokataliza</span>
+<p>Reakcja, w której jeden z produktów przyspiesza ją, przebiega powoli na początku, potem szybciej, a na końcu wolniej. Opisz ten przebieg i wskaż, która substancja jest katalizatorem.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Przebieg: początkowo wolno (mało katalizatora), potem szybciej (rośnie stężenie produktu-katalizatora), na końcu wolniej (substratów jest mało). Katalizatorem jest produkt reakcji, czyli mamy autokatalizę. (1 pkt za opis etapów, 1 pkt za wskazanie produktu, 1 pkt za nazwę zjawiska)</p>
+</details>
+</div>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">11</span> Test</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Katalizator tworzy kompleks aktywny o niższej energii, więc więcej zderzeń kończy się reakcją."><h5>1. Katalizator przyspiesza reakcję, ponieważ:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">obniża energię aktywacji</button><button type="button" class="quiz-opt" data-a="1">zwiększa stałą równowagi</button><button type="button" class="quiz-opt" data-a="2">podnosi temperaturę układu</button><button type="button" class="quiz-opt" data-a="3">zmienia ΔH reakcji</button></div></div><div class="quiz-q" data-ok="0" data-fb="Heterogeniczna oznacza różną fazę, najczęściej ciało stałe i gazy lub ciecz."><h5>2. Kataliza heterogeniczna zachodzi, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">katalizator jest w innej fazie niż reagenty</button><button type="button" class="quiz-opt" data-a="1">katalizator i reagenty są w tej samej fazie</button><button type="button" class="quiz-opt" data-a="2">katalizatorem jest enzym</button><button type="button" class="quiz-opt" data-a="3">reakcja nie wymaga zderzeń</button></div></div><div class="quiz-q" data-ok="0" data-fb="Katalizator przyspiesza obie strony o tyle samo."><h5>3. Dodanie katalizatora do układu w równowadze:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">skraca czas osiągnięcia równowagi, nie zmienia jej położenia</button><button type="button" class="quiz-opt" data-a="1">zwiększa wydajność produktu w równowadze</button><button type="button" class="quiz-opt" data-a="2">przesuwa równowagę w stronę substratów</button><button type="button" class="quiz-opt" data-a="3">zmienia stałą równowagi</button></div></div><div class="quiz-q" data-ok="0" data-fb="Inhibitor hamuje reakcję; nie każdy inhibitor jest trucizną."><h5>4. Inhibitor:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">zmniejsza szybkość reakcji lub wyłącza katalizator</button><button type="button" class="quiz-opt" data-a="1">zawsze zwiększa szybkość reakcji</button><button type="button" class="quiz-opt" data-a="2">jest enzymem białkowym z definicji</button><button type="button" class="quiz-opt" data-a="3">jest tym samym, co katalizator</button></div></div><div class="quiz-q" data-ok="0" data-fb="Synteza amoniaku przebiega na katalizatorze żelaznym."><h5>5. W procesie Habera–Boscha katalizatorem jest:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">żelazo</button><button type="button" class="quiz-opt" data-a="1">platyna</button><button type="button" class="quiz-opt" data-a="2">kwas siarkowy</button><button type="button" class="quiz-opt" data-a="3">woda</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">12</span> Słownik</div>
+<dl><div class="def-item"><dt>Kataliza</dt><dd>przyspieszanie reakcji przez katalizator, który obniża E_a i nie zużywa się netto</dd></div><div class="def-item"><dt>Katalizator</dt><dd>substancja przyspieszająca reakcję, odzyskiwana w całości</dd></div><div class="def-item"><dt>Kataliza homogeniczna</dt><dd>katalizator i reagenty w tej samej fazie</dd></div><div class="def-item"><dt>Kataliza heterogeniczna</dt><dd>katalizator w innej fazie niż reagenty; reakcja na powierzchni</dd></div><div class="def-item"><dt>Enzym</dt><dd>białkowy biokatalizator, selektywny</dd></div><div class="def-item"><dt>Inhibitor</dt><dd>substancja zmniejszająca szybkość reakcji lub wyłączająca katalizator</dd></div><div class="def-item"><dt>Autokataliza</dt><dd>sytuacja, w której produkt reakcji jest jej katalizatorem</dd></div><div class="def-item"><dt>Adsorpcja</dt><dd>przyłączanie cząsteczek do powierzchni ciała stałego</dd></div><div class="def-item"><dt>Miejsce aktywne</dt><dd>fragment enzymu lub katalizatora, w którym zachodzi reakcja</dd></div><div class="def-item"><dt>Energia aktywacji</dt><dd>najmniejsza energia potrzebna do reakcji po zderzeniu</dd></div></dl>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">13</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Co robi katalizator z energią aktywacji?</span><span class="back">Obniża ją</span><span class="card-tag tag-basic">kataliza</span></button><button class="flashcard" type="button"><span class="front">Czym jest kataliza homogeniczna?</span><span class="back">Katalizator i reagenty w tej samej fazie</span><span class="card-tag tag-basic">kataliza</span></button><button class="flashcard" type="button"><span class="front">Czym jest kataliza heterogeniczna?</span><span class="back">Katalizator w innej fazie niż reagenty</span><span class="card-tag tag-basic">kataliza</span></button><button class="flashcard" type="button"><span class="front">Czym są enzymy?</span><span class="back">Białkowe biokatalizatory, bardzo selektywne</span><span class="card-tag tag-basic">enzymy</span></button><button class="flashcard" type="button"><span class="front">Co to inhibitor?</span><span class="back">Substancja zmniejszająca szybkość reakcji</span><span class="card-tag tag-basic">enzymy</span></button><button class="flashcard" type="button"><span class="front">Czy katalizator zmienia wydajność równowagową?</span><span class="back">Nie, tylko skraca czas osiągnięcia równowagi</span><span class="card-tag tag-understand">rownowaga</span></button><button class="flashcard" type="button"><span class="front">Co to autokataliza?</span><span class="back">Produkt reakcji jest jej katalizatorem</span><span class="card-tag tag-understand">kataliza</span></button><button class="flashcard" type="button"><span class="front">Dlaczego drobny proszek katalizatora działa szybciej?</span><span class="back">Ma większą powierzchnię</span><span class="card-tag tag-understand">kataliza</span></button><button class="flashcard" type="button"><span class="front">Jaki katalizator jest w syntezie amoniaku?</span><span class="back">Żelazo</span><span class="card-tag tag-basic">przemysl</span></button><button class="flashcard" type="button"><span class="front">Jakie metale są w katalizatorze trójdrożnym?</span><span class="back">Platyna, pallad i rod</span><span class="card-tag tag-basic">przemysl</span></button><button class="flashcard" type="button"><span class="front">Co rozkłada nadtlenek wodoru szybciej?</span><span class="back">Tlenek manganu(IV)</span><span class="card-tag tag-basic">przemysl</span></button><button class="flashcard" type="button"><span class="front">Co oznacza „selektywny” enzym?</span><span class="back">Przyspiesza tylko określone reakcje</span><span class="card-tag tag-understand">enzymy</span></button><button class="flashcard" type="button"><span class="front">Dlaczego inhibitor nie zawsze jest trucizną?</span><span class="back">Bo opisuje mechanizm, nie szkodliwość</span><span class="card-tag tag-adv">enzymy</span></button></div>
+</section>
+<section id="mosty">
+<div class="part-heading"><span class="part-num">14</span> Mosty</div>
+<ul>
+<li>Przed tą lekcją: K05 (czynniki szybkości) i K06 (zderzenia i energia aktywacji).</li>
+<li>Dalej: K08 (równowaga dynamiczna) — tam zobaczysz, jak katalizator zmienia czas dojścia do równowagi, a nie jej położenie.</li>
+</ul>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">15</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Nagroda Nobla za katalizę palladową</span>
+<p>W 2010 roku Nagrodę Nobla z chemii otrzymali Richard Heck, Ei-ichi Negishi i Akira Suzuki za reakcje sprzęgania krzyżowego katalizowane palladem. Ich metody pozwalają budować złożone cząsteczki w syntezie leków, materiałów i elektroniki. (Źródło: ZPE, lekcja o katalizie)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Dlaczego katalizator trójdrożny ma metale szlachetne</span>
+<p>Platyna, pallad i rod są drogie, ale ich powierzchnia skutecznie przyspiesza reakcje spalin nawet w niskiej temperaturze. Dlatego ilość metali w katalizatorze jest mała, a jego konstrukcja (plaster miodu z naniesioną warstwą) zwiększa powierzchnię. (do weryfikacji)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Enzymy w kuchni</span>
+<p>Gdy dodajesz ananasa lub kiwi do galaretki, ich enzymy rozkładają białka żelatyny i galaretka się nie zastyga. Przegotowanie owocu niszczy enzym, dlatego galaretkę z przegotowanym owocem zwykle da się zrobić. (do weryfikacji)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Autokataliza na wykresie</span>
+<p>Kształt krzywej „powoli, potem szybko, na końcu nasycenie” pojawia się w wielu procesach, nie tylko chemicznych. Rozważ, gdzie jeszcze znasz taki przebieg.</p>
+</div>
 </section>
 <section id="s2">
-<div class="part-heading"><span class="part-num">2</span> Cele</div>
+<div class="part-heading">Źródła</div>
 <ul>
-<li>Wyjaśnia działanie katalizatora.</li>
-<li>Rozróżnia typy katalizy.</li>
-<li>Podaje przykłady przemysłowe i biologiczne.</li>
+<li>ZPE (zpe.gov.pl, materiał o katalizie): definicja katalizatora, obniżanie energii aktywacji, kataliza homo- i heterogeniczna, enzymy i inhibitory, nagroda Nobla za reakcje palladowe. Adres: https://zpe.gov.pl/pdf/Pk7c0m5mp</li>
+<li>Uniwersytet Medyczny w Białymstoku, „Kinetyka chemiczna — teoria” (PDF): definicje szybkości i stechiometria szybkości, używane w K04. Adres: https://www.umb.edu.pl/photo/pliki/WF_jednostki/zaklad-chemii-fizycznej/kinetyka_chemiczna_teoria.pdf</li>
+<li>Do uzupełnienia przy W1 FULL: przykłady przemysłowe (Haber–Bosch, proces kontaktowy, katalizator trójdrożny) i autokatalizę w źródle akademickim; wpis Khan Academy lub Wikipedii o katalizie.</li>
 </ul>
 </section>
 <section id="s3">
-<div class="part-heading"><span class="part-num">3</span> Przykłady</div>
-<ul>
-<li>MnO₂ + H₂O₂ → O₂ (heterogeniczna)</li>
-<li>Enzymy trawienne</li>
-<li>Haber-Bosch: Fe</li>
-<li>Katalizator samochodowy</li>
-</ul>
-</section>
-<section id="s4">
-<div class="part-heading"><span class="part-num">4</span> Klinika błędów</div>
-<div class="table-wrap"><table>
-<thead><tr><th>Błąd</th><th>Popraw</th></tr></thead>
-<tbody>
-<tr><td>Katalizator zużywa się</td><td>Netto nie</td></tr>
-<tr><td>Przesuwa równowagę</td><td>Tylko przyspiesza obie strony</td></tr>
-</tbody></table></div>
-</section>
-<section id="s5">
-<div class="part-heading"><span class="part-num">5</span> Ćwiczenia + test (skrót)</div>
-<ol>
-<li>Typ katalizy: Pt + gazy spalin.</li>
-<li>Po co enzymy?</li>
-<li>Czy więcej katalizatora = inna równowaga?</li>
-</ol>
-<p><strong>Klucz:</strong> 1 heterogeniczna; 2 przyspieszenie reakcji w organizmie w łagodnych warunkach; 3 nie.</p>
-</section>
-<section id="s6">
-<div class="part-heading"><span class="part-num">6</span> Słownik</div>
-<div class="table-wrap"><table>
-<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
-<tbody>
-<tr><td>Kataliza</td><td>Przyspieszenie przez obniżenie E_a</td></tr>
-<tr><td>Enzym</td><td>Biokatalizator białkowy</td></tr>
-</tbody></table></div>
-</section>
-<section id="s7">
-<div class="part-heading">AUDYT Grok — 2026-10-09</div>
-<p>Nowa lekcja od zera. Status: UZUPEŁNIONE.</p>
+<div class="part-heading">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (wersja 2, wg skillu)</div>
+<p><strong>Zmiany względem wersji 1 (2,4 KB, bez wykładu):</strong> dodano przypomnienie z K05/K06, minimum, pięć wykładów (pojęcie, homo/heterogeniczna, enzymy, inhibitory, równowaga), przykłady przemysłowe, autokatalizę z mini-wykładem, klinikę (5 wierszy), mity (3), mnemotechnikę, zadania (4 z kluczem), test 5 pytań przekrojowych, słownik 10 haseł, fiszki 13, mosty, ciekawostki 4, źródła.</p>
+<p><strong>Potwierdzone w źródle ZPE:</strong> definicja, obniżanie energii aktywacji, homo/heterogeniczna, enzymy (selektywność), inhibitory, nagroda Nobla 2010 za reakcje palladowe.</p>
+<p><strong>Niepotwierdzone (zaznaczone „do weryfikacji”):</strong> rozkład enzymów w kuchni i konstrukcja katalizatora trójdrożnego; szczegóły procesu Habera–Boscha (warunki) i proces kontaktowy nie zostały odczytane ze źródła; autokataliza z kwasem szczawiowym i jonami Mn²⁺ wymaga źródła akademickiego.</p>
+<p><strong>Do W1 FULL:</strong> recenzent sprawdza przykłady przemysłowe, reakcję z MnO₂ i autokatalizę, a także ciekawostki.</p>
 </section>
 
 </main>
