@@ -127,6 +127,40 @@ Poziom wszystkich: P (podstawa E8), chyba że zaznaczono inaczej. Działy przypi
 
 Odpowiedzi do tego arkusza: brak w pobranym pliku. Każdą odpowiedź do zadań zamkniętych wyliczyć i zweryfikować przed wpisaniem do lekcji.
 
+## Materiał wtórny — zestawienie od użytkownika (DeepSeek), klasa 8 — NIEZWERYFIKOWANE
+
+Status: **nie jest źródłem oficjalnym.** Użytkownik przekazał zestawienie z komentarzem „z deepseek, że źródłami”. Oryginałów (PDF rosyjskich olimpiad itd.) nie mamy — nie udało się ich zweryfikować, więc żadnego z tych pytań nie wstawiamy do lekcji bez sprawdzenia. Poniżej zapis treści i to, co udało się sprawdzić rachunkiem lub rozumowaniem. Etap: olimpiada, poziom O (klasa 8, nie egzamin).
+
+**Chemia**
+1. (testowe) Ile pierwiastków, których proste substancje są niemetalami, jest w układzie okresowym: a) 12, b) 22, c) 44, d) 87. — **Nie rozstrzygnięte** (zależy od przyjętej liczby niemetali; brak klucza). Do weryfikacji.
+2. (testowe) Które zjawisko jest chemiczne: a) kwaśnienie mleka, b) tworzenie rosy, c) rozpuszczanie cukru, d) parowanie. — **Odpowiedź a** (kwaśnienie mleka to przemiana chemiczna: powstaje kwas mlekowy). b, c, d — przemiany fizyczne.
+3. (otwarte) Rozdzielenie mieszaniny opiłków drewna, małych gwoździ, cukru i piasku rzecznego. — **Propozycja (do weryfikacji):** magnes (gwoździe) → woda i sączenie (piasek) → odparowanie wody (cukier) → wiórki drewna zbierane ręcznie lub sitem, bo są lżejsze od wody. Zadanie wymaga uzasadnienia właściwością.
+4. (otwarte) Dlaczego niedobór wapnia powoduje większe siniaki. — **Nie zweryfikowane.** Brak wiarygodnego uzasadnienia w zestawieniu; nie wpisywać bez źródła.
+
+**Biologia**
+1. (testowe) Który organizm jest eukariontem: a) archeony, b) bakterie, c) grzyby, d) sinice. — **Odpowiedź c** (grzyby; archeony, bakterie i sinice to prokarionty).
+2. (testowe) Funkcja lizosomów: A synteza białek, B przechowywanie materiału genetycznego, C rozkład zużytych organelli, D magazynowanie wody. — **Odpowiedź C** (lizosomy trawią zużyte organelle i cząsteczki).
+3. (otwarte) Osmoza i przykład z życia. — **Do opracowania** (odpowiedź wzorcowa: dyfuzja wody przez błonę półprzepuszczalną, np. ogórek w solance). Wymaga klucza z kryteriami.
+4. (otwarte) Doświadczenie weryfikujące hipotezę, że rośliny pobierają wodę głównie przez włośniki. — **Do opracowania** (np. dwie rośliny: z korzeniami i bez / z uszkodzonymi włośnikami; pomiar ubytku wody; kontrola).
+
+**Język polski**
+1. (testowe) Zdanie z niepoprawną interpunkcją: A, B, C. — **Odpowiedź C** (brak przecinka przed „a” łączącym zdania: „…na podróżach, a w trakcie…”). A i B są poprawne.
+2. (otwarte) Ilustracja do „Latarnika” — dwa elementy graficzne i ich sens. — **Do opracowania** (bez ilustracji nie da się zweryfikować).
+3. (otwarte) Projekt piórnika — dwa elementy i lektura obowiązkowa. — **Do opracowania** (wymaga oryginalnego projektu).
+
+**Matematyka**
+1. (otwarte) Średnia z 16·10²⁰¹⁸, 2,8·10²⁰¹⁹, 0,46·10²⁰²⁰. — **Wynik 3,0·10²⁰¹⁹**. Rachunek: 16·10²⁰¹⁸ = 1,6·10²⁰¹⁹; 0,46·10²⁰²⁰ = 4,6·10²⁰¹⁹; suma 9,0·10²⁰¹⁹; średnia 3,0·10²⁰¹⁹.
+2. (otwarte) Pięciocyfrowa liczba N: dopisanie 1 z lewej daje trzykrotnie mniejszą liczbę niż dopisanie 1 z prawej. — **N = 42857**. Rachunek: 10N + 1 = 3(100000 + N) → 7N = 299999 → N = 42857.
+3. (otwarte) W trapezie ABCD, S — punkt przecięcia przekątnych: wykazać, że pole BCS = pole ASD. — **Do opracowania** (dowód: trójkąty BCS i ASD mają równe pola, bo pole BCD = pole ACD jako trójkąty o wspólnej podstawie CD i tej samej wysokości; odjąć wspólny fragment COS... wymaga dokładnego rozpisania). Oznaczyć jako zadanie O, do weryfikacji.
+4. (testowe) Jeśli 40% a = 50% b, to 40% b = ? — **Odpowiedź C (32% a)**. Rachunek: b = 0,8a, więc 0,4b = 0,32a.
+
+**Język angielski**
+1. (listening) Hobby proponowane przez Daniela i Olivię, wybór końcowy (kajakarstwo, wędkarstwo, narty wodne, kolarstwo górskie, wspinaczka). — **Nie zweryfikowane** (wymaga nagrania).
+2. (reading) Toby w kuchni słynnego szefa: problem Toby'ego — a) hałas, b) nie mógł niczego znaleźć, c) za dużo warzyw. — **Nie zweryfikowane** (wymaga tekstu).
+3. (use of English) Znaleźć błędy w zdaniach; przykład: „My mom will be very angry, if we will be late.” — **Poprawka:** „…if we are late.” (w zdaniu warunkowym typu I w klauzuli „if” używamy czasu teraźniejszego). Reszta zdań — do weryfikacji po otrzymaniu oryginału.
+
+Wniosek: z 17 pozycji udało się sprawdzić rachunkiem lub rozumowaniem 6 (chem. 2, bio. 1, 2, pol. 1, mat. 1, 2, 4, ang. 3 — razem 8 z 22 podpunktów); pozostałe wymagają oryginału.
+
 ## Konkursy i olimpiady — poziomy (etap szkolny, rejonowy, wojewódzki)
 
 Zasada: każde pytanie ma etap i źródło. Na razie tylko podstawówka.
