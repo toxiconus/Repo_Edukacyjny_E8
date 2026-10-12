@@ -10,17 +10,15 @@
 
 ## chemia
 
-**WYSŁAĆ (bez W1) — 3 lekcji, 148 KB:** FIZ-01 (55 KB) · N05 (58 KB) · R03A (34 KB)
+**WYSŁAĆ (bez W1) — 2 lekcji, 93 KB:** N05 (58 KB) · R03A (34 KB)
 
-- zestaw 1 (55 KB): `python3 eksport/paczka_ai.py ulepsz CHE_FIZ-01 chemia/che-modular/lessons-md/gotowe/FIZ01_elektrostatyka.md`
+- zestaw 1 (58 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N05 chemia/che-modular/lessons-md/gotowe/N05_wodorki.md`
 
-- zestaw 2 (58 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N05 chemia/che-modular/lessons-md/gotowe/N05_wodorki.md`
-
-- zestaw 3 (34 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R03A chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
+- zestaw 2 (34 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R03A chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
 
 **niski priorytet (W1 starym promptem) — 12 lekcji, 827 KB:** F01 (52 KB) · F02 (43 KB) · F03 (43 KB) · F04 (32 KB) · F05 (35 KB) · F06 (55 KB) · N01 (122 KB) · N02 (128 KB) · N03 (133 KB) · N04 (85 KB) · R03 (33 KB) · REV01 (61 KB)
 
-**NIE wysyłać (W1 FULL) — 1 lekcji, 55 KB:** F17 (55 KB)
+**NIE wysyłać (W1 FULL) — 2 lekcji, 170 KB:** F17 (55 KB) · FIZ-01 (114 KB)
 
 ## polski
 
