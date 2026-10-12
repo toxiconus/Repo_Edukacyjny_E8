@@ -6,7 +6,7 @@
 - Build: `python3 biologia/bio/narzedzia/md2html_bio.py` → `biologia/bio/dist/<KOD>.html` (jeden samodzielny plik, offline, telefon) + `index.html`.
 - Test: `node biologia/bio/narzedzia/sprawdz_bio.js` (390 px + 1200 px; konsola, grafiki, przewijanie w bok). Opcja `--zrzuty katalog`.
 - Wygląd: `szablon/baza-wspolna.css` (styl lekcji z CHE, nie edytować) + `szablon/bio-warstwa.css` (paleta bio, grafiki; tylko tryb dzienny). Zachowanie: `szablon/lekcja.js`.
-- Grafiki: nowa biblioteka `szablon/bio-viz.js` — katalog w `BIO_KATALOG.md`. Stare HTML/wizualizacje (`biologia/wizualizacje/`, `biologia/*.html`) tylko jako źródło treści; grafik z nich nie przenosimy.
+- Grafiki (od 2026-10-12, zamiast jednego `bio-viz.js`): rdzeń `szablon/bio-core.js` + osobny plik na każdą grafikę `szablon/wizualizacje/<id>.js` (59 sztuk). Lekcja dostaje do HTML tylko rdzeń i grafiki, które wywołuje (`@viz`) — przykład L010: 488 KB → 221 KB. Katalog `BIO_KATALOG.md` generuje `python3 biologia/bio/narzedzia/katalog_wizualizacji.py` (plik, animacja, lekcje). Nową grafikę dodajesz plikiem w `wizualizacje/`, nie w rdzeniu. Stare HTML/wizualizacje (`biologia/wizualizacje/`, `biologia/*.html`) tylko jako źródło treści; grafik z nich nie przenosimy.
 
 ## Lekcje
 | Kod | Plik md | Stan |
@@ -23,7 +23,7 @@
 | U10 | `BIO.07.U10.uklad_dokrewny.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.10; scalone 4 odpowiedzi AI (BADANIE) + szkielet OLI B2e + Claude; grafiki `gruczoly-mapa` (nowa), `sprzezenie-zwrotne` (scenariusze tyroksyna, wapń), `glukoza-wykres`; test OK; do W1 |
 
 ## Stan 2026-10-11 (grafiki)
-- Lekcje `biologia/md` budowane `python3 narzedzia/lekcja_html.py -p bio <md>` → `biologia/html/`; wszystkie mają grafiki z `bio-viz.js` (poza L003). Nowe grafiki 2026-10-10: relacje-ekologiczne, konczyny-homologiczne, energia-materia, zrodla-zmiennosci, kontrola-podzialow, eutrofizacja, homeostaza, endosymbioza, hardy-weinberg (katalog `BIO_KATALOG.md`).
+- Lekcje `biologia/md` budowane `python3 narzedzia/lekcja_html.py -p bio <md>` → `biologia/html/`; wszystkie mają grafiki z `wizualizacje/` (poza L003). Nowe grafiki 2026-10-10: relacje-ekologiczne, konczyny-homologiczne, energia-materia, zrodla-zmiennosci, kontrola-podzialow, eutrofizacja, homeostaza, endosymbioza, hardy-weinberg (katalog `BIO_KATALOG.md`).
 - Test w przeglądarce: każda grafika 390/900 px bez błędów (skrypt jednorazowy w playwright; wzór: zrzut figury `[data-bio-viz]`, klik przycisków `.bv-btn`, `pageerror`).
 - Braki: wykład / mini-wykłady / ciekawostki (`python3 narzedzia/sprawdz_wyklady.py biologia/md`) → do napisania lub W1.
 

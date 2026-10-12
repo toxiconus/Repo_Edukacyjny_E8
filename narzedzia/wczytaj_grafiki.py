@@ -3,7 +3,7 @@
 Użycie: python3 narzedzia/wczytaj_grafiki.py odp1.md [odp2.md …] [--wstaw]
   - zapisuje każdą grafikę jako podgląd: <przedmiot>/szablon/nowe/<id>.html (+ <id>.opis.txt, <id>.katalog.txt),
   - sprawdza: znaczniki VIZ, id, globalne zmienne, kolory na sztywno, zewnętrzne zasoby, rozmiar; test w Chromium (błędy JS, czy coś narysowano),
-  - --wstaw (tylko bio): dopisuje kod do biologia/bio/szablon/bio-viz.js (VIZ.→BIO., vz-→bv-) i wiersz do BIO_KATALOG.md;
+  - --wstaw (tylko bio): zapisuje kod jako nowy plik biologia/bio/szablon/wizualizacje/<id>.js (VIZ.→BIO., vz-→bv-) i wiersz do BIO_KATALOG.md;
     pol/ang zostają w nowe/ (biblioteki pol-viz.js nie mają jeszcze pomocników VIZ)."""
 import re, sys, subprocess, json
 from pathlib import Path
@@ -13,7 +13,7 @@ if not a: print(__doc__); sys.exit(2)
 wstaw = '--wstaw' in a; a = [x for x in a if x != '--wstaw']
 txt = ''.join(Path(x).read_text() + '\n' for x in a)
 KAT = {'bio': ROOT/'biologia/bio', 'pol': ROOT/'polski', 'ang': ROOT/'angielski'}
-LIB = {'bio': (ROOT/'biologia/bio/szablon/bio-viz.js', ROOT/'biologia/bio/BIO_KATALOG.md')}
+LIB = {'bio': (ROOT/'biologia/bio/szablon/wizualizacje', ROOT/'biologia/bio/BIO_KATALOG.md')}
 bloki = re.findall(r'<<<GRAFIKA[ \t]+(\S+)[ \t]+(\S+)[^\n]*\n(.*?)\n\s*GRAFIKA>>>(.*?)(?=<<<GRAFIKA|\Z)', txt, re.S)
 if not bloki: print('BŁĄD: brak bloków <<<GRAFIKA … GRAFIKA>>>'); sys.exit(1)
 wyn = []
@@ -58,13 +58,13 @@ with sync_playwright() as p:
     ok = not blad
     if ok and wstaw and prz in LIB and kod:
         lib, katf = LIB[prz]
-        L = lib.read_text()
-        if f"BIO.define('{gid}'" in L: ostrz.append('już jest w bibliotece — nie dopisuję')
+        plik = lib / f'{gid}.js'
+        if plik.exists(): ostrz.append('już jest w wizualizacje/ — nie nadpisuję')
         else:
             k2 = kod.replace('VIZ.', 'BIO.').replace("'vz-", "'bv-").replace('"vz-', '"bv-').replace(' vz-', ' bv-')
-            lib.write_text(L.rstrip() + f'\n\n/* {gid} — z odpowiedzi GRAFIKI_PROMPT */\n' + k2 + '\n')
+            plik.write_text(f'/* viz: {gid} — z odpowiedzi GRAFIKI_PROMPT */\n(function(){{\nvar BIO=window.BIO;\n' + k2 + '\n}})();\n')
             if kat: katf.write_text(katf.read_text().rstrip() + '\n' + kat + '\n')
-            ostrz.append('WSTAWIONO do ' + lib.name)
+            ostrz.append('WSTAWIONO: ' + str(plik.relative_to(ROOT)))
     wyn.append((gid, prz, ok))
     print(('✅ ' if ok else '❌ ') + f'{gid} [{prz}] → {f.relative_to(ROOT)}' + ''.join('\n   ❌ ' + x for x in blad) + ''.join('\n   ⚠ ' + x for x in ostrz))
 print(f'\nRazem: {len(wyn)}, poprawnych: {sum(1 for x in wyn if x[2])}')

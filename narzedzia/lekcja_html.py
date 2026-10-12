@@ -8,7 +8,7 @@ Przedmioty (-p): che, bio, pol, ang, oli — motyw w szablon/motywy/<p>.css. Dom
 Wynik: jeden samodzielny plik HTML (style, skrypt i grafiki przedmiotu w środku) — działa offline i na telefonie.
 
 Parser: wspólny z chemią (chemia/che-modular/tools/md2html.py — dialekt SZABLON_LEKCJI). Dodatki ponad chemię:
-  @viz <id> {k="v"} | Tytuł | podpis   grafika z biblioteki przedmiotu (bio: bio-viz.js, pol: polski/szablon/pol-viz.js)
+  @viz <id> {k="v"} | Tytuł | podpis   grafika z biblioteki przedmiotu (bio: wizualizacje/<id>.js + bio-core.js, pol: polski/szablon/pol-viz.js)
   @opis tekst                          OBOWIĄZKOWO pod każdą grafiką: co widać + wniosek (HTML: <!-- OPIS -->)
   ::: mity | nagłówek                  linie:  mit || poprawnie
   ::: drzewo                           mapa pojęć z listy wcięć (2 spacje = poziom)
@@ -34,8 +34,7 @@ def _leaf_wciecie(blk, ctx):   # lista zaczynająca się od wcięcia (np. po aka
 m.leaf = _leaf_wciecie
 
 PRZEDMIOTY = {'che': 'Chemia', 'bio': 'Biologia', 'pol': 'Język polski', 'ang': 'Język angielski', 'oli': 'Olimpiada'}
-VIZ = {'bio': os.path.join(REPO, 'biologia', 'bio', 'szablon', 'bio-viz.js'),
-       'pol': os.path.join(REPO, 'polski', 'szablon', 'pol-viz.js')}   # biblioteki grafik przedmiotów
+VIZ = {'pol': os.path.join(REPO, 'polski', 'szablon', 'pol-viz.js')}   # biblioteki grafik przedmiotów
 
 def rd(p): return open(p, encoding='utf-8').read()
 
@@ -166,6 +165,14 @@ def z_nazwy(path):
     mm = re.match(r'[A-Z]{3}\.[\w]+\.([A-Z]+\d*[A-Za-z]?)\.', b) or re.match(r'(?:PL_|EN_)?([A-Z]+\d+[A-Z]?)_', b)
     return mm.group(1) if mm else ''
 
+BIO_SZ = os.path.join(REPO, 'biologia', 'bio', 'szablon')
+def bio_js(main):
+    """Biologia: rdzeń bio-core.js + tylko te wizualizacje (wizualizacje/<id>.js), które lekcja wywołuje przez @viz."""
+    ids = list(dict.fromkeys(re.findall(r'data-bio-viz="([\w-]+)"', main)))
+    brak = [i for i in ids if not os.path.exists(os.path.join(BIO_SZ, 'wizualizacje', i + '.js'))]
+    if brak: raise SystemExit('BŁĄD: brak wizualizacji w biologia/bio/szablon/wizualizacje/: ' + ', '.join(brak))
+    return rd(os.path.join(BIO_SZ, 'bio-core.js')) + '\n' + ''.join(rd(os.path.join(BIO_SZ, 'wizualizacje', i + '.js')) + '\n' for i in ids)
+
 def render(path, p):
     surowy = rd(path)
     meta0, body0 = m.front(surowy)
@@ -204,7 +211,7 @@ def render(path, p):
     foot = '<footer class="footer"><p>%s</p></footer>' % m.inline(meta['stopka']) if meta.get('stopka') else ''
     css = '\n'.join(rd(os.path.join(SZ, f)) for f in ('baza.css', 'ulepszenia.css', os.path.join('motywy', p + '.css')))
     own = '\n'.join(m.collect('styl', lines))
-    js = (rd(VIZ[p]) + '\n' if p in VIZ else '') + rd(os.path.join(SZ, 'lekcja.js'))
+    js = (bio_js(main) if p == 'bio' else (rd(VIZ[p]) + '\n' if p in VIZ else '')) + rd(os.path.join(SZ, 'lekcja.js'))
     bar = ('<header class="lk-bar"><span class="lk-subj"><i></i>%s</span><span class="lk-title">%s</span>'
            '<a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a>'
            '<button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>'

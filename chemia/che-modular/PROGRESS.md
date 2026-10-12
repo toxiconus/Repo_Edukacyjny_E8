@@ -129,3 +129,5 @@
 - 2026-10-12: odpowiedź na L021 (powtórka) okazała się lekcją o biotechnologii → zapisana jako BIO L022 (84 KB), do W1; L021 do ponownego napisania.
 
 - 2026-10-12: W1 wewnętrzny (Claude Haiku 5.5) dla N01, N02, N03 (+N04 wcześniej): wykłady „od zera”, mini-wykłady, ciekawostki, poprawki faktów i odwołań, usunięte harmonogramy; build md2html OK. Test `che.py test` nie zakończył się w limicie czasu — do powtórzenia.
+
+- 2026-10-12: BIO grafiki rozbite na pliki: `szablon/bio-core.js` (rdzeń) + `szablon/wizualizacje/<id>.js` (59 grafik, każda z własną animacją); lekcja dostaje tylko rdzeń i użyte grafiki (L010: 488 → 221 KB). Katalog `BIO_KATALOG.md` generuje `narzedzia/katalog_wizualizacji.py`. Sprawdzone: porównanie montażu wszystkich lekcji w Chromium (różnice tylko losowe id filtrów i klatki animacji), brak nierozwiązanych nazw, `sprawdz_bio.js` OK 14 lekcji.
