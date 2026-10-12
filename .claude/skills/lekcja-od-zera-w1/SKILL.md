@@ -24,30 +24,32 @@ Cel: uczeń siedzi sam z tekstem i rozumie temat bez nauczyciela. Lekcja ma być
 9. Test krótki, fiszki, słownik.
 10. Ciekawostki (`karta extra`, 3–5), mosty do innych lekcji, audyt (karta `AUDYT W1`).
 
-## 2. Limity (sprawdza `python3 narzedzia/limity_lekcji.py plik.md`)
-| Element | zwykła lekcja | `typ: test/powtorka` |
-|---|---|---|
-| fiszki (jeden termin z lekcji, bez duplikatów) | ≤ 30 | ≤ 60 |
-| pytania testu (`? …`) | ≤ 5 | ≤ 25 |
-| zadania egzaminacyjne | ≤ 6 | ≤ 15 |
-| słownik | ≤ 25 haseł | ≤ 60 |
-| sekcje `##` | ≤ 25 (więcej → podział na dwie lekcje) | ≤ 40 |
-| ciekawostki | 3–5 | 3–5 |
-| mini-wykłady „W skrócie” | ≤ 3 | ≤ 3 |
-| wykłady „Wykład — …” | dokładnie 1 | dokładnie 1 |
-| powtórzone akapity (≥ 60 znaków) | 0 | 0 |
+## 2. Orientacyjne progi (nie sztywne limity)
+Cel nadrzędny: **wyczerpać temat**, nie trzymać się liczby KB ani liczby elementów. Gotowe lekcje zwykle mają 80 KB i więcej, ale zależy to od tematu: trudny temat dostaje kilka wykładów i więcej mini-wykładów; prosty może mieć mniej. Progi poniżej służą tylko jako sygnał, że lekcja może puchnąć; przekroczenie jest dopuszczalne, jeśli wynika z tematu, a nie z powtórek.
 
-Zasady ponad liczby:
-- Fiszka = termin, który w lekcji został wyjaśniony. Nie robimy fiszki z każdego zdania.
-- Test to kontrola zrozumienia, nie drugi podręcznik. Pytania w teście nie powtarzają fiszek.
-- Nowe zadanie zamiast kolejnego podobnego: jeśli dwa zadania sprawdzają to samo, zostaje jedno.
-- Powtórek nie wklejamy: jeśli coś jest w wykładzie, nie kopiujemy zdania do mini-wykładu.
+| Element | próg orientacyjny | uwagi |
+|---|---|---|
+| wykłady „Wykład — …” | ≥ 1 | przy trudnym temacie kilka, każdy w osobnej sekcji |
+| mini-wykłady „W skrócie” | 2–5 | tam, gdzie tekst jest suchy; nie w każdej sekcji |
+| fiszki | do ok. 30 | jeden termin z lekcji, bez duplikatów |
+| pytania testu (`? …`) | do ok. 5 (w teście/powtórce więcej) | kontrola, nie drugi podręcznik |
+| zadania egzaminacyjne | 3–8 | każde z kluczem i punktacją |
+| ciekawostki | 3–5 | sprawdzone fakty |
+| sekcje `##` | do ok. 25 | więcej → rozważ podział na dwie lekcje |
+
+Twarde zasady (te nie są elastyczne):
+- Żaden długi akapit (≥ 60 znaków) nie powtarza się w tej samej lekcji.
+- Fiszka = termin wyjaśniony w lekcji. Test nie powtarza fiszek.
+- Dwa podobne zadania sprawdzające to samo: zostaje jedno.
+- Powtórek z wykładu nie wklejamy do mini-wykładów; mini-wykład dodaje nowe spojrzenie.
+
+Sprawdzenie progów: `python3 narzedzia/limity_lekcji.py plik.md` (⚠ to sygnał do przemyślenia, nie blokada; ❌ tylko przy braku wykładu lub powtórzonych akapitach).
 
 ## 3. Autoukrywanie fiszek (szablon)
 Fiszki ponad 6 są ukryte przez `szablon/lekcja.js`: pokazuje się pierwsze 6 fiszek (atrybut `data-fz-pierwsze` na `.flashcard-grid` zmienia liczbę) i przycisk „▼ Pokaż pozostałe N fiszek”. Nie trzeba nic pisać w md. Druk pokazuje wszystkie.
 
 ## 4. Sprawdzenie przed oddaniem (w tej kolejności)
-1. `python3 narzedzia/limity_lekcji.py plik.md` — brak ❌ (⚠ to podpowiedź, nie blokada).
+1. `python3 narzedzia/limity_lekcji.py plik.md` — brak ❌; ⚠ przemyśleć, czy wynika z tematu.
 2. `python3 narzedzia/sprawdz_wyklady.py` — wykład, mini-wykłady, ciekawostki.
 3. Build: `python3 narzedzia/lekcja_html.py -p <przedmiot> plik.md` (BIO: `biologia/bio/narzedzia/md2html_bio.py`). Grafiki: każda `@viz`/`@model` ma `@opis`.
 4. Fakty, liczby, klucze zadań sprawdzone; liczby niepewne oznaczone „(orientacyjnie)”.

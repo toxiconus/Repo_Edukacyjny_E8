@@ -4,7 +4,7 @@ Użycie: python3 narzedzia/limity_lekcji.py plik.md [plik2.md …]   (bez argume
 Lekcja może mieć w frontmatterze `typ: test` albo `typ: powtorka` — wtedy obowiązują wyższe limity na testy, fiszki, zadania i słownik.
 Zasady, które sprawdza, wynikają z pracy nad lekcjami: jedna fiszka = jeden termin z lekcji, test = krótka kontrola
 (nie drugi podręcznik), zadania i ciekawostki w rozsądnej liczbie, żaden długi akapit nie powtarza się w tej samej lekcji.
-Kod wyjścia 1, gdy jest przekroczenie limitu lub powtórzenie akapitu."""
+Progi są orientacyjne (⚠). Kod wyjścia 1 tylko przy braku wykładu lub powtórzonych akapitach (❌)."""
 import re, sys, glob, os
 from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,7 +12,7 @@ LIMIT = {  # (zwykła, test/powtórka)
     'fiszki': (30, 60), 'testy': (5, 25), 'zadania': (6, 15), 'slownik': (25, 60),
     'sekcje': (25, 40),
 }
-ZAWSZE = {'ciekawostki_max': 5, 'ciekawostki_min': 3, 'mini_max': 3, 'wyklad_min': 1, 'wyklad_max': 1}
+ZAWSZE = {'ciekawostki_max': 5, 'ciekawostki_min': 3, 'mini_max': 5, 'wyklad_min': 1}
 
 def policz(text):
     fm = re.match(r'---\n(.*?)\n---', text, re.S)
@@ -41,14 +41,16 @@ def sprawdz(path):
     w = policz(open(path, encoding='utf-8').read())
     t = 1 if w['typ'] in ('test', 'powtorka') else 0
     bledy, uwagi = [], []
+    # progi orientacyjne: tylko uwagi (temat może wymagać więcej)
     for k in ('fiszki', 'testy', 'zadania', 'slownik'):
         lim = LIMIT[k][t]
-        if w[k] > lim: bledy.append(f'{k} {w[k]} > {lim}')
+        if w[k] > lim: uwagi.append(f'{k} {w[k]} > orientacyjnie {lim} — czy wynika z tematu?')
     if w['sekcje'] > LIMIT['sekcje'][t]: uwagi.append(f"sekcje {w['sekcje']} — rozważ podział lekcji na dwie")
-    if w['ciekawostki'] > ZAWSZE['ciekawostki_max']: bledy.append(f"ciekawostki {w['ciekawostki']} > {ZAWSZE['ciekawostki_max']}")
+    if w['ciekawostki'] > ZAWSZE['ciekawostki_max']: uwagi.append(f"ciekawostki {w['ciekawostki']} > orientacyjnie {ZAWSZE['ciekawostki_max']}")
     if w['ciekawostki'] < ZAWSZE['ciekawostki_min']: uwagi.append(f"ciekawostki {w['ciekawostki']} < {ZAWSZE['ciekawostki_min']}")
-    if w['mini'] > ZAWSZE['mini_max']: bledy.append(f"mini-wykłady {w['mini']} > {ZAWSZE['mini_max']}")
-    if w['wyklad'] != 1: bledy.append(f"wykład: {w['wyklad']} (ma być 1 sekcja „Wykład — …”)")
+    if w['mini'] > ZAWSZE['mini_max']: uwagi.append(f"mini-wykłady {w['mini']} > orientacyjnie {ZAWSZE['mini_max']}")
+    # twarde: brak wykładu i powtórzone akapity
+    if w['wyklad'] < 1: bledy.append('brak sekcji „Wykład — …”')
     if w['powtorki']: bledy.append(f"powtórzone akapity: {w['powtorki']}")
     return w, bledy, uwagi
 
