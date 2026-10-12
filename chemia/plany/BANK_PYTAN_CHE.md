@@ -720,3 +720,30 @@ Tematy zadań (parafraza, nie treść):
 - Zad. 30: choroby zakaźne – patogen, droga zakażenia, profilaktyka (1 pkt)
 
 Status: przepis OCR – niezweryfikowany względem PDF. Nie wpisywać jako potwierdzonego arkusza. Brak klucza.
+
+---
+
+## Korekta po sprawdzeniu PDF: Świętokrzyskie – biologia, III etap (wojewódzki), 7.03.2024
+
+Źródło: PDF dostarczony przez użytkownika (plik `069817c1-v-wojewodzki-konkurs-z-biologii-iii-etap-arkusz-z-zadaniami_1.pdf`, 18 stron). Treść zadań nie jest przepisywana do banku; poniżej tylko metadane i wyniki porównania z przepisem.
+
+| Pole | Wartość z PDF | Status |
+|---|---|---|
+| Konkurs / etap / data | V Wojewódzki Konkurs z Biologii, etap III – wojewódzki, 7 marca 2024 r., godz. 10:00 | Potwierdzone (PDF) |
+| Czas pracy | 60 minut | Potwierdzone (PDF) |
+| Liczba zadań | 30 (18 stron) | Potwierdzone (PDF) |
+| Maks. punkty | **53** | Potwierdzone (PDF; suma wartości z nagłówków zadań = 53) |
+| Klucz / model odpowiedzi | **Brak w pliku** | Potwierdzone (PDF nie zawiera klucza) |
+| Punkty za zadania | Z1 0–4; Z2 0–1; Z3 0–2; Z4 0–1; Z5 0–4; Z6 0–2; Z7 0–1; Z8 0–1; Z9 0–3; Z10 0–1; Z11 0–2; Z12 0–1; Z13 0–2; Z14 0–1; Z15 0–1; Z16 0–1; Z17 0–2; Z18 0–1; Z19 0–1; Z20 0–2; Z21 0–3; Z22 0–1; Z23 0–4; Z24 0–3; Z25 0–3; Z26 0–1; Z27 0–1; Z28 0–1; Z29 0–1; Z30 0–1 | Potwierdzone (PDF) |
+
+Wynik porównania z przepisem OCR (sekcja wyżej):
+1. **Suma 52 vs 53 – BŁĄD PRZEPISU.** Zadanie 17 to 0–2 pkt (przepis podawał 0–1). Suma w PDF = 53, zgodna z nagłówkiem.
+2. **Zadanie 5, pozycja 1 („insulina i glikogen") – BŁĄD W ORYGINALE ARKUSZA.** Tekst jest identyczny w PDF. Nie poprawiać w banku; w parafrazach zaznaczać jako błąd arkusza.
+3. **Zadanie 15: odpowiedzi a) „3, 6" i d) „3, 6" – BŁĄD W ORYGINALE ARKUSZA.** Identyczne odpowiedzi w PDF.
+4. **Zadanie 25 – duplikat – BŁĄD PRZEPISU.** W PDF zadanie występuje raz. Wersja z przepisu („kwiczoł (Turdus pilaris)") zgodna z PDF.
+5. **Zadanie 2 i 11 – układ tabel** w przepisie był zniekształcony; w PDF tabela w zad. 11 ma kolumny I–IV, a zad. 2 to tabela z dopasowaniem 1–2 do A–B.
+6. **Zadania 3, 15, 17 – brak nagłówków** w przepisie; w PDF są nagłówki (zad. 3: schematy energii, zad. 15: antygeny grupowe krwi, zad. 17: królik himalajski).
+
+Do poprawy w zestawieniach i parafrazach: wartość zadania 17 (0–2), suma 53, usunięcie duplikatu w zad. 25. Przepis nie jest źródłem do cytowania; źródłem jest PDF.
+
+Status: arkusz **potwierdzony względem PDF** (metadane i punkty). Brak klucza. Oryginalne błędy w zad. 5 i 15 odnotowane.
