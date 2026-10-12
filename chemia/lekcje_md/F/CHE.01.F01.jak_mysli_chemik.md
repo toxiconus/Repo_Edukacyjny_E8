@@ -139,9 +139,15 @@ Nie wolno mieszać poziomów. Zapis 2H₂ + O₂ → 2H₂O nie oznacza, że w p
 
 To rozumowanie prowadzi do rozróżnienia zjawiska fizycznego i reakcji chemicznej.
 
-## Zjawisko fizyczne a reakcja chemiczna
+## Wykład 2 — zjawisko fizyczne czy reakcja chemiczna?
 
-Nie ma jednej obserwacji, która rozstrzyga sprawę. Korzystamy z całego zestawu danych.
+To najczęstsze pytanie w tym bloku, więc rozbieramy je krok po kroku. Zacznij od pytania: **czy po zakończeniu procesu mam tę samą substancję, tylko w innym stanie lub rozdrobnieniu, czy zupełnie nową?**
+
+Jeśli można odzyskać substancję wyjściową (np. zamrażając wodę albo odparowując roztwór soli), proces jest najpewniej fizyczny. Jeśli nowa substancja ma inny skład i właściwości, mamy reakcję. Objawy (pęcherzyki, osad, zmiana barwy) pomagają, ale nie rozstrzygają sprawy same.
+
+**Podpowiedź do pytania:** wyobraź sobie, że cofasz proces. Woda zamrożona wraca do wody. Tlenek magnezu nie wraca do magnezu bez innej przemiany. Ta różnica jest sednem.
+
+Nie ma jednej obserwacji, która rozstrzyga sprawę, która rozstrzyga sprawę. Korzystamy z całego zestawu danych.
 
 **Zjawisko fizyczne** (przemiana fizyczna): zmienia się stan skupienia, kształt, rozdrobnienie lub rozmieszczenie, ale nie powstaje nowa substancja. Przykłady: topnienie lodu, parowanie wody, rozdrobnienie kryształu. Materiał ZPE podaje zamarzanie wody: lód to nadal woda, zmienia się tylko stan skupienia.
 
