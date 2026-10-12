@@ -375,3 +375,30 @@ Zasada: każde pytanie ma etap i źródło. Na razie tylko podstawówka.
    - ✘ hel
    - *Uzasadnienie:* Reagują z wodą w atmosferze, tworząc kwasy.
 
+
+---
+
+## Weryfikacja zestawień 8eda72cd i 19c24a0c (2026-10-12)
+
+Zasada: wpis trafia tu jako „potwierdzony", tylko gdy adres był w wynikach wyszukiwania i plik został otwarty. Adresy spoza wyników wyszukiwania nie były otwierane.
+
+| Źródło (z zestawienia) | Wynik weryfikacji | Co potwierdzono |
+|---|---|---|
+| Łódź – `schemat-chemia.pdf` (2022/23, model odpowiedzi, etap szkolny) | **Potwierdzony** | 7 zadań (nie 3, jak podano w zestawieniu), maks. 55 pkt bez zad. 5g; zad. 1 test wyboru 1A 2C 3A 4A 5C 6B 7A 8A 9A 10C; pozostałe zadania z kryteriami punktowania (dekantacja, filtracja, tlen, siarka, izotopy). Źródło: model odpowiedzi, poziom szkolny. |
+| Warszawa – model odpowiedzi biologia wojewódzki 2025/26 | **Potwierdzony** | 16 zadań, maks. 40 pkt. Zadania 1–3 opisane w bank (zad. 1: rola Na⁺; zad. 3: dobór sztuczny, owoc i kwiat rzepaku). Zestawienie podawało tylko 3 zadania. |
+| Kielce – arkusz III etapu (wojewódzkiego) 2021 (`arkusz-_iii_etap_ii_wojewodzki_konkurs-_z_chemii.pdf`) | **Potwierdzony, z korektą** | Etap III, 22.03.2021, 20 zadań, 60 min, maks. 50 pkt, **bez klucza w pliku**. Zestawienie błędnie podawało 24 zadania zamknięte i klucz 50 pkt z etapu rejonowego. |
+| Kielce – klucz `ii-wojewodzki-konkurs-z-chemii-klucz-odpowiedzi.pdf` (2021) | **Niepotwierdzony** | Adres nie wystąpił w wynikach wyszukiwania; nie otwierany. |
+| CKE – `OCHP_C00.pdf` (arkusz pokazowy, 2020) | **Niepotwierdzony** | Adres nie wystąpił w wynikach. W wynikach jest inny plik: OKE Warszawa `OCHP_800_zasady_oceniania.pdf` (zasady oceniania, nie otwierany). |
+| CKE – `OCHP_600_zasady_oceniania.docx` | **Niepotwierdzony** | Zestawienie 8eda72cd sprzeczne między sobą (raz „potwierdzone", raz „nieotwarte"). Adres nie wystąpił w wynikach wyszukiwania. |
+| Bydgoszcz – strony zbiorcze 2025/26 (wojewódzki, szkolny) i 2024/25 | **Niepotwierdzony** | Żaden z trzech adresów nie wystąpił w wynikach wyszukiwania. Część z nich z 19c24a0c też nie wystąpiła; strona 2024/25 (`2025-05-13_arkusze_klucze_2024_2025_12664`) była podawana w obu zestawieniach, ale w wynikach nie wystąpiła. |
+| Kraków – klucz etapu rejonowego 2024/25 (`kch_e_ii_schemat.pdf`) | **Potwierdzony** | Małopolski Konkurs Chemiczny dla szkół podstawowych, etap rejonowy 2024/25; 40 zadań, po 1 pkt, maks. 40 pkt; odpowiedzi A–D: 1C 2A 3D 4B 5B 6A 7D 8C 9C 10D 11A 12B 13B 14C 15C 16D 17C 18D 19A 20C 21D 22D 23B 24D 25B 26B 27D 28B 29C 30D 31C 32A 33C 34A 35B 36B 37D 38D 39D 40D. Brak czasu pracy w pliku (zestawienie podaje 60 min – niepotwierdzone). |
+| Kraków – arkusz etapu rejonowego 2024/25 (`kch_etap_ii_v2-arkusz.pdf`) | **Niepotwierdzony** | Adres nie wystąpił w wynikach; nie otwierany. Klucz powyżej jest do tego etapu, ale powiązanie z konkretnym arkuszem nie jest jeszcze potwierdzone. |
+| Kielce – arkusz wojewódzki VI konkursu 2024/25 (`arkusz-z-zadaniami-etap-wojewodzki-vi-wojewodzki-konkurs-z-chemii.pdf`) | **Potwierdzony** | 11 marca 2025, godz. 10:00; 15 zadań, 60 min, maks. 44 pkt; brak klucza w pliku (klucz to osobny plik na stronie kuratorium). Tematy: 1 identyfikacja soli (0–6 pkt), 2 sód i woda, 3 pH, 4 pierwiastki X i Y prawda/fałsz, 5 propen i chlor, 6 azotan(III) sodu, 7 gliceryna 10%, 8 reduktory, 9 miedź i HNO₃ (0–5), 10 gaz, 11 probówki I–VI (0–3), 12 węglowodór gazowy, 13 CO i PbO prawda/fałsz, 14 plamy tłuste, 15 strącanie PbI₂ (0–8). |
+| Łódź – test etapu wojewódzkiego 2024/25 (`test-etap-wojewodzki-...-2024-2025.docx`) | **Niepotwierdzony (plik nieczytelny)** | Adres wystąpił w wynikach, ale plik .docx zwrócił dane binarne. Do ponownego otwarcia (lub zapisania jako PDF). |
+| Łódź – schemat etapu szkolnego 2024/25 (`schemat-oceniania-etap-szkolny-...-2024-2025.docx`) | **Adres w wynikach, nieotwierany** | Wymaga osobnego otwarcia. |
+| Łódź – test etapu wojewódzkiego 2022/23 (`test-etap-wojewodzki-chemia.pdf`) | **Potwierdzony w poprzednim kroku** (zob. wyżej) | 15 zadań, 120 min, maks. 100 pkt, bez klucza (wcześniej potwierdzone). |
+| Warszawa – bank zadań MKO 2024/25 (strona zbiorcza) | **Niepotwierdzony** | Strona nie została otwarta; wyniki wyszukiwania pokazują inne pliki (`panelkonkursy.mscdn.pl/bank_zadan/2024_2025/arkusz_chem_sp_woj.pdf`, `model_chem_sp_woj.pdf`), których nie otwierałem. |
+
+Uwagi:
+- Zestawienie 19c24a0c stwierdza, że tekstu zadań nie może przepisać w całości. W banku zapisuję tylko metadane, tematy zadań własnymi słowami i odpowiedzi z kluczy. Pełną treść zadań można dodać po otrzymaniu własnych kopii PDF.
+- Nie podawać jako potwierdzonych: liczby zadań i punktów z zestawień, które nie zgadzają się z plikami powyżej.
