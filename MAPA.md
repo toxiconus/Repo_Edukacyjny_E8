@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 170 KB)
+## .  (8 pl., 171 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 15 KB
@@ -96,6 +96,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
 
+## biologia/bio/szablon/nowe  (18 pl., 82 KB)
+- (zwinięte; `ls biologia/bio/szablon/nowe`)
+
 ## biologia/html  (44 pl., 16.5 MB)
 - (zwinięte; `ls biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 392 KB
@@ -170,7 +173,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 121 KB)
+## chemia/che-modular  (13 pl., 122 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -370,16 +373,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (18 pl., 1.2 MB)
+## chemia/che-modular/lessons-md/gotowe  (19 pl., 1.3 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 53 KB
 - ⚠`F06_uklad_okresowy.md` 56 KB
 - ⚠`F17_rownania_reakcji_i_obliczenia.md` 57 KB
 - ⚠`FIZ01_elektrostatyka.md` 116 KB
+- ⚠`J03_rownania_jonowe_i_stracanie.md` 91 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 129 KB
 - ⚠`N03_kwasy.md` 134 KB
-- ⚠`N04_sole.md` 86 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
 - `FIZ01.json` 1 KB
@@ -580,9 +583,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 66 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (26 pl., 523 KB)
+## chemia/plany/audyty  (27 pl., 615 KB)
 - (zwinięte; `ls chemia/plany/audyty`) — duże:
 - ⚠`GOTOWE_SONNET_FIZ-01_2026-10-12.md` 116 KB
+- ⚠`GOTOWE_ZAI_J03_2026-10-12.md` 92 KB
 - ⚠`GOTOWE_ZAI_X04_2026-10-12.md` 91 KB
 
 ## chemia/plany/narzedzia  (3 pl., 50 KB)
@@ -594,7 +598,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (17 pl., 110 KB)
+## eksport  (17 pl., 112 KB)
 - (zwinięte; `ls eksport`)
 
 ## eksport/grafiki  (1 pl., 7 KB)

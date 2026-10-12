@@ -123,3 +123,4 @@
 - 2026-10-12: CHE X04 Szereg aktywności — napisana (GOTOWE NAPISZ, 91 KB), wczytana skryptem; ujednolicony koniec szeregu; do W1.
 - 2026-10-12: GRAFIKI_PROMPT.md — prompt dla innych AI na zaległe grafiki BIO/POL/ANG (35 pozycji), szablon VIZ_START.html, wczytaj_grafiki.py (test Chromium, --wstaw do bio-viz.js).
 - 2026-10-12: 6 grafik BIO z GRAFIKI_PROMPT (uklad-rozrodczy, cykl-miesiaczkowy, droga-zarodka, lozysko-wymiana, etapy-zycia, synapsa) — test Chromium OK, wstawione do bio-viz.js + katalog, @viz w U11 i U08; CHE J03 napisana (GOTOWE NAPISZ), 1 nadmiarowe ::: usunięte; do W1.
+- 2026-10-12: CHE R07 (ZAI) wczytana, 1 błąd rachunku poprawiony; LAB01 (Grok, 41 KB — za mało) uzupełniona przez Claude do 56 KB: katalog 20 doświadczeń E8 (obs → wniosek → równanie), zadania 9–14, wskaźniki, korozja. Obie do W1.
