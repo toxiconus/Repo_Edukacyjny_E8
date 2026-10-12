@@ -47,6 +47,8 @@ for f in pliki:
 for z, c in napisz:
     t = z.read_text(); kod = kod_z(c)
     m = re.search(r'^tytul:\s*"?([^"\n]*)"?$', t, re.M); tyt = m.group(1).strip() if m else c.stem
+    if not m:
+        h = re.search(r'^#\s+(?:L\d+\w*\s*[—–-]\s*)?(.+)$', t, re.M); tyt = h.group(1).strip() if h else c.stem
     przed = 'CHEMIA' if 'chemia' in str(c) else 'BIOLOGIA' if 'biologia' in str(c) else 'POLSKI' if 'polski' in str(c) else 'ANGIELSKI'
     uid = c.stem if c.name.count('.') > 2 else ''
     wzor = ['---', f'kod: {kod}'] + ([f'uid: {uid}'] if uid else []) + [f'tytul: {tyt}', 'opis: <hasła tematów rozdzielone „ · ”>',
@@ -59,6 +61,8 @@ for z, c in napisz:
            '- WZÓR FRONTMATTERA (uzupełnij pola w < >):', ''] + ['    ' + x for x in wzor]
     if uwaga: nag.append(f'- UWAGA AUTORA: {uwaga}')
     cele[kod] = str(c.relative_to(ROOT) if c.is_absolute() else c)
+    nag.append(f'- UWAGA: numery i kody wewnątrz materiału (np. „L006”, „L011”) są stare — w odpowiedzi używaj wyłącznie KOD {kod}.')
+    t = re.sub(r'^#\s+LEKCJA\b', '### (materiał) lekcja', t, flags=re.M)
     kody.append(kod); czesci.append('\n'.join(nag) + '\n\n**MATERIAŁ ROBOCZY:**\n\n' + t.rstrip() + '\n')
 if napisz: REJ.write_text(json.dumps(cele, ensure_ascii=False, indent=1))
 spis = f'# PACZKA {nazwa} — lekcje: ' + ', '.join(kody) + f'\n\nOpracuj je po kolei, jedną na turę (po „dalej” następna). Odpowiedź: sama treść — tylko pliki między `<<<PLIK <KOD>` i `PLIK>>>`.'
