@@ -259,7 +259,7 @@ Nowa lekcja od zera. Status: UZUPEŁNIONE. Do wykonania: W1 (zrobić po przebudo
 
 Przebudowa z 2,7 KB szkieletu do pełnej lekcji (Claude Haiku 5.5).
 
-**Zachowano:** wszystkie 10 punktów karty startowej, diagnozę z kluczem, pytanie przewodnie, cele, ściągę (tabela 5 wierszy, teraz w wykładzie i w fiszkach), syntezę Haber-Bosch (punkty z 4. sekcji), klinikę (2 wiersze), ćwiczenia z kluczem (przeredagowane), słownik, sekcję AUDYT Grok.
+**Zachowano:** wszystkie 10 punktów karty startowej, diagnozę z kluczem, pytanie przewodnie, cele, ściągę (tabela 5 wierszy, zachowana w sekcji „Ściąga”), syntezę Haber-Bosch (punkty z 4. sekcji), klinikę (2 wiersze), ćwiczenia z kluczem (przeredagowane), słownik, sekcję AUDYT Grok.
 
 **Usunięto:** nic. Tabela „Ściąga” (5 wierszy) zachowana w tej samej postaci w nowej sekcji „Ściąga”.
 
