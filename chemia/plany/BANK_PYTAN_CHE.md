@@ -151,7 +151,7 @@ Status: **nie jest źródłem oficjalnym.** Użytkownik przekazał zestawienie z
 **Matematyka**
 1. (otwarte) Średnia z 16·10²⁰¹⁸, 2,8·10²⁰¹⁹, 0,46·10²⁰²⁰. — **Wynik 3,0·10²⁰¹⁹**. Rachunek: 16·10²⁰¹⁸ = 1,6·10²⁰¹⁹; 0,46·10²⁰²⁰ = 4,6·10²⁰¹⁹; suma 9,0·10²⁰¹⁹; średnia 3,0·10²⁰¹⁹.
 2. (otwarte) Pięciocyfrowa liczba N: dopisanie 1 z lewej daje trzykrotnie mniejszą liczbę niż dopisanie 1 z prawej. — **N = 42857**. Rachunek: 10N + 1 = 3(100000 + N) → 7N = 299999 → N = 42857.
-3. (otwarte) W trapezie ABCD, S — punkt przecięcia przekątnych: wykazać, że pole BCS = pole ASD. — **Do opracowania** (dowód: trójkąty BCS i ASD mają równe pola, bo pole BCD = pole ACD jako trójkąty o wspólnej podstawie CD i tej samej wysokości; odjąć wspólny fragment COS... wymaga dokładnego rozpisania). Oznaczyć jako zadanie O, do weryfikacji.
+3. (otwarte) W trapezie ABCD, S — punkt przecięcia przekątnych: wykazać, że pole BCS = pole ASD. — **Dowód (do weryfikacji):** [ABD] = [ABC], bo mają wspólną podstawę AB i tę samą wysokość. Od obu odejmujemy wspólny trójkąt ABS: [ASD] = [BCS]. Zadanie O.
 4. (testowe) Jeśli 40% a = 50% b, to 40% b = ? — **Odpowiedź C (32% a)**. Rachunek: b = 0,8a, więc 0,4b = 0,32a.
 
 **Język angielski**
@@ -159,7 +159,7 @@ Status: **nie jest źródłem oficjalnym.** Użytkownik przekazał zestawienie z
 2. (reading) Toby w kuchni słynnego szefa: problem Toby'ego — a) hałas, b) nie mógł niczego znaleźć, c) za dużo warzyw. — **Nie zweryfikowane** (wymaga tekstu).
 3. (use of English) Znaleźć błędy w zdaniach; przykład: „My mom will be very angry, if we will be late.” — **Poprawka:** „…if we are late.” (w zdaniu warunkowym typu I w klauzuli „if” używamy czasu teraźniejszego). Reszta zdań — do weryfikacji po otrzymaniu oryginału.
 
-Wniosek: z 17 pozycji udało się sprawdzić rachunkiem lub rozumowaniem 6 (chem. 2, bio. 1, 2, pol. 1, mat. 1, 2, 4, ang. 3 — razem 8 z 22 podpunktów); pozostałe wymagają oryginału.
+Wniosek: część pozycji (chemia 2, biologia 1 i 2, polski 1, matematyka 1, 2, 4 i 3, angielski 3) udało się sprawdzić rozumowaniem lub rachunkiem; reszta wymaga oryginału.
 
 ## Konkursy i olimpiady — poziomy (etap szkolny, rejonowy, wojewódzki)
 
