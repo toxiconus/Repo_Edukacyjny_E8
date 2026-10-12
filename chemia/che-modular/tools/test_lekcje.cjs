@@ -63,7 +63,7 @@ async function one(b, f) {
     const slots = [...document.querySelectorAll('[data-che-lesson-viz]')];
     const prac = [...document.querySelectorAll('.che-prac-go')];
     return {
-      txt: ((document.querySelector('.che-lfs-lesson') || {}).innerText || '').length,
+      txt: ((document.querySelector('.che-lfs-lesson') || document.querySelector('main') || document.body || {}).innerText || '').length,   // lekcja lekka (bez silnika) nie ma .che-lfs-lesson
       start: !!l && getComputedStyle(l).display !== 'none',
       bok: document.documentElement.scrollWidth > innerWidth,
       viz: slots.length,

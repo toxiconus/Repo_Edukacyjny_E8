@@ -433,6 +433,15 @@ if __name__ == '__main__':
     for p in args:
         meta, doc = render(p)
         fn = os.path.splitext(os.path.basename(p))[0]
+        # lekcja bez grafik silnika (@model/@zlewka/@viz): mini-strona bez che-viz.js (sama treść + mini-JS lekcji)
+        if not re.search(r'@(model|zlewka|viz)\b', open(p, encoding='utf-8').read()):
+            os.makedirs(os.path.join(ROOT, 'dist', 'jeden_plik'), exist_ok=True)
+            # szerokie tabele przewijane w obrębie, bez przewijania całej strony (telefon)
+            doc = doc.replace('</head>', '<style>html,body{overflow-x:hidden}table{display:block;max-width:100%;overflow-x:auto}pre{max-width:100%;overflow-x:auto}</style>\n</head>', 1)
+            open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(doc)
+            open(os.path.join(ROOT, 'dist', 'jeden_plik', fn + '.html'), 'w', encoding='utf-8').write(doc)
+            metas.append((fn, meta)); print('ok lekka', fn, len(doc))
+            continue
         pg = page(meta, doc, fn)
         open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(pg)
         # wersja jednoplikowa (telefon, e-mail): che-viz.js wklejony do środka
