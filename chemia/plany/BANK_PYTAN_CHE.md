@@ -161,6 +161,28 @@ Status: **nie jest źródłem oficjalnym.** Użytkownik przekazał zestawienie z
 
 Wniosek: część pozycji (chemia 2, biologia 1 i 2, polski 1, matematyka 1, 2, 4 i 3, angielski 3) udało się sprawdzić rozumowaniem lub rachunkiem; reszta wymaga oryginału.
 
+## Strony z regulaminami i arkuszami konkursów (klasy IV–VIII) — sprawdzone wyszukiwaniem
+
+Lista od użytkownika (zestawienie wtórne) sprawdzona przez wyszukiwanie. Adresy z wyników wyszukiwania (nie wszystkie otwarte w całości).
+
+**Potwierdzone (strona lub dokument istnieje w wynikach):**
+- **Kuratorium Kraków** — kuratorium.krakow.pl: zarządzenia przedmiotowe i tematyczne 2026 (zob. `2.zarzadzenie_przedmiotowe.pdf`), schematy oceniania etapu szkolnego, wojewódzkiego i rejonowego (2018–2023), w tym chemii.
+- **Kuratorium Warszawa** — konkursy.kuratorium.waw.pl: „Regulamin konkursów przedmiotowych 2026/27” oraz „Projekt programu CHEMIA 2026/27” (PDF). Program konkursu z chemii, nie same arkusze.
+- **Kuratorium Kielce** — kuratorium.kielce.pl: „Przedmiotowy regulamin konkursowy VIII Wojewódzkiego Konkursu z Chemii 2026/2027” (PDF). Uwaga: w zestawieniu użytkownika był wpisany jako biologia — to regulamin chemiczny.
+- **Kuratorium Łódź** — kuratorium.lodz.pl: regulamin wojewódzkich konkursów przedmiotowych (2018/19), zał. 9 „chemia”, zakres wymagań angielskiego 2023/24 (DOCX).
+- **Kuratorium Olsztyn** i inne szkolne/powiatowe regulaminy (ko.olsztyn.pl) — potwierdzone jako dokumenty, ale nie kuratoryjne źródło główne.
+
+**Nie potwierdzone (brak wyniku wyszukiwania; nie wpisywać jako źródła bez sprawdzenia):**
+- Kuratorium Bydgoszcz (chemia, biologia, angielski, matematyka 2026/27).
+- Kuratorium Poznań (regulamin chemii) — wyniki to regulaminy szkolne i z 2018/19.
+- Kuratorium Gdańsk (arkusz polskiego, etap wojewódzki).
+- Kuratorium Opole (regulamin angielskiego).
+- Kuratorium Warszawa — „modele odpowiedzi chemia” i „biologia” — znaleziono tylko program i regulamin; schematów chemii nie potwierdzono.
+- konkursy.odrabiamy.pl — nie znaleziono w wynikach.
+- Angielski Ninja — nie znaleziono w wynikach.
+
+Wniosek: źródła z potwierdzeniem: Kraków, Warszawa, Kielce, Łódź. Pozostałe z zestawienia wymagają ręcznego sprawdzenia przed użyciem.
+
 ## Konkursy i olimpiady — poziomy (etap szkolny, rejonowy, wojewódzki)
 
 Zasada: każde pytanie ma etap i źródło. Na razie tylko podstawówka.
