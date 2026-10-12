@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 168 KB)
+## .  (8 pl., 169 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 14 KB
@@ -369,12 +369,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (17 pl., 1.0 MB)
+## chemia/che-modular/lessons-md/gotowe  (17 pl., 1.1 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 53 KB
 - ⚠`F06_uklad_okresowy.md` 56 KB
 - ⚠`F17_rownania_reakcji_i_obliczenia.md` 57 KB
-- ⚠`FIZ01_elektrostatyka.md` 55 KB
+- ⚠`FIZ01_elektrostatyka.md` 116 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 129 KB
 - ⚠`N03_kwasy.md` 134 KB
@@ -579,8 +579,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 66 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (24 pl., 316 KB)
-- (zwinięte; `ls chemia/plany/audyty`)
+## chemia/plany/audyty  (25 pl., 432 KB)
+- (zwinięte; `ls chemia/plany/audyty`) — duże:
+- ⚠`GOTOWE_SONNET_FIZ-01_2026-10-12.md` 116 KB
 
 ## chemia/plany/narzedzia  (3 pl., 50 KB)
 - `kanon_dane.py` 38 KB
@@ -591,10 +592,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (13 pl., 67 KB)
+## eksport  (16 pl., 86 KB)
 - (zwinięte; `ls eksport`)
 
-## narzedzia  (15 pl., 111 KB)
+## narzedzia  (16 pl., 117 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)

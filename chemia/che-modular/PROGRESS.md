@@ -119,3 +119,4 @@
 - 2026-10-12: U08 i U10 — druga część (od §14) z Claude Sonnet 5.5 scalona → obie lekcje W1 FULL; „Co dalej?” na końcu, nowe sekcje nie-myl / olimpijczyk / zadania olimpijskie; SVG-propozycje w biologia/bio/grafiki/propozycje/.
 - 2026-10-12: paczka GOTOWE — TRYB NAPISZ (szkielet → pełna lekcja); paczka ZAI: U11 rozmnażanie, X04, J03, R07 (C1c) z olimpiada/do_uzupelnienia.
 - 2026-10-12: FIZ-01 W1 FULL — pierwsza odpowiedź GOTOWE (Sonnet 5.5) wczytana skryptem bez poprawek (55 → 115 KB).
+- 2026-10-12: BIO U11 Rozmnażanie i rozwój — napisana (GOTOWE NAPISZ, 103 KB), wczytana skryptem; 2 poprawki (najądrze ~2 tyg., literówka); do W1.

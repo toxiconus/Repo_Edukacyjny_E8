@@ -61,7 +61,7 @@ for kod, czesci in lekcje.items():
     nrN = {num(s) for s in sekN}
     traf = [i for i, s in enumerate(sekS) if num(s) in nrN]
     krit, ostrz = [], []
-    if not traf and sekN: krit.append('żaden numer sekcji z odpowiedzi nie pasuje do lekcji')
+    if not traf and sekN and sekS: krit.append('żaden numer sekcji z odpowiedzi nie pasuje do lekcji')
     i0, i1 = (traf[0], traf[-1]) if traf else (len(sekS), len(sekS) - 1)
     brak = [num(s) for s in sekS[i0:i1+1] if num(s) not in nrN]
     if brak: krit.append('w odpowiedzi brak sekcji z zakresu: ' + ', '.join(brak))
@@ -77,7 +77,7 @@ for kod, czesci in lekcje.items():
         if re.search(r'[Ѐ-ӿ]', l): krit.append(f'cyrylica w linii {i}: {l[:60]}')
         if l.startswith('```'): krit.append(f'blok kodu w linii {i}')
         if re.search(r'\$[^$\s][^$]*\$|\\frac|\\cdot', l): ostrz.append(f'LaTeX w linii {i}: {l[:60]}')
-        if re.search(r'(doklej|wklej tu|reszta bez zmian|sekcj\w* bez zmian|z oryginału|niewidoczn|KONIEC (ULEPSZ|FRAGM|CZĘŚ)|sprawdź duplikat|CIĄG DALSZY)', l, re.I): ostrz.append(f'uwaga dla autora w linii {i}: {l[:70]}')
+        if re.search(r'(\bdoklej\b|wklej tu|reszta bez zmian|sekcj\w* bez zmian|z oryginału|niewidoczn|KONIEC (ULEPSZ|FRAGM|CZĘŚ)|sprawdź duplikat|CIĄG DALSZY)', l, re.I): ostrz.append(f'uwaga dla autora w linii {i}: {l[:70]}')
         if re.match(r'@(viz|model|zlewka) ', l) and not any(x.startswith('@opis ') for x in L[i:i+3]): krit.append(f'grafika bez @opis w linii {i}')
     st = re.search(r'^stan:.*$', fm, re.M)
     if st and re.search(r'\bW1\b|FULL', st.group(0)): ostrz.append('stan: zawiera W1/FULL — zmieniam na ULEPSZONA'); wynik = wynik.replace(st.group(0), re.sub(r'W1 ?FULL|FULL|W1', 'ULEPSZONA', st.group(0)), 1)

@@ -1,0 +1,1076 @@
+---
+kod: U11
+uid: BIO.07.U11.rozmnazanie_i_rozwoj
+tytul: Rozmnażanie i rozwój człowieka
+opis: męski układ rozrodczy · żeński układ rozrodczy · gamety · zygota · cykl miesiączkowy · zapłodnienie · bruzdkowanie · implantacja · rozwój zarodka i płodu · łożysko i pępowina · etapy życia · dojrzewanie · choroby przenoszone drogą płciową · profilaktyka nowotworów
+kicker: U11 · BIOLOGIA · Człowiek — rozmnażanie i rozwój · E8 / KONKURS
+lead: Każdy z nas zaczął życie od spotkania dwóch komórek wielkości ułamka milimetra. Ta lekcja prowadzi przez całą drogę: budowę układów rozrodczych, rytm cyklu miesiączkowego, zapłodnienie i dziewięć miesięcy pod sercem matki, aż po życie po urodzeniu.
+lead: Nauczysz się nazywać narządy układów rozrodczych i podawać ich funkcje, porównywać gamety, porządkować fazy cyklu miesiączkowego i etapy rozwoju, a także rozumieć zasady profilaktyki zdrowia reprodukcyjnego na poziomie egzaminu ósmoklasisty i konkursu.
+plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
+uwaga: Podstawa odpowiada wymaganiom egzaminu ósmoklasisty; warstwa konkursowa (FSH i LH, hCG, granice pojęć, analiza danych) wykracza poza arkusz E8. Wszystkie liczby — długość cyklu, moment owulacji, ramy wiekowe okresów życia, czas trwania ciąży — są orientacyjne i różnią się między osobami.
+stopka: **BIOLOGIA U11 v1.0** · Rozmnażanie i rozwój człowieka · 2026
+stan: WYPEŁNIONY — AI z paczki GOTOWE ZAI (podpis: Claude), 2026-10-12, ze szkieletu OLI.BIO.B2f; do W1
+---
+
+::: minimum | Muszę umieć — 10 punktów
+1. Nazywam narządy męskiego układu rozrodczego (jądra, najądrza, nasieniowody, gruczoły: pęcherzyki nasienne i prostata, prącie) i podaję funkcję każdego z nich.
+2. Nazywam narządy żeńskiego układu rozrodczego (jajniki, jajowody, macica, pochwa) i podaję funkcję każdego z nich.
+3. Porównuję plemnik i komórkę jajową: wielkość, ruchliwość, zapas substancji odżywczych, liczba chromosomów — i wiążę te cechy z funkcją.
+4. Wyjaśniam, czym jest zygota, i podaję jej liczbę chromosomów (2n = 46).
+5. Porządkuję fazy cyklu miesiączkowego (miesiączka → faza folikularna → owulacja → faza lutealna) i opisuję, co dzieje się w jajnikach i w macicy.
+6. Podaję rolę estrogenów i progesteronu: estrogeny budują błonę śluzową macicy, progesteron ją utrzymuje i przygotowuje na ciążę.
+7. Opisuję drogę plemnika do komórki jajowej i wskazuję miejsce zapłodnienia — jajowód.
+8. Odróżniam zarodek od płodu (granica ok. 8. tygodnia) i wyjaśniam funkcje łożyska oraz pępowiny; wiem, że krew matki i płodu nie miesza się.
+9. Porządkuję etapy życia człowieka i opisuję okres dojrzewania: cechy pierwszorzędne i drugorzędowe, hormony płciowe, wcześniejsze dojrzewanie dziewcząt.
+10. Wymieniam przykłady chorób przenoszonych drogą płciową (kiła, rzeżączka, chlamydioza, HIV, HPV) oraz nowotworów (szyjki macicy, piersi, prostaty, jąder) i podaję zasady ich profilaktyki.
+:::
+
+::: warstwy
+- e8 | <b>Podstawa:</b> budowa i funkcje układów rozrodczych, gamety i zygota, kolejność wydarzeń cyklu miesiączkowego, rola łożyska i pępowiny, etapy życia, dojrzewanie, profilaktyka chorób — dokładnie poziom arkusza E8.
+- understand | <b>Rozumienie:</b> dlaczego gamety są tak skrajnie różne, dlaczego łożysko jest barierą selektywną, skąd bierze się cykl miesiączkowy i dlaczego owulacja nie zawsze wypada tego samego dnia cyklu.
+- contest | <b>Konkurs:</b> odczytywanie danych o hormonach cyklu, granice pojęć (zarodek a płód, zapłodnienie a implantacja), analiza doświadczenia z błoną półprzepuszczalną jako modelem łożyska, bliźnięta jednojajowe i dwujajowe, wyznaczanie owulacji „od końca”, znajdowanie błędów w tekstach.
+- extra | <b>Ambitne:</b> mejoza jako źródło zmienności i crossing-over, mechanizmy, dzięki którym organizm matki nie odrzuca płodu, hormon hCG i test ciążowy, konflikt serologiczny, techniki wspomaganego rozrodu.
+:::
+
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+- [§1](#wyklad) — Wykład od zera: cała droga od dwóch komórek do noworodka.
+- [§2](#uklady) — Układy rozrodcze: narządy i ich funkcje.
+- [§3](#gamety) — Gamety: plemnik, komórka jajowa, zygota.
+- [§4](#cykl) — Cykl miesiączkowy: fazy i hormony.
+- [§5](#ciaza) — Zapłodnienie i rozwój prenatalny.
+- [§6](#lozysko) — Łożysko i pępowina.
+- [§7](#etapy) — Etapy życia po urodzeniu.
+- [§8](#dojrzewanie) — Dojrzewanie i cechy płciowe.
+- [§9](#zdrowie) — Zdrowie reprodukcyjne: choroby i profilaktyka.
+- [§17](#test) — Test końcowy oraz [§21](#sciaga) — ściąga przed sprawdzianem.
+:::
+
+## 0.1 | Jak pracować z lekcją {#jak-pracowac}
+
+Ta lekcja jest samowystarczalna: możesz przerabiać ją w całości albo wracać do wybranych sekcji w dowolnym tempie. Najważniejsza zasada: **najpierw spróbuj odpowiedzieć samodzielnie, dopiero potem otwórz klucz**. Klucz do zadania, który przeczytany został bez próby, uczy znacznie mniej niż własne, nawet błędne, rozumowanie.
+
+Sensowna kolejność pracy:
+
+1. Przeczytaj listę „Muszę umieć — 10 punktów” — to kontrakt lekcji: coś, co powinieneś umieć na koniec.
+2. Zrób diagnozę ([§0.2](#diagnoza)) — przekonasz się, co już wiesz.
+3. Przeczytaj wykład ([§1](#wyklad)) — w całości, bez przewracania stron; to opowieść jednej drogi.
+4. Przerabiaj sekcje 2–9 po kolei. Przy każdym zadaniu zapisz odpowiedź na kartce, dopiero potem sprawdź klucz.
+5. Doświadczenia z [§10](#doswiadczenia) wykonaj, jeśli masz warunki i opiekę dorosłego; w przeciwnym razie przeczytaj je jak opowiadania i spróbuj przewidzieć wynik — to też jest trening.
+6. Zadania konkursowe ([§11](#zadania-konkurs)) i warstwa olimpijska ([§12](#olimpijczyk)) zostaw na koniec — wtedy, gdy podstawa jest już pewna.
+7. Rozwiąż test końcowy ([§17](#test)). Jeśli wynik jest słabszy niż na połowę punktów, wróć do sekcji wskazanych w wyjaśnieniach błędnych odpowiedzi.
+8. Powtarzaj fiszki ([§18](#fiszki)) partiami — kilka dziennie, bez planowania kalendarza, po prostu regularnie.
+9. Przed sprawdzianem przeczytaj śćiagę i odhacz listę kontrolną ([§21](#sciaga)).
+
+Co warto mieć zrobione wcześniej (pomoże, ale nie jest warunkiem — wykład tłumaczy wszystko od zera):
+
+- pojęcie komórki, chromosomów i podstawy mitozy oraz mejozy (lekcje o komórce i dziedziczeniu);
+- pojęcie hormonu i pracy gruczołów (lekcja o układzie dokrewnym — BIO-B2e).
+
+Temat wrażliwy? Jest normalny: to biologia człowieka, taka sama jak biologia serca czy płuc. Wszystko tu jest opisane rzeczowo — tak, jak będzie na egzaminie i w zadaniach konkursowych.
+
+## 0.2 | Diagnoza {#diagnoza}
+
+Odpowiedz na pytania z pamięci, na kartce. Nie zaglądaj do lekcji. Potem sprawdź klucz i policz swoje punkty — to pokaże, od którego miejsca zacząć.
+
+1. Wymień trzy narządy męskiego układu rozrodczego i podaj funkcję jednego z nich.
+2. Ile chromosomów ma komórka jajowa, a ile zygota?
+3. Uporządkuj wydarzenia w kolejności, w jakiej zachodzą: implantacja, owulacja, zapłodnienie, bruzdkowanie.
+4. Czy krew matki miesza się z krwią płodu? Odpowiedz jednym zdaniem.
+5. Podaj dwa sposoby zmniejszania ryzyka zakażeń przenoszonych drogą płciową.
+
+::: odp | Klucz diagnozy
+1. Przykład: jądra (produkcja plemników i testosteronu), najądrze (dojrzewanie i przechowywanie plemników), nasieniowód (transport plemników), prącie, gruczoły — pęcherzyki nasienne i prostata (wytwarzają wydzielinę nasienia). (1 pkt za trzy narządy + 1 pkt za poprawną funkcję)
+2. Komórka jajowa — 23 chromosomy (n); zygota — 46 (2n). (1 pkt)
+3. Owulacja → zapłodnienie → bruzdkowanie → implantacja. (1 pkt za poprawną kolejność)
+4. Nie — w łożysku zachodzi wymiana substancji, ale krew matki i płodu płynie osobnymi naczyniami i nie miesza się. (1 pkt)
+5. Przykłady: prezerwatywa jako bariera, szczepienie przeciwko HPV, ograniczanie liczby partnerów seksualnych, badania kontrolne, niewspółdzielenie przedmiotów mogących przenosić krew. (1 pkt za dwa sensowne sposoby)
+:::
+
+Rozliczenie: 5–6 pkt — możesz szybciej przejść przez sekcje 2–3 i skupić się na cyklu oraz ciążie; 3–4 pkt — przerabiaj lekcję po kolei; 0–2 pkt — zacznij od wykładu i czytaj uważnie każdą sekcję, lekcja wszystko wytłumaczy.
+
+## 1 | Wykład — sztafeta życia: od dwóch komórek do noworodka {#wyklad} [[basic:E8]]
+
+Każdy organizm, jaki znamy, daje potomstwo — to jedna z podstawowych cech życia. Człowiek rozmnaża się płciowo: potrzebne są **dwie komórki płciowe**, czyli **gamety**, pochodzące od dwóch rodziców. Dlaczego właśnie tak? Bo w połączeniu dwóch różniących się od siebie zestawów informacji rodzi się nowość: potomek podobny do rodziców, ale nigdy do któregoś z nich identyczny. Ta zmienność jest cichym bohaterem całej tej lekcji — zapamiętaj ją, wrócimy do niej przy zadanich konkursowych.
+
+Komórki twojego ciała mają po **46 chromosomów**, czyli **2n = 46** — zestaw pochodzi po połowie od mamy i od taty. Gamety są wyjątkowe: powstają w podziale redukcyjnym zwanym **mejozą** i mają tylko **23 chromosomy (n)** — połowę kompletu. Gdy gameta męska — **plemnik** — spotyka gametę żeńską — **komórkę jajową** — komplet się składa i powstaje **zygota**: pierwsza komórka nowego człowieka, znów 2n = 46. Cały twój organizm powstał z jednej takiej komórki przez niezliczone podziały mitotyczne. To najkrótsze podsumowanie lekcji: **dwa razy 23 daje 46, a jedna komórka daje triliony**.
+
+Zacznijmy od strony męskiej. Fabryką plemników i testosteronu są **jądra** — pracują od okresu dojrzewania i nie przestają niemal do końca życia (orientacyjnie miliony plemników dziennie). Świeży plemnik nie jest jednak gotów do pracy: płynie do **jądra**, a następnie do **najądrza**, gdzie dojrzewa i czeka w magazynie. Gdy jest potrzebny, rusza **nasieniowodem** w stronę **cewki moczowej**. Po drodze gruczoły — **pęcherzyki nasienne** i **prostata** — dolewają wydzielinę bogatą w substancje odżywcze; wraz z plemnikami tworzy ona **nasienie**. Całość to taśma produkcyjna: wytworzyć, dojrzeć, przechować, dostarczyć.
+
+Po stronie żeńskiej geometria jest odwrotna: nie fabryka na całe życie, lecz raczej skarbiec. **Jajniki** zawierają zapas niedojrzałych komórek jajowych tworzony jeszcze przed urodzeniem (orientacyjnie), a od okresu dojrzewania co mniej więcej 28 dni jeden z pęcherzyków dojrzewa i pęka — to **owulacja**, uwolnienie komórki jajowej. Jajniki produkują też hormony: **estrogeny** i **progesteron**. Uwolniona komórka jajowa jest delikatnie pchnięta do **jajowodu** przez rzęski i ruchy jego ściany — to właśnie w jajowodzie najczęściej spotka plemnika. Gdyby doszło do zapłodnienia, jego efektem zajmie się **macica**: mocny, mięśniasty worek wyścielony odnawiającą się błoną śluzową. **Pochwa** łączy macicę z zewnętrzem i stanowi drogę rodną przy porodzie.
+
+Gamety są skrajnie różne — i różnice te są przewidziane, nie przypadkowe. Plemnik to lekki biegacz: malutki (ok. 0,05 mm, orientacyjnie), z silnikiem w postaci **wici**, który napędza go do przodu, i z minimalnym bagażem — tylko własne 23 chromosomy i trochę paliwa. Komórka jajowa to ciężki transportowiec: największa komórka człowieka (ok. 0,1–0,2 mm — widoczna gołym okiem, orientacyjnie), nieruchoma, z bogatym zapasem substancji odżywczych, który nakarmi zarodek przez pierwsze dni, zanim pojawi się łożysko. Biegacz dostarcza informacje, transportowiec — paliwo i warsztat.
+
+Teraz rytm, w którym żyje żeński organizm w okresie dojrzałości: **cykl miesiączkowy**, średnio ok. 28 dni, ale wartości 21–35 dni to norma (orientacyjnie). Cykl zaczyna się od **miesiączki** — złuszczania starej błony śluzowej macicy. Potem faza **folikularna**: w jajniku rośnie pęcherzyk, a rosnące stężenie **estrogenów** odbudowuje błonę śluzową macicy. Około 14. dnia (uwaga: orientacyjnie!) następuje **owulacja**. Po niej faza **lutealna**: po pęknięciu pęcherzyka powstaje **ciałko żółte**, które produkuje **progesteron** — hormon utrzymujący błonę śluzową w stanie gotowości, jak ciepłe łóżko przygotowane na przyjście gościa. Gdy gość nie przychodzi — nie ma zapłodnienia — ciałko żółte zanika, stężenia hormonów spadają, błona śluzowa się złuszcza i zaczyna się kolejna miesiączka. Rytm się zamyka.
+
+A gdy jednak gość przychodzi? Podczas zbliżenia nasienie trafia do pochwy, a plemniki ruszają w górę. Z setek milionów na start tylko setki docierają w pobliże komórki jajowej w jajowodzie. Plemnik przebywa barierę wokół komórki jajowej dzięki enzymom w **akrosomie** — i tylko **jeden** wnika: zaraz po nim komórka zamyka się przed kolejnymi. Jądro plemnika łączy się z jądrem komórki jajowej — powstaje zygota, 2n = 46. To wydarzenie nazywamy **zapłodnieniem** i zachodzi ono zwykle w jajowodzie.
+
+Zygota nie czeka bezczynnie: przez około 3–4 dni wędruje do macicy, a przy okazji się dzieli — najpierw kulka zwana **morulą**, potem pęcherzyk z komórkami. Ten etap serii podziałów nazywamy **bruzdkowaniem**. Około 6.–7. doby (orientacyjnie) zarodek **implantuje się** — zagnieżdża w błonie śluzowej macicy. Do końca 8. tygodnia mówimy o **zarodku**: to czas wielkiej budowy, gdy powstają zawiązki wszystkich narządów. Od 9. tygodnia do porodu to już **płód** — czas wzrostu i dojrzewania tego, co zbudowane. Do pracy nad rozwojem potrzebna jest stacja przesyłowa: **łożysko**, organ z tkanek zarówno płodu, jak i matki. W łożysku krew płodu i krew matki płyną obok siebie, ale **nie mieszają się** — przez ścianki naczyń przechodzą tlen i substancje odżywcze (do płodu), dwutlenek węgla i produkty przemiany materii (do matki). Łożysko pełni też rolę ochronną i hormonalną, a z płodem łączy je **pępowina** z naczyniami krwionośnymi. Cała podróż — od zygoty do noworodka — trwa ok. **40 tygodni** liczone od pierwszego dnia ostatniej miesiączki (co daje ok. 9 miesięcy kalendarzowych; od samego zapłodnienia jest to ok. 38 tygodni).
+
+Po urodzeniu droga dopiero się zaczyna. Człowiek przechodzi przez kolejne etapy życia: okres **prenatalny** (przed urodzeniem: zarodkowy i płodowy), **noworodkowy** (pierwsze tygodnie), **niemowlęcy** (pierwszy rok — najszybszy wzrost w życiu), **dzieciństwo**, **dojrzewanie** (pokwitanie), **dojrzałość** i **starość**. Dojrzewanie to wielka przebudowa sterowana hormonami płciowymi: u dziewcząt zaczyna się zwykle wcześniej (orientacyjnie ok. 10.–12. roku życia) niż u chłopców (ok. 12.–14.). Dojrzewają narządy płciowe — pojawia się zdolność do rozmnażania — a obok nich wchodzą **cechy drugorzędowe**: u dziewcząt rozwój piersi i zmiana sylwetki, u chłopców mutacja głosu i zarost. 
+
+Z dojrzałością płciową wiąże się też odpowiedzialność. Niektóre choroby przenoszą się drogą płciową: bakteryjne — **kiła, rzeżączka, chlamydioza** — i wirusowe — **HIV** (uszkadza odporność, prowadzi do AIDS) oraz **HPV** (może wywołać raka szyjki macicy). Ochrona to prezerwatywa, szczepienie przeciwko HPV, ograniczanie ryzykownych zachowań i badania kontrolne. Warto znać także nowotwory tego obszaru: raka szyjki macicy (profilaktyka: cytologia), piersi (samobadanie, badania obrazowe), prostaty (badanie PSA) i jąder (samobadanie). Wiele par spotyka **niepłodność** — jej przyczyny dotyczą obojga partnerów, a medycyna zna sposoby pomocy, w tym zapłodnienie pozaustrojowe. Wiedza w tym temacie to nie tabu i nie wstyd — to narzędzie odpowiedzialności za siebie i innych.
+
+Masz przed sobą całą mapę. Teraz przejdźmy przez nią jeszcze raz, krok po kroku, z tabelami, zadaniami i pułapkami, które przygotowują na egzamin i konkurs.
+
+## 2 | Układy rozrodcze — mapa narządów {#uklady} [[basic:E8]]
+
+Układ rozrodczy to zespół narządów, których wspólnym celem jest wytworzenie gamet, doprowadzenie do ich spotkania i wydanie na świat potomstwa. W przeciwieństwie do układu pokarmowego czy oddechowego „uruchamia się” on w pełni dopiero w okresie dojrzewania — ale jego plan istnieje od urodzenia.
+
+**Męski układ rozrodczy:**
+
+| Narząd | Funkcja |
+|---|---|
+| Jądra (w worku mosznowym) | produkcja plemników oraz testosteronu — głównego męskiego hormonu płciowego |
+| Najądrze | dojrzewanie i przechowywanie plemników; tu plemnik „kończy kurs” i nabiera ruchliwości |
+| Nasieniowód | transport plemników z najądrza w stronę cewki moczowej |
+| Gruczoły: pęcherzyki nasienne i prostata | wytwarzają wydzielinę, która wraz z plemnikami tworzy nasienie (odżywianie i ochrona plemników) |
+| Prącie | narząd kopulacyjny; zawiera cewkę moczową, którą płynie mocz lub nasienie |
+
+**Żeński układ rozrodczy:**
+
+| Narząd | Funkcja |
+|---|---|
+| Jajniki | produkcja komórek jajowych oraz hormonów (estrogenów i progesteronu) |
+| Jajowody | transport komórki jajowej w kierunku macicy; **typowe miejsce zapłodnienia** |
+| Macica | mięśniasty narząd, w którym rozwija się zarodek, a potem płód; jej mięśnie wypychają dziecko przy porodzie |
+| Pochwa | droga rodna łącząca macicę z zewnętrzem; przez nią podczas porodu opuszcza macicę dziecko |
+
+::: karta core | Najważniejsze — dwie listy do zapamiętania
+Męski układ: jądra → najądrze → nasieniowód → cewka moczowa, plus gruczoły (pęcherzyki nasienne, prostata). Żeński układ: jajnik → jajowód → macica → pochwa. Jądra produkują plemniki i testosteron, jajniki — komórki jajowe, estrogeny i progesteron. Zapłodnienie zachodzi w jajowodzie, rozwój dziecka — w macicy.
+:::
+
+::: karta understand | W skrócie — układy rozrodcze
+Układ rozrodczy męski to fabryka na całe życie: jądra wytwarzają plemniki od okresu dojrzewania bez przerwy, a najądrze służą za magazyn i szkołę dojrzewania plemników. Układ rozrodczy żeński to skarbiec i przytułek: jajniki uwolnią w życiu orientacyjnie kilkaset dojrzałych komórek jajowych (po jednej na cykl), a macica przez 40 tygodni pełni rolę domu dla rozwijającego się dziecka. Droga plemnika biegnie od jądra na zewnątrz, droga komórki jajowej — od jajnika do macicy; spotykają się w jajowodzie.
+:::
+
+::: nie-myl | Jajnik ≠ jajowód
+- Jajnik ≠ jajowód — jajnik produkuje komórki jajowe i hormony, jajowód je transportuje i to w nim zwykle dochodzi do zapłodnienia; test rozstrzygający: pytanie „gdzie dochodzi do zapłodnienia?” ma zawsze odpowiedź „w jajowodzie”, nigdy „w jajniku”.
+- Jajowód ≠ macica — jajowód to wąski kanał transportowy (miejsce spotkania gamet), macica to duży, mięśniasty „dom” rozwoju dziecka; test rozstrzygający: implantacja i rozwój zarodka oraz płodu = macica, nie jajowód.
+:::
+
+::: karta warning | Uwaga — cewka moczowa to nie „narząd płciowy dziewczynek”
+W arkuszach bywa pułapka: u chłopców cewka moczowa jest wspólna dla układu moczowego i rozrodczego (płynie nią mocz albo nasienie), natomiast u dziewczynek cewka moczowa jest krótka i otwiera się osobno — pochwa należy wyłącznie do układu rozrodczego. Zdanie „u dziewcząt nasienie płynie cewką moczową” jest zawsze błędne.
+:::
+
+::: karta exam | Zadanie 1 (4 pkt) — Kto robi co w układzie męskim
+Przyporządkuj każdej funkcji właściwy narząd (jądra, najądrze, nasieniowód, pęcherzyki nasienne i prostata):
+
+a) produkcja plemników i testosteronu (1 pkt)
+b) dojrzewanie i przechowywanie plemników (1 pkt)
+c) transport plemników w kierunku cewki moczowej (1 pkt)
+d) wytwarzanie wydzieliny, która wraz z plemnikami tworzy nasienie (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Jądra — to one wytwarzają gamety męskie i testosteron.
+b) (1 pkt) Najądrze — plemnik dojrzewa tu przez orientacyjnie ok. 2 tygodnie i jest magazynowany.
+c) (1 pkt) Nasieniowód — jego mięśnie i rzęski przepychają plemniki w stronę cewki moczowej.
+d) (1 pkt) Pęcherzyki nasienne i prostata — ich wydzielina stanowi większość objętości nasienia i dostarcza plemnikom substancji odżywczych.
+:::
+:::
+
+::: karta exam | Zadanie 2 (3 pkt) — Droga bez pomyłki
+a) Uporządkuj narządy tak, aby pokazać drogę komórki jajowej od miejsca jej powstania: macica, jajnik, jajowód, pochwa. (1 pkt)
+b) Podaj funkcję macicy w ciąży. (1 pkt)
+c) Wyjaśnij, dlaczego pomylenie jajnika z jajowodem prowadzi do błędnego wskazania miejsca zapłodnienia. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Jajnik → jajowód → macica → pochwa — komórka jajowa powstaje w jajniku, jest transportowana jajowodem, a w razie ciąży pozostaje w macicy; przy porodzie dziecko opuszcza ciało przez pochwę.
+b) (1 pkt) Macica jest miejscem implantacji i rozwoju zarodka oraz płodu; jej silna mięśniowa ściana wypycha dziecko podczas porodu.
+c) (1 pkt) Zapłodnienie zachodzi w jajowodzie, a nie w jajniku; jeśli ktoś pomyli te narządy, umieści zapłodnienie tam, gdzie powstaje komórka jajowa, a to dwa różne miejsca i dwa różne procesy.
+:::
+:::
+
+## 3 | Gamety — dwa podejścia do tego samego celu {#gamety} [[basic:E8]] [[understand:ROZUMIENIE]]
+
+Gamety to komórki płciowe — jedyna komórka w całym organizmie, która w ogóle jest przeznaczona do opuszczenia go i połączenia z inną. Męska gameta to **plemnik**, żeńska — **komórka jajowa**. Obie mają po **n = 23 chromosomy**, bo powstały przez mejozę. Po ich połączeniu powstaje **zygota** — pierwsza komórka nowego organizmu, **2n = 46**.
+
+| Cecha | Plemnik | Komórka jajowa |
+|---|---|---|
+| Wielkość (orientacyjnie) | ok. 0,05 mm — jedna z najmniejszych komórek człowieka | ok. 0,1–0,2 mm — największa komórka człowieka, widoczna gołym okiem |
+| Ruchliwość | ruchliwa — wicią pokonuje drogę do jajowodu | nieruchoma — jest transportowana przez rzęski jajowodu |
+| Zapas substancji odżywczych | minimalny | bogaty — karmi zarodek przez pierwsze dni |
+| Liczba chromosomów | 23 (n) | 23 (n) |
+| Liczba produkowana | od okresu dojrzewania, ciągle, orientacyjnie miliony dziennie | zapas powstaje przed urodzeniem; dojrzewa po jednej na cykl |
+| Czas życia po uwolnieniu (orientacyjnie) | w drogach rodnych kobiety do ok. 3–5 dni | ok. 12–24 godziny |
+
+Te różnice to klasyczne **dostosowanie do funkcji**. Plemnik ma być lekki i szybki: silnik (wici), „sonda” (akrosom z enzymami do przebijania otoczki komórki jajowej) i bagaż genetyczny — nic więcej. Komórka jajowa ma być sama w sobie bezpiecznym domem na start: otoczki chronią, zapas odżywczy karmi, a wielkość pozwala pomieścić wszystko, czego zygota potrzebuje, zanim powstanie łożysko.
+
+::: karta understand | W skrócie — gamety i zygota
+Plemnik = lekki biegacz z silnikiem: mały, ruchliwy, ma 23 chromosomy i enzymy w akrosomie. Komórka jajowa = ciężki transportowiec: duża, nieruchoma, z zapasem substancji odżywczych, ma 23 chromosomy. Gdy się spotykają w jajowodzie, powstaje zygota — pierwsza komórka nowego człowieka, 2n = 46, z jedną połową informacji od taty i jedną od mamy. Każda kolejna komórka twojego ciała to potomek tej jednej zygoty przez mitozę.
+:::
+
+::: nie-myl | Gameta ≠ zygota
+- Gameta ≠ zygota — gameta ma n = 23 chromosomy i służy wyłącznie do spotkania z drugą gametą; zygota ma 2n = 46 i jest już pierwszą komórką nowego organizmu; test rozstrzygający: jeśli komórka może połączyć się z inną w nowy organizm — to gameta; jeśli to połączenie już nastąpiło — to zygota.
+- Plemnik ≠ komórka jajowa „tylko rozmiarem” — różni się też ruchliwością (wici u komórki jajowej nie ma), zapasem substancji odżywczych i liczbą wytwarzanych sztuk; test rozstrzygający: ruchliwa i mała = plemnik, duża, z zapasem, nieruchoma = komórka jajowa.
+- Gameta ≠ komórka ciała (somatyczna) — komórka ciała ma 2n = 46 chromosomów i powstaje przez mitozę; gameta ma n = 23 i powstaje przez mejozę; test rozstrzygający: liczba chromosomów i rodzaj podziału, z którego komórka pochodzi.
+:::
+
+::: karta exam | Zadanie 3 (4 pkt) — Porównanie gamet: dostosowanie do funkcji
+a) Podaj dwie różnice w budowie między plemnikiem a komórką jajową. (1 pkt)
+b) Która z gamet jest ruchliwa i jaką strukturą to umożliwia? (1 pkt)
+c) Która gameta ma zapas substancji odżywczych i na co ten zapas wystarcza? (1 pkt)
+d) Podaj liczbę chromosomów obu gamet i zygoty, używając oznaczeń n i 2n. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Przykłady: plemnik jest znacznie mniejszy od komórki jajowej; plemnik ma wici i akrosom, komórka jajowa — otoczki ochronne i bogatą cytoplazmę z zapasem substancji odżywczych (wystarczy 2 sensowne różnice).
+b) (1 pkt) Ruchliwy jest plemnik; napędza go wici, którą porusza jak wiosłem.
+c) (1 pkt) Zapas substancji odżywczych ma komórka jajowa; starcza on zarodkowi na pierwsze dni rozwoju — do czasu, gdy powstanie łożysko i zacznie dostarczać substancje odżywcze od matki.
+d) (1 pkt) Plemnik — n = 23, komórka jajowa — n = 23, zygota — 2n = 46 (po połączeniu gamet komplet się odtwarza).
+:::
+:::
+
+::: karta exam | Zadanie 4 (3 pkt) — Księgowość chromosomów
+a) Ile chromosomów ma komórka jajowa człowieka? (1 pkt)
+b) Ile chromosomów ma zygota i z czego wynika właśnie ta liczba? (1 pkt)
+c) Komórka skóry ma 2n = 46 chromosomów. Wyjaśnij, dlaczego gamety nie mogą powstawać z takich komórek przez zwykłą mitozę, jeśli ma się utrzymać stała liczba chromosomów pokoleń. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) 23 chromosomy (n).
+b) (1 pkt) 46 chromosomów (2n) — 23 od plemnika i 23 od komórki jajowej; zapłodnienie składa dwa kompleksy w jeden.
+c) (1 pkt) Mitoza zachowuje liczbę chromosomów; gdyby gamety powstawały z komórek 2n przez mitozę, miałyby 46 chromosomów, a zygota po zapłodnieniu — aż 92, i liczba ta rosłaby w każdym pokoleniu. Mejoza zmniejsza liczbę o połowę (do n), dzięki czemu zapłodnienie przywraca 2n — liczbę stałą pokoleń.
+:::
+:::
+
+## 4 | Cykl miesiączkowy — rytm organizmu {#cykl} [[basic:E8]] [[understand:ROZUMIENIE]]
+
+Od okresu dojrzewania do menopauzy organizm kobiety pracuje w rytmie **cyklu miesiączkowego** — sekwencji zmian w jajnikach i macicy, która przygotowuje organizm na ewentualną ciążę. Średnia długość cyklu to ok. 28 dni, ale norma to zakres orientacyjnie 21–35 dni; cykle każdej osoby bywają różne i to normalne.
+
+| Faza | Dni (orientacyjnie, dla cyklu 28-dniowego) | Co dzieje się w jajnikach | Co dzieje się w macicy | Główny hormon |
+|---|---|---|---|---|
+| Miesiączka | 1–5 | pęcherzyki dopiero się rozwijają | złuszczanie błony śluzowej macicy — jej stara, niez użyta warstwa odpada wraz z krwią | niskie stężenia hormonów płciowych |
+| Faza folikularna (pęcherzykowa) | 1–13 | w jajniku rośnie pęcherzyk z komórką jajową; pęcherzyk produkuje estrogeny | błona śluzowa odbudowuje się i grubieje | estrogeny |
+| Owulacja | ok. 14. (orientacyjnie) | pęcherzyk pęka i uwalnia dojrzałą komórkę jajową | błona śluzowa jest gęsta i gotowa | szczyt estrogenów |
+| Faza lutealna (ciałka żółtego) | 15–28 | z pękniętego pęcherzyka powstaje ciałko żółte, które produkuje progesteron | błona śluzowa jest utrzymywana i dodatkowo przygotowywana na implantację | progesteron |
+
+Jeśli nie dojdzie do zapłodnienia, ciałko żółte zanika (żyje orientacyjnie ok. 10–14 dni), stężenie progesteronu i estrogenów spada, pozbawiona hormonalnego wsparcia błona śluzowa się złuszcza — i zaczyna się kolejna miesiączka. Jeśli dojdzie do zapłodnienia, nowy sygnał hormonalny (hCG — o nim w warstwie konkursowej) utrzymuje ciałko żółte przy życiu, progesteron nie spada, błona śluzowa zostaje na miejscu — i miesiączka nie nadchodzi.
+
+::: karta basic | Poziom egzaminacyjny a poziom konkursowy
+Na egzaminie ósmoklasistę zwykle wystarczy znajomość **kolejności wydarzeń** (miesiączka → faza folikularna → owulacja → faza lutealna) i **róli estrogenów oraz progesteronu**. Szczegółowe wykresy stężeń hormonów i hormony przysadki (FSH, LH) pojawiają się na poziomie konkursowym — zajmiemy się nimi w sekcjach [§11](#zadania-konkurs) i [§12](#olimpijczyk). Nie ucz się ich na siłę przed egzaminem, jeśli podstawa nie jest pewna.
+:::
+
+::: karta warning | Uwaga — „14. dnia” to nie reguła
+Owulacja wypada ok. 14. dnia **tylko w idealnie 28-dniowym cyklu**. Długość cyklu różni się między osobami i między kolejnymi cyklami u tej samej osoby, więc dzień owulacji się przesuwa. Na konkursie liczy się to, że owulacja wyznacza **przełom** między fazą folikularną a lutealną — a faza lutealna trwa względnie stały czas (orientacyjnie ok. 12–14 dni) **licząc od owulacji do kolejnej miesiączki**. Dlatego przy cyklu 24-dniowym owulacja wypada ok. 10. dnia, a przy 34-dniowym — ok. 20. dnia (orientacyjnie). Zdanie „u każdego człowieka owulacja zawsze zachodzi 14. dnia cyklu” jest błędne.
+:::
+
+::: karta understand | W skrócie — cykl miesiączkowy
+Cykl to przygotowanie macicy na przyjście zarodka, powtarzane co ok. 28 dni. Kolejność: miesiączka (zwijanie starej błony śluzowej) → faza folikularna (pęcherzyk rośnie, estrogeny odbudowują błonę śluzową) → owulacja (komórka jajowa wychodzi z jajnika) → faza lutealna (ciałko żółte produkuje progesteron, który utrzymuje błonę śluzową). Brak zapłodnienia → spadek hormonów → miesiączka i cykl się powtarza. Estrogeny budują, progesteron podtrzymuje — to zdanie rozwiązuje połowę pytań o cykl.
+:::
+
+::: nie-myl | Miesiączka ≠ owulacja
+- Miesiączka ≠ owulacja — miesiączka to złuszczanie błony śluzowej macicy na początku cyklu, owulacja to uwolnienie komórki jajowej z jajnika w środku cyklu; test rozstrzygający: pytanie „co się dzieje w jajniku?” dotyczy owulacji, pytanie „co się dzieje w macicy?” na początku cyklu — miesiączki.
+- Faza folikularna ≠ faza lutealna — przed owulacją rządzi pęcherzyk i estrogeny, po owulacji — ciałko żółte i progesteron; test rozstrzygający: jeśli głównym hormonem fazy jest progesteron, to faza następuje po owulacji.
+:::
+
+::: karta exam | Zadanie 5 (4 pkt) — Uporządkuj cykl
+Rozważ wydarzenia: I — złuszczanie błony śluzowej macicy; II — wzrost pęcherzyka i rosnące stężenie estrogenów; III — pęknięcie pęcherzyka i uwolnienie komórki jajowej; IV — działanie ciałka żółtego i wysoki progesteron; V — spadek stężenia hormonów przy braku zapłodnienia.
+
+a) Uporządkuj wydarzenia I–V w kolejności ich występowania w cyklu. (2 pkt)
+b) Podaj rolę estrogenów w cyklu. (1 pkt)
+c) Podaj rolę progesteronu w cyklu. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) I → II → III → IV → V. Miesiączka zaczyna cykl, potem rośnie pęcherzyk, owulacja dzieli cykl na pół, ciałko żółte działa do końca cyklu, a przy braku zapłodnienia hormony spadają i wszystko zaczyna się od nowa.
+b) (1 pkt) Estrogeny odbudowują i pogrubiają błonę śluzową macicy po miesiączce (a także odpowiadają za rozwój żeńskich cech drugorzędowych).
+c) (1 pkt) Progesteron utrzymuje błonę śluzową macicy w stanie gotowym na przyjęcie zarodka (gdyby doszło do zapłodnienia — utrzymuje ją w ciąży).
+:::
+:::
+
+::: karta exam | Zadanie 6 (3 pkt) — Cykle trzech osób (odczyt danych)
+U trzech osób cykl trwa: osoba A — 26 dni, osoba B — 28 dni, osoba C — 32 dni (wartości orientacyjne, z pomiarów kilku cykli).
+
+a) Oceń, czy któraś z tych osób ma na pewno nieprawidłowy cykl. (1 pkt)
+b) U której osoby owulacja wypadnie najpóźniej w danym cyklu? (1 pkt)
+c) Wyjaśnij, dlaczego zdanie „owulacja zawsze zachodzi 14. dnia” jest błędne. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Żadna — wartości 26, 28 i 32 dni mieszczą się w orientacyjnej normie 21–35 dni; długość cyklu różni się między osobami.
+b) (1 pkt) Osoba C — im dłuższy cykl, tym później zwykle wypada owulacja (ok. 14 dni przed następną miesiączką, czyli ok. 32 − 14 = 18. dnia; orientacyjnie).
+c) (1 pkt) Bo długość cyklu różni się między osobami i między kolejnymi cyklami u tej samej osoby; „14. dzień” odpowiada tylko cyklowi dokładnie 28-dniowemu, a nie jest uniwersalną regułą.
+:::
+:::
+
+## 5 | Zapłodnienie i rozwój prenatalny — pierwsze tygodnie {#ciaza} [[basic:E8]] [[understand:ROZUMIENIE]]
+
+Zapłodnienie to połączenie plemnika z komórką jajową. Podczas zbliżenia nasienie zostaje wprowadzone do pochwy; plemniki ruszają w górę — przez szyjkę macicy, macicę — aż do jajowodu. Droga jest brutalna: z setek milionów plemników na start tylko część przeżywa, a w pobliżu komórki jajowej zostają ich setki, nie miliony. Pierwszy plemnik, który przebije otoczki komórki jajowej (pomagają sobie enzymami z **akrosoma**), wnika do środka — i natychmiast komórka zamyka się przed kolejnymi, by żaden drugi plemnik nie dodał swojego materiału. Jądro plemnika łączy się z jądrem komórki jajowej: **powstaje zygota, 2n = 46**. Zapłodnienie zachodzi zwykle w **jajowodzie** (w jego szerszej, końcowej części).
+
+Warto zapamiętać okno czasowe (orientacyjnie): komórka jajowa po owulacji żyje ok. 12–24 godziny, a plemniki w drogach rodnych kobiety przeżywają do ok. 3–5 dni. Dlatego ciąża może rozpocząć się także po zbliżeniu kilka dni przed owulacją — plemniki po prostu czekają.
+
+| Czas (orientacyjnie) | Wydarzenie |
+|---|---|
+| 0. doba | zapłodnienie w jajowodzie — powstaje zygota (2n = 46) |
+| 1.–3. doba | bruzdkowanie: seria podziałów zygoty w drodze do macicy; kulka komórek (morula) |
+| 4.–5. doba | powstaje blastocysta — pęcherzyk z komórek, który będzie się mógł zagnieździć |
+| ok. 6.–7. doba | implantacja (zagnieżdżenie) zarodka w błonie śluzowej macicy |
+| do 8. tygodnia | okres **zarodkowy**: powstają zawiązki wszystkich narządów |
+| od 9. tygodnia do porodu | okres **płodowy**: wzrost i dojrzewanie; rozwija się łożysko i pępowina |
+| ok. 40. tydzień (liczony od ostatniej miesiączki) | poród |
+
+**Bruzdkowanie** to początkowy etap rozwoju: zygota dzieli się mitotycznie raz za razem, a między podziałami komórki nie rosną — dlatego kulka komórek nie jest większa od pierwotnej komórki jajowej, tylko coraz gęściej zapakowana. Dopiero po **implantacji** (zagnieżdżeniu w błonie śluzowej macicy) zarodek zaczyna czerpać substancje odżywcze z organizmu matki i rośnie naprawdę.
+
+Granica między zarodkiem a płodem przebiega ok. **8. tygodnia** ciąży (konwencje w różnych źródłach mogą się nieznacznie różnić — przyjęta tu jest szkolna): do tego czasu mówimy o **zarodku** (czas formowania narządów), od 9. tygodnia — o **płodzie** (czas wzrostu i dojrzewania). Praktyczna różnica: w okresie zarodkowym rozwój jest najbardziej wrażliwy na czynniki szkodliwe, np. substancje zawarte w alkoholu czy dymie tytoniowym.
+
+::: karta understand | W skrócie — pierwsze tygodnie życia
+Owulacja uwalnia komórkę jajową do jajowodu → zapłodnienie w jajowodzie (jeden plemnik na jedną komórkę jajową, powstaje zygota 2n) → bruzdkowanie, czyli seria podziałów w drodze do macicy → implantacja ok. 6.–7. doby → do 8. tygodnia zarodek (budowa narządów), od 9. tygodnia płód (wzrost i dojrzewanie). Kolejność „owulacja → zapłodnienie → implantacja → rozwój płodu” to najbardziej nagradzana na egzaminie łańcuch tej lekcji.
+:::
+
+::: karta warning | Uwaga — zarodek nie równa się płód
+Na arkuszach lubiane jest pytanie o granicę między zarodkiem a płodem. Reguła szkolna: **do końca 8. tygodnia — zarodek, od 9. tygodnia do porodu — płód**. Zdanie „w 12. tygodniu ciąży rozwija się zarodek” jest błędne — to już płód. Druga pułapka: zygota to **nie zarodek** w znaczeniu okresu zarodkowego — zygota to pierwsza komórka powstała w zapłodnieniu, jeszcze przed bruzdkowaniem. Na konkursie umiej to rozróżnić (zadanie 14).
+:::
+
+::: karta exam | Zadanie 7 (4 pkt) — Kolejność wydarzeń (wzór z arkusza)
+Rozważ wydarzenia: rozwój płodu, zapłodnienie, owulacja, bruzdkowanie, implantacja.
+
+a) Uporządkuj je w kolejności, w jakiej zachodzą. (2 pkt)
+b) Podaj miejsce, w którym zwykle zachodzi zapłodnienie. (1 pkt)
+c) Od którego tygodnia ciąży mówi się o płodzie, a nie o zarodku? (1 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) Owulacja → zapłodnienie → bruzdkowanie → implantacja → rozwój płodu. (Po owulacji komórka jajowa spotyka plemnik w jajowodzie, zygota dzieli się w drodze do macicy, zagnieżdża się w błonie śluzowej, a potem rozwija się płód.)
+b) (1 pkt) Jajowód (jego szersza część, orientacyjnie).
+c) (1 pkt) Od 9. tygodnia (granica szkolna: koniec 8. tygodnia kończy okres zarodkowy).
+:::
+:::
+
+::: karta exam | Zadanie 8 (3 pkt) — Zarodek czy płód?
+Przyporządkuj opisy do właściwego okresu (zarodkowy albo płodowy) i uzasadnij jedno z nich:
+
+a) ciąża w 5. tygodniu — zawiązki narządów powstają właśnie teraz (1 pkt)
+b) ciąża w 12. tygodniu — narządy już zawiązane, rośnie całe ciało (1 pkt)
+c) wyjaśnij, dlaczego okres zarodkowy uważa się za najbardziej wrażliwy na czynniki szkodliwe (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Okres zarodkowy — do 8. tygodnia powstają zawiązki wszystkich narządów.
+b) (1 pkt) Okres płodowy — od 9. tygodnia dominuje wzrost i dojrzewanie już zbudowanych struktur.
+c) (1 pkt) Bo właśnie wtedy formują się narządy; zaburzenie podziałów i migracji komórek w tym czasie może trwale zmienić budowę organu, a w okresie płodowym trwają już raczej procesy wzrostu i dojrzewania.
+:::
+:::
+
+## 6 | Łożysko i pępowina — stacja przesyłowa ciąży {#lozysko} [[basic:E8]]
+
+Rozwijający się płód nie może oddychać płucami, jeść ani wydalać — a jednak rośnie w tempie najszybszym z całego życia. Robi to dzięki **łożysku**: organowi, który powstaje z tkanek zarówno zarodka/płodu, jak i matki i jest doklejony do ściany macicy. Z płodem łączy go **pępowina** — sznur zawierający naczynia krwionośne (dwie tętnice odprowadzające krew od płodu do łożyska i jedna żyła przywożąca krew z łożyska do płodu; detal konkursowy, orientacyjnie).
+
+| Funkcja łożyska | Na czym polega |
+|---|---|
+| Oddychanie | tlen z krwi matki przechodzi do krwi płodu, dwutlenek węgla — w przeciwną stronę; płuca płodu pracują dopiero po porodzie |
+| Odżywianie | glukoza, aminokwasy, tłuszcze, witaminy i minerały przechodzą z krwi matki do krwi płodu |
+| Wydalanie | produkty przemiany materii płodu wracają krwią matki i są usuwane przez jej narządy |
+| Ochrona | bariera dla wielu szkodliwych substancji i drobnoustrojów (ale nie dla wszystkich — np. alkohol, nikotyna, niektóre wirusy przechodzą); ogranicza też kontakt komórek układu odpornościowego matki z płodem |
+| Produkcja hormonów | łożysko (i jego zalążki) wytwarza m.in. hCG — hormon podtrzymujący ciałko żółte we wczesnej ciąży, a potem także estrogeny i progesteron |
+
+Najważniejszy, eksaminacyjny fakt: **krew matki i krew płodu nie mieszają się**. Płyną osobnymi naczyniami, które stykają się w łożysku na najmniejszą możliwą odległość — wymiana substancji zachodzi przez ścianki naczyń i tkanki pośrednie, na zasadzie dyfuzji i transportu. Dlatego grupa krwi dziecka może być inna niż grupa krwi matki i nic złego z tego nie wynika. Wyobraź sobie szklankę z dwiema osobnymi słomkami obok siebie: płyny się nie mieszają, ale gdy słomki mają półprzepuszczalne ścianki, substancje mogą przechodzić z jednej do drugiej. Dokładnie tak działa łożysko — sprawdzisz to w doświadczeniu z [§10](#doswiadczenia).
+
+::: karta core | Najważniejsze — łożysko w jednym zdaniu
+Łożysko to wspólny organ matki i płodu, przez który bez mieszania krwi zachodzi wymiana: tlen i substancje odżywcze idą do płodu, dwutlenek węgla i produkty przemiany materii — do matki; łożysko dodatkowo chroni i produkuje hormony, a z płodem łączy je pępowina.
+:::
+
+::: karta understand | W skrócie — łożysko
+Myśl o łożysku jak o granicznej stacji celnej: po obu stronach płyną dwie osobne krwi (matki i płodu), które nigdy się nie mieszają, ale na granicy wymieniają towar — tlen i jedzenie w jedną stronę, dwutlenek węgla i odpady w drugą. Służba celna sprawdza też, co może przejechać: wiele szkodliwych substancji zostaje zatrzymanych, choć niestety nie wszystkie. Na dodatek stacja ma własną fabrykę hormonów, bez której ciąża by się nie utrzymała. Pępowina to po prostu droga, którą towary jadą między stacją a płodem.
+:::
+
+::: karta warning | Uwaga — krew matki i płodu nie miesza się
+Zdanie „w łożysku krew matki miesza się z krwią płodu” to jeden z najczęściej podbijanych błędów na egzaminie. Poprawnie: krew matki i płodu płynie **osobno**, a wymiana substancji zachodzi przez ściany naczyń. Konsekwencja: grupa krwi dziecka może być inna niż matki. Analogicznie błędne jest „płód oddycha przez łożysko płuca” — przez łożysko przechodzi tlen, ale płód nie używa do oddychania płuc.
+:::
+
+::: karta exam | Zadanie 9 (4 pkt) — Rola łożyska
+a) Wymień trzy funkcje łożyska. (1 pkt)
+b) Czy krew matki miesza się z krwią płodu? Odpowiedz i uzasadnij. (2 pkt)
+c) Wyjaśnij, w jaki sposób płód pozbywa się dwutlenku węgla, skoro jego płuca nie pracują. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Przykłady: wymiana gazowa (tlen/CO₂), dostarczanie substancji odżywczych, usuwanie produktów przemiany materii, ochrona (bariera), produkcja hormonów — dowolne trzy.
+b) (2 pkt) Nie. (1 pkt za „nie”, 1 pkt za uzasadnienie) Krew matki i płodu płynie osobnymi naczyniami; w łożysku zachodzi wymiana substancji przez ich ścianki, więc krew może mieć różne grupy krwi, a jej składniki przenoszą się selektywnie.
+c) (1 pkt) CO₂ dyfunduje z krwi płodu do krwi matki w łożysku, zostaje wydychany przez płuca matki; tę samą drogą — w odwrotnym kierunku — płód otrzymuje tlen.
+:::
+:::
+
+## 7 | Etapy życia po urodzeniu {#etapy} [[basic:E8]]
+
+Rozwój człowieka nie kończy się na porodzie. Wyróżniamy kolejne etapy życia — ramy wiekowe są orientacyjne i różnią się między źródłami, ale kolejność i cechy musisz znać na pewniaka.
+
+| Okres | Orientacyjne ramy | Cechy charakterystyczne |
+|---|---|---|
+| Okres prenatalny (przedurodzeniowy) | od zapłodnienia do porodu | dzieli się na zarodkowy (do 8. tygodnia — budowa narządów) i płodowy (od 9. tygodnia — wzrost i dojrzewanie) |
+| Noworodkowy | pierwsze tygodnie życia (ok. 4 tygodnie) | adaptacja do życia poza organizmem matki: własne oddychanie, karmienie, stała temperatura ciała |
+| Niemowlęcy | do końca 1. roku życia | najszybszy wzrost w całym życiu; nauka siadania, raczkowania, pierwszych słów |
+| Dzieciństwo | do ok. 10.–12. roku życia | wolniejszy, stały wzrost; nauka, zabawa, rozwój społeczny |
+| Dojrzewanie (pokwitanie) | dziewczęta ok. 10.–12 lat, chłopcy ok. 12.–14 lat (orientacyjnie) | dojrzewanie narządów płciowych, cechy drugorzędowe, skok wzrostowy, zmiany emocjonalne; hormony płciowe |
+| Dojrzałość | od zakończenia dojrzewania | pełna sprawność organizmu, zdolność do rozmnażania, rodzicielstwo |
+| Starość | późny okres życia | stopniowe zmniejszanie sprawności narządów, bogactwo doświadczenia |
+
+Zwróć uwagę na dwie cechy, które lubią pojawiać się w zadaniach. Po pierwsze: **dojrzewanie u dziewcząt zaczyna się zwykle wcześniej niż u chłopców** — o orientacyjnie 2 lata. Po drugie: najszybszy wzrost człowieka to nie dojrzewanie, lecz **pierwszy rok życia**; dojrzewanie daje drugi, słynny „skok wzrostowy”.
+
+::: karta exam | Zadanie 10 (3 pkt) — Etapy do poskładania
+a) Uporządkuj etapy życia człowieka: dzieciństwo, starość, okres prenatalny, dojrzewanie, noworodkowy, dojrzałość, niemowlęcy. (2 pkt)
+b) Podaj jedną cechę, która wyróżnia okres niemowlęcy na tle pozostałych. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) Okres prenatalny → noworodkowy → niemowlęcy → dzieciństwo → dojrzewanie → dojrzałość → starość.
+b) (1 pkt) Przykłady: najszybszy wzrost w całym życiu; nauka podstaw ruchu (siadanie, chodzenie) i pierwszych słów; całkowita zależność od opiekunów.
+:::
+:::
+
+## 8 | Dojrzewanie — czas wielkiej przemiany {#dojrzewanie} [[basic:E8]]
+
+Dojrzewanie (pokwitanie) to okres, w którym organizm przechodzi z etapu dzieciństwa do dojrzałości płciowej. Steruje nim układ hormonalny: przysadka mózgowa wysyła sygnały do gonad (jajników i jąder), a te zaczynają produkować na dużą skalę hormony płciowe — u dziewcząt **estrogeny**, u chłopców **testosteron**. Dziewczęta zaczynają dojrzewać zwykle ok. 10.–12. roku życia, chłopcy ok. 12.–14. (orientacyjnie) — dziewczęta są więc „o dobę dwa lata do przodu”.
+
+Co się zmienia:
+
+| Typ zmian | Dziewczęta | Chłopcy |
+|---|---|---|
+| Cechy pierwszorzędne — rozwój samych narządów płciowych | dojrzewanie jajników, macicy i pochwy; od pierwszej miesiączki możliwe cykle | dojrzewanie jąder i dróg wyprowadzających; od tego momentu produkowane są plemniki |
+| Cechy drugorzędowe — zmiany ciała, nie związane wprost z narządami płciowymi | rozwój piersi, owłosienie pach i okolicy płciowej, typowo żeńska sylwetka (poszerzenie bioder) | mutacja (pogłębienie) głosu, zarost na twarzy, owłosienie pach i okolicy płciowej, poszerzenie barków, większa masa mięśniowa |
+| Wspólne | skok wzrostowy, pot (i zapach), trądzik, zmiany emocjonalne | te same |
+
+::: karta understand | W skrócie — dojrzewanie
+Dojrzewanie to przejście z dzieciństwa do dojrzałości płciowej, kierowane hormonami płciowymi (estrogeny — dziewczęta, testosteron — chłopcy). Rozpoznajemy zmiany pierwszorzędne (dojrzewają same narządy płciowe — pojawia się zdolność do rozmnażania) i drugorzędowe (piersi, sylwetka, głos, zarost, owłosienie). Dziewczęta zaczynają wcześniej (ok. 10.–12 lat) niż chłopcy (ok. 12.–14). Na egzaminie pytanie „która cecha jest drugorzędowa?” rozwiązuje reguła: wszystko, co nie jest rozwodem samych narządów płciowych ani produkcją gamet, to cecha drugorzędowa.
+:::
+
+::: nie-myl | Cechy pierwszorzędne ≠ drugorzędne
+- Cechy pierwszorzędne ≠ cechy drugorzędowe — pierwszorzędne to dojrzewanie samych narządów płciowych (jajniki, jądra, macica, pochwa, prącie) i zdolność do wytwarzania gamet; drugorzędowe to zmiany ciała i głosu, które nie służą bezpośrednio wytwarzaniu gamet; test rozstrzygający: zapytaj „czy ta cecha dotyczy samego narządu płciowego lub wytwarzania gamet?” — tak: pierwszorzędna, nie: drugorzędowa.
+- Mutacja głosu ≠ produkcja testosteronu — mutacja głosu jest cechą drugorzędową (zmiana ciała), a produkcja testosteronu i plemników dotyczy narządu płciowego (cecha pierwszorzędowa); test rozstrzygający: hormon to sygnał hormonalny, cecha — jego widoczny skutek.
+:::
+
+::: karta exam | Zadanie 11 (3 pkt) — Cechy płciowe do sklasyfikowania
+a) Wyjaśnij różnicę między cechami pierwszorzędowymi a drugorzędowymi. (1 pkt)
+b) Sklasyfikuj: mutacja głosu; dojrzewanie jajników; rozwój piersi; początek produkcji plemników. (2 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Pierzwsorzędne dotyczą narządów płciowych i zdolności do wytwarzania gamet; drugorzędowe to pozostałe zmiany ciała w okresie dojrzewania, nie związane wprost z narządami płciowymi.
+b) (2 pkt po 0,5 pkt za poprawną klasyfikację) Mutacja głosu — drugorzędowa; dojrzewanie jajników — pierwszorzędowa; rozwój piersi — drugorzędowa; początek produkcji plemników — pierwszorzędowa.
+:::
+:::
+
+## 9 | Zdrowie reprodukcyjne — choroby i profilaktyka {#zdrowie} [[basic:E8]] [[understand:ROZUMIENIE]]
+
+Niektóre choroby przenoszą się głównie drogą płciową, podczas kontaktów seksualnych. Ich sprawcami są bakterie albo wirusy — i ta różnica ma znaczenie dla profilaktyki i leczenia.
+
+| Choroba | Czynnik | Co trzeba o niej wiedzieć | Profilaktyka |
+|---|---|---|---|
+| Kiła | bakteria | rozwija się etapami; nieleczona uszkadza wiele narządów, także układ nerwowy | prezerwatywa, badania, leczenie antybiotykiem |
+| Rzeżączka | bakteria | zapalenie dróg moczowo-płciowych; u noworodków może uszkodzić oczy | prezerwatywa, badania, leczenie antybiotykiem |
+| Chlamydioza | bakteria wewnątrzkomórkowa | często przebiega bezobjawowo — dlatego badania są ważne; częsta przyczyna niepłodności | prezerwatywa, badania przesiewowe |
+| HIV | wirus | uszkadza układ odpornościowy; nieleczony prowadzi do AIDS | prezerwatywa, nieużywanie wspólnych przedmiotów mających kontakt z krwią, testowanie |
+| HPV (brodawczak ludzki) | wirus | najczęściej przenoszona infekcja drogą płciową; niektóre typy wywołują raka szyjki macicy | **szczepienie** przeciwko HPV, prezerwatywa (częściowo), cytologia |
+
+Szczególny przypadek profilaktyki: **rak szyjki macicy** to nowotwór, którego główną przyczyną jest zakażenie wirusem HPV — dlatego szczepienie przeciwko HPV (dostępne w Polsce, także w ramach programów publicznych) jest jednocześnie profilaktyką raka. Obok niego działa **cytologia** — badanie przesiewowe polegające na pobraniu komórek z szyjki macicy i ocenie ich pod mikroskopem, by wychwycić zmiany zanim staną się nowotworem.
+
+| Nowotwór | Dotyczy | Podstawowe badania |
+|---|---|---|
+| Rak szyjki macicy | kobiet | cytologia, test na HPV, szczepienie przeciwko HPV |
+| Rak piersi | kobiet (i rzadziej mężczyzn) | samobadanie piersi, badania obrazowe (mammografia, USG) |
+| Rak prostaty | mężczyzn | badanie krwi na PSA, badanie u lekarza, USG |
+| Rak jąder | młodych mężczyzn (orientacyjnie najczęstszy nowotwór złośliwy w tym wieku) | samobadanie jąder, USG |
+
+Osobnym problemem zdrowotnym jest **niepłodność** — niezdolność do poczęcia dziecka mimo starań (orientacyjnie mówi się o niej po ok. roku regularnych starań bez efektu). Przyczyny mogą dotyczyć obojga partnerów: zaburzenia owulacji, niedrożność jajowodów, pogorszenie jakości lub liczby plemników, choroby i nawyki (palenie, alkohol, stres), wiek. Medycyna zna sposoby pomocy — od leczenia przyczyn po techniki wspomaganego rozrodu, np. **zapłodnienie pozaustrojowe** (in vitro), w którym zapłodnienie odbywa się poza organizmem, a zarodek jest przenoszony do macicy.
+
+::: karta understand | W skrócie — profilaktyka
+Choroby przenoszone drogą płciową dzielą się na bakteryjne (kiła, rzeżączka, chlamydioza — leczone antybiotykami) i wirusowe (HIV, HPV — wirusów nie usunie antybiotyk). Profilaktyka warstwami: odpowiedzialne decyzje i ograniczanie liczby partnerów, prezerwatywa jako bariera, szczepienie przeciwko HPV, badania przesiewowe (cytologia, testy) i samobadanie (piersi, jądra) — bo wiele zmian długo nie boli i nie daje objawów. Nowotwory tego obszaru też mają swoje badania: szyjka macicy — cytologia, pierś — samobadanie i mammografia, prostata — PSA, jądra — samobadanie. To sekcja, w której wiedza realnie ratuje zdrowie — i dlatego jej zakres na egzaminie jest konkretny i przewidywalny.
+:::
+
+::: karta warning | Uwaga — wiedza nie zastępuje lekarza
+W tej lekcji poznajesz zasady i mechanizmy — ale diagnozy, leczenia i szczepień nie ustala się z podręcznika ani z Internetu. Jeśli czegoś cię dotyczy (objawy, wątpliwości, strach), rozmowa z lekarzem lub pielęniarką szkolną jest właściwą drogą. Nie zawstydzaj się pytaniami — zdrowie reprodukcyjne to normalna część medycyny, tak jak zęby czy wzrok.
+:::
+
+::: karta exam | Zadanie 12 (4 pkt) — Profilaktyka do dopasowania
+a) Przed jaką infekcją chroni szczepienie i jaki nowotwór dzięki temu ogranicza? (2 pkt)
+b) Podaj dwa różne sposoby zmniejszania ryzyka zakażeń przenoszonych drogą płciową. (1 pkt)
+c) Wyjaśnij, dlaczego badania kontrolne (np. cytologia) wykonuje się także u osób zdrowych, bez objawów. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) Szczepienie chroni przed zakażeniem wirusem HPV (brodawczaka ludzkiego); ponieważ niektóre typy HPV są główną przyczyną raka szyjki macicy, szczepienie ogranicza ryzyko tego nowotworu.
+b) (1 pkt) Przykłady: używanie prezerwatywy, ograniczanie liczby partnerów seksualnych, badania i testowanie się, nieużywanie wspólnych przedmiotów mających kontakt z krwią — dowolne dwa.
+c) (1 pkt) Bo wiele zmian przednowotworowych i infekcji (np. chlamydioza, wczesne zmiany na szyjce macicy) przebiega bez objawów; badania przesiewowe wykrywają je wcześnie, gdy leczenie jest najskuteczniejsze.
+:::
+:::
+
+## 10 | Doświadczenia {#doswiadczenia} [[understand:ROZUMIENIE]]
+
+Obydwa doświadczenia są modelami — pokazują mechanizmy, których nie zobaczysz bezpośrednio w ciele człowieka. Modele mają ograniczenia; umiesz je wskazać, wygrywasz połowę punktów na konkursie.
+
+::: dosw | Doświadczenie 1 — Model bariery łożyska
+Problem: Czy błona może przepuszczać jedne substancje, a zatrzymywać inne — tak jak łożysko wymienia substancje między krwią matki a krwią płodu?
+Hipoteza: Błona półprzepuszczalna przepuści małe cząsteczki (jodu i glukozy), a zatrzyma duże cząsteczki skrobi.
+Sprzęt: woreczek z błony półprzepuszczalnej (worek do dializy), roztwór skrobi z dodatkiem glukozy, roztwór jodu w wodzie (płyn Lugola), odczynnik do wykrywania glukozy (np. płyn Fehlinga), szklanka, gumka recepturka, probówki.
+Przebieg: 1) Do woreczka wlej roztwór skrobi z glukozą i szczelnie go zamknij. 2) Zanurz woreczek w szklance z roztworem jodu i odczekaj ok. 20–30 minut. 3) Obserwuj barwę wnętrza woreczka i roztworu w szklance. 4) Pobierz próbkę płynu ze szklanki i sprawdź obecność glukozy odczynnikiem Fehlinga.
+Próba kontrolna: drugi woreczek z samą wodą destylowaną zanurzony równocześnie w roztworze jodu — porównanie pokazuje, że barwienie nie pochodzi od samego woreczka; dodatkowo szklanka z czystą wodą (bez jodu) z woreczkiem ze skrobią i glukozą pozwala sprawdzić, czy glukoza wychodzi wyłącznie pod wpływem gradientu stężeń.
+Obserwacja: wnętrze woreczka sinieje (jod wszedł do środka i wykrył skrobię), ale roztwór w szklance nie przyjmuje granatowej barwy (skroba nie wyszła na zewnątrz); próba glukozy w płynie ze szklanki jest dodatnia (glukoza wyszła z woreczka).
+Wniosek: Błona działa selektywnie — przepuszcza cząsteczki małe, a zatrzymuje duże. Łożysko działa podobnie: jest barierą, przez którą przechodzą wybrane substancje (tlen, glukoza, CO₂), ale komórki krwi matki i płodu oraz wiele innych dużych struktur nie przenikają — dlatego krew matki i płodu nie miesza się.
+BHP: Płyn Lugola i odczynnik Fehlinga drażnią skórę i oczy — pracuj w okularach i rękawicach; podgrzewanie próby Fehlinga wykonuj tylko pod opieką osoby dorosłej; nie pij roztworów; po pracy umyj ręce i opróżnij naczynia zgodnie z instrukcjami.
+:::
+
+::: dosw | Doświadczenie 2 — Skąd bierze się dwutlenek węgla usuwany przez łożysko
+Problem: Czy wydychane powietrze zawiera więcej dwutlenku węgla niż powietrze atmosferyczne — to ten CO₂, który u płodu przechodzi przez łożysko do krwi matki i jest przez nią wydychany?
+Hipoteza: Wydychane powietrze zawiera więcej CO₂, więc woda wapienna zmętnieje od wydechu szybciej niż od powietrza atmosferycznego.
+Sprzęt: dwie zlewki z jednakową ilością świeżej wody wapiennej, dwie czyste słomki (każda do osobnej zlewki), gruszka do przedmuchiwania powietrza (lub druga słomka i dmuchanie powietrzem atmosferycznym bez wydechu przez słomkę zanurzoną w płynie).
+Przebieg: 1) Do zlewki 1 dmuchaj wydychanym powietrzem przez słomkę, aż zauważysz zmianę. 2) Do zlewki 2 wprowadzaj powietrze atmosferyczne (gruszką) przez tę samą ilość czasu. 3) Porównaj stopień zmętnienia obu zlewek.
+Próba kontrolna: zlewka 2 z powietrzem atmosferycznym — pokazuje, że samo powietrze zawiera tylko śladowe ilości CO₂ i porównanie ma sens.
+Obserwacja: woda wapienna w zlewce 1 mętnieje szybko i wyraźnie, w zlewce 2 pozostaje prawie przezroczysta.
+Wniosek: Wydychane powietrze jest znacznie bogatsze w dwutlenek węgla niż powietrze atmosferyczne. U kobiety w ciąży to ona „oddycha za dwoje”: CO₂ płodu przechodzi przez łożysko do jej krwi, dociera do jej płuc i jest przez nią wydychany.
+BHP: Każdy używa własnej, czystej słomki — nie dziel się słomką z nikim; woda wapienna drażni oczy i skórę — pracuj w okularach; nie pij płynów doświadczalnych; po pracy umyj ręce.
+:::
+
+## 11 | Zadania konkursowe {#zadania-konkurs} [[exam:KONKURS]]
+
+Te zadania są trudniejsze niż arkusz ósmoklasisty — odpowiadają poziomowi konkursów przedmiotowych. Każde ma klucz z uzasadnieniem: bez uzasadnienia odpowiedź na konkursie nie liczy się w pełni. Próbuj rozwiązywać na kartce, mierz czas dopiero przy powtórkach.
+
+::: adv | Zadanie 13 (5 pkt) — Odczytaj tabelę hormonalną | poziom ambitny
+W tabele wpisano orientacyjne stężenia hormonów (w umownych jednostkach) u osoby z cyklem 28-dniowym:
+
+| Dzień cyklu | Estrogeny | Progesteron |
+|---|---|---|
+| 5 | rosną | niskie |
+| 14 | szczyt | niskie |
+| 21 | wysokie | wysokie |
+| 27 | niskie | niskie |
+
+a) Przyporządkuj dniom 5, 14, 21 i 27 właściwe fazy cyklu. (2 pkt)
+b) Co dzieje się z błoną śluzową macicy w dniu 27 i dlaczego? (1 pkt)
+c) Wyjaśnij, dlaczego wysoki progesteron w dniu 21 świadczy o działaniu ciałka żółtego. (1 pkt)
+d) Przewiduj, jak zmieniłby się profil progesteronu, gdyby w tym cyklu doszło do zapłodnienia. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) Dzień 5 — faza folikularna (po miesiączce, rośnie pęcherzyk i estrogeny); dzień 14 — owulacja (szczyt estrogenów); dzień 21 — faza lutealna (ciałko żółte); dzień 27 — koniec fazy lutealnej, tuż przed miesiączką (zanik ciałka żółtego).
+b) (1 pkt) Błona śluzowa zaczyna się złuszczać — spadek progesteronu odbiera jej wsparcie hormonalne, więc następuje miesiączka.
+c) (1 pkt) Progesteron w cyklu produkuje głównie ciałko żółte powstałe z pękniętego pęcherzyka; wysokie stężenie w drugiej połowie cyklu jest więc znakiem, że ciałko żółte działa.
+d) (1 pkt) Progesteron nie spadałby — sygnał z wczesnej ciąży (hCG) utrzymuje ciałko żółte przy życiu, więc błona śluzowa zostaje i miesiączka nie nadchodzi.
+:::
+:::
+
+::: adv | Zadanie 14 (5 pkt) — Znajdź pięć błędów | poziom ambitny
+W tekście ukryto pięć błędów merytorycznych. Znajdź je i popraw: „Zapłodnienie zachodzi zwykle w jajniku. W łożysku krew matki całkowicie miesza się z krwią płodu, dlatego dziecko zawsze ma tę samą grupę krwi co matka. Cykl miesiączkowy zawsze trwa 28 dni, a owulacja zawsze wypada 14. dnia. Płód w macicy oddycha płuca wypełnionymi powietrzem. Łożysko nie produkuje żadnych hormonów.”
+
+::: odp | Pokaż klucz
+1. (1 pkt) Zapłodnienie zachodzi zwykle w jajowodzie, nie w jajniku — jajnik tylko uwalnia komórkę jajową.
+2. (1 pkt) Krew matki i płodu nie miesza się — wymiana substancji zachodzi przez ścianki naczyń; grupa krwi dziecka może być inna niż matki.
+3. (1 pkt) Cykl zwykle trwa ok. 28 dni, ale norma to orientacyjnie 21–35 dni, a owulacja przesuwa się wraz z długością cyklu (ok. 14 dni przed następną miesiączką).
+4. (1 pkt) Płód nie oddycha płuca wypełnionymi powietrzem — tlen przechodzi przez łożysko z krwi matki; płuca wypełnione powietrzem zaczynają pracować dopiero po porodzie.
+5. (1 pkt) Łożysko produkuje hormony — m.in. hCG we wczesnej ciąży, a później także estrogeny i progesteron.
+:::
+:::
+
+::: adv | Zadanie 15 (4 pkt) — Granice pojęć: czy zygota to zarodek? | poziom ambitny
+Uczeń twierdzi: „Po zapłodnieniu komórka jajowa staje się zarodkiem, więc zygota to synonim zarodka”.
+
+a) Wyjaśnij, dlaczego twierdzenie jest nieprecyzyjne, wskazując, czym różni się zygota od zarodka okresu zarodkowego. (2 pkt)
+b) Uporządkuj pojęcia od najmniejszej do największej „wielkości” struktury: blastocysta, zygota, morula; wskaż, który etap jest pierwszym wielokomórkowym. (1 pkt)
+c) Uzasadnij, dlaczego bruzdkowanie nie zwiększa rozmiarów zarodka, mimo że liczba komórek rośnie. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) Zygota jest pojedynczą komórką — efektem połączenia gamet (2n = 46); zarodek okresu zarodkowego to wielokomórkowa struktura rozwijająca się po bruzdkowaniu i implantacji, a okres zarodkowy kończy się ok. 8. tygodnia. Zygotę można uznać za najwcześniejszą formę rozwijającego się organizmu, ale nie jest synonimem „zarodka” w sensie okresu zarodkowego — to graniczne pojęcie, na którym łatwo stracić punkty.
+b) (1 pkt) Zygota (1 komórka) → morula (kulka komórek) → blastocysta (pęcherzyk); pierwszym wielokomórkowym etapem jest morula.
+c) (1 pkt) W bruzdkowaniu podziały następują po sobie szybciej niż faza wzrostu — komórki dzielą się, ale nie rosną, więc całość pozostaje w rozmiarze komórki jajowej; wzrost rozpoczyna się naprawdę po implantacji, gdy zarodek zaczyna czerpać substancje odżywcze od matki.
+:::
+:::
+
+::: adv | Zadanie 16 (5 pkt) — Interpretacja modelu bariery (doświadczenie 1) | poziom ambitny
+Wykonano doświadczenie 1 z [§10](#doswiadczenia): woreczek z roztworem skrobi i glukozy zanurzony w roztworze jodu. Wnętrze woreczka sinieje, roztwór w szklance nie zmienia barwy na granatową, a próba glukozy w płynie ze szklanki jest dodatnia.
+
+a) Wskaż, co w tym modelu odpowiada łożysku, a co krwi matki i krwi płodu. (1 pkt)
+b) Wyjaśnij, dlaczego wyniki doświadczenia ilustrują selektywność łożyska. (2 pkt)
+c) Podaj dwa ograniczenia tego modelu — w czym różni się od prawdziwego łożyska. (2 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Ściana woreczka odpowiada barierze łożyska; roztwór w szklance — krwi matki; roztwór w woreczku — krwi płodu.
+b) (2 pkt) Doświadczenie pokazuje, że błona przepuszcza w obie strony tylko wybrane substancje: małe (jod wszedł do środka, glukoza wyszła), a zatrzymuje duże (skroba nie wyszła). Podobnie łożysko przepuszcza tlen, CO₂, glukozę i inne potrzebne cząsteczki, ale nie przepuszcza np. komórek krwi — dlatego krew matki i płodu się nie mieszają, choć wymiana substancji zachodzi.
+c) (2 pkt) Przykłady ograniczeń: model nie odwzorowuje aktywnego transportu i zużycia energii przez łożysko (w modelu działa tylko dyfuzja); nie uwzględnia przepływu krwi ani produkcji hormonów i roli układu odpornościowego; jod i skroba to nieprzypadkowe, „szkolne” pary substancji, a realna bariera łożyska jest znacznie bardziej złożona i selektywna. (Dowolne dwa, uzasadnione.)
+:::
+:::
+
+::: adv | Zadanie 17 (4 pkt) — Bliźnięta jednojajowe i dwujajowe | poziom ambitny
+a) Wyjaśnij, skąd powstają bliźnięta dwujajowe, i podaj, ile zygot bierze w tym udział. (2 pkt)
+b) Wyjaśnij, skąd powstają bliźnięta jednojajowe i dlaczego są do siebie znacznie bardziej podobne niż zwykłe rodzeństwo. (2 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) Bliźnięta dwujajowe powstają, gdy w jednym cyklu dojrzeją i zostaną uwolnione dwie komórki jajowe, a każda zostanie zapłodniona innym plemnikiem; biorą w tym udział dwie odrębne zygoty, więc dzieci mają wspólne orientacyjnie połowę genów — jak zwykłe rodzeństwo, tylko dzielą czas w macicy.
+b) (2 pkt) Bliźnięta jednojajowe powstają z jednej zygoty, która we wczesnym rozwoju dzieli się na dwa oddzielne zarodki; mają praktycznie identyczny materiał genetyczny, dlatego są do siebie bardzo podobne (różnice wyglądu wynikają z czynników środowiskowych, np. warunków w macicy i życia po urodzeniu).
+:::
+:::
+
+::: adv | Zadanie 18 (5 pkt) — Owulacja liczona od końca (zadanie z pułapką) | poziom ambitny
+U osoby A cykl trwa 24 dni, u osoby B — 28 dni, u osoby C — 34 dni (orientacyjnie, z pomiarów). Przyjmij, że faza lutealna trwa względnie stałe ok. 14 dni i liczona jest od owulacji do pierwszego dnia następnej miesiączki.
+
+a) Oblicz orientacyjny dzień owulacji dla każdej osoby. (3 pkt)
+b) Wyjaśnij, dlaczego metoda „owulacja zawsze 14. dnia od początku cyklu” zawodzi przy cyklach krótszych lub dłuższych niż 28 dni. (1 pkt)
+c) Podaj jedno ograniczenie metody liczonej „od końca”. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (3 pkt po 1 pkt za każdą poprawną wartość) Osoba A: 24 − 14 = 10. dzień; osoba B: 28 − 14 = 14. dzień; osoba C: 34 − 14 = 20. dzień (orientacyjnie).
+b) (1 pkt) Bo faza folikularna (od miesiączki do owulacji) jest zmienna — to ona skraca się lub wydłuża wraz z długością cyklu; stała jest raczej faza lutealna, więc liczenie „od początku” z góry zakłada cykl 28-dniowy.
+c) (1 pkt) Przykłady: faza lutealna też nie jest idealnie stała (orientacyjnie 12–14 dni u różnych osób i w różnych cyklach — do weryfikacji u konkretnego człowieka); metoda opisuje cykl wstecz, więc nie nadaje się do pewnego przewidywania z wyprzedzeniem.
+:::
+:::
+
+::: adv | Zadanie 19 (4 pkt) — Analiza tekstu: test ciążowy i hormon hCG | poziom ambitny
+Przeczytaj fragment: „We wczesnej ciąży rozwijające się błony zarodka produkują hormon hCG. Dociera on do krwi i moczu matki. Jego zadaniem jest m.in. utrzymanie ciałka żółtego przy życiu. Zwykle próby ciążowe oparte na wykrywaniu hCG w moczu wykonuje się od dnia spodziewanej miesiączki (orientacyjnie).”
+
+a) Wyjaśnij, co stałoby się z błoną śluzową macicy, gdyby hCG nie powstało. (2 pkt)
+b) Dlaczego hCG można wykryć w moczu? (1 pkt)
+c) Uzasadnij, dlaczego test wykonany zbyt wcześnie może dać wynik fałszywie ujemny. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) Bez hCG ciałko żółte zanika (miałoby to miejsce ok. 10–14 dni po owulacji), stężenie progesteronu spada, błona śluzowa macicy traci wsparcie i złuszcza się — nastąpiłaby miesiączka, a ciąża nie mogłaby się utrzymać.
+b) (1 pkt) Bo hCG z krwi jest filtrowane w nerkach i przechodzi do moczu — mocz jest więc wygodną, nieinwazyjną próbką do badania.
+c) (1 pkt) Bo stężenie hCG rośnie stopniowo od implantacji; tuż po zapłodnieniu (a nawet tuż po implantacji) może być jeszcze poniżej progu wykrywalności testu, który wtedy pokaże brak ciąży mimo jej istnienia.
+:::
+:::
+
+::: adv | Zadanie 20 (4 pkt) — Analiza tekstu: zapłodnienie pozaustrojowe | poziom ambitny
+Przeczytaj fragment: „W technice zapłodnienia pozaustrojowego (in vitro) dojrzałe komórki jajowe pobiera się od kobiety i łączy z plemnikami partnera w warunkach laboratoryjnych. Powstałe zarodki przez kilka dni się rozwijają, po czym jeden z nich przenosi się do macicy kobiety.”
+
+a) W czym zapłodnienie pozaustrojowe różni się od naturalnego? (1 pkt)
+b) Podaj, co się nie zmienia w porównaniu z ciążą naturalną — gdzie rozwija się zarodek po przeniesieniu i co dzieje się dalej. (1 pkt)
+c) Wyjaśnij, dlaczego do in vitro pobiera się zwykle więcej niż jedną komórkę jajową. (1 pkt)
+d) Zaproponuj jedno pytanie badawcze, które można by zadać w związku z tym tekstem. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Spotkanie gamet i połączenie ich materiału genetycznego zachodzi poza organizmem kobiety, w warunkach laboratoryjnych, a nie w jajowodzie.
+b) (1 pkt) Zarodek rozwija się w macicy — przechodzi implantację w błonie śluzowej i dalszy rozwój zarodkowy oraz płodowy przebiega tak jak w ciąży naturalnej (ciąża jest utrzymywana hormonami, z czasem przez łożysko).
+c) (1 pkt) Bo nie każda komórka jajowa zostanie zapłodniona, a nie każdy zarodek rozwinie się i przetrwa przeniesienie; większa liczba prób zwiększa szansę powodzenia.
+d) (1 pkt) Przykłady (dowolne sensowne): „Jakie warunki laboratoryjne zwiększają odsetek zarodków przetrwających przeniesienie?”; „Jak wygląda odsetek skutecznych przeniesień w zależności od wieku kobiety?” — pytanie musi być badawcze (sprawdzalne), a nie opiniujące.
+:::
+:::
+
+## 12 | Dla olimpijczyka — pogłębienie {#olimpijczyk} [[exam:KONKURS]] [[extra:AMBITNE]]
+
+To, czego nie ma w podręczniku klasy 8, a co regularnie pojawia się w zadaniach konkursowych — przedstawione krótko i uczciwie, z zaznaczeniem tego, co warto zweryfikować u źródła.
+
+**Mejoza jako fabryka różnorodności.** Gamety nie są kopiami: w mejozie chromosomy homologiczne wymieniają się fragmentami (**crossing-over**), a ich rozdział do komórek potomnych jest losowy. Efekt: każda gameta ma unikalny zestaw 23 chromosomów — mieszankę informacji po obojgu dziadkach. Stąd bliźnięta dwujajowe i zwykłe rodzeństwo są różne, a jednojajowe — niemal identyczne. Na konkursie pytanie „dlaczego rodzeństwo nie jest identyczne” rozwiązuje się właśnie mejozą, nie mitozą.
+
+**Hormony cyklu w pełnym zestawie.** Przysadka mózgowa wydziela **FSH** (stymuluje wzrost pęcherzyka) i **LH**; gwałtowny wzrost LH („fala LH”) wyzwala owulację ok. 24–36 godzin później (orientacyjnie, do weryfikacji). Pęcherzyk produkuje **estrogeny** (budowa błony śluzowej macicy i sprzężenie zwrotne działające na przysadkę), a ciałko żółte — **progesteron** (utrzymanie błony śluzowej; hamuje dalsze owulacje w trakcie cyklu). Ten układ sprzężeń zwrotnych to ładny most do lekcji o homeostazie (BIO-B2).
+
+**hCG — hormon, który „kłamie” ciałku żółtemu.** Po implantacji błony zarodka wytwarzają **hCG** (gonadotropinę kosmówkową), które utrzymuje ciałko żółte, a więc i produkcję progesteronu — dzięki temu błona śluzowa nie złuszcza się. Testy ciążowe wykrywają hCG w moczu. Po ok. 2–3 miesiącach (orientacyjnie) samo łożysko przejmuje produkcję progesteronu i estrogenów, a rola ciałka żółtego mija.
+
+**Dlaczego matka nie odrzuca płodu?** Płód nosi w połowie materiał genetyczny ojca, więc część jego białek jest „obca” dla układu odpornościowego matki. Ciąża utrzymuje się dzięki kilku nakładającym się mechanizmom: łożysko stanowi barierę fizyczną i selektywną, komórki otaczające zarodek wykazują się szczególną formą tolerancji immunologicznej, a lokalne środowisko w macicy tłumi agresywne reakcje odpornościowe. To temat akademicki — na konkursie wystarczy zdanie typu „układ odpornościowy matki jest modulowany, a łożysko działa jak bariera i mediator” (szczegóły molekularne — do weryfikacji w literaturze).
+
+**Konflikt serologiczny (Rh).** Krew matki i płodu nie miesza się — ale drobne wymiany krwi przy porodzie mogą sprawić, że organizm matki Rh− nauczy się produkcji przeciwciał przeciwko antygenowi Rh+, jeśli dziecko jest Rh+. Przy kolejnej ciąży przeciwciała mogą przenikać przez łożysko i uszkadzać krwinki płodu. Medycyna zapobiega temu preparatami immunoglobulin (orientacyjnie). To przykład, jak „brak mieszania krwi” i „selektywność bariery” łączą się w jeden problem.
+
+**Dziedziczenie płci.** Kobieta przekazuje zawsze chromosom X; mężczyzna — X albo Y. To plemnik decyduje o płci dziecka: X → dziewczynka (XX), Y → chłopiec (XY). Szansa na każdego z płci jest orientacyjnie 50:50. Rozwinięcie tego wątku znajdziesz w lekcji o genach i allelach (BIO-038).
+
+::: karta understand | Dla olimpijczyka — w skrócie
+Zapamiętaj cztery fajerwerki: 1) mejoza z crossing-overem i losowym rozdziałem chromosomów = każda gameta inna; 2) FSH rośnie przed owulacją, fala LH ją wyzwala, estrogeny budują, progesteron utrzymuje; 3) hCG ratuje ciałko żółte, więc test ciążowy = test na hCG; 4) krew nie miesza się, ale przeciwciała i małe cząsteczki przez łożysko przechodzą — stąd konflikt Rh i przenikanie niektórych substancji. Każdy z tych punktów jest pytaniem konkursowym czekającym na spotkanie.
+:::
+
+::: nie-myl | Mejoza ≠ mitoza; bliźnięta jednojajowe ≠ dwujajowe
+- Mejoza ≠ mitoza — mejoza daje 4 komórki o połowie chromosomów (n, gamety) i jest źródłem zmienności (crossing-over); mitoza daje 2 komórki identyczne z macierzystą (2n) i służy wzrostowi i odnawianiu tkanek; test rozstrzygający: „czy komórka potomna ma połowę chromosomów i czy są różne?” — tak: mejoza.
+- Bliźnięta jednojajowe ≠ dwujajowe — jednojajowe: jedna zygota dzieli się na dwa zarodki, geny niemal identyczne; dwujajowe: dwie komórki jajowe i dwa plemniki, dwie zygoty, geny jak u zwykłego rodzeństwa; test rozstrzygający: „ile zygot?” — jedna: jednojajowe, dwie: dwujajowe.
+:::
+
+## 13 | Klinika błędów {#klinika} [[basic:E8]]
+
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| „Zapłodnienie zachodzi w jajniku.” | Zapłodnienie zachodzi zwykle w jajowodzie. | Jajnik tylko uwalnia komórkę jajową (owulacja); spotkanie z plemnikiem odbywa się dalej — w jajowodzie, skąd zarodek wędruje do macicy. |
+| „Krew matki miesza się z krwią płodu w łożysku.” | Krew matki i płodu płynie osobno, a substancje przenikają przez ścianki naczyń w łożysku. | Dlatego grupa krwi dziecka może być inna niż matki; wymiana następuje przez barierę, nie przez mieszanie. |
+| „Zygota ma 23 chromosomy.” | Zygota ma 46 chromosomów (2n = 46). | 23 ma każda z gamet; zapłodnienie składa dwa kompleksy — komplet 46. |
+| „Komórka jajowa porusza się własną wicią.” | Komórka jajowa jest nieruchoma; transportuje ją jajowód (rzęski i skurcze ściany). | Wici porusza się plemnik — to on pokonuje drogę do komórki jajowej. |
+| „Łożysko łączy się z płodem jajowodem.” | Łożysko łączy się z płodem pępowiną. | Jajowód to droga komórki jajowej i miejsce zapłodnienia; pępowina zawiera naczynia krwionośne płodu. |
+| „Estrogeny i progesteron produkuje przysadka mózgowa.” | Estrogeny i progesteron produkuje jajnik (pęcherzyk, potem ciałko żółte). | Przysadka produkuje FSH i LH — hormony sterujące jajnikami, nie same hormony płciowe (rozróżnienie konkursowe). |
+| „U chłopców dojrzewanie zaczyna się wcześniej niż u dziewcząt.” | Dziewczęta zaczynają dojrzewać zwykle wcześniej — ok. 10.–12. roku życia, chłopcy ok. 12.–14. (orientacyjnie). | To odwrócona prawda; na arkuszach służy do budowania zadań o czasie dojrzewania. |
+| „Szczepienie przeciwko HPV chroni przed wszystkimi chorobami przenoszonymi drogą płciową.” | Szczepienie chroni tylko przed zakażeniem wirusem HPV. | Przed bakteriami (kiła, rzeżączka, chlamydioza) i wirusem HIV szczepienie HPV nie chroni — potrzebne są inne zasady profilaktyki. |
+| „Płód oddycha płucami już w macicy.” | Tlen płód otrzymuje przez łożysko z krwi matki; płuca zaczynają pracować po porodzie. | W macicy płuca nie są wypełnione powietrzem — wymiana gazowa odbywa się w łożysku. |
+:::
+
+::: mity
+„Cykl miesiączkowy u każdej kobiety trwa dokładnie 28 dni.” || Średnia wynosi ok. 28 dni, ale norma to orientacyjnie 21–35 dni, a długość cyklu bywa różna nawet u tej samej osoby — dlatego dni owulacji nie da się wskazać raz na zawsze.
+„Owulacja zawsze wypada 14. dnia cyklu.” || Owulacja wypada ok. 14 dni **przed następną miesiączką**; przy cyklu 24-dniowym to ok. 10. dzień, a przy 34-dniowym — ok. 20. (orientacyjnie).
+„Krew matki i dziecka mieszka się, więc grupy krwi muszą być zgodne.” || Krew nie miesza się; wymiana substancji zachodzi przez barierę łożyska, a grupy krwi matki i dziecka mogą być różne.
+„Plemniki powstają u chłopca od urodzenia, a komórki jajowe dojrzewają wszystkie przed urodzeniem.” || To podwójna pułapka: produkcja plemników zaczyna się dopiero w okresie dojrzewania, natomiast zapas komórek jajowych rzeczywiście tworzy się przed urodzeniem — a dojrzewa po jednej (orientacyjnie) na cykl.
+„Ciąża trwa dokładnie 9 miesięcy od poczęcia.” || Ok. 40 tygodni liczy się od pierwszego dnia ostatniej miesiączki, co daje ok. 9 miesięcy kalendarzowych, ale od samego zapłodnienia jest to ok. 38 tygodni; i oba te wskazania są orientacyjne.
+„Antykoncepcja hormonalna chroni przed chorobami przenoszonymi drogą płciową.” || Nie — na infekcje (HIV, HPV, bakterie) chroni głównie bariera mechaniczna (prezerwatywa) oraz zachowania; hormonalne metody zapobiegają ciąży, nie zakażeniom.
+„Alkohol i dym tytoniowy szkodzą tylko matce, a nie dziecku w jej brzuchu.” || Substancje zawarte w alkoholu i dymie przechodzą przez łożysko do krwi płodu; okres zarodkowy (budowa narządów) jest szczególnie wrażliwy.
+:::
+
+## 14 | Ćwiczenia utrwalające {#cwiczenia} [[basic:E8]]
+
+Krótkie treningi bez punktacji — traktuj je jak rozgrzewkę przed zadaniami egzaminacyjnymi i konkursowymi.
+
+**Ćwiczenie 1.** Narysuj z pamięci dwie ścieżki strzałek: (a) drogę plemnika od jądra na zewnątrz, (b) drogę komórki jajowej od jajnika do pochwy (gdy nie było zapłodnienia).
+
+::: odp | Klucz
+a) Jądro → najądrze → nasieniowód → cewka moczowa (przez prącie). b) Jajnik → jajowód → macica → pochwa (komórka jajowa niezapołodniona obumiera i zostaje usunięta; nie wydostaje się drogą rodną jako komórka — w pochwie pojawia się jedynie złuszczona błona śluzowa macicy podczas miesiączki, jeśli cykl przebiega normalnie).
+:::
+
+**Ćwiczenie 2.** Uzupełnij zdania: „Estrogeny produkowane przez ________ budują ________ macicy, a progesteron produkowany przez ________ ją ________.”
+
+::: odp | Klucz
+„Estrogeny produkowane przez pęcherzyk (jajnik) budują błonę śluzową macicy, a progesteron produkowany przez ciałko żółte ją utrzymuje (przygotowuje na implantację i podtrzymuje w ciąży).”
+:::
+
+**Ćwiczenie 3.** Prawda czy fałsz? a) Owulacja to złuszczanie błony śluzowej macicy. b) Plemnik ma 23 chromosomy. c) Łożysko produkuje hormony. d) Chlamydioza jest chorobą wirusową. e) Rak jąder dotyczy głównie starszych mężczyzn. f) Zygota powstaje w macicy.
+
+::: odp | Klucz
+a) fałsz (owulacja to uwolnienie komórki jajowej z jajnika); b) prawda; c) prawda; d) fałsz (bakteria); e) fałsz (orientacyjnie dotyczy głównie młodych mężczyzn); f) fałsz (zwykle w jajowodzie).
+:::
+
+**Ćwiczenie 4.** Odczytaj dane: u trzech dziewcząt pierwsza miesiączka pojawiła się w wieku 11, 12 i 13 lat. Czy któraś z nich jest na pewno nieprawidłowo rozwinięta? Uzasadnij.
+
+::: odp | Klucz
+Nie — wiek pierwszej miesiączki jest orientacyjny i waha się u zdrowych dziewcząt (orientacyjnie ok. 11–14 lat, granice indywidualne); różnice między osobami są normalne, a jedynie znaczne odstępstwa ocenia lekarz w kontekście całego rozwoju, nie jednej liczby.
+:::
+
+## 15 | Ciekawostki {#ciekawostki} [[extra:AMBITNE]]
+
+::: karta extra | Ciekawostka 1 — największa i najmniejsza
+Komórka jajowa człowieka to największa komórka ciała — orientacyjnie 0,1–0,2 mm średnicy, więc teoretycznie widoczna gołym okiem jako malutka kropka. Plemnik jest jednym z najmniejszych — ok. 0,05 mm długości. Różnica w objętości jest gigantyczna: orientacyjnie komórka jajowa jest tysiące razy większa objętościowo od plemnika.
+:::
+
+::: karta extra | Ciekawostka 2 — wyścig, w którym wygrywa jeden
+Plemnik potrzebuje orientacyjnie od kilkudziesięciu minut do kilku godzin, by dotrzeć do jajowodu — a mimo to komórka jajowa czeka na niego nawet dobę. Miliony startują, setki docierają, jeden wnika: zaraz po nim komórka zmienia swoją otoczkę tak, by żaden drugi plemnik nie wszedł (blokada polispermii — szczegół olimpijski).
+:::
+
+::: karta extra | Ciekawostka 3 — serce szybsze niż twoje
+Serce płodu bije orientacyjnie ok. 120–160 razy na minutę — znacznie szybciej niż serce noworodka, a tym bardziej dorosłego. To jeden z pierwszych znaków życia, które lekarze mogą wykryć w badaniu USG.
+:::
+
+::: karta extra | Ciekawostka 4 — ćwiczenia oddechowe „na sucho”
+Płód nie oddycha powietrzem, ale wykonuje ruchy oddechowe — regularne ćwiczy mięśnie oddechowe i płuca, wpychając i wypychając płyn owodniowy. Dzięki temu po porodzie pierwszy oddech jest możliwy niemal natychmiast.
+:::
+
+::: karta extra | Ciekawostka 5 — łożysko, organ jednorazowy
+Łożysko to jedyny organ, który powstaje na zamówienie — rośnie z ciąży i jest wydalany po porodzie (potocznie zwany „połogiem” łożyska? — poprawnie: płodem). Ma własną budowę, produkuje hormony i jest badane przez patologów jak każdy organ. W wielu kulturach obchodzono jego narodziny z szacunkiem. (źródło: podręczniki położnictwa, orientacyjnie)
+:::
+
+## 16 | Sposoby pamięciowe {#mnemo} [[basic:E8]]
+
+::: wskazowki
+- Droga plemnika — pierwsze litery: **J–N–N–C** (jądro, najądrze, nasieniowód, cewka moczowa): „**J**eśli **N**ie **N**auczysz się, **C**ofasz się”.
+- Droga komórki jajowej: **J–J–M–P** (jajnik, jajowód, macica, pochwa): „**J**asia **J**ubileusz **M**iał **P**oniedziałek”.
+- Fazy cyklu: **M–F–O–L** (miesiączka, folikularna, owulacja, lutealna): „**M**amy **F**ajny **O**dcinek **L**ekcji”.
+- Hormony cyklu: „**E**strogeny **E**rbudowują, **P**rogesteron **P**odtrzymuje” — estrogeny budują błonę śluzową, progesteron utrzymuje.
+- Liczby chromosomów: „**2n = 46, n = 23** — połowa kompanii to dwadzieścia trzech” (komplet 46, gameta 23).
+- Granica zarodek/płód: „**Do 8 — zarodek buduje, od 9 — płód rośnie**” (okres zarodkowy do 8. tygodnia, płodowy od 9.).
+- Funkcje łożyska — hasło **„OKH-HO”**: **O**ddychanie, **K**armienie (odżywianie), **H**ygiena (wydalanie), **H**ormony, **O**chrona.
+:::
+
+## 17 | Test końcowy {#test} [[basic:E8]] [[exam:KONKURS]]
+
+Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawną odpowiedź. Klucze i wyjaśnienia są pod spodem w samej karcie testu — sprawdź dopiero po rozwiązaniu całości.
+
+::: test
+? Gdzie zwykle zachodzi zapłodnienie u człowieka?
++ w jajowodzie
+- w jajniku
+- w macicy
+- w pochwie
+! Zapłodnienie to spotkanie plemnika z komórką jajową — odbywa się zwykle w jajowodzie, skąd zarodek wędruje do macicy.
+
+? Który narząd produkuje plemniki i testosteron?
++ jądra
+- najądrze
+- prostata
+- nasieniowód
+! Jądra to fabryka gamet męskich i głównego męskiego hormonu; najądrze tylko przechowuje i dojrzewa plemniki.
+
+? Ile chromosomów ma komórka jajowa człowieka?
++ 23
+- 46
+- 44
+- 22
+! Gamety mają n = 23 chromosomy, bo powstają przez mejozę; komplet 46 (2n) odtwarza się w zapłodnieniu.
+
+? Zygota powstaje w wyniku:
++ połączenia plemnika z komórką jajową
+- podziału mitotycznego komórki jajowej
+- połączenia dwóch komórek jajowych
+- podziału meiotycznego plemnika
+! Zapłodnienie = połączenie dwóch gamet (n + n) → zygota 2n; to pierwsza komórka nowego organizmu.
+
+? Która faza cyklu poprzedza owulację?
++ faza folikularna
+- faza lutealna
+- miesiączka
+- połowa fazy lutealnej
+! Najpierw rośnie pęcherzyk (faza folikularna, estrogeny), dopiero potem pęka — owulacja; faza lutealna następuje po niej.
+
+? Ciałko żółte produkuje głównie:
++ progesteron
+- testosteron
+- adrenalinę
+- insulinę
+! Po owulacji z pękniętego pęcherzyka powstaje ciałko żółte, którego progesteron utrzymuje błonę śluzową macicy.
+
+? Które zdanie o łożysku jest poprawne?
++ umożliwia wymianę substancji między matką a płodem bez mieszania ich krwi
+- miesza krew matki i płodu, aby dzieci miały tę samą grupę krwi co matka
+- chroni płód przed wszystkimi substancjami dostającymi się do organizmu matki
+- rozwija się w jajowodzie obok komórki jajowej
+! Łożysko jest barierą selektywną: krew płynie osobno, a substancje przechodzą przez ścianki naczyń; nie zatrzymuje jednak wszystkiego (np. alkohol, nikotyna przechodzą).
+
+? Od którego tygodnia ciąży mówi się o płodzie, a nie o zarodku?
++ od 9. tygodnia
+- od 1. tygodnia
+- od 20. tygodnia
+- od 40. tygodnia
+! Granica szkolna: okres zarodkowy kończy się z 8. tygodniem; od 9. tygodnia do porodu rozwija się płód.
+
+? Pępowina łączy płód z łożyskiem za pomocą:
++ naczyń krwionośnych
+- przewodu pokarmowego
+- tchawicy
+- nerek płodu
+! Pępowina zawiera naczynia krwionośne (dwie tętnice i jedną żyłę — orientacyjnie), którymi krew płodu dociera do łożyska i wraca.
+
+? Która z cech jest cechą drugorzędową u chłopców?
++ mutacja (pogłębienie) głosu
+- dojrzewanie jąder
+- początek produkcji plemników
+- produkcja testosteronu
+! Cechy drugorzędowe to zmiany ciała niezwiązane wprost z narządami płciowymi; głos, zarost i sylwetka to właśnie one.
+
+? Dojrzewanie (pokwitanie) u dziewcząt zaczyna się zwykle:
++ wcześniej niż u chłopców
+- później niż u chłopców
+- dokładnie w tym samym wieku u wszystkich
+- dopiero po 16. roku życia
+! Orientacyjnie dziewczęta: ok. 10.–12. rok życia, chłopcy: ok. 12.–14. — stąd klasyczne „dziewczynki dojrzewają wcześniej”.
+
+? Która z wymienionych chorób przenoszonych drogą płciową jest wywoływana przez wirusa?
++ HIV
+- kiła
+- rzeżączka
+- chlamydioza
+! HIV to wirus uszkadzający odporność; kiła, rzeżączka i chlamydioza są bakteryjne (leczone antybiotykami).
+
+? Szczepienie przeciwko HPV ogranicza ryzyko:
++ raka szyjki macicy
+- raka piersi
+- raka prostaty
+- kiły
+! Niektóre typy HPV są główną przyczyną raka szyjki macicy, więc szczepienie jest jego profilaktyką; kiłę wywołuje bakteria, nie HPV.
+
+? Która kolejność etapów jest poprawna?
++ owulacja → zapłodnienie → bruzdkowanie → implantacja → rozwój płodu
+- zapłodnienie → owulacja → implantacja → bruzdkowanie → rozwój płodu
+- owulacja → implantacja → zapłodnienie → rozwój płodu → bruzdkowanie
+- bruzdkowanie → owulacja → zapłodnienie → implantacja → rozwój płodu
+! Najpierw komórka jajowa opuszcza jajnik, potem jest zapłodniona w jajowodzie, dzieli się (bruzdkowanie) w drodze do macicy, zagnieżdża się (implantacja) i rozwija się płód.
+
+? (poziom konkursowy) U osoby z cyklem 34-dniowym owulacja wypadnie orientacyjnie około:
++ 20. dnia cyklu
+- 14. dnia cyklu
+- 17. dnia cyklu
+- 28. dnia cyklu
+! Faza lutealna trwa względnie stałe ok. 14 dni, więc owulacja ≈ 34 − 14 = 20. dzień; „14. dnia” dotyczy tylko cyklu 28-dniowego (orientacyjnie).
+:::
+
+## 18 | Fiszki {#fiszki} [[basic:E8]] [[exam:KONKURS]]
+
+Powtarzaj partiami: najpierw basic, potem understand i extra, na końcu olimpijskie.
+
+::: fiszki
+Jądra | produkcja plemników i testosteronu | basic:uklady
+Najądrze | dojrzewanie i przechowywanie plemników | basic:uklady
+Nasieniowód | transport plemników z najądrza w stronę cewki moczowej | basic:uklady
+Pęcherzyki nasienne i prostata | wytwarzają wydzielinę, która wraz z plemnikami tworzy nasienie | basic:uklady
+Jajniki | produkcja komórek jajowych, estrogenów i progesteronu | basic:uklady
+Jajowód | transport komórki jajowej; typowe miejsce zapłodnienia | basic:uklady
+Macica | miejsce implantacji i rozwoju zarodka oraz płodu | basic:uklady
+Pochwa | droga rodna łącząca macicę z zewnętrzem | basic:uklady
+Plemnik | mała ruchliwa gameta męska z wicią, n = 23 | basic:gamety
+Komórka jajowa | duża nieruchoma gameta żeńska z zapasem substancji odżywczych, n = 23 | basic:gamety
+Zygota | pierwsza komórka nowego organizmu, 2n = 46 | basic:gamety
+Mejoza | podział redukcyjny dający gamety o połowie chromosomów | understand:gamety
+Miesiączka | złuszczanie błony śluzowej macicy na początku cyklu | basic:cykl
+Faza folikularna | wzrost pęcherzyka i stężenia estrogenów; odbudowa błony śluzowej | understand:cykl
+Owulacja | pęknięcie pęcherzyka i uwolnienie komórki jajowej | basic:cykl
+Faza lutealna | ciałko żółte produkuje progesteron; utrzymanie błony śluzowej | understand:cykl
+Estrogeny | hormony jajnika budujące błonę śluzową macicy | basic:hormony
+Progesteron | hormon utrzymujący błonę śluzową macicy i ciążę | basic:hormony
+Testosteron | główny męski hormon płciowy | basic:hormony
+Zapłodnienie | połączenie gamet, zwykle w jajowodzie; powstaje zygota | basic:ciaza
+Bruzdkowanie | seria podziałów zygoty w drodze do macicy, bez wzrostu | understand:ciaza
+Implantacja | zagnieżdżenie zarodka w błonie śluzowej macicy, ok. 6.–7. doby | basic:ciaza
+Zarodek | stadium rozwoju do końca 8. tygodnia — budowa narządów | basic:ciaza
+Płód | stadium od 9. tygodnia do porodu — wzrost i dojrzewanie | basic:ciaza
+Łożysko | organ wymiany substancji między matką a płodem bez mieszania krwi; produkuje hormony | understand:lozysko
+Pępowina | sznur naczyń krwionośnych łączący płód z łożyskiem | basic:lozysko
+hCG | hormon wczesnej ciąży utrzymujący ciałko żółte; wykrywany w testach ciążowych | extra:hormony
+Cechy drugorzędowe | zmiany pokwitania niezwiązane wprost z narządami płciowymi (głos, zarost, piersi) | basic:dojrzewanie
+Okres prenatalny | rozwój od zapłodnienia do porodu: zarodkowy i płodowy | basic:etapy
+HIV | wirus uszkadzający układ odpornościowy; przenosi się m.in. drogą płciową | basic:choroby
+HPV | wirus brodawczaka; niektóre typy wywołują raka szyjki macicy; szczepienie | basic:choroby
+Cytologia | badanie przesiewowe komórek szyjki macicy | basic:profilaktyka
+Niepłodność | brak poczęcia mimo starań; przyczyny mogą dotyczyć obojga partnerów | extra:choroby
+Crossing-over | wymiana fragmentów chromosomów homologicznych w mejozie — źródło zmienności | olimpijski:mejoza
+Blok polispermii | zamknięcie komórki jajowej po wejściu pierwszego plemnika | olimpijski:ciaza
+Fala LH | gwałtowny wzrost LH wyzwalający owulację (orientacyjnie 24–36 h później) | olimpijski:hormony
+:::
+
+## 19 | Słownik {#slownik} [[basic:E8]]
+
+::: slownik
+Gameta :: komórka płciowa o połowie liczby chromosomów (n = 23); plemnik lub komórka jajowa.
+Zygota :: pierwsza komórka nowego organizmu, powstała z połączenia gamet; 2n = 46.
+Gonada :: gruczoł płciowy — jajnik (żeński) lub jądro (męski); produkuje gamety i hormony płciowe.
+Owulacja :: uwolnienie dojrzałej komórki jajowej z pękającego pęcherzyka w jajniku.
+Miesiączka :: złuszczanie błony śluzowej macicy wraz z krwią na początku cyklu miesiączkowego.
+Cykl miesiączkowy :: powtarzający się (orientacyjnie ok. 21–35 dni) ciąg zmian w jajnikach i macicy przygotowujący organizm na ciążę.
+Pęcherzyk (follikul) :: struktura w jajniku zawierająca rozwijającą się komórkę jajową; produkuje estrogeny.
+Ciałko żółte :: struktura powstała z pękniętego pęcherzyka; produkuje progesteron.
+Błona śluzowa macicy (endometrium) :: warstwa wyścielająca macicę; odbudowywana w cyklu, przygotowuje miejsce na implantację.
+Estrogeny :: żeńskie hormony płciowe budujące błonę śluzową macicy i odpowiadające za cechy drugorzędowe.
+Progesteron :: hormon utrzymujący błonę śluzową macicy i podtrzymujący wczesną ciążę.
+Testosteron :: główny męski hormon płciowy; odpowiada za produkcję plemników i cechy drugorzędowe.
+Zapłodnienie :: połączenie plemnika z komórką jajową, zwykle w jajowodzie; powstaje zygota.
+Bruzdkowanie :: początkowe etapy rozwoju — seria podziałów zygoty bez wzrostu całej struktury.
+Implantacja :: zagnieżdżenie zarodka w błonie śluzowej macicy (orientacyjnie ok. 6.–7. doby).
+Zarodek :: stadium rozwoju od zapłodnienia do ok. 8. tygodnia ciąży; czas powstawania zawiązków narządów.
+Płód :: stadium rozwoju od 9. tygodnia ciąży do porodu; czas wzrostu i dojrzewania.
+Łożysko :: organ z tkanek matki i płodu umożliwiający wymianę substancji bez mieszania krwi; produkuje hormony.
+Pępowina :: sznur łączący płód z łożyskiem, zawierający naczynia krwionośne.
+Okres prenatalny :: cały okres rozwoju przed urodzeniem — zarodkowy i płodowy.
+Pokwitanie (dojrzewanie) :: okres przejścia z dzieciństwa do dojrzałości płciowej, sterowany hormonami płciowymi.
+Cechy drugorzędowe :: zmiany ciała w okresie dojrzewania niezwiązane wprost z narządami płciowymi.
+Choroby przenoszone drogą płciową :: infekcje przekazywane głównie podczas kontaktów seksualnych (kiła, rzeżączka, chlamydioza, HIV, HPV).
+Profilaktyka :: działania zmniejszające ryzyko choroby: prezerwatywa, szczepienia, badania przesiewowe, samobadanie.
+Niepłodność :: brak możliwości poczęcia dziecka mimo regularnych starań; przyczyny mogą dotyczyć obojga partnerów.
+:::
+
+## 20 | Mapa pojęć {#mapa} [[basic:E8]]
+
+::: drzewo
+Rozmnażanie i rozwój człowieka
+  Układ rozrodczy męski
+    Jądra
+      Plemniki
+      Testosteron
+    Drogi wyprowadzające
+      Najądrze
+      Nasieniowód
+      Cewka moczowa
+    Gruczoły dodatkowe
+      Pęcherzyki nasienne
+      Prostata
+  Układ rozrodczy żeński
+    Jajniki
+      Komórki jajowe
+      Estrogeny i progesteron
+    Jajowód
+      Miejsce zapłodnienia
+    Macica
+      Błona śluzowa (endometrium)
+    Pochwa
+  Gamety i zygota
+    Plemnik (n = 23)
+    Komórka jajowa (n = 23)
+    Zapłodnienie
+      Zygota (2n = 46)
+  Cykl miesiączkowy
+    Miesiączka
+    Faza folikularna
+    Owulacja
+    Faza lutealna
+      Ciałko żółte
+  Rozwój prenatalny
+    Bruzdkowanie
+    Implantacja
+    Okres zarodkowy
+    Okres płodowy
+      Łożysko
+      Pępowina
+  Etapy życia
+    Noworodek
+    Niemowlę
+    Dzieciństwo
+    Dojrzewanie
+      Cechy pierwszorzędne
+      Cechy drugorzędne
+    Dojrzałość
+    Starość
+  Zdrowie reprodukcyjne
+    Choroby przenoszone drogą płciową
+      Kiła
+      Rzeżączka
+      Chlamydioza
+      HIV
+      HPV
+    Nowotwory
+      Szyjki macicy
+      Piersi
+      Prostaty
+      Jąder
+    Profilaktyka
+:::
+
+## 21 | Ściąga {#sciaga} [[basic:E8]]
+
+Najkrótsza wersja całej lekcji — czytaj, gdy zostało pięć minut przed sprawdzianem:
+
+- **Męski układ:** jądra (plemniki + testosteron) → najądrze (dojrzewanie, magazyn) → nasieniowód → cewka moczowa; gruczoły (pęcherzyki nasienne, prostata) tworzą płyn nasienia.
+- **Żeński układ:** jajniki (komórki jajowe, estrogeny, progesteron) → jajowód (**miejsce zapłodnienia**) → macica (rozwój dziecka) → pochwa (droga rodna).
+- **Gamety:** plemnik — mały, ruchliwy, n = 23; komórka jajowa — duża, nieruchoma, z zapasem, n = 23; zygota — 2n = 46.
+- **Cykl (ok. 28 dni, norma 21–35):** miesiączka (złuszczanie błony śluzowej) → folikularna (pęcherzyk, estrogeny budują błonę śluzową) → owulacja (ok. 14. dnia tylko w cyklu 28-dniowym!) → lutealna (ciałko żółte, progesteron utrzymuje błonę śluzową); brak zapłodnienia → spadek hormonów → miesiączka.
+- **Początek życia:** zapłodnienie (jajowód) → bruzdkowanie → implantacja (ok. 6.–7. doba) → zarodek do 8. tygodnia (budowa narządów) → płód od 9. tygodnia (wzrost) → poród ok. 40. tygodnia licząc od ostatniej miesiączki (ok. 9 miesięcy kalendarzowych).
+- **Łożysko:** wymiana tlen/odżywcze ↔ CO₂/wydaliny **bez mieszania krwi**; ochrona; hormony (hCG); łączy się z płodem pępowiną.
+- **Etapy życia:** prenatalny (zarodkowy + płodowy) → noworodek → niemowlę (najszybszy wzrost!) → dzieciństwo → dojrzewanie (dziewczęta wcześniej; cechy pierwszorzędne = narządy płciowe, drugorzędne = reszta) → dojrzałość → starość.
+- **Zdrowie:** bakterie (kiła, rzeżączka, chlamydioza — antybiotyki) i wirusy (HIV, HPV — szczepienie); profilaktyka: prezerwatywa, szczepienie HPV, cytologia, samobadanie piersi i jąder, PSA dla prostaty; niepłodność ma przyczyny po obu stronach, pomaga medycyna (in vitro).
+
+::: checklista
+- [ ] umiem wymienić wszystkie narządy obu układów rozrodczych wraz z funkcjami bez patrzenia
+- [ ] umiem porównać plemnik i komórkę jajową w tabeli (wielkość, ruch, zapas, chromosomy)
+- [ ] umiem wyjaśnić, dlaczego zygota ma 46 chromosomów, a gameta 23
+- [ ] umiem wypisać fazy cyklu miesiączkowego z wydarzeniami w jajniku i macicy
+- [ ] umiem podać role estrogenów i progesteronu jednym zdaniem każda
+- [ ] umiem uporządkować: owulacja → zapłodnienie → bruzdkowanie → implantacja → rozwój płodu
+- [ ] umiem wypisać funkcje łożyska i uzasadnić, że krew matki i płodu się nie miesza
+- [ ] umiem wskazać granicę zarodek/płód i uzasadnić wrażliwość okresu zarodkowego
+- [ ] umiem sklasyfikować cechy pierwszorzędne i drugorzędowe dojrzewania
+- [ ] umiem dopasować choroby (kiła, rzeżączka, chlamydioza, HIV, HPV) do profilaktyki i badań
+:::
+
+## 22 | Co dalej? {#dalej} [[basic:E8]] [[extra:AMBITNE]]
+
+Po opanowaniu tej lekcji naturalne kierunki:
+
+- **BIO-B2e — Układ dokrewny:** stąd wziął się cały język hormonów — estrogeny, progesteron, testosteron, a na konkursie FSH, LH i hCG. Tam zobaczysz mechanizm sprzężeń zwrotnych, który steruje cyklem.
+- **BIO-038 — Gen, allel (dziedziczenie):** chromosomy X i Y, dziedziczenie płci, mejoza jako źródło zmienności — wszystko, co zaczęło się w sekcji [§12](#olimpijczyk), tam się rozwinie.
+- **BIO-B2 — Homeostaza:** cykl miesiączkowy to piękny przykład regulacji hormonalnej na sprzężeniach zwrotnych; homeostaza da ci słownik do opisania takich procesów.
+- **Lekcje o układzie oddechowym i krwionośnym:** łożysko pełni funkcję płuc i serca-łącznika płodu — porównaj wymianę gazową w pęcherzykach płucnych z wymianą w łożysku; to ulubione zadanie porównawcze.
+- **Dla konkursowców:** przepracuj [§11](#zadania-konkurs) i [§12](#olimpijczyk) drugi raz po tygodniu — zadania z pułapką (owulacja „od końca”, granice pojęć) najdłużej trzymają się dokładnie wtedy, gdy rozwiążesz je ponownie po przerwie.
+
+A jeśli któryś wątek budzi pytania osobiste — właściwym miejscem na odpowiedzi jest lekarz, pielęniarka szkolna lub zaufany dorosły. Wiedza z tej lekcji jest po to, żebyś te rozmowy wiedział/a prowadzić spokojnie i rzeczowo.
+
+### AUDYT — Claude, 2026-10-12 {#audyt-ulepsz}
+
+**Poprawione:**
+- §4 (cykl): „owulacja ok. 14. dnia” — utrzymano liczbę z materiału roboczego, ale w całej lekcji oznaczono jako orientacyjną i dodano wyjaśnienie, że owulacja wyznacza się względnie stałą fazą lutealną liczona wstecz od następnej miesiączki (zgodnie z zastrzeżeniem audytu W1: „nie przedstawiać 14. dnia jako reguły”).
+- §12: „zbyt szczegółowe opisy hormonów cyklu (ponad wymagania)” z listy „najczęstsze błędy” — przeniesione z poziomu podstawy do wyraźnie oznaczonej warstwy konkursowej (FSH, LH, hCG) z kartą rozdzielającą poziom egzaminacyjny od konkursowego.
+- Frontmatter: „stan: W1” → „stan: ULEPSZONA — Claude, 2026-10-12; do sprawdzenia” (wymóg polecenia; nigdy nie wpisywać W1/FULL).
+- Materiał roboczy zawierał sformułowania robocze („Do uzupełnienia danymi”, „Status: Gotowe”) — przerobione: notatki autora przeniesione do sekcji audytu, treść merytoryczna wpleciona w lekcję.
+
+**Dodane:**
+- §0.1, §0.2: instrukcja pracy własnym tempem i diagnoza z kluczem (zawartość z „Wymagania wstępne” materiału przeniesiona do §0.1).
+- §1: pełny wykład „od zera” (obraz przewodni: sztafeta życia).
+- §2–§9: tabele narządów i faz, 6 kart „W skrócie” (understand), 2 karty core, 4 karty warning, 5 bloków nie-myl, 12 zadań egzaminacyjnych (1–12) z kluczami i punktacją.
+- §10: dwa doświadczenia z próbami kontrolnymi i BHP (model bariery łożyska; CO₂ w powietrzu wydychanym jako model wymiany gazowej przez łożysko).
+- §11: 8 zadań konkursowych (13–20) typów: odczyt danych, znajdź błędy, granice pojęć, interpretacja doświadczenia, bliźnięta, obliczeniowe z pułapką, analiza tekstu ×2.
+- §12: mini-wykład „Dla olimpijczyka” (mejoza, FSH/LH, hCG, immunologia ciąży, konflikt Rh, dziedziczenie płci) z oznaczeniami „do weryfikacji”.
+- §13–§16: klinika błędów (9 wierszy), mity (7), ćwiczenia (4), ciekawostki (5), mnemotechniki (7).
+- §17–§22: test (15 pytań), 36 fiszek (w tym olimpijskie), 25 haseł słownika, mapa pojęć, ściąga z checklistą, sekcja „Co dalej” z powiązaniami z materiału (BIO-B2e, BIO-038, BIO-B2).
+
+**Niepewne / do weryfikacji:**
+- Długość fazy lutealnej podana jako „ok. 12–14 dni” — zakres różni się między źródłami; zweryfikować z aktualnym informatorem konkursowym.
+- Granica zarodek/płód przyjęta jako koniec 8. tygodnia — konwencje szkolne są zgodne, ale niektóre źródła podają warianty (zaznaczono w §5).
+- Liczby: wiek rozpoczęcia dojrzewania, czas życia gamet, normy nasienia, tętno płodu — wszystkie oznaczone „orientacyjnie”; do porównania z arkuszami LKO bieżącej edycji.
+- Zakres warstwy konkursowej (hCG, blok polispermii, konflikt Rh) wymaga porównania z aktualnym zakresem LKO biologia etap II — w materiale roboczym zaznaczono brak archiwalnych zadań rejonowych do weryfikacji poziomu.
+- Ciekawostka 5: sformułowanie o zwyczajach dotyczących łożyska pozostawione ogólne z oznaczeniem „orientacyjnie”.
+
+**Proponuję usunąć:**
+- brak.
+
+**Źródła:**
+- podstawa programowa i wymagania egzaminacyjne CKE (egzamin ósmoklasisty, biologia);
+- podręczniki szkolne do biologii klasy 8 (m.in. Nowa Era, WSiP) — rozdziały o rozmnażaniu i rozwoju człowieka;
+- podręczniki akademickie z embriologii i fizjologii rozrodu (ogólne mechanizmy: bruzdkowanie, implantacja, hormonalna regulacja cyklu);
+- zalecenia WHO/organizacji zdrowia publicznego — ogólne zasady profilaktyki HIV/HPV (orientacyjnie).
+
+**Grafiki do zrobienia:**
+
+| Gdzie | Rodzaj | Co pokazuje | Wniosek | @opis |
+|---|---|---|---|---|
+| §2, po tabeli męskiej | schemat statyczny z podpisami do klikania | budowa męskiego układu rozrodczego: jądra w mosznie, najądrze, nasieniowód, gruczoły (pęcherzyki nasienne, prostata), prącie; kliknięcie pokazuje funkcję | każdy narząd ma określoną rolę w wytworzeniu i przetransportowaniu plemników | Schemat męskiego układu rozrodczego w widoku boczny; po kliknięciu etykiety pojawia się funkcja narządu. Wniosek: jądra wytwarzają plemniki i testosteron, a pozostałe części doprowadzają je na zewnątrz. |
+| §2, po tabeli żeńskiej | schemat statyczny z podpisami do klikania | budowa żeńskiego układu rozrodczego: jajnik, jajowód, macica, szyjka macicy, pochwa; kliknięcie pokazuje funkcję i miejsce zapłodnienia | zapłodnienie zachodzi w jajowodzie, rozwój dziecka w macicy | Schemat żeńskiego układu rozrodczego; etykiety wskazują jajnik (uwalnia komórkę jajową), jajowód (miejsce zapłodnienia), macicę (miejsce rozwoju dziecka), pochwę (droga rodna). Wniosek: kolejność narządów to droga komórki jajowej i dziecka. |
+| §4, po tabeli faz | animacja „do przodu i od początku” | kolejne fazy cyklu: zmiany pęcherzyka i ciałka żółtego w jajniku oraz błony śluzowej macicy, dzień po dniu | cykl to powtarzalna sekwencja zmian w dwóch narządach jednocześnie | Animacja przesuwa się od dnia 1 do 28 i wraca: w jajniku rośnie pęcherzyk, pęka (owulacja), powstaje ciałko żółte i zanika; w macicy błona śluzowa się złuszcza, odbudowuje i utrzymuje. Wniosek: fazy cyklu to zsynchronizowane zmiany jajnika i macicy. |
+| §4, po karcie warning | model interaktywny z suwakiem | stężenia estrogenów i progesteronu w kolejnych dniach cyklu; suwak dni odsłania wykres i fazę | szczyt estrogenów przypada ok. owulacji, progesteron rośnie w fazie lutealnej | Wykres dwóch krzywych (estrogeny, progesterone) w orientacyjnych jednostkach względnych dla cyklu 28-dniowego; suwak pokazuje dzień i przypisaną fazę. Wniosek: estrogeny szczytują w okolicach owulacji, progesterone dominuje w drugiej połowie cyklu. |
+| §5, po tabeli wydarzeń | animacja „do przodu i od początku” | droga plemnika do jajowodu, zapłodnienie, bruzdkowanie, wędrówka zarodka, implantacja | rozwój zaczyna się w jajowodzie, a kończy zagnieżdżeniem w macicy | Animacja: komórka jajowa w jajowodzie, zbliżające się plemniki, jedno połączenie, seria podziałów (kulka komórek) przesuwająca się do macicy, zagnieżdżenie w błonie śluzowej. Wniosek: owulacja → zapłodnienie → bruzdkowanie → implantacja to jedna droga. |
+| §6, po tabeli funkcji | schemat statyczny | łożysko przyścienne do macicy, pępowina, płód; strzałki wymiany: tlen i substancje odżywcze do płodu, CO₂ i produkty przemiany materii do matki; podpis „krew nie miesza się” | łożysko wymienia substancje przez barierę, nie przez mieszanie krwi | Schemat: macica z łożyskiem, pępowina do płodu; dwie osobne pętle naczyń (matki i płodu) stykają się w łożysku; strzałki pokazują kierunki wymiany. Wniosek: wymiana substancji zachodzi przez barierę łożyska, a krew matki i płodu pozostaje osobno. |
+| §7, nad tabelą okresów | oś czasu | etapy życia: prenatalny (zarodkowy, płodowy), noworodek, niemowlę, dzieciństwo, dojrzewanie, dojrzałość, starość z orientacyjnymi ramami wiekowymi | życie człowieka to uporządkowana sekwencja okresów z charakterystycznymi zmianami | Pozioma oś czasu od zapłodnienia do starości; segmenty oznaczone etapami, przy dojrzewaniu zaznaczone wcześniejsze dojrzewanie dziewcząt. Wniosek: kolejność etapów jest stała, a ramy wiekowe orientacyjne. |

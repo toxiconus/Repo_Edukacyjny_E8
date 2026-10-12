@@ -4,6 +4,10 @@
 
 ## biologia
 
+**WYSŁAĆ (bez W1) — 1 lekcji, 102 KB:** U11 (102 KB)
+
+- zestaw 1 (102 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U11 biologia/bio/md/BIO.07.U11.rozmnazanie_i_rozwoj.md`
+
 **niski priorytet (W1 starym promptem) — 3 lekcji, 182 KB:** REV01 (43 KB) · REV02 (59 KB) · U06 (79 KB)
 
 **NIE wysyłać (W1 FULL) — 7 lekcji, 605 KB:** L010 (61 KB) · H01 (78 KB) · U01 (57 KB) · U03 (104 KB) · U04 (88 KB) · U08 (107 KB) · U10 (105 KB)
