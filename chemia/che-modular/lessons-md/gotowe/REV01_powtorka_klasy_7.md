@@ -151,6 +151,10 @@ Rozcieńczanie kwasu wydziela dużo ciepła. Woda wlana do stężonego kwasu mo�
 | Eksykator | przechowywanie w suchym środowisku |
 | Chłodnica | skraplanie par w destylacji |
 
+::: karta understand | W skrócie: po co atomowi dwie liczby
+Liczba atomowa Z mówi, ile jest protonów, a więc jaki to pierwiastek. Liczba masowa A to suma protonów i neutronów, czyli to, ile „waży” jądro. Te dwie liczby nie są tym samym: ten sam pierwiastek może mieć różną liczbę neutronów (izotopy).
+:::
+
 ## 2 | Budowa atomu, izotopy, jony [[basic:E8]] {#atom}
 
 | Cząstka | Ładunek | Masa (ok.) | Miejsce |
@@ -230,6 +234,10 @@ To wyjaśnia, dlaczego metale oddają elektrony, a niemetale je przyjmują.
 :::
 
 **Skąd nazwy:** *atomos* (gr.) — „niepodzielny”; *ion* — „wędrujący” (jony wędrują w roztworze podczas przepływu prądu); kation — idzie ku katodzie (+), anion — ku anodzie (−); alkaliczne — od alkaliów (zasad: NaOH, KOH); fluorowce (halogeny) — „tworzące sole” (NaCl); chalkogeny — „tworzące rudy”; gazy szlachetne — dawniej uważane za niemal niereaktywne.
+
+::: karta understand | W skrócie: wartościowość to liczba „haczyków”
+Każdy atom ma tyle „haczyków” do łączenia się z innymi, ile wynosi jego wartościowość. Gdy połączysz dwa atomy, haczyki się łączą. Dlatego w wzorze NaCl sód i chlor mają po jednym haczyku, a w H₂O tlen ma dwa, bo łączy się z dwoma atomami wodoru.
+:::
 
 ## 4 | Wartościowość — kluczowy temat [[basic:E8]] {#wartosciowosc}
 
@@ -404,6 +412,10 @@ W szkolnym modelu atomy tworzą wiązania, bo układ elektronów w związku jest
 ::: karta extra | Elektroujemność i polaryzacja
 **Elektroujemność** — miara zdolności atomu do przyciągania elektronów w wiązaniu; ogólnie rośnie w prawo i w górę, największa — **fluor**. To trend, nie automat: duża różnica elektroujemności **zwykle sprzyja** wiązaniu o silnym charakterze jonowym, mała — kowalencyjnemu; to wskazówka, nie test rozstrzygający. W klasie 7/8 najpierw stosuj prostszą regułę (metal + niemetal → jonowe; niemetale → kowalencyjne).
 Polaryzacja: niespolaryzowane — takie same atomy (H₂, Cl₂); spolaryzowane — różne niemetale (HCl, H₂O): para elektronowa silniej przyciągana przez jeden atom.
+:::
+
+::: karta understand | W skrócie: równanie to bilans, jak rachunek w sklepie
+Po obu stronach strzałki musi być tyle samo każdego pierwiastka, jak w rachunku: ile wchodzi, tyle wychodzi. Nie zmieniamy indeksów we wzorach (to tak, jakby zmienić cenę towaru); dopisujemy tylko współczynniki (ile sztuk bierzemy).
 :::
 
 ## 7 | Równania reakcji [[basic:E8]] {#rownania}
