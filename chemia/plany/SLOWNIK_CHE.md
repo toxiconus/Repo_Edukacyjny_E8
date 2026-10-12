@@ -23,3 +23,14 @@ Format: **pojęcie** — definicja (pierwsze wprowadzenie: lekcja). Hasła są d
 - **Zawiesina** — mieszanina niejednorodna o cząstkach większych niż w koloidzie, opada (F02).
 - **Filtracja** — rozdzielanie ciała stałego od cieczy przez sączek (F02).
 - **Destylacja** — rozdzielanie cieczy o różnych temperaturach wrzenia przez skraplanie par (F02).
+- **Właściwość fizyczna** — cecha mierzona bez zmiany substancji w inną, np. gęstość (F03).
+- **Właściwość chemiczna** — zdolność do przemiany chemicznej, np. palność (F03).
+- **Zjawisko fizyczne** — zmiana bez powstania nowej substancji, np. topnienie (F03).
+- **Reakcja chemiczna** — przemiana tworząca nowe substancje (F03).
+- **Gęstość (ρ)** — masa na jednostkę objętości, ρ = m/V (F03).
+- **Temperatura wrzenia (T_w)** — zależy od ciśnienia (F03).
+- **Rozpuszczalność** — maksymalna ilość substancji rozpuszczonej w danych warunkach (F03).
+- **Sedymentacja** — opadanie cząstek pod wpływem grawitacji (F03).
+- **Dekantacja** — zlanie cieczy znad osadu (F03).
+- **Chromatografia** — rozdzielanie składników o różnym powinowactwie do faz (F03).
+- **Powinowactwo** — skłonność składnika do przebywania w danej fazie (F03).

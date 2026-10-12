@@ -218,7 +218,7 @@ Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z front
 |---|---|---|---|---|---|---|
 | F01 | 22.3 | 99 | PRZEBUDOWA | 0 | tak | CHE.01.F01.jak_mysli_chemik.md |
 | F02 | 21.3 | 98 | PRZEBUDOWA | 0 | tak | CHE.01.F02.materia_i_substancje.md |
-| F03 | 41.4 | 120 | — | 0 | wymaga: LAB00, LAB02, LAB05 | CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md |
+| F03 | 28.7 | 105 | PRZEBUDOWA | 0 | tak | CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md |
 | F04 | 40.2 | 119 | — | 0 | wymaga: LAB00, LAB05, LAB12 | CHE.01.F04.atom.md |
 | F05 | 40.7 | 117 | — | 0 | wymaga: LAB00, LAB05, LAB12 | CHE.01.F05.izotopy_jony_i_masa_atomowa.md |
 | F06 | 31.4 | 107 | — | 0 | wymaga: LAB12 | CHE.01.F06.uklad_okresowy.md |

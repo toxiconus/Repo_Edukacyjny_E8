@@ -14,3 +14,6 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - F02 → F05 — pierwiastek i jego izotopy w materii.
 - F02 → F12 — od wzoru związku do jego składu ilościowego.
 - F02 → R01–R02 — roztwory i stężenia jako mieszaniny jednorodne.
+- F03 → F04 — od makroskopowych właściwości do modelu atomowego.
+- F03 → F16–F17 — objaw reakcji i reakcja chemiczna w opisie przemian.
+- F03 → R01–R02 — rozpuszczalność i roztwory, rozwinięcie krystalizacji.
