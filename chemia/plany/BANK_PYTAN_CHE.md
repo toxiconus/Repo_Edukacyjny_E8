@@ -847,3 +847,16 @@ Poprzednie etykiety z zasad były zbyt ogólne. Poprawione według treści zeszy
 Zasady polskiego (zad. 4, 9–11, 14, 15, 17, 18) – w tabeli powyżej etykiety poprawione; nie podawać ich jako zamkniętych.
 
 Status: klucze matematyki zad. 6, 8, 10, 12 – **sprawdzone rachunkiem**. Klucze polskiego zad. 6, 8.1, 13 – zgodne z zasadami i treścią. Zad. 8.2 i punktacja pozostałych otwartych – do sprawdzenia w zasadach przy kolejnej partii.
+
+---
+
+## Zasady punktowania zadań otwartych – polski, termin główny 2026 (z zasad CKE)
+
+- **8.2 (0–2):** przekształcenie trzech zdań pojedynczych w zdanie wielokrotnie złożone z zachowaniem sensu. 2 pkt – poprawna interpunkcja; 1 pkt – niepoprawna interpunkcja, albo poprawna interpunkcja ale użyty tylko jeden spójnik wymagany poleceniem; 0 pkt – błędnie lub brak. Uwaga w zasadach: słowo „którzy" zastosowane poprawnie jako spójnik zespalający dwa zdania też zalicza się, jeśli spełnione są pozostałe warunki.
+- **9 (0–2):** wyjaśnienie związku zdjęć z tematem przyjaźni w „Małym Księciu". 2 pkt – dwa wybrane zdjęcia; 1 pkt – jedno zdjęcie; 0 pkt – błędnie lub brak.
+- **11 (0–2):** dopasowanie pytań do akapitów (tekst Hawkinga). 2 pkt – trzy poprawne litery; 1 pkt – dwie poprawne; 0 pkt – błędnie lub niepełnie.
+- **15 (0–2):** podanie tytułu lektury obowiązkowej i bohatera z zasadą „nie poddawać się" oraz uzasadnienie. 2 pkt – uzasadnienie poprawne i zilustrowane sytuacją z lektury; 1 pkt – uzasadnienie poprawne, bez ilustracji; 0 pkt – błędnie lub niepełnie.
+- **17 (0–3):** ogłoszenie o wykładzie z dwoma argumentami. W zasadach punkty za poprawność językową, ortograficzną i interpunkcyjną: 1 pkt – nie więcej niż dwa błędy (językowe, ortograficzne, interpunkcyjne); 0 pkt – trzy lub więcej. Pozostałe punkty (treść) – w zasadach.
+- **18 (0–20):** wypracowanie – kryteria w zasadach (treść, kompozycja, język, poprawność). Nie przepisywać kryteriów do banku, tylko odsyłać do zasad.
+
+Uwaga: zasady punktowania zad. 10, 12–14 i 16 mają w jednym bloku kilka wariantów (np. zamknięte i otwarte). Przy kolejnej partii sprawdzić przyporządkowanie w PDF zasad, zanim wpisze się punkty do banku.
