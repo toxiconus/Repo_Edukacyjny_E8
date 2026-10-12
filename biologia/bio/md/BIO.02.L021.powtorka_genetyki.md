@@ -1003,24 +1003,24 @@ Centromer | Miejsce połączenia chromatyd; po nim liczymy chromosomy | basic:ch
 Replikacja | Kopiowanie DNA w fazie S; semikonserwatywna | basic:replikacja
 Mitoza | Podział zachowujący liczbę chromosomów (2n → 2n) | basic:mitoza
 Mejoza | Podział redukcyjny (2n → n) tworzący gamety | basic:mejoza
-Crossing-over | Wymiana odcinków homologicznych chromatyd w profazie I mejozy | understand:mejoza
 Allel | Wersja genu | basic:allel
 Genotyp | Zestaw alleli osobnika | basic:dziedziczenie
 Fenotyp | Obserwowana cecha (genotyp + środowisko) | basic:dziedziczenie
 Aa × Aa — fenotypy | 3:1 przy dominacji zupełnej | basic:dziedziczenie
-Aa × Aa — genotypy | 1:2:1 | understand:dziedziczenie
-25% w krzyżówce | Prawdopodobieństwo jednego zdarzenia, nie gwarancja „co czwarte dziecko” | understand:prawdopodobienstwo
-P(dwoje kolejnych dzieci aa), Aa × Aa | 1/4 · 1/4 = 1/16 | understand:prawdopodobienstwo
 XX i XY | Kobieta / mężczyzna | basic:plec
 Skąd X u syna? | Zawsze od matki | basic:plec
 Nosicielka | Kobieta XᴬXᵃ — zdrowa, może przekazać Xᵃ | basic:plec
-Dlaczego recesywne X-linked częściej u mężczyzn? | Mężczyzna ma jeden X (hemizygota) | understand:plec
 Allele układu ABO | Iᴬ, Iᴮ, i | basic:abo
 Kodominacja w ABO | Grupa AB (IᴬIᴮ) — oba allele widoczne | basic:abo
 Genotyp grupy 0 | ii | basic:abo
-Matka 0 × ojciec AB | Dzieci tylko A albo B | understand:abo
 Mutacja | Trwała zmiana w DNA | basic:mutacje
 Mutagen | Czynnik zwiększający częstość mutacji (UV, promieniowanie X, chemikalia, wirusy) | basic:mutacje
+Crossing-over | Wymiana odcinków homologicznych chromatyd w profazie I mejozy | understand:mejoza
+Aa × Aa — genotypy | 1:2:1 | understand:dziedziczenie
+25% w krzyżówce | Prawdopodobieństwo jednego zdarzenia, nie gwarancja „co czwarte dziecko” | understand:prawdopodobienstwo
+P(dwoje kolejnych dzieci aa), Aa × Aa | 1/4 · 1/4 = 1/16 | understand:prawdopodobienstwo
+Dlaczego recesywne X-linked częściej u mężczyzn? | Mężczyzna ma jeden X (hemizygota) | understand:plec
+Matka 0 × ojciec AB | Dzieci tylko A albo B | understand:abo
 Mutacja somatyczna | W komórce ciała — zwykle nie dziedziczona przez potomstwo | understand:mutacje
 Nowotwór | Niekontrolowane podziały — skutek nagromadzenia mutacji w genach kontrolujących cykl | understand:nowotwor
 Nondysjunkcja | Nierozdzielenie chromosomów w podziale → aneuploidia (np. trisomia 21) | olimpijski:mejoza

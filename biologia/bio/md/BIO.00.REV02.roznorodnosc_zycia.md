@@ -702,8 +702,6 @@ Choroby wirusowe | grypa, ospa wietrzna, różyczka, świnka, odra, zakażenie H
 Choroby bakteryjne | gruźlica, borelioza, tężec, salmonelloza | basic:bakterie
 Czego nie ma komórka bakterii? | jądra (DNA w nukleoidzie), mitochondriów, chloroplastów | basic:bakterie
 Jak rozmnażają się bakterie? | przez podział komórki | basic:bakterie
-Przetrwalnik | forma bakterii odporna na niekorzystne warunki | extra:ambitne
-Bakterie brodawkowe | wiążą azot z powietrza na korzeniach roślin bobowatych | extra:ambitne
 Tkanka twórcza | dzieli się — wzrost rośliny (wierzchołki pędu i korzenia) | basic:rosliny
 Drewno | przewodzi wodę z solami w górę | basic:rosliny
 Łyko | przewodzi produkty fotosyntezy | basic:rosliny
@@ -722,8 +720,6 @@ Warunki kiełkowania | woda, temperatura, tlen | basic:rosliny
 Ściana komórkowa grzybów | z chityny | basic:grzyby
 Grzybnia | splot strzępek | basic:grzyby
 Drożdże | jednokomórkowe grzyby; pączkowanie, fermentacja alkoholowa | basic:grzyby
-Porost | grzyb + glon lub sinica; wskaźnik czystości powietrza | extra:ambitne
-Mikoryza | współżycie grzyba z korzeniami rośliny | extra:ambitne
 Cztery tkanki zwierzęce | nabłonkowa, mięśniowa, łączna, nerwowa | basic:zwierzeta
 Płazińce | ciało spłaszczone; tasiemce, wypławki | basic:zwierzeta
 Nicienie | ciało obłe, niesegmentowane; owsik, glista | basic:zwierzeta
@@ -731,16 +727,20 @@ Pierścienice | ciało z segmentów; dżdżownica, pijawka | basic:zwierzeta
 Stawonogi | odnóża członowane, chitynowy pancerz, linienie | basic:zwierzeta
 Owad | 3 pary odnóży, 1 para czułków, głowa–tułów–odwłok | basic:zwierzeta
 Pajęczak | 4 pary odnóży, brak czułków, głowotułów + odwłok | basic:zwierzeta
-Przeobrażenie zupełne | jajo → larwa → poczwarka → imago | extra:ambitne
 Mięczaki | noga, worek trzewiowy, płaszcz i muszla | basic:zwierzeta
 Pęcherz pławny | narząd ryby — unoszenie się w wodzie | basic:zwierzeta
 Linia boczna | narząd ryby wyczuwający ruchy wody | basic:zwierzeta
 Skrzek | jaja płazów w galaretowatej osłonce | basic:zwierzeta
 Kości pneumatyczne | lekkie kości ptaków wypełnione powietrzem | basic:zwierzeta
-Gniazdownik / zagniazdownik | gniazdownik: pisklęta nagie lub słabo opierzone, ślepe, długo w gnieździe (wróbel) / zagniazdownik: pisklęta w puchu, widzące, szybko opuszczają gniazdo (kura, kaczka) | extra:ambitne
 Cechy ssaków | sierść, gruczoły mlekowe, zróżnicowane zęby, łożysko, przepona | basic:zwierzeta
 Próba kontrolna | wszystkie warunki jak w badawczej, bez zmiany badanego czynnika | exam:konkurs
 Zmienna niezależna / zależna | to, co zmieniamy / to, co mierzymy | exam:konkurs
+Przetrwalnik | forma bakterii odporna na niekorzystne warunki | extra:ambitne
+Bakterie brodawkowe | wiążą azot z powietrza na korzeniach roślin bobowatych | extra:ambitne
+Porost | grzyb + glon lub sinica; wskaźnik czystości powietrza | extra:ambitne
+Mikoryza | współżycie grzyba z korzeniami rośliny | extra:ambitne
+Przeobrażenie zupełne | jajo → larwa → poczwarka → imago | extra:ambitne
+Gniazdownik / zagniazdownik | gniazdownik: pisklęta nagie lub słabo opierzone, ślepe, długo w gnieździe (wróbel) / zagniazdownik: pisklęta w puchu, widzące, szybko opuszczają gniazdo (kura, kaczka) | extra:ambitne
 :::
 
 ## 14 | Słownik {#slownik}

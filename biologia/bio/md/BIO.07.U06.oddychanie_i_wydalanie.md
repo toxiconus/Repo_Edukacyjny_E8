@@ -759,9 +759,6 @@ Wdech | przepona i mm. międzyżebrowe kurczą się → objętość ↑ → ciś
 Wydech spokojny | mięśnie rozluźniają się → objętość ↓ → ciśnienie ↑ → powietrze wypływa (bierny) | basic:wentylacja
 Pęcherzyki płucne | ogromna liczba i powierzchnia, cienka wilgotna ściana, naczynia włosowate | basic:pluca
 Hemoglobina | białko erytrocytów wiążące tlen | basic:transport
-Czad (CO) | wiąże hemoglobinę silniej niż O₂ → niedotlenienie; czujnik czadu | contest:transport
-Powietrze wydychane | ok. 16% O₂, ok. 4% CO₂, para wodna | contest:oddychanie
-Ośrodek oddechowy | pień mózgu; reaguje głównie na wzrost CO₂ | understand:regulacja
 Wydalanie | usuwanie produktów przemiany materii (CO₂, mocznik, nadmiar wody i soli) | basic:wydalanie
 Defekacja | usuwanie niestrawionych resztek — nie wydalanie | basic:wydalanie
 Mocznik | z amoniaku w wątrobie, usuwany przez nerki | basic:wydalanie
@@ -770,16 +767,19 @@ Nerka | kora, rdzeń (piramidy), miedniczka | basic:moczowy
 Nefron | ciałko nerkowe (kłębuszek + torebka Bowmana) + kanalik | basic:nefron
 Filtracja | kłębuszek → torebka; woda i małe cząsteczki → mocz pierwotny | basic:nefron
 Wchłanianie zwrotne | kanalik → krew: glukoza, aminokwasy, woda, sole | basic:nefron
-Mocz pierwotny / ostateczny | ok. 150–180 l / ok. 1,5 l na dobę | contest:nefron
 ADH | z przysadki; więcej ADH → więcej wody odzyskanej → mniej moczu | basic:adh
 Opłucna | podwójna błona wokół płuca z płynem zmniejszającym tarcie — płuco rusza się razem z klatką | basic:pluca
-Surfaktant | substancja pokrywająca pęcherzyki, zapobiega ich sklejaniu się przy wydechu | contest:pluca
 Oksyhemoglobina | hemoglobina związana z tlenem — jasnoczerwona; w tkankach oddaje tlen | basic:krew
 Torebka Bowmana | część ciałka nerkowego otaczająca kłębuszek — tu powstaje mocz pierwotny | basic:nefron
-Moczówka prosta | choroba z niedoboru ADH — bardzo dużo rozcieńczonego moczu i silne pragnienie | contest:adh
 Dializa | oczyszczanie krwi poza ciałem (sztuczna nerka) przy niewydolności nerek | basic:choroby
-Erytropoetyna | hormon nerek pobudzający powstawanie erytrocytów | contest:nerka
 POChP | przewlekła obturacyjna choroba płuc — uszkodzenie pęcherzyków, głównie od palenia | basic:choroby
+Czad (CO) | wiąże hemoglobinę silniej niż O₂ → niedotlenienie; czujnik czadu | contest:transport
+Powietrze wydychane | ok. 16% O₂, ok. 4% CO₂, para wodna | contest:oddychanie
+Ośrodek oddechowy | pień mózgu; reaguje głównie na wzrost CO₂ | understand:regulacja
+Mocz pierwotny / ostateczny | ok. 150–180 l / ok. 1,5 l na dobę | contest:nefron
+Surfaktant | substancja pokrywająca pęcherzyki, zapobiega ich sklejaniu się przy wydechu | contest:pluca
+Moczówka prosta | choroba z niedoboru ADH — bardzo dużo rozcieńczonego moczu i silne pragnienie | contest:adh
+Erytropoetyna | hormon nerek pobudzający powstawanie erytrocytów | contest:nerka
 :::
 
 ## 22 | Słownik {#slownik}

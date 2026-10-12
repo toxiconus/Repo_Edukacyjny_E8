@@ -619,6 +619,8 @@ section ul,section ol{padding-left:1.35rem}
 .fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
 .fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
 
 /* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
 :root{
@@ -1882,6 +1884,18 @@ root.querySelectorAll('.flashcard-grid').forEach(function(g){
  lab(false);
  b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
  g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
 });
 // grafiki przedmiotu
 if(window.BIO&&BIO.mountAll)BIO.mountAll(root);

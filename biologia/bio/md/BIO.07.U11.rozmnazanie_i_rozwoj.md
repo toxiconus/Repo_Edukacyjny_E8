@@ -883,31 +883,31 @@ Pochwa | droga rodna łącząca macicę z zewnętrzem | basic:uklady
 Plemnik | mała ruchliwa gameta męska z wicią, n = 23 | basic:gamety
 Komórka jajowa | duża nieruchoma gameta żeńska z zapasem substancji odżywczych, n = 23 | basic:gamety
 Zygota | pierwsza komórka nowego organizmu, 2n = 46 | basic:gamety
-Mejoza | podział redukcyjny dający gamety o połowie chromosomów | understand:gamety
 Miesiączka | złuszczanie błony śluzowej macicy na początku cyklu | basic:cykl
-Faza folikularna | wzrost pęcherzyka i stężenia estrogenów; odbudowa błony śluzowej | understand:cykl
 Owulacja | pęknięcie pęcherzyka i uwolnienie komórki jajowej | basic:cykl
-Faza lutealna | ciałko żółte produkuje progesteron; utrzymanie błony śluzowej | understand:cykl
 Estrogeny | hormony jajnika budujące błonę śluzową macicy | basic:hormony
 Progesteron | hormon utrzymujący błonę śluzową macicy i ciążę | basic:hormony
 Testosteron | główny męski hormon płciowy | basic:hormony
 Zapłodnienie | połączenie gamet, zwykle w jajowodzie; powstaje zygota | basic:ciaza
-Bruzdkowanie | seria podziałów zygoty w drodze do macicy, bez wzrostu | understand:ciaza
 Implantacja | zagnieżdżenie zarodka w błonie śluzowej macicy, ok. 6.–7. doby | basic:ciaza
 Zarodek | stadium rozwoju do końca 8. tygodnia — budowa narządów | basic:ciaza
 Płód | stadium od 9. tygodnia do porodu — wzrost i dojrzewanie | basic:ciaza
-Łożysko | organ wymiany substancji między matką a płodem bez mieszania krwi; produkuje hormony | understand:lozysko
 Pępowina | sznur naczyń krwionośnych łączący płód z łożyskiem | basic:lozysko
-hCG | hormon wczesnej ciąży utrzymujący ciałko żółte; wykrywany w testach ciążowych | extra:hormony
 Cechy drugorzędowe | zmiany pokwitania niezwiązane wprost z narządami płciowymi (głos, zarost, piersi) | basic:dojrzewanie
 Okres prenatalny | rozwój od zapłodnienia do porodu: zarodkowy i płodowy | basic:etapy
 HIV | wirus uszkadzający układ odpornościowy; przenosi się m.in. drogą płciową | basic:choroby
 HPV | wirus brodawczaka; niektóre typy wywołują raka szyjki macicy; szczepienie | basic:choroby
 Cytologia | badanie przesiewowe komórek szyjki macicy | basic:profilaktyka
-Niepłodność | brak poczęcia mimo starań; przyczyny mogą dotyczyć obojga partnerów | extra:choroby
+Mejoza | podział redukcyjny dający gamety o połowie chromosomów | understand:gamety
+Faza folikularna | wzrost pęcherzyka i stężenia estrogenów; odbudowa błony śluzowej | understand:cykl
+Faza lutealna | ciałko żółte produkuje progesteron; utrzymanie błony śluzowej | understand:cykl
+Bruzdkowanie | seria podziałów zygoty w drodze do macicy, bez wzrostu | understand:ciaza
+Łożysko | organ wymiany substancji między matką a płodem bez mieszania krwi; produkuje hormony | understand:lozysko
 Crossing-over | wymiana fragmentów chromosomów homologicznych w mejozie — źródło zmienności | olimpijski:mejoza
 Blok polispermii | zamknięcie komórki jajowej po wejściu pierwszego plemnika | olimpijski:ciaza
 Fala LH | gwałtowny wzrost LH wyzwalający owulację (orientacyjnie 24–36 h później) | olimpijski:hormony
+hCG | hormon wczesnej ciąży utrzymujący ciałko żółte; wykrywany w testach ciążowych | extra:hormony
+Niepłodność | brak poczęcia mimo starań; przyczyny mogą dotyczyć obojga partnerów | extra:choroby
 :::
 
 ## 19 | Słownik {#slownik} [[basic:E8]]

@@ -48,6 +48,18 @@ root.querySelectorAll('.flashcard-grid').forEach(function(g){
  b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
  g.insertAdjacentElement('afterend',b);
 });
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
 // grafiki przedmiotu
 if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
 if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);

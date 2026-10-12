@@ -143,3 +143,4 @@
 - 2026-10-12: BIO L021 (powtórka genetyki, odpowiedź zewnętrznej AI, 25 sekcji) wczytana przez wczytaj_odpowiedz.py; jedna cyrylicka litera w linii 37 poprawiona w kopii przed zapisem. Build i sprawdz_bio OK.
 
 - 2026-10-12: K04 wersja 3 (wg skillu lekcja-od-zera-w1): przypomnienie, minimum, przykłady krok po kroku, mity, mnemotechniki, zadanie transferowe, test 5 przekrojowych, źródło UMB; 34 KB; HTML zbudowany; W1 FULL do zrobienia (brak Khan/Wikipedii).
+- 2026-10-12: testy: automatyczne zwijanie nadmiarowych pytań (domyślnie pierwsze 5, data-q-pierwsze); fiszki posortowane wg wartości (basic → understand → adv → extra) w 6 lekcjach BIO; przebudowa wszystkich HTML. Kontrola limitów 94 lekcji czekających na W1 FULL: 66 bez sekcji „Wykład”, 39 z powtórzonymi akapitami, 16 z testem >5, 17 z fiszkami >6 (fiszki i testy zwijane automatycznie).

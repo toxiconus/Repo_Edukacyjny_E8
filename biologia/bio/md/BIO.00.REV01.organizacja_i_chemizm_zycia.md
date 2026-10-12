@@ -473,9 +473,6 @@ Wakuola | magazyn, turgor (duża u roślin) | basic:komorka
 Rybosomy | synteza białek; we wszystkich komórkach | basic:komorka
 Prokariont | komórka bez jądra (bakterie, sinice) | basic:komorka
 Powiększenie mikroskopu | okular × obiektyw | basic:mikroskop
-Dyfuzja | ruch netto cząsteczek zgodnie z różnicą stężeń | understand:trening
-Osmoza | ruch wody przez błonę selektywnie przepuszczalną | understand:trening
-Turgor | napięcie komórek roślinnych wypełnionych wodą | understand:trening
 Fotosynteza — substraty | CO₂ i H₂O (+ światło) | basic:procesy
 Fotosynteza — produkty | glukoza i O₂ | basic:procesy
 Chlorofil | zielony barwnik pochłaniający światło | basic:procesy
@@ -483,10 +480,13 @@ Oddychanie tlenowe | glukoza + O₂ → CO₂ + H₂O + energia (ATP) | basic:pr
 Fermentacja alkoholowa | glukoza → alkohol etylowy + CO₂ + energia (drożdże) | basic:procesy
 Fermentacja mlekowa | beztlenowa przemiana glukozy: glukoza → kwas mlekowy (mleczan) + energia (bakterie mlekowe; mięśnie — krótkotrwale przy niedoborze tlenu) | basic:procesy
 Kiedy roślina oddycha? | stale, w dzień i w nocy | basic:procesy
-Wykrywanie CO₂ | woda wapienna mętnieje | exam:konkurs
-Wykrywanie O₂ | tlące się łuczywo zapala się | exam:konkurs
 Czynności życiowe | odżywianie, oddychanie, wydalanie, ruch, reagowanie, wzrost i rozwój, rozmnażanie | basic:organizacja
 Samożywność | wytwarzanie związków organicznych z nieorganicznych (fotosynteza) | basic:procesy
+Dyfuzja | ruch netto cząsteczek zgodnie z różnicą stężeń | understand:trening
+Osmoza | ruch wody przez błonę selektywnie przepuszczalną | understand:trening
+Turgor | napięcie komórek roślinnych wypełnionych wodą | understand:trening
+Wykrywanie CO₂ | woda wapienna mętnieje | exam:konkurs
+Wykrywanie O₂ | tlące się łuczywo zapala się | exam:konkurs
 Próba kontrolna | identyczna jak badawcza poza badanym czynnikiem | exam:konkurs
 :::
 

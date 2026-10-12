@@ -760,27 +760,27 @@ Gdzie jest większość DNA? | W jądrze komórkowym (u eukariontów) | basic:po
 Gdzie jeszcze jest DNA? | W mitochondriach (mtDNA), u roślin w chloroplastach (cpDNA) | basic:podstawa
 Co to gen? | Odcinek DNA z informacją o produkcie (białku lub RNA) | basic:podstawa
 Co to chromosom? | Struktura z długiej cząsteczki DNA związanej z białkami | basic:podstawa
-Czy całe DNA to geny? | Nie — są też regiony niekodujące i regulatorowe | extra:ambitny
-Łańcuch: DNA → ? | DNA → RNA → białko → cecha (model podstawowy) | extra:ambitny
-Czy DNA to gotowy organizm? | Nie — to nośnik informacji | error:pułapka
-„DNA to instrukcja obsługi” — dosłownie? | Nie — to metafora | error:pułapka
 Genetyka = ? | Nauka o dziedziczeniu i zmienności | basic:podstawa
 Cecha dziedziczna = ? | Zależna od odziedziczonych genów, przekazywana | basic:podstawa
 Cecha nabyta = ? | Wynik środowiska (blizna, język, opalenizna) | basic:podstawa
 Cecha wieloczynnikowa = ? | Geny + środowisko (np. wzrost) | basic:podstawa
 Fenotyp = ? | Geny + środowisko + rozwój | basic:podstawa
-„Gen decyduje o cesze” — precyzyjne? | Nie — gen współtworzy cechę | error:pułapka
 Pary zasad w DNA | A–T, C–G | basic:podstawa
 Ile wiązań ma A–T? | 2 wiązania wodorowe | basic:podstawa
 Ile wiązań ma C–G? | 3 wiązania wodorowe | basic:podstawa
 Co to nukleotyd? | Cukier + fosforan + zasada azotowa | basic:podstawa
+Gdzie jest DNA u bakterii? | W nukleoidzie — bez jądra | basic:podstawa
+Czy DNA to gotowy organizm? | Nie — to nośnik informacji | error:pułapka
+„DNA to instrukcja obsługi” — dosłownie? | Nie — to metafora | error:pułapka
+„Gen decyduje o cesze” — precyzyjne? | Nie — gen współtworzy cechę | error:pułapka
 Czy w DNA jest U? | Nie — w DNA jest T; U w RNA | error:pułapka
 Wyjątek: komórka bez DNA? | Dojrzały erytrocyt człowieka | error:pułapka
-Gdzie jest DNA u bakterii? | W nukleoidzie — bez jądra | basic:podstawa
-Ten sam DNA, a komórki działają inaczej — dlaczego? | Odczytują inne fragmenty — regulacja ekspresji | extra:ambitny
-Zmienność rekombinacyjna vs mutacyjna | Nowe kombinacje (mejoza) vs zmiany w DNA | extra:ambitny
 „Mam gen” = „będę miał cechę”? | Nie — gen to predyspozycja, nie gwarancja | error:pułapka
 Mutacja = choroba? | Nie — może być neutralna, szkodliwa lub korzystna | error:pułapka
+Czy całe DNA to geny? | Nie — są też regiony niekodujące i regulatorowe | extra:ambitny
+Łańcuch: DNA → ? | DNA → RNA → białko → cecha (model podstawowy) | extra:ambitny
+Ten sam DNA, a komórki działają inaczej — dlaczego? | Odczytują inne fragmenty — regulacja ekspresji | extra:ambitny
+Zmienność rekombinacyjna vs mutacyjna | Nowe kombinacje (mejoza) vs zmiany w DNA | extra:ambitny
 :::
 
 ## 19 | Checklista {#checklista}

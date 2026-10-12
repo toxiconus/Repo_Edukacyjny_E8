@@ -614,6 +614,14 @@ section ul,section ol{padding-left:1.35rem}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 @media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
 
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+
 /* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
@@ -780,6 +788,30 @@ var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.sc
  for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
  for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
 window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
 // grafiki przedmiotu
 if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
 if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
