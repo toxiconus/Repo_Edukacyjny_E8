@@ -237,7 +237,7 @@ Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z front
 | F19 | 12.7 | 83 | W23 | 0 | tak | CHE.01.F19.dossier_reakcji.md |
 | F20 | 13.6 | 85 | W23 | 0 | tak | CHE.01.F20.klinika_bledow_fundamentow.md |
 | F21 | 15.1 | 86 | W23 | 0 | tak | CHE.01.F21.zadania_transferowe_i_diagnostyka.md |
-| N01 | 1.1 | — | PUSTY | 0 | tak | CHE.02.N01.powietrze_i_gazy.md |
+| N01 | 30.9 | 117 | PRZEBUDOWA | 4 | tak | CHE.02.N01.powietrze_i_gazy.md |
 | N02 | 37.3 | 119 | — | 0 | tak | CHE.02.N02.tlenki.md |
 | N03 | 30.6 | 110 | — | 0 | tak | CHE.02.N03.wodorotlenki.md |
 | N04 | 35.4 | 118 | — | 0 | tak | CHE.02.N04.kwasy.md |
