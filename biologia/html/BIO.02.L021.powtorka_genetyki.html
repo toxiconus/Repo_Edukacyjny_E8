@@ -755,88 +755,508 @@ animation:bio-drift 60s linear infinite}
 <a class="skip-link" href="#main">Przejdź do treści</a>
 <header class="lk-bar"><span class="lk-subj"><i></i>Biologia</span><span class="lk-title">L021 Powtórka genetyki</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
-<section class="hero card"><div class="hero-kicker">Biologia, lekcja L021</div><h1>Powtórka genetyki</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA LEKCJI L021</a><a class="toc-link" href="#s2">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s3">1. Pytanie przewodnie</a><a class="toc-link" href="#s4">2. Cele lekcji</a><a class="toc-link" href="#s5">3. Co trzeba wiedzieć wcześniej (kompas)</a><a class="toc-link" href="#s6">4. Mapa przekrojowa</a><a class="toc-link" href="#s7">5. Interleaving — zestawy mieszane</a><a class="toc-link" href="#s8">6. Test przekrojowy</a><a class="toc-link" href="#s9">7. Odpowiedzi</a><a class="toc-link" href="#s10">8. Klinika 2.0 — przekrojowa</a><a class="toc-link" href="#s11">9. Drabinka trudności</a><a class="toc-link" href="#s12">10. Jak się uczyć — powtórka genetyki</a><a class="toc-link" href="#s13">11. Zadania z życia codziennego</a><a class="toc-link" href="#s14">12. Słownik przekrojowy</a><a class="toc-link" href="#s15">13. Checklista bloku</a><a class="toc-link" href="#s16">14. Co dalej?</a><a class="toc-link" href="#s17">UZUPEŁNIENIE MASTER v4.1 — jak korzystać z powtórki rocznej</a><a class="toc-link" href="#s18">15. STATUS LEKCJI</a><a class="toc-link" href="#s19">16. UZUPEŁNIENIE egzaminacyjne v4.0+ (doklejone — nic nie wycięto)</a><a class="toc-link" href="#s20">16. Doprecyzowanie — algorytm rozwiązywania zadań mieszanych (W15)</a><a class="toc-link" href="#s21">AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</a><a class="toc-link" href="#s22">AUDYT W18 — klucz mieszany (2026-10-09, GPT-6)</a><a class="toc-link" href="#s23">AUDYT KOŃCOWY BLOKU GENETYKI — mapa pojęć i procedura rozwiązywania zadań (2026-10-09)</a></nav></details>
-<section id="s1">
-<div class="part-heading">KARTA LEKCJI L021</div>
+<section class="hero card"><div class="hero-kicker">L021 · BIOLOGIA · Genetyka — powtórka bloku L011–L020 · E8 / KONKURS</div><h1>Powtórka genetyki</h1><p class="lead">Cała genetyka w jednym miejscu: DNA, chromosomy, podziały, krzyżówki, płeć, grupy krwi i mutacje poskładane w jeden łańcuch — od litery w DNA do cechy w rodzinie.</p><p class="lead">Po tej lekcji rozpoznasz typ zadania genetycznego, wybierzesz właściwy algorytm, policzysz prawdopodobieństwo i sprawdzisz własną odpowiedź tak, jak robi to egzaminator.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span><span class="level-badge level-extra">AMBITNE</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Zakres podstawy odpowiada informatorowi egzaminu ósmoklasisty (genetyka, klasa 8); warstwa konkursowa wykracza poza podstawę. Liczby oznaczone „(orientacyjnie)” nie są przeznaczone do zapamiętania na egzamin.</p></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza</a><a class="toc-link" href="#wyklad">1. Wykład — od litery w DNA do cechy w rodzinie</a><a class="toc-link" href="#dalej">23. Co dalej?</a></nav></details>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li>Wyjaśnić łańcuch: DNA → gen → allel → ekspresja informacji → cecha (fenotyp).</li>
+<li>Podać, że komórka ciała człowieka ma 46 chromosomów (2n, czyli 23 pary), a gameta — 23 (n).</li>
+<li>Odróżnić chromosom od chromatidy i policzyć oba po replikacji (46 chromosomów = 92 chromatidy).</li>
+<li>Opisać replikację semikonserwatywną (półzachowawczą) w fazie S.</li>
+<li>Porównać mitozę (2n → 2n) z mejozą (2n → n) i podać cel każdego z tych podziałów.</li>
+<li>Rozwiązać krzyżówkę w szachownicy Punnetta i podać stosunki 3:1 oraz 1:2:1.</li>
+<li>Odróżnić prawdopodobieństwo od gwarancji (25% nie znaczy „co czwarte dziecko”).</li>
+<li>Zastosować regułę „ojciec nie przekazuje chromosomu X synowi” i wyjaśnić, dlaczego recesywne cechy sprzężone z X częściej dotyczą mężczyzn.</li>
+<li>Rozwiązywać zadania układu ABO (allele Iᴬ, Iᴮ, i; kodominacja w grupie AB; grupa 0 = ii).</li>
+<li>Klasyfikować mutacje i mutageny oraz rozróżniać trzy pojęcia: mutacja, choroba genetyczna, nowotwór.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>Podstawa:</b> łańcuch DNA → cecha; 46 i 23 chromosomy; chromatydy i centromer; replikacja; mitoza i mejoza; Punnett (3:1, 1:2:1); płeć XX/XY i cechy sprzężone z X; grupy krwi ABO; mutacje i mutageny; nowotwory.</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> dlaczego proporcje potomstwa wynikają z kombinacji gamet; czemu 25% nie jest gwarancją; dlaczego mutacja może być cicha; jak z danych rozpoznać model dziedziczenia i kiedy danych jest za mało.</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> rodowody (autosomalne i X-linked); zadania z brakującą informacją; pułapki kluczy (mała próba, fenotyp ≠ genotyp, dominacja ≠ częstość); synteza całego bloku L011–L020 w zadaniach problemowych.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> nondysjunkcja i aneuploidia; anemia sierpowata a malaria (przewaga heterozygoty); inaktywacja chromosomu X i ciałko Barra; degeneracja kodu genetycznego; zmienność dziedziczna jako paliwo ewolucji.</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
 <ul>
-<li>Numer: L021</li>
-<li>Tytuł roboczy: Powtórka genetyki</li>
-<li>Dział: Genetyka</li>
-<li>Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]</li>
-<li>Poprzednia: L010–L020 · Następna: L030</li>
-<li>Status treści: jest wykład MD; audyt przy edycji; audyt punktowy W15 — 2026-10-09</li>
-<li>Status HTML: brak HTML</li>
-<li>Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać <code>STATUS: DO UZUPEŁNIENIA</code> (nie przesuwać numerów)</li>
-<li>Zasada: nic nie wycinać; treść dopisywać poniżej karty</li>
+<li><a href="#mapa-bloku">§2</a> — mapa całego bloku L011–L020 i łańcuch pojęć, który spina wszystkie lekcje.</li>
+<li><a href="#dna">§3</a> — fundament: DNA, chromosom, chromatyda, replikacja.</li>
+<li><a href="#podzialy">§4</a> — mitoza i mejoza: dwa podziały, dwa cele.</li>
+<li><a href="#dziedziczenie">§5</a> — Punnett, dominacja i prawdopodobieństwo (nie gwarancja!).</li>
+<li><a href="#plec">§6</a> — płeć XX/XY i cechy sprzężone z chromosomem X.</li>
+<li><a href="#abo">§7</a> — grupy krwi ABO: trzy allele i kodominacja.</li>
+<li><a href="#mutacje">§8</a> — mutacje: od cichej zmiany do nowotworu.</li>
+<li><a href="#algorytm">§9</a> — algorytm zadań mieszanych i samokontrola odpowiedzi.</li>
+<li><a href="#zestawy">§10</a> — zestawy mieszane A–D (interleaving).</li>
+<li><a href="#test-przekrojowy">§11</a> — test przekrojowy z kluczem.</li>
 </ul>
-</section>
-<section id="s2">
-<div class="part-heading">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</div>
-<p><strong>Główna plansza:</strong> Mapa całej genetyki.</p>
-<p><code>[BIO: DIAGRAM type=FLOW]</code>
-<code>DNA → chromosom → podział → gameta → dziedziczenie → mutacja</code>
-<code>[/BIO: DIAGRAM]</code></p>
-<!-- OPIS: Powtórka łączy DNA, chromosomy, mitozę, mejozę, dziedziczenie, grupy krwi, mutacje i nowotwory; odpowiedzi powinny ujawniać tok rozumowania, nie tylko wynik. -->
-<p><strong>Co uczeń ma zauważyć:</strong> transfer wiedzy między tematami.</p>
-<p><strong>Zasada projektowa:</strong> grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.</p>
-<p><strong>Dział:</strong> Powtórka
-<strong>Poziomy:</strong> podstawa · trening · ambitny · zaawansowany
-<strong>Poprzednia lekcja:</strong> L020
-<strong>Następna lekcja:</strong> L030</p>
-<hr class="lk-hr"/>
-</section>
-<section id="s3">
-<div class="part-heading"><span class="part-num">1</span> Pytanie przewodnie</div>
-<p>Jak połączyć DNA, chromosomy, podziały i dziedziczenie w jeden spójny obraz?</p>
-<hr class="lk-hr"/>
-</section>
-<section id="s4">
-<div class="part-heading"><span class="part-num">2</span> Cele lekcji</div>
-<p>Po lekcji uczeń:</p>
-<ul>
-<li>powtarza rdzeń bloku (L011–L020),</li>
-<li>rozwiązuje zadania przekrojowe,</li>
-<li>wskazuje własne luki,</li>
-<li>(ambitny/zaawansowany) łączy mechanizmy w zadaniach problemowych.</li>
-</ul>
-<h3>Zasada 80/20</h3>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<p>To lekcja-powtórka: nie wprowadza nowego tematu, tylko składa dziesięć lekcji genetyki (L011–L020) w jeden system i prowadzi cię przez zadania mieszane — takie, które najbardziej przypominają egzamin i konkurs. Głównym celem jest <strong>transfer wiedzy między tematami</strong>: zobaczyć, że DNA, chromosomy, podziały, dziedziczenie i mutacje to fragmenty jednego łańcucha.</p>
+<p><strong>Kolejność pracy:</strong></p>
+<ol>
+<li><strong>Diagnoza (§0.2).</strong> Odpowiedz na 6 pytań bez podglądania i sprawdź w kluczu — zobaczysz, które lekcje są twoją mocną stroną, a które trzeba odświeżyć.</li>
+<li><strong>Wykład (§1) i mapa bloku (§2).</strong> Przeczytaj ciągłe opowiedzenie całości i sprawdź, czy potrafisz wyrecytować 12 zdań kontrolnych.</li>
+<li><strong>Sekcje tematyczne (§3–§9).</strong> Wracaj do nich tam, gdzie diagnoza wykazała lukę; po każdej sekcji wykonaj zadanie przy temacie.</li>
+<li><strong>Zestawy mieszane (§10) i test przekrojowy (§11).</strong> Rozwiązuj bez podglądania, dopiero potem porównuj z kluczem — to najbliższy odpowiednik prawdziwego sprawdzianu.</li>
+<li><strong>Klinika błędów (§14).</strong> Jeśli poznasz w niej własny błąd — wróć do lekcji, której on dotyczy (adresy są w tabeli diagnostycznej).</li>
+<li><strong>Domknięcie (§18–§23).</strong> Test końcowy, fiszki, słownik, mapa pojęć, ściąga i checklistą — i dopiero wtedy „Co dalej?”.</li>
+</ol>
+<p class="mini-note"><strong>Zasada końcowa:</strong> Powtórka roczna nie ma polegać na ponownym przeczytaniu wszystkiego od początku. Ma ujawnić, które mechanizmy umiesz odtworzyć, zastosować, połączyć i wyjaśnić.</p>
+<p><strong>Zasada 80/20 — jeśli masz mało czasu, to jest twój rdzeń:</strong></p>
 <div class="table-wrap"><table>
 <thead><tr><th>20% = 80% efektu</th><th>Dlaczego</th></tr></thead>
 <tbody>
-<tr><td>DNA → chromosom → podział → dziedziczenie</td><td>łańcuch</td></tr>
-<tr><td>Punnett + P</td><td>narzędzia</td></tr>
-<tr><td>mutacje + dobór</td><td>most do ewolucji</td></tr>
+<tr><td>DNA → chromosom → podział → dziedziczenie</td><td>to jeden łańcuch — każdy egzaminacyjny wątek jest jego fragmentem</td></tr>
+<tr><td>krzyżówka Punnetta + prawdopodobieństwo</td><td>główne narzędzia obliczeniowe genetyki</td></tr>
+<tr><td>mutacje + zmienność + dobór naturalny</td><td>most do ewolucji i do zadań o populacjach</td></tr>
 </tbody></table></div>
-<hr class="lk-hr"/>
+<p><strong>Drabinka trudności — sprawdź, na którym szczeblu stoisz:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Poziom</th><th>Zadanie</th></tr></thead>
+<tbody>
+<tr><td>ODTWÓRZ</td><td>Pary zasad w DNA.</td></tr>
+<tr><td>ZASTOSUJ</td><td>P(aa) w krzyżówce Aa × Aa.</td></tr>
+<tr><td>WYJAŚNIJ</td><td>Dlaczego 25% to nie gwarancja?</td></tr>
+<tr><td>ODKRYJ</td><td>Jaki model dziedziczenia ukrywa się w danych?</td></tr>
+<tr><td>POŁĄCZ</td><td>Połącz DNA z fenotypem.</td></tr>
+<tr><td>ZAKWESTIONUJ</td><td>Czy mutacja zawsze zmienia fenotyp?</td></tr>
+</tbody></table></div>
+<p><strong>Kryteria opanowania bloku.</strong> Opanowałeś materiał, gdy potrafi: (a) zastosować definicję w nowym przykładzie, (b) uzasadnić każdy krok, (c) wskazać założenia modelu, (d) zauważyć, kiedy danych jest za mało, (e) unikać wniosków medycznych lub rodzinnych, których zadanie nie uzasadnia.</p>
+<p><strong>Oceniaj (i sprawdzaj) tok rozumowania.</strong> Przy zadaniach genetycznych pełny zapis wygląda tak: zapis alleli → gamety → szachownica → wynik → interpretacja prawdopodobieństwa. Samo „25%” bez zapisu gamet nie daje pełni punktów — ani na egzaminie, ani w twojej własnej samokontroli.</p>
+<p><strong>Zasada 3 pytań po powtórce:</strong>
+1. Co już umiem?
+2. Co jeszcze mylę?
+3. Co mnie zaskoczyło?</p>
 </section>
-<section id="s5">
-<div class="part-heading"><span class="part-num">3</span> Co trzeba wiedzieć wcześniej (kompas)</div>
-<p>Cały blok L011–L020:
-- L011 — DNA (budowa, pary, informacja)
-- L012 — chromosom (chromatydy, centromer, 46, XX/XY)
-- L013 — replikacja (semikonserwatywna, faza S)
-- L014 — mitoza (2n → 2n)
-- L015 — mejoza (2n → n, crossing-over)
-- L016 — nowotwory (niekontrolowane podziały)
-- L017 — dziedziczenie (Punnett, 3:1, 1:2:1)
-- L018 — płeć / X-linked (ojciec nie daje X synowi)
-- L019 — ABO (kodominacja, 3 allele)
-- L020 — mutacje (typy, mutageny, skutki)</p>
-<hr class="lk-hr"/>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.2</span> Diagnoza</div>
+<p>Odpowiedz na sześć pytań bez podglądania (ok. 5 minut). <strong>Wynik 5–6:</strong> przechodź od razu do zestawów mieszanych (§10). <strong>Wynik 3–4:</strong> przejrzyj sekcje tematyczne (§3–§9) w miejscach, gdzie się pomyliłeś. <strong>Wynik 0–2:</strong> zacznij od wykładu (§1) i wróć do lekcji L011–L020 wskazanych w kluczu.</p>
+<ol>
+<li>Osoba ma grupę krwi A. Czy jej genotyp musi być IᴬIᴬ?</li>
+<li>W krzyżówce wynik ma prawdopodobieństwo 25%. Czy przy czterech potomkach dokładnie jeden musi mieć tę cechę?</li>
+<li>Czy crossing-over zawsze tworzy nowe allele?</li>
+<li>Czy mutacja w komórce skóry zwykle jest przekazywana dzieciom?</li>
+<li>Dlaczego replikacja DNA jest konieczna przed mejozą I?</li>
+<li>Czy allel dominujący musi być częstszy w populacji?</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>Nie</strong> — możliwy jest też genotyp Iᴬi. Grupa A to fenotyp, a on nie wyznacza jednoznacznie genotypu. Jeśli pomyliłeś — wróć do L019 (ABO).</li>
+<li><strong>Nie</strong> — prawdopodobieństwo nie gwarantuje wyniku w małej próbie; każde zapłodnienie to osobne, niezależne zdarzenie. Luka: prawdopodobieństwo (L017).</li>
+<li><strong>Nie</strong> — crossing-over przede wszystkim tworzy <strong>nowe kombinacje</strong> istniejących alleli, a nie nowe allele (nowe allele rodzą się przez mutacje). Luka: mejoza (L015).</li>
+<li><strong>Nie</strong> — mutacje somatyczne dotyczą ciała i zwykle nie są dziedziczone przez potomstwo; dziedziczą się zmiany w komórkach linii płciowej. Luka: mutacje (L020).</li>
+<li><strong>Aby skopiować DNA i utworzyć chromatydy siostrzane przed dwoma kolejnymi podziałami</strong> — bez tego po pierwszym podziale brakłoby materiału. Luka: replikacja i mejoza (L013, L015).</li>
+<li><strong>Nie</strong> — dominacja opisuje sposób ujawniania się alleli w heterozygocie, a nie ich częstość w populacji. Luka: rozróżnienia pojęć (L017).</li>
+</ol>
+</details>
 </section>
-<section id="s6">
-<div class="part-heading"><span class="part-num">4</span> Mapa przekrojowa</div>
-<pre class="lk-pre" data-jezyk="text"><code>GENETYKA&#10;├── DNA (L011) — budowa, pary, informacja&#10;├── CHROMOSOM (L012) — chromatydy, centromer, 46, XX/XY&#10;├── REPLIKACJA (L013) — semikonserwatywna, faza S&#10;├── MITOZA (L014) — 2n → 2n&#10;├── MEJOZA (L015) — 2n → n, crossing-over&#10;├── NOWOTWORY (L016) — niekontrolowane podziały&#10;├── DZIEDZICZENIE (L017) — Punnett, 3:1, 1:2:1&#10;├── PŁEĆ / X (L018) — X-linked&#10;├── ABO (L019) — kodominacja, 3 allele&#10;└── MUTACJE (L020) — typy, mutageny</code></pre>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">1</span> Wykład — od litery w DNA do cechy w rodzinie</div>
+<p>Cała genetyka, którą przerobiłeś w dziesięciu lekcjach (L011–L020), opowiada jedną historię — historię informacji. Informacja jest zapisana w cząsteczce DNA, spakowana w chromosomy, kopiowana przed każdym podziałem, rozdzielana między gamety, łączona przy zapłodnieniu, a na końcu czytana — żeby zbudować białko i ujawnić cechę. Jeśli rozumiesz tę trasę od początku do końca, każde zadanie z genetyki jest tylko pytaniem o fragment tej samej drogi.</p>
+<p><strong>Baza: cztery litery i reguła pary.</strong> DNA to podwójna helisa zbudowana z nukleotydów. Każdy nukleotyd ma trzy części: cukier (deoksyrybozę), resztę fosforanową i zasadę azotową — jedną z czterech: adeninę (A), tyminę (T), cytozynę (C) albo guaninę (G). Cukry i reszty fosforanowe tworzą szkielet obu nici, a w środku, jak szczeble drabiny, zasady spotykają się parami według jednej reguły: A zawsze z T, C zawsze z G. Pary A–T łączą dwa wiązania wodorowe, a C–G — trzy. Ta prostota ma ogromną konsekwencję: patrząc na jedną nić, zawsze wyliczysz drugą. DNA jest więc nośnikiem informacji — kolejność zasad to tekst, a reguła par to gwarancja, że tekst da się skopiować bez strat.</p>
+<p><strong>Od litery do słowa: gen i allel.</strong> Gen to odcinek DNA, który niesie informację o produkcie — zwykle o białku (czasem o RNA). Allel to wersja tego genu: ten sam odcinek, inny zapis. Ponieważ człowiek ma dwa zestawy chromosomów (jeden od matki, drugi od ojca), ma po dwa allele każdego genu — identyczne albo różne. Zapamiętaj łańcuch: <strong>DNA → gen → allel → ekspresja informacji → cecha (fenotyp)</strong>. To model edukacyjny: nie każda cecha jest kontrolowana przez jeden gen i nie każdy gen koduje białko, a fenotyp powstaje ze współdziałania genotypu i środowiska. Jako mapa myślenia ten łańcuch działa jednak bezbłędnie.</p>
+<p><strong>Czytanie: od DNA do białka.</strong> Informacja nie leży w jądrze bezczynnie. W transkrypcji enzym czyta nić matrycową DNA i buduje kopiujące pismo — mRNA (w RNA zamiast tyminy występuje uracyl, U). mRNA trafia do rybosomu, gdzie w translacji trójki nukleotydów — kodony — są odczytywane jak słowa: każdy kodon wskazuje aminokwas. Kodonów jest 64, aminokwasów 20; istnieje kodon START i kodony STOP. Skoro kodonów jest więcej niż aminokwasów, kilka kodonów oznacza ten sam aminokwas — mówimy, że kod genetyczny jest zdegenerowany. To nie wada, lecz poduszka bezpieczeństwa: zmiana jednej zasady może nie zmienić aminokwasu (mutacja cicha). Kod jest niemal uniwersalny — ten sam zapis działa w bakterii i u człowieka; dlatego bakterie potrafią produkować ludzką insulinę (wrócisz do tego przy biotechnologii).</p>
+<p><strong>Opakowanie: chromosomy.</strong> W jednej komórce człowieka jest około 2 metrów DNA (orientacyjnie). Żeby zmieścić je w jądrze, nawija się je na białka (histony); tak powstaje chromatyna, a w podziale — skręcony, widoczny chromosom. Człowiek ma 2n = 46 chromosomów: 23 pary homologicznych, z których każdy chromosom pary pochodzi od innego rodzica. 22 pary to autosomy, a jedna para to chromosomy płci: XX u kobiet, XY u mężczyzn. Po replikacji każdy chromosom ma dwie chromatydy siostrzane połączone w centromerze. I tu najważniejsza reguła rachunkowa całego bloku: <strong>chromosomy liczymy po centromerach</strong>. Po replikacji komórka ma więc nadal 46 chromosomów, ale już 92 chromatidy i 92 cząsteczki DNA. Pamiętaj też: liczba chromosomów nie jest miarą złożoności organizmu.</p>
+<p><strong>Kopiowanie: replikacja.</strong> Zanim komórka się podzieli, w fazie S interfazy, całe DNA jest kopiowane. Replikacja jest semikonserwatywna (półzachowawcza): dwie nici rozplatają się, każda służy za matrycę, a enzymy dokładają komplementarne nukleotydy według reguły A–T i C–G. Powstają dwie cząsteczki, z których każda ma jedną nić starą i jedną nową. Polimerazy robią to szybko i sprawnie, a błędy wyłapują systemy naprawcze — dlatego mutacje, czyli błędy nienaprawione, są stosunkowo rzadkie. Kolejność jest bezwzględna: <strong>najpierw ksero, potem rozdajemy</strong> — replikacja zawsze poprzedza podział.</p>
+<p><strong>Rozdawanie: dwa podziały.</strong> Mitoza: komórka 2n kopiuje DNA raz i dzieli się raz → dwie komórki 2n, genetycznie identyczne z macierzystą. Cel: wzrost, odbudowa tkanek, wymiana zużytych komórek. Mejoza: komórka 2n kopiuje DNA raz, ale dzieli się dwa razy → cztery komórki n, genetycznie różne. W profazie I mejozy chromosomy homologiczne leżą parami i mogą wymieniać odcinki (crossing-over), a w metafazie I homologi ustawiają się i rozchodzą losowo. Obie rzeczy tasują karty — każda gameta dostaje inny zestaw alleli. W mejozie może też dojść do błędu rozdziału (nondysjunkcja): gameta dostaje chromosom za dużo albo za mało, a po zapłodnieniu powstaje aneuploidia — na przykład trisomia 21 (zespół Downa).</p>
+<p><strong>Spotkanie: zapłodnienie i dziedziczenie.</strong> Gameta n plus gameta n daje zygotę 2n — i od tego momentu liczy się genotyp, czyli zestaw alleli. Przy dominacji zupełnej heterozygota (Aa) wygląda jak homozygota dominująca (AA): recesywny a chowa się, ale nie znika. Stąd podstawowe krzyżówki: AA × aa daje w całości heterozygotyczne potomstwo; Aa × Aa daje genotypy w stosunku 1:2:1 i fenotypy 3:1; Aa × aa daje 1:1. Szachownica Punnetta to nie magia, tylko uporządkowana lista kombinacji: gamety rodziców na brzegach, możliwe zygoty w kratkach. Stosunki są prawdopodobieństwami — dotyczą modelu i dużych liczb. Przy pojedynczym dziecku „25%” znaczy: każde dziecko ma 25% szans, a nie że „co czwarte będzie takie”. Zapłodnienia są niezależne: szansa, że dwoje kolejnych dzieci będzie aa przy rodzicach Aa × Aa, wynosi 1/4 · 1/4 = 1/16.</p>
+<p><strong>Płeć i chromosom X.</strong> W typowym szkolnym modelu o chromosomalnym ustalaniu płci decyduje układ XX/XY: komórka jajowa zawsze wnosi X, a plemnik wnosi X albo Y — to rodzaj plemnika rozstrzyga. Syn dostaje X od matki i Y od ojca; córka — X od matki i X od ojca. Stąd reguła kluczowa: <strong>ojciec nie przekazuje chromosomu X synowi</strong> — synowi przekazuje Y. Geny leżące na X dziedziczą się więc według innej geometrii: mężczyzna ma tylko jeden X (jest hemizygotą), więc recesywny allel na nim od razu się ujawnia; kobieta musiałaby mieć go na obu X (XᵃXᵃ). Dlatego daltonizm i hemofilia są częstsze u mężczyzn. Nosicielka XᴬXᵃ i zdrowy mężczyzna XᴬY: połowa synów chora, połowa córek nosicielkami. Chory ojciec XᵃY: wszystkie córki dostają jego Xᵃ (są nosicielkami, gdy matka zdrowa), a synowie dostają Y i są zdrowi. Dla porządku: rozwój płci jest bardziej złożony niż sam układ chromosomów (udział mają geny i hormony), a u niektórych osób występują inne układy — model XX/XY to uproszczenie, które na egzaminie wystarcza.</p>
+<p><strong>Trzy allele i krew.</strong> Układ ABO to przykład alleli wielokrotnych: na jednym locus istnieją trzy allele — Iᴬ, Iᴮ i i. Grupa AB (IᴬIᴮ) pokazuje kodominację: oba allele widać równocześnie. Allel i jest recesywny: grupa 0 to zawsze ii. Grupa A to IᴬIᴬ albo Iᴬi, grupa B — IᴮIᴮ albo Iᴮi. Stąd klasyczne zadania: matka 0 (ii) × ojciec AB (IᴬIᴮ) → dzieci tylko A albo B; Iᴬi × Iᴮi → możliwe wszystkie cztery grupy. I stąd pułapka: fenotyp nie wyznacza jednoznacznie genotypu — „grupa A” kryje dwa możliwe genotypy.</p>
+<p><strong>Błędy: mutacje i nowotwory.</strong> Mutacja to trwała zmiana w DNA. Mutacje punktowe zmieniają jedną zasadę: mogą być ciche (ten sam aminokwas), zmieniać sens (inny aminokwas), nonsensowne (powstaje kodon STOP — białko skrócone) albo uszkadzać kodon START. Mutacje chromosomowe zmieniają fragmenty chromosomów (delecja, duplikacja, inwersja, translokacja), a genomowe — liczbę chromosomów (aneuploidia, poliploidia). Mutacje w komórkach ciała (somatyczne) zwykle nie przechodzą na dzieci; potomstwu przekazywane są zmiany w komórkach linii płciowej. Mutageny (promieniowanie UV, promieniowanie X, chemikalia, niektóre wirusy) zwiększają częstość mutacji — podnoszą ryzyko, ale nie gwarantują skutku, bo systemy naprawy DNA działają. Skutki mutacji bywają neutralne, szkodliwe, a rzadko korzystne. Mutacja to nie choroba i nie nowotwór: nowotwór powstaje, gdy w komórce <strong>nagromadzą się</strong> zmiany w genach kontrolujących cykl komórkowy — jakby puściły hamulce i wciśnięto gaz — i podziały wymknęły się spod kontroli. Bywa też, że allel „szkodliwy” okazuje się w innych warunkach użyteczny: heterozygoty anemii sierpowatej są chronione przed malarią, więc ten allel utrzymuje się w rejonach, gdzie malaria występuje.</p>
+<p><strong>Domknięcie: zmienność i ewolucja.</strong> Mutacje i rekombinacje tworzą zmienność dziedziczną. Gdy środowisko różnicuje sukces rozrodczy osobników (dobór naturalny), częstości alleli zmieniają się z pokolenia na pokolenie — to most do ewolucji. Zauważ pętlę: genetyka dostarcza materiału (zmienności), a środowisko wybiera.</p>
+<p>To cała mapa. Teraz przejdziemy po niej jeszcze raz — tym razem z tabelami, kartami „W skrócie” i zadaniami.</p>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">2</span> Mapa bloku — dziesięć lekcji, jeden łańcuch {#mapa-bloku} <span class="level-badge level-basic">E8</span></div>
+<p>Po tej lekcji umiesz: powtarzać rdzeń bloku L011–L020, rozwiązywać zadania przekrojowe, wskazywać własne luki, a na poziomie ambitnym — łączyć mechanizmy w zadaniach problemowych.</p>
+<div class="card card-core">
+<span class="card-label">Pytanie przewodnie</span>
+<p><strong>Jak połączyć DNA, chromosomy, podziały i dziedziczenie w jeden spójny obraz?</strong>
+Odpowiedź brzmi: przez łańcuch informacji — DNA jest pakowany w chromosomy, kopiowany przed podziałem, rozdzielany w mejozie do gamet, łączony w zapłodnieniu i odczytywany jako cecha; mutacje w każdym ogniwie tego łańcucha są źródłem zmienności.</p>
+</div>
+<p><strong>Co wnoszisz z każdej lekcji bloku (kompas):</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Lekcja</th><th>Co wnoszysz do całości</th></tr></thead>
+<tbody>
+<tr><td>L011</td><td>DNA: budowa, pary zasad, informacja</td></tr>
+<tr><td>L012</td><td>chromosom: chromatydy, centromer, 46, XX/XY</td></tr>
+<tr><td>L013</td><td>replikacja: semikonserwatywna, faza S</td></tr>
+<tr><td>L014</td><td>mitoza: 2n → 2n</td></tr>
+<tr><td>L015</td><td>mejoza: 2n → n, crossing-over</td></tr>
+<tr><td>L016</td><td>nowotwory: niekontrolowane podziały</td></tr>
+<tr><td>L017</td><td>dziedziczenie: Punnett, 3:1, 1:2:1</td></tr>
+<tr><td>L018</td><td>płeć i cechy X-linked: ojciec nie daje X synowi</td></tr>
+<tr><td>L019</td><td>ABO: kodominacja, 3 allele</td></tr>
+<tr><td>L020</td><td>mutacje: typy, mutageny, skutki</td></tr>
+</tbody></table></div>
+<div class="card card-core">
+<span class="card-label">Łańcuch pojęć, który musisz rozumieć</span>
+<p><strong>DNA → gen → allel → ekspresja informacji → cecha (fenotyp).</strong> DNA przechowuje informację; gen to odcinek DNA związany z funkcjonalnym produktem; allele to wersje danego genu lub jego regionu; ekspresja oznacza wykorzystanie informacji, np. w wytwarzaniu RNA i białka; fenotyp to obserwowane cechy powstające w wyniku współdziałania genotypu i środowiska. <strong>Uwaga na założenia:</strong> ten łańcuch jest modelem edukacyjnym — nie każda cecha jest kontrolowana przez jeden gen ani każdy gen koduje białko.</p>
+</div>
 <figure class="lk-fig bio-fig" data-bio-viz="punnett" data-opt="{&quot;tryb&quot;: &quot;K&quot;}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Powtórka: krzyżówka grup krwi</b> <span>zmień genotypy rodziców i sprawdź proporcje potomstwa</span></figcaption></figure>
 <!-- OPIS: Szachownica Punnetta w trybie grup krwi (AB0): u góry wybór genotypów matki i ojca (np. Iᴬi, Iᴮi), w kratkach genotypy potomstwa z kolorami fenotypów, obok procent każdej grupy krwi. Przełączniki pozwalają przejść też do jednej cechy (A/a) i do dziedziczenia sprzężonego z płcią (X). Wniosek do powtórki: proporcje potomstwa wynikają z kombinacji gamet rodziców; przy allelach Iᴬ i Iᴮ działa kodominacja (grupa AB), a i jest recesywny. -->
 <figure class="lk-fig bio-fig" data-bio-viz="kod-genetyczny" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Powtórka: od DNA do białka i mutacje</b> <span>kliknij zasadę, aby wprowadzić mutację</span></figcaption></figure>
 <!-- OPIS: Nić kodująca i matrycowa DNA, pod nimi mRNA podzielone na kodony i odpowiadające im aminokwasy. Kliknięcie zasady zmienia ją (mutacja punktowa) i panel nazywa skutek: mutacja cicha (ten sam aminokwas), zmiany sensu (inny aminokwas), nonsensowna (kodon STOP — białko skrócone) albo utrata kodonu START. Wniosek do powtórki: kolejność zasad w DNA wyznacza kolejność aminokwasów w białku, a skutek mutacji zależy od tego, czy zmienia kodon na inny aminokwas lub STOP. -->
-<hr class="lk-hr"/>
+<div class="card card-core">
+<span class="card-label">12 zdań kontrolnych — rzut oka przed testem</span>
+<p>Przed testem przekrojowym powinieneś umieć bez podglądania:
+1. DNA jest nośnikiem informacji genetycznej.
+2. Człowiek ma typowo 46 chromosomów w komórce somatycznej.
+3. 46 = 23 pary.
+4. Chromosomy homologiczne pochodzą z dwóch rodzicielskich zestawów.
+5. Po replikacji DNA liczba chromosomów nie zwiększa się.
+6. Liczba chromosomów zależy od liczby centromerów.
+7. Mitoza i mejoza mają różne cele.
+8. Allel jest wersją genu.
+9. Prawdopodobieństwo 25% nie oznacza „co czwarte dziecko”.
+10. Mutacja nie musi oznaczać choroby.
+11. Ewolucja wymaga dziedzicznej zmienności i różnic w sukcesie rozrodczym.
+12. Ekosystem obejmuje organizmy oraz środowisko nieożywione.</p>
+</div>
+<nie-myl>
+<summary>Osiem rozróżnień, które ratują punkty (cały blok)</summary>
+<ul>
+<li>gen ≠ allel — gen to odcinek informacji; allel to jego wariant; test rozstrzygający: zapytaj „ile wersji tego genu ma ten osobnik?” — wersje to allele.</li>
+<li>genotyp ≠ fenotyp — zapis alleli to nie obserwowana cecha; test: „czy mogę to zobaczyć albo zmierzyć?” — jeśli tak, to fenotyp.</li>
+<li>replikacja ≠ mitoza — kopiowanie DNA to nie podział jądra/komórki; test: „czy w tym procesie powstają nowe komórki?” — przy samej replikacji nie.</li>
+<li>mutacja ≠ rekombinacja — zmiana DNA to nie nowe połączenie istniejących alleli; test: „czy powstała nowa litera, czy tylko nowe zestawienie starych?”</li>
+<li>dominacja ≠ „lepszość” — allel dominujący nie musi być korzystniejszy; test: patrz na heterozygotę — dominacja mówi tylko, który allel jest widoczny.</li>
+<li>prawdopodobieństwo ≠ pewność — szansa nie ustala kolejności zdarzeń; test: „czy wynik poprzedniego dziecka zmienia szansę kolejnego?” — nie.</li>
+<li>grupa krwi ≠ pełny genotyp — ten sam fenotyp może mieć różne genotypy; test: grupa A → IᴬIᴬ albo Iᴬi.</li>
+<li>cecha dziedziczna ≠ wyłącznie genetyczna — środowisko może wpływać na fenotyp; test: bliźnięta jednojajowe o różnych cechach → wpływ środowiska.</li>
+</ul>
+</nie-myl>
 </section>
-<section id="s7">
-<div class="part-heading"><span class="part-num">5</span> Interleaving — zestawy mieszane</div>
-<h3>Zestaw A — Podstawa (przekrój)</h3>
+<section>
+<div class="part-heading"><span class="part-num">3</span> Fundament: DNA, chromosom, replikacja {#dna} <span class="level-badge level-basic">E8</span></div>
+<p><strong>DNA</strong> (kwas deoksyrybonukleinowy) to dwuniciowa helisa zbudowana z nukleotydów. Nukleotyd = deoksyryboza + reszta fosforanowa + zasada azotowa (A, T, C, G). Nici są komplementarne: <strong>A–T (2 wiązania wodorowe), C–G (3 wiązania wodorowe)</strong>. Informacja genetyczna to kolejność zasad — dokładnie tak, jak kolejność liter to tekst.</p>
+<p><strong>Gen</strong> to odcinek DNA z informacją o produkcie; <strong>allel</strong> to jego wersja; <strong>locus</strong> to miejsce genu w DNA; <strong>genom</strong> to całość materiału genetycznego komórki.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Co</th><th>Ile / jak</th></tr></thead>
+<tbody>
+<tr><td>komórka ciała człowieka</td><td>2n = 46 chromosomów = 23 pary homologicznych</td></tr>
+<tr><td>gameta człowieka</td><td>n = 23 chromosomy</td></tr>
+<tr><td>autosomy + pary płci</td><td>22 pary autosomów + 1 para płci (XX lub XY)</td></tr>
+<tr><td>po replikacji (faza S)</td><td>46 chromosomów = 92 chromatidy = 92 cząsteczki DNA</td></tr>
+<tr><td>liczenie chromosomów</td><td>po centromerach — zawsze</td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — DNA i kopiowanie</span>
+<p>DNA jest dwuniciowe, a nici dopełniają się według reguły A–T i C–G. Dzięki temu każda nić może wyznaczyć drugą — to jest silnik replikacji. Replikacja zachodzi <strong>w fazie S, przed podziałem</strong>, i jest <strong>semikonserwatywna</strong>: każda nowa cząsteczka ma jedną nić starą i jedną nową. Po replikacji chromosom ma dwie chromatydy siostrzane połączone centromerem — liczba chromosomów się nie zmienia, bo nie przybyło centromerów.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „92 chromosomy w metafazie”</span>
+<p>To mylenie chromatyd z chromosomami. Poprawnie: 46 chromosomów, 92 chromatidy. Chromosomy liczymy po centromerach, a replikacja kopiuje DNA, ale nie rozdziela centromerów — zrobi to dopiero anafaza. Analogia: książka zszyta w środku to wciąż jedna książka, choć ma już dwie połówki.</p>
+</div>
+<nie-myl>
+<summary>Fundament — trzy szybkie pary</summary>
+<ul>
+<li>chromosom ≠ chromatyda — chromosom to całość (liczona po centromerach), chromatyda to jedna z jego kopii; test rozstrzygający: „ile centromerów widzę?”.</li>
+<li>2n ≠ n — komórka ciała ma dwa zestawy (46), gameta jeden (23); test: „czy ta komórka może być zalążkiem nowego osobnika przez zapłodnienie?”.</li>
+<li>gen ≠ genom — odcinek informacyjny vs całość materiału genetycznego; test: „część czy całość?”.</li>
+</ul>
+</nie-myl>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (3 pkt) — Policz i uzasadnij</span>
+<p>Komórka ciała człowieka (2n = 46) przeszła replikację DNA, ale nie rozpoczęła podziału.
+a) Ile chromosomów i ile chromatyd ma ta komórka? (1 pkt)
+b) Co łączy dwie chromatydy jednego chromosomu? (1 pkt)
+c) Wyjaśnij, dlaczego po replikacji liczba chromosomów nie zwiększyła się. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) 46 chromosomów i 92 chromatidy — kryterium: oba liczebniki poprawne.
+b) (1 pkt) Centromer — kryterium: nazwa miejsca połączenia chromatyd.
+c) (1 pkt) Chromosomy liczy się po centromerach; replikacja powiela DNA i tworzy chromatydy siostrzane, ale nie rozdziela centromerów — kryterium: wskazanie centromeru jako podstawy liczenia.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">4</span> Dwa podziały: mitoza i mejoza {#podzialy} <span class="level-badge level-basic">E8</span></div>
+<p>Mitoza i mejoza zaczynają się tak samo (replikacja w fazie S), a kończą zupełnie inaczej. Różnica wynika z celu — i to jest najlepszy sposób zapamiętania tego tematu.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Cecha</th><th>Mitoza</th><th>Mejoza</th></tr></thead>
+<tbody>
+<tr><td>liczba podziałów</td><td>1</td><td>2 (redukcyjny + zwykły)</td></tr>
+<tr><td>liczba replikacji</td><td>1</td><td>1</td></tr>
+<tr><td>wynik</td><td>2 komórki 2n, genetycznie identyczne</td><td>4 komórki n, genetycznie różne</td></tr>
+<tr><td>zachowanie zestawów</td><td>zachowuje (2n → 2n)</td><td>redukuje (2n → n)</td></tr>
+<tr><td>crossing-over</td><td>nie</td><td>tak, w profazie I</td></tr>
+<tr><td>funkcja</td><td>wzrost, odbudowa, wymiana komórek ciała</td><td>wytwarzanie gamet + zmienność</td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — dwa podziały</span>
+<p>Cel procesu poznasz po produkcie: dwie identyczne komórki ciała → mitoza (2n → 2n); cztery różne gamety o połowie chromosomów → mejoza (2n → n). W mejozie w profazie I homologiczne chromosomy leżą parami i mogą wymieniać odcinki (crossing-over), a homologi rozchodzą się losowo — dlatego gamety różnią się zestawem alleli. To mejoza i zapłodnienie (nie mitoza) tworzą różnorodność rodzeństwa.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „mejoza to dwie mitozy”</span>
+<p>Nie jest. Pierwszy podział mejozy jest unikalny: rozchodzą się <strong>chromosomy homologiczne</strong> (przy czym chromosomy mają już po dwie chromatydy), i to on redukuje liczbę zestawów. Drugi podział oddziela chromatydy — i tylko on przypomina mitozę. Po mejozie I jest już n, choć chromosomy są dwuchromatydowe.</p>
+</div>
+<nie-myl>
+<summary>Podziały — dwie pary</summary>
+<ul>
+<li>komórka ciała ≠ gameta — 2n z pełnym wyposażeniem vs n gotowa do zapłodnienia; test rozstrzygający: „ile zestawów chromosomów?”.</li>
+<li>mitoza ≠ mejoza — zachowuje vs redukuje; test: „ile komórek wychodzi i po ilu chromosomach?”.</li>
+</ul>
+</nie-myl>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (3 pkt) — Porównaj i policz</span>
+<p>a) Podaj jedną różnicę w wyniku mitozy i mejozy. (1 pkt)
+b) Komórka zwierzęcia ma 2n = 12. Ile chromosomów będzie miała każda jej gameta? (1 pkt)
+c) Wyjaśnij, dlaczego crossing-over zwiększa różnorodność gamet. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Mitoza daje 2 komórki 2n identyczne, mejoza 4 komórki n różne — kryterium: jakikolwiek poprawny element wyniku.
+b) (1 pkt) 6 chromosomów (n) — kryterium: połowa zestawu.
+c) (1 pkt) Wymiana odcinków między homologami tworzy nowe kombinacje alleli na chromosomach — kryterium: „nowe kombinacje”, nie „nowe allele”.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">5</span> Dziedziczenie: Punnett, dominacja i prawdopodobieństwo {#dziedziczenie} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Zapamiętaj słownik dziedziczenia: <strong>genotyp</strong> to zestaw alleli, <strong>fenotyp</strong> to ujawniona cecha; <strong>homozygota</strong> to AA lub aa, <strong>heterozygota</strong> to Aa; przy <strong>dominacji zupełnej</strong> heterozygota wygląda jak homozygota dominująca — recesywny allel jest niewidoczny, ale nie znika.</p>
+<p><strong>Krzyżówki wzorcowe (model jednego genu, dominacja zupełna):</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Krzyżówka</th><th>Genotypy potomstwa</th><th>Fenotypy potomstwa</th></tr></thead>
+<tbody>
+<tr><td>AA × aa</td><td>100% Aa</td><td>100% dominujące</td></tr>
+<tr><td>Aa × Aa</td><td>1:2:1 (1 AA : 2 Aa : 1 aa)</td><td>3:1 (3 dominujące : 1 recesywne)</td></tr>
+<tr><td>Aa × aa</td><td>1:1 (1 Aa : 1 aa)</td><td>1:1</td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — szachownica to model prawdopodobieństwa</span>
+<p>Gamety rodziców piszesz na brzegach szachownicy, a w kratkach wchodzą w pary — każda kratka to możliwa zygota. Stosunki (3:1, 1:2:1, 1:1) to <strong>prawa dławienia się kombinacji</strong>: mówią, jak często dany wynik zdarza się przy dużej liczbie potomków w modelu. Przy małej rodzinie odchylenia od proporcji są normalne — i nie świadczą o błędzie.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: 25% to nie „co czwarte dziecko”</span>
+<p>P(aa) = 25% w krzyżówce Aa × Aa znaczy: <strong>każde</strong> dziecko osobno ma 25% szans. Zapłodnienia są niezależnymi zdarzeniami — rodzina, która ma już troje dzieci z cechą dominującą, nie „ma w należności” dziecka recesywnego. Prawdopodobieństwo, że <strong>dwoje kolejnych</strong> dzieci będzie aa, wynosi 1/4 · 1/4 = 1/16 — mnożymy, bo zdarzenia są niezależne.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (4 pkt) — Krzyżówka z prawdopodobieństwem</span>
+<p>U grochu wysokość łodygi kontroluje jeden gen: allel A (wysoka) dominuje nad a (niska). Krzyżujemy dwie rośliny heterozygotyczne (Aa × Aa).
+a) Zapisz gamety każdego rodzica. (1 pkt)
+b) Podaj stosunek genotypów potomstwa. (1 pkt)
+c) Podaj stosunek fenotypów potomstwa. (1 pkt)
+d) Jakie jest prawdopodobieństwo, że dwa kolejne nasiona będą mieć genotyp aa? Uzasadnij. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Gamety A i a od każdego rodzica — kryterium: zapis obu rodziców.
+b) (1 pkt) 1:2:1 (1 AA : 2 Aa : 1 aa) — kryterium: stosunek genotypów, nie fenotypów.
+c) (1 pkt) 3:1 (wysokie : niskie) — kryterium: uwzględnienie dominacji zupełnej.
+d) (1 pkt) 1/4 · 1/4 = 1/16 — kryterium: wskazanie niezależności zdarzeń (mnożenie prawdopodobieństw).</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">6</span> Płeć i cechy sprzężone z chromosomem X {#plec} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>W typowym szkolnym modelu kobieta ma <strong>XX</strong>, mężczyzna <strong>XY</strong>. Komórka jajowa zawsze wnosi X; plemnik wnosi X albo Y — to od rodzaju plemnika zależy układ XX czy XY u zygoty. Sam rozwój płci jest bardziej złożony (udział genów i hormonów), a u niektórych osób występują inne układy chromosomów płci — model XX/XY jest szkolnym uproszczeniem i nie opisuje wszystkich wariantów.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Kto</th><th>Skąd X</th><th>Skąd Y</th></tr></thead>
+<tbody>
+<tr><td>syn (XY)</td><td><strong>tylko od matki</strong></td><td>od ojca</td></tr>
+<tr><td>córka (XX)</td><td>od matki i od ojca</td><td>—</td></tr>
+</tbody></table></div>
+<p><strong>Cecha sprzężona z X</strong> to cecha, której gen leży na chromosomie X (przykłady szkolne: daltonizm, hemofilia). Zapis: Xᴬ (zdrowy allel), Xᵃ (allel powodujący cechę), nosicielka to XᴬXᵃ.</p>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>Kobieta (XX)</th><th>Mężczyzna (XY)</th></tr></thead>
+<tbody>
+<tr><td>liczba chromosomów X</td><td>2</td><td><strong>1</strong> (hemizygota)</td></tr>
+<tr><td>recesywny allel Xᵃ</td><td>ujawnia się tylko przy XᵃXᵃ</td><td>ujawnia się już przy XᵃY (brak drugiego X do „maskowania”)</td></tr>
+<tr><td>skąd X</td><td>od matki <strong>i</strong> od ojca</td><td><strong>tylko od matki</strong></td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — płeć i X-linked</span>
+<p>Trzy reguły zamykają temat: (1) ojciec przekazuje synowi Y, więc <strong>nie przekazuje synowi cechy sprzężonej z X</strong>; (2) mężczyzna ma jeden X, więc recesywny allel na nim od razu widać — dlatego daltonizm i hemofilia są częstsze u mężczyzn; (3) chory ojciec (XᵃY) przekazuje Xᵃ <strong>wszystkim córkom</strong> — są co najmniej nosicielkami, a synowie (od zdrowej matki) są zdrowi.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: czytaj, o co pyta polecenie</span>
+<p>„Jakie jest prawdopodobieństwo, że <strong>syn</strong> będzie chory?” → w krzyżówce nosicielka × zdrowy: 1/2 (wśród synów). „…że <strong>dziecko</strong> będzie chorym synem?” → 1/4 (bo jeszcze 1/2 szans na urodzenie syna). Te dwa pytania różnią się jednym słowem, a wynikiem — dwukrotnie.</p>
+</div>
+<p><strong>Krzyżówka prowadzona — nosicielka XᴬXᵃ × zdrowy mężczyzna XᴬY:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>Xᴬ (ojciec)</th><th>Y (ojciec)</th></tr></thead>
+<tbody>
+<tr><td><strong>Xᴬ</strong> (matka)</td><td>XᴬXᴬ — zdrowa córka</td><td>XᴬY — zdrowy syn</td></tr>
+<tr><td><strong>Xᵃ</strong> (matka)</td><td>XᴬXᵃ — córka nosicielka</td><td>XᵃY — <strong>chory syn</strong></td></tr>
+</tbody></table></div>
+<ul>
+<li>wśród córek: 50% zdrowe homozygoty, 50% nosicielki;</li>
+<li>wśród synów: 50% zdrowi, 50% chorzy;</li>
+<li>wśród wszystkich dzieci: 1/4 chorych synów i 1/4 nosicielek — ale tylko przy założeniu, że urodzenie syna i córki jest jednakowo prawdopodobne. Pewne jest jedno: każde dziecko ma 1/2 szansy, że dostanie od matki Xᵃ; czy zachoruje, zależy od płci.</li>
+</ul>
+<p><strong>Ojciec chory XᵃY × zdrowa matka XᴬXᴬ:</strong> wszystkie córki nosicielki XᴬXᵃ; wszyscy synowie zdrowi XᴬY (dostali X od matki).</p>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (4 pkt) — Hemofilia w rodzinie</span>
+<p>Hemofilia to cecha recesywna sprzężona z chromosomem X. Kobieta nosicielka (XᴬXᵃ) i zdrowy mężczyzna (XᴬY) oczekują dziecka.
+a) Zapisz gamety obojga rodziców. (1 pkt)
+b) Jakie jest prawdopodobieństwo, że syn będzie chory? (1 pkt)
+c) Jakie jest prawdopodobieństwo, że dziecko będzie chorym synem? (1 pkt)
+d) Wyjaśnij, dlaczego w tej krzyżówce żadna córka nie będzie chora. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Matka: Xᴬ i Xᵃ; ojciec: Xᴬ i Y — kryterium: poprawne gamety obojga.
+b) (1 pkt) 50% (1/2) wśród synów — kryterium: odniesienie do synów.
+c) (1 pkt) 1/4 — kryterium: uwzględnienie szansy urodzenia syna (1/2 · 1/2).
+d) (1 pkt) Córka dostaje od zdrowego ojca Xᴬ, więc najgorszy możliwy genotyp córki to XᴬXᵃ (nosicielka) — kryterium: wskazanie zdrowego Xᴬ od ojca.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">7</span> Grupy krwi ABO: trzy allele i kodominacja {#abo} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Układ ABO to najpopularniejszy w zadaniach przykład <strong>alleli wielokrotnych</strong>: na jednym locus istnieją trzy allele — <strong>Iᴬ, Iᴮ i i</strong>. Allele Iᴬ i Iᴮ są <strong>kodominujące</strong> względem siebie (w heterozygocie IᴬIᴮ widać oba — grupa AB), a allel i jest recesywny wobec obu.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Fenotyp (grupa)</th><th>Możliwe genotypy</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>IᴬIᴬ lub Iᴬi</td></tr>
+<tr><td>B</td><td>IᴮIᴮ lub Iᴮi</td></tr>
+<tr><td>AB</td><td>tylko IᴬIᴮ</td></tr>
+<tr><td>0</td><td>tylko ii</td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — ABO</span>
+<p>Trzy allele, jedno miejsce w DNA. AB to wizytówka kodominacji: oba allele są aktywne. Grupa 0 to ii — „czysta” homozygota recesywna, ale <strong>pełnoprawny genotyp</strong>, nie „brak genów”. Zadania z ABO rozwiązuj tak samo jak zwykłe krzyżówki: genotypy → gamety → szachownica → fenotypy, tylko pamiętaj, że grupa A i B mają po dwa możliwe genotypy.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „A albo B” tylko wtedy, gdy wynika z genotypów</span>
+<p>Odpowiedź „dziecko może mieć grupę A albo B” jest poprawna wyłącznie wtedy, gdy wynika z <strong>podanych genotypów</strong> rodziców (np. ii × IᴬIᴮ). Sam fenotyp rodzica nie zawsze wystarcza: matka z grupą A może być IᴬIᴬ albo Iᴬi — i to zmienia listę możliwych dzieci. Dlatego w zadaniach ABO najpierw zapisz wszystkie możliwe genotypy, a dopiero potem gamety.</p>
+</div>
+<nie-myl>
+<summary>ABO — dwie pary</summary>
+<ul>
+<li>grupa 0 ≠ „brak genów” — to genotyp ii, z aktywnym allelem i; test rozstrzygający: „czy w szachownicy gra gametą?” — tak, gametą i.</li>
+<li>grupa AB ≠ grupa A — kodominacja (oba allele widać) vs allel recesywny i schowany; test: „czy w fenotypie widać oba allele?”.</li>
+</ul>
+</nie-myl>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (4 pkt) — Matka 0, ojciec AB</span>
+<p>Matka ma grupę krwi 0, ojciec — grupę AB.
+a) Zapisz genotypy obojga rodziców. (1 pkt)
+b) Zapisz gamety obojga rodziców. (1 pkt)
+c) Jakie grupy krwi mogą mieć dzieci tej pary? Uzasadnij. (1 pkt)
+d) Wyjaśnij, dlaczego dziecko z grupą AB jest tu niemożliwe. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Matka ii, ojciec IᴬIᴮ — kryterium: oba genotypy.
+b) (1 pkt) Matka: tylko i; ojciec: Iᴬ i Iᴮ — kryterium: poprawne gamety obojga.
+c) (1 pkt) Grupa A (Iᴬi) albo B (Iᴮi) — kryterium: poprawne połączenia gamet.
+d) (1 pkt) Dziecko AB potrzebuje Iᴬ od jednego rodzica i Iᴮ od drugiego; matka ii nie może dać ani Iᴬ, ani Iᴮ — kryterium: argument z gamet.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">8</span> Mutacje: od cichej zmiany do nowotworu {#mutacje} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p><strong>Mutacja</strong> to trwała zmiana w materiale genetycznym. <strong>Mutagen</strong> to czynnik zwiększający częstość mutacji (np. promieniowanie UV, promieniowanie X, chemikalia, niektóre wirusy) — mutagen to przyczyna, mutacja to skutek.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj mutacji</th><th>Co zmienia</th><th>Przykłady skutków</th></tr></thead>
+<tbody>
+<tr><td>punktowa</td><td>jedną zasadę</td><td>cicha, zmiana sensu, nonsensowna, utrata kodonu START</td></tr>
+<tr><td>chromosomowa</td><td>fragmenty chromosomu</td><td>delecja, duplikacja, inwersja, translokacja</td></tr>
+<tr><td>genomowa</td><td>liczbę chromosomów</td><td>aneuploidia (np. trisomia 21), poliploidia</td></tr>
+</tbody></table></div>
+<p><strong>Skutki mutacji punktowej</strong> (w kodzie: kodon → aminokwas):</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Skutek</th><th>Co się dzieje</th></tr></thead>
+<tbody>
+<tr><td>cicha</td><td>zmieniony kodon koduje ten sam aminokwas — białko bez zmian</td></tr>
+<tr><td>zmiana sensu</td><td>kodon wskazuje inny aminokwas — białko zmienione</td></tr>
+<tr><td>nonsensowna</td><td>powstaje kodon STOP — białko skrócone</td></tr>
+<tr><td>utrata kodonu START</td><td>białko w ogóle nie powstaje prawidłowo</td></tr>
+</tbody></table></div>
+<p><strong>Dwie drogi mutacji:</strong> mutacje somatyczne (w komórkach ciała) dotyczą tylko tej komórki i jej potomków w ciele — zwykle <strong>nie są dziedziczone</strong>; mutacje w komórkach linii płciowej mogą przejść na potomstwo.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — trzy pojęcia, których nie wolno łączyć</span>
+<p><strong>Mutacja</strong> to zmiana w DNA. <strong>Choroba genetyczna</strong> to fenotypowy skutek mutacji, która wystarczy (w danym modelu) do choroby. <strong>Nowotwór</strong> to choroba wymagająca <strong>nagromadzenia</strong> zmian w genach kontrolujących cykl komórkowy — jakby w komórce puściły hamulce i wciśnięto gaz. Kolejność myślenia w zadaniach: mutacja (może być neutralna) → ewentualny wpływ na fenotyp → dopiero przy kontroli cyklu i nagromadzeniu zmian mówimy o nowotworze.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „UV uszkadza DNA” nie znaczy „UV zawsze wywołuje mutację lub nowotwór”</span>
+<p>Poprawne myślenie: UV zwiększa częstość uszkodzeń DNA, czyli <strong>zwiększa ryzyko</strong> mutacji. Ostateczny skutek zależy od skuteczności naprawy DNA, tego, gdzie uderzy zmiana, i od tego, czy dojdzie do dalszych zmian w kontroli cyklu. Dlatego w kluczach pisz o ryzyku, nie o gwarancji.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (4 pkt) — Mutacja pod lupą</span>
+<p>a) Podaj dwa przykłady mutagenów. (1 pkt)
+b) Wyjaśnij, dlaczego mutacja punktowa może nie zmienić białka. (1 pkt)
+c) Wyjaśnij, dlaczego mutacja w komórce skóry zwykle nie jest przekazywana dzieciom. (1 pkt)
+d) Co łączy mutacje z nowotworem? (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Dowolne dwa: promieniowanie UV, promieniowanie X, chemikalia, wirusy — kryterium: dwa poprawne czynniki.
+b) (1 pkt) Kod genetyczny jest zdegenerowany — zmieniony kodon może kodować ten sam aminokwas (mutacja cicha) — kryterium: wskazanie degeneracji kodu.
+c) (1 pkt) Mutacje somatyczne dotyczą tylko komórek ciała; na dzieci przechodzą zmiany w komórkach linii płciowej — kryterium: rozróżnienie somatyczne/płciowe.
+d) (1 pkt) Nowotwór powstaje po nagromadzeniu mutacji w genach kontrolujących cykl komórkowy — kryterium: słowo „nagromadzenie”.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">9</span> Algorytm zadań mieszanych {#algorytm} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>W powtórce i na egzaminie najwięcej punktów tracisz nie na wiedzy, lecz na chaosie. Ten rozdział daje ci procedury.</p>
+<div class="card card-core">
+<span class="card-label">Algorytm — pięć kroków w każdym zadaniu mieszanym</span>
+<ol>
+<li><strong>Ustal, co liczysz:</strong> chromosomy, chromatydy/cząsteczki DNA czy zestawy chromosomów.</li>
+<li><strong>Ustal etap:</strong> przed replikacją, po replikacji, po mejozie I czy po mejozie II.</li>
+<li><strong>W dziedziczeniu zapisz założenia:</strong> genotypy, dominację, typ dziedziczenia i gamety.</li>
+<li><strong>Oddziel prawdopodobieństwo od wyniku:</strong> 25% nie oznacza gwarancji jednego potomka z czterech.</li>
+<li><strong>W mutacjach rozdziel przyczynę i skutek:</strong> mutacja może być neutralna, szkodliwa lub w określonych warunkach korzystna; nie jest równoznaczna z chorobą.</li>
+</ol>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — najpierw rozpoznaj typ zadania</span>
+<p>Zanim zaczniesz liczyć, nazwij sobie, o co pyta zadanie — to wybiera narzędzie:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Jeżeli zadanie pyta o…</th><th>Najpierw uruchom</th></tr></thead>
+<tbody>
+<tr><td>liczbę chromosomów</td><td>regułę centromerów</td></tr>
+<tr><td>stosunek potomstwa</td><td>Punnetta / prawdopodobieństwo</td></tr>
+<tr><td>cechy X-linked</td><td>chromosomy płci + pochodzenie X/Y</td></tr>
+<tr><td>ABO</td><td>allele Iᴬ, Iᴮ, i</td></tr>
+<tr><td>aneuploidię</td><td>nondysjunkcję</td></tr>
+<tr><td>dobór naturalny</td><td>zmienność → dziedziczenie → różny sukces</td></tr>
+<tr><td>ekosystem</td><td>biocenoza + biotop</td></tr>
+<tr><td>łańcuch pokarmowy</td><td>przepływ energii i kierunek zależności pokarmowej</td></tr>
+</tbody></table></div>
+</div>
+<p><strong>Algorytm do krzyżówek genetycznych (pełny, siedem kroków):</strong>
+1. Zapisz, co oznaczają symbole alleli; nie zakładaj automatycznie, że duża litera zawsze oznacza allel „lepszy”.
+2. Ustal genotypy rodziców na podstawie danych. Jeśli dane nie wystarczają, wypisz możliwe genotypy zamiast zgadywać.
+3. Wypisz gamety: każda gameta otrzymuje po jednym allelu z każdej pary homologicznej.
+4. Połącz gamety w tabeli i policz wszystkie możliwe kombinacje.
+5. Podaj oddzielnie prawdopodobieństwo genotypu i fenotypu, jeśli nie są tym samym.
+6. Napisz, że prawdopodobieństwo dotyczy każdej ciąży/zdarzenia w modelu i nie gwarantuje konkretnej kolejności wyników.
+7. Sprawdź na końcu, czy zadanie dotyczy dominacji zupełnej, kodominacji, alleli wielokrotnych, cechy sprzężonej z płcią czy cechy wieloczynnikowej.</p>
+<div class="card card-core">
+<span class="card-label">Kontrola jakości odpowiedzi — 6 pytań przed oddaniem pracy</span>
+<ul>
+<li>Czy podałem liczbę?</li>
+<li>Czy podałem jednostkę / etap / zakres pytania (chromosomy, chromatidy, synowie, wszystkie dzieci)?</li>
+<li>Czy uzasadniłem wynik?</li>
+<li>Czy nie pomyliłem chromosomu z chromatydą?</li>
+<li>Czy nie zamieniłem prawdopodobieństwa w gwarancję?</li>
+<li>Czy nie użyłem pojęcia „dobór naturalny” bez wskazania różnic w przeżyciu lub rozrodzie?</li>
+</ul>
+</div>
+<p><strong>Zadania „z brakującą informacją” — poziom mistrzowski.</strong> Niektóre zadania celowo nie mają jednej odpowiedzi bez dodatkowego warunku. Ucz się <strong>rozpoznawać, kiedy danych jest za mało</strong>:</p>
+<ol>
+<li>„Komórka ma 92 cząsteczki DNA. Ile ma chromosomów?” → trzeba znać etap cyklu (po replikacji: 46; w mejozie I: 23 dwuchromatydowe).</li>
+<li>„Fenotyp jest dominujący. Jaki jest genotyp?” → może być AA albo Aa, jeśli nie ma dodatkowych danych.</li>
+<li>„Rodzice mają zdrowe dziecko. Jaki jest model dziedziczenia?” → samo to zdanie zwykle nie wystarcza.</li>
+<li>„Gatunek ma więcej chromosomów niż człowiek. Czy jest bardziej złożony?” → nie można tak wnioskować.</li>
+</ol>
+<div class="card card-exam">
+<span class="card-label">Zadanie 7 (5 pkt) — Przebieg pełny: od komórki do dzieci</span>
+<p>a) Komórka macierzysta człowieka (2n = 46) przeszła replikację. Ile ma teraz chromatyd? (1 pkt)
+b) Po mejozie powstały z niej gamety. Ile chromosomów ma gameta? (1 pkt)
+c) Gameta spotkała gametę o zestawie n. Ile chromosomów ma zygota? (1 pkt)
+d) Zygota rozwinęła się w osobnika heterozygotycznego (Aa). Zapisz gamety, jakie ten osobnik wytwarza. (1 pkt)
+e) Ten osobnik i osobnik aa mogą mieć potomstwo o dominującym fenotypie. Jakie jest prawdopodobieństwo dla jednego dziecka? Uzasadnij. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) 92 chromatidy — kryterium: 46 chromosomów z podwojonym DNA.
+b) (1 pkt) 23 (n) — kryterium: redukcja o połowę w mejozie.
+c) (1 pkt) 46 (2n) — kryterium: zapłodnienie przywraca diploidalność.
+d) (1 pkt) Gamety A i a — kryterium: połowa gamet z każdym allelem.
+e) (1 pkt) 1/2 — kryterium: krzyżówka Aa × aa daje 1/2 Aa (fenotyp dominujący) i 1/2 aa; uzasadnienie z gamet (A lub a spotyka tylko a).</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">10</span> Zestawy mieszane — interleaving A–D {#zestawy} <span class="level-badge level-basic">E8</span></div>
+<p>Te 22 pytania celowo przeskakują między tematami — przeplatanie (interleaving) utrwala lepiej niż powtarzanie jednego tematu naraz. Odpowiadaj na głos lub na kartce, dopiero potem odsłoń klucz.</p>
+<p><strong>Zestaw A — Podstawa (przekrój)</strong></p>
 <ol>
 <li>Pary zasad w DNA?</li>
 <li>Ile chromosomów ma komórka ciała człowieka?</li>
@@ -847,7 +1267,7 @@ animation:bio-drift 60s linear infinite}
 <li>4 grupy krwi ABO?</li>
 <li>Co to mutacja?</li>
 </ol>
-<h3>Zestaw B — Trening (łączenie)</h3>
+<p><strong>Zestaw B — Trening (łączenie)</strong></p>
 <ol start="9">
 <li>Aa × Aa — stosunek genotypów i fenotypów?</li>
 <li>Dlaczego po replikacji liczba chromosomów się nie zmienia?</li>
@@ -856,25 +1276,50 @@ animation:bio-drift 60s linear infinite}
 <li>Jak mutacja wpływa na nowotwór?</li>
 <li>Dlaczego rodzeństwo (poza bliźniakami) nie jest identyczne?</li>
 </ol>
-<h3>Zestaw C — Ambitne (synteza)</h3>
+<p><strong>Zestaw C — Ambitne (synteza)</strong></p>
 <ol start="15">
 <li>Nondysjunkcja → jaka zygota? Podaj przykład.</li>
 <li>Dlaczego hemofilia częściej dotyczy mężczyzn?</li>
 <li>Dlaczego mutacja nie zawsze zmienia fenotyp?</li>
 <li>Anemia sierpowata — dlaczego allel utrzymuje się?</li>
 </ol>
-<h3>Zestaw D — Zaawansowane (problem otwarty)</h3>
+<p><strong>Zestaw D — Zaawansowane (problem otwarty)</strong></p>
 <ol start="19">
 <li>Czy z danych można jednoznacznie wywnioskować model dziedziczenia? Kiedy nie?</li>
 <li>Jak zmienność genetyczna wpływa na ewolucję populacji?</li>
 <li>Czy mutacja zawsze prowadzi do zmiany fenotypu?</li>
 <li>Dlaczego kod genetyczny jest zdegenerowany?</li>
 </ol>
-<hr class="lk-hr"/>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>A–T i C–G.</li>
+<li>46 (23 pary).</li>
+<li>Kopiowanie DNA przed podziałem.</li>
+<li>Mitoza 2n → 2n; mejoza 2n → n (jakakolwiek jedna różnica).</li>
+<li>Wersja genu.</li>
+<li>XX — kobieta; XY — mężczyzna.</li>
+<li>A, B, AB, 0.</li>
+<li>Trwała zmiana w DNA.</li>
+<li>Genotypy 1:2:1, fenotypy 3:1 (przy dominacji zupełnej).</li>
+<li>Liczba chromosomów = liczba centromerów; replikacja tworzy chromatydy, nie nowe centromery.</li>
+<li>Syn dostaje od ojca Y, nie X.</li>
+<li>A albo B (ii × IᴬIᴮ → Iᴬi i Iᴮi).</li>
+<li>Mutacje w genach kontrolujących podziały — po ich nagromadzeniu — mogą prowadzić do nowotworu; sama mutacja do niego nie wystarcza.</li>
+<li>Mejoza: crossing-over, losowy rozdział homologów, a potem losowe zapłodnienie — każde dziecko dostaje inną kombinację alleli.</li>
+<li>Zygota aneuploidalna (nadmiar lub brak chromosomu), np. trisomia 21 (zespół Downa).</li>
+<li>Mężczyzna ma jeden X (hemizygota) — recesywny allel nie ma pary, która mogłaby go zdominować.</li>
+<li>Kod genetyczny jest zdegenerowany; mutacja może też trafić w odcinek niekodujący, dotyczyć komórki somatycznej albo zostać naprawiona.</li>
+<li>Heterozygoty mają przewagę — ochronę przed malarią — więc w rejonach malarii allel jest preferowany przez dobór.</li>
+<li>Nie — przy małej próbie, niepełnej penetracji, cechach wieloczynnikowych.</li>
+<li>Zmienność dostarcza materiału dla doboru naturalnego → zmiany częstości alleli → ewolucja.</li>
+<li>Nie — patrz odpowiedź 17.</li>
+<li>Kilka kodonów koduje ten sam aminokwas — zmiana jednej zasady często nie zmienia białka.</li>
+</ol>
+</details>
 </section>
-<section id="s8">
-<div class="part-heading"><span class="part-num">6</span> Test przekrojowy</div>
-<h3>A. Podstawa</h3>
+<section>
+<div class="part-heading"><span class="part-num">11</span> Test przekrojowy z kluczem {#test-przekrojowy} [[basic:E8]</div>
+<p><strong>A. Podstawa</strong></p>
 <ol>
 <li>Pary zasad w DNA?</li>
 <li>2n u człowieka?</li>
@@ -887,34 +1332,30 @@ animation:bio-drift 60s linear infinite}
 <li>Mutacja — definicja?</li>
 <li>Mutagen — przykłady?</li>
 </ol>
-<h3>B. Trening</h3>
+<p><strong>B. Trening</strong></p>
 <ol start="11">
-<li>Uzupełnij nić: A–G–T–C → ?</li>
-<li>Ile chromatyd po replikacji?</li>
-<li>P(aa) w Aa × Aa?</li>
-<li>Nosicielka × zdrowy — % chorych synów?</li>
-<li>Iᴬi × Iᴮi — grupy dzieci?</li>
+<li>Uzupełnij nić komplementarną: A–G–T–C → ?</li>
+<li>Ile chromatyd po replikacji (2n = 46)?</li>
+<li>P(aa) w krzyżówce Aa × Aa?</li>
+<li>Nosicielka × zdrowy mężczyzna — % chorych synów?</li>
+<li>Iᴬi × Iᴮi — grupy krwi dzieci?</li>
 <li>Mutacja → nowotwór?</li>
 </ol>
-<h3>C. Ambitne</h3>
+<p><strong>C. Ambitne</strong></p>
 <ol start="17">
-<li>Nondysjunkcja → aneuploidia (przykład).</li>
-<li>Rodowód: zdrowi rodzice, chore dziecko — modele?</li>
+<li>Nondysjunkcja → aneuploidia (podaj przykład).</li>
+<li>Rodowód: zdrowi rodzice, chore dziecko — jakie modele dziedziczenia rozważasz?</li>
 <li>Dlaczego mutacja może być cicha?</li>
-<li>Anemia sierpowata — dlaczego allel utrzymuje się?</li>
+<li>Anemia sierpowata — dlaczego allel utrzymuje się w populacji?</li>
 </ol>
-<h3>D. Zaawansowane</h3>
+<p><strong>D. Zaawansowane</strong></p>
 <ol start="21">
 <li>AaBb × AaBb — ile genotypów?</li>
-<li>P(dwoje kolejnych dzieci aa) w Aa × Aa?</li>
+<li>P(dwoje kolejnych dzieci aa) w krzyżówce Aa × Aa?</li>
 <li>Czy z danych można jednoznacznie wywnioskować model? Kiedy nie?</li>
 <li>Jak zmienność wpływa na ewolucję?</li>
 </ol>
-<hr class="lk-hr"/>
-</section>
-<section id="s9">
-<div class="part-heading"><span class="part-num">7</span> Odpowiedzi</div>
-<h3>A</h3>
+<details class="answer"><summary>Pokaż klucz</summary>
 <ol>
 <li>A–T, C–G.</li>
 <li>46 (23 pary).</li>
@@ -926,113 +1367,162 @@ animation:bio-drift 60s linear infinite}
 <li>IᴬIᴮ.</li>
 <li>Trwała zmiana w DNA.</li>
 <li>UV, promieniowanie X, chemikalia, wirusy.</li>
-</ol>
-<h3>B</h3>
-<ol start="11">
 <li>T–C–A–G.</li>
 <li>92 (po fazie S).</li>
 <li>1/4.</li>
-<li>50%.</li>
+<li>50% (wśród synów).</li>
 <li>AB, A, B, 0 (wszystkie 4).</li>
 <li>Mutacja ≠ nowotwór; nowotwór = nagromadzenie zmian w kontroli cyklu.</li>
-</ol>
-<h3>C</h3>
-<ol start="17">
 <li>Trisomia 21 (zespół Downa).</li>
 <li>Autosomalna recesywna lub X-linked recesywna.</li>
-<li>Kod zdegenerowany — wiele kodonów → ten sam aminokwas.</li>
+<li>Kod jest zdegenerowany — wiele kodonów wskazuje ten sam aminokwas.</li>
 <li>Heterozygoty mają przewagę (ochrona przed malarią).</li>
-</ol>
-<h3>D</h3>
-<ol start="21">
 <li>9.</li>
 <li>1/16.</li>
 <li>Nie — przy małej próbie, niepełnej penetracji, cechach wieloczynnikowych.</li>
 <li>Zmienność → materiał dla doboru → ewolucja.</li>
 </ol>
-<hr class="lk-hr"/>
+</details>
 </section>
-<section id="s10">
-<div class="part-heading"><span class="part-num">8</span> Klinika 2.0 — przekrojowa</div>
-<p><strong>Błąd 1:</strong> „Mejoza i mitoza to samo."</p>
-<ul>
-<li><strong>Znajdź:</strong> Brak rozróżnienia.</li>
-<li><strong>Popraw:</strong> Mitoza zachowuje (2n → 2n); mejoza redukuje (2n → n).</li>
-<li><strong>Reguła:</strong> Liczba zestawów po podziale = cel procesu.</li>
-<li><strong>Dlaczego:</strong> Różne funkcje (ciało vs gamety).</li>
-<li><strong>Podobne:</strong> Komórka ciała vs gameta.</li>
-<li><strong>Pułapka:</strong> Mejoza ma 2 podziały, mitoza 1.</li>
-</ul>
-<p><strong>Błąd 2:</strong> „92 chromosomy w metafazie."</p>
-<ul>
-<li><strong>Znajdź:</strong> Mylenie chromatyd z chromosomami.</li>
-<li><strong>Popraw:</strong> 46 chromosomów, 92 chromatydy.</li>
-<li><strong>Reguła:</strong> Liczymy centromery.</li>
-<li><strong>Dlaczego:</strong> Replikacja tworzy kopie, ale nie rozdziela centromerów.</li>
-<li><strong>Podobne:</strong> Analogia zszytej książki.</li>
-<li><strong>Pułapka:</strong> Liczba chromosomów ≠ liczba chromatyd.</li>
-</ul>
-<p><strong>Błąd 3:</strong> „25% = co czwarte dziecko."</p>
-<ul>
-<li><strong>Znajdź:</strong> Gwarancja kolejności.</li>
-<li><strong>Popraw:</strong> Każde dziecko osobno 25%.</li>
-<li><strong>Reguła:</strong> Niezależność zdarzeń.</li>
-<li><strong>Dlaczego:</strong> Zapłodnienie to osobne zdarzenie.</li>
-<li><strong>Podobne:</strong> P(dwoje kolejnych aa) = 1/16.</li>
-<li><strong>Pułapka:</strong> Rodzina ma już troje dominujących. Czy czwarte „musi" być recesywne? Nie.</li>
-</ul>
-<p><strong>Błąd 4:</strong> „Mutacja = nowotwór."</p>
-<ul>
-<li><strong>Znajdź:</strong> Pomylenie zdarzenia molekularnego z chorobą.</li>
-<li><strong>Popraw:</strong> Mutacja ≠ nowotwór; nowotwór = nagromadzenie zmian w kontroli cyklu.</li>
-<li><strong>Reguła:</strong> Trzy pojęcia: mutacja, choroba genetyczna, nowotwór.</li>
-<li><strong>Dlaczego:</strong> Potrzeba wielu mutacji.</li>
-<li><strong>Podobne:</strong> dym → mutacje → (nagromadzenie) → nowotwór.</li>
-<li><strong>Pułapka:</strong> „Palił i miał raka, więc dym = rak" — nie.</li>
-</ul>
-<p><strong>Błąd 5:</strong> „Matka 0 może mieć dziecko AB."</p>
-<ul>
-<li><strong>Znajdź:</strong> Brak analizy genotypu.</li>
-<li><strong>Popraw:</strong> Matka 0 = ii; nie może dać Iᴬ ani Iᴮ.</li>
-<li><strong>Reguła:</strong> Genotyp 0 = ii.</li>
-<li><strong>Dlaczego:</strong> Dziecko AB wymaga Iᴬ od jednego i Iᴮ od drugiego rodzica.</li>
-<li><strong>Podobne:</strong> Matka AB + ojciec 0 → dziecko A lub B.</li>
-<li><strong>Pułapka:</strong> „Grupa 0 to brak genów" — fałsz.</li>
-</ul>
-<hr class="lk-hr"/>
+<section>
+<div class="part-heading"><span class="part-num">12</span> Doświadczenia {#doswiadczenia} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<div class="exp-card"><h5>Doświadczenie 1 — Model replikacji z kartoników</h5><div class="exp-grid"><b>Problem</b><span>Jak jedna cząsteczka DNA daje dwie identyczne kopie?</span><b>Hipoteza</b><span>Każda nić starego DNA wyznacza nową nić według komplementarności (półzachowawczo).</span><b>Sprzęt</b><span>kartoniki w czterech kolorach (A, T, C, G), spinacze, kartka do zapisu.</span><b>Przebieg</b><span>1) Złóż „nić” z 12 kartoników w dowolnej kolejności. 2) Ułóż drugą nić komplementarną (A–T, C–G) — to oryginał. 3) Rozdziel obie nici — symulacja rozplątania. 4) Do każdej dołóż nowe kartoniki zgodnie z regułą par. 5) Porównaj oba produkty z oryginałem.</span><b>Próba kontrolna</b><span>skopiuj nić losowo, bez reguły komplementarności — produkt nie będzie zgodny z matrycą.</span><b>Obserwacja</b><span>po obu nićach matrycowych powstały kopie identyczne z oryginałem; każda nowa cząsteczka ma jedną nić starą i jedną nową.</span><b>Wniosek</b><span>Replikacja jest semikonserwatywna, a komplementarność par A–T i C–G wystarcza do wiernego kopiowania informacji.</span><b>BHP</b><span>brak szczególnych zagrożeń; nie wkładaj drobnych elementów do ust.</span></div></div>
+<div class="exp-card"><h5>Doświadczenie 2 — Monety zamiast gamet: 25% na własne oczy</h5><div class="exp-grid"><b>Problem</b><span>Czy przy krzyżówce Aa × Aa w małej „rodzinie” stosunek 3:1 wychodzi dokładnie?</span><b>Hipoteza</b><span>Przy małej liczbie „dzieci” odchylenia są częste; przy wielu rzutach stosunek zbliża się do 3:1.</span><b>Sprzęt</b><span>dwie monety (orzeł = A, reszka = a), kartka, tabela wyników.</span><b>Przebieg</b><span>1) Rzuć dwiema monetami jednocześnie — to zapłodnienie: po jednej gamecie od każdego rodzica. 2) Zapisz „genotyp” (OO → AA, OR → Aa, RR → aa). 3) Powtórz 20 razy i policz częstości. 4) Zsumuj wyniki z 100 rzutów (solo lub wspólnie z innymi).</span><b>Próba kontrolna</b><span>przyłóż jedną monetę „orłem” do góry (symulacja rodzica AA w krzyżówce AA × Aa) — wtedy potomstwo aa nie może się zdarzyć, wynik zawsze dominujący.</span><b>Obserwacja</b><span>przy 20 rzutach stosunki mocno odchylają się od 3:1; przy 100 rzutach zbliżają się do 3:1.</span><b>Wniosek</b><span>Proporcje w szachownicy Punnetta to prawdopodobieństwa — w małych rodzinach mogą wyglądać inaczej; 25% nie oznacza „co czwarte dziecko”.</span><b>BHP</b><span>brak.</span></div></div>
+<div class="exp-card"><h5>Doświadczenie 3 — DNA z truskawki</h5><div class="exp-grid"><b>Problem</b><span>Czy DNA jest realną substancją, którą można wyizolować z komórek?</span><b>Hipoteza</b><span>Po rozbiciu komórek i rozpuszczeniu błon DNA wytrąci się w alkoholu jako lepkie włókna.</span><b>Sprzęt</b><span>3 truskawki, płyn do mycia naczyń, sól, woda, torebka foliowa, sitko, szklanka, alkohol etylowy mocno schłodzony (stężenie wysokie, orientacyjnie co najmniej 60–70%), patyczek.</span><b>Przebieg</b><span>1) Rozgnieć truskawki w torebce. 2) Dodaj roztwór wody z płynem do mycia naczyń i szczyptą soli; rozgnieć przez 2 minuty. 3) Przecedź masę do szklanki. 4) Delikatnie, po ściance, wlej schłodzony alkohol, żeby powstała osobna warstwa. 5) Przy granicy warstw wyciągaj patyczkiem białe włókna.</span><b>Próba kontrolna</b><span>ta sama procedura bez detergentu — błony komórkowe i jądrowe się nie rozpuszczą, DNA prawie nie wytrąci.</span><b>Obserwacja</b><span>na granicy wody i alkoholu pojawiają się białe, lepkie nitki (mieszanka DNA, RNA i białek).</span><b>Wniosek</b><span>DNA to realna substancja chemiczna obecna w każdej komórce — nośnik informacji genetycznej.</span><b>BHP</b><span>alkohol jest łatwopalny — żadnego otwartego ognia; pracuj pod opieką dorosłego.</span></div></div>
 </section>
-<section id="s11">
-<div class="part-heading"><span class="part-num">9</span> Drabinka trudności</div>
+<section>
+<div class="part-heading"><span class="part-num">13</span> Dla olimpijczyka: rodowody, modele i pułapki {#olimpijczyk} <span class="level-badge level-exam">KONKURS</span></div>
+<div class="card card-understand">
+<span class="card-label">Dla olimpijczyka — jak rozpoznać model dziedziczenia (mini-wykład pogłębiony)</span>
+<p>Krok 1: Czy cecha występuje w każdym pokoleniu (wskazówka: dominująca) czy „przeskakuje” — zdrowi rodzice mają chore dziecko (wskazówka: recesywna)? Krok 2: Czy chorują oboje rodzice podobnie i w podobnej proporcji → podejrzenie autosomalnej; czy chorują głównie mężczyźni, a zdrowi rodzice mają chorych synów → podejrzenie X-linked recesywnej. Krok 3: Test „ojciec chory → syn chory”: jeśli tak, klasyczna X-linked recesywna odpada, bo ojciec daje synowi Y. Krok 4: Chora matka XᵃXᵃ przekazuje cechę wszystkim synom. Krok 5: Pułapki, o które opierają się klucze konkursowe: mała próba (rodzina to nie statystyka), niepełna penetracja (genotyp jest, cechy brak — termin wykracza poza podstawę, do weryfikacji w regulaminie konkretnego konkursu), nowa mutacja de novo, spokrewnienie rodziców (zwiększa szansę spotkania rzadkich alleli recesywnych), cechy wieloczynnikowe (genotyp + środowisko). Zdanie, które zawsze warto napisać: „Przy tak małej liczbie osób w rodowodzie nie da się wykluczyć modelu alternatywnego.”</p>
+</div>
+<details class="adv"><summary>Zadanie 8 (4 pkt) — Ustal model <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>W rodzinie zdrowi rodzice mają chorego syna i zdrową córkę. W innej, niespokrewnionej rodzinie zdrowi rodzice też mają chorego syna. Analizujesz cechę jako warunek pojedynczego genu.
+a) Dlaczego dominacja (autosomalna) nie pasuje do tego opisu? (1 pkt)
+b) Zapisz możliwe genotypy rodziców dla modelu autosomalnego recesywnego. (1 pkt)
+c) Zapisz możliwe genotypy rodziców dla modelu X-linked recesywnego. (1 pkt)
+d) Jakie dodatkowe dane rozstrzygnęłyby między tymi modelami? (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Przy dominacji chorym musi być co najmniej jeden rodzic (cel nie przechodzi „przez zdrowych”) — kryterium: odwołanie do braku cechy u rodziców.
+b) (1 pkt) Oboje rodzice Aa (heterozygoty) — kryterium: zapis Aa × Aa.
+c) (1 pkt) Matka nosicielka XᴬXᵃ, ojciec zdrowy XᴬY — kryterium: poprawny zapis X-linked.
+d) (1 pkt) Np. informacja o płci i cechach dzieci w dalszych pokoleniach (chorują głównie synowie → raczej X-linked; chorują oboje → autosomalna) — kryterium: podanie konkretnego kryterium rozstrzygającego.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 9 (4 pkt) — Znajdź błąd w rozumowaniu <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń napisał: „U mamy i taty jest grupa A, więc dziecko nie może mieć grupy 0. A skoro w krzyżówce Aa × Aa szansa na aa wynosi 25%, to jeśli pierwsze troje dzieci ma cechę dominującą, czwarte musi mieć aa.”
+a) Wskaż i popraw pierwszy błąd. (2 pkt)
+b) Wskaż i popraw drugi błąd. (2 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (2 pkt) Grupa A to fenotyp — genotyp może być IᴬIᴬ albo Iᴬi; jeśli oboje rodzice są Iᴬi, dziecko z grupą 0 (ii) jest możliwe — kryteria: (1 pkt) fenotyp ≠ genotyp, (1 pkt) kontrprzykład Iᴬi × Iᴬi.
+b) (2 pkt) Prawdopodobieństwo nie „musi się wyrównać”: każde dziecko osobno ma 25%, zdarzenia są niezależne — kryteria: (1 pkt) niezależność zdarzeń, (1 pkt) poprawny wniosek „czwarte dziecko może być dowolne”.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 10 (5 pkt) — ABO z pułapką <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Matka ma grupę krwi A, ojciec — grupę B. Ich dziecko ma grupę 0.
+a) Czy to możliwe? Zapisz genotypy rodziców, które to tłumaczą. (2 pkt)
+b) Jakie grupy krwi są możliwe u dzieci tej pary? Uzasadnij szachownicą. (2 pkt)
+c) Dlaczego sam fenotyp rodzica nie wystarczył do jednoznacznej odpowiedzi? (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (2 pkt) Tak; oboje muszą być heterozygotami: matka Iᴬi, ojciec Iᴮi — kryteria: (1 pkt) „tak”, (1 pkt) poprawne genotypy.
+b) (2 pkt) Wszystkie cztery grupy: AB (IᴬIᴮ), A (Iᴬi), B (Iᴮi), 0 (ii) — kryteria: (1 pkt) pełna lista, (1 pkt) poprawna szachownica/gamety.
+c) (1 pkt) Grupa A kryje dwa genotypy (IᴬIᴬ lub Iᴬi) i grupa B też (IᴮIᴮ lub Iᴮi) — kryterium: wskazanie wieloznaczności fenotypu.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 11 (5 pkt) — Analiza tekstu: sierp i malaria <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń napisał: „Allel anemii sierpowatej jest szkodliwy, więc dobór naturalny musi go usunąć z populacji.”
+a) Wyjaśnij, dlaczego to zdanie jest nieprecyzyjne. (2 pkt)
+b) Skorzystaj z modelu, w którym heterozygota ma przewagę: wyjaśnij, co dzieje się z częstością allelu w rejonach malarii. (2 pkt)
+c) Co przewidujesz dla częstości tego allelu w rejonach bez malarii? (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (2 pkt) Skutek allelu zależy od genotypu: homozygota choruje, heterozygota może być zdrowa — kryteria: (1 pkt) różnica homozygota/heterozygota, (1 pkt) wskazanie warunków środowiska.
+b) (2 pkt) Heterozygoty są chronione przed malarią i mają większy sukces rozrodczy, więc dobór utrzymuje allel w populacji — kryteria: (1 pkt) przewaga heterozygot, (1 pkt) wniosek o utrzymaniu allelu.
+c) (1 pkt) Bez malarii przewaga znika; częstość allelu raczej spada (homozygoty chorują) — kryterium: poprawna prognoza z uzasadnieniem.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 12 (4 pkt) — Uzasadnij: kod i mutacje <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>a) Wyjaśnij, dlaczego zamiana jednej zasady w DNA może nie zmienić białka. (1 pkt)
+b) Podaj dwie inne przyczyny, dla których mutacja może nie zmienić fenotypu. (2 pkt)
+c) Mutacja nonsensowna tworzy kodon STOP. Co się dzieje z białkiem? (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Kod genetyczny jest zdegenerowany — zmieniony kodon może kodować ten sam aminokwas (mutacja cicha) — kryterium: degeneracja kodu.
+b) (2 pkt) Np. mutacja w odcinku niekodującym/regulacyjnym; mutacja somatyczna (nie w linii płciowej); naprawa DNA; wpływ drugiego allelu — kryteria: po 1 pkt za każdą poprawną przyczynę.
+c) (1 pkt) Translacja kończy się wcześnie — białko skrócone, zwykle nieaktywne — kryterium: „skrócone białko”.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 13 (5 pkt) — Zadanie z brakującą informacją <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Zdanie z zadania: „Komórka człowieka ma 92 cząsteczki DNA.”
+a) Ile ma chromosomów? Wyjaśnij, dlaczego pytanie nie ma jednej odpowiedzi bez dodatkowego warunku. (2 pkt)
+b) Podaj dwa etapy cyklu/podziału i odpowiadające im liczby chromosomów dla tej komórki. (2 pkt)
+c) Jakie warunki zawsze musisz sprawdzić w zadaniach z liczeniem? (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (2 pkt) Nie da się odpowiedzieć jednoznacznie — liczba chromosomów zależy od etapu; liczba cząsteczek DNA mówi o chromatydach, nie o centromerach — kryteria: (1 pkt) stwierdzenie braku danych, (1 pkt) wskazanie etapu jako zmiennej.
+b) (2 pkt) Np.: po replikacji 46 chromosomów (92 chromatidy); po mejozie I 23 chromosomy dwuchromatydowe (46 chromatyd); po mejozie II 23 chromosomy jednochromatydowe — kryteria: po 1 pkt za każdy poprawny etap z liczbą.
+c) (1 pkt) Etap cyklu/podziału oraz to, czy liczysz chromosomy, chromatidy, cząsteczki DNA czy zestawy chromosomów — kryterium: oba elementy.</p>
+</details>
+</div></details>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">14</span> Klinika błędów — przekrojowa {#klinika} <span class="level-badge level-basic">E8</span></div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„Mejoza i mitoza to to samo.”</td><td class="col-ok" data-label="Poprawa">Mitoza zachowuje (2n → 2n); mejoza redukuje (2n → n).</td><td data-label="Dlaczego">Inne cele: komórki ciała vs gamety; mejoza ma 2 podziały i crossing-over; reguła: liczba zestawów po podziale = cel procesu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„W metafazie komórka ma 92 chromosomy.”</td><td class="col-ok" data-label="Poprawa">46 chromosomów, 92 chromatydy.</td><td data-label="Dlaczego">Chromosomy liczymy po centromerach; replikacja tworzy kopie, ale nie rozdziela centromerów (analogia: zszyta książka).</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„25% to co czwarte dziecko.”</td><td class="col-ok" data-label="Poprawa">Każde dziecko osobno ma 25% szans.</td><td data-label="Dlaczego">Zapłodnienia to niezależne zdarzenia; szansa nie „musi się wyrównać” (por. P dwojga kolejnych aa = 1/16).</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Mutacja znaczy nowotwór.”</td><td class="col-ok" data-label="Poprawa">Mutacja ≠ nowotwór; nowotwór to nagromadzenie zmian w kontroli cyklu.</td><td data-label="Dlaczego">Potrzeba wielu zmian w genach kontrolujących podziały; dym → mutacje → (nagromadzenie) → dopiero nowotwór.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Matka z grupą 0 może mieć dziecko z grupą AB.”</td><td class="col-ok" data-label="Poprawa">Grupa 0 to ii — matka nie da ani Iᴬ, ani Iᴮ.</td><td data-label="Dlaczego">Dziecko AB potrzebuje Iᴬ od jednego rodzica i Iᴮ od drugiego; ciekawostka odwrócona: matka AB + ojciec 0 → dziecko A lub B.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ojciec z hemofilią przekaże chorobę synowi.”</td><td class="col-ok" data-label="Poprawa">Syn dostaje od ojca Y, nie X.</td><td data-label="Dlaczego">Reguła: ojciec nie daje X synowi; cechy X-linked nie przechodzą z ojca na syna — za to córki są nosicielkami.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Kobieta nigdy nie ma hemofilii.”</td><td class="col-ok" data-label="Poprawa">Może (XᵃXᵃ), ale rzadko.</td><td data-label="Dlaczego">Recesywna cecha X-linked u kobiety wymaga allelu od obojga rodziców.</td></tr></tbody></table>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „rodzina ma już troje z cechą dominującą — czwarte musi być recesywne”</span>
+<p>Nie. Każde zapłodnienie to osobne zdarzenie; „musi” nie istnieje w prawdopodobieństwie. Właśnie dlatego P(dwoje kolejnych dzieci aa) liczy się przez mnożenie: 1/4 · 1/4 = 1/16.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „palił i miał raka, więc dym = rak”</span>
+<p>Nie. Dym tytoniowy zawiera mutageny i zwiększa ryzyko, ale nowotwór wymaga nagromadzenia zmian w genach kontrolujących cykl komórkowy. Rozdzielaj przyczynę (mutacje), proces (nagromadzenie) i skutek (chorobę).</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „grupa 0 to brak genów”</span>
+<p>Fałsz. Grupa 0 to genotyp ii — pełnoprawne, aktywne allele, tylko inne niż Iᴬ i Iᴮ. W szachownicy gameta i gra na pełnych prawach.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „mejoza ma 2 podziały, więc to dwie mitozy”</span>
+<p>Pierwszy podział mejozy jest redukcyjny i unikalny (rozchodzą się homologi, wcześniej crossing-over). Zestaw n istnieje już po mejozie I — choć chromosomy są jeszcze dwuchromatydowe.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: liczenie bez sprawdzenia etapu</span>
+<p>Zanim policzysz cokolwiek, ustal: przed replikacją? po replikacji? po mejozie I? po mejozie II? I czy pytanie dotyczy chromosomów, chromatyd, cząsteczek DNA czy zestawów. To dwa pierwsze punkty algorytmu z §9 — najczęstsze źródło zgubionych punktów.</p>
+</div>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„Bakteria nauczyła się odporności na antybiotyk.”</p><p class="myth-ok"><span>Poprawnie</span>Bakterie nie „uczą się” — losowe mutacje dają częściom z nich odporność, a antybiotyk eliminuje pozostałe; przetrwałe mnożą się. Działa dobór naturalny, nie dążenie do celu (most do L031).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Im więcej chromosomów, tym bardziej złożony organizm.”</p><p class="myth-ok"><span>Poprawnie</span>Liczba chromosomów nie świadczy o złożoności; u niektórych roślin bywa jej znacznie więcej niż u człowieka (liczby orientacyjne).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Genetyka to przeznaczenie — mam allel, więc na pewno zachoruję.”</p><p class="myth-ok"><span>Poprawnie</span>Genotyp daje predyspozycję; fenotyp zależy też od drugiego allela, innych genów i środowiska. W medycynie mówi się o ryzyku, nie o pewności.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Dominujący allel jest zawsze częstszy i lepszy.”</p><p class="myth-ok"><span>Poprawnie</span>Dominacja opisuje tylko, co widać w heterozygocie; allel dominujący może być rzadki i niekorzystny.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Mitoza służy do wytwarzania gamet.”</p><p class="myth-ok"><span>Poprawnie</span>Gamety powstają w mejozie; mitoza daje komórki ciała — wzrost, odbudowę, wymianę.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Rodzeństwo jest podobne, więc dziedziczy identyczne allele.”</p><p class="myth-ok"><span>Poprawnie</span>Poza bliźniętami jednojajowymi każde dziecko losuje inną kombinację alleli w mejozie i zapłodnieniu — dlatego rodzeństwo może mieć różne grupy krwi.</p></div></div>
+<p><strong>Diagnostyka luk — jeśli twoja odpowiedź wyglądała tak, wróć tu:</strong></p>
 <div class="table-wrap"><table>
-<thead><tr><th>Poziom</th><th>Zadanie</th></tr></thead>
+<thead><tr><th>Odpowiedź ucznia</th><th>Możliwa luka</th><th>Gdzie wrócić</th></tr></thead>
 <tbody>
-<tr><td>ODTWÓRZ</td><td>Pary zasad w DNA.</td></tr>
-<tr><td>ZASTOSUJ</td><td>P(aa) w Aa × Aa.</td></tr>
-<tr><td>WYJAŚNIJ</td><td>Dlaczego 25% ≠ gwarancja?</td></tr>
-<tr><td>ODKRYJ</td><td>Jaki model dziedziczenia?</td></tr>
-<tr><td>POŁĄCZ</td><td>DNA z fenotypem.</td></tr>
-<tr><td>ZAKWESTIONUJ</td><td>Mutacja zawsze zmienia fenotyp?</td></tr>
+<tr><td>„92 chromosomy po replikacji”</td><td>centromer/chromatyda</td><td>L012</td></tr>
+<tr><td>„co czwarte dziecko”</td><td>prawdopodobieństwo</td><td>L017</td></tr>
+<tr><td>„mejoza to dwie mitozy”</td><td>cel i przebieg podziałów</td><td>L015</td></tr>
+<tr><td>„mutacja = choroba”</td><td>mutacja ≠ skutek kliniczny</td><td>L020</td></tr>
+<tr><td>„bakteria nauczyła się odporności”</td><td>dobór naturalny</td><td>lekcja o ewolucji (L030)</td></tr>
+<tr><td>„ekosystem = zwierzęta i rośliny”</td><td>brak biotopu (środowiska nieożywionego)</td><td>lekcja o ekosystemach</td></tr>
+<tr><td>„więcej chromosomów = bardziej rozwinięty”</td><td>interpretacja liczby chromosomów</td><td>L012</td></tr>
 </tbody></table></div>
-<hr class="lk-hr"/>
 </section>
-<section id="s12">
-<div class="part-heading"><span class="part-num">10</span> Jak się uczyć — powtórka genetyki</div>
-<ol>
-<li><strong>Mapa:</strong> narysuj mapę wszystkich lekcji L011–L020.</li>
-<li><strong>Fiszki:</strong> interleaving z 10 lekcji.</li>
-<li><strong>Mini-check:</strong> sekcja 5A.</li>
-<li><strong>Ćwiczenia:</strong> sekcja 5B/C.</li>
-<li><strong>Test przekrojowy:</strong> sekcja 6.</li>
-<li><strong>Powtórka błędów:</strong> wróć do lekcji, których dotyczą błędy.</li>
-</ol>
-<p><strong>Zasada 3 pytań po powtórce:</strong>
-1. Co już umiem?
-2. Co jeszcze mylę?
-3. Co mnie zaskoczyło?</p>
-<hr class="lk-hr"/>
-</section>
-<section id="s13">
-<div class="part-heading"><span class="part-num">11</span> Zadania z życia codziennego</div>
+<section>
+<div class="part-heading"><span class="part-num">15</span> Ćwiczenia {#cwiczenia} <span class="level-badge level-basic">E8</span></div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 14 (8 pkt) — Ósemka na szturm (blok w ośmiu pytaniach)</span>
+<p>a) Komórka skóry: ile chromosomów? (1 pkt)
+b) Plemnik: 2n czy n? (1 pkt)
+c) Aa × aa — stosunek fenotypów przy dominacji zupełnej A. (1 pkt)
+d) Ojciec daltonista, matka homozygotyczna zdrowa — jaki wzrok będą mieli synowie? (1 pkt)
+e) IᴬIᴮ × ii — jakie grupy krwi mogą mieć dzieci? (1 pkt)
+f) Podaj jeden cel mitozy i jeden cel mejozy. (1 pkt)
+g) Podaj przykład mutagenu i wyjaśnij, czym różni się od mutacji. (1 pkt)
+h) Jakie hasło-klucz opisuje nowotwór z punktu widzenia podziałów komórkowych? (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) 46 — kryterium: poprawna liczba.
+b) (1 pkt) n — kryterium: gameta jest haploidalna.
+c) (1 pkt) 1:1 — kryterium: Aa i aa po połowie.
+d) (1 pkt) Zdrowi — syn dostaje X od zdrowej matki (córki będą nosicielkami) — kryterium: wskazanie pochodzenia X syna.
+e) (1 pkt) A albo B (Iᴬi albo Iᴮi) — kryterium: poprawne połączenia gamet.
+f) (1 pkt) Mitoza: wzrost/odbudowa/wymiana; mejoza: gamety — kryterium: po jednym celu.
+g) (1 pkt) Np. UV; mutagen to czynnik zwiększający częstość mutacji, mutacja to sama zmiana w DNA — kryterium: przykład + różnica.
+h) (1 pkt) „Niekontrolowane podziały” / utrata kontroli cyklu (hamulce) — kryterium: hasło-klucz.</p>
+</details>
+</div>
+<p><strong>Zadania z życia codziennego — odpowiedz samodzielnie, potem porównaj:</strong></p>
 <ol>
 <li>Dlaczego lekarz pyta o choroby w rodzinie?</li>
 <li>Dlaczego rodzeństwo może mieć różne grupy krwi?</li>
@@ -1040,255 +1530,157 @@ animation:bio-drift 60s linear infinite}
 <li>Jak genetyka wpływa na zdrowie?</li>
 <li>Dlaczego antybiotyki przestają działać? (most do L031)</li>
 </ol>
-<hr class="lk-hr"/>
-</section>
-<section id="s14">
-<div class="part-heading"><span class="part-num">12</span> Słownik przekrojowy</div>
-<div class="table-wrap"><table>
-<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
-<tbody>
-<tr><td>DNA</td><td>Kwas deoksyrybonukleinowy — nośnik informacji genetycznej</td></tr>
-<tr><td>Chromosom</td><td>Silnie upakowana forma DNA</td></tr>
-<tr><td>Chromatyda</td><td>Kopia chromosomu po replikacji</td></tr>
-<tr><td>Centromer</td><td>Miejsce połączenia chromatyd</td></tr>
-<tr><td>Replikacja</td><td>Kopiowanie DNA przed podziałem</td></tr>
-<tr><td>Mitoza</td><td>Podział zachowujący liczbę zestawów</td></tr>
-<tr><td>Mejoza</td><td>Podział redukujący (2n → n)</td></tr>
-<tr><td>Allel</td><td>Wersja genu</td></tr>
-<tr><td>Genotyp</td><td>Zestaw alleli</td></tr>
-<tr><td>Fenotyp</td><td>Ujawniona cecha</td></tr>
-<tr><td>Homozygota</td><td>AA lub aa</td></tr>
-<tr><td>Heterozygota</td><td>Aa</td></tr>
-<tr><td>Mutacja</td><td>Trwała zmiana w DNA</td></tr>
-<tr><td>Mutagen</td><td>Czynnik zwiększający częstość mutacji</td></tr>
-</tbody></table></div>
-<hr class="lk-hr"/>
-</section>
-<section id="s15">
-<div class="part-heading"><span class="part-num">13</span> Checklista bloku</div>
-<ul>
-<li>[ ] DNA: budowa, pary, informacja.</li>
-<li>[ ] Chromosom: 46, chromatydy, centromer, XX/XY.</li>
-<li>[ ] Replikacja semikonserwatywna.</li>
-<li>[ ] Mitoza vs mejoza.</li>
-<li>[ ] Allele, Punnett, P ≠ przeznaczenie.</li>
-<li>[ ] Cechy X-linked.</li>
-<li>[ ] ABO.</li>
-<li>[ ] Mutacje.</li>
-<li>[ ] Łańcuch DNA → fenotyp.</li>
-<li>[ ] Wiem, co powtórzyć.</li>
-</ul>
-<hr class="lk-hr"/>
-</section>
-<section id="s16">
-<div class="part-heading"><span class="part-num">14</span> Co dalej?</div>
-<p><strong>L030</strong> — ewolucja.</p>
-<p><strong>Most wstecz:</strong> L011–L020 (wszystkie lekcje genetyki).</p>
-<hr class="lk-hr"/>
-</section>
-<section id="s17">
-<div class="part-heading">UZUPEŁNIENIE MASTER v4.1 — jak korzystać z powtórki rocznej</div>
-<h3>A. Rdzeń E8 — 12 zdań kontrolnych</h3>
-<p>Przed rozpoczęciem testu przekrojowego uczeń powinien umieć bez podglądania:</p>
+<details class="answer"><summary>Pokaż klucz (podpowiedzi)</summary>
 <ol>
-<li>DNA jest nośnikiem informacji genetycznej.</li>
-<li>Człowiek ma typowo 46 chromosomów w komórce somatycznej.</li>
-<li>46 = 23 pary.</li>
-<li>Chromosomy homologiczne pochodzą z dwóch rodzicielskich zestawów.</li>
-<li>Po replikacji DNA liczba chromosomów nie zwiększa się.</li>
-<li>Liczba chromosomów zależy od liczby centromerów.</li>
-<li>Mitoza i mejoza mają różne cele.</li>
-<li>Allel jest wersją genu.</li>
-<li>Prawdopodobieństwo 25% nie oznacza „co czwarte dziecko”.</li>
-<li>Mutacja nie musi oznaczać choroby.</li>
-<li>Ewolucja wymaga dziedzicznej zmienności i różnic w sukcesie rozrodczym.</li>
-<li>Ekosystem obejmuje organizmy oraz środowisko nieożywione.</li>
+<li>Choroby mają tło rodzinne: rodowód podnosi lub nie podnosi ryzyka (predyspozycje dziedziczne) — lekarz buduje wstępny „rodowód” jak w zadaniu konkursowym.</li>
+<li>Każde dziecko losuje inną kombinację alleli w mejozie i zapłodnieniu — ten sam fenotyp rodziców nie gwarantuje identycznych genotypów dzieci.</li>
+<li>Pozwalają diagnozować choroby genetyczne, oceniać ryzyko w rodzinie i dobierać leczenie.</li>
+<li>Allele mogą dawać predyspozycje do chorób, a mutacje zwiększać ryzyko (np. nowotworów); styl życia modyfikuje fenotyp.</li>
+<li>Antybiotyk selekcjonuje bakterie z losowymi mutacjami dającymi odporność — przeżywają i się mnożą; to dobór naturalny na żywo (most do L031).</li>
 </ol>
-<h3>B. Najpierw rozpoznaj typ zadania</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Jeżeli zadanie pyta o…</th><th>Najpierw uruchom</th></tr></thead>
-<tbody>
-<tr><td>liczbę chromosomów</td><td>regułę centromerów</td></tr>
-<tr><td>stosunek potomstwa</td><td>Punnetta / prawdopodobieństwo</td></tr>
-<tr><td>X-linked</td><td>chromosomy płci + pochodzenie X/Y</td></tr>
-<tr><td>ABO</td><td><code>Iᴬ</code>, <code>Iᴮ</code>, <code>i</code></td></tr>
-<tr><td>aneuploidię</td><td>nondysjunkcję</td></tr>
-<tr><td>dobór naturalny</td><td>zmienność → dziedziczenie → różny sukces</td></tr>
-<tr><td>ekosystem</td><td>biocenoza + biotop</td></tr>
-<tr><td>łańcuch pokarmowy</td><td>przepływ energii i kierunek zależności pokarmowej</td></tr>
-</tbody></table></div>
-<h3>C. Kontrola jakości odpowiedzi</h3>
-<p>Przed uznaniem odpowiedzi za gotową sprawdź:</p>
-<ul>
-<li><strong>Czy podałem liczbę?</strong></li>
-<li><strong>Czy podałem jednostkę / etap / zakres pytania?</strong></li>
-<li><strong>Czy uzasadniłem wynik?</strong></li>
-<li><strong>Czy nie pomyliłem chromosomu z chromatydą?</strong></li>
-<li><strong>Czy nie zamieniłem prawdopodobieństwa w gwarancję?</strong></li>
-<li><strong>Czy nie użyłem pojęcia „dobór naturalny” bez wskazania różnic w przeżyciu lub rozrodzie?</strong></li>
-</ul>
-<h3>D. Zadania „z brakującą informacją”</h3>
-<p>W powtórce rocznej warto celowo zostawić zadania, w których <strong>nie da się udzielić jednej odpowiedzi bez dodatkowego warunku</strong>.</p>
-<p>Przykłady:</p>
-<ol>
-<li>„Komórka ma 92 cząsteczki DNA. Ile ma chromosomów?”
-→ trzeba znać etap cyklu.</li>
-</ol>
-<ol start="2">
-<li>„Fenotyp jest dominujący. Jaki jest genotyp?”
-→ może być <code>AA</code> albo <code>Aa</code>, jeśli nie ma dodatkowych danych.</li>
-</ol>
-<ol start="3">
-<li>„Rodzice mają zdrowe dziecko. Jaki jest model dziedziczenia?”
-→ samo to zdanie zwykle nie wystarcza.</li>
-</ol>
-<ol start="4">
-<li>„Gatunek ma więcej chromosomów niż człowiek. Czy jest bardziej złożony?”
-→ nie można tak wnioskować.</li>
-</ol>
-<p>To jest ważny poziom MASTER: <strong>uczeń nie tylko znajduje odpowiedź, ale rozpoznaje, kiedy danych jest za mało.</strong></p>
-<h3>E. Mini-test końcowy — diagnostyka błędów</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Odpowiedź ucznia</th><th>Możliwa luka</th></tr></thead>
-<tbody>
-<tr><td>„92 chromosomy po replikacji”</td><td>L012 — centromer/chromatyda</td></tr>
-<tr><td>„co czwarte dziecko”</td><td>prawdopodobieństwo</td></tr>
-<tr><td>„mejoza to dwie mitozy”</td><td>różnica celu i przebiegu podziałów</td></tr>
-<tr><td>„mutacja = choroba”</td><td>mutacja ≠ skutek kliniczny</td></tr>
-<tr><td>„bakteria nauczyła się odporności”</td><td>dobór naturalny</td></tr>
-<tr><td>„ekosystem = zwierzęta i rośliny”</td><td>biotop</td></tr>
-<tr><td>„więcej chromosomów = bardziej rozwinięty organizm”</td><td>interpretacja liczby chromosomów</td></tr>
-</tbody></table></div>
-<h3>F. Zasada końcowa</h3>
-<p class="mini-note"><strong>Powtórka roczna nie ma polegać na ponownym przeczytaniu wszystkiego od początku. Ma ujawnić, które mechanizmy uczeń potrafi odtworzyć, zastosować, połączyć i wyjaśnić.</strong></p>
+</details>
 </section>
-<section id="s18">
-<div class="part-heading"><span class="part-num">15</span> STATUS LEKCJI</div>
-<ul>
-<li>Wersja 4.0 (2026-09-12) — przebudowa na powtórkę umiejętności.</li>
-<li>Zachowano całą treść v3.7.</li>
-<li>Dodano: interleaving (4 zestawy), test przekrojowy (A/B/C/D), Klinika 2.0 (5 przykładów), Drabinka, „Jak się uczyć", „Zadania z życia codziennego", Słownik przekrojowy, Checklista bloku.</li>
-<li>Zamiast streszczenia rozdziałów — zadania mieszane i diagnostyka luk.</li>
-</ul>
-<hr class="lk-hr"/>
-<p><strong>Koniec L021 MASTER v4.0</strong></p>
-<hr class="lk-hr"/>
+<section>
+<div class="part-heading"><span class="part-num">16</span> Ciekawostki {#ciekawostki} <span class="level-badge level-extra">AMBITNE</span></div>
+<div class="card card-extra">
+<span class="card-label">Kot trójbarwny to prawie zawsze kotka</span>
+<p>Gen jednej z barw sierści kotów leży na chromosomie X. W wyniku inaktywacji jednego X (ciałko Barra) każda komórka skóry „wybiera” losowo jeden X — stąd łaty różnych barw. Kocur ma jeden X, więc potrzebuje rzadkiego układu XXY, żeby być trójbarwnym (przypadki rzadkie).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Dwa metry DNA w każdej komórce</span>
+<p>W jednej ludzkiej komórce jest łącznie około 2 metrów DNA (orientacyjnie), upakowanych w jądro o średnicy ułamka milimetra. Upakowanie na histonach to nie porządek dla porządku — bez niego DNA nie zmieściłoby się i nie dzieliłoby się sprawnie.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Hemofilia w rodzinach królewskich</span>
+<p>Nosicielką hemofilii była królowa Wiktoria — cecha recesywna sprzężona z X przeszła przez jej potomków do kilku rodów królewskich Europy (tzw. „choroba królewska”). To żywy przykład reguły z L018: cecha szła przez córki-nosicielki i chorych synów.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Kod genetyczny jest niemal uniwersalny</span>
+<p>Ten sam zapis trójek zasad działa w bakterii i u człowieka. Dlatego bakterie z wbudowanym ludzkim genem potrafią produkować ludzką insulinę — pierwszy wielki sukces biotechnologii (most do L022).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Paproć z tysiącem chromosomów</span>
+<p>Niektóre paprocie mają setki, a według orientacyjnych danych ponad tysiąc chromosomów (rodzaj Ophioglossum, orientacyjnie ok. 1260) — a człowiek tylko 46. Liczba chromosomów to nie ranking złożoności: to wynik historii rearanżacji genomu.</p>
+</div>
 </section>
-<section id="s19">
-<div class="part-heading"><span class="part-num">16</span> UZUPEŁNIENIE egzaminacyjne v4.0+ (doklejone — nic nie wycięto)</div>
-<p>Blok L010–L020 na jednej stronie + 8 zadań mieszanych.</p>
-<h3>Ściąga przekrojowa genetyki</h3>
+<section>
+<div class="part-heading"><span class="part-num">17</span> Sposoby pamięciowe {#mnemotechniki} <span class="level-badge level-basic">E8</span></div>
+<wskazowki>
+<ul>
+<li>A–T i C–G: „AT to uścisk lekki (2 wiązania wodorowe), CG to uścisk mocny (3)”.</li>
+<li>Mitoza — „M jak Moje ciało”: 2n → 2n. Mejoza — „M jak Mniejsza liczba”: 2n → n.</li>
+<li>„Najpierw ksero, potem rozdajemy”: replikacja zawsze przed podziałem.</li>
+<li>„Liczymy centromery, nie splątane nici” — reguła zliczania chromosomów.</li>
+<li>Syn = „X od mamy, Y od taty”; córka = „X od mamy i X od taty”.</li>
+<li>„Ojciec nie daje X synowi” — zapamiętaj: syn dostaje „whY od taty”.</li>
+<li>Grupa 0 = ii — zero alleli Iᴬ i Iᴮ, stąd w fenotypie „zero”.</li>
+<li>AB — „A i B to koledzy na jednym locus”: kodominacja, oba widać.</li>
+<li>„Szachownica pokazuje szanse, nie harmonogram rodzinny” — prawdopodobieństwo ≠ gwarancja.</li>
+<li>„Mutacja to literówka; nowotwór to książka pisana bez hamulców” — nagromadzenie zmian w kontroli cyklu.</li>
+</ul>
+</wskazowki>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">18</span> Test końcowy {#test} <span class="level-badge level-basic">E8</span></div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Chromosomy liczymy po centromerach: jest ich nadal 46, ale każdy ma 2 chromatydy siostrzane (razem 92 chromatidy)."><h5>1. Ile chromosomów ma somatyczna komórka ciała człowieka po replikacji DNA?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">46 — każdy z dwiema chromatydami</button><button type="button" class="quiz-opt" data-a="1">92 chromosomy</button><button type="button" class="quiz-opt" data-a="2">23 chromosomy</button><button type="button" class="quiz-opt" data-a="3">46, ale bez chromatyd</button></div></div><div class="quiz-q" data-ok="0" data-fb="Komplementarność: adenina z tyminą, cytozyna z guaniną; para A–U występuje w RNA, nie w DNA."><h5>2. Pary zasad w DNA to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">A–T i C–G</button><button type="button" class="quiz-opt" data-a="1">A–G i T–C</button><button type="button" class="quiz-opt" data-a="2">A–C i T–G</button><button type="button" class="quiz-opt" data-a="3">A–U i C–G</button></div></div><div class="quiz-q" data-ok="0" data-fb="Każda nić macierzysta służy za matrycę nowej nici, więc produkt ma nić starą i nową."><h5>3. Replikacja DNA jest semikonserwatywna. Co to znaczy?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Każda nowa cząsteczka ma jedną nić starą i jedną nową</button><button type="button" class="quiz-opt" data-a="1">Zachowuje się tylko połowa informacji</button><button type="button" class="quiz-opt" data-a="2">Połowa komórek nie dostaje DNA</button><button type="button" class="quiz-opt" data-a="3">Replikacja zachodzi tylko w połowie cyklu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Mejoza: jeden podział redukcyjny + drugi zwykły → 4 gamety n; różnorodność rodzi się z crossing-over i losowego rozdziału homologów."><h5>4. Główny wynik mejozy to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">4 komórki o zestawie n, genetycznie różne</button><button type="button" class="quiz-opt" data-a="1">2 komórki 2n identyczne</button><button type="button" class="quiz-opt" data-a="2">4 komórki 2n identyczne</button><button type="button" class="quiz-opt" data-a="3">2 komórki n identyczne</button></div></div><div class="quiz-q" data-ok="0" data-fb="Wymiana odcinków homologów tworzy nowe kombinacje alleli w gametach."><h5>5. Crossing-over zachodzi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">W profazie I mejozy między chromosomami homologicznymi</button><button type="button" class="quiz-opt" data-a="1">W mitozie w anafazie</button><button type="button" class="quiz-opt" data-a="2">W trakcie replikacji</button><button type="button" class="quiz-opt" data-a="3">W profazie mitozy</button></div></div><div class="quiz-q" data-ok="0" data-fb="1:2:1 to stosunek genotypów; fenotypowo AA i Aa są nie do odróżnienia, więc 3:1."><h5>6. Krzyżówka Aa × Aa przy dominacji zupełnej — stosunek fenotypów:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">3:1</button><button type="button" class="quiz-opt" data-a="1">1:2:1</button><button type="button" class="quiz-opt" data-a="2">1:1</button><button type="button" class="quiz-opt" data-a="3">9:3:3:1</button></div></div><div class="quiz-q" data-ok="0" data-fb="Każde zapłodnienie to niezależne zdarzenie: zawsze 1/4; 1/16 dotyczy dwóch konkretnych dzieci naraz."><h5>7. Para Aa × Aa ma dziecko z genotypem aa. Prawdopodobieństwo, że kolejne dziecko też będzie aa:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">1/4</button><button type="button" class="quiz-opt" data-a="1">1/16</button><button type="button" class="quiz-opt" data-a="2">0 — jedno aa już było</button><button type="button" class="quiz-opt" data-a="3">3/4</button></div></div><div class="quiz-q" data-ok="0" data-fb="Jajowa zawsze wnosi X; plemnik X → XX, plemnik Y → XY."><h5>8. O płci dziecka w typowym modelu szkolnym rozstrzyga:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Plemnik — wnosi X albo Y</button><button type="button" class="quiz-opt" data-a="1">Komórka jajowa — wnosi X albo Y</button><button type="button" class="quiz-opt" data-a="2">Oboje rodzice po równo</button><button type="button" class="quiz-opt" data-a="3">Temperatura otoczenia</button></div></div><div class="quiz-q" data-ok="0" data-fb="Syn ma jeden X — zawsze od matki; od ojca dostaje Y."><h5>9. Daltonizm to cecha recesywna sprzężona z X. Skąd chłopiec z daltonizmem wziął allel Xᵈ?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Od matki</button><button type="button" class="quiz-opt" data-a="1">Od ojca</button><button type="button" class="quiz-opt" data-a="2">Od obojga po równo</button><button type="button" class="quiz-opt" data-a="3">Zawsze to nowa mutacja, nie od rodziców</button></div></div><div class="quiz-q" data-ok="0" data-fb="Córki dostają Xᵃ od ojca i Xᴬ od matki (nosicielki); synowie dostają Xᴬ od matki i Y od ojca (zdrowi)."><h5>10. Chory na hemofilię ojciec (XᵃY) i zdrowa matka (XᴬXᴬ) — ich dzieci:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Córki nosicielki, synowie zdrowi</button><button type="button" class="quiz-opt" data-a="1">Synowie chorzy, córki zdrowe homozygoty</button><button type="button" class="quiz-opt" data-a="2">Wszyscy synowie i córki chorzy</button><button type="button" class="quiz-opt" data-a="3">Wszystkie córki chore</button></div></div><div class="quiz-q" data-ok="0" data-fb="Kodominacja: oba allele są widoczne w fenotypie."><h5>11. Genotyp grupy krwi AB to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">IᴬIᴮ</button><button type="button" class="quiz-opt" data-a="1">ii</button><button type="button" class="quiz-opt" data-a="2">Iᴬi</button><button type="button" class="quiz-opt" data-a="3">Iᴮi</button></div></div><div class="quiz-q" data-ok="0" data-fb="ii × IᴬIᴮ → gamety: i oraz Iᴬ/Iᴮ → dzieci Iᴬi (A) i Iᴮi (B)."><h5>12. Matka grupy 0 i ojciec grupy AB mogą mieć dzieci wyłącznie w grupach:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">A albo B</button><button type="button" class="quiz-opt" data-a="1">A, B, AB albo 0</button><button type="button" class="quiz-opt" data-a="2">tylko AB</button><button type="button" class="quiz-opt" data-a="3">tylko 0</button></div></div><div class="quiz-q" data-ok="0" data-fb="Kod genetyczny jest zdegenerowany — kilka kodonów może kodować ten sam aminokwas."><h5>13. Mutacja punktowa jest „cicha”, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Zmieniony kodon koduje ten sam aminokwas</button><button type="button" class="quiz-opt" data-a="1">Powstaje kodon STOP</button><button type="button" class="quiz-opt" data-a="2">Zmienia się kodon START</button><button type="button" class="quiz-opt" data-a="3">Dotyczy komórki linii płciowej</button></div></div><div class="quiz-q" data-ok="0" data-fb="Mutacje somatyczne dotyczą danej komórki i jej potomków w ciele; potomstwu przekazywane są zmiany w komórkach linii płciowej."><h5>14. Mutacja w komórce skóry jest zwykle:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Nie dziedziczona przez potomstwo</button><button type="button" class="quiz-opt" data-a="1">Przekazywana wszystkim dzieciom</button><button type="button" class="quiz-opt" data-a="2">Przekazywana tylko córkom</button><button type="button" class="quiz-opt" data-a="3">Od razu widoczna u potomstwa</button></div></div><div class="quiz-q" data-ok="0" data-fb="Kontrola podziałów („hamulce i gaz”) wymaga kilku uszkodzeń; pojedyncza mutacja zwykle bywa naprawiona lub neutralna."><h5>15. Nowotwór powstaje, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Nagromadzą się zmiany w genach kontrolujących cykl komórkowy</button><button type="button" class="quiz-opt" data-a="1">Pojawi się dowolna pojedyncza mutacja</button><button type="button" class="quiz-opt" data-a="2">Komórka przeszła mejozę</button><button type="button" class="quiz-opt" data-a="3">Replikacja zachodzi bez błędów</button></div></div><div class="quiz-q" data-ok="0" data-fb="Dobór działa na dziedziczną różnorodność; cechy nabyte za życia nie są dziedziczone."><h5>16. Źródłem zmienności dziedzicznej, na którą działa dobór naturalny, jest przede wszystkim:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Mutacje i rekombinacje (crossing-over)</button><button type="button" class="quiz-opt" data-a="1">Wzrost temperatury otoczenia</button><button type="button" class="quiz-opt" data-a="2">Ćwiczenia organizmu w ciągu życia</button><button type="button" class="quiz-opt" data-a="3">Zmiany środowiska bez śladu w DNA</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">19</span> Fiszki {#fiszki} <span class="level-badge level-basic">E8</span></div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Pary zasad w DNA</span><span class="back">A–T i C–G</span><span class="card-tag tag-basic">dna</span></button><button class="flashcard" type="button"><span class="front">Ile chromosomów ma komórka ciała człowieka?</span><span class="back">46 (2n, 23 pary)</span><span class="card-tag tag-basic">chromosom</span></button><button class="flashcard" type="button"><span class="front">Ile chromosomów ma gameta człowieka?</span><span class="back">23 (n)</span><span class="card-tag tag-basic">gamety</span></button><button class="flashcard" type="button"><span class="front">Chromatyda</span><span class="back">Kopia chromosomu po replikacji, połączona z siostrzaną centromerem</span><span class="card-tag tag-basic">chromosom</span></button><button class="flashcard" type="button"><span class="front">Centromer</span><span class="back">Miejsce połączenia chromatyd; po nim liczymy chromosomy</span><span class="card-tag tag-basic">chromosom</span></button><button class="flashcard" type="button"><span class="front">Replikacja</span><span class="back">Kopiowanie DNA w fazie S; semikonserwatywna</span><span class="card-tag tag-basic">replikacja</span></button><button class="flashcard" type="button"><span class="front">Mitoza</span><span class="back">Podział zachowujący liczbę chromosomów (2n → 2n)</span><span class="card-tag tag-basic">mitoza</span></button><button class="flashcard" type="button"><span class="front">Mejoza</span><span class="back">Podział redukcyjny (2n → n) tworzący gamety</span><span class="card-tag tag-basic">mejoza</span></button><button class="flashcard" type="button"><span class="front">Crossing-over</span><span class="back">Wymiana odcinków homologicznych chromatyd w profazie I mejozy</span><span class="card-tag tag-understand">mejoza</span></button><button class="flashcard" type="button"><span class="front">Allel</span><span class="back">Wersja genu</span><span class="card-tag tag-basic">allel</span></button><button class="flashcard" type="button"><span class="front">Genotyp</span><span class="back">Zestaw alleli osobnika</span><span class="card-tag tag-basic">dziedziczenie</span></button><button class="flashcard" type="button"><span class="front">Fenotyp</span><span class="back">Obserwowana cecha (genotyp + środowisko)</span><span class="card-tag tag-basic">dziedziczenie</span></button><button class="flashcard" type="button"><span class="front">Aa × Aa — fenotypy</span><span class="back">3:1 przy dominacji zupełnej</span><span class="card-tag tag-basic">dziedziczenie</span></button><button class="flashcard" type="button"><span class="front">Aa × Aa — genotypy</span><span class="back">1:2:1</span><span class="card-tag tag-understand">dziedziczenie</span></button><button class="flashcard" type="button"><span class="front">25% w krzyżówce</span><span class="back">Prawdopodobieństwo jednego zdarzenia, nie gwarancja „co czwarte dziecko”</span><span class="card-tag tag-understand">prawdopodobienstwo</span></button><button class="flashcard" type="button"><span class="front">P(dwoje kolejnych dzieci aa), Aa × Aa</span><span class="back">1/4 · 1/4 = 1/16</span><span class="card-tag tag-understand">prawdopodobienstwo</span></button><button class="flashcard" type="button"><span class="front">XX i XY</span><span class="back">Kobieta / mężczyzna</span><span class="card-tag tag-basic">plec</span></button><button class="flashcard" type="button"><span class="front">Skąd X u syna?</span><span class="back">Zawsze od matki</span><span class="card-tag tag-basic">plec</span></button><button class="flashcard" type="button"><span class="front">Nosicielka</span><span class="back">Kobieta XᴬXᵃ — zdrowa, może przekazać Xᵃ</span><span class="card-tag tag-basic">plec</span></button><button class="flashcard" type="button"><span class="front">Dlaczego recesywne X-linked częściej u mężczyzn?</span><span class="back">Mężczyzna ma jeden X (hemizygota)</span><span class="card-tag tag-understand">plec</span></button><button class="flashcard" type="button"><span class="front">Allele układu ABO</span><span class="back">Iᴬ, Iᴮ, i</span><span class="card-tag tag-basic">abo</span></button><button class="flashcard" type="button"><span class="front">Kodominacja w ABO</span><span class="back">Grupa AB (IᴬIᴮ) — oba allele widoczne</span><span class="card-tag tag-basic">abo</span></button><button class="flashcard" type="button"><span class="front">Genotyp grupy 0</span><span class="back">ii</span><span class="card-tag tag-basic">abo</span></button><button class="flashcard" type="button"><span class="front">Matka 0 × ojciec AB</span><span class="back">Dzieci tylko A albo B</span><span class="card-tag tag-understand">abo</span></button><button class="flashcard" type="button"><span class="front">Mutacja</span><span class="back">Trwała zmiana w DNA</span><span class="card-tag tag-basic">mutacje</span></button><button class="flashcard" type="button"><span class="front">Mutagen</span><span class="back">Czynnik zwiększający częstość mutacji (UV, promieniowanie X, chemikalia, wirusy)</span><span class="card-tag tag-basic">mutacje</span></button><button class="flashcard" type="button"><span class="front">Mutacja somatyczna</span><span class="back">W komórce ciała — zwykle nie dziedziczona przez potomstwo</span><span class="card-tag tag-understand">mutacje</span></button><button class="flashcard" type="button"><span class="front">Nowotwór</span><span class="back">Niekontrolowane podziały — skutek nagromadzenia mutacji w genach kontrolujących cykl</span><span class="card-tag tag-understand">nowotwor</span></button><button class="flashcard" type="button"><span class="front">Nondysjunkcja</span><span class="back">Nierozdzielenie chromosomów w podziale → aneuploidia (np. trisomia 21)</span><span class="card-tag tag-olimpijski">mejoza</span></button><button class="flashcard" type="button"><span class="front">Kod genetyczny zdegenerowany</span><span class="back">Kilka kodonów może kodować ten sam aminokwas</span><span class="card-tag tag-understand">kod</span></button><button class="flashcard" type="button"><span class="front">Dominujący ≠ częstszy</span><span class="back">Dominacja opisuje ujawnianie w heterozygocie, nie częstość w populacji</span><span class="card-tag tag-olimpijski">dziedziczenie</span></button><button class="flashcard" type="button"><span class="front">Anemia sierpowata a malaria</span><span class="back">Heterozygota ma przewagę — allel utrzymuje się w rejonach malarii</span><span class="card-tag tag-olimpijski">ewolucja</span></button></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">20</span> Słownik przekrojowy {#slownik} <span class="level-badge level-basic">E8</span></div>
+<dl><div class="def-item"><dt>DNA</dt><dd>Kwas deoksyrybonukleinowy — nośnik informacji genetycznej</dd></div><div class="def-item"><dt>Gen</dt><dd>Odcinek DNA niosący informację o produkcie (białku lub RNA)</dd></div><div class="def-item"><dt>Allel</dt><dd>Wersja genu; u człowieka osobnik ma zwykle dwa allele każdego genu</dd></div><div class="def-item"><dt>Genom</dt><dd>Całość materiału genetycznego komórki</dd></div><div class="def-item"><dt>Locus</dt><dd>Miejsce w DNA, w którym leży dany gen</dd></div><div class="def-item"><dt>Chromosom</dt><dd>Silnie upakowana forma DNA (z białkami), widoczna w podziale</dd></div><div class="def-item"><dt>Chromatyda</dt><dd>Kopia chromosomu po replikacji, połączona z siostrzaną w centromerze</dd></div><div class="def-item"><dt>Centromer</dt><dd>Miejsce połączenia chromatyd; po nim zliczamy chromosomy</dd></div><div class="def-item"><dt>Chromosomy homologiczne</dt><dd>Para chromosomów — jeden od matki, drugi od ojca; mają te same loci</dd></div><div class="def-item"><dt>Replikacja</dt><dd>Kopiowanie DNA przed podziałem; semikonserwatywna, w fazie S</dd></div><div class="def-item"><dt>Mitoza</dt><dd>Podział zachowujący liczbę zestawów chromosomów (2n → 2n)</dd></div><div class="def-item"><dt>Mejoza</dt><dd>Podział redukujący (2n → n) dający gamety</dd></div><div class="def-item"><dt>Crossing-over</dt><dd>Wymiana odcinków między homologicznymi chromatydami w profazie I mejozy</dd></div><div class="def-item"><dt>Gameta</dt><dd>Komórka płciowa o zestawie n (jajowa albo plemnik)</dd></div><div class="def-item"><dt>Zapłodnienie</dt><dd>Połączenie gamet; przywraca zestaw 2n</dd></div><div class="def-item"><dt>Genotyp</dt><dd>Zestaw alleli osobnika</dd></div><div class="def-item"><dt>Fenotyp</dt><dd>Ujawniona cecha; wynik współdziałania genotypu i środowiska</dd></div><div class="def-item"><dt>Homozygota</dt><dd>Osobnik z dwoma takimi samymi allelami (AA lub aa)</dd></div><div class="def-item"><dt>Heterozygota</dt><dd>Osobnik z dwoma różnymi allelami (Aa)</dd></div><div class="def-item"><dt>Kodominacja</dt><dd>Oba allele ujawniają się w fenotypie heterozygoty (grupa krwi AB)</dd></div><div class="def-item"><dt>Nosicielka</dt><dd>Kobieta XᴬXᵃ — zdrowa, może przekazać recesywny allel Xᵃ dzieciom</dd></div><div class="def-item"><dt>Hemizygota</dt><dd>Osobnik z jednym allelem danego genu (mężczyzna dla genów na X)</dd></div><div class="def-item"><dt>Mutacja</dt><dd>Trwała zmiana w DNA</dd></div><div class="def-item"><dt>Mutagen</dt><dd>Czynnik zwiększający częstość mutacji (np. UV, promieniowanie X, chemikalia, wirusy)</dd></div><div class="def-item"><dt>Nondysjunkcja</dt><dd>Błąd rozdziału chromosomów w podziale; źródło aneuploidii</dd></div><div class="def-item"><dt>Aneuploidia</dt><dd>Nieprawidłowa liczba chromosomów (np. trisomia 21)</dd></div><div class="def-item"><dt>Kodon</dt><dd>Trójka nukleotydów mRNA kodująca aminokwas (lub sygnał START/STOP)</dd></div><div class="def-item"><dt>Transkrypcja</dt><dd>Przepisanie informacji z DNA na mRNA</dd></div><div class="def-item"><dt>Translacja</dt><dd>Odczyt kodonów mRNA na rybosomie i budowa białka</dd></div></dl>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">21</span> Mapa pojęć {#drzewo} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<div class="lk-tree"><ul><li><span>Powtórka genetyki (L011–L020)</span><ul><li><span>Materiał dziedziczny</span><ul><li><span>DNA — budowa i pary A–T, C–G</span></li><li><span>Gen, allel, locus, genom</span></li><li><span>Chromosom — chromatydy, centromer</span><ul><li><span>46 = 2n (23 pary)</span></li><li><span>XX i XY</span></li></ul></li><li><span>Replikacja (faza S, semikonserwatywna)</span></li></ul></li><li><span>Przepływ informacji</span><ul><li><span>Transkrypcja (DNA → mRNA)</span></li><li><span>Translacja (kodony → aminokwasy)</span></li><li><span>Fenotyp (genotyp + środowisko)</span></li></ul></li><li><span>Podziały komórkowe</span><ul><li><span>Mitoza — 2n → 2n</span></li><li><span>Mejoza — 2n → n</span><ul><li><span>Crossing-over</span></li><li><span>Nondysjunkcja → aneuploidia</span></li></ul></li></ul></li><li><span>Dziedziczenie</span><ul><li><span>Punnett i gamety</span></li><li><span>Dominacja zupełna — 3:1 i 1:2:1</span></li><li><span>Płeć i cechy X-linked</span></li><li><span>Grupy krwi ABO — kodominacja</span></li></ul></li><li><span>Zmienność</span><ul><li><span>Mutacje punktowe, chromosomowe, genomowe</span></li><li><span>Mutageny</span></li><li><span>Nowotwory — utrata kontroli cyklu</span></li></ul></li><li><span>Most do ewolucji</span><ul><li><span>Zmienność dziedziczna</span></li><li><span>Dobór naturalny</span></li></ul></li></ul></li></ul></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">22</span> Ściąga {#sciaga} <span class="level-badge level-basic">E8</span></div>
+<div class="card card-core">
+<span class="card-label">Ściąga przekrojowa genetyki — cała dawka w 8 punktach</span>
 <ol>
 <li>Informacja: DNA w jądrze → gen = odcinek → allel = wersja.</li>
 <li>46 = 2n (ciało); 23 = n (gameta).</li>
 <li>Replikacja przed podziałem (semikonserwatywna — L013).</li>
-<li>Mitoza 2n→2n; mejoza 2n→n.</li>
+<li>Mitoza 2n → 2n; mejoza 2n → n.</li>
 <li>Punnett: Aa × Aa → 3:1 przy pełnej dominacji (model).</li>
 <li>X-linked: syn bierze X od matki.</li>
 <li>ABO: Iᴬ, Iᴮ, i — kodominacja A i B; 0 = ii.</li>
 <li>Mutacja ≠ automatyczna choroba.</li>
 </ol>
-<h3>8 zadań extra (interleaving)</h3>
-<ol>
-<li>Komórka skóry: ile chromosomów?</li>
-<li>Plemnik: 2n czy n?</li>
-<li>Aa × aa — stosunek fenotypów przy A dominującym.</li>
-<li>Ojciec daltonista, matka homozygota „zdrowa” — syn?</li>
-<li>IᴬIᴮ × ii — grupy dzieci.</li>
-<li>Mitoza vs mejoza: jeden cel każdej.</li>
-<li>Mutagen — przykład + czym różni się od mutacji.</li>
-<li>Nowotwór: które słowo-klucz z L016?</li>
-</ol>
-<p>Szkic odpowiedzi: 1 46. 2 n. 3 1:1. 4 synowie zdrowi (X od matki). 5 A albo B. 6 wzrost vs gamety. 7 UV vs zmiana w DNA. 8 kontrola cyklu / hamulce.</p>
-<h3>Kiedy wracać</h3>
-<p>L011–L013 jeśli sypie się 46/DNA; L017 jeśli Punnett; L018–L019 jeśli płeć i krew; L020 jeśli mutacje.</p>
-<h3>Status doklejki</h3>
-<p>2026-09-12 · sekcje 1–15 bez zmian.</p>
-<!-- ==================== END L021 ==================== -->
-<!-- ==================== BEGIN L030 ==================== -->
-</section>
-<section id="s20">
-<div class="part-heading"><span class="part-num">16</span> Doprecyzowanie — algorytm rozwiązywania zadań mieszanych (W15)</div>
-<ol>
-<li><strong>Ustal, co liczysz:</strong> chromosomy, chromatydy/cząsteczki DNA czy zestawy chromosomów.</li>
-<li><strong>Ustal etap:</strong> przed replikacją, po replikacji, po mejozie I czy po mejozie II.</li>
-<li><strong>W dziedziczeniu zapisz założenia:</strong> genotypy, dominację, typ dziedziczenia i gamety.</li>
-<li><strong>Oddziel prawdopodobieństwo od wyniku:</strong> 25% nie oznacza gwarancji jednego potomka z czterech.</li>
-<li><strong>W mutacjach rozdziel przyczynę i skutek:</strong> mutacja może być neutralna, szkodliwa lub w określonych warunkach korzystna; nie jest równoznaczna z chorobą.</li>
-</ol>
-</section>
-<section id="s21">
-<div class="part-heading">AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</div>
-<p><strong>Zakres:</strong> kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.</p>
-<h3>Uściślenia do utrzymania w treści</h3>
+</div>
+<checklista>
 <ul>
-<li>W zadaniach z liczeniem chromosomów zawsze określić etap cyklu/podziału oraz to, czy pytanie dotyczy chromosomów, chromatyd, cząsteczek DNA czy zestawów chromosomów.</li>
-<li>W krzyżówkach zapisywać założenia modelu i oddzielać prawdopodobieństwo od rzeczywistego wyniku małej liczby potomstwa.</li>
-<li>W pytaniach o mutacje i nowotwory nie przyjmować automatycznego związku „mutacja = choroba”; wskazać możliwe skutki neutralne, szkodliwe lub rzadziej korzystne.</li>
+<li>[ ] umiem wyjaśnić budowę DNA i pary zasad (A–T, C–G).</li>
+<li>[ ] umiem podać 46 chromosomów (2n) i 23 (n) oraz rozróżnić chromosom i chromatydę.</li>
+<li>[ ] umiem opisać replikację semikonserwatywną w fazie S.</li>
+<li>[ ] umiem porównać mitozę i mejozę (2n → 2n vs 2n → n).</li>
+<li>[ ] umiem rozwiązać krzyżówkę Punnetta i podać stosunki 3:1 i 1:2:1.</li>
+<li>[ ] umiem odróżnić prawdopodobieństwo od gwarancji (25% ≠ „co czwarte dziecko”).</li>
+<li>[ ] umiem zastosować regułę „ojciec nie daje X synowi” i wyjaśnić częstsze choroby u mężczyzn.</li>
+<li>[ ] umiem rozwiązać zadania ABO z kodominacją.</li>
+<li>[ ] umiem sklasyfikować mutacje, wskazać mutageny i wyjaśnić powstanie nowotworu.</li>
+<li>[ ] umiem przejść cały łańcuch DNA → fenotyp i wskazać, co jeszcze powtórzyć.</li>
 </ul>
-<h3>Status</h3>
-<ul>
-<li>Schemat główny otrzymał opis <code>@opis</code> z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.</li>
-<li>✔ Sprawdzone w treści głównej (2026-10-09, Claude): punkty obecne w lekcji lub dopisane do ściągi/kliniki błędów.</li>
-</ul>
+</checklista>
 </section>
-<section id="s22">
-<div class="part-heading">AUDYT W18 — klucz mieszany (2026-10-09, GPT-6)</div>
-<p><strong>Zakres:</strong> kontrola celowana zadań łączących chromosomy, mejozę, dziedziczenie, ABO, mutacje i nowotwory.</p>
+<section id="dalej">
+<div class="part-heading"><span class="part-num">23</span> Co dalej?</div>
 <ul>
-<li>Przy odpowiedzi liczbowej uczeń powinien podać warunek (etap cyklu komórkowego, genotyp rodziców, model dominacji lub płeć), jeśli zmienia on wynik.</li>
-<li>„A albo B” przy grupie krwi jest akceptowalne tylko wtedy, gdy wynika z treści zadania i podanych genotypów; sam fenotyp rodzica może nie wystarczyć do jednoznacznego wyniku.</li>
-<li>„UV uszkadza DNA” nie jest równoznaczne z „UV zawsze wywołuje mutację lub nowotwór”. Poprawna odpowiedź opisuje zwiększenie ryzyka oraz zależność od naprawy i dalszych zmian.</li>
-<li>Przy ocenie genetyki punktuj tok rozumowania: zapis alleli, gamety, krzyżówka, wynik i interpretacja prawdopodobieństwa.</li>
-<li><strong>Status:</strong> dodano kryteria do sprawdzania klucza; nie zastępują one osobnego sprawdzenia wszystkich pozycji.</li>
+<li><strong>L022 — biotechnologia.</strong> Kod genetyczny jest niemal uniwersalny, więc informacja z ludzkiego DNA działa w bakterii — tam wykorzystasz replikację, transkrypcję i translację z tego bloku.</li>
+<li><strong>L030 — ewolucja.</strong> Zmienność dziedziczna (mutacje + rekombinacje) plus dobór naturalny dają zmiany częstości alleli w populacjach — to pętla zamknięta w §8.</li>
+<li><strong>Most wstecz:</strong> L011–L020 (wszystkie lekcje genetyki) — wracaj, dopóki klinika z §14 nie będzie twoja.</li>
 </ul>
-</section>
-<section id="s23">
-<div class="part-heading">AUDYT KOŃCOWY BLOKU GENETYKI — mapa pojęć i procedura rozwiązywania zadań (2026-10-09)</div>
-<h3>Łańcuch pojęć, który trzeba rozumieć</h3>
-<p><strong>DNA → gen → allel → ekspresja informacji → cecha (fenotyp)</strong>. DNA przechowuje informację; gen jest odcinkiem DNA związanym z funkcjonalnym produktem; allele to wersje danego genu lub jego regionu; ekspresja oznacza wykorzystanie informacji, np. w wytwarzaniu RNA i białka; fenotyp to obserwowalne cechy powstające w wyniku współdziałania genotypu i środowiska. Ten łańcuch jest modelem edukacyjnym — nie każda cecha jest kontrolowana przez jeden gen ani każdy gen koduje białko.</p>
-<h3>Algorytm do krzyżówek genetycznych</h3>
-<ol>
-<li>Zapisz, co oznaczają symbole alleli; nie zakładaj automatycznie, że duża litera zawsze oznacza allel „lepszy”.</li>
-<li>Ustal genotypy rodziców na podstawie danych. Jeśli dane nie wystarczają, wypisz możliwe genotypy zamiast zgadywać.</li>
-<li>Wypisz gamety: każda gameta otrzymuje po jednym allelu z każdej pary homologicznej.</li>
-<li>Połącz gamety w tabeli i policz wszystkie możliwe kombinacje.</li>
-<li>Podaj oddzielnie prawdopodobieństwo genotypu i fenotypu, jeśli nie są tym samym.</li>
-<li>Napisz, że prawdopodobieństwo dotyczy każdej ciąży/zdarzenia w modelu i nie gwarantuje konkretnej kolejności wyników.</li>
-<li>Na końcu sprawdź, czy zadanie dotyczy dominacji zupełnej, kodominacji, alleli wielokrotnych, cechy sprzężonej z płcią czy cechy wieloczynnikowej.</li>
-</ol>
-<h3>Najważniejsze rozróżnienia do samokontroli</h3>
+<p><strong>Kiedy wracać — mapa luk:</strong></p>
 <div class="table-wrap"><table>
-<thead><tr><th>Nie utożsamiaj</th><th>Rozróżnienie</th></tr></thead>
+<thead><tr><th>Jeśli sypiesz się na…</th><th>Wróć do</th></tr></thead>
 <tbody>
-<tr><td>gen i allel</td><td>gen to odcinek informacji; allel to jego wariant</td></tr>
-<tr><td>genotyp i fenotyp</td><td>zapis alleli ≠ obserwowana cecha</td></tr>
-<tr><td>replikacja i mitoza</td><td>kopiowanie DNA ≠ podział jądra/komórki</td></tr>
-<tr><td>mutacja i rekombinacja</td><td>zmiana DNA ≠ nowe połączenie istniejących alleli</td></tr>
-<tr><td>dominacja i „lepszość”</td><td>dominujący allel nie musi być korzystniejszy</td></tr>
-<tr><td>prawdopodobieństwo i pewność</td><td>szansa nie ustala kolejności zdarzeń</td></tr>
-<tr><td>grupa krwi i pełny genotyp</td><td>ten sam fenotyp może mieć różne genotypy</td></tr>
-<tr><td>cecha dziedziczna i wyłącznie genetyczna</td><td>środowisko może wpływać na fenotyp</td></tr>
+<tr><td>46 / DNA / chromatydy</td><td>L011–L013</td></tr>
+<tr><td>podziały komórkowe</td><td>L014–L015</td></tr>
+<tr><td>nowotwory</td><td>L016</td></tr>
+<tr><td>Punnett i proporcje</td><td>L017</td></tr>
+<tr><td>płeć i krew</td><td>L018–L019</td></tr>
+<tr><td>mutacje</td><td>L020</td></tr>
 </tbody></table></div>
-<h3>Mini-zestaw diagnostyczny z kluczem</h3>
-<ol>
-<li>Osoba ma grupę krwi A. Czy jej genotyp musi być IᴬIᴬ? <strong>Nie</strong>, możliwe jest też Iᴬi.</li>
-<li>W krzyżówce wynik ma prawdopodobieństwo 25%. Czy przy czterech potomkach dokładnie jeden musi mieć tę cechę? <strong>Nie</strong>; prawdopodobieństwo nie gwarantuje wyniku w małej próbie.</li>
-<li>Czy crossing-over zawsze tworzy nowe allele? <strong>Nie</strong>, przede wszystkim tworzy nowe kombinacje alleli.</li>
-<li>Czy mutacja w komórce skóry zwykle jest przekazywana dzieciom? <strong>Nie</strong>, mutacje somatyczne zwykle nie są dziedziczone przez potomstwo.</li>
-<li>Dlaczego replikacja DNA jest konieczna przed mejozą I? <strong>Aby skopiować DNA i utworzyć chromatydy siostrzane przed dwoma kolejnymi podziałami.</strong></li>
-<li>Czy dominujący allel musi być częstszy w populacji? <strong>Nie</strong>; dominacja opisuje sposób ujawniania się alleli w heterozygocie, a nie ich częstość.</li>
-</ol>
-<h3>Kryteria opanowania bloku</h3>
-<p>Uczeń opanował materiał, gdy potrafi nie tylko podać definicję, ale też: (a) zastosować ją w nowym przykładzie, (b) uzasadnić każdy krok, (c) wskazać założenia modelu, (d) zauważyć, kiedy danych jest za mało, oraz (e) unikać wniosków medycznych lub rodzinnych, których zadanie nie uzasadnia.</p>
-<h3>Audyt końcowy L021</h3>
-<ul>
-<li>Dodano jeden spójny algorytm rozwiązywania krzyżówek.</li>
-<li>Zebrano najczęstsze pary pojęć mylonych w całym bloku genetyki.</li>
-<li>Dodano krótką diagnostykę z kluczem i kryteria rzeczywistego opanowania wiedzy.</li>
-</ul>
+<p>Powtórka jest gotowa, gdy umiesz odpowiedzieć na pytanie przewodnie: DNA, chromosomy, podziały i dziedziczenie to jeden łańcuch przepływu informacji — a zadanie egzaminacyjne pyta tylko o jego fragment.</p>
+<h3 id="audyt-ulepsz">AUDYT — Claude, 2026-10-12</h3>
+<p><strong>Poprawione:</strong>
+- §0.1 : notatki audytowe W15/W18 („uczeń powinien podać warunek…”, „punktuj tok rozumowania”) przeniesione z metanotatek do treści lekcji — powód: w pliku lekcji nie mogą zostać notatki dla autora.
+- §0.2 : mini-zestaw diagnostyczny z metanotatek audytu końcowego przerobiony na blok diagnozy z kluczem — powód: treść diagnostyczna należała do sekcji ucznia.
+- §9 : „Szkic odpowiedzi” (doklejka) rozbudowany do pełnych kluczy z kryteriami punktacji w formalnym zadaniu — powód: odpowiedzi jedno-/dwuznakowe nie pokazywały toku rozumowania wymagane przy ocenie.
+- §11 : odpowiedź do pytania 12 uściślona („92 chromatidy po fazie S”) i pytanie 11 doprecyzowane o „nić komplementarną” — powód: jednoznaczność zadania.
+- §14 : wiersze kliniki 2.0 (znajdź/popraw/reguła/podobne/pułapka) przekształcone w tabelę kliniki plus karty pułapek — powód: zachowanie wszystkich pól w dozwolonym formacie.
+- §23 : „Następna: L030” uzupełnione o L022 (biotechnologia) zgodnie z układem kursu — powód: aktualna kolejność lekcji; L030 pozostawione jako dalszy etap.
+- Całość : notatki robocze (karta lekcji, „STATUS: DO UZUPEŁNIENIA”, statusy audytów W15/W18) wyłączone z treści lekcji i odnotowane tutaj — powód: sekcje robocze nie trafiają do pliku ucznia.</p>
+<p><strong>Dodane:</strong>
+- Lekcja powstała z materiału roboczego L021: kompas L011–L020, mapa przekrojowa, zestawy A–D, test przekrojowy z odpowiedziami, klinika 2.0, drabinka trudności, uzupełnienia MASTER v4.1 (12 zdań kontrolnych, rozpoznawanie typu zadania, kontrola jakości, zadania z brakującą informacją, diagnostyka luk, zasada końcowa) i doklejki egzaminacyjnej (ściąga, 8 zadań, „kiedy wracać”) — wszystkie treści, pytania i klucze przeniesione.
+- §1 : wykład ciągły „od litery w DNA do cechy w rodzinie” (synteza L011–L020 od zera).
+- §0.1, §0.2 : minimum, warstwy, rdzeń, procedura pracy, diagnoza.
+- Zadania formalne 1–14 (tematyczne, algorytmiczne, konkursowe ::: adv 8–13 w typach: ustal model, znajdź błąd, pułapka fenotyp/genotyp, analiza tekstu, uzasadnianie, brakująca informacja).
+- §12 : trzy doświadczenia z próbami kontrolnymi; §16 : 5 ciekawostek; §14 : mity i diagnostyka luk; §17 : mnemotechniki; §18 : test końcowy (16 pytań); §19 : 32 fiszki (poziomy basic/understand/olimpijski); §20 : słownik (29 haseł); §21 : drzewo; §22 : ściąga i checklista.</p>
+<p><strong>Niepewne / do weryfikacji:</strong>
+- We wzorze frontmattera podano dwie linie <code>lead:</code> — zachowano obie zgodnie ze wzorem; do decyzji autor.
+- Liczby orientacyjne: ~2 m DNA na komórkę, ~1260 chromosomów u Ophioglossum, stężenie alkoholu w doświadczeniu 3 — oznaczone „(orientacyjnie)”.
+- Terminy „niepełna penetracja” i „nowa mutacja de novo” użyte na poziomie konkursowym — warto zweryfikować z zakresem konkretnego konkursu.
+- Zdanie kontrolne nr 12 (ekosystem) i wiersz diagnostyki o ekosystemie dotyczą ekologii, nie genetyki — pozostawione zgodnie z zasadą nieusuwania.</p>
+<p><strong>Proponuję usunąć:</strong>
+- Zdanie kontrolne nr 12 (ekosystem) z karty „12 zdań kontrolnych” — wykracza poza genetykę (pozostawione).
+- Wiersz „ekosystem = zwierzęta i rośliny” w tabeli diagnostycznej — analogicznie (pozostawiony jako most do innych działów).</p>
+<p><strong>Źródła:</strong> informatory i arkusze CKE (egzamin ósmoklasisty), podstawa programowa (biologia, szkoła podstawowa), OpenStax Biology, CK-12, BBC Bitesize, Khan Academy, ZPE.</p>
+<p><strong>Grafiki do zrobienia:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gdzie</th><th>Rodzaj</th><th>Co pokazuje</th><th>Wniosek</th><th>@opis</th></tr></thead>
+<tbody>
+<tr><td>§2, po karcie „Łańcuch pojęć”</td><td>animacja „do przodu i od początku” (proces jednokierunkowy)</td><td>łańcuch DNA → chromosom → podział → gameta → dziedziczenie → mutacja z podpisami etapów</td><td>cała genetyka to jeden kierunek przepływu informacji</td><td>Sześć stacji połączonych strzałkami: cząsteczka DNA; chromosom (DNA z białkami); podział komórki (mitoza i mejoza obok siebie); gameta o zestawie n; krzyżówka i potomstwo; mutacja jako źródło zmian na każdym etapie. Wniosek: informacja płynie od DNA do cechy, a mutacje zasiewają zmienność po drodze.</td></tr>
+<tr><td>§3, po tabeli „Co i ile”</td><td>model interaktywny z suwakiem</td><td>przejście komórki przez fazę S; licznik chromosomów, chromatyd i cząsteczek DNA</td><td>liczba chromosomów zależy od centromerów, liczba chromatyd od replikacji</td><td>Suwak przesuwa komórkę przez fazę S. Przed: 46 chromosomów, 46 chromatyd, 46 cząsteczek DNA. Po: 46 chromosomów, 92 chromatidy, 92 cząsteczki DNA. Liczniki podświetlają się parami. Wniosek: replikacja podwaja chromatidy i DNA, ale nie chromosomy.</td></tr>
+<tr><td>§4, po tabeli porównawczej</td><td>animacja „do przodu i od początku” (dwa przebiegi obok siebie)</td><td>mitoza (1 podział → 2 komórki 2n) i mejoza (2 podziały → 4 komórki n) z crossing-over w profazie I</td><td>cel podziału poznasz po produkcie</td><td>Dwutorowa animacja: na górze komórka 2n dzieli się raz i daje dwie identyczne komórki 2n; na dole ta sama komórka przechodzi crossing-over i dwa podziały, dając cztery różne gamety n. Wniosek: mitoza zachowuje, mejoza redukuje i miesza.</td></tr>
+<tr><td>§5, przy tabeli krzyżówek</td><td>schemat z podpisami do klikania</td><td>szachownica Punnetta dla Aa × Aa z klikalnymi kratkami</td><td>proporcje wynikają z kombinacji gamet</td><td>Rodzice Aa po bokach, gamety A i a na brzegach, cztery kratki: AA, Aa, Aa, aa. Kliknięcie kratki pokazuje genotyp, fenotyp i szansę. Wniosek: stosunki 1:2:1 i 3:1 to zliczone kombinacje gamet.</td></tr>
+<tr><td>§6, po tabeli „Skąd X i Y”</td><td>schemat statyczny</td><td>przekazywanie X i Y: matka → syn i córka (X), ojciec → syn (Y) i córka (X)</td><td>syn ma X tylko od matki</td><td>Dwie linie: z matki strzałki X do syna i córki; z ojca strzałka Y do syna i X do córki. Allel cechy na X matki podświetlony. Wniosek: cechy sprzężone z X idą od matki do synów, a od ojca tylko do córek.</td></tr>
+</tbody></table></div>
 </section>
-
+<footer class="footer"><p><strong>BIOLOGIA L021 v1.0</strong> · Powtórka genetyki · 2026</p></footer>
 </main>
 <script>
 /* bio-core.js — rdzeń biblioteki grafik BIO (v0.2): montaż, prymitywy, efekty i pomocnicze.

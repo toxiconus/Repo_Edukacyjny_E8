@@ -139,3 +139,5 @@
 - 2026-10-12: K04 wersja 2 (rozszerzona, 28 KB md): 5 wykładów, mini-wykłady, metody pomiaru z BHP, 4 przykłady, 6 zadań, test 5, fiszki 17; objętość gazu w warunkach normalnych (22,4 dm³/mol) zamiast 24. K06 i K11 jeszcze w wersji 1 (do ponownego przejścia skillem).
 
 - 2026-10-12: K06 i K11 wersja 2 (rozszerzone). Źródła sprawdzone: Wikipedia (Activation energy: definicja E_a, katalizator bez zmiany ΔH), OpenTextBC (definicja szybkości, tabela ICE), Physics Classroom (dysocjacja, reguła 5%). Usunięto niepotwierdzoną regułę ×2 na 10 K z K06. K04 w wersji 2 (28 KB). Wszystkie trzy przechodzą limity (orientacyjnie).
+
+- 2026-10-12: BIO L021 (powtórka genetyki, odpowiedź zewnętrznej AI, 25 sekcji) wczytana przez wczytaj_odpowiedz.py; jedna cyrylicka litera w linii 37 poprawiona w kopii przed zapisem. Build i sprawdz_bio OK.
