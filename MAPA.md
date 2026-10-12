@@ -3,10 +3,10 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 169 KB)
+## .  (8 pl., 170 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
-- `CLAUDE.md` 14 KB
+- `CLAUDE.md` 15 KB
 - `MAPA.md` 27 KB
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
@@ -370,7 +370,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (17 pl., 1.1 MB)
+## chemia/che-modular/lessons-md/gotowe  (18 pl., 1.2 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 53 KB
 - ⚠`F06_uklad_okresowy.md` 56 KB
@@ -580,9 +580,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 66 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (25 pl., 432 KB)
+## chemia/plany/audyty  (26 pl., 523 KB)
 - (zwinięte; `ls chemia/plany/audyty`) — duże:
 - ⚠`GOTOWE_SONNET_FIZ-01_2026-10-12.md` 116 KB
+- ⚠`GOTOWE_ZAI_X04_2026-10-12.md` 91 KB
 
 ## chemia/plany/narzedzia  (3 pl., 50 KB)
 - `kanon_dane.py` 38 KB

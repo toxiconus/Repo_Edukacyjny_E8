@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIZ — podgląd grafiki</title>
+<style>
+:root{--accent:#1d6b4f;--accent-soft:#e7f3ec;--surface:#fff;--surface-soft:#f3f7f4;--text:#1a2332;--text-soft:#5d6b7a;--border:#d5dee6;--border-strong:#b8c4cf;
+--viz-ink:#1a2332;--viz-mut:#5d6b7a;--viz-line:#d5dee6;--viz-bg:#fff;--viz-bg2:#f6f8f7;
+--c-basic:#2e7d32;--c-basic-bg:#e8f5e9;--c-error:#c62828;--c-error-bg:#fdecea;--c-warn:#b26a00;--c-warn-bg:#fff4e0;
+--k1:#1f6fb2;--k1-bg:#e3effa;--k2:#178a6c;--k2-bg:#e0f3ec;--k3:#e09400;--k3-bg:#fff3d6;--k4:#c0392b;--k4-bg:#fdecea;--k5:#7a3fbf;--k5-bg:#f3ecfb;--k6:#5c8a3a;--k6-bg:#eef6e6;
+--blood-o2:#d32f2f;--blood-o2-bg:#fde8e8;--blood-co2:#3949ab;--blood-co2-bg:#e8eaf8;--nerve:#f2a900;--bone:#efe6d2;--muscle:#c0574b;--skin:#f1c9a5;--fat:#f7e3a6}
+body{font:15px/1.5 Inter,system-ui,sans-serif;color:var(--text);background:#f8faf8;margin:0;padding:16px;max-width:900px}
+figure{margin:0 0 24px;background:var(--viz-bg);border:1px solid var(--border);border-radius:12px;padding:12px}
+figcaption{font-weight:700;margin-bottom:8px} svg{width:100%;height:auto;display:block}
+.vz-tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 10px}
+.vz-btn{border:1px solid var(--border-strong);background:var(--surface);color:var(--text);border-radius:8px;padding:6px 11px;font:700 12.5px Inter,system-ui,sans-serif;cursor:pointer;min-height:34px}
+.vz-btn:hover{border-color:var(--accent);color:var(--accent)} .vz-btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.vz-info{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:8px;font-size:13.5px;min-height:44px}
+.vz-info b{display:block;margin-bottom:2px} .vz-info.ok{border-left-color:var(--c-basic);background:var(--c-basic-bg)} .vz-info.bad{border-left-color:var(--c-error);background:var(--c-error-bg)}
+.vz-hit{cursor:pointer} .vz-hit:hover,.vz-hit:focus{filter:brightness(.93);outline:none} .vz-hit.sel{filter:drop-shadow(0 0 3px var(--accent))}
+input[type=range]{width:100%;accent-color:var(--accent)}
+</style></head><body>
+<script>
+/* ===== VIZ — mała biblioteka (taka sama jak w kursie). NIE ZMIENIAJ tego bloku. ===== */
+(function(){var VIZ=window.VIZ={},REG={},NS='http://www.w3.org/2000/svg';
+VIZ.define=function(id,d){REG[id]=d};
+function set(e,at){for(var k in at){var v=at[k];if(v==null)continue;if((k==='fill'||k==='stroke'||k==='stop-color')&&String(v).indexOf('var(')>=0)e.style.setProperty(k,v);else e.setAttribute(k,v)}}
+function add(e,kids){(kids||[]).forEach(function(c){if(c==null||c===false)return;e.appendChild(typeof c==='string'||typeof c==='number'?document.createTextNode(String(c)):c)});return e}
+VIZ.S=function(tag,at,kids){var e=document.createElementNS(NS,tag);set(e,at||{});return add(e,kids)};
+VIZ.H=function(tag,cls,html,kids){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return add(e,kids)};
+VIZ.svg=function(w,h,label,kids){return VIZ.S('svg',{viewBox:'0 0 '+w+' '+h,role:'img','aria-label':label||'',preserveAspectRatio:'xMidYMid meet'},kids)};
+VIZ.T=function(x,y,t,o){o=o||{};return VIZ.S('text',{x:x,y:y,'text-anchor':o.a||'middle','dominant-baseline':o.b||'middle','font-size':o.s||12,'font-weight':o.w||600,fill:o.f||'var(--viz-ink)'},[t])};
+VIZ.btn=function(label,on){var b=VIZ.H('button','vz-btn');b.type='button';b.textContent=label;if(on)b.onclick=on;return b};
+var fx=VIZ.fx={};
+/* elementy z atrybutem data-k → kliknięcie / Enter pokazuje map[k] = ['Tytuł','opis'] w polu box */
+fx.info=function(root,box,map,first){function show(k,el){var d=map[k];if(!d)return;root.querySelectorAll('.vz-hit.sel').forEach(function(x){x.classList.remove('sel')});if(el)el.classList.add('sel');box.className='vz-info';box.innerHTML='<b>'+d[0]+'</b>'+d[1]}
+ root.querySelectorAll('[data-k]').forEach(function(el){el.classList.add('vz-hit');el.setAttribute('tabindex','0');el.setAttribute('role','button');el.addEventListener('click',function(){show(el.getAttribute('data-k'),el)});el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(el.getAttribute('data-k'),el)}})});
+ if(first)show(first,root.querySelector('[data-k="'+first+'"]'));return show};
+fx.infoBox=function(t){return VIZ.H('div','vz-info',t||'Kliknij element grafiki, aby zobaczyć wyjaśnienie.')};
+/* autoodtwarzanie: step() co ms, tylko gdy grafika widoczna; klik w grafikę zatrzymuje, przycisk wznawia */
+fx.auto=function(el,step,ms,o){o=o||{};var on=!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches),vis=false,tm=null,bar=VIZ.H('div','vz-tools'),b=VIZ.H('button','vz-btn');b.type='button';
+ function lab(){b.textContent=on?'⏸ zatrzymaj animację':'▶ odtwarzaj automatycznie';b.classList.toggle('on',on)}function halt(){if(tm){clearInterval(tm);tm=null}}
+ function run(){if(tm||!on||!vis||document.hidden)return;if(o.now)step();tm=setInterval(function(){if(document.hidden||!vis){halt();return}step()},ms)}
+ b.onclick=function(){on=!on;lab();if(on)run();else halt()};bar.appendChild(b);el.insertBefore(bar,el.firstChild);lab();
+ el.addEventListener('pointerdown',function(e){if(bar.contains(e.target)||!on)return;on=false;halt();lab()},true);
+ if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(e){vis=e.isIntersecting;if(vis)run();else halt()})},{threshold:.35}).observe(el);else{vis=true;run()}
+ return{stop:function(){on=false;halt();lab()}}};
+fx.toggle=function(btns,i){btns.forEach(function(b,j){b.classList.toggle('on',j===i)})};
+VIZ.mountAll=function(){document.querySelectorAll('[data-viz]').forEach(function(f){var d=REG[f.dataset.viz],body=f.querySelector('.viz-body');var opt={};try{opt=JSON.parse(f.dataset.opt||'{}')}catch(e){}
+ if(!d){body.textContent='Brak grafiki '+f.dataset.viz;return}d.mount(body,opt,f)})};
+})();
+</script>
+
+<script>
+/* >>> VIZ przyklad-schemat */
+VIZ.define('przyklad-schemat',{opis:'Wzór: trzy elementy do klikania z opisem i animacja „do przodu”.',
+mount:function(el,opt){
+  var S=VIZ.S,T=VIZ.T,box=VIZ.fx.infoBox(),i=0;
+  var kola=[0,1,2].map(function(n){return S('circle',{cx:80+n*170,cy:90,r:40,fill:'var(--k'+(n+1)+'-bg)',stroke:'var(--k'+(n+1)+')','stroke-width':3,'data-k':'e'+n})});
+  var kropka=S('circle',{cx:80,cy:90,r:9,fill:'var(--accent)'});
+  var sv=VIZ.svg(500,180,'Trzy etapy procesu',kola.concat([T(80,150,'etap 1'),T(250,150,'etap 2'),T(420,150,'etap 3'),kropka]));
+  el.appendChild(sv);el.appendChild(box);
+  VIZ.fx.info(el,box,{e0:['Etap 1','opis…'],e1:['Etap 2','opis…'],e2:['Etap 3','opis…']});
+  VIZ.fx.auto(el,function(){i=(i+1)%3;kropka.setAttribute('cx',80+i*170)},1200);
+}});
+/* <<< VIZ */
+</script>
+
+<figure data-viz="przyklad-schemat" data-opt='{}'><figcaption>Podgląd: przyklad-schemat</figcaption><div class="viz-body"></div></figure>
+<script>VIZ.mountAll()</script>
+</body></html>
