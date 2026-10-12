@@ -99,6 +99,22 @@ Atom może tworzyć wiązania. **Wartościowość mówi, iloma „rękami” ato
 :::
 :::
 
+## 0.5 | Wykład — chemia od zera {#wyklad}
+
+::: karta understand | Wykład — po co chemikowi słownik i reguły
+Chemia opisuje substancje (ich skład i właściwości) oraz przemiany, w których jedne substancje zamieniają się w inne. Żeby o tym mówić precyzyjnie, potrzebujemy kilku pojęć: pierwiastek to rodzaj atomów o tej samej liczbie protonów, związek to substancja złożona z różnych pierwiastków w stałym stosunku, a mieszanina to zlepek substancji, które nie łączą się chemicznie.
+
+Ta powtórka porządkuje to, co wiesz z klasy 7: bezpieczeństwo w pracowni, budowę atomu, układ okresowy, wartościowość, wzory i równania. Każdy z tych tematów jest szczegółowo rozwinięty w kolejnych lekcjach bloku F.
+:::
+
+::: karta understand | W skrócie — pięć kroków przy każdym zadaniu chemicznym
+1. Nazwij, czego dotyczy zadanie (substancja, reakcja, obliczenie).
+2. Zapisz dane i jednostki.
+3. Wybierz regułę (wartościowość, oktet, bilans masy).
+4. Wykonaj obliczenie lub zapis.
+5. Sprawdź wynik: czy masa się zgadza, czy suma stopni jest zerem, czy sens fizyczny jest poprawny.
+:::
+
 ## 1 | BHP i szkło laboratoryjne [[basic:E8]] {#bhp}
 
 ::: karta core | Zasady obowiązkowe

@@ -120,6 +120,12 @@ Najczęstsza pułapka: nie każda sól jest „obojętna”. Roztwór sody (Na�
 Pamiętaj: sól to nie mieszanina kwasu i zasady, tylko nowy związek z własną siecią jonów. Znając ładunki, zbudujesz wzór; znając tabelę, przewidzisz osad.
 :::
 
+::: karta understand | W skrócie — trzy pytania przy każdej soli
+1. Jakie jony tworzą sól (kation metalu lub amonu, anion reszty kwasowej)?
+2. Czy sól jest rozpuszczalna — zajrzyj do tabeli rozpuszczalności?
+3. Czy w reakcji wytrąca się osad? Jeśli tak, zapisz równanie jonowe i wykreśl jony widzów.
+:::
+
 ## 1 | Budowa i definicja soli [[basic:E8]] {#definicja}
 
 ::: karta core | Definicja

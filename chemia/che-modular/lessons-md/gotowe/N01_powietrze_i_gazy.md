@@ -59,6 +59,20 @@ stopka: **CHEMIA N01 v1.0** · Powietrze i gazy · 2026
 :::
 :::
 
+## 0.5 | Wykład — powietrze i gazy od zera {#wyklad}
+
+::: karta understand | Wykład — co to znaczy, że powietrze jest mieszaniną
+Powietrze nie jest jedną substancją. To mieszanina gazów: w przybliżeniu 78% azotu, 21% tlenu, prawie 1% argonu i około 0,04% dwutlenku węgla. Do tego dochodzi zmienna para wodna i śladowe gazy. Składniki zachowują swoje właściwości, więc mieszaninę można rozdzielić metodami fizycznymi (np. skraplaniem i destylacją frakcyjną).
+
+Dlaczego to ważne? Tlen potrzebny jest do oddychania i spalania, azot działa jak obojętny „rozcieńczalnik”, a dwutlenek węgla wpływa na klimat i na odczyn wody. Cała lekcja to opis tych gazów przez ich reakcje i sposoby ich wykrywania.
+:::
+
+::: karta understand | W skrócie — trzy próby na gazy
+- **Tlen** — żarząca się drzazga wzbudza się i rozżarza się.
+- **Wodór** — zapalona łuczynka przy wylocie daje trzask (pop).
+- **Dwutlenek węgla** — przepuszczony przez wodę wapienną mąci ją (biały osad węglanu wapnia).
+:::
+
 ## 1 | Powietrze — mieszanina gazów [[basic:E8]] {#sklad}
 
 | Składnik | Udział objętościowy (ok.) | Uwagi |

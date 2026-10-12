@@ -80,6 +80,21 @@ Porównajmy modelowo zachowanie NaH, CH₄, NH₃ i HCl wobec wody i wskaźnikó
 
 > Jeżeli W–K–S–K i elektroujemność są jeszcze niepewne — wróć do fundamentów przed §2 i §4.
 
+## 0.4 | Wykład — wodorki od zera {#wyklad}
+
+::: karta understand | Wykład — co to jest wodorek
+Wodorek to związek wodoru z innym pierwiastkiem. O tym, jaki jest wodorek, decyduje elektroujemność partnera wodoru:
+
+- **wodorki metali** (grupy 1 i 2, np. NaH, CaH₂) — wodór jest bardziej elektroujemny, przyjmuje elektron i ma stopień −I (jon H⁻); związki mają charakter jonowy;
+- **wodorki niemetali** (np. HCl, H₂O, NH₃, CH₄) — partner jest bardziej elektroujemny, więc wodór ma stopień +I; wiązania są kowalencyjne.
+
+Ta różnica tłumaczy większość zachowań wodorków: jedne reagują z wodą, inne tworzą kwasy lub zasady.
+:::
+
+::: karta understand | W skrócie — wodorki w jednym zdaniu
+Wodorki metali reagują z wodą, wydzielając wodór (NaH + H₂O → NaOH + H₂); wodorki niemetali są kowalencyjne, a ich roztwory w wodzie mogą być kwaśne (HCl, H₂S) lub zasadowe (NH₃).
+:::
+
 ## 1 | Czym jest wodorek [[basic:E8]] {#definicja}
 
 **Wodorek** to związek chemiczny wodoru z **jednym** innym pierwiastkiem. Ogólny wzór: E<sub>x</sub>H<sub>y</sub> albo H<sub>y</sub>E (E — pierwiastek).
