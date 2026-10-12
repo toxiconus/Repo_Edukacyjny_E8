@@ -281,8 +281,7 @@ Zanim wstawisz liczby do wzoru, zrób tabelkę „przed — po” z trzema wiers
 ## 8.5 | Zadanie z przekroju materiałów — parafraza (poziom O) {#przekroj-r03}
 
 ::: karta exam | Stężenie procentowe — zadanie w stylu konkursowym | poziom O
-▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady” (sekcja 10, przykładowe pytania z chemii dla klasy 8). Rok: nieznany (plik nie podaje roku dla tej sekcji). Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Zad. 1.
-Druczek: plik przekroju (wgrany 2026-10-12, poza repo). Status źródła: niepotwierdzony — zawartość sprawdzona tylko w pliku, nie w oryginalnym arkuszu.
+<small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady” (sekcja 10, przykładowe pytania z chemii dla klasy 8). Rok: nieznany (plik nie podaje roku dla tej sekcji). Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Zad. 1. Druczek: plik przekroju (wgrany 2026-10-12, poza repo). Status źródła: niepotwierdzony — zawartość sprawdzona tylko w pliku, nie w oryginalnym arkuszu.</small>
 
 **Parafraza (własne sformułowanie):** ile procent masowych stanowi sól w gotowym roztworze o masie 200 g, jeśli rozpuszczono w nim 25 g soli?
 

@@ -891,8 +891,7 @@ BHP: Okulary; soda drażni oczy.
 ## 17.5 | Zadanie z przekroju materiałów — parafraza (poziom O) {#przekroj-n04}
 
 ::: karta exam | Zobojętnianie — zapis równania i produkty | poziom O
-▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady” (sekcja 10, przykładowe pytania z chemii dla klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Zad. 2.
-Druczek: plik przekroju (wgrany 2026-10-12, poza repo). Status źródła: niepotwierdzony.
+<small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady” (sekcja 10, przykładowe pytania z chemii dla klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Zad. 2. Druczek: plik przekroju (wgrany 2026-10-12, poza repo). Status źródła: niepotwierdzony.</small>
 
 **Parafraza (własne sformułowanie):** zapisz produkty reakcji wodorotlenku sodu z kwasem solnym i uzupełnij równanie.
 
