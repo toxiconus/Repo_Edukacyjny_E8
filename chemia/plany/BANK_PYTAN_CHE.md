@@ -747,3 +747,75 @@ Wynik porównania z przepisem OCR (sekcja wyżej):
 Do poprawy w zestawieniach i parafrazach: wartość zadania 17 (0–2), suma 53, usunięcie duplikatu w zad. 25. Przepis nie jest źródłem do cytowania; źródłem jest PDF.
 
 Status: arkusz **potwierdzony względem PDF** (metadane i punkty). Brak klucza. Oryginalne błędy w zad. 5 i 15 odnotowane.
+
+---
+
+## Egzamin ósmoklasisty 2026 – termin główny (CKE): matematyka i język polski
+
+Źródło: materiały CKE z archiwum przekazanego przez użytkownika (dwa ZIP-y: `materialy-egzaminacyjne-standardowe`). Dokumenty CKE, publikacja zasad 19.06.2026. Metadane, klucze i punktacja odczytane z PDF-ów (tekst przez pdftotext). Treści zadań do banku nie przepisuję (tylko tematy i klucze).
+
+### Matematyka – OMAP-100-2605 (wersje arkusza X i Y)
+- Termin: 12 maja 2026. Zasady: `OMAP-100-2605-zasady.pdf` (26 str.). Zeszyt zadań: 16 str., 20 zadań, **125 min**. Karta odpowiedzi (zad. 1–14) i karta rozwiązań zadań otwartych (zad. 15–20).
+- Inne formy arkusza wymienione w zasadach (nie w archiwum): OMAP-200, OMAP-400, OMAP-C00, OMAP-K00.
+- Punkty: zad. 1–14 po 1 pkt; 15 – 2; 16 – 3; 17 – 3; 18 – 2; 19 – 3; 20 – 3. **Suma 30 pkt** (wyliczona z zasad).
+
+| Nr | Klucz X | Klucz Y | Obszar (wymaganie z zasad, własne słowa) | Typ | Pkt |
+|---|---|---|---|---|---|
+| 1 | A | D | Odczyt danych z diagramu kołowego, procenty | zamknięte | 1 |
+| 2 | B | C | NWD i NWW liczb naturalnych | zamknięte | 1 |
+| 3 | C | B | Obliczanie pierwiastków kwadratowych i sześciennych | zamknięte | 1 |
+| 4 | A | C | Potęgi o wykładnikach całkowitych dodatnich | zamknięte | 1 |
+| 5 | D | A | Oznaczenia literowe, proste równania/zapisy algebraiczne | zamknięte | 1 |
+| 6 | AC | BC | Podzielność liczb (2, 3, 4, 5, 9, 10, 100) i rozróżnianie dowodu od przykładu | zamknięte (wielokrotny wybór, jak w zasadach) | 1 |
+| 7 | B | B | Zadanie tekstowe (praktyczne) | zamknięte | 1 |
+| 8 | BD | BC | Wartości wyrażeń algebraicznych; mnożenie sumy przez jednomian | zamknięte (wielokrotny wybór, jak w zasadach) | 1 |
+| 9 | D | A | Odczyt i interpretacja danych statystycznych | zamknięte | 1 |
+| 10 | PP | PP | Pole trójkąta; twierdzenie Pitagorasa (prawda/fałsz w zasadach) | P/F | 1 |
+| 11 | C | B | Miary kątów | zamknięte | 1 |
+| 12 | PP | PP | Odczyt danych; długość odcinka na układzie współrzędnych | P/F | 1 |
+| 13 | D | A | Pole trójkąta / wielokątów | zamknięte | 1 |
+| 14 | A | D | Pola powierzchni graniastosłupów | zamknięte | 1 |
+| 15 | – | – | Zadanie tekstowe (praktyczne), otwarte | otwarte | 0–2 |
+| 16 | – | – | Obliczenia praktyczne (w sytuacji praktycznej) | otwarte | 0–3 |
+| 17 | – | – | Odczyt i interpretacja danych (statystyka opisowa) | otwarte | 0–3 |
+| 18 | – | – | Objętości graniastosłupów; strategia z treści zadania | otwarte | 0–2 |
+| 19 | – | – | Pola wielokątów (trapez) w sytuacjach praktycznych | otwarte | 0–3 |
+| 20 | – | – | Obwód wielokąta o danych; język matematyczny i rozumowanie | otwarte | 0–3 |
+
+Uwaga do kluczy: zadania 6, 8 i 10/12 mają zapis wielokrotny (np. „AC", „BD", „PP") – w zasadach tak zapisano. Przed użyciem sprawdzić w zeszycie, czy pozycje to kilka odpowiedzi czy prawda/fałsz dla kilku zdań.
+
+### Język polski – OPOP-100-2605 (wersje arkusza X i Y)
+- Termin: 11 maja 2026. Zasady: `OPOP-100-400-500-660-2605-zasady.pdf` (29 str.). Zeszyt zadań: 22 str., 18 zadań, **150 min**. Karta odpowiedzi: zad. zamknięte.
+- Inne formy wymienione w zasadach (nie w archiwum): OPOP-400, OPOP-500, OPOP-660.
+- Punkty: zad. 1–7 po 1 pkt (7 – 1, zapis trzech przecinków); 8 – 3; 9 – 2; 10 – 2; 11 – 2; 12 – 1; 13 – 1; 14 – 1; 15 – 2; 16 – 1; 17 – 3; 18 – 20 (wypracowanie). **Suma 45 pkt** (wyliczona z zasad).
+- Uwaga z zasad: „Błąd rzeczowy dotyczący lektur obowiązkowych skutkuje przyznaniem 0 punktów."
+
+| Nr | Klucz X | Klucz Y | Obszar (wymaganie z zasad, własne słowa) | Typ | Pkt |
+|---|---|---|---|---|---|
+| 1 | FP | PF | Wątek główny i poboczny utworu (IV–VI) | P/F | 1 |
+| 2 | B | D | Wyszukiwanie informacji w tekście (VII–VIII) | zamknięte | 1 |
+| 3 | A | C | Wyszukiwanie informacji wprost i pośrednio (IV–VI) | zamknięte | 1 |
+| 4 | – | – | Argumentowanie; zasady retoryki (VII–VIII) | otwarte | 1 |
+| 5 | PP | PP | Charakterystyka narratora w utworze (IV–VI) | P/F | 1 |
+| 6 | PP | PP | Odbiór tekstu / zasady (klucz w zasadach) | P/F | 1 |
+| 7 | – | – | Poprawna interpunkcja: przecinki (trzy) | otwarte | 1 |
+| 8 | AD | BC | Część zadania z trzema punktami; wielokrotny wybór | zamknięte | 3 |
+| 9 | – | – | Zadanie otwarte (klasy VII–VIII) | otwarte | 2 |
+| 10 | – | – | Charakterystyka bohaterów i tematyka utworu (lektura obowiązkowa: „Kamienie na szaniec") | otwarte | 2 |
+| 11 | – | – | Zadanie otwarte (klasy VII–VIII) | otwarte | 2 |
+| 12 | A | C | Wyszukiwanie informacji w tekście | zamknięte | 1 |
+| 13 | B | D | Zadanie zamknięte (klasy IV–VI) | zamknięte | 1 |
+| 14 | – | – | Relacje między akapitami (dostrzeganie łączników między częściami wypowiedzi) | otwarte | 1 |
+| 15 | – | – | Zadanie otwarte (klasy IV–VI) | otwarte | 2 |
+| 16 | FP | PF | Części zdania i ich funkcje składniowe (podmiot, przydawka) | P/F | 1 |
+| 17 | – | – | Zadanie otwarte (klasy IV–VI) | otwarte | 3 |
+| 18 | – | – | Wypracowanie (ocena wg kryteriów wypracowania) | otwarte | 20 |
+
+Uwagi do kluczy:
+- Klucze w zasadach mają zapis „FP/PF", „PP", „AD/BC" – to odpowiedzi w obu wersjach arkusza (X i Y). Pozycje z kilkoma literami (8) przed użyciem sprawdzić w zeszycie (ile podpunktów).
+- Zadania 4, 7, 9–11, 14, 15, 17, 18 mają opis oceniania bez klucza zamkniętego – podawać jako otwarte.
+
+### Status
+- Metadane i klucze: **potwierdzone** z PDF-ów CKE (zasady oceniania). Pełna treść zadań – nie przepisywana.
+- Nie sprawdzono w tej partii: klucz w karcie odpowiedzi (PDF-y kart nie mają tekstu – zawierają zaznaczenia), tekst zeszytów zadań pod kątem tematów (tylko zasady).
+- Zawarte w ZIP-ach pliki: matematyka – zasady, zeszyt X i Y, karta odpowiedzi X i Y, karta rozwiązań zadań otwartych; polski – zasady, zeszyt X i Y (kopie identyczne co do długości tekstu), karty odpowiedzi X i Y (bez tekstu).
