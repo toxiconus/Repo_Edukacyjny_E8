@@ -101,6 +101,13 @@ D. Po co rysujemy krzywe rozpuszczalności?
 | Roztwór nasycony | Roztwór w równowadze z nierozpuszczoną substancją |
 | Krystalizacja | Proces wydzielania kryształów z roztworu |
 
+
+## Mnemotechniki — przeniesione z F12
+
+::: karta understand | Sposoby pamięciowe
+Rozpuszczalne sole: wszystkie azotany(V) i sole metali alkalicznych (tabela rozpuszczalności).
+:::
+
 ## AUDYT Grok — 2026-10-09
 
 **Co zmieniono:** Nowa lekcja od zera.  

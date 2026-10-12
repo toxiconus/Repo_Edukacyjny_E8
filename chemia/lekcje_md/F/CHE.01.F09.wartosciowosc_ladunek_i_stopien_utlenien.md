@@ -3042,6 +3042,14 @@ W `FeCl₃` każdy chlor ma zwykle `−I`, więc żelazo ma formalny stopień ut
 
 **Klucz:** 1. `+IV`; 2. `+V`; 3. `+VII`; 4. `Ca²⁺` jest jonem o rzeczywistym ładunku `2+`, a `+II` to formalny stopień utlenienia; 5. stopień utlenienia wynika z formalnego przypisania elektronów według reguł, a nie z istnienia wolnych jonów w cząsteczce.
 
+
+## Mnemotechniki — przeniesione z F12
+
+::: karta understand | Sposoby pamięciowe
+Kation oddał, anion przyjął: kationy powstają przez oddanie elektronów, aniony przez ich przyjęcie.
+H–I, O–II, Al–III, C–IV: najczęstsze wartościowości do zapamiętania z głowy.
+:::
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.

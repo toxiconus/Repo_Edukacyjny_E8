@@ -1077,6 +1077,13 @@ Dysproporcjonowanie — extra. Ogniwo: anoda utlenianie, katoda redukcja.
 <!-- ==================== END L010 ==================== -->
 
 
+
+## Mnemotechniki — przeniesione z F12
+
+::: karta understand | Sposoby pamięciowe
+UTLENIACZ przyjmuje elektrony; REDUKTOR oddaje elektrony.
+:::
+
 ## AUDYT W1 — wynik (2026-10-09, GPT-6)
 
 Zakres tej kontroli: przegląd wybranych równań, kluczy i rozróżnień pojęciowych w pliku X01–X09; nie jest to pełna walidacja każdej pozycji ani niezależna recenzja ekspercka.

@@ -1070,3 +1070,11 @@ Paradoks **HF**: F bardzo elektroujemny, ale H–F bardzo silne → HF słaby w 
 - HCOOH — jad mrówek; cytrynowy — cytrusy, E330.
 
 <!-- ==================== END L004 ==================== -->
+
+## Mnemotechniki — przeniesione z F12
+
+::: karta understand | Sposoby pamięciowe
+Kwasy beztlenowe kończą się na „-owodorowy”, tlenowe nazywamy z cyfrą stopnia utlenienia.
+Reszta kwasowa to kwas minus H⁺ (Cl⁻, SO₄²⁻, NO₃⁻).
+Zobojętnianie: kwas + zasada → sól + woda.
+:::

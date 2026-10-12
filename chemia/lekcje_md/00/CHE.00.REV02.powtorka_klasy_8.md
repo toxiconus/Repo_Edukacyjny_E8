@@ -488,6 +488,13 @@ Mapa: atom → wzór → tlenek → wodorotlenek → kwas → sól → rachunki 
 
 <!-- ==================== END L012 ==================== -->
 
+
+## Mnemotechniki — przeniesione z F12
+
+::: karta understand | Sposoby pamięciowe
+Spalanie: całkowite daje CO₂ + H₂O; niecałkowite daje CO i sadzę (C).
+:::
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
