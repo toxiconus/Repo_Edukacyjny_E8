@@ -126,3 +126,4 @@
 - 2026-10-12: CHE R07 (ZAI) wczytana, 1 błąd rachunku poprawiony; LAB01 (Grok, 41 KB — za mało) uzupełniona przez Claude do 56 KB: katalog 20 doświadczeń E8 (obs → wniosek → równanie), zadania 9–14, wskaźniki, korozja. Obie do W1.
 - 2026-10-12: BIO L019 grupy krwi — napisana (GOTOWE NAPISZ, 81 KB), wczytana skryptem; 1 literówka; do W1. L011 z GPT odrzucona (niezgodna z formatem).
 - 2026-10-12: BIO L020 mutacje (GLM z.ai) wczytana; cyrylica ×2, przywrócona grafika kod-genetyczny. wczytaj_odpowiedz: nowa kontrola zgubionych grafik z materiału (eksport/GOTOWE_zrodla.json).
+- 2026-10-12: odpowiedź na L021 (powtórka) okazała się lekcją o biotechnologii → zapisana jako BIO L022 (84 KB), do W1; L021 do ponownego napisania.

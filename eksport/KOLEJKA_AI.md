@@ -4,13 +4,15 @@
 
 ## biologia
 
-**WYSŁAĆ (bez W1) — 3 lekcji, 269 KB:** L019 (81 KB) · L020 (81 KB) · U11 (105 KB)
+**WYSŁAĆ (bez W1) — 4 lekcji, 352 KB:** L019 (81 KB) · L020 (81 KB) · L022 (83 KB) · U11 (105 KB)
 
 - zestaw 1 (81 KB): `python3 eksport/paczka_ai.py ulepsz BIO_L019 biologia/bio/md/BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja.md`
 
 - zestaw 2 (81 KB): `python3 eksport/paczka_ai.py ulepsz BIO_L020 biologia/bio/md/BIO.02.L020.czym_sa_mutacje_i_jakie.md`
 
-- zestaw 3 (105 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U11 biologia/bio/md/BIO.07.U11.rozmnazanie_i_rozwoj.md`
+- zestaw 3 (83 KB): `python3 eksport/paczka_ai.py ulepsz BIO_L022 biologia/bio/md/BIO.02.L022.biotechnologia_i_inzynieria_genetyczna.md`
+
+- zestaw 4 (105 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U11 biologia/bio/md/BIO.07.U11.rozmnazanie_i_rozwoj.md`
 
 **niski priorytet (W1 starym promptem) — 3 lekcji, 182 KB:** REV01 (43 KB) · REV02 (59 KB) · U06 (79 KB)
 

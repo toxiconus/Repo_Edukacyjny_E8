@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 171 KB)
+## .  (8 pl., 172 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 15 KB
@@ -72,19 +72,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `U10_krzywe_glukozy.svg` 10 KB
 - `U10_os_tarczycowa.svg` 10 KB
 
-## biologia/bio/md  (12 pl., 993 KB)
-- `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 44 KB
+## biologia/bio/md  (13 pl., 1.1 MB)
+- (zwinięte; `ls biologia/bio/md`) — duże:
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 61 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 63 KB
 - ⚠`BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja.md` 83 KB
+- ⚠`BIO.02.L020.czym_sa_mutacje_i_jakie.md` 84 KB
 - ⚠`BIO.07.H01.homeostaza.md` 81 KB
 - ⚠`BIO.07.U01.skora_i_uklad_ruchu.md` 59 KB
 - ⚠`BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` 106 KB
 - ⚠`BIO.07.U04.krazenie_krew_odpornosc.md` 90 KB
-- ⚠`BIO.07.U06.oddychanie_i_wydalanie.md` 82 KB
-- ⚠`BIO.07.U08.uklad_nerwowy_i_zmysly.md` 110 KB
-- ⚠`BIO.07.U10.uklad_dokrewny.md` 107 KB
-- ⚠`BIO.07.U11.rozmnazanie_i_rozwoj.md` 107 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
@@ -126,16 +123,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (43 pl., 1.3 MB)
+## biologia/plany/audyty  (44 pl., 1.4 MB)
 - (zwinięte; `ls biologia/plany/audyty`) — duże:
 - ⚠`GOTOWE_GPTC_L019_2026-10-12.md` 83 KB
+- ⚠`GOTOWE_ZAI_L020_2026-10-12.md` 84 KB
 - ⚠`GOTOWE_ZAI_U11_2026-10-12.md` 105 KB
 - ⚠`ULEPSZ_GLM_U01_2026-10-11.md` 66 KB
 - ⚠`ULEPSZ_GLM_U03_2026-10-11.md` 124 KB
 - ⚠`ULEPSZ_GLM_U10_2026-10-11.md` 68 KB
 - ⚠`ULEPSZ_H01_gpt-6_2026-10-11.md` 52 KB
 - ⚠`ULEPSZ_H01_model_B_2026-10-11.md` 61 KB
-- ⚠`ULEPSZ_H01_model_E_2026-10-11.md` 55 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB
@@ -600,7 +597,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (17 pl., 112 KB)
+## eksport  (18 pl., 114 KB)
 - (zwinięte; `ls eksport`)
 
 ## eksport/grafiki  (1 pl., 7 KB)
