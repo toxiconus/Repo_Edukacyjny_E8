@@ -17,3 +17,6 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - F03 → F04 — od makroskopowych właściwości do modelu atomowego.
 - F03 → F16–F17 — objaw reakcji i reakcja chemiczna w opisie przemian.
 - F03 → R01–R02 — rozpuszczalność i roztwory, rozwinięcie krystalizacji.
+- F04 → F05 — izotopy, jony i masa atomowa jako średnia ważona.
+- F04 → F06–F09 — układ okresowy i konfiguracja z liczby protonów i elektronów.
+- F04 → F07 — model powłokowy przechodzi w podpowłoki i orbitale.

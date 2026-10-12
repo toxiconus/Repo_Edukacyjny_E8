@@ -34,3 +34,12 @@ Format: **pojęcie** — definicja (pierwsze wprowadzenie: lekcja). Hasła są d
 - **Dekantacja** — zlanie cieczy znad osadu (F03).
 - **Chromatografia** — rozdzielanie składników o różnym powinowactwie do faz (F03).
 - **Powinowactwo** — skłonność składnika do przebywania w danej fazie (F03).
+- **Nukleon** — proton lub neutron (F04).
+- **Liczba atomowa Z** — liczba protonów w jądrze; określa pierwiastek (F04).
+- **Liczba masowa A** — suma protonów i neutronów w nuklidzie (F04).
+- **Nuklid** — konkretny rodzaj atomu o danym Z i A, np. ³⁵Cl (F04).
+- **Jon** — atom lub grupa atomów z ładunkiem; powstaje przez utratę lub przyjęcie elektronów (F04).
+- **Kation** — jon dodatni (oddał elektrony), np. Na⁺ (F04).
+- **Anion** — jon ujemny (przyjął elektrony), np. Cl⁻ (F04).
+- **Izotop** — atomy tego samego pierwiastka o różnej liczbie neutronów (F04).
+- **Izobar** — nuklidy o tym samym A i różnym Z (F04).

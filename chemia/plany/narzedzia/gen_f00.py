@@ -19,13 +19,25 @@ for i,ln in enumerate(src):
                 mm=re.match(r'^%s:\s*"?([^"]*)"?\s*$'%key,t)
                 if mm and not rec[key]: rec[key]=mm.group(1).strip()
         rows.setdefault(kod[0],[]).append((kod,rec))
+def kody_z_nazwy(czesc):
+    # "O13+O15-O20+O22-O23" -> O13, O15..O20, O22..O23 ; "R03+R05" -> R03, R05
+    out=[]
+    for part in czesc.split("+"):
+        m=re.match(r"^([A-Z])(\d\d)(?:-([A-Z])?(\d\d))?$",part)
+        if not m: continue
+        L,a=m.group(1),int(m.group(2))
+        b=int(m.group(4)) if m.group(4) else a
+        out+= [f"{L}{i:02d}" for i in range(a,b+1)]
+    return out
 # materiał (plik md) per kod
 files={}
 for d,_,fs in os.walk(R+"chemia/lekcje_md"):
     for f in fs:
         if f.endswith(".md"):
-            mm=re.match(r"CHE\.\d\d\.([A-Z]\d\d)",f)
-            if mm: files.setdefault(mm.group(1),[]).append(os.path.relpath(os.path.join(d,f),R))
+            mm=re.match(r"CHE\.\d\d\.([A-Z0-9+\-]+)\.",f)
+            if mm:
+                for kod in kody_z_nazwy(mm.group(1)):
+                    files.setdefault(kod,[]).append(os.path.relpath(os.path.join(d,f),R))
 out=[]
 out.append("## Bloki kursu: 21 lekcji F + 9 działów\n")
 out.append("Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie kanonu, plik materiału w repo. Źródło: `chemia/plany/CHE_SPIS_TRESCI.md` (generowany).\n")

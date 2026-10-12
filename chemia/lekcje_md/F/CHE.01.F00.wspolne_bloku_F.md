@@ -48,12 +48,12 @@ Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie k
 
 | Kod | Tytuł | Zakres (cel) | Wymaga | Pogłębia | Status | Materiał w repo |
 |---|---|---|---|---|---|---|
-| N01 | Powietrze i gazy | Uczeń zna skład powietrza oraz otrzymywanie, właściwości i wykrywanie tlenu, wodoru i CO₂. | F02; F03; F16 | N02; N06; K07 | GOTOWE HTML | — |
+| N01 | Powietrze i gazy | Uczeń zna skład powietrza oraz otrzymywanie, właściwości i wykrywanie tlenu, wodoru i CO₂. | F02; F03; F16 | N02; N06; K07 | GOTOWE HTML | N/CHE.02.N01.powietrze_i_gazy.md |
 | N02 | Tlenki | Uczeń zapisuje, nazywa i otrzymuje tlenki oraz klasyfikuje je wg charakteru chemicznego. | F09; F12; N01 | N03; N04; J05 | GOTOWE HTML | N/CHE.02.N02.tlenki.md |
 | N03 | Wodorotlenki i zasady | Uczeń zapisuje i otrzymuje wodorotlenki, odróżnia wodorotlenek od zasady i bada odczyn. | F09; F12; N02 | J01; J02; J05 | GOTOWE HTML | N/CHE.02.N03.wodorotlenki.md |
 | N04 | Kwasy | Uczeń zapisuje i otrzymuje kwasy tlenowe i beztlenowe, opisuje ich właściwości i odczyn. | F09; F12; N02 | J01–J03; X04 | GOTOWE HTML | N/CHE.02.N04.kwasy.md |
 | N05 | Sole | Uczeń zapisuje i nazywa sole, zna metody ich otrzymywania i przewiduje strącanie. | N03; N04 | J03; J04; J08 | GOTOWE HTML | N/CHE.02.N05.sole.md |
-| N06 | Wodorki | E8: wodór i jego proste związki. LO: systematyka wodorków. | N01; F12 | N07; P01–P02 | GOTOWE HTML | — |
+| N06 | Wodorki | E8: wodór i jego proste związki. LO: systematyka wodorków. | N01; F12 | N07; P01–P02 | GOTOWE HTML | N/CHE.02.N06.wodorki.md |
 | N07 | Systematyka nieorganiczna | Uczeń klasyfikuje dowolny związek nieorganiczny: wzór → nazwa → klasa. | N02–N06 | N08 | POPRAWIONE | N/CHE.02.N07.systematyka_nieorganiczna.md |
 | N08 | Mapa przemian „co powstanie?” | Uczeń przewiduje produkty przemian między klasami związków. | N02–N07 | J03; X01 | POPRAWIONE | N/CHE.02.N08.mapa_przemian.md |
 
@@ -65,11 +65,11 @@ Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie k
 | R02 | Rozpuszczalność | Uczeń odczytuje krzywe rozpuszczalności i rozróżnia roztwór nasycony i nienasycony. | R01 | R03; J10 | POPRAWIONE | R/CHE.03.R02.rozpuszczalnosc.md |
 | R03 | Stężenie procentowe | Uczeń oblicza stężenie procentowe, rozcieńcza, zatęża i miesza roztwory. | R02 | R05 | GOTOWE HTML | R/CHE.03.R03+R05.stezenia.md |
 | R04 | Mol i masa molowa | Uczeń przelicza masę, liczbę moli i liczbę cząstek. | F12 | R05–R09 | UZUPEŁNIONE | R/CHE.03.R04+R07-R09.stechiometria.md |
-| R05 | Stężenie molowe | Uczeń oblicza stężenie molowe i przelicza Cp ↔ Cm. | R03; R04 | J02; J07; E01 | UZUPEŁNIONE | — |
+| R05 | Stężenie molowe | Uczeń oblicza stężenie molowe i przelicza Cp ↔ Cm. | R03; R04 | J02; J07; E01 | UZUPEŁNIONE | R/CHE.03.R03+R05.stezenia.md |
 | R06 | Gazy: objętość molowa | Uczeń stosuje objętość molową i równanie Clapeyrona. | R04 | R07 | POPRAWIONE | R/CHE.03.R06.gazy_objetosc_molowa.md |
-| R07 | Stechiometria | Uczeń wykonuje obliczenia na podstawie równań reakcji. | F17; R04; R06 | R08; R09 | UZUPEŁNIONE | — |
-| R08 | Reagent ograniczający | Uczeń wskazuje reagent ograniczający i oblicza skład mieszaniny poreakcyjnej. | R07 | R09 | UZUPEŁNIONE | — |
-| R09 | Wydajność reakcji | Uczeń oblicza wydajność i uwzględnia zanieczyszczenia substratów. | R07; R08 | K11 | UZUPEŁNIONE | — |
+| R07 | Stechiometria | Uczeń wykonuje obliczenia na podstawie równań reakcji. | F17; R04; R06 | R08; R09 | UZUPEŁNIONE | R/CHE.03.R04+R07-R09.stechiometria.md |
+| R08 | Reagent ograniczający | Uczeń wskazuje reagent ograniczający i oblicza skład mieszaniny poreakcyjnej. | R07 | R09 | UZUPEŁNIONE | R/CHE.03.R04+R07-R09.stechiometria.md |
+| R09 | Wydajność reakcji | Uczeń oblicza wydajność i uwzględnia zanieczyszczenia substratów. | R07; R08 | K11 | UZUPEŁNIONE | R/CHE.03.R04+R07-R09.stechiometria.md |
 
 ### J — Chemia jonowa (12 lekcji)
 
@@ -93,28 +93,28 @@ Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie k
 | Kod | Tytuł | Zakres (cel) | Wymaga | Pogłębia | Status | Materiał w repo |
 |---|---|---|---|---|---|---|
 | O01 | Język chemii organicznej | Uczeń zapisuje wzory związków węgla i stosuje podstawy nazewnictwa. | F11; F12; F13 | O02–O25 | UZUPEŁNIONE | O/CHE.05.O01-O07.weglowodory.md |
-| O02 | Alkany | Uczeń opisuje budowę, nazwy i właściwości alkanów. | O01 | O03; O06 | UZUPEŁNIONE | — |
-| O03 | Izomeria | Uczeń rozpoznaje i rysuje izomery. | O02 | O04; O15; O18 | UZUPEŁNIONE | — |
-| O04 | Alkeny | Uczeń opisuje wiązanie podwójne i reakcje addycji. | O02; O03 | O05; O21 | UZUPEŁNIONE | — |
-| O05 | Alkiny | Uczeń opisuje wiązanie potrójne i właściwości etynu. | O04 | O06 | UZUPEŁNIONE | — |
-| O06 | Spalanie węglowodorów | Uczeń zapisuje spalanie całkowite i niecałkowite i wykrywa produkty. | O02; O04; O05; F17 | K01 | UZUPEŁNIONE | — |
-| O07 | Areny | Uczeń opisuje aromatyczność benzenu i substytucję. | O04 | O09; O25 | UZUPEŁNIONE | — |
+| O02 | Alkany | Uczeń opisuje budowę, nazwy i właściwości alkanów. | O01 | O03; O06 | UZUPEŁNIONE | O/CHE.05.O01-O07.weglowodory.md |
+| O03 | Izomeria | Uczeń rozpoznaje i rysuje izomery. | O02 | O04; O15; O18 | UZUPEŁNIONE | O/CHE.05.O01-O07.weglowodory.md |
+| O04 | Alkeny | Uczeń opisuje wiązanie podwójne i reakcje addycji. | O02; O03 | O05; O21 | UZUPEŁNIONE | O/CHE.05.O01-O07.weglowodory.md |
+| O05 | Alkiny | Uczeń opisuje wiązanie potrójne i właściwości etynu. | O04 | O06 | UZUPEŁNIONE | O/CHE.05.O01-O07.weglowodory.md |
+| O06 | Spalanie węglowodorów | Uczeń zapisuje spalanie całkowite i niecałkowite i wykrywa produkty. | O02; O04; O05; F17 | K01 | UZUPEŁNIONE | O/CHE.05.O01-O07.weglowodory.md |
+| O07 | Areny | Uczeń opisuje aromatyczność benzenu i substytucję. | O04 | O09; O25 | UZUPEŁNIONE | O/CHE.05.O01-O07.weglowodory.md |
 | O08 | Alkohole | Uczeń opisuje budowę, właściwości i reakcje alkoholi. | O02 | O10–O12 | UZUPEŁNIONE | O/CHE.05.O08+O11+O12.alkohole_kwasy_estry.md |
 | O09 | Fenole | Uczeń porównuje fenole z alkoholami. | O07; O08 | — | POPRAWIONE | O/CHE.05.O09.fenole.md |
 | O10 | Aldehydy i ketony | Uczeń rozpoznaje grupę karbonylową i wykonuje próby Tollensa i Trommera. | O08 | O11; O15 | POPRAWIONE | O/CHE.05.O10.aldehydy_i_ketony.md |
-| O11 | Kwasy karboksylowe | Uczeń opisuje budowę i reakcje kwasów karboksylowych. | O08; J01 | O12; O13 | UZUPEŁNIONE | — |
-| O12 | Estry | Uczeń zapisuje estryfikację i hydrolizę estrów. | O08; O11 | O13 | UZUPEŁNIONE | — |
+| O11 | Kwasy karboksylowe | Uczeń opisuje budowę i reakcje kwasów karboksylowych. | O08; J01 | O12; O13 | UZUPEŁNIONE | O/CHE.05.O08+O11+O12.alkohole_kwasy_estry.md |
+| O12 | Estry | Uczeń zapisuje estryfikację i hydrolizę estrów. | O08; O11 | O13 | UZUPEŁNIONE | O/CHE.05.O08+O11+O12.alkohole_kwasy_estry.md |
 | O13 | Tłuszcze, mydła i detergenty | Uczeń opisuje budowę tłuszczów, zmydlanie i działanie mydła. | O11; O12 | O22; O23 | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
 | O14 | Aminy i amidy | Uczeń opisuje zasadowość amin i budowę amidów. | O01; J06 | O18 | POPRAWIONE | O/CHE.05.O14.aminy_i_amidy.md |
-| O15 | Cukry — monosacharydy | Uczeń opisuje glukozę i fruktozę i je wykrywa. | O08; O10 | O16; O17 | UZUPEŁNIONE | — |
-| O16 | Cukry — disacharydy | Uczeń opisuje sacharozę i jej hydrolizę. | O15 | O17 | UZUPEŁNIONE | — |
-| O17 | Cukry — polisacharydy | Uczeń porównuje skrobię i celulozę i wykrywa skrobię. | O16 | O23 | UZUPEŁNIONE | — |
-| O18 | Aminokwasy | Uczeń opisuje budowę aminokwasów i wiązanie peptydowe. | O11; O14 | O19 | UZUPEŁNIONE | — |
-| O19 | Białka — struktura | Uczeń opisuje struktury białek, denaturację i koagulację. | O18 | O20 | UZUPEŁNIONE | — |
-| O20 | Białka — reakcje charakterystyczne | Uczeń wykrywa białka reakcjami charakterystycznymi. | O19 | O23 | UZUPEŁNIONE | — |
+| O15 | Cukry — monosacharydy | Uczeń opisuje glukozę i fruktozę i je wykrywa. | O08; O10 | O16; O17 | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O16 | Cukry — disacharydy | Uczeń opisuje sacharozę i jej hydrolizę. | O15 | O17 | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O17 | Cukry — polisacharydy | Uczeń porównuje skrobię i celulozę i wykrywa skrobię. | O16 | O23 | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O18 | Aminokwasy | Uczeń opisuje budowę aminokwasów i wiązanie peptydowe. | O11; O14 | O19 | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O19 | Białka — struktura | Uczeń opisuje struktury białek, denaturację i koagulację. | O18 | O20 | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O20 | Białka — reakcje charakterystyczne | Uczeń wykrywa białka reakcjami charakterystycznymi. | O19 | O23 | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
 | O21 | Polimery i tworzywa | Uczeń opisuje polimeryzację, polikondensację i problem tworzyw sztucznych. | O04; O12 | — | POPRAWIONE | O/CHE.05.O21.polimery_i_tworzywa.md |
-| O22 | Witaminy i sole mineralne | Aspekt chemiczny — właściciel tematu w biologii (REF). | O13 | — | UZUPEŁNIONE | — |
-| O23 | Metabolizm | Aspekt chemiczny — właściciel tematu w biologii (REF). | O15–O20 | — | UZUPEŁNIONE | — |
+| O22 | Witaminy i sole mineralne | Aspekt chemiczny — właściciel tematu w biologii (REF). | O13 | — | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O23 | Metabolizm | Aspekt chemiczny — właściciel tematu w biologii (REF). | O15–O20 | — | UZUPEŁNIONE | O/CHE.05.O13+O15-O20+O22-O23.biochemia.md |
 | O24 | Nazewnictwo — procedura zbiorcza | Uczeń nazywa związki wszystkich klas wg zasad IUPAC. | O01–O21 | O25 | POPRAWIONE | O/CHE.05.O24.nazewnictwo_procedura_zbiorcza.md |
 | O25 | Mechanizmy reakcji organicznych | Uczeń opisuje przepływ elektronów w typowych mechanizmach. | O24 | — | POPRAWIONE | O/CHE.05.O25.mechanizmy_reakcji_organicznych.md |
 
@@ -123,14 +123,14 @@ Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie k
 | Kod | Tytuł | Zakres (cel) | Wymaga | Pogłębia | Status | Materiał w repo |
 |---|---|---|---|---|---|---|
 | X01 | Reakcje redoks | Uczeń rozpoznaje redoks po zmianie stopni utlenienia i wskazuje utleniacz i reduktor. | F09; F17 | X02–X09 | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
-| X02 | Typowe utleniacze i reduktory | Uczeń zna katalog typowych utleniaczy i reduktorów i przewiduje produkty. | X01 | X05–X07 | POPRAWIONE | — |
-| X03 | Bilans elektronowy | Uczeń dobiera współczynniki metodą bilansu elektronowego. | X01 | X05–X08 | POPRAWIONE | — |
-| X04 | Szereg aktywności metali | Uczeń przewiduje wypieranie metali i wodoru. | N04; X01 | E02 | POPRAWIONE | — |
-| X05 | Redoks jonowy | Uczeń bilansuje redoks w formie jonowej. | X03; J03 | X06; X07 | POPRAWIONE | — |
-| X06 | Redoks w środowisku kwasowym | Uczeń bilansuje metodą połówkową w środowisku kwasowym. | X05 | E04 | POPRAWIONE | — |
-| X07 | Redoks w środowisku zasadowym | Uczeń bilansuje metodą połówkową w środowisku zasadowym. | X05 | — | POPRAWIONE | — |
-| X08 | Dysproporcjonowanie i synproporcjonowanie | Uczeń rozpoznaje i bilansuje dys- i synproporcjonowanie. | X03 | — | POPRAWIONE | — |
-| X09 | Redoks przekrojowy | Uczeń łączy całą grupę X w zadaniach przekrojowych. | X01–X08 | E01–E06 | POPRAWIONE | — |
+| X02 | Typowe utleniacze i reduktory | Uczeń zna katalog typowych utleniaczy i reduktorów i przewiduje produkty. | X01 | X05–X07 | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
+| X03 | Bilans elektronowy | Uczeń dobiera współczynniki metodą bilansu elektronowego. | X01 | X05–X08 | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
+| X04 | Szereg aktywności metali | Uczeń przewiduje wypieranie metali i wodoru. | N04; X01 | E02 | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
+| X05 | Redoks jonowy | Uczeń bilansuje redoks w formie jonowej. | X03; J03 | X06; X07 | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
+| X06 | Redoks w środowisku kwasowym | Uczeń bilansuje metodą połówkową w środowisku kwasowym. | X05 | E04 | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
+| X07 | Redoks w środowisku zasadowym | Uczeń bilansuje metodą połówkową w środowisku zasadowym. | X05 | — | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
+| X08 | Dysproporcjonowanie i synproporcjonowanie | Uczeń rozpoznaje i bilansuje dys- i synproporcjonowanie. | X03 | — | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
+| X09 | Redoks przekrojowy | Uczeń łączy całą grupę X w zadaniach przekrojowych. | X01–X08 | E01–E06 | POPRAWIONE | X/CHE.06.X01-X09.redoks.md |
 
 ### E — Elektrochemia (6 lekcji)
 
@@ -164,22 +164,22 @@ Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie k
 | Kod | Tytuł | Zakres (cel) | Wymaga | Pogłębia | Status | Materiał w repo |
 |---|---|---|---|---|---|---|
 | A01 | Jądro atomowe | Uczeń opisuje siły jądrowe i stabilność jąder. | F04; F05 | A02 | POPRAWIONE | A/CHE.08.A01.jadro_atomowe.md |
-| A02 | Radioaktywność | Uczeń rozróżnia rodzaje promieniowania i ich właściwości. | A01 | A03 | DO IMPLEMENTACJI | — |
-| A03 | Przemiany jądrowe | Uczeń zapisuje równania przemian jądrowych. | A02 | A04 | DO IMPLEMENTACJI | — |
-| A04 | Okres półtrwania i aktywność | Uczeń oblicza ubytek substancji promieniotwórczej. | A03 | A06 | DO IMPLEMENTACJI | — |
-| A05 | Energia wiązania jądra | Uczeń oblicza deficyt masy i energię wiązania. | A01 | A06 | DO IMPLEMENTACJI | — |
-| A06 | Zastosowania i BHP | Uczeń ocenia zastosowania i zagrożenia promieniotwórczości. | A04; A05 | — | DO IMPLEMENTACJI | — |
+| A02 | Radioaktywność | Uczeń rozróżnia rodzaje promieniowania i ich właściwości. | A01 | A03 | DO IMPLEMENTACJI | A/CHE.08.A02.radioaktywnosc.md |
+| A03 | Przemiany jądrowe | Uczeń zapisuje równania przemian jądrowych. | A02 | A04 | DO IMPLEMENTACJI | A/CHE.08.A03.przemiany_jadrowe.md |
+| A04 | Okres półtrwania i aktywność | Uczeń oblicza ubytek substancji promieniotwórczej. | A03 | A06 | DO IMPLEMENTACJI | A/CHE.08.A04.okres_potrwania_i_aktywnosc.md |
+| A05 | Energia wiązania jądra | Uczeń oblicza deficyt masy i energię wiązania. | A01 | A06 | DO IMPLEMENTACJI | A/CHE.08.A05.energia_wiazania_jadra.md |
+| A06 | Zastosowania i BHP | Uczeń ocenia zastosowania i zagrożenia promieniotwórczości. | A04; A05 | — | DO IMPLEMENTACJI | A/CHE.08.A06.zastosowania_i_bhp.md |
 
 ### P — Układ okresowy — pogłębienie (6 lekcji)
 
 | Kod | Tytuł | Zakres (cel) | Wymaga | Pogłębia | Status | Materiał w repo |
 |---|---|---|---|---|---|---|
-| P01 | Blok s | Uczeń opisuje litowce i berylowce oraz ich związki. | F06; F11; N03 | P04 | DO IMPLEMENTACJI | — |
-| P02 | Blok p | Uczeń opisuje pierwiastki bloku p i ich związki. | F06; N02; N04 | P04 | DO IMPLEMENTACJI | — |
-| P03 | Blok d i metale przejściowe | Uczeń opisuje konfiguracje, stopnie utlenienia i związki metali przejściowych. | F07; F08; X01 | P05 | DO IMPLEMENTACJI | — |
-| P04 | Charakterystyka grup | Uczeń porównuje grupy i ich typowe właściwości. | P01–P03 | P05 | DO IMPLEMENTACJI | — |
-| P05 | Związki charakterystyczne pierwiastków | Uczeń zna najważniejsze związki każdej grupy i ich zastosowania. | P04 | P06 | DO IMPLEMENTACJI | — |
-| P06 | Trend → właściwość → reaktywność | Uczeń przewiduje właściwości z położenia w układzie. | F06; P01–P05 | — | DO IMPLEMENTACJI | — |
+| P01 | Blok s | Uczeń opisuje litowce i berylowce oraz ich związki. | F06; F11; N03 | P04 | DO IMPLEMENTACJI | P/CHE.01.P01.blok_s.md |
+| P02 | Blok p | Uczeń opisuje pierwiastki bloku p i ich związki. | F06; N02; N04 | P04 | DO IMPLEMENTACJI | P/CHE.01.P02.blok_p.md |
+| P03 | Blok d i metale przejściowe | Uczeń opisuje konfiguracje, stopnie utlenienia i związki metali przejściowych. | F07; F08; X01 | P05 | DO IMPLEMENTACJI | P/CHE.01.P03.blok_d_i_metale_przejsciowe.md |
+| P04 | Charakterystyka grup | Uczeń porównuje grupy i ich typowe właściwości. | P01–P03 | P05 | DO IMPLEMENTACJI | P/CHE.01.P04.charakterystyka_grup.md |
+| P05 | Związki charakterystyczne pierwiastków | Uczeń zna najważniejsze związki każdej grupy i ich zastosowania. | P04 | P06 | DO IMPLEMENTACJI | P/CHE.01.P05.zwiazki_charakterystyczne_pierwiastkow.md |
+| P06 | Trend → właściwość → reaktywność | Uczeń przewiduje właściwości z położenia w układzie. | F06; P01–P05 | — | DO IMPLEMENTACJI | P/CHE.01.P06.trend_wasciwosc_reaktywnosc.md |
 
 ### 00 — Wprowadzenie, system kursu i powtórki (materiał wspólny)
 
@@ -219,7 +219,7 @@ Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z front
 | F01 | 22.3 | 99 | PRZEBUDOWA | 0 | tak | CHE.01.F01.jak_mysli_chemik.md |
 | F02 | 21.3 | 98 | PRZEBUDOWA | 0 | tak | CHE.01.F02.materia_i_substancje.md |
 | F03 | 28.7 | 105 | PRZEBUDOWA | 0 | tak | CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md |
-| F04 | 40.2 | 119 | — | 0 | wymaga: LAB00, LAB05, LAB12 | CHE.01.F04.atom.md |
+| F04 | 21.3 | 98 | PRZEBUDOWA | 0 | tak | CHE.01.F04.atom.md |
 | F05 | 40.7 | 117 | — | 0 | wymaga: LAB00, LAB05, LAB12 | CHE.01.F05.izotopy_jony_i_masa_atomowa.md |
 | F06 | 31.4 | 107 | — | 0 | wymaga: LAB12 | CHE.01.F06.uklad_okresowy.md |
 | F07 | 54.5 | 137 | W1 | 0 | wymaga: LAB20 | CHE.01.F07.konfiguracja_elektronowa.md |
@@ -237,23 +237,23 @@ Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z front
 | F19 | 12.7 | 83 | W23 | 0 | tak | CHE.01.F19.dossier_reakcji.md |
 | F20 | 13.6 | 85 | W23 | 0 | tak | CHE.01.F20.klinika_bledow_fundamentow.md |
 | F21 | 15.1 | 86 | W23 | 0 | tak | CHE.01.F21.zadania_transferowe_i_diagnostyka.md |
-| N01 | — | — | brak pliku | — | — | — |
+| N01 | 1.1 | — | PUSTY | 0 | tak | CHE.02.N01.powietrze_i_gazy.md |
 | N02 | 37.3 | 119 | — | 0 | tak | CHE.02.N02.tlenki.md |
 | N03 | 30.6 | 110 | — | 0 | tak | CHE.02.N03.wodorotlenki.md |
 | N04 | 35.4 | 118 | — | 0 | tak | CHE.02.N04.kwasy.md |
 | N05 | 37.4 | 120 | — | 0 | tak | CHE.02.N05.sole.md |
-| N06 | — | — | brak pliku | — | — | — |
+| N06 | 1.0 | — | PUSTY | 0 | tak | CHE.02.N06.wodorki.md |
 | N07 | 4.3 | 75 | W23 | 0 | tak | CHE.02.N07.systematyka_nieorganiczna.md |
 | N08 | 5.1 | 75 | W23 | 0 | tak | CHE.02.N08.mapa_przemian.md |
 | R01 | 5.5 | 76 | W23 | 0 | tak | CHE.03.R01.woda_i_roztwory.md |
 | R02 | 4.6 | 75 | W23 | 0 | tak | CHE.03.R02.rozpuszczalnosc.md |
 | R03 | 34.3 | 116 | W23 | 0 | tak | CHE.03.R03+R05.stezenia.md |
 | R04 | 41.7 | 125 | W23 | 0 | tak | CHE.03.R04+R07-R09.stechiometria.md |
-| R05 | — | — | brak pliku | — | — | — |
+| R05 | 34.3 | 116 | W23 | 0 | tak | CHE.03.R03+R05.stezenia.md |
 | R06 | 4.3 | 74 | W23 | 0 | tak | CHE.03.R06.gazy_objetosc_molowa.md |
-| R07 | — | — | brak pliku | — | — | — |
-| R08 | — | — | brak pliku | — | — | — |
-| R09 | — | — | brak pliku | — | — | — |
+| R07 | 41.7 | 125 | W23 | 0 | tak | CHE.03.R04+R07-R09.stechiometria.md |
+| R08 | 41.7 | 125 | W23 | 0 | tak | CHE.03.R04+R07-R09.stechiometria.md |
+| R09 | 41.7 | 125 | W23 | 0 | tak | CHE.03.R04+R07-R09.stechiometria.md |
 | J01 | 21.5 | 95 | W23 | 0 | tak | CHE.04.J01.dysocjacja_elektrolityczna.md |
 | J02 | 13.9 | 86 | W23 | 0 | tak | CHE.04.J02.odczyn_i_ph.md |
 | J03 | 10.2 | 81 | W23 | 0 | tak | CHE.04.J03.reakcje_jonowe.md |
@@ -267,39 +267,39 @@ Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z front
 | J11 | 4.5 | 75 | W23 | 0 | tak | CHE.04.J11.identyfikacja_jonow.md |
 | J12 | 4.7 | 75 | W23 | 0 | tak | CHE.04.J12.miareczkowanie.md |
 | O01 | 40.7 | 124 | W23 | 0 | tak | CHE.05.O01-O07.weglowodory.md |
-| O02 | — | — | brak pliku | — | — | — |
-| O03 | — | — | brak pliku | — | — | — |
-| O04 | — | — | brak pliku | — | — | — |
-| O05 | — | — | brak pliku | — | — | — |
-| O06 | — | — | brak pliku | — | — | — |
-| O07 | — | — | brak pliku | — | — | — |
+| O02 | 40.7 | 124 | W23 | 0 | tak | CHE.05.O01-O07.weglowodory.md |
+| O03 | 40.7 | 124 | W23 | 0 | tak | CHE.05.O01-O07.weglowodory.md |
+| O04 | 40.7 | 124 | W23 | 0 | tak | CHE.05.O01-O07.weglowodory.md |
+| O05 | 40.7 | 124 | W23 | 0 | tak | CHE.05.O01-O07.weglowodory.md |
+| O06 | 40.7 | 124 | W23 | 0 | tak | CHE.05.O01-O07.weglowodory.md |
+| O07 | 40.7 | 124 | W23 | 0 | tak | CHE.05.O01-O07.weglowodory.md |
 | O08 | 12.4 | 82 | W23 | 0 | tak | CHE.05.O08+O11+O12.alkohole_kwasy_estry.md |
 | O09 | 3.9 | 74 | W23 | 0 | tak | CHE.05.O09.fenole.md |
 | O10 | 3.8 | 74 | W23 | 0 | tak | CHE.05.O10.aldehydy_i_ketony.md |
-| O11 | — | — | brak pliku | — | — | — |
-| O12 | — | — | brak pliku | — | — | — |
+| O11 | 12.4 | 82 | W23 | 0 | tak | CHE.05.O08+O11+O12.alkohole_kwasy_estry.md |
+| O12 | 12.4 | 82 | W23 | 0 | tak | CHE.05.O08+O11+O12.alkohole_kwasy_estry.md |
 | O13 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
 | O14 | 3.4 | 73 | W23 | 0 | tak | CHE.05.O14.aminy_i_amidy.md |
-| O15 | — | — | brak pliku | — | — | — |
-| O16 | — | — | brak pliku | — | — | — |
-| O17 | — | — | brak pliku | — | — | — |
-| O18 | — | — | brak pliku | — | — | — |
-| O19 | — | — | brak pliku | — | — | — |
-| O20 | — | — | brak pliku | — | — | — |
+| O15 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O16 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O17 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O18 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O19 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O20 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
 | O21 | 4.3 | 74 | W23 | 0 | tak | CHE.05.O21.polimery_i_tworzywa.md |
-| O22 | — | — | brak pliku | — | — | — |
-| O23 | — | — | brak pliku | — | — | — |
+| O22 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O23 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
 | O24 | 4.1 | 74 | W23 | 0 | tak | CHE.05.O24.nazewnictwo_procedura_zbiorcza.md |
 | O25 | 4.0 | 74 | W23 | 0 | tak | CHE.05.O25.mechanizmy_reakcji_organicznych.md |
 | X01 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
-| X02 | — | — | brak pliku | — | — | — |
-| X03 | — | — | brak pliku | — | — | — |
-| X04 | — | — | brak pliku | — | — | — |
-| X05 | — | — | brak pliku | — | — | — |
-| X06 | — | — | brak pliku | — | — | — |
-| X07 | — | — | brak pliku | — | — | — |
-| X08 | — | — | brak pliku | — | — | — |
-| X09 | — | — | brak pliku | — | — | — |
+| X02 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
+| X03 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
+| X04 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
+| X05 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
+| X06 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
+| X07 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
+| X08 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
+| X09 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
 | E01 | 3.4 | 73 | W23 | 0 | tak | CHE.06.E01.ogniwo_galwaniczne.md |
 | E02 | 3.4 | 73 | W23 | 0 | tak | CHE.06.E02.potencjaly_elektrodowe.md |
 | E03 | 2.9 | 73 | W23 | 0 | tak | CHE.06.E03.sem.md |
@@ -318,17 +318,17 @@ Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z front
 | K10 | 14.2 | 88 | PRZEBUDOWA | 0 | tak | CHE.07.K10.regula_le_chateliera.md |
 | K11 | 18.1 | 94 | PRZEBUDOWANA OD ZERA (wersja 2) | 0 | tak | CHE.07.K11.rownowaga_ilosciowa.md |
 | A01 | 2.4 | 72 | W23 | 0 | tak | CHE.08.A01.jadro_atomowe.md |
-| A02 | — | — | brak pliku | — | — | — |
-| A03 | — | — | brak pliku | — | — | — |
-| A04 | — | — | brak pliku | — | — | — |
-| A05 | — | — | brak pliku | — | — | — |
-| A06 | — | — | brak pliku | — | — | — |
-| P01 | — | — | brak pliku | — | — | — |
-| P02 | — | — | brak pliku | — | — | — |
-| P03 | — | — | brak pliku | — | — | — |
-| P04 | — | — | brak pliku | — | — | — |
-| P05 | — | — | brak pliku | — | — | — |
-| P06 | — | — | brak pliku | — | — | — |
+| A02 | 1.0 | — | PUSTY | 0 | tak | CHE.08.A02.radioaktywnosc.md |
+| A03 | 1.0 | — | PUSTY | 0 | tak | CHE.08.A03.przemiany_jadrowe.md |
+| A04 | 1.0 | — | PUSTY | 0 | tak | CHE.08.A04.okres_potrwania_i_aktywnosc.md |
+| A05 | 1.0 | — | PUSTY | 0 | tak | CHE.08.A05.energia_wiazania_jadra.md |
+| A06 | 1.0 | — | PUSTY | 0 | tak | CHE.08.A06.zastosowania_i_bhp.md |
+| P01 | 1.0 | — | PUSTY | 0 | tak | CHE.01.P01.blok_s.md |
+| P02 | 0.9 | — | PUSTY | 0 | tak | CHE.01.P02.blok_p.md |
+| P03 | 1.1 | — | PUSTY | 0 | tak | CHE.01.P03.blok_d_i_metale_przejsciowe.md |
+| P04 | 1.0 | — | PUSTY | 0 | tak | CHE.01.P04.charakterystyka_grup.md |
+| P05 | 1.1 | — | PUSTY | 0 | tak | CHE.01.P05.zwiazki_charakterystyczne_pierwiastkow.md |
+| P06 | 1.1 | — | PUSTY | 0 | tak | CHE.01.P06.trend_wasciwosc_reaktywnosc.md |
 
 
 ## Zasady kursu
