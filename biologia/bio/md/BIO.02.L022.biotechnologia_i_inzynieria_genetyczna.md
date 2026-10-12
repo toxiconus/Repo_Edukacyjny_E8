@@ -663,7 +663,7 @@ Korzyści: enzym bez uboju zwierząt (podpuszczka z żołądków cieląt to dawn
 
 ## 15 | Fiszki {#fiszki} [[basic:E8]]
 
-::: fiszki | Fiszki — powtórka lekcji L021
+::: fiszki | Fiszki — powtórka lekcji L022
 Biotechnologia | Wykorzystywanie organizmów, ich komórek albo enzymów do wytwarzania i modyfikowania produktów | basic:definicja
 Fermentacja | Beztlenowy rozkład cukrów przez drobnoustroje | basic:ferment
 Drożdże | Grzyby — fermentacja alkoholowa w piekarnictwie, winiarstwie, piwowarstwie | basic:grzyby
