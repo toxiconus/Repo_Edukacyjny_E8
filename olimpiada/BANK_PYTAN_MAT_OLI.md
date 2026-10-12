@@ -32,3 +32,18 @@ Limit czasu z pliku: 100 minut, 7 zadań po 3 pkt. Rozwiązania z pliku nie są 
 ## Typy zadań OMJ klasy 8 (wg pliku, sekcja 8)
 
 Podzielność; równania i nierówności w liczbach całkowitych; geometria (trójkąty, trapezy, okręgi, pola); kombinatoryka i logika; funkcje i wartość bezwzględna (poziom junior). Zakres niepotwierdzony.
+
+## E8 2024 (OMAP-100-2405, 15.05.2024) — zad. 1–8, bez powtórek
+
+Zakres: tylko zadania 1–8 w pliku (wersja „fragmenty” i „dalsze fragmenty” są tym samym tekstem — ujęte raz). Zadań 9–19 w pliku nie ma. Parafrazy własnymi słowami.
+
+<small>Źródło: plik „Przekrój materiałów” (wgrany 2026-10-12, poza repo). Status: niepotwierdzony. Klucz własny (weryfikacja rachunkowa), oficjalny klucz CKE nieotwarty.</small>
+
+- **Zad. 1 (0–1, P/F):** diagram z minutami nauki języka w dniach tygodnia (pon.–sob.). Stwierdzenia: suma pon.–czw. to 2 h 10 min; w sobotę o 40% mniej niż w piątek. *Status:* niesprawdzalne — wartości słupków nie są w tekście.
+- **Zad. 2 (0–1):** ułamki o mianowniku 4, liczniku naturalnym większym od mianownika i wartości między 3 a 5. Ile ich jest? Własna weryfikacja: licznik n ∈ (12, 20) → n = 13…19 → **7 ułamków (B)**.
+- **Zad. 3 (0–1, P/F):** średnia trzech liczb 12, 14, k wynosi 16. Czy k = 22? Czy średnia pięciu liczb 12, 14, k, 11, 17 jest większa od 16? Własna weryfikacja: k = 22 → **P**; średnia = 76/5 = 15,2 → **F**.
+- **Zad. 4 (0–1):** liczby x = (4/5)·(−4/3) i y = 4/5 + (−4/3). Czy y jest dodatnia czy ujemna? Czy x jest mniejsza czy większa od y? Własna weryfikacja: x = −16/15, y = −8/15 → y **ujemna (A)**, x **mniejsza (C)**.
+- **Zad. 5 (0–1):** trapez z równoległymi AB i DC, odcinek EC równoległy do AD, dwa kąty podane (135° i 80°), szukany kąt α. *Status:* niesprawdzalne — rysunek i jego układ kątów nie są w tekście.
+- **Zad. 6 (0–1):** z równania 5x = y/w wyznacz x, y, w. Które z trzech przekształceń są poprawne? Własna weryfikacja: I (x = y/(5w)) — poprawne; II (y = 5x/w) — **błędne** (poprawnie y = 5xw); III (w = y/(5x)) — poprawne → **C (I i III)**.
+- **Zad. 7 (0–1, P/F):** dwa stwierdzenia o potęgach (3·9⁵ oraz potęga 2 w ułamku). *Status:* częściowo nieczytelne w pliku (zapis potęg rozbity) — nie oceniam.
+- **Zad. 8 (0–1):** pudełko z 32 balonami (czerw. 10, niebieskie 8, zielone 6, żółte 8). Pierwsze dwa wylosowane czerwone. Prawdopodobieństwo, że trzeci też czerwony? Własna weryfikacja: 8/30 = **4/15**. *Status:* odpowiedzi A–D w pliku nieczytelne (ułamki rozbite), więc nie podaję, która litera.
