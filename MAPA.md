@@ -11,7 +11,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
-- `WERYFIKACJA.md` 41 KB
+- `WERYFIKACJA.md` 42 KB
 
 ## angielski  (3 pl., 959 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -125,7 +125,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (41 pl., 1.2 MB)
+## biologia/plany/audyty  (42 pl., 1.3 MB)
 - (zwinięte; `ls biologia/plany/audyty`) — duże:
 - ⚠`GOTOWE_ZAI_U11_2026-10-12.md` 105 KB
 - ⚠`ULEPSZ_GLM_U01_2026-10-11.md` 66 KB
@@ -373,16 +373,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (19 pl., 1.3 MB)
+## chemia/che-modular/lessons-md/gotowe  (21 pl., 1.4 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 53 KB
 - ⚠`F06_uklad_okresowy.md` 56 KB
 - ⚠`F17_rownania_reakcji_i_obliczenia.md` 57 KB
 - ⚠`FIZ01_elektrostatyka.md` 116 KB
 - ⚠`J03_rownania_jonowe_i_stracanie.md` 91 KB
+- ⚠`LAB01_doswiadczenia_obserwacja_wniosek.md` 57 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 129 KB
-- ⚠`N03_kwasy.md` 134 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
 - `FIZ01.json` 1 KB
@@ -583,10 +583,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 66 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (27 pl., 615 KB)
+## chemia/plany/audyty  (29 pl., 737 KB)
 - (zwinięte; `ls chemia/plany/audyty`) — duże:
 - ⚠`GOTOWE_SONNET_FIZ-01_2026-10-12.md` 116 KB
 - ⚠`GOTOWE_ZAI_J03_2026-10-12.md` 92 KB
+- ⚠`GOTOWE_ZAI_R07_2026-10-12.md` 80 KB
 - ⚠`GOTOWE_ZAI_X04_2026-10-12.md` 91 KB
 
 ## chemia/plany/narzedzia  (3 pl., 50 KB)
