@@ -44,6 +44,67 @@
 
 Źródło: panelkonkursy.mscdn.pl, „model_chem_sp_szk” (pobrany tylko klucz). Pozycje 1–12 z kluczem: 1 B, 2 D, 3 A, 4 C, 5 D, 6 A, 7 D, 8 D, 9.1 B, 9.2 D, 10 B, 11.1 B (po 1 pkt). Treści pytań brak w pobranym pliku — zadania do uzupełnienia z pełnego modelu.
 
+## Egzamin ósmoklasisty — chemia jako przedmiot dodatkowy (arkusze pokazowe)
+
+Źródło: OKE Warszawa, „Arkusze pokazowe egzamin ósmoklasisty z przedmiotów dodatkowych / Chemia” (oke.waw.pl). Poziom: P (podstawa). Etap: egzamin E8.
+
+### OCHP 800 — zasady oceniania z odpowiedziami (pobrane: `OCHP_800_zasady_oceniania.pdf`)
+
+Razem 34 pkt; 20 zadań. Odpowiedzi jak w zasadach oceniania (źródło: OKE Warszawa).
+
+| Zad. | Dział lekcji | Odpowiedź | Pkt |
+|---|---|---|---|
+| 1 | F02 (właściwości, metale/niemetale) | TAK, TAK | 0–2 |
+| 2 | F02 (nazwy pierwiastków i związków) | tlen; dwutlenek węgla lub woda | 0–1 |
+| 3 | BHP (piktogramy) | A | 0–1 |
+| 4 | F12 (wzór i nazwa CO₂) | CO₂; dwutlenek węgla | 0–2 |
+| 5 | F06 (układ okresowy, grupa, wartościowość) | TAK, NIE | 0–2 |
+| 6 | F03 (zjawisko fizyczne) | fizyczne; nie powstaje nowa substancja | 0–2 |
+| 7 | N01 (zanieczyszczenia powietrza) | TAK, TAK | 0–2 |
+| 8 | F12 (prawo stałości składu; tlenek) | SO₂ | 0–2 |
+| 9 | F17 (równanie reakcji) | 2H₂ + O₂ → 2H₂O | 0–1 |
+| 10 | F06 (dane z układu okresowego, O i H) | A | 0–1 |
+| 11 | R03 (stężenie procentowe) | 10% (masa roztworu 100 g) | 0–2 |
+| 12 | J02 (pH) | kwasowy | 0–1 |
+| 13 | J02 (wskaźniki) | probówka 1: HNO₃; probówka 2: KOH | 0–1 |
+| 14 | J06 (zobojętnianie, sole) | TAK, TAK | 0–2 |
+| 15.1 | R02 (rozpuszczalność z wykresu) | więcej soli, cukier ma wyższą rozpuszczalność | 0–2 |
+| 15.2 | R02 (rozpuszczalność, obliczenie) | B | 0–1 |
+| 16.1 | J10 (wytrącanie osadu) | Pb(NO₃)₂, bo rozpuszcza się w wodzie | 0–2 |
+| 16.2 | J10 (równanie jonowe) | Pb²⁺ + 2I⁻ → PbI₂ | 0–1 |
+| 17 | O (węglowodory, spalanie) | TAK, TAK | 0–2 |
+| 18 | O (tłuszcze) | B | 0–1 |
+| 19 | J01 (elektrolity) | A | 0–1 |
+| 20 | O (alkohole, kwasy organiczne) | TAK, NIE | 0–2 |
+
+Uwaga: zadania 15.2, 16.2 i 17 są na poziomie L/A (nie tylko P). Przy wpisywaniu do lekcji oznaczyć poziomem.
+
+### OCHP 400 — treści zadań, bez kluczy (pobrany: `OCHP_400.pdf`)
+
+Odpowiedzi nie zawiera (w pobranym pliku brak kluczy). Do uzupełnienia z zasad oceniania OCHP 400, jeśli zostaną znalezione.
+
+1. Znaki ostrzegawcze na etykiecie (wybór A–D) — BHP.
+2. Destylacja gazu rozweselającego: który składnik oddestyluje pierwszy i dlaczego (temperatura wrzenia) — F03, poziom L.
+3. Która warstwa w probówce to kwas oleinowy (gęstość cieczy) — F03.
+4. Uzasadnienie, że schemat ilustruje wiązanie jonowe w bromku wapnia — F11, otwarte.
+5. Pierwiastek z jednym elektronem na czwartej powłoce: metal czy niemetal; oddaje czy przyjmuje elektrony — F06, F11.
+6. Izotop z 21 neutronami: uzupełnić tabelę (A, Z, p, symbol) — F04, otwarte.
+7. Endotermiczne rozpuszczanie w zlewce: która zlewka i dlaczego (zmiana temperatury) — K02, poziom L.
+8. Kompres SUPER ICE: której substancji nie można użyć i dlaczego — F03/K02, otwarte.
+9. Reakcja magnezu z kwasem solnym: czynnik wpływający na ubytek masy, produkt — F17, A.
+10. Smog: prawdziwość dwóch zdań i wyjaśnienie zimą — N01.
+
+## Konkursy i olimpiady — poziomy (etap szkolny, rejonowy, wojewódzki)
+
+Zasada: każde pytanie ma etap i źródło. Na razie tylko podstawówka.
+
+| Etap | Stan banku | Źródło |
+|---|---|---|
+| Szkolny | 12 pozycji z tematem i punktacją (bez kluczy) | kuratorium.krakow.pl, „etap szkolny – zadania” |
+| Szkolny (model) | tylko klucz, 12 pozycji | panelkonkursy.mscdn.pl, „model_chem_sp_szk” |
+| Rejonowy | **brak** — do znalezienia | |
+| Wojewódzki | **brak** — do znalezienia | (np. Kielce: przedmiotowy regulamin VIII wojewódzkiego konkursu z chemii 2026/2027 — tylko regulamin) |
+
 ## Nasze testy (z lekcji, pogrupowane tematycznie)
 
 Źródło: testy w lekcjach w `chemia/lekcje_md/` (wyciągnięte skryptem). Odpowiedź poprawna oznaczona ✔.
