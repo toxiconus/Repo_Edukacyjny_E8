@@ -9,7 +9,7 @@ lead: Umiejętności: klasyfikowanie biotechnologii klasycznej i molekularnej, o
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Podstawa E8 — znaczenie biotechnologii klasycznej (piekarnictwo, winiarstwo, piwowarstwo, serowarstwo, kiszenie, ogrodnictwo) i molekularnej (inżynieria genetyczna, organizmy transgeniczne, produkcja leków, testy genetyczne, genoterapia). Warstwa konkursowa — plazmidy i enzymy restrykcyjne, wspólny kod genetyczny, klonowanie (owca Dolly), CRISPR, granice etyczne. Daty i liczby (1982, 1996, Nagroda Nobla 2020) są orientacyjne. Bezpieczeństwo i regulacje omawiane na poziomie idei, bez protokołów medycznych.
 stopka: **BIOLOGIA L022 v1.0** · Co potrafi inżynieria genetyczna — i gdzie są jej granice? · 2026
-stan: WYPEŁNIONY — Claude (paczka GOTOWE GPT_C; model zamiast powtórki L021 napisał lekcję o biotechnologii — zapisana jako L022), 2026-10-12; do ULEPSZONA
+stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewnętrznego W1 (eksport/out/W1_BIO_L022.md)
 ---
 
 ::: minimum | Muszę umieć — 10 punktów
@@ -62,7 +62,7 @@ Kurs czytasz sam, w swoim tempie — dlatego lekcja jest zbudowana jak schody, n
 | testy diagnozują, genoterapia naprawia, grupy krwi tylko wykluczają | mapa zastosowań bez mylenia roli każdego narzędzia |
 :::
 
-Jeśli utkniesz: wróć do [kliniki błędów](#klinika), potem do fiszek, a na końcu do ściągi w [§18](#sciaga). Ściągę przeczytaj dzień po pierwszym czytaniu lekcji i jeszcze raz po tygodniu — wtedy utrwali się najlepiej.
+Jeśli utkniesz: wróć do [kliniki błędów](#klinika), potem do fiszek, a na końcu do ściągi w [§18](#sciaga). Ściągę warto przeczytać ponownie po pierwszym czytaniu, a potem wracać do niej przy każdym kolejnym powtórzeniu działu.
 
 ## 0.2 | Diagnoza {#diagnoza}
 
@@ -94,7 +94,7 @@ A teraz most, który przerzuca nas z kuchni do laboratorium. Człowiek od tysię
 
 Jak to wygląda w laboratorium? Mechanizm da się opisać trzema narzędziami, które nazwiesz w zadaniach „nożycami, klejem i kurierekiem”. **Enzymy restrykcyjne** to białka tnące DNA w bardzo konkretnych sekwencjach — molekularne nożyczki. **Ligaza** to molekularny klej — łączy końce łańcuchów DNA. A **plazmid** to mały, kolisty kawałek DNA naturalnie żyjący w bakteriach, obok ich głównego chromosomu; po otwarciu i wstawieniu w niego genu działa jak wektor — kurier dostarczający gen do komórki. Zbierzmy to w pięć kroków, na przykładzie produkcji ludzkiej insuliny: (1) wycinamy ludzki gen insuliny enzymem restrykcyjnym; (2) otwieramy plazmid tym samym enzymem — końce pasują; (3) ligaza skleja gen z plazmidem — powstaje DNA rekombinowane, łączące materiał z dwóch źródeł; (4) wprowadzamy plazmid do bakterii, na przykład szczepu Escherichia coli; (5) hodujemy bakterie — każda dzieli się, kopiuje plazmid i **produkuje białko kodowane przez gen**, w tym przypadku ludzką insulinę. Potem produkt się oczyszcza i trafia do pacjentów.
 
-Dlaczego bakteria w ogóle potrafi czytać ludzki gen? To najważniejsze „dlaczego” tej lekcji i piękny zwrot akcji z L020: **kod genetyczny jest niemal wspólny dla wszystkich organizmów**. Ta sama trójka zasad oznacza ten sam aminokwas u człowieka i u bakterii. Bakteria, którą wszczepiono ludzki gen, odczytuje go więc jak swój własny — i drukuje ludzkie białko. Nie ma „bakteriego tłumacza”, który by je przekręcił. Dzięki temu od 1982 roku  pacjenci z cukrzycą dostają insulinę rekombinowaną — ludzkie białko produkowane przez bakterie, zamiast insuliny wydobywanej z trzustek świń i bydła, jak dawniej. Ten sam schemat daje dziś hormony wzrostu, czynniki krzepnięcia dla chorych na hemofilię (most do L018) i składniki szczepionek.
+Dlaczego bakteria w ogóle potrafi czytać ludzki gen? To najważniejsze „dlaczego” tej lekcji i piękny zwrot akcji z L020: **kod genetyczny jest niemal wspólny dla wszystkich organizmów**. Ta sama trójka zasad oznacza ten sam aminokwas u człowieka i u bakterii. Bakteria, którą wszczepiono ludzki gen, odczytuje go więc jak swój własny — i drukuje ludzkie białko. Nie ma „bakteriego tłumacza”, który by je przekręcił. Dzięki temu od 1982 roku pacjenci z cukrzycą dostają insulinę rekombinowaną — ludzkie białko produkowane przez bakterie, zamiast insuliny wydobywanej z trzustek świń i bydła, jak dawniej. Ten sam schemat daje dziś hormony wzrostu, czynniki krzepnięcia dla chorych na hemofilię (most do L018) i składniki szczepionek.
 
 Biotechnologia molekularna to jednak więcej niż fabryki białek. Geny przenosi się także do **roślin**: kukurydza z genem bakterii Bacillus thuringiensis sama broni się przed wybranymi szkodnikami; soja z genem dającym odporność na herbicyd pozwala opryskiwać pole bez niszczenia uprawy; złoty ryż z genami innych roślin produkuje w ziarnie beta-karoten — źródło witaminy A — i ma pomagać tam, gdzie niedobór tej witaminy to sprawą życia i śmierci. Organizmy z genami innych gatunków nazywamy **transgenicznymi**, a szerzej — organizmami modyfikowanymi genetycznie (GMO).
 
@@ -120,6 +120,10 @@ Biotechnologia to wykorzystywanie organizmów, ich komórek albo enzymów do wyt
 
 ::: karta understand | W skrócie — dlaczego ciasto rośnie, a kapusta się nie psuje?
 Drożdże w cieście fermentują beztlenowo: z cukrów wytwarzają dwutlenek węgla i etanol. Pęcherzyki CO₂ unosi ciasto od środka — bochenek jest puszysty — a etanol wyparowuje w gorącym piecu. W kapuście i ogórkach pracują bakterie kwasu mlekowego: wytworzony kwas obniża pH i hamuje rozwój drobnoustrojów gnilnych, więc produkt konserwuje się sam. W obu przypadkach człowiek nie wytwarza niczego — korzysta z metabolizmu drobnoustrojów, dając im cukier i odpowiednie warunki (ciepło, brak tlenu).
+:::
+
+::: karta extra | Zastosowania poza spiżarnią — bioetanol i biogaz
+Ten sam etanol z fermentacji alkoholowej bywa dodawany do benzyny jako bioetanol — to pokazuje, że fermentacja służy nie tylko piekarzom. Biogaz powstaje w beztlenowym rozkładzie odpadów przez drobnoustroje (m.in. archeony metanogenne); zawiera głównie metan, który można spalać do ogrzewania lub produkcji prądu. Zasada ta sama: beztlenowy metabolizm drobnoustrojów daje produkt przydatny człowiekowi.
 :::
 
 ::: karta warning | Uważaj: fermentacja ≠ gnicie i fermentacja ≠ oddychanie tlenowe
@@ -182,6 +186,9 @@ Inżynieria genetyczna to zmienianie DNA organizmu przez wstawienie, usunięcie 
 3. **Wklej** — ligaza skleja gen z plazmidem: powstaje DNA rekombinowane.
 4. **Wgraj** — plazmid wprowadza się do bakterii (np. Escherichia coli).
 5. **Produkuj** — bakteria dzieli się, każda córka kopiuje plazmid i produkuje białko kodowane przez gen; po hodowli produkt się oczyszcza.
+
+@viz klonowanie-genu | Klonowanie genu krok po kroku | animacja w pięciu krokach
+@opis Pięć scen, kolejno: (1) wycinanie — długa nić DNA człowieka z zaznaczonym na niebiesko–zielono genem insuliny, dwa cięcia enzymem restrykcyjnym po obu stronach genu, obok kolisty plazmid; (2) otwieranie — gen leży osobno, plazmid ma cięcie tym samym enzymem („ten sam enzym”); (3) wklejanie — gen wsunięty w plazmid, nad nim ikona ligazy („ligaza skleja”), podpis „DNA rekombinowane”; (4) wgrywanie — owalny kształt bakterii Escherichia coli z plazmidem w środku („plazmid z genem”); (5) produkcja — bakteria z plazmidem, strzałka wychodzi w prawo i pokazuje trzy kule białka („białko = ludzka insulina”). Wniosek: trzy narzędzia (nożyce, klej, wektor) i podziały bakterii zamieniają jeden gen w fabrykę białka.
 
 ::: karta understand | W skrócie — dlaczego bakteria produkuje ludzkie białko?
 Bo kod genetyczny jest niemal wspólny dla wszystkich organizmów — ta sama trójka zasad oznacza ten sam aminokwas u człowieka i u bakterii (most do L020). Bakteria z wstawionym ludzkim genem odczytuje go jak swój własny i drukuje identyczne białko. Dlatego insulina rekombinowana (od 1982, data orientacyjna) to prawdziwe ludzkie białko — lepsze od dawnej insuliny zwierzęcej, wydobywanej z trzustek świń i bydła, której produkt nieco różnił się od ludzkiego i bywało go za mało.
@@ -269,11 +276,11 @@ Trzy zastosowania, które trzeba umieć rozdzielić, bo każde robi coś innego:
 | genoterapia | wprowadza sprawny allel do komórek pacjenta | idea leczenia chorób genetycznych | L020 (somatyczne/generatywne) |
 
 ::: karta understand | W skrócie — test diagnozuje, terapia naprawia, a grupy krwi wykluczają
-Test genetyczny to odczyt, nie leczenie: wskazuje allel lub mutację w DNA, więc może wykryć chorobę (u chorego), nosicielstwo (u zdrowej nosicielki XᴬXᵃ z L018) i — przy pełnych danych — potwierdzić pokrewieństwo, bo DNA zawiera tysiące niezależnych znaczników. Genoterapia to idea naprawy: wstawienie sprawnego allelu do komórek pacjenta, zwykle za pomocą wektora wirusowego. A grupy krwi z L019? One mają w badaniach pokrewieństwa rolę wykluczającą — pewnie odrzucają niemożliwe pary, ale zgodność grup nie dowodzi niczego. Trzy narzędzia, trzy różne role: odczyt, naprawa, eliminacja możliwości.
+Test genetyczny to odczyt, nie leczenie: wskazuje allel lub mutację w DNA, więc może wykryć chorobę (u chorego), nosicielstwo (u zdrowej nosicielki XᴬXᵃ z L018) i — przy pełnych danych — potwierdzić pokrewieństwo, bo DNA zawiera tysiące niezależnych znaczników. Genoterapia to idea naprawy: wstawienie sprawnego allelu do komórek pacjenta, zwykle za pomocą wektora wirusowego. A grupy krwi z L019? One mają w badaniach pokrewieństwa rolę wykluczającą — pomagają odrzucić niemożliwe pary, ale zgodność grup nie dowodzi niczego. Trzy narzędzia, trzy różne role: odczyt, naprawa, eliminacja możliwości.
 :::
 
 ::: karta understand | W skrócie — dlaczego genoterapia somatyczna nie zmienia potomstwa?
-Bo dotyczy komórek ciała pacjenta — to terapia **somatyczna** (most do L020). Korekta istnieje w komórkach leczonych tkanek, a nie w gametach, więc dzieci pacjenta niczego nie dziedziczą — i zresztą same nie chorowały, bo choroba u nich musiałaby powstać na nowo. Terapia germinalna — zmieniająca gamety albo zarodki — byłaby dziedziczna: korekta przechodziłaby do wszystkich komórek dziecka i do kolejnych pokoleń. Właśnie dlatego jest z powodów etycznych zakazana u ludzi, mimo że technicznie jej zasady są znane.
+Bo dotyczy komórek ciała pacjenta — to terapia **somatyczna** (most do L020). Korekta istnieje w komórkach leczonych tkanek, a nie w gametach, więc dzieci pacjenta nie dziedziczą jej: ich DNA powstaje z gamet rodziców, które pozostają bez zmian. Terapia germinalna — zmieniająca gamety albo zarodki — byłaby dziedziczna: korekta przechodziłaby do wszystkich komórek dziecka i do kolejnych pokoleń. Właśnie dlatego jest z powodów etycznych zakazana u ludzi, mimo że technicznie jej zasady są znane.
 :::
 
 ::: nie-myl | Trzy pary zastosowań, które się mylą
@@ -300,15 +307,15 @@ c) (1 pkt) grupy krwi mają tylko kilka wariantów i zgodne grupy ma mnóstwo ni
 
 Ta sekcja wykracza poza podstawę programową — a właśnie stąd biorą się zadania konkursowe. Przeczytaj ją dwukrotnie: najpierw dla obrazu, potem dla detali.
 
-**Plazmidy i enzymy restrykcyjne — głębiej.** Enzymy restrykcyjne poznają konkretne sekwencje DNA (zwykle krótkie, symetryczne) i tną w nich, zostawiając charakterystyczne „lepkie końce”. Ten sam enzym na plazmidzie i na genie daje kompatybilne końce — dlatego wstawka pasuje do wektora jak klucz do zamka. Ligaza skleina wiązania, ale nie rozróżnia, skąd pochodzi DNA — stąd DNA rekombinowane jest chemicznie „legalne”. Bakteria, która przyjmie plazmid (transformacja), kopiuje go przy każdym podziale — hodowla to więc jednocześnie **klonowanie genu**: miliardy kopii identycznego fragmentu DNA i równie wiele kopii produktu.
+**Plazmidy i enzymy restrykcyjne — głębiej.** Enzymy restrykcyjne poznają konkretne sekwencje DNA (zwykle krótkie, symetryczne) i tną w nich, zostawiając charakterystyczne „lepkie końce”. Ten sam enzym na plazmidzie i na genie daje kompatybilne końce — dlatego wstawka pasuje do wektora jak klucz do zamka. Ligaza skleja wiązania, ale nie rozróżnia, skąd pochodzi DNA — stąd DNA rekombinowane jest chemicznie „legalne”. Bakteria, która przyjmie plazmid (transformacja), kopiuje go przy każdym podziale — hodowla to więc jednocześnie **klonowanie genu**: miliardy kopii identycznego fragmentu DNA i równie wiele kopii produktu.
 
 ::: karta understand | Dla olimpijczyka — dlaczego wspólny kod genetyczny to argument ewolucyjny
 Wspólny kod (L020) nie jest przypadkiem technicznej wygody: to jeden z najmocniejszych argumentów wspólnego pochodzenia życia. Gdyby każdy gatunek miał osobny język, gen insuliny w bakterii byłby hałasem. Skoro język jeden — bakteria drukuje ludzkie białko, a my możemy przenosić geny między królestwami. W zadaniach z uzasadnieniem: „przeniesienie genu między gatunkami jest możliwe, ponieważ kod genetyczny jest wspólny” — to zdanie otwiera prawie każdy klucz.
 :::
 
-**Owca Dolly — klonowanie od strony mechanizmu.** W 1996 roku  narodziła się Dolly — pierwsza ssak sklonowany z komórki ciała dorosłego osobnika. Schemat: z komórki jajowej owcy-dawcy usunięto jądro; wstawiono do niej jądro komórki gruczołu mlecznego dorosłej owcy (stąd nazwa po gwiazdzie z „wielkim biustem” — żart badaczy); zarodek wszczepiono matce zastępczej. Dolly nie miała ojca genetycznego i nie powstała z zapłodnienia — to rozmnażanie **bezpłciowe** w wersji laboratoryjnej. Jej genotyp pochodził od dawcy jądra. Ale uwaga na pułapkę: klon to nie „kopia idealna” — mitochondria i cytoplazma pochodziły od dawcy jajowa, a warunki rozwoju i epigenetyka różnią się od oryginału; identyczny genotyp nie gwarantuje identycznej osobowości ani wyglądu w każdym szczególe. Dolly udowodniła coś głębokiego: jądro komórki ciała dorosłego organizmu można „przeprogramować” do budowy całego organizmu.
+**Owca Dolly — klonowanie od strony mechanizmu.** W 1996 roku narodziła się Dolly — pierwszy ssak sklonowany z komórki ciała dorosłego osobnika. Schemat: z komórki jajowej owcy-dawcy usunięto jądro; wstawiono do niej jądro komórki gruczołu mlecznego dorosłej owcy (nazwa od piosenkarki Dolly Parton — żart badaczy); zarodek wszczepiono matce zastępczej. Dolly nie miała ojca genetycznego i nie powstała z zapłodnienia — to rozmnażanie **bezpłciowe** w wersji laboratoryjnej. Jej genotyp pochodził od dawcy jądra. Ale uwaga na pułapkę: klon to nie „kopia idealna” — mitochondria i cytoplazma pochodziły od dawczyni komórki jajowej, a warunki rozwoju i epigenetyka różnią się od oryginału; identyczny genotyp nie gwarantuje identycznej osobowości ani wyglądu w każdym szczególe. Dolly udowodniła coś głębokiego: jądro komórki ciała dorosłego organizmu można „przeprogramować” do budowy całego organizmu.
 
-**CRISPR/Cas9 — nożyczki z przewodnikiem.** System wywodzi się z odporności bakterii: bakterie przechowują w swoim genomie „pamiątki” DNA wirusów, które zaatakowały je wcześniej, i używają ich do rozpoznawania intruzów. W wersji laboratoryjnej naukowcy zaprojektowali **przewodnik RNA** dopasowany do konkretnej sekwencji DNA; białko Cas9 wiąże się z przewodnikiem i tnie DNA dokładnie tam, gdzie ten wskazuje. To edycja z adresowaniem: nie „gdzieś w genomie”, tylko w konkretnej pozycji. Za tę technologię Emmanuelle Charpentier i Jennifer Doudna dostały Nagrodę Nobla w 2020 roku . CRISPR to spełnienie zapowiedzi z L020 o „molekularnych nożyczkach do redagowania literówek”.
+**CRISPR/Cas9 — nożyczki z przewodnikiem.** System wywodzi się z odporności bakterii: bakterie przechowują w swoim genomie „pamiątki” DNA wirusów, które zaatakowały je wcześniej, i używają ich do rozpoznawania intruzów. W wersji laboratoryjnej naukowcy zaprojektowali **przewodnik RNA** dopasowany do konkretnej sekwencji DNA; białko Cas9 wiąże się z przewodnikiem i tnie DNA dokładnie tam, gdzie ten wskazuje. To edycja z adresowaniem: nie „gdzieś w genomie”, tylko w konkretnej pozycji. Za tę technologię Emmanuelle Charpentier i Jennifer Doudna dostały Nagrodę Nobla w 2020 roku. CRISPR to spełnienie zapowiedzi z L020 o „molekularnych nożyczkach do redagowania literówek”.
 
 ::: karta understand | Dla olimpijczyka — cztery reguły i ich granice
 1. „Gen przeniesiony między gatunkami działa, bo kod jest wspólny” — fundament; granica: sam gen to nie wszystko — w nowym organizmie potrzebne są odpowiednie elementy regulacyjne (włączniki), inaczej gen może milczeć.
@@ -364,7 +371,7 @@ b) (2 pkt) (1 pkt) zdanie 3: odwrotnie — enzymy restrykcyjne tną DNA w okreś
 
 ::: adv | Zadanie 9 (5 pkt) — Analiza tekstu: złoty ryż | poziom ambitny
 Tekst (uproszczony): „W rejonach, gdzie podstawą diety jest ryż, niedobór witaminy A powoduje poważne problemy zdrowotne u dzieci. Złoty ryż to odmiana z genami kukurydzy i narcyza, która wytwarza w ziarnie beta-karoten — związek, z którego organizm człowieka robi witaminę A.”
-a) Wyjaśnij, dlaczego gen kukurydzy działa w komórkach ryżu i prowadzi do powstaniabeta-karotenu. (2 pkt)
+a) Wyjaśnij, dlaczego gen kukurydzy działa w komórkach ryżu i prowadzi do powstania beta-karotenu. (2 pkt)
 b) Opisz korzyść i jedno ryzyko lub ograniczenie wprowadzenia tej odmiany. (2 pkt)
 c) Czy złoty ryż jest organizmem transgenicznym? Uzasadnij. (1 pkt)
 
@@ -465,22 +472,22 @@ d) (1 pkt) terapia somatyczna leczy osobę, nie zmieniając dziedziczenia; terap
 „Każdy produkt GMO jest niebezpieczny dla zdrowia.” || Ocena dotyczy konkretnego organizmu i konkretnego zastosowania — mechanizmu, produktu genu, ocen instytucji naukowych. Kategoria „GMO” jest zbyt szeroka na jedną odpowiedź; regulacje i etykietowanie służą świadomemu wyborowi.
 „Bez tlenu drobnoustroje nie żyją.” || Wiele drobnoustrojów — w tym drożdże i bakterie kwasu mlekowego — świetnie pracuje beztlenowo; właśnie beztlenowy metabolizm nazywamy fermentacją.
 „Insulina z bakterii to insulina zwierzęca.” || Insulina rekombinowana to białko kodowane przez ludzki gen, produkowane przez bakterie dzięki wspólnemu kodowi genetycznemu — bliższa człowiekowi niż dawna insulina świńska.
-„Klon to fotokopia człowieka lub zwierzęcia.” || Klon dzieli genotyp jądrowy, ale nie wspomnienia, nie wygląd w każdym szczególe ani warunki rozwoju; mitochondria pochodzi od dawcy komórki jajowej.
+„Klon to fotokopia człowieka lub zwierzęcia.” || Klon dzieli genotyp jądrowy, ale nie wspomnienia, nie wygląd w każdym szczególe ani warunki rozwoju; mitochondria pochodzą od dawczyni komórki jajowej.
 „Testy genetyczne zmieniają geny.” || Testy tylko odczytują informację — diagnozują allel lub mutację. Zmienianie DNA to domena inżynierii genetycznej i genoterapii.
 :::
 
 ## 11 | Ciekawostki {#ciekawostki} [[extra:AMBITNE]]
 
 ::: karta extra | Ciekawostka 1 — Owca z gwiazdorskim imieniem
-Dolly, pierwsza sklonowana owca (1996, data orientacyjna), powstała z jądra komórki gruczołu mlecznego dorosłej owcy. Badacze, z uśmiechem, nazwali ją imieniem piosenkarki znanej z rozbudowanego dekoltu — drobny żart przy poważnym eksperymencie. Dolly udowodniła, że jądro komórki ciała dorosłego można przeprogramować do budowy całego organizmu — i otworzyła erę badań nad komórkami macierzystymi.
+Dolly, pierwsza sklonowana owca (1996, data orientacyjna), powstała z jądra komórki gruczołu mlecznego dorosłej owcy. Badacze, z uśmiechem, nazwali ją imieniem piosenkarki Dolly Parton (komórkę pobrano z gruczołu mlecznego) — drobny żart przy poważnym eksperymencie. Dolly udowodniła, że jądro komórki ciała dorosłego można przeprogramować do budowy całego organizmu — i otworzyła erę badań nad komórkami macierzystymi.
 :::
 
 ::: karta extra | Ciekawostka 2 — Apteka z bakterii
-W 1982 roku  dopuszczono do stosowania pierwszą lek ze świata GMO — insulinę rekombinowaną, produkowaną przez bakterie z wbudowanym ludzkim genem. Wcześniej pacjenci dostawali insulinę wydobywaną z trzustek zwierząt — działała, ale różniła się od ludzkiej i wymagała ogromnych ilości tkanki. Bakteryjna „fabryka” zamieniła rzeźnię w zlewkę.
+W 1982 roku dopuszczono do stosowania pierwszy lek ze świata GMO — insulinę rekombinowaną, produkowaną przez bakterie z wbudowanym ludzkim genem. Wcześniej pacjenci dostawali insulinę wydobywaną z trzustek zwierząt — działała, ale różniła się od ludzkiej i wymagała ogromnych ilości tkanki. Bakteryjna „fabryka” zamieniła rzeźnię w zlewkę.
 :::
 
 ::: karta extra | Ciekawostka 3 — Pomyłka, która dała antybiotyk
-Penicylina zaczęła się od grzybka Penicillium, który przypadkowo zanieczyścił szalkę Alexandra Fleminga w 1928 roku  — wokół niego bakterie nie rosły. Fleming zauważył, co inni wyrzuciliby do kosza. Produkowanie penicyliny na skalę przemysłową wymagało potem ogromnej pracy hodowlanej szczepów grzyba — klasycznej biotechnologii, która uratowała miliony żyć.
+Penicylina zaczęła się od grzybka Penicillium, który przypadkowo zanieczyścił szalkę Alexandra Fleminga w 1928 roku — wokół niego bakterie nie rosły. Fleming zauważył, co inni wyrzuciliby do kosza. Produkowanie penicyliny na skalę przemysłową wymagało potem ogromnej pracy hodowlanej szczepów grzyba — klasycznej biotechnologii, która uratowała miliony żyć.
 :::
 
 ::: karta extra | Ciekawostka 4 — Pająko-kozy
@@ -488,7 +495,7 @@ Naukowcy wstawili kozom gen pająka odpowiedzialny za białko jedwabiu — w mle
 :::
 
 ::: karta extra | Ciekawostka 5 — Nobel za system odporności bakterii
-CRISPR/Cas9 — najsłynniejsze narzędzie edycji DNA — to uproszczony system odporności bakterii, które przez wieki „księgowały” DNA swoich wirusów i tnęły je po ponownym ataku. Naukowcy — Emmanuelle Charpentier i Jennifer Doudna — zamienili ten system w precyzyjne nożyczki z przewodnikiem RNA i za to dostały Nagrodę Nobla w 2020 roku . Morale: nawet mechanizmy mikroskopijnych konfliktów mogą stać się technologią zmieniającą medycynę.
+CRISPR/Cas9 — najsłynniejsze narzędzie edycji DNA — to uproszczony system odporności bakterii, które przez miliony lat „księgowały” DNA swoich wirusów i tnęły je po ponownym ataku. Naukowcy — Emmanuelle Charpentier i Jennifer Doudna — zamienili ten system w precyzyjne nożyczki z przewodnikiem RNA i za to dostały Nagrodę Nobla w 2020 roku. Morale: nawet mechanizmy mikroskopijnych konfliktów mogą stać się technologią zmieniającą medycynę.
 :::
 
 ## 12 | Sposoby pamięciowe {#mnemotechniki} [[basic:E8]]
@@ -570,7 +577,7 @@ Korzyści: enzym bez uboju zwierząt (podpuszczka z żołądków cieląt to dawn
 1. Konsument ma prawo wiedzieć, co kupuje — etykieta umożliwia świadomy wybór i jest elementem regulacji. 2. Bakterie z ludzkim genem insuliny dzielą się wykładniczo i produkują białko w zlewkach — wspólny kod genetyczny gwarantuje, że to prawdziwa ludzka insulina. 3. U zdrowych nosicieli recesywnych allele (L017, L018) test pozwala oszacować ryzyko choroby u potomstwa i zaplanować opiekę — odczyt DNA diagnozuje zanim pojawi się choroba.
 :::
 
-**Sposób oceniania:** w zadaniach 1–7 licz jeden punkt za w pełni poprawny podpunkt; zadania 8–14 oceniaj według kluczy (za uzasadnienia). Suma punktów: 52. Wynik 42 i więcej — poziom konkursowy; 28–41 — solidna podstawa; poniżej — wróć do rdzenia ([§1–§5](#rdzen)), kliniki i fiszek, a test rozwiąż ponownie za dwa dni.
+**Sposób oceniania:** w zadaniach 1–7 licz jeden punkt za w pełni poprawny podpunkt; zadania 8–14 oceniaj według kluczy (za uzasadnienia). Suma punktów: 52. Wynik 42 i więcej — poziom konkursowy; 28–41 — solidna podstawa; poniżej — wróć do rdzenia ([§1–§5](#rdzen)), kliniki i fiszek, a test rozwiąż ponownie, gdy wrócisz do tematu.
 
 ## 14 | Test końcowy {#test} [[basic:E8]]
 
@@ -801,7 +808,7 @@ Granice
 
 ## 19 | Co dalej? {#dalej}
 
-Ta lekcja domyka dział **genetyki**. Przejrzyj ścieżkę, którą przeszedłeś: L012 (chromosomy i kariotyp) → L015 (mejoza i gamety) → L017 (allele i szachownica Punnetta) → L018 (chromosomy płci i cechy sprzężone z X) → L019 (allele wielokrotne, kodominacja, ABO i Rh) → L020 (mutacje — źródło allele) → **L021 (biotechnologia — genetyka w akcji)**. Wszystkie klocki złożyły się w jeden obraz: informacja zapisana w DNA, kopiowana w mejozie, dzielona w krzyżówkach, czasem zmieniana mutacjami — i na końcu, przez człowieka, świadomie redagowana. To rzadka przyjemność w nauce: działa zakończony krąg.
+Ta lekcja domyka dział **genetyki**. Przejrzyj ścieżkę, którą przeszedłeś: L012 (chromosomy i kariotyp) → L015 (mejoza i gamety) → L017 (allele i szachownica Punnetta) → L018 (chromosomy płci i cechy sprzężone z X) → L019 (allele wielokrotne, kodominacja, ABO i Rh) → L020 (mutacje — źródło allele) → **L021 (powtórka genetyki)** → **L022 (biotechnologia — genetyka w akcji)**. Wszystkie klocki złożyły się w jeden obraz: informacja zapisana w DNA, kopiowana w mejozie, dzielona w krzyżówkach, czasem zmieniana mutacjami — i na końcu, przez człowieka, świadomie redagowana. To rzadka przyjemność w nauce: działa zakończony krąg.
 
 Jeśli chcesz jeszcze pocwiczyć przed kolejnym działem, najmocniejsze punkty powtórki to: krzyżówki z chromosomami płci (L018 — pułapki 1/2 i 1/4), wykluczanie w ABO (L019) oraz klasyfikacja mutacji i przesunięcie ramki odczytu (L020). Fiszki z tych lekcji warto przemycać w odstępach — powtórki rozłożone w czasie działają lepiej niż jedna długa sesja.
 
@@ -845,3 +852,34 @@ I pytanie na pożegnanie działu, do przemyślenia bez pośpiechu: biotechnologi
 | §4, przy tabeli GMO | schemat z podpisami do klikania | pole z trzema roślinami: kukurydza z ikoną bakterii-dawcy genu, ryż z ikonami dwóch roślin-dawców, soja z ikoną herbicydu | Geny przenosi się między gatunkami dzięki wspólnemu kodowi | @opis Trzy rośliny w polu, nad każdą karta informacyjna: kukurydza — strzałka od ikony bakterii z podpisem „gen ochrony przed owadami”; ryż — dwie strzałki od ikon kukurydzy i narcyza z podpisem „beta-karoten”; soja — ikona oprysku z podpisem „odporność na herbicyd”. Wniosek: każdy przykład to przeniesienie konkretnego genu — ocena dotyczy mechanizmu, nie kategorii. |
 | §5, przy mapie ról | schemat statyczny | trzy tory: oko (test — odczyt DNA), strzałka naprawcza (genoterapia — wstawienie allelu), lupka z krzyżykiem (grupy krwi — wykluczanie) | Trzy narzędzia medyczne mają trzy różne role | @opis Trzy karty narzędzi: „test genetyczny” — oko nad taśmą DNA, podpis „odczyt: allel, nosicielstwo, pokrewieństwo”; „genoterapia” — spróbki i strzałka wstawiająca zdrowy allel do komórki ciała, podpis „naprawa somatyczna — nie dziedziczy”; „grupy krwi” — karty testów z krzyżykiem, podpis „tylko wykluczają”. Wniosek: czytanie, naprawa i eliminacja możliwości to trzy odrębne działania. |
 | §6, przy Dolly | animacja „do przodu i od początku” | transfer jądra: komórka jajowa bez jądra + jądro z komórki somatycznej → zarodek → narodziny klonu | Klonowanie bez płci: jądro ciała uruchamia cały organizm | @opis Sceny: komórka somatyczna dawcy oddaje jądro; komórka jajowa traci własne jądro; jądro dawcy wchodzi do jajowa; zygota dzieli się, powstaje zarodek, rodzi się owczka — podpis „genotyp od dawcy jądra, mitochondria od dawcy jajowa”. Wniosek: klon ma zbliżony genotyp jądrowy, ale nie jest fotokopią osobnika. |
+
+### AUDYT W1 — Claude Haiku 5.5, 2026-10-12 {#audyt-w1}
+
+**Błędy poprawione:**
+- [§6, Dolly] — „pierwsza ssak” → „pierwszy ssak”; „od dawcy jajowa” → „od dawczyni komórki jajowej”; wyjaśnienie nazwy Dolly neutralne.
+- [§6 i §10, mity] — „mitochondria pochodzi” → „pochodzą” (zmiana w mitach i w §6).
+- [§6, ligaza] — „skleina” → „skleja”.
+- [§5, karta W skrócie o genoterapii] — zdanie o dzieciach pacjenta („same nie chorowały, bo choroba musiałaby powstać na nowo”) było mylące; przeformułowane na: dzieci nie dziedziczą korekty, bo ich DNA pochodzi z gamet rodziców.
+- [§5, karta W skrócie o grupach krwi] — „pewnie odrzucają” → „pomagają odrzucić”.
+- [§8, zadanie 9] — „powstaniabeta-karotenu” → „powstania beta-karotenu”.
+- [§11, ciekawostka 1] — żart o „rozbudowanym dekolcie” zastąpiono neutralnym odniesieniem do imienia i gruczołu mlecznego.
+- [§11, ciekawostka 2] — „pierwszą lek” → „pierwszy lek”.
+- [§11, ciekawostka 5] — „przez wieki” → „przez miliony lat” (system CRISPR u bakterii ma znacznie dłuższą historię).
+- [§19] — łańcuch działu: L021 to powtórka genetyki, L022 to biotechnologia (było: L021 = biotechnologia).
+- [§0.1, §13] — usunięte harmonogramy powtórek („dzień po…”, „po tygodniu”, „za dwa dni”); kurs jest samodzielny, bez planów dnia.
+- Typografia: podwójne spacje i spacja przed kropką („roku .”) w kilku miejscach.
+
+**Braki w zakresie (wprowadzone):**
+- §2 — karta extra „Zastosowania poza spiżarnią — bioetanol i biogaz” (zastosowania fermentacji w paliwach i odpadach, bez wzorów).
+
+**Grafiki:**
+- Wykonana: `klonowanie-genu` w §3 (animacja w pięciu krokach, zapętlona „do przodu i od początku”, z `@opis`); dodana do `szablon/bio-viz.js` i do `BIO_KATALOG.md`.
+- Pozostałe propozycje z tabeli „Grafiki do zrobienia” (§2 fermentacja, §4 GMO, §5 mapa ról, §6 Dolly) — nie wykonane w tej turze; wymagają osobnego zlecenia lub kolejnej tury.
+
+**Nieprzyjęte / odłożone (z powodem):**
+- Skrócenie §1 (wykład) — obecnie wyraźnie ponad zalecane 250–500 słów. Nie skracam, bo obowiązuje zasada „nic nie usuwamy”; kandydat na podział na dwie części w kolejnej wersji.
+- Dodatkowe typy zadań egzaminacyjnych poza tymi w §2–§5 i §8 — odłożone do zewnętrznego W1 (wymaga zestawienia z arkuszami CKE, których nie mam w repo).
+
+**Mini-wykłady, ciekawostki, własne przykłady:** W skrócie (4 karty + 1 extra), ciekawostki 5, zadania 8–14 z kluczami (nowe).
+
+**Status:** audyt wewnętrzny Claude Haiku 5.5. Nie zastępuje zewnętrznego W1; zalecane wysłanie `eksport/out/W1_BIO_L022.md` do modelu recenzji.

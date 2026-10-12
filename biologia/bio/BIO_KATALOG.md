@@ -64,6 +64,7 @@ Prymitywy (`BIO.g`): `ring` (puryna 6+5 / pirymidyna 6), `hbonds`, `sugar`, `pho
 
 Kontenery md tylko w BIO: `::: mity` (linie `mit || poprawka`), `::: drzewo` (mapa pojęć z wcięć).
 | synapsa | synapsa chemiczna w 5 krokach: impuls → pęcherzyki → neuroprzekaźnik w szczelinie → receptory → nowy impuls; animacja do przodu | krok="0–4" | U08 |
+| klonowanie-genu | klonowanie genu w 5 krokach: wycięcie genu enzymem → otwarcie plazmidu tym samym enzymem → wklejenie ligazą → wgranie do bakterii → produkcja białka; animacja do przodu | krok="0–4" | L022 |
 | etapy-zycia | pionowa oś czasu 10 okresów życia (zarodkowy → starość) z wiekiem orientacyjnym, klik = cechy | start="zarodkowy|…|starosc" | U11 |
 | lozysko-wymiana | łożysko: krew matki opływa kosmki płodu, strzałki wymiany O₂/składników i CO₂/produktów przemiany, pępowina (2 tętnice, 1 żyła), klik = opis | — | U11 |
 | uklad-rozrodczy | schemat męskiego i żeńskiego układu rozrodczego (przełącznik), klik = funkcja narządu; zaznaczone miejsce zapłodnienia | start="meski|zenski" | U11 |
