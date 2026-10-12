@@ -462,3 +462,22 @@ Uwagi:
 Uwagi:
 - Przy pozycjach Krakowa 2020/21 i 2022/23 podawać rok i liczbę zadań tylko z nagłówka pliku (potwierdzone), nie z tabeli zestawienia.
 - Kraków ma w katalogu 2020/07 pliki z kilku etapów, a w 2022/07 szkolny schemat 2022/23 – kolejność lat w nazwach katalogów nie zawsze odpowiada rokowi szkolnemu. Przy każdym wpisie sprawdzać nagłówek.
+
+---
+
+## Poszerzenie zakresu: angielski, polski, biologia, E8 (zestawienie 80f1b010, 2026-10-12)
+
+Zakres banku rozszerzony wg decyzji użytkownika: język angielski, język polski, chemia, biologia, egzamin ósmoklasisty. Zapisuję tu wyłącznie źródła sprawdzone. Zasada: wpis „potwierdzony" tylko gdy adres był w wynikach wyszukiwania i plik został otwarty.
+
+| Źródło (z zestawienia) | Wynik | Co potwierdzono |
+|---|---|---|
+| Kielce – strony zbiorcze etapów I, II, III 2024/25 (`98701`, `98733`, `100585`) | **Niepotwierdzony** | Żaden z trzech adresów nie wystąpił w wynikach wyszukiwania. Wyniki pokazują inne pliki: regulaminy przedmiotowe 2024/25 i 2025/26 (Kielce, j. polski, j. angielski, chemia). Nie otwierane. |
+| Łódź – materiały konkursowe 2024/25 (`materialy-konkursowe-7`) | **Niepotwierdzony** | Strona nie wystąpiła w wynikach. W wynikach: `nabor-autorow-wkp-2024-2025.docx`, `nabor-recenzentow-wkp-2024-2025.docx` (zasady naboru autorów i recenzentów, nieotwarte), `zakres-wymagan-na-poszczegolne-etapy-wojewodzkiego-konkursu-przedmiotowego-z-jezyka-angielskiego-2023-2024.docx`, `regulamin-wojewodzkiego-konkursu-przedmiotowego-z-biologii-2023-2024.docx` (nieotwarte). |
+| Kraków – `mkja.pdf` (Małopolski Konkurs Języka Angielskiego 2024/25) | **Potwierdzony – to program, nie arkusz** | Dokument „Zakres wiedzy i umiejętności wymaganych na poszczególnych etapach konkursu i wykaz literatury". Etapy: szkolny, rejonowy, wojewódzki. Tematyka: Kanada, Australia, Nowa Zelandia. Nie zawiera zadań, kluczy ani czasu pracy. |
+| Wrocław (wroclaw.pl) – próbny egzamin ósmoklasisty, j. angielski, 4.12.2024 | **Potwierdzony jako strona informacyjna, nie CKE** | Wydawca: portal miejski wroclaw.pl (ARAW S.A., Gmina Wrocław), relacjonuje materiał CKE. Na stronie są miniatury stron arkusza (galeria), **bez linku do pliku PDF i bez klucza**. Źródło wskazuje cke.gov.pl i oke.wroc.pl – nieotwarte. |
+| Kielce – regulaminy przedmiotowe 2024/25 (j. polski, j. angielski) i ogólny regulamin WKP 2024/25 | **Adresy w wynikach, nieotwierane** | Regulaminów nie otwierałem (nie są arkuszami). Przydatne jako źródło zakresu. |
+| CKE – arkusze i zasady oceniania E8 (j. polski, matematyka, j. angielski, 2019–2026) | **Niepotwierdzone** | W wynikach nie ma adresów cke.gov.pl z arkuszami E8 z lat 2024–2026. Wyniki to strony informacyjne (oke.krakow.pl `lid=8198`, wpisy szkolne, RMF24) – nieotwierane. |
+
+Uwagi:
+- Nie wpisuję do banku treści zadań z chronionych arkuszy. Zapisuję metadane, źródła, odpowiedzi z oficjalnych kluczy i opisy tematów własnymi słowami.
+- Kolejny krok dla angielskiego, polskiego i biologii: znaleźć w wynikach wyszukiwania bezpośrednie adresy PDF arkuszy i kluczy (kuratoria Kraków, Warszawa, Kielce, Łódź, Bydgoszcz), a dla E8 – adresy CKE z arkuszami przykładowymi (np. `cke.gov.pl/images/_EGZAMIN_OSMOKLASISTY/...`).
