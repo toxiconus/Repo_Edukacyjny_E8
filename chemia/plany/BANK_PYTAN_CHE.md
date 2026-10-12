@@ -634,3 +634,11 @@ Uwagi do sekcji:
 Nowe w wynikach, do otwarcia w kolejnej partii:
 - `arkusz-z-zadaniami-etap-wojewodzki-vii-wojewodzki-konkurs-z-chemii-2025-2026.pdf` (Kielce, katalog 2026/05) – chemia etapu wojewódzkiego 2025/26.
 - `arkusz-z-zadaniami-etap-wojewodzki-vii-wojewodzki-konkurs-z-biologii-2025-2026.pdf` (Kielce, katalog 2026/05) – biologia etapu wojewódzkiego 2025/26.
+
+---
+
+## Zestawienie 42228ae8 – duplikat 338b4889 (2026-10-12)
+
+- Treść pliku 42228ae8 jest identyczna z 338b4889 (Świętokrzyskie III etap 2022/23). Weryfikacja: zob. sekcja „Weryfikacja zestawienia 338b4889".
+- Wynik bez zmian: katalog `71069` i wszystkie osiem PDF-ów (arkusze i klucze biologii, chemii, angielskiego, polskiego) nie wystąpiły w wynikach wyszukiwania. Liczby (dni, punkty, czas, liczba zadań) i analizy zadań – niezweryfikowane.
+- Nie dopisywać tego samego zestawienia ponownie; przy kolejnych dublach odnotować tylko numer.
