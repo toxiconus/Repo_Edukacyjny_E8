@@ -616,3 +616,21 @@ Uwagi do sekcji:
 - Parafrazy w tabelach to „Dział" i „Typ" z odczytu, a nie treść zadań. Przy pełnej treści z kopii PDF uzupełnić ją osobno.
 - Kolumna „Typ" ma wartości: zamknięte, otwarte, P/F, rachunkowe – wg oznaczeń w odczycie. Gdzie odczyt nie podał typu, wpisane jest „zamknięte/otwarte".
 - Arkusze z kluczem: Łódź 2022/23 (model), Kraków 2023/24 szkolny i rejonowy (klucz z odpowiedziami), Kraków 2024/25 rejonowy (klucz z odpowiedziami). Odpowiedzi do tych arkuszy są w sekcji zestawień, nie w parafrazach.
+
+---
+
+## Weryfikacja zestawienia 338b4889 (2026-10-12) – Świętokrzyskie III etap 2022/23 (biologia, chemia, angielski, polski)
+
+| Źródło (z zestawienia) | Wynik | Co potwierdzono |
+|---|---|---|
+| Katalog Kielce III etapu 2022/23 (`71069`) | **Niepotwierdzony** | Adres nie wystąpił w wynikach wyszukiwania (wcześniej też nie). |
+| Biologia 2022/23 – arkusz i klucz (`iv-wojewodzki-konkurs-z-biologii-iii-etap-arkusz-z-zadaniami.pdf`, `...-klucz-odpowiedzi.pdf`, katalog 2023/05) | **Niepotwierdzony** | Adresy nie wystąpiły w wynikach. Wyniki pokazują inne pliki Kielc (regulaminy biologii, arkusz etapu wojewódzkiego VII 2025/26 – `2026/05`, nieotwarty). |
+| Chemia 2022/23 – arkusz i klucz (`iv-wojewodzki-konkurs-z-chemii-iii-etap-...`, katalog 2023/05) | **Niepotwierdzony** | Adresy nie wystąpiły w wynikach. Wyniki: arkusz VI wojewódzkiego 2024/25 (już potwierdzony wcześniej), arkusz III etapu 2020/21 (potwierdzony wcześniej, 20 zadań, 50 pkt). |
+| Angielski 2022/23 – arkusz i klucz (`x-wojewodzki-konkurs-z-jezyka-angielskiego-iii-etap-...`) | **Niepotwierdzony** | Adresy nie wystąpiły w wynikach. Wyniki: regulaminy przedmiotowe angielskiego Kielc 2021/22, 2024/25, 2025/26 (nieotwarte). |
+| Polski 2022/23 – arkusz i klucz (`vi-wojewodzki-konkurs-z-jezyka-polskiego-iii-etap-...`) | **Niepotwierdzony** | Adresy nie wystąpiły w wynikach. |
+| Dane z zestawienia (ID SW-BIO/CHE/ANG/POL-2223-III: daty, liczba zadań, punkty, czas) | **Niepotwierdzone** | Żadna z liczb nie pochodzi z otwartego pliku w tej partii. Traktować jako wpisy robocze. |
+| Analizy zadań z zestawienia (fermentacja, izotopy/zadanie 1 i 2 chemii, angielski zad. 1, polski pułapki) | **Niezweryfikowane** | Opisy treści zadań nie mają źródła w odczycie. Nie przenosić do parafraz bez otwarcia arkuszy. |
+
+Nowe w wynikach, do otwarcia w kolejnej partii:
+- `arkusz-z-zadaniami-etap-wojewodzki-vii-wojewodzki-konkurs-z-chemii-2025-2026.pdf` (Kielce, katalog 2026/05) – chemia etapu wojewódzkiego 2025/26.
+- `arkusz-z-zadaniami-etap-wojewodzki-vii-wojewodzki-konkurs-z-biologii-2025-2026.pdf` (Kielce, katalog 2026/05) – biologia etapu wojewódzkiego 2025/26.
