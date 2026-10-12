@@ -49,6 +49,7 @@ for z, c in napisz:
     m = re.search(r'^tytul:\s*"?([^"\n]*)"?$', t, re.M); tyt = m.group(1).strip() if m else c.stem
     if not m:
         h = re.search(r'^#\s+(?:L\d+\w*\s*[—–-]\s*)?(.+)$', t, re.M); tyt = h.group(1).strip() if h else c.stem
+    if re.match(r'^(LEKCJA\s+)?L\d+\w*\s*[—–-]', tyt): tyt = re.sub(r'^(LEKCJA\s+)?L\d+\w*\s*[—–-]\s*', '', tyt).strip().capitalize()
     przed = 'CHEMIA' if 'chemia' in str(c) else 'BIOLOGIA' if 'biologia' in str(c) else 'POLSKI' if 'polski' in str(c) else 'ANGIELSKI'
     uid = c.stem if c.name.count('.') > 2 else ''
     wzor = ['---', f'kod: {kod}'] + ([f'uid: {uid}'] if uid else []) + [f'tytul: {tyt}', 'opis: <hasła tematów rozdzielone „ · ”>',
