@@ -661,3 +661,62 @@ Nowe w wynikach, do otwarcia w kolejnej partii:
 Uwagi:
 - Klucz polskiego ma odpowiedzi z podsumowania, nie z przepisanego pliku. Przed wpisaniem do parafraz zweryfikować pozycje 5, 6, 10 i 17 (wiele podpunktów).
 - Źródła medialne (gazetaprawna, otouczelnie) nie są oficjalne. Wpisy z nich oznaczać jako „media, do sprawdzenia w CKE".
+
+---
+
+## Przepis arkusza: Świętokrzyskie – biologia, III etap (wojewódzki), 7.03.2024 (V Wojewódzki Konkurs z Biologii)
+
+Źródło: przepis markdown z OCR, dostarczony przez użytkownika (PDF znaleziony przez użytkownika, adres nieznany). Treść zadań NIE jest zapisywana w banku (zasada: metadane, parafrazy, klucze). Przepis został sprawdzony wewnętrznie, nie względem PDF.
+
+| Pole | Wartość z przepisu | Status |
+|---|---|---|
+| Konkurs / etap / data | V Wojewódzki Konkurs z Biologii, etap III, 7.03.2024, godz. 10:00 | Z przepisu; zgodne z numeracją (IV w 2023, VI w 2025) |
+| Czas pracy | 60 min | Z przepisu |
+| Liczba zadań | 30 (18 stron) | Z przepisu; zgodne z instrukcją dla ucznia |
+| Maks. punkty | **53** (deklarowane w nagłówku) | **Sprzeczne:** suma punktów z przepisu wynosi **52** (zad. 1–30 wg wartości w nagłówkach zadań). Do sprawdzenia w PDF. |
+| Klucz / model odpowiedzi | Brak w przepisie | Nie potwierdzone |
+| Źródło PDF | Brak adresu | Nie potwierdzone (w wynikach wyszukiwania nie ma tego pliku; wyniki: VII etap 2025/26 i VI etap 2024/25 w innym formacie). |
+
+Problemy wykryte w przepisie (wymagają sprawdzenia w PDF przed użyciem):
+1. **Suma punktów:** 52 vs. 53 w nagłówku.
+2. **Zadanie 15:** odpowiedzi a) i d) są identyczne („3, 6") – w oryginale prawdopodobnie błąd OCR lub zmiana w jednym wariancie.
+3. **Zadanie 5, pozycja 1:** „insulina i glikogen" jako hormony antagonistyczne – glikogen nie jest hormonem. Prawdopodobnie w oryginale: inny związek (np. glukagon). Nie poprawiać bez PDF.
+4. **Zadanie 25:** w przepisie zadanie występuje dwukrotnie (uwaga OCR) – w oryginale jedna wersja.
+5. **Zadanie 2 i 11:** układ tabeli/dopasowania niejednoznaczny po OCR (sklejone kolumny). Do odczytu z PDF.
+6. **Zadania 21 i 17:** opisy obrazków, brak treści zdjęć – do weryfikacji w PDF.
+7. **Zadanie 3:** brak nagłówka w OCR; dopasowanie reakcji do procesu A/B – do sprawdzenia.
+8. **Zadanie 15 i 17:** brak nagłówków w OCR.
+
+Tematy zadań (parafraza, nie treść):
+- Zad. 1: witaminy, cholesterol, zalecenia żywieniowe (P/F, 4 pkt)
+- Zad. 2: jod – mikroelement, funkcja w hormonach tarczycy (dopasowanie, 1 pkt)
+- Zad. 3: energia reakcji egzo- i endotermicznych, fotosynteza i oddychanie (2 pkt)
+- Zad. 4: wady wzroku – dalekowzroczność i soczewka korekcyjna (1 pkt)
+- Zad. 5: hormony antagonistyczne, przysadka, kortyzol vs. adrenalina, hormony płciowe (P/F, 4 pkt)
+- Zad. 6: różnolistność strzałki wodnej, klasa rośliny (2 pkt)
+- Zad. 7: tkanki roślinne – funkcje (dopasowanie, 1 pkt)
+- Zad. 8: grzyby i pleśnie (P/F, 1 pkt)
+- Zad. 9: pióra pudrowe, puder, kaczki (uzupełnianie, 3 pkt)
+- Zad. 10: reguła Chargaffa – obliczenie % guaniny (1 pkt)
+- Zad. 11: przeobrażenie zupełne i niezupełne, larwy owadów (2 pkt)
+- Zad. 12: dziedziczenie niepełnej dominacji u papużek (1 pkt)
+- Zad. 13: rekombinacja – crossing-over (2 pkt)
+- Zad. 14: najbliżsi krewni człowieka – małpy człekokształtne (1 pkt)
+- Zad. 15: genotypy grup krwi (1 pkt)
+- Zad. 16: budowa nukleotydu DNA (1 pkt)
+- Zad. 17: zmienność środowiskowa i niedziedziczna – królik himalajski (1 pkt)
+- Zad. 18: zasady azotowe wspólne DNA i RNA (1 pkt)
+- Zad. 19: bioindykatory (1 pkt)
+- Zad. 20: badanie pustułki – problem badawczy i wniosek (2 pkt)
+- Zad. 21: oddziaływania międzypopulacyjne na zdjęciach (3 pkt)
+- Zad. 22: sieć pokarmowa – konsumenci II i III rzędu (1 pkt)
+- Zad. 23: przepływ energii i materii w ekosystemie (P/F, 4 pkt)
+- Zad. 24: sukcesja ekologiczna – pierwotna i wtórna (3 pkt)
+- Zad. 25: nazewnictwo binominalne (3 pkt)
+- Zad. 26: Darwin, Lamarck, Cuvier – wyjaśnienia ewolucji (1 pkt)
+- Zad. 27: rodzaje doboru naturalnego, który prowadzi do powstania gatunków (1 pkt)
+- Zad. 28: narządy homologiczne i analogiczne (1 pkt)
+- Zad. 29: ochrona czynna i bierna (1 pkt)
+- Zad. 30: choroby zakaźne – patogen, droga zakażenia, profilaktyka (1 pkt)
+
+Status: przepis OCR – niezweryfikowany względem PDF. Nie wpisywać jako potwierdzonego arkusza. Brak klucza.
