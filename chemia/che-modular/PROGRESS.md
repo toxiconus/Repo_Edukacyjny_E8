@@ -147,3 +147,5 @@
 - 2026-10-12: K07 kataliza przebudowana od zera (wersja 2, wykład + mini-wykłady, przykłady przemysłowe, test 5); limity OK; 1 z 66 lekcji bez wykładu uzupełniony. Kolejka: K08, K09, A01, K10, E03…
 - 2026-10-12: F12 scalona (ściąga, klinika, ćwiczenia, audyt); mnemotechniki z A5 przeniesione do LAB, F09, REV02, X, N04, R02; materiał pełny: plany/F12_materialy_robocze_v1.md.
 - 2026-10-12: parser zwija automatycznie sekcje „## AUDYT/LOG” i bloki ::: log (lk-log, domyślnie zamknięte, ukryte przy druku); zasada opisana w szablon/README.md; przebudowa wszystkich HTML.
+
+- 2026-10-12: F09 przebudowany (wykład, 2 mini-wykłady, 5 ciekawostek, 3 mity, test 5, fiszki 25 zwijane, drzewo zamiast ASCII). Usunięte: 2 kopie migracyjne, meta MASTER, system powtórek z czasami, interleaving poza tematem. Pełna poprzednia wersja: chemia/plany/F09_materialy_robocze_v1.md. LOG ZMIAN na końcu (zwijany). Limity: 0 ❌.
