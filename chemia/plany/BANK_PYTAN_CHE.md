@@ -212,6 +212,10 @@ Zasada: każde pytanie ma etap i źródło. Na razie tylko podstawówka.
 | Rejonowy | **brak** — do znalezienia | |
 | Wojewódzki | **brak** — do znalezienia | (np. Kielce: przedmiotowy regulamin VIII wojewódzkiego konkursu z chemii 2026/2027 — tylko regulamin) |
 
+### Zakres tematyczny wg pliku przekroju (niepotwierdzony)
+
+Plik podaje dla Olimpusa / klasy 8 zakres: woda i roztwory (stężenie procentowe, rozpuszczalność); tlenki, wodorotlenki, kwasy, sole; węglowodory (alkany, alkeny, alkiny); pochodne (alkohole, kwasy karboksylowe, estry); substancje biologiczne (tłuszcze, białka, cukry). Status: **niepotwierdzony** — nazwa konkursu jest w wynikach wyszukiwania, ale strony `olimpus.edu.pl` z pliku nie znaleziono. Tematy z listy bez lekcji w repo: węglowodory, pochodne, substancje biologiczne. <small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady”, sekcja 10 (przykładowe pytania z chemii klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Druczek: plik wgrany 2026-10-12, poza repo. Status źródła: niepotwierdzony.</small>
+
 ## Nasze testy (z lekcji, pogrupowane tematycznie)
 
 Źródło: testy w lekcjach w `chemia/lekcje_md/` (wyciągnięte skryptem). Odpowiedź poprawna oznaczona ✔.
@@ -377,6 +381,43 @@ Zasada: każde pytanie ma etap i źródło. Na razie tylko podstawówka.
 
 
 ---
+
+### R03 — Woda i roztwory (`CHE.02.R03…`, gotowa lekcja R03)
+
+1. Ile procent masowych stanowi sól w roztworze o masie 200 g, w którym jest 25 g soli?
+   - ✔ 12,5%
+   - ✘ 25%
+   - ✘ 8%
+   - ✘ 0,125%
+   - *Uzasadnienie:* Cp = 25 g / 200 g · 100% = 12,5%. Masa roztworu to suma soli i wody.
+   - <small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady”, sekcja 10 (przykładowe pytania z chemii klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Druczek: plik wgrany 2026-10-12, poza repo. Status źródła: niepotwierdzony.</small> Zad. 1 (parafraza).
+
+### N04 — Sole (`CHE.02.N04…`, gotowa lekcja N04)
+
+1. Które produkty powstają w reakcji wodorotlenku sodu z kwasem solnym?
+   - ✔ chlorek sodu i woda
+   - ✘ chlorek sodu i wodór
+   - ✘ tlenek sodu i chlor
+   - ✘ sód i woda
+   - *Uzasadnienie:* To zobojętnianie: NaOH + HCl → NaCl + H₂O.
+   - <small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady”, sekcja 10 (przykładowe pytania z chemii klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Druczek: plik wgrany 2026-10-12, poza repo. Status źródła: niepotwierdzony.</small> Zad. 2 (parafraza).
+
+### Węglowodory i próby wykrywania — BEZ lekcji w repo (do uzupełnienia)
+
+1. Który węglowodór ulega reakcji addycji?
+   - ✔ alken (ma wiązanie podwójne)
+   - ✘ alkan (same wiązania pojedyncze)
+   - ✘ metan
+   - *Uwaga o źródle:* oryginalne pytanie w pliku miało odpowiedzi „alken” i „alkin” — obie ulegają addycji, więc takie pytanie jednokrotnego wyboru jest błędne. Wersja powyżej jest poprawiona (klucz: wiedza ogólna, nie z pliku).
+   - <small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady”, sekcja 10 (przykładowe pytania z chemii klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Druczek: plik wgrany 2026-10-12, poza repo. Status źródła: niepotwierdzony.</small> Sekcja „Biologia / Chemia – przykładowe konkretne pytania”.
+
+2. Która próba wykrywa cukry redukujące (np. glukozę)?
+   - ✔ próba Trommera
+   - ✘ próba jodoskrobiowa (wykrywa skrobię)
+   - ✘ próba biuretowa (wykrywa wiązania peptydowe)
+   - ✘ próba z wodą bromową (wykrywa wiązanie wielokrotne)
+   - *Uzasadnienie:* Trommer (podobnie Tollens) wykrywa cukry redukujące. Klucz: wiedza ogólna, nie z pliku.
+   - <small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady”, sekcja 10 (przykładowe pytania z chemii klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Druczek: plik wgrany 2026-10-12, poza repo. Status źródła: niepotwierdzony.</small> Sekcja 10 pliku („co wykrywa?”) — pytanie zostało tylko wymienione, bez treści klucza.
 
 ## Weryfikacja zestawień 8eda72cd i 19c24a0c (2026-10-12)
 
@@ -618,6 +659,19 @@ Uwagi do sekcji:
 - Arkusze z kluczem: Łódź 2022/23 (model), Kraków 2023/24 szkolny i rejonowy (klucz z odpowiedziami), Kraków 2024/25 rejonowy (klucz z odpowiedziami). Odpowiedzi do tych arkuszy są w sekcji zestawień, nie w parafrazach.
 
 ---
+
+## Przekrój materiałów — parafrazy chemii (plik użytkownika, 2026-10-12)
+
+Parafrazy własnymi słowami; pełne treści pliku nie są przepisane. Zakres chemiczny pliku to trzy pytania i lista zakresu (sekcja 10). Pozostałe części pliku (matematyka, angielski, polski, biologia, E8) należą do innych banków.
+
+| Zad. | Parafraza | Temat (lekcja) | Rok | Etap | Status |
+|---|---|---|---|---|---|
+| 1 | stężenie procentowe: 25 g soli w 200 g roztworu | R03 | nieznany | nieokreślony | niepotwierdzony |
+| 2 | produkty NaOH + HCl | N04 | nieznany | nieokreślony | niepotwierdzony |
+| 3 | węglowodór ulegający addycji (poprawiono — oryginał miał dwie poprawne odpowiedzi) | węglowodory (brak lekcji) | nieznany | nieokreślony | niepotwierdzony |
+| 4 | próba wykrywająca cukry redukujące | węglowodory / substancje biologiczne (brak lekcji) | nieznany | nieokreślony | niepotwierdzony |
+
+<small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady”, sekcja 10 (przykładowe pytania z chemii klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Druczek: plik wgrany 2026-10-12, poza repo. Status źródła: niepotwierdzony.</small>
 
 ## Weryfikacja zestawienia 338b4889 (2026-10-12) – Świętokrzyskie III etap 2022/23 (biologia, chemia, angielski, polski)
 
