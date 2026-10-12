@@ -888,6 +888,19 @@ BHP: Okulary; soda drażni oczy.
 - **Z pułapką:** czy MgSO₄ jest rozpuszczalny? (tak — R)
 :::
 
+## 17.5 | Zadanie z przekroju materiałów — parafraza (poziom O) {#przekroj-n04}
+
+::: karta exam | Zobojętnianie — zapis równania i produkty | poziom O
+▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady” (sekcja 10, przykładowe pytania z chemii dla klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Zad. 2.
+Druczek: plik przekroju (wgrany 2026-10-12, poza repo). Status źródła: niepotwierdzony.
+
+**Parafraza (własne sformułowanie):** zapisz produkty reakcji wodorotlenku sodu z kwasem solnym i uzupełnij równanie.
+
+::: odp | Pokaż rozwiązanie
+NaOH + HCl → NaCl + H₂O. Produkty: chlorek sodu (sól) i woda. Reakcja zobojętniania.
+:::
+:::
+
 ## 18 | Ćwiczenia {#cwiczenia}
 
 ::: karta understand | Mini-check (rozgrzewka)

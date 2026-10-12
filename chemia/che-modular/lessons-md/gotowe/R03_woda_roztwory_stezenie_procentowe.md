@@ -278,6 +278,21 @@ Zanim wstawisz liczby do wzoru, zrób tabelkę „przed — po” z trzema wiers
 | „Mleko i błoto to roztwory.” | Mleko to koloid (emulsja), błoto — zawiesina; roztwór jest jednorodny. | Roztwór nie ma widocznych, rozproszonych cząstek ani kropli. |
 :::
 
+## 8.5 | Zadanie z przekroju materiałów — parafraza (poziom O) {#przekroj-r03}
+
+::: karta exam | Stężenie procentowe — zadanie w stylu konkursowym | poziom O
+▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady” (sekcja 10, przykładowe pytania z chemii dla klasy 8). Rok: nieznany (plik nie podaje roku dla tej sekcji). Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Zad. 1.
+Druczek: plik przekroju (wgrany 2026-10-12, poza repo). Status źródła: niepotwierdzony — zawartość sprawdzona tylko w pliku, nie w oryginalnym arkuszu.
+
+**Parafraza (własne sformułowanie):** ile procent masowych stanowi sól w gotowym roztworze o masie 200 g, jeśli rozpuszczono w nim 25 g soli?
+
+::: odp | Pokaż rozwiązanie
+Dane: m(sól) = 25 g, m(roztworu) = 200 g.
+Cp = 25 g / 200 g · 100% = **12,5%**.
+Pułapka: masa roztworu to suma masy soli i wody (200 g), a nie sama woda.
+:::
+:::
+
 ## 9 | Ćwiczenia {#cwiczenia}
 
 ### A. Podstawa {#cw-a}
