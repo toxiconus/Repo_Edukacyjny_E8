@@ -137,3 +137,5 @@
 - 2026-10-12: najmniejsze lekcje kanonu (bez BIO.99 — plik systemowy): K04 (2,3 KB), K06 (2,4 KB), K11 (2,4 KB) przepisane od zera skillem lekcja-od-zera-w1 (wykład, mini-wykłady, zadania z kluczem, test 5, fiszki 12, słownik, klinika, ciekawostki 3); HTML w chemia/html; limity OK. Stan: PRZEBUDOWANA OD ZERA — W1 FULL do zrobienia.
 
 - 2026-10-12: K04 wersja 2 (rozszerzona, 28 KB md): 5 wykładów, mini-wykłady, metody pomiaru z BHP, 4 przykłady, 6 zadań, test 5, fiszki 17; objętość gazu w warunkach normalnych (22,4 dm³/mol) zamiast 24. K06 i K11 jeszcze w wersji 1 (do ponownego przejścia skillem).
+
+- 2026-10-12: K06 i K11 wersja 2 (rozszerzone). Źródła sprawdzone: Wikipedia (Activation energy: definicja E_a, katalizator bez zmiany ΔH), OpenTextBC (definicja szybkości, tabela ICE), Physics Classroom (dysocjacja, reguła 5%). Usunięto niepotwierdzoną regułę ×2 na 10 K z K06. K04 w wersji 2 (28 KB). Wszystkie trzy przechodzą limity (orientacyjnie).
