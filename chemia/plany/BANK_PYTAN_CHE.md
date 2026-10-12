@@ -819,3 +819,31 @@ Uwagi do kluczy:
 - Metadane i klucze: **potwierdzone** z PDF-ów CKE (zasady oceniania). Pełna treść zadań – nie przepisywana.
 - Nie sprawdzono w tej partii: klucz w karcie odpowiedzi (PDF-y kart nie mają tekstu – zawierają zaznaczenia), tekst zeszytów zadań pod kątem tematów (tylko zasady).
 - Zawarte w ZIP-ach pliki: matematyka – zasady, zeszyt X i Y, karta odpowiedzi X i Y, karta rozwiązań zadań otwartych; polski – zasady, zeszyt X i Y (kopie identyczne co do długości tekstu), karty odpowiedzi X i Y (bez tekstu).
+
+---
+
+## Korekta po sprawdzeniu zeszytów (E8 2026, termin główny)
+
+Sprawdzono treść zeszytów (wersja X) względem kluczy z zasad. Treść zadań nie jest przepisywana; tylko rodzaj zadania i wynik sprawdzenia.
+
+### Matematyka – zadania wielokrotnego wyboru
+- **Zadania 6 i 8** mają dwa pola luk: A/B (pierwsze pole) i C/D (drugie pole). Klucz „AC" (X) = A i C; „BC" (Y) = B i C; „BD" (X, zad. 8) = B i D; „BC" (Y, zad. 8) = B i C.
+- **Sprawdzenie zad. 6 (X):** 11 kul, po wylosowaniu 5 pozostaje 6 kul o parzystej sumie każdej pary, czyli wszystkie nieparzyste → A. Suma nieparzystych 1…11 = 36, suma wylosowanych = 66 − 36 = 30 → C. **Klucz AC zgodny.**
+- **Zad. 8:** suma 1…100 = 5050 → B. Wzór S = ½·n(n+1) → D (w wersji X). **Klucz BD zgodny.**
+- **Zadanie 10 (P/F):** trójkąt równoboczny o boku 2 cm: wysokość √3 (P), pole √3 cm² (P). **Klucz PP zgodny.**
+- **Zadanie 12 (P/F):** S–M = 5 km, S–W = √(3²+4²) = 5 km (P); M–W: przy S jako początku układu M = (5; 0), W = (−4; 3), więc M–W = √(9²+3²) = √90 ≈ 9,5 km < 10 km (P). **Klucz PP zgodny.**
+
+### Język polski – etykiety zadań
+Poprzednie etykiety z zasad były zbyt ogólne. Poprawione według treści zeszytu (X):
+- **Zad. 6 (0–1), P/F:** słowotwórstwo – rodzina wyrazów (brylant, brylancik) i formanty. Klucz PP (obie wersje).
+- **Zad. 7 (0–1):** interpunkcja – trzy przecinki (klucz w zasadach: poprawne wpisanie trzech przecinków).
+- **Zad. 8 (0–3):** 8.1 – uzupełnianie zdania wybranymi odpowiedziami A/B i C/D (klucz X „AD", Y „BC"); 8.2 – w zasadach brak osobnego klucza zamkniętego (sprawdzić w zasadach/zeszycie, ile punktów przypada na 8.2).
+- **Zad. 9 (0–2), otwarte:** wybór dwóch zdjęć z tematyką przyjaźni z „Małego Księcia" i wyjaśnienie związku.
+- **Zad. 11 (0–2), dopasowanie:** przyporządkowanie pytań do akapitów tekstu Hawkinga (tabela); w zasadach bez klucza „Rozwiązanie" – punktacja wg zasad.
+- **Zad. 13 (0–1), zamknięte:** dokończenie zdania wg tekstu (A–D). Klucz X „B", Y „D".
+- **Zad. 15 (0–2), otwarte:** wybór lektury obowiązkowej z zasadą „nie poddawać się", tytuł i bohater, uzasadnienie z sytuacją z lektury.
+- **Zad. 17 (0–3), otwarte:** ogłoszenie o wykładzie „Wybitni naukowcy" z dwoma argumentami; oceniana też poprawność językowa, ortograficzna i interpunkcyjna.
+
+Zasady polskiego (zad. 4, 9–11, 14, 15, 17, 18) – w tabeli powyżej etykiety poprawione; nie podawać ich jako zamkniętych.
+
+Status: klucze matematyki zad. 6, 8, 10, 12 – **sprawdzone rachunkiem**. Klucze polskiego zad. 6, 8.1, 13 – zgodne z zasadami i treścią. Zad. 8.2 i punktacja pozostałych otwartych – do sprawdzenia w zasadach przy kolejnej partii.
