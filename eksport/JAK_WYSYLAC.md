@@ -48,5 +48,5 @@ Ranking z próby B2e (2026-10-11, szczegóły w `eksport/OCENA_MODELI.md`, autom
 
 ## Paczka „GOTOWE” (od 2026-10-12) — odpowiedź do wklejenia bez poprawiania
 - Prompt: `eksport/GOTOWE_PROMPT.md` (pełne sekcje między `<<<PLIK` i `PLIK>>>`, numeracja sekcji z literą, zadania od `NASTĘPNE ZADANIE`, grafiki tylko jako tabela rodzajów + gotowy `@opis`, odpowiedź w md).
-- Paczka: `python3 eksport/paczka_gotowa.py NAZWA lekcja.md [--max 40] [--olimpiada]` → `eksport/out/GOTOWE_NAZWA_czKzN.md` (≈ 50 KB na część).
-- Wczytanie: `python3 narzedzia/wczytaj_odpowiedz.py lekcja.md odp_tura1.md [odp_tura2.md …]` (podgląd + kontrole) → `--zapisz`.
+- Paczka (decyzja użytkownika: bez dzielenia, całe lekcje, kilka w jednym md): `python3 eksport/paczka_gotowa.py NAZWA lekcja1.md [lekcja2.md …] [--olimpiada]` → `eksport/out/GOTOWE_NAZWA.md`. Odpowiedź = sama treść: każda lekcja między `<<<PLIK KOD` i `PLIK>>>`, audyt i tabela grafik na końcu pliku.
+- Wczytanie: `python3 narzedzia/wczytaj_odpowiedz.py odp_tura1.md [odp_tura2.md …]` (lekcję znajduje po KOD; podgląd + kontrole) → `--zapisz`.

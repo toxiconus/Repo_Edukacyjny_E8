@@ -1,4 +1,4 @@
-# POLECENIE — ulepsz lekcję tak, żeby autor wkleił ją bez poprawiania
+# POLECENIE — ulepsz lekcje tak, żeby autor wkleił je bez poprawiania
 
 **Przeczytaj całe polecenie przed odpowiedzią.** Odpowiedź wklejam skryptem prosto do repozytorium kursu. Skrypt nie poprawia błędów, więc każde odstępstwo od tych zasad oznacza ręczną pracę. Pisz tak, jakbyś sam miał potem bez sprawdzania wkleić swój tekst do pliku.
 
@@ -27,23 +27,25 @@
 
 ## 2. Jak zwrócić plik (najważniejsze)
 
-1. **Zwracasz pełny tekst części lekcji, którą dostałeś** — od pierwszego do ostatniego nagłówka `##` z paczki, każda sekcja w całości.
+1. **Paczka może zawierać kilka lekcji.** Każda zaczyna się nagłówkiem `# LEKCJA <KOD>` z danymi (`NASTĘPNE ZADANIE`, liczniki „przed”), a po nim jest cały plik lekcji. Opracowuj **jedną lekcję na turę**, w kolejności z paczki.
+2. **Zwracasz całą lekcję**: frontmatter (blok między `---` a `---`) i wszystkie sekcje `##` w pełnym brzmieniu.
    - Nie pisz „reszta bez zmian”, „doklej z oryginału”, „patrz wyżej”.
    - Nie zwracaj samych dopisków ani list „do wklejenia tu i tam”.
-   - Jeśli to część 1, zwracasz też frontmatter (blok między `---` a `---`).
-2. Plik lekcji umieść **między liniami znaczników**, każdy znacznik w osobnej linii:
-   - `<<<PLIK` — początek pliku;
+3. **Odpowiedź to sama treść — nic poza plikiem lekcji:**
+   - nie powtarzaj polecenia;
+   - bez wstępu, bez komentarzy, bez osobnego raportu.
+   Każda lekcja leży między liniami znaczników, każdy znacznik w osobnej linii:
+   - `<<<PLIK <KOD>` — początek pliku;
    - `PLIK>>>` — koniec pliku.
-   Nie używaj bloków kodu (trzy odwrócone apostrofy). Poza znacznikami nie wolno umieszczać żadnej treści lekcji.
-3. **Długa odpowiedź:** gdy nie zmieścisz się w jednej turze, przerwij **tylko na granicy sekcji `##`**:
-   - zamknij plik znacznikiem `PLIK>>>`;
-   - napisz „CIĄG DALSZY — napisz »dalej«”;
-   - w następnej turze zacznij od `<<<PLIK`, a pod nim od razu nagłówek kolejnej sekcji.
-   Nie powtarzaj sekcji już wysłanych. Po ostatniej sekcji napisz „KONIEC <KOD>”.
-4. **Numeracja sekcji:** nie zmieniaj numerów ani `{#id}` istniejących sekcji. Nową sekcję wstaw tam, gdzie pasuje, z numerem poprzedniej + litera (`## 8a | …`, `## 8b | …`) i nowym, unikalnym `{#id}`.
-5. **Numeracja zadań:** nowe zadania numeruj od liczby podanej w nagłówku paczki (`NASTĘPNE ZADANIE:`), rosnąco w kolejności występowania w pliku. Nie zmieniaj numerów istniejących zadań.
-6. Linia `stan:` we frontmatterze (tylko w części 1): `stan: ULEPSZONA — <nazwa modelu>, <data RRRR-MM-DD>; do sprawdzenia`. Nigdy nie wpisuj tam „W1” ani „FULL”.
-7. **W treści lekcji nie zostawiaj żadnych uwag dla autora** („wklej tu”, „jeśli w niewidocznej części…”, „sprawdź duplikaty”, „KONIEC FRAGMENTU”). Takie uwagi idą wyłącznie do raportu (punkt 5 odpowiedzi).
+   Nie używaj bloków kodu (trzy odwrócone apostrofy).
+4. **Długa lekcja:** gdy nie zmieścisz się w jednej turze, przerwij **tylko na granicy sekcji `##`**:
+   - zamknij znacznikiem `PLIK>>>` i dopisz w ostatniej linii „dalej”;
+   - w następnej turze zacznij od `<<<PLIK <KOD>`, a pod nim od razu nagłówek kolejnej sekcji.
+   Nie powtarzaj sekcji już wysłanych. Gdy lekcja jest skończona, ostatnia linia tury to „KONIEC <KOD>”. Następna lekcja z paczki idzie w kolejnej turze, po słowie „dalej” od użytkownika.
+5. **Numeracja sekcji:** nie zmieniaj numerów ani `{#id}` istniejących sekcji. Nową sekcję wstaw tam, gdzie pasuje, z numerem poprzedniej + litera (`## 8a | …`, `## 8b | …`) i nowym, unikalnym `{#id}`.
+6. **Numeracja zadań:** nowe zadania numeruj od liczby `NASTĘPNE ZADANIE` z nagłówka lekcji, rosnąco w kolejności występowania. Nie zmieniaj numerów istniejących zadań.
+7. Linia `stan:` we frontmatterze: `stan: ULEPSZONA — <nazwa modelu>, <data RRRR-MM-DD>; do sprawdzenia`. Jeśli jej nie ma — dodaj. Nigdy nie wpisuj tam „W1” ani „FULL”. Puste pola frontmattera (`opis:`, `uid:`, `stopka:`) uzupełnij.
+8. **W treści lekcji nie zostawiaj żadnych uwag dla autora** („wklej tu”, „jeśli w niewidocznej części…”, „sprawdź duplikaty”). Wszystko, co autor powinien wiedzieć, idzie do sekcji audytu na końcu pliku (punkt 5).
 
 ## 3. Składnia — pisz dokładnie tak (plik idzie prosto do generatora HTML)
 
@@ -93,7 +95,7 @@
 
 Nie rysuj grafik (bez ASCII, SVG, tabel udających rysunek). Grafiki zrobi autor z biblioteki komponentów. Grafika ma być tylko tam, gdzie naprawdę pomaga zrozumieć — proces, zależność, ćwiczenie — nigdy jako ozdoba.
 
-W odpowiedzi (punkt 4 odpowiedzi, **poza plikiem**) podaj tabelę potrzebnych grafik. Kolumny:
+Potrzebne grafiki wypisz w tabeli „Grafiki do zrobienia” w sekcji audytu na końcu pliku (punkt 5). Kolumny:
 
 - **Gdzie:** sekcja i akapit, po którym ma stanąć.
 - **Rodzaj:** wybierz jeden:
@@ -112,41 +114,34 @@ W odpowiedzi (punkt 4 odpowiedzi, **poza plikiem**) podaj tabelę potrzebnych gr
 
 W samej lekcji w miejscu grafiki **nie wstawiaj niczego**. Treść musi być pełna i zrozumiała bez grafiki.
 
-## 5. Format odpowiedzi (cała odpowiedź w Markdown, zawsze w tej kolejności)
+## 5. Koniec pliku — sekcja audytu (zamiast raportu)
 
-```
-# ODPOWIEDŹ — <KOD> · część <k>/<n> · <nazwa modelu>
+Ostatni element każdego pliku, przed `PLIK>>>`:
 
-## 1. Plik
-<<<PLIK
-…pełny tekst części lekcji…
+- nagłówek `### AUDYT — <nazwa modelu>, <data> {#audyt-ulepsz}`;
+- **Poprawione:** lista `- §… : „było” → „jest” — powód` (albo „brak”);
+- **Dodane:** lista `- §… : co dodano`;
+- **Niepewne / do weryfikacji:** lista (albo „brak”);
+- **Proponuję usunąć:** lista z powodem (sam niczego nie usuwasz) albo „brak”;
+- **Źródła:** krótka lista;
+- **Grafiki do zrobienia:** tabela `| Gdzie | Rodzaj | Co pokazuje | Wniosek | @opis |` (punkt 4) albo „brak”.
+
+Wzór całej tury (bez bloku kodu w odpowiedzi):
+
+<<<PLIK FIZ-01
+---
+kod: FIZ-01
+…frontmatter…
+---
+…wszystkie sekcje…
+### AUDYT — <model>, 2026-10-12 {#audyt-ulepsz}
+…
 PLIK>>>
-
-## 2. Poprawione błędy
-- §… : „było” → „jest” — powód
-
-## 3. Dodane
-- §… : co dodano (jedna linia na pozycję)
-
-## 4. Grafiki potrzebne
-| Gdzie | Rodzaj | Co pokazuje | Wniosek | @opis |
-|---|---|---|---|---|
-
-## 5. Raport
-| Miara | Przed | Po |
-(KB, sekcje, zadania, pytania, fiszki, hasła, ciekawostki, mini-wykłady, wiersze kliniki — „Przed” przepisz z nagłówka paczki)
-- Proponuję usunąć: … (lub „brak”)
-- Niepewne / do weryfikacji: …
-- Źródła: …
-
-KONIEC <KOD>
-```
-
-(Powyższy blok to tylko wzór układu — w odpowiedzi nie używaj bloków kodu.)
+KONIEC FIZ-01
 
 ## 6. Lista kontrolna — sprawdź przed wysłaniem
 
-- [ ] Plik między `<<<PLIK` i `PLIK>>>`, pełne sekcje, bez „bez zmian” i bez uwag dla autora w treści.
+- [ ] Odpowiedź to tylko plik między `<<<PLIK <KOD>` i `PLIK>>>`: cała lekcja, bez powtarzania polecenia, bez „bez zmian” i bez uwag dla autora w treści; na końcu pliku sekcja audytu.
 - [ ] Nic z oryginału nie zniknęło; liczniki „po” nie mniejsze niż „przed”.
 - [ ] Numery i `{#id}` sekcji bez zmian, nowe sekcje z literą, nowe zadania od `NASTĘPNE ZADANIE`.
 - [ ] Liczba otwarć `::: …` równa liczbie zamknięć `:::`.
@@ -154,5 +149,5 @@ KONIEC <KOD>
 - [ ] Wykład od zera, co najmniej 3 mini-wykłady „W skrócie”, 3–5 ciekawostek, `nie-myl`, `adv`.
 - [ ] Klucze zadań i testu przeliczone, punktacja przy każdym podpunkcie.
 - [ ] Polskie cudzysłowy, Unicode zamiast LaTeX-a, brak cyrylicy i angielskich słów.
-- [ ] Grafiki tylko w tabeli w punkcie 4, istniejące `@viz/@model/@zlewka/@opis` nietknięte.
+- [ ] Grafiki tylko w tabeli „Grafiki do zrobienia” w audycie, istniejące `@viz/@model/@zlewka/@opis` nietknięte.
 - [ ] Brak planów dziennych, limitów czasu, zadań domowych, notatek dla nauczyciela.
