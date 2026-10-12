@@ -56,5 +56,37 @@ out.append("|---|---|---|")
 out.append("| FIZ-01 | Elektrostatyka (pomost do F04 i F11) | gotowa, poza kanonem CHE |")
 for k in range(0,11):
     out.append(f"| RT{k:02d} | Powtórka tematyczna (szkic w `plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md`) | do zrobienia |")
+# --- stan plików: rozmiar md/HTML, wersja, grafiki, samodzielność ---
+def stan_pliku(md_rel):
+    md=R+md_rel
+    base=os.path.basename(md_rel)
+    html=R+"chemia/html/"+base.replace(".md",".html")
+    txt=open(md,encoding="utf-8").read()
+    stan=re.search(r"^stan:\s*(.+)$",txt,re.M)
+    stan=stan.group(1).strip().strip('"') if stan else "—"
+    stan=stan.split(" — ")[0] if stan.startswith("GOTOWE") is False and " — " in stan else stan
+    graf=len(re.findall(r"^(@model|@zlewka|@viz)\b|^!\[|<svg\b",txt,re.M))
+    body=re.split(r"^## (?:Źródła|Zrodla|LOG|AUDYT)",txt,flags=re.M)[0]
+    body=re.sub(r"^zrodla:.*$","",body,flags=re.M)
+    zal=sorted(set(re.findall(r"\bLAB\d{2}\b|szablon/[\w./-]+|pomiar\w*/[\w./-]+",body)))
+    samo="tak" if not zal else "wymaga: "+", ".join(zal[:4])
+    kb_md=os.path.getsize(md)/1024
+    kb_html=os.path.getsize(html)/1024 if os.path.exists(html) else None
+    return kb_md,kb_html,stan,graf,samo
+out.append("## Stan plików: rozmiar, wersja, grafiki, samodzielność\n")
+out.append("Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z frontmatter), liczba grafik (`@model`, `@zlewka`, `@viz`, obrazy, SVG w md), samodzielność (`tak` = nie odwołuje się do innych plików repo ani do LAB ani do szablonów (sekcje źródeł i logów pominięte); inaczej wymienione zależności). Rozmiary generowane z dysku przy budowie spisu.\n")
+out.append("| Kod | MD (KB) | HTML (KB) | Wersja | Grafiki | Samodzielna | Plik |")
+out.append("|---|---|---|---|---|---|---|")
+for b,_ in blocks:
+    for kod,rec in rows.get(b,[]):
+        fl=files.get(kod,[])
+        if not fl:
+            out.append(f"| {kod} | — | — | brak pliku | — | — | — |")
+            continue
+        for rel in fl:
+            kmd,khtml,stan,graf,samo=stan_pliku(rel)
+            hs=f"{khtml:.0f}" if khtml is not None else "—"
+            out.append(f"| {kod} | {kmd:.1f} | {hs} | {stan} | {graf} | {samo} | {os.path.basename(rel)} |")
+out.append("")
 open(R+"chemia/lekcje_md/F/CHE.01.F00.wspolne_bloku_F.md.tmp","w",encoding="utf-8").write("\n".join(out)+"\n")
 print(sum(len(v) for v in rows.values()), {k:len(v) for k,v in rows.items()})

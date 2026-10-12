@@ -1,19 +1,3 @@
----
-kod: F00
-tytul: "Spis lekcji chemii i zakresów (wszystkie działy)"
-typ: spis
-poziom: E8 / LO
-zrodla: "chemia/plany/CHE_SPIS_TRESCI.md (kanon v0.3, 113 lekcji; generowany); poprzednia treść F00 (materiał roboczy): chemia/plany/F00_materialy_robocze_v1.md"
-opis: "Spis wszystkich 113 lekcji chemii E8/LO: 21 lekcji bloku F i działy N, R, J, O, X, E, K, A, P, plus materiały wspólne (00) i uzupełnienia. Kod, tytuł, zakres, wymagania, mosty, status i plik w repo. Nie jest lekcją dla ucznia."
-stan: SPIS — Claude Haiku 5.5, 2026-10-12
----
-
-# Spis lekcji chemii: zakresy i zależności
-
-Ten plik jest mapą całego kursu chemii. Dane pochodzą z kanonu (`chemia/plany/CHE_SPIS_TRESCI.md`); tabele są generowane, więc zmiana kanonu zmienia spis. Stan „GOTOWE HTML” w kolumnie Status oznacza gotową lekcję w spisie; „UZUPEŁNIONE” i „●○○” oznaczają mniejszy zakres materiału.
-
-**Jak czytać:** „Wymaga” to lekcje, bez których zakres jest niezrozumiały. „Pogłębia” to lekcje rozwijające ten temat. Kolumna „Materiał w repo” to plik źródłowy (`chemia/lekcje_md/`).
-
 ## Bloki kursu: 21 lekcji F + 9 działów
 
 Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie kanonu, plik materiału w repo. Źródło: `chemia/plany/CHE_SPIS_TRESCI.md` (generowany).
@@ -210,14 +194,123 @@ Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie k
 | RT08 | Powtórka tematyczna (szkic w `plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md`) | do zrobienia |
 | RT09 | Powtórka tematyczna (szkic w `plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md`) | do zrobienia |
 | RT10 | Powtórka tematyczna (szkic w `plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md`) | do zrobienia |
+## Stan plików: rozmiar, wersja, grafiki, samodzielność
 
+Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z frontmatter), liczba grafik (`@model`, `@zlewka`, `@viz`, obrazy, SVG w md), samodzielność (`tak` = nie odwołuje się do innych plików repo ani do LAB ani do szablonów (sekcje źródeł i logów pominięte); inaczej wymienione zależności). Rozmiary generowane z dysku przy budowie spisu.
 
-## Zasady kursu
+| Kod | MD (KB) | HTML (KB) | Wersja | Grafiki | Samodzielna | Plik |
+|---|---|---|---|---|---|---|
+| F01 | 22.3 | 99 | PRZEBUDOWA | 0 | tak | CHE.01.F01.jak_mysli_chemik.md |
+| F02 | 21.3 | 98 | PRZEBUDOWA | 0 | tak | CHE.01.F02.materia_i_substancje.md |
+| F03 | 41.4 | 120 | — | 0 | wymaga: LAB00, LAB02, LAB05 | CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md |
+| F04 | 40.2 | 119 | — | 0 | wymaga: LAB00, LAB05, LAB12 | CHE.01.F04.atom.md |
+| F05 | 40.7 | 117 | — | 0 | wymaga: LAB00, LAB05, LAB12 | CHE.01.F05.izotopy_jony_i_masa_atomowa.md |
+| F06 | 31.4 | 107 | — | 0 | wymaga: LAB12 | CHE.01.F06.uklad_okresowy.md |
+| F07 | 54.5 | 137 | W1 | 0 | wymaga: LAB20 | CHE.01.F07.konfiguracja_elektronowa.md |
+| F08 | 54.8 | 134 | W1 | 0 | wymaga: LAB12 | CHE.01.F08.konfiguracja_uklad_okresowy.md |
+| F09 | 39.7 | 123 | PRZEBUDOWA | 0 | tak | CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien.md |
+| F10 | 19.6 | 91 | W1 | 0 | tak | CHE.01.F10.dlaczego_atomy_sie_lacza.md |
+| F11 | 65.2 | 146 | W1 | 0 | tak | CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn.md |
+| F12 | 27.7 | 106 | PRZEBUDOWANA (wersja 3, scalona z wersją 2 i treścią z poprzedniej wersji MASTER) | 0 | tak | CHE.01.F12.wzory_chemiczne.md |
+| F13 | 34.9 | 110 | W1 | 0 | wymaga: LAB12, LAB20 | CHE.01.F13.wzory_elektronowe_lewis.md |
+| F14 | 66.2 | 148 | W1 | 0 | tak | CHE.01.F14.geometria_czasteczek_vsepr.md |
+| F15 | 26.4 | 99 | W6 | 0 | tak | CHE.01.F15.polarnosc_i_oddzialywania.md |
+| F16 | 47.2 | 127 | W6 | 0 | tak | CHE.01.F16.od_obserwacji_do_modelu_reakcji.md |
+| F17 | 43.2 | 121 | W6 | 0 | tak | CHE.01.F17.rownania_reakcji.md |
+| F18 | 14.3 | 85 | W6 | 0 | tak | CHE.01.F18.dossier_substancji.md |
+| F19 | 12.7 | 83 | W23 | 0 | tak | CHE.01.F19.dossier_reakcji.md |
+| F20 | 13.6 | 85 | W23 | 0 | tak | CHE.01.F20.klinika_bledow_fundamentow.md |
+| F21 | 15.1 | 86 | W23 | 0 | tak | CHE.01.F21.zadania_transferowe_i_diagnostyka.md |
+| N01 | — | — | brak pliku | — | — | — |
+| N02 | 37.3 | 119 | — | 0 | tak | CHE.02.N02.tlenki.md |
+| N03 | 30.6 | 110 | — | 0 | tak | CHE.02.N03.wodorotlenki.md |
+| N04 | 35.4 | 118 | — | 0 | tak | CHE.02.N04.kwasy.md |
+| N05 | 37.4 | 120 | — | 0 | tak | CHE.02.N05.sole.md |
+| N06 | — | — | brak pliku | — | — | — |
+| N07 | 4.3 | 75 | W23 | 0 | tak | CHE.02.N07.systematyka_nieorganiczna.md |
+| N08 | 5.1 | 75 | W23 | 0 | tak | CHE.02.N08.mapa_przemian.md |
+| R01 | 5.5 | 76 | W23 | 0 | tak | CHE.03.R01.woda_i_roztwory.md |
+| R02 | 4.6 | 75 | W23 | 0 | tak | CHE.03.R02.rozpuszczalnosc.md |
+| R03 | 34.3 | 116 | W23 | 0 | tak | CHE.03.R03+R05.stezenia.md |
+| R04 | 41.7 | 125 | W23 | 0 | tak | CHE.03.R04+R07-R09.stechiometria.md |
+| R05 | — | — | brak pliku | — | — | — |
+| R06 | 4.3 | 74 | W23 | 0 | tak | CHE.03.R06.gazy_objetosc_molowa.md |
+| R07 | — | — | brak pliku | — | — | — |
+| R08 | — | — | brak pliku | — | — | — |
+| R09 | — | — | brak pliku | — | — | — |
+| J01 | 21.5 | 95 | W23 | 0 | tak | CHE.04.J01.dysocjacja_elektrolityczna.md |
+| J02 | 13.9 | 86 | W23 | 0 | tak | CHE.04.J02.odczyn_i_ph.md |
+| J03 | 10.2 | 81 | W23 | 0 | tak | CHE.04.J03.reakcje_jonowe.md |
+| J04 | 9.6 | 81 | W23 | 0 | tak | CHE.04.J04.stracanie_osadow.md |
+| J05 | 9.7 | 80 | W23 | 0 | tak | CHE.04.J05.amfoterycznosc.md |
+| J06 | 10.9 | 82 | W23 | 0 | tak | CHE.04.J06.rownowagi_kwasowo_zasadowe.md |
+| J07 | 3.9 | 74 | W23 | 0 | tak | CHE.04.J07.ka_kb_kw.md |
+| J08 | 3.9 | 74 | W23 | 0 | tak | CHE.04.J08.hydroliza_soli.md |
+| J09 | 3.7 | 73 | W23 | 0 | tak | CHE.04.J09.bufory.md |
+| J10 | 3.6 | 74 | W23 | 0 | tak | CHE.04.J10.iloczyn_rozpuszczalnosci_ksp.md |
+| J11 | 4.5 | 75 | W23 | 0 | tak | CHE.04.J11.identyfikacja_jonow.md |
+| J12 | 4.7 | 75 | W23 | 0 | tak | CHE.04.J12.miareczkowanie.md |
+| O01 | 40.7 | 124 | W23 | 0 | tak | CHE.05.O01-O07.weglowodory.md |
+| O02 | — | — | brak pliku | — | — | — |
+| O03 | — | — | brak pliku | — | — | — |
+| O04 | — | — | brak pliku | — | — | — |
+| O05 | — | — | brak pliku | — | — | — |
+| O06 | — | — | brak pliku | — | — | — |
+| O07 | — | — | brak pliku | — | — | — |
+| O08 | 12.4 | 82 | W23 | 0 | tak | CHE.05.O08+O11+O12.alkohole_kwasy_estry.md |
+| O09 | 3.9 | 74 | W23 | 0 | tak | CHE.05.O09.fenole.md |
+| O10 | 3.8 | 74 | W23 | 0 | tak | CHE.05.O10.aldehydy_i_ketony.md |
+| O11 | — | — | brak pliku | — | — | — |
+| O12 | — | — | brak pliku | — | — | — |
+| O13 | 45.9 | 129 | W23 | 0 | tak | CHE.05.O13+O15-O20+O22-O23.biochemia.md |
+| O14 | 3.4 | 73 | W23 | 0 | tak | CHE.05.O14.aminy_i_amidy.md |
+| O15 | — | — | brak pliku | — | — | — |
+| O16 | — | — | brak pliku | — | — | — |
+| O17 | — | — | brak pliku | — | — | — |
+| O18 | — | — | brak pliku | — | — | — |
+| O19 | — | — | brak pliku | — | — | — |
+| O20 | — | — | brak pliku | — | — | — |
+| O21 | 4.3 | 74 | W23 | 0 | tak | CHE.05.O21.polimery_i_tworzywa.md |
+| O22 | — | — | brak pliku | — | — | — |
+| O23 | — | — | brak pliku | — | — | — |
+| O24 | 4.1 | 74 | W23 | 0 | tak | CHE.05.O24.nazewnictwo_procedura_zbiorcza.md |
+| O25 | 4.0 | 74 | W23 | 0 | tak | CHE.05.O25.mechanizmy_reakcji_organicznych.md |
+| X01 | 37.9 | 122 | W22 | 0 | tak | CHE.06.X01-X09.redoks.md |
+| X02 | — | — | brak pliku | — | — | — |
+| X03 | — | — | brak pliku | — | — | — |
+| X04 | — | — | brak pliku | — | — | — |
+| X05 | — | — | brak pliku | — | — | — |
+| X06 | — | — | brak pliku | — | — | — |
+| X07 | — | — | brak pliku | — | — | — |
+| X08 | — | — | brak pliku | — | — | — |
+| X09 | — | — | brak pliku | — | — | — |
+| E01 | 3.4 | 73 | W23 | 0 | tak | CHE.06.E01.ogniwo_galwaniczne.md |
+| E02 | 3.4 | 73 | W23 | 0 | tak | CHE.06.E02.potencjaly_elektrodowe.md |
+| E03 | 2.9 | 73 | W23 | 0 | tak | CHE.06.E03.sem.md |
+| E04 | 3.0 | 73 | W23 | 0 | tak | CHE.06.E04.elektroliza.md |
+| E05 | 3.6 | 73 | W23 | 0 | tak | CHE.06.E05.korozja.md |
+| E06 | 3.6 | 73 | W23 | 0 | tak | CHE.06.E06.zrodla_energii_akumulatory.md |
+| K01 | 21.4 | 96 | W24 | 0 | tak | CHE.07.K01.energia_reakcji.md |
+| K02 | 8.9 | 80 | W24 | 0 | tak | CHE.07.K02.entalpia.md |
+| K03 | 16.0 | 89 | W23 | 0 | tak | CHE.07.K03.kalorymetria_i_przemiany_fazowe.md |
+| K04 | 33.5 | 113 | PRZEBUDOWANA (wersja 3, wg skillu lekcja-od-zera-w1) | 0 | tak | CHE.07.K04.szybkosc_reakcji.md |
+| K05 | 3.0 | 73 | W23 | 0 | tak | CHE.07.K05.czynniki_szybkosci.md |
+| K06 | 16.3 | 92 | PRZEBUDOWANA OD ZERA (wersja 2) | 0 | tak | CHE.07.K06.zderzenia_energia_aktywacji.md |
+| K07 | 19.8 | 96 | PRZEBUDOWANA (wersja 2, wg skillu lekcja-od-zera-w1) | 0 | tak | CHE.07.K07.kataliza.md |
+| K08 | 13.9 | 88 | PRZEBUDOWA | 0 | tak | CHE.07.K08.rownowaga_dynamiczna.md |
+| K09 | 13.9 | 88 | PRZEBUDOWA | 0 | tak | CHE.07.K09.stala_rownowagi.md |
+| K10 | 14.2 | 88 | PRZEBUDOWA | 0 | tak | CHE.07.K10.regula_le_chateliera.md |
+| K11 | 18.1 | 94 | PRZEBUDOWANA OD ZERA (wersja 2) | 0 | tak | CHE.07.K11.rownowaga_ilosciowa.md |
+| A01 | 2.4 | 72 | W23 | 0 | tak | CHE.08.A01.jadro_atomowe.md |
+| A02 | — | — | brak pliku | — | — | — |
+| A03 | — | — | brak pliku | — | — | — |
+| A04 | — | — | brak pliku | — | — | — |
+| A05 | — | — | brak pliku | — | — | — |
+| A06 | — | — | brak pliku | — | — | — |
+| P01 | — | — | brak pliku | — | — | — |
+| P02 | — | — | brak pliku | — | — | — |
+| P03 | — | — | brak pliku | — | — | — |
+| P04 | — | — | brak pliku | — | — | — |
+| P05 | — | — | brak pliku | — | — | — |
+| P06 | — | — | brak pliku | — | — | — |
 
-- **Jeden właściciel pojęcia.** Pojęcie uczy od zera jedna lekcja (OWNER). Inne je przypominają (REF), pogłębiają (EXPAND) albo stosują (APPLY). Przykład: stopień utlenienia — właściciel F09; w F12 i F17 tylko przypomnienie.
-- **Zasada elastyczności.** Lekcja dostaje tyle wykładów, definicji i podpowiedzi, ile temat wymaga. Trudny temat ma kilka wykładów i pojęcia od zera; prosty — jeden.
-- **Słownik i powiązania** są w `chemia/plany/SLOWNIK_CHE.md` i `chemia/plany/POWIAZANIA_CHE.md`.
-
-## Historia tej strony
-
-Poprzednia treść F00 (113 KB: kilka wersji MASTER, dziennik zmian, specyfikacje modułów i mapy) zachowana w `chemia/plany/F00_materialy_robocze_v1.md`. Treść wykładowa jest w lekcjach F01–F21.
