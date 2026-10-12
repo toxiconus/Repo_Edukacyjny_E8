@@ -636,97 +636,168 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;K04&quot; &quot;Szybkość reakcji&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "K04"</div><h1>"Szybkość reakcji"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#wyklad">1. Wykład — jak szybko zachodzi reakcja</a><a class="toc-link" href="#pomiar">2. Co wpływa na pomiar</a><a class="toc-link" href="#czynniki">3. Czynniki i kolejne kroki</a><a class="toc-link" href="#klinika">4. Klinika błędów</a><a class="toc-link" href="#cwiczenia">5. Ćwiczenia</a><a class="toc-link" href="#test">6. Test</a><a class="toc-link" href="#slownik">7. Słownik</a><a class="toc-link" href="#fiszki">8. Fiszki</a><a class="toc-link" href="#mosty">9. Mosty</a><a class="toc-link" href="#s1">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przebudowa od zera)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#wyklad">1. Wykład 1 — co to znaczy „szybko"</a><a class="toc-link" href="#srednia">2. Wykład 2 — szybkość średnia i jej wzór</a><a class="toc-link" href="#chwilowa">3. Wykład 3 — szybkość chwilowa i nachylenie stycznej</a><a class="toc-link" href="#jednostki">4. Wykład 4 — jednostki i przeliczanie</a><a class="toc-link" href="#wspolczynniki">5. Wykład 5 — stechiometria szybkości</a><a class="toc-link" href="#pomiar">6. Metody pomiaru szybkości</a><a class="toc-link" href="#przyklady">7. Przykłady obliczeniowe</a><a class="toc-link" href="#kinetyczne">8. Wstęp do równania kinetycznego (LO)</a><a class="toc-link" href="#klinika">9. Klinika błędów</a><a class="toc-link" href="#cwiczenia">10. Ćwiczenia</a><a class="toc-link" href="#test">11. Test</a><a class="toc-link" href="#slownik">12. Słownik</a><a class="toc-link" href="#fiszki">13. Fiszki</a><a class="toc-link" href="#mosty">14. Mosty</a><a class="toc-link" href="#ciekawostki">15. Ciekawostki</a><a class="toc-link" href="#s1">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przebudowa od zera, wersja 2)</a></nav></details>
 <section id="wyklad">
-<div class="part-heading"><span class="part-num">1</span> Wykład — jak szybko zachodzi reakcja</div>
+<div class="part-heading"><span class="part-num">1</span> Wykład 1 — co to znaczy „szybko"</div>
 <div class="card card-understand">
 <span class="card-label">Wykład od zera</span>
-<p>Pytanie na start: dlaczego jedna reakcja kończy się w ułamku sekundy, a inna trwa lata? Wrzuć kawałek magnezu do kwasu solnego: od razu pojawiają się pęcherzyki wodoru i metal szybko znika. Położ zwykłe żelazo na deszczu: rdza narasta miesiącami. Obie reakcje prowadzą do produktów, ale różnią się <strong>szybkością</strong>.</p>
-<p>Szybkość reakcji mówi, jak szybko zmienia się ilość substratów lub produktów w czasie. Najczęściej mierzymy ją przez stężenie, czyli liczbę moli substancji w jednym decymetrze sześciennym roztworu (mol/dm³). Jeśli stężenie substratu w ciągu 60 sekund spada z 0,40 do 0,10 mol/dm³, to średnio w każdej sekundzie ubywało 0,005 mol/dm³ tej substancji.</p>
-<p>Ważne jest rozróżnienie dwóch rzeczy. <strong>Szybkość średnia</strong> to zmiana w całym przedziale czasu, czyli iloraz Δc/Δt. <strong>Szybkość chwilowa</strong> to szybkość w jednej, konkretnej chwili; na wykresie stężenia od czasu odpowiada nachyleniu stycznej do krzywej w tym punkcie. Dlatego średnia z przedziału 0–60 s nie mówi, jak szybko reakcja szła na początku.</p>
-<p>Dlaczego szybkość się zmienia? Gdy substratów ubywa, rzadziej zderzają się ze sobą, więc reakcja zwalnia. Zwykle najszybciej przebiega na początku, a pod koniec już wolno. Ta obserwacja jest kluczem do odczytywania wykresów: tam, gdzie krzywa jest bardziej stroma, reakcja przebiega szybciej.</p>
-<p>Jak to zmierzyć? Wystarczy wybrać cechę, która zmienia się razem z reakcją: objętość wydzielającego się gazu, masę, barwę roztworu, przewodnictwo elektryczne albo ciśnienie w zamkniętym naczyniu. Każdą z nich odczytujemy w kolejnych chwilach i rysujemy wykres. Taki pomiar jest podstawą całej kinetyki.</p>
+<p>Pytanie na start: dlaczego jedna reakcja kończy się w ułamku sekundy, a inna trwa lata? Wrzuć kawałek magnezu do kwasu solnego: od razu pojawiają się pęcherzyki wodoru i metal szybko znika. Połóż zwykłe żelazo na deszczu: rdza narasta miesiącami. Obie reakcje prowadzą do produktów, ale różnią się <strong>szybkością</strong>, czyli tym, jak szybko zmienia się skład układu w czasie.</p>
+<p>Szybkość reakcji to zmiana ilości substancji (zwykle stężenia) w jednostce czasu. Mierzymy ją przez to, jak zmienia się stężenie substratu, który ubywa, albo produktu, który przybywa. Stężenie to liczba moli substancji w jednym decymetrze sześciennym roztworu (mol/dm³). Jeśli stężenie substratu w ciągu 60 sekund spada z 0,40 do 0,10 mol/dm³, to średnio w każdej sekundzie ubywało 0,005 mol/dm³ tej substancji.</p>
+<p>Od razu widać dwie rzeczy, które trzeba trzymać w głowie. Po pierwsze: szybkość mierzymy w czasie, więc zawsze pojawia się mianownik „sekunda” (albo minuta, godzina). Po drugie: szybkość nie mówi, ile produktu powstanie w końcu; mówi tylko, jak szybko do niego dochodzi. Dlatego reakcja szybka może mieć małą wydajność, a wolna — dużą. To rozróżnienie wróci w ciekawostkach i w klinice błędów.</p>
+<p>Dlaczego szybkość się zmienia? Gdy substratów ubywa, rzadziej zderzają się one ze sobą, więc reakcja zwykle zwalnia. Najszybciej przebiega na początku, a pod koniec już wolno. Ta obserwacja jest kluczem do odczytywania wykresów: tam, gdzie krzywa jest bardziej stroma, reakcja przebiega szybciej.</p>
+<p>Jak to zmierzyć? Wystarczy wybrać cechę, która zmienia się razem z reakcją: objętość wydzielającego się gazu, masę naczynia (gdy gaz ucieka), barwę roztworu, przewodnictwo elektryczne albo ciśnienie w zamkniętym naczyniu. Każdą z nich odczytujemy w kolejnych chwilach, notujemy w tabeli i rysujemy wykres. Taki pomiar jest podstawą całej kinetyki — nauki o szybkości reakcji.</p>
 </div>
-<h3 id="srednia">1.1 Szybkość średnia — wzór i znak</h3>
+<h3 id="po-co">1.1 Mini-wykład: po co w ogóle mierzyć szybkość</h3>
+<div class="card card-understand">
+<span class="card-label">W skrócie: szybkość w przemyśle i w kuchni</span>
+<p>Przemysł chemiczny płaci za czas: im szybciej reaktor przerabia substraty, tym więcej produktu z jednej instalacji. Dlatego inżynierowie mierzą szybkość i dobierają temperaturę, ciśnienie i katalizatory. W kuchni robimy to intuicyjnie: ciasto rośnie szybciej w cieple, a mleko psuje się szybciej w upale. Szybkość to więc nie tylko wielkość na kartce, ale narzędzie sterowania procesem.</p>
+</div>
+</section>
+<section id="srednia">
+<div class="part-heading"><span class="part-num">2</span> Wykład 2 — szybkość średnia i jej wzór</div>
+<h3>2.1 Wzór i znak</h3>
 <p>Dla substancji, której ubywa (substrat), szybkość średnia w przedziale czasu od t₁ do t₂ to:</p>
 <div class="formula-lg">v_śr = −Δc/Δt = −(c₂ − c₁)/(t₂ − t₁)</div>
-<p>Znak minus jest potrzebny, bo Δc dla substratu jest ujemne. Dzięki temu szybkość wychodzi dodatnia. Dla produktu, którego przybywa, szybkość liczymy bez minusa: v_śr = +Δc/Δt.</p>
+<p>Znak minus jest potrzebny, bo Δc dla substratu jest ujemne (stężenie maleje). Dzięki temu szybkość wychodzi dodatnia. Dla produktu, którego przybywa, szybkość liczymy bez minusa: v_śr = +Δc/Δt. Szybkość reakcji jest wielkością dodatnią — jeśli wynik wyszedł ujemny, prawie na pewno zapomniałeś o znaku albo o tym, którą substancję liczysz.</p>
 <div class="card card-core">
 <span class="card-label">Szybkość średnia — krok po kroku</span>
 <ol>
-<li>Odczytaj stężenie na początku i na końcu przedziału.</li>
-<li>Oblicz Δc = c₂ − c₁ i Δt = t₂ − t₁.</li>
-<li>Podziel: v_śr = |Δc|/Δt. Dla substratu wynik jest dodatni dzięki modułowi.</li>
-<li>Zapisz jednostkę: mol/(dm³·s) (czyli mol·dm⁻³·s⁻¹).</li>
+<li>Odczytaj stężenie na początku i na końcu przedziału czasu.</li>
+<li>Oblicz Δc = c₂ − c₁ oraz Δt = t₂ − t₁ (w sekundach).</li>
+<li>Podziel: v_śr = moduł(Δc) / Δt. Moduł daje wynik dodatni dla każdej substancji.</li>
+<li>Zapisz jednostkę: mol/(dm³·s), czyli mol·dm⁻³·s⁻¹.</li>
+<li>Sprawdź rząd wielkości: w typowych reakcjach szkolnych wynik jest rzędu 10⁻⁴–10⁻¹ mol/(dm³·s).</li>
 </ol>
 </div>
-<h3 id="chwilowa">1.2 Szybkość chwilowa i wykres stężenie–czas</h3>
-<p>Wykres stężenia substratu od czasu zaczyna się wysoko i opada. Szybkość chwilowa w punkcie t to nachylenie stycznej w tym punkcie. Nie trzeba liczyć pochodnej: na szkolnym wykresie wystarczy narysować styczną i policzyć jej nachylenie jako stosunek przyrostów.</p>
-<p>Przykład tabeli pomiarowej dla reakcji A → produkty:</p>
+<h3>2.2 Przykład liczbowy z tabelą</h3>
+<p>Przyjmijmy, że w zbiorniku zachodzi reakcja A → produkty, a stężenie A mierzymy co 20 sekund:</p>
 <div class="table-wrap"><table>
-<thead><tr><th>t (s)</th><th>c(A) (mol/dm³)</th><th>Szybkość średnia w przedziale poprzednim (mol/(dm³·s))</th></tr></thead>
+<thead><tr><th>t (s)</th><th>c(A) (mol/dm³)</th><th>Zmiana c od poprzedniego pomiaru (mol/dm³)</th><th>szybkość średnia w przedziale (mol/(dm³·s))</th></tr></thead>
 <tbody>
-<tr><td>0</td><td>0,40</td><td>—</td></tr>
-<tr><td>20</td><td>0,28</td><td>0,006</td></tr>
-<tr><td>40</td><td>0,18</td><td>0,005</td></tr>
-<tr><td>60</td><td>0,10</td><td>0,004</td></tr>
+<tr><td>0</td><td>0,40</td><td>—</td><td>—</td></tr>
+<tr><td>20</td><td>0,28</td><td>−0,12</td><td>0,006</td></tr>
+<tr><td>40</td><td>0,18</td><td>−0,10</td><td>0,005</td></tr>
+<tr><td>60</td><td>0,10</td><td>−0,08</td><td>0,004</td></tr>
 </tbody></table></div>
-<p>Szybkość średnia maleje z czasem, więc w pierwszych sekundach reakcja jest najszybsza. Dla produktu wykres idzie w górę, ale szybkość wyznaczamy tak samo, z dodatnim znakiem.</p>
-<div class="card card-warning">
-<span class="card-label">Pułapka: średnia nie jest chwilową</span>
-<p>Wynik 0,005 mol/(dm³·s) z przedziału 0–60 s jest średnią. Na początku szybkość chwilowa była większa (około 0,006), a pod koniec mniejsza (około 0,004). Gdy w zadaniu pada słowo „średnia” albo „w przedziale”, licz z Δc/Δt; gdy pada „w chwili t”, odczytaj nachylenie stycznej.</p>
-</div>
-<h3 id="wspolczynniki">1.3 Równanie reakcji a szybkość</h3>
-<p>Dla reakcji ogólnej aA + bB → cC + dD szybkości zmiany stężeń są powiązane współczynnikami stechiometrycznymi. Jeśli substrat A zużywa się dwa razy szybciej niż produkt C powstaje, to zapisujemy to wprost: szybkość liczona z A jest podzielona przez a, a z C przez c. Dlatego w zadaniach trzeba zwrócić uwagę, z której substancji liczymy.</p>
+<p>Każdy wiersz liczymy osobno: w przedziale 0–20 s |Δc| = 0,12, więc v = 0,12/20 = 0,006. W przedziale 20–40 s |Δc| = 0,10, więc v = 0,10/20 = 0,005. W przedziale 40–60 s |Δc| = 0,08, więc v = 0,08/20 = 0,004. Szybkość średnia spada z czasem, a jej malejący ciąg odbija wykres, który coraz słabiej opada.</p>
+<p>Całkowita szybkość średnia w przedziale 0–60 s to 0,30/60 = 0,005 mol/(dm³·s). Ta liczba jest średnią z całej minuty i nie mówi nic o tym, co działo się na początku. Dlatego w zadaniach trzeba uważać, czy pytają o średnią, czy o chwilową.</p>
+<h3>2.3 Mini-wykład: szybkość średnia jako „wygładzony" obraz</h3>
 <div class="card card-understand">
-<span class="card-label">W skrócie: po co dzielić przez współczynnik?</span>
-<p>Jeżeli w równaniu 2 mole substratu zużywają się na 1 mol produktu, to w tej samej chwili substrat ubywa dwa razy szybciej niż produkt przybywa. Dzielenie przez współczynnik sprowadza wszystkie szybkości do jednej „wspólnej” wielkości, dzięki której możemy porównać różne reakcje.</p>
+<span class="card-label">W skrócie: średnia to kompromis</span>
+<p>Wyobraź sobie jazdę samochodem: licznik pokazuje w każdej sekundzie inną prędkość, ale po godzinie mówisz „jechałem średnio 80 km/h". To średnia z całego przedziału. Szybkość średnia w reakcji działa tak samo: wygładza przebieg. Gdy chcesz wiedzieć, co dzieje się teraz, potrzebujesz szybkości chwilowej.</p>
+</div>
+</section>
+<section id="chwilowa">
+<div class="part-heading"><span class="part-num">3</span> Wykład 3 — szybkość chwilowa i nachylenie stycznej</div>
+<h3>3.1 Co to jest szybkość chwilowa</h3>
+<p>Szybkość chwilowa w punkcie t to szybkość zmiany stężenia dokładnie w tej chwili. Na wykresie stężenia substratu od czasu odpowiada ona nachyleniu stycznej do krzywej w punkcie t. Styczna to prosta, która dotyka krzywej w jednym miejscu i ma ten sam kierunek co krzywa w tym punkcie.</p>
+<p>Nie trzeba znać rachunku różniczkowego, żeby z tego skorzystać. Na szkolnym wykresie rysujemy styczną ołówkiem i liczymy jej nachylenie jako stosunek przyrostów: wybieramy dwa punkty na stycznej, odczytujemy różnicę stężeń i różnicę czasu, i dzielimy. Pamiętaj tylko, że dla substratu nachylenie wyjdzie ujemne — przy szybkości bierzemy moduł.</p>
+<h3>3.2 Jak odczytać szybkość z wykresu</h3>
+<p>Wykres stężenia substratu zaczyna się wysoko i opada, z czasem coraz łagodniej. W punkcie początkowym krzywa jest najbardziej stroma, więc szybkość chwilowa jest największa. W miarę upływu czasu nachylenie maleje, aż krzywa prawie się wypłaszcza, gdy substratu już prawie nie ma.</p>
+<p>Dla produktu sytuacja jest odwrotna: wykres idzie w górę, na początku najstromiej, a potem się wypłaszcza. Szybkość tworzenia produktu obliczamy tak samo jak szybkość zużywania substratu, tylko bez minusa.</p>
+<div class="card card-core">
+<span class="card-label">Odczyt szybkości chwilowej z wykresu</span>
+<ol>
+<li>Zaznacz punkt na krzywej dla żądanej chwili t.</li>
+<li>Narysuj styczną w tym punkcie (prosta, która ledwo dotyka krzywej).</li>
+<li>Wybierz dwa punkty na stycznej, daleko od siebie, i odczytaj Δc oraz Δt.</li>
+<li>Oblicz moduł(Δc)/Δt. Wynik to szybkość chwilowa w chwili t.</li>
+<li>Sprawdź, czy wynik jest mniejszy od szybkości początkowej (zwykle tak, gdy substratu ubywa).</li>
+</ol>
+</div>
+<h3>3.3 Mini-wykład: dlaczego reakcja zwalnia</h3>
+<div class="card card-understand">
+<span class="card-label">W skrócie: mniej substratu, mniej zderzeń</span>
+<p>Im mniej cząsteczek substratu w tej samej objętości, tym rzadziej się one spotykają. Dlatego szybkość maleje, nawet gdy temperatura i katalizator pozostają takie same. Zależność od stężenia zapiszemy ilościowo dopiero przy równaniu kinetycznym (sekcja 8).</p>
+</div>
+</section>
+<section id="jednostki">
+<div class="part-heading"><span class="part-num">4</span> Wykład 4 — jednostki i przeliczanie</div>
+<p>Jednostka szybkości wynika z definicji: stężenie w mol/dm³ dzielone przez czas. Najczęściej w zadaniach spotkasz mol/(dm³·s). Jeśli czas podano w minutach, przelicz go na sekundy przed obliczeniem albo zapisz wynik w mol/(dm³·min) i wyraźnie to zaznacz.</p>
+<p>Przykład przeliczenia: zmiana stężenia o 0,6 mol/dm³ w ciągu 2 minut to 0,6/120 = 0,005 mol/(dm³·s). Ta sama szybkość w mol/(dm³·min) wynosi 0,6/2 = 0,3 mol/(dm³·min). Obie wartości opisują to samo zjawisko, tylko w innych jednostkach.</p>
+<div class="card card-warning">
+<span class="card-label">Pułapka: mieszanie minut i sekund</span>
+<p>Najczęstszy błąd rachunkowy to podzielenie zmiany stężenia przez czas podany w minutach, a potem zapisanie wyniku jako mol/(dm³·s). Zawsze sprawdź, co jest w mianowniku. Jeśli nie jest to sekunda, przelicz.</p>
+</div>
+</section>
+<section id="wspolczynniki">
+<div class="part-heading"><span class="part-num">5</span> Wykład 5 — stechiometria szybkości</div>
+<h3>5.1 Dlaczego współczynniki mają znaczenie</h3>
+<p>Dla reakcji ogólnej aA + bB → cC + dD szybkości zmiany stężeń są powiązane współczynnikami stechiometrycznymi. Jeśli na 1 mol produktu C zużywają się 2 mole substratu A, to w tej samej chwili substrat A ubywa dwa razy szybciej, niż produkt C przybywa. Dlatego szybkość zależy od tego, którą substancję wybieramy do obliczeń.</p>
+<p>Aby porównać szybkości różnych składników w jednej reakcji, dzielimy każdą zmianę przez odpowiedni współczynnik. Dzięki temu dostajemy jedną wspólną wielkość, nazywaną szybkością reakcji.</p>
+<h3>5.2 Przykład</h3>
+<p>Reakcja 2A → B. Jeżeli szybkość tworzenia B wynosi 0,010 mol/(dm³·s), to szybkość ubywania A wynosi 2 · 0,010 = 0,020 mol/(dm³·s). Po podzieleniu przez współczynniki obie wielkości dają tę samą wartość szybkości reakcji: 0,020/2 = 0,010 mol/(dm³·s) dla A oraz 0,010/1 dla B.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie: po co dzielić przez współczynnik</span>
+<p>Dzielenie przez współczynnik sprowadza wszystkie szybkości do jednej wspólnej wielkości. Bez tego każdy składnik miałby własną „szybkość reakcji", a porównywanie różnych reakcji byłoby bezsensowne. Dzieląc przez współczynnik, mówimy: „ile razy reakcja zaszła w jednostce czasu".</p>
 </div>
 </section>
 <section id="pomiar">
-<div class="part-heading"><span class="part-num">2</span> Co wpływa na pomiar</div>
-<p>Każda metoda pomiaru ma swoje ograniczenia. Gdy wydziela się gaz, masa układu maleje (gaz ucieka). Gdy powstaje osad, roztwór mętnieje, a nie wszystko da się zmierzyć równie łatwo. Dlatego przy projektowaniu doświadczenia wybieramy tę cechę, która jest proporcjonalna do przebiegu reakcji.</p>
+<div class="part-heading"><span class="part-num">6</span> Metody pomiaru szybkości</div>
+<p>Każda metoda pomiaru ma swoje ograniczenia. Gdy wydziela się gaz, masa układu maleje, bo gaz ucieka. Gdy powstaje osad, roztwór mętnieje i trudniej mierzyć barwę. Dlatego przy projektowaniu doświadczenia wybieramy cechę, która jest proporcjonalna do przebiegu reakcji i łatwa do odczytania.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Metoda</th><th>Co mierzymy</th><th>Przykład reakcji</th></tr></thead>
+<thead><tr><th>Metoda</th><th>Co mierzymy</th><th>Przykład reakcji</th><th>Kiedy stosować</th></tr></thead>
 <tbody>
-<tr><td>Objętość gazu</td><td>Objętość wydzielonego gazu (w tej samej temperaturze i ciśnieniu)</td><td>Mg + 2HCl → MgCl₂ + H₂↑</td></tr>
-<tr><td>Masa układu</td><td>Ubytek masy, gdy gaz ucieka z naczynia</td><td>CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</td></tr>
-<tr><td>Barwa roztworu</td><td>Zmiana intensywności barwy</td><td>Reakcje z udziałem jodu</td></tr>
-<tr><td>Przewodnictwo</td><td>Zmiana liczby jonów w roztworze</td><td>Reakcje tworzące lub zużywające jony</td></tr>
-<tr><td>Ciśnienie</td><td>Ciśnienie w zamkniętym naczyniu</td><td>Reakcje gazowe przy stałej objętości</td></tr>
+<tr><td>Objętość gazu</td><td>Objętość wydzielonego gazu w stałej temperaturze i ciśnieniu</td><td>Mg + 2HCl → MgCl₂ + H₂↑</td><td>reakcje z wydzielaniem gazu</td></tr>
+<tr><td>Masa układu</td><td>Ubytek masy, gdy gaz ucieka z otwartego naczynia</td><td>CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</td><td>gdy gaz ucieka, a naczynie stoi na wadze</td></tr>
+<tr><td>Barwa roztworu</td><td>Zmiana intensywności barwy</td><td>reakcje z udziałem jodu</td><td>reakcje zmieniające kolor</td></tr>
+<tr><td>Przewodnictwo</td><td>Zmiana liczby jonów w roztworze</td><td>reakcje tworzące lub zużywające jony</td><td>reakcje w roztworach wodnych</td></tr>
+<tr><td>Ciśnienie</td><td>Ciśnienie w zamkniętym naczyniu</td><td>reakcje gazowe przy stałej objętości</td><td>układy gazowe</td></tr>
+<tr><td>pH</td><td>Zmiana stężenia jonów H⁺</td><td>reakcje z udziałem kwasów lub zasad</td><td>roztwory o zmiennym odczynie</td></tr>
 </tbody></table></div>
-<div class="card card-extra">
-<span class="card-label">Ciekawostka: reakcja zegarowa</span>
-<p>W reakcji jodowego zegara roztwór po chwili nagle zmienia barwę z bezbarwnej na granatową. Przyczyną jest tworzenie jodu, który reaguje ze skrobią. Dodając do roztworu tiosiarczan sodu, opóźniamy moment zmiany barwy o czas proporcjonalny do ilości użytego reagenta. W ten sposób szkolny pokaz zamienia się w pomiar szybkości.</p>
+<h3>6.1 Pomiar objętości gazu — opis doświadczenia</h3>
+<p>Probówkę z roztworem kwasu solnego łączymy wężykiem z cylindrem wypełnionym wodą, odwróconym do góry dnem. Do kwasu dodajemy kawałek magnezu i szybko zatykamy probówkę. Wydzielający się wodór wypiera wodę z cylindra; co kilkanaście sekund notujemy objętość gazu. Po przeliczeniu objętości na liczbę moli i uwzględnieniu stechiometrii odczytujemy zmianę ilości magnezu lub kwasu.</p>
+<p>Ważne: objętość gazu zależy od temperatury i ciśnienia, dlatego pomiar robimy w tych samych warunkach albo przeliczamy wynik do warunków normalnych (0 °C, 1013 hPa, gdzie 1 mol gazu zajmuje 22,4 dm³). Gdy tego nie zrobisz, wyniki z kolejnych prób będą niespójne.</p>
+<div class="card card-warning">
+<span class="card-label">BHP przy pomiarach z gazami i kwasami</span>
+<p>Kwas solny jest żrący, więc pracujemy w okularach i rękawicach. Wodór jest łatwopalny, więc nie zbliżamy do niego płomienia. Gdy reakcja wydziela CO₂, pracujemy w dobrze wentylowanym pomieszczeniu. Układ z zatyczką nie może być całkowicie szczelny podczas wydzielania gazu, bo może pęknąć.</p>
+</div>
+<h3>6.2 Pomiar ubytku masy — opis doświadczenia</h3>
+<p>Kolbkę z węglanem wagę pokazuje na początku. Dodajemy kwas i co kilkanaście sekund odczytujemy masę. Ubytek masy odpowiada gazowi, który uciekł (CO₂). Metoda jest prosta, ale gdy gaz ucieka zbyt szybko, wynik jest obarczony błędem. Dlatego w doświadczeniu szkolnym warto zapisać kilka prób i porównać przebieg.</p>
+<div class="card card-understand">
+<span class="card-label">Mini-wykład: po co powtarzać pomiar</span>
+<p>Pojedynczy pomiar jest jak jedna fotografia. Gdy powtórzysz doświadczenie kilka razy i wyniki będą się różnić o kilka procent, wiesz, że błąd jest rzędu kilku procent. Powtarzanie pomiaru to sposób na uczciwą ocenę, jak bardzo możesz ufać swojej liczbie.</p>
 </div>
 </section>
-<section id="czynniki">
-<div class="part-heading"><span class="part-num">3</span> Czynniki i kolejne kroki</div>
-<p>Szybkość zależy od stężenia, temperatury, rozdrobnienia substancji stałych oraz obecności katalizatora. Pierwsze trzy czynniki omówimy dokładniej w lekcji K05, a o katalizatorze i energii aktywacji — w K06 i K07. Tutaj ważne jest jedno: nie każda zmiana szybkości wynika z tego samego mechanizmu. Zwiększenie stężenia zwiększa liczbę zderzeń. Zwiększenie temperatury zwiększa liczbę zderzeń skutecznych. Katalizator zmienia drogę reakcji.</p>
-<div class="card card-understand">
-<span class="card-label">W skrócie: szybkość a wydajność</span>
-<p>Szybkość mówi, jak szybko reakcja zachodzi. Wydajność mówi, jak dużo produktu powstaje w ostatecznym stanie. Reakcja może być bardzo szybka, a jej wydajność mała (gdy ustala się równowaga), i odwrotnie. Nie mylimy tych pojęć, nawet jeśli w życiu codziennym mówimy „szybka reakcja” o czymś, co po prostu dużo daje.</p>
+<section id="przyklady">
+<div class="part-heading"><span class="part-num">7</span> Przykłady obliczeniowe</div>
+<h3>7.1 Przykład 1 — szybkość średnia z kilku pomiarów</h3>
+<p>Stężenie substancji A w reakcji A → produkty mierzono w kolejnych chwilach: t = 0 s, c = 0,50 mol/dm³; t = 30 s, c = 0,35 mol/dm³; t = 90 s, c = 0,05 mol/dm³. Oblicz szybkość średnią w przedziale 0–30 s, 30–90 s i 0–90 s.</p>
+<p>Rozwiązanie. Przedział 0–30 s: |Δc| = 0,15, Δt = 30 s, v = 0,15/30 = 0,0050 mol/(dm³·s). Przedział 30–90 s: |Δc| = 0,30, Δt = 60 s, v = 0,30/60 = 0,0050 mol/(dm³·s). Przedział 0–90 s: |Δc| = 0,45, Δt = 90 s, v = 0,45/90 = 0,0050 mol/(dm³·s). Wszystkie trzy wyniki są równe, więc w tym przykładzie szybkość średnia nie zmieniała się. To dane wyjątkowe: w prawdziwej reakcji zwykle spadałaby.</p>
+<p>Wniosek: gdy szybkość średnia w kolejnych przedziałach jest taka sama, wykres jest zbliżony do prostej. Gdy maleje, krzywa się wypłaszcza.</p>
+<h3>7.2 Przykład 2 — porównanie dwóch przedziałów</h3>
+<p>Stężenie B: w chwili 0 s wynosi 1,00 mol/dm³, w chwili 20 s wynosi 0,80 mol/dm³, w chwili 60 s wynosi 0,40 mol/dm³. Porównaj szybkości średnie w przedziałach 0–20 s i 20–60 s.</p>
+<p>Rozwiązanie. Przedział 0–20 s: |Δc| = 0,20, v = 0,20/20 = 0,010 mol/(dm³·s). Przedział 20–60 s: |Δc| = 0,40, Δt = 40 s, v = 0,40/40 = 0,010 mol/(dm³·s). Wartości są równe, choć w drugim przedziale spadek stężenia był większy. Dzieje się tak, bo czas był dłuższy. Zawsze dziel przez czas przedziału, a nie porównuj samych Δc.</p>
+<h3>7.3 Przykład 3 — z szybkości produktu do szybkości substratu</h3>
+<p>Reakcja 3A → 2C. Szybkość tworzenia C w pewnym przedziale wynosi 0,024 mol/(dm³·s). Oblicz szybkość ubywania A w tym samym przedziale.</p>
+<p>Rozwiązanie. Na 2 mole C zużywa się 3 mole A. Stosunek szybkości ubywania A do szybkości tworzenia C wynosi 3/2. Szybkość ubywania A = (3/2) · 0,024 = 0,036 mol/(dm³·s) (co do wartości bezwzględnej; ze znakiem minus jako zmiana stężenia).</p>
+<h3>7.4 Przykład 4 — szybkość wydzielania gazu (warunki normalne)</h3>
+<p>W doświadczeniu z magnezem zebrano 120 cm³ wodoru w czasie 60 s, w warunkach normalnych, w których 1 mol gazu zajmuje 22,4 dm³. Oblicz szybkość wydzielania wodoru w mol/s.</p>
+<p>Rozwiązanie. Objętość: 120 cm³ = 0,120 dm³. Liczba moli H₂ = 0,120/22,4 ≈ 0,00536 mol. Szybkość wydzielania: 0,00536/60 ≈ 0,000089 mol/s. Ta wartość opisuje tworzenie wodoru, a nie zmianę stężenia w roztworze, więc nie porównujemy jej bezpośrednio z tabelą c(t) bez przeliczenia na objętość roztworu.</p>
+<div class="card card-warning">
+<span class="card-label">Uwaga przy objętości gazu</span>
+<p>Objętość gazu zależy od warunków. Ta sama liczba moli zajmuje inną objętość w innej temperaturze i przy innym ciśnieniu. W zadaniach szkolnych podaje się zwykle warunki normalne (22,4 dm³/mol) albo jednoznacznie określoną objętość molową.</p>
 </div>
-<div class="card card-extra">
-<span class="card-label">Ciekawostka: rdza — reakcja, którą widzimy po latach</span>
-<p>Rdzewienie żelaza to reakcja utleniania z tlenem i wodą, ale przebiega bardzo wolno w temperaturze pokojowej. Dlatego stalowe konstrukcje mogą stać dekady, zanim zauważymy zmiany. Gdy ustawimy je w wilgotnym, słonym powietrzu, szybkość rośnie, bo woda i sól przyspieszają przebieg reakcji elektrochemicznej.</p>
-</div>
-<div class="card card-extra">
-<span class="card-label">Ciekawostka: lodówka to kinetyka</span>
-<p>Dlaczego żywność w lodówce psuje się wolniej? Niższa temperatura zmniejsza szybkość reakcji i procesów rozkładu, które wywołują bakterie i enzymy. Ta sama zasada działa w odwrotną stronę: po podgrzaniu produkty psują się szybciej.</p>
+</section>
+<section id="kinetyczne">
+<div class="part-heading"><span class="part-num">8</span> Wstęp do równania kinetycznego (LO)</div>
+<div class="card card-adv">
+<span class="card-label">Rozszerzenie LO — równanie kinetyczne</span>
+<p>Dla wielu reakcji szybkość zależy od stężeń substratów. Zapisujemy to równaniem kinetycznym: v = k · [A]ᵐ · [B]ⁿ, gdzie k to stała szybkości, a wykładniki m i n to rzędy reakcji względem substancji A i B. Wykładniki nie wynikają z współczynników w równaniu reakcji, tylko z doświadczenia.</p>
+<p>Dla reakcji pierwszego rzędu względem A szybkość jest proporcjonalna do stężenia A: v = k · [A]. Szczegóły zostawiamy na późniejszą część kursu; tutaj wystarczy wiedzieć, że równanie kinetyczne łączy szybkość z ilością substratów.</p>
 </div>
 </section>
 <section id="klinika">
-<div class="part-heading"><span class="part-num">4</span> Klinika błędów</div>
-<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość = ΔH</td><td class="col-ok" data-label="Poprawa">Szybkość to kinetyka (jak szybko), ΔH to energetyka (ile energii)</td><td data-label="Dlaczego">Dwie różne wielkości; reakcja może być szybka i egzotermiczna albo wolna i endotermiczna</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość bez modułu dla substratu</td><td class="col-ok" data-label="Poprawa">v = −Δc/Δt albo moduł(Δc)/Δt</td><td data-label="Dlaczego">Stężenie substratu maleje, więc Δc jest ujemne</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość w chwili liczona jak średnia</td><td class="col-ok" data-label="Poprawa">Dla chwili t bierzemy nachylenie stycznej</td><td data-label="Dlaczego">Średnia obejmuje przedział, chwilowa jeden punkt</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Mieszanie jednostek (s zamiast min)</td><td class="col-ok" data-label="Poprawa">Przelicz czas na sekundy przed obliczeniem</td><td data-label="Dlaczego">Wynik w mol/(dm³·min) jest inny niż w mol/(dm³·s)</td></tr></tbody></table>
+<div class="part-heading"><span class="part-num">9</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość = ΔH</td><td class="col-ok" data-label="Poprawa">Szybkość to kinetyka (jak szybko), ΔH to energetyka (ile energii)</td><td data-label="Dlaczego">Dwie różne wielkości; reakcja może być szybka i egzotermiczna albo wolna i endotermiczna</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość dla substratu bez modułu lub znaku</td><td class="col-ok" data-label="Poprawa">v = −Δc/Δt albo moduł(Δc)/Δt</td><td data-label="Dlaczego">Stężenie substratu maleje, więc Δc jest ujemne</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość w chwili liczona jak średnia</td><td class="col-ok" data-label="Poprawa">Dla chwili t bierzemy nachylenie stycznej</td><td data-label="Dlaczego">Średnia obejmuje przedział, chwilowa jeden punkt</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Mieszanie minut i sekund</td><td class="col-ok" data-label="Poprawa">Przelicz czas na sekundy przed obliczeniem</td><td data-label="Dlaczego">Wynik w mol/(dm³·min) jest inny niż w mol/(dm³·s)</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Porównanie samych Δc</td><td class="col-ok" data-label="Poprawa">Dziel przez czas przedziału</td><td data-label="Dlaczego">Dwa przedziały o różnych Δt mogą mieć tę samą szybkość</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość produktu bez współczynnika</td><td class="col-ok" data-label="Poprawa">Uwzględnij współczynniki stechiometryczne</td><td data-label="Dlaczego">Substrat i produkt zmieniają się w różnym tempie</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Objętość gazu bez warunków</td><td class="col-ok" data-label="Poprawa">Podaj temperaturę i ciśnienie lub przelicz do warunków normalnych</td><td data-label="Dlaczego">Ta sama liczba moli zajmuje różną objętość</td></tr></tbody></table>
 </section>
 <section id="cwiczenia">
-<div class="part-heading"><span class="part-num">5</span> Ćwiczenia</div>
+<div class="part-heading"><span class="part-num">10</span> Ćwiczenia</div>
 <div class="card card-exam">
 <span class="card-label">Zadanie 1 (2 pkt) — szybkość średnia</span>
 <p>Stężenie substancji A w reakcji A → produkty spadło z 0,40 mol/dm³ do 0,10 mol/dm³ w czasie 60 s. Oblicz szybkość średnią tej reakcji i podaj jednostkę.</p>
 <details class="answer"><summary>Pokaż klucz</summary>
-<p>v_śr = |Δc|/Δt = (0,40 − 0,10)/60 = 0,30/60 = 0,005. Jednostka: mol/(dm³·s). (1 pkt za wynik, 1 pkt za jednostkę)</p>
+<p>v_śr = moduł(Δc)/Δt = (0,40 − 0,10)/60 = 0,30/60 = 0,005. Jednostka: mol/(dm³·s). (1 pkt za wynik, 1 pkt za jednostkę)</p>
 </details>
 </div>
 <div class="card card-exam">
@@ -743,30 +814,76 @@ section ul,section ol{padding-left:1.35rem}
 <p>Z równania: na 1 mol B zużywa się 2 mole A, więc ubywanie A jest dwa razy szybsze: Δc(A)/Δt = −2 · 0,010 = −0,020 mol/(dm³·s). Wynik ujemny, bo A ubywa. (1 pkt za zależność od współczynnika, 1 pkt za wartość, 1 pkt za znak i wyjaśnienie)</p>
 </details>
 </div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (3 pkt) — przeliczanie jednostek</span>
+<p>W pewnym przedziale stężenie substratu zmniejszyło się o 0,18 mol/dm³ w ciągu 3 minut. Oblicz szybkość średnią w mol/(dm³·min) i w mol/(dm³·s).</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>W mol/(dm³·min): 0,18/3 = 0,060 mol/(dm³·min). W mol/(dm³·s): czas 3 min = 180 s, więc 0,18/180 = 0,0010 mol/(dm³·s). Sprawdzenie: 0,060/60 = 0,0010. (1 pkt za wynik w min, 1 pkt za przeliczenie czasu, 1 pkt za wynik w s)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (3 pkt) — z tabeli do wniosku</span>
+<p>Dane pomiarowe dla reakcji D → E: t = 0 s, c(D) = 0,80; t = 10 s, c(D) = 0,60; t = 20 s, c(D) = 0,45; t = 30 s, c(D) = 0,35 (mol/dm³). Oblicz szybkość średnią w każdym z trzech przedziałów i sformułuj wniosek o zmianie szybkości w czasie.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>0–10 s: 0,20/10 = 0,020; 10–20 s: 0,15/10 = 0,015; 20–30 s: 0,10/10 = 0,010 mol/(dm³·s). Wniosek: szybkość maleje w czasie, bo kolejne przedziały dają coraz mniejsze wartości. (1 pkt za każdy przedział, 1 pkt za wniosek)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (3 pkt) — pomiar gazu w warunkach normalnych</span>
+<p>W doświadczeniu zebrano w czasie 40 s objętość H₂ równą 56 cm³ (warunki normalne, 1 mol = 22,4 dm³). Oblicz liczbę moli H₂ i szybkość wydzielania w mol/s. Zapisz, czego ta szybkość dotyczy.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>56 cm³ = 0,056 dm³; n = 0,056/22,4 = 0,0025 mol. Szybkość: 0,0025/40 = 0,0000625 mol/s, czyli 6,25 · 10⁻⁵ mol/s. Dotyczy wydzielania wodoru (tworzenia produktu), a nie zmiany stężenia substratu w roztworze. (1 pkt za moli, 1 pkt za szybkość, 1 pkt za interpretację)</p>
+</details>
+</div>
 </section>
 <section id="test">
-<div class="part-heading"><span class="part-num">6</span> Test</div>
-<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Szybkość to zmiana stężenia w czasie, więc jednostka to stężenie podzielone przez czas."><h5>1. Jednostka szybkości reakcji w układzie SI w przypadku stężeń w mol/dm³ to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="1">mol/dm³</button><button type="button" class="quiz-opt" data-a="2">s/mol</button><button type="button" class="quiz-opt" data-a="3">dm³/(mol·s)</button></div></div><div class="quiz-q" data-ok="0" data-fb="Dla substratu Δc &amp;lt; 0, więc bez minusa lub modułu wynik byłby ujemny."><h5>2. Szybkość średnia substratu w przedziale czasu jest dodatnia, ponieważ:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">stosujemy moduł albo minus przed Δc, bo stężenie substratu maleje</button><button type="button" class="quiz-opt" data-a="1">substrat zawsze ma dodatnie stężenie</button><button type="button" class="quiz-opt" data-a="2">czas zawsze jest ujemny</button><button type="button" class="quiz-opt" data-a="3">Δc dla substratu rośnie</button></div></div><div class="quiz-q" data-ok="0" data-fb="Styczna opisuje lokalną zmianę stężenia, czyli szybkość chwilową."><h5>3. Na wykresie stężenia substratu od czasu nachylenie stycznej w chwili t mówi o:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">szybkości chwilowej w tej chwili</button><button type="button" class="quiz-opt" data-a="1">szybkości średniej w całym przedziale</button><button type="button" class="quiz-opt" data-a="2">wydajności reakcji</button><button type="button" class="quiz-opt" data-a="3">masie produktu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Masa molowa nie zmienia mechanizmu zderzeń; w lekcji wymienione są stężenie, temperatura, rozdrobnienie i katalizator."><h5>4. Który czynnik nie jest wymieniony jako wpływający na szybkość w tej lekcji?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">masa molowa produktu</button><button type="button" class="quiz-opt" data-a="1">stężenie</button><button type="button" class="quiz-opt" data-a="2">temperatura</button><button type="button" class="quiz-opt" data-a="3">katalizator</button></div></div><div class="quiz-q" data-ok="0" data-fb="Przy zwalnianiu szybkość na początku przedziału jest większa, więc średnia przewyższa wartość końcową."><h5>5. Szybkość średnia z przedziału 0–60 s jest większa od szybkości chwilowej w 60 s, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">reakcja zwalnia z czasem</button><button type="button" class="quiz-opt" data-a="1">reakcja przyspiesza z czasem</button><button type="button" class="quiz-opt" data-a="2">stężenie substratu nie zmienia się</button><button type="button" class="quiz-opt" data-a="3">reakcja jest zakończona już na początku</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+<div class="part-heading"><span class="part-num">11</span> Test</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Szybkość to zmiana stężenia w czasie, więc jednostka to stężenie podzielone przez czas."><h5>1. Jednostka szybkości reakcji, gdy stężenia podajemy w mol/dm³, a czas w sekundach, to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="1">mol/dm³</button><button type="button" class="quiz-opt" data-a="2">s/mol</button><button type="button" class="quiz-opt" data-a="3">dm³/(mol·s)</button></div></div><div class="quiz-q" data-ok="0" data-fb="Dla substratu Δc &amp;lt; 0, więc bez minusa lub modułu wynik byłby ujemny."><h5>2. Szybkość średnia substratu w przedziale czasu jest dodatnia, ponieważ:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">stosujemy moduł albo minus przed Δc, bo stężenie substratu maleje</button><button type="button" class="quiz-opt" data-a="1">substrat zawsze ma dodatnie stężenie</button><button type="button" class="quiz-opt" data-a="2">czas zawsze jest ujemny</button><button type="button" class="quiz-opt" data-a="3">Δc dla substratu rośnie</button></div></div><div class="quiz-q" data-ok="0" data-fb="Styczna opisuje lokalną zmianę stężenia, czyli szybkość chwilową."><h5>3. Na wykresie stężenia substratu od czasu nachylenie stycznej w chwili t mówi o:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">szybkości chwilowej w tej chwili</button><button type="button" class="quiz-opt" data-a="1">szybkości średniej w całym przedziale</button><button type="button" class="quiz-opt" data-a="2">wydajności reakcji</button><button type="button" class="quiz-opt" data-a="3">masie produktu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Przy zwalnianiu szybkość na początku przedziału jest większa, więc średnia przewyższa wartość końcową."><h5>4. Szybkość średnia z przedziału 0–60 s jest większa od szybkości chwilowej w 60 s, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">reakcja zwalnia z czasem</button><button type="button" class="quiz-opt" data-a="1">reakcja przyspiesza z czasem</button><button type="button" class="quiz-opt" data-a="2">stężenie substratu nie zmienia się</button><button type="button" class="quiz-opt" data-a="3">reakcja jest zakończona już na początku</button></div></div><div class="quiz-q" data-ok="0" data-fb="Na 1 mol B zużywa się 2 mole A, więc A ubywa dwa razy szybciej."><h5>5. W reakcji 2A → B szybkość tworzenia B wynosi 0,010 mol/(dm³·s). Szybkość ubywania A wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">0,020 mol/(dm³·s) co do wartości bezwzględnej</button><button type="button" class="quiz-opt" data-a="1">0,005 mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="2">0,010 mol/(dm³·s) bez zmian</button><button type="button" class="quiz-opt" data-a="3">0,040 mol/(dm³·s)</button></div></div></div><div class="quiz-score" id="quizScore"></div>
 </section>
 <section id="slownik">
-<div class="part-heading"><span class="part-num">7</span> Słownik</div>
-<dl><div class="def-item"><dt>Szybkość reakcji</dt><dd>zmiana stężenia reagenta lub produktu w jednostce czasu</dd></div><div class="def-item"><dt>Szybkość średnia</dt><dd>moduł(Δc)/Δt w danym przedziale czasu</dd></div><div class="def-item"><dt>Szybkość chwilowa</dt><dd>szybkość w ustalonej chwili, równa nachyleniu stycznej do wykresu c(t)</dd></div><div class="def-item"><dt>Wykres stężenie–czas</dt><dd>zależność stężenia od czasu, z której odczytujemy szybkość</dd></div><div class="def-item"><dt>Jednostka szybkości</dt><dd>mol/(dm³·s) (w tej lekcji)</dd></div><div class="def-item"><dt>Metoda pomiaru</dt><dd>sposób odczytu zmiany układu, np. objętości gazu lub barwy roztworu</dd></div><div class="def-item"><dt>Substrat</dt><dd>substancja, która się zużywa w reakcji</dd></div><div class="def-item"><dt>Produkt</dt><dd>substancja, która powstaje w reakcji</dd></div><div class="def-item"><dt>Równanie kinetyczne</dt><dd>zależność szybkości od stężeń (wstęp w LO, szczegóły w K05)</dd></div></dl>
+<div class="part-heading"><span class="part-num">12</span> Słownik</div>
+<dl><div class="def-item"><dt>Szybkość reakcji</dt><dd>zmiana stężenia reagenta lub produktu w jednostce czasu</dd></div><div class="def-item"><dt>Szybkość średnia</dt><dd>moduł(Δc)/Δt w danym przedziale czasu</dd></div><div class="def-item"><dt>Szybkość chwilowa</dt><dd>szybkość w ustalonej chwili, równa nachyleniu stycznej do wykresu c(t)</dd></div><div class="def-item"><dt>Wykres stężenie–czas</dt><dd>zależność stężenia od czasu, z której odczytujemy szybkość</dd></div><div class="def-item"><dt>Styczna</dt><dd>prosta dotykająca krzywej w jednym punkcie, o tym samym kierunku co krzywa w tym punkcie</dd></div><div class="def-item"><dt>Jednostka szybkości</dt><dd>mol/(dm³·s) (w tej lekcji)</dd></div><div class="def-item"><dt>Metoda pomiaru</dt><dd>sposób odczytu zmiany układu, np. objętości gazu lub barwy roztworu</dd></div><div class="def-item"><dt>Substrat</dt><dd>substancja, która się zużywa w reakcji</dd></div><div class="def-item"><dt>Produkt</dt><dd>substancja, która powstaje w reakcji</dd></div><div class="def-item"><dt>Stechiometria szybkości</dt><dd>związek szybkości różnych składników reakcji przez współczynniki</dd></div><div class="def-item"><dt>Równanie kinetyczne</dt><dd>zależność szybkości od stężeń substratów, v = k[A]ᵐ[B]ⁿ (rozszerzenie LO)</dd></div><div class="def-item"><dt>Stała szybkości k</dt><dd>współczynnik proporcjonalności w równaniu kinetycznym</dd></div><div class="def-item"><dt>Wydajność</dt><dd>ilość produktu w stanie końcowym, niezależna od tego, jak szybko powstał</dd></div><div class="def-item"><dt>Warunki normalne</dt><dd>0 °C i 1013 hPa, w których 1 mol gazu zajmuje 22,4 dm³</dd></div></dl>
 </section>
 <section id="fiszki">
-<div class="part-heading"><span class="part-num">8</span> Fiszki</div>
-<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Czym jest szybkość reakcji?</span><span class="back">Zmiana stężenia reagenta w jednostce czasu</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaki wzór ma szybkość średnia?</span><span class="back">v_śr = moduł(Δc)/Δt</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaka jest jednostka szybkości?</span><span class="back">mol/(dm³·s)</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Czym różni się szybkość chwilowa od średniej?</span><span class="back">Chwilowa to jeden punkt (styczna), średnia to przedział</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co oznacza nachylenie stycznej na wykresie c(t)?</span><span class="back">Szybkość chwilową reakcji</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Dlaczego szybkość substratu ma znak minus?</span><span class="back">Bo stężenie substratu maleje, Δc &lt; 0</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jak zmienia się szybkość w miarę zużywania substratów?</span><span class="back">Zwykle maleje</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co mierzymy przy wydzielaniu gazu?</span><span class="back">Objętość gazu lub ubytek masy</span><span class="card-tag tag-basic">pomiar</span></button><button class="flashcard" type="button"><span class="front">Co zmienia się w reakcji jodowego zegara?</span><span class="back">Barwa roztworu (pojawia się granatowa)</span><span class="card-tag tag-extra">pomiar</span></button><button class="flashcard" type="button"><span class="front">Jak przeliczyć czas z minut na sekundy?</span><span class="back">Mnożymy przez 60</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co z zadania 3 wynika dla współczynników?</span><span class="back">Szybkość zmiany substratu zależy od jego współczynnika</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Czym jest szybkość a wydajność?</span><span class="back">Szybkość mówi jak szybko, wydajność ile produktu w końcu</span><span class="card-tag tag-understand">kinetyka</span></button></div>
+<div class="part-heading"><span class="part-num">13</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Czym jest szybkość reakcji?</span><span class="back">Zmiana stężenia reagenta w jednostce czasu</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaki wzór ma szybkość średnia?</span><span class="back">v_śr = moduł(Δc)/Δt</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaka jest jednostka szybkości?</span><span class="back">mol/(dm³·s)</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Czym różni się szybkość chwilowa od średniej?</span><span class="back">Chwilowa to jeden punkt (styczna), średnia to przedział</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co oznacza nachylenie stycznej na wykresie c(t)?</span><span class="back">Szybkość chwilową reakcji</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Dlaczego szybkość substratu ma znak minus?</span><span class="back">Bo stężenie substratu maleje, więc Δc &lt; 0</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jak zmienia się szybkość w miarę zużywania substratów?</span><span class="back">Zwykle maleje</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co mierzymy przy wydzielaniu gazu?</span><span class="back">Objętość gazu lub ubytek masy</span><span class="card-tag tag-basic">pomiar</span></button><button class="flashcard" type="button"><span class="front">Co zmienia się w reakcji jodowego zegara?</span><span class="back">Barwa roztworu (pojawia się granatowa)</span><span class="card-tag tag-extra">pomiar</span></button><button class="flashcard" type="button"><span class="front">Jak przeliczyć minuty na sekundy?</span><span class="back">Mnożymy przez 60</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co wynika ze współczynników?</span><span class="back">Szybkość zmiany substratu zależy od jego współczynnika</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Czym jest szybkość a wydajność?</span><span class="back">Szybkość mówi jak szybko, wydajność ile produktu w końcu</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Dlaczego porównujemy szybkości przez czas, nie przez Δc?</span><span class="back">Bo dwa przedziały o różnych Δt mogą mieć tę samą szybkość</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaka objętość zajmuje 1 mol gazu w warunkach normalnych?</span><span class="back">22,4 dm³</span><span class="card-tag tag-basic">pomiar</span></button><button class="flashcard" type="button"><span class="front">Co to styczna?</span><span class="back">Prosta dotykająca krzywej w jednym punkcie</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaka jest szybkość ubywania A w reakcji 2A → B, gdy B powstaje z szybkością 0,010?</span><span class="back">0,020 mol/(dm³·s) co do wartości</span><span class="card-tag tag-understand">stechiometria</span></button><button class="flashcard" type="button"><span class="front">Czym jest stała szybkości k?</span><span class="back">Współczynnikiem w równaniu kinetycznym v = k[A]ᵐ[B]ⁿ</span><span class="card-tag tag-adv">kinetyka</span></button></div>
 </section>
 <section id="mosty">
-<div class="part-heading"><span class="part-num">9</span> Mosty</div>
+<div class="part-heading"><span class="part-num">14</span> Mosty</div>
 <ul>
 <li>Przed tą lekcją: R05 (stężenia i obliczenia z nimi).</li>
 <li>Dalej: K05 (czynniki: stężenie, temperatura, rozdrobnienie), K06 (zderzenia i energia aktywacji), K08 (równowaga dynamiczna: szybkość w przód i wstecz).</li>
 </ul>
 </section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">15</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Reakcja zegarowa</span>
+<p>W reakcji jodowego zegara roztwór po chwili nagle zmienia barwę z bezbarwnej na granatową. Przyczyną jest utworzony jod, który reaguje ze skrobią. Dodając tiosiarczan sodu, opóźniamy moment zmiany barwy o czas proporcjonalny do ilości użytego reagenta. Szkolny pokaz zamienia się w pomiar szybkości.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Rdza jako reakcja, którą widzimy po latach</span>
+<p>Rdzewienie żelaza to reakcja utleniania z tlenem i wodą, ale w temperaturze pokojowej przebiega bardzo wolno. Stalowe konstrukcje stoją dekady, zanim zauważymy zmiany. W wilgotnym, słonym powietrzu szybkość rośnie, bo woda i sól przyspieszają reakcje elektrochemiczne.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Lodówka to kinetyka</span>
+<p>Dlaczego żywność w lodówce psuje się wolniej? Niższa temperatura zmniejsza szybkość reakcji i procesów rozkładu, które wywołują bakterie i enzymy. Ta sama zasada działa w odwrotną stronę: po podgrzaniu produkty psują się szybciej.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Szybkość a wydajność w praktyce</span>
+<p>Reakcja może być bardzo szybka, a mieć małą wydajność (gdy ustala się równowaga), i odwrotnie: wolna reakcja może dać wysoką wydajność, jeśli będzie dość czasu. Dlatego przemysł osobno optymalizuje szybkość (temperatura, katalizator) i wydajność (ciśnienie, usuwanie produktu).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Pomiar szybkości w organizmie</span>
+<p>Enzymy są katalizatorami w organizmach. Ich aktywność mierzy się szybkością powstawania produktu w ustalonych warunkach. To ta sama logika co w szkolnym doświadczeniu: wybierz cechę, która rośnie razem z reakcją, i zmierz ją w czasie.</p>
+</div>
+</section>
 <section id="s1">
-<div class="part-heading">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przebudowa od zera)</div>
-<p><strong>Stan:</strong> lekcja przepisana od zera w składni pełnej (wykład, mini-wykłady, zadania z kluczem, test, fiszki, słownik, klinika). Wartości liczbowe sprawdzone rachunkowo (0,30/60 = 0,005; 0,12/20 = 0,006 mol/(dm³·s) dla przedziału 0–20 s).</p>
-<p><strong>Do W1 FULL (zewnętrzny recenzent):</strong> tabela wartości w §1.2 jest ilustracyjna — do sprawdzenia przez recenzenta; ciekawostki (rdza, lodówka, jodowy zegar) do weryfikacji źródłowej.</p>
+<div class="part-heading">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przebudowa od zera, wersja 2)</div>
+<p><strong>Stan:</strong> lekcja rozszerzona: pięć wykładów (pojęcie, średnia, chwilowa, jednostki, stechiometria), mini-wykłady, metody pomiaru z opisem doświadczeń i BHP, cztery przykłady obliczeniowe, sześć zadań z kluczem, test 5 pytań, słownik 13 haseł, fiszki 17, klinika 7 wierszy, ciekawostki 4.</p>
+<p><strong>Poprawka:</strong> w poprzedniej wersji zadania gazowe liczyłem dla 24 dm³/mol; zmieniono na warunki normalne, 22,4 dm³/mol (standard w polskiej szkole). Zadanie 6 zmienione na 56 cm³ H₂ (0,0025 mol).</p>
+<p><strong>Rachunki sprawdzone:</strong> 0,30/60 = 0,005; 0,12/20 = 0,006; 0,10/20 = 0,005; 0,08/20 = 0,004; 0,20/10 = 0,010 i 0,40/40 = 0,010; 0,060/3 = 0,020 mol/(dm³·min), czyli 0,0010 mol/(dm³·s); 56 cm³ / 22,4 dm³ = 0,0025 mol; 120 cm³ / 22,4 = 0,00536 mol.</p>
+<p><strong>Do W1 FULL (zewnętrzny recenzent):</strong> wartości w tabeli §2.2 są ilustracyjne; ciekawostki do weryfikacji źródłowej (Wikipedia, Khan Academy, podręcznik) — nie sprawdzałem ich jeszcze zewnętrznie w tej wersji.</p>
 </section>
 
 </main>

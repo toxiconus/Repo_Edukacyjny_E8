@@ -135,3 +135,5 @@
 - 2026-10-12: samouczek pisania lekcji od zera do W1 FULL (`.claude/skills/lekcja-od-zera-w1/SKILL.md`), logiczne limity (`narzedzia/limity_lekcji.py`: fiszki ≤30, testy ≤5 w zwykłej lekcji, zadania ≤6, ciekawostki 3–5, mini-wykłady ≤3, 1 wykład, bez powtórzonych akapitów; `typ: test/powtorka` podnosi limity). Szablon: fiszki ponad 6 ukryte za przyciskiem „Pokaż pozostałe N fiszek”. Stan: 34 z 35 istniejących lekcji przekracza limity — dotyczy przebudów, nie wymusza zmian w starych.
 
 - 2026-10-12: najmniejsze lekcje kanonu (bez BIO.99 — plik systemowy): K04 (2,3 KB), K06 (2,4 KB), K11 (2,4 KB) przepisane od zera skillem lekcja-od-zera-w1 (wykład, mini-wykłady, zadania z kluczem, test 5, fiszki 12, słownik, klinika, ciekawostki 3); HTML w chemia/html; limity OK. Stan: PRZEBUDOWANA OD ZERA — W1 FULL do zrobienia.
+
+- 2026-10-12: K04 wersja 2 (rozszerzona, 28 KB md): 5 wykładów, mini-wykłady, metody pomiaru z BHP, 4 przykłady, 6 zadań, test 5, fiszki 17; objętość gazu w warunkach normalnych (22,4 dm³/mol) zamiast 24. K06 i K11 jeszcze w wersji 1 (do ponownego przejścia skillem).
