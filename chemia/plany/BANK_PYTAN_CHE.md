@@ -183,6 +183,24 @@ Lista od użytkownika (zestawienie wtórne) sprawdzona przez wyszukiwanie. Adres
 
 Wniosek: źródła z potwierdzeniem: Kraków, Warszawa, Kielce, Łódź. Pozostałe z zestawienia wymagają ręcznego sprawdzenia przed użyciem.
 
+## Weryfikacja zestawienia źródeł (plik od użytkownika, 2026-10-12)
+
+Zestawienie z pliku sprawdzone przez narzędzia. Adresy z pliku, których nie było w wynikach wyszukiwania, nie zostały otwarte (narzędzie odmówiło pobrania adresu spoza wyników). Zestawienie samo w sobie nie jest źródłem.
+
+**Potwierdzone (otwarte, treść zgodna lub skorygowana):**
+- **Łódź — chemia, etap wojewódzki 2022/2023** (kuratorium.lodz.pl, test-etap-wojewodzki-chemia.pdf). Zgodne: 15 zadań, 100 pkt, 120 min. Zadania: 1 — porównanie właściwości dwóch substancji X i Y, prawda/fałsz (6 pkt); 2 — równania otrzymywania czterech soli KCl, CaBr₂, Mg(NO₃)₂, CuSO₄, każdą inną metodą (8 pkt); 3 — jony powstające przy dysocjacji soli i wzory soli (6 pkt). **Klucz w pliku: brak** (tylko arkusz z pustymi polami). Osobne schematy są w Łodzi: `schemat-oceniania-etap-wojewodzki-chemia.pdf` (2023/03, z wyników wyszukiwania — nieotwarte).
+- **Kielce — chemia, III etap II Wojewódzkiego Konkursu z Chemii, 22.03.2021** (kuratorium.kielce.pl, arkusz-_iii_etap_ii_wojewodzki_konkurs-_z_chemii.pdf). **Korekta:** zestawienie podawało inny adres i zadania 14–18 „rozpuszczalność CO₂, typy wiązań, reakcje redoks, nadkwasota”. Faktycznie: 20 zadań, 50 pkt, 60 min. Zadania 14–18: 14 — odczynniki rozróżniające kwas solny, siarkowy(VI) i octowy (jonowo); 15 — synteza chlorku winylu z etynu i HCl (stosunek mas, nasycenie produktu); 16 — gaz palący się z sadzą nad probówką; 17 — próbka pokarmu niedająca charakterystycznej barwy jodu; 18 — cztery zdania prawda/fałsz o stechiometrii. **Klucz: brak** w pliku.
+
+**Nie potwierdzone (adres z pliku nie był w wynikach; nie wpisywać jako źródło):**
+- Kraków, „etap szkolny – zadania 7” (2021/06) — w wynikach wcześniej był inny adres tego pliku (2019/08 i 2020/07). Treść do sprawdzenia.
+- CKE, „OCHP_600_zasady_oceniania.docx” (cke.gov.pl) — nie w wynikach. Uwaga: w zestawieniu sam arkusz OCHP-C00 też do weryfikacji.
+- Kielce „ii-wojewodzki-konkurs-z-chemii-arkusz.pdf” (2021/02) — nie znaleziono; zamiast tego istnieje arkusz III etapu z 2021/04 (powyżej).
+- Warszawa, biologia etap wojewódzki 2025/26 (model) i polonistyka 2025 — nie otwarte.
+- Małopolska: matematyka 2016/17 (old.kuratorium.krakow.pl) i angielski 2016/17 — nie otwarte.
+- Kielce biologia etap szkolny, Kraków biologia 2013/14 — nie otwarte.
+
+**Wniosek:** do banku przechodzą dwa potwierdzone arkusze chemiczne (Łódź 2022/23, Kielce III etap 2021) — **bez kluczy**. Do wstawienia pytań potrzebne klucze z osobnych schematów (Łódź 2023 w wynikach).
+
 ## Konkursy i olimpiady — poziomy (etap szkolny, rejonowy, wojewódzki)
 
 Zasada: każde pytanie ma etap i źródło. Na razie tylko podstawówka.
