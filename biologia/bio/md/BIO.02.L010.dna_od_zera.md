@@ -1,6 +1,6 @@
 ---
 kod: L010
-uid: BIO.01.L010.dna_od_zera
+uid: BIO.02.L010.dna_od_zera
 tytul: Genetyka i DNA od zera
 opis: cechy dziedziczne, nabyte i wieloczynnikowe; czym jest DNA, gdzie leży, nukleotyd, pary A–T i C–G
 kicker: L010 · BIOLOGIA · GENETYKA · START DZIAŁU
@@ -8,6 +8,7 @@ lead: Skąd podobieństwa i różnice między organizmami, trzy szuflady cech, f
 plakietki: [[basic:E8]][[understand:TRENING]][[extra:AMBITNE]][[contest:ZAAWANSOWANE]]
 uwaga: Poprzednia lekcja: L002 (człowiek: krew, gamety, 46/23); L003 (diagnoza) — opcjonalnie. Następna: L011 (chemia par zasad i geometria helisy).
 stopka: **BIOLOGIA L010 v4.0** · Genetyka i DNA od zera · 2026
+stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewnętrznego W1
 ---
 ::: minimum | Muszę umieć na E8 — 10 faktów
 1. **Genetyka** = nauka o **dziedziczeniu** i **zmienności**.
@@ -226,7 +227,7 @@ To jest **model podstawowy**. W rzeczywistości:
 **Klasyfikacja:** kolor oczu → głównie dziedziczna (wielogenowa); blizna → nabyta; wzrost → wieloczynnikowa; grupa krwi → dziedziczna.
 
 ## 7 | Czym jest DNA? [[basic:E8]] {#dna}
-**DNA = kwas deoksyrybonukleinowy.** To **cząsteczka chemiczna**, która przechowuje **informację genetyczną** — informację potrzebną do budowy i funkcjonowania organizmu. Najprościej: DNA to **nośnik informacji biologicznej**.
+**DNA = kwas deoksyrybonukleinowy.** To **cząsteczka chemiczna**, która przechowuje **informację genetyczną** — informację potrzebną do budowy i funkcjonowania organizmu. Najprościej: DNA to **nośnik informacji biologicznej**. Zbudowane jest z tych samych pierwiastków co inne związki organiczne: węgla (C), wodoru (H), tlenu (O), azotu (N) i fosforu (P). Nie ma w nim „czegoś magicznego” — informację niesie sposób ułożenia tych atomów w zasadach i w kolejności nukleotydów.
 
 ::: karta warning | Metafora to nie opis
 „DNA to plan” albo „DNA to instrukcja” to metafora. DNA nie jest kartką z narysowanym domem ani instrukcją obsługi z ponumerowanymi krokami. To cząsteczka chemiczna, w której **kolejność elementów** niesie informację biologiczną.
@@ -351,7 +352,7 @@ DNA zawiera:
 
 | Składnik | Co to | Rola |
 |---|---|---|
-| Cukier deoksyryboza | cukier pięciowęglowy | szkielet |
+| Cukier deoksyryboza | cukier pięciowęglowy (5 atomów węgla w pierścieniu); „deoksy-” znaczy, że brakuje jednego atomu tlenu w porównaniu z rybozą | szkielet |
 | Reszta fosforanowa | grupa –PO₄ | łączy nukleotydy w łańcuch |
 | Zasada azotowa | A, T, C lub G | nosi informację |
 
@@ -368,7 +369,7 @@ DNA zawiera:
 
 **Reguła:** A–T (2 wiązania wodorowe) · C–G (3 wiązania wodorowe).
 1. **Wielkość zasad:** A i G to puryny (większe), T i C to pirymidyny (mniejsze). Para „duża + mała” zachowuje stałą szerokość helisy.
-2. **Układ miejsc wiązania:** nie każda duża pasuje do każdej małej. A–C ma dobrą szerokość, ale niewłaściwe rozmieszczenie grup chemicznych — nie tworzy stabilnych wiązań wodorowych; regularne takie pary zaburzałyby strukturę DNA.
+2. **Układ miejsc wiązania:** nie każda duża pasuje do każdej małej. A–C ma dobrą szerokość, ale niewłaściwe rozmieszczenie grup chemicznych — nie tworzy stabilnych wiązań wodorowych; gdyby takie pary występowały regularnie, zaburzałyby strukturę DNA.
 3. **Wynik:** A–T tworzy 2 wiązania wodorowe, C–G — 3. **Ciekawostka:** dlatego fragmenty DNA bogate w C i G trudniej rozdzielić (np. podgrzewaniem) niż bogate w A i T — wykorzystuje się to w laboratoriach przy kopiowaniu DNA.
 
 ### 10.3. Drabina DNA
@@ -937,3 +938,22 @@ Kolejność powtórki (we własnym tempie): Minimum E8 + 5 fiszek → fiszki blo
 - Dodano: §4.5 wykład „od zera”, 2 mini-wykłady „W skrócie” (DNA → gen → białko → cecha; reguła par zasad w praktyce). Nic nie usunięto.
 - Poprawione: §22 — usunięto minuty i odstępy dni (kurs we własnym tempie); została kolejność nauki i powtórki.
 
+## AUDYT W1 — Claude Haiku 5.5, 2026-10-12 {#audyt-w1}
+
+**Błędy poprawione:**
+- [nagłówek, uid] — `BIO.01.L010` → `BIO.02.L010` (L010 należy do działu genetyki, BIO.02, zgodnie z CLAUDE.md).
+- [§10.1, cukier] — dopisano, skąd nazwa „deoksyryboza” (brak jednego atomu tlenu względem rybozy); wcześniej samo „pięciowęglowy” bez wyjaśnienia.
+- [§10.2, A–C] — zdanie o skutkach regularnych błędnych par przeformułowane na poprawne warunkowe („gdyby … występowały regularnie, zaburzałyby …”).
+
+**Braki w zakresie (wprowadzone):**
+- [§7] — dopisano pierwiastki budujące DNA (C, H, O, N, P): wiedza wstępna z chemii, bez której „nukleotyd” jest niejasny.
+
+**Sprawdzone bez zmian:** pary A–T / C–G (2 i 3 wiązania), przykłady uzupełniania nici (ATGCCA → TACGGT; AGTCCA; AGT C → TCAG), liczby (4¹⁰ = 1 048 576; 3¹⁰ = 59 049; ok. 18 razy), klucze testu i ćwiczeń (klucz 16A.8, 16E.1 i ABO w zadaniu życiowym 2), ciekawostki (2 m DNA, 20 000 genów, mtDNA po matce).
+
+**Wykład, mini-wykłady, ciekawostki, własne przykłady:** wykład §4.5 (ok. 400 słów), 2 mini-wykłady „W skrócie”, 4 ciekawostki, klinika 2.0 (6 przykładów), zadania 16D–16E i zadania z życia (A).
+
+**Nieprzyjęte / odłożone:**
+- Grafiki (9 istniejących) nie były przeglądane w przeglądarce w tej turze — recenzja objęła ich opisy `@opis` i treść, nie działanie.
+- Nie dodano nowych grafik: lekcja ma już komplet grafik procesowych.
+
+**Status:** audyt wewnętrzny, nie zastępuje zewnętrznego W1.
