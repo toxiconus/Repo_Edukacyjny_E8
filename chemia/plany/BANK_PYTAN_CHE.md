@@ -500,3 +500,19 @@ Uwagi:
 - Zestawienie 3e7407ea nie podaje liczby zadań ani punktów – nie wpisuję ich.
 - Wpis dla E8 z lat 2019–2025 nadal niepotwierdzony. Potrzebny adres CKE z konkretnymi plikami arkuszy (np. `cke.gov.pl/egzamin-osmoklasisty/arkusze/...`) z wyników wyszukiwania.
 - Błąd w zestawieniu: Łódź 2024/25 podany z adresem Bydgoszczy – nie przenosić do banku.
+
+---
+
+## Weryfikacja zestawienia b36deb21 (2026-10-12) – indeks: Kielce 2023/24, Bydgoszcz 2022/23, Łódź 2023/24, CKE E8
+
+| Źródło (z zestawienia) | Wynik | Co potwierdzono |
+|---|---|---|
+| Kielce – III etap 2023/24 (`84949`): biologia, chemia, j. angielski, j. polski (arkusz + model) | **Niepotwierdzony** | Adres nie wystąpił w wynikach wyszukiwania (ani w tej, ani w poprzednich partiach). Katalog „potwierdzony" w zestawieniu nie jest zweryfikowany. Wielkości plików w zestawieniu – niezweryfikowane. |
+| Bydgoszcz – archiwum 2022/23 (`2022-2023_arkusze_konkursowe`): biologia, chemia, angielski, polski na 3 etapach (12 pozycji) | **Niepotwierdzony** | Adres nie wystąpił w wynikach. W wynikach są inne pliki Bydgoszczy (np. komunikaty o etapach w Krakowie – nie mylić). |
+| Łódź 2023/24 – etap wojewódzki (załączniki DOCX) | **Niepotwierdzony (DOCX nieczytelne)** | Schemat 2023/24 wojewódzki DOCX (`schemat-oceniania-wojewodzki-konkurs-przedmiotowy-z-chemii-etap-wojewodzki-2023-2024.docx`, katalog 2024/03) wystąpił w wynikach – nieotwarty. Zestawienie mówi, że próba otwarcia się nie powiodła – zgodnie z wcześniejszą weryfikacją DOCX nie dają się odczytać tym narzędziem. |
+| CKE – „Informacja o organizacji egzaminu ósmoklasisty 2025/2026" (`bip.cke.gov.pl/attachments/download/10338`) | **Niepotwierdzony** | Adres nie wystąpił w wynikach. W wynikach są dokumenty szkolne o organizacji egzaminu 2025/2026 (np. prezentacja e8 2026, procedury szkolne) – nie są to dokumenty CKE i nie mogą być źródłem archiwum 2019–2025. |
+| Zestawienie: „E8-POL / E8-MAT / E8-ANG 2019–2025 – CKE potwierdza dostępność" | **Niepotwierdzony** | Opiera się na powyższym dokumencie, którego nie potwierdzono. |
+
+Uwagi:
+- Zestawienie nie zawiera żadnego arkusza ani klucza do odczytu. Indeks ID (np. SW-2324-BIO-III, KP-2223-CHE-S/R/W) to propozycje nazewnictwa, nie potwierdzone pozycje – nie wpisywać jako „potwierdzone".
+- Przykład „pułapki" w angielskim (tomorrow → will) jest metodą, nie treścią konkretnego zadania – nie wpisywać jako zadanie z arkusza.
