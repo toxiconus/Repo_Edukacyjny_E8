@@ -4,21 +4,9 @@
 
 ## biologia
 
-**WYSŁAĆ (bez W1) — 5 lekcji, 340 KB:** U01 (48 KB) · U03 (85 KB) · U06 (68 KB) · U08 (75 KB) · U10 (62 KB)
+**niski priorytet (W1 starym promptem) — 5 lekcji, 349 KB:** REV01 (43 KB) · REV02 (59 KB) · U06 (79 KB) · U08 (88 KB) · U10 (78 KB)
 
-- zestaw 1 (48 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U01 biologia/bio/md/BIO.07.U01.skora_i_uklad_ruchu.md`
-
-- zestaw 2 (85 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U03 biologia/bio/md/BIO.07.U03.uklad_pokarmowy_i_odzywianie.md`
-
-- zestaw 3 (68 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U06 biologia/bio/md/BIO.07.U06.oddychanie_i_wydalanie.md`
-
-- zestaw 4 (75 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U08 biologia/bio/md/BIO.07.U08.uklad_nerwowy_i_zmysly.md`
-
-- zestaw 5 (62 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U10 biologia/bio/md/BIO.07.U10.uklad_dokrewny.md`
-
-**niski priorytet (W1 starym promptem) — 2 lekcji, 103 KB:** REV01 (43 KB) · REV02 (59 KB)
-
-**NIE wysyłać (W1 FULL) — 3 lekcji, 229 KB:** L010 (61 KB) · H01 (78 KB) · U04 (88 KB)
+**NIE wysyłać (W1 FULL) — 5 lekcji, 391 KB:** L010 (61 KB) · H01 (78 KB) · U01 (57 KB) · U03 (104 KB) · U04 (88 KB)
 
 ## chemia
 

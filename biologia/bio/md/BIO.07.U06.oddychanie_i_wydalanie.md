@@ -9,7 +9,7 @@ lead: Najważniejsze umiejętności działu: opisać mechanizm wdechu i wydechu,
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.6 układ oddechowy, III.7 układ wydalniczy (moczowy). Nefron na poziomie szkoły podstawowej + warstwa ambitna. ADH i gospodarka wodna jako sprzężenie zwrotne — także H01 Homeostaza. Liczby (skład powietrza, liczba i powierzchnia pęcherzyków, objętości oddechowe, ilości moczu, przepływ krwi przez nerki) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U06 v1.0** · Oddychanie i wydalanie · 2026
-stan: WYPEŁNIONY — Perplexity + GPT-6 (szkielet OLI) + Claude, 2026-10-11; do W1
+stan: W1 częściowo — GLM-5.3-Flash (Z.ai), 2026-10-11: tylko pakiet dodatków (zadania, test, fiszki, słownik, klinika, mity, ciekawostka, mini-wykład); przebudowa §0–14 nie dotarła — cała lekcja do ponownego W1
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Trzy różne procesy:** **wentylacja płuc** (wdech i wydech), **wymiana gazowa** (dyfuzja O₂ i CO₂ w płucach i tkankach), **oddychanie komórkowe** (w mitochondriach: glukoza + tlen → CO₂ + woda + energia).
@@ -183,6 +183,7 @@ Dane orientacyjne. Azot **nie uczestniczy** w wymianie gazowej — ile wdychamy,
 „Płuca same zasysają powietrze.” || Płuca nie mają mięśni; rozszerzają się razem z klatką piersiową, którą powiększają przepona i mięśnie międzyżebrowe.
 „Ziewamy, bo brakuje nam tlenu.” || Badania tego nie potwierdzają — przyczyny ziewania są wciąż badane (np. zmiana stanu czuwania, chłodzenie mózgu); ziewanie jest też „zaraźliwe” społecznie.
 „Wymiana gazowa zachodzi w tchawicy i oskrzelach.” || Tylko w pęcherzykach płucnych (i w tkankach) — drogi oddechowe jedynie przewodzą powietrze.
+„Zawsze lepiej oddychać jak najgłębiej i najszybciej.” || Hiperwentylacja obniża CO₂ poniżej normy i może powodować zawroty głowy; regulacja nerwowa utrzymuje CO₂ w wąskim zakresie.
 :::
 
 ## 7 | Oddychanie komórkowe i regulacja oddychania [[basic:E8]] {#regulacja}
@@ -285,6 +286,11 @@ Wydaje się marnotrawstwem przefiltrować 170 litrów, żeby odzyskać 168,5. Al
 Pętla nefronu (pętla Henlego) schodzi głęboko w **rdzeń nerki**, gdzie płyn międzykomórkowy ma bardzo duże stężenie soli i mocznika. Gdy mocz przepływa potem przewodem zbiorczym przez ten „słony” rdzeń, woda może wypływać z niego osmotycznie do krwi — ale tylko wtedy, gdy ściana przewodu jest dla niej przepuszczalna, a to zależy od **ADH**. Dlatego człowiek potrafi wytworzyć mocz kilka razy bardziej stężony niż osocze. Zwierzęta pustynne (np. skoczki) mają wyjątkowo długie pętle i mocz wielokrotnie bardziej zagęszczony niż nasz.
 :::
 
+::: mity
+„Nerki filtrują tylko toksyny — woda i glukoza od razu zostają we krwi.” || Nerka filtruje wszystko, co małe — także wodę i glukozę; do krwi wracają dopiero dzięki wchłanianiu zwrotnemu w kanaliku.
+„Pocenie służy przede wszystkim wydalaniu.” || Główną rolą potu jest chłodzenie organizmu (termoregulacja); usuwanie soli i śladowych ilości mocznika to rola drugorzędna.
+:::
+
 ## 12 | Regulacja gospodarki wodnej — ADH [[basic:E8]] {#adh}
 
 **ADH** (hormon antydiuretyczny, wazopresyna) wytwarza **podwzgórze**, a do krwi wydziela go **przysadka mózgowa**. Działa na **przewody zbiorcze** (i końcowe odcinki kanalików) — zwiększa ich przepuszczalność dla wody.
@@ -310,6 +316,10 @@ Barwniki w moczu powstają w podobnej ilości niezależnie od tego, ile pijesz. 
 | **niewydolność nerek** | nerki przestają oczyszczać krew (np. powikłanie cukrzycy, nadciśnienia, chorób nerek); w organizmie gromadzą się mocznik, woda, jony | leczenie chorób przewlekłych; w zaawansowanej — **dializa** (sztuczna nerka oczyszcza krew poza ciałem) albo **przeszczep nerki** |
 
 **Profilaktyka:** pij wodę regularnie (więcej w upał i przy wysiłku), nie wstrzymuj długo moczu, dbaj o higienę okolic intymnych, unikaj wychłodzenia, ograniczaj sól, nie nadużywaj leków przeciwbólowych, wykonuj **badanie ogólne moczu** (zleca lekarz — jedno z najprostszych badań kontrolnych).
+
+::: karta understand | W skrócie — dlaczego badanie ogólne moczu mówi lekarzowi tak dużo
+Mocz to „ostatni odcinek” filtracji krwi — wszystko, co nerka zrobiła z osoczem, zostaje w nim zapisane. **Białko** wskazuje na uszkodzenie filtra (kłębuszków) lub dróg moczowych, **glukoza** — na jej nadmiar we krwi (np. nieleczona cukrzyca), **krew** — na kamień, infekcję lub uraz, a **bardzo rozcieńczony mocz mimo odwodnienia** — na kłopot z działaniem ADH. Jedna próbka moczu to szybki i nieinwazyjny przegląd nerek i całego metabolizmu — dlatego należy do najczęstszych badań kontrolnych.
+:::
 
 ## 14 | Doświadczenia i analiza danych [[exam:KONKURS]] {#doswiadczenia}
 
@@ -337,16 +347,18 @@ Hipoteza: Wydychane powietrze zawiera parę wodną.
 Sprzęt: zimne lusterko lub szklana płytka.
 Przebieg: Chuchamy na lusterko z odległości kilku centymetrów; obok trzymamy drugie lusterko w tym samym pomieszczeniu (próba kontrolna).
 Obserwacja: Na lusterku, na które chuchnęliśmy, pojawia się mgiełka drobnych kropelek, która po chwili znika; drugie pozostaje suche.
-Wniosek: Wydychane powietrze zawiera parę wodną — skrapla się na zimnej powierzchni. Płuca usuwają więc także wodę.
+Wniosek: Wydychane powietrze zawiera parę wodną — skrapla się na zimnej powierzchni lusterka w postaci mgiełki drobnych kropelek; powietrze z otoczenia nie daje takiej mgiełki (albo daje znacznie słabszą), bo zawiera mniej pary wodnej niż powietrze wydechowe, nasycone parą w drogach oddechowych. Płuca usuwają więc także wodę.
+BHP: lusterko trzymaj za oprawkę lub w chusteczce, nie dotykaj krawędzi; stłuczone lusterko zgłoś osobie dorosłej i nie zbieraj odłamków rękami.
 :::
 
 ::: dosw | Doświadczenie 3 — wpływ wysiłku na częstość oddechów
 Problem: Jak wysiłek fizyczny wpływa na częstość oddechów?
 Hipoteza: Po wysiłku częstość oddechów wzrasta, a potem wraca do wartości spoczynkowej.
 Sprzęt: stoper; zdrowa osoba badana (wysiłek umiarkowany, w razie złego samopoczucia przerwać).
-Przebieg: Liczymy oddechy przez 1 minutę w spoczynku (trzy razy, średnia). Osoba wykonuje 30 przysiadów. Liczymy oddechy zaraz po wysiłku oraz po 5 i 10 minutach odpoczynku. Pomiar powtarzamy u kilku osób.
+Przebieg: Liczymy oddechy przez 1 minutę w spoczynku (trzy razy, średnia) — badany nie powinien wiedzieć, kiedy liczymy, bo świadoma kontrola oddechu zafałszuje wynik; to próba kontrolna. Tętno mierzymy na tętnicy promieniowej (15 s × 4). Osoba wykonuje 30 przysiadów. Liczymy oddechy zaraz po wysiłku oraz po 5 i 10 minutach odpoczynku. Pomiar powtarzamy u kilku osób.
 Obserwacja: Przykładowe wyniki: spoczynek 15/min, zaraz po wysiłku 32/min, po 10 min 18/min (tętno: 70, 140, 82/min).
-Wniosek: Wysiłek zwiększa częstość (i głębokość) oddechów, bo pracujące mięśnie intensywniej oddychają komórkowo — potrzebują więcej tlenu i wytwarzają więcej CO₂. Po wysiłku wartości wracają do spoczynkowych — organizm przywraca równowagę.
+Wniosek: Wysiłek zwiększa częstość (i głębokość) oddechów, bo pracujące mięśnie intensywniej oddychają komórkowo — potrzebują więcej tlenu i wytwarzają więcej CO₂. Po wysiłku wartości wracają do spoczynkowych — organizm przywraca równowagę. Więcej CO₂ pobudza ośrodek oddechowy, a szybciej bijące serce dostarcza mięśniom tlen i glukozę oraz odbiera CO₂. Zmienna niezależna — wysiłek; zmienne zależne — częstość oddechów i tętno.
+BHP: tylko umiarkowany wysiłek; przerwać przy zawrotach głowy lub złym samopoczuciu; nie wykonywać u osób z chorobami serca i układu oddechowego.
 :::
 
 ::: karta exam | Analiza danych — dwie osoby i ADH
@@ -504,6 +516,41 @@ Białko trawione do aminokwasów, wchłoniętych do krwi (1 pkt); przy przemiani
 :::
 :::
 
+::: karta exam | Zadanie 19 (4 pkt) — analiza tabeli: skład powietrza
+Tabela: tlen — wdychane 21%, wydychane 16%; dwutlenek węgla — 0,04% / 4%; azot — 78% / 78%; para wodna — zmienna / dużo. a) Wyjaśnij, dlaczego zawartość azotu się nie zmienia. b) Wyjaśnij, dlaczego w wydychanym powietrzu nadal jest ok. 16% tlenu i jakie ma to znaczenie przy oddechach ratowniczych. c) Nazwij proces, którego produktem jest CO₂ w wydychanym powietrzu, i wskaż miejsce jego zachodzenia. d) Wyjaśnij, skąd bierze się dużo pary wodnej w wydychanym powietrzu.
+::: odp | Pokaż klucz
+a) Azot nie uczestniczy w wymianie gazowej ani w przemianie materii — wdychamy i wydychamy tyle samo (1 pkt). b) Płuca pobierają tylko część tlenu (ok. 5 punktów procentowych), resztę wydychamy — dlatego oddechy ratownicze usta–usta dostarczają poszkodowanemu wystarczająco tlenu (1 pkt). c) Oddychanie komórkowe; zachodzi w mitochondriach komórek całego ciała (1 pkt). d) Drogi oddechowe nawilżają powietrze (wilgotna błona śluzowa, śluz), a para wodna jest także produktem przemiany materii (1 pkt).
+:::
+:::
+
+::: karta exam | Zadanie 20 (3 pkt) — kolejność zdarzeń wdechu
+Ułóż w kolejności: A. ciśnienie w płucach spada poniżej atmosferycznego; B. przepona i mięśnie międzyżebrowe zewnętrzne się kurczą; C. powietrze wpływa do płuc; D. objętość klatki piersiowej rośnie. Wyjaśnij, dlaczego spokojny wydech nie wymaga pracy mięśni.
+::: odp | Pokaż klucz
+B → D → A → C (2 pkt; 1 pkt za jeden błąd). Wydech spokojny: mięśnie rozluźniają się, sprężyste płuco i opadające żebra zmniejszają objętość klatki, ciśnienie rośnie powyżej atmosferycznego i powietrze wypływa — bez skurczu mięśni (1 pkt).
+:::
+:::
+
+::: karta exam | Zadanie 21 (4 pkt) — analiza tabeli: osocze i mocz
+Tabela: białka — osocze dużo, mocz pierwotny ok. 0, mocz ostateczny 0; glukoza — obecna / obecna / 0; mocznik — mało / mało / dużo. a) Dlaczego w moczu pierwotnym nie ma białek? b) Dlaczego glukoza jest w moczu pierwotnym, a nie ma jej w ostatecznym? c) Wyjaśnij, dlaczego stężenie mocznika w moczu ostatecznym jest kilkadziesiąt razy większe niż w osoczu. d) Co może wskazywać białko w moczu ostatecznym?
+::: odp | Pokaż klucz
+a) Są zbyt duże, by przejść przez filtr kłębuszka — zostają we krwi (1 pkt). b) Glukoza przechodzi przez filtr, ale w kanaliku zostaje wchłonięta zwrotnie do krwi (1 pkt). c) Kanaliki i przewody zbiorcze odzyskują ok. 99% wody, a mocznik zostaje w moczu — jego stężenie rośnie (1 pkt). d) Możliwe uszkodzenie filtra (kłębuszków) albo dróg moczowych; wynik zawsze interpretuje lekarz (1 pkt).
+:::
+:::
+
+::: karta exam | Zadanie 22 (3 pkt) — przewidź skutek: upał i duża dawka wody
+Uczeń w upalny dzień długo biegał i mało pił, a wieczorem wypił naraz 1,5 l wody. a) Opisz, co dzieje się z wydzielaniem ADH i z moczem w ciągu dnia. b) Co zmienia się po wypiciu dużej ilości wody? c) Podaj nazwę mechanizmu regulacji, który to ilustruje.
+::: odp | Pokaż klucz
+a) Więcej ADH → przewody zbiorcze bardziej przepuszczalne dla wody → mocz mały, zagęszczony, ciemny (1 pkt). b) Mniej ADH → mniej wody wraca do krwi → mocz obfity, jasny (1 pkt). c) Ujemne sprzężenie zwrotne utrzymujące homeostazę (1 pkt).
+:::
+:::
+
+::: karta exam | Zadanie 23 (4 pkt) — zatrucie czadem (analiza przypadku)
+Zima, zamknięte okna, stary piecyk gazowy. Rodzina czuje się senna, ma bóle i zawroty głowy. a) Wyjaśnij, dlaczego zatrucie następuje mimo prawidłowego oddychania. b) Wyjaśnij, dlaczego domownicy nie zauważają zagrożenia zapachem. c) Podaj dwa działania zmniejszające ryzyko zatrucia. d) Podaj pierwsze kroki pomocy.
+::: odp | Pokaż klucz
+a) Tlenek węgla wiąże się z hemoglobiną ok. 200–250 razy silniej niż tlen (orientacyjnie) — krew nie przenosi tlenu do komórek (1 pkt). b) CO jest bezbarwny i bezwonny (1 pkt). c) Np. czujnik czadu, sprawna wentylacja i komin, przeglądy urządzeń grzewczych, niezatykanie kratek wentylacyjnych (1 pkt za dwa). d) Otworzyć okna, wynieść poszkodowanego na świeże powietrze, wezwać 112; ratownik musi zadbać o własne bezpieczeństwo (1 pkt).
+:::
+:::
+
 ## 16 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
@@ -523,6 +570,7 @@ Białko trawione do aminokwasów, wchłoniętych do krwi (1 pkt); przy przemiani
 | „Glukoza nie trafia do moczu pierwotnego.” | Jest w moczu pierwotnym; odzyskuje ją kanalik. | Filtracja przepuszcza wszystkie małe cząsteczki. |
 | „ADH zwiększa ilość moczu.” | ADH zwiększa odzyskiwanie wody — moczu jest mniej. | Hormon antydiuretyczny = przeciw oddawaniu moczu. |
 | „Ciemny mocz = choroba.” | Najczęściej oznacza małą ilość wypitej wody; ocenę zostawiamy lekarzowi. | Barwa zależy od stężenia barwników, pokarmów, leków. |
+| „ADH wytwarza przysadka.” | ADH wytwarza podwzgórze, a przysadka tylko go uwalnia. | Rozróżnienie „wytwarza — uwalnia” to klasyczna pułapka w zadaniach. |
 :::
 
 ## 17 | Ćwiczenia {#cwiczenia}
@@ -570,7 +618,11 @@ Wysokość głosu zależy od długości i grubości **fałdów głosowych** w kr
 :::
 
 ::: karta extra | Pływacy i rekordziści bezdechu
-Wytrenowani nurkowie potrafią wstrzymać oddech na wiele minut, ale nie dlatego, że „nie potrzebują” tlenu: ich organizm lepiej znosi wysoki poziom CO₂ i oszczędza tlen (zwalnia serce, zwęża naczynia w kończynach — **odruch nurkowy**). Ćwiczenia bezdechu bez opieki są **groźne** — można stracić przytomność pod wodą bez ostrzeżenia. Nigdy nie wstrzymuj oddechu pod wodą „na rekord” sam.
+Wytrenowani nurkowie potrafią wstrzymać oddech na wiele minut, ale nie dlatego, że „nie potrzebują” tlenu: ich organizm lepiej znosi wysoki poziom CO₂ i oszczędza tlen (zwalnia serce, zwęża naczynia w kończynach — **odruch nurkowy**). Ćwiczenia bezdechu bez opieki są **groźne** — można stracić przytomność pod wodą bez ostrzeżenia. Nigdy nie wstrzymuj oddechu pod wodą „na rekord” sam. Rekordziści bezdechu statycznego wytrzymują ponad 11 minut (orientacyjnie; źródło: AIDA International). Do wzięcia oddechu zmusza nas nie brak tlenu, tylko narastający **CO₂**, który pobudza ośrodek oddechowy. Dlatego szybkie, głębokie oddychanie (hiperwentylacja) przed zanurzeniem jest bardzo niebezpieczne: obniża CO₂ i „wycisza” alarm, choć zapas tlenu się nie zwiększa — pływak może stracić przytomność pod wodą.
+:::
+
+::: karta extra | Na stacji kosmicznej mocz wraca do kubka
+Na Międzynarodowej Stacji Kosmicznej woda jest najcenniejszym surowcem, dlatego systemy stacji odzyskują ją z moczu, pary wodnej z oddechu i potu — według NASA obecnie nawet ok. 90–98% wody krąży w obiegu zamkniętym (orientacyjnie; źródło: NASA). Astronauci żartują, że dzisiejsza kawa powstaje z wczorajszej. To inżynierska wersja tego, co od milionów lat robi nerka: filtruj wszystko i odzyskuj to, co potrzebne.
 :::
 
 ## 19 | Sposoby pamięciowe {#mnemotechniki}
@@ -681,6 +733,18 @@ Wytrenowani nurkowie potrafią wstrzymać oddech na wiele minut, ale nie dlatego
 - astmą
 - zapaleniem dróg moczowych
 ! Gruźlicę wywołują prątki gruźlicy.
+? Większość dwutlenku węgla przenoszona jest przez krew:
++ w osoczu w postaci jonów wodorowęglanowych
+- związana z hemoglobiną zamiast tlenu
+- rozpuszczona w erytrocytach jako glukoza
+- nie jest przenoszona — usuwa ją tylko limfa
+! CO₂ transportuje głównie osocze (jony wodorowęglanowe), częściowo hemoglobina, a niewielka część jest rozpuszczona bezpośrednio.
+? Po wypiciu dużej ilości wody mocz staje się:
++ obfity i jasny, bo wydziela się mniej ADH
+- skąpy i ciemny, bo wydziela się więcej ADH
+- skąpy i jasny, bo nerki zatrzymują wodę
+- obfity i ciemny, bo nerki pracują szybciej
+! Mniej ADH → przewody zbiorcze słabiej wchłaniają wodę zwrotnie → dużo rozcieńczonego, jasnego moczu.
 :::
 
 ## 21 | Fiszki {#fiszki}
@@ -708,6 +772,14 @@ Filtracja | kłębuszek → torebka; woda i małe cząsteczki → mocz pierwotny
 Wchłanianie zwrotne | kanalik → krew: glukoza, aminokwasy, woda, sole | basic:nefron
 Mocz pierwotny / ostateczny | ok. 150–180 l / ok. 1,5 l na dobę | contest:nefron
 ADH | z przysadki; więcej ADH → więcej wody odzyskanej → mniej moczu | basic:adh
+Opłucna | podwójna błona wokół płuca z płynem zmniejszającym tarcie — płuco rusza się razem z klatką | basic:pluca
+Surfaktant | substancja pokrywająca pęcherzyki, zapobiega ich sklejaniu się przy wydechu | contest:pluca
+Oksyhemoglobina | hemoglobina związana z tlenem — jasnoczerwona; w tkankach oddaje tlen | basic:krew
+Torebka Bowmana | część ciałka nerkowego otaczająca kłębuszek — tu powstaje mocz pierwotny | basic:nefron
+Moczówka prosta | choroba z niedoboru ADH — bardzo dużo rozcieńczonego moczu i silne pragnienie | contest:adh
+Dializa | oczyszczanie krwi poza ciałem (sztuczna nerka) przy niewydolności nerek | basic:choroby
+Erytropoetyna | hormon nerek pobudzający powstawanie erytrocytów | contest:nerka
+POChP | przewlekła obturacyjna choroba płuc — uszkodzenie pęcherzyków, głównie od palenia | basic:choroby
 :::
 
 ## 22 | Słownik {#slownik}
@@ -739,6 +811,7 @@ Mocz ostateczny :: mocz po wchłanianiu zwrotnym i wydzielaniu, odprowadzany do 
 Miedniczka nerkowa :: część nerki zbierająca mocz i odprowadzająca go do moczowodu
 ADH :: hormon antydiuretyczny z przysadki, zwiększający odzyskiwanie wody w nerkach
 Dializa :: oczyszczanie krwi poza organizmem przez błonę półprzepuszczalną (sztuczna nerka)
+Hemoglobina :: białko erytrocytów wiążące tlen (a znacznie silniej — tlenek węgla)
 :::
 
 ## 23 | Mapa pojęć {#mapa}
@@ -826,3 +899,14 @@ Oddychanie i wydalanie
 **Dodane:** wykład od zera (dostawy i wywóz odpadów w mieście-komórkach), mini-wykłady (po co dwa układy, ruchome schody ze śluzu, kolejność przyczyn wdechu, dlaczego nerka filtruje tak dużo, glukoza w moczu, kolor moczu), płaty płuc i opłucna, pojemność życiowa, skład powietrza wdychanego i wydychanego, czad z pierwszą pomocą, oddychanie beztlenowe, gruźlica i BCG, angina, grypa, palenie bierne i e-papierosy, skąd mocznik, wydzielanie ≠ wydalanie, funkcje hormonalne nerek, tabela osocze–mocz pierwotny–mocz ostateczny, pętla nefronu, ADH i alkohol, doświadczenia z parą wodną i wysiłkiem, zadania 14–18 i B1–B4, ciekawostki (Kolff, Murray, czkawka, mutacja głosu, odruch nurkowy), mity, grafiki `wdech-wydech`, `wymiana-gazowa`, `nefron`.
 
 **Nieprzyjęte:** kod „B2c” z propozycji — lekcja dostała kod U06 w grupie BIO.07 (pkt III.6–7); szkielet OLI pozostaje jako materiał źródłowy. Przypisy-cytaty Perplexity (linki ZPE [1]–[10]) pominięte w lekcji (zostają w zapisie surowym). Szczegółowa fizjologia nefronu (przeciwprądowy mechanizm zagęszczania) — tylko jako warstwa ambitna, zgodnie z uwagą szkieletu o poziomie SP.
+
+### AUDYT W1 — GLM-5.3-Flash (Z.ai), 2026-10-11 {#audyt-w1}
+
+Zapis surowy: `biologia/plany/audyty/ULEPSZ_GLM_U06_2026-10-11.md` (pakiet uzupełniający D1–D11; model widział lekcję do wniosku Doświadczenia 2). **Ocena częściowa** — wcześniejsza tura modelu z przebudową §0–14 nie dotarła; lekcja do ponownego W1.
+
+**Przyjęte (po sprawdzeniu):** D1 pełniejszy wniosek i BHP do Doświadczenia 2; D2 scalone z istniejącym Doświadczeniem 3 (badany nie wie, kiedy liczymy oddechy; pomiar tętna; zmienne; BHP); D3 mini-wykład o badaniu ogólnym moczu (§13); D4 ciekawostka o odzysku wody z moczu na stacji kosmicznej (NASA: ok. 98%) i dopisek do karty o bezdechu (rekord ponad 11 min, CO₂ jako bodziec, groźna hiperwentylacja); D5 zadania 19–23 (skład powietrza, kolejność wdechu, osocze i mocz, ADH w upał, czad); D6 +2 pytania testu (transport CO₂, mocz po dużej ilości wody); D7 +8 fiszek; D8 hasło „hemoglobina”; D9 wiersz kliniki „ADH wytwarza przysadka”; D10 trzy mity (hiperwentylacja w §6, filtracja w nerce i pocenie — nowy blok w §11).
+
+**Poprawione względem propozycji:** zadania przenumerowane z 21–25 na 19–23 (w lekcji było 18 numerowanych zadań); mity o nerce i pocie przeniesione z §6 (wymiana gazowa) do §11 (nefron); cudzysłowy „…" → „…”.
+
+**Nieprzyjęte:** P1 („kilkadziesiąt” → „kilkaset razy na dobę”) — w lekcji nie ma tego zdania; ciekawostka o przeszczepie nerki od bliźniaka — już jest w §18; pytania testu o wymianie gazowej w pęcherzykach, przeponie przy wdechu i braku białek w moczu pierwotnym — już są; fiszki „nagłośnia”, „wchłanianie zwrotne” i 7 haseł słownika — już są; 5 wierszy kliniki — już są; nowa sekcja „Mapa pojęć” (D11) — lekcja ma mapę w §23; 2 propozycje grafik — zapisane jako pomysły, bez kodów w lekcji.
+

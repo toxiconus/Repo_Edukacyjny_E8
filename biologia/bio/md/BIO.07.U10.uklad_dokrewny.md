@@ -8,8 +8,8 @@ lead: Kilka mikrogramów cząsteczek krążących we krwi potrafi przyspieszyć 
 lead: Najważniejsze umiejętności działu: wskazać gruczoły i ich hormony, przewidzieć skutki niedoboru i nadmiaru, wyjaśnić antagonizm insuliny i glukagonu oraz sprzężenie zwrotne ujemne, porównać regulację nerwową i hormonalną.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.10 układ dokrewny. Treści oznaczone „(konkurs)” wykraczają poza podstawę E8 — dobrane według typowych zadań etapu rejonowego, do zweryfikowania z wymaganiami konkursu. Regulacja glukozy i sprzężenie zwrotne szerzej — H01 Homeostaza. Liczby (normy glikemii, masy narządów, daty) orientacyjne — do weryfikacji w W1.
-stopka: **BIOLOGIA U10 v1.0** · Układ dokrewny — hormony · 2026
-stan: WYPEŁNIONY — 4 modele AI w trybie BADANIE (GLM 5.3 Flash, Gemini 2.5 Flash, Grok 4.7, model A) + szkielet OLI + Claude, 2026-10-11; do W1
+stopka: **BIOLOGIA U10 v1.1** · Układ dokrewny — hormony · 2026
+stan: W1 częściowo — GLM-5.3-Flash (Z.ai), 2026-10-11: przebudowa do §14 Zad. 7 + dodatki (zadania, test, fiszki, słownik, klinika); §14 od Zad. 8 do końca do ponownego W1
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Gruczoł dokrewny** wydziela **hormony bezpośrednio do krwi** (nie ma przewodów); **zewnątrzwydzielniczy** wydziela przewodem (ślinianki, gruczoły potowe, wątroba — żółć). **Trzustka, jajniki i jądra** są gruczołami **mieszanymi**.
@@ -56,10 +56,8 @@ stan: WYPEŁNIONY — 4 modele AI w trybie BADANIE (GLM 5.3 Flash, Gemini 2.5 Fl
 4. Jaki pierwiastek jest potrzebny do wytwarzania tyroksyny?
 5. Który hormon wywołuje reakcję „walcz lub uciekaj”?
 6. Co działa szybciej: układ nerwowy czy hormonalny?
-
 ::: odp | Pokaż klucz
 1. Nie — ślina płynie przewodem do jamy ustnej (gruczoł zewnątrzwydzielniczy). · 2. Insulina. · 3. Tak — krew niesie hormon po całym ciele; zadziała tam, gdzie komórki mają jego receptory (np. hormon wzrostu na kości). · 4. Jod. · 5. Adrenalina. · 6. Nerwowy.
-
 **Interpretacja:** 0–2 — zacznij od [§1](#wyklad); 3–4 — przejdź rdzeń, uważaj na kierunki strzałek; 5–6 — przejdź do [§14](#zadania).
 :::
 :::
@@ -103,6 +101,13 @@ Gdy system zawodzi, hormonów jest za mało albo za dużo — i obie sytuacje s�
 Hormon jest jak ogłoszenie nadawane w radiu na jednej częstotliwości: słyszą je wszyscy, którzy mają odbiornik ustawiony na tę falę. „Odbiornikiem” jest **receptor** — białko na powierzchni komórki albo w jej wnętrzu. Komórka bez receptora jest na hormon „głucha”. Jeden hormon może mieć odbiorniki w wielu narządach — adrenalina działa jednocześnie na serce, oskrzela, źrenice i wątrobę — i dlatego jego skutki są tak szerokie.
 :::
 
+::: nie-myl
+- hormon ≠ enzym — hormon nadaje komórce rozkazy („produkuj więcej ciepła”), enzym przyspiesza jedną reakcję chemiczną.
+- gruczoł dokrewny ≠ gruczoł zewnątrzwydzielniczy — patrz tabela powyżej; trzustka, jajniki i jądra należą do obu typów naraz.
+- tężyczka ≠ tężec — tężyczka to bolesne skurcze mięśni przy zbyt niskim wapniu we krwi; tężec to groźna choroba zakaźna (np. po zanieczyszczeniu rany ziemią).
+- wytwarza ≠ uwalnia — ADH i oksytocynę **wytwarza** podwzgórze, a **uwalnia** tylny płat przysadki (patrz §4).
+:::
+
 ::: adv | Hormony białkowe a sterydowe | poziom ambitny
 Hormony **białkowe i peptydowe** (insulina, glukagon, hormon wzrostu, TSH) i **adrenalina** nie przechodzą przez błonę komórkową — ich receptory są **na powierzchni** komórki, a sygnał jest przekazywany do środka łańcuchem reakcji. Hormony **sterydowe** (kortyzol, estrogeny, progesteron, testosteron, aldosteron) powstają z **cholesterolu**, rozpuszczają się w tłuszczach i **wnikają do komórki** — ich receptory są w cytoplazmie lub jądrze, a połączony z receptorem hormon bezpośrednio włącza lub wyłącza geny. Tyroksyna, choć pochodzi od aminokwasu, też działa głównie wewnątrz komórki. Dlatego hormony sterydowe działają zwykle wolniej, ale ich efekty (np. budowa mięśni) utrzymują się długo.
 :::
@@ -110,14 +115,15 @@ Hormony **białkowe i peptydowe** (insulina, glukagon, hormon wzrostu, TSH) i **
 ## 3 | Mapa gruczołów dokrewnych [[basic:E8]] {#mapa}
 
 @viz gruczoly-mapa | Gdzie są gruczoły dokrewne | kliknij gruczoł albo jego nazwę; przełącz ciało kobiety / mężczyzny
+
 @opis Szara sylwetka człowieka widziana z przodu z kolorowymi punktami gruczołów i przerywanymi liniami prowadzącymi do podpisów w kolumnie po prawej. W głowie: szyszynka (granatowa kropka w głębi mózgu), podwzgórze i tuż pod nim przysadka (fioletowe kropki u podstawy mózgu). Na szyi pomarańczowa, dwuczęściowa tarczyca i przy niej mała czerwona kropka przytarczyc; za mostkiem morska grasica. W jamie brzusznej dwa przerywane obrysy nerek z pomarańczowymi „czapeczkami” nadnerczy na szczytach oraz żółta, podłużna trzustka. W miednicy dwie różowe kropki jajników (ciało kobiety) albo w mosznie dwie niebieskie kropki jąder (ciało mężczyzny) — zależnie od przełącznika. Kliknięcie gruczołu lub podpisu pokazuje jego hormony, działanie oraz skutki niedoboru i nadmiaru; grafika sama przechodzi kolejno przez wszystkie gruczoły, dopóki użytkownik jej nie kliknie. Wniosek: gruczoły dokrewne leżą w różnych miejscach ciała i nie są ze sobą połączone przewodami — tworzą jeden układ, bo wszystkie wysyłają hormony do krwi, a najwyżej w hierarchii stoją podwzgórze i przysadka w mózgu.
 
 | Gruczoł | Położenie | Hormony | Główne działanie | Niedobór | Nadmiar |
 |---|---|---|---|---|---|
-| **podwzgórze** (konkurs) | międzymózgowie | hormony uwalniające i hamujące; **ADH**, **oksytocyna** | steruje przysadką; ADH — zatrzymywanie wody w nerkach; oksytocyna — skurcze macicy, wypływ mleka | ADH: **moczówka prosta** (bardzo dużo rozcieńczonego moczu, pragnienie) | — |
-| **przysadka** | pod mózgiem, w zagłębieniu kości czaszki | **hormon wzrostu**, prolaktyna, **hormony tropowe** (TSH, ACTH, FSH, LH) | wzrost kości i mięśni; wytwarzanie mleka; sterowanie tarczycą, korą nadnerczy, gonadami | u dziecka **karłowatość przysadkowa** (niski wzrost, prawidłowe proporcje i rozwój umysłowy) | u dziecka **gigantyzm**, u dorosłego **akromegalia** (powiększenie dłoni, stóp, żuchwy, nosa) |
+| **podwzgórze** (konkurs) | międzymózgowie | hormony uwalniające i hamujące; **ADH** (hormon antydiuretyczny, wazopresyna), **oksytocyna** | steruje przysadką; ADH — zatrzymywanie wody w nerkach; oksytocyna — skurcze macicy, wypływ mleka | ADH: **moczówka prosta** (bardzo dużo rozcieńczonego moczu, pragnienie) | — |
+| **przysadka** | pod mózgiem, w zagłębieniu kości czaszki | **hormon wzrostu**, prolaktyna, **hormony tropowe** (TSH — tyreotropina, ACTH — kortykotropina, FSH, LH) | wzrost kości i mięśni; wytwarzanie mleka; sterowanie tarczycą, korą nadnerczy, gonadami | u dziecka **karłowatość przysadkowa** (niski wzrost, prawidłowe proporcje i rozwój umysłowy) | u dziecka **gigantyzm**, u dorosłego **akromegalia** (powiększenie dłoni, stóp, żuchwy, nosa) |
 | **szyszynka** (konkurs) | w głębi mózgu | **melatonina** | rytm dobowy, sen | zaburzenia snu | senność |
-| **tarczyca** | szyja, przed tchawicą | **tyroksyna** (T4, T3); **kalcytonina** (konkurs) | tempo przemiany materii, ciepło, rozwój dziecka; kalcytonina obniża wapń we krwi | **niedoczynność** (spowolnienie, senność, marznięcie, tycie; u dziecka zahamowanie wzrostu i rozwoju umysłowego) | **nadczynność** (chudnięcie, nerwowość, kołatanie serca, pocenie, wytrzeszcz) |
+| **tarczyca** | szyja, przed tchawicą | **tyroksyna** (T4) i **trójjodotyronina** (T3, konkurs); **kalcytonina** (konkurs) | tempo przemiany materii, ciepło, rozwój dziecka; kalcytonina obniża wapń we krwi | **niedoczynność** (spowolnienie, senność, marznięcie, tycie; u dziecka zahamowanie wzrostu i rozwoju umysłowego) | **nadczynność** (chudnięcie, nerwowość, kołatanie serca, pocenie, wytrzeszcz) |
 | **przytarczyce** (konkurs) | tył tarczycy | **parathormon** | podwyższa wapń we krwi | **tężyczka** (skurcze mięśni) | odwapnienie kości, kamienie nerkowe |
 | **grasica** (konkurs) | za mostkiem; zanika po dojrzewaniu | m.in. tymozyna | dojrzewanie limfocytów T | osłabiona odporność | — |
 | **trzustka** (wyspy trzustkowe) | jama brzuszna, za żołądkiem | **insulina** (komórki β), **glukagon** (komórki α) | insulina ↓ glukozy, glukagon ↑ glukozy | insulina: **cukrzyca** | insulina: **hipoglikemia** (osłabienie, drżenie, utrata przytomności) |
@@ -134,8 +140,8 @@ Hormony **białkowe i peptydowe** (insulina, glukagon, hormon wzrostu, TSH) i **
 ## 4 | Podwzgórze i przysadka — dowództwo [[exam:KONKURS]] {#przysadka}
 
 - **Podwzgórze** jest częścią **mózgowia**, nie zwykłym gruczołem: odbiera informacje z układu nerwowego (temperatura, stres, pora dnia, stężenie wody we krwi) i odpowiada hormonami. Jego **hormony uwalniające i hamujące** płyną krótkimi naczyniami do przedniego płata przysadki.
-- **Przedni płat przysadki** wytwarza **hormon wzrostu**, **prolaktynę** (mleko) i **hormony tropowe**: **TSH** (→ tarczyca), **ACTH** (→ kora nadnerczy), **FSH** i **LH** (→ jajniki i jądra).
-- **Tylny płat przysadki niczego nie wytwarza** — magazynuje i uwalnia **ADH** i **oksytocynę** wyprodukowane w podwzgórzu. ADH sprawia, że nerki odzyskują więcej wody (U06); oksytocyna wywołuje skurcze macicy przy porodzie (dodatnie sprzężenie zwrotne, H01) i wypływ mleka przy karmieniu.
+- **Przedni płat przysadki** wytwarza **hormon wzrostu**, **prolaktynę** (mleko) i **hormony tropowe**: **TSH** (tyreotropina; → tarczyca), **ACTH** (kortykotropina; → kora nadnerczy), **FSH** (folikulostymulina) i **LH** (lutropina; → jajniki i jądra).
+- **Tylny płat przysadki niczego nie wytwarza** — magazynuje i uwalnia **ADH** (hormon antydiuretyczny, wazopresyna) i **oksytocynę** wyprodukowane w podwzgórzu. ADH sprawia, że nerki odzyskują więcej wody (U06); oksytocyna wywołuje skurcze macicy przy porodzie (dodatnie sprzężenie zwrotne, H01) i wypływ mleka przy karmieniu.
 
 $$ podwzgórze → (hormon uwalniający) → przysadka → (hormon tropowy, np. TSH) → gruczoł obwodowy (tarczyca) → hormon (tyroksyna) → narządy
 
@@ -147,13 +153,21 @@ Nic. Tylny płat **uwalnia** ADH i oksytocynę, które **wytwarza podwzgórze**.
 Kości długie rosną na długość dzięki **chrząstkom wzrostowym** (U01). Dopóki są otwarte, nadmiar hormonu wzrostu wydłuża kości — człowiek rośnie bardzo wysoki (**gigantyzm**). Po okresie dojrzewania chrząstki kostnieją i kości nie mogą się już wydłużać; nadmiar hormonu powoduje wtedy pogrubianie i rozrost kości dłoni, stóp, żuchwy i tkanek miękkich (**akromegalia**). Niedobór w dzieciństwie daje **karłowatość przysadkową** — niski wzrost przy prawidłowych proporcjach i prawidłowym rozwoju umysłowym (inaczej niż przy niedoczynności tarczycy). Dziś hormon wzrostu podaje się dzieciom z niedoborem jako lek, wytwarzany biotechnologicznie.
 :::
 
+::: karta extra | Najwyższy człowiek świata — ofiara własnej przysadki
+Robert Wadlow (1918–1940) mierzył **272 cm** i wciąż rósł do końca życia — przyczyną był nadmiar hormonu wzrostu wydzielany przez rozrośniętą przysadkę (gigantyzm przysadkowy). Jego chrząstki wzrostowe nie zamykały się, więc kości wydłużały się bez przerwy; potrzebował aparatów ortopedycznych na nogach i laski, bo kości i stawy nie nadążały za masą ciała. Dziś taki nadmiar można wykryć wcześnie (pomiar hormonu wzrostu i IGF-1 we krwi) i zahamować leczeniem (źródło: Guinness World Records).
+:::
+
 ## 5 | Tarczyca i jod [[basic:E8]] {#tarczyca}
 
 - **Tyroksyna** (T4) i **trójjodotyronina** (T3, konkurs) **przyspieszają przemianę materii**: komórki zużywają więcej tlenu i glukozy, wytwarzają więcej ciepła. U dzieci są **niezbędne do wzrostu i rozwoju mózgu**.
 - Do ich wytworzenia potrzebny jest **jod** (sól jodowana, ryby morskie). Przy niedoborze jodu tarczyca nie nadąża, przysadka wydziela coraz więcej TSH, a tarczyca rośnie — powstaje **wole** (powiększenie tarczycy widoczne na szyi).
-- **Niedoczynność tarczycy:** spowolnienie, senność, marznięcie, przyrost masy ciała, sucha skóra, spowolnienie myślenia; u dziecka zahamowanie wzrostu i rozwoju umysłowego. Dlatego noworodkom bada się poziom TSH z kropli krwi z pięty (badanie przesiewowe — orientacyjnie od lat 90.).
+- **Niedoczynność tarczycy:** spowolnienie, senność, marznięcie, przyrost masy ciała, sucha skóra, spowolnienie myślenia; u dziecka zahamowanie wzrostu i rozwoju umysłowego. Dlatego noworodkom bada się poziom TSH z kropli krwi z pięty (program przesiewowy prowadzony w Polsce od kilkudziesięciu lat — orientacyjnie).
 - **Nadczynność tarczycy:** chudnięcie mimo dobrego apetytu, nerwowość, drżenie rąk, kołatanie serca, pocenie się, uczucie gorąca; w chorobie Gravesa-Basedowa (konkurs) także **wytrzeszcz oczu**.
 - **Kalcytonina** (konkurs) — drugi hormon tarczycy, obniża stężenie wapnia we krwi.
+
+::: karta extra | Dlaczego sól w Polsce jest jodowana
+Do lat 90. XX w. niedobór jodu był w Polsce realnym problemem zdrowotnym — wole endemiczne występowało zwłaszcza u mieszkańców południowej części kraju (Karpaty, Sudety), gdzie woda i żywność są ubogie w jod. Rozwiązaniem było **obowiązkowe jodowanie soli kuchennej** — w Polsce wprowadzone w 1997 r. (orientacyjnie) — dzięki któremu częstość wola u dzieci wyraźnie spadła (źródło: komunikaty GIS/MZ). To rzadki przykład, gdy jeden prosty krok profilaktyczny rozwiązał problem całego narządu u milionów ludzi.
+:::
 
 ::: adv | Choroby tarczycy a TSH — jak lekarz „czyta” wynik | poziom ambitny
 W **chorobie Hashimoto** układ odpornościowy niszczy tarczycę — tyroksyny jest mało, więc przez sprzężenie zwrotne przysadka wydziela **dużo TSH** (próbuje „pobudzić” tarczycę). W **chorobie Gravesa-Basedowa** przeciwciała łączą się z receptorami TSH na tarczycy i stale ją pobudzają, jakby były TSH — tyroksyny jest dużo, a przysadka, hamowana przez nadmiar tyroksyny, wydziela **bardzo mało TSH**. Jeden wynik — stężenie TSH — mówi więc lekarzowi, czy tarczyca pracuje za słabo (TSH wysokie), czy za mocno (TSH niskie).
@@ -172,6 +186,7 @@ W trzustce są skupiska komórek dokrewnych — **wyspy trzustkowe** (wysepki La
 Dwa hormony o **przeciwstawnym** działaniu na ten sam parametr to **antagonizm** — jak gaz i hamulec w jednym samochodzie. Dzięki niemu glukoza na czczo utrzymuje się ok. **70–99 mg/dl** (norma orientacyjna). Ma to ogromne znaczenie, bo **mózg** zużywa ok. 120 g glukozy na dobę (orientacyjnie) i nie ma własnych zapasów.
 
 @viz glukoza-wykres | Stężenie glukozy po posiłku: osoba zdrowa i osoba z cukrzycą | kliknij punkt, przełączaj krzywe
+
 @opis Wykres liniowy: oś pozioma — czas po posiłku od 0 do 180 minut, oś pionowa — stężenie glukozy we krwi w mg/dl, z zielonkawym pasem zakresu prawidłowego na czczo (orientacyjnie 70–99). Krzywa osoby zdrowej (zielona) startuje ok. 85, osiąga szczyt ok. 135 po 30 minutach i wraca do ok. 86 po 180 minutach. Krzywa osoby z cukrzycą (czerwona) startuje już ok. 130, rośnie wyżej i później (ok. 240 po 60 minutach) i powoli opada, po 180 minutach wciąż ok. 165. Przyciski włączają i wyłączają każdą krzywą, kliknięcie punktu pokazuje wartość i wyjaśnienie (np. „insulina działa — stężenie spada”). Wniosek: u osoby zdrowej insulina szybko sprowadza glukozę do normy, a przy cukrzycy stężenie jest wysokie już na czczo i długo nie wraca do normy.
 
 | Cecha | Cukrzyca typu 1 | Cukrzyca typu 2 |
@@ -185,11 +200,15 @@ Dwa hormony o **przeciwstawnym** działaniu na ten sam parametr to **antagonizm*
 **Objawy ostrzegawcze wysokiej glukozy:** wzmożone pragnienie, częste oddawanie dużej ilości moczu (glukoza w moczu — U06), chudnięcie mimo apetytu, zmęczenie, słabe gojenie ran — wymagają badania u lekarza. Przewlekle wysoka glukoza uszkadza naczynia krwionośne, nerki, oczy i nerwy.
 
 ::: karta warning | Hipoglikemia — pierwsza pomoc
-Zbyt niska glukoza (np. u chorego na cukrzycę po za dużej dawce insuliny lub opuszczonym posiłku) daje drżenie, pocenie, głód, rozdrażnienie, zawroty głowy, a nawet utratę przytomności. Gdy osoba jest **przytomna i może połykać** — podaj coś słodkiego (sok, cukier, tabletki z glukozą) i wezwij pomoc, jeśli nie mija. Gdy jest **nieprzytomna** — niczego nie wlewaj do ust, ułóż w pozycji bocznej i wezwij **112**.
+Zbyt niska glukoza (np. u chorego na cukrzycę po zbyt dużej dawce insuliny lub opuszczonym posiłku) daje drżenie, pocenie, głód, rozdrażnienie, zawroty głowy, a nawet utratę przytomności. Gdy osoba jest **przytomna i może połykać** — podaj coś słodkiego (sok, cukier, tabletki z glukozą) i wezwij pomoc, jeśli nie mija. Gdy jest **nieprzytomna** — niczego nie wlewaj do ust, ułóż w pozycji bocznej i wezwij **112**.
 :::
 
 ::: karta understand | W skrócie — typ 1 i typ 2 jednym obrazem
 Insulina to **klucz**, receptor na komórce to **zamek**, który wpuszcza glukozę. W cukrzycy **typu 1** kluczy nie ma — trzustka ich nie robi, trzeba je podać w zastrzykach. W cukrzycy **typu 2** klucze są, ale **zamki się zacinają** — komórki słabo reagują na insulinę; ruch i spadek masy ciała „oliwią zamki”, dlatego styl życia tak bardzo pomaga.
+:::
+
+::: karta extra | Historia insuliny — od śmierci do życia w rok
+Jeszcze na początku XX w. cukrzyca typu 1 była wyrokiem — jedyną „terapią” była bardzo restrykcyjna dieta. W 1921 r. Frederick Banting i Charles Best (we współpracy z Johnem Macleodem i Jamesem Collipem) wyizolowali insulinę w Toronto, a w styczniu 1922 r. pierwszy pacjent, 14-letni Leonard Thompson, otrzymał zastrzyk, który obniżył mu poziom glukozy. Za to odkrycie Banting i Macleod otrzymali Nagrodę Nobla w 1923 r. (źródło: nobelprize.org). Od 1982 r. produkuje się **insulinę ludzką z bakterii**, do których wstawiono ludzki gen insuliny (pierwszy lek wytworzony metodami inżynierii genetycznej — orientacyjnie). Jeszcze wcześniej diagnozowano chorobę „po smaku”: starożytni lekarze wyczuwali słodki mocz chorych, a nazwę **diabetes** („przepływający”) nadał Areteusz z Kapadocji w II w. n.e.; później dodano **mellitus** — „słodki jak miód” (orientacyjnie).
 :::
 
 ## 7 | Przytarczyce i wapń [[exam:KONKURS]] {#wapn}
@@ -200,6 +219,10 @@ Wapń jest potrzebny do skurczu mięśni, krzepnięcia krwi, przewodzenia impuls
 - **kalcytonina** (tarczyca) — przy **wysokim** wapniu: hamuje uwalnianie wapnia z kości → wapń **spada**.
 
 Niedobór parathormonu (np. po przypadkowym usunięciu przytarczyc podczas operacji tarczycy) → **tężyczka**: bolesne skurcze mięśni, mrowienie wokół ust.
+
+::: karta understand | W skrócie — co łączy cukrzycę, tężyczkę i wole
+Trzy różne choroby, jedna przyczyna: **awaria homeostazy**. W cukrzycy organizm traci kontrolę nad glukozą — brakuje klucza (insuliny) albo zacinają się zamki (receptory). W tężyczce zawodzi regulacja wapnia — zwykle przez brak parathormonu. W wolu tarczyca rośnie, bo nie ma jodu do produkcji tyroksyny, a przysadka nie ustaje w jej pobudzaniu. W każdym przypadku lekarz bada nie tylko hormon, ale i jego „szefa” (np. TSH) — to wskazuje, które piętro układu sterowania się zepsuło.
+:::
 
 ::: wskazowki
 - **„Kalcytonina — K jak do Kości”** (wapń idzie do kości, we krwi spada). **„Parathormon — P jak Podnosi”** (wapń we krwi rośnie).
@@ -218,6 +241,10 @@ $$ stres → mózg i podwzgórze → układ współczulny → rdzeń nadnerczy �
 **Stres ostry** (sprawdzian, ucieczka przed psem) to adrenalina: sekundy, pełna mobilizacja, szybki powrót do normy — bywa pomocny, bo wyostrza uwagę. **Stres przewlekły** (tygodnie napięcia, za mało snu) to stale podwyższony kortyzol: wyższa glukoza i ciśnienie, słabsza **odporność** (częstsze infekcje), gorszy sen, problemy z koncentracją, pamięcią i trawieniem. Dlatego sen, ruch, odpoczynek i rozmowa o tym, co nas martwi, to nie luksus, tylko profilaktyka.
 :::
 
+::: karta extra | Dlaczego ze strachu „stają ci włosy na głowie”
+Adrenalina (razem z nerwami współczulnymi) kurczy drobne mięśnie przywłosowe przy każdym włosku. U psów lub kotów efekt jest praktyczny: jeżące się futro lepiej izoluje ciepło i sprawia, że zwierzę wygląda na większe — to pomaga w starciu z przeciwnikiem. Człowiek zachował ten odruch mimo niewielkiego owłosienia ciała — to ślad ewolucyjny, dziś już prawie bezużyteczny, ale bardzo wyraźny (gęsia skórka). Ten sam hormon odpowiada więc za twoją gęsią skórkę i nastroszone sierści przestraszonego kota.
+:::
+
 ## 9 | Hormony płciowe [[basic:E8]] {#plciowe}
 
 - **Estrogeny** (jajniki) — rozwój **żeńskich cech płciowych** w okresie dojrzewania (rozwój piersi, rozbudowa miednicy, rozmieszczenie tkanki tłuszczowej), regulacja **cyklu miesiączkowego**, udział w budowie kości.
@@ -225,9 +252,14 @@ $$ stres → mózg i podwzgórze → układ współczulny → rdzeń nadnerczy �
 - **Testosteron** (jądra) — rozwój **męskich cech płciowych** (obniżenie głosu, zarost, owłosienie, wzrost masy mięśni i kości), dojrzewanie plemników. W niewielkich ilościach wytwarzają go też nadnercza i jajniki u kobiet.
 - Pracą jajników i jąder sterują **FSH i LH** z przysadki, a tymi — podwzgórze; początek wydzielania tych hormonów uruchamia **dojrzewanie płciowe**. Szczegóły cyklu i ciąży — lekcja o rozmnażaniu (B2f).
 
+::: karta understand | W skrócie — dlaczego hormony płciowe zmieniają cały organizm
+Hormony płciowe należą do hormonów **sterydowych** — są jak tłuszcz, więc łatwo przenikają przez błonę komórkową i docierają aż do jądra komórki, gdzie włączają lub wyłączają geny. Dlatego testosteron nie tylko buduje mięśnie (geny w komórkach mięśniowych), ale też pogłębia głos (geny w chrząstkach krtani), daje zarost (geny w mieszkach włosowych) i wpływa na nastrój (geny w mózgu). Jeden hormon — wiele narządów, bo wiele komórek ma jego receptory. To tłumaczy też, dlaczego sztuczne sterydy, działające na te same receptory, obejmują ciało od skóry po psychikę (patrz [§12](#leki-stres)).
+:::
+
 ## 10 | Sprzężenie zwrotne ujemne [[understand:ROZUMIENIE]] {#sprzezenie}
 
 @viz sprzezenie-zwrotne {start="ty"} | Pętla regulacji hormonalnej | wybierz sytuację: oś tarczycy, wapń, glukoza; przejdź pętlę przyciskiem „krok”
+
 @opis Pętla z pięciu pól połączonych strzałkami w koło: bodziec → receptor → ośrodek → efektor → odpowiedź, z przyciskami sytuacji u góry (m.in. „tyroksyna ↓ (oś tarczycy)”, „wapń ↓”, „glukoza ↑”, „glukoza ↓”, temperatura i woda) i wskaźnikiem pokazującym, czy regulowany parametr jest poniżej, w normie czy powyżej. W scenariuszu osi tarczycy: mało tyroksyny we krwi → wyczuwają to podwzgórze i przysadka → podwzgórze pobudza przysadkę → przysadka wydziela TSH do tarczycy → tarczyca wydziela więcej tyroksyny, a gdy jej stężenie wróci do normy, sama hamuje podwzgórze i przysadkę. W scenariuszu wapnia: mało wapnia → przytarczyce → parathormon działa na kości i nerki → wapń wraca do normy. Przycisk „krok” podświetla kolejne pola i dopisuje opis; po pełnym obiegu wskaźnik wraca do normy, a opis podkreśla, że odpowiedź zmniejsza odchylenie. Wniosek: w sprzężeniu zwrotnym ujemnym skutek działania hormonu wyłącza jego dalsze wydzielanie — dlatego stężenia wahają się wokół normy zamiast rosnąć bez końca.
 
 **Jak to działa na przykładzie tarczycy:** mało tyroksyny → podwzgórze i przysadka „zauważają” → przysadka wydziela więcej **TSH** → tarczyca wydziela więcej tyroksyny → gdy tyroksyny jest dość, **hamuje** ona podwzgórze i przysadkę → mniej TSH → tarczyca zwalnia. **Ujemne**, bo produkt końcowy hamuje własne powstawanie. Tak samo działa para insulina–glukagon (wysoka glukoza wyłącza się sama przez wydzielenie insuliny) i para parathormon–kalcytonina.
@@ -259,6 +291,17 @@ Hormony działają już w śladowych ilościach i przez sprzężenie zwrotne wp�
 
 **Profilaktyka zaburzeń hormonalnych:** sól jodowana, zróżnicowana dieta z ograniczeniem cukrów prostych, aktywność fizyczna i prawidłowa masa ciała (cukrzyca typu 2), sen o stałych porach i mniej ekranu wieczorem (melatonina), radzenie sobie ze stresem, badania kontrolne zlecane przez lekarza (glukoza, TSH).
 
+::: karta extra | Ekran wieczorem a melatonina
+Melatonina — hormon szyszynki — zaczyna być wydzielana po zmroku i przygotowuje ciało do snu. Badania wykazały, że jasne światło z ekranów (tablety, telefony) wieczorem **wyraźnie hamuje wydzielanie melatoniny i opóźnia zegar biologiczny o ponad godzinę** (orientacyjnie; źródło: Chang i wsp., PNAS 2014 / Harvard Health). Dlatego rada „nie siedź przed telefonem przed snem” ma solidne podstawy hormonalne: ekran mówi szyszynce, że jest jeszcze południe.
+:::
+
+::: mity
+- „Cukrzyca dotyczy tylko starszych i bierze się tylko ze słodyczy.” || Typ 1 często zaczyna się w dzieciństwie i nie wynika ze stylu życia; typ 2 ma wiele przyczyn, a duża ilość cukrów prostych to tylko jeden z czynników ryzyka.
+- „Hormony płciowe to sprawa kobiet.” || Hormony wytwarza każdy człowiek — u mężczyzn estrogeny też działają (m.in. kości, przemiana materii), a u kobiet testosteron (m.in. mięśnie, kości, nastrój).
+- „Insulina to lek na poprawę formy, każdy może jej użyć.” || U osoby zdrowej zastrzyk insuliny obniża glukozę do hipoglikemii — od drżenia i pocenia po utratę przytomności; insulina wyłącznie na receptę.
+- „Serotonina, dopamina i endorfiny to hormony szczęścia.” || To głównie **neuroprzekaźniki** mózgu — substancje chemiczne synaps (U08); potoczna nazwa „hormony szczęścia” myli dwa układy sygnałowe.
+:::
+
 ## 13 | Doświadczenia i analiza danych [[exam:KONKURS]] {#doswiadczenia}
 
 ::: dosw | Doświadczenie — tętno a sytuacja stresowa
@@ -274,7 +317,6 @@ BHP: bez wysiłku fizycznego i bez straszenia; przerwać przy złym samopoczuciu
 ::: karta exam | Analiza doświadczenia historycznego — kijanki i tarczyca
 W 1912 r. badacz J. F. Gudernatsch karmił kijanki żab pokarmem z dodatkiem tkanki tarczycy (zestaw A), a drugą grupę — takim samym pokarmem bez tego dodatku (zestaw B); pozostałe warunki były jednakowe. Kijanki z zestawu A przeobraziły się w małe żabki znacznie szybciej niż z zestawu B, choć były mniejsze.
 a) Który zestaw był próbą kontrolną? b) Sformułuj wniosek. c) Dlaczego warunki (temperatura, ilość pokarmu, liczba kijanek) musiały być jednakowe?
-
 ::: odp | Pokaż klucz
 a) Zestaw B (bez tkanki tarczycy). b) Hormony tarczycy (tyroksyna) przyspieszają przeobrażenie (metamorfozę) kijanek. c) Żeby różnica w tempie przeobrażenia wynikała tylko z dodatku tkanki tarczycy, a nie z innych czynników. (Takie doświadczenia na zwierzętach prowadzą wyłącznie naukowcy według przepisów; w szkole analizujemy ich wyniki.)
 :::
@@ -290,7 +332,6 @@ a) Zestaw B (bez tkanki tarczycy). b) Hormony tarczycy (tyroksyna) przyspieszaj�
 
 ::: karta exam | Zadanie 1 (4 pkt) — gruczoł, hormon, działanie
 Uzupełnij: 1. przysadka — … — wzrost organizmu; 2. tarczyca — … — tempo przemiany materii; 3. trzustka (komórki β) — … — obniża glukozę; 4. rdzeń nadnerczy — … — mobilizacja w stresie.
-
 ::: odp | Pokaż klucz
 1. hormon wzrostu; 2. tyroksyna; 3. insulina; 4. adrenalina. Po 1 pkt.
 :::
@@ -298,7 +339,6 @@ Uzupełnij: 1. przysadka — … — wzrost organizmu; 2. tarczyca — … — t
 
 ::: karta exam | Zadanie 2 (2 pkt) — dokrewny czy nie?
 Zaklasyfikuj: tarczyca, ślinianka, nadnercze, gruczoł potowy, przysadka, trzustka. Wskaż gruczoł mieszany.
-
 ::: odp | Pokaż klucz
 Dokrewne: tarczyca, nadnercze, przysadka; zewnątrzwydzielnicze: ślinianka, gruczoł potowy; mieszany: trzustka (1 pkt za podział, 1 pkt za trzustkę z uzasadnieniem: sok trzustkowy przewodem + insulina i glukagon do krwi).
 :::
@@ -306,7 +346,6 @@ Dokrewne: tarczyca, nadnercze, przysadka; zewnątrzwydzielnicze: ślinianka, gru
 
 ::: karta exam | Zadanie 3 (3 pkt) — antagonizm
 a) Wyjaśnij, na czym polega antagonizm insuliny i glukagonu. b) Podaj sytuację, w której wydzielany jest głównie glukagon. c) Jaką rolę pełni przy tym wątroba?
-
 ::: odp | Pokaż klucz
 a) Działają przeciwnie na ten sam parametr — insulina obniża, glukagon podwyższa stężenie glukozy, co utrzymuje je w normie (1 pkt). b) Np. na czczo, w nocy, podczas długiego wysiłku (1 pkt). c) Magazynuje glukozę jako glikogen pod wpływem insuliny i rozkłada glikogen, uwalniając glukozę, pod wpływem glukagonu (1 pkt).
 :::
@@ -314,7 +353,6 @@ a) Działają przeciwnie na ten sam parametr — insulina obniża, glukagon podw
 
 ::: karta exam | Zadanie 4 (3 pkt) — wykres glukozy
 Na podstawie wykresu w [§6](#trzustka): a) odczytaj szczyt glukozy u osoby zdrowej i podaj, kiedy wystąpił; b) wskaż hormon odpowiedzialny za spadek glukozy po szczycie; c) podaj dwie różnice między krzywymi osoby zdrowej i z cukrzycą.
-
 ::: odp | Pokaż klucz
 a) Ok. 135 mg/dl po ok. 30 min (1 pkt). b) Insulina (1 pkt). c) Np. u osoby z cukrzycą stężenie jest wyższe już na czczo, szczyt jest wyższy i późniejszy, powrót do normy dużo wolniejszy (1 pkt za dwie różnice).
 :::
@@ -322,7 +360,6 @@ a) Ok. 135 mg/dl po ok. 30 min (1 pkt). b) Insulina (1 pkt). c) Np. u osoby z cu
 
 ::: karta exam | Zadanie 5 (3 pkt) — sprzężenie zwrotne
 Ułóż w kolejności i nazwij mechanizm: A. tarczyca wydziela więcej tyroksyny; B. spadek stężenia tyroksyny we krwi; C. przysadka wydziela więcej TSH; D. wysoka tyroksyna hamuje podwzgórze i przysadkę.
-
 ::: odp | Pokaż klucz
 B → C → A → D (2 pkt; 1 pkt za jeden błąd). Sprzężenie zwrotne ujemne — produkt końcowy hamuje własne wydzielanie (1 pkt).
 :::
@@ -330,7 +367,6 @@ B → C → A → D (2 pkt; 1 pkt za jeden błąd). Sprzężenie zwrotne ujemne 
 
 ::: karta exam | Zadanie 6 (3 pkt) — przewidź skutek: niedobór jodu
 W okolicy z bardzo małą ilością jodu w wodzie i żywności, a bez soli jodowanej, u wielu osób powiększa się tarczyca. a) Jak zmienia się u nich stężenie tyroksyny? b) Jak zmienia się wydzielanie TSH i dlaczego? c) Wyjaśnij, dlaczego tarczyca się powiększa.
-
 ::: odp | Pokaż klucz
 a) Spada (brak składnika do jej wytwarzania) (1 pkt). b) Rośnie — mało tyroksyny nie hamuje przysadki (sprzężenie zwrotne ujemne) (1 pkt). c) Duża ilość TSH stale pobudza tarczycę do wzrostu — powstaje wole (1 pkt).
 :::
@@ -338,7 +374,6 @@ a) Spada (brak składnika do jej wytwarzania) (1 pkt). b) Rośnie — mało tyro
 
 ::: karta exam | Zadanie 7 (3 pkt) — choroba Gravesa-Basedowa (konkurs)
 U chorych przeciwciała łączą się z receptorami TSH na komórkach tarczycy i pobudzają je tak jak TSH. a) Jak zmieni się stężenie tyroksyny? b) Jak zmieni się wydzielanie TSH przez przysadkę? Uzasadnij. c) Podaj dwa objawy, których można się spodziewać.
-
 ::: odp | Pokaż klucz
 a) Wzrośnie (1 pkt). b) Spadnie — nadmiar tyroksyny hamuje przysadkę przez sprzężenie zwrotne ujemne (1 pkt). c) Np. chudnięcie, nerwowość, kołatanie serca, pocenie, uczucie gorąca, wytrzeszcz oczu (1 pkt za dwa).
 :::
@@ -416,6 +451,34 @@ Np.: nadmiar hormonu przez sprzężenie zwrotne hamuje pracę własnych jąder (
 :::
 :::
 
+::: karta exam | Zadanie 17 (3 pkt) — ADH i moczówka prosta (konkurs)
+Chory na moczówkę prostą wydala do ok. 8 l rozcieńczonego moczu na dobę (orientacyjnie) i odczuwa stałe silne pragnienie. a) Podaj hormon, którego brakuje, i miejsce jego wytwarzania. b) Wyjaśnij, dlaczego mocz jest bardzo rozcieńczony i bardzo obfity. c) Wyjaśnij, dlaczego chory odczuwa stałe pragnienie.
+::: odp | Pokaż klucz
+a) ADH (hormon antydiuretyczny, wazopresyna); wytwarza go podwzgórze, a uwalnia tylny płat przysadki — wystarczy wskazanie podwzgórza (1 pkt). b) Bez ADH nerki (kanaliki i przewody zbiorcze — U06) odzyskują niewiele wody, więc mocz pozostaje rozcieńczony i liczny (1 pkt). c) Duża utrata wody z moczem odwadnia organizm; pragnienie to sygnał uzupełnienia zapasu wody (1 pkt).
+:::
+:::
+
+::: karta exam | Zadanie 18 (3 pkt) — adrenalina: przewidź i wyjaśnij
+Przed występem na scenie uczniowi bije szybciej serce, oddycha szybciej i głębiej, ma sucho w ustach i blednie. a) Który hormon odpowiada za te zmiany i gdzie jest wytwarzany? b) Wyjaśnij, dlaczego szybsza praca serca i głębszy oddech pomagają w sytuacji zagrożenia. c) Wyjaśnij, dlaczego usta są suche.
+::: odp | Pokaż klucz
+a) Adrenalina; wytwarzana w rdzeniu nadnerczy (1 pkt). b) Serce pompuje więcej krwi, a szybszy i głębszy oddech dostarcza więcej tlenu — mięśnie otrzymują więcej tlenu i glukozy, organizm jest gotowy do walki lub ucieczki (1 pkt). c) Krew odpływa z jelit i ślinianek do mięśni, trawienie zwalnia, więc powstaje mniej śliny (1 pkt).
+:::
+:::
+
+::: karta exam | Zadanie 19 (4 pkt) — analiza wyników: gdzie jest awaria? (konkurs)
+U trzech pacjentów oznaczono stężenie tyroksyny i TSH (tyreotropiny) we krwi: pacjent A — tyroksyna niska, TSH bardzo wysokie; pacjent B — tyroksyna wysoka, TSH bardzo niskie; pacjent C — tyroksyna niska, TSH niskie. a) U którego pacjenta przyczyna leży najprawdopodobniej w samej tarczycy? Uzasadnij sprzężeniem zwrotnym. b) U którego przyczyna leży przed tarczycą (w przysadce lub podwzgórzu)? Uzasadnij. c) Wyjaśnij wynik pacjenta B. d) U którego pacjenta można podejrzewać chorobę Gravesa-Basedowa?
+::: odp | Pokaż klucz
+a) Pacjent A — tarczyca nie pracuje mimo silnej stymulacji; mało tyroksyny nie hamuje przysadki, więc TSH rośnie (1 pkt). b) Pacjent C — mimo niskiej tyroksyny przysadka nie zwiększa TSH, czyli nie dostaje pobudzenia albo sama jest uszkodzona; tarczyca bez TSH nie wytwarza hormonu (1 pkt). c) Nadczynność tarczycy — nadmiar tyroksyny hamuje przysadkę przez sprzężenie zwrotne ujemne, więc TSH jest niskie (1 pkt). d) Pacjent B — przeciwciała pobudzają tarczycę jak TSH, więc tyroksyna rośnie, a przysadka jest hamowana (1 pkt).
+:::
+:::
+
+::: karta exam | Zadanie 20 (4 pkt) — analiza danych: insulina i glukagon po posiłku
+Zdrowej osobie podano do wypicia roztwór glukozy, a przez 120 minut mierzono stężenia glukozy, insuliny i glukagonu (dane poglądowe): glukoza — 85 mg/dl na czczo, szczyt ok. 135 po 30 minutach, ok. 90 po 120 minutach; insulina — niska na czczo, szczyt między 30. a 60. minutą, potem opada; glukagon — wyższy na czczo, maleje po posiłku, od ok. 90. minuty rośnie. a) Wyjaśnij, dlaczego stężenie insuliny rośnie po wypiciu glukozy. b) Wyjaśnij, dlaczego glukagon maleje, gdy glukoza jest wysoka. c) Przewidź, jak wyglądałaby krzywa glukozy, gdyby wydzielanie insuliny zostało zahamowane. d) Wskaż zmienną niezależną i zależną w tym badaniu.
+::: odp | Pokaż klucz
+a) Wysoka glukoza pobudza komórki β wysp trzustkowych do wydzielania insuliny (1 pkt). b) Glukagon podnosi glukozę — przy jej nadmiarze nie jest potrzebny; to antagonizm, organizm wyłącza „pedał gazu”, gdy wystarcza „hamulec” (1 pkt). c) Szczyt wyższy i późniejszy, powrót do normy znacznie wolniejszy — przebieg podobny do krzywej przy cukrzycy (1 pkt). d) Zmienna niezależna — czas od podania glukozy (samo podanie glukozy); zależne — stężenia glukozy, insuliny i glukagonu (1 pkt).
+:::
+:::
+
 ## 15 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
@@ -437,6 +500,8 @@ Np.: nadmiar hormonu przez sprzężenie zwrotne hamuje pracę własnych jąder (
 | „Przy niedoczynności tarczycy TSH jest niskie.” | Zwykle jest wysokie. | Przysadka próbuje pobudzić tarczycę (sprzężenie zwrotne). |
 | „Adrenalina zwalnia serce, żeby uspokoić.” | Adrenalina przyspiesza serce. | Przygotowuje do walki lub ucieczki. |
 | „Hormony to toksyny, które organizm wydala.” | Hormony to sygnały; po działaniu są rozkładane i usuwane. | To regulatory, nie odpady. |
+| „Wole to nowotwór.” | Wole to powiększenie tarczycy, najczęściej z niedoboru jodu. | Rozrost wywołuje nadmierne pobudzanie przez TSH, a nie zmiana nowotworowa. |
+| „Tężyczka to tężec.” | Tężyczka — skurcze mięśni przy niskim wapniu we krwi; tężec — choroba zakaźna. | Podobnie brzmiące, zupełnie różne pojęcia. |
 :::
 
 ## 16 | Ćwiczenia {#cwiczenia}
@@ -598,6 +663,36 @@ Doświadczenie Gudernatscha z 1912 r. (kijanki karmione tkanką tarczycy szybcie
 - insulina
 - melatonina
 ! Wydzielają go przytarczyce.
+? Który gruczoł jest gruczołem mieszanym?
++ trzustka
+- tarczyca
+- przysadka
+- szyszynka
+! Trzustka wydziela sok trzustkowy przewodem do dwunastnicy i jednocześnie insulinę z glukagonem do krwi; pozostałe są gruczołami czysto dokrewnymi.
+? Nadmiar hormonu wzrostu u dorosłego powoduje:
++ akromegalię
+- gigantyzm
+- karłowatość przysadkową
+- wole
+! U dorosłego chrząstki wzrostowe są już zrośnięte, więc kości nie wydłużają się, tylko pogrubiają (dłonie, stopy, żuchwa). Gigantyzm dotyczy dzieciństwa.
+? Gdzie znajdują się receptory dla adrenaliny?
++ na powierzchni komórek docelowych
+- w jądrze komórkowym
+- tylko w komórkach tarczycy
+- wyłącznie w mózgu
+! Adrenalina nie przenika przez błonę komórkową — jej receptory są na powierzchni, a sygnał przekazywany jest do wnętrza łańcuchem reakcji.
+? Co bezpośrednio wywołuje wole przy niedoborze jodu?
++ nadmierne wydzielanie TSH przez przysadkę
+- nadmiar tyroksyny we krwi
+- wzrost wydzielania kalcytoniny
+- niedobór parathormonu
+! Mało tyroksyny nie hamuje przysadki (sprzężenie zwrotne ujemne), więc TSH jest dużo i stale pobudza tarczycę do rozrostu.
+? Które stwierdzenie o tylnym płacie przysadki jest prawdziwe?
++ Uwalnia hormony wytworzone w podwzgórzu.
+- Wytwarza hormon wzrostu.
+- Wytwarza TSH.
+- Wytwarza insulinę.
+! Tylny płat magazynuje i uwalnia ADH oraz oksytocynę wyprodukowane w podwzgórzu — niczego sam nie wytwarza.
 :::
 
 ## 19 | Fiszki {#fiszki}
@@ -625,6 +720,17 @@ Estrogeny, progesteron | jajniki; cechy żeńskie, cykl, ciąża | basic:plciowe
 Testosteron | jądra; cechy męskie, plemniki | basic:plciowe
 Sprzężenie zwrotne ujemne | produkt hamuje własne wydzielanie (termostat) | understand:regulacja
 Nerwowy a hormonalny | szybki, krótki, precyzyjny / wolniejszy, długi, szeroki | basic:regulacja
+Trójjodotyronina (T3) | drugi hormon tarczycy — przyspiesza przemianę materii | contest:tarczyca
+Tyreotropina (TSH) | hormon tropowy przysadki pobudzający tarczycę | contest:przysadka
+ADH (wazopresyna) | hormon podwzgórza zatrzymujący wodę w nerkach | contest:podwzgorze
+Moczówka prosta | niedobór ADH — bardzo dużo rozcieńczonego moczu i pragnienie | contest:podwzgorze
+Insulinooporność | komórki słabo reagują na insulinę — podstawa cukrzycy typu 2 | basic:trzustka
+Tężyczka | bolesne skurcze mięśni przy zbyt niskim wapniu we krwi | contest:wapien
+Komórki β i α | β — insulina, α — glukagon | basic:trzustka
+Sprzężenie dodatnie | odchylenie wzmacnia się aż do końca procesu (oksytocyna przy porodzie) | understand:sprzezenie
+Akromegalia | nadmiar hormonu wzrostu u dorosłego — pogrubienie dłoni, stóp, żuchwy | basic:przysadka
+Gigantyzm | nadmiar hormonu wzrostu u dziecka — bardzo wysoki wzrost, prawidłowe proporcje | basic:przysadka
+Oś podwzgórze–przysadka–gruczoł | hierarchia sterowania hormonalnego z hormonami tropowymi | contest:przysadka
 :::
 
 ## 20 | Słownik {#slownik}
@@ -657,6 +763,11 @@ Antagonizm hormonów :: przeciwstawne działanie dwóch hormonów na ten sam par
 Sprzężenie zwrotne ujemne :: mechanizm, w którym skutek działania hormonu hamuje jego dalsze wydzielanie
 Akromegalia :: rozrost kości dłoni, stóp i twarzy przy nadmiarze hormonu wzrostu u dorosłych
 Tężyczka :: bolesne skurcze mięśni przy zbyt niskim stężeniu wapnia we krwi
+Tyreotropina (TSH) :: hormon tropowy przysadki pobudzający tarczycę do wydzielania tyroksyny
+Hormon tropowy :: hormon sterujący pracą innego gruczołu dokrewnego (TSH, ACTH, FSH, LH)
+Moczówka prosta :: choroba z niedoboru ADH — bardzo duże ilości rozcieńczonego moczu i silne pragnienie
+Gigantyzm :: nadmiar hormonu wzrostu u dziecka — bardzo wysoki wzrost przy prawidłowych proporcjach
+Antagonizm hormonalny :: przeciwstawne działanie dwóch hormonów na ten sam parametr (insulina–glukagon, parathormon–kalcytonina)
 :::
 
 ## 21 | Mapa pojęć {#mapa-pojec}
@@ -742,3 +853,13 @@ Układ dokrewny
 **Dodane:** wykład „od zera” scalony z czterech wersji, karta „trzy rzeczy, których nie wolno mylić”, hipoglikemia z pierwszą pomocą, sterydy anaboliczne jako uzasadnienie „hormony tylko z lekarzem” (wymaganie podstawy), badanie przesiewowe noworodków (TSH), grafika `gruczoly-mapa` (nowa), scenariusze „tyroksyna ↓” i „wapń ↓” w grafice `sprzezenie-zwrotne`, wykorzystanie `glukoza-wykres`, zadania B1–B4 (insulina w tabletkach, TSH a temperatura, melatonina i ekran, różnicowanie niedoczynności).
 
 **Nieprzyjęte:** harmonogramy powtórek z dniami i minutami (model A, Gemini) — sprzeczne z charakterem kursu; wymyślone kody grafik (`@model os_hormonalna`, `@zlewka B2e-V2…`) i rysunki ASCII — zastąpione istniejącymi grafikami; niszowe hormony (adropina, stanniokalcytyna — model A) — poza zakresem; znaczniki cytowań z odpowiedzi — pominięte; kod „B2e” — lekcja dostała kod U10 w grupie BIO.07 (pkt III.10).
+
+### AUDYT W1 — GLM-5.3-Flash (Z.ai), 2026-10-11 {#audyt-w1}
+
+Zapis surowy: `biologia/plany/audyty/ULEPSZ_GLM_U10_2026-10-11.md` (tura 1: frontmatter–§14 Zad. 7; tura 2: pakiet B). **Ocena częściowa** — model widział lekcję tylko do §14, Zadania 7; od Zadania 8 do końca bez oceny, do ponownego W1.
+
+**Przyjęte (po sprawdzeniu):** P1 tyroksyna (T4) i trójjodotyronina (T3) jako dwa hormony, P2 „po zbyt dużej dawce”, P3 polskie nazwy skrótów (tyreotropina, kortykotropina, wazopresyna), P4 ogólny opis programu przesiewowego; nie-myl w §2, mini-wykłady „co łączy cukrzycę, tężyczkę i wole” i „hormony płciowe zmieniają cały organizm”, ciekawostki (jodowanie soli od 1997 r., historia insuliny 1921–1923, Robert Wadlow, gęsia skórka, ekran a melatonina), mity w §12; zadania 17–20 (moczówka prosta, adrenalina przed występem, „gdzie jest awaria” — tyroksyna i TSH, insulina i glukagon po posiłku), +5 pytań testu, +11 fiszek, +5 haseł słownika, +2 wiersze kliniki (wole a nowotwór, tężyczka a tężec).
+
+**Poprawione względem propozycji:** zadania z pakietu B przenumerowane na 17–20 (w lekcji było 16 numerowanych zadań; model proponował 19–22); Wadlow — „protezy” → aparaty ortopedyczne na nogach; gęsia skórka — adrenalina razem z nerwami współczulnymi; znak cyrylicy w słowie „chrząstkom” i cudzysłowy „…" → „…”; usunięta instrukcja modelu o numeracji, która trafiła do treści.
+
+**Nieprzyjęte:** fiszka „gruczoł mieszany” i hasła słownika „insulinooporność”, „wole”, „akromegalia” — już są w lekcji; wiersze kliniki „insulina podnosi glukozę”, „tylny płat wytwarza ADH”, „hormon działa na wszystkie komórki”, „cukrzyca typu 1 ze słodyczy” — już są; nowa sekcja „Mapa pojęć” (B6) — lekcja ma mapę pojęć w §21; 3 propozycje grafik — zapisane jako pomysły, bez kodów w lekcji.

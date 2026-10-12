@@ -8,8 +8,8 @@ lead: W ułamku sekundy cofasz rękę od gorącego garnka, zanim w ogóle poczuj
 lead: Najważniejsze umiejętności działu: opisać budowę neuronu i drogę impulsu przez synapsę, rozpisać łuk odruchowy, przypisać funkcje częściom mózgowia, wyjaśnić działanie oka (akomodacja, wady wzroku) i ucha (słuch, równowaga).
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.8 układ nerwowy, III.9 narządy zmysłów. Współpraca z układem hormonalnym — lekcja o układzie dokrewnym (B2e); sprzężenie zwrotne — H01 Homeostaza. Liczby (liczba neuronów, prędkość impulsu, liczba fotoreceptorów, zakres słyszalności, progi hałasu) są orientacyjne — do weryfikacji w W1.
-stopka: **BIOLOGIA U08 v1.0** · Układ nerwowy i narządy zmysłów · 2026
-stan: WYPEŁNIONY — Perplexity + GPT-6 (szkielet OLI) + Claude, 2026-10-11; do W1
+stopka: **BIOLOGIA U08 v1.1** · Układ nerwowy i narządy zmysłów · 2026
+stan: W1 częściowo — AI z poczty (tryb ULEPSZ, część 1: §0–13), 2026-10-11; §14 do końca do ponownego W1 (część 2)
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Schemat działania:** bodziec → **receptor** → impuls nerwowy → **ośrodek** (OUN) → impuls → **efektor** (mięsień lub gruczoł) → reakcja.
@@ -19,7 +19,7 @@ stan: WYPEŁNIONY — Perplexity + GPT-6 (szkielet OLI) + Claude, 2026-10-11; do
 5. **Neuron ≠ nerw:** nerw to pęczek wielu włókien nerwowych (aksonów). Nerwy **czuciowe**, **ruchowe**, **mieszane**.
 6. **Łuk odruchowy:** receptor → neuron czuciowy → ośrodek (np. rdzeń kręgowy) → neuron ruchowy → efektor. Odruchy **wrodzone (bezwarunkowe)** i **nabyte (warunkowe)**.
 7. **Mózgowie:** **mózg** (kora: myślenie, pamięć, mowa, ruchy dowolne, ośrodki zmysłów), **móżdżek** (koordynacja ruchów, równowaga), **pień mózgu** (oddychanie, praca serca, odruchy kaszlu i połykania), **międzymózgowie** (podwzgórze — temperatura, głód, pragnienie, łączność z przysadką). **Rdzeń kręgowy:** przewodzenie i ośrodki odruchów.
-8. **Oko:** rogówka → źrenica (w tęczówce) → soczewka → ciało szkliste → **siatkówka** (pręciki — słabe światło, czopki — barwy i ostrość; plamka żółta i ślepa) → nerw wzrokowy → kora mózgu. Obraz na siatkówce: **rzeczywisty, pomniejszony, odwrócony**.
+8. **Oko:** rogówka → ciecz wodnista → źrenica (w tęczówce) → soczewka → ciało szkliste → **siatkówka** (pręciki — słabe światło, czopki — barwy i ostrość; plamka żółta i ślepa) → nerw wzrokowy → kora mózgu. Obraz na siatkówce: **rzeczywisty, pomniejszony, odwrócony**.
 9. **Akomodacja i wady:** blisko — mięsień rzęskowy kurczy się, soczewka bardziej wypukła; **krótkowzroczność** — obraz przed siatkówką, soczewki **rozpraszające (wklęsłe)**; **dalekowzroczność** — za siatkówką, soczewki **skupiające (wypukłe)**.
 10. **Ucho:** zewnętrzne (małżowina, przewód) → środkowe (błona bębenkowa, **młoteczek, kowadełko, strzemiączko**, trąbka słuchowa) → wewnętrzne (**ślimak** — słuch; **kanały półkoliste, przedsionek** — równowaga). Higiena: sen, ruch, bez używek, kask; przerwy od ekranu, ochrona przed hałasem.
 :::
@@ -44,6 +44,7 @@ stan: WYPEŁNIONY — Perplexity + GPT-6 (szkielet OLI) + Claude, 2026-10-11; do
 - **Zawsze myśl łańcuchem:** bodziec → receptor → droga dośrodkowa → ośrodek → droga odśrodkowa → efektor. Prawie każde zadanie z tego działu (odruch, uraz nerwu, wzrok, słuch) da się rozpisać tym łańcuchem.
 - **Pilnuj par pojęć:** neuron ↔ nerw, dendryt ↔ akson, czuciowy ↔ ruchowy, współczulny ↔ przywspółczulny, pręciki ↔ czopki, ślimak ↔ kanały półkoliste, krótkowzroczność ↔ dalekowzroczność.
 - **Sprawdzaj na sobie:** zasłoń oczy dłońmi i odsłoń je przed lustrem (źrenice), znajdź swoją plamkę ślepą, zmierz czas reakcji linijką, posmakuj jabłko z zatkanym nosem.
+- **Przypomnij sobie przed startem:** budowę skóry i jej receptory (U01), homeostazę i sprzężenie zwrotne (H01) oraz przysadkę i podwzgórze (układ dokrewny) — ta lekcja na tym buduje.
 :::
 
 ## 0.2 | Diagnoza {#diagnoza}
@@ -55,10 +56,8 @@ stan: WYPEŁNIONY — Perplexity + GPT-6 (szkielet OLI) + Claude, 2026-10-11; do
 4. Za co odpowiada móżdżek?
 5. W której części oka znajdują się fotoreceptory?
 6. Która część ucha odpowiada za równowagę?
-
 ::: odp | Pokaż klucz
 1. Mózgowie i rdzeń kręgowy. · 2. Od dendrytów przez ciało komórki do aksonu i jego zakończeń. · 3. Receptor, neuron czuciowy, ośrodek nerwowy, neuron ruchowy, efektor. · 4. Koordynację ruchów i równowagę. · 5. W siatkówce. · 6. Ucho wewnętrzne — kanały półkoliste i przedsionek (aparat przedsionkowy).
-
 **Interpretacja:** 0–2 — zacznij od [§1](#wyklad); 3–4 — przejdź rdzeń, uważaj na neuron/nerw i części mózgowia; 5–6 — przejdź do [§16](#doswiadczenia) i [§17](#zadania).
 :::
 :::
@@ -69,7 +68,7 @@ stan: WYPEŁNIONY — Perplexity + GPT-6 (szkielet OLI) + Claude, 2026-10-11; do
 
 Organizm składa się z bilionów komórek, które muszą działać razem: serce ma przyspieszyć, gdy biegniesz, źrenice zwęzić się, gdy wychodzisz na słońce, ręka cofnąć się od gorącego garnka. Potrzebny jest **system łączności** — szybki i precyzyjny. To **układ nerwowy**. Działa jak sieć telekomunikacyjna: **receptory** to czujniki, **nerwy** — kable, **mózgowie i rdzeń kręgowy** — centrala, a **mięśnie i gruczoły** (efektory) wykonują polecenia. Drugi system łączności — hormony — jest wolniejszy, ale działa dłużej; oba współpracują.
 
-Podstawowym „przewodem” jest komórka nerwowa — **neuron**. Ma krótkie, rozgałęzione **dendryty**, które zbierają sygnały, **ciało komórki** z jądrem i długi **akson**, który przewodzi sygnał dalej — czasem na odległość ponad metra, z rdzenia do palców stóp. Sygnał to **impuls nerwowy** — wędrująca zmiana elektryczna na błonie neuronu. Akson owinięty **osłonką mielinową** (jak izolacja kabla) przewodzi impulsy znacznie szybciej, nawet ok. 100 m/s (orientacyjnie). Neurony nie stykają się bezpośrednio: między zakończeniem aksonu a następną komórką jest szczelina — **synapsa**. Gdy impuls dotrze do końca aksonu, uwalniają się cząsteczki **neuroprzekaźnika**, przepływają przez szczelinę i pobudzają następną komórkę. Dzięki temu sygnał płynie **w jedną stronę**, a w synapsach może być wzmacniany, osłabiany i łączony z innymi — tu dzieje się przetwarzanie informacji, uczenie się i pamięć. Na synapsy działają też leki, alkohol, nikotyna i narkotyki — dlatego zaburzają myślenie i mogą uzależniać.
+Podstawowym „przewodem” jest komórka nerwowa — **neuron**. Samych neuronów jest w mózgu około 86 miliardów (orientacyjnie), a do tego jeszcze podobna liczba komórek glejowych. Neuron ma krótkie, rozgałęzione **dendryty**, które zbierają sygnały, **ciało komórki** z jądrem i długi **akson**, który przewodzi sygnał dalej — czasem na odległość ponad metra, z rdzenia do palców stóp. Sygnał to **impuls nerwowy** — wędrująca zmiana elektryczna na błonie neuronu. Akson owinięty **osłonką mielinową** (jak izolacja kabla) przewodzi impulsy znacznie szybciej, nawet ok. 100 m/s (orientacyjnie). Neurony nie stykają się bezpośrednio: między zakończeniem aksonu a następną komórką jest szczelina — **synapsa**. Gdy impuls dotrze do końca aksonu, uwalniają się cząsteczki **neuroprzekaźnika**, przepływają przez szczelinę i pobudzają następną komórkę. Dzięki temu sygnał płynie **w jedną stronę**, a w synapsach może być wzmacniany, osłabiany i łączony z innymi — tu dzieje się przetwarzanie informacji, uczenie się i pamięć. Na synapsy działają też leki, alkohol, nikotyna i narkotyki — dlatego zaburzają myślenie i mogą uzależniać.
 
 Najprostszy obwód nerwowy to **łuk odruchowy**. Dotykasz gorącego garnka: **receptory** w skórze wysyłają impuls **neuronem czuciowym** do **rdzenia kręgowego**, tam przez **neuron pośredniczący** przechodzi on na **neuron ruchowy**, który pobudza **mięsień** — ręka odskakuje. Mózg dostaje informację równocześnie, ale później; dlatego ból czujesz już po cofnięciu ręki. Takie **odruchy wrodzone** (kaszel, kichanie, mruganie, zwężanie źrenic) chronią nas bez udziału woli. **Odruchy nabyte** powstają przez uczenie się — hamowanie na czerwonym świetle, jazda na rowerze — i z czasem też stają się automatyczne.
 
@@ -84,9 +83,11 @@ Informacje o świecie dostarczają **narządy zmysłów**. Każdy receptor reagu
 | Podział | Części | Rola |
 |---|---|---|
 | **ośrodkowy (OUN)** | mózgowie, rdzeń kręgowy | analiza informacji, decyzje, koordynacja |
-| **obwodowy** | nerwy czaszkowe (12 par) i rdzeniowe (31 par), zwoje, zakończenia nerwowe | przewodzenie informacji między OUN a receptorami i efektorami |
+| **obwodowy** | nerwy czaszkowe (12 par, odchodzą od mózgowia) i rdzeniowe (31 par, odchodzą od rdzenia kręgowego), zwoje, zakończenia nerwowe | przewodzenie informacji między OUN a receptorami i efektorami |
 | **somatyczny** | część OUN i nerwów obsługująca mięśnie szkieletowe i zmysły | świadome ruchy, odbiór bodźców zewnętrznych |
 | **autonomiczny** | współczulny i przywspółczulny | praca serca, jelit, gruczołów, naczyń, oskrzeli — niezależnie od woli |
+
+Uwaga: podział czynnościowy (somatyczny/autonomiczny) **nie biegnie po nerwach, lecz po włóknach** — jeden nerw mieszany może zawierać włókna ruchowe, czuciowe i autonomiczne.
 
 **Istota szara** — ciała neuronów (w mózgu na zewnątrz — kora, w rdzeniu w środku, w kształcie motyla). **Istota biała** — włókna nerwowe z mieliną (w mózgu w środku, w rdzeniu na zewnątrz).
 
@@ -107,12 +108,21 @@ Informacje o świecie dostarczają **narządy zmysłów**. Każdy receptor reagu
 
 Tkankę nerwową tworzą też **komórki glejowe** — odżywiają, chronią i wspierają neurony, tworzą mielinę.
 
+::: wskazowki
+- **D**endryty — **d**o ciała komórki, **a**kson — **a**ż do następnej komórki: dendryty prowadzą sygnał do ciała komórki, akson — dalej, poza komórkę.
+- **C do, R od**: neuron **c**zuciowy prowadzi **do** ośrodka, **r**uchowy — **od** ośrodka.
+:::
+
 ::: karta understand | W skrócie — jak „płynie” impuls
 Impuls nie jest prądem płynącym jak w drucie. Błona neuronu jest naładowana (inne stężenie jonów w środku i na zewnątrz). Gdy bodziec jest dość silny, w jednym miejscu błony na moment otwierają się kanały i ładunek się odwraca — a ta zmiana pobudza sąsiedni odcinek, i tak dalej, jak fala w kibicującym tłumie na stadionie. Za falą błona wraca do stanu spoczynku. W aksonie z mieliną fala „przeskakuje” od przewężenia do przewężenia — dlatego jest szybsza (przewodzenie skokowe — poziom ambitny). Impuls ma zawsze tę samą siłę; o sile bodźca mózg wnioskuje z **częstotliwości** impulsów.
 :::
 
 ::: adv | Dlaczego mielina jest tak ważna | poziom ambitny
 W **stwardnieniu rozsianym** układ odpornościowy uszkadza osłonki mielinowe w OUN — impulsy przewodzone są wolniej lub wcale; objawy zależą od miejsca uszkodzenia (zaburzenia widzenia, czucia, ruchu). U niemowląt mielinizacja jeszcze trwa — dlatego ich ruchy są mało precyzyjne; proces kończy się w niektórych częściach mózgu dopiero po dwudziestce (płat czołowy — planowanie, kontrola impulsów).
+:::
+
+::: karta extra | Żyrafa i nerw krtaniowy — najdłuższy „objazd” w ciele
+Najdłuższe aksony u człowieka mają około metra — biegną z rdzenia lędźwiowego aż do palców stóp. Ciekawszy rekord ma żyrafa: odgałęzienie nerwu błędnego, **nerw krtaniowy wsteczny**, schodzi z szyi do klatki piersiowej, owija się wokół aorty i wraca w górę do krtani — choć krtań leży tuż obok mózgu, nerw ma kilka metrów (ok. 4 m, orientacyjnie). Biolodzy uważają to za ślad ewolucji: u rybich przodków kręgowców nerw biegł krótko za naczyniem przy skrzelach, a gdy u potomków wydłużyła się szyja i serce przesunęło się w dół, „objazd” wydłużał się razem z nią. Ten sam nerw robi podobną pętlę u człowieka.
 :::
 
 ## 4 | Synapsa [[basic:E8]] {#synapsa}
@@ -129,7 +139,7 @@ W **stwardnieniu rozsianym** układ odpornościowy uszkadza osłonki mielinowe w
 4. Łączy się z **receptorami** na błonie następnej komórki.
 5. W komórce następnej powstaje impuls (synapsa pobudzająca) albo zostaje on utrudniony (synapsa hamująca); neuroprzekaźnik jest szybko rozkładany lub usuwany.
 
-Przekazywanie w synapsie chemicznej jest **jednokierunkowe** (neuroprzekaźnik jest tylko po jednej stronie) i trochę **opóźnione** — dlatego im mniej synaps na drodze, tym szybsza reakcja. Rzadziej występują **synapsy elektryczne** — bardzo szybkie, z bezpośrednim połączeniem komórek.
+Przekazywanie w synapsie chemicznej jest **jednokierunkowe** (neuroprzekaźnik jest tylko po jednej stronie) i trochę **opóźnione** — dlatego im mniej synaps na drodze, tym szybsza reakcja. Rzadziej występują **synapsy elektryczne** — bardzo szybkie, z bezpośrednim połączeniem komórek (poziom ambitny).
 
 ::: karta warning | Używki a synapsy
 **Alkohol, nikotyna, narkotyki** i niektóre „dopalacze” zmieniają działanie neuroprzekaźników — zaburzają koordynację, czas reakcji, ocenę sytuacji i pamięć, a mózg szybko się do nich przystosowuje, co prowadzi do **uzależnienia**. Mózg nastolatka wciąż się rozwija, dlatego jest na nie szczególnie wrażliwy. Alkohol wydłuża czas reakcji — to jeden z powodów zakazu prowadzenia pojazdów po alkoholu.
@@ -140,6 +150,7 @@ Przekazywanie w synapsie chemicznej jest **jednokierunkowe** (neuroprzekaźnik j
 **Odruch** to szybka, automatyczna reakcja na bodziec zachodząca z udziałem układu nerwowego. Droga impulsu od receptora do efektora to **łuk odruchowy**.
 
 @viz luk-odruchowy | Łuk odruchowy — cofnięcie ręki | „krok” prowadzi impuls; sprawdź skutki uszkodzenia
+
 @opis Schemat po lewej: beżowy prostokąt skóry dłoni z niebieskim kółkiem-receptorem i płomieniem gorącego przedmiotu pod spodem; nad nim różowy owal mięśnia ramienia z podpisem „mięsień (efektor)”. Po prawej przekrój rdzenia kręgowego: jasny owal istoty białej z fioletową istotą szarą w kształcie motyla. Niebieska linia neuronu czuciowego biegnie od receptora łukiem do zwoju rdzeniowego (niebieskie kółko — ciało neuronu) i do tylnej części istoty szarej; krótka fioletowa linia to neuron pośredniczący; czerwona linia neuronu ruchowego wychodzi z przedniej części istoty szarej (czerwone kółko — ciało neuronu) i biegnie do mięśnia. Przerywana fioletowa linia prowadzi z rdzenia w górę z podpisem „do mózgu → czucie bólu”. Przycisk „krok” przesuwa żółtą kulkę-impuls kolejno: receptor, neuron czuciowy, neuron pośredniczący, neuron ruchowy, efektor, droga do mózgu, z opisem każdego etapu. Przełącznik uszkodzeń stawia czarny krzyżyk na drodze czuciowej albo ruchowej — impuls zatrzymuje się na krzyżyku, a pole opisu podaje skutek (brak odruchu i brak czucia albo brak ruchu przy zachowanym czuciu). Wniosek: odruch wymaga wszystkich pięciu elementów łuku; ośrodkiem odruchu cofnięcia ręki jest rdzeń kręgowy, a ból uświadamiamy sobie dopiero, gdy impuls dotrze do mózgu.
 
 **Elementy łuku odruchowego:** 1. **receptor** → 2. **droga dośrodkowa** (neuron czuciowy) → 3. **ośrodek nerwowy** (rdzeń kręgowy lub mózgowie; neurony pośredniczące, synapsy) → 4. **droga odśrodkowa** (neuron ruchowy) → 5. **efektor** (mięsień lub gruczoł).
@@ -156,7 +167,21 @@ Przekazywanie w synapsie chemicznej jest **jednokierunkowe** (neuroprzekaźnik j
 :::
 
 ::: adv | Odruch kolanowy — najkrótszy łuk | poziom ambitny
-Uderzenie młoteczkiem poniżej rzepki rozciąga ścięgno i mięsień czworogłowy uda. Receptory rozciągania w mięśniu wysyłają impuls neuronem czuciowym do rdzenia (odcinek lędźwiowy), gdzie przechodzi on **bezpośrednio** — przez jedną synapsę — na neuron ruchowy tego samego mięśnia: noga się prostuje. To łuk **jednosynaptyczny**, bez neuronu pośredniczącego. Lekarz bada ten odruch, bo jego brak lub nadmierna siła mówi o uszkodzeniu nerwów albo rdzenia na określonym poziomie.
+Uderzenie młoteczkiem poniżej rzepki rozciąga ścięgno i mięsień czworogłowy uda. Receptory rozciągania w mięśniu wysyłają impuls neuronem czuciowym do rdzenia (odcinek lędźwiowy), gdzie przechodzi on **bezpośrednio** — przez jedną synapsę — na neuron ruchowy tego samego mięśnia: noga się prostuje. To łuk **jednosynaptyczny**, bez neuronu pośredniczającego. Lekarz bada ten odruch, bo jego brak lub nadmierna siła mówi o uszkodzeniu nerwów albo rdzenia na określonym poziomie.
+:::
+
+::: karta exam | Zadanie 20 (4 pkt) — zepsuty łuk odruchowy (konkurs)
+Ktoś dotknął rozgrzanej patelni. Zbadaj cztery możliwe uszkodzenia i uzupełnij tabelę: w każdym wierszu zaznacz **TAK/NIE** dla odruchu cofnięcia ręki i **TAK/NIE** dla odczuwania bodźca (dotyku/bólu).
+| Uszkodzenie | Odruch cofnięcia? | Czucie bodźca? |
+|---|---|---|
+| A. przerwany neuron czuciowy (receptor → rdzeń) | ? | ? |
+| B. przerwany neuron ruchowy (rdzeń → mięsień) | ? | ? |
+| C. uszkodzona droga czucia bólu z rdzenia do mózgu | ? | ? |
+| D. porażony mięsień ramienia (efektor) | ? | ? |
+::: odp | Pokaż klucz
+A — odruch NIE, czucie NIE. B — odruch NIE, czucie TAK (osoba poczuje ból, ale ręka sama nie ruszy). C — odruch TAK, czucie NIE (łuk zamyka się w rdzeniu, więc ręka cofnie się, zanim mózg „dowie się” o bodźcu). D — odruch NIE, czucie TAK.
+Punktacja: po 1 pkt za wiersz (0,5 pkt za każdą odpowiedź TAK/NIE) — razem 4 pkt. Uzasadnienie do 1 pkt dodatkowego w zapisie: odruch zamyka się w rdzeniu, czucie wymaga drogi do kory.
+:::
 :::
 
 ## 6 | Mózgowie [[basic:E8]] {#mozgowie}
@@ -166,9 +191,18 @@ Uderzenie młoteczkiem poniżej rzepki rozciąga ścięgno i mięsień czworogł
 | **mózg (kresomózgowie)** — dwie półkule pokryte pofałdowaną **korą** | świadomość, myślenie, pamięć, uczenie się, mowa, planowanie, **ruchy dowolne**, odbieranie i rozpoznawanie wrażeń zmysłowych, emocje |
 | **międzymózgowie** (wzgórze, **podwzgórze**) | wzgórze — przekaźnik informacji zmysłowych do kory; podwzgórze — **termoregulacja, głód, pragnienie, sen**, sterowanie **przysadką** (łączność z układem hormonalnym) |
 | **móżdżek** | **koordynacja i precyzja ruchów**, **równowaga**, napięcie mięśni, uczenie się ruchów (np. jazdy na rowerze) |
-| **pień mózgu** (śródmózgowie, most, **rdzeń przedłużony**) | ośrodki **oddychania**, **pracy serca** i ciśnienia krwi, odruchy **kaszlu, kichania, połykania, wymiotów**, odruch źreniczny; droga przewodząca między mózgiem a rdzeniem |
+| **pień mózgu** (śródmózgowie, most, **rdzeń przedłużony**; w niektórych podziałach zalicza się do niego także móżdżek — różnica konwencji) | ośrodki **oddychania**, **pracy serca** i ciśnienia krwi, odruchy **kaszlu, kichania, połykania, wymiotów**, odruch źreniczny; droga przewodząca między mózgiem a rdzeniem |
 
 **Płaty kory** (poziom ambitny, ale często w zadaniach): **czołowy** — planowanie, decyzje, ruchy dowolne, ośrodek ruchowy mowy; **ciemieniowy** — czucie (dotyk, temperatura, ból); **skroniowy** — **słuch**, rozumienie mowy, pamięć; **potyliczny** — **wzrok**. Każda półkula steruje głównie **przeciwną** połową ciała (lewa półkula — prawa ręka) — dlatego udar w lewej półkuli często daje niedowład prawej strony.
+
+::: karta understand | W skrócie — dlaczego kora jest pofałdowana
+Fałdy i bruzdy kory to nie ozdoba: zwijając powierzchnię jak bibuła, mózg mieści ok. 2000–2500 cm² kory (orientacyjnie) w czaszce o stałej objętości. Więcej kory to więcej komórek blisko siebie i krótsze połączenia między nimi. U małych zwierząt, np. myszy, kora jest gładka — przy małej powierzchni nie trzeba jej zwijać. Im bardziej pofałdowana kora gatunku, tym zwykle bardziej złożone zachowania (orientacyjnie; wygładzona kora to też cecha niektórych chorób u człowieka).
+:::
+
+::: wskazowki
+- **Czoło planuje i rusza, skroń słyszy i rozumie, ciemie czuje, potylica widzi.**
+- **Pień — podstawa życia** (oddech, serce); **podwzgórze — głód, pragnienie, temperatura**.
+:::
 
 ::: mity
 „Wykorzystujemy tylko 10% mózgu.” || Badania obrazowe pokazują aktywność we wszystkich częściach mózgu; różne obszary są aktywne przy różnych zadaniach, a uszkodzenie niemal każdego daje objawy.
@@ -177,9 +211,13 @@ Uderzenie młoteczkiem poniżej rzepki rozciąga ścięgno i mięsień czworogł
 „Komórki nerwowe nigdy się nie odnawiają.” || Większość neuronów nie dzieli się, ale w niektórych miejscach mózgu powstają nowe, a połączenia między neuronami zmieniają się przez całe życie (plastyczność — tak się uczymy).
 :::
 
+::: karta extra | Mózg w liczbach
+Mózg dorosłego człowieka waży ok. 1,3–1,4 kg i zawiera ok. 86 miliardów neuronów (orientacyjnie; źródło: Azevedo i wsp., 2009) oraz porównywalną liczbę komórek glejowych. To tylko ok. 2% masy ciała, a zużywa ok. 20% energii organizmu (orientacyjnie) — dlatego mózg tak bardzo zależy od stałego dopływu glukozy i tlenu.
+:::
+
 ## 7 | Rdzeń kręgowy i ochrona OUN [[basic:E8]] {#rdzen-kregowy}
 
-**Rdzeń kręgowy** leży w **kanale kręgowym** kręgosłupa (od otworu potylicznego do odcinka lędźwiowego). Odchodzi od niego **31 par nerwów rdzeniowych** (mieszanych) — każdy z korzeniem **tylnym** (czuciowym, ze zwojem) i **przednim** (ruchowym). Funkcje: **przewodzenie** impulsów między mózgowiem a ciałem (istota biała) i **ośrodki odruchów** (istota szara) — np. cofnięcia ręki, kolanowego, oddawania moczu.
+**Rdzeń kręgowy** leży w **kanale kręgowym** kręgosłupa — od otworu potylicznego do ok. wysokości **1.–2. kręgu lędźwiowego** (u dorosłych; u dzieci sięga nieco niżej). Odchodzi od niego **31 par nerwów rdzeniowych** (mieszanych) — każdy z korzeniem **tylnym** (czuciowym, ze zwojem) i **przednim** (ruchowym). Funkcje: **przewodzenie** impulsów między mózgowiem a ciałem (istota biała) i **ośrodki odruchów** (istota szara) — np. cofnięcia ręki, kolanowego, oddawania moczu.
 
 **Ochrona OUN:** kości (**czaszka**, **kręgosłup**), **opony mózgowo-rdzeniowe** (trzy błony), **płyn mózgowo-rdzeniowy** (amortyzuje wstrząsy, chroni, odżywia), bariera krew–mózg (poziom ambitny).
 
@@ -189,6 +227,14 @@ Uderzenie młoteczkiem poniżej rzepki rozciąga ścięgno i mięsień czworogł
 | móżdżek | koordynacja ruchów i równowaga |
 | pień mózgu | podstawowe czynności życiowe |
 | rdzeń kręgowy | przewodzenie i odruchy |
+
+::: karta understand | W skrócie — rdzeń nie sięga do końca kręgosłupa
+W życiu płodowym rdzeń wypełnia cały kanał kręgowy, ale potem kręgosłup rośnie szybciej niż rdzeń. U dorosłego rdzeń kończy się ok. na wysokości 1.–2. kręgu lędźwiowego, a niżej w kanale biegną już tylko nerwy — ich wiązek nazywa się **ogonem końskim** (poziom ambitny). Ma to praktyczny sens: płyn mózgowo-rdzeniowy pobiera się (w punkcji) poniżej końca rdzenia, między kręgami lędźwiowymi, gdzie nie można go uszkodzić.
+:::
+
+::: karta extra | Mózg nie czuje bólu
+Sama istota mózgu **nie ma receptorów bólu** — dlatego podczas niektórych operacji neurochirurgicznych pacjent jest przytomny i rozmawia z chirurgiem, który sprawdza, których obszarów nie wolno naruszyć. Ból głowy nie pochodzi z mózgu, lecz z opon, naczyń krwionośnych, mięśni i zatok (źródło: praktyka neurochirurgiczna).
+:::
 
 ::: karta warning | Urazy głowy i kręgosłupa — co robić
 Po uderzeniu głową z utratą przytomności, wymiotami, silnym bólem głowy, zaburzeniami mowy lub widzenia — natychmiast do lekarza (wstrząśnienie mózgu). Po upadku z wysokości, wypadku lub **skoku do płytkiej wody** podejrzewaj uraz kręgosłupa: **nie ruszaj** poszkodowanego bez potrzeby (chyba że grozi mu niebezpieczeństwo), stabilizuj głowę, wezwij **112**. Uszkodzenie rdzenia może spowodować trwały paraliż poniżej miejsca urazu. Zapobieganie: **kask** (rower, hulajnoga, rolki), pasy w samochodzie, nigdy nie skakać do wody nieznanej głębokości.
@@ -205,9 +251,10 @@ Po uderzeniu głową z utratą przytomności, wymiotami, silnym bólem głowy, z
 | naczynia mięśni szkieletowych | więcej krwi do mięśni | — |
 | gruczoły potowe | pobudza (pocenie ze stresu) | — |
 | wątroba | uwalnia glukozę (paliwo) | sprzyja magazynowaniu |
+| pęcherz moczowy | zatrzymuje oddawanie moczu | sprzyja opróżnianiu pęcherza |
 | stan organizmu | mobilizacja: stres, wysiłek, zagrożenie | odpoczynek, regeneracja, oszczędzanie energii |
 
-Obie części działają **antagonistycznie** na większość narządów, ale razem — jak gaz i hamulec — utrzymują **homeostazę**; oba są aktywne cały czas, zmienia się tylko przewaga jednego z nich. Układ współczulny współpracuje z **adrenaliną** z rdzenia nadnerczy (układ hormonalny).
+Obie części działają **antagonistycznie** na większość narządów, ale razem — jak gaz i hamulec — utrzymują **homeostazę**; oba są aktywne cały czas, zmienia się tylko przewaga jednego z nich. Układ współczulny współpracuje z **adrenaliną** z rdzenia nadnerczy (układ hormonalny). Mnemotechnika: **współczulny — Wysiłek i strach; przywspółczulny — Pokój i posiłek.**
 
 ::: karta understand | W skrócie — stres przed klasówką
 Serce wali, dłonie się pocą, w ustach sucho, „motyle w brzuchu”, źrenice szerokie — to **układ współczulny** przygotowuje ciało do wysiłku, jakby przed tobą stał drapieżnik. Krótkotrwały stres pomaga się skupić. Przewlekły stres (tygodnie bez odpoczynku) zaburza sen, trawienie i odporność. Przewagę **przywspółczulnego** wzmacniają: spokojny, powolny oddech z wydłużonym wydechem, ruch, sen, rozmowa z bliską osobą.
@@ -220,7 +267,7 @@ Serce wali, dłonie się pocą, w ustach sucho, „motyle w brzuchu”, źrenice
 | Choroba | Na czym polega / przyczyna | Co wiedzieć |
 |---|---|---|
 | **udar mózgu** | zatkanie lub pęknięcie naczynia w mózgu — część mózgu bez tlenu | objawy nagłe: opadnięty kącik ust, niedowład ręki, zaburzenia mowy → **natychmiast 112** (liczy się czas); ryzyko: nadciśnienie, palenie, cukrzyca |
-| **padaczka** | nagłe, nadmierne wyładowania neuronów — napady | podczas napadu: zabezpieczyć głowę, usunąć twarde przedmioty, nie wkładać nic do ust, nie przytrzymywać siłą, po napadzie — pozycja boczna; wezwać pomoc, jeśli napad trwa dłużej niż kilka minut |
+| **padaczka** | nagłe, nadmierne wyładowania neuronów — napady | podczas napadu: zabezpieczyć głowę, usunąć twarde przedmioty, nie wkładać nic do ust, nie przytrzymywać siłą, po napadzie — pozycja boczna; wezwać pomoc, jeśli napad trwa dłużej niż ok. 5 minut |
 | **wstrząśnienie mózgu** | uraz głowy | konsultacja lekarska, odpoczynek; kask |
 | **zapalenie opon mózgowo-rdzeniowych** | bakterie (np. meningokoki) lub wirusy | gorączka, ból głowy, sztywność karku — pilnie do lekarza; szczepienia |
 | **kleszczowe zapalenie mózgu** | wirus przenoszony przez kleszcze | szczepienie, oglądanie skóry po spacerze |
@@ -241,13 +288,34 @@ Serce wali, dłonie się pocą, w ustach sucho, „motyle w brzuchu”, źrenice
 | smak | substancje rozpuszczone w ślinie | kubki smakowe (język, podniebienie, gardło) | kora (płat ciemieniowy i wyspa) |
 | dotyk, ucisk, temperatura, ból | bodźce mechaniczne, ciepło, zimno, uszkodzenie | receptory skóry (U01) | płat ciemieniowy |
 
-**Podział receptorów (ambitny):** fotoreceptory (światło), mechanoreceptory (dotyk, słuch, równowaga), chemoreceptory (węch, smak, a także CO₂ we krwi), termoreceptory, receptory bólu.
+**Podział receptorów (ambitny):** fotoreceptory (światło), mechanoreceptory (dotyk, słuch, równowaga), chemoreceptory (węch, smak, a także CO₂ we krwi), termoreceptory, receptory bólu. Do mechanoreceptorów zalicza się też receptory mięśni, ścięgien i stawów informujące o położeniu części ciała — **propriocepcja** (czucie głębokie — poziom ambitny); ich informacje wykorzystuje móżdżek.
 
 **Adaptacja receptorów:** przy stałym bodźcu receptory słabiej reagują — po chwili nie czujesz ubrania na skórze ani zapachu w pokoju, w którym siedzisz.
+
+::: karta exam | Zadanie 21 (4 pkt) — mapa czułości skóry (konkurs, analiza danych)
+W doświadczeniu badano, w jakiej najmniejszej odległości dotyku dwa szpiczaste punkty są odczuwane jako **dwa** oddzielne punkty (próba dwóch punktów). Wyniki:
+| Miejsce skóry | Najmniejsza rozróżnialna odległość |
+|---|---|
+| opuszka palca | ok. 2 mm |
+| wargi | ok. 4–5 mm |
+| grzbiet dłoni | ok. 10 mm |
+| przedramię | ok. 35 mm |
+| plecy | ok. 45 mm |
+(wartości orientacyjne)
+a) Sformułuj wniosek o rozmieszczeniu receptorów dotyku w skórze (1 pkt).
+b) Wyjaśnij, dlaczego czułość zależy nie tylko od liczby receptorów w danym miejscu, ale też od wielkości obszaru, jaki to miejsce zajmuje w korze czuciowej mózgu (2 pkt).
+c) Przewidź wynik próby na czubku języka i uzasadnij, czemu tak dużej czułości potrzebują właśnie palce i język (1 pkt).
+::: odp | Pokaż klucz
+a) Im mniejsza odległość, tym większa **gęstość receptorów**: najwięcej na opuszkach i wargach, najmniej na plecach (1 pkt).
+b) Impulsy z receptorów jednego miejsca trafiają do „swojego” obszaru kory czuciowej; opuszki palców mają **dużą reprezentację korową** mimo małej powierzchni skóry — każdy receptor ma tam „dużo miejsca”, więc sygnały dwóch bliskich punktów pozostają rozróżnione (1 pkt za reprezentację korową, 1 pkt za powiązanie z rozróżnianiem punktów). Ilustruje to tzw. homunkulus czuciowy.
+c) Ok. 1–2 mm lub podobnie do opuszki (ocena wnioskowania, nie dokładna liczba); palce i język wykonają precyzyjne czynności — manipulowanie przedmiotami, sprawdzanie jedzenia — więc precyzja czucia ma tam największe znaczenie (1 pkt).
+:::
+:::
 
 ## 11 | Oko i widzenie [[basic:E8]] {#oko}
 
 @viz oko-akomodacja | Oko — budowa, akomodacja i wady wzroku | przełącz tryb; w trybie wad włącz okulary
+
 @opis Przekrój gałki ocznej widziany z boku, przód oka po lewej. Ściana oka: zewnętrzna szara twardówka, pod nią cienka ciemnoczerwona naczyniówka i wewnętrzna pomarańczowa siatkówka wyściełająca tylną część gałki; z przodu wypukła, jasnoniebieska rogówka. Za rogówką dwa zielone paski tęczówki z przerwą — źrenicą — i jasnoniebieska owalna soczewka, do której dochodzą cienkie włókna od czerwonych punktów mięśnia rzęskowego. Wnętrze wypełnia bladoniebieskie ciało szkliste. Na tylnej ścianie żółta kropka plamki żółtej, a nieco niżej czarna kropka plamki ślepej, z której wychodzi szeroki żółty nerw wzrokowy. Tryb „budowa”: podpisy części, kliknięcie pokazuje budowę i funkcję. Tryb „akomodacja”: przy „przedmiocie daleko” trzy równoległe pomarańczowe promienie, soczewka cienka; przy „przedmiocie blisko” promienie wychodzą z punktu z lewej strony, soczewka wyraźnie grubsza; w obu przypadkach promienie zbiegają się w zielonym punkcie na siatkówce, napis „obraz ostry na siatkówce”. Tryb „wady wzroku”: przy krótkowzroczności promienie z daleka przecinają się przed siatkówką (czerwony punkt), a na siatkówce powstaje czerwona plama — „obraz nieostry”; przy dalekowzroczności promienie z bliska zbiegałyby się za siatkówką; włączenie „okularów” rysuje przed okiem soczewkę wklęsłą (krótkowzroczność) lub wypukłą (dalekowzroczność) i ognisko przesuwa się na siatkówkę. Wniosek: soczewka zmienia kształt, by skupić obraz na siatkówce; gdy ognisko wypada przed siatkówką, pomagają soczewki rozpraszające, gdy za nią — skupiające.
 
 **Budowa oka:**
@@ -288,6 +356,18 @@ Serce wali, dłonie się pocą, w ustach sucho, „motyle w brzuchu”, źrenice
 Przy słabym świetle działają prawie wyłącznie **pręciki**, które nie rozróżniają barw — świat robi się szary. Pręcików jest najwięcej na **obwodzie** siatkówki, a w środku plamki żółtej są tylko czopki: dlatego słabą gwiazdę lepiej widać, patrząc **lekko obok** niej. I dlatego po zmierzchu kolory kwiatów „gasną” wcześniej niż ich kształty.
 :::
 
+::: karta exam | Zadanie 22 (3 pkt) — od książki do chmur
+Zosia czyta książkę, a po chwili patrzy przez okno na chmury nad dachami.
+a) Opisz, co zmienia się w pracy mięśnia rzęskowego i w kształcie soczewki, gdy Zosia przenosi wzrok z książki na chmury (1 pkt).
+b) Wyjaśnij, dlaczego oczy „męczą się” po długim czytaniu z bliska (1 pkt).
+c) Krótkowidz bez okularów czyta książkę ostro, ale tablicy w klasie nie widzi ostro. Wyjaśnij przyczynę i podaj rodzaj soczewek okularowych, które to korygują (1 pkt).
+::: odp | Pokaż klucz
+a) Mięsień rzęskowy **rozluźnia się**, soczewka staje się **bardziej płaska**, światło jest załamywane słabiej — obraz dalekiego przedmiotu pada na siatkówkę (1 pkt; wymagane obie zmiany).
+b) Patrzenie z bliska wymaga stałego **skurczu** mięśnia rzęskowego i wypukłej soczewki — mięsień męczy się jak każdy długo napięty mięsień (1 pkt).
+c) Gałka jest **za długa** (lub załamanie za silne) — obraz dalekich przedmiotów powstaje **przed siatkówką**; z bliska rozbieżne promienie „trafiają” na siatkówkę, dlatego czyta ostro. Korekcja: soczewki **rozpraszające (wklęsłe, „minus”)** (1 pkt).
+:::
+:::
+
 ## 12 | Wady i choroby oczu [[basic:E8]] {#wady}
 
 | Wada | Co się dzieje | Objaw | Korekcja |
@@ -299,15 +379,20 @@ Przy słabym świetle działają prawie wyłącznie **pręciki**, które nie roz
 
 **Choroby oczu:** **zaćma** (zmętnienie soczewki — leczenie operacyjne: wymiana na sztuczną soczewkę), **jaskra** (wzrost ciśnienia w oku uszkadza nerw wzrokowy — wykrywana przez badanie ciśnienia, nieleczona prowadzi do ślepoty), **zapalenie spojówek** (bakterie, wirusy, alergia — higiena, nie trzeć oczu), **daltonizm** (dziedziczna wada widzenia barw, częściej u chłopców — gen na chromosomie X, por. genetyka).
 
-**Higiena wzroku:** dobre oświetlenie przy nauce (światło z boku, bez odbić na ekranie), odległość od tekstu ok. 30–40 cm, przerwy przy ekranie (np. zasada **20–20–20**: co 20 minut przez 20 sekund patrz na coś odległego o kilka metrów), czas na świeżym powietrzu (dzienne światło sprzyja prawidłowemu rozwojowi oczu u dzieci), okulary przeciwsłoneczne z filtrem UV, okulary ochronne przy pracy z chemikaliami i narzędziami, regularne badania wzroku.
+**Higiena wzroku:** dobre oświetlenie przy nauce (światło z boku, bez odbić na ekranie), odległość od tekstu ok. 30–40 cm, przerwy przy ekranie (np. zasada **20–20–20**: co 20 minut przez 20 sekund patrz na coś odległego o ok. 6 m — 20 stóp), czas na świeżym powietrzu (dzienne światło sprzyja prawidłowemu rozwojowi oczu u dzieci), okulary przeciwsłoneczne z filtrem UV, okulary ochronne przy pracy z chemikaliami i narzędziami, regularne badania wzroku.
 
 ::: regula
 **Krótkowzroczny — oko za długie — ognisko przed siatkówką — szkła minus (wklęsłe, rozpraszające).** **Dalekowzroczny — oko za krótkie — ognisko za siatkówką — szkła plus (wypukłe, skupiające).** Nazwa wady mówi, co widać **dobrze**: krótkowzroczny widzi dobrze z bliska („na krótko”).
 :::
 
+::: mity
+„Od noszenia okularów wzrok się psuje.” || Okulary tylko korygują obraz — nie zmieniają budowy gałki ocznej. Wada może narastać niezależnie od okularów (zwłaszcza w okresie wzrostu), dlatego trzeba regularnie badać wzrok.
+:::
+
 ## 13 | Ucho: słuch i równowaga [[basic:E8]] {#ucho}
 
 @viz ucho-droga | Ucho — budowa i droga dźwięku | kliknij część ucha albo „krok”
+
 @opis Schemat ucha podzielony na trzy barwne strefy podpisane u góry: beżowe ucho zewnętrzne, zielonkawe ucho środkowe i niebieskawe ucho wewnętrzne. W uchu zewnętrznym różowa małżowina i szeroki przewód słuchowy biegnący w prawo do szaroniebieskiej, cienkiej błony bębenkowej na granicy stref. W uchu środkowym trzy małe brązowe kosteczki połączone w łańcuch (młoteczek, kowadełko, strzemiączko) oraz fioletowa trąbka słuchowa schodząca w dół z podpisem „(do gardła)”. W uchu wewnętrznym fioletowy owal przedsionka, nad nim trzy fioletowe pętle kanałów półkolistych ułożonych w różnych płaszczyznach, poniżej pomarańczowy spiralny ślimak; z ucha wewnętrznego w prawo biegnie żółty nerw z podpisem „nerw → mózg”. Kliknięcie części pokazuje jej budowę i funkcję; przycisk „krok” przesuwa pomarańczowe łuki fali dźwiękowej kolejno przez 6 etapów: małżowina, przewód, błona bębenkowa, kosteczki, ślimak, nerw — z opisem, co się dzieje. Wniosek: dźwięk jest kolejno zbierany, zamieniany w drgania błony i kosteczek (wzmacnianie), a dopiero w ślimaku — w impulsy nerwowe; kanały półkoliste i przedsionek nie służą do słyszenia, lecz do równowagi.
 
 | Część ucha | Elementy | Funkcja |
@@ -322,6 +407,36 @@ Przy słabym świetle działają prawie wyłącznie **pręciki**, które nie roz
 
 ::: karta understand | W skrócie — choroba lokomocyjna i „zatkane uszy”
 W samochodzie, gdy czytasz, **oczy** mówią mózgowi „stoję w miejscu”, a **błędnik** — „jadę, skręcam, hamuję”. Ten konflikt informacji może wywołać nudności — chorobę lokomocyjną; pomaga patrzenie przez przednią szybę na horyzont. W samolocie przy starcie i lądowaniu zmienia się ciśnienie powietrza — błona bębenkowa wygina się, a uszy „się zatykają”. Przełykanie lub ziewanie otwiera **trąbkę słuchową** i wyrównuje ciśnienie po obu stronach błony.
+:::
+
+**Poziomy hałasu** (orientacyjnie; progi szkodliwości wg NIOSH/WHO — przy dłuższym narażeniu):
+
+| Dźwięk | Poziom (dB) | Uwaga |
+|---|---|---|
+| szept | ok. 30 | bezpieczne |
+| rozmowa | ok. 50–60 | bezpieczne |
+| ruchliwa ulica | ok. 75–85 | ok. 85 dB — granica szkodliwości przy wielu godzinach |
+| koncert, słuchawki „na full” | ok. 100–110 | szkodliwe już po kilkunastu minutach |
+| start odrzutowca w pobliżu | ok. 130–140 | ból, ryzyko natychmiastowego uszkodzenia |
+
+::: wskazowki
+- **Ucho: zbiera — wzmacnia — zamienia** (zewnętrzne zbiera fale, środkowe wzmacnia drgania, wewnętrzne zamienia je w impulsy).
+- **Kosteczki jak w kuźni: Młotek bije w Kowadełko, Strzemiączko jak strzemię** — kolejność M–K–S.
+- **Równowaga: kręcisz się — kanały półkoliste; stoisz lub jedziesz windą — przedsionek.**
+:::
+
+::: karta extra | Poza ludzkim zakresem
+Nasze 20 Hz–20 kHz to wąski wycinek świata dźwięków. Psy słyszą do ok. 45 kHz, koty do ok. 60 kHz, a nietoperze echolokują ultradźwiękami sięgającymi ponad 100 kHz (wszystkie wartości orientacyjnie). Słonie i wieloryby komunikują się infradźwiękami poniżej 20 Hz — niskimi tak, że człowiek ich nie słyszy, choć czasem „czuje” wibracje.
+:::
+
+::: karta exam | Zadanie 23 (2 pkt) — droga dźwięku
+Otrzymałeś elementy w rozsypance: ślimak · błona bębenkowa · małżowina uszna · kosteczki słuchowe · kanały półkoliste · przewód słuchowy · nerw słuchowy.
+a) Ułóż z nich drogę dźwięku od ucha do ośrodka słuchu (1 pkt).
+b) Wskaż element rozsypanki, który **nie bierze udziału w słyszeniu**, i napisz, za co odpowiada (1 pkt).
+::: odp | Pokaż klucz
+a) małżowina uszna → przewód słuchowy → błona bębenkowa → kosteczki słuchowe → ślimak → nerw słuchowy (→ ośrodek słuchu w płacie skroniowym) (1 pkt; kolejność obowiązkowa).
+b) **kanały półkoliste** — to narząd równowagi: rejestrują ruchy obrotowe głowy (1 pkt).
+:::
 :::
 
 ::: karta warning | Hałas niszczy słuch na zawsze
@@ -568,6 +683,7 @@ Problem: Czy oświetlenie wpływa na średnicę źrenicy? (wraz z hipotezą). Zm
 | „Drgania zamieniają się w impulsy w uchu środkowym.” | W ślimaku (ucho wewnętrzne). | Ucho środkowe tylko przenosi i wzmacnia drgania. |
 | „Kanały półkoliste służą do słyszenia.” | Służą do równowagi (ruchy obrotowe). | Słuch — ślimak. |
 | „Widzimy oczami.” | Wrażenie widzenia powstaje w korze mózgu. | Oko zamienia światło na impulsy. |
+| „Ból głowy pochodzi z mózgu.” | Ból głowy pochodzi z opon, naczyń krwionośnych, mięśni i zatok. | Sama tkanka mózgu nie ma receptorów bólu. |
 :::
 
 ## 19 | Ćwiczenia {#cwiczenia}
@@ -879,3 +995,16 @@ Układ nerwowy i zmysły
 **Dodane:** wykład od zera (sieć telekomunikacyjna), mini-wykłady (jak płynie impuls, dlaczego odruch jest szybszy od decyzji, stres przed klasówką, koty o zmierzchu, choroba lokomocyjna i zatkane uszy, receptor odpowiada swoim językiem), mielina i stwardnienie rozsiane, komórki glejowe, używki a synapsy, odruch kolanowy jako jednosynaptyczny, płaty kory i skrzyżowanie sterowania, urazy głowy i kręgosłupa z pierwszą pomocą, tabela chorób (udar, padaczka z pierwszą pomocą, zapalenie opon, kleszczowe zapalenie mózgu, Parkinson, Alzheimer, depresja, uzależnienia), adaptacja receptorów, narządy dodatkowe oka, choroby oczu i higiena wzroku, hałas (zasada 60/60), doświadczenia: odruch źreniczny, czas reakcji z linijką, próba dwóch punktów, zadania 11–19 i B1–B4, ciekawostki (86 mld neuronów, Pawłow, strzemiączko, daltonizm i Dalton, mózg wypełnia luki), mity, grafiki `luk-odruchowy`, `oko-akomodacja`, `ucho-droga`.
 
 **Nieprzyjęte:** kod „B2d” z propozycji — lekcja dostała kod U08 w grupie BIO.07 (pkt III.8–9); szkielet OLI pozostaje jako materiał źródłowy. Przypisy-cytaty Perplexity (linki ZPE [1]–[10]) pominięte w lekcji (zostają w zapisie surowym). Zdanie „Odruch nie zawsze jest świadomy” z listy błędów — przeformułowane w klinice (odruch nabyty po wyćwiczeniu jest automatyczny), bo w wersji z materiału sugerowało, że odruchy bywają świadome.
+
+### AUDYT W1 — tryb ULEPSZ, część 1 (§0–13), 2026-10-11 {#audyt-w1}
+
+Zapis surowy: `biologia/plany/audyty/ULEPSZ_U08_cz1_2026-10-11.md`. **Ocena częściowa** — model widział lekcję do karty „Hałas niszczy słuch na zawsze” w §13; od tej karty do końca bez oceny (do części 2).
+
+**Przyjęte (po sprawdzeniu):** ciecz wodnista w drodze światła (minimum), „Przypomnij sobie” w §0.1, liczba neuronów (ok. 86 mld, Azevedo 2009), nerwy czaszkowe od mózgowia i rdzeniowe od rdzenia, podział czynnościowy biegnie po włóknach, synapsy elektryczne jako poziom ambitny, rdzeń kończy się na wysokości 1.–2. kręgu lędźwiowego (mini-wykład o ogonie końskim), konwencja zaliczania móżdżka do pnia, wiersz „pęcherz moczowy” w układzie autonomicznym, padaczka — 112 przy napadzie dłuższym niż ok. 5 minut, propriocepcja, zasada 20–20–20 z odległością ok. 6 m, mity o okularach, tabela poziomów hałasu, mnemotechniki (§3, §6, §8, §13), mini-wykład o pofałdowaniu kory, ciekawostki „Mózg w liczbach”, „Mózg nie czuje bólu”, „Poza ludzkim zakresem”, zadania 20–23 (zepsuty łuk odruchowy, mapa czułości skóry, akomodacja, droga dźwięku).
+
+**Poprawione względem propozycji:** zadania przenumerowane z 21–24 na 20–23 w kolejności występowania (w lekcji było 19 zadań); ciekawostka o żyrafie — chodzi o nerw krtaniowy wsteczny (gałąź nerwu błędnego), ma ok. 4 m, a wyjaśnienie ewolucyjne poprawione (u rybich przodków nerw biegł za naczyniem skrzelowym; pętla wydłużyła się wraz z szyją); mnemotechnika „A jak »alej«” → „akson — aż do następnej komórki”; „trzy »P«” dla podwzgórza usunięte (temperatura nie zaczyna się na P); dokończenie urwanej karty o hałasie odrzucone — karta wzięta z oryginału bez zmian.
+
+**Klinika:** z 4 proponowanych wierszy przyjęty „ból głowy pochodzi z mózgu”; trzy pozostałe (kierunek impulsu, soczewki przy krótkowzroczności, ślimak a równowaga) już są w klinice.
+
+**Nieprzyjęte:** 3 propozycje grafik — zapisane jako pomysły, bez kodów w lekcji.
+

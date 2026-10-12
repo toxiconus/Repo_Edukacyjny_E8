@@ -110,3 +110,9 @@
 - 2026-10-11: POL L005 (Kajko i Kokosz) W1 FULL — Perplexity 3 części scalone; poprawione fakty (Hegemon = wódz zbójcerzy przebrany za kupca), klucze K3/K4, deprecjacja, liczba podwójna.
 - 2026-10-11: POL L001 — wprowadzono część odpowiedzi Perplexity (§0–8.1 karty + §19–24), naprawione klucze, reguła „nie” z imiesłowami wg RJP (bezwyjątkowo łącznie); POL G02/G05/G06/G09/L004 ulepszone przez Claude; paczki BIO/CHE podzielone ≤ 60 KB.
 - 2026-10-11: BIO U04 i POL L001 — W1 FULL (Perplexity, obie części scalone).
+
+## 2026-10-12 — BIO: scalenie odpowiedzi AI z poczty (U01, U03, U06, U08, U10)
+- U01, U03: W1 FULL (GLM-5.3, tryb ULEPSZ) — scalone całe lekcje, przywrócona sekcja „Pochodzenie”, AUDYT W1 z poprawkami (żółć ~97% wody, dane modelowe składu kości, literówki).
+- U10: §0–14 Zad. 7 przebudowane + zadania 17–20, test, fiszki, słownik, klinika; reszta do W1 (paczka AI_ULEPSZ_BIO_U10_reszta).
+- U06: tylko dodatki D1–D10 (pierwsza tura nie dotarła); paczki U06_cz1/cz2.
+- U08: część 1 (§0–13) + zadania 20–23; reszta — paczka AI_ULEPSZ_BIO_U08_reszta. Poprawiony fakt o nerwie krtaniowym żyrafy.
