@@ -170,6 +170,8 @@ Jak obliczyć pKa? | pKa = −log Ka | basic:podstawa
 Co mówi prawo Ostwalda? | α rośnie przy rozcieńczaniu | understand:rozumienie
 Wzór na [H₃O⁺] słabego kwasu? | √(Ka·c) | extra:LO
 Czy Ka zależy od stężenia? | nie — zależy od kwasu i T | understand:rozumienie
+Jak obliczyć pKb? | pKb = −log Kb | basic:podstawa
+Jak wiążą się Ka i Kb pary sprzężonej? | Ka · Kb = Kw | understand:rozumienie
 :::
 
 ## 7 | Słownik {#slownik}
@@ -180,6 +182,10 @@ Stała dysocjacji Kb :: stała równowagi dla dysocjacji zasady
 Iloczyn jonowy wody Kw :: [H₃O⁺][OH⁻] = 1,0·10⁻¹⁴ w 25 °C
 pKa :: −log Ka; im mniejsza, tym mocniejszy kwas
 Prawo Ostwalda :: zależność stopnia dysocjacji od rozcieńczenia
+Kwas słaby :: kwas, który w roztworze dysocjuje tylko częściowo
+Stopień dysocjacji α :: ułamek cząsteczek, które uległy dysocjacji
+Para sprzężona :: kwas i zasada różniące się jednym protonem
+Zasada Brønsteda :: substancja zdolna przyjmować proton
 :::
 
 ## 8 | Test {#test}
@@ -219,6 +225,12 @@ Prawo Ostwalda :: zależność stopnia dysocjacji od rozcieńczenia
 - Ka = Kb
 - Kb = 0
 ! Iloczyn stałych pary sprzężonej równa się Kw.
+? Które wyrażenie opisuje stałą dysocjacji kwasu HA?
++ Ka = [H₃O⁺][A⁻] / [HA]
+- Ka = [HA] / ([H₃O⁺][A⁻])
+- Ka = [H₃O⁺]
+- Ka = pH
+! Ka to stosunek iloczynu stężeń produktów do stężenia kwasu w stanie równowagi.
 :::
 
 ## 9 | Ciekawostki {#ciekawostki}
