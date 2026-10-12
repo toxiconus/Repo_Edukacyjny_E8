@@ -141,3 +141,5 @@
 - 2026-10-12: K06 i K11 wersja 2 (rozszerzone). Źródła sprawdzone: Wikipedia (Activation energy: definicja E_a, katalizator bez zmiany ΔH), OpenTextBC (definicja szybkości, tabela ICE), Physics Classroom (dysocjacja, reguła 5%). Usunięto niepotwierdzoną regułę ×2 na 10 K z K06. K04 w wersji 2 (28 KB). Wszystkie trzy przechodzą limity (orientacyjnie).
 
 - 2026-10-12: BIO L021 (powtórka genetyki, odpowiedź zewnętrznej AI, 25 sekcji) wczytana przez wczytaj_odpowiedz.py; jedna cyrylicka litera w linii 37 poprawiona w kopii przed zapisem. Build i sprawdz_bio OK.
+
+- 2026-10-12: K04 wersja 3 (wg skillu lekcja-od-zera-w1): przypomnienie, minimum, przykłady krok po kroku, mity, mnemotechniki, zadanie transferowe, test 5 przekrojowych, źródło UMB; 34 KB; HTML zbudowany; W1 FULL do zrobienia (brak Khan/Wikipedii).
