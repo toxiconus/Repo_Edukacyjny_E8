@@ -180,6 +180,9 @@ c) (1 pkt) Zapłodnienie zachodzi w jajowodzie, a nie w jajniku; jeśli ktoś po
 :::
 :::
 
+@viz uklad-rozrodczy | Układy rozrodczy męski i żeński | kliknij narząd; przyciskami zmień układ
+@opis Uproszczony schemat z przełącznikiem „układ męski / układ żeński”. Męski: pęcherz moczowy (dla orientacji), gruczoł krokowy, cewka moczowa, prącie, moszna z jądrami, najądrza, nasieniowody i pęcherzyki nasienne. Żeński: jajniki, jajowody z lejkami, macica z błoną śluzową, szyjka macicy i pochwa; czerwony okrąg na jajowodzie oznacza typowe miejsce zapłodnienia. Kliknięcie narządu lub podpisu pokazuje jego funkcję — każdy narząd ma określoną rolę, zapłodnienie zachodzi w jajowodzie, a rozwój dziecka w macicy.
+
 ## 3 | Gamety — dwa podejścia do tego samego celu {#gamety} [[basic:E8]] [[understand:ROZUMIENIE]]
 
 Gamety to komórki płciowe — jedyna komórka w całym organizmie, która w ogóle jest przeznaczona do opuszczenia go i połączenia z inną. Męska gameta to **plemnik**, żeńska — **komórka jajowa**. Obie mają po **n = 23 chromosomy**, bo powstały przez mejozę. Po ich połączeniu powstaje **zygota** — pierwsza komórka nowego organizmu, **2n = 46**.
@@ -289,6 +292,9 @@ c) (1 pkt) Bo długość cyklu różni się między osobami i między kolejnymi 
 :::
 :::
 
+@viz cykl-miesiaczkowy | Cykl miesiączkowy dzień po dniu | przesuń suwak dnia cyklu
+@opis Trzy pasy jeden pod drugim z osią dni 1–28 (dane przykładowe): u góry fazy cyklu (miesiączka 1–5, rozwój pęcherzyka 6–13, owulacja ok. 14. dnia, faza ciałka żółtego), niżej jajnik z rosnącym pęcherzykiem, pękającym przy owulacji i zamieniającym się w ciałko żółte, dalej słupki grubości błony śluzowej macicy, na dole krzywe estrogenów (ciągła, szczyt przed owulacją) i progesteronu (przerywana, szczyt w drugiej połowie). Suwak przesuwa pionową linię „dziś” i opisuje fazę — cykl to zsynchronizowane zmiany w jajniku i macicy sterowane hormonami.
+
 ## 5 | Zapłodnienie i rozwój prenatalny — pierwsze tygodnie {#ciaza} [[basic:E8]] [[understand:ROZUMIENIE]]
 
 Zapłodnienie to połączenie plemnika z komórką jajową. Podczas zbliżenia nasienie zostaje wprowadzone do pochwy; plemniki ruszają w górę — przez szyjkę macicy, macicę — aż do jajowodu. Droga jest brutalna: z setek milionów plemników na start tylko część przeżywa, a w pobliżu komórki jajowej zostają ich setki, nie miliony. Pierwszy plemnik, który przebije otoczki komórki jajowej (pomagają sobie enzymami z **akrosoma**), wnika do środka — i natychmiast komórka zamyka się przed kolejnymi, by żaden drugi plemnik nie dodał swojego materiału. Jądro plemnika łączy się z jądrem komórki jajowej: **powstaje zygota, 2n = 46**. Zapłodnienie zachodzi zwykle w **jajowodzie** (w jego szerszej, końcowej części).
@@ -345,6 +351,9 @@ c) (1 pkt) Bo właśnie wtedy formują się narządy; zaburzenie podziałów i m
 :::
 :::
 
+@viz droga-zarodka | Od owulacji do zagnieżdżenia | animacja krok po kroku
+@opis Schemat jajnika, jajowodu i macicy z błoną śluzową; znacznik przesuwa się wzdłuż jajowodu w 10 etapach: owulacja, komórka jajowa w jajowodzie, plemniki, zapłodnienie, zygota, 2, 4 i 8 komórek, kulka komórek i zagnieżdżenie w błonie śluzowej macicy (czasy orientacyjne). W kółku „powiększenie” widać, jak komórka dzieli się na coraz mniejsze komórki. Animacja leci do przodu i od początku; przyciski krok i numery etapów pozwalają przejść ręcznie — rozwój zaczyna się w jajowodzie, a kończy zagnieżdżeniem w macicy.
+
 ## 6 | Łożysko i pępowina — stacja przesyłowa ciąży {#lozysko} [[basic:E8]]
 
 Rozwijający się płód nie może oddychać płucami, jeść ani wydalać — a jednak rośnie w tempie najszybszym z całego życia. Robi to dzięki **łożysku**: organowi, który powstaje z tkanek zarówno zarodka/płodu, jak i matki i jest doklejony do ściany macicy. Z płodem łączy go **pępowina** — sznur zawierający naczynia krwionośne (dwie tętnice odprowadzające krew od płodu do łożyska i jedna żyła przywożąca krew z łożyska do płodu; detal konkursowy, orientacyjnie).
@@ -383,6 +392,9 @@ c) (1 pkt) CO₂ dyfunduje z krwi płodu do krwi matki w łożysku, zostaje wydy
 :::
 :::
 
+@viz lozysko-wymiana | Łożysko — wymiana substancji | kliknij element schematu
+@opis Przekrój ściany macicy z łożyskiem: po lewej krew matki (tętnica czerwona, żyła niebieska) opływa trzy kosmki płodu z naczyniami; czerwone strzałki (tlen i składniki odżywcze) biegną od krwi matki do kosmków, niebieskie (CO₂ i produkty przemiany materii) — w przeciwną stronę. Pępowina łączy łożysko z płodem w worku owodniowym; w przekroju pępowiny widać dwie tętnice i jedną żyłę. Napis u góry: krew matki i płodu się nie miesza — wymiana zachodzi przez cienką barierę.
+
 ## 7 | Etapy życia po urodzeniu {#etapy} [[basic:E8]]
 
 Rozwój człowieka nie kończy się na porodzie. Wyróżniamy kolejne etapy życia — ramy wiekowe są orientacyjne i różnią się między źródłami, ale kolejność i cechy musisz znać na pewniaka.
@@ -408,6 +420,9 @@ a) (2 pkt) Okres prenatalny → noworodkowy → niemowlęcy → dzieciństwo →
 b) (1 pkt) Przykłady: najszybszy wzrost w całym życiu; nauka podstaw ruchu (siadanie, chodzenie) i pierwszych słów; całkowita zależność od opiekunów.
 :::
 :::
+
+@viz etapy-zycia | Etapy życia człowieka | kliknij etap na osi
+@opis Pionowa oś czasu z dziesięcioma kolorowymi polami: okres zarodkowy i płodowy (fiolet, prenatalny), noworodkowy, niemowlęcy, poniemowlęcy, przedszkolny i szkolny (niebieski, dzieciństwo), dojrzewanie (pomarańczowy), dojrzałość (zielony) i starość; przy każdym orientacyjny wiek i rosnąca sylwetka. Kliknięcie pola pokazuje najważniejsze cechy okresu — życie człowieka to uporządkowana sekwencja okresów, a granice wieku są orientacyjne.
 
 ## 8 | Dojrzewanie — czas wielkiej przemiany {#dojrzewanie} [[basic:E8]]
 
@@ -1074,3 +1089,5 @@ A jeśli któryś wątek budzi pytania osobiste — właściwym miejscem na odpo
 | §5, po tabeli wydarzeń | animacja „do przodu i od początku” | droga plemnika do jajowodu, zapłodnienie, bruzdkowanie, wędrówka zarodka, implantacja | rozwój zaczyna się w jajowodzie, a kończy zagnieżdżeniem w macicy | Animacja: komórka jajowa w jajowodzie, zbliżające się plemniki, jedno połączenie, seria podziałów (kulka komórek) przesuwająca się do macicy, zagnieżdżenie w błonie śluzowej. Wniosek: owulacja → zapłodnienie → bruzdkowanie → implantacja to jedna droga. |
 | §6, po tabeli funkcji | schemat statyczny | łożysko przyścienne do macicy, pępowina, płód; strzałki wymiany: tlen i substancje odżywcze do płodu, CO₂ i produkty przemiany materii do matki; podpis „krew nie miesza się” | łożysko wymienia substancje przez barierę, nie przez mieszanie krwi | Schemat: macica z łożyskiem, pępowina do płodu; dwie osobne pętle naczyń (matki i płodu) stykają się w łożysku; strzałki pokazują kierunki wymiany. Wniosek: wymiana substancji zachodzi przez barierę łożyska, a krew matki i płodu pozostaje osobno. |
 | §7, nad tabelą okresów | oś czasu | etapy życia: prenatalny (zarodkowy, płodowy), noworodek, niemowlę, dzieciństwo, dojrzewanie, dojrzałość, starość z orientacyjnymi ramami wiekowymi | życie człowieka to uporządkowana sekwencja okresów z charakterystycznymi zmianami | Pozioma oś czasu od zapłodnienia do starości; segmenty oznaczone etapami, przy dojrzewaniu zaznaczone wcześniejsze dojrzewanie dziewcząt. Wniosek: kolejność etapów jest stała, a ramy wiekowe orientacyjne. |
+
+**Grafiki wykonane (2026-10-12, z odpowiedzi na `eksport/GRAFIKI_PROMPT.md`, wczytane `wczytaj_grafiki.py`):** uklad-rozrodczy, cykl-miesiaczkowy, droga-zarodka, lozysko-wymiana, etapy-zycia.

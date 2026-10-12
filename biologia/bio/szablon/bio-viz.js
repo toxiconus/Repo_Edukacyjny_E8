@@ -1680,3 +1680,405 @@ mount:function(el,o){var plec=o.plec||'k',tl=H('div','bv-tools'),box=H('div'),in
  draw();var ai=-1;BIO.fx.auto(el,function(){ai=(ai+1)%keys.length;cur=keys[ai];var g=el.querySelector('[data-k="'+cur+'"]');if(g)g.dispatchEvent(new MouseEvent('click',{bubbles:true}))},2600,{now:1})}});
 
 })();
+
+/* synapsa — z odpowiedzi GRAFIKI_PROMPT */
+BIO.define('synapsa',{opis:'Animacja przekazania impulsu na synapsie chemicznej w pięciu krokach: impuls, uwolnienie neuroprzekaźnika, szczelina, receptory, nowy impuls.',
+mount:function(el,opt){
+  var S=BIO.S,T=BIO.T,cur=Math.max(0,Math.min(4,parseInt(opt&&opt.krok,10)||0));
+  var START='Animacja pokazuje 5 kroków przekazania impulsu. Użyj przycisków „◀ krok” i „krok ▶” albo kliknij element schematu.';
+  var TT=['Impuls dochodzi do zakończenia aksonu','Pęcherzyki uwalniają neuroprzekaźnik','Neuroprzekaźnik w szczelinie synaptycznej','Łączenie z receptorami','Nowy impuls w następnej komórce'];
+  var TX=['Impuls nerwowy biegnie wzdłuż aksonu i dociera do jego zakończenia.',
+    'Impuls sprawia, że pęcherzyki synaptyczne łączą się z błoną zakończenia aksonu i wylewają neuroprzekaźnik do szczeliny synaptycznej.',
+    'Cząsteczki neuroprzekaźnika przemieszczają się przez wąską szczelinę. Zajmuje to chwilę, dlatego przekazanie na synapsie jest wolniejsze niż bieg impulsu w aksonie.',
+    'Neuroprzekaźnik łączy się z receptorami w błonie następnej komórki, jak klucz z zamkiem. Pasuje tylko do swoich receptorów.',
+    'Po pobudzeniu receptorów w następnej komórce powstaje nowy impuls. Przekazanie jest jednokierunkowe: pęcherzyki są tylko w zakończeniu aksonu, a receptory po drugiej stronie szczeliny.'];
+  var INFO={
+    akson:['Zakończenie aksonu','Tu kończy się akson komórki nadającej sygnał. W środku są pęcherzyki z neuroprzekaźnikiem.'],
+    pecherzyki:['Pęcherzyki synaptyczne','Małe pęcherzyki wypełnione neuroprzekaźnikiem – substancją chemiczną, która przenosi sygnał.'],
+    szczelina:['Szczelina synaptyczna','Wąska przestrzeń między komórkami. Impuls elektryczny nie przeskakuje przez nią – sygnał przenosi neuroprzekaźnik.'],
+    receptory:['Receptory','Białka w błonie następnej komórki. Pasują do określonego neuroprzekaźnika i po jego związaniu pobudzają komórkę.'],
+    nastepna:['Następna komórka','Komórka odbierająca sygnał (np. kolejny neuron lub komórka mięśniowa). Powstaje w niej nowy impuls.']};
+  TT.forEach(function(t,i){INFO['s'+i]=[(i+1)+'. '+t,TX[i]]});
+  function lab(k,x,y,t){var ls=t.split('|');return ls.map(function(q,i){var e=T(x,y+(i-(ls.length-1)/2)*15,q,{s:13,w:700});e.setAttribute('data-k',k);e.setAttribute('data-lab','1');return e})}
+  function C(x,y,r,f,s,w){return S('circle',{cx:x,cy:y,r:r,fill:f,stroke:s,'stroke-width':w})}
+  function ln(x1,y1,x2,y2){return S('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:'var(--viz-mut)','stroke-width':1.2,'pointer-events':'none'})}
+  var RY=[130,175,220,265],kids=[];
+  kids.push(T(350,22,'kierunek przekazywania impulsu',{s:13,w:700}),S('line',{x1:60,y1:44,x2:632,y2:44,stroke:'var(--viz-ink)','stroke-width':3}),S('polygon',{points:'650,44 630,36 630,52',fill:'var(--viz-ink)'}));
+  kids.push(S('rect',{x:345,y:105,width:50,height:190,fill:'var(--viz-bg2)','data-k':'szczelina'}));
+  kids.push(S('path',{d:'M20 170 L220 170 Q232 120 270 105 L330 105 Q345 105 345 120 L345 280 Q345 295 330 295 L270 295 Q232 280 220 230 L20 230 Z',fill:'var(--k1-bg)',stroke:'var(--k1)','stroke-width':3,'data-k':'akson'}));
+  kids.push(S('path',{d:'M395 105 L670 105 Q690 105 690 125 L690 275 Q690 295 670 295 L395 295 Z',fill:'var(--k2-bg)',stroke:'var(--k2)','stroke-width':3,'data-k':'nastepna'}));
+  var rec=RY.map(function(y){return S('rect',{x:395,y:y-12,width:14,height:24,rx:3,fill:'var(--k5-bg)',stroke:'var(--k5)','stroke-width':2,'data-k':'receptory'})});
+  kids=kids.concat(rec);
+  /* pęcherzyki: spoczynek / połączone z błoną */
+  var V=[[270,150,0],[312,135,332],[318,190,332],[272,245,0],[314,240,332],[318,272,332]];
+  var ves=V.map(function(v){var d=S('g',{},[C(-4,-3,2.5,'var(--k3)','var(--k3)',1),C(4,-3,2.5,'var(--k3)','var(--k3)',1),C(0,4,2.5,'var(--k3)','var(--k3)',1)]);
+    var c=C(0,0,13,'var(--k3-bg)','var(--k3)',2.5);return{g:S('g',{'data-k':'pecherzyki'},[c,d]),c:c,d:d,v:v}});
+  ves.forEach(function(o){kids.push(o.g)});
+  /* cząsteczki */
+  var M=[[],[[354,130],[358,141],[354,185],[358,196],[354,235],[358,246],[354,267],[358,278]],
+    [[368,125],[378,150],[366,175],[380,200],[370,225],[378,250],[366,270],[376,285]],
+    [[391,130],[391,175],[391,220],[391,265],[374,152],[372,198],[374,246],[372,282]],
+    [[391,130],[391,175],[391,220],[391,265]]];
+  var mol=[0,1,2,3,4,5,6,7].map(function(){var c=C(0,0,4.5,'var(--k3)','var(--viz-ink)',1);c.setAttribute('pointer-events','none');kids.push(c);return c});
+  /* błysk impulsu */
+  var bt=T(0,24,'impuls',{s:12,w:700}),bolt=S('g',{'pointer-events':'none'},[S('path',{d:'M0 -13 L-7 2 L0 2 L-4 13 L8 -4 L1 -4 Z',fill:'var(--nerve)',stroke:'var(--viz-ink)','stroke-width':1.2}),bt]);
+  kids.push(bolt);
+  /* podpisy */
+  kids=kids.concat(lab('pecherzyki',285,78,'pęcherzyki z|neuroprzekaźnikiem'),lab('receptory',455,82,'receptory'),
+    lab('akson',270,345,'zakończenie|aksonu'),lab('szczelina',370,345,'szczelina|synaptyczna'),lab('nastepna',540,345,'następna|komórka'));
+  kids.push(ln(280,95,272,136),ln(442,92,404,118),ln(270,326,270,298),ln(370,326,370,298),ln(540,326,540,298));
+  var cap=T(350,398,'',{s:15,w:700});kids.push(cap);
+  var sv=BIO.svg(700,415,'Synapsa chemiczna: przekazanie impulsu od zakończenia aksonu do następnej komórki',kids),box=BIO.fx.infoBox(START);
+  function go(i,say){
+    cur=i;
+    ves.forEach(function(o){var f=i>=1&&o.v[2]>0,x=f?o.v[2]:o.v[0];o.g.setAttribute('transform','translate('+x+','+o.v[1]+')');o.c.setAttribute('stroke-dasharray',f?'4 3':'none');o.d.setAttribute('display',f?'none':'inline')});
+    mol.forEach(function(c,j){var p=M[i][j];if(p){c.setAttribute('cx',p[0]);c.setAttribute('cy',p[1]);c.setAttribute('display','inline')}else c.setAttribute('display','none')});
+    rec.forEach(function(r){var on=i>=3;r.style.setProperty('fill',on?'var(--k5)':'var(--k5-bg)');r.setAttribute('stroke-width',on?3.5:2)});
+    var bp=i===0?[190,200]:(i===1?[285,195]:(i===4?[560,200]:null));
+    if(bp){bolt.setAttribute('transform','translate('+bp[0]+','+bp[1]+')');bolt.setAttribute('display','inline');bt.textContent=i===4?'nowy impuls':'impuls'}else bolt.setAttribute('display','none');
+    cap.textContent='Krok '+(i+1)+'/5: '+TT[i];
+    if(say){box.className='bv-info';box.innerHTML='<b>'+INFO['s'+i][0]+'</b>'+INFO['s'+i][1]}}
+  var bP=BIO.btn('◀ krok',function(){go((cur+4)%5,true)}),bN=BIO.btn('krok ▶',function(){go((cur+1)%5,true)});
+  el.appendChild(BIO.H('div','bv-tools',null,[bP,bN]));el.appendChild(sv);el.appendChild(box);
+  BIO.fx.info(el,box,INFO);
+  el.querySelectorAll('[data-lab]').forEach(function(x){x.setAttribute('tabindex','-1')});
+  go(cur,false);
+  BIO.fx.auto(el,function(){go((cur+1)%5,true)},2600);
+}});
+
+/* etapy-zycia — z odpowiedzi GRAFIKI_PROMPT */
+BIO.define('etapy-zycia',{opis:'Pionowa oś czasu z dziesięcioma etapami życia człowieka, od okresu zarodkowego do starości; kliknięcie etapu pokazuje orientacyjny wiek i cechy.',
+mount:function(el,opt){
+  var S=BIO.S,T=BIO.T,box=BIO.fx.infoBox('Kliknij etap życia na osi czasu, aby zobaczyć jego wiek i najważniejsze cechy.');
+  /* klucz, nazwa, wiek, kolor, grupa, wysokość ikony, opis */
+  var ST=[
+    ['zarodkowy','Okres zarodkowy','od zapłodnienia do ok. 8. tygodnia ciąży','k5','prenatalny',8,'Od zapłodnienia do ok. 8. tygodnia ciąży (orientacyjnie). Zarodek zagnieżdża się w macicy i powstają zawiązki wszystkich narządów. To czas największej wrażliwości na szkodliwe czynniki.'],
+    ['plodowy','Okres płodowy','od ok. 9. tygodnia ciąży do porodu','k5','prenatalny',18,'Od ok. 9. tygodnia ciąży do porodu (orientacyjnie). Płód rośnie, a narządy dojrzewają i zaczynają działać. Tlen i pokarm dostaje przez łożysko.'],
+    ['noworodkowy','Okres noworodkowy','do ok. 4 tygodni po urodzeniu','k1','dzieciństwo',22,'Pierwsze ok. 4 tygodnie po urodzeniu (orientacyjnie). Dziecko przystosowuje się do życia poza macicą: zaczyna oddychać płucami i ssie pokarm (odruch ssania).'],
+    ['niemowlecy','Okres niemowlęcy','do ok. 1 roku życia','k1','dzieciństwo',26,'Do ok. 1. roku życia. Bardzo szybki wzrost i przyrost masy ciała. Pojawiają się pierwsze ząbki, dziecko uczy się siadać i raczkować.'],
+    ['poniemowlecy','Okres poniemowlęcy','ok. 1–3 lata','k1','dzieciństwo',30,'Ok. 1–3 lata. Dziecko zaczyna samodzielnie chodzić i szybko uczy się mówić: od pojedynczych słów do prostych zdań.'],
+    ['przedszkolny','Okres przedszkolny','ok. 3–6 lat','k1','dzieciństwo',34,'Ok. 3–6 lat. Dziecko dużo się bawi, rozwija mowę i uczy się samodzielności (ubieranie się, jedzenie). Rośnie wolniej niż niemowlę.'],
+    ['szkolny','Okres szkolny','ok. 7–12 lat','k1','dzieciństwo',40,'Ok. 7–12 lat (orientacyjnie). Dziecko uczy się czytać, pisać i liczyć, a wzrost jest dość równomierny. Zęby mleczne wymieniają się na stałe.'],
+    ['dojrzewanie','Okres dojrzewania','ok. 12–18 lat','k3','dorastanie',46,'Ok. 12–18 lat (orientacyjnie); u dziewcząt zwykle zaczyna się wcześniej niż u chłopców. Pod wpływem hormonów następuje skok wzrostu, rozwijają się drugorzędowe cechy płciowe i organizm osiąga zdolność do rozrodu.'],
+    ['dojrzalosc','Okres dojrzałości','ok. 18–60 lat','k2','dorosłość',50,'Od ok. 18 do ok. 60 lat (orientacyjnie). Organizm ma pełną sprawność. Człowiek zwykle pracuje i zakłada rodzinę, a z czasem procesy życiowe zaczynają się powoli spowalniać.'],
+    ['starosc','Starość','po ok. 60–65 latach','k6','starość',46,'Po ok. 60–65 latach (orientacyjnie). Maleje masa mięśniowa i gęstość kości, pogarszają się wzrok i słuch, a regeneracja organizmu trwa dłużej.']];
+  var INFO={};ST.forEach(function(s){INFO[s[0]]=[s[1]+' ('+s[2]+')',s[6]]});
+  function C(x,y,r,f,s,w){return S('circle',{cx:x,cy:y,r:r,fill:f,stroke:s,'stroke-width':w})}
+  function man(x,y,H,i){
+    if(i===0)return[C(x,y,4,'var(--skin)','var(--viz-mut)',1.2)];
+    var r=H*.17,top=y-H/2;
+    return[C(x,top+r,r,'var(--skin)','var(--viz-mut)',1.2),S('rect',{x:x-H*.15,y:top+2*r+1,width:H*.3,height:H*.55,rx:3,fill:'var(--skin)',stroke:'var(--viz-mut)','stroke-width':1.2})]}
+  var kids=[S('line',{x1:90,y1:36,x2:90,y2:36+9*52,stroke:'var(--viz-line)','stroke-width':4})];
+  ST.forEach(function(s,i){
+    var y=36+i*52,c='var(--'+s[3]+')',cb='var(--'+s[3]+'-bg)';
+    kids.push(S('g',{'data-k':s[0],'aria-label':s[1]+', '+s[2]},[
+      S('rect',{x:110,y:y-21,width:360,height:42,rx:8,fill:cb,stroke:c,'stroke-width':2}),
+      C(90,y,8,c,'var(--viz-bg)',2)].concat(man(40,y,s[5],i),[
+      T(126,y-8,s[1],{a:'start',s:14,w:700}),
+      T(126,y+10,s[2],{a:'start',s:12,w:500,f:'var(--viz-mut)'}),
+      T(462,y-8,s[4],{a:'end',s:11,w:600,f:'var(--viz-mut)'})])))});
+  kids.push(T(240,528,'Wiek jest orientacyjny; granice okresów bywają podawane nieco inaczej.',{s:11,w:500,f:'var(--viz-mut)'}));
+  var sv=BIO.svg(480,540,'Oś czasu: etapy życia człowieka od okresu zarodkowego do starości',kids);
+  el.appendChild(sv);el.appendChild(box);
+  BIO.fx.info(el,box,INFO,opt&&INFO[opt.start]?opt.start:null);
+}});
+
+/* lozysko-wymiana — z odpowiedzi GRAFIKI_PROMPT */
+BIO.define('lozysko-wymiana',{opis:'Schemat łożyska: krew matki opływa kosmki z naczyniami płodu; strzałki pokazują, co płynie do płodu, a co do matki. Pępowina ma dwie tętnice i jedną żyłę.',
+mount:function(el,opt){
+  var S=BIO.S,T=BIO.T,box=BIO.fx.infoBox('Kliknij element schematu (łożysko, kosmki, pępowinę, strzałki…), aby zobaczyć, co robi.');
+  var INFO={
+    sciana:['Ściana macicy','Mięśniowa ściana macicy zawiera naczynia krwionośne matki. Do niej przyrasta łożysko.'],
+    krewmatki:['Krew matki','Opływa kosmki łożyska, ale nie wpływa do naczyń płodu. Dostarcza tlen i składniki odżywcze, a odbiera dwutlenek węgla i produkty przemiany materii.'],
+    lozysko:['Łożysko','Narząd przyrośnięty do ściany macicy, wytworzony przez zarodek i organizm matki. Krew matki i krew płodu się w nim nie miesza: substancje przechodzą przez cienką barierę.'],
+    kosmki:['Kosmki łożyska','Palczaste wypustki z naczyniami włosowatymi płodu. Mają cienką ścianę i ogromną powierzchnię, więc wymiana substancji jest sprawna.'],
+    tlen:['Od matki do płodu','Przez cienką barierę przechodzą do krwi płodu tlen i składniki odżywcze (np. glukoza, aminokwasy) oraz niektóre przeciwciała matki.'],
+    co2:['Od płodu do matki','Z krwi płodu do krwi matki przechodzą dwutlenek węgla i produkty przemiany materii (np. mocznik). Matka usuwa je ze swojego organizmu.'],
+    pepowina:['Pępowina','Łączy płód z łożyskiem. Biegną w niej trzy naczynia: dwie tętnice i jedna żyła.'],
+    tetnice:['Dwie tętnice pępowinowe','Prowadzą od płodu do łożyska krew uboższą w tlen i bogatą w CO₂. To tętnice, bo odchodzą od serca płodu, choć krew w nich jest odtlenowana.'],
+    zyla:['Żyła pępowinowa','Niesie z łożyska do płodu krew bogatą w tlen i składniki odżywcze.'],
+    plod:['Płód','Przed urodzeniem nie oddycha płucami i nie je jak po urodzeniu: tlen i pokarm dostaje przez łożysko i pępowinę.'],
+    owodnia:['Worek owodniowy','Wypełniony płynem (wodami płodowymi), który chroni płód przed wstrząsami i pomaga utrzymać stałą temperaturę.']};
+  function R(x,y,w,h,r,f,s,sw,k){var o={x:x,y:y,width:w,height:h,rx:r,fill:f,stroke:s,'stroke-width':sw};if(k)o['data-k']=k;return S('rect',o)}
+  function C(x,y,r,f,s,w,k){var o={cx:x,cy:y,r:r,fill:f,stroke:s,'stroke-width':w};if(k)o['data-k']=k;return S('circle',o)}
+  function lab(k,x,y,t,s){var ls=t.split('|');return ls.map(function(q,i){var e=T(x,y+(i-(ls.length-1)/2)*15,q,{s:s||12,w:700});if(k){e.setAttribute('data-k',k);e.setAttribute('data-lab','1')}return e})}
+  function arr(x1,x2,y,col){var d=x2>x1?1:-1;return[S('line',{x1:x1,y1:y,x2:x2-d*7,y2:y,stroke:col,'stroke-width':3.5}),S('polygon',{points:x2+','+y+' '+(x2-d*9)+','+(y-5.5)+' '+(x2-d*9)+','+(y+5.5),fill:col})]}
+  var O='var(--blood-o2)',B='var(--blood-co2)',FY=[150,220,290],kids=[];
+  kids.push(T(350,20,'Krew matki i płodu się nie miesza – wymiana odbywa się przez cienką barierę',{s:13,w:700}));
+  kids.push(R(10,40,680,400,40,'var(--k4-bg)','var(--k4)',2.5,'sciana'),R(100,68,570,344,28,'var(--viz-bg)','var(--k4)',1.5));
+  kids=kids.concat(lab('sciana',55,225,'ściana|macicy'));
+  kids.push(S('g',{'data-k':'krewmatki'},[S('line',{x1:22,y1:130,x2:114,y2:130,stroke:O,'stroke-width':9}),S('line',{x1:114,y1:310,x2:22,y2:310,stroke:B,'stroke-width':9})]));
+  kids=kids.concat(lab('krewmatki',55,105,'tętnica|matki'),lab('krewmatki',55,345,'żyła|matki'));
+  kids.push(R(100,100,200,240,18,'var(--k3-bg)','var(--k3)',2.5,'lozysko'));
+  kids=kids.concat(lab('lozysko',200,88,'łożysko',13));
+  kids.push(S('g',{'data-k':'krewmatki'},[R(112,112,96,216,10,'var(--blood-o2-bg)',O,1.5)]));
+  kids=kids.concat(lab('krewmatki',158,122,'krew matki'));
+  var fg=[];FY.forEach(function(y){fg.push(R(190,y-18,110,36,18,'var(--k3-bg)','var(--k3)',2.5),S('line',{x1:208,y1:y,x2:286,y2:y,stroke:B,'stroke-width':5,'stroke-linecap':'round'}))});
+  kids.push(S('g',{'data-k':'kosmki'},fg));
+  kids=kids.concat(lab('kosmki',255,185,'kosmki'),lab('kosmki',255,255,'płodu'));
+  var tg=[],cg=[];FY.forEach(function(y){tg=tg.concat(arr(128,188,y-9,O));cg=cg.concat(arr(188,128,y+9,B))});
+  kids.push(S('g',{'data-k':'tlen'},tg),S('g',{'data-k':'co2'},cg));
+  /* płód i pępowina */
+  kids.push(S('ellipse',{cx:560,cy:240,rx:105,ry:135,fill:'var(--k1-bg)',stroke:'var(--k1)','stroke-width':2,'stroke-dasharray':'6 4','data-k':'owodnia'}));
+  kids=kids.concat(lab('owodnia',560,122,'wody|płodowe'));
+  var cd='M300 222 C350 170 420 300 516 252';
+  kids.push(S('g',{'data-k':'pepowina'},[S('path',{d:cd,fill:'none',stroke:'var(--k3)','stroke-width':22,'stroke-linecap':'round'}),S('path',{d:cd,fill:'none',stroke:'var(--k3-bg)','stroke-width':16,'stroke-linecap':'round'})]));
+  kids=kids.concat(lab('pepowina',400,190,'pępowina'));
+  kids.push(S('g',{'data-k':'plod'},[C(575,165,28,'var(--skin)','var(--viz-mut)',2),S('ellipse',{cx:552,cy:255,rx:40,ry:56,fill:'var(--skin)',stroke:'var(--viz-mut)','stroke-width':2}),S('ellipse',{cx:598,cy:240,rx:10,ry:26,fill:'var(--skin)',stroke:'var(--viz-mut)','stroke-width':2}),S('ellipse',{cx:545,cy:330,rx:14,ry:28,fill:'var(--skin)',stroke:'var(--viz-mut)','stroke-width':2}),S('ellipse',{cx:575,cy:325,rx:13,ry:26,fill:'var(--skin)',stroke:'var(--viz-mut)','stroke-width':2})]));
+  kids=kids.concat(lab('plod',641,285,'płód'));
+  /* przekrój pępowiny */
+  kids.push(T(350,257,'przekrój pępowiny',{s:12,w:600,f:'var(--viz-mut)'}),C(350,305,36,'var(--k3-bg)','var(--k3)',3,'pepowina'),
+    C(338,296,8,'var(--blood-co2-bg)',B,3,'tetnice'),C(362,296,8,'var(--blood-co2-bg)',B,3,'tetnice'),C(350,318,10,'var(--blood-o2-bg)',O,3,'zyla'),
+    S('line',{x1:372,y1:296,x2:394,y2:297,stroke:'var(--viz-mut)','stroke-width':1.2}),S('line',{x1:362,y1:319,x2:394,y2:320,stroke:'var(--viz-mut)','stroke-width':1.2}));
+  kids=kids.concat(lab('tetnice',398,297,'tętnice (2)').map(function(e){e.setAttribute('text-anchor','start');return e}),lab('zyla',398,320,'żyła (1)').map(function(e){e.setAttribute('text-anchor','start');return e}));
+  /* legenda */
+  kids.push(S('g',{'data-k':'tlen'},arr(112,150,372,O)),S('g',{'data-k':'co2'},arr(150,112,394,B)));
+  kids=kids.concat(lab('tlen',160,372,'O₂ i składniki odżywcze: krew matki → płód',13).map(function(e){e.setAttribute('text-anchor','start');return e}),
+    lab('co2',160,394,'CO₂ i produkty przemiany: płód → krew matki',13).map(function(e){e.setAttribute('text-anchor','start');return e}));
+  var sv=BIO.svg(700,450,'Schemat łożyska: wymiana substancji między krwią matki a krwią płodu',kids);
+  el.appendChild(sv);el.appendChild(box);
+  BIO.fx.info(el,box,INFO);
+  el.querySelectorAll('[data-lab]').forEach(function(x){x.setAttribute('tabindex','-1')});
+}});
+
+/* uklad-rozrodczy — z odpowiedzi GRAFIKI_PROMPT */
+BIO.define('uklad-rozrodczy',{opis:'Schemat męskiego i żeńskiego układu rozrodczego z przełącznikiem; kliknięcie narządu pokazuje jego funkcję, zaznaczone jest miejsce zapłodnienia.',
+mount:function(el,opt){
+  var S=BIO.S,T=BIO.T,cur=(opt&&opt.start==='zenski')?1:0;
+  var START='Kliknij narząd na schemacie (lub jego podpis), aby zobaczyć, co robi. Przyciskami przełączysz układ męski i żeński.';
+  var box=BIO.fx.infoBox(START),g=S('g',{});
+  var INFO={
+    jadra:['Jądra','Wytwarzają plemniki (w kanalikach nasiennych) oraz hormon płciowy testosteron. Leżą w mosznie.'],
+    moszna:['Moszna','Worek skórny z jądrami. Utrzymuje w nich temperaturę niższą niż w reszcie ciała (o kilka stopni, orientacyjnie), co sprzyja powstawaniu plemników.'],
+    najadrze:['Najądrze','Przylega do jądra. Plemniki dojrzewają tu, zyskują zdolność ruchu i są magazynowane.'],
+    nasieniowod:['Nasieniowód','Mięśniowy przewód, który podczas wytrysku przesuwa plemniki z najądrza w stronę cewki moczowej. Biegnie przez kanał pachwinowy do jamy brzusznej (na schemacie uproszczony).'],
+    pecherzyki:['Pęcherzyki nasienne','Gruczoły, których wydzielina zawiera m.in. cukier fruktozę – źródło energii dla plemników. Wydzielina jest częścią nasienia.'],
+    prostata:['Gruczoł krokowy (prostata)','Leży tuż pod pęcherzem moczowym i otacza początek cewki. Jego wydzielina jest częścią nasienia i wspomaga ruch plemników.'],
+    cewka:['Cewka moczowa','U mężczyzny jest wspólną drogą moczu i nasienia (nigdy w tej samej chwili). Biegnie przez gruczoł krokowy i prącie.'],
+    penis:['Prącie','Narząd kopulacyjny: wprowadza nasienie do dróg rodnych kobiety. Wypełnienie ciał jamistych krwią powoduje wzwód.'],
+    pecherz:['Pęcherz moczowy (dla orientacji)','Magazynuje mocz i nie jest narządem rozrodczym, ale od niego zaczyna się cewka moczowa.'],
+    jajnik:['Jajniki','Parzyste gruczoły. Dojrzewają w nich komórki jajowe, a także powstają hormony płciowe: estrogeny i progesteron.'],
+    jajowod:['Jajowód','Kanał prowadzący od jajnika do macicy. Komórkę jajową przesuwają rzęski i skurcze ścian. Tu zwykle dochodzi do zapłodnienia.'],
+    lejek:['Lejek jajowodu','Rozszerzony koniec jajowodu ze strzępkami. Po owulacji wychwytuje komórkę jajową uwolnioną z jajnika.'],
+    macica:['Macica','Mięsień w kształcie odwróconej gruszki. W niej zagnieżdża się zarodek i rozwija płód; skurcze mięśni macicy pomagają w porodzie.'],
+    blona:['Błona śluzowa macicy','Wewnętrzna warstwa macicy. W cyklu grubieje, przygotowując miejsce dla zarodka. Gdy nie ma ciąży, jest częściowo złuszczana – to miesiączka.'],
+    szyjka:['Szyjka macicy','Dolna, zwężona część macicy, łącząca ją z pochwą. W ciąży wąski kanał szyjki jest zamknięty czopem śluzowym.'],
+    pochwa:['Pochwa','Mięśniowo-błoniasty kanał. Trafia do niej nasienie, a podczas porodu stanowi część drogi rodnej.'],
+    zaplodnienie:['Miejsce zapłodnienia','Plemnik łączy się z komórką jajową zwykle w jajowodzie. Powstaje zygota, która wędruje do macicy i tam się zagnieżdża.']
+  };
+  function A(o,k){if(k)o['data-k']=k;return o}
+  function E(cx,cy,rx,ry,f,s,k){return S('ellipse',A({cx:cx,cy:cy,rx:rx,ry:ry,fill:f,stroke:s,'stroke-width':2.5},k))}
+  function P(d,f,s,w,k,r){var o={d:d,fill:f,stroke:s,'stroke-width':w};if(r)o['stroke-linecap']='round';return S('path',A(o,k))}
+  function mir(kids){return S('g',{transform:'translate(560,0) scale(-1,1)'},kids)}
+  function lab(k,x,y,t,a){var ls=t.split('|');return ls.map(function(s,i){var e=T(x,y+(i-(ls.length-1)/2)*15,s,{a:a,s:13,w:700});e.setAttribute('data-k',k);e.setAttribute('data-lab','1');return e})}
+  function ld(out,x1,y1,x2,y2){out.push(S('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:'var(--viz-mut)','stroke-width':1.2,'pointer-events':'none'}),S('circle',{cx:x2,cy:y2,r:2.5,fill:'var(--viz-ink)','pointer-events':'none'}))}
+  var cap=T(280,428,'Schemat uproszczony: kształty i proporcje orientacyjne',{s:12,w:500,f:'var(--viz-mut)'});
+
+  function male(){
+    var ls=[],lb=[];
+    function half(){return[
+      E(230,128,22,12,'var(--k5-bg)','var(--k5)','pecherzyki'),
+      P('M250 311 C214 290 208 215 228 185 C238 168 246 158 254 150','none','var(--k6)',4,'nasieniowod',1),
+      E(247,340,18,30,'var(--k1-bg)','var(--k1)','jadra'),
+      P('M250 311 C232 318 228 350 238 368','none','var(--k2)',8,'najadrze',1)]}
+    var n=[E(280,335,75,65,'var(--viz-bg2)','var(--viz-mut)','moszna'),S('g',{},half()),mir(half()),
+      E(280,70,55,40,'var(--viz-bg2)','var(--viz-mut)','pecherz'),
+      S('rect',{x:268,y:176,width:24,height:180,rx:12,fill:'var(--skin)',stroke:'var(--viz-mut)','stroke-width':2,'data-k':'penis'}),
+      E(280,152,32,22,'var(--k3-bg)','var(--k3)','prostata'),
+      P('M280 108 L280 350','none','var(--k4)',5,'cewka',1)];
+    ld(ls,368,70,335,70);ld(ls,368,152,312,152);ld(ls,368,235,280,235);ld(ls,368,290,292,290);ld(ls,368,328,320,328);ld(ls,368,392,316,392);
+    ld(ls,190,128,208,128);ld(ls,190,215,210,215);ld(ls,190,353,233,353);
+    [['pecherz',70,'pęcherz moczowy'],['prostata',152,'gruczoł krokowy'],['cewka',235,'cewka moczowa'],['penis',290,'prącie'],['jadra',328,'jądro'],['moszna',392,'moszna']].forEach(function(r){lb=lb.concat(lab(r[0],372,r[1],r[2],'start'))});
+    [['pecherzyki',128,'pęcherzyk nasienny'],['nasieniowod',215,'nasieniowód'],['najadrze',353,'najądrze']].forEach(function(r){lb=lb.concat(lab(r[0],186,r[1],r[2],'end'))});
+    return n.concat(ls,lb,[cap])}
+
+  function female(){
+    var ls=[],lb=[];
+    function half(){return[
+      P('M232 126 C196 100 140 104 116 148 C108 166 114 180 128 186','none','var(--k5)',9,'jajowod',1),
+      S('g',{'data-k':'lejek'},[P('M104 198 Q116 180 128 178 Q142 180 152 198 Z','var(--k5-bg)','var(--k5)',2)].concat([108,118,128,138,148].map(function(x){return S('line',{x1:x,y1:198,x2:x,y2:207,stroke:'var(--k5)','stroke-width':2.5,'stroke-linecap':'round'})}))),
+      E(130,224,26,18,'var(--k1-bg)','var(--k1)','jajnik')]}
+    var n=[S('g',{},half()),mir(half()),
+      P('M262 236 Q256 320 248 400 L312 400 Q304 320 298 236 Z','var(--k2-bg)','var(--k2)',2.5,'pochwa'),
+      P('M230 122 Q280 88 330 122 Q338 160 302 206 L258 206 Q222 160 230 122 Z','var(--k4-bg)','var(--k4)',2.5,'macica'),
+      P('M250 132 Q280 114 310 132 Q314 160 294 192 L266 192 Q246 160 250 132 Z','var(--k3-bg)','var(--k3)',2,'blona'),
+      S('rect',{x:260,y:206,width:40,height:30,rx:6,fill:'var(--k6-bg)',stroke:'var(--k6)','stroke-width':2.5,'data-k':'szyjka'}),
+      S('line',{x1:280,y1:208,x2:280,y2:234,stroke:'var(--k6)','stroke-width':2,'stroke-dasharray':'3 3','pointer-events':'none'}),
+      S('circle',{cx:447,cy:158,r:11,fill:'none',stroke:'var(--k4)','stroke-width':3,'pointer-events':'all','data-k':'zaplodnienie'})];
+    ld(ls,98,142,116,148);ld(ls,98,191,107,196);ld(ls,98,232,105,226);
+    ld(ls,368,268,331,146);ld(ls,368,308,308,161);ld(ls,368,348,300,221);ld(ls,368,388,304,319);
+    [['jajowod',142,'jajowód'],['lejek',191,'lejek|jajowodu'],['jajnik',232,'jajnik']].forEach(function(r){lb=lb.concat(lab(r[0],94,r[1],r[2],'end'))});
+    [['macica',268,'macica'],['blona',308,'błona śluzowa|macicy'],['szyjka',348,'szyjka macicy'],['pochwa',388,'pochwa']].forEach(function(r){lb=lb.concat(lab(r[0],372,r[1],r[2],'start'))});
+    lb=lb.concat(lab('zaplodnienie',464,158,'zapłodnienie|zwykle tu','start'));
+    return n.concat(ls,lb,[cap])}
+
+  var bM=BIO.btn('♂ Układ męski',function(){go(0)}),bZ=BIO.btn('♀ Układ żeński',function(){go(1)});
+  var tools=BIO.H('div','bv-tools',null,[bM,bZ]),sv=BIO.svg(560,440,'Schemat układu rozrodczego',[g]);
+  el.appendChild(tools);el.appendChild(sv);el.appendChild(box);
+  function go(i){
+    cur=i;while(g.firstChild)g.removeChild(g.firstChild);
+    (i?female():male()).forEach(function(x){g.appendChild(x)});
+    sv.setAttribute('aria-label',i?'Schemat żeńskiego układu rozrodczego':'Schemat męskiego układu rozrodczego');
+    BIO.fx.toggle([bM,bZ],i);box.className='bv-info';box.innerHTML=START;
+    BIO.fx.info(el,box,INFO);
+    el.querySelectorAll('[data-lab]').forEach(function(x){x.setAttribute('tabindex','-1')});
+  }
+  go(cur);
+}});
+
+/* cykl-miesiaczkowy — z odpowiedzi GRAFIKI_PROMPT */
+BIO.define('cykl-miesiaczkowy',{opis:'Model cyklu miesiączkowego z suwakiem dnia 1–28: zmiany w jajniku, błonie śluzowej macicy i poziomie hormonów (dane przykładowe).',
+mount:function(el,opt){
+  var S=BIO.S,T=BIO.T,W=590/28,day=Math.min(28,Math.max(1,parseInt(opt&&opt.dzien,10)||1));
+  var START='Przesuń suwak dnia cyklu (1–28) i obserwuj jajnik, macicę i hormony. Możesz też kliknąć każdy pas, aby go opisać.';
+  var box=BIO.fx.infoBox(START);
+  var INFO={
+    jajnik:['Zmiany w jajniku','Najpierw rośnie pęcherzyk z komórką jajową. Ok. 14. dnia następuje owulacja, a z pękniętego pęcherzyka powstaje ciałko żółte. Jeśli nie ma ciąży, po kilkunastu dniach ciałko żółte zanika.'],
+    blona:['Błona śluzowa macicy','W dniach 1–5 jest złuszczana (miesiączka), potem odbudowuje się i grubieje pod wpływem estrogenów. Po owulacji progesteron przygotowuje ją na przyjęcie zarodka.'],
+    hormony:['Hormony płciowe (dane przykładowe)','Estrogeny rosną w pierwszej połowie cyklu, a progesteron w drugiej, gdy działa ciałko żółte. Hormony sterują zmianami w jajniku i macicy. Wartości są umowne, pokazują tylko kształt przebiegu.'],
+    owulacja:['Owulacja','Pęknięcie pęcherzyka i uwolnienie komórki jajowej do jajowodu, zwykle ok. 14. dnia cyklu 28-dniowego (orientacyjnie). Komórka jajowa jest zdolna do zapłodnienia tylko krótko, ok. doby.']
+  };
+  function X(d){return 90+(d-0.5)*W}
+  function lin(p,x){for(var i=1;i<p.length;i++)if(x<=p[i][0]){var a=p[i-1],b=p[i];return a[1]+(b[1]-a[1])*(x-a[0])/(b[0]-a[0])}return p[p.length-1][1]}
+  var EST=[[1,18],[5,20],[9,50],[12,90],[13,100],[14,85],[15,45],[17,35],[21,65],[24,45],[27,20],[28,18]];
+  var PRO=[[1,5],[13,5],[14,8],[16,30],[18,60],[21,90],[24,60],[26,25],[28,8]];
+  var TH=[4,3,2,1.5,1.5,2,2.5,3,3.5,4,4.5,5,5,5.5,6,6.5,7,7.5,7.5,8,8,8,8,8,7.5,7,6.5,6];
+  function yv(p,d){return 398-lin(p,d)*1.2}
+  function curve(p){var d='';for(var x=1;x<=28.001;x+=.25){d+=(d?'L':'M')+X(x).toFixed(1)+' '+yv(p,x).toFixed(1)}return d}
+  function lab(k,x,y,t,a,s){var ls=t.split('|');return ls.map(function(q,i){var e=T(x,y+(i-(ls.length-1)/2)*15,q,{a:a||'end',s:s||12,w:700});if(k){e.setAttribute('data-k',k);e.setAttribute('data-lab','1')}return e})}
+  function C(cx,cy,r,f,s,w){return S('circle',{cx:cx,cy:cy,r:r,fill:f,stroke:s,'stroke-width':w||2.5})}
+  function bx(a,b){return 90+(a-1)*W+(b?W*b:0)}
+  var kids=[];
+  /* pas faz */
+  [[1,5,'var(--k4-bg)','var(--k4)','miesiączka'],[6,13,'var(--k1-bg)','var(--k1)','rozwój pęcherzyka'],[15,28,'var(--k5-bg)','var(--k5)','faza ciałka żółtego']].forEach(function(b){
+    var x=bx(b[0]),w=(b[1]-b[0]+1)*W;kids.push(S('rect',{x:x,y:22,width:w,height:22,fill:b[2],stroke:b[3],'stroke-width':1.5}),T(x+w/2,33,b[4],{s:12,w:700}))});
+  kids.push(S('rect',{x:bx(14),y:22,width:W,height:22,fill:'var(--k3-bg)',stroke:'var(--k3)','stroke-width':2,'data-k':'owulacja'}));
+  kids=kids.concat(lab('owulacja',X(14),12,'owulacja','middle'));
+  /* jajnik */
+  var jg=[S('rect',{x:90,y:52,width:590,height:96,rx:6,fill:'var(--viz-bg2)',stroke:'var(--viz-line)'})];
+  [[2,4],[5,6],[8,9],[11,12]].forEach(function(f){jg.push(C(X(f[0]),98,f[1],'var(--k1-bg)','var(--k1)'),C(X(f[0]),98,2,'var(--viz-ink)','var(--viz-ink)',1))});
+  jg.push(C(X(14),98,14,'var(--k1-bg)','var(--k1)'));
+  [[17,10],[20,14],[23,14],[26,8]].forEach(function(f){jg.push(C(X(f[0]),98,f[1],'var(--k3-bg)','var(--k3)'))});
+  jg.push(C(X(28),98,5,'var(--viz-bg2)','var(--viz-mut)',2));
+  jg.push(T(X(8),134,'pęcherzyk',{s:12}),T(X(21.5),134,'ciałko żółte',{s:12}),T(680,134,'zanik ciałka',{s:12,a:'end'}));
+  kids.push(S('g',{'data-k':'jajnik'},jg));
+  kids.push(S('g',{'data-k':'owulacja'},[S('circle',{cx:X(14),cy:98,r:14,fill:'none',stroke:'var(--k3)','stroke-width':3,'stroke-dasharray':'4 3'}),C(X(14),66,4,'var(--k3)','var(--viz-ink)',1),S('path',{d:'M'+X(14)+' 83 L'+X(14)+' 73 M'+(X(14)-5)+' 78 L'+X(14)+' 72 L'+(X(14)+5)+' 78',fill:'none',stroke:'var(--k3)','stroke-width':2})]));
+  /* błona śluzowa */
+  var bg=[S('rect',{x:90,y:158,width:590,height:96,rx:6,fill:'var(--viz-bg2)',stroke:'var(--viz-line)'})];
+  TH.forEach(function(t,i){var h=t*9;bg.push(S('rect',{x:X(i+1)-W/2+.75,y:250-h,width:W-1.5,height:h,fill:'var(--k4-bg)',stroke:'var(--k4)','stroke-width':1}))});
+  kids.push(S('g',{'data-k':'blona'},bg));
+  /* hormony */
+  var hg=[S('rect',{x:90,y:262,width:590,height:140,rx:6,fill:'var(--viz-bg2)',stroke:'var(--viz-line)'}),
+    S('path',{d:curve(EST),fill:'none',stroke:'var(--k1)','stroke-width':3.5}),
+    S('path',{d:curve(PRO),fill:'none',stroke:'var(--k5)','stroke-width':3.5,'stroke-dasharray':'8 4'}),
+    T(X(11),281,'estrogeny',{a:'end',s:13,w:700,f:'var(--k1)'}),T(X(22.5),274,'progesteron (przerywana)',{a:'start',s:12,w:700,f:'var(--k5)'})];
+  kids.push(S('g',{'data-k':'hormony'},hg));
+  /* etykiety lewe */
+  kids=kids.concat(lab('jajnik',84,100,'jajnik'),lab('blona',84,206,'błona|śluzowa|macicy'),lab('hormony',84,332,'hormony|we krwi'));
+  /* oś */
+  [1,7,14,21,28].forEach(function(d){kids.push(S('line',{x1:X(d),y1:402,x2:X(d),y2:408,stroke:'var(--viz-mut)','stroke-width':1.5}),T(X(d),419,String(d),{s:12}))});
+  kids.push(T(385,438,'dzień cyklu (dane przykładowe, cykl średnio ok. 28 dni)',{s:12,w:500,f:'var(--viz-mut)'}));
+  /* wskaźnik dnia */
+  var ln=S('line',{x1:0,y1:46,x2:0,y2:402,stroke:'var(--accent)','stroke-width':2.5,'pointer-events':'none'}),
+      dE=S('circle',{r:5.5,fill:'var(--k1)',stroke:'var(--viz-bg)','stroke-width':2,'pointer-events':'none'}),
+      dP=S('circle',{r:5.5,fill:'var(--k5)',stroke:'var(--viz-bg)','stroke-width':2,'pointer-events':'none'});
+  kids.push(ln,dE,dP);
+  var sv=BIO.svg(700,450,'Model cyklu miesiączkowego: jajnik, błona śluzowa macicy i hormony w dniach 1–28',kids);
+  var lbl=BIO.H('div','','');lbl.style.cssText='font-weight:700;margin:0 0 4px';
+  var rng=BIO.H('input');rng.type='range';rng.min=1;rng.max=28;rng.value=day;rng.setAttribute('aria-label','Dzień cyklu');
+  function ph(d){
+    if(d<=5)return['miesiączka','Złuszcza się wierzchnia warstwa błony śluzowej macicy i wypływa z krwią. Poziom hormonów jest niski. W jajniku zaczyna rosnąć kilka pęcherzyków.'];
+    if(d<=13)return['rozwój pęcherzyka','W jajniku dojrzewa pęcherzyk (zwykle jeden) i wydziela coraz więcej estrogenów. Estrogeny odbudowują i pogrubiają błonę śluzową macicy.'];
+    if(d===14)return['owulacja (orientacyjnie)','Pęcherzyk pęka i uwalnia komórkę jajową do lejka jajowodu. Estrogeny osiągają szczyt tuż przed owulacją, a komórka jajowa jest zdolna do zapłodnienia ok. doby.'];
+    if(d<=26)return['ciałko żółte','Z resztek pęcherzyka powstaje ciałko żółte, które wydziela progesteron. Błona śluzowa grubieje i gromadzi substancje odżywcze – jest gotowa na zagnieżdżenie zarodka.'];
+    return['zanik ciałka żółtego','Jeśli nie doszło do zapłodnienia, ciałko żółte zanika, hormony spadają i wkrótce zacznie się kolejna miesiączka. Przy ciąży ciałko żółte by się utrzymało.']}
+  function upd(d,say){
+    var x=X(d);ln.setAttribute('x1',x);ln.setAttribute('x2',x);
+    dE.setAttribute('cx',x);dE.setAttribute('cy',yv(EST,d));dP.setAttribute('cx',x);dP.setAttribute('cy',yv(PRO,d));
+    lbl.textContent='Dzień cyklu: '+d;
+    if(say){var p=ph(d);box.className='bv-info';box.innerHTML='<b>Dzień '+d+' – '+p[0]+'</b>'+p[1]}}
+  rng.oninput=function(){upd(parseInt(rng.value,10),true)};
+  el.appendChild(lbl);el.appendChild(rng);el.appendChild(sv);el.appendChild(box);
+  BIO.fx.info(el,box,INFO);
+  el.querySelectorAll('[data-lab]').forEach(function(x){x.setAttribute('tabindex','-1')});
+  upd(day,false);
+}});
+
+/* droga-zarodka — z odpowiedzi GRAFIKI_PROMPT */
+BIO.define('droga-zarodka',{opis:'Animacja drogi od owulacji do zagnieżdżenia: komórka jajowa w jajowodzie, zapłodnienie, zygota, bruzdkowanie i zagnieżdżenie w macicy.',
+mount:function(el,opt){
+  var S=BIO.S,T=BIO.T,cx=115,cy=335,cur=Math.max(0,Math.min(9,parseInt(opt&&opt.krok,10)||0));
+  var START='Animacja pokazuje 10 etapów. Użyj przycisków „◀ krok” i „krok ▶”, kliknij numer etapu albo narząd.';
+  var ST=[['Owulacja','dzień 0'],['Komórka jajowa w jajowodzie','dzień 0 – wędrówka ku macicy'],['Plemniki docierają','zwykle w ciągu doby od owulacji (orientacyjnie)'],['Zapłodnienie','plemnik wnika do komórki jajowej'],['Zygota','jądra się łączą: pierwsza komórka nowego organizmu'],['2 komórki','bruzdkowanie: ok. 1–2 doby po zapłodnieniu (orientacyjnie)'],['4 komórki','ok. 2 doby po zapłodnieniu (orientacyjnie)'],['8 komórek','ok. 3 doby po zapłodnieniu (orientacyjnie)'],['Kulka komórek','wędrówka do macicy trwa ok. 3–4 dni (orientacyjnie)'],['Zagnieżdżenie','w błonie śluzowej macicy, ok. 6–7 dni po zapłodnieniu (orientacyjnie)']];
+  var TX=['Dojrzały pęcherzyk w jajniku pęka i uwalnia komórkę jajową. Lejek jajowodu ją wychwytuje.',
+   'Komórkę jajową przesuwają ku macicy rzęski i skurcze ścian jajowodu. Sama nie potrafi się poruszać.',
+   'Plemniki płyną od pochwy przez macicę do jajowodu. Do komórki jajowej dociera tylko niewielka część z milionów.',
+   'Jeden plemnik wnika do komórki jajowej (zwykle w jajowodzie). Po jego wniknięciu kolejne plemniki już się nie dostają.',
+   'Jądro plemnika i jądro komórki jajowej łączą się. Powstaje zygota z kompletem chromosomów.',
+   'Zygota zaczyna się dzielić (bruzdkowanie). Komórki są coraz mniejsze, a cały zarodek jeszcze nie rośnie. Wędruje w stronę macicy.',
+   'Kolejny podział. Zarodek nadal wędruje jajowodem, otoczony osłonką.',
+   'Dalsze podziały. Komórki są jeszcze do siebie podobne.',
+   'Zarodek jest już kulką komórek. Do macicy dociera po ok. 3–4 dniach wędrówki (orientacyjnie).',
+   'Zarodek wnika w błonę śluzową macicy. Od tej chwili zaczyna się ciąża, a zarodek pobiera substancje odżywcze z organizmu matki.'];
+  var INFO={jajnik:['Jajnik','Tu dojrzewa komórka jajowa i następuje owulacja.'],jajowod:['Jajowód','Droga komórki jajowej do macicy. Tu zwykle dochodzi do zapłodnienia i zaczyna się bruzdkowanie.'],macica:['Macica','Tu zarodek się zagnieżdża i rozwija. Jej błona śluzowa jest wcześniej przygotowana hormonami.']};
+  ST.forEach(function(s,i){INFO['s'+i]=[(i+1)+'. '+s[0],TX[i]]});
+  function C(x,y,r,f,s,w){return S('circle',{cx:x,cy:y,r:r,fill:f,stroke:s,'stroke-width':w||2.5})}
+  function tx(k,x,y,t){var e=T(x,y,t,{s:13,w:700});e.setAttribute('data-k',k);e.setAttribute('data-lab','1');return e}
+  var tube=S('path',{d:'M156 170 C230 88 340 88 440 140 C480 160 505 175 524 184',fill:'none',stroke:'var(--k5)','stroke-width':20,'stroke-linecap':'round'});
+  var tube2=S('path',{d:'M156 170 C230 88 340 88 440 140 C480 160 505 175 524 184',fill:'none',stroke:'var(--k5-bg)','stroke-width':15,'stroke-linecap':'round'});
+  var scene=[
+    S('ellipse',{cx:100,cy:215,rx:48,ry:32,fill:'var(--k1-bg)',stroke:'var(--k1)','stroke-width':2.5,'data-k':'jajnik'}),
+    S('g',{'data-k':'jajowod'},[tube,tube2,S('path',{d:'M106 200 Q128 170 160 164 L158 186 Z',fill:'var(--k5-bg)',stroke:'var(--k5)','stroke-width':2})]),
+    S('g',{'data-k':'macica'},[S('path',{d:'M520 140 Q600 100 690 140 Q694 210 644 290 L580 290 Q528 210 520 140 Z',fill:'var(--k4-bg)',stroke:'var(--k4)','stroke-width':2.5}),
+      S('path',{d:'M545 160 Q600 135 662 160 Q666 215 628 265 L596 265 Q540 215 545 160 Z',fill:'var(--k3-bg)',stroke:'var(--k3)','stroke-width':2}),T(603,222,'błona śluzowa',{s:12})]),
+    tx('jajnik',100,259,'jajnik'),tx('jajowod',288,78,'jajowód'),tx('macica',612,310,'macica')];
+  var sg=S('g',{}),ring=S('circle',{r:15,fill:'none',stroke:'var(--k4)','stroke-width':3,'stroke-dasharray':'4 3','pointer-events':'none'}),
+      mk=C(0,0,7,'var(--k3-bg)','var(--k3)',2.5);mk.setAttribute('pointer-events','none');
+  var ins=S('g',{}),frame=C(cx,cy,62,'var(--viz-bg2)','var(--viz-line)',2);
+  var tT=T(200,310,'',{a:'start',s:17,w:700}),tS=T(200,334,'',{a:'start',s:13,w:500,f:'var(--viz-mut)'});
+  var dots=[],dg=[];
+  for(var i=0;i<10;i++)(function(i){var c=C(200+i*34,375,11,'var(--viz-bg)','var(--accent)',2),t=T(200+i*34,375,String(i+1),{s:11,w:700}),g=S('g',{'data-k':'s'+i,'aria-label':'Etap '+(i+1)},[c,t]);
+    dots.push([c,t]);dg.push([g,i])})(i);
+  var kids=scene.concat([frame,ins,T(cx,407,'powiększenie',{s:11,w:500,f:'var(--viz-mut)'}),sg,ring,mk,tT,tS],dg.map(function(d){return d[0]}));
+  var sv=BIO.svg(700,415,'Droga od owulacji do zagnieżdżenia zarodka w macicy',kids),box=BIO.fx.infoBox(START);
+  var L=0;
+  function pt(f){var p=tube.getPointAtLength(L*f);return[p.x,p.y]}
+  function sp(x,y,rot,sc){return S('g',{transform:'translate('+x+','+y+') rotate('+rot+') scale('+sc+')'},[C(0,0,3.5,'var(--viz-ink)','var(--viz-ink)',1),S('path',{d:'M3 0 q5 -5 10 0 t10 0',fill:'none',stroke:'var(--viz-ink)','stroke-width':1.6})])}
+  function cell(x,y,r,n){var a=[C(x,y,r,'var(--k3-bg)','var(--k3)',2)];if(n)a.push(C(x,y,n,'var(--k5-bg)','var(--k5)',1.5));return a}
+  function rg(n,R,r,nu,ox,oy){var o=[];for(var k=0;k<n;k++){var t=2*Math.PI*k/n-Math.PI/2;o=o.concat(cell(ox+R*Math.cos(t),oy+R*Math.sin(t),r,nu))}return o}
+  function drawIns(i){
+    var a=[];
+    if(i<=1)a=cell(cx,cy,38,11);
+    else if(i===2){a=cell(cx,cy,30,9);[180,148,212].forEach(function(d){var t=d*Math.PI/180;a.push(sp(cx+34*Math.cos(t),cy+34*Math.sin(t),d,1.1))})}
+    else if(i===3){a=cell(cx,cy,32,9);a.push(S('circle',{cx:cx,cy:cy,r:42,fill:'none',stroke:'var(--k4)','stroke-width':2.5,'stroke-dasharray':'4 3'}),sp(cx-22,cy-8,200,1.1))}
+    else if(i===4)a=cell(cx,cy,36,13);
+    else if(i===5)a=cell(cx-27,cy,27,8).concat(cell(cx+27,cy,27,8));
+    else if(i===6)[[-23,-23],[23,-23],[-23,23],[23,23]].forEach(function(p){a=a.concat(cell(cx+p[0],cy+p[1],23,7))});
+    else if(i===7)a=cell(cx,cy,14,5).concat(rg(7,36,15,5,cx,cy));
+    else if(i===8)a=cell(cx,cy,12,3).concat(rg(5,24,11,3,cx,cy),rg(10,47,9,3,cx,cy));
+    else{a=[S('path',{d:'M'+(cx-52)+' '+(cy+33)+' Q'+cx+' '+(cy+8)+' '+(cx+52)+' '+(cy+33)+' A62 62 0 0 1 '+(cx-52)+' '+(cy+33)+' Z',fill:'var(--k3-bg)',stroke:'var(--k3)','stroke-width':2})];
+      a=a.concat(cell(cx,cy+14,9,3),rg(6,17,8.5,3,cx,cy+14))}
+    return a}
+  var POS=[[128,196],0.1,0.3,0.3,0.3,0.42,0.56,0.7,[562,192],[600,143]];
+  function go(i,say){
+    cur=i;
+    var p=POS[i];p=(typeof p==='number')?pt(p):p;
+    mk.setAttribute('cx',p[0]);mk.setAttribute('cy',p[1]);ring.setAttribute('cx',p[0]);ring.setAttribute('cy',p[1]);ring.setAttribute('display',i===3?'inline':'none');
+    while(sg.firstChild)sg.removeChild(sg.firstChild);
+    var fs=i===2?[.52,.6,.68]:(i===3?[.37,.55,.63]:[]);
+    fs.forEach(function(f){var q=pt(f);sg.appendChild(sp(q[0],q[1],0,.9))});
+    while(ins.firstChild)ins.removeChild(ins.firstChild);
+    drawIns(i).forEach(function(n){ins.appendChild(n)});
+    tT.textContent=(i+1)+'. '+ST[i][0];tS.textContent=ST[i][1];
+    dots.forEach(function(d,j){var on=j===i;d[0].style.setProperty('fill',on?'var(--accent)':'var(--viz-bg)');d[1].style.setProperty('fill',on?'var(--viz-bg)':'var(--viz-ink)')});
+    if(say){box.className='bv-info';box.innerHTML='<b>'+INFO['s'+i][0]+'</b>'+INFO['s'+i][1]}}
+  var bP=BIO.btn('◀ krok',function(){go((cur+9)%10,true)}),bN=BIO.btn('krok ▶',function(){go((cur+1)%10,true)});
+  var tools=BIO.H('div','bv-tools',null,[bP,bN]);
+  el.appendChild(tools);el.appendChild(sv);el.appendChild(box);
+  L=tube.getTotalLength();
+  BIO.fx.info(el,box,INFO);
+  dg.forEach(function(d){d[0].addEventListener('click',function(){go(d[1],true)});d[0].addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')go(d[1],true)})});
+  el.querySelectorAll('[data-lab]').forEach(function(x){x.setAttribute('tabindex','-1')});
+  go(cur,false);
+  BIO.fx.auto(el,function(){go((cur+1)%10,true)},2800);
+}});

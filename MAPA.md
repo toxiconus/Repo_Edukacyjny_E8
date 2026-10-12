@@ -11,7 +11,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
-- `WERYFIKACJA.md` 40 KB
+- `WERYFIKACJA.md` 41 KB
 
 ## angielski  (3 pl., 959 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -63,8 +63,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
 - ⚠`L000-INDEKS-ROKU.html` 54 KB
 
-## biologia/bio  (2 pl., 15 KB)
-- `BIO_KATALOG.md` 10 KB
+## biologia/bio  (2 pl., 16 KB)
+- `BIO_KATALOG.md` 11 KB
 - `PRZEKAZANIE.md` 5 KB
 
 ## biologia/bio/grafiki/propozycje  (3 pl., 30 KB)
@@ -72,7 +72,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `U10_krzywe_glukozy.svg` 10 KB
 - `U10_os_tarczycowa.svg` 10 KB
 
-## biologia/bio/md  (11 pl., 906 KB)
+## biologia/bio/md  (11 pl., 910 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 44 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 61 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 63 KB
@@ -83,15 +83,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.07.U06.oddychanie_i_wydalanie.md` 82 KB
 - ⚠`BIO.07.U08.uklad_nerwowy_i_zmysly.md` 110 KB
 - ⚠`BIO.07.U10.uklad_dokrewny.md` 107 KB
-- ⚠`BIO.07.U11.rozmnazanie_i_rozwoj.md` 104 KB
+- ⚠`BIO.07.U11.rozmnazanie_i_rozwoj.md` 107 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 320 KB)
+## biologia/bio/szablon  (5 pl., 362 KB)
 - `baza-wspolna.css` 45 KB
-- ⚠`bio-viz.js` 262 KB
+- ⚠`bio-viz.js` 303 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
@@ -594,10 +594,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (16 pl., 86 KB)
+## eksport  (17 pl., 110 KB)
 - (zwinięte; `ls eksport`)
 
-## narzedzia  (16 pl., 117 KB)
+## eksport/grafiki  (1 pl., 7 KB)
+- `VIZ_START.html` 7 KB
+
+## narzedzia  (17 pl., 122 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)

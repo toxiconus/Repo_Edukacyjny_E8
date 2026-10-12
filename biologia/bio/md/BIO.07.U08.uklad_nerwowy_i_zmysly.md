@@ -145,6 +145,9 @@ Przekazywanie w synapsie chemicznej jest **jednokierunkowe** (neuroprzekaźnik j
 **Alkohol, nikotyna, narkotyki** i niektóre „dopalacze” zmieniają działanie neuroprzekaźników — zaburzają koordynację, czas reakcji, ocenę sytuacji i pamięć, a mózg szybko się do nich przystosowuje, co prowadzi do **uzależnienia**. Mózg nastolatka wciąż się rozwija, dlatego jest na nie szczególnie wrażliwy. Alkohol wydłuża czas reakcji — to jeden z powodów zakazu prowadzenia pojazdów po alkoholu.
 :::
 
+@viz synapsa | Synapsa chemiczna krok po kroku | animacja w pięciu krokach
+@opis Po lewej zakończenie aksonu (niebieskie) z pęcherzykami neuroprzekaźnika, pośrodku szczelina synaptyczna, po prawej następna komórka (zielona) z receptorami (fioletowe); strzałka u góry pokazuje kierunek przekazu. Pięć kroków: impuls dochodzi do zakończenia aksonu, pęcherzyki łączą się z błoną i uwalniają neuroprzekaźnik, cząsteczki przechodzą przez szczelinę, łączą się z receptorami (receptory ciemnieją), w następnej komórce powstaje nowy impuls. Animacja leci do przodu i od początku — przekazanie jest chemiczne, jednokierunkowe i trwa chwilę.
+
 ## 5 | Łuk odruchowy i odruchy [[basic:E8]] {#odruchy}
 
 **Odruch** to szybka, automatyczna reakcja na bodziec zachodząca z udziałem układu nerwowego. Droga impulsu od receptora do efektora to **łuk odruchowy**.
@@ -1242,3 +1245,4 @@ Zapis surowy: `biologia/plany/audyty/ULEPSZ_SONNET_U08_reszta_2026-10-12.md` (+ 
 
 **Nieprzyjęte:** grafika SVG drogi wzrokowej — zapisana w `biologia/bio/grafiki/propozycje/` jako wzór do komponentu `bio-viz.js`; linijka ze skalą czasu i schemat ucha — zbędne (ucho już ma `@viz ucho-droga`).
 
+**Grafiki wykonane (2026-10-12, z odpowiedzi na `eksport/GRAFIKI_PROMPT.md`, wczytane `wczytaj_grafiki.py`):** synapsa.

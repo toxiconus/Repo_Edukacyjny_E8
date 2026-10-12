@@ -63,3 +63,9 @@ Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko
 Prymitywy (`BIO.g`): `ring` (puryna 6+5 / pirymidyna 6), `hbonds`, `sugar`, `phos`, `miniHelix`, `squiggle` (chromatyna), `chromosome`. Ikony: `BIO.ICO` (organizm, komorka, jadro, chromosom, dna, rna, bialko, funkcja, gen). Efekty: `BIO.fx.info`, `fx.toggle`, odsłanianie figur przy przewijaniu.
 
 Kontenery md tylko w BIO: `::: mity` (linie `mit || poprawka`), `::: drzewo` (mapa pojęć z wcięć).
+| synapsa | synapsa chemiczna w 5 krokach: impuls → pęcherzyki → neuroprzekaźnik w szczelinie → receptory → nowy impuls; animacja do przodu | krok="0–4" | U08 |
+| etapy-zycia | pionowa oś czasu 10 okresów życia (zarodkowy → starość) z wiekiem orientacyjnym, klik = cechy | start="zarodkowy|…|starosc" | U11 |
+| lozysko-wymiana | łożysko: krew matki opływa kosmki płodu, strzałki wymiany O₂/składników i CO₂/produktów przemiany, pępowina (2 tętnice, 1 żyła), klik = opis | — | U11 |
+| uklad-rozrodczy | schemat męskiego i żeńskiego układu rozrodczego (przełącznik), klik = funkcja narządu; zaznaczone miejsce zapłodnienia | start="meski|zenski" | U11 |
+| cykl-miesiaczkowy | cykl 1–28 dni: jajnik (pęcherzyk → owulacja → ciałko żółte), błona śluzowa macicy, estrogeny i progesteron; suwak dnia | dzien="1–28" | U11 |
+| droga-zarodka | od owulacji do zagnieżdżenia: jajnik, jajowód, macica + powiększenie komórek (10 etapów), animacja do przodu | krok="0–9" | U11 |

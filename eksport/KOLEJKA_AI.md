@@ -4,23 +4,25 @@
 
 ## biologia
 
-**WYSŁAĆ (bez W1) — 1 lekcji, 102 KB:** U11 (102 KB)
+**WYSŁAĆ (bez W1) — 1 lekcji, 105 KB:** U11 (105 KB)
 
-- zestaw 1 (102 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U11 biologia/bio/md/BIO.07.U11.rozmnazanie_i_rozwoj.md`
+- zestaw 1 (105 KB): `python3 eksport/paczka_ai.py ulepsz BIO_U11 biologia/bio/md/BIO.07.U11.rozmnazanie_i_rozwoj.md`
 
 **niski priorytet (W1 starym promptem) — 3 lekcji, 182 KB:** REV01 (43 KB) · REV02 (59 KB) · U06 (79 KB)
 
-**NIE wysyłać (W1 FULL) — 7 lekcji, 605 KB:** L010 (61 KB) · H01 (78 KB) · U01 (57 KB) · U03 (104 KB) · U04 (88 KB) · U08 (107 KB) · U10 (105 KB)
+**NIE wysyłać (W1 FULL) — 7 lekcji, 605 KB:** L010 (61 KB) · H01 (78 KB) · U01 (57 KB) · U03 (104 KB) · U04 (88 KB) · U08 (108 KB) · U10 (105 KB)
 
 ## chemia
 
-**WYSŁAĆ (bez W1) — 3 lekcji, 181 KB:** N05 (58 KB) · R03A (34 KB) · X04 (88 KB)
+**WYSŁAĆ (bez W1) — 4 lekcji, 271 KB:** J03 (89 KB) · N05 (58 KB) · R03A (34 KB) · X04 (88 KB)
 
-- zestaw 1 (58 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N05 chemia/che-modular/lessons-md/gotowe/N05_wodorki.md`
+- zestaw 1 (89 KB): `python3 eksport/paczka_ai.py ulepsz CHE_J03 chemia/che-modular/lessons-md/gotowe/J03_rownania_jonowe_i_stracanie.md`
 
-- zestaw 2 (34 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R03A chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
+- zestaw 2 (58 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N05 chemia/che-modular/lessons-md/gotowe/N05_wodorki.md`
 
-- zestaw 3 (88 KB): `python3 eksport/paczka_ai.py ulepsz CHE_X04 chemia/che-modular/lessons-md/gotowe/X04_szereg_aktywnosci_metali.md`
+- zestaw 3 (34 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R03A chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
+
+- zestaw 4 (88 KB): `python3 eksport/paczka_ai.py ulepsz CHE_X04 chemia/che-modular/lessons-md/gotowe/X04_szereg_aktywnosci_metali.md`
 
 **niski priorytet (W1 starym promptem) — 12 lekcji, 827 KB:** F01 (52 KB) · F02 (43 KB) · F03 (43 KB) · F04 (32 KB) · F05 (35 KB) · F06 (55 KB) · N01 (122 KB) · N02 (128 KB) · N03 (133 KB) · N04 (85 KB) · R03 (33 KB) · REV01 (61 KB)
 
