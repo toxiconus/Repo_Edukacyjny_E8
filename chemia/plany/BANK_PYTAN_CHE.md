@@ -516,3 +516,103 @@ Uwagi:
 Uwagi:
 - Zestawienie nie zawiera żadnego arkusza ani klucza do odczytu. Indeks ID (np. SW-2324-BIO-III, KP-2223-CHE-S/R/W) to propozycje nazewnictwa, nie potwierdzone pozycje – nie wpisywać jako „potwierdzone".
 - Przykład „pułapki" w angielskim (tomorrow → will) jest metodą, nie treścią konkretnego zadania – nie wpisywać jako zadanie z arkusza.
+
+---
+
+## Parafrazy zadań (własnymi słowami, z odczytów PDF)
+
+Zasady tej sekcji:
+- Każdy wpis to parafraza tematu zadania, a nie przepisana treść. Źródło i rok podane przy nagłówku arkusza.
+- Parafrazy powstały z odczytów (tematy, liczba punktów, typ) z wcześniejszej weryfikacji. Pełnej treści nie przepisywałem.
+- Gdy do arkusza dojdzie klucz, do parafrazy dopisuję odpowiedź, a nie zmieniam treści zadania.
+
+### Łódź – wojewódzki 2022/23 (15 zadań, 100 pkt, 120 min; klucz z 2023/03)
+
+| Nr | Parafraza (własne słowa) | Dział | Typ | Pkt |
+|---|---|---|---|---|
+| 1 | Ocenić sześć zdań jako prawdziwe albo fałszywe. | Różne | P/F | 6 |
+| 2 | Zapisać równania reakcji prowadzące do powstania soli. | Reakcje, sole | Otwarte | 8 |
+| 3 | Podać wzory sumaryczne dwóch soli (cynk, żelazo III). | Nomenklatura | Otwarte | 6 |
+| 4 | Wskazać właściwości pierwiastków F, S, Cl, Se. | Układ okresowy | Zamknięte/otwarte | 4 |
+| 5 | Dobrać metodę rozdzielenia wskazanych mieszanin. | Mieszaniny | Zamknięte | 3 |
+| 6 | Nazwać tlenki i określić barwę papierka wskaźnikowego. | Tlenki, wskaźniki | Otwarte | 8 |
+| 7 | Odczytać rozpuszczalność KCl z wykresu i obliczyć, ile soli rozpuści się w danych warunkach. | Rozpuszczalność | Rachunkowe | 16 |
+| 8 | Dopasować izomery i rozstrzygnąć, czy stwierdzenia są prawdziwe. | Izomeria | Zamknięte | 5 |
+| 9 | Określić wzory węglowodorów. | Węglowodory | Zamknięte | 2 |
+| 10 | Na podstawie spalania węglowodoru obliczyć wielkości, nazwać go i zapisać równania. | Spalanie | Rachunkowe | 13 |
+| 11 | Rozpoznać eten i etan. | Węglowodory | Otwarte | 2 |
+| 12 | Porównać gazy w naczyniach, wskazać szereg homologiczny i uzupełnić tabelę. | Szeregi homologiczne | Otwarte | 8 |
+| 13 | Ustalić związki A i B i zapisać równania reakcji. | Reakcje związków | Otwarte | 8 |
+| 14 | Zapisać reakcję estryfikacji etanolu z glicerolem. | Alkohole, estry | Otwarte | 8 |
+| 15 | Rozpoznać kwasy i estry wśród podanych związków. | Związki organiczne | Zamknięte | 3 |
+
+### Kraków – wojewódzki 2023/24 (16 zadań, 120 min, 60 pkt; bez klucza w pliku)
+
+| Nr | Parafraza (własne słowa) | Dział | Typ | Pkt |
+|---|---|---|---|---|
+| 1 | Na podstawie masy molowej 47 u ustalić kwas tlenowy i napisać jego reakcję z tlenkiem niemetalu reagującym z wodą. | Kwasy, tlenki | Otwarte | 2 |
+| 2 | Opisać doświadczenie w probówkach: zapisać równania, określić odczyn i równania jonowe skrócone. | Reakcje w roztworach | Otwarte | 4 |
+| 3 | Obliczyć stężenie procentowe KOH po wprowadzeniu tlenku potasu do wody. | Stężenia | Rachunkowe | 2 |
+| 4 | Obliczyć masę MgO w mieszaninie z CaCO₃ przy wydajności 80%. | Stechiometria | Rachunkowe | 2 |
+| 5 | Oszacować wielkości roztworu nasyconego soli (masa wody, temperatura nasycenia, stężenie molowe). | Rozpuszczalność | Rachunkowe | 5 |
+| 6 | Ocenić zdania o doświadczeniach z metalami i wskazać probówkę z jedną solą. | Metale | P/F, zamknięte | 2 |
+| 7 | Wskazać odczynnik w nadmiarze (NaOH czy H₂SO₄) i podać jego liczbę moli. | Stechiometria | Rachunkowe | 2 |
+| 8 | Na podstawie szeregu aktywności metali opisać probówki, w których wydziela się gaz, i zapisać równania. | Szereg aktywności | Otwarte | 7 |
+| 9 | Scharakteryzować cynę: charakter chemiczny, równania jonowo-elektronowe, utleniacz i reduktor, metodę rozdziału, wzór soli. | Redoks, metale | Otwarte | 8 |
+| 10 | Ocenić zdania o alkanach i obliczyć masę metanu z gazu syntezowego. | Alkany | P/F + rachunkowe | 4 |
+| 11 | Zapisać produkty reakcji węglowodoru A z HBr i z wodą, nazwać je i określić typy reakcji. | Węglowodory nienasycone | Otwarte | 8 |
+| 12 | Opisać spalanie propynu, obliczyć barwę mieszaniny z bromem i podać izomer z innego szeregu. | Alkiny | Otwarte | 4 |
+| 13 | Na podstawie spalania nasyconego alkoholu ustalić jego wzór sumaryczny. | Alkohole | Rachunkowe | 2 |
+| 14 | Podać liczbę grup –OH w alkoholu wielowodorotlenowym i jego wzór. | Alkohole | Otwarte | 2 |
+| 15 | Obliczyć objętość roztworu 30% kwasu octowego po rozcieńczeniu. | Stężenia | Rachunkowe | 2 |
+| 16 | Ustalić wzory kwasu i alkoholu, z których powstaje ester C₅H₁₀O₂, i podać jego nazwę. | Estry | Otwarte | 4 |
+
+### Kielce – wojewódzki (etap III) 2025 (15 zadań, 60 min, 44 pkt; klucz osobno)
+
+| Nr | Parafraza (własne słowa) | Dział | Typ | Pkt |
+|---|---|---|---|---|
+| 1 | Zidentyfikować sole w probówkach I–IV na podstawie tabeli rozpuszczalności (6 podpunktów). | Rozpuszczalność, sole | Zamknięte/otwarte | 0–6 |
+| 2 | Opisać właściwości sodu i jego reakcję z wodą. | Metale | Otwarte | 0–1 |
+| 3 | Ocenić, jak zmienia się pH roztworów w trzech doświadczeniach. | pH | Zamknięte | 0–1 |
+| 4 | Ocenić zdania o pierwiastkach X i Y (4 podpunkty). | Układ okresowy | P/F | 0–4 |
+| 5 | Ustalić stosunek objętościowy propenu do chloru w reakcji addycji. | Węglowodory | Rachunkowe | 0–2 |
+| 6 | Ocenić zdania o hydrolizie azotanu(III) sodu (3 podpunkty). | Hydroliza | P/F | 0–3 |
+| 7 | Obliczyć objętość gliceryny potrzebną do 10% roztworu. | Stężenia | Rachunkowe | 0–2 |
+| 8 | Wskazać zbiór substancji będących reduktorami. | Redoks | Zamknięte | 0–1 |
+| 9 | Opisać reakcję miedzi z kwasem azotowym(V): redoks i obliczenia (4 podpunkty). | Redoks | Rachunkowe | 0–5 |
+| 10 | Wskazać doświadczenie z wydzielaniem gazu. | Reakcje | Zamknięte | 0–1 |
+| 11 | Zinterpretować probówki I–VI (zmiana barwy papierka, woda bromowa, jod). | Obserwacje | Otwarte | 0–3 |
+| 12 | Zidentyfikować gazowy węglowodór na podstawie polimeryzacji. | Węglowodory | Otwarte | 0–2 |
+| 13 | Ocenić zdania o otrzymywaniu tlenku węgla(II) i redukcji PbO (2 podpunkty). | Tlenki | P/F | 0–4 |
+| 14 | Wskazać sposób usuwania tłustych plam. | Zastosowania | Zamknięte | 0–1 |
+| 15 | Ocenić zdania o strącaniu osadu jodku ołowiu(II) i stężeniach jonów (4 podpunkty). | Strącanie | P/F | 0–8 |
+
+### Kielce – wojewódzki (etap III) 2021 (20 zadań, 60 min, 50 pkt; bez klucza w pliku)
+
+| Nr | Parafraza (własne słowa) | Dział | Typ | Pkt |
+|---|---|---|---|---|
+| 1 | Ocenić zdania o tlenkach XO₂ i YO₂ (6 pkt). | Układ okresowy | P/F | 6 |
+| 2 | Obliczyć masę kwasu azotowego(V) zobojętnionego NaOH. | Stechiometria | Rachunkowe | 2 |
+| 3 | Zidentyfikować kwas monokarboksylowy po zobojętnieniu KOH. | Kwasy karboksylowe | Rachunkowe | 2 |
+| 4 | Wskazać probówkę, w której nie powstanie mydło. | Mydła | Zamknięte | 1 |
+| 5 | Wskazać probówkę z odczynem kwasowym. | pH | Zamknięte | 2 |
+| 6 | Obliczyć masę H₂SO₄ w 1,5 dm³ elektrolitu akumulatorowego. | Stężenia | Rachunkowe | 2 |
+| 7 | Zidentyfikować alkan na podstawie objętości produktów spalania. | Alkany | Rachunkowe | 2 |
+| 8 | Ocenić zdania o paście do zębów, dojrzewaniu bananów, czernieniu srebra i cukrach (4 pkt). | Zastosowania | P/F | 4 |
+| 9 | Wskazać kwas tłuszczowy odpowiedzialny za wysoką liczbę jodową. | Tłuszcze | Zamknięte | 2 |
+| 10 | Określić odczyn roztworu po zmieszaniu KOH z H₂SO₄ (0,5 : 0,5 mola). | pH, zobojętnianie | Zamknięte/otwarte | 2 |
+| 11 | Na podstawie spalania alkoholu ustalić liczbę grup –OH. | Alkohole | Rachunkowe | 2 |
+| 12 | Obliczyć masę kwasu masłowego potrzebną do otrzymania maślanu etylu (wydajność 69%). | Estry | Rachunkowe | 2 |
+| 13 | Ustalić czterowartościowy pierwiastek z porównania mas cząsteczkowych tlenku i wodorku. | Układ okresowy | Rachunkowe | 2 |
+| 14 | Dobrać odczynniki rozróżniające kwas solny, siarkowy(VI) i octowy. | Analiza jakościowa | Otwarte | 2 |
+| 15 | Opisać syntezę chlorku winylu z etynu i HCl: stosunek mas i nasycenie produktu. | Węglowodory | Rachunkowe | 2 |
+| 16 | Określić gaz palący się z wydzielaniem sadzy. | Węglowodory | Otwarte | 2 |
+| 17 | Wskazać produkt, który nie zabarwi się jodyną. | Skrobia, jod | Zamknięte | 1 |
+| 18 | Ocenić stechiometrię reakcji (4 podpunkty). | Stechiometria | Rachunkowe | 4 |
+| 19 | Ocenić zdania o doświadczeniu w probówkach 1–5 (4 pkt). | Doświadczenia | P/F | 4 |
+| 20 | Opisać doświadczenia w probówkach 1–4 i zapisać równanie jonowe skrócone. | Doświadczenia | Otwarte | 4 |
+
+Uwagi do sekcji:
+- Parafrazy w tabelach to „Dział" i „Typ" z odczytu, a nie treść zadań. Przy pełnej treści z kopii PDF uzupełnić ją osobno.
+- Kolumna „Typ" ma wartości: zamknięte, otwarte, P/F, rachunkowe – wg oznaczeń w odczycie. Gdzie odczyt nie podał typu, wpisane jest „zamknięte/otwarte".
+- Arkusze z kluczem: Łódź 2022/23 (model), Kraków 2023/24 szkolny i rejonowy (klucz z odpowiedziami), Kraków 2024/25 rejonowy (klucz z odpowiedziami). Odpowiedzi do tych arkuszy są w sekcji zestawień, nie w parafrazach.
