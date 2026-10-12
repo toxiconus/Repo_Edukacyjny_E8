@@ -2,11 +2,12 @@
 kod: N02
 uid: 
 tytul: Wodorotlenki i zasady
-opis: 
+opis: Wodorotlenki — grupa OH⁻, wzór M(OH)ₙ i nawias, nazwy, rozpuszczalność, wodorotlenek a zasada, dysocjacja i odczyn, otrzymywanie, zobojętnianie, strącanie, wapno i woda wapienna, amfoteryczność
 kicker: N02 · CHEMIA · MASTER LAB v9.0
 lead: Kation metalu + OH⁻ → wzór M(OH)ₙ, nawias i nazwy; rozpuszczalność, wodorotlenek a zasada, dysocjacja i odczyn; trzy metody otrzymywania, strącanie, zobojętnianie, wskaźniki, amfoteryczność. Modele, liczby i równania z silnika CHE.HYDROXIDES.
-plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNIE / LO]]
+plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE]]
 stopka: **CHEMIA N02 v9.0** · Wodorotlenki · 2026
+stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewnętrznego W1
 ---
 ::: minimum | Muszę umieć na E8 — 8 kluczowych faktów
 1. **Wodorotlenek** to związek zbudowany z kationu metalu i anionu wodorotlenkowego <span class="hl">OH⁻</span>.
@@ -91,6 +92,20 @@ Ca(OH)₂ — z CaO i wody (metoda 1); Fe(OH)₃ — z FeCl₃ i NaOH (metoda 3,
 
 <p class="mini-note" style="margin-top:10px;">To nie są uniwersalne metody dla każdego wodorotlenku — dotyczą wybranych związków i warunków szkolnych.</p>
 :::
+:::
+
+## 4a | Wykład — wodorotlenek od zera {#wyklad}
+
+::: karta understand | Wykład od zera
+Wiesz już, że niektóre tlenki reagują z wodą. Co powstaje? Weźmy tlenek wapnia: CaO + H₂O → Ca(OH)₂. Produkt to **wodorotlenek**, czyli związek zbudowany z **kationu metalu** (tu Ca²⁺) i **anionów wodorotlenkowych OH⁻**. Grupa OH⁻ to jeden tlen i jeden wodór połączone razem, której całość ma ładunek −1. Traktujemy ją jak jeden klocek.
+
+Dlaczego to ważne? Grupa OH⁻ odpowiada za zasadowe właściwości roztworu. Gdy wodorotlenek dobrze rozpuszcza się w wodzie, uwalnia jony OH⁻, a roztwór zmienia barwę wskaźnika (np. fenoloftaleina staje się malinowa). Właśnie dlatego mówimy o **zasadach**.
+
+Jak zbudować wzór? Zamiast uczyć się wzorów na pamięć, odtwarzamy je z ładunków. Kation Ca²⁺ ma ładunek +2, a każda grupa OH⁻ ma −1, więc potrzeba dwóch grup: Ca²⁺ + 2OH⁻ → Ca(OH)₂. Liczba grup OH⁻ to wartość bezwzględna ładunku kationu (w typowych wodorotlenkach szkolnych). Gdy grup jest więcej niż jedna, wzór zapisujemy z nawiasem.
+
+Nie wszystkie wodorotlenki rozpuszczają się tak samo. NaOH i KOH rozpuszczają się świetnie, Ca(OH)₂ słabo, a Cu(OH)₂ czy Fe(OH)₃ praktycznie wcale — wtedy zostają jako osady o charakterystycznej barwie. Rozpuszczalność i odczyn to dwie różne sprawy: osad nie zmienia odczynu wody tak jak roztwór NaOH.
+
+Na koniec: wodorotlenek to **substancja** (stały NaOH, osad Cu(OH)₂), a zasada w szkolnym ujęciu to jej **wodny roztwór** z jonami OH⁻. Pamiętaj o tym rozróżnieniu w całej lekcji.
 :::
 
 ## 5 | Definicja, budowa i nazewnictwo [[basic:E8]] {#budowa .section}
@@ -222,11 +237,11 @@ Metale ze zmiennym stopniem utlenienia (np. Fe, Cu, Sn, Pb, Mn, Cr) — wymagaj�
 ::: karta extra | CuOH i AgOH — tylko jako ciekawostka
 <span class="level-badge level-extra">AMBITNE</span>
 
-\<span class="formula">CuOH</span> (formalny wodorotlenek miedzi(I)) jest nietrwały — w typowych warunkach szkolnego doświadczenia przechodzi w tlenek miedzi(I):
+<span class="formula">CuOH</span> (formalny wodorotlenek miedzi(I)) jest nietrwały — w typowych warunkach szkolnego doświadczenia przechodzi w tlenek miedzi(I):
 
 <p style="margin-top:8px;"><span class="formula-lg">2CuOH → Cu₂O + H₂O</span></p>
 
-\<span class="formula">AgOH</span> (wodorotlenek srebra(I)) również jest nietrwały i rozpada się do tlenku srebra(I):
+<span class="formula">AgOH</span> (wodorotlenek srebra(I)) również jest nietrwały i rozpada się do tlenku srebra(I):
 
 <p style="margin-top:8px;"><span class="formula-lg">2AgOH → Ag₂O + H₂O</span></p>
 
@@ -247,7 +262,7 @@ W temperaturze pokojowej **wodorotlenki są ciałami stałymi** (kryształy, pro
 ::: karta warning | Higroskopijność
 **Higroskopijność** — zdolność substancji do pochłaniania wilgoci z powietrza.
 
-\<span class="formula">NaOH</span> i <span class="formula">KOH</span> są substancjami silnie higroskopijnymi i żrącymi: pozostawione na powietrzu „rozpływają się”, bo wchłaniają wodę i tworzą stężony roztwór. Dlatego przechowuje się je w szczelnych naczyniach.
+<span class="formula">NaOH</span> i <span class="formula">KOH</span> są substancjami silnie higroskopijnymi i żrącymi: pozostawione na powietrzu „rozpływają się”, bo wchłaniają wodę i tworzą stężony roztwór. Dlatego przechowuje się je w szczelnych naczyniach.
 
 **Przy rozpuszczaniu w wodzie** wydziela się dużo ciepła (rozpuszczanie NaOH w wodzie przebiega z wydzieleniem ciepła) — naczynie może się mocno nagrzać. Zasady bezpiecznej pracy (ochrona, kolejność dodawania, pierwsza pomoc): [§9.2](#bhp).
 
@@ -500,7 +515,7 @@ Metoda 3 to **reakcja strąceniowa**: kation metalu z roztworu soli łączy się
 > zielonkawy osad, który na powietrzu brunatnieje (niżej)
 
 ::: karta extra | Ciekawostka — Fe(OH)₂
-\<span class="formula">Fe(OH)₂</span> jest zwykle opisywany jako osad zielonkawy, który w obecności tlenu z powietrza może utleniać się do brunatnego <span class="formula">Fe(OH)₃</span>. Nie jest to wymagane na E8 — traktuj jako ciekawostkę.
+<span class="formula">Fe(OH)₂</span> jest zwykle opisywany jako osad zielonkawy, który w obecności tlenu z powietrza może utleniać się do brunatnego <span class="formula">Fe(OH)₃</span>. Nie jest to wymagane na E8 — traktuj jako ciekawostkę.
 :::
 
 ## 8 | Reakcje wodorotlenków [[basic:E8]] {#reakcje .section}
@@ -508,6 +523,11 @@ Metoda 3 to **reakcja strąceniowa**: kation metalu z roztworu soli łączy się
 ### 8.1 Zobojętnianie {#zobojetnianie}
 
 Zobojętnianie: kwas + zasada → sól + woda. Jony H⁺ i OH⁻ łączą się w wodę.
+
+::: karta understand | W skrócie: co naprawdę się dzieje przy zobojętnianiu?
+Kwas dostarcza jony H⁺, zasada dostarcza jony OH⁻. Gdy są w równej liczbie, łączą się w cząsteczki wody: H⁺ + OH⁻ → H₂O. Jony „widzowe” (np. Na⁺ i Cl⁻ przy NaOH i HCl) zostają w roztworze, a z roztworu można odzyskać sól przez odparowanie wody.
+:::
+
 
 @model n02-zobojetnianie-v01 | Zobojętnianie — licznik moli, pH, wskaźniki, jony H⁺ + OH⁻ → H₂O i krzywa pH | Zastępuje animację i symulator zobojętniania · CHE.HYDROXIDES.neutral (Kw), GFX.ions
 @opis Zobojętnianie: do zasady dodaje się porcjami kwas; licznik moli pokazuje ubywanie jonów OH⁻ i przybywanie H₂O, zmienia się pH i barwa wskaźnika, a krzywa pH opada gwałtownie w punkcie zobojętnienia. Wniosek: H⁺ + OH⁻ → H₂O — w punkcie zobojętnienia ilości kwasu i zasady są równoważne.
@@ -570,7 +590,7 @@ Trudno rozpuszczalne wodorotlenki podczas ogrzewania rozkładają się na tlenek
 - **sól metalu + zasada** → wodorotlenek↓ + sól (gdy wodorotlenek trudno rozpuszczalny)
 - **wodorotlenek rozpuszczalny + woda** → zasada (roztwór, jony OH⁻)
 - **kwas + zasada** → sól + woda
-- **ogrzewanie** wodorotlenku (poza litowcami) → tlenek + woda ([§8.2](#co2-rozklad))
+- **ogrzewanie** wodorotlenku (poza NaOH i KOH, które topią się bez rozkładu) → tlenek + woda ([§8.2](#co2-rozklad))
 
 > Interaktywna mapa dla wybranego wodorotlenku (z równaniami z silnika): model z [§7.1](#metody), zakładka „Mapa przemian”.
 :::
@@ -638,7 +658,7 @@ NaOH jest silnie żrący i rozkłada tłuszcze oraz białka (zmydlanie). **BHP:*
 **2. Dlaczego woda wapienna mętnieje przy dmuchaniu?**
 
 ::: odp | Model odpowiedzi
-\<span class="formula" data-rx="caoh2Co2">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span>. Trudno rozpuszczalny CaCO₃ tworzy osad. Przy dużym nadmiarze CO₂ osad może się ponownie rozpuszczać (powstaje Ca(HCO₃)₂).
+<span class="formula" data-rx="caoh2Co2">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span>. Trudno rozpuszczalny CaCO₃ tworzy osad. Przy dużym nadmiarze CO₂ osad może się ponownie rozpuszczać (powstaje Ca(HCO₃)₂).
 :::
 :::
 
@@ -662,7 +682,7 @@ Neutralizują HCl w żołądku: <span class="formula" data-rx="aloh3Hcl">Al(OH)�
 **5. Dlaczego wapno palone gaśnie po zalaniu wodą?**
 
 ::: odp | Model odpowiedzi
-\<span class="formula">CaO + H₂O → Ca(OH)₂ + ciepło</span>. Reakcja egzotermiczna. **BHP:** nie dotykać mokrymi rękami.
+<span class="formula">CaO + H₂O → Ca(OH)₂ + ciepło</span>. Reakcja egzotermiczna. **BHP:** nie dotykać mokrymi rękami.
 :::
 :::
 
@@ -713,7 +733,7 @@ Szkolny skrót „zasada = rozpuszczalny wodorotlenek” jest użyteczny na pozi
 ::: karta extra | Amoniak i zapis NH₄OH — pułapka E8
 **Amoniak NH₃** i woda amoniakalna dają odczyn zasadowy, ale NH₃ *nie jest wodorotlenkiem* (brak metalu i grupy OH⁻ we wzorze substancji). To zasada w sensie Brønsteda / odczynu roztworu — szczegóły w [Dodatku B](#ambitny).
 
-\<span class="formula">NH₄OH</span> można spotkać jako tradycyjny skrót. Dokładniejszy model wodnego amoniaku:
+<span class="formula">NH₄OH</span> można spotkać jako tradycyjny skrót. Dokładniejszy model wodnego amoniaku:
 
 <div class="equation-box"><strong>NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)</strong></div>
 
@@ -781,7 +801,7 @@ NaOH: jedna grupa OH⁻. Ca(OH)₂: dwie grupy OH⁻ — zapis składu związku,
 ::: div {style="background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:14px;text-align:center;"}
 <div style="font-size:12px;font-weight:800;color:var(--text-muted);margin-bottom:8px;">Ca(OH)₂ — wodorotlenek wapnia (model poglądowy)</div>
 
-<div class="svgx"><span>H</span><span>O</span><span>Ca</span><span>OH⁻</span><span>Ca²⁺</span><span>zapis poglądowy: H–O–Ca–O–H</span></div>
+<div class="svgx"><span>H</span><span>O</span><span>Ca</span><span>OH⁻</span><span>Ca²⁺</span><span>dwie grupy OH⁻ przy Ca²⁺ (nie wiązania Ca–O)</span></div>
 :::
 
 ::: div {style="background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:14px;text-align:center;grid-column:1/-1;"}
@@ -1424,11 +1444,11 @@ CuSO₄ + ___ NaOH → Cu(OH)₂↓ + ___ Na₂SO₄
 AlCl₃ + ___ NaOH → Al(OH)₃↓ + ___ NaCl</pre>
 
 ::: odp | Pokaż współczynniki
-\<span class="formula" data-rx="fecl3Naoh">FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl</span>
+<span class="formula" data-rx="fecl3Naoh">FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl</span>
 
-\<span class="formula" data-rx="cuso4Naoh">CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄</span>
+<span class="formula" data-rx="cuso4Naoh">CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄</span>
 
-\<span class="formula" data-rx="alcl3Naoh">AlCl₃ + 3NaOH → Al(OH)₃↓ + 3NaCl</span>
+<span class="formula" data-rx="alcl3Naoh">AlCl₃ + 3NaOH → Al(OH)₃↓ + 3NaCl</span>
 
 > Liczba OH⁻ = wartość bezwzględna ładunku kationu metalu. Potem domknij bilans atomów Cl / SO₄.
 :::
@@ -1594,7 +1614,7 @@ Teoria Brønsteda :: Kwas = donor protonu H⁺, zasada = akceptor H⁺.
 
 <div class="tip-card">
 <b>Fiszki w krótkich sesjach</b>
-          Lepiej 5 minut dziennie niż 30 minut raz w tygodniu. Fiszki są do szybkiego przypominania — nie czytaj ich jak podręcznika.
+          Krótkie, częste sesje działają lepiej niż jedna długa powtórka. Fiszki są do szybkiego przypominania — nie czytaj ich jak podręcznika.
         </div>
 
 <div class="tip-card">
@@ -1690,6 +1710,13 @@ Skąd wiemy to, co wiemy? Poznanie wodorotlenków to ponad 200 lat obserwacji. P
 :::
 :::
 
+::: karta extra | Ciekawostki o wodorotlenkach
+- **Mydło** powstaje w reakcji tłuszczu z mocną zasadą (NaOH lub KOH) — to tzw. zmydlanie. Stąd lekko zasadowy odczyn mydła.
+- **Zaprawa wapienna** twardnieje dzięki reakcji Ca(OH)₂ z CO₂ z powietrza, a więc powoli „odwęgla się” i wiąże — dlatego dawne mury wiązały bardzo wolno.
+- **Portlandyt** to naturalny minerał Ca(OH)₂; w betonie powstaje przy wiązaniu cementu i wpływa na jego odczyn zasadowy.
+- **Woda wapienna** ma pH około 12,4 — to silnie zasadowy roztwór, mimo że Ca(OH)₂ jest słabo rozpuszczalny.
+:::
+
 ## B | Dodatek B — teorie kwasów i zasad, hydraty [[extra:AMBITNE]] {#ambitny .section}
 
 ::: karta extra | Teoria Brønsteda i Lowry'ego — kim byli?
@@ -1744,6 +1771,12 @@ Gilbert N. Lewis (1923): **zasada** to donor pary elektronowej, **kwas** — jej
 > Każdy model ma w lekcji jeden przycisk. Zobojętnianie w trzech poziomach zapisu pokazuje model „Równania jonowe” (reakcja HCl + NaOH).
 
 ## ✓ | Audyt jakości {#audyt .section}
+
+::: karta new | AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przegląd wewnętrzny, pełny tekst lekcji)
+**Poprawki:** dodano wykład „od zera” (§4a) i mini-wykład „W skrócie” (§8.1); dodano karty ciekawostek (przed Dodatkiem B); naprawiono ucieczki znaczników `\<span>` / `\<b>` (widoczne jako surowy tekst w kilku kartach); w schemacie modelu Ca(OH)₂ zmieniono podpis „H–O–Ca–O–H” na „dwie grupy OH⁻ przy Ca²⁺”, bo wzór ten sugerował wiązania Ca–O; w §8.3 doprecyzowano, które wodorotlenki (NaOH, KOH) topią się bez rozkładu; usunięto zdanie o „5 minutach dziennie” (zasada kursu: bez planów dnia i czasu); uzupełniono `opis:` i `stan:` we frontmatterze; ujednolicono plakietkę `extra:AMBITNE`.
+
+**Nieprzyjęte:** brak uwag odrzuconych. Zewnętrzny W1 do wykonania osobno — brak oznaczenia „W1 FULL”.
+:::
 
 ::: karta new | v9.0 (2026-10-07) — redakcja według standardu lekcji
 - Nowy układ: start (1–4) → rdzeń E8 (5–9: definicja i budowa, właściwości, otrzymywanie, reakcje, zastosowania i BHP) → rozumienie / ambitne (10–14) → praktyka (15–18) → powtórka (19–24) → dodatki A–B → modele silnika.
