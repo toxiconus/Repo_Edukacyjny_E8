@@ -2,7 +2,7 @@
 """md → HTML lekcji CHE (format: SZABLON_LEKCJI.md).
 Użycie: python3 md2html.py md/N04_sole.md [...]   → dist/N04_sole.html (+ dist/index.html)
 Wspólne: engine/src/lekcja/lekcja.css, lekcja.js (wklejane do każdej lekcji), dist/che-viz.js (z modułów: tools/silnik.py)."""
-import os, re, sys, json, html as H
+import subprocess, os, re, sys, json, html as H
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD = os.path.join(ROOT, 'lessons-md', 'gotowe')
@@ -435,12 +435,14 @@ if __name__ == '__main__':
         fn = os.path.splitext(os.path.basename(p))[0]
         # lekcja bez grafik silnika (@model/@zlewka/@viz): mini-strona bez che-viz.js (sama treść + mini-JS lekcji)
         if not re.search(r'@(model|zlewka|viz)\b', open(p, encoding='utf-8').read()):
+            # wygląd ze wspólnego szablonu (narzedzia/lekcja_html.py) — jedna samodzielna strona, bez silnika
+            tmp = os.path.join(ROOT, 'dist', '_lekka'); os.makedirs(tmp, exist_ok=True)
+            subprocess.run([sys.executable, os.path.join(ROOT, '..', '..', 'narzedzia', 'lekcja_html.py'), '-p', 'che', '-o', tmp, p], check=True, stdout=subprocess.DEVNULL)
+            lekka = open(os.path.join(tmp, fn + '.html'), encoding='utf-8').read()
             os.makedirs(os.path.join(ROOT, 'dist', 'jeden_plik'), exist_ok=True)
-            # szerokie tabele przewijane w obrębie, bez przewijania całej strony (telefon)
-            doc = doc.replace('</head>', '<style>html,body{overflow-x:hidden}table{display:block;max-width:100%;overflow-x:auto}pre{max-width:100%;overflow-x:auto}</style>\n</head>', 1)
-            open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(doc)
-            open(os.path.join(ROOT, 'dist', 'jeden_plik', fn + '.html'), 'w', encoding='utf-8').write(doc)
-            metas.append((fn, meta)); print('ok lekka', fn, len(doc))
+            open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(lekka)
+            open(os.path.join(ROOT, 'dist', 'jeden_plik', fn + '.html'), 'w', encoding='utf-8').write(lekka)
+            metas.append((fn, meta)); print('ok lekka', fn, len(lekka))
             continue
         pg = page(meta, doc, fn)
         open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(pg)
