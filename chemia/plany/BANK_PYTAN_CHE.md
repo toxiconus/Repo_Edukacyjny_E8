@@ -77,7 +77,7 @@ Razem 34 pkt; 20 zadań. Odpowiedzi jak w zasadach oceniania (źródło: OKE War
 | 19 | J01 (elektrolity) | A | 0–1 |
 | 20 | O (alkohole, kwasy organiczne) | TAK, NIE | 0–2 |
 
-Uwaga: zadania 15.2, 16.2 i 17 są na poziomie L/A (nie tylko P). Przy wpisywaniu do lekcji oznaczyć poziomem.
+Kolumna „Dział lekcji” to przypisanie nasze, nie z OKE. Uwaga: zadania 15.2, 16.2 i 17 są na poziomie L/A (nie tylko P). Przy wpisywaniu do lekcji oznaczyć poziomem.
 
 ### OCHP 400 — treści zadań, bez kluczy (pobrany: `OCHP_400.pdf`)
 
