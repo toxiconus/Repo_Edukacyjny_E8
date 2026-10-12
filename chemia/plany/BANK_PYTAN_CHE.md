@@ -481,3 +481,22 @@ Zakres banku rozszerzony wg decyzji użytkownika: język angielski, język polsk
 Uwagi:
 - Nie wpisuję do banku treści zadań z chronionych arkuszy. Zapisuję metadane, źródła, odpowiedzi z oficjalnych kluczy i opisy tematów własnymi słowami.
 - Kolejny krok dla angielskiego, polskiego i biologii: znaleźć w wynikach wyszukiwania bezpośrednie adresy PDF arkuszy i kluczy (kuratoria Kraków, Warszawa, Kielce, Łódź, Bydgoszcz), a dla E8 – adresy CKE z arkuszami przykładowymi (np. `cke.gov.pl/images/_EGZAMIN_OSMOKLASISTY/...`).
+
+---
+
+## Weryfikacja zestawienia 3e7407ea (2026-10-12) – katalogi kujawsko-pomorskie, świętokrzyskie, łódzkie, E8 (CKE)
+
+| Źródło (z zestawienia) | Wynik | Co potwierdzono |
+|---|---|---|
+| Bydgoszcz (kujawsko-pomorskie) – etap wojewódzki 2024/25 (`2025-05-13_arkusze_klucze_2024_2025_12664`) | **Niepotwierdzony w tej partii** | Adres był już wcześniej w zestawieniach i nie wystąpił w wynikach wyszukiwania. Nie otwierany. |
+| Bydgoszcz – archiwum 2023/24 (`2023-2024_arkusze_konkursowe`), etap rejonowy (`info-arkusze-konkursowe`), etap wojewódzki (`info-arkusze_konkursowe_wojewodzkie`) | **Niepotwierdzony** | Żaden z trzech adresów nie wystąpił w wynikach wyszukiwania. |
+| Kielce – III etap 2023/24 (`84949`, katalog: biologia, chemia, j. angielski, j. polski – arkusz i model) | **Niepotwierdzony w tej partii** | Adres nie wystąpił w wynikach (wcześniej też nie). Zestawienie podaje wykaz plików, ale nie zostało to otwarte. |
+| Łódź 2024/25 (zestawienie podaje jako link adres Bydgoszczy) | **Błąd w zestawieniu** | Źródło „Materiały konkursowe 2024/2025 – Kuratorium Oświaty w Łodzi" ma w zestawieniu adres Bydgoszczy (`kuratorium.bydgoszcz.pl/...`). Właściwy adres Łodzi to `kuratorium.lodz.pl/konkurs/materialy-konkursowe-7/` – niepotwierdzony w wynikach. |
+| CKE – dział „Egzamin ósmoklasisty" (`bip.cke.gov.pl/artykul/214/1652/egzamin-osmoklasisty`) i deklaracja o archiwum 2019–2025 | **Niepotwierdzony** | Adres nie wystąpił w wynikach wyszukiwania. Deklaracji o archiwum nie mogę przypisać do źródła. |
+| Warszawa (kuratorium.waw.pl, komunikat 12179) – „Egzamin ósmoklasisty – przykładowe arkusze egzaminacyjne" | **Potwierdzony jako komunikat archiwalny z 2017** | Wydany 18.12.2017 (CKE, przekazany przez Kuratorium Oświaty w Warszawie). Dotyczy: j. polskiego, matematyki i języków obcych nowożytnych (angielski, francuski, hiszpański, niemiecki, rosyjski, włoski). Wskazuje adres: `cke.gov.pl/egzamin-osmoklasisty/arkusze/arkusze-pokazowe-grudzien-2017` (nieotwarty). Nie dotyczy lat 2019–2025. |
+| Warszawa – zasady oceniania próbnego egzaminu (komunikat 14672) i statystyki materiałów (14685) | **Adresy w wynikach, nieotwierane** | Wymagają osobnego otwarcia. |
+
+Uwagi:
+- Zestawienie 3e7407ea nie podaje liczby zadań ani punktów – nie wpisuję ich.
+- Wpis dla E8 z lat 2019–2025 nadal niepotwierdzony. Potrzebny adres CKE z konkretnymi plikami arkuszy (np. `cke.gov.pl/egzamin-osmoklasisty/arkusze/...`) z wyników wyszukiwania.
+- Błąd w zestawieniu: Łódź 2024/25 podany z adresem Bydgoszczy – nie przenosić do banku.
