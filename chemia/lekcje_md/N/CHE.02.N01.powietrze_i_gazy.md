@@ -61,16 +61,29 @@ stopka: **CHEMIA N01 v1.0** · Powietrze i gazy · 2026
 :::
 :::
 
+## Pojęcia i oznaczenia
+
+- **Skład objętościowy** — udział procentowy liczony z objętości gazu w objętości całej mieszaniny (np. 21% tlenu oznacza 21 dm³ w 100 dm³ powietrza).
+- **Mieszanina gazów** — zbiór gazów, które nie łączą się chemicznie; każdy zachowuje swoje właściwości.
+- **Gaz szlachetny** — gaz z 18. grupy układu okresowego, np. argon (Ar); w zwykłych warunkach prawie nie reaguje.
+- **Reduktor** — substancja, która oddaje elektrony i w reakcji sama się utlenia; wodór w redukcji tlenków.
+- **Alotropia** — występowanie tego samego pierwiastka w różnych postaciach prostych, np. tlen O₂ i ozon O₃.
+- **Woda wapienna** — roztwór wodorotlenku wapnia Ca(OH)₂; mętnieje w obecności CO₂.
+
 ## Wykład — powietrze i gazy od zera
 
 Powietrze, którym oddychamy, nie jest jedną substancją. To **mieszanina gazów**: składniki nie łączą się chemicznie, zachowują swoje właściwości i mogą być rozdzielone. W 100 dm³ powietrza (objętościowo) jest około 78 dm³ azotu, 21 dm³ tlenu, 0,9 dm³ argonu i 0,04 dm³ dwutlenku węgla; reszta to para wodna i śladowe gazy. Skład objętościowy oznacza, że udział liczymy jako stosunek objętości gazu do objętości całej mieszaniny.
 
-Każdy gaz, który poznajemy w tej lekcji, pytamy o trzy rzeczy: **jak go otrzymać**, **jakie ma właściwości** i **jak go wykryć**. Od właściwości zależy sposób zbierania. Gaz cięższy od powietrza (tlen, dwutlenek węgla) gromadzi się w naczyniu, które stoi wylotem do góry. Gaz lżejszy od powietrza (wodór) trzeba zbierać wylotem w dół, bo inaczej ucieknie do góry.
+Każdy gaz, który poznajemy w tej lekcji, pytamy o trzy rzeczy: **jak go otrzymać**, **jakie ma właściwości** i **jak go wykryć**. Od właściwości zależy sposób zbierania. Gaz cięższy od powietrza (tlen, dwutlenek węgla) gromadzi się w naczyniu, które stoi wylotem do góry. Gaz lżejszy od powietrza (wodór) trzeba zbierać wylotem w dół, bo inaczej ucieknie do góry. Tlen i wodór zbiera się także nad wodą: słabo się w niej rozpuszczają, a probówka napełniona wodą zostaje wypchnięta przez gaz (źródło ZPE).
 
 Najważniejszą właściwością dla chemika jest zdolność do reagowania. Tlen podtrzymuje spalanie, wodór się pali i tworzy wodę, a dwutlenek węgla nie podtrzymuje palenia i mąci wodę wapienną. Dzięki tym trzem prostym próbom możesz wykryć każdy z tych gazów nawet bez przyrządów pomiarowych. Zapamiętaj: wykrywanie opiera się na reakcji lub obserwacji, a nie na samym wyglądzie gazu, bo wszystkie trzy są bezbarwne i bezwonne.
 
 ::: karta understand | W skrócie — trzy pytania o każdy gaz
 Jak otrzymać? Jakie ma właściwości (gęstość, reakcja z innymi substancjami)? Jak go wykryć? Odpowiedź na pierwsze pytanie decyduje o doświadczeniu, drugie o sposobie zbierania, trzecie o wniosku.
+:::
+
+::: karta understand | W skrócie — wykrywanie to reakcja, nie kolor
+Wszystkie trzy gazy są bezbarwne, więc rozpoznajemy je po zachowaniu: żarzące się łuczywo rozbłyska w tlenie, wodór daje charakterystyczny „pop” przy zapaleniu w probówce, a woda wapienna mętnieje od CO₂.
 :::
 
 ## 1 | Powietrze — mieszanina gazów [[basic:E8]] {#sklad}
@@ -471,3 +484,16 @@ Sublimacja :: przejście substancji ze stanu stałego bezpośrednio w gazowy
 - Rdza: tlen + woda (sól przyspiesza); ochrona — farba, smar, cynk, stal nierdzewna.
 - Zanieczyszczenia: SO₂, NOₓ → kwaśne deszcze; CO₂, CH₄ → efekt cieplarniany; freony → dziura ozonowa.
 :::
+
+## Źródła
+
+- ZPE, „Powietrze i inne gazy — podsumowanie” (zpe.gov.pl/a/powietrze-i-inne-gazy---podsumowanie/DxYEOgEIM) — pobrany: skład powietrza (N₂ 78%, O₂ 21%, argon z gazami szlachetnymi 0,94%, CO₂ ok. 0,03%); tlen rozżarza łuczywo (rozbłyska); CO₂ mąci wodę wapienną; tlen i wodór zbiera się nad wodą.
+- Zapis „pop” przy wodorze: ZPE opisuje zapalanie wodoru w mieszaninie z powietrzem jako wybuch z charakterystycznym dźwiękiem; określenie „pop” jest potocznym opisem.
+- Do sprawdzenia przy W1: OpenStax i Khan Academy (nie pobrane w tej wersji).
+
+## LOG ZMIAN — 2026-10-12
+
+- Dodane: sekcja „Pojęcia i oznaczenia” (6 pojęć), drugi mini-wykład („wykrywanie to reakcja”), zdanie o zbieraniu tlenu i wodoru nad wodą (ZPE), sekcja Źródła.
+- Liczby: mini-wykłady 1 → 2; ciekawostki 3; testy bez zmian (12, do zwinięcia przez szablon po 5).
+- Usunięto: nic. Treść z gotowego N01 zachowana w całości.
+
