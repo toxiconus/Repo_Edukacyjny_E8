@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
@@ -638,7 +642,7 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;K07&quot; &quot;Kataliza&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "K07"</div><h1>"Kataliza"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#s1">Przypomnienie z poprzednich lekcji</a><a class="toc-link" href="#wyklad">1. Wykład 1 — po co przyspieszać reakcję bez zużycia substancji</a><a class="toc-link" href="#rodzaje">2. Wykład 2 — dwa rodzaje katalizy</a><a class="toc-link" href="#enzymy">3. Wykład 3 — enzymy: katalizatory życia</a><a class="toc-link" href="#inhibitory">4. Wykład 4 — inhibitory: hamowanie reakcji</a><a class="toc-link" href="#rownowaga">5. Wykład 5 — katalizator a równowaga</a><a class="toc-link" href="#przyklady">6. Przykłady: katalizatory w przemyśle i samochodach</a><a class="toc-link" href="#autokataliza">7. Mechanizm i autokataliza</a><a class="toc-link" href="#klinika">8. Klinika błędów</a><a class="toc-link" href="#mnemotechniki">9. Mnemotechnika</a><a class="toc-link" href="#cwiczenia">10. Ćwiczenia</a><a class="toc-link" href="#test">11. Test</a><a class="toc-link" href="#slownik">12. Słownik</a><a class="toc-link" href="#fiszki">13. Fiszki</a><a class="toc-link" href="#mosty">14. Mosty</a><a class="toc-link" href="#ciekawostki">15. Ciekawostki</a><a class="toc-link" href="#s2">Źródła</a><a class="toc-link" href="#s3">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (wersja 2, wg skillu)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#s1">Przypomnienie z poprzednich lekcji</a><a class="toc-link" href="#wyklad">1. Wykład 1 — po co przyspieszać reakcję bez zużycia substancji</a><a class="toc-link" href="#rodzaje">2. Wykład 2 — dwa rodzaje katalizy</a><a class="toc-link" href="#enzymy">3. Wykład 3 — enzymy: katalizatory życia</a><a class="toc-link" href="#inhibitory">4. Wykład 4 — inhibitory: hamowanie reakcji</a><a class="toc-link" href="#rownowaga">5. Wykład 5 — katalizator a równowaga</a><a class="toc-link" href="#przyklady">6. Przykłady: katalizatory w przemyśle i samochodach</a><a class="toc-link" href="#autokataliza">7. Mechanizm i autokataliza</a><a class="toc-link" href="#klinika">8. Klinika błędów</a><a class="toc-link" href="#mnemotechniki">9. Mnemotechnika</a><a class="toc-link" href="#cwiczenia">10. Ćwiczenia</a><a class="toc-link" href="#test">11. Test</a><a class="toc-link" href="#slownik">12. Słownik</a><a class="toc-link" href="#fiszki">13. Fiszki</a><a class="toc-link" href="#mosty">14. Mosty</a><a class="toc-link" href="#ciekawostki">15. Ciekawostki</a><a class="toc-link" href="#s2">Źródła</a></nav></details>
 <p>Ta lekcja pokazuje, jak przyspieszać reakcję bez zużywania substancji, która ją przyspiesza. Po jej przejściu umiesz wyjaśnić, co robi katalizator z energią aktywacji, odróżnić katalizę homo- i heterogeniczną, opisać rolę enzymów i inhibitorów oraz wyjaśnić, dlaczego katalizator nie zmienia położenia równowagi.</p>
 <section id="s1">
 <div class="part-heading">Przypomnienie z poprzednich lekcji</div>
@@ -840,13 +844,13 @@ Sprawdź na przykładzie: Haber–Bosch — katalizator pomaga szybkości, nie z
 <li>Uniwersytet Medyczny w Białymstoku, „Kinetyka chemiczna — teoria” (PDF): definicje szybkości i stechiometria szybkości, używane w K04. Adres: https://www.umb.edu.pl/photo/pliki/WF_jednostki/zaklad-chemii-fizycznej/kinetyka_chemiczna_teoria.pdf</li>
 <li>Do uzupełnienia przy W1 FULL: przykłady przemysłowe (Haber–Bosch, proces kontaktowy, katalizator trójdrożny) i autokatalizę w źródle akademickim; wpis Khan Academy lub Wikipedii o katalizie.</li>
 </ul>
-</section>
-<section id="s3">
-<div class="part-heading">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (wersja 2, wg skillu)</div>
+<details class="lk-log"><summary>AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (wersja 2, wg skillu)</summary>
+<h3>AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (wersja 2, wg skillu)</h3>
 <p><strong>Zmiany względem wersji 1 (2,4 KB, bez wykładu):</strong> dodano przypomnienie z K05/K06, minimum, pięć wykładów (pojęcie, homo/heterogeniczna, enzymy, inhibitory, równowaga), przykłady przemysłowe, autokatalizę z mini-wykładem, klinikę (5 wierszy), mity (3), mnemotechnikę, zadania (4 z kluczem), test 5 pytań przekrojowych, słownik 10 haseł, fiszki 13, mosty, ciekawostki 4, źródła.</p>
 <p><strong>Potwierdzone w źródle ZPE:</strong> definicja, obniżanie energii aktywacji, homo/heterogeniczna, enzymy (selektywność), inhibitory, nagroda Nobla 2010 za reakcje palladowe.</p>
 <p><strong>Niepotwierdzone (zaznaczone „do weryfikacji”):</strong> rozkład enzymów w kuchni i konstrukcja katalizatora trójdrożnego; szczegóły procesu Habera–Boscha (warunki) i proces kontaktowy nie zostały odczytane ze źródła; autokataliza z kwasem szczawiowym i jonami Mn²⁺ wymaga źródła akademickiego.</p>
 <p><strong>Do W1 FULL:</strong> recenzent sprawdza przykłady przemysłowe, reakcję z MnO₂ i autokatalizę, a także ciekawostki.</p>
+</details>
 </section>
 
 </main>

@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
 :root{
@@ -758,7 +762,7 @@ animation:bio-drift 60s linear infinite}
 <header class="lk-bar"><span class="lk-subj"><i></i>Biologia</span><span class="lk-title">L015 L015 — Jak powstają komórki haploidalne i skąd bierze się różnorodność?</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Biologia, lekcja L015</div><h1>L015 — Jak powstają komórki haploidalne i skąd bierze się różnorodność?</h1><p class="lead">Genetyka · mejoza · 2n → n · rekombinacja chromosomowa · nondysjunkcja · oogeneza vs spermatogeneza</p><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">Spis treści</a><a class="toc-link" href="#s2"></a><a class="toc-link" href="#s3"></a><a class="toc-link" href="#s4"></a><a class="toc-link" href="#s5"></a><a class="toc-link" href="#s6"></a><a class="toc-link" href="#s7"></a><a class="toc-link" href="#s8"></a><a class="toc-link" href="#s9">PUŁAPKI</a><a class="toc-link" href="#s10"></a><a class="toc-link" href="#s11"></a><a class="toc-link" href="#s12"></a><a class="toc-link" href="#s13"></a><a class="toc-link" href="#s14">Z kanonu md — zarys do scalenia</a><a class="toc-link" href="#s15">Doprecyzowanie — wynik mejozy zależy od organizmu (W15)</a><a class="toc-link" href="#s16">AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</a><a class="toc-link" href="#s17">AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">Spis treści</a><a class="toc-link" href="#s2"></a><a class="toc-link" href="#s3"></a><a class="toc-link" href="#s4"></a><a class="toc-link" href="#s5"></a><a class="toc-link" href="#s6"></a><a class="toc-link" href="#s7"></a><a class="toc-link" href="#s8"></a><a class="toc-link" href="#s9">PUŁAPKI</a><a class="toc-link" href="#s10"></a><a class="toc-link" href="#s11"></a><a class="toc-link" href="#s12"></a><a class="toc-link" href="#s13"></a><a class="toc-link" href="#s14">Z kanonu md — zarys do scalenia</a><a class="toc-link" href="#s15">Doprecyzowanie — wynik mejozy zależy od organizmu (W15)</a></nav></details>
 <div class="card card-new">
 <span class="card-label">Dopisek v5.2 — precyzja (treść v5.1 zostaje)</span>
 <p><strong>Gdzie mejoza:</strong> w komórkach <em>linii płciowej</em> w gonadach. Dojrzałe gamety już jej nie przechodzą.</p>
@@ -1853,9 +1857,8 @@ U kobiety (oogeneza): <strong>1</strong> komórka jajowa + ciałka kierunkowe (c
 <li>U roślin mejoza prowadzi do <strong>zarodników</strong>, a gamety powstają później w gametoficie, zwykle przez mitozę.</li>
 <li>Crossing-over zachodzi w profazie I; niezależne ustawienie par homologów w metafazie I wpływa na kombinacje chromosomów. Zapłodnienie dodaje kolejne źródło losowości.</li>
 </ul>
-</section>
-<section id="s16">
-<div class="part-heading">AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</div>
+<details class="lk-log"><summary>AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</summary>
+<h3>AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</h3>
 <p><strong>Zakres:</strong> kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.</p>
 <h3>Uściślenia do utrzymania w treści</h3>
 <ul>
@@ -1868,9 +1871,9 @@ U kobiety (oogeneza): <strong>1</strong> komórka jajowa + ciałka kierunkowe (c
 <li>Schemat główny otrzymał opis <code>@opis</code> z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.</li>
 <li>✔ Sprawdzone w treści głównej (2026-10-09, Claude): punkty obecne w lekcji lub dopisane do ściągi/kliniki błędów.</li>
 </ul>
-</section>
-<section id="s17">
-<div class="part-heading">AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)</div>
+</details>
+<details class="lk-log"><summary>AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)</summary>
+<h3>AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)</h3>
 <p><strong>Zakres:</strong> kontrola celowana zadań o mejozie, gametach i ploidalności; nie jest to pełna walidacja wszystkich odpowiedzi.</p>
 <ul>
 <li>Po mejozie I komórki są haploidalne (n), ale chromosomy zwykle nadal mają po dwie chromatydy; po mejozie II chromatydy siostrzane zostają rozdzielone.</li>
@@ -1878,6 +1881,7 @@ U kobiety (oogeneza): <strong>1</strong> komórka jajowa + ciałka kierunkowe (c
 <li>U roślin cykle życiowe obejmują przemianę pokoleń; gamety powstają mitotycznie w gametoficie, a mejoza prowadzi do powstania zarodników. Nie uogólniać modelu zwierzęcego na wszystkie organizmy.</li>
 <li><strong>Status:</strong> doprecyzowano zasady kontroli kluczy; pełna walidacja odpowiedzi pozostaje do wykonania.</li>
 </ul>
+</details>
 </section>
 <footer class="footer"><p>BIOLOGIA L015 v5.1 · Genetyka · Mejoza · 2n → n · Rekombinacja chromosomowa · Nondysjunkcja · 2026</p></footer>
 </main>

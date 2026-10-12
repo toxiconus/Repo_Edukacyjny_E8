@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw pol (Język polski) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#7a2848;--accent-dark:#561a32;--accent-soft:#f6e9ee;--accent-line:#e2c3cf;--accent-glow:rgba(122,40,72,.15);--hl-key:#7a2848;--hl-key-bg:#f3dfe7;--hl-formula:#561a32;--hl-formula-bg:#f6e9ee;--bg:#fbfafa;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 140 200%27%3E%3Ctext x=%276%27 y=%27120%27 font-family=%27Georgia,serif%27 font-size=%27150%27 fill=%27%237a2848%27%3E%E2%80%9E%3C/text%3E%3Ctext x=%2760%27 y=%27190%27 font-family=%27Georgia,serif%27 font-size=%2770%27 font-style=%27italic%27 fill=%27%237a2848%27%3EAa%3C/text%3E%3C/svg%3E")}
@@ -648,7 +652,7 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Język polski</span><span class="lk-title">PL.D04 D04. Odpowiedź pełnym zdaniem i uzasadnienie</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Język polski, lekcja PL.D04</div><h1>D04. Odpowiedź pełnym zdaniem i uzasadnienie</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">1. Co oznacza dobra odpowiedź?</a><a class="toc-link" href="#s2">2. Czasowniki operacyjne</a><a class="toc-link" href="#s3">3. Model odpowiedzi</a><a class="toc-link" href="#s4">4. Odpowiedź na pytanie złożone</a><a class="toc-link" href="#s5">5. Cytat, parafraza i dowód</a><a class="toc-link" href="#s6">6. Najczęstsze błędy</a><a class="toc-link" href="#s7">7. Ćwiczenia</a><a class="toc-link" href="#s8">8. Klucz odpowiedzi</a><a class="toc-link" href="#s9">9. Test końcowy</a><a class="toc-link" href="#s10">10. Dodatkowy warsztat: odpowiedź pod ograniczenie</a><a class="toc-link" href="#s11">11. Pełna praktyka: od polecenia do gotowej odpowiedzi</a><a class="toc-link" href="#s12">12. Samodzielne ocenianie odpowiedzi</a><a class="toc-link" href="#s13">13. Macierz polecenia — jak nie zgubić żadnego wymagania</a><a class="toc-link" href="#s14">14. Minimalna, pełna i nadmierna odpowiedź</a><a class="toc-link" href="#s15">15. Jak ocenić odpowiedź otwartą — treningowa lista kontrolna</a><a class="toc-link" href="#s16">16. Zadanie wieloetapowe z kluczem</a><a class="toc-link" href="#s17">17. Kontrola po drugim cyklu</a><a class="toc-link" href="#s18">AUDYT W2 — wynik (GPT-6, 2026-10-09)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">1. Co oznacza dobra odpowiedź?</a><a class="toc-link" href="#s2">2. Czasowniki operacyjne</a><a class="toc-link" href="#s3">3. Model odpowiedzi</a><a class="toc-link" href="#s4">4. Odpowiedź na pytanie złożone</a><a class="toc-link" href="#s5">5. Cytat, parafraza i dowód</a><a class="toc-link" href="#s6">6. Najczęstsze błędy</a><a class="toc-link" href="#s7">7. Ćwiczenia</a><a class="toc-link" href="#s8">8. Klucz odpowiedzi</a><a class="toc-link" href="#s9">9. Test końcowy</a><a class="toc-link" href="#s10">10. Dodatkowy warsztat: odpowiedź pod ograniczenie</a><a class="toc-link" href="#s11">11. Pełna praktyka: od polecenia do gotowej odpowiedzi</a><a class="toc-link" href="#s12">12. Samodzielne ocenianie odpowiedzi</a><a class="toc-link" href="#s13">13. Macierz polecenia — jak nie zgubić żadnego wymagania</a><a class="toc-link" href="#s14">14. Minimalna, pełna i nadmierna odpowiedź</a><a class="toc-link" href="#s15">15. Jak ocenić odpowiedź otwartą — treningowa lista kontrolna</a><a class="toc-link" href="#s16">16. Zadanie wieloetapowe z kluczem</a><a class="toc-link" href="#s17">17. Kontrola po drugim cyklu</a></nav></details>
 <section id="s1">
 <div class="part-heading"><span class="part-num">1</span> Co oznacza dobra odpowiedź?</div>
 <p>Dobra odpowiedź nie musi być długa. Musi być trafna, kompletna, jednoznaczna i zgodna z poleceniem. Rozbudowane zdanie, które nie odpowiada na pytanie, nie jest lepsze od krótkiej odpowiedzi precyzyjnej.</p>
@@ -831,15 +835,15 @@ Tekst 2: „Druga grupa nagrała krótki film”.</p>
 <li>[x] Dodano zadanie wieloetapowe z jednoznacznym kluczem i pytaniem o granice wnioskowania.</li>
 <li>[ ] Pozostaje niezależna recenzja polonistyczna i walidacja względem aktualnych wymagań egzaminacyjnych.</li>
 </ul>
-</section>
-<section id="s18">
-<div class="part-heading">AUDYT W2 — wynik (GPT-6, 2026-10-09)</div>
+<details class="lk-log"><summary>AUDYT W2 — wynik (GPT-6, 2026-10-09)</summary>
+<h3>AUDYT W2 — wynik (GPT-6, 2026-10-09)</h3>
 <p><strong>Doprecyzowanie kontrolne:</strong> Pełna odpowiedź zawiera wszystkie elementy wymagane poleceniem oraz uzasadnienie, jeśli jest wymagane; długość sama w sobie nie gwarantuje kompletności.</p>
 <ul>
 <li>Kontrola zakresu: zadanie należy rozwiązywać zgodnie z konkretnym poleceniem; szablon nie zastępuje realizacji tematu.</li>
 <li>Kryteria i punktacje w ćwiczeniach są treningowe, chyba że plik wyraźnie cytuje oficjalny dokument. Nie przedstawiać ich jako oficjalnej punktacji CKE.</li>
 <li>Źródło do kontroli aktualnych wymagań: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory; informator język polski: https://bip.cke.gov.pl/attachments/download/9824.</li>
 </ul>
+</details>
 </section>
 
 </main>

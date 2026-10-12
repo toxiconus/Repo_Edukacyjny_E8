@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
 :root{
@@ -758,7 +762,7 @@ animation:bio-drift 60s linear infinite}
 <header class="lk-bar"><span class="lk-subj"><i></i>Biologia</span><span class="lk-title">L013 Jak komórka kopiuje DNA?</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Biologia, lekcja L013</div><h1>Jak komórka kopiuje DNA?</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA LEKCJI L013</a><a class="toc-link" href="#s2">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s3">1. Pytanie przewodnie</a><a class="toc-link" href="#s4">2. Cele lekcji</a><a class="toc-link" href="#s5">3. Co trzeba wiedzieć wcześniej (kompas)  · [PRZYPOMNIENIE]</a><a class="toc-link" href="#s6">4. Zacznij od problemu</a><a class="toc-link" href="#s7">5. Ściąga — poziom podstawowy  · [PODSTAWA E8]</a><a class="toc-link" href="#s8">6. Jak to działa?  · [PODSTAWA E8]</a><a class="toc-link" href="#s9">7. Poziom ambitny  · [MASTER]</a><a class="toc-link" href="#s10">8. Poziom zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s11">9. Klinika błędów  · [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s12">10. Obserwacja / model</a><a class="toc-link" href="#s13">11. Ćwiczenia  · [TRENING] (11D → [KONKURS])</a><a class="toc-link" href="#s14">12. Odpowiedzi</a><a class="toc-link" href="#s15">13. Fiszki  · [POWTÓRKA]</a><a class="toc-link" href="#s16">14. Test końcowy  · [TRENING]</a><a class="toc-link" href="#s17">15. Checklista</a><a class="toc-link" href="#s18">16. Mapa pojęć</a><a class="toc-link" href="#s19">17. Co dalej?</a><a class="toc-link" href="#s20">18. Słownik</a><a class="toc-link" href="#s21">19. Dodatek zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s22">20. Jak się uczyć?</a><a class="toc-link" href="#s23">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s24">22. Zadania z życia codziennego</a><a class="toc-link" href="#s25">23. UZUPEŁNIENIE AUDYTOWE v4.2 — jak nie pomylić mechanizmu z wynikiem</a><a class="toc-link" href="#s26">L013+ HTML v6.0 — Meselson–Stahl, widełki, klinika (KEEP; widgety w HTML)</a><a class="toc-link" href="#s27">AUDYT W1 — wynik (2026-10-09, GPT-6)</a><a class="toc-link" href="#s28">AUDYT GENETYKI — doprecyzowanie pojęć i typowych pułapek (2026-10-09)</a><a class="toc-link" href="#s29">AUDYT W1 — Perplexity (2026-10-10, odpowiedź urwana w §10)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA LEKCJI L013</a><a class="toc-link" href="#s2">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s3">1. Pytanie przewodnie</a><a class="toc-link" href="#s4">2. Cele lekcji</a><a class="toc-link" href="#s5">3. Co trzeba wiedzieć wcześniej (kompas)  · [PRZYPOMNIENIE]</a><a class="toc-link" href="#s6">4. Zacznij od problemu</a><a class="toc-link" href="#s7">5. Ściąga — poziom podstawowy  · [PODSTAWA E8]</a><a class="toc-link" href="#s8">6. Jak to działa?  · [PODSTAWA E8]</a><a class="toc-link" href="#s9">7. Poziom ambitny  · [MASTER]</a><a class="toc-link" href="#s10">8. Poziom zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s11">9. Klinika błędów  · [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s12">10. Obserwacja / model</a><a class="toc-link" href="#s13">11. Ćwiczenia  · [TRENING] (11D → [KONKURS])</a><a class="toc-link" href="#s14">12. Odpowiedzi</a><a class="toc-link" href="#s15">13. Fiszki  · [POWTÓRKA]</a><a class="toc-link" href="#s16">14. Test końcowy  · [TRENING]</a><a class="toc-link" href="#s17">15. Checklista</a><a class="toc-link" href="#s18">16. Mapa pojęć</a><a class="toc-link" href="#s19">17. Co dalej?</a><a class="toc-link" href="#s20">18. Słownik</a><a class="toc-link" href="#s21">19. Dodatek zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s22">20. Jak się uczyć?</a><a class="toc-link" href="#s23">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s24">22. Zadania z życia codziennego</a><a class="toc-link" href="#s25">23. UZUPEŁNIENIE AUDYTOWE v4.2 — jak nie pomylić mechanizmu z wynikiem</a><a class="toc-link" href="#s26">L013+ HTML v6.0 — Meselson–Stahl, widełki, klinika (KEEP; widgety w HTML)</a></nav></details>
 <section id="s1">
 <div class="part-heading">KARTA LEKCJI L013</div>
 <ul>
@@ -1210,18 +1214,17 @@ Na E8 nie trzeba procedury; warto wiedzieć, że semikonserwatywność jest <str
 <p>Wykład v3.8 + audyt v4.2 <strong>zostaje</strong>. Doklejono Meselsona–Stahla, widełki, Okazaki (extra) i klinikę z HTML v6.0. Nic nie wycięte.</p>
 <!-- ==================== END L013 ==================== -->
 <!-- ==================== BEGIN L014 ==================== -->
-</section>
-<section id="s27">
-<div class="part-heading">AUDYT W1 — wynik (2026-10-09, GPT-6)</div>
+<details class="lk-log"><summary>AUDYT W1 — wynik (2026-10-09, GPT-6)</summary>
+<h3>AUDYT W1 — wynik (2026-10-09, GPT-6)</h3>
 <ul>
 <li>Przeprowadzono kontrolę redakcyjną i kontrolę oznaczeń wizualizacji; dopisano <code>@opis</code> bezpośrednio pod blokami <code>[BIO: DIAGRAM]</code> tam, gdzie go brakowało.</li>
 <li>Zachowano dotychczasową treść i kody lekcji; nie usuwano wcześniejszych wersji ani banków zadań.</li>
 <li>Zwrócono uwagę na rozróżnienie modelu od rzeczywistości oraz na to, że schematy przepływu pokazują uproszczone relacje.</li>
 <li><strong>Ograniczenie:</strong> nie jest to pełna niezależna walidacja wszystkich danych i kluczy zadań; przed publikacją wymagane jest sprawdzenie merytoryczne przez nauczyciela biologii.</li>
 </ul>
-</section>
-<section id="s28">
-<div class="part-heading">AUDYT GENETYKI — doprecyzowanie pojęć i typowych pułapek (2026-10-09)</div>
+</details>
+<details class="lk-log"><summary>AUDYT GENETYKI — doprecyzowanie pojęć i typowych pułapek (2026-10-09)</summary>
+<h3>AUDYT GENETYKI — doprecyzowanie pojęć i typowych pułapek (2026-10-09)</h3>
 <h3>Co naprawdę oznacza semikonserwatywność?</h3>
 <p>Semikonserwatywność opisuje <strong>sposób rozmieszczenia nici</strong> po replikacji: każda potomna cząsteczka DNA zawiera jedną nić pochodzącą z cząsteczki wyjściowej i jedną nić nowo zsyntetyzowaną. Nie oznacza to, że każda kopia jest automatycznie idealna. Wierność zależy także od komplementarnego dobierania nukleotydów, korekty części pomyłek przez polimerazę DNA oraz systemów naprawy DNA. Błąd, który nie zostanie naprawiony, może utrwalić się jako mutacja.</p>
 <h3>Rozwiązywanie zadań z sekwencją — algorytm</h3>
@@ -1248,13 +1251,14 @@ Na E8 nie trzeba procedury; warto wiedzieć, że semikonserwatywność jest <str
 <li>Dodano algorytm pracy z sekwencją i przykład z kierunkami 5′/3′.</li>
 <li>Zachowano wcześniejszą treść; dopisek nie zastępuje niezależnej recenzji biologicznej ani testu renderowania HTML.</li>
 </ul>
-</section>
-<section id="s29">
-<div class="part-heading">AUDYT W1 — Perplexity (2026-10-10, odpowiedź urwana w §10)</div>
+</details>
+<details class="lk-log"><summary>AUDYT W1 — Perplexity (2026-10-10, odpowiedź urwana w §10)</summary>
+<h3>AUDYT W1 — Perplexity (2026-10-10, odpowiedź urwana w §10)</h3>
 <ul>
 <li>Wprowadzone: chromatydy a cząsteczki DNA, faza S przed mitozą i mejozą I, błąd replikacji a mutacja, starter, nici antyrównoległe z przykładem 5'/3', nić wiodąca i opóźniona, ligaza, typy mutacji, replikacja u prokariontów, klucz 2/11/13, klucz testu końcowego i zadanie Meselsona–Stahla po dwóch rundach; poprawiono też opis modelu rozproszonego (wykluczony dopiero po drugiej rundzie).</li>
 <li>Uzupełnienie zaległych uwag W1 (2026-10-10): tabela: nić matrycowa / nowa / cząsteczka DNA / chromatyda, zadanie z kierunkami 5′/3′. Część lekcji po §10 nie została jeszcze oceniona (odpowiedź urwana) — do ponownego W1.</li>
 </ul>
+</details>
 </section>
 
 </main>

@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw pol (Język polski) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#7a2848;--accent-dark:#561a32;--accent-soft:#f6e9ee;--accent-line:#e2c3cf;--accent-glow:rgba(122,40,72,.15);--hl-key:#7a2848;--hl-key-bg:#f3dfe7;--hl-formula:#561a32;--hl-formula-bg:#f6e9ee;--bg:#fbfafa;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 140 200%27%3E%3Ctext x=%276%27 y=%27120%27 font-family=%27Georgia,serif%27 font-size=%27150%27 fill=%27%237a2848%27%3E%E2%80%9E%3C/text%3E%3Ctext x=%2760%27 y=%27190%27 font-family=%27Georgia,serif%27 font-size=%2770%27 font-style=%27italic%27 fill=%27%237a2848%27%3EAa%3C/text%3E%3C/svg%3E")}
@@ -648,7 +652,7 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Język polski</span><span class="lk-title">G11 Wykrzyknik</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Język polski, lekcja G11</div><h1>Wykrzyknik</h1><p class="lead">Ach! Hej! Bęc! — wyraz emocji, wołania i dźwięku; wykrzyknik (część mowy) a wykrzyknienie (zdanie).</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span></div><div class="lk-meta"><span><b>Zakres:</b> gramatyka — części mowy i składnia; powiązania: L002, S03, G14</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">0. Cel i kryterium gotowości</a><a class="toc-link" href="#s2">1. Definicja i pytania</a><a class="toc-link" href="#s3">Wykład — kiedy tekst wyraża emocję</a><a class="toc-link" href="#s4">2. Jak rozpoznać — procedura krok po kroku</a><a class="toc-link" href="#s5">3. Formy, odmiana lub rodzaje</a><a class="toc-link" href="#s6">4. Funkcja w zdaniu</a><a class="toc-link" href="#s7">5. Pisownia i interpunkcja</a><a class="toc-link" href="#s8">6. Przykłady z lektur</a><a class="toc-link" href="#s9">7. Klinika błędów</a><a class="toc-link" href="#s10">8. Ćwiczenia A — podstawa</a><a class="toc-link" href="#s11">9. Ćwiczenia B — trening i C — konkurs</a><a class="toc-link" href="#s12">10. Zadania w stylu CKE</a><a class="toc-link" href="#s13">11. Fiszki</a><a class="toc-link" href="#s14">12. Wizualizacja</a><a class="toc-link" href="#s15">13. Uzupełnienie po audycie braków — wersja 2.0</a><a class="toc-link" href="#s16">14. Audyt po uzupełnieniu</a><a class="toc-link" href="#s17">14. Drugi cykl opracowania: wykrzyknik w zdaniu i dialogu v3.0</a><a class="toc-link" href="#s18">15. Ćwiczenia po W1 FULL — test, dialog, opis, teksty użytkowe</a><a class="toc-link" href="#s19">16. Poszerzenie horyzontu</a><a class="toc-link" href="#s20">AUDYT W1 — wynik</a><a class="toc-link" href="#s21">AUDYT W1 FULL — Perplexity (2026-10-10)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">0. Cel i kryterium gotowości</a><a class="toc-link" href="#s2">1. Definicja i pytania</a><a class="toc-link" href="#s3">Wykład — kiedy tekst wyraża emocję</a><a class="toc-link" href="#s4">2. Jak rozpoznać — procedura krok po kroku</a><a class="toc-link" href="#s5">3. Formy, odmiana lub rodzaje</a><a class="toc-link" href="#s6">4. Funkcja w zdaniu</a><a class="toc-link" href="#s7">5. Pisownia i interpunkcja</a><a class="toc-link" href="#s8">6. Przykłady z lektur</a><a class="toc-link" href="#s9">7. Klinika błędów</a><a class="toc-link" href="#s10">8. Ćwiczenia A — podstawa</a><a class="toc-link" href="#s11">9. Ćwiczenia B — trening i C — konkurs</a><a class="toc-link" href="#s12">10. Zadania w stylu CKE</a><a class="toc-link" href="#s13">11. Fiszki</a><a class="toc-link" href="#s14">12. Wizualizacja</a><a class="toc-link" href="#s15">13. Uzupełnienie po audycie braków — wersja 2.0</a><a class="toc-link" href="#s16">14. Audyt po uzupełnieniu</a><a class="toc-link" href="#s17">14. Drugi cykl opracowania: wykrzyknik w zdaniu i dialogu v3.0</a><a class="toc-link" href="#s18">15. Ćwiczenia po W1 FULL — test, dialog, opis, teksty użytkowe</a><a class="toc-link" href="#s19">16. Poszerzenie horyzontu</a></nav></details>
 <section id="s1">
 <div class="part-heading"><span class="part-num">0</span> Cel i kryterium gotowości <span class="level-badge level-basic">E8</span></div>
 <p>Potrafię rozpoznać wykrzyknik i nazwać jego rodzaj (uczucia, wołania i nakazu, dźwiękonaśladowczy).
@@ -951,24 +955,24 @@ Wyjaśnij różnicę w zapisie: <em>O Boże!</em> i <em>O, Bogusia!</em>
 <li><span class="level-badge level-exam">KONKURS</span> <strong>Wykrzyknik wtórny</strong> — wyraz z innej części mowy użyty jako okrzyk: <em>Boże!</em> (rzeczownik), <em>rety!</em>, <em>kurczę!</em>, <em>Bzdura!</em> — rozpoznasz go po funkcji, nie po pochodzeniu.</li>
 </ul>
 </div>
-</section>
-<section id="s20">
-<div class="part-heading">AUDYT W1 — wynik</div>
+<details class="lk-log"><summary>AUDYT W1 — wynik</summary>
+<h3>AUDYT W1 — wynik</h3>
 <ul>
 <li>Rozróżnienie części mowy i znaku interpunkcyjnego: ✔ sprawdzono w definicji i ćwiczeniach.</li>
 <li>Klucze ćwiczeń: ✔ przykładowe odpowiedzi nie wykluczają interpretacji uzasadnionych kontekstem.</li>
 <li>Uwaga: podział wykrzykników na typy ma charakter szkolny; konkretne klasyfikacje mogą różnić się w opracowaniach.</li>
 </ul>
 <p><strong>Zakres kontroli:</strong> kontrola merytoryczno-językowa i zgodności przykładów z kluczami; nie jest to poświadczenie niezależnej recenzji zewnętrznej.</p>
-</section>
-<section id="s21">
-<div class="part-heading">AUDYT W1 FULL — Perplexity (2026-10-10)</div>
+</details>
+<details class="lk-log"><summary>AUDYT W1 FULL — Perplexity (2026-10-10)</summary>
+<h3>AUDYT W1 FULL — Perplexity (2026-10-10)</h3>
 <ul>
 <li>Wprowadzone: wykrzyknik może być wpleciony w zdanie (zamiast „zwykle nie łączy się składniowo”), karta „wykrzyknik / wykrzyknienie / znak !” na początku lekcji, <em>humbug</em> — wyjaśnione jako wyraz angielski (polski odpowiednik <em>Bzdura!</em>), A3 — przecinek po wykrzykniku, CKE zad. 3 — wołacz bez przecinka po <em>o</em>, przykład <em>Uważaj, bo schody są śliskie!</em>, test na wykrzyknik (z <em>stuk</em> — rzeczownik czy wykrzyknik), karta samokontroli 14.7, ćwiczenia §15 (dialog, zamiana na opis, teksty użytkowe, wykrzyknik a partykuła, znajdź błąd), poszerzenie horyzontu (komiks, media, wykrzyknik wtórny), mnemotechnika, pełny wykład (§1a) i mini-wykład z pakietów Perplexity.</li>
 <li>Dodane przez Claude: ciekawostka o dźwiękonaśladowczości w różnych językach (<em>kukuryku / cock-a-doodle-doo / kikeriki</em>).</li>
 <li>Poprawione względem propozycji: <em>Kot zrobiło miau</em> (błąd gramatyczny w propozycji) — w lekcji <em>Kot zrobił miau</em>; Perplexity nazwał zdanie z <em>bo</em> „współrzędnie związanym” — to zdanie podrzędne przyczyny.</li>
 <li>Nieprzyjęte: B2 — Perplexity proponował nie nazywać <em>bęc</em> orzeczeniem; zostaje „wykrzyknik w funkcji orzeczenia”, bo tak opisuje to gramatyka szkolna (<em>Kot hyc na płot</em>), a sam Perplexity w uwadze do §1 to potwierdził; „wtrątny” w §3 — w pliku jest poprawnie „wtórny” (błąd odczytu).</li>
 </ul>
+</details>
 </section>
 
 </main>

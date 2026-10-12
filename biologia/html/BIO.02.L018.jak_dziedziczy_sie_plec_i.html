@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
 :root{
@@ -758,7 +762,7 @@ animation:bio-drift 60s linear infinite}
 <header class="lk-bar"><span class="lk-subj"><i></i>Biologia</span><span class="lk-title">L018 Jak dziedziczy się płeć i cechy sprzężone z chromosomem X?</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Biologia, lekcja L018</div><h1>Jak dziedziczy się płeć i cechy sprzężone z chromosomem X?</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA LEKCJI L018</a><a class="toc-link" href="#s2">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s3">1. Pytanie przewodnie</a><a class="toc-link" href="#s4">2. Cele lekcji</a><a class="toc-link" href="#s5">3. Kompas  · [PRZYPOMNIENIE]</a><a class="toc-link" href="#s6">4. Zacznij od problemu</a><a class="toc-link" href="#s7">5. Ściąga — poziom podstawowy  · [PODSTAWA E8]</a><a class="toc-link" href="#s8">6. Wyjaśnienie od podstaw  · [PODSTAWA E8]</a><a class="toc-link" href="#s9">7. Poziom ambitny  · [MASTER]</a><a class="toc-link" href="#s10">8. Poziom zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s11">9. Klinika błędów  · [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s12">10. Obserwacja / model</a><a class="toc-link" href="#s13">11. Ćwiczenia  · [TRENING] (11D → [KONKURS])</a><a class="toc-link" href="#s14">12. Odpowiedzi</a><a class="toc-link" href="#s15">13. Fiszki  · [POWTÓRKA]</a><a class="toc-link" href="#s16">14. Test końcowy  · [TRENING]</a><a class="toc-link" href="#s17">15. Checklista</a><a class="toc-link" href="#s18">16. Mapa pojęć</a><a class="toc-link" href="#s19">17. Co dalej?</a><a class="toc-link" href="#s20">18. Słownik</a><a class="toc-link" href="#s21">19. Dodatek zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s22">20. Jak się uczyć?</a><a class="toc-link" href="#s23">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s24">22. Zadania z życia codziennego</a><a class="toc-link" href="#s25">23. UZUPEŁNIENIE egzaminacyjne v3.8+ (doklejone)</a><a class="toc-link" href="#s26">24. UZUPEŁNIENIE AUDYTOWE v4.2 — precyzja modelu XX/XY i X-linked</a><a class="toc-link" href="#s27">25. Doprecyzowanie — model XX/XY (W15)</a><a class="toc-link" href="#s28">AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</a><a class="toc-link" href="#s29">AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)</a><a class="toc-link" href="#s30">AUDYT GENETYKI — doprecyzowanie dziedziczenia cech sprzężonych z X (2026-10-09)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA LEKCJI L018</a><a class="toc-link" href="#s2">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s3">1. Pytanie przewodnie</a><a class="toc-link" href="#s4">2. Cele lekcji</a><a class="toc-link" href="#s5">3. Kompas  · [PRZYPOMNIENIE]</a><a class="toc-link" href="#s6">4. Zacznij od problemu</a><a class="toc-link" href="#s7">5. Ściąga — poziom podstawowy  · [PODSTAWA E8]</a><a class="toc-link" href="#s8">6. Wyjaśnienie od podstaw  · [PODSTAWA E8]</a><a class="toc-link" href="#s9">7. Poziom ambitny  · [MASTER]</a><a class="toc-link" href="#s10">8. Poziom zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s11">9. Klinika błędów  · [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s12">10. Obserwacja / model</a><a class="toc-link" href="#s13">11. Ćwiczenia  · [TRENING] (11D → [KONKURS])</a><a class="toc-link" href="#s14">12. Odpowiedzi</a><a class="toc-link" href="#s15">13. Fiszki  · [POWTÓRKA]</a><a class="toc-link" href="#s16">14. Test końcowy  · [TRENING]</a><a class="toc-link" href="#s17">15. Checklista</a><a class="toc-link" href="#s18">16. Mapa pojęć</a><a class="toc-link" href="#s19">17. Co dalej?</a><a class="toc-link" href="#s20">18. Słownik</a><a class="toc-link" href="#s21">19. Dodatek zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s22">20. Jak się uczyć?</a><a class="toc-link" href="#s23">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s24">22. Zadania z życia codziennego</a><a class="toc-link" href="#s25">23. UZUPEŁNIENIE egzaminacyjne v3.8+ (doklejone)</a><a class="toc-link" href="#s26">24. UZUPEŁNIENIE AUDYTOWE v4.2 — precyzja modelu XX/XY i X-linked</a><a class="toc-link" href="#s27">25. Doprecyzowanie — model XX/XY (W15)</a></nav></details>
 <section id="s1">
 <div class="part-heading">KARTA LEKCJI L018</div>
 <ul>
@@ -1126,9 +1130,8 @@ animation:bio-drift 60s linear infinite}
 <div class="part-heading"><span class="part-num">25</span> Doprecyzowanie — model XX/XY (W15)</div>
 <p>W typowym szkolnym modelu XX/XY komórka jajowa wnosi chromosom X, a plemnik wnosi X albo Y; połączenie XX lub XY jest najczęstszym wynikiem tego modelu. Nie jest to pełny opis wszystkich biologicznych wariantów rozwoju płci.</p>
 <p>W krzyżówce dla recesywnej cechy sprzężonej z X prawdopodobieństwo 1/2 może dotyczyć <strong>synów</strong> matki-nosicielki. Wynik 1/4 wśród wszystkich dzieci wymaga dodatkowego założenia, że prawdopodobieństwo urodzenia syna i córki jest jednakowe oraz że ojciec nie ma danej cechy w przyjętym modelu.</p>
-</section>
-<section id="s28">
-<div class="part-heading">AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</div>
+<details class="lk-log"><summary>AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</summary>
+<h3>AUDYT W15 — kontrola merytoryczna i wizualna (2026-10-09, GPT-6)</h3>
 <p><strong>Zakres:</strong> kontrola punktowa treści podstawowej, terminologii, typowych pułapek odpowiedzi i opisu schematu. To nie jest niezależna recenzja specjalisty ani pełna walidacja wszystkich zadań.</p>
 <h3>Uściślenia do utrzymania w treści</h3>
 <ul>
@@ -1141,9 +1144,9 @@ animation:bio-drift 60s linear infinite}
 <li>Schemat główny otrzymał opis <code>@opis</code> z informacją, co przedstawia i jaki wniosek ma wyciągnąć uczeń.</li>
 <li>✔ Wprowadzone do treści głównej (2026-10-09, Claude): model XX/XY bez „plemnik decyduje o płci” (karta 80/20, sekcje 5, 6, 6A), 1/2 wśród synów vs 1/4 wśród wszystkich dzieci (6C), nosicielka a inaktywacja X (8).</li>
 </ul>
-</section>
-<section id="s29">
-<div class="part-heading">AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)</div>
+</details>
+<details class="lk-log"><summary>AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)</summary>
+<h3>AUDYT W18 — klucz i zadania (2026-10-09, GPT-6)</h3>
 <p><strong>Zakres:</strong> kontrola celowana zadań o dziedziczeniu sprzężonym z X i modelu XX/XY.</p>
 <ul>
 <li>W zadaniach szkolnych model XX/XY jest modelem uproszczonym; przedstawiaj go jako typowy model chromosomalnego ustalania płci u człowieka, nie jako opis wszystkich wariantów rozwoju płci.</li>
@@ -1151,9 +1154,9 @@ animation:bio-drift 60s linear infinite}
 <li>Jeżeli matka jest heterozygotyczną nosicielką, a ojciec nie ma danego wariantu, w uproszczonym modelu każde dziecko ma 1/2 szansy odziedziczenia wariantu od matki; ryzyko fenotypu zależy od płci i sposobu dziedziczenia.</li>
 <li><strong>Status:</strong> dodano jawne warunki modelu; wszystkie odpowiedzi wymagają jeszcze pełnego sprawdzenia.</li>
 </ul>
-</section>
-<section id="s30">
-<div class="part-heading">AUDYT GENETYKI — doprecyzowanie dziedziczenia cech sprzężonych z X (2026-10-09)</div>
+</details>
+<details class="lk-log"><summary>AUDYT GENETYKI — doprecyzowanie dziedziczenia cech sprzężonych z X (2026-10-09)</summary>
+<h3>AUDYT GENETYKI — doprecyzowanie dziedziczenia cech sprzężonych z X (2026-10-09)</h3>
 <h3>Jak czytać krzyżówkę genetyczną?</h3>
 <p>Najpierw zapisz allele i chromosomy płci, a dopiero potem wypisz gamety. W typowym szkolnym modelu osoba z chromosomami XX przekazuje do gamety jeden chromosom X, a osoba XY — X albo Y. W zapłodnieniu połączenie X z X daje zwykle układ XX, a X z Y — XY. To model podstawowy; rzeczywisty rozwój płci biologicznej jest bardziej złożony i nie wszystkie warianty rozwoju mieszczą się w tym uproszczeniu.</p>
 <h3>Dlaczego cechy recesywne sprzężone z X częściej ujawniają się u osób XY?</h3>
@@ -1179,6 +1182,7 @@ animation:bio-drift 60s linear infinite}
 <li>Doprecyzowano różnicę między nosicielstwem, genotypem i fenotypem.</li>
 <li>Ograniczono uogólnienia do jawnie wskazanego modelu szkolnego.</li>
 </ul>
+</details>
 </section>
 
 </main>

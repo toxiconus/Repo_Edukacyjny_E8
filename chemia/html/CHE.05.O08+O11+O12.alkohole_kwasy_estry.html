@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
@@ -638,7 +642,7 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;O08; O11; O12&quot; &quot;Alkohole · Kwasy karboksylowe · Estry&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "O08; O11; O12"</div><h1>"Alkohole · Kwasy karboksylowe · Estry"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">UZUPEŁNIENIE KANONICZNE W8 — ALKOHOLE, KWASY KARBOKSYLOWE I ESTRY</a><a class="toc-link" href="#s2">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</a><a class="toc-link" href="#s3">W23 — alkohole, kwasy, estry (2026-10-09, GPT-6)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">UZUPEŁNIENIE KANONICZNE W8 — ALKOHOLE, KWASY KARBOKSYLOWE I ESTRY</a><a class="toc-link" href="#s2">W23 — alkohole, kwasy, estry (2026-10-09, GPT-6)</a></nav></details>
 <section id="s1">
 <div class="part-heading">UZUPEŁNIENIE KANONICZNE W8 — ALKOHOLE, KWASY KARBOKSYLOWE I ESTRY</div>
 <h3>Alkohole</h3>
@@ -658,9 +662,8 @@ section ul,section ol{padding-left:1.35rem}
 <li>Spalanie etanolu: <strong>C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O</strong>.</li>
 <li>Produktami estryfikacji kwasu etanowego i etanolu są <strong>etanian etylu (octan etylu) i woda</strong>.</li>
 </ol>
-</section>
-<section id="s2">
-<div class="part-heading">AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</div>
+<details class="lk-log"><summary>AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</summary>
+<h3>AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)</h3>
 <p class="mini-note">Źródło: <code>chemia/plany/audyty/W1_perplexityO01-O07₂026-10-09.md</code>. Weryfikacja treści wysłanego zapisu, nie zakresu.</p>
 <h3>O08 — Alkohole (w audycie: O04)</h3>
 <h4>Poprawki</h4>
@@ -895,8 +898,9 @@ section ul,section ol{padding-left:1.35rem}
 <p>Wyjaśnij, dlaczego etan nie odbarwia zwykle wody bromowej w warunkach, w których reaguje eten.</p>
 <h5>Klucz</h5>
 <p>Eten zawiera wiązanie podwójne, do którego może przyłączyć się brom. Etan ma wyłącznie wiązania pojedyncze i nie reaguje z bromem w taki sposób bez dodatkowych warunków.</p>
+</details>
 </section>
-<section id="s3">
+<section id="s2">
 <div class="part-heading">W23 — alkohole, kwasy, estry (2026-10-09, GPT-6)</div>
 <p>Sprawdzono bilans spalania etanolu i kwasu etanowego, reakcji etanolu z sodem, kwasu z węglanem i estryfikacji etanolu kwasem etanowym. Podkreślono zależność produktów utleniania od warunków i niebezpieczeństwo identyfikacji substancji przez zapach/smak.</p>
 </section>

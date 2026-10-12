@@ -173,11 +173,24 @@ def bio_js(main):
     if brak: raise SystemExit('BŁĄD: brak wizualizacji w biologia/bio/szablon/wizualizacje/: ' + ', '.join(brak))
     return rd(os.path.join(BIO_SZ, 'bio-core.js')) + '\n' + ''.join(rd(os.path.join(BIO_SZ, 'wizualizacje', i + '.js')) + '\n' for i in ids)
 
+AUDYT_H = re.compile(r'^##\s+((?:AUDYT|LOG)\b.*)$')
+
 def log_bloki(L):
-    """::: log | Tytuł  ...  :::  →  zwijany blok <details> (logi analizy zmian; zamknięty domyślnie).
-    Znacznik „log” to jedyny sposób zapisu logu: narzedzia/logi_zmian.py wyszukuje i usuwa właśnie te bloki."""
+    """Zasada budowy (szablon/README.md): zwijane są
+    1) bloki ::: log | Tytuł ... ::: (znacznik logu analizy zmian) — domyślnie zamknięte,
+    2) sekcje „## AUDYT …” i „## LOG …” — od nagłówka do następnego „## ” (nagłówek staje się ###).
+    Wszystko to trafia do <details class="lk-log">; logi_zmian.py wycina bloki ::: log."""
     out = []; i = 0
     while i < len(L):
+        ma = AUDYT_H.match(L[i].strip()) if L[i].startswith('## ') else None
+        if ma:
+            tytul = H.escape(ma.group(1).strip())
+            j = i + 1
+            while j < len(L) and not L[j].startswith('## '): j += 1
+            out += ['::: html', '<details class="lk-log"><summary>%s</summary>' % tytul, ':::', '', '### ' + ma.group(1).strip(), '']
+            out += L[i + 1:j]
+            out += ['::: html', '</details>', ':::', '']
+            i = j; continue
         m = re.match(r'\s*:::\s*log\b\s*\|?\s*(.*)$', L[i])
         if not m:
             out.append(L[i]); i += 1; continue

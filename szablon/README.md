@@ -63,3 +63,12 @@ Nagłówki `## 6. Tytuł` bez `{#id}` dostają kotwicę automatycznie, a linia `
 ## Chemia
 
 Lekcje gotowe z modelami i zlewkami nadal buduje `chemia/che-modular/tools/md2html.py` (silnik `che-viz.js`). Ten szablon obsługuje kanon chemii (`chemia/lekcje_md/`) i lekcje bez modeli silnika. Przeniesienie wyglądu silnika na ten szablon to osobny krok.
+
+## Zwijane sekcje: audyt i logi (zasada budowy)
+
+Parser (`narzedzia/lekcja_html.py`, funkcja `log_bloki`) sam zwija do `<details class="lk-log">` (domyślnie zamknięte, ukryte przy druku):
+
+1. **Blok logu** — `::: log | Tytuł` … `:::` (może zawierać zagnieżdżone karty). Znacznik logu analizy zmian.
+2. **Sekcja audytu** — nagłówek `## AUDYT …` albo `## LOG …`; sekcja trwa do następnego `## ` i jest zwijana automatycznie (nagłówek w środku staje się `###`, więc nie trafia do spisu treści).
+
+Wersja końcowa: `python3 narzedzia/logi_zmian.py` pokazuje, które lekcje mają bloki `::: log`; `--usun` je wycina. Sekcje `## AUDYT` zostają (są zwijane), chyba że ktoś świadomie je usunie.

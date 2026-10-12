@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw pol (Język polski) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#7a2848;--accent-dark:#561a32;--accent-soft:#f6e9ee;--accent-line:#e2c3cf;--accent-glow:rgba(122,40,72,.15);--hl-key:#7a2848;--hl-key-bg:#f3dfe7;--hl-formula:#561a32;--hl-formula-bg:#f6e9ee;--bg:#fbfafa;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 140 200%27%3E%3Ctext x=%276%27 y=%27120%27 font-family=%27Georgia,serif%27 font-size=%27150%27 fill=%27%237a2848%27%3E%E2%80%9E%3C/text%3E%3Ctext x=%2760%27 y=%27190%27 font-family=%27Georgia,serif%27 font-size=%2770%27 font-style=%27italic%27 fill=%27%237a2848%27%3EAa%3C/text%3E%3C/svg%3E")}
@@ -648,7 +652,7 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Język polski</span><span class="lk-title">L009 Zdanie pojedyncze i złożone — współrzędność, podrzędność i interpunkcja</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Język polski, lekcja L009</div><h1>Zdanie pojedyncze i złożone — współrzędność, podrzędność i interpunkcja</h1><div class="tag-row"></div><div class="lk-meta"><span><b>Powiązania:</b> POL.02.G14.zdanie_pojedyncze.md; POL.02.G15.zdania_wspolrzedne.md; POL.02.G16.zdania_podrzedne.md</span><span><b>Czas:</b> 2–3 jednostki lekcyjne + powtórka</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">0. Cele lekcji</a><a class="toc-link" href="#s2">1. Wypowiedzenie, zdanie, równoważnik</a><a class="toc-link" href="#s3">2. Jak liczyć zdania składowe — ostrożnie</a><a class="toc-link" href="#s4">3. Zdania współrzędnie złożone</a><a class="toc-link" href="#s5">4. Zdania współrzędne bezspójnikowe</a><a class="toc-link" href="#s6">5. Zdania podrzędnie złożone</a><a class="toc-link" href="#s7">6. Pułapka: „który”, „czy”, „że” i inne wyrazy wprowadzające</a><a class="toc-link" href="#s8">7. Interpunkcja — algorytm</a><a class="toc-link" href="#s9">8. Wykres — pokaż relację, nie tylko kolejność</a><a class="toc-link" href="#s10">9. Klinika błędów</a><a class="toc-link" href="#s11">10. Ćwiczenia podstawowe z kluczem</a><a class="toc-link" href="#s12">11. Ćwiczenia rozszerzające z kluczem</a><a class="toc-link" href="#s13">12. Zadania w stylu egzaminacyjnym</a><a class="toc-link" href="#s14">13. Mini-test końcowy — 20 punktów</a><a class="toc-link" href="#s15">14. Fiszki</a><a class="toc-link" href="#s16">15. Powiązania i lista kontroli</a><a class="toc-link" href="#s17">Audyt lekcji — cykl analizy i uzupełnienia</a><a class="toc-link" href="#s18">AUDYT W2 — wynik (GPT-6, 2026-10-09)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">0. Cele lekcji</a><a class="toc-link" href="#s2">1. Wypowiedzenie, zdanie, równoważnik</a><a class="toc-link" href="#s3">2. Jak liczyć zdania składowe — ostrożnie</a><a class="toc-link" href="#s4">3. Zdania współrzędnie złożone</a><a class="toc-link" href="#s5">4. Zdania współrzędne bezspójnikowe</a><a class="toc-link" href="#s6">5. Zdania podrzędnie złożone</a><a class="toc-link" href="#s7">6. Pułapka: „który”, „czy”, „że” i inne wyrazy wprowadzające</a><a class="toc-link" href="#s8">7. Interpunkcja — algorytm</a><a class="toc-link" href="#s9">8. Wykres — pokaż relację, nie tylko kolejność</a><a class="toc-link" href="#s10">9. Klinika błędów</a><a class="toc-link" href="#s11">10. Ćwiczenia podstawowe z kluczem</a><a class="toc-link" href="#s12">11. Ćwiczenia rozszerzające z kluczem</a><a class="toc-link" href="#s13">12. Zadania w stylu egzaminacyjnym</a><a class="toc-link" href="#s14">13. Mini-test końcowy — 20 punktów</a><a class="toc-link" href="#s15">14. Fiszki</a><a class="toc-link" href="#s16">15. Powiązania i lista kontroli</a><a class="toc-link" href="#s17">Audyt lekcji — cykl analizy i uzupełnienia</a></nav></details>
 <section id="s1">
 <div class="part-heading"><span class="part-num">0</span> Cele lekcji</div>
 <p>Po tej lekcji potrafisz:
@@ -973,9 +977,8 @@ section ul,section ol{padding-left:1.35rem}
 <li>[x] Test ma 20 punktów.</li>
 <li>[ ] Pozostaje niezależna recenzja polonistyczna oraz walidacja z aktualnym informatorem i arkuszami CKE.</li>
 </ul>
-</section>
-<section id="s18">
-<div class="part-heading">AUDYT W2 — wynik (GPT-6, 2026-10-09)</div>
+<details class="lk-log"><summary>AUDYT W2 — wynik (GPT-6, 2026-10-09)</summary>
+<h3>AUDYT W2 — wynik (GPT-6, 2026-10-09)</h3>
 <p><strong>Zakres:</strong> Kontrola granic zdań składowych, współrzędności/podrzędności, spójników i interpunkcji.</p>
 <p><strong>Uzupełnienie wprowadzone:</strong> Doprecyzowano, że przecinka nie stawia się mechanicznie przed każdym spójnikiem; trzeba najpierw rozpoznać granice zdań składowych i konstrukcję wypowiedzenia.</p>
 <ul>
@@ -983,6 +986,7 @@ section ul,section ol{padding-left:1.35rem}
 <li>Własne rubryki ćwiczeniowe są kryteriami treningowymi, nie oficjalną punktacją CKE.</li>
 <li>Źródło do niezależnej kontroli wymagań egzaminacyjnych: https://egzaminy.gov.pl/cke/egzamin-osmoklasisty/informatory oraz Informator CKE: https://bip.cke.gov.pl/attachments/download/9824.</li>
 </ul>
+</details>
 </section>
 
 </main>

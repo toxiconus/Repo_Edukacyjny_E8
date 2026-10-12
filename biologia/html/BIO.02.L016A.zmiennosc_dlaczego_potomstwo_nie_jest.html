@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
 :root{
@@ -758,7 +762,7 @@ animation:bio-drift 60s linear infinite}
 <header class="lk-bar"><span class="lk-subj"><i></i>Biologia</span><span class="lk-title">L016A Zmienność: dlaczego potomstwo nie jest kopią rodziców?</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Biologia, lekcja L016A</div><h1>Zmienność: dlaczego potomstwo nie jest kopią rodziców?</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">L016A — Zmienność: dlaczego potomstwo nie jest kopią rodziców?</a><a class="toc-link" href="#s2">KARTA LEKCJI L016A</a><a class="toc-link" href="#s3">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s4">MATERIAŁ ZACHOWANY ZE SZKICU — archiwum robocze</a><a class="toc-link" href="#s5">1. Pytanie przewodnie</a><a class="toc-link" href="#s6">2. Podstawa</a><a class="toc-link" href="#s7">3. Genotyp, środowisko i fenotyp</a><a class="toc-link" href="#s8">4. Przykład</a><a class="toc-link" href="#s9">5. Klinika błędów</a><a class="toc-link" href="#s10">6. Ćwiczenia</a><a class="toc-link" href="#s11">7. Odpowiedzi</a><a class="toc-link" href="#s12">8. Most do kolejnych lekcji</a><a class="toc-link" href="#s13">9. Słownik</a><a class="toc-link" href="#s14">LEKCJA KANONICZNA — Zmienność: dlaczego potomstwo nie jest kopią rodziców?</a><a class="toc-link" href="#s15">1. Pytanie przewodnie</a><a class="toc-link" href="#s16">2. Cele lekcji (+ 80/20)</a><a class="toc-link" href="#s17">3. Co trzeba wiedzieć wcześniej (kompas) — [PRZYPOMNIENIE]</a><a class="toc-link" href="#s18">4. Zacznij od problemu (hipoteza ucznia)</a><a class="toc-link" href="#s19">5. Ściąga — poziom podstawowy (+ mnemotechniki) — [PODSTAWA E8]</a><a class="toc-link" href="#s20">6. Wyjaśnienie od podstaw — [PODSTAWA E8]</a><a class="toc-link" href="#s21">7. Poziom ambitny — [MASTER]</a><a class="toc-link" href="#s22">8. Poziom zaawansowany — [ZAAWANSOWANY]</a><a class="toc-link" href="#s23">9. Klinika błędów — [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s24">10. Obserwacja / model</a><a class="toc-link" href="#s25">11. Ćwiczenia (11A–11D) — [TRENING]</a><a class="toc-link" href="#s26">12. Odpowiedzi i sposób oceniania</a><a class="toc-link" href="#s27">13. Fiszki — [POWTÓRKA]</a><a class="toc-link" href="#s28">14. Test końcowy (3+2+2+1) — [TRENING]</a><a class="toc-link" href="#s29">15. Checklista</a><a class="toc-link" href="#s30">16. Mapa pojęć</a><a class="toc-link" href="#s31">17. Co dalej?</a><a class="toc-link" href="#s32">18. Słownik</a><a class="toc-link" href="#s33">19. Dodatek zaawansowany — [ZAAWANSOWANY]</a><a class="toc-link" href="#s34">20. Jak się uczyć tej lekcji?</a><a class="toc-link" href="#s35">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s36">22. Zadania z życia codziennego</a><a class="toc-link" href="#s37">AUDYT W1 — wynik (2026-10-09, GPT-6)</a><a class="toc-link" href="#s38">AUDYT GENETYKI — pogłębienie: skąd bierze się różnorodność? (2026-10-09)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">L016A — Zmienność: dlaczego potomstwo nie jest kopią rodziców?</a><a class="toc-link" href="#s2">KARTA LEKCJI L016A</a><a class="toc-link" href="#s3">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s4">MATERIAŁ ZACHOWANY ZE SZKICU — archiwum robocze</a><a class="toc-link" href="#s5">1. Pytanie przewodnie</a><a class="toc-link" href="#s6">2. Podstawa</a><a class="toc-link" href="#s7">3. Genotyp, środowisko i fenotyp</a><a class="toc-link" href="#s8">4. Przykład</a><a class="toc-link" href="#s9">5. Klinika błędów</a><a class="toc-link" href="#s10">6. Ćwiczenia</a><a class="toc-link" href="#s11">7. Odpowiedzi</a><a class="toc-link" href="#s12">8. Most do kolejnych lekcji</a><a class="toc-link" href="#s13">9. Słownik</a><a class="toc-link" href="#s14">LEKCJA KANONICZNA — Zmienność: dlaczego potomstwo nie jest kopią rodziców?</a><a class="toc-link" href="#s15">1. Pytanie przewodnie</a><a class="toc-link" href="#s16">2. Cele lekcji (+ 80/20)</a><a class="toc-link" href="#s17">3. Co trzeba wiedzieć wcześniej (kompas) — [PRZYPOMNIENIE]</a><a class="toc-link" href="#s18">4. Zacznij od problemu (hipoteza ucznia)</a><a class="toc-link" href="#s19">5. Ściąga — poziom podstawowy (+ mnemotechniki) — [PODSTAWA E8]</a><a class="toc-link" href="#s20">6. Wyjaśnienie od podstaw — [PODSTAWA E8]</a><a class="toc-link" href="#s21">7. Poziom ambitny — [MASTER]</a><a class="toc-link" href="#s22">8. Poziom zaawansowany — [ZAAWANSOWANY]</a><a class="toc-link" href="#s23">9. Klinika błędów — [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s24">10. Obserwacja / model</a><a class="toc-link" href="#s25">11. Ćwiczenia (11A–11D) — [TRENING]</a><a class="toc-link" href="#s26">12. Odpowiedzi i sposób oceniania</a><a class="toc-link" href="#s27">13. Fiszki — [POWTÓRKA]</a><a class="toc-link" href="#s28">14. Test końcowy (3+2+2+1) — [TRENING]</a><a class="toc-link" href="#s29">15. Checklista</a><a class="toc-link" href="#s30">16. Mapa pojęć</a><a class="toc-link" href="#s31">17. Co dalej?</a><a class="toc-link" href="#s32">18. Słownik</a><a class="toc-link" href="#s33">19. Dodatek zaawansowany — [ZAAWANSOWANY]</a><a class="toc-link" href="#s34">20. Jak się uczyć tej lekcji?</a><a class="toc-link" href="#s35">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s36">22. Zadania z życia codziennego</a></nav></details>
 <section id="s1">
 <div class="part-heading">L016A — Zmienność: dlaczego potomstwo nie jest kopią rodziców?</div>
 </section>
@@ -1005,18 +1009,17 @@ D. Mutacja zmienia materiał genetyczny, rekombinacja tworzy nowe kombinacje ist
 <section id="s36">
 <div class="part-heading"><span class="part-num">22</span> Zadania z życia codziennego</div>
 <p>Różnice między osobnikami mają znaczenie w medycynie, hodowli i ochronie przyrody. Nie należy jednak wyciągać wniosków o zdrowiu ani możliwościach konkretnej osoby wyłącznie z pojedynczej cechy lub informacji rodzinnej.</p>
-</section>
-<section id="s37">
-<div class="part-heading">AUDYT W1 — wynik (2026-10-09, GPT-6)</div>
+<details class="lk-log"><summary>AUDYT W1 — wynik (2026-10-09, GPT-6)</summary>
+<h3>AUDYT W1 — wynik (2026-10-09, GPT-6)</h3>
 <ul>
 <li>Szkic zachowano w pliku jako materiał archiwalny; dopisano pełną strukturę lekcji 1–22.</li>
 <li>Treść sprawdzono roboczo pod kątem spójności pojęć, odpowiedzi do zadań i oznaczeń poziomu.</li>
 <li>Każdy schemat tekstowy ma linię <code>@opis</code> opisującą zawartość i główny wniosek.</li>
 <li><strong>Ograniczenie:</strong> to redakcyjno-merytoryczna kontrola robocza, nie niezależna recenzja nauczyciela biologii. Dane liczbowe lub mechanizmy wykraczające poza E8 należy weryfikować osobno przed publikacją.</li>
 </ul>
-</section>
-<section id="s38">
-<div class="part-heading">AUDYT GENETYKI — pogłębienie: skąd bierze się różnorodność? (2026-10-09)</div>
+</details>
+<details class="lk-log"><summary>AUDYT GENETYKI — pogłębienie: skąd bierze się różnorodność? (2026-10-09)</summary>
+<h3>AUDYT GENETYKI — pogłębienie: skąd bierze się różnorodność? (2026-10-09)</h3>
 <h3>Trzy mechanizmy, których nie należy ze sobą mylić</h3>
 <p><strong>Mutacja</strong> zmienia sekwencję DNA i może wytworzyć nowy allel. <strong>Rekombinacja</strong> przestawia istniejące warianty w nowe kombinacje, m.in. podczas crossing-over i niezależnego rozchodzenia się chromosomów w mejozie. <strong>Losowe zapłodnienie</strong> łączy jedną z wielu możliwych gamet jednego rodzica z jedną z wielu możliwych gamet drugiego. Te procesy są powiązane, ale nie są synonimami.</p>
 <h3>Zmienność genetyczna a środowiskowa</h3>
@@ -1049,6 +1052,7 @@ D. Mutacja zmienia materiał genetyczny, rekombinacja tworzy nowe kombinacje ist
 <li>Rozwinięto związek genotypu, fenotypu i środowiska bez deterministycznych uproszczeń.</li>
 <li>Dodano zadania transferowe z kluczem i tabelę typowych błędów.</li>
 </ul>
+</details>
 </section>
 
 </main>

@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
@@ -638,7 +642,7 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;E02&quot; &quot;Potencjały elektrodowe&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "E02"</div><h1>"Potencjały elektrodowe"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA LO — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele</a><a class="toc-link" href="#s3">3. Szereg (wybrane wartości orientacyjne)</a><a class="toc-link" href="#s4">4. Zastosowanie</a><a class="toc-link" href="#s5">5. Klinika błędów</a><a class="toc-link" href="#s6">6. Ćwiczenia z kluczem</a><a class="toc-link" href="#s7">7. Test (3+2+2+1)</a><a class="toc-link" href="#s8">8. Słownik</a><a class="toc-link" href="#s9">AUDYT Grok — 2026-10-09</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA LO — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele</a><a class="toc-link" href="#s3">3. Szereg (wybrane wartości orientacyjne)</a><a class="toc-link" href="#s4">4. Zastosowanie</a><a class="toc-link" href="#s5">5. Klinika błędów</a><a class="toc-link" href="#s6">6. Ćwiczenia z kluczem</a><a class="toc-link" href="#s7">7. Test (3+2+2+1)</a><a class="toc-link" href="#s8">8. Słownik</a></nav></details>
 <p><strong>Dział:</strong> Elektrochemia (blok E)
 <strong>Poziomy:</strong> LO
 <strong>Poprzednia:</strong> E01
@@ -728,12 +732,12 @@ D. Po co tabela E°?</p>
 <tr><td>Potencjał standardowy E°</td><td>Potencjał względem std elektrody wodorowej</td></tr>
 <tr><td>Szereg elektrochemiczny</td><td>Uporządkowanie półogniw według E°</td></tr>
 </tbody></table></div>
-</section>
-<section id="s9">
-<div class="part-heading">AUDYT Grok — 2026-10-09</div>
+<details class="lk-log"><summary>AUDYT Grok — 2026-10-09</summary>
+<h3>AUDYT Grok — 2026-10-09</h3>
 <p><strong>Co zmieniono:</strong> Nowa lekcja od zera.
 <strong>Otwarte:</strong> Pełna tabela E° [do weryfikacji]; Nernst → E03.
 <strong>Status:</strong> UZUPEŁNIONE (nowa).</p>
+</details>
 </section>
 
 </main>

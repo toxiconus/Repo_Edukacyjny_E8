@@ -621,6 +621,10 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
 .quiz-q[hidden]{display:none!important}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
 
 /* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
 :root{
@@ -758,7 +762,7 @@ animation:bio-drift 60s linear infinite}
 <header class="lk-bar"><span class="lk-subj"><i></i>Biologia</span><span class="lk-title">L031 Jak działa dobór naturalny i czym różni się od sztucznego?</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Biologia, lekcja L031</div><h1>Jak działa dobór naturalny i czym różni się od sztucznego?</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA LEKCJI L031</a><a class="toc-link" href="#s2">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s3">1. Pytanie przewodnie</a><a class="toc-link" href="#s4">2. Cele lekcji</a><a class="toc-link" href="#s5">3. Kompas  · [PRZYPOMNIENIE]</a><a class="toc-link" href="#s6">4. Zacznij od problemu</a><a class="toc-link" href="#s7">5. Ściąga — poziom podstawowy  · [PODSTAWA E8]</a><a class="toc-link" href="#s8">6. Wyjaśnienie od podstaw (warstwa podręcznikowa)  · [PODSTAWA E8]</a><a class="toc-link" href="#s9">7. Poziom ambitny  · [MASTER]</a><a class="toc-link" href="#s10">8. Poziom zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s11">9. Klinika błędów  · [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s12">10. Obserwacja / model</a><a class="toc-link" href="#s13">11. Ćwiczenia  · [TRENING] (11D → [KONKURS])</a><a class="toc-link" href="#s14">12. Odpowiedzi i sposób oceniania</a><a class="toc-link" href="#s15">13. Fiszki  · [POWTÓRKA]</a><a class="toc-link" href="#s16">14. Test końcowy  · [TRENING]</a><a class="toc-link" href="#s17">15. Checklista</a><a class="toc-link" href="#s18">16. Mapa pojęć</a><a class="toc-link" href="#s19">17. Co dalej?</a><a class="toc-link" href="#s20">18. Słownik</a><a class="toc-link" href="#s21">19. Dodatek zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s22">20. Jak się uczyć?</a><a class="toc-link" href="#s23">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s24">22. Zadania z życia codziennego</a><a class="toc-link" href="#s25">23. STATUS LEKCJI</a><a class="toc-link" href="#s26">24. UZUPEŁNIENIE egzaminacyjne v4.0+ (doklejone)</a><a class="toc-link" href="#s27">23. UZUPEŁNIENIE AUDYTOWE v4.2 — zmienność → dobór → zmiana populacji</a><a class="toc-link" href="#s28">25. AUDYT W16 — ewolucja, ekologia i synteza (2026-10-09)</a><a class="toc-link" href="#s29">AUDYT W1 — Perplexity (2026-10-10)</a></nav></details>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA LEKCJI L031</a><a class="toc-link" href="#s2">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s3">1. Pytanie przewodnie</a><a class="toc-link" href="#s4">2. Cele lekcji</a><a class="toc-link" href="#s5">3. Kompas  · [PRZYPOMNIENIE]</a><a class="toc-link" href="#s6">4. Zacznij od problemu</a><a class="toc-link" href="#s7">5. Ściąga — poziom podstawowy  · [PODSTAWA E8]</a><a class="toc-link" href="#s8">6. Wyjaśnienie od podstaw (warstwa podręcznikowa)  · [PODSTAWA E8]</a><a class="toc-link" href="#s9">7. Poziom ambitny  · [MASTER]</a><a class="toc-link" href="#s10">8. Poziom zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s11">9. Klinika błędów  · [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s12">10. Obserwacja / model</a><a class="toc-link" href="#s13">11. Ćwiczenia  · [TRENING] (11D → [KONKURS])</a><a class="toc-link" href="#s14">12. Odpowiedzi i sposób oceniania</a><a class="toc-link" href="#s15">13. Fiszki  · [POWTÓRKA]</a><a class="toc-link" href="#s16">14. Test końcowy  · [TRENING]</a><a class="toc-link" href="#s17">15. Checklista</a><a class="toc-link" href="#s18">16. Mapa pojęć</a><a class="toc-link" href="#s19">17. Co dalej?</a><a class="toc-link" href="#s20">18. Słownik</a><a class="toc-link" href="#s21">19. Dodatek zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s22">20. Jak się uczyć?</a><a class="toc-link" href="#s23">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s24">22. Zadania z życia codziennego</a><a class="toc-link" href="#s25">23. STATUS LEKCJI</a><a class="toc-link" href="#s26">24. UZUPEŁNIENIE egzaminacyjne v4.0+ (doklejone)</a><a class="toc-link" href="#s27">23. UZUPEŁNIENIE AUDYTOWE v4.2 — zmienność → dobór → zmiana populacji</a><a class="toc-link" href="#s28">25. AUDYT W16 — ewolucja, ekologia i synteza (2026-10-09)</a></nav></details>
 <section id="s1">
 <div class="part-heading">KARTA LEKCJI L031</div>
 <ul>
@@ -1234,12 +1238,12 @@ Dlaczego ludzie hodują rasy psów o różnych cechach?</p>
 </ul>
 <h3>Ograniczenie audytu</h3>
 <p>Wprowadzono doprecyzowania pojęciowe i opisy wizualne, lecz nie sprawdzono niezależnie każdego zadania, klucza odpowiedzi ani zgodności zakresu z aktualnym regulaminem konkursu. Liczby, przykłady lokalne i wymagania konkretnego etapu należy walidować osobno.</p>
-</section>
-<section id="s29">
-<div class="part-heading">AUDYT W1 — Perplexity (2026-10-10)</div>
+<details class="lk-log"><summary>AUDYT W1 — Perplexity (2026-10-10)</summary>
+<h3>AUDYT W1 — Perplexity (2026-10-10)</h3>
 <ul>
 <li>Wprowadzone: definicja (dziedziczne cechy, sukces rozrodczy, brak celu i świadomości), tabela naturalny/sztuczny bez „tempa wolne/szybkie”, oporność także przez poziomy transfer genów, losowość mutacji, typy doboru z przykładami, fenotyp a allele, dobór płciowy, dryf a dobór, efekt założyciela, opis modelu z koralikami (zmienne), pełny klucz §12 (był przesunięty), klucz testu §14, odpowiedzi §22.</li>
 </ul>
+</details>
 </section>
 
 </main>
