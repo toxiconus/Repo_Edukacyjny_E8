@@ -423,3 +423,22 @@ Uwagi:
 Uwagi:
 - Pozycja Kraków 2023/24 wojewódzki ma teraz kompletne dane z pliku (16 zadań, 120 min, 60 pkt, bez klucza). Klucz do tego etapu nie został znaleziony w wynikach wyszukiwania.
 - Łódź 2019/20–2022/23 i Kielce 2019/20–2021/22 oraz 2023/24–2024/25 nadal do zrobienia (zestawienie 5e7b51fe proponuje je jako następną partię).
+
+---
+
+## Weryfikacja zestawienia 3f48aee3 (2026-10-12) – Łódź, Kraków, Kielce
+
+| Źródło (z zestawienia) | Wynik weryfikacji | Co potwierdzono |
+|---|---|---|
+| Łódź 2022/23 – schemat etapu wojewódzkiego (`schemat-oceniania-etap-wojewodzki-chemia.pdf`, 2023/03) | **Potwierdzony (klucz)** | Wojewódzki, 2022/23: 15 zadań (z podpunktami), **100 pkt**. Zgodne z testem 2022/23 (15 zadań, 100 pkt, 120 min – zob. wcześniejsza weryfikacja). Odpowiedzi zamknięte: zad. 1 (P/F, A–F), zad. 8a–b. Pozostałe tematy: 1 prawda/fałsz (6), 2 równania tworzenia soli (8), 3 wzory soli Zn i Fe(III) (6), 4 pierwiastki F, S, Cl, Se (4), 5 rozdzielanie mieszanin (3), 6 tlenki i barwa papierka (8), 7 rozpuszczalność KCl (16), 8 izomery (5), 9 węglowodory (2), 10 spalanie węglowodoru (13), 11 eten i etan (2), 12 gazy i szereg homologiczny (8), 13 związki A i B (8), 14 etanol, glicerol, estryfikacja (8), 15 kwasy i estry (3). |
+| Łódź 2022/23 – schemat etapu szkolnego i rejonowego (DOC/PDF) | **Niepotwierdzony** | Nie wystąpiły w wynikach wyszukiwania. |
+| Łódź 2021/22 – materiały (test + schemat, 3 etapy) | **Niepotwierdzony** | Strona `materialy-konkursowe-4` nie została otwarta; pliki nie wystąpiły w wynikach. |
+| Łódź 2024/25 – test i schemat szkolny/wojewódzki | **Niepotwierdzony w tej partii** | Wcześniej w wynikach był test wojewódzki 2024/25 (DOCX), który nie dał się odczytać (zob. poprzednia weryfikacja). Schemat 2024/25 szkolny (DOCX) – w wynikach, nieotwarty. |
+| Kraków 2022/23 – schemat etapu rejonowego (`etap-rejonowy-schemat-oceniania-5.pdf`, katalog 2023/05) | **Otwarty, rok niepotwierdzony** | Plik ma nagłówek „Etap II (rejonowy)" bez roku. Zawiera **4 zadania** (I–IV, 60 pkt: 15+17+15+13) i odpowiedzi do części zadań zamkniętych (II.3, II.4, III.1, III.6, III.7, IV.1). Nie pasuje do formatu 40 zadań z kluczy 2023/24 – nie przypisywać do 2022/23 bez innego dowodu. |
+| Kraków 2022/23 – pozostałe pliki (`etap-szkolny-schemat-oceniania-7.pdf`, `mkch_etap-wojewodzki_schemat-oceniania.pdf`) | **Niepotwierdzony / nieotwarty** | Pierwszy w wynikach jako katalog 2022/07 (prawdopodobnie inny rok szkolny niż 2022/23 – do sprawdzenia). Drugi – w wynikach, nieotwarty. |
+| Kielce 2023/24 – V Wojewódzki Konkurs z Chemii, etap III (strona 84949, arkusz 599 KB, model 115 KB) | **Niepotwierdzony** | Adres strony ani PDF-ów nie wystąpił w wynikach wyszukiwania. |
+| Kraków 2022/23 – strona zbiorcza `malopolski-konkurs-chemiczny-...-2022-2023` | **Niepotwierdzony** | Nie wystąpiła w wynikach. |
+
+Uwagi:
+- Pierwsza pozycja potwierdza, że wojewódzki 2022/23 ma klucz 100 pkt i 15 zadań – zgodnie z testem.
+- Kraków: dwa różne pliki „rejonowy" z różnymi strukturami (40 zadań w 2023/24 vs. 4 zadania bez roku). Przy wpisach do banku podawać rok z nazwy pliku tylko po potwierdzeniu.
