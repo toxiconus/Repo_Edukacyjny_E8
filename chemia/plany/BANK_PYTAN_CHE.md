@@ -94,6 +94,39 @@ Odpowiedzi nie zawiera (w pobranym pliku brak kluczy). Do uzupełnienia z zasad 
 9. Reakcja magnezu z kwasem solnym: czynnik wpływający na ubytek masy, produkt — F17, A.
 10. Smog: prawdziwość dwóch zdań i wyjaśnienie zimą — N01.
 
+## Arkusz pokazowy OCH 500 / OCHP C00 (CKE, grudzień 2020) — opisowo, 24 zadania, 34 pkt
+
+Źródła (oficjalne, oke.waw.pl, folder „Arkusze pokazowe egzamin ósmoklasisty z przedmiotów dodatkowych / Chemia”): `OCH_500.pdf` i `OCHP_C00_compressed.pdf`. Oba to ten sam zestaw w dwóch wersjach zapisu. Pobrane przez WebFetch, który streszcza treść i nie przepisuje dosłownie (limit cytatów). Dlatego opisy są streszczeniami; zanim wpiszemy zadanie do lekcji jako gotowe, sprawdzić w PDF dokładne brzmienie. Kluczy odpowiedzi w obu plikach brak. Rozbieżności między streszczeniami (np. opcja C w zadaniu 21) — zaznaczyć przy weryfikacji.
+
+Poziom wszystkich: P (podstawa E8), chyba że zaznaczono inaczej. Działy przypisane przez nas.
+
+1. (0–1) Wybór A–D. Piktogram ostrzegawczy, który był na etykiecie wybielacza po tym, jak jeden znak stał się nieczytelny. Dział: BHP, F02.
+2. (0–1) Wybór z uzasadnieniem. Przy destylacji skroplonego gazu rozweselającego (N₂O, tt −88,5 °C) i tlenu (−183 °C): który składnik oddestyluje pierwszy i dlaczego (wyższa/niższa temperatura wrzenia). Dział: F03.
+3. (0–1) Wybór A/B. Gęstości: kwas oleinowy 0,887 g/cm³, woda 0,998 g/cm³ w 20 °C. Która warstwa w probówce to kwas oleinowy. Dział: F03.
+4. (0–1) Otwarte. Na podstawie schematu tworzenia wiązania jonowego (atom metalu → kation, atom niemetalu → anion, przyciąganie) uzasadnić, że schemat ilustruje bromek wapnia. Dział: F11.
+5. (0–1) Wybór z uzasadnieniem. Pierwiastek E z powłokami K2, L8, M8, N1: metal czy niemetal; oddaje czy przyjmuje elektrony. Dział: F06, F11.
+6. (0–2) Tabela. Izotop E z 21 neutronami: uzupełnić liczbę masową, atomową, protony i symbol. Dział: F04/F05.
+7. (0–1) Wybór z uzasadnieniem. Rozpuszczanie NaOH (wzrost o 20 °C w tabeli z rysunku), NH₄NO₃ (spadek o 12 °C) i NaCl (wzrost o 2 °C) — wskazać endotermiczne rozpuszczanie i powód. Dział: K02. Uwaga: streszczenia dwóch wersji różnią się przypisaniem zlewek I–III do substancji — sprawdzić w PDF.
+8. (0–1) Otwarte. Która z substancji z informacji nie nadaje się do kapsuły okładu SUPER ICE i dlaczego. Dział: F03, K02.
+9. (0–1) Otwarte. Tabela: masa 15,68 g (0 s), 15,49 g (20 s), 15,33 g (40 s), 15,22 g (60 s). Oprócz pary wodnej i HCl wskazać czynnik powodujący ubytek masy i produkt reakcji magnezu z HCl. Dział: F17.
+10. (0–2) 10.1: prawdziwość dwóch zdań o smogu (P/F). 10.2: dlaczego najwięcej smogu jest zimą. Dział: N01.
+11. (0–2) Otwarte, rachunek. Tlenek niemetalu, którego kwas ma stosunek mas H : E : O = 1 : 16 : 24 (pierwiastek E ma masę 16 względem H = 1). Podać wzór tlenku i równanie reakcji z wodą. Dział: F12, N02. Poziom L.
+12. (0–2) Otwarte, rachunek. Ile gramów NaOH i kilogramów wody do 10 kg roztworu 3%. Dział: R03. Poziom L.
+13. (0–1) Uzupełnienie wyborami. Przyduchę akwariową tłumaczy woda o (A niskiej / B wysokiej) temperaturze, a rozpuszczalność O₂ w wodzie z rosnącą temperaturą (C maleje / D rośnie). Dział: R02.
+14. (0–1) Wykres. Narysować punktowy wykres rozpuszczalności KCl od temperatury: 28, 40, 51, 56 g na 100 g wody w 0, 40, 80, 100 °C; osie z poprawną skalą. Dział: R02.
+15. (0–1) Uzupełnienie wyborami. Test nasycenia roztworu KCl: po dodaniu kryształków (A rozpuszcza się więcej / B nic się nie rozpuści) i po ochłodzeniu (C wykrystalizują / D nie wykrystalizują). Dział: R02.
+16. (0–1) Wybór z uzasadnieniem. Czy kosmetyk jest kwaśny: porównać z probówką A (IV — woda destylowana) lub B (V — ocet), uzasadnienie: pH < 7, = 7 lub > 7. Dział: J02.
+17. (0–1) Otwarte z uzasadnieniem. Tabela barw trzech wskaźników (sok z czerwonej kapusty, sok z czarnej porzeczki/jagód, fenoloftaleina) w kwasie octowym, wodzie destylowanej i NaOH. Wybrać wskaźnik rozróżniający wodę destylowaną i szampon o pH 5,5. Dział: J02.
+18. (0–1) Wybór z uzasadnieniem. Tłuszcze roślinne zawierają głównie związki (A nasycone / B nienasycone), bo mają więcej reszt (1) C₁₇H₃₃COOH lub (2) C₁₇H₃₅COOH. Dział: O (tłuszcze). Poziom L.
+19. (0–2) Otwarte z równaniem. Trzy bezbarwne roztwory (NaOH, NaCl, HCl) z fenoloftaleiną: wyjaśnić, dlaczego roztwór III pozostaje bezbarwny po dodaniu roztworu II; zapisać równanie jonowe. Dział: J03, J06.
+20. (0–2) 20.1: dwa zdania o niecałkowitym spalaniu pentanu pod zlewką (P/F). 20.2: równanie całkowitego spalania pentanu z nadmiarem tlenu. Dział: O.
+21. (0–3) 21.1: rozpoznać substancję X spośród CuSO₃, MgCO₃, C (streszczenia różnią się: KNO₃ lub K₂SO₃), Na₂CO₃ — po reakcji z kwasem. 21.2: podać wzór i nazwę białego osadu o masie molowej 100 u z tabeli rozpuszczalności (CaCO₃, węglan wapnia). Dział: J10, J11. Poziom L.
+22. (0–1) Prawda/fałsz. Próba biuretowa (białko jaja z świeżym Cu(OH)₂, fioletowe zabarwienie): ocenić, czy zachodzi koagulacja białka; czy fiolet potwierdza białko. Dział: O (biochemia).
+23. (0–2) 23.1: które z wniosków 1–4 o plastrach jabłka z sokiem cytrynowym i bez są poprawne (A: 1 i 3 / B: 2 i 4 / C: 2 i 3 / D: 1 i 4). 23.2: brązowienie jabłka to zjawisko (A fizyczne / B chemiczne) zmieniające właściwości (C tylko fizyczne / D tylko chemiczne / E i fizyczne, i chemiczne). Dział: F03, O. Poziom L.
+24. (0–2) 24.1: prawda/fałsz o kwasie cytrynowym (jednokarboksylowy; dysocjacja etapowa). 24.2: który fragment struktury (I czy II) decyduje o kwasowym odczynie roztworu i uzasadnić. Dział: O, J07. Poziom A.
+
+Odpowiedzi do tego arkusza: brak w pobranym pliku. Każdą odpowiedź do zadań zamkniętych wyliczyć i zweryfikować przed wpisaniem do lekcji.
+
 ## Konkursy i olimpiady — poziomy (etap szkolny, rejonowy, wojewódzki)
 
 Zasada: każde pytanie ma etap i źródło. Na razie tylko podstawówka.
