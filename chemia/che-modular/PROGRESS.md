@@ -127,3 +127,5 @@
 - 2026-10-12: BIO L019 grupy krwi — napisana (GOTOWE NAPISZ, 81 KB), wczytana skryptem; 1 literówka; do W1. L011 z GPT odrzucona (niezgodna z formatem).
 - 2026-10-12: BIO L020 mutacje (GLM z.ai) wczytana; cyrylica ×2, przywrócona grafika kod-genetyczny. wczytaj_odpowiedz: nowa kontrola zgubionych grafik z materiału (eksport/GOTOWE_zrodla.json).
 - 2026-10-12: odpowiedź na L021 (powtórka) okazała się lekcją o biotechnologii → zapisana jako BIO L022 (84 KB), do W1; L021 do ponownego napisania.
+
+- 2026-10-12: W1 wewnętrzny (Claude Haiku 5.5) dla N01, N02, N03 (+N04 wcześniej): wykłady „od zera”, mini-wykłady, ciekawostki, poprawki faktów i odwołań, usunięte harmonogramy; build md2html OK. Test `che.py test` nie zakończył się w limicie czasu — do powtórzenia.
