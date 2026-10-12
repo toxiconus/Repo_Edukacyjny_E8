@@ -127,7 +127,7 @@ def preprocess(text, p):
     L = text.split('\n'); fm = 0
     if L and L[0].strip() == '---':   # front matter zostaje bez zmian
         fm = next((k for k in range(1, len(L)) if L[k].strip() == '---'), 0) + 1
-    out = L[:fm]; L = poziomy(bloki_kodu(L[fm:])); i = 0; nsec = 0
+    out = L[:fm]; L = log_bloki(poziomy(bloki_kodu(L[fm:]))); i = 0; nsec = 0
     while i < len(L):
         st = L[i].strip()
         if st.startswith('@viz '):
@@ -172,6 +172,30 @@ def bio_js(main):
     brak = [i for i in ids if not os.path.exists(os.path.join(BIO_SZ, 'wizualizacje', i + '.js'))]
     if brak: raise SystemExit('BŁĄD: brak wizualizacji w biologia/bio/szablon/wizualizacje/: ' + ', '.join(brak))
     return rd(os.path.join(BIO_SZ, 'bio-core.js')) + '\n' + ''.join(rd(os.path.join(BIO_SZ, 'wizualizacje', i + '.js')) + '\n' for i in ids)
+
+def log_bloki(L):
+    """::: log | Tytuł  ...  :::  →  zwijany blok <details> (logi analizy zmian; zamknięty domyślnie).
+    Znacznik „log” to jedyny sposób zapisu logu: narzedzia/logi_zmian.py wyszukuje i usuwa właśnie te bloki."""
+    out = []; i = 0
+    while i < len(L):
+        m = re.match(r'\s*:::\s*log\b\s*\|?\s*(.*)$', L[i])
+        if not m:
+            out.append(L[i]); i += 1; continue
+        tytul = H.escape(m.group(1).strip() or 'Analiza zmian')
+        out += ['::: html', '<details class="lk-log"><summary>%s</summary>' % tytul, ':::']
+        depth = 1; i += 1
+        while i < len(L):
+            t = L[i].strip()
+            if t == ':::':
+                depth -= 1
+                if depth == 0: break
+            elif t.startswith(':::'):
+                depth += 1
+            out.append(L[i]); i += 1
+        if i >= len(L): raise SyntaxError('niezamknięty ::: log')
+        out += ['::: html', '</details>', ':::']; i += 1
+    return out
+
 
 def render(path, p):
     surowy = rd(path)
