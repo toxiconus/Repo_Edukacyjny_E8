@@ -116,3 +116,4 @@
 - U10: §0–14 Zad. 7 przebudowane + zadania 17–20, test, fiszki, słownik, klinika; reszta do W1 (paczka AI_ULEPSZ_BIO_U10_reszta).
 - U06: tylko dodatki D1–D10 (pierwsza tura nie dotarła); paczki U06_cz1/cz2.
 - U08: część 1 (§0–13) + zadania 20–23; reszta — paczka AI_ULEPSZ_BIO_U08_reszta. Poprawiony fakt o nerwie krtaniowym żyrafy.
+- 2026-10-12: U08 i U10 — druga część (od §14) z Claude Sonnet 5.5 scalona → obie lekcje W1 FULL; „Co dalej?” na końcu, nowe sekcje nie-myl / olimpijczyk / zadania olimpijskie; SVG-propozycje w biologia/bio/grafiki/propozycje/.

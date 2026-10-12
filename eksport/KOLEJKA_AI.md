@@ -4,9 +4,9 @@
 
 ## biologia
 
-**niski priorytet (W1 starym promptem) — 5 lekcji, 349 KB:** REV01 (43 KB) · REV02 (59 KB) · U06 (79 KB) · U08 (88 KB) · U10 (78 KB)
+**niski priorytet (W1 starym promptem) — 3 lekcji, 182 KB:** REV01 (43 KB) · REV02 (59 KB) · U06 (79 KB)
 
-**NIE wysyłać (W1 FULL) — 5 lekcji, 391 KB:** L010 (61 KB) · H01 (78 KB) · U01 (57 KB) · U03 (104 KB) · U04 (88 KB)
+**NIE wysyłać (W1 FULL) — 7 lekcji, 605 KB:** L010 (61 KB) · H01 (78 KB) · U01 (57 KB) · U03 (104 KB) · U04 (88 KB) · U08 (107 KB) · U10 (105 KB)
 
 ## chemia
 

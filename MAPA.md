@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (8 pl., 166 KB)
+## .  (8 pl., 168 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 14 KB
@@ -11,7 +11,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
-- `WERYFIKACJA.md` 38 KB
+- `WERYFIKACJA.md` 40 KB
 
 ## angielski  (3 pl., 959 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -26,35 +26,27 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
 - ⚠`L012-EN-Future-Simple.html` 121 KB
 
-## angielski/html  (7 pl., 856 KB)
-- ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.html` 169 KB
-- ⚠`ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.html` 112 KB
+## angielski/html  (7 pl., 926 KB)
+- ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.html` 201 KB
+- ⚠`ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.html` 150 KB
 - ⚠`ANG.01.L004.czasy_terazniejsze_i_przeszle.html` 139 KB
 - ⚠`ANG.01.L005.present_perfect.html` 156 KB
 - ⚠`ANG.01.L006.past_simple_continuous.html` 139 KB
 - ⚠`ANG.01.L012.future_simple.html` 140 KB
 - `index.html` 2 KB
 
-## angielski/lekcje_md  (6 pl., 308 KB)
-- ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.md` 70 KB
-- `ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.md` 30 KB
+## angielski/lekcje_md  (6 pl., 352 KB)
+- ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.md` 88 KB
+- ⚠`ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.md` 56 KB
 - `ANG.01.L004.czasy_terazniejsze_i_przeszle.md` 49 KB
 - ⚠`ANG.01.L005.present_perfect.md` 60 KB
 - `ANG.01.L006.past_simple_continuous.md` 49 KB
 - `ANG.01.L012.future_simple.md` 50 KB
 
-## angielski/plany/audyty  (11 pl., 266 KB)
+## angielski/plany/audyty  (18 pl., 385 KB)
+- (zwinięte; `ls angielski/plany/audyty`) — duże:
 - ⚠`ULEPSZ_OLI_L004_2026-10-11.md` 55 KB
-- `ULEPSZ_OLI_L005_2026-10-11.md` 46 KB
-- `ULEPSZ_OLI_L005_cz2_2026-10-11.md` 31 KB
 - ⚠`ULEPSZ_OLI_L006_2026-10-11.md` 55 KB
-- `ULEPSZ_OLI_L012_czesc1_2026-10-11.md` 21 KB
-- `ULEPSZ_OLI_L012_czesc2_2026-10-11.md` 13 KB
-- `ULEPSZ_OLI_L012_czesc3_2026-10-11.md` 11 KB
-- `ULEPSZ_OLI_L012_czesc4_2026-10-11.md` 10 KB
-- `W17_WDROZENIE_W1_ANGIELSKI_2026-10-09.md` 1 KB
-- `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
-- `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
 
 ## biologia  (3 pl., 1.3 MB)
 - ⚠`BIO.all.v01.00.md` 711 KB
@@ -75,17 +67,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 10 KB
 - `PRZEKAZANIE.md` 5 KB
 
-## biologia/bio/md  (10 pl., 660 KB)
-- `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 37 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 54 KB
-- ⚠`BIO.02.L010.dna_od_zera.md` 59 KB
+## biologia/bio/md  (10 pl., 802 KB)
+- `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 44 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 61 KB
+- ⚠`BIO.02.L010.dna_od_zera.md` 63 KB
 - ⚠`BIO.07.H01.homeostaza.md` 81 KB
-- `BIO.07.U01.skora_i_uklad_ruchu.md` 50 KB
-- ⚠`BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` 87 KB
-- ⚠`BIO.07.U04.krazenie_krew_odpornosc.md` 80 KB
-- ⚠`BIO.07.U06.oddychanie_i_wydalanie.md` 71 KB
-- ⚠`BIO.07.U08.uklad_nerwowy_i_zmysly.md` 77 KB
-- ⚠`BIO.07.U10.uklad_dokrewny.md` 64 KB
+- ⚠`BIO.07.U01.skora_i_uklad_ruchu.md` 59 KB
+- ⚠`BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` 106 KB
+- ⚠`BIO.07.U04.krazenie_krew_odpornosc.md` 90 KB
+- ⚠`BIO.07.U06.oddychanie_i_wydalanie.md` 82 KB
+- ⚠`BIO.07.U08.uklad_nerwowy_i_zmysly.md` 110 KB
+- ⚠`BIO.07.U10.uklad_dokrewny.md` 107 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
@@ -124,11 +116,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (23 pl., 586 KB)
+## biologia/plany/audyty  (36 pl., 1014 KB)
 - (zwinięte; `ls biologia/plany/audyty`) — duże:
+- ⚠`ULEPSZ_GLM_U01_2026-10-11.md` 66 KB
+- ⚠`ULEPSZ_GLM_U03_2026-10-11.md` 124 KB
+- ⚠`ULEPSZ_GLM_U10_2026-10-11.md` 68 KB
 - ⚠`ULEPSZ_H01_gpt-6_2026-10-11.md` 52 KB
 - ⚠`ULEPSZ_H01_model_B_2026-10-11.md` 61 KB
 - ⚠`ULEPSZ_H01_model_E_2026-10-11.md` 55 KB
+- ⚠`ULEPSZ_U08_cz1_2026-10-11.md` 58 KB
 - ⚠`W1_perplexity_U04_krazenie_2026-10-11.md` 78 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
@@ -168,7 +164,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 118 KB)
+## chemia/che-modular  (13 pl., 121 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -368,16 +364,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (17 pl., 1020 KB)
+## chemia/che-modular/lessons-md/gotowe  (17 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
+- ⚠`F01_jak_mysli_chemik.md` 53 KB
+- ⚠`F06_uklad_okresowy.md` 56 KB
 - ⚠`F17_rownania_reakcji_i_obliczenia.md` 57 KB
 - ⚠`FIZ01_elektrostatyka.md` 55 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 129 KB
 - ⚠`N03_kwasy.md` 134 KB
 - ⚠`N04_sole.md` 86 KB
-- ⚠`N05_wodorki.md` 60 KB
-- ⚠`REV01_powtorka_klasy_7.md` 62 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
 - `FIZ01.json` 1 KB
@@ -590,7 +586,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (13 pl., 67 KB)
+## eksport  (13 pl., 66 KB)
 - (zwinięte; `ls eksport`)
 
 ## narzedzia  (15 pl., 111 KB)
@@ -775,26 +771,26 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L010.srodki_stylistyczne.md` 23 KB
 - `POL.01.L011.elementy_utworu_moral_puenta.md` 22 KB
 
-## polski/html  (48 pl., 5.6 MB)
+## polski/html  (48 pl., 6.0 MB)
 - (zwinięte; `ls polski/html`) — duże:
-- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 189 KB
-- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 158 KB
-- ⚠`POL.01.L003.narnia_zaimek.html` 141 KB
-- ⚠`POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.html` 127 KB
-- ⚠`POL.01.L005.kajko_i_kokosz_rzeczownik.html` 123 KB
-- ⚠`POL.01.L006.akademia_pana_kleksa_czasownik.html` 133 KB
+- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 239 KB
+- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 181 KB
+- ⚠`POL.01.L003.narnia_zaimek.html` 161 KB
+- ⚠`POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.html` 150 KB
+- ⚠`POL.01.L005.kajko_i_kokosz_rzeczownik.html` 156 KB
+- ⚠`POL.01.L006.akademia_pana_kleksa_czasownik.html` 153 KB
 - ⚠`POL.01.L007.przeglad_czesci_mowy.html` 127 KB
 - ⚠`POL.01.L008.czesci_zdania.html` 124 KB
 
-## polski/lekcje_md  (6 pl., 251 KB)
-- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.md` 80 KB
-- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.md` 54 KB
-- `POL.01.L003.narnia_zaimek.md` 37 KB
-- `POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.md` 27 KB
-- `POL.01.L005.kajko_i_kokosz_rzeczownik.md` 23 KB
-- `POL.01.L006.akademia_pana_kleksa_czasownik.md` 30 KB
+## polski/lekcje_md  (6 pl., 361 KB)
+- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.md` 112 KB
+- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.md` 68 KB
+- `POL.01.L003.narnia_zaimek.md` 50 KB
+- `POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.md` 42 KB
+- `POL.01.L005.kajko_i_kokosz_rzeczownik.md` 47 KB
+- `POL.01.L006.akademia_pana_kleksa_czasownik.md` 43 KB
 
-## polski/plany/audyty  (28 pl., 523 KB)
+## polski/plany/audyty  (49 pl., 842 KB)
 - (zwinięte; `ls polski/plany/audyty`) — duże:
 - ⚠`ULEPSZ_OLI_G07_G12_2026-10-11.md` 52 KB
 - ⚠`ULEPSZ_OLI_G12_2026-10-11.md` 61 KB
@@ -809,7 +805,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 641 KB)
+## polski/podstawy  (23 pl., 738 KB)
 - (zwinięte; `ls polski/podstawy`) — duże:
 - ⚠`POL.02.G03.przymiotnik.md` 62 KB
 - ⚠`POL.02.G04.liczebnik.md` 70 KB

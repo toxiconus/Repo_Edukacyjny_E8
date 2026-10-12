@@ -9,7 +9,7 @@ lead: Najważniejsze umiejętności działu: opisać budowę neuronu i drogę im
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.8 układ nerwowy, III.9 narządy zmysłów. Współpraca z układem hormonalnym — lekcja o układzie dokrewnym (B2e); sprzężenie zwrotne — H01 Homeostaza. Liczby (liczba neuronów, prędkość impulsu, liczba fotoreceptorów, zakres słyszalności, progi hałasu) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U08 v1.1** · Układ nerwowy i narządy zmysłów · 2026
-stan: W1 częściowo — AI z poczty (tryb ULEPSZ, część 1: §0–13), 2026-10-11; §14 do końca do ponownego W1 (część 2)
+stan: W1 FULL — AI z poczty (§0–13) + Claude Sonnet 5.5 (§14–27), 2026-10-11/12; scalił Claude 2026-10-12
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Schemat działania:** bodziec → **receptor** → impuls nerwowy → **ośrodek** (OUN) → impuls → **efektor** (mięsień lub gruczoł) → reakcja.
@@ -455,6 +455,14 @@ Komórki zmysłowe ślimaka **nie odrastają**. Długotrwały hałas (słuchawki
 Uderzenie w oko daje „gwiazdy” przed oczami, choć to bodziec mechaniczny, a nie światło. Każda droga nerwowa prowadzi do „swojego” ośrodka w korze i mózg interpretuje sygnał zgodnie z tym, skąd przyszedł: impuls z nerwu wzrokowego zawsze jest odbierany jako światło. To pokazuje, że **widzimy i słyszymy mózgiem**, a narządy zmysłów są tylko przetwornikami.
 :::
 
+::: karta understand | W skrócie — węch to zmysł „na skróty”
+Receptory węchowe to same **neurony** w nabłonku węchowym; ich aksony wchodzą przez drobne otwory kości sitowej do opuszki węchowej, a stąd impulsy trafiają do kory węchowej i układu limbicznego (emocje, pamięć) — w uproszczeniu z pominięciem wzgórza, przez które przechodzą informacje z innych zmysłów. Dlatego zapach potrafi nagle przywołać wspomnienie. Komórki węchowe są narażone na uszkodzenia z powietrza, więc są odnawiane co kilka tygodni (orientacyjnie).
+:::
+
+::: karta understand | W skrócie — adaptacja receptorów
+Gdy bodziec trwa, receptor osłabia reakcję: po chwili nie czujesz zegarka na ręku, perfum ani ubrania. To nie wada, tylko sposób, by mózg zajmował się **zmianami**, a nie tłem. Receptory bólu adaptują się słabo — sygnał ostrzegawczy ma trwać, dopóki przyczyna nie zniknie (orientacyjnie).
+:::
+
 ## 15 | Zmysły i układ nerwowy — współpraca {#wspolpraca}
 
 - **Wzrok + móżdżek + błędnik** → równowaga (stań na jednej nodze i zamknij oczy — trudniej).
@@ -470,7 +478,7 @@ Hipoteza: Obraz padający na miejsce wyjścia nerwu wzrokowego nie jest widziany
 Sprzęt: kartka z narysowanym krzyżykiem i — ok. 7–8 cm w prawo od niego — pełnym kółkiem.
 Przebieg: Zasłaniamy **lewe** oko, prawym patrzymy **cały czas na krzyżyk** z odległości ok. 50 cm i powoli zbliżamy kartkę do twarzy. Powtarzamy kilka razy i z drugim okiem (kółko po lewej, zasłonięte prawe oko).
 Obserwacja: W pewnej odległości (zwykle ok. 25–30 cm — orientacyjnie) kółko znika, a przy dalszym zbliżaniu pojawia się znowu.
-Wniosek: W siatkówce jest miejsce bez fotoreceptorów — **plamka ślepa** (wyjście nerwu wzrokowego). Na co dzień jej nie zauważamy, bo patrzymy dwojgiem oczu, a mózg uzupełnia brakujący fragment obrazu.
+Wniosek: W siatkówce jest miejsce bez fotoreceptorów — **plamka ślepa** (wyjście nerwu wzrokowego). Na co dzień jej nie zauważamy, bo patrzymy dwojgiem oczu, a mózg uzupełnia brakujący fragment obrazu. (Ambitnie: plamka ślepa leży ok. 15° od osi widzenia, więc kółko odsunięte o 7,5 cm znika z odległości ok. 7,5 cm / tg 15° ≈ 28 cm — zgodnie z obserwacją.)
 :::
 
 ::: dosw | Doświadczenie 2 — odruch źreniczny
@@ -486,7 +494,7 @@ Wniosek: Źrenica zwęża się odruchowo pod wpływem światła (odruch wrodzony
 Problem: Czy rozproszenie uwagi wydłuża czas reakcji?
 Hipoteza: Gdy osoba badana jest rozproszona (np. jednocześnie liczy wstecz), łapie linijkę później.
 Sprzęt: linijka 30 cm (lub 50 cm), druga osoba.
-Przebieg: Pomocnik trzyma linijkę pionowo, zerem w dół, między rozsuniętymi palcami osoby badanej (bez dotykania). Bez ostrzeżenia puszcza linijkę; badany łapie ją jak najszybciej. Odczytujemy, na ilu centymetrach złapał. 10 prób bez rozproszenia (próba kontrolna) i 10 prób podczas liczenia wstecz od 100 co 3; liczymy średnie.
+Przebieg: Pomocnik trzyma linijkę pionowo, zerem w dół, między rozsuniętymi palcami osoby badanej (bez dotykania). Bez ostrzeżenia puszcza linijkę; badany łapie ją jak najszybciej. Odczytujemy, na ilu centymetrach złapał. 10 prób bez rozproszenia (próba kontrolna) i 10 prób podczas liczenia wstecz od 100 co 3; liczymy średnie. Kolejność serii warto zmieniać (raz zaczynać od próby z rozproszeniem), by wprawa i zmęczenie nie zafałszowały wyniku; moment puszczenia linijki ma być nieprzewidywalny.
 Obserwacja: Przykładowo: bez rozproszenia średnio 15 cm, z rozproszeniem — 24 cm (dane przykładowe).
 Wniosek: Rozproszenie uwagi wydłuża czas reakcji — reakcja świadoma wymaga przetwarzania w mózgu. (Ambitnie: czas spadania t = √(2d/g); dla 15 cm ok. 0,17 s, dla 24 cm ok. 0,22 s.) Dlatego nie korzysta się z telefonu w czasie jazdy rowerem czy przechodzenia przez jezdnię.
 :::
@@ -684,6 +692,13 @@ Problem: Czy oświetlenie wpływa na średnicę źrenicy? (wraz z hipotezą). Zm
 | „Kanały półkoliste służą do słyszenia.” | Służą do równowagi (ruchy obrotowe). | Słuch — ślimak. |
 | „Widzimy oczami.” | Wrażenie widzenia powstaje w korze mózgu. | Oko zamienia światło na impulsy. |
 | „Ból głowy pochodzi z mózgu.” | Ból głowy pochodzi z opon, naczyń krwionośnych, mięśni i zatok. | Sama tkanka mózgu nie ma receptorów bólu. |
+| „Język ma osobne strefy smaków (słodkie na czubku, gorzkie z tyłu).” | Wszystkie podstawowe smaki wyczuwamy na całej powierzchni języka. | „Mapa języka” to mit z błędnego odczytania dawnych badań. |
+| „Umami to tylko wzmacniacz smaku.” | Umami to piąty podstawowy smak (glutaminian) z własnymi receptorami. | Bulion, ser, pomidory. |
+| „Zatkany nos = brak smaku.” | Zostają smaki podstawowe; ginie aromat. | Aromat to węch. |
+| „Adaptacja receptora to jego uszkodzenie.” | To prawidłowe osłabienie reakcji na bodziec stały. | Pozwala wychwytywać zmiany. |
+| „Prawe oko przekazuje obraz tylko do prawej półkuli.” | Prawa półkula odbiera lewe pole widzenia z obu oczu. | Włókna z nosowych połówek siatkówek krzyżują się w skrzyżowaniu wzrokowym. |
+| „Dioptria to rozmiar soczewki.” | Dioptria to jednostka mocy optycznej: D = 1/f (f w metrach). | −2 D oznacza f = −0,5 m. |
+| „60 dB + 60 dB = 120 dB.” | Dwa jednakowe źródła dają ok. 63 dB. | Skala decybelowa jest logarytmiczna: +3 dB to ok. 2× natężenia. |
 :::
 
 ## 19 | Ćwiczenia {#cwiczenia}
@@ -708,7 +723,18 @@ Problem: Czy oświetlenie wpływa na średnicę źrenicy? (wraz z hipotezą). Zm
 4. Porównaj przekazywanie informacji przez układ nerwowy i hormonalny pod względem szybkości, czasu działania i drogi.
 
 ::: odp | Pokaż klucz
-1. Móżdżek — koordynacja ruchów i równowaga (chwiejny chód); kora mózgu / synapsy w OUN — wolniejsze przetwarzanie informacji, wydłużony czas reakcji. · 2. Przy patrzeniu z bliska mięsień rzęskowy jest stale skurczony (soczewka uwypuklona) — męczy się; przy patrzeniu w dal jest rozluźniony. · 3. Płyn w kanałach półkolistych przy obrocie zaczyna się poruszać; po nagłym zatrzymaniu głowy płyn jeszcze przez chwilę płynie siłą bezwładności i pobudza receptory — mózg dostaje sygnał, że nadal się obracamy, choć oczy mówią co innego. · 4. Nerwowy: szybki (ułamki sekundy), krótkotrwały, sygnały elektryczne w neuronach do konkretnych komórek; hormonalny: wolniejszy (minuty–godziny), działa dłużej, hormony we krwi docierają do wszystkich komórek, działają na te z odpowiednimi receptorami.
+1. Móżdżek — koordynacja ruchów i równowaga (chwiejny chód); kora mózgu / synapsy w OUN — wolniejsze przetwarzanie informacji, wydłużony czas reakcji. · 2. Przy patrzeniu z bliska mięsień rzęskowy jest stale skurczony (soczewka uwypuklona) — męczy się; przy patrzeniu w dal jest rozluźniony. Dodatkowo przy patrzeniu w ekran mrugamy rzadziej, więc oczy wysychają. · 3. Płyn w kanałach półkolistych przy obrocie zaczyna się poruszać; po nagłym zatrzymaniu głowy płyn jeszcze przez chwilę płynie siłą bezwładności i pobudza receptory — mózg dostaje sygnał, że nadal się obracamy, choć oczy mówią co innego. · 4. Nerwowy: szybki (ułamki sekundy), krótkotrwały, sygnały elektryczne w neuronach do konkretnych komórek; hormonalny: wolniejszy (minuty–godziny), działa dłużej, hormony we krwi docierają do wszystkich komórek, działają na te z odpowiednimi receptorami.
+:::
+:::
+
+::: karta basic | A7–A10
+7. Nazwij pięć podstawowych smaków i wskaż, gdzie leżą receptory smaku.
+8. Wyjaśnij, dlaczego po kilku minutach w pomieszczeniu nie czujesz zapachu, który na początku był bardzo wyraźny.
+9. Podaj trzy miejsca ciała o największej i trzy o najmniejszej gęstości receptorów dotyku.
+10. Wyjaśnij, jaką rolę pełni ból i co grozi osobom, które go nie odczuwają.
+
+::: odp | Pokaż klucz
+7. Słodki, słony, kwaśny, gorzki, umami; kubki smakowe (język, podniebienie, gardło). · 8. Adaptacja receptorów węchowych — osłabienie reakcji na bodziec stały. · 9. Największa: opuszki palców, wargi, język; najmniejsza: plecy, kark, przedramię. · 10. Ostrzega przed uszkodzeniem tkanek; brak czucia bólu prowadzi do poważnych urazów, których nie zauważa się na czas.
 :::
 :::
 
@@ -723,7 +749,7 @@ Rosyjski fizjolog **Iwan Pawłow** odkrył odruchy warunkowe, gdy zauważył, ż
 :::
 
 ::: karta extra | Najmniejsza kość ciała
-**Strzemiączko** w uchu środkowym ma ok. 3 mm długości (orientacyjnie) — to najmniejsza kość człowieka. Razem z młoteczkiem i kowadełkiem działa jak dźwignia, a ponieważ błona bębenkowa jest dużo większa od okienka owalnego ślimaka, ciśnienie drgań rośnie kilkanaście razy — bez tego większość energii dźwięku odbiłaby się od płynu w ślimaku.
+**Strzemiączko** w uchu środkowym ma ok. 3 mm długości (orientacyjnie) — to najmniejsza kość człowieka. Razem z młoteczkiem i kowadełkiem działa jak dźwignia, a ponieważ błona bębenkowa jest dużo większa od okienka owalnego ślimaka, ciśnienie drgań rośnie kilkanaście–ponad dwadzieścia razy (orientacyjnie) — bez tego większość energii dźwięku odbiłaby się od płynu w ślimaku.
 :::
 
 ::: karta extra | Daltonizm i test Ishihary
@@ -732,6 +758,18 @@ Zaburzenia widzenia barw (najczęściej mylenie czerwieni z zielenią) ma kilka 
 
 ::: karta extra | Mózg, który wypełnia luki
 Plamki ślepej nie widzisz, choć jest w każdym oku — mózg „domalowuje” brakujący fragment z otoczenia. Podobnie dzieje się przy szybkich ruchach oczu: kilka razy na sekundę oczy przeskakują z punktu na punkt, a obraz w tym czasie jest wycinany — mimo to świat wydaje się płynny. Złudzenia optyczne pokazują, jak bardzo widzenie to **interpretacja** mózgu, a nie wierny zapis.
+:::
+
+::: karta extra | Nobel za zapachy
+W 2004 r. Richard **Axel** i Linda **Buck** dostali Nagrodę Nobla za odkrycie receptorów węchowych i organizacji układu węchowego (źródło: nobelprize.org). Człowiek ma ok. 400 rodzajów czynnych receptorów węchowych (orientacyjnie), a mózg rozróżnia z ich kombinacji ogromną liczbę zapachów.
+:::
+
+::: karta extra | „Kość śmiechu” to nerw
+Bolesne mrowienie po uderzeniu w łokieć nie pochodzi z kości, tylko z **nerwu łokciowego**, który biegnie tam tuż pod skórą. Uderzenie pobudza jego włókna czuciowe, a mózg odbiera impulsy jako ból i mrowienie palców (patrz W skrócie: receptor i droga „mówią” mózgowi, skąd sygnał).
+:::
+
+::: karta extra | Hałas zostawia trwały ślad
+Komórki rzęsate w ślimaku, zamieniające drgania na impulsy, u człowieka **nie odnawiają się**. Długotrwały hałas rzędu 85 dB i więcej (orientacyjnie) uszkadza je bezpowrotnie — dlatego zasada „60/60” w słuchawkach naprawdę chroni słuch.
 :::
 
 ## 21 | Sposoby pamięciowe {#mnemotechniki}
@@ -747,6 +785,9 @@ Plamki ślepej nie widzisz, choć jest w każdym oku — mózg „domalowuje” 
 - **Wady:** „**Kr**ótkowzroczny — obraz **pr**zed siatkówką — szkła **minus**; **dal**ekowzroczny — za — szkła **plus**.”
 - **Kosteczki:** „**M**łotek **K**uje **S**trzemię” → **m**łoteczek, **k**owadełko, **s**trzemiączko (od błony bębenkowej).
 - **Ucho wewnętrzne:** „**Ślimak — słuch.** **Kanały — kręcenie.** **Łagiewka i woreczek — położenie i winda.**”
+- **Droga wzrokowa (konkurs):** „Prawa półkula patrzy w lewo” — lewe pole widzenia obu oczu trafia do prawej kory.
+- **Dioptrie (konkurs):** „**M**yopia — **m**inus” — krótkowidz nosi szkła minus.
+- **Decybele (konkurs):** „+10 dB — dziesięć razy więcej; +3 dB — około dwa razy.”
 :::
 
 ## 22 | Test końcowy {#test}
@@ -849,6 +890,48 @@ Plamki ślepej nie widzisz, choć jest w każdym oku — mózg „domalowuje” 
 + trąbka słuchowa
 - kowadełko
 ! Łączy ucho środkowe z gardłem.
+
+? (konkurs) Prawo „wszystko albo nic” oznacza, że:
++ neuron odpowiada impulsem o stałej wielkości albo wcale, a siła bodźca zależy od częstości impulsów
+- silniejszy bodziec daje większy impuls
+- neuron zawsze przewodzi impuls w obu kierunkach
+- impuls zanika w miarę przewodzenia
+! Wielkość impulsu jest stała; mózg odczytuje siłę bodźca z liczby impulsów na sekundę i liczby pobudzonych receptorów.
+
+? (konkurs) Utrata lewej połowy pola widzenia w obu oczach wskazuje na uszkodzenie:
++ prawego pasma wzrokowego lub prawej kory potylicznej
+- lewego nerwu wzrokowego
+- skrzyżowania wzrokowego
+- lewej soczewki
+! Prawa półkula odbiera lewe pole widzenia z obu oczu.
+
+? (konkurs) Osoba z punktem dalekim 50 cm potrzebuje soczewki o mocy:
++ −2 D
+- +2 D
+- −0,5 D
+- −5 D
+! D = 1/f, a obraz przedmiotu odległego ma powstać pozornie w odległości 50 cm, więc f = −0,5 m.
+
+? (konkurs) Dźwięk o poziomie 70 dB w porównaniu z dźwiękiem 50 dB ma natężenie:
++ 100 razy większe
+- 20 razy większe
+- 1,4 razy większe
+- 2 razy większe
+! Każde 10 dB to 10-krotna zmiana natężenia, a 20 dB to 100 razy.
+
+? (konkurs) Najsłabiej adaptują się receptory:
++ bólu
+- węchu
+- lekkiego dotyku
+- ucisku (ciałka Paciniego)
+! Sygnał ostrzegawczy ma trwać, dopóki istnieje przyczyna bólu (orientacyjnie).
+
+? (konkurs, uproszczenie) Informacja z którego zmysłu trafia do kory z pominięciem wzgórza?
++ węchu
+- wzroku
+- słuchu
+- dotyku
+! Impulsy węchowe biegną przez opuszkę węchową do kory węchowej i układu limbicznego.
 :::
 
 ## 23 | Fiszki {#fiszki}
@@ -880,6 +963,16 @@ Kosteczki słuchowe | młoteczek, kowadełko, strzemiączko — przenoszą i wzm
 Kanały półkoliste | ruchy obrotowe głowy | basic:ucho
 Przedsionek | położenie głowy, przyspieszenia liniowe | basic:ucho
 Trąbka słuchowa | wyrównuje ciśnienie po obu stronach błony bębenkowej | basic:ucho
+Prawo „wszystko albo nic” | neuron daje impuls o stałej wielkości albo wcale; siła bodźca = częstość impulsów | olimpijski:neuron
+Przewodzenie skokowe | w aksonach z mieliną impuls przeskakuje między przewężeniami Ranviera — szybciej (do ok. 100 m/s, orientacyjnie) | olimpijski:neuron
+Adaptacja receptorów | szybka: lekki dotyk, węch; słaba: ból | olimpijski:receptory
+Fosfen | wrażenie światła bez światła (np. po uderzeniu w oko) | olimpijski:receptory
+Dioptria | jednostka mocy optycznej: D = 1/f (f w metrach); −2 D to f = −0,5 m | olimpijski:wady
+Punkt daleki | największa odległość ostrego widzenia bez akomodacji; u krótkowidza skończona | olimpijski:wady
+Skrzyżowanie wzrokowe | krzyżują się włókna z nosowych połówek siatkówek; prawa półkula odbiera lewe pole widzenia | olimpijski:droga-wzrokowa
+Decybel | skala logarytmiczna: +10 dB = 10× natężenia, +3 dB ≈ 2× | olimpijski:sluch
+Komórki rzęsate ślimaka | zamieniają drgania na impulsy; u człowieka się nie odnawiają | olimpijski:sluch
+Receptory skóry | Meissnera (lekki dotyk), Merkela (nacisk), Paciniego (drgania), Ruffiniego (rozciąganie), wolne zakończenia (ból, temperatura) | olimpijski:skora
 :::
 
 ## 24 | Słownik {#slownik}
@@ -912,6 +1005,19 @@ Błędnik :: ucho wewnętrzne: ślimak, przedsionek i kanały półkoliste
 Narząd Cortiego :: zespół komórek zmysłowych słuchu w ślimaku
 Trąbka słuchowa :: przewód łączący ucho środkowe z gardłem
 Adaptacja receptorów :: słabnięcie reakcji receptora na stały bodziec
+Nabłonek węchowy :: nabłonek w górnej części jamy nosowej z receptorami węchowymi (neuronami)
+Kubki smakowe :: skupiska komórek smakowych na języku, podniebieniu i w gardle
+Umami :: piąty podstawowy smak, wywołany m.in. glutaminianem (bulion, ser)
+Nocyceptor :: receptor bólu
+Prawo „wszystko albo nic” :: neuron wytwarza impuls o stałej wielkości albo wcale (konkurs)
+Przewężenia Ranviera :: przerwy w osłonce mielinowej, między którymi impuls przeskakuje (konkurs)
+Fosfen :: wrażenie światła bez światła, np. po uderzeniu w oko (konkurs)
+Skrzyżowanie wzrokowe :: miejsce, w którym krzyżują się włókna nerwów wzrokowych z nosowych połówek siatkówek (konkurs)
+Pasmo wzrokowe :: włókna biegnące za skrzyżowaniem do wzgórza i kory potylicznej (konkurs)
+Punkt daleki :: największa odległość, z której oko widzi ostro bez akomodacji (konkurs)
+Dioptria :: jednostka mocy optycznej soczewki, D = 1/f (konkurs)
+Decybel :: jednostka poziomu natężenia dźwięku w skali logarytmicznej (konkurs)
+Komórki rzęsate :: komórki zmysłowe narządu Cortiego w ślimaku (konkurs)
 :::
 
 ## 25 | Mapa pojęć {#mapa}
@@ -938,6 +1044,10 @@ Układ nerwowy i zmysły
     ucho: zewnętrzne → środkowe (kosteczki) → wewnętrzne (ślimak)
       równowaga: kanały półkoliste, przedsionek
     węch, smak (5 smaków), dotyk (receptory skóry)
+    siła bodźca: częstość impulsów (wszystko albo nic); adaptacja receptorów (konkurs)
+    droga wzrokowa: skrzyżowanie wzrokowe; prawa półkula — lewe pole widzenia (konkurs)
+    dioptrie: D = 1/f; krótkowzroczność −, dalekowzroczność + (konkurs)
+    decybele: skala logarytmiczna; hałas ≥ 85 dB niszczy komórki rzęsate (konkurs)
 :::
 
 ## 26 | Ściąga {#sciaga}
@@ -952,6 +1062,7 @@ Układ nerwowy i zmysły
 - **Akomodacja:** blisko — mięsień rzęskowy kurczy się, soczewka wypukła. **Krótkowzroczność** — przed siatkówką — szkła wklęsłe (−); **dalekowzroczność** — za — wypukłe (+).
 - **Ucho:** małżowina → przewód → błona bębenkowa → młoteczek, kowadełko, strzemiączko → ślimak (impulsy) → nerw → płat skroniowy. Trąbka — ciśnienie. Kanały półkoliste — obroty; przedsionek — położenie.
 - **Higiena:** sen 8–10 h, ruch, bez używek, kask; przerwy od ekranu (20–20–20), ochrona przed hałasem (60/60).
+- **(konkurs)** Siła bodźca = **częstość** impulsów (wszystko albo nic). **Dioptria** D = 1/f; krótkowidz — minus. **Prawa półkula** odbiera lewe pole widzenia. **+10 dB** = 10× natężenia, **+3 dB** ≈ 2×.
 :::
 
 ::: checklista
@@ -968,14 +1079,127 @@ Układ nerwowy i zmysły
 - [ ] opisuję budowę ucha, drogę dźwięku i narząd równowagi
 - [ ] znam węch, smak, dotyk i zasady ochrony narządów zmysłów
 - [ ] planuję doświadczenia ze zmysłami (zmienne, próba kontrolna)
+- [ ] (konkurs) wyjaśniam kodowanie siły bodźca i adaptację receptorów
+- [ ] (konkurs) lokalizuję uszkodzenia drogi wzrokowej i liczę moc soczewki w dioptriach
+- [ ] (konkurs) posługuję się skalą decybelową
 :::
 
-## 27 | Co dalej? {#dalej}
+## 27 | Pary do odróżniania i trudne przypadki [[exam:KONKURS]] {#nie-myl}
+
+::: nie-myl | Neuron — nerw
+- Neuron to jedna komórka; nerw to pęczek wielu włókien nerwowych otoczony tkanką łączną.
+- Test rozstrzygający: czy to „jedna komórka”, czy „kabel z wielu włókien”?
+:::
+
+::: nie-myl | Receptor — efektor
+- Receptor odbiera bodziec i zaczyna łuk; efektor (mięsień lub gruczoł) kończy łuk reakcją.
+- Test rozstrzygający: czy struktura zamienia bodziec w impuls (receptor), czy impuls w działanie (efektor)?
+:::
+
+::: nie-myl | Odruch wrodzony — nabyty
+- Wrodzony: trwały, od urodzenia (kaszel, źreniczny). Nabyty: wyuczony, wymaga kory (hamowanie na czerwonym świetle).
+- Test rozstrzygający: „czy noworodek to potrafi?”. Trudny przypadek: ślinienie po włożeniu cytryny do ust — wrodzone; ślinienie na widok cytryny lub zapach znanej potrawy — nabyte (skojarzenie).
+:::
+
+::: nie-myl | Krótkowzroczność — dalekowzroczność
+- Krótkowzroczność: obraz przed siatkówką, szkła rozpraszające (−). Dalekowzroczność: obraz za siatkówką, szkła skupiające (+).
+- Test rozstrzygający: „Myopia — minus”; krótkowidz dobrze czyta z bliska, źle widzi z daleka.
+:::
+
+::: nie-myl | Ślimak — kanały półkoliste — przedsionek
+- Ślimak — słuch; kanały półkoliste — ruchy obrotowe głowy; przedsionek (łagiewka, woreczek) — położenie i przyspieszenia liniowe.
+- Test rozstrzygający: karuzela — kanały; winda — przedsionek; muzyka — ślimak.
+:::
+
+::: nie-myl | Akomodacja — adaptacja
+- Akomodacja: zmiana kształtu soczewki dla ostrego obrazu. Adaptacja: osłabienie reakcji receptora na stały bodziec (także „przyzwyczajenie oka do ciemności”, co jest procesem w siatkówce).
+- Test rozstrzygający: czy zmienia się kształt soczewki (akomodacja), czy czułość receptorów (adaptacja)?
+:::
+
+::: nie-myl | Smak — aromat
+- Smak: pięć podstawowych smaków w kubkach smakowych. Aromat: zapach odbierany w nabłonku węchowym.
+- Test rozstrzygający: czy zatkany nos zmienia wrażenie? Tak — to aromat.
+:::
+
+## 28 | Dla olimpijczyka — impuls, wzrok, słuch, skóra [[extra:AMBITNE]] {#olimpijczyk}
+
+::: karta understand | Dla olimpijczyka — jak neuron „mówi” o sile bodźca (konkurs)
+Neuron działa na zasadzie **wszystko albo nic**: po przekroczeniu progu wytwarza impuls zawsze tej samej wielkości. Silniejszy bodziec nie daje większego impulsu, tylko **więcej impulsów na sekundę** i pobudza więcej receptorów. Mielina przyspiesza przewodzenie, bo impuls **przeskakuje** między przewężeniami Ranviera (przewodzenie skokowe; do ok. 100 m/s, orientacyjnie). Receptory różnią się adaptacją: lekki dotyk i węch adaptują się szybko, nacisk wolniej, ból słabo.
+:::
+
+::: karta understand | Dla olimpijczyka — droga wzrokowa i dioptrie (konkurs)
+Włókna z nosowych połówek siatkówek **krzyżują się** w skrzyżowaniu wzrokowym. Dzięki temu pasmo wzrokowe i kora potyliczna prawej półkuli odbierają **lewe pole widzenia** z obu oczu. Uszkodzenie nerwu wzrokowego daje ślepotę jednego oka, pasma lub kory — wypadnięcie połowy pola w obu oczach, skrzyżowania — wypadnięcie obu zewnętrznych połówek (widzenie „tunelowe”); guz przysadki leży pod skrzyżowaniem. Moc soczewki mierzy się w **dioptriach**: D = 1/f (f w metrach). Krótkowidz o punkcie dalekim 50 cm potrzebuje soczewki f = −0,5 m, czyli **−2 D**.
+:::
+
+::: karta understand | Dla olimpijczyka — słuch, skóra i smak (konkurs)
+Słyszymy ok. 20 Hz–20 kHz (orientacyjnie). Ucho środkowe wzmacnia ciśnienie ok. 20 razy (orientacyjnie), bo błona bębenkowa jest większa od okienka owalnego. **Decybele** są skalą logarytmiczną: +10 dB to 10 razy większe natężenie, +3 dB ok. 2 razy. W skórze działają ciałka Meissnera (lekki dotyk), Merkela (nacisk), Paciniego (drgania), Ruffiniego (rozciąganie) i wolne zakończenia (ból, temperatura). Orientacyjnie najmniejsza rozróżniana odległość dwóch punktów: palec ok. 2–3 mm, przedramię kilka cm. W smaku receptorów gorzkich jest wiele rodzajów, co chroni przed trucizną (orientacyjnie).
+:::
+
+## 29 | Zadania olimpijskie [[exam:KONKURS]] {#zadania-olimp}
+
+::: adv | Zadanie 24 (4 pkt) — czas reakcji z linijką | poziom ambitny
+Czas spadania linijki t = √(2d/g), g = 9,8 m/s². a) Oblicz czas reakcji dla d = 10 cm. b) Oblicz czas dla d = 20 cm. c) Ile razy wydłużył się czas przy dwukrotnie większej odległości? d) Wyjaśnij, dlaczego skala czasu na linijce nie jest liniowa.
+::: odp | Pokaż klucz
+a) t = √(0,2/9,8) ≈ 0,14 s (1 pkt). b) t = √(0,4/9,8) ≈ 0,20 s (1 pkt). c) √2 ≈ 1,4 raza (1 pkt). d) Czas jest proporcjonalny do pierwiastka z odległości, więc podwojenie odległości nie podwaja czasu (1 pkt).
+:::
+:::
+
+::: adv | Zadanie 25 (4 pkt) — analiza danych: próba dwóch punktów | poziom ambitny
+Najmniejsza rozróżniana odległość dwóch punktów (dane poglądowe): opuszek palca 3 mm, warga 4 mm, dłoń 10 mm, przedramię 35 mm, plecy 45 mm. a) Ułóż miejsca od najgęstszego do najrzadszego rozmieszczenia receptorów. b) Sformułuj wniosek. c) Po co badacz czasem dotyka jednym końcem? d) Dlaczego nacisk obu końców ma być jednakowy?
+::: odp | Pokaż klucz
+a) Opuszek, warga, dłoń, przedramię, plecy (1 pkt). b) Im mniejsza odległość rozróżnienia, tym gęściej rozmieszczone receptory (1 pkt). c) Kontrola zgadywania — odpowiedź „dwa” przy jednym dotyku unieważnia wynik (1 pkt). d) Nacisk to zmienna uboczna zmieniająca pobudzenie receptorów (1 pkt).
+:::
+:::
+
+::: adv | Zadanie 26 (4 pkt) — dioptrie krótkowidza | poziom ambitny
+Osoba widzi ostro tylko do 50 cm. a) Nazwij wadę. b) Podaj rodzaj i moc soczewki korygującej (D = 1/f). c) Czy w takich okularach zobaczy ostro przedmiot odległy? d) Dlaczego okulary −4 D byłyby za mocne?
+::: odp | Pokaż klucz
+a) Krótkowzroczność (1 pkt). b) Rozpraszająca, f = −0,5 m, czyli −2 D (1 pkt). c) Tak — obraz pozorny powstaje na 50 cm, który oko widzi ostro bez akomodacji (1 pkt). d) Przy −4 D obraz pozorny powstaje na 25 cm, bliżej niż punkt daleki — oko musi akomodować, męczy się i boli głowa (1 pkt).
+:::
+:::
+
+::: adv | Zadanie 27 (4 pkt) — gdzie jest uszkodzenie drogi wzrokowej? | poziom ambitny
+A. ślepota prawego oka; B. brak lewej połowy pola widzenia w obu oczach; C. brak obu zewnętrznych połówek pól widzenia. a) Wskaż miejsce uszkodzenia w A, B i C. b) Który gruczoł leży tuż pod skrzyżowaniem wzrokowym i jego guz może dać C?
+::: odp | Pokaż klucz
+a) A — prawy nerw wzrokowy; B — prawe pasmo wzrokowe lub prawa kora potyliczna; C — skrzyżowanie wzrokowe (po 1 pkt). b) Przysadka (1 pkt). Uzasadnienie: skrzyżują się włókna z nosowych połówek siatkówek, które widzą zewnętrzne (skroniowe) części pól widzenia.
+:::
+:::
+
+::: adv | Zadanie 28 (3 pkt) — decybele | poziom ambitny
+a) Ile razy natężenie koncertu (100 dB) jest większe od rozmowy (60 dB)? b) Dwa jednakowe źródła po 80 dB działają razem. Jaki poziom (w przybliżeniu)? c) Dlaczego nie 160 dB?
+::: odp | Pokaż klucz
+a) 40 dB to 10 000 razy (1 pkt). b) Ok. 83 dB (1 pkt). c) Skala jest logarytmiczna — dodaje się natężenia, a nie decybele; podwojenie natężenia to ok. +3 dB (1 pkt).
+:::
+:::
+
+::: adv | Zadanie 29 (3 pkt) — znajdź błędy w tekście o słuchu | poziom ambitny
+„Fala dźwiękowa wprawia w drgania błonę bębenkową. Drgania przenoszą kolejno młoteczek, strzemiączko i kowadełko, a okienko owalne wprawia w ruch płyn w kanałach półkolistych, gdzie komórki rzęsate zamieniają drgania na impulsy. Ciśnienie po obu stronach błony wyrównuje trąbka słuchowa łącząca ucho zewnętrzne z gardłem.” Znajdź i popraw trzy błędy.
+::: odp | Pokaż klucz
+1) Kolejność: młoteczek, kowadełko, strzemiączko (1 pkt). 2) Drgania zamieniane są w ślimaku, nie w kanałach półkolistych (1 pkt). 3) Trąbka łączy ucho środkowe z gardłem (1 pkt).
+:::
+:::
+
+::: adv | Zadanie 30 (3 pkt) — pułapka: słoik z octem | poziom ambitny
+Uczeń trzyma otwarty słoik z octem. Zapach jest silny, po kilku minutach prawie znika, choć ocet nadal paruje. a) Nazwij zjawisko. b) Podaj jego sens biologiczny. c) Dlaczego nie dotyczy ono w równym stopniu bólu?
+::: odp | Pokaż klucz
+a) Adaptacja receptorów węchowych (1 pkt). b) Mózg „wyłącza” stałe tło i reaguje na zmiany, np. na nowy zapach dymu (1 pkt). c) Receptory bólu adaptują się słabo, bo sygnał ostrzegawczy ma trwać, dopóki istnieje przyczyna (1 pkt).
+:::
+:::
+
+::: adv | Zadanie 31 (3 pkt) — znajdź błędy w planie doświadczenia | poziom ambitny
+Plan: uczeń łapie linijkę 10 razy bez rozproszenia, potem 10 razy z rozproszeniem; pomocnik odlicza „trzy, dwa, jeden, puszczam” i puszcza linijkę po słowie „puszczam”; bada tylko siebie. Wskaż trzy błędy i podaj poprawki.
+::: odp | Pokaż klucz
+1) Przewidywalny moment puszczenia — mierzy przewidywanie, nie reakcję; puszczać bez sygnału (1 pkt). 2) Stała kolejność serii — wprawa i zmęczenie; zmieniać kolejność (1 pkt). 3) Jedna osoba — wynik niereprezentatywny; zbadać kilka osób i uśrednić (1 pkt).
+:::
+:::
+
+## 30 | Co dalej? {#dalej}
 
 - Receptory skóry i czucie — U01 Skóra i układ ruchu.
 - Sterowanie oddychaniem i pracą serca, odruchy kaszlu — U06 i U04.
 - Podwzgórze, przysadka, współpraca z hormonami — lekcja o układzie dokrewnym (B2e) i H01 Homeostaza.
 - Daltonizm i dziedziczenie sprzężone z płcią — genetyka (BIO.02).
+- Guz przysadki a skrzyżowanie wzrokowe — lekcja o układzie dokrewnym (U10), zadanie z drogą wzrokową (Zad. 27).
 
 ## Pochodzenie i sprawdzenie treści {#audyt}
 
@@ -1007,4 +1231,14 @@ Zapis surowy: `biologia/plany/audyty/ULEPSZ_U08_cz1_2026-10-11.md`. **Ocena czę
 **Klinika:** z 4 proponowanych wierszy przyjęty „ból głowy pochodzi z mózgu”; trzy pozostałe (kierunek impulsu, soczewki przy krótkowzroczności, ślimak a równowaga) już są w klinice.
 
 **Nieprzyjęte:** 3 propozycje grafik — zapisane jako pomysły, bez kodów w lekcji.
+
+### AUDYT W1 — Claude Sonnet 5.5, 2026-10-12 (druga część lekcji) {#audyt-w1-cz2}
+
+Zapis surowy: `biologia/plany/audyty/ULEPSZ_SONNET_U08_reszta_2026-10-12.md` (+ `_RAPORT`). Z pierwszą częścią (wyżej) lekcja przeszła W1 w całości.
+
+**Przyjęte (po sprawdzeniu):** P1 geometria plamki ślepej (7,5 cm / tg 15° ≈ 28 cm), P2 losowa kolejność serii i moment puszczenia linijki w doświadczeniu 3, P3 wzmocnienie w uchu środkowym „kilkanaście–ponad dwadzieścia razy (orientacyjnie)”, P4 rzadsze mruganie przy ekranie; mini-wykłady (węch „na skróty”, adaptacja receptorów); ćwiczenia A7–A10; +3 ciekawostki (m.in. Nobel 2004 — Axel i Buck, receptory węchowe), +3 mnemotechniki; +6 pytań testu, +10 fiszek, +13 haseł słownika, +7 wierszy kliniki, rozbudowana mapa i ściąga; nowe sekcje: pary do odróżniania i trudne przypadki (m.in. odruch mrugania i ślinienie na zapach jako przypadki sporne), „Dla olimpijczyka”, zadania olimpijskie.
+
+**Poprawione względem propozycji:** zadania olimpijskie przenumerowane z 20–27 na 24–31 (numery 20–23 mają już zadania w §5–13), razem z odsyłaczami; „Co dalej?” przeniesione na koniec (§30), nowe sekcje mają numery 27–29; bloki `nie-myl` zapisane jako listy.
+
+**Nieprzyjęte:** grafika SVG drogi wzrokowej — zapisana w `biologia/bio/grafiki/propozycje/` jako wzór do komponentu `bio-viz.js`; linijka ze skalą czasu i schemat ucha — zbędne (ucho już ma `@viz ucho-droga`).
 
