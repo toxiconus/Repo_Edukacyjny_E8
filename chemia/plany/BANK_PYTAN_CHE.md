@@ -442,3 +442,23 @@ Uwagi:
 Uwagi:
 - Pierwsza pozycja potwierdza, że wojewódzki 2022/23 ma klucz 100 pkt i 15 zadań – zgodnie z testem.
 - Kraków: dwa różne pliki „rejonowy" z różnymi strukturami (40 zadań w 2023/24 vs. 4 zadania bez roku). Przy wpisach do banku podawać rok z nazwy pliku tylko po potwierdzeniu.
+
+---
+
+## Weryfikacja zestawienia d609ad7f (2026-10-12) – Kraków, Kielce, Łódź 2019–2021
+
+| Źródło (z zestawienia) | Wynik weryfikacji | Co potwierdzono |
+|---|---|---|
+| Kraków 2022/23 – schemat etapu szkolnego (`etap-szkolny-schemat-oceniania-7.pdf`, katalog 2022/07) | **Potwierdzony (klucz), rok z nagłówka** | Nagłówek: etap szkolny, **rok 2022/2023**, data nieznana. **26 zadań, 40 pkt.** Odpowiedzi zamknięte (częściowe, z odczytu): 1B 2B 3B 4C 5a,c 6B 8a,b 10B 11C 12C 20a(1,3) b(3) c(1) 21a(1) 21b(2,3) 23B 24B 25b,d. Czas pracy: brak w pliku. Uwaga: zestawienie z 3f48aee3 wskazywało plik rejonowy 2022/23 jako 4-zadaniowy – inny plik. |
+| Kraków 2020/21 – schemat etapu wojewódzkiego (`etap-wojewodzki-schemat-oceniania-4.pdf`, katalog 2020/07) | **Potwierdzony (klucz), częściowo** | Nagłówek: etap wojewódzki, **rok 2020/2021**. **15 zadań, 60 pkt**, czas nie podany. Odczyt odpowiedzi częściowy (2.1, 2.2, 2.3, 6.1, 7.3, 8.4, 14.2). Zadanie 13 bez odczytu. Do ponownego odczytu przed użyciem. |
+| Kraków 2020/21 – arkusz etapu szkolnego i rejonowego | **Niepotwierdzony** | Adresy `etap-szkolny-–-schemat-oceniania.pdf` i `etap-rejonowy-schemat-oceniania.pdf` (katalog 2020/07) występują w wynikach jako schematy, nieotwarte. Arkusze zadań 2020/21 nie wystąpiły w wynikach. |
+| Kraków 2021/22 – zestaw 6 dokumentów (zadania i schematy, 3 etapy) | **Niepotwierdzony** | Strona nie została otwarta. Schemat szkolny 2022/07 (wyżej) należy prawdopodobnie do 2022/23, nie 2021/22. |
+| Kielce 2020/21 – II Wojewódzki Konkurs, etap rejonowy (arkusz 688 KB, klucz 109 KB, publikacja 22.02.2021) | **Niepotwierdzony w tej partii** | Adresy nie wystąpiły w wynikach. Wcześniej potwierdzony arkusz III etapu z 22.03.2021 (20 zadań, 60 min, 50 pkt, bez klucza) – zob. weryfikacja 8eda72cd. |
+| Kielce 2020/21 – etap wojewódzki (III) | **Potwierdzony w poprzedniej weryfikacji** | Arkusz `arkusz-_iii_etap_ii_wojewodzki_konkurs-_z_chemii.pdf` (katalog 2021/04): 20 zadań, 60 min, 50 pkt, bez klucza w pliku. |
+| Kielce 2021/22 – etap szkolny (III Wojewódzki Konkurs, arkusz ~1 MB, klucz ~524 KB, publikacja 13.12.2021) | **Niepotwierdzony** | Adres strony `56305` nie wystąpił w wynikach. |
+| Łódź 2020/21 – materiały (test + schemat, 3 etapy) | **Niepotwierdzony** | Strona `materialy-konkursowe-3` nie została otwarta. W wynikach są: `test-eliminacje-rejonowe-chemia.pdf` (katalog 2020/01) – nieotwarty, prawdopodobnie etap rejonowy 2019/20 – do sprawdzenia. |
+| Łódź 2021/22 – test etapu szkolnego/wojewódzkiego (DOCX, katalog 2021/11) | **Niepotwierdzony (DOCX)** | W wynikach jako `test-etap-szkolny-wojewodzki-konkurs-przedmiotowy-z-chemii.docx`, nieotwarty. |
+
+Uwagi:
+- Przy pozycjach Krakowa 2020/21 i 2022/23 podawać rok i liczbę zadań tylko z nagłówka pliku (potwierdzone), nie z tabeli zestawienia.
+- Kraków ma w katalogu 2020/07 pliki z kilku etapów, a w 2022/07 szkolny schemat 2022/23 – kolejność lat w nazwach katalogów nie zawsze odpowiada rokowi szkolnemu. Przy każdym wpisie sprawdzać nagłówek.
