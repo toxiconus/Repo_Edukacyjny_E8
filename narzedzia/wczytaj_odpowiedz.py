@@ -28,6 +28,9 @@ for kod, txt in bloki:
     kod = kod.strip() or '?'; lekcje.setdefault(kod, []).append(txt.strip('\n'))
 def znajdz(kod):
     if kod in wskaz: return wskaz[kod]
+    import json
+    rej = ROOT / 'eksport' / 'GOTOWE_cele.json'
+    if rej.exists() and kod in json.loads(rej.read_text()): return ROOT / json.loads(rej.read_text())[kod]
     traf = []
     for d in KATALOGI:
         for f in (ROOT / d).rglob('*.md') if (ROOT / d).exists() else []:
@@ -52,7 +55,7 @@ for kod, czesci in lekcje.items():
         print(f'❌ {kod}: nie znaleziono jednoznacznie pliku lekcji ({len(lek)} trafień) — podaj --lekcja {kod}=plik.md'); continue
     print(f'\n===== {kod} → {lek.relative_to(ROOT) if lek.is_absolute() else lek}')
     nowe = re.sub(r'„([^"”„\n]*)"', r'„\1”', '\n'.join(czesci).replace('\r', ''))
-    stary = lek.read_text()
+    stary = lek.read_text() if lek.exists() else ''
     fmN, wstN, sekN = rozbij(nowe)
     fmS, wstS, sekS = rozbij(stary)
     nrN = {num(s) for s in sekN}

@@ -8,6 +8,25 @@
 
 ---
 
+## 0. Tryb pracy (podany w nagłówku każdej lekcji: `TRYB:`)
+
+- **`TRYB: ULEPSZ`** — dostajesz gotową lekcję w dialekcie kursu. Ulepszasz ją i zwracasz całą (punkty 1–5).
+- **`TRYB: NAPISZ`** — dostajesz **materiał roboczy albo szkielet** (inny układ nagłówków, notatki, listy, zadania). Piszesz od zera **pełną lekcję** w dialekcie kursu (punkt 3), zachowując **wszystkie** informacje, zadania i klucze z materiału — przerobione na właściwe bloki, poprawione i rozbudowane.
+  - Frontmatter weź ze wzoru w nagłówku lekcji i uzupełnij puste pola.
+  - Docelowa objętość: **50–80 KB tekstu**, jeśli temat na to pozwala.
+  - Obowiązkowy układ (numery sekcji kolejno, każda z `{#id}`):
+    1. `::: minimum | Muszę umieć — 10 punktów` (lista 1–10).
+    2. `::: warstwy` z liniami `- e8 | <b>Podstawa:</b> …`, `- understand | <b>Rozumienie:</b> …`, `- contest | <b>Konkurs:</b> …`, `- extra | <b>Ambitne:</b> …`.
+    3. `::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to` (lista z odnośnikami `[§n](#id)`).
+    4. `## 0.1 | Jak pracować z lekcją {#jak-pracowac}`.
+    5. `## 0.2 | Diagnoza {#diagnoza}` — kilka pytań z kluczem w `::: odp`.
+    6. `## 1 | Wykład — <obraz przewodni> {#wyklad}` — ciągły wykład od zera.
+    7. Sekcje tematyczne `## 2 …`, `## 3 …` z plakietkami `[[basic:E8]]`, `[[understand:ROZUMIENIE]]`, `[[exam:KONKURS]]`, `[[extra:AMBITNE]]`. W każdej: tabele i definicje, karty „W skrócie”, `nie-myl`, `warning`, zadania przy temacie.
+    8. Doświadczenia (`::: dosw`, z próbą kontrolną).
+    9. Zadania konkursowe (karty `exam` z kluczem i punktacją) i warstwa ambitna (`::: adv`).
+    10. Klinika błędów, Ćwiczenia, Ciekawostki, Sposoby pamięciowe, Test końcowy (co najmniej 12 pytań), Fiszki (co najmniej 20), Słownik (co najmniej 15 haseł), Mapa pojęć (`::: drzewo`), Ściąga (z `::: checklista`), `## n | Co dalej? {#dalej}`.
+    11. Na końcu sekcja audytu (punkt 5); w „Dodane” napisz krótko, z czego powstała lekcja.
+
 ## 1. Co masz zrobić z lekcją
 
 1. **Uzupełnij braki.** Każda lekcja musi mieć:
@@ -141,6 +160,7 @@ KONIEC FIZ-01
 
 ## 6. Lista kontrolna — sprawdź przed wysłaniem
 
+- [ ] TRYB NAPISZ: pełny układ z punktu 0, wszystko z materiału roboczego przeniesione.
 - [ ] Odpowiedź to tylko plik między `<<<PLIK <KOD>` i `PLIK>>>`: cała lekcja, bez powtarzania polecenia, bez „bez zmian” i bez uwag dla autora w treści; na końcu pliku sekcja audytu.
 - [ ] Nic z oryginału nie zniknęło; liczniki „po” nie mniejsze niż „przed”.
 - [ ] Numery i `{#id}` sekcji bez zmian, nowe sekcje z literą, nowe zadania od `NASTĘPNE ZADANIE`.
