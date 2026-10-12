@@ -1,3 +1,5 @@
+# UWAGA: ten skrypt NADPISUJE chemia/lekcje_md/F/CHE.01.F00.wspolne_bloku_F.md przy każdym uruchomieniu.
+# Nie edytować F00 ręcznie — poprawki wprowadzać w tym skrypcie albo w CHE_SPIS_TRESCI.md.
 import re, os
 R="/home/claude/repo_edukacyjny_e8/"
 src=open(R+"chemia/plany/CHE_SPIS_TRESCI.md",encoding="utf-8").read().split("\n")
@@ -88,5 +90,7 @@ for b,_ in blocks:
             hs=f"{khtml:.0f}" if khtml is not None else "—"
             out.append(f"| {kod} | {kmd:.1f} | {hs} | {stan} | {graf} | {samo} | {os.path.basename(rel)} |")
 out.append("")
-open(R+"chemia/lekcje_md/F/CHE.01.F00.wspolne_bloku_F.md.tmp","w",encoding="utf-8").write("\n".join(out)+"\n")
+gora=open(R+"chemia/plany/narzedzia/f00_gora.md",encoding="utf-8").read().rstrip()+"\n\n"
+dol=open(R+"chemia/plany/narzedzia/f00_dol.md",encoding="utf-8").read().rstrip()+"\n"
+open(R+"chemia/lekcje_md/F/CHE.01.F00.wspolne_bloku_F.md.tmp","w",encoding="utf-8").write(gora+"\n".join(out)+"\n\n"+dol)
 print(sum(len(v) for v in rows.values()), {k:len(v) for k,v in rows.items()})

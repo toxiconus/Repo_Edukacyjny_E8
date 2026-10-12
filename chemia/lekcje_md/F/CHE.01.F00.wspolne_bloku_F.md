@@ -1,3 +1,19 @@
+---
+kod: F00
+tytul: "Spis lekcji chemii i zakresów (wszystkie działy)"
+typ: spis
+poziom: E8 / LO
+zrodla: "chemia/plany/CHE_SPIS_TRESCI.md (kanon v0.3, 113 lekcji; generowany); poprzednia treść F00 (materiał roboczy): chemia/plany/F00_materialy_robocze_v1.md"
+opis: "Spis wszystkich 113 lekcji chemii E8/LO: 21 lekcji bloku F i działy N, R, J, O, X, E, K, A, P, plus materiały wspólne (00) i uzupełnienia. Kod, tytuł, zakres, wymagania, mosty, status i plik w repo. Nie jest lekcją dla ucznia."
+stan: SPIS — Claude Haiku 5.5, 2026-10-12
+---
+
+# Spis lekcji chemii: zakresy i zależności
+
+Ten plik jest mapą całego kursu chemii. **Plik generowany: nie edytować ręcznie** — nadpisuje go `python3 chemia/plany/narzedzia/gen_f00.py` (przy każdej zmianie kanonu albo generatora). Poprawki wprowadzać w `gen_f00.py`, `f00_gora.md`, `f00_dol.md` lub w `CHE_SPIS_TRESCI.md`. Dane pochodzą z kanonu (`chemia/plany/CHE_SPIS_TRESCI.md`); tabele są generowane, więc zmiana kanonu zmienia spis. Stan „GOTOWE HTML” w kolumnie Status oznacza gotową lekcję w spisie; „UZUPEŁNIONE” i „●○○” oznaczają mniejszy zakres materiału.
+
+**Jak czytać:** „Wymaga” to lekcje, bez których zakres jest niezrozumiały. „Pogłębia” to lekcje rozwijające ten temat. Kolumna „Materiał w repo” to plik źródłowy (`chemia/lekcje_md/`).
+
 ## Bloki kursu: 21 lekcji F + 9 działów
 
 Kolumny: kod, tytuł, zakres (cel ucznia), wymaga, pogłębia, status w spisie kanonu, plik materiału w repo. Źródło: `chemia/plany/CHE_SPIS_TRESCI.md` (generowany).
@@ -314,3 +330,13 @@ Kolumny: kod, plik md (KB), HTML (KB, z `chemia/html/`), wersja (`stan:` z front
 | P05 | — | — | brak pliku | — | — | — |
 | P06 | — | — | brak pliku | — | — | — |
 
+
+## Zasady kursu
+
+- **Jeden właściciel pojęcia.** Pojęcie uczy od zera jedna lekcja (OWNER). Inne je przypominają (REF), pogłębiają (EXPAND) albo stosują (APPLY). Przykład: stopień utlenienia — właściciel F09; w F12 i F17 tylko przypomnienie.
+- **Zasada elastyczności.** Lekcja dostaje tyle wykładów, definicji i podpowiedzi, ile temat wymaga. Trudny temat ma kilka wykładów i pojęcia od zera; prosty — jeden.
+- **Słownik i powiązania** są w `chemia/plany/SLOWNIK_CHE.md` i `chemia/plany/POWIAZANIA_CHE.md`.
+
+## Historia tej strony
+
+Poprzednia treść F00 (113 KB: kilka wersji MASTER, dziennik zmian, specyfikacje modułów i mapy) zachowana w `chemia/plany/F00_materialy_robocze_v1.md`. Treść wykładowa jest w lekcjach F01–F21.
