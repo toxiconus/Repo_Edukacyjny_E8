@@ -860,3 +860,32 @@ Status: klucze matematyki zad. 6, 8, 10, 12 – **sprawdzone rachunkiem**. Klucz
 - **18 (0–20):** wypracowanie – kryteria w zasadach (treść, kompozycja, język, poprawność). Nie przepisywać kryteriów do banku, tylko odsyłać do zasad.
 
 Uwaga: zasady punktowania zad. 10, 12–14 i 16 mają w jednym bloku kilka wariantów (np. zamknięte i otwarte). Przy kolejnej partii sprawdzić przyporządkowanie w PDF zasad, zanim wpisze się punkty do banku.
+
+---
+
+## Uzupełnienie: punktacja pozostałych zadań (E8 2026, z zasad CKE) – zamknięcie tematu
+
+### Język polski – brakujące pozycje
+- **10 (0–2):** 10.1 (0–1) – tytuł lektury, klucz: „Kamienie na szaniec" (zad. zamknięte/otwarte krótkie). 10.2 (0–1) – otwarte: stanowisko i uzasadnienie z odwołaniem do całego utworu.
+- **12 (0–1):** zamknięte, klucz X „A", Y „C".
+- **13 (0–1):** zamknięte (A–D), klucz X „B", Y „D".
+- **14 (0–1):** otwarte – związek między akapitami 3. i 4. (1 pkt za poprawną relację, np. nawiązanie, kontynuacja myśli o ciekawości).
+- **16 (0–1):** P/F, klucz X „FP", Y „PF".
+
+Suma polskiego (z zasad): 1+1+1+1+1+1+1+3+2+(1+1)+2+1+1+1+2+1+3+20 = **45 pkt** – potwierdzona przez rozpisanie punktów.
+
+### Matematyka – zadania otwarte (etapowe)
+Zasady CKE punktują etapy rozwiązania; uczeń dostaje punkty tylko za poprawne etapy poprzedzające. Jeżeli w zadaniach 15–20 uczeń podaje tylko poprawny końcowy wynik, bez sposobu rozwiązania, otrzymuje 0 punktów (zasady, uwagi ogólne).
+- **15 (0–2):** zadanie tekstowe (liczba kartek, równanie lub metoda prób i błędów).
+- **16 (0–3):** zadanie o ruchu (prędkość, droga, czas przejazdu Polanka–Jodłów–Dębina).
+- **17 (0–3):** procenty (liczba dziewcząt, liczba uczestników, procent).
+- **18 (0–2):** stereometria – objętość ostrosłupa i sześcianu (wzory i zapis zależności).
+- **19 (0–3):** pole trapezu w sytuacji praktycznej.
+- **20 (0–3):** twierdzenie Pitagorasa (przeciwprostokątna, trójkąt równoramienny).
+
+Uwaga: dla zadań 15–20 w uwagach ogólnych jest zapis o uczniach z dostosowanymi zasadami i o kalkulatorze – nie stosować do ogólnego klucza.
+
+### Status całości
+- Klucze zamknięte obu przedmiotów: potwierdzone z zasad CKE i sprawdzone wewnętrznie (matematyka 6, 8, 10, 12; polski 6, 8.1, 10.1, 12, 13, 16).
+- Punktacja otwarta: potwierdzona na poziomie etapów i liczby punktów. Szczegółowe przykłady rozwiązań – tylko w zasadach (nie przepisywane do banku).
+- Brak: karty odpowiedzi jako tekst (PDF-y mają zaznaczenia, nie tekst).
