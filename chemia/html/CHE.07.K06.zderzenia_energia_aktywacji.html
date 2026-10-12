@@ -614,6 +614,12 @@ section ul,section ol{padding-left:1.35rem}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 @media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
 
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+
 /* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
@@ -630,78 +636,115 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;K06&quot; &quot;Zderzenia i energia aktywacji&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "K06"</div><h1>"Zderzenia i energia aktywacji"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA LO — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele</a><a class="toc-link" href="#s3">3. Model</a><a class="toc-link" href="#s4">4. Klinika błędów</a><a class="toc-link" href="#s5">5. Ćwiczenia + test (skrót)</a><a class="toc-link" href="#s6">6. Słownik</a><a class="toc-link" href="#s7">AUDYT Grok — 2026-10-09</a></nav></details>
-<p><strong>Dział:</strong> Energetyka, kinetyka i równowaga (blok K)
-<strong>Poziomy:</strong> LO
-<strong>Poprzednia:</strong> K01 / K05
-<strong>Następna:</strong> K07</p>
-<section id="s1">
-<div class="part-heading">KARTA STARTOWA LO — 10 rzeczy, które muszę umieć</div>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#wyklad">1. Wykład — dlaczego reakcje potrzebują „kopnięcia"</a><a class="toc-link" href="#rozklad">2. Rozkład energii cząsteczek</a><a class="toc-link" href="#kataliza">3. Katalizator i temperatura</a><a class="toc-link" href="#klinika">4. Klinika błędów</a><a class="toc-link" href="#cwiczenia">5. Ćwiczenia</a><a class="toc-link" href="#test">6. Test</a><a class="toc-link" href="#slownik">7. Słownik</a><a class="toc-link" href="#fiszki">8. Fiszki</a><a class="toc-link" href="#mosty">9. Mosty</a><a class="toc-link" href="#s1">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przebudowa od zera)</a></nav></details>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">1</span> Wykład — dlaczego reakcje potrzebują „kopnięcia"</div>
+<div class="card card-understand">
+<span class="card-label">Wykład od zera</span>
+<p>Wyobraź sobie dwie cząsteczki, które przypadkiem się spotkały. Czy zawsze zaczną reagować? Nie. Gdy zmieszasz wodę z cukrem, cząsteczki sacharozy spotykają się z cząsteczkami wody niezliczoną liczbę razy, a cukier nie zmienia się w nic innego. Za to węgiel w temperaturze pokojowej nie zapali się sam, choć cząsteczki tlenu z powietrza krążą wokół niego bez przerwy. Potrzebujemy zapałki.</p>
+<p>Teoria zderzeń wyjaśnia to prosto. Reakcja chemiczna może zajść tylko wtedy, gdy cząsteczki się zderzą. Nie każde zderzenie jest jednak <strong>skuteczne</strong>. Aby doszło do przerwania starych wiązań i utworzenia nowych, zderzające się cząsteczki muszą mieć na początku odpowiednio dużą energię. Najmniejszą energię potrzebną do zajścia reakcji nazywamy <strong>energią aktywacji</strong> E_a.</p>
+<p>Druga ważna sprawa to orientacja. Nawet przy dużej energii cząsteczki muszą zderzyć się odpowiednią stroną. Kula bilardowa uderzona w krawędź zamiast w środek nie wbije się w łuzę. Podobnie w reakcjach: tylko część zderzeń ma właściwe ustawienie atomów.</p>
+<p>Dlaczego energia aktywacji jest tak ważna? Wyobraź sobie górę, którą trzeba przejść z doliny substratów do doliny produktów. Wysokość tej góry to właśnie E_a. Im niższa góra, tym łatwiej przejść, a im wyższa, tym rzadziej przechodzą cząsteczki. Ta prosta analogia wraca w całej lekcji.</p>
+</div>
+<h3 id="skuteczne">1.1 Zderzenie skuteczne</h3>
+<p>Zderzenie jest skuteczne, gdy spełnione są jednocześnie dwa warunki:</p>
+<div class="formula-lg">E_zderzenia ≥ E_a; oraz właściwa orientacja cząsteczek</div>
+<p>Liczba zderzeń w jednostce czasu rośnie ze stężeniem, ale liczba zderzeń skutecznych zależy dodatkowo od energii. Dlatego dwukrotne zwiększenie stężenia podwaja liczbę zderzeń, a samo zwiększenie energii może zmienić ich skuteczność wielokrotnie.</p>
+<div class="card card-core">
+<span class="card-label">Zderzenie skuteczne — dwa warunki</span>
 <ol>
-<li>Teoria zderzeń: reakcja wymaga zderzeń cząsteczek.</li>
-<li>Nie każde zderzenie jest skuteczne — potrzebna odpowiednia energia i orientacja.</li>
-<li>Energia aktywacji E_a = minimalna energia zderzenia skutecznego.</li>
-<li>Na wykresie energetycznym E_a = wysokość bariery od substrateów.</li>
-<li>Wzrost T → więcej cząsteczek z E ≥ E_a (rozkład Maxwella–Boltzmanna).</li>
-<li>Dlatego T silnie przyspiesza reakcje.</li>
-<li>Katalizator obniża E_a (inna droga).</li>
-<li>Orientacja: cząsteczki muszą zderzyć się „właściwą stroną”.</li>
-<li>Częstość zderzeń rośnie ze stężeniem i T.</li>
-<li>Most do K07 (kataliza).</li>
+<li>Energia zderzenia musi być co najmniej równa E_a (warunek energetyczny).</li>
+<li>Cząsteczki muszą zderzyć się właściwą częścią (warunek geometryczny, orientacja).</li>
+<li>Dopiero spełnienie obu warunków daje reakcję; brak któregokolwiek oznacza zderzenie bez reakcji.</li>
 </ol>
-<h3>Diagnoza wejściowa</h3>
-<ol>
-<li>Co to E_a?</li>
-<li>Czy każde zderzenie prowadzi do reakcji?</li>
-<li>Jak T wpływa na liczbę cząsteczek z E ≥ E_a?</li>
-<li>Gdzie na wykresie jest E_a?</li>
-<li>Co jeszcze oprócz energii jest potrzebne?</li>
-</ol>
-<p><strong>Klucz:</strong> 1 bariera energetyczna; 2 nie; 3 rośnie; 4 wysokość „góry”; 5 orientacja.</p>
-<p><strong>Pytanie przewodnie:</strong> Dlaczego nie każda para cząsteczek reaguje od razu?</p>
+</div>
+<h3 id="profil">1.2 Profil energetyczny reakcji</h3>
+<p>Wykres energii w zależności od przebiegu reakcji ma kształt garbu. Substraty leżą na poziomie początkowym, produkty na końcowym, a między nimi znajduje się najwyższy punkt — <strong>kompleks aktywny</strong> (stan przejściowy). Energia aktywacji to różnica między poziomem substratów a poziomem kompleksu aktywnego.</p>
+<p>Dla reakcji z przeciwnym przebiegiem (produkty → substraty) bariera ma inną wysokość. Różnica obu barier wyznacza zmianę entalpii:</p>
+<div class="formula-lg">ΔH = E_a(przód) − E_a(wstecz)</div>
+<p>Przykład: jeśli E_a(przód) = 50 kJ/mol, a ΔH = −20 kJ/mol (reakcja egzotermiczna), to E_a(wstecz) = 50 − (−20) = 70 kJ/mol. Bariera powrotu jest wyższa, więc produkty trudniej się cofają.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie: góra energii</span>
+<p>Dla reakcji egzotermicznej produkty leżą niżej niż substraty, więc droga powrotna musi pokonać wyższą górę. Dla reakcji endotermicznej jest odwrotnie. Energia aktywacji nie jest „kosztem” reakcji; to tylko bariera, którą trzeba pokonać, zanim produkty pojawią się w dużej ilości.</p>
+</div>
 </section>
-<section id="s2">
-<div class="part-heading"><span class="part-num">2</span> Cele</div>
+<section id="rozklad">
+<div class="part-heading"><span class="part-num">2</span> Rozkład energii cząsteczek</div>
+<p>W każdej chwili cząsteczki w gazie mają bardzo różne energie. Nie wszystkie są „równe”, a rozkład energii pokazuje, jaki ułamek cząsteczek ma energię większą lub równą danej wartości. Ten rozkład zmienia się z temperaturą: w wyższej temperaturze krzywa jest szersza i przesunięta w prawo, czyli więcej cząsteczek ma dużą energię.</p>
+<p>Dla reakcji ważny jest obszar powyżej E_a. Pole pod krzywą z prawej strony od E_a to ułamek cząsteczek zdolnych do reakcji. Gdy temperatura rośnie, to pole rośnie bardzo szybko, mimo że sama krzywa tylko się przesuwa.</p>
+<div class="card card-understand">
+<span class="card-label">Mini-wykład: dlaczego T działa tak mocno</span>
+<p>Zwiększenie temperatury o 10 K nie przesuwa krzywej o wiele, ale zwiększa liczbę cząsteczek powyżej E_a w znacznym stopniu. Dla wielu reakcji w pobliżu temperatury pokojowej szybkość rośnie około dwukrotnie przy wzroście o 10 K (wartość orientacyjna, zależna od reakcji).</p>
+</div>
+</section>
+<section id="kataliza">
+<div class="part-heading"><span class="part-num">3</span> Katalizator i temperatura</div>
+<p>Temperatura zmienia ułamek cząsteczek o dużej energii. Katalizator robi coś innego: zmienia drogę reakcji, obniżając E_a. Na wykresie dostajemy niższy garb, więc większy ułamek zderzeń staje się skutecznych w tej samej temperaturze. Katalizator nie zmienia ΔH, bo poziomy substratów i produktów pozostają te same.</p>
+<p>Warto to porównać: wzrost temperatury zwiększa liczbę skutecznych zderzeń przez zmianę rozkładu energii, a katalizator przez zmianę wysokości bariery. Oba czynniki działają razem, ale nie są tym samym.</p>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka: katalizator w samochodzie</span>
+<p>Katalizator spalin w samochodzie zawiera metale szlachetne (np. platynę, pallad, rod). Zamienia tlenek węgla(II) i tlenki azotu w mniej szkodliwe gazy już w temperaturze pracy silnika. Bez katalizatora te reakcje byłyby zbyt wolne, by oczyścić spaliny.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka: enzymy to katalizatory życia</span>
+<p>Enzymy są białkowymi katalizatorami w organizmach. Niektóre przyspieszają reakcje miliony razy, a działają w łagodnej temperaturze ciała. To dlatego ciało nie potrzebuje wysokich temperatur, by przeprowadzić reakcje trawienia.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka: zapałka i węgiel</span>
+<p>Węgiel drzewny nie płonie sam z siebie w temperaturze pokojowej, bo nie dochodzi do wystarczającej liczby skutecznych zderzeń. Zapałka dostarcza energii, która pozwala cząsteczkom przekroczyć barierę E_a. Gdy reakcja już się zacznie, wydziela się ciepło, które podtrzymuje proces.</p>
+</div>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">4</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">E_a = ΔH</td><td class="col-ok" data-label="Poprawa">E_a to bariera, ΔH to różnica poziomów substratów i produktów</td><td data-label="Dlaczego">Dwie różne wielkości; reakcja o dużej E_a może mieć małe ΔH</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Każde zderzenie prowadzi do reakcji</td><td class="col-ok" data-label="Poprawa">Tylko zderzenie o energii ≥ E_a i właściwej orientacji</td><td data-label="Dlaczego">Część zderzeń jest nieskuteczna</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Katalizator zmienia ΔH</td><td class="col-ok" data-label="Poprawa">Katalizator obniża E_a, ΔH pozostaje takie samo</td><td data-label="Dlaczego">Zmienia się droga, nie poziomy początku i końca</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Wzrost T zwiększa energię każdej cząsteczki o tyle samo</td><td class="col-ok" data-label="Poprawa">Wzrost T zmienia rozkład energii i zwiększa ułamek cząsteczek ≥ E_a</td><td data-label="Dlaczego">Dlatego efekt jest silny i nieliniowy</td></tr></tbody></table>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">5</span> Ćwiczenia</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (2 pkt) — energia aktywacji i ΔH</span>
+<p>Reakcja egzotermiczna ma E_a(przód) = 80 kJ/mol i ΔH = −30 kJ/mol. Oblicz E_a reakcji wstecznej i uzasadnij, która z reakcji ma wyższą barierę.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>E_a(wstecz) = E_a(przód) − ΔH = 80 − (−30) = 110 kJ/mol. Reakcja wsteczna ma wyższą barierę, bo produkty leżą niżej i trudniej się z nich cofnąć. (1 pkt za wzór i wynik, 1 pkt za uzasadnienie)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (2 pkt) — katalizator</span>
+<p>Katalizator obniża E_a z 90 do 60 kJ/mol. Wyjaśnij, czy zmieni się wydajność reakcji i dlaczego.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Katalizator nie zmienia poziomów substratów i produktów, więc ΔH i stan równowagi pozostają takie same, a wydajność końcowa nie zmienia się. Zmienia się szybkość: więcej zderzeń ma energię ≥ E_a. (1 pkt za wniosek o wydajności, 1 pkt za uzasadnienie o szybkości)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (3 pkt) — temperatura</span>
+<p>Opisz, dlaczego wzrost temperatury z 300 K do 310 K może przyspieszyć reakcję bardziej, niż wynikałoby to z samego wzrostu energii cząsteczek o niewielki ułamek. Odwołaj się do rozkładu energii i pojęcia E_a.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Wzrost T przesuwa i poszerza rozkład energii cząsteczek, więc rośnie ułamek cząsteczek o energii ≥ E_a. Ten ułamek rośnie nieliniowo, a nie proporcjonalnie do temperatury. (1 pkt za rozkład, 1 pkt za E_a, 1 pkt za nieliniowość)</p>
+</details>
+</div>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">6</span> Test</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="E_a to bariera, którą muszą pokonać zderzające się cząsteczki."><h5>1. Najmniejsza energia zderzenia, przy której może zajść reakcja, to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">energia aktywacji</button><button type="button" class="quiz-opt" data-a="1">entalpia reakcji</button><button type="button" class="quiz-opt" data-a="2">energia wiązania</button><button type="button" class="quiz-opt" data-a="3">energia jonizacji</button></div></div><div class="quiz-q" data-ok="0" data-fb="Oba warunki (energetyczny i geometryczny) są konieczne."><h5>2. Zderzenie jest skuteczne, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">ma energię co najmniej E_a i właściwą orientację</button><button type="button" class="quiz-opt" data-a="1">zachodzi między dwiema cząsteczkami gazu</button><button type="button" class="quiz-opt" data-a="2">prowadzi do wydzielenia ciepła</button><button type="button" class="quiz-opt" data-a="3">trwa dłużej niż 1 sekundę</button></div></div><div class="quiz-q" data-ok="0" data-fb="Katalizator zmienia drogę reakcji, nie poziomy substratów i produktów."><h5>3. Katalizator wpływa na reakcję tak, że:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">obniża energię aktywacji</button><button type="button" class="quiz-opt" data-a="1">zmienia ΔH reakcji</button><button type="button" class="quiz-opt" data-a="2">zwiększa wydajność w stanie równowagi</button><button type="button" class="quiz-opt" data-a="3">podnosi energię substratów</button></div></div><div class="quiz-q" data-ok="0" data-fb="Wzrost T zmienia rozkład energii, co zwiększa liczbę skutecznych zderzeń."><h5>4. Wzrost temperatury przyspiesza reakcje przede wszystkim dlatego, że:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">zwiększa ułamek cząsteczek o energii co najmniej E_a</button><button type="button" class="quiz-opt" data-a="1">zmniejsza energię aktywacji o stałą wartość</button><button type="button" class="quiz-opt" data-a="2">zwiększa masę cząsteczek</button><button type="button" class="quiz-opt" data-a="3">zmienia ΔH na mniejszą wartość</button></div></div><div class="quiz-q" data-ok="0" data-fb="Z zależności ΔH = E_a(przód) − E_a(wstecz) wynika, że E_a(wstecz) = E_a(przód) − ΔH, czyli większa."><h5>5. Dla reakcji egzotermicznej (ΔH &lt; 0) prawda jest taka, że:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">E_a reakcji wstecznej jest większa niż E_a reakcji w przód</button><button type="button" class="quiz-opt" data-a="1">E_a reakcji wstecznej jest mniejsza niż E_a reakcji w przód</button><button type="button" class="quiz-opt" data-a="2">obie bariery są zawsze równe</button><button type="button" class="quiz-opt" data-a="3">E_a reakcji w przód wynosi zero</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">7</span> Słownik</div>
+<dl><div class="def-item"><dt>Teoria zderzeń</dt><dd>reakcja zachodzi, gdy cząsteczki zderzą się z odpowiednią energią i orientacją</dd></div><div class="def-item"><dt>Zderzenie skuteczne</dt><dd>zderzenie prowadzące do reakcji, o energii co najmniej E_a i właściwej orientacji</dd></div><div class="def-item"><dt>Energia aktywacji E_a</dt><dd>minimalna energia zderzenia potrzebna do zajścia reakcji</dd></div><div class="def-item"><dt>Kompleks aktywny</dt><dd>stan przejściowy na szczycie profilu energetycznego reakcji</dd></div><div class="def-item"><dt>Profil energetyczny</dt><dd>wykres energii w funkcji przebiegu reakcji, z garbem barierą</dd></div><div class="def-item"><dt>Rozkład energii cząsteczek</dt><dd>zależność liczby cząsteczek od ich energii w danej temperaturze</dd></div><div class="def-item"><dt>Katalizator</dt><dd>substancja obniżająca E_a, nie zmieniająca ΔH</dd></div><div class="def-item"><dt>Orientacja</dt><dd>właściwe ustawienie zderzających się cząsteczek względem siebie</dd></div></dl>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">8</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Co to energia aktywacji?</span><span class="back">Najmniejsza energia zderzenia potrzebna do reakcji</span><span class="card-tag tag-basic">zderzenia</span></button><button class="flashcard" type="button"><span class="front">Kiedy zderzenie jest skuteczne?</span><span class="back">Gdy energia ≥ E_a i właściwa orientacja</span><span class="card-tag tag-basic">zderzenia</span></button><button class="flashcard" type="button"><span class="front">Czy każde zderzenie prowadzi do reakcji?</span><span class="back">Nie, tylko skuteczne</span><span class="card-tag tag-basic">zderzenia</span></button><button class="flashcard" type="button"><span class="front">Co to kompleks aktywny?</span><span class="back">Stan przejściowy na szczycie garbu energetycznego</span><span class="card-tag tag-understand">zderzenia</span></button><button class="flashcard" type="button"><span class="front">Jak wyznaczyć E_a wstecz z ΔH?</span><span class="back">E_a(wstecz) = E_a(przód) − ΔH</span><span class="card-tag tag-understand">energia</span></button><button class="flashcard" type="button"><span class="front">Co zmienia katalizator?</span><span class="back">Obniża E_a i zmienia drogę reakcji</span><span class="card-tag tag-basic">kataliza</span></button><button class="flashcard" type="button"><span class="front">Czy katalizator zmienia ΔH?</span><span class="back">Nie</span><span class="card-tag tag-understand">kataliza</span></button><button class="flashcard" type="button"><span class="front">Dlaczego wzrost T przyspiesza reakcję?</span><span class="back">Rośnie ułamek cząsteczek o energii ≥ E_a</span><span class="card-tag tag-understand">temperatura</span></button><button class="flashcard" type="button"><span class="front">Co to orientacja?</span><span class="back">Właściwe ustawienie cząsteczek przy zderzeniu</span><span class="card-tag tag-basic">zderzenia</span></button><button class="flashcard" type="button"><span class="front">Gdzie na wykresie widać E_a?</span><span class="back">Jako wysokość garbu nad poziomem substratów</span><span class="card-tag tag-basic">profil</span></button><button class="flashcard" type="button"><span class="front">Dlaczego reakcja egzotermiczna ma wyższą barierę wsteczną?</span><span class="back">Bo produkty leżą niżej i ΔH jest ujemne</span><span class="card-tag tag-understand">energia</span></button><button class="flashcard" type="button"><span class="front">Czy zapałka jest katalizatorem spalania węgla?</span><span class="back">Nie, dostarcza energii, by przekroczyć E_a</span><span class="card-tag tag-extra">zapalanie</span></button></div>
+</section>
+<section id="mosty">
+<div class="part-heading"><span class="part-num">9</span> Mosty</div>
 <ul>
-<li>Wyjaśnia teorię zderzeń.</li>
-<li>Wskazuje E_a na wykresie.</li>
-<li>Łączy T z rozkładem energii.</li>
+<li>Przed tą lekcją: K01 (stężenia i szybkość w ogólności), K05 (czynniki szybkości).</li>
+<li>Dalej: K07 (kataliza i mechanizmy), K08 (równowaga: szybkość w przód i wstecz).</li>
 </ul>
 </section>
-<section id="s3">
-<div class="part-heading"><span class="part-num">3</span> Model</div>
-<p>Zderzenie skuteczne = E ≥ E_a + właściwa orientacja.
-Katalizator: niższa bariera → więcej skutecznych zderzeń w danej T.</p>
-</section>
-<section id="s4">
-<div class="part-heading"><span class="part-num">4</span> Klinika błędów</div>
-<div class="table-wrap"><table>
-<thead><tr><th>Błąd</th><th>Popraw</th></tr></thead>
-<tbody>
-<tr><td>E_a = ΔH</td><td>E_a to bariera, ΔH to różnica poziomów</td></tr>
-<tr><td>Wszystkie zderzenia skuteczne</td><td>Tylko część</td></tr>
-</tbody></table></div>
-</section>
-<section id="s5">
-<div class="part-heading"><span class="part-num">5</span> Ćwiczenia + test (skrót)</div>
-<ol>
-<li>Co obniża E_a?</li>
-<li>Dlaczego ↑T przyspiesza?</li>
-</ol>
-<p><strong>Klucz:</strong> 1 katalizator; 2 więcej cząsteczek ≥ E_a.</p>
-</section>
-<section id="s6">
-<div class="part-heading"><span class="part-num">6</span> Słownik</div>
-<div class="table-wrap"><table>
-<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
-<tbody>
-<tr><td>Energia aktywacji E_a</td><td>Minimalna energia skutecznego zderzenia</td></tr>
-<tr><td>Zderzenie skuteczne</td><td>Zderzenie prowadzące do reakcji</td></tr>
-</tbody></table></div>
-</section>
-<section id="s7">
-<div class="part-heading">AUDYT Grok — 2026-10-09</div>
-<p>Nowa lekcja od zera. Status: UZUPEŁNIONE.</p>
+<section id="s1">
+<div class="part-heading">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przebudowa od zera)</div>
+<p><strong>Stan:</strong> lekcja przepisana od zera (wykład, profil energetyczny, rozkład Maxwella–Boltzmanna opisany słownie, katalizator, klinika, zadania z kluczem, test, fiszki, słownik). Rachunek: E_a(wstecz) = 80 − (−30) = 110 kJ/mol; 50 − (−20) = 70 kJ/mol.</p>
+<p><strong>Do W1 FULL (zewnętrzny recenzent):</strong> reguła „×2 na 10 K” ma charakter orientacyjny (zależny od reakcji) — do sprawdzenia; ciekawostki (katalizator spalin, enzymy, zapałka) do weryfikacji źródłowej; liczby zadań są ilustracyjne.</p>
 </section>
 
 </main>
@@ -744,6 +787,18 @@ var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.sc
  for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
  for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
 window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
 // grafiki przedmiotu
 if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
 if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);

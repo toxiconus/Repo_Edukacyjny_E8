@@ -1,7 +1,7 @@
 ---
 kod: CHE-SPIS
 wersja: v0.3 (plan roboczy)
-data: 2026-10-09
+data: 2026-10-12
 zrodlo: wygenerowane z che/narzedzia/kanon_dane.py (edytuj dane, nie ten plik) — `python3 che/narzedzia/spis_tresci.py`
 zastepuje: CHE_KANON_v0.2.md, CHE_SPIS_LEKCJI.md, AUDYT_SPISU_v0.2.md (usunięte, w historii git), PLAN_LEKCJI.md
 uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
@@ -100,7 +100,7 @@ stan: "●●●"
 - minimum BHP i piktogramy
 - pracownia GFX (6 zlewek)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F01_jak_mysli_chemik.md` (47 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F01.jak_mysli_chemik.md` (83 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F01_jak_mysli_chemik.md` (54 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F01.jak_mysli_chemik.md` (83 KB)
 
 #### F02 — Materia i substancje
 
@@ -121,7 +121,7 @@ stan: "●●●"
 - drzewo klasyfikacji
 - metale i niemetale (wstęp)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F02_materia_i_substancje.md` (35 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (29 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F02_materia_i_substancje.md` (45 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (29 KB)
 
 #### F03 — Właściwości i rozdzielanie mieszanin
 
@@ -143,7 +143,7 @@ stan: "●●●"
 - sączenie, dekantacja, odparowanie, krystalizacja, destylacja, chromatografia, magnes
 - dobór metody
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F03_wlasciwosci_i_rozdzielanie.md` (37 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` (42 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F03_wlasciwosci_i_rozdzielanie.md` (45 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` (42 KB)
 
 ### Faza B — Z czego to wynika?
 
@@ -167,7 +167,7 @@ stan: "●●●"
 - atom obojętny vs jon
 - modele atomu (historia skrócona)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F04_atom.md` (25 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F04.atom.md` (41 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F04_atom.md` (33 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F04.atom.md` (41 KB)
 
 #### F05 — Izotopy, jony i masa atomowa
 
@@ -189,7 +189,7 @@ stan: "●●●"
 - procedura średniej izotopowej
 - izotop i jon jednocześnie (np. ³⁵Cl⁻)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F05_izotopy_jony_masa_atomowa.md` (28 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F05.izotopy_jony_i_masa_atomowa.md` (41 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F05_izotopy_jony_masa_atomowa.md` (37 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F05.izotopy_jony_i_masa_atomowa.md` (41 KB)
 
 #### F06 — Układ okresowy
 
@@ -211,7 +211,7 @@ stan: "●●●"
 - trendy: promień, elektroujemność, charakter metaliczny — każdy z „dlaczego”
 - OWNER trendów
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F06_uklad_okresowy.md` (49 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F06.uklad_okresowy.md` (32 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F06_uklad_okresowy.md` (57 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F06.uklad_okresowy.md` (32 KB)
 
 #### F07 — Konfiguracja elektronowa
 
@@ -579,7 +579,7 @@ bylo: "N01"
 - tlenki kwasowe, zasadowe, obojętne, amfoteryczne (LO)
 - reakcje z wodą
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N01_tlenki.md` (125 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N02.tlenki.md` (38 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N01_tlenki.md` (130 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N02.tlenki.md` (38 KB)
 
 #### N03 — Wodorotlenki i zasady
 
@@ -602,7 +602,7 @@ bylo: "N02"
 - dysocjacja (E8)
 - wskaźniki
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N02_wodorotlenki.md` (132 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N03.wodorotlenki.md` (31 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N02_wodorotlenki.md` (136 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N03.wodorotlenki.md` (31 KB)
 
 #### N04 — Kwasy
 
@@ -626,7 +626,7 @@ bylo: "N03"
 - metal + kwas (OWNER E8)
 - kwaśne deszcze
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N03_kwasy.md` (136 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N04.kwasy.md` (35 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N03_kwasy.md` (140 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N04.kwasy.md` (35 KB)
 
 #### N05 — Sole
 
@@ -649,7 +649,7 @@ bylo: "N04"
 - tabela rozpuszczalności i strącanie (E8)
 - zastosowania
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N04_sole.md` (88 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N05.sole.md` (38 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N04_sole.md` (90 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N05.sole.md` (38 KB)
 
 #### N06 — Wodorki
 
@@ -670,7 +670,7 @@ bylo: "N05"
 - charakter chemiczny w układzie okresowym
 - amoniak, chlorowodór, siarkowodór
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N05_wodorki.md` (56 KB) → HTML przez `md2html.py`
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N05_wodorki.md` (61 KB) → HTML przez `md2html.py`
 
 #### N07 — Systematyka nieorganiczna
 
@@ -784,7 +784,7 @@ stan: "●●●"
 - mieszanie roztworów
 - gęstość (LO)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/R03_woda_roztwory_stezenie_procentowe.md` (25 KB) → HTML przez `md2html.py`; materiał `lekcje_md/R/CHE.03.R03+R05.stezenia.md` (35 KB) — wspólny dla R03, R05
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/R03_woda_roztwory_stezenie_procentowe.md` (35 KB) → HTML przez `md2html.py`; materiał `lekcje_md/R/CHE.03.R03+R05.stezenia.md` (35 KB) — wspólny dla R03, R05
 
 #### R04 — Mol i masa molowa
 
@@ -941,7 +941,7 @@ stan: "◐○○"
 - dysocjacja stopniowa
 - stopień dysocjacji (LO)
 
-**Mamy:** materiał `lekcje_md/J/CHE.04.J01.dysocjacja_elektrolityczna.md` (21 KB)
+**Mamy:** materiał `lekcje_md/J/CHE.04.J01.dysocjacja_elektrolityczna.md` (22 KB)
 
 #### J02 — pH i odczyn
 
@@ -2135,7 +2135,7 @@ bylo: "K01"
 - wykresy stężenie–czas
 - równanie kinetyczne (LO-R)
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K04.szybkosc_reakcji.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K04.szybkosc_reakcji.md` (14 KB)
 
 #### K05 — Czynniki wpływające na szybkość
 
@@ -2175,7 +2175,7 @@ bylo: "K03"
 - energia aktywacji na wykresie
 - rozkład energii cząsteczek
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K06.zderzenia_energia_aktywacji.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K06.zderzenia_energia_aktywacji.md` (12 KB)
 
 #### K07 — Kataliza
 
@@ -2278,7 +2278,7 @@ stan: "◐○○"
 - stopień przereagowania
 - zadania złożone z K
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K11.rownowaga_ilosciowa.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K11.rownowaga_ilosciowa.md` (12 KB)
 
 ---
 

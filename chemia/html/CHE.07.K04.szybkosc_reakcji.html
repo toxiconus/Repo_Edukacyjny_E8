@@ -614,6 +614,12 @@ section ul,section ol{padding-left:1.35rem}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 @media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
 
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+
 /* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
@@ -630,77 +636,137 @@ section ul,section ol{padding-left:1.35rem}
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">&quot;K04&quot; &quot;Szybkość reakcji&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">Chemia, lekcja "K04"</div><h1>"Szybkość reakcji"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
-<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA STARTOWA LO — 10 rzeczy, które muszę umieć</a><a class="toc-link" href="#s2">2. Cele</a><a class="toc-link" href="#s3">3. Przykład</a><a class="toc-link" href="#s4">4. Klinika błędów</a><a class="toc-link" href="#s5">5. Ćwiczenia + test (skrót)</a><a class="toc-link" href="#s6">6. Słownik</a><a class="toc-link" href="#s7">AUDYT Grok — 2026-10-09</a></nav></details>
-<p><strong>Dział:</strong> Energetyka, kinetyka i równowaga (blok K)
-<strong>Poziomy:</strong> LO
-<strong>Poprzednia:</strong> R05
-<strong>Następna:</strong> K05</p>
-<section id="s1">
-<div class="part-heading">KARTA STARTOWA LO — 10 rzeczy, które muszę umieć</div>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#wyklad">1. Wykład — jak szybko zachodzi reakcja</a><a class="toc-link" href="#pomiar">2. Co wpływa na pomiar</a><a class="toc-link" href="#czynniki">3. Czynniki i kolejne kroki</a><a class="toc-link" href="#klinika">4. Klinika błędów</a><a class="toc-link" href="#cwiczenia">5. Ćwiczenia</a><a class="toc-link" href="#test">6. Test</a><a class="toc-link" href="#slownik">7. Słownik</a><a class="toc-link" href="#fiszki">8. Fiszki</a><a class="toc-link" href="#mosty">9. Mosty</a><a class="toc-link" href="#s1">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przebudowa od zera)</a></nav></details>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">1</span> Wykład — jak szybko zachodzi reakcja</div>
+<div class="card card-understand">
+<span class="card-label">Wykład od zera</span>
+<p>Pytanie na start: dlaczego jedna reakcja kończy się w ułamku sekundy, a inna trwa lata? Wrzuć kawałek magnezu do kwasu solnego: od razu pojawiają się pęcherzyki wodoru i metal szybko znika. Położ zwykłe żelazo na deszczu: rdza narasta miesiącami. Obie reakcje prowadzą do produktów, ale różnią się <strong>szybkością</strong>.</p>
+<p>Szybkość reakcji mówi, jak szybko zmienia się ilość substratów lub produktów w czasie. Najczęściej mierzymy ją przez stężenie, czyli liczbę moli substancji w jednym decymetrze sześciennym roztworu (mol/dm³). Jeśli stężenie substratu w ciągu 60 sekund spada z 0,40 do 0,10 mol/dm³, to średnio w każdej sekundzie ubywało 0,005 mol/dm³ tej substancji.</p>
+<p>Ważne jest rozróżnienie dwóch rzeczy. <strong>Szybkość średnia</strong> to zmiana w całym przedziale czasu, czyli iloraz Δc/Δt. <strong>Szybkość chwilowa</strong> to szybkość w jednej, konkretnej chwili; na wykresie stężenia od czasu odpowiada nachyleniu stycznej do krzywej w tym punkcie. Dlatego średnia z przedziału 0–60 s nie mówi, jak szybko reakcja szła na początku.</p>
+<p>Dlaczego szybkość się zmienia? Gdy substratów ubywa, rzadziej zderzają się ze sobą, więc reakcja zwalnia. Zwykle najszybciej przebiega na początku, a pod koniec już wolno. Ta obserwacja jest kluczem do odczytywania wykresów: tam, gdzie krzywa jest bardziej stroma, reakcja przebiega szybciej.</p>
+<p>Jak to zmierzyć? Wystarczy wybrać cechę, która zmienia się razem z reakcją: objętość wydzielającego się gazu, masę, barwę roztworu, przewodnictwo elektryczne albo ciśnienie w zamkniętym naczyniu. Każdą z nich odczytujemy w kolejnych chwilach i rysujemy wykres. Taki pomiar jest podstawą całej kinetyki.</p>
+</div>
+<h3 id="srednia">1.1 Szybkość średnia — wzór i znak</h3>
+<p>Dla substancji, której ubywa (substrat), szybkość średnia w przedziale czasu od t₁ do t₂ to:</p>
+<div class="formula-lg">v_śr = −Δc/Δt = −(c₂ − c₁)/(t₂ − t₁)</div>
+<p>Znak minus jest potrzebny, bo Δc dla substratu jest ujemne. Dzięki temu szybkość wychodzi dodatnia. Dla produktu, którego przybywa, szybkość liczymy bez minusa: v_śr = +Δc/Δt.</p>
+<div class="card card-core">
+<span class="card-label">Szybkość średnia — krok po kroku</span>
 <ol>
-<li>Szybkość reakcji = zmiana stężenia (lub ilości) w czasie.</li>
-<li>Szybkość średnia: v = Δc / Δt (moduł).</li>
-<li>Szybkość chwilowa: pochodna / styczna do krzywej c(t).</li>
-<li>Wykres stężenie–czas: substraty maleją, produkty rosną.</li>
-<li>Jednostka: mol·dm⁻³·s⁻¹ (lub inna).</li>
-<li>Pomiar: zmiana barwy, objętości gazu, ciśnienia, przewodnictwa, masy.</li>
-<li><span class="level-badge level-contest">extra</span> Równanie kinetyczne: v = k [A]ᵐ [B]ⁿ (rząd, stała szybkości).</li>
-<li>Szybkość zależy od stężenia, T, katalizatora (K05).</li>
-<li>Nie mylić szybkości z wydajnością / ΔH.</li>
-<li>Most do K05 (czynniki) i K08 (równowaga: v_przód = v_wstecz).</li>
+<li>Odczytaj stężenie na początku i na końcu przedziału.</li>
+<li>Oblicz Δc = c₂ − c₁ i Δt = t₂ − t₁.</li>
+<li>Podziel: v_śr = |Δc|/Δt. Dla substratu wynik jest dodatni dzięki modułowi.</li>
+<li>Zapisz jednostkę: mol/(dm³·s) (czyli mol·dm⁻³·s⁻¹).</li>
 </ol>
-<h3>Diagnoza wejściowa</h3>
-<ol>
-<li>Definicja szybkości?</li>
-<li>Szybkość średnia vs chwilowa?</li>
-<li>Jak wygląda wykres c(t) dla substratu?</li>
-<li>Jednostka?</li>
-<li>Przykład pomiaru?</li>
-</ol>
-<p><strong>Klucz:</strong> 1 Δc/Δt; 2 średnia w przedziale / w chwili; 3 maleje; 4 mol/(dm³·s); 5 objętość gazu, barwa.</p>
-<p><strong>Pytanie przewodnie:</strong> Jak zmierzyć, „jak szybko” zachodzi reakcja?</p>
+</div>
+<h3 id="chwilowa">1.2 Szybkość chwilowa i wykres stężenie–czas</h3>
+<p>Wykres stężenia substratu od czasu zaczyna się wysoko i opada. Szybkość chwilowa w punkcie t to nachylenie stycznej w tym punkcie. Nie trzeba liczyć pochodnej: na szkolnym wykresie wystarczy narysować styczną i policzyć jej nachylenie jako stosunek przyrostów.</p>
+<p>Przykład tabeli pomiarowej dla reakcji A → produkty:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>t (s)</th><th>c(A) (mol/dm³)</th><th>Szybkość średnia w przedziale poprzednim (mol/(dm³·s))</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>0,40</td><td>—</td></tr>
+<tr><td>20</td><td>0,28</td><td>0,006</td></tr>
+<tr><td>40</td><td>0,18</td><td>0,005</td></tr>
+<tr><td>60</td><td>0,10</td><td>0,004</td></tr>
+</tbody></table></div>
+<p>Szybkość średnia maleje z czasem, więc w pierwszych sekundach reakcja jest najszybsza. Dla produktu wykres idzie w górę, ale szybkość wyznaczamy tak samo, z dodatnim znakiem.</p>
+<div class="card card-warning">
+<span class="card-label">Pułapka: średnia nie jest chwilową</span>
+<p>Wynik 0,005 mol/(dm³·s) z przedziału 0–60 s jest średnią. Na początku szybkość chwilowa była większa (około 0,006), a pod koniec mniejsza (około 0,004). Gdy w zadaniu pada słowo „średnia” albo „w przedziale”, licz z Δc/Δt; gdy pada „w chwili t”, odczytaj nachylenie stycznej.</p>
+</div>
+<h3 id="wspolczynniki">1.3 Równanie reakcji a szybkość</h3>
+<p>Dla reakcji ogólnej aA + bB → cC + dD szybkości zmiany stężeń są powiązane współczynnikami stechiometrycznymi. Jeśli substrat A zużywa się dwa razy szybciej niż produkt C powstaje, to zapisujemy to wprost: szybkość liczona z A jest podzielona przez a, a z C przez c. Dlatego w zadaniach trzeba zwrócić uwagę, z której substancji liczymy.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie: po co dzielić przez współczynnik?</span>
+<p>Jeżeli w równaniu 2 mole substratu zużywają się na 1 mol produktu, to w tej samej chwili substrat ubywa dwa razy szybciej niż produkt przybywa. Dzielenie przez współczynnik sprowadza wszystkie szybkości do jednej „wspólnej” wielkości, dzięki której możemy porównać różne reakcje.</p>
+</div>
 </section>
-<section id="s2">
-<div class="part-heading"><span class="part-num">2</span> Cele</div>
+<section id="pomiar">
+<div class="part-heading"><span class="part-num">2</span> Co wpływa na pomiar</div>
+<p>Każda metoda pomiaru ma swoje ograniczenia. Gdy wydziela się gaz, masa układu maleje (gaz ucieka). Gdy powstaje osad, roztwór mętnieje, a nie wszystko da się zmierzyć równie łatwo. Dlatego przy projektowaniu doświadczenia wybieramy tę cechę, która jest proporcjonalna do przebiegu reakcji.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Metoda</th><th>Co mierzymy</th><th>Przykład reakcji</th></tr></thead>
+<tbody>
+<tr><td>Objętość gazu</td><td>Objętość wydzielonego gazu (w tej samej temperaturze i ciśnieniu)</td><td>Mg + 2HCl → MgCl₂ + H₂↑</td></tr>
+<tr><td>Masa układu</td><td>Ubytek masy, gdy gaz ucieka z naczynia</td><td>CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</td></tr>
+<tr><td>Barwa roztworu</td><td>Zmiana intensywności barwy</td><td>Reakcje z udziałem jodu</td></tr>
+<tr><td>Przewodnictwo</td><td>Zmiana liczby jonów w roztworze</td><td>Reakcje tworzące lub zużywające jony</td></tr>
+<tr><td>Ciśnienie</td><td>Ciśnienie w zamkniętym naczyniu</td><td>Reakcje gazowe przy stałej objętości</td></tr>
+</tbody></table></div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka: reakcja zegarowa</span>
+<p>W reakcji jodowego zegara roztwór po chwili nagle zmienia barwę z bezbarwnej na granatową. Przyczyną jest tworzenie jodu, który reaguje ze skrobią. Dodając do roztworu tiosiarczan sodu, opóźniamy moment zmiany barwy o czas proporcjonalny do ilości użytego reagenta. W ten sposób szkolny pokaz zamienia się w pomiar szybkości.</p>
+</div>
+</section>
+<section id="czynniki">
+<div class="part-heading"><span class="part-num">3</span> Czynniki i kolejne kroki</div>
+<p>Szybkość zależy od stężenia, temperatury, rozdrobnienia substancji stałych oraz obecności katalizatora. Pierwsze trzy czynniki omówimy dokładniej w lekcji K05, a o katalizatorze i energii aktywacji — w K06 i K07. Tutaj ważne jest jedno: nie każda zmiana szybkości wynika z tego samego mechanizmu. Zwiększenie stężenia zwiększa liczbę zderzeń. Zwiększenie temperatury zwiększa liczbę zderzeń skutecznych. Katalizator zmienia drogę reakcji.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie: szybkość a wydajność</span>
+<p>Szybkość mówi, jak szybko reakcja zachodzi. Wydajność mówi, jak dużo produktu powstaje w ostatecznym stanie. Reakcja może być bardzo szybka, a jej wydajność mała (gdy ustala się równowaga), i odwrotnie. Nie mylimy tych pojęć, nawet jeśli w życiu codziennym mówimy „szybka reakcja” o czymś, co po prostu dużo daje.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka: rdza — reakcja, którą widzimy po latach</span>
+<p>Rdzewienie żelaza to reakcja utleniania z tlenem i wodą, ale przebiega bardzo wolno w temperaturze pokojowej. Dlatego stalowe konstrukcje mogą stać dekady, zanim zauważymy zmiany. Gdy ustawimy je w wilgotnym, słonym powietrzu, szybkość rośnie, bo woda i sól przyspieszają przebieg reakcji elektrochemicznej.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka: lodówka to kinetyka</span>
+<p>Dlaczego żywność w lodówce psuje się wolniej? Niższa temperatura zmniejsza szybkość reakcji i procesów rozkładu, które wywołują bakterie i enzymy. Ta sama zasada działa w odwrotną stronę: po podgrzaniu produkty psują się szybciej.</p>
+</div>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">4</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość = ΔH</td><td class="col-ok" data-label="Poprawa">Szybkość to kinetyka (jak szybko), ΔH to energetyka (ile energii)</td><td data-label="Dlaczego">Dwie różne wielkości; reakcja może być szybka i egzotermiczna albo wolna i endotermiczna</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość bez modułu dla substratu</td><td class="col-ok" data-label="Poprawa">v = −Δc/Δt albo moduł(Δc)/Δt</td><td data-label="Dlaczego">Stężenie substratu maleje, więc Δc jest ujemne</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Szybkość w chwili liczona jak średnia</td><td class="col-ok" data-label="Poprawa">Dla chwili t bierzemy nachylenie stycznej</td><td data-label="Dlaczego">Średnia obejmuje przedział, chwilowa jeden punkt</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Mieszanie jednostek (s zamiast min)</td><td class="col-ok" data-label="Poprawa">Przelicz czas na sekundy przed obliczeniem</td><td data-label="Dlaczego">Wynik w mol/(dm³·min) jest inny niż w mol/(dm³·s)</td></tr></tbody></table>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">5</span> Ćwiczenia</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (2 pkt) — szybkość średnia</span>
+<p>Stężenie substancji A w reakcji A → produkty spadło z 0,40 mol/dm³ do 0,10 mol/dm³ w czasie 60 s. Oblicz szybkość średnią tej reakcji i podaj jednostkę.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>v_śr = |Δc|/Δt = (0,40 − 0,10)/60 = 0,30/60 = 0,005. Jednostka: mol/(dm³·s). (1 pkt za wynik, 1 pkt za jednostkę)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (2 pkt) — wykres c(t)</span>
+<p>Na wykresie stężenia substratu od czasu nachylenie krzywej w 10 s jest większe niż w 50 s. Co to mówi o szybkości? Uzasadnij.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Szybkość chwilowa jest większa w 10 s niż w 50 s, bo nachylenie stycznej (szybkość zmiany stężenia) jest większe. Reakcja zwalnia, gdy substratu ubywa. (1 pkt za wniosek, 1 pkt za uzasadnienie odwołujące się do nachylenia)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (3 pkt) — produkt i substrat</span>
+<p>W reakcji 2A → B szybkość tworzenia B wynosi 0,010 mol/(dm³·s). Oblicz szybkość zmiany stężenia A i podaj wynik ze znakiem. Wyjaśnij, dlaczego wynik różni się od szybkości B.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Z równania: na 1 mol B zużywa się 2 mole A, więc ubywanie A jest dwa razy szybsze: Δc(A)/Δt = −2 · 0,010 = −0,020 mol/(dm³·s). Wynik ujemny, bo A ubywa. (1 pkt za zależność od współczynnika, 1 pkt za wartość, 1 pkt za znak i wyjaśnienie)</p>
+</details>
+</div>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">6</span> Test</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Szybkość to zmiana stężenia w czasie, więc jednostka to stężenie podzielone przez czas."><h5>1. Jednostka szybkości reakcji w układzie SI w przypadku stężeń w mol/dm³ to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="1">mol/dm³</button><button type="button" class="quiz-opt" data-a="2">s/mol</button><button type="button" class="quiz-opt" data-a="3">dm³/(mol·s)</button></div></div><div class="quiz-q" data-ok="0" data-fb="Dla substratu Δc &amp;lt; 0, więc bez minusa lub modułu wynik byłby ujemny."><h5>2. Szybkość średnia substratu w przedziale czasu jest dodatnia, ponieważ:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">stosujemy moduł albo minus przed Δc, bo stężenie substratu maleje</button><button type="button" class="quiz-opt" data-a="1">substrat zawsze ma dodatnie stężenie</button><button type="button" class="quiz-opt" data-a="2">czas zawsze jest ujemny</button><button type="button" class="quiz-opt" data-a="3">Δc dla substratu rośnie</button></div></div><div class="quiz-q" data-ok="0" data-fb="Styczna opisuje lokalną zmianę stężenia, czyli szybkość chwilową."><h5>3. Na wykresie stężenia substratu od czasu nachylenie stycznej w chwili t mówi o:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">szybkości chwilowej w tej chwili</button><button type="button" class="quiz-opt" data-a="1">szybkości średniej w całym przedziale</button><button type="button" class="quiz-opt" data-a="2">wydajności reakcji</button><button type="button" class="quiz-opt" data-a="3">masie produktu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Masa molowa nie zmienia mechanizmu zderzeń; w lekcji wymienione są stężenie, temperatura, rozdrobnienie i katalizator."><h5>4. Który czynnik nie jest wymieniony jako wpływający na szybkość w tej lekcji?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">masa molowa produktu</button><button type="button" class="quiz-opt" data-a="1">stężenie</button><button type="button" class="quiz-opt" data-a="2">temperatura</button><button type="button" class="quiz-opt" data-a="3">katalizator</button></div></div><div class="quiz-q" data-ok="0" data-fb="Przy zwalnianiu szybkość na początku przedziału jest większa, więc średnia przewyższa wartość końcową."><h5>5. Szybkość średnia z przedziału 0–60 s jest większa od szybkości chwilowej w 60 s, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">reakcja zwalnia z czasem</button><button type="button" class="quiz-opt" data-a="1">reakcja przyspiesza z czasem</button><button type="button" class="quiz-opt" data-a="2">stężenie substratu nie zmienia się</button><button type="button" class="quiz-opt" data-a="3">reakcja jest zakończona już na początku</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">7</span> Słownik</div>
+<dl><div class="def-item"><dt>Szybkość reakcji</dt><dd>zmiana stężenia reagenta lub produktu w jednostce czasu</dd></div><div class="def-item"><dt>Szybkość średnia</dt><dd>moduł(Δc)/Δt w danym przedziale czasu</dd></div><div class="def-item"><dt>Szybkość chwilowa</dt><dd>szybkość w ustalonej chwili, równa nachyleniu stycznej do wykresu c(t)</dd></div><div class="def-item"><dt>Wykres stężenie–czas</dt><dd>zależność stężenia od czasu, z której odczytujemy szybkość</dd></div><div class="def-item"><dt>Jednostka szybkości</dt><dd>mol/(dm³·s) (w tej lekcji)</dd></div><div class="def-item"><dt>Metoda pomiaru</dt><dd>sposób odczytu zmiany układu, np. objętości gazu lub barwy roztworu</dd></div><div class="def-item"><dt>Substrat</dt><dd>substancja, która się zużywa w reakcji</dd></div><div class="def-item"><dt>Produkt</dt><dd>substancja, która powstaje w reakcji</dd></div><div class="def-item"><dt>Równanie kinetyczne</dt><dd>zależność szybkości od stężeń (wstęp w LO, szczegóły w K05)</dd></div></dl>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">8</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Czym jest szybkość reakcji?</span><span class="back">Zmiana stężenia reagenta w jednostce czasu</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaki wzór ma szybkość średnia?</span><span class="back">v_śr = moduł(Δc)/Δt</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaka jest jednostka szybkości?</span><span class="back">mol/(dm³·s)</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Czym różni się szybkość chwilowa od średniej?</span><span class="back">Chwilowa to jeden punkt (styczna), średnia to przedział</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co oznacza nachylenie stycznej na wykresie c(t)?</span><span class="back">Szybkość chwilową reakcji</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Dlaczego szybkość substratu ma znak minus?</span><span class="back">Bo stężenie substratu maleje, Δc &lt; 0</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jak zmienia się szybkość w miarę zużywania substratów?</span><span class="back">Zwykle maleje</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co mierzymy przy wydzielaniu gazu?</span><span class="back">Objętość gazu lub ubytek masy</span><span class="card-tag tag-basic">pomiar</span></button><button class="flashcard" type="button"><span class="front">Co zmienia się w reakcji jodowego zegara?</span><span class="back">Barwa roztworu (pojawia się granatowa)</span><span class="card-tag tag-extra">pomiar</span></button><button class="flashcard" type="button"><span class="front">Jak przeliczyć czas z minut na sekundy?</span><span class="back">Mnożymy przez 60</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co z zadania 3 wynika dla współczynników?</span><span class="back">Szybkość zmiany substratu zależy od jego współczynnika</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Czym jest szybkość a wydajność?</span><span class="back">Szybkość mówi jak szybko, wydajność ile produktu w końcu</span><span class="card-tag tag-understand">kinetyka</span></button></div>
+</section>
+<section id="mosty">
+<div class="part-heading"><span class="part-num">9</span> Mosty</div>
 <ul>
-<li>Definiuje i oblicza szybkość średnią.</li>
-<li>Interpretuje wykresy c(t).</li>
-<li>Wymienia metody pomiaru.</li>
+<li>Przed tą lekcją: R05 (stężenia i obliczenia z nimi).</li>
+<li>Dalej: K05 (czynniki: stężenie, temperatura, rozdrobnienie), K06 (zderzenia i energia aktywacji), K08 (równowaga dynamiczna: szybkość w przód i wstecz).</li>
 </ul>
 </section>
-<section id="s3">
-<div class="part-heading"><span class="part-num">3</span> Przykład</div>
-<p>Dla A → produkty: v_śr = −Δ[A]/Δt (minus, bo ubywa).</p>
-</section>
-<section id="s4">
-<div class="part-heading"><span class="part-num">4</span> Klinika błędów</div>
-<div class="table-wrap"><table>
-<thead><tr><th>Błąd</th><th>Popraw</th></tr></thead>
-<tbody>
-<tr><td>Szybkość = ΔH</td><td>To kinetyka vs energetyka</td></tr>
-<tr><td>Bez modułu / znaku</td><td>Ubytek substratu ze znakiem −</td></tr>
-</tbody></table></div>
-</section>
-<section id="s5">
-<div class="part-heading"><span class="part-num">5</span> Ćwiczenia + test (skrót)</div>
-<ol>
-<li>[A] spadło z 0,4 do 0,1 mol/dm³ w 60 s. v_śr?</li>
-<li>Co rośnie na wykresie c(t)?</li>
-</ol>
-<p><strong>Klucz:</strong> 1 0,005 mol/(dm³·s); 2 stężenie produktu.</p>
-</section>
-<section id="s6">
-<div class="part-heading"><span class="part-num">6</span> Słownik</div>
-<div class="table-wrap"><table>
-<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
-<tbody>
-<tr><td>Szybkość średnia</td><td>Δc/Δt w przedziale czasu</td></tr>
-<tr><td>Szybkość chwilowa</td><td>Szybkość w danej chwili</td></tr>
-</tbody></table></div>
-</section>
-<section id="s7">
-<div class="part-heading">AUDYT Grok — 2026-10-09</div>
-<p>Nowa lekcja od zera. Status: UZUPEŁNIONE.</p>
+<section id="s1">
+<div class="part-heading">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przebudowa od zera)</div>
+<p><strong>Stan:</strong> lekcja przepisana od zera w składni pełnej (wykład, mini-wykłady, zadania z kluczem, test, fiszki, słownik, klinika). Wartości liczbowe sprawdzone rachunkowo (0,30/60 = 0,005; 0,12/20 = 0,006 mol/(dm³·s) dla przedziału 0–20 s).</p>
+<p><strong>Do W1 FULL (zewnętrzny recenzent):</strong> tabela wartości w §1.2 jest ilustracyjna — do sprawdzenia przez recenzenta; ciekawostki (rdza, lodówka, jodowy zegar) do weryfikacji źródłowej.</p>
 </section>
 
 </main>
@@ -743,6 +809,18 @@ var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.sc
  for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
  for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
 window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
 // grafiki przedmiotu
 if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
 if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
