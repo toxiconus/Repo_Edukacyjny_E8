@@ -72,7 +72,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `U10_krzywe_glukozy.svg` 10 KB
 - `U10_os_tarczycowa.svg` 10 KB
 
-## biologia/bio/md  (10 pl., 802 KB)
+## biologia/bio/md  (11 pl., 906 KB)
 - `BIO.00.REV01.organizacja_i_chemizm_zycia.md` 44 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 61 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 63 KB
@@ -83,6 +83,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.07.U06.oddychanie_i_wydalanie.md` 82 KB
 - ⚠`BIO.07.U08.uklad_nerwowy_i_zmysly.md` 110 KB
 - ⚠`BIO.07.U10.uklad_dokrewny.md` 107 KB
+- ⚠`BIO.07.U11.rozmnazanie_i_rozwoj.md` 104 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
@@ -121,8 +122,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `L003_diagnoza_startowa_genetyki.md` 17 KB
 - `L015_jak_powstaja_gamety_i_skad.md` 15 KB
 
-## biologia/plany/audyty  (40 pl., 1.1 MB)
+## biologia/plany/audyty  (41 pl., 1.2 MB)
 - (zwinięte; `ls biologia/plany/audyty`) — duże:
+- ⚠`GOTOWE_ZAI_U11_2026-10-12.md` 105 KB
 - ⚠`ULEPSZ_GLM_U01_2026-10-11.md` 66 KB
 - ⚠`ULEPSZ_GLM_U03_2026-10-11.md` 124 KB
 - ⚠`ULEPSZ_GLM_U10_2026-10-11.md` 68 KB
@@ -130,7 +132,6 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`ULEPSZ_H01_model_B_2026-10-11.md` 61 KB
 - ⚠`ULEPSZ_H01_model_E_2026-10-11.md` 55 KB
 - ⚠`ULEPSZ_SONNET_U08_reszta_2026-10-12.md` 54 KB
-- ⚠`ULEPSZ_SONNET_U10_reszta_2026-10-12.md` 60 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB

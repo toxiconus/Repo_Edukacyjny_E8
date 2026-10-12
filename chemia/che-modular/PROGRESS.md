@@ -120,3 +120,4 @@
 - 2026-10-12: paczka GOTOWE — TRYB NAPISZ (szkielet → pełna lekcja); paczka ZAI: U11 rozmnażanie, X04, J03, R07 (C1c) z olimpiada/do_uzupelnienia.
 - 2026-10-12: FIZ-01 W1 FULL — pierwsza odpowiedź GOTOWE (Sonnet 5.5) wczytana skryptem bez poprawek (55 → 115 KB).
 - 2026-10-12: BIO U11 Rozmnażanie i rozwój — napisana (GOTOWE NAPISZ, 103 KB), wczytana skryptem; 2 poprawki (najądrze ~2 tyg., literówka); do W1.
+- 2026-10-12: CHE X04 Szereg aktywności — napisana (GOTOWE NAPISZ, 91 KB), wczytana skryptem; ujednolicony koniec szeregu; do W1.

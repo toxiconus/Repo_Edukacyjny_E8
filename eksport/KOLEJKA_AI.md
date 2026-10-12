@@ -14,11 +14,13 @@
 
 ## chemia
 
-**WYSŁAĆ (bez W1) — 2 lekcji, 93 KB:** N05 (58 KB) · R03A (34 KB)
+**WYSŁAĆ (bez W1) — 3 lekcji, 181 KB:** N05 (58 KB) · R03A (34 KB) · X04 (88 KB)
 
 - zestaw 1 (58 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N05 chemia/che-modular/lessons-md/gotowe/N05_wodorki.md`
 
 - zestaw 2 (34 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R03A chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
+
+- zestaw 3 (88 KB): `python3 eksport/paczka_ai.py ulepsz CHE_X04 chemia/che-modular/lessons-md/gotowe/X04_szereg_aktywnosci_metali.md`
 
 **niski priorytet (W1 starym promptem) — 12 lekcji, 827 KB:** F01 (52 KB) · F02 (43 KB) · F03 (43 KB) · F04 (32 KB) · F05 (35 KB) · F06 (55 KB) · N01 (122 KB) · N02 (128 KB) · N03 (133 KB) · N04 (85 KB) · R03 (33 KB) · REV01 (61 KB)
 
