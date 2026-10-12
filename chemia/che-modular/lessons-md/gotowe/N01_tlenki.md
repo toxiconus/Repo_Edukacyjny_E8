@@ -2,11 +2,12 @@
 kod: N01
 uid: 
 tytul: Tlenki
-opis: 
+opis: Tlenki — definicja i nazewnictwo, wzór W–K–S–K, charakter (zasadowy, kwasowy, obojętny, amfoteryczny), reakcje z wodą, kwasami i zasadami, otrzymywanie, redukcja, trendy, barwy, BHP i środowisko
 kicker: N01 · CHEMIA · MASTER LAB v6.2
 lead: Definicja i nazewnictwo, W–K–S–K, charakter (zasadowy, kwasowy, obojętny, amfoteryczny) ≠ reakcja z wodą ≠ rozpuszczalność, reakcje z wodą, kwasami i zasadami, otrzymywanie, redukcja, trendy, barwy, BHP i środowisko. Modele i dane z silnika CHE.OXIDES.
-plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNIE / LO]]
+plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE]]
 stopka: **CHEMIA N01 v6.2 MASTER LAB** · Tlenki · 2026
+stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewnętrznego W1
 ---
 ::: minimum | Muszę umieć na E8 — 7 kluczowych faktów
 1. **Tlenek** = związek tlenu z innym pierwiastkiem (metalem lub niemetalem). Wzór ogólny: EₓOᵧ.
@@ -41,7 +42,7 @@ stopka: **CHEMIA N01 v6.2 MASTER LAB** · Tlenki · 2026
 ::: karta understand
 1. **Nie czytaj biernie.** Po każdym akapicie: „Co ja z tego zapamiętam?”.
 2. **Najpierw próbuj, potem patrz na odpowiedź.**
-3. **Powtarzaj w odstępach:** dziś → jutro → za 3 dni → za tydzień.
+3. **Wracaj do lekcji po przerwie**, kiedy chcesz — we własnym tempie, bez stałego harmonogramu; najlepiej sprawdź się z kart §25 i §27.
 4. **Mów na głos.** Czytaj wzory: „Al-dwa-O-trzy”.
 5. **Rysuj.** Krzyżowanie, tabele, mapy myśli.
 6. **Łap moment „aha!”.**
@@ -92,6 +93,26 @@ Do jednej zlewki z wodą wsypujemy biały CaO, do drugiej czarny CuO, a do trzec
 - odczyn roztworu i wskaźniki (fenoloftaleina, wskaźnik uniwersalny) — potrzebne w doświadczeniach [§21](#doswiadczenia).
 
 > Lekcje fundamentów F01–F09 (fundamenty): wartościowość, W–K–S–K, bilans. Bez tego konstruktor wzorów tlenków będzie loterią.
+:::
+
+## 3a | Wykład — czym jest tlenek i dlaczego zachowuje się tak, a nie inaczej {#wyklad}
+
+::: karta understand | Wykład od zera
+Zacznijmy od pytania: co to jest tlenek? Tlen łączy się prawie z każdym pierwiastkiem. Gdy żelazo rdzewieje, gdy magnez pali się białym płomieniem, gdy węgiel spala się w piecu — w każdym z tych przypadków powstaje **związek pierwiastka z tlenem**. Taki związek nazywamy **tlenkiem**. Ogólny zapis to EₓOᵧ, gdzie E oznacza dowolny pierwiastek, a O to tlen, zwykle na stopniu utlenienia −II.
+
+Dlaczego to ważne? Tlen jest najczęstszym pierwiastkiem w skorupie ziemskiej (około 46% masy). Większość skał, piasku i gleby to tlenki i krzemiany. Tlenki są wszędzie: w rudach metali, w powietrzu (CO₂), w spalinach (SO₂).
+
+Najważniejsze w tej lekcji jest rozdzielenie trzech pytań, które łatwo ze sobą pomylić:
+
+1. **Jaki jest charakter tlenku?** (zasadowy, kwasowy, obojętny, amfoteryczny)
+2. **Czy tlenek reaguje z wodą?**
+3. **Czy tlenek się rozpuszcza?**
+
+Odpowiedzi nie muszą się zgadzać. CuO jest zasadowy, a z wodą nie reaguje. SiO₂ jest kwasowy, a z wodą też praktycznie nie reaguje. MgO jest zasadowy i reaguje z wodą bardzo słabo. Dlatego nie wolno uczyć się automatu „tlenek metalu = zasada, a tlenek niemetalu = kwas”.
+
+Skąd bierze się charakter? Metale 1. i 2. grupy tworzą tlenki o wiązaniach zbliżonych do jonowych; w wodzie jon O²⁻ przechodzi w OH⁻, więc powstaje zasada. Niemetale tworzą tlenki kowalencyjne, które z wodą dają kwasy tlenowe. Pomiędzy nimi leżą tlenki amfoteryczne, takie jak Al₂O₃ czy ZnO, które zachowują się jak zasada wobec kwasu i jak kwas wobec zasady.
+
+Jak z tej wiedzy korzystać? Przed doświadczeniem spróbuj przewidzieć wynik na podstawie charakteru tlenku. Potem wykonaj doświadczenie, zapisz **obserwację** osobno od **wniosku** i dopiero na końcu porównaj z przewidywaniem.
 :::
 
 ## 4 | Definicja i nazewnictwo [[basic:E8]] {#definicja}
@@ -313,7 +334,7 @@ CuO jest zasadowy, ale nie reaguje z wodą; SiO₂ jest kwasowy, ale z wodą pra
 <tr class="ok-row sol-good"><td>SO₂, SO₃</td><td>kwasowy</td><td><strong>tak</strong> — reagują z wodą</td><td>→ kwas: H₂SO₃, H₂SO₄</td></tr>
 <tr class="ok-row sol-good"><td>N₂O₅, P₂O₅</td><td>kwasowy</td><td><strong>tak</strong> — reagują z wodą</td><td>→ kwas: HNO₃, H₃PO₄</td></tr>
 <tr><td>CO₂</td><td>kwasowy</td><td>częściowo (⇌)</td><td>CO₂ + H₂O ⇌ H₂CO₃</td></tr>
-<tr><td>SiO₂</td><td>kwasowy</td><td><strong>nie</strong></td><td>praktycznie nie reaguje z wodą; z mocnymi zasadami tak (sieć; z mocną zasadą (Δ))</td></tr>
+<tr><td>SiO₂</td><td>kwasowy</td><td><strong>nie</strong></td><td>praktycznie nie reaguje z wodą; z gorącymi, stężonymi mocnymi zasadami reaguje (tworzy krzemiany)</td></tr>
 <tr class="ok-row sol-good"><td>Cl₂O₇, Mn₂O₇, CrO₃</td><td>kwasowy</td><td><strong>tak</strong></td><td>metal na wysokim stopniu utlenienia (Mn, Cr) — mimo to tlenek kwasowy</td></tr>
 <tr class="error-row"><td>CO, NO, N₂O</td><td>obojętny (szkolnie)</td><td>nie</td><td>brak typowej reakcji kwas–zasada w modelu szkolnym; nie oznacza to chemicznej bierności</td></tr>
 </tbody>
@@ -405,7 +426,7 @@ Tlenki metali są w warunkach pokojowych **ciałami stałymi o wysokich temperat
 
 <div class="ox-tile" data-ox="P4O10" data-ox-col="#f8fafc"><span class="ox-sw" style="background:#f8fafc"></span><b>P₄O₁₀</b><small>biały · kwasowy</small></div>
 
-<div class="ox-tile" data-ox="SO3" data-ox-col="#f8fafc"><span class="ox-sw" style="background:#f8fafc"></span><b>SO₃</b><small>biały (ciało stałe) / bezbarwna ciecz · kwasowy</small></div>
+<div class="ox-tile" data-ox="SO3" data-ox-col="#f8fafc"><span class="ox-sw" style="background:#f8fafc"></span><b>SO₃</b><small>bezbarwna ciecz (t.t. ok. 17 °C; poniżej — ciało stałe) · kwasowy</small></div>
 :::
 
 > Kolor próbki ≈ barwa substancji (poglądowo), z CHE.DATA.OXIDES — ten sam rekord czytają Atlas i modele. Rdza nie jest czystym Fe₂O₃ — to mieszanina uwodnionych tlenków i wodorotlenków żelaza (przybliżenie Fe₂O₃·nH₂O).
@@ -414,6 +435,12 @@ Tlenki metali są w warunkach pokojowych **ciałami stałymi o wysokich temperat
 > Znajomość kolorów pomaga rozpoznawać tlenki w doświadczeniach i identyfikować osady.
 
 ## 9 | Otrzymywanie tlenków [[basic:E8]] {#otrzymywanie}
+
+::: karta understand | W skrócie: skąd biorą się tlenki?
+Tlenek powstaje na dwa sposoby: gdy pierwiastek **spala się w tlenie** (2 Mg + O₂ → 2 MgO), albo gdy **rozkłada się związek** zawierający tlen (CaCO₃ →(Δ) CaO + CO₂↑). Obie drogi mają wspólny rdzeń: tlen wchodzi do związku albo z niego wychodzi.
+:::
+
+
 
 ### 9.1 Najczęstsza metoda E8
 
@@ -919,7 +946,7 @@ Tlen w H₂O ma 2 wiązania i **2 wolne pary**. Wolne pary odpychają się silni
 
 W CO₂ węgiel nie ma wolnych par elektronowych, więc odpychanie jest symetryczne → kąt 180°. W SO₂ siarka ma 2 wiązania i 1 wolną parę (AX₂E) → cząsteczka kątowa (~119°).
 
-> Most do L013 (VSEPR pełne, hybrydyzacja sp/sp²/sp³).
+> Most do dalszej budowy cząsteczek (VSEPR pełne, hybrydyzacja sp/sp²/sp³).
 :::
 
 > **Ograniczenie:** VSEPR opisuje geometrię cząsteczek / lokalnych układów elektronowych. Nie jest modelem całej sieci krystalicznej Na₂O, CaO ani SiO₂. Dla NO₂, który ma niesparowany elektron, standardowy model zamkniętopowłokowy jest tylko przybliżeniem.
@@ -941,7 +968,7 @@ W CO₂ węgiel nie ma wolnych par elektronowych, więc odpychanie jest symetryc
 ::: karta understand | Zadanie z modelem 3D
 W modelu „Model 3D cząsteczek” (przycisk wyżej w tej sekcji) obejrzyj CO₂, H₂O, SO₂ i CH₄ (tetraedr) <span>(CO₂ liniowa, H₂O kątowa, SO₂ kątowa).</span>
 
-\<b>Pytanie:</b> <span>Dlaczego H₂O i SO₂ są kątowe, a CO₂ liniowa?</span>
+<b>Pytanie:</b> <span>Dlaczego H₂O i SO₂ są kątowe, a CO₂ liniowa?</span>
 
 Most: kształty H₂O wrócą przy wodorotlenkach — N02 VSEPR.
 
@@ -949,6 +976,12 @@ Most: kształty H₂O wrócą przy wodorotlenkach — N02 VSEPR.
 :::
 
 ## 19 | Tlenki w reakcjach redoks: redukcja (metalurgia), utlenianie, rozkład [[extra:AMBITNE]] {#redukcja}
+
+::: karta understand | W skrócie: redoks w tlenkach
+Na jednym tlenku najłatwiej zobaczyć redoks. W Fe₂O₃ + 3 CO → 2 Fe + 3 CO₂ żelazo traci tlen (Fe: +III → 0, redukcja), a węgiel go zyskuje (C: +II → +IV, utlenianie). Zasada: utlenianie to wzrost stopnia utlenienia, redukcja to spadek. Oba procesy zawsze zachodzą razem.
+:::
+
+
 
 ::: karta understand | Pojęcia
 **Redukcja tlenku** = odebranie mu tlenu; stopień utlenienia metalu maleje (np. Cu: +II → 0). Substancja odbierająca tlen to **reduktor** (H₂, C, CO, aktywny metal — np. Al); sama ulega utlenieniu. **Utlenianie** = przyłączenie tlenu lub wzrost stopnia utlenienia.
@@ -1001,7 +1034,7 @@ $$ Fe₂O₃ + 3 C → 2 Fe + 3 CO <span class="mini-note">(uproszczenie; w wiel
 
 **SO₂ może być utleniaczem:** SO₂ + 2 H₂S → 3 S + 2 H₂O (S: +IV → 0 i −II → 0).
 
-> Most do X01–X10 (redoks).
+> Most do redoksu i szeregu metali — lekcja X04 oraz [§19](#redukcja).
 :::
 
 ### Termiczny rozkład tlenków {.merge-h}
@@ -1025,7 +1058,7 @@ Niektóre mało trwałe tlenki rozkładają się pod wpływem temperatury. Nie n
 ::: karta understand | Przypomnienie z R05–R08 (stechiometria)
 **n = m / M** · **V = n × 22,4 dm³** (warunki normalne) · stosunek molowy z współczynników równania.
 
-> Na E8 obliczenia prowadzi się na masach (stosunek mas z mas cząsteczkowych, prawo zachowania masy), bez moli — tak rozwiązany jest przykład 2.
+> Na E8 najczęściej liczy się ze stosunku mas (prawo zachowania masy); przykład 2 robimy bezpośrednio z mas, a przykłady 1, 3, 4 i 5 pokazują to samo przez mole.
 :::
 
 ::: karta -
@@ -1254,8 +1287,8 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 <tr class="error-row"><td class="col-blad" data-label="Błąd">CO₂ + NaOH zawsze → Na₂CO₃</td><td class="col-ok" data-label="Poprawnie">przy nadmiarze CO₂ → NaHCO₃</td><td data-label="Dlaczego">Produkt zależy od stosunku molowego substratów.</td></tr>
 <tr class="error-row"><td class="col-blad" data-label="Błąd">P₂O₅ i P₄O₁₀ to różne substancje</td><td class="col-ok" data-label="Poprawnie">ta sama substancja</td><td data-label="Dlaczego">Wzór empiryczny vs wzór cząsteczkowy.</td></tr>
 <tr class="error-row"><td class="col-blad" data-label="Błąd">Obserwacja: „powstał CaCO₃”</td><td class="col-ok" data-label="Poprawnie">Obserwacja: woda wapienna mętnieje</td><td data-label="Dlaczego">Nazwa produktu to wniosek, nie obserwacja.</td></tr>
-<tr class="error-row"><td class="col-blad" data-label="Błąd">„Każdy tlenek zasadowy daje z wodą zasadę.”</td><td class="col-ok" data-label="Poprawnie">Tylko tlenki metali aktywnych (Na₂O, K₂O, CaO, BaO); CuO, Fe₂O₃ z wodą nie reagują, choć są zasadowe.</td><td data-label="Dlaczego">Charakter ≠ reakcja z wodą.</td><td>—</td></tr>
-<tr class="error-row"><td class="col-blad" data-label="Błąd">„Tlenek obojętny w ogóle nie reaguje.”</td><td class="col-ok" data-label="Poprawnie">CO i NO nie wykazują charakteru kwasowego ani zasadowego, ale reagują (CO się pali, NO utlenia się do NO₂).</td><td data-label="Dlaczego">„Obojętny” dotyczy kwasowości/zasadowości, nie reaktywności.</td><td>—</td></tr>
+<tr class="error-row"><td class="col-blad" data-label="Błąd">„Każdy tlenek zasadowy daje z wodą zasadę.”</td><td class="col-ok" data-label="Poprawnie">Tylko tlenki metali aktywnych (Na₂O, K₂O, CaO, BaO); CuO, Fe₂O₃ z wodą nie reagują, choć są zasadowe.</td><td data-label="Dlaczego">Charakter ≠ reakcja z wodą.</td></tr>
+<tr class="error-row"><td class="col-blad" data-label="Błąd">„Tlenek obojętny w ogóle nie reaguje.”</td><td class="col-ok" data-label="Poprawnie">CO i NO nie wykazują charakteru kwasowego ani zasadowego, ale reagują (CO się pali, NO utlenia się do NO₂).</td><td data-label="Dlaczego">„Obojętny” dotyczy kwasowości/zasadowości, nie reaktywności.</td></tr>
 </tbody>
 </table>
 :::
@@ -1684,7 +1717,7 @@ KO₂ w aparatach tlenowych | **4 KO₂ + 2 CO₂ → 2 K₂CO₃ + 3 O₂** | e
 <a class="mm-box" href="#n01-why-sio2-mgo" style="--mm:#2b5e9c"><b>DLACZEGO?</b><ul><li>jonowy: O²⁻ + H₂O → 2 OH⁻ (zasadowy)</li><li>kowalencyjny + H₂O → kwas tlenowy</li><li>wyższy stopień utlenienia → bardziej kwasowy</li><li>sieć SiO₂, energia sieci MgO</li></ul></a>
 <a class="mm-box" href="#bezpieczenstwo" style="--mm:#b83a45"><b>BHP I ŚRODOWISKO</b><ul><li>CO — czad, czujnik CO</li><li>CaO — żrący, egzotermiczny z wodą</li><li>SO₂, NO₂ → kwaśne deszcze</li><li>CO₂, N₂O → efekt cieplarniany</li></ul></a>
 <a class="mm-box" href="#klinika" style="--mm:#b83a45"><b>PUŁAPKI</b><ul><li>FeO₃ → Fe₂O₃</li><li>MgO + H₂O praktycznie nie</li><li>SO₃ + H₂O → H₂SO₄</li><li>obserwacja ≠ wniosek</li><li>OF₂ ≠ tlenek · H₂O₂ tlen na −I</li></ul></a>
-<a class="mm-box" href="#dod-h" style="--mm:#6b3fa0"><b>MOSTY</b><ul><li>F01–F09 — W–K–S–K</li><li>N02 — wodorotlenki</li><li>N03 — kwasy</li><li>N04 — sole</li><li>R05–R08 — stechiometria · X01–X10 — redoks</li></ul></a>
+<a class="mm-box" href="#dod-h" style="--mm:#6b3fa0"><b>MOSTY</b><ul><li>F01–F09 — W–K–S–K</li><li>N02 — wodorotlenki</li><li>N03 — kwasy</li><li>N04 — sole</li><li>R07 — stechiometria z nadmiarem · X04 — redoks i szereg metali</li></ul></a>
 </div><a class="mm-foot" href="#zastosowania" style="text-decoration:none">Zastosowania: CaO, SiO₂, Fe₂O₃, CO₂, TiO₂, ZnO, Al₂O₃</a></div>
 :::
 
@@ -1864,6 +1897,13 @@ Nanocząstki tlenków (TiO₂, ZnO, SiO₂) — katalizatory, sensory, nośniki 
 :::
 :::
 
+::: karta extra | Ciekawostki o tlenkach
+- **Suchy lód** to zestalony CO₂. Pod ciśnieniem normalnym nie topnieje, tylko sublimuje w około −78 °C.
+- **Ozon** (O₃) nie jest tlenkiem, tylko odmianą pierwiastka tlenu (alotropem): składa się wyłącznie z atomów O. W stratosferze chroni przed promieniowaniem UV.
+- **Dwutlenek tytanu** (TiO₂) to jeden z najczęściej stosowanych białych pigmentów: jest w farbach, plastikach i kremach z filtrem UV.
+- **Tlen** stanowi około 46% masy skorupy ziemskiej, głównie w tlenkach i krzemianach — więcej niż jakikolwiek inny pierwiastek.
+:::
+
 ## E | Dodatek E — mosty do kolejnych lekcji {#dod-h}
 
 ::: karta understand
@@ -1887,17 +1927,17 @@ Nanocząstki tlenków (TiO₂, ZnO, SiO₂) — katalizatory, sensory, nośniki 
 - Tlenek + zasada → sól + woda.
 - Tlenek zasadowy + tlenek kwasowy → sól.
 
-### R05–R08 — stechiometria
+### R07 — stechiometria z nadmiarem
 
 - Obliczenia z równań reakcji tlenków ([§20](#stechio)).
 
-### X01–X10 — redoks
+### X04 — redoks i szereg aktywności metali
 
 - Utlenianie tlenków (2 SO₂ + O₂ → 2 SO₃).
 - Redukcja tlenków (CuO + H₂ → Cu + H₂O).
 - Stopnie utlenienia w tlenkach ([§5](#builder)); redoks z udziałem tlenków ([§19](#redukcja)).
 
-### L013 — zaawansowana
+### Dalsza budowa cząsteczek
 
 - VSEPR pełne, hybrydyzacja sp/sp²/sp³.
 
@@ -1913,6 +1953,12 @@ Nanocząstki tlenków (TiO₂, ZnO, SiO₂) — katalizatory, sensory, nośniki 
 > Stare widgety wbudowane w HTML (Detektor, Konstruktor, VSEPR, mini-układ, symulatory, galeria, kalkulatory) zastąpiono modelami silnika — jedno źródło danych dla lekcji, Atlasu i katalogu wizualizacji.
 
 ## ✓ | Audyt jakości [[exam:KONTROLA]] {#audyt}
+
+::: karta new | AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przegląd wewnętrzny, pełny tekst lekcji)
+**Poprawki:** dodano wykład „od zera” (§3a), mini-wykłady „W skrócie” (§9, §19) i karty ciekawostek (przed Dodatkiem E); usunięto harmonogram powtórek (dziś → jutro → za 3 dni) — zastąpiono zapisem „we własnym tempie”; SO₃ — stan skupienia zgodnie z t.t. ok. 17 °C; SiO₂ — reakcja z gorącymi mocnymi zasadami zamiast niejasnego zapisu; naprawiono zepsuty znacznik `\<b>` w §18; dwa wiersze klinik miały nadmiarową komórkę; §20 — wyjaśniono, kiedy liczymy z mas, a kiedy z moli; odwołania do lekcji nieistniejących w katalogu (R05–R08, X01–X10, L013) zastąpiono istniejącymi (R07, X04) lub opisem; uzupełniono `opis:` i `stan:` we frontmatterze; ujednolicono plakietkę `extra:AMBITNE`; w CSS poprawiono zbłąkany nawias i skrót `font:`.
+
+**Nieprzyjęte:** brak uwag odrzuconych. Zewnętrzny W1 (Perplexity) do wykonania osobno — lekcja nie ma oznaczenia „W1 FULL”.
+:::
 
 ::: karta new | v6.0 CHE (2026-10) — integracja z silnikiem
 - Widgety → modele silnika (tabela powyżej); galeria barw z CHE.DATA.OXIDES (audyt LES-N01).
@@ -2067,7 +2113,7 @@ Nanocząstki tlenków (TiO₂, ZnO, SiO₂) — katalizatory, sensory, nośniki 
 button:focus-visible,a:focus-visible,.cation-btn:focus-visible,.bld-pool button:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
 .stage-box{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:14px;min-height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;}
 .char-table td:first-child{font-family:'JetBrains Mono',monospace;font-weight:800;color:var(--accent-dark);}
-} .print-card{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:18px;margin:14px 0;}
+.print-card{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:18px;margin:14px 0;}
 .print-card h4{margin:0 0 10px;color:var(--accent);}
 .print-card .pc-grid{display:grid;grid-template-columns:1fr;gap:10px;}
 @media(min-width:600px){.print-card .pc-grid{grid-template-columns:1fr 1fr;}}
@@ -2098,7 +2144,7 @@ details.answer.interleaving summary{cursor:pointer;font-weight:700;color:var(--a
 .merge-h{margin:18px 0 8px}
 .ox-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:8px 0}
 .ox-tile{display:flex;flex-direction:column;gap:2px;padding:8px 10px;border:1px solid var(--border,#e5e9ee);border-radius:10px;background:var(--surface,#fff)}
-.ox-tile b{font:800 15px/1.2 inherit}
+.ox-tile b{font-weight:800;font-size:15px;line-height:1.2}
 .ox-tile small{color:var(--text-soft,#4a5568);font-size:12px}
 .ox-sw{display:block;height:22px;border-radius:6px;border:1px solid rgba(0,0,0,.15);margin-bottom:4px}
 :::
