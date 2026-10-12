@@ -79,3 +79,36 @@ Ten plik czytam przed każdą nową lekcją i przed każdą przebudową. Zasady 
 - [ ] Liczby niepewne oznaczone „orientacyjnie” i wpisane do weryfikacji.
 - [ ] Log usunięć zapisany.
 - [ ] Build OK, wykłady 0 braków, test OK, commit i push wykonane.
+
+## 9. Reguły z przeglądów zewnętrznych (uwzględnione w kolejnych lekcjach)
+
+Źródło: przegląd lekcji REV05 przez zewnętrzny model. Przyjmuję wybrane uwagi zgodne z naszymi ustaleniami, nie całość.
+
+**Definicje i modele:**
+- Wartościowość zawsze „względem wybranego pierwiastka” (wodór lub tlen). Definicja z jednostkami wartościowości, nie samo „liczba wiązań”.
+- Nie tłumaczę wartościowości mechanizmem „oddaje / przyjmuje N elektronów” dla wartości większych niż I. Pokazuję przykłady (np. N w NH₃ = III względem H, N w N₂O₅ = V względem O).
+- Wartościowość ≠ ładunek ≠ stopień utlenienia. Bilans ładunków jest sprawdzeniem tylko dla prostych związków jonowych, z wyraźnym zastrzeżeniem.
+- Wiązanie jonowe: opisuję jony (kationy, aniony) i ich przyciąganie; „przeniesienie elektronów” to model szkolny; „metal + niemetal” to przybliżenie oznaczone jako uproszczenie.
+
+**Schematy i przykłady:**
+- Schemat reakcji (np. AB + C → AC + B) pokazuje typ, nie gwarancję zajścia reakcji.
+- Spalanie w schemacie: całkowite spalanie węglowodorów; przy niedoborze tlenu inne produkty — zaznaczam.
+- Przykłady bez toksycznych substancji tam, gdzie da się inaczej (rtęć → H₂O₂).
+- Nie sugeruję samodzielnych doświadczeń z kwasami poza nadzorem i zasadami pracowni.
+- Nietrwałe związki („SO”) nazywam „nietrwałe w zwykłych warunkach”, nie „nie istnieją”. Wyjątki i mieszane tlenki (np. Fe₃O₄) są spójne z ciekawostkami.
+- Zadanie niejednoznaczne → przeformułować albo przenieść do warstwy lo z wiarygodnym kontekstem.
+
+**Zakres podstawy — sprawdzam w §4 przy każdym bloku fundamentów:**
+- zapis H, H₂, 2H, 2H₂ (co oznacza indeks i współczynnik);
+- zapis A i Z przy symbolu (np. ³⁵Cl);
+- liczba elektronów walencyjnych oddzielona od wartościowości;
+- jony Na⁺, Mg²⁺, Al³⁺, Cl⁻, O²⁻ i ich elektrony;
+- wzory strukturalne prostych cząsteczek (H₂, Cl₂, H₂O, CO₂, CH₄);
+- ustalanie wartościowości z podanego wzoru (nie tylko budowanie wzoru);
+- sprawdzanie toku rozumowania, nie tylko wyniku.
+
+**Nazewnictwo:** lekcja fundamentów to „wybrane fundamenty” w jednym cyklu, nie „pełna powtórka” — opis zakresu w `lead` i `uwaga`.
+
+**Rejestr:** przy przeglądzie zewnętrznym w „Pochodzeniu” tabela: przyjęte / nieprzyjęte z powodem.
+
+**Poza treścią lekcji** (kontrast, dostępność, zwijanie sekcji, podział na moduły): decyzje szablonu, nie lekcji — sprawdzam w wersji lekkiej (szablon `lekcja_html.py`).

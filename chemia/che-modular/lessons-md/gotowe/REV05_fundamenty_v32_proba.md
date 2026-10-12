@@ -13,13 +13,13 @@ stopka: **CHEMIA REV05 v0.1 (próba v3.2)** · Fundamenty na start klasy 8 · 20
 stan: PRÓBNA — v3.2, Claude Haiku 5.5, 2026-10-12; przebieg „uczniem” i „księgowym” zrobiony; benchmark z pamięci (tryb B) — do potwierdzenia w W1; W1 FULL do zrobienia
 ---
 
-Ta lekcja składa cztery podstawy chemii w jedną całość: atom, wartościowość, wzór i równanie. Po jej przejściu policzysz liczbę protonów, neutronów i elektronów, ułożysz wzór sumaryczny z wartościowości, nazwiesz związek, rozpoznasz wiązanie i zbilansujesz prosty zapis reakcji. Na końcu wrócimy do pytania przewodniego.
+Ta lekcja składa cztery podstawy chemii w jedną całość: atom, wartościowość, wzór i równanie. To jedna lekcja z cyklu fundamentów, nie kompletna powtórka chemii na start klasy 8. Po jej przejściu policzysz liczbę protonów, neutronów i elektronów, ułożysz wzór sumaryczny z wartościowości, nazwiesz związek, rozpoznasz wiązanie i zbilansujesz prosty zapis reakcji. Na końcu wrócimy do pytania przewodniego.
 
 ::: minimum | Muszę umieć — 8 punktów
 1. **Liczba atomowa Z** to liczba protonów w jądrze; w atomie obojętnym jest też równa liczbie elektronów.
 2. **Liczba masowa A** to suma protonów i neutronów. Liczbę neutronów liczysz ze wzoru n = A − Z.
 3. **Układ okresowy:** okres to wiersz (liczba powłok), grupa to kolumna (podobne własności; dla grup głównych podobna wartościowość).
-4. **Wartościowość** to liczba wiązań, jaką atom może utworzyć. Dla grup głównych często: grupa 1 → I, grupa 2 → II, grupa 13 → III, grupa 14 → IV.
+4. **Wartościowość** to liczba jednostek wartościowości, które przypisujemy atomowi w związku względem wybranego pierwiastka (najczęściej wodoru albo tlenu); w prostych związkach odpowiada liczbie wiązań. Dla grup głównych najczęściej (szkolny skrót, nie prawo): grupa 1 → I, grupa 2 → II, grupa 13 → III, grupa 14 → IV.
 5. **Wzór sumaryczny** układasz, krzyżując wartościowości (algorytm w §4). Indeksu 1 się nie zapisuje.
 6. **Wiązanie:** metal + niemetal → zwykle jonowe; same niemetale → kowalencyjne.
 7. **Równanie** musi być zbilansowane: ta sama liczba atomów każdego pierwiastka po obu stronach. Zmieniasz tylko współczynniki, nigdy indeksów.
@@ -59,7 +59,7 @@ Dlaczego „tlenek żelaza” to za mało, a „tlenek sodu” wystarcza? Odpowi
 | C | IV | grupa 14 |
 | N, P | III / V | zależnie od partnera |
 | S | II / IV / VI | zależnie od partnera |
-| Cl | I | wobec H i metali |
+| Cl | I | względem wodoru; w chlorkach metali |
 | Fe | II / III | **zawsze podawać w nazwie** |
 | Cu | I / II | **zawsze podawać w nazwie** |
 
@@ -149,6 +149,23 @@ Liczba atomowa Z mówi, który to pierwiastek. Liczba masowa A mówi, jak „ci�
 Ile neutronów ma atom ⁴⁰Ar? (Odpowiedź: Z = 18, n⁰ = 40 − 18 = 22.)
 :::
 
+## 2a | Co oznacza zapis? {#zapis}
+
+Symbol pierwiastka oznacza jeden atom. Indeks dolny liczy atomy w cząsteczce, a współczynnik przed wzorem liczy cząsteczki.
+
+- **H** — jeden atom wodoru.
+- **H₂** — jedna cząsteczka wodoru: 2 atomy H.
+- **2 H** — dwa oddzielne atomy wodoru.
+- **2 H₂** — dwie cząsteczki wodoru: łącznie 4 atomy H.
+
+**Elektrony walencyjne** to elektrony na zewnętrznej powłoce. Dla grup 1–2 i 13–18 ich liczba to numer grupy (dla grupy 18 — 8, z wyjątkiem helu, który ma 2). To nie to samo co wartościowość, ale często ją wyjaśnia.
+
+**Jony** powstają, gdy atom oddaje lub przyjmuje elektrony: Na⁺ (kation, oddał 1 e⁻), Mg²⁺ (oddał 2), Al³⁺ (oddał 3), Cl⁻ (anion, przyjął 1), O²⁻ (przyjął 2).
+
+::: karta understand | Sprawdź się
+Ile elektronów ma jon O²⁻? (Odpowiedź: 10 — atom tlenu ma 8, przyjął 2.)
+:::
+
 ## 3 | Układ okresowy — mapa, nie spis {#uklad}
 
 - **Okresy** (wiersze) — liczba powłok elektronowych. Pierwiastki okresu 3 mają trzy powłoki.
@@ -166,7 +183,7 @@ Ile neutronów ma atom ⁴⁰Ar? (Odpowiedź: Z = 18, n⁰ = 40 − 18 = 22.)
 | 18 | He, Ne, Ar | 0 |
 
 ::: karta understand | Mini-wykład: dlaczego grupa 15 ma dwie wartościowości
-Azot i fosfor mają po pięć elektronów na zewnętrznej powłoce. Mogą „uzupełnić” ośmiu do trzech elektronów (III) albo oddać pięć (V) — zależnie od partnera reakcji. Dlatego przy N i P zawsze sprawdzaj, z czym się łączą. Ten sam mechanizm stoi za siarką (II, IV, VI).
+Azot i fosfor mają po pięć elektronów na zewnętrznej powłoce, a w związkach pokazują różne wartościowości zależnie od partnera: w NH₃ azot ma III (względem wodoru), w N₂O₅ ma V (względem tlenu). Dlatego przy N i P zawsze sprawdzaj, względem czego ustalasz wartościowość. Ten sam schemat dotyczy siarki (II, IV, VI).
 :::
 
 ::: karta understand | Sprawdź się
@@ -175,7 +192,9 @@ W której grupie leży pierwiastek z 17 elektronami, i jaka jest jego typowa war
 
 ## 4 | Wartościowość i wzory sumaryczne {#wartosciowosc}
 
-**Wartościowość** to liczba wiązań, jaką atom może utworzyć z innymi atomami. Zapisujemy ją cyframi rzymskimi.
+**Wartościowość** określa, ile jednostek wartościowości atom przypisujemy w związku względem wybranego pierwiastka — najczęściej wodoru albo tlenu. W prostych związkach to odpowiada liczbie wiązań. Zapisujemy ją cyframi rzymskimi.
+
+Uwaga: wartościowość to nie ładunek jonu. Bilans ładunków („2 · (+I) + 1 · (−II) = 0”) to dodatkowe sprawdzenie dla prostych związków jonowych; pojęcie stopnia utlenienia pojawi się w warstwie lo.
 
 Skąd ją wziąć?
 1. Z układu okresowego (grupy główne).
@@ -220,11 +239,24 @@ Jaki jest wzór tlenku wapnia? (Odpowiedź: Ca II, O II — indeksy po skróceni
 | Cecha | Jonowe | Kowalencyjne |
 |---|---|---|
 | Między | metal + niemetal | niemetal + niemetal |
-| Mechanizm | przeniesienie elektronów | współdzielenie pary elektronów |
+| Mechanizm | model szkolny: powstają jony, które się przyciągają | współdzielenie pary elektronów |
 | Przykłady | NaCl, MgO, CaF₂ | H₂O, CO₂, Cl₂, CH₄, NH₃ |
+
+W typowym związku jonowym powstają kationy i aniony, które przyciągają się elektrostatycznie. „Przeniesienie elektronów” to szkolny model wyjaśniający ich powstanie. O rodzaju wiązania wnioskujemy z elektroujemności (warstwa lo), a reguła „metal + niemetal” jest tylko jej przybliżeniem.
 
 ::: karta warning | Pułapka: „metal + niemetal = zawsze jonowe”
 To reguła szkolna, czyli uproszczenie. Kilka związków metali z niemetalami ma wyraźny udział wiązania kowalencyjnego (przykład w warstwie lo). Na poziomie klasy 8 trzymaj się reguły, ale pamiętaj, że to model, a nie prawo.
+:::
+
+::: karta understand | Wzory strukturalne (zapis z kreskami)
+Kreska między symbolami oznacza wspólną parę elektronów, czyli wiązanie kowalencyjne. Przykłady:
+- H₂ — H–H;
+- Cl₂ — Cl–Cl;
+- H₂O — H–O–H;
+- CO₂ — O=C=O (podwójne kreski to wiązanie podwójne);
+- CH₄ — atom C w środku, cztery kreski do atomów H.
+
+**Pułapka:** wzór sumaryczny podaje tylko liczbę atomów, a wzór strukturalny pokazuje, który atom z którym się wiąże.
 :::
 
 ## 6 | Równania reakcji — bilans {#rownania}
@@ -247,9 +279,11 @@ Równanie zapisujemy od substratów do produktów: **substraty → produkty**. B
 | Typ | Schemat | Przykład |
 |---|---|---|
 | synteza | A + B → AB | 2 H₂ + O₂ → 2 H₂O |
-| analiza (rozkład) | AB → A + B | 2 HgO → 2 Hg + O₂ |
+| analiza (rozkład) | AB → A + B | 2 H₂O₂ → 2 H₂O + O₂ |
 | wymiana | AB + C → AC + B | Zn + 2 HCl → ZnCl₂ + H₂ |
-| spalanie | paliwo + O₂ → CO₂ + H₂O | CH₄ + 2 O₂ → CO₂ + 2 H₂O |
+| spalanie (całkowite węglowodoru) | węglowodór + O₂ → CO₂ + H₂O | CH₄ + 2 O₂ → CO₂ + 2 H₂O |
+
+Schemat pokazuje typ reakcji, a nie gwarancję, że reakcja zajdzie. Spalanie w schemacie dotyczy całkowitego spalania węglowodorów; przy niedoborze tlenu powstają inne produkty (np. tlenek węgla(II)).
 
 ::: karta understand | Mini-quiz zamykający część teoretyczną
 ? Wzór CO₂ powstaje z wartościowości C IV i O II. Jak krzyżujemy?
@@ -274,7 +308,7 @@ Czy można zmienić indeks w H₂O, żeby zbilansować równanie? (Nie; zmienias
 
 ::: karta exam | Znajdź błąd (3 zapisy)
 a) „Związek Fe₂O₃ nazywam tlenkiem żelaza(II).”
-b) „Reakcja 2 HgO → 2 Hg + O₂ to synteza.”
+b) „Reakcja 2 H₂O₂ → 2 H₂O + O₂ to synteza.”
 c) „Żeby zbilansować równanie, zmieniam indeks w H₂O na H₂O₂.”
 ::: odp | Pokaż klucz
 a) Fe₂O₃ to tlenek żelaza(III): Fe musi mieć III, bo 2 · (+III) + 3 · (−II) = 0.
@@ -325,6 +359,13 @@ CaO; AlCl₃; Na₂S; Fe₂O₃. (1 pkt za pierwsze dwa, 1 pkt za pozostałe dwa
 Jakie wiązanie występuje w NaCl, Cl₂, H₂O i MgO? Podaj każdy rodzaj.
 ::: odp | Pokaż klucz
 NaCl — jonowe; Cl₂ — kowalencyjne; H₂O — kowalencyjne; MgO — jonowe. (1 pkt za dwa poprawne, 1 pkt za pozostałe dwa.)
+:::
+:::
+
+::: karta exam | A5 (2 pkt) — rozpoznanie
+Ile elektronów walencyjnych mają Cl, Mg i O? Co oznacza zapis ³⁵Cl?
+::: odp | Pokaż klucz
+Cl — 7; Mg — 2; O — 6. Zapis ³⁵Cl: chlor (Z = 17), liczba masowa A = 35, czyli 35 nukleonów (p⁺ + n⁰). (1 pkt za trzy liczby, 1 pkt za opis zapisu.)
 :::
 :::
 
@@ -391,7 +432,7 @@ Pierwiastek X ma liczbę atomową Z = 16. Podaj jego symbol, okres i grupę, wz�
 ::: odp | Pokaż klucz
 - Podpowiedź 1: jaka jest konfiguracja powłok atomu o Z = 16? (2, 8, 6.)
 - Podpowiedź 2: ile elektronów na zewnętrznej powłoce — tyle, ile wynosi grupa główna minus 10.
-- Rozwiązanie: X = S; okres 3; grupa 16 (VI). Wodorek: H₂S. Tlenki: SO₂ (IV) i SO₃ (VI). Tlenek SO (II) jest nietrwały, więc nie występuje jako typowy związek. (1 pkt za symbol, okres i grupę; 1 pkt za H₂S; 2 pkt za dwa tlenki z uzasadnieniem.)
+- Rozwiązanie: X = S; okres 3; grupa 16 (VI). Wodorek: H₂S. Tlenki: SO₂ (IV) i SO₃ (VI). SO jest nietrwały w zwykłych warunkach, dlatego w szkolnych zestawieniach tlenków siarki pojawiają się SO₂ i SO₃. (1 pkt za symbol, okres i grupę; 1 pkt za H₂S; 2 pkt za dwa tlenki z uzasadnieniem.)
 - **Problem otwarty:** czy pierwiastek o innej wartościowości mógłby tworzyć taki tlenek w warunkach laboratoryjnych? Napisz w 2–3 zdaniach, na czym opierasz odpowiedź.
 :::
 :::
@@ -430,7 +471,7 @@ Liczba masowa A | p⁺ + n⁰ | basic:atom
 Izotop | ten sam pierwiastek, różna liczba neutronów | basic:atom
 Okres | wiersz układu okresowego; liczba powłok | basic:uklad
 Grupa | kolumna układu okresowego; podobne własności | basic:uklad
-Wartościowość | liczba wiązań, jaką atom może utworzyć | basic:wartosciowosc
+Wartościowość | jednostki przypisane atomowi względem wybranego pierwiastka (w prostych związkach ~ liczba wiązań) | basic:wartosciowosc
 Krzyżowanie wartościowości | wartościowości stają się indeksami drugiego pierwiastka | basic:wzory
 Wiązanie jonowe | metal + niemetal, przeniesienie elektronów | basic:wiazania
 Bilans równania | ta sama liczba atomów każdego pierwiastka po obu stronach | basic:rownania
@@ -451,7 +492,7 @@ Liczba masowa A :: suma protonów i neutronów w jądrze
 Izotop :: odmiana pierwiastka o tej samej liczbie protonów i różnej liczbie neutronów
 Okres :: wiersz układu okresowego; liczba powłok elektronowych
 Grupa :: kolumna układu okresowego; pierwiastki o podobnych własnościach
-Wartościowość :: liczba wiązań, jaką atom może utworzyć
+Wartościowość :: liczba jednostek wartościowości przypisana atomowi względem wybranego pierwiastka
 Wzór sumaryczny :: zapis składu związku z indeksami liczby atomów
 Wiązanie jonowe :: wiązanie powstające przez przeniesienie elektronów z metalu na niemetal
 Wiązanie kowalencyjne :: wiązanie powstające przez współdzielenie pary elektronów
@@ -536,7 +577,7 @@ Węgiel-14 powstaje w atmosferze i powoli się rozpada (okres połowicznego rozp
 :::
 
 ::: karta extra | Magnetyt: tlenek z dwiema wartościowościami naraz
-Magnetyt ma wzór Fe₃O₄. Można go zapisać jako FeO · Fe₂O₃, więc zawiera żelazo na II i III stopniu jednocześnie. To dobry przykład, dlaczego jeden „tlenek żelaza” bez cyfry jest niejednoznaczny.
+W szkolnych przykładach wyróżnia się FeO i Fe₂O₃; magnetyt Fe₃O₄ to mieszany tlenek, w którym żelazo ma oba stopnie. Magnetyt ma wzór Fe₃O₄. Można go zapisać jako FeO · Fe₂O₃, więc zawiera żelazo na II i III stopniu jednocześnie. To dobry przykład, dlaczego jeden „tlenek żelaza” bez cyfry jest niejednoznaczny.
 :::
 
 ## 14 | Sposoby zapamiętania {#mnemotechniki}
@@ -563,6 +604,7 @@ Magnetyt ma wzór Fe₃O₄. Można go zapisać jako FeO · Fe₂O₃, więc zaw
 - [ ] nazywam związek z cyfrą rzymską tam, gdzie trzeba
 - [ ] rozpoznaję wiązanie jonowe i kowalencyjne
 - [ ] bilansuję proste równanie i nazywam jego typ
+- [ ] odczytuję zapis H, H₂, 2H, 2H₂ i jony Na⁺, Mg²⁺, Al³⁺, Cl⁻, O²⁻
 - [ ] [[lo]] odróżniam wartościowość od stopnia utlenienia na przykładzie H₂O₂
 - [ ] [[olim]] wiem, że istnieją wyjątki od kolejności zapełniania powłok
 - [ ] [[uni]] wyjaśniam, dlaczego wzór NaCl nie opisuje cząsteczki
@@ -581,5 +623,7 @@ Magnetyt ma wzór Fe₃O₄. Można go zapisać jako FeO · Fe₂O₃, więc zaw
   - Inspiracje: CK-12 — wzorzec parafrazy własnymi słowami → osadzony w fiszce własnej w checkliście.
   - Inspiracje: ZPE / podstawa programowa — kontrola zakresu E8 → zakres basic.
   - Nie użyto: ChemCollective (typ laboratorium — nie dotyczy tego typu lekcji).
+- **Przegląd zewnętrzny (Perplexity), wybór:** przyjęte — definicja wartościowości względem wodoru/tlenu; usunięty mechanizm „uzupełnić ośmiu / oddać pięć” (przykłady NH₃ i N₂O₅); model jonowy z kationami i anionami; zamiana HgO na H₂O₂ (toksyczność rtęci); spalanie jako całkowite węglowodorów i zastrzeżenie o schemacie; zmiana zadania C3 o SO; magnetyt jako mieszany tlenek; sekcja „Co oznacza zapis?” i jony oraz wzory strukturalne z podstawy; dodatkowe zadanie A5.
+  - Nieprzyjęte: podział na trzy osobne lekcje (zostaje jedna lekcja z warstwami; podział rozważymy przy cyklu); domyślne zwijanie „Dalej” i zmiany kontrastu/dostępności (to decyzje szablonu, nie treści lekcji); propozycja, by przy kluczach pokazywać rozwiązanie zadania Al + HCl — klucz B3 już je podaje.
 - **Do W1:** wartości Paulinga (orientacyjne), okres połowicznego rozpadu ¹⁴C, wyjątki Cr i Cu, wyjaśnienie stabilności połówkowo zapełnionej podpowłoki d, stopnie utlenienia w H₂O₂ i SO₃, poprawność benchmarku (tryb B).
 - **Do przebiegu „uczniem”:** przy pierwszym użyciu „elektroujemność”, „sieć jonowa”, „wiązanie spolaryzowane” — wyjaśnione w warstwach lo/uni; w §0 i §5 tylko wzmianka. Do potwierdzenia.
