@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chemia — test probny, olimpiada klasa 8</title>
+<style>
+:root{--bg:#f7f7f4;--card:#ffffff;--ink:#1d1f23;--muted:#5d6370;--ok:#1b7f4b;--bad:#b3261e;--accent:#2a5bd7;--line:#dfe1e6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15171b;--card:#1e2127;--ink:#eceef2;--muted:#aab0bb;--ok:#5fd39a;--bad:#ff8a80;--accent:#8ab4ff;--line:#2e333c}}
+:root[data-theme="dark"]{--bg:#15171b;--card:#1e2127;--ink:#eceef2;--muted:#aab0bb;--ok:#5fd39a;--bad:#ff8a80;--accent:#8ab4ff;--line:#2e333c}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1{font-size:1.5rem;margin:.2em 0}
+.lead{color:var(--muted);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:12px 0}
+.q-num{font-weight:700;color:var(--accent)}
+.opts label{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:8px;margin:6px 0;cursor:pointer}
+.opts input{margin-right:8px}
+button{font:inherit;background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
+button.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.fb{margin-top:10px;font-weight:600}
+.fb.ok{color:var(--ok)} .fb.bad{color:var(--bad)}
+.expl{color:var(--muted);margin-top:6px}
+.wynik{font-size:1.2rem;font-weight:700}
+small{color:var(--muted);font-size:.85em;display:block;margin-top:6px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Test probny — chemia, klasa 8</h1>
+<p class="lead">Dwanaście zadań zamkniętych, jeden poprawny wybór w każdym. Zaznacz odpowiedź i kliknij „Sprawdź”. Na końcu zobaczysz wynik.</p>
+
+<div id="quiz"></div>
+
+<div class="card" id="koniec" hidden>
+  <p class="wynik" id="wynik"></p>
+  <div class="bar"><button id="reset">Zacznij od nowa</button></div>
+</div>
+
+<div class="card">
+  <small>Zadania są własne. Typy zadań (odczyt tabeli rozpuszczalności, stężenie procentowe, szereg aktywności metali, pH, zobojętnianie, węglowodory, estry, próby analityczne) odpowiadają zakresowi arkuszy wojewódzkich z chemii na poziomie klasy 8. Treści oryginalnych arkuszy nie są tu przepisane.</small>
+  <small>▲ podobne do: parafrazy z banku pytań chemii (`chemia/plany/BANK_PYTAN_CHE.md`), sekcje Łódź 2022/23, Kraków 2023/24, Kielce 2021 i 2025 oraz „Przekrój materiałów”, sekcja 10. Rok i etap: nieokreślone. Status źródeł: niepotwierdzony.</small>
+</div>
+</main>
+
+<script>
+const PYTANIA = [
+  {t:"Który węglowodór ulega reakcji addycji bromu (odbarwia wodę bromową)?",
+   o:["metan","etan","eten","propan"], p:2,
+   w:"Eten ma wiązanie podwójne C=C. Wiązania pojedyncze w alkanach nie ulegają addycji.", d:"Węglowodory"},
+  {t:"Roztwór zawiera 15 g soli w 85 g wody. Jakie jest jego stężenie procentowe?",
+   o:["15%","17,6%","85%","8,5%"], p:0,
+   w:"Masa roztworu = 15 g + 85 g = 100 g. Stężenie = 15/100 · 100% = 15%.", d:"Stężenia"},
+  {t:"Rozpuszczalność azotanu(V) potasu w 20 °C wynosi 30 g w 100 g wody. Ile gramów tej soli rozpuści się w 250 g wody w tej samej temperaturze?",
+   o:["30 g","75 g","60 g","12 g"], p:1,
+   w:"Dla 250 g wody: 30 g · 250/100 = 75 g. Roztwór ma być nasycony, więc to maksymalna ilość.", d:"Rozpuszczalność"},
+  {t:"Które metale wypierają wodór z kwasu solnego?",
+   o:["miedź i srebro","magnez i żelazo","złoto i platyna","rtęć i miedź"], p:1,
+   w:"Mg i Fe stoją w szeregu aktywności przed wodorem, więc reagują z HCl z wydzieleniem H₂. Cu, Ag, Au, Pt, Hg stoją za wodorem.", d:"Szereg aktywności"},
+  {t:"Który roztwór ma odczyn kwasowy?",
+   o:["roztwór mydła (pH ok. 10)","woda destylowana","sok z cytryny (pH ok. 2)","roztwór sody (pH ok. 11)"], p:2,
+   w:"pH poniżej 7 oznacza odczyn kwasowy. Sok z cytryny ma pH ok. 2.", d:"pH"},
+  {t:"Ile moli wodorotlenku sodu jest potrzebnych do całkowitego zobojętnienia 0,5 mola kwasu siarkowego(VI)?",
+   o:["0,25 mola","0,5 mola","1 mol","2 mole"], p:2,
+   w:"H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. Na 1 mol kwasu potrzeba 2 mole zasady, więc 0,5 mola kwasu wymaga 1 mola NaOH.", d:"Zobojętnianie"},
+  {t:"Który pierwiastek ma w atomie 7 elektronów walencyjnych i leży w 3. okresie?",
+   o:["sód","fosfor","chlor","argon"], p:2,
+   w:"Chlor (Z = 17): konfiguracja 2, 8, 7. Okres 3, grupa 17.", d:"Układ okresowy"},
+  {t:"Która metoda pozwoli odzyskać wodę ze słonej wody?",
+   o:["filtracja","destylacja","sączenie przez bibułę","zlanie znad osadu"], p:1,
+   w:"Destylacja rozdziela składniki różniące się temperaturą wrzenia. Woda paruje, sól zostaje w kolbie.", d:"Mieszaniny"},
+  {t:"Produktem reakcji alkoholu etylowego z kwasem octowym (w obecności stężonego kwasu) jest:",
+   o:["octan etylu i woda","etan i tlen","kwas mrówkowy","glicerol"], p:0,
+   w:"To estryfikacja: powstaje ester (octan etylu) i woda.", d:"Estry"},
+  {t:"Którą próbą wykryjemy cukry redukujące, np. glukozę?",
+   o:["próbą jodową (na skrobię)","próbą Trommera","próbą biuretową","odczynem Lugola na białko"], p:1,
+   w:"Próba Trommera (podobnie Tollensa) wykrywa cukry redukujące. Jod wykrywa skrobię.", d:"Substancje biologiczne"},
+  {t:"Spalenie 1 mola pewnego alkanu dało 3 mole CO₂. Jaki to alkan?",
+   o:["metan","etan","propan","butan"], p:2,
+   w:"Alkan CₙH₂ₙ₊₂ daje n moli CO₂. Skoro CO₂ jest 3 mole, n = 3, to propan C₃H₈.", d:"Alkany"},
+  {t:"Który pierwiastek tworzy tlenek o odczynie zasadowym?",
+   o:["siarka (w SO₃)","węgiel (w CO₂)","wapń (w CaO)","azot (w NO₂)"], p:2,
+   w:"Tlenki metali (np. CaO) reagują z wodą, dając zasady. Tlenki niemetali (SO₃, CO₂, NO₂) dają kwasy.", d:"Tlenki"},
+  {t:"Dla 1 mola CaCO₃ masa molowa wynosi około 100 g/mol. Ile gramów węglanu wapnia to 0,2 mola?",
+   o:["20 g","50 g","100 g","200 g"], p:0,
+   w:"m = n · M = 0,2 mol · 100 g/mol = 20 g.", d:"Obliczenia"}
+];
+
+const quiz = document.getElementById('quiz');
+let wynik = 0;
+let odp = new Array(PYTANIA.length).fill(null);
+
+function render(){
+  quiz.innerHTML = '';
+  PYTANIA.forEach((q,i)=>{
+    const c = document.createElement('div');
+    c.className = 'card';
+    c.innerHTML = `<div class="q-num">Zadanie ${i+1} · ${q.d}</div><p>${q.t}</p><div class="opts"></div><div class="fb"></div><div class="expl"></div>`;
+    const box = c.querySelector('.opts');
+    q.o.forEach((txt,j)=>{
+      const l = document.createElement('label');
+      l.innerHTML = `<input type="radio" name="q${i}" value="${j}"> ${txt}`;
+      box.appendChild(l);
+    });
+    const b = document.createElement('button');
+    b.textContent = 'Sprawdź';
+    b.className = 'ghost';
+    b.onclick = ()=>sprawdz(i,c);
+    c.appendChild(b);
+    quiz.appendChild(c);
+  });
+  const end = document.createElement('div');
+  end.className='bar';
+  const k = document.createElement('button');
+  k.textContent = 'Zobacz wynik';
+  k.onclick = pokazWynik;
+  end.appendChild(k);
+  quiz.appendChild(end);
+  document.getElementById('koniec').hidden = true;
+}
+
+function sprawdz(i,c){
+  if (odp[i] !== null) return;
+  const zaz = c.querySelector('input:checked');
+  if (!zaz){ c.querySelector('.fb').textContent = 'Zaznacz odpowiedź.'; return; }
+  const v = Number(zaz.value);
+  odp[i] = v;
+  const q = PYTANIA[i];
+  const fb = c.querySelector('.fb');
+  if (v === q.p){ fb.textContent = 'Poprawnie!'; fb.className='fb ok'; wynik++; }
+  else { fb.textContent = 'Niepoprawnie. Poprawna: ' + q.o[q.p]; fb.className='fb bad'; }
+  c.querySelector('.expl').textContent = q.w;
+  c.querySelectorAll('input').forEach(x=>x.disabled=true);
+}
+
+function pokazWynik(){
+  const n = odp.filter(x=>x!==null).length;
+  document.getElementById('wynik').textContent = `Wynik: ${wynik} / ${PYTANIA.length} (sprawdzono ${n} zadań).`;
+  document.getElementById('koniec').hidden = false;
+  document.getElementById('koniec').scrollIntoView({behavior:'smooth'});
+}
+
+document.getElementById('reset').onclick = ()=>{ wynik=0; odp=new Array(PYTANIA.length).fill(null); render(); };
+render();
+</script>
+</body>
+</html>
