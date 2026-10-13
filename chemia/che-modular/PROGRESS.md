@@ -206,3 +206,4 @@
 - 2026-10-13: K02 — ULEPSZONA (Perplexity) wczytana. Przywrócono fiszki (§8a), test (§9a), ćwiczenia A–C (§7a), ciekawostki (§8b), spalanie (§5a) i wykład (§9b, nowe ujęcie). Build OK, limity bez blokad. Grafiki z odpowiedzi (4) jeszcze nie zrobione.
 - 2026-10-13: K03 — ULEPSZONA (Perplexity) wczytana. Poprawiono błąd rachunkowy w bilansie z lodem (20,04 °C, nie 1,86 °C). Przywrócono ściągę, ćwiczenia, fiszki i test. Build OK.
 - 2026-10-13: K04 — ULEPSZONA (Perplexity) wczytana. Przywrócono przypomnienie, jednostki, metody pomiaru, przykłady, ćwiczenia, fiszki, test, mnemotechniki, mosty, ciekawostki i hasła słownika. Build OK.
+- 2026-10-13: K05 — ULEPSZONA (Perplexity) wczytana. Przywrócono przypomnienie, natura reagentów, ćwiczenia, fiszki, ciekawostki, test, mosty; dopisano 3 wiersze kliniki i 3 hasła. Naprawiono link do nieistniejącej sekcji i zdublowane hasło. Build OK.
