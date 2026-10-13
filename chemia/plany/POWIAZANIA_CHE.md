@@ -31,7 +31,7 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - LKO-METALE → LKO-SYM-A2 — szereg, jony i synteza jako materiał symulacji (zasilanie).
 - LKO-KRZYWE → LKO-A1 — te same dane rozpuszczalności w zadaniach symulacji (zasilanie).
 - LKO-Z36 → F04 — konfiguracje do Z=36 jako rozszerzenie modelu powłokowego (pogłębienie).
-- LKO-pułapki → N02 — wapno gaszone i woda wapienna jako zasady i wodorotlenki (pogłębienie).
+- LKO-PUŁAPKI-WAPNO → N02 — wapno gaszone i woda wapienna jako zasady i wodorotlenki (pogłębienie).
 - R08 → LKO-STECH — stechiometria masowa z nadmiarem jako rozszerzenie zadań molowych (EXPAND-masowo).
 - LKO-STECH → LKO-METALE — równania z szeregu i syntez jako materiał do obliczeń masowych (APPLY).
 - LKO-STECH → LKO-SYM-A2 — obliczenia z nadmiarem i zespolenie ze stężeniem % (zasilanie).
@@ -49,3 +49,6 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - LKO-SYM-A2 → LKO-DOSW — zadanie 9: analiza cudzego opisu doświadczenia (APPLY-test)
 - LKO-SYM-A2 → LKO-METALE — zadania 5–6: szereg aktywności i równania jonowe (APPLY-test)
 - LKO-SYM-A2 → LKO-Z36 — zadanie 2: konfiguracje i jony, kumulatywnie z etapem I (APPLY-test)
+- LKO-KRZYWE → LKO-SYM-A2 — zadania 1 i 10: krzywe i S/(100+S) (APPLY-test)
+- LKO-Z36 → LKO-SYM-A2 — zadanie 2: konfiguracje do Z=36 (APPLY-test)
+- F17 → LKO-SYM-A2 — zadanie 3: typy reakcji i dobór współczynników (APPLY-test)
