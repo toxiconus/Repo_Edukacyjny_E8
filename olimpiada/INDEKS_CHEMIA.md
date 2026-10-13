@@ -13,5 +13,7 @@ Stan 2026-10-13. Wszystkie lekcje to **szkic** — audyt W1/W2 jeszcze nie wykon
 
 | 7 | LKO_METALE_szereg_jonowe_otrzymywanie.md (LKO II, rozsz. 2–5) | LKO-METALE | 21 KB | 95 KB | szkic — 2026-10-13, bez audytu W1 |
 
+| 8 | LKO_STECH_masy_stechiometria.md (LKO II, rozsz. 6–7) | LKO-STECH | 18 KB | 90 KB | szkic — 2026-10-13, bez audytu W1 |
+
 Surowe kopie AI: `olimpiada/plany/LKO_2026_27/*_ORYG.md`. Dokładne bajty: `wc -c`.
 Lekcje OLI.CHE (J03, R07, X04) są w `olimpiada/do_uzupelnienia/` (md) i `olimpiada/html/` (html); to osobny nurt, nie LKO.

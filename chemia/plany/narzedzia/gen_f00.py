@@ -75,6 +75,7 @@ for kod,co,st in [
     ("LKO-A1","Zestaw A1 i symulacja etapu I LKO","szkic 2026-10-13, przed przeglądem W1"),
     ("LKO-pułapki","Pułapki: woda wapienna, mleko wapienne, wapno, kreda, soda","szkic 2026-10-13"),
     ("LKO-METALE","Szereg aktywności, równania jonowe, otrzymywanie soli (LKO etap II)","szkic 2026-10-13, bez audytu W1"),
+    ("LKO-STECH","Masy cząsteczkowe i stechiometria z nadmiarem (LKO etap II)","szkic 2026-10-13, bez audytu W1"),
     ("N06","Wodorki: wodór, amoniak, HCl, H₂S (LKO II rozsz. 1)","szkic 2026-10-13, W1 + W2"),
 ]:
     out.append(f"| {kod} | {co} | {st} |")
