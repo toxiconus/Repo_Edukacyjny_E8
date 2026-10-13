@@ -2,6 +2,9 @@
 
 Stan na 2026-10-13. Punkty dopisywane w kolejności zgłaszania; po zrobieniu oznaczać `[x]` z datą i commitem.
 
+- [ ] F04: zbudować model `f04-nuklid-v01` (trening zapisu nuklidu, §3) w silniku — jest w tabeli modeli, brak pliku (`chemia/plany/audyty/GFX_TODO_F04.md`).
+- [ ] F04: grafika „Atom zoom” (skala + konstruktor atomu/jonu + animacja Rutherforda) — opis w GFX_TODO_F04.md.
+
 ## Do zrobienia
 - [ ] Audyt 02 (F02) — ćwiczenia G stoją przed E w `F02_materia_i_substancje.md`; przenumerować etykiety na kolejne litery.
 - [ ] Model GFX: parownica z nalotem dla wody z kranu (obecny `f01Odparowanie` pokazuje roztwór soli). Źródło: `chemia/plany/audyty/GFX_TODO_F02.md`.

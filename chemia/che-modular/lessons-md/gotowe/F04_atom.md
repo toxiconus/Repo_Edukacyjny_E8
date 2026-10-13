@@ -7,22 +7,22 @@ kicker: F04 · FUNDAMENTY · MASTER v1.1
 lead: Pierwsza lekcja fazy B — „z czego to wynika?”. Schodzimy z poziomu substancji do atomu: z jakich cząstek się składa,
 lead: która liczba definiuje pierwiastek i jak z zapisu nuklidu bez zgadywania policzyć protony, neutrony i elektrony — w atomie i w jonie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
-stopka: **CHEMIA F04 v1.0 MASTER** · Atom · 2026
+stan: "W1 (audyt 04) wprowadzony — 2026-10-13"
+stopka: **CHEMIA F04 v1.1 MASTER** · Atom · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 12 punktów
 1. Atom składa się z **jądra** (protony i neutrony) i **elektronów** wokół jądra.
-2. **Proton** p⁺: ładunek +1, masa ok. 1 u; **neutron** n⁰: ładunek 0, masa ok. 1 u; **elektron** e⁻: ładunek −1, masa ok. 1/1836 u.
+2. **Proton** p⁺: ładunek +1, masa ok. 1 u; **neutron** n⁰: ładunek 0, masa ok. 1 u; **elektron** e⁻: ładunek −1, masa ≈ 1/1836 masy protonu (≈ 0,00055 u).
 3. **Liczba atomowa Z** = liczba protonów. **Z definiuje pierwiastek**: inne Z — inny pierwiastek.
 4. **Liczba masowa A** = liczba protonów + liczba neutronów.
 5. **Liczba neutronów** n = A − Z.
 6. **Atom obojętny** ma tyle elektronów, ile protonów: e = Z.
-7. Zapis nuklidu **ᴬ_Z X**, np. ²³₁₁Na: 11 p⁺, 12 n⁰, 11 e⁻.
+7. Zapis nuklidu: u góry A, u dołu Z, obok symbol — np. ²³₁₁Na: 11 p⁺, 12 n⁰, 11 e⁻.
 8. **Jon** powstaje przez **oddanie lub przyjęcie elektronów** — liczba protonów się nie zmienia.
 9. **Kation** (+) oddał elektrony: Na⁺ ma 10 e⁻. **Anion** (−) przyjął elektrony: Cl⁻ ma 18 e⁻.
 10. Ładunek jonu q = p − e, stąd **e = Z − q**: Al³⁺ → 13 − 3 = 10 e⁻; O²⁻ → 8 − (−2) = 10 e⁻.
-11. Prawie cała masa atomu jest w jądrze, a jądro jest ok. 100 000 razy mniejsze od atomu — atom to głównie pusta przestrzeń.
-12. **A ≠ masa atomowa** z układu okresowego: A jest liczbą całkowitą dla jednego nuklidu, masa atomowa — średnią (szczegóły: [F05](#mosty)).
+11. Prawie cała masa atomu jest w jądrze, a jądro jest rzędu 10⁴–10⁵ razy mniejsze od atomu (atom ≈ 10⁻¹⁰ m, jądro ≈ 10⁻¹⁵ m) — atom to głównie pusta przestrzeń.
+12. **A ≠ masa atomowa** z układu okresowego: A jest liczbą całkowitą dla jednego nuklidu, masa atomowa — średnią (szczegóły: F05).
 :::
 
 ::: warstwy
@@ -70,7 +70,7 @@ stopka: **CHEMIA F04 v1.0 MASTER** · Atom · 2026
 ## 0.3 | Kompas — co trzeba wiedzieć wcześniej {#kompas}
 
 - **F02 Materia i substancje:** pierwiastek to rodzaj atomów; symbol pierwiastka.
-- **FIZ-01 Elektrostatyka** (pomocniczo): ładunki dodatnie i ujemne przyciągają się, jednoimienne odpychają.
+- **Elektrostatyka z fizyki** (pomocniczo): ładunki dodatnie i ujemne przyciągają się, jednoimienne odpychają.
 - Matematyka: dodawanie i odejmowanie liczb całkowitych (także ujemnych).
 
 ::: karta core | Gdzie jesteś
@@ -99,9 +99,9 @@ Faza A (F01–F03) opisała substancje. **Faza B — Z czego to wynika?** **F04 
 ::: karta understand | Wykład — z czego zbudowane jest wszystko
 Weź kawałek miedzianego drutu i zacznij go w myślach dzielić na coraz mniejsze części. W końcu dojdziesz do najmniejszej porcji, która nadal jest miedzią — do **atomu**. Starożytni Grecy nazwali go *átomos*, czyli „niepodzielny”. Dziś wiemy, że ta nazwa jest myląca: atom ma wnętrze, a jego budowa tłumaczy niemal całą chemię.
 
-W środku atomu znajduje się **jądro** — maleńkie, ale bardzo ciężkie. Tworzą je **protony** (ładunek +1) i **neutrony** (bez ładunku); obie cząstki mają masę około 1 u. Wokół jądra poruszają się **elektrony** (ładunek −1), prawie 2000 razy lżejsze od protonu. Dodatnie jądro przyciąga ujemne elektrony — to ta sama siła, która przyciąga naelektryzowany balon do włosów. Jądro jest dziesiątki tysięcy razy mniejsze od całego atomu, a skupia ponad 99,9% jego masy: atom to głównie pusta przestrzeń.
+W środku atomu znajduje się **jądro** — maleńkie, ale bardzo ciężkie. Tworzą je **protony** (ładunek +1) i **neutrony** (bez ładunku); obie cząstki mają masę około 1 u. Wokół jądra poruszają się **elektrony** (ładunek −1), prawie 2000 razy lżejsze od protonu. Dodatnie jądro przyciąga ujemne elektrony — to ta sama siła, która przyciąga naelektryzowany balon do włosów. Jądro jest rzędu 10⁴–10⁵ razy mniejsze od całego atomu (atom ≈ 10⁻¹⁰ m, jądro ≈ 10⁻¹⁵ m), a skupia ponad 99,9% jego masy: atom to głównie pusta przestrzeń.
 
-Najważniejsza liczba w chemii to **liczba atomowa Z** — liczba protonów. Ona decyduje, jaki to pierwiastek: każdy atom z 6 protonami jest węglem, z 8 — tlenem, z 11 — sodem. **Liczba masowa A** mówi, ile jest w jądrze protonów i neutronów razem; stąd liczba neutronów n = A − Z. Wszystko to zapisujemy skrótem **ᴬ_Z X** — np. ²³₁₁Na oznacza sód z 11 protonami i 12 neutronami.
+Najważniejsza liczba w chemii to **liczba atomowa Z** — liczba protonów. Ona decyduje, jaki to pierwiastek: każdy atom z 6 protonami jest węglem, z 8 — tlenem, z 11 — sodem. **Liczba masowa A** mówi, ile jest w jądrze protonów i neutronów razem; stąd liczba neutronów n = A − Z. Wszystko to zapisujemy skrótem: u góry A, u dołu Z, obok symbol — np. ²³₁₁Na oznacza sód z 11 protonami i 12 neutronami.
 
 W atomie obojętnym elektronów jest tyle co protonów, więc ładunki się znoszą. Gdy atom **odda** elektrony, staje się **kationem** (ładunek dodatni, np. Na⁺), gdy **przyjmie** — **anionem** (ładunek ujemny, np. Cl⁻). Liczba protonów się przy tym nie zmienia — dlatego Na⁺ to nadal sód. To kluczowe zdanie lekcji: **reakcje chemiczne przestawiają elektrony, ale nie ruszają jąder**. Zmiana liczby protonów to już przemiana jądrowa i powstaje inny pierwiastek.
 
@@ -114,13 +114,21 @@ Z tej lekcji wyniesiesz jedną procedurę, która wraca przez cały kurs: z zapi
 |---|---|---|---|---|
 | proton | p⁺ | +1 | 1 u | jądro |
 | neutron | n⁰ | 0 | 1 u | jądro |
-| elektron | e⁻ | −1 | 1/1836 u (prawie zero) | wokół jądra |
+| elektron | e⁻ | −1 | ≈ 1/1836 masy protonu (≈ 0,00055 u) | wokół jądra |
 
 **Jądro** zawiera protony i neutrony — ma ładunek dodatni i prawie całą masę atomu. **Elektrony** zajmują obszar wokół jądra; przyciąga je dodatnie jądro. **Jednostka masy atomowej u** to 1/12 masy atomu węgla ¹²C; 1 u ≈ 1,66 · 10⁻²⁴ g.
 
 ::: karta understand | Skala atomu [[understand:ROZUMIENIE]]
-Gdyby atom powiększyć do rozmiaru stadionu, jądro byłoby ziarnkiem grochu na środku boiska. Jądro jest ok. 10 000–100 000 razy mniejsze od atomu, a skupia ponad 99,9% jego masy. Rysunki atomu w podręcznikach celowo nie zachowują skali.
+Gdyby atom powiększyć do rozmiaru stadionu, jądro byłoby ziarnkiem grochu na środku boiska (to przybliżenie rzędu 10⁴ — ziarnko jest już nieco za duże). Jądro jest rzędu 10⁴–10⁵ razy mniejsze od atomu, a skupia ponad 99,9% jego masy. Rysunki atomu w podręcznikach celowo nie zachowują skali.
 :::
+
+| Wielkość | Wartość (przybliżona) |
+|---|---|
+| średnica atomu | ok. 10⁻¹⁰ m (0,1 nm) |
+| średnica jądra | ok. 10⁻¹⁵ m |
+| masa atomu ¹H | ok. 1,67 · 10⁻²⁴ g |
+| masa elektronu | ok. 9,1 · 10⁻²⁸ g |
+| ładunek elementarny e | 1,6 · 10⁻¹⁹ C |
 
 ## 2 | Liczba atomowa Z i liczba masowa A [[basic:E8]] {#liczby}
 
@@ -133,9 +141,26 @@ $$ Z = liczba protonów · A = protony + neutrony · n = A − Z · atom obojęt
 Atom z 6 protonami jest zawsze węglem. Gdyby miał 7 protonów, byłby azotem — nie „innym węglem”. W zwykłych reakcjach chemicznych jądra się nie zmieniają; przestawiają się tylko elektrony. Zmiana jądra to przemiana jądrowa (blok A).
 :::
 
+::: karta basic | Z dla pierwszych 20 pierwiastków
+| Z | symbol | nazwa | Z | symbol | nazwa |
+|---|---|---|---|---|---|
+| 1 | H | wodór | 11 | Na | sód |
+| 2 | He | hel | 12 | Mg | magnez |
+| 3 | Li | lit | 13 | Al | glin |
+| 4 | Be | beryl | 14 | Si | krzem |
+| 5 | B | bor | 15 | P | fosfor |
+| 6 | C | węgiel | 16 | S | siarka |
+| 7 | N | azot | 17 | Cl | chlor |
+| 8 | O | tlen | 18 | Ar | argon |
+| 9 | F | fluor | 19 | K | potas |
+| 10 | Ne | neon | 20 | Ca | wapń |
+
+Zadanie: ile protonów mają ²⁷Al, ¹⁹F i ³⁹K? Z odczytujesz z tabeli, nie z podanego zapisu (13, 9, 19).
+:::
+
 ## 3 | Zapis nuklidu [[basic:E8]] {#nuklid}
 
-Zapis **ᴬ_Z X**: u góry liczba masowa A, u dołu liczba atomowa Z, obok symbol pierwiastka. Często pomija się Z (wynika z symbolu): ³⁵Cl, ¹²C.
+Zapis: u góry liczba masowa A, u dołu liczba atomowa Z, obok symbol pierwiastka X. Często pomija się Z (wynika z symbolu): ³⁵Cl, ¹²C.
 
 ::: karta basic | Procedura odczytu
 1. **Symbol** X → jaki pierwiastek.
@@ -159,6 +184,8 @@ Zapis **ᴬ_Z X**: u góry liczba masowa A, u dołu liczba atomowa Z, obok symbo
 
 @model f04-nuklid-v01 | Trening: odczytaj zapis nuklidu i policz p, n, e
 @opis Duży zapis nuklidu (np. ³⁵₁₇Cl⁻): u góry liczba masowa A, u dołu liczba atomowa Z, w prawym górnym rogu ładunek jonu. Uczeń wpisuje liczbę protonów, neutronów i elektronów; po „Sprawdź” pola zmieniają kolor (zielony — dobrze, czerwony — źle), pojawia się rachunek p = Z, n = A − Z, e = Z − ładunek oraz model atomu (protony czerwone, neutrony szare, elektrony na powłokach). Licznik pokazuje wynik. Wniosek: liczbę elektronów wyznacza Z i ładunek, a nie liczba masowa; kation ma mniej elektronów niż protonów, anion — więcej.
+
+Z odczytasz z układu okresowego: numer pierwiastka to liczba protonów (szczegóły w F06).
 
 @model periodic-54 | Układ okresowy z modelami atomów (pierwiastki 1–54) | wybierz pierwiastek: Z, liczba elektronów, schemat atomu
 @opis Interaktywny układ okresowy pierwiastków od 1 do 54; po wybraniu pierwiastka widać jego liczbę atomową Z, liczbę elektronów i schemat atomu z elektronami rozmieszczonymi na powłokach. Wniosek: miejsce pierwiastka w tablicy wynika z liczby protonów i budowy powłok elektronowych.
@@ -188,7 +215,9 @@ $$ Na → Na⁺ + e⁻ · Cl + e⁻ → Cl⁻
 „Al³⁺ ma 13 − 3 = 10 **protonów**” — nie! Ładunek powstał przez utratę elektronów. Al³⁺ ma nadal **13 protonów** i **10 elektronów**. Gdyby zmieniła się liczba protonów, nie byłby to już glin.
 :::
 
-Dlaczego atomy tworzą jony i które jony są typowe — [F05](#mosty) i [F10](#mosty). Jak elektrony rozmieszczają się wokół jądra (powłoki K, L, M) — [F07](#mosty).
+Dlaczego atomy tworzą jony i które jony są typowe — F05 i F10. Jak elektrony rozmieszczają się wokół jądra (powłoki K, L, M) — F07.
+
+> **Jony złożone** (NH₄⁺, SO₄²⁻, OH⁻) mają wiele atomów o łącznym ładunku; ich zapisem zajmą się F09 i F12. Zasada e = Z − q działa także dla zespołu atomów: dla SO₄²⁻ sumujesz Z wszystkich atomów (16 + 4 · 8 = 48) i dostajesz e = 48 − (−2) = 50.
 
 ## 5 | Co zmienia Z, liczba neutronów i liczba elektronów? [[understand:ROZUMIENIE]] {#co-zmienia}
 
@@ -200,6 +229,8 @@ Dlaczego atomy tworzą jony i które jony są typowe — [F05](#mosty) i [F10](#
 | liczbę **elektronów** | **jon** tego samego pierwiastka | Na i Na⁺ |
 :::
 
+> Przykład ¹⁴₆C → ¹⁴₇N to rozpad β⁻ (przemiana jądrowa): neutron zamienia się w proton i elektron, A zostaje 14. Zmiana Z zawsze oznacza zmianę pierwiastka, ale nie każdą zmianę Z robi się w reakcji chemicznej.
+
 To jedna z najważniejszych osi całego bloku F. Kto pomyli te trzy operacje, potem pomyli izotopy z jonami, masę atomową z liczbą masową i stopień utlenienia z ładunkiem jądra. Izotopy i masę atomową rozwija **F05**.
 
 Zapis ²⁷₁₃Al³⁺ łączy wszystkie informacje naraz: pierwiastek (Z = 13, glin), nuklid (A = 27, czyli 14 neutronów) i stan elektronowy (ładunek 3+, czyli 10 elektronów).
@@ -208,18 +239,21 @@ Zapis ²⁷₁₃Al³⁺ łączy wszystkie informacje naraz: pierwiastek (Z = 13
 
 | Rok | Model | Co wniósł | Ograniczenie |
 |---|---|---|---|
+| ok. 400 p.n.e. | **Demokryt** — „átomos” | idea najmniejszych, niepodzielnych cząstek | brak podstaw doświadczalnych |
 | ok. 1808 | **Dalton** — niepodzielne kulki | każdy pierwiastek ma swój rodzaj atomów | atom jest podzielny |
 | 1897–1904 | **Thomson** — „ciasto z rodzynkami” | odkrycie elektronu; atom ma ładunki | brak jądra |
 | 1911 | **Rutherford** — jądro | mała, dodatnia, ciężka centralna część | nie tłumaczy trwałości elektronów |
 | 1913 | **Bohr** — powłoki | elektrony na określonych poziomach energii | działa dobrze tylko dla wodoru |
+| 1917–1919 | **Rutherford — proton** | ładunek dodatni jądra jako osobna cząstka | nie tłumaczy masy jądra |
+| 1932 | **Chadwick — neutron** | cząstka bez ładunku o masie ok. 1 u | wcześniej model jądra był niepełny |
 | od 1926 | **kwantowo-mechaniczny** — orbitale | obszary prawdopodobnego położenia elektronu | wymaga matematyki ponad szkołę |
 
-::: dosw | Doświadczenie myślowe — Rutherford i złota folia
+::: dosw | Doświadczenie historyczne — folia złota (analiza wyników)
 Problem: Czy ładunek dodatni i masa są w atomie rozłożone równomiernie?
 Hipoteza (model Thomsona): cząstki α przelecą przez cienką złotą folię prawie bez odchyleń.
 Sprzęt: źródło cząstek α (dodatnich), bardzo cienka folia złota, ekran fluorescencyjny wokół folii.
-Przebieg: Strumień cząstek α kierujemy na folię i liczymy błyski na ekranie pod różnymi kątami.
-Obserwacja: Prawie wszystkie cząstki przechodzą bez odchylenia; nieliczne odchylają się mocno, a bardzo nieliczne odbijają się niemal do tyłu.
+Przebieg (eksperyment Geigera i Marsdena, 1909; interpretacja Rutherforda, 1911): strumień cząstek α kierujemy na folię i liczymy błyski na ekranie pod różnymi kątami.
+Obserwacja: Prawie wszystkie cząstki przechodzą bez odchylenia; nieliczne odchylają się mocno, a bardzo nieliczne odbijają się niemal do tyłu. Model Thomsona przewidywał tylko małe odchylenia, więc odbicia „do tyłu” były zaskoczeniem — Rutherford porównał je do ciężkiego pocisku, który odbija się od bibułki.
 Wniosek: Atom to głównie pusta przestrzeń, a ładunek dodatni i prawie cała masa skupione są w maleńkim jądrze. Model Thomsona trzeba odrzucić.
 BHP: doświadczenie historyczne — źródła promieniowania α wymagają specjalistycznego laboratorium; tu analizujemy wyniki.
 :::
@@ -229,7 +263,7 @@ Model powłokowy wystarcza, by liczyć p, n, e i rysować schematy. Nie wolno je
 :::
 
 ::: adv | Co trzyma jądro razem? | poziom akademicki
-Protony w jądrze odpychają się elektrostatycznie, a mimo to jądro jest trwałe. Utrzymują je **oddziaływania silne (jądrowe)** — znacznie silniejsze od odpychania, ale działające tylko na odległościach rzędu rozmiaru jądra (ok. 10⁻¹⁵ m). Neutrony „rozcieńczają” odpychanie protonów, dlatego cięższe jądra mają więcej neutronów niż protonów. Rozwinięcie: A01.
+Protony w jądrze odpychają się elektrostatycznie, a mimo to jądro jest trwałe. Utrzymują je **oddziaływania silne (jądrowe)** — znacznie silniejsze od odpychania, ale działające tylko na odległościach rzędu rozmiaru jądra (ok. 10⁻¹⁵ m). Neutrony „rozcieńczają” odpychanie protonów, dlatego cięższe jądra mają więcej neutronów niż protonów. Rozwinięcie: A01 Jądro atomowe (chemia jądrowa, blok A).
 :::
 
 ### Nuklid, izotop, izobar [[extra:AMBITNE]]
@@ -245,7 +279,7 @@ Problem: Jak przedstawić budowę atomu węgla ¹²C?
 Hipoteza: Model pokaże małe, ciężkie jądro i elektrony wokół niego.
 Sprzęt: plastelina w trzech kolorach (protony, neutrony, elektrony), wykałaczki, kartka z narysowanymi okręgami powłok.
 Przebieg: Ulep 6 kulek „protonów” i 6 „neutronów”, sklej je w jądro na środku kartki. Na okręgach rozmieść 6 małych kulek „elektronów” (2 na pierwszym, 4 na drugim).
-Obserwacja: Jądro jest zwarte w środku, elektrony są daleko od niego.
+Obserwacja: Kulki „jądra” są ściśnięte w jeden punkt, kulki „elektronów” leżą na okręgach daleko od środka. Na kartce nie da się zachować skali — gdyby jądro miało wielkość ziarnka grochu, elektrony byłyby oddalone o kilkadziesiąt metrów.
 Wniosek: Atom węgla: 6 p⁺ i 6 n⁰ w jądrze, 6 e⁻ wokół. Model nie zachowuje skali — w rzeczywistości jądro byłoby niewidocznie małe.
 BHP: brak szczególnych zagrożeń.
 :::
@@ -257,7 +291,7 @@ Sprzęt: model atomu Na (11 p⁺, 12 n⁰, 11 e⁻) i Cl (17 p⁺, 18 n⁰, 17 e
 Przebieg: Zabierz jeden elektron z modelu Na i dołóż go do modelu Cl. Policz p, n, e w obu.
 Obserwacja: Na: 11 p⁺, 12 n⁰, 10 e⁻ (ładunek +1); Cl: 17 p⁺, 18 n⁰, 18 e⁻ (ładunek −1).
 Wniosek: Jon powstaje przez przeniesienie elektronów; liczba protonów, a więc pierwiastek, się nie zmienia. Suma ładunków obu jonów wynosi zero.
-Równanie:: Na + Cl → Na⁺ + Cl⁻
+Równanie:: Na → Na⁺ + e⁻ ; Cl + e⁻ → Cl⁻ (zapis modelowy dla pojedynczych atomów; reakcję całości — 2 Na + Cl₂ → 2 NaCl — poznasz w F11 i F17)
 BHP: brak — doświadczenie modelowe.
 :::
 
@@ -268,10 +302,15 @@ BHP: brak — doświadczenie modelowe.
 | „Al³⁺ ma 10 protonów.” | Al³⁺ ma 13 protonów i 10 elektronów. | Ładunek zmienia elektrony, nie protony. |
 | „O²⁻ ma 6 elektronów.” | O²⁻ ma 10 elektronów. | Anion przyjął: e = 8 − (−2) = 10. |
 | „A to liczba neutronów.” | A = protony + neutrony; neutrony = A − Z. | A dotyczy całego jądra. |
-| „Liczba masowa to masa atomowa.” | A — całkowita, dla nuklidu; masa atomowa — średnia (F05). | ³⁵Cl ma A = 35, a chlor ma masę atomową ok. 35,45. |
 | „Elektron krąży po orbicie jak planeta.” | Model powłokowy to uproszczenie. | Elektron opisuje się obszarem prawdopodobieństwa (F07). |
 | „Atom ma zawsze tyle samo neutronów co protonów.” | Liczba neutronów zależy od nuklidu. | ²³Na: 11 p⁺, 12 n⁰; ³⁵Cl: 17 p⁺, 18 n⁰. |
 | „Zmiana liczby elektronów zmienia pierwiastek.” | Powstaje jon tego samego pierwiastka. | Pierwiastek definiuje Z. |
+| „Neutrony decydują o ładunku.” | Ładunek decydują protony i elektrony; neutrony są obojętne. | Neutron ma ładunek 0. |
+| „A − Z to liczba elektronów.” | A − Z to liczba neutronów. | Elektrony liczy się z Z i ładunku. |
+| „W jonie zmieniają się neutrony.” | W jonie zmienia się liczba elektronów; neutrony zostają. | Jon to zmiana elektronów. |
+| „Kation jest większy od atomu.” | Kation jest zwykle mniejszy — ma mniej elektronów (promienie w F06). | Mniej elektronów, mniejsze odpychanie. |
+| „Atom to kulka.” | Kulka to model; rzeczywisty atom nie ma ostrej granicy (F07). | Model uczy, ale ma zakres stosowania. |
+| „Zamieniam elektron na proton, żeby zrobić jon.” | Jon powstaje przez zmianę liczby elektronów; zmiana protonu zmienia pierwiastek. | Proton jest w jądrze i nie zmienia się w reakcji chemicznej. |
 | „Atom jest niepodzielny.” | Atom składa się z jądra (protony, neutrony) i elektronów; w reakcjach chemicznych się nie dzieli, ale nie jest niepodzielny. | „átomos” to nazwa historyczna (Demokryt, Dalton). |
 | „Liczba masowa to masa atomowa.” | A to liczba protonów i neutronów jednego nuklidu (liczba całkowita); masa atomowa to średnia ważona mas izotopów. | Cl: A = 35 lub 37, a masa atomowa ≈ 35,5 u. |
 :::
@@ -369,6 +408,17 @@ Twierdzenie jest fałszywe. Dowód: Na⁺ ma nadal 11 protonów (Z = 11). Wyjaś
 :::
 :::
 
+::: karta exam | G. Z bez podanego Z i jony (4 pkt)
+1. Ile protonów mają ²⁷Al, ¹⁹F, ³⁹K? (Z odczytaj z tabeli z §2.)
+2. Jon X³⁻ ma 18 elektronów. Jaki to pierwiastek?
+3. Cząstka X ma 9 p⁺, 10 n⁰, 10 e⁻. Jaki to jon i jaki nuklid?
+4. Zapisz nuklid, który ma 16 protonów, 16 neutronów i ładunek 2−.
+
+::: odp | Pokaż odpowiedzi
+1. 13, 9, 19. 2. Z = 18 − 3 = 15 → fosfor (P³⁻). 3. Z = 9 → fluor; ładunek 9 − 10 = −1 → ¹⁹F⁻ (A = 9 + 10 = 19). 4. Z = 16 → siarka; A = 32 → ³²₁₆S²⁻.
+:::
+:::
+
 ## 9.5 | Ciekawostki {#ciekawostki}
 
 ::: karta extra | Neutron odkryty dopiero w 1932 roku
@@ -376,16 +426,16 @@ Elektron znano od 1897 r. (J.J. Thomson), jądro od 1911 r. (Rutherford), ale ne
 :::
 
 ::: karta extra | Jesteśmy z gwiazd
-Wodór i większość helu powstały tuż po Wielkim Wybuchu, ale węgiel, tlen czy żelazo w twoim ciele „wykuły się” w jądrach gwiazd — w reakcjach jądrowych, które zmieniają liczbę protonów. Cięższe pierwiastki rozsiały wybuchy gwiazd. (orientacyjnie: pierwiastki najcięższe powstają m.in. przy zderzeniach gwiazd neutronowych)
+Wodór i większość helu powstały tuż po Wielkim Wybuchu, ale węgiel, tlen czy żelazo w twoim ciele „wykuły się” w jądrach gwiazd — w reakcjach jądrowych, które zmieniają liczbę protonów. Cięższe pierwiastki rozsiały wybuchy gwiazd. Najcięższe pierwiastki powstają m.in. przy zderzeniach gwiazd neutronowych.
 :::
 
 ::: karta extra | Jony w twoich nerwach
-Każdy impuls nerwowy to przepływ jonów — głównie Na⁺ i K⁺ — przez błonę komórki nerwowej. Kiedy czytasz to zdanie, miliardy kationów sodu i potasu przemieszczają się w twoim mózgu. Most do biologii: układ nerwowy (BIO U08).
+Każdy impuls nerwowy to przepływ jonów — głównie Na⁺ i K⁺ — przez błonę komórki nerwowej. Kiedy czytasz to zdanie, miliardy kationów sodu i potasu przemieszczają się w twoim mózgu. Most do biologii: układ nerwowy (lekcja BIO.07.U08).
 :::
 
 ## 9.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
 
-*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+*(Warstwa ponad E8 — zadania w stylu konkursów chemicznych.)*
 
 ::: karta understand | Dla olimpijczyka — gdzie zapis nuklidu zastawia pułapki
 **Jony izoelektronowe** — różne jony o tej samej liczbie elektronów: O²⁻, F⁻, Ne, Na⁺, Mg²⁺, Al³⁺ mają po 10 e⁻. Im większe Z przy tej samej liczbie elektronów, tym silniej jądro je przyciąga — dlatego Al³⁺ jest mniejszy od O²⁻. **Izotony** — nuklidy o tej samej liczbie neutronów (np. ¹⁴C i ¹⁶O: po 8 neutronów). **Zadania odwrotne** — z liczby elektronów i ładunku wyznacz Z, a potem symbol: X²⁻ z 18 e⁻ → Z = 18 + (−2) = 16 → siarka. **Wodór bez neutronu** — ¹H ma 0 neutronów, a jon H⁺ to „goły” proton, bez żadnego elektronu.
@@ -424,6 +474,22 @@ O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2 pkt) — wszystkie mają 10 e⁻; im więcej 
 :::
 :::
 
+::: adv | Zadanie O5 (2 pkt) — ładunek jonu | poziom ambitny (konkurs)
+Ładunek jonu o liczbie atomowej Z = 8 wynosi −3,2 · 10⁻¹⁹ C (ładunek elementarny e = 1,6 · 10⁻¹⁹ C). Ile elektronów ma ten jon?
+
+::: odp | Pokaż klucz
+q = −3,2 · 10⁻¹⁹ : 1,6 · 10⁻¹⁹ = −2 (1 pkt); e = Z − q = 8 + 2 = 10 — jon O²⁻ (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O6 (2 pkt) — masa atomu i liczba atomów | poziom ambitny (konkurs)
+Oszacuj masę jednego atomu ¹²C w gramach (1 u ≈ 1,66 · 10⁻²⁴ g). Ile atomów ¹²C jest w 12 g tego izotopu?
+
+::: odp | Pokaż klucz
+m ≈ 12 · 1,66 · 10⁻²⁴ g ≈ 2,0 · 10⁻²³ g (1 pkt); liczba atomów 12 g : 1,99 · 10⁻²³ g ≈ 6,0 · 10²³ (1 pkt).
+:::
+:::
+
 ## 10 | Test {#test}
 
 ::: test
@@ -432,6 +498,7 @@ O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2 pkt) — wszystkie mają 10 e⁻; im więcej 
 - neutronów
 - protonów i neutronów
 - elektronów w jonie
+! Z to liczba protonów — ona definiuje pierwiastek.
 
 ? Ile neutronów ma ²³₁₁Na?
 - 11
@@ -450,23 +517,27 @@ O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2 pkt) — wszystkie mają 10 e⁻; im więcej 
 + 10
 - 13
 - 16
+! e = Z − q = 13 − 3 = 10.
 
 ? Kation to atom, który:
 + oddał elektrony
 - przyjął elektrony
 - stracił protony
 - zyskał neutrony
+! Kation oddał elektrony; protony zostają.
 
 ? Co definiuje pierwiastek?
 - liczba neutronów
 + liczba protonów
 - liczba elektronów
 - liczba masowa
+! Pierwiastek definiuje Z.
 
 ? Gdzie skupiona jest prawie cała masa atomu?
 + w jądrze
 - w elektronach
 - równo w całym atomie
+! Jądro ma prawie całą masę atomu.
 
 ? Jon ma 8 protonów i 10 elektronów. To:
 - Ne
@@ -478,17 +549,67 @@ O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2 pkt) — wszystkie mają 10 e⁻; im więcej 
 - atom jest niepodzielną kulką
 + w atomie jest małe, dodatnie jądro
 - elektrony krążą po orbitach
+! Rutherford: małe, dodatnie, ciężkie jądro.
 
 ? Zapis ³⁷₁₇Cl oznacza atom z:
 - 37 protonami
 + 17 protonami i 20 neutronami
 - 17 neutronami i 20 protonami
+! 17 protonów; n = 37 − 17 = 20.
+
+? Ile elektronów ma jon S²⁻ (Z = 16)?
+- 14
+- 16
++ 18
+! e = Z − q = 16 − (−2) = 18.
+
+? Jon ma 15 protonów i 18 elektronów. Jego ładunek to:
+- +3
++ −3
+- 0
+! q = p − e = 15 − 18 = −3 (to jon fosforu P³⁻).
+
+? Jak ma się wielkość jądra do atomu?
+- jądro jest większe od atomu
++ jądro jest rzędu 10⁴–10⁵ razy mniejsze od atomu
+- jądro i atom mają tę samą wielkość
+! Atom ≈ 10⁻¹⁰ m, jądro ≈ 10⁻¹⁵ m.
+
+? Zapis ¹⁴₆C oznacza:
++ Z = 6, A = 14
+- Z = 14, A = 6
+- Z = 8, A = 6
+! Z to liczba protonów (dolny indeks), A — górny.
+
+? Ile protonów i neutronów ma zwykły atom ¹H?
++ 1 proton i 0 neutronów
+- 1 proton i 1 neutron
+- 0 protonów i 1 neutron
+! Zwykły wodór nie ma neutronów.
+
+? Co zmienia się, gdy atom sodu staje się jonem Na⁺?
+- liczba protonów
++ liczba elektronów
+- pierwiastek
+! Zmienia się liczba elektronów; protony i pierwiastek zostają.
+
+? Który model atomu wprowadził jądro?
++ Rutherford
+- Dalton
+- Bohr
+! Rutherford w 1911 r. na podstawie doświadczenia z folią złotą.
+
+? Cząstka X ma 9 p⁺, 10 n⁰ i 10 e⁻. To jon:
++ F⁻
+- Ne
+- O²⁻
+! Z = 9 → fluor; ładunek 9 − 10 = −1.
 :::
 
 ## 11 | Karta szybkiego powtórzenia i mapa myśli {#powtorka}
 
 ::: karta core | Na jednej stronie
-- **Atom** = jądro (p⁺ + n⁰) + elektrony. p⁺: +1, ok. 1 u; n⁰: 0, ok. 1 u; e⁻: −1, ok. 1/1836 u.
+- **Atom** = jądro (p⁺ + n⁰) + elektrony. p⁺: +1, ok. 1 u; n⁰: 0, ok. 1 u; e⁻: −1, ≈ 0,00055 u.
 - **Z** = protony = tożsamość pierwiastka. **A** = p + n. **n = A − Z.** Atom obojętny: **e = Z**.
 - **Jon:** e = Z − q. Kation oddał (Na⁺: 10 e⁻), anion przyjął (Cl⁻: 18 e⁻). Protony bez zmian.
 - **Zmień Z** → inny pierwiastek · **zmień n** → izotop · **zmień e** → jon.
@@ -497,7 +618,7 @@ O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2 pkt) — wszystkie mają 10 e⁻; im więcej 
 
 ::: karta understand | Mapa myśli
 **ATOM** → *jądro* (protony: Z · neutrony: A − Z) · *elektrony* (atom obojętny: e = Z · jon: e = Z − q)
-→ *zapis nuklidu* ᴬ_Z X → *izotopy* (F05) → *powłoki i konfiguracja* (F07) → *jony w związkach* (F09–F11)
+→ *zapis nuklidu* (A u góry, Z u dołu) → *izotopy* (F05) → *powłoki i konfiguracja* (F07) → *jony w związkach* (F09–F11)
 :::
 
 ## 12 | Fiszki {#fiszki}
@@ -513,6 +634,12 @@ Anion | jon ujemny — przyjął elektrony | basic:podstawa
 Na⁺ | 11 p⁺, 12 n⁰, 10 e⁻ | basic:podstawa
 Cl⁻ (³⁵Cl) | 17 p⁺, 18 n⁰, 18 e⁻ | basic:podstawa
 Gdzie jest masa atomu? | prawie cała w jądrze | basic:podstawa
+Dlaczego e = Z − q? | q = p − e, więc e = Z − q; dla anionu q < 0, elektronów przybywa | basic:podstawa
+Z kontra A | Z — protony, A — protony + neutrony; ¹⁴C: Z = 6, A = 14 | basic:podstawa
+Nuklid | rodzaj atomu o określonych Z i A | basic:podstawa
+Pułapka znaku | O²⁻: e = 8 − (−2) = 10, nie 6 | basic:podstawa
+Zapis nuklidu | u góry A, u dołu Z, np. ²³₁₁Na | basic:podstawa
+Co zmienia zmiana n? | inny izotop tego samego pierwiastka | understand:rozumienie
 Zmiana Z / n / e | inny pierwiastek / izotop / jon | understand:rozumienie
 Jednostka u | 1/12 masy atomu ¹²C ≈ 1,66 · 10⁻²⁴ g | extra:ambitne
 Izobary | ten sam A, różne Z (⁴⁰Ar, ⁴⁰Ca) | extra:ambitne
@@ -531,7 +658,7 @@ Atom :: najmniejsza cząstka pierwiastka, zbudowana z jądra i elektronów, elek
 Jądro atomowe :: centralna część atomu zawierająca protony i neutrony
 Proton :: cząstka jądra o ładunku +1 i masie ok. 1 u
 Neutron :: cząstka jądra bez ładunku, o masie ok. 1 u
-Elektron :: cząstka o ładunku −1 i masie ok. 1/1836 u, znajdująca się wokół jądra
+Elektron :: cząstka o ładunku −1 i masie ≈ 1/1836 masy protonu (≈ 0,00055 u), znajdująca się wokół jądra
 Liczba atomowa Z :: liczba protonów w jądrze
 Liczba masowa A :: suma liczby protonów i neutronów w jądrze
 Nuklid :: rodzaj atomu o określonej liczbie protonów i neutronów
@@ -539,6 +666,14 @@ Jon :: atom lub grupa atomów z ładunkiem elektrycznym
 Kation :: jon dodatni
 Anion :: jon ujemny
 Jednostka masy atomowej u :: 1/12 masy atomu węgla ¹²C
+Izotop :: nuklidy o tym samym Z i różnym A (rozwinięcie w F05)
+Izobar :: nuklidy o tym samym A i różnym Z (różne pierwiastki)
+Izoton :: nuklidy o tej samej liczbie neutronów
+Ładunek elementarny :: ładunek jednego protonu (+) lub elektronu (−), ok. 1,6 · 10⁻¹⁹ C
+Powłoka elektronowa :: poziom energetyczny elektronów wokół jądra (K, L, M…)
+Orbital :: obszar prawdopodobnego położenia elektronu (model kwantowy)
+Nukleon :: wspólna nazwa protonu i neutronu
+Model atomu :: uproszczony obraz budowy atomu, np. Rutherforda lub Bohra
 :::
 
 ## 14 | Checklista {#checklista}
@@ -571,19 +706,40 @@ Kolejność powtórki (we własnym tempie):
 - **F07 Konfiguracja elektronowa** — jak elektrony rozmieszczają się na powłokach K, L, M, N.
 - **F09–F11** — ładunek jonu w wzorach i wiązaniu jonowym.
 - **A01–A03 Chemia jądrowa** — przemiany, w których zmienia się jądro.
-- **FIZ-01 Elektrostatyka** — przyciąganie i odpychanie ładunków.
+- **Elektrostatyka z fizyki** — przyciąganie i odpychanie ładunków (lekcja spoza tej serii).
 :::
 
 ## ↻ | Modele silnika w tej lekcji {#modele}
 
 | Sekcja | Model | Co pokazuje |
 |---|---|---|
+| [§3](#nuklid) | `f04-nuklid-v01` | trening: zapis nuklidu i liczenie p, n, e |
 | [§3](#nuklid) | `periodic-54` | układ okresowy 1–54 z modelami atomów — Z i liczba elektronów |
 
-> Do zbudowania w GFX (nowe elementy): „Atom zoom” (V003) — jądro z licznikiem p/n, elektrony, przełącznik skali schematyczna/rzeczywista; konstruktor atomu i jonu (dodaj/zabierz proton, neutron, elektron — pokazuje, czy zmienia się pierwiastek, izotop czy ładunek); animacja doświadczenia Rutherforda.
+## AUDYT W1 — audyt 04 (2026-10-13)
 
-## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+Wprowadzono:
+- A1: masa elektronu ≈ 1/1836 masy protonu (≈ 0,00055 u) — we wszystkich miejscach.
+- A2: jedna skala (rzędu 10⁴–10⁵, z wymiarami); analogia ze stadionem zaznaczona jako przybliżenie.
+- A3: etykieta „Doświadczenie historyczne” + Geiger i Marsden 1909, Rutherford 1911.
+- A4: zdublowany wiersz kliniki usunięty (zostaje pełniejszy).
+- A5: zapis modelowy półreakcji (Na → Na⁺ + e⁻; Cl + e⁻ → Cl⁻) z odsyłaczem do F11/F17.
+- A6: obserwacja w doświadczeniu z plasteliny zastąpiona obserwacją skali.
+- A7: notka o rozpadzie β⁻ przy przykładzie ¹⁴C → ¹⁴N.
+- A8: uwaga o jonach złożonych (NH₄⁺, SO₄²⁻, OH⁻) z przykładem liczenia e.
+- A9: zapis nuklidu bez „_” (Minimum #7, §3, wykład, mapa).
+- B1: Demokryt, proton (Rutherford 1917–1919), neutron (Chadwick 1932) w tabeli historii; odchylenia Thomsona i zdanie Rutherforda opisane własnymi słowami.
+- B2: tabela Z 1–20 i zadanie bez podanego Z.
+- B3: tabela skali i liczb.
+- B4: sekcja G (Z bez podanego Z, jony, nuklid z ładunkiem).
+- B5: test — `!` przy każdym pytaniu, +6 pytań (S²⁻, ładunek z p i e, skala, ¹H, Na → Na⁺, Rutherford).
+- B6: fiszki (+7) i słownik (+8: izotop, izobar, izoton, ładunek elementarny, powłoka, orbital, nukleon, model atomu).
+- B7: klinika (+7 wierszy).
+- B8: olimpijska O5 (ładunek jonu) i O6 (masa atomu i liczba atomów); nagłówek bez „do zweryfikowania”.
+- B9: lekcje odwołane istnieją (F05–F07, F10, F11, F17, A01–A03, BIO.07.U08); FIZ-01 nie ma lekcji w repo — zamieniono na opis w tekście.
+- C: stan i stopka v1.1, tabela modeli (+`f04-nuklid-v01`), zdanie o odczycie Z z układu przed `periodic-54`, ciekawostka bez notki roboczej, changelog i notka GFX usunięte (notka w `chemia/plany/audyty/GFX_TODO_F04.md`).
 
-- Dodano: §0.5 wykład „od zera”, §8.5 nie-myl + mini-wykład „W skrócie — trzy pytania kontrolne”, §9.5 ciekawostki (3), §9.6 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami), 5 fiszek olimpijskich. Nic nie usunięto.
-- Poprawione: „System powtórek” — usunięto minuty i odstępy dni (kurs we własnym tempie, bez znaczników czasu), zostawiono kolejność powtórki.
-
+Nieprzyjęte:
+- C — `$$` w jednej linii (3×): zostaje; to konwencja silnika, jak w F01–F03.
+- C — kicker `MASTER v1.1`: zostaje; stopka ujednolicona do v1.1.
+- Odsyłacze `#mosty` do F05/F07/F10 zamieniono na nazwy lekcji (kotwica prowadziła do Dodatku A tej samej lekcji, a nie do wskazanej lekcji).
