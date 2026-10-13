@@ -1,74 +1,77 @@
 ---
 kod: PROMPT-R-BRAKUJACE
 stan: szkic — 2026-10-13
-opis: "Prompt dla AI / zadanie dla Claude: brakujące lekcje bloku R (R01, R02, R04, R08, R09) z zakresem, decyzją i sposobem wykonania. Szkielety w lekcje_md/ traktować jako zakres, nie jako treść do przepisania."
+opis: "Prompt dla AI: pięć osobnych lekcji bloku R (R01, R02, R04, R08, R09) z zakresem, sposobem wykonania i wynikiem do oddania. Szkielety w lekcje_md/ — jako lista zakresu, nie jako treść do przepisania."
 ---
 
-# Prompt: brakujące lekcje bloku R (chemia E8)
+# Prompt: osobne lekcje bloku R (chemia E8)
 
-## 0. Stan wyjściowy (sprawdzony 2026-10-13)
+Zadanie: napisz pięć osobnych lekcji w dialekcie che-modular, po jednym pliku MD na kod. Każda lekcja musi mieć własny zakres i nie może powielać treści innych lekcji — odwołuj się do nich linkiem zamiast kopiować.
 
-Powiązania w `plany/POWIAZANIA_CHE.md` wskazują kody, dla których nie ma pliku w `che-modular/lessons-md/gotowe/`. Po sprawdzeniu treści okazało się, że część z nich jest już pokryta przez gotowe lekcje:
+## 0. Pliki i ich granice
 
-| Kod | Gdzie jest treść | Co jest w gotowym pliku | Rekomendacja |
+| Kod | Plik docelowy | Pokrywa się z | Granica (czego NIE pisać) |
 |---|---|---|---|
-| **R01** Woda i roztwory | `gotowe/R03_woda_roztwory_stezenie_procentowe.md` (mocno pokrywa) | woda, koloid, rozpuszczalność (68 wystąpień), krystalizacja (25) | **nie pisać osobno**; powiązania R01 → R03 |
-| **R02** Rozpuszczalność | `gotowe/R03…` oraz `gotowe/LKO_KRZYWE…` | rozpuszczalność, krzywe (LKO) | **nie pisać osobno** albo: wydzielić z R03 tylko krzywe, jeśli R03 jest za długa |
-| **R04** Mol i masa molowa | brak w `gotowe/`; szkielet `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (42 KB, wspólny dla R04/R07/R08/R09, stary MASTER v1.0 jako „L009”) | — | **pisać nową lekcję** (jedyna prawdziwa luka) |
-| **R08** Reagent ograniczający | `gotowe/R07_stechiometria_z_nadmiarem.md` (50 wystąpień „ograniczając”) | pełna procedura nadmiaru | **przekierować** powiązanie R08 → R07; nie pisać osobno |
-| **R09** Wydajność reakcji | `gotowe/R07…` (36 wystąpień „wydajno”) | wydajność w R07 | **przekierować** R09 → R07, albo dopisać krótką sekcję do R07 |
+| R01 Woda i roztwory | `che-modular/lessons-md/gotowe/R01_woda_i_roztwory.md` | R03 | bez stężenia procentowego (to R03); skupić na wodzie, polarności, roztworze, zawiesinie, koloidzie |
+| R02 Rozpuszczalność | `…/R02_rozpuszczalnosc.md` | R03, LKO-KRZYWE | bez obliczeń stężenia % (R03); krzywe i krystalizacja |
+| R04 Mol i masa molowa | `…/R04_mol_masa_molowa.md` | LKO-STECH (zapowiedź) | bez stechiometrii z równań (R07) i bez objętości molowej (R06) |
+| R08 Reagent ograniczający | `…/R08_reagent_ograniczajacy.md` | R07 | krótka; procedura trzech kroków, bez powtarzania wykładu z R07 |
+| R09 Wydajność reakcji | `…/R09_wydajnosc_reakcji.md` | R07 | krótka; tylko wydajność i jej łączenie z nadmiarem |
 
-Szkielety R01/R02/R04+R07–R09 w `lekcje_md/R/` mają stan `W23 — …, W1 nieprzeprowadzony`. Nie przepisuj ich treści wprost; korzystaj z nich jako listy zakresu, jeśli potrzeba.
+Szkielety w `lekcje_md/R/` (R01, R02, `CHE.03.R04+R07-R09.stechiometria.md`) — traktuj jako **listę zakresu**. Nie przepisuj treści wprost; pisz od nowa, korzystając z zakresu.
 
-## 1. Zasady wspólne (dla każdej napisanej lekcji)
+## 1. Zasady wspólne
 
-1. **Dialekt che-modular:** front matter (`kod`, `uid`, `tytul`, `typ`, `dzial`, `poziom`, `wymaga`, `poglebia`, `wlasciciel`, `zrodla`, `opis`, `stan`, `kicker`, `lead`, `plakietki`, `stopka`) jak w `gotowe/R07_…md`.
+1. **Front matter** jak w `gotowe/R07_stechiometria_z_nadmiarem.md`: `kod`, `uid`, `tytul`, `typ`, `dzial`, `poziom`, `wymaga`, `poglebia`, `wlasciciel`, `zrodla`, `opis`, `stan`, `kicker`, `lead`, `plakietki`, `stopka`.
 2. **Wykład „od zera”:** sekcja `## N | Wykład — …` po definicjach (limit wymaga słowa „Wykład”, wielkość liter ma znaczenie).
-3. **Mini-wykłady** („W skrócie”/„Mini-wykład — …”) w 1–3 suchych miejscach; **ciekawostki** jako `::: karta extra | tytuł` (3–5, sprawdzone fakty).
-4. **Karty** `::: karta understand|extra|error|exam|core | tytuł`, zamykane `:::`.
-5. **Opis każdej grafiki** słownie w linii `@opis …` pod `@model`/`@zlewka`/`@viz`/obrazem (build tego wymaga).
-6. **Bez znaczników czasu** („5 min”, „ok. 45 min”), bez planów dziennych — kurs do samodzielnej nauki.
-7. **Dane liczbowe** (masy molowe, rozpuszczalności, stałe) sprawdzać; przy wątpliwości oznaczyć do weryfikacji. Masy: H 1, C 12, N 14, O 16, Na 23, Cl 35,5, Ca 40, S 32. Avogadro 6,02·10²³ mol⁻¹.
-8. **Stan:** `stan: szkic — <data>, bez audytu W1` — nie `W1`/`✅`, dopóki nie ma zewnętrznego audytu.
-9. **Build i kontrola:** `cd chemia/che-modular && python3 tools/md2html.py lessons-md/gotowe/<plik>.md`; z korzenia repo `python3 narzedzia/limity_lekcji.py <ścieżka-md>` (❌ blokuje). Po dodaniu pliku: wiersz w `chemia/plany/narzedzia/gen_f00.py` (sekcja „Uzupełnienia”) i powiązania w `plany/POWIAZANIA_CHE.md`.
-10. **Nazwa pliku:** `R04_mol_masa_molowa.md` w `che-modular/lessons-md/gotowe/`.
-11. **Commit** z trailerami, push na `claude/olimpiada-8-sprint`.
+3. **Mini-wykłady** (`W skrócie` / `Mini-wykład — …`) w 1–3 suchych miejscach; **ciekawostki**: 3–5 kart `::: karta extra | tytuł`, fakty sprawdzone.
+4. **Karty:** `::: karta understand|extra|error|exam|core | tytuł`, zamykane `:::`.
+5. **Opis każdej grafiki** słownie: linia `@opis …` pod `@model`/`@zlewka`/`@viz`/obrazem. Build tego wymaga. Grafiki tylko, gdy pomagają zrozumieć.
+6. **Bez znaczników czasu** („5 min”, „ok. 45 min”) i bez planów dziennych — kurs do samodzielnej nauki.
+7. **Dane liczbowe sprawdzać.** Masy: H 1, C 12, N 14, O 16, Na 23, Cl 35,5, Ca 40, S 32. Avogadro 6,02·10²³ mol⁻¹. Rozpuszczalność KNO₃ w 60 °C = 110 g/100 g H₂O (wartość ujednolicona z LKO-KRZYWE; odczyt z wykresu tolerancja 108–112 g). Wątpliwe dane oznaczyć „do weryfikacji”.
+8. **Stan:** `stan: szkic — 2026-10-13, bez audytu W1`. Nie pisz „W1” ani „✅”.
+9. **Ćwiczenia:** każda lekcja ma 8–15 zadań z kluczem i punktacją (zadania z krótkim wynikiem i pełnym zapisem).
 
-## 2. Zadania
+## 2. Zadania per lekcja
 
-### R04 — Mol i masa molowa (NOWA LEKCJA, jedyna luka)
+### R01 — Woda i roztwory
+- **Zakres:** budowa cząsteczki wody i jej polarność; „podobne rozpuszcza podobne”; roztwór (substancja rozpuszczona + rozpuszczalnik), zawiesina, koloid (efekt Tyndalla); czynniki szybkości rozpuszczania (rozdrobnienie, mieszanie, temperatura); hydratacja jonów i dipoli; zapisy stanów (s), (l), (g), (aq); most do J01 (dysocjacja soli).
+- **Wymaga:** F03, F15. **Poglądza:** R02, J01.
+- **Pułapki:** rozpuszczanie to nie reakcja chemiczna (w ogólności); koloid nie „osadza się” jak zawiesina.
 
-- **Zakres:** mol jako jednostka liczności; liczba Avogadra; masa molowa M (g/mol) z mas atomowych i wzoru; przeliczenia **masa ↔ mol ↔ liczba cząstek**; związek z masą cząsteczkową Mr (ta sama liczba, inna jednostka); mol w równaniach jako przejście do stechiometrii molowej.
-- **Co wykorzystać:** szkielet `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` — **tylko część o molu i masie molowej** (sekcje mol / masa molowa); reszta (stechiometria, wydajność) jest już w R07. Treść przepisać na nowo w dialekcie gotowych lekcji, nie kopiować.
-- **Wymaga:** F17 (równania), F12 (wzory), R03 (roztwory — tylko jako odniesienie do stężeń).
-- **Poglądza:** R05 (stężenie molowe), R07 (stechiometria), LKO-STECH (masy i nadmiar — zapowiedź mola w zał. LKO-STECH → R04).
-- **Ćwiczenia:** 15–20 zadań z kluczem (przeliczenia ×3 kierunki, Mr ↔ M, liczba cząstek w 1 g H₂O, mol gazu w 1 dm³ — bez Vm, bo to R06).
-- **Pułapki (wykład + karta error):** mylenie mola z gramem; mol atomów vs cząsteczek (O₂ vs O); M z Mr bez jednostki; zapis „1 mol H₂O = 18 g” bez wzoru.
+### R02 — Rozpuszczalność
+- **Zakres:** definicja rozpuszczalności (g/100 g H₂O w danej T); roztwór nasycony, nienasycony, przesycony; krzywe rozpuszczalności (odczyt z wykresu); wpływ T na ciała stałe (rośnie, zwykle) i na gazy (maleje); krystalizacja przez ochłodzenie i odparowanie; osad = S(gorące) − S(zimne) (prosty wariant bez skalowania).
+- **Wymaga:** R01. **Poglądza:** R03, J04, J10, LKO-KRZYWE (pogłębienie).
+- **Pułapka:** „110%” jako stężenie nasyconego roztworu KNO₃ w 60 °C — stężenie liczymy z masy roztworu (110/210 ≈ 52,4%), nie z masy wody. Nie wprowadzać tu obliczeń % (to R03).
 
-### R01 — Woda i roztwory (DECYZJA: nie pisać osobno)
+### R04 — Mol i masa molowa
+- **Zakres:** mol jako jednostka liczności; liczba Avogadra; masa molowa M (g/mol) z mas atomowych i wzoru; przeliczenia **masa ↔ mol ↔ liczba cząstek**; Mr i M — ta sama liczba, inna jednostka; mol w zapisie równania (zapowiedź stechiometrii molowej).
+- **Materiał pomocniczy:** w szkielecie `CHE.03.R04+R07-R09` tylko sekcje o molu i masie molowej (przepisać na nowo, nie kopiować).
+- **Wymaga:** F12, F17. **Poglądza:** R05 (stężenie molowe), R07.
+- **Pułapki:** mol gramów vs mol cząstek; mol atomów vs cząsteczek (O vs O₂); „1 mol H₂O = 18 g” bez wzoru i jednostki.
 
-- **Rekomendacja:** powiązania `R01 → …` przekierować na `R03`. R03 już obejmuje polarność wody, roztwór/zawiesinę/koloid, rozpuszczanie i stężenie procentowe.
-- **Jeśli jednak potrzebna osobna lekcja** (decyzja użytkownika): zakres = szkielet R01 (budowa i polarność wody, „podobne rozpuszcza podobne”, roztwór/zawiesina/koloid, czynniki szybkości rozpuszczania, hydratacja, most do J01). Musi **wyraźnie różnić się od R03** — inaczej powiel. Lekcja krótka (ok. 25–35 KB), bez powtórzenia stężeń.
+### R08 — Reagent ograniczający
+- **Zakres:** który substrat się wyczerpie — procedura: (1) masy → mole, (2) porównanie ilości z równania (stosunek stechiometryczny), (3) wniosek: ograniczający i ile produktu powstanie. Przykład z LKO-SYM-A2 zad. 7 (HCl i CaCO₃).
+- **Wymaga:** R07, R04. **Poglądza:** LKO-STECH.
+- **Granica:** wykład o nadmiarze już jest w R07 — odwołaj się linkiem, nie powtarzaj.
 
-### R02 — Rozpuszczalność (DECYZJA: nie pisać osobno, chyba że R03 jest za długa)
+### R09 — Wydajność reakcji
+- **Zakres:** wydajność = m(rzeczywista) / m(teoretyczna) · 100%; obliczanie m(teoretycznej) z równania; obliczanie masy rzeczywistej z wydajności; łączenie z nadmiarem (najpierw ograniczający, potem wydajność).
+- **Wymaga:** R07. **Poglądza:** R08, LKO-SYM-A2 (zad. 7d, ×0,9).
+- **Pułapka:** liczenie wydajności z masy substratu zamiast z masy produktu teoretycznego.
 
-- **Rekomendacja:** powiązania `R02 → …` przekierować na R03 (sekcja rozpuszczalności) lub na `LKO-KRZYWE` dla pogłębienia.
-- **Jeśli osobna:** zakres = szkielet R02 (definicja rozpuszczalności, roztwór nasycony / nienasycony / przesycony, krzywe rozpuszczalności, wpływ T na ciała stałe i gazy, krystalizacja, odczyt z wykresu w g/100 g H₂O). Krzywe **z wartościami zgodnymi z LKO-KRZYWE** (KNO₃ 60 °C = 110 g/100 g H₂O; odczyt z wykresu tolerancja 108–112 g).
-- **Pułapka:** „110%” jako stężenie nasyconego roztworu KNO₃ w 60 °C — stężenie liczymy z masy roztworu (110/210 ≈ 52,4%), nie z masy wody.
+## 3. Procedura
 
-### R08 — Reagent ograniczający (DECYZJA: przekierować na R07)
+1. Przeczytaj granice (§0) i zakres (§2) dla danej lekcji. Sprawdź w `gotowe/`, czy nie powstał już plik o tym zakresie.
+2. Napisz lekcję w dialekcie (§1).
+3. Zbuduj HTML: `cd chemia/che-modular && python3 tools/md2html.py lessons-md/gotowe/<plik>.md`.
+4. Limity z korzenia repo: `python3 narzedzia/limity_lekcji.py chemia/che-modular/lessons-md/gotowe/<plik>.md` (❌ blokuje).
+5. Dopisz wpis w `chemia/plany/narzedzia/gen_f00.py` (sekcja „Uzupełnienia”) i zweryfikuj składnię `python3 -m py_compile`.
+6. Commit z trailerami i push na `claude/olimpiada-8-sprint`.
 
-- **Rekomendacja:** powiązanie `R08 → LKO-STECH` zostawić, a dodać `R08 → R07` (R07 ma pełną procedurę nadmiaru). Nie pisać osobnego pliku.
-- **Jeśli chcesz osobną krótką lekcję** (np. do pogłębienia): tylko ćwiczenia w trzech krokach (masy → mole → porównanie w stosunku stechiometrycznym), bez powtarzania wykładu z R07; odwołanie do R07 zamiast kopii.
+## 4. Wynik do oddania
 
-### R09 — Wydajność reakcji (DECYZJA: przekierować na R07 lub dopisać sekcję)
-
-- **Rekomendacja:** powiązanie `R09 → R07` (R07 ma 36 wystąpień wydajności). Jeśli R07 jest za długa, wydzielić sekcję „Wydajność” do osobnej lekcji krótkiej (ok. 15–20 KB).
-- **Zakres (jeśli osobna):** wydajność = m(rzeczywista) / m(teoretyczna) · 100%; zastosowanie w zadaniach; łączenie z nadmiarem (najpierw ograniczający, potem wydajność); pułapka: wydajność liczona z masy substratu zamiast z masy produktu teoretycznego.
-- **Źródło:** szkielet `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` — tylko sekcja wydajności, przepisana, nie skopiowana. Wykorzystać przykład z `LKO-SYM-A2` zad. 7d (×0,9).
-
-## 3. Wynik, który przyjmuję
-
-- Lista zmienionych/nowych plików i ich rozmiar (KB) przed i po.
-- Wynik `limity_lekcji.py` i `md2html.py` dla każdego pliku.
-- Krótka notka: które powiązania przekierowano i dlaczego.
+- Lista plików: nazwa, rozmiar md i html (KB), `stan`.
+- Wynik `limity_lekcji.py` dla każdego pliku.
+- Lista wątpliwych danych do weryfikacji.
+- Tabela: które powiązania w `POWIAZANIA_CHE.md` są teraz domknięte.
