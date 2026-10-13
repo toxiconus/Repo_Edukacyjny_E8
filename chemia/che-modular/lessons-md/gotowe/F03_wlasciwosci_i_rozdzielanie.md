@@ -7,6 +7,7 @@ kicker: F03 · FUNDAMENTY · MASTER v1.1
 lead: Trzecia lekcja bloku fundamentów: jak właściwość substancji staje się narzędziem — do rozpoznania próbki, odróżnienia zjawiska od reakcji
 lead: i rozdzielenia mieszaniny. Najważniejsza reguła: metoda rozdzielania jest konsekwencją różnicy właściwości, a nie nazwy mieszaniny.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F03 v1.0 MASTER** · Właściwości i rozdzielanie mieszanin · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 12 punktów
@@ -335,7 +336,7 @@ Każdą odpowiedź „jak rozdzielić?” buduj w trzech krokach. **1)** Nazwij 
 
 ## 10 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa
+::: karta exam | A. Podstawa — właściwości i zjawiska (4 pkt)
 1. Podziel na właściwości fizyczne i chemiczne: gęstość, palność, barwa, rdzewienie, temperatura wrzenia, reakcja z kwasem, rozpuszczalność.
 2. Zjawisko czy reakcja: topnienie masła, spalanie świecy, rozpuszczanie cukru, kwaśnienie mleka, parowanie wody, rdzewienie gwoździa.
 3. Dobierz metodę: a) piasek + woda, b) sól + woda (chcę sól), c) etanol + woda, d) barwniki w tuszu, e) woda + olej, f) opiłki żelaza + siarka.
