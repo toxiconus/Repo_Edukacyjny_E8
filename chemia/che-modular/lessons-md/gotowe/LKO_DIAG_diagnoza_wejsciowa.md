@@ -4,10 +4,11 @@ uid: CHE.00.LKO.diagnoza_wejsciowa
 tytul: Diagnoza wejściowa — fundamenty konkursu LKO (punkty I–V podstawy)
 typ: diagnoza
 opis: 10 zadań, 20 punktów, 30 minut w formach konkursu LKO (dobieranie, prawda–fałsz, luka, zadania otwarte). Klucz z punktacją, karta wyników, tabela „sekcja → sesja" i progi decyzji. Pytanie badawcze o trzecią powłokę (bez punktów).
-kicker: LKO-DIAG · DIAGNOZA · SZKIC
+kicker: LKO-DIAG · DIAGNOZA
 lead: Ta diagnoza nie uczy nowego materiału. Mierzy, od czego zacząć przygotowanie do etapu I: które sekcje są mocne, a które tracą punkty. Wynik decyduje o tym, które sesje Sprintu A będą pełne, a które skrócone.
 plakietki: [[basic:E8]][[olimp:LKO]]
-stopka: **CHEMIA LKO-DIAG · szkic 2026-10-13 · diagnoza przed Sprintem A**
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stopka: **CHEMIA LKO-DIAG · 2026-10-13 · bez audytu W1 · diagnoza przed Sprintem A**
 wymaga: brak (diagnoza bada F01–F03, F04–F06, F09, F11–F13, F16–F17, N01, N02, N06, R01–R03)
 ---
 
@@ -79,10 +80,10 @@ Konfiguracji do Z = 36 nie testujemy: to materiał nowy (lekcja LKO-Z36). Jest t
 3. cukier + woda
 
 Metody: a) destylacja · b) sączenie · c) dekantacja · d) rozdział magnetyczny · e) odparowanie
+:::
 
 ::: odp | Klucz — Z1
 1 → b (sączenie) · 2 → d (rozdział magnetyczny) · 3 → e (odparowanie). Po 1 pkt za każdą parę. Para „bliskiej pomyłki" (3 → a, destylacja) — 0 pkt, ale odnotuj: to błąd do omówienia.
-:::
 :::
 
 ::: karta exam | Sekcja B — Budowa materii, wartościowość, wzory (6 pkt)
@@ -97,10 +98,10 @@ b) W cząsteczce azotu N₂ między atomami istnieje wiązanie jonowe. ____
 **Z4. Otwarte krótkie (2 pkt).** Ułóż wzory sumaryczne:
 a) tlenku glinu — glin jest trójwartościowy, tlen dwuwartościowy: ____ (1 pkt)
 b) siarczanu(VI) glinu — kation Al³⁺, anion SO₄²⁻: ____ (1 pkt)
+:::
 
 ::: odp | Klucz — Z2–Z4
 Z2a: **16** (A − Z = 32 − 16); błąd typu A + Z — odnotuj jako błąd koncepcyjny. Z2b: **6** (2 + 8 + 6 = 16 = Z). Z3a: **prawda**. Z3b: **fałsz** (wiązanie kowalencyjne). Z4a: **Al₂O₃** (znaki wartościowości trzeba „skrzyżować"; zapis bez krzyżowania — odnotuj). Z4b: **Al₂(SO₄)₃** — 1 pkt za poprawny wzór. Zapis bez nawiasu (AlSO₄₃ albo Al₂SO₄₃) — 0 pkt i odnotuj: to częsty błąd konkursowy, który kosztuje punkty.
-:::
 :::
 
 ::: karta exam | Sekcja C — Reakcje i równania (4 pkt)
@@ -111,20 +112,20 @@ Z2a: **16** (A − Z = 32 − 16); błąd typu A + Z — odnotuj jako błąd kon
 3. Fe + CuSO₄ → FeSO₄ + Cu
 
 **Z6. Luka (1 pkt).** Dobierz współczynniki: ____ CH₄ + ____ O₂ → ____ CO₂ + ____ H₂O
+:::
 
 ::: odp | Klucz — Z5–Z6
 Z5: 1 → **analiza**, 2 → **synteza**, 3 → **wymiana**; po 1 pkt. Z6: **1, 2, 1, 2**; 1 pkt tylko przy kompletnej poprawności.
-:::
 :::
 
 ::: karta exam | Sekcja D — Tlen, wodór, spalanie (2 pkt)
 **Z7. Prawda–fałsz (2 pkt).**
 a) Spalanie niecałkowite metanu może wytworzyć trujący tlenek węgla(II). ____
 b) Wodór jest gazem cięższym od powietrza. ____
+:::
 
 ::: odp | Klucz — Z7
 Z7a: **prawda** (1 pkt). Z7b: **fałsz** (wodór jest ok. 14 razy lżejszy od powietrza; 1 pkt).
-:::
 :::
 
 ::: karta exam | Sekcja E — Roztwory, stężenie, rozpuszczalność (3 pkt)
@@ -135,30 +136,30 @@ Z7a: **prawda** (1 pkt). Z7b: **fałsz** (wodór jest ok. 14 razy lżejszy od po
 - w 60 °C: 110 g w 100 g wody
 
 Czy roztwór otrzymany przez rozpuszczenie 30 g KNO₃ w 100 g wody w temperaturze 20 °C jest nasycony? **Uzasadnij, powołując się na dane.**
+:::
 
 ::: odp | Klucz — Z8–Z9
 Z8: Cp = m(substancji) / m(roztworu) · 100% = 15 g / (15 g + 85 g) · 100% = **15%**. Punkty: 1 za poprawny zapis (wzór albo ułamek z sumą w mianowniku), 1 za wynik w procentach. Typowy błąd: mianownik 85 g zamiast 100 g — najdroższy błąd etapu I.
 Z9: **Nie — roztwór nienasycony**: w 20 °C w 100 g wody rozpuści się najwyżej 32 g, a rozpuszczono 30 g (30 < 32). 1 pkt tylko z uzasadnieniem odwołującym się do danych; samo „nie" — 0 pkt.
-:::
 :::
 
 ::: karta exam | Sekcja F — Obserwacja vs wniosek (2 pkt)
 **Z10. Otwarte rozszerzone (2 pkt).** Uczeń wrzucił kawałek węglanu wapnia (kredy) do kwasu solnego i zanotował w dzienniku: *„Zachodziła reakcja chemiczna, bo wydzielał się gaz."*
 a) Rozdziel tę notatkę na **obserwację** i **wniosek** (1 pkt).
 b) Zaprojektuj próbę, która sprawdzi, czy wydzielający się gaz to dwutlenek węgla (co robisz i co obserwujesz w wyniku dodatnim) (1 pkt).
+:::
 
 ::: odp | Klucz — Z10
 Z10a: obserwacja — wydziela się bezbarwny gaz (bąbelki), kreda znika; wniosek — zachodzi reakcja chemiczna (kreda reaguje z kwasem). 1 pkt za poprawne rozdzielenie. Uwaga: zdanie „bo wydzielał się gaz" łączy obserwację z wnioskiem — błąd do omówienia.
 Z10b: wprowadzić gaz do wody wapiennej; wynik dodatni: **mętnienie** wody wapiennej. 1 pkt za nazwę odczynnika i obserwację.
 :::
-:::
 
 ::: karta understand | ★ Pytanie badawcze (poza punktacją i czasem)
 W klasie 7 uczyłeś się, że trzecia powłoka mieści najwyżej 8 elektronów. Atom **bromu ma 35 elektronów**. Spróbuj zapisać jego konfigurację i odpowiedz: **ile elektronów rzeczywiście może pomieścić trzecia powłoka w tym atomie?** Uzasadnij swój tok myślenia. Nie znasz jeszcze reguły — pytanie bada, jak myślisz o tym, czego nie wiesz; zapisz odpowiedź, nawet jeśli niepewną.
+:::
 
 ::: odp | Interpretacja ★ (dla prowadzącego)
 Wzorcowa odpowiedź to **18 na powłoce M**, czyli Br: 2,8,18,7. Typowy błąd „2,8,8,17" albo „2,8,17" z uzasadnieniem „8 na M z klasy 7" nie jest punktowany, ale mówi, że uczeń przenosi regułę poza zakres, w którym była prawdziwa. To materiał na sesję o konfiguracjach do Z = 36 (lekcja LKO-Z36, sekcja 1.3).
-:::
 :::
 
 ---
@@ -180,6 +181,10 @@ Wzorcowa odpowiedź to **18 na powłoce M**, czyli Br: 2,8,18,7. Typowy błąd �
 | **Razem** | **20** | |
 
 ---
+
+::: karta understand | W skrócie — trzy pytania po każdym błędzie
+Zanim przejdziesz dalej, zapytaj: (1) czy wiedziałem, że to robię (brak wiedzy, błąd rozumowania, błąd zapisu czy zła lektura polecenia)? (2) czy byłem pewny? (3) co konkretnie poprawię — jedną regułę, jedno równanie, jeden nawias? Jedno zdanie na każde pytanie wystarczy.
+:::
 
 ## Interpretacja — z wyniku do decyzji
 
@@ -236,18 +241,64 @@ Diagnoza mierzy **stan wyjścia**, nie zdolności. Nie wolno z niej wyciągać t
 
 Druga diagnoza (ta sama forma, nowe zadania) — w dniu symulacji S8, żeby zmierzyć przyrost i skorygować ostatnie 48 godzin.
 
+## Fiszki {#fiszki}
+
+::: fiszki
+Wynik diagnozy | mapa mocnych i słabych sekcji, nie ocena człowieka | basic:podstawa
+Izotop | atomy tego samego pierwiastka o różnej liczbie neutronów | basic:podstawa
+Liczba neutronów | A − Z | basic:podstawa
+Wartościowość w wzorze | „krzyżujemy" wartościowości: Al(III) i O(II) → Al₂O₃ | basic:podstawa
+Stężenie procentowe | m(substancji) ÷ m(roztworu) · 100%; mianownik to SUMA mas | basic:podstawa
+Nasycony czy nie? | porównaj masę substancji z rozpuszczalnością w danej temperaturze w 100 g wody | understand:ROZUMIENIE
+Obserwacja vs wniosek | „wydziela się gaz" to obserwacja; „zachodzi reakcja, bo gaz się wydziela" to wniosek | understand:ROZUMIENIE
+Test na CO₂ | woda wapienna mętnieje | exam:KONKURS
+:::
+
+## Test krótki {#test}
+
+? Atom siarki ma Z = 16 i A = 32. Liczba neutronów wynosi:
++ 16
+- 32
+- 48
+- 8
+
+? Wzór sumaryczny tlenku glinu:
++ Al₂O₃
+- AlO
+- Al₃O₂
+- AlO₃
+
+? Stężenie roztworu otrzymanego z 15 g cukru i 85 g wody:
++ 15%
+- 17,6%
+- 85%
+- 100%
+
+? Czy 30 g KNO₃ rozpuści się w 100 g wody w 20 °C (rozpuszczalność 32 g/100 g)?
++ tak, roztwór jest nienasycony
+- nie, roztwór jest nasycony
+- tak, roztwór jest nasycony
+- nie da się tego ustalić
+
+? Wodór w porównaniu z powietrzem jest:
++ lżejszy
+- cięższy
+- równie ciężki
+- ciężki tylko w temperaturze wrzenia
+
+
 ## Ciekawostki {#ciekawostki}
 
 ::: karta extra | Dlaczego woda wapienna mętnieje
 Woda wapienna to roztwór wodorotlenku wapnia. Dwutlenek węgla tworzy z nim trudno rozpuszczalny węglan wapnia, który daje mętny osad. Ten sam osad powstaje w kredzie, bo kreda to właśnie węglan wapnia — stąd bierze się próba z Z10b.
 :::
 
-::: karta extra | Wodór jest lekki, ale nie „najlżejszy z gazów" w każdym sensie
+::: karta extra | Wodór — najlżejszy gaz, ale łatwopalny
 Wodór ma najmniejszą masę cząsteczkową spośród gazów, dlatego unosi się w powietrzu. Jego lekkość jest jednak praktycznym problemem: wodór jest bardzo łatwopalny, więc jego przechowywanie wymaga ostrożności (zadanie Z7b dotyczy tej cechy).
 :::
 
 ::: karta extra | Kalkulator w konkursie
-Zakres LKO 2026/27 dopuszcza kalkulator prosty (dodawanie, odejmowanie, mnożenie, dzielenie) na każdym etapie. To nie zwalnia z zapisu obliczenia: w Z8 punkty dostaje się za zapis wzoru, nie za sam wynik.
+Przyjęte założenie: zakres LKO 2026/27 dopuszcza kalkulator prosty (dodawanie, odejmowanie, mnożenie, dzielenie) — do potwierdzenia w regulaminie. To nie zwalnia z zapisu obliczenia: w Z8 punkty dostaje się za zapis wzoru, nie za sam wynik.
 :::
 
 ::: log | LOG ZMIANY — 2026-10-13
