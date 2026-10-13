@@ -10,7 +10,7 @@ poglebia: "J04; J11 (analiza jakościowa — etap III/LO); LKO-SYM-A2; REV02"
 wlasciciel: "brak nowych właścicieli pojęć — obserwacja/wniosek ma właściciela F01/F16; suplement integruje: jednolity schemat opisu, katalogi obserwacyjne (gazy, osady, płomienie), procedura planowania, analiza cudzego opisu"
 zrodla: "Zakres konkursu chemicznego LKO 2026/27 — umiejętności wspólne (planowanie i analizowanie opisów doświadczeń; obserwacja vs wniosek; planowanie cykli) oraz formy zadań; zakres 2026/27 do potwierdzenia po publikacji"
 opis: "Siedem elementów opisu doświadczenia z kryterium punktowania; reguły języka obserwacji i wniosku; katalog gazów (O₂, CO₂, H₂, para wodna + NH₃, HCl, H₂S), barw osadów, roztworów i płomieni; matryca rozróżniania jednym odczynnikiem; zasada jednej różnicy; analiza cudzego opisu z 5 typami błędów. 24 zadania (A–F) z kluczem i punktacją."
-stan: "szkic — 2026-10-13, pełna treść (odpowiedź kompletna); bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 kicker: "LKO-DOSW · I–II etap"
 lead: "Dobre doświadczenie to pytanie, przebieg, obserwacje i wnioski, a obserwacja i wniosek to dwie różne rzeczy. Ta lekcja uczy schematu opisu i katalogów: gazy, osady, barwy, płomienie."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO I–II / OLIMP]]
@@ -19,6 +19,39 @@ stopka: "**LKO-DOSW szkic** · Katalog doświadczeń · 2026"
 
 
 # LKO-DOSW — Katalog doświadczeń
+
+::: minimum | Muszę umieć — 10 punktów
+1. Opisuję doświadczenie według 7 elementów: cel, odczynniki i przybory, schemat, przebieg, obserwacje, wnioski, równania i BHP.
+2. Oddzielam obserwację (zmysły, bez nazw) od wniosku (interpretacja z nazwami i „bo").
+3. Czynność („dodano", „podgrzewano") to przebieg, nie obserwacja.
+4. Znam test i obserwację dla O₂, CO₂, H₂, pary wodnej, NH₃, HCl i H₂S.
+5. Rozpoznaję osady po barwie: biały, niebieski Cu(OH)₂, rdzawy Fe(OH)₃, czarny PbS/CuS.
+6. Z barwy roztworu rozpoznaję kation: błękit Cu²⁺, zielonkawy Fe²⁺, brunatny Fe³⁺.
+7. Rozróżniam dym (stałe), mgiełkę (ciecz) i parę (gaz).
+8. Planuję rozróżnienie 2–3 substancji JEDNYM odczynnikiem (matryca).
+9. W porównaniu zmieniam TYLKO badany czynnik (jedna różnica) i nazywam kontrolę zmiennych.
+10. Znajduję i poprawiam 5 typowych błędów w cudzym opisie.
+:::
+
+::: warstwy
+- e8 | <b>Podstawa:</b> obserwacja vs wniosek, katalog gazów, osadów i roztworów, schemat opisu.
+- understand | <b>Rozumienie:</b> dlaczego test potwierdzający idzie PRZED wnioskiem i dlaczego jedna różnica decyduje o wyniku porównania.
+- contest | <b>Konkurs:</b> matryca rozróżniania, analiza cudzego opisu, planowanie kolejności testów przy spalaniu.
+- extra | <b>Ambitne:</b> chromatografia i analiza jakościowa kationów (LO/etap III, poza zakresem tej lekcji).
+:::
+
+::: rdzen | Rdzeń lekcji — najpierw to
+- [§1](#wyklad-schemat) — schemat 7 elementów i reguły języka obserwacji.
+- [§2](#wyklad-gazy) i [§3](#wyklad-reakcje) — katalogi gazów, osadów, roztworów i płomieni.
+- [§4](#wyklad-planowanie) — matryca i zasada jednej różnicy.
+- [ZADANIA](#zadania) — formy LKO z kluczem przy każdym zadaniu.
+:::
+
+## 0.1 | Jak pracować z lekcją {#jak-pracowac}
+
+Przeczytaj §1 (schemat i reguły R1–R6), potem katalogi §2–§3 jako „karty 30-sekundowe" — najpierw pokryj tabelę i sprawdź, co pamiętasz. Zadania rób dopiero po §4. Rozwiązując, zapisuj każdą odpowiedź w schemacie 7 elementów.
+
+---
 
 ## Lustro i most
 
@@ -33,7 +66,7 @@ stopka: "**LKO-DOSW szkic** · Katalog doświadczeń · 2026"
 
 ---
 
-## 1 | Wykład — Schemat opisu i język obserwacji
+## 1 | Wykład — Schemat opisu i język obserwacji {#wyklad-schemat}
 
 ### 1.1 Siedem elementów (to jest rubryka punktowania arkusza)
 
@@ -87,9 +120,13 @@ Ocenia się, czy zestaw da się odtworzyć z rysunku, nie jego urodę. Minimum:
 
 Rada: odręczny schemat 5 linii z podpisami daje pełny punkt; obraz bez podpisów — zero.
 
+::: karta understand | W skrócie — opis w 7 krokach i jedna zasada
+Każde doświadczenie opisujesz tym samym szablonem. Obserwacja mówi, CO WIDZISZ (zmysły, bez nazw). Wniosek mówi, CO Z TEGO WYNIKA („…, bo …", z nazwami). Czynność to przebieg, nie obserwacja.
+:::
+
 ---
 
-## 2 | Wykład — Katalog gazów: otrzymywanie → zbieranie → wykrywanie
+## 2 | Wykład — Katalog gazów: otrzymywanie → zbieranie → wykrywanie {#wyklad-gazy}
 
 Tabela zbiorcza (tag **[II]** = etap II LKO; bez tagu = etap I):
 
@@ -115,7 +152,7 @@ Tabela zbiorcza (tag **[II]** = etap II LKO; bez tagu = etap I):
 
 ---
 
-## 3 | Wykład — Katalog reakcji „w probówce": barwy i zjawiska
+## 3 | Wykład — Katalog reakcji „w probówce": barwy i zjawiska {#wyklad-reakcje}
 
 ### 3.1 Osady — tabela barw (najdroższa tabela konkursu)
 
@@ -161,7 +198,7 @@ Barwa roztworu to ZA DARMO identyfikacja kationu — połowa zadań detektywisty
 
 ---
 
-## 4 | Wykład — Planowanie: matryca i jedna różnica
+## 4 | Wykład — Planowanie: matryca i jedna różnica {#wyklad-planowanie}
 
 ### 4.1 Matryca rozróżniania — jeden odczynnik, kilka wyników
 
@@ -205,6 +242,10 @@ Klasa zadań: „Wykaż eksperymentalnie, że produkt spalania świecy zawiera C
 2. gaz ze spalania prowadzisz (lejkiem/poganiaczem) do wody wapiennej → **mętnienie** → wniosek: CO₂.
 Kolejność jest punktowana: najpierw para (zlewka zimna), potem CO₂ (woda wapienna).
 
+::: karta understand | W skrócie — matryca w trzech krokach
+1. Wypisz substancje do rozróżnienia. 2. Dla każdego kandydata-odczynnika przewidź wynik z KAŻDĄ substancją. 3. Wybierz ten, którego wyniki są RÓŻNE dla wszystkich par — i tylko wtedy zapisz obserwacje.
+:::
+
 ---
 
 ## 5 | Wykład — Analiza cudzego opisu: pięć typów błędów
@@ -221,7 +262,7 @@ Procedura naprawy: przepuść opis przez checklistę 1.1 (7 elementów) i reguł
 
 ---
 
-## Ciekawostki
+## Ciekawostki {#ciekawostki}
 
 ::: karta extra | Bezwodny siarczan(VI) miedzi(II) jako wskaźnik wody
 Bezwodny CuSO₄ jest biały, a po przyłączeniu wody tworzy błękitny uwodniony siarczan (CuSO₄·5H₂O). Przemiana jest odwracalna: po ogrzaniu wraca do białej postaci — dlatego często służy jako wskaźnik obecności wody.
@@ -261,8 +302,7 @@ Papierek nasączony octanem ołowiu(II) czernieje w obecności H₂S, bo powstaj
 
 *Mapowanie: W1 → A1–A4, B1–B4, C1 · W2 → C2, C3, D1, D2, E1 · W3 → D1, E2, E3 · W4 → E4, E5, F1, F2, F3 · W5 → F4.*
 
-### A. Zamknięte
-
+::: karta exam | Zadania A — zamknięte (4 pkt)
 **A1.** Które zdanie jest **obserwacją**?
 a) Wydzielał się dwutlenek węgla.  b) Powstał biały osad.  c) Zaszła reakcja chemiczna, bo burzyło.  d) Powstała sól i woda.
 
@@ -274,18 +314,34 @@ a) Cu(OH)₂  b) Fe(OH)₃  c) AgCl  d) PbS
 
 **A4.** Który zestaw wymaga PRZED rozpoczęciem ogrzewania wykonania próby czystości?
 a) rozkład H₂O₂ z MnO₂  b) redukcja CuO strumieniem H₂  c) marmur + HCl  d) rozpuszczanie NaCl
+:::
 
-### B. Prawda–fałsz
+::: odp | Pokaż klucz
+**A1 — b** (a, c, d to wnioski; c dodatkowo miesza czynność z wnioskiem) · 1 pkt
+**A2 — b** · 1 pkt
+**A3 — b** · 1 pkt
+**A4 — b** (strumień H₂ + ogrzewanie bez próby czystości = ryzyko wybuchu) · 1 pkt
+:::
 
+::: karta exam | Zadania B — prawda–fałsz (6 pkt)
 **B1.** „Roztwór ma odczyn kwasowy" jest obserwacją.
 **B2.** „Nie zaobserwowano zmian" może być kluczowym wnioskiem o braku reakcji.
 **B3.** Białe dymy NH₃ + HCl to kropelki roztworu.
 **B4.** Fenoloftaleina w kwasie solnym zabarwia się na malinowo.
 **B5.** W doświadczeniu porównawczym próby powinny różnić się wyłącznie badanym czynnikiem.
 **B6.** Rysunek schematu zestawu musi być artystyczny, żeby uzyskać punkt.
+:::
 
-### C. Luki — uzupełnij tabelę doświadczenia
+::: odp | Pokaż klucz
+**B1 — F** (wniosek) · 1 pkt
+**B2 — P** · 1 pkt
+**B3 — F** (drobiny stałe — dym) · 1 pkt
+**B4 — F** (w kwasie fenoloftaleina pozostaje bezbarwna) · 1 pkt
+**B5 — P** · 1 pkt
+**B6 — F** (liczy się odtwarzalność i podpisy) · 1 pkt
+:::
 
+::: karta exam | Zadania C — luki w opisie doświadczenia (5 pkt)
 **C1.** Doświadczenie: wykrywanie wody w gazie nieznany.
 - przebieg: przepuszcza się gaz nad ____ bezwodnym;
 - obserwacja: substancja ____;
@@ -300,68 +356,92 @@ a) rozkład H₂O₂ z MnO₂  b) redukcja CuO strumieniem H₂  c) marmur + HCl
 - przebieg: mieszaninę chlorku amonu z ____ (podaj nazwę) ogrzewa się; gaz zbiera się w zlewce dnem do ____;
 - obserwacja (test): mokry czerwony lakmus ____;
 - wniosek: gaz jest ____.
+:::
 
-### D. Dobieranie
+::: odp | Pokaż klucz
+**C1** — CuSO₄ · błękitnieje · pary wodnej · po 0,5 → 1,5 pkt
+**C2** — kwasu solnego (rozcieńczonego!) · mętnienie po wprowadzeniu do wody wapiennej · mętnienie = CaCO₃↓ z CO₂ · 1,5 pkt
+**C3** — wapnem gaszonym (Ca(OH)₂) · do GÓRY · sinieje · zasadowy (amoniak) · 2 pkt
+:::
 
+::: karta exam | Zadania D — dobieranie (3,5 pkt)
 **D1.** Połącz odczynnik z wykrywaniem (jedna para zbędna):
 1. woda wapienna · 2. bezwodny CuSO₄ · 3. papier ołowiowy · 4. tlące się łuczywo
 a) H₂S [II] · b) CO₂ · c) H₂O (para) · d) O₂ · e) NH₃
 
 **D2.** Do rozróżnienia par wybierz z puli NAJLEPSZY odczynnik (pula: woda · HCl(roz.) · fenoloftaleina · CuSO₄ bezwodny):
 1. proszek CuO vs proszek Cu · 2. NaOH(aq) vs HCl(aq) · 3. CaCO₃(s) vs Na₂CO₃(s)
+:::
 
-### E. Otwarte krótkie
+::: odp | Pokaż klucz
+**D1** — 1→b · 2→c · 3→a · 4→d (zbędne: e) · po 0,5 → 2 pkt
+**D2** — 1→HCl (roztwór błękitny vs brak zmian) · 2→fenoloftaleina (malina vs bezbarwna) · 3→woda (osad vs roztwór) · po 0,5 → 1,5 pkt
+:::
 
+::: karta exam | Zadania E1–E3 — otwarte krótkie (7 pkt)
 **E1.** Popraw błędne zdanie tak, aby rozdzielić obserwację i wniosek: *„Zaobserwowano, że powstała sól i woda, ponieważ roztwór wskaźnika czerwoneł."*
 **E2.** Zapisz obserwacje i wnioski dla reakcji gwóźdź żelazny + CuSO₄(aq) (obserwacje: dwie; wniosek: jeden, z nazwami).
 **E3.** Dlaczego do wykrywania H₂S używa się papieru ołowiowego, a nie węchu? Dwa powody.
+:::
+
+::: odp | Pokaż klucz
+**E1** — obserwacja: „roztwór wskaźnika zmienił barwę na czerwoną"; wniosek: „roztwór ma odczyn kwasowy, bo wskaźnik czerwienieje"; zdanie „powstała sól i woda" to wniosek o produktach (wymaga równania), nie obserwacja · 2 pkt
+**E2** — obserwacje: nalot czerwono-brązowy na gwoździu; roztwór zmienia barwę z błękitnej na bladozielonkawą · wniosek: żelazo (aktywniejsze) wyparło miedź, powstaje FeSO₄ i Cu · 3 pkt (2 obserwacje + wniosek)
+**E3** — H₂S jest silnie toksyczny; zmysł węchu adaptuje się (przestaje wyczuwać) — test papierowy jest obiektywny i bezpieczny · 2 pkt
+:::
+
+::: karta exam | Zadania E4–E5 — planowanie i kontrola zmiennych (4 pkt)
 **E4.** Zaproponuj JEDEN odczynnik rozróżniający wodę destylowaną i rozcieńczony kwas siarkowy(VI); podaj obserwacje i wnioski.
 **E5.** W doświadczeniu porównawczym (wpływ temperatury) uczeń użył w zimnej próbie 5 g tablety, a w gorącej — 5 g proszku. Nazwij błąd projektowania i popraw plan.
+:::
 
-### F. Otwarte rozszerzone (pełny zapis wg schematu!)
+::: odp | Pokaż klucz
+**E4** — np. Na₂CO₃: z H₂SO₄ burzenie (CO₂↑), z wodą — brak widocznej reakcji; albo wskaźnik/lakmus: czerwienieje vs bez zmian · odczynnik + obserwacje + wniosek · 2 pkt
+**E5** — błąd: DWIE różnice naraz (rozdrobnienie i temperatura w jednej próbie) → brak kontroli zmiennych; poprawka: obie próby tabletami LUB oba proszki, różnica tylko temperatura · 2 pkt
+:::
 
+::: karta exam | Zadanie F1 (4 pkt) — wykrywanie CO₂ i pary wodnej w produktach spalania
 **F1.** Zaplanuj doświadczenie pozwalające wykryć CO₂ ORAZ parę wodną w produktach spalania świecy. Podaj: cel, odczynniki, przebieg (z KOLEJNOŚCIĄ testów i jej uzasadnieniem), obserwacje, wnioski, równanie spalania węglowodoru-typu (dla parafiny wystarczy schemat węglowodór + O₂ → CO₂ + H₂O).
+:::
 
+::: odp | Pokaż klucz
+**F1** — rubryka: cel (0,5) · odczynniki (zlewka zimna, CuSO₄ bezwodny, woda wapienna) (0,5) · przebieg z kolejnością: najpierw zlewka z CuSO₄ (para), potem woda wapienna. Uzasadnienie: gaz przepuszczony przez wodny roztwór (wapienną) wnosi wodę, więc test pary trzeba wykonać PRZED nim (1,5) · obserwacje: krople/mgiełka + błękit CuSO₄; mętnienie (1) · wnioski: H₂O i CO₂ obecne (0,5) · razem 4 pkt
+:::
+
+::: adv | Zadanie F2 (3 pkt) — trzy ciecze jednym krokiem | poziom ambitny
 **F2.** Masz trzy nieopisane ciecze: wodę destylowaną, wodorotlenek sodu(aq), kwas solny(roz.). Zaproponuj odczynnik rozróżniający wszystkie trzy w JEDNYM kroku (matryca 4.1 — tabela z obserwacjami i wnioskami); zapisz równanie jonowe skrócone zobojętniania NaOH kwasem solnym (H⁺ + OH⁻ → H₂O).
+:::
 
+::: odp | Pokaż klucz
+**F2** — odczynnik: **lakmus** — HCl czerwieni, NaOH sinieje, woda pozostaje fioletowa (obojętna): trzy różne wyniki (1,5 pkt); matryca z obserwacjami (1 pkt); równanie skrócone zobojętniania NaOH + HCl: H⁺ + OH⁻ → H₂O (0,5 pkt) · 3 pkt. *Uwaga dydaktyczna: Na₂CO₃ rozróżnia tylko wodę i kwas (nie NaOH), więc w tym zadaniu nie wystarcza; punktuje się też poprawne rozwiązanie dwustopniowe.*
+:::
+
+::: adv | Zadanie F3 (3,5 pkt) — rozdrobnienie CaCO₃ a szybkość reakcji | poziom ambitny
 **F3.** Zaplanuj doświadczenie wykazujące wpływ rozdrobnienia CaCO₃ na szybkość reakcji z HCl. Podaj: dwie próby (identyczne co do czego?), obserwacje porównawcze, wniosek. Zaznacz w planie kontrolę zmiennych.
+:::
 
+::: odp | Pokaż klucz
+**F3** — dwie próby: ta sama masa (np. 2 g), to samo HCl (ta sama objętość i stężenie), ta sama temperatura; różnica: grudka vs proszek (1,5 pkt) · obserwacje: proszek burzy gwałtowniej (1 pkt) · wniosek: większa powierzchnia styku zwiększa szybkość (0,5 pkt) · kontrola zmiennych nazwana wprost (0,5 pkt) · razem 3,5 pkt
+:::
+
+::: karta exam | Zadanie F4 (5 pkt) — błędy w cudzym opisie
 **F4.** Poniższy opis zawiera 5 błędów. Wskaż i popraw każdy: *„Cel: otrzymanie wodoru. Przebieg: do marmuru dodano rozcieńczonego kwasu siarkowego(VI); zaobserwowano wydzielanie wodoru; gaz zbierano w zlewce dnem do góry; równanie: CaCO₃ + HCl → CaCl₂ + H₂O + CO₂. Doświadczenie przeprowadzono bez rękawic, a koncentracja uczniów była pełna."*
+:::
 
-### KLUCZ I PUNKTACJA
+::: odp | Pokaż klucz
+**F4** — po 1 pkt za każdy błąd, z poprawną wersją:
+(1) cel „wodór" nie zgadza się z reakcją — marmur (CaCO₃) z kwasem daje CO₂, nie H₂; kwas siarkowy(VI) dodatkowo tworzy słabo rozpuszczalny CaSO₄, który może pokryć marmur i zahamować reakcję;
+(2) „zaobserwowano wydzielanie wodoru" to wniosek z nazwą przed testem — obserwacja: „wydziela się bezbarwny gaz (bąbelki)";
+(3) zbieranie dnem do góry — CO₂ jest cięższy od powietrza, zbiera się dnem do dołu;
+(4) równanie: brak współczynnika 2 przy HCl, brak ↑ przy CO₂;
+(5) BHP: brak rękawic i okularów (a jeśli miał być H₂ — brak próby czystości). Razem 5 pkt.
+:::
 
-| Zad. | Odpowiedź | Punktacja |
-|---|---|---|
-| A1 | **b** (a,c,d to wnioski; c dodatkowo miesza) | 1 |
-| A2 | **b** | 1 |
-| A3 | **b** | 1 |
-| A4 | **b** (strumień H₂ + ogrzewanie = wybuch bez próby) | 1 |
-| B1 | **F** (wniosek) | 1 |
-| B2 | **P** | 1 |
-| B3 | **F** (drobiny stałe — dym) | 1 |
-| B4 | **F** (w kwasie fenoloftaleina pozostaje bezbarwna) | 1 |
-| B5 | **P** | 1 |
-| B6 | **F** (liczy się odtwarzalność i podpisy) | 1 |
-| C1 | CuSO₄ · błękitnieje · pary wodnej | po 0,5 → 1,5 |
-| C2 | kwasu solnego (rozcieńczonego!) · mętnienie po wprowadzeniu do wody wapiennej · mętnienie = CaCO₃↓ z CO₂ | 1,5 |
-| C3 | wapnem gaszonym (Ca(OH)₂) · do GÓRY · sinieje · zasadowy (amoniak) | 2 |
-| D1 | 1→b · 2→c · 3→a · 4→d (zbędne: e) | po 0,5 → 2 |
-| D2 | 1→HCl (roztwór błękitny vs brak zmian) · 2→fenoloftaleina (malina vs bezbarwna) · 3→woda (osad vs roztwór) | po 0,5 → 1,5 |
-| E1 | obserwacja: „roztwór wskaźnika zmienił barwę na czerwoną"; wniosek: „roztwór ma odczyn kwasowy, bo wskaźnik czerwienieje"; zdanie „powstała sól i woda" to wniosek o produktach (wymaga równania), nie obserwacja | 2 |
-| E2 | obserwacje: nalot czerwono-brązowy na gwoździu; roztwór zmienia barwę z błękitnej na bladozielonkawą · wniosek: żelazo (aktywniejsze) wyparło miedź, powstaje FeSO₄ i Cu | 3 (2 obs. + wniosek) |
-| E3 | H₂S jest silnie toksyczny; zmysł węchu adaptuje się (przestaje wyczuwać) — test papierowy obiektywny i bezpieczny | 2 |
-| E4 | np. Na₂CO₃: z H₂SO₄ burzenie (CO₂↑), z wodą brak zmian; albo wskaźnik/lakmus: czerwienieje vs bez zmian | 2 (odczynnik+obs.+wniosek) |
-| E5 | błąd: DWA różnice naraz (rozdrobnienie i temperatura w jednej próbie) → brak kontroli zmiennych; poprawka: obie próby tabletami LUB oba proszki, różnica tylko temperatura | 2 |
-| F1 | rubryka: cel (0,5) · odczynniki (zlewka zimna, CuSO₄ bezwodny, woda wapienna) (0,5) · przebieg z kolejnością: najpierw zlewka z CuSO₄ (para), potem woda wapienna. Uzasadnienie: gaz przepuszczony przez wodny roztwór (wapienną) wnosi wodę, więc test pary trzeba wykonać PRZED nim (1,5) · obserwacje: krople/mgiełka + błękit CuSO₄; mętnienie (1) · wnioski: H₂O i CO₂ obecne (0,5) | 4 |
-| F2 | odczynnik: **lakmus** — HCl czerwieni, NaOH sinieje, woda pozostaje fioletowa (obojętna): trzy różne wyniki (1,5); matryca z obserwacjami (1); równanie skrócone zobojętniania NaOH + HCl: H⁺ + OH⁻ → H₂O (0,5) | 3 — *uwaga dydaktyczna: Na₂CO₃ rozróżnia tylko wodę i kwas (nie NaOH), więc w tym zadaniu nie wystarcza; punktuje się też poprawne rozwiązanie dwustopniowe* |
-| F3 | dwie próby: ta sama masa (np. 2 g), to samo HCl (ta sama objętość i stężenie), ta sama temperatura; różnica: grudka vs proszek (1,5); obserwacje: proszek burzy gwałtowniej (1); wniosek: większa powierzchnia styku zwiększa szybkość (0,5); kontrola zmiennych nazwana wprost (0,5) | 3,5 |
-| F4 | błędy: (1) cel „wodór” nie zgadza się z reakcją — marmur (CaCO₃) z kwasem daje CO₂, nie H₂ (kwas siarkowy(VI) dodatkowo hamuje reakcję osadem CaSO₄); (2) „zaobserwowano wydzielanie wodoru" = wniosek+nazwa przed testem; (3) zbieranie dnem do góry — CO₂ jest cięższy, dnem do dołu; (4) równanie: brak 2 przy HCl, CO₂ bez ↑; (5) BHP: brak rękawic/okularów (a jeśli miało być H₂ — brak próby czystości). Poprawne wersje wypisane | po 1 → 5 |
-
-Maksimum pomocnicze: **≈35 pkt** (lokalizacja: A–D = język i karty; E–F = planowanie i naprawa).
+*Maksimum pomocnicze: **≈45 pkt** w zadaniach A–F (poprzednia wersja podawała ≈35 — błąd sumowania; suma kart: A 4 + B 6 + C 5 + D 3,5 + E 11 + F 15,5).*
 
 ---
 
-## BŁĘDY TYPOWE (klinika)
+## BŁĘDY TYPOWE (klinika) {#bledy}
 
 1. **Nazwa produktu w obserwacji** → obserwacja opisuje zmysły („biały osad"), nazwę podaje wniosek/równanie. Każde „zaobserwowano CO₂" to strata punktu.
 2. **Czynność w rubryce obserwacji** → „dodano", „podgrzewano" = przebieg. Rozdzielaj rubryki.
@@ -379,3 +459,67 @@ Maksimum pomocnicze: **≈35 pkt** (lokalizacja: A–D = język i karty; E–F =
 ## Notatka dla prowadzącego: granice
 
 Świadomie poza suplementem: analiza jakościowa pełna (kationy Ag⁺/Ba²⁺/Ca²⁺ w systemie, aniony PO₄³⁻ — etap III/LO, J11); miareczkowanie z biuretą (LO, J12 — na etapie III LKO nie wymienione aparaturowo); elektroliza ilościowa (LO, E04); chromatografia (jeśli pojawi się w arkuszu jako metoda rozdzielania barwników — wystarczy jedna linijka: „chromatografia: rozdzielanie składników wg różnej wędrówki po bibule"); pomiar objętości gazu (etap III, R06). Tabela D2/F2 ma celowy „pułapkowy" przykład (Na₂CO₃ nie rozróżnia trzech cieczy jednym krokiem) — użyj go do pokazania, że matryca sprawdza się PRZED wyborem odczynnika, nie po. Zadania F celowo są 4 (najdroższe czasowo); w zestawach B wracają co tydzień jeden.
+
+## Test krótki {#test}
+
+? Które zdanie jest obserwacją?
++ Powstał biały osad.
+- Zaszła reakcja, bo powstał osad.
+- Dodano roztworu NaOH.
+- Powstał Fe(OH)₃.
+
+? Woda wapienna mętnieje w obecności:
++ CO₂
+- O₂
+- H₂
+- NH₃
+
+? Osad rdzawobrunatny to:
++ Fe(OH)₃
+- Cu(OH)₂
+- AgCl
+- PbS
+
+? W doświadczeniu porównawczym (wpływ temperatury) poprawny plan to:
++ różni się tylko temperatura, reszta warunków identyczna
+- różnią się temperatura i rozdrobnienie
+- różnią się temperatura i stężenie
+- nie ma znaczenia, co się zmienia
+
+? Gaz NH₃ zbieramy:
++ dnem do góry
+- dnem do dołu
+- wyłącznie nad wodą
+- nie da się go zebrać
+
+## Fiszki {#fiszki}
+
+::: fiszki
+Obserwacja vs wniosek | obserwacja = to, co zmysły; wniosek = interpretacja z nazwami („…, bo …") | basic:podstawa
+Dym vs mgiełka vs para | dym = drobiny stałe (NH₄Cl); mgiełka = kropelki cieczy (HCl w wilgotnym powietrzu); para = gaz zdolny do kondensacji | basic:podstawa
+Test na CO₂ | woda wapienna mętnieje (CaCO₃↓) | basic:podstawa
+Test na H₂ | próba czystości: ciche „pi" = czysty wodór, głośny trzask = z powietrzem | basic:podstawa
+Test na parę wodną | bezwodny CuSO₄: biały → błękitnieje | basic:podstawa
+NH₃ — wykrywanie i zbieranie | mokry czerwony lakmus sinieje; zbiera się dnem do góry | understand:ROZUMIENIE
+Osad rdzawobrunatny | Fe(OH)₃ | basic:podstawa
+Błękitny roztwór | obecność Cu²⁺ (roztwór miedzi(II)) | basic:podstawa
+Jedna różnica | w doświadczeniu porównawczym próby różnią się wyłącznie badanym czynnikiem | understand:ROZUMIENIE
+Dlaczego papier ołowiowy zamiast węchu | H₂S jest toksyczny, węch się adaptuje; papier daje obiektywny wynik (czernieje — PbS) | exam:KONKURS
+:::
+
+## Słownik {#slownik}
+
+::: slownik
+Obserwacja :: informacja zebrana zmysłami, bez nazw produktów
+Wniosek :: interpretacja obserwacji z nazwami substancji, zwykle w zdaniu z „bo"
+Odczynnik :: substancja użyta do wykrycia innej substancji (np. woda wapienna, CuSO₄ bezwodny)
+Próba czystości :: test wodoru: próbka gazu zapala się przy probówce i daje ciche „pi" lub trzask
+Matryca rozróżniania :: tabela: substancje × wyniki jednego odczynnika, używana do wyboru odczynnika
+Jedna różnica :: zasada doświadczenia porównawczego: próby różnią się tylko badanym czynnikiem
+Reduktor :: substancja odbierająca tlen (lub oddająca elektrony) innej substancji, np. węgiel przy redukcji CuO
+Katalizator :: substancja przyspieszająca reakcję, sama nie zużywana (MnO₂ przy rozkładzie H₂O₂)
+Osad :: stała substancja wydzielona z roztworu lub powstała w reakcji (np. CaCO₃, Fe(OH)₃)
+Mgiełka :: drobne kropelki cieczy rozproszone w powietrzu
+Dym :: drobne cząstki stałe rozproszone w powietrzu (np. NH₄Cl)
+Lakmus :: wskaźnik: czerwieni w kwasie, sinieje w zasadzie
+:::
