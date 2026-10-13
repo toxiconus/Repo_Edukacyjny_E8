@@ -1,77 +1,139 @@
+# PROMPT: pięć lekcji chemii E8 — blok R (roztwory i stechiometria)
+
+Jesteś autorem lekcji chemii dla ucznia klasy 8 szkoły podstawowej (poziom E8, podstawa programowa; dodatkowo przygotowanie do konkursu kuratoryjnego). Napisz **pięć osobnych lekcji** w języku polskim. Wszystkie dane potrzebne do pracy są w tym pliku — nie potrzebujesz żadnych innych materiałów ani linków.
+
+## 1. Co dokładnie napisać
+
+Pięć lekcji, po jednej na kod:
+
+| Kod | Tytuł | Długość (orientacyjnie) |
+|---|---|---|
+| R01 | Woda i roztwory | średnia (ok. 25–35 KB md) |
+| R02 | Rozpuszczalność | średnia (ok. 25–35 KB md) |
+| R04 | Mol i masa molowa | pełna (ok. 35–45 KB md) |
+| R08 | Reagent ograniczający | krótka (ok. 15–20 KB md) |
+| R09 | Wydajność reakcji | krótka (ok. 15–20 KB md) |
+
+Każda lekcja to osobny plik md. Nie wolno powielać treści między lekcjami — jeśli temat należy do innej lekcji, napisz jedno zdanie i odwołaj się do jej kodu (np. „patrz R07”), bez kopiowania.
+
+### Granice zakresu (czego NIE pisać)
+
+- **R01** — nie zawiera obliczeń stężenia procentowego (to lekcja o stężeniu; nie pisz jej tu). Skupienie: woda, polarność, roztwór, zawiesina, koloid.
+- **R02** — nie zawiera obliczeń stężenia procentowego. Skupienie: rozpuszczalność, krzywe, krystalizacja.
+- **R04** — nie zawiera stechiometrii z równań reakcji (to R07) ani objętości molowej gazów (to R06).
+- **R08** — krótka. Wykład o nadmiarze już istnieje w R07 — tutaj tylko procedura, odwołanie do R07.
+- **R09** — krótka. Tylko wydajność i jej łączenie z nadmiarem.
+
+### Zakres merytoryczny
+
+**R01 — Woda i roztwory**
+- budowa cząsteczki wody i jej polarność (wiązania O–H są spolaryzowane, cząsteczka jest kątowa);
+- zasada „podobne rozpuszcza podobne”;
+- roztwór = substancja rozpuszczona + rozpuszczalnik; zawiesina; koloid (efekt Tyndalla);
+- czynniki szybkości rozpuszczania: rozdrobnienie, mieszanie, temperatura (dla większości ciał stałych);
+- hydratacja jonów i dipoli;
+- zapisy stanów skupienia: (s), (l), (g), (aq);
+- most do dysocjacji jonowej (sole w wodzie dają jony).
+- Pułapki: rozpuszczanie nie jest zwykle reakcją chemiczną; koloid nie osadza się tak jak zawiesina.
+
+**R02 — Rozpuszczalność**
+- definicja: maksymalna masa substancji rozpuszczalna w 100 g wody w danej temperaturze;
+- roztwór nasycony, nienasycony, przesycony (nietrwały);
+- krzywe rozpuszczalności i odczyt z wykresu;
+- wpływ temperatury: dla większości ciał stałych rozpuszczalność rośnie, dla gazów maleje;
+- krystalizacja przez ochłodzenie roztworu nasyconego i przez odparowanie;
+- obliczenie osadu jako różnicy rozpuszczalności w dwóch temperaturach (prosty wariant, bez przeliczeń procentowych).
+- Pułapka: „110%” jako stężenie nasyconego roztworu KNO₃ — stężenie liczy się z masy **roztworu**, nie wody (110/210 ≈ 52,4%). W tej lekcji nie wprowadzaj obliczeń % — tylko wskaż pułapkę.
+
+**R04 — Mol i masa molowa**
+- mol jako jednostka liczności cząstek;
+- liczba Avogadra: 6,02·10²³ mol⁻¹;
+- masa molowa M (g/mol) z mas atomowych i wzoru; Mr i M to ta sama liczba, inna jednostka;
+- przeliczenia: **masa ↔ mol ↔ liczba cząstek** (każdy kierunek, z wzorem i przykładem);
+- zapowiedź stechiometrii molowej (bez pełnego jej rozwijania).
+- Pułapki: mol gramów vs mol cząstek; atomy vs cząsteczki (O vs O₂); „1 mol H₂O = 18 g” bez wzoru i jednostki.
+
+**R08 — Reagent ograniczający**
+- procedura w trzech krokach: (1) masy → mole; (2) porównanie ilości substratów ze stosunkiem ze współczynników równania; (3) wniosek: który substrat się wyczerpie i ile produktu powstanie;
+- przykład: 150 g roztworu HCl 7,3% + 20 g CaCO₃ → ogranicza HCl (zużycie CaCO₃ = 15 g, zostaje 5 g); CO₂ = 6,6 g.
+- Odwołanie do R07 (tam jest pełny wykład nadmiaru).
+
+**R09 — Wydajność reakcji**
+- wydajność = m(rzeczywista) / m(teoretyczna) · 100%;
+- obliczanie masy teoretycznej z równania;
+- obliczanie masy rzeczywistej z podanej wydajności (np. 90% z 6,6 g = 5,94 g);
+- łączenie z nadmiarem: najpierw reagent ograniczający, potem wydajność.
+- Pułapka: liczenie wydajności z masy substratu zamiast z masy produktu teoretycznego.
+
+## 2. Dane liczbowe (używaj tylko tych wartości)
+
+- Masy atomowe: H 1, C 12, N 14, O 16, Na 23, Mg 24, Al 27, S 32, Cl 35,5, K 39, Ca 40, Fe 56, Cu 64, Zn 65, Ag 108, Ba 137.
+- Mr: H₂O 18, CO₂ 44, CaCO₃ 100, HCl 36,5, NH₃ 17, H₂S 34, NaCl 58,5, KNO₃ 101.
+- Avogadro: 6,02·10²³ mol⁻¹.
+- Rozpuszczalność KNO₃ (g/100 g H₂O): 20 °C — 32; 60 °C — 110; 70 °C — 138. Odczyt z wykresu: tolerancja 108–112 g w 60 °C.
+- Rozpuszczalność NaCl: ok. 36–37 g/100 g H₂O w zakresie 0–100 °C (krzywa prawie płaska).
+- Wartości, których nie jesteś pewien: oznacz w tekście „(do weryfikacji)”. Nie zgaduj.
+
+## 3. Format dialektu (obowiązkowy)
+
+**Front matter** na początku pliku, dokładnie w tej postaci (wartości zmień):
+
+```
 ---
-kod: PROMPT-R-BRAKUJACE
-stan: szkic — 2026-10-13
-opis: "Prompt dla AI: pięć osobnych lekcji bloku R (R01, R02, R04, R08, R09) z zakresem, sposobem wykonania i wynikiem do oddania. Szkielety w lekcje_md/ — jako lista zakresu, nie jako treść do przepisania."
+kod: R04
+uid: CHE.03.R04
+tytul: "Mol i masa molowa"
+typ: lekcja
+dzial: "Roztwory i stechiometria (blok R)"
+poziom: "E8"
+wymaga: "F12; F17"
+poglebia: "R05; R07"
+wlasciciel: "chemia E8 — blok R"
+zrodla: "Podstawa programowa chemii, klasa 8 + zakres konkursu kuratoryjnego (etap II)"
+opis: "Jedno zdanie streszczające lekcję."
+stan: "szkic — 2026-10-13, bez audytu W1"
+kicker: "R04 · mol"
+lead: "Jedno zdanie wprowadzenia."
+plakietki: ["mol", "masa molowa"]
+stopka: "R04 · szkic"
 ---
+```
 
-# Prompt: osobne lekcje bloku R (chemia E8)
+**Struktura treści:**
+- nagłówek `# R04 — Mol i masa molowa` (tytuł lekcji);
+- `## 1 | Wykład — …` — **pełny wykład „od zera”** (uczeń ma zrozumieć temat bez innych lekcji), obowiązkowe słowo „Wykład” w nagłówku;
+- kolejne sekcje numerowane (`## 2 | …`, `## 3 | …`);
+- **mini-wykłady** (1–3 w suchych miejscach), każdy jako sekcja z tytułem zaczynającym się od „W skrócie — ”;
+- **karty** — składnia (zamykana trzema dwukropkami):
+  ```
+  ::: karta understand | Tytuł karty
+  treść
+  :::
+  ```
+  Rodzaje: `understand` (zrozumienie), `error` (pułapka), `exam` (wzór egzaminacyjny), `core` (rdzeń), `extra` (ciekawostka).
+- **ciekawostki:** 3–5 kart `extra`, każda z faktem, który jest prawdziwy i sprawdzony.
+- **zadania:** 8–15 zadań, w sekcji `## Zadania`, z pełnym zapisem; na końcu sekcja `## Klucz i punktacja` z odpowiedziami i punktami.
+- **zakaz:** żadnych znaczników czasu („5 min”, „ok. 45 min”), żadnych planów dziennych, żadnych limitów czasu — kurs jest do samodzielnej nauki we własnym tempie.
+- **grafiki:** tylko gdy są potrzebne do zrozumienia (np. wykres krzywej rozpuszczalności). Każda grafika ma pod sobą linię `@opis …` z opisem słownym: co widać, jakie są oznaczenia, liczby i wniosek. Bez opisu grafika jest błędem.
 
-Zadanie: napisz pięć osobnych lekcji w dialekcie che-modular, po jednym pliku MD na kod. Każda lekcja musi mieć własny zakres i nie może powielać treści innych lekcji — odwołuj się do nich linkiem zamiast kopiować.
+Przykład wzoru dla R04 (zwięźle):
+```
+## 3 | Wykład — przeliczenia masa ↔ mol ↔ liczba cząstek
+Mol to porcja o liczbie cząstek równej liczbie Avogadra …
+```
 
-## 0. Pliki i ich granice
+## 4. Jak pracować
 
-| Kod | Plik docelowy | Pokrywa się z | Granica (czego NIE pisać) |
-|---|---|---|---|
-| R01 Woda i roztwory | `che-modular/lessons-md/gotowe/R01_woda_i_roztwory.md` | R03 | bez stężenia procentowego (to R03); skupić na wodzie, polarności, roztworze, zawiesinie, koloidzie |
-| R02 Rozpuszczalność | `…/R02_rozpuszczalnosc.md` | R03, LKO-KRZYWE | bez obliczeń stężenia % (R03); krzywe i krystalizacja |
-| R04 Mol i masa molowa | `…/R04_mol_masa_molowa.md` | LKO-STECH (zapowiedź) | bez stechiometrii z równań (R07) i bez objętości molowej (R06) |
-| R08 Reagent ograniczający | `…/R08_reagent_ograniczajacy.md` | R07 | krótka; procedura trzech kroków, bez powtarzania wykładu z R07 |
-| R09 Wydajność reakcji | `…/R09_wydajnosc_reakcji.md` | R07 | krótka; tylko wydajność i jej łączenie z nadmiarem |
+1. Dla każdej lekcji najpierw zapisz krótki plan sekcji (w myślach), potem treść.
+2. Napisz wykład tak, żeby uczeń bez wcześniejszej wiedzy zrozumiał temat — definicje, przykłady, wzory z wyjaśnieniem jednostek.
+3. Każde obliczenie pokazuj w kolejności: równanie → masy molowe pod wzorami → proporcja → wynik z jednostką → sprawdzenie rzędu wielkości.
+4. Sprawdź każdą liczbę w zadaniach i kluczu dwa razy. W przypadku niepewności — oznacz „(do weryfikacji)”.
+5. Pilnuj granic zakresu z sekcji 1: nie wchodź w tematy innych lekcji.
 
-Szkielety w `lekcje_md/R/` (R01, R02, `CHE.03.R04+R07-R09.stechiometria.md`) — traktuj jako **listę zakresu**. Nie przepisuj treści wprost; pisz od nowa, korzystając z zakresu.
+## 5. Co oddać
 
-## 1. Zasady wspólne
+Pięć bloków, po jednym na lekcję, w kolejności R01, R02, R04, R08, R09. Każdy blok:
+- nazwa pliku: `R01_woda_i_roztwory.md`, `R02_rozpuszczalnosc.md`, `R04_mol_masa_molowa.md`, `R08_reagent_ograniczajacy.md`, `R09_wydajnosc_reakcji.md`;
+- treść w jednym bloku kodu ` ```markdown `, bez komentarzy poza blokiem.
 
-1. **Front matter** jak w `gotowe/R07_stechiometria_z_nadmiarem.md`: `kod`, `uid`, `tytul`, `typ`, `dzial`, `poziom`, `wymaga`, `poglebia`, `wlasciciel`, `zrodla`, `opis`, `stan`, `kicker`, `lead`, `plakietki`, `stopka`.
-2. **Wykład „od zera”:** sekcja `## N | Wykład — …` po definicjach (limit wymaga słowa „Wykład”, wielkość liter ma znaczenie).
-3. **Mini-wykłady** (`W skrócie` / `Mini-wykład — …`) w 1–3 suchych miejscach; **ciekawostki**: 3–5 kart `::: karta extra | tytuł`, fakty sprawdzone.
-4. **Karty:** `::: karta understand|extra|error|exam|core | tytuł`, zamykane `:::`.
-5. **Opis każdej grafiki** słownie: linia `@opis …` pod `@model`/`@zlewka`/`@viz`/obrazem. Build tego wymaga. Grafiki tylko, gdy pomagają zrozumieć.
-6. **Bez znaczników czasu** („5 min”, „ok. 45 min”) i bez planów dziennych — kurs do samodzielnej nauki.
-7. **Dane liczbowe sprawdzać.** Masy: H 1, C 12, N 14, O 16, Na 23, Cl 35,5, Ca 40, S 32. Avogadro 6,02·10²³ mol⁻¹. Rozpuszczalność KNO₃ w 60 °C = 110 g/100 g H₂O (wartość ujednolicona z LKO-KRZYWE; odczyt z wykresu tolerancja 108–112 g). Wątpliwe dane oznaczyć „do weryfikacji”.
-8. **Stan:** `stan: szkic — 2026-10-13, bez audytu W1`. Nie pisz „W1” ani „✅”.
-9. **Ćwiczenia:** każda lekcja ma 8–15 zadań z kluczem i punktacją (zadania z krótkim wynikiem i pełnym zapisem).
-
-## 2. Zadania per lekcja
-
-### R01 — Woda i roztwory
-- **Zakres:** budowa cząsteczki wody i jej polarność; „podobne rozpuszcza podobne”; roztwór (substancja rozpuszczona + rozpuszczalnik), zawiesina, koloid (efekt Tyndalla); czynniki szybkości rozpuszczania (rozdrobnienie, mieszanie, temperatura); hydratacja jonów i dipoli; zapisy stanów (s), (l), (g), (aq); most do J01 (dysocjacja soli).
-- **Wymaga:** F03, F15. **Poglądza:** R02, J01.
-- **Pułapki:** rozpuszczanie to nie reakcja chemiczna (w ogólności); koloid nie „osadza się” jak zawiesina.
-
-### R02 — Rozpuszczalność
-- **Zakres:** definicja rozpuszczalności (g/100 g H₂O w danej T); roztwór nasycony, nienasycony, przesycony; krzywe rozpuszczalności (odczyt z wykresu); wpływ T na ciała stałe (rośnie, zwykle) i na gazy (maleje); krystalizacja przez ochłodzenie i odparowanie; osad = S(gorące) − S(zimne) (prosty wariant bez skalowania).
-- **Wymaga:** R01. **Poglądza:** R03, J04, J10, LKO-KRZYWE (pogłębienie).
-- **Pułapka:** „110%” jako stężenie nasyconego roztworu KNO₃ w 60 °C — stężenie liczymy z masy roztworu (110/210 ≈ 52,4%), nie z masy wody. Nie wprowadzać tu obliczeń % (to R03).
-
-### R04 — Mol i masa molowa
-- **Zakres:** mol jako jednostka liczności; liczba Avogadra; masa molowa M (g/mol) z mas atomowych i wzoru; przeliczenia **masa ↔ mol ↔ liczba cząstek**; Mr i M — ta sama liczba, inna jednostka; mol w zapisie równania (zapowiedź stechiometrii molowej).
-- **Materiał pomocniczy:** w szkielecie `CHE.03.R04+R07-R09` tylko sekcje o molu i masie molowej (przepisać na nowo, nie kopiować).
-- **Wymaga:** F12, F17. **Poglądza:** R05 (stężenie molowe), R07.
-- **Pułapki:** mol gramów vs mol cząstek; mol atomów vs cząsteczek (O vs O₂); „1 mol H₂O = 18 g” bez wzoru i jednostki.
-
-### R08 — Reagent ograniczający
-- **Zakres:** który substrat się wyczerpie — procedura: (1) masy → mole, (2) porównanie ilości z równania (stosunek stechiometryczny), (3) wniosek: ograniczający i ile produktu powstanie. Przykład z LKO-SYM-A2 zad. 7 (HCl i CaCO₃).
-- **Wymaga:** R07, R04. **Poglądza:** LKO-STECH.
-- **Granica:** wykład o nadmiarze już jest w R07 — odwołaj się linkiem, nie powtarzaj.
-
-### R09 — Wydajność reakcji
-- **Zakres:** wydajność = m(rzeczywista) / m(teoretyczna) · 100%; obliczanie m(teoretycznej) z równania; obliczanie masy rzeczywistej z wydajności; łączenie z nadmiarem (najpierw ograniczający, potem wydajność).
-- **Wymaga:** R07. **Poglądza:** R08, LKO-SYM-A2 (zad. 7d, ×0,9).
-- **Pułapka:** liczenie wydajności z masy substratu zamiast z masy produktu teoretycznego.
-
-## 3. Procedura
-
-1. Przeczytaj granice (§0) i zakres (§2) dla danej lekcji. Sprawdź w `gotowe/`, czy nie powstał już plik o tym zakresie.
-2. Napisz lekcję w dialekcie (§1).
-3. Zbuduj HTML: `cd chemia/che-modular && python3 tools/md2html.py lessons-md/gotowe/<plik>.md`.
-4. Limity z korzenia repo: `python3 narzedzia/limity_lekcji.py chemia/che-modular/lessons-md/gotowe/<plik>.md` (❌ blokuje).
-5. Dopisz wpis w `chemia/plany/narzedzia/gen_f00.py` (sekcja „Uzupełnienia”) i zweryfikuj składnię `python3 -m py_compile`.
-6. Commit z trailerami i push na `claude/olimpiada-8-sprint`.
-
-## 4. Wynik do oddania
-
-- Lista plików: nazwa, rozmiar md i html (KB), `stan`.
-- Wynik `limity_lekcji.py` dla każdego pliku.
-- Lista wątpliwych danych do weryfikacji.
-- Tabela: które powiązania w `POWIAZANIA_CHE.md` są teraz domknięte.
+Na końcu jedna sekcja **„Do weryfikacji”**: lista liczb i faktów, których nie jesteś pewien, z numerem lekcji. Bez innych komentarzy.
