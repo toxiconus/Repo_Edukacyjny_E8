@@ -92,8 +92,14 @@ Który metal z grupy 2 ma najbardziej „miękki” elektron walencyjny: Mg czy 
 
 ## 3 | Reakcje z wodą i tlenem {#reakcje}
 
-@klocek metal-woda {metal="Na"} | Sód w wodzie: pęcherzyki wodoru i różowienie roztworu
-@opis Zlewka z wodą. Po wrzuceniu sodu biegną w górę białe pęcherzyki wodoru, a roztwór zmienia barwę na różową (zasada, fenoloftaleina). Wniosek: metal grupy 1 reaguje z wodą, powstaje zasada i wodór.
+@klocek metal-woda {metal="Li", wskaznik="1"} | Lit w wodzie: wolne pęcherzyki, roztwór różowieje od fenoloftaleiny
+@opis Zlewka z wodą i kawałkiem litu na dnie. Z metalu wolno unoszą się pęcherzyki wodoru. Po dodaniu fenoloftaleiny roztwór zmienia barwę na różową. Wniosek: barwa pochodzi od wskaźnika, a jej pojawienie się pokazuje, że powstaje zasada (OH⁻).
+
+@klocek metal-woda {metal="Na", wskaznik="1"} | Sód w wodzie: szybsze pęcherzyki i silniejsze różowienie
+@opis Zlewka z wodą i kawałkiem sodu na dnie. Pęcherzyki wodoru tworzą się szybciej niż przy licie. Roztwór różowieje od fenoloftaleiny. Wniosek: sód reaguje gwałtowniej niż lit (ta sama grupa, większy atom).
+
+@klocek metal-woda {metal="K", wskaznik="1"} | Potas w wodzie: najszybsza reakcja z tej trójki
+@opis Zlewka z wodą i kawałkiem potasu na dnie. Pęcherzyki wodoru tworzą się najszybciej, a metal szybko się zmniejsza. Wniosek: w dół grupy 1 reaktywność rośnie.
 
 ::: karta understand | Strategia → rozwiązanie → sprawdzenie: bilans reakcji sodu z wodą
 **Strategia:** zapisuję substraty i produkty. Produkty to wodorotlenek i wodór, bo metal wypiera wodór z wody.
