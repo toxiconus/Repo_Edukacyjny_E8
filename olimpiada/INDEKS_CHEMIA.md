@@ -18,6 +18,7 @@ Stan 2026-10-13. Wszystkie lekcje to **szkic** — audyt W1/W2 jeszcze nie wykon
 | 9 | LKO_DOSW_katalog_doswiadczen.md (umiejętności wspólne I–II) | LKO-DOSW | 28 KB | 102 KB | szkic — 2026-10-13, pełna treść; bez audytu W1 |
 
 | 10 | LKO_B1B2_zestawy_treningowe.md (trening II + mix I) | LKO-B1+B2 | 16 KB | 87 KB | szkic — 2026-10-13; bez audytu W1 |
+| 11 | LKO_SYM-A2_symulacja_etap_II.md (próba generalna II: 90 min / 40 pkt, zakres kumulatywny) | LKO-SYM-A2 | 18 KB | 89 KB | szkic — 2026-10-13; bez audytu W1 |
 
 Surowe kopie AI: `olimpiada/plany/LKO_2026_27/*_ORYG.md`. Dokładne bajty: `wc -c`.
 Lekcje OLI.CHE (J03, R07, X04) są w `olimpiada/do_uzupelnienia/` (md) i `olimpiada/html/` (html); to osobny nurt, nie LKO.

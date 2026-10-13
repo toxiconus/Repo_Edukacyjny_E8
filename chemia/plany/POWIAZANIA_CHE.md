@@ -46,3 +46,6 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - LKO-STECH → LKO-B1+B2 — stechiometria z nadmiarem i przypadek graniczny w B2 (APPLY).
 - LKO-DOSW → LKO-B1+B2 — planowanie doświadczenia i obserwacja vs wniosek w B2 (APPLY).
 - LKO-B1+B2 → LKO-SYM-A2 — trening przed symulacją (przygotowuje).
+- LKO-SYM-A2 → LKO-DOSW — zadanie 9: analiza cudzego opisu doświadczenia (APPLY-test)
+- LKO-SYM-A2 → LKO-METALE — zadania 5–6: szereg aktywności i równania jonowe (APPLY-test)
+- LKO-SYM-A2 → LKO-Z36 — zadanie 2: konfiguracje i jony, kumulatywnie z etapem I (APPLY-test)
