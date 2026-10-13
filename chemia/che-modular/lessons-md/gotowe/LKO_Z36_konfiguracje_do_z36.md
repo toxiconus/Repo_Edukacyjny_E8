@@ -6,6 +6,7 @@ opis: Grupy 1, 2 i 13–18 do Z = 36 · cztery szkielety konfiguracji · jony je
 kicker: LKO-Z36 · SUPLEMENT KONKURSOWY · SZKIC
 lead: Po lekcji F07 i F08 umiesz zapisać konfigurację atomów do Z = 20. Konkurs kuratoryjny (etap I) wymaga tego samego do Z = 36 dla grup 1, 2 i 13–18, a także konfiguracji jonów i wzoru związku wyprowadzonego z konfiguracji. Ta lekcja domyka tę lukę bez wchodzenia w podpowłoki s, p, d.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:OLIMP (LKO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA LKO-Z36 · szkic 2026-10-13 · suplement do sesji 2 Sprintu A**
 wymaga: F04 (atom, Z, A) · F06 (układ okresowy: okres, grupa) · F07 (powłoki, zapis skrócony) · F08 (konfiguracja a układ)
 ---
@@ -428,7 +429,24 @@ F3 (zadanie transferowe): **fałsz.** Ga³⁺ ma 2,8,18 (28 e⁻). Ar ma 18 e⁻
 :::
 :::
 
+::: adv | G. Ambitne — Fe²⁺ i Mn²⁺ (4 pkt) | poziom ambitny
+Podaj konfigurację elektronową jonów Fe²⁺ (Z = 26) i Mn²⁺ (Z = 25). Ile elektronów niesparowanych ma każdy z nich? Który jon ma więcej?
+:::
+
+::: odp | Pokaż klucz
+Fe²⁺: 24 elektrony, konfiguracja [Ar]3d⁶ (1 pkt). Mn²⁺: 23 elektrony, konfiguracja [Ar]3d⁵ (1 pkt). Liczba niesparowanych: Fe²⁺ — 4, Mn²⁺ — 5 (1 pkt). Więcej niesparowanych elektronów ma Mn²⁺ (1 pkt). Kontrola: 18 + 6 = 24 i 18 + 5 = 23 ✔.
+:::
+
+::: adv | H. Ambitne — pierwiastek z konfiguracji (4 pkt) | poziom ambitny
+Pierwiastek X ma konfigurację elektronową [Ar]3d¹⁰4s²4p³. Ustal Z, symbol, okres i grupę oraz wzór jego tlenku, w którym X ma najwyższy stopień utlenienia.
+:::
+
+::: odp | Pokaż klucz
+Z = 18 + 10 + 2 + 3 = 33 — arsen, As (1 pkt). Okres 4 (najwyższa powłoka 4), grupa: 3 + 2 = 5 elektronów walencyjnych → grupa 15 (1 pkt). Najwyższy stopień utlenienia As = V (równy liczbie elektronów walencyjnych) — tlenek As₂O₅ (1 pkt). Kontrola: 2·V = 10 = 5·II ✔ (1 pkt).
+:::
+
 ---
+
 
 ## 7 | Mity {#mity}
 

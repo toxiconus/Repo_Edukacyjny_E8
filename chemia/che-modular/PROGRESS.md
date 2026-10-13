@@ -177,3 +177,4 @@
 - 2026-10-13: olimpiada/plany/INDEKS_NAUKI_ETAP_I.html — odświeżony ręcznie (skrypt jednorazowy, brak generatora w repo): wiersze wg aktualnych plików lessons-md/gotowe (stan i rozmiary MD/HTML), dodane F18–F21, sumy przeliczone (36 lekcji).
 - 2026-10-13: olimpiada/plany/INDEKS_NAUKI_LKO_ETAPY.html — odświeżony ręcznie wg plików gotowe (stan, rozmiary MD/HTML), dodane F18–F21, sumy: 51 lekcji.
 - 2026-10-13: dodany generator indeksów nauki: narzedzia/indeks_nauki.py (odświeża rozmiary MD/HTML i stan w olimpiada/plany/INDEKS_NAUKI_*.html; nowe lekcje dodaje ręcznie). Test: idempotentny, bez zmian na obecnym stanie.
+- 2026-10-13: II etap (P2) — LKO_Z36: stan „pełna struktura, bez audytu W1”, dodane zadania ambitne G (Fe²⁺/Mn²⁺) i H (pierwiastek z konfiguracji [Ar]3d¹⁰4s²4p³ → As); exam 7 bez zmian; porównanie: bez utraty. Build OK. Pozostałe P2: N06 (stary format bez bloków — wymaga przebudowy), LKO_METALE, LKO_STECH, LKO_B1B2, LKO_SYM-A2.
