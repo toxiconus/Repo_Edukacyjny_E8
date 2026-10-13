@@ -10,15 +10,23 @@ poglebia: "J03; J04; J05; J11; E01–E02; LKO-SYM-A2"
 wlasciciel: "brak nowych właścicieli pojęć — suplement integruje pod kątem LKO etap II: szereg aktywności (X04), równania jonowe (J03), strącanie osadów (J04), metody otrzymywania soli (N05)"
 zrodla: "Zakres wymagań konkursu chemicznego LKO 2026/27, etap II — rozszerzenia 2, 3, 4, 5 oraz umiejętności wspólne (jonowe równania reakcji, cykle przemian, planowanie doświadczeń)"
 opis: "Szereg aktywności metali z regułami (woda / kwasy / sole; pułapki sodu i kwasu azotowego), tabela rozpuszczalności, procedura równań jonowych, metody otrzymywania kwasów, wodorotlenków i soli, pełny cykl przemian miedzi. 20 zadań w formach LKO z kluczem i punktacją. Zasila LKO-SYM-A2."
-stan: "szkic — 2026-10-13, pod LKO etap II (26.11.2026); bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 kicker: "LKO-METALE · II etap"
 lead: "Szereg aktywności przewiduje, czy metal zareaguje; równania jonowe pokazują, co naprawdę dzieje się w roztworze; metody otrzymywania spinają sole, kwasy i wodorotlenki w jeden cykl."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO II / OLIMP]]
-stopka: "**LKO-METALE szkic** · Szereg aktywności i równania jonowe · 2026"
+stopka: "**LKO-METALE** · Szereg aktywności i równania jonowe · 2026"
 ---
 
 
 # LKO-METALE — Szereg aktywności, równania jonowe, otrzymywanie związków
+
+::: minimum | Muszę umieć na LKO II — 10 punktów
+1. **Szereg aktywności:** metal reaguje z kwasem tylko, gdy stoi przed H; z roztworem soli — gdy jest aktywniejszy od metalu w soli.
+2. **Woda i sód:** K, Na, Ca najpierw reagują z wodą — nie wypierają metali z roztworów soli.
+3. **Równanie jonowe skrócone:** rozwijamy mocne rozpuszczalne elektrolity; osady (↓), gazy (↑), wodę zostawiamy w formie cząsteczkowej.
+4. **Kontrola:** suma ładunków lewej strony = prawej.
+5. **HNO₃ nie daje H₂** — kwas utleniający daje tlenki azotu.
+:::
 
 ## Lustro i most
 
@@ -93,6 +101,10 @@ Metal po H (Cu, Ag, Au) — brak reakcji. **⚠ Wyjątek konkursowy:** kwas azot
 **◇ OLIMP:** passywacja aluminium (cienka, szczelna warstwa Al₂O₃) opóźnia start reakcji z kwasem; zimny stężony HNO₃ pasywuje też żelazo i glin.
 
 ---
+
+::: karta understand | W skrócie — kiedy metal „wypiera”
+Metal wypiera inny metal z soli tylko wtedy, gdy stoi wyżej w szeregu aktywności. Cu w AgNO₃ wypiera Ag, bo Cu jest aktywniejsza. Odwrotnie — Ag w CuSO₄ — nie zachodzi.
+:::
 
 ## 2 | Wykład — Reakcje jonowe: trzy formy i procedura skracania
 
@@ -189,6 +201,10 @@ Trzy warunki biegu reakcji w roztworze: **osad, gaz, woda (słaby elektrolit)** 
 
 ---
 
+::: karta understand | W skrócie — po co skracać równanie
+Równanie jonowe skrócone pokazuje istotę reakcji: jony, które przechodzą w osad, gaz lub wodę. Jony widzowie (np. Na⁺, NO₃⁻), które po obu stronach są takie same, pomijamy — dlatego wiele różnych reakcji ma to samo równanie skrócone.
+:::
+
 ## 4 | Wykład — Cykl przemian miedzi (wzorcowy przykład „cykli")
 
 Dokument LKO wprost wymienia: „planowanie i analizowanie cykli przemian (np. metal → tlenek metalu → wodorotlenek → sól)". Oto pełny obieg miedzi — zamknięty, z pięcioma różnymi typami reakcji:
@@ -221,12 +237,11 @@ Cykl zamyka się w metalu — dlatego „obieg". W zadaniach konkursowych trzeba
 
 ---
 
-## ZADANIA (formy LKO etapu II)
+## 5 | Zadania — karty exam i adv {#zadania}
 
 *Mapowanie: WYKŁAD 1 → A1–A3, B1–B4, C1–C2, E3, E5, F3 · WYKŁAD 2 → A4–A5, B5–B6, C3, E1–E2 · WYKŁAD 3 → D1, E4, F2 · WYKŁAD 4 → F1.*
 
-### A. Zamknięte
-
+::: karta exam | A. Zamknięte (5 pkt)
 **A1.** Który metal NIE reaguje z rozcieńczonym kwasem solnym?
 a) Mg  b) Zn  c) Fe  d) Cu
 
@@ -241,25 +256,49 @@ a) Cu + ZnSO₄(aq)  b) Zn + CuSO₄(aq)  c) Cu + MgSO₄(aq)  d) Ag + CuSO₄(a
 
 **A5.** Równanie skrócone zobojętniania HCl + NaOH:
 a) HCl + NaOH → NaCl + H₂O  b) H⁺ + Cl⁻ → HCl  c) H⁺ + OH⁻ → H₂O  d) Na⁺ + OH⁻ → NaOH
+:::
 
-### B. Prawda–fałsz
+::: odp | Pokaż klucz
+A1 — **d** [1 pkt]
+A2 — **b** [1 pkt]
+A3 — **b** [1 pkt]
+A4 — **b** [1 pkt]
+A5 — **c** (a to forma cząsteczkowa, nie skrócona — pułapka) [1 pkt]
+:::
 
+::: karta exam | B. Prawda–fałsz (6 pkt)
 **B1.** Miedź wypiera srebro z roztworu azotanu(V) srebra.
 **B2.** Sód wrzucony do roztworu CuSO₄ wydziela metaliczną miedź.
 **B3.** Wodę w równaniach jonowych zapisujemy w formie cząsteczkowej.
 **B4.** Cynk z rozcieńczonym kwasem azotowym(V) daje wodór.
 **B5.** Osad (↓) w równaniu jonowym pozostaje w formie cząsteczkowej (nie rozwijamy go na jony).
 **B6.** Aluminium reaguje z kwasem solnym z wydzieleniem wodoru.
+:::
 
-### C. Luka
+::: odp | Pokaż klucz
+B1 — **P** [1 pkt]
+B2 — **F** (sód → woda; Cu(OH)₂↓) [1 pkt]
+B3 — **P** (elektrolit słaby) [1 pkt]
+B4 — **F** (kwas utleniający — bez H₂) [1 pkt]
+B5 — **P** [1 pkt]
+B6 — **P** (po pokonaniu warstwy tlenku) [1 pkt]
+:::
 
+::: karta exam | C. Luki (4 pkt)
 **C1.** Zn + ____ → Zn²⁺ + ____ (równanie skrócone z kwasem)
 **C2.** Fe + ____ → Fe²⁺ + ____ (wypieranie z roztworu)
 **C3.** Ba²⁺ + ____ → BaSO₄↓
 **C4.** 2Na + 2H₂O → 2____ + ____↑
+:::
 
-### D. Dobieranie
+::: odp | Pokaż klucz
+C1 — 2H⁺ / H₂↑ [1 pkt]
+C2 — Cu²⁺ / Cu [1 pkt]
+C3 — SO₄²⁻ [1 pkt]
+C4 — NaOH / H₂ [1 pkt]
+:::
 
+::: karta exam | D. Dobieranie (5 pkt)
 **D1.** Dla każdej pary substratów wybierz skutek: **a) biały osad · b) gaz · c) brak reakcji · d) niebieski osad**
 
 | Para | Skutek |
@@ -269,51 +308,109 @@ a) HCl + NaOH → NaCl + H₂O  b) H⁺ + Cl⁻ → HCl  c) H⁺ + OH⁻ → H�
 | 3. Na₂CO₃ + HCl | |
 | 4. CuSO₄ + BaCl₂ | |
 | 5. CuCl₂ + 2NaOH | |
+:::
 
-### E. Otwarte krótkie
+::: odp | Pokaż klucz
+D1 — 1→a (AgCl) · 2→c · 3→b (CO₂) · 4→a (BaSO₄) · 5→d (Cu(OH)₂) [po 1]
+:::
 
+::: karta exam | E. Otwarte krótkie (12 pkt)
 **E1.** Zapisz reakcję cynku z kwasem solnym w trzech formach: cząsteczkowej, jonowej pełnej i skróconej.
 **E2.** Zapisz równanie skrócone reakcji CuSO₄ + NaOH → Cu(OH)₂↓ + Na₂SO₄ i sprawdź bilans ładunków.
 **E3.** Aluminium wrzucone do kwasu solnego reaguje początkowo bardzo wolno, potem gwałtownie. Wyjaśnij.
 **E4.** Podaj DWA różne zestawy substratów do otrzymania BaSO₄ i zapisz oba równania. Dlaczego równanie skrócone jest w obu przypadkach identyczne?
 **E5.** Zapisz, co zaobserwujesz i co powstanie w reakcji magnezu z roztworem FeSO₄. Czy reakcja zajdzie? Uzasadnij szeregiem aktywności.
+:::
 
-### F. Otwarte rozszerzone
+::: odp | Pokaż klucz
+E1 — Zn + 2HCl → ZnCl₂ + H₂↑ · Zn + 2H⁺ + 2Cl⁻ → Zn²⁺ + 2Cl⁻ + H₂↑ · Zn + 2H⁺ → Zn²⁺ + H₂↑ [po 1 za formę]
+E2 — Cu²⁺ + 2OH⁻ → Cu(OH)₂↓; kontrola: 2+ = 2− ✓ [2 (równanie 1, kontrola ładunków 1) pkt]
+E3 — passywacja: warstwa tlenku Al₂O₃ chroni; kwas ją rozpuszcza — potem czysty Al reaguje gwałtownie [2 (nazwa/warstwa 1, wyjaśnienie 1) pkt]
+E4 — np. BaCl₂ + H₂SO₄ → BaSO₄↓ + 2HCl; BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl; skrócone identyczne, bo zawsze Ba²⁺ + SO₄²⁻ → BaSO₄↓ (widma inne, istota ta sama) [po 1 za równanie, 1 za uzasadnienie]
+E5 — tak — Mg przed Fe; Fe osiada jako szary/czarny nalot, Mg znika; Mg + FeSO₄ → MgSO₄ + Fe [2 (wniosek z szeregu 1, równanie 1) pkt]
+:::
 
+::: adv | F1. Cykl przemian miedzi (5 pkt) | poziom ambitny
 **F1.** (cykl przemian) Uzupełnij cykl miedzi z WYKŁADU 4: zapisz wszystkie pięć równań z warunkami i po jednej obserwacji dla każdego etapu; dla etapów 2 i 3 podaj dodatkowo równania jonowe skrócone.
+:::
+
+::: odp | Pokaż klucz
+F1 — 5 równań z warunkami + 5 obserwacji + 2 równania jonowe (CuO + 2H⁺ → Cu²⁺ + H₂O; Cu²⁺ + 2OH⁻ → Cu(OH)₂↓) [5 równań po 0,4 (2 pkt) · 2 równania jonowe po 1 (2 pkt) · 5 obserwacji po 0,2 (1 pkt) — łącznie 5 pkt pkt]
+:::
+
+::: adv | F2–F3. Planowanie syntezy i pułapka sodu (8 pkt) | poziom ambitny
 **F2.** (planowanie syntezy) Masz: Na₂CO₃, Ca(OH)₂, wodę. Zaprojektuj otrzymanie NaOH: zapisz równanie (z osadem!), równanie jonowe skrócone, wyjaśnij, jak oddzielić produkt od osadu i co jest widmem.
 **F3.** (pułapka) Do roztworu CuSO₄ wrzucono mały kawałek sodu. Uczeń zapisał: „2Na + CuSO₄ → Na₂SO₄ + Cu". Wyjaśnij, dlaczego to zapis błędny; zapisz, co zachodzi naprawdę (dwa równania), i podaj obserwacje. Jaki osad powstaje?
+:::
 
-### KLUCZ I PUNKTACJA
-
-| Zad. | Odpowiedź | Punktacja |
-|---|---|---|
-| A1 | **d** | 1 |
-| A2 | **b** | 1 |
-| A3 | **b** | 1 |
-| A4 | **b** | 1 |
-| A5 | **c** (a to forma cząsteczkowa, nie skrócona — pułapka) | 1 |
-| B1 | **P** | 1 |
-| B2 | **F** (sód → woda; Cu(OH)₂↓) | 1 |
-| B3 | **P** (elektrolit słaby) | 1 |
-| B4 | **F** (kwas utleniający — bez H₂) | 1 |
-| B5 | **P** | 1 |
-| B6 | **P** (po pokonaniu warstwy tlenku) | 1 |
-| C1 | 2H⁺ / H₂↑ | 1 |
-| C2 | Cu²⁺ / Cu | 1 |
-| C3 | SO₄²⁻ | 1 |
-| C4 | NaOH / H₂ | 1 |
-| D1 | 1→a (AgCl) · 2→c · 3→b (CO₂) · 4→a (BaSO₄) · 5→d (Cu(OH)₂) | po 1 |
-| E1 | Zn + 2HCl → ZnCl₂ + H₂↑ · Zn + 2H⁺ + 2Cl⁻ → Zn²⁺ + 2Cl⁻ + H₂↑ · Zn + 2H⁺ → Zn²⁺ + H₂↑ | po 1 za formę |
-| E2 | Cu²⁺ + 2OH⁻ → Cu(OH)₂↓; kontrola: 2+ = 2− ✓ | 2 (równanie 1, kontrola ładunków 1) |
-| E3 | passywacja: warstwa tlenku Al₂O₃ chroni; kwas ją rozpuszcza — potem czysty Al reaguje gwałtownie | 2 (nazwa/warstwa 1, wyjaśnienie 1) |
-| E4 | np. BaCl₂ + H₂SO₄ → BaSO₄↓ + 2HCl; BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl; skrócone identyczne, bo zawsze Ba²⁺ + SO₄²⁻ → BaSO₄↓ (widma inne, istota ta sama) | po 1 za równanie, 1 za uzasadnienie |
-| E5 | tak — Mg przed Fe; Fe osiada jako szary/czarny nalot, Mg znika; Mg + FeSO₄ → MgSO₄ + Fe | 2 (wniosek z szeregu 1, równanie 1) |
-| F1 | 5 równań z warunkami + 5 obserwacji + 2 równania jonowe (CuO + 2H⁺ → Cu²⁺ + H₂O; Cu²⁺ + 2OH⁻ → Cu(OH)₂↓) | 5 równań po 0,4 (2 pkt) · 2 równania jonowe po 1 (2 pkt) · 5 obserwacji po 0,2 (1 pkt) — łącznie 5 pkt |
-| F2 | Na₂CO₃ + Ca(OH)₂ → CaCO₃↓ + 2NaOH · Ca²⁺ + CO₃²⁻ → CaCO₃↓ · oddzielenie: sączenie (filtracja); widma: Na⁺, OH⁻ | 4 (równanie 1, jonowe 1, sączenie 1, widma 1) |
-| F3 | sód reaguje z wodą, nie z Cu²⁺: 2Na + 2H₂O → 2NaOH + H₂↑; 2NaOH + CuSO₄ → Cu(OH)₂↓ + Na₂SO₄; obserwacje: gwałtowne pływanie sodu, wydzielanie gazu, niebieski osad; osad: wodorotlenek miedzi(II) | 4 (wyjaśnienie 1, równania po 1, osad/obserwacje 1) |
+::: odp | Pokaż klucz
+F2 — Na₂CO₃ + Ca(OH)₂ → CaCO₃↓ + 2NaOH · Ca²⁺ + CO₃²⁻ → CaCO₃↓ · oddzielenie: sączenie (filtracja); widma: Na⁺, OH⁻ [4 (równanie 1, jonowe 1, sączenie 1, widma 1) pkt]
+F3 — sód reaguje z wodą, nie z Cu²⁺: 2Na + 2H₂O → 2NaOH + H₂↑; 2NaOH + CuSO₄ → Cu(OH)₂↓ + Na₂SO₄; obserwacje: gwałtowne pływanie sodu, wydzielanie gazu, niebieski osad; osad: wodorotlenek miedzi(II) [4 (wyjaśnienie 1, równania po 1, osad/obserwacje 1) pkt]
+:::
 
 ---
+
+## 6 | Fiszki {#fiszki}
+
+::: fiszki
+Który metal reaguje z rozcieńczonym HCl: Cu czy Zn? | Zn (Cu stoi za wodorem) | basic:podstawa
+Co wypiera Cu z roztworu AgNO₃? | Cu wypiera Ag: Ag⁺ + Cu → Cu²⁺ + Ag | basic:podstawa
+Dlaczego Na w roztworze CuSO₄ nie wypiera miedzi? | Na najpierw reaguje z wodą | understand:rozumienie
+Jaka jest istota reakcji AgNO₃ + NaCl? | Ag⁺ + Cl⁻ → AgCl↓ | basic:podstawa
+Co zostaje w formie cząsteczkowej w równaniu jonowym? | osady (↓), gazy (↑), woda | basic:podstawa
+Dlaczego Al reaguje z HCl dopiero po chwili? | warstwa Al₂O₃ (passywacja) | understand:rozumienie
+Jaki produkt powstaje z sodu i wody? | NaOH i H₂↑ | basic:podstawa
+Jaki osad daje BaCl₂ z H₂SO₄? | BaSO₄↓ (biały) | basic:podstawa
+:::
+
+## 7 | Słownik {#slownik}
+
+::: slownik
+Szereg aktywności :: uporządkowanie metali malejąco wg zdolności do oddawania elektronów; wodór jako punkt odniesienia
+Równanie jonowe :: zapis reakcji z uwzględnieniem jonów; skrócone — bez jonów widzów
+Jony widzowie :: jony obecne po obu stronach równania, pomijane w zapisie skróconym
+Passywacja :: pokrycie metalu szczelną warstwą tlenku, która chroni go przed reakcją (np. Al)
+Wypieranie :: reakcja, w której aktywniejszy metal zastępuje mniej aktywny w związku
+:::
+
+## 8 | Test {#test}
+
+::: test
+? Który metal wypiera miedź z roztworu CuSO₄?
+- Ag
++ Zn
+- Au
+- Pt
+! Zn stoi przed Cu w szeregu aktywności.
+
+? Ile wynosi suma ładunków lewej strony równania Cu²⁺ + 2OH⁻ → Cu(OH)₂↓?
++ 0 po obu stronach
+- 2+
+- 2−
+- 1−
+! Ładunek 2+ + 2× (1−) = 0; po prawej osad obojętny.
+
+? Jaka forma jest poprawna dla AgCl w równaniu jonowym?
+- Ag⁺ + Cl⁻
++ AgCl↓ (formą cząsteczkową)
+- Ag + Cl
+- AgCl⁺
+! Osad nie rozwija się na jony.
+
+? Co powstaje z sodu i wody?
++ NaOH i H₂↑
+- Na₂O i H₂
+- NaH i O₂
+- Na i H₂O₂
+! 2Na + 2H₂O → 2NaOH + H₂↑.
+
+? Dlaczego HNO₃ nie służy do otrzymywania H₂ z metali?
+- bo jest za słaby
++ bo jest kwasem utleniającym i daje tlenki azotu
+- bo zawiera tlen
+- bo nie zawiera wodoru
+! Z HNO₃ metal daje tlenki azotu zamiast wodoru.
+:::
 
 ## Ciekawostki
 
