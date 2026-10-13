@@ -7,6 +7,7 @@ kicker: F05 · FUNDAMENTY · MASTER v1.1
 lead: Druga lekcja fazy B. W F04 nauczyłeś się liczyć protony, neutrony i elektrony. Teraz porządkujemy trzy różne „odmiany” atomu —
 lead: izotop, jon i atom innego pierwiastka — i wyjaśniamy, dlaczego masa atomowa chloru w układzie okresowym to 35,45, a nie 35 albo 37.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F05 v1.0 MASTER** · Izotopy, jony i masa atomowa · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 10 punktów
@@ -293,7 +294,7 @@ Wyobraź sobie torebkę kulek: 3/4 z nich waży po 35 g, a 1/4 — po 37 g. Śre
 
 ## 8 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa
+::: karta exam | A. Podstawa (4 pkt)
 1. Podaj liczbę p⁺, n⁰, e⁻ dla: ¹²C, ¹⁴C, ³⁷Cl (Z: C 6, Cl 17).
 2. Które z nuklidów są izotopami tego samego pierwiastka: ³⁹₁₉K, ⁴⁰₁₈Ar, ⁴¹₁₉K, ⁴⁰₂₀Ca?
 3. Ile elektronów mają jony: K⁺ (Z = 19), Ca²⁺ (Z = 20), S²⁻ (Z = 16), Al³⁺ (Z = 13)?
@@ -307,7 +308,7 @@ Wyobraź sobie torebkę kulek: 3/4 z nich waży po 35 g, a 1/4 — po 37 g. Śre
 :::
 :::
 
-::: karta understand | B. Trening
+::: karta exam | B. Trening (4 pkt)
 1. Podaj p⁺, n⁰, e⁻ dla jonu ⁴⁰₂₀Ca²⁺.
 2. Magnez ma izotopy ²⁴Mg (79%), ²⁵Mg (10%), ²⁶Mg (11%). Oblicz masę atomową, przybliżając masy liczbami masowymi.
 3. Pierwiastek X ma dwa izotopy: ⁶³X (69%) i ⁶⁵X (31%). Oblicz masę atomową (masy ≈ A) i odszukaj pierwiastek w układzie okresowym.
@@ -333,7 +334,7 @@ Wyobraź sobie torebkę kulek: 3/4 z nich waży po 35 g, a 1/4 — po 37 g. Śre
 :::
 :::
 
-::: karta basic | F. Utrwalenie — jony i masa atomowa
+::: karta exam | F. Utrwalenie — jony i masa atomowa (5 pkt)
 1. Oblicz liczbę elektronów w jonach: Mg²⁺, F⁻, Ca²⁺, N³⁻.
 2. Podaj liczbę protonów, neutronów i elektronów dla ⁴⁰₂₀Ca²⁺.
 3. Czym różnią się ³⁵Cl i ³⁷Cl?

@@ -7,6 +7,7 @@ kicker: F06 · FUNDAMENTY · MASTER v1.1
 lead: Trzecia lekcja fazy B. Wiesz już, że pierwiastek wyznacza liczba protonów Z (F04, F05). Teraz uczymy się czytać układ okresowy jak mapę:
 lead: z „adresu” pierwiastka — okresu i grupy — odczytujemy budowę zewnętrznej powłoki i przewidujemy, jak pierwiastek się zachowa.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F06 v1.0 MASTER** · Układ okresowy · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 10 punktów
@@ -430,7 +431,7 @@ Cl (3,16) — leży po prawej stronie tego samego okresu; Na ma 0,93.
 :::
 :::
 
-::: karta basic | A. Podstawa
+::: karta exam | A. Podstawa (5 pkt)
 1. Podaj grupę i okres dla: Na, Cl, C, Al, Ca.
 2. Ile elektronów walencyjnych ma: Mg, O, N, K?
 3. Wymień 3 metale, 3 niemetale i 1 półmetal.
@@ -442,7 +443,7 @@ Cl (3,16) — leży po prawej stronie tego samego okresu; Na ma 0,93.
 :::
 :::
 
-::: karta understand | B. Trening (egzamin)
+::: karta exam | B. Trening (egzamin) (6 pkt)
 6. Dlaczego chlor stoi w grupie 17, a nie 7?
 7. Wyjaśnij, dlaczego wartościowość ≠ numer grupy.
 8. Dlaczego w dół grupy rośnie promień atomowy?
@@ -491,7 +492,7 @@ Cl (3,16) — leży po prawej stronie tego samego okresu; Na ma 0,93.
 :::
 :::
 
-::: karta basic | F. Utrwalenie — odczyt z układu okresowego
+::: karta exam | F. Utrwalenie — odczyt z układu okresowego (5 pkt)
 1. Odczytaj okres, grupę i liczbę elektronów walencyjnych dla Na, O, Al, Cl.
 2. Który atom jest większy: Na czy Cl? Uzasadnij.
 3. Który atom jest większy: Li czy Cs? Uzasadnij.

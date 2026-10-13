@@ -6,6 +6,7 @@ opis: Trzy różne liczby, które łatwo pomylić · ładunek jonu · wartościo
 kicker: F09 · FUNDAMENTY · NOWA WERSJA
 lead: „Ile wiązań tworzy atom?”, „jaki ma ładunek?”, „jaki ma stopień utlenienia?” — w szkole te trzy pytania często są mieszane. Ta lekcja rozdziela je i pokazuje, kiedy która liczba jest właściwa.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
 stopka: **CHEMIA F09 v1.0** · Wartościowość, ładunek, stopień utlenienia · 2026
 ---
 
@@ -182,7 +183,7 @@ Suma stopni dla CO₂ wynosi 0: C + 2 × (−II) = 0 → C = **+IV**. Znak minus
 
 ## 7 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — ładunki i stopnie
+::: karta exam | A. Podstawa — ładunki i stopnie (3 pkt)
 1. Jaki ładunek ma jon Al³⁺, ile ma elektronów, jeśli Z(Al) = 13?
 2. Jaki stopień utlenienia ma fluor w HF?
 3. Jaki stopień utlenienia ma tlen w H₂O?
@@ -194,7 +195,7 @@ Suma stopni dla CO₂ wynosi 0: C + 2 × (−II) = 0 → C = **+IV**. Znak minus
 :::
 :::
 
-::: karta understand | B. Trening — obliczanie stopni
+::: karta exam | B. Trening — obliczanie stopni (3 pkt)
 1. Wyznacz stopień siarki w SO₃.
 2. Wyznacz stopień chloru w HClO₄.
 3. Wyznacz stopień azotu w NO₃⁻.
@@ -206,7 +207,7 @@ Suma stopni dla CO₂ wynosi 0: C + 2 × (−II) = 0 → C = **+IV**. Znak minus
 :::
 :::
 
-::: karta extra | C. Ambitne — wyjątki i porównania
+::: adv | C. Ambitne — wyjątki i porównania | poziom ambitny
 1. Wyznacz stopień węgla w CH₄ i w CO₂. Co wynika z porównania?
 2. Dlaczego w NaH wodór ma stopień −I?
 3. Wyznacz stopień manganu w MnO₄⁻ (jon nadmanganianowy(VII)).
@@ -291,6 +292,10 @@ Nadtlenek :: związek zawierający wiązanie O–O; tlen ma w nim stopień −I
 :::
 
 ## 11 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Wartościowość nie ma znaku, stopień utlenienia ma
+Wartościowość to liczba wiązań, więc jest zawsze dodatnia. Stopień utlenienia ma znak: w amoniaku NH₃ azot ma stopień −III, a wodór +I, choć wartościowość obu to po prostu liczba wiązań.
+:::
 
 ::: karta extra | Dlaczego w tlenkach wyjątkowo często widzimy −II?
 Tlen jest jednym z najbardziej elektroujemnych pierwiastków (po F). W większości związków przyciąga wiążące elektrony, więc dostaje ujemny stopień −II. Wyjątki (nadtlenki, OF₂) pokazują, że reguła jest modelem, a nie prawem.

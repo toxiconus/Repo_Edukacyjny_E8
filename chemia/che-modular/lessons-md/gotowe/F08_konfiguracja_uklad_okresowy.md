@@ -6,6 +6,7 @@ opis: Numer okresu z najwyższego n · numer grupy z elektronów walencyjnych ·
 kicker: F08 · FUNDAMENTY · NOWA WERSJA
 lead: F06 nauczyła czytać układ okresowy z pozycji pierwiastka. Ta lekcja działa w odwrotną stronę: znając konfigurację elektronową (F07), **przewidujemy** okres, grupę i blok. To most między budową atomu a tablicą.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
 stopka: **CHEMIA F08 v1.0** · Konfiguracja → układ okresowy · 2026
 ---
 
@@ -173,7 +174,7 @@ Ta sama grupa oznacza podobne elektrony walencyjne, ale inny okres (inna najwyż
 
 ## 7 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — okres, grupa, blok
+::: karta exam | A. Podstawa — okres, grupa, blok (3 pkt)
 Dla każdego pierwiastka określ okres, grupę i blok:
 1. Na (Z = 11)
 2. Cl (Z = 17)
@@ -186,7 +187,7 @@ Dla każdego pierwiastka określ okres, grupę i blok:
 :::
 :::
 
-::: karta understand | B. Trening — odwrotnie
+::: karta exam | B. Trening — odwrotnie (2 pkt)
 1. Pierwiastek ma konfigurację [Ne] 3s² 3p² — podaj okres, grupę i nazwę.
 2. Pierwiastek z grupy 13 w okresie 3 — podaj konfigurację skróconą.
 
@@ -196,7 +197,7 @@ Dla każdego pierwiastka określ okres, grupę i blok:
 :::
 :::
 
-::: karta extra | C. Ambitne — przejściowe
+::: adv | C. Ambitne — przejściowe | poziom ambitny
 1. Mn ma konfigurację [Ar] 3d⁵ 4s². Podaj okres, blok i grupę.
 2. Dlaczego Zn (Z = 30, [Ar] 3d¹⁰ 4s²) leży w grupie 12, a nie w grupie 2?
 
@@ -278,6 +279,10 @@ Lantanowce i aktynowce :: pierwiastki bloku f, układane poniżej głównej czę
 :::
 
 ## 11 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Dlaczego lantanowce i aktynowce leżą pod tabelą
+Gdyby ich 14-elementowe bloki wstawić w środek tabeli, układ stałby się bardzo szeroki. Dlatego zapisuje się je osobno pod tabelą, a ich konfiguracje wynikają z tej samej logiki co w bloku f.
+:::
 
 ::: karta extra | Dlaczego okresy mają długości 2, 8, 8, 18, 18, 32?
 Długości okresów wynikają z liczby elektronów, jakie mieszczą się w kolejnych podpowłokach w kolejności zapełniania: 2 (1s), 8 (2s 2p), 8 (3s 3p), 18 (4s 3d 4p), 18 (5s 4d 5p), 32 (6s 4f 5d 6p). Kolejność nie jest „po numerze powłoki”, a po energii.

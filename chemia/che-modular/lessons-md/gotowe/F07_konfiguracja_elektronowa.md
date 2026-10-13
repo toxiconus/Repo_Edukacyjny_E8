@@ -6,6 +6,7 @@ opis: Powłoki i podpowłoki · kolejność zapełniania (Aufbau) · reguły Pau
 kicker: F07 · FUNDAMENTY · NOWA WERSJA
 lead: Atom ma jądro i elektrony. F04 i F05 mówiły, ile ich jest. Ta lekcja mówi, **gdzie** te elektrony się znajdują. Ten zapis — konfiguracja elektronowa — jest językiem, którym opisujemy budowę atomu i z którego wynika położenie pierwiastka w układzie okresowym.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F07 v1.0** · Konfiguracja elektronowa · 2026
 ---
 
@@ -239,7 +240,7 @@ Pomylił atom z sąsiadem w układzie. Sprawdź zawsze sumę indeksów: musi ró
 
 ## 11 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — zapisz konfiguracje
+::: karta exam | A. Podstawa — zapisz konfiguracje (4 pkt)
 1. Zapisz pełną konfigurację Mg (Z = 12).
 2. Zapisz skróconą konfigurację K (Z = 19).
 3. Ile elektronów mieści się na podpowłoce 3d?
@@ -253,7 +254,7 @@ Pomylił atom z sąsiadem w układzie. Sprawdź zawsze sumę indeksów: musi ró
 :::
 :::
 
-::: karta understand | B. Trening — rozpoznaj pierwiastek
+::: karta exam | B. Trening — rozpoznaj pierwiastek (3 pkt)
 1. Konfiguracja: 1s² 2s² 2p⁶ 3s² 3p⁴. Jaki to pierwiastek i ile ma elektronów?
 2. Zapis [Ar] 4s² 3d⁶ — który pierwiastek? (Uwaga: zapisz w kolejności zwyczajowej.)
 3. Ile niesparowanych elektronów ma atom węgla według reguły Hunda?
@@ -265,7 +266,7 @@ Pomylił atom z sąsiadem w układzie. Sprawdź zawsze sumę indeksów: musi ró
 :::
 :::
 
-::: karta extra | C. Ambitne — jony i wyjątki
+::: adv | C. Ambitne — jony i wyjątki | poziom ambitny
 1. Podaj konfigurację Fe³⁺ i porównaj ją z konfiguracją Cr³⁺.
 2. Wyjaśnij, dlaczego Cu nie ma konfiguracji [Ar] 3d⁹ 4s².
 3. Zapisz konfigurację S²⁻ i wskaż, który gaz szlachetny ma taką samą.
