@@ -9,10 +9,18 @@ poglebia: "LKO III — Sprint C (mol, pochodne węglowodorów, cukry); REV02"
 wlasciciel: "symulacja diagnostyczna etapu II LKO (jedno zastosowanie: próba generalna w warunkach zawodów + lokalizacja strat przed 26.11)"
 zrodla: "Zakres wymagań konkursu chemicznego LKO 2026/27 — etap II (punkty I–VIII podstawy kumulatywnie + rozszerzenia 1–7); terminarz wg źródła pośredniego (do potwierdzenia): 26.11.2026, 9:00, 90 min, 40 pkt, kalkulator prosty"
 opis: "Pełna symulacja etapu II: 10 zadań / 40 pkt / 90 min w formach LKO. Kumulatywność etapu I (mieszaniny i krzywe, Z=36, typy reakcji, stężenie %) wpleciona w zadania 1–3 i 10; nowa treść etapu II: wodorki (4), szereg aktywności z pułapką (5), równania jonowe i rozpuszczalność (6), stechiometria z nadmiarem + wydajność ×0,9 (7), węglowodory acykliczne (8), analiza cudzego opisu (9). Klucz z siatką punktowania, budżetami czasu, post-mortem z mapowaniem na pliki."
-stan: "szkic — 2026-10-13 (bez audytu W1; zewnętrzna recenzja do zrobienia)"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 ---
 
 # LKO-SYM-A2 — Symulacja etapu II
+
+::: minimum | Muszę umieć przed symulacją — 10 punktów
+1. **Zapis:** równanie → masowo pod równaniem → proporcja → wynik z jednostką; sam wynik nie wystarcza.
+2. **Wodorki i szereg:** NH₃ dnem do góry; HCl i H₂S dnem do dołu; Mg, Zn, Fe wypierają metale z soli, Ag i Cu nie reagują z kwasem.
+3. **Nadmiar:** ograniczający substrat przed produktem; wydajność 90% to dodatkowe ×0,9 na końcu.
+4. **Równania jonowe:** osady, gazy i wodę zostawiamy w formie cząsteczkowej; sprawdzaj bilans ładunków.
+5. **Węglowodory:** etenu nie mylić z metanem; spalanie niecałkowite daje CO.
+:::
 
 ## Lustro i most
 
@@ -40,6 +48,10 @@ Przy nadmiarze (zadanie 7) dodaj krok „który substrat się wyczerpie": porów
 
 **Mini-wykład — woda a roztwór.** Najczęstszy błąd na tym etapie to pomylenie masy wody z masą roztworu. Roztwór = substancja rozpuszczona + rozpuszczalnik. 50 g wody z 55 g soli daje 105 g roztworu, nie 150 g — stąd też stężenie procentowe zawsze wypada poniżej 100%.
 
+::: karta understand | W skrócie — czas to część zadania
+Symulacja jest sprawdzianem tempa i zapisu. Najpierw zrób zadania, które potrafisz w kilka minut, potem te z pełną proporcją. Zostaw rezerwę na sprawdzenie wyniku.
+:::
+
 ## Zasady przeprowadzenia
 
 1. **90 minut odliczanych sztywno** (telefon w innym pokoju). Kalkulator prosty dozwolony — jak na zawodach.
@@ -56,8 +68,9 @@ Przy nadmiarze (zadanie 7) dodaj krok „który substrat się wyczerpie": porów
 
 ---
 
-## Zadanie 1. Mieszaniny i oczyszczanie (3 pkt) — *5′*
+## Zadania (formy etapu II)
 
+::: karta exam | Zadanie 1. Mieszaniny i oczyszczanie (3 pkt) — *5′*
 a) *(1,5)* Do każdej mieszaniny dobierz **najlepszą** metodę (dwie metody zbędne):
 
 | Mieszanina | | Metody: |
@@ -69,9 +82,13 @@ a) *(1,5)* Do każdej mieszaniny dobierz **najlepszą** metodę (dwie metody zb�
 | | | e) dekantacja |
 
 b) *(1,5)* Uzasadnij jednym zdaniem, dlaczego do oczyszczenia saletry (próbka 2) wybrano oziębianie, a nie odparowanie — odwołaj się do krzywych rozpuszczalności obu soli.
+:::
 
-## Zadanie 2. Budowa materii — konfiguracje do Z=36 (4 pkt) — *6′*
+::: odp | Pokaż klucz
+a) 1→b, 2→d, 3→a (po 0,5; zbędne: c, e). b) 1 pkt za odwołanie do KSZTAŁTU obu krzywych: krzywa KNO₃ jest stroma (32→110 g), więc chłodzenie wyrzuca dużo soli; 0,5 za wniosek, że NaCl (krzywa płaska, 36→37 g) zostaje w roztworze. Sama nazwa metody = 0.
+:::
 
+::: karta exam | Zadanie 2. Budowa materii — konfiguracje do Z=36 (4 pkt) — *6′*
 a) *(1)* Konfiguracja atomu arsenu (Z=33):
 a) 2,8,8,15  b) 2,8,18,5  c) 2,8,15,10  d) 2,8,20,3
 
@@ -80,9 +97,13 @@ a) Jon Ga³⁺ ma konfigurację elektronową gazu szlachetnego. ____
 b) Jon Br⁻ i atom kryptonu mają identyczną konfigurację. ____
 
 c) *(1)* Anion X²⁻ ma 36 elektronów. Podaj: konfigurację tego anionu, symbol pierwiastka X oraz wzór związku X z wapniem.
+:::
 
-## Zadanie 3. Reakcje: typy, równania, warunki (4 pkt) — *7′*
+::: odp | Pokaż klucz
+a) **b** — 1. b) a **F** (2,8,18 — pełna powłoka M, ale to nie konfiguracja gazu szlachetnego; por. Kr = 2,8,18,8) · b **P** (oba 2,8,18,8) — po 1. c) X²⁻ ma 36 e⁻ → atom X ma 34 e⁻ (Z=34) → **Se** (selen), anion **Se²⁻**: 2,8,18,8 (izoelektronowy z Kr) — 0,5; wzór: Ca²⁺ + Se²⁻, bilans ładunków 2+ = 2− → **CaSe** — 0,5.
+:::
 
+::: karta exam | Zadanie 3. Reakcje: typy, równania, warunki (4 pkt) — *7′*
 a) *(1,5)* Do każdego równania dopisz typ (**synteza / analiza / wymiana**):
 
 | Równanie | Typ |
@@ -96,9 +117,13 @@ b) *(1,5)* Dobierz współczynniki:
    (ii) ____ Al + ____ O₂ → ____ Al₂O₃
 
 c) *(1)* Zapisz równanie reakcji żelaza z siarką **z warunkami** i podaj jedną obserwację.
+:::
 
-## Zadanie 4. Wodorki niemetali NH₃ · HCl · H₂S (4 pkt) — *8′*
+::: odp | Pokaż klucz
+a) 1–synteza, 2–analiza, 3–wymiana (po 0,5). b) (i) 2, 5, 4, 2 · (ii) 4, 3, 2 — 0,75 za każde kompletne (0,75 za każde kompletne równanie; błąd w jednym współczynniku = 0 za to równanie). c) Fe + S →(t) FeS — 0,5 (warunek inicjującego podgrzania wliczony); obserwacja: rozżarzenie/przebieg samorzutny po podgrzaniu, szary produkt — 0,5.
+:::
 
+::: karta exam | Zadanie 4. Wodorki niemetali NH₃ · HCl · H₂S (4 pkt) — *8′*
 a) *(3)* Uzupełnij tabelę — **każda kolumna to jeden punkt**:
 
 | | NH₃ | HCl | H₂S |
@@ -108,9 +133,17 @@ a) *(3)* Uzupełnij tabelę — **każda kolumna to jeden punkt**:
 | roztwór wodny (zasadowy / kwas mocny / kwas słaby) | | | |
 
 b) *(1)* Uzupełnij: 2NH₄Cl + ____ →(t) CaCl₂ + 2____↑ + 2H₂O
+:::
 
-## Zadanie 5. Szereg aktywności metali (4 pkt) — *7′*
+::: odp | Pokaż klucz
+a) po 1 za pełną kolumnę (dwie z trzech poprawnych informacji w kolumnie = 0):
+- NH₃: dnem do **góry** · mokry czerwony lakmus **sinieje** · **zasadowy**;
+- HCl: dnem do **dołu** · mokry niebieski lakmus **czerwienieje** (mgiełka; dymy z NH₃) · kwas **mocny**;
+- H₂S: dnem do **dołu** (wypieranie powietrza; nad wodą zbiera się słabo) · **papier ołowiowy czernieje** · kwas **słaby**.
+b) **Ca(OH)₂** · **NH₃** — po 0,5.
+:::
 
+::: karta exam | Zadanie 5. Szereg aktywności metali (4 pkt) — *7′*
 a) *(1)* Który metal NIE reaguje z rozcieńczonym kwasem siarkowym(VI)?
 a) Mg  b) Zn  c) Fe  d) Ag
 
@@ -119,18 +152,26 @@ a) Sód wrzucony do roztworu CuSO₄ pokrywa się warstwą metalicznej miedzi. _
 b) Aluminium reaguje z kwasem solnym z wydzieleniem wodoru, ale reakcja startuje dopiero po usunięciu warstwy tlenku. ____
 
 c) *(1)* Do roztworu AgNO₃ wprowadzono blaszkę miedzianą. Zapisz równanie reakcji i podaj dwie obserwacje.
+:::
 
-## Zadanie 6. Równania jonowe i rozpuszczalność (5 pkt) — *9′*
+::: odp | Pokaż klucz
+a) **d** — 1. b) a **F** (sód najpierw z wodą → Cu(OH)₂↓) · b **P** — po 1. c) Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag — 0,5 (wzory i współczynniki); obserwacje: **srebrne igiełki/nalot na miedzi** + roztwór **błękitnieje** — 0,5 (obie wymagane).
+:::
 
+::: karta exam | Zadanie 6. Równania jonowe i rozpuszczalność (5 pkt) — *9′*
 a) *(1)* Równanie jonowe skrócone reakcji HCl(aq) + NaOH(aq):
 a) HCl + NaOH → NaCl + H₂O  b) H⁺ + OH⁻ → H₂O  c) Na⁺ + Cl⁻ → NaCl  d) H⁺ + Cl⁻ → HCl
 
 b) *(2)* Zapisz reakcję BaCl₂(aq) + Na₂SO₄(aq) w trzech formach: cząsteczkowej, jonowej pełnej, jonowej skróconej (w skróconej sprawdź bilans ładunków).
 
 c) *(2)* a) Zapisz równanie skrócone reakcji KCl(aq) + AgNO₃(aq) i podaj barwę osadu. b) Wyjaśnij jednym zdaniem, dlaczego KNO₃(aq) i NaCl(aq) **nie** reagują ze sobą.
+:::
 
-## Zadanie 7. Stechiometria z nadmiarem (5 pkt) — *14′* (pełny zapis we wszystkich punktach!)
+::: odp | Pokaż klucz
+a) **b** — 1 (a to forma cząsteczkowa — pułapka). b) cząsteczkowe: BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl (0,5) · pełne: Ba²⁺ + 2Cl⁻ + 2Na⁺ + SO₄²⁻ → BaSO₄↓ + 2Na⁺ + 2Cl⁻ (0,5) · skrócone: Ba²⁺ + SO₄²⁻ → BaSO₄↓ (0,5) + kontrola ładunków 2+ = 2− (0,5). c) a) Ag⁺ + Cl⁻ → AgCl↓, osad **biały** (0,5+0,5) · b) obie sole rozpuszczalne i produkty też (KNO₃, NaCl) — nic nie wypada z układu (osad/gaz/woda), to mieszanina jonów, nie reakcja (1).
+:::
 
+::: karta exam | Zadanie 7. Stechiometria z nadmiarem (5 pkt) — *14′* (pełny zapis we wszystkich punktach!)
 Do 150 g roztworu kwasu solnego o stężeniu 7,3% wprowadzono 20 g węglanu wapnia (zadziałała cała porcja dostępna dla reakcji; mas atomowych: H=1, Cl=35,5, Ca=40, C=12, O=16).
 
 a) *(1)* Oblicz masę czystego HCl w roztworze.
@@ -138,9 +179,18 @@ b) *(2)* Ustal, który substrat jest ograniczający — pokaż obliczenie.
 c) *(1)* Oblicz **masę teoretyczną** CO₂.
 d) *(1)* W doświadczeniu rzeczywistym zebrano **90% masy teoretycznej** CO₂. Oblicz masę CO₂, którą faktycznie uzyskano.
 *(kontrola-nagroda: podaj masę CaCO₃, która nie zareagowała — jeśli policzysz, masz wgląd w swój wynik)*
+:::
 
-## Zadanie 8. Węglowodory (4 pkt) — *7′*
+::: odp | Pokaż klucz
+(rubryka z podziałem na kroki — każdy krok niezależnie punktowany):
+a) m(HCl) = 0,073 × 150 g = **10,95 g** — 1.
+b) porównanie: 20 g CaCO₃ wymaga 20 × 73/100 = **14,6 g HCl** > 10,95 g (albo: 10,95 g HCl zużyje 10,95 × 100/73 = **15 g CaCO₃** < 20 g) → **ograniczający HCl**, CaCO₃ w nadmiarze — 1 za proporcję, 1 za wniosek.
+c) m(CO₂) = 10,95 × 44/73 = **6,6 g** — 1.
+d) **6,6 × 0,9 = 5,94 g** — 1. *Notatka dydaktyczna (omów po symulacji): „90% teoretycznej" to wydajność reakcji — poza rozszerzeniem 7, na etapie III będzie stałym elementem. Metoda: jedna dodatkowa proporcja ×0,9 na końcu. Jeśli uczeń pominął d) — odnotuj, nie karz dodatkowo.*
+Kontrola-nagroda: zużyto 15 g CaCO₃ → **zostało 5 g** (bez pkt, samocheck).
+:::
 
+::: karta exam | Zadanie 8. Węglowodory (4 pkt) — *7′*
 a) *(1)* Wzór etenu:
 a) C₂H₆  b) C₂H₄  c) C₂H₂  d) CH₄
 
@@ -149,25 +199,60 @@ a) Eten odbarwia wodę bromową (próba bromowa). ____
 b) Metan jest węglowodorem nienasyconym. ____
 
 c) *(1)* Zapisz zbilansowane równanie całkowitego spalania propanu C₃H₈ oraz jedno zdanie: co powstaje przy spalaniu **niecałkowitym** i dlaczego jest to niebezpieczne.
+:::
 
-## Zadanie 9. Analiza cudzego opisu (4 pkt) — *10′*
+::: odp | Pokaż klucz
+a) **b** — 1. b) a **P** · b **F** (metan — alkan, nasycony) — po 1. c) C₃H₈ + 5O₂ → 3CO₂ + 4H₂O — 0,5 (bilans komplet); spalanie niecałkowite (ograniczony dostęp tlenu) daje **CO — tlenek węgla(II)**, trujący — 0,5.
+:::
 
+::: adv | Zadanie 9. Analiza cudzego opisu (4 pkt) — *10′* | poziom ambitny
 Poniższy opis zawiera **co najmniej cztery błędy**:
 
 > *Cel: otrzymanie amoniaku. Przebieg: ogrzewano w probówce mieszaninę chlorku amonu z wapnem gaszonym; zaobserwowano wydzielanie amoniaku; gaz zbierano w odwróconej zlewce dnem do dołu; przy wlocie gaz umieszczono mokry czerwony papier lakmusowy. Równanie: NH₄Cl + Ca(OH)₂ → CaCl₂ + NH₃ + H₂O.*
 
 a) *(3)* Wskaż (i popraw!) co najmniej **trzy** błędy — każdy błąd = nazwanie + poprawna wersja.
 b) *(1)* Zapisz poprawne, zbilansowane równanie z warunkami i strzałkami.
+:::
 
-## Zadanie 10. Rozpuszczalność i stężenie (3 pkt) — *9′* (pełny zapis)
+::: odp | Pokaż klucz
+a) po 1 za błąd (nazwanie + poprawka; sama zakreślka = 0). Katalog poprawnych odpowiedzi:
+1. „zaobserwowano wydzielanie amoniaku" — wniosek z nazwą produktu; obserwacja: ostry zapach (machnięcie dłoni), mokry czerwony lakmus **sinieje**;
+2. zbieranie **dnem do dołu** — błąd; NH₃ jest lżejszy od powietrza (M=17<29) → **dnem do góry**;
+3. równanie niezbilansowane i bez strzałek — patrz b);
+4. brak warunku ogrzewania (t) w równaniu (w treści „ogrzewano" jest — w równaniu brak);
+5. (uznawany) brak BHP: machnięcie dłoni zamiast wąchania, wyciąg — amoniak drażni.
+b) **2NH₄Cl + Ca(OH)₂ →(t) CaCl₂ + 2NH₃↑ + 2H₂O** — 1 (bilans + ↑ + (t) komplet; brak jednego elementu = 0).
+:::
 
+::: adv | Zadanie 10. Rozpuszczalność i stężenie (3 pkt) — *9′* (pełny zapis) | poziom ambitny
 Dane: rozpuszczalność KNO₃ — 32 g (20 °C) i 110 g (60 °C) na 100 g wody.
 
 a) *(1)* Przygotowano nasycony roztwór w 60 °C, używając **50 g wody**. Oblicz masę soli i masę całego roztworu.
 b) *(1)* Roztwór schłodzono do 20 °C. Oblicz masę wykrystalizowanej saletry.
 c) *(1)* Oblicz stężenie procentowe roztworu nasyconego KNO₃ w 20 °C.
+:::
+
+::: odp | Pokaż klucz
+a) sól: 110 × 50/100 = **55 g** (0,5); roztwór: 55 + 50 = **105 g** (0,5 — nie 150!; błąd 150 g = pułapka „woda=roztwór"). b) spadek (110−32) × 50/100 = **39 g** (droga kontrolna: 55 − 32×50/100 = 55 − 16 = 39 ✓) — 1 (proporcja 0,5, wynik 0,5). c) Cp = 32/(100+32) × 100% ≈ **24,2%** — 1 (suma 132 w mianowniku 0,5, wynik 0,5; „32%" = 0).
+:::
 
 ---
+
+## Fiszki i słownik — symulacja
+
+::: fiszki
+Wzór etenu | C₂H₄ | basic:podstawa
+Jaki gaz wydziela się w spalaniu niecałkowitym węglowodorów i dlaczego jest groźny? | CO — trujący, bezbarwny i bezwonny | basic:bhp
+Która metoda oczyszcza saletrę z soli kuchennej? | krystalizacja przez oziębianie | understand:rozumienie
+Ile gramów soli wykrystalizuje z 50 g wody (110 → 32 g/100 g)? | 39 g | understand:rozumienie
+Dlaczego w zadaniu 10 roztwór to 105 g, a nie 150 g? | woda z 50 g + sól 55 g | understand:rozumienie
+:::
+
+::: slownik
+Symulacja :: próba w warunkach zbliżonych do zawodów: czas, zapis, zasady
+Siatka punktowania :: opis, za co przyznajemy punkty w każdym kroku zadania
+Post-mortem :: analiza wyniku: zadanie → plik do powtórki → naprawa
+:::
 
 ## Ciekawostki
 
@@ -182,45 +267,6 @@ Azotan(V) potasu (KNO₃) jest jednym z trzech składników prochu czarnego. Jeg
 ::: karta extra | Czad — gaz, którego nie czuć
 Tlenek węgla(II) powstaje przy spalaniu niecałkowitym (zadanie 8). Jest bezbarwny i bezwonny, a wiąże hemoglobinę silniej niż tlen — dlatego w zadaniach o spalaniu zawsze pytamy o produkt niebezpieczny.
 :::
-
-# KLUCZ I SIATKA PUNKTOWANIA
-
-**Zadanie 1.** a) 1→b, 2→d, 3→a (po 0,5; zbędne: c, e). b) 1 pkt za odwołanie do KSZTAŁTU obu krzywych: krzywa KNO₃ jest stroma (32→110 g), więc chłodzenie wyrzuca dużo soli; 0,5 za wniosek, że NaCl (krzywa płaska, 36→37 g) zostaje w roztworze. Sama nazwa metody = 0.
-
-**Zadanie 2.** a) **b** — 1. b) a **F** (2,8,18 — pełna powłoka M, ale to nie konfiguracja gazu szlachetnego; por. Kr = 2,8,18,8) · b **P** (oba 2,8,18,8) — po 1. c) X²⁻ ma 36 e⁻ → atom X ma 34 e⁻ (Z=34) → **Se** (selen), anion **Se²⁻**: 2,8,18,8 (izoelektronowy z Kr) — 0,5; wzór: Ca²⁺ + Se²⁻, bilans ładunków 2+ = 2− → **CaSe** — 0,5.
-
-**Zadanie 3.** a) 1–synteza, 2–analiza, 3–wymiana (po 0,5). b) (i) 2, 5, 4, 2 · (ii) 4, 3, 2 — 0,75 za każde kompletne (0,75 za każde kompletne równanie; błąd w jednym współczynniku = 0 za to równanie). c) Fe + S →(t) FeS — 0,5 (warunek inicjującego podgrzania wliczony); obserwacja: rozżarzenie/przebieg samorzutny po podgrzaniu, szary produkt — 0,5.
-
-**Zadanie 4.** a) po 1 za pełną kolumnę (dwie z trzech poprawnych informacji w kolumnie = 0):
-- NH₃: dnem do **góry** · mokry czerwony lakmus **sinieje** · **zasadowy**;
-- HCl: dnem do **dołu** · mokry niebieski lakmus **czerwienieje** (mgiełka; dymy z NH₃) · kwas **mocny**;
-- H₂S: dnem do **dołu** (może być nad wodą) · **papier ołowiowy czernieje** · kwas **słaby**.
-b) **Ca(OH)₂** · **NH₃** — po 0,5.
-
-**Zadanie 5.** a) **d** — 1. b) a **F** (sód najpierw z wodą → Cu(OH)₂↓) · b **P** — po 1. c) Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag — 0,5 (wzory i współczynniki); obserwacje: **srebrne igiełki/nalot na miedzi** + roztwór **błękitnieje** — 0,5 (obie wymagane).
-
-**Zadanie 6.** a) **b** — 1 (a to forma cząsteczkowa — pułapka). b) cząsteczkowe: BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl (0,5) · pełne: Ba²⁺ + 2Cl⁻ + 2Na⁺ + SO₄²⁻ → BaSO₄↓ + 2Na⁺ + 2Cl⁻ (0,5) · skrócone: Ba²⁺ + SO₄²⁻ → BaSO₄↓ (0,5) + kontrola ładunków 2+ = 2− (0,5). c) a) Ag⁺ + Cl⁻ → AgCl↓, osad **biały** (0,5+0,5) · b) obie sole rozpuszczalne i produkty też (KNO₃, NaCl) — nic nie wypada z układu (osad/gaz/woda), to mieszanina jonów, nie reakcja (1).
-
-**Zadanie 7** (rubryka z podziałem na kroki — każdy krok niezależnie punktowany):
-a) m(HCl) = 0,073 × 150 g = **10,95 g** — 1.
-b) porównanie: 20 g CaCO₃ wymaga 20 × 73/100 = **14,6 g HCl** > 10,95 g (albo: 10,95 g HCl zużyje 10,95 × 100/73 = **15 g CaCO₃** < 20 g) → **ograniczający HCl**, CaCO₃ w nadmiarze — 1 za proporcję, 1 za wniosek.
-c) m(CO₂) = 10,95 × 44/73 = **6,6 g** — 1.
-d) **6,6 × 0,9 = 5,94 g** — 1. *Notatka dydaktyczna (omów po symulacji): „90% teoretycznej" to wydajność reakcji — poza rozszerzeniem 7, na etapie III będzie stałym elementem. Metoda: jedna dodatkowa proporcja ×0,9 na końcu. Jeśli uczeń pominął d) — odnotuj, nie karz dodatkowo.*
-Kontrola-nagroda: zużyto 15 g CaCO₃ → **zostało 5 g** (bez pkt, samocheck).
-
-**Zadanie 8.** a) **b** — 1. b) a **P** · b **F** (metan — alkan, nasycony) — po 1. c) C₃H₈ + 5O₂ → 3CO₂ + 4H₂O — 0,5 (bilans komplet); spalanie niecałkowite (ograniczony dostęp tlenu) daje **CO — tlenek węgla(II)**, trujący — 0,5.
-
-**Zadanie 9.** a) po 1 za błąd (nazwanie + poprawka; sama zakreślka = 0). Katalog poprawnych odpowiedzi:
-1. „zaobserwowano wydzielanie amoniaku" — wniosek z nazwą produktu; obserwacja: ostry zapach (machnięcie dłoni), mokry czerwony lakmus **sinieje**;
-2. zbieranie **dnem do dołu** — błąd; NH₃ jest lżejszy od powietrza (M=17<29) → **dnem do góry**;
-3. równanie niezbilansowane i bez strzałek — patrz b);
-4. brak warunku ogrzewania (t) w równaniu (w treści „ogrzewano" jest — w równaniu brak);
-5. (uznawany) brak BHP: machnięcie dłoni zamiast wąchania, wyciąg — amoniak drażni.
-b) **2NH₄Cl + Ca(OH)₂ →(t) CaCl₂ + 2NH₃↑ + 2H₂O** — 1 (bilans + ↑ + (t) komplet; brak jednego elementu = 0).
-
-**Zadanie 10.** a) sól: 110 × 50/100 = **55 g** (0,5); roztwór: 55 + 50 = **105 g** (0,5 — nie 150!; błąd 150 g = pułapka „woda=roztwór"). b) spadek (110−32) × 50/100 = **39 g** (droga kontrolna: 55 − 32×50/100 = 55 − 16 = 39 ✓) — 1 (proporcja 0,5, wynik 0,5). c) Cp = 32/(100+32) × 100% ≈ **24,2%** — 1 (suma 132 w mianowniku 0,5, wynik 0,5; „32%" = 0).
-
----
 
 # POST-MORTEM — z wyniku do decyzji
 
