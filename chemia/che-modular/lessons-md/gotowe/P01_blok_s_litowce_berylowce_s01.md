@@ -132,24 +132,11 @@ Tlenek metalu w reakcji z wodą daje jony OH⁻. Roztwór z jonami OH⁻ ma odcz
 
 ## 5 | Płomienie i wykrywanie metali {#plomienie}
 
-@klocek plomien {barwa="#f59e0b", nazwa="Na — żółty"} | Próba płomieniowa: sód
-@opis Płomień palnika, który powoli zmienia barwę z pomarańczowej na żółtą (barwa sodu). Wniosek: sód w płomieniu daje żółtą barwę, więc żółty płomień wskazuje sód.
+@klocek palniki {metale="Na,K,Ca"} | Próba płomieniowa: trzy palniki obok siebie (sód, potas, wapń)
+@opis Trzy palniki stoją w jednym rzędzie. Nad każdym płomień zaczyna pomarańczowy i powoli zmienia barwę: sód na żółto, potas na fiołkowo, wapń na ceglastoczerwono. Wniosek: barwa płomienia wskazuje metal, bo wzbudzone atomy wysyłają światło o charakterystycznej długości fali.
 
-@klocek palenie {metal="Mg"} | Palenie magnezu: jasny biały błysk
-@opis Taśma magnezu płonie jasnym białym płomieniem z iskrami. Wniosek: magnez w powietrzu pali się intensywnie, dlatego trzeba go trzymać z dala od wody i z dala od dzieci.
-
-@klocek palenie {metal="K"} | Palenie potasu: fioletowy płomień
-@opis Płomień potasu, fioletowy, z małą liczbą iskier. Wniosek: barwa płomienia pozwala rozpoznać metal, a palenie metalu grupy 1 jest niebezpieczne.
-
-@klocek plomien {barwa="#f59e0b", nazwa="Na — żółty"} | Próba płomieniowa: sód
-@opis Płomień palnika o żółtej barwie, podpisany „Na — żółty”. Wniosek: sód w płomieniu daje żółtą barwę, więc żółty płomień wskazuje sód.
-
-::: karta understand | Przykład prowadzony: wykrycie metalu po płomieniu
-**Dane:** nieznana sól nadaje płomieniu intensywnie żółtą barwę.
-**Krok 1:** żółta barwa to charakterystyczna cecha sodu.
-**Krok 2:** kolor płomienia pochodzi od elektronów wzbudzanych w atomach metalu i wypromieniowujących światło o określonej długości fali.
-**Wniosek:** sól zawiera sód. Potwierdzenie wymaga drugiej próby (uproszczenie: w praktyce testów jest więcej).
-:::
+@klocek palniki {metale="Mg,Ba,Ra"} | Palenie magnezu i próba płomieniowa baru i radu
+@opis Magnez pali się oślepiająco białym płomieniem z iskrami. Bar zabarwia płomień na zielono. Rad barwi płomień karminowo, lecz jest promieniotwórczy, więc obok pokazano znak promieniowania i zakaz wykonywania doświadczeń w szkole. Wniosek: nie każdy metal barwi płomień, a rad pokazujemy tylko jako animację.
 
 ## 6 | Zastosowania {#zastosowania}
 

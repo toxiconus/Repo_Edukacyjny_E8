@@ -136,6 +136,11 @@ def klocek_line(st):
     return '<figure class="lk-fig" data-klocek="%s" data-opt="%s"><div class="lk-fig-body"></div>%s</figure>' % (
         nazwa, H.escape(json.dumps(opts, ensure_ascii=False), quote=True), fc)
 
+def klocki_css():
+    """Arkusze z manifestu klocków (lab.css: styl ławki laboratoryjnej)."""
+    mani = json.loads(rd(os.path.join(KLOCKI_DIR, 'manifest.json')))
+    return ''.join(rd(os.path.join(KLOCKI_DIR, f)) + '\n' for f in mani.get('css', []))
+
 def klocki_js(kod):
     """Pliki klocków z manifestu dla lekcji + montaż wszystkich figur data-klocek."""
     mani = json.loads(rd(os.path.join(KLOCKI_DIR, 'manifest.json')))
@@ -276,6 +281,7 @@ def render(path, p):
     own = '\n'.join(m.collect('styl', lines))
     js = (bio_js(main) if p == 'bio' else (rd(VIZ[p]) + '\n' if p in VIZ else '')) + rd(os.path.join(SZ, 'lekcja.js'))
     if 'data-klocek=' in main: js = klocki_js(kod) + js
+    if 'data-klocek=' in main: css = css + '\n' + klocki_css()
     bar = ('<header class="lk-bar"><span class="lk-subj"><i></i>%s</span><span class="lk-title">%s</span>'
            '<a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a>'
            '<button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>'

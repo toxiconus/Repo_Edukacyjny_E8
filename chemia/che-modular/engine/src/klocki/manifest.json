@@ -7,17 +7,25 @@
   "metal_woda.js": "metal + woda: H₂ i fenoloftaleina",
   "palenie.js": "palenie metali: Mg, Na, K (barwa i iskry)",
   "uklad_okresowy.js": "mini układ okresowy, klik w grupę",
-  "probowki.js": "trzy probówki z metalami obok siebie"
+  "probowki.js": "statyw z probówkami (1–4 metale)",
+  "pomocnicze.js": "helpery, pętla animacji, wybór symbolu",
+  "dane/pierwiastki.js": "dane pierwiastków I i II grupy (barwy, reaktywność)",
+  "znaki.js": "znaki promieniowania i zakazu",
+  "palniki.js": "palniki obok siebie (1–4 pierwiastki)",
+  "EFEKTY.md": "dokumentacja efektów i danych"
  },
  "lekcje": {
   "P01": [
    "klocki.js",
-   "zlewka.js",
-   "plomien.js",
-   "metal_woda.js",
+   "pomocnicze.js",
+   "dane/pierwiastki.js",
+   "znaki.js",
    "probowki.js",
-   "palenie.js",
+   "palniki.js",
    "uklad_okresowy.js"
   ]
- }
+ },
+ "css": [
+  "lab.css"
+ ]
 }
