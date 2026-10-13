@@ -10,7 +10,7 @@ poglebia: "LKO-STECH"
 wlasciciel: "chemia E8 — blok R"
 zrodla: "Podstawa programowa chemii, klasa 8 + zakres konkursu kuratoryjnego (etap II)"
 opis: "Procedura trzech kroków wyznaczania reagenta ograniczającego i ilości produktu, gdy substraty są w różnych porcjach niż każe równanie."
-stan: "szkic — 2026-10-13, bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 kicker: "R08 · reagent ograniczający"
 lead: "Dwa substraty, jeden przepis — który skończy się pierwszy i ile produktu naprawdę powstanie?"
 plakietki: ["reagent ograniczający", "nadmiar"]
@@ -103,40 +103,66 @@ Do probówki z kwasem wrzucasz kawałek cynku — natychmiast lecą bąbelki wod
 Zamień wszystkie masy substratów na mole (n = m/M). Porównaj dostępne mole ze stosunkiem ze równania i wskaż, który substrat zabraknie — to reagent ograniczający. Produkt (i zużycie nadmiaru) licz z moli reagenta ograniczającego, według stosunku molowego z równania.
 :::
 
-## Zadania
+## Zadania {#zadania}
 
+::: karta exam | Zadania 1–3 (10 pkt)
 **Zadanie 1.** Kanapka = 2 kromki chleba + 1 plaster ser. Masz 10 kromek i 4 plasterki sera. Ile kanapek zrobisz i co zostanie? Który „substrat" jest ograniczający?
 
 **Zadanie 2.** Reakcja: 2H₂ + O₂ → 2H₂O. Spalono 4 g wodoru w 16 g tlenu. (a) Który substrat jest ograniczający? (b) Ile wody powstanie? (c) Ile nadmiarowego substratu zostanie? Pełny zapis.
 
 **Zadanie 3.** Reakcja: Mg + Cl₂ → MgCl₂. Do 12 g magnezu dodano 71 g chloru. (a) Który substrat ogranicza? (b) Ile MgCl₂ powstanie? (c) Ile nadmiaru zostanie?
+:::
 
-**Zadanie 4.** Reakcja: Zn + 2HCl → ZnCl₂ + H₂. Zadano 6,5 g cynku i 14,6 g HCl. (a) Reagent ograniczający? (b) Masa wydzielonego H₂? (c) Masa ZnCl₂? (d) Ile HCl zostanie?
-
-**Zadanie 5.** Reakcja: CH₄ + 2O₂ → CO₂ + 2H₂O. Spalono 8 g metanu w 24 g tlenu. (a) Który substrat się wyczerpie? (b) Ile CO₂ powstanie? (c) Ile metanu zostanie niespalone?
-
-**Zadanie 6.** Reakcja: Fe + S → FeS. Zmieszano 5,6 g żelaza i 4,8 g siarki. (a) Który substrat ogranicza? (b) Ile FeS powstanie? (c) Ile nadmiaru zostanie?
-
-**Zadanie 7.** Wyjaśnij własnymi słowami (2–3 zdania), dlaczego w zadaniach z nadmiarem ilości produktu wyznacza reagent ograniczający, a nie substrat nadmiarowy.
-
-**Zadanie 8.** Do 100 g roztworu HCl o stężeniu 14,6% dodano 50 g CaCO₃. Reakcja: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. (a) Reagent ograniczający? (b) Masa CO₂? (c) Masa CaCO₃, która zostanie w naczyniu?
-
-## Klucz i punktacja
-
+::: odp | Klucz — zadania 1–3
 **Zadanie 1 (2 pkt).** Ser pozwala na 4 kanapki (4 plasterki), chleb na 5 (10 kromek / 2). Zrobisz **4 kanapki**; zostaną 2 kromki chleba. Ograniczający: **ser**.
 
 **Zadanie 2 (4 pkt).** M(H₂) = 2 g/mol → n(H₂) = 4/2 = 2 mol. M(O₂) = 32 g/mol → n(O₂) = 16/32 = 0,5 mol. Stosunek 2 : 1: na 2 mol H₂ potrzeba 1 mol O₂ — mamy 0,5 mol → **O₂ ogranicza** (1 pkt). Produkcja: n(H₂O) = 2 · 0,5 = 1 mol → m = 1 · 18 = **18 g** (2 pkt). Zużyto H₂: 2 · 0,5 = 1 mol = 2 g → zostaje 4 − 2 = **2 g H₂** (1 pkt).
 
 **Zadanie 3 (4 pkt).** n(Mg) = 12/24 = 0,5 mol; n(Cl₂) = 71/71 = 1 mol. Stosunek 1 : 1 → Mg potrzebuje 0,5 mol Cl₂, mamy 1 mol → **Mg ogranicza** (1 pkt). n(MgCl₂) = 0,5 mol; M(MgCl₂) = 24 + 2·35,5 = 95 g/mol → m = 0,5 · 95 = **47,5 g** (2 pkt). Zużyto Cl₂: 0,5 mol → zostaje 1 − 0,5 = 0,5 mol = **35,5 g Cl₂** (1 pkt).
+:::
 
+::: karta exam | Zadania 4–6 (13 pkt)
+**Zadanie 4.** Reakcja: Zn + 2HCl → ZnCl₂ + H₂. Zadano 6,5 g cynku i 14,6 g HCl. (a) Reagent ograniczający? (b) Masa wydzielonego H₂? (c) Masa ZnCl₂? (d) Ile HCl zostanie?
+
+**Zadanie 5.** Reakcja: CH₄ + 2O₂ → CO₂ + 2H₂O. Spalono 8 g metanu w 24 g tlenu. (a) Który substrat się wyczerpie? (b) Ile CO₂ powstanie? (c) Ile metanu zostanie niespalone?
+
+**Zadanie 6.** Reakcja: Fe + S → FeS. Zmieszano 5,6 g żelaza i 4,8 g siarki. (a) Który substrat ogranicza? (b) Ile FeS powstanie? (c) Ile nadmiaru zostanie?
+:::
+
+::: odp | Klucz — zadania 4–6
 **Zadanie 4 (4 pkt).** n(Zn) = 6,5/65 = 0,1 mol; n(HCl) = 14,6/36,5 = 0,4 mol. Na 0,1 mol Zn potrzeba 0,2 mol HCl — mamy 0,4 → **Zn ogranicza** (1 pkt). n(H₂) = 0,1 mol → m = 0,1 · 2 = **0,2 g** (1 pkt). m(ZnCl₂) = 0,1 · (65 + 71) = 0,1 · 136 = **13,6 g** (1 pkt). Zostaje HCl: 0,4 − 0,2 = 0,2 mol = **7,3 g** (1 pkt).
 
 **Zadanie 5 (5 pkt).** n(CH₄) = 8/16 = 0,5 mol; n(O₂) = 24/32 = 0,75 mol. Na 0,5 mol CH₄ potrzeba 1 mol O₂ — mamy 0,75 → **O₂ ogranicza** (2 pkt). n(CO₂) = 0,75/2 = 0,375 mol → m = 0,375 · 44 = **16,5 g** (1,5 pkt). Zużyto CH₄: 0,375 mol = 6 g → zostaje 8 − 6 = **2 g CH₄** (1,5 pkt).
 
 **Zadanie 6 (4 pkt).** n(Fe) = 5,6/56 = 0,1 mol; n(S) = 4,8/32 = 0,15 mol. Stosunek 1 : 1 → Fe potrzebuje 0,1 mol S, mamy 0,15 → **Fe ogranicza** (1 pkt). n(FeS) = 0,1 mol; M(FeS) = 56 + 32 = 88 g/mol → m = **8,8 g** (1,5 pkt). Zużyto S: 0,1 mol = 3,2 g → zostaje 4,8 − 3,2 = **1,6 g S** (1,5 pkt).
+:::
 
+::: karta exam | Zadania 7–8 (7 pkt)
+**Zadanie 7.** Wyjaśnij własnymi słowami (2–3 zdania), dlaczego w zadaniach z nadmiarem ilości produktu wyznacza reagent ograniczający, a nie substrat nadmiarowy.
+
+**Zadanie 8.** Do 100 g roztworu HCl o stężeniu 14,6% dodano 50 g CaCO₃. Reakcja: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. (a) Reagent ograniczający? (b) Masa CO₂? (c) Masa CaCO₃, która zostanie w naczyniu?
+:::
+
+::: odp | Klucz — zadania 7–8
 **Zadanie 7 (2 pkt).** Produkuje się tylko tyle produktu, ile pozwalają cząstki, które faktycznie zareagowały. Reagent ograniczający zużywa się w całości, więc jego mole wyznaczają maksimum produktu; substrat nadmiarowy reaguje tylko częściowo — liczenie z jego całej ilości dałoby wynik niemożliwy do osiągnięcia.
 
 **Zadanie 8 (5 pkt).** m(HCl) = 100 g · 14,6% = 14,6 g → n(HCl) = 14,6/36,5 = 0,4 mol (1 pkt). n(CaCO₃) = 50/100 = 0,5 mol. Na 0,5 mol CaCO₃ potrzeba 1,0 mol HCl — mamy 0,4 → **HCl ogranicza** (2 pkt). n(CO₂) = 0,4/2 = 0,2 mol → m = 0,2 · 44 = **8,8 g** (1 pkt). Zużyto CaCO₃: 0,2 mol = 20 g → w naczyniu zostaje 50 − 20 = **30 g CaCO₃** (1 pkt).
+:::
 
-**Razem: 30 pkt.**
+::: adv | Zadanie dodatkowe A (4 pkt) — Sód i chlor — który substrat ogranicza? | poziom ambitny
+Reakcja: 2Na + Cl₂ → 2NaCl. Zmieszano 4,6 g sodu i 10 g chloru. (a) Który substrat jest reagentem ograniczającym? (b) Ile gramów NaCl powstanie?
+:::
+
+::: odp | Klucz — zadanie dodatkowe A
+n(Na) = 4,6 ÷ 23 = 0,2 mol (1 pkt). n(Cl₂) = 10 ÷ 71 ≈ 0,141 mol; na 0,2 mol Na potrzeba 0,1 mol Cl₂ — chloru jest więcej, więc **Na ogranicza** (1 pkt). Z równania: n(NaCl) = 0,2 mol → m = 0,2 · 58,5 = **11,7 g** (2 pkt: 1 za stosunek 2:1, 1 za wynik).
+:::
+
+::: adv | Zadanie dodatkowe B (4 pkt) — Cynk i zapas kwasu | poziom ambitny
+Reakcja: Zn + 2HCl → ZnCl₂ + H₂. Zmieszano 13 g cynku i 0,5 mola HCl. (a) Który substrat ogranicza? (b) Ile gramów wodoru powstanie?
+:::
+
+::: odp | Klucz — zadanie dodatkowe B
+n(Zn) = 13 ÷ 65 = 0,2 mol (1 pkt). Na 0,2 mol Zn potrzeba 0,4 mol HCl, a jest 0,5 mol → **Zn ogranicza** (1 pkt). n(H₂) = 0,2 mol → m = 0,2 · 2 = **0,4 g** (2 pkt: 1 za stosunek molowy, 1 za wynik).
+:::
+
+**Razem: 30 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 8 pkt dodatkowo, poza sumą.**

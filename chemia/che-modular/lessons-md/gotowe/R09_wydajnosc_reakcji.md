@@ -10,7 +10,7 @@ poglebia: "R08; LKO-SYM-A2"
 wlasciciel: "chemia E8 — blok R"
 zrodla: "Podstawa programowa chemii, klasa 8 + zakres konkursu kuratoryjnego (etap II)"
 opis: "Wydajność reakcji jako stosunek masy rzeczywistej do teoretycznej — obliczenia w obu kierunkach i łączenie z reagentem ograniczającym."
-stan: "szkic — 2026-10-13, bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 kicker: "R09 · wydajność"
 lead: "Równanie obiecuje maksimum, laboratorium daje mniej — wydajność mówi, o ile mniej."
 plakietki: ["wydajność", "stechiometria"]
@@ -107,44 +107,70 @@ Masa substratu mówi tylko, ile „wkładamy" — nie mówi, ile wyjdzie, bo ta 
 4. Wydajność dotyczy **produktu**; wynik mieści się w 0–100%.
 :::
 
-## Zadania
+## Zadania {#zadania}
 
+::: karta exam | Zadania 1–3 (12 pkt)
 **Zadanie 1.** Spalono 4,8 g magnezu w nadmiarze tlenu (reakcja: 2Mg + O₂ → 2MgO). Uzyskano 7,2 g MgO. Oblicz wydajność reakcji. Pełny zapis: m teoretyczna → wydajność.
 
 **Zadanie 2.** Cynk (6,5 g) zadziałano z nadmiarem HCl (reakcja: Zn + 2HCl → ZnCl₂ + H₂). Teoretycznie powinno wydzielić się 0,2 g wodoru; zebrano 0,16 g. Oblicz wydajność.
 
 **Zadanie 3.** Rozłożono 25 g CaCO₃ (reakcja: CaCO₃ → CaO + CO₂). Uzyskano 12,6 g CaO. Oblicz wydajność rozkładu.
+:::
 
-**Zadanie 4.** Spalono 4 g wodoru w nadmiarze tlenu (reakcja: 2H₂ + O₂ → 2H₂O). Ile wody powstanie, jeśli wydajność reakcji wynosi 75%?
-
-**Zadanie 5.** Ile CaCO₃ trzeba rozłożyć, aby przy wydajności 80% uzyskać 11,2 g CaO (reakcja: CaCO₃ → CaO + CO₂)? Pracuj od tyłu: m teoretyczna → mole → substrat.
-
-**Zadanie 6.** Wróć do przykładu z lekcji: 150 g roztworu HCl 7,3% + 20 g CaCO₃, m teoretyczna CO₂ = 6,6 g. Ile CO₂ zebrano, jeśli wydajność wynosiła 90%?
-
-**Zadanie 7.** Uczeń obliczył wydajność reakcji z przykładu (m teoretyczna CO₂ = 6,6 g, substrat CaCO₃ = 20 g), dzieląc: 6,6 g / 20 g · 100% = 33%. Wyjaśnij, na czym polega jego błąd, a następnie policz wydajność poprawnie, wiedząc że rzeczywiście zebrano 5,28 g CO₂.
-
-**Zadanie 8.** Podaj trzy różne przyczyny, dla których rzeczywista wydajność reakcji bywa mniejsza niż 100%.
-
-**Zadanie 9.** Czy możliwa jest reakcja o wydajności dokładnie 100%? Odpowiedz krótko: teoretycznie vs praktycznie.
-
-## Klucz i punktacja
-
+::: odp | Klucz — zadania 1–3
 **Zadanie 1 (4 pkt).** n(Mg) = 4,8 g / 24 g/mol = 0,2 mol. Z równania: n(MgO) = 0,2 mol; M(MgO) = 24 + 16 = 40 g/mol → m teor = 0,2 · 40 = 8 g (2 pkt). Wydajność = 7,2 g / 8 g · 100% = **90%** (2 pkt).
 
 **Zadanie 2 (4 pkt).** m teor(H₂) = 0,2 g (dane). Wydajność = 0,16 / 0,2 · 100% = **80%**. (1 pkt za zapis wzoru, 1 pkt za m teoretyczną użytą poprawnie — produktu!, 2 pkt za wynik.)
 
 **Zadanie 3 (4 pkt).** n(CaCO₃) = 25 g / 100 g/mol = 0,25 mol → n(CaO) = 0,25 mol; M(CaO) = 40 + 16 = 56 g/mol → m teor = 0,25 · 56 = 14 g (2 pkt). Wydajność = 12,6 / 14 · 100% = **90%** (2 pkt).
+:::
 
+::: karta exam | Zadania 4–6 (12 pkt)
+**Zadanie 4.** Spalono 4 g wodoru w nadmiarze tlenu (reakcja: 2H₂ + O₂ → 2H₂O). Ile wody powstanie, jeśli wydajność reakcji wynosi 75%?
+
+**Zadanie 5.** Ile CaCO₃ trzeba rozłożyć, aby przy wydajności 80% uzyskać 11,2 g CaO (reakcja: CaCO₃ → CaO + CO₂)? Pracuj od tyłu: m teoretyczna → mole → substrat.
+
+**Zadanie 6.** Wróć do przykładu z lekcji: 150 g roztworu HCl 7,3% + 20 g CaCO₃, m teoretyczna CO₂ = 6,6 g. Ile CO₂ zebrano, jeśli wydajność wynosiła 90%?
+:::
+
+::: odp | Klucz — zadania 4–6
 **Zadanie 4 (4 pkt).** n(H₂) = 4 g / 2 g/mol = 2 mol → n(H₂O) = 2 mol → m teor = 2 · 18 = 36 g (2 pkt). m(rzecz) = 0,75 · 36 g = **27 g** (2 pkt).
 
 **Zadanie 5 (5 pkt).** m teor(CaO) = 11,2 g / 0,8 = 14 g (odwrócenie wydajności — 2 pkt). n(CaO) = 14 g / 56 g/mol = 0,25 mol → n(CaCO₃) = 0,25 mol → m(CaCO₃) = 0,25 · 100 = **25 g** (3 pkt: mol CaO 1 pkt, mol CaCO₃ 1 pkt, masa 1 pkt).
 
 **Zadanie 6 (3 pkt).** m(rzecz) = 0,9 · 6,6 g = **5,94 g**.
+:::
 
+::: karta exam | Zadania 7–9 (9 pkt)
+**Zadanie 7.** Uczeń obliczył wydajność reakcji z przykładu (m teoretyczna CO₂ = 6,6 g, substrat CaCO₃ = 20 g), dzieląc: 6,6 g / 20 g · 100% = 33%. Wyjaśnij, na czym polega jego błąd, a następnie policz wydajność poprawnie, wiedząc że rzeczywiście zebrano 5,28 g CO₂.
+
+**Zadanie 8.** Podaj trzy różne przyczyny, dla których rzeczywista wydajność reakcji bywa mniejsza niż 100%.
+
+**Zadanie 9.** Czy możliwa jest reakcja o wydajności dokładnie 100%? Odpowiedz krótko: teoretycznie vs praktycznie.
+:::
+
+::: odp | Klucz — zadania 7–9
 **Zadanie 7 (4 pkt).** Błąd: uczeń porównał masę produktu z masą **substratu** (CaCO₃). Wydajność porównuje masę rzeczywistą produktu z masą **teoretyczną tego samego produktu** — substrat może być w nadmiarze i jego masa nie mówi, ile produktu „obiecało" równanie (2 pkt). Poprawnie: wydajność = 5,28 g / 6,6 g · 100% = **80%** (2 pkt).
 
 **Zadanie 8 (3 pkt).** Przykładowe przyczyny (dowolne trzy, po 1 pkt): straty mechaniczne (przelewanie, sączenie, ścianki naczynia); reakcje uboczne zużywające część substratu; niepełny przebieg reakcji (reakcje odwracalne); zanieczyszczenia substratów.
 
 **Zadanie 9 (2 pkt).** Teoretycznie tak — przy braku jakichkolwiek strat i przy reakcji przebiegającej całkowicie (1 pkt). W praktyce wydajność dokładnie 100% praktycznie nie występuje: zawsze są choćby minimalne straty przy przenoszeniu i oddzielaniu produktu (1 pkt).
+:::
 
-**Razem: 31 pkt.**
+::: adv | Zadanie dodatkowe A (4 pkt) — Ile magnezu na 9,6 g MgO przy wydajności 75%? | poziom ambitny
+Reakcja: 2Mg + O₂ → 2MgO. Aby otrzymać 9,6 g MgO przy wydajności 75%, ile gramów magnezu należy użyć?
+:::
+
+::: odp | Klucz — zadanie dodatkowe A
+m(teoretyczna MgO) = 9,6 ÷ 0,75 = 12,8 g (1 pkt: odwrócenie wydajności). n(MgO) = 12,8 ÷ 40 = 0,32 mol (1 pkt). Z równania n(Mg) = n(MgO) = 0,32 mol → m(Mg) = 0,32 · 24 = **7,68 g ≈ 7,7 g** (2 pkt: 1 za stosunek 1:1, 1 za wynik).
+:::
+
+::: adv | Zadanie dodatkowe B (4 pkt) — Dwa etapy o różnych wydajnościach | poziom ambitny
+Etap 1: 100 g CaCO₃ → CaO + CO₂ (wydajność 90%). Etap 2: CaO + H₂O → Ca(OH)₂ (wydajność 80%). Ile gramów Ca(OH)₂ otrzymano?
+:::
+
+::: odp | Klucz — zadanie dodatkowe B
+n(CaCO₃) = 100 ÷ 100 = 1 mol → po etapie 1: 1 · 0,9 = 0,9 mol CaO (1 pkt). Etap 2: 0,9 · 0,8 = 0,72 mol Ca(OH)₂ (1 pkt). m = 0,72 · 74 ≈ **53,3 g** (2 pkt: 1 za zapis wydajności łańcuchowo, 1 za wynik).
+:::
+
+**Razem: 33 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 8 pkt dodatkowo, poza sumą.**

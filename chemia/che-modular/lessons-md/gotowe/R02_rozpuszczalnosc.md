@@ -10,7 +10,7 @@ poglebia: "R03; J04; J10"
 wlasciciel: "chemia E8 — blok R"
 zrodla: "Podstawa programowa chemii, klasa 8 + zakres konkursu kuratoryjnego (etap II)"
 opis: "Rozpuszczalność jako maksimum w 100 g wody w danej temperaturze: roztwory nasycone, nienasycone i przesycone, krzywe rozpuszczalności i krystalizacja."
-stan: "szkic — 2026-10-13, bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 kicker: "R02 · rozpuszczalność"
 lead: "Ile soli da się rozpuścić w szklance wody? Dokładnie tyle, ile każe krzywa rozpuszczalności — nauczysz się ją czytać i wykorzystywać."
 plakietki: ["rozpuszczalność", "krzywe"]
@@ -161,20 +161,41 @@ Duże, ładne kryształy (np. ałunu albo siarczanu(VI) miedzi) hoduje się tak:
 - **Osad przy ochłodzeniu**: m(osadu) = [S(gorące) − S(zimne)] na każde 100 g wody.
 :::
 
-## Zadania
+## Zadania {#zadania}
 
+::: karta exam | Zadania 1–3 (9 pkt)
 **Zadanie 1.** Wyjaśnij własnymi słowami, co znaczy zdanie: „rozpuszczalność KNO₃ w 20 °C wynosi 32 g/100 g H₂O". Co stanie się z 33. gramem?
 
 **Zadanie 2.** W 20 °C do 100 g wody dodano kolejno: (a) 20 g, (b) 32 g, (c) 50 g KNO₃. Dla każdego przypadku podaj rodzaj roztworu (nienasycony/nasycony) i masę substancji pozostającą na dnie (jeśli jest).
 
 **Zadanie 3.** Ile KNO₃ rozpuści się maksymalnie w 250 g wody w 60 °C? Pokaż pełne obliczenie.
+:::
 
+::: odp | Klucz — zadania 1–3
+**Zadanie 1 (2 pkt).** W temperaturze 20 °C w 100 g wody rozpuści się maksymalnie 32 g KNO₃; powstały roztwór będzie nasycony (1 pkt). Trzydziesty trzeci gram nie rozpuści się — zostanie na dnie niezależnie od mieszania (1 pkt).
+
+**Zadanie 2 (4 pkt).** (a) 20 g < 32 g → roztwór nienasycony, nic na dnie (1 pkt). (b) 32 g = 32 g → roztwór nasycony, dokładnie na granicy, nic na dnie (1,5 pkt). (c) 50 g > 32 g → roztwór nasycony, na dnie 50 − 32 = 18 g (1,5 pkt).
+
+**Zadanie 3 (3 pkt).** Rozpuszczalność w 60 °C: 110 g/100 g H₂O. Proporcja: 100 g wody → 110 g; 250 g wody → x. x = 110 · 250/100 = **275 g**. Sprawdzenie rzędu: 250 g wody to 2,5 × 100 g, więc 2,5 × 110 g — wynik racjonalny. ✔
+:::
+
+::: karta exam | Zadania 4–6 (9 pkt)
 **Zadanie 4.** Roztwór nasycony KNO₃ przygotowano w 70 °C, używając 100 g wody. Następnie schłodzono go do 20 °C. Ile KNO₃ wykrystalizuje? Pełny zapis.
 
 **Zadanie 5.** Jak w zadaniu 4, ale użyto 250 g wody. Ile osadu powstanie?
 
 **Zadanie 6.** Roztwór nasycony KNO₃ w 60 °C zawiera 200 g wody. Schłodzono go do 20 °C. Oblicz masę osadu.
+:::
 
+::: odp | Klucz — zadania 4–6
+**Zadanie 4 (3 pkt).** S(70 °C) = 138 g, S(20 °C) = 32 g (na 100 g wody). m(osadu) = 138 − 32 = **106 g**. Sprawdzenie: 106 g < 138 g (osad mniejszy od rozpuszczonej masy). ✔
+
+**Zadanie 5 (3 pkt).** Woda: 250 g = 2,5 × 100 g. m(osadu) = (138 − 32) · 2,5 = 106 · 2,5 = **265 g**.
+
+**Zadanie 6 (3 pkt).** Woda: 200 g = 2 × 100 g. m(osadu) = (110 − 32) · 2 = 78 · 2 = **156 g**.
+:::
+
+::: karta exam | Zadania 7–10 (12 pkt)
 **Zadanie 7.** Rozpuszczalność NaCl wynosi ok. 37 g/100 g H₂O w 80 °C (wartość w przedziale 36–37 g; do weryfikacji) i ok. 36 g/100 g H₂O w 20 °C. (a) Ile NaCl rozpuści się maksymalnie w 200 g wody w 80 °C? (b) Tak przygotowany nasycony roztwór schłodzono do 20 °C — ile osadu powstanie? (c) Dlaczego tak mało?
 
 **Zadanie 8.** Czy roztwór zawierający 200 g wody i 220 g KNO₃ w 60 °C jest nasycony? Uzasadnij obliczeniem.
@@ -182,21 +203,9 @@ Duże, ładne kryształy (np. ałunu albo siarczanu(VI) miedzi) hoduje się tak:
 **Zadanie 9.** Roztwór nasycony KNO₃ przygotowano w 20 °C w 100 g wody. Podgrzano go do 70 °C. (a) Czy wykrystalizuje coś? (b) Ile KNO₃ trzeba dodać, aby roztwór znów był nasycony?
 
 **Zadanie 10.** Wyjaśnij (2–3 zdania), dlaczego sól kuchenną wydobywa się przez odparowanie wody, a saletrę potasową oczyszcza się krystalizacją przez ochłodzenie. Odwołaj się do kształtu krzywych rozpuszczalności.
+:::
 
-## Klucz i punktacja
-
-**Zadanie 1 (2 pkt).** W temperaturze 20 °C w 100 g wody rozpuści się maksymalnie 32 g KNO₃; powstały roztwór będzie nasycony (1 pkt). Trzydziesty trzeci gram nie rozpuści się — zostanie na dnie niezależnie od mieszania (1 pkt).
-
-**Zadanie 2 (4 pkt).** (a) 20 g < 32 g → roztwór nienasycony, nic na dnie (1 pkt). (b) 32 g = 32 g → roztwór nasycony, dokładnie na granicy, nic na dnie (1,5 pkt). (c) 50 g > 32 g → roztwór nasycony, na dnie 50 − 32 = 18 g (1,5 pkt).
-
-**Zadanie 3 (3 pkt).** Rozpuszczalność w 60 °C: 110 g/100 g H₂O. Proporcja: 100 g wody → 110 g; 250 g wody → x. x = 110 · 250/100 = **275 g**. Sprawdzenie rzędu: 250 g wody to 2,5 × 100 g, więc 2,5 × 110 g — wynik racjonalny. ✔
-
-**Zadanie 4 (3 pkt).** S(70 °C) = 138 g, S(20 °C) = 32 g (na 100 g wody). m(osadu) = 138 − 32 = **106 g**. Sprawdzenie: 106 g < 138 g (osad mniejszy od rozpuszczonej masy). ✔
-
-**Zadanie 5 (3 pkt).** Woda: 250 g = 2,5 × 100 g. m(osadu) = (138 − 32) · 2,5 = 106 · 2,5 = **265 g**.
-
-**Zadanie 6 (3 pkt).** Woda: 200 g = 2 × 100 g. m(osadu) = (110 − 32) · 2 = 78 · 2 = **156 g**.
-
+::: odp | Klucz — zadania 7–10
 **Zadanie 7 (4 pkt).** (a) 37 · 2 = 74 g (1 pkt). (b) po ochłodzeniu zostaje 36 · 2 = 72 g; osad = 74 − 72 = 2 g (1,5 pkt). (c) Krzywa rozpuszczalności NaCl jest prawie płaska — między 80 °C a 20 °C rozpuszczalność zmienia się o ok. 1 g/100 g, więc ochładzanie wykrystalizuje niewiele; skuteczne jest dopiero odparowanie (1,5 pkt).
 
 **Zadanie 8 (2 pkt).** Rozpuszczalność w 60 °C: 110 g/100 g H₂O → dla 200 g wody maksimum 220 g. W roztworze jest dokładnie 220 g → roztwór jest **nasycony** (na granicy).
@@ -204,5 +213,22 @@ Duże, ładne kryształy (np. ałunu albo siarczanu(VI) miedzi) hoduje się tak:
 **Zadanie 9 (3 pkt).** (a) Nie — przy podgrzewaniu rozpuszczalność rośnie, roztwór z nasyconego staje się nienasycony; nic się nie wykrystalizuje (1 pkt). (b) S(70 °C) − S(20 °C) = 138 − 32 = **106 g** trzeba dodać, by znów osiągnąć maksimum (2 pkt).
 
 **Zadanie 10 (3 pkt).** Krzywa NaCl jest prawie płaska: ochłodzenie zmienia rozpuszczalność o ~1 g/100 g, więc krystalizacja przez chłodzenie jest nieopłacalna — zostaje odparowanie wody (1,5 pkt). Krzywa KNO₃ jest stroma: ochłodzenie z 70 °C do 20 °C „uwalnia" aż 106 g na 100 g wody, więc chłodzenie jest bardzo skuteczne i daje czysty osad (1,5 pkt).
+:::
 
-**Razem: 30 pkt.**
+::: adv | Zadanie dodatkowe A (4 pkt) — Ile wody potrzeba na 50 g KNO₃ w 20 °C? | poziom ambitny
+Rozpuszczalność KNO₃ w 20 °C wynosi 32 g na 100 g wody. (a) Ile gramów wody jest potrzebne, aby rozpuścić 50 g KNO₃? (b) Oblicz stężenie procentowe tak otrzymanego roztworu nasyconego.
+:::
+
+::: odp | Klucz — zadanie dodatkowe A
+(a) 50 g · 100 g ÷ 32 g ≈ 156 g wody (2 pkt). (b) m(roztworu) = 50 + 156 = 206 g; Cp = 50 ÷ 206 · 100% ≈ 24,3% (2 pkt).
+:::
+
+::: adv | Zadanie dodatkowe B (4 pkt) — Ile KNO₃ wykrystalizuje z 300 g roztworu nasyconego? | poziom ambitny
+300 g roztworu KNO₃ nasyconego w 60 °C (rozpuszczalność 110 g/100 g wody) ochłodzono do 20 °C (rozpuszczalność 32 g/100 g wody). Oblicz masę wykrystalizowanego KNO₃.
+:::
+
+::: odp | Klucz — zadanie dodatkowe B
+m(KNO₃) = 300 · 110 ÷ 210 ≈ 157,1 g; m(wody) = 300 − 157,1 = 142,9 g (1 pkt). W 20 °C w 142,9 g wody rozpuści się 32 · 1,429 ≈ 45,7 g (1 pkt). Wykrystalizuje 157,1 − 45,7 ≈ **111,4 g** KNO₃ (2 pkt: 1 za zastosowanie proporcji, 1 za wynik).
+:::
+
+**Razem: 30 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 8 pkt dodatkowo, poza sumą.**

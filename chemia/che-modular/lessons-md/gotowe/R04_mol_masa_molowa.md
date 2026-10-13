@@ -10,7 +10,7 @@ poglebia: "R05; R07"
 wlasciciel: "chemia E8 — blok R"
 zrodla: "Podstawa programowa chemii, klasa 8 + zakres konkursu kuratoryjnego (etap II)"
 opis: "Mol jako jednostka liczności cząstek, liczba Avogadra i masa molowa — oraz pełne przeliczenia masa ↔ mol ↔ liczba cząstek w każdym kierunku."
-stan: "szkic — 2026-10-13, bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 kicker: "R04 · mol"
 lead: "Chemia nie odważa pojedynczych cząsteczek — odważa mole. Ta lekcja daje ci pomost między wagą w laboratorium a światem atomów."
 plakietki: ["mol", "masa molowa"]
@@ -210,8 +210,9 @@ Współczynniki **nie mówią** wprost o gramach (2 g H₂ nie reaguje z 1 g O�
 
 Pełną maszynę obliczeń z równań — stechiometrię — zbudujesz w R07. Fundament jest już postawiony: umiesz liczyć M, umiesz przechodzić masa ↔ mol ↔ cząstki. W R07 dołożysz do tego stosunki z równania.
 
-## Zadania
+## Zadania {#zadania}
 
+::: karta exam | Zadania 1–4 (10 pkt)
 **Zadanie 1.** Ile moli stanowi 36 g wody H₂O? Pełny zapis (M → wzór → wynik).
 
 **Zadanie 2.** Ile waży 0,5 mol CO₂?
@@ -219,7 +220,19 @@ Pełną maszynę obliczeń z równań — stechiometrię — zbudujesz w R07. Fu
 **Zadanie 3.** Ile cząsteczek zawierają 2 mole wody?
 
 **Zadanie 4.** Oblicz masy molowe i podaj z jednostką: (a) NH₃, (b) CaCO₃, (c) KNO₃, (d) Fe₂O₃.
+:::
 
+::: odp | Klucz — zadania 1–4
+**Zadanie 1 (2 pkt).** M(H₂O) = 2·1 + 16 = 18 g/mol. n = m/M = 36 g / 18 g/mol = **2 mol**. (1 pkt za M, 1 pkt za wynik.)
+
+**Zadanie 2 (2 pkt).** M(CO₂) = 12 + 2·16 = 44 g/mol. m = n·M = 0,5 mol · 44 g/mol = **22 g**.
+
+**Zadanie 3 (2 pkt).** N = n·N_A = 2 · 6,02·10²³ = **1,204·10²⁴ cząsteczek**.
+
+**Zadanie 4 (4 pkt).** (a) M(NH₃) = 14 + 3·1 = **17 g/mol**. (b) M(CaCO₃) = 40 + 12 + 3·16 = **100 g/mol**. (c) M(KNO₃) = 39 + 14 + 3·16 = **101 g/mol**. (d) M(Fe₂O₃) = 2·56 + 3·16 = 112 + 48 = **160 g/mol**. (1 pkt za każdy poprawny z jednostką.)
+:::
+
+::: karta exam | Zadania 5–9 (15 pkt)
 **Zadanie 5.** Ile cząsteczek wody jest w 9 g H₂O?
 
 **Zadanie 6.** Ile gramów waży 3,01·10²³ cząsteczek CO₂?
@@ -229,25 +242,9 @@ Pełną maszynę obliczeń z równań — stechiometrię — zbudujesz w R07. Fu
 **Zadanie 8.** Ile moli atomów tlenu zawiera 8 g tlenu cząsteczkowego O₂?
 
 **Zadanie 9.** Oblicz masę 6,02·10²² atomów glinu (Al).
+:::
 
-**Zadanie 10.** Ile gramów HCl stanowi 1,204·10²⁴ cząsteczek?
-
-**Zadanie 11.** Co ma więcej cząsteczek: 18 g H₂O czy 22 g CO₂? Uzasadnij obliczeniami.
-
-**Zadanie 12.** Znajdź błąd w rozumowaniu: „1 mol żelaza waży 56 g, więc 1 mol każdej substancji waży tyle samo". Popraw to zdanie.
-
-**Zadanie 13.** W równaniu 2H₂ + O₂ → 2H₂O: co oznaczają współczynniki stechiometryczne? Podaj stosunek molowy H₂ : O₂ : H₂O.
-
-## Klucz i punktacja
-
-**Zadanie 1 (2 pkt).** M(H₂O) = 2·1 + 16 = 18 g/mol. n = m/M = 36 g / 18 g/mol = **2 mol**. (1 pkt za M, 1 pkt za wynik.)
-
-**Zadanie 2 (2 pkt).** M(CO₂) = 12 + 2·16 = 44 g/mol. m = n·M = 0,5 mol · 44 g/mol = **22 g**.
-
-**Zadanie 3 (2 pkt).** N = n·N_A = 2 · 6,02·10²³ = **1,204·10²⁴ cząsteczek**.
-
-**Zadanie 4 (4 pkt).** (a) M(NH₃) = 14 + 3·1 = **17 g/mol**. (b) M(CaCO₃) = 40 + 12 + 3·16 = **100 g/mol**. (c) M(KNO₃) = 39 + 14 + 3·16 = **101 g/mol**. (d) M(Fe₂O₃) = 2·56 + 3·16 = 112 + 48 = **160 g/mol**. (1 pkt za każdy poprawny z jednostką.)
-
+::: odp | Klucz — zadania 5–9
 **Zadanie 5 (3 pkt).** M(H₂O) = 18 g/mol. n = 9 g / 18 g/mol = 0,5 mol. N = 0,5 · 6,02·10²³ = **3,01·10²³ cząsteczek**.
 
 **Zadanie 6 (3 pkt).** n = N/N_A = 3,01·10²³ / 6,02·10²³ = 0,5 mol. M(CO₂) = 44 g/mol. m = 0,5 · 44 = **22 g**.
@@ -257,7 +254,19 @@ Pełną maszynę obliczeń z równań — stechiometrię — zbudujesz w R07. Fu
 **Zadanie 8 (3 pkt).** M(O₂) = 32 g/mol. n(O₂) = 8 g / 32 g/mol = 0,25 mol cząsteczek. Każda cząsteczka ma 2 atomy → n(atomów O) = 2 · 0,25 = **0,5 mol atomów**.
 
 **Zadanie 9 (3 pkt).** n = N/N_A = 6,02·10²² / 6,02·10²³ = 0,1 mol. M(Al) = 27 g/mol. m = 0,1 · 27 = **2,7 g**.
+:::
 
+::: karta exam | Zadania 10–13 (10 pkt)
+**Zadanie 10.** Ile gramów HCl stanowi 1,204·10²⁴ cząsteczek?
+
+**Zadanie 11.** Co ma więcej cząsteczek: 18 g H₂O czy 22 g CO₂? Uzasadnij obliczeniami.
+
+**Zadanie 12.** Znajdź błąd w rozumowaniu: „1 mol żelaza waży 56 g, więc 1 mol każdej substancji waży tyle samo". Popraw to zdanie.
+
+**Zadanie 13.** W równaniu 2H₂ + O₂ → 2H₂O: co oznaczają współczynniki stechiometryczne? Podaj stosunek molowy H₂ : O₂ : H₂O.
+:::
+
+::: odp | Klucz — zadania 10–13
 **Zadanie 10 (3 pkt).** n = 1,204·10²⁴ / 6,02·10²³ = 2 mol. M(HCl) = 1 + 35,5 = 36,5 g/mol. m = 2 · 36,5 = **73 g**.
 
 **Zadanie 11 (3 pkt).** n(H₂O) = 18 g / 18 g/mol = 1 mol. n(CO₂) = 22 g / 44 g/mol = 0,5 mol. Więcej cząsteczek ma **18 g H₂O** — dokładnie 2× więcej (1 mol vs 0,5 mol). (1 pkt za każdy wynik moli, 1 pkt za wniosek.)
@@ -265,5 +274,22 @@ Pełną maszynę obliczeń z równań — stechiometrię — zbudujesz w R07. Fu
 **Zadanie 12 (2 pkt).** Błąd: masa mola zależy od substancji. Mol porównuje **liczby cząstek** (zawsze 6,02·10²³), a masy molowe są różne: M(Fe) = 56 g/mol, ale M(H₂O) = 18 g/mol, M(CO₂) = 44 g/mol. Poprawnie: „1 mol każdej substancji zawiera tę samą liczbę cząstek, ale masa jednego mola równa się masie molowej danej substancji".
 
 **Zadanie 13 (2 pkt).** Współczynniki podają **stosunek molowy** substratów i produktów: 2 mol H₂ reaguje z 1 mol O₂, dając 2 mol H₂O. Stosunek molowy H₂ : O₂ : H₂O = **2 : 1 : 2**. (Współczynniki nie są masami w gramach.)
+:::
 
-**Razem: 35 pkt.**
+::: adv | Zadanie dodatkowe A (3 pkt) — Masa molowa siarczanu(VI) glinu | poziom ambitny
+(a) Oblicz masę molową Al₂(SO₄)₃. (b) Ile moli tej soli znajduje się w 68,4 g?
+:::
+
+::: odp | Klucz — zadanie dodatkowe A
+(a) M = 2·27 + 3·(32 + 4·16) = 54 + 288 = **342 g/mol** (2 pkt: 1 za zapis z indeksami, 1 za wynik). (b) n = 68,4 g ÷ 342 g/mol = **0,2 mol** (1 pkt).
+:::
+
+::: adv | Zadanie dodatkowe B (4 pkt) — Ile cząsteczek i atomów wodoru w kropli wody? | poziom ambitny
+Kropla wody ma masę 0,05 g. Ile cząsteczek H₂O i ile atomów wodoru zawiera?
+:::
+
+::: odp | Klucz — zadanie dodatkowe B
+n = 0,05 g ÷ 18 g/mol ≈ 2,78·10⁻³ mol (1 pkt). N(H₂O) = 2,78·10⁻³ · 6,02·10²³ ≈ **1,67·10²¹ cząsteczek** (1 pkt). Atomów H = 2 · N ≈ **3,3·10²¹** (2 pkt: 1 za zapis dwóch atomów w cząsteczce, 1 za wynik).
+:::
+
+**Razem: 35 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 7 pkt dodatkowo, poza sumą.**

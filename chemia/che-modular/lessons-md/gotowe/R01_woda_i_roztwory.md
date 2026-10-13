@@ -10,7 +10,7 @@ poglebia: "R02; J01"
 wlasciciel: "chemia E8 — blok R"
 zrodla: "Podstawa programowa chemii, klasa 8 + zakres konkursu kuratoryjnego (etap II)"
 opis: "Budowa i polarność cząsteczki wody oraz trzy rodzaje mieszanin ciekłych — roztwór, zawiesina i koloid — od hydratacji jonów po zapis (aq)."
-stan: "szkic — 2026-10-13, bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 kicker: "R01 · woda i roztwory"
 lead: "Woda rozpuszcza sól i cukier, a oleju nawet nie ruszy — po tej lekcji wyjaśnisz to na poziomie pojedynczych cząsteczek."
 plakietki: ["woda", "roztwory"]
@@ -185,8 +185,9 @@ Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal 
 - Zapisy: (s), (l), (g), (aq); NaCl(s) → Na⁺(aq) + Cl⁻(aq) — zapowiedź dysocjacji (J01).
 :::
 
-## Zadania
+## Zadania {#zadania}
 
+::: karta exam | Zadania 1–4 (13 pkt)
 **Zadanie 1.** Opisz budowę cząsteczki wody (kształt, ładunki częściowe) i wyjaśnij w dwóch–trzech zdaniach, dlaczego cząsteczka wody jest polarna.
 
 **Zadanie 2.** Korzystając z zasady „podobne rozpuszcza podobne", przewidź, czy podane substancje rozpuszczą się w wodzie: (a) cukier, (b) sól kuchenna, (c) olej jadalny, (d) parafina. Krótko uzasadnij każdy przypadek.
@@ -194,21 +195,9 @@ Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal 
 **Zadanie 3.** Przyporządkuj każdy przykład do typu: roztwór / zawiesina / koloid: (a) woda z cukrem, (b) woda z mułem, (c) mleko, (d) galareta owocowa, (e) mgła.
 
 **Zadanie 4.** Masz dwie identyczne wyglądem próbki: czysty roztwór cukru i rozcieńczony roztwór żelatyny (koloid). Jak jednym prostym doświadczeniem odróżnić je? Opisz obserwację dla obu próbek.
+:::
 
-**Zadanie 5.** Podaj trzy sposoby przyspieszenia rozpuszczania cukru w herbacie i wyjaśnij działanie każdego z nich na poziomie cząstek.
-
-**Zadanie 6.** Uczeń intensywnie mieszał nasycony roztwór soli z kryształkiem na dnie. Kryształek „nie zniknął". Wyjaśnij, dlaczego mieszanie nie pomogło — i co (zgodnie z chemią) faktycznie zmieniłoby sytuację.
-
-**Zadanie 7.** Przypisz każdej substancji właściwy zapis stanu skupienia: (a) kryształek soli kuchennej, (b) cukier rozpuszczony w herbacie, (c) dwutlenek węgla w powietrzu, (d) woda ciekła, (e) para wodna, (f) sól rozpuszczona w zupie.
-
-**Zadanie 8.** Opisz krok po kroku (na poziomie jonów i cząsteczek wody), co dzieje się, gdy kryształek NaCl wrzucamy do wody. Użyj pojęć: dipol, powłoka hydratacyjna, kation, anion.
-
-**Zadanie 9.** Wyjaśnij, dlaczego rozpuszczanie cukru w wodzie nie jest reakcją chemiczną. Podaj dwa argumenty.
-
-**Zadanie 10.** Co dokładnie mówi zapis Na⁺(aq)? Dlaczego w roztworze soli jony sodu i chloru nie siedzą razem w parach, jak w kryształku?
-
-## Klucz i punktacja
-
+::: odp | Klucz — zadania 1–4
 **Zadanie 1 (2 pkt).** Cząsteczka wody jest kątowa (kąt H–O–H ok. 104,5°); wiązania O–H są polarne — tlen przyciąga elektrony mocniej, więc ma częściowy ładunek ujemny δ⁻, a wodory δ⁺. Polarna, bo dipole wiązań, dzięki kątowej budowie, nie znoszą się wzajemnie (1 pkt za opis budowy, 1 pkt za wyjaśnienie polarności).
 
 **Zadanie 2 (4 pkt).** (a) cukier — tak (cząsteczka polarna, wiele grup –OH); (b) sól — tak (związek jonowy, woda hydratuje jony); (c) olej — nie (niepolarne łańcuchy węglowodorowe, „podobne rozpuszcza podobne"); (d) parafina — nie (niepolarna, jak olej).
@@ -216,17 +205,54 @@ Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal 
 **Zadanie 3 (5 pkt).** (a) roztwór; (b) zawiesina; (c) koloid (emulsja); (d) koloid (żel); (e) koloid (aerozol).
 
 **Zadanie 4 (2 pkt).** Test Tyndalla: skierować wąską wiązkę światła przez obie próbki. Roztwór cukru: wiązka niewidoczna z boku. Koloid żelatyny: wiązka widoczna jako smuga (rozpraszanie światła na drobinkach).
+:::
 
+::: karta exam | Zadania 5–7 (11 pkt)
+**Zadanie 5.** Podaj trzy sposoby przyspieszenia rozpuszczania cukru w herbacie i wyjaśnij działanie każdego z nich na poziomie cząstek.
+
+**Zadanie 6.** Uczeń intensywnie mieszał nasycony roztwór soli z kryształkiem na dnie. Kryształek „nie zniknął". Wyjaśnij, dlaczego mieszanie nie pomogło — i co (zgodnie z chemią) faktycznie zmieniłoby sytuację.
+
+**Zadanie 7.** Przypisz każdej substancji właściwy zapis stanu skupienia: (a) kryształek soli kuchennej, (b) cukier rozpuszczony w herbacie, (c) dwutlenek węgla w powietrzu, (d) woda ciekła, (e) para wodna, (f) sól rozpuszczona w zupie.
+:::
+
+::: odp | Klucz — zadania 5–7
 **Zadanie 5 (3 pkt).** (1) Rozdrobnienie (cukier puder zamiast kostki) — większa powierzchnia styku. (2) Mieszanie — usuwa nasyconą warstwę przy substancji, doprowadza świeży rozpuszczalnik. (3) Podgrzanie — szybszy ruch cząsteczek; dodatkowo dla cukru rozpuszczalność rośnie z temperaturą.
 
 **Zadanie 6 (2 pkt).** Roztwór jest nasycony: w danej temperaturze nie rozpuści więcej soli. Mieszanie zwiększa tylko szybkość rozpuszczania, nie rozpuszczalność. Sytuację zmieniłoby podgrzanie (rozpuszczalność soli rośnie z temperaturą) albo dolanie świeżej wody.
 
 **Zadanie 7 (6 pkt).** (a) NaCl(s); (b) „cukier(aq)"; (c) CO₂(g); (d) H₂O(l); (e) H₂O(g); (f) „sól(aq)".
+:::
 
+::: karta exam | Zadania 8–10 (7 pkt)
+**Zadanie 8.** Opisz krok po kroku (na poziomie jonów i cząsteczek wody), co dzieje się, gdy kryształek NaCl wrzucamy do wody. Użyj pojęć: dipol, powłoka hydratacyjna, kation, anion.
+
+**Zadanie 9.** Wyjaśnij, dlaczego rozpuszczanie cukru w wodzie nie jest reakcją chemiczną. Podaj dwa argumenty.
+
+**Zadanie 10.** Co dokładnie mówi zapis Na⁺(aq)? Dlaczego w roztworze soli jony sodu i chloru nie siedzą razem w parach, jak w kryształku?
+:::
+
+::: odp | Klucz — zadania 8–10
 **Zadanie 8 (3 pkt).** Cząsteczki wody (dipole) orientują się przy kryszcie: tlenem (δ⁻) ku Na⁺, wodorami (δ⁺) ku Cl⁻. Przyciąganie woda–jon wyrwuje jony z sieci krystalicznej. Każdy wolny jon (kation Na⁺ i anion Cl⁻) zostaje otoczony powłoką hydratacyjną — jony są rozdzielone i mobilne.
 
 **Zadanie 9 (2 pkt).** Nie powstaje nowa substancja o nowych własnościach; po odparowaniu wody odzyskujemy cukier bez zmian. Rozpuszczanie to proces fizyczny (z hydratacją), odwracalny przez usunięcie rozpuszczalnika.
 
 **Zadanie 10 (2 pkt).** Na⁺(aq) = kation sodu otoczony cząsteczkami wody (powłoka hydratacyjna), rozproszony w roztworze. W kryształku jony trzyma sieć krystaliczna; woda przeciąga jony oddzielnie — każdy w własnej powłoce — więc w roztworze istnieją rozdzielone Na⁺(aq) i Cl⁻(aq), a nie pary NaCl.
+:::
 
-**Razem: 29 pkt.**
+::: adv | Zadanie dodatkowe A (3 pkt) — Dlaczego sól kuchenna rozpuszcza się w wodzie, a słabo w benzynie? | poziom ambitny
+(a) Wyjaśnij, używając pojęć: dipol, hydratacja jonów. (b) Co z tego wynika dla reguły „podobne rozpuszcza podobne”?
+:::
+
+::: odp | Klucz — zadanie dodatkowe A
+(a) Woda jest polarna, więc jej dipole otaczają jony (hydratacja) i wyrywają je z sieci (2 pkt: 1 za dipol, 1 za hydratację). Benzyna jest niepolarna — nie ma dipoli, więc nie ma czym otoczyć jonów. (b) Substancje jonowe i polarne rozpuszczają się w rozpuszczalnikach polarnych, niepolarne — w niepolarnych (1 pkt).
+:::
+
+::: adv | Zadanie dodatkowe B (4 pkt) — Dlaczego lód pływa po wodzie? | poziom ambitny
+(a) Wyjaśnij, dlaczego lód ma mniejszą gęstość niż woda ciekła, odwołując się do wiązań wodorowych między cząsteczkami. (b) Co z tego wynika dla życia w jeziorze zimą?
+:::
+
+::: odp | Klucz — zadanie dodatkowe B
+(a) W lodzie cząsteczki tworzą uporządkowaną, otwartą sieć wiązań wodorowych; zajmują więcej miejsca → mniejsza gęstość (2 pkt). (b) Lód pływa i zamarza od góry; pod nim woda ma ok. 4 °C (największa gęstość), więc organizmy przetrwają zimę (2 pkt).
+:::
+
+**Razem: 31 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 7 pkt dodatkowo, poza sumą.**
