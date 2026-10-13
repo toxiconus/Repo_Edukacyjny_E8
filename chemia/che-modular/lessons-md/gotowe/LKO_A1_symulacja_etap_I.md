@@ -9,8 +9,13 @@ poglebia: "REV02; zestawy B (rejon); LKO-SYM-A2 (do napisania na etap II)"
 wlasciciel: "symulacja diagnostyczna etapu I LKO (jedno zastosowanie: trening warunków + lokalizacja strat punktowych przed 23.10)"
 zrodla: "Zakres wymagań konkursu chemicznego LKO 2026/27, etap I (pkt I–V podstawy + 3 rozszerzenia; formy zadań wg dokumentu); dane krzywych spójne z LKO-KRZYWE (tab. A)"
 opis: "Część I: rozgrzewka 12 zadań szybkich (15 min, formy zamknięte). Część II: pełna symulacja etapu I — 10 zadań / 40 pkt / 60 min w formach LKO (dobieranie, P/F, luka, zamknięte, otwarte krótkie i rozszerzone, opis doświadczenia, cykl przemian, odczyt tablic). Klucze z siatką punktowania, budżet czasu, post-mortem z mapowaniem błędów na lekcje. Sesja S8 (D-1: 22.10.2026)."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 # LKO-A1 — Zestaw A1 + symulacja etapu I
 
@@ -213,8 +218,8 @@ e) *(otwarte krótkie)* Podaj konfigurację elektronową argonu (Z=18) i wyjaśn
 - a: **b** — 1 pkt.
 - b: **c** (20−2=18) — 1 pkt.
 - c: **18, 7** — 1 pkt (obie liczby).
-- d: Z−1=18 → Z=17 → **Cl⁻, chlorek** — 1 pkt.
-- e: **2,8,8**; argon nie tworzy jonów, bo ma pełne powłoki (reguła oktetu spełniona — oddanie i przyjęcie elektronu nie daje stabilniejszej konfiguracji) — 1 pkt (konfiguracja i uzasadnienie w jednym).
+- d: Anion X⁻ ma o jeden elektron więcej niż atom: Z + 1 = 18, więc Z = 17. Jon to Cl⁻, a pierwiastek to chlor, Cl → **Cl⁻, jon chlorkowy** (pierwiastek: chlor) — 1 pkt.
+- e: **2,8,8** (3s²3p⁶); argon nie tworzy typowych trwałych prostych jonów w zwykłych reakcjach szkolnych: zapełnione podpowłoki walencyjne 3s²3p⁶, a oderwanie elektronu wymaga dużej energii. Nie oznacza to, że argonu nie można zjonizować po dostarczeniu energii. Nie należy mówić, że wszystkie powłoki argonu są maksymalnie zapełnione: powłoka M może pomieścić 18 elektronów, a Ar ma na niej 8 — 1 pkt (konfiguracja i uzasadnienie w jednym).
 :::
 
 
@@ -293,7 +298,7 @@ c) *(otwarte krótkie)* Rozpuszczalność NaCl prawie nie zależy od temperatury
 **Zadanie 7:**
 - a: **c** (100 + 110 = 210) — 1 pkt.
 - b: **2 pkt**: odczyty i różnica (110 − 32 = 78 g na 100 g wody) — 1 pkt; skalowanie 78 × 200/100 = **156 g** — 1 pkt. Wynik bez zapisu proporcji: maks. 1 pkt (za odczyty).
-- c: **odparowanie wody**; uzasadnienie: krzywa płaska — chłodzenie prawie nie zmienia rozpuszczalności, więc oziębianie nic nie wydzieli — 1 pkt (metoda + odwołanie do kształtu krzywej; sama metoda = 0).
+- c: **odparowanie wody**; uzasadnienie: krzywa płaska — rozpuszczalność NaCl zmienia się z temperaturą niewiele, więc chłodzenie nasyconego roztworu może wydzielić tylko niewielką ilość kryształów i jest zwykle mniej wydajne niż odparowanie wody — 1 pkt (metoda + odwołanie do kształtu krzywej; sama metoda = 0).
 :::
 
 
@@ -429,8 +434,8 @@ Cp = m(substancji) / m(roztworu) · 100%. Dodanie wody zmienia mianownik, nie ma
 
 ## Ciekawostki {#ciekawostki}
 
-::: karta extra | Próba czystości wodoru — dlaczego „pop" znaczy bezpiecznie
-Próba czystości polega na podpaleniu niewielkiej ilości gazu w probówce zamkniętej dłonią. Ciche spalanie oznacza czysty wodór, a głośny dźwięk — mieszaninę z powietrzem. Metoda ma zapobiec wybuchowi przy zapalaniu gazu w aparaturze. Źródło: ogólna wiedza o bezpieczeństwie pracy z wodorem; do sprawdzenia w instrukcji BHP szkoły.
+::: karta extra | Próba czystości wodoru — dlaczego nie wolno lekceważyć zapłonu
+Wodór jest skrajnie łatwopalny. Próby gazów wykonuje się według konkretnej procedury pracowni i oceny ryzyka; nie jest to doświadczenie do samodzielnego wykonywania w domu. Przy wytwarzaniu wodoru trzeba wyeliminować niekontrolowane źródła zapłonu. Samo „pop” w probówce nie jest zasadą bezpieczeństwa — ocenę zawsze prowadzi nauczyciel i instrukcja pracowni. Źródło: procedury BHP pracowni chemicznej; do sprawdzenia w instrukcji szkoły.
 :::
 
 ::: karta extra | Wapno w budownictwie
@@ -443,10 +448,16 @@ Cykl przemian uczy zapisu równań, a doświadczenie z trzema cieczami uczy oddz
 
 ## Fiszki {#fiszki}
 
+::: karta understand | Uzupełnienie do samodzielnej nauki
+Zanim wybierzesz metodę rozdzielania, ustal, co chcesz odzyskać. Z solanki można odzyskać sól przez odparowanie lub krystalizację, a wodę przez destylację. Nie oceniaj metody jako „złej” bez określenia celu.
+Rozwiązując zadanie o jonach, nie zmieniaj liczby protonów. Przy tworzeniu zwykłego jonu zmienia się liczba elektronów: kation ma ich mniej, anion więcej.
+Przykład: Jon X⁻ ma 18 elektronów. Ile protonów ma jego jądro? Klucz: 17. Anion przyjął jeden elektron, ale liczba protonów pozostała niezmieniona.
+:::
+
 ::: fiszki
 Synteza | reakcja, w której z kilku substratów powstaje jeden produkt | basic:podstawa
 Analiza | rozkład jednego substratu na produkty | basic:podstawa
-Wymiana | reakcja prosta: atom wypiera inny atom z związku | basic:podstawa
+Wymiana | szkolna kategoria obejmująca wymianę pojedynczą, np. Zn + 2HCl → ZnCl₂ + H₂, oraz podwójną, np. AgNO₃ + NaCl → AgCl↓ + NaNO₃ | basic:podstawa
 Sączenie | oddzielanie ciała stałego od cieczy przez przegrodę (sączek) | basic:podstawa
 Dekantacja | zlanie cieczy znad osadu bez jego przenoszenia | basic:podstawa
 Rozdział magnetyczny | oddzielanie składnika ferromagnetycznego magnesem | basic:podstawa

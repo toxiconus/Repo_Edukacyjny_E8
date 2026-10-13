@@ -9,8 +9,13 @@ poglebia: "LKO III — Sprint C (mol, pochodne węglowodorów, cukry); REV02"
 wlasciciel: "symulacja diagnostyczna etapu II LKO (jedno zastosowanie: próba generalna w warunkach zawodów + lokalizacja strat przed 26.11)"
 zrodla: "Zakres wymagań konkursu chemicznego LKO 2026/27 — etap II (punkty I–VIII podstawy kumulatywnie + rozszerzenia 1–7); terminarz wg źródła pośredniego (do potwierdzenia): 26.11.2026, 9:00, 90 min, 40 pkt, kalkulator prosty"
 opis: "Pełna symulacja etapu II: 10 zadań / 40 pkt / 90 min w formach LKO. Kumulatywność etapu I (mieszaniny i krzywe, Z=36, typy reakcji, stężenie %) wpleciona w zadania 1–3 i 10; nowa treść etapu II: wodorki (4), szereg aktywności z pułapką (5), równania jonowe i rozpuszczalność (6), stechiometria z nadmiarem + wydajność ×0,9 (7), węglowodory acykliczne (8), analiza cudzego opisu (9). Klucz z siatką punktowania, budżetami czasu, post-mortem z mapowaniem na pliki."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 # LKO-SYM-A2 — Symulacja etapu II
 
@@ -58,7 +63,7 @@ Symulacja jest sprawdzianem tempa i zapisu. Najpierw zrób zadania, które potra
 2. Obliczenia **tylko z pełnym zapisem** (równanie → „masowo pod równaniem" → proporcja → wynik z jednostką). Sam wynik traci punkty — sprawdzisz to na sobie.
 3. Nie zostawiaj pustych pól; zamknięte zawsze zgadnij.
 4. Klucz i post-mortem najwcześniej po **30 minutach przerwy**. Post-mortem obowiązkowy (tabela na końcu).
-5. Wynik porównaj z B1/B2: spadek >6 pkt względem średniej B = problem z tempem albo z kumulatywnością, nie z nową treścią.
+5. Wynik porównaj z B1/B2 ostrożnie: zestawy mają różne maksima (B1 — 34 pkt, B2 — 31 pkt, A2 — 40 pkt), więc porównuj procent punktów i profil błędów. Spadek wyniku sam nie rozstrzyga, czy przyczyną był czas, brak wiedzy, czy niejednoznaczność zadania.
 
 | Zadanie | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | Σ |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -177,7 +182,7 @@ Do 150 g roztworu kwasu solnego o stężeniu 7,3% wprowadzono 20 g węglanu wapn
 a) *(1)* Oblicz masę czystego HCl w roztworze.
 b) *(2)* Ustal, który substrat jest ograniczający — pokaż obliczenie.
 c) *(1)* Oblicz **masę teoretyczną** CO₂.
-d) *(1)* W doświadczeniu rzeczywistym zebrano **90% masy teoretycznej** CO₂. Oblicz masę CO₂, którą faktycznie uzyskano.
+d) *(1)* W doświadczeniu rzeczywistym zebrano **90% masy teoretycznej** CO₂. Oblicz masę CO₂, którą faktycznie uzyskano. Strata może wynikać z niepełnego odzysku gazu, a nie z pozostawienia 10% reagentów.
 *(kontrola-nagroda: podaj masę CaCO₃, która nie zareagowała — jeśli policzysz, masz wgląd w swój wynik)*
 :::
 
@@ -186,7 +191,7 @@ d) *(1)* W doświadczeniu rzeczywistym zebrano **90% masy teoretycznej** CO₂. 
 a) m(HCl) = 0,073 × 150 g = **10,95 g** — 1.
 b) porównanie: 20 g CaCO₃ wymaga 20 × 73/100 = **14,6 g HCl** > 10,95 g (albo: 10,95 g HCl zużyje 10,95 × 100/73 = **15 g CaCO₃** < 20 g) → **ograniczający HCl**, CaCO₃ w nadmiarze — 1 za proporcję, 1 za wniosek.
 c) m(CO₂) = 10,95 × 44/73 = **6,6 g** — 1.
-d) **6,6 × 0,9 = 5,94 g** — 1. *Notatka dydaktyczna (omów po symulacji): „90% teoretycznej" to wydajność reakcji — poza rozszerzeniem 7, na etapie III będzie stałym elementem. Metoda: jedna dodatkowa proporcja ×0,9 na końcu. Jeśli uczeń pominął d) — odnotuj, nie karz dodatkowo.*
+d) **6,6 × 0,9 = 5,94 g** (zebrane) — 1. Przy założeniu pełnej reakcji nadal pozostaje 5 g nadmiarowego CaCO₃. *Notatka dydaktyczna (omów po symulacji): „90% teoretycznej" to wydajność reakcji — poza rozszerzeniem 7, na etapie III będzie stałym elementem. Metoda: jedna dodatkowa proporcja ×0,9 na końcu. Jeśli uczeń pominął d) — odnotuj, nie karz dodatkowo.*
 Kontrola-nagroda: zużyto 15 g CaCO₃ → **zostało 5 g** (bez pkt, samocheck).
 :::
 
@@ -218,9 +223,9 @@ b) *(1)* Zapisz poprawne, zbilansowane równanie z warunkami i strzałkami.
 a) po 1 za błąd (nazwanie + poprawka; sama zakreślka = 0). Katalog poprawnych odpowiedzi:
 1. „zaobserwowano wydzielanie amoniaku" — wniosek z nazwą produktu; obserwacja: ostry zapach (machnięcie dłoni), mokry czerwony lakmus **sinieje**;
 2. zbieranie **dnem do dołu** — błąd; NH₃ jest lżejszy od powietrza (M=17<29) → **dnem do góry**;
-3. równanie niezbilansowane i bez strzałek — patrz b);
-4. brak warunku ogrzewania (t) w równaniu (w treści „ogrzewano" jest — w równaniu brak);
-5. (uznawany) brak BHP: machnięcie dłoni zamiast wąchania, wyciąg — amoniak drażni.
+3. równanie niezbilansowane i bez strzałek — patrz b) (brak symbolu nad strzałką nie zawsze czyni reakcję niepoprawną, gdy ogrzewanie jest opisane w przebiegu; liczy się jeden błąd równania, nie osobne punkty za każdy element);
+4. brak warunku ogrzewania (t) w równaniu (w treści „ogrzewano" jest — w równaniu brak; nie licz tego osobno, jeśli już wliczono w błąd równania);
+5. (uznawany) brak BHP: w pracowni nie wąchaj gazów; jako obserwację identyfikacyjną używaj zmiany barwy wilgotnego lakmusu, a demonstrację prowadź w wyciągu według warunków pracowni.
 b) **2NH₄Cl + Ca(OH)₂ →(t) CaCl₂ + 2NH₃↑ + 2H₂O** — 1 (bilans + ↑ + (t) komplet; brak jednego elementu = 0).
 :::
 
@@ -240,6 +245,11 @@ a) sól: 110 × 50/100 = **55 g** (0,5); roztwór: 55 + 50 = **105 g** (0,5 — 
 
 ## Fiszki i słownik — symulacja
 
+::: karta understand | Uzupełnienie: masa soli, roztworu i całej zawartości
+W zadaniu o krystalizacji „otrzymana sól”, „pozostały roztwór” i „cała zawartość naczynia” oznaczają różne masy. W zadaniu o gazie „powstał”, „wydzielił się” i „zebrano” również nie muszą oznaczać tej samej ilości. Podkreśl czasownik w poleceniu przed obliczeniem.
+Porównuj wyniki procentowo i po profilu błędów, nie po surowym spadku punktów: zestawy mają różne maksima i różną trudność.
+:::
+
 ::: fiszki
 Wzór etenu | C₂H₄ | basic:podstawa
 Jaki gaz wydziela się w spalaniu niecałkowitym węglowodorów i dlaczego jest groźny? | CO — trujący, bezbarwny i bezwonny | basic:bhp
@@ -257,7 +267,7 @@ Post-mortem :: analiza wyniku: zadanie → plik do powtórki → naprawa
 ## Ciekawostki
 
 ::: karta extra | Dlaczego skorupka jajka „rozpuszcza się" w occie
-Skorupka to głównie CaCO₃. Kwas octowy reaguje z węglanem wapnia tak jak HCl w zadaniu 7 — wydziela się CO₂ (pęcherzyki), a po kilku dniach w occie skorupka staje się miękka i elastyczna.
+Skorupka to głównie CaCO₃. Kwas octowy reaguje z węglanem wapnia tak jak HCl w zadaniu 7 — wydziela się CO₂ (pęcherzyki), a po kilku dniach mineralna część skorupki ulega rozpuszczeniu. Elastyczność pozostałego jajka wynika głównie z pozostających błon, a nie z tego, że CaCO₃ stał się miękki i sprężysty.
 :::
 
 ::: karta extra | Dlaczego saletra to składnik prochu

@@ -9,8 +9,13 @@ poglebia: "R02 (pełna lekcja); J10 (Ksp — LO); X-brak"
 wlasciciel: "krzywe rozpuszczalności jako narzędzie konkursowe + cztery szablony obliczeń saturacyjnych (R02 obejmuje E8-podstawę odczytu; suplement dodaje warstwę obliczeniową)"
 zrodla: "Zakres wymagań konkursu chemicznego LKO 2026/27, etap I (pkt V podstawy; umiejętności wspólne: korzystanie z tablic i wykresów, konstruowanie wykresów, obliczenia z przejrzystym zapisem)"
 opis: "Czytanie krzywych (osie, trzy strefy, słownik nasycony/nienasycony), trzy kształty krzywych i ich konsekwencje praktyczne (metody krystalizacji, gazy), cztery szablony obliczeniowe (odczyt ze skalowaniem, chłodzenie, % roztworu nasyconego S/(100+S), oczyszczanie i minimum wody). 22 zadania w formach LKO z kluczem i punktacją, w tym zadanie z kreśleniem wykresu. Zasila sesje S6–S7 Sprintu A."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 # LKO-KRZYWE — Krzywe rozpuszczalności
 
@@ -86,9 +91,9 @@ Rozliczenie: 5 pkt — przejdź do zadań F; 3–4 pkt — przerób §1 i §3; 0
 | T (°C) | KNO₃ (saletra potasowa) | NaCl | NH₄Cl |
 |---|---|---|---|
 | 20 | 32 | 36 | 37 |
-| 40 | 62 | 36,5 | 41 |
+| 40 | 62 | 36,5 | 46 |
 | 60 | 110 | 37 | 55 |
-| 80 | 167 | 37 | 66 |
+| 80 | 167 | 38 | 66 |
 
 **Tabela B** — wodorotlenek wapnia Ca(OH)₂ (g na 100 g wody):
 
@@ -117,7 +122,7 @@ Dla ustalonej temperatury T porównuj punkt (T, rozpuszczona masa) z krzywą:
 |---|---|---|
 | **na krzywej** | rozpuszczono dokładnie maksimum | roztwór **nasycony** |
 | **pod krzywą** | rozpuszczono mniej niż maksimum — rozpuści się jeszcze | roztwór **nienasycony** |
-| **nad krzywą** | „rozpuszczono więcej niż się da" — nadmiar **osiada jako osad**, roztwór (faza ciekła) jest nasycony | roztwór nasycony **z nadmiarem substancji stałej** |
+| **nad krzywą** | przy osi „ile dodano" — nadmiar pozostaje w fazie stałej (osad), ciecz jest nasycona; przy osi „ile naprawdę rozpuszczono" — roztwór przesycony | roztwór nasycony **z nadmiarem substancji stałej** (lub przesycony) |
 
 Zapis pamięciowy: **nad = osad, na = granica, pod = jeszcze się zmieści**.
 
@@ -144,7 +149,7 @@ Zapis pamięciowy: **nad = osad, na = granica, pod = jeszcze się zmieści**.
 | Kształt | Przykład (z tabeli A/B) | Co rośnie/maleje |
 |---|---|---|
 | **stroma** (silnie rosnąca) | KNO₃: 32 → 167 (20→80 °C, ponad 5×) | rozpuszczalność mocno zależy od temperatury |
-| **płaska** (prawie pozioma) | NaCl: 36 → 37 (zmiana 1 g między 20 a 80 °C) | rozpuszczalność prawie niezależna od temperatury |
+| **płaska** (prawie pozioma) | NaCl: 36 → 38 (zmiana ok. 2 g między 20 a 80 °C) | rozpuszczalność prawie niezależna od temperatury |
 | **łagodnie rosnąca** | NH₄Cl: 37 → 66 | pośrednio |
 | **malejąca** | Ca(OH)₂: 0,16 (20 °C), w wyższej temperaturze mniej | rozpuszczalność **spada** z temperaturą |
 | **gazy — zawsze malejąca** | CO₂, O₂ w wodzie | ogrzewanie wypędza gaz z wody |
@@ -227,7 +232,7 @@ Osad to ilość, która musi się wydzielić: S(gorące) − S(zimne). Odejmowan
 
 **Osie:** X — temperatura (°C); Y — **g substancji / 100 g WODY** (nie roztworu!).
 
-**Trzy strefy:** nad = nasycony z osadem · na = nasycony · pod = nienasycony.
+**Trzy strefy:** nad = nasycony z osadem (przy osi „ile dodano") · na = nasycony · pod = nienasycony.
 
 **Trzy kształty:** stroma (KNO₃) → oziębianie · płaska (NaCl) → odparowanie · malejąca (Ca(OH)₂, gazy) → ogrzewanie wypędza/wysadza.
 
@@ -288,7 +293,7 @@ a) 110 g  b) 78 g  c) 32 g  d) 138 g
 ### B. Prawda–fałsz
 
 **B1.** Krzywa rozpuszczalności podaje masę substancji na 100 g roztworu.
-**B2.** Punkt położony nad krzywą (dla danej temperatury) oznacza roztwór nasycony z nadmiarem substancji stałej na dnie.
+**B2.** Punkt położony nad krzywą (przy osi „ile dodano") oznacza roztwór nasycony z nadmiarem substancji stałej na dnie.
 **B3.** Rozpuszczalność gazów w wodze rośnie wraz ze wzrostem temperatury.
 **B4.** Do oczyszczania substancji o stromej krzywej stosuje się krystalizację przez oziębianie.
 **B5.** Rozpuszczalność Ca(OH)₂ maleje ze wzrostem temperatury.
@@ -319,7 +324,7 @@ a) 110 g  b) 78 g  c) 32 g  d) 138 g
 
 ### D. Dobieranie
 
-**D1.** Połącz każdą substancję z opisem jej krzywej (dwie odpowiedzi są zbędne):
+**D1.** Połącz każdą substancję z opisem jej krzywej (jedna odpowiedź jest zbędna):
 1. KNO₃ · 2. NaCl · 3. Ca(OH)₂
 a) krzywa prawie pozioma (płaska) · b) krzywa malejąca · c) krzywa stroma (silnie rosnąca) · d) krzywa z maksimum
 
@@ -357,7 +362,7 @@ c) Jakim roztworem (względem 20 °C) jest ciecz znad osadu?
 |---|---|---|
 | F1a | S: 110 → 32; spadek 78 g/100 g wody; m = 78 × 250/100 = **195 g** | 2 pkt (odczyty+skalowanie 1, wynik 1) |
 | F1b | bezbarwne kryształy osiadają na dnie/przegrodach, ilość stałej substancji rośnie podczas chłodzenia | 1 pkt |
-| F1c | **nasycony** w 20 °C (ciecz nad osadem jest zawsze na krzywej) | 1 pkt |
+| F1c | **nasycony** w 20 °C (ciecz pozostająca w równowadze z nadmiarem tej samej substancji jest nasycona; sam osad tego nie dowodzi) | 1 pkt |
 :::
 
 ::: adv | Zadania F2–F3 (5 pkt) — stężenia i wodna wapienna | poziom ambitny
@@ -376,7 +381,7 @@ c) Jakim roztworem (względem 20 °C) jest ciecz znad osadu?
 
 ::: karta exam | Zadanie F4 (3 pkt) — wykres rozpuszczalności
 
-**F4.** Na papierze w kratkę naszkicuj wykres rozpuszczalności KNO₃ i NaCl w zakresie 0–80 °C, korzystając z tabeli A. Wymagania: podpisane osie z jednostkami (oś pionowa: „masa substancji, g / 100 g wody"), przyjęta podziałka, zaznaczone punkty z tabeli, poprowadzone krzywe, legenda.
+**F4.** Na papierze w kratkę naszkicuj wykres rozpuszczalności KNO₃ i NaCl w zakresie 20–80 °C, korzystając z tabeli A (wartości dla 0 °C nie są podane — nie każ uczniowi ich zgadywać). Wymagania: podpisane osie z jednostkami (oś pionowa: „masa substancji, g / 100 g wody"), przyjęta podziałka, zaznaczone punkty z tabeli, poprowadzone krzywe, legenda.
 
 :::
 ::: odp | Pokaż klucz
@@ -411,7 +416,7 @@ c) Jakim roztworem (względem 20 °C) jest ciecz znad osadu?
 | E4 | **Nie**: maks. 32 g (tabela, 20 °C); 50 − 32 = **18 g** zostanie na dnie; roztwór nasycony | 1 pkt za odczyt, 1 pkt za różnicę i nazwę stanu |
 | F1a | S: 110 → 32; spadek 78 g/100 g wody; m = 78 × 250/100 = **195 g** | 2 pkt (odczyty+skalowanie 1, wynik 1) |
 | F1b | bezbarwne kryształy osiadają na dnie/przegrodach, ilość stałej substancji rośnie podczas chłodzenia | 1 pkt |
-| F1c | **nasycony** w 20 °C (ciecz nad osadem jest zawsze na krzywej) | 1 pkt |
+| F1c | **nasycony** w 20 °C (ciecz pozostająca w równowadze z nadmiarem tej samej substancji jest nasycona; sam osad tego nie dowodzi) | 1 pkt |
 | F2 | (a) 36/136 ≈ 26,5%; (b) 110/210 ≈ 52,4%; wyjaśnienie: w mianowniku masa **roztworu** (woda+sól), nie sama woda — 110 g to składnik roztworu o masie 210 g | 2 pkt za obliczenia (po 1), 1 pkt za wyjaśnienie |
 | F3 | rozpuszczalność Ca(OH)₂ **maleje** z temperaturą (0,16 g w 20 °C, w wyższej mniej); przy podgrzaniu część rozpuszczonego wodorotlenku przestaje się mieścić i **wysadza się jako drobny osad** → mętnienie; brak CO₂ wyklucza reakcję z węglanem — winna jest sama zależność od temperatury | 2 pkt (wskazanie malejącej zależności 1; połączenie z mętnieniem jako wysadzeniem nadmiaru 1) |
 | F4 | rubryka: osie podpisane z jednostkami (1), podziałka + poprawnie naniesione punkty (1), krzywe + legenda, KNO₃ wyraźnie stroma, NaCl płaska (1) | 3 pkt łącznie |
@@ -479,11 +484,23 @@ Twarda woda zawiera rozpuszczone wodorowęglany wapnia. Po podgrzaniu tworzą si
 - 100%
 - 33%
 
+::: karta understand | Roztwór nasycony, przesycony i „punkt nad krzywą”
+Roztwór nasycony zawiera ilość rozpuszczonej substancji odpowiadającą jej rozpuszczalności w danych warunkach. Obecność nadmiaru stałej substancji nie jest konieczna.
+Interpretacja punktu nad krzywą zależy od tego, co przedstawia oś: jeżeli ilość rzeczywiście rozpuszczonej substancji — punkt nad krzywą odpowiada roztworowi przesyconemu; jeżeli całkowitą ilość dodanej substancji i zakładamy równowagę — nadwyżka pozostaje w fazie stałej, a ciecz jest nasycona. Nie zmieniaj tej definicji tylko dlatego, że zadanie jest na określonym etapie konkursu.
+Ciecz pozostająca w równowadze z nadmiarem tej samej rozpuszczanej substancji jest nią nasycona. Obecność dowolnego osadu nie wystarcza do takiego wniosku.
+:::
+
+::: karta understand | Uzupełnienie obliczeniowe: co zostaje w cieczy po krystalizacji
+Po ochłodzeniu 105 g roztworu złożonego z 50 g wody i 55 g KNO₃ do 20 °C, przy danych zadania S = 32 g/100 g wody: rozpuszczone pozostaje 16 g KNO₃; krystalizuje 55 − 16 = 39 g; masa pozostałego ciekłego roztworu wynosi 50 + 16 = 66 g; stężenie ciekłego roztworu wynosi 16/66 · 100% ≈ 24,2%.
+Nie licz stężenia cieczy z mianownikiem 105 g: 39 g kryształów nie jest już częścią roztworu.
+Dane KNO₃ 62 i 110 można zachować jako jawnie wskazane dane zadaniowe, aby nie zmieniać wszystkich kluczy. Nie należy jednocześnie nazywać ich dokładnymi wartościami referencyjnymi.
+:::
+
 ## Fiszki {#fiszki}
 
 ::: fiszki
 Rozpuszczalność | maksymalna masa substancji rozpuszczona w 100 g wody w danej temperaturze | basic:podstawa
-Roztwór nasycony | roztwór, w którym w danej temperaturze nie rozpuści się już więcej substancji (na dnie osad) | basic:podstawa
+Roztwór nasycony | roztwór zawierający ilość substancji odpowiadającą jej rozpuszczalności w danych warunkach; obecność nadmiaru stałej substancji nie jest konieczna | basic:podstawa
 Krzywa rozpuszczalności | wykres rozpuszczalności w funkcji temperatury (g na 100 g wody) | basic:podstawa
 Krystalizacja przez oziębianie | metoda dla substancji o stromej krzywej (np. KNO₃) | understand:rozumienie
 Krystalizacja przez odparowanie | metoda dla substancji o płaskiej krzywej (np. NaCl) | understand:rozumienie
@@ -498,7 +515,7 @@ Osad przy chłodzeniu | S(gorące) − S(zimne), skalowane do masy wody | exam:k
 
 ::: slownik
 Krzywa rozpuszczalności :: wykres pokazujący, ile gramów substancji rozpuści się w 100 g wody w danej temperaturze
-Roztwór nasycony :: roztwór, w którym dalsze rozpuszczanie nie zachodzi w danej temperaturze (punkt na krzywej)
+Roztwór nasycony :: roztwór zawierający ilość substancji odpowiadającą jej rozpuszczalności w danej temperaturze (punkt na krzywej); osad nie jest konieczny
 Roztwór nienasycony :: roztwór, który może rozpuścić jeszcze substancji (punkt pod krzywą)
 Krystalizacja :: wydzielanie się substancji stałej z roztworu, najczęściej przez oziębienie albo odparowanie
 Osad nad krzywą :: nadmiar substancji stałej, który nie zmieścił się w roztworze nasyconym (punkt nad krzywą)

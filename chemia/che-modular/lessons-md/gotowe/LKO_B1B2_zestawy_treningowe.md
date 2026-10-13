@@ -10,19 +10,24 @@ poglebia: "LKO-SYM-A2"
 wlasciciel: "brak właścicieli pojęć — zestawy treningowe; zadania bazują wyłącznie na treści plików z pola wymaga"
 zrodla: "Zakres wymagań konkursu chemicznego LKO 2026/27, etap II (rozszerzenia 1–7) + kumulatywnie etap I; umiejętności wspólne (pełny zapis, opisy doświadczeń). Dane rozpuszczalności NH₄Cl wg tabeli z LKO-KRZYWE."
 opis: "Dwa zestawy treningowe: B1 — 34 pkt / 60 min (szereg aktywności, równania jonowe, mix etapu I: krzywe, Z=36, typy reakcji, stężenie %); B2 — 31 pkt / 60 min (wodorki NH₃/HCl/H₂S, masy cząsteczkowe, proporcje masowe, przypadek stechiometryczny graniczny, planowanie doświadczenia). Każdy zestaw: klucz z punktacją i post-mortem z mapowaniem na pliki. Bez wykładów — trening."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 kicker: "LKO-B1+B2 · trening II etap"
 lead: "Dwa zestawy treningowe w formie konkursowej: szereg i równania jonowe z mixem etapu I, potem wodorki i stechiometria z doświadczeniem. Klucz i post-mortem pokazują, do którego pliku wrócić po stracie punktów."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO II / TRENING]]
 stopka: "**LKO-B1+B2** · Zestawy treningowe etap II · 2026"
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 
 # LKO-B1+B2 — Zestawy treningowe etapu II
 
 ::: minimum | Muszę umieć przed zestawem — 10 punktów
 1. **Jonowe skrócone:** rozwijamy tylko mocne rozpuszczalne elektrolity; osady, gazy i wodę zostawiamy.
-2. **Metal przed wodorem:** reaguje z kwasem; metale grupy 1 i 2 najpierw reagują z wodą.
+2. **Metal przed wodorem:** reaguje z kwasem. K, Na oraz silnie reagujące z wodą Ca, Sr i Ba wymagają osobnej analizy w roztworach soli; nie obejmuj tą zasadą automatycznie całej grupy 2 — magnez może wypierać miedź z roztworu CuSO₄.
 3. **Nadmiar:** ustal substrat ograniczający przed liczeniem produktu.
 4. **Wodorki:** HCl i NH₃ — bardzo dobrze rozpuszczalne; H₂S — słabo; wiemy, jak zbierać każdy gaz.
 5. **Kontrola:** suma ładunków i suma mas (zachowanie masy) po obu stronach.
@@ -47,7 +52,7 @@ stopka: "**LKO-B1+B2** · Zestawy treningowe etap II · 2026"
 
 Zestaw jest testem, nie wykładem, ale każdy typ zadania ma swoją procedurę. Zanim zaczniesz, przypomnij sobie trzy rzeczy.
 
-**Równanie jonowe.** Rozpisujesz na jony tylko rozpuszczone mocne elektrolity; osady, gazy, wodę i tlenki zostawiasz w postaci cząsteczkowej. Na końcu sprawdzasz bilans ładunków po obu stronach. Przy metalach z grup 1 i 2 najpierw reaguje woda, dopiero potem roztwór soli.
+**Równanie jonowe.** Rozpisujesz na jony tylko rozpuszczone mocne elektrolity; osady, gazy, wodę i tlenki zostawiasz w postaci cząsteczkowej. Na końcu sprawdzasz bilans ładunków po obu stronach. Przy K, Na i silnie reagujących Ca, Sr, Ba trzeba rozważyć reakcję z wodą; nie uogólniaj tego na całą grupę 2.
 
 **Stechiometria z nadmiarem.** Gdy podano dwie masy substratów, najpierw ustalasz, który substrat się skończy (ograniczający), dopiero potem liczysz produkt od niego. Zawsze sprawdzasz zachowanie masy. Masę roztworu liczysz przez stężenie: najpierw masa czystej substancji, potem proporcja.
 
@@ -80,7 +85,7 @@ Najpierw przeczytaj całą część, potem zaznacz zadania bez wahania i zostaw 
 **A1. (1)** Do roztworu siarczanu(VI) cynku wprowadzono blaszkę miedzianą. Obserwacja:
 a) czerwono-brązowy nalot  b) brak zmian  c) niebieski osad  d) burzenie
 
-**A2. (1)** Który metal reaguje z **zimną** wodą?
+**A2. (1)** Który z podanych metali reaguje wyraźnie z **zimną** wodą w krótkim czasie w typowych warunkach szkolnych?
 a) Fe  b) Mg  c) Ca  d) Cu
 
 **A3. (4) Prawda–fałsz:**
@@ -114,7 +119,7 @@ A3 — a **F** · b **F** (Ca najpierw z wodą → Cu(OH)₂↓, nie Cu) · c **
 A4 — Zn²⁺ + Cu [1 (obie luki)]
 A5 — OH⁻ [1]
 A6 — 1→a (AgCl) · 2→b (CO₂) · 3→c (ZnCl₂) · 4→d (Cu po Mg) [po 1]
-A7 — Mg + 2HCl → MgCl₂ + H₂↑ · Mg + 2H⁺ + 2Cl⁻ → Mg²⁺ + 2Cl⁻ + H₂↑ · Mg + 2H⁺ → Mg²⁺ + H₂↑ (2+ = 2− ✓) [po 0,5 za formę cząsteczkową i pełną, 1 za skróconą z kontrolą]
+A7 — Mg + 2HCl → MgCl₂ + H₂↑ · Mg + 2H⁺ + 2Cl⁻ → Mg²⁺ + 2Cl⁻ + H₂↑ · Mg + 2H⁺ → Mg²⁺ + H₂↑ (suma ładunków po lewej: +2; po prawej: +2 — ładunek zachowany) [po 0,5 za formę cząsteczkową i pełną, 1 za skróconą z kontrolą]
 A8 — (a) Cu leży ZA wodorom w szeregu → nie wypiera H₂ z kwasu; (b) HNO₃ to kwas utleniający — produkty to tlenki azotu, nie H₂ [po 1]
 :::
 
@@ -184,8 +189,8 @@ C2c — **rdzawobrunatny** [1]
 ## Zadania
 
 ::: karta exam | B2 · A. wodorki NH₃, HCl, H₂S (13 pkt)
-**A1. (1)** Jedyny z trzech wodorków (NH₃, HCl, H₂S), który można zbierać **nad wodą**:
-a) NH₃  b) HCl  c) H₂S
+**A1. (1)** Który gaz jest typowym szkolnym przykładem zbierania nad wodą dzięki małej rozpuszczalności?
+a) NH₃  b) HCl  c) H₂
 
 **A2. (1)** Papier ołowiowy czernieje w obecności:
 a) NH₃  b) HCl  c) H₂S  d) CO₂
@@ -213,14 +218,14 @@ d) Amoniak zbiera się w zlewce dnem do dołu. ____
 :::
 
 ::: odp | Pokaż klucz
-A1 — **c** (słabo rozpuszczalny; NH₃ i HCl — bardzo dobrze) [1]
+A1 — **c** H₂ (mała rozpuszczalność; NH₃ i HCl rozpuszczają się bardzo dobrze, więc nie nadają się do zbierania nad wodą) [1]
 A2 — **c** (PbS czarny) [1]
 A3 — a **F** (brak jonów; przewodzi dopiero roztwór) · b **P** · c **P** · d **F** (lżejszy od powietrza → dnem do GÓRY) [po 1]
 A4 — HCl · H₂S [po 0,5]
 A5 — 1→c · 2→a · 3→d · 4→b [po 0,5]
 A6a — NaCl(s) + H₂SO₄(stęż.) →(t) NaHSO₄ + HCl↑ [1 (warunki wliczone)]
 A6b — 2H₂S + 3O₂ →(płomień) 2SO₂ + 2H₂O; obserwacja: niebieskawy płomień [0,5 równanie, 0,5 obserwacja]
-A7 — np. mokre paski lakmusowe: czerwony **sinieje** → NH₃; niebieski **czerwienieje** → HCl. (Równoważnie: zbliżenie patyczków → białe dymy NH₄Cl przy styku gazów) [1 test, 1 obserwacje]
+A7 — np. wilgotne paski lakmusowe: czerwony **sinieje** → NH₃; niebieski **czerwienieje** → HCl. Uwaga: sam kontakt dwóch nieopisanych gazów nie rozstrzyga, która butla zawiera który gaz — test wymaga znanego odczynnika [1 test, 1 obserwacje]
 :::
 
 ::: karta exam | B2 · B. mix (9 pkt)
@@ -258,6 +263,8 @@ d) Wykaż obliczeniem (zachowanie masy albo suma produktów), że żaden substra
 C1a — m(HCl) = 0,146 × 100 g = **14,6 g** [1]
 C1b — dla 20 g CaCO₃ potrzeba HCl: 20 × 73/100 = **14,6 g** = dokładnie tyle, ile jest → **stechiometria dokładna** (oba substraty się zużyją) [2 (proporcja 1, wniosek 1)]
 C1c — m(CO₂) = 20 × 44/100 = **8,8 g** [1]
+C1d — Produkty: 22,2 g CaCl₂ + 3,6 g H₂O + 8,8 g CO₂ = 34,6 g. Reagenty: 20 g CaCO₃ + 14,6 g HCl = 34,6 g. Bilans się zgadza; żaden substrat nie pozostał [1]
+Uzupełnienie: przypadek stechiometryczny jest trzecią możliwością, obok nadmiaru pierwszego i nadmiaru drugiego reagenta. Nie trzeba na siłę wskazywać jednego „ograniczającego”, gdy obie ilości dokładnie odpowiadają równaniu.
 C2a — dwie próby: ta sama masa i granulacja CaCO₃ (np. 2 g tableta), ta sama objętość kwasu, ta sama temperatura; JEDNA różnica: stężenie HCl (np. 5% vs 20%) — kontrolowane: masa, wielkość cząstek, objętość, temperatura [1,5 (jeden zestaw z kontrolą = 0,5; pełna kontrola zmiennych = 1,5)]
 C2b — próbka ze stężonym kwasem burzy gwałtowniej (tempo wydzielania bąbelków) [1]
 C2c — większe stężenie substratu zwiększa szybkość reakcji [1,5 (wniosek odwołany do obserwacji)]

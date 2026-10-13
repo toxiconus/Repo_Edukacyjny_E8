@@ -7,13 +7,18 @@ opis: Pięć par pojęć, które uczniowie mylą na konkursach (woda wapienna i 
 kicker: LKO · PUŁAPKI · I–II etap
 lead: Na konkursie nazwy często wyglądają podobnie, a ich wzory i zachowanie są różne. Ta lekcja zbiera pary, które się mylą najczęściej, i pokazuje, jak je rozróżnić po wzorze, stanie skupienia i reakcji.
 plakietki: [[basic:E8]][[olimp:LKO]]
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 stopka: **CHEMIA LKO-PUŁAPKI · 2026-10-13 · bez audytu W1**
 wymaga: F09 (jony, wzory) · F12 (wzory i nazwy) · R02 (roztwór nasycony) · LKO-KRZYWE (krzywa Ca(OH)₂)
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 ::: minimum | Muszę umieć na konkursie — 8 punktów
-1. **Woda wapienna** = klarowny roztwór wodorotlenku wapnia Ca(OH)₂ w wodzie (roztwór nasycony w 20 °C).
+1. **Woda wapienna** = klarowny roztwór wodorotlenku wapnia Ca(OH)₂ w wodzie (roztwór, często nasycony w określonej temperaturze).
 2. **Mleko wapienne** = zawiesina Ca(OH)₂ w wodzie (mętna, osad na dnie) — to nie to samo co woda wapienna.
 3. **Wapno palone** = tlenek wapnia CaO. Powstaje z wapienia (CaCO₃) przez prażenie.
 4. **Wapno gaszone** = wodorotlenek wapnia Ca(OH)₂. Powstaje z CaO i wody: CaO + H₂O → Ca(OH)₂ (reakcja silnie egzotermiczna).
@@ -116,7 +121,7 @@ Zasada: jeśli po chwili z cieczy opada osad i ciecz jest mętna, to zawiesina. 
 
 ::: karta understand | Wykład — nazwy zwyczajowe a wzory
 Na konkursie nazwy zwyczajowe są mylące, więc zawsze odwołuj się do wzoru:
-- **Kreda, wapień, marmur** — to CaCO₃ w różnych postaciach (kreda jest miękka i porowata, marmur powstaje z wapienia w wysokiej temperaturze i ciśnieniu).
+- **Kreda, wapień, marmur** — to CaCO₃ w różnych postaciach (kreda jest miękka i porowata, marmur powstaje z wapienia w wysokiej temperaturze i ciśnieniu). W szkolnym zadaniu kredę można modelować jako czysty CaCO₃, jeżeli wyraźnie przyjęto takie założenie; osad CaCO₃ z probówki nie staje się przez to naturalną kredą.
 - **Wapno palone (CaO)** i **wapno gaszone (Ca(OH)₂)** — dwa różne związki; pierwszy to tlenek, drugi wodorotlenek.
 - **Soda oczyszczona** — wodorowęglan sodu NaHCO₃ (lekko zasadowy roztwór w wodzie, stosowany jako środek spożywczy); **soda kalcynowana** — węglan sodu Na₂CO₃ (silniej zasadowa). Zamiana nazw to typowa pułapka.
 - **Wapń** (pierwiastek Ca) to nie to samo co **wapno** (związek). Pytanie „z czego zbudowany jest związek?" wymaga wzoru, nie nazwy.
@@ -145,12 +150,14 @@ Zanim napiszesz wniosek „to CO₂", zadaj dwa pytania: czy gaz faktycznie dop�
 
 **Hipoteza:** Wapno palone po dolaniu wody mocno się nagrzewa i przechodzi w wodorotlenek wapnia; jego roztwór mętnieje pod wpływem CO₂ (z oddechu albo z reakcji kredy z kwasem), tworząc biały osad węglanu wapnia.
 
+**Tryb:** demonstracja nauczycielska (bez samodzielnego wykonywania przez ucznia; bez kontaktu ust z odczynnikami; nie ogrzewaj szczelnie zamkniętej zwykłej probówki).
+
 **Sprzęt:** dwie zlewki, probówka, słomka, szklana różdżka, termometr, mała porcja wapna palonego, woda destylowana, rozcieńczony kwas solny, kawałek kredy, okulary i rękawice ochronne.
 
 **Przebieg:**
 1. Do zlewki z małą porcją wapna palonego dolej kilka mililitrów wody; włóż termometr i obserwuj bez pochylania się nad naczyniem.
 2. Po ostygnięciu dolej resztę wody, zamieszaj i przesącz — przesącz to woda wapienna.
-3. Przepuszczaj przez przesącz oddech słomką i obserwuj.
+3. (demonstracja nauczycielska) Przepuść przez przesącz gaz z wydychanego powietrza, kierując go rurką do osobnej probówki z wodą wapienną, i obserwuj. Uczeń nie wykonuje tej części samodzielnie i nie ma kontaktu ust z odczynnikami.
 4. W drugiej probówce wrzuć kawałek kredy i dodaj kilka kropel kwasu solnego; wydzielający się gaz kieruj do świeżej porcji wody wapiennej.
 
 **Obserwacje:** (1) przy gaszeniu woda gwałtownie się nagrzewa, tworzy się para, grudki pękają — wapno „pali"; (2) przesącz jest przejrzysty; (3) oddech wywołuje mleczne mętnienie; (4) nad kredą w kwasie lecą bąbelki, a woda wapienna mętnieje.
@@ -209,7 +216,7 @@ P3: CaO + H₂O → Ca(OH)₂; reakcja **egzotermiczna** (wydziela ciepło). P4:
 :::
 
 ::: odp | Klucz — P7
-(a) Woda wapienna — przejrzysty roztwór Ca(OH)₂; mleko wapienne — mętna zawiesina Ca(OH)₂ (po odstaniu wapno opada) (1 pkt).
+(a) Woda wapienna — przejrzysty roztwór Ca(OH)₂; mleko wapienne — mętna zawiesina Ca(OH)₂ (po zamieszaniu zawiesina jest mętna; po opadnięciu części stałej ciecz nad osadem może być klarowna) (1 pkt).
 (b) Wszystkie to CaCO₃; różnią się pochodzeniem i budową (kreda miękka, marmur twardy, zbudowany z kryształów) (1 pkt: 0,5 wzór, 0,5 różnice).
 (c) Fałsz: kreda to węglan wapnia CaCO₃, gips to siarczan(VI) wapnia CaSO₄·2H₂O — dwie różne sole (1 pkt).
 (d) Do obu proszków dodać rozcieńczony kwas solny: kreda — intensywne bąbelki CO₂ (CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑); gips — brak bąbelków (1 pkt).
@@ -272,7 +279,7 @@ Całkowicie wypalono 25 g czystej kredy.
 **Odczynniki:** woda wapienna (klarowna), mleko wapienne (mętne).
 **Przebieg:** przelać każdy płyn do probówki; obserwować po 5 minutach; przepuścić CO₂ do obu.
 **Obserwacje:** woda wapienna pozostaje klarowna i mętnieje po CO₂; mleko wapienne jest mętne od początku, a osad zostaje na dnie.
-**Wniosek:** mętność samego roztworu nie oznacza zawiesiny. Woda wapienna jest roztworem; mleko wapienne zawiesiną.
+**Wniosek:** wytrącenie drobnej fazy stałej powoduje, że cała zawartość naczynia nie jest już jednorodnym roztworem — może to być zawiesina lub układ roztwór + osad. Sama mętność nie identyfikuje jednak rodzaju substancji. Woda wapienna jest roztworem; mleko wapienne zawiesiną.
 :::
 
 ## 7 | Mity
@@ -302,6 +309,12 @@ Osad :: nierozpuszczalny produkt reakcji wydzielający się z roztworu; w równa
 Grafit :: pierwiastkowa odmiana węgla; rdzeń ołówka — nazwa „ołówek” jest historycznie myląca.
 :::
 
+::: karta understand | Uzupełnienie: dwa możliwe osady
+Po wprowadzeniu CO₂ do wody wapiennej powstaje CaCO₃: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O.
+Przy ogrzaniu nasyconego roztworu, bez dopływu CO₂, może natomiast wydzielić się Ca(OH)₂, ponieważ jego rozpuszczalność maleje z temperaturą. To inna substancja i inna przyczyna mętności.
+Nie wystarczy zapisać „biały osad”. Trzeba ustalić warunki jego powstania.
+:::
+
 ## Fiszki {#fiszki}
 
 ::: fiszki
@@ -317,7 +330,7 @@ Jak otrzymuje się wapno palone? | wypalanie wapienia/kredy: CaCO₃ → CaO + C
 Równanie mętnienia wody wapiennej? | Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O | gazy
 Jak odróżnić kredę od gipsu? | kwas solny: kreda (CaCO₃) bąbelkuje CO₂, gips (siarczan wapnia) nie | nazwy
 Co jest w rdzeniu ołówka? | grafit — pierwiastkowa odmiana węgla; „ołów” to myląca nazwa historyczna | nazwy
-Wzór sody oczyszczonej? | NaHCO₃ — wodorowęglan sodu (proszek do pieczenia) | nazwy
+Wzór sody oczyszczonej? | NaHCO₃ — wodorowęglan sodu (soda oczyszczona; proszek do pieczenia jest mieszaniną, zwykle zawierającą także składniki kwaśne i skrobię) | nazwy
 Wzór sody kalcynowanej? | Na₂CO₃ — węglan sodu | nazwy
 :::
 
@@ -360,12 +373,12 @@ Wzór sody kalcynowanej? | Na₂CO₃ — węglan sodu | nazwy
 Woda wapienna wystawiona na powietrze pokrywa się cienką błonką węglanu wapnia. Dlatego do doświadczenia bierze się świeżo przygotowaną wodę wapienną, a nie stary roztwór ze stojącego naczynia.
 :::
 
-::: karta extra | Wapno gaszone wrze
+::: karta extra | Gaszenie wapna może doprowadzić do wrzenia wody
 Wapno palone CaO reaguje z wodą gwałtownie i mocno się przy tym nagrzewa, i potrafi zagotować wodę przy większej ilości. Stąd nazwa „gaszenie wapna": tlenek zostaje „ugaszony" wodą w wodorotlenek.
 :::
 
 ::: karta extra | Wapnowanie gleb
-Kwaśne gleby neutralizuje się wapnem — węglanem wapnia lub wodorotlenkiem wapnia — by podnieść pH. Ten sam chemizm, co w probówce: wapń zobojętnia kwas.
+Kwaśne gleby neutralizuje się wapnem — węglanem wapnia lub wodorotlenkiem wapnia — by podnieść pH. Ten sam chemizm, co w probówce: kwasowość neutralizują zasadowe składniki materiału wapnującego, np. węglany i wodorotlenki. Sam jon Ca²⁺ nie jest zasadą zobojętniającą H⁺.
 :::
 
 ## 9 | Źródła

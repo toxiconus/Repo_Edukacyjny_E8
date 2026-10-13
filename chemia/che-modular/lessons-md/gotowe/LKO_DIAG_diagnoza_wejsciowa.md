@@ -7,10 +7,15 @@ opis: 10 zadań, 20 punktów, 30 minut w formach konkursu LKO (dobieranie, prawd
 kicker: LKO-DIAG · DIAGNOZA
 lead: Ta diagnoza nie uczy nowego materiału. Mierzy, od czego zacząć przygotowanie do etapu I: które sekcje są mocne, a które tracą punkty. Wynik decyduje o tym, które sesje Sprintu A będą pełne, a które skrócone.
 plakietki: [[basic:E8]][[olimp:LKO]]
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 stopka: **CHEMIA LKO-DIAG · 2026-10-13 · bez audytu W1 · diagnoza przed Sprintem A**
 wymaga: brak (diagnoza bada F01–F03, F04–F06, F09, F11–F13, F16–F17, N01, N02, N06, R01–R03)
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 ::: minimum | Co z tej diagnozy wynika
 1. Wynik w 20 punktach dzieli sekcje na mocne i słabe.
@@ -73,7 +78,7 @@ Konfiguracji do Z = 36 nie testujemy: to materiał nowy (lekcja LKO-Z36). Jest t
 ## Zadania
 
 ::: karta exam | Sekcja A — Mieszaniny i rozdzielanie (3 pkt)
-**Z1. Dobieranie (3 pkt).** Do każdej mieszaniny dobierz **najlepszą** metodę rozdzielania. Dwie metody są zbędne.
+**Z1. Dobieranie (3 pkt).** Do każdej mieszaniny dobierz **najlepszą** metodę rozdzielania. Dwie metody są zbędne. W pozycji 3 celem jest odzysk cukru z jego roztworu wodnego, nie wody.
 
 1. piasek + woda
 2. opiłki żelaza + piasek
@@ -83,7 +88,7 @@ Metody: a) destylacja · b) sączenie · c) dekantacja · d) rozdział magnetycz
 :::
 
 ::: odp | Klucz — Z1
-1 → b (sączenie) · 2 → d (rozdział magnetyczny) · 3 → e (odparowanie). Po 1 pkt za każdą parę. Para „bliskiej pomyłki" (3 → a, destylacja) — 0 pkt, ale odnotuj: to błąd do omówienia.
+1 → b (sączenie) · 2 → d (rozdział magnetyczny) · 3 → e (odparowanie). Po 1 pkt za każdą parę. Para „bliskiej pomyłki" (3 → a, destylacja) — 0 pkt, ale odnotuj: to błąd do omówienia. Destylacja nie jest w tym zadaniu chemicznie niemożliwa — pytanie dotyczy celu: przy odzysku cukru silne ogrzewanie może prowadzić do jego przemian, a odparowanie zachowuje substancję stałą.
 :::
 
 ::: karta exam | Sekcja B — Budowa materii, wartościowość, wzory (6 pkt)
@@ -105,7 +110,7 @@ Z2a: **16** (A − Z = 32 − 16); błąd typu A + Z — odnotuj jako błąd kon
 :::
 
 ::: karta exam | Sekcja C — Reakcje i równania (4 pkt)
-**Z5. Dobieranie (3 pkt).** Do każdego równania dobierz typ reakcji: **synteza / analiza / wymiana** (jeden typ jest zbędny).
+**Z5. Dobieranie (3 pkt).** Do każdego równania dobierz typ reakcji: **synteza / analiza / wymiana** (wykorzystaj wszystkie trzy podane typy).
 
 1. 2H₂O → 2H₂ + O₂
 2. Fe + S →(t) FeS
@@ -115,7 +120,7 @@ Z2a: **16** (A − Z = 32 − 16); błąd typu A + Z — odnotuj jako błąd kon
 :::
 
 ::: odp | Klucz — Z5–Z6
-Z5: 1 → **analiza**, 2 → **synteza**, 3 → **wymiana**; po 1 pkt. Z6: **1, 2, 1, 2**; 1 pkt tylko przy kompletnej poprawności.
+Z5: 1 → **analiza**, 2 → **synteza**, 3 → **wymiana**; po 1 pkt. Do każdego równania przyporządkowano jeden typ; wszystkie trzy podane typy są wykorzystane, żaden nie jest zbędny. Z6: **1, 2, 1, 2**; 1 pkt tylko przy kompletnej poprawności.
 :::
 
 ::: karta exam | Sekcja D — Tlen, wodór, spalanie (2 pkt)
@@ -155,11 +160,11 @@ Z10b: wprowadzić gaz do wody wapiennej; wynik dodatni: **mętnienie** wody wapi
 :::
 
 ::: karta understand | ★ Pytanie badawcze (poza punktacją i czasem)
-W klasie 7 uczyłeś się, że trzecia powłoka mieści najwyżej 8 elektronów. Atom **bromu ma 35 elektronów**. Spróbuj zapisać jego konfigurację i odpowiedz: **ile elektronów rzeczywiście może pomieścić trzecia powłoka w tym atomie?** Uzasadnij swój tok myślenia. Nie znasz jeszcze reguły — pytanie bada, jak myślisz o tym, czego nie wiesz; zapisz odpowiedź, nawet jeśli niepewną.
+W klasie 7 uczyłeś się, że trzecia powłoka mieści najwyżej 8 elektronów. Atom **bromu ma 35 elektronów**. Zapisz konfigurację bromu. Ile elektronów znajduje się na jego **trzeciej powłoce**, a jaka jest **maksymalna pojemność** tej powłoki? Uzasadnij swój tok myślenia. Nie znasz jeszcze reguły — pytanie bada, jak myślisz o tym, czego nie wiesz; zapisz odpowiedź, nawet jeśli niepewną.
 :::
 
 ::: odp | Interpretacja ★ (dla prowadzącego)
-Wzorcowa odpowiedź to **18 na powłoce M**, czyli Br: 2,8,18,7. Typowy błąd „2,8,8,17" albo „2,8,17" z uzasadnieniem „8 na M z klasy 7" nie jest punktowany, ale mówi, że uczeń przenosi regułę poza zakres, w którym była prawdziwa. To materiał na sesję o konfiguracjach do Z = 36 (lekcja LKO-Z36, sekcja 1.3).
+Wzorcowa odpowiedź: Br: 2,8,18,7. Powłoka M bromu zawiera 18 elektronów; jej maksymalna pojemność również wynosi 18. U innych atomów powłoka może być obsadzona mniejszą liczbą elektronów. Typowy błąd „2,8,8,17" albo „2,8,17" z uzasadnieniem „8 na M z klasy 7" nie jest punktowany, ale mówi, że uczeń przenosi regułę poza zakres, w którym była prawdziwa. To materiał na sesję o konfiguracjach do Z = 36 (lekcja LKO-Z36, sekcja 1.3).
 :::
 
 ---
@@ -235,7 +240,7 @@ Wynik poniżej 8/20 → odłożyć przygotowanie do OCJ I (5.11) i zostać przy 
 ## Notatka dla prowadzącego: granice diagnozy
 
 Diagnoza mierzy **stan wyjścia**, nie zdolności. Nie wolno z niej wyciągać trzech wniosków:
-1. prognozy na etap I — po 10 sesjach wynik zwykle rośnie o 6–10 punktów, ale to nie jest obietnica;
+1. prognozy wyniku na etap I — przyrost wiedzy oceniaj na drugim, równoległym zestawie o podobnym zakresie i trudności; nie zakładaj z góry określonego przyrostu punktów ani nie oceniaj zdolności na podstawie jednego krótkiego testu;
 2. wniosku „uczeń nie umie organiki" — organiki na etapie I nie ma;
 3. decyzji o rezygnacji — progi kwalifikacji nie są jeszcze potwierdzone (skan regulaminu do odczytu), a etap I jest osiągalny z poprawnym rdzeniem.
 
@@ -299,6 +304,16 @@ Wodór ma najmniejszą masę cząsteczkową spośród gazów, dlatego unosi się
 
 ::: karta extra | Kalkulator w konkursie
 Przyjęte założenie: zakres LKO 2026/27 dopuszcza kalkulator prosty (dodawanie, odejmowanie, mnożenie, dzielenie) — do potwierdzenia w regulaminie. To nie zwalnia z zapisu obliczenia: w Z8 punkty dostaje się za zapis wzoru, nie za sam wynik.
+:::
+
+::: karta understand | Kategorie błędów diagnostycznych
+Przy każdym błędzie zapisz jego kategorię:
+- wiedza — nie znałem pojęcia lub reguły;
+- rozumowanie — znałem regułę, ale zastosowałem ją niewłaściwie;
+- zapis — rozumowanie było poprawne, lecz zgubiłem znak, indeks lub jednostkę;
+- odczyt polecenia — odpowiedziałem na inne pytanie;
+- niejednoznaczność zadania — polecenie nie określało wystarczająco warunków.
+Ostatnia kategoria jest ważna: nie każdy problem w autorskim arkuszu jest błędem ucznia.
 :::
 
 ::: log | LOG ZMIANY — 2026-10-13

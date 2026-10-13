@@ -10,12 +10,17 @@ poglebia: "J04; J11 (analiza jakościowa — etap III/LO); LKO-SYM-A2; REV02"
 wlasciciel: "brak nowych właścicieli pojęć — obserwacja/wniosek ma właściciela F01/F16; suplement integruje: jednolity schemat opisu, katalogi obserwacyjne (gazy, osady, płomienie), procedura planowania, analiza cudzego opisu"
 zrodla: "Zakres konkursu chemicznego LKO 2026/27 — umiejętności wspólne (planowanie i analizowanie opisów doświadczeń; obserwacja vs wniosek; planowanie cykli) oraz formy zadań; zakres 2026/27 do potwierdzenia po publikacji"
 opis: "Siedem elementów opisu doświadczenia z kryterium punktowania; reguły języka obserwacji i wniosku; katalog gazów (O₂, CO₂, H₂, para wodna + NH₃, HCl, H₂S), barw osadów, roztworów i płomieni; matryca rozróżniania jednym odczynnikiem; zasada jednej różnicy; analiza cudzego opisu z 5 typami błędów. 24 zadania (A–F) z kluczem i punktacją."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 kicker: "LKO-DOSW · I–II etap"
 lead: "Dobre doświadczenie to pytanie, przebieg, obserwacje i wnioski, a obserwacja i wniosek to dwie różne rzeczy. Ta lekcja uczy schematu opisu i katalogów: gazy, osady, barwy, płomienie."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO I–II / OLIMP]]
 stopka: "**LKO-DOSW szkic** · Katalog doświadczeń · 2026"
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 
 # LKO-DOSW — Katalog doświadczeń
@@ -76,7 +81,7 @@ Przeczytaj §1 (schemat i reguły R1–R6), potem katalogi §2–§3 jako „kar
 | 2 | **Odczynniki i przybory** | substancje (z określeniem: rozcieńczony/stężony) + sprzęt | wyliczenie; odczynnik „nieznany" bez nazwy = 0 |
 | 3 | **Schemat zestawu** | rysunek/opis aparatury | patrz 1.4 |
 | 4 | **Przebieg** | czynności PO KOLEI + warunki (ogrzewanie (t), katalizator, ilości „niewielka") | kolejność logiczna; warunki wprost |
-| 5 | **Obserwacje** | TYLKO to, co zmysły | reguły 1.2 |
+| 5 | **Obserwacje** | to, co zmysły lub bezpośredni pomiar (wskazanie termometru, pH-metru, wagi) | reguły 1.2 |
 | 6 | **Wnioski** | interpretacja = odpowiedź na cel | odwołanie do obserwacji |
 | 7 | **Równania + BHP** | równania ze strzałkami i warunkami; zagrożenia | ↓, ↑, (t), katalizator — to jest punktowane |
 
@@ -90,7 +95,7 @@ Przeczytaj §1 (schemat i reguły R1–R6), potem katalogi §2–§3 jako „kar
 
 **R3. Czynność ≠ obserwacja.** „Dodano roztworu NaOH", „podgrzewano" — to przebieg (element 4). Błąd: wstawianie czynności do rubryki obserwacji.
 
-**R4. „Brak zmian" też jest obserwacją** — i często kluczową (patrz 3.1 i matryca 4.1). Zapis: „nie zaobserwowano zmian".
+**R4. „Brak zmian" też jest obserwacją** — i często kluczową (patrz 3.1 i matryca 4.1). Zapis: „nie zaobserwowano zmian". Nie dowodzi to jednak bezwzględnej niemożliwości procesu — tylko tego, że w czasie próby nie było widocznej reakcji.
 
 **R5. Wskaźniki: barwa = obserwacja, odczyn = wniosek.** Malinowa fenoloftaleina → zasadowość; czerwony lakmus → kwasowość. Nigdy odwrotnie w zapisie.
 
@@ -125,6 +130,13 @@ Każde doświadczenie opisujesz tym samym szablonem. Obserwacja mówi, CO WIDZIS
 :::
 
 ---
+
+::: karta understand | Obserwacja, pomiar i próba odniesienia
+Obserwacja lub wynik pomiaru to informacja uzyskana bezpośrednio: barwa, osad, wydzielanie gazu, wskazanie termometru, pH-metru lub wagi. Wniosek wyjaśnia znaczenie tych danych.
+Nazwy znanych odczynników można stosować w opisie. Nie należy natomiast nazywać nieznanego produktu tak, jakby jego tożsamość była bezpośrednio widoczna.
+Jeśli wykrywasz wodę w produktach spalania, sprawdź także wpływ wilgotnego powietrza i wilgoci w aparaturze. Samo zabarwienie bezwodnego CuSO₄ nie wskazuje jeszcze, skąd pochodziła woda.
+W doświadczeniu o szybkości reakcji porównuj np. objętość gazu zebranego w takim samym czasie albo czas zebrania ustalonej objętości. „Więcej bąbelków” jest obserwacją orientacyjną, nie zawsze porównywalnym pomiarem.
+:::
 
 ## 2 | Wykład — Katalog gazów: otrzymywanie → zbieranie → wykrywanie {#wyklad-gazy}
 
@@ -240,7 +252,7 @@ Zapis wniosków: „Próba z proszkiem burzy gwałtowniej, więc **większe rozd
 Klasa zadań: „Wykaż eksperymentalnie, że produkt spalania świecy zawiera CO₂ i parę wodną". Procedura wzorcowa:
 1. nad świecę trzymasz zimny, suchy zlewka → **mgiełka/krople** na ściankach → test CuSO₄: **błękitnieje** → wniosek: para wodna;
 2. gaz ze spalania prowadzisz (lejkiem/poganiaczem) do wody wapiennej → **mętnienie** → wniosek: CO₂.
-Kolejność jest punktowana: najpierw para (zlewka zimna), potem CO₂ (woda wapienna).
+W jednym szeregowym strumieniu kolejność jest punktowana: najpierw para (zlewka zimna), potem CO₂ (woda wapienna). Przy niezależnych próbach nie ma jednej obowiązkowej kolejności; ważne, żeby wykryta woda nie pochodziła z aparatury lub odczynnika.
 
 ::: karta understand | W skrócie — matryca w trzech krokach
 1. Wypisz substancje do rozróżnienia. 2. Dla każdego kandydata-odczynnika przewidź wynik z KAŻDĄ substancją. 3. Wybierz ten, którego wyniki są RÓŻNE dla wszystkich par — i tylko wtedy zapisz obserwacje.
@@ -273,7 +285,7 @@ Dwutlenek manganu przyspiesza rozkład H₂O₂ na wodę i tlen, a sam pozostaje
 :::
 
 ::: karta extra | Papier ołowiowy w laboratorium
-Papierek nasączony octanem ołowiu(II) czernieje w obecności H₂S, bo powstaje czarny PbS. To metoda czuła i bezpieczniejsza niż węch — stąd zasada „wykrywaj H₂S papierem, nie nosem".
+Papierek nasączony octanem ołowiu(II) czernieje w obecności H₂S, bo powstaje czarny PbS. Test pozwala uniknąć celowego wdychania H₂S, ale nadal wymaga odpowiedniej procedury i wyciągu; nie znosi toksyczności H₂S ani zagrożeń związanych z odczynnikami ołowiu — stąd zasada „wykrywaj H₂S papierem, nie nosem".
 :::
 
 ## KOMPENDIUM — karty szybkiego dostępu
@@ -325,7 +337,7 @@ a) rozkład H₂O₂ z MnO₂  b) redukcja CuO strumieniem H₂  c) marmur + HCl
 
 ::: karta exam | Zadania B — prawda–fałsz (6 pkt)
 **B1.** „Roztwór ma odczyn kwasowy" jest obserwacją.
-**B2.** „Nie zaobserwowano zmian" może być kluczowym wnioskiem o braku reakcji.
+**B2.** „Nie zaobserwowano zmian" jest obserwacją, która może wspierać wniosek o braku widocznej reakcji w czasie próby.
 **B3.** Białe dymy NH₃ + HCl to kropelki roztworu.
 **B4.** Fenoloftaleina w kwasie solnym zabarwia się na malinowo.
 **B5.** W doświadczeniu porównawczym próby powinny różnić się wyłącznie badanym czynnikiem.
@@ -379,7 +391,7 @@ a) H₂S [II] · b) CO₂ · c) H₂O (para) · d) O₂ · e) NH₃
 :::
 
 ::: karta exam | Zadania E1–E3 — otwarte krótkie (7 pkt)
-**E1.** Popraw błędne zdanie tak, aby rozdzielić obserwację i wniosek: *„Zaobserwowano, że powstała sól i woda, ponieważ roztwór wskaźnika czerwoneł."*
+**E1.** Popraw błędne zdanie tak, aby rozdzielić obserwację i wniosek: *„Zaobserwowano, że powstała sól i woda, ponieważ roztwór niebieskiego lakmusu zmienił barwę na czerwoną."*
 **E2.** Zapisz obserwacje i wnioski dla reakcji gwóźdź żelazny + CuSO₄(aq) (obserwacje: dwie; wniosek: jeden, z nazwami).
 **E3.** Dlaczego do wykrywania H₂S używa się papieru ołowiowego, a nie węchu? Dwa powody.
 :::
@@ -387,7 +399,7 @@ a) H₂S [II] · b) CO₂ · c) H₂O (para) · d) O₂ · e) NH₃
 ::: odp | Pokaż klucz
 **E1** — obserwacja: „roztwór wskaźnika zmienił barwę na czerwoną"; wniosek: „roztwór ma odczyn kwasowy, bo wskaźnik czerwienieje"; zdanie „powstała sól i woda" to wniosek o produktach (wymaga równania), nie obserwacja · 2 pkt
 **E2** — obserwacje: nalot czerwono-brązowy na gwoździu; roztwór zmienia barwę z błękitnej na bladozielonkawą · wniosek: żelazo (aktywniejsze) wyparło miedź, powstaje FeSO₄ i Cu · 3 pkt (2 obserwacje + wniosek)
-**E3** — H₂S jest silnie toksyczny; zmysł węchu adaptuje się (przestaje wyczuwać) — test papierowy jest obiektywny i bezpieczny · 2 pkt
+**E3** — H₂S jest silnie toksyczny; zmysł węchu adaptuje się (przestaje wyczuwać) — test papierowy jest obiektywny; nie oznacza to braku zagrożenia — wymaga procedury i wyciągu · 2 pkt
 :::
 
 ::: karta exam | Zadania E4–E5 — planowanie i kontrola zmiennych (4 pkt)
@@ -425,12 +437,12 @@ a) H₂S [II] · b) CO₂ · c) H₂O (para) · d) O₂ · e) NH₃
 :::
 
 ::: karta exam | Zadanie F4 (5 pkt) — błędy w cudzym opisie
-**F4.** Poniższy opis zawiera 5 błędów. Wskaż i popraw każdy: *„Cel: otrzymanie wodoru. Przebieg: do marmuru dodano rozcieńczonego kwasu siarkowego(VI); zaobserwowano wydzielanie wodoru; gaz zbierano w zlewce dnem do góry; równanie: CaCO₃ + HCl → CaCl₂ + H₂O + CO₂. Doświadczenie przeprowadzono bez rękawic, a koncentracja uczniów była pełna."*
+**F4.** Poniższy opis zawiera 5 błędów. Wskaż i popraw każdy: *„Cel: otrzymanie wodoru. Przebieg: do marmuru dodano rozcieńczonego kwasu solnego; zaobserwowano wydzielanie wodoru; gaz zbierano w zlewce dnem do góry; równanie: CaCO₃ + HCl → CaCl₂ + H₂O + CO₂. Doświadczenie przeprowadzono bez rękawic, a koncentracja uczniów była pełna."*
 :::
 
 ::: odp | Pokaż klucz
 **F4** — po 1 pkt za każdy błąd, z poprawną wersją:
-(1) cel „wodór" nie zgadza się z reakcją — marmur (CaCO₃) z kwasem daje CO₂, nie H₂; kwas siarkowy(VI) dodatkowo tworzy słabo rozpuszczalny CaSO₄, który może pokryć marmur i zahamować reakcję;
+(1) cel „wodór" nie zgadza się z reakcją — marmur (CaCO₃) z kwasem solnym daje CO₂, nie H₂;
 (2) „zaobserwowano wydzielanie wodoru" to wniosek z nazwą przed testem — obserwacja: „wydziela się bezbarwny gaz (bąbelki)";
 (3) zbieranie dnem do góry — CO₂ jest cięższy od powietrza, zbiera się dnem do dołu;
 (4) równanie: brak współczynnika 2 przy HCl, brak ↑ przy CO₂;

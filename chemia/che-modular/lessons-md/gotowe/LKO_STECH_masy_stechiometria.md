@@ -10,12 +10,17 @@ poglebia: "R04; R06; R07; R08; R09 (pełne wersje molowe — LO/etap III); LKO-S
 wlasciciel: "brak nowych właścicieli pojęć — mola i stechiometrii formalnie uczy R04/R07/R08; suplement integruje metodę masową (bez mola) pod rozszerzenia 6–7 etapu II"
 zrodla: "Zakres konkursu chemicznego LKO etap II: pkt 8 (masy cząsteczkowe pierwiastków w formie cząsteczek i związków) i pkt 9 (obliczenia ze stechiometrii wzoru i równania, substraty w stosunku stechiometrycznym i niestechiometrycznym) — wg zakresu 2025/26 (OCR w olimpiada/zrodla/LKO); zakres 2026/27 do potwierdzenia po publikacji"
 opis: "Masa cząsteczkowa z pułapką pierwiastków cząsteczkowych (H₂, N₂, O₂, Cl₂, P₄, S₈, O₃), porównania gęstości gazów przez Mr, skład procentowy i ustalanie wzoru z procentów, czterokrokowa metoda proporcji masowej, procedura nadmiaru (trzy kroki + kontrola pozostałości), zadania zespolone ze stężeniem % z etapu I. 20 zadań w formach LKO z kluczem i punktacją. Zasila LKO-SYM-A2."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 kicker: "LKO-STECH · II etap"
 lead: "Ile gramów powstanie z danej masy substratu? Liczymy Mr, pilnujemy pierwiastków cząsteczkowych, a gdy podano dwie masy — najpierw ustalamy, kto ogranicza reakcję."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO II / OLIMP]]
 stopka: "**LKO-STECH** · Masy cząsteczkowe i stechiometria · 2026"
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 
 # LKO-STECH — Masy cząsteczkowe i stechiometria masowa z nadmiarem
@@ -62,6 +67,11 @@ Zakres etapu II mówi wprost: „masy cząsteczkowe **pierwiastków występując
 
 Najdroższa pomyłka konkursowa: **Mr(O₂) = 32, nie 16** (16 to masa ATOMU). Podobnie Cl₂ = 71, nie 35,5.
 
+::: karta understand | Mr, masa cząsteczki i masa molowa — trzy różne pojęcia
+Względna masa cząsteczkowa Mr jest bez jednostki. Masa cząsteczki jest wyrażana w u. Masa molowa M jest wyrażana np. w g/mol.
+Dla H₂O: Mr ≈ 18, masa cząsteczki ≈ 18 u, M ≈ 18 g/mol. Dla NaCl, CaCO₃ i innych kryształów jonowych nie zakładaj istnienia odrębnych cząsteczek: mów o jednostce wzoru.
+:::
+
 ### 1.3 Zastosowanie natychmiastowe: „który gaz cięższy?"
 
 Gęstości gazów w tych samych warunkach są **proporcjonalne do Mr**. Porównanie = dzielenie:
@@ -91,6 +101,13 @@ Dla związku: %X = (masa X w Mr) / Mr × 100%:
 Masa składnika w próbce: 8 g MgO zawiera m(O) = 8 × 16/40 = **3,2 g** tlenu.
 
 ### 2.2 Od procentów do wzoru (ustalanie wzoru z obliczeń)
+
+Skład procentowy pozwala wyznaczyć najprostszy stosunek liczby atomów, czyli **wzór empiryczny**. Do ustalenia wzoru cząsteczkowego związku molekularnego potrzebna jest dodatkowo masa cząsteczkowa lub molowa.
+
+::: karta understand | Przykład: od procentów do wzoru cząsteczkowego
+Związek zawiera 40,0% C, 6,7% H i 53,3% O. Dla 100 g próbki: C: 40/12 ≈ 3,33 · H: 6,7/1 = 6,7 · O: 53,3/16 ≈ 3,33. Stosunek ≈ 1:2:1, więc wzór empiryczny to **CH₂O**.
+Jeżeli M związku wynosi 180 g/mol, masa molowa odpowiadająca CH₂O wynosi 30 g/mol. Mnożnik: 180/30 = 6. Wzór cząsteczkowy: **C₆H₁₂O₆**.
+:::
 
 *Tlenek żelaza zawiera 70% Fe. Ustal wzór.*
 
@@ -145,7 +162,7 @@ Gdy podano masy dwóch substratów, policz, ile moli każdego jest potrzebne do 
 
 ### 4.1 Kiedy trzeba myśleć o nadmiarze
 
-Gdy zadanie podaje **masy obu substratów** — nie wolno zakładać stechiometrii. Jeden substrat skończy się pierwszy (**ograniczający**), drugi zostanie (**nadmiar**). Produkt liczymy **zawsze od ograniczającego**.
+Gdy zadanie podaje **masy obu substratów** — nie wolno zakładać stechiometrii. Podanie dwóch mas nie gwarantuje nadmiaru: możliwy jest też przypadek dokładnie stechiometryczny, w którym obie ilości odpowiadają równaniu i żaden substrat nie zostaje. Jeden substrat skończy się pierwszy (**ograniczający**), drugi zostanie (**nadmiar**). Produkt liczymy **zawsze od ograniczającego**.
 
 ### 4.2 Procedura trzech kroków
 
@@ -185,9 +202,13 @@ Suma mas substratów = suma mas produktów (+ pozostającego nadmiaru). Dla spal
   CH₄ + 2O₂ → CO₂ + 2H₂O (16 : 64 : 44 : 36)
   8 g CH₄ + 32 g O₂ → 22 g CO₂ + 18 g H₂O → kontrola: 8 + 32 = 40 = 22 + 18 ✓
 
-Gdy bilans się zgadza — proporcja była dobra. Trzymaj ten test przy każdym zadaniu F.
+Zgodny bilans mas jest konieczną kontrolą, ale sam nie dowodzi poprawności rozwiązania. Trzeba również sprawdzić wzory, współczynniki, stosunki stechiometryczne i wskazanie ograniczającego reagenta. Trzymaj ten test przy każdym zadaniu F.
 
 ---
+
+::: karta understand | Ważna luka dla klasy 9: n = m/M
+Metoda masowa i molowa opisują ten sam stosunek stechiometryczny. Możesz najpierw nauczyć się proporcji masowych, ale później powinieneś rozumieć, dlaczego one działają: **n = m/M**, gdzie n to liczba moli, m — masa, M — masa molowa. Mol nie jest ukrytą „metodą po cichu”, tylko jawnym sposobem liczenia tej samej proporcji.
+:::
 
 ## KOMPENDIUM — ściąga wynikowa
 
@@ -318,7 +339,7 @@ F3 — 16:64:44:36 → m(O₂) = 8 × 64/16 = **32 g** (1); m(CO₂) = **22 g**,
 1. **Mr(H₂) = 1, Mr(O₂) = 16, Mr(Cl₂) = 35,5** → to masy ATOMÓW. Cząsteczki: 2 / 32 / 71. Przy każdym Mr pierwiastka pytaj: „atom czy cząsteczka?".
 2. **Mr bez współczynnika w proporcji** → 2Cu + O₂ → 2CuO liczy się 128 : 160, nie 64 : 80 przecięte z innym współczynnikiem. Zawsze pisz „masowo pod równaniem" PRZED proporcją.
 3. **Produkt od substratu nadmiarowego** → klasyk zadania A5: 3 g H₂ nie da 96 g miedzi; produkt liczysz od CuO. Trzy kroki nadmiaru są obowiązkowe, nie opcjonalne.
-4. **Masa roztworu wstawiona do proporcji** → „200 g roztworu 7,3%" = 14,6 g czystego HCl + 185,4 g wody; woda nie bierze udziału w reakcji i nie wchodzi do proporcji.
+4. **Masa roztworu wstawiona do proporcji** → „200 g roztworu 7,3%" = 14,6 g czystego HCl + 185,4 g wody; w zadaniu CaCO₃/HCl woda jest rozpuszczalnikiem i nie jest zużywanym reagentem. To nie jest reguła ogólna: woda bywa substratem, np. w reakcji CaO + H₂O → Ca(OH)₂.
 5. **Brak kontroli sumy procentów** → %Fe + %O musi dać 100; jeśli nie — błąd w odczycie albo w liczeniu, szukaj PRZED ustalaniem wzoru.
 6. **Wynik bez jednostki i bez zapisu** → na LKO ocenia się przejrzysty zapis: równanie, „masowo pod równaniem", proporcja, wynik z jednostką. Cztery linijki albo strata punktów.
 7. **„Nadmiar" w treści zadania zignorowany** → gdy zadanie pisze „w nadmiarze kwasu", nie licz masy kwasu w ogóle; ograniczający jest wskazany wprost.
@@ -338,7 +359,7 @@ Jak ustalić wzór z procentów? | dzielimy procenty przez masy atomowe, potem p
 Jaki jest pierwszy krok zadania z nadmiarem? | ustal substrat ograniczający | understand:rozumienie
 Ile razy H₂S jest cięższy od H₂? | 34/2 = 17 | basic:podstawa
 Co liczy się w proporcji masowej? | masy pod równaniem (iloczyny mol · M z współczynnikami) | basic:podstawa
-Dlaczego woda w roztworze nie wchodzi do proporcji? | nie bierze udziału w reakcji | understand:rozumienie
+Dlaczego woda w roztworze nie wchodzi do proporcji? | w zadaniu CaCO₃/HCl jest rozpuszczalnikiem, nie zużywanym reagentem; woda bywa substratem, np. CaO + H₂O → Ca(OH)₂ | understand:rozumienie
 :::
 
 ## 7 | Słownik {#slownik}
@@ -387,7 +408,7 @@ Pierwiastek cząsteczkowy :: pierwiastek, którego cząsteczki składają się z
 + nie wchodzi do proporcji, liczymy tylko 14,6 g HCl
 - zmienia Mr kwasu
 - trzeba ją odjąć od wyniku
-! Woda nie bierze udziału w reakcji.
+! Woda jest rozpuszczalnikiem w zadaniu z roztworem HCl; nie jest to reguła ogólna.
 :::
 
 ## Ciekawostki

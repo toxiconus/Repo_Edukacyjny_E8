@@ -10,12 +10,17 @@ poglebia: "J03; J04; J05; J11; E01–E02; LKO-SYM-A2"
 wlasciciel: "brak nowych właścicieli pojęć — suplement integruje pod kątem LKO etap II: szereg aktywności (X04), równania jonowe (J03), strącanie osadów (J04), metody otrzymywania soli (N05)"
 zrodla: "Zakres wymagań konkursu chemicznego LKO 2026/27, etap II — rozszerzenia 2, 3, 4, 5 oraz umiejętności wspólne (jonowe równania reakcji, cykle przemian, planowanie doświadczeń)"
 opis: "Szereg aktywności metali z regułami (woda / kwasy / sole; pułapki sodu i kwasu azotowego), tabela rozpuszczalności, procedura równań jonowych, metody otrzymywania kwasów, wodorotlenków i soli, pełny cykl przemian miedzi. 20 zadań w formach LKO z kluczem i punktacją. Zasila LKO-SYM-A2."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 kicker: "LKO-METALE · II etap"
 lead: "Szereg aktywności przewiduje, czy metal zareaguje; równania jonowe pokazują, co naprawdę dzieje się w roztworze; metody otrzymywania spinają sole, kwasy i wodorotlenki w jeden cykl."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO II / OLIMP]]
 stopka: "**LKO-METALE** · Szereg aktywności i równania jonowe · 2026"
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 
 # LKO-METALE — Szereg aktywności, równania jonowe, otrzymywanie związków
@@ -25,7 +30,7 @@ stopka: "**LKO-METALE** · Szereg aktywności i równania jonowe · 2026"
 2. **Woda i sód:** K, Na, Ca najpierw reagują z wodą — nie wypierają metali z roztworów soli.
 3. **Równanie jonowe skrócone:** rozwijamy mocne rozpuszczalne elektrolity; osady (↓), gazy (↑), wodę zostawiamy w formie cząsteczkowej.
 4. **Kontrola:** suma ładunków lewej strony = prawej.
-5. **HNO₃ nie daje H₂** — kwas utleniający daje tlenki azotu.
+5. **HNO₃ zwykle nie daje H₂** — kwas utleniający daje tlenki azotu; wyjątkowo bardzo rozcieńczony HNO₃ z Mg może wydzielać H₂.
 :::
 
 ## Lustro i most
@@ -45,7 +50,7 @@ stopka: "**LKO-METALE** · Szereg aktywności i równania jonowe · 2026"
 
 ### 1.1 Szereg (rdzeń szkolny + rozszerzenia)
 
-  **K · Na · Ca · Mg · Al · Zn · Fe · (H) · Cu · Ag · Au**
+  **K · Ca · Na · Mg · Al · Zn · Fe · (H) · Cu · Ag · Au**
 
   ↖────────── rośnie aktywność ──────────↗
 
@@ -73,7 +78,7 @@ Glin jest w szeregu przed wodorem, więc **teoretycznie** wypiera H₂ z kwasu s
 Dwa warianty pytań: (a) „Al reaguje z HCl?" — **tak** (B6, prawda, po pokonaniu warstwy tlenku); (b) „dlaczego początek reakcji jest wolny?" — warstwa tlenku (E3). Zimna woda praktycznie nie reaguje z Al w tym sensie, co Na i Ca, więc nie myl go z K/Na/Ca z reguły A.
 :::
 
-Metal po H (Cu, Ag, Au) — brak reakcji. **⚠ Wyjątek konkursowy:** kwas azotowy(V) HNO₃ i stężony H₂SO₄ to kwasy **utleniające** — reagują z większością metali, ale **nie dają H₂** (produkty to tlenki azotu / SO₂). Dla H₂ zawsze: HCl albo rozcieńczony H₂SO₄.
+Metal po H (Cu, Ag, Au) — brak reakcji. **⚠ Wyjątek konkursowy:** kwas azotowy(V) HNO₃ i stężony H₂SO₄ to kwasy **utleniające** — reagują z większością metali, ale **typowo nie dają H₂** (produkty to tlenki azotu / SO₂; wyjątek: bardzo rozcieńczony HNO₃ z Mg). Dla H₂ zawsze: HCl albo rozcieńczony H₂SO₄.
 
 **Reguła C — sole (roztwory).** Metal aktywniejszy **wypiera** mniej aktywny z roztworu jego soli:
 
@@ -96,7 +101,7 @@ Metal po H (Cu, Ag, Au) — brak reakcji. **⚠ Wyjątek konkursowy:** kwas azot
 | Mg | gorąca, wolno | tak | tak |
 | Al | nie (parą) | tak, po zdjęciu tlenku | tak |
 | Zn, Fe | nie (parą) | tak | tak |
-| Cu, Ag, Au | nie | **nie** | nie |
+| Cu, Ag, Au | nie | **nie** | **tak wobec metalu mniej aktywnego** (Cu + 2AgNO₃; sam fakt „za H” nie znosi wszystkich reakcji z solami) |
 
 **◇ OLIMP:** passywacja aluminium (cienka, szczelna warstwa Al₂O₃) opóźnia start reakcji z kwasem; zimny stężony HNO₃ pasywuje też żelazo i glin.
 
@@ -149,13 +154,17 @@ Zostawiamy w formie cząsteczkowej / wzoru: **osady (↓), gazy (↑), wodę, s�
 | Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ | strącanie | niebieski osad |
 | Fe³⁺ + 3OH⁻ → Fe(OH)₃↓ | strącanie | rdzawobrunatny osad |
 | Ag⁺ + Cl⁻ → AgCl↓ | wykrywanie chlorków | biały osad |
-| Ba²⁺ + SO₄²⁻ → BaSO₄↓ | wykrywanie siarczanów | biały osad |
+| Ba²⁺ + SO₄²⁻ → BaSO₄↓ | wykrywanie siarczanów (równanie składowe; przy Ba(OH)₂ + H₂SO₄ zachodzi też zobojętnianie) | biały osad |
 | CO₃²⁻ + 2H⁺ → H₂O + CO₂↑ | węglan + kwas | burzenie |
 | S²⁻ + 2H⁺ → H₂S↑ | siarczek + kwas | zapach (ostrożnie!); czerń PbS |
 
-Trzy warunki biegu reakcji w roztworze: **osad, gaz, woda (słaby elektrolit)** — zawsze musi coś „wypaść" z układu.
+Przy szkolnym przewidywaniu reakcji wymiany sprawdzasz, czy powstaje **osad, gaz lub woda (słaby elektrolit)**. To nie jest ogólna zasada chemii: redoks i kompleksowanie mogą zachodzić bez takiego produktu.
 
 ---
+
+::: karta understand | Zobojętnianie: mocny i słaby kwas
+H⁺ + OH⁻ → H₂O opisuje zobojętnianie mocnego kwasu mocną zasadą w przyjętym modelu. Dla słabego kwasu octowego: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O.
+:::
 
 ## 3 | Wykład — Otrzymywanie kwasów, wodorotlenków i soli (rozszerzenia 2, 3, 5)
 
@@ -197,7 +206,7 @@ Trzy warunki biegu reakcji w roztworze: **osad, gaz, woda (słaby elektrolit)** 
 2. Skąd wziąć kation i anion? (spisz dostępne substraty)
 3. Co wypada z układu? (osad/gaz/woda) — jeśli nic: zmień parę substratów albo drogę.
 
-*Przykład wzorcowy:* otrzymaj BaSO₄. Kation Ba²⁺: BaCl₂ lub Ba(OH)₂; anion SO₄²⁻: H₂SO₄ lub Na₂SO₄. Każda z czterech par daje osad — **wszystkie cztery drogi są poprawne**, a równanie skrócone jest jedno: Ba²⁺ + SO₄²⁻ → BaSO₄↓.
+*Przykład wzorcowy:* otrzymaj BaSO₄. Kation Ba²⁺: BaCl₂ lub Ba(OH)₂; anion SO₄²⁻: H₂SO₄ lub Na₂SO₄. Każda z czterech par daje osad — **wszystkie cztery drogi są poprawne**, a równanie skrócone (dla par BaCl₂ z Na₂SO₄ lub H₂SO₄) jest jedno: Ba²⁺ + SO₄²⁻ → BaSO₄↓. Dla Ba(OH)₂ i H₂SO₄ zachodzą jednocześnie strącanie i zobojętnianie, więc skrócone jest: Ba²⁺ + 2OH⁻ + 2H⁺ + SO₄²⁻ → BaSO₄↓ + 2H₂O. Samo Ba²⁺ + SO₄²⁻ → BaSO₄ opisuje tylko składowy proces strącania.
 
 ---
 
@@ -221,9 +230,16 @@ Cykl zamyka się w metalu — dlatego „obieg". W zadaniach konkursowych trzeba
 
 ---
 
+::: karta understand | Uzupełnienie: trzy pytania przed równaniem
+1. Jakie jest środowisko: woda, para, kwas czy roztwór soli?
+2. Jaka forma chemiczna reaguje: Fe, Fe²⁺ czy Fe³⁺?
+3. Czy występuje pasywacja, reakcja z wodą lub produkt trudno rozpuszczalny?
+Dopiero potem użyj szeregu. Szereg nie jest tabelą przewidującą każdą reakcję w każdych warunkach.
+:::
+
 ## KOMPENDIUM — ściąga wynikowa
 
-**Szereg:** K · Na · Ca · Mg · Al · Zn · Fe · **(H)** · Cu · Ag · Au
+**Szereg:** K · Ca · Na · Mg · Al · Zn · Fe · **(H)** · Cu · Ag · Au
 
 **Trzy reguły:** woda → tylko K/Na/Ca · kwas → tylko przed H, nigdy HNO₃/stęż. H₂SO₄ na H₂ · sole → wyższy wypiera niższego, ale K/Na/Ca najpierw z wodą.
 
@@ -354,7 +370,7 @@ F3 — sód reaguje z wodą, nie z Cu²⁺: 2Na + 2H₂O → 2NaOH + H₂↑; 2N
 
 ::: fiszki
 Który metal reaguje z rozcieńczonym HCl: Cu czy Zn? | Zn (Cu stoi za wodorem) | basic:podstawa
-Co wypiera Cu z roztworu AgNO₃? | Cu wypiera Ag: Ag⁺ + Cu → Cu²⁺ + Ag | basic:podstawa
+Co wypiera Cu z roztworu AgNO₃? | Cu wypiera Ag: Cu + 2Ag⁺ → Cu²⁺ + 2Ag | basic:podstawa
 Dlaczego Na w roztworze CuSO₄ nie wypiera miedzi? | Na najpierw reaguje z wodą | understand:rozumienie
 Jaka jest istota reakcji AgNO₃ + NaCl? | Ag⁺ + Cl⁻ → AgCl↓ | basic:podstawa
 Co zostaje w formie cząsteczkowej w równaniu jonowym? | osady (↓), gazy (↑), woda | basic:podstawa
@@ -404,12 +420,12 @@ Wypieranie :: reakcja, w której aktywniejszy metal zastępuje mniej aktywny w z
 - Na i H₂O₂
 ! 2Na + 2H₂O → 2NaOH + H₂↑.
 
-? Dlaczego HNO₃ nie służy do otrzymywania H₂ z metali?
+? Dlaczego HNO₃ zwykle nie służy do otrzymywania H₂ z metali?
 - bo jest za słaby
 + bo jest kwasem utleniającym i daje tlenki azotu
 - bo zawiera tlen
 - bo nie zawiera wodoru
-! Z HNO₃ metal daje tlenki azotu zamiast wodoru.
+! Typowo z HNO₃ metal nie daje wodoru (kwas działa utleniająco); bardzo rozcieńczony HNO₃ z Mg może wydzielać H₂, często z domieszką tlenków azotu.
 :::
 
 ## Ciekawostki

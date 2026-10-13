@@ -6,17 +6,22 @@ opis: Grupy 1, 2 i 13–18 do Z = 36 · cztery szkielety konfiguracji · jony je
 kicker: LKO-Z36 · SUPLEMENT KONKURSOWY · SZKIC
 lead: Po lekcji F07 i F08 umiesz zapisać konfigurację atomów do Z = 20. Konkurs kuratoryjny (etap I) wymaga tego samego do Z = 36 dla grup 1, 2 i 13–18, a także konfiguracji jonów i wzoru związku wyprowadzonego z konfiguracji. Ta lekcja domyka tę lukę bez wchodzenia w podpowłoki s, p, d.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:OLIMP (LKO)]]
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone"
 stopka: **CHEMIA LKO-Z36 · szkic 2026-10-13 · suplement do sesji 2 Sprintu A**
 wymaga: F04 (atom, Z, A) · F06 (układ okresowy: okres, grupa) · F07 (powłoki, zapis skrócony) · F08 (konfiguracja a układ)
 ---
+::: karta understand | Zasady tego zestawu — co jest autorskie
+Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.
+:::
+
 
 ::: minimum | Muszę umieć na konkursie LKO, etap I — 10 punktów
 1. **Kamienie milowe gazów szlachetnych:** He 2 · Ne 10 · Ar 18 · Kr 36 elektronów. Pierwiastek o Z od 19 do 36 leży w 4. okresie.
 2. **Cztery szkielety konfiguracji** dla grup 1, 2 i 13–18 do Z = 36: [2,x] · [2,8,x] · [2,8,8,x] (tylko grupy 1–2) · [2,8,18,x] (grupy 13–18). Ostatnia liczba x to liczba elektronów walencyjnych.
 3. **Elektrony walencyjne:** grupy 1 i 2 — numer grupy (1 lub 2); grupy 13–18 — numer grupy minus 10 (Al: 3, S: 6, Br: 7).
 4. **Liczba powłok = numer okresu.** Powłoka M mieści do 18 elektronów w tym zakresie, a nie do 8.
-5. **Jon jednoatomowy** grup 1, 2, 13, 15, 16, 17 osiąga konfigurację najbliższego gazu szlachetnego: grupa 1 → 1+, grupa 2 → 2+, grupa 13 → 3+, grupa 15 → 3−, grupa 16 → 2−, grupa 17 → 1−.
+5. **Jon jednoatomowy** grup 1, 2, 13, 15, 16, 17 zwykle osiąga konfigurację najbliższego gazu szlachetnego (reguła dubletu i oktetu pomaga przewidywać wiele prostych jonów, ale nie obejmuje wszystkich — jeśli ładunek podano w zadaniu, oblicz liczbę elektronów z ładunku): grupa 1 → 1+, grupa 2 → 2+, grupa 13 → 3+, grupa 15 → 3−, grupa 16 → 2−, grupa 17 → 1−.
 6. Grupy 14 i 18 nie tworzą prostych jonów w zakresie szkolnym (14: wiązania kowalencyjne; 18: powłoki pełne).
 7. **Izoelektronowość:** jony i atomy o tej samej liczbie elektronów mają tę samą konfigurację. Trzy rodziny do zapamiętania: Ne (2,8), Ar (2,8,8), Kr (2,8,18,8).
 8. **Ga³⁺ = 2,8,18** — jedyny jon w zakresie, którego konfiguracja nie jest konfiguracją gazu szlachetnego.
@@ -39,7 +44,7 @@ Pojęcia z F04–F08 są znane. Tu pojawiają się nowe skróty i nazwy, które 
 - **Szkielet** — zapis konfiguracji w postaci liczb na powłokach, w którym ostatnią liczbę zastępujemy literą x, bo zależy od grupy. Np. [2,8,x] to szkielet trzeciego okresu.
 - **Kation** — jon dodatni, powstały przez oddanie elektronów (np. Na⁺, Ca²⁺, Ga³⁺). Oznaczenie **⁺** lub **²⁺** itd. mówi, ile elektronów oddano.
 - **Anion** — jon ujemny, powstały przez przyjęcie elektronów (np. Cl⁻, S²⁻, As³⁻). Ładunek ⁻ mówi, ile elektronów przyjęto.
-- **Jon jednoatomowy** — jon złożony z jednego pierwiastka (np. Cl⁻, Ga³⁺), w przeciwieństwie do jonu wieloatomowego (np. SO₄²⁻), który w tym zakresie nie występuje.
+- **Jon jednoatomowy** — pojedynczy atom mający ładunek (np. Cl⁻, Ga³⁺). Jon wieloatomowy zawiera więcej niż jeden atom (np. SO₄²⁻), niezależnie od tego, ilu pierwiastków są to atomy; w tym zakresie nie występuje.
 - **Gaz szlachetny** — pierwiastek 18. grupy (He, Ne, Ar, Kr…), którego powłoka zewnętrzna jest pełna. Jony dążą do jego konfiguracji.
 - **Izoelektronowy** — o tej samej liczbie elektronów (i tej samej konfiguracji). Np. Ne, F⁻, Na⁺ — wszystkie mają po 10 elektronów.
 - **Zapis skrócony** — konfiguracja z gazem szlachetnym w nawiasie, np. [Ar] 4s¹ dla K. Zapis pełny: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹.
@@ -129,10 +134,10 @@ Ca 2,8,8,2 → (Z = 21–30, poza zakresem) → Ga 2,8,**18**,3
 
 Dla omawianych grup reguła jest więc czysta, bez wyjątków. Wyjątki konfiguracyjne istnieją w bloku d (Cr, Cu), ale to pierwiastki grup 6 i 11: poza zakresem i poza tym suplementem.
 
-**Dlaczego 4s przed 3d?** Podpowłoka 4s ma niższą energię niż 3d, więc po K i Ca elektrony wchodzą najpierw na 4s. To nie „przypadek" — zjawisko ekranowania: elektrony wewnętrzne osłaniają jądro, a orbital s ma część bliżej jądra. Przy Ga tę samą powłokę M zapełniają już dziesięć elektronów 3d, a 4s i 4p zapełniają się na zewnątrz.
+**Dlaczego 4s przed 3d?** W szkolnej kolejności budowania konfiguracji neutralnych K i Ca obsadza się 4s przed 3d. Kolejność energetyczna zależy jednak od pierwiastka i stanu jonizacji; nie przenoś jej automatycznie na wszystkie jony. To nie „przypadek" — zjawisko ekranowania: elektrony wewnętrzne osłaniają jądro, a orbital s ma część bliżej jądra. Przy Ga tę samą powłokę M zapełniają już dziesięć elektronów 3d, a 4s i 4p zapełniają się na zewnątrz.
 
 ::: karta understand | W skrócie — co zrobić, gdy pada pytanie „dlaczego 18?"
-Odpowiedz w dwóch zdaniach: „Bo po wapniu zapełnia się podpowłoka 3d, która też należy do powłoki M. Dopiero gdy M ma 18, elektrony wchodzą na N." Nie trzeba wchodzić w podpowłoki, żeby to było poprawne.
+Odpowiedz w dwóch zdaniach: „Bo po wapniu zapełnia się podpowłoka 3d, która też należy do powłoki M. Powłoka N jest już obsadzona u K i Ca, bo 4s należy do N; po Ca przybywa elektronów 3d należących do M, a u Ga zaczyna się obsadzanie 4p, również należącego do N." Nie trzeba wchodzić w podpowłoki, żeby to było poprawne.
 :::
 
 ### 1.4 Procedura 30-sekundowa
@@ -406,14 +411,14 @@ Uwaga: w pierwszej wersji tego zadania stało „Br⁻" zamiast „Br (atom)" �
 
 ::: karta exam | E. Otwarte krótkie (6 pkt)
 E1. Podaj konfigurację atomu arsenu (Z = 33) oraz jonu As³⁻.
-E2. Pierwiastek X ma elektrony na trzech powłokach, a ostatnia jest pełna. Podaj Z, nazwę i konfigurację.
+E2. Obojętny atom X należy do 3. okresu i ma konfigurację walencyjną 3s²3p⁶. Podaj nazwę i Z.
 E3. Kation jednowartościowy X⁺ ma konfigurację 2,8,8. Podaj Z i nazwę pierwiastka oraz konfigurację jego atomu.
 E4. Anion dwuujemny Y²⁻ ma 18 elektronów. Podaj Z, symbol jonu i jego nazwę.
 E5. Ułóż wzór związku utworzonego przez jony z E3 i E4 oraz podaj jego nazwę.
 E6. Wykorzystując konfigurację neonu, wyjaśnij, dlaczego neon nie tworzy jonów.
 
 ::: odp | Klucz — E
-E1: As 2,8,18,5; As³⁻ 2,8,18,8 (izoelektronowy z Kr). E2: Z = 18, argon, 2,8,8 (powłoka M pełna, 8 elektronów). E3: Z = 19, potas; atom 2,8,8,1. E4: Z = 16, jon S²⁻, anion siarczkowy (siarczek). E5: K₂S, siarczek potasu. E6: Ne ma 2,8 — powłoki pełne. Oddanie lub przyjęcie elektronu nie daje stabilniejszej konfiguracji, bo neon już spełnia regułę oktetu (2s² 2p⁶).
+E1: As 2,8,18,5; As³⁻ 2,8,18,8 (izoelektronowy z Kr). E2: Z = 18, argon, 2,8,8 (oktet walencyjny 3s²3p⁶ — nie maksymalne obsadzenie całej M, która ma pojemność 18). E3: Z = 19, potas; atom 2,8,8,1. E4: Z = 16, jon S²⁻, anion siarczkowy (siarczek). E5: K₂S, siarczek potasu. E6: Ne ma 2,8 — powłoki pełne. Oddanie lub przyjęcie elektronu nie daje stabilniejszej konfiguracji, bo neon już spełnia regułę oktetu (2s² 2p⁶).
 :::
 :::
 
@@ -430,7 +435,7 @@ F3 (zadanie transferowe): **fałsz.** Ga³⁺ ma 2,8,18 (28 e⁻). Ar ma 18 e⁻
 :::
 
 ::: adv | G. Ambitne — Fe²⁺ i Mn²⁺ (4 pkt) | poziom ambitny
-Podaj konfigurację elektronową jonów Fe²⁺ (Z = 26) i Mn²⁺ (Z = 25). Ile elektronów niesparowanych ma każdy z nich? Który jon ma więcej?
+Podaj konfigurację elektronową jonów Fe²⁺ (Z = 26) i Mn²⁺ (Z = 25) jako wolnych jonów. Ile elektronów niesparowanych ma każdy z nich (reguła Hunda)? Który jon ma więcej?
 :::
 
 ::: odp | Pokaż klucz
@@ -527,6 +532,15 @@ Model powłokowy jest **modelem**, nie dokładnym obrazem atomu (por. F01: model
 :::
 
 ## 11 | Fiszki {#fiszki}
+
+::: karta understand | Pojemność, obsadzenie, oktet — trzy różne pojęcia
+- pojemność — ile elektronów maksymalnie może pomieścić powłoka;
+- obsadzenie — ile elektronów rzeczywiście znajduje się na niej w danym atomie lub jonie;
+- oktet — osiem elektronów w konfiguracji walencyjnej typu ns²np⁶.
+Dla Ar powłoka M ma 8 elektronów, choć jej pojemność wynosi 18. Nie ma tu sprzeczności.
+Jon Cl⁻ naśladuje konfigurację argonu, bo ma tyle samo elektronów (18) i tę samą liczbę na każdej powłoce. Ga³⁺ nie jest izoelektronowy z argonem tylko dlatego, że ma pełną powłokę M — izoelektronowość wymaga tej samej liczby elektronów.
+Zadania z Fe²⁺ i Mn²⁺ dotyczą wolnych jonów, zgodnie z regułą Hunda, a nie dowolnych kompleksów metali.
+:::
 
 ::: fiszki
 Ile elektronów ma powłoka M w tym zakresie? | 18 (po dopełnieniu bloku d) | basic:podstawa

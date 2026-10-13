@@ -189,3 +189,5 @@
 - 2026-10-13: III etap (organika) — seria zamknięta: LKO_ORG07_cukry i LKO_ORG08_mol_gazy z załącznika (A1): pełna struktura (minimum, warstwy, wykład, dosw, exam 1–4, adv 5–6, fiszki 15, test 5, słownik, mini-wykłady, ciekawostki 3); poprawki: ogrodzenia, brakujący `::: test`, etykiety mini, błąd „octan metylu” (C₂H₄O₂ to mrówczan metylu), niepodzielne dane w exam 3 ORG08 (poprawiono na 85,7% C / 14,3% H → C₃H₆), nieścisła wartość wrzenia/rachunku w adv 6f, notatka redakcyjna usunięta; stan „pełna struktura, bez audytu W1”. Build OK. Do weryfikacji: daty mola (Ostwald, Karlsruhe), liczba Loschmidta, cząsteczki w kropli, M(Br₂).
 
 - 2026-10-13: N01 Powietrze i gazy, REV01 Powtórka klasy 7 — przegląd szkiców: struktura kompletna (wykład, mini, ciekawostki, zadania exam/adv, test, fiszki, słownik); stan → „pełna struktura, bez audytu W1”.
+
+- 2026-10-13: W1 (Perplexity) na 10 lekcji LKO (A1, B1+B2, DIAG, STECH, DOSW, KRZYWE, METALE, SYM-A2, Z36, PUŁAPKI-WAPNO) — wszystkie uwagi wprowadzone, stan „W1 FULL”; surowa odpowiedź w chemia/plany/audyty/, wiersze w WERYFIKACJA.md.
