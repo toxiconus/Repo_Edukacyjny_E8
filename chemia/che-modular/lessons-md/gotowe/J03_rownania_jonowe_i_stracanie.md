@@ -161,7 +161,7 @@ a) (3 pkt po 1 pkt za każdy poziom) Cząsteczkowo: 2KOH + H₂SO₄ → K₂SO�
 :::
 
 ::: karta exam | Zadanie 2 (3 pkt) — Strącanie siarczanu(VI) baru na trzech poziomach
-Zapisz równania cząsteczkowe, pełne jonowe i skrócone reakcji:
+Zapisz równania strąceniowe na trzech poziomach zapisu (cząsteczkowo, jonowo pełne, jonowo skrócone):
 a) chlorek baru + siarczan(VI) sodu (3 pkt)
 
 ::: odp | Pokaż klucz

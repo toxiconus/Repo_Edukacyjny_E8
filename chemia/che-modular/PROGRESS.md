@@ -193,3 +193,4 @@
 - 2026-10-13: W1 (Perplexity) na 10 lekcji LKO (A1, B1+B2, DIAG, STECH, DOSW, KRZYWE, METALE, SYM-A2, Z36, PUŁAPKI-WAPNO) — wszystkie uwagi wprowadzone, stan „W1 FULL”; surowa odpowiedź w chemia/plany/audyty/, wiersze w WERYFIKACJA.md.
 
 - 2026-10-13: N01_tlenki.md przepisana od nowa (v7.0): widgety HTML zastąpione modelami z katalogu (n01-*, periodic-54, molecule3d-merged, chain-scn), quizy → ::: test, fiszki/słownik w dialekcie; build OK, limity bez ❌.
+- 2026-10-13: N02 — dodany test (6 pytań, wodorotlenki); J03 — usunięte powtórzenie polecenia w zadaniu 2 (powt=0).

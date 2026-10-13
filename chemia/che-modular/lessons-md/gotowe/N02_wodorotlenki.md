@@ -1514,6 +1514,46 @@ Barwa Cu(OH)₂ | **Niebieska (galaretowaty osad)** | basic:podstawa
 Wapno palone, gaszone | **Palone = CaO; gaszone = Ca(OH)₂** | exam:E8
 :::
 
+## 20a | Sprawdź się: test {#test .section}
+
+::: test
+? Wzór wodorotlenku potasu to…
++ KOH
+- K(OH)₂
+- KH₂O
+- K₂OH
+
+? Który wodorotlenek dobrze rozpuszcza się w wodzie?
++ NaOH
+- Cu(OH)₂
+- Fe(OH)₃
+- Al(OH)₃
+
+? Fenoloftaleina w roztworze NaOH przyjmuje barwę…
++ malinową
+- niebieską
+- bezbarwną
+- żółtą
+
+? Dysocjacja elektrolityczna NaOH przebiega zgodnie z równaniem…
++ NaOH → Na⁺ + OH⁻
+- NaOH → Na⁺ + O²⁻ + H⁺
+- NaOH → Na⁺OH⁻⁻
+- NaOH → Na + OH
+
+? W wyniku reakcji tlenku wapnia z wodą powstaje…
++ wodorotlenek wapnia (wapno gaszone)
+- węglan wapnia
+- metaliczny wapń i wodór
+- kwas węglowy
+
+? Sód reaguje z wodą, dając…
++ NaOH i H₂
+- NaOH i O₂
+- Na₂O i H₂
+- NaH i H₂O₂
+:::
+
 ## 21 | Mapa pojęć {#mapa .section}
 
 ::: div.card.map-card
