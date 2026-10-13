@@ -517,6 +517,13 @@ Rozpuszczanie :: proces przechodzenia substancji ze stanu stałego do roztworu.
 - Ksp zależy od stężenia jonów w dowolnym momencie
 - Ksp nie zależy od rodzaju substancji
 ! Ksp jest stałą równowagi charakterystyczną dla substancji w danej temperaturze.
+? Co robi efekt wspólnego jonu w równowadze rozpuszczania?
++ zmniejsza rozpuszczalność soli
+- zwiększa rozpuszczalność soli
+- nie zmienia rozpuszczalności soli
+- zmienia wartość Ksp
+! Dodanie wspólnego jonu przesuwa równowagę w stronę osadu.
+
 :::
 
 ## 7a | Fiszki {#fiszki}

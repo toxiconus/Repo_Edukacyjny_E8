@@ -618,13 +618,6 @@ Różnica temperatur ΔT :: różnica między temperaturą końcową a początko
 - tylko topnienie lodu
 - wyłącznie ciepło właściwe lodu
 ! Lód najpierw stopnieje, a następnie powstała woda może się ogrzać do temperatury końcowej.
-
-? Co robi efekt wspólnego jonu w równowadze rozpuszczania?
-+ zmniejsza rozpuszczalność soli
-- zwiększa rozpuszczalność soli
-- nie zmienia rozpuszczalności soli
-- zmienia wartość Ksp
-! Dodanie wspólnego jonu przesuwa równowagę w stronę osadu.
 :::
 
 ## 9a | Test uzupełniający {#test-uzupelniajacy}
@@ -731,5 +724,5 @@ Różnica temperatur ΔT :: różnica między temperaturą końcową a początko
 - Ściąga wzorów (§1a), karta „Dlaczego naczynie jest izolowane” (§4), ćwiczenia (§6a), fiszki (6, §7a), test uzupełniający (5 pytań, §9a).
 
 **Nieprzyjęte / do decyzji autora:**
-- Pytanie testowe „Co robi efekt wspólnego jonu…” nie dotyczy K03 (to temat J10). Zostawiłem je w teście, ale proponuję przenieść je do J10.
+- Pytanie testowe „Co robi efekt wspólnego jonu…” nie dotyczy K03; przeniesiono je do testu J10.
 - Stary wykład „Dlaczego temperatura stoi” (§11) zastąpiony wykładem §1; treść dotycząca stałej temperatury przemiany jest w nowym wykładzie.
