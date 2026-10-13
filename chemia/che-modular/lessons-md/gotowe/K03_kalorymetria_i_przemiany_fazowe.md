@@ -453,7 +453,7 @@ c) (1 pkt) Na odcinkach 2 i 4 dostarczane ciepło zużywa się na przemianę faz
 
 „Parowanie wymaga mniej energii niż topnienie.” || Dla tej samej masy wody parowanie wymaga znacznie więcej energii niż topnienie.
 
-„Lód zawsze obniża temperaturę wody do 0 °C.” | Jeżeli wody jest dużo i jest ciepła, lód może stopnieć całkowicie, a temperatura końcowa będzie wyższa od 0 °C. | Wynik zależy od mas, temperatur i ciepła przemiany.
+„Lód zawsze obniża temperaturę wody do 0 °C.” || Jeżeli wody jest dużo i jest ciepła, lód może stopnieć całkowicie, a temperatura końcowa będzie wyższa od 0 °C. Wynik zależy od mas, temperatur i ciepła przemiany.
 
 „Kalorymetr eliminuje wszystkie straty ciepła.” || Kalorymetr ogranicza straty, ale nie eliminuje ich całkowicie.
 
@@ -725,4 +725,5 @@ Różnica temperatur ΔT :: różnica między temperaturą końcową a początko
 
 **Nieprzyjęte / do decyzji autora:**
 - Pytanie testowe „Co robi efekt wspólnego jonu…” nie dotyczy K03; przeniesiono je do testu J10.
+- Poprawiono format mitu „Lód zawsze obniża temperaturę…” (pytanie || odpowiedź).
 - Stary wykład „Dlaczego temperatura stoi” (§11) zastąpiony wykładem §1; treść dotycząca stałej temperatury przemiany jest w nowym wykładzie.
