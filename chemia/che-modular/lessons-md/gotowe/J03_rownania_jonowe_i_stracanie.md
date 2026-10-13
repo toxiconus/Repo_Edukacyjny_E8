@@ -240,6 +240,9 @@ Z jednej jednostki wzoru BaCl₂ wynikają jeden jon Ba²⁺ i dwa jony Cl⁻. Z
 
 Jon SO₄²⁻ pozostaje całą grupą. Nie rozbijamy go na atom siarki i atomy tlenu. Dysocjacja soli oddziela kation od anionu, nie niszczy w tym zapisie anionu wieloatomowego.
 
+@model rownania-jonowe-v01 | Równania jonowe — cząsteczkowe, jonowe pełne i skrócone dla reakcji z silnika | Zapis trzech poziomów, jony obserwatorowe, bilans atomów i ładunków · CHE.IONIC
+@opis Model równań jonowych: dla wybranej reakcji (np. AgNO₃ + NaCl, BaCl₂ + Na₂SO₄, zobojętnianie NaOH + HCl) pokazuje trzy poziomy zapisu obok siebie. Jony obserwatorowe są wyróżnione kolorem, a osad oznaczony ↓. Wniosek: po skreśleniu obserwatorów zostaje sama przemiana, np. Ag⁺ + Cl⁻ → AgCl↓.
+
 ::: karta core | Najważniejsze — trójkrok w jednym oddechu
 Zbilansuj równanie cząsteczkowe → rozpisz mocne elektrolity obecne w roztworze → usuń jony obserwatorowe i sprawdź atomy oraz ładunki.
 
@@ -328,6 +331,9 @@ NaCl → Na⁺ + Cl⁻ opisuje otrzymywanie roztworu zawierającego te jony. Ag�
 | Woda | H₂O | Produkt zobojętniania |
 | Osad | Wzór substancji z oznaczeniem ↓ | AgCl↓, BaSO₄↓, Cu(OH)₂↓ |
 | Gaz | Wzór substancji z oznaczeniem ↑ | CO₂↑, H₂↑ |
+
+@model ion-vs-diss | Jonizacja vs dysocjacja — różnica między rozpadem soli a powstawaniem jonów z cząsteczki kwasu | CHE.IONIC
+@opis Porównanie dwóch procesów: w krysztale NaCl jony Na⁺ i Cl⁻ są już obecne i po rozpuszczeniu zostają oddzielone przez cząsteczki wody; w cząsteczce HCl jony powstają dopiero w reakcji z wodą (H₃O⁺ + Cl⁻). Wniosek: sól jest dysocjowana, a kwas ulega jonizacji.
 
 Mocny elektrolit przedstawiamy w szkolnym modelu rozcieńczonego roztworu jako całkowicie lub niemal całkowicie zdysocjowany. Przykłady to HCl, HNO₃, NaOH, KOH, rozpuszczony Ba(OH)₂ oraz typowe rozpuszczalne sole.
 
@@ -462,6 +468,9 @@ Przykład: K₂CO₃. Węglany większości metali mają małą rozpuszczalnoś�
 Przykład: Fe(OH)₃. Nie jest wodorotlenkiem litowca ani jednym z bardziej rozpuszczalnych wodorotlenków berylowców. W szkolnej tabeli jest nierozpuszczalny. Po dodaniu OH⁻ do odpowiedniego roztworu Fe³⁺ powstaje brunatny osad:
 
 Fe³⁺ + 3OH⁻ → Fe(OH)₃↓
+
+@model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności (20 °C) — kliknij parę kation–anion | Wzór soli, oznaczenie R / T / N i barwa osadu · CHE.DATA.SOLUBILITY_TABLE
+@opis Tabela rozpuszczalności: wiersze to kationy, kolumny aniony. Każda komórka ma oznaczenie R (dobrze rozpuszczalna), T (trudno rozpuszczalna) lub N (praktycznie nierozpuszczalna) i po kliknięciu podaje wzór i nazwę soli oraz barwę osadu, jeśli występuje. Wniosek: przed zapisaniem równania strąceniowego sprawdź komórkę dla pary jonów.
 
 ::: karta understand | W skrócie — tabela rozpuszczalności
 Tabela mówi, ile substancji może pozostać rozpuszczone w określonych warunkach. Reguły pomagają szybko odszukać właściwy przypadek: najpierw rodzina związku, potem wyjątek. Najpewniejsze szkolne skróty dotyczą typowych azotanów(V) i soli Na⁺, K⁺ oraz NH₄⁺. CaSO₄, PbCl₂ i Ca(OH)₂ wymagają szczególnej uwagi, ponieważ „trudno rozpuszczalny” nie znaczy „zupełnie nierozpuszczalny”.
