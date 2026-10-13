@@ -7,6 +7,7 @@ kicker: F04 · FUNDAMENTY · MASTER v1.1
 lead: Pierwsza lekcja fazy B — „z czego to wynika?”. Schodzimy z poziomu substancji do atomu: z jakich cząstek się składa,
 lead: która liczba definiuje pierwiastek i jak z zapisu nuklidu bez zgadywania policzyć protony, neutrony i elektrony — w atomie i w jonie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F04 v1.0 MASTER** · Atom · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 12 punktów
@@ -294,7 +295,7 @@ Zanim zapiszesz odpowiedź, zadaj trzy pytania. **1) Czy protony zgadzają się 
 
 ## 9 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa
+::: karta exam | A. Podstawa (4 pkt)
 1. Podaj liczbę p⁺, n⁰, e⁻ dla: ¹⁶O, ²⁴Mg, ⁴⁰Ar (Z: O 8, Mg 12, Ar 18).
 2. Ile elektronów mają jony: Na⁺, Cl⁻, Mg²⁺, O²⁻?
 3. Uzupełnij: atom obojętny ma tyle elektronów co …; kation … elektrony; anion … elektrony.
@@ -308,7 +309,7 @@ Zanim zapiszesz odpowiedź, zadaj trzy pytania. **1) Czy protony zgadzają się 
 :::
 :::
 
-::: karta understand | B. Trening
+::: karta exam | B. Trening (4 pkt)
 1. Atom ma Z = 17 i A = 35. Podaj p⁺, n⁰, e⁻. Ile elektronów ma jego anion z ładunkiem −1?
 2. Jon ma 12 protonów i 10 elektronów. Jaki ma ładunek i jaki to pierwiastek?
 3. Dla ²⁷₁₃Al³⁺ wyznacz p, n, e.
@@ -354,7 +355,7 @@ Twierdzenie jest fałszywe. Dowód: Na⁺ ma nadal 11 protonów (Z = 11). Wyjaś
 :::
 :::
 
-::: karta basic | F. Utrwalenie — p, n, e
+::: karta exam | F. Utrwalenie — p, n, e (4 pkt)
 1. Oblicz liczbę protonów, neutronów i elektronów w ³⁵₁₇Cl.
 2. Ile elektronów ma jon O²⁻?
 3. Zapisz symbol nuklidu, który ma 13 protonów i 14 neutronów.
