@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """odchudz.py — automatyczne odchudzanie silnika z testem jako wyrocznią (ddmin).
 
-  python3 tools/odchudz.py [--profil wspolny] [--lekcje N02_tlenki,N06_wodorki_stary] [--etap mod,anon,widoki,gfx]
+  python3 tools/odchudz.py [--profil wspolny] [--lekcje N02_tlenki,N06_wodorki] [--etap mod,anon,widoki,gfx]
   python3 tools/odchudz.py --profil F04_atom --lekcje F04_atom --start wspolny --etap mod,pod,anon,widoki   # profil jednej lekcji
 
 Dla każdej grupy kandydatów: zbuduj che-viz.js bez niej → test_lekcje.cjs na lekcjach profilu.

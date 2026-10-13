@@ -670,7 +670,7 @@ bylo: "N05"
 - charakter chemiczny w układzie okresowym
 - amoniak, chlorowodór, siarkowodór
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N06_wodorki_stary.md` (62 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N06.wodorki.md` (1 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N06_wodorki.md` (41 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N06.wodorki.md` (1 KB)
 
 #### N07 — Systematyka nieorganiczna
 

@@ -64,8 +64,10 @@ a{color:#0a58ca}.brak{color:#b00}
 footer{margin-top:16px;color:#666;font-size:12px}"""
 
 def pakiet(out, tytul, nazwy, dzis):
-    (out / "md").mkdir(parents=True, exist_ok=True)
-    (out / "html").mkdir(parents=True, exist_ok=True)
+    for sub in ("md", "html"):
+        if (out / sub).exists():
+            shutil.rmtree(out / sub)
+        (out / sub).mkdir(parents=True)
     wiersze = []
     braki = []
     for n in nazwy:

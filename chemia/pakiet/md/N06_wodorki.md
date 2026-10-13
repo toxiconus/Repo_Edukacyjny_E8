@@ -725,3 +725,17 @@ Synteza amoniaku z pierwiastków (N₂ + 3H₂ ⇌ 2NH₃) wymaga wysokiego ciś
 ::: karta extra | Kwas w żołądku
 Sok żołądkowy zawiera kwas solny (HCl), a jego pH wynosi ok. 1–2. To kwas mocny, więc stale dysocjuje na H⁺ i Cl⁻ — dlatego kwaśność żołądka jest tak wysoka, a leki zobojętniające zawierają zasady.
 :::
+
+## Przeniesienie z N06_wodorki_stary — 2026-10-13
+
+Wersja z 2026-10-09 (GPT-6, W10) przeniesiona do `lessons-md/archiwum/N06_wodorki_stary.md` (nic nie usunięto). Ta lekcja zostaje jako jedyna N06, bo ma zakres LKO etap II i aktualną strukturę.
+
+Do przeniesienia z archiwum (zakres E8/LO, jeszcze nie w tej lekcji):
+- §10 Bezpieczeństwo (BHP) wodorków;
+- §11 Trendy: kwasowość i zasadowość wodorków;
+- §12 Wodorki jonowe: zasady, reduktory, dowód na H⁻;
+- §13 Wodorki metaliczne, synteza amoniaku i metoda Ostwalda;
+- §14 Doświadczenia z wodorkami;
+- §19 Karta szybkiego powtórzenia i mapa myśli; §A Mosty i co dalej;
+- pozostałe pytania testowe (archiwum ma 14, ta lekcja 5) i fiszki (archiwum 26, ta lekcja 10).
+
