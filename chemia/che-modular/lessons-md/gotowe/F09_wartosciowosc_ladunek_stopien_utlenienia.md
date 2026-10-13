@@ -6,7 +6,7 @@ opis: Trzy różne liczby, które łatwo pomylić · ładunek jonu · wartościo
 kicker: F09 · FUNDAMENTY · NOWA WERSJA
 lead: „Ile wiązań tworzy atom?”, „jaki ma ładunek?”, „jaki ma stopień utlenienia?” — w szkole te trzy pytania często są mieszane. Ta lekcja rozdziela je i pokazuje, kiedy która liczba jest właściwa.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F09 v1.0** · Wartościowość, ładunek, stopień utlenienia · 2026
 ---
 
@@ -147,6 +147,14 @@ H: 2 × (+I) = +II. O: 4 × (−II) = −VIII. Suma 0: +II + x − VIII = 0 → 
 
 ::: odp | Przykład — SO₂ i H₂O₂
 SO₂: O: 2 × (−II) = −IV → S = +IV. H₂O₂: H: 2 × (+I) = +II; suma 0 → 2 × O = −II → każdy O ma −I (nadtlenek).
+:::
+
+::: adv | E. Ambitne — stopnie utlenienia w nadmanganianie i dichromianie (4 pkt) | poziom ambitny
+Oblicz stopień utlenienia Mn w KMnO₄ oraz Cr w K₂Cr₂O₇ (O: −II, K: +I).
+:::
+
+::: odp | Pokaż klucz
+KMnO₄: K (+1) + Mn + 4·(−2) = 0 → Mn = +7 (2 pkt). K₂Cr₂O₇: 2·(+1) + 2·Cr + 7·(−2) = 0 → 2Cr = +12 → Cr = +6 (2 pkt).
 :::
 
 ## 5 | Wykład — dlaczego stopień utlenienia jest „umowny” [[understand:ROZUMIENIE]] {#umowny}

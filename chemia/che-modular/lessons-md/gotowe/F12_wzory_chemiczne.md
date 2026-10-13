@@ -6,7 +6,7 @@ opis: Wzór sumaryczny, rzeczywisty, empiryczny i strukturalny · zapis wzorów 
 kicker: F12 · FUNDAMENTY · NOWA WERSJA
 lead: Wzór chemiczny to zapis języka, którym chemicy mówią o substancjach. Potrafisz go przeczytać i zbudować? Umiesz policzyć, ile masy pierwiastka jest w związku? Ta lekcja uczy obu rzeczy — i pokazuje, że z samych procentów da się odtworzyć wzór.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F12 v1.0** · Wzory chemiczne · 2026
 ---
 
@@ -143,6 +143,14 @@ Ca(OH)₂: w nawiasie są dwa atomy O i dwa H — łącznie: 40 + 2·(16 + 1) = 
 
 ::: karta understand | Dlaczego suma ma wynosić 100%
 Wszystkie masy pierwiastków w cząsteczce dodane razem dają masę cząsteczki. Dlatego suma procentów jest równa 100%. Gdy suma wychodzi inna, to znak błędu w obliczeniach (zaokrąglenia dopuszczalne do ±0,1%).
+:::
+
+::: adv | E. Ambitne — wzór empiryczny z procentów (4 pkt) | poziom ambitny
+Związek zawiera 40% C, 6,7% H i 53,3% O (masy molowe: C 12, H 1, O 16). Ustal wzór empiryczny.
+:::
+
+::: odp | Pokaż klucz
+Dzielimy procenty przez masy: C 40/12 = 3,33; H 6,7/1 = 6,7; O 53,3/16 = 3,33 (2 pkt). Dzielimy przez 3,33: C : H : O = 1 : 2 : 1 → wzór empiryczny **CH₂O** (2 pkt).
 :::
 
 ## 5 | Wzór empiryczny z procentów [[understand:ROZUMIENIE]] {#empiryczny}

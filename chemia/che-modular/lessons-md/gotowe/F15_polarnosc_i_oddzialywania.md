@@ -6,7 +6,7 @@ opis: Polarność wiązania i cząsteczki · wektory dipoli i symetria · siły 
 kicker: F15 · FUNDAMENTY · NOWA WERSJA
 lead: Dlaczego woda wrze w 100 °C, a siarkowodór w −60 °C, choć oba mają podobny wzór? Dlaczego sól rozpuszcza się w wodzie, a tłuszcz nie? Odpowiedź leży w tym, jak cząsteczki są spolaryzowane i jak się do siebie przyciągają.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F15 v1.0** · Polarność i oddziaływania · 2026
 ---
 
@@ -153,6 +153,14 @@ Cl₂ ma silne wiązanie kowalencyjne, a wrze w −34 °C. Temperatura wrzenia m
 
 ::: karta understand | Dlaczego woda rozpuszcza sól
 Cząsteczki wody są polarne: strona tlenowa jest δ⁻, wodorowa δ⁺. Jony Na⁺ przyciągają ujemne końce wody, a jony Cl⁻ dodatnie. Jony są otoczone przez cząsteczki wody (hydratacja) i przechodzą do roztworu. Tłuszcz nie ma ładunku, więc woda go nie przyciąga.
+:::
+
+::: adv | E. Ambitne — etanol a heksan wobec wody (4 pkt) | poziom ambitny
+Wyjaśnij, dlaczego etanol (C₂H₅OH) miesza się z wodą w każdej proporcji, a heksan (C₆H₁₄) nie miesza się z nią.
+:::
+
+::: odp | Pokaż klucz
+Etanol: grupa –OH tworzy wiązania wodorowe z wodą, więc cząsteczki się wiążą (2 pkt). Heksan: niepolarny, oddziaływania van der Waals są za słabe, by przezwyciężyć wiązania wodorowe wody — zasada „podobne rozpuszcza podobne” (2 pkt).
 :::
 
 ## 5 | Wykład — dlaczego siły między cząsteczkami mają znaczenie [[understand:ROZUMIENIE]] {#wykład}

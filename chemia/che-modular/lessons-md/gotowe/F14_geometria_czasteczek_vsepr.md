@@ -6,7 +6,7 @@ opis: Pary elektronowe odpychają się · kształty AX_nE_m: liniowy, trygonalny
 kicker: F14 · FUNDAMENTY · NOWA WERSJA
 lead: Wzór Lewisa mówi, które atomy są połączone. Nie mówi jednak, jak cząsteczka jest ustawiona w przestrzeni. Dlaczego woda jest zgięta, a dwutlenek węgla prosty? Odpowiedź daje model VSEPR: pary elektronów odpychają się i ustawiają jak najdalej od siebie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F14 v1.0** · Geometria cząsteczek (VSEPR) · 2026
 ---
 
@@ -142,6 +142,14 @@ Dlatego: CH₄ (109,5°) → NH₃ (ok. 107°) → H₂O (ok. 104,5°). Każda k
 
 ::: karta warning | Pułapka: nazwa kształtu to atomy
 Uczeń pisze, że H₂O jest „tetraedryczna”, bo ma cztery domeny. Poprawnie: kształt elektronowy tetraedryczny, kształt cząsteczkowy kątowy. Nazwa zawsze pochodzi od rozmieszczenia atomów.
+:::
+
+::: adv | E. Ambitne — SO₂ i CO₂ w modelu VSEPR (4 pkt) | poziom ambitny
+Dla cząsteczek SO₂ i CO₂ podaj liczbę domen elektronowych wokół atomu centralnego, kształt i przybliżony kąt wiązania.
+:::
+
+::: odp | Pokaż klucz
+SO₂: 3 domeny (2 wiązania podwójne liczą się jako po jednej domenie + 1 para wolna na S) (1 pkt); kształt kątowy (1 pkt); kąt ok. 119° — mniej niż 120° z powodu odpychania pary wolnej (1 pkt). CO₂: 2 domeny, kształt liniowy, kąt 180° (1 pkt).
 :::
 
 ## 5 | Wykład — dlaczego pary się odpychają [[understand:ROZUMIENIE]] {#wykład}

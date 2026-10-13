@@ -6,7 +6,7 @@ opis: Trzy typy wiązań · różnica elektroujemności jako klucz · właściwo
 kicker: F11 · FUNDAMENTY · NOWA WERSJA
 lead: F10 pokazała, dlaczego atomy się łączą. Teraz pytamy, **jak** się łączą — i dlaczego ten sam pierwiastek w różnych wiązaniach daje substancje o zupełnie innych właściwościach. Sól kuchenna kruszy się, miedź daje się zwijać w drut, a grafit przewodzi prąd.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F11 v1.0** · Wiązania jonowe, kowalencyjne, metaliczne · 2026
 ---
 
@@ -141,6 +141,14 @@ W metalu przesunięcie warstw kationów nie tworzy odpychania, bo elektrony wią
 
 ::: karta extra | Grafit — wyjątek od tabeli
 Grafit ma sieć kowalencyjną, ale tworzy warstwy. W każdej warstwie elektrony są zdelokalizowane (jak w metalu), więc przewodzi prąd wzdłuż warstw. Diament, w którym każdy atom ma cztery wiązania kowalencyjne, nie przewodzi. To dobry przykład, że ten sam pierwiastek (węgiel) ma różne właściwości w zależności od struktury.
+:::
+
+::: adv | E. Ambitne — typ wiązania z różnicy elektroujemności (4 pkt) | poziom ambitny
+Określ typ wiązania w (a) NaF, (b) HF, (c) Cu. Uzasadnij (a) i (b) różnicą elektroujemności (χ: F 3,98, Na 0,93, H 2,20).
+:::
+
+::: odp | Pokaż klucz
+(a) NaF — jonowe: Δχ ≈ 3,05, bardzo duża różnica (1,5 pkt). (b) HF — kowalencyjne spolaryzowane: Δχ ≈ 1,78 (1,5 pkt). (c) Cu — metaliczne (1 pkt).
 :::
 
 ## 5 | Jak ustalić typ wiązania — różnica elektroujemności [[understand:ROZUMIENIE]] {#roznica}

@@ -6,7 +6,7 @@ opis: Numer okresu z najwyższego n · numer grupy z elektronów walencyjnych ·
 kicker: F08 · FUNDAMENTY · NOWA WERSJA
 lead: F06 nauczyła czytać układ okresowy z pozycji pierwiastka. Ta lekcja działa w odwrotną stronę: znając konfigurację elektronową (F07), **przewidujemy** okres, grupę i blok. To most między budową atomu a tablicą.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F08 v1.0** · Konfiguracja → układ okresowy · 2026
 ---
 
@@ -140,6 +140,14 @@ Selen leży w okresie 4, w grupie 16 (tlenowce) — zgodnie z odczytem.
 
 ::: karta understand | Dlaczego gazy szlachetne są w grupie 18
 Hel ma 2 elektrony (1s²), neon 8 walencyjnych, argon 8 itd. Zapełniona powłoka walencyjna (ns² np⁶) jest bardzo trwała. Dlatego grupa 18 jest „pełna”, a pierwiastki wokół niej dążą do jej konfiguracji (F10).
+:::
+
+::: adv | E. Ambitne — pierwiastek z konfiguracji (4 pkt) | poziom ambitny
+Atom ma konfigurację elektronową [Ar]3d¹⁰4s²4p⁵. Ustal liczbę atomową Z, symbol, okres, grupę i blok.
+:::
+
+::: odp | Pokaż klucz
+Z = 18 + 10 + 2 + 5 = 35 — to **Br** (1 pkt). Okres 4 (najwyższa powłoka to 4). Elektrony walencyjne: 4s²4p⁵ = 7 → grupa 17 (1 pkt). Blok p (ostatni podpoziom p) (1 pkt). Br to niemetal z 17. grupy — fluorowiec (1 pkt).
 :::
 
 ## 5 | Wykład — skąd bierze się cały układ [[understand:ROZUMIENIE]] {#wykład}

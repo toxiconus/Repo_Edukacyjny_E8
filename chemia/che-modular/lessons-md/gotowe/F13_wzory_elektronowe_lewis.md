@@ -6,7 +6,7 @@ opis: Elektrony walencyjne i kropki · wiązania i wolne pary · procedura rysow
 kicker: F13 · FUNDAMENTY · NOWA WERSJA
 lead: Wzór strukturalny pokazuje, które atomy są połączone. Wzór elektronowy (Lewisa) pokazuje też, **gdzie są elektrony** — wiążące i niewiążące. Ten zapis pozwala przewidzieć kształt cząsteczki (F14), jej polarność (F15) i miejsca reakcji.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F13 v1.0** · Wzory elektronowe (Lewisa) · 2026
 ---
 
@@ -148,6 +148,14 @@ Gdy po pojedynczych wiązaniach i wolnych parach atom centralny nie ma oktetu, p
 
 ::: karta understand | Dlaczego wiązanie potrójne jest krótsze
 Więcej wspólnych par między jądrami oznacza silniejsze przyciąganie i mniejszą odległość. To związek z energią wiązania z F10 (N≡N: 945 kJ/mol, krótsze niż N–N).
+:::
+
+::: adv | E. Ambitne — wzór elektronowy metanolu (4 pkt) | poziom ambitny
+Narysuj wzór elektronowy CH₃OH (metanol). Podaj liczbę elektronów walencyjnych w cząsteczce, liczbę wiązań i par wolnych.
+:::
+
+::: odp | Pokaż klucz
+Elektrony walencyjne: C 4 + H 3·1 + O 6 + H 1 = 14 (1 pkt). Wiązania: C–H ×3, C–O, O–H — razem 5 wiązań (10 elektronów) (1 pkt). Pary wolne: 2 pary na atomie O (4 elektrony) — 10 + 4 = 14 ✔ (1 pkt). Wzór kreskowy: H₃C–O–H (1 pkt).
 :::
 
 ## 5 | Jony — NH₄⁺ i ładunek [[understand:ROZUMIENIE]] {#jony}

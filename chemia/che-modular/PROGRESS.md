@@ -173,3 +173,4 @@
 
 - 2026-10-13: R01, R02, R04, R08, R09 — przebudowa zadań na karty exam (podstawowe) + adv (ambitne), sekcja „Klucz i punktacja” scalona w odp; Razem = suma exam (31/30/35/30/33), adv osobno; stan „pełna struktura — bez audytu W1”. Build OK, brak lekcji bez wykładu w tych plikach.
 - 2026-10-13: F18–F21 — exam/adv i stan: F18 (exam 4, adv 3, dodane E/F/G i ciekawostka), F19 (exam 4, adv 2), F20 (exam 4, adv 2, dodany błąd AlO), F21 (exam 16, adv 2 — zadania 1–17 przeniesione na karty exam (2 pkt), 14–15 na adv). Karty extra przeniesione na adv — bez utraty treści (porownaj); dopisane po 1 ciekawostce do F18, F20, F21. Build OK.
+- 2026-10-13: F08, F09, F11–F15 — dopisane drugie zadanie ambitne (adv 2) po C; stan „pełna struktura — 2026-10-13, bez audytu W1”. Klucze sprawdzone rachunkowo (Z=35 dla [Ar]3d¹⁰4s²4p⁵; KMnO₄ Mn +7; K₂Cr₂O₇ Cr +6; CH₂O; CH₃OH 14 e, 5 wiązań; SO₂ ok. 119°; etanol/heksan). Build OK.
