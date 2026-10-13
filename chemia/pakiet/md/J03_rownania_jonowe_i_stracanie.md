@@ -1112,6 +1112,25 @@ H⁺ jest skrótem od H₃O⁺. Słabe elektrolity zapisuje się ze strzałką r
 - Równanie cząsteczkowe ≠ mechanizm reakcji — zapis cząsteczkowy porządkuje substraty i produkty, a mechanizm dotyczy jonów; test rozstrzygający: zapytaj, które jony uczestniczą w przemianie.
 :::
 
+### Neutralizacja jako równanie jonowe {#neutralizacja}
+
+Zobojętnianie to reakcja kwasu z zasadą. Zapiszmy ją trzema sposobami dla HCl i NaOH:
+
+- cząsteczkowo: HCl + NaOH → NaCl + H₂O
+- jonowo pełne: H⁺ + Cl⁻ + Na⁺ + OH⁻ → Na⁺ + Cl⁻ + H₂O
+- jonowo skrócone: H⁺ + OH⁻ → H₂O
+
+Jony Na⁺ i Cl⁻ występują po obu stronach bez zmian — to jony obserwatorowe, więc znikają w zapisie skróconym. Dla każdej pary mocnego kwasu i mocnej zasady skrócony zapis jest ten sam: H⁺ + OH⁻ → H₂O. Szkolnie zapisujemy H⁺ zamiast H₃O⁺; oba zapisy oznaczają to samo, o ile zaznaczysz to w zadaniu.
+
+::: karta core | Typowe błędy w równaniach jonowych
+- rozpisywanie osadu na jony (osad zapisujesz w całości);
+- pozostawianie jonów obserwatorowych w równaniu skróconym;
+- niezachowanie ładunku po obu stronach;
+- użycie H⁺ zamiast H₃O⁺ bez zaznaczenia, że to zapis szkolnie uproszczony;
+- zapisanie reakcji wymiany, mimo że nie powstaje osad, gaz ani słaby elektrolit;
+- pominięcie współczynnika przy jonie wieloatomowym (np. 2 przy SO₄²⁻ w Na₂SO₄).
+:::
+
 ## 12 | Klinika błędów {#klinika} [[basic:E8]] [[understand:ROZUMIENIE]]
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
@@ -1605,3 +1624,10 @@ Równania jonowe i strącanie
 | §6, po tabeli barw | schemat statyczny | probówki z osadami AgCl, Cu(OH)₂, Fe(OH)₂, Fe(OH)₃, PbI₂ i BaSO₄ | Barwa osadu jest wskazówką, a nie dowodem identyfikacji | Rząd probówek z podpisanymi osadami i ich barwami. Przy Fe(OH)₂ strzałka czasu pokazuje ciemnienie na powietrzu. Podpis przypomina, że biały osad może mieć różne źródła. |
 | §8, przy próbie na CO₃²⁻ | doświadczenie wirtualne | węglan + kwas → CO₂ → woda wapienna → CaCO₃↓ | Gaz potwierdza dopiero dodatkowa reakcja z wodą wapienną | Dwie połączone probówki: w pierwszej powstają bąbelki CO₂, w drugiej woda wapienna mętnieje. Obok znajdują się świadki pozytywny i negatywny. |
 | §10, przy zadaniu 15 | animacja „tam i z powrotem” | dwie możliwości: AgCl pozostaje w HNO₃, Ag₂CO₃ rozpuszcza się z ulotem CO₂ | Próba kwasem różnicuje chlorki i węglany | Probówka z białym osadem po dodaniu HNO₃ pokazuje dwie ścieżki: osad pozostaje albo znika z bąbelkami CO₂. Powrót do stanu początkowego umożliwia ponowne porównanie. |
+
+## Przeniesienie z OLI.CHE.J03 — 2026-10-13
+
+Porównanie szkieletu `olimpiada/do_uzupelnienia/OLI.CHE.J03` (przeniesiony do `przeniesione/`) z tą lekcją:
+- tematy 0–8 szkieletu (poziomy zapisu, tabela rozpuszczalności, osady i barwy, otrzymywanie soli, wykrywanie jonów, zadania, błędy, mini-test) — pokryte w tej lekcji;
+- przeniesiono: przykład neutralizacji (trzy zapisy, sekcja 11) i listę typowych błędów (karta w sekcji 12);
+- nie przeniesiono: sekcja „Do uzupełnienia danymi” (pusta, status z 2026-10-09), duplikaty audytów W1 z 2026-10-09 (są już w tej lekcji albo w `chemia/plany/audyty/`).
