@@ -36,3 +36,8 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - LKO-STECH → LKO-METALE — równania z szeregu i syntez jako materiał do obliczeń masowych (APPLY).
 - LKO-STECH → LKO-SYM-A2 — obliczenia z nadmiarem i zespolenie ze stężeniem % (zasilanie).
 - LKO-STECH → R04 — zapowiedź mola: metoda masowa bez mola przechodzi w pełną wersję (zapowiedź).
+- F16 → LKO-DOSW — obserwacja vs wniosek i schemat opisu doświadczenia (EXPAND).
+- LKO-DOSW → LKO-A1 — wzorce zadań doświadczalnych w zestawie A1 (zasilanie).
+- LKO-METALE → LKO-DOSW — HCl vs CuO/Cu i szereg aktywności w matrycach (APPLY).
+- N06 → LKO-DOSW — karty gazów (APPLY).
+- LKO-DOSW → J11 — analiza jakościowa jako zapowiedź (zapowiedź).

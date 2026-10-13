@@ -8,9 +8,9 @@ poziom: "E8 / OLIMP (konkurs kuratoryjny LKO — umiejętności wspólne, obowi�
 wymaga: "F01; F03; F16; N01; N02; N05; N06; LKO-METALE"
 poglebia: "J04; J11 (analiza jakościowa — etap III/LO); LKO-SYM-A2; REV02"
 wlasciciel: "brak nowych właścicieli pojęć — obserwacja/wniosek ma właściciela F01/F16; suplement integruje: jednolity schemat opisu, katalogi obserwacyjne (gazy, osady, płomienie), procedura planowania, analiza cudzego opisu"
-zrodla: "Zakres konkursu chemicznego LKO 2026/27 — umiejętności wspólne (planowanie i analiza opisów doświadczeń; obserwacja vs wniosek; planowanie cykli); formy zadań wg zakresu 2025/26 do potwierdzenia po publikacji"
-opis: "Siedem elementów opisu doświadczenia z kryterium punktowania; reguły języka obserwacji i wniosku; katalog gazów (O₂, CO₂, H₂, para wodna + NH₃, HCl, H₂S), barw osadów, roztworów i płomieni; matryca rozróżniania jednym odczynnikiem; zasada jednej różnicy; analiza cudzego opisu z 5 typami błędów. Zadania A–F3; klucz dla części A–D w przygotowaniu."
-stan: "szkic — 2026-10-13; ODPOWIEDŹ NIEKOMPLETNA (urwana przy F4): brak treści F4, klucza i sekcji błędów typowych — do uzupełnienia; bez audytu W1"
+zrodla: "Zakres konkursu chemicznego LKO 2026/27 — umiejętności wspólne (planowanie i analizowanie opisów doświadczeń; obserwacja vs wniosek; planowanie cykli) oraz formy zadań; zakres 2026/27 do potwierdzenia po publikacji"
+opis: "Siedem elementów opisu doświadczenia z kryterium punktowania; reguły języka obserwacji i wniosku; katalog gazów (O₂, CO₂, H₂, para wodna + NH₃, HCl, H₂S), barw osadów, roztworów i płomieni; matryca rozróżniania jednym odczynnikiem; zasada jednej różnicy; analiza cudzego opisu z 5 typami błędów. 24 zadania (A–F) z kluczem i punktacją."
+stan: "szkic — 2026-10-13, pełna treść (odpowiedź kompletna); bez audytu W1"
 kicker: "LKO-DOSW · I–II etap"
 lead: "Dobre doświadczenie to pytanie, przebieg, obserwacje i wnioski, a obserwacja i wniosek to dwie różne rzeczy. Ta lekcja uczy schematu opisu i katalogów: gazy, osady, barwy, płomienie."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO I–II / OLIMP]]
@@ -224,15 +224,15 @@ Procedura naprawy: przepuść opis przez checklistę 1.1 (7 elementów) i reguł
 ## Ciekawostki
 
 ::: karta extra | Bezwodny siarczan(VI) miedzi(II) jako wskaźnik wody
-Bezwodny CuSO₄ jest biały, a po przyłączeniu wody tworzy błękitny uwodniony siarczan (CuSO₄·5H₂O). Ta przemiana jest odwracalna: po ogrzaniu wraca do białej postaci — dlatego często wykorzystuje się ją jako wskaźnik obecności wody.
+Bezwodny CuSO₄ jest biały, a po przyłączeniu wody tworzy błękitny uwodniony siarczan (CuSO₄·5H₂O). Przemiana jest odwracalna: po ogrzaniu wraca do białej postaci — dlatego często służy jako wskaźnik obecności wody.
 :::
 
 ::: karta extra | Dlaczego MnO₂ nie zużywa się
-Dwutlenek manganu przyspiesza rozkład H₂O₂ na wodę i tlen, a sam pozostaje nietknięty. Dlatego po doświadczeniu można go odsączyć i użyć ponownie — to dobry przykład działania katalizatora.
+Dwutlenek manganu przyspiesza rozkład H₂O₂ na wodę i tlen, a sam pozostaje nietknięty. Po doświadczeniu można go odsączyć i użyć ponownie — dobry przykład działania katalizatora.
 :::
 
 ::: karta extra | Papier ołowiowy w laboratorium
-Papierek nasączony octanem ołowiu(II) czernieje w obecności H₂S, bo powstaje czarny PbS. Ta metoda jest czuła i bezpieczniejsza niż węch — stąd zasada „wykrywaj H₂S papierem, nie nosem".
+Papierek nasączony octanem ołowiu(II) czernieje w obecności H₂S, bo powstaje czarny PbS. To metoda czuła i bezpieczniejsza niż węch — stąd zasada „wykrywaj H₂S papierem, nie nosem".
 :::
 
 ## KOMPENDIUM — karty szybkiego dostępu
@@ -322,9 +322,60 @@ a) H₂S [II] · b) CO₂ · c) H₂O (para) · d) O₂ · e) NH₃
 
 **F1.** Zaplanuj doświadczenie pozwalające wykryć CO₂ ORAZ parę wodną w produktach spalania świecy. Podaj: cel, odczynniki, przebieg (z KOLEJNOŚCIĄ testów i jej uzasadnieniem), obserwacje, wnioski, równanie spalania węglowodoru-typu (dla parafiny wystarczy schemat węglowodór + O₂ → CO₂ + H₂O).
 
-**F2.** Masz trzy nieopisane ciecze: wodę destylowaną, wodorotlenek sodu(aq), kwas solny(roz.). Zaproponuj odczynnik rozróżniający wszystkie trzy w JEDNYM kroku (matryca 4.1 — tabela z obserwacjami i wnioskami); zapisz równanie jonowe skrócone reakcji zobojętniania między zasadą a kwasem (H⁺ + OH⁻ → H₂O).
+**F2.** Masz trzy nieopisane ciecze: wodę destylowaną, wodorotlenek sodu(aq), kwas solny(roz.). Zaproponuj odczynnik rozróżniający wszystkie trzy w JEDNYM kroku (matryca 4.1 — tabela z obserwacjami i wnioskami); zapisz równanie jonowe skrócone zobojętniania NaOH kwasem solnym (H⁺ + OH⁻ → H₂O).
 
 **F3.** Zaplanuj doświadczenie wykazujące wpływ rozdrobnienia CaCO₃ na szybkość reakcji z HCl. Podaj: dwie próby (identyczne co do czego?), obserwacje porównawcze, wniosek. Zaznacz w planie kontrolę zmiennych.
 
-**F4.** [ODPOWIEDŹ URWANA — treść opisu z 5 błędami nie została dostarczona; do uzupełnienia po ponownym wysłaniu.]
+**F4.** Poniższy opis zawiera 5 błędów. Wskaż i popraw każdy: *„Cel: otrzymanie wodoru. Przebieg: do marmuru dodano rozcieńczonego kwasu siarkowego(VI); zaobserwowano wydzielanie wodoru; gaz zbierano w zlewce dnem do góry; równanie: CaCO₃ + HCl → CaCl₂ + H₂O + CO₂. Doświadczenie przeprowadzono bez rękawic, a koncentracja uczniów była pełna."*
 
+### KLUCZ I PUNKTACJA
+
+| Zad. | Odpowiedź | Punktacja |
+|---|---|---|
+| A1 | **b** (a,c,d to wnioski; c dodatkowo miesza) | 1 |
+| A2 | **b** | 1 |
+| A3 | **b** | 1 |
+| A4 | **b** (strumień H₂ + ogrzewanie = wybuch bez próby) | 1 |
+| B1 | **F** (wniosek) | 1 |
+| B2 | **P** | 1 |
+| B3 | **F** (drobiny stałe — dym) | 1 |
+| B4 | **F** (w kwasie fenoloftaleina pozostaje bezbarwna) | 1 |
+| B5 | **P** | 1 |
+| B6 | **F** (liczy się odtwarzalność i podpisy) | 1 |
+| C1 | CuSO₄ · błękitnieje · pary wodnej | po 0,5 → 1,5 |
+| C2 | kwasu solnego (rozcieńczonego!) · mętnienie po wprowadzeniu do wody wapiennej · mętnienie = CaCO₃↓ z CO₂ | 1,5 |
+| C3 | wapnem gaszonym (Ca(OH)₂) · do GÓRY · sinieje · zasadowy (amoniak) | 2 |
+| D1 | 1→b · 2→c · 3→a · 4→d (zbędne: e) | po 0,5 → 2 |
+| D2 | 1→HCl (roztwór błękitny vs brak zmian) · 2→fenoloftaleina (malina vs bezbarwna) · 3→woda (osad vs roztwór) | po 0,5 → 1,5 |
+| E1 | obserwacja: „roztwór wskaźnika zmienił barwę na czerwoną"; wniosek: „roztwór ma odczyn kwasowy, bo wskaźnik czerwienieje"; zdanie „powstała sól i woda" to wniosek o produktach (wymaga równania), nie obserwacja | 2 |
+| E2 | obserwacje: nalot czerwono-brązowy na gwoździu; roztwór zmienia barwę z błękitnej na bladozielonkawą · wniosek: żelazo (aktywniejsze) wyparło miedź, powstaje FeSO₄ i Cu | 3 (2 obs. + wniosek) |
+| E3 | H₂S jest silnie toksyczny; zmysł węchu adaptuje się (przestaje wyczuwać) — test papierowy obiektywny i bezpieczny | 2 |
+| E4 | np. Na₂CO₃: z H₂SO₄ burzenie (CO₂↑), z wodą brak zmian; albo wskaźnik/lakmus: czerwienieje vs bez zmian | 2 (odczynnik+obs.+wniosek) |
+| E5 | błąd: DWA różnice naraz (rozdrobnienie i temperatura w jednej próbie) → brak kontroli zmiennych; poprawka: obie próby tabletami LUB oba proszki, różnica tylko temperatura | 2 |
+| F1 | rubryka: cel (0,5) · odczynniki (zlewka zimna, CuSO₄ bezwodny, woda wapienna) (0,5) · przebieg z kolejnością: najpierw zlewka z CuSO₄ (para), potem woda wapienna. Uzasadnienie: gaz przepuszczony przez wodny roztwór (wapienną) wnosi wodę, więc test pary trzeba wykonać PRZED nim (1,5) · obserwacje: krople/mgiełka + błękit CuSO₄; mętnienie (1) · wnioski: H₂O i CO₂ obecne (0,5) | 4 |
+| F2 | odczynnik: **lakmus** — HCl czerwieni, NaOH sinieje, woda pozostaje fioletowa (obojętna): trzy różne wyniki (1,5); matryca z obserwacjami (1); równanie skrócone zobojętniania NaOH + HCl: H⁺ + OH⁻ → H₂O (0,5) | 3 — *uwaga dydaktyczna: Na₂CO₃ rozróżnia tylko wodę i kwas (nie NaOH), więc w tym zadaniu nie wystarcza; punktuje się też poprawne rozwiązanie dwustopniowe* |
+| F3 | dwie próby: ta sama masa (np. 2 g), to samo HCl (ta sama objętość i stężenie), ta sama temperatura; różnica: grudka vs proszek (1,5); obserwacje: proszek burzy gwałtowniej (1); wniosek: większa powierzchnia styku zwiększa szybkość (0,5); kontrola zmiennych nazwana wprost (0,5) | 3,5 |
+| F4 | błędy: (1) cel „wodór” nie zgadza się z reakcją — marmur (CaCO₃) z kwasem daje CO₂, nie H₂ (kwas siarkowy(VI) dodatkowo hamuje reakcję osadem CaSO₄); (2) „zaobserwowano wydzielanie wodoru" = wniosek+nazwa przed testem; (3) zbieranie dnem do góry — CO₂ jest cięższy, dnem do dołu; (4) równanie: brak 2 przy HCl, CO₂ bez ↑; (5) BHP: brak rękawic/okularów (a jeśli miało być H₂ — brak próby czystości). Poprawne wersje wypisane | po 1 → 5 |
+
+Maksimum pomocnicze: **≈35 pkt** (lokalizacja: A–D = język i karty; E–F = planowanie i naprawa).
+
+---
+
+## BŁĘDY TYPOWE (klinika)
+
+1. **Nazwa produktu w obserwacji** → obserwacja opisuje zmysły („biały osad"), nazwę podaje wniosek/równanie. Każde „zaobserwowano CO₂" to strata punktu.
+2. **Czynność w rubryce obserwacji** → „dodano", „podgrzewano" = przebieg. Rozdzielaj rubryki.
+3. **Pominięty test potwierdzający** → „wydziela się gaz" bez testu to nie dowód rodzaju gazu; wniosek o CO₂/H₂/O₂ zawsze PO teście (wapienna/próba czystości/łuczywo).
+4. **„Dym" vs „mgiełka"** → dym = stałe (NH₄Cl), mgiełka = ciecz (HCl w wilgotnym powietrzu). Stan skupienia drobin decyduje o słowie.
+5. **Wskaźnik odwrotnie** → fenoloftaleina malinowa = ZASADA; bezbarwna w kwasie też jest obserwacją („nie zabarwiła się").
+6. **Schemat bez podpisów i strzałek** → rysunek ma pozwalać odtworzyć zestaw: podpisy, kierunek przepływu, poziomy cieczy.
+7. **Porównanie z dwiema różnicami** → jedna próba proszek+gorąco, druga grudka+zimno = wynik bez interpretacji. Jedna różnica + kontrola zmiennych.
+8. **Kolejność testów przy spalaniu** → najpierw para wodna (zlewka zimna, CuSO₄), potem CO₂ (woda wapienna); kolejność jest częścią punktową (F1).
+9. **Brak warunków w równaniach** → (t), katalizator nad strzałką, „stęż./rozcieńcz." — formalne elementy, o które arkusz pyt osobno.
+10. **BHP „dla pokoju"** → BHP wpisane po fakcie nic nie daje; na konkursie rubryka BHP wymaga wskazania zagrożenia TEGO doświadczenia (H₂ wybuch, H₂S toksyczność, kwasy — rękawice/okulary, machnięcie dłoni).
+
+---
+
+## Notatka dla prowadzącego: granice
+
+Świadomie poza suplementem: analiza jakościowa pełna (kationy Ag⁺/Ba²⁺/Ca²⁺ w systemie, aniony PO₄³⁻ — etap III/LO, J11); miareczkowanie z biuretą (LO, J12 — na etapie III LKO nie wymienione aparaturowo); elektroliza ilościowa (LO, E04); chromatografia (jeśli pojawi się w arkuszu jako metoda rozdzielania barwników — wystarczy jedna linijka: „chromatografia: rozdzielanie składników wg różnej wędrówki po bibule"); pomiar objętości gazu (etap III, R06). Tabela D2/F2 ma celowy „pułapkowy" przykład (Na₂CO₃ nie rozróżnia trzech cieczy jednym krokiem) — użyj go do pokazania, że matryca sprawdza się PRZED wyborem odczynnika, nie po. Zadania F celowo są 4 (najdroższe czasowo); w zestawach B wracają co tydzień jeden.
