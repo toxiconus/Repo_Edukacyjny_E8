@@ -176,3 +176,4 @@
 - 2026-10-13: F08, F09, F11–F15 — dopisane drugie zadanie ambitne (adv 2) po C; stan „pełna struktura — 2026-10-13, bez audytu W1”. Klucze sprawdzone rachunkowo (Z=35 dla [Ar]3d¹⁰4s²4p⁵; KMnO₄ Mn +7; K₂Cr₂O₇ Cr +6; CH₂O; CH₃OH 14 e, 5 wiązań; SO₂ ok. 119°; etanol/heksan). Build OK.
 - 2026-10-13: olimpiada/plany/INDEKS_NAUKI_ETAP_I.html — odświeżony ręcznie (skrypt jednorazowy, brak generatora w repo): wiersze wg aktualnych plików lessons-md/gotowe (stan i rozmiary MD/HTML), dodane F18–F21, sumy przeliczone (36 lekcji).
 - 2026-10-13: olimpiada/plany/INDEKS_NAUKI_LKO_ETAPY.html — odświeżony ręcznie wg plików gotowe (stan, rozmiary MD/HTML), dodane F18–F21, sumy: 51 lekcji.
+- 2026-10-13: dodany generator indeksów nauki: narzedzia/indeks_nauki.py (odświeża rozmiary MD/HTML i stan w olimpiada/plany/INDEKS_NAUKI_*.html; nowe lekcje dodaje ręcznie). Test: idempotentny, bez zmian na obecnym stanie.
