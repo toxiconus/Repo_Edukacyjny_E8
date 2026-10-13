@@ -97,3 +97,6 @@ Niepotwierdzone (brak w źródłach, które udało się otworzyć):
 Źródło zakresu: oficjalny regulamin OCJ na edukator.pl (2025 jest w sieci jako PDF; 2026/27 nie znalazłem). Zakres wiedzy LKO (`PRIORYTETY.md`, pkt 2) to inny konkurs i nie można go mieszać z OCJ.
 
 Skutek dla planu: daty OCJ są pewne, zakres i format nie. Przed budową zestawów A1–A4 trzeba pobrać regulamin OCJ 2026/27 albo potwierdzić zakres u nauczyciela. Bez tego N06 (amoniak) jest tylko hipotezą.
+
+## 8. Wskazówka: start z województwa lubelskiego (2026-10-13)
+Uczennica startuje z województwa lubelskiego. Ścieżka praktyczna to więc LKO (etap szkolny → rejonowy → wojewódzki, `PRIORYTETY.md` pkt 1–2), a nie sama OCJ. Wyszukiwanie nie potwierdziło, czy OCJ w Lubelskiem idzie przez kuratorium. Do ustalenia u nauczyciela: czy etap szkolny (LKO) i OCJ są dwoma osobnymi zgłoszeniami, czy jednym.
