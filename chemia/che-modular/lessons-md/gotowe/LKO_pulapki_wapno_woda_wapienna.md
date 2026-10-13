@@ -4,10 +4,11 @@ uid: CHE.00.LKO.pulapki_wapno_woda_wapienna
 tytul: Pułapki konkursowe — woda wapienna, wapno palone, kreda i inne nazwy, które się mylą
 typ: suplement
 opis: Pięć par pojęć, które uczniowie mylą na konkursach (woda wapienna i mleko wapienne, wapno palone i gaszone, kreda i wapień, soda oczyszczona i kalcynowana, wapń i wapno), z pytaniami podchwytliwymi i odpowiedziami.
-kicker: LKO · PUŁAPKI · SZKIC
+kicker: LKO · PUŁAPKI · I–II etap
 lead: Na konkursie nazwy często wyglądają podobnie, a ich wzory i zachowanie są różne. Ta lekcja zbiera pary, które się mylą najczęściej, i pokazuje, jak je rozróżnić po wzorze, stanie skupienia i reakcji.
 plakietki: [[basic:E8]][[olimp:LKO]]
-stopka: **CHEMIA LKO-PUŁAPKI · szkic 2026-10-13 · do sprawdzenia przed W1**
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stopka: **CHEMIA LKO-PUŁAPKI · 2026-10-13 · bez audytu W1**
 wymaga: F09 (jony, wzory) · F12 (wzory i nazwy) · R02 (roztwór nasycony) · LKO-KRZYWE (krzywa Ca(OH)₂)
 ---
 
@@ -21,6 +22,24 @@ wymaga: F09 (jony, wzory) · F12 (wzory i nazwy) · R02 (roztwór nasycony) · L
 7. Nadmiar CO₂ rozpuszcza osad z powrotem (tworzy się rozpuszczalny wodorowęglan wapnia), więc przy długim przepuszczaniu gazu mętność znika.
 8. Mętnienie wody wapiennej może mieć też przyczynę termiczną: Ca(OH)₂ ma malejącą rozpuszczalność, więc po podgrzaniu wysadza się osad (patrz LKO-KRZYWE, szablon 3 i F3).
 :::
+
+::: warstwy
+- e8 | <b>Podstawa:</b> nazwy i wzory: woda wapienna, mleko wapienne, wapno palone i gaszone, kreda.
+- understand | <b>Rozumienie:</b> dlaczego mętnienie ma dwie przyczyny (CO₂ albo podgrzanie) i dlaczego nadmiar CO₂ rozpuszcza osad.
+- contest | <b>Konkurs:</b> wybór zawiesiny, prawda–fałsz o wzorach, wniosek z obserwacji bez pułapki.
+- extra | <b>Ambitne:</b> obliczenie osadu i masy wody z rozpuszczalności (zadania dodatkowe A i B).
+:::
+
+::: rdzen | Rdzeń lekcji — najpierw to
+- [§1](#wykl-dwie-wody) — woda wapienna = roztwór, mleko wapienne = zawiesina.
+- [§2](#wykl-metnienie) — dwie przyczyny mętnienia: CO₂ albo podgrzanie.
+- [§4](#klinika) — dziewięć par, które się mylą.
+- [ZADANIA](#zadania) — P1–P5 z kluczem i dwa zadania ambitne.
+:::
+
+## 0.1 | Jak pracować z lekcją {#jak-pracowac}
+
+Przeczytaj minimum, potem §1 i §2 (tu jest sedno: zawiesina vs roztwór i dwie przyczyny mętnienia). Klinikę (§4) przejrzyj jako listę pułapek. Zadania rób bez zaglądania do kluczy; po każdym wniosku sprawdź, czy wykluczyłeś podgrzanie.
 
 ::: karta exam | Pytanie przewodnie
 Po czym poznać, że dwie nazwy z konkursu dotyczą innych substancji, zanim zaczniesz liczyć albo pisać równanie?
@@ -37,7 +56,7 @@ Po czym poznać, że dwie nazwy z konkursu dotyczą innych substancji, zanim zac
 - **Egzotermiczna** — reakcja, w której wydziela się ciepło (naczynie się ogrzewa).
 - **Wzór sumaryczny** — zapis składu związku, np. CaO, Ca(OH)₂, CaCO₃.
 
-## 1 | Wykład — dwie „wody" i dwa „wapna"
+## 1 | Wykład — dwie „wody" i dwa „wapna" {#wykl-dwie-wody}
 
 ::: karta understand | Wykład — dlaczego „woda wapienna" nie jest wodą wapienną z kredy
 Nazwa „woda wapienna" nie znaczy, że to woda zawierająca wapień. To roztwór, który powstaje przez rozpuszczenie w wodzie wodorotlenku wapnia Ca(OH)₂. Ponieważ Ca(OH)₂ rozpuszcza się słabo (w 20 °C około 0,16 g na 100 g wody), roztwór nasycony jest bardzo rozcieńczony i klarowny. Dlatego woda wapienna dobrze nadaje się do wykrywania CO₂: kiedy gaz wejdzie do roztworu, tworzy się nierozpuszczalny CaCO₃, który robi biały osad.
@@ -59,7 +78,7 @@ Mleko wapienne ma zastosowania praktyczne. Bieli się nim ściany (dawna farba w
 Przy wprowadzaniu CO₂ do mleka wapiennego najpierw obserwujesz mętnienie (CaCO₃↓). Dalszy nadmiar CO₂ rozpuszcza osad jako wodorowęglan wapnia, Ca(HCO₃)₂, i mieszanina klaruje się. Wniosek konkursowy: klarowanie po nadmiarze CO₂ nie świadczy, że w probówce było „coś innego niż wapno".
 :::
 
-## 2 | Wykład — dlaczego mętnienie to nie zawsze CO₂
+## 2 | Wykład — dlaczego mętnienie to nie zawsze CO₂ {#wykl-metnienie}
 
 ::: karta understand | Wykład — dwie przyczyny tej samej obserwacji
 Obserwacja „woda wapienna zmętniała" ma co najmniej dwie przyczyny:
@@ -79,7 +98,7 @@ Na konkursie nazwy zwyczajowe są mylące, więc zawsze odwołuj się do wzoru:
 - **Wapń** (pierwiastek Ca) to nie to samo co **wapno** (związek). Pytanie „z czego zbudowany jest związek?" wymaga wzoru, nie nazwy.
 :::
 
-## 4 | Klinika — pary, które się mylą
+## 4 | Klinika — pary, które się mylą {#klinika}
 
 ::: klinika | Pozór | Prawda | Dlaczego?
 | „Woda wapienna to woda z kredy." | Woda wapienna to roztwór Ca(OH)₂. | Nazwa pochodzi od wapnia, nie od węglanu. |
@@ -93,25 +112,49 @@ Na konkursie nazwy zwyczajowe są mylące, więc zawsze odwołuj się do wzoru:
 | „Wapń i wapno to to samo." | Wapń to pierwiastek Ca, wapno to związek wapnia. | Pytaj o wzór, nie o nazwę. |
 :::
 
-## 5 | Ćwiczenia — formy konkursu LKO
+## 5 | Ćwiczenia — formy konkursu LKO {#zadania}
 
-::: karta exam | Pułapki — zadania (8 pkt)
+::: karta exam | Zadania P1–P2 (3 pkt) — wybór i prawda–fałsz
 **P1. Wybór (1 pkt).** Która substancja jest zawiesiną, a nie roztworem?
 a) woda wapienna  b) mleko wapienne  c) roztwór soli kuchennej  d) woda destylowana
 
 **P2. Prawda–fałsz (2 pkt).**
 a) Wapno palone ma wzór Ca(OH)₂. ____
 b) Mętnienie wody wapiennej po podgrzaniu nie musi być spowodowane CO₂. ____
+:::
 
+::: odp | Klucz — P1–P2
+P1: **b** (mleko wapienne — zawiesina; woda wapienna i sól kuchenna to roztwory, woda destylowana to czysta substancja). P2: a) **fałsz** (wzór CaO); b) **prawda** (rozpuszczalność Ca(OH)₂ maleje z temperaturą).
+:::
+
+::: karta exam | Zadania P3–P5 (5 pkt) — równania, obserwacje, analiza wniosku
 **P3. Otwarte krótkie (2 pkt).** Zapisz równanie reakcji wapna palonego z wodą i określ, czy reakcja wydziela ciepło.
 
 **P4. Opis obserwacji (2 pkt).** Do wody wapiennej przepuszczano CO₂ tak długo, aż osad zniknął. Opisz obserwacje i zapisz równanie reakcji, która spowodowała zniknięcie osadu.
 
 **P5. Analiza zdania (1 pkt).** Uczeń napisał: „Woda wapienna zmętniała, więc w probówce był wapień." Wskaż błąd w tym wniosku.
-
-::: odp | Klucz — P1–P5
-P1: **b** (mleko wapienne — zawiesina; woda wapienna i sól kuchenna to roztwory, woda destylowana to czysta substancja). P2: a) **fałsz** (wzór CaO); b) **prawda** (rozpuszczalność Ca(OH)₂ maleje z temperaturą). P3: CaO + H₂O → Ca(OH)₂; reakcja **egzotermiczna** (wydziela ciepło). P4: najpierw biały osad CaCO₃ (Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O); w nadmiarze CO₂ osad znika, bo powstaje rozpuszczalny wodorowęglan (CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂). P5: wniosek o wapieniu nie wynika z mętnienia — mętnienie wskazuje na CO₂ (lub podgrzanie), a nie na obecność węglanu w probówce.
 :::
+
+::: odp | Klucz — P3–P5
+P3: CaO + H₂O → Ca(OH)₂; reakcja **egzotermiczna** (wydziela ciepło). P4: najpierw biały osad CaCO₃ (Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O); w nadmiarze CO₂ osad znika, bo powstaje rozpuszczalny wodorowęglan (CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂). P5: wniosek o wapieniu nie wynika z mętnienia — mętnienie wskazuje na CO₂ (lub podgrzanie), a nie na obecność węglanu w probówce.
+:::
+
+::: adv | Zadanie dodatkowe A (3 pkt) — woda czy mleko wapienne? | poziom ambitny
+Do 100 g wody wsypano 0,20 g wodorotlenku wapnia Ca(OH)₂. Rozpuszczalność Ca(OH)₂ w 20 °C wynosi 0,16 g na 100 g wody.
+(a) Czy otrzymano wodę wapienną, czy mleko wapienne? Uzasadnij liczbami. (b) Oblicz masę Ca(OH)₂, która pozostanie jako osad. (c) Ile gramów wody należy dolać, aby cały Ca(OH)₂ się rozpuścił?
+:::
+
+::: odp | Klucz — zadanie dodatkowe A
+(a) 0,20 g > 0,16 g — nadmiar nie rozpuści się, więc powstaje **mleko wapienne** (zawiesina) (1 pkt). (b) 0,20 − 0,16 = **0,04 g** osadu (1 pkt). (c) Na 0,20 g potrzeba 0,20 · 100 ÷ 0,16 = 125 g wody — dolać **25 g** (1 pkt). *Uwaga: wynik zależy od przyjętej wartości rozpuszczalności; przy innym tablicowym zaokrągleniu wynik zmienia się w drugiej cyfrze znaczącej.*
+:::
+
+::: adv | Zadanie dodatkowe B (3 pkt) — zmętnienie bez gazu | poziom ambitny
+Uczeń podgrzał nasyconą w 20 °C wodę wapienną do 60 °C w zamkniętej probówce, bez wprowadzania gazu. Roztwór zmętniał. Zapisał wniosek: „W probówce był CO₂ z powietrza, więc zaszła reakcja z Ca(OH)₂."
+(a) Podaj prawdziwą przyczynę mętnienia. (b) Uzasadnij, dlaczego ta przyczyna jest możliwa. (c) Zaproponuj dwie próby, które odróżnią obie przyczyny.
+:::
+
+::: odp | Klucz — zadanie dodatkowe B
+(a) Przyczyna **termiczna**: rozpuszczalność Ca(OH)₂ maleje z temperaturą, więc nadmiar wysadza się jako osad (1 pkt). (b) Roztwór był nasycony w 20 °C; w wyższej temperaturze nie mieści już tyle Ca(OH)₂, więc nadmiar wypada — bez udziału CO₂ (1 pkt). (c) Próba A: nasycona woda wapienna ogrzana bez gazu — mętnienie potwierdza przyczynę termiczną; próba B: woda wapienna w temperaturze pokojowej z CO₂ — mętnienie potwierdza reakcję z CO₂ (1 pkt).
 :::
 
 ## 6 | Doświadczenie modelowe — rozróżnij woda wapienną od mleka wapiennego
@@ -145,6 +188,52 @@ Soda oczyszczona :: wodorowęglan sodu NaHCO₃
 Soda kalcynowana :: węglan sodu Na₂CO₃
 :::
 
+## Fiszki {#fiszki}
+
+::: fiszki
+Woda wapienna | roztwór Ca(OH)₂ w wodzie, klarowny | basic:podstawa
+Mleko wapienne | zawiesina Ca(OH)₂ w wodzie: mętna, z osadem na dnie | basic:podstawa
+Wapno palone | CaO — tlenek wapnia | basic:podstawa
+Wapno gaszone | Ca(OH)₂ — wodorotlenek, powstaje z CaO i wody | basic:podstawa
+Kreda, wapień, marmur | CaCO₃ w różnych formach | basic:podstawa
+Mętnienie wody wapiennej | przyczyna chemiczna (CO₂) albo termiczna (podgrzanie) | understand:ROZUMIENIE
+Nadmiar CO₂ w wodzie wapiennej | osad znika: powstaje rozpuszczalny Ca(HCO₃)₂ | understand:ROZUMIENIE
+Soda oczyszczona vs kalcynowana | NaHCO₃ vs Na₂CO₃ | exam:KONKURS
+:::
+
+## Test krótki {#test}
+
+? Która substancja jest zawiesiną?
++ mleko wapienne
+- woda wapienna
+- roztwór soli kuchennej
+- woda destylowana
+
+? Wzór wapna palonego:
++ CaO
+- Ca(OH)₂
+- CaCO₃
+- Ca
+
+? Mętnienie wody wapiennej po podgrzaniu:
++ może mieć przyczynę termiczną
+- zawsze wynika z CO₂
+- zawsze wynika z obecności wapienia
+- nigdy nie występuje
+
+? Soda oczyszczona to:
++ NaHCO₃
+- Na₂CO₃
+- NaOH
+- Na₂SO₄
+
+? Po długim przepuszczaniu CO₂ przez wodę wapienną osad:
++ znika
+- pogrubia się
+- zmienia barwę na niebieską
+- nie zmienia się
+
+
 ## Ciekawostki
 
 ::: karta extra | Błonka na wodzie wapiennej
@@ -152,7 +241,7 @@ Woda wapienna wystawiona na powietrze pokrywa się cienką błonką węglanu wap
 :::
 
 ::: karta extra | Wapno gaszone wrze
-Wapno palone CaO reaguje z wodą gwałtownie i mocno się przy tym nagrzewa, aż do wrzenia. Stąd nazwa „gaszenie wapna": tlenek zostaje „ugaszony" wodą w wodorotlenek.
+Wapno palone CaO reaguje z wodą gwałtownie i mocno się przy tym nagrzewa, i potrafi zagotować wodę przy większej ilości. Stąd nazwa „gaszenie wapna": tlenek zostaje „ugaszony" wodą w wodorotlenek.
 :::
 
 ::: karta extra | Wapnowanie gleb
