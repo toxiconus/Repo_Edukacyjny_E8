@@ -152,6 +152,83 @@ Odwrotnie (z konfiguracji do pierwiastka): liczba powłok = okres; liczba elektr
 
 ---
 
+## 1b | Dodatek — wyjątki do Z = 36 i tabela Z = 1–36 {#wyjatki}
+
+::: karta understand | Wykład — dwie kolejności, które łatwo pomylić
+W konfiguracji są dwie różne kolejności i warto je rozdzielić.
+
+Pierwsza to **kolejność zapełniania** (energetyczna): elektrony wchodzą najpierw na podpowłoki o najniższej energii, czyli 1s, 2s, 2p, 3s, 3p, **4s**, **3d**, 4p. Dlatego po argonie pojawia się 4s, a dopiero potem 3d.
+
+Druga to **kolejność zapisu** w konfiguracji: podpowłoki grupujemy według numeru powłoki, więc piszemy 1s 2s 2p 3s 3p **3d** 4s 4p. Stąd Fe: 1s² 2s² 2p⁶ 3s² 3p⁶ **3d⁶ 4s²** — to ta sama konfiguracja co [Ar] 4s² 3d⁶, zapisana w kolejności numerów powłok. Nie zmienia to zawartości elektronowej.
+
+Liczba powłoki (K, L, M, N) zależy od **numeru n**, a nie od kolejności zapisu. Dlatego 3d należy do powłoki M, mimo że zapełnia się po 4s, a 4s należy do N. Jeśli liczysz powłoki, sumujesz elektrony według pierwszej cyfry w symbolu: 3s, 3p, 3d → M; 4s, 4p → N.
+:::
+
+::: karta understand | Wykład — wyjątki: dlaczego Cr i Cu, a nie inne
+Model „od dołu do góry" przewiduje dla chromu [Ar] 4s² 3d⁴, a dla miedzi [Ar] 4s² 3d⁹. Tymczasem w stanie podstawowym obserwuje się [Ar] 4s¹ 3d⁵ dla Cr i [Ar] 4s¹ 3d¹⁰ dla Cu. W obu przypadkach jeden elektron z 4s przechodzi do 3d.
+
+Szkolne wyjaśnienie: najkorzystniej energetycznie są podpowłoki d **zapełnione w połowie** (d⁵) i **całkowicie** (d¹⁰). Dla Cr zysk z d⁵ jest większy niż koszt zmiany 4s². Dla Cu zysk z d¹⁰ przewyższa koszt. Wikipedia (data page, pobrane 2026-10-13) podaje, że różnice energii między konfiguracjami są małe i wiele konfiguracji leży w bliskim sąsiedztwie, a jako wyraźny wyjątek omawia właśnie chrom.
+
+Wniosek dla ucznia: w zakresie do Z = 36 **wyjątkami szkolnymi są Cr i Cu**. Pozostałe pierwiastki 3d (Sc–Zn) podlegają regule prostej, z jednym przypadkiem wymagającym uwagi — niklem.
+:::
+
+::: karta understand | Subtelność, nie wyjątek — nikiel (Ni, Z = 28)
+Nikiel w pobranym źródle (Wikipedia, data page) ma konfigurację **[Ar] 4s² 3d⁸**. Ta sama strona nie wymienia niklu jako wyjątku. W niektórych zapisach pojawia się konfiguracja [Ar] 4s¹ 3d⁹, bo energie 3d⁸4s² i 3d⁹4s¹ leżą bardzo blisko siebie. Ten wariant nie został potwierdzony w pobranym źródle, więc zapisuję go tylko jako uwagę.
+
+Praktyczna zasada dla konkursu: zapisuj **4s² 3d⁸**, chyba że treść zadania lub klucz podaje inaczej. Nikiel jest tu subtelnością — pokazuje, że reguła prosta bywa przybliżona — ale nie należy go traktować jako trzeciego obowiązkowego wyjątku.
+:::
+
+::: karta core | Tabela Z = 1–36 — rozkład na powłoki i podpowłoki
+Kolumny K, L, M, N to liczba elektronów na powłokach 1, 2, 3, 4 (zapis 1234 to te same liczby). Zapis podpowłokowy podano w skróconej formie [gaz szlachetny]. Pierwiastki grup 3–12 (Sc–Zn) są pokazane dla kontekstu wyjątków; w zakresie konkursu obowiązują grupy 1, 2 i 13–18.
+
+| Z | Pierwiastek | K | L | M | N | Konfiguracja | Uwaga |
+|---:|---|---:|---:|---:|---:|---|---|
+| 1 | H | 1 | 0 | 0 | 0 | 1s¹ | |
+| 2 | He | 2 | 0 | 0 | 0 | 1s² | |
+| 3 | Li | 2 | 1 | 0 | 0 | 1s² 2s¹ | |
+| 4 | Be | 2 | 2 | 0 | 0 | 1s² 2s² | |
+| 5 | B | 2 | 3 | 0 | 0 | 1s² 2s² 2p¹ | |
+| 6 | C | 2 | 4 | 0 | 0 | 1s² 2s² 2p² | |
+| 7 | N | 2 | 5 | 0 | 0 | 1s² 2s² 2p³ | |
+| 8 | O | 2 | 6 | 0 | 0 | 1s² 2s² 2p⁴ | |
+| 9 | F | 2 | 7 | 0 | 0 | 1s² 2s² 2p⁵ | |
+| 10 | Ne | 2 | 8 | 0 | 0 | 1s² 2s² 2p⁶ | |
+| 11 | Na | 2 | 8 | 1 | 0 | [Ne] 3s¹ | |
+| 12 | Mg | 2 | 8 | 2 | 0 | [Ne] 3s² | |
+| 13 | Al | 2 | 8 | 3 | 0 | [Ne] 3s² 3p¹ | |
+| 14 | Si | 2 | 8 | 4 | 0 | [Ne] 3s² 3p² | |
+| 15 | P | 2 | 8 | 5 | 0 | [Ne] 3s² 3p³ | |
+| 16 | S | 2 | 8 | 6 | 0 | [Ne] 3s² 3p⁴ | |
+| 17 | Cl | 2 | 8 | 7 | 0 | [Ne] 3s² 3p⁵ | |
+| 18 | Ar | 2 | 8 | 8 | 0 | [Ne] 3s² 3p⁶ | |
+| 19 | K | 2 | 8 | 8 | 1 | [Ar] 4s¹ | |
+| 20 | Ca | 2 | 8 | 8 | 2 | [Ar] 4s² | M dopiero zaczyna się zapełniać 3d |
+| 21 | Sc | 2 | 8 | 9 | 2 | [Ar] 4s² 3d¹ | grupa 3, poza zakresem |
+| 22 | Ti | 2 | 8 | 10 | 2 | [Ar] 4s² 3d² | poza zakresem |
+| 23 | V | 2 | 8 | 11 | 2 | [Ar] 4s² 3d³ | poza zakresem |
+| 24 | Cr | 2 | 8 | 13 | 1 | [Ar] 4s¹ 3d⁵ | **wyjątek szkolny** |
+| 25 | Mn | 2 | 8 | 13 | 2 | [Ar] 4s² 3d⁵ | poza zakresem |
+| 26 | Fe | 2 | 8 | 14 | 2 | [Ar] 4s² 3d⁶ | poza zakresem |
+| 27 | Co | 2 | 8 | 15 | 2 | [Ar] 4s² 3d⁷ | poza zakresem |
+| 28 | Ni | 2 | 8 | 16 | 2 | [Ar] 4s² 3d⁸ | **subtelność** (patrz wyżej) |
+| 29 | Cu | 2 | 8 | 18 | 1 | [Ar] 4s¹ 3d¹⁰ | **wyjątek szkolny** |
+| 30 | Zn | 2 | 8 | 18 | 2 | [Ar] 4s² 3d¹⁰ | poza zakresem |
+| 31 | Ga | 2 | 8 | 18 | 3 | [Ar] 4s² 3d¹⁰ 4p¹ | zakres (grupa 13) |
+| 32 | Ge | 2 | 8 | 18 | 4 | [Ar] 4s² 3d¹⁰ 4p² | zakres (grupa 14) |
+| 33 | As | 2 | 8 | 18 | 5 | [Ar] 4s² 3d¹⁰ 4p³ | zakres (grupa 15) |
+| 34 | Se | 2 | 8 | 18 | 6 | [Ar] 4s² 3d¹⁰ 4p⁴ | zakres (grupa 16) |
+| 35 | Br | 2 | 8 | 18 | 7 | [Ar] 4s² 3d¹⁰ 4p⁵ | zakres (grupa 17) |
+| 36 | Kr | 2 | 8 | 18 | 8 | [Ar] 4s² 3d¹⁰ 4p⁶ | zakres (grupa 18) |
+
+**Dlaczego Cr ma M = 13?** Powłoka M zawiera 3s², 3p⁶ i 3d⁵: 2 + 6 + 5 = 13. Podpowłoka 4s¹ należy do N, więc N = 1. Stąd rozkład 2,8,13,1.
+:::
+
+::: karta understand | W skrócie — jak czytać wiersz tabeli
+Sprawdź sumę K + L + M + N = Z. Dla Cr: 2 + 8 + 13 + 1 = 24. Dla Cu: 2 + 8 + 18 + 1 = 29. Jeśli suma się zgadza, a konfiguracja pokazuje 4s¹ przy d⁵ lub d¹⁰, masz wyjątek szkolny.
+:::
+
+---
+
 ## 2 | Wykład — jony: reguła najbliższego gazu szlachetnego {#wyklad2}
 
 ::: karta understand | Wykład — dlaczego atomy tworzą jony
@@ -359,6 +436,7 @@ F3 (zadanie transferowe): **fałsz.** Ga³⁺ ma 2,8,18 (28 e⁻). Ar ma 18 e⁻
 „Konfiguracja Cl⁻ to 2,8,7 — jon ma tyle samo elektronów walencyjnych co atom." || Anion przyjmuje elektron: Cl⁻ ma 2,8,8, czyli 18 elektronów.
 „Ga³⁺ jest izoelektronowy z argonem, bo oba mają pełne powłoki." || Ar ma 18 elektronów, Ga³⁺ ma 28. Izoelektronowość wymaga tej samej liczby elektronów, nie tylko „pełności".
 „Liczba elektronów walencyjnych zawsze równa się numerowi grupy." || Tylko dla grup 1 i 2. Dla grup 13–18 odejmujemy 10.
+„Do Z = 36 wyjątków jest dużo, trzeba znać wszystkie.” || Szkolne wyjątki to Cr i Cu. Nikiel to subtelność (4s²3d⁸ w zapisie szkolnym), a reszta 3d leży w regule prostej.
 :::
 
 ---
@@ -464,6 +542,8 @@ Izoelektronowość :: zjawisko, w którym jony lub atomy mają tyle samo elektro
 Gaz szlachetny :: pierwiastek 18. grupy z pełną zewnętrzną powłoką; wzorzec dla jonów
 Zapis skrócony :: konfiguracja z gazem szlachetnym w nawiasie kwadratowym
 Model powłokowy :: uproszczony opis atomu z elektronami na powłokach; przybliżenie, nie dokładny obraz
+Wyjątek konfiguracyjny :: odstępstwo od prostego zapisu według kolejności energetycznej; w zakresie do Z = 36 — Cr i Cu
+Subtelność konfiguracyjna :: dwie konfiguracje o bardzo zbliżonej energii (Ni: 4s²3d⁸ w zapisie szkolnym); nie jest wyjątkiem szkolnym
 :::
 
 ---
@@ -517,8 +597,8 @@ KONFIGURACJA DO Z = 36
 Gal ma niską temperaturę topnienia (ok. 30 °C — wartość orientacyjna, do sprawdzenia w tablicach). Dlatego w zadaniach z galem ważne jest zapamiętanie konfiguracji, a nie wyglądu metalu — z samej konfiguracji nie widać temperatury topnienia.
 :::
 
-::: karta extra | Dlaczego miedź i chrom „psują" regułę
-Chrom ma konfigurację [Ar] 3d⁵ 4s¹, a miedź [Ar] 3d¹⁰ 4s¹ — w obu przypadkach jeden elektron z 4s przechodzi do 3d (wyjątek od prostego Aufbau). Wyjątki Cr i Cu są poza zakresem, ale warto wiedzieć, że model szkolny jest przybliżeniem. Źródło: Wikipedia, „Electron configurations of the elements (data page)" (pobrane 2026-10-13).
+::: karta extra | Dlaczego chrom i miedź „psują” regułę
+Szczegóły i tabela Z = 1–36 są w sekcji 1b. Tu jedna myśl: model szkolny jest przybliżeniem, a dwa wyjątki w zakresie wynikają z tego, że d⁵ i d¹⁰ są energetycznie korzystne. Źródło: Wikipedia, „Electron configurations of the elements (data page)” (pobrane 2026-10-13).
 :::
 
 ::: karta extra | Dlaczego grupa 14 nie tworzy jonów
@@ -533,6 +613,8 @@ Węgiel i krzem mają po cztery elektrony walencyjne. Oddanie czterech kosztowa�
 1. **Oficjalny zakres konkursu LKO 2026/27** (lokalny plik `olimpiada/plany/LKO_2026_27/chemia_zakres_2026_2027.md`, sekcja 8.2, etap I, rozszerzenie 1 i 3): „konfiguracje elektronowe atomów pierwiastków grupy 1, 2 oraz 13–18 do Z = 36 i ich jonów o podanym ładunku" oraz „ustalanie … wzorów związków chemicznych".
 2. **Wikipedia (EN), „Electron configurations of the elements (data page)"** — pobrana strona. Potwierdzone konfiguracje: Ca [Ar] 4s²; Ga [Ar] 3d¹⁰ 4s² 4p¹; As [Ar] 3d¹⁰ 4s² 4p³; Se [Ar] 3d¹⁰ 4s² 4p⁴; Br [Ar] 3d¹⁰ 4s² 4p⁵; Kr [Ar] 3d¹⁰ 4s² 4p⁶; K [Ar] 4s¹; S [Ne] 3s² 3p⁴; Cl [Ne] 3s² 3p⁵; Al [Ne] 3s² 3p¹; Fe [Ar] 3d⁶ 4s²; Cu [Ar] 3d¹⁰ 4s¹; Cr [Ar] 3d⁵ 4s¹. Strona podaje konfiguracje atomów obojętnych w stanie podstawowym; nie podaje konfiguracji jonów ani reguły 4s przed 3d wprost.
 3. **Wikipedia (EN), „Electron configurations of the elements"** — wynik wyszukiwania, **nie pobrano** (pełny tekst nieprzejrzany).
+4. **Wikipedia (EN), data page — ponowne pobranie 2026-10-13** dla Sc–Zn: Sc [Ar] 3d¹ 4s²; Ti 3d² 4s²; V 3d³ 4s²; Cr 3d⁵ 4s¹; Mn 3d⁵ 4s²; Fe 3d⁶ 4s²; Co 3d⁷ 4s²; Ni 3d⁸ 4s²; Cu 3d¹⁰ 4s¹; Zn 3d¹⁰ 4s².
+5. **Odpowiedź zewnętrzna (AI, sekcja 1b)** — zestawienie wyjątków i tabela Z = 1–36 zgodne z danymi z pkt 4; cytowane materiały ZPE i portale szkolne (np. zpe.gov.pl) to **wynik wyszukiwania, nie pobrano**.
 
 Ogólna wiedza o jonach i izoelektronowości (sekcje 2 i 2.3) pochodzi z przyjętego w szkole modelu oktetu; nie została potwierdzona osobnym źródłem w tej sesji.
 :::
@@ -557,6 +639,8 @@ Ogólna wiedza o jonach i izoelektronowości (sekcje 2 i 2.3) pochodzi z przyję
 **Liczby:** sekcje `##` ~17; fiszki 13; zadania (karty exam) 26 w 6 zestawach (A–F), ponad 3–8 orientacyjne — zostawiono, bo użytkownik wymaga pełnego zakresu; do decyzji (podział na dwie karty albo osobny plik zadań). Test: 5 pytań. Słownik w lekcji: 10 haseł.
 
 **Do weryfikacji:** temperatura topnienia galu (orientacyjnie, nie pobrana strona); wyjaśnienie wyjątków Cr i Cu w ciekawostce (zgodne z danymi strony, reszta z ogólnej wiedzy); słownik osobny lekcji i wpis w SLOWNIK_CHE.md — w kolejnym kroku.
+
+**Aktualizacja 2026-10-13 (wyjątki i nikiel):** dodano sekcję 1b (dwie kolejności, wykład o Cr i Cu, nikiel jako subtelność, tabela Z = 1–36 z KLMN, 1234 i konfiguracją). Ciekawostkę o Cr/Cu skrócono do odsyłacza, bez powielania. Dodano hasła słownika (wyjątek, subtelność), mit i dwa źródła. Konfiguracje Sc–Zn sprawdzone pobraną stroną; nikiel 4s¹3d⁹ nie potwierdzony w źródle, zapisany jako uwaga.
 
 **Nieprzyjęte z odpowiedzi:** nic — wszystkie tematy zachowano. Propozycja „gen_f00: wiersz LKO-Z36 w sekcji Uzupełnienia" i „POWIAZANIA_CHE: F07 → LKO-Z36 (EXPAND), LKO-Z36 → F09/F12 (APPLY)" zapisana jako zadania poza tą lekcją.
 :::

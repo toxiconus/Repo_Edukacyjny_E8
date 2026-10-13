@@ -34,6 +34,10 @@ Każde hasło ma wersję **w lekcji** (krótką, sekcja 12) i **pełną** (tu). 
 
 **Krzyżowanie ładunków** — metoda ustalania wzoru: ładunek kationu staje się indeksem anionu i odwrotnie; wzór upraszcza się przez wspólny dzielnik. Przykład: Al³⁺ + O²⁻ → Al₂O₃.
 
+**Wyjątek konfiguracyjny** — odstępstwo od prostego zapisu według kolejności energetycznej. W zakresie do Z = 36 szkolnym wyjątkiem są chrom (Cr: 4s¹3d⁵) i miedź (Cu: 4s¹3d¹⁰). *Źródło: Wikipedia data page (pobrane 2026-10-13); szkolne wyjaśnienie: d⁵ i d¹⁰ energetycznie korzystne.*
+
+**Subtelność konfiguracyjna** — przypadek, w którym dwie konfiguracje mają bardzo zbliżoną energię. Nikiel: 4s²3d⁸ (zapis szkolny, Wikipedia); wariant 4s¹3d⁹ nie potwierdzony w pobranym źródle. Nie jest wyjątkiem szkolnym.
+
 ## Pytania do słownika (kontrola spójności)
 
 - Czy każde hasło z sekcji 12 lekcji ma tu wpis? Tak: 10 haseł w sekcji 12 lekcji, wszystkie mają tu wpis; tu jest 13 wpisów, trzy dodatkowe (reguła gazu szlachetnego, bilans elektronów, krzyżowanie ładunków) z sekcji wykładowych lekcji.
