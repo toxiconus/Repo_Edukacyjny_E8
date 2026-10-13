@@ -224,6 +224,20 @@ Diagnoza mierzy **stan wyjścia**, nie zdolności. Nie wolno z niej wyciągać t
 
 Druga diagnoza (ta sama forma, nowe zadania) — w dniu symulacji S8, żeby zmierzyć przyrost i skorygować ostatnie 48 godzin.
 
+## Ciekawostki {#ciekawostki}
+
+::: karta extra | Dlaczego woda wapienna mętnieje
+Woda wapienna to roztwór wodorotlenku wapnia. Dwutlenek węgla tworzy z nim trudno rozpuszczalny węglan wapnia, który daje mętny osad. Ten sam osad powstaje w kredzie, bo kreda to właśnie węglan wapnia — stąd bierze się próba z Z10b.
+:::
+
+::: karta extra | Wodór jest lekki, ale nie „najlżejszy z gazów" w każdym sensie
+Wodór ma najmniejszą masę cząsteczkową spośród gazów, dlatego unosi się w powietrzu. Jego lekkość jest jednak praktycznym problemem: wodór jest bardzo łatwopalny, więc jego przechowywanie wymaga ostrożności (zadanie Z7b dotyczy tej cechy).
+:::
+
+::: karta extra | Kalkulator w konkursie
+Zakres LKO 2026/27 dopuszcza kalkulator prosty (dodawanie, odejmowanie, mnożenie, dzielenie) na każdym etapie. To nie zwalnia z zapisu obliczenia: w Z8 punkty dostaje się za zapis wzoru, nie za sam wynik.
+:::
+
 ::: log | LOG ZMIANY — 2026-10-13
 **Źródło:** odpowiedź zapisana surowo w `olimpiada/plany/LKO_2026_27/REV01_diagnoza_wejsciowa_ORYG.md`. Ta lekcja to przebudowa do formatu repo.
 
