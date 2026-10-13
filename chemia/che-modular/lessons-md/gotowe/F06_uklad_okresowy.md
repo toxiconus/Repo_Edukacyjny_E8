@@ -7,7 +7,7 @@ kicker: F06 · FUNDAMENTY · MASTER v1.1
 lead: Trzecia lekcja fazy B. Wiesz już, że pierwiastek wyznacza liczba protonów Z (F04, F05). Teraz uczymy się czytać układ okresowy jak mapę:
 lead: z „adresu” pierwiastka — okresu i grupy — odczytujemy budowę zewnętrznej powłoki i przewidujemy, jak pierwiastek się zachowa.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "W1 (audyt 06) wprowadzony — 2026-10-13"
+stan: "W1 (audyt 06, 06b) wprowadzony — 2026-10-13"
 stopka: **CHEMIA F06 v1.1 MASTER** · Układ okresowy · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 10 punktów
@@ -97,7 +97,7 @@ Pierwiastki są ułożone według rosnącej **liczby atomowej Z**, czyli liczby 
 
 To dlatego pierwiastki w jednej grupie są do siebie podobne — mają tyle samo elektronów walencyjnych. **Litowce** (grupa 1: Li, Na, K…) to miękkie, bardzo reaktywne metale, które łatwo oddają 1 elektron i tworzą jony 1+. **Berylowce** (grupa 2) oddają 2 elektrony. **Fluorowce** (grupa 17: F, Cl, Br, I) to reaktywne niemetale, które chętnie przyjmują 1 elektron i tworzą jony 1−. **Helowce** (grupa 18) mają zapełnioną powłokę zewnętrzną (oktet; hel — dublet) i prawie w ogóle nie reagują — to gazy szlachetne.
 
-Układ dzieli się też na **metale** (po lewej i w środku, ok. 3/4 pierwiastków), **niemetale** (prawy górny róg) i **półmetale** na granicy (np. krzem, german). Metale przewodzą prąd i ciepło, mają połysk, są kowalne; niemetale zwykle nie. Wyjątkowe miejsce zajmuje **wodór** — stoi w grupie 1, bo ma 1 elektron walencyjny, ale jest niemetalem i gazem.
+Układ dzieli się też na **metale** (po lewej i w środku, ok. 80% pierwiastków), **niemetale** (prawy górny róg) i **półmetale** na granicy (np. krzem, german). Metale przewodzą prąd i ciepło, mają połysk, są kowalne; niemetale zwykle nie. Wyjątkowe miejsce zajmuje **wodór** — stoi w grupie 1, bo ma 1 elektron walencyjny, ale jest niemetalem i gazem.
 
 Wreszcie **trendy**: w grupie w dół rośnie promień atomu (przybywa powłok) i rośnie aktywność metali; w okresie w prawo promień maleje (jądro silniej przyciąga elektrony), a rośnie charakter niemetaliczny. Na egzaminie wystarczy umieć z położenia odczytać: liczbę powłok, liczbę elektronów walencyjnych, typ pierwiastka i najczęstszy ładunek jonu.
 :::
@@ -191,6 +191,10 @@ Na: okres 3, grupa 1. Mg: okres 3, grupa 2. Cl: okres 3, grupa 17. Wszystkie maj
 Zadanie: z pamięci podaj symbol, okres i liczbę elektronów walencyjnych dla Mg, F i K. Sprawdź w tabeli.
 :::
 
+::: karta basic | Dodatkowe symbole na E8
+Zn — cynk (gr. 12, okres 4) · Br — brom (17, 4) · I — jod (17, 5) · Ag — srebro (11, 5; łac. *argentum*) · Au — złoto (11, 6; *aurum*) · Hg — rtęć (12, 6; *hydrargyrum*) · Pb — ołów (14, 6; *plumbum*) · Sn — cyna (14, 5; *stannum*)
+:::
+
 ## 3 | Elektrony walencyjne, jony i wartościowość [[basic:E8]] {#walencyjne}
 
 **Elektrony walencyjne** to elektrony zewnętrznej powłoki, w szkolnym modelu najważniejsze dla przewidywania, jak atom łączy się z innymi. Sód ma jeden elektron na zewnętrznej powłoce, chlor — siedem. Ta liczba pomaga przewidywać typowe jony i liczbę wiązań, ale nie jest sama w sobie pełnym opisem reaktywności; dokładna definicja zależy od modelu i rodzaju pierwiastka (pełniej — F07).
@@ -207,8 +211,8 @@ Zadanie: z pamięci podaj symbol, okres i liczbę elektronów walencyjnych dla M
 | 14 | 4 | węglowce | IV (węgiel także II, np. w CO) | zwykle brak (wiązania kowalencyjne) |
 | 15 | 5 | azotowce (pniktogeny) | III lub V | N³⁻ (w azotkach metali) |
 | 16 | 6 | tlenowce (chalkogeny) | II (wobec wodoru i metali); IV, VI (S wobec tlenu) | O²⁻, S²⁻ |
-| 17 | 7 | fluorowce (halogeny) | I (wobec metali i wodoru); Cl wobec tlenu: I, III, V, VII | F⁻, Cl⁻ |
-| 18 | 8 (He: 2) | gazy szlachetne (helowce) | w szkolnym modelu nie tworzą związków | brak |
+| 17 | 7 | fluorowce (halogeny) | I (wobec metali i wodoru); Cl wobec tlenu: I, III, IV, VI, VII | F⁻, Cl⁻ |
+| 18 | 8 (He: 2) | gazy szlachetne (helowce) | w szkolnym modelu nie tworzą związków (Xe i Kr tworzą nieliczne, np. XeF₂) | brak |
 
 ::: karta core | Elektrony walencyjne → kierunek tworzenia jonu
 Metale grup głównych **oddają** elektrony walencyjne → **kation** o ładunku = liczbie oddanych elektronów (Na → Na⁺, Mg → Mg²⁺, Al → Al³⁺). Niemetale grup 15–17 w związkach z metalami **przyjmują** brakujące do oktetu elektrony → **anion** (Cl: 7 + 1 = 8 → Cl⁻; O: 6 + 2 → O²⁻). Liczenie elektronów w jonie: e = Z − q (F05).
@@ -227,7 +231,7 @@ Metale grup głównych **oddają** elektrony walencyjne → **kation** o ładunk
 | S²⁻ | 16 | 18 | jak Ar |
 | Cl⁻ | 17 | 18 | jak Ar |
 
-**Wyjątki** (konfiguracja d — zob. F09): Ag⁺ ([Kr]4d¹⁰), Zn²⁺ ([Ar]3d¹⁰), Fe²⁺/Fe³⁺, Cu⁺/Cu²⁺. Nie są „jak gaz szlachetny”, więc nie stosuj tej reguły do nich bez sprawdzenia.
+**Wyjątki** (konfiguracja jonów d — zob. F07 §5): Ag⁺ ([Kr]4d¹⁰), Zn²⁺ ([Ar]3d¹⁰), Fe²⁺/Fe³⁺, Cu⁺/Cu²⁺. Nie są „jak gaz szlachetny”, więc nie stosuj tej reguły do nich bez sprawdzenia.
 :::
 
 ::: nie-myl
@@ -314,7 +318,7 @@ Mimo wspólnej z litowcami konfiguracji zewnętrznej wodór jest **niemetalem**:
 | Cecha | W dół grupy | W prawo okresu | Najkrócej: dlaczego |
 |---|---|---|---|
 | Promień atomowy | rośnie | maleje | w dół — nowa powłoka; w prawo — większy ładunek jądra przy tej samej powłoce mocniej ściąga elektrony |
-| Elektroujemność | maleje | rośnie | elektrony walencyjne bliżej jądra i silniej przyciągane → atom mocniej przyciąga wspólną parę |
+| Elektroujemność | maleje | rośnie | w prawo — rośnie ładunek jądra przy tej samej powłoce; w górę — mniej powłok, więc elektrony są bliżej jądra i silniej przyciągane. W dół grupy jest odwrotnie, więc maleje |
 | Energia jonizacji [[extra:AMBITNE]] | maleje | rośnie | trudniej oderwać elektron silnie przyciągany przez jądro |
 | Charakter metaliczny | rośnie | maleje | łatwiej oddać elektron walencyjny daleki od jądra |
 | Charakter niemetaliczny | maleje | rośnie | odwrotnie niż metaliczny |
@@ -384,13 +388,13 @@ W okresie 2 energia jonizacji nie rośnie równo: **Be (899 kJ/mol) > B (801)** 
 Problem: Czy litowce reagują z wodą podobnie i czy szybkość reakcji zależy od położenia w grupie?
 Hipoteza: Wszystkie dają wodorotlenek i wodór, a reakcja jest tym gwałtowniejsza, im niżej w grupie leży metal.
 Sprzęt: lit, sód, potas (małe grudki, przechowywane pod naftą), krystalizator z wodą, fenoloftaleina, osłona, okulary.
-Przebieg: Do krystalizatora z wodą i kilkoma kroplami fenoloftaleiny nauczyciel wrzuca kolejno grudkę litu, sodu i potasu (za każdym razem świeża woda). Gaz zbieramy w odwróconą probówkę i zbliżamy płomień — rozlega się „pyk” (test wodoru).
+Przebieg: Do krystalizatora z wodą i kilkoma kroplami fenoloftaleiny nauczyciel wrzuca kolejno grudkę litu, sodu i potasu (za każdym razem świeża woda). Przygotuj trzy krystalizatory z taką samą ilością wody i taką samą liczbą kropli fenoloftaleiny (czwarty — kontrolny — bez metalu). Wrzucaj kolejno równe, bardzo małe porcje Li, Na i K, za każdym razem do świeżej wody. Wodór z litu i sodu można zebrać w odwróconą probówkę i sprawdzić próbą „pyk”; potas zapala wodór sam, więc tej próby nie robimy.
 Obserwacja: Lit pływa i spokojnie wydziela gaz; sód topi się w kulkę i „biega” po powierzchni; potas reaguje bardzo gwałtownie, wydzielający się wodór zapala się fioletowym płomieniem. W każdym przypadku roztwór barwi się na malinowo.
 Wniosek (po teście wodoru „pyk”): Litowce reagują z wodą tak samo (podobieństwo w grupie: wodorotlenek + wodór), a reaktywność metali grupy 1 rośnie w dół grupy — elektron walencyjny jest coraz dalej od jądra i łatwiej go oddać.
 Równanie:: 2 Li + 2 H₂O → 2 LiOH + H₂↑
 Równanie:: 2 Na + 2 H₂O → 2 NaOH + H₂↑
 Równanie:: 2 K + 2 H₂O → 2 KOH + H₂↑
-BHP: wyłącznie pokaz nauczyciela za osłoną — sód i potas mogą rozprysnąć się lub wybuchnąć (zapłon wodoru); grudki wielkości ziarna grochu, kroić na sucho, nie dotykać palcami. Potas często nie jest dostępny w szkole — zamiast pokazu można obejrzeć film lub model.
+BHP: pokaz wyłącznie nauczyciela, za osłoną, w okularach i rękawicach. Porcje sodu wielkości ziarna ryżu, a potasu jeszcze mniejsze. Metale kroić na sucho, nie dotykać palcami. Resztek nie wyrzucać do zlewu — zbiera je nauczyciel. Potas często nie jest dostępny w szkole — zamiast pokazu można obejrzeć film lub model.
 :::
 
 @zlewka f06-doswiadczenia-v01 liH2o | Zobacz w zlewce: lit + woda
@@ -404,8 +408,8 @@ BHP: wyłącznie pokaz nauczyciela za osłoną — sód i potas mogą rozprysną
 Problem: Czy fluorowce mają podobne właściwości i jak zmienia się ich aktywność w grupie?
 Hipoteza: Aktywność fluorowców maleje w dół grupy, więc fluorowiec położony wyżej wypiera niższy z jego soli.
 Sprzęt: woda chlorowa (Cl₂), woda bromowa (Br₂), woda jodowa (I₂), roztwory KBr i KI, probówki, kleik skrobiowy.
-Przebieg: Do roztworu KBr dodajemy wodę chlorową; do roztworu KI — wodę chlorową, a w drugiej probówce wodę bromową; do roztworu KBr — wodę jodową. Próba kontrolna: woda jodowa z wodą (bez soli) — barwa do porównania; jod wykrywamy kleikiem skrobiowym (granatowa barwa).
-Obserwacja: KBr + woda chlorowa — roztwór żółknie, potem staje się pomarańczowy; KI + woda chlorowa i KI + woda bromowa — roztwór brunatnieje (ze skrobią granatowy); KBr + woda jodowa — barwa taka jak w próbie kontrolnej, bez granatu ze skrobią (brak reakcji).
+Przebieg: Do roztworu KBr dodajemy wodę chlorową. Do roztworu KI dodajemy wodę chlorową, a w drugiej probówce wodę bromową; do tych dwóch prób dodajemy potem kroplę kleiku skrobiowego. Do roztworu KBr dodajemy wodę jodową — w tej próbie **nie używamy skrobi**, bo jod w wodzie jodowej zawsze barwi ją na granatowo. Próba kontrolna: woda jodowa zmieszana z taką samą ilością wody (bez soli) — barwę porównujemy z probówką KBr + woda jodowa.
+Obserwacja: KBr + woda chlorowa — roztwór żółknie, potem staje się pomarańczowy; KI + woda chlorowa i KI + woda bromowa — roztwór brunatnieje (ze skrobią granatowy); KBr + woda jodowa — barwa taka sama jak w próbie kontrolnej, bez zmiany: brak reakcji.
 Wniosek: Chlor wypiera brom i jod, brom wypiera jod, jod nie wypiera bromu: aktywność fluorowców maleje w dół grupy (Cl > Br > I). Fluor jest jeszcze aktywniejszy, ale reaguje gwałtownie z wodą, więc nie testujemy go w roztworze wodnym. Uwaga: nadmiar wody chlorowej utlenia jod dalej (brunatna barwa znika) — to ograniczenie testu.
 Równanie:: Cl₂ + 2 KBr → 2 KCl + Br₂
 Równanie:: Cl₂ + 2 KI → 2 KCl + I₂
@@ -461,6 +465,8 @@ Z samego położenia pierwiastka wyciągniesz cztery informacje. **Okres** → l
 | „Fe leży w grupie 8, więc ma 8 e⁻ walencyjnych.” | Fe to metal przejściowy — reguła grup głównych go nie obejmuje; zmienne stopnie utlenienia (Fe²⁺, Fe³⁺). | Grupy 3–12 mają inne zasady (§8). |
 | „Hel jest w grupie 2.” | Hel stoi w grupie 18 (blok s, dublet). | Zapełniona powłoka decyduje o grupie gazów szlachetnych. |
 | „Z i masa atomowa mają zawsze tę samą kolejność.” | Nie zawsze: Ar (39,95 u) stoi przed K (39,10 u). | Porządek według Z (Moseley). |
+| „Cl⁻ i Ar to to samo, bo mają tyle samo elektronów.” | Mają taką samą konfigurację (są izoelektronowe), ale różnią się liczbą protonów. | Cl⁻: 17 p⁺, 18 e⁻; Ar: 18 p⁺, 18 e⁻. |
+| „Metal to zawsze twardy i ciężki pierwiastek.” | Na i K są miękkie, a rtęć jest cieczą. | Metal oznacza przewodnictwo, połysk i tworzenie kationów, nie twardość. |
 :::
 
 ::: karta error | Klinika — przykład 1: „Grupa = wartościowość”
@@ -572,11 +578,11 @@ Cl (3,16) — leży po prawej stronie tego samego okresu; Na ma 0,93.
 21. Jak z położenia w układzie przewidzieć wzór tlenku o najwyższej wartościowości pierwiastka?
 
 ::: odp | Pokaż odpowiedzi
-17. Blok s: grupy 1, 2 (i He); p: 13–18; d: 3–12; f: lantanowce i aktynowce — nazwa od podpowłoki obsadzanej na końcu. 18. Mają elektrony na dwóch podpowłokach (ns i (n−1)d) o podobnych energiach. 19. Energia potrzebna do oderwania elektronu od atomu (w stanie gazowym); rośnie w prawo i w górę. 20. Tlenek to związek dwupierwiastkowy z tlenem (tlen na −II); H₂O to tlenek wodoru — o tym, czy coś jest tlenkiem, decyduje skład, a nie grupa pierwiastka. H₂SO₄ i NaOH mają tlen, ale więcej niż dwa pierwiastki, więc tlenkami nie są. 21. Wartościowość maksymalna = liczba elektronów walencyjnych: grupa 1 → E₂O, 2 → EO, 13 → E₂O₃, 14 (C, Si) → EO₂, 15 → E₂O₅, 16 → EO₃, 17 (Cl) → E₂O₇ (N02 Tlenki).
+17. Blok s: grupy 1, 2 (i He); p: 13–18; d: 3–12; f: lantanowce i aktynowce — nazwa od podpowłoki obsadzanej na końcu. 18. Mają elektrony na dwóch podpowłokach (ns i (n−1)d) o podobnych energiach. 19. Energia potrzebna do oderwania elektronu od atomu (w stanie gazowym); rośnie w prawo i w górę. 20. Tlenek to związek dwupierwiastkowy z tlenem (tlen na −II); H₂O to tlenek wodoru — o tym, czy coś jest tlenkiem, decyduje skład, a nie grupa pierwiastka. H₂SO₄ i NaOH mają tlen, ale więcej niż dwa pierwiastki, więc tlenkami nie są. 21. Wartościowość maksymalna = liczba elektronów walencyjnych: grupa 1 → E₂O, 2 → EO, 13 → E₂O₃, 14 (C, Si) → EO₂, 15 → E₂O₅, 16 → EO₃, 17 (Cl) → E₂O₇ (N02 Tlenki). Uwaga: reguła nie dotyczy fluoru (zawsze I) i tlenu (w tlenkach II), a gazy szlachetne w szkolnym modelu nie tworzą tlenków.
 :::
 :::
 
-::: karta understand | Przeplatane — powtórka F04–F06
+::: karta understand | E. Przeplatane — powtórka F04–F06
 1. Co to jest Z? (F04)
 2. Ile neutronów ma ¹²C? (F04–F05)
 3. W której grupie jest sód? (F06)
@@ -631,6 +637,26 @@ Cl (3,16) — leży po prawej stronie tego samego okresu; Na ma 0,93.
 
 ::: odp | Pokaż odpowiedzi
 1. S (Z = 16; 2, 8, 6). 2. F (Z = 9; 2, 7). 3. Ca (Z = 20; 2, 8, 8, 2). 4. 2 (dublet) — zapełniona powłoka, jak u gazów szlachetnych; grupa 18 wynika z zapełnionej powłoki, nie z podpowłoki s. 5. Reguła jest przybliżeniem; wyjątki (np. Pd) pokazują, że trzeba ją stosować ostrożnie.
+:::
+:::
+
+::: karta exam | H. Fragment układu i zadania własne (E8 + ambitne, 14 pkt)
+**H1 (E8, 4 pkt) — odczyt z fragmentu układu.** W fragmencie układu pierwiastki oznaczono literami (litery nie są symbolami): X — okres 2, grupa 17; Y — okres 3, grupa 17; Z — okres 3, grupa 1. a) Podaj symbole chemiczne X, Y i Z. b) Który z nich ma największy promień atomu? c) Podaj wzór związku Y z Z i rodzaj wiązania.
+
+**H2 (E8, 2 pkt) — znajdź błąd.** „Magnez leży w grupie 2 i okresie 3, więc ma 2 powłoki i 3 elektrony walencyjne.” Popraw zdanie.
+
+**H3 (ambitne, 5 pkt) — przewidywanie.** Gal (Ga) leży w okresie 4 i grupie 13. a) Podaj liczbę powłok. b) Podaj liczbę elektronów walencyjnych. c) Podaj typowy jon i wzór tlenku. d) Dlaczego Mendelejew mógł przewidzieć jego właściwości wcześniej (jako „ekaglin”)? (4 pkt za a–c, 1 pkt za uzasadnienie d.)
+
+**H4 (ambitne, 3 pkt) — elektroujemność.** Uszereguj rosnąco: Mg, Si, S, Cl. Uzasadnij jednym zdaniem.
+
+**H5 (konkursowe, 3 pkt) — promienie izoelektronowe.** Uszereguj rosnąco promienie: O²⁻, F⁻, Na⁺, Mg²⁺. Wszystkie mają 10 elektronów. Dlaczego różnią się wielkością?
+
+::: odp | Pokaż klucz
+H1: a) F, Cl, Na (1 pkt). b) Na — ma tyle samo powłok co Cl, ale mniejszy ładunek jądra, więc słabiej ściąga elektrony (1 pkt). c) NaCl, wiązanie jonowe (2 pkt).
+H2: Odwrócone. Okres 3 → 3 powłoki (2, 8, 2); grupa 2 → 2 elektrony walencyjne. Poprawnie: „Magnez ma 3 powłoki i 2 elektrony walencyjne.” (2 pkt).
+H3: a) 4 powłoki; b) 3 e⁻; c) Ga³⁺, Ga₂O₃ (po 1 pkt); d) leży pod glinem w tej samej grupie, więc ma podobną budowę zewnętrznej powłoki i podobne właściwości (1 pkt).
+H4: Mg < Si < S < Cl (χ: 1,31; 1,90; 2,58; 3,16) (2 pkt). Ten sam okres, rosnący ładunek jądra przy tej samej liczbie powłok (1 pkt).
+H5: Mg²⁺ < Na⁺ < F⁻ < O²⁻ (2 pkt). Liczba elektronów jest ta sama, a ładunek jądra rośnie od O (8 protonów) do Mg (12), więc te same 10 elektronów jest coraz mocniej przyciągane (1 pkt).
 :::
 :::
 
@@ -806,15 +832,17 @@ SiO₂ (IV), P₂O₅ (V), SO₃ (VI) — po 1 pkt za poprawny wzór; uzasadnien
 ! Berylowce oddają 2 elektrony walencyjne.
 
 ? Dlaczego argon stoi przed potasem, mimo większej masy atomowej?
-- bo ma mniejszą masę
+- bo ma mniejszą masę atomową od potasu
 + bo ma mniejszą liczbę atomową Z (18 < 19)
-- bo jest gazem szlachetnym
+- bo jest gazem szlachetnym o zapełnionej powłoce
+- bo ma mniej elektronów walencyjnych w powłoce zewnętrznej
 ! Układ porządkuje pierwiastki według Z (Moseley).
 
 ? Jak zmienia się aktywność fluorowców w dół grupy?
 - rośnie
 + maleje
 - nie zmienia się
+- zmienia się nieregularnie
 ! Cl > Br > I.
 :::
 
@@ -909,7 +937,7 @@ Promień atomowy :: miara rozmiaru atomu; rośnie w dół grupy, maleje w prawo 
 Lantanowce :: pierwiastki Z 57–71 (blok f, okres 6)
 Aktynowce :: pierwiastki Z 89–103 (blok f, okres 7)
 Metale alkaliczne :: litowce (grupa 1, bez wodoru)
-Metale ziem alkalicznych :: Ca, Sr, Ba, Ra (grupa 2 bez berylowców)
+Metale ziem alkalicznych :: Ca, Sr, Ba, Ra — berylowce z wyjątkiem berylu i magnezu
 Pniktogeny :: azotowce, grupa 15
 Chalkogeny :: tlenowce, grupa 16
 Borowce :: grupa 13
@@ -986,3 +1014,29 @@ Nieprzyjęte / sprawdzone:
 - B6 — audyt wskazywał pytania bez `!`; w wersji przed audytem wszystkie miały `!` — zostaje.
 - C — znacznik „[[extra:LO]]” zmieniony na „[[extra:AMBITNE]]” we wszystkich miejscach (nagłówek doświadczenia i tabela §7), spójnie z resztą kursu. `$$` w jednej linii zostaje (konwencja silnika).
 - Odwołanie „F21” nie występuje w tej lekcji — brak zmian.
+
+## AUDYT W1 — audyt 06b (2026-10-13)
+
+Wprowadzono:
+- Błąd 1 (skrobia w próbie z wodą jodową): przebieg przepisany — skrobia tylko przy KI i KBr z wodą chlorową/bromową; próba kontrolna z wodą jodową; w wodzie jodowej nie używa się skrobi (P1).
+- Błąd 2 (słownik, berylowce): „berylowce z wyjątkiem berylu i magnezu” (P2).
+- Błąd 3 (odsyłacz): „konfiguracja jonów d — zob. F07 §5” (F09 to wartościowość).
+- Błąd 4 (Cl wobec tlenu): dodano wartościowość IV (ClO₂).
+- Błąd 5 (metale ok. 80%).
+- Błąd 6 (elektroujemność — mechanizm w obu kierunkach; P4).
+- Błąd 7 (etykieta E dla bloku „Przeplatane”).
+- Błąd 8 (klucz 21 — wyjątki F i O, gazy szlachetne; P5).
+- Błąd 9 (doświadczenie 1 — próba kontrolna, porcje, potas bez próby „pyk”, BHP; P6).
+- Błąd 10 (gazy szlachetne: XeF₂ w tabeli).
+- Błąd 11 (test — czwarty dystraktor w dwóch pytaniach, wyrównane długości).
+- Uzupełnienie U1 (symbole Zn, Br, I, Ag, Au, Hg, Pb, Sn).
+- Uzupełnienie U2 i U3 — sekcja H (zadanie H1 z fragmentem układu, H2–H5 z kluczami).
+- Uzupełnienie U4 — dwa wiersze do kliniki.
+
+Poprawione względem propozycji:
+- Cl wobec tlenu: propozycja podawała I, III, IV, V, VII; wpisano I, III, IV, VI, VII (Cl₂O₆ jest częstszy w tablicach niż Cl₂O₅, którego w szkole się nie używa).
+- H3: zadanie oznaczone 5 pkt (4 pkt za a–c, 1 pkt za uzasadnienie), bo propozycja liczyła 4 pkt przy 5 składnikach.
+- Odsyłacz w U-blokach: „F09” w propozycji zastąpiono „F07 §5” zgodnie z treścią lekcji.
+- H2: klucz z propozycji zachowany bez zmian merytorycznych (3 powłoki, 2 elektrony walencyjne).
+
+Nieprzyjęte: brak uwag odrzuconych w całości. „Bez uwag” z audytu potwierdzone (klucze diagnozy, mini-check, A–D, F–G, O1–O6, wartości Pauling, energie jonizacji).
