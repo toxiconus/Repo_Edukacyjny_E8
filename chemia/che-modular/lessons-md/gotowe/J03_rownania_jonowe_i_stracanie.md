@@ -1,239 +1,590 @@
 ---
 kod: J03
 tytul: Równania jonowe, strącanie osadów, sól z soli, kwas z soli
-opis: równanie cząsteczkowe · równanie jonowe pełne · równanie jonowe skrócone · jony obserwatorowe · dysocjacja elektrolityczna · elektrolity mocne i słabe · tabela rozpuszczalności · strącanie osadów · barwy osadów · otrzymywanie soli · kwas z soli · sól z soli · wykrywanie jonów · bilans ładunków
-kicker: J03 · CHEMIA · Substancje i ich przemiany — reakcje w roztworach · E8 / KONKURS
-lead: W probówce z dwiema solami dzieje się coś, czego nie widać w równaniu cząsteczkowym: większość jonów tylko patrzy, a reakcję gra kilka „aktorów”. Nauczysz się zapisywać to, co naprawdę zachodzi — w trzech poziomach coraz bliższych prawdzie.
-lead: Opanujesz algorytm zapisu cząsteczkowego → jonowego pełnego → skróconego, tabelę rozpuszczalności i barwy osadów, przewidywanie, kiedy reakcja w ogóle zachodzi, oraz projektowanie otrzymywania soli i wykrywania jonów — od poziomu egzaminu ósmoklasisty po etap rejonowy konkursu.
+opis: równanie cząsteczkowe · równanie jonowe pełne · równanie jonowe skrócone · jony obserwatorowe · dysocjacja elektrolityczna · elektrolity mocne i słabe · tabela rozpuszczalności · strącanie osadów · barwy osadów · otrzymywanie soli · kwas z soli · sól z soli · wykrywanie jonów · bilans atomów i ładunków
+uid: che-j03-rownania-jonowe
+kicker: J03 · CHEMIA · Substancje i ich przemiany — reakcje w roztworach · SZKOŁA PODSTAWOWA / KONKURS
+lead: Po zmieszaniu roztworów dwóch soli większość jonów może pozostać niezmieniona, a tylko niektóre utworzą nową substancję. Nauczysz się opisywać tę samą przemianę równaniem cząsteczkowym, jonowym pełnym i jonowym skróconym, przewidywać strącanie osadów oraz projektować otrzymywanie soli i wykrywanie jonów.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Na poziomie egzaminu ósmoklasisty dominują równania cząsteczkowe, obserwacje i proste strącanie; równania jonowe pełne i skrócone to poziom konkursowy (etap rejonowy LKO). Tabela rozpuszczalności i barwy osadów obowiązkowe w obu warstwach. Reakcja „kwas z soli” z NaCl i stężonym H₂SO₄ opisana jako poziom rozszerzony. Barwy i rozpuszczalności graniczne (AgBr, AgI, CaSO₄) podano według konwencji szkolnych — wersje tabel różnią się między podręcznikami.
-stopka: **CHEMIA J03 v1.0** · Równania jonowe, strącanie osadów, sól z soli, kwas z soli · 2026
-stan: WYPEŁNIONY — AI z paczki GOTOWE ZAI (podpis: Claude), 2026-10-12, z materiału OLI.CHE.J03; do W1
+uwaga: Plakietka E8 oznacza w tej lekcji poziom szkoły podstawowej, nie zakres egzaminu ósmoklasisty z chemii. Egzamin ósmoklasisty nie obejmuje chemii. Podstawowa warstwa lekcji dotyczy szkolnej nauki o solach, dysocjacji i strącaniu osadów; zapis jonowy pełny, pogłębiona analiza jonowa oraz interferencje rozwijają rozumienie i przygotowanie konkursowe. Szczegółowy zakres konkursu zależy od jego regulaminu. Reakcja NaCl ze stężonym H₂SO₄ należy do rozszerzenia. Oznaczenia rozpuszczalności odczytuj z tabeli dołączonej do zadania, szczególnie dla CaSO₄, Ca(OH)₂ i PbCl₂.
+stopka: CHEMIA J03 · Równania jonowe, strącanie osadów, sól z soli, kwas z soli · Materiał do samodzielnej nauki · 2026
+stan: ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia
 ---
 
 ::: minimum | Muszę umieć — 10 punktów
-1. Zapisuję równanie reakcji w roztworze na trzech poziomach: cząsteczkowym (zbilansowane wzory sumaryczne) → jonowym pełnym → jonowym skróconym.
-2. Rozpisuję na jony tylko mocne elektrolity w roztworze: sole rozpuszczalne, mocne kwasy, mocne zasady.
-3. Nie rozpisuję na jony osadów, gazów, wody i słabych elektrolitów — zostają w formie cząsteczkowej.
-4. Skracam w równaniu jonowym skróconym tylko te jony, które występują niezmienione po obu stronach (jony obserwatorowe) — i nie zostawiam żadnego z nich w zapisie skróconym.
-5. Sprawdzam bilans: liczba atomów każdego pierwiastka oraz suma ładunków po lewej stronie równania skróconego równa się sumie ładunków po prawej.
-6. Korzystam z tabeli rozpuszczalności regułami, nie mechanicznie: azotany i sole Na⁺, K⁺, NH₄⁺ rozpuszczalne; wyjątki chlorków (AgCl, PbCl₂, Hg₂Cl₂) i siarczanów(VI) (BaSO₄, PbSO₄, CaSO₄, SrSO₄) znam z pamięci.
-7. Przewiduję powstanie osadu i podaję jego barwę: AgCl — biały serowaty, Cu(OH)₂ — niebieski, Fe(OH)₂ — brudnozielony, Fe(OH)₃ — brunatny, PbI₂ — żółty, BaSO₄ — biały.
-8. Wymieniam trzy powody, dla których reakcja w roztworze zachodzi: powstaje osad, wydziela się gaz albo powstaje słaby elektrolit (np. woda).
-9. Otrzymuję sól z soli (strącanie), sól z zasady, kwas z soli (wypieranie gazu lub słabego kwasu) i projektuję te drogi z odczynników, które mam pod ręką.
-10. Projektuję wykrywanie jonów: Cl⁻ (AgNO₃ — biały osad), SO₄²⁻ (odczynnik z Ba²⁺ w zakwaszonym środowisku — biały osad), CO₃²⁻ (kwas → CO₂↑, potwierdzony zmętnieniem wody wapiennej), Cu²⁺/Fe²⁺/Fe³⁺ (NaOH — barwy osadów) — z kontrolą zakłóceń.
+1. Zapisuję reakcję w roztworze na trzech poziomach: cząsteczkowym → jonowym pełnym → jonowym skróconym. Na każdym poziomie zachowuję bilans atomów.
+2. Rozpisuję na jony mocne elektrolity obecne w roztworze wodnym: rozpuszczalne sole, mocne kwasy i rozpuszczone mocne zasady.
+3. Nie rozpisuję na jony osadów, gazów, wody i słabych elektrolitów. Zachowuję ich wzory w zapisie jonowym.
+4. Usuwam z równania jonowego pełnego tylko jednakowe ilości tych samych jonów występujących niezmienionych po obu stronach. Są to jony obserwatorowe.
+5. Sprawdzam dwa bilanse: liczbę atomów każdego pierwiastka oraz sumę ładunków elektrycznych po obu stronach równania.
+6. Korzystam z tabeli rozpuszczalności i szkolnych reguł: azotany(V) oraz typowe sole Na⁺, K⁺ i NH₄⁺ są rozpuszczalne; znam wyjątki chlorków — AgCl, PbCl₂, Hg₂Cl₂ — oraz siarczanów(VI) — BaSO₄, PbSO₄, CaSO₄, SrSO₄. Rozróżniam substancje dobrze i trudno rozpuszczalne.
+7. Przewiduję powstanie osadu i podaję jego barwę: AgCl — biały, serowaty; Cu(OH)₂ — niebieski; Fe(OH)₂ — brudnozielony; Fe(OH)₃ — brunatny; PbI₂ — żółty; BaSO₄ — biały.
+8. Wskazuję trzy typowe czynniki sprzyjające reakcjom wymiany w roztworach: powstanie osadu, wydzielenie gazu albo powstanie słabego elektrolitu, na przykład wody. Wiem, że nie jest to pełna lista wszystkich możliwych reakcji w roztworach.
+9. Projektuję otrzymywanie soli z soli, soli w reakcji z zasadą oraz przemiany określane szkolnie jako „kwas z soli”. Dobieram odczynniki i sposób oddzielenia produktu.
+10. Projektuję wykrywanie jonów: Cl⁻ — AgNO₃ po zakwaszeniu rozcieńczonym HNO₃; SO₄²⁻ — odczynnik z Ba²⁺ w odpowiednio zakwaszonej próbce; CO₃²⁻ — kwas i potwierdzenie CO₂ wodą wapienną; Cu²⁺, Fe²⁺ i Fe³⁺ — NaOH i barwy osadów. Uwzględniam możliwe zakłócenia.
 :::
 
 ::: warstwy
-- e8 | <b>Podstawa:</b> równania cząsteczkowe zobojętniania i strącania, tabela rozpuszczalności, barwy osadów, obserwacje (↓, ↑, zmiana barwy), otrzymywanie soli z kwasu, zasady i soli, wykrywanie jonów — dokładnie poziom arkusza E8.
-- understand | <b>Rozumienie:</b> dlaczego rozpisujemy tylko mocne elektrolity, skąd biorą się jony obserwatorowe, dlaczego reakcja bez osadu, gazu i wody to w rzeczywistości „nie-reakcja”, dlaczego bilans ładunków jest tak samo obowiązkowy jak bilans atomów.
-- contest | <b>Konkurs:</b> pełny algorytm trzech poziomów, bilans ładunków w równaniach skróconych, projektowanie syntezy (sól z soli, kwas z soli), reakcje interferencyjne przy wykrywaniu jonów (Ag₂CO₃ a AgCl, BaCO₃ a BaSO₄), znajdowanie błędów w zapisach, analiza dwóch reakcji w jednym układzie (Ba(OH)₂ + H₂SO₄).
-- extra | <b>Ambitne:</b> konwencja H⁺ a jon hydroniowy H₃O⁺, równowaga dysocjacji słabych elektrolitów (⇌), dlaczego tabela rozpuszczalności działa (energia sieci kontra hydratacja — zarys), „złoty deszcz” PbI₂, barowa papka jako zastosowanie nierozpuszczalności BaSO₄.
+- e8 | <b>Podstawa:</b> szkolne równania cząsteczkowe zobojętniania i strącania, dysocjacja soli, tabela rozpuszczalności, obserwacje, otrzymywanie soli oraz proste wnioskowanie z doświadczeń. Oznaczenie E8 jest nazwą warstwy kursu, nie informacją o istnieniu egzaminu ósmoklasisty z chemii.
+- understand | <b>Rozumienie:</b> dlaczego nie wszystkie substancje rozpisujemy na jony, czym są jony obserwatorowe, dlaczego zmieszanie roztworów nie musi oznaczać reakcji oraz dlaczego bilans ładunków jest równie ważny jak bilans atomów.
+- contest | <b>Konkurs:</b> pełny algorytm trzech poziomów zapisu, bilans ładunków, projektowanie syntezy, zakłócenia przy wykrywaniu jonów, poprawianie błędnych równań oraz analiza jednoczesnego strącania i zobojętniania w układzie Ba(OH)₂ + H₂SO₄.
+- extra | <b>Ambitne:</b> konwencja H⁺ i jon H₃O⁺, równowaga dysocjacji słabych elektrolitów, zależność strącania od stężeń, energia sieci krystalicznej i hydratacja, „złoty deszcz” PbI₂ oraz zastosowanie trudno rozpuszczalnego BaSO₄ w diagnostyce.
 :::
 
 ::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
-- [§1](#wyklad) — Wykład od zera: teatr chemiczny i jego trzypoziomowy zapis.
-- [§2](#poziomy) — Trzy poziomy równania: algorytm krok po kroku.
-- [§3](#elektrolity) — Elektrolity: co rozpisujemy na jony, a co zostawia.
-- [§4](#rozpuszczalnosc) — Tabela rozpuszczalności: reguły i wyjątki.
+- [§1](#wyklad) — Wykład od zera: teatr chemiczny i trzy poziomy opisu.
+- [§2](#poziomy) — Algorytm zapisu równania cząsteczkowego, jonowego pełnego i skróconego.
+- [§3](#elektrolity) — Dysocjacja i elektrolity: co rozpisujemy na jony.
+- [§4](#rozpuszczalnosc) — Tabela rozpuszczalności: reguły, wyjątki i ograniczenia.
 - [§5](#kiedy-zachodzi) — Kiedy reakcja w roztworze zachodzi.
 - [§6](#osady) — Osady i ich barwy.
-- [§7](#otrzymywanie) — Otrzymywanie soli: pięć dróg.
-- [§8](#wykrywanie) — Wykrywanie jonów.
-- [§10](#zadania-konkurs) — Zadania konkursowe oraz [§16](#test) — test końcowy.
+- [§7](#otrzymywanie) — Otrzymywanie soli: pięć rozpatrywanych dróg.
+- [§8](#wykrywanie) — Wykrywanie jonów i kontrola zakłóceń.
+- [§10](#zadania-konkurs) — Zadania konkursowe.
+- [§16](#test) — Test końcowy.
 :::
 
 ## 0.1 | Jak pracować z lekcją {#jak-pracowac}
 
-Cel tej lekcji: **zapisywać reakcje zachodzące między jonami w roztworach wodnych na trzech poziomach, przewidywać, kiedy reakcja w ogóle zachodzi, oraz projektować otrzymywanie soli i wykrywanie jonów**. Kryterium gotowości wygląda tak:
+Cel lekcji: samodzielnie zapisywać reakcje między jonami w roztworach wodnych, przewidywać powstawanie osadów oraz projektować otrzymywanie soli i wykrywanie jonów.
 
-1. Zapisujesz trzy poziomy równania: cząsteczkowe → jonowe pełne → jonowe skrócone.
-2. Korzystasz z tabeli rozpuszczalności lub reguł.
-3. Przewidujesz powstanie osadu i jego barwę.
-4. Projektujesz sposób otrzymania soli i wykrycia jonów.
-5. Unikasz typowych błędów: jony-widzowie w zapisie skróconym, brak ↓, mylenie barw.
+Gotowość do przejścia dalej sprawdzisz po tym, czy:
+
+1. Zapisujesz tę samą reakcję na trzech poziomach.
+2. Korzystasz z tabeli rozpuszczalności, a nie wyłącznie z pamięci.
+3. Przewidujesz osad i podajesz jego barwę.
+4. Dobierasz odczynniki do otrzymania produktu lub wykrycia jonu.
+5. Rozpoznajesz błędy: pozostawienie jonów obserwatorowych, niewłaściwe współczynniki, pomylenie barw i brak informacji o stanie produktu.
 
 Kolejność pracy:
 
-1. Przeczytaj listę „Muszę umieć — 10 punktów” i zrób diagnozę ([§0.2](#diagnoza)) — przekonasz się, od którego miejsca zacząć.
-2. Wykład ([§1](#wyklad)) daje jedną ideę, która spina całą lekcję: w roztworze grają aktorzy, a większość jonów to widownia.
-3. Przerabiaj sekcje 2–8 po kolei — algorytm z [§2](#poziomy) wraca w każdym zadaniu. Najpierw odpowiedź na kartce, potem klucz: klucz czytany bez próby uczy czterokrotnie słabiej.
-4. Doświadczenia z [§9](#doswiadczenia) traktuj zgodnie z BHP; próba kontrolna jest częścią wnioskowania, nie ozdobą.
-5. Zadania konkursowe ([§10](#zadania-konkurs)) i warstwa olimpijska ([§11](#olimpijczyk)) — gdy podstawa jest pewna; tam czekają interferencje i pułapki zapisu.
-6. Test końcowy ([§16](#test)) rozwiązuj bez zaglądania do lekcji; błędne odpowiedzi wskażą sekcje do powrotu.
-7. Fiszki ([§17](#fiszki)) powtarzaj partiami i regularnie, a przed sprawdzianem przeczytaj ściągę i odhacz checklistę ([§20](#sciaga)).
+1. Przeczytaj listę „Muszę umieć — 10 punktów” i rozwiąż diagnozę w [§0.2](#diagnoza). Pozwoli ci ustalić, co już rozumiesz.
+2. Przeczytaj wykład w [§1](#wyklad). Jego obraz przewodni to teatr: niektóre jony są aktorami przemiany, inne pozostają widzami.
+3. Pracuj kolejno z sekcjami 2–8. Najpierw samodzielnie zapisz rozwiązanie, następnie otwórz klucz. Porównaj nie tylko wynik, lecz także tok rozumowania.
+4. Doświadczenia z [§9](#doswiadczenia) analizuj razem z zasadami bezpieczeństwa. Próby ze związkami srebra, baru, ołowiu, kwasami i zasadami nie są instrukcjami do samodzielnego wykonywania w domu.
+5. Gdy podstawa jest pewna, przejdź do zadań konkursowych w [§10](#zadania-konkurs) i pogłębienia w [§11](#olimpijczyk).
+6. Test w [§16](#test) rozwiąż bez zaglądania do treści. Błędna odpowiedź wskazuje zagadnienie do ponownego przepracowania.
+7. Fiszki z [§17](#fiszki) wykorzystaj do odtwarzania odpowiedzi z pamięci. Następnie sprawdź ściągę i checklistę w [§20](#sciaga).
 
-Przydatne wcześniej (nieobowiązkowe — wykład tłumaczy wszystko od zera): pojęcie jonu i ładunku, wzory soli i nazwy kwasów, podstawy bilansowania równań. Reakcje wypierania metalu z soli opisuje lekcja CHE-X04 — tutaj pojawiają się jedynie jako jedna z dróg otrzymywania soli; obliczenia z nadmiarem rozwija lekcja CHE-R07.
+Przydatne wiadomości wcześniejsze: pojęcie jonu i jego ładunku, wzory soli, nazwy kwasów oraz podstawy bilansowania równań. Wykład przypomina je od początku, więc brak pewności nie przekreśla samodzielnej pracy.
+
+Reakcje wypierania metalu z soli rozwija lekcja CHE-X04. Tutaj występują jako jedna z dróg otrzymywania soli. Obliczenia z nadmiarem substratu rozwija lekcja CHE-R07.
+
+::: karta warning | Zakres szkolny a egzamin ósmoklasisty
+Chemia jest przedmiotem szkolnym, ale nie należy do przedmiotów egzaminu ósmoklasisty. W tej lekcji plakietka [[basic:E8]] oznacza podstawową warstwę dla ucznia szkoły podstawowej. Zadania chemiczne nie są przedstawiane jako autentyczne zadania egzaminu ósmoklasisty CKE.
+:::
 
 ## 0.2 | Diagnoza {#diagnoza}
 
-Odpowiedz na kartce, bez zaglądania do lekcji. Potem sprawdź klucz i policz punkty.
+Odpowiedz samodzielnie, a dopiero potem sprawdź klucz. Za każde pytanie możesz otrzymać 1 pkt, łącznie 5 pkt.
 
-1. Wymień trzy poziomy zapisu reakcji w roztworze — w kolejności od najbardziej „sumarycznego” do najbliższego prawdzie.
-2. Których substancji nie rozpisujemy na jony w równaniu jonowym? Podaj cztery przykłady kategorii.
-3. Jaka barwa osadu węglanu wapnia, a jaka — wodorotlenku miedzi(II)?
-4. Zapisz równanie jonowe skrócone reakcji AgNO₃ z NaCl.
-5. Czy po zmieszaniu roztworów NaNO₃ i KCl powstanie osad? Uzasadnij jednym zdaniem.
+1. Wymień trzy poziomy zapisu reakcji w roztworze — od zapisu wzorami związków do zapisu samej przemiany jonów.
+2. Podaj cztery kategorie substancji, których nie rozpisujemy na jony w typowym szkolnym równaniu jonowym pełnym.
+3. Jaka jest barwa osadu węglanu wapnia, a jaka wodorotlenku miedzi(II)?
+4. Zapisz równanie jonowe skrócone reakcji roztworów AgNO₃ i NaCl.
+5. Czy po zmieszaniu roztworów NaNO₃ i KCl powstanie osad? Uzasadnij.
 
 ::: odp | Klucz diagnozy
-1. (1 pkt) Cząsteczkowe → jonowe pełne → jonowe skrócone.
-2. (1 pkt) Osady (↓), gazy (↑), woda (słaby elektrolit), słabe elektrolity (np. słabe kwasy i słabe zasady).
-3. (1 pkt) CaCO₃ — biały; Cu(OH)₂ — niebieski.
-4. (1 pkt) Ag⁺ + Cl⁻ → AgCl↓ (ze strzałką osadu).
-5. (1 pkt) Nie — potencjalne produkty (KNO₃ i NaCl) są dobrze rozpuszczalne, więc wszystkie jony pozostają w roztworze jako obserwatorowe i nie zachodzi żadna reakcja netto.
+1. (1 pkt) Równanie cząsteczkowe → równanie jonowe pełne → równanie jonowe skrócone.
+2. (1 pkt) Osady, gazy, woda i słabe elektrolity. Woda jest wymieniona osobno jako szczególnie ważny przykład bardzo słabo jonizującej substancji. Punkt za podanie wszystkich czterech kategorii.
+3. (1 pkt) CaCO₃ — biały; Cu(OH)₂ — niebieski. Punkt za obie barwy.
+4. (1 pkt) Ag⁺ + Cl⁻ → AgCl↓. Punkt za poprawne jony, produkt, współczynniki i oznaczenie osadu.
+5. (1 pkt) Nie. Potencjalne produkty wymiany, KNO₃ i NaCl, są dobrze rozpuszczalne. Nie ma podstaw do zapisania reakcji strącania ani innej rozpatrywanej tutaj reakcji netto.
 :::
 
-Rozliczenie: 5 pkt — szybki przebieg przez sekcje 2–3 i trening zadań konkursowych; 3–4 pkt — przerabiaj lekcję po kolei; 0–2 pkt — zacznij od wykładu i algorytmu, lekcja prowadzi od zera.
+Interpretacja wyniku:
+
+- 5 pkt — sprawdź algorytm w sekcjach 2–3, a następnie przejdź do trudniejszych zastosowań.
+- 3–4 pkt — pracuj kolejno z lekcją, zwracając uwagę na zagadnienia, w których pojawił się błąd.
+- 0–2 pkt — zacznij od wykładu i spokojnie przećwicz każdy krok zapisu równania.
 
 ## 1 | Wykład — teatr chemiczny: aktorzy, widzowie i trzy tłumaczenia sceny {#wyklad} [[basic:E8]]
 
-Wlej do probówki roztwór chlorku sodu, a do drugiej — roztwór azotanu(V) srebra, i zmieszaj. Zrobi się mleczno-biały osad. Z punktu widzenia zapisu cząsteczkowego „przereagowały” dwie sole: AgNO₃ + NaCl → AgCl↓ + NaNO₃. Ale to tylko zgrubne streszczenie. W roztworze żadnej soli nie ma cząsteczek „NaCl” — są jony: Na⁺, Cl⁻, Ag⁺, NO₃⁻. Gdy roztwory się spotykają, jony się mieszają, ale tylko jedna para naprawdę działa: Ag⁺ spotyka Cl⁻ i razem tworzą nierozpuszczalny AgCl, który opada jako biały osad. Jony Na⁺ i NO₃⁻ pozostają w roztworze dokładnie takie, jakie były — to **jony obserwatorowe** (chemicy mówią też: jony-widzowie).
+Wyobraź sobie dwie probówki. W pierwszej znajduje się roztwór chlorku sodu, NaCl, a w drugiej roztwór azotanu(V) srebra, AgNO₃. Oba roztwory są przezroczyste. Po ich zmieszaniu, przy odpowiednich stężeniach, pojawia się mlecznobiałe zmętnienie i biały osad chlorku srebra, AgCl. Przezroczyste roztwory dały substancję stałą — zaszła reakcja strącania.
 
-Oto obraz przewodni całej lekcji: **reakcja w roztworze to przedstawienie teatralne**. Na scenie grają nieliczni aktorzy — jony, które się zmieniają (Ag⁺ i Cl⁻ zamieniają się w osad). Reszta widowni siedzi i patrzy: jony obserwatorowe nie zmieniają się ani o jotę. Dobry zapis reakcji to taki, który pokazuje akcję, a nie tłum w sali. Dlatego chemia wypracowała **trzy poziomy zapisu** — trzy tłumaczenia tej samej sceny, coraz bliższe temu, co dzieje się naprawdę.
+Nie wykonuj tej próby samodzielnie w domu. W tym wykładzie rozpatrujemy doświadczenie myślowo; jego wykonanie wymaga przygotowanego stanowiska, ochrony oczu i odpowiedniego postępowania z odpadami.
 
-**Poziom pierwszy: równanie cząsteczkowe.** Zapisuje substraty i produkty jako całe związki — tak, jakby w roztworze były cząsteczki soli. To zapis „dla porządku”: pokazuje, z czym się liczyć w laboratorium (odważyłeś 3 g azotanu(V) srebra, dodałeś roztwór chlorku sodu…), i jest obowiązkowy na egzaminie ósmoklasisty. Musi być zbilansowany i ze strzałkami (↓ przy osadach, ↑ przy gazach). Przykład: AgNO₃ + NaCl → AgCl↓ + NaNO₃.
+Najpierw przypomnijmy, czym jest jon. Atom lub grupa atomów może mieć ładunek elektryczny. Jon dodatni nazywamy kationem, a ujemny — anionem. Na⁺ jest kationem sodu o ładunku +1, Cl⁻ anionem chlorkowym o ładunku −1, a NO₃⁻ anionem azotanowym(V), złożonym z jednego atomu azotu i trzech atomów tlenu. Cała grupa NO₃⁻ ma ładunek −1.
 
-**Poziom drugi: równanie jonowe pełne.** Tu otwieramy kurtynę i pokazujemy każdego uczestnika z imienia: rozpisujemy na jony **tylko mocne elektrolity obecne w roztworze** — sole rozpuszczalne, mocne kwasy, mocne zasady. Osady, gazy, woda i słabe elektrolity zostają w formie cząsteczkowej („niedotykalni”: osad, gaz, woda, słaby — zapamiętaj tę czwórkę). Dla naszego przykładu: Ag⁺ + NO₃⁻ + Na⁺ + Cl⁻ → AgCl↓ + Na⁺ + NO₃⁻. Widzisz już, że po lewej i po prawej stoją ci sami Na⁺ i NO₃⁻ — widownia nie gra.
+Kryształ chlorku sodu jest zbudowany z jonów Na⁺ i Cl⁻. Nie składa się z odrębnych cząsteczek NaCl. Jego wzór podaje najprostszy stosunek liczby jonów w obojętnej elektrycznie substancji: jeden Na⁺ przypada na jeden Cl⁻. Podczas rozpuszczania w wodzie jony oddzielają się od sieci krystalicznej i zostają otoczone cząsteczkami wody. W szkolnym zapisie przedstawiamy to tak:
 
-**Poziom trzeci: równanie jonowe skrócone.** Skreślamy jony obserwatorowe — te same po obu stronach — i zostaje sedno: **Ag⁺ + Cl⁻ → AgCl↓**. To jest prawdziwa reakcja: dwa jony, jeden osad, koniec. Na tym poziomie widać od razu, dlaczego ten sam biały osad powstanie niezależnie od tego, czy chlorek przywiezie Na⁺, K⁺ czy Mg²⁺, a srebro — NO₃⁻ czy inny rozpuszczalny anion: skrócone równanie nie pyta o widownię, tylko o aktorów.
+NaCl → Na⁺ + Cl⁻
 
-Skoro tak, to kiedy w ogóle warto uruchamiać scenę? **Reakcja wymiany w roztworze zachodzi tylko wtedy, gdy powstaje coś, co opuszcza grę**: osad (↓ — znika z roztworu), gaz (↑ — ulatuje) albo słaby elektrolit, najczęściej woda (zobojętnianie: H⁺ + OH⁻ → H₂O). Jeśli zmieszanie dwóch roztworów soli nie da żadnej z tych trzech rzeczy, to nie powstaje żadna nowa substancja — i mimo pozornego „przetasowania” jonów mówimy uczciwie: reakcja nie zachodzi. To zdanie rozstrzyga połowę zadań konkursowych tego typu.
+Podobnie w roztworze azotanu(V) srebra występują jony Ag⁺ i NO₃⁻. Po zmieszaniu obu roztworów w naczyniu znajdują się więc cztery rodzaje jonów: Na⁺, Cl⁻, Ag⁺ i NO₃⁻. Nie wszystkie uczestniczą w przemianie prowadzącej do powstania osadu.
 
-Trzy pytania kontrolne, które będą towarzyszyć ci przez całą lekcję: **(1) Kto jest w roztworze?** (dysocjacja: co rozpisuję na jony) — **(2) Czy powstaje osad, gaz albo woda?** (tabela rozpuszczalności + trzy powody reakcji) — **(3) Czy mój zapis jest równy?** (bilans atomów i ładunków; ↓ i ↑ na miejscu). Algorytm z [§2](#poziomy) zamieni te trzy pytania w siedem konkretnych kroków.
+Jony Ag⁺ i Cl⁻ tworzą trudno rozpuszczalny chlorek srebra. Jony Na⁺ oraz NO₃⁻ pozostają w roztworze. W równaniu tej reakcji są to **obserwatorzy**: występują po obu stronach w tej samej postaci i nie ulegają przemianie opisanej równaniem.
 
-I na koniec uczciwa przestroga konkursowa: kolor osadu to wskazówka, nie wyrok. Białe osady ma nie tylko AgCl — także BaSO₄, CaCO₃ czy Ag₂CO₃ (białawożółty). Dlatego analitycy dodają próby kontrolne, zakwaszają roztwór przed badaniem (węglan się rozpuści z ulotem CO₂, a chlorek zostanie) i zawsze formułują wniosek z warunkami, nie „na sztywno”. Do tego wrócimy w [§8](#wykrywanie) i [§10](#zadania-konkurs).
+Obraz przewodni lekcji to przedstawienie teatralne. Aktorami są składniki uczestniczące w przemianie, a widownią — jony obserwatorowe. W reakcji strącania AgCl aktorzy to Ag⁺ i Cl⁻. Widownia to Na⁺ i NO₃⁻.
 
-Masz mapę: teatr, trzy poziomy zapisu, trzy powody reakcji i trzy pytania kontrolne. Teraz krok po kroku — z tabelami, równaniami i zadaniami.
+Porównanie ma granice. Jony nie wybierają świadomie partnerów, a równanie nie pokazuje dokładnego przebiegu każdego zderzenia ani kolejnych etapów tworzenia kryształu. Pomaga jednak oddzielić istotę przemiany od składników pozostających w roztworze.
+
+Pierwszy poziom opisu to równanie cząsteczkowe:
+
+AgNO₃ + NaCl → AgCl↓ + NaNO₃
+
+Nazwa „cząsteczkowe” jest tradycyjna. Nie oznacza, że wszystkie zapisane substancje rzeczywiście występują jako cząsteczki. Sole jonowe zapisujemy tu wzorami sumarycznymi. Równanie informuje, jakie substancje wykorzystano i jakie produkty otrzymano. Przydaje się do planowania doświadczenia i obliczeń, na przykład gdy odważono 3 g azotanu(V) srebra i trzeba obliczyć możliwą masę osadu.
+
+Strzałka ↓ oznacza wydzielenie osadu. Strzałka ↑ oznacza wydzielenie gazu. Stan substancji można również podać odpowiednim opisem, ale w tej lekcji konsekwentnie używamy ↓ i ↑ w równaniach, w których osad lub gaz jest istotnym wynikiem reakcji.
+
+Drugi poziom to równanie jonowe pełne. Rozpisujemy mocne elektrolity obecne w roztworze na jony:
+
+Ag⁺ + NO₃⁻ + Na⁺ + Cl⁻ → AgCl↓ + Na⁺ + NO₃⁻
+
+Azotan(V) srebra i chlorek sodu są rozpuszczalnymi solami. W roztworze zapisujemy je jako jony. Chlorek srebra jest natomiast osadem: zachowujemy wzór AgCl, zamiast przedstawiać cały osad jako swobodne jony.
+
+Widzisz teraz Na⁺ po obu stronach oraz NO₃⁻ po obu stronach. Możemy usunąć te same ilości tych samych jonów, bo nie uczestniczą w opisanej przemianie.
+
+Trzeci poziom to równanie jonowe skrócone:
+
+Ag⁺ + Cl⁻ → AgCl↓
+
+To najkrótszy zapis istoty tej reakcji. Pokazuje, które jony tworzą osad, ale nie podaje wszystkich substancji użytych do przygotowania roztworów.
+
+Dlatego ten sam osad można otrzymać z roztworów AgNO₃ i KCl. Zmieni się kation obserwatorowy: zamiast Na⁺ będzie K⁺. Istota strącania pozostanie taka sama, o ile inne składniki i warunki nie zakłócą reakcji. Podobnie źródłem jonów chlorkowych może być roztwór MgCl₂ — trzeba wtedy pamiętać, że z jednej jednostki wzoru przypadają dwa jony Cl⁻.
+
+Zapis równania musi spełniać dwie zasady zachowania. Pierwsza to zachowanie liczby atomów każdego pierwiastka. Druga to zachowanie sumy ładunków. W równaniu Ag⁺ + Cl⁻ → AgCl↓ po lewej suma ładunków wynosi +1 − 1 = 0. Po prawej AgCl jest elektrycznie obojętny, więc suma także wynosi 0. Liczba atomów srebra i chloru również się zgadza.
+
+Co sprawia, że reakcja wymiany w roztworze zachodzi? W typowych zadaniach szkolnych szukamy produktu, którego powstawanie zmniejsza ilość swobodnych jonów substratów: osadu, gazu albo słabego elektrolitu. Przykładem ostatniej możliwości jest woda powstająca podczas zobojętniania:
+
+H⁺ + OH⁻ → H₂O
+
+Osad wydziela się z roztworu jako faza stała. Gaz może opuścić roztwór. Woda pozostaje w naczyniu, ale nie zapisujemy jej jako dużej ilości swobodnych H⁺ i OH⁻, ponieważ jonizuje bardzo słabo. Są to trzy ważne szkolne wskazówki, a nie uniwersalna definicja każdej reakcji w roztworze. W roztworach zachodzą także między innymi reakcje utleniania i redukcji oraz tworzenia kompleksów.
+
+Jeżeli zmieszasz roztwory NaNO₃ i KCl, wszystkie rozpatrywane jony pozostaną w roztworze. Potencjalne „produkty wymiany”, KNO₃ i NaCl, również są rozpuszczalne. Zapis NaNO₃ + KCl → KNO₃ + NaCl nie przedstawia w tych warunkach nowej przemiany chemicznej. Nie ma reakcji jonowej netto do zapisania.
+
+Przez całą lekcję prowadzą cię trzy pytania:
+
+1. Jakie składniki rzeczywiście występują w roztworze?
+2. Czy w danych warunkach powstaje osad, gaz lub słaby elektrolit?
+3. Czy równanie zachowuje liczbę atomów oraz sumę ładunków?
+
+Na końcu potrzebna jest ostrożność analityczna. Barwa osadu jest obserwacją, a nazwanie jonu — wnioskiem. Biały osad może być AgCl, BaSO₄ albo CaCO₃. Ag₂CO₃ ma zwykle barwę bladożółtą i także może zakłócić prostą próbę z jonami srebra. Dlatego w wykrywaniu jonów wykorzystujemy odpowiednie zakwaszenie, próby porównawcze i dodatkowe reakcje.
+
+Nie zakwaszamy każdej próbki dowolnym kwasem. Przed próbą na chlorki nie wolno użyć HCl, ponieważ sami wprowadzilibyśmy Cl⁻. Wybieramy rozcieńczony HNO₃. Przed próbą na siarczany(VI) nie używamy H₂SO₄, bo wprowadzilibyśmy wykrywany anion. Szczegóły poznasz w [§8](#wykrywanie).
+
+::: karta understand | W skrócie — co naprawdę pokazuje równanie?
+Równanie cząsteczkowe podaje substancje, równanie jonowe pełne rozróżnia jony i pozostałe składniki, a równanie jonowe skrócone usuwa niezmienione jony obserwatorowe. Żaden z tych zapisów nie jest filmem pokazującym mechanizm reakcji. Wszystkie opisują tę samą przemianę z inną szczegółowością.
+:::
 
 ## 2 | Trzy poziomy zapisu — algorytm krok po kroku {#poziomy} [[basic:E8]] [[understand:ROZUMIENIE]]
 
-**Algorytm w trzech krokach:**
+Algorytm w trzech krokach:
 
-1. **Cząsteczkowe** — zbilansowane, wzory sumaryczne, strzałki ↓ i ↑ na miejscu.
-2. **Jonowe pełne** — mocne elektrolity zapisujemy jako jony (sole rozpuszczalne, mocne kwasy, mocne zasady). Osady, gazy, słabe elektrolity (H₂O, słabe kwasy) zostawiamy w formie cząsteczkowej.
-3. **Jonowe skrócone** — skreślamy jony-widzów (te same po obu stronach).
+1. Cząsteczkowe — zapisz poprawne wzory, dobierz współczynniki i oznacz osad lub gaz.
+2. Jonowe pełne — mocne elektrolity w roztworze przedstaw jako jony. Osady, gazy, wodę i słabe elektrolity pozostaw bez rozpisywania.
+3. Jonowe skrócone — usuń te same ilości jednakowych jonów występujących niezmienionych po obu stronach.
 
-**Pełna procedura w siedmiu krokach** — używaj jej przy każdym nowym równaniu:
+Pełna procedura w siedmiu krokach:
 
-1. Zapisz wzory substratów i produktów.
-2. Zbilansuj równanie cząsteczkowe.
-3. Oznacz substancje rozpuszczone i osady (tabela rozpuszczalności z [§4](#rozpuszczalnosc)).
-4. Rozpisz na jony mocne elektrolity w roztworze.
-5. Nie rozpisuj osadów, gazów, wody i słabych elektrolitów.
-6. Skróć identyczne jony po obu stronach.
-7. Sprawdź atomy i ładunki.
+1. Ustal wzory substratów i możliwych produktów. Sprawdź, czy istnieje uzasadnienie reakcji.
+2. Zbilansuj równanie cząsteczkowe, zmieniając współczynniki, nie indeksy we wzorach.
+3. Określ, które substancje są rozpuszczone, a które są osadami, gazami lub słabymi elektrolitami.
+4. Rozpisz mocne elektrolity obecne w roztworze na jony. Uwzględnij zarówno indeksy we wzorze, jak i współczynnik przed wzorem.
+5. Zachowaj wzory osadów, gazów, wody i słabych elektrolitów.
+6. Usuń jednakowe ilości jonów obserwatorowych. Jeżeli wszystkie składniki pozostają identyczne, nie ma reakcji netto.
+7. Sprawdź liczbę atomów i sumę ładunków. Jeśli można, sprowadź współczynniki do najmniejszych liczb całkowitych.
 
-**Przykład 1 — zobojętnianie (mocna zasada + mocny kwas):**
+| Poziom | Co przedstawia? | Co sprawdzasz? |
+|---|---|---|
+| Cząsteczkowy | Substraty i produkty zapisane wzorami substancji | Wzory, współczynniki, informację o osadzie i gazie |
+| Jonowy pełny | Mocne elektrolity w roztworze jako jony oraz pozostałe składniki bez rozpisywania | Poprawną dysocjację, liczbę atomów i ładunki |
+| Jonowy skrócony | Przemianę po usunięciu jonów obserwatorowych | Brak zbędnych jonów oraz oba bilanse |
+
+Przykład 1 — zobojętnianie mocnej zasady mocnym kwasem:
+
+Cząsteczkowo:
 
 NaOH + HCl → NaCl + H₂O
-Na⁺ + OH⁻ + H⁺ + Cl⁻ → Na⁺ + Cl⁻ + H₂O
-**OH⁻ + H⁺ → H₂O**
 
-**Przykład 2 — strącanie (sól + sól):**
+Jonowo pełne:
+
+Na⁺ + OH⁻ + H⁺ + Cl⁻ → Na⁺ + Cl⁻ + H₂O
+
+Jonowo skrócone:
+
+OH⁻ + H⁺ → H₂O
+
+Obserwatorami są Na⁺ i Cl⁻. Po lewej stronie równania skróconego suma ładunków wynosi −1 + 1 = 0; po prawej 0.
+
+Przykład 2 — strącanie chlorku srebra:
+
+Cząsteczkowo:
 
 AgNO₃ + NaCl → AgCl↓ + NaNO₃
-Ag⁺ + NO₃⁻ + Na⁺ + Cl⁻ → AgCl↓ + Na⁺ + NO₃⁻
-**Ag⁺ + Cl⁻ → AgCl↓**
 
-**Przykład 3 — strącanie siarczanu(VI) baru:**
+Jonowo pełne:
+
+Ag⁺ + NO₃⁻ + Na⁺ + Cl⁻ → AgCl↓ + Na⁺ + NO₃⁻
+
+Jonowo skrócone:
+
+Ag⁺ + Cl⁻ → AgCl↓
+
+Obserwatorami są Na⁺ i NO₃⁻.
+
+Przykład 3 — strącanie siarczanu(VI) baru:
+
+Cząsteczkowo:
 
 BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl
-Ba²⁺ + 2Cl⁻ + 2Na⁺ + SO₄²⁻ → BaSO₄↓ + 2Na⁺ + 2Cl⁻
-**Ba²⁺ + SO₄²⁻ → BaSO₄↓**
 
-Zauważ w przykładzie 3 dwie rzeczy. Po pierwsze: rozpisując BaCl₂, wypisujemy **dwa** jony Cl⁻ (bo wzór mówi Cl₂), a rozpisując Na₂SO₄ — **dwa** Na⁺. Pominięcie współczynnika przy jonie wieloatomowym to jeden z najczęstszych błędów. Po drugie: skracamy po **dwa** Na⁺ i po **dwa** Cl⁻ — a nie tylko po jednym, bo tyle ich realnie stoi po obu stronach.
+Jonowo pełne:
+
+Ba²⁺ + 2Cl⁻ + 2Na⁺ + SO₄²⁻ → BaSO₄↓ + 2Na⁺ + 2Cl⁻
+
+Jonowo skrócone:
+
+Ba²⁺ + SO₄²⁻ → BaSO₄↓
+
+Z jednej jednostki wzoru BaCl₂ wynikają jeden jon Ba²⁺ i dwa jony Cl⁻. Z jednej jednostki wzoru Na₂SO₄ wynikają dwa jony Na⁺ i jeden jon SO₄²⁻. Usuwamy więc po dwa Na⁺ i po dwa Cl⁻ z obu stron.
+
+Jon SO₄²⁻ pozostaje całą grupą. Nie rozbijamy go na atom siarki i atomy tlenu. Dysocjacja soli oddziela kation od anionu, nie niszczy w tym zapisie anionu wieloatomowego.
 
 ::: karta core | Najważniejsze — trójkrok w jednym oddechu
-Cząsteczkowe (zbilansowane, ze strzałkami) → rozpisz tylko mocne elektrolity („niedotykalni”: osad, gaz, woda, słaby) → skreśl widzów po obu stronach i sprawdź atomy z ładunkami. Trzy przykłady-szpilki: OH⁻ + H⁺ → H₂O; Ag⁺ + Cl⁻ → AgCl↓; Ba²⁺ + SO₄²⁻ → BaSO₄↓.
+Zbilansuj równanie cząsteczkowe → rozpisz mocne elektrolity obecne w roztworze → usuń jony obserwatorowe i sprawdź atomy oraz ładunki.
+
+Nie rozpisuj: osadu, gazu, wody i słabego elektrolitu.
+
+Trzy wzorcowe równania:
+- H⁺ + OH⁻ → H₂O
+- Ag⁺ + Cl⁻ → AgCl↓
+- Ba²⁺ + SO₄²⁻ → BaSO₄↓
 :::
 
 ::: karta understand | W skrócie — trzy poziomy
-Równanie cząsteczkowe to rejestr laboratoryjny: co odważono i co odstawiono. Jonowe pełne to lista obecności: każdy jon w roztworze z imienia. Jonowe skrócone to scena aktorska: tylko to, co się zmienia. Idziesz od całego tłumu do aktorów, nigdy odwrotnie. Na egzaminie ósmoklasisty zwykle wystarczy poziom cząsteczkowy + obserwacje; na konkursie oczekiwane są wszystkie trzy poziomy z poprawnym bilansem ładunków.
+Równanie cząsteczkowe jest jak rejestr substancji wykorzystanych w doświadczeniu. Jonowe pełne jest jak lista składników obecnych w układzie. Jonowe skrócone pozostawia samą przemianę po usunięciu obserwatorów. Ucz się przechodzenia między zapisami, ale pamiętaj, że z jednego równania skróconego można ułożyć wiele różnych równań cząsteczkowych.
+:::
+
+::: nie-myl | Współczynnik, indeks i ładunek
+- Współczynnik ≠ indeks — 2NaCl oznacza dwie jednostki wzoru NaCl, natomiast CaCl₂ określa stosunek jednego Ca do dwóch Cl; test rozstrzygający: współczynnik mnoży cały wzór, indeks dotyczy poprzedzającego symbolu lub grupy w nawiasie.
+- Liczba jonów ≠ ładunek jonu — 2Cl⁻ to dwa jony, każdy o ładunku −1, a Ca²⁺ to jeden jon o ładunku +2; test rozstrzygający: liczba przed symbolem liczy cząstki, znak w prawym górnym rogu opisuje ładunek jednej cząstki.
+- Skracanie jonów ≠ skracanie atomów — nie usuwamy Cl z AgCl tylko dlatego, że po drugiej stronie występuje Cl⁻; test rozstrzygający: usuwane składniki muszą być tymi samymi jonami w tej samej postaci.
+:::
+
+::: karta warning | Uwaga — współczynnik mnoży także liczbę jonów
+Dla 2AlCl₃ zapis jonów wynosi 2Al³⁺ + 6Cl⁻. Liczba 2 przed wzorem mnoży jeden jon Al³⁺ i trzy jony Cl⁻. Zapis 2Al³⁺ + 3Cl⁻ nie zachowuje liczby atomów chloru ani sumy ładunków.
 :::
 
 ::: karta exam | Zadanie 1 (3 pkt) — Zobojętnianie na trzech poziomach
-Zapisz równania cząsteczkowe, pełne jonowe i skrócone reakcji:
-a) wodorotlenek potasu + kwas siarkowy(VI) (3 pkt)
+Zapisz równania reakcji wodorotlenku potasu z kwasem siarkowym(VI), zakładając całkowite zobojętnienie i stosując szkolny uproszczony zapis mocnego kwasu:
+
+a) równanie cząsteczkowe (1 pkt)
+
+b) równanie jonowe pełne (1 pkt)
+
+c) równanie jonowe skrócone (1 pkt)
 
 ::: odp | Pokaż klucz
-a) (3 pkt po 1 pkt za każdy poziom) Cząsteczkowo: 2KOH + H₂SO₄ → K₂SO₄ + 2H₂O. Jonowo pełne: 2K⁺ + 2OH⁻ + 2H⁺ + SO₄²⁻ → 2K⁺ + SO₄²⁻ + 2H₂O. Skrócone: 2OH⁻ + 2H⁺ → 2H₂O (w zapisie uproszczonym: OH⁻ + H⁺ → H₂O). Jony K⁺ i SO₄²⁻ są obserwatorowymi i nie mogą się pojawić w zapisie skróconym.
+a) (1 pkt) 2KOH + H₂SO₄ → K₂SO₄ + 2H₂O. Punkt za poprawne wzory i współczynniki.
+
+b) (1 pkt) 2K⁺ + 2OH⁻ + 2H⁺ + SO₄²⁻ → 2K⁺ + SO₄²⁻ + 2H₂O. Punkt za prawidłowe rozpisanie elektrolitów i pozostawienie wody bez rozpisywania.
+
+c) (1 pkt) H⁺ + OH⁻ → H₂O. Akceptowany również zapis 2H⁺ + 2OH⁻ → 2H₂O. Punkt za usunięcie K⁺ i SO₄²⁻ oraz poprawny bilans. Najprostsze współczynniki wynoszą 1 : 1 : 1.
 :::
 :::
 
 ::: karta exam | Zadanie 2 (3 pkt) — Strącanie siarczanu(VI) baru na trzech poziomach
-Zapisz równania strąceniowe na trzech poziomach zapisu (cząsteczkowo, jonowo pełne, jonowo skrócone):
-a) chlorek baru + siarczan(VI) sodu (3 pkt)
+Zapisz równania reakcji roztworów chlorku baru i siarczanu(VI) sodu:
+
+a) równanie cząsteczkowe (1 pkt)
+
+b) równanie jonowe pełne (1 pkt)
+
+c) równanie jonowe skrócone (1 pkt)
 
 ::: odp | Pokaż klucz
-a) (3 pkt po 1 pkt za każdy poziom) Cząsteczkowo: BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl. Jonowo pełne: Ba²⁺ + 2Cl⁻ + 2Na⁺ + SO₄²⁻ → BaSO₄↓ + 2Na⁺ + 2Cl⁻. Skrócone: Ba²⁺ + SO₄²⁻ → BaSO₄↓ (biały osad nierozpuszczalny w kwasach). Zwróć uwagę na podwójne licze jony przy rozpisie i przy skracaniu.
+a) (1 pkt) BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl. Punkt za wzory, współczynniki i oznaczenie osadu.
+
+b) (1 pkt) Ba²⁺ + 2Cl⁻ + 2Na⁺ + SO₄²⁻ → BaSO₄↓ + 2Na⁺ + 2Cl⁻. Punkt za poprawne liczby jonów i zachowanie wzoru osadu.
+
+c) (1 pkt) Ba²⁺ + SO₄²⁻ → BaSO₄↓. Punkt za usunięcie Na⁺ i Cl⁻. Powstaje biały osad praktycznie nierozpuszczalny w wodzie i rozcieńczonych kwasach używanych w tej próbie.
 :::
 :::
 
 ## 3 | Dysocjacja i elektrolity — co rozpisujemy na jony {#elektrolity} [[understand:ROZUMIENIE]]
 
-Zanim zapiszesz cokolwiek jonowo, musisz wiedzieć, kto w roztworze naprawdę jest. **Dysocjacja elektrolityczna** to rozpad elektrolitu na jony w roztworze wodnym, na przykład:
+Zanim zapiszesz reakcję jonowo, ustal skład roztworu. Dysocjacja elektrolityczna polega na powstawaniu swobodnie przemieszczających się jonów podczas rozpuszczania elektrolitu w wodzie. Dla soli jonowej oznacza oddzielanie i hydratację jonów obecnych wcześniej w krysztale:
 
 NaCl → Na⁺ + Cl⁻
 
-Uwaga istotna: **nie każda dysocjacja jest reakcją chemiczną prowadzącą do powstania nowych substancji**. Dysocjacja to rozpad istniejącej substancji na jony; równanie jonowe opisuje reakcję, w której powstaje **nowa** substancja (osad, gaz, woda). NaCl → Na⁺ + Cl⁻ to opis stanu roztworu, a Ag⁺ + Cl⁻ → AgCl↓ to reakcja.
+W przypadku kwasu cząsteczkowego, na przykład HCl, powstawanie jonów wiąże się z reakcją z wodą:
 
-**Elektrolity mocne i słabe:**
+HCl + H₂O → H₃O⁺ + Cl⁻
 
-- mocne elektrolity zapisuje się zwykle jako całkowicie zdysocjowane (strzałka →): mocne kwasy (HCl, H₂SO₄, HNO₃), mocne zasady (NaOH, KOH, Ba(OH)₂), większość rozpuszczalnych soli;
-- słabe elektrolity zapisuje się strzałką równowagi (⇌): dysocjują tylko częściowo (słabe kwasy, słabe zasady);
-- **woda jest słabym elektrolitem** — w równaniach jonowych zawsze zostaje cząsteczkowo;
-- osadów, gazów i czystej wody **nie rozpisuje się** na jony w równaniu jonowym.
+Szkolny zapis uproszczony:
 
-Dlaczego tak? Bo zapis jonowy ma pokazywać, co realnie krąży w roztworze i co może zareagować. Cząsteczka słabego kwasu w większości nie zdąży się rozpaść — więc nie wolno jej „naprawdę istniejącym jonem” robić. Osad już nie jest w roztworze (opadł), gaz już wyleciał — nie ma czego rozpisywać.
+HCl → H⁺ + Cl⁻
 
-**Konwencja H⁺.** W roztworze wodnym wolny proton (H⁺) nie istnieje jako samotna cząstka — łączy się z cząsteczką wody, tworząc jon hydroniowy H₃O⁺. Szkolny zapis H⁺ to **konwencja uproszczona**. Na poziomie szkoły pisz H⁺ (tak wymagają klucze), ale wiedz, że dokładniej jest H₃O⁺ — i na olimpiadzie warto to zaznaczyć jednym zdaniem.
+Nie należy więc uznawać zdania „dysocjacja nigdy nie jest reakcją chemiczną” za ogólną zasadę. Rozpuszczanie soli jonowej oraz jonizacja kwasu cząsteczkowego nie są identycznymi procesami. W tej lekcji rozróżniamy przede wszystkim zapis wprowadzenia elektrolitu do roztworu i zapis późniejszej reakcji jego jonów.
 
-::: karta warning | Uwaga — czwórka „niedotykalnych”
-W równaniu jonowym pełnym rozpisujesz TYLKO: rozpuszczalne sole, mocne kwasy, mocne zasady. Nie rozpisujesz: (1) osadów — AgCl↓, BaSO₄↓, Cu(OH)₂↓, (2) gazów — CO₂↑, H₂↑, (3) wody — H₂O, (4) słabych elektrolitów — np. słabych kwasów. Jeden błąd w tej klasyfikacji psuje cały dalszy zapis: najpierw sklasyfikuj każdą substancję, dopiero potem rozpisuj.
+NaCl → Na⁺ + Cl⁻ opisuje otrzymywanie roztworu zawierającego te jony. Ag⁺ + Cl⁻ → AgCl↓ opisuje strącanie nowej fazy stałej po spotkaniu odpowiednich jonów.
+
+| Rodzaj składnika | Jak przedstawiamy go w typowym równaniu jonowym pełnym? | Przykłady |
+|---|---|---|
+| Rozpuszczalna sól w roztworze | Jako jony | NaCl → Na⁺ + Cl⁻; NaNO₃ → Na⁺ + NO₃⁻ |
+| Mocny kwas w roztworze | Jako jony, w przyjętym uproszczeniu | HCl → H⁺ + Cl⁻; HNO₃ → H⁺ + NO₃⁻ |
+| Rozpuszczona mocna zasada | Jako jony | NaOH → Na⁺ + OH⁻; Ba(OH)₂ → Ba²⁺ + 2OH⁻ |
+| Słaby elektrolit | Bez rozpisywania na jony | CH₃COOH, NH₃ w wodzie |
+| Woda | H₂O | Produkt zobojętniania |
+| Osad | Wzór substancji z oznaczeniem ↓ | AgCl↓, BaSO₄↓, Cu(OH)₂↓ |
+| Gaz | Wzór substancji z oznaczeniem ↑ | CO₂↑, H₂↑ |
+
+Mocny elektrolit przedstawiamy w szkolnym modelu rozcieńczonego roztworu jako całkowicie lub niemal całkowicie zdysocjowany. Przykłady to HCl, HNO₃, NaOH, KOH, rozpuszczony Ba(OH)₂ oraz typowe rozpuszczalne sole.
+
+Kwas siarkowy(VI), H₂SO₄, traktujemy w wielu szkolnych równaniach jako źródło 2H⁺ i SO₄²⁻. To przydatne uproszczenie. Dokładniejszy opis uwzględnia bardzo silną pierwszą dysocjację i równowagową drugą dysocjację jonu HSO₄⁻. Nie trzeba tego uwzględniać w podstawowych zadaniach tej lekcji, chyba że polecenie wyraźnie tego wymaga.
+
+Słaby elektrolit jonizuje tylko częściowo. Stosujemy zapis równowagi, na przykład dla kwasu octowego:
+
+CH₃COOH ⇌ H⁺ + CH₃COO⁻
+
+Zapis nie oznacza, że cząsteczki „nie zdążyły” się rozpaść. Oznacza, że ustala się równowaga między postacią niezdysocjowaną a jonami. Położenie tej równowagi zależy między innymi od rodzaju substancji i stężenia.
+
+W równaniu jonowym reakcji słabego kwasu z mocną zasadą zachowujemy wzór słabego kwasu:
+
+CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O
+
+Nie zastępujemy tego równania automatycznie zapisem H⁺ + OH⁻ → H₂O. Ten ostatni opisuje uproszczoną istotę zobojętniania mocnego kwasu mocną zasadą.
+
+Woda jonizuje w bardzo niewielkim stopniu:
+
+2H₂O ⇌ H₃O⁺ + OH⁻
+
+W typowych równaniach jonowych pozostaje zapisana jako H₂O. Jej obecność w roztworze nie uzasadnia rozpisania całej ilości wody na H⁺ i OH⁻.
+
+Osadów również nie rozpisujemy. Nie dlatego, że koniecznie leżą już na dnie: drobne cząstki osadu mogą długo pozostawać zawieszone. Powód jest inny — oznaczają odrębną fazę stałą, a nie cały zbiór swobodnych jonów rozpuszczonych w wodzie.
+
+Podobnie gaz zachowujemy jako CO₂ lub H₂. Wzór produktu gazowego nie zmienia się w listę jonów tylko dlatego, że gaz powstał w wodnym środowisku.
+
+Konwencja H⁺ wymaga wyjaśnienia. Proton w wodzie jest związany i solwatowany przez cząsteczki wody. Jon H₃O⁺, zwany hydroniowym lub oksoniowym, jest podstawowym dokładniejszym modelem jego zapisu. Symbol H⁺ w szkolnym równaniu jest skrótem, a nie obrazem samotnych protonów pływających między cząsteczkami.
+
+Zobojętnianie można zatem zapisać na dwa zgodne sposoby:
+
+H⁺ + OH⁻ → H₂O
+
+H₃O⁺ + OH⁻ → 2H₂O
+
+Każdy zapis ma własny poprawny bilans. Nie zamieniaj H⁺ na H₃O⁺ bez ponownego sprawdzenia liczby atomów wodoru i tlenu.
+
+::: karta understand | W skrócie — mocny nie znaczy stężony
+„Mocny elektrolit” opisuje sposób występowania substancji w roztworze: w szkolnym modelu niemal cała rozpuszczona ilość daje jony. „Stężony roztwór” zawiera dużo substancji w określonej ilości roztworu. Rozcieńczony HCl nadal jest mocnym elektrolitem. Stężony roztwór słabego kwasu nie staje się przez samo zwiększenie stężenia mocnym kwasem.
 :::
 
-::: nie-myl | Dysocjacja ≠ reakcja jonowa; elektrolit ≠ ogniwo reakcji
-- Dysocjacja ≠ reakcja jonowa — dysocjacja rozpada istniejącą substancję na jony (NaCl → Na⁺ + Cl⁻), reakcja jonowa tworzy nową substancję (Ag⁺ + Cl⁻ → AgCl↓); test rozstrzygający: czy po prawej stronie jest coś, czego nie było po lewej jako odrębnej substancji? Tak — reakcja. Nie — tylko opis roztworu.
-- Mocny elektrolit ≠ stężony roztwór — „mocny” mówi o stopniu dysocjacji (całkowita), „stężony” o ilości substancji w objętości; test rozstrzygający: roztwór rozcieńczony HCl to nadal elektrolit mocny, tylko rzadko „obsadzony”.
-- Zdysocjowany ≠ zareagowany — jony mogą krążyć w roztworze latami bez reakcji (Na⁺ i NO₃⁻ w roztworze); test rozstrzygający: reakcja wymaga powstania osadu, gazu albo słabego elektrolitu.
+::: karta warning | Uwaga — czwórka „niedotykalnych”
+W typowym szkolnym równaniu jonowym pełnym nie rozpisujesz:
+
+1. Osadów: AgCl↓, BaSO₄↓, Cu(OH)₂↓.
+2. Gazów: CO₂↑, H₂↑.
+3. Wody: H₂O.
+4. Słabych elektrolitów, na przykład CH₃COOH.
+
+Najpierw sklasyfikuj składnik, a dopiero później zdecyduj o zapisie. Rozpuszczalność i moc elektrolitu to różne cechy: substancja może rozpuszczać się w wodzie, ale nie tworzyć znacznej ilości jonów.
+:::
+
+::: nie-myl | Dysocjacja, jonizacja i reakcja jonów
+- Dysocjacja soli ≠ strącanie osadu — pierwsza wprowadza jony soli do roztworu, drugie prowadzi do powstania fazy stałej; test rozstrzygający: NaCl → Na⁺ + Cl⁻ opisuje rozpuszczanie soli, Ag⁺ + Cl⁻ → AgCl↓ opisuje wydzielanie osadu.
+- Mocny elektrolit ≠ stężony roztwór — pierwsze określenie dotyczy jonizacji lub dysocjacji, drugie ilości substancji w roztworze; test rozstrzygający: rozcieńczony HCl pozostaje mocnym elektrolitem.
+- Zdysocjowany ≠ uczestniczący w rozpatrywanej reakcji — Na⁺ i NO₃⁻ są jonami w roztworze, ale w reakcji strącania AgCl pozostają obserwatorami; test rozstrzygający: sprawdź, czy dany jon występuje niezmieniony po obu stronach równania.
+- Rozpuszczalny ≠ mocny elektrolit — cukier rozpuszcza się w wodzie, ale nie tworzy roztworu złożonego z jonów cukru; test rozstrzygający: zapytaj osobno o rozpuszczanie i osobno o powstawanie jonów.
 :::
 
 ::: karta exam | Zadanie 3 (3 pkt) — Kto zostaje, kto się rozpisuje
-Oceń, które z podanych substancji w równaniu jonowym pełnym rozpiszesz na jony, a które zostawisz w formie cząsteczkowej, i uzasadnij: a) HCl, b) H₂O, c) AgCl↓, d) NaNO₃ (roztwór), e) CO₂↑, f) KOH.
+Oceń sposób zapisu podanych składników w równaniu jonowym pełnym. Przyjmij, że HCl, NaNO₃ i KOH znajdują się w roztworach wodnych. Dla każdego przykładu podaj decyzję i uzasadnienie.
+
+a) HCl (0,5 pkt)
+
+b) H₂O (0,5 pkt)
+
+c) AgCl↓ (0,5 pkt)
+
+d) NaNO₃ w roztworze (0,5 pkt)
+
+e) CO₂↑ (0,5 pkt)
+
+f) KOH w roztworze (0,5 pkt)
 
 ::: odp | Pokaż klucz
-a) (0,5 pkt) Rozpisz — HCl to mocny kwas: H⁺ + Cl⁻. b) (0,5 pkt) Zostaw — woda jest słabym elektrolitem. c) (0,5 pkt) Zostaw — to osad, nie jest w roztworze. d) (0,5 pkt) Rozpisz — rozpuszczalna sól: Na⁺ + NO₃⁻. e) (0,5 pkt) Zostaw — gaz ulatuje z roztworu. f) (0,5 pkt) Rozpisz — mocna zasada: K⁺ + OH⁻. (Suma 3 pkt.)
+a) (0,5 pkt) Rozpisujemy: H⁺ + Cl⁻. HCl jest mocnym kwasem. Punkt za decyzję i uzasadnienie.
+
+b) (0,5 pkt) Pozostawiamy H₂O. Woda jonizuje bardzo słabo.
+
+c) (0,5 pkt) Pozostawiamy AgCl↓. Jest osadem, czyli fazą stałą.
+
+d) (0,5 pkt) Rozpisujemy: Na⁺ + NO₃⁻. Jest rozpuszczalną solą obecną w roztworze.
+
+e) (0,5 pkt) Pozostawiamy CO₂↑. Jest produktem gazowym.
+
+f) (0,5 pkt) Rozpisujemy: K⁺ + OH⁻. Rozpuszczony KOH jest mocnym elektrolitem.
+
+Suma: 3 pkt.
 :::
 :::
 
 ## 4 | Tabela rozpuszczalności — reguły i wyjątki {#rozpuszczalnosc} [[basic:E8]]
 
-Tabela rozpuszczalności odpowiada na pytanie „czy ten związek opuści roztwór jako osad?”. Uczymy jej regułami — tak, żeby nowe przypadki można było rozstrzygnąć rozumowaniem, a nie szukaniem w pamięci.
+Tabela rozpuszczalności pomaga przewidzieć, czy po połączeniu określonego kationu i anionu może wydzielić się osad. Dotyczy konkretnych warunków, zwykle wody i temperatury zbliżonej do pokojowej.
 
-| Reguła | Wyjątki |
+W zadaniu najpierw korzystaj z tabeli dołączonej do polecenia. Reguły pamięciowe służą orientacji, ale nie zastępują informacji podanych przez autora zadania.
+
+| Reguła szkolna | Wyjątki i dopowiedzenia |
 |---|---|
-| Wszystkie azotany(V) — R | — |
-| Wszystkie sole Na⁺, K⁺, NH₄⁺ — R | — |
-| Większość chlorków — R | AgCl, PbCl₂, Hg₂Cl₂ — N |
-| Większość siarczanów(VI) — R | BaSO₄, PbSO₄, CaSO₄, SrSO₄ — N/T |
-| Wodorotlenki metali I i II grupy (oprócz Be, Mg) — R | reszta zwykle N |
-| Węglany, fosforany, siarczki — zwykle N | sole metali I grupy i amonu — R |
+| Typowe azotany(V) są rozpuszczalne — R | Reguła dotyczy azotanów(V) rozpatrywanych w szkolnych tabelach |
+| Typowe sole Na⁺, K⁺ i NH₄⁺ są rozpuszczalne — R | To bardzo użyteczna reguła szkolna, nie twierdzenie o wszystkich możliwych związkach tych kationów |
+| Większość chlorków jest rozpuszczalna — R | AgCl i Hg₂Cl₂ są praktycznie nierozpuszczalne; PbCl₂ jest trudno rozpuszczalny |
+| Większość siarczanów(VI) jest rozpuszczalna — R | BaSO₄ i PbSO₄ są praktycznie nierozpuszczalne; CaSO₄ i SrSO₄ mają małą rozpuszczalność, a oznaczenie N/T zależy od tabeli |
+| Wodorotlenki litowców są rozpuszczalne | NaOH i KOH są typowymi przykładami |
+| Rozpuszczalność wodorotlenków berylowców jest zróżnicowana | Be(OH)₂ i Mg(OH)₂ mają bardzo małą rozpuszczalność; Ca(OH)₂ jest trudno rozpuszczalny; Sr(OH)₂ i Ba(OH)₂ są bardziej rozpuszczalne |
+| Węglany i fosforany(V) większości metali mają małą rozpuszczalność | Typowe sole litowców i amonu są szkolnymi wyjątkami; w rozszerzeniu trzeba sprawdzać konkretną sól |
+| Wiele siarczków metali ma małą rozpuszczalność | Sole litowców i amonu są typowymi wyjątkami; dla pozostałych kationów korzystaj z tabeli, ponieważ występują dodatkowe wyjątki i reakcje z wodą |
 
-Oznaczenia: **R** = dobrze rozpuszczalna, **N** = nierozpuszczalna (osad ↓), **T** = trudno rozpuszczalna.
+Oznaczenia:
 
-Jak pracować regułami, nie wkuwaniem: rozpatrując związek, najpierw sprawdź dwie „nieomylnie rozpuszczalne” rodziny (azotany; sole Na/K/NH₄ — żaden wyjątek nie istnieje), dopiero potem rodzinę reszty kationu i anionu (chlorki? siarczany(VI)? wodorotlenki? węglany?) i przejrzyj listę wyjątków. Na przykład CaSO₄ — siarczan(VI), a wapń nie jest wyjątkiem od reguły siarczanów, bo wyjątki to Ba, Pb, Ca, Sr… i tu wapń właśnie jest na liście: CaSO₄ — trudno rozpuszczalny (T). Kolejność pytania: anion → wyjątki → werdykt.
+- R — substancja dobrze rozpuszczalna.
+- T — substancja trudno rozpuszczalna.
+- N — substancja w szkolnej klasyfikacji nierozpuszczalna lub praktycznie nierozpuszczalna.
+
+„Nierozpuszczalna” nie oznacza bezwzględnie zerowej rozpuszczalności. Nawet nad osadem AgCl istnieje bardzo mała ilość rozpuszczonych jonów. W podstawowych zadaniach jest ona na tyle mała, że zapisujemy wydzielanie osadu.
+
+„Trudno rozpuszczalna” nie oznacza z kolei, że osad zawsze powstanie. Jeżeli jony są bardzo rozcieńczone, mogą pozostać w roztworze. O strącaniu decydują również stężenia, temperatura i obecność innych składników.
+
+Jak pracować regułami:
+
+1. Rozpoznaj kation i anion.
+2. Sprawdź, czy związek należy do typowych rozpuszczalnych azotanów(V) albo soli sodu, potasu lub amonu.
+3. Jeśli nie, ustal rodzinę anionu: chlorek, siarczan(VI), węglan, fosforan(V), siarczek.
+4. Sprawdź wyjątki dotyczące konkretnego kationu.
+5. Dla wodorotlenków sprawdź rozpuszczalność danego wodorotlenku, nie całej grupy metali.
+6. Odczytaj ostateczne oznaczenie z tabeli, szczególnie dla substancji granicznych.
+
+Przykład: CaSO₄. Jest siarczanem(VI). Większość siarczanów(VI) jest rozpuszczalna, ale wapń znajduje się wśród wyjątków. CaSO₄ ma ograniczoną rozpuszczalność i często otrzymuje oznaczenie T. Nie stosujemy więc reguły ogólnej z pominięciem wyjątku.
+
+Przykład: K₂CO₃. Węglany większości metali mają małą rozpuszczalność, ale węglan potasu należy do typowych rozpuszczalnych soli potasu. Otrzymuje oznaczenie R.
+
+Przykład: Fe(OH)₃. Nie jest wodorotlenkiem litowca ani jednym z bardziej rozpuszczalnych wodorotlenków berylowców. W szkolnej tabeli jest nierozpuszczalny. Po dodaniu OH⁻ do odpowiedniego roztworu Fe³⁺ powstaje brunatny osad:
+
+Fe³⁺ + 3OH⁻ → Fe(OH)₃↓
 
 ::: karta understand | W skrócie — tabela rozpuszczalności
-Dwa filary pewności: (1) azotany(V) i sole sodu, potasu i amonu są rozpuszczalne zawsze — bez wyjątków; (2) osady najczęściej wytrącają się jako: chlorki srebra i ołowiu, siarczany(VI) baru, ołowiu, wapnia i strontu, węglany i fosforany większości metali, wodorotlenki poza litowcami, wapniem i barem (oraz bez berylu i magnezu, które to wyjątki od rozpuszczalności wodorotlenków II grupy). Reguły czytaj od anionu do wyjątków — mechaniczne wkuwanie bez sprawdzenia to najkrótsza droga do błędu (zgodnie z listą typowych błędów: tabela „na pamięć” zamiast reguł + sprawdzenie).
+Tabela mówi, ile substancji może pozostać rozpuszczone w określonych warunkach. Reguły pomagają szybko odszukać właściwy przypadek: najpierw rodzina związku, potem wyjątek. Najpewniejsze szkolne skróty dotyczą typowych azotanów(V) i soli Na⁺, K⁺ oraz NH₄⁺. CaSO₄, PbCl₂ i Ca(OH)₂ wymagają szczególnej uwagi, ponieważ „trudno rozpuszczalny” nie znaczy „zupełnie nierozpuszczalny”.
 :::
 
-::: karta exam | Zadanie 4 (4 pkt) — Rozstrzygnij rozpuszczalność
-Korzystając z reguł (nie z „pamięci tabeli”), oceń rozpuszczalność i podaj regułę, na którą się powołujesz: a) Ca(NO₃)₂, b) K₂CO₃, c) AgCl, d) BaSO₄, e) Na₂SO₄, f) Fe(OH)₃.
+::: nie-myl | Rozpuszczalność, moc zasady i obecność osadu
+- Mała rozpuszczalność ≠ słaba zasada — rozpuszczona część Ca(OH)₂ jest w szkolnym modelu zdysocjowana na Ca²⁺ i OH⁻, mimo że niewiele substancji rozpuszcza się w wodzie; test rozstrzygający: zapytaj osobno, ile się rozpuściło i w jakiej postaci występuje rozpuszczona część.
+- Oznaczenie N ≠ dokładnie zero jonów w roztworze — nad osadem występuje niewielka ilość rozpuszczonej substancji; test rozstrzygający: szkolna klasyfikacja jest przybliżeniem, a nie twierdzeniem o zerowej rozpuszczalności.
+- Możliwość strącania ≠ pewność osadu przy dowolnym stężeniu — bardzo małe stężenia mogą nie wystarczyć; test rozstrzygający: sprawdź, czy zadanie zakłada typowe stężenia szkolnych roztworów, czy podaje dane ilościowe.
+:::
+
+::: karta warning | Uwaga — nie wszystkie wodorotlenki II grupy są dobrze rozpuszczalne
+Nie zapisuj reguły „wodorotlenki I i II grupy, oprócz Be i Mg, są dobrze rozpuszczalne”. Pomija ona ograniczoną rozpuszczalność Ca(OH)₂.
+
+Woda wapienna jest klarownym roztworem Ca(OH)₂. Mleko wapienne jest zawiesiną zawierającą także nierozpuszczony wodorotlenek wapnia. To różne układy, mimo obecności tej samej substancji.
+:::
+
+::: karta exam | Zadanie 4 (6 pkt) — Rozstrzygnij rozpuszczalność
+Oceń rozpuszczalność każdej substancji według szkolnych reguł i podaj uzasadnienie. Za poprawne rozstrzygnięcie otrzymujesz 0,5 pkt, za poprawną regułę lub wskazanie wyjątku kolejne 0,5 pkt.
+
+a) Ca(NO₃)₂ (1 pkt)
+
+b) K₂CO₃ (1 pkt)
+
+c) AgCl (1 pkt)
+
+d) BaSO₄ (1 pkt)
+
+e) Na₂SO₄ (1 pkt)
+
+f) Fe(OH)₃ (1 pkt)
 
 ::: odp | Pokaż klucz
-a) (0,5 pkt + 0,5 pkt za regułę) R — wszystkie azotany(V) są rozpuszczalne. b) (0,5 + 0,5) R — węglany są zwykle nierozpuszczalne, ale sole potasu są wyjątkiem (reguła: wszystkie sole K⁺ — R). c) (0,5 + 0,5) N — chlorki są rozpuszczalne, ale AgCl jest wyjątkiem. d) (0,5 + 0,5) N — siarczany(VI) są rozpuszczalne, ale BaSO₄ jest wyjątkiem (i to jeden z najbardziej upartych osadów). e) (0,5 + 0,5) R — siarczan(VI) sodu: sól Na⁺ jest zawsze rozpuszczalna. f) (0,5 + 0,5) N — wodorotlenki poza metali I grupy i Be/Mg w II grupie są zwykle nierozpuszczalne; Fe(OH)₃ — brunatny osad.
+a) (1 pkt) R — azotan(V) wapnia jest rozpuszczalny. 0,5 pkt za R i 0,5 pkt za regułę rozpuszczalności typowych azotanów(V).
+
+b) (1 pkt) R — węglan potasu jest rozpuszczalny. 0,5 pkt za R i 0,5 pkt za wskazanie soli potasu jako wyjątku od małej rozpuszczalności większości węglanów.
+
+c) (1 pkt) N — chlorek srebra jest praktycznie nierozpuszczalny. 0,5 pkt za N i 0,5 pkt za wskazanie AgCl jako wyjątku od rozpuszczalności większości chlorków.
+
+d) (1 pkt) N — siarczan(VI) baru jest praktycznie nierozpuszczalny. 0,5 pkt za N i 0,5 pkt za wskazanie BaSO₄ jako wyjątku od rozpuszczalności większości siarczanów(VI).
+
+e) (1 pkt) R — siarczan(VI) sodu jest rozpuszczalny. 0,5 pkt za R i 0,5 pkt za regułę dotyczącą typowych soli sodu.
+
+f) (1 pkt) N — wodorotlenek żelaza(III) ma bardzo małą rozpuszczalność. 0,5 pkt za N i 0,5 pkt za wskazanie, że większość wodorotlenków metali innych niż litowce i wybrane berylowce jest praktycznie nierozpuszczalna.
+
+Suma: 6 pkt.
 :::
 :::
+
+::: karta exam | Zadanie 17 (4 pkt) — Tabela to nie automat do produkcji osadu
+Uczeń stwierdził: „Ca(OH)₂ jest mocną zasadą, więc rozpuszcza się w wodzie w dowolnej ilości. Każda sól oznaczona T natychmiast daje osad po zmieszaniu nawet bardzo rozcieńczonych roztworów”.
+
+a) Wyjaśnij, dlaczego pierwsze zdanie łączy dwie różne cechy substancji. (1 pkt)
+
+b) Popraw informację o rozpuszczalności Ca(OH)₂. (1 pkt)
+
+c) Wyjaśnij, dlaczego oznaczenie T nie wystarcza do zagwarantowania osadu przy dowolnych stężeniach. (1 pkt)
+
+d) Podaj różnicę między wodą wapienną a mlekiem wapiennym. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Moc zasady dotyczy zachowania rozpuszczonej substancji, a rozpuszczalność — ilości, która może rozpuścić się w danych warunkach. Punkt za rozdzielenie obu cech.
+
+b) (1 pkt) Ca(OH)₂ jest trudno rozpuszczalny. Rozpuszczona część jest w szkolnym modelu zdysocjowana na Ca²⁺ i OH⁻.
+
+c) (1 pkt) Powstanie osadu zależy także od stężeń jonów. W bardzo rozcieńczonym roztworze ilość substancji może być mniejsza od ilości dopuszczalnej przez jej rozpuszczalność.
+
+d) (1 pkt) Woda wapienna jest klarownym roztworem Ca(OH)₂, a mleko wapienne zawiesiną z nierozpuszczonym Ca(OH)₂.
+:::
+:::
+
+### AUDYT — Perplexity, 2026-10-13 {#audyt-ulepsz}
+
+Poprawione:
+- Frontmatter: dwa pola „lead:” → jedno scalone pole — usunięto konflikt kluczy przy zachowaniu obu celów wprowadzenia.
+- Frontmatter: „stan: WYPEŁNIONY…” → „stan: ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia”; dodano uid i uzupełniono stopkę.
+- Frontmatter, warstwy i §0.1–§2: odniesienia do egzaminu ósmoklasisty z chemii → poziom szkolny oraz osobna warstwa konkursowa — egzamin ósmoklasisty nie obejmuje chemii. Plakietkę E8 zachowano jako oznaczenie techniczne kursu. [cke.gov](https://cke.gov.pl/egzamin-osmoklasisty/o-egzaminie/)
+- §0.1: „klucz czytany bez próby uczy czterokrotnie słabiej” → instrukcja samodzielnej próby i porównania toku rozumowania — usunięto nieudokumentowany mnożnik.
+- §1: „w roztworze żadnej soli nie ma cząsteczek” → opis jonów w rozpatrywanych roztworach typowych soli — ograniczono nieuprawnione uogólnienie.
+- §1–§2: utożsamianie równania jonowego z dokładnym mechanizmem → rozróżnienie opisu przemiany i mechanizmu.
+- §1 i §3: „osad opadł, więc nie ma go w roztworze” → osad jest fazą stałą i może pozostawać w zawiesinie — wyjaśniono właściwy powód nierozpisywania osadu.
+- §1: trzy warunki reakcji jako pełna lista → typowe przesłanki szkolnych reakcji wymiany — uwzględniono istnienie innych reakcji w roztworach.
+- §3: „cząsteczka słabego kwasu nie zdąży się rozpaść” → opis równowagi jonizacji — zastąpiono błędne wyjaśnienie kinetyczne.
+- §3: dysocjacja jako proces, który nigdy nie jest reakcją chemiczną → rozróżnienie rozpuszczania soli jonowej i jonizacji kwasu cząsteczkowego.
+- §3: H₂SO₄ jako bezwarunkowo całkowicie zdysocjowany w obu etapach → jawnie oznaczone szkolne uproszczenie.
+- §4: „wszystkie sole Na⁺, K⁺, NH₄⁺ — bez wyjątków” → reguła dotycząca typowych soli w szkolnym zakresie — uniknięto twierdzenia o wszystkich możliwych związkach.
+- §4: „wodorotlenki metali I i II grupy, oprócz Be i Mg — R” → rozróżnienie rozpuszczalności poszczególnych wodorotlenków, w tym trudno rozpuszczalnego Ca(OH)₂. [zpe.gov](https://zpe.gov.pl/a/wytracanie-osadow/DuWAGWaya)
+- §4: sprzeczny opis CaSO₄ jako niewystępującego i występującego na liście wyjątków → jednoznaczne wskazanie wyjątku.
+- §4, zadanie 4: „4 pkt” przy sześciu odpowiedziach ocenianych po 1 pkt → „6 pkt” — suma kryteriów wynosi 6.
+- §2–§4: doprecyzowano kryteria oceniania i podano punktację przy każdym podpunkcie.
+
+Dodane:
+- §0.1: karta wyjaśniająca techniczne oznaczenie E8 i rzeczywisty zakres egzaminu.
+- §1: przypomnienie budowy jonów, jednostki wzoru soli i bilansu ładunków.
+- §1: zastrzeżenie bezpieczeństwa oraz przykłady właściwego doboru kwasu do analizy.
+- §2: tabela porównująca trzy poziomy zapisu, para rozróżnień współczynnik–indeks–ładunek oraz ostrzeżenie o rozpisywaniu 2AlCl₃.
+- §3: karta „W skrócie”, tabela sposobów zapisu składników i przykład reakcji słabego kwasu z OH⁻.
+- §3: dwa zbilansowane zapisy zobojętniania z H⁺ i H₃O⁺.
+- §4: ograniczenia szkolnych reguł, rola stężenia, rozróżnienie wody wapiennej i mleka wapiennego.
+- §4: zadanie 17 z kluczem i punktacją.
+- Materiał opracowano na podstawie pierwszej lekcji J03 z dostarczonej paczki; zachowano numery i identyfikatory sekcji objętych tą częścią. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/2173275917/2c5baf72-4ee9-4409-bad5-5d96aa656cac/GOTOWE_CHE_NASTEPNE_10.md?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Checksum-Mode=ENABLED&X-Amz-Credential=ASIA2F3EMEYE6JA2NME3%2F20261013%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261013T165746Z&X-Amz-Expires=2313&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDqa2E19KrM0%2FyCwc1CxD6K92NjZgsdIOYujoAOlIWJVgIgTOcrPgydLzXA%2F2BLr%2FeN7J4PO3k8BEugnXCmx%2FBKedYqiQUIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDMvUbsGmc3G4Rc%2BL0yrdBMbP%2BrsE1lhS%2BvabTiSg8B2XdybwslE%2BExqWSWNEBPOY0bpFWyWb9Dba8M8wl4HWcM52YSz5RoGfwODC0VqR%2BqiYdwjPt7powaQ7B1t%2B%2B4iet%2F6qzsnHPaonq%2FRKHx570TvM23%2F2BYir1XBGK1PTDtFSXQwizowi%2FVpAkDbzBo6jesSRsMo1Ng2Sopozvaot%2FP8V31NmF24aKDBHsVQOmBFpIbo%2FxjA6y7Sdm%2FcnkK7gocBLwzJd2yWHKHjssHzWrV8GY1DtMf8qnp3LWh%2FkrCrf0jExnHC2duwY67s0wy%2FPhZP%2Bdl%2FDQKhOa%2BUehbYNk4rzlq7MFMgw%2BOSjXh9X0fhwkAIJUfXFn1sPxwBWYHj0x3TfXAy2mTGEsp9kPCSzaTorFn0HqpSp%2F6G6XP%2Fj%2B1VJfsAYrieqoJN8dlimLfd9WmmSUs3eqzPErxsey6OzIX%2Bio9H9xL3PO7M0w1R8uVwmYiZi3f9ukPXZkXAV%2F6IuSWfNYvJPd18EU5OB2uDfFkzKzWCyitQea2QOXV16AyRd0BqGzFaM2ptzFGbc8NmHCHzbZlildeZ7CXVVfOnX6DdfsbiVHLtrgBXfqCuQer11BO0fz16%2FRGhH%2BoaPpBnYvkx8lE6LxuwlpsSnbZhGF37KYxxPr0TVfw5zKDaHYadl%2BiIPsMFkMlQ5f9PzNutqGdxPGvYYH5bcTffnIhCHJZkd0UprxWQhGjvWq3gooT0GiJ24zQ5IJ5HqN%2BPTjHtc7rjwHsRM%2FnNjlMe%2FMf0HXKxh00qNg66NifUofVYatS3GGHQqbuK4b%2Bgt6JvnMMC8udYGOpgBXCOEOxIkHYEI%2B5fav1FXz437MyxWCYAeSBlrsNMg0PyTdlakpI%2FtCpzkfVOr2wBEFRqv38kH%2FVhpfi%2BTH0N9B9wLd9FLp97dvmJpZUJMOzRbJ6YXdD7cwbLNB9tox%2F7%2FwHulq74ryeeHD2vt1SLz2dVNqr%2FbvAvUGro0VfmqU3osig9KOOo3RjCO4K0L90KpkTs%2F1F4Zg5Y%3D&X-Amz-SignedHeaders=host&x-id=GetObject&X-Amz-Signature=6d548b18da34002d4cd8c13f77f8b133cc10a79929292e236d9354c91e50a742)
+
+Niepewne / do weryfikacji:
+- Zakres konkretnego konkursu chemicznego pozostaje nieustalony: paczka nie zawiera regulaminu ani arkuszy pozwalających przypisać wymagania do wskazanego etapu.
+- Oznaczenia N/T należy dostosować do tabeli rzeczywiście używanej w zadaniu, bez zmiany wyjaśnienia różnicy między małą a zerową rozpuszczalnością.
+- Niniejsza część obejmuje frontmatter i §0.1–§4. Dalszy ciąg rozpocznie §5. Ten audyt jest audytem częściowym, nie końcowym audytem całej lekcji.
+
+Proponuję usunąć:
+- Brak.
+
+Źródła:
+- Dostarczona paczka: lekcja J03. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/2173275917/2c5baf72-4ee9-4409-bad5-5d96aa656cac/GOTOWE_CHE_NASTEPNE_10.md?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Checksum-Mode=ENABLED&X-Amz-Credential=ASIA2F3EMEYE6JA2NME3%2F20261013%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261013T165746Z&X-Amz-Expires=2313&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDqa2E19KrM0%2FyCwc1CxD6K92NjZgsdIOYujoAOlIWJVgIgTOcrPgydLzXA%2F2BLr%2FeN7J4PO3k8BEugnXCmx%2FBKedYqiQUIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw2OTk3NTMzMDk3MDUiDMvUbsGmc3G4Rc%2BL0yrdBMbP%2BrsE1lhS%2BvabTiSg8B2XdybwslE%2BExqWSWNEBPOY0bpFWyWb9Dba8M8wl4HWcM52YSz5RoGfwODC0VqR%2BqiYdwjPt7powaQ7B1t%2B%2B4iet%2F6qzsnHPaonq%2FRKHx570TvM23%2F2BYir1XBGK1PTDtFSXQwizowi%2FVpAkDbzBo6jesSRsMo1Ng2Sopozvaot%2FP8V31NmF24aKDBHsVQOmBFpIbo%2FxjA6y7Sdm%2FcnkK7gocBLwzJd2yWHKHjssHzWrV8GY1DtMf8qnp3LWh%2FkrCrf0jExnHC2duwY67s0wy%2FPhZP%2Bdl%2FDQKhOa%2BUehbYNk4rzlq7MFMgw%2BOSjXh9X0fhwkAIJUfXFn1sPxwBWYHj0x3TfXAy2mTGEsp9kPCSzaTorFn0HqpSp%2F6G6XP%2Fj%2B1VJfsAYrieqoJN8dlimLfd9WmmSUs3eqzPErxsey6OzIX%2Bio9H9xL3PO7M0w1R8uVwmYiZi3f9ukPXZkXAV%2F6IuSWfNYvJPd18EU5OB2uDfFkzKzWCyitQea2QOXV16AyRd0BqGzFaM2ptzFGbc8NmHCHzbZlildeZ7CXVVfOnX6DdfsbiVHLtrgBXfqCuQer11BO0fz16%2FRGhH%2BoaPpBnYvkx8lE6LxuwlpsSnbZhGF37KYxxPr0TVfw5zKDaHYadl%2BiIPsMFkMlQ5f9PzNutqGdxPGvYYH5bcTffnIhCHJZkd0UprxWQhGjvWq3gooT0GiJ24zQ5IJ5HqN%2BPTjHtc7rjwHsRM%2FnNjlMe%2FMf0HXKxh00qNg66NifUofVYatS3GGHQqbuK4b%2Bgt6JvnMMC8udYGOpgBXCOEOxIkHYEI%2B5fav1FXz437MyxWCYAeSBlrsNMg0PyTdlakpI%2FtCpzkfVOr2wBEFRqv38kH%2FVhpfi%2BTH0N9B9wLd9FLp97dvmJpZUJMOzRbJ6YXdD7cwbLNB9tox%2F7%2FwHulq74ryeeHD2vt1SLz2dVNqr%2FbvAvUGro0VfmqU3osig9KOOo3RjCO4K0L90KpkTs%2F1F4Zg5Y%3D&X-Amz-SignedHeaders=host&x-id=GetObject&X-Amz-Signature=6d548b18da34002d4cd8c13f77f8b133cc10a79929292e236d9354c91e50a742)
+- Centralna Komisja Egzaminacyjna, „O egzaminie” — przedmioty egzaminu ósmoklasisty. [cke.gov](https://cke.gov.pl/egzamin-osmoklasisty/o-egzaminie/)
+- Zintegrowana Platforma Edukacyjna, „Wytrącanie osadów” — rozpuszczalność wodorotlenków i szkolna metoda strącania. [zpe.gov](https://zpe.gov.pl/a/wytracanie-osadow/DuWAGWaya)
+- Zintegrowana Platforma Edukacyjna, „Czym są wodorotlenki i jak je otrzymać?” — otrzymywanie wodorotlenków metodą strąceniową. [zpe.gov](https://zpe.gov.pl/a/czym-sa-wodorotlenki-i-jak-je-otrzymac/D8AJXOX8U)
+
+Grafiki do zrobienia:
+
+| Gdzie | Rodzaj | Co pokazuje | Wniosek | @opis |
+|---|---|---|---|---|
+| §1, po trzech poziomach zapisu reakcji AgNO₃ z NaCl | schemat z podpisami do klikania | Te same substraty i produkt w zapisie cząsteczkowym, jonowym pełnym i skróconym; wskazanie Na⁺ i NO₃⁻ jako obserwatorów | Trzy zapisy opisują tę samą przemianę z różną szczegółowością | W zapisie cząsteczkowym występują wzory substancji, w pełnym wszystkie rozpatrywane jony, a w skróconym tylko Ag⁺ i Cl⁻ tworzące AgCl. Na⁺ i NO₃⁻ pozostają niezmienione i zostają usunięte z równania skróconego. |
+| §2, po procedurze siedmiu kroków | animacja „do przodu i od początku” | Bilansowanie BaCl₂ + Na₂SO₄, rozpisanie jonów, usunięcie 2Na⁺ i 2Cl⁻ oraz kontrola atomów i ładunków | Poprawny zapis wynika z powtarzalnej procedury | Kolejne etapy prowadzą od BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl do Ba²⁺ + SO₄²⁻ → BaSO₄↓. Usuwane są jednakowe ilości Na⁺ i Cl⁻, a liczba atomów i suma ładunków pozostają zgodne. |
+| §4, po tabeli rozpuszczalności | model interaktywny z suwakiem lub przełącznikiem | Wybór kationu i anionu, wzór związku, oznaczenie R/N/T oraz właściwa reguła lub wyjątek | Regułę ogólną trzeba sprawdzić dla konkretnego związku | Po wyborze pary jonów pojawia się wzór substancji i informacja o jej rozpuszczalności w przyjętej tabeli. CaSO₄, PbCl₂ i Ca(OH)₂ mają dodatkowe objaśnienie, że mała rozpuszczalność nie oznacza zerowej rozpuszczalności. |
 
 ## 5 | Kiedy reakcja w roztworze zachodzi {#kiedy-zachodzi} [[understand:ROZUMIENIE]] [[basic:E8]]
 
