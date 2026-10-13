@@ -4,10 +4,9 @@ uid: CHE.01.F01.jak_mysli_chemik
 tytul: Jak myśli chemik
 opis: Obserwacja, wniosek i hipoteza · cztery poziomy opisu · pięć pytań chemika · model to nie rzeczywistość
 kicker: F01 · FUNDAMENTY · MASTER v1.1
-lead: Pierwsza lekcja bloku fundamentów: jak z pojedynczej obserwacji dojść do poprawnego modelu chemicznego i zapisu. Uczysz się odróżniać to, co widzisz, od tego, co z tego wnioskujesz,
-lead: przechodzić między poziomem makro, cząsteczkowym, symbolicznym i ilościowym oraz sprawdzać, czy wyjaśnienie zgadza się z danymi.
+lead: Pierwsza lekcja bloku fundamentów: jak z pojedynczej obserwacji dojść do poprawnego modelu chemicznego i zapisu. Uczysz się odróżniać to, co widzisz, od tego, co z tego wnioskujesz, przechodzić między poziomem makro, cząsteczkowym, symbolicznym i ilościowym oraz sprawdzać, czy wyjaśnienie zgadza się z danymi.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 (audyt 01) wprowadzony — 2026-10-13"
 stopka: **CHEMIA F01 v1.1 MASTER** · Jak myśli chemik · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 15 punktów
@@ -89,7 +88,7 @@ To pierwsza lekcja bloku F — nie wymaga wcześniejszych lekcji. Wystarczą rze
 - **D. Jak opisujemy przemianę?** F16 od obserwacji do modelu reakcji · F17 równania
 - **E. Integracja:** F18 dossier substancji · F19 dossier reakcji · F20 klinika błędów · F21 transfer
 
-Po bloku F: chemia nieorganiczna (N01–N07) i kolejne działy.
+Po bloku F: chemia nieorganiczna (N01–N08) i kolejne działy.
 :::
 
 ## 0.4 | Diagnoza startowa {#diagnoza}
@@ -112,7 +111,7 @@ Po bloku F: chemia nieorganiczna (N01–N07) i kolejne działy.
 5. Żeby przewidywanie było sformułowane **przed wynikiem** i można było zaplanować test, który je wesprze albo podważy.
 6. Porównać **przewidywania modelu z danymi**: obserwacjami, pomiarami i wynikami testów.
 7. „Pęcherzyki gazu” to obserwacja. „CO₂” to **hipoteza/wniosek**, który wymaga testu, np. przepuszczenia gazu przez wodę wapienną.
-8. Zmieniasz **temperaturę**; mierzysz np. czas rozpuszczenia; utrzymujesz takie same ilość i rodzaj soli, objętość wody, mieszanie i naczynie. To przykład kontrolowania zmiennych.
+8. Zmieniasz **temperaturę**; mierzysz np. czas rozpuszczenia; utrzymujesz takie same ilość i rodzaj soli, wielkość kryształków, objętość wody, mieszanie i naczynie. To przykład kontrolowania zmiennych.
 
 **Interpretacja:** **0–2/8** → przejdź przez rdzeń razem z przykładami · **3–5/8** → rdzeń + klinika błędów · **6–7/8** → ćwiczenia transferowe · **8/8** → możesz przejść szybko do [§7](#model)–[§8](#poprawnosc), ale nadal wykonaj test końcowy.
 :::
@@ -125,7 +124,7 @@ Chemia zaczyna się od patrzenia. Zapalasz świeczkę: wosk mięknie, knot czern
 
 Pierwsza umiejętność to odróżnienie **obserwacji** od **wniosku**. Obserwacja to to, co rejestrujesz zmysłami lub przyrządem: „ciecz zmieniła barwę na różową”, „wydzielają się pęcherzyki gazu”. Wniosek to wyjaśnienie tego, co widzisz: „powstała zasada”, „zachodzi reakcja chemiczna”. **Hipoteza** to przypuszczenie, które da się sprawdzić doświadczeniem. Na egzaminie ten podział wraca w każdym zadaniu doświadczalnym — kto w rubryce „obserwacje” wpisze wniosek, traci punkt.
 
-Druga umiejętność to patrzenie na to samo zjawisko na kilku **poziomach opisu**. Na poziomie **makroskopowym** opisujemy to, co widać: wrzenie wody, rdzewienie gwoździa. Na poziomie **mikroskopowym (cząsteczkowym)** — to, czego nie widać: cząsteczki wody oddalają się od siebie, atomy żelaza łączą się z tlenem. Na poziomie **symbolicznym** zapisujemy to wzorami i równaniami: H₂O(c) → H₂O(g). Chemik płynnie przechodzi między tymi poziomami, a ty nauczysz się tego krok po kroku przez cały kurs.
+Druga umiejętność to patrzenie na to samo zjawisko na kilku **poziomach opisu**. Na poziomie **makroskopowym** opisujemy to, co widać: wrzenie wody, rdzewienie gwoździa. Na poziomie **cząsteczkowym** — to, czego nie widać: cząsteczki wody oddalają się od siebie, atomy żelaza łączą się z tlenem. Na poziomie **symbolicznym** zapisujemy to wzorami i równaniami: H₂O(c) → H₂O(g). Chemik płynnie przechodzi między tymi poziomami, a ty nauczysz się tego krok po kroku przez cały kurs.
 
 Trzecia umiejętność to praca z **modelami**. Atom narysowany jako kulka, cząsteczka jako „patyczki i kulki” — to modele: uproszczenia, które pomagają myśleć, ale nie są samą rzeczywistością. Dobry chemik wie, do czego model się nadaje i gdzie przestaje działać.
 
@@ -144,7 +143,7 @@ Chemia bada **skład, budowę, właściwości i przemiany** substancji oraz zale
 | **Przemiany** — jak się zmienia? | zjawiska fizyczne i reakcje chemiczne | lód topnieje · metan spala się do CO₂ i H₂O |
 
 ::: karta core | Najważniejsza myśl kursu
-**Właściwości wynikają z budowy.** Diament i grafit to ten sam pierwiastek (węgiel), ale inna budowa — dlatego diament jest twardy, a grafit miękki. Woda wrze w 100 °C, a podobny siarkowodór H₂S w około −60 °C, bo cząsteczki wody silniej się przyciągają (wiązania wodorowe — [F15](#mosty)).
+**Właściwości wynikają z budowy.** Diament i grafit to ten sam pierwiastek (węgiel), ale inna budowa — dlatego diament jest twardy, a grafit miękki. Woda wrze w 100 °C, a podobny siarkowodór H₂S w około −60 °C, bo cząsteczki wody silniej się przyciągają (wiązania wodorowe — F15).
 :::
 
 ## 2 | Cztery poziomy opisu [[understand:ROZUMIENIE]] {#poziomy}
@@ -155,7 +154,7 @@ Chemik patrzy na to samo zjawisko na czterech poziomach. Dobra odpowiedź umie p
 |---|---|---|
 | **makroskopowy** | to, co widzimy i mierzymy | pęcherzyki, para, 100 °C |
 | **cząsteczkowy** | atomy, jony, cząsteczki (model!) | cząsteczki H₂O odrywają się od cieczy i przechodzą w gaz |
-| **symboliczny** | symbole, wzory, równania | H₂O(l) → H₂O(g) |
+| **symboliczny** | symbole, wzory, równania | H₂O(c) → H₂O(g) |
 | **ilościowy** | masy, objętości, mole | z 18 g wody powstaje 18 g pary — masa się nie zmienia |
 
 ::: karta understand | Przykład przejścia przez cztery poziomy
@@ -179,7 +178,7 @@ W obserwacji nie ma nazw produktów ani przyczyn. „Wydziela się **wodór**”
 
 ::: karta core | Po czym poznać reakcję chemiczną? (objawy)
 Zmiana barwy · wydzielanie gazu · powstawanie osadu · wydzielanie lub pochłanianie ciepła lub światła · zmiana zapachu.
-**Żaden objaw sam w sobie nie jest dowodem powstania nowej substancji.** Barwa może się zmienić przy rozcieńczaniu, pęcherzyki mogą pochodzić z wrzenia lub wydzielania rozpuszczonego gazu. Silny wniosek wymaga **testu właściwości produktu** albo innego niezależnego dowodu. Odwracalność nie jest sama w sobie definicją reakcji: istnieją przemiany chemiczne odwracalne. Na poziomie E8 najważniejsze pytanie brzmi: **czy mamy podstawy stwierdzić powstanie substancji o nowych właściwościach?**
+**Żaden objaw sam w sobie nie jest dowodem powstania nowej substancji.** Barwa może się zmienić przy rozcieńczaniu, pęcherzyki mogą pochodzić z wrzenia lub wydzielania rozpuszczonego gazu. Silny wniosek wymaga **testu właściwości produktu** albo innego niezależnego dowodu. Odwracalność nie jest definicją reakcji: istnieją reakcje odwracalne (np. uwodnienie i odwodnienie CuSO₄). Jedyne kryterium zjawiska chemicznego: **czy powstała substancja o nowych właściwościach?** Odzyskanie substancji wyjściowej bywa pomocniczym testem (np. odparowanie roztworu soli), ale nie rozstrzyga samo w sobie.
 :::
 
 ::: karta core | Schemat analizy doświadczenia — 6 pytań
@@ -192,11 +191,24 @@ Zmiana barwy · wydzielanie gazu · powstawanie osadu · wydzielanie lub pochła
 
 **Przykład.** Do kwasu solnego dodano wiórki magnezu.
 Obserwacje: magnez stopniowo znika, wydzielają się pęcherzyki bezbarwnego gazu, probówka się ogrzewa.
-Wniosek: zachodzi reakcja chemiczna; gaz zbliżony do płomienia spala się z charakterystycznym dźwiękiem — to wodór.
+Hipoteza: jeśli gaz to wodór, to zbliżona do wylotu probówki zapalona łuczynka da krótkie „pyk”.
+Test: zbliżyć zapaloną łuczynkę do wylotu probówki.
+Obserwacja z testu: słychać krótkie „pyk”.
+Wniosek: gaz to wodór (H₂); zaszła reakcja chemiczna — powstały nowe substancje: chlorek magnezu w roztworze i wodór.
 
 $$ Mg + 2 HCl → MgCl₂ + H₂↑
 
 > „Magnez zniknął” nie znaczy „został zniszczony” — jego atomy są teraz w jonach Mg²⁺ w roztworze (prawo zachowania masy).
+:::
+
+::: karta basic | Testy na gazy — test → wynik → wniosek
+| Gaz | Test | Wynik | Wniosek |
+|---|---|---|---|
+| CO₂ | przepuścić przez wodę wapienną | zmętnienie (osad CaCO₃) | obecny CO₂ — w tych warunkach (zob. zastrzeżenie niżej) |
+| H₂ | zbliżyć zapaloną łuczynkę do wylotu probówki | krótkie „pyk” | obecny wodór |
+| O₂ | wprowadzić żarzącą się drzazgę | drzazga rozżarza się (zapala) | obecny tlen |
+
+**Zastrzeżenie:** SO₂ też mąci wodę wapienną. Test na CO₂ jest wiarygodny, gdy wiemy, że SO₂ nie powstaje (np. nie spalano siarki). Nadmiar CO₂ rozpuszcza osad — woda się klaruje.
 :::
 
 ## 4 | Pięć pytań chemika [[basic:E8]] {#piec-pytan}
@@ -204,7 +216,7 @@ $$ Mg + 2 HCl → MgCl₂ + H₂↑
 Uniwersalne narzędzie — stosuj je do każdego nowego zagadnienia, w każdej lekcji.
 
 1. **Co dokładnie obserwuję?** — czysta obserwacja, bez przyczyny.
-2. **Czy to właściwość, zjawisko fizyczne czy reakcja?** — czy powstała nowa substancja? czy da się odzyskać wyjściową?
+2. **Czy to właściwość, zjawisko fizyczne czy reakcja?** — czy powstała substancja o nowych właściwościach? (pomocniczo: czy da się odzyskać wyjściową?)
 3. **Jaki model cząstek to wyjaśnia?** — atomy, jony, cząsteczki; co się z nimi dzieje.
 4. **Jaki zapis chemiczny odpowiada modelowi?** — symbol, wzór, równanie.
 5. **Jak sprawdzę, że wyjaśnienie zgadza się z danymi?** — test, pomiar, bilans atomów.
@@ -236,17 +248,18 @@ Jeżeli model przewiduje wynik, którego doświadczenie nie daje, nie „naginam
 ::: karta basic | Przykład 1 — sól w wodzie
 **Obserwacja:** kryształy po chwili przestają być widoczne, roztwór jest przezroczysty.
 **Błędny wniosek:** „sól zniknęła”.
-**Model:** drobiny soli (jony Na⁺ i Cl⁻) rozproszyły się między cząsteczkami wody.
+**Model:** drobiny soli (naładowane drobiny: Na⁺ i Cl⁻ — jony, F05) rozproszyły się między cząsteczkami wody.
 **Test:** odparowanie wody → na dnie zostają kryształy soli.
 **Wniosek:** rozpuszczanie to **zjawisko fizyczne** — substancja nie powstała ani nie zniknęła.
 :::
 
 ::: karta basic | Przykład 2 — kwas i zasada
-**Obserwacja:** po zmieszaniu roztwór się ogrzewa, a dodany wcześniej wskaźnik (fenoloftaleina) z malinowego staje się bezbarwny.
-**Model:** w roztworze jony hydroniowe H₃O⁺ i OH⁻ reagują, tworząc wodę (zapis szkolny często upraszcza to do H⁺ + OH⁻ → H₂O).
+**Obserwacja:** roztwór wodorotlenku sodu z fenoloftaleiną jest malinowy; po dodaniu kwasu solnego kroplami barwa znika (roztwór lekko się ogrzewa).
+**Model:** jony pochodzące z kwasu i z zasady łączą się w cząsteczki wody (zapis szkolny upraszcza to do H⁺ + OH⁻ → H₂O).
 **Zapis:**
 $$ HCl + NaOH → NaCl + H₂O
-**Wniosek:** to **reakcja chemiczna** (zobojętnianie) — więcej w N02 i N03.
+**Test:** odparować część roztworu → na dnie zostają kryształy o innych właściwościach niż wyjściowe roztwory; pH papierkiem uniwersalnym ≈ 7 (obojętny). Samo odbarwienie fenoloftaleiny nie wystarczy — jest tylko objawem zmiany pH.
+**Wniosek:** powstała nowa substancja (sól i woda) — to **reakcja chemiczna** (zobojętnianie). Więcej w N02 i N03.
 :::
 
 ::: karta basic | Przykład 3 — żelazo i siarka
@@ -267,6 +280,15 @@ $$ Fe + S → FeS
 | **indeks** (mała cyfra) | liczba atomów w jednej cząsteczce albo w jednostce wzoru (związki jonowe, np. NaCl, nie tworzą cząsteczek) | H₂ — cząsteczka z dwóch atomów; CaCl₂ — 1 Ca²⁺ na 2 Cl⁻ |
 | **współczynnik** (duża cyfra przed wzorem) | liczba cząsteczek lub jednostek wzoru (na poziomie LO także moli) | 2 H₂O — dwie cząsteczki wody; 2 NaCl — dwie jednostki wzoru |
 | **równanie** | przemiana substratów w produkty, z zachowaniem atomów | 2 H₂ + O₂ → 2 H₂O |
+
+**Znaki w równaniach:**
+
+| Znak | Znaczy |
+|---|---|
+| → | przemiana substratów w produkty |
+| ↑ | gaz ucieka z mieszaniny reakcyjnej |
+| ↓ | osad (trudno rozpuszczalna substancja) wypada z roztworu |
+| (s), (c), (g), (aq) | stan skupienia: stały (solid), ciekły (ciecz), gazowy (gas), roztwór wodny (aqueous) |
 
 ::: karta core | Odczytaj równanie na głos
 2 H₂ + O₂ → 2 H₂O: „dwie cząsteczki wodoru reagują z jedną cząsteczką tlenu i powstają dwie cząsteczki wody”. Policz: po lewej 4 atomy H i 2 atomy O, po prawej też 4 H i 2 O — atomy się nie tworzą i nie znikają.
@@ -339,9 +361,20 @@ Każdy prosty test możesz rozpisać w sześciu krokach:
 5. **Pomiar/obserwacja:** co dokładnie zapisuję, bez interpretacji?
 6. **Kryterium wniosku:** jaki wynik wesprze hipotezę, a jaki ją osłabi?
 
-**Przykład:** „Czy cieplejsza woda przyspiesza rozpuszczanie soli?” — temperatura jest zmienną, czas rozpuszczenia wynikiem, a ilość soli, objętość wody i sposób mieszania powinny być porównywalne.
+**Przykład:** „Czy cieplejsza woda przyspiesza rozpuszczanie soli?” — temperatura jest zmienną, czas rozpuszczenia wynikiem, a ilość soli, objętość wody, sposób mieszania i wielkość kryształków powinny być porównywalne.
 
 Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mieć **jasne pytanie i określony sposób rozstrzygnięcia**.
+:::
+
+## 9.2 | BHP w pracowni — sześć reguł {#bhp}
+
+::: karta basic | Sześć reguł
+1. **Okulary ochronne i fartuch** — zawsze, także przy „niegroźnych” doświadczeniach.
+2. **Zapach sprawdzamy ruchem dłoni** znad naczynia — nigdy nosem nad probówką.
+3. **Wylot probówki kierujemy od siebie i od innych** — mieszanina może wytrysnąć.
+4. **Ogrzewanie probówki:** wypełnij ją najwyżej do 1/3 objętości i mieszaj płomieniem.
+5. **Nic nie smakujemy** — ani soli, ani cukru z pracowni.
+6. **Piktogramy GHS** czytamy przed pracą: żrący, toksyczny, drażniący, palny, utleniający, szkodliwy dla środowiska.
 :::
 
 ## 10 | Doświadczenia {#doswiadczenia}
@@ -351,11 +384,11 @@ Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mie
 
 ::: dosw | Doświadczenie 1 — Co naprawdę się zmieniło? (trzy naczynia)
 Problem: W którym naczyniu zachodzi reakcja chemiczna, a w którym zjawisko fizyczne?
-Hipoteza: Reakcja zachodzi tylko tam, gdzie powstaje nowa substancja i nie da się prosto odzyskać substancji wyjściowej.
+Hipoteza: Reakcja zachodzi tam, gdzie powstaje substancja o nowych właściwościach. Pomocniczo: w zjawisku fizycznym substancję wyjściową da się odzyskać prostymi metodami.
 Sprzęt: trzy zlewki, łyżeczka, bagietka, parownica, palnik lub płyta grzejna; lód, sól kuchenna, woda, soda oczyszczona (NaHCO₃), ocet.
 Przebieg: (a) kostka lodu w zlewce w temperaturze pokojowej; (b) łyżeczka soli w wodzie, mieszanie, potem część roztworu odparować w parownicy; (c) łyżeczka sody, dolać octu.
-Obserwacja: (a) lód topnieje, powstaje ciecz; (b) kryształy przestają być widoczne, po odparowaniu na parownicy zostaje biały osad; (c) burzliwe wydzielanie pęcherzyków bezbarwnego gazu, soda znika.
-Wniosek: (a) i (b) — zjawiska fizyczne (substancję wyjściową da się odzyskać: zamrozić, odparować); (c) — reakcja chemiczna (powstał gaz — nowa substancja; sody nie odzyskamy przez odparowanie).
+Obserwacja: (a) lód topnieje, powstaje ciecz; (b) kryształy przestają być widoczne; po odparowaniu na parownicy zostaje biała krystaliczna pozostałość; (c) burzliwe wydzielanie pęcherzyków bezbarwnego gazu, soda znika.
+Wniosek: (a) i (b) — zjawiska fizyczne (pomocniczo: substancję wyjściową da się odzyskać — zamrozić, odparować); (c) — bardzo prawdopodobnie reakcja chemiczna (soda znika, nie odzyskujemy jej przez odparowanie, wydziela się gaz); tożsamość gazu sprawdzimy w Doświadczeniu 2.
 Równanie:: NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑
 BHP: okulary ochronne; nie smakujemy substancji; parownicę po ogrzaniu chwytamy szczypcami — jest gorąca; ocet nie do oczu.
 
@@ -364,7 +397,7 @@ BHP: okulary ochronne; nie smakujemy substancji; parownicę po ogrzaniu chwytamy
 @zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w zlewce: odparowanie roztworu soli
 @opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
 @zlewka f01-doswiadczenia-v01 f01SodaOcet | Zobacz w zlewce: soda + ocet
-@opis Do sody oczyszczonej dodano ocet: mieszanina pieni się i intensywnie wydziela pęcherzyki bezbarwnego gazu. Wniosek: zachodzi reakcja chemiczna — powstaje nowa substancja, tlenek węgla(IV) CO₂.
+@opis Do sody oczyszczonej dodano ocet: mieszanina pieni się i intensywnie wydziela pęcherzyki bezbarwnego gazu. Wniosek: bardzo prawdopodobnie zachodzi reakcja chemiczna — powstaje nowa substancja gazowa; jej tożsamość sprawdzamy w Doświadczeniu 2.
 :::
 
 ::: dosw | Doświadczenie 2 — Czy ten gaz to naprawdę CO₂?
@@ -373,12 +406,12 @@ Hipoteza: Jeśli gaz to CO₂, to po przepuszczeniu przez wodę wapienną roztw�
 Sprzęt: probówka z korkiem i rurką odprowadzającą, druga probówka z wodą wapienną (nasycony roztwór Ca(OH)₂); soda oczyszczona, ocet lub kwas solny rozcieńczony.
 Przebieg: W probówce z sodą dodać ocet, szybko zamknąć korkiem z rurką, koniec rurki zanurzyć w wodzie wapiennej.
 Obserwacja: Woda wapienna mętnieje (biały osad).
-Wniosek: Wydzielającym się gazem był CO₂ — tym razem wniosek ma dowód, a nie tylko obserwację „bąbelków”.
+Wniosek: zmętnienie wskazuje na CO₂ w tych warunkach (bez SO₂ i nadmiaru CO₂) — tym razem wniosek ma dowód, a nie tylko obserwację „bąbelków”. Ambitnie: przy nadmiarze CO₂ osad znika, bo powstaje rozpuszczalny wodorowęglan wapnia Ca(HCO₃)₂.
 Równanie:: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O
 BHP: okulary; woda wapienna jest zasadowa i drażni oczy oraz skórę; rurka nie może być zatkana (rosnące ciśnienie).
 
 @zlewka f01-doswiadczenia-v01 f01WodaWapienna | Zobacz w zlewce: woda wapienna i CO₂
-@opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina węglanu wapnia. Wniosek: zmętnienie wody wapiennej to test wykrywający CO₂.
+@opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina węglanu wapnia. Wniosek: zmętnienie wody wapiennej wskazuje na CO₂ w tych warunkach; nadmiar CO₂ rozpuszcza osad i woda się klaruje.
 :::
 
 ::: dosw | Doświadczenie 3 — Spalanie magnezu (pokaz)
@@ -387,12 +420,12 @@ Hipoteza: Jeśli powstaje nowa substancja, będzie miała inne właściwości ni
 Sprzęt: szczypce metalowe, palnik, płytka ceramiczna; wstążka magnezu (ok. 3 cm).
 Przebieg: Nauczyciel wkłada koniec wstążki do płomienia, a po zapłonie trzyma ją nad płytką.
 Obserwacja: Magnez spala się oślepiająco jasnym, białym płomieniem; powstaje biały, kruchy proszek bez metalicznego połysku.
-Wniosek: Powstała nowa substancja — tlenek magnezu; to reakcja chemiczna (objawy: światło, ciepło, nowa substancja o innych właściwościach).
+Wniosek: powstała nowa substancja — tlenek magnezu; to reakcja chemiczna (objawy: światło, ciepło, nowa substancja o innych właściwościach). Dowód ilościowy: masa tlenku jest większa niż masa wyjściowego magnezu, bo do magnezu przyłączył się tlen z powietrza.
 Równanie:: 2 Mg + O₂ → 2 MgO
 BHP: wykonuje nauczyciel; **nie patrzeć bezpośrednio w płomień** (bardzo jasne światło); płonącego magnezu nie gasić wodą; okulary, płytka ceramiczna pod spodem.
 
-@zlewka f01-doswiadczenia-v01 f01Mg | Zobacz w tyglu: spalanie magnezu
-@opis Wstążka magnezu spalana w tyglu: oślepiająco jasny, biały płomień, po spaleniu zostaje biały proszek (tlenek magnezu). Wniosek: zaszła reakcja chemiczna 2 Mg + O₂ → 2 MgO; w płomień nie patrzymy bezpośrednio.
+@zlewka f01-doswiadczenia-v01 f01Mg | Zobacz na płytce ceramicznej: spalanie magnezu
+@opis Wstążka magnezu spalana nad płytką ceramiczną: oślepiająco jasny, biały płomień, po spaleniu zostaje biały proszek (tlenek magnezu). Wniosek: zaszła reakcja chemiczna 2 Mg + O₂ → 2 MgO; w płomień nie patrzymy bezpośrednio.
 :::
 
 ::: dosw | Doświadczenie 4 — Mieszanina czy związek? Żelazo i siarka (pokaz)
@@ -401,12 +434,12 @@ Hipoteza: W mieszaninie magnes oddzieli żelazo; po reakcji powstanie związek, 
 Sprzęt: magnes w woreczku foliowym, szalka, probówka ze szkła trudnotopliwego, statyw, palnik; opiłki żelaza, siarka (proszek).
 Przebieg: (1) Zmieszać opiłki z siarką na szalce, zbliżyć magnes. (2) Nauczyciel ogrzewa część mieszaniny w probówce, aż zacznie się żarzyć; po ostygnięciu zbliża magnes do produktu.
 Obserwacja: (1) Magnes przyciąga szare opiłki, żółta siarka zostaje. (2) Mieszanina rozżarza się (także po odsunięciu palnika); powstaje czarna, krucha substancja, magnes jej nie przyciąga.
-Wniosek: (1) mieszanina — składniki zachowują właściwości; (2) reakcja chemiczna — powstał siarczek żelaza(II) o nowych właściwościach.
+Wniosek: (1) mieszanina — składniki zachowują właściwości; (2) reakcja chemiczna — powstał siarczek żelaza(II) o nowych właściwościach. Stosunek masowy Fe : S w FeS to 56 : 32 = 7 : 4, więc substraty reagują w takich proporcjach; nadmiar siarki pali się do trującego SO₂.
 Równanie:: Fe + S → FeS
 BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać trujący SO₂ — nie wąchać; gorąca probówka może pęknąć — okulary, szczypce.
 
 @zlewka f01-doswiadczenia-v01 f01FeS | Zobacz w probówce: Fe + S po ogrzaniu
-@opis Probówka z mieszaniną opiłków żelaza i siarki po ogrzaniu: mieszanina rozżarza się, powstaje ciemnoszara substancja (siarczek żelaza(II)), której magnes już nie przyciąga. Wniosek: powstała nowa substancja o innych właściwościach — reakcja chemiczna Fe + S → FeS.
+@opis Probówka z mieszaniną opiłków żelaza i siarki po ogrzaniu: mieszanina rozżarza się, powstaje czarna, krucha substancja (siarczek żelaza(II)), której magnes już nie przyciąga. Wniosek: powstała nowa substancja o innych właściwościach — reakcja chemiczna Fe + S → FeS.
 :::
 
 ::: karta understand | Przewiduj, potem sprawdź
@@ -450,7 +483,7 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 | „Powstał osad, więc na pewno zaszła reakcja.” | „Osad może powstać w reakcji albo po zmianie rozpuszczalności (np. krystalizacja po ochłodzeniu).” | Objaw ≠ dowód. |
 | „H₂O to rysunek cząsteczki wody.” | „H₂O to wzór — zapis składu: rodzaj atomów i ich stosunek.” | Wzór sumaryczny nie pokazuje kształtu ani wiązań. |
 | „Powącham, żeby sprawdzić, co powstało.” | „Zapach sprawdzamy tylko ruchem dłoni znad naczynia, nigdy bezpośrednio.” | Wiele gazów jest trujących lub drażniących (BHP). |
-| „Substancja, materia, próbka, ciało — to to samo.” | „Substancja to rodzaj materii; próbka to porcja substancji lub mieszaniny; ciało to przedmiot.” | Gwóźdź (ciało) jest z żelaza (substancja). |
+| „Substancja, materia, próbka, ciało — to to samo.” | „Substancja to rodzaj materii; próbka to porcja substancji lub mieszaniny; ciało to przedmiot.” | Gwóźdź (ciało) jest z żelaza (substancja); szczegóły — F02. |
 :::
 
 ## 12 | Ćwiczenia {#cwiczenia}
@@ -463,7 +496,7 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 
 ::: odp | Pokaż odpowiedzi
 1. Skład, budowę, właściwości i przemiany substancji.
-2. Obserwacja — to, co widzę lub mierzę („pęcherzyki gazu”); wniosek — interpretacja („wydziela się CO₂”, potwierdzone testem).
+2. Obserwacja — to, co widzę lub mierzę („pęcherzyki gazu”); wniosek — interpretacja („wydziela się CO₂”, wsparte testem).
 3. Co obserwuję? Właściwość, zjawisko czy reakcja? Jaki model cząstek? Jaki zapis? Jak sprawdzę z danymi?
 4. Trzy cząsteczki tlenu, każda z dwóch atomów — razem 6 atomów tlenu.
 :::
@@ -476,7 +509,7 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 8. Policz atomy każdego pierwiastka po obu stronach: 2 Mg + O₂ → 2 MgO. Czy równanie jest poprawne?
 
 ::: odp | Pokaż odpowiedzi
-5. a) Hipoteza: zaszła reakcja i powstała barwna substancja — **albo** dodano barwną substancję, która się rozpuściła. Test: czy da się odzyskać substancje wyjściowe; czy zmiana zachodzi bez dodatku drugiego odczynnika. b) Hipoteza: powstała trudno rozpuszczalna substancja. Test: odsączyć osad i zbadać jego właściwości (czy rozpuszcza się w wodzie, w kwasie). c) Hipoteza: powstaje gaz, np. CO₂. Test: woda wapienna (mętnieje → CO₂); dla wodoru — próba „pyk!”; dla tlenu — tląca się drzazga.
+5. a) Hipoteza: zaszła reakcja i powstała barwna substancja — **albo** dodano barwną substancję, która się rozpuściła. Test: próba kontrolna (ta sama ciecz bez drugiego odczynnika lub samo rozcieńczenie barwnika); właściwości produktu (np. pH, rozpuszczalność); czy barwa wraca po zmianie warunków. Odzyskanie substancji wyjściowej to tylko pomocniczy test. b) Hipoteza: powstała trudno rozpuszczalna substancja. Test: odsączyć osad i zbadać jego właściwości (czy rozpuszcza się w wodzie, w kwasie). c) Hipoteza: powstaje gaz, np. CO₂. Test: woda wapienna (mętnieje → CO₂); dla wodoru — próba „pyk!”; dla tlenu — tląca się drzazga.
 6. Sól rozpuściła się — jej drobiny rozproszyły się w wodzie; po odparowaniu wody kryształy wracają.
 7. Fizyczne: topnienie masła, wrzenie wody. Reakcja: spalanie gazu w kuchence, pieczenie ciasta (powstaje CO₂ z proszku do pieczenia), czernienie przypalonego cukru.
 8. Lewa: 2 Mg, 2 O; prawa: 2 Mg, 2 O — poprawne.
@@ -492,7 +525,7 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 ::: odp | Pokaż odpowiedzi
 9. Pozwala liczyć atomy, budować cząsteczki i bilansować równania — do tych zadań szczegóły elektronów nie są potrzebne.
 10. Model Bohra — elektron nie krąży po torze; reguła oktetu — wyjątki (BF₃, SF₆); „przekazanie elektronu” w wiązaniu jonowym — wiązania mają też charakter częściowo kowalencyjny.
-11. Makro: pęcherzyki pary i temperatura wrzenia (np. 100 °C przy ciśnieniu normalnym). Cząsteczkowy: cząsteczki H₂O pokonują przyciąganie i przechodzą w gaz, nie rozpadają się. Symboliczny: H₂O(l) → H₂O(g). Ilościowy: masa wody w zamkniętym naczyniu się nie zmienia.
+11. Makro: pęcherzyki pary i temperatura wrzenia (np. 100 °C przy ciśnieniu normalnym). Cząsteczkowy: cząsteczki H₂O pokonują przyciąganie i przechodzą w gaz, nie rozpadają się. Symboliczny: H₂O(c) → H₂O(g). Ilościowy: masa wody w zamkniętym naczyniu się nie zmienia.
 12. W mieszaninie atomy Fe i S są w osobnych drobinach swoich substancji; w reakcji powstają wiązania między Fe i S — nowa substancja FeS o innych właściwościach.
 :::
 :::
@@ -500,13 +533,13 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 ::: karta extra | D. Zaawansowane [[extra:AMBITNE]]
 13. Kiedy używać modelu kulek, a kiedy orbitali?
 14. Uczeń zapisał: „Obserwacja: magnez utlenił się do MgO”. Wskaż wszystkie błędy i popraw.
-15. Zaproponuj doświadczenie, które odróżni roztwór soli od czystej wody, bez smakowania.
+15. Zaproponuj doświadczenie, które odróżni roztwór soli od wody destylowanej, bez smakowania.
 16. Dlaczego w chemii mówimy o „modelach”, a o prawie zachowania masy — jako o prawie?
 
 ::: odp | Pokaż odpowiedzi
 13. Kulki — liczenie atomów, budowa i bilans; orbitale — wyjaśnianie wiązań, kształtów i właściwości (LO).
 14. „Utlenił się” i „MgO” to wnioski. Obserwacja: „wstążka spala się jasnym białym płomieniem, powstaje biały, kruchy proszek”. Wniosek (osobno): „powstał tlenek magnezu”.
-15. Odparować obie próbki na parownicach — po roztworze soli zostaje biały osad. Albo zbadać przewodnictwo prądu (roztwór soli przewodzi — N04).
+15. Odparować obie próbki na parownicach (woda destylowana i woda z solą) — po roztworze soli zostaje biała krystaliczna pozostałość, po wodzie destylowanej praktycznie nic (kranówka zostawia nalot twardości, dlatego bierzemy destylowaną). Albo zbadać przewodnictwo prądu (roztwór soli przewodzi — N04).
 16. Modele to uproszczenia wymieniane na dokładniejsze; prawo zachowania masy potwierdzono w niezliczonych pomiarach i obowiązuje we wszystkich modelach.
 :::
 :::
@@ -525,6 +558,22 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 :::
 :::
 
+::: karta exam | F. Bilansowanie i poziomy poprawności (5 pkt)
+21. Policz atomy każdego pierwiastka: a) w 2 Ca(OH)₂; b) w 3 H₂SO₄; c) w Al₂(SO₄)₃.
+22. Które równania są poprawne? a) H₂ + O₂ → H₂O; b) Fe + S → FeS; c) 2 H₂ + O₂ → 2 H₂O.
+23. Dobierz współczynniki: a) Na + Cl₂ → NaCl; b) H₂ + Cl₂ → HCl.
+24. Uzupełnij stany skupienia w równaniu CaCl₂ + Na₂CO₃ → CaCO₃ + 2 NaCl (osad CaCO₃ wypada z roztworu) i sprawdź bilans.
+25. Podaj poziom błędu: a) „CL” zamiast Cl; b) „CO2” zapisane bez indeksu w formie C₂O; c) „2 H₂ + O₂ → H₂O”; d) „Cu + HCl → CuCl₂ + H₂”.
+
+::: odp | Pokaż odpowiedzi
+21. a) 2 Ca, 4 O, 4 H; b) 6 H, 3 S, 12 O; c) 2 Al, 3 S, 12 O.
+22. a) niepoprawne — po prawej 2 H i 1 O, po lewej 2 H i 2 O; poprawnie 2 H₂ + O₂ → 2 H₂O; b) poprawne (1 Fe, 1 S); c) poprawne (4 H, 2 O po obu stronach).
+23. a) 2 Na + Cl₂ → 2 NaCl; b) H₂ + Cl₂ → 2 HCl.
+24. CaCl₂(aq) + Na₂CO₃(aq) → CaCO₃(s)↓ + 2 NaCl(aq). Bilans: Ca 1 = 1, C 1 = 1, O 3 = 3, Na 2 = 2, Cl 2 = 2.
+25. a) poziom językowy (symbol Cl); b) poziom strukturalny (zły wzór: CO₂, nie C₂O); c) poziom ilościowy (bilans: 2 O po lewej, 1 po prawej); d) poziom chemiczny (miedź nie wypiera wodoru z kwasu solnego — N03).
+:::
+:::
+
 ## 12.5 | Ciekawostki {#ciekawostki-plus}
 
 ::: karta extra | Alchemicy i pierwsze laboratoria
@@ -532,16 +581,16 @@ Przez stulecia alchemicy szukali „kamienia filozoficznego”, który miał zam
 :::
 
 ::: karta extra | Lavoisier i waga
-Antoine Lavoisier w XVIII w. zaczął dokładnie ważyć substancje przed i po reakcji. Dzięki temu sformułował prawo zachowania masy i obalił teorię „flogistonu”. Waga stała się najważniejszym przyrządem chemika.
+Antoine Lavoisier w XVIII w. (w dziele „Traité élémentaire de chimie”, 1789) zaczął dokładnie ważyć substancje przed i po reakcji. Dzięki temu sformułował prawo zachowania masy i obalił teorię „flogistonu”. Waga stała się najważniejszym przyrządem chemika.
 :::
 
-::: karta extra | Ponad 100 pierwiastków, miliony związków
-Znamy 118 pierwiastków, a z nich zbudowano ponad sto milionów opisanych związków chemicznych — i co roku przybywa ich miliony. (orientacyjnie)
+::: karta extra | 118 pierwiastków, setki milionów substancji
+Znamy 118 pierwiastków. Rejestry chemiczne opisują dziś setki milionów substancji, a nowe wpisy przybywają co roku.
 :::
 
 ## 12.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
 
-*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+*(Warstwa ponad E8 — zadania w stylu konkursów chemicznych.)*
 
 ::: karta understand | Dla olimpijczyka — jak myśli chemik głębiej
 **Obserwacja zależy od przyrządu** — gołym okiem nie zobaczysz zmiany pH, ale wskaźnik pokaże ją barwą; termometr „widzi” efekt cieplny. **Jedna zmienna naraz** — w dobrze zaplanowanym doświadczeniu zmieniasz tylko jeden czynnik, a resztę utrzymujesz stałą. **Wniosek nie wychodzi poza dane** — z doświadczenia w temperaturach 20–60 °C nie wiesz, co będzie w 90 °C. **Powtarzalność** — wynik jednego pomiaru może być przypadkiem; chemik powtarza doświadczenie i porównuje wyniki.
@@ -556,18 +605,42 @@ Oceń, czy zdanie jest obserwacją (O) czy wnioskiem (W): 1) Roztwór zabarwił 
 :::
 
 ::: adv | Zadanie O2 (4 pkt) — zaplanuj doświadczenie | poziom ambitny (konkurs)
-Zaplanuj doświadczenie: „Czy temperatura wody wpływa na szybkość rozpuszczania cukru?”. Podaj zmienną niezależną, zależną, dwie wielkości stałe i próbę kontrolną.
+Zaplanuj doświadczenie: „Czy temperatura wody wpływa na szybkość rozpuszczania cukru?”. Podaj zmienną niezależną, zależną, dwie wielkości stałe, próbę kontrolną i liczbę powtórzeń.
 
 ::: odp | Pokaż klucz
-niezależna: temperatura wody (1 pkt); zależna: czas rozpuszczenia (1 pkt); stałe: masa cukru, objętość wody, sposób mieszania (1 pkt za dwie); kontrolna: woda w temperaturze pokojowej (1 pkt).
+niezależna: temperatura wody (1 pkt); zależna: czas rozpuszczenia (1 pkt); stałe: masa cukru, objętość wody, sposób mieszania (1 pkt za dwie); kontrolna: woda w temperaturze pokojowej (1 pkt); powtórzenia: co najmniej 3 pomiary, by ocenić rozrzut (wliczone w punkt za wielkości stałe).
 :::
 :::
 
-::: adv | Zadanie O3 (3 pkt) — trzy poziomy opisu | poziom ambitny (konkurs)
-Opisz topnienie lodu na poziomie makroskopowym, mikroskopowym i symbolicznym.
+::: adv | Zadanie O3 (3 pkt) — trzy z czterech poziomów opisu | poziom ambitny (konkurs)
+Opisz topnienie lodu na trzech z czterech poziomów opisu (makroskopowym, cząsteczkowym, symbolicznym, ilościowym).
 
 ::: odp | Pokaż klucz
-makro: lód zamienia się w wodę ciekłą (1 pkt); mikro: cząsteczki wody zaczynają się przemieszczać względem siebie, słabną oddziaływania utrzymujące je w sieci (1 pkt); symbolicznie: H₂O(s) → H₂O(c) (1 pkt).
+makro: lód zamienia się w wodę ciekłą (1 pkt); cząsteczkowy: cząsteczki wody zaczynają się przemieszczać względem siebie, słabną oddziaływania utrzymujące je w sieci (1 pkt); symbolicznie: H₂O(s) → H₂O(c) (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O4 (3 pkt) — krytyka protokołu | poziom ambitny (konkurs)
+Uczeń zapisał: „Obserwacja: sól zniknęła. Wniosek: zaszła reakcja, bo roztwór jest bezbarwny. Hipoteza: powstanie gaz.” Znajdź 3 błędy i popraw każdy.
+
+::: odp | Pokaż klucz
+1) „sól zniknęła” to wniosek; obserwacja: kryształy przestały być widoczne (1 pkt). 2) bezbarwność nie dowodzi reakcji — może to być zwykłe rozpuszczanie (1 pkt). 3) hipoteza „powstanie gaz” nie ma warunku sprawdzalności; poprawnie: „jeśli…, to…” (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O5 (3 pkt) — test rozróżniający hipotezy | poziom ambitny (konkurs)
+Dwie hipotezy: H1 — w probówce z sodą i octem powstaje CO₂; H2 — w użytej wodzie gazowanej był rozpuszczony CO₂, który się tylko wydobywa. Zaproponuj test rozróżniający i przewidywany wynik dla każdej hipotezy.
+
+::: odp | Pokaż klucz
+Test: (a) wodę gazowaną ogrzać lub zamieszać bez dodatku reagentów, przepuszczając wydzielany gaz przez wodę wapienną — (1 pkt); H1: wydzielanie gazu i zmętnienie tylko po dodaniu octu do sody (1 pkt); H2: gaz wydobywa się także bez reagentów (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O6 (2 pkt) — niepewność i powtarzalność | poziom ambitny (konkurs)
+Trzy pomiary masy osadu: 2,31 g; 2,28 g; 2,35 g. Podaj wartość średnią i oceń, czy rozrzut wyników pozwala ufać wnioskowi.
+
+::: odp | Pokaż klucz
+średnia: 2,31 g (1 pkt); rozrzut 0,07 g, czyli ok. 3 % — wynik jest powtarzalny, więc wniosek o masie osadu jest wiarygodny w tej dokładności (1 pkt).
 :::
 :::
 
@@ -596,6 +669,7 @@ makro: lód zamienia się w wodę ciekłą (1 pkt); mikro: cząsteczki wody zacz
 + przed doświadczeniem, tak żeby dało się ją sprawdzić
 - po doświadczeniu, żeby zgadzała się z wynikiem
 - tylko wtedy, gdy wynik jest niepewny
+! Hipoteza musi być sprawdzalna i zapisana przed wynikiem.
 
 ? Które zjawisko jest reakcją chemiczną?
 - topnienie lodu
@@ -606,19 +680,21 @@ makro: lód zamienia się w wodę ciekłą (1 pkt); mikro: cząsteczki wody zacz
 
 ? Woda wapienna mętnieje. Jaki wniosek jest uzasadniony?
 - wydzielał się wodór
-+ do roztworu przechodził CO₂
++ gaz zawierał CO₂
 - wydzielał się tlen
-! Zmętnienie wody wapiennej to test na CO₂: powstaje osad CaCO₃.
+! Zmętnienie wskazuje na CO₂ w tych warunkach (bez SO₂ i nadmiaru CO₂): powstaje osad CaCO₃.
 
-? Który poziom opisu reprezentuje zapis H₂O(l) → H₂O(g)?
+? Który poziom opisu reprezentuje zapis H₂O(c) → H₂O(g)?
 - makroskopowy
 - ilościowy
 + symboliczny
+! Zapis H₂O(c) → H₂O(g) używa wzorów i strzałki — to poziom symboliczny.
 
 ? Model atomu jako kulki:
 - jest dokładnym obrazem atomu
 + jest uproszczeniem przydatnym do liczenia atomów
 - jest błędny i nie należy go używać
+! Model upraszcza rzeczywistość i ma swój zakres stosowalności.
 
 ? Ile atomów tlenu jest w zapisie 3 CO₂?
 - 3
@@ -631,6 +707,42 @@ makro: lód zamienia się w wodę ciekłą (1 pkt); mikro: cząsteczki wody zacz
 - wydzielenie ciepła
 + powstanie substancji o nowych właściwościach
 ! Pojedyncze objawy mogą mieć inne przyczyny.
+
+? Uczeń zapisał: „Obserwacja: wydziela się wodór.” Co jest błędem?
+- nic, to poprawna obserwacja
++ nazwa gazu jest wnioskiem, nie obserwacją
+- brakuje wzoru
+! Obserwacja to to, co widać; nazwę gazu ustala się testem (np. „pyk”).
+
+? Który wynik wskazuje na tlen?
+- krótkie „pyk”
++ tląca się drzazga rozżarza się
+- woda wapienna mętnieje
+! Tlen podtrzymuje żarzenie; wodór daje „pyk”, CO₂ mąci wodę wapienną.
+
+? Ile atomów wodoru jest w zapisie 2 Ca(OH)₂?
+- 2
++ 4
+- 6
+! Dwie jednostki × 2 atomy H w każdej.
+
+? Fe i S zmieszane i rozdzielone magnesem — jaki wniosek?
+- to związek, bo składniki są widoczne
++ mieszanina, bo magnes oddziela żelazo
+- związek, bo są dwa pierwiastki
+! Mieszanina zachowuje właściwości składników; związek ma nowe właściwości.
+
+? Ile wynosi bezpieczna część probówki do ogrzewania?
+- cała
++ około 1/3 objętości
+- do pełna
+! Probówkę mieszamy płomieniem; nigdy nie wlewamy po brzegi.
+
+? Jak sprawdzić zapach gazu?
+- bezpośrednio nosem
++ ruchem dłoni znad naczynia
+- nigdy nie sprawdzamy
+! Wiele gazów jest trujących lub drażniących.
 :::
 
 ## 14 | Karta szybkiego powtórzenia i mapa myśli {#powtorka}
@@ -639,7 +751,7 @@ makro: lód zamienia się w wodę ciekłą (1 pkt); mikro: cząsteczki wody zacz
 - **Chemia:** skład · budowa · właściwości · przemiany. Właściwości wynikają z budowy.
 - **Cztery poziomy:** makro (widzę) · cząsteczkowy (model) · symboliczny (zapis) · ilościowy (liczby).
 - **Obserwacja ≠ wniosek.** Hipoteza — przed doświadczeniem, sprawdzalna.
-- **Zjawisko fizyczne** (bez nowej substancji, odwracalne prostymi metodami) **vs reakcja** (nowa substancja). Jeden objaw to nie dowód.
+- **Zjawisko fizyczne** (bez nowej substancji; wyjściową często da się odzyskać prostymi metodami) **vs reakcja** (powstaje substancja o nowych właściwościach). Jeden objaw to nie dowód.
 - **Symbol** — pierwiastek/atom · **wzór** — skład · **indeks** — atomy w cząsteczce · **współczynnik** — liczba cząsteczek · **równanie** — atomy się zgadzają.
 - **Pięć pytań chemika:** co obserwuję → jaki typ zmiany → jaki model → jaki zapis → jak sprawdzę.
 - **Dobre uzasadnienie:** twierdzenie → dowód → wyjaśnienie.
@@ -662,21 +774,24 @@ makro: lód zamienia się w wodę ciekłą (1 pkt); mikro: cząsteczki wody zacz
 ::: fiszki
 Co bada chemia? | skład, budowę, właściwości i przemiany substancji | basic:podstawa
 Obserwacja | to, co widzę, słyszę, czuję lub mierzę — bez przyczyny | basic:podstawa
-Wniosek | interpretacja obserwacji, potwierdzona testem | basic:podstawa
+Wniosek | interpretacja obserwacji, wsparta danymi z testu | basic:podstawa
 Hipoteza | sprawdzalne przypuszczenie zapisane przed doświadczeniem | basic:podstawa
 Zjawisko fizyczne | zmiana bez powstania nowej substancji (topnienie, rozpuszczanie) | basic:podstawa
 Reakcja chemiczna | przemiana, w której powstaje nowa substancja | basic:podstawa
 Objawy reakcji | barwa, gaz, osad, ciepło lub światło, zapach — żaden sam nie jest dowodem | basic:podstawa
-Test na CO₂ | woda wapienna mętnieje (CaCO₃↓) | basic:podstawa
+Test na CO₂ | woda wapienna mętnieje (CaCO₃↓) — wskazuje na CO₂ w tych warunkach | basic:podstawa
+Test na H₂ | zbliżona łuczynka daje krótkie „pyk” | basic:podstawa
+Test na O₂ | tląca się drzazga rozżarza się | basic:podstawa
+Piktogram GHS | graficzny znak zagrożenia, np. żrący, toksyczny, palny | basic:podstawa
 Jak odzyskać rozpuszczoną sól? | odparować wodę | basic:podstawa
 Indeks a współczynnik | indeks — atomy w cząsteczce; współczynnik — liczba cząsteczek | basic:podstawa
 Cztery poziomy opisu | makroskopowy, cząsteczkowy, symboliczny, ilościowy | understand:rozumienie
 Pięć pytań chemika | co obserwuję? jaki typ zmiany? jaki model? jaki zapis? jak sprawdzę? | basic:podstawa
 Model | uproszczenie rzeczywistości z zakresem stosowalności | understand:rozumienie
 Cztery poziomy poprawności | językowy, strukturalny, ilościowy, chemiczny | understand:rozumienie
-obserwacja a wniosek | obserwacja — co widać; wniosek — wyjaśnienie | olimpijski:metoda
-jedna zmienna naraz | w doświadczeniu zmieniamy tylko jeden czynnik | olimpijski:metoda
-trzy poziomy opisu | makroskopowy, mikroskopowy, symboliczny | olimpijski:metoda
+próba kontrolna | próba bez zmienianego czynnika, do porównania z próbą badawczą | olimpijski:metoda
+jedna zmienna naraz — dlaczego? | bo tylko wtedy wiadomo, co wywołało różnicę | olimpijski:metoda
+SO₂ też mąci wodę wapienną | dlatego test na CO₂ wymaga wykluczenia SO₂ | olimpijski:metoda
 „wydzielił się wodór” | to wniosek, nie obserwacja | olimpijski:metoda
 :::
 
@@ -693,6 +808,18 @@ Model :: uproszczony opis rzeczywistości, który wyjaśnia obserwacje i pozwala
 Symbol chemiczny :: jedna lub dwie litery oznaczające pierwiastek (pierwsza wielka)
 Wzór chemiczny :: zapis składu substancji za pomocą symboli i indeksów
 Równanie reakcji :: zapis przemiany substratów w produkty z zachowaniem liczby atomów
+Substrat :: substancja wyjściowa reakcji (po lewej stronie równania)
+Produkt :: substancja powstająca w reakcji (po prawej stronie równania)
+Objaw reakcji :: zmiana widoczna w trakcie przemiany (barwa, gaz, osad); sama nie dowodzi reakcji
+Indeks :: mała cyfra we wzorze — liczba atomów w cząsteczce lub jednostce wzoru
+Współczynnik :: duża cyfra przed wzorem — liczba cząsteczek lub jednostek wzoru
+Wzór a nazwa :: wzór zapisuje skład substancji, nazwa jedynie ją identyfikuje
+Próba kontrolna :: próba bez zmienianego czynnika, do porównania z próbą badawczą
+Zmienna niezależna :: czynnik celowo zmieniany przez doświadczającego
+Zmienna zależna :: wielkość mierzona lub obserwowana jako wynik
+Poziomy opisu :: makroskopowy, cząsteczkowy, symboliczny, ilościowy
+Pozostałość krystaliczna :: substancja stała, która zostaje po odparowaniu roztworu
+Mieszanina i związek :: mieszanina zachowuje właściwości składników, związek ma nowe właściwości (więcej w F02)
 :::
 
 ## 17 | Checklista {#checklista}
@@ -743,10 +870,16 @@ Kolejność powtórki (we własnym tempie):
 | [§10](#doswiadczenia) | `beaker-prediction-enhanced` | przewiduj obserwację, potem sprawdź |
 | [§14](#powtorka) | `mind-map` | mapa myśli |
 
-> Do zbudowania w GFX (nowe elementy): magnes przy mieszaninie Fe + S (przyciąga opiłki przed reakcją, nie przyciąga FeS); lód pływający w wodzie (topnienie); efekty osadu i pary w parownicy (`evapDish` ich nie rysuje — odparowanie pokazujemy w zlewce).
+## AUDYT W1 — audyt 01 (2026-10-13)
 
-## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+Wprowadzono: A1–A10 (pierwiastek/substancja, przykład HCl + NaOH z testem, Mg z hipotezą i testem, jedno kryterium reakcji, Dośw. 1–4, woda wapienna, poziomy opisu, barwa FeS, tygiel → płytka), B1–B13 (symbole ↑↓(s)(c)(g)(aq), BHP, tabela testów na gazy, bilanse i poziomy poprawności, słownik, fiszki, test rozszerzony o 7 pytań i `!`, warstwa olimpijska O4–O6), C (N01–N08, link F15, klinika → F02, ciekawostki), D (usunięto changelog i notatkę deweloperską; scalono `lead`; zaktualizowano `stan`).
 
-- Dodano: §0.5 wykład „od zera”, nie-myl + mini-wykład „W skrócie”, ciekawostki (3), warstwa olimpijska (Dla olimpijczyka + 3 zadania z kluczami), 4 fiszki olimpijskie. Nic nie usunięto.
-- Poprawione: „System powtórek” — bez minut i odstępów dni (kurs we własnym tempie), jeśli występował.
+Nieprzyjęte:
+- A11 — zamiana `(c)` na `(l)`: odrzucone. Kurs stosuje `(c)` dla cieczy (ok. 234 wystąpień w gotowych lekcjach, `(l)` — 25); F01 ujednolicono do `(c)`.
+- Sekcja D — `$$ równanie` bez zamknięcia oraz `Równanie::`: składnia silnika stosowana w kilkunastu lekcjach kursu; zostaje.
+- Sekcja D — kolizje kotwic (`#test`, `#powtorka` itd.): odrzucone. Każda lekcja buduje osobny HTML, więc kotwice są lokalne.
+- Kicker `MASTER v1.1`: zostaje, zgodny z wersją lekcji.
 
+Poprawione względem propozycji:
+- Ciekawostka o liczbie związków: zamiast „ponad sto milionów” — „setki milionów substancji w rejestrach” (liczba rośnie; „orientacyjnie” usunięte).
+- Ćw. O2/O3: punktacja zachowana; uzupełnienia nie zmieniają sumy punktów.
