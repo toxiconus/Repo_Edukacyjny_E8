@@ -198,3 +198,4 @@
 - 2026-10-13: J03 — dodane 3 wizualizacje z istniejącego katalogu (rownania-jonowe-v01, ion-vs-diss, tabela-rozpuszczalnosci-v01) z @opis; build OK.
 
 - 2026-10-13: J03 — nowy widget `j03-osady-v01` (dwie probówki, osad i barwa), zarejestrowany w index.json i KATALOG, wstawiony do §6 (@opis). Test w przeglądarce nieuruchomiony (`che.py test` przerwany przez brak sieci do fonts.googleapis.com). J07 — ULEPSZONA (Perplexity): przywrócono fiszki (§5a) i wzór ścisły Ostwalda (§2a); sekcja AUDYT w lekcji; grafiki z odpowiedzi (4 propozycje) jeszcze nie zrobione.
+- 2026-10-13: J08 — ULEPSZONA (Perplexity) wczytana. Odpowiedź zgubiła fiszki, 5 pytań testowych, hasła słownika, Kh i część kompasu; przywrócono je (§0.2a, 1a, 2a–2c, 3a Kh, 5a, 5b, 9a, słownik, klinika, ciekawostki z poprzedniej wersji). Uzupełniono minimum o punkty LO (Kh, przeważający jon). Grafiki z odpowiedzi (4 propozycje) jeszcze nie zrobione.
