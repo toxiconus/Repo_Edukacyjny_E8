@@ -71,3 +71,12 @@ Weryfikacja wyszukiwaniem (2026-10-13). Plik to zestawienie AI, nie źródło of
 **Do weryfikacji:** zestawienie twierdzi, że laureaci z wykazu MEN dostają 100% z egzaminu ósmoklasisty i pierwszeństwo w rekrutacji — trzeba potwierdzić w komunikatach MEN (`gov.pl/web/edukacja`) przed użyciem w materiałach dla ucznia.
 
 **Biologia:** zestawienie mówi, że Główna Olimpiada Biologiczna jest raczej dla LO; dla klasy 8 — konkursy wojewódzkie/kuratoryjne. Ta sama logika co D6.
+
+## 6. Korekta: cel konkursu już jest w repo (2026-10-13)
+
+`olimpiada/PRIORYTETY.md` (stan 2026-10-08) opisuje konkursy **LKO** (Lubelskie Kuratorium Oświaty): etap szkolny → rejonowy → wojewódzki. Zakresy 2025/26 są oficjalne. Terminy 2026/27 są niepotwierdzone: chemia ~23.10, biologia ~21.10. To jest ten sam schemat, na który wskazuje plan sprintu, więc **D6 jest rozstrzygnięty na LKO**. Zestawienie OChJ (5.11) to inny konkurs i nie jest celem, chyba że szkoła zgłosi do niego ucznia.
+
+Konsekwencje:
+- Plan sprintu (`CHE_tryb_OLK8_sprint_ORYG.md`) i PRIORYTETY.md opisują to samo. Na razie nie rozwijam sprintu osobno: przy pracy ogólnej wchodzi do PRIORYTETY.md jako kolejka chemii.
+- Kolejność tematów wg PRIORYTETY (C1–C4, R03A, N01, REV01) zastępuje tabelę T0/T1 z sprintu, dopóki nie ma regulaminu 2026/27.
+- Do potwierdzenia u nauczyciela: terminy 2026/27 i zakres, bo zakres 2026/27 w repo jeszcze nie jest oficjalny.
