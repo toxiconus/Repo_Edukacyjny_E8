@@ -88,6 +88,10 @@ Obserwacja „woda wapienna zmętniała" ma co najmniej dwie przyczyny:
 Dlatego konkurs pyta w takich zadaniach: „Czy wiesz, co było przyczyną?". Wniosek „zachodzi reakcja z CO₂" jest poprawny tylko wtedy, gdy wykluczono podgrzewanie i gdy gaz faktycznie dopływał do roztworu. Przykład z lekcji LKO-KRZYWE (F3) pokazuje, że w zamkniętym naczyniu bez CO₂ mętnienie też może wystąpić.
 :::
 
+::: karta understand | W skrócie — zawiesina czy roztwór?
+Zasada: jeśli po chwili z cieczy opada osad i ciecz jest mętna, to zawiesina. Jeśli ciecz jest klarowna, to roztwór — nawet gdy coś w niej rozpuszczono bardzo mało.
+:::
+
 ## 3 | Wykład — dwie soda i dwa wapnie, których nie wolno zamieniać
 
 ::: karta understand | Wykład — nazwy zwyczajowe a wzory
@@ -96,6 +100,10 @@ Na konkursie nazwy zwyczajowe są mylące, więc zawsze odwołuj się do wzoru:
 - **Wapno palone (CaO)** i **wapno gaszone (Ca(OH)₂)** — dwa różne związki; pierwszy to tlenek, drugi wodorotlenek.
 - **Soda oczyszczona** — wodorowęglan sodu NaHCO₃ (lekko zasadowy roztwór w wodzie, stosowany jako środek spożywczy); **soda kalcynowana** — węglan sodu Na₂CO₃ (silniej zasadowa). Zamiana nazw to typowa pułapka.
 - **Wapń** (pierwiastek Ca) to nie to samo co **wapno** (związek). Pytanie „z czego zbudowany jest związek?" wymaga wzoru, nie nazwy.
+:::
+
+::: karta understand | W skrócie — mętnienie: zanim wpiszesz CO₂, wykluczyć podgrzanie
+Zanim napiszesz wniosek „to CO₂", zadaj dwa pytania: czy gaz faktycznie dopływał do roztworu i czy roztwór był podgrzewany? Jeśli na którekolwiek odpowiedź nie znasz — wniosek jest niepełny.
 :::
 
 ## 4 | Klinika — pary, które się mylą {#klinika}
