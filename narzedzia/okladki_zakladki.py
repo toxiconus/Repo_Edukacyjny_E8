@@ -35,6 +35,12 @@ def stan_md(p):
     r = re.search(r'^stan:\s*"?(.*?)"?\s*$', m.group(1), re.M)
     return r.group(1).strip() if r else None
 
+VIZ_RE = re.compile(r'data-che-lesson-viz=|data-bio-viz=|data-viz=')
+
+def ile_viz(p):
+    """Liczba osadzonych wizualizacji w pliku HTML (sloty silnika chemii, biologii i polskiego)."""
+    return len(VIZ_RE.findall(p.read_text(encoding="utf-8", errors="ignore")))
+
 def pliki_html(d):
     return sorted(p for p in d.glob("*.html") if p.name != "index.html")
 
@@ -82,6 +88,7 @@ def zbierz(slug, src, tryb, md_root):
             "html_href": html_href,
             "md_href": md_href,
             "html_kb": kb(h),
+            "viz": ile_viz(h),
             "md_kb": kb(md_path) if md_path is not None and md_path.exists() else None,
             "stan": stan,
         })
@@ -98,7 +105,7 @@ def komorka_html(w):
 
 def wiersze_tabeli(wiersze):
     if not wiersze:
-        return '<tr><td colspan="5">brak lekcji</td></tr>'
+        return '<tr><td colspan="6">brak lekcji</td></tr>'
     out = []
     for w in wiersze:
         stan = html.escape(w["stan"]) if w["stan"] else '<span class="brak">brak stanu (brak md)</span>'
@@ -107,10 +114,11 @@ def wiersze_tabeli(wiersze):
             f"<td>{html.escape(w['tytul'])}</td>"
             f"<td>{komorka_md(w)}</td>"
             f"<td>{komorka_html(w)}</td>"
+            f"<td class=\"r\">{w['viz']}</td>"
             f"<td>{stan}</td></tr>")
     return "".join(out)
 
-NAGLOWEK = "<thead><tr><th>Plik</th><th>Tytuł</th><th>MD</th><th>HTML</th><th>Stan weryfikacji</th></tr></thead>"
+NAGLOWEK = "<thead><tr><th>Plik</th><th>Tytuł</th><th>MD</th><th>HTML</th><th class=\"r\">Wizualizacje</th><th>Stan weryfikacji</th></tr></thead>"
 
 CSS = """body{font-family:system-ui,sans-serif;margin:0;background:#f7f7f5;color:#222}
 main{max-width:1100px;margin:0 auto;padding:16px}
@@ -141,16 +149,16 @@ def main():
     podsum = []
     for slug, nazwa, wiersze in dane:
         przyciski.append(f'<button data-t="{slug}" onclick="pokaz(\'{slug}\')">{html.escape(nazwa)} ({len(wiersze)})</button>')
-        podsum.append((nazwa, len(wiersze), sum(1 for w in wiersze if w["md_kb"]), sum(1 for w in wiersze if w["stan"])))
+        podsum.append((nazwa, len(wiersze), sum(1 for w in wiersze if w["md_kb"]), sum(1 for w in wiersze if w["stan"]), sum(w["viz"] for w in wiersze)))
         sekcje.append(f'<section class="tab" id="{slug}"><h2>{html.escape(nazwa)}</h2>'
                       f'<table>{NAGLOWEK}<tbody>{wiersze_tabeli(wiersze)}</tbody></table></section>')
 
     podsum_html = "".join(
-        f"<tr><td>{html.escape(n)}</td><td class=\"r\">{l}</td><td class=\"r\">{m}</td><td class=\"r\">{s}</td></tr>"
-        for n, l, m, s in podsum)
+        f"<tr><td>{html.escape(n)}</td><td class=\"r\">{l}</td><td class=\"r\">{m}</td><td class=\"r\">{s}</td><td class=\"r\">{v}</td></tr>"
+        for n, l, m, s, v in podsum)
     e8 = (f'<section class="tab" id="e8"><h2>E8 — cały kurs (przegląd)</h2>'
           f'<p>Zakładki przedmiotów: chemia, polski, biologia, angielski. Olimpiada (LKO i OLI) to osobny nurt, ale lekcje są wspólne z kursem E8.</p>'
-          f'<table><thead><tr><th>Przedmiot / nurt</th><th class="r">Lekcji (HTML)</th><th class="r">Z md</th><th class="r">Z stanem weryfikacji</th></tr></thead>'
+          f'<table><thead><tr><th>Przedmiot / nurt</th><th class="r">Lekcji (HTML)</th><th class="r">Z md</th><th class="r">Z stanem weryfikacji</th><th class="r">Wizualizacje</th></tr></thead>'
           f'<tbody>{podsum_html}</tbody></table></section>')
 
     doc = f"""<!doctype html><html lang="pl"><head><meta charset="utf-8">
@@ -172,7 +180,7 @@ def main():
                f'<table>{NAGLOWEK}<tbody>{wiersze_tabeli(wiersze)}</tbody></table>'
                f'<footer>Wygenerowano przez narzedzia/okladki_zakladki.py — nie edytować ręcznie.</footer></main></body></html>')
         (OUT / f"okladka_{slug}.html").write_text(okl, encoding="utf-8")
-    print("zakładki:", ", ".join(f"{n}={len(w)} (md {sum(1 for x in w if x['md_kb'])}, stan {sum(1 for x in w if x['stan'])})" for _, n, w in dane))
+    print("zakładki:", ", ".join(f"{n}={len(w)} (md {sum(1 for x in w if x['md_kb'])}, stan {sum(1 for x in w if x['stan'])}, viz {sum(x['viz'] for x in w)})" for _, n, w in dane))
 
 if __name__ == "__main__":
     main()
