@@ -29,7 +29,7 @@ Spróbuj odważyć jedną cząsteczkę wody. Waga kuchenna nie pomoże: jedna cz
 
 Liczba 6,02·10²³ to **liczba Avogadra** (oznaczenie N_A, jednostka mol⁻¹). Zapis w pełnej postaci: N_A = 6,02·10²³ 1/mol. W szkole wystarczy zaokrąglenie 6,02·10²³ mol⁻¹.
 
-Dlaczego akurat taka dziwna liczba? Dobrano ją tak, aby **masa jednego molu substancji w gramach była równa jej masie cząsteczkowej (Mr)**. Skutek: 1 mol wody ma masę 18 g (bo Mr(H₂O) = 18), 1 mol CO₂ — 44 g. Wszystko układa się w proste przeliczenia, które poznasz w sekcji 5.
+Dlaczego akurat taka dziwna liczba? Dobrano ją tak, aby **masa jednego molu substancji w gramach była równa jej masie cząsteczkowej (Mr)**. Skutek: 1 mol wody ma masę 18 g (bo Mr(H₂O) = 18), 1 mol CO₂ — 44 g. Wszystko układa się w proste przeliczenia, które poznasz w sekcji 6.
 
 Uwaga terminologiczna: **mol to jednostka liczności** — liczy **sztuki** (cząstki), nie gramy. Masa jednego mola zależy od substancji, tak jak masa jednego tuzina zależy od tego, czy kupujesz tuzin piórek, czy tuzin cegieł.
 
@@ -39,6 +39,10 @@ Uwaga terminologiczna: **mol to jednostka liczności** — liczy **sztuki** (cz�
 
 ::: karta extra | Jak długo liczyłbyś mole?
 Załóżmy, że liczysz cząsteczki jednej sekundy na liczbę: jedna na sekundę, bez snu i przerw. Mol to 6,02·10²³ liczb → 6,02·10²³ sekund ≈ 1,9·10¹⁶ lat. Wszechświat istnieje od ok. 13,8 miliarda lat (1,38·10¹⁰). Liczenie mola zajęłoby więc **ponad milion razy dłużej, niż istnieje Wszechświat**. Dlatego w chemii nie liczymy cząstek „na sztuki" — liczymy je molami.
+:::
+
+::: karta extra | Ryza, gros, mol
+Handel ma swoje jednostki porcji: papier sprzedaje się w ryzach (500 arkuszy), ołówki w grosach (144 sztuki), jajka w tuzinach. Chemia też potrzebowała „handlowej paczki" — tylko na miarę cząstek. Mol to taka paczka: zawsze ta sama liczba cząstek (6,02·10²³), dobrana tak, żeby paczka dała się odważyć — mol atomów wodoru waży 1 g, mol wody 18 g, mol żelaza 56 g. Masa molowa pierwiastka w gramach jest liczbowo równa jego masie atomowej z układu okresowego — to umowa, która uczyniła wszystkie przeliczenia prostymi.
 :::
 
 ## 2 | Wykład — liczba Avogadra: co ona naprawdę znaczy
@@ -110,7 +114,11 @@ Mr — względna masa cząsteczkowa: liczba (bez jednostki), sumuje masy atomowe
 
 Gdy widzisz w zadaniu „oblicz masę cząsteczkową" — liczysz Mr (liczba, bez jednostki). Gdy widzisz „masa molowa" albo zaczynasz obliczenia z molami — ta sama suma, ale zapisana jako M w **g/mol**. Jedno i drugie liczy się identycznie: indeksy × masy atomowe, potem suma. Jedyne, czego nie wolno pominąć, to jednostka g/mol przy masie molowej.
 
-## 5 | Wykład — przeliczenia masa ↔ mol ↔ liczba cząstek
+## 5 | W skrócie — dlaczego woda ma 18 g/mol, a nie 16
+
+Częsty błąd: wziąć tylko tlen (16) i zapomnieć o wodorach. Wzór H₂O mówi, że w cząsteczce są **dwa** atomy wodoru i jeden atom tlenu — więc masa molowa to suma z indeksami: 2·1 + 16 = 18 g/mol. Ta sama zasada działa dla każdego wzoru: w CO₂ dwóm tlenu odpowiada 2·16 = 32, do tego węgiel 12 — razem 44 g/mol; w H₂S dwa wodory 2·1 = 2 plus siarka 32 — razem 34 g/mol. Zawsze: indeks × masa atomowa, potem suma — i dopiero na końcu jednostka g/mol.
+
+## 6 | Wykład — przeliczenia masa ↔ mol ↔ liczba cząstek
 
 Mol to węzeł, w którym spotykają się dwa światy: **waga** (gramy) i **licznik cząstek**. Są tylko cztery wzory — i wszystkie wynikają z definicji:
 
@@ -147,7 +155,7 @@ n = N / N_A
 1. M(H₂O) = 2·1 + 16 = 18 g/mol.
 2. n = m/M = 36 g / 18 g/mol = 2 mol.
 3. N = n · N_A = 2 · 6,02·10²³ = 1,204·10²⁴ cząsteczek.
-4. Sprawdzenie rzędu: 36 g to dwie łyżki wody; wynik 10²⁴ — „astronomicznie dużo", tak ma być. ✔
+4. Sprawdzenie rzędu: 36 g wody to ok. dwie–trzy łyżki stołowe (łyżka to ok. 15 ml — zależnie od przyboru; do weryfikacji); wynik 10²⁴ — „astronomicznie dużo", tak ma być. ✔
 
 **Przykład 2 — mole → masa.** Ile waży 0,5 mol CO₂?
 
@@ -179,7 +187,7 @@ Mol to porcja **cząstek**, nie gramów. Poprawnie: „1 mol wody" = 6,02·10²�
 Chcesz z masy w gramach przejść do liczby cząstek. Nie istnieje jeden wzór „gramy → cząstki", bo masa cząstki różni się dla każdej substancji. Ale **mol** łączy oba światy: przez M znasz masę jednej porcji, przez N_A — liczbę cząstek w porcji. Dlatego każdy „daleki dystans" przechodzi przez przystanek n (mole): masa → mole → cząstki.
 :::
 
-## 6 | W skrócie — trzy wzory w jednym oknie
+## 7 | W skrócie — trzy wzory w jednym oknie
 
 - Z masy na mole: **n = m / M** (gramy dzielone przez g/mol dają mole).
 - Z moli na masę: **m = n · M**.
@@ -187,7 +195,7 @@ Chcesz z masy w gramach przejść do liczby cząstek. Nie istnieje jeden wzór �
 - Masa ↔ cząstki: **zawsze przez mole** (dwa kroki).
 - Zawsze pytaj: **mol czego** — atomów czy cząsteczek? (O: 16 g/mol; O₂: 32 g/mol.)
 
-## 7 | Wykład — mol w równaniu reakcji: zapowiedź stechiometrii
+## 8 | Wykład — mol w równaniu reakcji: zapowiedź stechiometrii
 
 Spójrz na równanie reakcji syntezy wody:
 

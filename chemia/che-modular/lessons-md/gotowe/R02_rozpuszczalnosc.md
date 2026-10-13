@@ -97,14 +97,18 @@ Krzywe mają różne kształty: KNO₃ — stromo w górę; NaCl — prawie pła
 Do kompletu: rozpuszczalność gazów **rośnie** z ciśnieniem. Napój w butelce jest pod ciśnieniem, więc CO₂ pozostaje rozpuszczony; po odkręceniu kapsla ciśnienie spada i bąbelki sypią się natychmiast.
 
 ::: karta extra | Jezioro, które eksplodowało
-Jezioro Nyos w Kamerunie leży nad wulkanicznym wnętrzem, z którego wydobywa się CO₂. Przez lata gaz rozpuszczał się w głębinowej wodzie — pod ogromnym ciśnieniem na dnie woda potrafi utrzymać ogromne ilości gazu. W 1986 r. górne warstwy jeziora zaburzyły się, woda „odwróciła się" warstwami, ciśnienie spadło — i rozpuszczony CO₂ wyrwał się na zewnątrz jednym wydechem. Chmura gazu spłynęła do dolin; zginęło ok. 1700 ludzi i zwierzęta. (Liczba ofiar — do weryfikacji.) To smutne pokazuje, że rozpuszczalność gazów zależna od ciśnienia i temperatury to nie tylko zadanie z podręcznika.
+Jezioro Nyos w Kamerunie leży nad wulkanicznym wnętrzem, z którego wydobywa się CO₂. Przez lata gaz rozpuszczał się w głębinowej wodzie — pod ogromnym ciśnieniem na dnie woda potrafi utrzymać ogromne ilości gazu. W 1986 r. górne warstwy jeziora zaburzyły się, woda „odwróciła się" warstwami, ciśnienie spadło — i rozpuszczony CO₂ wyrwał się na zewnątrz jednym wydechem. Chmura gazu spłynęła do dolin; zginęło ok. 1700–1750 osób (dane literaturowe różnią się; w lekcji przyjęto ok. 1750; do weryfikacji) i zwierzęta. To smutny dowód, że rozpuszczalność gazów zależna od ciśnienia i temperatury to nie tylko zadanie z podręcznika.
 :::
 
 ::: karta extra | Zimne morza są bogatsze w tlen
 Ponieważ rozpuszczalność tlenu w wodzie maleje z temperaturą, zimna woda oceanów rozpuszcza **więcej** O₂ niż ciepła. Dlatego zimne, polarne wody są wyjątkowo „tłuste" z życia — ławice ryb i wieloryby gromadzą się tam, gdzie jest najwięcej rozpuszczonego tlenu i pokarmu. Chemia rozpuszczalności rządzi ekologią oceanów.
 :::
 
-## 6 | Wykład — krystalizacja: ochładzanie i odparowanie
+## 6 | W skrócie — płaska krzywa soli: dlaczego solanka nie gra z temperaturą
+
+Krzywa rozpuszczalności NaCl jest wyjątkowo płaska: od 0 °C do 100 °C rozpuszczalność zmienia się z ok. 36 na ok. 37 g/100 g H₂O — o zaledwie około 1 g na sto stopni. Skutek praktyczny: ochłodzenie nasyconej solanki praktycznie nic nie wykrystalizuje (na każde 100 g wody — nie więcej niż ~1 g osadu). Dlatego sól pozyskuje się przez **odparowanie** wody: warzelnie gotują solankę, a słone stawy zostawiają ją pod słońcem — rozpuszczalnik musi zostać usunięty, bo temperatura go z roztworu nie „wypycha". Ta płaskość jest też powodem, dla którego pora roku niemal nie zmienia ilości soli rozpuszczonej w morzu.
+
+## 7 | Wykład — krystalizacja: ochładzanie i odparowanie
 
 Rozpuszczalność rośnie z temperaturą — więc można to wykorzystać od tyłu: **spadek temperatury zmusza nadmiar do opuszczenia roztworu**. Wykrystalizowana substancja to czysty, solidny produkt. Są dwie drogi:
 
@@ -145,7 +149,7 @@ Krzewienie soli kuchennej przez **odparowanie** wody morskiej to jedna z najstar
 Duże, ładne kryształy (np. ałunu albo siarczanu(VI) miedzi) hoduje się tak: rozpuszczasz sol w gorącej wodzie do nasycenia, zawieszasz w roztworze mały kryształek-zarazek i pozwolisz roztworowi stygnąć **bardzo wolno**. Rozpuszczalność powoli spada, a materiał osadza się porządkowo na zarazku — kryształ rośnie warstwa po warstwie. To krystalizacja z ochłodzenia w wersji hobbystycznej.
 :::
 
-## 7 | W skrócie — cała lekcja w sześciu punktach
+## 8 | W skrócie — cała lekcja w sześciu punktach
 
 - **Rozpuszczalność** = maksimum g substancji na 100 g wody **w danej temperaturze** (g/100 g H₂O).
 - **Nienasycony** — zmieści jeszcze więcej; **nasycony** — dokładnie maksimum; **przesycony** — ponad maksimum, nietrwały, błyskawicznie krystalizuje po dodaniu zarazka.
@@ -168,7 +172,7 @@ Duże, ładne kryształy (np. ałunu albo siarczanu(VI) miedzi) hoduje się tak:
 
 **Zadanie 6.** Roztwór nasycony KNO₃ w 60 °C zawiera 200 g wody. Schłodzono go do 20 °C. Oblicz masę osadu.
 
-**Zadanie 7.** Rozpuszczalność NaCl wynosi ok. 37 g/100 g H₂O w 80 °C i ok. 36 g/100 g H₂O w 20 °C. (a) Ile NaCl rozpuści się maksymalnie w 200 g wody w 80 °C? (b) Tak przygotowany nasycony roztwór schłodzono do 20 °C — ile osadu powstanie? (c) Dlaczego tak mało?
+**Zadanie 7.** Rozpuszczalność NaCl wynosi ok. 37 g/100 g H₂O w 80 °C (wartość w przedziale 36–37 g; do weryfikacji) i ok. 36 g/100 g H₂O w 20 °C. (a) Ile NaCl rozpuści się maksymalnie w 200 g wody w 80 °C? (b) Tak przygotowany nasycony roztwór schłodzono do 20 °C — ile osadu powstanie? (c) Dlaczego tak mało?
 
 **Zadanie 8.** Czy roztwór zawierający 200 g wody i 220 g KNO₃ w 60 °C jest nasycony? Uzasadnij obliczeniem.
 

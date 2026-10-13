@@ -41,6 +41,10 @@ Uwaga na to, **czego** dotyczy wydajność: zawsze **produktu**. Dzielenie masy 
 Najczęstszy błąd w tym temacie: uczeń dzieli masę produktu rzeczywistego przez **masę substratu** (np. „6,6 g CO₂ / 20 g CaCO₃ = 33%"). Źle. Wzór to: m(rzeczywista produktu) / m(teoretyczna produktu) · 100%. Masa substratu nie ma tu nic do mówienia — substrat może być w nadmiarze, może zawierać zanieczyszczenia; wydajność opisuje, jaką część **teoretycznego produktu** naprawdę uzyskano.
 :::
 
+::: karta extra | Gdzie ucieka produkt
+Nawet perfekcyjnie przeprowadzona reakcja traci produkt na każdym etapie obsługi: przy przelewaniu roztworu coś zostaje na ściankach zlewki i w lejku; przy sączeniu — w sączku i na nim; przy odparowywaniu — drobinki pryskają z parą lub zostają na ściankach naczynia; przy przemywaniu osadu — część rozpuszcza się w wodzie do przemywania. Każda z tych strat jest pojedynczo malutka, ale się sumuje — dlatego doświadczalny chem stara się jak najmniej „przekładać": każdy transfer to nowe miejsce, w którym produkt może zostać.
+:::
+
 ## 2 | Wykład — dwa kierunki obliczeń
 
 **Kierunek A: znam obie masy → licz wydajność.**
@@ -90,7 +94,11 @@ Synteza amoniaku N₂ + 3H₂ → 2NH₃ (proces Habera–Boscha) — reakcja, k
 Gdy proces składa się z kilku etapów po kolei, ogólna wydajność to **iloczyn** wydajności etapów. Dwa etapy po 90%: 0,9 · 0,9 = 0,81 → tylko 81% całości. Dlatego przemysł tak walka o każdy procent na każdym etapie — dziesięć etapów po 95% daje 0,95¹⁰ ≈ 60% całości (0,95¹⁰ ≈ 0,599 — wartość zaokrąglona). Wydajność pojedynczego etapu „niezła", w łańcuchu — kosztowna.
 :::
 
-## 4 | W skrócie — kolejność kroków w jednym oknie
+## 4 | W skrócie — dlaczego m teoretyczną zawsze liczy się z równania
+
+Masa substratu mówi tylko, ile „wkładamy" — nie mówi, ile wyjdzie, bo ta sama masa substratu może dać zupełnie różne masy produktu. Przykład: 20 g CaCO₃ to 0,2 mol (M = 100 g/mol). Przy rozkładzie CaCO₃ → CaO + CO₂ da to najwyżej 0,2 mol CaO = 11,2 g (M = 56 g/mol), a w reakcji z kwasem (CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂) najwyżej 0,2 mol CO₂ = 8,8 g (M = 44 g/mol). Ten sam substrat, dwa różne maksima — o wyniku decyduje równanie (stosunek molowy) i partner reakcji. Dlatego liczenie „teoretycznego produktu" z samej masy substratu, bez równania, nie ma sensu chemicznego.
+
+## 5 | W skrócie — kolejność kroków w jednym oknie
 
 1. Równanie → mole substratów → **reagent ograniczający** (R08).
 2. **m teoretyczna** produktu z równania (stosunek molowy).

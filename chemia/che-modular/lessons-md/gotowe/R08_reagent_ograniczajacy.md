@@ -29,6 +29,10 @@ W chemii tak samo: równanie to przepis molowy, a substraty w probówce rzadko b
 
 Dlatego w zadaniach z nadmiarem **produktu liczymy zawsze z reagenta ograniczającego** — nigdy z substratu nadmiarowego.
 
+::: karta extra | Reagent ograniczający w kuchni
+Przepis: biszkopt z 4 jajek, szklanki mąki i szklanki cukru. Mąki i cukru masz pod dostatkiem, ale tylko 2 jajka zamiast 4. Powstanie połowa porcji ciasta — o wielkości partii decydują jajka, jedyny składnik w niedomiarze. W kuchni reagent ograniczający spotyka cię codziennie: przepis działa jak równanie stechiometryczne, a brak jednego składnika ogranicza całą partię — reszta składników czeka w nadmiarze.
+:::
+
 ## 2 | Wykład — procedura trzech kroków
 
 **Krok 1: masy → mole.** Zamień masę każdego substratu na mole:
@@ -49,7 +53,11 @@ Bez tego kroku nie da się porównywać — równanie mówi o molach, a zadanie 
 Ocena zadania z reagentem ograniczającym: równanie reakcji → obliczenie M i n dla **obu** substratów → jawnie napisane porównanie („na X mol A potrzeba Y mol B, mam Z — więc...") → produkt z reagenta ograniczającego → jednostki. Sam wynik bez porównania w molach to zaliczenie kroku 2 na zero.
 :::
 
-## 3 | Wykład — przykład krok po kroku: HCl + CaCO₃
+## 3 | W skrócie — dlaczego najpierw mole, a nie gramy
+
+Współczynniki w równaniu liczą **cząstki**: 1 cząsteczka CaCO₃ reaguje z 2 cząsteczkami HCl. Mol to porcja cząstek, więc stosunek 1 : 2 przenosi się wprost na mole. Gramy nic tu nie mówią — 100 g CaCO₃ i 73 g HCl akurat dają stosunek molowy 1 : 2 (bo 100 g to 1 mol CaCO₃, a 73 g to 2 mole HCl), ale ten „masowy" przelicznik jest inny dla każdej pary substancji i zależy od ich mas molowych. Jednym uniwersalnym językiem równania są mole — dlatego krok 1 zawsze zamienia masy na mole, zanim cokolwiek porównamy.
+
+## 4 | Wykład — przykład krok po kroku: HCl + CaCO₃
 
 **Zadanie.** Do 150 g roztworu kwasu solnego o stężeniu 7,3% dodano 20 g węglanu wapnia CaCO₃. Reakcja: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. Który substrat jest ograniczający i ile CO₂ powstanie?
 
@@ -81,7 +89,15 @@ Produkt powstaje tylko z cząstek, które faktycznie zareagowały. Reagent ogran
 Typowy błąd: „HCl 10,95 g, CaCO₃ 20 g, więc CaCO₃ jest w nadmiarze, bo waży więcej". Nie! Stosunek ze równania dotyczy **moli**, a masy molowe są różne (36,5 vs 100 g/mol). Porównuj wyłącznie mole — albo masy przeliczone najpierw na mole. Krok 1 istnieje właśnie po to.
 :::
 
-## 4 | W skrócie — cała procedura w trzech zdaniach
+::: karta extra | Dlaczego przemysł płaci za nadmiar
+W przemyśle substraty często łączy się w stosunku innym niż z równania — celowo. Tani składnik (powietrze, woda, wapień) dodaje się w nadmiarze, aby drogi substrat zużył się do zera: każda jego niezareagowana część to wyrzucone pieniądze. Nadmiar taniego składnika zwykle łatwo usunąć — gaz ucieka, woda zostaje w roztworze, a ciała stałe odcedza się. To odwrócenie logiki kanapek: tutaj „chleb" jest za darmo, więc lepiej dołożyć go w nadmiarze niż zmarnować choćby plasterek „sera".
+:::
+
+::: karta extra | Pipnięcie w probówce: metal + kwas
+Do probówki z kwasem wrzucasz kawałek cynku — natychmiast lecą bąbelki wodoru. Koniec reakcji mówi, kto był ograniczający: jeśli cynk rozpuścił się do zera, a bąbelki ucichły — ograniczał metal (kwas był w nadmiarze). Jeśli na dnie został nierozpuszczony metal, a bąbelki ucichły — ograniczający był kwas (metal w nadmiarze). Koniec bąbelków = moment, w którym któryś substrat właśnie się wyczerpał; to fizyczny „znacznik" reagenta ograniczającego, widoczny bez żadnych obliczeń.
+:::
+
+## 5 | W skrócie — cała procedura w trzech zdaniach
 
 Zamień wszystkie masy substratów na mole (n = m/M). Porównaj dostępne mole ze stosunkiem ze równania i wskaż, który substrat zabraknie — to reagent ograniczający. Produkt (i zużycie nadmiaru) licz z moli reagenta ograniczającego, według stosunku molowego z równania.
 

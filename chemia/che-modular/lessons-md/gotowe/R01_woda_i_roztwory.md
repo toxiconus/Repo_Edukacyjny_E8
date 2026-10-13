@@ -23,7 +23,7 @@ stopka: "R01 · szkic"
 
 Woda jest tak codzienna, że łatwo przeoczyć, jak ciekawa jest jej cząsteczka. Wzór H₂O mówi: w jednej cząsteczce wody dwa atomy wodoru są połączone z jednym atomem tlenu. Oba wiązania O–H to wiązania kowalencyjne — wspólna para elektronów należy do obu atomów. Ale nie jest dzielona po równo: **tlen przyciąga elektrony wiązania mocniej niż wodór**. Efekt: w pobliżu tlenu jest trochę więcej ładunku ujemnego (zapisujemy δ⁻), a przy każdym wodorze trochę więcej ładunku dodatniego (δ⁺). Takie wiązanie nazywamy **polarnym**.
 
-Teraz kształt. Gdyby cząsteczka wody była prosta — H–O–H w jednej linii — częściowe ładunki zniosłyby się wzajemnie i cząsteczka byłaby **niepolarna** (dokładnie tak dzieje się w CO₂, który jest liniowy). Tymczasem woda jest **kątowa**: kąt H–O–H wynosi ok. 104,5°. Powód: na atomie tlenu siedzą dwie pary elektronów wolnych (niewiążących), które odpychają wiązania O–H i „zginają" cząsteczkę.
+Teraz kształt. Gdyby cząsteczka wody była prosta — H–O–H w jednej linii — częściowe ładunki zniosłyby się wzajemnie i cząsteczka byłaby **niepolarna** (dokładnie tak dzieje się w CO₂, który jest liniowy). Tymczasem woda jest **kątowa**: kąt H–O–H wynosi ok. 104,5° (wartość podręcznikowa). Powód: na atomie tlenu siedzą dwie pary elektronów wolnych (niewiążących), które odpychają wiązania O–H i „zginają" cząsteczkę.
 
 Kątowa budowa plus polarne wiązania dają razem ważny skutek: **suma dipoli nie jest zerem**. Jedna strona cząsteczki (wodory) jest dodatnia, druga (tlen) ujemna. Taka cząsteczka to **dipol** — mikroskopijny magnes elektryczny z dwoma biegunami.
 
@@ -34,7 +34,7 @@ Polarne wiązania to za mało, by cząsteczka była polarna — trzeba jeszcze, 
 :::
 
 ::: karta extra | H₂S — kuzyn wody, który jest gazem
-Siarkowodór H₂S ma podobną, kątową budowę jak woda. Różnica: siarka słabiej przyciąga elektrony niż tlen, więc cząsteczki H₂S przyciągają się nawzajem znacznie słabiej. Skutek jest spektakularny: H₂S jest gazem i wrze już w ok. −60 °C, a woda wrze w 100 °C. Różnica blisko 160 stopni — i to przy cząsteczkach o podobnej budowie. Za wszystko odpowiada silne przyciąganie dipoli wody (wiązania wodorowe).
+Siarkowodór H₂S ma podobną, kątową budowę jak woda. Różnica: siarka słabiej przyciąga elektrony niż tlen, więc cząsteczki H₂S przyciągają się nawzajem znacznie słabiej. Skutek jest spektakularny: H₂S jest gazem i wrze już w ok. −60 °C (wartość zaokrąglona), a woda wrze w 100 °C. Różnica blisko 160 stopni — i to przy cząsteczkach o podobnej budowie. Za wszystko odpowiada silne przyciąganie dipoli wody (wiązania wodorowe).
 :::
 
 ::: karta extra | Lód pływa po wodzie
@@ -122,7 +122,15 @@ Najważniejszy skutek: w roztworze jony są **rozdzielone i wolne** — każdy w
 Zwykle **nie**. Rozpuszczając sól, nie tworzysz nowej substancji: odparuj wodę — kryształki soli wracają, wszystkie własności jak dawniej. To proces fizyczny (wzbogacony o hydratację). Wyjątki istnieją — niektóre substancje po wypuszczeniu w wodzie naprawdę reagują (np. niektóre metale czy tlenki) — ale samo rozpuszczanie soli i cukru reakcją chemiczną nie jest. Na egzaminie: „rozpuszczanie to zjawisko fizyczne".
 :::
 
-## 6 | Wykład — trzy dźwignie szybkości rozpuszczania
+::: karta extra | Ty też jesteś roztworem
+Woda w organizmach nigdy nie jest „czysta" — to roztwory wodne: krew (woda z rozpuszczonymi solami, cukrami, białkami i gazami), sok komórkowy roślin, ślina i łzy. Rozpuszczone w nich jony (m.in. Na⁺, K⁺, Cl⁻) są niezbędne do pracy nerwów i mięśni — to ta sama chemia hydratacji, co w szklance z solą. Nawet woda morska jest po prostu bardzo mocnym roztworem soli (głównie NaCl) — stąd jej smak i to, że nie nadaje się do picia.
+:::
+
+## 6 | W skrócie — dlaczego Na⁺ i Cl⁻ się rozstają
+
+W krysztrale jony Na⁺ i Cl⁻ trzymają się nawzajem bardzo mocno — przyciągania działają w całej sieci i „budżet" energetyczny jest zbalansowany. W wodzie każdy jon zostaje od razu otoczony warstwą dipoli (tlenem ku Na⁺, wodorami ku Cl⁻), która działa jak poduszka: zasłania ładunek przeciwnego jonu i nie pozwala parom Na⁺–Cl⁻ z powrotem się „dobić". Suma przyciągań woda–jon jest na tyle duża, że wyswobodzenie jonu z sieci się opłaca — i kryształ rozpada się na rozdzielone, hydratowane jony. Dlatego w roztworze nie ma „par NaCl", tylko osobne Na⁺(aq) i Cl⁻(aq).
+
+## 7 | Wykład — trzy dźwignie szybkości rozpuszczania
 
 Masz kostkę cukru, szklankę herbaty i ochotę, żeby cukier rozpuścił się jak najszybciej. Masz trzy dźwignie:
 
@@ -138,7 +146,7 @@ I uwaga, bo to ulubiona pułapka: te trzy dźwignie działają na **szybkość**
 Nie. Mieszanie zwiększa **szybkość** rozpuszczania, ale nie zmienia, **ile** substancji maksymalnie się rozpuści. Jeśli roztwór jest nasycony, to niezależnie od mieszania na dnie zostanie dokładnie tyle samo nierozpuszczonej substancji. Szybkość ≠ ilość.
 :::
 
-## 7 | Wykład — zapisy stanów skupienia: (s), (l), (g), (aq)
+## 8 | Wykład — zapisy stanów skupienia: (s), (l), (g), (aq)
 
 W równaniach i opisach reakcji po wzorze substancji dopisujemy jej stan skupienia:
 
@@ -165,9 +173,9 @@ W roztworze sól istnieje jako **rozdzielone, hydratowane jony**. Zjawisko nazyw
 Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal → (s); tlen jako reagent → O₂(g); woda w reakcjach z rozpuszczaniem → (l), a jako rozpuszczalnik w roztworach — substraty rozpuszczone dostają (aq); gazy w temperaturze pokojowej (CO₂, H₂, O₂, NH₃) → (g). Substancja rozpuszczona w wodzie = zawsze (aq), nawet jeśli czysta byłaby gazem lub ciałem stałym.
 :::
 
-## 8 | W skrócie — ściąga z R01
+## 9 | W skrócie — ściąga z R01
 
-- Cząsteczka wody: **kątowa** (ok. 104,5°), wiązania O–H polarne, tlen δ⁻, wodory δ⁺ → woda to **dipol**.
+- Cząsteczka wody: **kątowa** (ok. 104,5°, wartość podręcznikowa), wiązania O–H polarne, tlen δ⁻, wodory δ⁺ → woda to **dipol**.
 - **Podobne rozpuszcza podobne**: polarny rozpuszcza polarny i jonowy; niepolarny — niepolarny.
 - **Roztwór**: jednorodny, trwały, cząstki pojedynczych jonów/cząsteczek. **Zawiesina**: drobiny stałe, opadają, sączek je zatrzymuje. **Koloid**: drobinki pośrednie, nie opadają, sączek ich nie zatrzymuje, **efekt Tyndalla**.
 - **Hydratacja**: woda dipolami wyciąga jony z sieci i otacza je powłoką wodną → wolne jony → (aq).
