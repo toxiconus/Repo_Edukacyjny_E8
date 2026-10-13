@@ -15,5 +15,7 @@ Stan 2026-10-13. Wszystkie lekcje to **szkic** — audyt W1/W2 jeszcze nie wykon
 
 | 8 | LKO_STECH_masy_stechiometria.md (LKO II, rozsz. 6–7) | LKO-STECH | 18 KB | 90 KB | szkic — 2026-10-13, bez audytu W1 |
 
+| 9 | LKO_DOSW_katalog_doswiadczen.md (umiejętności wspólne I–II) | LKO-DOSW | 22 KB | 94 KB | szkic NIEKOMPLETNY — urwana odpowiedź przy F4, brak klucza |
+
 Surowe kopie AI: `olimpiada/plany/LKO_2026_27/*_ORYG.md`. Dokładne bajty: `wc -c`.
 Lekcje OLI.CHE (J03, R07, X04) są w `olimpiada/do_uzupelnienia/` (md) i `olimpiada/html/` (html); to osobny nurt, nie LKO.
