@@ -114,6 +114,20 @@ def main():
 <footer>Wygenerowano przez narzedzia/okladki_zakladki.py — nie edytować ręcznie. Kopie pochodzą z polski/html, biologia/html, angielski/html, olimpiada/html; chemia i LKO linkują do pakietów.</footer>
 </main><script>{JS}</script></body></html>"""
     (OUT / "index.html").write_text(doc, encoding="utf-8")
+    # osobne okładki: jeden plik na przedmiot / nurt
+    for slug, nazwa, wiersze in dane:
+        tab = "".join(
+            f"<tr><td><code>{html.escape(n)}</code></td><td>{html.escape(t)}</td>"
+            f"<td><a href=\"{html.escape(h if h.startswith('../') else slug + '/' + h.split('/')[-1] if False else h)}\">HTML</a>{(' · <a href=\"' + html.escape(m) + '\">MD</a>') if m else ''}</td>"
+            f"<td class=\"r\">{k}</td></tr>"
+            for n, t, h, m, k in wiersze) or "<tr><td colspan=\"4\">brak lekcji</td></tr>"
+        okl = (f'<!doctype html><html lang="pl"><head><meta charset="utf-8">'
+               f'<meta name="viewport" content="width=device-width,initial-scale=1">'
+               f'<title>Okładka — {html.escape(nazwa)}</title><style>{CSS}</style></head><body><main>'
+               f'<h1>{html.escape(nazwa)}</h1><p class="meta">Stan na {dzis} · lekcji: {len(wiersze)} · <a href="index.html">wszystkie zakładki</a></p>'
+               f'<table><thead><tr><th>Plik</th><th>Tytuł</th><th>Pliki</th><th>HTML</th></tr></thead><tbody>{tab}</tbody></table>'
+               f'<footer>Wygenerowano przez narzedzia/okladki_zakladki.py — nie edytować ręcznie.</footer></main></body></html>')
+        (OUT / f"okladka_{slug}.html").write_text(okl, encoding="utf-8")
     print("zakładki:", ", ".join(f"{n}={len(w)}" for _, n, w in dane))
 
 if __name__ == "__main__":
