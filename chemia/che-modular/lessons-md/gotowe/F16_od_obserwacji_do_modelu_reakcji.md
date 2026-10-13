@@ -5,6 +5,7 @@ tytul: Od obserwacji do modelu reakcji
 opis: Zjawisko fizyczne a reakcja chemiczna · znaki reakcji (barwa, gaz, osad, temperatura, światło) · substraty i produkty · zasada zachowania masy · model cząsteczkowy przegrupowania atomów · zapis słowny przed równaniem
 kicker: F16 · FUNDAMENTY · NOWA WERSJA
 lead: Chemik zaczyna od obserwacji: coś zmienia barwę, wydziela gaz, tworzy osad, nagrzewa się. Dopiero z obserwacji buduje się model reakcji. Ta lekcja uczy, jak przejść od tego, co widać, do tego, co się dzieje w skali atomów, i jak sprawdzić model.
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
 stopka: **CHEMIA F16 v1.0** · Od obserwacji do modelu reakcji · 2026
 ---
@@ -200,7 +201,7 @@ Masa rośnie, bo do reakcji wchodzi tlen z powietrza, którego nie uwzględniono
 
 ## 8 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — zjawisko czy reakcja
+::: karta exam | A. Podstawa — zjawisko czy reakcja (3 pkt)
 Oceń, czy to zjawisko fizyczne, czy reakcja, i uzasadnij:
 1. Topnienie masła.
 2. Rdzewienie żelaznego gwoździa.
@@ -213,7 +214,7 @@ Oceń, czy to zjawisko fizyczne, czy reakcja, i uzasadnij:
 :::
 :::
 
-::: karta understand | B. Trening — znaki i schemat
+::: karta exam | B. Trening — znaki i schemat (2 pkt)
 1. Do roztworu azotanu(V) srebra dodano roztwór chlorku sodu. Pojawił się biały osad. Podaj znak reakcji i schemat słowny.
 2. Magnez wrzucono do kwasu solnego: pojawiły się pęcherzyki, a probówka się nagrzała. Podaj dwa znaki reakcji.
 
@@ -223,13 +224,22 @@ Oceń, czy to zjawisko fizyczne, czy reakcja, i uzasadnij:
 :::
 :::
 
-::: karta extra | C. Ambitne — bilans masy i energii
+::: adv | C. Ambitne — bilans masy i energii (2 pkt) | poziom ambitny
 1. Dlaczego reakcja egzotermiczna „oddaje ciepło” do otoczenia, mimo że masa układu jest zachowana?
 2. Wyjaśnij na poziomie cząsteczkowym, dlaczego reakcja cynku z kwasem wydziela energię.
 
 ::: odp | Pokaż odpowiedzi
 1. Masa jest zachowana, ale energia zmienia formę: energia zmagazynowana w wiązaniach substratów jest większa niż w produktach, a różnica wydziela się jako ciepło.
 2. Tworzenie wiązań w produktach (np. w H₂ i w chlorku cynku) uwalnia więcej energii, niż kosztuje zerwanie wiązań w kwasie; bilans jest ujemny, więc układ się nagrzewa.
+:::
+:::
+
+::: adv | Zadanie dodatkowe (3 pkt) — reakcja w zamkniętej probówce | poziom ambitny
+Do zamkniętej probówki wlano roztwór siarczanu(VI) miedzi(II) (roztwór niebieski) i roztwór wodorotlenku sodu. Po chwili nad osadem roztwór był prawie bezbarwny.
+(a) Podaj obserwacje i wniosek. (b) Zapisz schemat słowny i równanie reakcji. (c) Czy zasada zachowania masy obowiązuje w tym doświadczeniu? Uzasadnij.
+
+::: odp | Klucz — zadanie dodatkowe
+(a) Obserwacje: powstaje niebieski osad, roztwór staje się prawie bezbarwny; wniosek: zaszła reakcja chemiczna, bo powstały nowe substancje (1 pkt). (b) siarczan(VI) miedzi(II) + wodorotlenek sodu → wodorotlenek miedzi(II) + siarczan(VI) sodu; CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄ (1 pkt). (c) Tak — probówka jest zamknięta, więc masa substratów równa się masie produktów; zmienia się tylko połączenie atomów (1 pkt).
 :::
 :::
 
@@ -315,6 +325,10 @@ Antoine Lavoisier, żyjący w XVIII wieku, zaczął systematycznie ważyć subst
 
 ::: karta extra | Dlaczego łuczynka „strzela” przy wodorze?
 Wodór miesza się z tlenem powietrza i tworzy mieszaninę piorunującą. Przy zapłonie reaguje gwałtownie, dając charakterystyczny trzask. Dlatego przy doświadczeniach z gazami palnymi zawsze używa się małej ilości i pracuje z dala od otwartego ognia.
+:::
+
+::: karta extra | Tabletka na zgagę to reakcja zobojętniania
+Wodorotlenek magnezu, składnik wielu leków na zgagę, reaguje z kwasem solnym żołądka: Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O. Ta sama reakcja, którą widzisz w probówce, działa w organizmie — zasada zachowania masy obowiązuje także tutaj.
 :::
 
 ## 13 | Checklista — umiem… {#checklista}
