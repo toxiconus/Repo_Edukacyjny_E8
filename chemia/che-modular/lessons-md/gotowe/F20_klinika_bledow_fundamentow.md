@@ -6,6 +6,7 @@ opis: Najczęstsze pomyłki z F01–F19 — Z i A, izotop i jon, grupa i okres, 
 kicker: F20 · FUNDAMENTY · NOWA WERSJA
 lead: Większość błędów z chemii nie wynika z braku wiedzy, tylko z dwóch pojęć pomieszanych ze sobą. Ta lekcja to klinika: diagnozujesz błąd, znajdujesz pojęcie, które zabrakło, i naprawiasz właściwy etap rozumowania.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F20 v1.0** · Klinika błędów fundamentów · 2026
 ---
 
@@ -171,36 +172,52 @@ Błąd wyniku naprawiamy, zmieniając losową liczbę | Szukamy pierwszego niesp
 
 ## 5 | Ćwiczenia — znajdź błąd {#cwiczenia}
 
-::: karta basic | A. Podstawa — popraw zapis
+::: karta exam | A. Podstawa — popraw zapis (3 pkt)
 Popraw każdy zapis: (a) Cl⁻: 17p, 17e; (b) dla ³⁵Cl: A = 17, Z = 35; (c) wodorotlenek wapnia: CaOH₂.
-
-::: odp | Pokaż odpowiedź
-(a) Cl⁻: 17p, 18e. (b) ³⁵Cl: A = 35, Z = 17. (c) Ca(OH)₂.
-:::
 :::
 
-::: karta understand | B. Trening — polarność i równanie
+::: odp | Pokaż klucz
+(a) Cl⁻: 17p, 18e (1 pkt). (b) ³⁵Cl: A = 35, Z = 17 (1 pkt). (c) Ca(OH)₂ (1 pkt).
+:::
+
+::: karta exam | B. Trening — polarność i równanie (3 pkt)
 Uczeń twierdzi: „CO₂ jest polarne, bo wiązania C=O są polarne”. Napisz poprawną odpowiedź i uzasadnij ją geometrią. Następnie zbilansuj: `H₂ + O₂ → H₂O`.
-
-::: odp | Pokaż odpowiedź
-CO₂ jest cząsteczką niepolarną: wiązania C=O są polarne, ale liniowa, symetryczna cząsteczka znosi momenty dipolowe. Bilans: `2H₂ + O₂ → 2H₂O`.
-:::
 :::
 
-::: karta understand | C. Trening — obserwacja i wniosek
+::: odp | Pokaż klucz
+CO₂ jest cząsteczką niepolarną: wiązania C=O są polarne, ale liniowa, symetryczna cząsteczka znosi momenty dipolowe (2 pkt). Bilans: `2H₂ + O₂ → 2H₂O` (1 pkt).
+:::
+
+::: karta exam | C. Trening — obserwacja i wniosek (3 pkt)
 Uczeń napisał: „Woda w probówce zmieniła barwę, więc powstał jod”. Wskaż błąd i zaproponuj, co trzeba zrobić, aby uzasadnić produkt.
-
-::: odp | Pokaż odpowiedź
-Zmiana barwy to obserwacja, nie dowód identyfikacji. Trzeba wykonać próbę identyfikacyjną (np. test skrobiowy na jod, jeśli to on jest podejrzewany) i uwzględnić inne możliwe przyczyny zmiany barwy (np. wskaźnik, zanieczyszczenie).
-:::
 :::
 
-::: karta extra | D. Ambitne — wieloetapowy błąd
+::: odp | Pokaż klucz
+Zmiana barwy to obserwacja, nie dowód identyfikacji (1 pkt). Trzeba wykonać próbę identyfikacyjną (np. test skrobiowy, jeśli podejrzewamy jod) i uwzględnić inne możliwe przyczyny zmiany barwy, np. wskaźnik lub zanieczyszczenie (2 pkt).
+:::
+
+::: karta exam | D. Trening — elektrony w reakcji sodu (3 pkt)
+Uczeń: „W reakcji Na + Cl₂ → NaCl elektrony przechodzą od chloru do sodu, bo chlor jest większy”. Wskaż błąd i napisz poprawny kierunek przejścia elektronów.
+:::
+
+::: odp | Pokaż klucz
+Błąd: kierunek przejścia elektronów (1 pkt). Poprawnie: sód oddaje elektron (Na → Na⁺ + e⁻), a chlor go przyjmuje (Cl + e⁻ → Cl⁻); elektrony przechodzą od Na do Cl (2 pkt).
+:::
+
+::: adv | E. Ambitne — wieloetapowy błąd (3 pkt) | poziom ambitny
 Uczeń: „Cl⁻ ma 17 protonów i 18 elektronów, więc jego Z = 18, bo ma więcej elektronów. Stopień utlenienia Cl w Cl⁻ wynosi 0, bo jest jonem”. Znajdź wszystkie błędy i wskaż pierwszy z nich.
-
-::: odp | Pokaż odpowiedź
-Pierwszy błąd: liczba Z to liczba protonów, a nie elektronów — Z = 17 (jon nie zmienia Z). Drugi błąd: stopień utlenienia Cl w jonie Cl⁻ to −I (ładunek jonu równa się stopniowi utlenienia pojedynczego jonu prostego), nie 0. Naprawa zaczyna się od pierwszego błędu.
 :::
+
+::: odp | Pokaż klucz
+Pierwszy błąd: liczba Z to liczba protonów, a nie elektronów — Z = 17 (jon nie zmienia Z) (1,5 pkt). Drugi błąd: stopień utlenienia Cl w jonie Cl⁻ to −I (ładunek jonu prostego równa się stopniowi utlenienia), nie 0 (1,5 pkt). Naprawa zaczyna się od pierwszego błędu.
+:::
+
+::: adv | F. Ambitne — wzór z wartościowości (3 pkt) | poziom ambitny
+Uczeń zapisał wzór tlenku glinu jako AlO, uzasadniając: „Al ma wartościowość I, O ma II, więc AlO”. Popraw wzór, wyjaśnij błąd w uzasadnieniu i sprawdź bilans wartościowości.
+:::
+
+::: odp | Pokaż klucz
+Al ma wartościowość III (nie I), O — II (1 pkt). Poprawny wzór: Al₂O₃ — 2 atomy Al (2·III = VI) i 3 atomy O (3·II = VI) (1 pkt). Błąd w uzasadnieniu: wartościowość Al przyjęta złe (I zamiast III) — wzór musi zrównoważyć sumę wartościowości (1 pkt).
 :::
 
 ## 6 | Fiszki {#fiszki}
@@ -280,6 +297,11 @@ Właściwości chemiczne zależą głównie od elektronów, a izotopy tego sameg
 
 ::: karta extra | Błędna odpowiedź może być ciekawsza od poprawnej
 Historia nauki zna wiele błędnych modeli, które dobrze tłumaczyły część danych. Dlatego w chemii nie wystarczy, że wynik „wygląda dobrze”: trzeba sprawdzić, czy model przewiduje także inne przypadki.
+:::
+
+
+::: karta extra | Skąd bierze się symbol Pb dla ołowiu?
+Pb pochodzi od łacińskiego słowa „plumbum”. Wiele symboli pierwiastków ma źródło łacińskie lub greckie, np. Fe (ferrum) czy Au (aurum) — dlatego symbol nie zawsze zaczyna się od pierwszej litery polskiej nazwy.
 :::
 
 ## 10 | Wykład — dlaczego błędy są informacją {#wyklad}

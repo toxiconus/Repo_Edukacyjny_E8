@@ -6,6 +6,7 @@ opis: Domknięcie bloku F — zadania, w których łączysz kilka działów (kon
 kicker: F21 · FUNDAMENTY · NOWA WERSJA
 lead: Blok F nie kończy się na definicjach. Kończy się tym, że potrafisz przejść przez cały łańcuch: od atomu do równania i z powrotem. Ta lekcja to zestaw zadań, które wymagają połączenia kilku lekcji, oraz diagnoza, która wskaże, gdzie wracać.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F21 v1.0** · Zadania transferowe i diagnostyka · 2026
 ---
 
@@ -101,7 +102,7 @@ Czy potrafisz wykorzystać fundamenty F01–F20 w sytuacji, w której nikt nie p
 
 ## 2 | Zadania transferowe — 15 zadań z kluczem [[basic:E8]] {#zadania}
 
-::: karta basic | Zadanie 1 — od konfiguracji do pierwiastka
+::: karta exam | Zadanie 1 — od konfiguracji do pierwiastka (2 pkt)
 Dany jest atom o konfiguracji `[Ne]3s²3p⁵`. Ustal symbol, Z, okres, grupę, liczbę elektronów walencyjnych i typowy jon jednoatomowy.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -109,7 +110,7 @@ Konfiguracja [Ne]3s²3p⁵ ma 2 + 5 = 7 elektronów powyżej neonu, czyli Z = 10
 :::
 :::
 
-::: karta basic | Zadanie 2 — od izotopu i jonu
+::: karta exam | Zadanie 2 — od izotopu i jonu (2 pkt)
 Izotop ³⁷Cl: podaj liczbę protonów, neutronów i elektronów w atomie obojętnym.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -117,7 +118,7 @@ Z = 17 (protony = 17); A = 37, więc n = 37 − 17 = **20**; atom obojętny ma *
 :::
 :::
 
-::: karta understand | Zadanie 3 — od jonu do wzoru
+::: karta exam | Zadanie 3 — od jonu do wzoru (2 pkt)
 Jon X²⁺ ma 18 elektronów. Ustal pierwiastek X i napisz wzór tlenku tego pierwiastka.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -125,7 +126,7 @@ Atom obojętny ma 18 + 2 = 20 elektronów, czyli Z = 20: to **wapń (Ca)**. Tlen
 :::
 :::
 
-::: karta understand | Zadanie 4 — wzór związku jonowego
+::: karta exam | Zadanie 4 — wzór związku jonowego (2 pkt)
 Ustal wzór związku z jonów Al³⁺ i SO₄²⁻.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -133,7 +134,7 @@ Najmniejsza wspólna wielokrotność ładunków: 3 i 2 → 6. Potrzeba 2 jonów 
 :::
 :::
 
-::: karta understand | Zadanie 5 — Lewis dla H₂O
+::: karta exam | Zadanie 5 — Lewis dla H₂O (2 pkt)
 Podaj liczbę elektronów walencyjnych w H₂O, wzór Lewisa, liczbę domen na atomie centralnym i geometrię.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -141,7 +142,7 @@ Elektrony walencyjne: 2·1 (H) + 6 (O) = **8**. Lewis: O w środku, dwa wiązani
 :::
 :::
 
-::: karta understand | Zadanie 6 — polarność H₂O
+::: karta exam | Zadanie 6 — polarność H₂O (2 pkt)
 Uczeń twierdzi: „Woda jest niepolarna, bo jej wzór nie zawiera jonów”. Oceń wypowiedź.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -149,7 +150,7 @@ Rozumowanie jest błędne. Polarność cząsteczki zależy od polarnych wiązań
 :::
 :::
 
-::: karta understand | Zadanie 7 — polarność CO₂ i NH₃
+::: karta exam | Zadanie 7 — polarność CO₂ i NH₃ (2 pkt)
 Oceń polarność CO₂ i NH₃, uzasadniając geometrią.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -157,7 +158,7 @@ CO₂: wiązania C=O są polarne, ale cząsteczka jest liniowa i symetryczna —
 :::
 :::
 
-::: karta understand | Zadanie 8 — obserwacja w reakcji Mg
+::: karta exam | Zadanie 8 — obserwacja w reakcji Mg (2 pkt)
 Podczas ogrzewania magnezu na powietrzu pojawia się jasne światło i biały proszek. Zapisz obserwację, wniosek i równanie.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -165,7 +166,7 @@ Obserwacja: jasne światło, biały proszek. Wniosek (do sprawdzenia próbą): p
 :::
 :::
 
-::: karta understand | Zadanie 9 — dossier reakcji CaCO₃ + HCl
+::: karta exam | Zadanie 9 — dossier reakcji CaCO₃ + HCl (2 pkt)
 Uzupełnij rekord: substraty, produkty, obserwacja, próba identyfikacyjna, równanie, BHP.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -173,7 +174,7 @@ Substraty: CaCO₃, HCl. Produkty: CaCl₂, H₂O, CO₂. Obserwacja: wydzielani
 :::
 :::
 
-::: karta understand | Zadanie 10 — błąd w zapisie NaOH₂
+::: karta exam | Zadanie 10 — błąd w zapisie NaOH₂ (2 pkt)
 Uczeń napisał wzór wodorotlenku sodu jako `NaOH₂`. Wskaż błąd.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -181,7 +182,7 @@ Sód tworzy jon Na⁺, grupa OH⁻ ma ładunek −1: potrzeba jednej grupy OH. P
 :::
 :::
 
-::: karta understand | Zadanie 11 — NaCl: sieć czy cząsteczka?
+::: karta exam | Zadanie 11 — NaCl: sieć czy cząsteczka? (2 pkt)
 Czy w krysztale NaCl istnieją pojedyncze cząsteczki NaCl? Uzasadnij.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -189,7 +190,7 @@ Nie. NaCl ma sieć jonową: każdy jon Na⁺ otoczony jest sześcioma jonami Cl�
 :::
 :::
 
-::: karta understand | Zadanie 12 — NH₃: od Lewisa do polarności
+::: karta exam | Zadanie 12 — NH₃: od Lewisa do polarności (2 pkt)
 Podaj Lewis, geometrię i polarność NH₃.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -197,7 +198,7 @@ Elektrony walencyjne: 5 + 3 = 8 → 3 wiązania N–H i 1 wolna para na N. Domen
 :::
 :::
 
-::: karta understand | Zadanie 13 — CH₄: dossier substancji
+::: karta exam | Zadanie 13 — CH₄: dossier substancji (2 pkt)
 Podaj geometrię, polarność i temperaturę wrzenia CH₄ jako przykład wpływu budowy na właściwości (orientacyjnie).
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -205,7 +206,7 @@ Tetraedryczna, niepolarna (cztery polarne wiązania C–H symetrycznie rozmieszc
 :::
 :::
 
-::: karta extra | Zadanie 14 — dlaczego roztwór HCl przewodzi prąd?
+::: adv | Zadanie 14 — dlaczego roztwór HCl przewodzi prąd? (2 pkt) | poziom ambitny
 Chlorowodór w roztworze wodnym przewodzi prąd. Wyjaśnij, co jest nośnikiem ładunku.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -213,7 +214,7 @@ HCl jest kwasem; w wodzie ulega jonizacji: HCl → H⁺ + Cl⁻. Ruchliwe jony H
 :::
 :::
 
-::: karta extra | Zadanie 15 — zadanie zbiorcze: nowa substancja X
+::: adv | Zadanie 15 — zadanie zbiorcze: nowa substancja X (2 pkt) | poziom ambitny
 Dane: substancja X zbudowana z pierwiastka o Z = 8 i pierwiastka o Z = 1. Ustal: wzór, Lewis, geometrię, polarność, jedną reakcję charakterystyczną i co jest potrzebne do pełnego dossier.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -223,7 +224,7 @@ Pierwiastek Z = 8 to tlen, Z = 1 to wodór → H₂O (wzór z wartościowości: 
 
 ## 3 | Zadania z błędem — znajdź pierwszy błąd [[basic:E8]] {#bledy}
 
-::: karta understand | Zadanie 16 — błąd w bilansie
+::: karta exam | Zadanie 16 — błąd w bilansie (2 pkt)
 Uczeń zapisał: `Mg + O₂ → MgO`. Popraw i wyjaśnij, dlaczego nie wolno zmieniać indeksu w MgO.
 
 ::: odp | Pokaż klucz
@@ -231,7 +232,7 @@ Poprawnie: **2Mg + O₂ → 2MgO**. Indeks w MgO określa skład substancji (1 M
 :::
 :::
 
-::: karta understand | Zadanie 17 — obserwacja i wniosek
+::: karta exam | Zadanie 17 — obserwacja i wniosek (2 pkt)
 Po zmieszaniu dwóch roztworów pojawiło się zmętnienie. Zapisz obserwację, ostrożny wniosek i to, co trzeba jeszcze ustalić.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -239,7 +240,7 @@ Obserwacja: roztwór zmętniał, pojawiła się zawiesina. Wniosek: mogła powst
 :::
 :::
 
-::: karta understand | Zadanie 18 — przewodnictwo
+::: karta exam | Zadanie 18 — przewodnictwo (2 pkt)
 Dlaczego NaCl przewodzi prąd w roztworze wodnym, ale nie przewodzi dobrze jako kryształ?
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -385,6 +386,11 @@ Chlor pojawia się w trzech łańcuchach z tej lekcji: w konfiguracji (grupa 17)
 
 ::: karta extra | Dlaczego chemicy sprawdzają wynik dwiema drogami?
 Jeśli dwie niezależne metody dają ten sam wynik, zaufanie do niego rośnie. Bilans atomów, kontrola ładunku i oszacowanie sensu fizycznego to właśnie takie niezależne drogi.
+:::
+
+
+::: karta extra | Dlaczego kryształ soli kuchennej jest tak regularny?
+W krysztale NaCl każdy jon Na⁺ otoczony jest sześcioma jonami Cl⁻, a każdy Cl⁻ sześcioma jonami Na⁺. Ta sieć, powtarzana w trzech kierunkach, daje sześcienne kryształy, które widzimy jako kostki soli.
 :::
 
 ## 10 | Wykład — od odpowiedzi do rozumowania {#wyklad}

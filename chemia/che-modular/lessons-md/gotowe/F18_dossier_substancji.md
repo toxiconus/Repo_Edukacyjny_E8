@@ -6,6 +6,7 @@ opis: Jak opisać substancję od zera — wzór, typ wiązania i budowa, stan sk
 kicker: F18 · FUNDAMENTY · NOWA WERSJA
 lead: Zaczynamy składać wiedzę z F01–F17 w jedną całość. Dossier substancji to krótka karta, na której zapisujesz wszystko, co o danej substancji wynika z jej budowy: wzór, wiązania, polarność, rozpuszczalność, reakcje i bezpieczeństwo.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F18 v1.0** · Dossier substancji · 2026
 ---
 
@@ -175,36 +176,60 @@ Wlewanie wody do stężonego kwasu siarkowego może spowodować gwałtowne wrzen
 
 ## 5 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — pola dossier
+::: karta exam | A. Podstawa — pola dossier (4 pkt)
 Dla substancji HCl podaj: budowę, polarność i rozpuszczalność w wodzie.
-
-::: odp | Pokaż odpowiedź
-Cząsteczkowa (kowalencyjna spolaryzowana); cząsteczka polarna; bardzo dobrze rozpuszcza się w wodzie (tworzy kwas solny, jony H⁺ i Cl⁻).
-:::
 :::
 
-::: karta understand | B. Trening — z wzoru do budowy
+::: odp | Pokaż klucz
+Budowa cząsteczkowa (kowalencyjna spolaryzowana) — 1 pkt. Cząsteczka polarna — 1 pkt. Bardzo dobrze rozpuszcza się w wodzie (tworzy kwas solny; jony H⁺ i Cl⁻) — 2 pkt.
+:::
+
+::: karta exam | B. Trening — z wzoru do budowy (4 pkt)
 Dla każdej substancji podaj budowę (jonowa, cząsteczkowa, sieciowa, metaliczna): (a) MgO (b) C₆H₆ (c) Cu (d) SiO₂.
-
-::: odp | Pokaż odpowiedzi
-(a) jonowa (Mg²⁺ O²⁻); (b) cząsteczkowa; (c) metaliczna; (d) sieciowa kowalencyjna.
-:::
 :::
 
-::: karta extra | C. Ambitne — H₂O i H₂O₂
+::: odp | Pokaż klucz
+(a) jonowa (Mg²⁺ O²⁻) — 1 pkt; (b) cząsteczkowa — 1 pkt; (c) metaliczna — 1 pkt; (d) sieciowa kowalencyjna — 1 pkt.
+:::
+
+::: adv | C. Ambitne — H₂O i H₂O₂ (4 pkt) | poziom ambitny
 Porównaj dossier H₂O i H₂O₂ w polach: wiązanie, stopień utlenienia tlenu, zastosowanie.
-
-::: odp | Pokaż odpowiedź
-Obie cząsteczki kowalencyjne, polarne. H₂O: O w −II, zastosowanie jako rozpuszczalnik. H₂O₂: wiązanie O–O, O w −I; silny utleniacz, stosowany jako środek dezynfekujący (w niskich stężeniach).
-:::
 :::
 
-::: karta exam | D. Zaawansowane — pełne dossier
+::: odp | Pokaż klucz
+Obie cząsteczki kowalencyjne, polarne (2 pkt). H₂O: O w −II, zastosowanie jako rozpuszczalnik. H₂O₂: wiązanie O–O, O w −I; silny utleniacz, stosowany jako środek dezynfekujący w niskich stężeniach (2 pkt).
+:::
+
+::: karta exam | D. Pełne dossier — CaO (4 pkt)
 Wypełnij dossier dla CaO (tlenek wapnia): budowa, t.t. (orientacyjnie), reakcja z wodą, zagrożenie.
-
-::: odp | Pokaż odpowiedź
-Budowa: jonowa (Ca²⁺ O²⁻), wysoka t.t. (ok. 2570 °C — orientacyjnie). Reakcja z wodą: CaO + H₂O → Ca(OH)₂ (wydziela się dużo ciepła). Zagrożenie: silnie żrący; w kontakcie z wodą gwałtowne ciepło.
 :::
+
+::: odp | Pokaż klucz
+Budowa: jonowa (Ca²⁺ O²⁻), wysoka t.t. (ok. 2570 °C — wartość orientacyjna) — 1 pkt. Reakcja z wodą: CaO + H₂O → Ca(OH)₂, wydziela się dużo ciepła — 2 pkt. Zagrożenie: silnie żrący; w kontakcie z wodą gwałtowne ciepło — 1 pkt.
+:::
+
+::: karta exam | E. Pełne dossier — NaOH (4 pkt)
+Wypełnij dossier dla NaOH (wodorotlenek sodu): budowa, odczyn wodnego roztworu, zachowanie przy rozpuszczaniu w wodzie, zagrożenie.
+:::
+
+::: odp | Pokaż klucz
+Budowa: jonowa (Na⁺ OH⁻) — 1 pkt. Odczyn zasadowy (pH > 7) — 1 pkt. Rozpuszcza się w wodzie z wydzieleniem ciepła — 1 pkt. Zagrożenie: silnie żrący; chronić oczy i skórę — 1 pkt.
+:::
+
+::: adv | F. Transfer — amoniak NH₃ (4 pkt) | poziom ambitny
+Dla NH₃ (amoniak) wypełnij dossier: budowa, polarność, rozpuszczalność w wodzie, odczyn roztworu. Uzasadnij, dlaczego roztwór jest zasadowy, mimo że cząsteczka nie ma grupy OH.
+:::
+
+::: odp | Pokaż klucz
+Budowa cząsteczkowa, kowalencyjna; cząsteczka polarna (trójkątna piramida, nieprzesunięte pary elektronowe) — 1 pkt. Bardzo dobrze rozpuszcza się w wodzie, tworząc wiązania wodorowe — 1 pkt. Odczyn zasadowy: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ — jon OH⁻ powstaje z wody, a amoniak przyjmuje proton — 2 pkt.
+:::
+
+::: adv | G. Porównanie — NaCl i HCl (4 pkt) | poziom ambitny
+Porównaj dossier NaCl i HCl pod kątem: budowy, stanu skupienia w 20 °C oraz przewodzenia prądu w stanie stałym i w roztworze wodnym.
+:::
+
+::: odp | Pokaż klucz
+NaCl: budowa jonowa (sieć jonowa), ciało stałe w 20 °C, nie przewodzi w stanie stałym, przewodzi w roztworze wodnym i w stopie — 2 pkt. HCl: budowa cząsteczkowa, w 20 °C gaz, w wodzie dysocjuje na H⁺ i Cl⁻, roztwór przewodzi prąd — 2 pkt.
 :::
 
 ## 6 | Fiszki {#fiszki}
@@ -274,6 +299,11 @@ Lód suchy (stały CO₂) pod ciśnieniem atmosferycznym sublimuje, czyli przech
 
 ::: karta extra | Wodorki i tlenki — dwie różne historie
 Woda (H₂O) i nadtlenek wodoru (H₂O₂) mają tylko wodór i tlen, a różnią się zupełnie. Ta sama liczba pierwiastków może dać substancję bezpieczną do picia i silny utleniacz — o tym decyduje budowa.
+:::
+
+
+::: karta extra | Dlaczego amoniak tak świetnie rozpuszcza się w wodzie?
+W 20 °C w jednej objętości wody rozpuszcza się około 700 objętości NH₃. Cząsteczki NH₃ tworzą z wodą wiązania wodorowe, a przy tym reagują z wodą — dlatego roztwór jest zasadowy.
 :::
 
 ## 10 | Wykład — dossier jako sposób myślenia {#wyklad}
