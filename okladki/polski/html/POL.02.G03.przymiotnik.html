@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="pol">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>G03 · Przymiotnik — rozpoznawanie, odmiana, stopniowanie i funkcje</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw pol (Język polski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#7a2848;--accent-dark:#561a32;--accent-soft:#f6e9ee;--accent-line:#e2c3cf;--accent-glow:rgba(122,40,72,.15);--hl-key:#7a2848;--hl-key-bg:#f3dfe7;--hl-formula:#561a32;--hl-formula-bg:#f6e9ee;--bg:#fbfafa;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 140 200%27%3E%3Ctext x=%276%27 y=%27120%27 font-family=%27Georgia,serif%27 font-size=%27150%27 fill=%27%237a2848%27%3E%E2%80%9E%3C/text%3E%3Ctext x=%2760%27 y=%27190%27 font-family=%27Georgia,serif%27 font-size=%2770%27 font-style=%27italic%27 fill=%27%237a2848%27%3EAa%3C/text%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}}
+:root[data-theme=dark]{--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}
+
+/* przykłady i cytaty literackie krojem szeryfowym */
+.hero h1{font-family:var(--serif);font-weight:700;letter-spacing:-.2px}
+.part-heading{font-family:var(--serif);letter-spacing:0}
+.przyklad,.lk-quote blockquote{font-family:var(--serif)}
+.przyklad{display:block;margin:8px 0;padding:6px 0 6px 14px;border-left:2px solid var(--accent-line);font-size:16.5px;line-height:1.7}
+/* części zdania — szkolne oznaczenia (podkreślenia) */
+.z-pod{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-orz{text-decoration:underline double;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-prz{text-decoration:underline wavy;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-dop{text-decoration:underline dashed;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-oko{text-decoration:underline dotted;text-decoration-thickness:2.5px;text-underline-offset:5px}
+.z-leg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--text-soft);margin:6px 0 12px}
+.z-pod,.z-orz,.z-prz,.z-dop,.z-oko{text-decoration-color:var(--accent)}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Język polski</span><span class="lk-title">G03 Przymiotnik — rozpoznawanie, odmiana, stopniowanie i funkcje</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Język polski, lekcja G03</div><h1>Przymiotnik — rozpoznawanie, odmiana, stopniowanie i funkcje</h1><p class="lead">Jak rozpoznać przymiotnik, dopasować jego formę do rzeczownika i poprawnie użyć go w zdaniu.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span></div><div class="lk-meta"><span><b>Zakres:</b> części mowy, fleksja, składnia, ortografia 2026</span><span><b>Powiązania:</b> G01, G02, G04, G05, G06, G07, G12, G13; L004</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#cele">0. Cele lekcji i kryteria sukcesu</a><a class="toc-link" href="#definicja">1. Czym jest przymiotnik?</a><a class="toc-link" href="#procedura">2. Procedura rozpoznawania przymiotnika</a><a class="toc-link" href="#rodzaje-znaczeniowe">3. Rodzaje znaczeniowe przymiotników</a><a class="toc-link" href="#odmiana">4. Odmiana przymiotnika</a><a class="toc-link" href="#stopniowanie">5. Stopniowanie przymiotników</a><a class="toc-link" href="#s1">6. Pisownia „nie” z przymiotnikami — zasada obowiązująca od 1 stycznia 2026 r.</a><a class="toc-link" href="#funkcje">7. Funkcje przymiotnika w zdaniu</a><a class="toc-link" href="#rodzaje-przydawki">8. Rodzaje przydawki</a><a class="toc-link" href="#podobne-czesci-mowy">9. Przymiotnik a podobne części mowy</a><a class="toc-link" href="#klinika">10. Najczęstsze błędy — klinika językowa</a><a class="toc-link" href="#kontekst">11. Przykłady w kontekście szkolnym i literackim</a><a class="toc-link" href="#cwiczenia-a">12. Ćwiczenia — poziom A: rozpoznawanie i forma</a><a class="toc-link" href="#cwiczenia-b">13. Ćwiczenia — poziom B: stopniowanie i ortografia</a><a class="toc-link" href="#cwiczenia-c">14. Ćwiczenia — poziom C: funkcja i analiza zdania</a><a class="toc-link" href="#miniarkusz">15. Miniarkusz autorski — 20 punktów</a><a class="toc-link" href="#fiszki">16. Fiszki do powtórki</a><a class="toc-link" href="#checklista">17. Checklista przed sprawdzianem</a><a class="toc-link" href="#mapa">18. Mapa zależności i dalsza nauka</a><a class="toc-link" href="#wyklad">19. Wykład — przymiotnik od podstaw</a><a class="toc-link" href="#mini-wyklady">20. Mini-wykłady „W skrócie”</a><a class="toc-link" href="#ciekawostki">21. Ciekawostki</a><a class="toc-link" href="#pary">22. Pary pojęć mylonych</a><a class="toc-link" href="#olimpijska">23. Warstwa olimpijska — trudne przypadki</a><a class="toc-link" href="#zadania-olimpijskie">24. Zadania olimpijskie</a><a class="toc-link" href="#test">25. Test kontrolny</a><a class="toc-link" href="#slownik">26. Słownik pojęć</a><a class="toc-link" href="#zrodla">27. Źródła i status kontroli</a></nav></details>
+<section id="cele">
+<div class="part-heading"><span class="part-num">0</span> Cele lekcji i kryteria sukcesu</div>
+<p>Po lekcji potrafię:</p>
+<ol>
+<li>rozpoznać przymiotnik w zdaniu i uzasadnić rozpoznanie na podstawie znaczenia, formy i związku z innym wyrazem;</li>
+<li>odróżnić przymiotnik od rzeczownika, zaimka, liczebnika, przysłówka i imiesłowu przymiotnikowego;</li>
+<li>określić rodzaj, liczbę i przypadek przymiotnika w typowych połączeniach z rzeczownikiem;</li>
+<li>poprawnie odmienić przymiotnik oraz dopasować jego formę do rzeczownika;</li>
+<li>utworzyć stopień wyższy i najwyższy, rozpoznać stopniowanie regularne, nieregularne i opisowe oraz wskazać przymiotniki, których zwykle się nie stopniuje;</li>
+<li>poprawnie zapisywać <em>nie</em> z przymiotnikami zgodnie ze znaczeniem wypowiedzi i aktualną normą;</li>
+<li>rozpoznać przymiotnik w funkcji przydawki, orzecznika oraz użycie przymiotnika w funkcji rzeczownika;</li>
+<li>rozwiązać zadania podstawowe, egzaminacyjne i trudniejsze zadania wymagające wyjaśnienia odpowiedzi.</li>
+</ol>
+<div class="card card-warning">
+<span class="card-label">Najważniejsza pułapka</span>
+<p>Samo pytanie „jaki?” nie wystarcza do rozpoznania części mowy. Zawsze sprawdzaj kontekst, odmianę, znaczenie oraz funkcję w zdaniu.</p>
+</div>
+</section>
+<section id="definicja">
+<div class="part-heading"><span class="part-num">1</span> Czym jest przymiotnik?</div>
+<p><strong>Przymiotnik</strong> to odmienna część mowy, która najczęściej określa właściwość, cechę, przynależność lub relację osoby, przedmiotu, zjawiska albo pojęcia. Zazwyczaj łączy się z rzeczownikiem i dopasowuje do niego formę gramatyczną.</p>
+<p>Przykłady:</p>
+<ul>
+<li>cecha wyglądu: <strong>wysoki</strong> budynek, <strong>ciemna</strong> kurtka;</li>
+<li>cecha charakteru: <strong>odważna</strong> bohaterka, <strong>cierpliwy</strong> nauczyciel;</li>
+<li>stan: <strong>zmęczony</strong> uczeń, <strong>mokre</strong> ubranie;</li>
+<li>barwa lub materiał: <strong>zielony</strong> liść, <strong>drewniany</strong> stół;</li>
+<li>relacja lub przynależność: <strong>szkolna</strong> biblioteka, <strong>matczyna</strong> troska;</li>
+<li>pochodzenie od nazwy miejsca: <strong>warszawski</strong> adres, <strong>polska</strong> literatura.</li>
+</ul>
+<h3>1.1 | Pytania pomocnicze</h3>
+<p>Najczęściej: <strong>jaki? jaka? jakie? jacy? który? która? które? czyj? czyja? czyje?</strong></p>
+<p>Pytania są wskazówką, ale nie stanowią samodzielnego testu. Na przykład „który?” może prowadzić także do liczebnika porządkowego lub zaimka — zależnie od zdania.</p>
+<h3>1.2 | Przymiotnik a znaczenie</h3>
+<p>Przymiotnik nie musi nazywać cechy widocznej zmysłami. W połączeniach <em>prawna odpowiedzialność</em>, <em>matematyczny problem</em>, <em>społeczna umowa</em> wskazuje relację lub zakres, a niekoniecznie cechę, którą można zobaczyć.</p>
+<h3>1.3 | Przymiotnik nie zawsze stoi przed rzeczownikiem</h3>
+<ul>
+<li><strong>stary</strong> dom;</li>
+<li>dom <strong>stary</strong>, lecz zadbany;</li>
+<li>Dom jest <strong>stary</strong>;</li>
+<li><strong>Młodzi</strong> pomagali sąsiadom.</li>
+</ul>
+<p>Pozycja wyrazu w zdaniu nie rozstrzyga sama w sobie o jego części mowy ani funkcji składniowej.</p>
+</section>
+<section id="procedura">
+<div class="part-heading"><span class="part-num">2</span> Procedura rozpoznawania przymiotnika</div>
+<p>Wykonuj te kroki w podanej kolejności:</p>
+<ol>
+<li><strong>Odczytaj zdanie w całości.</strong> Nie analizuj wyrazu wyrwanego z kontekstu.</li>
+<li><strong>Sprawdź znaczenie.</strong> Czy wyraz określa cechę, stan, przynależność albo relację?</li>
+<li><strong>Znajdź określany rzeczownik</strong>, jeśli występuje. Zapytaj np. „jaki dom?”, „której książki?”, „czyja torba?”.</li>
+<li><strong>Sprawdź formę.</strong> Czy wyraz może odmieniać się przez przypadki, liczby i rodzaje? W typowym użyciu przymiotnik dopasowuje formę do rzeczownika.</li>
+<li><strong>Sprawdź funkcję w zdaniu.</strong> Czy wyraz określa rzeczownik, czy występuje po łączniku i orzeka o podmiocie?</li>
+<li><strong>Wyklucz podobne części mowy.</strong> Porównaj: <em>szybki bieg</em> — przymiotnik, <em>biegnie szybko</em> — przysłówek, <em>ten bieg</em> — zaimek, <em>trzech biegaczy</em> — liczebnik.</li>
+<li><strong>Uważaj na imiesłowy.</strong> <em>Czytający uczeń</em> zawiera imiesłów przymiotnikowy, a nie zwykły przymiotnik. Szczegóły: G06.</li>
+</ol>
+<div class="card card-understand">
+<span class="card-label">W skrócie — cztery pytania pod lupą</span>
+<p>Aby rozpoznać przymiotnik, odpowiedz kolejno: co wyraz znaczy? Z czym się łączy? Jak się odmienia? Jaką funkcję pełni w zdaniu? Wyraz <em>zielony</em> w połączeniu <em>zielony liść</em> określa rzeczownik i dopasowuje się do jego formy. Wyraz <em>zielono</em> w zdaniu <em>Liść odbijał zielono światło</em> nie jest przymiotnikiem, lecz przysłówkiem.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Błędna reguła</span>
+<p>Nie stosuj zasady: „Jeśli da się zadać pytanie <em>jaki?</em>, to na pewno przymiotnik”. W zdaniu <em>Pierwszy przyszedł do mety</em> wyraz <em>pierwszy</em> jest liczebnikiem porządkowym użytym rzeczownikowo, mimo że określa kolejność.</p>
+</div>
+</section>
+<section id="rodzaje-znaczeniowe">
+<div class="part-heading"><span class="part-num">3</span> Rodzaje znaczeniowe przymiotników</div>
+<p>Podział znaczeniowy pomaga zrozumieć tekst, ale nie zawsze jest ścisłą klasyfikacją szkolną. Jeden przymiotnik może, zależnie od kontekstu, pełnić różne role znaczeniowe.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Grupa znaczeniowa</th><th>Przykłady</th><th>Na co zwrócić uwagę</th></tr></thead>
+<tbody>
+<tr><td>jakościowe</td><td>wysoki, mądry, cichy, trudny</td><td>często stopniowalne</td></tr>
+<tr><td>barw i wyglądu</td><td>błękitny, blady, krępy</td><td>stopniowanie zależy od znaczenia i użycia</td></tr>
+<tr><td>materiałowe</td><td>drewniany, szklany, metalowy</td><td>zwykle nie stopniujemy w znaczeniu materiału</td></tr>
+<tr><td>relacyjne</td><td>szkolny, zimowy, chemiczny</td><td>określają związek z czymś; zwykle nie stopniujemy</td></tr>
+<tr><td>dzierżawcze / wskazujące przynależność</td><td>matczyny, ojcowski, uczniowski</td><td>wyrażają relację lub przynależność; stopniowanie zwykle nie ma sensu</td></tr>
+<tr><td>oceniające</td><td>znakomity, kiepski, świetny</td><td>mogą być stopniowane, ale trzeba uważać na znaczenie i naturalność formy</td></tr>
+</tbody></table></div>
+<p>To podział pomocniczy, a nie lista, którą trzeba mechanicznie przypisać każdemu wyrazowi. O stopniowalności decyduje przede wszystkim znaczenie w konkretnym użyciu.</p>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka — „drewniany” może znaczyć dwie rzeczy</span>
+<p>W zdaniu <em>drewniany stół</em> przymiotnik wskazuje materiał, więc stopniowanie jest zwykle nielogiczne. W zdaniu <em>drewniana gra aktora</em> chodzi już o sztywność, nienaturalność lub brak swobody. W tym znaczeniu można powiedzieć: <em>bardziej drewniana gra</em>. Ten sam wyraz może zatem zmienić swoją stopniowalność wraz ze znaczeniem.</p>
+</div>
+</section>
+<section id="odmiana">
+<div class="part-heading"><span class="part-num">4</span> Odmiana przymiotnika</div>
+<p>Przymiotnik odmienia się przez <strong>przypadki, liczby i rodzaje</strong>. W typowym związku z rzeczownikiem zgadza się z nim pod względem tych kategorii gramatycznych.</p>
+<h3>4.1 | Przypadek</h3>
+<p>Przypadek przymiotnika rozpoznajemy w związku z rzeczownikiem i w całym zdaniu. Nie wystarczy zapamiętać końcówki, bo podobne końcówki mogą pojawiać się w różnych przypadkach.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przypadek</th><th>Pytania pomocnicze</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>Mianownik (M.)</td><td>kto? co?</td><td><strong>nowy</strong> zeszyt leży na stole</td></tr>
+<tr><td>Dopełniacz (D.)</td><td>kogo? czego?</td><td>Nie mam <strong>nowego</strong> zeszytu</td></tr>
+<tr><td>Celownik (C.)</td><td>komu? czemu?</td><td>Przyglądam się <strong>nowemu</strong> zeszytowi</td></tr>
+<tr><td>Biernik (B.)</td><td>kogo? co?</td><td>Widzę <strong>nowy</strong> zeszyt. Widzę <strong>nową</strong> książkę</td></tr>
+<tr><td>Narzędnik (N.)</td><td>z kim? z czym?</td><td>Piszę <strong>nowym</strong> długopisem</td></tr>
+<tr><td>Miejscownik (Ms.)</td><td>o kim? o czym?</td><td>Mówię o <strong>nowym</strong> zeszycie</td></tr>
+<tr><td>Wołacz (W.)</td><td>o!</td><td><strong>Drogi</strong> przyjacielu!</td></tr>
+</tbody></table></div>
+<p><strong>Uwaga:</strong> pytania przypadków są pomocą, a nie zamiennikiem analizy składniowej. O przypadku decyduje forma i funkcja w zdaniu.</p>
+<h3>4.2 | Liczba i rodzaj</h3>
+<p>Przymiotnik ma formy liczby pojedynczej i mnogiej. W liczbie pojedynczej rozróżnia rodzaj męski, żeński i nijaki. W liczbie mnogiej istotny jest podział na formy męskoosobowe i niemęskoosobowe.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Rzeczownik</th><th>Poprawne połączenie</th><th>Co się dopasowuje?</th></tr></thead>
+<tbody>
+<tr><td>męski, lp.</td><td><strong>wysoki</strong> chłopiec</td><td>rodzaj, liczba, przypadek</td></tr>
+<tr><td>żeński, lp.</td><td><strong>wysoka</strong> dziewczyna</td><td>rodzaj, liczba, przypadek</td></tr>
+<tr><td>nijaki, lp.</td><td><strong>wysokie</strong> drzewo</td><td>rodzaj, liczba, przypadek</td></tr>
+<tr><td>męskoosobowy, lm.</td><td><strong>wysocy</strong> chłopcy</td><td>forma męskoosobowa</td></tr>
+<tr><td>niemęskoosobowy, lm.</td><td><strong>wysokie</strong> dziewczyny, drzewa</td><td>forma niemęskoosobowa</td></tr>
+</tbody></table></div>
+<p>W bierniku liczby pojedynczej rodzaju męskiego forma zależy od typu rzeczownika: <em>widzę dobrego chłopca</em>, ale <em>widzę dobry stół</em>. Nie jest to dowolna zamiana końcówek — forma wynika z rodzaju, żywotności rzeczownika i składni zdania.</p>
+<h3>4.3 | Przykładowa odmiana: „dobry”</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Przypadek</th><th>Męski lp.</th><th>Żeński lp.</th><th>Nijaki lp.</th><th>Męskoosobowy lm.</th><th>Niemęskoosobowy lm.</th></tr></thead>
+<tbody>
+<tr><td>M.</td><td>dobry</td><td>dobra</td><td>dobre</td><td>dobrzy</td><td>dobre</td></tr>
+<tr><td>D.</td><td>dobrego</td><td>dobrej</td><td>dobrego</td><td>dobrych</td><td>dobrych</td></tr>
+<tr><td>C.</td><td>dobremu</td><td>dobrej</td><td>dobremu</td><td>dobrym</td><td>dobrym</td></tr>
+<tr><td>B.</td><td>dobry / dobrego*</td><td>dobrą</td><td>dobre</td><td>dobrych</td><td>dobre</td></tr>
+<tr><td>N.</td><td>dobrym</td><td>dobrą</td><td>dobrym</td><td>dobrymi</td><td>dobrymi</td></tr>
+<tr><td>Ms.</td><td>dobrym</td><td>dobrej</td><td>dobrym</td><td>dobrych</td><td>dobrych</td></tr>
+<tr><td>W.</td><td>dobry!</td><td>dobra!</td><td>dobre!</td><td>dobrzy!</td><td>dobre!</td></tr>
+</tbody></table></div>
+<p>* Forma biernika zależy od rzeczownika: <em>widzę dobry stół</em>, ale <em>widzę dobrego psa</em>. W liczbie mnogiej: <em>widzę dobrych uczniów</em>, lecz <em>widzę dobre książki</em>. Wołacz w praktyce często pokrywa się z mianownikiem (<em>Drogi przyjacielu!</em>), ale w bezpośrednich zwrotach warto analizować całe połączenie.</p>
+<h3>4.4 | Zgodność — procedura naprawiania błędu</h3>
+<ol>
+<li>Znajdź rzeczownik, który przymiotnik określa.</li>
+<li>Ustal liczbę i rodzaj rzeczownika.</li>
+<li>Ustal przypadek wynikający ze zdania.</li>
+<li>Dobierz formę przymiotnika.</li>
+<li>Przeczytaj całe zdanie, aby sprawdzić, czy poprawka nie zepsuła sensu.</li>
+</ol>
+<p>Przykłady:</p>
+<ul>
+<li><em>ładny dziewczyna</em> → <strong>ładna dziewczyna</strong>;</li>
+<li><em>z dobrymi kolegów</em> → <strong>z dobrymi kolegami</strong>;</li>
+<li><em>przyglądam się wysoką wieży</em> → <strong>przyglądam się wysokiej wieży</strong>.</li>
+</ul>
+<h3>4.5 | Związki przymiotnika z kilkoma rzeczownikami</h3>
+<p>Jeśli przymiotnik określa kilka rzeczowników, forma zależy od ich rodzaju, liczby, szyku i przyjętej konstrukcji. W szkolnych zadaniach najbezpieczniej sprawdzić, czy przymiotnik odnosi się do wszystkich rzeczowników, czy tylko do jednego.</p>
+<ul>
+<li><em>czerwony zeszyt i długopis</em> może być niejednoznaczne: czerwony może odnosić się do obu przedmiotów albo tylko do zeszytu;</li>
+<li><em>czerwone zeszyt i książka</em> jest niepoprawne, jeśli przymiotnik ma określać oba rzeczowniki;</li>
+<li>dla jasności: <em>czerwony zeszyt i czerwona książka</em>.</li>
+</ul>
+<div class="card card-understand">
+<span class="card-label">W skrócie — zgoda nie polega na zgadywaniu końcówki</span>
+<p>Nie zaczynaj od końcówki przymiotnika. Najpierw ustal rzeczownik, potem jego przypadek, liczbę i rodzaj. W zdaniu <em>Przyglądam się wysokiej wieży</em> czasownik <em>przyglądam się</em> wymaga celownika. Rzeczownik ma więc formę <em>wieży</em>, a przymiotnik musi przyjąć formę <em>wysokiej</em>.</p>
+</div>
+</section>
+<section id="stopniowanie">
+<div class="part-heading"><span class="part-num">5</span> Stopniowanie przymiotników</div>
+<p>Stopniowanie porównuje natężenie cechy. Wyróżniamy <strong>stopień równy, wyższy i najwyższy</strong>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Stopień</th><th>Znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>równy</td><td>cecha bez porównania stopnia</td><td>wysoki</td></tr>
+<tr><td>wyższy</td><td>większe natężenie cechy w porównaniu</td><td>wyższy</td></tr>
+<tr><td>najwyższy</td><td>największe natężenie w określonej grupie / kontekście</td><td>najwyższy</td></tr>
+</tbody></table></div>
+<p>Stopień najwyższy nie oznacza automatycznie „najlepszy pod każdym względem”; odnosi się do konkretnej cechy i kontekstu.</p>
+<h3>5.1 | Stopniowanie regularne</h3>
+<p>Stopień wyższy tworzy się najczęściej za pomocą przyrostków <strong>-szy</strong> lub <strong>-ejszy</strong>, a najwyższy przez dodanie <strong>naj-</strong> do stopnia wyższego.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Równy</th><th>Wyższy</th><th>Najwyższy</th></tr></thead>
+<tbody>
+<tr><td>miły</td><td>milszy</td><td>najmilszy</td></tr>
+<tr><td>tani</td><td>tańszy</td><td>najtańszy</td></tr>
+<tr><td>cichy</td><td>cichszy</td><td>najcichszy</td></tr>
+<tr><td>mądry</td><td>mądrzejszy</td><td>najmądrzejszy</td></tr>
+<tr><td>ładny</td><td>ładniejszy</td><td>najładniejszy</td></tr>
+<tr><td>trudny</td><td>trudniejszy</td><td>najtrudniejszy</td></tr>
+<tr><td>silny</td><td>silniejszy</td><td>najsilniejszy</td></tr>
+<tr><td>wygodny</td><td>wygodniejszy</td><td>najwygodniejszy</td></tr>
+</tbody></table></div>
+<p>Nie każdy przymiotnik tworzy formę wyższą w identyczny sposób. Występują zmiany głosek i formy utrwalone w zwyczaju językowym. W razie wątpliwości sprawdź słownik.</p>
+<h3>5.2 | Stopniowanie nieregularne</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Stopień równy</th><th>Wyższy</th><th>Najwyższy</th></tr></thead>
+<tbody>
+<tr><td>dobry</td><td>lepszy</td><td>najlepszy</td></tr>
+<tr><td>zły</td><td>gorszy</td><td>najgorszy</td></tr>
+<tr><td>duży / wielki</td><td>większy</td><td>największy</td></tr>
+<tr><td>mały</td><td>mniejszy</td><td>najmniejszy</td></tr>
+</tbody></table></div>
+<p>Formy <em>lepszy</em>, <em>gorszy</em>, <em>większy</em>, <em>mniejszy</em> należy zapamiętać. Nie tworzymy ich przez mechaniczne dodanie końcówki: nie mówimy w standardowej polszczyźnie <em>dobrzejszy</em> w znaczeniu stopnia wyższego od <em>dobry</em>.</p>
+<h3>5.3 | Stopniowanie opisowe</h3>
+<p>Stopień wyższy i najwyższy tworzymy za pomocą <strong>bardziej</strong> i <strong>najbardziej</strong>:</p>
+<ul>
+<li>interesujący – bardziej interesujący – najbardziej interesujący;</li>
+<li>odpowiedzialny – bardziej odpowiedzialny – najbardziej odpowiedzialny;</li>
+<li>skomplikowany – bardziej skomplikowany – najbardziej skomplikowany.</li>
+</ul>
+<p>Stopniowanie opisowe bywa naturalniejsze przy dłuższych przymiotnikach. Nie należy tworzyć konstrukcji podwójnych, np. <em>bardziej lepszy</em>, <em>najbardziej najładniejszy</em>.</p>
+<h3>5.4 | Przymiotniki zwykle niestopniowalne</h3>
+<p>Niektóre przymiotniki w swoim podstawowym znaczeniu nie poddają się logicznemu stopniowaniu, bo określają kategorię, relację lub cechę traktowaną jako bezwzględną:</p>
+<ul>
+<li><strong>drewniany</strong> w znaczeniu „wykonany z drewna”;</li>
+<li><strong>chemiczny</strong> w znaczeniu „związany z chemią”;</li>
+<li><strong>warszawski</strong> w znaczeniu „związany z Warszawą”;</li>
+<li><strong>pierwszy</strong>, <strong>jedyny</strong> w ich ścisłym znaczeniu.</li>
+</ul>
+<p>Nie traktuj tej listy jako bezwzględnego zakazu. W języku potocznym, reklamie lub znaczeniu przenośnym możliwe bywają użycia typu <em>bardziej drewniany</em> (np. o stylu gry) czy <em>najbardziej warszawski</em> (o atmosferze miejsca). Wtedy porównujemy nie materiał lub pochodzenie w sensie dosłownym, lecz cechę, styl albo stopień typowości. Zawsze wyjaśnij, co jest porównywane.</p>
+<p><strong>„Martwy”</strong> także nie jest dobrym uniwersalnym przykładem przymiotnika niestopniowalnego: w sensie dosłownym zwykle nie stopniujemy go, ale w przenośni można mówić o <em>bardziej martwym punkcie</em> lub <em>najbardziej martwym okresie</em>. O stopniowaniu decyduje znaczenie i kontekst.</p>
+<h3>5.5 | Porównanie musi mieć sens</h3>
+<ul>
+<li><em>Ten szlak jest trudniejszy niż tamten</em> — porównujemy stopień trudności.</li>
+<li><em>To najlepsze rozwiązanie z trzech</em> — wskazujemy najwyższy stopień cechy w określonym zbiorze.</li>
+<li><em>Ten stół jest bardziej drewniany</em> — w znaczeniu dosłownym brzmi nielogicznie; może być zrozumiałe przenośnie, np. w porównaniu wyglądu.</li>
+</ul>
+<p>W zadaniu egzaminacyjnym sprawdź nie tylko formę, lecz także sens zdania.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — trzy drogi stopniowania</span>
+<p>Regularnie: <em>ładny → ładniejszy → najładniejszy</em>. Nieregularnie: <em>dobry → lepszy → najlepszy</em>. Opisowo: <em>interesujący → bardziej interesujący → najbardziej interesujący</em>. Nie łącz dwóch dróg: nie mów <em>bardziej lepszy</em> ani <em>najbardziej najładniejszy</em>.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: stopień najwyższy nie zawsze znaczy „rekord świata”</span>
+<p><em>To najwyższy budynek na osiedlu</em> nie oznacza, że budynek jest najwyższy w Polsce. Stopień najwyższy zawsze odnosi się do określonej grupy lub kontekstu.</p>
+</div>
+</section>
+<section id="s1">
+<div class="part-heading"><span class="part-num">6</span> Pisownia „nie” z przymiotnikami — zasada obowiązująca od 1 stycznia 2026 r.</div>
+<p>Od 1 stycznia 2026 r. zgodnie z zasadami Rady Języka Polskiego cząstkę <strong>nie- z przymiotnikami piszemy łącznie bez względu na stopień</strong>. Zmiana objęła także stopień wyższy i najwyższy.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Stopień równy</th><th>Stopień wyższy</th><th>Stopień najwyższy</th></tr></thead>
+<tbody>
+<tr><td>miły → niemiły</td><td>milszy → niemilszy</td><td>najmilszy → nienajmilszy</td></tr>
+<tr><td>dobry → niedobry</td><td>lepszy → nielepszy</td><td>najlepszy → nienajlepszy</td></tr>
+<tr><td>staranny → niestaranny</td><td>staranniejszy → niestaranniejszy</td><td>najstaranniejszy → nienajstaranniejszy</td></tr>
+<tr><td>częsty → nieczęsty</td><td>częstszy → nieczęstszy</td><td>najczęstszy → nienajczęstszy</td></tr>
+</tbody></table></div>
+<p>W przykładach ze stopniem wyższym i najwyższym pamiętaj: poprawna forma od 2026 r. to <strong>niemilszy</strong>, <strong>nienajmilszy</strong>, <strong>nielepszy</strong>, <strong>nienajlepszy</strong> — pisownia łączna.</p>
+<p class="mini-note">Egzamin: CKE w latach 2026–2030 (okres przejściowy) uznaje na egzaminach zarówno pisownię według nowych, jak i dawnych zasad. Uczymy nowej; dawna forma (<em>nie milszy</em>) nie będzie w tym okresie liczona jako błąd. [do weryfikacji w komunikacie CKE]</p>
+<h3>6.1 | Co z przeciwstawieniem?</h3>
+<p>Nowa reguła usuwa dawny wyjątek dotyczący rozdzielnej pisowni „nie” z przymiotnikami w stopniu wyższym i najwyższym. Nie należy więc uczyć się starej reguły „nie lepszy, nie najlepszy” jako aktualnej zasady ogólnej. W razie konstrukcji o szczególnym charakterze składniowym, cytatu lub przytoczenia dawnej pisowni należy rozróżnić normę współczesną od tekstu historycznego; w zwykłych ćwiczeniach stosuj zapis łączny.</p>
+<h3>6.2 | Nie myl przymiotnika z imiesłowem</h3>
+<p>W 2026 r. zmieniła się również zasada pisowni <strong>nie</strong> z imiesłowami przymiotnikowymi: pisownia łączna obowiązuje niezależnie od dawnego rozróżnienia znaczeniowego. To osobny temat, omawiany dokładniej w G06. Nie przenoś automatycznie wszystkich reguł przymiotnika na przysłówki niepochodzące od przymiotników, rzeczowniki czy czasowniki.</p>
+<h3>6.3 | Pisownia przymiotników od nazw własnych</h3>
+<p>W zwykłym użyciu przymiotniki od nazw geograficznych i nazw własnych piszemy małą literą, np. <strong>polski język</strong>, <strong>warszawski rynek</strong>, <strong>krakowska ulica</strong>, <strong>wisłocki krajobraz</strong>. Od 2026 r. ujednolicono pisownię małą literą wielu przymiotników utworzonych od nazw osobowych, niezależnie od tego, czy mają znaczenie dzierżawcze, czy jakościowe, np. <strong>dramat szekspirowski</strong>, <strong>epoka zygmuntowska</strong>, <strong>koncert chopinowski</strong>, <strong>filozofia sokratejska</strong>. Zasada ma wyjątek: przymiotniki utworzone od imion (rzadziej nazwisk), zakończone na <strong>-owy, -in/-yn, -ów</strong>, mogą być zapisywane małą lub wielką literą, np. <strong>jackowe/Jackowe dzieci</strong>, <strong>poezja miłoszowa/Miłoszowa</strong>. Wielka litera może też występować, gdy wyraz jest częścią oficjalnej nazwy własnej, np. <strong>Uniwersytet Jagielloński</strong> — tu rozstrzyga status całej nazwy, a nie ogólna reguła pisowni przymiotników.</p>
+</section>
+<section id="funkcje">
+<div class="part-heading"><span class="part-num">7</span> Funkcje przymiotnika w zdaniu</div>
+<h3>7.1 | Przydawka</h3>
+<p>Przymiotnik najczęściej pełni funkcję <strong>przydawki</strong>, czyli określenia rzeczownika:</p>
+<ul>
+<li><strong>wysoki</strong> budynek;</li>
+<li>książka <strong>przygodowa</strong>;</li>
+<li>nie mam <strong>nowego</strong> zeszytu;</li>
+<li>rozmawialiśmy o <strong>trudnym</strong> zadaniu.</li>
+</ul>
+<p>Aby znaleźć przydawkę, odszukaj rzeczownik i zapytaj o jego określenie. Samo wystąpienie przymiotnika nie gwarantuje jednak, że zawsze pełni funkcję przydawki.</p>
+<h3>7.2 | Orzecznik w orzeczeniu imiennym</h3>
+<p>Przymiotnik może być <strong>orzecznikiem</strong>, czyli częścią orzeczenia imiennego. Zwykle występuje z łącznikiem, np. formą czasownika <em>być</em>, <em>stać się</em>, <em>zostać</em>, <em>wydawać się</em>, <em>okazać się</em>:</p>
+<ul>
+<li>Dom jest <strong>duży</strong>.</li>
+<li>Bohaterka stała się <strong>odważna</strong>.</li>
+<li>Zadanie wydaje się <strong>trudne</strong>.</li>
+<li>Rozwiązanie okazało się <strong>najlepsze</strong>.</li>
+</ul>
+<p>W zdaniu <em>Dom jest duży</em> przymiotnik <em>duży</em> nie jest przydawką, bo nie określa bezpośrednio rzeczownika w grupie nominalnej; stanowi orzecznik w orzeczeniu imiennym <em>jest duży</em>.</p>
+<h3>7.3 | Przymiotnik użyty w funkcji rzeczownika</h3>
+<p>Przymiotnik może zostać użyty samodzielnie, gdy z kontekstu wiadomo, kogo lub co oznacza:</p>
+<ul>
+<li><strong>Młodzi</strong> pomagali <strong>starszym</strong>.</li>
+<li><strong>Chory</strong> został przyjęty pierwszy.</li>
+<li>Wybieramy <strong>najlepsze</strong>.</li>
+</ul>
+<p>W takich zdaniach forma przymiotnika zachowuje cechy przymiotnikowe, ale cały wyraz lub grupa może pełnić funkcję składniową typową dla rzeczownika, np. podmiotu albo dopełnienia. Nie nazywaj automatycznie takiego wyrazu rzeczownikiem tylko dlatego, że stoi sam.</p>
+<h3>7.4 | Krótka analiza porównawcza</h3>
+<ol>
+<li><em>Zmęczony uczeń zasnął.</em> — <em>zmęczony</em> określa rzeczownik <em>uczeń</em>; przydawka. Uwaga: forma <em>zmęczony</em> jest również imiesłowem przymiotnikowym biernym, a nie zwykłym przymiotnikiem.</li>
+<li><em>Uczeń był zmęczony.</em> — <em>zmęczony</em> jest orzecznikiem; nadal należy pamiętać o jego imiesłowowym pochodzeniu.</li>
+<li><em>Uczeń był cierpliwy.</em> — <em>cierpliwy</em> to przymiotnik w funkcji orzecznika.</li>
+<li><em>Cierpliwi wygrali.</em> — przymiotnik użyty w funkcji rzeczownika; w zdaniu pełni funkcję podmiotu.</li>
+</ol>
+<div class="card card-understand">
+<span class="card-label">W skrócie — trzy funkcje jednego przymiotnika</span>
+<p>Porównaj: <em>zielony plecak</em> — przydawka; <em>plecak jest zielony</em> — orzecznik; <em>Wybraliśmy zielone</em> — przymiotnik użyty rzeczownikowo, pełniący funkcję dopełnienia. Ta sama forma może więc mieć różną funkcję składniową.</p>
+</div>
+</section>
+<section id="rodzaje-przydawki">
+<div class="part-heading"><span class="part-num">8</span> Rodzaje przydawki</div>
+<p>Przydawka odpowiada na pytania: <strong>jaki? która? czyj? ile? czyich?</strong> Określa rzeczownik, zaimek rzeczowny lub wyraz użyty w funkcji rzeczownika.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj przydawki</th><th>Czym jest wyrażona</th><th>Pytanie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>przymiotna</td><td>przymiotnikiem</td><td>jaki? która? jakie?</td><td><strong>wysoki</strong> dom</td></tr>
+<tr><td>rzeczowna</td><td>rzeczownikiem w dopełniaczu</td><td>czyj? czyja? czyje?</td><td>dom <strong>sąsiada</strong></td></tr>
+<tr><td>przyimkowa</td><td>wyrażeniem przyimkowym</td><td>jaki? która?</td><td>dom <strong>na wzgórzu</strong></td></tr>
+<tr><td>liczebna</td><td>liczebnikiem</td><td>ile? który?</td><td><strong>trzy</strong> książki</td></tr>
+<tr><td>zaimkowa</td><td>zaimkiem</td><td>jaki? który? czyj?</td><td><strong>ten</strong> dom</td></tr>
+<tr><td>imiesłowowa</td><td>imiesłowem przymiotnikowym</td><td>jaki? która?</td><td>uczeń <strong>czytający</strong> książkę</td></tr>
+<tr><td>zdaniem podrzędnym</td><td>zdaniem przydawkowym</td><td>jaki? która?</td><td>dom, <strong>który stoi przy lesie</strong></td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — przydawka to nie zawsze przymiotnik</span>
+<p>Przydawka to funkcja składniowa, a przymiotnik to część mowy. W wyrażeniu <em>dom sąsiada</em> przydawkę wyraża rzeczownik <em>sąsiada</em> w dopełniaczu. W wyrażeniu <em>dom na wzgórzu</em> przydawkę wyraża wyrażenie przyimkowe. Przymiotnik jest tylko jednym z możliwych sposobów wyrażenia przydawki.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: przydawka a dopełnienie</span>
+<p>W wyrażeniu <em>dom sąsiada</em> rzeczownik <em>sąsiada</em> jest przydawką, bo odpowiada na pytanie <em>czyj dom?</em>. W zdaniu <em>Widzę sąsiada</em> wyraz <em>sąsiada</em> jest dopełnieniem, bo odpowiada na pytanie <em>widzę kogo?</em>. Decyduje funkcja w zdaniu, a nie sama forma dopełniacza.</p>
+</div>
+</section>
+<section id="podobne-czesci-mowy">
+<div class="part-heading"><span class="part-num">9</span> Przymiotnik a podobne części mowy</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Wyraz / użycie</th><th>Część mowy</th><th>Dlaczego?</th></tr></thead>
+<tbody>
+<tr><td>szybki samochód</td><td>przymiotnik</td><td>określa rzeczownik „samochód”, odmienia się</td></tr>
+<tr><td>jedzie szybko</td><td>przysłówek</td><td>określa sposób wykonywania czynności; por. G07</td></tr>
+<tr><td>pierwszy zawodnik</td><td>liczebnik porządkowy</td><td>wskazuje kolejność; por. G04</td></tr>
+<tr><td>ten zawodnik</td><td>zaimek</td><td>wskazuje osobę/przedmiot; por. G05</td></tr>
+<tr><td>czytający uczeń</td><td>imiesłów przymiotnikowy</td><td>pochodzi od czasownika i ma jego cechy; por. G06</td></tr>
+<tr><td>czytana książka</td><td>imiesłów przymiotnikowy bierny</td><td>wskazuje na czynność / rezultat czynności</td></tr>
+<tr><td>młody człowiek</td><td>przymiotnik</td><td>określa rzeczownik</td></tr>
+<tr><td>Młody wszedł do sali</td><td>przymiotnik użyty rzeczownikowo</td><td>z kontekstu wiadomo, kogo oznacza</td></tr>
+</tbody></table></div>
+<p><strong>Uwaga o imiesłowach:</strong> w niektórych szkolnych klasyfikacjach omawia się je w ramach form czasownika, a nie jako osobną, równorzędną część mowy. W zadaniach nazywaj je precyzyjnie <strong>imiesłowami przymiotnikowymi</strong>, a nie po prostu przymiotnikami.</p>
+<nie-myl>
+<p><strong>Przymiotnik czy przysłówek?</strong>
+<em>szybki pociąg</em> — przymiotnik, bo określa rzeczownik;
+<em>pociąg jedzie szybko</em> — przysłówek, bo określa czasownik.</p>
+<p><strong>Przymiotnik czy liczebnik porządkowy?</strong>
+<em>młody zawodnik</em> — przymiotnik, bo opisuje cechę;
+<em>pierwszy zawodnik</em> — liczebnik porządkowy, bo wskazuje kolejność.</p>
+<p><strong>Przymiotnik czy zaimek?</strong>
+<em>zielony zeszyt</em> — przymiotnik, bo nazywa cechę;
+<em>ten zeszyt</em> — zaimek, bo wskazuje konkretny przedmiot.</p>
+<p><strong>Przymiotnik czy imiesłów przymiotnikowy?</strong>
+<em>pracowity uczeń</em> — przymiotnik;
+<em>pracujący uczeń</em> — imiesłów przymiotnikowy czynny, bo zachowuje związek z czasownikiem <em>pracować</em>.</p>
+</nie-myl>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">10</span> Najczęstsze błędy — klinika językowa</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">bardziej lepszy</td><td class="col-ok" data-label="Poprawa"><strong>lepszy</strong></td><td data-label="Dlaczego">„lepszy” jest już stopniem wyższym od „dobry”; konstrukcja dubluje stopniowanie</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">najbardziej najładniejszy</td><td class="col-ok" data-label="Poprawa"><strong>najładniejszy</strong></td><td data-label="Dlaczego">nie łączymy dwóch wykładników stopnia najwyższego</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">ładny dziewczyna</td><td class="col-ok" data-label="Poprawa"><strong>ładna dziewczyna</strong></td><td data-label="Dlaczego">brak zgodności rodzaju</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">przyglądam się wysoką wieżę</td><td class="col-ok" data-label="Poprawa"><strong>przyglądam się wysokiej wieży</strong></td><td data-label="Dlaczego">czasownik wymaga celownika; przymiotnik zgadza się z rzeczownikiem</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">szybki biega</td><td class="col-ok" data-label="Poprawa"><strong>szybko biega</strong></td><td data-label="Dlaczego">potrzebny jest przysłówek, bo określamy sposób biegania</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Polski język</td><td class="col-ok" data-label="Poprawa"><strong>polski język</strong></td><td data-label="Dlaczego">zwykły przymiotnik od nazwy własnej piszemy małą literą</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">To nie najgorszy pomysł.</td><td class="col-ok" data-label="Poprawa"><strong>To nienajgorszy pomysł.</strong></td><td data-label="Dlaczego">od 1.01.2026 <em>nie</em> z przymiotnikiem piszemy łącznie także w stopniu najwyższym</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">bardziej drewniany o stole z drewna</td><td class="col-ok" data-label="Poprawa">zwykle nielogiczne w znaczeniu materiałowym</td><td data-label="Dlaczego">w znaczeniu przenośnym może być możliwe; trzeba ustalić, co porównujemy</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„najlepszy” zawsze jest orzecznikiem</td><td class="col-ok" data-label="Poprawa">zależy od zdania</td><td data-label="Dlaczego">„najlepszy wybór” — przydawka; „wybór jest najlepszy” — orzecznik; „wybraliśmy najlepsze” — użycie rzeczownikowe</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">czytający = zwykły przymiotnik</td><td class="col-ok" data-label="Poprawa"><strong>imiesłów przymiotnikowy czynny</strong></td><td data-label="Dlaczego">forma pochodzi od czasownika i zachowuje z nim związek</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">dom sąsiada = dopełnienie</td><td class="col-ok" data-label="Poprawa"><strong>przydawka rzeczowna</strong></td><td data-label="Dlaczego">wyraz określa rzeczownik „dom”, odpowiada na pytanie „czyj dom?”</td></tr></tbody></table>
+</section>
+<section id="kontekst">
+<div class="part-heading"><span class="part-num">11</span> Przykłady w kontekście szkolnym i literackim</div>
+<ol>
+<li><strong>Mały</strong> Książę spotykał różnych bohaterów. — „mały” jest przymiotnikiem w funkcji przydawki; wielka litera w „Książę” wynika z tytułu i konwencji zapisu nazwy bohatera.</li>
+<li>Nemeczek był <strong>odważny</strong> mimo młodego wieku. — „odważny” jest orzecznikiem.</li>
+<li>Bohaterowie podejmowali <strong>trudne</strong> decyzje. — „trudne” jest przydawką.</li>
+<li>To była <strong>najtrudniejsza</strong> próba. — stopień najwyższy; przydawka.</li>
+<li><strong>Młodsi</strong> pomagali <strong>starszym</strong>. — przymiotniki użyte w funkcji rzeczownikowej.</li>
+<li>To było <strong>nienajłatwiejsze</strong> zadanie, lecz dało się je rozwiązać. — od 2026 r. <em>nie</em> z przymiotnikiem także w stopniu najwyższym piszemy łącznie.</li>
+</ol>
+<p>Przykłady są autorskie i służą ćwiczeniu gramatyki; nie są cytatami z lektur.</p>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka — przymiotnik w tytule i nazwie bohatera</span>
+<p>W tytule <em>Mały Książę</em> wyraz <em>Mały</em> jest przymiotnikiem, ale cały zapis funkcjonuje jako tytuł i nazwa bohatera. W analizie gramatycznej nadal można rozpoznać przymiotnik, natomiast w zapisie trzeba zachować zasady wielkiej litery właściwe dla tytułów i nazw własnych.</p>
+</div>
+</section>
+<section id="cwiczenia-a">
+<div class="part-heading"><span class="part-num">12</span> Ćwiczenia — poziom A: rozpoznawanie i forma</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie A1 (4 pkt) — Wskaż przymiotniki</span>
+<p>W zdaniu: „W starym ogrodzie rosły wysokie drzewa, a wąska ścieżka prowadziła do małego domku” wskaż przymiotniki i podaj określane przez nie rzeczowniki.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li><em>starym</em> — ogrodzie;</li>
+<li><em>wysokie</em> — drzewa;</li>
+<li><em>wąska</em> — ścieżka;</li>
+<li><em>małego</em> — domku.</li>
+</ul>
+<p>Po 1 pkt za każde poprawne połączenie.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie A2 (6 pkt) — Dopasuj formę</span>
+<p>Uzupełnij poprawną formą przymiotnika w nawiasie:</p>
+<ol>
+<li>(cierpliwy) nauczycielka;</li>
+<li>rozmawiam z (życzliwy) sąsiadem;</li>
+<li>nie mam (nowy) podręcznika;</li>
+<li>przyglądam się (wysoki) budynkowi;</li>
+<li>(dobry) uczniowie przygotowali projekt;</li>
+<li>(spokojny) dzieci czekały na autobus.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>cierpliwa;</li>
+<li>życzliwym;</li>
+<li>nowego;</li>
+<li>wysokiemu;</li>
+<li>dobrzy;</li>
+<li>spokojne.</li>
+</ol>
+<p>Po 1 pkt za każdą poprawną formę.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie A3 (4 pkt) — Określ kategorię gramatyczną</span>
+<p>W połączeniu „z najlepszymi koleżankami” określ liczbę, rodzaj, przypadek i stopień przymiotnika „najlepszymi”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>liczba mnoga;</li>
+<li>rodzaj niemęskoosobowy;</li>
+<li>narzędnik;</li>
+<li>stopień najwyższy.</li>
+</ul>
+<p>Po 1 pkt za każdy element.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie A4 (5 pkt) — Wybierz poprawną formę</span>
+<ol>
+<li>Widzę (dobry / dobrego) psa.</li>
+<li>Widzę (dobry / dobrego) stół.</li>
+<li>Nie mam (zielony / zielonego) zeszytu.</li>
+<li>Rozmawiam o (trudnym / trudnego) zadaniu.</li>
+<li>Przyglądam się (czerwoną / czerwonej) róży.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>dobrego;</li>
+<li>dobry;</li>
+<li>zielonego;</li>
+<li>trudnym;</li>
+<li>czerwonej.</li>
+</ol>
+<p>Po 1 pkt za każdą poprawną odpowiedź.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie A5 (4 pkt) — Przymiotnik czy przysłówek?</span>
+<p>Wybierz właściwy wyraz:</p>
+<ol>
+<li>To (szybki / szybko) pociąg.</li>
+<li>Pociąg jedzie (szybki / szybko).</li>
+<li>Bohater odpowiedział (spokojny / spokojnie).</li>
+<li>To była (spokojna / spokojnie) odpowiedź.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>szybki;</li>
+<li>szybko;</li>
+<li>spokojnie;</li>
+<li>spokojna.</li>
+</ol>
+<p>Po 1 pkt za każdą poprawną odpowiedź.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie A6 (2 pkt) — Uzasadnij rozpoznanie</span>
+<p>Wyjaśnij różnicę między wyrazami „pierwszy” i „młody” w połączeniach: „pierwszy zawodnik dobiegł do mety” oraz „młody zawodnik dobiegł do mety”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>„Pierwszy” wskazuje kolejność i jest liczebnikiem porządkowym. „Młody” nazywa cechę zawodnika i jest przymiotnikiem. Oba wyrazy określają rzeczownik, ale należą do różnych części mowy.</p>
+<p>1 pkt za poprawne rozpoznanie obu części mowy, 1 pkt za uzasadnienie różnicy.</p>
+</details>
+</div>
+</section>
+<section id="cwiczenia-b">
+<div class="part-heading"><span class="part-num">13</span> Ćwiczenia — poziom B: stopniowanie i ortografia</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie B1 (6 pkt) — Uzupełnij tabelę</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Stopień równy</th><th>Wyższy</th><th>Najwyższy</th></tr></thead>
+<tbody>
+<tr><td>miły</td><td>…</td><td>…</td></tr>
+<tr><td>dobry</td><td>…</td><td>…</td></tr>
+<tr><td>zły</td><td>…</td><td>…</td></tr>
+<tr><td>interesujący</td><td>…</td><td>…</td></tr>
+<tr><td>mały</td><td>…</td><td>…</td></tr>
+<tr><td>trudny</td><td>…</td><td>…</td></tr>
+</tbody></table></div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>miły — milszy — najmilszy;</li>
+<li>dobry — lepszy — najlepszy;</li>
+<li>zły — gorszy — najgorszy;</li>
+<li>interesujący — bardziej interesujący — najbardziej interesujący;</li>
+<li>mały — mniejszy — najmniejszy;</li>
+<li>trudny — trudniejszy — najtrudniejszy.</li>
+</ul>
+<p>Po 1 pkt za każdy poprawny komplet.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie B2 (5 pkt) — Popraw błędy</span>
+<ol>
+<li>To bardziej lepszy pomysł.</li>
+<li>Ona jest najbardziej najodważniejsza w klasie.</li>
+<li>To był nie najłatwiejszy sprawdzian.</li>
+<li>Kupiłem drewniejszy stół niż poprzedni — w znaczeniu: wykonany z drewna.</li>
+<li>Ten problem jest bardziej skomplikowańszy.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>To lepszy pomysł.</li>
+<li>Ona jest najodważniejsza w klasie.</li>
+<li>To był nienajłatwiejszy sprawdzian. (od 2026 r. <em>nie</em> z przymiotnikiem w stopniu najwyższym — łącznie)</li>
+<li>„Ten stół jest wykonany z drewna, a poprzedni z innego materiału” albo inne zdanie wyrażające rzeczywistą różnicę; <em>drewniejszy</em> nie jest naturalną formą w znaczeniu materiałowym.</li>
+<li>Ten problem jest bardziej skomplikowany.</li>
+</ol>
+<p>Po 1 pkt za każdą poprawkę.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie B3 (8 pkt) — Pisownia „nie” po reformie 2026</span>
+<p>Zapisz poprawnie (od 1 stycznia 2026 r.):
+1. nie + miły; 2. nie + milszy; 3. nie + najmilszy; 4. nie + dobry; 5. nie + lepszy; 6. nie + najlepszy; 7. nie + staranny; 8. nie + najstaranniejszy.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>niemiły; niemilszy; nienajmilszy; niedobry; nielepszy; nienajlepszy; niestaranny; nienajstaranniejszy. Po 1 pkt. Od 2026 r. <em>nie</em> z przymiotnikami piszemy łącznie we wszystkich stopniach.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie B4 (3 pkt) — Stopniowalność w kontekście</span>
+<p>Oceń, czy przymiotnik w zdaniu jest stopniowany dosłownie, przenośnie czy nielogicznie. Uzasadnij:</p>
+<ol>
+<li>„Ten drewniany stół jest bardziej drewniany od tamtego”.</li>
+<li>„To najbardziej warszawska kawiarnia w całym zestawieniu”.</li>
+<li>„To jedyny możliwy termin, a tamten jest bardziej jedyny”.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>W dosłownym znaczeniu materiałowym porównanie jest nielogiczne; może działać jako przenośnia, jeśli chodzi np. o wygląd.</li>
+<li>Możliwe użycie przenośne: „najbardziej typowa dla Warszawy”; naturalność zależy od kontekstu.</li>
+<li>Nielogiczne w ścisłym znaczeniu słowa „jedyny”; nie można być „bardziej jedynym”.</li>
+</ol>
+<p>Po 1 pkt za każde poprawne rozstrzygnięcie z uzasadnieniem.</p>
+</details>
+</div>
+</section>
+<section id="cwiczenia-c">
+<div class="part-heading"><span class="part-num">14</span> Ćwiczenia — poziom C: funkcja i analiza zdania</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie C1 (5 pkt) — Przydawka czy orzecznik?</span>
+<p>Określ funkcję wyróżnionego wyrazu:</p>
+<ol>
+<li><strong>Zielony</strong> plecak leżał pod ławką.</li>
+<li>Plecak był <strong>zielony</strong>.</li>
+<li>Rozwiązanie okazało się <strong>najlepsze</strong>.</li>
+<li>Wybraliśmy <strong>najlepsze</strong> z dostępnych rozwiązań.</li>
+<li><strong>Najmłodsi</strong> rozpoczęli występ.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>przydawka;</li>
+<li>orzecznik;</li>
+<li>orzecznik;</li>
+<li>przymiotnik użyty w funkcji rzeczownikowej, pełni funkcję dopełnienia;</li>
+<li>przymiotnik użyty w funkcji rzeczownikowej, pełni funkcję podmiotu.</li>
+</ol>
+<p>Po 1 pkt za każdą odpowiedź.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie C2 (6 pkt) — Analiza formy</span>
+<p>W zdaniu „Nie opowiadaliśmy o trudniejszych zadaniach” określ część mowy, stopień, liczbę, rodzaj, przypadek i funkcję wyrazu „trudniejszych”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>część mowy: przymiotnik;</li>
+<li>stopień: wyższy;</li>
+<li>liczba: mnoga;</li>
+<li>rodzaj: niemęskoosobowy;</li>
+<li>przypadek: miejscownik;</li>
+<li>funkcja: przydawka w grupie „o trudniejszych zadaniach”.</li>
+</ul>
+<p>Po 1 pkt za każdy element.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie C3 (4 pkt) — Znajdź i napraw błędy</span>
+<p>„Wczoraj rozmawiałem z miłą kolegą, a później z najlepszym koleżankami. To był bardziej gorszy dzień niż poprzedni, ale nie najgorszy z całego tygodnia”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>„Wczoraj rozmawiałem z miłym kolegą, a później z najlepszymi koleżankami. To był gorszy dzień niż poprzedni, ale nienajgorszy z całego tygodnia”.</p>
+<ul>
+<li><em>miłą kolegą</em> → <em>miłym kolegą</em>;</li>
+<li><em>najlepszym koleżankami</em> → <em>najlepszymi koleżankami</em>;</li>
+<li><em>bardziej gorszy</em> → <em>gorszy</em>;</li>
+<li><em>nie najgorszy</em> → <em>nienajgorszy</em> (od 2026 r. łącznie także w stopniu najwyższym).</li>
+</ul>
+<p>Po 1 pkt za każdą poprawkę.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie C4 (2 pkt) — Uzasadnij odpowiedź</span>
+<p>Wyjaśnij, dlaczego w zdaniu „Odważna bohaterka podjęła trudną decyzję” wyrazy „odważna” i „trudną” są przymiotnikami, ale mają różne formy.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Oba wyrazy określają rzeczowniki. „Odważna” odnosi się do „bohaterka” w mianowniku liczby pojedynczej, a „trudną” do „decyzję” w bierniku liczby pojedynczej. Przymiotnik dopasowuje formę do rzeczownika i jego funkcji w zdaniu.</p>
+<p>1 pkt za wskazanie różnych rzeczowników i przypadków, 1 pkt za wyjaśnienie zgody.</p>
+</details>
+</div>
+</section>
+<section id="miniarkusz">
+<div class="part-heading"><span class="part-num">15</span> Miniarkusz autorski — 20 punktów</div>
+<p>Poniższy zestaw jest autorskim materiałem treningowym, nie oficjalnym arkuszem CKE.</p>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (0–2 pkt) — Rozpoznanie</span>
+<p>Wypisz dwa przymiotniki ze zdania: „Cicha, deszczowa noc przykryła wąskie uliczki”. Podaj rzeczowniki, które określają.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><em>cicha</em> — noc; <em>deszczowa</em> — noc; <em>wąskie</em> — uliczki. Dowolne dwa poprawne zestawienia, po 1 pkt.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (0–2 pkt) — Odmiana</span>
+<p>Uzupełnij: „Przyglądam się (stary) mostowi i (wysoka) wieży”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><em>staremu mostowi; wysokiej wieży</em>. Po 1 pkt za każdą formę.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (0–3 pkt) — Stopniowanie</span>
+<p>Stopniuj: „dobry”, „mądry”, „skomplikowany”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><em>lepszy — najlepszy; mądrzejszy — najmądrzejszy; bardziej skomplikowany — najbardziej skomplikowany</em>. Po 1 pkt za poprawny komplet.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (0–2 pkt) — Pisownia</span>
+<p>Zapisz poprawnie (zasady od 2026 r.): „nie milszy”, „nie najtrudniejszy”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><em>niemilszy; nienajtrudniejszy</em>. Po 1 pkt za każdą formę.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (0–2 pkt) — Funkcja</span>
+<p>Określ funkcję przymiotnika w zdaniach: „Zimny wiatr wiał od północy” i „Wiatr był zimny”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>„zimny” w pierwszym zdaniu — przydawka; w drugim — orzecznik. Po 1 pkt.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (0–3 pkt) — Części mowy</span>
+<p>Wskaż część mowy wyrazów pogrubionych: „<strong>Szybki</strong> zawodnik biegł <strong>szybko</strong>. <strong>Pierwszy</strong> dotarł do mety”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><em>szybki</em> — przymiotnik; <em>szybko</em> — przysłówek; <em>pierwszy</em> — liczebnik porządkowy użyty rzeczownikowo, pełniący funkcję podmiotu. Po 1 pkt.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 7 (0–3 pkt) — Popraw i uzasadnij</span>
+<p>Popraw zdanie i wyjaśnij dwie poprawki: „To bardziej lepsza i nie najłatwiejsza odpowiedź”.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>„To lepsza i nienajłatwiejsza odpowiedź”.</p>
+<p>Wyjaśnienie:
+- <em>lepsza</em> jest już stopniem wyższym od <em>dobra</em>, więc nie łączymy go z <em>bardziej</em>;
+- <em>nienajłatwiejsza</em> — od 2026 r. <em>nie</em> z przymiotnikiem piszemy łącznie także w stopniu najwyższym.</p>
+<p>1 pkt za poprawę zdania, po 1 pkt za każde uzasadnienie.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 8 (0–3 pkt) — Dwie funkcje</span>
+<p>Ułóż dwa zdania z przymiotnikiem „ciekawy”: raz jako przydawka, raz jako orzecznik. Podkreśl przymiotnik i nazwij funkcję.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Przykładowo: „Przeczytałem <strong>ciekawą</strong> książkę” — przydawka. „Książka była <strong>ciekawa</strong>” — orzecznik.</p>
+<p>Po 1 pkt za każde poprawne zdanie i 1 pkt za poprawne nazwanie obu funkcji.</p>
+</details>
+</div>
+<p><strong>Suma: 20 punktów.</strong></p>
+<h3>Proponowana interpretacja wyniku</h3>
+<ul>
+<li>18–20 pkt: bardzo dobre opanowanie; przejdź do zadań przekrojowych;</li>
+<li>15–17 pkt: dobry poziom; powtórz błędne typy zadań;</li>
+<li>11–14 pkt: utrwal odmianę i stopniowanie;</li>
+<li>0–10 pkt: wróć do procedury rozpoznawania, odmiany i podstawowych ćwiczeń.</li>
+</ul>
+<p>Progi są orientacyjne i nie są oficjalną skalą CKE.</p>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">16</span> Fiszki do powtórki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Czym jest przymiotnik?</span><span class="back">Odmienna część mowy, która najczęściej określa cechę, stan, relację lub przynależność.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Jakie są podstawowe kategorie odmiany przymiotnika?</span><span class="back">Przypadek, liczba i rodzaj.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Z czym zgadza się przymiotnik?</span><span class="back">W typowym związku z rzeczownikiem dopasowuje formę do jego rodzaju, liczby i przypadku.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Jakie są stopnie przymiotnika?</span><span class="back">Równy, wyższy i najwyższy.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Jak stopniuje się „dobry”?</span><span class="back">dobry — lepszy — najlepszy.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Jak stopniuje się opisowo „interesujący”?</span><span class="back">bardziej interesujący — najbardziej interesujący.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Dlaczego „bardziej lepszy” jest błędne?</span><span class="back">Łączy dwa sposoby oznaczania stopnia wyższego.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Jak odróżnić przydawkę od orzecznika?</span><span class="back">Przydawka określa rzeczownik; orzecznik jest częścią orzeczenia imiennego.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czy „młodzi” zawsze jest rzeczownikiem?</span><span class="back">Nie; to może być przymiotnik użyty w funkcji rzeczownika.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czy każdy przymiotnik można stopniować?</span><span class="back">Nie; stopniowalność zależy od znaczenia i kontekstu.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Jak odróżnić „szybki” od „szybko”?</span><span class="back">„Szybki” jest przymiotnikiem, np. szybki samochód; „szybko” jest przysłówkiem, np. jedzie szybko.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czym jest przydawka przymiotna?</span><span class="back">Przydawka wyrażona przymiotnikiem, np. „wysoki dom”.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czym jest przydawka rzeczowna?</span><span class="back">Przydawka wyrażona rzeczownikiem, najczęściej w dopełniaczu, np. „dom sąsiada”.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czym jest przydawka przyimkowa?</span><span class="back">Przydawka wyrażona wyrażeniem przyimkowym, np. „dom na wzgórzu”.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Jak piszemy „nie” z przymiotnikiem od 2026 r.?</span><span class="back">Łącznie we wszystkich stopniach: niemiły, nielepszy, nienajlepszy.</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czy dawna pisownia „nie lepszy” jest błędem na egzaminie?</span><span class="back">W okresie przejściowym (do 2030 r.) CKE uznaje obie pisownie — uczymy nowej (do weryfikacji w komunikacie CKE).</span><span class="card-tag tag-basic">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czym różni się „zmęczony uczeń” od „uczeń był zmęczony”?</span><span class="back">W pierwszym wyrażeniu „zmęczony” jest przydawką, w drugim — orzecznikiem.</span><span class="card-tag tag-understand">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Co to jest przymiotnik użyty rzeczownikowo?</span><span class="back">Przymiotnik samodzielnie oznaczający osobę lub przedmiot, np. „Młodzi pomagali starszym”.</span><span class="card-tag tag-understand">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czym różni się „pierwszy” od „młody”?</span><span class="back">„Pierwszy” to liczebnik porządkowy, „młody” to przymiotnik.</span><span class="card-tag tag-understand">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Co to jest imiesłów przymiotnikowy?</span><span class="back">Forma czasownika mająca cechy przymiotnika, np. „czytający uczeń”, „czytana książka”.</span><span class="card-tag tag-understand">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Dlaczego „najwyższy” nie zawsze oznacza rekord świata?</span><span class="back">Stopień najwyższy odnosi się do konkretnej grupy lub kontekstu.</span><span class="card-tag tag-understand">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czym jest przydawka wyrażona zdaniem podrzędnym?</span><span class="back">Zdaniem przydawkowym, np. „dom, który stoi przy lesie”.</span><span class="card-tag tag-olimpijski">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Czym różni się „dom sąsiada” od „widzę sąsiada”?</span><span class="back">W pierwszym „sąsiada” to przydawka rzeczowna, w drugim — dopełnienie.</span><span class="card-tag tag-olimpijski">przymiotnik</span></button><button class="flashcard" type="button"><span class="front">Dlaczego „bardziej drewniany stół” może być nielogiczne?</span><span class="back">W znaczeniu materiałowym drewno nie ma stopni; porównanie może mieć sens tylko przenośnie.</span><span class="card-tag tag-olimpijski">przymiotnik</span></button></div>
+</section>
+<section id="checklista">
+<div class="part-heading"><span class="part-num">17</span> Checklista przed sprawdzianem</div>
+<checklista>
+<ul>
+<li>[ ] Rozpoznaję przymiotnik w zdaniu, a nie tylko na podstawie pytania.</li>
+<li>[ ] Odróżniam przymiotnik od przysłówka, liczebnika, zaimka i imiesłowu.</li>
+<li>[ ] Dopasowuję rodzaj, liczbę i przypadek.</li>
+<li>[ ] Rozumiem formy biernika: „dobry stół”, ale „dobrego psa”.</li>
+<li>[ ] Tworzę stopień wyższy i najwyższy regularnie, nieregularnie i opisowo.</li>
+<li>[ ] Umiejętnie oceniam, czy stopniowanie ma sens w danym znaczeniu.</li>
+<li>[ ] Piszę „nie” z przymiotnikami łącznie we wszystkich stopniach (zasada od 2026 r.).</li>
+<li>[ ] Odróżniam przydawkę od orzecznika i rozpoznaję przymiotnik użyty rzeczownikowo.</li>
+<li>[ ] Rozpoznaję rodzaje przydawki: przymiotną, rzeczowną, przyimkową, liczebną, zaimkową i zdaniem podrzędnym.</li>
+<li>[ ] Potrafię wyjaśnić, dlaczego moja odpowiedź jest poprawna.</li>
+</ul>
+</checklista>
+</section>
+<section id="mapa">
+<div class="part-heading"><span class="part-num">18</span> Mapa zależności i dalsza nauka</div>
+<ul>
+<li><strong>G01 Rzeczownik:</strong> rodzaj, liczba, przypadek oraz związek przymiotnika z rzeczownikiem.</li>
+<li><strong>G02 Czasownik:</strong> formy <em>być</em>, <em>stać się</em>, <em>zostać</em>, <em>wydawać się</em> jako łączniki orzeczenia imiennego.</li>
+<li><strong>G04 Liczebnik:</strong> odróżnianie liczebników porządkowych od przymiotników.</li>
+<li><strong>G05 Zaimek:</strong> odróżnianie przymiotnika od zaimków wskazujących i dzierżawczych.</li>
+<li><strong>G06 Imiesłowy:</strong> rozpoznawanie imiesłowów przymiotnikowych i pisownia <em>nie</em>.</li>
+<li><strong>G07 Przysłówek:</strong> odróżnianie <em>szybki</em> od <em>szybko</em> i stopniowanie przysłówków.</li>
+<li><strong>G12 Części zdania:</strong> przydawka, orzecznik i funkcje składniowe wyrazu użytego rzeczownikowo.</li>
+<li><strong>G13 Związki wyrazowe:</strong> zgoda przymiotnika z rzeczownikiem.</li>
+<li><strong>L004:</strong> kontekst literacki <em>Chłopców z Placu Broni</em> — łączyć analizę gramatyczną z interpretacją, nie traktować przykładów gramatycznych jako cytatów z utworu.</li>
+</ul>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">19</span> Wykład — przymiotnik od podstaw</div>
+<p>Przymiotnik jest częścią mowy, która pomaga opisać świat. Rzeczownik nazywa osobę, zwierzę, rzecz, miejsce lub pojęcie: <em>uczeń</em>, <em>las</em>, <em>podróż</em>. Przymiotnik dodaje do tej nazwy informację o cesze: <em>pilny uczeń</em>, <em>ciemny las</em>, <em>długa podróż</em>.</p>
+<p>Najprostszy test brzmi: <em>jaki? jaka? jakie?</em> W wyrażeniu <em>ciekawa książka</em> pytamy: <em>jaka książka?</em> — <em>ciekawa</em>. W wyrażeniu <em>wysokie drzewo</em> pytamy: <em>jakie drzewo?</em> — <em>wysokie</em>. Jednak samo pytanie nie wystarcza. Wyraz <em>pierwszy</em> także może odpowiadać na pytanie <em>który?</em>, ale jest liczebnikiem porządkowym, ponieważ wskazuje kolejność. Wyraz <em>ten</em> odpowiada na pytanie <em>który?</em>, ale jest zaimkiem, ponieważ wskazuje konkretny przedmiot.</p>
+<p>Przymiotnik odmienia się razem z rzeczownikiem. Dlatego mówimy: <em>nowy zeszyt</em>, <em>nowa książka</em>, <em>nowe zadanie</em>, <em>nowi uczniowie</em>, <em>nowe książki</em>. Forma przymiotnika zmienia się także przez przypadki: <em>nie mam nowego zeszytu</em>, <em>przyglądam się nowemu zeszytowi</em>, <em>piszę nowym długopisem</em>. To zgoda gramatyczna: przymiotnik „dopasowuje się” do rzeczownika.</p>
+<p>Przymiotnik może pełnić różne funkcje. W wyrażeniu <em>ciekawa książka</em> jest przydawką, bo określa rzeczownik. W zdaniu <em>Książka jest ciekawa</em> jest orzecznikiem, bo wraz z <em>jest</em> orzeka o podmiocie. W zdaniu <em>Wybraliśmy ciekawe</em> przymiotnik jest użyty rzeczownikowo: z kontekstu wiadomo, że chodzi o książki, filmy albo propozycje.</p>
+<p>Przymiotniki można stopniować, gdy porównujemy natężenie cechy: <em>ciekawy — ciekawszy — najciekawszy</em>. Niektóre formy trzeba zapamiętać: <em>dobry — lepszy — najlepszy</em>, <em>zły — gorszy — najgorszy</em>, <em>mały — mniejszy — najmniejszy</em>. Przy dłuższych przymiotnikach częstsze jest stopniowanie opisowe: <em>interesujący — bardziej interesujący — najbardziej interesujący</em>.</p>
+<p>Nie każde porównanie ma sens. Nie porównujemy materiału w znaczeniu dosłownym: <em>bardziej drewniany stół</em> brzmi nielogicznie, jeśli oba stoły są wykonane z drewna. Można natomiast powiedzieć <em>bardziej drewniana gra aktora</em>, jeśli porównujemy sztywność i nienaturalność stylu gry. O stopniowaniu decyduje więc nie tylko forma, lecz także znaczenie.</p>
+</section>
+<section id="mini-wyklady">
+<div class="part-heading"><span class="part-num">20</span> Mini-wykłady „W skrócie”</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — jak nie pomylić przymiotnika z przysłówkiem</span>
+<p>Przymiotnik opisuje rzeczownik: <em>szybki pociąg</em>, <em>spokojna odpowiedź</em>. Przysłówek opisuje czasownik: <em>pociąg jedzie szybko</em>, <em>odpowiedział spokojnie</em>. Jeśli wyraz odpowiada na pytanie <em>jaki? jaka? jakie?</em>, jest zwykle przymiotnikiem. Jeśli odpowiada na pytanie <em>jak?</em>, jest zwykle przysłówkiem.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — przydawka czy orzecznik?</span>
+<p>Znajdź łącznik: <em>jest, był, stał się, wydał się, okazał się</em>. Jeśli przymiotnik stoi po nim i orzeka o podmiocie, jest orzecznikiem: <em>Dom jest duży</em>. Jeśli przymiotnik stoi przy rzeczowniku i określa go, jest przydawką: <em>duży dom</em>.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — jak sprawdzić stopniowanie</span>
+<p>Najpierw ustal, co porównujesz. W zdaniu <em>Ten szlak jest trudniejszy</em> porównujemy trudność dwóch szlaków. W zdaniu <em>Ten stół jest bardziej drewniany</em> porównanie materiału jest nielogiczne. Może mieć sens tylko wtedy, gdy <em>drewniany</em> oznacza styl, wygląd albo sztywność, a nie materiał.</p>
+</div>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">21</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Przymiotnik jako nazwa grupy ludzi</span>
+<p>Zdanie <em>Młodzi pomagali starszym</em> nie zawiera rzeczowników <em>młodzi</em> i <em>starsi</em> w typowym znaczeniu. Są to przymiotniki użyte rzeczownikowo: z kontekstu wiadomo, że chodzi o młodych i starszych ludzi. Taka konstrukcja jest krótka, ale wymaga jasnego kontekstu.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Dlaczego „najwyższy” zależy od grupy?</span>
+<p>Zdanie <em>To najwyższe drzewo w parku</em> nie oznacza, że drzewo jest najwyższe na świecie. Stopień najwyższy zawsze odnosi się do konkretnej grupy: parku, klasy, miasta albo zbioru rzeczy wymienionych w zdaniu.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Jeden przymiotnik, dwie funkcje</span>
+<p>W wyrażeniu <em>zimny wiatr</em> przymiotnik <em>zimny</em> jest przydawką. W zdaniu <em>Wiatr był zimny</em> ten sam przymiotnik jest orzecznikiem. Forma się nie zmienia, ale zmienia się funkcja składniowa.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Przydawka może być całym zdaniem</span>
+<p>W zdaniu <em>Dom, który stoi przy lesie, jest stary</em> przydawkę wyraża zdanie podrzędne <em>który stoi przy lesie</em>. Odpowiada na pytanie: <em>jaki dom?</em> To pokazuje, że przydawka to funkcja składniowa, a nie tylko przymiotnik.</p>
+</div>
+</section>
+<section id="pary">
+<div class="part-heading"><span class="part-num">22</span> Pary pojęć mylonych</div>
+<nie-myl>
+<p><strong>Przymiotnik czy liczebnik porządkowy?</strong>
+<em>młody zawodnik</em> — przymiotnik, bo opisuje cechę;
+<em>pierwszy zawodnik</em> — liczebnik porządkowy, bo wskazuje kolejność.</p>
+<p><strong>Przymiotnik czy zaimek dzierżawczy?</strong>
+<em>matczyna troska</em> — przymiotnik, bo opisuje rodzaj relacji;
+<em>moja troska</em> — zaimek dzierżawczy, bo wskazuje posiadacza.</p>
+<p><strong>Przymiotnik czy przysłówek?</strong>
+<em>ciekawa książka</em> — przymiotnik;
+<em>ciekawie opowiedziana historia</em> — przysłówek.</p>
+<p><strong>Przydawka czy dopełnienie?</strong>
+<em>dom sąsiada</em> — przydawka rzeczowna, bo odpowiada na pytanie <em>czyj dom?</em>;
+<em>widzę sąsiada</em> — dopełnienie, bo odpowiada na pytanie <em>widzę kogo?</em>.</p>
+<p><strong>Przymiotnik czy imiesłów przymiotnikowy?</strong>
+<em>zmęczony uczeń</em> — imiesłów przymiotnikowy bierny;
+<em>cierpliwy uczeń</em> — przymiotnik.</p>
+</nie-myl>
+</section>
+<section id="olimpijska">
+<div class="part-heading"><span class="part-num">23</span> Warstwa olimpijska — trudne przypadki</div>
+<details class="adv"><summary>Dla olimpijczyka — granice pojęć <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Przymiotnik to część mowy, a przydawka to funkcja składniowa. Nie każdy przymiotnik jest przydawką: w zdaniu <em>Dom jest duży</em> przymiotnik <em>duży</em> pełni funkcję orzecznika. Nie każda przydawka jest też wyrażona przymiotnikiem: w <em>dom sąsiada</em> przydawkę wyraża rzeczownik w dopełniaczu.</p>
+<p>W analizie olimpijskiej najpierw ustal funkcję wyrazu w zdaniu, a dopiero potem nazwij część mowy. Pytanie <em>jaki?</em> może prowadzić do przymiotnika, liczebnika porządkowego, zaimka albo zdania przydawkowego.</p>
+<p>Szczególnie trudne są wyrażenia typu <em>Młodzi pomagali starszym</em>. Tu przymiotniki są użyte rzeczownikowo: oznaczają grupy ludzi, ale zachowują odmianę przymiotnikową. Nie nazywaj ich automatycznie rzeczownikami.</p>
+<p>W zadaniach z <em>nie</em> pamiętaj o zasadzie z 2026 r.: z przymiotnikami piszemy łącznie we wszystkich stopniach (<em>nielepszy, nienajlepszy</em>). W starszych tekstach i w cytatach spotkasz dawny zapis rozdzielny (<em>nie lepszy</em>) — rozpoznaj go jako normę historyczną.</p>
+</div></details>
+<details class="adv"><summary>Dla olimpijczyka — przydawka czy dopełnienie? <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Porównaj dwa zdania:</p>
+<ol>
+<li><em>To dom sąsiada.</em></li>
+<li><em>Widzę sąsiada.</em></li>
+</ol>
+<p>W pierwszym zdaniu <em>sąsiada</em> odpowiada na pytanie <em>czyj dom?</em> i jest przydawką rzeczowną. W drugim <em>sąsiada</em> odpowiada na pytanie <em>widzę kogo?</em> i jest dopełnieniem.</p>
+<p>Ta sama forma gramatyczna — dopełniacz — może więc pełnić różne funkcje. O rozstrzygnięciu decyduje relacja z innym wyrazem i pytanie składniowe, a nie sama końcówka.</p>
+</div></details>
+<details class="adv"><summary>Dla olimpijczyka — stopniowanie a znaczenie <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Nie każda forma stopnia wyższego oznacza porównanie dwóch rzeczywistych przedmiotów. W zdaniu <em>To najbardziej warszawska kawiarnia</em> nie porównujemy kawiarni z Warszawą, lecz oceniamy stopień typowości jej stylu lub atmosfery.</p>
+<p>W zadaniu konkursowym zawsze ustal, co jest porównywane: cecha, materiał, pochodzenie, styl, typowość czy natężenie uczucia. Jeśli porównanie nie ma logicznego punktu odniesienia, odpowiedź „stopniowanie nielogiczne” jest uzasadniona.</p>
+</div></details>
+</section>
+<section id="zadania-olimpijskie">
+<div class="part-heading"><span class="part-num">24</span> Zadania olimpijskie</div>
+<details class="adv"><summary>Zadanie O1 (3 pkt) — Rozstrzygnij funkcję <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Określ funkcję wyróżnionego wyrazu i uzasadnij odpowiedź:</p>
+<ol>
+<li><strong>Zielony</strong> plecak leżał na ławce.</li>
+<li>Plecak był <strong>zielony</strong>.</li>
+<li>Wybraliśmy <strong>zielone</strong>.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><em>zielony</em> — przydawka, bo określa rzeczownik <em>plecak</em>.</li>
+<li><em>zielony</em> — orzecznik, bo wraz z <em>był</em> orzeka o podmiocie.</li>
+<li><em>zielone</em> — przymiotnik użyty rzeczownikowo, pełni funkcję dopełnienia.</li>
+</ol>
+<p>Po 1 pkt za każdą poprawną funkcję.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O2 (3 pkt) — Przydawka czy dopełnienie? <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Określ funkcję wyróżnionego wyrazu:</p>
+<ol>
+<li>To książka <strong>autora</strong>.</li>
+<li>Spotkałem <strong>autora</strong>.</li>
+<li>Rozmawiałem o <strong>autorze</strong>.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><em>autora</em> — przydawka rzeczowna, odpowiada na pytanie <em>czyja książka?</em></li>
+<li><em>autora</em> — dopełnienie, odpowiada na pytanie <em>spotkałem kogo?</em></li>
+<li><em>autorze</em> — dopełnienie, odpowiada na pytanie <em>rozmawiałem o kim?</em></li>
+</ol>
+<p>Po 1 pkt za każdą poprawną funkcję.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O3 (3 pkt) — Znajdź błąd w analizie <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń napisał: „W zdaniu <em>Pierwszy dotarł do mety</em> wyraz <em>pierwszy</em> jest przymiotnikiem, ponieważ odpowiada na pytanie <em>który?</em>”.</p>
+<p>Wyjaśnij, dlaczego ta analiza jest niepełna, i podaj poprawną odpowiedź.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Pytanie <em>który?</em> nie wystarcza. <em>Pierwszy</em> wskazuje kolejność, więc jest liczebnikiem porządkowym. W tym zdaniu jest użyty rzeczownikowo i pełni funkcję podmiotu.</p>
+<p>1 pkt za wskazanie liczebnika porządkowego, 1 pkt za wskazanie funkcji podmiotu, 1 pkt za wyjaśnienie, że samo pytanie nie rozstrzyga części mowy.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O4 (4 pkt) — Analiza tekstu <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>W zdaniu: „W starym, zapomnianym ogrodzie rosły wysokie drzewa, a wąska ścieżka prowadziła do małego domku” wskaż wszystkie przydawki, określ ich rodzaj i wyjaśnij, jaki nastrój tworzą.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li><em>starym</em> — przydawka przymiotna, określa <em>ogrodzie</em>;</li>
+<li><em>zapomnianym</em> — przydawka imiesłowowa, określa <em>ogrodzie</em>;</li>
+<li><em>wysokie</em> — przydawka przymiotna, określa <em>drzewa</em>;</li>
+<li><em>wąska</em> — przydawka przymiotna, określa <em>ścieżkę</em>;</li>
+<li><em>małego</em> — przydawka przymiotna, określa <em>domku</em>.</li>
+</ul>
+<p>Przydawki budują nastrój ciszy, samotności i lekkiego niepokoju.</p>
+<p>Po 1 pkt za poprawne wskazanie przydawek, 1 pkt za rodzaje, 1 pkt za nastrój, 1 pkt za uzasadnienie.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O5 (4 pkt) — Pułapka ze stopniowaniem <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Oceń poprawność i wyjaśnij znaczenie zdań:</p>
+<ol>
+<li>„To najbardziej warszawska kawiarnia w mieście”.</li>
+<li>„Ten stół jest bardziej drewniany niż tamten”.</li>
+<li>„To bardziej jedyny termin niż tamten”.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>Poprawne przenośnie: porównujemy stopień typowości dla Warszawy, nie pochodzenie geograficzne.</li>
+<li>Nielogiczne w znaczeniu materiałowym; może mieć sens tylko przenośnie, np. przy ocenie wyglądu lub stylu.</li>
+<li>Nielogiczne: <em>jedyny</em> nie ma stopni w ścisłym znaczeniu.</li>
+</ol>
+<p>Po 1 pkt za każdą ocenę i 1 pkt za uzasadnienie.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O6 (4 pkt) — Przekształcanie i uzasadnienie <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Przekształć zdanie tak, aby przymiotnik pełnił inną funkcję, i nazwij obie funkcje:</p>
+<p><em>Zielony plecak leżał na ławce.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Przykład: <em>Plecak był zielony.</em></p>
+<p>W pierwszym zdaniu <em>zielony</em> jest przydawką. W drugim — orzecznikiem. Zachowano cechę koloru, ale zmieniła się funkcja składniowa przymiotnika.</p>
+<p>Po 1 pkt za poprawne przekształcenie, 1 pkt za nazwanie funkcji w zdaniu wyjściowym, 1 pkt za nazwanie funkcji w zdaniu po przekształceniu, 1 pkt za uzasadnienie.</p>
+</details>
+</div></details>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">25</span> Test kontrolny</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="„Szybki” określa rzeczownik „samochód” i dopasowuje się do jego formy."><h5>1. Który wyraz jest przymiotnikiem w połączeniu „szybki samochód”?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">szybki</button><button type="button" class="quiz-opt" data-a="1">samochód</button><button type="button" class="quiz-opt" data-a="2">szybko</button><button type="button" class="quiz-opt" data-a="3">jedzie</button></div></div><div class="quiz-q" data-ok="0" data-fb="Przymiotnik występuje po łączniku „jest” i orzeka o podmiocie."><h5>2. Jaką funkcję pełni przymiotnik „ciekawa” w zdaniu „Książka jest ciekawa”?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">orzecznik</button><button type="button" class="quiz-opt" data-a="1">przydawka</button><button type="button" class="quiz-opt" data-a="2">podmiot</button><button type="button" class="quiz-opt" data-a="3">dopełnienie</button></div></div><div class="quiz-q" data-ok="0" data-fb="Rzeczownik „sąsiada” w dopełniaczu określa rzeczownik „dom”."><h5>3. Które połączenie zawiera przydawkę rzeczowną?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">dom sąsiada</button><button type="button" class="quiz-opt" data-a="1">wysoki dom</button><button type="button" class="quiz-opt" data-a="2">dom na wzgórzu</button><button type="button" class="quiz-opt" data-a="3">trzy domy</button></div></div><div class="quiz-q" data-ok="0" data-fb="Od 2026 r. &lt;em&gt;nie&lt;/em&gt; z przymiotnikiem piszemy łącznie także w stopniu wyższym."><h5>4. Która forma jest poprawna (zasady od 2026 r.) w zdaniu „To ___ rozwiązanie”?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">nielepsze</button><button type="button" class="quiz-opt" data-a="1">nie lepsze</button><button type="button" class="quiz-opt" data-a="2">bardziej lepsze</button><button type="button" class="quiz-opt" data-a="3">naj bardziej lepsze</button></div></div><div class="quiz-q" data-ok="0" data-fb="„Dobry” stopniuje się nieregularnie: dobry — lepszy — najlepszy."><h5>5. Który stopień jest poprawny od przymiotnika „dobry”?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">najlepszy</button><button type="button" class="quiz-opt" data-a="1">najbardziej dobry</button><button type="button" class="quiz-opt" data-a="2">dobrejszy</button><button type="button" class="quiz-opt" data-a="3">najbardziej lepszy</button></div></div><div class="quiz-q" data-ok="0" data-fb="„Czytający” pochodzi od czasownika „czytać” i ma cechy przymiotnika."><h5>6. Który wyraz jest imiesłowem przymiotnikowym?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">czytający</button><button type="button" class="quiz-opt" data-a="1">ciekawy</button><button type="button" class="quiz-opt" data-a="2">szybko</button><button type="button" class="quiz-opt" data-a="3">pierwszy</button></div></div><div class="quiz-q" data-ok="0" data-fb="Wyrażenie „na wzgórzu” określa rzeczownik „dom”."><h5>7. Czym jest przydawka w wyrażeniu „dom na wzgórzu”?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">wyrażeniem przyimkowym</button><button type="button" class="quiz-opt" data-a="1">przymiotnikiem</button><button type="button" class="quiz-opt" data-a="2">liczebnikiem</button><button type="button" class="quiz-opt" data-a="3">zaimkiem</button></div></div><div class="quiz-q" data-ok="0" data-fb="„Młodzi” i „starszym” oznaczają grupy ludzi, choć formalnie są przymiotnikami."><h5>8. Które zdanie zawiera przymiotnik użyty rzeczownikowo?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Młodzi pomagali starszym.</button><button type="button" class="quiz-opt" data-a="1">Młody uczeń pomagał starszemu panu.</button><button type="button" class="quiz-opt" data-a="2">Młody chłopiec był pomocny.</button><button type="button" class="quiz-opt" data-a="3">Młoda dziewczyna pomagała sąsiadom.</button></div></div><div class="quiz-q" data-ok="0" data-fb="„Lepszy” jest już stopniem wyższym, więc nie łączymy go z „bardziej”."><h5>9. Które zdanie zawiera błąd w stopniowaniu?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">To bardziej lepszy pomysł.</button><button type="button" class="quiz-opt" data-a="1">To lepszy pomysł.</button><button type="button" class="quiz-opt" data-a="2">To najlepszy pomysł.</button><button type="button" class="quiz-opt" data-a="3">To bardziej skomplikowany problem.</button></div></div><div class="quiz-q" data-ok="0" data-fb="Liczebnik „trzy” określa liczbę książek."><h5>10. Które połączenie zawiera przydawkę liczebną?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">trzy książki</button><button type="button" class="quiz-opt" data-a="1">ciekawa książka</button><button type="button" class="quiz-opt" data-a="2">dom sąsiada</button><button type="button" class="quiz-opt" data-a="3">ta książka</button></div></div><div class="quiz-q" data-ok="0" data-fb="Zdanie „który stoi przy lesie” odpowiada na pytanie „jaki dom?”."><h5>11. Które zdanie zawiera przydawkę wyrażoną zdaniem podrzędnym?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Dom, który stoi przy lesie, jest stary.</button><button type="button" class="quiz-opt" data-a="1">Stary dom stoi przy lesie.</button><button type="button" class="quiz-opt" data-a="2">Dom sąsiada jest stary.</button><button type="button" class="quiz-opt" data-a="3">Dom na wzgórzu jest stary.</button></div></div><div class="quiz-q" data-ok="0" data-fb="Czasownik „przyglądam się” wymaga celownika, a przymiotnik zgadza się z rzeczownikiem."><h5>12. Które zdanie ma poprawną zgodność przymiotnika z rzeczownikiem?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Przyglądam się wysokiej wieży.</button><button type="button" class="quiz-opt" data-a="1">Przyglądam się wysoką wieżę.</button><button type="button" class="quiz-opt" data-a="2">Przyglądam się wysoki wieża.</button><button type="button" class="quiz-opt" data-a="3">Przyglądam się wysokiemu wieża.</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">26</span> Słownik pojęć</div>
+<dl><div class="def-item"><dt>Przymiotnik</dt><dd>odmienna część mowy, która najczęściej określa cechę, stan, relację lub przynależność.</dd></div><div class="def-item"><dt>Przydawka</dt><dd>część zdania określająca rzeczownik, zaimek rzeczowny lub wyraz użyty w funkcji rzeczownika.</dd></div><div class="def-item"><dt>Przydawka przymiotna</dt><dd>przydawka wyrażona przymiotnikiem, np. „wysoki dom”.</dd></div><div class="def-item"><dt>Przydawka rzeczowna</dt><dd>przydawka wyrażona rzeczownikiem, najczęściej w dopełniaczu, np. „dom sąsiada”.</dd></div><div class="def-item"><dt>Przydawka przyimkowa</dt><dd>przydawka wyrażona wyrażeniem przyimkowym, np. „dom na wzgórzu”.</dd></div><div class="def-item"><dt>Przydawka liczebna</dt><dd>przydawka wyrażona liczebnikiem, np. „trzy książki”.</dd></div><div class="def-item"><dt>Przydawka zaimkowa</dt><dd>przydawka wyrażona zaimkiem, np. „ten dom”.</dd></div><div class="def-item"><dt>Przydawka imiesłowowa</dt><dd>przydawka wyrażona imiesłowem przymiotnikowym, np. „uczeń czytający książkę”.</dd></div><div class="def-item"><dt>Orzecznik</dt><dd>część orzeczenia imiennego, która orzeka o podmiocie, np. „Dom jest duży”.</dd></div><div class="def-item"><dt>Przymiotnik użyty rzeczownikowo</dt><dd>przymiotnik samodzielnie oznaczający osobę lub przedmiot, np. „Młodzi pomagali starszym”.</dd></div><div class="def-item"><dt>Stopień równy</dt><dd>podstawowa forma przymiotnika, np. „wysoki”.</dd></div><div class="def-item"><dt>Stopień wyższy</dt><dd>forma porównująca większe natężenie cechy, np. „wyższy”.</dd></div><div class="def-item"><dt>Stopień najwyższy</dt><dd>forma wskazująca największe natężenie cechy w określonej grupie, np. „najwyższy”.</dd></div><div class="def-item"><dt>Stopniowanie opisowe</dt><dd>tworzenie stopnia wyższego i najwyższego za pomocą „bardziej” i „najbardziej”.</dd></div><div class="def-item"><dt>Zgoda gramatyczna</dt><dd>dopasowanie form przymiotnika i rzeczownika pod względem rodzaju, liczby i przypadku.</dd></div><div class="def-item"><dt>Imiesłów przymiotnikowy</dt><dd>forma czasownika mająca cechy przymiotnika, np. „czytający”, „czytana”.</dd></div></dl>
+</section>
+<section id="zrodla">
+<div class="part-heading"><span class="part-num">27</span> Źródła i status kontroli</div>
+<ul>
+<li>Materiał bazowy: <code>POL.02.G03.przymiotnik.md</code> — wcześniejsza wersja zachowana w historii repozytorium / odczytana przed rozbudową.</li>
+<li>Materiały porównawcze: <code>polski/plany/wypelnienia/G03_Przymiotnik_WYPELNIONY.md</code>, <code>polski/POLSKI_PODSTAWA_PLUS_v7.11.md</code>, lekcje sąsiednie G01/G02/G04/G06/G07/G12 oraz HTML L004 w dwóch wersjach.</li>
+<li>Zasady pisowni i normy językowe: aktualne „Zasady pisowni i interpunkcji polskiej” oraz komunikaty Rady Języka Polskiego przy Prezydium PAN — zasada łącznej pisowni <em>nie</em> z przymiotnikami we wszystkich stopniach obowiązuje od 1 stycznia 2026 r. (komunikat RJP; zob. §6).</li>
+<li>Wersja 3.1 jest opracowaniem edukacyjnym. Klucze i podział punktów są autorskie; wymagają niezależnego przeglądu polonistycznego przed oznaczeniem jako zatwierdzone.</li>
+<li>Warstwa olimpijska została opracowana uniwersalnie; przed użyciem należy zestawić ją z regulaminem i wymaganiami konkretnego konkursu.</li>
+</ul>
+<details class="lk-log"><summary>AUDYT W1 — wynik (2026-10-09, GPT-6)</summary>
+<h3>AUDYT W1 — wynik (2026-10-09, GPT-6)</h3>
+<p><strong>Zakres kontroli:</strong> rozpoznawanie przymiotników, zgoda gramatyczna, stopniowanie, użycia rzeczownikowe, funkcje składniowe oraz pisownia „nie” według zasad obowiązujących od 1.01.2026.</p>
+<p><strong>Ustalenia:</strong>
+- Zachowano rozróżnienie przymiotnika i przysłówka (<em>szybki samochód — jedzie szybko</em>) oraz części mowy i części zdania.
+- Doprecyzowano, że nie każdy przymiotnik jest stopniowalny; zależy to od znaczenia i kontekstu.
+- Stopniowanie nieregularne (<em>dobry — lepszy — najlepszy</em>) oraz opisowe przedstawiono osobno; konstrukcje typu <em>bardziej lepszy</em> niepoprawnie dublują wykładniki stopnia.
+- Reguły pisowni „nie” z przymiotnikami w stopniu wyższym i najwyższym należy stosować zgodnie z nowymi zasadami ortograficznymi, a w zadaniach egzaminacyjnych uwzględniać okres przejściowy wskazany przez CKE.
+- Ćwiczenia i punktacja są autorskie i treningowe; nie są oficjalną punktacją CKE.</p>
+<p><strong>Do dalszej kontroli:</strong> niezależna korekta wszystkich przykładów i kluczy oraz sprawdzenie zasad bezpośrednio w aktualnym tekście RJP/CKE.</p>
+<p><strong>Status:</strong> kontrola redakcyjno-merytoryczna wykonana w podanym zakresie; nie jest to pełna recenzja ekspercka.</p>
+<h3>AUDYT W1 — ULEPSZ z warstwą olimpijską, Perplexity (2026-10-11)</h3>
+<p>Surowa odpowiedź: <code>polski/plany/audyty/ULEPSZ_PPLX_G03_cz1…4_2026-10-11.md</code> (nowa rozmowa, paczka <code>AI_ULEPSZ_POL_G03_przymiotnik</code>, odpowiedź w 4 częściach). Pierwsza próba (ucięta przy wklejaniu) — <code>ULEPSZ_PPLX_G03_czesc1_2026-10-11.md</code>.</p>
+<p><strong>Przyjęte:</strong> pełna nowa wersja §0–27 — karty „W skrócie” (cztery pytania, zgoda, trzy drogi stopniowania, trzy funkcje, przydawka to nie zawsze przymiotnik), ciekawostki (drewniana gra aktora, Uniwersytet Warszawski, Mały Książę, najwyższe drzewo w parku, przydawka-zdanie), §8 rodzaje przydawki z pułapką przydawka/dopełnienie, tabela „przymiotnik a podobne części mowy”, klinika (10), ćwiczenia A1–C4 i miniarkusz w kartach z punktacją, 24 fiszki, checklista, wykład „od podstaw” (§19), mini-wykłady (§20), pary mylonych pojęć, warstwa olimpijska (3 karty + O1–O6), test 12 pytań, słownik 16 haseł; poprawki: „O przypadka” → „O przypadku” w mini-wykładzie, <em>zmęczony</em> jako imiesłów bierny, klucz Z6 (<em>pierwszy</em> — liczebnik porządkowy w funkcji podmiotu), punktacja zad. 8.</p>
+<p><strong>Poprawione względem propozycji (BŁĄD MODELU):</strong> Perplexity uznał zasadę łącznej pisowni <em>nie</em> z przymiotnikami w stopniu wyższym i najwyższym od 1.01.2026 za „fałszywą informację” i przepisał §6 oraz klucze na dawną regułę (<em>nie lepsze, nie najłatwiejsze</em>). Zasada obowiązuje (uchwała RJP, w mocy od 1.01.2026; np. <em>nienajlepiej, nienajstaranniej</em>) — przywrócono §6 z poprzedniej wersji, zadanie B3 „po reformie 2026”, klucze B2(3), C3, Z4, Z7, przykład 6 w §11, dwie fiszki, punkt checklisty, akapit olimpijski i pytanie testu.</p>
+<p><strong>Nieprzyjęte:</strong> model ponownie mówi „O przypadku decyduje” w §4.1 (literówka z oryginału) — poprawione na „O przypadku”; propozycje grafik „Przymiotnik pod lupą”, „Przydawka czy orzecznik?”, „skala stopniowania” — pomysły (G12 ma już wykres zdania).</p>
+</details>
+</section>
+
+</main>
+<script>
+/* pol-viz.js — grafiki interaktywne lekcji języka polskiego (wklejane przez narzedzia/lekcja_html.py -p pol).
+   Użycie w md:  @viz <id> {opcja="wartość"} | Tytuł | podpis   + obowiązkowa linia @opis.
+   Katalog: polski/szablon/POL_KATALOG_GRAFIK.md. Nowa grafika: POL.define('id',{opis,mount(el,opt)}).
+   Zasady: działa offline, na telefonie (od 360 px), klawiatura (Tab/Enter), kolory z motywu + stałe kolory części zdania. */
+(function(){
+if(window.POL)return;var POL=window.POL={},REG={};
+POL.define=function(id,d){REG[id]=d};
+function H(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+function btn(t,f,c){var b=H('button','pv-btn'+(c?' '+c:''),t);b.type='button';if(f)b.onclick=f;return b}
+POL.H=H;POL.btn=btn;
+var css=H('style');css.id='pol-viz-css';css.textContent=
+'.pv{font:15px/1.5 Inter,system-ui,sans-serif;color:var(--text,#1f2328)}.pv *{box-sizing:border-box}'+
+'.pv-bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 10px}.pv-bar b{margin-right:4px}'+
+'.pv-btn{font:600 13.5px/1.2 Inter,system-ui,sans-serif;padding:7px 11px;border-radius:9px;border:1px solid var(--border,#d0d7de);background:var(--surface,#fff);color:inherit;cursor:pointer;min-height:36px}'+
+'.pv-btn:hover{border-color:var(--accent,#7a2848)}.pv-btn.on{background:var(--accent,#7a2848);border-color:var(--accent,#7a2848);color:#fff}.pv-btn:focus-visible{outline:3px solid var(--accent-glow,rgba(122,40,72,.3));outline-offset:2px}'+
+'.pv-info{margin-top:10px;padding:10px 12px;border-left:4px solid var(--accent,#7a2848);background:var(--surface-soft,#f6f8fa);border-radius:8px;font-size:14px;line-height:1.55}'+
+'.pv-info.ok{border-left-color:#1f883d}.pv-info.bad{border-left-color:#cf222e}'+
+'.pv-zd{display:flex;flex-wrap:wrap;gap:24px 4px;align-items:flex-end;font:500 20px/1.3 Georgia,"Times New Roman",serif;padding:14px 6px 18px;background:var(--surface,#fff);border:1px solid var(--border,#d0d7de);border-radius:12px;justify-content:center}'+
+'.pv-w{padding:2px 4px 7px;border-radius:6px;cursor:pointer;position:relative;background-repeat:no-repeat;background-position:0 100%;background-size:100% 7px;border:1px dashed transparent}'+
+'.pv-w:hover{background-color:var(--accent-soft,#f6e9ee)}.pv-w.dot{font-weight:400}.pv-w:focus-visible{outline:2px solid var(--accent,#7a2848)}'+
+'.pv-w.ok{background-color:#dafbe1}.pv-w.zle{background-color:#ffebe9;border-color:#cf222e}'+
+'.pv-w small{position:absolute;left:50%;transform:translateX(-50%);top:-15px;font:600 10.5px/1 Inter,system-ui,sans-serif;white-space:nowrap;color:var(--text-soft,#57606a)}'+
+'.pv-leg{display:flex;flex-wrap:wrap;gap:6px}.pv-leg .pv-btn{display:flex;flex-direction:column;align-items:center;gap:3px}.pv-leg i{display:block;width:44px;height:7px;background-repeat:no-repeat;background-size:100% 7px}'+
+'.pv-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;font-size:14px;margin-bottom:6px}'+
+'.pv-tab{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}.pv-tab td,.pv-tab th{padding:5px 7px;border-bottom:1px solid var(--border,#d0d7de);text-align:left}'+
+'.pv-svg{width:100%;height:auto;display:block}.pv-svg text{font-family:Inter,system-ui,sans-serif}'+
+'@media(max-width:520px){.pv-zd{font-size:17px}.pv-btn{padding:6px 9px;font-size:13px}.pv-tab{font-size:12.5px}.pv-tab td,.pv-tab th{padding:4px 3px}}.pv-hint{display:none;font-size:12px;color:var(--text-soft,#57606a);text-align:center}@media(max-width:520px){.pv-hint{display:block}}.pv-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.pv-scroll .pv-svg{min-width:min(540px,100%)}@media(max-width:520px){.pv-scroll .pv-svg{min-width:520px}}';
+document.head.appendChild(css);
+
+/* ---------- części zdania: role, kolory, podkreślenia szkolne ---------- */
+var R={P:{n:'podmiot',k:'#0969da',kr:'kto? co?'},O:{n:'orzeczenie',k:'#cf222e',kr:'co robi? co się z nim dzieje? jaki jest? kim jest?'},
+ Prz:{n:'przydawka',k:'#1a7f37',kr:'jaki? który? czyj? ile? z czego?'},D:{n:'dopełnienie',k:'#8250df',kr:'pytania przypadków zależnych: kogo? czego? komu? kim? czym? o czym?…'},
+ Ok:{n:'okolicznik',k:'#bc4c00',kr:'gdzie? kiedy? jak? dlaczego? po co? w jakim stopniu?'}};
+var ROLE=['P','O','Prz','D','Ok'];
+function svgUrl(s){return 'url("data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="7" viewBox="0 0 24 7">'+s+'</svg>')+'")'}
+function linia(r){var k=R[r].k;return{   // podkreślenia jak w szkole: podmiot —, orzeczenie ═, przydawka ~, dopełnienie - - -, okolicznik -·-·
+ P:svgUrl('<line x1="0" y1="5" x2="24" y2="5" stroke="'+k+'" stroke-width="2"/>'),
+ O:svgUrl('<line x1="0" y1="2" x2="24" y2="2" stroke="'+k+'" stroke-width="1.6"/><line x1="0" y1="6" x2="24" y2="6" stroke="'+k+'" stroke-width="1.6"/>'),
+ Prz:svgUrl('<path d="M0 4 Q3 1 6 4 T12 4 T18 4 T24 4" fill="none" stroke="'+k+'" stroke-width="1.8"/>'),
+ D:svgUrl('<line x1="1" y1="5" x2="9" y2="5" stroke="'+k+'" stroke-width="2"/><line x1="13" y1="5" x2="21" y2="5" stroke="'+k+'" stroke-width="2"/>'),
+ Ok:svgUrl('<line x1="1" y1="5" x2="10" y2="5" stroke="'+k+'" stroke-width="2"/><circle cx="15" cy="5" r="1.4" fill="'+k+'"/><line x1="19" y1="5" x2="24" y2="5" stroke="'+k+'" stroke-width="2"/>')}[r]}
+POL.R=R;POL.linia=linia;
+function podkresl(e,r){e.style.backgroundImage=r?linia(r):'';e.style.backgroundRepeat=r==='O'||r==='P'?'no-repeat':'repeat-x';e.style.backgroundSize=r==='O'||r==='P'?'100% 7px':'24px 7px'}
+
+/* Zdania: [tekst, rola, wyraz nadrzędny, pytanie, grupa?]; uwaga = zdanie pod rozwiązaniem. Przykłady to parafrazy sytuacji z lektur. */
+var ZD=[
+ {z:'Wczoraj młodsza siostra szybko przeczytała ciekawą książkę w pokoju.',w:[['Wczoraj','Ok','przeczytała','kiedy?'],['młodsza','Prz','siostra','która?'],['siostra','P','przeczytała','kto?'],['szybko','Ok','przeczytała','jak?'],['przeczytała','O'],['ciekawą','Prz','książkę','jaką?'],['książkę','D','przeczytała','co?'],['w pokoju','Ok','przeczytała','gdzie?']],u:'Wzór rozbioru z lekcji: najpierw orzeczenie, potem podmiot, potem określenia zależne.'},
+ {n:1,z:'Mały Książę uważnie słuchał opowieści lisa.',l:'„Mały Książę”',w:[['Mały Książę','P','słuchał','kto?'],['uważnie','Ok','słuchał','jak?'],['słuchał','O'],['opowieści','D','słuchał','czego?'],['lisa','Prz','opowieści','czyjej?']],u:'„Mały Książę” to imię bohatera (nazwa własna) — cała nazwa jest podmiotem. „Lisa” określa rzeczownik „opowieści”, więc jest przydawką, nie dopełnieniem.'},
+ {z:'Skąpy Scrooge liczył pieniądze w zimnym kantorze.',l:'„Opowieść wigilijna”',w:[['Skąpy','Prz','Scrooge','jaki?'],['Scrooge','P','liczył','kto?'],['liczył','O'],['pieniądze','D','liczył','co?'],['w','Ok','liczył','gdzie?',1],['zimnym','Prz','kantorze','w jakim?'],['kantorze','Ok','liczył','gdzie?',1]],u:'„W kantorze” to jeden okolicznik miejsca (wyrażenie przyimkowe), a „zimnym” — przydawka wewnątrz niego.'},
+ {z:'Nie było Nemeczka na Placu Broni.',l:'„Chłopcy z Placu Broni”',w:[['Nie','O',null,null,1],['było','O',null,null,1],['Nemeczka','P','nie było','kogo nie było?'],['na Placu Broni','Ok','nie było','gdzie?']],u:'W tradycyjnej analizie szkolnej „Nemeczka” (dopełniacz) to <b>podmiot logiczny</b> — przy zaprzeczonym „być” podmiot przechodzi do dopełniacza (por. „Nemeczek był na placu”). Orzeczenie: „nie było”. Część opracowań uznaje to zdanie za bezpodmiotowe — na egzaminie podaj przyjętą konwencję.'},
+ {n:1,z:'Balladyna została królową.',l:'„Balladyna”',w:[['Balladyna','P','została królową','kto?'],['została','O',null,null,1],['królową','O',null,null,1]],u:'<b>Orzeczenie imienne</b>: łącznik „została” + orzecznik „królową”. Podkreślamy oba wyrazy jako jedno orzeczenie.'},
+ {n:1,z:'Rudy był odważnym harcerzem.',l:'„Kamienie na szaniec”',w:[['Rudy','P','był harcerzem','kto?'],['był','O',null,null,1],['odważnym','Prz','harcerzem','jakim?'],['harcerzem','O',null,null,1]],u:'Orzeczenie imienne „był harcerzem”; „odważnym” określa orzecznik „harcerzem”, więc jest przydawką.'},
+ {z:'Wieczorem wróciłem do zamku.',w:[['Wieczorem','Ok','wróciłem','kiedy?'],['wróciłem','O'],['do zamku','Ok','wróciłem','dokąd?']],u:'Podmiotu nie ma w zdaniu, ale da się go odtworzyć z formy czasownika: <b>podmiot domyślny „ja”</b>. To nie jest zdanie bezpodmiotowe.'},
+ {z:'Nad Soplicowem zmierzchało.',l:'„Pan Tadeusz”',w:[['Nad Soplicowem','Ok','zmierzchało','gdzie?'],['zmierzchało','O']],u:'<b>Zdanie bezpodmiotowe</b>: czasownik „zmierzchało” nazywa zjawisko bez wykonawcy — podmiotu nie da się dodać.'},
+ {n:1,z:'Boka czekał na kolegów przed szkołą.',l:'„Chłopcy z Placu Broni”',w:[['Boka','P','czekał','kto?'],['czekał','O'],['na kolegów','D','czekał','na kogo?'],['przed szkołą','Ok','czekał','gdzie?']],u:'Pułapka: „na kolegów” wygląda jak miejsce, ale czasownik „czekać” <b>wymaga</b> dopełnienia „na kogo? na co?”. „Przed szkołą” — okolicznik miejsca.'},
+ {n:1,z:'Hrabia rozmawiał z Telimeną o sztuce.',l:'„Pan Tadeusz”',w:[['Hrabia','P','rozmawiał','kto?'],['rozmawiał','O'],['z Telimeną','D','rozmawiał','z kim?'],['o sztuce','D','rozmawiał','o czym?']],u:'Oba wyrażenia przyimkowe są dopełnieniami: odpowiadają na pytania przypadków (z kim? o czym?) i uzupełniają czasownik „rozmawiać”.'},
+ {n:1,z:'Bilbo bardzo bał się smoka.',l:'„Hobbit”',w:[['Bilbo','P','bał się','kto?'],['bardzo','Ok','bał się','w jakim stopniu?'],['bał','O',null,null,1],['się','O',null,null,1],['smoka','D','bał się','kogo?']],u:'„Bał się” — orzeczenie z zaimkiem zwrotnym „się” (podkreślamy razem). „Bardzo” — okolicznik stopnia.'},
+ {z:'Stary latarnik czytał wieczorem polską książkę.',l:'„Latarnik”',w:[['Stary','Prz','latarnik','jaki?'],['latarnik','P','czytał','kto?'],['czytał','O'],['wieczorem','Ok','czytał','kiedy?'],['polską','Prz','książkę','jaką?'],['książkę','D','czytał','co?']],u:'Dwie przydawki określają dwa różne rzeczowniki: „stary” — podmiot, „polską” — dopełnienie.'}];
+POL.ZDANIA=ZD;
+function grupy(z){var g=[],m={};z.w.forEach(function(w,i){var key=w[4]?'g'+w[4]:'i'+i;if(!(key in m)){m[key]=g.length;g.push({i:[i],r:w[1],t:[w[0]],h:w[2],q:w[3]})}else{var x=g[m[key]];x.i.push(i);x.t.push(w[0]);if(w[2]&&!x.h){x.h=w[2];x.q=w[3]}}});return g}
+
+/* ---------- 1. trener rozbioru: wybierz część zdania i kliknij wyrazy ---------- */
+POL.define('rozbior-zdania',{opis:'Trener rozbioru: wybierz część zdania (kolor + podkreślenie szkolne) i kliknij wyrazy; sprawdzenie, pytania od wyrazu nadrzędnego, pułapki',
+mount:function(el,o){el.classList.add('pv');var nr=+(o.start||0)%ZD.length,role='O',ans={},ok=0,all=0,checked=false;
+ var top=H('div','pv-top'),leg=H('div','pv-leg'),zd=H('div','pv-zd'),bar=H('div','pv-bar'),out=H('div','pv-info');el.append(top,leg,zd,bar,out);
+ ROLE.forEach(function(r){var b=btn('<span>'+R[r].n+'</span><i></i>',function(){role=r;rys()});b.dataset.r=r;b.querySelector('i').style.backgroundImage=linia(r);if(r!=='O'&&r!=='P'){b.querySelector('i').style.backgroundRepeat='repeat-x';b.querySelector('i').style.backgroundSize='24px 7px'}b.title=R[r].kr;leg.appendChild(b)});
+ var gumka=btn('<span>gumka</span><i></i>',function(){role='';rys()});gumka.dataset.r='';leg.appendChild(gumka);
+ bar.append(btn('Sprawdź',spr,'on'),btn('Pokaż rozwiązanie',function(){var z=ZD[nr];grupy(z).forEach(function(g){g.i.forEach(function(i){ans[i]=g.r})});checked=true;rys(true)}),btn('Wyczyść',function(){ans={};checked=false;rys()}),btn('Następne zdanie →',function(){nr=(nr+1)%ZD.length;ans={};checked=false;rys()}));
+ function rys(pokaz){var z=ZD[nr],G=grupy(z);[].forEach.call(leg.children,function(b){b.classList.toggle('on',b.dataset.r===role)});
+  top.innerHTML='<span>Zdanie <b>'+(nr+1)+'</b> z '+ZD.length+(z.l?' · <i>'+z.l+'</i>':'')+'</span><span>Wynik: <b>'+ok+' / '+all+'</b></span>';
+  zd.innerHTML='';z.w.forEach(function(w,i){var s=H('span','pv-w',w[0]);s.tabIndex=0;s.setAttribute('role','button');var r=ans[i];podkresl(s,r);
+   if(r)s.setAttribute('aria-label',w[0]+' — '+R[r].n);
+   if(checked){var g=G.filter(function(x){return x.i.indexOf(i)>=0})[0];s.classList.add(r===g.r?'ok':'zle');if(pokaz||r!==g.r)s.appendChild(H('small',null,R[g.r].n))}
+   function klik(){var g=G.filter(function(x){return x.i.indexOf(i)>=0})[0];g.i.forEach(function(j){if(role)ans[j]=role;else delete ans[j]});checked=false;rys()}
+   s.onclick=klik;s.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();klik()}};zd.appendChild(s);zd.appendChild(document.createTextNode(' '))});
+  if(!checked){out.className='pv-info';out.innerHTML='<b>Krok 1:</b> wybierz <b>orzeczenie</b> i kliknij wyraz, który mówi, co się dzieje. <b>Krok 2:</b> zapytaj od orzeczenia <i>kto? co?</i> — to podmiot. <b>Krok 3:</b> od orzeczenia i rzeczowników zadawaj kolejne pytania. Wyrażenie przyimkowe („w pokoju”) zaznaczasz jednym kliknięciem.'}}
+ function spr(){var z=ZD[nr],G=grupy(z),dob=0,brak=[];G.forEach(function(g){if(ans[g.i[0]]===g.r)dob++;else brak.push(g)});all++;if(dob===G.length)ok++;checked=true;rys();
+  var pyt=G.filter(function(g){return g.q}).map(function(g){return '<tr><td>'+(g.h||'')+'</td><td><i>'+g.q+'</i></td><td><b>'+g.t.join(' ')+'</b></td><td style="color:'+R[g.r].k+'">'+R[g.r].n+'</td></tr>'}).join('');
+  out.className='pv-info '+(dob===G.length?'ok':'bad');
+  out.innerHTML=(dob===G.length?'<b>Wszystko dobrze!</b> ':'<b>Dobrze: '+dob+' z '+G.length+'.</b> Czerwone ramki — popraw. ')+(z.u?z.u:'')+
+   '<table class="pv-tab"><tr><th>od wyrazu</th><th>pytanie</th><th>odpowiedź</th><th>część zdania</th></tr>'+pyt+'</table>'}
+ rys()}});
+
+/* ---------- 2. wykres zdania krok po kroku ---------- */
+POL.define('wykres-zdania',{opis:'Wykres zdania pojedynczego: związek główny (podmiot ═ orzeczenie) na górze, określenia pod wyrazami nadrzędnymi, na liniach pytania; odsłanianie krok po kroku',
+mount:function(el,o){el.classList.add('pv');var nr=+(o.start||0)%ZD.length,krok=99;
+ var bar=H('div','pv-bar'),wyb=H('select');wyb.className='pv-btn';wyb.setAttribute('aria-label','Wybierz zdanie');ZD.forEach(function(z,i){var op=H('option',null,(i+1)+'. '+z.z);op.value=i;wyb.appendChild(op)});wyb.value=nr;wyb.style.maxWidth='100%';
+ var nast=btn('Następny krok ▶',function(){krok++;rys()}),od=btn('Od początku',function(){krok=1;rys()}),cale=btn('Cały wykres',function(){krok=99;rys()});
+ bar.append(wyb,od,nast,cale);var pic=H('div','pv-scroll'),hint=H('div','pv-hint','↔ przesuń wykres w bok'),out=H('div','pv-info');el.append(bar,pic,hint,out);wyb.onchange=function(){nr=+wyb.value;krok=1;rys()};
+ function drzewo(z){var G=grupy(z),txt=function(g){var t=g.t.join(' ');return g.i[0]===0&&!z.n?t.charAt(0).toLowerCase()+t.slice(1):t},O=G.filter(function(g){return g.r==='O'})[0],P=G.filter(function(g){return g.r==='P'})[0];
+  var nodes=G.map(function(g){return{g:g,t:txt(g),kids:[]}}),byT={};nodes.forEach(function(n){byT[n.t.toLowerCase()]=n});
+  nodes.forEach(function(n){if(n.g.r==='O'||n.g.r==='P')return;var h=(n.g.h||'').toLowerCase();if(!h)return;if(byT[h]){byT[h].kids.push(n);return}
+   var hh=nodes.filter(function(x){var t=x.t.toLowerCase();return x!==n&&(t.split(' ').indexOf(h)>=0||h.split(' ').indexOf(t.split(' ')[0])>=0&&t.split(' ')[0].length>2)})[0];if(hh)hh.kids.push(n)});
+  return{O:O&&byT[txt(O).toLowerCase()],P:P&&byT[txt(P).toLowerCase()],G:G}}
+ function rys(){var z=ZD[nr],T=drzewo(z),W=0,poz=[];
+  // układ: szerokość poddrzewa, kolejność odsłaniania: O, P, potem wszerz
+  var kol=[];if(T.O)kol.push(T.O);if(T.P)kol.push(T.P);for(var q=0;q<kol.length;q++)kol[q].kids.forEach(function(k){if(kol.indexOf(k)<0)kol.push(k)});
+  var widac=kol.slice(0,Math.max(1,krok));
+  function szer(n){var w=Math.max(n.t.length*8.6+24,70);n.w=w;var s=0;n.kids.forEach(function(k){s+=szer(k)+14});n.sw=Math.max(w,s-14);return n.sw}
+  function uloz(n,x,y){n.x=x+n.sw/2;n.y=y;var cx=x+(n.sw-(n.kids.reduce(function(a,k){return a+k.sw+14},0)-14))/2;n.kids.forEach(function(k){uloz(k,cx,y+92);cx+=k.sw+14})}
+  var top=[T.P,T.O].filter(Boolean),x=10;top.forEach(function(n){szer(n);uloz(n,x,24);x+=n.sw+120});W=Math.max(320,x-110);
+  var Hh=0;kol.forEach(function(n){Hh=Math.max(Hh,n.y+40)});
+  var s='<svg class="pv-svg" style="max-width:'+Math.round(W*1.15)+'px;margin:0 auto" viewBox="0 0 '+W+' '+(Hh+14)+'" role="img" aria-label="Wykres zdania: '+z.z.replace(/"/g,'')+'">';
+  if(T.P&&T.O&&widac.indexOf(T.P)>=0)s+='<line x1="'+(T.P.x+T.P.w/2)+'" y1="'+(T.P.y+14)+'" x2="'+(T.O.x-T.O.w/2)+'" y2="'+(T.O.y+14)+'" stroke="#57606a" stroke-width="1.6"/><line x1="'+(T.P.x+T.P.w/2)+'" y1="'+(T.P.y+19)+'" x2="'+(T.O.x-T.O.w/2)+'" y2="'+(T.O.y+19)+'" stroke="#57606a" stroke-width="1.6"/><text x="'+((T.P.x+T.P.w/2+T.O.x-T.O.w/2)/2)+'" y="'+(T.P.y+8)+'" text-anchor="middle" font-size="10.5" fill="#57606a">związek główny</text>';
+  kol.forEach(function(n){n.kids.forEach(function(k){if(widac.indexOf(k)<0)return;s+='<line x1="'+n.x+'" y1="'+(n.y+34)+'" x2="'+k.x+'" y2="'+(k.y)+'" stroke="#8c959f" stroke-width="1.4"/><text x="'+((n.x+k.x)/2+(k.x>=n.x?6:-6))+'" y="'+((n.y+34+k.y)/2+4)+'" text-anchor="'+(k.x>=n.x?'start':'end')+'" font-size="12" font-style="italic" fill="#57606a">'+(k.g.q||'')+'</text>'})});
+  widac.forEach(function(n){var k=R[n.g.r].k;s+='<rect x="'+(n.x-n.w/2)+'" y="'+n.y+'" width="'+n.w+'" height="34" rx="8" fill="#fff" stroke="'+k+'" stroke-width="2"/><text x="'+n.x+'" y="'+(n.y+16)+'" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2328">'+n.t+'</text><text x="'+n.x+'" y="'+(n.y+29)+'" text-anchor="middle" font-size="10" fill="'+k+'">'+R[n.g.r].n+'</text>'});
+  s+='</svg>';pic.innerHTML=s;
+  var n=widac[widac.length-1],koniec=widac.length>=kol.length;nast.disabled=koniec;
+  out.innerHTML=koniec?('<b>Gotowe.</b> '+(z.u||'')+(T.P?'':' <br><b>Brak podmiotu na wykresie</b> — zobacz uwagę wyżej (podmiot domyślny albo zdanie bezpodmiotowe).')):
+   (widac.length===1?'<b>Krok 1. Orzeczenie:</b> „'+n.t+'” — mówi, co się dzieje. Od niego zaczynamy.':n===T.P?'<b>Krok 2. Podmiot:</b> pytamy od orzeczenia <i>'+(n.g.q||'kto? co?')+'</i> → „'+n.t+'”. Podmiot i orzeczenie tworzą <b>związek główny</b> (dwie kreski).':'<b>Krok '+widac.length+'.</b> Od wyrazu „'+(n.g.h||'')+'” pytamy <i>'+(n.g.q||'')+'</i> → „'+n.t+'” — '+R[n.g.r].n+'.')}
+ krok=o.krok==='caly'?99:1;rys()}});
+
+/* ---------- 3. schemat zdania złożonego: współrzędne obok siebie, podrzędne pod spodem ---------- */
+POL.define('wykres-zlozonego',{opis:'Schemat blokowy zdania złożonego: zdania współrzędne w jednym rzędzie ze strzałkami relacji, zdanie podrzędne pod nadrzędnym ze strzałką-pytaniem; warianty do przełączania',
+mount:function(el,o){
+ var W=[
+  {n:'współrzędne (3 zdania)',z:'Zadzwoniłem do kolegi, ale on nie odebrał, więc wysłałem wiadomość.',
+   r:[['Zadzwoniłem do kolegi'],['on nie odebrał','ale','przeciwstawne'],['wysłałem wiadomość','więc','wynikowe']],
+   i:'Trzy zdania składowe stoją <b>obok siebie</b> — każde można wypowiedzieć osobno. Strzałki są poziome: <i>ale</i> — przeciwstawienie, <i>więc</i> — skutek.'},
+  {n:'bezspójnikowe',z:'Słońce zaszło, ulice opustoszały.',
+   r:[['Słońce zaszło'],['ulice opustoszały',',','łączne / wynikowe?']],
+   i:'Brak spójnika — relację ustalasz <b>próbnym spójnikiem</b>: „i” (łączne) albo „więc” (wynikowe). Przecinek tylko oddziela zdania.'},
+  {n:'mieszane',z:'Nie odrobiłem pracy, ponieważ zabrakło czasu, ale przygotowałem się do odpowiedzi.',
+   r:[['Nie odrobiłem pracy'],['przygotowałem się do odpowiedzi','ale','przeciwstawne']],
+   d:['zabrakło czasu','ponieważ','dlaczego?'],
+   i:'Zdanie <i>ponieważ zabrakło czasu</i> odpowiada na pytanie <b>dlaczego?</b> zadane od pierwszego — stoi <b>pod</b> nim (podrzędność). Zdanie z <i>ale</i> stoi obok (współrzędność).'}];
+ var H=POL.H,cur=+(o.start||0),bar=H('div','pv-bar'),box=H('div'),zd=H('div','pv-info'),info=H('div','pv-info');
+ bar.appendChild(H('b',null,'Wariant:'));
+ var bs=W.map(function(w,k){var b=POL.btn(w.n,function(){cur=k;draw()});bar.appendChild(b);return b});
+ var st='display:inline-block;padding:8px 10px;border:2px solid var(--accent,#7a2848);border-radius:10px;background:var(--surface,#fff);font:500 15px/1.3 Georgia,serif;max-width:220px;text-align:center';
+ function draw(){var w=W[cur];bs.forEach(function(b,k){b.classList.toggle('on',k===cur)});
+  zd.innerHTML='<b>Zdanie:</b> '+w.z;
+  var h='<div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px">';
+  w.r.forEach(function(x,k){if(k)h+='<span style="display:inline-flex;flex-direction:column;align-items:center;font:600 12px/1.2 Inter,sans-serif;color:var(--text-soft,#57606a);padding:0 2px"><span>'+x[1]+'</span><span style="font-size:20px;line-height:1">⟷</span><span>'+x[2]+'</span></span>';
+   h+='<span style="'+st+'"><small style="display:block;font:600 11px Inter,sans-serif;color:var(--text-soft,#57606a)">zdanie '+(k+1)+'</small>'+x[0]+'</span>'});
+  h+='</div>';
+  if(w.d)h+='<div style="margin:2px 0 0 30px;font:600 12px/1.3 Inter,sans-serif;color:var(--text-soft,#57606a)"><span style="font-size:20px">↓</span> '+w.d[2]+' ('+w.d[1]+')</div><div style="margin-left:14px"><span style="'+st+';border-style:dashed"><small style="display:block;font:600 11px Inter,sans-serif;color:var(--text-soft,#57606a)">zdanie podrzędne</small>'+w.d[0]+'</span></div>';
+  box.innerHTML=h;info.innerHTML=w.i}
+ el.appendChild(bar);el.appendChild(zd);el.appendChild(box);el.appendChild(info);draw()}});
+
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mountAll);else mountAll();
+function mountAll(){document.querySelectorAll('figure[data-viz]').forEach(function(f){if(f.dataset.on)return;f.dataset.on=1;var id=f.getAttribute('data-viz'),d=REG[id],body=f.querySelector('.lk-fig-body')||f,o={};
+ try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}if(!d){body.textContent='Brak grafiki „'+id+'” w pol-viz.js';return}body.style.padding='12px';d.mount(body,o)})}
+POL.mountAll=mountAll;
+})();
+
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

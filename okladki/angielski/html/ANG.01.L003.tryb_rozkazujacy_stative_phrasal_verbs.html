@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="ang">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>L003 · Tryb rozkazujący, czasowniki stanów i phrasal verbs</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw ang (Język angielski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#2a4d9b;--accent-dark:#1b336a;--accent-soft:#e9eef9;--accent-line:#c4d1ee;--accent-glow:rgba(42,77,155,.15);--hl-key:#2a4d9b;--hl-key-bg:#dfe7f7;--hl-formula:#1b336a;--hl-formula-bg:#e9eef9;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 130 200%27%3E%3Cg fill=%27none%27 stroke=%27%232a4d9b%27 stroke-width=%274%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M14 14h80a10 10 0 0 1 10 10v34a10 10 0 0 1-10 10H48l-18 16V68H14A10 10 0 0 1 4 58V24a10 10 0 0 1 10-10z%27/%3E%3Cpath d=%27M40 106h76a10 10 0 0 1 10 10v30a10 10 0 0 1-10 10h-12v16l-18-16H40a10 10 0 0 1-10-10v-30a10 10 0 0 1 10-10z%27/%3E%3C/g%3E%3Cg fill=%27%232a4d9b%27%3E%3Ccircle cx=%2736%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2754%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2772%27 cy=%2741%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}}
+:root[data-theme=dark]{--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}
+
+/* wyrażenie po angielsku w tekście polskim i wymowa */
+.en{font-style:italic;font-weight:600;color:var(--accent)}
+.ipa{font-family:var(--serif);font-size:.95em;color:var(--text-muted);white-space:nowrap}
+.ipa::before{content:"/"}.ipa::after{content:"/"}
+/* wzór zdania: podmiot + operator + czasownik */
+.wzor{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+.wzor span{padding:5px 10px;border-radius:8px;border:1px solid var(--accent-line);background:var(--accent-soft);font-weight:700;font-size:14px}
+.wzor span.op{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.wzor b{color:var(--text-muted);font-weight:700}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Język angielski</span><span class="lk-title">L003 Tryb rozkazujący, czasowniki stanów i phrasal verbs</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Język angielski, lekcja L003</div><h1>Tryb rozkazujący, czasowniki stanów i phrasal verbs</h1><p class="lead">Egzamin ósmoklasisty · kompleksowe przygotowanie — Lekcja 3 – imperatyw, stative verbs, czasowniki złożone</p><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#spis-tresci">Spis treści</a><a class="toc-link" href="#cele-test">1. Cele lekcji i test wstępny</a><a class="toc-link" href="#wyklad">2. Wykład — trzy narzędzia codziennego angielskiego</a><a class="toc-link" href="#imperatyw">3. Tryb rozkazujący – twierdzenie</a><a class="toc-link" href="#zakazy">4. Tryb rozkazujący – przeczenie</a><a class="toc-link" href="#what-how">5. Wykrzykniki What…! i How…!</a><a class="toc-link" href="#stative">6. Czasowniki stanów i czynności</a><a class="toc-link" href="#would-like">7. Would like to, want, need</a><a class="toc-link" href="#phrasal-verbs">8. Phrasal verbs — rutyna, dom, opieka</a><a class="toc-link" href="#synonimy">9. Synonimy i przeciwieństwa</a><a class="toc-link" href="#slownictwo">10. Słownictwo</a><a class="toc-link" href="#cwiczenia">11. Ćwiczenia</a><a class="toc-link" href="#6-zasad">12. Ważne! – 6 kluczowych zasad</a><a class="toc-link" href="#klinika">13. Klinika błędów — najczęstsze błędy</a><a class="toc-link" href="#podsumowanie">14. Podsumowanie</a><a class="toc-link" href="#misja">15. Test końcowy – MISJA</a><a class="toc-link" href="#slowniczek">16. Słowniczek — zwroty z kontekstem</a><a class="toc-link" href="#faq">17. FAQ – najczęstsze wątpliwości</a><a class="toc-link" href="#test-wyjsciowy">18. Test wyjściowy – sprawdź swój postęp</a><a class="toc-link" href="#olimpijska">19. Warstwa olimpijska — dla olimpijczyka</a><a class="toc-link" href="#test">20. Test — pytania zamknięte</a><a class="toc-link" href="#fiszki">21. Fiszki</a><a class="toc-link" href="#slownik">22. Słownik</a><a class="toc-link" href="#ciekawostki">23. Ciekawostki</a></nav></details>
+<p>[← Poprzednia lekcja](lekcja 02.html) <a href="index.html">Spis wszystkich lekcji</a> [Następna lekcja →](lekcja 04.html)</p>
+<section id="spis-tresci">
+<div class="part-heading">Spis treści</div>
+<p>Słownictwo: dom · codzienne czynności · instrukcje · emocje (Słownik — sekcja 22)</p>
+<p>W tej lekcji: 1 Cele lekcji i test wstępny · 2 Wykład — trzy narzędzia codziennego angielskiego · 3 Tryb rozkazujący – twierdzenie · 4 Tryb rozkazujący – przeczenie · 5 Wykrzykniki What…! i How…! · 6 Czasowniki stanów i czynności · 7 Would like to, want, need · 8 Phrasal verbs – rutyna, dom, opieka · 9 Synonimy i przeciwieństwa · 10 Słownictwo · 11 Ćwiczenia · 12 Ważne! – 6 kluczowych zasad · 13 Klinika błędów · 14 Podsumowanie i ściąga · 15 Test końcowy – MISJA · 16 Słowniczek · 17 FAQ · 18 Test wyjściowy · 19 Warstwa olimpijska · 20 Test — pytania zamknięte · 21 Fiszki · 22 Słownik · 23 Ciekawostki</p>
+</section>
+<section id="cele-test">
+<div class="part-heading"><span class="part-num">1</span> Cele lekcji i test wstępny</div>
+<h3>Po tej lekcji będziesz umieć</h3>
+<ul>
+<li>tworzyć zdania rozkazujące i przeczące z <strong>Don't + czasownik</strong>;</li>
+<li>rozpoznawać podstawowe czasowniki stanu i wiedzieć, że zwykle nie występują w formie ciągłej;</li>
+<li>stosować co najmniej 8 phrasal verbs w prostych zdaniach;</li>
+<li>używać <strong>would like to</strong>, <strong>want to</strong> i <strong>need to</strong>;</li>
+<li>napisać krótką instrukcję dotyczącą opieki nad zwierzęciem.</li>
+</ul>
+<h3>Test wstępny – sprawdź, co już wiesz</h3>
+<ol>
+<li>Popraw: <em>Don't to touch the wire!</em></li>
+<li>Popraw: <em>I am knowing the answer.</em></li>
+<li>Uzupełnij: <em>__________ a lovely dress!</em> (What / How)</li>
+<li>Przetłumacz: <em>Szukam kluczy.</em> (użyj phrasal verb)</li>
+<li>Uzupełnij: <em>I __________ like to visit London.</em> (would / want)</li>
+</ol>
+<p>Nie martw się, jeśli czegoś nie wiesz – po to jest ta lekcja. Wróć do tych pytań na końcu i porównaj wynik.</p>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li><strong>Don't touch the wire!</strong> (po don't forma podstawowa bez to)</li>
+<li><strong>I know the answer.</strong> (know to czasownik stanu – bez -ing)</li>
+<li><strong>What</strong> a lovely dress! (what + rzeczownik)</li>
+<li><strong>I'm looking for my keys.</strong></li>
+<li><strong>would</strong> like to visit London.</li>
+</ol>
+</details>
+<h3>Lista kontrolna</h3>
+<checklista>
+<ul>
+<li>[ ] Tworzę polecenia i zakazy (Open... / Don't touch...).</li>
+<li>[ ] Poprawnie buduję zdania z What…! i How…!.</li>
+<li>[ ] Wiem, że czasowniki stanów zwykle nie występują w formie -ing.</li>
+<li>[ ] Znam znaczenie i zastosowanie czasowników złożonych (get up, look for, turn on…).</li>
+<li>[ ] Odróżniam would like to / want / need.</li>
+<li>[ ] Znam słówka o domu, codziennych czynnościach, instrukcjach i emocjach.</li>
+<li>[ ] Rozpoznaję pary bliskoznaczne i przeciwstawne.</li>
+<li>[ ] Rozwiązałem/am wszystkie zadania egzaminacyjne.</li>
+<li>[ ] Znam 6 kluczowych zasad z sekcji „Ważne!".</li>
+<li>[ ] Wiem, jakich błędów z trybem rozkazującym i phrasal verbs unikać.</li>
+</ul>
+</checklista>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">2</span> Wykład — trzy narzędzia codziennego angielskiego</div>
+<p>Ta lekcja daje ci trzy narzędzia, bez których trudno przetrwać pierwszy dzień rozmowy po angielsku: jak coś polecić, jak opisać, co czujesz i wiesz, oraz jak zrozumieć, dlaczego Anglicy z dwóch prostych słów tworzą trzecie, zupełnie nowe.</p>
+<p><strong>Narzędzie 1: tryb rozkazujący — angielski bez podmiotu.</strong> Zwykle zdanie potrzebuje podmiotu (I, she, they), ale polecenie go wyrzuca: <em>Open the window.</em> — „Otwórz okno". Komu? Oczywiste: tobie. Forma to czysty bezokolicznik bez to, a przeczenie buduje <strong>Don't</strong>: <em>Don't touch it!</em> Do wspólnej czynności zaprasza <strong>Let's</strong> (<em>Let's go!</em> — Chodźmy!). Uprzejmość robisz jednym słowem — <em>please</em> na początku albo na końcu: <em>Please sit down. / Sit down, please.</em> I jeszcze wykrzykniki-zachwyty, dalsi krewni rozkazów: <em>What a lovely dress!</em> i <em>How beautiful!</em> mają tę samą energię, ale inną budowę — <strong>What staje przed rzeczownikiem, How przed przymiotnikiem</strong>.</p>
+<p><strong>Narzędzie 2: czasowniki stanów — angielski głowy i serca.</strong> Czynności widzisz: bieg, pisanie, sprzątanie — one przyjmują formy -ing (<em>I am running</em>). Stany nie są do zobaczenia: wiedza, uczucia, potrzeby, posiadanie, wrażenia zmysłowe (<em>know, love, need, have, hear</em>). Angielski traktuje je jak fotografie, nie filmy: stan <strong>jest</strong>, a nie „trwa", więc -ing zwykle odpada — <em>I know</em>, nie „I am knowing". Pułapka: te same czasowniki potrafią pracować w dwóch rolach. <em>I have a car</em> (stan: posiadam) vs <em>I'm having lunch</em> (czynność: jem); <em>I think you're right</em> (stan: uważam) vs <em>I'm thinking about it</em> (czynność: rozważam). Test zawsze ten sam: stan czy aktywność?</p>
+<p><strong>Narzędzie 3: phrasal verbs — dwie spinki, nowe znaczenie.</strong> Native speakerzy rzadko mówią <em>search for</em> — mówią <em>look for</em>; nie <em>continue</em> — mówią <em>carry on</em>. Czasownik + partykuła tworzą znaczenie, którego nie da się przewidzieć z części: <em>give up</em> to nie „dać górę", tylko „poddaj się"; <em>find out</em> to nie „znaleźć na zewnątrz", tylko „dowiedzieć się". Dlatego uczysz się ich jako całych zwrotów w zdaniach — i dlatego lekcja ma ich aż 20, pogrupowanych po scenach życia: poranek (<em>wake up, get up, put on</em>), dom (<em>turn on/off, tidy up</em>), relacje (<em>look after, look for, give up</em>).</p>
+<p>Trzy narzędzia spotkają się w zadaniu pisemnym na koniec lekcji: instrukcja <em>How to look after a pet</em> potrzebuje rozkazów (<em>Feed your pet</em>), phrasal verbs (<em>look after, tidy up</em>) i konstrukcji need to (<em>Your pet needs to feel safe</em>). Zauważ: <em>need</em> to właśnie czasownik stanowy — a mimo to poprawnie staje w <em>needs</em>, bo trzecia osoba w Present Simple bierze -s. Stan bez -ing, ale z -s dla he/she/it.</p>
+<div class="lk-tree"><ul><li><span>Co chcę powiedzieć?</span><ul><li><span>Polecę coś?</span><ul><li><span>tak → forma podstawowa (Open the door.)</span></li><li><span>zakaz → Don't + forma podstawowa (Don't touch.)</span></li><li><span>zachęcam „my" → Let's + forma podstawowa (Let's go!)</span></li></ul></li><li><span>Zachwycę się?</span><ul><li><span>rzeczownik → What (a/an) + przymiotnik + rzeczownik!</span></li><li><span>przymiotnik / przysłówek → How + …!</span></li></ul></li><li><span>Opiszę stan (wiedza, uczucia, posiadanie)?</span><ul><li><span>tak → forma prosta, bez -ing</span></li></ul></li><li><span>Użyję phrasal verb?</span><ul><li><span>tak → uczę się całości; zaimek: turn IT on</span></li></ul></li></ul></li></ul></div>
+</section>
+<section id="imperatyw">
+<div class="part-heading"><span class="part-num">3</span> Tryb rozkazujący – twierdzenie</div>
+<p>Tryb rozkazujący służy do dawania <strong>poleceń, instrukcji, rad i próśb</strong>. Podmiot (you) zwykle pomijamy.</p>
+<div class="card card-basic">
+<span class="card-label">Wzór</span>
+<p><strong>Czasownik w formie podstawowej + reszta zdania</strong></p>
+</div>
+<ul>
+<li><em>polecenie</em> — <strong>Open the window.</strong> — Otwórz okno.</li>
+<li><em>instrukcja</em> — <strong>Turn left at the traffic lights.</strong> — Skręć w lewo na światłach.</li>
+<li><em>prośba / rada</em> — <strong>Please sit down. / Be careful!</strong> — Proszę, usiądź. / Uważaj!</li>
+</ul>
+<div class="card card-warning">
+<span class="card-label">Uwaga</span>
+<ul>
+<li>W trybie rozkazującym <strong>nie</strong> używamy podmiotu <em>you</em>.</li>
+<li>Dla <em>let's</em> (zróbmy): <em>Let's go!</em> / <em>Let's not wait.</em></li>
+<li>Forma uprzejma: <em>Open the window, please.</em> lub <em>Please sit down.</em></li>
+</ul>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — ten sam rozkaz, trzy temperatury</span>
+<p>To samo polecenie można wypowiedzieć trzema rejestrami. <strong>Open the window.</strong> — neutralny rozkaz (do przyjaciela, w instrukcji). <strong>Open the window, please.</strong> — prośba (please łagodzi). <strong>Could you open the window, please?</strong> — grzeczna prośba (konkurs; pełna grzeczność w zadaniu O3). Na egzaminie E8 wystarczą pierwsze dwa, ale rozpoznasz trzeci w tekstach do czytania. Reguła wspólna: forma czasownika bez podmiotu i bez to — zmienia się tylko „temperatura" wypowiedzi.</p>
+</div>
+</section>
+<section id="zakazy">
+<div class="part-heading"><span class="part-num">4</span> Tryb rozkazujący – przeczenie</div>
+<div class="card card-warning">
+<span class="card-label">Zakaz</span>
+<p><strong>Don't + czasownik w formie podstawowej</strong></p>
+</div>
+<ul>
+<li><em>zakaz</em> — <strong>Don't touch it!</strong> — Nie dotykaj tego!</li>
+<li><em>ostrzeżenie</em> — <strong>Don't run in the corridor.</strong> — Nie biegaj na korytarzu.</li>
+<li><em>rada</em> — <strong>Don't forget your homework.</strong> — Nie zapomnij o zadaniu domowym.</li>
+</ul>
+<div class="card card-core">
+<span class="card-label">Zapamiętaj</span>
+<ul>
+<li>Po <strong>Don't</strong> zawsze używamy formy podstawowej czasownika – bez <strong>to</strong>.</li>
+<li>✗ <em>Don't to touch</em> → ✓ <em>Don't touch</em></li>
+<li>Po czasowniku <strong>be</strong> nie używamy <em>do</em> w trybie rozkazującym: <em>Be careful!</em> / <em>Don't be careless!</em></li>
+</ul>
+</div>
+</section>
+<section id="what-how">
+<div class="part-heading"><span class="part-num">5</span> Wykrzykniki What…! i How…!</div>
+<h3>What + (a/an) + przymiotnik + rzeczownik!</h3>
+<ul>
+<li><em>zachwyt</em> — <strong>What a beautiful day!</strong> — Jaki piękny dzień!</li>
+<li><em>zachwyt</em> — <strong>What an interesting book!</strong> — Jaka interesująca książka!</li>
+<li><em>liczba mnoga</em> — <strong>What nice shoes!</strong> — Jakie ładne buty! (mnoga — bez a/an)</li>
+</ul>
+<h3>How + przymiotnik / przysłówek!</h3>
+<ul>
+<li><em>zachwyt</em> — <strong>How beautiful!</strong> — Jak pięknie!</li>
+<li><em>zachwyt</em> — <strong>How interesting!</strong> — Jak interesujące!</li>
+<li><em>z przysłówkiem</em> — <strong>How fast he runs!</strong> — Jak szybko on biega!</li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">Różnica</span>
+<ul>
+<li><strong>What</strong> – przed rzeczownikiem: <em>What a nice house!</em></li>
+<li><strong>How</strong> – przed przymiotnikiem lub przysłówkiem: <em>How nice! / How well she sings!</em></li>
+</ul>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — test What czy How</span>
+<p>Zadaj pytanie: co staje zaraz po What/How? Jeśli <strong>rzeczownik</strong> (lub przymiotnik + rzeczownik) → <strong>What</strong> — z a/an przy rzeczowniku policzalnym w l.poj. (<em>What a day!</em>), ale bez a/an przy niepoliczalnych i mnogich (<em>What lovely weather!</em>, <em>What nice shoes!</em>). Jeśli od razu <strong>przymiotnik albo przysłówek</strong> → <strong>How</strong>. Sprawdź na przykładzie: <em>…interesting this book is!</em> — po pustce idzie przymiotnik, a rzeczownik stoi dalej → <strong>How</strong>. <em>…a lovely dress!</em> — od razu rzeczownik → <strong>What</strong>.</p>
+</div>
+</section>
+<section id="stative">
+<div class="part-heading"><span class="part-num">6</span> Czasowniki stanów i czynności</div>
+<h3>Czasowniki stanów (stative verbs) vs czynności (action verbs)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj</th><th>Co opisują?</th><th>Przykłady</th><th>Czasy ciągłe?</th></tr></thead>
+<tbody>
+<tr><td><strong>Czynności</strong> (action / dynamic)</td><td>akcje, które możemy zobaczyć lub wykonać</td><td>run, study, write, play, eat, open, clean</td><td>Tak – <em>I am running.</em></td></tr>
+<tr><td><strong>Stany</strong> (stative)</td><td>stany, uczucia, myśli, posiadanie, zmysły</td><td>know, need, understand, like, love, want, have, see, hear, believe</td><td>Zwykle NIE – <em>I understand.</em> (nie: <em>I am understanding</em>)</td></tr>
+</tbody></table></div>
+<div class="card card-core">
+<span class="card-label">Zapamiętaj!</span>
+<p>Czasowniki stanów <strong>zwykle nie występują w czasach ciągłych</strong> (-ing).</p>
+<ul>
+<li><em>poprawnie</em> — ✓ <strong>I understand the rule.</strong> — Rozumiem tę zasadę.</li>
+<li><em>błąd</em> — ✗ <em>I am understanding the rule.</em> — Nie używamy -ing z czasownikami stanów.</li>
+</ul>
+</div>
+<div class="card card-warning">
+<span class="card-label">Wyjątki – gdy czasownik stanu zmienia znaczenie</span>
+<p>Niektóre czasowniki mogą mieć formę ciągłą, gdy zmieniają znaczenie:</p>
+<ul>
+<li><em>I have a car.</em> – Mam samochód. (stan)</li>
+<li><em>I'm having lunch.</em> – Jem lunch. (czynność)</li>
+<li><em>I think you are right.</em> – Uważam, że masz rację. (stan)</li>
+<li><em>I'm thinking about the problem.</em> – Zastanawiam się nad problemem. (czynność)</li>
+</ul>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — test dwóch znaczeń</span>
+<p>Gdy widzisz czasownik stanu w formie -ing, nie odrzucaj go od razu — zapytaj, czy <strong>zmienił rolę ze stanu na czynność</strong>. have: „posiadać" (stan, bez -ing) vs „jeść/brać" (<em>I'm having a shower</em> — czynność, z -ing). think: „uważam" (stan) vs „rozważam" (<em>I'm thinking</em> — czynność). see: „widzieć/rozumieć" (stan) vs „spotykać się" (<em>I'm seeing the doctor tomorrow</em> — umówione spotkanie; konkurs). taste/smell: „smakuje/pachnie" (stan) vs „próbować/wąchać" (<em>She's tasting the soup</em> — czynność). Rola „stan" → forma prosta; rola „czynność" → -ing jest poprawne.</p>
+</div>
+<h3>Najczęstsze czasowniki stanów</h3>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>know</td><td>wiedzieć / znać</td><td>I know the answer.</td></tr><tr><td>understand</td><td>rozumieć</td><td>She understands everything.</td></tr><tr><td>need</td><td>potrzebować</td><td>We need more time.</td></tr><tr><td>want</td><td>chcieć</td><td>I want a new phone.</td></tr><tr><td>like / love / hate</td><td>lubić / kochać / nienawidzić</td><td>She loves chocolate.</td></tr><tr><td>believe</td><td>wierzyć</td><td>Do you believe in ghosts?</td></tr><tr><td>remember / forget</td><td>pamiętać / zapominać</td><td>I remember your name.</td></tr><tr><td>have (posiadać)</td><td>mieć</td><td>They have a big house.</td></tr><tr><td>see / hear / smell</td><td>widzieć / słyszeć / czuć</td><td>I can see the mountains.</td></tr><tr><td>seem / look (wyglądać)</td><td>wydawać się / wyglądać</td><td>She seems tired today.</td></tr></tbody></table></div>
+</section>
+<section id="would-like">
+<div class="part-heading"><span class="part-num">7</span> Would like to, want, need</div>
+<h3>Wyrażanie życzeń, potrzeb i zamiarów</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Znaczenie</th><th>Formalność</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>would like to</strong></td><td>chciałbym / chciałabym</td><td>uprzejme, grzeczne</td><td><em>I would like to visit London.</em></td></tr>
+<tr><td><strong>want to</strong></td><td>chcę</td><td>neutralne / bezpośrednie</td><td><em>I want to go home now.</em></td></tr>
+<tr><td><strong>need to</strong></td><td>muszę / potrzebuję</td><td>neutralne (konieczność)</td><td><em>I need to study for the test.</em></td></tr>
+<tr><td><strong>have to</strong></td><td>muszę, mam obowiązek</td><td>obowiązek zewnętrzny</td><td><em>I have to clean my room.</em></td></tr>
+</tbody></table></div>
+<div class="card card-basic">
+<span class="card-label">Ważne konstrukcje z would like</span>
+<ul>
+<li><strong>would like + rzeczownik:</strong> <em>I'd like some water.</em> / <em>I'd like a sandwich.</em></li>
+<li><strong>would like + to + czasownik:</strong> <em>I'd like to drink some water.</em> / <em>I'd like to visit London.</em></li>
+<li><strong>Skróty:</strong> <em>I would like to</em> → <em>I'd like to</em>; <em>I would not like to</em> → <em>I wouldn't like to</em></li>
+</ul>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga</span>
+<ul>
+<li><em>Want</em> jest czasownikiem stanu – nie używamy go z -ing: ✗ <em>I am wanting</em> → ✓ <em>I want</em></li>
+<li><em>Need</em> jest czasownikiem stanu – nie używamy go z -ing: ✗ <em>I am needing</em> → ✓ <em>I need</em></li>
+<li><em>Need to</em> i <em>have to</em> mają podobne znaczenie, ale <em>have to</em> częściej wskazuje na obowiązek zewnętrzny.</li>
+</ul>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — drabina grzeczności</span>
+<p>Cztery konstrukcje układają się na drabinie od najbardziej bezpośredniej do najgrzeczniejszej. <strong>want</strong> — chcę, tyle (do przyjaciół: <em>I want a sandwich</em>). <strong>would like</strong> — chciałbym, ta sama treść w rękawiczkach (w restauracji, sklepie, mailu: <em>I'd like a sandwich</em>). <strong>need</strong> — mówię o potrzebie, nie o życzeniu (<em>I need more time</em>). <strong>have to</strong> — przenoszę odpowiedzialność na zewnątrz, na reguły (<em>I have to go now</em>). Test egzaminacyjny: pytanie o „uprzejmą wersję want" → zawsze would like; pytanie o „obowiązek zewnętrzny" → have to. Pamiętaj też o strukturze: po would like zawsze <strong>to</strong> + czasownik, a po want — także <em>want to</em>.</p>
+</div>
+<nie-myl>
+<p><strong>want to vs would like to</strong> — test rozstrzygający: gdzie mówisz? Oficjalnie (restauracja, list, rozmowa o pracę) → <em>I'd like…</em>. Swobodnie (kolega, dom) → <em>I want…</em>. Oba poprawne gramatycznie — różnica w grzeczności, nie w logice. Pułapka zadań: „zamień na formę uprzejmą" = want → would like (z zachowaniem to + bezokolicznik).</p>
+</nie-myl>
+</section>
+<section id="phrasal-verbs">
+<div class="part-heading"><span class="part-num">8</span> Phrasal verbs — rutyna, dom, opieka</div>
+<p><strong>Phrasal verb</strong> = czasownik + przyimek / przysłówek. Znaczenie często jest inne niż suma części. Ucz się ich <strong>jako całych wyrażeń</strong> w zdaniach.</p>
+<div class="card card-warning">
+<span class="card-label">Tip</span>
+<p>Zapisuj phrasal verb w zdaniu + tłumaczenie pasujące do kontekstu.</p>
+<ul>
+<li><em>I'm looking for my keys.</em> — Szukam kluczy.</li>
+</ul>
+</div>
+<h3>Codzienna rutyna</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>wake up</strong></td><td>budzić się</td><td><em>I wake up at 6:30.</em></td></tr>
+<tr><td><strong>get up</strong></td><td>wstawać (z łóżka)</td><td><em>I get up at 7 o'clock.</em></td></tr>
+<tr><td><strong>put on</strong></td><td>zakładać (ubranie)</td><td><em>Put on your coat.</em></td></tr>
+<tr><td><strong>take off</strong></td><td>zdejmować (ubranie)</td><td><em>Take off your shoes.</em></td></tr>
+<tr><td><strong>go to bed</strong></td><td>kłaść się spać</td><td><em>I go to bed at 10 p.m.</em></td></tr>
+<tr><td><strong>go out</strong></td><td>wychodzić (z domu / spotykać się towarzysko)</td><td><em>I go out with my friends on Fridays.</em></td></tr>
+</tbody></table></div>
+<h3>Dom i instrukcje</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>turn on</strong></td><td>włączać</td><td><em>Turn on the light, please.</em></td></tr>
+<tr><td><strong>turn off</strong></td><td>wyłączać</td><td><em>Turn off the television.</em></td></tr>
+<tr><td><strong>switch on</strong></td><td>włączać (synonim turn on)</td><td><em>Switch on the computer.</em></td></tr>
+<tr><td><strong>switch off</strong></td><td>wyłączać (synonim turn off)</td><td><em>Switch off your phone during the test.</em></td></tr>
+<tr><td><strong>tidy up</strong></td><td>sprzątać</td><td><em>Tidy up your room.</em></td></tr>
+<tr><td><strong>pick up</strong></td><td>podnosić / odbierać</td><td><em>Pick up the book, please.</em></td></tr>
+<tr><td><strong>sit down</strong></td><td>siadać</td><td><em>Sit down, please.</em></td></tr>
+<tr><td><strong>stand up</strong></td><td>wstawać</td><td><em>Stand up and say your name.</em></td></tr>
+</tbody></table></div>
+<h3>Opieka i relacje</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>look after</strong></td><td>opiekować się</td><td><em>She looks after her little brother.</em></td></tr>
+<tr><td><strong>look for</strong></td><td>szukać</td><td><em>I'm looking for my keys.</em></td></tr>
+<tr><td><strong>find out</strong></td><td>dowiedzieć się</td><td><em>I need to find out the answer.</em></td></tr>
+<tr><td><strong>give up</strong></td><td>rezygnować / poddawać się</td><td><em>Don't give up! You can do it.</em></td></tr>
+<tr><td><strong>come back</strong></td><td>wracać</td><td><em>Come back home before 9 p.m.</em></td></tr>
+<tr><td><strong>go back</strong></td><td>wracać (tam, skąd się przyszło)</td><td><em>Go back to your seat.</em></td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">Uwaga</span>
+<p><strong>turn on</strong> i <strong>switch on</strong> oraz <strong>turn off</strong> i <strong>switch off</strong> są synonimami – możesz używać obu form.</p>
+</div>
+<div class="card card-core">
+<span class="card-label">Tip tygodnia</span>
+<p>Ucz się phrasal verbs w <strong>całych zdaniach</strong>, nie jako osobnych słów.</p>
+<ul>
+<li><em>I'm looking for my keys.</em> — Szukam kluczy.</li>
+<li><em>Turn off the light, please.</em> — Wyłącz światło, proszę.</li>
+<li><em>She looks after her brother.</em> — Ona opiekuje się bratem.</li>
+<li><em>Don't give up!</em> — Nie poddawaj się!</li>
+</ul>
+<p><strong>Twoje zadanie:</strong> Wybierz 5 phrasal verbs i ułóż z każdym własne zdanie. Zapisz je w zeszycie.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — 20 zwrotów, 5 scen dnia</span>
+<p>Nie ucz się 20 zwrotów z osobna — ucz się pięciu scen. <strong>Rano:</strong> wake up (otwieram oczy) → get up (wychodzę z łóżka) → have a shower → get dressed → have breakfast. <strong>Wyjście:</strong> put on (ubranie na siebie) → go out (wychodzę z domu). <strong>W domu wieczorem:</strong> turn on/off albo switch on/off (urządzenia) → tidy up (porządek) → go to bed. <strong>Szukanie i porządki:</strong> look for (szukam) → find out (dowiedzieć się) → pick up (podnieść) → put down (odłożyć). <strong>Relacje:</strong> look after (opiekuję się) → come back (wracam) → give up (poddaję się — rzecz jedyna, której robić nie wolno!). Gdy na egzaminie widzisz lukę, przypomnij sobie scenę, a właściwy zwrot sam wskoczy.</p>
+</div>
+<wskazowki>
+<ul>
+<li><strong>up/on/off to poza kierunkiem:</strong> up często znaczy „do góry/w górę" (stand up, pick up, tidy up), off „odłączyć" (turn off, take off), on „podłączyć" (turn on, put on) — a look for „dopatrywać się" → szukać.</li>
+<li><strong>Para-para:</strong> put on / take off · turn on / turn off · sit down / stand up · come back / go out — poznajesz jedno, znasz drugie za darmo.</li>
+<li><strong>FIND OUT to wywiad</strong> — dowiadujesz się, prowadząc dochodzenie; nie „znajdujesz na zewnątrz".</li>
+<li><strong>look after = patrz PO czymś</strong> — opiekujesz się, jakbyś stał za czyimiś plecami.</li>
+</ul>
+</wskazowki>
+<nie-myl>
+<p><strong>look for vs look after</strong> — test rozstrzygający: czego szukasz w zdaniu? Obiektu, którego nie możesz znaleźć → <strong>look for</strong> (szukam kluczy). Osoby lub zwierzęcia, o które dbasz → <strong>look after</strong> (opiekuję się bratem). Klasyczna luka egzaminacyjna: <em>She is ___ her little sister</em> — kontekst opieki → <strong>looking after</strong>.</p>
+</nie-myl>
+<nie-myl>
+<p><strong>get up vs wake up</strong> — test rozstrzygający: co pierwsze? wake up = przestajesz spać (otwierasz oczy), get up = stajesz z łóżka. <em>I wake up at 6:30 but I get up at 7.</em> Dwie różne czynności, dwie różne luki.</p>
+</nie-myl>
+</section>
+<section id="synonimy">
+<div class="part-heading"><span class="part-num">9</span> Synonimy i przeciwieństwa</div>
+<div class="card card-basic">
+<span class="card-label">Pary bliskoznaczne i przeciwstawne</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Para</th><th>Relacja</th></tr></thead>
+<tbody>
+<tr><td><strong>want ≈ would like</strong></td><td>chcieć (would like = grzeczniej)</td></tr>
+<tr><td><strong>need ≈ have to</strong></td><td>musieć (have to = obowiązek zewnętrzny)</td></tr>
+<tr><td><strong>get up ≈ wake up</strong></td><td>wstawać / budzić się (moment inny!)</td></tr>
+<tr><td><strong>turn off ≈ switch off</strong></td><td>wyłączyć</td></tr>
+<tr><td><strong>turn on ≈ switch on</strong></td><td>włączyć</td></tr>
+<tr><td><strong>put on ≠ take off</strong></td><td>założyć vs zdjąć</td></tr>
+<tr><td><strong>stand up ≠ sit down</strong></td><td>wstać vs usiąść</td></tr>
+<tr><td><strong>go out ≠ come back</strong></td><td>wyjść vs wrócić</td></tr>
+</tbody></table></div>
+<p><em>Klucz do czytania:</em> ≈ = znaczenie bliskie (nie identyczne!), ≠ = znaczenia przeciwstawne.</p>
+</div>
+</section>
+<section id="slownictwo">
+<div class="part-heading"><span class="part-num">10</span> Słownictwo</div>
+<p>Każde słówko ma przykładowe zdanie – ucz się ich w kontekście.</p>
+<h3>Dom i pomieszczenia</h3>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>living room</td><td>salon</td><td>We watch TV in the living room.</td></tr><tr><td>bedroom</td><td>sypialnia</td><td>My bedroom is upstairs.</td></tr><tr><td>kitchen</td><td>kuchnia</td><td>Mum is cooking in the kitchen.</td></tr><tr><td>bathroom</td><td>łazienka</td><td>The bathroom is next to the bedroom.</td></tr><tr><td>hall / hallway</td><td>przedpokój / korytarz</td><td>Please leave your shoes in the hall.</td></tr><tr><td>garden</td><td>ogród</td><td>In summer, we play in the garden.</td></tr><tr><td>upstairs / downstairs</td><td>na górze / na dole</td><td>The bedrooms are upstairs.</td></tr><tr><td>furniture</td><td>meble</td><td>We bought new furniture.</td></tr></tbody></table></div>
+<h3>Codzienne czynności</h3>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>wake up</td><td>budzić się</td><td>I wake up at 6:30.</td></tr><tr><td>get up</td><td>wstawać</td><td>I get up immediately.</td></tr><tr><td>have a shower / bath</td><td>brać prysznic / kąpiel</td><td>She has a shower every morning.</td></tr><tr><td>get dressed</td><td>ubierać się</td><td>He gets dressed in his uniform.</td></tr><tr><td>have breakfast / lunch / dinner</td><td>jeść śniadanie / obiad / kolację</td><td>We have dinner at 7 p.m.</td></tr><tr><td>brush your teeth</td><td>myć zęby</td><td>You should brush your teeth twice a day.</td></tr><tr><td>go to school / work</td><td>iść do szkoły / pracy</td><td>I go to school by bus.</td></tr><tr><td>do homework</td><td>odrabiać zadanie</td><td>I have to do my homework.</td></tr><tr><td>tidy up / clean</td><td>sprzątać</td><td>I need to tidy up my room.</td></tr><tr><td>go to bed</td><td>kłaść się spać</td><td>I go to bed at 10 o'clock.</td></tr></tbody></table></div>
+<h3>Instrukcje i polecenia</h3>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>open / close</td><td>otworzyć / zamknąć</td><td>Open the window, please.</td></tr><tr><td>turn on / turn off</td><td>włączyć / wyłączyć</td><td>Turn off the light when you leave.</td></tr><tr><td>put on / take off</td><td>założyć / zdjąć</td><td>Put on your coat.</td></tr><tr><td>pick up / put down</td><td>podnieść / odłożyć</td><td>Pick up the book, please.</td></tr><tr><td>come in / go out</td><td>wejść / wyjść</td><td>You may come in now.</td></tr><tr><td>sit down / stand up</td><td>usiąść / wstać</td><td>Please sit down.</td></tr><tr><td>be quiet / be careful</td><td>bądź cicho / uważaj</td><td>Be quiet! The baby is sleeping.</td></tr><tr><td>hurry up</td><td>pospiesz się</td><td>Hurry up! We're going to be late.</td></tr></tbody></table></div>
+<h3>Emocje i samopoczucie</h3>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>happy / sad</td><td>szczęśliwy / smutny</td><td>She is happy today.</td></tr><tr><td>angry / annoyed</td><td>zły / zirytowany</td><td>My dad was angry.</td></tr><tr><td>tired / exhausted</td><td>zmęczony / wyczerpany</td><td>I'm tired after a long day.</td></tr><tr><td>worried / nervous</td><td>zmartwiony / zdenerwowany</td><td>She is nervous about the exam.</td></tr><tr><td>excited</td><td>podekscytowany</td><td>We are excited about the trip.</td></tr><tr><td>bored / boring</td><td>znudzony / nudny</td><td>This film is boring.</td></tr><tr><td>surprised</td><td>zaskoczony</td><td>I was surprised to see her.</td></tr><tr><td>proud</td><td>dumny</td><td>My parents are proud of me.</td></tr><tr><td>scared / frightened</td><td>przestraszony</td><td>She is scared of spiders.</td></tr><tr><td>relaxed</td><td>zrelaksowany</td><td>I feel relaxed after a bath.</td></tr></tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — przymiotniki z -ed i -ing</span>
+<p>W tabeli emocji kryje się pułapka, którą E8 lubi sprawdzać. <strong>bored</strong> = znudzony (czuję nudę) — mówisz o osobie; <strong>boring</strong> = nudny (wywołuje nudę) — mówisz o rzeczy: <em>I'm bored because this film is boring.</em> Ta sama para: <em>excited/exciting</em>, <em>surprised/surprising</em>, <em>tired/exhausted</em> (mocniejszy stopień zmęczenia). Test: czy opisuję, co <strong>czuję</strong> (-ed), czy co <strong>wywołuję</strong> (-ing)? Szczegóły w warstwie olimpijskiej (sekcja 19).</p>
+</div>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">11</span> Ćwiczenia</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (5 pkt) — Wybierz poprawną formę <span class="level-badge level-basic">PODSTAWA</span></span>
+<ol>
+<li>Don't ___ the wire. — a) to touch · b) touch</li>
+<li>___ the light, please. — a) Turn on · b) To turn on</li>
+<li>I ___ the answer. — a) know · b) am knowing</li>
+<li>She ___ for her keys now. — a) looks · b) is looking</li>
+<li>I would like ___ home. — a) go · b) to go</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi i klucz</summary>
+<p>Podpowiedzi: 1. Po Don't używamy formy podstawowej bez to. 2. Know to czasownik stanu – nie używamy -ing. 3. Po would like zawsze to + czasownik.</p>
+<p>Klucz (1 pkt za zdanie): 1. <strong>b</strong> – touch 2. <strong>a</strong> – Turn on 3. <strong>a</strong> – know 4. <strong>b</strong> – is looking 5. <strong>b</strong> – to go</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (6 pkt) — Ułóż rozkaz <span class="level-badge level-basic">PODSTAWA</span></span>
+<p>Ułóż zdania rozkazujące z podanych wyrazów (1 pkt za zdanie).</p>
+<ol>
+<li>the door / close → ________________</li>
+<li>your room / tidy up → ________________</li>
+<li>the light / turn off → ________________</li>
+<li>quiet / be → ________________</li>
+<li>the book / pick up → ________________</li>
+<li>the dog / look after → ________________</li>
+</ol>
+<details class="answer"><summary>Klucz</summary>
+<ol>
+<li><strong>Close the door.</strong> 2. <strong>Tidy up your room.</strong> 3. <strong>Turn off the light.</strong> 4. <strong>Be quiet.</strong> 5. <strong>Pick up the book.</strong> 6. <strong>Look after the dog.</strong></li>
+</ol>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (6 pkt) — Przetłumacz na angielski <span class="level-badge level-understand">TRENING</span></span>
+<ol>
+<li>Nie dotykaj przewodu.</li>
+<li>Włącz światło.</li>
+<li>Załóż kurtkę.</li>
+<li>Zaopiekuj się psem.</li>
+<li>Nie poddawaj się.</li>
+<li>Chciałbym napić się wody.</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi i klucz</summary>
+<p>Podpowiedzi: 1. Użyj trybu rozkazującego – twierdzenie lub przeczenie. 2. Do wyrażenia „chciałbym" użyj <em>would like to</em>.</p>
+<p>Klucz (1 pkt za zdanie): 1. <strong>Don't touch the wire.</strong> 2. <strong>Turn on the light.</strong> 3. <strong>Put on your coat.</strong> 4. <strong>Look after the dog.</strong> 5. <strong>Don't give up.</strong> 6. <strong>I would like to drink some water.</strong> / <strong>I'd like to drink some water.</strong></p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (5 pkt) — Popraw błędy PUŁAPKA E8 <span class="level-badge level-exam">EGZAMIN</span></span>
+<ol>
+<li><em>Don't to open the window.</em></li>
+<li><em>I am knowing the answer.</em></li>
+<li><em>She look for her phone.</em></li>
+<li><em>I would like go home.</em></li>
+<li><em>He is wanting a new computer.</em></li>
+</ol>
+<details class="answer"><summary>Podpowiedzi i klucz</summary>
+<p>Podpowiedzi: 1. Po Don't forma podstawowa bez to. 2. Know, want to czasowniki stanów – bez -ing. 3. Po would like zawsze <em>to</em> + czasownik.</p>
+<p>Klucz (1 pkt za zdanie): 1. <strong>Don't open the window.</strong> 2. <strong>I know the answer.</strong> 3. <strong>She is looking for her phone.</strong> (jeśli czynność trwa teraz) 4. <strong>I would like to go home.</strong> 5. <strong>He wants a new computer.</strong></p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (5 pkt) — Mini-wypowiedź pisemna PISANIE</span>
+<p>Napisz instrukcję pod tytułem <strong>How to look after a pet</strong> (Jak dbać o zwierzątko).</p>
+<p>Napisz 5–6 zdań. Użyj:</p>
+<ul>
+<li>co najmniej trzech zdań rozkazujących;</li>
+<li>jednego zdania z <strong>Don't</strong>;</li>
+<li>co najmniej dwóch phrasal verbs;</li>
+<li>jednego zdania z <strong>need to</strong> lub <strong>would like to</strong>.</li>
+</ul>
+<details class="answer"><summary>Przykład i punktacja</summary>
+<p>Punktacja: 3 pkt – wszystkie wymagane elementy gramatyczne; 2 pkt – poprawność językowa.</p>
+<p>Przykład: <em>Feed your pet every day. Give it fresh water. Don't forget to clean its bowl. Look after it carefully. Tidy up the room regularly. Your pet needs to feel safe.</em></p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (5 pkt) — What…! czy How…!? <span class="level-badge level-exam">EGZAMIN</span></span>
+<ol>
+<li>__________ a lovely dress!</li>
+<li>__________ interesting this book is!</li>
+<li>__________ nice weather!</li>
+<li>__________ well she sings!</li>
+<li>__________ a beautiful day!</li>
+</ol>
+<details class="answer"><summary>Podpowiedzi i klucz</summary>
+<p>Podpowiedzi: 1. What + (a/an) + przymiotnik + rzeczownik. 2. How + przymiotnik / przysłówek.</p>
+<p>Klucz (1 pkt za zdanie): 1. <strong>What</strong> 2. <strong>How</strong> 3. <strong>What</strong> 4. <strong>How</strong> 5. <strong>What</strong></p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 7 (5 pkt) — Uzupełnij phrasal verb <span class="level-badge level-exam">EGZAMIN</span></span>
+<p>Wstaw właściwy phrasal verb (rama: wake up, turn off, look for, look after, give up, tidy up, put on, get up — jeden użyjesz dwa razy).</p>
+<ol>
+<li>Please ______ your phone during the test.</li>
+<li>Can you ______ my cat this weekend? I'm going away.</li>
+<li>I can't find my glasses — I'm ______ them everywhere.</li>
+<li>______ your coat — it's cold outside.</li>
+<li>______ your room before mum comes home.</li>
+<li>Never ______ — you can do it!</li>
+</ol>
+<details class="answer"><summary>Klucz</summary>
+<ol>
+<li><strong>turn off</strong> (switch off też poprawne — synonim) 2. <strong>look after</strong> (opieka nad zwierzakiem) 3. <strong>looking for</strong> (szukam — forma Continuous przy „I'm … them everywhere") 4. <strong>Put on</strong> (ubranie na siebie) 5. <strong>Tidy up</strong> (porządek) 6. <strong>give up</strong> (nie poddawaj się).</li>
+</ol>
+</details>
+</div>
+</section>
+<section id="6-zasad">
+<div class="part-heading"><span class="part-num">12</span> Ważne! – 6 kluczowych zasad</div>
+<ol>
+<li><strong>Tryb rozkazujący przeczący: Don't + forma podstawowa</strong> — ✓ <em>Don't touch.</em> ✗ <em>Don't to touch.</em></li>
+<li><strong>Czasowniki stanów zwykle bez -ing</strong> — ✓ <em>I understand.</em> ✗ <em>I am understanding.</em></li>
+<li><strong>Phrasal verbs ucz się jako całych wyrażeń</strong> — look for, turn on, get up, find out…</li>
+<li><strong>What + rzeczownik / How + przymiotnik</strong> — <em>What a nice day!</em> / <em>How nice!</em></li>
+<li><strong>Would like to – grzeczniejsze niż want</strong> — <em>I would like to go.</em> (uprzejme)</li>
+<li><strong>Need to = konieczność</strong> — <em>You need to study.</em> (musisz)</li>
+</ol>
+<div class="card card-core">
+<span class="card-label">Zapamiętaj na egzamin!</span>
+<ul>
+<li>Przeczenie w trybie rozkazującym: <strong>Don't + czasownik</strong> (bez to).</li>
+<li>Czasowniki stanów (know, need, understand, like…) – zwykle <strong>bez</strong> -ing.</li>
+<li>Phrasal verbs pojawiają się w zadaniach na uzupełnianie luk i w czytaniu.</li>
+<li><strong>What</strong> z rzeczownikiem, <strong>How</strong> z przymiotnikiem / przysłówkiem.</li>
+</ul>
+</div>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">13</span> Klinika błędów — najczęstsze błędy</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">Don't to touch the wire.</td><td class="col-ok" data-label="Poprawa">Don't touch the wire.</td><td data-label="Dlaczego">Po Don't zawsze forma podstawowa bez „to".</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I am knowing the answer.</td><td class="col-ok" data-label="Poprawa">I know the answer.</td><td data-label="Dlaczego">Know to czasownik stanu – bez -ing.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">She is needing help.</td><td class="col-ok" data-label="Poprawa">She needs help.</td><td data-label="Dlaczego">Need to czasownik stanu – bez -ing.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I look for the keys. (myśląc: „patrzę dla kluczy")</td><td class="col-ok" data-label="Poprawa">I'm looking for my keys.</td><td data-label="Dlaczego">Phrasal verb tłumacz całością: look for = szukać; nie dosłownie.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">How a beautiful day! / What beautiful!</td><td class="col-ok" data-label="Poprawa">What a beautiful day! / How beautiful!</td><td data-label="Dlaczego">What + (a/an) + rzeczownik; How + przymiotnik/przysłówek.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I would like go home.</td><td class="col-ok" data-label="Poprawa">I would like to go home.</td><td data-label="Dlaczego">Po would like zawsze „to" + czasownik.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I am wanting a new phone. / They are believing in ghosts.</td><td class="col-ok" data-label="Poprawa">I want a new phone. / They believe in ghosts.</td><td data-label="Dlaczego">Want i believe to czasowniki stanów – nie używamy ich z -ing.</td></tr></tbody></table>
+<div class="card card-warning">
+<span class="card-label">Pułapka Polaków – false friend</span>
+<p><strong>sympathetic</strong> = współczujący ≠ <strong>sympatyczny</strong> = nice / likeable.</p>
+<p>✗ <em>He is very sympathetic.</em> – to nie znaczy „On jest bardzo sympatyczny".</p>
+<p>✓ <em>He is very nice.</em> – On jest bardzo sympatyczny.</p>
+</div>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„tryb rozkazujący jest zawsze niegrzeczny"</p><p class="myth-ok"><span>Poprawnie</span>Z please albo w kontekście instrukcji jest neutralny: Open your books, please.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„wszystkie czasowniki ze znaczeniem uczuć i myśli zawsze łamią regułę -ing"</p><p class="myth-ok"><span>Poprawnie</span>Reguła dotyczy ROLI stanu; gdy czasownik pracuje jak czynność, -ing jest poprawne: I'm having lunch, I'm thinking about it.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„phrasal verb można przetłumaczyć słowo po słowie"</p><p class="myth-ok"><span>Poprawnie</span>Znaczenie jest idiomatyczne: give up ≠ „dać górę", find out ≠ „znaleźć na zewnątrz".</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„What i How w wykrzyknikach są zamienne"</p><p class="myth-ok"><span>Poprawnie</span>NIE: What + rzeczownik, How + przymiotnik/przysłówek — zamiana to błąd punktowany.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„want to brzmi niepoprawnie"</p><p class="myth-ok"><span>Poprawnie</span>Jest poprawne, tylko bezpośrednie; w sytuacjach oficjalnych wybierz would like to.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„need to i have to to dokładnie to samo"</p><p class="myth-ok"><span>Poprawnie</span>Znaczeniowo bliskie; have to częściej wskazuje na obowiązek zewnętrzny (reguły, rozkazy innych).</p></div></div>
+</section>
+<section id="podsumowanie">
+<div class="part-heading"><span class="part-num">14</span> Podsumowanie</div>
+<div class="card card-basic">
+<span class="card-label">7 kluczowych zasad – powtórka przed egzaminem</span>
+<ol>
+<li><strong>Tryb rozkazujący:</strong> forma podstawowa (<em>Open the door.</em>) / Don't + forma podstawowa (<em>Don't touch.</em>).</li>
+<li><strong>What…! / How…!:</strong> <em>What a nice day!</em> / <em>How nice!</em></li>
+<li><strong>Czasowniki stanów</strong> (know, need, understand, like, want…) zwykle <strong>nie</strong> występują w -ing.</li>
+<li><strong>Phrasal verbs</strong> ucz się w całych zdaniach: <em>look for, get up, turn on/off, find out, look after, give up…</em></li>
+<li><strong>Would like to</strong> – uprzejme życzenie; <strong>want</strong> – bezpośrednie; <strong>need to</strong> – konieczność.</li>
+<li><strong>Don't forget</strong> – przeczenie w trybie rozkazującym zawsze z <em>Don't</em>.</li>
+<li><strong>What</strong> z rzeczownikiem, <strong>How</strong> z przymiotnikiem / przysłówkiem.</li>
+</ol>
+</div>
+<h3>Tryb rozkazujący, phrasal verbs i czasowniki stanów – ściąga egzaminacyjna</h3>
+<h4>Tryb rozkazujący</h4>
+<ul>
+<li><strong>Twierdzenie:</strong> <em>Open the door.</em></li>
+<li><strong>Przeczenie:</strong> <em>Don't touch it.</em></li>
+<li>Brak podmiotu, forma podstawowa</li>
+</ul>
+<h4>What / How</h4>
+<ul>
+<li><strong>What</strong> + (a/an) + przymiotnik + rzeczownik: <em>What a nice day!</em></li>
+<li><strong>How</strong> + przymiotnik / przysłówek: <em>How beautiful!</em></li>
+</ul>
+<h4>Czasowniki stanów</h4>
+<ul>
+<li>know, need, understand, like, love, want, believe, have, see, hear</li>
+<li>Zwykle <strong>bez -ing</strong>: <em>I understand.</em></li>
+</ul>
+<h4>Phrasal verbs</h4>
+<ul>
+<li><strong>get up</strong> – wstawać</li>
+<li><strong>look for</strong> – szukać</li>
+<li><strong>turn on / turn off</strong> – włączać / wyłączać</li>
+<li><strong>find out</strong> – dowiedzieć się</li>
+<li><strong>put on / take off</strong> – zakładać / zdejmować</li>
+<li><strong>wake up</strong> – budzić się</li>
+<li><strong>go out</strong> – wychodzić</li>
+<li><strong>come back / go back</strong> – wracać</li>
+<li><strong>pick up</strong> – podnieść / odebrać</li>
+<li><strong>look after</strong> – opiekować się</li>
+<li><strong>give up</strong> – rezygnować</li>
+<li><strong>switch on / switch off</strong> – włączać / wyłączać</li>
+<li><strong>tidy up</strong> – sprzątać</li>
+<li><strong>sit down / stand up</strong> – siadać / wstawać</li>
+</ul>
+<p><strong>Pamiętaj:</strong> Ucz się phrasal verbs w całych zdaniach. <em>I'm looking for my keys.</em> – Szukam kluczy.</p>
+<p><strong>Would like to</strong> = chciałbym (uprzejmie) — <em>I would like to go.</em></p>
+<p><strong>Want</strong> = chcę (bezpośrednio) — <em>I want to go.</em></p>
+<p><strong>Need to</strong> = muszę / potrzebuję — <em>I need to study.</em></p>
+<p><strong>Don't forget!</strong> = Nie zapomnij! — <em>Don't forget your homework.</em></p>
+</section>
+<section id="misja">
+<div class="part-heading"><span class="part-num">15</span> Test końcowy – MISJA</div>
+<div class="card card-exam">
+<span class="card-label">Misja końcowa (10 pkt) — uzupełnij bez zaglądania do zasad</span>
+<p>1 pkt za zdanie. Sprawdź swój wynik.</p>
+<ol>
+<li>__________ the window. (otwórz)</li>
+<li>__________ touch the wire! (nie dotykaj)</li>
+<li>I __________ the answer. (wiem – stative)</li>
+<li>She __________ help. (potrzebuje – stative)</li>
+<li>I __________ for my keys. (szukam – phrasal)</li>
+<li>__________ a lovely dress! (What / How)</li>
+<li>__________ beautiful! (What / How)</li>
+<li>I would like __________ visit London. (to / –)</li>
+<li>__________ up! (nie poddawaj się – phrasal)</li>
+<li>__________ the light, please. (wyłącz – phrasal)</li>
+</ol>
+<details class="answer"><summary>Odpowiedzi</summary>
+<ol>
+<li><strong>Open</strong> (rozkaz — forma podstawowa) 2. <strong>Don't</strong> (zakaz) 3. <strong>know</strong> (stan — bez -ing) 4. <strong>needs</strong> (stan + -s dla 3. os. l.poj.) 5. <strong>am looking</strong> (look for = szukać; czynność trwa teraz) 6. <strong>What</strong> (rzeczownik a lovely dress) 7. <strong>How</strong> (przymiotnik beautiful) 8. <strong>to</strong> (would like + to + czasownik) 9. <strong>Don't give</strong> (give up = poddawać się) 10. <strong>Turn off</strong> (wyłącz)</li>
+</ol>
+</details>
+</div>
+</section>
+<section id="slowniczek">
+<div class="part-heading"><span class="part-num">16</span> Słowniczek — zwroty z kontekstem</div>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>living room</td><td>salon</td><td>We watch TV in the living room.</td></tr><tr><td>bedroom</td><td>sypialnia</td><td>My bedroom is upstairs.</td></tr><tr><td>kitchen</td><td>kuchnia</td><td>Mum is cooking in the kitchen.</td></tr><tr><td>bathroom</td><td>łazienka</td><td>The bathroom is next to the bedroom.</td></tr><tr><td>garden</td><td>ogród</td><td>We play in the garden.</td></tr><tr><td>upstairs / downstairs</td><td>na górze / na dole</td><td>The bedrooms are upstairs.</td></tr><tr><td>furniture</td><td>meble</td><td>We bought new furniture.</td></tr><tr><td>sofa / armchair</td><td>kanapa / fotel</td><td>He sits in his armchair.</td></tr><tr><td>wardrobe</td><td>szafa</td><td>I keep clothes in the wardrobe.</td></tr><tr><td>desk / shelf</td><td>biurko / półka</td><td>I do homework at my desk.</td></tr><tr><td>wake up</td><td>budzić się</td><td>I wake up at 6:30.</td></tr><tr><td>get up</td><td>wstawać</td><td>I get up immediately.</td></tr><tr><td>have a shower</td><td>brać prysznic</td><td>She has a shower every morning.</td></tr><tr><td>get dressed</td><td>ubierać się</td><td>He gets dressed in his uniform.</td></tr><tr><td>have breakfast / lunch / dinner</td><td>jeść śniadanie / obiad / kolację</td><td>We have dinner at 7 p.m.</td></tr><tr><td>brush your teeth</td><td>myć zęby</td><td>Brush your teeth twice a day.</td></tr><tr><td>go to school</td><td>iść do szkoły</td><td>I go to school by bus.</td></tr><tr><td>do homework</td><td>odrabiać zadanie</td><td>I have to do my homework.</td></tr><tr><td>tidy up</td><td>sprzątać</td><td>I need to tidy up my room.</td></tr><tr><td>go to bed</td><td>kłaść się spać</td><td>I go to bed at 10 o'clock.</td></tr><tr><td>open / close</td><td>otworzyć / zamknąć</td><td>Open the window, please.</td></tr><tr><td>turn on / turn off</td><td>włączyć / wyłączyć</td><td>Turn off the light.</td></tr><tr><td>put on / take off</td><td>założyć / zdjąć</td><td>Put on your coat.</td></tr><tr><td>pick up</td><td>podnieść / odebrać</td><td>Pick up the book.</td></tr><tr><td>sit down / stand up</td><td>usiąść / wstać</td><td>Please sit down.</td></tr><tr><td>be quiet</td><td>bądź cicho</td><td>Be quiet! The baby is sleeping.</td></tr><tr><td>hurry up</td><td>pospiesz się</td><td>Hurry up! We're late.</td></tr><tr><td>happy</td><td>szczęśliwy</td><td>She is happy today.</td></tr><tr><td>sad</td><td>smutny</td><td>He feels sad.</td></tr><tr><td>angry</td><td>zły</td><td>My dad was angry.</td></tr><tr><td>tired</td><td>zmęczony</td><td>I'm tired after school.</td></tr><tr><td>worried</td><td>zmartwiony</td><td>She is worried about the exam.</td></tr><tr><td>excited</td><td>podekscytowany</td><td>We are excited about the trip.</td></tr><tr><td>bored</td><td>znudzony</td><td>I'm bored.</td></tr><tr><td>surprised</td><td>zaskoczony</td><td>I was surprised.</td></tr><tr><td>proud</td><td>dumny</td><td>My parents are proud of me.</td></tr><tr><td>scared</td><td>przestraszony</td><td>She is scared of spiders.</td></tr><tr><td>look after</td><td>opiekować się</td><td>She looks after her brother.</td></tr><tr><td>look for</td><td>szukać</td><td>I'm looking for my keys.</td></tr><tr><td>find out</td><td>dowiedzieć się</td><td>I need to find out the answer.</td></tr><tr><td>give up</td><td>poddawać się</td><td>Don't give up!</td></tr><tr><td>come back</td><td>wracać</td><td>Come back home.</td></tr><tr><td>hall</td><td>przedpokój</td><td>Leave your shoes in the hall.</td></tr><tr><td>satisfied</td><td>zadowolony</td><td>I'm satisfied with my result.</td></tr><tr><td>lonely</td><td>samotny</td><td>He feels lonely in the new school.</td></tr><tr><td>calm</td><td>spokojny</td><td>Stay calm during the test.</td></tr><tr><td>jealous</td><td>zazdrosny</td><td>Don't be jealous of her toys.</td></tr><tr><td>ashamed</td><td>zawstydzony</td><td>He was ashamed of his mistake.</td></tr></tbody></table></div>
+</section>
+<section id="faq">
+<div class="part-heading"><span class="part-num">17</span> FAQ – najczęstsze wątpliwości</div>
+<div class="card card-understand">
+<span class="card-label">FAQ – najczęstsze wątpliwości</span>
+<p><strong>1. Czy po Don't zawsze używamy formy podstawowej?</strong> Tak. <em>Don't touch</em>, nigdy <em>Don't to touch</em>.</p>
+<p><strong>2. Czy wszystkie czasowniki stanów są bez -ing?</strong> Zwykle tak, ale niektóre mogą mieć -ing, gdy zmieniają znaczenie (np. <em>I have a car</em> vs <em>I'm having lunch</em>).</p>
+<p><strong>3. Jaka jest różnica między turn off a switch off?</strong> To synonimy – oba znaczą „wyłączyć".</p>
+<p><strong>4. Czy mogę użyć want zamiast would like?</strong> Tak, ale <em>would like</em> jest bardziej uprzejme.</p>
+<p><strong>5. Jak odróżnić What od How w wykrzykniku?</strong> <em>What</em> + rzeczownik, <em>How</em> + przymiotnik / przysłówek.</p>
+<p><strong>6. Czy need to i have to to to samo?</strong> Są bardzo podobne. <em>Need to</em> podkreśla potrzebę, <em>have to</em> – obowiązek.</p>
+</div>
+</section>
+<section id="test-wyjsciowy">
+<div class="part-heading"><span class="part-num">18</span> Test wyjściowy – sprawdź swój postęp</div>
+<div class="card card-basic">
+<span class="card-label">Porównaj z testem wstępnym</span>
+<p>Rozwiąż te same pytania, które były na początku lekcji.</p>
+</div>
+<ol>
+<li>Popraw: <em>Don't to touch the wire!</em></li>
+<li>Popraw: <em>I am knowing the answer.</em></li>
+<li>Uzupełnij: <em>__________ a lovely dress!</em> (What / How)</li>
+<li>Przetłumacz: <em>Szukam kluczy.</em> (użyj phrasal verb)</li>
+<li>Uzupełnij: <em>I __________ like to visit London.</em> (would / want)</li>
+</ol>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li><strong>Don't touch the wire!</strong> 2. <strong>I know the answer.</strong> 3. <strong>What</strong> a lovely dress! 4. <strong>I'm looking for my keys.</strong> 5. <strong>would</strong> like to visit London.</li>
+</ol>
+<p>Porównaj swój wynik z testem wstępnym. Czy jest lepiej?</p>
+</details>
+</section>
+<section id="olimpijska">
+<div class="part-heading"><span class="part-num">19</span> Warstwa olimpijska — dla olimpijczyka</div>
+<p><em>(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu; w paczce nie ma dokumentu wymagań.)</em></p>
+<div class="card card-understand">
+<span class="card-label">Dla olimpijczyka — konstrukcje, o których podręcznik milczy</span>
+<p><strong>Phrasal verbs rozdzielne i nierozdzielne.</strong> Rozdzielne (z obiektami): można wstawić zaimek między części — <em>turn the light on</em> / <em>turn it on</em>, ale już NIE „turn on it": krótki zaimek MUSI stać w środku. Nierozdzielne (look after, look for — partykuła jest przyimkiem): zaimek zawsze za całością — <em>look after her</em> (nie „look her after”). Uwaga: <em>give up</em> i <em>find out</em> są rozdzielne (<em>give it up</em>), a <em>come back</em>, <em>get up</em> nie mają dopełnienia. Test rozstrzygający: jeśli partykuła to przyimek (for, after) — nierozdzielny; jeśli przysłówek kierunkowy (on, off, up) — rozdzielny. (źródło: Cambridge Phrasal Verbs Dictionary)</p>
+<p><strong>Do przed imperatywem = uprzejme naleganie.</strong> <em>Do sit down.</em> — „Usiądź, proszę, nie krępuj się". Do czytane z naciskiem wzmacnia zaproszenie; Don't nadal pozostaje zakazem. (źródło: M. Swan, Practical English Usage)</p>
+<p><strong>Rada na trzy sposoby.</strong> Poza imperatywem: <em>Why don't you take a break?</em> / <em>How about taking a break?</em> / <em>You should take a break.</em> — pierwsze dwa spotykane w zadaniach na dobieranie rad (How about + -ing!). (konkurs)</p>
+<p><strong>Grupy czasowników stanowych</strong> (klasyfikacja akademicka, Swan): myślenie (know, believe, remember, understand), emocje (like, love, hate, prefer), zmysły (see, hear, smell, taste), posiadanie (have, own, belong), wydawanie się (seem, look, appear). Warto znać układ, bo zadania konkursowe podają listy do posegregowania.</p>
+<p><strong>Imperatyw w zdaniach warunkowych.</strong> <em>Do your homework and you can watch TV.</em> — imperatyw pełni rolę warunku (= If you do your homework…). Spotykane w transformacjach. (konkurs)</p>
+</div>
+<nie-myl>
+<p><strong>Do you like…? vs Would you like…?</strong> — test rozstrzygający: pytasz o gust czy oferujesz? <em>Do you like tea?</em> = „Czy lubisz herbatę w ogóle?" (o preferencje). <em>Would you like some tea?</em> = „Chcesz herbaty? Podam?" (oferta, tu i teraz). W restauracji ani kelner, ani egzaminator nie pytają „Do you like some tea?".</p>
+</nie-myl>
+<nie-myl>
+<p><strong>hear vs listen to</strong> — test rozstrzygający: stan czy czynność? <em>hear</em> = stan zmysłowy (dźwięk dociera — bez wysiłku): <em>I can hear music.</em> <em>listen to</em> = czynność celowa (słucham uważnie): <em>I'm listening to the news.</em> Podobnie: see (stan) vs watch/look at (czynność).</p>
+</nie-myl>
+<nie-myl>
+<p><strong>bored vs boring</strong> — test rozstrzygający: kto czuje, a co wywołuje? -ed = stan osoby (<em>I'm bored</em> — nudzi mi się); -ing = cecha rzeczy (<em>The lesson is boring</em> — wywołuje nudę). Te same pary: excited/exciting, surprised/surprising, interested/interesting.</p>
+</nie-myl>
+<details class="adv"><summary>Zadanie O1 (4 pkt) — Zaimek w phrasal verbs: rozdzielne czy nierozdzielne? <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uzupełnij zaimkiem w poprawnym miejscu (1 pkt za zdanie z uzasadnieniem).</p>
+<ol>
+<li>These shoes are nice. Can I try ______ ______? (on + zaimek them)</li>
+<li>Your jacket is on the chair. Please pick ______ ______. (up + zaimek it)</li>
+<li>The TV is too loud. Please turn ______ ______. (off + zaimek it)</li>
+<li>Grandma is ill, so mum is looking ______ ______. (after + zaimek her)</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>try them on</strong> — try on jest rozdzielny: zaimek między części (także: try on them? NIE — tylko „try them on"); 2. <strong>pick it up</strong> — pick up rozdzielny: pick it up (nie „pick up it"); 3. <strong>turn it off</strong> — turn off rozdzielny: krótki zaimek w środku (✗ turn off it); 4. <strong>looking after her</strong> — look after nierozdzielny: zaimek zawsze na końcu (✗ looking her after). Uzasadnienie: przyimki (after, for) nie dopuszczają zaimka w środku; przysłówki kierunkowe (on, up, off) — wymuszają.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O2 (6 pkt) — Znajdź błąd: wiadomość z pięcioma błędami <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>W tekście ukryto <strong>6 błędów</strong>. Znajdź je, popraw i uzasadnij (1 pkt za błąd z uzasadnieniem). Uwaga: niektóre formy wyglądają podejrzanie, ale są POPRAWNE — nie „naprawiaj" ich.</p>
+<p><em>Hi Tom! Do you like coming to my party on Saturday? Please to arrive at six. Don't to forget the music! My little cousin is staying with us, so my aunt is looking after him — come to the garden, not the living room. How a great plan! I am knowing you love pizza, so I'm making one. Would you like bring your board game? See you!</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol start="0">
+<li><strong>Do you like coming to my party? → Would you like to come to my party?</strong> — to zaproszenie (oferta tu i teraz), nie pytanie o gust; 1. <strong>Please to arrive → Please arrive</strong> — po please imperatyw bez to; 2. <strong>Don't to forget → Don't forget</strong> — po Don't forma podstawowa; 3. <strong>How a great plan → What a great plan</strong> — How nie łączy się z rzeczownikiem (a plan); 4. <strong>I am knowing → I know</strong> — know to czasownik stanowy; 5. <strong>Would you like bring → Would you like to bring</strong> — would like + to + bezokolicznik. Formy POPRAWNE (pułapki): <em>is looking after him</em> (nierozdzielny z zaimkiem na końcu — poprawne), <em>I'm making one</em> (czynność — -ing poprawne).</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O3 (4 pkt) — Wyjaśnij różnicę <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Wyjaśnij, czym różnią się zdania w każdej parze (1 pkt za parę z poprawnym uzasadnieniem).</p>
+<ol>
+<li>„Do you like apples?" vs „Would you like an apple?"</li>
+<li>„I have two brothers." vs „I'm having dinner."</li>
+<li>„Turn on it." vs „Turn it on."</li>
+<li>„I woke up at six." vs „I got up at six."</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>Pierwsze: pytanie o preferencje (lubisz jabłka w ogóle?); drugie: oferta tu i teraz (chcesz jabłko?). 2. Pierwsze: stan posiadania (stative — forma prosta); drugie: czynność (jeść — Continuous poprawne). 3. Pierwsze NIEPOPRAWNE: zaimek it musi stać między turn a on (phrasal rozdzielny); drugie poprawne. 4. wake up = otworzyłem oczy, przestałem spać; get up = wstałem z łóżka — mogę się obudzić o 6, a wstać o 7.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O4 (4 pkt) — Pułapka: -ing przy czasownikach zmysłów i stanów <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Zdecyduj, czy zdanie jest poprawne; jeśli nie — popraw i uzasadnij (1 pkt za punkt).</p>
+<ol>
+<li>I'm smelling the soup to check if it needs salt.</li>
+<li>The soup smells delicious.</li>
+<li>She is seeming tired today.</li>
+<li>I'm seeing my dentist tomorrow at 4.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>Poprawne</strong> — tu smell to czynność celowa (wącham, testuję) → -ing; 2. <strong>Poprawne</strong> — stan zmysłowy (pachnie) → forma prosta; 3. <strong>Niepoprawne → She seems tired today.</strong> — seem to czasownik stanowy (wydawanie się), nigdy w Continuous; 4. <strong>Poprawne (konkurs)</strong> — see w znaczeniu „mieć umówione spotkanie" działa jak czynność → Continuous; natomiast see = „widzieć" jest stanowe: ✗ <em>I'm seeing the mountains from my window</em> → ✓ <em>I can see the mountains.</em></li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O5 (3 pkt) — Przekształcenia: want → would like <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Przekształć zdania zachowując znaczenie i wnosząc poprawkę grzecznościową (1 pkt za zdanie).</p>
+<ol>
+<li>I want to ask you a question. (grzeczniej) → ______</li>
+<li>Do you want some cake? (oferta, grzeczniej) → ______</li>
+<li>She wants to see the manager. (grzeczniej, o niej) → ______</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>I would like to ask you a question.</strong> / <strong>I'd like to ask…</strong> — would like = uprzejma wersja want; 2. <strong>Would you like some cake?</strong> — oferta grzeczna (nie „Do you like some cake?" — to pytanie o gust); 3. <strong>She would like to see the manager.</strong> — trzecia osoba: would bez zmian, bezokolicznik z to.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O6 (4 pkt) — Analiza tekstu: instrukcja dnia pierwszego <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uzupełnij tekst phrasal verbs z ramy (wake up, get up, put on, look for, find out, come back, give up, tidy up — dwa zostaną niewykorzystane) i podaj tłumaczenie każdego (1 pkt za lukę z tłumaczeniem).</p>
+<p><em>First day at a new school: (1) ______ early — before your alarm! (2) ______ your uniform and have breakfast. On the way, you will have to (3) ______ which room your class is in. If you get lost, (4) ______ a teacher and ask for help. Don't (5) ______ after the first difficult lesson — it gets better. In the evening, (6) ______ your desk — tomorrow you start again.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>Wake up</strong> — obudź się (wcześniej niż budzik); 2. <strong>Put on</strong> — załóż mundurek; 3. <strong>find out</strong> — dowiedzieć się (jakiego pokoju jest klasa); 4. <strong>look for</strong> — poszukaj nauczyciela; 5. <strong>give up</strong> — nie poddawaj się; 6. <strong>tidy up</strong> — posprzątaj biurko. Niewykorzystane: <strong>get up</strong> i <strong>come back</strong> (w luce 1 „before your alarm” pasuje obudzenie się — wake up). Tłumaczenia zgodne z sekcją 8.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O7 (4 pkt) — Pułapka: What…! i a/an <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uzupełnij a/an lub „—" (nic) i uzasadnij (1 pkt za zdanie z uzasadnieniem).</p>
+<ol>
+<li>What ______ lovely weather! (weather)</li>
+<li>What ______ interesting film! (film)</li>
+<li>How ______ he drives! (fast)</li>
+<li>What ______ nice shoes! (shoes)</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>—</strong> — weather niepoliczalne: What + przymiotnik + rzeczownik BEZ a/an; 2. <strong>an</strong> — film policzalny l.poj., film zaczyna się od samogłoski → an; 3. <strong>—</strong> — po How idzie przysłówek, a/an w ogóle nie występuje; 4. <strong>—</strong> — shoes liczba mnoga: bez a/an (What nice shoes!). Uzasadnienie: a/an tylko przy rzeczowniku policzalnym w liczbie pojedynczej.</li>
+</ol>
+</details>
+</div></details>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">20</span> Test — pytania zamknięte</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Imperatyw: forma podstawowa, bez podmiotu i bez to."><h5>1. ______ the window, please.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Open</button><button type="button" class="quiz-opt" data-a="1">To open</button><button type="button" class="quiz-opt" data-a="2">Opening</button><button type="button" class="quiz-opt" data-a="3">Opens</button></div></div><div class="quiz-q" data-ok="0" data-fb="Zakaz = Don&#x27;t + forma podstawowa bez to."><h5>2. ______ touch the wire!</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Don't</button><button type="button" class="quiz-opt" data-a="1">Not</button><button type="button" class="quiz-opt" data-a="2">Don't to</button><button type="button" class="quiz-opt" data-a="3">No</button></div></div><div class="quiz-q" data-ok="0" data-fb="know to czasownik stanu — forma prosta, bez -ing."><h5>3. I ______ the answer.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">know</button><button type="button" class="quiz-opt" data-a="1">am knowing</button><button type="button" class="quiz-opt" data-a="2">knows</button><button type="button" class="quiz-opt" data-a="3">knowing</button></div></div><div class="quiz-q" data-ok="0" data-fb="„Szuka&quot; = look for; czynność trwa teraz → is looking for."><h5>4. She ______ her keys.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">is looking for</button><button type="button" class="quiz-opt" data-a="1">is looking after</button><button type="button" class="quiz-opt" data-a="2">looks after</button><button type="button" class="quiz-opt" data-a="3">look for</button></div></div><div class="quiz-q" data-ok="0" data-fb="What + (a/an) + przymiotnik + rzeczownik."><h5>5. ______ a lovely dress!</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">What</button><button type="button" class="quiz-opt" data-a="1">How</button><button type="button" class="quiz-opt" data-a="2">Which</button><button type="button" class="quiz-opt" data-a="3">That</button></div></div><div class="quiz-q" data-ok="0" data-fb="How + przysłówek (well)."><h5>6. ______ well she sings!</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">How</button><button type="button" class="quiz-opt" data-a="1">What</button><button type="button" class="quiz-opt" data-a="2">What a</button><button type="button" class="quiz-opt" data-a="3">Which</button></div></div><div class="quiz-q" data-ok="0" data-fb="would like + to + bezokolicznik."><h5>7. I would like ______ home.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">to go</button><button type="button" class="quiz-opt" data-a="1">go</button><button type="button" class="quiz-opt" data-a="2">going</button><button type="button" class="quiz-opt" data-a="3">went</button></div></div><div class="quiz-q" data-ok="0" data-fb="want = czasownik stanu; 3. os. l.poj. → wants."><h5>8. He ______ a new computer.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">wants</button><button type="button" class="quiz-opt" data-a="1">is wanting</button><button type="button" class="quiz-opt" data-a="2">want</button><button type="button" class="quiz-opt" data-a="3">wanting</button></div></div><div class="quiz-q" data-ok="0" data-fb="take off = zdejmować (ubranie)."><h5>9. ______ your shoes at the door, please.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Take off</button><button type="button" class="quiz-opt" data-a="1">Take of</button><button type="button" class="quiz-opt" data-a="2">Take out</button><button type="button" class="quiz-opt" data-a="3">Off take</button></div></div><div class="quiz-q" data-ok="0" data-fb="give up = poddawać się, rezygnować."><h5>10. Don't ______ ! You can do it!</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">give up</button><button type="button" class="quiz-opt" data-a="1">give away</button><button type="button" class="quiz-opt" data-a="2">give back</button><button type="button" class="quiz-opt" data-a="3">give off</button></div></div><div class="quiz-q" data-ok="0" data-fb="look after = opiekować się."><h5>11. My mum ______ my little sister when I'm at school.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">looks after</button><button type="button" class="quiz-opt" data-a="1">looks for</button><button type="button" class="quiz-opt" data-a="2">looks at</button><button type="button" class="quiz-opt" data-a="3">looks up</button></div></div><div class="quiz-q" data-ok="0" data-fb="tidy up = sprzątać."><h5>12. ______ your room before the guests come.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Tidy up</button><button type="button" class="quiz-opt" data-a="1">Tidy off</button><button type="button" class="quiz-opt" data-a="2">Tidy in</button><button type="button" class="quiz-opt" data-a="3">Arrange up</button></div></div><div class="quiz-q" data-ok="0" data-fb="Phrasal rozdzielny: krótki zaimek staje między czasownikiem a partykułą."><h5>13. (konkurs) The music is too loud — can you turn ______ ?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">it off</button><button type="button" class="quiz-opt" data-a="1">off it</button><button type="button" class="quiz-opt" data-a="2">off</button><button type="button" class="quiz-opt" data-a="3">it off it</button></div></div><div class="quiz-q" data-ok="0" data-fb="Do + imperatyw = uprzejme, naciskane zaproszenie."><h5>14. (konkurs) ______ sit down. I insist!</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Do</button><button type="button" class="quiz-opt" data-a="1">Don't</button><button type="button" class="quiz-opt" data-a="2">Does</button><button type="button" class="quiz-opt" data-a="3">Are</button></div></div><div class="quiz-q" data-ok="0" data-fb="Stan zmysłowy (pachnie) → forma prosta."><h5>15. (konkurs) The soup ______ delicious.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">smells</button><button type="button" class="quiz-opt" data-a="1">is smelling</button><button type="button" class="quiz-opt" data-a="2">smell</button><button type="button" class="quiz-opt" data-a="3">is smell</button></div></div><div class="quiz-q" data-ok="0" data-fb="Oferta tu i teraz → Would you like…? (Do you like…? = pytanie o gust)."><h5>16. (konkurs) ______ you like some tea?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Would</button><button type="button" class="quiz-opt" data-a="1">Do</button><button type="button" class="quiz-opt" data-a="2">Are</button><button type="button" class="quiz-opt" data-a="3">Did</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">21</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Don't + ?</span><span class="back">forma podstawowa bez to (Don't touch)</span><span class="card-tag tag-basic">imperatyw</span></button><button class="flashcard" type="button"><span class="front">Let's go!</span><span class="back">zachęta dla „my": Let's + forma podstawowa</span><span class="card-tag tag-basic">imperatyw</span></button><button class="flashcard" type="button"><span class="front">What a day!</span><span class="back">What + (a/an) + przymiotnik + rzeczownik</span><span class="card-tag tag-basic">what-how</span></button><button class="flashcard" type="button"><span class="front">How beautiful!</span><span class="back">How + przymiotnik lub przysłówek</span><span class="card-tag tag-basic">what-how</span></button><button class="flashcard" type="button"><span class="front">know, need, want, believe</span><span class="back">czasowniki stanów — zwykle bez -ing</span><span class="card-tag tag-basic">stative</span></button><button class="flashcard" type="button"><span class="front">I have a car vs I'm having lunch</span><span class="back">stan vs czynność: -ing po zmianie znaczenia</span><span class="card-tag tag-basic">stative</span></button><button class="flashcard" type="button"><span class="front">look for</span><span class="back">szukać</span><span class="card-tag tag-basic">phrasal</span></button><button class="flashcard" type="button"><span class="front">look after</span><span class="back">opiekować się</span><span class="card-tag tag-basic">phrasal</span></button><button class="flashcard" type="button"><span class="front">give up</span><span class="back">poddawać się, rezygnować</span><span class="card-tag tag-basic">phrasal</span></button><button class="flashcard" type="button"><span class="front">find out</span><span class="back">dowiedzieć się</span><span class="card-tag tag-basic">phrasal</span></button><button class="flashcard" type="button"><span class="front">turn on / turn off</span><span class="back">włączać / wyłączać</span><span class="card-tag tag-basic">phrasal</span></button><button class="flashcard" type="button"><span class="front">put on / take off</span><span class="back">zakładać / zdejmować</span><span class="card-tag tag-basic">phrasal</span></button><button class="flashcard" type="button"><span class="front">get up vs wake up</span><span class="back">wstawać vs budzić się (wake up pierwszy)</span><span class="card-tag tag-basic">phrasal</span></button><button class="flashcard" type="button"><span class="front">would like to</span><span class="back">chciałbym — uprzejmie; zawsze to + czasownik</span><span class="card-tag tag-basic">would-like</span></button><button class="flashcard" type="button"><span class="front">need to</span><span class="back">muszę / potrzebuję — konieczność</span><span class="card-tag tag-basic">would-like</span></button><button class="flashcard" type="button"><span class="front">I would like go → ?</span><span class="back">I would like to go — po would like zawsze to</span><span class="card-tag tag-basic">would-like</span></button><button class="flashcard" type="button"><span class="front">Turn it on ✓ / Turn on it ✗</span><span class="back">zaimek w środku — phrasal rozdzielny</span><span class="card-tag tag-olimpijski">phrasal</span></button><button class="flashcard" type="button"><span class="front">look after her (nie „look her after”)</span><span class="back">phrasal nierozdzielne: partykuła-przyimek (after, for)</span><span class="card-tag tag-olimpijski">phrasal</span></button><button class="flashcard" type="button"><span class="front">Do sit down.</span><span class="back">Do przed imperatywem = uprzejme naleganie</span><span class="card-tag tag-olimpijski">imperatyw</span></button><button class="flashcard" type="button"><span class="front">hear vs listen to</span><span class="back">hear = stan (słyszeć); listen to = czynność (słuchać)</span><span class="card-tag tag-olimpijski">stative</span></button><button class="flashcard" type="button"><span class="front">bored vs boring</span><span class="back">-ed = co czuję; -ing = co wywołuje</span><span class="card-tag tag-olimpijski">stative</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">22</span> Słownik</div>
+<dl><div class="def-item"><dt>tryb rozkazujący (imperatyw)</dt><dd>forma podstawowa bez podmiotu — polecenia, instrukcje, rady (Open the door.).</dd></div><div class="def-item"><dt>Don't</dt><dd>przeczenie rozkazu: Don't + forma podstawowa bez to.</dd></div><div class="def-item"><dt>Let's</dt><dd>zaproszenie do wspólnej czynności: Let's go!; przeczenie: Let's not wait.</dd></div><div class="def-item"><dt>wykrzyknik What…!/How…!</dt><dd>zdanie-zachwyt: What przed rzeczownikiem, How przed przymiotnikiem/przysłówkiem.</dd></div><div class="def-item"><dt>czasownik stanowy (stative)</dt><dd>opisuje stan — wiedzę, uczucia, posiadanie, zmysły; zwykle bez -ing.</dd></div><div class="def-item"><dt>czasownik czynnościowy (action)</dt><dd>opisuje widoczną akcję; przyjmuje formy -ing (I am running).</dd></div><div class="def-item"><dt>phrasal verb</dt><dd>czasownik + partykuła o znaczeniu idiomatycznym; ucz się całością w zdaniu.</dd></div><div class="def-item"><dt>partykula</dt><dd>przyimek lub przysłówek w phrasal verb (on, off, up, out, after, for).</dd></div><div class="def-item"><dt>phrasal rozdzielny</dt><dd>można wstawić zaimek między części: turn it on (przysłówek kierunkowy).</dd></div><div class="def-item"><dt>phrasal nierozdzielny</dt><dd>zaimka nie wstawiamy między części: look after her, look for it (partykuła jest przyimkiem).</dd></div><div class="def-item"><dt>would like to</dt><dd>grzeczne „chciałbym": would like + to + bezokolicznik.</dd></div><div class="def-item"><dt>want to</dt><dd>bezpośrednie „chcę" — ten sam sens, mniej formalnie.</dd></div><div class="def-item"><dt>need to</dt><dd>konieczność lub potrzeba: You need to study.</dd></div><div class="def-item"><dt>false friend</dt><dd>słowo brzmiące znajomo, o innym znaczeniu: sympathetic = współczujący, nie „sympatyczny".</dd></div></dl>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">23</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Let's nie zawsze znaczy „chodźmy"</span>
+<p><em>Let's</em> wygląda jak skrót od <em>let us</em>, ale znaczenia się rozjechały: <em>Let's go!</em> to zachęta do wspólnego działania, a pełne <em>Let us pray</em> — uroczysta forma („pomódlmy się") w kościołach i formalnych przemówieniach. Przeczenie też ma dwie wersje: standardowe <em>Let's not argue</em> i potocznie brytyjskie <em>Don't let's argue</em>. (źródło: M. Swan, Practical English Usage) (konkurs)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Tysiące „dwusłówek"</span>
+<p>Słownik Cambridge Phrasal Verbs Dictionary opisuje około 6 tys. phrasal verbs (orientacyjnie — licznik zmienia się z wydaniem). Jeden czasownik <em>go</em> buduje ich kilkanaście: go on (kontynuować), go out (wychodzić), go back (wracać), go off (wybuchać/zepsuć się), go away (odchodzić). Dlatego Anglicy brzmią naturalnie — a uczący się dosłownie, niekoniecznie. (źródło: Cambridge Phrasal Verbs Dictionary)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">„I'm loving it" — celowe złamanie reguły</span>
+<p>Slogan McDonald's z 2003 roku celowo używa czasownika stanowego w Continuous — <em>I'm loving it</em> brzmi świeżo właśnie dlatego, że gramatyka każe spodziewać się <em>I love it</em>. Reklamy i piosenki łamią reguły stanów dla efektu; na egzaminie pisz klasycznie: <em>I love it</em>. (źródło: kampania marki, 2003) (konkurs)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">DON'T PANIC — imperatyw, który podbił galaktykę</span>
+<p>Na okładce „Przewodnika galaktycznego" z cyklu Douglasa Adamsa (pierwsze wydanie radiowe 1978, książkowe 1979) widnieją dwa słowa wielkimi literami: <strong>DON'T PANIC</strong> — „NIE PANIKUJ". To podręcznikowy tryb rozkazujący przeczący: Don't + forma podstawowa, bez podmiotu i bez to. (źródło: Douglas Adams, The Hitchhiker's Guide to the Galaxy)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">What a wonderful world</span>
+<p>Najsłynniejszy zachwyt w historii muzyki rozpoczyna się dokładnie od konstrukcji z tej lekcji: <em>What a Wonderful World</em> — What + a + przymiotnik + rzeczownik policzalny w l.poj. Piosenka Louisa Armstronga (1967, autorzy: Bob Thiele i George David Weiss) to gotowy przykład do zapamiętania szyku. (źródło: noty wydawnicze, 1967)</p>
+</div>
+<p><em>Ucz się świadomie, nie na pamięć. Zadania treningowe wzorowane na formule E8 — oficjalne arkusze i nagrania: CKE.</em></p>
+<details class="lk-log"><summary>AUDYT W1 — ULEPSZ z warstwą olimpijską (2026-10-11) {#audyt}</summary>
+<h3 id="audyt">AUDYT W1 — ULEPSZ z warstwą olimpijską (2026-10-11)</h3>
+<p>Surowe odpowiedzi: <code>angielski/plany/audyty/ULEPSZ_GLM_L003_cz1…4_2026-10-11.md</code> (GLM 5.3 Flash, chat.z.ai; odpowiedź w 4 częściach po ≤ 18 tys. znaków).</p>
+<p><strong>Przyjęte:</strong> scalenie 9 zdublowanych nagłówków z konwersji i trzech sekcji phrasal verbs (29 → 24 sekcje), wykład „trzy narzędzia codziennego angielskiego” z drzewem decyzyjnym, 6 mini-wykładów (trzy temperatury rozkazu, What czy How, test dwóch znaczeń, drabina grzeczności, 5 scen dnia, -ed/-ing), wskazówki pamięciowe, 3 pary „nie myl”, nowe Zadanie 7 (phrasal verbs w lukach), punktacja zadań i misji z uzasadnieniami, klinika (7) i false friend <em>sympathetic</em>, mity, warstwa olimpijska (rozdzielne i nierozdzielne phrasal verbs, <em>Do sit down</em>, rady <em>Why don't you / How about</em>, grupy czasowników stanowych, imperatyw jako warunek; zadania O1–O7), test 16 pytań, 21 fiszek, słownik 14 haseł, 5 ciekawostek (Let's/Let us, liczba phrasal verbs, <em>I'm loving it</em>, DON'T PANIC, <em>What a Wonderful World</em>); poprawki: „wygładać” → „wyglądać”, puste kolumny „Audio” usunięte, „Please, sit down” → „Please sit down”.</p>
+<p><strong>Poprawione względem propozycji:</strong> model zaliczył <em>find out</em> i <em>give up</em> do nierozdzielnych (są rozdzielne: <em>give it up</em>) — poprawiono wykład olimpijski, fiszkę i słownik, a w O1 zamieniono mylący punkt 3 na <em>turn it off</em>; O2 — <em>Do you like coming to my party?</em> model uznał za poprawne, choć to zaproszenie (→ <em>Would you like to come…?</em>) — teraz 6 błędów i 6 pkt; O6 — w ramie zostają dwa zwroty niewykorzystane (get up, come back), a nie jeden; usunięta mętna mnemotechnika „GIVE UP — nie dawaj góry”; słowniczek (§16) — model zostawił tylko 9 haseł z notą o scaleniu, przywrócono całą tabelę oryginału z przykładami (bez kolumny Audio) + 9 nowych haseł; „trylogia” Adamsa → „cykl” (pięć części).</p>
+<p><strong>Usunięte (zasada kursu):</strong> „Harmonogram powtórek – spaced repetition” (pusta tabela dni) — samodzielna nauka bez harmonogramów.</p>
+<p><strong>Nieprzyjęte:</strong> usunięcie linków do starych HTML — przy przebudowie nawigacji; propozycje grafik „Znaki zakazu i zgody”, „Dwie kolumny umysłu”, „Zamek phrasal verbs” — pomysły do biblioteki grafik.</p>
+</details>
+</section>
+<footer class="footer"><p>Lekcja 3 – Tryb rozkazujący, czasowniki stanów i phrasal verbs • Wersja 3.0 (ULEPSZONA) • 2026-10-11</p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>
