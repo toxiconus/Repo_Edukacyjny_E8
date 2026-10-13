@@ -934,7 +934,7 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 
 ### Poziom A — podstawa
 
-::: karta -
+::: karta exam | Poziom A — podstawa (6 pkt)
 ::: ol {start="1"}
 <li>Napisz wzory: chlorek magnezu, siarczan(VI) glinu, azotan(V) wapnia, fosforan(V) sodu.</li>
 
@@ -968,7 +968,7 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 
 ### Poziom B — trening
 
-::: karta -
+::: karta exam | Poziom B — trening (6 pkt)
 ::: ol {start="7"}
 <li>Zaproponuj 3 sposoby otrzymania MgCl₂ — zapisz równania.</li>
 
@@ -1002,7 +1002,7 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 
 ### Poziom C — ambitny
 
-::: karta -
+::: adv | Poziom C — ambitny | poziom ambitny
 ::: ol {start="13"}
 <li>Jak rozróżnić roztwory NaCl, Na₂SO₄ i Na₂CO₃, mając HCl, BaCl₂ i AgNO₃? Zaplanuj kolejność.</li>
 
@@ -1036,7 +1036,7 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 
 ### Poziom D — LO rozszerzone
 
-::: karta -
+::: adv | Poziom D — LO rozszerzone | poziom LO
 ::: ol {start="19"}
 <li>Przewidź odczyn: K₂CO₃, NH₄NO₃, KCl, CH₃COOK. Zapisz równania hydrolizy.</li>
 

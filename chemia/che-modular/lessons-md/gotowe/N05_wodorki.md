@@ -642,7 +642,7 @@ KH — wodorek potasu; jonowy K⁺H⁻ (EN K 0,82); KH + H₂O → KOH + H₂↑
 
 ### Poziom A — podstawa
 
-::: karta -
+::: karta exam | Poziom A — podstawa (6 pkt)
 1. Napisz wzory wodorków: sodu, magnezu, węgla, azotu, siarki, chloru.
 2. Nazwij: CaH₂, LiH, NH₃, H₂S, HBr, CH₄.
 3. Podkreśl wodorki: NaOH, NaH, HCl, HClO, CH₄, CH₃OH, H₂S, H₂SO₄.
@@ -660,7 +660,7 @@ KH — wodorek potasu; jonowy K⁺H⁻ (EN K 0,82); KH + H₂O → KOH + H₂↑
 
 ### Poziom B — trening
 
-::: karta -
+::: karta exam | Poziom B — trening (6 pkt)
 6. Zapisz równania otrzymywania z pierwiastków: NaH, HCl, H₂S, NH₃ (z warunkami dla NH₃).
 7. Do roztworów NH₃, HCl i NaH (po reakcji z wodą) dodano fenoloftaleinę. W których probówkach pojawi się malinowa barwa? Uzasadnij równaniami.
 8. Zaproponuj dwa sposoby odróżnienia amoniaku od chlorowodoru.
@@ -678,7 +678,7 @@ KH — wodorek potasu; jonowy K⁺H⁻ (EN K 0,82); KH + H₂O → KOH + H₂↑
 
 ### Poziom C — ambitny
 
-::: karta -
+::: adv | Poziom C — ambitny | poziom ambitny
 11. Uszereguj według rosnącej mocy kwasowej: HI, HF, HBr, HCl. Uzasadnij.
 12. Dlaczego CaH₂ jest dobrym środkiem do osuszania rozpuszczalników, a CaO nie nadaje się do osuszania HCl?
 13. Wyjaśnij, dlaczego temperatura wrzenia rośnie w szeregu PH₃ < AsH₃ < SbH₃, a NH₃ wrze wyżej niż PH₃.
@@ -694,7 +694,7 @@ KH — wodorek potasu; jonowy K⁺H⁻ (EN K 0,82); KH + H₂O → KOH + H₂↑
 
 ### Poziom D — zaawansowany
 
-::: karta -
+::: adv | Poziom D — zaawansowany | poziom LO
 15. W syntezie amoniaku obniżenie temperatury zwiększa wydajność, a mimo to stosuje się ok. 450 °C. Wyjaśnij ten kompromis i rolę wysokiego ciśnienia.
 16. W rurze długości 100 cm z jednej strony umieszczono watę z NH₃(aq), z drugiej z HCl(aq). W jakiej odległości od końca z amoniakiem powstanie pierścień NH₄Cl? (Prawo Grahama.)
 
